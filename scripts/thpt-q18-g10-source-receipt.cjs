@@ -110,7 +110,46 @@ function chviKiemLoiCandidate(name,immutablePublished){
   "ChVI Kiểm lỗi pending reviewer evidence missing");
  return matches[1];
 }
-function expectedG10KnowledgeBlob(lesson,legacy){
+function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscriptSha){
+ const receiptPath=path.join(root,
+  "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+ assert(fs.existsSync(receiptPath),"Kiểm lỗi requires a real Q18 source receipt");
+ const txt=fs.readFileSync(receiptPath,"utf8");
+ const getRow=prefix=>{
+  const lines=txt.split("\n").filter(line=>line.startsWith("| "+prefix+" | "));
+  assert.equal(lines.length,1,"Exactly one current canonical receipt row "+prefix);
+  const hashes=[...lines[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+  assert.equal(hashes.length,2,prefix+" requires prior+new SHA");
+  return hashes;
+ };
+ const [priorSource,currentSource]=getRow(name==="B09"?"B9":name);
+ const [priorMaster,currentMaster]=getRow("CANONICAL_"+name);
+ assert.equal(priorSource,priorPublicSha,name+" Q18 chain must start from prior published source SHA");
+ assert.equal(priorMaster,priorManuscriptSha,name+" Q18 chain must start from prior signed manuscript SHA");
+ assert.notEqual(priorSource,currentSource,name+" requires a genuinely changed learner source");
+ assert.notEqual(priorMaster,currentMaster,name+" requires a genuinely changed single canonical manuscript");
+ const number=Number(name.slice(1)),roman=number<=11?"iv":"v";
+ const lessonPath=path.join(root,"docs/thpt-preview/sgk/chuong-"+roman+"/bai-"+number+".md");
+ const manuscriptPath=path.join(root,"prototypes/thpt/content-drafts/THPT_G10_CH"+
+  (number<=11?"IV":"V")+"_B"+String(number).padStart(2,"0")+"_CANONICAL.md");
+ const bytes=fs.readFileSync(lessonPath),full=fs.readFileSync(manuscriptPath);
+ const gitblob=b=>require("node:crypto").createHash("sha1")
+  .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");
+ assert.equal(gitblob(bytes),currentSource,name+" current public Knowledge must exactly match R01 receipt");
+ assert.equal(gitblob(full),currentMaster,name+" ONE current canonical manuscript must exactly match R01 receipt");
+ const src=bytes.toString("utf8"),master=full.toString("utf8");
+ const b="<!-- BEGIN_"+name+"_KNOWLEDGE_MARKDOWN -->\n";
+ const e="\n<!-- END_"+name+"_KNOWLEDGE_MARKDOWN -->";
+ assert.equal(master.split(b).length,2,name+" exactly one canonical Knowledge start");
+ assert.equal(master.split(e).length,2,name+" exactly one canonical Knowledge end");
+ const section=master.split(b)[1].split(e)[0];
+ assert.equal(section,src,
+  name+" derived public Knowledge must reflect the SAME one canonical manuscript");
+ assert(txt.includes("CANONICAL_PARITY_CONTRACT")&&txt.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+  txt.includes("AUTHORING_REVIEW_HOLD"),"One-canonical Q18 receipt may not self-issue PED PASS");
+ return {source:currentSource,canonical:currentMaster};
+}
+function expectedG10KnowledgeBlobHistorical(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
  const file=path.join(root,ledger);
@@ -476,8 +515,9 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    "B11 signed academic/PED R01 receipt must remain byte-identical");
   const manuscript=fs.readFileSync(path.join(root,
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"));
-  assert.equal(calc(manuscript),g("B11_CANONICAL_CURRENT_BLOB"),
-   "B11 same canonical file must equal new owner P2 Delta A SHA");
+  const currentB11=currentOneCanonicalAfterKiểmLỗi("B11",g("B11_SOURCE_CURRENT_BLOB"),g("B11_CANONICAL_CURRENT_BLOB"));
+  assert.equal(calc(manuscript),currentB11.canonical,
+    "B11 current ONE canonical manuscript must extend frozen P2 Delta A SHA");
   const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
   const cssFull=css.toString("utf8"),b13Tail="/* G10 ChV B13 · exact B10/B12 Golden palette";
   const tailAt=cssFull.indexOf(b13Tail);
@@ -526,8 +566,8 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   }
   const sourceText=fs.readFileSync(path.join(root,
    "docs/thpt-preview/sgk/chuong-iv/bai-11.md"),"utf8");
-  assert.equal(calc(Buffer.from(sourceText)),g("B11_SOURCE_CURRENT_BLOB"),
-   "B11 source-first learner Knowledge must match new owner P2 receipt");
+   assert.equal(calc(Buffer.from(sourceText)),currentB11.source,
+    "B11 current public Knowledge must equal one updated canonical, old P2 receipt unchanged");
   const manuscriptText=manuscript.toString("utf8");
   const start="<!-- BEGIN_B11_KNOWLEDGE_MARKDOWN -->\n",end="\n<!-- END_B11_KNOWLEDGE_MARKDOWN -->";
   assert(manuscriptText.includes(start)&&manuscriptText.includes(end),"B11 one canonical Knowledge markers missing");
@@ -569,7 +609,8 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   const nextSource=f02("R02_SOURCE_BLOB"),nextMaster=f02("R02_ONE_CANONICAL_LESSON_BLOB");
   assert(/^[a-f0-9]{40}$/.test(nextSource||"")&&/^[a-f0-9]{40}$/.test(nextMaster||""),
    "B10 P2 R02 source and manuscript must be exactly hash-locked");
-  assert.equal(calc(canonical),nextMaster,"B10 current canonical manuscript must match R02 P2 receipt");
+  const currentB10=currentOneCanonicalAfterKiểmLỗi("B10",nextSource,nextMaster);
+   assert.equal(calc(canonical),currentB10.canonical,"B10 current ONE manuscript must extend frozen R02 P2 receipt");
   return nextSource;
  }
 
@@ -626,7 +667,8 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     const current=fs.readFileSync(path.join(root,
      "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md"));
     const blob=bytes=>require("node:crypto").createHash("sha1").update(Buffer.from("blob "+bytes.length+String.fromCharCode(0))).update(bytes).digest("hex");
-    assert.equal(blob(current),master,"B09 must use the ONE SHA-locked academic manuscript");
+    const currentB09=currentOneCanonicalAfterKiểmLỗi("B09",final,master);
+     assert.equal(blob(current),currentB09.canonical,"B09 ONE manuscript must match corrected Knowledge and source-lock");
     for(const token of ["Q18_AUTHOR_SELF_VERIFIED","CHIV-09-A","THPT-G10-B09-P07",
       "FORMATIVE_ONLY","OWNER_P2_PENDING","B09-RUNTIME-01"])
      assert(locked.includes(token),"B09 single-source Q18 receipt missing "+token);
@@ -765,10 +807,11 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B12 prior signed manuscript must remain predecessor of UI-only Delta A");
    assert.equal(blob(fs.readFileSync(path.join(root,
     "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"))),
-    u("B12_CURRENT_CANONICAL_BLOB"),"B12 current canonical must match scoped Delta A SHA");
+    currentOneCanonicalAfterKiểmLỗi("B12",u("B12_CURRENT_SOURCE_BLOB"),u("B12_CURRENT_CANONICAL_BLOB")).canonical,
+    "B12 ONE canonical must match signed successor after historical Delta A");
    assert.equal(blob(fs.readFileSync(path.join(root,
-    "docs/thpt-preview/sgk/chuong-v/bai-12.md"))),u("B12_CURRENT_SOURCE_BLOB"),
-    "B12 current learner Markdown must match scoped Delta A SHA");
+    "docs/thpt-preview/sgk/chuong-v/bai-12.md"))),currentOneCanonicalAfterKiểmLỗi("B12",u("B12_CURRENT_SOURCE_BLOB"),u("B12_CURRENT_CANONICAL_BLOB")).source,
+    "B12 derived public Markdown must match signed successor after historical Delta A");
    for(const [rel,key] of [
     ["docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js","B12_R01_ITEM_BANK_BLOB"],
     ["docs/thpt-preview/sgk/chuong-v/luyen-tap.md","B12_R01_PRACTICE_HUB_BLOB"]]){
@@ -778,7 +821,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const b13=currentB13();
    assert.equal(b13.baseline,f("FROZEN_B13_SOURCE_BLOB"),
     "B12 frozen B13 ancestor preserved in its original academic source receipt");
-   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-13.md"))),b13.next,
+   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-13.md"))),candidateG10KnowledgeBlob("B13"),
     "B13 current candidate must match its own source-locked Q18 receipt");
    const style=fs.readFileSync(path.join(root,
     "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
@@ -793,7 +836,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const b14=currentB14();
    assert.equal(b14.baseline,f("FROZEN_B14_SOURCE_BLOB"),"B12 historical B14 baseline preserved");
    assert.equal(b14.cssBase,b13.css,"B14 CSS append must start from owner-P2 B13 CSS");
-   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-14.md"))),b14.next,
+   assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-v/bai-14.md"))),candidateG10KnowledgeBlob("B14"),
     "B14 current Knowledge must match scoped Q18 X-C receipt");
    assert.equal(blob(Buffer.from(full.slice(0,full.indexOf("/* G10 ChV B14 · scoped X-C RELEASE Golden")-1))),
     b13.css,"B13 CSS snapshot unchanged before B14 appendix");
@@ -1107,6 +1150,23 @@ function expectedG10KnowledgeBlob(lesson,legacy){
   return row.candidate;
  }
  return blobs[1];
+}
+function expectedG10KnowledgeBlob(lesson,legacy){
+ const current=expectedG10KnowledgeBlobHistorical(lesson,legacy);
+ const n=Number(String(lesson).replace(/^B/,""));
+ if(!(n>=7&&n<=14))return current;
+ const file=path.join(root,"prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+ if(!fs.existsSync(file))return current;
+ const source=fs.readFileSync(file,"utf8"),rows=source.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(rows.length,1,"B"+n+" Kiểm lỗi R01 source receipt missing or duplicate row");
+ const sha=[...rows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(sha.length,2,"B"+n+" Kiểm lỗi row must lock previous and candidate Git SHA");
+ assert.equal(sha[0],current,"B"+n+" Kiểm lỗi must extend exact immutable published source");
+ assert.notEqual(sha[0],sha[1],"B"+n+" Kiểm lỗi source SHA must change");
+ assert(source.includes("G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120")&&
+  source.includes("DELTA_C_ACADEMIC_MATERIAL")&&source.includes("OWNER_P2"),
+  "B07-B14 Kiểm lỗi authoring HOLD receipt missing");
+ return sha[1];
 }
 function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);

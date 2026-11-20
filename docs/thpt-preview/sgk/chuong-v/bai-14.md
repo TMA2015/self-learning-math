@@ -60,6 +60,8 @@
         </div>
 
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#HELP-G10-B14-01).
     #### 1.2.3. Vì sao độ lệch chuẩn dễ đọc hơn phương sai?
 
     Nếu đo chiều dài bằng cm thì phương sai mang đơn vị cm², khó so trực tiếp với chiều dài vài cm; cần số đo trở lại cùng đơn vị.
@@ -82,6 +84,13 @@
         </div>
 
 
+
+    <a id="HELP-G10-B14-01" aria-hidden="true"></a>
+    <span id="help-g10-b14-01" data-thpt-help-id="HELP-G10-B14-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Sai mẫu số phương sai và đơn vị.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Dùng n−1 và viết s có đơn vị bình phương. Đang mô tả dãy số liệu SGK hay ước lượng suy luận mẫu?</li><li><strong>Kiến thức gốc:</strong> SGK dùng s²=Σ(x−x̄)²/n; s căn của s², cùng đơn vị dữ liệu.</li><li><strong>Tự sửa:</strong> Tính lại các bình phương rồi chia n và ghi đơn vị.</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B14-P05.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B14-P05">Luyện lại bằng câu hỏi đã có</a></p>
     #### 1.2.4. Một giá trị xa trung tâm cần được nhận diện bằng quy tắc
 
     Một ngày ghi doanh số quá lớn có thể là thật hoặc nhập sai. Trước khi kết luận, ta cần tiêu chí định lượng để đánh dấu giá trị khác xa số còn lại.
@@ -104,6 +113,13 @@
         </div>
 
 
+
+    <a id="HELP-G10-B14-02" aria-hidden="true"></a>
+    <span id="help-g10-b14-02" data-thpt-help-id="HELP-G10-B14-02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Nhầm hàng rào ngoại lệ và phân tán.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> So giá trị với trung bình hoặc đánh dấu giá trị bằng ngưỡng là ngoại lệ. Em đã lấy Q1, Q3 đúng quy tắc chưa?</li><li><strong>Kiến thức gốc:</strong> Bất thường khi x&lt;Q1−1,5 IQR hoặc x&gt;Q3+1,5 IQR; dùng dấu nghiêm ngặt.</li><li><strong>Tự sửa:</strong> Tính Q1/Q3, viết ngưỡng và kiểm từng giá trị.</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B14-P03.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B14-P03">Luyện lại bằng câu hỏi đã có</a></p>
     #### 1.2.5. Cùng trung bình không có nghĩa phân tán giống nhau
 
     Hai nhóm đều đạt trung bình 4 điểm, nhưng một nhóm tập trung quanh 4, nhóm khác có điểm rất thấp và rất cao. Chỉ trung bình không đủ mô tả chất lượng phân bố.
@@ -127,6 +143,8 @@
         <p><strong>Nếu chưa làm được:</strong> Xem lại Khám phá §1.2.5 và Kiến thức SGK §2.2, tự tính lại từ dữ kiện của câu hỏi, rồi <a href="../luyen-tap/?item=THPT-G10-B14-P04">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#HELP-G10-B14-01).
     ### 1.3. Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn, giá trị bất thường, biểu đồ hộp, đơn vị đo.
@@ -223,19 +241,6 @@
     **Kiểm lại:** Điều kiện là \(x<-1\) hoặc \(x>7\), không phải \(x\ge7\). Giá trị bất thường **chưa chắc là số nhập sai**; muốn loại khỏi bộ dữ liệu phải có căn cứ.
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-B14-01" hidden></span>
-
-    ??? tip "4.1. Sai mẫu số phương sai và đơn vị"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Sai mẫu số phương sai và đơn vị.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Dùng n−1 và viết s có đơn vị bình phương. Đang mô tả dãy số liệu SGK hay ước lượng suy luận mẫu?</li><li><strong>Kiến thức gốc:</strong> SGK dùng s²=Σ(x−x̄)²/n; s căn của s², cùng đơn vị dữ liệu.</li><li><strong>Tự sửa:</strong> Tính lại các bình phương rồi chia n và ghi đơn vị.</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B14-P05.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B14-P05">Luyện lại bằng câu hỏi đã có</a></p>
-
-    <span data-thpt-help-id="HELP-G10-B14-02" hidden></span>
-
-    ??? tip "4.2. Nhầm hàng rào ngoại lệ và phân tán"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Nhầm hàng rào ngoại lệ và phân tán.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> So giá trị với trung bình hoặc đánh dấu giá trị bằng ngưỡng là ngoại lệ. Em đã lấy Q1, Q3 đúng quy tắc chưa?</li><li><strong>Kiến thức gốc:</strong> Bất thường khi x&lt;Q1−1,5 IQR hoặc x&gt;Q3+1,5 IQR; dùng dấu nghiêm ngặt.</li><li><strong>Tự sửa:</strong> Tính Q1/Q3, viết ngưỡng và kiểm từng giá trị.</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B14-P03.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B14-P03">Luyện lại bằng câu hỏi đã có</a></p>
-
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

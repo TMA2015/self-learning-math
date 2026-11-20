@@ -28,6 +28,19 @@
 
         **Vì sao:** 2−(−3)=5 và −1−2=−3. Đảo điểm đầu/cuối làm vectơ đối.
 
+
+    <a id="HELP-G10-B10-01" aria-hidden="true"></a>
+    <span id="help-g10-b10-01" data-thpt-help-id="HELP-G10-B10-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi thường gặp:</strong> Với \(A(-3;2)\), \(B(2;-1)\), một học sinh ghi \(\overrightarrow{AB}=(2;-1)\) vì nhìn ngay tọa độ B. Kết quả sai: đó là tọa độ <strong>điểm B</strong>, không phải độ dời từ A đến B.</p>
+
+        <p><strong>Vì sao sai?</strong> Vectơ \(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\); khi A khác O, không thể bỏ đi thành phần xuất phát.</p>
+
+        <ol><li><strong>Đánh dấu:</strong> A là điểm đầu, B là điểm cuối.</li><li><strong>Sửa phép tính:</strong> \(\overrightarrow{AB}=(2-(-3);-1-2)=(5;-3)\).</li><li><strong>Tự kiểm:</strong> \(\overrightarrow{BA}=(-5;3)\), là vectơ đối của \(\overrightarrow{AB}\).</li></ol>
+
+        <p><strong>Ôn và luyện lại:</strong> Mở lại hình tọa độ ở tab Khám phá, tự làm một câu tìm điểm cuối từ vectơ trong <a href="../luyen-tap/">Core và Luyện tập</a>. Đừng xem lời giải trước khi thử.</p>
     **Từ trực quan đến tính toán:** khi ghép hai mũi tên, hoành độ chỉ cộng với hoành độ, tung độ chỉ cộng với tung độ. Nếu trừ một vectơ, dấu trừ tác động lên cả hai thành phần.
 
     <span id="thpt-g10-chiv-try17" data-thpt-first-try-id="THPT-G10-CHIV-TRY17" data-outcome-id="G10-B10-OPERATIONS" data-thpt-help-ref="HELP-G10-B10-01"></span>
@@ -40,6 +53,8 @@
 
         **Vì sao:** 2u=(4;−2); trừ v=(-1;3) nghĩa là (4−(−1);−2−3)=(5;−5).
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B10-01).
     **Một độ dài, không phải hai chặng:** nếu đi \(3\) ô sang Đông rồi \(4\) ô lên Bắc thì đường đi theo lưới dài \(7\) ô, nhưng khoảng cách nối đầu–cuối là cạnh huyền tam giác vuông, chỉ dài \(5\) ô. Định lí Pythagore giải thích vì sao **độ dài vectơ** cần căn của tổng bình phương hai thành phần.
 
     <span id="thpt-g10-chiv-try18" data-thpt-first-try-id="THPT-G10-CHIV-TRY18" data-outcome-id="G10-B10-NORM_DISTANCE" data-thpt-help-ref="HELP-G10-B10-01"></span>
@@ -52,6 +67,8 @@
 
         **Vì sao:** AB=(3;4), nên AB=√(3²+4²)=5. 7 là tổng chặng theo hai trục, không phải khoảng cách thẳng.
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B10-01).
     **Nhìn hai thành phần để xét hướng:** \((2;1)\) và \((6;3)\) có cùng một hệ số nhân \(3\) ở cả hai tọa độ. Nếu một thành phần không cùng tỉ lệ, hai vectơ khác không không cùng phương. Không bao giờ chia cho một thành phần bằng \(0\) để “tìm tỉ số”.
 
     <span id="thpt-g10-chiv-try19" data-thpt-first-try-id="THPT-G10-CHIV-TRY19" data-outcome-id="G10-B10-COLLINEAR_COORDS" data-thpt-help-ref="HELP-G10-B10-02"></span>
@@ -64,6 +81,8 @@
 
         **Vì sao:** Cặp (6,4) có tỉ số x=3 nhưng y=4, không thể tìm cùng k cho hai tọa độ.
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B10-02).
     **Trung bình tọa độ có ý nghĩa gì?** Trung điểm cân bằng hai đầu mút; trọng tâm tam giác cân bằng ba đỉnh. Ta lấy trung bình **riêng từng trục** chứ không lấy trung bình độ dài hay lẫn các trục.
 
     <span id="thpt-g10-chiv-try20" data-thpt-first-try-id="THPT-G10-CHIV-TRY20" data-outcome-id="G10-B10-MIDPOINT_CENTROID" data-thpt-help-ref="HELP-G10-B10-02"></span>
@@ -76,6 +95,21 @@
 
         **Vì sao:** M: ((−2+4)/2;(4+0)/2)=(1;2); G: ((−2+4+1)/3;(4+0+5)/3)=(1;3).
 
+
+    <a id="HELP-G10-B10-02" aria-hidden="true"></a>
+    <span id="help-g10-b10-02" data-thpt-help-id="HELP-G10-B10-02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi thường gặp 1:</strong> Với \(A(-2;4)\), \(B(4;0)\), \(C(1;5)\), học sinh nhầm trọng tâm với trung điểm \(AB\) và ghi \(G(1;2)\). Đúng phải là \(G(1;3)\) vì tọa độ trọng tâm là trung bình <strong>ba đỉnh</strong>, không chỉ hai đỉnh.</p>
+
+        <p><strong>Lỗi thường gặp 2:</strong> Trong Vận dụng, \(\vec u=(2;1)\) và \(\vec w=(6;4)\) không cùng phương vì \(2\cdot4-1\cdot6=2\ne0\), dù hoành độ đều dương. Ngược lại, \(\vec v=(6;3)=3\vec u\) mới cùng phương với \(\vec u\).</p>
+
+        <p><strong>Vì sao sai?</strong> Công thức trọng tâm khác trung điểm về số điểm lấy trung bình; còn cùng phương đòi hỏi <strong>một hệ số nhân chung</strong> cho cả hai thành phần. Khi gặp thành phần \(0\), không lập tỉ số có mẫu \(0\).</p>
+
+        <p><strong>Sửa và tự kiểm:</strong> Trọng tâm chia \(3\) cho cả hoành và tung; soát lại bằng \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Với cùng phương, tính \(ad-bc\) hoặc kiểm trực tiếp \(\vec v=t\vec u\).</p>
+
+        <p><strong>Ôn và luyện lại:</strong> Tự thử một bài tìm trung điểm, một bài trọng tâm và một bài kiểm cùng phương trong <a href="../luyen-tap/">Luyện tập</a>, không dùng bài đã xem lời giải để tính là kiểm tra độc lập.</p>
     **Ứng dụng mở rộng — dòng nước:** có hai vận tốc khác nhau: vận tốc ca nô so với nước (hướng mũi lái) và vận tốc thực so với bờ (hướng di chuyển). Vectơ vận tốc thực là **tổng** vectơ vận tốc riêng và vectơ dòng nước. Chọn trục \(Ox\) về Đông, \(Oy\) về Bắc; muốn tính thời gian qua sông phải xem thành phần vận tốc hướng Bắc.
 
     <span id="thpt-g10-chiv-try-river-tr01" data-thpt-first-try-id="THPT-G10-CHIV-TRY-RIVER-TR01" data-outcome-id="G10-B10-OPERATIONS" data-thpt-help-ref="HELP-G10-CHIV-RIVER-TR01"></span>
@@ -88,6 +122,19 @@
 
         **Vì sao:** vận tốc theo bờ \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thành phần hướng Bắc \(5\,\mathrm{m/s}\) quyết định thời gian \(t=60/5=12\,\mathrm s\); do đó độ trôi ngang \(3\cdot12=36\,\mathrm m\). Độ lớn vận tốc thực \(\sqrt{34}\,\mathrm{m/s}\) **không phải** thành phần qua sông; không lấy \(60/\sqrt{34}\).
 
+
+    <a id="HELP-G10-CHIV-RIVER-TR01" aria-hidden="true"></a>
+    <span id="help-g10-chiv-river-tr01" data-thpt-help-id="HELP-G10-CHIV-RIVER-TR01"></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi thường gặp:</strong> Sông rộng \(60\,\mathrm m\), ca nô lái thẳng Bắc \(5\,\mathrm{m/s}\) so với nước, dòng chảy Đông \(3\,\mathrm{m/s}\). Một lời giải tính \(t=60/\sqrt{5^2+3^2}\). <strong>Thời gian đó sai.</strong></p>
+
+        <p><strong>Vì sao sai?</strong> \(\sqrt{34}\,\mathrm{m/s}\) là <strong>độ lớn vận tốc theo bờ</strong>, nhưng bề rộng sông chỉ đo theo hướng Bắc. Thành phần hướng Bắc thực tế vẫn là \(5\,\mathrm{m/s}\).</p>
+
+        <ol><li><strong>Xác định trục và hệ quy chiếu:</strong> \(Ox\) Đông, \(Oy\) Bắc; \(\vec v_{\mathrm{bờ}}=\vec v_{\mathrm{riêng}}+\vec v_{\mathrm{dòng}}=(3;5)\,\mathrm{m/s}\).</li><li><strong>Sửa:</strong> \(t=60/5=12\,\mathrm s\), trôi Đông \(3\cdot12=36\,\mathrm m\).</li><li><strong>Thử kiểm:</strong> Nếu dòng nước tăng nhưng mũi thuyền vẫn hướng Bắc với cùng tốc độ riêng, thành phần Bắc không đổi nên thời gian qua sông không đổi (chỉ tăng độ trôi).</li></ol>
+
+        <p><strong>Ôn và luyện lại:</strong> Nhắc lại phép cộng vectơ ở Bài 8 và tọa độ theo trục ở Bài 10, rồi thử tự giải một bài ca nô với số liệu khác. Nếu muốn <strong>không trôi</strong>, phải có thành phần vận tốc theo bờ hướng Đông bằng \(0\) và thành phần Bắc <strong>dương</strong>; trường hợp tốc độ dòng không nhỏ hơn tốc độ riêng không thể vừa chống trôi vừa tới bờ đích trong mô hình này.</p>
     ### 1.3. Thuật ngữ, kiến thức và kỹ năng
 
     **Từ khóa cần phân biệt:** tọa độ điểm là **vị trí**, tọa độ vectơ là **độ thay đổi có hướng**; vectơ đơn vị \(\vec i,\vec j\) xác định hai chiều trục; độ dài vectơ khác tổng quãng đường đi theo lưới; hai vectơ cùng phương cần một hệ số nhân **chung**.
@@ -183,44 +230,6 @@
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><picture><source media="(max-width: 600px)" srcset="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg"><img src="../../../../assets/images/thpt/THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg" alt="Sơ đồ hai hướng vận tốc ca nô và dòng nước; mũi thuyền lái Bắc có trôi, mũi lái chếch ngược dòng để không trôi" loading="lazy"></picture><figcaption><strong>Đọc hình theo đúng dữ kiện Ví dụ 4:</strong> Sông rộng \(96\,\mathrm m\), dòng Đông \(3\,\mathrm{m/s}\), tốc độ riêng \(5\,\mathrm{m/s}\). Mũi tên xanh cho vận tốc riêng, cam cho dòng, lục cho vận tốc theo bờ; tỉ lệ chiều dài vectơ giữ nhất quán giữa hai tình huống. Thời gian dùng <strong>thành phần Bắc</strong>, không dùng độ lớn của mũi tên chéo.</figcaption></figure>
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-B10-01" hidden></span>
-
-    ??? tip "4.1. Lấy nhầm tọa độ điểm cuối làm tọa độ vectơ"
-
-        <p><strong>Lỗi thường gặp:</strong> Với \(A(-2;3)\), \(B(4;1)\), một học sinh ghi \(\overrightarrow{AB}=(4;1)\) vì nhìn ngay tọa độ B. Kết quả sai: đó là tọa độ <strong>điểm B</strong>, không phải độ dời từ A đến B.</p>
-
-        <p><strong>Vì sao sai?</strong> Vectơ \(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\); khi A khác O, không thể bỏ đi thành phần xuất phát.</p>
-
-        <ol><li><strong>Đánh dấu:</strong> A là điểm đầu, B là điểm cuối.</li><li><strong>Sửa phép tính:</strong> \(\overrightarrow{AB}=(4-(-2);1-3)=(6;-2)\).</li><li><strong>Tự kiểm:</strong> \(\overrightarrow{BA}=(-6;2)\), là vectơ đối của \(\overrightarrow{AB}\).</li></ol>
-
-        <p><strong>Ôn và luyện lại:</strong> Mở lại hình tọa độ ở tab Khám phá, tự làm một câu tìm điểm cuối từ vectơ trong <a href="../luyen-tap/">Core và Luyện tập</a>. Đừng xem lời giải trước khi thử.</p>
-
-    <span data-thpt-help-id="HELP-G10-B10-02" hidden></span>
-
-    ??? tip "4.2. Dùng nhầm mẫu số khi tìm trọng tâm hoặc kết luận cùng phương"
-
-        <p><strong>Lỗi thường gặp 1:</strong> Với \(A(0;0)\), \(B(6;0)\), \(C(0;3)\), học sinh ghi trọng tâm \(G(3;1{,}5)\), vì lấy trung bình tọa độ ba đỉnh nhưng <strong>chia cho 2</strong>. Đúng phải là \(G(2;1)\), do có <strong>ba đỉnh</strong>.</p>
-
-        <p><strong>Lỗi thường gặp 2:</strong> Học sinh nói hai vectơ \((2;0)\) và \((3;1)\) cùng phương vì “hoành độ đều dương”, trong khi \(2\cdot1-0\cdot3=2\ne0\). Dấu riêng một thành phần không đủ xác định cùng phương.</p>
-
-        <p><strong>Vì sao sai?</strong> Công thức trọng tâm khác trung điểm về số điểm lấy trung bình; còn cùng phương đòi hỏi <strong>một hệ số nhân chung</strong> cho cả hai thành phần. Khi gặp thành phần \(0\), không lập tỉ số có mẫu \(0\).</p>
-
-        <p><strong>Sửa và tự kiểm:</strong> Trọng tâm chia \(3\) cho cả hoành và tung; soát lại bằng \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Với cùng phương, tính \(ad-bc\) hoặc kiểm trực tiếp \(\vec v=t\vec u\).</p>
-
-        <p><strong>Ôn và luyện lại:</strong> Tự thử một bài tìm trung điểm, một bài trọng tâm và một bài kiểm cùng phương trong <a href="../luyen-tap/">Luyện tập</a>, không dùng bài đã xem lời giải để tính là kiểm tra độc lập.</p>
-
-    <span id="help-g10-chiv-river-tr01" data-thpt-help-id="HELP-G10-CHIV-RIVER-TR01"></span>
-
-    ??? tip "4.3. Dùng độ lớn vận tốc thay thành phần qua sông"
-
-        <p><strong>Lỗi thường gặp:</strong> Sông rộng \(60\,\mathrm m\), ca nô lái thẳng Bắc \(5\,\mathrm{m/s}\) so với nước, dòng chảy Đông \(3\,\mathrm{m/s}\). Một lời giải tính \(t=60/\sqrt{5^2+3^2}\). <strong>Thời gian đó sai.</strong></p>
-
-        <p><strong>Vì sao sai?</strong> \(\sqrt{34}\,\mathrm{m/s}\) là <strong>độ lớn vận tốc theo bờ</strong>, nhưng bề rộng sông chỉ đo theo hướng Bắc. Thành phần hướng Bắc thực tế vẫn là \(5\,\mathrm{m/s}\).</p>
-
-        <ol><li><strong>Xác định trục và hệ quy chiếu:</strong> \(Ox\) Đông, \(Oy\) Bắc; \(\vec v_{\mathrm{bờ}}=\vec v_{\mathrm{riêng}}+\vec v_{\mathrm{dòng}}=(3;5)\,\mathrm{m/s}\).</li><li><strong>Sửa:</strong> \(t=60/5=12\,\mathrm s\), trôi Đông \(3\cdot12=36\,\mathrm m\).</li><li><strong>Thử kiểm:</strong> Nếu dòng nước tăng nhưng mũi thuyền vẫn hướng Bắc với cùng tốc độ riêng, thành phần Bắc không đổi nên thời gian qua sông không đổi (chỉ tăng độ trôi).</li></ol>
-
-        <p><strong>Ôn và luyện lại:</strong> Nhắc lại phép cộng vectơ ở Bài 8 và tọa độ theo trục ở Bài 10, rồi thử tự giải một bài ca nô với số liệu khác. Nếu muốn <strong>không trôi</strong>, phải có thành phần vận tốc theo bờ hướng Đông bằng \(0\) và thành phần Bắc <strong>dương</strong>; trường hợp tốc độ dòng không nhỏ hơn tốc độ riêng không thể vừa chống trôi vừa tới bờ đích trong mô hình này.</p>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
