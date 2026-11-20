@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 2468c25af7635455331f270d1982be0a811f94af
+SOURCE_COMMIT: f4e1e1fab710a3fa5591aa1458079e294d211304
 AUTHOR_PR: 820
 CURRENT_PR: #888 Draft chỉnh trực tiếp bản thảo của #820, no merge/deploy
 CATALOG_TOPIC_ID: CD03
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
+ACADEMIC_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_VERIFIED, source corrected in place, no independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 65841734363d64cc474c359041d65e99535cae23
+REVIEW_RECEIPT_BLOB: 6380d2340c6cb3dc597777eac1d514d95e140322
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 8c6c7afc42edc5842ea7063c66cbb2f60c5b6c7a
+AUTHOR_HANDOFF_BLOB: 4b6c3eac39990329982a8e4f9f06b37484e0097c
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -114,3 +114,7 @@ The current learner file at ACADEMIC_SOURCE_PATH is the **only** active CĐ03 dr
 
 ## 20/11/2026 authoring current source
 - Source 488cee3670af82ed9fd1f457d23a489e7ba8d063, Q18 65841734363d64cc474c359041d65e99535cae23, A1 386752c7cb3024a78ba5ad2d8969996cef6f3df0, V2 8c6c7afc42edc5842ea7063c66cbb2f60c5b6c7a. Three formal root-equation equivalence labels normalized (ΔA only), no merge/deploy.
+
+
+## 20/11/2026 — Hoàn thiện Kiến thức CĐ03
+- Existing single learner source 9df43259cfb61646ec1d60c036e360c40417daae covers all originally scoped 12 outcomes, two SGK B18 radicand families and conditions; authored reading-flow repair, original Practice/Selfcheck unchanged. This is AUTHORING only, no release confirmation.
