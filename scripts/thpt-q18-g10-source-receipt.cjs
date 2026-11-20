@@ -790,6 +790,24 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    }
    return current;
   }
+  if(name==="B18"){
+   // B18 is a one-lesson Golden source enrichment; preserve the original
+   // Chapter VI UX receipt and require an exact owner-signed new Git blob.
+   assert(ux&&chvi&&!chiv&&!chv,"B18 source must extend exact ChVI UX source");
+   const r18=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+   const f18=k=>r18.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f18("BASELINE_PUBLISHED_B18_SOURCE_BLOB"),ux.candidate,
+    "B18 owner Q18 must preserve published historical UX source");
+   const next=f18("CANDIDATE_B18_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==ux.candidate,
+    "B18 Q18 candidate requires a different exact source blob");
+   for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+    "B18_OUT_01","B18_OUT_04","TRY16","TRY19","P0=0","P1=0"]){
+    assert(r18.includes(token),"B18 owner self-QA receipt missing: "+token);
+   }
+   return next;
+  }
   if(ux){
    assert(chvi&&!chiv&&!chv,name+" UX follow-on restricted to published Chapter VI source");
    assert.equal(ux.baseline,row.candidate,name+" immutable source chain: original ChVI receipt → UX delta");
