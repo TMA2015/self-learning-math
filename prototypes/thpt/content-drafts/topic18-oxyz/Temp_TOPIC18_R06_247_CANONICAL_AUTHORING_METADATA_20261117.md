@@ -33,8 +33,8 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: c5742e0d8914f85dec1ccd093d418290068b65a3
-REVIEW_RECEIPT_BLOB: e5dc85dfe4be8bb787614d32a6c6ce3c8287e4be
+ACADEMIC_SOURCE_BLOB: bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4
+REVIEW_RECEIPT_BLOB: 5aa42a6f873614228a3c8dcef2e526daa5a4b82c
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
@@ -430,3 +430,6 @@ With original author Q01–Q18 source receipt, Q15/Q16 and signed A1–A7 as rep
 - 40 outcome modules / 247 original canonical questions, 12 public replay question-only selfchecks, 3 Topic pages; same learner file current blob `c5742e0d8914f85dec1ccd093d418290068b65a3`, exact signed author Q18 `e5dc85dfe4be8bb787614d32a6c6ce3c8287e4be`.
 - Delta C O01/O05 SGK zero-vector angle convention, O07 basis i/j/k, O13 tetra centroid four vertices, O19 plane intercept, O20 perpendicular bisector plane, O40 sphere tangent plane. All original assessment suffix, keys/answer/rubric, SGK bank owner source, SVG, RD1 protection and no-Mastery mode unchanged.
 - Existing P2 SBT G12 ChV B14 printed p25/items 5.6–5.7 **still unverified**; explicitly retain this blocker/provenance trail, do not claim SBT completeness. One owner-effective standard v3.2.0, author-self Q18, not independent Topic NotebookLM reviewer or RELEASE.
+
+## 20/11 affected CĐ18 B14 Q18 O22 author math self review
+Sole current learner bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4, signed receipt 5aa42a6f873614228a3c8dcef2e526daa5a4b82c. Existing SBT p25 5.6/5.7 primary scan missing P2 remains, secondary indexed text confirmed types, O22 adds exact parallel-plane separation with normalization and wardrobe 2/3 example; sphere section 5.6 already O40 after B17. Original 247 public canonical, 12 replay selfchecks, 40 outcomes, assessment and RD1 unchanged. No new independent NotebookLM/release.
