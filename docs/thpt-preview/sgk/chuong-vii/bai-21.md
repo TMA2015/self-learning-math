@@ -198,17 +198,17 @@
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2">
     <p><strong>Lời giải.</strong> Hoàn thành bình phương:</p>
-    <div class="arithmatex">
+
     \[
     (x-2)^2+(y+3)^2=25.
     \]
-    </div>
+
     <p>Vậy \(I(2;-3)\) và \(R=5\). Điểm \(M(5;1)\) thuộc đường tròn vì \(IM^2=3^2+4^2=25\). Vectơ \(IM=(3;4)\) là pháp tuyến của tiếp tuyến tại \(M\), nên:</p>
-    <div class="arithmatex">
+
     \[
     3(x-5)+4(y-1)=0\iff \boxed{3x+4y-19=0}.
     \]
-    </div>
+
     </div>
 
     **Kiểm lại:** \(R\) là bán kính dương, còn \(R^2\) mới là bình phương bán kính. Thay \(M(5;1)\) vào đường tròn cho 9+16=25, nên M thực sự thuộc đường tròn. Thế M vào tiếp tuyến cho 15+4−19=0; pháp tuyến tiếp tuyến là bán kính IM, đúng quan hệ vuông góc.
