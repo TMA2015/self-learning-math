@@ -215,97 +215,91 @@
 
 === "Lỗi thường gặp"
 
+    Khi học phương trình đường tròn, cần tách rõ ba câu hỏi: **đã có bán kính dương chưa**, **điểm có thuộc đường tròn không**, và **đường đang xét là tiếp tuyến tại một điểm hay một đường thẳng cho trước**. Mỗi tình huống sau có một lỗi cụ thể, dữ kiện và cách sửa độc lập.
+
     <span id="help-g10-chvii-try13" data-thpt-help-id="HELP-G10-CHVII-TRY13"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.1. Nhầm dấu tọa độ tâm hoặc bình phương bán kính"
 
-        1. **Nhận diện lỗi:** Nếu viết vế phải 3 hoặc (x-2)², em nhầm bán kính với bình phương bán kính hoặc nhầm dấu tọa độ tâm.
-
-        2. **Quay lại bản chất:** Phương trình đường tròn chỉ là phát biểu IM=R viết bằng tọa độ. Bình phương hai vế thu điều kiện khoảng cách, không phải công thức xuất hiện từ đâu đó.
-
-        3. **Tự sửa:** Đặt M=I, vế trái phải bằng 0; chọn M=I+(3,0) thì vế trái bằng 9.
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Từ tâm I(−2;1) và bán kính 3 lại viết (x−2)²+(y−1)²=3.</li>
+        <li><strong>Tự chẩn đoán:</strong> Điểm (1;1) cách tâm (−2;1) đúng 3 đơn vị; phương trình em viết có nhận điểm đó không?</li>
+        <li><strong>Kiến thức gốc:</strong> Phương trình diễn đạt **IM bằng bán kính**: tọa độ M trừ tọa độ tâm trong mỗi ngoặc, và vế phải là bình phương bán kính.</li>
+        <li><strong>Tự sửa:</strong> Sửa thành (x+2)²+(y−1)²=9; thử điểm (1;1) cho tổng hai bình phương bằng 9.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-C01">Luyện Core 21-C01</a></li>
+        </ol>
 
     <span id="help-g10-chvii-try14" data-thpt-help-id="HELP-G10-CHVII-TRY14"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.2. Sai dấu khi hoàn thành bình phương"
 
-        1. **Nhận diện lỗi:** Nếu kết luận bán kính 5 hoặc tâm (−3,2), em chưa đọc đúng dấu trong bình phương.
-
-        2. **Quay lại bản chất:** Hoàn thành bình phương chuyển điều kiện đại số thành khoảng cách tới một tâm. Nếu kết quả R²≤0 thì không tạo được đường tròn bán kính dương.
-
-        3. **Tự sửa:** Khai triển lại hai bình phương và kiểm phương trình thu được trùng đúng phương trình gốc.
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Tìm tâm (−3;2) hoặc gọi R=5 từ phương trình x²+y²−6x+4y+8=0.</li>
+        <li><strong>Tự chẩn đoán:</strong> Em hãy viết x²−6x=(x−3)²−9 và y²+4y=(y+2)²−4; thử khai triển lại để tìm dấu sai.</li>
+        <li><strong>Kiến thức gốc:</strong> Tâm đọc từ các ngoặc sau khi hoàn thành bình phương; phải đổi dấu số trong ngoặc và lấy **căn bậc hai dương** của vế phải.</li>
+        <li><strong>Tự sửa:</strong> Ta được (x−3)²+(y+2)²=5: tâm (3;−2), bán kính √5; khai triển kiểm lại phương trình cũ.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-C02">Luyện Core 21-C02</a></li>
+        </ol>
 
     <span id="help-g10-chvii-try15" data-thpt-help-id="HELP-G10-CHVII-TRY15"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.3. Dùng bán kính làm hướng của tiếp tuyến"
 
-        1. **Nhận diện lỗi:** Nếu điểm chưa thuộc đường tròn hoặc dùng IM làm chỉ phương, cách dựng tiếp tuyến đã sai điều kiện.
-
-        2. **Quay lại bản chất:** Tại M trên đường tròn, bán kính IM vuông góc tiếp tuyến; vì vậy chính IM là một pháp tuyến của tiếp tuyến. Điều kiện 'M nằm trên đường tròn' là bắt buộc.
-
-        3. **Tự sửa:** Thử 3²+4²=5² và thế M vào 3x+4y−24=0; kiểm pháp tuyến (3,4).
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Dùng IM như một vectơ chỉ phương hoặc không kiểm M có thuộc đường tròn không.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với I(1;−1), R=5, M(4;3): IM²=9+16 có bằng 25 không? IM=(3;4) vuông góc hay nằm trên tiếp tuyến?</li>
+        <li><strong>Kiến thức gốc:</strong> Tại điểm M nằm trên đường tròn, bán kính IM là **pháp tuyến khác 0** của tiếp tuyến, nên phải lập đường qua M với pháp tuyến ấy.</li>
+        <li><strong>Tự sửa:</strong> Kiểm M thuộc đường; viết 3(x−4)+4(y−3)=0, tức 3x+4y−24=0 rồi thử lại tọa độ M.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P02">Luyện Practice 21-P02</a></li>
+        </ol>
 
     <span id="help-g10-chvii-try16" data-thpt-help-id="HELP-G10-CHVII-TRY16"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.4. Chỉ dùng trung điểm hai điểm để tìm tâm"
 
-        1. **Nhận diện lỗi:** Nếu lấy trung điểm AB làm tâm, em mới dùng hai điểm và chưa bảo đảm cách đều C.
-
-        2. **Quay lại bản chất:** Tâm đường tròn cách đều các điểm đã cho. Giao hai đường trung trực cho tâm nếu ba điểm không thẳng hàng; khi ba điểm thẳng hàng thì không có đường tròn đi qua cả ba.
-
-        3. **Tự sửa:** Tìm cả hai trung trực rồi thử độ dài IA, IB, IC bằng nhau.
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Lấy trung điểm AB làm tâm rồi quên kiểm điểm C thứ ba.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với A(0;0), B(2;0), C(0;2), điểm (1;0) có cách đều ba điểm không? Hãy tìm thêm trung trực AC.</li>
+        <li><strong>Kiến thức gốc:</strong> Tâm đường tròn qua **ba điểm không thẳng hàng** nằm ở giao hai đường trung trực AB và AC.</li>
+        <li><strong>Tự sửa:</strong> Tìm trung trực x=1 và y=1, được I(1;1); ba bình phương khoảng cách đến A,B,C đều bằng 2.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P04">Luyện Practice 21-P04</a></li>
+        </ol>
 
     <span id="help-g10-chvii-try17" data-thpt-help-id="HELP-G10-CHVII-TRY17"></span>
 
-    ??? tip "Tự khắc phục theo năm bước"
+    ??? tip "4.5. Lấy h bằng bán kính nhưng nói cắt hai điểm"
 
-        1. **Nhận diện lỗi:** Nếu h=R mà nói 'cắt hai điểm', em nhầm trường hợp tiếp xúc với cát tuyến.
-
-        2. **Quay lại bản chất:** Nếu h=d(I,d)>R thì lối đi ở ngoài vùng; h=R thì chạm một điểm; h<R thì cắt đường tròn tại hai điểm. Không cần giải hệ khi chỉ hỏi số giao điểm.
-
-        3. **Tự sửa:** Vẽ đoạn IT vuông góc d dài 3; các điểm khác T trên d sẽ cách I xa hơn 3.
-
-        4. **Tự đối chiếu:** xem lại lời giải trên sau khi em tự làm; kiểm các điều kiện và dữ kiện của bài vừa Tự thử.
-
-        5. **Luyện tiếp:** Dùng liên kết bên dưới để luyện câu cùng kiến thức. Nếu đã xem lời giải, hãy chọn thêm câu khác và tự làm mà không dựa vào gợi ý.
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Kết luận hai giao điểm khi khoảng cách tâm đến đường thẳng đúng bằng R.</li>
+        <li><strong>Tự chẩn đoán:</strong> Với I(1;2), R=3 và d:y=−1, điểm nào trên d gần tâm nhất? Có thể có điểm thứ hai cùng cách I đúng 3 không?</li>
+        <li><strong>Kiến thức gốc:</strong> So khoảng cách ngắn nhất h với R: **h<R** cho hai điểm, **h=R** cho một tiếp điểm, **h>R** thì không gặp đường tròn.</li>
+        <li><strong>Tự sửa:</strong> Chân vuông góc T(1;−1) cách I đúng 3; các điểm khác trên d xa I hơn, nên d tiếp xúc tại T.</li>
+        <li><strong>Luyện lại:</strong> <a href="../luyen-tap/?item=THPT-G10-B21-P03">Luyện Practice 21-P03</a></li>
+        </ol>
 
     <span data-thpt-help-id="D6-G10-B21-01" hidden></span>
 
-    ??? tip "Nhầm R² với bán kính"
+    ??? tip "4.6. Nhận phương trình suy biến thành đường tròn thực"
 
-        <p><strong>Dấu hiệu:</strong> Hoàn thành bình phương ra R²≤0 nhưng vẫn coi là đường tròn có bán kính dương.</p>
-        <p><strong>Bản chất toán:</strong> Chỉ R²&gt;0 mới cho đường tròn thực bán kính R&gt;0. R²=0 cho một điểm; R²&lt;0 không có điểm thực.</p>
-        <p><strong>Tự sửa:</strong> Ôn B21 mục 1: chuyển về (x−a)²+(y−b)²=R² rồi kiểm R² trước khi lấy căn.</p>
-        <p><strong>Kiến thức cần ôn:</strong> Hằng đẳng thức bình phương và bình phương không âm; B21 mục 1.</p>
-        <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B21-C02" href="../luyen-tap/?item=THPT-G10-B21-C02">Luyện lại câu 21-C02</a> · <a data-thpt-formative-id="THPT-G10-B21-P05" href="../luyen-tap/?item=THPT-G10-B21-P05">Luyện lại câu 21-P05</a></p>
-
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Sau khi hoàn thành bình phương ra R² bằng 0 hoặc âm vẫn ghi bán kính dương.</li>
+        <li><strong>Tự chẩn đoán:</strong> Nếu x²+y²=0, có bao nhiêu điểm? Nếu x²+y²+2=0, tổng hai bình phương có thể bằng −2 không?</li>
+        <li><strong>Kiến thức gốc:</strong> Chỉ R² **dương** mới xác định đường tròn bán kính thực dương; bằng 0 là một điểm, âm là vô nghiệm thực.</li>
+        <li><strong>Tự sửa:</strong> Kiểm dấu của vế phải trước khi lấy căn hoặc gọi tên đường tròn; tự giải hai phương trình ví dụ để phân biệt một điểm và vô nghiệm.</li>
+        <li><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B21-C02" href="../luyen-tap/?item=THPT-G10-B21-C02">Luyện lại câu 21-C02</a> · <a data-thpt-formative-id="THPT-G10-B21-P05" href="../luyen-tap/?item=THPT-G10-B21-P05">Luyện lại câu 21-P05</a></li>
+        </ol>
 
     <span data-thpt-help-id="D6-G10-B21-02" hidden></span>
 
-    ??? tip "Viết tiếp tuyến khi M chưa thuộc đường tròn"
+    ??? tip "4.7. Nhầm tiếp tuyến tại M với một đường thẳng tiếp xúc cho trước"
 
-        <p><strong>Dấu hiệu:</strong> Dùng IM làm pháp tuyến nhưng chưa chứng minh IM²=R²; nhầm cắt nhau với tiếp xúc.</p>
-        <p><strong>Bản chất toán:</strong> Công thức tiếp tuyến tại M áp dụng khi M thuộc đường tròn. Đường d bất kỳ tiếp xúc khi d(I,d)=R&gt;0.</p>
-        <p><strong>Tự sửa:</strong> Ôn B21 mục 2 và B20 mục 3 (khoảng cách): xác minh \(M\in(C)\), tính \(\overrightarrow{IM}\), lập tiếp tuyến qua M vuông góc với \(\overrightarrow{IM}\), rồi kiểm lại \(d(I,d)=R\).</p>
-        <p><strong>Kiến thức cần ôn:</strong> B19 pháp tuyến, B20 khoảng cách; B21 mục 2.</p>
-        <p><strong>Luyện lại bài đã có:</strong> <a data-thpt-formative-id="THPT-G10-B21-P02" href="../luyen-tap/?item=THPT-G10-B21-P02">Luyện lại câu 21-P02</a> · <a data-thpt-formative-id="THPT-G10-B21-P03" href="../luyen-tap/?item=THPT-G10-B21-P03">Luyện lại câu 21-P03</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W21-ANCHOR-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w21-anchor-01">Bài tự luận liên quan</a></p>
-
+        <ol>
+        <li><strong>Nhận diện lỗi:</strong> Biết đường d tiếp xúc rồi tự coi điểm M bất kỳ là tiếp điểm, hoặc dùng IM khi M chưa kiểm.</li>
+        <li><strong>Tự chẩn đoán:</strong> Đường tròn tâm I(1;−1), R=5 và d:y=4 tiếp xúc tại (1;4); điểm M(4;3) có phải tiếp điểm của chính đường d không?</li>
+        <li><strong>Kiến thức gốc:</strong> Muốn lập tiếp tuyến **tại M** phải xác minh \(M\in(C)\) và dùng \(\overrightarrow{IM}\) làm pháp tuyến của tiếp tuyến qua M; hướng tiếp tuyến vuông góc với \(\overrightarrow{IM}\). Muốn biết đường d **cho trước** có tiếp xúc hay không, dùng \(d(I,d)=R\) nhưng còn phải xác định đúng chân vuông góc làm tiếp điểm.</li>
+        <li><strong>Tự sửa:</strong> Tách riêng yêu cầu: với M đã cho, kiểm thuộc đường tròn rồi viết tiếp tuyến; với d:y=4, tìm chân vuông góc (1;4) và kiểm bán kính bằng 5, không gán M(4;3) thành tiếp điểm.</li>
+        <li><strong>Luyện lại:</strong> <a data-thpt-formative-id="THPT-G10-B21-P02" href="../luyen-tap/?item=THPT-G10-B21-P02">Luyện lại câu 21-P02</a> · <a data-thpt-formative-id="THPT-G10-B21-P03" href="../luyen-tap/?item=THPT-G10-B21-P03">Luyện lại câu 21-P03</a> · <a data-thpt-formative-id="THPT-G10-CHVII-W21-ANCHOR-01" href="../../../thu-vien/tu-luan-chuong-vii/#thpt-g10-chvii-w21-anchor-01">Bài tự luận liên quan</a></li>
+        </ol>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
