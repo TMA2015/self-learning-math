@@ -77,7 +77,7 @@ Không. AB và CD đối nhau; AB bằng DC.
 
 Cộng vectơ là ghép các độ dời có cả độ lớn lẫn hướng, **không cộng độ dài các đoạn thẳng**. Quy tắc ba điểm là \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\): đi từ A đến B rồi từ B đến C có cùng độ dời với đi thẳng từ A đến C. Trong hình hộp, ba vectơ theo ba cạnh kề tại A cộng lại thành vectơ nối A với đỉnh đối diện C′.
 
-> **QUY TẮC — Cộng vectơ theo đường đi và quy tắc hình hộp**
+> **TÍNH CHẤT — Cộng vectơ theo đường đi và quy tắc hình hộp**
 >
 > Với ba điểm bất kỳ \(A,B,C\), quy tắc ba điểm là \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\). Để cộng, ta ghép độ dời có hướng chứ không cộng riêng độ dài các đoạn thẳng.
 >
@@ -172,7 +172,7 @@ Bằng 0 vì cos90°=0.
 
 Bài lực ba chiều thường hỏi hợp lực, hình chiếu hay công sinh ra bởi một lực. Chọn phép cộng vectơ khi ghép các tác dụng, chọn tích vô hướng khi đo đóng góp của lực dọc theo chuyển dời; không cộng độ lớn nếu các lực khác hướng.
 
-> **QUY TẮC — Hợp lực và tổng vectơ**
+> **TÍNH CHẤT — Hợp lực và tổng vectơ**
 >
 > Hợp lực hai lực là tổng hai vectơ lực. Nếu chúng vuông góc, độ lớn hợp lực là \(\sqrt{F_1^2+F_2^2}\), không phải \(F_1+F_2\).
 
@@ -341,7 +341,7 @@ Vectơ từ A đến B được tính bằng cuối trừ đầu theo từng tr�
 
 Phép cộng, trừ và nhân số trên vectơ trong ba trục vuông góc thực hiện theo từng thành phần. Đây là phép cộng độ dời độc lập trên Ox,Oy,Oz chứ không cộng ba độ dài của vectơ.
 
-> **QUY TẮC — Phép toán theo từng tọa độ**
+> **TÍNH CHẤT — Phép toán theo từng tọa độ**
 >
 > Phép cộng, trừ và nhân số trên vectơ trong ba trục vuông góc thực hiện theo từng thành phần.
 
@@ -596,7 +596,7 @@ z−2=0, tức z=2.
 
 Ba điểm phân biệt chưa đủ xác định một mặt: chúng phải **không thẳng hàng**. Lấy AB và AC không cùng phương, dựng n=AB×AC rồi áp dụng phương trình mặt qua A. Nếu ba điểm thẳng hàng, tích có hướng bằng 0 và tồn tại vô số mặt phẳng qua đường đó.
 
-> **ĐIỀU KIỆN — Mặt phẳng qua ba điểm**
+> **KIẾN THỨC CẦN GHI NHỚ — Mặt phẳng qua ba điểm**
 >
 > Ba điểm phân biệt chưa đủ xác định một mặt: chúng phải **không thẳng hàng**.
 
@@ -792,7 +792,7 @@ Trong SGK, **phương trình chính tắc** của đường thẳng là một d�
 >
 > Trong hệ trục \(Oxyz\), đường thẳng đi qua \(M_0(x_0;y_0;z_0)\) có vectơ chỉ phương \(\vec u=(a;b;c)\) với \(abc\ne0\) có phương trình chính tắc \(\dfrac{x-x_0}{a}=\dfrac{y-y_0}{b}=\dfrac{z-z_0}{c}\). Ba mẫu số đều khác 0 là **điều kiện bắt buộc** của dạng này.
 >
-> **ĐIỀU KIỆN — Khi một tọa độ hướng bằng không.** Nếu một trong \(a,b,c\) bằng 0, không được gọi hệ tỉ số rút gọn là *phương trình chính tắc* theo SGK. Khi đó giữ tọa độ tương ứng bằng hằng số và có thể viết các tỉ số còn hợp lệ **chỉ như một hệ biểu diễn tương đương**; phương trình tham số luôn là lựa chọn không phải chia.
+> **KIẾN THỨC CẦN GHI NHỚ — Khi một tọa độ hướng bằng không.** Nếu một trong \(a,b,c\) bằng 0, không được gọi hệ tỉ số rút gọn là *phương trình chính tắc* theo SGK. Khi đó giữ tọa độ tương ứng bằng hằng số và có thể viết các tỉ số còn hợp lệ **chỉ như một hệ biểu diễn tương đương**; phương trình tham số luôn là lựa chọn không phải chia.
 
 
 **Ví dụ**
