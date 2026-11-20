@@ -2,9 +2,9 @@
 
 R03_IMMUTABLE_SOURCE_BLOB: bbb0169bd4809691b08963413abd16d20ae50073
 STUDENT_R05_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-STUDENT_R05_BLOB: b10b1ca94377d8dc2ffffcc5d5211c24514369c6
+STUDENT_R05_BLOB: df47c56c8a7559047d35b44640ea74dce27a3f91
 R05_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-R05_Q18_RECEIPT_BLOB: 952892b2d7930a689e3e5f02741bcdd5050584fc
+R05_Q18_RECEIPT_BLOB: af756b88c81782a664aa8597f0c87ae15e35f261
 STATUS: R05_CURRENT_FORMAL_KNOWLEDGE_TARGETED_AUTHOR_SELF_VERIFIED
 
 ## 18/11 current learner-source custody and DELTA_C boundary
@@ -124,3 +124,9 @@ END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
 - STUDENT_R05_BLOB: b10b1ca94377d8dc2ffffcc5d5211c24514369c6
 - R05_Q18_RECEIPT_BLOB: 952892b2d7930a689e3e5f02741bcdd5050584fc
 - Half-open interval and basic trig continuity S1 statements restored. Source-only affected Delta C author math QA, original student Practice and Tự kiểm tra unchanged.
+
+
+## 20/11/2026 — CĐ08 Knowledge S1 B15–B17 current
+- CURRENT_LEARNER_SOURCE_BLOB: df47c56c8a7559047d35b44640ea74dce27a3f91
+- REVIEW_RECEIPT_BLOB: af756b88c81782a664aa8597f0c87ae15e35f261
+- Explicit bounded finite limit operations and definition via all approaching sequences, preserving existing Practice/Selfcheck and 18 student units.
