@@ -143,16 +143,16 @@
 
         **Vì sao:** Căn bậc ba là lũy thừa mũ \(1/3\), không phải phép chia cho 3. Chỉ có thể ghi đã thực hành máy khi đã thật sự nhập, đọc và quy tròn.
 
-        **Nếu nhầm:** Mở mục lỗi 4.3, rồi chọn bộ số mới trong Luyện tập; không dùng kết quả vừa xem làm chứng cứ độc lập.
+        **Nếu nhầm:** Tự mở khung Kiểm lỗi ngay bên dưới, rồi chọn bộ số mới trong Luyện tập; không dùng kết quả vừa xem làm chứng cứ độc lập.
 
 
     <span data-thpt-help-id="HELP-G10-B12-CALC-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
-        **Cách làm sai:** Muốn tính \(\sqrt[3]{11}\) nhưng nhập \(11/3\), hoặc thay \(\sqrt[3]{7}\) bằng \(2{,}2\) rồi tự nhận kết quả chính xác đến hàng phần nghìn.
+        **Cách làm sai:** Muốn tính \(\sqrt[3]{11}\) nhưng nhập \(11/3\), hoặc làm tròn \(\sqrt[3]{11}\) quá sớm thành \(2{,}2\) rồi tự nhận kết quả chính xác đến hàng phần nghìn.
 
-        **Vì sao sai:** Chia 7 cho 3 khác với căn bậc ba của 7; làm tròn quá sớm sẽ làm mất chữ số cần dùng. Số chữ số hiển thị trên máy không tự nói gì về sai số của một phép đo khác.
+        **Vì sao sai:** Chia 11 cho 3 khác với căn bậc ba của 11; làm tròn quá sớm sẽ làm mất chữ số cần dùng. Số chữ số hiển thị trên máy không tự nói gì về sai số của một phép đo khác.
 
         **Tự sửa:** Dùng chức năng căn bậc ba hoặc nhập \(11^{(1/3)}\) có ngoặc. Đổi sang thập phân, đọc đủ chữ số, sau đó mới làm tròn. Khi yêu cầu cận \(0{,}0005\), có thể kiểm \(2{,}2235^3<11<2{,}2245^3\) để chứng minh gần đúng \(2{,}224\).
 
