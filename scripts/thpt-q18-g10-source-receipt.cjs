@@ -121,12 +121,27 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    receipt.includes("DELTA_C_ACADEMIC_MATERIAL")&&
    receipt.includes("OWNER_P2_PENDING")&&receipt.includes("P0=0")&&receipt.includes("P1=0"),
    "B23 source receipt must identify full four-outcome delta and no false owner P2");
-  const current=field("CANDIDATE_BLOB");
-  assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==blobs[1],
-   "B23 new canonical source must be a distinct actual Git blob");
+  const r01=field("CANDIDATE_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(r01||"")&&r01!==blobs[1],
+   "B23 R01 source must differ from immutable S1 ledger");
+  const r02file=path.join(root,"prototypes/thpt/ux795/G10_CHVIII_B23_OWNER_P2_UX_CORRECTION_Q18_R02_20261120.md");
+  let current=r01;
+  if(fs.existsSync(r02file)){
+   const r02=fs.readFileSync(r02file,"utf8");
+   const get=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(get("R02_PREVIOUS_SOURCE_BLOB"),r01,
+    "B23 R02 must extend immutable P1-published R01, never rewrite R01");
+   current=get("R02_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==r01,
+    "B23 owner P2 correction must identify a distinct exact R02 Git blob");
+   for(const marker of ["G10-CHVIII-B23-G0G2-Q18","OWNER_P2_FAIL_RECEIVED",
+    "DELTA_A_UI","DELTA_C_ACADEMIC_MATERIAL","UX-P2-01","UX-P2-06"]){
+    assert(r02.includes(marker),"B23 R02 source-lock/owner defect ledger missing "+marker);
+   }
+  }
   const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-23.md"));
   const gitBlob=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
-  assert.equal(gitBlob,current,"B23 new candidate must exactly match signed source SHA");
+  assert.equal(gitBlob,current,"B23 current canonical source must match chained signed R01 to R02 SHA");
   return current;
  }
  if(name==="B01"){
