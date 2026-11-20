@@ -17,8 +17,8 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-SOURCE_BLOB: eb2ee110e42e767a711c769b39682784aa3e996e
-ACADEMIC_SOURCE_BLOB: eb2ee110e42e767a711c769b39682784aa3e996e
+SOURCE_BLOB: a5361460045dab88f1a14929298bd41693f537cf
+ACADEMIC_SOURCE_BLOB: a5361460045dab88f1a14929298bd41693f537cf
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
 ORIGINAL_R01_SOURCE_BLOB: 277ccb8b5d9f0a8c5f08680fa7e5b70925710308
@@ -180,3 +180,11 @@ AUTHOR_SIGNOFF: TOP14_R02_55_SGK_DISPLAY_NUMBERS_DELTA_A_EXACT_GIT_SOURCE_47c987
 **Exact minimal correction and mathematical check:** the only changed learner-facing span is T22's “Nếu làm sai”. Substituting x=1 yields y²=4, so y=±2; (1,2) and (1,-2) both give y²−4x=0, symmetric about Ox for the parabola. The T22 stem, public canonical item ID, correct key, pre-existing “Đối chiếu”, rubric, grade placement, 55 SGK numbering and figures are not touched. **23/23 first-try recovery notes were read for wrong-topic carryover**; only T22 required this correction.
 
 **Verdict on affected scope:** `DELTA_C_ACADEMIC_MATERIAL` (reasoned pedagogical mathematics); author independently verified Q03/Q08/Q13/Q14/PED6 with direct substitution, `P0=0;P1=0;MINIMAL_DELTA=ONE_T22_D6_SENTENCE;AUTHOR_SIGNOFF=TOP14_R02_O22_PARABOLA_REMEDIATION_DELTA_C_20261119`. No new whole-Topic reviewer PASS or NotebookLM use claimed. Prior unaffected signed checks retain their snapshot scope. A1–A7 updated exact source blob `e2dd3eb2985aba77e354dbd21c9025a273163be5`. RELEASE R1–R5/AP1–AP5/P1–P2, protected RD1, Final Submit and Mastery **not** authorized.
+
+
+<!-- TOP14_S1_B22_CONIC_FOCAL_COVERAGE_DELTA_C_20261120 -->
+### 20/11/2026 · Q01/Q03 mandatory definitions — G10 Tập 2 B22, trang in 48–52
+
+**S1 trực tiếp:** SGK Kết nối tri thức Toán 10 Tập hai B22 pp48–52: elip/hypebol tiêu cự `F1F2=2c` với c²=a²−b² và c²=a²+b² tương ứng; parabol có **tham số tiêu `p=d(F,Δ)>0`**, chuẩn `y²=2px`. [SGK](https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-10-Tap-2-Chuong-trinh-moi.pdf). Learner trước `eb2ee110e42e767a711c769b39682784aa3e996e` đã có hai tiêu điểm/đường chuẩn và phương trình nhưng **thiếu tên chính thức và biểu thức tiêu cự, tham số tiêu, phương trình chính tắc**. Trên một source canonical `a5361460045dab88f1a14929298bd41693f537cf` đã bổ sung trực tiếp tại TOP14-M18/O18 (elip), M19/O19 (hypebol), M21/O21 (parabol), trước Ví dụ; không thay stem/key/solution/rubric/ID/figure/assessment. Có chứng cứ điều kiện 0<c<a đối với elip, c>a đối với hypebol và p>0.
+
+**Q18 author targeted 7/7 PASS:** xác nhận tiêu cự elip a=5,b=3 và a=5,b=4, hypebol a=3,b=4 và a=4,b=3, tham số p từ F/Δ khi p∈{2,4,6}, toàn bộ canonical IDs và worked examples count không đổi, math delimiter cân bằng và phép xóa chính xác 3 đoạn khôi phục nguyên văn source trước. **DELTA_C_ACADEMIC_MATERIAL**, scoped academic self-check, KHÔNG tuyên bố độc lập NotebookLM hoặc 22-topic full S1 PASS. Owner giữ `CONTENT_READY`; RELEASE và merge/deploy vẫn tách riêng.
