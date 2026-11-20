@@ -131,7 +131,19 @@ for(const c of cases){
   field(b10R02,"BASELINE_R01_SOURCE_BLOB")===field(b10R01,"R01_SOURCE_BLOB")&&
   field(b10R02,"BASELINE_R01_CANONICAL_BLOB")===field(b10R01,"ONE_CANONICAL_LESSON_BLOB")&&
   field(b10R02,"R02_SOURCE_BLOB")===blob(src);
- const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03||signedB09R05||signedB09R06||signedB10R01||signedB10R02);
+ // R01 20/11 moved contextual HELP to the first Golden tab without changing
+ // any SGK formula. Source router verifies the entire signed predecessor chain;
+ // this proof additionally validates the exact lesson-specific R01 row.
+ const relocation=fs.readFileSync(path.join(__dirname,
+  "../prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+ const row=relocation.split("\n").filter(x=>x.startsWith("| B"+c.n+" | "));
+ assert.equal(row.length,1,"B"+c.n+": exactly one signed HELP relocation row");
+ const signed=[...row[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(signed.length,2,"B"+c.n+": expected immutable old/new R01 source blobs");
+ const signedPlacement=relocation.includes("G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120")&&
+  relocation.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+  signed[1]===blob(src)&&signed[1]===expectedG10KnowledgeBlob(c.n,c.sha);
+ const current=editorial[c.n]&&(blob(src)===editorial[c.n].sha||signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03||signedB09R05||signedB09R06||signedB10R01||signedB10R02||signedPlacement);
  if(signedR02||signedR03||signedR04||signedR05||signedB08R04||signedB09R03||signedB09R05||signedB09R06||signedB10R01||signedB10R02)assert.equal(signedB10R02?field(b10R02,"R02_SOURCE_BLOB"):signedB10R01?field(b10R01,"R01_SOURCE_BLOB"):signedB09R06?field(b09r06,"R06_SOURCE_BLOB"):signedB09R05?field(b09r05,"R05_SOURCE_BLOB"):signedB09R03?field(b09r03,"R03_SOURCE_BLOB"):signedB08R04?field(b08r04,"R04_SOURCE_BLOB"):signedR05?field(r05,"R05_SOURCE_BLOB"):signedR04?field(r04,"R04_SOURCE_BLOB"):signedR03?
   field(r03,c.n===7?"R03_SOURCE_BLOB":"R03_CANDIDATE_SOURCE_BLOB"):
   field(r02,"R02_CANDIDATE_SOURCE_BLOB"),expectedG10KnowledgeBlob(c.n,c.sha),
@@ -139,8 +151,8 @@ for(const c of cases){
   if(current){
   const headings=[...middle.matchAll(/^    ### ([^\n]+)$/gm)].map(m=>m[1]);
   assert.deepEqual(headings,editorial[c.n].sections,"B"+c.n+": official S1 book sections changed");
-  assert(expressions.length>0||(c.n===7&&signedR05&&middle.includes("\\("))||
-   (c.n===10&&signedB10R02&&
+  assert(expressions.length>0||(c.n===7&&(signedR05||signedPlacement)&&middle.includes("\\("))||
+   (c.n===10&&(signedB10R02||signedPlacement)&&
     (middle.match(/<div class="arithmatex">\\\(\\displaystyle /g)||[]).length===7),
     "B"+c.n+": all S1 mathematical expressions missing");
   for(const required of editorial[c.n].formulas)
