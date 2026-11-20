@@ -152,7 +152,7 @@
 
         **Kết quả:** Đặt \(\vec R=\vec F_1+\vec F_2\), ta có \(|\vec R|^2=4^2+4^2+2\cdot4\cdot4\cos60^\circ=48\). Vì vậy \(|\vec F_3|=4\sqrt3\,\mathrm N\), và \(\vec F_3=-\vec R\), tức lực thứ ba **ngược chiều hợp lực**.
 
-        **Vì sao:** Góc \(60^\circ\) không phải góc vuông; dùng tổng vectơ và tính chất tích vô hướng, không cộng \(4+4\) thành độ lớn hợp lực. Nếu nhầm, xem cách sửa ở mục 4.3.
+        **Vì sao:** Góc \(60^\circ\) không phải góc vuông; dùng tổng vectơ và tính chất tích vô hướng, không cộng \(4+4\) thành độ lớn hợp lực. Nếu nhầm, tự mở khung Kiểm lỗi ngay dưới câu Vận dụng này.
 
 
 
@@ -166,7 +166,7 @@
 
         **Vì sao sai:** Hai lực tạo góc \(60^\circ\), không cùng hướng. Phải **cộng vectơ**, không cộng độ lớn, và lực cân bằng phải **ngược chiều** hợp lực.
 
-        **Tự sửa:** Vẽ hai mũi tên cùng gốc, xác định đúng góc \(120^\circ\). Áp dụng \(|\vec F_1+\vec F_2|^2=4^2+4^2+2\cdot4\cdot4\cos60^\circ=48\), suy ra hợp lực \(4\sqrt3\,\mathrm N\). Vectơ lực thứ ba là \(-(\vec F_1+\vec F_2)\).
+        **Tự sửa:** Vẽ hai mũi tên cùng gốc, xác định đúng góc \(60^\circ\). Áp dụng \(|\vec F_1+\vec F_2|^2=4^2+4^2+2\cdot4\cdot4\cos60^\circ=48\), suy ra hợp lực \(4\sqrt3\,\mathrm N\). Vectơ lực thứ ba là \(-(\vec F_1+\vec F_2)\).
 
         **Luyện lại:** Tự trở lại bài vận dụng hai lực \(4\,\mathrm N\), góc \(60^\circ\) trong tab Khám phá; hãy tự tính trước khi mở đối chiếu. Nếu đã xem đáp án thì chọn bộ số liệu khác để kiểm tra độc lập.
     ### 1.4. Thuật ngữ, kiến thức và kỹ năng
