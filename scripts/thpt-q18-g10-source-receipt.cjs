@@ -1168,6 +1168,32 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
   }
   return row.candidate;
  }
+ if(name==="B24"){
+  const file=path.join(root,"prototypes/thpt/ux795/G10_CHVIII_B24_S1_FIVE_SECTIONS_OWNER_Q18_R01_20261120.md");
+  if(fs.existsSync(file)){
+   const r=fs.readFileSync(file,"utf8");
+   const get=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(get("R01_PREVIOUS_SOURCE_BLOB"),blobs[1],"B24 R01 must extend immutable S1 ledger SHA");
+   const next=get("R01_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next)&&next!==blobs[1],"B24 R01 candidate SHA invalid");
+   for(const marker of ["G10-CHVIII-B24-S1-FIVE-SECTIONS-G0G2-Q18-R01-20261120",
+    "DELTA_C_ACADEMIC_MATERIAL","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","OWNER_P2_PENDING",
+    "P0=0 P1=0","THPT-G10-CHVIII-TRY08"])
+     assert(r.includes(marker),"B24 owner G0-G2 Q18 source proof missing "+marker);
+   const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-24.md"));
+   const actual=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
+   assert.equal(actual,next,"B24 source Git blob must match Q18 R01 receipt");
+   const t=lesson.toString("utf8");
+   assert(t.includes("2.5. Sử dụng máy tính cầm tay")&&t.includes("nPr")&&t.includes("nCr")&&
+    !t.includes("0le kle n")&&[...t.matchAll(/^=== "([^"]+)"$/gm)].length===4,
+    "B24 cannot lose S1 5-section outcome or Golden tab4");
+   for(const n of ["TRY05","TRY06","TRY07","TRY08"])assert(
+    t.includes('data-thpt-first-try-id="THPT-G10-CHVIII-'+n+'"')&&
+    t.includes('data-thpt-help-id="HELP-G10-CHVIII-'+n+'"'),
+    "B24 original FirstTry/HELP canonical ID changed: "+n);
+   return next;
+  }
+ }
  return blobs[1];
 }
 function expectedG10KnowledgeBlob(lesson,legacy){
