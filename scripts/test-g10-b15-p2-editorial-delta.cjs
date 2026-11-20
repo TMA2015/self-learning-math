@@ -88,9 +88,13 @@ const b18r02=read(ux+"G10_CHVI_B18_OWNER_P2_GOLDEN_ERRORS_R02_20261120.md");
 assert.equal(field(b18r02,"PREVIOUS_B18_SOURCE_BLOB"),
  field(b18,"CANDIDATE_B18_SOURCE_BLOB"),
  "B18 new Golden PED R02 follows old signed R01 source");
-assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-18.md")),
+const b18r03=read(ux+"G10_CHVI_B18_OWNER_EDITORIAL_POLISH_R03_20261120.md");
+assert.equal(field(b18r03,"PREVIOUS_B18_SOURCE_BLOB"),
  field(b18r02,"CANDIDATE_B18_SOURCE_BLOB"),
- "B18 current source must match exact latest R02; untouched ChV neighbors frozen");
+ "B18 editorial R03 must extend exact previously published R02");
+assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-18.md")),
+ field(b18r03,"CANDIDATE_B18_SOURCE_BLOB"),
+ "B18 current source must match latest R03 while original B15 and ChV neighbors stay frozen");
 assert.equal(field(b16,"BASELINE_PUBLISHED_B16_SOURCE_BLOB"),
  "4ddf9c449f92a9f48bace5a3f9b84186bf33af20",
  "B16 baseline must match historical accepted source, not overwrite it");

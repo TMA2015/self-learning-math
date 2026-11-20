@@ -58,8 +58,13 @@ for(const n of [15,16,17,18]){
   const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f02("PREVIOUS_B18_SOURCE_BLOB"),f18("CANDIDATE_B18_SOURCE_BLOB"),
    "B18 Q18 latest pedagogy receipt must extend old R01");
-  assert.equal(f02("CANDIDATE_B18_SOURCE_BLOB"),expected,
-   "B18 Q18 current source exact new R02");
+  const r03=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_EDITORIAL_POLISH_R03_20261120.md"),"utf8");
+  const f03=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(f03("PREVIOUS_B18_SOURCE_BLOB"),f02("CANDIDATE_B18_SOURCE_BLOB"),
+   "B18 editorial R03 preserves the accepted R02 source");
+  assert.equal(f03("CANDIDATE_B18_SOURCE_BLOB"),expected,
+   "B18 source must match exact new R03 proof");
  }else if(n===16){
   const r16=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
