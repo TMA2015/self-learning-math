@@ -1343,7 +1343,7 @@ Không, vì khoảng cách tâm–mặt d=6>R.
 
 Tiếp xúc một điểm (0,0,4), vì d=R.
 
-**D6 — Khi chưa đúng:** Cần học khái niệm mặt cầu B17 trước; không cho O23 làm outcome Core bắt buộc của B14 hay SGK-ChII.
+**D6 — Khi chưa đúng:** Hãy vẽ tâm cầu, chân đường vuông góc từ tâm xuống mặt phẳng và một điểm trên giao tuyến. Tam giác vuông cho \(r^2+d^2=R^2\). So sánh \(d\) với \(R\) trước: \(d<R\) có đường tròn, \(d=R\) chỉ có một tiếp điểm, còn \(d>R\) không có giao. Nếu quên công thức, hãy tự dựng lại từ định lí Pythagore.
 
 </details>
 
@@ -3647,7 +3647,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** h<R: hình tròn; h=R: tiếp xúc; h>R: không giao.
+- **Đáp án:** Nếu \(h<R\), giao tuyến của **mặt cầu** và mặt phẳng là **đường tròn** bán kính \(r=\sqrt{R^2-h^2}\) (không phải cả hình tròn gồm phần bên trong); nếu \(h=R\), hai mặt có đúng một tiếp điểm; nếu \(h>R\), không có điểm chung.
 - **Lời giải có suy luận:** Dùng vuông góc tâm–mặt phẳng và r²=R²−h² khi vế phải không âm.
 - **Thang tự đối chiếu /5 (theo từng bước):** 2đ xác định khoảng cách tâm–mặt và điều kiện h so R; 1đ lập r²+h²=R²; 1đ tính bán kính/3 trường hợp; 1đ giải thích ý nghĩa vật lý.
 
