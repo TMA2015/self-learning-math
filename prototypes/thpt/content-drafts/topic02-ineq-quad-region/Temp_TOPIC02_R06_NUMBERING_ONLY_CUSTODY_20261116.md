@@ -1,9 +1,9 @@
 # CĐ2 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: cb3a6e6be2ec3419be3fdc16f0e5df3599fe1ec2
+CURRENT_SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: f9d415337e409b518d18147d5e7d7ed89eb31012
+CURRENT_Q18_RECEIPT_BLOB: d91f05f9fdb43229a19d396c93e740568151154d
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
@@ -104,3 +104,9 @@ RELEASE_AUTHORIZATION: NO
 
 
 **20/11 S1 G10 B17 Delta C:** current single learner `cb3a6e6be2ec3419be3fdc16f0e5df3599fe1ec2`, Q18 `f9d415337e409b518d18147d5e7d7ed89eb31012`, added Δ′ b=2b′ to `TOP02-O02`; 6/6 scoped math checks, canonical items/solutions unchanged. AUTHORING CONTENT_READY retained, no independent reviewer PASS.
+
+
+## 20/11/2026 current source lock
+- CURRENT_SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
+- CURRENT_Q18_RECEIPT_BLOB: d91f05f9fdb43229a19d396c93e740568151154d
+- ΔA one model-domain method label only, previous math/canonical Q15/Q16 unchanged.
