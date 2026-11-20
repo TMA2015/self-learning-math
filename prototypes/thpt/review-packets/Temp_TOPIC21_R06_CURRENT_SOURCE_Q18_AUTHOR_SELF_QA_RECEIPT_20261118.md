@@ -7,7 +7,7 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 LEARNING_PATH: TOPIC
 SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: 60b62c112ce6df70849379b9e0aba828031d00ac
+SOURCE_BLOB: c3f9fd22555a80f82c2caa333146de2ea392f9d2
 AUTHOR_TARGETED_Q18_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
 AUTHOR_TARGETED_Q18_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
 AUTHOR_A1_A7_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
@@ -55,3 +55,10 @@ RELEASE_AUTHORIZATION: NO
 
 <!-- TOP21_OWNER_EDITORIAL_DELTA_A_20261119 -->
 **Owner-approved Delta A 19/11:** Removed exactly 8 repetitive `Khám phá kiến thức` minor headings; changed one Bayes explicit **KIẾN THỨC CẦN GHI NHỚ** mathematical callout heading to **CÔNG THỨC — Bayes có xét tỉ lệ nền**. All explanatory prose including all assumptions, numerical Bayes conditional values, 8 examples/8 Vận dụng/Đối chiếu, canonical IDs, keys/rubrics, 2 figures, D6 paths and Q16 unchanged. Former learner `aa325637f659bc5f8ba504f6ce0129e07340a41d`, current `60b62c112ce6df70849379b9e0aba828031d00ac`. Reverse-diff check for 8 headings and one rename confirms underlying byte identity, no new theorem/exercise. Q18 affected source-equivalent, owner keeps CONTENT_READY, no NotebookLM rereview/site changes.
+
+## 20/11/2026 — S1 G12 T2 B18 missing data representation / O02 Delta C
+- Active Topic21 student source `c3f9fd22555a80f82c2caa333146de2ea392f9d2`; previous learner source `60b62c112ce6df70849379b9e0aba828031d00ac` remains Git historical.
+- Source-first reading: §1.1–1.2 current student Knowledge explains conditioning on B and P(A|B), but lacked the named **bảng dữ liệu thống kê 2×2** and the ability to choose row/column denominator. SGK KNTT Toán 12 Tập Hai B18 printed pp66–68 specifically introduces the named 2×2 table and example/rubric via conditional counts; verified HTML S1 transcription https://sgkvn.com/lop-12-15/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-vi-xac-suat-co-dieu-kien-3576/bai-18-xac-suat-co-dieu-kien-13066.html
+- Added one original 30-learner table inside existing O02 narrative, **before** the existing conditional formula and existing Example, without adding independent tab, subheading/outcome/item or reusing textbook's particular dataset. Rows 5+7=12, 4+14=18; columns 5+4=9, 7+14=21; totals 12+18=9+21=30; P(glasses|club)=5/12, P(club|glasses)=5/9, conditioned group drives denominator. No spurious causal assertion.
+- **Targeted Q01/Q03/Q04/PED source QA:** five arithmetic/denominator consistency checks, 5/5 PASS for the new table, with natural explanation first and original formula after. Existing eight independent worked example stem/solutions, eight Topic first-try item IDs and disclosures, public Practice + Tự kiểm tra tail **byte-identical**; no private RD1 or Mastery modification.
+- This is **DELTA_C_ACADEMIC_MATERIAL**, not a pure heading Delta A; targeted AUTHOR_SELF_VERIFIED only for this delta. No new independent NotebookLM Reviewer Academic/PED PASS, 22/22 S1 still PENDING, no RELEASE/merge/deploy.
