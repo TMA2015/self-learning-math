@@ -6,7 +6,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: 74c572ca5778bb8308ab1fe7cb23dfa487858c53
+SOURCE_BLOB: b737c1b4e2bd92bba662a7c999e804866d5a4baa
 SOURCE_ROLE: ONE_CURRENT_CANONICAL_LEARNER_SOURCE
 REVIEW_SCOPE: R10_FULL_AUTHOR_MATH_PED + R11_EQUIVALENT_LAYOUT + R12_AFFECTED_D6_PED + CURRENT_SOURCE_Q15_Q16
 INDEPENDENT_REVIEWER_VERDICT: NOT_CLAIMED
@@ -73,3 +73,11 @@ No independent reviewer Academic/PED verdict is asserted; no website integration
 
 <!-- TOP20_OWNER_EDITORIAL_DELTA_A_20261119 -->
 **Owner editorial Delta A (19/11):** The 9 duplicate miniature `Khám phá kiến thức` titles in the nine Knowledge subunits were removed while **all underlying concept-first flowing prose** and 8 labeled math definitions/formulas remained exactly unchanged. Former learner blob `d4a501bce64003f3583aca947d429504530b72c0` → sole current `74c572ca5778bb8308ab1fe7cb23dfa487858c53`. Reverse removal check confirms byte identity of original maths, all 10 worked examples and 17 Vận dụng/Đối chiếu, 17 intended outcomes, canonical item text/key/rubrics, 2 SVG and public assessment safeguards. Existing Q18 author-source equivalence only; Content remains CONTENT_READY by owner authorization, no new academic hypothesis/NotebookLM, no website integration/deploy.
+
+
+<!-- TOP20_S1_G10_T2_B26_3_BASIC_PROB_PROPERTIES_20261120 -->
+### 20/11/2026 · S1 mandatory coverage: TOP20-O02, tính chất cơ bản của xác suất (Delta C)
+
+**Nguồn S1 trực tiếp:** SGK Kết nối tri thức Toán 10 Tập 2, Bài 26, trang in 80, phần “Nhận xét”: `0≤P(E)≤1`, `P(Ω)=1`, `P(∅)=0`. Bản SGK https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-10-Tap-2-Chuong-trinh-moi.pdf . Current learner before `74c572ca5778bb8308ab1fe7cb23dfa487858c53` had formula cổ điển and probabilistic examples but lacked a visible explicit 3-property statement in Knowledge. Now restored on **same source path**, learner `b737c1b4e2bd92bba662a7c999e804866d5a4baa`, before first worked example in TOP20-M02, as prose with counting rationale and formally labeled **TÍNH CHẤT — Ba tính chất cơ bản của xác suất cổ điển**.
+
+**Affected-scope Q18 self QA = 6/6 PASS:** for sample sizes 1,2,3,6,10 all `n(A)/n(Ω)∈[0,1]`; 6/6=1; 0/6=0; content inserted before example; MathJax pairing balanced; deleting exact addition yields original learner byte-exact; canonical IDs unchanged. All item/key/solution/rubric/SVG/assessment paths unchanged. Scope is **DELTA_C_ACADEMIC_MATERIAL**, author verified at affected outcome only. Keep `CONTENT_READY` by owner approval; no independent reviewer verdict claimed, no full 22-topic Q01 clearance, no RELEASE.
