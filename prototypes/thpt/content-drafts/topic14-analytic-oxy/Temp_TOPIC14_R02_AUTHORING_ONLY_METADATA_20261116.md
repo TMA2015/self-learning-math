@@ -14,8 +14,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: eb2ee110e42e767a711c769b39682784aa3e996e
-SOURCE_BLOB: eb2ee110e42e767a711c769b39682784aa3e996e
+ACADEMIC_SOURCE_BLOB: a5361460045dab88f1a14929298bd41693f537cf
+SOURCE_BLOB: a5361460045dab88f1a14929298bd41693f537cf
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_SGK_PED_R01_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
@@ -410,3 +410,6 @@ Latest EFFECTIVE learner SHA: `47c98711e2955287831d5ea10fc5d61d1483fd6a`; previo
 - **DELTA_C_ACADEMIC_MATERIAL (affected only):** sửa đúng một câu lời dẫn D6. Thay `x=1` vào `y²=4x` ⇒ `y²=4` ⇒ `y=±2`; hai điểm (1,2)/(1,-2) thỏa parabol và đối xứng qua Ox. Chủ thể “parabol” đúng Q03/Q08/PED6.
 - **Bảo toàn:** một item canonical `THPT-TOP14-T22`, stem/key/solution/rubric, 110 unique IDs, 23 outcomes, 55 SGK liên tục, 23 public selfchecks, ba SVG không đổi. Đã đọc kiểm 23/23 Vận dụng→Nếu làm sai để xác định đúng phạm vi; không tuyên bố reviewer NotebookLM độc lập. P0/P1 trên đoạn sửa = 0 theo author self-verification.
 - **Author affected-scope signoff:** `TOP14_R02_O22_PARABOLA_REMEDIATION_20261119_AUTHOR_SELF_QA`. RELEASE AP/R/P1/P2, official RD1/Final Submit/Mastery, owner merge/deploy vẫn ngoài phạm vi.
+
+
+**20/11 S1 G10 T2 B22 Delta C:** current learner `a5361460045dab88f1a14929298bd41693f537cf` now explicitly includes 2c of elip/hypebol and parabola parameter p as focus-directrix distance and names 3 canonical equations; Q18 `6c0f14ee1bf0eb610d8b7e3483cc1da1bdd28f69` 7/7 targeted checks; old learner `eb2ee110e42e767a711c769b39682784aa3e996e` historical. Academic CONTEXT_READY preserved per owner, no full S1 audit verdict.
