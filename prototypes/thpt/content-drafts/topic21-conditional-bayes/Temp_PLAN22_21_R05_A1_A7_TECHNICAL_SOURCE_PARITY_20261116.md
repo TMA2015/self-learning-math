@@ -4,7 +4,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: 60b62c112ce6df70849379b9e0aba828031d00ac
+SOURCE_BLOB: c3f9fd22555a80f82c2caa333146de2ea392f9d2
 CURRENT_Q18_RECEIPT_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
 CURRENT_Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
 LEARNING_PATH: TOPIC
@@ -73,3 +73,9 @@ I have inspected the final R04 student source after canonical version lock, chec
 
 
 **19/11 owner ΔA:** single learner `60b62c112ce6df70849379b9e0aba828031d00ac` Q18 `28f53dd1279dc065e7f429f7337ba8f5df90acb8`, 8 outcomes/canonical Bayesian calculations unchanged; CONTENT_READY preserved.
+
+
+## 20/11/2026 — Current S1 B18 O02 source ownership
+- ACADEMIC_SOURCE_BLOB: c3f9fd22555a80f82c2caa333146de2ea392f9d2
+- REVIEW_RECEIPT_BLOB: 511668b8aa7e0cca51d80239345bd6bc5ce354bd
+- Current 2×2 conditional frequency table inserted before original formula; original 8 canonical first try/8 worked examples and Q15/Q16 records unchanged; target author self-QA.
