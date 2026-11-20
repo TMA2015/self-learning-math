@@ -4,7 +4,7 @@
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
 const root=path.resolve(__dirname,".."),read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const crypto=require("node:crypto");
-const {chviExampleUxReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
+const {chviExampleUxReceiptRows,expectedG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const banned=/NOTEBOOKLM|ACADEMIC_CLEARANCE|SNAPSHOT_PASS|TÍCH HỢP ĐANG QA|BÀI MẪU R4|Chỉ là bài học trình diễn|chờ review delta|Giới hạn nguồn và phát hành|chưa có cấp phép phát hành website/i;
 const pedagogical={15:"Khái niệm hàm số",16:"Chuyển động theo phương thẳng đứng",17:"Bất phương trình có tham số",18:"nghiệm ngoại lai"};
 const built=process.argv.includes("--built");
@@ -26,7 +26,11 @@ for(const [lesson,anchor] of Object.entries(pedagogical)){
    if(ux){
     const raw=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-vi/bai-17.md"));
     const sha=crypto.createHash("sha1").update("blob "+raw.length+"\0").update(raw).digest("hex");
-    assert.equal(sha,ux.candidate,"B17 student-first note must match signed UX candidate source");
+    // Preserve immutable UX predecessor; the accepted B17 HELP relocation R01
+    // extends later academic/P2 receipts. The canonical Q18 source router
+    // validates every link instead of comparing to obsolete UX-era HEAD.
+    const latest=expectedG10KnowledgeBlob(17,ux.candidate);
+    assert.equal(sha,latest,"B17 student-first note must match latest Q18-locked canonical source");
     const label="Nếu hệ số bậc hai cũng phụ thuộc tham số thì sao?";
     const summaries=[...article.matchAll(/<summary[^>]*>([\s\S]*?)<\/summary>/g)]
      .filter(m=>m[1].includes(label));
