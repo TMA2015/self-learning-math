@@ -1,7 +1,16 @@
-<!-- CĐ18_PED_MATH_REVIEW_CANDIDATE_PROTECTED_SGK_SOURCE_20261120 -->
-## Current corrected learner, independent affected review pending — NOT READY
+<!-- TOP18_W07_O38_O23_INDEPENDENT_REVIEW_PASS_Q15_ONLY_HOLD_20261120 -->
+## Affected-content review PASS; new CĐ18 not yet source-ready
 
-Current corrected learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3` and author Q18 `82a31554d8f6187e951c189ac2b6c34a1622d5ef` cover W07 v2 surface-vs-solid, geometry-aligned five-point rubric, O38 inside-vs-surface, O23 FirstTry/Practice D6. **The G12 SGK CHV signed active canonical source is deliberately unchanged** `11eb2834cfdb4a24685157f84666c2bb0767970a`; W07 version2 only exists as a *proposed review excerpt* in `Temp_TOPIC18_O40_O23_W07_NOTEBOOKLM_AFFECTED_REVIEW_20261120.md` and its historic Git candidate blob `a24abd682932e11761f7c85fa3a3d3cdd77b600e`. Do NOT treat either as a second active canonical bank. Protected historical G12 SGK R01 source-lock remains valid. `BLOCKED_BY_AUTHORING`: needs actual independent affected-scope Academic/PED review, then deliberate single-canonical promotion and dependent QA. Missing scanned SBT p25 is not a math blocker. No release or merge/deploy.
+Owner-supplied reviewer concludes **Academic PASS / PED PASS / P0=0 / P1=0 / P2=0 / MINIMAL_DELTA NONE** for W07 v2 and O38/O23 in the context of O40. The earlier independent review blocker is CLOSED. This is a **scoped** PASS, not a full new Topic or G12 SGK chapter PASS.
+
+INDEPENDENT_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_W07_O38_O23_NOTEBOOKLM_INDEPENDENT_ACADEMIC_PED_PASS_20261120.md
+INDEPENDENT_REVIEW_RECEIPT_BLOB: fac6e71538a1e0b1d2cd2d216bc6abaef9d27bba
+INDEPENDENT_ACADEMIC_VERDICT: PASS_AFFECTED_SCOPE
+INDEPENDENT_PED_VERDICT: PASS_AFFECTED_SCOPE
+ACADEMIC_MINIMAL_DELTA: NONE
+OPEN_BLOCKER: W07_V2_SINGLE_ACTIVE_CANONICAL_PROMOTION_Q15_Q18
+
+Signed active shared original bank stays locked at `11eb2834cfdb4a24685157f84666c2bb0767970a`; current corrected learner CĐ18 `1ad945ea583ce7ee91df64b58d3f31b31c202cd3` has proposed W07 v2; single-canonical promotion and dependent source-lock consistency remain to be performed before a future new `CONTENT_READY`. This manifest stays in `blocked/` and **STATE=BLOCKED_BY_AUTHORING**. Preserves historic PASS; no Firebase/assessment, merge/deploy, or use of SBT p25 as academic blocker.
 
 ---
 
@@ -25,9 +34,9 @@ REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q18_CONTENT_DELTA_20261120.md
 REVIEW_RECEIPT_BLOB: 82a31554d8f6187e951c189ac2b6c34a1622d5ef
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 418d516c6f4647e504efa4f3c061f0f569094a00
+AUTHOR_A1_A7_BLOB: 9987f1995c7eb41ab812cd5a555bc3ae603b9eaa
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R06-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 631df141a52778be06cee7b556f6baf2bbe17321
+AUTHOR_HANDOFF_BLOB: 70b66ff468cacadf0ea705ab9aaefc5b7f46bfd8
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -40,7 +49,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25
-BLOCKERS: W07_V2_O38_O23_Q03_Q06_Q14_AFFECTED_INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING
+BLOCKERS: W07_V2_SINGLE_ACTIVE_CANONICAL_PROMOTION_Q15_Q18
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
