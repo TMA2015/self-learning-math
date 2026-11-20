@@ -1,7 +1,7 @@
 # CĐ17 — Khoảng cách & Thể tích · bản thảo hiệu lực R03 (giữ nguyên đường dẫn học liệu)
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 CATALOG_TOPIC_ID: CD17
@@ -9,7 +9,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_CONTENT_READY_SOURCE_ONLY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
+ACADEMIC_SOURCE_BLOB: 38aa934fc2422b342e314fabddca54a0eb679cce
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
@@ -162,3 +162,8 @@ Learner Knowledge 2.4 (TOP17-O10) no longer requires a non-embedded slider: dire
 - ACADEMIC_SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
 - REVIEW_RECEIPT_BLOB: 11db4d6cafc94f88d17dbcdf041f655bdceab030
 - S1 B26 pp56,58 confirmed in current Knowledge, all original canonical exercises and 3 student pages retained; author-only affected math self-QA, no broad independent PASS.
+
+
+## 20/11 full SGK G11 T2 B26–B27 Knowledge CĐ17
+
+One current learner `38aa934fc2422b342e314fabddca54a0eb679cce`, author self Q18 `61c43e3eb1878235bbb8b2b963695a7d8924f299`. 12/12 outcomes source-reviewed: O05 true common perpendicular of skew lines, O06 precise solid-height definitions, O07 oblique prism and perpendicular height, O10 derivation from pyramid volume difference, O12 similarity k³ vs k². Original Practice/Selfcheck exactly preserved; 49 public canonical (22 SGK+12 Try+12 Practice+3 Written), 8 public no-Mastery selfchecks, 2 SVG. AUTHOR_SELF_VERIFIED only; no independent Topic reviewer or website RELEASE.
