@@ -14,7 +14,7 @@ PED_VERIFICATION: Verified current 16 meaning-first lessons, 15 corrected D6 des
 CANONICAL_Q15: 46 immutable original G11 IDs plus 20 new original Topic IDs =66 unique real display-only item placements, two frozen bank source hashes, 16 public question-only replay IDs, no duplicate canonical owner.
 ASSESSMENT_Q16: Public replays are CLIENT_SELF_CHECK_NO_MASTERY only; no private RD1 exposed, official Final Submit, independent Topic Readiness or Skill Mastery produced.
 SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 787a5a15129785e1f8226314606052afa1f6000b
+SOURCE_BLOB: 493e6216d559c6544a7314f3df2b230fa3af528f
 BASELINE_R05_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b
 BASELINE_R05_Q18_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
 R06_PED6_TARGETED_RECEIPT_BLOB: 2d7686a55f2196e7422bf30dfd6d0dc3fcc10e83
@@ -57,3 +57,10 @@ RELEASE_AUTHORIZATION: NO
 
 <!-- TOP06_OWNER_EDITORIAL_DELTA_A_20261119 -->
 Owner-approved ΔA 19/11: 13 previously unmarked formal trigonometric descriptions are shown with typed **Định nghĩa/Tính chất/Công thức/Phương pháp/Điều kiện** labels; 3 existing formal boxes untouched, 4 redundant discovery subheadings removed. Same learner source path, old blob `ab88d7ed3b52713e4a80779c22dc75a67c3cccb1`, current `787a5a15129785e1f8226314606052afa1f6000b`. Reverse label diff certifies all math/limits, angle values, domain conditions, 16 independent Ví dụ/Đề/Lời giải, 16 Vận dụng/Đối chiếu, SVG, canonical banks, private RD1 rules unchanged. Q18 author source-equivalence self checked; `CONTENT_READY` preserved, no new NotebookLM/release/merge.
+
+
+## 20/11/2026 — S1 G11 B02 mandatory formula completeness (TOP06-O08)
+- Source learner: 493e6216d559c6544a7314f3df2b230fa3af528f; previous source 787a5a15129785e1f8226314606052afa1f6000b preserved historically, material Delta C only in Knowledge §2.4.
+- Direct S1 SGK KNTT Toán 11 Tập một Bài 2 in pp17–20: outcome explicitly requires formula addition, double angle, product-to-sum, sum-to-product. Earlier learner only sketched derivation without all formula statements; repaired three product-to-sum + four sum-to-product, tan double-angle and complete equivalent cosine-double-angle forms.
+- Affected mathematics QA: 3 product-to-sum identities derive by adding/subtracting sin/cos(a±b); 4 sum-to-product derived by substitutions u=a+b, v=a-b; cos2a variants follow sin²+cos²=1; tan2a requires cos(a)≠0 and cos(2a)≠0. Numeric/identity checks: a=b=0; cos3x+cosx=2cos2x cosx; sin3x cosx=(sin4x+sin2x)/2; 10 relationships checked by identities.
+- Q15/Q16: 66 canonical Practice original IDs, question/answer/solution/rubric and 16 public no-Mastery selfchecks unchanged; 3 SVG unaffected. Targeted AUTHOR_SELF_QA_PASS for TOP06-O08 Knowledge only. Not new independent NotebookLM PASS, not full 22-topic S1 PASS and no release permission.
