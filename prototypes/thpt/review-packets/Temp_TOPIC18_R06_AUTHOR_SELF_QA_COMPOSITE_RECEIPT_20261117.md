@@ -36,8 +36,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-SOURCE_BLOB: c5742e0d8914f85dec1ccd093d418290068b65a3
-ACADEMIC_SOURCE_BLOB: c5742e0d8914f85dec1ccd093d418290068b65a3
+SOURCE_BLOB: bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4
+ACADEMIC_SOURCE_BLOB: bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
@@ -139,3 +139,10 @@ Chủ dự án phê duyệt sửa biên tập tại nguồn CONTENT_READY; **kh�
 - **Q15/Q16 preserved:** `# Luyện tập` through `# Tự kiểm tra` remains byte-identical to prior learner `2beb1845a2a6de7684985c995be2914e8878d79a`. 40 lesson/outcome canonical pairs unchanged, all 247 public canonical IDs (original bank/crosswalk), 12 public question-only selfchecks and original SGK answer keys, Worked, Written rubrics, diagrams and protected RD1 remain unchanged; CLIENT_SELF_CHECK_NO_MASTERY only. No website/browser/official Final Submit/Mastery or merge/deploy.
 - **Source limitation still OPEN P2:** Original SBT G12 Tập Hai ChV B14 printed page **25** unavailable in PDF custody, affects SBT items **5.6–5.7**. Keep `P2:1` and original note; no assertion of fresh SBT scan or source-equivalence for these questions. This academic Knowledge author self-Q18 does **not** close the existing SBT source gap or confer independent full-Topic NotebookLM PASS.
 - Signed Q18 verification mode **AUTHOR_SELF_VERIFIED**, owner-effective one v3.2.0 Q01–Q18; no alternate quality standard or Topic Core. Scoped math/PED P0/P1=0 for new additions; historical immutable reviewer receipts retained only as historical snapshots.
+
+## 20/11/2026 — SBT B14 p25 source-gap triage, affected Delta C Q18 on TOP18-O22
+
+- One current learner Git blob `bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4`, parent `c5742e0d8914f85dec1ccd093d418290068b65a3`. The original SBT primary scanned printed page 25 is still unavailable in owner custody: **P2:1 kept; do not claim primary-scan certification**. However independent secondary SBT reproductions at `https://loigiaihay.com/giai-bai-56-trang-25-sach-bai-tap-toan-12-ket-noi-tri-thuc-a174373.html` and `...-a174374.html`, corroborated by VietJack/SBT bibliography, give exact source *problem types* for SBT 5.6 (sphere radius2, center(1,2,1), intersection Oxy radius sqrt3) and 5.7 (distance between planes x+2y+2z−1=0 and x+2y+2z−3=0, room height 2/3). **Secondary evidence is not the missing primary page**; this is scoped cross-verification only.
+- **Affected Knowledge O22** now derives parallel-plane distance from point–plane distance, states same-nonzero-normal coefficient condition, shows rescaling when only proportional, distinguishes distinct parallel vs coincident, supplies complete test of SBT-type 5.7 with point H(1,0,0) and two independent calculations: |−3−(−1)|/sqrt(1+4+4)=2/3, d(H,beta)=|1−3|/3=2/3. Since 2/3<1, fails wardrobe unit height. This is a real pedagogical/math Delta C and signed author SELF_VERIFIED on exact affected outcome, not reviewer NotebookLM PASS.
+- **SBT-type 5.6 already covered** by TOP18-O40/optional O23: sphere-plane circle intersection radius r=sqrt(R²−d²), example sphere center (1,2,1), R=2, plane z=0 gives d=1, r=sqrt3. No new redundant lesson or item introduced; this use after B17 not incorrectly promoted to B14 Core.
+- **Q15/Q16/regression:** 40/40 lesson/outcome canonical pairs, 247 public items and 12 question-only public selfchecks unchanged, all Luyện tập/Tự kiểm tra byte-identical, original keyed answers/rubrics/RD1 held separately, no official Readiness/Final Submit/Mastery. Four primary current Q18/SGK v3.2.0 criteria Q01/Q03/Q04/Q10/Q13/Q18 affected outcome verified; P0/P1=0 for O22. P2 original source scan gap documented until owner supplies genuine page/signed independent source witness. No website/merge/deploy.
