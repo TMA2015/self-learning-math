@@ -1,5 +1,13 @@
 # Bài 21. Đường tròn trong mặt phẳng tọa độ
 
+<style>
+/* B21-only owner Golden semantic colors, no shared styles/runtime changes. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY13"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY13"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY13"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVII-TRY13"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VII · KIẾN THỨC SGK KNTT</p>
 <p class="thpt-r4-lead">Viết phương trình đường tròn, xác định tâm, bán kính và lập tiếp tuyến tại một điểm.</p>
@@ -125,11 +133,15 @@
 
     ### 2.1. Phương trình đường tròn
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Đường tròn:</strong> Đường tròn tâm I và bán kính <strong>R dương</strong> là tập hợp tất cả các điểm M có khoảng cách IM = R. Đây là <strong>đường biên</strong>; các điểm ở bên trong hình tròn có khoảng cách tới tâm nhỏ hơn R.</div>
+
     Đường tròn tâm \(I(a;b)\), bán kính \(R>0\) có phương trình:
 
     \[
     (x-a)^2+(y-b)^2=R^2.
     \]
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Viết phương trình từ tâm và bán kính:</strong> Lấy hiệu từng tọa độ điểm M với tâm I, bình phương hai hiệu rồi cộng lại; vế phải là <strong>bình phương bán kính</strong>. Bán kính R phải dương. Ngược lại, tổng hai bình phương bằng một số dương xác định tâm và bán kính của đường tròn.</div>
 
     Phương trình tổng quát \(x^2+y^2+Dx+Ey+F=0\) biểu diễn **đường tròn thực có bán kính dương** khi
 
@@ -137,26 +149,32 @@
     I\left(-\frac D2;-\frac E2\right),\qquad R^2=\frac{D^2+E^2}{4}-F>0.
     \]
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Đọc dạng khai triển:</strong> Nhóm các hạng tử theo x và y, hoàn thành bình phương để đưa về dạng tâm–bán kính. Chỉ khi <strong>R² dương</strong> mới được gọi là đường tròn có bán kính dương; R² bằng 0 chỉ một điểm, âm thì vô nghiệm thực. Không nhầm R với R² hoặc đổi dấu sai khi tìm tâm.</div>
+
     Nếu \(R^2=0\), tập điểm chỉ có một điểm; nếu \(R^2<0\), không có điểm thực. Không gọi hai trường hợp này là đường tròn có bán kính dương.
 
     ### 2.2. Phương trình tiếp tuyến của đường tròn
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Tiếp tuyến tại một điểm:</strong> Tiếp tuyến tại M là đường thẳng chỉ có một điểm chung với đường tròn ở M. <strong>M phải thuộc đường tròn</strong>; bán kính IM vuông góc với tiếp tuyến, do đó là một pháp tuyến khác vectơ không của đường tiếp tuyến.</div>
+
+    Xem lại hình ở tab Khám phá: đoạn IT nằm ngang và đường x=5 qua T thẳng đứng. Cách đọc hình đã gắn trực tiếp với SVG, không cần tìm một hình khác ở đây.
 
 
 
 
-    **Cách đọc hình.** Chỉ I(2,1), đoạn IT dài 3 nằm ngang và tiếp tuyến tại T(5,1) thẳng đứng; bán kính vuông góc tiếp tuyến. Hình có cùng phương trình đường tròn được ghi ở chú thích.
+
     Tại điểm \(M(x_M;y_M)\) **thuộc đường tròn**, tiếp tuyến vuông góc với bán kính \(IM\):
 
     \[
     (x_M-a)(x-x_M)+(y_M-b)(y-y_M)=0.
     \]
 
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Lập tiếp tuyến tại M:</strong> Trước hết thay M vào phương trình đường tròn để kiểm điểm nằm trên đường. Tính vectơ IM rồi dùng nó làm <strong>pháp tuyến</strong> của đường qua M. Nếu M không thuộc đường tròn thì không được áp dụng công thức tiếp tuyến <em>tại M</em>.</div>
+
     Với đường thẳng \(d\), đặt \(h=d(I,d)\):
 
-    - \(h<R\): hai giao điểm;
-    - \(h=R\): tiếp xúc;
-    - \(h>R\): không giao nhau.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Số giao điểm với đường tròn:</strong> Khi bán kính R dương và d là đường thẳng thực sự, so khoảng cách h từ tâm đến d với R:
+    <ul><li>\(h<R\): hai giao điểm;</li><li>\(h=R\): tiếp xúc tại một điểm;</li><li>\(h>R\): không giao nhau.</li></ul>Chỉ hỏi <strong>số giao điểm</strong> thì so sánh h với R là đủ; muốn tọa độ giao điểm còn phải giải hệ.</div>
 
 === "Ví dụ"
 
