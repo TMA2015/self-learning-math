@@ -5,9 +5,9 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f
+SOURCE_BLOB: f2b5a126a676b153e9d44208317c812d849a3021
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: 1fe31c58908c6364b93aedac7239ef1e25e29040
+REVIEW_RECEIPT_BLOB: 8cd7de91845c62577c934f7f8410698cc5d88129
 ORIGINAL_G11_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 ORIGINAL46_INDEX_BLOB: d8279df37c9dcd74a0b26f0da389baf7d53ecf64
 NEW20_CANONICAL_BANK_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65
@@ -71,3 +71,9 @@ RELEASE_AUTHORIZATION: NO
 - Current SOURCE_BLOB: 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f; targeted Q18 SOURCE_BLOB: 1fe31c58908c6364b93aedac7239ef1e25e29040. Intermediate 493e6216d559c6544a7314f3df2b230fa3af528f and Q18 a5702a167a4563f61aa397e99595409bb88413a0 are historical only.
 - In addition to three product-to-sum and four sum-to-product formulas and double-angle, O06/O07 now cover complementary/pi-shift symmetries and tangent addition/difference with nonzero-denominator guards. Direct unit-circle and reverse-algebra QA on affected O06/O07/O08, unchanged 66 canonical questions/keys/rubrics, 16 public replay assessments, Q16.
 - This is targeted S1 Delta C author self-QA, not a blanket independent reviewer PASS nor a website RELEASE authorization.
+
+
+## 20/11/2026 current source lock
+- SOURCE_BLOB: f2b5a126a676b153e9d44208317c812d849a3021
+- REVIEW_RECEIPT_BLOB: 8cd7de91845c62577c934f7f8410698cc5d88129
+- One trig-domain warning label only, original math and S1 checks preserved.
