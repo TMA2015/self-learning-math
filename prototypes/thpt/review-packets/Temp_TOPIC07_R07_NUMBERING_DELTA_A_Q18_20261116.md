@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 8aeef9a0f0c30bed76f93bcf923fff57f8c00b04
-ACADEMIC_SOURCE_BLOB: 8aeef9a0f0c30bed76f93bcf923fff57f8c00b04
+SOURCE_BLOB: b6074c8641963a296e3f990397eba685c968c6ea
+ACADEMIC_SOURCE_BLOB: b6074c8641963a296e3f990397eba685c968c6ea
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R06_STUDENT_FIRST_69_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: 22609934f525e6e9c2c8f1513e439c3cd4d54221
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -63,3 +63,11 @@ ASSESSMENT_Q16: 18 câu public replay P01–P18 là câu đã thấy, không đ�
 
 <!-- TOP07_OWNER_EDITORIAL_DELTA_A_20261119 -->
 Owner ΔA 19/11: 15 existing dãy số/CSC/CSN rules, definitions and formulas from current learner prose received typed formal captions; existing 3 formal boxes unchanged. Previous learner blob `fcabe475254b4f54f5e6a8e74fce536df1f6bf43` → current `8aeef9a0f0c30bed76f93bcf923fff57f8c00b04`. Reversibility check proves all original math, examples, conditions, 18 Vận dụng/Đối chiếu, canonical IDs, solutions, rubric, SVG, public selfcheck unchanged; no new statement. Owner accepts no review rerun for equivalent caption only. `CONTENT_READY` preserved; no website merge/deploy.
+
+
+## 20/11/2026 — CĐ07 Kiến thức, SGK Toán 11 T1 Bài 5–7
+- Source-first compare 18 existing learner topics with B5 pages printed 42–47 (definition finite/infinite, four ways to specify: list, verbal description, direct formula, recurrence, monotonic, boundedness); B6 pp48–51 (arithmetic progression definition, difference, n-th term, finite sum); B7 pp52–55 (geometric progression, ratio 0/1/negative, n-th term, finite sum). S1 sample chapter https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-ii-day-so-cap-so-cong-va-cap-so-nhan-3428/bai-5-day-so-12605.html, https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-ii-day-so-cap-so-cong-va-cap-so-nhan-3428/bai-6-cap-so-cong-12611.html, https://sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-ii-day-so-cap-so-cong-va-cap-so-nhan-3428/bai-7-cap-so-nhan-12614.html.
+- Missing current B5 theory fixed: current §1.2 explicitly explains four ways through ONE example u1=12,u_{n+1}=u_n+3, u_n=12+3(n−1), and warns first terms alone do not uniquely determine the rest; current §1.5 clearly defines bounded above/below/both with all-n quantifier and two real bounds. All other 16 modules already cover required S1 knowledge and original examples, so kept without changes.
+- Self-check cases: from u1=12,d=3 get n=1..4 → 12,15,18,21; bounded u_n=1−1/(n+1) on n≥1 has 1/2≤u_n<1, 1 not attained; CSC u1=3 d=2 S8=80; CSN u1=3 q=2 S5=93; for u2=16,u4=256, q=±4 as both produce valid u1. Six sample math conditions checked with original source.
+- Standardized 18 **Đề bài.** and 18 **Lời giải.** labels **within Knowledge only** to match student textbook, no change to original 18 canonical interactive Vận dụng items or original practice/selfcheck. This is new author-created Knowledge DELTA_C; self QA, no new independent NotebookLM PASS or release.
+- Current learner source b6074c8641963a296e3f990397eba685c968c6ea, old 8aeef9a0f0c30bed76f93bcf923fff57f8c00b04 historical.
