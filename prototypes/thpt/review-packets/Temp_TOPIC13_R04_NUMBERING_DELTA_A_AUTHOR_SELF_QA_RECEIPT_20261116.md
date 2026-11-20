@@ -25,8 +25,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: fcac52eb1263eb3c91799a647aad184f08952d34
-ACADEMIC_SOURCE_BLOB: fcac52eb1263eb3c91799a647aad184f08952d34
+SOURCE_BLOB: a55f76444b2347ddada26c7cea4b178f70d6580d
+ACADEMIC_SOURCE_BLOB: a55f76444b2347ddada26c7cea4b178f70d6580d
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
@@ -119,3 +119,7 @@ Source currently `9a558f553bd6a4a58701a6bae490717ba5a52540` in the existing Topi
 
 <!-- TOP13_OWNER_EDITORIAL_DELTA_A_20261119 -->
 **Owner editorial ΔA 19/11/2026:** 13 already-authored mathematical statements about vectors, subtraction, scalar products and Oxyz are given typed visible definition/rule/formula/method captions; 3 existing formal callouts preserved. Learner source Git blob before `2fe260f6da3f4eedec7d9b8c93d683915493cc1e` and after `fcac52eb1263eb3c91799a647aad184f08952d34`. Stripping exactly 13 new prefixes reproduces original bytes; original formula, hypotheses, examples, 16 Vận dụng/Đối chiếu, 52 canonical IDs/keys, Written rubrics, figure links and selfcheck all unchanged. This is explicit Q03 visual classification, NOT introduction of new theorem/math. Owner retains AUTHORING CONTENT_READY; current existing Q18 author self-equivalent, no NotebookLM re-review/site merge/deploy.
+
+
+## 20/11/2026 · owner label correction ΔA vector properties
+- Current learner `a55f76444b2347ddada26c7cea4b178f70d6580d`, historical `fcac52eb1263eb3c91799a647aad184f08952d34`. Three formal `QUY TẮC` headings are true TÍNH CHẤT of vector addition: parallelogram/subtraction, 3D parallelepiped three-edge composition and Chasles/trung điểm/trọng tâm; each now labeled TÍNH CHẤT. Exact vector arrows, assumptions, formulas, 52 canonical items, solutions/rubrics, SVG and public safe selfchecks unchanged. Targeted Q03/PED Delta A author self QA, not independent Reviewer PASS nor RELEASE.
