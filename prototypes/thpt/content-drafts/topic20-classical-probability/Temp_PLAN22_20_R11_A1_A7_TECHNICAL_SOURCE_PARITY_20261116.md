@@ -8,7 +8,7 @@ SOURCE_BLOB: a336816eb1935c739bd1f128bd81de7b510d0060
 CURRENT_Q18_RECEIPT_BLOB: 3e04e984cbe9e2f23b95c0f23a1f698489367ebe
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md
 AFFECTED_SCOPE_HISTORICAL_Q18_BLOB: 9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d
-CURRENT_Q15_MATRIX_BLOB: 9d89151085df7bd01df86fc304675bf4d1f3a5fb
+CURRENT_Q15_MATRIX_BLOB: ba603da329ebf8a922db82783609902db1321dc6
 CONTENT_SNAPSHOT: R11_SOURCE_EQUIVALENT_R10 / FULL_TOPIC_LEARNING_PATH / KIEN_THUC + LUYEN_TAP + TU_KIEM_TRA
 STATUS: AUTHOR_SELF_QA_PASS_CURRENT_SOURCE; A1_A7_PASS; READY_ONLY_WHEN_CURRENT_V2_MANIFEST_REGISTER_SYNC
 
@@ -97,3 +97,6 @@ RELEASE_AUTHORIZATION: NO
 ## 20/11 full S1 CĐ20 Knowledge author-self revision
 
 Sole learner `a336816eb1935c739bd1f128bd81de7b510d0060`, current Q18 `3e04e984cbe9e2f23b95c0f23a1f698489367ebe`; 9 Knowledge subsections hosting 17 outcome-level First Try and 17 Practice, 37 unique public canonical (17+17+3 Written), 11 question-only Selfcheck replays. Five richer conceptual sections show equal-probability labels, without-replacement combinatorics, independence versus exclusion, union overcount, complement with/without replacement. All Practice/Selfcheck byte-preserved and original 2 SVG/RD1 custody unchanged. Existing Q15 matrix preserves item/outcome/role/version identities; old line-number references must be reconciled against current learner. This is author self QA, not new NotebookLM or release.
+
+
+20/11 Q15 line matrix 37 item IDs+11 selfcheck same-ID pointer corrected to ba603da329ebf8a922db82783609902db1321dc6.
