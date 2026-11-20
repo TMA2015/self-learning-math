@@ -5,9 +5,9 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 0d5bd83766db6911ced4b1392fce9fc02e3c0fe2
+SOURCE_BLOB: 55cbb23d860aaff700c959bc291ec44699584159
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: d3ff7b5aed1720f711ec9f93a10148eead5cfd3a
+REVIEW_RECEIPT_BLOB: 72596f066ba642a682fff724891923e777a30abf
 ORIGINAL_G11_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 ORIGINAL46_INDEX_BLOB: d8279df37c9dcd74a0b26f0da389baf7d53ecf64
 NEW20_CANONICAL_BANK_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65
@@ -83,3 +83,9 @@ RELEASE_AUTHORIZATION: NO
 - ACADEMIC_SOURCE_BLOB: 0d5bd83766db6911ced4b1392fce9fc02e3c0fe2
 - REVIEW_RECEIPT_BLOB: d3ff7b5aed1720f711ec9f93a10148eead5cfd3a
 - First-try h(12) now 1.5 m for 2+0.5cos(πt/4), domain, phase, and example cross-check; questions outside O16 and original canonical item bank preserved.
+
+
+## 20/11/2026 — CĐ06 student Knowledge S1 G11 B1–B4
+- CURRENT_LEARNER_SOURCE_BLOB: 55cbb23d860aaff700c959bc291ec44699584159
+- REVIEW_RECEIPT_BLOB: 72596f066ba642a682fff724891923e777a30abf
+- Restored Chasles, special angles, calculator DEG/RAD and inverse keys, monotonicity of trig functions; all original item bank/rubrics and practices unmodified.
