@@ -14,11 +14,11 @@
 
 PACKET_ID: THPT-TOPIC14-ANALYTIC-OXY-FULL-R02
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-SOURCE_BLOB: 7584f28afa12e8a1a05529512516e9571d856d39
-ACADEMIC_SOURCE_BLOB: 7584f28afa12e8a1a05529512516e9571d856d39
+SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
+ACADEMIC_SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
 ORIGINAL_R01_SOURCE_BLOB: 277ccb8b5d9f0a8c5f08680fa7e5b70925710308
@@ -192,3 +192,12 @@ AUTHOR_SIGNOFF: TOP14_R02_55_SGK_DISPLAY_NUMBERS_DELTA_A_EXACT_GIT_SOURCE_47c987
 
 ## 20/11/2026 — owner concise headings ΔA
 - Current learner `7584f28afa12e8a1a05529512516e9571d856d39`; previous `a5361460045dab88f1a14929298bd41693f537cf` historical. Removed precisely three duplicate student-facing `Mạch B/C/D — (Bài 20–22)` titles immediately above the existing `## 2,3,4` mathematical headings; all three headings, content, 23 outcomes, diagrams, selfchecks and canonical mathematics unchanged. No original SGK reference heading or section numbering changed. Targeted Q03/PED owner editorial ΔA self QA, no academic review or release claim.
+
+
+## 20/11 — Đối chiếu S1 trọn Chương VII Toán 10 B19–B22 cho CĐ14
+
+- **Canonical learner source** 3949c0a989da436c34967bbc3357cfd08ed14e1a (trước 7584f28afa12e8a1a05529512516e9571d856d39). Đã đọc 23/23 TOP14-M01–M23 và outcome O01–O23: B19 các dạng đường thẳng; B20 vị trí hai đường, góc, khoảng cách; B21 phương trình và tiếp tuyến đường tròn; B22 quỹ tích/phương trình chính tắc ba conic và ứng dụng. S1 tham chiếu SGK Toán 10 Tập Hai KNTT B19–B22 bản readable SGKVN và bản original S1 custodied. Chỉ trọn Kiến thức được tự đối chiếu, không giả nhận toàn bộ website/browser QA.
+- **Đã bổ sung DELTA_C trong đúng learner:** O04 phương trình đường thẳng đoạn chắn x/a+y/b=1 với ab≠0; O07 hệ số góc m, m=tanα trên góc 0°–180° phù hợp, điều kiện không phải đường đứng; O11 khoảng cách hai đường song song từ công thức điểm–đường sau chuẩn hóa; O18 đỉnh và trục lớn/nhỏ elip theo phương trình chính tắc; O19 hai nhánh hypebol theo |x|≥a và hai đỉnh; O21 giải thích phương trình parabol y²=2px từ định nghĩa tiêu điểm/đường chuẩn và chiều ngược; O23 tính chất quang học phản xạ của elip/parabol trong giả thiết gương lý tưởng và ví dụ mô hình ăng-ten.
+- **Math & source validation:** đường qua A(4,0),B(0,-2) có x/4−y/2=1 ⇔ x−2y=4; đường qua (1,2),(3,6) có m=2, α≈63,4°; d1:3x+4y−1 và d2:3x+4y−11 cách nhau 2; elip x²/25+y²/9=1 đỉnh (±5,0),(0,±3), c=4; hypebol x²/9−y²/16=1 phải thỏa |x|≥3; F(2,0), đường chuẩn x=−2 tương ứng y²=8x, M(2,4) vừa thuộc quỹ tích vừa có MF=4 và d(M,Δ)=4. Phương trình conic đã bảo toàn dấu/các hệ số và điều kiện áp dụng.
+- **Student-first PED:** ở từng outcome, nêu vì sao cần công cụ, diễn giải cấu trúc hình trước công thức, ví dụ có Đề bài/Lời giải, hướng dẫn kiểm dấu/phân biệt trường hợp đúng và sai; tự thử, Đối chiếu/D6 hiện có giữ nguyên. Không tạo outcome, Core hay ngân hàng học liệu song song.
+- **Q15/Q16 parity:** đoạn `# Luyện tập` tới hết `# Tự kiểm tra` byte-exact với source 7584f28afa12e8a1a05529512516e9571d856d39, 23 lesson/outcome, 110 canonical (59 SGK, 23 First Try, 23 Practice, 5 Written), 23 public question-only selfchecks, 3 SVG, keys/solutions/rubrics không thay. Q18 AUTHOR_SELF_VERIFIED theo chuẩn v3.2.0, P0/P1=0 trong phạm vi học liệu đã tự rà; không phát hành, RD1/official Mastery/Final Submit không tác động.
