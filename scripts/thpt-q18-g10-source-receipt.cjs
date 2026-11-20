@@ -95,6 +95,45 @@ function chviiEditorialReceiptRows(){
  return rows;
 }
 
+function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscriptSha){
+ const receiptPath=path.join(root,
+  "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+ assert(fs.existsSync(receiptPath),"Kiểm lỗi requires a real Q18 source receipt");
+ const txt=fs.readFileSync(receiptPath,"utf8");
+ const getRow=prefix=>{
+  const lines=txt.split("\n").filter(line=>line.startsWith("| "+prefix+" | "));
+  assert.equal(lines.length,1,"Exactly one current canonical receipt row "+prefix);
+  const hashes=[...lines[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+  assert.equal(hashes.length,2,prefix+" requires prior+new SHA");
+  return hashes;
+ };
+ const [priorSource,currentSource]=getRow(name);
+ const [priorMaster,currentMaster]=getRow("CANONICAL_"+name);
+ assert.equal(priorSource,priorPublicSha,name+" Q18 chain must start from prior published source SHA");
+ assert.equal(priorMaster,priorManuscriptSha,name+" Q18 chain must start from prior signed manuscript SHA");
+ assert.notEqual(priorSource,currentSource,name+" requires a genuinely changed learner source");
+ assert.notEqual(priorMaster,currentMaster,name+" requires a genuinely changed single canonical manuscript");
+ const number=Number(name.slice(1)),roman=number<=11?"iv":"v";
+ const lessonPath=path.join(root,"docs/thpt-preview/sgk/chuong-"+roman+"/bai-"+number+".md");
+ const manuscriptPath=path.join(root,"prototypes/thpt/content-drafts/THPT_G10_CH"+
+  (number<=11?"IV":"V")+"_B"+String(number).padStart(2,"0")+"_CANONICAL.md");
+ const bytes=fs.readFileSync(lessonPath),full=fs.readFileSync(manuscriptPath);
+ const gitblob=b=>require("node:crypto").createHash("sha1")
+  .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");
+ assert.equal(gitblob(bytes),currentSource,name+" current public Knowledge must exactly match R01 receipt");
+ assert.equal(gitblob(full),currentMaster,name+" ONE current canonical manuscript must exactly match R01 receipt");
+ const src=bytes.toString("utf8"),master=full.toString("utf8");
+ const b="<!-- BEGIN_"+name+"_KNOWLEDGE_MARKDOWN -->\n";
+ const e="\n<!-- END_"+name+"_KNOWLEDGE_MARKDOWN -->";
+ assert.equal(master.split(b).length,2,name+" exactly one canonical Knowledge start");
+ assert.equal(master.split(e).length,2,name+" exactly one canonical Knowledge end");
+ const section=master.split(b)[1].split(e)[0];
+ assert.equal(section.replace(/\n+$/,""),src.replace(/\n+$/,""),
+  name+" derived public Knowledge must reflect the SAME one canonical manuscript");
+ assert(txt.includes("CANONICAL_PARITY_CONTRACT")&&txt.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+  txt.includes("AUTHORING_REVIEW_HOLD"),"One-canonical Q18 receipt may not self-issue PED PASS");
+ return {source:currentSource,canonical:currentMaster};
+}
 function expectedG10KnowledgeBlobHistorical(lesson,legacy){
  assert(/^[a-f0-9]{40}$/.test(legacy),"Historical source SHA malformed");
  const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
