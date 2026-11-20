@@ -1180,9 +1180,25 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
     "DELTA_C_ACADEMIC_MATERIAL","Q18_OWNER_SELF_VERIFIED_ENRICHMENT","OWNER_P2_PENDING",
     "P0=0 P1=0","THPT-G10-CHVIII-TRY08"])
      assert(r.includes(marker),"B24 owner G0-G2 Q18 source proof missing "+marker);
+   let current=next;
+   const p02=path.join(root,"prototypes/thpt/ux795/G10_CHVIII_B24_OWNER_P2_GOLDEN_UI_Q18_R02_20261121.md");
+   if(fs.existsSync(p02)){
+    const r02=fs.readFileSync(p02,"utf8");
+    const field=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(field("R02_PREVIOUS_SOURCE_BLOB"),next,
+     "B24 P2 R02 must extend exact published R01 SHA");
+    current=field("R02_CORRECTED_SOURCE_BLOB");
+    assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==next,
+     "B24 R02 candidate source hash malformed");
+    for(const phrase of ["G10-CHVIII-B24-OWNER-P2-GOLDEN-UI-R02-20261121",
+      "DELTA_A_UI","OWNER_P2_FAIL_RECEIVED","OWNER_P2_RECHECK_PENDING",
+      "P2-GOLDEN-24-01","P2-GOLDEN-24-02","P2-GOLDEN-24-03"]){
+      assert(r02.includes(phrase),"B24 R02 receipt missing "+phrase);
+    }
+   }
    const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-24.md"));
    const actual=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
-   assert.equal(actual,next,"B24 source Git blob must match Q18 R01 receipt");
+   assert.equal(actual,current,"B24 R01→R02 source SHA chain mismatch");
    const t=lesson.toString("utf8");
    assert(t.includes("2.5. Sử dụng máy tính cầm tay")&&t.includes("nPr")&&t.includes("nCr")&&
     !t.includes("0le kle n")&&[...t.matchAll(/^=== "([^"]+)"$/gm)].length===4,
@@ -1191,7 +1207,18 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
     t.includes('data-thpt-first-try-id="THPT-G10-CHVIII-'+n+'"')&&
     t.includes('data-thpt-help-id="HELP-G10-CHVIII-'+n+'"'),
     "B24 original FirstTry/HELP canonical ID changed: "+n);
-   return next;
+   if(fs.existsSync(p02)){
+    assert(t.includes('bai-24\\/?
+  }
+ })&&!t.includes('bai-23\\/?
+  }
+ })&&
+      t.includes('THPT-G10-CHVIII-TRY05')&&t.includes('.thpt-r4-concept-card')&&
+      t.includes('.thpt-r4-rule-card')&&
+      (t.match(/<div class="thpt-g10-example-solution"/g)||[]).length===5,
+      "B24 R02 Golden active route, semantic cards and five example boxes missing");
+   }
+   return current;
   }
  }
  return blobs[1];
