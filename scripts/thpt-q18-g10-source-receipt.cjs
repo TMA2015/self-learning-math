@@ -815,12 +815,22 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const field=k=>r20.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
    assert.equal(field("PREVIOUS_B20_SOURCE_BLOB"),chvii.candidate,
     "B20 current release must preserve original published source history");
-   const current=field("CANDIDATE_B20_SOURCE_BLOB");
+   let current=field("CANDIDATE_B20_SOURCE_BLOB");
    assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==chvii.candidate,
     "B20 source must be exact signed new candidate");
    for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
     "G10-B20-RELATIVE_POSITION","G10-B20-ANGLE","OWNER_P2_PENDING","P0=0","P1=0"]){
     assert(r20.includes(token),"B20 owner Q18 missing: "+token);
+   }
+   const ri=path.join(root,"prototypes/thpt/ux795/G10_CHVII_B20_VAN_DUNG_KIEM_LOI_Q18_R02_20261120.md");
+   if(fs.existsSync(ri)){
+    const r=fs.readFileSync(ri,"utf8");
+    const get=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(get("R02_PREVIOUS_SOURCE_BLOB"),current,"B20 Kiểm lỗi receipt must extend exactly published SHA");
+    current=get("R02_CORRECTED_SOURCE_BLOB");
+    assert(/^[0-9a-f]{40}$/.test(current||""),"B20 Kiểm lỗi new source SHA malformed");
+    assert(r.includes("G10-CHVII-B20-VAN-DUNG-KIEM-LOI-R02-20261120")&&r.includes("OWNER_P2"),
+     "B20 corrective receipt must preserve owner metadata");
    }
    return current;
   }
