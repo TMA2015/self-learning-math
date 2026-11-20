@@ -1,3 +1,7 @@
+<!-- TOP01_10_CANONICAL_KEY_DELTA_B_SOURCE_EQUIVALENT_20261121 -->
+**21/11/2026 CĐ01 source-only AUTHORING:** learner new blob `a34680c23f1be53feeda073f9e99d64f45ad8257`, original old source `98041b546daedde82a54f41b5c57b502eee6794f` retained historical. Exact ten original keys inserted inside ten existing voluntary Practice answer reveals; **no mathematics/condition/stem/rubric/item_id or 11 public selfcheck changes**; removing the ten lines recovers old source byte-for-byte. New signed author Q18 `291d902ce2948b3d2436b91b64b6b8ebf01a02d9`, metadata `6942f39863b2f7596cdf263773eac76a47c39a0e`, V2 `177dbe4d4350be08704bc9c656bc0a943eda4d71`. 24 canonical ids (18 SGK+6 original Topic extensions), 35/35 opt-in answer blocks, 11 Tự thử; Q15 one canonical, Q16 client-only no Mastery. DELTA_B_SOURCE_EQUIVALENT; author Q18 10/10 source verification, no new independent full Topic NotebookLM PASS or website RELEASE. **CONTENT_READY scoped authoring, subject to exact HEAD QA; NO merge/deploy.**
+
+---
 # CĐ01 — Mệnh đề, Tập hợp và Tư duy logic toán học · AUTHORING CONTENT_READY (student R06, stable packet R07)
 
 PACKET_ID: THPT-TOPIC01-LOGIC-SETS-FULL-R01
@@ -8,18 +12,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: f228b6e25302a4f5a6226b6ada1fad669f433ceb
+SOURCE_COMMIT: 3380280f2af504d3203858cd5ad8b6af3cde845e
 AUTHOR_PR: 817
 CURRENT_PR: #817 Draft AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD01
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
+ACADEMIC_SOURCE_BLOB: a34680c23f1be53feeda073f9e99d64f45ad8257
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA, no fresh independent NotebookLM PASS)
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 05545d0e8ad7989f95baa01e23f39bd81f009b06
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
+REVIEW_RECEIPT_BLOB: 291d902ce2948b3d2436b91b64b6b8ebf01a02d9
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R07_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: f61f3681b717f18d0b95c07ab5232b3b4fbe4826
+AUTHOR_HANDOFF_BLOB: 177dbe4d4350be08704bc9c656bc0a943eda4d71
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
