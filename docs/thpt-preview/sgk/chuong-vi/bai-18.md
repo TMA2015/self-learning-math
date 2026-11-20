@@ -1,5 +1,13 @@
 # Bài 18. Phương trình quy về phương trình bậc hai
 
+<style>
+/* B18 only; reuse Golden 3+1 semantic colors without shared-site CSS changes. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY16"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY16"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY16"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVI-TRY16"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
 <div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI 18</p>
 <p class="thpt-r4-lead">Vì sao bình phương có thể làm xuất hiện nghiệm sai? Khám phá hai dạng phương trình căn, điều kiện và cách thử nghiệm gốc.</p>
 </div>
@@ -126,11 +134,15 @@
 
     ### 2.1. Phương trình dạng \(\sqrt{A(x)}=\sqrt{B(x)}\)
 
-    Phương trình tương đương với hệ điều kiện
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Phương trình chứa căn:</strong> Đây là phương trình trong đó ẩn xuất hiện dưới dấu căn. Khi giải trong tập số thực, phải tìm các giá trị làm những biểu thức dưới căn không âm trước khi biến đổi. Bài này xét hai dạng thông dụng.</div>
+
+    Với hai vế đều là căn bậc hai, phương trình tương đương với hệ điều kiện
 
     \[
     A(x)=B(x),\qquad A(x)\ge0,\quad B(x)\ge0.
     \]
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Hai căn bằng nhau:</strong> Cần điều kiện của <em>cả hai căn</em>; trong miền ấy, hai căn bằng nhau khi các biểu thức dưới căn bằng nhau. Giải phương trình không căn xong phải giữ đúng miền đã xác định.</div>
 
     **Phân tích:** Khi cả hai căn đã có nghĩa, hai căn bậc hai đều không âm; chúng bằng nhau khi giá trị dưới căn bằng nhau. Vì vậy giải \(A(x)=B(x)\), giữ lại các nghiệm làm hai biểu thức dưới căn không âm, rồi kiểm tra trong phương trình ban đầu.
 
@@ -155,6 +167,8 @@
     B(x)\ge0.
     \end{cases}
     \]
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Một căn bằng biểu thức:</strong> Vế không chứa căn phải không âm. Chỉ sau khi giữ điều kiện ấy mới bình phương để giải; mọi kết quả từ phương trình đã bình phương đều cần kiểm với phương trình ban đầu.</div>
 
     Khi hai điều kiện này thỏa, \(A(x)=B(x)^2\ge0\) cũng bảo đảm căn có nghĩa. Chiều ngược lại vì thế đúng **khi vẫn giữ điều kiện dấu**; không thể chỉ bình phương rồi bỏ điều kiện.
 
