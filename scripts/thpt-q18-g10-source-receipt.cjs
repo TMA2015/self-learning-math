@@ -754,6 +754,24 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    }
    return current;
   }
+  if(name==="B22"){
+   assert(chvii&&chvii.candidate==="34288f6ed32a0bf100edbf2ef495a4d9cec3ad2a",
+    "B22 Q18 must extend exact immutable 13/11 signed ChVII source");
+   const r22=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVII_B22_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+   const field=k=>r22.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("PREVIOUS_B22_SOURCE_BLOB"),chvii.candidate,
+    "B22 new source must extend exact 13/11 S1 source Git blob");
+   const current=field("CANDIDATE_B22_SOURCE_BLOB");
+   assert(/^[0-9a-f]{40}$/.test(current||"")&&current!==chvii.candidate,
+    "B22 author Q18 requires exact new distinct source blob");
+   for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+    "G10-B22-ELLIPSE_PARAMETERS","G10-B22-HYPERBOLA_PARAMETERS",
+    "G10-B22-PARABOLA_FOCUS","OWNER_P2_PENDING","P0=0","P1=0"]){
+     assert(r22.includes(token),"B22 source Q18 receipt missing "+token);
+   }
+   return current;
+  }
   const ux=chviExampleUxReceiptRows().get(name);
   if(name==="B15"){
    assert(ux&&ux.baseline===row.candidate,
