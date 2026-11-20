@@ -722,6 +722,23 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    }
    return current;
   }
+  if(name==="B21"){
+   assert(chvii&&chvii.candidate==="0af5e4d9e2348575f2be7de57f81acd00098bc55",
+    "B21 owner Q18 must extend exact immutable 13/11 signed ChVII source");
+   const r21=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVII_B21_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+   const field=k=>r21.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("PREVIOUS_B21_SOURCE_BLOB"),chvii.candidate,
+    "B21 new source must extend exact old S1 source Git blob");
+   const current=field("CANDIDATE_B21_SOURCE_BLOB");
+   assert(/^[0-9a-f]{40}$/.test(current||"")&&current!==chvii.candidate,
+    "B21 new source requires distinct valid SHA");
+   for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+    "G10-B21-CIRCLE_STANDARD","G10-B21-LINE_CIRCLE_POSITION","OWNER_P2_PENDING","P0=0","P1=0"]){
+    assert(r21.includes(token),"B21 Q18 signed owner source receipt missing "+token);
+   }
+   return current;
+  }
   const ux=chviExampleUxReceiptRows().get(name);
   if(name==="B15"){
    assert(ux&&ux.baseline===row.candidate,
