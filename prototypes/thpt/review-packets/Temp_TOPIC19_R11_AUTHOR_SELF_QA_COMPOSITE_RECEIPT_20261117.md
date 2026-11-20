@@ -3,15 +3,15 @@
 AUTHOR_SELF_QA_RECEIPT: COMPOSITE_WITH_IMMUTABLE_R09_BASELINE_AND_TWO_TARGETED_DELTAS
 PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R11-20261117
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-SOURCE_BLOB: 2cf19a19fc0f616b780846d41f7a1b9325363b80
-ACADEMIC_SOURCE_BLOB: 2cf19a19fc0f616b780846d41f7a1b9325363b80
+SOURCE_BLOB: 2809816539e438726858daf18d7efb1d751ea7f7
+ACADEMIC_SOURCE_BLOB: 2809816539e438726858daf18d7efb1d751ea7f7
 FROZEN_R09_READY_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 FROZEN_R09_FULL_AUTHOR_Q18_RECEIPT_BLOB: 55bc391995cccdf0ce66b96ebfa8840c0148c075
 R10_MATERIAL_PED_SOURCE_BLOB: 37612a3fb8d804efa6dd4f65ddd22d90bf2772ae
@@ -57,7 +57,7 @@ ASSESSMENT_Q16: The seven public selfcheck questions contain no key/hint/correct
 
 This composite author Q18 receipt chains a previously CONTENT_READY R09 snapshot with exact R10 material math/PED and R11 editorial no-math diffs. The source, matrix and receipt Git blobs are independently pinned above; the original R09 signed snapshot remains valid on its old SHA, not rewritten. Owner-effective Q18 allows AUTHOR_SELF_VERIFIED from substantive source evidence without mandatory new independent NotebookLM; no independent reviewer verdict is invented. The remaining work is precise V2/A1–A7/ready/REGISTER source-hash packaging on R11; **CONTENT_READY has not been issued for R11** by this receipt alone. Neither website integration nor release authorization is part of AUTHORING.
 
-AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP19_R11_FULL_R09_BASE_14_OUTCOME_R10_T02_MATH_R11_SOURCE_EQUIVALENT_56_ID_COMPOSITE_20261117
+AUTHOR_SIGNOFF: TOP19_G10_B23_B25_FULL_KNOWLEDGE_2809816539e438726858daf18d7efb1d751ea7f7
 VERDICT: AUTHOR_SELF_VERIFIED_ON_EXACT_R11_SOURCE_WITH_TARGETED_DELTA_CHAIN; HANDOFF_PACKAGING_PENDING; NEW_CONTENT_READY_NOT_CLAIMED; NO_MERGE_NO_DEPLOY.
 
 
@@ -95,3 +95,10 @@ The nineteen vetted R11 student-visible correction groups were applied **directl
 
 <!-- TOP19_OWNER_EDITORIAL_DELTA_A_20261119 -->
 **Owner copy-only ΔA 19/11:** 14 repeated `Khám phá kiến thức` miniature headings removed (all subsequent complete explanatory prose preserved); three existing labeled application/optional-extension math callouts reclassified as **PHƯƠNG PHÁP/TÍNH CHẤT** while retaining explicit `(mở rộng)` and `(vận dụng)` scope. Learner `7005bf1f839e566efb9abbc17eccfa92a0b41e63` → `2cf19a19fc0f616b780846d41f7a1b9325363b80`. Reverse-diff confirms 14 headings and 3 captions are the entirety of change, with full 14 outcomes, 15 independent examples, 14 Vận dụng/Đối chiếu, all 56 canonical questions/answers/solutions/rubrics, SGK conditions and image links unchanged. No academic delta, same CONTENT_READY per owner, signed existing Q18 affected source equivalence; RELEASE remains separate, no new NotebookLM claims.
+
+
+## 20/11/2026 · Full SGK Toán 10 tập hai B23–B25 Knowledge — 14/14
+- Exact source Git `2809816539e438726858daf18d7efb1d751ea7f7` versus `2cf19a19fc0f616b780846d41f7a1b9325363b80`, changed **only Knowledge explanations** O02,O04,O07,O09,O10. Existing owner direct S1 original SGK/SBT page-visual custody `prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOPIC19_R01_DIRECT_S1_SGK_SBT_PDF_VISUAL_RECEIPT_20261114.md` (Git `850dd241e60de58ccf032e48e1e13530988436e3`) remains authoritative; no false new original-page visual check.
+- O02 branch-dependent multiplication vs counting leaves, O04 split even-last-digit zero/nonzero with nonrepetition (30 total), O07 combination symmetry/Pascal recurrence and assignment factor, O09 four-position binomial basis & 216 x² coefficient from (2x+3)^4, O10 solve exponent-before-coefficient plus negative base sign handling, (2x−3)^5 coefficient x³=720. All include condition, worked example, method choice, counterexample or self-correction direction; Q01–Q14 author affected math/PED = SELF_VERIFIED, P0/P1=0 for the edits.
+- Recheck direct arithmetic: {0,1,2,3,4} even three-digit unique = 4*3 + 2*3*3=30. C(5,3)=10=C(4,2)+C(4,3)=6+4; C(4,2)*2²*3²=6*4*9=216; C(5,2)*2³*(−3)²=720. Use of Pascal recurrence assumes 1≤k≤n−1, counting choices without order vs assign roles requires k! factor. Distinct cases are nonoverlapping and exhaustive.
+- Q15/Q16: source text suffix from `# Luyện tập` to `# Tự kiểm tra` byte-identical, 14 TOP19-M/O unchanged, 56 original public canonical (all original SGK/Topic/ Written), 7 public question-only replay placements, SVG/solution/key/rubric preserved. No independent NotebookLM Topic PASS, no official RD1/Final Submit/Mastery, RELEASE/merge/deploy. Normative owner-effective one Q01–Q18 v3.2.0.
