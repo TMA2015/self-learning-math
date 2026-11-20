@@ -151,7 +151,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    const count=re=>[...x.matchAll(re)].length;
    assert.equal(count(/^\s+\?\?\? question "Đối chiếu"$/gm),4,
     "B23 must retain four voluntary source-locked Golden disclosures");
-   assert(x.includes('details.question>summary::before{display:none!important}')&&
+   assert(x.includes('details.question>summary::before{display:none!important;')&&
     x.includes('background:#eaf1fc!important'),
     "B23 blue source-local Đối chiếu skin must hide misleading question-mark icon");
    assert.equal(count(/thpt-r4-knowledge-conclusion thpt-r4-concept-card/g),2,
