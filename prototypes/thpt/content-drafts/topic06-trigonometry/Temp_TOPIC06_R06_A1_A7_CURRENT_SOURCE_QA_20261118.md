@@ -5,9 +5,9 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 493e6216d559c6544a7314f3df2b230fa3af528f
+SOURCE_BLOB: 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: a5702a167a4563f61aa397e99595409bb88413a0
+REVIEW_RECEIPT_BLOB: 1fe31c58908c6364b93aedac7239ef1e25e29040
 ORIGINAL_G11_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 ORIGINAL46_INDEX_BLOB: d8279df37c9dcd74a0b26f0da389baf7d53ecf64
 NEW20_CANONICAL_BANK_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65
@@ -17,7 +17,7 @@ INDEPENDENT_NOTEBOOKLM_PASS: NOT_CLAIMED
 RELEASE_AUTHORIZATION: NO
 
 ## A1 — Current author source and signed receipt
-One R06 learning source Git SHA `493e6216d559c6544a7314f3df2b230fa3af528f`; current composite receipt `a5702a167a4563f61aa397e99595409bb88413a0`. The historical R05 signed source `dd3af68f681eba9a7b75040d9490815f81efdd6b` is unchanged. Use current source for RELEASE intake, not an obsolete R05 signed source or alternate draft.
+One R06 learning source Git SHA `9f6996d37e1972e7a2a2f283d062bf24cdbbc79f`; current composite receipt `1fe31c58908c6364b93aedac7239ef1e25e29040`. The historical R05 signed source `dd3af68f681eba9a7b75040d9490815f81efdd6b` is unchanged. Use current source for RELEASE intake, not an obsolete R05 signed source or alternate draft.
 
 ## A2 — SGK S1, precise original scope
 G11 KNTT Tập Một ChI B01–B04 source, page provenance from immutable signed R05 owner receipt (not newly reopened PDF scan). Three separate Topic self-sufficient pages do not impersonate textbook Core; original 46 questions remain owned by original G11 source, newly written 20 are distinct Topic owner.
@@ -65,3 +65,9 @@ RELEASE_AUTHORIZATION: NO
 - Latest learner blob: 493e6216d559c6544a7314f3df2b230fa3af528f; targeted author Q18 receipt: a5702a167a4563f61aa397e99595409bb88413a0. Previous blobs 787a5a15129785e1f8226314606052afa1f6000b and 7040dfe92bb4ab06e433a6843d23f7b8c8ec5999 remain historical.
 - 10 direct trigonometric identities/2 denominator restrictions checked; added required double-angle, 3 product-to-sum and 4 sum-to-product formula statements in Knowledge §2.4. 66 existing canonical items, 16 selfchecks, SVG, rubric and RD1 privacy unchanged.
 - Q01/Q03/Q09–14 targeted self-QA PASS; full SGK 10–12 to 22-topic exhaustiveness not claimed; V2/ready/REGISTER exact SHA synchronization required, no release authorization.
+
+
+## 20/11/2026 — Final source-lock after comprehensive G11 B01/B02 check
+- Current SOURCE_BLOB: 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f; targeted Q18 SOURCE_BLOB: 1fe31c58908c6364b93aedac7239ef1e25e29040. Intermediate 493e6216d559c6544a7314f3df2b230fa3af528f and Q18 a5702a167a4563f61aa397e99595409bb88413a0 are historical only.
+- In addition to three product-to-sum and four sum-to-product formulas and double-angle, O06/O07 now cover complementary/pi-shift symmetries and tangent addition/difference with nonzero-denominator guards. Direct unit-circle and reverse-algebra QA on affected O06/O07/O08, unchanged 66 canonical questions/keys/rubrics, 16 public replay assessments, Q16.
+- This is targeted S1 Delta C author self-QA, not a blanket independent reviewer PASS nor a website RELEASE authorization.
