@@ -3,14 +3,14 @@
 > **AUTHORING only.** One standard `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. This is source-equivalent affected-scope AUTHOR_SELF_VERIFIED, **not** an invented independent NotebookLM Topic Academic/PED verdict, not browser/AP QA, not production Readiness, and not merge/deploy approval.
 
 PACKET_ID: THPT-TOPIC10-APPLIED-DERIVATIVE-SURVEY-OPTIMIZATION-FULL-R01
-CONTENT_REVISION: R06_SOURCE_EQUIVALENT_20261118
+CONTENT_REVISION: R06_FULL_S1_KNOWLEDGE_20261120
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: f2b59858a3c1e92960b2c581bb97d8d126c59fb9
-ACADEMIC_SOURCE_BLOB: f2b59858a3c1e92960b2c581bb97d8d126c59fb9
+SOURCE_BLOB: b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
+ACADEMIC_SOURCE_BLOB: b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
 PREVIOUS_SIGNED_R06_SOURCE_BLOB: bd33faa8e7bc348cda78da6e44d3f40a68223596
 PREVIOUS_SIGNED_R06_Q18_BLOB: 96cc3e1dee497f7a42e1ef50bee4c17692a9158e
 PREVIOUS_FULL_R05_SOURCE_BLOB: 68d3ccd180162c0b850c7e419a5098982d3785a0
@@ -20,8 +20,8 @@ ORIGINAL_SGK_REVIEW_RECEIPT_BLOB: 8fef1c7dbd9b404881ff40cec8147c9ae89ef473
 ORIGINAL78_INDEX_BLOB: ffaba90bddc47a1d86dd905535e37c07d22173d9
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
 PUBLIC_CANONICAL_BANK_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da
-DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
-MATH_AND_PED_VERDICT: AUTHOR_SELF_VERIFIED_SOURCE_EQUIVALENT
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
+MATH_AND_PED_VERDICT: AUTHOR_SELF_VERIFIED_FULL_S1_KNOWLEDGE
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
@@ -31,7 +31,7 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
 PRIVATE_RD1_IMPORTED: 0
 RELEASE_AUTHORIZATION: NO
-AUTHOR_SIGNOFF: TOP10_R06_20261118_f3ed26380c817f3c3dea7a240634a45193f9edb2
+AUTHOR_SIGNOFF: TOP10_FULL_S1_KNOWLEDGE_b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
 AUTHOR_SELF_QA_RECEIPT: TOP10_R06_EQUIVALENT_20261118_SOURCE_LOCKED
 S1_RECEIPT: Toán 12 KNTT tập Một SGK ChI B01–B05 and SBT corresponding sections, owner-verified printed/PDF page pairing preserved in Topic A1 metadata; immutable G12 SGK source blob f0862dcdab21dec136e43969f45c42638e7c7574 and original independent SGK-only receipt 8fef1c7dbd9b404881ff40cec8147c9ae89ef473; no new PDF rescanning or independent Topic verdict.
 OUTCOME_AUDIT: TOP10-M01..M36 map one-to-one TOP10-O01..O36 in 6 numbered arcs; 36 full worked examples, 36 immediate First Try/voluntary Đối chiếu, 120 source-visible canonical Practice placements, 36 public replay-only selfchecks.
@@ -102,3 +102,13 @@ A1 original S1 custody, A2 36 outcome trace, A3 120 Q15 identity, A4 math and PE
 
 ## 20/11/2026 — owner editorial Q03 ΔA of six conditional callouts
 - Current learner `f2b59858a3c1e92960b2c581bb97d8d126c59fb9`, prior `6cac404d215a758b9df477cb30ac54b6710b2e45` remains historical. In O03,O10,O11,O17,O27,O29 the six vague `ĐIỀU KIỆN —` labels are now 4 KIẾN THỨC CẦN GHI NHỚ (domain, open set, limit side, marginal-cost interpretation) and 2 PHƯƠNG PHÁP (real-feasible domain and constrained optimizer). The underlying numeric optimization, inequalities and logical conditions unchanged. All 120 Practice item statements/solutions/rubrics, original 36 outcome teaching chains preserved. Targeted owner Q03/PED Delta A author self QA; no independent academic or RELEASE verdict.
+
+
+## 20/11/2026 — Trọn Kiến thức Chương I SGK Toán 12 B01–B05
+
+- Bản học sinh duy nhất: Git blob `b7d7ef5d8ca87b2225e6977ae54afe3261dbd220`, bản trước `f2b59858a3c1e92960b2c581bb97d8d126c59fb9`. Phạm vi S1 KNTT 12 Tập Một: B01 tr.5–14; B02 tr.15–19; B03 tr.20–25; B04 tr.26–32; B05 tr.33–41. Đã đối chiếu văn bản SGK trong PDF tại https://intracomuni.edu.vn/wp-content/uploads/2026/11/sach-giao-khoa-toan-12-tap-1-ket-noi-tri-thuc-voi-cuoc-song.pdf cùng bản source receipt trước. Screenshot PDF cache miss: không nhận đã QA hình trang in trong lượt này.
+- Đọc 36/36 mục Knowledge trên sáu mạch: O01–O06 đơn điệu/cực trị; O07–O12 GTLN/GTNN; O13–O18 tiệm cận; O19–O25 khảo sát đồ thị/các dạng hàm/đối xứng; O26–O36 ứng dụng, tối ưu và kiểm điều kiện. Giữ các phần đã đúng.
+- DELTA_C thực chất: O04 bổ sung điều kiện liên tục khi f' đổi dấu; O20 tâm đối xứng bậc ba tại x0=-b/(3a), không có tiệm cận; O21 đầy đủ dạng phân thức bậc hai trên bậc nhất và ví dụ xét dấu/cực trị/tiệm cận; O23 làm rõ trục đối xứng là phân giác hai tiệm cận khi có tiệm cận xiên; O26 tốc độ biến thiên trung bình/tức thời, hóa học và sinh học.
+- Tự kiểm phép tính: f=x³+3x² có f''=6x+6, tâm (-1,2), f(-1+h)+f(-1-h)=4. g=(x²−2x+2)/(x−1)=x−1+1/(x−1), g'=x(x−2)/(x−1)², miền x≠1, cực đại (0,−2), cực tiểu (2,2), tiệm cận x=1 và y=x−1, tâm (1,0); giới hạn tại 1−/1+ lần lượt −∞/+∞. C(t)=10−2t có C'=-2, tốc độ tiêu hao +2; N(t)=100+20t+5t² có N'(2)=40. Algebra/SymPy + điều kiện miền/đổi dấu checked.
+- Giữ nguyên 36 lesson/outcome, 120 item canonical (78 SGK +42 Topic), 18 Written, 36 public selfcheck, 4 SVG. Từ heading # Luyện tập đến hết # Tự kiểm tra byte-exact với blob trước. Không đổi đáp án/rubric/D6, RD1 hay Mastery; CLIENT_SELF_CHECK_NO_MASTERY.
+- Q18 AUTHOR_SELF_VERIFIED full Knowledge S1 affected scope; P0=0, P1=0. Đây không phải NotebookLM độc lập, không phải browser/RELEASE PASS, không merge/deploy.
