@@ -62,6 +62,20 @@
         **Vì sao:** Cos120°=−1/2 nên tích âm; không thể dùng cos60° vì đây là góc giữa hai vectơ đang hướng xa nhau.
 
 
+
+    <span data-thpt-help-id="HELP-G10-B11-02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Tự nhận diện:** Em đang làm sai dấu của công lực?
+
+        **Cách làm sai:** Lực \(10\,\mathrm N\) tạo góc \(120^\circ\) với độ dời \(3\,\mathrm m\) nhưng thay \(\cos60^\circ\), thu được công \(+15\,\mathrm J\).
+
+        **Vì sao sai:** Góc giữa hai vectơ **đúng theo hướng mũi tên** là \(120^\circ\), nên cos âm. Tích vô hướng có dấu; lấy góc nhọn phụ hoặc lấy giá trị tuyệt đối sẽ làm mất ý nghĩa tác dụng cản chuyển động.
+
+        **Tự sửa:** \(W=10\cdot3\cos120^\circ=-15\,\mathrm J\). Kiểm lại: góc tù ⇒ công âm; góc vuông ⇒ công bằng 0.
+
+        **Luyện lại:** Tự đổi góc thành \(90^\circ\) rồi \(60^\circ\) và dự đoán dấu trước khi tính lại.
     <span id="thpt-g10-chiv-try22" data-thpt-first-try-id="THPT-G10-CHIV-TRY22" data-outcome-id="G10-B11-COORDINATE_DOT" data-thpt-help-ref="HELP-G10-B11-01"></span>
 
     #### Tại sao tích vô hướng có thể tính bằng hai cặp số?
@@ -86,6 +100,8 @@
         **Vì sao:** Thành phần theo Ox cho 6, theo Oy cho −4, cộng là 2. Tích vô hướng là một số, không phải vectơ.
 
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa liên quan](#HELP-G10-B11-01).
     <span id="thpt-g10-chiv-try23" data-thpt-first-try-id="THPT-G10-CHIV-TRY23" data-outcome-id="G10-B11-PERPENDICULAR" data-thpt-help-ref="HELP-G10-B11-01"></span>
 
     #### Vuông góc có thể kiểm bằng số
@@ -108,6 +124,20 @@
         **Vì sao:** Nếu một vectơ bằng 0 thì tích vẫn bằng 0 nhưng góc giữa hai vectơ không xác định theo định nghĩa dùng ở đây.
 
 
+
+    <span data-thpt-help-id="HELP-G10-B11-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Tự nhận diện:** Em đã chia cho độ dài của vectơ-không?
+
+        **Cách làm sai:** Với \(\vec u=\vec0\), \(\vec v=(2;3)\), tính \(\cos(\vec u,\vec v)=\frac{0}{0\cdot\sqrt{13}}=0\), rồi kết luận góc duy nhất bằng \(90^\circ\).
+
+        **Vì sao sai:** Mẫu số bằng \(0\) nên phép chia vô nghĩa. SGK chỉ quy ước góc với \(\vec0\) có thể tùy ý, đồng thời coi \(\vec0\) vuông góc với mọi vectơ; điều đó **không** tạo ra một số đo góc duy nhất.
+
+        **Tự sửa:** Tính \(\vec u\cdot\vec v=0\); phát biểu vuông góc **theo quy ước SGK**, không tính cos từ mẫu bằng 0. Với hai vectơ khác không, mới áp dụng công thức cos để suy góc.
+
+        **Luyện lại:** Chọn hai vectơ khác không và thử tính tích bằng 0 trong phần Luyện tập, sau đó quay lại tự giải một trường hợp có vectơ-không.
     <span id="thpt-g10-chiv-try24" data-thpt-first-try-id="THPT-G10-CHIV-TRY24" data-outcome-id="G10-B11-APPLICATION" data-thpt-help-ref="HELP-G10-B11-02"></span>
 
     #### Công của lực: độ lớn không đủ
@@ -129,6 +159,8 @@
 
         **Vì sao:** Cos180°=−1, cos90°=0. Công là vô hướng có dấu, khác với độ lớn lực hay quãng đường.
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa liên quan](#HELP-G10-B11-02).
     ### 1.3. Vận dụng — hợp lực và lực giữ cân bằng
 
     Để giữ một vòng móc đứng yên khi hai dây đang kéo, lực thứ ba phải **đối** với hợp lực của hai lực đầu. Theo Bài 8, hợp lực là tổng **vectơ** chứ không phải tổng hai độ lớn; theo Bài 11, tích vô hướng giúp tính độ lớn hợp lực khi biết góc giữa hai lực.
@@ -144,6 +176,20 @@
         **Vì sao:** Góc \(60^\circ\) không phải góc vuông; dùng tổng vectơ và tính chất tích vô hướng, không cộng \(4+4\) thành độ lớn hợp lực. Nếu nhầm, xem cách sửa ở mục 4.3.
 
 
+
+    <span id="help-g10-chiv-force-tr01" data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Tự nhận diện:** Em lấy tổng độ lớn hai lực 4 N + 4 N thành 8 N?
+
+        **Cách làm sai:** Vì mỗi lực có độ lớn \(4\,\mathrm N\), kết luận hợp lực luôn \(8\,\mathrm N\), rồi đặt lực cân bằng cùng chiều với hợp lực.
+
+        **Vì sao sai:** Hai lực tạo góc \(60^\circ\), không cùng hướng. Phải **cộng vectơ**, không cộng độ lớn, và lực cân bằng phải **ngược chiều** hợp lực.
+
+        **Tự sửa:** Vẽ hai mũi tên cùng gốc, xác định đúng góc \(120^\circ\). Áp dụng \(|\vec F_1+\vec F_2|^2=4^2+4^2+2\cdot4\cdot4\cos60^\circ=48\), suy ra hợp lực \(4\sqrt3\,\mathrm N\). Vectơ lực thứ ba là \(-(\vec F_1+\vec F_2)\).
+
+        **Luyện lại:** Tự trở lại bài vận dụng hai lực \(4\,\mathrm N\), góc \(60^\circ\) trong tab Khám phá; hãy tự tính trước khi mở đối chiếu. Nếu đã xem đáp án thì chọn bộ số liệu khác để kiểm tra độc lập.
     ### 1.4. Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Tích vô hướng, góc giữa hai vectơ, dấu của cos góc nhọn/tù, vuông góc, tích vô hướng theo tọa độ, công của lực.
@@ -256,48 +302,6 @@
     **Kiểm lại:** \(0\le|\vec R|\le 6+6=12\,\mathrm N\), phù hợp bất đẳng thức tam giác; tổng ba vectơ bằng \(\vec0\). Biết độ lớn và góc giúp tìm độ lớn hợp lực; muốn xác định góc hướng chính xác trong trục tọa độ phải xét các thành phần.
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-B11-01" hidden></span>
-
-    ??? tip "4.1. Nhầm tích vô hướng bằng 0 với phép chia cho 0"
-
-        **Tự nhận diện:** Em đã chia cho độ dài của vectơ-không?
-
-        **Cách làm sai:** Với \(\vec u=\vec0\), \(\vec v=(2;3)\), tính \(\cos(\vec u,\vec v)=\frac{0}{0\cdot\sqrt{13}}=0\), rồi kết luận góc duy nhất bằng \(90^\circ\).
-
-        **Vì sao sai:** Mẫu số bằng \(0\) nên phép chia vô nghĩa. SGK chỉ quy ước góc với \(\vec0\) có thể tùy ý, đồng thời coi \(\vec0\) vuông góc với mọi vectơ; điều đó **không** tạo ra một số đo góc duy nhất.
-
-        **Tự sửa:** Tính \(\vec u\cdot\vec v=0\); phát biểu vuông góc **theo quy ước SGK**, không tính cos từ mẫu bằng 0. Với hai vectơ khác không, mới áp dụng công thức cos để suy góc.
-
-        **Luyện lại:** Chọn hai vectơ khác không và thử tính tích bằng 0 trong phần Luyện tập, sau đó quay lại tự giải một trường hợp có vectơ-không.
-
-    <span data-thpt-help-id="HELP-G10-B11-02" hidden></span>
-
-    ??? tip "4.2. Dùng cos góc nhọn thay cho góc tù"
-
-        **Tự nhận diện:** Em đang làm sai dấu của công lực?
-
-        **Cách làm sai:** Lực \(10\,\mathrm N\) tạo góc \(120^\circ\) với độ dời \(3\,\mathrm m\) nhưng thay \(\cos60^\circ\), thu được công \(+15\,\mathrm J\).
-
-        **Vì sao sai:** Góc giữa hai vectơ **đúng theo hướng mũi tên** là \(120^\circ\), nên cos âm. Tích vô hướng có dấu; lấy góc nhọn phụ hoặc lấy giá trị tuyệt đối sẽ làm mất ý nghĩa tác dụng cản chuyển động.
-
-        **Tự sửa:** \(W=10\cdot3\cos120^\circ=-15\,\mathrm J\). Kiểm lại: góc tù ⇒ công âm; góc vuông ⇒ công bằng 0.
-
-        **Luyện lại:** Tự đổi góc thành \(90^\circ\) rồi \(60^\circ\) và dự đoán dấu trước khi tính lại.
-
-    <span id="help-g10-chiv-force-tr01" data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01" hidden></span>
-
-    ??? tip "4.3. Cộng độ lớn của hai lực không cùng hướng"
-
-        **Tự nhận diện:** Em lấy tổng hai lực 6 N + 6 N thành 12 N?
-
-        **Cách làm sai:** Vì mỗi dây kéo \(6\,\mathrm N\), kết luận hợp lực luôn \(12\,\mathrm N\), rồi đặt lực cân bằng cùng chiều với hợp lực.
-
-        **Vì sao sai:** Hai lực tạo góc \(120^\circ\), không cùng hướng. Phải **cộng vectơ**, không cộng độ lớn, và lực cân bằng phải **ngược chiều** hợp lực.
-
-        **Tự sửa:** Vẽ hai mũi tên cùng gốc, xác định đúng góc \(120^\circ\). Áp dụng \(|\vec F_1+\vec F_2|^2=6^2+6^2+2\cdot6\cdot6\cos120^\circ=36\), suy ra hợp lực \(6\,\mathrm N\). Vectơ lực thứ ba là \(-(\vec F_1+\vec F_2)\).
-
-        **Luyện lại:** Tự trở lại bài vận dụng hai lực \(4\,\mathrm N\), góc \(60^\circ\) trong tab Khám phá; hãy tự tính trước khi mở đối chiếu. Nếu đã xem đáp án thì chọn bộ số liệu khác để kiểm tra độc lập.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
