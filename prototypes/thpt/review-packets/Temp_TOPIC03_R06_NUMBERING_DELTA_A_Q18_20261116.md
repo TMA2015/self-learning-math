@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 8b0e5be33b42d8b1d3e743bb2502501789333075
-ACADEMIC_SOURCE_BLOB: 8b0e5be33b42d8b1d3e743bb2502501789333075
+SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
+ACADEMIC_SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R05_FULL_LEARNER_VISIBLE_31_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: 05e9675a7dca802aa9540a96a46d76d013055d8b
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -76,3 +76,8 @@ Owner ΔA 19/11: 9 phát biểu phương pháp/điều kiện phương trình đ
 **Nguồn S1:** SGK Kết nối tri thức Toán 10 Tập hai, Bài 17, trang in 19: biệt thức `Δ=b²−4ac`, biệt thức thu gọn `Δ′=(b′)²−ac` khi `b=2b′`. [Bản SGK gốc đã đối chiếu](https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-10-Tap-2-Chuong-trinh-moi.pdf). Trước chỉnh, learner `41b070e06267a5486f00ff977e164c4198f387d4` đã có Δ nhưng chưa dạy Δ′ trong Kiến thức. Đã thêm vào **đúng một source learner** `8b0e5be33b42d8b1d3e743bb2502501789333075` tại `TOP03-M04 / TOP03-O04`: giải thích b′ và Δ′, trường hợp âm/bằng 0/dương, nghiệm `(-b′±√Δ′)/a` và ví dụ `2x²−8x+6=0` có nghiệm 1,3.
 
 **Q18 AUTHOR_SELF_VERIFIED_AFFECTED_DELTA:** 6/6 kiểm tra thực tế PASS: với 4×5×4 bộ a,b′,c, `Δ=4Δ′`; nghiệm 1 và 3 đều thỏa phương trình gốc; MathJax delimiter cân bằng; số lượng `item_id` không đổi; bổ sung trước Ví dụ hiện hành; xóa đúng khối bổ sung trả lại learner cũ byte-identical. Không sửa stem/key/solution/rubric/ID/SVG/Readiness, 0 P0/P1 được xác định ở riêng phạm vi Δ′. **Phân loại `DELTA_C_ACADEMIC_MATERIAL`**, không mạo danh independent NotebookLM review hoặc full 22-topic audit. Theo quyết định owner, AUTHORING `CONTENT_READY` giữ nguyên trên nguồn mới sau source-lock. RELEASE và merge/deploy chưa được cho phép.
+
+
+## 20/11/2026 · Owner editorial ΔA TOP03-O08/O09/O10
+- Source learner `488cee3670af82ed9fd1f457d23a489e7ba8d063` replaces source SHA `8b0e5be33b42d8b1d3e743bb2502501789333075` only by three formal prefixes `ĐIỀU KIỆN —`→`TÍNH CHẤT —`: the actual statements are mathematical equivalences sqrt(A)=B iff B≥0 and A=B², and sqrt(A)=sqrt(B) iff A=B≥0. Keep exact conditions in the body, no formula, result, Practice item/stem/answer/rubric or selfcheck changed.
+- Q03/PED author verified on exact source, no broader independent NotebookLM or release claim.
