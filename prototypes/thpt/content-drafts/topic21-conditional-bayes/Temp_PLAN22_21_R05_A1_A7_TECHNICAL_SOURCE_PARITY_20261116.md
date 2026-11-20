@@ -1,11 +1,11 @@
 # CĐ21 R05 · A1–A7 TECHNICAL SOURCE EQUIVALENCE + original outcome audit · 16/11/2026
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: dd7fa9b8818efcbceca5bdae7877aaa874e615e7
-CURRENT_Q18_RECEIPT_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
+SOURCE_BLOB: ab886f53b9bee89f71a852febb7f2d9ccfff2373
+CURRENT_Q18_RECEIPT_BLOB: d7625fbe3b7f02a99485687ed49f499decf3b913
 CURRENT_Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
@@ -85,3 +85,8 @@ I have inspected the final R04 student source after canonical version lock, chec
 - ACADEMIC_SOURCE_BLOB: dd7fa9b8818efcbceca5bdae7877aaa874e615e7
 - REVIEW_RECEIPT_BLOB: e7a1ac1c9af6523efb44aaf4350b2b0f19ddb1a8
 - Added explicit P(A)=0 and P(B)=0 case without dividing by 0, protecting original sample-size preconditions; original O02 2x2 table and all canonical items unchanged.
+
+
+## 20/11 full SGK B18–B19 Knowledge CĐ21 8/8
+
+Learner `ab886f53b9bee89f71a852febb7f2d9ccfff2373` author Q18 `d7625fbe3b7f02a99485687ed49f499decf3b913`. O02 conditional table denominators, O03 chained dependent draws, O05 multi-source total probability, O06 posterior sanity sum, O08 base-rate modeled comparison. Original 19 canonical public (8 Try/8 Practice/3 Written), 8 question-only public Selfchecks, 2 SVG and Practice/Selfcheck unchanged. Existing independent D6-only review remains D6-only; new Knowledge is author SELF_VERIFIED v3.2, not new independent NotebookLM. No release.
