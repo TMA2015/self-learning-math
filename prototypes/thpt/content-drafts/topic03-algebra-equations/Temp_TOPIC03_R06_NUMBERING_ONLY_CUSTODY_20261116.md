@@ -1,9 +1,9 @@
 # CĐ03 — metadata bản thảo hiện hành, đã sửa D6 + Ví dụ trực tiếp
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 8b0e5be33b42d8b1d3e743bb2502501789333075
+CURRENT_SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 537186b1763ef06bed205f45d8d3b907dc3c7aa2
+CURRENT_Q18_RECEIPT_BLOB: 65841734363d64cc474c359041d65e99535cae23
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
@@ -106,3 +106,9 @@ The learner source at CURRENT_SOURCE_PATH is edited **in place**. Its prior numb
 
 
 **20/11 S1 G10 B17 Delta C:** current single learner `8b0e5be33b42d8b1d3e743bb2502501789333075`, Q18 `537186b1763ef06bed205f45d8d3b907dc3c7aa2`, added Δ′ b=2b′ to `TOP03-O04`; 6/6 scoped math checks, canonical items/solutions unchanged. AUTHORING CONTENT_READY retained, no independent reviewer PASS.
+
+
+## 20/11/2026 current source custody
+- CURRENT_SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
+- CURRENT_Q18_RECEIPT_BLOB: 65841734363d64cc474c359041d65e99535cae23
+- Only 3 correct mathematical-equivalence type labels; Q15/Q16 protected.
