@@ -86,6 +86,18 @@
         </div>
 
 
+
+    <span data-thpt-help-id="HELP-G10-B13-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Nhận diện:** Em lấy trung vị từ dãy chưa sắp, hoặc mẫu có \(n\) lẻ thì bỏ *mọi* số bằng \(Q_2\), thay vì bỏ đúng một **quan sát ở vị trí giữa**.
+
+        **Vì sao sai:** Trung vị và tứ phân vị phụ thuộc **vị trí sau sắp xếp**. Hai số bằng nhau vẫn là hai quan sát và phải được đếm. Đọc lại **Khám phá §1.2.3** (hình tứ phân vị với hai số 3) và **Kiến thức SGK §2.2** (quy tắc chia nửa).
+
+        **Tự sửa:** Viết dãy theo thứ tự không giảm và đánh số vị trí. Nếu \(n\) lẻ, gạch đúng **một vị trí trung tâm**; tìm trung vị hai nửa và kiểm \(Q_1\le Q_2\le Q_3\). Không bỏ các quan sát khác chỉ vì chúng trùng giá trị.
+
+        **Luyện lại:** [Tìm tứ phân vị từ dữ liệu khác](luyen-tap.md?item=THPT-G10-B13-P05) trước khi mở đáp án.
     #### 1.2.4. Giá trị nào xuất hiện phổ biến nhất?
 
     Trong cửa hàng bán áo, chủ cửa hàng quan tâm cỡ áo bán nhiều nhất chứ không phải số trung bình của mã cỡ.
@@ -108,6 +120,18 @@
         </div>
 
 
+
+    <span data-thpt-help-id="HELP-G10-B13-02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Nhận diện:** Em lấy bình quân của các giá trị khác nhau mà quên số lần xuất hiện, hoặc chọn số lớn nhất làm mốt mà chưa kiểm tần số.
+
+        **Vì sao sai:** Số trung bình phải dùng **từng quan sát**, còn mốt phụ thuộc vào **số lần xuất hiện**, không phải giá trị lớn/nhỏ. Xem **Khám phá §1.2.1 và §1.2.4**, rồi các định nghĩa tại **Kiến thức SGK §2.1 và §2.3**.
+
+        **Tự sửa:** Lập hàng \(x_i\cdot m_i\) để tính tổng; mẫu số là \(\sum m_i\), không phải số giá trị khác nhau. Khoanh tần số lớn nhất khi xác định mốt. Với mẫu có số rất lớn, xem thêm trung vị ở §1.2.5 trước khi kết luận về người điển hình.
+
+        **Luyện lại:** [Tính số trung bình bằng bảng tần số](luyen-tap.md?item=THPT-G10-B13-P01) và [so sánh hai nhóm có trung vị bằng nhau](luyen-tap.md?item=THPT-G10-B13-P06).
     #### 1.2.5. Chọn số đại diện cho đúng tình huống
 
     Một khoản thu rất lớn xuất hiện trong mẫu có thể làm số bình quân cao dù phần lớn quan sát còn thấp. Khi muốn tả người 'điển hình', không nên chỉ nhìn một con số.
@@ -237,30 +261,6 @@
     **Kiểm lại:** Thay 100 bằng 200 thì trung bình tăng thêm \(100/5=20\) phút, trung vị vẫn bằng 6. **Không có một số đặc trưng luôn tốt nhất:** phải chọn theo câu hỏi.
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-B13-01" hidden></span>
-
-    ??? tip "4.1. Nhầm vị trí khi tìm trung vị hoặc tứ phân vị"
-
-        **Nhận diện:** Em lấy trung vị từ dãy chưa sắp, hoặc mẫu có \(n\) lẻ thì bỏ *mọi* số bằng \(Q_2\), thay vì bỏ đúng một **quan sát ở vị trí giữa**.
-
-        **Vì sao sai:** Trung vị và tứ phân vị phụ thuộc **vị trí sau sắp xếp**. Hai số bằng nhau vẫn là hai quan sát và phải được đếm. Đọc lại **Khám phá §1.2.3** (hình tứ phân vị với hai số 3) và **Kiến thức SGK §2.2** (quy tắc chia nửa).
-
-        **Tự sửa:** Viết dãy theo thứ tự không giảm và đánh số vị trí. Nếu \(n\) lẻ, gạch đúng **một vị trí trung tâm**; tìm trung vị hai nửa và kiểm \(Q_1\le Q_2\le Q_3\). Không bỏ các quan sát khác chỉ vì chúng trùng giá trị.
-
-        **Luyện lại:** [Tìm tứ phân vị từ dữ liệu khác](luyen-tap.md?item=THPT-G10-B13-P05) trước khi mở đáp án.
-
-    <span data-thpt-help-id="HELP-G10-B13-02" hidden></span>
-
-    ??? tip "4.2. Quên tần số, nhầm số trung bình và mốt"
-
-        **Nhận diện:** Em lấy bình quân của các giá trị khác nhau mà quên số lần xuất hiện, hoặc chọn số lớn nhất làm mốt mà chưa kiểm tần số.
-
-        **Vì sao sai:** Số trung bình phải dùng **từng quan sát**, còn mốt phụ thuộc vào **số lần xuất hiện**, không phải giá trị lớn/nhỏ. Xem **Khám phá §1.2.1 và §1.2.4**, rồi các định nghĩa tại **Kiến thức SGK §2.1 và §2.3**.
-
-        **Tự sửa:** Lập hàng \(x_i\cdot m_i\) để tính tổng; mẫu số là \(\sum m_i\), không phải số giá trị khác nhau. Khoanh tần số lớn nhất khi xác định mốt. Với mẫu có số rất lớn, xem thêm trung vị ở §1.2.5 trước khi kết luận về người điển hình.
-
-        **Luyện lại:** [Tính số trung bình bằng bảng tần số](luyen-tap.md?item=THPT-G10-B13-P01) và [so sánh hai nhóm có trung vị bằng nhau](luyen-tap.md?item=THPT-G10-B13-P06).
 
     **Tiếp tục:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md). Khi tự kiểm tra, em cần làm bài và chọn Final Submit trước khi xem lời giải; kết quả tự đối chiếu không ghi điểm thành thạo.
 
