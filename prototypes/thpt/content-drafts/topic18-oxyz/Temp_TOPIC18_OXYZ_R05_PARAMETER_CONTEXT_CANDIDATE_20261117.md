@@ -1,6 +1,6 @@
 # Chuyên đề 18 — Phương pháp tọa độ trong không gian Oxyz
 
-<!-- TOP18_R05_AUTHORING_M24_ENTRY_MODEL_CANDIDATE; BASE_R04_GIT_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848; DELTA_C_Q03_Q04_Q10; NO_ITEM_BANK_CHANGE; Q01_S1_AND_Q18_VERIFY_PENDING; NOT_CONTENT_READY -->
+<!-- TOP18_R06_ONE_CURRENT_LEARNER_FULL_S1_KNOWLEDGE_20261120; HISTORIC_R05_CANDIDATE_PROVENANCE_RETAINED_IN_GIT; AUTHOR_SELF_VERIFIED_DELTA_C; NO_WEBSITE_RELEASE -->
 Ta bắt đầu từ những câu hỏi gần gũi: một vật chuyển động ra sao, mặt phẳng nghiêng thế nào, và một vùng không gian hình cầu có bao phủ một vị trí không? Tọa độ cho phép chuyển từng câu hỏi hình học thành suy luận có thể kiểm tra bằng phép tính. Mỗi khi dùng công thức, hãy nhận diện đối tượng và điều kiện trước.
 
 <!-- AUTHORING_R04_LEARNER_CANDIDATE; EDITORIAL_R03_BLOB: 66df020c242cbbeb5c4bd50670e245a4d8c7f31f; FROZEN_R02_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd; SGK_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; SGK_CHV_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; NOT_REVIEWED_INDEPENDENTLY; NO_PRIVATE_RD1 -->
@@ -17,7 +17,7 @@ Ta bắt đầu từ những câu hỏi gần gũi: một vật chuyển động
 
 <!-- LESSON_ID: TOP18-M01; OUTCOME_ID: TOP18-O01; S1_ORIGINAL_OUTCOME: G12-CHII-B06-O01 -->
 
-Một vectơ biểu diễn độ dời có hướng từ điểm đầu đến điểm cuối. Ta có thể tịnh tiến mũi tên song song mà không đổi vectơ; vì thế vectơ không gắn với vị trí tuyệt đối. Vectơ-không có độ dài 0 và không xác định một hướng riêng, nên không dùng nó để đo góc.
+Một vectơ biểu diễn độ dời có hướng từ điểm đầu đến điểm cuối. Ta có thể tịnh tiến mũi tên song song mà không đổi vectơ; vì thế vectơ không gắn với vị trí tuyệt đối. Vectơ-không có độ dài 0, không mang một hướng hình học riêng. **Quy ước đúng SGK Toán 12 Bài 6:** góc giữa vectơ-không với một vectơ bất kỳ **có thể lấy giá trị tùy ý** trong \([0^\circ,180^\circ]\); không có góc xác định duy nhất từ hình vẽ, và không chia cho độ dài vectơ-không khi dùng công thức cos.
 
 > **ĐỊNH NGHĨA — Vectơ và vectơ-không**
 >
@@ -135,11 +135,11 @@ Không. 0u là vectơ-không, không có hướng xác định.
 
 <!-- LESSON_ID: TOP18-M05; OUTCOME_ID: TOP18-O05; S1_ORIGINAL_OUTCOME: G12-CHII-B06-O05 -->
 
-Tích vô hướng đo phần 'đi cùng phương' của hai vectơ; nó dương khi góc nhọn, âm khi góc tù và bằng 0 khi vuông góc. Công thức u·v=|u||v|cosφ đúng cho mọi vectơ, nhưng góc φ chỉ được định nghĩa khi hai vectơ khác không.
+Tích vô hướng đo phần 'đi cùng phương' của hai vectơ; với **hai vectơ khác không**, nó dương khi góc nhọn, âm khi góc tù và bằng 0 khi vuông góc. Công thức \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\varphi\) dùng theo định nghĩa khi cả hai khác không; trường hợp có vectơ-không tích vô hướng bằng \(0\) theo quy ước và góc được SGK cho phép chọn tùy ý, không dùng công thức chia để xác định cos.
 
 > **ĐỊNH NGHĨA — Góc và tích vô hướng**
 >
-> Hai vectơ khác không có tích vô hướng \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\); tích bằng 0 khi chúng vuông góc. Không định nghĩa góc với vectơ-không.
+> Hai vectơ khác không có tích vô hướng \(\vec u\cdot\vec v=|\vec u||\vec v|\cos\theta\); tích bằng 0 khi chúng vuông góc. Khi có vectơ-không, SGK quy ước góc được phép nhận giá trị tùy ý từ \(0^\circ\) đến \(180^\circ\); **không có góc xác định duy nhất** để suy ra từ tích vô hướng. \(\vec u\cdot\vec0=0\) nhưng \(\frac{\vec u\cdot\vec0}{|\vec u||\vec0|}\) không xác định.
 
 Từ cách tính tích vô hướng theo góc, ta có thể suy ra các quy tắc biến đổi đại số. Khác với phép nhân hai số, tích vô hướng của hai vectơ cho ra **một số thực**, nên kết quả không phải một vectơ. Những tính chất dưới đây giúp khai triển biểu thức có tổng nhiều lực hoặc độ dời, giống việc dùng phân phối trong đại số.
 
@@ -220,6 +220,14 @@ Ba trục Ox,Oy,Oz vuông góc đôi một giúp định vị một điểm tron
 >
 > Trong hệ trực chuẩn Oxyz, điểm thuộc (Oxy) khi z=0, thuộc (Oxz) khi y=0, thuộc (Oyz) khi x=0.
 
+
+**Vì sao bộ ba tọa độ là duy nhất?** Trên ba trục vuông góc \(Ox,Oy,Oz\), đặt \(\vec i,\vec j,\vec k\) là ba vectơ **đơn vị** hướng theo các chiều dương, nghĩa là \(|\vec i|=|\vec j|=|\vec k|=1\) và chúng đôi một vuông góc. Mọi vectơ trong không gian có một biểu diễn **duy nhất**:
+\[
+\vec u=x\vec i+y\vec j+z\vec k,\qquad \vec u=(x;y;z).
+\]
+Nếu hai biểu diễn có hệ số khác nhau nhưng cùng là \(\vec u\), trừ hai biểu diễn được vectơ-không; xét thành phần theo từng trục vuông góc buộc cả ba hệ số chênh lệch bằng \(0\). Với điểm \(M(x;y;z)\), \(\overrightarrow{OM}=x\vec i+y\vec j+z\vec k\). Không coi ba vectơ đơn vị là **ba điểm** hoặc đo ba trục theo góc xiên trên trang sách.
+
+**Ví dụ minh họa.** Cho \(\vec u=2\vec i-3\vec j+4\vec k\). Khi đó \(\vec u=(2;-3;4)\), \(|\vec u|=\sqrt{4+9+16}=\sqrt{29}\). Điểm \(M\) có \(\overrightarrow{OM}=\vec u\) sẽ có tọa độ \(M(2;-3;4)\). Nếu bỏ dấu trừ trước \(\vec j\), em chuyển điểm sang phía đối của trục \(Oy\); đây là lỗi **hướng**, không phải lỗi độ dài.
 
 **Ví dụ**
 
@@ -403,6 +411,20 @@ Trung điểm và trọng tâm của tam giác là trung bình *tọa độ*, kh
 >
 > Trung điểm A,B có tọa độ \(((x_A+x_B)/2;(y_A+y_B)/2;(z_A+z_B)/2)\); trọng tâm tam giác là trung bình tọa độ ba đỉnh.
 
+
+Trong không gian còn có **trọng tâm tứ diện**. Với tứ diện \(ABCD\), gọi \(I\) là điểm cân bằng của cả **bốn đỉnh**, tương đương
+\[
+\overrightarrow{IA}+\overrightarrow{IB}+\overrightarrow{IC}+\overrightarrow{ID}=\vec0.
+\]
+Nếu gốc tọa độ là \(O\), cộng các vectơ vị trí và chia đều cho bốn đỉnh cho:
+\[
+I\left(\frac{x_A+x_B+x_C+x_D}{4};\ 
+\frac{y_A+y_B+y_C+y_D}{4};\
+\frac{z_A+z_B+z_C+z_D}{4}\right).
+\]
+Không chia \(3\) như trọng tâm **tam giác**; điều kiện bốn điểm tạo thành một tứ diện giúp xác định đối tượng hình học. Nếu \(G\) là trọng tâm mặt \(BCD\), ta có \(\overrightarrow{AI}=\frac34\overrightarrow{AG}\) vì \(I\) kết hợp vị trí \(A\) với trung bình của ba đỉnh còn lại.
+
+**Ví dụ minh họa.** Xét \(A(0;0;0)\), \(B(4;0;0)\), \(C(0;4;0)\), \(D(0;0;4)\). Trung bình bốn bộ tọa độ cho \(I(1;1;1)\). Mặt \(BCD\) có trọng tâm \(G(4/3;4/3;4/3)\), nên \(\overrightarrow{AI}=(1;1;1)=\frac34\overrightarrow{AG}\). Đây là phép kiểm từ *hai cách tìm trọng tâm*; không đo bằng hình chiếu phối cảnh.
 
 **Ví dụ**
 
@@ -601,6 +623,14 @@ Ba điểm phân biệt chưa đủ xác định một mặt: chúng phải **kh
 > Ba điểm phân biệt chưa đủ xác định một mặt: chúng phải **không thẳng hàng**.
 
 
+**Phương trình mặt phẳng theo đoạn chắn.** Nếu mặt phẳng cắt ba trục tọa độ lần lượt tại \(A(a;0;0)\), \(B(0;b;0)\), \(C(0;0;c)\), với **\(abc\ne0\)**, thì ba điểm này không thẳng hàng. Phương trình đi qua cả ba điểm phải thỏa \(x=a\) tại trục \(Ox\), \(y=b\) tại trục \(Oy\) và \(z=c\) tại trục \(Oz\), dẫn tới:
+\[
+\frac{x}{a}+\frac{y}{b}+\frac{z}{c}=1.
+\]
+Các số \(a,b,c\) là **tọa độ đoạn chắn có dấu**, không nhất thiết dương. Nếu một đoạn chắn bằng \(0\) hoặc mặt phẳng song song một trục, không được chia cho \(0\); hãy quay lại dạng điểm–pháp tuyến hoặc phương trình tổng quát.
+
+**Ví dụ minh họa.** Mặt phẳng qua \(A(2;0;0)\), \(B(0;-3;0)\), \(C(0;0;6)\) có \(\frac{x}{2}-\frac{y}{3}+\frac{z}{6}=1\). Nhân \(6\) thu \(3x-2y+z-6=0\). Kiểm riêng từng giao điểm: \(A\) cho \(6-6=0\), \(B\) cho \(6-6=0\), \(C\) cho \(6-6=0\). Nếu nhầm \(B\) thành \((0;3;0)\), dấu của hệ số \(y\) sẽ sai.
+
 **Ví dụ**
 
 **Đề bài:** Qua A=(1;0;0), B=(0;1;0), C=(0;0;1), lập phương trình mặt.
@@ -629,6 +659,15 @@ Khi mặt phẳng chứa một đường hoặc trục, mọi vectơ chỉ phư�
 >
 > Khi mặt phẳng chứa một đường hoặc trục, mọi vectơ chỉ phương của đường ấy phải vuông góc với pháp tuyến của mặt.
 
+
+**Mặt phẳng trung trực của một đoạn thẳng.** Tập hợp điểm \(X\) cách đều hai điểm **phân biệt** \(A,B\) trong không gian là mặt phẳng đi qua **trung điểm** \(M\) của \(AB\) và có pháp tuyến \(\overrightarrow{AB}\). Vì:
+\[
+XA^2-XB^2=(\overrightarrow{XA}-\overrightarrow{XB})\cdot(\overrightarrow{XA}+\overrightarrow{XB})
+=2\overrightarrow{AB}\cdot\overrightarrow{MX},
+\]
+nên \(XA=XB\Longleftrightarrow\overrightarrow{AB}\cdot\overrightarrow{MX}=0\). Đây là cách dựng từ điều kiện **bằng khoảng cách**, không cần biết trước phương trình một mặt phẳng. Nếu \(A=B\), mọi điểm đều cách đều A và B nên **không** có một mặt trung trực xác định duy nhất.
+
+**Ví dụ minh họa.** Cho \(A(0;0;0)\), \(B(2;4;0)\). Trung điểm \(M(1;2;0)\) và một pháp tuyến \(\overrightarrow{AB}=(2;4;0)\) cho phương trình \(2(x-1)+4(y-2)=0\), tức \(x+2y-5=0\). Kiểm điểm \(X(5;0;0)\) thuộc mặt: \(5-5=0\), đồng thời \(XA=5\) và \(XB=\sqrt{(5-2)^2+(0-4)^2}=5\).
 
 **Ví dụ**
 
@@ -1233,6 +1272,14 @@ Giao của mặt cầu bán kính R với mặt phẳng phụ thuộc khoảng c
 >
 > Giao của mặt cầu bán kính R với mặt phẳng phụ thuộc khoảng cách d từ tâm đến mặt: d>R không có giao, d=R tiếp xúc một điểm, d<R cắt theo đường tròn bán kính √(R²−d²).
 
+
+**Lập phương trình tiếp diện tại một điểm của mặt cầu.** Cho mặt cầu tâm \(I(a;b;c)\), bán kính \(R>0\), điểm \(P(x_0;y_0;z_0)\) đã **kiểm tra thuộc mặt cầu**, nghĩa là \(IP=R\). Tại tiếp điểm \(P\), bán kính \(IP\) vuông góc với mọi hướng trên mặt phẳng tiếp xúc, nên \(\overrightarrow{IP}\ne\vec0\) chính là một vectơ pháp tuyến. Dùng điểm–pháp tuyến ta có:
+\[
+(x_0-a)(x-x_0)+(y_0-b)(y-y_0)+(z_0-c)(z-z_0)=0.
+\]
+Nếu \(P\) không nằm trên mặt cầu, mặt qua \(P\) với pháp tuyến \(IP\) **không phải tiếp diện tại P**. Cũng không nhầm mặt tiếp xúc với đường tròn thiết diện có vô số điểm: tiếp diện chỉ có **một điểm chung** với mặt cầu.
+
+**Ví dụ minh họa.** Với mặt cầu tâm \(I(1;2;3)\), bán kính \(4\), xét \(P(5;2;3)\). Ta có \(IP=\sqrt{4^2}=4\), nên \(P\) thuộc mặt cầu; \(\overrightarrow{IP}=(4;0;0)\). Tiếp diện qua P là \(4(x-5)=0\), tức \(x=5\). Khoảng cách từ tâm I đến mặt \(x=5\) bằng \(|1-5|=4=R\), đúng tiêu chuẩn tiếp xúc. Nếu điểm chọn là \(Q(6;2;3)\), \(IQ=5\ne R\), không được gọi mặt qua Q là tiếp diện tại Q.
 
 **Ví dụ**
 
