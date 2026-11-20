@@ -1,11 +1,11 @@
 # CĐ20 R11 · A1–A7 / Q01–Q18 SOURCE-EQUIVALENT technical evidence · 16/11/2026
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: b737c1b4e2bd92bba662a7c999e804866d5a4baa
-CURRENT_Q18_RECEIPT_BLOB: a5c84e2df8cccdac7f021d2540ec77637d6099cd
+SOURCE_BLOB: a336816eb1935c739bd1f128bd81de7b510d0060
+CURRENT_Q18_RECEIPT_BLOB: 3e04e984cbe9e2f23b95c0f23a1f698489367ebe
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md
 AFFECTED_SCOPE_HISTORICAL_Q18_BLOB: 9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d
 CURRENT_Q15_MATRIX_BLOB: 9d89151085df7bd01df86fc304675bf4d1f3a5fb
@@ -92,3 +92,8 @@ RELEASE_AUTHORIZATION: NO
 
 
 **20/11 G10 S1 B26 mandatory properties Delta C:** TOP20-O02 now has `0≤P(A)≤1`, `P(Ω)=1`, `P(∅)=0`, counting derivation, source `b737c1b4e2bd92bba662a7c999e804866d5a4baa`, Q18 `a5c84e2df8cccdac7f021d2540ec77637d6099cd`. 6/6 targeted tests PASS; same original 17 outcomes/canonical bank, CONTENT_READY preserved, no new independent PASS.
+
+
+## 20/11 full S1 CĐ20 Knowledge author-self revision
+
+Sole learner `a336816eb1935c739bd1f128bd81de7b510d0060`, current Q18 `3e04e984cbe9e2f23b95c0f23a1f698489367ebe`; 9 Knowledge subsections hosting 17 outcome-level First Try and 17 Practice, 37 unique public canonical (17+17+3 Written), 11 question-only Selfcheck replays. Five richer conceptual sections show equal-probability labels, without-replacement combinatorics, independence versus exclusion, union overcount, complement with/without replacement. All Practice/Selfcheck byte-preserved and original 2 SVG/RD1 custody unchanged. Existing Q15 matrix preserves item/outcome/role/version identities; old line-number references must be reconciled against current learner. This is author self QA, not new NotebookLM or release.
