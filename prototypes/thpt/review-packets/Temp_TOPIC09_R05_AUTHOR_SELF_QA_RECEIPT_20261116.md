@@ -5,12 +5,12 @@
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 CONTENT_REVISION: R05
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-SOURCE_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
-ACADEMIC_SOURCE_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
+SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
+ACADEMIC_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -30,7 +30,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC09_R05_20261118_SCOPED_FORMAL_KNOWLEDGE_fbd59ed68d26558cad85204b5937370822430364
+AUTHOR_SIGNOFF: TOPIC09_B31_B33_S1_FULL_KNOWLEDGE_Q18_e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_READINESS: NOT_CLAIMED
@@ -124,6 +124,16 @@ Kết nối tri thức SGK Toán 11 tập Hai Chương IX (B31 trang in 81–87,
 
 
 ## 20/11/2026 — Targeted S1 mandatory statement restoration TOP09-O19/O22
-- CURRENT_LEARNER_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15; prior source a414d05a4039c6988f533978870f4bfe35ece71a immutable, historic author-Q18 checks unaffected outside this localized content.
+- CURRENT_LEARNER_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7; prior source a414d05a4039c6988f533978870f4bfe35ece71a immutable, historic author-Q18 checks unaffected outside this localized content.
 - S1 scope: S1 G11 T2 B32 pp91–93: (tan u)'=u'/cos²u when cos u≠0, (cot u)'=−u'/sin²u when sin u≠0; (ln|g|)'=g'/g when g≠0, separate ln g domain g>0.
 - Reviewed student-facing Knowledge additions, derivation and all guards using direct derivative algebra, interval definitions; example stems/solutions and Practice/Self-check suffix byte-identical. This is DELTA_C_ACADEMIC_MATERIAL with targeted Q01/Q03/PED author mathematical self-verification, **not a new independent NotebookLM verdict**. Other S1 SGK outcomes in 22 Topic corpus remain PENDING. No RD1/Final Submit/Mastery/RELEASE.
+
+
+## 20/11/2026 — Hoàn thiện SGK S1 B31–B33 trên bản Kiến thức canonical (Q18 AUTHOR_SELF_VERIFIED)
+
+- **Nguồn đã đối chiếu:** SGK KNTT Toán 11 Tập Hai, Chương IX, B31 trang in 81–87, B32 88–94, B33 95–96; đối chiếu toàn văn trích xuất tại `https://thuvienhoclieu.com/wp-content/uploads/2026/05/thuvienhoclieu.com-SGK-Toan-11-tu-nam-2026-Tap-2.pdf` với receipt SGK/SBT nguồn lịch sử. Bản trích PDF đã đọc được các định nghĩa/định lý/công thức và điều kiện; ảnh screenshot công cụ web không tải được nên không tự nhận đã QA ảnh bản in trong lượt này. Các trang in là số từ chính sách; không dùng PDF index suy đoán.
+- **Cùng một nguồn học sinh hiện hành:** e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7 (trước sửa 509fe1bdbf64b6a01ee00532d59eff943110df15), không có file giáo trình thứ hai. Chỉ bổ sung/giải thích trong Kiến thức tại `TOP09-O04/O07/O10/O16/O20/O21/O29`. Phần Luyện tập/Tự kiểm tra sau heading `# Luyện tập` **byte-exact** so với nguồn trước; 32/32 lesson–outcome, 108 canonical ID, 14 Written, 32 public selfcheck, 4 SVG và reveal blocks không đổi. Các nhận định QA số lượng trong lịch sử không được tự xem là kiểm toán nội dung mới.
+- **Đối chiếu phát biểu S1:** B31 định nghĩa đạo hàm tại điểm và trên khoảng, hệ số góc tiếp tuyến, phương trình tiếp tuyến, tốc độ biến thiên tức thời và cường độ dòng điện; B32 định nghĩa hàm hợp và miền, quy tắc tổng/hiệu/tích/thương/hợp, đạo hàm lũy thừa/căn/lượng giác/mũ/logarit và giới hạn nền; B33 đạo hàm cấp hai, gia tốc trung bình/tức thời. Đối chiếu 32 mục Knowledge hiện có; các kết quả còn đúng/đủ giữ nguyên, không sinh outcome mới, vi phân O32 vẫn là Topic extension.
+- **Tự kiểm toán toán:** (I(t)=(t^2+3t)'=2t+3Rightarrow I(2)=7) A; với (y=\sqrt{1-x^2}), miền \([-1,1]\) và đạo hàm \(-x/\sqrt{1-x^2}\) trên \((-1,1)\); (\lim_{h\to0}(e^h-1)/h=1), (\lim_{h\to0}\ln(1+h)/h=1), (\lim_{h\to0}(1+h)^{1/h}=e); ( (\ln x)'=1/x) chỉ với \(x>0\). Các công thức đạo hàm bổ sung đã đối chiếu đại số/SymPy và điều kiện miền. Hệ số góc tiếp tuyến (k=\tan\alpha=f'(a)\) cho tiếp tuyến không thẳng đứng; độ là đơn vị góc, không phải hệ số góc. Gia tốc (a=v'=s''), m/s².
+- **PED/Q03–Q14:** giải thích nguyên nhân xuất hiện công thức trước biểu thức chính, ví dụ về dòng điện và hàm hợp, làm rõ từng điều kiện tại biên; giữ 32 Ví dụ, 32 Vận dụng/Đối chiếu và D6 gốc. Chưa quan sát HTML production; tương tác vẫn thuộc RELEASE.
+- **Q15/Q16:** mọi câu/đáp án/lời giải/rubric và tài liệu kín bất biến; chỉ tự kiểm công khai `CLIENT_SELF_CHECK_NO_MASTERY`, không AI/hint/key trước Final Submit trên website khi RELEASE tích hợp. **AUTHOR_SELF_VERIFIED affected scope, P0=0; P1=0; không tuyên bố NotebookLM độc lập hay RELEASE PASS.**
