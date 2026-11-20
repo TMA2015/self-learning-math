@@ -3,21 +3,21 @@
 **Gói học liệu tự học độc lập** theo bản danh mục PLAN22-12 lịch sử, đúng ba trang Kiến thức/Luyện tập/Tự kiểm tra. Không merge/deploy. Q18 là tác giả tự kiểm thực chất, KHÔNG phải NotebookLM độc lập đã review CĐ12.
 
 PACKET_ID: THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R01
-CONTENT_REVISION: R04
+CONTENT_REVISION: R04_FULL_S1_20261120
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3
+ACADEMIC_SOURCE_BLOB: 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 5770d528643e26de2ba1bea6d90e33086cc59748
+REVIEW_RECEIPT_BLOB: a692d47dd544604d404df0635986bee9c5251394
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 0082a9f7a316ff598f6aa39d41297570e3e9fc26
+AUTHOR_A1_A7_BLOB: 8067282a595a93ce77b9de83185f2bc3b35a6866
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 0082a9f7a316ff598f6aa39d41297570e3e9fc26
+AUTHOR_METADATA_BLOB: 8067282a595a93ce77b9de83185f2bc3b35a6866
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
@@ -288,3 +288,8 @@ Canonical item `THPT-G10-CHIII-W05` retains SGK item identity with original-owne
 
 ## 20/11/2026 current canonical V2
 - Learner e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3, Q18 5770d528643e26de2ba1bea6d90e33086cc59748, A1 0082a9f7a316ff598f6aa39d41297570e3e9fc26; 12 label prefixes only, all maths and canonical item source preserved.
+
+
+## 20/11 current AUTHORING B05/B06 Knowledge
+
+One source 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e, signed self Q18 a692d47dd544604d404df0635986bee9c5251394, A1 8067282a595a93ce77b9de83185f2bc3b35a6866. 12 complete outcomes, special-angle trig values with valid domains, full conditions of sin/cos rules, SSA DEG/inverse sine and geometry. All 34 public canonical IDs (18 original SGK +16 Topic), 6 Written and 12 public question-only selfchecks unchanged; original 2 SVG unchanged. No new RD1/Mastery/website release.
