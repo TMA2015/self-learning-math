@@ -139,14 +139,29 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     assert(r02.includes(marker),"B23 R02 source-lock/owner defect ledger missing "+marker);
    }
   }
+  const r03file=path.join(root,"prototypes/thpt/ux795/G10_CHVIII_B23_OWNER_P2_GOLDEN_ROUTE_Q18_R03_20261120.md");
+  if(fs.existsSync(r03file)){
+   assert(fs.existsSync(r02file),"B23 R03 must extend the existing immutable R02");
+   const r03=fs.readFileSync(r03file,"utf8");
+   const get=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(get("R03_PREVIOUS_SOURCE_BLOB"),current,
+    "B23 R03 source must extend exact R02 published blob");
+   current=get("R03_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==get("R03_PREVIOUS_SOURCE_BLOB"),
+    "B23 owner P2 R03 requires changed source hash, never silently rewrite R02");
+   for(const phrase of ["G10-CHVIII-B23-OWNER-P2-GOLDEN-ROUTE-R03-20261120",
+    "B23-GOLDEN-03..07","DELTA_A_UI","OWNER_P2_FAIL_RECEIVED"]){
+    assert(r03.includes(phrase),"B23 R03 Q18 chain lacks "+phrase);
+   }
+  }
   const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-23.md"));
   const gitBlob=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
-  assert.equal(gitBlob,current,"B23 current canonical source must match chained signed R01 to R02 SHA");
+  assert.equal(gitBlob,current,"B23 current canonical source must match immutable chained signed R01 to R03 SHA");
 
   // B23 owner P2 regression source checks apply only when a signed R02 exists.
   // The actual computed-style and click-to-open behavior were independently
   // proven on this exact B23 source in scoped Chromium run #44707796075.
-  if(fs.existsSync(r02file)){
+  if(fs.existsSync(r02file)&&!fs.existsSync(r03file)){
    const x=lesson.toString("utf8");
    const count=re=>[...x.matchAll(re)].length;
    assert.equal(count(/^\s+\?\?\? question "Đối chiếu"$/gm),4,
