@@ -24,7 +24,7 @@
   if(!/\/thpt-preview\/sgk\/chuong-viii\/bai-23\/?$/.test(location.pathname))return;
   const article=document.querySelector(".md-content__inner");
   if(!article||article.dataset.g10B23Golden==="true"||
-    !article.querySelector('[data-thpt-first-try-id="THPT-G10-CHVIII-TRY01"]'))return;
+    !article.querySelector('.thpt-r4-screen[data-b23-owner-p2-ux="r03"]'))return;
   const tab=article.querySelector(":scope > .tabbed-set");
   const labels=[...(tab?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
   const panes=[...(tab?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
