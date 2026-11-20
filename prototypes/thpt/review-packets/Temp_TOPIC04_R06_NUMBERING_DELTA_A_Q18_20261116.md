@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 8608179c09dee12c6088c219721f095aa9406147
-ACADEMIC_SOURCE_BLOB: 8608179c09dee12c6088c219721f095aa9406147
+SOURCE_BLOB: 2444022a5fec0f6b94de4002d8f08363e3b82453
+ACADEMIC_SOURCE_BLOB: 2444022a5fec0f6b94de4002d8f08363e3b82453
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R05_STUDENT_FIRST_75_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: c948ad9957bbcd55b416ea7ddce96a6dcdf0d799
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -56,3 +56,11 @@ ASSESSMENT_Q16: 18 PUBLIC reuse selfcheck questions, not hidden independent Read
 
 <!-- TOP04_OWNER_EDITORIAL_DELTA_A_20261119 -->
 Owner ΔA 19/11: 15 phát biểu mũ/logarit/hàm số đã có trong văn xuôi được gắn nhãn loại phát biểu dễ nhận biết; 3 khối formal cũ giữ nguyên; bỏ 5 dòng `Khám phá kiến thức` lặp ở phần Knowledge. Learner `bb4da8a9c17c4b5051043043d76682144e5414c3` → `8608179c09dee12c6088c219721f095aa9406147`. Kiểm đảo ngược các prefix và 5 nhãn chỉ ra nội dung toán, công thức, điều kiện, 18 Ví dụ/Đề/Lời giải, 18 Vận dụng/Đối chiếu, mọi item/figure/selfcheck/rubric không đổi. Đây là `DELTA_A_UI`, không bổ sung phát biểu học thuật mới; source CONTENT_READY vẫn hợp lệ theo owner, không full NotebookLM review hoặc RELEASE.
+
+
+<!-- TOP04_S1_G11_T2_B19_LOG10_LN_E_DELTA_C_20261120 -->
+### 20/11/2026 · S1 Q01/Q03/Q10/Q11 mandatory concepts · G11 Tập 2 B19 trang in 12–13
+
+**S1 trực tiếp:** SGK KNTT Toán 11 Tập hai B19 pp12–13 có mục riêng **Lôgarit thập phân**, **Lôgarit tự nhiên** và giới hạn xác định **số e**. https://thuvienhoclieu.com/wp-content/uploads/2026/05/thuvienhoclieu.com-SGK-Toan-11-tu-nam-2026-Tap-2.pdf . Learner trước `8608179c09dee12c6088c219721f095aa9406147` dùng `ln` trong đổi cơ số mà chưa có định nghĩa `ln x`, `log x`, `e`; đã bổ sung trên chính learner `2444022a5fec0f6b94de4002d8f08363e3b82453` tại TOP04-M08/O08 trước công thức đổi cơ số và Ví dụ cũ, với `e=lim_(t→∞)(1+1/t)^t≈2.71828`, `log M=log_10 M`, `ln M=log_e M`, M>0, `ln e=log 10=1`; kèm mô hình lãi kép liên tục để giải thích nguồn gốc cơ số e. Không thay bất cứ canonical item/answer/solution/rubric/SVG.
+
+**Q18 affected author math/PED 7/7 PASS:** e>1, giá trị e≈2.71828, tính log100=2 và ln(e²)=2, đổi cơ số ln8/ln4=3/2, đặt kiến thức mới trước công thức/VD, cân bằng MathJax, ID giữ nguyên và đảo ngược khối mới khôi phục nguyên văn source trước. `DELTA_C_ACADEMIC_MATERIAL`; không giả định independent NotebookLM PASS, giữ source CONTENT_READY theo owner, không site/release.
