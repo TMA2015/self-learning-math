@@ -3,17 +3,17 @@
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 860186f46c99a3f4c442df113e9d9e5e6ffbd16f
+AUTHOR_METADATA_BLOB: 92f678c6b9959ab729d1935e3d4472775f778ba5
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
+ACADEMIC_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 803b75011bace6e9b70fd8853053af764fcc6e74
+REVIEW_RECEIPT_BLOB: 4e4b095e9cb39c99a87bc350fdd7812070edf81d
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -471,7 +471,13 @@ R01 historical canonical SGK source/receipt and R03 learner candidate immutable.
 
 
 ## 20/11/2026 — V2 active source lock / new S1 TOP09-O19/O22
-- CURRENT_SOURCE_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
+- CURRENT_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
 - CURRENT_Q18_BLOB: 803b75011bace6e9b70fd8853053af764fcc6e74
 - CURRENT_A1_BLOB: 860186f46c99a3f4c442df113e9d9e5e6ffbd16f
 - Original question/answer/rubric/SVG/RD1 hashes preserved; no website release authorization.
+
+
+## 20/11/2026 — Owner-requested full B31–B33 S1 knowledge closure
+
+- Sole current learner source e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7; signed author self-Q18 4e4b095e9cb39c99a87bc350fdd7812070edf81d; author metadata 92f678c6b9959ab729d1935e3d4472775f778ba5. Seven related outcomes O04/O07/O10/O16/O20/O21/O29 enriched under DELTA_C_ACADEMIC_MATERIAL. One original bank (71 SGK+37 Topic), original 32 outcomes, 14 Written rubrics, four SVG, 32 voluntary public selfchecks, no private RD1 or official Topic Readiness. Practice/Selfcheck source segments unchanged from previous 509fe1bdbf64b6a01ee00532d59eff943110df15.
+- No added learner/source duplicate, new item key, new rubric or Mastery evidence. Current source reviewed against SGK Toán 11 Tập Hai B31–B33 printed 81–96 with extraction + original source receipt; limited PDF screenshot availability documented in Q18. Same one Topic V2, no website/release action; AP/R/P2 not claimed.
