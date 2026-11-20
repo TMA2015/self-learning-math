@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
-ACADEMIC_SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
+SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
+ACADEMIC_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R05_FULL_LEARNER_VISIBLE_31_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: 05e9675a7dca802aa9540a96a46d76d013055d8b
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -81,3 +81,11 @@ Owner ΔA 19/11: 9 phát biểu phương pháp/điều kiện phương trình đ
 ## 20/11/2026 · Owner editorial ΔA TOP03-O08/O09/O10
 - Source learner `488cee3670af82ed9fd1f457d23a489e7ba8d063` replaces source SHA `8b0e5be33b42d8b1d3e743bb2502501789333075` only by three formal prefixes `ĐIỀU KIỆN —`→`TÍNH CHẤT —`: the actual statements are mathematical equivalences sqrt(A)=B iff B≥0 and A=B², and sqrt(A)=sqrt(B) iff A=B≥0. Keep exact conditions in the body, no formula, result, Practice item/stem/answer/rubric or selfcheck changed.
 - Q03/PED author verified on exact source, no broader independent NotebookLM or release claim.
+
+
+## 20/11/2026 — Hoàn thiện trang Kiến thức CĐ03 theo SGK KNTT B18
+- Dựa trên toàn bộ 12 mục hiện hành và SGK Toán 10 Tập Hai Bài 18, trang in 24–26: hai dạng trọng tâm `√A=√B` và `√A=C`, điều kiện xác định, phương pháp bình phương và thử nghiệm gốc đều đã có trong §§3.1–3.4. Đối chiếu §1.4: cần phát biểu rõ `ax²+bx+c=0` với `a≠0`; đã bổ sung định nghĩa, ba trường hợp Δ, cách xử lý a=0 và phép kiểm nghiệm gốc khi quy về bậc hai.
+- §3 mở đầu diễn giải bằng lời thế nào là phương trình chứa căn; §3.1 tách bản chất `U=V ⇒ U²=V²`, chiều đảo không giữ dấu; §§3.2/3.3 tiếp tục hai dạng SGK; không thêm bài học mới. Chín chỉnh sửa lời giảng: bỏ các câu dành cho người viết như “Core B18”, “nguồn SGK”, “tự biên soạn” khỏi trang học sinh, trình bày rõ tính kế tiếp và phạm vi phương pháp.
+- Tự kiểm đúng toán: Δ của 2x²−3x−2=0 là 25, nghiệm 2 và −1/2; với √(x+4)=x−2 ứng viên 0,5 chỉ nhận 5; với √(x²+4x+5)=√(x+5) nghiệm −3,0 thỏa điều kiện; √(x+6)=x ứng viên 3,−2 chỉ nhận 3; đặt t=x²≥0 lọc đúng; ẩn có đơn vị dương trong bài toán mô hình. 6/6 kiểm tra chính và 12/12 mục có Ví dụ, Vận dụng cùng Đối chiếu tự mở.
+- Số mục 12 giữ nguyên, ba trang Kiến thức/Luyện tập/Tự kiểm tra giữ nguyên; toàn bộ hai trang sau giữ nguyên byte. 43/43 cặp details khớp. Không thêm ITEM_ID, không sửa rubric/đáp án, không khẳng định full 22 topic hay NotebookLM verdict mới.
+- CURRENT_LEARNER_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae; prior 488cee3670af82ed9fd1f457d23a489e7ba8d063 preserved historically.
