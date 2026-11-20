@@ -44,7 +44,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(old.status,0,"Original published Git source inaccessible "+rel+" "+old.stderr);
  const baseline=old.stdout;
  assert.equal(blob(baseline),row.baseline,name+" published source baseline SHA mismatch");
- const expected=(n===19||n===20||n===21)?candidateG10KnowledgeBlob(n):row.candidate;
+ const expected=(n===19||n===20||n===21||n===22)?candidateG10KnowledgeBlob(n):row.candidate;
  assert.equal(blob(bytes),expected,name+" candidate Markdown differs from signed latest receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,name+" canonical current source router not signed");
  if(n===19){
@@ -82,6 +82,15 @@ for(const [lessonStr,info]of Object.entries(specs)){
   assert.equal(f02("CANDIDATE_B21_SOURCE_BLOB"),expected,
    "B21 canonical source must match exact R02 source SHA");
  }
+ if(n===22){
+  const latest=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVII_B22_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+  const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("PREVIOUS_B22_SOURCE_BLOB"),row.candidate,
+   "B22 must preserve signed original ChVII S1 source");
+  assert.equal(field("CANDIDATE_B22_SOURCE_BLOB"),expected,
+   "B22 authored Git blob must match signed owner Q18 receipt");
+ }
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
  assert.equal(row.helps,info.helps,name+" 33 HELP source receipt");
  assert.equal(row.examples,info.examples,name+" example count source receipt");
@@ -108,7 +117,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
  assert.equal(ids(d+knowledge+examples,"data-thpt-help-id").length,0,name+" HELP outside remediation");
  assert.equal((s.match(/<figure/g)||[]).length,info.figures,name+" original D5 figures lost");
  assert.equal([...examples.matchAll(/^    ### /gm)].length,info.examples,name+" worked example sections incorrect");
- const solutions=(n===19||n===20||n===21)?
+ const solutions=(n===19||n===20||n===21||n===22)?
   [...examples.matchAll(/<div class="thpt-g10-example-solution"/g)].length:
   [...examples.matchAll(/\*\*Lời giải\.\*\*/g)].length;
  assert.equal(solutions,info.examples,
@@ -185,6 +194,39 @@ for(const [lessonStr,info]of Object.entries(specs)){
   for(const token of ["đường biên","hoàn thành bình phương","đường trung trực",
     "M thuộc đường tròn","khoảng cách ngắn nhất"])
    assert(s.includes(token),"B21 full learner explanation missing: "+token);
+ }
+ if(n===22){
+  assert.equal((examples.match(/<strong>Lời giải\.<\/strong>/g)||[]).length,3,
+   "B22 exact three Golden neutral worked-solution boxes must contain Lời giải");
+  assert.equal((examples.match(/\*\*Phân tích:/g)||[]).length,3,
+   "B22 each of three worked examples needs true method analysis");
+  assert.equal((examples.match(/\*\*Kiểm lại:/g)||[]).length,3,
+   "B22 independent math self-check must follow each example");
+  assert.equal((knowledge.match(/thpt-r4-knowledge-conclusion thpt-r4-concept-card/g)||[]).length,3,
+   "B22 three geometric conic definitions need semantic Golden concept cards");
+  assert.equal((knowledge.match(/thpt-r4-knowledge-conclusion thpt-r4-rule-card/g)||[]).length,4,
+   "B22 equation/method/application conditional rules require exactly four roles");
+  assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,8,
+   "B22 eight original learner questions must all be Vận dụng");
+  assert.equal((rem.match(/^    \?\?\? tip "4\.(?:[1-9]|10)\. /gm)||[]).length,10,
+   "B22 all ten original HELP need distinct named 4.x cases");
+  assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Bản chất trước công thức:|Hướng dẫn đọc hình:|Tự khắc phục theo năm bước|Tại sao là D2 mới/.test(s),
+   "B22 student source has obsolete machine labels or redundant D6 lists");
+  assert.equal((d.match(/<figure class="thpt-r4-plot/g)||[]).length,3,
+   "B22 exact three original figures must be introduced before figure reading in Discovery");
+  assert(!knowledge.includes('<figure class="thpt-r4-plot'),
+   "B22 detached figures may not stay in Knowledge tab");
+  for(const token of ["THPT_G10_CHVII_ELLIPSE_TRANSFER_D5_R00.svg",
+    "THPT_G10_CHVII_HYPERBOLA_TRANSFER_D5_R00.svg",
+    "G10_B22_PARABOLA_FOCUS_R02.svg"])
+    assert(d.includes(token),"B22 original figure missing from Discovery: "+token);
+  for(const x of ["mái rộng 12 m","rộng 30 m","rộng 20 m",
+    "B nhận trước","A đến trước","x≤−20","không xác định"])
+    assert(d.includes(x),"B22 transfer explanation missing guarded separate data: "+x);
+  assert((s.match(/^    \\\[$/gm)||[]).length===0,
+   "B22 original inline math does not need raw HTML display wrappers");
+  assert(!examples.includes('<div class="arithmatex">'),
+   "B22 must avoid the B21 raw nested HTML MathJax delimiter defect");
  }
  assert(!/Ví dụ do dự án biên soạn|Ví dụ tự biên soạn|Lưu ý về phạm vi Core|outcome Core|RD1/.test(s),
   name+" review metadata exposed in learner-facing source");
