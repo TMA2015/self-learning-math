@@ -12,7 +12,28 @@ const root=path.resolve(__dirname,"..");
 const LESSON=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\/bai-[1-9]\d*\.md$/;
 const RECEIPT=/^prototypes\/thpt\/ux795\/[A-Za-z0-9_.-]+\.md$/;
 const tokenSet=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(x=>x[1]).sort();
-const firstAnswers=s=>[...s.matchAll(/<div class="thpt-r4-first-try-answer">[\s\S]*?<\/div>/g)].map(x=>x[0]).sort();
+function markdownAnswers(s){
+ const lines=s.split("\n"),out=[];let block=null;
+ for(const line of lines){
+  if(/^    \?\?\? question "Đối chiếu"$/.test(line)){
+   if(block)out.push(block.join("\n").trimEnd());
+   block=[line];continue;
+  }
+  if(block!==null){
+   if(!line.trim()||line.startsWith("        ")){block.push(line);continue}
+   out.push(block.join("\n").trimEnd());block=null;
+  }
+ }
+ if(block)out.push(block.join("\n").trimEnd());
+ return out;
+}
+// Historical ChVII canonical First Try answers use MkDocs question disclosures
+// rather than HTML answer divs. Validate exact original answer content in BOTH
+// representations, with no weakening of Q15 or willingness to display keys.
+const firstAnswers=s=>[
+ ...[...s.matchAll(/<div class="thpt-r4-first-try-answer">[\s\S]*?<\/div>/g)].map(x=>x[0]),
+ ...markdownAnswers(s)
+].sort();
 const latex=s=>[...s.matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g)].map(m=>(m[1]||m[2]).trim().replace(/\s+/g," "));
 const blob=b=>{const bytes=Buffer.isBuffer(b)?b:Buffer.from(b);return crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex")};
 const sha=s=>/^[a-f0-9]{40}$/.test(s||"")&&s!=="0".repeat(40);
@@ -32,7 +53,7 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob){
  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"]){
   assert.deepEqual(tokenSet(now,id),tokenSet(before,id),"Q15/source identity changed: "+id);
  }
- assert.deepEqual(firstAnswers(now),firstAnswers(before),"Original First Try answer HTML changed");
+ assert.deepEqual(firstAnswers(now),firstAnswers(before),"Original canonical First Try answer (HTML or Markdown) changed");
  assert.deepEqual([...now.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
   "Golden four tabs changed");
@@ -56,6 +77,20 @@ function selfTest(){
  assert.throws(()=>verifySource(old,now,receipt.replace(blob(now),"0".repeat(40)),blob(old),blob(now)));
  assert.throws(()=>verifySource(old,now.replace('data-thpt-first-try-id="A"','data-thpt-first-try-id="X"'),receipt,blob(old),blob(now)));
  assert(originalMathPreserved(old,now)&&!originalMathPreserved(old,now.replace("x^2","NO_MATH")));
+ const mdOld='=== "Khám phá kiến thức"\n=== "Kiến thức SGK"\n=== "Ví dụ"\n=== "Lỗi thường gặp"\n'+
+  '<span data-thpt-first-try-id="B19Q"></span><span data-thpt-help-id="B19H"></span>\n'+
+  '    ??? question "Đối chiếu"\n\n        **Đáp án:** nghiệm đúng.\n\n        **Lý do:** giải thích từ giả thiết.\n\n'+
+  '\\\\(a^2\\\\)';
+ const mdNew=mdOld+"\nViết lại mạch giải thích trước Vận dụng.";
+ const mdReceipt="**CANDIDATE_B19_SOURCE_BLOB:** `"+blob(mdNew)+"`\n**PREVIOUS_B19_SOURCE_BLOB:** `"+blob(mdOld)+"`\nQ18 DELTA_C";
+ assert.equal(firstAnswers(mdOld).length,1,"MkDocs closed answer must count as one");
+ verifySource(mdOld,mdNew,mdReceipt,blob(mdOld),blob(mdNew));
+ assert.throws(()=>verifySource(mdOld,mdNew.replace("nghiệm đúng","nghiệm sai"),mdReceipt,blob(mdOld),blob(mdNew)),"Mutation to exact source must fail");
+ assert.throws(()=>verifySource(mdOld,mdNew.replace("**Đáp án:** nghiệm đúng.","**Đáp án:** nghiệm sai."),
+  "**CANDIDATE_B19_SOURCE_BLOB:** `"+blob(mdNew.replace("**Đáp án:** nghiệm đúng.","**Đáp án:** nghiệm sai."))+"`\n"+
+  "**PREVIOUS_B19_SOURCE_BLOB:** `"+blob(mdOld)+"`\nQ18 DELTA_C",
+  blob(mdOld),blob(mdNew.replace("**Đáp án:** nghiệm đúng.","**Đáp án:** nghiệm sai."))),
+  "Signed but changed historical answer must fail Q15");
  console.log("PASS scoped production proof fixtures: historical blob, new receipt, Q15/16, no old math loss; negatives fail closed");
 }
 function main(){
