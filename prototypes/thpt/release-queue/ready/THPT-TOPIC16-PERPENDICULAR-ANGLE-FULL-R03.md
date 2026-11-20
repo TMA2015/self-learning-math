@@ -16,14 +16,14 @@ CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 363316efc7a338e4ec7d5629b182fce3de271356
+ACADEMIC_SOURCE_BLOB: c0e7b9bde78b90ef8233904889d63062f517b232
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_Q18, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 7ac399da84280f285cf8e25ecf5a16e2f0768a76
+REVIEW_RECEIPT_BLOB: d6bb30f9fffdb15f32aa47dd1b8564cefb81aa4e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
+AUTHOR_A1_A7_BLOB: fc7196500d9996d5500b39b266445746de3f5fcf
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: f5c07f374d4437d20fa525aa6d69d7aa319835c5
+AUTHOR_HANDOFF_BLOB: 570f289703bc7cd988b891912a3b227097af5d68
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
@@ -89,3 +89,7 @@ CURRENT_PR: DRAFT_AUTHORING_NOT_MERGED
 - **Actual TOP16-O12 conceptual defect corrected in place:** source previously said point A(0,0,2) was *in* plane z=0. A is **outside**; H(0,0,0) and B(3,0,0) are inside. Correct line through H direction (0,1,0) is perpendicular BH direction (3,0,0), and `\\overrightarrow{AB}=(3,0,-2)` has dot 0 with c direction, verifying the three perpendicular lines theorem. Exact two changed Knowledge Example lines, NOT a canonical Practice/Written key/condition/answer/rubric edit; 21 outcomes/solved examples/FirstTry/D6, 86 unique canonical, 65 Practice, 8 public question-only replay, four unchanged SVG retained. `DELTA_C_ACADEMIC_MATERIAL` direct author math/PED recheck, no need for independent NotebookLM when this one error is demonstrably resolved; no external Topic reviewer PASS claimed.
 - **Current standalone ramp-angle HTML model SHA** `931093557eb411b9f78286a92e6545dcbd59aa73` supersedes historical `e14ee4c6ec6c851f228352656b0cd8e2fc3a2a06` solely because of 17 added Golden UI CSS lines; all earlier HTML/JS/angle model math byte-identical, `DELTA_A_UI`. Browser/Golden/AP/iOS Safari are not AUTHORING PASS.
 - **R01 signed manifest historical-only:** old ready Git blob `6de988fbe61f2e6bc5e58571e9cad68605cdd990` copied *byte-identical* to `prototypes/thpt/release-queue/archive/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R01_HISTORICAL_SIGNED_20261118.md`, removed from active `ready/`. Exactly one current R03 READY/REGISTER row, no historical PASS transferred to new source. No runtime Topic Readiness/Final Submit/Mastery/merge/deploy authorization.
+
+
+## 20/11/2026 — current author-approved Delta A sync
+- Learner `c0e7b9bde78b90ef8233904889d63062f517b232`, Q18 `d6bb30f9fffdb15f32aa47dd1b8564cefb81aa4e`, A1 `fc7196500d9996d5500b39b266445746de3f5fcf`, handoff `570f289703bc7cd988b891912a3b227097af5d68`; one descriptive label harmonized with 22-topic concise learner prose, all mathematics unchanged. AUTHORING CONTENT_READY only; no release approval.
