@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 318fa95b2e1f7311bae4361517565426fa2a5524
-ACADEMIC_SOURCE_BLOB: 318fa95b2e1f7311bae4361517565426fa2a5524
+SOURCE_BLOB: e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3
+ACADEMIC_SOURCE_BLOB: e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_LEARNER_FIRST_34_CANONICAL_VISIBLE_20261116.md
@@ -76,3 +76,7 @@ ASSESSMENT_Q16: 12 câu public replay (SGK và Topic) dùng lại Practice, ch�
 
 ## 20/11/2026 — owner Delta A after explanation-label normalization
 - Learner `318fa95b2e1f7311bae4361517565426fa2a5524` replaces previous learner `2bdd119a4ce8d9148d3cd11c29e72686925299e5` with precisely two `GHI NHỚ —` formal prefixes expanded to standard `KIẾN THỨC CẦN GHI NHỚ —`. Earlier five inline explanatory labels normalized to continuous prose are retained, all 12 independent worked examples, sine/cosine formula and Heron mathematics, 34 canonical item/answer/rubric and 3 Topic sections unchanged. Q03/PED scope author self-QA ΔA only; no new full independent reviewer, no release.
+
+
+## 20/11/2026 — Final owner learner label consistency, Q03/PED ΔA
+- Current learner blob e2f0a84b2d99652c2f56c7323d3b370cad0bb4b3 supersedes 318fa95b2e1f7311bae4361517565426fa2a5524 historically. Exactly 12 existing inline prefixes `**Vận dụng:**` are now `**Vận dụng**`, matching owner Topic standard Issue #864. All text after prefixes, mathematical conditions, exercises, underlying 34 canonical stems/keys/solutions/rubrics and 12 self-check contents are byte-identical; no assessment exposure or independent Academic PASS implied.
