@@ -92,6 +92,16 @@ function classify(paths,{manual=false}={}){
    reason:"OWNER_B16_EXACT_FILES_AND_BYTE_VERIFIED_RUNTIME"};
  const lessons=files.filter(x=>CANONICAL_PAGE(x));
  const safeCompanions=x=>RECEIPT.test(x)||SOURCE_TEST.test(x);
+ // B09 DELTA_A: one learner page, the SAME one canonical manuscript and
+ // its exact chained Q18 receipt. Unknown/shared files still require FULL.
+ const b09="docs/thpt-preview/sgk/chuong-iv/bai-9.md";
+ const master="prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md";
+ const receipt="prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md";
+ if(lessons.length===1&&lessons[0]===b09&&files.includes(master)&&files.includes(receipt)&&
+    files.every(x=>x===b09||x===master||x===receipt||x==="scripts/test-thpt-release-impact.cjs"||SOURCE_TEST.test(x)))
+  return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:b09,
+   reason:"EXACT_B09_COMMON_ERROR_TAB4_DELTA_A_ONE_CANONICAL"};
+
  // Owner-directed G10 B07–B14 migration: four existing manuscript files are
  // exactly paired with the eight canonical published lesson Markdown files.
  const manuscripts=[
@@ -134,6 +144,18 @@ function selfTest(){
  assert.equal(classify([fixture]).impact,"SCOPED_LESSON");
  assert.equal(classify(authoring).full_suite,"false");
  assert.equal(classify([fixture,another]).changed_lessons,fixture+","+another);
+ const b09Case=["docs/thpt-preview/sgk/chuong-iv/bai-9.md",
+  "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md",
+  "prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md",
+  "scripts/thpt-q18-g10-source-receipt.cjs",
+  "scripts/test-thpt-release-impact.cjs"];
+ assert.equal(classify(b09Case).impact,"SCOPED_LESSON",
+  "Exact B09 one-manuscript relocation must run scoped browser QA");
+ assert.equal(classify([...b09Case,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL",
+  "Shared runtime change cannot use B09 exception");
+ assert.equal(classify([...b09Case,"mkdocs.yml"]).impact,"FULL",
+  "Global build config cannot use B09 exception");
+
  const bBatch=[7,8,9,10,11,12,13,14].map(n=>
   "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md");
  const mBatch=[
