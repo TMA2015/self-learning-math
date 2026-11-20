@@ -60,6 +60,8 @@
         </div>
 
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#help-g10-b14-01).
     #### 1.2.3. Vì sao độ lệch chuẩn dễ đọc hơn phương sai?
 
     Nếu đo chiều dài bằng cm thì phương sai mang đơn vị cm², khó so trực tiếp với chiều dài vài cm; cần số đo trở lại cùng đơn vị.
@@ -83,7 +85,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-B14-01" hidden></span>
+    <span id="help-g10-b14-01" data-thpt-help-id="HELP-G10-B14-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -111,7 +113,7 @@
 
 
 
-    <span data-thpt-help-id="HELP-G10-B14-02" hidden></span>
+    <span id="help-g10-b14-02" data-thpt-help-id="HELP-G10-B14-02" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -139,6 +141,8 @@
         <p><strong>Nếu chưa làm được:</strong> Xem lại Khám phá §1.2.5 và Kiến thức SGK §2.2, tự tính lại từ dữ kiện của câu hỏi, rồi <a href="../luyen-tap/?item=THPT-G10-B14-P04">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>
         </div>
 
+
+    **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa phù hợp](#help-g10-b14-01).
     ### 1.3. Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn, giá trị bất thường, biểu đồ hộp, đơn vị đo.
