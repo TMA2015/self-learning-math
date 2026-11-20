@@ -29,7 +29,7 @@ Hãy tưởng tượng một kim dài đúng một đơn vị quay quanh gốc O
 
 **Lời giải:** Góc 135° bù với 45° nên cos135°=−√2/2 và sin135°=√2/2. Điểm M=(−√2/2,√2/2), đúng ở góc phần tư II.
 
-**Vận dụng:** Không nhìn bảng, dự đoán dấu của \(\sin  150^{\circ}\) và \(\cos  150^{\circ}\) trước khi tính.
+**Vận dụng** Không nhìn bảng, dự đoán dấu của \(\sin  150^{\circ}\) và \(\cos  150^{\circ}\) trước khi tính.
 
 <details><summary>Đối chiếu</summary>150° là góc tù: điểm trên nửa đường tròn phía trên bên trái, do đó sin dương và cos âm. Cụ thể sin150°=1/2, cos150°=-√3/2. Nếu viết cos dương, hãy quay lại vị trí hình chiếu M trên trục hoành rồi làm bài luyện về cosin góc tù.</details>
 
@@ -59,7 +59,7 @@ Chẳng hạn, \(\sin 135^{\circ}+\cos 120^{\circ}=\sqrt{2}/2-1/2=(\sqrt{2}-1)/2
 
 **Lời giải:** sin150°=sin30°=1/2 và cos120°=−cos60°=−1/2, nên kết quả bằng 1. Dấu âm của cos góc tù quyết định lời giải.
 
-**Vận dụng:** Tính \(\sin 150^{\circ}+\cos 120^{\circ}\) mà không dùng máy tính.
+**Vận dụng** Tính \(\sin 150^{\circ}+\cos 120^{\circ}\) mà không dùng máy tính.
 
 <details><summary>Đối chiếu</summary>\(\sin 150^{\circ}=1/2\), \(\cos 120^{\circ}=-1/2\), tổng bằng **0**. Nếu nhầm dấu côsin, ôn lại cách đọc nửa đường tròn ở mục 1 và làm bài luyện về góc bù.</details>
 
@@ -86,7 +86,7 @@ Chẳng hạn, Góc tù α có \(\tan  \alpha=-2\): từ \(1+\tan^{2}\alpha=1/\c
 
 **Lời giải:** sin120°=√3/2, cos120°=−1/2 đều khác 0; tan120°=−√3, cot120°=−1/√3=−√3/3. Hai tỉ số đều xác định.
 
-**Vận dụng:** Tại \(\alpha=90^{\circ}\), đại lượng nào không xác định: \(\sin \alpha\), \(\cos \alpha\), \(\tan \alpha\), hay cả ba?
+**Vận dụng** Tại \(\alpha=90^{\circ}\), đại lượng nào không xác định: \(\sin \alpha\), \(\cos \alpha\), \(\tan \alpha\), hay cả ba?
 
 <details><summary>Đối chiếu</summary>Chỉ **tanα** không xác định vì mẫu cos90°=0. Nếu nghĩ cos90° không xác định, quay lại định nghĩa hoành độ ở mục 1 và làm bài luyện về điều kiện của tang.</details>
 
@@ -111,7 +111,7 @@ Chia hai vế cho \(\cos^{2}\alpha\) hoặc \(\sin^{2}\alpha\) chỉ khi mẫu k
 
 **Lời giải:** cos²α=1−25/169=144/169. Vì α tù nên cosα=−12/13 và tanα=−5/12, không tự chọn dấu dương khi lấy căn.
 
-**Vận dụng:** Góc tù α thỏa \(\cos \alpha=-5/13\). Hãy tính sinα và tanα.
+**Vận dụng** Góc tù α thỏa \(\cos \alpha=-5/13\). Hãy tính sinα và tanα.
 
 <details><summary>Đối chiếu</summary>\(\sin^{2}\alpha=1-25/169=144/169\); vì 0°<α<180° nên sin không âm, ở đây sinα=12/13. Do đó tanα=(12/13)/(−5/13)=**−12/5**. Nếu chọn sin âm, hãy xem lại vị trí M ở mục 1 rồi làm bài luyện về dấu của sin và cosin.</details>
 
@@ -144,7 +144,7 @@ Nếu đặt A ở gốc tọa độ, B tại \((c,0)\) và C tại \((b \cos  A
 
 **Lời giải:** Dùng côsin vì biết hai cạnh kẹp góc: a²=49+81−2·7·9·cos60°=67. Cạnh dương nên a=√67.
 
-**Vận dụng:** Cho \(b=5, c=7, A=60^{\circ}\). Hãy tìm a và giải thích vì sao không dùng Pitago trực tiếp.
+**Vận dụng** Cho \(b=5, c=7, A=60^{\circ}\). Hãy tìm a và giải thích vì sao không dùng Pitago trực tiếp.
 
 <details><summary>Đối chiếu</summary>\(a^{2}=25+49-2\cdot 5\cdot 7\cdot (1/2)=39\), nên **a=√39**. Pitago chỉ dùng trực tiếp khi góc xen giữa 90°. Nếu đặt nhầm cạnh đối diện, quay lại sơ đồ a=BC, b=CA, c=AB rồi làm bài luyện về định lí cosin.</details>
 
@@ -171,7 +171,7 @@ Chẳng hạn, Với \(A=30^{\circ}, B=45^{\circ}, a=5\), góc \(C=105^{\circ}\)
 
 **Lời giải:** C=75°. Theo định lí sin b=a·sin60°/sin45°=√3; 2R=a/sin45°=2, nên R=1.
 
-**Vận dụng:** \(A=30^{\circ}, B=60^{\circ}, a=4\). Tìm b và R.
+**Vận dụng** \(A=30^{\circ}, B=60^{\circ}, a=4\). Tìm b và R.
 
 <details><summary>Đối chiếu</summary>\(b=4 \sin 60^{\circ}/\sin 30^{\circ}=4\sqrt{3}\), \(2R=4/\sin 30^{\circ}=8\), nên **R=4**. Nếu lấy b/a=sinA/sinB, xem lại thứ tự đối diện rồi làm bài luyện về định lí sin.</details>
 
@@ -199,7 +199,7 @@ Chẳng hạn, với dữ kiện ba cạnh, Ba cạnh \(7,8,9\) tạo thành tam
 
 **Lời giải:** Vì 4+5>6, tam giác tồn tại. Biết ba cạnh nên dùng côsin: cosC=(a²+b²−c²)/(2ab)=(16+25−36)/40=1/8.
 
-**Vận dụng:** Tam giác có ba cạnh 6,8,10: góc đối diện cạnh 10 bằng bao nhiêu? Diện tích bao nhiêu?
+**Vận dụng** Tam giác có ba cạnh 6,8,10: góc đối diện cạnh 10 bằng bao nhiêu? Diện tích bao nhiêu?
 
 <details><summary>Đối chiếu</summary>\(6^{2}+8^{2}=10^{2}\), nên góc đối diện cạnh 10 là **90°**. Diện tích bằng \(1/2\cdot 6\cdot 8=24\) đơn vị vuông. Nếu chỉ biết ba cạnh mà áp dụng ngay định lí sin, quay lại bảng SSS rồi làm bài luyện về góc vuông từ ba cạnh.</details>
 
@@ -222,7 +222,7 @@ Muốn giải SSA an toàn, tính \(t=b \sin A/a\) trước: nếu \(t>1\), khô
 
 **Lời giải:** sinB=3/8. B₁=arcsin(3/8)<30° hợp lệ; B₂=180°−B₁>150° khiến A+B₂>180°, phải loại. Vậy chỉ một tam giác.
 
-**Vận dụng:** \(A=30^{\circ}, a=4, b=10\). Tồn tại tam giác nào thỏa dữ kiện này không?
+**Vận dụng** \(A=30^{\circ}, a=4, b=10\). Tồn tại tam giác nào thỏa dữ kiện này không?
 
 <details><summary>Đối chiếu</summary>\(\sin B=(10\cdot \sin 30^{\circ})/4=5/4>1\) là vô lý, nên **không tồn tại tam giác**. Không dùng máy tính \(\arcsin (1,25)\); hãy kiểm điều kiện đầu vào. Luyện lại mục 6 rồi làm bài luyện về dữ kiện vô nghiệm.</details>
 
@@ -249,7 +249,7 @@ Phải dùng **góc xen giữa chính hai cạnh đang nhân**. Với \(b=8,c=5,
 
 **Lời giải:** sin120°=√3/2>0; S=1/2·5·7·sin120°=35√3/4. Góc tù vẫn cho diện tích dương.
 
-**Vận dụng:** Cho \(b=6,c=8,A=60^{\circ}\). Tính diện tích, rồi đối chiếu với vùng tô trên hình ở mục 5.
+**Vận dụng** Cho \(b=6,c=8,A=60^{\circ}\). Tính diện tích, rồi đối chiếu với vùng tô trên hình ở mục 5.
 
 <details><summary>Đối chiếu</summary>\(S=(1/2)\cdot 6\cdot 8\cdot \sin 60^{\circ}=12\sqrt{3}\) đơn vị diện tích. Nếu ra 24√3, em đã quên hệ số 1/2. Luyện bài luyện cùng dạng.</details>
 
@@ -280,7 +280,7 @@ Chẳng hạn, Tam giác 13–14–15 có \(p=21\), \(S=\sqrt{21\cdot 8\cdot 7\c
 
 **Lời giải:** p=16; S=√(16·6·6·4)=48. Bán kính nội tiếp r=48/16=3; bán kính ngoại tiếp R=10·10·12/(4·48)=25/4.
 
-**Vận dụng:** Với ba cạnh 5,5,6, tính S và r.
+**Vận dụng** Với ba cạnh 5,5,6, tính S và r.
 
 <details><summary>Đối chiếu</summary>\(p=8\); \(S=\sqrt{8\cdot 3\cdot 3\cdot 2}=12\); \(r=S/p=3/2\). Nếu dùng \(abc/(4S)\) sẽ tìm **R**, không phải r. Luyện bài luyện về Heron.</details>
 
@@ -305,7 +305,7 @@ Tại sao không dùng góc 30° thay cho góc C khi chia AB? Vì **AB đối di
 
 **Lời giải:** C=75°. Định lí sin cho BC=60·sin45°/sin75°=60(√3−1) m. AB đối diện C, phải ghép đúng cặp.
 
-**Vận dụng:** Nếu \(AB=80\,\mathrm{m}\), góc A=B=45°, độ dài BC và AC có bằng nhau không? Bằng bao nhiêu?
+**Vận dụng** Nếu \(AB=80\,\mathrm{m}\), góc A=B=45°, độ dài BC và AC có bằng nhau không? Bằng bao nhiêu?
 
 <details><summary>Đối chiếu</summary>\(C=90^{\circ}\), \(BC=80 \sin 45^{\circ}/\sin 90^{\circ}=40\sqrt{2}\,\mathrm{m}\), \(AC=40\sqrt{2}\,\mathrm{m}\). Bằng nhau vì A=B. Nếu ra một cạnh khác, kiểm lại quan hệ đối diện trước khi bấm máy. Luyện bài luyện về đo đạc.</details>
 
@@ -328,7 +328,7 @@ Thực hành một quy trình ổn định: (1) gọi tên cạnh/góc đối di
 
 **Lời giải:** Không: 4+6=10<11, không tồn tại tam giác không suy biến. Phải kiểm bất đẳng thức tam giác trước khi dùng Heron.
 
-**Vận dụng:** Có người nhập ba cạnh 2,3,6 vào công thức Heron và ra căn của số âm. Lỗi nằm ở máy tính hay dữ kiện?
+**Vận dụng** Có người nhập ba cạnh 2,3,6 vào công thức Heron và ra căn của số âm. Lỗi nằm ở máy tính hay dữ kiện?
 
 <details><summary>Đối chiếu</summary>Dữ kiện **không tạo thành tam giác** vì 2+3 không lớn hơn 6. Cần kiểm điều kiện tồn tại *trước* công thức; luyện bài luyện về bất đẳng thức tam giác.</details>
 
