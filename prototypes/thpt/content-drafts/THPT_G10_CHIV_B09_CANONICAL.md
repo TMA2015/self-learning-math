@@ -175,13 +175,6 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
         <p><strong>Ôn lại:</strong> Xem Ví dụ 2 về trung điểm và Ví dụ 3 về trọng tâm, rồi làm một câu luyện tập tương ứng.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
 
-    ??? tip "Đảo dấu khi phân tích vectơ theo hai vectơ không cùng phương"
-
-        <p><strong>Lỗi thường gặp:</strong> Với tam giác $ABC$, $M$ và $N$ lần lượt là trung điểm của $AB$ và $AC$, đặt $\vec a=\overrightarrow{AB}$, $\vec b=\overrightarrow{AC}$. Một lời giải viết $\overrightarrow{MN}=\tfrac12\vec a-\tfrac12\vec b$. <strong>Kết quả này sai dấu.</strong></p>
-        <p><strong>Vì sao sai?</strong> $\tfrac12\vec a-\tfrac12\vec b=\overrightarrow{AM}-\overrightarrow{AN}=\overrightarrow{NM}$, không phải $\overrightarrow{MN}$. Khi dùng quy tắc hiệu hai vectơ, em đã đổi chỗ điểm đầu và điểm cuối.</p>
-        <ol><li><strong>Nhìn chiều mũi tên:</strong> $\overrightarrow{MN}$ đi từ $M$ đến $N$, không đi từ $N$ đến $M$.</li><li><strong>Viết quy tắc trước khi thay hệ số:</strong> $\overrightarrow{MN}=\overrightarrow{MA}+\overrightarrow{AN}=\overrightarrow{AN}-\overrightarrow{AM}$.</li><li><strong>Thay quan hệ trung điểm:</strong> $\overrightarrow{AM}=\tfrac12\vec a$, $\overrightarrow{AN}=\tfrac12\vec b$; do đó $\boxed{\overrightarrow{MN}=-\tfrac12\vec a+\tfrac12\vec b}$.</li></ol>
-        <p><strong>Tự kiểm:</strong> Nếu đổi câu hỏi thành $\overrightarrow{NM}$, cả hai hệ số phải đổi dấu. Vì $ABC$ là tam giác nên $\vec a,\vec b$ không cùng phương; cặp hệ số trong phép phân tích này là <strong>duy nhất</strong>, không thể tự chọn một cặp khác để bù dấu sai.</p>
-        <p><strong>Ôn và luyện lại:</strong> Xem quy tắc ba điểm/quy tắc hiệu vectơ ở Bài 8, đọc lời giải Ví dụ 4 của Bài 9 rồi <a href="../luyen-tap/?item=THPT-G10-B09-P07">tự thử bài phân tích vectơ trong phần Luyện tập</a>. Không dùng phép chia cho vectơ để tìm hệ số.</p>
     ### Vì sao phải phân tích một vectơ?
 
     Khi một vị trí dịch chuyển theo **hai phương độc lập** (chẳng hạn dọc hai cạnh không song song của một hình bình hành), ta muốn xác định đã đi bao nhiêu lần theo từng hướng. Một mũi tên tổng có thể tách thành hai mũi tên thành phần theo hai phương ấy; đây là ý tưởng **phân tích một vectơ theo hai vectơ không cùng phương**. Nếu hai hướng lại cùng phương, ta không thể xác định duy nhất hai hệ số: một phần dịch chuyển có thể chuyển từ hướng này sang hướng kia mà kết quả không đổi.
@@ -326,6 +319,14 @@ This file carries the **one current B09 source manuscript**: whole learner-facin
     **Tự kiểm:** \(\overrightarrow{MN}\) cùng hướng với \(\overrightarrow{BC}=\vec b-\vec a\) và dài bằng một nửa \(BC\), đúng tính chất đường trung bình tam giác. Nếu đổi thành \(\overrightarrow{NM}\), cả hai hệ số phải đổi dấu.
 
 === "Lỗi thường gặp"
+
+    ??? tip "Đảo dấu khi phân tích vectơ theo hai vectơ không cùng phương"
+
+        <p><strong>Lỗi thường gặp:</strong> Với tam giác $ABC$, $M$ và $N$ lần lượt là trung điểm của $AB$ và $AC$, đặt $\vec a=\overrightarrow{AB}$, $\vec b=\overrightarrow{AC}$. Một lời giải viết $\overrightarrow{MN}=\tfrac12\vec a-\tfrac12\vec b$. <strong>Kết quả này sai dấu.</strong></p>
+        <p><strong>Vì sao sai?</strong> $\tfrac12\vec a-\tfrac12\vec b=\overrightarrow{AM}-\overrightarrow{AN}=\overrightarrow{NM}$, không phải $\overrightarrow{MN}$. Khi dùng quy tắc hiệu hai vectơ, em đã đổi chỗ điểm đầu và điểm cuối.</p>
+        <ol><li><strong>Nhìn chiều mũi tên:</strong> $\overrightarrow{MN}$ đi từ $M$ đến $N$, không đi từ $N$ đến $M$.</li><li><strong>Viết quy tắc trước khi thay hệ số:</strong> $\overrightarrow{MN}=\overrightarrow{MA}+\overrightarrow{AN}=\overrightarrow{AN}-\overrightarrow{AM}$.</li><li><strong>Thay quan hệ trung điểm:</strong> $\overrightarrow{AM}=\tfrac12\vec a$, $\overrightarrow{AN}=\tfrac12\vec b$; do đó $\boxed{\overrightarrow{MN}=-\tfrac12\vec a+\tfrac12\vec b}$.</li></ol>
+        <p><strong>Tự kiểm:</strong> Nếu đổi câu hỏi thành $\overrightarrow{NM}$, cả hai hệ số phải đổi dấu. Vì $ABC$ là tam giác nên $\vec a,\vec b$ không cùng phương; cặp hệ số trong phép phân tích này là <strong>duy nhất</strong>, không thể tự chọn một cặp khác để bù dấu sai.</p>
+        <p><strong>Ôn và luyện lại:</strong> Xem quy tắc ba điểm/quy tắc hiệu vectơ ở Bài 8, đọc lời giải Ví dụ 4 của Bài 9 rồi <a href="../luyen-tap/?item=THPT-G10-B09-P07">tự thử bài phân tích vectơ trong phần Luyện tập</a>. Không dùng phép chia cho vectơ để tìm hệ số.</p>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
