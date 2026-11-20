@@ -1,9 +1,7 @@
-<!-- CĐ18_AUTHORING_BLOCKED_PED_MATH_W07_O38_O23_20261120 -->
-## New real CONTENT QUALITY delta — author-checked, independent affected review outstanding
+<!-- CĐ18_PED_MATH_REVIEW_CANDIDATE_PROTECTED_SGK_SOURCE_20261120 -->
+## Current corrected learner, independent affected review pending — NOT READY
 
-Corrected current learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3`, original shared canonical `a24abd682932e11761f7c85fa3a3d3cdd77b600e`. W07 v2 now has an unambiguous question, correct circle-vs-filled-disk solution and **changed /5 rubric** that actually grades the asked mathematics. O38 explains inside ball vs on sphere, O23 FirstTry and Practice D6 teach a derivation rather than exposing codes. Author math/PED Q18 QA PASS, independent NotebookLM verdict NOT yet obtained. One active current **candidate BLOCKED_BY_AUTHORING**, kept outside ready/; historical last signed learner snapshot `bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4` remains preserved only on its old immutable Git version. Missing SBT printed p25 is reference-only, not a math blocker. Original SGK shared v1 ready/source must not silently inherit new canonical v2. No RELEASE authorization or merge/deploy.
-
-NotebookLM only affected source-exact packet: `prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_NOTEBOOKLM_AFFECTED_REVIEW_20261120.md`.
+Current corrected learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3` and author Q18 `82a31554d8f6187e951c189ac2b6c34a1622d5ef` cover W07 v2 surface-vs-solid, geometry-aligned five-point rubric, O38 inside-vs-surface, O23 FirstTry/Practice D6. **The G12 SGK CHV signed active canonical source is deliberately unchanged** `11eb2834cfdb4a24685157f84666c2bb0767970a`; W07 version2 only exists as a *proposed review excerpt* in `Temp_TOPIC18_O40_O23_W07_NOTEBOOKLM_AFFECTED_REVIEW_20261120.md` and its historic Git candidate blob `a24abd682932e11761f7c85fa3a3d3cdd77b600e`. Do NOT treat either as a second active canonical bank. Protected historical G12 SGK R01 source-lock remains valid. `BLOCKED_BY_AUTHORING`: needs actual independent affected-scope Academic/PED review, then deliberate single-canonical promotion and dependent QA. Missing scanned SBT p25 is not a math blocker. No release or merge/deploy.
 
 ---
 
@@ -25,15 +23,15 @@ ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_O
 ACADEMIC_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q18_CONTENT_DELTA_20261120.md (AFFECTED AUTHOR_SELF_VERIFIED; independent NotebookLM pending)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q18_CONTENT_DELTA_20261120.md
-REVIEW_RECEIPT_BLOB: 347fa49647e3cb0f4abddcbf00c54e0df2d4e7e6
+REVIEW_RECEIPT_BLOB: 82a31554d8f6187e951c189ac2b6c34a1622d5ef
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 7e4e325684078fa984b830306b3d215732925e07
+AUTHOR_A1_A7_BLOB: 418d516c6f4647e504efa4f3c061f0f569094a00
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R06-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: a399aa397782d2558b677489d3afa399e464dbaf
+AUTHOR_HANDOFF_BLOB: 631df141a52778be06cee7b556f6baf2bbe17321
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
-S1_ORIGINAL_G12_CHV_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
+S1_ORIGINAL_G12_CHV_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html
 INTERACTIVE_MODEL_BLOB: 1117d351d6818f1b4f7b40b5b42a5263b225849a
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
