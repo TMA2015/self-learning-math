@@ -261,33 +261,41 @@
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
-
-    ### Ví dụ 1 — Tính tiêu điểm của elip
+    ### 3.1. Ví dụ — Tìm tiêu điểm elip từ mẫu số
 
     **Đề bài.** Cho \(\frac{x^2}{9}+\frac{y^2}{4}=1\). Tìm hai tiêu điểm.
 
-    **Vì sao chọn cách này?** Hai phân thức cùng dấu cộng, mẫu số lớn hơn nằm dưới \(x^2\), phù hợp elip có trục lớn theo \(Ox\).
+    **Phân tích:** Hai phân thức cùng dấu cộng, mẫu lớn hơn dưới \(x^2\), nên đây là elip có trục lớn theo \(Ox\). Ta đọc a² và b² từ hai mẫu, sau đó dùng **hiệu** a²−b² để tìm c² (khác với hypebol). Chỉ khi nhận đúng dạng và điều kiện a>b>0 mới đặt hai tiêu điểm trên Ox.
 
-    **Lời giải.** \(a^2=9,\ b^2=4\), nên \(c^2=a^2-b^2=5\); hai tiêu điểm là \(F_1(-\sqrt5,0)\), \(F_2(\sqrt5,0)\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1">
+    <p><strong>Lời giải.</strong> \(a^2=9,\ b^2=4\), nên \(c^2=a^2-b^2=5\); hai tiêu điểm là \(F_1(-\sqrt5,0)\), \(F_2(\sqrt5,0)\).</p>
+    </div>
 
-    ### Ví dụ 2 — Tiệm cận của hypebol
+    **Kiểm lại:** Vì c=√5 nhỏ hơn a=3, cả hai tiêu điểm nằm giữa hai đỉnh trên trục Ox. Tổng khoảng cách từ mọi điểm trên elip đến hai tiêu điểm là 2a=6, phù hợp định nghĩa elip.
+
+    ### 3.2. Ví dụ — Tiêu điểm và tiệm cận hypebol
 
     **Đề bài.** Cho \(\frac{x^2}{9}-\frac{y^2}{4}=1\). Tìm tiêu điểm và hai đường tiệm cận.
 
-    **Vì sao chọn cách này?** Dấu trừ giữa hai bình phương cho hypebol đúng quy ước trục thực là \(Ox\), khác elip trong ví dụ trên.
+    **Phân tích:** Dấu trừ và số hạng x² dương cho hypebol trục thực \(Ox\), **khác elip** ở ví dụ trước. Đọc a và b từ mẫu dương/âm, tính c theo **tổng** a²+b²; muốn tìm tiệm cận qua O phải lấy hệ số góc ±b/a. Không hoán đổi hai mẫu hoặc kết luận tiệm cận là hai nhánh.
 
-    **Lời giải.** \(a=3,b=2,c=\sqrt{a^2+b^2}=\sqrt{13}\). Hai tiêu điểm \(F_1(-\sqrt{13},0)\), \(F_2(\sqrt{13},0)\); các tiệm cận \(y=\pm\frac23x\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2">
+    <p><strong>Lời giải.</strong> \(a=3,b=2,c=\sqrt{a^2+b^2}=\sqrt{13}\). Hai tiêu điểm \(F_1(-\sqrt{13},0)\), \(F_2(\sqrt{13},0)\); các tiệm cận \(y=\pm\frac23x\).</p>
+    </div>
 
-    ### Ví dụ 3 — Từ đường chuẩn đến phương trình parabol
+    **Kiểm lại:** √13>3 nên hai tiêu điểm ở ngoài hai đỉnh ±3. Hệ số góc tiệm cận có độ lớn 2/3, không phải 3/2; hai nhánh đi gần các tiệm cận ở xa mà không trùng với chúng.
+
+    ### 3.3. Ví dụ — Đọc tiêu điểm và đường chuẩn parabol
 
     **Đề bài.** Với \(y^2=4x\) theo quy ước \(y^2=2px\), tìm tiêu điểm và đường chuẩn.
 
-    **Vì sao chọn cách này?** Trong hệ quy ước hiện tại, hệ số \(2p\) đứng trước \(x\), không phải \(4p\). Cần đọc đúng quy ước rồi mới tìm tọa độ.
+    **Phân tích:** Theo quy ước của bài, hệ số của \(x\) là \(2p\), **không phải \(4p\)**. Ta tìm p từ hệ số trước, rồi đặt tiêu điểm và đường chuẩn cách O cùng p/2 nhưng nằm hai phía. Cách này xuất phát từ định nghĩa các điểm cách đều tiêu điểm và đường chuẩn, không phải ghi nhớ hai tọa độ rời nhau.
 
-    **Lời giải.** \(2p=4\Rightarrow p=2\). Tiêu điểm \(F(\frac p2,0)=(1,0)\), đường chuẩn \(x=-\frac p2=-1\). 
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3">
+    <p><strong>Lời giải.</strong> \(2p=4\Rightarrow p=2\). Tiêu điểm \(F(\frac p2,0)=(1,0)\), đường chuẩn \(x=-\frac p2=-1\).</p>
+    </div>
 
-    **Kiểm lại:** đỉnh \(O(0,0)\) cách F và đường chuẩn cùng một đơn vị.
+    **Kiểm lại:** Đỉnh \(O(0,0)\) cách F và đường chuẩn cùng một đơn vị; với M(1;2) trên y²=4x, khoảng cách MF=2 và khoảng cách tới x=−1 cũng bằng 2. Hai phép đo bằng nhau, đúng định nghĩa.
 
 === "Lỗi thường gặp"
 
