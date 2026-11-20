@@ -1,13 +1,14 @@
 <!-- TOP18_W07_O38_O23_PED_Q18_REFRESH_20261120 -->
-Updated current candidate improves W07's mathematical prompt, detailed circle-vs-disk proof, **new /5 geometry-aligned rubric**, O38 surface-vs-ball explanation and O23 FirstTry+Practice remediation. Previous completed fields below are historical where their source blobs differ. Active `STATE: BLOCKED_BY_AUTHORING` only pending affected independent NotebookLM Academic/PED; **not** due to SBT p25. Never count old unchanged-rubric claims for W07 v2.
+Original signed SGK canonical source has been restored exactly. Proposed W07 v2 remains in source-exact independent review packet, NOT active canonical. Updated current blocked Topic learner improves W07's mathematical prompt, detailed circle-vs-disk proof, **new /5 geometry-aligned rubric**, O38 surface-vs-ball explanation and O23 FirstTry+Practice remediation. Previous completed fields below are historical where their source blobs differ. Active `STATE: BLOCKED_BY_AUTHORING` only pending affected independent NotebookLM Academic/PED; **not** due to SBT p25. Never count old unchanged-rubric claims for W07 v2.
 
 <!-- TOP18_W07_O23_CURRENT_CONTENT_QUALITY_DELTA_20261120 -->
 ## Current AUTHORING candidate — corrected learner mathematics, reviewer affected-scope pending
 
 CANONICAL_LEARNER_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
-CANONICAL_G12_CHV_BANK_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
-TARGETED_AUTHOR_Q18_RECEIPT_BLOB: 347fa49647e3cb0f4abddcbf00c54e0df2d4e7e6
-TARGETED_NOTEBOOKLM_REVIEW_PACKET_BLOB: 06e3f32aa5857b12b3564e2ba98a2b74677017de
+CANONICAL_G12_CHV_BANK_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
+PROPOSED_W07_V2_BANK_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e (historical proposed Git commit; NOT active)
+TARGETED_AUTHOR_Q18_RECEIPT_BLOB: 82a31554d8f6187e951c189ac2b6c34a1622d5ef
+TARGETED_NOTEBOOKLM_REVIEW_PACKET_BLOB: 024977fcf4d3a9e351662cf5eb4150bde158aa45
 CURRENT_CANDIDATE_STATUS: AFFECTED_DELTA_C_NOTEBOOKLM_REVIEW_PENDING; not full-Topic newly signed PASS
 PUBLIC_CANONICAL_ITEM_ID: THPT-G12-B14-W07; CONTENT_VERSION: 2 (correct circle-vs-disk mathematical key; unique canonical)
 CURRENT_LEARNER_D6: TOP18-O23 FirstTry and Practice real steps; TOP18-O38 compares sphere surface vs ball interior
@@ -52,14 +53,14 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
-REVIEW_RECEIPT_BLOB: 347fa49647e3cb0f4abddcbf00c54e0df2d4e7e6
+REVIEW_RECEIPT_BLOB: 82a31554d8f6187e951c189ac2b6c34a1622d5ef
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
 ORIGINAL_S1_CROSSWALK_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_S1_40_OUTCOME_160_SGK_CANONICAL_CROSSWALK_20261114.md
 ORIGINAL_S1_CROSSWALK_BLOB: 7cba588cfe60d3675df99d8aa7e4b9275da9690e
 S1_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
-S1_G12_CHV_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
+S1_G12_CHV_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
 INTERACTIVE_MODEL_ID: SLM-TOP18-OXYZ-GEOMETRY-R00
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_THPT_TOPIC18_OXYZ_SPHERE_GEOMETRY_R00_20261114.html
 INTERACTIVE_MODEL_BLOB: 1117d351d6818f1b4f7b40b5b42a5263b225849a
