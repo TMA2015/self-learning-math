@@ -212,26 +212,38 @@ function main(){
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
  const lessonPaths=changed.filter(x=>LESSON.test(x)),receipts=changed.filter(x=>RECEIPT.test(x));
- assert.equal(lessonPaths.length,1,"Scoped production lane authorizes exactly ONE canonical lesson per push");
- assert(receipts.length>=1,"Scoped production requires a changed Q18 receipt for that lesson");
- assert.equal(process.env.SCOPED_LESSONS,lessonPaths[0],"Changed lesson must equal CI classifier output");
- const lesson=lessonPaths[0],now=fs.readFileSync(path.join(root,lesson));
- const previousContent=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root});
- const prev=blob(previousContent),currentBlob=blob(now);
- const candidate=receipts.filter(p=>{
-  const r=fs.readFileSync(path.join(root,p),"utf8");
-  return r.includes(lesson)||r.includes("B"+String(lesson.match(/bai-(\d+)\.md$/)[1]).padStart(2,"0"));
- });
- assert(candidate.length>=1,"No lesson-bound changed Q18 receipt");
- let matched=false,errors=[];
- for(const p of candidate){try{
-  verifySource(previousContent.toString("utf8"),now.toString("utf8"),
-   fs.readFileSync(path.join(root,p),"utf8"),prev,currentBlob);
-  matched=true;break;
- }catch(e){errors.push(p+": "+e.message)}}
- assert(matched,"No exact candidate Q18 receipt validates changed lesson: "+errors.join("; "));
- console.log("SCOPED_DEPLOY_SOURCE_PASS "+JSON.stringify({
-  lesson,previous_sha:prev,candidate_sha:currentBlob,first_tries:tokenSet(now.toString("utf8"),"data-thpt-first-try-id").length,
-  q16:"NO_ASSESSMENT_EXPOSURE",status:"TECHNICAL_SOURCE_ONLY_NOT_ACADEMIC_PASS"}));
+ const batch=PLACEMENT_BATCHES.find(b=>
+  b.lessons.length===lessonPaths.length&&b.lessons.every(x=>lessonPaths.includes(x))&&
+  receipts.includes(b.receipt));
+ assert(lessonPaths.length===1||Boolean(batch),
+  "Only one lesson or exact B07–B14/B15–B18 owner placement batch");
+ assert(receipts.length>=1,"Scoped production requires changed signed Q18 receipt");
+ if(batch)assert.equal(receipts.length,1,"Placement batch must have one exact Q18 receipt");
+ const expected=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).sort();
+ assert.deepEqual(expected,lessonPaths.slice().sort(),
+  "Scoped classifier must identify every changed canonical lesson");
+ for(const lesson of lessonPaths){
+  const now=fs.readFileSync(path.join(root,lesson));
+  const previousContent=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root});
+  const prev=blob(previousContent),currentBlob=blob(now);
+  const candidate=receipts.filter(p=>{
+   const receipt=fs.readFileSync(path.join(root,p),"utf8");
+   return receipt.includes(lesson)||
+    receipt.includes("B"+String(lesson.match(/bai-(\d+)\.md$/)[1]).padStart(2,"0"))||
+    Boolean(scopedBatchRow(receipt,lesson));
+  });
+  assert(candidate.length>=1,"No lesson-bound Q18 receipt for "+lesson);
+  let matched=false,errors=[];
+  for(const p of candidate){try{
+   verifySource(previousContent.toString("utf8"),now.toString("utf8"),
+    fs.readFileSync(path.join(root,p),"utf8"),prev,currentBlob,lesson);
+   matched=true;break;
+  }catch(e){errors.push(p+": "+e.message)}}
+  assert(matched,"No exact candidate receipt validates "+lesson+": "+errors.join("; "));
+  console.log("SCOPED_DEPLOY_SOURCE_PASS "+JSON.stringify({
+   lesson,previous_sha:prev,candidate_sha:currentBlob,
+   first_tries:tokenSet(now.toString("utf8"),"data-thpt-first-try-id").length,
+   q16:"NO_ASSESSMENT_EXPOSURE",status:"TECHNICAL_SOURCE_ONLY_NOT_ACADEMIC_PASS"}));
+ }
 }
 if(process.argv.includes("--self-test"))selfTest();else main();
