@@ -834,6 +834,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
      "DELTA_C_ACADEMIC_MATERIAL","B18_OUT_01","B18_OUT_04","P0=0","P1=0"])
      assert(r02.includes(token),"B18 R02 signed Q18 missing: "+token);
+    const r03path=path.join(root,
+     "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_EDITORIAL_POLISH_R03_20261120.md");
+    if(fs.existsSync(r03path)){
+     const r03=fs.readFileSync(r03path,"utf8");
+     const f03=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+     assert.equal(f03("PREVIOUS_B18_SOURCE_BLOB"),final,
+      "B18 final editorial R03 must extend exact R02");
+     const latest=f03("CANDIDATE_B18_SOURCE_BLOB");
+     assert(/^[0-9a-f]{40}$/.test(latest||"")&&latest!==final,
+      "B18 R03 must name exact new canonical source");
+     for(const token of ["DELTA_B_SOURCE_EQUIVALENT","DELTA_A_UI",
+      "Vận dụng","OWNER_B18_P2_PENDING","P0=0","P1=0"])
+      assert(r03.includes(token),"B18 source-equivalent R03 receipt missing: "+token);
+     return latest;
+    }
     return final;
    }
    return next;
