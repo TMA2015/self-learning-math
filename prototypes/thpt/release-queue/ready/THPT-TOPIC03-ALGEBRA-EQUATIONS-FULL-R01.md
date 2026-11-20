@@ -14,12 +14,12 @@ CURRENT_PR: #888 Draft chỉnh trực tiếp bản thảo của #820, no merge/d
 CATALOG_TOPIC_ID: CD03
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 8b0e5be33b42d8b1d3e743bb2502501789333075
+ACADEMIC_SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_VERIFIED, source corrected in place, no independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 537186b1763ef06bed205f45d8d3b907dc3c7aa2
+REVIEW_RECEIPT_BLOB: 65841734363d64cc474c359041d65e99535cae23
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: bce42a3ca18c4f783482d0af91b49a554db18d92
+AUTHOR_HANDOFF_BLOB: 8c6c7afc42edc5842ea7063c66cbb2f60c5b6c7a
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -110,3 +110,7 @@ The current learner file at ACADEMIC_SOURCE_PATH is the **only** active CĐ03 dr
 
 
 **20/11 SGK B17 Δ′ (Delta C):** mandatory reduced discriminant/conditions restored in current learner `8b0e5be33b42d8b1d3e743bb2502501789333075`; 6/6 targeted Q18; updated A1 `4f998f805133cf9945e002ed2680e6891a78e788`, Q18 `537186b1763ef06bed205f45d8d3b907dc3c7aa2`, V2 `bce42a3ca18c4f783482d0af91b49a554db18d92`. Owner content-ready retention; full 22-topic mandatory S1 audit incomplete. No production authorization.
+
+
+## 20/11/2026 authoring current source
+- Source 488cee3670af82ed9fd1f457d23a489e7ba8d063, Q18 65841734363d64cc474c359041d65e99535cae23, A1 386752c7cb3024a78ba5ad2d8969996cef6f3df0, V2 8c6c7afc42edc5842ea7063c66cbb2f60c5b6c7a. Three formal root-equation equivalence labels normalized (ΔA only), no merge/deploy.
