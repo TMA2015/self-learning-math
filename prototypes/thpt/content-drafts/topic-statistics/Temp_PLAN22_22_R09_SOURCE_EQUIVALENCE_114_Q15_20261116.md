@@ -1,3 +1,9 @@
+<!-- TOP22_R09_15_CANONICAL_KEYS_DELTA_B_AUTHOR_A1_20261121 -->
+## 21/11/2026 · Q15 exact source equivalence for 15 omitted answer conclusions
+
+**Original 114 canonical question + worked-solution bytes are preserved**; 15 exact signed answer keys from original G11/G12 banks were added only *inside existing answer disclosures*. Old source `155f14cc191800d52fce98b0f7df6ab30bb0faf4`, current `e4546cb506a40f1345da74bb9b2be5f73088e78b`, new author source-specific Q18 `8f52a4187854524556b8f889bc3b01455d02c2f5`. No changed mathematical answer/rubric/canonical ID. `DELTA_B_SOURCE_EQUIVALENT` per source parity diff; 15/15 key text matches 2 immutable original signed banks, 114/114 public markers unchanged, 127/127 opt-in disclosure balances, 9 selfchecks protected. P0/P1 in this delta=0, CONTENT_READY source-only pending real HEAD CI; no re-review for metadata-only or byte-equivalent canonical answer restoration.
+
+---
 <!-- TOP22_S1_NOTES_A1_UPDATED_20261120 -->
 **20/11 S1 G10 B13/B14 scope:** added clear standalone SGK notes on qualitative categorical mode and optional n−1-based dispersion statistic (distinct from descriptive variance n); source `4ff6bfde83f55a1390661f11c71cc66873f3ecdb`, existing Q18 `ccdba12524d042242f6f157dbd0c5ee263b85729`. Original Q15 114 canonical IDs and all answers unchanged, Delta C affected self-verification only. Content state unchanged; full 22 topic S1 audit pending.
 
@@ -19,9 +25,9 @@ CONTENT_REVISION: R09
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: 155f14cc191800d52fce98b0f7df6ab30bb0faf4
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: b4e842575c011a1efe24bb10ffa953bd19bbd652
+ACADEMIC_SOURCE_BLOB: e4546cb506a40f1345da74bb9b2be5f73088e78b
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
+REVIEW_RECEIPT_BLOB: 8f52a4187854524556b8f889bc3b01455d02c2f5
 PREVIOUS_R07_HANDOFF_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R07_HANDOFF_V2_20261115.md
 PREVIOUS_R07_HANDOFF_BLOB: 4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_KNOWLEDGE_ONLY
@@ -34,7 +40,7 @@ STATISTICS_FREQUENCY_SVG_PATH: prototypes/thpt/content-drafts/topic-statistics/a
 STATISTICS_FREQUENCY_SVG_BLOB: d7922d7caecb1030678d330d5b2bbb8b3596b7b3
 STATISTICS_BOXPLOT_SVG_PATH: prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_BOX_OUTLIER_R00_20261111.svg
 STATISTICS_BOXPLOT_SVG_BLOB: 4798c4e6bd8fb1730dedcfe03581e14a6514f972
-SOURCE_EQUIVALENCE: 114/114 canonical Practice and 127/127 revealed lesson/solution blocks exact; original 39 outcomes/13 lessons/9 public selfchecks unchanged.
+SOURCE_EQUIVALENCE: 114/114 canonical Practice stems/old solutions byte-exact, plus 15 exact original approved keys restored inside their opt-in details; 127/127 balanced disclosures, 39 outcomes/13 lessons/9 public selfchecks unchanged.
 OWNER_CATALOG_DECISION: UNASSIGNED_OWNER_DECISION
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 RELEASE_AUTHORIZATION: NO
