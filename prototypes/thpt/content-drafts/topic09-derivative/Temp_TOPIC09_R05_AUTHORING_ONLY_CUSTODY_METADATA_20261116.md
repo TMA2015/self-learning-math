@@ -2,9 +2,9 @@
 
 R03_IMMUTABLE_GIT_BLOB: 52be5ef6b8684632435ae22429bf7b5db5cf50cf
 CURRENT_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-CURRENT_LEARNER_SOURCE_BLOB: fbd59ed68d26558cad85204b5937370822430364
+CURRENT_LEARNER_SOURCE_BLOB: a414d05a4039c6988f533978870f4bfe35ece71a
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 090a33d5e31432d201d8eb1847f435350d82f299
+CURRENT_Q18_RECEIPT_BLOB: 864c9564f0224be4a26c8f2ed9d615dc58f2957a
 STATUS: R05_Q18_AUTHOR_SELF_VERIFIED_PENDING_V2_GATE
 
 ## 18/11/2026 — Active source correction, signed scoped Q18 provenance
@@ -173,3 +173,9 @@ DELTA_C_P23: Original R01 bank immutable; R04 canonical P23 says "tập xác đ�
 
 
 **Owner ΔA 19/11:** learner Git blob `fbd59ed68d26558cad85204b5937370822430364` Q18 `090a33d5e31432d201d8eb1847f435350d82f299`; 32/32 lessons; original mathematical content and canonical items unchanged, CONTENT_READY retained.
+
+
+## 20/11/2026 current provenance lock
+- CURRENT_LEARNER_SOURCE_BLOB: a414d05a4039c6988f533978870f4bfe35ece71a
+- CURRENT_Q18_RECEIPT_BLOB: 864c9564f0224be4a26c8f2ed9d615dc58f2957a
+- Seven Knowledge callout types corrected only; all math and single canonical ownership unchanged.
