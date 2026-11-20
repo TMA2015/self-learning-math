@@ -1219,22 +1219,22 @@ Từ phương trình x²+y²+z²+Dx+Ey+Fz+G=0, hoàn thành bình phương từn
 
 </details>
 
-### 7.3. Điểm trong, trên hay ngoài cầu
+### 7.3. Điểm ở đâu so với mặt cầu?
 
 <!-- LESSON_ID: TOP18-M38; OUTCOME_ID: TOP18-O38; S1_ORIGINAL_OUTCOME: G12-CHV-B17-O03; SCOPE: G12_CHV -->
 
-Muốn biết điểm nằm trong/trên/ngoài mặt cầu, so CM² với R² thay vì bấm căn. Nếu nhỏ hơn là nằm trong, bằng là trên, lớn hơn là ngoài. Điều này là bài kiểm tra vị trí tương đối, không tự cho biết điểm có 'phía trước' trên hình phối cảnh.
+Với **mặt cầu** tâm C bán kính R>0, chỉ những điểm M có CM²=R² mới thuộc mặt cầu. Nếu CM²<R², M nằm **bên trong khối cầu**, không nằm trên mặt cầu; nếu CM²>R² thì M ở ngoài cả khối cầu. So các bình phương trước khi bấm căn để khỏi nhầm mặt cầu (lớp biên) với khối cầu (gồm lớp biên và phần bên trong). Hình phối cảnh không đủ để quyết định vị trí nếu chưa tính tọa độ.
 
 > **PHƯƠNG PHÁP — Điểm trong, trên hay ngoài cầu**
 >
-> Muốn biết điểm nằm trong/trên/ngoài mặt cầu, so CM² với R² thay vì bấm căn.
+> Với tâm C và R>0, so CM² với R²: bằng nhau là **trên mặt cầu**; nhỏ hơn là **trong khối cầu**; lớn hơn là **ngoài khối cầu**.
 
 
 **Ví dụ**
 
-**Đề bài:** Trong hệ Oxyz, mặt cầu có tâm O(0;0;0) và bán kính R=5. Hãy xác định M(3;4;0) và N(1;1;1) nằm trong, trên hay ngoài mặt cầu.
+**Đề bài:** Mặt cầu tâm O(0;0;0), bán kính R=5. Điểm nào thuộc **mặt cầu**, điểm nào chỉ nằm **trong khối cầu**: M(3;4;0) hay N(1;1;1)?
 
-**Lời giải:** Mặt cầu tâm O, R=5; M=(3,4,0) có CM²=9+16=25 nên nằm trên. N=(1,1,1) có CM²=3<25 nên nằm trong. So CM² với R² tránh bấm căn không cần thiết.
+**Lời giải:** R²=25. Với M(3;4;0), OM²=9+16+0=25 nên M **thuộc mặt cầu**. Với N(1;1;1), ON²=3<25 nên N **nằm trong khối cầu nhưng không thuộc mặt cầu**. Dấu bằng là ranh giới quan trọng; chỉ kiểm hình vẽ hoặc nói chung chung “nằm trong mặt cầu” dễ gây nhầm lẫn.
 
 **Vận dụng:** Với mặt cầu tâm O R=3, điểm (0,0,4) ở đâu?
 
@@ -1244,7 +1244,7 @@ Muốn biết điểm nằm trong/trên/ngoài mặt cầu, so CM² với R² th
 
 Ngoài mặt vì khoảng cách bình phương 16>9.
 
-**D6 — Khi chưa đúng:** So bình phương khoảng cách và bán kính; nếu nhầm tâm, thay hệ tọa độ dịch chuyển M−C.
+**D6 — Khi chưa đúng:** Viết rõ \(CM^2=(x-a)^2+(y-b)^2+(z-c)^2\), rồi so với \(R^2\), không so với R. Hãy tô vòng biên của một hình tròn trên giấy: điểm **trên biên** ứng với mặt cầu; điểm **bên trong biên** là trong khối cầu chứ không thuộc mặt cầu.
 
 </details>
 
@@ -1322,7 +1322,7 @@ Không, vì khoảng cách tâm–mặt d=6>R.
 
 <!-- LESSON_ID: TOP18-M23; OUTCOME_ID: TOP18-O23; S1_ORIGINAL_OUTCOME: G12-CHV-B14-O07; SCOPE: OPTIONAL_AFTER_B17 -->
 
-**Mở rộng tích hợp sau B17, không dùng để kiểm tra Core B14 trước khi học mặt cầu.** Khi cắt mặt cầu bằng mặt phẳng, chỉ cần so khoảng cách d từ tâm C đến mặt phẳng với bán kính R: d>R không cắt, d=R tiếp xúc, d<R cho đường tròn bán kính √(R²−d²). Đây là ứng dụng nối hình học mặt phẳng và hình học mặt cầu, không phải định lí mới thay SGK B14.
+**Mở rộng sau khi đã học mặt cầu và cách tính khoảng cách điểm–mặt phẳng.** Khi cắt mặt cầu bằng mặt phẳng, chỉ cần so khoảng cách d từ tâm C đến mặt phẳng với bán kính R: d>R không cắt, d=R tiếp xúc, d<R cho đường tròn bán kính √(R²−d²). Đây là ứng dụng nối hình học mặt phẳng và hình học mặt cầu, không phải định lí mới thay SGK B14.
 
 > **TÍNH CHẤT — Mặt cắt và khoảng cách đến mặt cầu**
 >
@@ -1333,7 +1333,7 @@ Không, vì khoảng cách tâm–mặt d=6>R.
 
 **Đề bài:** Sau khi học B17, cho mặt cầu tâm C(1;−2;3), bán kính 13 và mặt phẳng z=8. Xác định tâm, bán kính thiết diện và giải thích vì sao điều kiện d<R quan trọng.
 
-**Lời giải:** Chân đường vuông góc từ tâm C xuống mặt z=8 là H(1;−2;8), nên d(C,(P))=5<13. Mặt cắt là đường tròn tâm H với bán kính r=√(13²−5²)=√144=12. Độ dài r không phải bán kính cầu 13, vì mặt phẳng không qua tâm. Bài kết hợp phương pháp khoảng cách điểm–mặt và kiến thức mặt cầu sau B17, không lấy làm Core bắt buộc ở B14.
+**Lời giải:** Chân đường vuông góc từ tâm C xuống mặt z=8 là H(1;−2;8), nên d(C,(P))=5<13. Mặt cắt là đường tròn tâm H với bán kính r=√(13²−5²)=√144=12. Độ dài r không phải bán kính cầu 13, vì mặt phẳng không qua tâm. Bài này kết hợp hai kiến thức đã học: khoảng cách điểm–mặt phẳng và định nghĩa mặt cầu; hãy vẽ chân vuông góc H trước khi dùng Pitago.
 
 **Vận dụng:** Mặt cầu tâm O R=4, mặt z=4 cắt theo hình gì?
 
@@ -3643,13 +3643,13 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W07; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
-**Tự luận SGK 40.** Giải thích ba trường hợp giao của cầu tâm cách mặt phẳng h và bán kính R.
+**Tự luận SGK 40.** Cho **mặt cầu** tâm I, bán kính R>0 và mặt phẳng (P) cách I một khoảng h≥0. Giải thích ba trường hợp giao của **mặt cầu** với (P), nêu rõ giao là đường tròn, một điểm hay không có điểm chung.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 - **Đáp án:** Với \(h<R\), giao của **mặt cầu** và mặt phẳng là **đường tròn** bán kính \(r=\sqrt{R^2-h^2}\), không phải hình tròn chứa phần bên trong; với \(h=R\), tiếp xúc tại một điểm; với \(h>R\), không có điểm chung.
-- **Lời giải có suy luận:** Dùng vuông góc tâm–mặt phẳng và r²=R²−h² khi vế phải không âm.
-- **Thang tự đối chiếu /5 (theo từng bước):** 2đ xác định khoảng cách tâm–mặt và điều kiện h so R; 1đ lập r²+h²=R²; 1đ tính bán kính/3 trường hợp; 1đ giải thích ý nghĩa vật lý.
+- **Lời giải có suy luận:** Gọi H là hình chiếu vuông góc của I lên (P), IH=h. Khi 0≤h<R, với mọi M thuộc giao tuyến, tam giác IHM vuông tại H nên HM²=IM²−IH²=R²−h²>0: M nằm trên đường tròn tâm H, bán kính r=√(R²−h²), không phải cả đĩa tròn. Khi h=R, HM=0 nên chỉ H thuộc giao; h>R làm HM²<0 nên không có điểm chung.
+- **Thang tự đối chiếu /5 (theo từng bước):** 2đ xác định h, R và phân loại đúng h<R, h=R, h>R; 1đ dựng H và giải thích tam giác vuông IHM; 1đ suy ra r²+h²=R² và bán kính khi h<R; 1đ phân biệt đường tròn thuộc **mặt cầu** với hình tròn (đĩa) thuộc **khối cầu**, đồng thời kết luận đúng trường hợp tiếp xúc/không giao.
 
 </details>
 
@@ -3660,7 +3660,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 r=√(100−36)=8. Nếu mặt ở z=11 thì d>R nên không có giao.
 
-**Đường khắc phục D6:** Cần học khái niệm mặt cầu B17 trước; không cho O23 làm outcome Core bắt buộc của B14 hay SGK-ChII.
+**Đường khắc phục D6:** Nếu ra bán kính bằng 10 thay vì 8, em đã lấy nhầm bán kính **mặt cầu** làm bán kính đường tròn **giao tuyến**. Hãy tính d=6 từ tâm đến mặt z=6, rồi dùng r²+d²=R² để tìm r. Kiểm r<R khi mặt phẳng không qua tâm.
 
 </details>
 
