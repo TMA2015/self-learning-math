@@ -1,7 +1,16 @@
-<!-- TOP18_W07_O38_O23_CURRENT_CANDIDATE_NO_CROSS_SGK_MUTATION_20261120 -->
-## Academic candidate — source-corrected learner, signed SGK bank untouched
+<!-- TOP18_W07_O38_O23_REVIEWER_PASS_Q15_HOLD_20261120 -->
+## Reviewer Academic/PED PASS received — W07 v2 awaits only controlled single-canonical promotion
 
-Latest blocked Topic learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3` gives a fully reasoned W07 v2 lesson answer/rubric and O38/O23 self-learning corrections. **Signed active original G12 CHV canonical remains unchanged at blob `11eb2834cfdb4a24685157f84666c2bb0767970a`.** The proposed W07 v2 original-bank version `a24abd682932e11761f7c85fa3a3d3cdd77b600e` exists only as a *past candidate blob*; it is embedded as exact W07 proposed item text in NotebookLM packet `024977fcf4d3a9e351662cf5eb4150bde158aa45`. Therefore no parallel ACTIVE canonical, no effect on signed SGK R01 or 79-lesson inventories. Affected author-Q18 `82a31554d8f6187e951c189ac2b6c34a1622d5ef`, A1 `418d516c6f4647e504efa4f3c061f0f569094a00`. Only after independent Academic + PED PASS may W07 v2 be promoted into the shared canonical and its dependent historical manifests reconciled under Delta C. Current Topic candidate remains **BLOCKED_BY_AUTHORING**; historic accepted source `bcc7cb6...` remains source-scoped CONTENT_READY. No SBT p25 requirement, merge/deploy, Mastery or RELEASE authorization.
+**Owner-provided independent reviewer evidence** for W07 v2, O38 and O23 (O40 context) confirms **Academic PASS / PED PASS**, P0=0/P1=0/P2=0, MINIMAL_DELTA=NONE. The prior independent NotebookLM-review-pending blocker is **CLOSED**. The new source had its canonical W07 v2 question/answer/reasoning/rubric independently accepted.
+
+INDEPENDENT_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_W07_O38_O23_NOTEBOOKLM_INDEPENDENT_ACADEMIC_PED_PASS_20261120.md
+INDEPENDENT_REVIEW_RECEIPT_BLOB: fac6e71538a1e0b1d2cd2d216bc6abaef9d27bba
+INDEPENDENT_REVIEW_SCOPE: THPT-G12-B14-W07 v2; TOP18-O38; TOP18-O23; TOP18-O40 (unchanged context)
+INDEPENDENT_ACADEMIC_VERDICT: PASS_AFFECTED_SCOPE
+INDEPENDENT_PED_VERDICT: PASS_AFFECTED_SCOPE
+OPEN_AUTHORING_BLOCKER: W07_V2_SINGLE_ACTIVE_CANONICAL_PROMOTION_Q15_Q18
+
+**Why Q15 is still open:** Current blocked learner `1ad945ea583ce7ee91df64b58d3f31b31c202cd3` projects corrected W07 version2, but the signed active shared G12 CHV bank `11eb2834cfdb4a24685157f84666c2bb0767970a` still carries the original W07 version1. Version2 proposed source `a24abd682932e11761f7c85fa3a3d3cdd77b600e` has been reviewed but remains not activated. Promote a single canonical with SGK consumer reconciliation only under a subsequent controlled AUTHORING Delta C. Historical CONTENT_READY signed version remains immutable. **STATE remains BLOCKED_BY_AUTHORING, not CONTENT_READY**, no source/page SBT issue. No merge/deploy.
 
 ---
 
@@ -25,9 +34,9 @@ ACADEMIC_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_O40_O23_W07_AUTHOR_Q18_CONTENT_DELTA_20261120.md
 REVIEW_RECEIPT_BLOB: 82a31554d8f6187e951c189ac2b6c34a1622d5ef
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 418d516c6f4647e504efa4f3c061f0f569094a00
+AUTHOR_A1_A7_BLOB: 9987f1995c7eb41ab812cd5a555bc3ae603b9eaa
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R06_247_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 418d516c6f4647e504efa4f3c061f0f569094a00
+AUTHOR_METADATA_BLOB: 9987f1995c7eb41ab812cd5a555bc3ae603b9eaa
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
@@ -43,7 +52,7 @@ P0: 0
 P1: 0
 P2: 1
 P2_NOTE: SBT_P25_ORIGINAL_SCAN_NOT_AVAILABLE_NONBLOCKING; CONTENT_MATH_VERIFIED_INDEPENDENTLY
-BLOCKERS: CĐ18_W07_O38_O23_DELTA_C_AFFECTED_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING
+BLOCKERS: W07_V2_SINGLE_ACTIVE_CANONICAL_PROMOTION_Q15_Q18
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
