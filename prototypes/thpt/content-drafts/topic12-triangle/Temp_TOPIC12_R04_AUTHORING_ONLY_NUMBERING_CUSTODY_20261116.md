@@ -1,9 +1,9 @@
 # AUTHORING-only metadata — CĐ12 R04
 
 CURRENT_R04_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-CURRENT_R04_LEARNER_SOURCE_BLOB: ece977f22531dfa8e46eeda8ba0c55dc449453e4
+CURRENT_R04_LEARNER_SOURCE_BLOB: 2bdd119a4ce8d9148d3cd11c29e72686925299e5
 CURRENT_R04_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_R04_Q18_RECEIPT_BLOB: 94c53487cec5f9f52b8d50044b67dea78b5e6d68
+CURRENT_R04_Q18_RECEIPT_BLOB: 93cc88024dbff84f7c7ed6e7fad3b152e3b9525e
 CURRENT_R04_NEW16_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 CURRENT_R04_NEW16_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 AUTHORING_STATUS: R04_NUMBERING_DELTA_A_AUTHOR_SELF_VERIFIED
@@ -167,3 +167,9 @@ No duplicate item/answer/rubric introduced. W05 mathematical rubric now matches 
 
 
 **19/11 owner editorial:** source/Q18 relocked after 12 example-label Delta A, no change to canonical objects or outcome mathematics; `CONTENT_READY` preserved.
+
+
+## 20/11/2026 — current learner heading/evidence lock
+- CURRENT_R04_LEARNER_SOURCE_BLOB: 2bdd119a4ce8d9148d3cd11c29e72686925299e5
+- CURRENT_R04_Q18_RECEIPT_BLOB: 93cc88024dbff84f7c7ed6e7fad3b152e3b9525e
+- Five inline narrative `Ví dụ` prefixes made `Chẳng hạn` to distinguish existing independent 12 Ví dụ–Đề bài–Lời giải; source-equivalent Delta A only, 34 canonical items preserved. Other metadata remains historical.
