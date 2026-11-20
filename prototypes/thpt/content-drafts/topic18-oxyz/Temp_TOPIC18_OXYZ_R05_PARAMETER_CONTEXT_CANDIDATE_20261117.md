@@ -3647,7 +3647,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-- **Đáp án:** Nếu \(h<R\), giao tuyến của **mặt cầu** và mặt phẳng là **đường tròn** bán kính \(r=\sqrt{R^2-h^2}\) (không phải cả hình tròn gồm phần bên trong); nếu \(h=R\), hai mặt có đúng một tiếp điểm; nếu \(h>R\), không có điểm chung.
+- **Đáp án:** Với \(h<R\), giao của **mặt cầu** và mặt phẳng là **đường tròn** bán kính \(r=\sqrt{R^2-h^2}\), không phải hình tròn chứa phần bên trong; với \(h=R\), tiếp xúc tại một điểm; với \(h>R\), không có điểm chung.
 - **Lời giải có suy luận:** Dùng vuông góc tâm–mặt phẳng và r²=R²−h² khi vế phải không âm.
 - **Thang tự đối chiếu /5 (theo từng bước):** 2đ xác định khoảng cách tâm–mặt và điều kiện h so R; 1đ lập r²+h²=R²; 1đ tính bán kính/3 trường hợp; 1đ giải thích ý nghĩa vật lý.
 
