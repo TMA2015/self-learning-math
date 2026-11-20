@@ -13,13 +13,13 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 9c427674ea0263b8cf7e1e191f1f9a81c3261e91
+ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: e1050266fd69bf18eefaa40264962fbd6c6f0010
+REVIEW_RECEIPT_BLOB: 034147514b8a3d2b8af026575a4294673d38deb8
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
+AUTHOR_A1_A7_BLOB: f4465ddd4dedad670f7febdb3c163fa48567b1b0
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
+AUTHOR_METADATA_BLOB: f4465ddd4dedad670f7febdb3c163fa48567b1b0
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
@@ -267,3 +267,7 @@ This handoff retains its prior file path and packet identifier for stable links 
 - **Q18 self-verified exact SHA** `e1050266fd69bf18eefaa40264962fbd6c6f0010`, **A1–A7** `7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9`, one current V2 and ready. O10 independent frustum exploration `V=48(1+k+k²)` for k∈[0,1] checks k=0=>48, 1/2=>84, 1=>144 cm³, explanation no longer assumes an installed slider (`DELTA_C_ACADEMIC_MATERIAL` PED/Knowledge affected scope). O11 stem says lăng trụ đứng with **right-triangle base**, legs 6/8cm, h7cm, unchanged 168cm³=0.168L and original canonical answers/rubrics (`DELTA_B_SOURCE_EQUIVALENT`). Selfcheck guidance is actionable learner wording; D5 orphan Practice H2 now hidden metadata comment (`DELTA_A_UI`). Source author Q18 directly verifies affected math, not a new full independent NotebookLM PASS.
 - **Q15/Q16 invariant:** 12 lessons/outcomes, 49 unique canonical IDs =22 G11 SGK original+12 Try+12 Practice+3 Written, 37 Practice cards, 8 same-public-ID Selfcheck replays question-only, 49 voluntary solution details. Original G11 S1 source `afc8ec039213b87b4930f2d34d48c28d1fc6277f` present on same branch, no duplicate SGK body/key/rubric. Two actual SVG learner figures `26fb51f3af65ba7d86a2907f0eaff808d2d87532` and `a7bec7a20295d09ca6f32aae0e8910cef7bed9dc` source-exact. Auxiliary HTML model `cfb2bd522531167003eeae8e7342c6d1349ca425` differs from prior `727c05896a9d9bf95385b54559faa22917f1510e` by only an HTML metadata comment and 17 Golden CSS lines; all prior JS/math remains identical. This does **not** imply browser feature availability or UAT.
 - Historical R00 ready blob `359ff8026b193c37a6f9a98ea2344ecd1ff6c0c2` archived byte-for-byte and removed from active ready/REGISTER. Current only R02 packet with R03 learner content and exact SHA chain. Original R00 QA remain historical; no protected RD1/official Readiness/Mastery, website integration, merge/deploy or owner release approval.
+
+
+## 20/11/2026 — current V2 Delta A/PED6
+- Learner `b5e24f5d39e83df46ada64a5b5665af9e0888e2f`, Q18 `034147514b8a3d2b8af026575a4294673d38deb8`, A1 `f4465ddd4dedad670f7febdb3c163fa48567b1b0`; frustum exploration now self-try before voluntary reveal, unchanged math and canonical bank. No website release claim.
