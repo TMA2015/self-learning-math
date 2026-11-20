@@ -14,17 +14,17 @@
 # PLAN22-22 R09 AUTHORING-only source parity and continuous numbering custody
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 CONTENT_REVISION: R09
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: dfe01e7dfcf554b11834ac0c93a5eaf2af7aa3eb
+ACADEMIC_SOURCE_BLOB: 155f14cc191800d52fce98b0f7df6ab30bb0faf4
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 321de289313150d5ac2025f47a6e7d3593de1c9b
+REVIEW_RECEIPT_BLOB: b4e842575c011a1efe24bb10ffa953bd19bbd652
 PREVIOUS_R07_HANDOFF_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R07_HANDOFF_V2_20261115.md
 PREVIOUS_R07_HANDOFF_BLOB: 4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92
-DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_KNOWLEDGE_ONLY
 PACKET_ID: THPT-TOPIC-STATISTICS-G10-G12-FULL-R09
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
@@ -66,3 +66,8 @@ RELEASE_AUTHORIZATION: NO
 - ACADEMIC_SOURCE_BLOB: dfe01e7dfcf554b11834ac0c93a5eaf2af7aa3eb
 - REVIEW_RECEIPT_BLOB: 321de289313150d5ac2025f47a6e7d3593de1c9b
 - Only 14 formal callout labels changed. 114 canonical stems/answers/rubrics/placements and protected assessment remain byte-equivalent; no additional S1 coverage PASS claimed.
+
+
+## 20/11 complete S1 Knowledge statistics G10–G12 39/39
+
+One current learner `155f14cc191800d52fce98b0f7df6ab30bb0faf4`, Q18 author self `b4e842575c011a1efe24bb10ffa953bd19bbd652`. Expanded §§1.1,1.5,2.1,2.2,2.3,3.3 on accuracy bound, variance algebra/units, class width–density, raw vs grouped mean and variance, cumulative quartile boundary. Exact 39 outcome references, 13 lessons, 114 original Practice canonical, 19 original Written, 9 public question-only Selfchecks and 2 SVG. All original Practice/Selfcheck byte-identical. P2 provenance of earlier reviewer SGK page-index remains unresolved, not fresh PDF re-verification. AUTHOR_SELF_VERIFIED v3.2 not independent Topic reviewer or release.
