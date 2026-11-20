@@ -705,6 +705,23 @@ function expectedG10KnowledgeBlob(lesson,legacy){
    }
    return current;
   }
+  if(name==="B20"){
+   assert(chvii&&chvii.candidate==="510f79eb61930e9b0d7795d4b0288fd29ccb0675",
+    "B20 owner Q18 must extend exact immutable 13/11 signed ChVII source");
+   const r20=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHVII_B20_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
+   const field=k=>r20.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("PREVIOUS_B20_SOURCE_BLOB"),chvii.candidate,
+    "B20 current release must preserve original published source history");
+   const current=field("CANDIDATE_B20_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==chvii.candidate,
+    "B20 source must be exact signed new candidate");
+   for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+    "G10-B20-RELATIVE_POSITION","G10-B20-ANGLE","OWNER_P2_PENDING","P0=0","P1=0"]){
+    assert(r20.includes(token),"B20 owner Q18 missing: "+token);
+   }
+   return current;
+  }
   const ux=chviExampleUxReceiptRows().get(name);
   if(name==="B15"){
    assert(ux&&ux.baseline===row.candidate,
