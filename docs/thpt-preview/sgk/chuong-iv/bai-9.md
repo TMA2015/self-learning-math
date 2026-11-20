@@ -127,6 +127,19 @@
 
         **Vì sao:** G nằm giữa A và M, AG:GM=2:1 nên AM gồm 3 phần, AG chiếm 2 phần. Hai vectơ A→G, A→M cùng hướng.
 
+
+    <span data-thpt-help-id="HELP-G10-B09-02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Lỗi cần kiểm:** Nhầm tỉ số trung điểm/trọng tâm với tỉ số vectơ
+
+        <p><strong>Vì sao sai?</strong> Trung điểm quyết định vị trí và độ dài bằng nhau, nhưng chiều của $\overrightarrow{MA}$ ngược với $\overrightarrow{AM}$. Trọng tâm $G$ chia trung tuyến $AM$ theo tỉ số $AG:GM=2:1$, nên $AG:AM=2:3$, không phải $2:1$.</p>
+        <ol><li><strong>Vẽ hình:</strong> đánh dấu $M$ là trung điểm $BC$ và $G$ nằm trên $AM$.</li><li><strong>Đọc mũi tên:</strong> xác định chính xác điểm đầu, điểm cuối trước khi đặt dấu hệ số.</li><li><strong>Dùng đúng tỉ số:</strong> $\overrightarrow{AG}=\tfrac23\overrightarrow{AM}$ và $\overrightarrow{AM}=\tfrac12(\overrightarrow{AB}+\overrightarrow{AC})$.</li><li><strong>Kiểm lại:</strong> kết quả phải là $\overrightarrow{AG}=\tfrac13(\overrightarrow{AB}+\overrightarrow{AC})$; đổi $AG$ thành $GA$ thì đổi dấu.</li></ol>
+        <p><strong>Ôn lại:</strong> Xem Ví dụ 2 về trung điểm và Ví dụ 3 về trọng tâm, rồi làm một câu luyện tập tương ứng.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+
+
+
     ### Vì sao phải phân tích một vectơ?
 
     Khi một vị trí dịch chuyển theo **hai phương độc lập** (chẳng hạn dọc hai cạnh không song song của một hình bình hành), ta muốn xác định đã đi bao nhiêu lần theo từng hướng. Một mũi tên tổng có thể tách thành hai mũi tên thành phần theo hai phương ấy; đây là ý tưởng **phân tích một vectơ theo hai vectơ không cùng phương**. Nếu hai hướng lại cùng phương, ta không thể xác định duy nhất hai hệ số: một phần dịch chuyển có thể chuyển từ hướng này sang hướng kia mà kết quả không đổi.
@@ -279,15 +292,6 @@
         <p><strong>Vì sao sai?</strong> Hệ số $k$ có thể âm, nhưng độ dài vectơ luôn không âm. Vì vậy $|k\vec u|=|k|\,|\vec u|$, không phải $k|\vec u|$.</p>
         <ol><li><strong>Tìm độ dài:</strong> thay $k$ bằng $|k|$ trước khi nhân độ dài.</li><li><strong>Xét hướng:</strong> nếu cả $k$ và $\vec u$ khác 0 thì $k>0$ giữ hướng, $k<0$ đảo hướng.</li><li><strong>Xét trường hợp đặc biệt:</strong> $k=0$ hoặc $\vec u=\vec0$ thì được vectơ-không; không gán hướng riêng cho vectơ-không.</li><li><strong>Thử kiểm:</strong> nếu $|\vec u|=4$ cm, hãy tự mô tả $-2\vec u$ rồi đối chiếu với Ví dụ 1.</li></ol>
         <p><strong>Ôn lại:</strong> Nếu vẫn nhầm, quay về định nghĩa trong tab Kiến thức SGK, sau đó luyện câu về độ dài và chiều của vectơ.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
-
-    <span data-thpt-help-id="HELP-G10-B09-02" hidden></span>
-
-    ??? tip "Nhầm tỉ số trung điểm/trọng tâm với tỉ số vectơ"
-
-        <p><strong>Vì sao sai?</strong> Trung điểm quyết định vị trí và độ dài bằng nhau, nhưng chiều của $\overrightarrow{MA}$ ngược với $\overrightarrow{AM}$. Trọng tâm $G$ chia trung tuyến $AM$ theo tỉ số $AG:GM=2:1$, nên $AG:AM=2:3$, không phải $2:1$.</p>
-        <ol><li><strong>Vẽ hình:</strong> đánh dấu $M$ là trung điểm $BC$ và $G$ nằm trên $AM$.</li><li><strong>Đọc mũi tên:</strong> xác định chính xác điểm đầu, điểm cuối trước khi đặt dấu hệ số.</li><li><strong>Dùng đúng tỉ số:</strong> $\overrightarrow{AG}=\tfrac23\overrightarrow{AM}$ và $\overrightarrow{AM}=\tfrac12(\overrightarrow{AB}+\overrightarrow{AC})$.</li><li><strong>Kiểm lại:</strong> kết quả phải là $\overrightarrow{AG}=\tfrac13(\overrightarrow{AB}+\overrightarrow{AC})$; đổi $AG$ thành $GA$ thì đổi dấu.</li></ol>
-        <p><strong>Ôn lại:</strong> Xem Ví dụ 2 về trung điểm và Ví dụ 3 về trọng tâm, rồi làm một câu luyện tập tương ứng.</p><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
-
 
     ??? tip "Đảo dấu khi phân tích vectơ theo hai vectơ không cùng phương"
 

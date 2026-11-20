@@ -133,6 +133,22 @@
 
         **Nếu nhầm:** Mở mục lỗi 4.3, rồi chọn bộ số mới trong Luyện tập; không dùng kết quả vừa xem làm chứng cứ độc lập.
 
+
+    <span data-thpt-help-id="HELP-G10-B12-CALC-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Lỗi cần kiểm:** Nhập nhầm căn bậc ba hoặc quy tròn quá sớm
+
+        **Cách làm sai:** Muốn tính \(\sqrt[3]{7}\) nhưng nhập \(7/3\), hoặc thay \(\sqrt[3]{7}\) bằng \(1{,}9\) rồi tự nhận kết quả chính xác đến hàng phần nghìn.
+
+        **Vì sao sai:** Chia 7 cho 3 khác với căn bậc ba của 7; làm tròn quá sớm sẽ làm mất chữ số cần dùng. Số chữ số hiển thị trên máy không tự nói gì về sai số của một phép đo khác.
+
+        **Tự sửa:** Dùng chức năng căn bậc ba hoặc nhập \(7^{(1/3)}\) có ngoặc. Đổi sang thập phân, đọc đủ chữ số, sau đó mới làm tròn. Khi yêu cầu cận \(0{,}0005\), có thể kiểm \(1{,}9125^3<7<1{,}9135^3\) để chứng minh gần đúng \(1{,}913\).
+
+        **Luyện lại:** Làm câu P07 ở Core/Luyện tập trên máy thật trước khi mở đáp án. Nếu đã xem đáp án, chọn \(\sqrt[3]{13}\) làm bộ số luyện độc lập.
+
+
     ### 1.4. Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Số đúng, số gần đúng, sai số tuyệt đối, độ chính xác, sai số tương đối, quy tròn và chữ số đáng tin cậy.
@@ -234,18 +250,6 @@
 
         <ol><li><strong>Nhận diện lỗi:</strong> Dùng số đúng (chưa biết) thay cho số gần đúng khi tính sai số tương đối, hoặc nhầm cận sai số với sai số thực.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Em lấy \(\frac{\Delta_a}{|\bar{a}|}\) thay cho \(\frac{\Delta_a}{|a|}\)? Khi chỉ biết độ chính xác \(d\), em đã nhầm \(\Delta_a=d\) chưa?</li><li><strong>Kiến thức gốc:</strong> Với số gần đúng \(a\ne0\), \(\delta_a=\frac{\Delta_a}{|a|}\). Nếu chỉ biết \(\Delta_a\le d\) thì chỉ suy \(\delta_a\le\frac{d}{|a|}\); không khẳng định \(\delta_a=\frac{d}{|a|}\) khi chưa biết sai số thực.</li><li><strong>Tự sửa:</strong> Xác định lại \(a,\bar{a},\Delta_a,d\); tính cận phần trăm đúng theo \(a\) và nói rõ dấu \(\le\).</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-P06.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B12-P06">Luyện lại bằng câu hỏi đã có</a></p>
 
-
-    <span data-thpt-help-id="HELP-G10-B12-CALC-01" hidden></span>
-
-    ??? tip "4.3. Nhập nhầm căn bậc ba hoặc quy tròn quá sớm"
-
-        **Cách làm sai:** Muốn tính \(\sqrt[3]{7}\) nhưng nhập \(7/3\), hoặc thay \(\sqrt[3]{7}\) bằng \(1{,}9\) rồi tự nhận kết quả chính xác đến hàng phần nghìn.
-
-        **Vì sao sai:** Chia 7 cho 3 khác với căn bậc ba của 7; làm tròn quá sớm sẽ làm mất chữ số cần dùng. Số chữ số hiển thị trên máy không tự nói gì về sai số của một phép đo khác.
-
-        **Tự sửa:** Dùng chức năng căn bậc ba hoặc nhập \(7^{(1/3)}\) có ngoặc. Đổi sang thập phân, đọc đủ chữ số, sau đó mới làm tròn. Khi yêu cầu cận \(0{,}0005\), có thể kiểm \(1{,}9125^3<7<1{,}9135^3\) để chứng minh gần đúng \(1{,}913\).
-
-        **Luyện lại:** Làm câu P07 ở Core/Luyện tập trên máy thật trước khi mở đáp án. Nếu đã xem đáp án, chọn \(\sqrt[3]{13}\) làm bộ số luyện độc lập.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

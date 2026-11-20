@@ -88,6 +88,22 @@
 
         **Vì sao:** vận tốc theo bờ \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thành phần hướng Bắc \(5\,\mathrm{m/s}\) quyết định thời gian \(t=60/5=12\,\mathrm s\); do đó độ trôi ngang \(3\cdot12=36\,\mathrm m\). Độ lớn vận tốc thực \(\sqrt{34}\,\mathrm{m/s}\) **không phải** thành phần qua sông; không lấy \(60/\sqrt{34}\).
 
+
+    <span id="help-g10-chiv-river-tr01" data-thpt-help-id="HELP-G10-CHIV-RIVER-TR01"></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Lỗi cần kiểm:** Dùng độ lớn vận tốc thay thành phần qua sông
+
+        <p><strong>Lỗi thường gặp:</strong> Sông rộng \(60\,\mathrm m\), ca nô lái thẳng Bắc \(5\,\mathrm{m/s}\) so với nước, dòng chảy Đông \(3\,\mathrm{m/s}\). Một lời giải tính \(t=60/\sqrt{5^2+3^2}\). <strong>Thời gian đó sai.</strong></p>
+
+        <p><strong>Vì sao sai?</strong> \(\sqrt{34}\,\mathrm{m/s}\) là <strong>độ lớn vận tốc theo bờ</strong>, nhưng bề rộng sông chỉ đo theo hướng Bắc. Thành phần hướng Bắc thực tế vẫn là \(5\,\mathrm{m/s}\).</p>
+
+        <ol><li><strong>Xác định trục và hệ quy chiếu:</strong> \(Ox\) Đông, \(Oy\) Bắc; \(\vec v_{\mathrm{bờ}}=\vec v_{\mathrm{riêng}}+\vec v_{\mathrm{dòng}}=(3;5)\,\mathrm{m/s}\).</li><li><strong>Sửa:</strong> \(t=60/5=12\,\mathrm s\), trôi Đông \(3\cdot12=36\,\mathrm m\).</li><li><strong>Thử kiểm:</strong> Nếu dòng nước tăng nhưng mũi thuyền vẫn hướng Bắc với cùng tốc độ riêng, thành phần Bắc không đổi nên thời gian qua sông không đổi (chỉ tăng độ trôi).</li></ol>
+
+        <p><strong>Ôn và luyện lại:</strong> Nhắc lại phép cộng vectơ ở Bài 8 và tọa độ theo trục ở Bài 10, rồi thử tự giải một bài ca nô với số liệu khác. Nếu muốn <strong>không trôi</strong>, phải có thành phần vận tốc theo bờ hướng Đông bằng \(0\) và thành phần Bắc <strong>dương</strong>; trường hợp tốc độ dòng không nhỏ hơn tốc độ riêng không thể vừa chống trôi vừa tới bờ đích trong mô hình này.</p>
+
+
     ### 1.3. Thuật ngữ, kiến thức và kỹ năng
 
     **Từ khóa cần phân biệt:** tọa độ điểm là **vị trí**, tọa độ vectơ là **độ thay đổi có hướng**; vectơ đơn vị \(\vec i,\vec j\) xác định hai chiều trục; độ dài vectơ khác tổng quãng đường đi theo lưới; hai vectơ cùng phương cần một hệ số nhân **chung**.
@@ -209,18 +225,6 @@
         <p><strong>Sửa và tự kiểm:</strong> Trọng tâm chia \(3\) cho cả hoành và tung; soát lại bằng \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Với cùng phương, tính \(ad-bc\) hoặc kiểm trực tiếp \(\vec v=t\vec u\).</p>
 
         <p><strong>Ôn và luyện lại:</strong> Tự thử một bài tìm trung điểm, một bài trọng tâm và một bài kiểm cùng phương trong <a href="../luyen-tap/">Luyện tập</a>, không dùng bài đã xem lời giải để tính là kiểm tra độc lập.</p>
-
-    <span id="help-g10-chiv-river-tr01" data-thpt-help-id="HELP-G10-CHIV-RIVER-TR01"></span>
-
-    ??? tip "4.3. Dùng độ lớn vận tốc thay thành phần qua sông"
-
-        <p><strong>Lỗi thường gặp:</strong> Sông rộng \(60\,\mathrm m\), ca nô lái thẳng Bắc \(5\,\mathrm{m/s}\) so với nước, dòng chảy Đông \(3\,\mathrm{m/s}\). Một lời giải tính \(t=60/\sqrt{5^2+3^2}\). <strong>Thời gian đó sai.</strong></p>
-
-        <p><strong>Vì sao sai?</strong> \(\sqrt{34}\,\mathrm{m/s}\) là <strong>độ lớn vận tốc theo bờ</strong>, nhưng bề rộng sông chỉ đo theo hướng Bắc. Thành phần hướng Bắc thực tế vẫn là \(5\,\mathrm{m/s}\).</p>
-
-        <ol><li><strong>Xác định trục và hệ quy chiếu:</strong> \(Ox\) Đông, \(Oy\) Bắc; \(\vec v_{\mathrm{bờ}}=\vec v_{\mathrm{riêng}}+\vec v_{\mathrm{dòng}}=(3;5)\,\mathrm{m/s}\).</li><li><strong>Sửa:</strong> \(t=60/5=12\,\mathrm s\), trôi Đông \(3\cdot12=36\,\mathrm m\).</li><li><strong>Thử kiểm:</strong> Nếu dòng nước tăng nhưng mũi thuyền vẫn hướng Bắc với cùng tốc độ riêng, thành phần Bắc không đổi nên thời gian qua sông không đổi (chỉ tăng độ trôi).</li></ol>
-
-        <p><strong>Ôn và luyện lại:</strong> Nhắc lại phép cộng vectơ ở Bài 8 và tọa độ theo trục ở Bài 10, rồi thử tự giải một bài ca nô với số liệu khác. Nếu muốn <strong>không trôi</strong>, phải có thành phần vận tốc theo bờ hướng Đông bằng \(0\) và thành phần Bắc <strong>dương</strong>; trường hợp tốc độ dòng không nhỏ hơn tốc độ riêng không thể vừa chống trôi vừa tới bờ đích trong mô hình này.</p>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

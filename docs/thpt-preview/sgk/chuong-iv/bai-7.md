@@ -40,6 +40,16 @@
         **Vì sao:** Khi đảo điểm đầu/cuối mũi tên quay ngược, trong khi khoảng cách giữa hai đầu không đổi. Độ dài bằng nhau chưa đủ để vectơ bằng nhau.
 
 
+
+    <span data-thpt-help-id="HELP-G10-B07-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Lỗi cần kiểm:** Nhầm điểm đầu/cuối và chiều của vectơ
+
+        <ol><li><strong>Tín hiệu:</strong> Em đổi nhầm điểm đầu và điểm cuối, hoặc coi độ dài bằng nhau là đủ để hai vectơ bằng nhau.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Vẽ mũi tên từ chữ đứng trước sang chữ đứng sau; thử đảo AB thành BA.</li><li><strong>Tự sửa:</strong> Em tự vẽ một sơ đồ mũi tên nhỏ, xác định rõ điểm đầu/cuối, nói lý do rồi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
+
+
     <span id="thpt-g10-chiv-try02" data-thpt-first-try-id="THPT-G10-CHIV-TRY02" data-outcome-id="G10-B07-LENGTH" data-thpt-help-ref="HELP-G10-B07-02"></span>
 
     ### 1.2. Độ dài vectơ khác hướng di chuyển thế nào?
@@ -228,12 +238,6 @@
     **Kiểm lại.** Độ dài độ dời 15 m nhỏ hơn quãng đường 21 m. Nếu hai chặng ngược hướng hoặc không vuông góc thì phải vẽ lại hình; không thể áp dụng phép tính này một cách máy móc.
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-B07-01" hidden></span>
-
-    ??? tip "Nhầm điểm đầu/cuối và chiều của vectơ"
-
-        <ol><li><strong>Tín hiệu:</strong> Em đổi nhầm điểm đầu và điểm cuối, hoặc coi độ dài bằng nhau là đủ để hai vectơ bằng nhau.</li><li><strong>Nguyên nhân:</strong> Nhầm các định nghĩa hoặc quy tắc vectơ đã học, không phải thiếu thêm công thức mới.</li><li><strong>Nguyên lí:</strong> Vẽ mũi tên từ chữ đứng trước sang chữ đứng sau; thử đảo AB thành BA.</li><li><strong>Tự sửa:</strong> Em tự vẽ một sơ đồ mũi tên nhỏ, xác định rõ điểm đầu/cuối, nói lý do rồi tự thử lại.</li><li><strong>Điểm quay lại:</strong> Trong Luyện tập, làm lại câu về vectơ ngược hướng trong hình bình hành, rồi đối chiếu câu Core về điều kiện hai vectơ bằng nhau.</li></ol><p><a href="../luyen-tap/">Quay lại luyện tập</a></p>
 
     <span data-thpt-help-id="HELP-G10-B07-02" hidden></span>
 

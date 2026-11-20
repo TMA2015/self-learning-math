@@ -123,6 +123,24 @@
         **Vì sao:** Góc \(60^\circ\) không phải góc vuông; dùng tổng vectơ và tính chất tích vô hướng, không cộng \(4+4\) thành độ lớn hợp lực. Nếu nhầm, xem cách sửa ở mục 4.3.
 
 
+
+    <span id="help-g10-chiv-force-tr01" data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Lỗi cần kiểm:** Cộng độ lớn của hai lực không cùng hướng
+
+        **Tự nhận diện:** Em lấy tổng hai lực 6 N + 6 N thành 12 N?
+
+        **Cách làm sai:** Vì mỗi dây kéo \(6\,\mathrm N\), kết luận hợp lực luôn \(12\,\mathrm N\), rồi đặt lực cân bằng cùng chiều với hợp lực.
+
+        **Vì sao sai:** Hai lực tạo góc \(120^\circ\), không cùng hướng. Phải **cộng vectơ**, không cộng độ lớn, và lực cân bằng phải **ngược chiều** hợp lực.
+
+        **Tự sửa:** Vẽ hai mũi tên cùng gốc, xác định đúng góc \(120^\circ\). Áp dụng \(|\vec F_1+\vec F_2|^2=6^2+6^2+2\cdot6\cdot6\cos120^\circ=36\), suy ra hợp lực \(6\,\mathrm N\). Vectơ lực thứ ba là \(-(\vec F_1+\vec F_2)\).
+
+        **Luyện lại:** Tự trở lại bài vận dụng hai lực \(4\,\mathrm N\), góc \(60^\circ\) trong tab Khám phá; hãy tự tính trước khi mở đối chiếu. Nếu đã xem đáp án thì chọn bộ số liệu khác để kiểm tra độc lập.
+
+
     ### 1.4. Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Tích vô hướng, góc giữa hai vectơ, dấu của cos góc nhọn/tù, vuông góc, tích vô hướng theo tọa độ, công của lực.
@@ -263,20 +281,6 @@
         **Tự sửa:** \(W=10\cdot3\cos120^\circ=-15\,\mathrm J\). Kiểm lại: góc tù ⇒ công âm; góc vuông ⇒ công bằng 0.
 
         **Luyện lại:** Tự đổi góc thành \(90^\circ\) rồi \(60^\circ\) và dự đoán dấu trước khi tính lại.
-
-    <span id="help-g10-chiv-force-tr01" data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01" hidden></span>
-
-    ??? tip "4.3. Cộng độ lớn của hai lực không cùng hướng"
-
-        **Tự nhận diện:** Em lấy tổng hai lực 6 N + 6 N thành 12 N?
-
-        **Cách làm sai:** Vì mỗi dây kéo \(6\,\mathrm N\), kết luận hợp lực luôn \(12\,\mathrm N\), rồi đặt lực cân bằng cùng chiều với hợp lực.
-
-        **Vì sao sai:** Hai lực tạo góc \(120^\circ\), không cùng hướng. Phải **cộng vectơ**, không cộng độ lớn, và lực cân bằng phải **ngược chiều** hợp lực.
-
-        **Tự sửa:** Vẽ hai mũi tên cùng gốc, xác định đúng góc \(120^\circ\). Áp dụng \(|\vec F_1+\vec F_2|^2=6^2+6^2+2\cdot6\cdot6\cos120^\circ=36\), suy ra hợp lực \(6\,\mathrm N\). Vectơ lực thứ ba là \(-(\vec F_1+\vec F_2)\).
-
-        **Luyện lại:** Tự trở lại bài vận dụng hai lực \(4\,\mathrm N\), góc \(60^\circ\) trong tab Khám phá; hãy tự tính trước khi mở đối chiếu. Nếu đã xem đáp án thì chọn bộ số liệu khác để kiểm tra độc lập.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
