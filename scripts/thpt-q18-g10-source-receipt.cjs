@@ -737,6 +737,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "G10-B21-CIRCLE_STANDARD","G10-B21-LINE_CIRCLE_POSITION","OWNER_P2_PENDING","P0=0","P1=0"]){
     assert(r21.includes(token),"B21 Q18 signed owner source receipt missing "+token);
    }
+   const pathR02=path.join(root,
+    "prototypes/thpt/ux795/G10_CHVII_B21_DISPLAY_MATH_RENDER_R02_20261120.md");
+   if(fs.existsSync(pathR02)){
+    const r02=fs.readFileSync(pathR02,"utf8");
+    const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(f02("PREVIOUS_B21_SOURCE_BLOB"),current,
+     "B21 render R02 must extend exact signed and published R01");
+    const next=f02("CANDIDATE_B21_SOURCE_BLOB");
+    assert(/^[0-9a-f]{40}$/.test(next||"")&&next!==current,
+     "B21 render R02 candidate must be exact distinct Git blob");
+    for(const token of ["DELTA_A_UI","DELTA_B_SOURCE_EQUIVALENT",
+     "B21-G3-RAW-HTML-DISPLAY-MATH-20261120","OWNER_P2_PENDING","P0=0","P1=0"])
+     assert(r02.includes(token),"B21 render R02 missing signed condition "+token);
+    return next;
+   }
    return current;
   }
   const ux=chviExampleUxReceiptRows().get(name);
