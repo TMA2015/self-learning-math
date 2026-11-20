@@ -9,8 +9,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
-SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
+ACADEMIC_SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
+SOURCE_BLOB: 8877dd83aa804f7a4d665294d59faf511fcdb5bf
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
@@ -138,3 +138,11 @@ A real learner dependency was found: Knowledge TOP17-O10 asked the student to �
 - Learner `b5e24f5d39e83df46ada64a5b5665af9e0888e2f`; historical `9c427674ea0263b8cf7e1e191f1f9a81c3261e91` unchanged in Git. Six physical-volume formal callouts now 4 formula / 2 method types with mathematically descriptive short titles; no numeric or model hypothesis changed.
 - TOP17-O10 optional frustum exploration previously showed all three outputs directly after instructing the student to calculate first. This source now has a visible self-try prompt and a closed `<details><summary>Đối chiếu</summary>` containing the same three verified results 48/84/144 cm³ and error recovery. No leaked result in visible question paragraph; prior S and S′ values only are given.
 - Targeted Q03/Q07/PED6 author verification: 6 labels, 1 additional opt-in disclosure; V=48(1+k+k²) for k=0,0.5,1 gives 48,84,144; no change to the 12 original canonical Practice stems/answers/rubrics, 12 other independent examples or RD1. The reveal-flow part is material PED Delta C, not disguised as pure Delta A. No new external NotebookLM PASS, full S1 audit or RELEASE claim.
+
+## 20/11/2026 — Targeted S1 G11 T2 B26 mandatory gap ΔC, TOP17-O03/O05
+- Current learner source `8877dd83aa804f7a4d665294d59faf511fcdb5bf`; historic `b5e24f5d39e83df46ada64a5b5665af9e0888e2f` preserved.
+- Inspected current Knowledge §§1.3 and 1.5 and matched SGK Kết nối tri thức Toán 11 Tập Hai, Bài 26, **printed p56** (parallel-line distance) and **printed p58** (two equivalences for skew-line distance); textbook evidence at https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-vii-quan-he-vuong-goc-trong-khong-gian-3477/bai-26-khoang-cach-12766.html
+- O03 now includes definition `d(a,b)=d(A,b)` for distinct parallel a,b with A∈a; perpendicular minimization and grounded example a:y=0, b:y=3, A(2,0) -> H(2,3), d=3; no artificial new Lesson/Outcome ID.
+- O05 now states both SGK remarks: d(a,b)=d(a,(Q)) when b lies in Q and a∥Q, and d(a,b)=d((P),(Q)) when P∥Q containing a,b. Worked confirmation with a=(t,0,0), b=(0,s,4), P:z=0, Q:z=4, distance 4, preserving original direct common-perpendicular method.
+- **Targeted author math QA:** (i) d(a,b)=3 for horizontal parallels (ii) both planes parallel and contain proper lines (iii) skew test A=(0,0,0), B=(0,0,4), connecting vector orthogonal to a,b directions (iv) equal 4 by both plane methods (v) mathematical assumptions shown before rule. Q01/Q03/Q04/PED targeted 5/5 PASS; this is `DELTA_C_ACADEMIC_MATERIAL`, **not** an independent NotebookLM PASS.
+- Exact source suffix from # Luyện tập through # Tự kiểm tra byte-identical; original 12 canonical Practice stems/keys/rubrics, 12 original formative questions and private RD1/privacy preserved. Original signed academic reviewer verdict only for historic snapshot, not newly transferred.
