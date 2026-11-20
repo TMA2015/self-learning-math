@@ -1,7 +1,7 @@
 # Bài 18. Phương trình quy về phương trình bậc hai
 
 <div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VI · BÀI 18</p>
-<p class="thpt-r4-lead">Học cách giải phương trình chứa căn, xét điều kiện xác định và loại nghiệm không thỏa phương trình ban đầu.</p>
+<p class="thpt-r4-lead">Vì sao bình phương có thể làm xuất hiện nghiệm sai? Khám phá hai dạng phương trình căn, điều kiện và cách thử nghiệm gốc.</p>
 </div>
 
 === "Khám phá kiến thức"
@@ -12,13 +12,13 @@
 
     Chẳng hạn, từ \(\sqrt{x+1}=x-1\), nếu chỉ bình phương rồi giải phương trình bậc hai, em có thể tìm được một giá trị khiến vế phải âm. Nhưng căn bậc hai theo quy ước luôn **không âm**, nên giá trị ấy không thể là nghiệm. Vì vậy, **điều kiện xác định và dấu của vế không chứa căn** cần được viết trước phép bình phương.
 
-    Trong bài này, em sẽ thấy quy trình ba bước: xác định điều kiện → biến đổi theo đúng giới hạn áp dụng → **thử lại từng nghiệm** vào phương trình ban đầu. Thử lại không phải công đoạn phụ, mà là cách bảo vệ tính đúng đắn của lời giải.
+    Trong bài này, em sẽ thấy quy trình ba bước: xác định điều kiện → biến đổi theo đúng giới hạn áp dụng → **thử lại từng nghiệm** vào phương trình ban đầu. Thử lại không phải công đoạn phụ, mà là cách bảo vệ tính đúng đắn của lời giải. Mọi giá trị tìm được sau khi bình phương chỉ là **nghiệm ứng viên** cho tới khi kiểm tra trong phương trình ban đầu.
 
     ### Ví dụ trực quan
 
     #### Vì sao phải kiểm tra nghiệm?
 
-    Bình phương hai vế phương trình là phép biến đổi **không luôn tương đương** nếu không kiểm soát dấu. Ví dụ từ \(x=1\) suy ra \(x^2=1\), nhưng chiều ngược lại không đúng vì \(x=-1\) cũng thỏa \(x^2=1\).
+    Bình phương hai vế phương trình là phép biến đổi **không luôn tương đương** nếu không kiểm soát dấu. Ví dụ từ \(x=1\) suy ra \(x^2=1\), nhưng chiều ngược lại không đúng vì \(x=-1\) cũng thỏa \(x^2=1\). Hai số đối nhau có cùng bình phương: phép bình phương đã làm mất thông tin về dấu.
 
     Để giải phương trình chứa căn, phải đặt điều kiện, biến đổi và **thử lại nghiệm trong phương trình ban đầu**.
 
@@ -30,12 +30,12 @@
 
     Phép bình phương giúp bỏ căn nhưng căn bậc hai trong số thực chỉ xác định khi biểu thức dưới căn không âm; không thể coi nghiệm đại số là nghiệm thật nếu căn vô nghĩa.
 
-    Để giải phương trình chứa căn, hãy nhớ rằng \(\sqrt u\) chỉ xác định khi u≥0 và luôn không âm; em sẽ cần cả kiến thức giải phương trình bậc nhất. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Để giải phương trình chứa căn, hãy nhớ rằng \(\sqrt u\) chỉ xác định khi u≥0 và luôn không âm; em sẽ cần cả kiến thức giải phương trình bậc nhất. Nếu chưa chắc cách giải phương trình bậc nhất, hãy ôn thao tác chuyển vế trước khi tìm nghiệm ứng viên.
 
     Với \(\sqrt{A(x)}=\sqrt{B(x)}\), đầu tiên yêu cầu \(A(x)\ge0\) và \(B(x)\ge0\). Sau đó hai căn không âm bằng nhau **khi và chỉ khi** \(A(x)=B(x)\) trong miền; đây là phép đổi tương đương *sau khi* đặt điều kiện.
 
 
-    **Vì sao chọn phương pháp này?** Đặt điều kiện cho **cả hai** căn rồi mới giải phương trình; không được giữ nghiệm ngoài miền.
+    **Cách bắt đầu:** Viết riêng điều kiện cho **cả hai** căn rồi mới giải phương trình; không được giữ nghiệm ngoài miền. Sau đó thay giá trị tìm được vào hai căn ban đầu.
 
     **Em vận dụng.** Giải \(\sqrt{x+1}=\sqrt{2x-2}\) trong \(\mathbb R\).
 
@@ -59,7 +59,7 @@
 
     Một căn thức thực không bao giờ âm. Do đó nếu nó bằng một biểu thức \(B(x)\), bản thân \(B(x)\) phải không âm, điều thường bị mất khi bình phương.
 
-    Biết \(\sqrt u\ge0\), giải phương trình bậc hai nhân tử và thử nghiệm. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Biết \(\sqrt u\ge0\), giải phương trình bậc hai nhân tử và thử nghiệm. Muốn tự giải được, em cần biết căn bậc hai chỉ xác định trên các số không âm.
 
     Với \(\sqrt{A(x)}=B(x)\), phải có \(B(x)\ge0\) (và \(A(x)\ge0\)); sau đó bình phương \(A(x)=B(x)^2\), giải và kiểm. Bình phương tự nó không bảo đảm mọi nghiệm ứng viên có dấu đúng.
 
@@ -78,7 +78,7 @@
 
     Biến đổi đại số đôi khi cho một nghiệm thỏa phương trình mới nhưng không thỏa phương trình ban đầu. Vì thế, em cần thử lại từng nghiệm trong phương trình gốc, thay vì tin ngay vào kết quả sau bình phương.
 
-    Đặc biệt, \(\sqrt{u^2}=|u|\): sau khi bình phương, một nghiệm tìm được mới chỉ là ứng viên; phải xét điều kiện để xác định nghiệm hợp lệ. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Đặc biệt, \(\sqrt{u^2}=|u|\): sau khi bình phương, một nghiệm tìm được mới chỉ là ứng viên; phải xét điều kiện để xác định nghiệm hợp lệ. Hãy luôn kiểm dấu vế không chứa căn; đây là phần không thể phục hồi chỉ bằng phép bình phương.
 
     Nếu \(A=B^2\) thì chỉ có \(|B|=\sqrt A\), chưa chắc \(\sqrt A=B\). Lý do có nghiệm ngoại lai là phép bình phương làm mất thông tin dấu. Một nghiệm cuối phải thỏa miền và phương trình gốc.
 
@@ -97,12 +97,12 @@
 
     Bài toán đo chiều dài thang dựa vào định lí Pitago có thể dẫn tới phương trình chứa căn. Nghiệm âm từ bình phương tuy đúng đại số nhưng không là độ dài thực tế.
 
-    Biết tam giác vuông, Pitago \(c^2=a^2+b^2\), độ dài phải dương và căn không âm. Em có thể học các kiến thức tiền đề ngay trong bài.
+    Biết tam giác vuông, Pitago \(c^2=a^2+b^2\), độ dài phải dương và căn không âm. Để lập mô hình, hãy vẽ đúng tam giác vuông và xác định cạnh huyền trước khi dùng Pitago.
 
     Khi một cạnh góc vuông là h>0 và cạnh kia 5 m, cạnh huyền là \(\sqrt{h^2+25}\), phải phù hợp chiều dài thang cho trước. Giải căn rồi lọc h>0 không chỉ vì toán căn mà vì **ý nghĩa vật lý** của ẩn.
 
 
-    **Vì sao chọn phương pháp này?** Chọn ẩn có đơn vị và miền h>0, lập \(\sqrt{h^2+25}=13\), giải và thử lại. Không chấp nhận h âm dù bình phương cho hai số đối nhau.
+    **Cách lập phương trình:** Chọn độ cao làm ẩn, ghi miền h>0, lập \(\sqrt{h^2+25}=13\), giải và thử lại. Không chấp nhận h âm dù bình phương cho hai số đối nhau.
 
     **Em vận dụng.** Một thang dài 13 m dựa tường, chân thang cách tường 5 m. Đặt h>0 là độ cao đầu thang trên tường. Lập phương trình chứa căn và tính h.
 
