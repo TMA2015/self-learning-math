@@ -11,9 +11,27 @@
 .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-tree {margin:1rem 0;padding:.85rem 1rem;border:1px solid #a5bee5;border-radius:.6rem;background:var(--md-default-bg-color);font-size:.92em}
 .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-tree ul {margin:.35rem 0 .35rem 1rem;padding-left:1rem;border-left:2px solid #4879c2}
 .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-tree li {margin:.3rem 0}
+
+/* B23 owner P2 corrections: Golden hierarchy, deliberate disclosures, visible worked solutions. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question{border:1px solid #a5bee5!important;border-radius:9px!important;background:var(--md-default-bg-color)!important;overflow:hidden}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question>summary{background:#eaf1fc!important;color:#193d66!important;padding:12px 38px 12px 15px!important;font-weight:700!important;border-bottom:0}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question[open]>summary{border-bottom:1px solid #a5bee5}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question>summary::before{display:none!important;content:none!important}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question>summary:focus-visible{outline:3px solid #4879c2;outline-offset:-3px}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-g10-example-solution{display:block;margin:1rem 0;padding:14px 18px;background:#eef5ff;border:1px solid #9ebbe4;border-left:4px solid #4879c2;border-radius:9px;color:#193d66}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-g10-example-solution p{margin:0!important;line-height:1.7}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-condition{margin:12px 0 18px;line-height:1.7}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip{border:1px solid #d8bd8d!important;border-radius:9px!important;background:var(--md-default-bg-color)!important;overflow:hidden}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip>summary{background:#fff4dd!important;color:#59421a!important;padding:11px 38px 11px 15px!important;font-weight:700!important}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip>summary::before{display:none!important;content:none!important}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip>summary:focus-visible{outline:3px solid #bc8c36;outline-offset:-3px}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question>summary{background:#203551!important;color:#ecf5ff!important}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-g10-example-solution{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip>summary{background:#493b25!important;color:#fff0d4!important}
+@media(max-width:600px){.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-g10-example-solution{padding:12px 14px}}
 </style>
 
-<div class="thpt-r4-screen" data-thpt-r4>
+<div class="thpt-r4-screen" data-thpt-r4 data-b23-owner-p2-ux="r02">
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VIII · KIẾN THỨC SGK KNTT</p>
 <p class="thpt-r4-lead">Phân biệt quy tắc cộng và quy tắc nhân, đếm số trường hợp không thiếu hoặc trùng.</p>
 
@@ -147,23 +165,23 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Các phương án thay thế nhau:</strong> Một công việc được hoàn thành theo <strong>đúng một</strong> trong các trường hợp. Các kết quả thuộc những trường hợp khác nhau phải <strong>không trùng nhau</strong> thì mới được cộng số cách trực tiếp.</div>
 
-    **Quy tắc cộng.** Nếu các trường hợp rời nhau lần lượt có \(m_1,m_2,\ldots,m_k\) cách, số cách thực hiện công việc là \(m_1+\cdots+m_k\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc cộng.</strong> Nếu các trường hợp rời nhau lần lượt có \(m_1,m_2,\ldots,m_k\) cách, số cách thực hiện công việc là \(m_1+\cdots+m_k\).</div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện — Không đếm trùng:</strong> Các trường hợp phải đôi một rời nhau. Nếu có kết quả xuất hiện trong nhiều nhóm, cần loại phần giao hoặc chia lại thành những nhóm rời nhau; với hai tập hữu hạn, lấy tổng số phần tử hai tập rồi trừ phần giao.</div>
+    <p class="b23-condition"><strong>Điều kiện cần kiểm tra — Không đếm trùng:</strong> Các trường hợp phải đôi một rời nhau. Nếu có kết quả xuất hiện trong nhiều nhóm, cần loại phần giao hoặc chia lại thành những nhóm rời nhau; với hai tập hữu hạn, lấy tổng số phần tử hai tập rồi trừ phần giao.</p>
 
     Sơ đồ hình cây biểu diễn các nhánh lựa chọn; **mỗi lá cuối** phải ứng với đúng một kết quả hoàn chỉnh. Hình sau dùng hai cách đặt câu hỏi với cùng 4 môn nghệ thuật và 3 môn thể thao, giúp phân biệt khi nào cộng, khi nào nhân.
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B23_ADD_MULTIPLY_CHOICES_R02.svg" loading="lazy" alt="Chọn một môn giữa nhóm 4 và nhóm 3 có 7 cách; chọn một môn ở mỗi nhóm có 12 cặp"><figcaption>Quy tắc cộng \(4+3=7\) áp dụng cho hai nhóm lựa chọn rời nhau. Quy tắc nhân \(4\cdot3=12\) áp dụng khi một kết quả phải hoàn tất cả hai bước.</figcaption></figure>
 
-    **Cách đọc hình ở tab Kiến thức SGK:** Bên trái chỉ chọn một môn từ hai nhóm rời: \(4+3=7\). Bên phải chọn đủ một môn mỗi nhóm: \(4\cdot3=12\) cặp. Đây là một **hình canonical dùng chung** với Khám phá, được đặt lại để người chỉ đọc tab này vẫn theo được quy tắc.
+    **Cách đọc hình:** Ở khung bên trái, mỗi kết quả chỉ là **một môn**: chọn từ 4 môn nghệ thuật hoặc 3 môn thể thao nên có \(4+3=7\) lựa chọn. Ở khung bên phải, mỗi kết quả là **một cặp** gồm một môn nghệ thuật và một môn thể thao; mỗi trong 4 môn nghệ thuật ghép được với 3 môn thể thao nên có \(4\cdot3=12\) cặp.
 
     ### 2.2. Quy tắc nhân
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Nhiều công đoạn:</strong> Một kết quả hoàn chỉnh đòi hỏi thực hiện <strong>tất cả</strong> các bước. Một đường đi từ gốc đến lá cuối của sơ đồ cây tượng trưng cho một chuỗi lựa chọn hợp lệ.</div>
 
-    **Quy tắc nhân.** Nếu bước thứ nhất có \(m_1\) lựa chọn, ứng với **mỗi** lựa chọn ấy bước thứ hai đều có \(m_2\) lựa chọn, và tương tự ở các bước tiếp theo, số kết quả là tích \(m_1m_2\cdots m_k\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc nhân.</strong> Nếu bước thứ nhất có \(m_1\) lựa chọn, ứng với <strong>mỗi</strong> lựa chọn ấy bước thứ hai đều có \(m_2\) lựa chọn, và tương tự ở các bước tiếp theo, số kết quả là tích \(m_1m_2\cdots m_k\).</div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện — Cùng số nhánh con:</strong> Trước khi nhân trực tiếp, kiểm số cách hợp lệ tại mỗi bước có <strong>cố định trên mọi nhánh đang gộp</strong> hay không. Nếu số cách thay đổi tùy lựa chọn trước đó, phải tính riêng từng nhánh rồi cộng; không dùng phép nhân máy móc.</div>
+    <p class="b23-condition"><strong>Điều kiện cần kiểm tra — Cùng số nhánh con:</strong> Trước khi nhân trực tiếp, kiểm số cách hợp lệ tại mỗi bước có <strong>cố định trên mọi nhánh đang gộp</strong> hay không. Nếu số cách thay đổi tùy lựa chọn trước đó, phải tính riêng từng nhánh rồi cộng; không dùng phép nhân máy móc.</p>
 
     Chẳng hạn, 4 loại bánh đều có thể ghép với 3 nhân thì có \(4\cdot3=12\) suất. Nếu ba loại bánh ghép được 3 nhân còn loại cuối chỉ ghép được 2 nhân, ta phải đếm \(3\cdot3+2=11\) suất.
 
@@ -171,9 +189,9 @@
 
     Một bài đếm có ràng buộc có thể vừa có **những trường hợp rời nhau** để cộng, vừa có **nhiều bước trong mỗi trường hợp** để nhân. Quy trình là: xác định một kết quả hoàn chỉnh → chọn điều kiện quyết định trước → chia trường hợp không giao nhau → tính số cách trong từng trường hợp → cộng và kiểm tra có thiếu/trùng.
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện lập số:</strong> Chữ số đầu của số có từ hai chữ số trở lên <strong>khác 0</strong>. Nếu chữ số phải phân biệt, không dùng lại chữ số đã chọn. Nếu số phải chẵn, chữ số tận cùng thuộc tập chữ số chẵn <strong>được phép</strong>. Khi điều kiện làm số lựa chọn khác nhau theo nhánh, hãy <strong>cộng các kết quả từng nhánh</strong> thay vì nhân một số lượng cố định.</div>
+    <p class="b23-condition"><strong>Điều kiện cần kiểm tra khi lập số:</strong> Chữ số đầu của số có từ hai chữ số trở lên <strong>khác 0</strong>. Nếu chữ số phải phân biệt, không dùng lại chữ số đã chọn. Nếu số phải chẵn, chữ số tận cùng thuộc tập chữ số chẵn <strong>được phép</strong>. Khi điều kiện làm số lựa chọn khác nhau theo nhánh, hãy <strong>cộng các kết quả từng nhánh</strong> thay vì nhân một số lượng cố định.</p>
 
-    **Ví dụ đọc nhánh:** Từ 0,1,2,3 lập số chẵn hai chữ số không lặp: cuối 0 có 10,20,30; cuối 2 có 12,32. Hai nhánh cho \(3+2=5\) số.
+    **Quan sát hai nhánh:** Khi chữ số cuối là 0, hàng chục có thể là 1,2,3; khi chữ số cuối là 2, hàng chục chỉ có thể là 1 hoặc 3. Hai nhóm rời nhau nên có \(3+2=5\) số chẵn hai chữ số khác nhau.
 
 === "Ví dụ"
 
@@ -219,11 +237,11 @@
 
     Nếu đếm sai, hãy tìm lại **một kết quả hoàn chỉnh** và kiểm các trường hợp có giao nhau, các bước có cùng số nhánh con, chữ số đầu có phải 0 và chữ số đã được dùng chưa. Các hướng dẫn dưới đây dẫn đến đúng câu Vận dụng và câu luyện phù hợp.
 
-    ### 4.1–4.4. Hướng dẫn tự sửa theo bốn Vận dụng
+    ### Tìm lỗi trong từng câu Vận dụng
 
     <span id="help-g10-chviii-try01" data-thpt-help-id="HELP-G10-CHVIII-TRY01"></span>
 
-    ??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    ??? tip "4.1. Nhân số truyện với số vé khi chỉ chọn một phần thưởng"
 
         1. **Nhận diện lỗi:** Nếu nhân 2×6, em đang đếm một cặp truyện–vé, không phải chỉ chọn một phần thưởng.
         2. **Quay lại bản chất:** Quy tắc cộng đếm các khả năng thay thế nhau: thực hiện cách A HOẶC cách B. Chỉ cộng số cách khi hai nhánh không có phương án trùng nhau, nếu có phải loại phần giao.
@@ -235,7 +253,7 @@
 
     <span id="help-g10-chviii-try02" data-thpt-help-id="HELP-G10-CHVIII-TRY02"></span>
 
-    ??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    ??? tip "4.2. Cộng số loại bánh và nhân dù cần chọn đủ hai bước"
 
         1. **Nhận diện lỗi:** Nếu cộng 4+3, em đang đếm chọn một loại bánh HOẶC một loại nhân, chứ không phải suất gồm cả hai.
         2. **Quay lại bản chất:** Quy tắc nhân đếm các đường đi hoàn chỉnh qua nhiều bước: mỗi lựa chọn của bước trước có số lựa chọn tiếp theo tương ứng; khi cùng số cách, tổng số là tích.
@@ -247,7 +265,7 @@
 
     <span id="help-g10-chviii-try03" data-thpt-help-id="HELP-G10-CHVIII-TRY03"></span>
 
-    ??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    ??? tip "4.3. Tính cả chữ số 0 ở hàng chục của số có hai chữ số"
 
         1. **Nhận diện lỗi:** Nếu tính 4×3=12, em đã cho chữ số 0 ở đầu và đếm cả dạng '01' không phải số hai chữ số.
         2. **Quay lại bản chất:** Đếm một số là hoàn tất hai bước hàng chục → hàng đơn vị; điều kiện 'không lặp' làm số lựa chọn bước thứ hai phụ thuộc chữ số đã chọn, nhưng còn đúng một số lượng bằng nhau cho mọi chọn ở bước đầu.
@@ -259,7 +277,7 @@
 
     <span id="help-g10-chviii-try04" data-thpt-help-id="HELP-G10-CHVIII-TRY04"></span>
 
-    ??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    ??? tip "4.4. Nhân đều hai trường hợp số chẵn có số nhánh khác nhau"
 
         1. **Nhận diện lỗi:** Nếu tính 2×3=6, em đã bỏ qua điều kiện khi hàng đơn vị là 2 thì hàng chục chỉ còn 2 cách, không phải 3.
         2. **Quay lại bản chất:** Nếu đếm số chẵn tạo từ các chữ số cho trước, chữ số hàng đơn vị quyết định các lựa chọn ở hàng chục; chia thành những trường hợp không giao nhau rồi cộng kết quả của từng nhánh.
@@ -269,11 +287,11 @@
 
         <a href="../luyen-tap/?item=THPT-G10-B23-P05">Mở câu luyện tập đã được kiểm tra</a>
 
-    ### 4.5–4.6. Các lỗi tổng hợp và luyện lại
+    ### Những sai lầm cần kiểm tra thêm
 
     <span data-thpt-help-id="D6-G10-B23-01" hidden></span>
 
-    ??? tip "Cộng hay nhân không theo cấu trúc lựa chọn"
+    ??? tip "4.5. Chọn cộng hay nhân chỉ bằng từ khóa và hoặc"
 
         <p><strong>Dấu hiệu:</strong> Dựa máy móc vào từ «hoặc» hay «và» mà không kiểm tra có các trường hợp rời nhau hoặc các bước liên tiếp.</p>
         <p><strong>Bản chất toán:</strong> Quy tắc cộng áp dụng cho các trường hợp loại trừ nhau; quy tắc nhân cho các bước lựa chọn. Khi nhóm giao nhau hoặc số cách mỗi bước tùy nhánh, cần chia trường hợp chính xác.</p>
@@ -284,7 +302,7 @@
 
     <span data-thpt-help-id="D6-G10-B23-02" hidden></span>
 
-    ??? tip "Đếm sai số có chữ số 0 và phụ thuộc nhánh"
+    ??? tip "4.6. Bỏ qua chữ số đầu khác 0 hoặc số nhánh phụ thuộc"
 
         <p><strong>Dấu hiệu:</strong> Cho chữ số đầu bằng 0; nhân các lựa chọn như cố định dù có nhánh khác nhau.</p>
         <p><strong>Bản chất toán:</strong> Chữ số đầu của số tự nhiên có số chữ số xác định phải khác 0. Khi số cách bước sau phụ thuộc lựa chọn trước, tách các nhánh rời nhau rồi cộng tích; ghi rõ có lặp hay không.</p>
