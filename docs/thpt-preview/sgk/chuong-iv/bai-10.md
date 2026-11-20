@@ -29,7 +29,7 @@
         **Vì sao:** 2−(−3)=5 và −1−2=−3. Đảo điểm đầu/cuối làm vectơ đối.
 
 
-    <span data-thpt-help-id="HELP-G10-B10-01" hidden></span>
+    <span id="help-g10-b10-01" data-thpt-help-id="HELP-G10-B10-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
@@ -95,7 +95,7 @@
         **Vì sao:** M: ((−2+4)/2;(4+0)/2)=(1;2); G: ((−2+4+1)/3;(4+0+5)/3)=(1;3).
 
 
-    <span data-thpt-help-id="HELP-G10-B10-02" hidden></span>
+    <span id="help-g10-b10-02" data-thpt-help-id="HELP-G10-B10-02" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
