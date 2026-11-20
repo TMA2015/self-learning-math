@@ -9,10 +9,12 @@ REVIEW_SCOPE: TOP18-O38, TOP18-O40, TOP18-O23; original canonical THPT-G12-B14-W
 PREVIOUS_LEARNER_BLOB: bcc7cb6c57ea3cddbfae312a1fe2d31c0791b3f4
 PREVIOUS_CANONICAL_BANK_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
 CURRENT_LEARNER_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
-CURRENT_CANONICAL_BANK_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
+PROPOSED_CANONICAL_W07_V2_BANK_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
+SIGNED_ACTIVE_SHARED_G12_CHV_BANK_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
+PROPOSED_CANONICAL_V2_SOURCE_COMMIT: 99acf796b94310728733820b18f4cebdfa7541a0
 CANONICAL_ITEM_ID: THPT-G12-B14-W07
-CANONICAL_CONTENT_VERSION: 2 (same ITEM_ID, changed stem, mathematical key, reasoned solution, /5 rubric)
-Q15: one canonical item + one Topic display; exact stem/key/solution/rubric equality checked
+PROPOSED_CANONICAL_CONTENT_VERSION: 2 (same ITEM_ID, changed stem, mathematical key, reasoned solution, /5 rubric; not promoted to current shared bank)
+Q15: one signed active shared canonical v1; proposed v2 of the SAME ITEM_ID is a bounded review candidate only. Proposed W07 v2 stem/key/solution/rubric match blocked Topic learner projection exactly; no dual active owner.
 Q16: no official readiness/private RD1 changes; public selfcheck retains NO_MASTERY
 ACADEMIC_AUTHOR_VERDICT: PASS_AFFECTED_SCOPE
 PED_AUTHOR_VERDICT: PASS_AFFECTED_SCOPE
@@ -43,12 +45,12 @@ Cho mặt cầu S={X∈R³:|X−I|²=R²}, R>0, và mặt phẳng P cách I kho�
 - **Q03–Q04:** O40 trước công thức đã có hình/đoạn vuông và Pitago với R=5, d=3, r=4. W07 mới có đề xác định rõ đối tượng, hình học suy luận qua H, ba trường hợp và điều kiện R>0/h≥0. Không nhảy trực tiếp tới công thức.
 - **Q06:** W07 vẫn /5 đúng tổng 2+1+1+1=5, nhưng rubric nay chấm những yêu cầu thực sự có trong đề, không đòi vật lý ngoại đề.
 - **Q09–Q14:** O38 giải thích ý nghĩa lớp biên, có ví dụ so bình phương; D6 O38 yêu cầu tự so CM² vs R². D6 O23 FirstTry và Practice hướng dẫn tự dựng tam giác; không lộ code hay gợi ý vô dụng.
-- **Q15:** W07 giữ cùng một ITEM_ID và phiên bản 2, bản đáp án/câu hỏi/lời giải/rubric canonical và projection từng dòng trùng nhau. Không tạo câu mới từ cùng stem, không đổi 246 ID còn lại.
+- **Q15:** W07 v2 vẫn cùng ITEM_ID, đề/đáp án/lời giải/rubric trong **proposed Git blob** và blocked Topic learner projection trùng nhau từng dòng. Ngân hàng SGK hiệu lực v1 vẫn giữ nguyên byte, không tạo hai owner active hoặc phát hành v2 trước phản biện.
 - **Q16–Q17:** giữ đủ ba phần Topic Kiến thức/Luyện tập/Tự kiểm tra, không Core; O23 chỉ sau B17, không biến bài tập public thành chấm Mastery.
-- **Source diff gate:** phiên bản v2 so với trước chỉ sửa W07 canonical stem/key/solution/rubric và O38/O23 learner explanatory/remedial prose; không sửa 246 câu canonical khác, không đổi SVG hay private data. 40 outcome markers, 247 balanced disclosure blocks, 40 FirstTry vẫn nguyên.
+- **Source diff gate:** bản Git candidate v2 có **chỉ một khối W07** khác nguồn signed v1; đã khôi phục active SGK bank về blob v1 để bảo toàn SGK R01. Bản Topic learner mới sửa O38/O23 và bản W07 projection, nhưng nằm trong blocked/ chờ review. Không sửa 246 câu canonical khác, không đổi SVG hay private data. 40 outcome markers, 247 balanced disclosure blocks, 40 FirstTry vẫn nguyên.
 
 ## 4. Kết luận kiểm toán đúng phạm vi
 
-Không còn sai lệch toán đã biết trong phạm vi 0≤h<R, h=R, h>R và phân biệt sphere surface/solid sau bản sửa. **Tuy nhiên đây là QA tác giả; cần NotebookLM phản biện Academic/PED đúng cụm W07–O38–O23 trước khi phát hành phiên bản mới.** Bản trước có CONTENT_READY tại SHA cũ; bản mới đang BLOCKED_BY_AUTHORING chỉ vì một Delta C sư phạm/toán chưa có independent verdict, không phải vì trang SBT 25.
+Không còn sai lệch toán đã biết trong phạm vi 0≤h<R, h=R, h>R và phân biệt sphere surface/solid sau bản sửa. **Tuy nhiên đây là QA tác giả; cần NotebookLM phản biện Academic/PED đúng cụm W07–O38–O23 trước khi cập nhật phiên bản canonical active và phát hành phiên bản mới.** Bản trước có CONTENT_READY tại SHA cũ; bản mới đang BLOCKED_BY_AUTHORING chỉ vì một Delta C sư phạm/toán chưa có independent verdict, không phải vì trang SBT 25.
 
 **Đối chiếu nguồn tham khảo ngoài SGK:** OpenStax Calculus Volume 3 §2.5 (plane distance); LibreTexts Vector Calculus §1.6 (surfaces). Các nguồn này xác minh phương pháp toán, không dùng để thay thế danh mục phạm vi chương trình KNTT.
