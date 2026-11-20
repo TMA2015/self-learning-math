@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-SOURCE_BLOB: a414d05a4039c6988f533978870f4bfe35ece71a
-ACADEMIC_SOURCE_BLOB: a414d05a4039c6988f533978870f4bfe35ece71a
+SOURCE_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
+ACADEMIC_SOURCE_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -121,3 +121,9 @@ Kết nối tri thức SGK Toán 11 tập Hai Chương IX (B31 trang in 81–87,
 
 ## 20/11/2026 · Owner Q03/PED ΔA correct formal statement types
 - Latest learner `a414d05a4039c6988f533978870f4bfe35ece71a` (prior `fbd59ed68d26558cad85204b5937370822430364` historical). Five mathematical derivative identities (sum/quotient, composite trig and exponent/log, second derivative of composite) now CÔNG THỨC; the two domain differentiability restrictions now KIẾN THỨC CẦN GHI NHỚ. All derivative identities, their assumptions, source outcomes, 108 Practice items, rubrics and public selfchecks byte-identical beyond the seven label prefixes. Targeted math-label author self-QA, no independent NotebookLM or RELEASE PASS.
+
+
+## 20/11/2026 — Targeted S1 mandatory statement restoration TOP09-O19/O22
+- CURRENT_LEARNER_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15; prior source a414d05a4039c6988f533978870f4bfe35ece71a immutable, historic author-Q18 checks unaffected outside this localized content.
+- S1 scope: S1 G11 T2 B32 pp91–93: (tan u)'=u'/cos²u when cos u≠0, (cot u)'=−u'/sin²u when sin u≠0; (ln|g|)'=g'/g when g≠0, separate ln g domain g>0.
+- Reviewed student-facing Knowledge additions, derivation and all guards using direct derivative algebra, interval definitions; example stems/solutions and Practice/Self-check suffix byte-identical. This is DELTA_C_ACADEMIC_MATERIAL with targeted Q01/Q03/PED author mathematical self-verification, **not a new independent NotebookLM verdict**. Other S1 SGK outcomes in 22 Topic corpus remain PENDING. No RD1/Final Submit/Mastery/RELEASE.
