@@ -66,6 +66,7 @@
 
 
 
+    <a id="HELP-G10-B12-01" aria-hidden="true"></a>
     <span id="help-g10-b12-01" data-thpt-help-id="HELP-G10-B12-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
@@ -94,6 +95,7 @@
 
 
 
+    <a id="HELP-G10-B12-02" aria-hidden="true"></a>
     <span id="help-g10-b12-02" data-thpt-help-id="HELP-G10-B12-02" hidden></span>
 
     ??? tip "Kiểm lỗi"
@@ -146,6 +148,7 @@
         **Nếu nhầm:** Tự mở khung Kiểm lỗi ngay bên dưới, rồi chọn bộ số mới trong Luyện tập; không dùng kết quả vừa xem làm chứng cứ độc lập.
 
 
+    <a id="HELP-G10-B12-CALC-01" aria-hidden="true"></a>
     <span id="help-g10-b12-calc-01" data-thpt-help-id="HELP-G10-B12-CALC-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
