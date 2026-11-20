@@ -8,7 +8,7 @@
 
 **Vì sao có thể đo độ dài không thể chạm tới?** Giả sử hai người đứng ở A và B trên bờ sông, biết khoảng cách AB và có thể ngắm một mốc C ở bờ bên kia. Không cần kéo thước qua sông: các góc nhìn và độ dài AB đã đủ để dựng nên một tam giác rồi suy ra các cạnh còn lại. Nhưng trước hết, ta phải hiểu sin và côsin của những góc lớn hơn 90° — điều mà tam giác vuông đơn lẻ không giải thích hết.
 
-### 1.1. Góc 0°–180° được biểu diễn như thế nào?
+### 1.1. Giá trị lượng giác của góc 0°–180°
 <!-- LESSON_ID: TOP12-M01; OUTCOME_ID: TOP12-O01 -->
 
 
@@ -33,7 +33,7 @@ Hãy tưởng tượng một kim dài đúng một đơn vị quay quanh gốc O
 
 <details><summary>Đối chiếu</summary>150° là góc tù: điểm trên nửa đường tròn phía trên bên trái, do đó sin dương và cos âm. Cụ thể sin150°=1/2, cos150°=-√3/2. Nếu viết cos dương, hãy quay lại vị trí hình chiếu M trên trục hoành rồi làm bài luyện về cosin góc tù.</details>
 
-### 1.2. Giá trị đặc biệt và góc bù — nhìn thấy quy luật thay vì học thuộc mù
+### 1.2. Góc đặc biệt và góc bù
 <!-- LESSON_ID: TOP12-M02; OUTCOME_ID: TOP12-O02 -->
 
 
@@ -45,6 +45,15 @@ Hãy tưởng tượng một kim dài đúng một đơn vị quay quanh gốc O
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | sin | 0 | 1/2 | √2/2 | √3/2 | 1 | √3/2 | √2/2 | 1/2 | 0 |
 | cos | 1 | √3/2 | √2/2 | 1/2 | 0 | −1/2 | −√2/2 | −√3/2 | −1 |
+
+Hai góc **phụ nhau** trong \([0^\circ,90^\circ]\) cũng có quan hệ dễ đọc từ tam giác vuông: \(\sin(90^\circ-\alpha)=\cos\alpha\), \(\cos(90^\circ-\alpha)=\sin\alpha\). Chẳng hạn \(\sin30^\circ=\cos60^\circ=1/2\). Với hai góc **bù nhau**, sin giữ nguyên còn cos đổi dấu. Kết hợp bảng dưới đây, em có thể tự suy ra giá trị tang và côtang mà không cần học thuộc hai bảng khác nhau.
+
+| Góc | 0° | 30° | 45° | 60° | 90° | 120° | 135° | 150° | 180° |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| tan | 0 | √3/3 | 1 | √3 | Không xác định | −√3 | −1 | −√3/3 | 0 |
+| cot | Không xác định | √3 | 1 | √3/3 | 0 | −√3/3 | −1 | −√3 | Không xác định |
+
+Đây là **phần nối tiếp** bảng sin và cos phía trên, không phải một định nghĩa mới. Chẳng hạn \(\tan120^\circ=\sin120^\circ/\cos120^\circ=(\sqrt3/2)/(-1/2)=-\sqrt3\). Phải ghi “không xác định” khi mẫu bằng 0; không thể thay bằng dấu vô cực.
 
 Chẳng hạn, \(\sin 135^{\circ}+\cos 120^{\circ}=\sqrt{2}/2-1/2=(\sqrt{2}-1)/2\). Ta nhận ra trước \(135^{\circ}=180^{\circ}-45^{\circ}\), \(120^{\circ}=180^{\circ}-60^{\circ}\) rồi mới tính, vì quy luật dấu mới là điều quan trọng.
 
@@ -63,13 +72,15 @@ Chẳng hạn, \(\sin 135^{\circ}+\cos 120^{\circ}=\sqrt{2}/2-1/2=(\sqrt{2}-1)/2
 
 <details><summary>Đối chiếu</summary>\(\sin 150^{\circ}=1/2\), \(\cos 120^{\circ}=-1/2\), tổng bằng **0**. Nếu nhầm dấu côsin, ôn lại cách đọc nửa đường tròn ở mục 1 và làm bài luyện về góc bù.</details>
 
-### 1.3. Tang, côtang có tồn tại với mọi góc không?
+### 1.3. Tang và côtang
 <!-- LESSON_ID: TOP12-M03; OUTCOME_ID: TOP12-O03 -->
 
 
 Sin và cos là tọa độ nên đều xác định trên đoạn \(0^{\circ}\text{ đến }180^{\circ}\). Tang và côtang là **tỉ số tọa độ**:
 
 \[\tan\alpha=\frac{\sin\alpha}{\cos\alpha}\quad(\cos\alpha\ne0),\qquad \cot\alpha=\frac{\cos\alpha}{\sin\alpha}\quad(\sin\alpha\ne0).\]
+
+Với \(\alpha\) và \(180^\circ-\alpha\), khi các tỉ số cùng xác định thì \(\tan(180^\circ-\alpha)=-\tan\alpha\) và \(\cot(180^\circ-\alpha)=-\cot\alpha\). Đó là hệ quả trực tiếp của việc sin giữ dấu và cos đổi dấu, chứ không phải hai công thức độc lập phải học máy móc.
 
 Vì vậy, \(\tan 90^{\circ}\) không xác định; \(\cot 0^{\circ}\) và \(\cot 180^{\circ}\) không xác định; ngược lại \(\tan 180^{\circ}=0\) *có* nghĩa. Đối với góc tù, sin dương và cos âm, nên tang/côtang khi xác định đều âm.
 
@@ -90,7 +101,7 @@ Chẳng hạn, Góc tù α có \(\tan  \alpha=-2\): từ \(1+\tan^{2}\alpha=1/\c
 
 <details><summary>Đối chiếu</summary>Chỉ **tanα** không xác định vì mẫu cos90°=0. Nếu nghĩ cos90° không xác định, quay lại định nghĩa hoành độ ở mục 1 và làm bài luyện về điều kiện của tang.</details>
 
-### 1.4. Từ tọa độ đến hệ thức lượng giác; lựa chọn đúng dấu
+### 1.4. Hệ thức lượng giác và dấu
 <!-- LESSON_ID: TOP12-M04; OUTCOME_ID: TOP12-O04 -->
 
 
@@ -117,7 +128,7 @@ Chia hai vế cho \(\cos^{2}\alpha\) hoặc \(\sin^{2}\alpha\) chỉ khi mẫu k
 
 ## 2. Tam giác bất kỳ: tìm một cạnh từ hai cạnh và góc
 
-### 2.1. Tại sao định lí côsin là sự tiếp nối của Pitago?
+### 2.1. Định lí côsin
 <!-- LESSON_ID: TOP12-M05; OUTCOME_ID: TOP12-O05 -->
 
 
@@ -148,7 +159,7 @@ Nếu đặt A ở gốc tọa độ, B tại \((c,0)\) và C tại \((b \cos  A
 
 <details><summary>Đối chiếu</summary>\(a^{2}=25+49-2\cdot 5\cdot 7\cdot (1/2)=39\), nên **a=√39**. Pitago chỉ dùng trực tiếp khi góc xen giữa 90°. Nếu đặt nhầm cạnh đối diện, quay lại sơ đồ a=BC, b=CA, c=AB rồi làm bài luyện về định lí cosin.</details>
 
-### 2.2. Vì sao định lí sin giúp nối cạnh và góc đối diện?
+### 2.2. Định lí sin
 <!-- LESSON_ID: TOP12-M06; OUTCOME_ID: TOP12-O06 -->
 
 
@@ -175,7 +186,7 @@ Chẳng hạn, Với \(A=30^{\circ}, B=45^{\circ}, a=5\), góc \(C=105^{\circ}\)
 
 <details><summary>Đối chiếu</summary>\(b=4 \sin 60^{\circ}/\sin 30^{\circ}=4\sqrt{3}\), \(2R=4/\sin 30^{\circ}=8\), nên **R=4**. Nếu lấy b/a=sinA/sinB, xem lại thứ tự đối diện rồi làm bài luyện về định lí sin.</details>
 
-### 2.3. Nhìn dữ kiện để chọn phương pháp, không chọn công thức theo thói quen
+### 2.3. Chọn phương pháp giải tam giác
 <!-- LESSON_ID: TOP12-M07; OUTCOME_ID: TOP12-O07 -->
 
 
@@ -203,11 +214,13 @@ Chẳng hạn, với dữ kiện ba cạnh, Ba cạnh \(7,8,9\) tạo thành tam
 
 <details><summary>Đối chiếu</summary>\(6^{2}+8^{2}=10^{2}\), nên góc đối diện cạnh 10 là **90°**. Diện tích bằng \(1/2\cdot 6\cdot 8=24\) đơn vị vuông. Nếu chỉ biết ba cạnh mà áp dụng ngay định lí sin, quay lại bảng SSS rồi làm bài luyện về góc vuông từ ba cạnh.</details>
 
-### 2.4. Một bộ dữ kiện SSA có thể tạo thành hai tam giác
+### 2.4. Trường hợp hai cạnh và một góc không xen giữa (SSA)
 <!-- LESSON_ID: TOP12-M08; OUTCOME_ID: TOP12-O08 -->
 
 
 Giả sử biết \(A=30^{\circ}, a=5, b=8\). Định lí sin cho \(\sin B=b \sin A/a=4/5\). Nhưng trên đoạn \((0^{\circ},180^{\circ})\), **hai góc bù nhau có cùng sin**. Vì vậy \(B_{1}\approx 53,13^{\circ}\), \(B_{2}\approx 126,87^{\circ}\). Cả hai có \(A+B<180^{\circ}\), nên tồn tại **hai tam giác** khác nhau; tương ứng \(C_{1}\approx 96,87^{\circ}\) hoặc \(C_{2}\approx 23,13^{\circ}\).
+
+Trên máy tính, trước khi bấm \(\sin^{-1}(t)\) hay `arcsin`, phải đặt chế độ **DEG** vì các góc ở đây đo bằng độ. Phím \(\sin^{-1}\) thường chỉ cho nghiệm chính trong \([-90^\circ,90^\circ]\), nhưng một tam giác còn có thể dùng góc bù \(180^\circ-B_1\); đó là lý do **không dừng ngay sau khi máy hiện một góc**. Để tránh hai giá trị gần nhau do làm tròn, giữ nhiều chữ số khi tính và chỉ làm tròn ở đáp số cuối.
 
 Muốn giải SSA an toàn, tính \(t=b \sin A/a\) trước: nếu \(t>1\), không có tam giác; nếu \(0<t\le 1\), phải xét cả \(B=\arcsin  t\) lẫn \(180^{\circ}-\arcsin  t\) và kiểm tra \(A+B<180^{\circ}\) từng trường hợp. Với t=1 hai giá trị B trùng nhau. Với A và các cạnh dương, số nghiệm phụ thuộc cả góc A và điều kiện tổng góc; không kết luận hai nghiệm chỉ vì t<1.
 
@@ -228,7 +241,7 @@ Muốn giải SSA an toàn, tính \(t=b \sin A/a\) trước: nếu \(t>1\), khô
 
 ## 3. Diện tích, các bán kính và đo đạc thực tế
 
-### 3.1. Diện tích dùng hai cạnh và góc xen giữa
+### 3.1. Diện tích theo góc xen giữa
 <!-- LESSON_ID: TOP12-M09; OUTCOME_ID: TOP12-O09 -->
 
 
@@ -253,7 +266,7 @@ Phải dùng **góc xen giữa chính hai cạnh đang nhân**. Với \(b=8,c=5,
 
 <details><summary>Đối chiếu</summary>\(S=(1/2)\cdot 6\cdot 8\cdot \sin 60^{\circ}=12\sqrt{3}\) đơn vị diện tích. Nếu ra 24√3, em đã quên hệ số 1/2. Luyện bài luyện cùng dạng.</details>
 
-### 3.2. Chỉ có ba cạnh: Heron, bán kính nội tiếp và ngoại tiếp
+### 3.2. Công thức Heron và các bán kính
 <!-- LESSON_ID: TOP12-M10; OUTCOME_ID: TOP12-O10 -->
 
 
@@ -284,7 +297,7 @@ Chẳng hạn, Tam giác 13–14–15 có \(p=21\), \(S=\sqrt{21\cdot 8\cdot 7\c
 
 <details><summary>Đối chiếu</summary>\(p=8\); \(S=\sqrt{8\cdot 3\cdot 3\cdot 2}=12\); \(r=S/p=3/2\). Nếu dùng \(abc/(4S)\) sẽ tìm **R**, không phải r. Luyện bài luyện về Heron.</details>
 
-### 3.3. Giải tam giác để đo khoảng cách không đi tới được
+### 3.3. Giải tam giác trong đo đạc
 <!-- LESSON_ID: TOP12-M11; OUTCOME_ID: TOP12-O11 -->
 
 
@@ -309,7 +322,7 @@ Tại sao không dùng góc 30° thay cho góc C khi chia AB? Vì **AB đối di
 
 <details><summary>Đối chiếu</summary>\(C=90^{\circ}\), \(BC=80 \sin 45^{\circ}/\sin 90^{\circ}=40\sqrt{2}\,\mathrm{m}\), \(AC=40\sqrt{2}\,\mathrm{m}\). Bằng nhau vì A=B. Nếu ra một cạnh khác, kiểm lại quan hệ đối diện trước khi bấm máy. Luyện bài luyện về đo đạc.</details>
 
-### 3.4. Kiểm tra mô hình trước khi tin đáp số
+### 3.4. Kiểm tra điều kiện và kết quả
 <!-- LESSON_ID: TOP12-M12; OUTCOME_ID: TOP12-O12 -->
 
 
