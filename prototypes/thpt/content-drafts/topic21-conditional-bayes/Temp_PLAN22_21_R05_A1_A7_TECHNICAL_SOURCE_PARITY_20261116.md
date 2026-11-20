@@ -4,7 +4,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: c3f9fd22555a80f82c2caa333146de2ea392f9d2
+SOURCE_BLOB: dd7fa9b8818efcbceca5bdae7877aaa874e615e7
 CURRENT_Q18_RECEIPT_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
 CURRENT_Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
 LEARNING_PATH: TOPIC
@@ -79,3 +79,9 @@ I have inspected the final R04 student source after canonical version lock, chec
 - ACADEMIC_SOURCE_BLOB: c3f9fd22555a80f82c2caa333146de2ea392f9d2
 - REVIEW_RECEIPT_BLOB: 511668b8aa7e0cca51d80239345bd6bc5ce354bd
 - Current 2×2 conditional frequency table inserted before original formula; original 8 canonical first try/8 worked examples and Q15/Q16 records unchanged; target author self-QA.
+
+
+## 20/11/2026 — Current O03 zero conditional denominator guard
+- ACADEMIC_SOURCE_BLOB: dd7fa9b8818efcbceca5bdae7877aaa874e615e7
+- REVIEW_RECEIPT_BLOB: e7a1ac1c9af6523efb44aaf4350b2b0f19ddb1a8
+- Added explicit P(A)=0 and P(B)=0 case without dividing by 0, protecting original sample-size preconditions; original O02 2x2 table and all canonical items unchanged.
