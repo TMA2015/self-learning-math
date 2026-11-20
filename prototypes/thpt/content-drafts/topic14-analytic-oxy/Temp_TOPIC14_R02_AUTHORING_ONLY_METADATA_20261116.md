@@ -9,13 +9,13 @@
 # CĐ14 — AUTHORING-only Q15/S1 and learner view metadata R02
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7584f28afa12e8a1a05529512516e9571d856d39
-SOURCE_BLOB: 7584f28afa12e8a1a05529512516e9571d856d39
+ACADEMIC_SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
+SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_SGK_PED_R01_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
@@ -419,3 +419,8 @@ Latest EFFECTIVE learner SHA: `47c98711e2955287831d5ea10fc5d61d1483fd6a`; previo
 - ACADEMIC_SOURCE_BLOB: 7584f28afa12e8a1a05529512516e9571d856d39
 - REVIEW_RECEIPT_BLOB: 067f9805bd29ae2c05cf84d7386b04f9bccd1a8a
 - Three redundant student headings removed, no math or item change.
+
+
+## 20/11 — Trọn CĐ14 G10 ChVII B19–B22 Knowledge
+
+Source 3949c0a989da436c34967bbc3357cfd08ed14e1a, signed Q18 a62e6b1e43bc96e7a6a5b81bceb410c36293e489. 23 outcomes; seven DELTA_C O04/O07/O11/O18/O19/O21/O23: đoạn chắn, hệ số góc, khoảng cách đường song song, elip/hypebol trục/đỉnh, parabol từ tiêu điểm đường chuẩn và quang học. No changes to 110 canonical IDs, original Practice/Selfcheck, 3 SVG, RD1, Mastery or website; one current learner, no new independent NotebookLM review claimed.
