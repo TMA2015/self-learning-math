@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: fefe797ee158ee357533605267496ed415a7681a
-ACADEMIC_SOURCE_BLOB: fefe797ee158ee357533605267496ed415a7681a
+SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
+ACADEMIC_SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R06_STUDENT_FIRST_24_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: d4eafd811066997ee64de70a49c5da4a7ff26dcd
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -49,3 +49,9 @@ ASSESSMENT_Q16: 11 reused public prompts only CLIENT_SELF_CHECK_NO_MASTERY, no h
 - TOP01-O01–O05: proposition, variable domain, negation of quantified statements, necessary/sufficient condition and equivalence retaining both implications are already formally marked; no duplicate labels or new mathematical condition inserted.
 - TOP01-O06–O11: set intersection/union/difference/complement relative to U; interval endpoints and finite set union cardinality. The recap formula |A∪B|=|A|+|B|−|A∩B| matches existing worked 40-person and 50-person examples; no new theorem is assumed.
 - Exact comparison to previous 15ecc1b8f2c9d916e3e8e4a320609c2e36ebbb95: Practice section and public Selfcheck byte-exact (24 original canonical stem/key/solution/rubric/D6; 11 question-only public replay), all SVG paths, canonical ID comments, formal definition blocks and reveal counts unchanged. `DELTA_C_ACADEMIC_MATERIAL` scoped learner synopsis self-QA; not new independent NotebookLM or RELEASE verdict.
+
+
+## 20/11/2026 — Tự kiểm trang Kiến thức theo SGK, nhánh Chuyên đề 01
+- Đối chiếu đúng mảng kiến thức từ SGK. S1 Toán 10 T1 Bài 1-2: đầy đủ logic, tập hợp; bổ sung 2 cách mô tả tập, N⊆Z⊆Q⊆R, hữu tỉ/vô tỉ, nửa khoảng.
+- Tự kiểm điều kiện, ví dụ: Câu hỏi x²=2: không có nghiệm hữu tỉ, có hai nghiệm thực ±√2; -2 nguyên nhưng không tự nhiên, 3/4 hữu tỉ, √2 vô tỉ; khoảng [a,b) đúng dấu mút. Không thêm bài học/ITEM_ID mới. Luyện tập và Tự kiểm tra giữ nguyên toàn văn. Đã đọc lại bố cục, ký hiệu và lời dẫn của chính bản thảo đang dùng. Mọi SOURCE khác giữ lịch sử, không thêm bản learner.
+- SOURCE_HIEN_HANH: 98041b546daedde82a54f41b5c57b502eee6794f; kiểm tra học thuật bởi tác giả, không suy là phản biện độc lập hay trạng thái phát hành website.
