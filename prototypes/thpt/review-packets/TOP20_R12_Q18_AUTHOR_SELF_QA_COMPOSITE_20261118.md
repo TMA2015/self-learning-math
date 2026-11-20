@@ -3,10 +3,10 @@
 AUTHOR_SELF_QA_RECEIPT
 PACKET_ID: TOP20-PROBABILITY-R12-20261118
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: b737c1b4e2bd92bba662a7c999e804866d5a4baa
+SOURCE_BLOB: a336816eb1935c739bd1f128bd81de7b510d0060
 SOURCE_ROLE: ONE_CURRENT_CANONICAL_LEARNER_SOURCE
 REVIEW_SCOPE: R10_FULL_AUTHOR_MATH_PED + R11_EQUIVALENT_LAYOUT + R12_AFFECTED_D6_PED + CURRENT_SOURCE_Q15_Q16
 INDEPENDENT_REVIEWER_VERDICT: NOT_CLAIMED
@@ -81,3 +81,10 @@ No independent reviewer Academic/PED verdict is asserted; no website integration
 **Nguồn S1 trực tiếp:** SGK Kết nối tri thức Toán 10 Tập 2, Bài 26, trang in 80, phần “Nhận xét”: `0≤P(E)≤1`, `P(Ω)=1`, `P(∅)=0`. Bản SGK https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-10-Tap-2-Chuong-trinh-moi.pdf . Current learner before `74c572ca5778bb8308ab1fe7cb23dfa487858c53` had formula cổ điển and probabilistic examples but lacked a visible explicit 3-property statement in Knowledge. Now restored on **same source path**, learner `b737c1b4e2bd92bba662a7c999e804866d5a4baa`, before first worked example in TOP20-M02, as prose with counting rationale and formally labeled **TÍNH CHẤT — Ba tính chất cơ bản của xác suất cổ điển**.
 
 **Affected-scope Q18 self QA = 6/6 PASS:** for sample sizes 1,2,3,6,10 all `n(A)/n(Ω)∈[0,1]`; 6/6=1; 0/6=0; content inserted before example; MathJax pairing balanced; deleting exact addition yields original learner byte-exact; canonical IDs unchanged. All item/key/solution/rubric/SVG/assessment paths unchanged. Scope is **DELTA_C_ACADEMIC_MATERIAL**, author verified at affected outcome only. Keep `CONTENT_READY` by owner approval; no independent reviewer verdict claimed, no full 22-topic Q01 clearance, no RELEASE.
+
+
+## 20/11/2026 · Full Knowledge S1 classical probability CĐ20
+- Actual sole learner `a336816eb1935c739bd1f128bd81de7b510d0060`, historical before `b737c1b4e2bd92bba662a7c999e804866d5a4baa`. Direct read of nine Knowledge units and existing canonical 17/17 outcome first tries and matching Practice, with SGK G10 Toán KNTT tập hai ChIX B26–B27 and G11 tập hai ChVIII B28–B30 scope retained from original custody, no fresh source PDF scan claimed. New Delta C improves assumptions/counterexamples across five in-place conceptual subsections.
+- Q03/PED rationale: equal-probability sample outcomes are **individual tickets or ordered face pairs**, not label classes or distinct total values; explains why two fair dice sum 7 is 6/36 not 1/11. Sampling without replacement: 3 red +2 blue, draw 2 has P(both red)=C(3,2)/C(5,2)=3/10=(3*2)/(5*4). Warn that tree leaves are not necessarily equal probability; choose ordered/unordered outcomes consistently.
+- Independence counterexample: six-sided fair die even A={2,4,6}, B={1,2,3}: P(A∩B)=1/6 !=1/4=P(A)P(B). Positive-probability mutually exclusive events cannot be independent, but intersecting is not sufficient for independence. Union of A even, B at least 4 has 4 outcomes of 6: 3/6+3/6−2/6=4/6. At least one blue in two draws without replacement =1−3/10=7/10, versus with replacement =1−(3/5)^2=16/25: difference is model, not complement formula.
+- Structural Q15/Q16 custody: all original 37 ITEM_ID markers (17 First Try,17 Practice,3 Written), 17 outcome IDs, 11 public question-only selfchecks, 2 original SVG, Practice/Selfcheck and original keys/solutions/rubrics byte-exact; no public private RD1, no official Final Submit/Mastery or website. Scoped math/PED author SELF_VERIFIED P0/P1=0 for added reasoning, but original independent NotebookLM conclusions are not transferred. Normative only one SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18.
