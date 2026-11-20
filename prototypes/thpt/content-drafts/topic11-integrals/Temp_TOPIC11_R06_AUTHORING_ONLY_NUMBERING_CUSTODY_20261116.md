@@ -2,9 +2,9 @@
 
 R03_IMMUTABLE_SOURCE_BLOB: 6c78b455f9d95e85c713108292908bf6f922d2f1
 LEARNER_R06_SOURCE: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-LEARNER_R06_SOURCE_BLOB: 9f8b1d7035ae733a2e5f0de5ee40359ab8f5fb6a
+LEARNER_R06_SOURCE_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f
 Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-Q18_R06_RECEIPT_BLOB: ff585034d95e2f43f0055e3516e49129e60c54d6
+Q18_R06_RECEIPT_BLOB: 36ffc65a334d756661d7b2204561d5c03e0647dd
 ACTIVE_NEW28_BANK_R05: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
 ACTIVE_NEW28_BANK_R05_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
 STATUS: AUTHOR_SELF_VERIFIED_SOURCE_QA_PASS
@@ -199,3 +199,10 @@ END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
 - Previous learner 9f374c22d40358334d79ef504e7f6c83e9d0c7cc and Q18 c5c701690258f87eb4a8b0cd773928e38b54b25c remain immutable historical snapshots, no longer current authority.
 - Targeted DELTA_C TOP11-O06: missing 1/cos^2(x) and 1/sin^2(x) primitives restored with tan/cot signs, denominator exclusions and reverse derivative checks; Q18 targeted author math/PED self QA passed. Original item IDs, 116 public practice stems/key/rubric, 22 public selfchecks and four SVG source paths unchanged.
 - A1_CURRENT_SCOPE: SOURCE_LOCKED, no new independent NotebookLM reviewer PASS, no full 22-topic S1 PASS claimed. Handoff V2 and REGISTER require exact new blob sync before reasserting full package integrity.
+
+
+## 20/11/2026 — Current A1 source custody after scoped SGK TOP11-O01/O08
+- CURRENT_LEARNER_BLOB: ccb03b95b5c1312eed1564524beedcb096b1e20f
+- CURRENT_Q18_BLOB: 36ffc65a334d756661d7b2204561d5c03e0647dd
+- S1 G12 T2 B11 pp4–5: K open/half-open/closed, boundary one-sided derivative, continuous f implies primitive, dF=f dx. B12 pp13–14: definite integration variable-name invariant.
+- Mathematics checked only for affected outcome; Q15, bank and assessment-source unchanged; no blanket reviewer PASS.
