@@ -9,8 +9,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-SOURCE_BLOB: fbd59ed68d26558cad85204b5937370822430364
-ACADEMIC_SOURCE_BLOB: fbd59ed68d26558cad85204b5937370822430364
+SOURCE_BLOB: a414d05a4039c6988f533978870f4bfe35ece71a
+ACADEMIC_SOURCE_BLOB: a414d05a4039c6988f533978870f4bfe35ece71a
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -117,3 +117,7 @@ Kết nối tri thức SGK Toán 11 tập Hai Chương IX (B31 trang in 81–87,
 
 <!-- TOP09_OWNER_ED_A_20261119 -->
 **OWNER EDITORIAL DELTA A — 19/11/2026:** 28 phát biểu/công thức đạo hàm đã có trong chính văn nguồn được thêm nhãn ĐỊNH NGHĨA/TÍNH CHẤT/QUY TẮC/CÔNG THỨC/ĐIỀU KIỆN/PHƯƠNG PHÁP hoặc ĐỊNH LÝ theo vị trí; 4 khối đã có nhãn giữ nguyên. Baseline Git learner `ecd0dec736d0346fd1789a15aa1ec92d6a718485` → hiện hành `fbd59ed68d26558cad85204b5937370822430364`. Đối chiếu xóa đúng 28 tiền tố nhãn làm nguồn trước/sau byte-equivalent; không thêm hay sửa phát biểu, miền, phép tính, Đề/Lời giải, Vận dụng, Đối chiếu, canonical IDs, rubric, SVG, Q16. Chỉ Delta A, owner giữ CONTENT_READY; no new independent reviewer, RELEASE not authorized.
+
+
+## 20/11/2026 · Owner Q03/PED ΔA correct formal statement types
+- Latest learner `a414d05a4039c6988f533978870f4bfe35ece71a` (prior `fbd59ed68d26558cad85204b5937370822430364` historical). Five mathematical derivative identities (sum/quotient, composite trig and exponent/log, second derivative of composite) now CÔNG THỨC; the two domain differentiability restrictions now KIẾN THỨC CẦN GHI NHỚ. All derivative identities, their assumptions, source outcomes, 108 Practice items, rubrics and public selfchecks byte-identical beyond the seven label prefixes. Targeted math-label author self-QA, no independent NotebookLM or RELEASE PASS.
