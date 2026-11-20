@@ -7,8 +7,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 41b070e06267a5486f00ff977e164c4198f387d4
-ACADEMIC_SOURCE_BLOB: 41b070e06267a5486f00ff977e164c4198f387d4
+SOURCE_BLOB: 8b0e5be33b42d8b1d3e743bb2502501789333075
+ACADEMIC_SOURCE_BLOB: 8b0e5be33b42d8b1d3e743bb2502501789333075
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R05_FULL_LEARNER_VISIBLE_31_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: 05e9675a7dca802aa9540a96a46d76d013055d8b
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -68,3 +68,11 @@ Prior R06 source blob 9cc738526f95e68a31f99409d8672aff44f5c8a9 remains a histori
 
 <!-- TOP03_OWNER_EDITORIAL_DELTA_A_20261119 -->
 Owner ΔA 19/11: 9 phát biểu phương pháp/điều kiện phương trình đã có trong văn xuôi được thêm nhãn nhận diện riêng; 3 khối chính thức cũ giữ nguyên. Baseline learner `c843613b88d106a18086d91ff7d0ada499398033` → new learner `41b070e06267a5486f00ff977e164c4198f387d4`. Dùng phép đảo ngược prefix chứng minh chính xác mọi ký tự toán, dữ kiện, giải, điều kiện, 12 Ví dụ/12 Vận dụng/12 Đối chiếu, ID, SVG, selfcheck unchanged; không thêm nội dung toán học. `AUTHOR_SELF_VERIFIED_SOURCE_EQUIVALENT`, `CONTENT_READY` preserved. No NotebookLM rereview/website release.
+
+
+<!-- TOP03_S1_G10_T2_B17_DELTA_C_20261120 -->
+### 20/11/2026 — S1 G10 Tập 2 B17 (trang in 19) · bổ sung biệt thức thu gọn Δ′, Q01/Q03/Q11/Q18
+
+**Nguồn S1:** SGK Kết nối tri thức Toán 10 Tập hai, Bài 17, trang in 19: biệt thức `Δ=b²−4ac`, biệt thức thu gọn `Δ′=(b′)²−ac` khi `b=2b′`. [Bản SGK gốc đã đối chiếu](https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-10-Tap-2-Chuong-trinh-moi.pdf). Trước chỉnh, learner `41b070e06267a5486f00ff977e164c4198f387d4` đã có Δ nhưng chưa dạy Δ′ trong Kiến thức. Đã thêm vào **đúng một source learner** `8b0e5be33b42d8b1d3e743bb2502501789333075` tại `TOP03-M04 / TOP03-O04`: giải thích b′ và Δ′, trường hợp âm/bằng 0/dương, nghiệm `(-b′±√Δ′)/a` và ví dụ `2x²−8x+6=0` có nghiệm 1,3.
+
+**Q18 AUTHOR_SELF_VERIFIED_AFFECTED_DELTA:** 6/6 kiểm tra thực tế PASS: với 4×5×4 bộ a,b′,c, `Δ=4Δ′`; nghiệm 1 và 3 đều thỏa phương trình gốc; MathJax delimiter cân bằng; số lượng `item_id` không đổi; bổ sung trước Ví dụ hiện hành; xóa đúng khối bổ sung trả lại learner cũ byte-identical. Không sửa stem/key/solution/rubric/ID/SVG/Readiness, 0 P0/P1 được xác định ở riêng phạm vi Δ′. **Phân loại `DELTA_C_ACADEMIC_MATERIAL`**, không mạo danh independent NotebookLM review hoặc full 22-topic audit. Theo quyết định owner, AUTHORING `CONTENT_READY` giữ nguyên trên nguồn mới sau source-lock. RELEASE và merge/deploy chưa được cho phép.
