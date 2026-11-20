@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: f7772e1a4b1b01b6bc60f0747b25f4341f417e85
+SOURCE_COMMIT: 08552fab67594fe0672d54f10eb7189a5ebe108a
 AUTHOR_PR: 822
 CURRENT_PR: #890 Draft AUTHORING from previous #822, not merged/deployed
 CATALOG_TOPIC_ID: CD04
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: e9294c7e564d7af96df58a99d0b85ed0023ff859
+ACADEMIC_SOURCE_BLOB: a101ca5e0130ff51fab1a1c867e1b23d642d98b8
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md (scoped AUTHOR_SELF_VERIFIED, no new independent Topic NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 7fa1391687a04e52dd38d52dec5446ccea3e5039
+REVIEW_RECEIPT_BLOB: 87f6cfb2aee17596409123c0bf632b3bfefae42a
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 0ff214e0f965e4c21356002592810c7573e3f5cd
+AUTHOR_HANDOFF_BLOB: d3d633527edc6f19c66df29ea83228c67e109009
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
@@ -103,3 +103,7 @@ SELF_CHECK_PUBLIC_REPLAY: 18 full question stems, no official Readiness/Mastery
 
 ## 20/11/2026 current authoring source
 - SOURCE e9294c7e564d7af96df58a99d0b85ed0023ff859, Q18 7fa1391687a04e52dd38d52dec5446ccea3e5039, A1 be9f066133deb043dc90f7635f274c09265b645e, V2 0ff214e0f965e4c21356002592810c7573e3f5cd: four callout label prefixes only, no math/key/rubric changes or deploy.
+
+
+## 20/11/2026 — Hoàn thiện trang Kiến thức CĐ04
+- Current learner a101ca5e0130ff51fab1a1c867e1b23d642d98b8 has 18 outcomes, source-first S1 B18–B21 complete in scope; additional root identities, power/log basic forms, solution boundaries, and learner readability. Original Luyện tập/Selfcheck, canonical bank, rubric, Firebase, private RD1 preserved. Authoring source only.
