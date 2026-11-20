@@ -65,7 +65,7 @@
     **Cách đọc hình.** Bắt đầu ở điều kiện của căn/vế phải; tiếp theo là phép bình phương, giải phương trình rồi thử lại trong phương trình gốc. Mũi tên quay về bước kiểm tra nhắc rằng nghiệm của phương trình sau bình phương chưa chắc là nghiệm ban đầu.
 
 
-    Dạng thứ hai khác ở một điểm quan trọng: chỉ **một vế có căn**, còn vế kia là biểu thức \(B(x)\). Vì căn bậc hai luôn không âm, vế còn lại cũng phải không âm. Đây là điều kiện mà phép bình phương dễ che khuất.
+    Dạng thứ hai khác ở một điểm quan trọng: chỉ **một vế có căn**, còn vế kia là biểu thức \(B(x)\). Vì căn bậc hai luôn không âm, \(B(x)\) cũng phải không âm. Đây là điều kiện mà phép bình phương dễ che khuất.
 
     Hãy dựa vào tính chất \(\sqrt u\ge0\): viết điều kiện dấu của vế phải trước khi đưa phương trình về dạng đại số. Sau khi phân tích thành nhân tử hay giải phương trình bậc hai, cần quay lại xét từng ứng viên.
 
