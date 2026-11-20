@@ -2,11 +2,11 @@
 
 R03_IMMUTABLE_BLOB: 51cebfe1cb71c5db85c42d40e6167ea4497fa1d9
 CURRENT_STUDENT_R06_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_STUDENT_R06_BLOB: f2b59858a3c1e92960b2c581bb97d8d126c59fb9
+CURRENT_STUDENT_R06_BLOB: b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
 CURRENT_Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md
-CURRENT_Q18_R06_RECEIPT_BLOB: d4e5b7a720942cdd1330f07978e82bb25e57696f
+CURRENT_Q18_R06_RECEIPT_BLOB: d5fa113d2d55d9baa0e5cd6d5cd6634f82b10517
 CURRENT_NEW42_CANONICAL_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
-STATUS: R06_CURRENT_SOURCE_EQUIVALENT_AUTHOR_SELF_VERIFIED
+STATUS: AUTHORING_CONTENT_READY_FULL_S1_KNOWLEDGE
 
 ## S1 primary provenance and exact boundaries
 
@@ -20,7 +20,7 @@ STATUS: R06_CURRENT_SOURCE_EQUIVALENT_AUTHOR_SELF_VERIFIED
 
 PACKET_ID: THPT-TOPIC10-APPLIED-DERIVATIVE-SURVEY-OPTIMIZATION-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 LESSON_IDS: TOP10-M01..TOP10-M36
 OUTCOME_IDS: TOP10-O01..TOP10-O36
@@ -201,3 +201,8 @@ END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
 - CURRENT_STUDENT_R06_BLOB: f2b59858a3c1e92960b2c581bb97d8d126c59fb9
 - CURRENT_Q18_R06_RECEIPT_BLOB: d4e5b7a720942cdd1330f07978e82bb25e57696f
 - Six formal labels harmonized for student, numerical mathematics and canonical items unchanged.
+
+
+## 20/11 — CĐ10 toàn bộ SGK ChI B01–B05 Knowledge
+
+- Đã đọc, tự kiểm 36/36 mục Kiến thức; bổ sung điều kiện liên tục/đổi dấu, tâm bậc ba, khảo sát 2/1, phân giác tiệm cận xiên và ứng dụng tốc độ hóa/sinh. Learner `b7d7ef5d8ca87b2225e6977ae54afe3261dbd220`, Q18 `d5fa113d2d55d9baa0e5cd6d5cd6634f82b10517` trong cùng canonical source và receipt. Luyện tập/Tự kiểm tra byte-exact; các bank/đáp án/rubric/SVG/RD1 không thay, author self-verified Q01–Q18 theo affected scope, không tuyên bố NotebookLM độc lập hoặc RELEASE.
