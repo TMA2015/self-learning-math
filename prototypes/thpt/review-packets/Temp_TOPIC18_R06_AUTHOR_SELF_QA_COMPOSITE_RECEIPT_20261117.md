@@ -29,15 +29,15 @@ SGK Toán 12 Tập 1 B6 trang in **56** quy ước \(\vec u\cdot\vec0=0\), \(\ve
 AUTHOR_SELF_QA_RECEIPT: COMPOSITE_WITH_IMMUTABLE_BASELINE_AND_VERIFIED_TARGETED_DELTAS
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R06-20261117
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-SOURCE_BLOB: 2beb1845a2a6de7684985c995be2914e8878d79a
-ACADEMIC_SOURCE_BLOB: 2beb1845a2a6de7684985c995be2914e8878d79a
+SOURCE_BLOB: c5742e0d8914f85dec1ccd093d418290068b65a3
+ACADEMIC_SOURCE_BLOB: c5742e0d8914f85dec1ccd093d418290068b65a3
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
@@ -82,7 +82,7 @@ ASSESSMENT_Q16: Public Topic replay is only CLIENT_SELF_CHECK_NO_MASTERY, never 
 
 **Q18 verification mode:** AUTHOR_SELF_VERIFIED evidence chaining the frozen full R04 author receipt and exact source-only affected R05+R06 delta receipts, not independent NotebookLM review. No new standard was created. A1–A7/one new V2 handoff/one ready manifest/REGISTER exact R06 SHA need to be packaged and gate-verified separately; this receipt does not on its own grant CONTENT_READY or RELEASE and must not overwrite old R04 ready.
 
-AUTHOR_SIGNOFF: CHATGPT_AUTHORING_TOP18_R06_40OUTCOME_247CANONICAL_R04FULL_PLUS_R05MATHEMATICAL_R06EDITORIAL_COMPOSITE_20261117
+AUTHOR_SIGNOFF: TOP18_G12_CHII_CHV_FULL_KNOWLEDGE_c5742e0d8914f85dec1ccd093d418290068b65a3
 VERDICT: AFFECTED_Q01_Q18_AUTHOR_SELF_VERIFIED_WITH_HISTORICAL_BASELINE; HANDOFF_PACKAGING_PENDING; NEW_CONTENT_READY_NOT_CLAIMED; NO_MERGE_NO_DEPLOY.
 
 
@@ -129,3 +129,13 @@ Chủ dự án phê duyệt sửa biên tập tại nguồn CONTENT_READY; **kh�
 
 ## 20/11/2026 · owner math-label ΔA after Oxyz prose cleanup
 - Learner `2beb1845a2a6de7684985c995be2914e8878d79a`, prior `159ff5f489dfb541bdd858b9559cc7cf7347df64` historical. Three `QUY TẮC` labels for vector paths, force resultant and coordinate operations correctly become TÍNH CHẤT; two `ĐIỀU KIỆN` labels for noncollinear 3-point plane / vanishing parametric direction become KIẾN THỨC CẦN GHI NHỚ. Existing precise vector arrows and canonical symmetric-line exception from S1 fixes retained; 40 outcomes, 247 canonical question/keys/rubrics, public replay safety unchanged. Exactly five formal prefixes changed, math untouched; targeted Q03/PED author self QA only, no full NotebookLM/RELEASE.
+
+
+## 20/11/2026 — Full SGK Knowledge Q18 CĐ18 on one learner SHA
+
+- Current effective learner source `c5742e0d8914f85dec1ccd093d418290068b65a3` replaces source `2beb1845a2a6de7684985c995be2914e8878d79a` **only for new authoring Delta C**. SGK KNTT G12 Tập Một ChII B06–B08 (owner Git source `856a37bd16d2746ffc2e12906de18d1f4338a3b6`) and Tập Hai ChV B14–B17 (owner source `11eb2834cfdb4a24685157f84666c2bb0767970a`). Read all 40 student Knowledge modules and their outcome identifiers, existing substantive worked examples, First Try and D6. Exactly 3 Topic learner pages; no separate Topic Core. Do not infer independent NotebookLM new Topic PASS from original SGK review.
+- **DELTA_C knowledge gap closure** O01/O05: G12 B06 zero-vector angle convention is **arbitrary in 0°–180°**, not a unique determined angle; u·0=0 but inverse-cos division by zero forbidden. O07 explicit Cartesian three unit vectors i,j,k, orthogonal unit directions and unique u=x i+y j+z k. O13 tetrahedron centroid averages **four** vertices and AI=(3/4)AG where G is opposite face centroid. O19 nonzero-axis intercept plane x/a+y/b+z/c=1 with abc≠0. O20 perpendicular bisector plane of AB as all points XA=XB, normal AB, midpoint condition and expanded squared-distance derivation. O40 sphere tangent plane at P, ‪(P−I)·(X−P)=0‬ only after testing IP=R. All have complete standalone examples, hypothesis, method choice, counterexample/remediation and condition before formula.
+- **Math direct checks:** vector u=2i−3j+4k → coordinates (2,−3,4), norm √29. Tetrahedron A0,B(4,0,0),C(0,4,0),D(0,0,4) → I(1,1,1) and G_BCD=(4/3,4/3,4/3). Plane with three intercepts (2,0,0),(0,−3,0),(0,0,6) → 3x−2y+z−6=0, all points check. Bisector A=(0,0,0),B=(2,4,0) → x+2y−5=0; X=(5,0,0) distances XA=XB=5. Sphere center I=(1,2,3), radius 4, P=(5,2,3) lies on sphere; tangent plane x=5 satisfies d(I,P)=4. Mathematical domain restrictions/zero-denominator conditions explicitly stated.
+- **Q15/Q16 preserved:** `# Luyện tập` through `# Tự kiểm tra` remains byte-identical to prior learner `2beb1845a2a6de7684985c995be2914e8878d79a`. 40 lesson/outcome canonical pairs unchanged, all 247 public canonical IDs (original bank/crosswalk), 12 public question-only selfchecks and original SGK answer keys, Worked, Written rubrics, diagrams and protected RD1 remain unchanged; CLIENT_SELF_CHECK_NO_MASTERY only. No website/browser/official Final Submit/Mastery or merge/deploy.
+- **Source limitation still OPEN P2:** Original SBT G12 Tập Hai ChV B14 printed page **25** unavailable in PDF custody, affects SBT items **5.6–5.7**. Keep `P2:1` and original note; no assertion of fresh SBT scan or source-equivalence for these questions. This academic Knowledge author self-Q18 does **not** close the existing SBT source gap or confer independent full-Topic NotebookLM PASS.
+- Signed Q18 verification mode **AUTHOR_SELF_VERIFIED**, owner-effective one v3.2.0 Q01–Q18; no alternate quality standard or Topic Core. Scoped math/PED P0/P1=0 for new additions; historical immutable reviewer receipts retained only as historical snapshots.
