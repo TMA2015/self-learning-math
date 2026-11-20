@@ -1,7 +1,7 @@
 # CĐ2 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
+CURRENT_SOURCE_BLOB: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
 CURRENT_Q18_RECEIPT_BLOB: d91f05f9fdb43229a19d396c93e740568151154d
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -110,3 +110,9 @@ RELEASE_AUTHORIZATION: NO
 - CURRENT_SOURCE_BLOB: 36d6657b9977e3f72d7bf73d98653188a0ebe760
 - CURRENT_Q18_RECEIPT_BLOB: d91f05f9fdb43229a19d396c93e740568151154d
 - ΔA one model-domain method label only, previous math/canonical Q15/Q16 unchanged.
+
+
+## 20/11/2026 — Bản thảo CĐ2 trang Kiến thức đã tự kiểm với SGK
+- SOURCE_HIEN_HANH: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b
+- REVIEW_RECEIPT_BLOB: caa5371a764d5f622d28cf249423c74df1d06d50
+- S1 Toán 10 T1 Bài 3-4 và T2 Bài 17: bổ sung định nghĩa tam thức bậc hai, bất phương trình bậc hai, hệ bất phương trình bậc nhất hai ẩn và vô số nghiệm nửa mặt phẳng.
