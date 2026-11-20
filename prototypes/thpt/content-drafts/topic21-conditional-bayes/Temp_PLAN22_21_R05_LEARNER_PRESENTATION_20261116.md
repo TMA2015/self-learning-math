@@ -53,7 +53,17 @@ Nhóm điều kiện gồm 9 vé xanh; có 6 vé trong nhóm đó có sao. Do đ
 
 Đôi khi ta không được cho số người hoặc số phiếu trong từng nhóm, mà chỉ biết các xác suất của biến cố. Ta vẫn muốn giữ đúng cách nhìn từ bài trước: khi biết \(B\) xảy ra, ta chỉ quan tâm phần \(B\), còn trường hợp vừa \(A\) vừa \(B\) chính là vùng giao \(A\cap B\). Lấy phần giao so với toàn bộ phần đã biết sẽ cho xác suất của \(A\) **trong điều kiện \(B\)**.
 
-Nếu các kết quả ban đầu đồng khả năng, ta có thể dùng tỉ số \(n(A\cap B)/n(B)\). Khi dữ liệu cho dưới dạng xác suất, cùng ý tưởng ấy được viết bằng cách chia xác suất giao cho xác suất của biến cố đã biết. Điều kiện \(P(B)>0\) không thể bỏ qua vì không được chia cho 0. Chú ý vị trí sau vạch đứng: \(P(A\mid B)\) hỏi về \(A\) khi **đã biết \(B\)**, khác với \(P(B\mid A)\).
+Nếu các kết quả ban đầu đồng khả năng, ta có thể dùng tỉ số \(n(A\cap B)/n(B)\). Khi dữ liệu cho dưới dạng xác suất, cùng ý tưởng ấy được viết bằng cách chia xác suất giao cho xác suất của biến cố đã biết. Điều kiện \(P(B)>0\) không thể bỏ qua vì không được chia cho 0.
+
+Khi số liệu có **hai nhóm** và **hai đặc điểm**, ta có thể xếp số người hoặc số vật vào **bảng dữ liệu thống kê 2×2**. Mỗi ô cho biết số trường hợp thỏa **đồng thời** hai điều kiện; tổng của hàng hoặc cột cho biết có bao nhiêu trường hợp thuộc nhóm đã biết. Chẳng hạn, xét dữ liệu giả định về 30 học sinh như sau:
+
+| Nhóm học sinh | Đeo kính | Không đeo kính | Tổng |
+|---|---:|---:|---:|
+| Tham gia câu lạc bộ cờ | 5 | 7 | 12 |
+| Không tham gia câu lạc bộ cờ | 4 | 14 | 18 |
+| **Tổng** | **9** | **21** | **30** |
+
+Nếu chọn đều một học sinh và **biết bạn ấy thuộc câu lạc bộ cờ**, ta chỉ xét hàng 12 bạn: có 5 bạn đeo kính nên \(P(\text{đeo kính}\mid\text{câu lạc bộ cờ})=5/12\). Ngược lại, **biết bạn ấy đeo kính** thì phải xét cột 9 bạn: trong đó 5 bạn thuộc câu lạc bộ nên \(P(\text{câu lạc bộ cờ}\mid\text{đeo kính})=5/9\). Cùng một ô giao nhưng **mẫu số khác nhau**, vì thông tin đã biết đã đổi. Đây là bảng minh họa để học cách tính xác suất; không suy quan hệ nhân quả giữa việc tham gia câu lạc bộ và đeo kính. Chú ý vị trí sau vạch đứng: \(P(A\mid B)\) hỏi về \(A\) khi **đã biết \(B\)**, khác với \(P(B\mid A)\).
 
 > **CÔNG THỨC — Xác suất có điều kiện**
 >
