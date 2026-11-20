@@ -221,7 +221,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
     "G10_B22_PARABOLA_FOCUS_R02.svg"])
     assert(d.includes(token),"B22 original figure missing from Discovery: "+token);
   for(const x of ["mái rộng 12 m","rộng 30 m","rộng 20 m",
-    "B nhận trước","A đến trước","x≤−20","không xác định"])
+    "B nhận trước","A đến trước","x≤−20","chưa cho tọa độ duy nhất"])
     assert(d.includes(x),"B22 transfer explanation missing guarded separate data: "+x);
   assert((s.match(/^    \\\[$/gm)||[]).length===0,
    "B22 original inline math does not need raw HTML display wrappers");
