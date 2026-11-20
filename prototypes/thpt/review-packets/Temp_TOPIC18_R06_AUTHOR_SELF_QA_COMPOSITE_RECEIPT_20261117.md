@@ -36,8 +36,8 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-SOURCE_BLOB: 4a0342a04ca941af42dc965e8a4d1f5b507429cf
-ACADEMIC_SOURCE_BLOB: 4a0342a04ca941af42dc965e8a4d1f5b507429cf
+SOURCE_BLOB: 159ff5f489dfb541bdd858b9559cc7cf7347df64
+ACADEMIC_SOURCE_BLOB: 159ff5f489dfb541bdd858b9559cc7cf7347df64
 FROZEN_R04_READY_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 FROZEN_R04_FULL_AUTHOR_Q18_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
 R05_GEOMETRIC_MODEL_SOURCE_BLOB: af8a3529398e5f876d5c979b0d5d26df3519d6ac
@@ -119,3 +119,9 @@ Chủ dự án phê duyệt sửa biên tập tại nguồn CONTENT_READY; **kh�
 **Lỗi nguồn trước:** learner `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82` của CĐ18 gọi hệ gồm hai tỉ số và một tọa độ hằng là **dạng chính tắc**, trái thuật ngữ/điều kiện SGK. Source duy nhất `4a0342a04ca941af42dc965e8a4d1f5b507429cf` đã thay đổi **nội dung học thuật thật**: thêm định nghĩa chính tắc với abc≠0; phân biệt hệ tương đương (khi u có một thành phần 0) nhưng không là phương trình chính tắc theo SGK; sửa **stem, lời giải Ví dụ, stem/Đối chiếu Vận dụng** của duy nhất TOP18-O26 để tự học đúng. Vẫn cùng `ITEM_ID: THPT-TOP18-T26`, không nhân bản hay sửa lời giải của các item khác. **Không được ghi đây là Delta A**, vì stem và lời giải O26 đã sửa về diễn đạt/giới hạn đúng SGK.
 
 **Q18 affected author self-QA 9/9 PASS:** với t=−3,−1,0,1,5 đường x=1+2t,y=3,z=4−t thỏa y=3 và (x−1)/2=(z−4)/(−1); đường x=2+t,y=−1,z=3+2t thỏa tương tự; không có mẫu 0; định nghĩa yêu cầu abc≠0; một ITEM_ID giữ nguyên; ví dụ có Đề/Lời giải; LESSON_ID/placements giữ nguyên; MathJax delimiters cân; đảo ngược đúng 7 thay đổi trả lại chính xác nguồn gốc trước Delta C. Không thay rubrics/figure/assessment safeguards của các item khác. **ACADEMIC TARGETED AUTHOR_SELF_VERIFIED**, không có độc lập NotebookLM hay full 22 Topic source S1 verdict mới. Owner giữ nguyên CONTENT_READY nhánh AUTHORING, không tự release/merge/deploy.
+
+
+## 20/11/2026 — Owner editorial Delta A, continuous prose at §5 opening
+- New learner SHA `159ff5f489dfb541bdd858b9559cc7cf7347df64`; prior learner `4a0342a04ca941af42dc965e8a4d1f5b507429cf` is historical.
+- Replaced sole `Ví dụ về đường bay và giao mặt phẳng.` heading fragment with `Chẳng hạn, chọn hệ trục tọa độ trong không gian.` preceding **unchanged** 3D parametric line-flight narrative. No altered vector, coordinates, condition, student worked example, Practice/anchor/rubric, canonical item ID, 40 outcome IDs, media or protected selfcheck. 3-part architecture and formal 40 independent example labels remain exactly as before.
+- Q03/PED targeted author self verification PASS for Delta A; no new academic NotebookLM PASS, no runtime/release claims.
