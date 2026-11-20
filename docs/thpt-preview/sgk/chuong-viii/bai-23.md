@@ -12,34 +12,54 @@
 .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-tree ul {margin:.35rem 0 .35rem 1rem;padding-left:1rem;border-left:2px solid #4879c2}
 .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-tree li {margin:.3rem 0}
 
-/* B23 owner P2 corrections: Golden hierarchy, deliberate disclosures, visible worked solutions. */
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question{border:1px solid #a5bee5!important;border-radius:9px!important;background:var(--md-default-bg-color)!important;overflow:hidden}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question>summary{background:#eaf1fc!important;color:#193d66!important;padding:12px 38px 12px 15px!important;font-weight:700!important;border-bottom:0}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question[open]>summary{border-bottom:1px solid #a5bee5}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question>summary::before{display:none!important;content:none!important}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question>summary:focus-visible{outline:3px solid #4879c2;outline-offset:-3px}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-g10-example-solution{display:block;margin:1rem 0;padding:14px 18px;background:#eef5ff;border:1px solid #9ebbe4;border-left:4px solid #4879c2;border-radius:9px;color:#193d66}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-g10-example-solution p{margin:0!important;line-height:1.7}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .b23-condition{margin:12px 0 18px;line-height:1.7}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip{border:1px solid #d8bd8d!important;border-radius:9px!important;background:var(--md-default-bg-color)!important;overflow:hidden}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip>summary{background:#fff4dd!important;color:#59421a!important;padding:11px 38px 11px 15px!important;font-weight:700!important}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip>summary::before{display:none!important;content:none!important}
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip>summary:focus-visible{outline:3px solid #bc8c36;outline-offset:-3px}
-[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.question>summary{background:#203551!important;color:#ecf5ff!important}
-[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-g10-example-solution{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
-[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) details.tip>summary{background:#493b25!important;color:#fff0d4!important}
-@media(max-width:600px){.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY01"]) .thpt-g10-example-solution{padding:12px 14px}}
 </style>
 
-<div class="thpt-r4-screen" data-thpt-r4 data-b23-owner-p2-ux="r02">
+<script>
+/* B23 source-scoped Golden bridge: reuse the approved B22 presentation CSS,
+   without altering the shared SGK route/assessment runtime or cloning a theme.
+   Only classes and section-heading DOM are attached to this one lesson. */
+(() => {
+ "use strict";
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/chuong-viii\/bai-23\/?$/.test(location.pathname))return;
+  const article=document.querySelector(".md-content__inner");
+  if(!article||article.dataset.g10B23Golden==="true"||
+    !article.querySelector('.thpt-r4-screen[data-b23-owner-p2-ux="r03"]'))return;
+  const tab=article.querySelector(":scope > .tabbed-set");
+  const labels=[...(tab?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+  const panes=[...(tab?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+  const radios=[...(tab?.querySelectorAll(':scope > input[type="radio"]')||[])];
+  const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+  if(labels.length!==4||panes.length!==4||radios.length!==4||
+     !labels.every((el,i)=>el.textContent.trim()===names[i]))return;
+  const heading=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
+   "4. Lỗi thường gặp và cách tự khắc phục"];
+  article.classList.add("thpt-g10-chiv-golden");
+  panes.forEach((pane,i)=>{
+   if(pane.querySelector(":scope > h2.thpt-g10-section-heading"))return;
+   const h=document.createElement("h2");
+   h.className="thpt-g10-section-heading";
+   h.textContent=heading[i];
+   pane.prepend(h);
+  });
+  const sync=()=>labels.forEach((label,i)=>
+   label.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  tab.addEventListener("change",sync);
+  sync();
+  article.dataset.g10B23Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script>
+
+<div class="thpt-r4-screen" data-thpt-r4 data-b23-owner-p2-ux="r03">
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VIII · KIẾN THỨC SGK KNTT</p>
-<p class="thpt-r4-lead">Phân biệt quy tắc cộng và quy tắc nhân, đếm số trường hợp không thiếu hoặc trùng.</p>
 
 </div>
 
 === "Khám phá kiến thức"
-
-    ### Cùng tìm hiểu
 
     Có 4 môn nghệ thuật và 3 môn thể thao. Nếu một bạn được chọn **một** môn thuộc một trong hai nhóm, kết quả hoàn chỉnh chỉ là tên một môn: có 7 lựa chọn. Nếu bạn ấy phải chọn **một môn ở mỗi nhóm**, kết quả hoàn chỉnh là một **cặp môn**, có 12 cách. Sự khác nhau không nằm ở từ “hoặc” hay “và” mà ở **đơn vị cần đếm**: một kết quả hoàn chỉnh gồm những gì?
 
@@ -155,7 +175,7 @@
 
 
 
-    ### Điều cần hiểu sau bài
+    ### 1.5. Điều cần hiểu sau bài
 
     **Quy tắc cộng** đếm các kết quả thuộc một trong những trường hợp rời nhau. **Quy tắc nhân** đếm đủ các bước tạo ra một kết quả khi số nhánh con phù hợp là cố định. Với điều kiện chữ số/chẵn lẻ hoặc số lựa chọn thay đổi theo nhánh, phải chia trường hợp rồi kết hợp hai quy tắc; kiểm lại bằng liệt kê khi số lượng nhỏ.
 
@@ -237,8 +257,6 @@
 
     Nếu đếm sai, hãy tìm lại **một kết quả hoàn chỉnh** và kiểm các trường hợp có giao nhau, các bước có cùng số nhánh con, chữ số đầu có phải 0 và chữ số đã được dùng chưa. Các hướng dẫn dưới đây dẫn đến đúng câu Vận dụng và câu luyện phù hợp.
 
-    ### Tìm lỗi trong từng câu Vận dụng
-
     <span id="help-g10-chviii-try01" data-thpt-help-id="HELP-G10-CHVIII-TRY01"></span>
 
     ??? tip "4.1. Nhân số truyện với số vé khi chỉ chọn một phần thưởng"
@@ -286,8 +304,6 @@
         5. **Luyện tiếp:** Mở câu luyện qua liên kết bên dưới và tự làm trước khi đối chiếu. Nếu đã xem lời giải, hãy chọn một câu khác để thử không có gợi ý.
 
         <a href="../luyen-tap/?item=THPT-G10-B23-P05">Mở câu luyện tập đã được kiểm tra</a>
-
-    ### Những sai lầm cần kiểm tra thêm
 
     <span data-thpt-help-id="D6-G10-B23-01" hidden></span>
 
