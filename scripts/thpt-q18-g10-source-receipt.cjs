@@ -1036,8 +1036,40 @@ function expectedG10KnowledgeBlob(lesson,legacy){
  }
  return blobs[1];
 }
+// Reuse ONE existing Q18 source-lock for owner-requested placement.
+// Original academic/Golden snapshot receipts remain immutable.
+function placementExpectedG10KnowledgeBlob(lesson,legacy){
+ const historical=expectedG10KnowledgeBlob(lesson,legacy);
+ const loc="prototypes/thpt/ux795/G10_B01_B23_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md";
+ const file=path.join(root,loc);
+ if(!fs.existsSync(file))return historical;
+ const receipt=fs.readFileSync(file,"utf8");
+ assert(receipt.includes("G10-B01-B23-KIEM-LOI-PLACEMENT-Q18-R01-20261120")&&
+        receipt.includes("B23_DELTA_C_AFFECTED_PART_NOTEBOOKLM_PENDING")&&
+        receipt.includes("DELTA_A_UI"),"Owner placement Q18 scope/review status missing");
+ const records=[...receipt.matchAll(/^\| (B\d{2}) \| \x60([a-f0-9]{40})\x60 \| \x60([a-f0-9]{40})\x60 \| (\d+) \|$/gm)];
+ assert.equal(records.length,14,"B01-B23 placement Q18 receipt requires 14 lesson rows");
+ assert.equal(new Set(records.map(r=>r[1])).size,14,"Duplicate lesson row in Q18 placement receipt");
+ const name="B"+String(lesson).replace(/^B/,"").padStart(2,"0");
+ const row=records.find(r=>r[1]===name);
+ if(!row)return historical;
+ assert.equal(row[2],historical,name+" must extend EXACT frozen source/receipt");
+ assert(row[3]!==row[2]&&Number(row[4])>=1,name+" source delta and HELP count needed");
+ const n=Number(name.slice(1));
+ const ch=n<=2?"i":n<=4?"ii":n<=6?"iii":n<=11?"iv":n<=14?"v":n<=18?"vi":n<=22?"vii":"viii";
+ const contents=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-"+ch+"/bai-"+n+".md"));
+ const gitSHA=require("node:crypto").createHash("sha1")
+  .update(Buffer.from("blob "+contents.length+"\0")).update(contents).digest("hex");
+ assert.equal(gitSHA,row[3],name+" placement must exactly match receipt Git source SHA");
+ const source=contents.toString("utf8");
+ assert.equal([...source.matchAll(/^ {4}\?\?\? tip "Kiểm lỗi"$/gm)].length,Number(row[4]),
+  name+" Kiểm lỗi count must match canonical relocated HELP count");
+ assert.deepEqual([...source.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
+  ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],name+" original four Golden tabs");
+ return row[3];
+}
 function candidateG10KnowledgeBlob(lesson){
- const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
+ const sentinel="0".repeat(40),result=placementExpectedG10KnowledgeBlob(lesson,sentinel);
  return result===sentinel?null:result;
 }
-module.exports={expectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows};
+module.exports={expectedG10KnowledgeBlob:placementExpectedG10KnowledgeBlob,candidateG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviEditorialReceiptRows,chviExampleUxReceiptRows,chviiEditorialReceiptRows};
