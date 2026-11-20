@@ -68,7 +68,8 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob){
  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"]){
   assert.deepEqual(tokenSet(now,id),tokenSet(before,id),"Q15/source identity changed: "+id);
  }
- if(receipt.includes("G10-CHVIII-B23-G0G2-Q18")) {
+ if(receipt.includes("G10-CHVIII-B23-G0G2-Q18") ||
+    receipt.includes("G10-CHVIII-B23-VAN-DUNG-KIEM-LOI-R04-20261120")) {
   const original=b23CanonicalAnswers(before),candidate=b23CanonicalAnswers(now);
   assert.equal(original.length,4,"B23 historical four answer disclosures must be preserved");
   assert.deepEqual(candidate,original,"B23 approved disclosure label and D6 navigation may move, but all four original answer/rationale/remediation texts must match exactly");
