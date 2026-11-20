@@ -334,6 +334,12 @@ Ba điểm không nhất thiết cùng nằm trên mặt phẳng tọa độ Oxy
 
 > **TÍNH CHẤT — Chasles, trung điểm và trọng tâm vẫn đúng trong không gian.** Trong không gian, \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\) vẫn đúng dù A,B,C không nằm trong Oxy. Trung điểm M của AB thỏa \(\overrightarrow{MA}+\overrightarrow{MB}=\vec0\); trọng tâm tam giác ABC thỏa \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Không nhầm giao điểm hai đoạn nhìn thấy trên hình chiếu với giao điểm thật của chúng trong không gian.
 
+Trong không gian, **trọng tâm của tứ diện** không chỉ là trung bình ba đỉnh. Cho tứ diện \(ABCD\) và \(G\) là trọng tâm tam giác \(BCD\). Vì \(G\) là trung bình ba vị trí \(B,C,D\), muốn cân bằng **cả bốn đỉnh** phải lấy điểm \(I\) trên đoạn \(AG\) sao cho \(\overrightarrow{AI}=\frac34\overrightarrow{AG}\).
+
+> **TÍNH CHẤT — Trọng tâm tứ diện.** Với gốc \(O\) bất kỳ, trọng tâm \(I\) thỏa \(\displaystyle\overrightarrow{OI}=\frac14(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}+\overrightarrow{OD})\), hay \(\overrightarrow{IA}+\overrightarrow{IB}+\overrightarrow{IC}+\overrightarrow{ID}=\vec0\). Công thức có **bốn vectơ vị trí**, khác trọng tâm tam giác có ba vectơ.
+
+**Ví dụ minh họa.** Xét \(A(0,0,0)\), \(B(4,0,0)\), \(C(0,4,0)\), \(D(0,0,4)\). Trọng tâm của mặt \(BCD\) là \(G(4/3,4/3,4/3)\). Trung bình bốn tọa độ đỉnh cho \(I(1,1,1)\), và \(\overrightarrow{AI}=\frac34\overrightarrow{AG}\). Kiểm cả độ lớn lẫn hướng của hai vectơ, không đo hình phối cảnh để suy tỉ lệ.
+
 **Ví dụ**
 
 **Đề bài:** Trong Oxyz, A=(1,0,2), B=(4,−2,5), C=(5,1,7). Kiểm tra quy tắc Chasles \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\).
@@ -361,6 +367,20 @@ Trên hình phối cảnh, hai mũi tên ở các vị trí khác nhau có thể
 ![Phân rã độ dịch chuyển A→B theo ba trục](../svg/FIG-G12-CHII-B08-R00.svg)
 
 **Cách đọc hình:** Ba thành phần tọa độ trên các trục hợp thành vectơ tím từ A tới B. Hình chỉ minh họa cách phân tích **một vectơ**, không biểu diễn góc giữa hai vectơ khác nhau; muốn xác định góc của hai vectơ trong ví dụ tiếp theo, dùng tích vô hướng của các cặp thành phần tương ứng, không đo góc trên phối cảnh.
+
+Tích vô hướng còn cho phép tính **độ dài của tổng và hiệu** từ độ dài hai vectơ và góc giữa chúng. Vì \(\vec u\cdot\vec u=|\vec u|^2\), tích vô hướng giao hoán và phân phối theo phép cộng, nên:
+\[
+\vec u\cdot\vec v=\vec v\cdot\vec u,\quad
+(\vec u+\vec v)\cdot\vec w=\vec u\cdot\vec w+\vec v\cdot\vec w,\quad
+(k\vec u)\cdot\vec v=k(\vec u\cdot\vec v);
+\]
+\[
+|\vec u+\vec v|^2=|\vec u|^2+2\vec u\cdot\vec v+|\vec v|^2,\qquad
+|\vec u-\vec v|^2=|\vec u|^2-2\vec u\cdot\vec v+|\vec v|^2.
+\]
+Các tính chất này đúng trong mặt phẳng và không gian; muốn suy ra góc bằng \(\cos\theta=\frac{\vec u\cdot\vec v}{|\vec u||\vec v|}\), **hai vectơ phải khác \(\vec0\)**.
+
+**Ví dụ minh họa.** Nếu \(|\vec u|=3\), \(|\vec v|=4\) và góc của chúng là \(60^\circ\), thì \(\vec u\cdot\vec v=6\), nên \(|\vec u-\vec v|^2=9-12+16=13\), hay \(|\vec u-\vec v|=\sqrt{13}\). Chọn phép khai triển này vì đã biết độ dài và góc nhưng chưa biết các tọa độ.
 
 **Ví dụ**
 
@@ -390,6 +410,12 @@ Có: dot=1−1+0=0, cả hai khác không.
 
 **Cách đọc hình:** Ba trục thật vuông góc dù hình vẽ xiên; nét đứt là đường gióng tọa độ, không phải chặng di chuyển.
 
+**Ba trục Descartes vuông góc** \(Ox,Oy,Oz\) có chung gốc \(O\), đôi một vuông góc; \(\vec i,\vec j,\vec k\) là các **vectơ đơn vị** lần lượt cùng chiều dương ba trục. Chúng tạo thành ba hướng cơ sở độc lập: mọi vectơ \(\vec u\) được viết **duy nhất** thành \(\vec u=u_x\vec i+u_y\vec j+u_z\vec k\). Với điểm \(M(x,y,z)\), \(\overrightarrow{OM}=x\vec i+y\vec j+z\vec k\).
+
+> **ĐỊNH NGHĨA — Ba mặt phẳng tọa độ.** Trong Oxyz, \((Oxy)\) có \(z=0\), \((Oyz)\) có \(x=0\), \((Ozx)\) có \(y=0\). Điểm thuộc **một trục tọa độ** phải có hai tọa độ còn lại bằng 0; điểm thuộc **một mặt phẳng tọa độ** chỉ cần tọa độ vuông góc với mặt phẳng đó bằng 0.
+
+**Ví dụ minh họa.** Nếu \(\overrightarrow{OM}=2\vec i-\vec j+3\vec k\) thì \(M(2,-1,3)\). Điểm \(N(4,0,-2)\) thuộc mặt phẳng \((Ozx)\) vì tung độ bằng 0, nhưng không thuộc riêng trục \(Ox\) hoặc \(Oz\) do hoành độ và cao độ đều khác 0. Bước kiểm là đối chiếu đúng trục vuông góc, không suy từ hình vẽ xiên.
+
 **Ví dụ**
 
 **Đề bài:** Trong Oxyz, A=(1,−1,2), B=(4,3,−2). Tính tọa độ \(\overrightarrow{AB}\), \(\overrightarrow{BA}\) và độ dài đoạn \(AB\).
@@ -417,6 +443,10 @@ Một robot di chuyển theo ba trục nên muốn biết vị trí cuối phả
 ![Phân rã độ dịch chuyển A→B theo ba trục](../svg/FIG-G12-CHII-B08-R00.svg)
 
 **Cách đọc hình:** Ba thành phần theo trục cộng thành vectơ tím A→B; không cộng ba độ dài thành độ dời.
+
+Tính tọa độ còn giúp **xét ba điểm thẳng hàng** trong không gian. Với hai điểm phân biệt \(A,B\) và một điểm \(C\), ba điểm \(A,B,C\) thẳng hàng khi và chỉ khi có \(t\in\mathbb R\) sao cho \(\overrightarrow{AC}=t\overrightarrow{AB}\). Ta so tỉ lệ **cùng một hệ số** trên cả ba thành phần, không chia cho một tọa độ bằng 0; nếu \(A=B\), cần xét riêng vì \(\overrightarrow{AB}=\vec0\).
+
+**Ví dụ minh họa.** Với \(A(1,0,2)\), \(B(2,2,1)\), \(C(4,6,-1)\), ta được \(\overrightarrow{AB}=(1,2,-1)\), \(\overrightarrow{AC}=(3,6,-3)=3\overrightarrow{AB}\), nên ba điểm thẳng hàng. Việc ba đoạn có độ dài nào đó bằng nhau không đủ thay cho điều kiện vectơ cùng phương.
 
 **Ví dụ**
 
