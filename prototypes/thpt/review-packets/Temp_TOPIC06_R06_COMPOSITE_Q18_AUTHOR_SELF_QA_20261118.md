@@ -14,7 +14,7 @@ PED_VERIFICATION: Verified current 16 meaning-first lessons, 15 corrected D6 des
 CANONICAL_Q15: 46 immutable original G11 IDs plus 20 new original Topic IDs =66 unique real display-only item placements, two frozen bank source hashes, 16 public question-only replay IDs, no duplicate canonical owner.
 ASSESSMENT_Q16: Public replays are CLIENT_SELF_CHECK_NO_MASTERY only; no private RD1 exposed, official Final Submit, independent Topic Readiness or Skill Mastery produced.
 SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 0d5bd83766db6911ced4b1392fce9fc02e3c0fe2
+SOURCE_BLOB: 55cbb23d860aaff700c959bc291ec44699584159
 BASELINE_R05_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b
 BASELINE_R05_Q18_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
 R06_PED6_TARGETED_RECEIPT_BLOB: 2d7686a55f2196e7422bf30dfd6d0dc3fcc10e83
@@ -83,3 +83,12 @@ Owner-approved ΔA 19/11: 13 previously unmarked formal trigonometric descriptio
 - **Exact student repair:** self-contained first-try restates its own h(t) and domain; closed Đối chiếu now computes h(12)=2+0.5*cos(3π)=1.5 m, cos(3π)=−1, consistent with Example minimum at t=12. D6 explicitly identifies wrong-model substitution and wrong phase, without exposing answer before voluntary reveal.
 - **Targeted independent-of-text arithmetic QA:** 12/4=3, cos(3π)=−1, 2+0.5*(−1)=1.5; model domain 0≤12≤12, extremum match h(4)=h(12)=1.5. 5/5 mathematical checks. Q01/Q04/Q08/PED6 targeted author self-QA FIXED; this is academic Delta C not mere copy change.
 - **Custody:** source suffix from `# Luyện tập` through `# Tự kiểm tra` byte-identical before vs after. 66 original Practice canonical items (stems/keys/solutions/rubrics), all 16 public no-Mastery selfchecks, 3 SVG, private RD1 and official Mastery untouched. No new independent NotebookLM academic/PED verdict, no 22/22 academic PASS or RELEASE authorization.
+
+
+## 20/11/2026 — CĐ06 Kiến thức đã kiểm SGK KNTT Toán 11 T1 B01–04
+- Bài 1 trang in 5–16: đã kiểm 16 mạch Kiến thức; bổ sung hệ thức Chasles sđ(Ou,Ov)+sđ(Ov,Ow)=sđ(Ou,Ow)+2kπ (hay +360k°), có minh họa 60° đến 150°, bảng sin/cos/tan/cot các góc 0,π/6,π/4,π/3,π/2 và điểm không xác định, chuyển chế độ DEG/RAD khi dùng máy tính. Nguồn https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-i-ham-so-luong-giac-va-phuong-trinh-luong-giac-3413/bai-1-gia-tri-luong-giac-cua-goc-luong-giac-12569.html.
+- Bài 2 trang in 17–21: công thức liên kết góc, cộng/trừ, nhân đôi, tích–tổng và tổng–tích đã có đầy đủ, đúng điều kiện chia cho sin/cos, giữ nguyên.
+- Bài 3 trang in 22–30: bổ sung các khoảng tăng/giảm của sin/cos/tan/cot, tập giá trị của tan/cot và tính chẵn/lẻ sin/cos/tan/cot; giữ đúng các chu kỳ và tiệm cận đã có. Nguồn https://sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-i-ham-so-luong-giac-va-phuong-trinh-luong-giac-3413/bai-3-ham-so-luong-giac-12584.html.
+- Bài 4 trang in 31–39: thêm cách tìm góc đại diện bằng sin^-1,cos^-1,tan^-1 với DEG/RAD rồi viết đủ các họ nghiệm (ví dụ sinx=0.3), phân biệt gần đúng một góc với tập nghiệm; sin/cos/tan/cot và lọc khoảng đã có, giữ nguyên. Nguồn https://www.sgkvn.com/lop-11-14/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-i-ham-so-luong-giac-va-phuong-trinh-luong-giac-3413/bai-4-phuong-trinh-luong-giac-co-ban-12593.html.
+- Tự kiểm toán học: Chasles 150−60=90°, bảng 5 góc sin²+cos²=1, tan/cot đúng điều kiện; sin tăng [−π/2,π/2], cos giảm [0,π], tan tăng (−π/2,π/2), cot giảm (0,π); sin(2x)=√3/2 cho x=π/6+kπ hoặc π/3+kπ; mô hình h(12)=1.5m đã sửa trước còn đúng. 16/16 mục Kiến thức, 16 Vận dụng, so điều kiện câu và lời giải. Giữ nguyên toàn văn # Luyện tập và # Tự kiểm tra và item IDs, không thêm module.
+- Đây là Delta C bổ sung học liệu tự kiểm bởi tác giả, **không** tuyên bố phản biện độc lập Academic/PED PASS hoặc release. Current canonical learner blob: 55cbb23d860aaff700c959bc291ec44699584159, preceding 0d5bd83766db6911ced4b1392fce9fc02e3c0fe2 historical.
