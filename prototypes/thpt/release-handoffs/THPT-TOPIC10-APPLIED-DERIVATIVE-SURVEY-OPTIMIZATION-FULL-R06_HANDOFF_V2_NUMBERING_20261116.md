@@ -3,7 +3,7 @@
 PACKET_ID: THPT-TOPIC10-APPLIED-DERIVATIVE-SURVEY-OPTIMIZATION-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 3ac0dc4e6702e26c19888acf9739fe3ea86b9dcf
+AUTHOR_METADATA_BLOB: 070971fe353c6dcbc205446a61c31aac6f6e4867
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -11,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: f3ed26380c817f3c3dea7a240634a45193f9edb2
+ACADEMIC_SOURCE_BLOB: 6cac404d215a758b9df477cb30ac54b6710b2e45
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: b1b38dff3909127b0c90981b1e0142094a2854eb
+REVIEW_RECEIPT_BLOB: dbe3bbba36e6192d034794867d31618bf4e51ad8
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
 PUBLIC_CANONICAL_BANK_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da
 PUBLIC_ORIGINAL78_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_ORIGINAL78_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -484,7 +484,7 @@ One normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.
 
 ## AUTHORING_A1_A7
 
-A1: current source SHA f3ed26380c817f3c3dea7a240634a45193f9edb2, active corrected bank SHA 5f6ab764df6541ada9b4d4475403d29984d8e7da, current Q18 receipt b1b38dff3909127b0c90981b1e0142094a2854eb and one stable packet. A2: historical owner G12 ChI SGK/SBT printed-page source receipt. A3: substantive author Q18 self-QA on new DELTA_C, no new independent NotebookLM review. A4: 36 outcomes, 120 canonical IDs, 36 selfcheck reuse, six new Written. A5: coherent six-part conceptual teaching, 36 first tries and four exact figures. A6: 42 active new solutions and the material P20/P24/P36 repairs and numeric volume/interval cases rechecked. A7: zero private RD1 and no official readiness/Mastery; RELEASE must test runtime Final Submit.
+A1: current source SHA 6cac404d215a758b9df477cb30ac54b6710b2e45, active corrected bank SHA 5f6ab764df6541ada9b4d4475403d29984d8e7da, current Q18 receipt dbe3bbba36e6192d034794867d31618bf4e51ad8 and one stable packet. A2: historical owner G12 ChI SGK/SBT printed-page source receipt. A3: substantive author Q18 self-QA on new DELTA_C, no new independent NotebookLM review. A4: 36 outcomes, 120 canonical IDs, 36 selfcheck reuse, six new Written. A5: coherent six-part conceptual teaching, 36 first tries and four exact figures. A6: 42 active new solutions and the material P20/P24/P36 repairs and numeric volume/interval cases rechecked. A7: zero private RD1 and no official readiness/Mastery; RELEASE must test runtime Final Submit.
 
 ## DELTA_LEDGER
 
@@ -502,7 +502,7 @@ Historical R01 bank/source/review and intermediate R02 repair source and R03 stu
 
 ## CURRENT_SOURCE_Q18_20261118 · owner-approved #864/#882/#865 regression crosswalk
 
-This section supersedes only the **current** A1/source/receipt references in historical R05/R06 paragraphs above; no historical snapshot is rewritten. The sole active learner Markdown remains `Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md`, exact Git blob `f3ed26380c817f3c3dea7a240634a45193f9edb2`. Current source-equivalent composite author Q18 `Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md`, blob `b1b38dff3909127b0c90981b1e0142094a2854eb`. Current A1 metadata blob `3ac0dc4e6702e26c19888acf9739fe3ea86b9dcf`.
+This section supersedes only the **current** A1/source/receipt references in historical R05/R06 paragraphs above; no historical snapshot is rewritten. The sole active learner Markdown remains `Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md`, exact Git blob `6cac404d215a758b9df477cb30ac54b6710b2e45`. Current source-equivalent composite author Q18 `Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md`, blob `dbe3bbba36e6192d034794867d31618bf4e51ad8`. Current A1 metadata blob `070971fe353c6dcbc205446a61c31aac6f6e4867`.
 
 Source diff from previous signed `bd33faa8e7bc348cda78da6e44d3f40a68223596`: four **formally highlighted but mathematically equivalent** prior knowledge statements (pairwise monotonicity, closed-interval maximum/minimum theorem, vertical and oblique asymptote), a recap of existing concepts, and editorial labels. The substantive new knowledge, conditions, problem stems/keys/math-worked solutions and rubric points are unchanged (`DELTA_B_SOURCE_EQUIVALENT` with detailed proof in Q18, **not** unverified Delta C). Removed 12 learner-visible `Author-key` labels and two `Anchor` footers without touching canonical item ownership. Exactly 120 original canonical displays (78 original SGK +42 Topic) and 36 public replay questions; four existing SVG placements; all 156 reveal boundaries balanced.
 
@@ -510,3 +510,6 @@ Source diff from previous signed `bd33faa8e7bc348cda78da6e44d3f40a68223596`: fou
 
 
 **19/11 owner Delta A:** 32 explicit formal labels, math unchanged; source/Q18/A1 relocked, CONTENT_READY preserved.
+
+
+**20/11 G12 B4 S1 Delta C:** two symmetry axes of simple rational curve added in one learner `6cac404d215a758b9df477cb30ac54b6710b2e45`, Q18 `dbe3bbba36e6192d034794867d31618bf4e51ad8`, A1 `070971fe353c6dcbc205446a61c31aac6f6e4867`, author affected 8/8; source CONTENT_READY preserved. No release.
