@@ -8,18 +8,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 19cf3322169724fe2dfa840827b27c168c5fb3f8
+SOURCE_COMMIT: 448f43df4cacf0ff3a3a9cfb7cbcae3bafaef8fb
 AUTHOR_PR: 831
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/831 — DRAFT AUTHORING, not merged or deployed
 CATALOG_TOPIC_ID: CD09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: a414d05a4039c6988f533978870f4bfe35ece71a
+ACADEMIC_SOURCE_BLOB: 509fe1bdbf64b6a01ee00532d59eff943110df15
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author SELF_VERIFIED, no independent new NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 864c9564f0224be4a26c8f2ed9d615dc58f2957a
+REVIEW_RECEIPT_BLOB: 803b75011bace6e9b70fd8853053af764fcc6e74
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R05_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 351c0985da5d07a7a852d99390758a011ae546fa
+AUTHOR_HANDOFF_BLOB: 1d8c054f71baf57d1a1e8b37ff7d20648fefe2fc
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL71_INDEX_BLOB: 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8
 PUBLIC_NEW37_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
@@ -99,3 +99,8 @@ Authoring Academic and Ped self-check cannot approve release. Owner-gated RELEAS
 
 ## 20/11/2026 authoring source update
 - SOURCE a414d05a4039c6988f533978870f4bfe35ece71a, Q18 864c9564f0224be4a26c8f2ed9d615dc58f2957a, A1 9acc988b14faf0d7adcb0e2ecf39ec554941e6c1, V2 351c0985da5d07a7a852d99390758a011ae546fa. Five derivative laws and two domain guard labels made consistent; unchanged math, no website release.
+
+
+## 20/11/2026 — Active targeted AUTHORING S1 Delta C TOP09-O19/O22
+- Learner 509fe1bdbf64b6a01ee00532d59eff943110df15, Q18 803b75011bace6e9b70fd8853053af764fcc6e74, A1 860186f46c99a3f4c442df113e9d9e5e6ffbd16f, V2 1d8c054f71baf57d1a1e8b37ff7d20648fefe2fc. S1 G11 T2 B32 pp91–93: (tan u)'=u'/cos²u when cos u≠0, (cot u)'=−u'/sin²u when sin u≠0; (ln|g|)'=g'/g when g≠0, separate ln g domain g>0.
+- Source-only content patch with affected mathematics self-QA; all previous Q15/Q16 item data unchanged. Full 22-topic S1 audit still pending; CONTENT_READY authoring snapshot is not integrated production acceptance.
