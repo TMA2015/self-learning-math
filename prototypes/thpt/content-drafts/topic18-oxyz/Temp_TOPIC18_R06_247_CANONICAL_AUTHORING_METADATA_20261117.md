@@ -33,8 +33,8 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 159ff5f489dfb541bdd858b9559cc7cf7347df64
-REVIEW_RECEIPT_BLOB: 4243265e21fbe95f41ee2d7d90a6f7afdbe4cb34
+ACADEMIC_SOURCE_BLOB: 2beb1845a2a6de7684985c995be2914e8878d79a
+REVIEW_RECEIPT_BLOB: f24b518590174d94f73378adcc76286db058322a
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
@@ -418,3 +418,9 @@ With original author Q01–Q18 source receipt, Q15/Q16 and signed A1–A7 as rep
 
 ## 20/11/2026 — current source self-review lock
 - Learner Git blob `159ff5f489dfb541bdd858b9559cc7cf7347df64`, composite Q18 Git blob `4243265e21fbe95f41ee2d7d90a6f7afdbe4cb34`. One inline example fragment cleaned; 40 outcomes, 247 original public canonical IDs and rubrics unchanged. No independent new reviewer PASS and no release activation.
+
+
+## 20/11/2026 current active source A1
+- ACADEMIC_SOURCE_BLOB: 2beb1845a2a6de7684985c995be2914e8878d79a
+- REVIEW_RECEIPT_BLOB: f24b518590174d94f73378adcc76286db058322a
+- Five formal prefixes only, prior one in-prose example label and full numerical Oxyz content retained.
