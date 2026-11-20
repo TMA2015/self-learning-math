@@ -1,5 +1,5 @@
 <!-- TOP18_DOT_ZERO_NORM_CURRENT_20261120 -->
-- TOP18-O05 source now `d1a9fc26cb8061a4929da05aea8701ed6b3b2e82`: SGK G12 T1 B6 p56 zero dot, squared norm and p57 dot-product distributivity/scalar/commutativity; prior source `8a580dc99b6a64b57cefc0c15fb7f9defb7acd48`, scoped Q18 `6057fbbce111c31517fc91941121b6bfaa99fffe`, learner IDs unchanged.
+- TOP18-O05 source now `4a0342a04ca941af42dc965e8a4d1f5b507429cf`: SGK G12 T1 B6 p56 zero dot, squared norm and p57 dot-product distributivity/scalar/commutativity; prior source `8a580dc99b6a64b57cefc0c15fb7f9defb7acd48`, scoped Q18 `0488c078d53dd320fe85b69310f430e5f19ca106`, learner IDs unchanged.
 - All 40 outcomes remain in one learner, 247 canonical original items intact; AUTHORING CONTENT_READY, no website release.
 
 ---
@@ -33,8 +33,8 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R05_PARAMETER_CONTEXT_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: d1a9fc26cb8061a4929da05aea8701ed6b3b2e82
-REVIEW_RECEIPT_BLOB: 6057fbbce111c31517fc91941121b6bfaa99fffe
+ACADEMIC_SOURCE_BLOB: 4a0342a04ca941af42dc965e8a4d1f5b507429cf
+REVIEW_RECEIPT_BLOB: 0488c078d53dd320fe85b69310f430e5f19ca106
 BASELINE_R04_SIGNED_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
 BASELINE_R04_SIGNED_Q18_RECEIPT_BLOB: 5262fd454346801b0b5eb4f3dc407bc99d3530
 
@@ -411,3 +411,6 @@ With original author Q01–Q18 source receipt, Q15/Q16 and signed A1–A7 as rep
 
 
 **19/11/2026 owner editorial Delta A:** 40 nhãn phát biểu TOP18 đổi loại cho rõ (không đổi các phát biểu toán, conditions, exercises, diagrams); source/Q18 SHAs ở metadata này đã khớp current single learner. AUTHORING CONTENT_READY unchanged; chỉ RELEASE intake còn pending.
+
+
+**20/11 S1 G12 B15 formal line equation Delta C:** TOP18-O26 now explicitly requires all abc≠0 for chính tắc and calls zero-component mixed form equivalent but NOT chính tắc; stem/solutions of canonical T26 revised to match. Q18 targeted `0488c078d53dd320fe85b69310f430e5f19ca106`, source `4a0342a04ca941af42dc965e8a4d1f5b507429cf`, 9/9 tests. All IDs/canonical count unchanged; STATUS CONTENT_READY preserved per owner.
