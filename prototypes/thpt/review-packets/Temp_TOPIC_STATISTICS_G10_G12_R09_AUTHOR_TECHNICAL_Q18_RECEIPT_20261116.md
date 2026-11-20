@@ -19,11 +19,11 @@ Cùng một nguồn `4ff6bfde83f55a1390661f11c71cc66873f3ecdb` đã bổ sung th
 # CĐ22 · R09 source-equivalent AUTHOR technical Q18 receipt · original R07 mathematics preserved
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 PACKET_ID: THPT-TOPIC-STATISTICS-G10-G12-FULL-R09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-SOURCE_BLOB: dfe01e7dfcf554b11834ac0c93a5eaf2af7aa3eb
+SOURCE_BLOB: 155f14cc191800d52fce98b0f7df6ab30bb0faf4
 PREVIOUS_R06_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 BASELINE_R05_BLOB: 0762cc67491965a4bab700aa1d33937aa3bf7cb6
 ORIGINAL_R01_BLOB: 4f4dc4abcf671479fe0650595e9b67f745738b9a
@@ -199,3 +199,10 @@ AUTHOR_SELF_QA_RECEIPT: This source-specific technical receipt binds R09 `4ff6bf
 ## 20/11/2026 — OWNER EDITORIAL ΔA · 14 formal boxes
 - Current learner Git blob `dfe01e7dfcf554b11834ac0c93a5eaf2af7aa3eb` (prior `4ff6bfde83f55a1390661f11c71cc66873f3ecdb` historical). Parsed actual Knowledge source: 14/14 compound/SGK-meta labels normalized by meaning: definition, formula, property or concise knowledge-to-remember; no internal formula, theorem condition, example, item, answer, rubric or SVG altered.
 - Reversible label-only diff; 13 thematic mathematical modules and three Topic pages unaffected. Q03/Q07/PED targeted author self-QA PASS; no full fresh NotebookLM or website AP claim.
+
+
+## 20/11/2026 · Full S1 Knowledge CĐ22 G10/G11/G12 39 outcomes — AUTHOR SELF Q18
+- One sole student source `155f14cc191800d52fce98b0f7df6ab30bb0faf4` vs preceding `dfe01e7dfcf554b11834ac0c93a5eaf2af7aa3eb`. Actual content inspection: 13 complete learner Knowledge lessons host original 39 SGK outcome references, prior 114 canonical Practice items and 19 Written, 9 public question-only selfchecks, 2 SVG. Primary scope G10 Tập 1 ChV B12–B14, G11 Tập 1 ChIII B08–B09 and G12 Tập 1 ChIII B09–B10, owner S1 source snapshot retained. Existing erroneous reviewer PDF page-index metadata P2 stays open; no fresh PDF re-render claim.
+- Delta C: §1.1 difference between reported accuracy bound d and real |a−ā| with 12.5±0.1 cm sample; §1.5 algebraic descriptive n-divisor variance formula sum(x−mean)²/n=sum x²/n−mean², invariance under addition and scaling k² for variance; §2.1 unequal interval widths requiring density f_i/h_i for area-proportional histogram and not frequency as height; §2.2 same grouped frequencies [0,10):2,[10,20):2 can represent data with **true means 6 and14** but both grouped estimate 10; §2.3 when n/2 hits cumulative group boundary, left/right interpolation agree at 20, proper Q1=35/3 and Q3=26.25; §3.3 same grouped table can correspond to true variances 25 vs 41 while grouped variance estimate 25. Concept-first conditions, examples, limits, counterexamples and D6 repair are within prior Knowledge, no item/assessment rewrite.
+- Arithmetic checks: reported error |12.47−12.5|=0.03, 0.03/12.5=0.0024; (2,4,6) mean4, s²=8/3 via both forms; unequal bins 10/10=20/20=1 density; D1(1,1,11,11) mean6 and D2(9,9,19,19) mean14, both grouped 2+2 and estimate10; f(4,6,8,2),n20 -> Me=20,Q1=10+(1/6)10=35/3,Q3=20+(5/8)10=26.25; D(1,9,11,19),mean10, s²=(81+1+1+81)/4=41. All mathematically consistent, examples with positive denominators and appropriate class interval conditions.
+- Q15/Q16 source suffix `# Luyện tập` to end byte-identical; no change to 39 OUTCOME_REF, original 114 canonical SGK Practice, 19 Written rubrics, 9 public selfcheck no-Mastery, 2 SVG, public source-index/bank provenance and protected Final Submit/Skill Mastery. **P2:1 stays** — original SGK source page-index/reviewer metadata provenance not freshly rescanned; no new independent NotebookLM whole-Topic PASS, no website RELEASE/merge/deploy. Q01–Q18 single owner-effective v3.2.0, affected academic/PED AUTHOR_SELF_VERIFIED P0/P1=0.
