@@ -786,6 +786,21 @@ function expectedG10KnowledgeBlob(lesson,legacy){
      "B17 R02 requires a distinct SHA for actual corrected Markdown source");
     assert(r02.includes("DELTA_B_SOURCE_EQUIVALENT")&&r02.includes("MathJax")&&r02.includes("B17_OUT_01"),
      "B17 R02 format-only and outcome scope evidence required");
+    const r03path=path.join(root,
+     "prototypes/thpt/ux795/G10_CHVI_B17_OWNER_P2_LEARNER_READABILITY_R03_20261120.md");
+    if(fs.existsSync(r03path)){
+     const r03=fs.readFileSync(r03path,"utf8");
+     const f03=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+     assert.equal(f03("PREVIOUS_B17_SOURCE_BLOB"),next,
+      "B17 R03 must extend exactly R02 display-source SHA");
+     const final=f03("CANDIDATE_B17_SOURCE_BLOB");
+     assert(/^[a-f0-9]{40}$/.test(final||"")&&final!==next,
+      "B17 R03 requires a distinct source SHA after pedagogic edits");
+     for(const token of ["Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
+       "DELTA_C_ACADEMIC_MATERIAL","B17_OUT_01","B17_OUT_05","P0=0","P1=0"])
+      assert(r03.includes(token),"B17 R03 source receipt missing "+token);
+     return final;
+    }
     return next;
    }
    return current;
