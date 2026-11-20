@@ -710,6 +710,9 @@ const run=()=>{
   else if(chapter==="v"&&lesson>=12&&lesson<=14)polishG10ChapterV(article);
   else if(chapter==="vi"&&lesson>=15&&lesson<=18)polishG10ChapterVI(article);
   else if(chapter==="vii"&&lesson>=19&&lesson<=22)polishG10ChapterVII(article);
+  // B23 uses the owner-approved G10 Golden already proven in B22; no new UI.
+  else if(chapter==="viii"&&lesson===23&&
+   article.querySelector('[data-thpt-first-try-id="THPT-G10-CHVIII-TRY01"]'))polishG10ChapterIV(article);
  }
  if(article.querySelector("[data-sgk-lesson-nav]"))return;
  const root=match[1]+(grade===10?"":"lop-"+grade+"/");
