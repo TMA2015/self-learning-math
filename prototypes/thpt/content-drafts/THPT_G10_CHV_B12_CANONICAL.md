@@ -88,6 +88,12 @@
         </div>
 
 
+
+    <span data-thpt-help-id="HELP-G10-B12-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Coi độ chính xác \(d\) là sai số tuyệt đối thực tế \(\Delta_a\), dù không biết số đúng.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Em đã viết \(\Delta_a=d\) chỉ vì đề cho độ chính xác \(d\)? Đề đã cho số đúng \(\bar a\), hay mới chỉ cho số gần đúng \(a\) và cận sai số \(d\)?</li><li><strong>Kiến thức gốc:</strong> \(a\) là số gần đúng, \(\bar a\) là số đúng; \(\Delta_a=|a-\bar a|\). Nếu chỉ biết \(\Delta_a\le d\) thì không thể kết luận \(\Delta_a=d\); ta chỉ biết \(a-d\le\bar a\le a+d\).</li><li><strong>Tự sửa:</strong> Với số gần đúng \(a\) và độ chính xác \(d\), hãy lập đúng khoảng \([a-d;a+d]\) chứa **số đúng** \(\bar a\), rồi phát biểu rõ “sai số tuyệt đối **không quá** \(d\)”, không ghi bằng \(d\) khi chưa biết sai số thực. Ví dụ liên hệ câu Core C02: \(a=12{,}3\,\mathrm{cm}\), \(d=0{,}2\,\mathrm{cm}\) thì \(\bar a\in[12{,}1;12{,}5]\,\mathrm{cm}\), chứ chưa biết \(\Delta_a=0{,}2\).</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-C02 (không sao chép câu, không đổi đáp án hay lời giải).</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B12-C02">Luyện lại bằng câu hỏi đã có</a></p>
     #### Sai số lớn hay nhỏ còn phụ thuộc cỡ đại lượng
 
     Sai 3 m khi đo 150 m thường nhẹ hơn sai 3 m khi đo một đoạn 10 m. Cần so sánh sai số với quy mô con số đang dùng.
@@ -110,6 +116,12 @@
         </div>
 
 
+
+    <span data-thpt-help-id="HELP-G10-B12-02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <ol><li><strong>Nhận diện lỗi:</strong> Dùng số đúng (chưa biết) thay cho số gần đúng khi tính sai số tương đối, hoặc nhầm cận sai số với sai số thực.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Em lấy \(\frac{\Delta_a}{|\bar{a}|}\) thay cho \(\frac{\Delta_a}{|a|}\)? Khi chỉ biết độ chính xác \(d\), em đã nhầm \(\Delta_a=d\) chưa?</li><li><strong>Kiến thức gốc:</strong> Với số gần đúng \(a\ne0\), \(\delta_a=\frac{\Delta_a}{|a|}\). Nếu chỉ biết \(\Delta_a\le d\) thì chỉ suy \(\delta_a\le\frac{d}{|a|}\); không khẳng định \(\delta_a=\frac{d}{|a|}\) khi chưa biết sai số thực.</li><li><strong>Tự sửa:</strong> Xác định lại \(a,\bar{a},\Delta_a,d\); tính cận phần trăm đúng theo \(a\) và nói rõ dấu \(\le\).</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-P06.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B12-P06">Luyện lại bằng câu hỏi đã có</a></p>
     #### Cắt bớt chữ số nhưng phải biết mức chênh
 
     Khi ghi giá tiền hay chiều dài, ta thường không cần mọi chữ số; quy tròn giúp trình bày gọn nhưng có thể làm đổi giá trị.
@@ -156,6 +168,18 @@
 
         **Nếu nhầm:** Mở mục lỗi 4.3, rồi chọn bộ số mới trong Luyện tập; không dùng kết quả vừa xem làm chứng cứ độc lập.
 
+
+    <span data-thpt-help-id="HELP-G10-B12-CALC-01" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Cách làm sai:** Muốn tính \(\sqrt[3]{11}\) nhưng nhập \(11/3\), hoặc thay \(\sqrt[3]{7}\) bằng \(2{,}2\) rồi tự nhận kết quả chính xác đến hàng phần nghìn.
+
+        **Vì sao sai:** Chia 7 cho 3 khác với căn bậc ba của 7; làm tròn quá sớm sẽ làm mất chữ số cần dùng. Số chữ số hiển thị trên máy không tự nói gì về sai số của một phép đo khác.
+
+        **Tự sửa:** Dùng chức năng căn bậc ba hoặc nhập \(11^{(1/3)}\) có ngoặc. Đổi sang thập phân, đọc đủ chữ số, sau đó mới làm tròn. Khi yêu cầu cận \(0{,}0005\), có thể kiểm \(2{,}2235^3<11<2{,}2245^3\) để chứng minh gần đúng \(2{,}224\).
+
+        **Luyện lại:** Làm câu P07 ở Core/Luyện tập trên máy thật trước khi mở đáp án. Nếu đã xem đáp án, chọn \(\sqrt[3]{13}\) làm bộ số luyện độc lập.
     ### 1.4. Thuật ngữ, kiến thức và kỹ năng
 
     **Thuật ngữ:** Số đúng, số gần đúng, sai số tuyệt đối, độ chính xác, sai số tương đối, quy tròn và chữ số đáng tin cậy.
@@ -244,31 +268,6 @@
     **Kiểm lại:** Số \(886{,}810\) chỉ là số gần đúng của \(2^9\sqrt3\). Khi máy tính đủ độ chính xác và quy tròn gần nhất đến bước \(0{,}001\), chênh do quy tròn không quá \(0{,}0005\).
 
 === "Lỗi thường gặp"
-
-    <span data-thpt-help-id="HELP-G10-B12-01" hidden></span>
-
-    ??? tip "4.1. Nhầm độ chính xác d với sai số tuyệt đối thực tế"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Coi độ chính xác \(d\) là sai số tuyệt đối thực tế \(\Delta_a\), dù không biết số đúng.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Em đã viết \(\Delta_a=d\) chỉ vì đề cho độ chính xác \(d\)? Đề đã cho số đúng \(\bar a\), hay mới chỉ cho số gần đúng \(a\) và cận sai số \(d\)?</li><li><strong>Kiến thức gốc:</strong> \(a\) là số gần đúng, \(\bar a\) là số đúng; \(\Delta_a=|a-\bar a|\). Nếu chỉ biết \(\Delta_a\le d\) thì không thể kết luận \(\Delta_a=d\); ta chỉ biết \(a-d\le\bar a\le a+d\).</li><li><strong>Tự sửa:</strong> Với số gần đúng \(a\) và độ chính xác \(d\), hãy lập đúng khoảng \([a-d;a+d]\) chứa **số đúng** \(\bar a\), rồi phát biểu rõ “sai số tuyệt đối **không quá** \(d\)”, không ghi bằng \(d\) khi chưa biết sai số thực. Ví dụ liên hệ câu Core C02: \(a=12{,}3\,\mathrm{cm}\), \(d=0{,}2\,\mathrm{cm}\) thì \(\bar a\in[12{,}1;12{,}5]\,\mathrm{cm}\), chứ chưa biết \(\Delta_a=0{,}2\).</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-C02 (không sao chép câu, không đổi đáp án hay lời giải).</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B12-C02">Luyện lại bằng câu hỏi đã có</a></p>
-
-    <span data-thpt-help-id="HELP-G10-B12-02" hidden></span>
-
-    ??? tip "4.2. Sai mẫu số và nhầm cận sai số tương đối"
-
-        <ol><li><strong>Nhận diện lỗi:</strong> Dùng số đúng (chưa biết) thay cho số gần đúng khi tính sai số tương đối, hoặc nhầm cận sai số với sai số thực.</li><li><strong>Dấu hiệu / tự chẩn đoán:</strong> Em lấy \(\frac{\Delta_a}{|\bar{a}|}\) thay cho \(\frac{\Delta_a}{|a|}\)? Khi chỉ biết độ chính xác \(d\), em đã nhầm \(\Delta_a=d\) chưa?</li><li><strong>Kiến thức gốc:</strong> Với số gần đúng \(a\ne0\), \(\delta_a=\frac{\Delta_a}{|a|}\). Nếu chỉ biết \(\Delta_a\le d\) thì chỉ suy \(\delta_a\le\frac{d}{|a|}\); không khẳng định \(\delta_a=\frac{d}{|a|}\) khi chưa biết sai số thực.</li><li><strong>Tự sửa:</strong> Xác định lại \(a,\bar{a},\Delta_a,d\); tính cận phần trăm đúng theo \(a\) và nói rõ dấu \(\le\).</li><li><strong>Luyện lại bằng ID sẵn có:</strong> THPT-G10-B12-P06.</li></ol><p><a href="../luyen-tap/?item=THPT-G10-B12-P06">Luyện lại bằng câu hỏi đã có</a></p>
-
-
-    <span data-thpt-help-id="HELP-G10-B12-CALC-01" hidden></span>
-
-    ??? tip "4.3. Nhập nhầm căn bậc ba hoặc quy tròn quá sớm"
-
-        **Cách làm sai:** Muốn tính \(\sqrt[3]{7}\) nhưng nhập \(7/3\), hoặc thay \(\sqrt[3]{7}\) bằng \(1{,}9\) rồi tự nhận kết quả chính xác đến hàng phần nghìn.
-
-        **Vì sao sai:** Chia 7 cho 3 khác với căn bậc ba của 7; làm tròn quá sớm sẽ làm mất chữ số cần dùng. Số chữ số hiển thị trên máy không tự nói gì về sai số của một phép đo khác.
-
-        **Tự sửa:** Dùng chức năng căn bậc ba hoặc nhập \(7^{(1/3)}\) có ngoặc. Đổi sang thập phân, đọc đủ chữ số, sau đó mới làm tròn. Khi yêu cầu cận \(0{,}0005\), có thể kiểm \(1{,}9125^3<7<1{,}9135^3\) để chứng minh gần đúng \(1{,}913\).
-
-        **Luyện lại:** Làm câu P07 ở Core/Luyện tập trên máy thật trước khi mở đáp án. Nếu đã xem đáp án, chọn \(\sqrt[3]{13}\) làm bộ số luyện độc lập.
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
