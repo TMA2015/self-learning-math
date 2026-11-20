@@ -1,23 +1,27 @@
-<!-- TOP18_W07_O38_O23_INDEPENDENT_PASS_SOURCE_LOCK_20261120 -->
-## Latest affected independent academic/PED review — PASS, Q15 canonical gate remains
+<!-- TOP18_W07V2_SINGLE_CANONICAL_SOURCE_LOCK_AUTHORING_READY_20261120 -->
+## CĐ18 current scoped Academic+PED PASS, one shared W07 v2 canonical
 
-Chủ dự án đã gửi kết quả reviewer độc lập: **Academic PASS, PED PASS, P0/P1/P2=0/0/0, MINIMAL_DELTA=NONE**, đúng phạm vi W07 v2/O38/O23, O40 context. Khép blocker chờ phản biện độc lập; không cần sửa thêm nội dung. Kết quả do chủ dự án cung cấp, không tuyên bố AUTHORING tự chạy NotebookLM.
+Academic/PED author Q18 of all 40 outcomes is preserved, and owner-provided independent review of affected W07/O38/O23 (O40 context) concludes **Academic PASS, PED PASS, P0=P1=P2=0, MINIMAL_DELTA NONE**. The previously pending scoped NotebookLM verdict is closed. SGK G12 ChV has **one active** canonical bank at the same path (R01 packet with W07 CONTENT_VERSION 2), previous v1 remains an immutable historical Git blob; Topic projections match the active bank. This A1 current header supersedes historical progress notes below `---` but does not rewrite their past state.
 
-INDEPENDENT_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_W07_O38_O23_NOTEBOOKLM_INDEPENDENT_ACADEMIC_PED_PASS_20261120.md
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+STATE: CONTENT_READY
+BLOCKERS: NONE
+LEARNING_PATH: TOPIC
+CANONICAL_LEARNER_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
+ACADEMIC_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
+ACTIVE_SHARED_G12_CHV_CANONICAL_BANK_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
+ACTIVE_SHARED_G12_CHV_CANONICAL_BANK_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R06_W07V2_AUTHOR_Q18_SCOPED_INDEPENDENT_COMPOSITE_20261120.md
+REVIEW_RECEIPT_BLOB: 67f4cbd57cf8ee9b7aa515ce5c1c0fa1b0b7ae08
 INDEPENDENT_REVIEW_RECEIPT_BLOB: fac6e71538a1e0b1d2cd2d216bc6abaef9d27bba
 INDEPENDENT_REVIEW_ACADEMIC: PASS_AFFECTED_SCOPE
 INDEPENDENT_REVIEW_PED: PASS_AFFECTED_SCOPE
-INDEPENDENT_REVIEW_P0_P1_P2: 0/0/0
-INDEPENDENT_REVIEW_MINIMAL_DELTA: NONE
-CURRENT_CANDIDATE_STATUS: AFFECTED_DELTA_C_ACADEMIC_PED_PASS; Q15_SINGLE_CANONICAL_PROMOTION_PENDING; not full-Topic newly signed PASS
-CANONICAL_LEARNER_SOURCE_BLOB: 1ad945ea583ce7ee91df64b58d3f31b31c202cd3
-CANONICAL_G12_CHV_BANK_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a (signed active v1)
-PROPOSED_W07_V2_BANK_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e (reviewed-only)
-TARGETED_AUTHOR_Q18_RECEIPT_BLOB: 82a31554d8f6187e951c189ac2b6c34a1622d5ef
-TARGETED_NOTEBOOKLM_REVIEW_PACKET_BLOB: 390c9c6809ad888ccb5d621478c51502e2d0f2fb
-Q15_PENDING: promote one active canonical v2 under controlled multi-consumer update; no implicit change to signed shared v1
-STATE: BLOCKED_BY_AUTHORING
-BLOCKERS: W07_V2_SINGLE_ACTIVE_CANONICAL_PROMOTION_Q15_Q18
+CURRENT_CANDIDATE_STATUS: CONTENT_READY_AUTHORING_Q18_SELF_WITH_SCOPED_INDEPENDENT_PASS
+Q15_CHECK: W07 v2 same one ITEM_ID, 4/4 stem/key/solution/rubric equal between active SGK bank and Topic learner; 95 other SGK items unchanged byte-exact; 247 Topic IDs retained
+Q16_CHECK: protected RD1 unchanged, public Topic selfcheck no Mastery, no release/Final Submit claim
+Q18_CHECK: old SGK/Topic signed source snapshots immutable in git history, one current active source at exact Git blob
+RELEASE_AUTHORIZATION: NO
 
 ---
 <!-- TOP18_DOT_ZERO_NORM_CURRENT_20261120 -->
