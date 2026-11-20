@@ -8,15 +8,15 @@
 
 PACKET_ID: THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
-SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
+ACADEMIC_SOURCE_BLOB: 89dd1b775c782bd2a8638560a2aa93d49b589eee
+SOURCE_BLOB: 89dd1b775c782bd2a8638560a2aa93d49b589eee
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_ID: SLM-TOP15-LINE-PLANE-R00
@@ -261,3 +261,8 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF
 - ACADEMIC_SOURCE_BLOB: 7d133daacd85f0cdddf60fa76f2084de230bb621
 - REVIEW_RECEIPT_BLOB: 177dff31fa304d61972bfe9e1e0af2038b158bc9
 - Exactly three theorem prefixes normalized without mathematical changes.
+
+
+## 20/11 — Complete SGK G11 Tập Một ChIV B10–B14 Knowledge
+
+Learner 89dd1b775c782bd2a8638560a2aa93d49b589eee and self-verified Q18 05776193cb36606c99a90a539369afef5c0bac86, 22/22 outcomes. O16 third-plane transversal property, O17 Thalès in space + prism/hình hộp, O20 ratio across parallel lines under projection, O21 ellipse image of circle and perspective distinction. Mathematically worked examples and hypotheses directly checked. Q15/Q16 original 89 canonical, 8 question-only selfchecks, five SVG, Practice/Selfcheck unchanged; not a new independent NotebookLM reviewer, not RELEASE.
