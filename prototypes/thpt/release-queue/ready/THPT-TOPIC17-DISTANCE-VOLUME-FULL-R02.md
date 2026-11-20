@@ -15,14 +15,14 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 9c427674ea0263b8cf7e1e191f1f9a81c3261e91
+ACADEMIC_SOURCE_BLOB: b5e24f5d39e83df46ada64a5b5665af9e0888e2f
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (AUTHOR_SELF_VERIFIED, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: e1050266fd69bf18eefaa40264962fbd6c6f0010
+REVIEW_RECEIPT_BLOB: 034147514b8a3d2b8af026575a4294673d38deb8
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
+AUTHOR_A1_A7_BLOB: f4465ddd4dedad670f7febdb3c163fa48567b1b0
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 012afae269b86531df10e1f218f553199a786464
+AUTHOR_HANDOFF_BLOB: b3240e86f7c3a0815964dd3df4c75c44cf49b38c
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
@@ -103,3 +103,7 @@ This *existing* ready manifest now explicitly refuses intake as CONTENT_READY af
 - Resolved actual O10 Knowledge dependency on non-guaranteed UI slider. New fully standalone case `V=48(1+k+k²)` from square sides 6 and 6k, h4, k∈[0,1], values 48/84/144 cm³ for 0/0.5/1; mathematical conditions and root sign checked via direct author math/PED QA (`DELTA_C_ACADEMIC_MATERIAL`). Clarified O11 base *tam giác vuông* legs 6/8cm and prism h7cm, V168cm³=0.168L unchanged (`DELTA_B_SOURCE_EQUIVALENT`). Removed visible author D5 H2 inside B27 Written solution and Mastery terminology in student selfcheck prelude (`DELTA_A_UI`). Same 49 canonical identities, 37 Practice cards and 8 question-only replay; key, solution and Written rubric unchanged. No independent new NotebookLM Topic PASS or unnecessary re-review.
 - Original SGK source Git `afc8ec039213b87b4930f2d34d48c28d1fc6277f` physically verified on current authoring branch, 22/22 SGK original references. Exactly two SVG learner embeddings original Git SHA `26fb51f3af65ba7d86a2907f0eaff808d2d87532`/`a7bec7a20295d09ca6f32aae0e8910cef7bed9dc`, optional HTML model current Git `cfb2bd522531167003eeae8e7342c6d1349ca425`, old model differs by 17 CSS lines and one non-functional comment, not JS/math. No claim of embedded model or browser device AP1–AP5 QA.
 - R00 historical signed ready `359ff8026b193c37a6f9a98ea2344ecd1ff6c0c2` preserved byte-exact in `archive/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R00_HISTORICAL_SIGNED_20261118.md`, removed from active ready and REGISTER. This R02 manifest is sole active ready, with current content revision R03 and unchanged stable PACKET_ID. All previous temporary QA HOLD paragraphs above refer to **past snapshots** and are superseded by this current source/Q18/A1/V2 lock after QA on exact HEAD. Author SOURCE CONTENT_READY only, no official Readiness/Final Submit/Mastery, release approval, merge or deploy.
+
+
+## 20/11/2026 — current authoring source after self-try safety fix
+- SOURCE `b5e24f5d39e83df46ada64a5b5665af9e0888e2f`, Q18 `034147514b8a3d2b8af026575a4294673d38deb8`, A1 `f4465ddd4dedad670f7febdb3c163fa48567b1b0`, V2 `b3240e86f7c3a0815964dd3df4c75c44cf49b38c`; six correct formal box names + one opt-in frustum self-try answer disclosure. AUTHORING CONTENT_READY owner snapshot status, full release AP/CI separate.
