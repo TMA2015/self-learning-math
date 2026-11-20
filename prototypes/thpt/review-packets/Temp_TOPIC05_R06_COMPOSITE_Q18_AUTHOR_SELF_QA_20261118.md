@@ -16,7 +16,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 853e8a9f3d8a53179eea124ddb7386a7daa3f84d
+SOURCE_BLOB: 7b5d360250b5268d8c566be945f9c9be4a2c4dd4
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 BASELINE_R05_SOURCE_BLOB: 3052d5f7090f74af2eca7739047c59ed76ccda63
@@ -91,3 +91,10 @@ Owner ΔA 19/11: 14 công thức/quy tắc đã diễn giải được thêm nh�
 ## 20/11/2026 · owner formal-label ΔA in Knowledge
 - Current learner blob `853e8a9f3d8a53179eea124ddb7386a7daa3f84d`, previous `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd` preserved historically. Reclassified 1 true domain intersection guard (radical denominator) to KIẾN THỨC CẦN GHI NHỚ, 5 graph transformations (translations, reflections, vertical/horizontal scaling) to PHƯƠNG PHÁP. All (x,y) mappings, domains, numeric examples, 38 canonical learner questions/keys/solutions/rubrics and D6/diagrams unchanged.
 - Targeted Q03/PED author self-QA ΔA only. No fresh NotebookLM independent or full 22-topic SGK audit PASS; no RELEASE.
+
+## 20/11/2026 — targeted S1 G10 T2 B16 required parabol plotting ΔC, TOP05-O07
+- Current student source 7b5d360250b5268d8c566be945f9c9be4a2c4dd4 (former 853e8a9f3d8a53179eea124ddb7386a7daa3f84d immutable history). Current Knowledge §2.2 already had quadratic function definition, parabola vertex/axis, variation, smooth plotting with table, but said merely "điểm cắt trục nếu có" without a mathematical **method to find axis intersections**.
+- Compared exact S1 Toán 10 Tập Hai B16 (printed pp11–18): SGK plotting workflow requires determine parabola intercepts with both coordinate axes when they exist; refer https://www.sachgiaokhoa.aistudybuddy.net/sach-online/lop-10/toan-10-tap-2/bai-16-ham-so-bac-hai/
+- Restore in existing O07 narrative after already-rendered table: (x=0Rightarrow(0,c)) on Oy; (y=0Rightarrow ax²+bx+c=0) on Ox with Δ>0 two points, Δ=0 one tangency, Δ<0 none; check the **same existing example** f=x²−2x at (0,0),(2,0), both on Ox, (0,0) also on Oy. No new numbered module, item ID, repetitive stand-alone example, canonical question or answer.
+- **Targeted source-first author math QA:** for f=x²−2x, a=1,b=−2,c=0; Δ=4>0, roots 0,2, Oy point (0,0), vertex (1,−1), all 5/5 consistent with pre-existing table and graph. Domain a≠0 stated in O07; no axes or boundary error.
+- Scope `DELTA_C_ACADEMIC_MATERIAL` confined to Knowledge O07; suffix from # Luyện tập onward byte-identical. 38 original public canonical questions and keys/rubrics, D6/assessment privacy untouched. No independent NotebookLM reviewer verdict on this patch, no overall Topic SGK PASS or RELEASE.
