@@ -23,7 +23,7 @@ STANDARD_VERSION: 3.1.0
 PACKET_ID: THPT-TOPIC-STATISTICS-G10-G12-FULL-R09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-SOURCE_BLOB: 4ff6bfde83f55a1390661f11c71cc66873f3ecdb
+SOURCE_BLOB: dfe01e7dfcf554b11834ac0c93a5eaf2af7aa3eb
 PREVIOUS_R06_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 BASELINE_R05_BLOB: 0762cc67491965a4bab700aa1d33937aa3bf7cb6
 ORIGINAL_R01_BLOB: 4f4dc4abcf671479fe0650595e9b67f745738b9a
@@ -194,3 +194,8 @@ AUTHOR_SELF_QA_RECEIPT: This source-specific technical receipt binds R09 `4ff6bf
 
 <!-- TOP22_OWNER_EDITORIAL_DELTA_A_20261119 -->
 **Owner-approved DELTA_A_UI (19/11):** Bỏ chính xác 13 dòng tiêu đề phụ `**Khám phá kiến thức**` (mỗi lesson một lần) trong cùng sole learner canonical; **giữ nguyên toàn văn lời giải thích ngay sau nhãn, mọi định nghĩa, công thức, điều kiện, ví dụ, Vận dụng, Đối chiếu, 114 stems/solutions/rubrics, 9 public selfchecks, 2 SVG, Q15/16**. Baseline source `b875ca4e726ab14071f17a2d8a85d6950e3b4ba9` → source sau sửa `4ff6bfde83f55a1390661f11c71cc66873f3ecdb`. R09 academic/PED snapshot không bị hồi tố; Q18 tự xác minh tương đương trên scope nhãn. Không cần full NotebookLM review, không merge/deploy; tiếp tục STATE CONTENT_READY.
+
+
+## 20/11/2026 — OWNER EDITORIAL ΔA · 14 formal boxes
+- Current learner Git blob `dfe01e7dfcf554b11834ac0c93a5eaf2af7aa3eb` (prior `4ff6bfde83f55a1390661f11c71cc66873f3ecdb` historical). Parsed actual Knowledge source: 14/14 compound/SGK-meta labels normalized by meaning: definition, formula, property or concise knowledge-to-remember; no internal formula, theorem condition, example, item, answer, rubric or SVG altered.
+- Reversible label-only diff; 13 thematic mathematical modules and three Topic pages unaffected. Q03/Q07/PED targeted author self-QA PASS; no full fresh NotebookLM or website AP claim.
