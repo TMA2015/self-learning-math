@@ -708,7 +708,7 @@ Khoảng cách từ điểm M đến mặt P là độ dài đường vuông gó
 
 ## 5. Đường thẳng và giao điểm
 
-**Ví dụ về đường bay và giao mặt phẳng.** Chọn hệ trục tọa độ trong không gian. Một drone xuất phát từ điểm \(A=(1;1;2)\) và đường bay có vectơ chỉ phương \(\vec v=(1;0;1)\ne\vec0\). Xét điểm trên đường bay \(M(t)=A+t\vec v=(1+t;1;2+t)\), trong đó \(t\in\mathbb R\) là **tham số hình học**, chưa được xác định là thời gian. Để tìm giao điểm của đường bay với mặt phẳng \((P):x+y+z=6\), thế cùng tham số \(t\) vào cả ba tọa độ: \((1+t)+1+(2+t)=6\), nên \(4+2t=6\) và \(t=1\). Giao điểm là \(M(1)=(2;1;3)\); kiểm lại \(2+1+3=6\). Kết quả \(t=1\) **không có đơn vị giây** khi chưa có dữ kiện vận tốc và thời gian: tham số chỉ xác định vị trí điểm trên đường thẳng. Nhờ dùng một tham số cho đủ ba tọa độ, ba phương trình đều đang mô tả cùng một điểm.
+Chẳng hạn, chọn hệ trục tọa độ trong không gian. Một drone xuất phát từ điểm \(A=(1;1;2)\) và đường bay có vectơ chỉ phương \(\vec v=(1;0;1)\ne\vec0\). Xét điểm trên đường bay \(M(t)=A+t\vec v=(1+t;1;2+t)\), trong đó \(t\in\mathbb R\) là **tham số hình học**, chưa được xác định là thời gian. Để tìm giao điểm của đường bay với mặt phẳng \((P):x+y+z=6\), thế cùng tham số \(t\) vào cả ba tọa độ: \((1+t)+1+(2+t)=6\), nên \(4+2t=6\) và \(t=1\). Giao điểm là \(M(1)=(2;1;3)\); kiểm lại \(2+1+3=6\). Kết quả \(t=1\) **không có đơn vị giây** khi chưa có dữ kiện vận tốc và thời gian: tham số chỉ xác định vị trí điểm trên đường thẳng. Nhờ dùng một tham số cho đủ ba tọa độ, ba phương trình đều đang mô tả cùng một điểm.
 
 
 ![Đường thẳng qua M₀ với hướng u và điểm M(t)](../../../../docs/assets/images/thpt/FIG-TOP18-B15-LINE-WHITE-R00.svg)
