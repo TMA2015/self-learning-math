@@ -72,6 +72,13 @@ Khi không gian mẫu gồm hữu hạn kết quả đồng khả năng, mỗi k
 >
 > \[P(A)=\frac{n(A)}{n(\Omega)},\quad n(\Omega)>0.\] Chỉ dùng khi các kết quả sơ cấp hữu hạn và đồng khả năng.
 
+Từ cách đếm, em có thể tự kiểm tra ngay những giới hạn mà mọi xác suất cổ điển đều phải thỏa. Biến cố \(A\) là một tập con của không gian mẫu \(\Omega\), nên số kết quả thuận lợi không thể âm và không thể vượt quá tổng số kết quả. Tập rỗng không chứa kết quả nào, còn biến cố chắc chắn chứa toàn bộ kết quả. Chia các số đếm đó cho \(n(\Omega)>0\) ta được các tính chất sau, thay vì chỉ ghi nhớ chúng như ba công thức độc lập.
+
+> **TÍNH CHẤT — Ba tính chất cơ bản của xác suất cổ điển.** Trong phép thử có không gian mẫu hữu hạn, không rỗng và các kết quả sơ cấp đồng khả năng, với mọi biến cố \(A\subseteq\Omega\): \(0\le P(A)\le1\); \(P(\Omega)=1\) (biến cố chắc chắn); \(P(\varnothing)=0\) (biến cố không thể). Điều này suy ra lần lượt từ \(0\le n(A)\le n(\Omega)\), \(n(\Omega)/n(\Omega)=1\) và \(n(\varnothing)=0\). Với một phép thử không thỏa giả thiết đồng khả năng, không được dùng tỉ số đếm đơn thuần để tính xác suất.
+
+Chẳng hạn, với sáu thẻ vật lí đồng khả năng, biến cố “rút ra một trong cả sáu thẻ” có xác suất \(6/6=1\), còn “rút thẻ số 7” khi chỉ có các số từ 1 đến 6 có xác suất \(0/6=0\). Một biến cố có xác suất \(1/6\) tuy hiếm nhưng vẫn có thể xảy ra; đừng đồng nhất xác suất nhỏ với xác suất bằng 0.
+
+
 **Ví dụ**
 
 **Đề bài:** Một hộp có tám phiếu khác nhau: hai phiếu ghi A, ba phiếu ghi B và ba phiếu ghi C. Rút ngẫu nhiên đều một phiếu. Tính xác suất rút được nhãn B. Có thể chia đều xác suất cho ba loại nhãn không?
