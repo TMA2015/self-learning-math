@@ -26,9 +26,9 @@ Trên hình ngay dưới, dãy hữu hạn \(u_n=2n-1\) chỉ được cho với
 
 **Ví dụ**
 
-**Đề bài:** Dãy hữu hạn \(a_n=3n+2\) có \(n\in\{2,3,4,5\}\). Liệt kê dãy và xét \(a_1\).
+**Đề bài.** Dãy hữu hạn \(a_n=3n+2\) có \(n\in\{2,3,4,5\}\). Liệt kê dãy và xét \(a_1\).
 
-**Lời giải:** Thay đúng bốn chỉ số: \(a_2=8,a_3=11,a_4=14,a_5=17\). Không có \(a_1\) trong dãy vì \(1\) không thuộc miền chỉ số, dù biểu thức vẫn tính được tại \(n=1\).
+**Lời giải.** Thay đúng bốn chỉ số: \(a_2=8,a_3=11,a_4=14,a_5=17\). Không có \(a_1\) trong dãy vì \(1\) không thuộc miền chỉ số, dù biểu thức vẫn tính được tại \(n=1\).
 
 **Vận dụng** Dãy \(u_n=3n\) được cho với \(n\in\{1,2,3\}\). Dãy có các số hạng nào? Có \(u_0\) không?
 
@@ -43,15 +43,19 @@ Dãy gồm 3, 6, 9 và **không có \(u_0\)** vì 0 không thuộc miền chỉ 
 
 <!-- LESSON_ID: TOP07-M02; OUTCOME_ID: TOP07-O02 -->
 
+**Các cách cho một dãy số.** SGK sử dụng bốn cách trình bày bổ trợ nhau: **liệt kê** các số hạng, **mô tả bằng lời** một quy luật xác định, **cho công thức số hạng tổng quát** và **cho bằng hệ thức truy hồi** kèm điều kiện ban đầu. Chúng không phải bốn loại dãy riêng biệt: cùng một dãy có thể viết theo nhiều cách. Chẳng hạn, số ghế của các hàng lần lượt là \(12,15,18,21,\ldots\) khi biết rõ quy luật **hàng đầu có 12 ghế, mỗi hàng sau nhiều hơn 3 ghế**. Viết bằng công thức được \(u_n=12+3(n-1)\), \(n\ge1\); còn bằng truy hồi là \(u_1=12\), \(u_{n+1}=u_n+3\) với mọi \(n\ge1\). Liệt kê một vài số đầu **chỉ minh họa**; nếu không có lời mô tả, công thức hay giả thiết thêm thì chưa xác định được duy nhất các số tiếp theo.
+
+Cách nào thuận tiện tùy câu hỏi: cần ngay số hạng thứ \(100\) thì công thức tổng quát hiệu quả; biết mỗi bước phụ thuộc bước trước thì truy hồi tự nhiên hơn; bảng liệt kê hữu ích để **quan sát** nhưng không thay thế quy luật cần chứng minh.
+
 > **PHƯƠNG PHÁP — Công thức tường minh và quy luật.** Với một dãy số \((u_n)\), mỗi số hạng \(u_n\) được gắn với một chỉ số \(n\) thuộc miền chỉ số đã cho (chẳng hạn \(n=1,2,3,\ldots\)). Làm thế nào tìm \(u_{100}\) mà không phải liệt kê 99 số hạng trước đó? Một **công thức tường minh** \(u_n=f(n)\) cho phép tính trực tiếp bằng cách thay \(n\); tuy nhiên, vài số hạng đầu **không xác định duy nhất** toàn bộ dãy nếu thiếu quy luật hoặc giả thiết. Muốn khẳng định một công thức đúng cho mọi chỉ số cho phép, ta cần định nghĩa hoặc chứng minh, không chỉ dựa vào ba giá trị đầu.
 
 Chẳng hạn, u_n=2n+1, n≥1 cho u_1=3,u_2=5,u_3=7 và u_10=21. Nhưng thêm một biểu thức bội (n−1)(n−2)(n−3) vẫn giữ ba số đầu mà đổi các số sau; do đó suy từ ba số không đủ duy nhất.
 
 **Ví dụ**
 
-**Đề bài:** Với \(u_n=\dfrac{n+2}{n+1}\), \(n\ge1\), hãy tính \(u_3\) và xem \(1\) có là số hạng không.
+**Đề bài.** Với \(u_n=\dfrac{n+2}{n+1}\), \(n\ge1\), hãy tính \(u_3\) và xem \(1\) có là số hạng không.
 
-**Lời giải:** \(u_3=5/4\). Nếu \(u_n=1\) thì \(n+2=n+1\), vô lý. Tiến gần \(1\) không có nghĩa là có số hạng đúng bằng \(1\).
+**Lời giải.** \(u_3=5/4\). Nếu \(u_n=1\) thì \(n+2=n+1\), vô lý. Tiến gần \(1\) không có nghĩa là có số hạng đúng bằng \(1\).
 
 **Vận dụng** Với u_n=4n−1, tính u_6.
 
@@ -74,9 +78,9 @@ Xét ví dụ: u_1=3, u_{n+1}=2u_n+1. Đặt v_n=u_n+1, v_{n+1}=2v_n và v_1=4, 
 
 **Ví dụ**
 
-**Đề bài:** Cho \(u_1=5\), \(u_{n+1}=2u_n-3\) với \(n\ge1\). Tìm \(u_2,u_3\) và công thức tường minh.
+**Đề bài.** Cho \(u_1=5\), \(u_{n+1}=2u_n-3\) với \(n\ge1\). Tìm \(u_2,u_3\) và công thức tường minh.
 
-**Lời giải:** \(u_2=7\), \(u_3=11\). Đặt \(v_n=u_n-3\) thì \(v_1=2\), \(v_{n+1}=2v_n\), nên \(v_n=2\cdot2^{n-1}\). Do đó \(u_n=3+2^n\). Kiểm \(n=1,2,3\) lần lượt được \(5,7,11\).
+**Lời giải.** \(u_2=7\), \(u_3=11\). Đặt \(v_n=u_n-3\) thì \(v_1=2\), \(v_{n+1}=2v_n\), nên \(v_n=2\cdot2^{n-1}\). Do đó \(u_n=3+2^n\). Kiểm \(n=1,2,3\) lần lượt được \(5,7,11\).
 
 **Vận dụng** Cho u_1=2,u_{n+1}=u_n+4. Tính u_3.
 
@@ -99,9 +103,9 @@ Chẳng hạn, u_n=n/(n+1) với n≥1. u_{n+1}−u_n=(n+1)/(n+2)−n/(n+1)=[(n+
 
 **Ví dụ**
 
-**Đề bài:** Chứng minh \(u_n=4-\dfrac1{n+2}\), \(n\ge1\), tăng nghiêm ngặt.
+**Đề bài.** Chứng minh \(u_n=4-\dfrac1{n+2}\), \(n\ge1\), tăng nghiêm ngặt.
 
-**Lời giải:** \(u_{n+1}-u_n=\dfrac1{n+2}-\dfrac1{n+3}=\dfrac1{(n+2)(n+3)}>0\) với mọi \(n\ge1\). Dấu này, chứ không phải vài số hạng đầu, là chứng minh.
+**Lời giải.** \(u_{n+1}-u_n=\dfrac1{n+2}-\dfrac1{n+3}=\dfrac1{(n+2)(n+3)}>0\) với mọi \(n\ge1\). Dấu này, chứ không phải vài số hạng đầu, là chứng minh.
 
 **Vận dụng** Dãy u_n=1/n (n≥1) tăng hay giảm?
 
@@ -120,13 +124,15 @@ Nếu chỉ nhìn 1,1/2,1/3 thì đó mới là gợi ý; chứng minh dấu cho
 
 > **ĐỊNH NGHĨA — Tính bị chặn.** Một dãy có thể bị chặn bởi giá trị mà nó không bao giờ đạt. Một dãy có thể tiến gần 1 mãi mà không bao giờ bằng 1 không? Cần nhớ dấu phân thức dương, bất đẳng thức. Bị chặn trên nếu tồn tại M sao cho u_n≤M cho mọi n, bị chặn dưới tương tự; chặn không đồng nghĩa giá trị đạt. Dãy tăng và có chặn trên không tự nói giá trị giới hạn bằng cận khi chưa chứng minh. Trong phần này, em cần phân biệt một cận với giá trị mà dãy thực sự đạt.
 
+> **ĐỊNH NGHĨA — Dãy số bị chặn.** Dãy \((u_n)\) **bị chặn trên** nếu tồn tại số thực \(M\) sao cho \(u_n\le M\) với **mọi** chỉ số \(n\) hợp lệ; **bị chặn dưới** nếu tồn tại số thực \(m\) sao cho \(u_n\ge m\) với mọi \(n\). Dãy **bị chặn** nếu có cả hai cận, tức tồn tại \(m,M\in\mathbb R\) thỏa \(m\le u_n\le M\) với mọi \(n\). Các cận không nhất thiết là số hạng của dãy và cũng không nhất thiết là cận tốt nhất.
+
 Chẳng hạn, u_n=1−1/(n+1), n≥1. Vì 0<1/(n+1)≤1/2 nên 1/2≤u_n<1. u_1=1/2 là cận dưới đạt, còn 1 không là một số hạng của dãy. Chọn tách thành 1 trừ số dương để nhìn cận.
 
 **Ví dụ**
 
-**Đề bài:** Tìm cận dưới đạt được và cận trên không đạt được của \(u_n=5-\dfrac2{n+1}\), \(n\ge1\).
+**Đề bài.** Tìm cận dưới đạt được và cận trên không đạt được của \(u_n=5-\dfrac2{n+1}\), \(n\ge1\).
 
-**Lời giải:** Vì \(0<2/(n+1)\le1\) nên \(4\le u_n<5\). Tại \(n=1\), \(u_1=4\); không có số hạng bằng \(5\) vì \(2/(n+1)>0\).
+**Lời giải.** Vì \(0<2/(n+1)\le1\) nên \(4\le u_n<5\). Tại \(n=1\), \(u_1=4\); không có số hạng bằng \(5\) vì \(2/(n+1)>0\).
 
 **Vận dụng** u_n=2−1/n (n≥1) có đạt 2 không?
 
@@ -159,9 +165,9 @@ Chẳng hạn, Dãy 14,11,8,5 có các hiệu −3; là CSC với d=−3. Dãy 1
 
 **Ví dụ**
 
-**Đề bài:** Cho dãy \(13,9,5,1,\ldots\) và giả thiết hiệu các số liên tiếp luôn không đổi. Tìm công sai và hai số tiếp.
+**Đề bài.** Cho dãy \(13,9,5,1,\ldots\) và giả thiết hiệu các số liên tiếp luôn không đổi. Tìm công sai và hai số tiếp.
 
-**Lời giải:** Các hiệu đã thấy đều là \(-4\); theo giả thiết, \(d=-4\), nên hai số sau là \(-3,-7\). Nếu chỉ biết bốn giá trị mà không biết quy luật tiếp tục, không thể khẳng định dãy vô hạn là CSC.
+**Lời giải.** Các hiệu đã thấy đều là \(-4\); theo giả thiết, \(d=-4\), nên hai số sau là \(-3,-7\). Nếu chỉ biết bốn giá trị mà không biết quy luật tiếp tục, không thể khẳng định dãy vô hạn là CSC.
 
 **Vận dụng** Dãy 2,2,2,2 có phải CSC không?
 
@@ -184,9 +190,9 @@ Chẳng hạn, u_1=7,d=−2, u_6=7+5(−2)=−3. Ta chọn công thức tổng q
 
 **Ví dụ**
 
-**Đề bài:** CSC có \(u_1=-6\), \(d=5\). Tính \(u_9\), giải thích số bước cộng.
+**Đề bài.** CSC có \(u_1=-6\), \(d=5\). Tính \(u_9\), giải thích số bước cộng.
 
-**Lời giải:** Từ chỉ số \(1\) đến \(9\) có \(8\) bước cộng. Vì thế \(u_9=-6+8\cdot5=34\).
+**Lời giải.** Từ chỉ số \(1\) đến \(9\) có \(8\) bước cộng. Vì thế \(u_9=-6+8\cdot5=34\).
 
 **Vận dụng** CSC u_1=10,d=−3: tính u_4.
 
@@ -211,9 +217,9 @@ Xét ví dụ: u_3=5,u_7=21 ⇒ d=(21−5)/(7−3)=4, u_1=5−2·4=−3. Thử u
 
 **Ví dụ**
 
-**Đề bài:** Biết \(u_4=7,\ u_9=27\) thuộc cùng một CSC. Tìm \(d\) và \(u_1\).
+**Đề bài.** Biết \(u_4=7,\ u_9=27\) thuộc cùng một CSC. Tìm \(d\) và \(u_1\).
 
-**Lời giải:** Có \(5\) khoảng chỉ số nên \(d=(27-7)/5=4\). \(u_1=u_4-3d=7-12=-5\). Kiểm \(u_9=-5+8\cdot4=27\).
+**Lời giải.** Có \(5\) khoảng chỉ số nên \(d=(27-7)/5=4\). \(u_1=u_4-3d=7-12=-5\). Kiểm \(u_9=-5+8\cdot4=27\).
 
 **Vận dụng** u_2=7,u_5=16 thì d bằng bao nhiêu?
 
@@ -236,9 +242,9 @@ Chẳng hạn, CSC u_1=2,d=3,n=6 có u_6=17 và S_6=6(2+17)/2=57. Chọn ghép �
 
 **Ví dụ**
 
-**Đề bài:** CSC có \(u_1=3,d=2\). Tính tổng tám số hạng đầu.
+**Đề bài.** CSC có \(u_1=3,d=2\). Tính tổng tám số hạng đầu.
 
-**Lời giải:** \(u_8=3+7\cdot2=17\). Ghép cặp đầu–cuối được \(S_8=\dfrac{8(3+17)}2=80\).
+**Lời giải.** \(u_8=3+7\cdot2=17\). Ghép cặp đầu–cuối được \(S_8=\dfrac{8(3+17)}2=80\).
 
 **Vận dụng** Tính 1+3+5+7+9.
 
@@ -261,9 +267,9 @@ Chẳng hạn, Xưởng tuần đầu làm 20 sản phẩm, mỗi tuần thêm 4
 
 **Ví dụ**
 
-**Đề bài:** Một xưởng làm \(15\) sản phẩm tuần đầu, mỗi tuần thêm \(5\) sản phẩm. Tổng sản lượng sáu tuần là bao nhiêu?
+**Đề bài.** Một xưởng làm \(15\) sản phẩm tuần đầu, mỗi tuần thêm \(5\) sản phẩm. Tổng sản lượng sáu tuần là bao nhiêu?
 
-**Lời giải:** Tuần thứ sáu có \(15+5\cdot5=40\) sản phẩm; \(S_6=\dfrac{6(15+40)}2=165\) sản phẩm. Phân biệt sản lượng tuần cuối với tổng sáu tuần.
+**Lời giải.** Tuần thứ sáu có \(15+5\cdot5=40\) sản phẩm; \(S_6=\dfrac{6(15+40)}2=165\) sản phẩm. Phân biệt sản lượng tuần cuối với tổng sáu tuần.
 
 **Vận dụng** Hàng 1 có 8 ghế, mỗi hàng thêm 2 ghế, 4 hàng có bao nhiêu ghế?
 
@@ -296,9 +302,9 @@ Chẳng hạn, Dãy 2,−6,18,−54 là CSN q=−3. Dãy 5,0,0,… là CSN q=0; 
 
 **Ví dụ**
 
-**Đề bài:** Dãy \(1,-4,16,-64,\ldots\) được xác định bằng phép nhân cùng một số. Tìm \(q\) và số tiếp theo.
+**Đề bài.** Dãy \(1,-4,16,-64,\ldots\) được xác định bằng phép nhân cùng một số. Tìm \(q\) và số tiếp theo.
 
-**Lời giải:** Ta có công bội \(q=-4\), số tiếp là \(256\). Dấu luân phiên vẫn là cấp số nhân; nếu xuất hiện số \(0\), phải kiểm qua truy hồi \(u_{n+1}=qu_n\), không chia cho \(0\).
+**Lời giải.** Ta có công bội \(q=-4\), số tiếp là \(256\). Dấu luân phiên vẫn là cấp số nhân; nếu xuất hiện số \(0\), phải kiểm qua truy hồi \(u_{n+1}=qu_n\), không chia cho \(0\).
 
 **Vận dụng** Dãy 4,0,0,0,… có là CSN không?
 
@@ -321,9 +327,9 @@ Chẳng hạn, u_1=−2, q=3, u_4=−2·3³=−54. Chọn số mũ 3 vì từ s�
 
 **Ví dụ**
 
-**Đề bài:** CSN có \(u_1=-4,\ q=2\). Tính \(u_6\).
+**Đề bài.** CSN có \(u_1=-4,\ q=2\). Tính \(u_6\).
 
-**Lời giải:** Có năm lần nhân từ \(u_1\) đến \(u_6\), nên \(u_6=-4\cdot2^5=-128\). Trường hợp \(q=0\) tại số hạng đầu phải xét riêng, tránh \(0^0\).
+**Lời giải.** Có năm lần nhân từ \(u_1\) đến \(u_6\), nên \(u_6=-4\cdot2^5=-128\). Trường hợp \(q=0\) tại số hạng đầu phải xét riêng, tránh \(0^0\).
 
 **Vận dụng** CSN u_1=5,q=−2: tính u_4.
 
@@ -346,9 +352,9 @@ Xét ví dụ: u_2=6,u_4=24 ⇒ q²=4 nên q=±2. Với q=2 thì u_1=3; q=−2 t
 
 **Ví dụ**
 
-**Đề bài:** Biết \(u_2=16,\ u_4=256\) của một CSN, các số hạng liên quan khác \(0\). Tìm mọi công bội thực và số đầu tương ứng.
+**Đề bài.** Biết \(u_2=16,\ u_4=256\) của một CSN, các số hạng liên quan khác \(0\). Tìm mọi công bội thực và số đầu tương ứng.
 
-**Lời giải:** \(q^2=u_4/u_2=256/16=16\), nên \(q=4\) hoặc \(q=-4\). Tương ứng \(u_1=16/4=4\) hoặc \(u_1=16/(-4)=-4\). Cả hai cho đúng \(u_4=256\); không tự bỏ dấu âm.
+**Lời giải.** \(q^2=u_4/u_2=256/16=16\), nên \(q=4\) hoặc \(q=-4\). Tương ứng \(u_1=16/4=4\) hoặc \(u_1=16/(-4)=-4\). Cả hai cho đúng \(u_4=256\); không tự bỏ dấu âm.
 
 **Vận dụng** Ba số 2,b,18 là CSN với b≠0: b có thể bằng bao nhiêu?
 
@@ -371,9 +377,9 @@ Chẳng hạn, Với u_1=2,q=3,n=4: S_4=2(1−3^4)/(1−3)=2·40=80. Thử bằn
 
 **Ví dụ**
 
-**Đề bài:** CSN có \(u_1=3,\ q=2\). Tính tổng năm số hạng đầu.
+**Đề bài.** CSN có \(u_1=3,\ q=2\). Tính tổng năm số hạng đầu.
 
-**Lời giải:** Vì \(q\ne1\), \(S_5=3\dfrac{1-2^5}{1-2}=93\). Kiểm \(3+6+12+24+48=93\); tổng hữu hạn không cần \(|q|<1\).
+**Lời giải.** Vì \(q\ne1\), \(S_5=3\dfrac{1-2^5}{1-2}=93\). Kiểm \(3+6+12+24+48=93\); tổng hữu hạn không cần \(|q|<1\).
 
 **Vận dụng** Tính S_5 nếu u_1=−4, q=1.
 
@@ -396,9 +402,9 @@ Chẳng hạn, Với u_1=6,q=1/2, S_n=12[1−(1/2)^n], S_∞=12; sau n=4 phần 
 
 **Ví dụ**
 
-**Đề bài:** CSN có \(u_1=5,\ q=\frac14\). Tính tổng vô hạn và phần dư sau ba số hạng.
+**Đề bài.** CSN có \(u_1=5,\ q=\frac14\). Tính tổng vô hạn và phần dư sau ba số hạng.
 
-**Lời giải:** Do \(|q|<1\), \(S_\infty=\dfrac5{1-1/4}=\dfrac{20}3\). Phần dư sau ba số hạng \(R_3=\dfrac{5(1/4)^3}{1-1/4}=\dfrac5{48}\).
+**Lời giải.** Do \(|q|<1\), \(S_\infty=\dfrac5{1-1/4}=\dfrac{20}3\). Phần dư sau ba số hạng \(R_3=\dfrac{5(1/4)^3}{1-1/4}=\dfrac5{48}\).
 
 **Vận dụng** Với u_1=4,q=−1, tổng vô hạn có giá trị theo công thức trên không?
 
@@ -431,9 +437,9 @@ Chẳng hạn, bắt đầu ở kỳ 0 với 100 đơn vị. Nếu mỗi kỳ c�
 
 **Ví dụ**
 
-**Đề bài:** Hai đại lượng đều bằng \(80\) ở kỳ \(0\); A cộng \(8\) đơn vị mỗi kỳ, B tăng \(10\%\) so với kỳ trước. Sau hai kỳ bằng bao nhiêu?
+**Đề bài.** Hai đại lượng đều bằng \(80\) ở kỳ \(0\); A cộng \(8\) đơn vị mỗi kỳ, B tăng \(10\%\) so với kỳ trước. Sau hai kỳ bằng bao nhiêu?
 
-**Lời giải:** \(A_2=80+2\cdot8=96\), \(B_2=80(1{,}1)^2=96{,}8\). Ở kỳ đầu cùng tăng \(8\), kỳ sau B tăng \(8{,}8\). Hình phía trên minh họa đầu kỳ \(100\), khác dữ kiện bài này.
+**Lời giải.** \(A_2=80+2\cdot8=96\), \(B_2=80(1{,}1)^2=96{,}8\). Ở kỳ đầu cùng tăng \(8\), kỳ sau B tăng \(8{,}8\). Hình phía trên minh họa đầu kỳ \(100\), khác dữ kiện bài này.
 
 **Vận dụng** Khởi đầu 50, tăng 10% mỗi kỳ sau hai lần tăng có phải 60 không?
 
@@ -456,9 +462,9 @@ Chẳng hạn, P=10 triệu, r=6%/năm, hai năm: 10·1,06²=11,236 triệu. Ch�
 
 **Ví dụ**
 
-**Đề bài:** Gửi \(8\) triệu đồng một lần, lãi nhập gốc \(4\%\) mỗi năm, không gửi/rút thêm, bỏ qua phí. Sau ba năm có bao nhiêu?
+**Đề bài.** Gửi \(8\) triệu đồng một lần, lãi nhập gốc \(4\%\) mỗi năm, không gửi/rút thêm, bỏ qua phí. Sau ba năm có bao nhiêu?
 
-**Lời giải:** Qua ba kỳ, số dư theo mô hình là \(8(1{,}04)^3=8\cdot1{,}124864=8{,}998912\) triệu đồng, không cộng lãi đơn ba lần.
+**Lời giải.** Qua ba kỳ, số dư theo mô hình là \(8(1{,}04)^3=8\cdot1{,}124864=8{,}998912\) triệu đồng, không cộng lãi đơn ba lần.
 
 **Vận dụng** P=1 triệu, r=10% mỗi kỳ, hai kỳ còn bao nhiêu?
 
@@ -485,9 +491,9 @@ Xét ví dụ đúng với sơ đồ: gửi **100 đơn vị vào cuối mỗi k
 
 **Ví dụ**
 
-**Đề bài:** Gửi \(25\) đơn vị vào cuối mỗi kỳ trong bốn kỳ, lãi cố định \(4\%\)/kỳ, không phí/rút. Tính số dư ngay sau khoản gửi thứ tư.
+**Đề bài.** Gửi \(25\) đơn vị vào cuối mỗi kỳ trong bốn kỳ, lãi cố định \(4\%\)/kỳ, không phí/rút. Tính số dư ngay sau khoản gửi thứ tư.
 
-**Lời giải:** Bốn khoản gửi được hưởng \(3,2,1,0\) kỳ lãi, nên \(FV=25[(1{,}04)^3+(1{,}04)^2+1{,}04+1]=25(1{,}124864+1{,}0816+1{,}04+1)=106{,}1616\). Không tính lãi cho khoản gửi cuối kỳ thứ tư; hình minh họa bên trên có ba khoản \(100\), là dữ liệu khác.
+**Lời giải.** Bốn khoản gửi được hưởng \(3,2,1,0\) kỳ lãi, nên \(FV=25[(1{,}04)^3+(1{,}04)^2+1{,}04+1]=25(1{,}124864+1{,}0816+1{,}04+1)=106{,}1616\). Không tính lãi cho khoản gửi cuối kỳ thứ tư; hình minh họa bên trên có ba khoản \(100\), là dữ liệu khác.
 
 **Vận dụng** Gửi 20 vào cuối hai kỳ với r=10%/kỳ, số dư cuối kỳ 2 là bao nhiêu?
 
