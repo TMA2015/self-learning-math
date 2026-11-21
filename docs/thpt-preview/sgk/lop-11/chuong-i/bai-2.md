@@ -21,7 +21,7 @@
 
     **Vận dụng.** Tính \(\cos(60^\circ+30^\circ)\). Kết quả có bằng \(\cos60^\circ+\cos30^\circ\) không? Hãy dự đoán trước khi tính.
 
-    <span data-ped-first-try="1" data-outcome-id="G11-B02-ADDITION" data-thpt-first-try-id="THPT-G11-B02-TRY01" hidden></span>
+    <span data-ped-first-try="1" data-outcome-id="G11-B02-SUM_DIFFERENCE" data-thpt-first-try-id="THPT-G11-B02-TRY01" hidden></span>
 
     ??? question "Đối chiếu"
 
@@ -41,37 +41,37 @@
 
     Nếu trong công thức cộng đặt hai góc bằng nhau, \(u+u=2u\), các tích xuất hiện thành bình phương hoặc tích đôi. Ta **suy ra** công thức nhân đôi, không cần học như một bảng không liên hệ. Nếu chỉ biết một giá trị sin/cos của \(u\), hãy xác định dấu giá trị còn lại từ góc phần tư trước khi thay.
 
-    **Vận dụng.** Cho \(\sin u=\frac35\), \(\cos u=\frac45\). Tính \(\sin2u\) và \(\cos2u\).
+    **Vận dụng.** Biết \(\sin u=\frac35\) và \(\frac{\pi}{2}<u<\pi\). Hãy tìm \(\cos u\), sau đó tính \(\sin2u\) và \(\cos2u\).
 
-    <span data-ped-first-try="2" data-outcome-id="G11-B02-DOUBLE" data-thpt-first-try-id="THPT-G11-B02-TRY02" hidden></span>
+    <span data-ped-first-try="2" data-outcome-id="G11-B02-DOUBLE_ANGLE" data-thpt-first-try-id="THPT-G11-B02-TRY02" hidden></span>
 
     ??? question "Đối chiếu"
 
-        **Kết quả:** \(\sin2u=2\cdot\frac35\cdot\frac45=\frac{24}{25}\); \(\cos2u=(\frac45)^2-(\frac35)^2=\frac7{25}\).
+        **Lời giải:** Vì \(u\) thuộc góc phần tư II nên \(\cos u<0\). Từ \(\sin^2u+\cos^2u=1\) suy ra \(\cos u=-\sqrt{1-\frac9{25}}=-\frac45\). Do đó \(\sin2u=2\cdot\frac35\cdot(-\frac45)=-\frac{24}{25}\), còn \(\cos2u=(-\frac45)^2-(\frac35)^2=\frac7{25}\).
 
-        **Kiểm lại:** \((24/25)^2+(7/25)^2=1\). Hai kết quả có cùng góc \(2u\), nên phải thỏa hệ thức lượng giác cơ bản.
+        **Kiểm lại:** \((-\frac{24}{25})^2+(\frac7{25})^2=1\). Hơn nữa \(2u\in(\pi,2\pi)\), nên \(\sin2u<0\), phù hợp dấu của đáp án.
 
     <span data-thpt-help-id="HELP-G11-B02-TRY02" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
-        **Dấu hiệu:** Em dùng \(\sin2u=2\sin u\) hoặc \(\cos2u=2\cos u\).
+        **Dấu hiệu:** Em lấy \(\cos u=+\frac45\) dù \(u\) thuộc góc phần tư II, hoặc nhầm \(\sin2u=2\sin u\).
 
-        **Tự sửa:** Quay lại \(\sin(u+u)\) và \(\cos(u+u)\), thay đủ cả sin và cos, rồi kiểm \(\sin^22u+\cos^22u=1\). Tập tiếp ở mục công thức nhân đôi và Core Bài 2.
+        **Tự sửa:** Xác định \(\cos u<0\) trước khi lấy căn từ hệ thức cơ bản; sau đó thay vào \(\sin2u=2\sin u\cos u\) và \(\cos2u=\cos^2u-\sin^2u\). Ôn mục 2.2 và luyện dạng góc nhân đôi ở Core Bài 2.
 
     ### 1.3. Khi biểu thức là tích, vì sao nên đổi thành tổng?
 
     Với \(2\cos u\cos v\), cộng hai công thức \(\cos(u-v)\) và \(\cos(u+v)\) sẽ triệt tiêu tích sin. Vì vậy **tích hai cos** có thể đổi thành **tổng hai cos**, rất hữu ích khi \(u+v\) hay \(u-v\) là góc đặc biệt.
 
-    **Vận dụng.** Tính \(2\sin75^\circ\sin15^\circ\) mà không dùng máy tính.
+    **Vận dụng.** Không dùng máy tính, tính \(2\sin75^\circ\sin45^\circ\) bằng công thức biến đổi tích thành tổng.
 
     <span data-ped-first-try="3" data-outcome-id="G11-B02-PRODUCT_TO_SUM" data-thpt-first-try-id="THPT-G11-B02-TRY03" hidden></span>
 
     ??? question "Đối chiếu"
 
-        **Kết quả:** \(2\sin75^\circ\sin15^\circ=\cos60^\circ-\cos90^\circ=\frac12\).
+        **Lời giải:** \(2\sin75^\circ\sin45^\circ=\cos30^\circ-\cos120^\circ=\frac{\sqrt3}{2}-(-\frac12)=\frac{\sqrt3+1}{2}\).
 
-        **Lý do chọn cách:** Nhìn đầu vào là tích sin·sin; hiệu hai góc \(75^\circ-15^\circ\) và tổng \(75^\circ+15^\circ\) đều có giá trị lượng giác biết ngay.
+        **Lý do chọn cách:** Đầu vào là tích sin·sin; hiệu hai góc là \(30^\circ\), tổng là \(120^\circ\), đều có giá trị cos biết ngay. Đặc biệt \(\cos120^\circ<0\), nên phải trừ đúng số âm.
 
     <span data-thpt-help-id="HELP-G11-B02-TRY03" hidden></span>
 
