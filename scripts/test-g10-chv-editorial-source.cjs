@@ -210,12 +210,15 @@ for(const n of [12,13,14]){
    "B12 legacy method heading still present in current manuscript");
   assert(ex.includes("2^9")&&ex.includes("886{,}810"),
    "B12 authentic SGK p74 calculator worked example absent");
-  assert.equal((errors.match(/^    \?\?\? tip "4\.[1-3]\. /gm)||[]).length,3,
-   "B12 exactly three numbered GOLDEN mistake accordions");
+  assert.equal((discovery.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,3,
+   "B12 exactly three signed local Kiểm lỗi in Discovery");
+  assert.equal((errors.match(/^    \?\?\? tip /gm)||[]).length,0,
+   "B12 Tab4 must not duplicate HELP under Vận dụng");
   assert.equal((errors.match(/^    ### 4\./gm)||[]).length,0,
    "B12 Tab4 cannot recreate B11 P2 duplicate-heading regression");
-  assert(errors.includes("HELP-G10-B12-CALC-01")&&
-   errors.includes("**Cách làm sai:**"),"B12 new calculator actual wrong-step recovery missing");
+  assert(discovery.includes("HELP-G10-B12-CALC-01")&&
+   discovery.includes("**Cách làm sai:**"),
+   "B12 calculator local Kiểm lỗi must include real wrong-step recovery");
  }else if(n===13){
   const examples=s.slice(r,t),help=s.slice(t);
   assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
@@ -233,8 +236,10 @@ for(const n of [12,13,14]){
    "B13 four new formal conceptual statements in Golden teal");
   assert.equal((official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
    "B13 one positional quartile rule in Golden blue");
-  assert.equal((help.match(/^    \?\?\? tip "4\.[12]\./gm)||[]).length,2,
-   "B13 two real numbered D6 tip disclosures");
+  assert.equal((discovery.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,2,
+   "B13 two original local Kiểm lỗi in Discovery");
+  assert.equal((help.match(/^    \?\?\? tip /gm)||[]).length,0,
+   "B13 Tab4 must not clone targeted D6");
   assert(!s.includes("Em tự thử.")&&!s.includes("Hiểu bản chất trước công thức"),
    "B13 visible copy cannot reference obsolete labels or nonexistent sections");
  }else{
@@ -252,8 +257,10 @@ for(const n of [12,13,14]){
    "B14 exactly three S1 math definitions use Golden teal");
   assert.equal((official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
    "B14 one S1 outlier rule uses Golden blue");
-  assert.equal((help.match(/^    \?\?\? tip "4\.[12]\. /gm)||[]).length,2,
-   "B14 exactly two original numbered D6 recoveries");
+  assert.equal((discovery.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,2,
+   "B14 two original local D6 near Vận dụng");
+  assert.equal((help.match(/^    \?\?\? tip /gm)||[]).length,0,
+   "B14 no duplicate targeted HELP in Tab4");
   assert.equal((discovery.match(/\*\*Em vận dụng\.\*\*/g)||[]).length,5,
    "B14 five pre-Core First Tries must have one approved Em vận dụng label each");
   assert(!discovery.includes("Em tự thử."),
