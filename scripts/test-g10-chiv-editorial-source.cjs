@@ -669,7 +669,7 @@ for(const [lesson,row] of rows){
   // The historical and current manuscript/source SHA chain is checked above.
   const discovery=source.split('=== "Khám phá kiến thức"')[1]
    .split('=== "Kiến thức SGK"')[0];
-  assert.equal((discovery.match(/^    \\?\\?\\? tip "Kiểm lỗi"$/gm)||[]).length,3,
+  assert.equal((discovery.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,3,
    "B11 3 signed local Kiểm lỗi disclosures remain in Discovery");
   assert.equal((last.match(/data-thpt-help-id=/g)||[]).length,0,
    "B11 Tab4 must not duplicate HELP moved to Vận dụng");
