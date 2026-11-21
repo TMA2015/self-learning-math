@@ -50,7 +50,7 @@ The six new IDs identify **only** these six standalone unscored learning-check q
 - Six fully independent worked examples with **Đề bài / Phân tích / Lời giải / Kiểm lại** in one local block: -150° conversion, ISS arc, 5π/6 unit-circle sign+tan/cot, cos=-2/3 QIII resulting sin=-√5/3 and tan=√5/2, -675° periodicity, and R=30cm -2π/3 signed wheel arc.
 - Maths checked algebraically and arithmetically: (1700pi=5340.7075...), (sin^2+cos^2=1) and (	ancot=1) on the valid domain, correct table at 0 and π/2 where exactly one of tan/cot is undefined, cos(π-α)=-cos(α), tan(π-α)=-tan(α) when defined. No hint, answer, correctness or Tutor exposed before an independent Final Submit because only the voluntary **unscored** learner accordion is modified; Core/Assessment not changed.
 - **Q15/Q16**: new local First Try IDs not reused for Readiness or Skill Mastery, existing two HELP IDs unchanged, no changed Practice, Written, RD1 private, Firebase or Q16. Public self-check is `CLIENT_SELF_CHECK_NO_MASTERY`.
-- Baseline original source had 38 old TeX chunks, 37 old spellings restructured with canonical LaTeX commands. New source has 163 TeX chunks; this is a real academic and pedagogical rewrite, *not* a source-equivalent formatting delta. Source lock and verified outcomes guard the replacement instead of a lax total-token quota.
+- Baseline original source had 38 old TeX chunks, 37 old spellings restructured with canonical LaTeX commands. New source has 164 TeX chunks; this is a real academic and pedagogical rewrite, *not* a source-equivalent formatting delta. Source lock and verified outcomes guard the replacement instead of a lax total-token quota.
 
 ## G3/G5 gates and handoff
 
