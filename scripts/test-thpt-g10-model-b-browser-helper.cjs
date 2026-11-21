@@ -99,7 +99,20 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
  const lesson="B"+String(n).padStart(2,"0");
  const hasEditorial=chivEditorialReceiptRows().has(lesson)||chvEditorialReceiptRows().has(lesson)||
    chviiEditorialReceiptRows().has(lesson);
- const formativeTab=hasEditorial?"Khám phá kiến thức":"Kiến thức SGK";
+ // The final signed ChVIII/IX Q18 Knowledge pages (B23–B27) already
+ // place each of their four/five canonical First Tries in Discovery.
+ // Exact full-source SHA was checked above; also verify each marker is
+ // before the Knowledge tab boundary so an arbitrary layout cannot pass.
+ const sourceDiscover=source.slice(source.indexOf('=== "Khám phá kiến thức"'),
+  source.indexOf('=== "Kiến thức SGK"'));
+ if(n>=23&&n<=27){
+  assert(source.indexOf('=== "Khám phá kiến thức"')>=0&&
+   source.indexOf('=== "Kiến thức SGK"')>source.indexOf('=== "Khám phá kiến thức"'),
+   "B"+n+" signed Q18 must provide Discovery ahead of Knowledge");
+  for(const id of sourceTries)assert(sourceDiscover.includes('data-thpt-first-try-id="'+id+'"'),
+   "B"+n+" every signed First Try must be in Discovery: "+id);
+ }
+ const formativeTab=(hasEditorial||(n>=23&&n<=27))?"Khám phá kiến thức":"Kiến thức SGK";
  await select(formativeTab);
  const answer=article.locator("details.question:visible").first();
  assert(await answer.count()===1,"B"+n+" First Try must be visible in "+formativeTab);
