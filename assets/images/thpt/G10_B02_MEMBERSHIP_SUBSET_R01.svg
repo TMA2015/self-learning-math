@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img" aria-labelledby="title desc">
+<title id="title">Tập con B gồm số 2 nằm trong tập A gồm số 2 và số 4</title>
+<desc id="desc">Miền chữ nhật lớn A chứa hai phần tử là số 2 và số 4. Miền con B ở trong A chỉ chứa số 2. Điều này minh họa 2 là phần tử của A, B là tập con của A, nhưng tập B không phải là một phần tử của A.</desc>
+<rect width="760" height="340" rx="24" fill="#f8fbff"/>
+<rect x="56" y="30" width="648" height="260" rx="27" fill="#e9f2ff" stroke="#2d538d" stroke-width="4"/>
+<text x="80" y="76" font-family="Arial, sans-serif" font-weight="700" font-size="26" fill="#163b78">A = {2, 4}</text>
+<rect x="150" y="98" width="270" height="151" rx="21" fill="#fff" stroke="#267a81" stroke-width="4" stroke-dasharray="11 6"/>
+<text x="177" y="135" font-family="Arial, sans-serif" font-weight="700" font-size="23" fill="#13636b">B = {2}</text>
+<circle cx="278" cy="189" r="36" fill="#c2eee8" stroke="#267a81" stroke-width="2"/>
+<text x="278" y="199" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="34" fill="#113c4a">2</text>
+<circle cx="555" cy="189" r="36" fill="#fff2cc" stroke="#a3741a" stroke-width="2"/>
+<text x="555" y="199" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="34" fill="#634a17">4</text>
+<text x="380" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#223e67">2 ∈ A   ·   B ⊆ A   ·   {2} ∉ A</text>
+</svg>

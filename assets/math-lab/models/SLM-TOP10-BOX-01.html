@@ -1,0 +1,126 @@
+<!-- MODEL_ID: SLM-TOP10-BOX-01; SOURCE_BLOB: 966f1a472372ffeb3af72f17a817cefcf5660271; AUTHORING_CANDIDATE; G1_G4_PENDING -->
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Self-Learning Math · Khám phá mô hình toán THPT</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#183b54;background:#fff}
+*{box-sizing:border-box}html{font-size:16px}body{margin:0;padding:10px}
+.lab{max-width:920px;margin:auto;border:1px solid #c7dfe9;border-radius:16px;overflow:hidden;background:#fff}
+header{background:#eaf4fa;padding:17px 20px}h1{font-size:20px;line-height:1.4;margin:0 0 6px}p{line-height:1.65;margin:7px 0}
+main{padding:17px 20px}.sub{font-size:14px;color:#4e6a7d}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:14px;margin:16px 0}
+.control label{display:block;font-weight:600;font-size:14px;margin-bottom:5px}
+input[type=range]{width:100%;min-height:32px;accent-color:#1687b4}
+output{font-variant-numeric:tabular-nums;color:#126b90}
+.limits{display:flex;justify-content:space-between;font-size:12px;color:#637f90}
+.canvaswrap{border:1px solid #dcebf2;background:#fafdff;border-radius:12px;overflow:hidden}
+canvas{width:100%;height:350px;display:block;touch-action:pan-y}
+.result{margin-top:12px;border:1px solid #d3e7f1;border-radius:11px;background:#f3f9fc;padding:12px 14px;line-height:1.65;min-height:65px}
+button{font:inherit;border:1px solid #b8d7e6;background:#fff;color:#15506f;border-radius:10px;padding:9px 14px;cursor:pointer}
+button:hover{background:#ecf7fc}button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #1687b4;outline-offset:3px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}details{margin-top:14px;border:1px solid #d6e5ed;border-radius:10px;padding:10px 13px}
+summary{font-weight:600;cursor:pointer;color:#15506f;line-height:1.5}
+.small{font-size:13px;color:#4b6678}.legend{display:flex;gap:13px;flex-wrap:wrap;font-size:13px;margin-top:8px}
+.legend span:before{content:"";display:inline-block;width:13px;height:3px;vertical-align:middle;margin-right:6px;background:#1687b4}
+.legend .second:before{background:#218f73}.legend .marker:before{background:#e9922a}
+@media(max-width:530px){body{padding:5px}header,main{padding:13px}h1{font-size:18px}canvas{height:290px}.controls{gap:8px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* SLM_MATH_LAB_GOLDEN_UI_TOKENS_R02_20261117: authoring CSS-only parity; math/JS unchanged */
+:root{--slm-bg:#fff;--slm-header:#eaf4fa;--slm-canvas:#fafdff;--slm-border:#c7dfe9;--slm-ink:#183b54;--slm-muted:#50697b;--slm-blue:#1687b4;--slm-green:#218f73;--slm-orange:#e9922a;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+body{background:var(--slm-bg)!important;color:var(--slm-ink)!important;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;font-size:16px!important;line-height:1.6!important}
+main,.lab,.d5-card,.d5-box{background:#fff!important;border-color:var(--slm-border)!important}
+header,.d5-top,.d5-head{background:var(--slm-header)!important}
+h1{font-size:clamp(1.3rem,2.5vw,1.7rem)!important;line-height:1.3!important;color:var(--slm-ink)!important}
+h2{font-size:1.1rem!important;line-height:1.35!important;color:var(--slm-ink)!important}
+label,.control label,.d5-control label,.d5-controls label{color:var(--slm-ink)!important;font-size:1rem!important}
+small,.muted,.small,.sub,.d5-note{color:var(--slm-muted)!important}
+button,select{font:inherit;min-height:42px;background:var(--slm-header)!important;color:var(--slm-ink)!important;border:1px solid var(--slm-border)!important;border-radius:10px!important}
+input[type=range],input[type=checkbox],input[type=radio]{accent-color:var(--slm-blue)!important}
+input[type=range]{min-height:32px}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--slm-orange)!important;outline-offset:2px!important}
+canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)!important}
+.canvaswrap,.d5-stage,.d5-graph,.pane,article,.field,.box,.panel,section{border-color:var(--slm-border)!important}
+.summary,.d5-results,.output,.result,.answer,.stats,.field{background:var(--slm-canvas)!important}
+.box-net-figure{margin:10px auto 14px;max-width:340px}
+.box-net-figure svg{display:block;width:100%;height:auto;max-height:300px;margin:auto}
+.box-net-figure figcaption{text-align:center;font-size:.92rem;color:#526f81;line-height:1.5}
+.box-net-figure .cut{fill:#fff;stroke:#bb6d54;stroke-width:1.5;stroke-dasharray:4 3}
+.box-net-figure .fold{stroke:#187b72;stroke-width:1.8;stroke-dasharray:5 4}
+</style>
+</head>
+<body>
+<section class="lab" aria-label="Mô hình khám phá toán học THPT">
+<header><h1 id="title">Mô hình toán học</h1><p id="intro"></p><p class="sub">Tự dự đoán trước · Thao tác bằng thanh trượt · Quan sát hình và các giá trị · Giải thích kết quả</p></header>
+<main>
+<p id="predict"></p>
+<div class="controls" id="controls" aria-label="Thông số mô hình"></div>
+<figure class="box-net-figure" aria-label="Tấm vuông 12 cm và các hình vuông bị cắt ở bốn góc">
+<svg id="box-net" viewBox="0 0 280 280" role="img" aria-labelledby="net-title net-desc">
+<title id="net-title">Hình triển khai hộp mở nắp khi cắt bốn góc tấm vuông</title>
+<desc id="net-desc">Tấm vuông 12 nhân 12 centimet, cắt bốn hình vuông cạnh x, phần chính giữa là đáy hộp cạnh 12 trừ 2x.</desc>
+<rect x="30" y="30" width="220" height="220" rx="1" fill="#eaf4fa" stroke="#19729c" stroke-width="2"/>
+<rect id="cut-tl" class="cut" x="30" y="30" width="36.7" height="36.7"/>
+<rect id="cut-tr" class="cut" x="213.3" y="30" width="36.7" height="36.7"/>
+<rect id="cut-bl" class="cut" x="30" y="213.3" width="36.7" height="36.7"/>
+<rect id="cut-br" class="cut" x="213.3" y="213.3" width="36.7" height="36.7"/>
+<rect id="net-base" x="66.7" y="66.7" width="146.6" height="146.6" fill="#d2f1e7" stroke="#218f73" stroke-width="2"/>
+<text x="30" y="21" font-size="12" fill="#183b54">Tấm vuông 12 cm × 12 cm</text>
+</svg>
+<figcaption id="net-caption">Bốn góc cắt cạnh x; phần giữa là đáy hộp.</figcaption>
+</figure>
+<div class="canvaswrap"><canvas id="plot" role="img" aria-label="Đồ thị thể tích V(x), với 0<x<6. Điểm màu cam biểu diễn giá trị x đang thử; đối chiếu số liệu dưới hình."></canvas></div>
+<div class="legend"><span>Thể tích V(x)</span><span class="second">Vị trí cực đại x=2</span><span class="marker">Giá trị x đang chọn</span></div>
+<details class="result" id="numeric-check"><summary>Đối chiếu thể tích và vị trí cực đại</summary><div id="readout" aria-live="polite" role="status"></div></details>
+<div class="actions"><button id="reset" type="button">Đặt lại</button></div>
+<p id="apply"></p>
+<details id="compare"><summary>Đối chiếu · Vì sao có kết quả này?</summary><p id="reason"></p></details>
+<p class="small">Hoạt động khám phá công khai, không phải đề Tự kiểm tra độc lập. Không ghi điểm, không cập nhật Skill Mastery và không chứa đề/đáp án RD1 kín. Chỉ một mô hình trên mỗi vị trí học, không có tab hành trình mới.</p>
+</main></section>
+<script>
+(function(){"use strict";
+var C={blue:"#1687b4",green:"#218f73",orange:"#e9922a",gray:"#94aab8",grid:"#e0edf3",ink:"#183b54",red:"#b64b41"};
+var specs={
+"SLM-TOP10-BOX-01":{title:"Cắt góc tấm vuông: thể tích thay đổi",intro:"Tấm vuông cạnh 12 cm cắt bốn góc cạnh x; gấp thành hộp không nắp với V(x)=x(12−2x)².",predict:"Dự đoán: tăng x mãi có làm thể tích luôn tăng không?",apply:"Vận dụng: tìm x cho thể tích lớn nhất khi 0<x<6 và giải thích vì sao x→6 không tối ưu.",reason:"V'(x)=(12−2x)(12−6x). Trong 0<x<6, điểm cực đại nội x=2 cho V=128 cm³; khi x tiến 0 hoặc 6, thể tích về 0.",sliders:[["x","Cạnh góc cắt x (cm)",.1,5.9,.1,2]]}
+};
+var id="SLM-TOP10-BOX-01",S=specs[id];
+if(!S){document.getElementById("title").textContent="Không có mô hình với MODEL_ID này";document.getElementById("intro").textContent="Kiểm tra lại nguồn MODEL_ID canonical trong bản ghi placement.";document.querySelector("main").hidden=true;return}
+document.title="SLM · "+S.title;
+["title","intro","predict","apply","reason"].forEach(function(k){document.getElementById(k).textContent=(k==="title"?S.title:k==="intro"?S.intro:k==="predict"?"Dự đoán: "+S.predict.replace(/^Dự đoán:\s*/,""):k==="apply"?S.apply:S.reason)});
+var host=document.getElementById("controls"),el={};
+S.sliders.forEach(function(c){var div=document.createElement("div");div.className="control";var label=document.createElement("label");label.htmlFor=c[0];label.textContent=c[1]+": ";var out=document.createElement("output");out.id="o-"+c[0];label.appendChild(out);var input=document.createElement("input");input.type="range";input.id=c[0];input.min=c[2];input.max=c[3];input.step=c[4];input.value=c[5];input.setAttribute("aria-label",c[1]);div.appendChild(label);div.appendChild(input);var limits=document.createElement("div");limits.className="limits";var a=document.createElement("span"),b=document.createElement("span");a.textContent=String(c[2]);b.textContent=String(c[3]);limits.appendChild(a);limits.appendChild(b);div.appendChild(limits);host.appendChild(div);el[c[0]]={input:input,out:out,initial:c[5]};});
+var canvas=document.getElementById("plot"),ctx=canvas.getContext("2d"),result=document.getElementById("readout"),dims={w:0,h:0},pending=false,interacted=false;
+function val(k){return Number(el[k].input.value)}
+function fmt(v){if(!Number.isFinite(v))return "không xác định";var n=Math.abs(v)<1e-10?0:Math.round(v*1000)/1000;return String(n).replace("-","−").replace(".",",")}
+function out(k,v){if(el[k])el[k].out.textContent=fmt(v===undefined?val(k):v)}
+function setText(t){result.textContent=t}
+function init(){var dpr=Math.min(window.devicePixelRatio||1,2),w=canvas.clientWidth||720,h=canvas.clientHeight||350;dims={w:w,h:h};canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);ctx.fillStyle="#fafdff";ctx.fillRect(0,0,w,h)}
+function line(ax,ay,bx,by,color,width,dash){ctx.beginPath();ctx.strokeStyle=color||C.blue;ctx.lineWidth=width||2.5;ctx.setLineDash(dash||[]);ctx.moveTo(ax,ay);ctx.lineTo(bx,by);ctx.stroke();ctx.setLineDash([])}
+function dot(px,py,color,r,open){ctx.beginPath();ctx.arc(px,py,r||5.5,0,Math.PI*2);ctx.fillStyle=open?"#fafdff":color;ctx.fill();ctx.lineWidth=2;ctx.strokeStyle=color;ctx.stroke()}
+function label(s,x,y,color){ctx.fillStyle=color||C.ink;ctx.font="12px system-ui,Arial";ctx.fillText(s,x,y)}
+function graph(xmin,xmax,ymin,ymax){var w=dims.w,h=dims.h,left=44,right=w-20,top=15,bottom=h-35;function X(x){return left+(x-xmin)/(xmax-xmin)*(right-left)}function Y(y){return top+(ymax-y)/(ymax-ymin)*(bottom-top)}ctx.strokeStyle=C.grid;ctx.lineWidth=1;for(var k=0;k<=8;k++){var xx=left+k*(right-left)/8,yy=top+k*(bottom-top)/8;line(xx,top,xx,bottom,C.grid,1);line(left,yy,right,yy,C.grid,1)}if(xmin<=0&&xmax>=0)line(X(0),top,X(0),bottom,C.gray,1.5);if(ymin<=0&&ymax>=0)line(left,Y(0),right,Y(0),C.gray,1.5);label(fmt(xmin),left,bottom+17);label(fmt(xmax),right-48,bottom+17);label("x",right-7,bottom+17);label(fmt(ymax),4,top+10);label(fmt(ymin),4,bottom);label("y",left-13,top-2);ctx.save();ctx.beginPath();ctx.rect(left,top,right-left,bottom-top);ctx.clip();return {X:X,Y:Y,end:function(){ctx.restore()},left:left,right:right,top:top,bottom:bottom}}
+function curve(g,f,a,b,color,width){ctx.beginPath();ctx.strokeStyle=color||C.blue;ctx.lineWidth=width||2.5;var active=false;for(var i=0;i<=300;i++){var x=a+(b-a)*i/300,y=f(x);if(!Number.isFinite(y)||Math.abs(y)>10000){active=false;continue}var px=g.X(x),py=g.Y(y);if(!active){ctx.moveTo(px,py);active=true}else ctx.lineTo(px,py)}ctx.stroke()}
+function draw(){init();var x,k,g,i,y,z,n,b,p,alpha,r,t,sol,roots,theta,dx,estimate,exact,ns;Object.keys(el).forEach(function(key){out(key)});
+switch(id){
+case "SLM-TOP10-BOX-01":
+x=val("x");
+var side=12-2*x,cut=x*220/12,edge=220-2*cut,baseSvg=document.getElementById("net-base");
+baseSvg.setAttribute("x",30+cut);baseSvg.setAttribute("y",30+cut);baseSvg.setAttribute("width",edge);baseSvg.setAttribute("height",edge);
+[["cut-tl",30,30],["cut-tr",250-cut,30],["cut-bl",30,250-cut],["cut-br",250-cut,250-cut]].forEach(function(square){
+ var q=document.getElementById(square[0]);q.setAttribute("x",square[1]);q.setAttribute("y",square[2]);q.setAttribute("width",cut);q.setAttribute("height",cut);
+});
+document.getElementById("net-caption").textContent="Cắt bốn góc, mỗi góc cạnh "+fmt(x)+" cm. Đáy hộp: "+fmt(side)+" × "+fmt(side)+" cm; chiều cao khi gấp: "+fmt(x)+" cm.";
+g=graph(0,6,0,140);curve(g,function(t){return t*Math.pow(12-2*t,2)},0,6,C.blue);dot(g.X(x),g.Y(x*side*side),C.orange);line(g.X(2),g.Y(0),g.X(2),g.Y(128),C.green,1.5,[5,5]);g.end();
+setText("x="+fmt(x)+" cm, 0<x<6 để hộp không suy biến. Đáy hộp cạnh "+fmt(side)+" cm; cao "+fmt(x)+" cm. V=x(12−2x)²="+fmt(x*side*side)+" cm³. V′(x)=(12−2x)(12−6x): dương khi 0<x<2, âm khi 2<x<6. V lớn nhất ở x=2, bằng 128 cm³. Khi x→0⁺ hoặc x→6⁻, thể tích tiến về 0.");break;
+}
+if(!interacted){result.textContent="Hãy dự đoán kết quả trước, sau đó thay đổi ít nhất một thanh trượt hoặc bấm giá trị bằng bàn phím để quan sát."}
+}
+function schedule(){document.getElementById("numeric-check").open=false;document.getElementById("compare").open=false;interacted=true;if(pending)return;pending=true;window.requestAnimationFrame(function(){pending=false;draw()})}
+Object.keys(el).forEach(function(k){el[k].input.addEventListener("input",schedule);el[k].input.addEventListener("change",schedule)});
+document.getElementById("reset").addEventListener("click",function(){Object.keys(el).forEach(function(k){el[k].input.value=el[k].initial});document.getElementById("compare").open=false;document.getElementById("numeric-check").open=false;interacted=false;draw()});
+window.addEventListener("resize",schedule);draw();
+})();
+</script>
+</body></html>

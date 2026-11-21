@@ -1,0 +1,29 @@
+{
+  "schema": "thpt-g11-reviewed-selfcheck-v1",
+  "scope": "SGK_CHAPTER_SELF_CHECK",
+  "chapter": "CHIII",
+  "chapter_label": "III",
+  "original_public_source_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+  "original_public_bank_version": "THPT-G11-CHIII-B08-B09-R03",
+  "review_chain": "R01 Academic PASS; R02 PED PASS; R03 SBT citation-only Delta B",
+  "mode": "PUBLIC_CANONICAL_REFERENCE_ONLY",
+  "assessment_note": "12 original PUBLIC Practice canonical refs, no cloned stems/answers/rubrics, no private RD1, voluntary manual comparison only. Not independent Readiness.",
+  "mastery_credit": false,
+  "independent_readiness_credit": false,
+  "persist_results": false,
+  "public_client_answer_keys": true,
+  "item_refs": [
+    "THPT-G11-B08-P01",
+    "THPT-G11-B08-P02",
+    "THPT-G11-B08-P03",
+    "THPT-G11-B08-P04",
+    "THPT-G11-B08-P08",
+    "THPT-G11-B09-P01",
+    "THPT-G11-B09-P02",
+    "THPT-G11-B09-P03",
+    "THPT-G11-B09-P04",
+    "THPT-G11-B09-P06",
+    "THPT-G11-B09-P09",
+    "THPT-G11-B09-P10"
+  ]
+}

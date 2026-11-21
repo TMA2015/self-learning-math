@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" role="img" aria-labelledby="b07fv-title b07fv-desc">
+<title id="b07fv-title">Biểu diễn lực và vận tốc bằng vectơ</title>
+<desc id="b07fv-desc">Khung trái: hai lực cùng hướng Đông, cùng tỉ lệ, lực 20 N có mũi tên dài gấp đôi lực 10 N. Khung phải: vectơ vận tốc gió 12 km/h hướng Tây Bắc. Không so chiều dài mũi tên khi đại lượng hoặc tỉ lệ khác nhau.</desc>
+<defs>
+  <marker id="b07fv-force-arrow" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#1d4ed8"/></marker>
+  <marker id="b07fv-wind-arrow" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#be185d"/></marker>
+</defs>
+<rect width="960" height="440" rx="20" fill="#f8fafc"/>
+<text x="34" y="49" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#0f172a">Một mũi tên biểu diễn độ lớn và hướng</text>
+<rect x="32" y="78" width="430" height="300" rx="16" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="490" y="78" width="438" height="300" rx="16" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<g font-family="Arial, sans-serif" fill="#0f172a">
+ <text x="55" y="118" font-size="22" font-weight="bold">Lực tác dụng tại điểm O</text>
+ <text x="512" y="118" font-size="22" font-weight="bold">Vận tốc gió</text>
+</g>
+<circle cx="120" cy="211" r="7" fill="#0f172a"/>
+<text x="101" y="198" font-family="Arial, sans-serif" font-size="18" fill="#0f172a">O</text>
+<line x1="120" y1="211" x2="404" y2="211" stroke="#1d4ed8" stroke-width="5" marker-end="url(#b07fv-force-arrow)"/>
+<text x="272" y="191" font-family="Arial, sans-serif" font-size="20" fill="#1e40af" font-weight="bold">20 N → Đông</text>
+<circle cx="120" cy="286" r="7" fill="#0f172a"/>
+<text x="101" y="273" font-family="Arial, sans-serif" font-size="18" fill="#0f172a">O</text>
+<line x1="120" y1="286" x2="262" y2="286" stroke="#1d4ed8" stroke-width="5" marker-end="url(#b07fv-force-arrow)"/>
+<text x="163" y="267" font-family="Arial, sans-serif" font-size="20" fill="#1e40af" font-weight="bold">10 N</text>
+<text x="55" y="344" font-family="Arial, sans-serif" font-size="18" fill="#334155">Cùng tỉ lệ: mũi tên 20 N dài</text>
+<text x="55" y="367" font-family="Arial, sans-serif" font-size="18" fill="#334155">gấp đôi mũi tên 10 N</text>
+<circle cx="800" cy="299" r="8" fill="#0f172a"/>
+<text x="813" y="308" font-family="Arial, sans-serif" font-size="19" fill="#0f172a">O</text>
+<line x1="800" y1="299" x2="618" y2="168" stroke="#be185d" stroke-width="6" marker-end="url(#b07fv-wind-arrow)"/>
+<text x="560" y="153" font-family="Arial, sans-serif" font-size="20" fill="#9d174d" font-weight="bold">12 km/h · Tây Bắc</text>
+<text x="512" y="345" font-family="Arial, sans-serif" font-size="18" fill="#334155">Hướng mũi tên cho biết chiều chuyển động</text>
+<text x="33" y="415" font-family="Arial, sans-serif" font-size="18" fill="#475569">Hình minh họa tỉ lệ tương đối, không dùng thước đo chiều dài trên màn hình.</text>
+</svg>
