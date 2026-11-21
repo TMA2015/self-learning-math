@@ -1,25 +1,30 @@
+<!-- TOP03_MASTER974_AUTHORING_CURRENT_CONTENT_READY_20261121 -->
+**CURRENT AUTHORING CĐ03 Q18 v3.2.0:** source `38f41f013e75b42605d7a88f9205c20af6315a41`, source commit `dad853ca95cdfb1c5bed125951a6358a9bf4237c`, one signed Q18 `ef40b5871762558959108cf1879155c7e14158fe`, metadata `3ce4f7ec703a437bea18b5389f2968d099cc7c58`, one V2 `b70e42a176f46295e3a8ad7985e9551d9821635f`. Inherited 31 canonical original Practice and 4 Written rubric full academic author direct audit unchanged; two learner PED improvements #977-011/-012: O01 now routes to actual Bài 1/2, and selfcheck public 12 stems now has one voluntary Đối chiếu mapping exact 12 original Practice keys by ID, without copying any answer. 44/44 details balanced; one SGK source footer, 3 original SVG, no private RD1, Final Submit or Mastery. `AUTHOR_SELF_VERIFIED` targeted DELTA_C_PED, not new NotebookLM reviewer PASS or actual website/RELEASE. All archived source/history fields below remain historical. No merge/deploy.
+
+---
+
 # CĐ03 — Phương trình đại số và kỹ thuật chuyển đổi dạng · bản thảo hiện hành QA HOLD
 
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: f4e1e1fab710a3fa5591aa1458079e294d211304
+SOURCE_COMMIT: dad853ca95cdfb1c5bed125951a6358a9bf4237c
 AUTHOR_PR: 820
 CURRENT_PR: #888 Draft chỉnh trực tiếp bản thảo của #820, no merge/deploy
 CATALOG_TOPIC_ID: CD03
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
+ACADEMIC_SOURCE_BLOB: 38f41f013e75b42605d7a88f9205c20af6315a41
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_VERIFIED, source corrected in place, no independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 6380d2340c6cb3dc597777eac1d514d95e140322
+REVIEW_RECEIPT_BLOB: ef40b5871762558959108cf1879155c7e14158fe
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 4b6c3eac39990329982a8e4f9f06b37484e0097c
+AUTHOR_HANDOFF_BLOB: b70e42a176f46295e3a8ad7985e9551d9821635f
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -46,7 +51,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 CURRENT_CONTENT_REVISION: IN_PLACE_REPAIR_OF_R06
 TOPIC_EDITORIAL_CHECKLIST: Issue #864 original 13 points, no additional standard
-TOPIC_REGRESSION_LEDGER: Issue #865, cross-check L01–L25; new CĐ03 defects to be registered L26–L30
+TOPIC_REGRESSION_LEDGER: Issue #977 current verified defect ledger; #865 historical only
 PREVIOUS_R04_SOURCE_BLOB: e94bbe37339f7002bd8e29bdf60e0c86fae0aa95
 PREVIOUS_R04_RECEIPT_BLOB: 53fa40ee7efc98de49d2c0319aa431094b68e065
 LEARNER_PRACTICE_PROJECTIONS: 31 original canonical stems+solutions, 4 Written rubrics 5/6/7/7
