@@ -151,6 +151,14 @@ function checkSHA(){
       "Only B06 canonical Knowledge marker may add CSS");
    assert(data.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
     "B05 CSS must scope solely to B05");
+  }else if(p==="mkdocs.yml"){
+   // First Paint intentionally registers exactly one scoped MkDocs hook.
+   // Reconstruct the accepted pre-PR config byte-for-byte; no other config
+   // (including THCS / plugins / Firebase) may drift in this UI-only PR.
+   const source=data.toString("utf8"),entry="  - hooks/sgk_golden_first_paint.py\n";
+   assert.equal(source.split(entry).length-1,1,"One Golden First Paint hook only");
+   assert.equal(hash(source.replace(entry,"")),sha,
+    "Golden First Paint registration must be the ONLY config change");
   }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
  }
  const q18=fs.readFileSync(path.join(root,
