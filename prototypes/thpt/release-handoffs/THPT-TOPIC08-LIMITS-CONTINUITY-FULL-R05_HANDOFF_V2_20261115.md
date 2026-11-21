@@ -1,19 +1,28 @@
+<!-- TOP08_MASTER974_CURRENT_ONE_R05_V2_AUTHORING_20261121 -->
+## CURRENT AUTHORING V2 CĐ08 — one canonical learner, source scope Q18 v3.2.0
+
+One learner source `prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md` Git blob `0853a6de4be055d63a767b58dab20fa113e11098`, existing Q18 author-only `9e80780f05096269b7cd1942c7006138d72d7ec9` and author custody `b997e079eac17c2cd807b57124cdfc142259f260`. Original SGK G11 ChV public36 index `43cbb73bd06e0da6bf8838d925186bc4db4194a7`, original one Topic22 bank `2e93db80384de53e208248eaa0396a7f487302ac`, 10 Written rubrics, 3 original SVG all unchanged.
+
+**Affected math/PED fixes verified current #977-025–029:** all 18 Knowledge voluntary Đối chiếu disclosures now give concept-specific Kiểm lỗi → authentic Kiến thức+Bài; 18 original public Selfchecks have one voluntary end-page existing Practice lookup by exact item IDs; O08 debug values near 3 fixed to 2.99/3.01; O10 x6 debug fixed from x3; O12 prior exact-copy FirstTry replaced with x→−∞ `√(x²+6x)+x`→**−3**, correct negative-branch conjugation. All learner Practice item content (58), ten Written rubrics, 18 public selfcheck question stems and SVG unchanged, 77/77 disclosures balanced, only one SGK source credit. Current Q18 **AUTHOR_SELF_VERIFIED on Delta C affected math/PED**, no independent NotebookLM fresh reviewer PASS; previous source receipts in older paragraphs remain immutable evidence by SHA. Public selfcheck `CLIENT_SELF_CHECK_NO_MASTERY`, no RD1, official readiness, Final Submit, website release, Firebase or merge/deploy.
+
+---
+
 # AUTHORING CĐ08/22 — Giới hạn và Tính liên tục · V2 handoff R05
 
 PACKET_ID: THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261115.md
-AUTHOR_METADATA_BLOB: 66a3bf88dede07605e3ce12abcf54169c17a0a1b
+AUTHOR_METADATA_BLOB: b997e079eac17c2cd807b57124cdfc142259f260
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: df47c56c8a7559047d35b44640ea74dce27a3f91
+ACADEMIC_SOURCE_BLOB: 0853a6de4be055d63a767b58dab20fa113e11098
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: af756b88c81782a664aa8597f0c87ae15e35f261
+REVIEW_RECEIPT_BLOB: 9e80780f05096269b7cd1942c7006138d72d7ec9
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R05_20261115.md
 PUBLIC_CANONICAL_BANK_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
