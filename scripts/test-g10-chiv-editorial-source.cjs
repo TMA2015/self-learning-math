@@ -465,9 +465,15 @@ for(const [lesson,row] of rows){
   assert.equal(r02f("BASELINE_R01_CANONICAL_BLOB"),f("ONE_CANONICAL_LESSON_BLOB"),"B10 P2 R02 canonical ancestry changed");
   assert(r02.includes("DELTA_A_UI")&&r02.includes("MathJax"),"B10 P2 targeted UI fix must be documented");
   expected=r02f("R02_SOURCE_BLOB");
-  assert.equal(blob(fs.readFileSync(path.join(root,
-   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md"))),
-   r02f("R02_ONE_CANONICAL_LESSON_BLOB"),"B10 P2 canonical SHA mismatch");
+   const canonical=fs.readFileSync(path.join(root,
+    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md"));
+   const receipt20=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+   const sourceRows=receipt20.split("\n").filter(x=>x.startsWith("| CANONICAL_B10 | "));
+   assert.equal(sourceRows.length,1,"B10 one signed current manuscript");
+   const historical=[...sourceRows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+   assert.deepEqual(historical,[r02f("R02_ONE_CANONICAL_LESSON_BLOB"),blob(canonical)],
+    "B10 historical P2 manuscript must extend to exact signed 20/11 current manuscript");
  }else if(lesson==="B11"){
   const signed=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md"),"utf8");
