@@ -518,6 +518,28 @@ for(const [lesson,row] of rows){
  assert.equal(blobs.length,2,lesson+" source predecessor and successor both signed");
  assert.equal(blobs[0],expected,lesson+" historical Rxx learner source must remain immutable");
  expected=blobs[1];
+ if(lesson==="B09"){
+  // R02 subsequently moved the general wrong-vector-decomposition tip
+  // back to tab 4 (not a local First Try D6). Require exact signed parent,
+  // current public SHA and the ONE current canonical manuscript SHA.
+  const r02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md"),"utf8");
+  const field=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("R02_PREVIOUS_SOURCE_BLOB"),expected,
+   "B09 current R02 general error must extend signed HELP-placement R01");
+  const oldCanonical=placement.split("\n")
+   .find(x=>x.startsWith("| CANONICAL_B09 | "));
+  assert(oldCanonical,"B09 one-canonical manuscript transition receipt missing");
+  const historical=[...oldCanonical.matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+  assert.equal(historical.length,2);
+  assert.equal(field("R02_PREVIOUS_CANONICAL_BLOB"),historical[1],
+   "B09 canonical R02 must extend same signed current R01 manuscript");
+  expected=field("R02_CORRECTED_SOURCE_BLOB");
+  const manuscript=fs.readFileSync(path.join(root,
+   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md"));
+  assert.equal(blob(manuscript),field("R02_CORRECTED_CANONICAL_BLOB"),
+   "B09 one current canonical manuscript must match exact final R02 Q18 SHA");
+ }
  assert.equal(blob(source),expected,lesson+" exact current Q18 learner source");
  assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 router selects latest immutable source");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id"])
