@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" width="760" height="430" role="img" aria-labelledby="t d">
+<title id="t">Sơ đồ hình cây hai bước: chọn một áo và một quần</title>
+<desc id="d">Có hai áo phân biệt A, B và ba quần phân biệt 1,2,3. Từ điểm bắt đầu tách hai nhánh áo; từ mỗi áo tách ba nhánh quần. Sáu lá cuối cây: A1,A2,A3,B1,B2,B3, minh chứng quy tắc nhân 2 nhân 3 bằng 6 bộ.</desc>
+<rect x="0" y="0" width="760" height="430" rx="16" fill="#ffffff"/>
+<rect x="12" y="12" width="736" height="406" rx="12" fill="#ffffff" stroke="#d4e0ed" stroke-width="2"/>
+<text x="30" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#174d80">Một kết quả gồm đủ hai bước lựa chọn</text>
+<text x="30" y="69" font-family="Arial,sans-serif" font-size="14" fill="#526a82">Sơ đồ hình cây: 2 áo phân biệt × 3 quần phân biệt = 6 bộ</text>
+<g fill="none" stroke="#6b8fb1" stroke-width="2.5">
+<path d="M125 226 L285 142 M125 226 L285 315"/>
+<path d="M305 142 L518 92 M305 142 L518 146 M305 142 L518 200"/>
+<path d="M305 315 L518 257 M305 315 L518 315 M305 315 L518 373"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+<rect x="40" y="205" width="105" height="41" rx="10" fill="#eff5fc" stroke="#8ba9c8"/><text x="92" y="231" fill="#174d80">Bắt đầu</text>
+<rect x="264" y="123" width="65" height="40" rx="9" fill="#e2f2ff" stroke="#2872b2"/><text x="296" y="148" fill="#185d9a">Áo A</text>
+<rect x="264" y="295" width="65" height="40" rx="9" fill="#e2f2ff" stroke="#2872b2"/><text x="296" y="320" fill="#185d9a">Áo B</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#18583f">
+<rect x="499" y="72" width="143" height="37" rx="8" fill="#eaf7f1" stroke="#77af96"/><text x="569" y="96">A1: áo A, quần 1</text>
+<rect x="499" y="128" width="143" height="37" rx="8" fill="#eaf7f1" stroke="#77af96"/><text x="569" y="152">A2: áo A, quần 2</text>
+<rect x="499" y="182" width="143" height="37" rx="8" fill="#eaf7f1" stroke="#77af96"/><text x="569" y="206">A3: áo A, quần 3</text>
+<rect x="499" y="239" width="143" height="37" rx="8" fill="#eaf7f1" stroke="#77af96"/><text x="569" y="263">B1: áo B, quần 1</text>
+<rect x="499" y="296" width="143" height="37" rx="8" fill="#eaf7f1" stroke="#77af96"/><text x="569" y="320">B2: áo B, quần 2</text>
+<rect x="499" y="353" width="143" height="37" rx="8" fill="#eaf7f1" stroke="#77af96"/><text x="569" y="377">B3: áo B, quần 3</text>
+</g>
+<text x="33" y="399" font-family="Arial,sans-serif" font-size="13" fill="#516983">Đọc từ trái sang phải: mỗi đường tới một lá là đúng một bộ. Không cộng 2+3.</text>
+</svg>
