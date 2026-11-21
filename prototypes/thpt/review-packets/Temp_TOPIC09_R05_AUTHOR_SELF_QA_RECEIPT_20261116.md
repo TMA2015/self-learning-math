@@ -1,3 +1,22 @@
+<!-- TOP09_MASTER974_CURRENT_AUTHOR_Q18_D6_O32_20261121 -->
+## CĐ09 · CURRENT Q18 AUTHOR_SELF_VERIFIED v3.2.0 — toán gốc không đổi, học độc lập có đường hồi phục
+
+**One current learner canonical** `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md` blob **`5681dd894755165e799b4a20d9741f43115778d9`**. Prior original source `e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7` immutable signed at historic snapshot. One `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18. No duplicate learner or new canonical item library.
+
+**Q01 original source inheritance scoped:** SGK Toán 11 KNTT tập Hai ChIX B31 printed 81–87, B32 88–94, B33 95–96, exercise pp97–98; SBT B31 printed 54–57/B32 58–60/B33 61–62/end ChIX 63–65. Earlier SGK ChIX original source blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` and historic composite receipt `4280a1741ccde038bbd5ae22af5def0d8683c7e8`. Prior current source audited 272/272 original canonical/outcome source tests and 37/37 math-figure checks in this same signed receipt, plus all formal SGK derivative statements, applies as source-scoped evidence for **unchanged** lesson math and bank; no false new full-book PDF or SBT rescanning, no NotebookLM independent PASS claim.
+
+**#977 TOP22-20261121-030, P1 Q08/Q14/PED6 = FIXED_VERIFIED:** all 32 immediate Vận dụng disclosures were mathematically explained but had **zero** actual Bài retry number. Now each original `<details class="slm-topic-first-try" markdown="1">` has one **specific `Kiểm lỗi`** after its existing solution, identifying relevant student misconception, **correct Knowledge subsection**, and authentic original numbered practice tasks; all 32/32 Knowledge units verified target real 108 original Practice cards. Covers secant/derivative definition, one-sided/continuity, quotient/domain/chain, trig radians, exponential/log domains, second derivatives/velocity, approximation and signed error.
+
+**#977 TOP22-20261121-031, P2 Q08/Q16/Q17/PED6 = FIXED_VERIFIED:** kept 32 exact existing `PUBLIC_REPLAY_ONLY` question-only stems, inserted **ONE voluntary final `Đối chiếu` after all 32** linking by original canonical IDs to existing `DISPLAY_ONLY_CANONICAL` Practice Bài `3,6,10,13,16,20,24,27,31,35,38,41,44,48,52,56,59,62,65,68,71,74,79,82,85,88,91,95,99,103,107,108`. Directly checked 32/32 exact item-ID match, no keys/rubrics duplicated, `CLIENT_SELF_CHECK_NO_MASTERY`, NOT_RD1/Final Submit or official TOPIC_READINESS.
+
+**#977 TOP22-20261121-032, P2 Q04/Q08/Q14/PED3–6 = FIXED_VERIFIED in source by mathematical author proof:** prior O32 `Vi phân` concept, graph, example, Immediate Vận dụng and original canonical Practice P32 all used f=x² at shifted points; one easily repeats `\Delta y-dy=(dx)^2` without transfer. Original 21/11 optional R06 **candidate** `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R06_O32_NONPOLYNOMIAL_FIRST_TRY_CANDIDATE_20261121.md` and affected-only optional independent reviewer packet `b5ea41db8b96c2be6ce6ce2bc83ddbd9fd09c4e0` were read directly as working evidence. Replaced **only one O32 FirstTry prompt and its voluntary Đối chiếu** in current learner R05, not selected a second live R06 source. New `f(x)=1/x, a=2, dx=1/5` explicitly checks whole [2,11/5] is inside domain x≠0, f'(x)=−1/x², hence `dy=f'(2)dx=-1/20=-0.05`, exact `Δy=5/11−1/2=-1/22≈-0.04545`, `|Δy−dy|=1/220≈0.004545`. Independent algebraic recomputation and numeric recomputation agree; both increments negative, approximation not equality. Reveals still voluntary, new `Kiểm lỗi` addresses lost derivative sign, failed domain and false dy=Δy, routes to **Bài50 (quotient + domain)** and **Bài108 (canonical differential)**. `DELTA_C_ACADEMIC_MATERIAL` on precise O32 student first try; author Q18 v3.2.0 permits source-grounded self-verification. The optional **independent NotebookLM packet is still PENDING** and must NOT be called a reviewer PASS; current AUTHORING acceptance derives only from mathematical/PED author proof consistent with latest owner source-quality rule, not from administrative SHA gate. Historic alternative candidate remains NONACTIVE and is not a second learner.
+
+**Bounded source delta direct QA:** full prior learner **byte-identically reconstructed** by deleting exactly 32 new Kiểm lỗi paragraphs, restoring O32 local FirstTry/reveal, deleting one bottom optional selfcheck lookup and restoring 2 non-rendered admin comments. Therefore all **108/108 original Practice stem/key/solution/rubric bytes** identical, 71 original G11 +37 Topic canonical IDs unique, **14 Written rubric blocks** untouched, 32 original public selfcheck prompts unchanged, 4 SVG original paths untouched; 32/32 genuine retry routes, 32/32 true item-ID public answer lookups, **141/141 optional disclosures** balanced (32 Knowledge+108 Practice+1 selfcheck), single SGK citation at Topic end. Top two author comments marked `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW` to keep internal status out of classroom. Original four-point example and all mathematical concepts stay untouched except affected O32 FirstTry; no extra Topic Core.
+
+**Disposition:** `AUTHOR_SELF_VERIFIED` for actual Delta C affected scope and inherited unchanged source math; no independent NotebookLM Academic/PED verdict for this new R05 snapshot, no official readiness, browser/AP/R, RD1/Final Submit/skill Mastery, owner release, GitHub merge or deploy. One original metadata/V2/ready/REGISTER must be SHA-relocked to this exact source and this receipt before handoff.
+
+---
+
 # CĐ09 R05 — AUTHOR_SELF_QA_RECEIPT / 16-11-2026
 
 **AUTHORING ONLY** — Q18_AUTHOR_SELF_VERIFIED theo chuẩn DUY NHẤT `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18 và quyết định OWNER 11/11/2026 trên main. Không phải NotebookLM independent reviewer Academic/PED PASS, không là UAT/trình duyệt/RELEASE.
@@ -9,8 +28,8 @@ STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
-ACADEMIC_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
+SOURCE_BLOB: 5681dd894755165e799b4a20d9741f43115778d9
+ACADEMIC_SOURCE_BLOB: 5681dd894755165e799b4a20d9741f43115778d9
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -30,7 +49,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC09_B31_B33_S1_FULL_KNOWLEDGE_Q18_e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
+AUTHOR_SIGNOFF: TOP09_MASTER974_CURRENT_R05_PED6_AND_O32_TRANSFER_20261121_5681dd894755165e799b4a20d9741f43115778d9
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_READINESS: NOT_CLAIMED
