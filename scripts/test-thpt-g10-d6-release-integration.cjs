@@ -56,13 +56,18 @@ for(let lesson=19;lesson<=25;lesson++){
    assert(/^\s*\?\?\? tip "/.test(tail),"D6 answer must remain default-closed "+id);
    const untilNext=tail.search(/\n\s*(?:<span data-thpt-help-id=|=== ")/);
    const card=untilNext<0?tail:tail.slice(0,untilNext);
-   for(const term of ["Dấu hiệu:","Bản chất toán:","Tự sửa:","Kiến thức cần ôn:"])
-    assert(card.includes(term),"Missing substantive D6 pedagogy "+term+" in "+id);
+   const semantic=lesson<=22?
+    ["Nhận diện lỗi:","Tự chẩn đoán:","Kiến thức gốc:","Tự sửa:","Luyện lại:"]:
+    ["Dấu hiệu:","Bản chất toán:","Tự sửa:","Kiến thức cần ôn:"];
+   for(const term of semantic)
+    assert(card.includes(term),"Missing substantive signed D6 pedagogy "+term+" in "+id);
   }
  }
  helpCount+=ids.length;
- for(const s of ["Dấu hiệu:","Bản chất toán:","Tự sửa:","Kiến thức cần ôn:"]){
-  assert(md.includes(s),"Missing help field "+s+" in "+f);
+ for(const term of lesson<=22?
+  ["Nhận diện lỗi:","Tự chẩn đoán:","Kiến thức gốc:","Tự sửa:","Luyện lại:"]:
+  ["Dấu hiệu:","Bản chất toán:","Tự sửa:","Kiến thức cần ôn:"]){
+  assert(md.includes(term),"Missing current signed help field "+term+" in "+f);
  }
  assert(!/(NotebookLM|Academic PASS|DRAFT — chưa review)/i.test(md),"Internal academic metadata reached learner page: "+f);
  for(const m of md.matchAll(/data-thpt-formative-id="(THPT-G10-B\d{2}-[CP]\d{2})" href="\.\.\/luyen-tap\/\?item=([^"]+)"/g)){
