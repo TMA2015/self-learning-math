@@ -12,7 +12,7 @@
 
     ### 1.1. Công bội là phép nhân cố định qua từng bước
 
-    Một cấp số nhân thỏa \(u_{n+1}=qu_n\) với một số thực \(q\) không đổi. Nếu \(q>1\) và số đầu dương, các giá trị tăng; với \(0<q<1\), chúng giảm về phía \(0\); nếu \(q<0\), dấu có thể **luân phiên**, nên không thể kết luận dãy tăng chỉ vì giá trị tuyệt đối lớn dần. Đặc biệt \(q=0\) vẫn tạo một cấp số nhân: sau số hạng đầu, các số hạng đều \(0\). Không được dùng thương \(u_{n+1}/u_n\) khi số chia bằng \(0\).
+    Một cấp số nhân thỏa \(u_{n+1}=qu_n\) với một số thực \(q\) không đổi. Nếu \(q>1\) và số đầu dương, các giá trị tăng; với \(0<q<1\) **và số đầu dương**, các giá trị giảm dần về phía \(0\), còn khi số đầu âm thì chúng tăng dần về phía \(0\); nếu \(q<0\), dấu có thể **luân phiên**, nên không thể kết luận dãy tăng chỉ vì giá trị tuyệt đối lớn dần. Đặc biệt \(q=0\) vẫn tạo một cấp số nhân: sau số hạng đầu, các số hạng đều \(0\). Không được dùng thương \(u_{n+1}/u_n\) khi số chia bằng \(0\).
 
     **Vận dụng.** Cho \(u_n=4(-3)^{n-1}\), \(n\ge1\). Tìm \(u_1,u_2,u_3,u_4\), công bội \(q\) và cho biết có thể gọi dãy này tăng nghiêm ngặt hay không.
 
@@ -180,7 +180,7 @@
     \[
       S_n=
       \begin{cases}
-         \dfrac{u_1(1-q^n)}{1-q},&q\ne1,\\[4pt]
+         \dfrac{u_1(1-q^n)}{1-q},&q\ne1,\\
          nu_1,&q=1,
       \end{cases}\qquad n\in\mathbb N^*.
     \]
