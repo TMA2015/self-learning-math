@@ -1,60 +1,218 @@
 # Bài 11. Hai đường thẳng song song
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IV · SGK KNTT</p><p class="thpt-r4-lead">Vì sao cần học → kiến thức/điều kiện → ví dụ → Tự thử trước Core → hình đọc đúng → luyện tập và khắc phục. Tự kiểm tra tự đối chiếu không ghi Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../luyen-tap/">Core & Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IV</p>
+<p class="thpt-r4-lead">Trong không gian, không cắt nhau chưa đủ để song song: kiểm đồng phẳng, nhận ra đường chéo nhau và dùng đúng dấu hiệu đường trung bình, cùng phương.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-## Vì sao cần học?
+=== "Khám phá kiến thức"
 
-Trong mặt phẳng, hai đường thẳng phân biệt không cắt nhau sẽ song song. Trong không gian, còn khả năng **chéo nhau**. Hai cạnh ở hai mặt khác nhau của một chiếc hộp có thể không cắt và không đồng phẳng. Muốn kết luận song song phải chứng minh cùng mặt phẳng hoặc dùng dấu hiệu hợp lệ; qua đó hiểu vì sao định lý đường trung bình của tam giác chỉ dùng trong mặt của tam giác.
+    Ở Bài 10, một mặt phẳng có thể chứa rất nhiều đường thẳng. Trong **một mặt**, hai đường phân biệt không cắt nhau thì song song. Nhưng ở **không gian**, hai đường có thể nằm trong những mặt khác nhau, không giao nhau mà cũng không song song: đó là **chéo nhau**. Đây là khác biệt cần nắm trước khi áp dụng các kết quả hình học phẳng đã học.
 
-## 1. Bản chất, điều kiện và kiến thức SGK
+    ### 1.1. Tại sao hai đường không cắt vẫn có thể không song song?
 
-<span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
+    Trong tứ diện \(S.ABC\), cạnh \(SB\) nối đỉnh S với B, còn cạnh \(AC\) nằm trên đáy. Chúng không có điểm chung; hơn nữa, nếu có một mặt chứa cả hai đường thì mặt ấy phải chứa bốn đỉnh S,A,B,C, trái giả thiết tứ diện. Vì vậy chúng **chéo nhau**. Một đường nét đứt hay hình chiếu làm chúng trông “gần nhau” không thay thế lập luận đồng phẳng.
 
-Hai đường thẳng trong không gian có thể **trùng, cắt nhau, song song (phân biệt và cùng nằm một mặt phẳng), chéo nhau (không đồng phẳng)**. Không giao nhau **chưa đủ** để nói song song: hai đường chéo nhau cũng không cắt. Nếu $a\parallel b$ và $b\parallel c$ (từng cặp là đường thẳng phân biệt), $a,c$ có cùng phương; nếu $a\ne c$ thì $a\parallel c$, còn nếu $a=c$ là trùng nhau. Không gọi hai đường thẳng trùng nhau là song song khi định nghĩa cần phân biệt.
+    **Vận dụng.** Trong tứ diện \(S.ABC\), hai đường \(SC\) và \(AB\) có song song không? Nêu **hai lý do** để phân loại.
 
-Qua điểm $M$ ngoài đường $a$ có duy nhất một đường qua $M$ song song với $a$. Nếu $M,N$ lần lượt là trung điểm của hai cạnh $SA,SB$ của tam giác $SAB$ thì $MN\parallel AB$ (định lý đường trung bình trong **mặt phẳng** $(SAB)$). Trong một hình bình hành $ABCD$, $AB\parallel CD$ và $AD\parallel BC$.
+    <span data-ped-first-try="1" data-outcome-id="G11-B11-RELATIVE" data-thpt-first-try-id="THPT-G11-B11-TRY01" hidden></span>
 
-**Giao tuyến cùng phương.** Nếu hai mặt phẳng phân biệt $(P),(Q)$ cắt theo $d$, đồng thời mỗi mặt phẳng chứa một đường thẳng song song với cùng hướng $a$ và hai đường đó khác $d$, thì giao tuyến $d$ có hướng song song $a$. Không suy giao tuyến chỉ từ một đường không kiểm tra mặt phẳng.
+    ??? question "Đối chiếu"
 
-## 2. Ví dụ có giải thích
+        **Lời giải:** \(SC\) và \(AB\) không có đỉnh chung nên không cắt. Nếu chúng cùng thuộc một mặt phẳng, mặt đó chứa S,C,A,B, nghĩa là cả bốn đỉnh tứ diện đồng phẳng, vô lý. Vậy hai đường **không đồng phẳng**, nên **chéo nhau**, không phải song song.
 
-**EX-G11-B11-EX01: Song song và chéo nhau.** Trong tứ diện $S.ABC$, hai đường $SA$ và $BC$ là **chéo nhau**: nếu đồng phẳng, mặt đó chứa $S,A,B,C$, trái tứ diện; do đó dù không cắt cũng không được gọi là song song.
+    <span data-thpt-help-id="HELP-G11-B11-TRY01" hidden></span>
 
-**EX-G11-B11-EX02: Định lý trung bình tam giác.** Trong hình chóp $S.ABC$, $M,N$ là trung điểm $SA,SB$ thì $MN\parallel AB$ vì cùng thuộc mặt $(SAB)$ và là đường trung bình tam giác $SAB$.
+    ??? tip "Kiểm lỗi"
 
-**EX-G11-B11-EX03: Hình bình hành không gian.** Trong hình chóp $S.ABCD$ với đáy $ABCD$ hình bình hành, $AB\parallel CD$. Tuy nhiên $SA$ và $CD$ nhìn trên hình có thể không cắt, nhưng hai đường đó **chéo nhau**, không phải song song.
+        **Dấu hiệu:** Em nói “không cắt nên song song” mà chưa kiểm cả hai có cùng mặt không.
 
-**EX-G11-B11-EX04: Cùng phương, cần phân biệt.** Nếu $a\parallel b$ và $c\parallel b$ thì $a,c$ cùng hướng; nếu $a\ne c$ là song song, nếu $a=c$ là trùng nhau. Kết luận “$a\parallel c$” không đúng khi $a=c$ theo định nghĩa đường song song phân biệt.
+        **Tự sửa:** Trong không gian, tách hai câu hỏi **cắt?**, **đồng phẳng?**. Ôn mục 2.1 rồi luyện Core B11-C01, Practice B11-P01 ở [Bài 11 – Luyện tập](../luyen-tap/).
 
-### Lý do chọn phương pháp và giới hạn
+    ### 1.2. Dùng đường trung bình phải chỉ ra tam giác chứa nó
 
-- `EX-G11-B11-EX01`: Không cắt nhưng không đồng phẳng dẫn đến chéo; kiểm rõ điều kiện áp dụng trước kết luận.
-- `EX-G11-B11-EX02`: Cần cùng mặt tam giác SAB trước khi áp dụng đường trung bình; kiểm rõ điều kiện áp dụng trước kết luận.
-- `EX-G11-B11-EX03`: Nhìn hình không đủ để kết luận song song; kiểm đồng phẳng; kiểm rõ điều kiện áp dụng trước kết luận.
-- `EX-G11-B11-EX04`: Kiểm trường hợp hai đường trùng nhau trước khi gọi song song; kiểm rõ điều kiện áp dụng trước kết luận.
+    Nếu \(M,N\) là trung điểm của \(SA,SB\), chúng thuộc cùng tam giác \(SAB\), nên \(MN\parallel AB\) theo định lý đường trung bình. Kết luận ấy có giá trị trong không gian **vì** ta áp dụng một định lý phẳng ở **đúng mặt phẳng** của tam giác. Không thể nhìn hai đoạn “cùng chiều” rồi bỏ qua giả thiết trung điểm.
 
-## 3. Tự thử trước Core (không chấm điểm)
+    **Vận dụng.** Trong tứ diện \(S.ABC\), \(M,N\) là trung điểm của \(SA,SC\). Chứng minh \(MN\parallel AC\) và nêu mặt phẳng dùng để chứng minh.
 
-Hai đường SA và BC trong tứ diện S.ABC có cắt nhau không? Có đồng phẳng không?
+    <span data-ped-first-try="2" data-outcome-id="G11-B11-PARALLEL_PROOF" data-thpt-first-try-id="THPT-G11-B11-TRY02" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở đối chiếu</summary>
+    ??? question "Đối chiếu"
 
-Không cắt, không đồng phẳng nên chéo nhau, không song song. Trở về D1 B11 và THPT-G11-CHIV-B11-C01.
+        **Lời giải:** M,N lần lượt là trung điểm của hai cạnh \(SA,SC\) trong tam giác \(SAC\). Vì vậy \(MN\) là đường trung bình tam giác \(SAC\), suy ra \(MN\parallel AC\). Cả hai đường thuộc mặt \((SAC)\), và chúng phân biệt.
 
-</details>
+    <span data-thpt-help-id="HELP-G11-B11-TRY02" hidden></span>
 
-## 4. Hình minh họa và cách đọc
+    ??? tip "Kiểm lỗi"
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/FIG-G11-B11-01_R01.svg" loading="lazy" alt="Lăng trụ tam giác ABC.A phẩy B phẩy C phẩy. AB song song A phẩy B phẩy; AA phẩy và BC chéo nhau dù hình biểu diễn có thể gây nhầm."/><figcaption>Lăng trụ tam giác ABC.A phẩy B phẩy C phẩy. AB song song A phẩy B phẩy; AA phẩy và BC chéo nhau dù hình biểu diễn có thể gây nhầm.</figcaption></figure>
+        **Dấu hiệu:** Em dùng ngay “trung điểm” mà không nêu tam giác hoặc suy \(MN\parallel BC\) sai cặp cạnh.
 
-kiểm vị trí các cạnh để phân biệt hai đường cùng mặt song song và hai đường chéo nhau khác mặt; không dựa riêng vào hình phối cảnh.
+        **Tự sửa:** Viết rõ tam giác \(SAC\), chọn cạnh thứ ba **AC**. Ôn mục 2.2; luyện Practice B11-P02 ở [Core và Luyện tập](../luyen-tap/).
 
-## 5. Tự khắc phục lỗi thường gặp
+    ### 1.3. Tính chất cùng phương cần kiểm hai đường phân biệt
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B11-01"><summary>Coi hai đường không cắt là song song.</summary><ol><li><strong>Nhận diện:</strong> Coi hai đường không cắt là song song.</li><li><strong>Nhắc đúng điều kiện:</strong> kiểm tra giả thiết về quan hệ đường–mặt và điểm đang xét.</li><li><strong>Sửa sai:</strong> Muốn song song phải kiểm tra đồng phẳng và phân biệt.</li><li><strong>Tự thử:</strong> Hai cạnh đối SA và BC trong tứ diện: có đồng phẳng không? <strong>Tự đối chiếu:</strong> Không; đó là hai cạnh chéo nhau.</li><li><strong>Quay lại câu gốc:</strong> giải lại <code>THPT-G11-CHIV-B11-C01</code> và tự nêu lí do mỗi giả thiết cần thiết.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIV-B11-C01">Quay lại THPT-G11-CHIV-B11-C01 để tự làm</a></p></details>
+    Hai đường phân biệt cùng song song một đường thứ ba có cùng hướng và do đó song song nhau. Nếu thật ra chúng **trùng nhau**, không gọi là hai đường thẳng song song theo định nghĩa “phân biệt, đồng phẳng, không giao”. Vì vậy khi dùng tính chất bắc cầu trong bài chứng minh, phải kiểm trường hợp trùng trước.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B11-02"><summary>Quên xác định mặt phẳng chứa hai đường.</summary><ol><li><strong>Nhận diện:</strong> Quên xác định mặt phẳng chứa hai đường.</li><li><strong>Nhắc đúng điều kiện:</strong> kiểm tra giả thiết về quan hệ đường–mặt và điểm đang xét.</li><li><strong>Sửa sai:</strong> Dùng tam giác chung hoặc đáy hình bình hành.</li><li><strong>Tự thử:</strong> M,N trung điểm SA,SB: đường MN thuộc mặt nào trước khi kết luận song song? <strong>Tự đối chiếu:</strong> Cùng mặt (SAB); dùng đường trung bình tam giác SAB.</li><li><strong>Quay lại câu gốc:</strong> giải lại <code>THPT-G11-CHIV-B11-P02</code> và tự nêu lí do mỗi giả thiết cần thiết.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIV-B11-P02">Quay lại THPT-G11-CHIV-B11-P02 để tự làm</a></p></details>
+    **Vận dụng.** Cho \(a\parallel b\), đường \(c\) cũng song song \(b\). Nếu đề nói thêm \(a\ne c\), kết luận quan hệ \(a,c\) là gì? Nếu bỏ điều kiện \(a\ne c\), còn khả năng nào?
 
-## 6. Tiếp tục
+    <span data-ped-first-try="3" data-outcome-id="G11-B11-PARALLEL_PROOF" data-thpt-first-try-id="THPT-G11-B11-TRY03" hidden></span>
 
-[Core và Luyện tập Bài 11](luyen-tap.md) · [Tự luận Chương IV](../../../thu-vien/tu-luan-g11-chuong-iv.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Hai đường \(a,c\) cùng phương vì đều song song b. Nếu \(a\ne c\), chúng **song song**. Nếu không biết \(a\ne c\), có thể \(a=c\) (trùng nhau) hoặc \(a\parallel c\). Việc đường nằm trong các mặt phẳng khác nhau không tự biến hai đường cùng phương phân biệt thành chéo nhau: chúng vẫn xác định một mặt phẳng.
+
+    <span data-thpt-help-id="HELP-G11-B11-TRY03" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Em ghi \(a\parallel c\) dù có thể \(a=c\).
+
+        **Tự sửa:** Ôn mục 2.2; luôn thêm câu “nếu hai đường phân biệt”. Thử Practice B11-P04 tại [Bài 11 – Luyện tập](../luyen-tap/).
+
+    ### 1.4. Giao tuyến có thể cùng phương với hai đường song song
+
+    Trong hình chóp \(S.ABCD\) với đáy \(ABCD\) là hình bình hành, \(AB\parallel CD\). Hai mặt \((SAB)\) và \((SCD)\) cùng qua S. Vì mỗi mặt chứa một đường có cùng phương AB,CD, đường qua S song song AB được dựng trong mỗi mặt và phải là **một đường duy nhất**. Đường ấy chính là giao tuyến hai mặt phẳng; không phải AB hay CD, vì AB thuộc đáy còn CD thuộc đáy khác mặt bên.
+
+    **Vận dụng.** Hình chóp \(S.ABCD\) có đáy hình bình hành. Gọi \(d=(SAB)\cap(SCD)\). Chứng minh \(d\parallel AB\) và \(d\parallel CD\), nêu lý do hai mặt phân biệt.
+
+    <span data-ped-first-try="4" data-outcome-id="G11-B11-INTERSECT_PLANES" data-thpt-first-try-id="THPT-G11-B11-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** \((SAB)\) và \((SCD)\) đều qua S, và phân biệt vì giao với đáy \((ABCD)\) lần lượt theo hai đường **phân biệt song song** AB,CD. Trong mặt \((SAB)\) có duy nhất đường qua S song song AB; trong mặt \((SCD)\) có duy nhất đường qua S song song CD. Do AB∥CD, hai đường qua S cùng hướng là **một đường**, nằm trong cả hai mặt, tức giao tuyến d. Vì d qua S ngoài đáy nên khác AB và CD; suy ra \(d\parallel AB\parallel CD\).
+
+    <span data-thpt-help-id="HELP-G11-B11-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Em cho rằng hai mặt giao theo AB dù AB không thuộc mặt \((SCD)\).
+
+        **Tự sửa:** Chỉ rõ S là điểm chung, rồi xây dựng **đường qua S cùng phương** hai cạnh. Ôn mục 2.3, luyện bài giao tuyến liên quan cạnh song song trong [Core và Luyện tập Chương IV](../luyen-tap/).
+
+    ### 1.5. Đọc hình lăng trụ: song song khác chéo
+
+    Trong một lăng trụ \(ABC.A'B'C'\), hai mặt đáy song song và những cạnh tương ứng có cùng phương; chẳng hạn \(AB\parallel A'B'\). Nhưng \(AA'\) và \(BC\) có thể **chéo nhau**. Không được lấy sự giao nhau của nét vẽ 2D làm chứng cứ hai đường trong 3D cắt thật.
+
+    **Vận dụng.** Trong lăng trụ tam giác \(ABC.A'B'C'\) không suy biến, phân loại \(AB\) với \(A'B'\), và \(AA'\) với \(BC\).
+
+    <span data-ped-first-try="5" data-outcome-id="G11-B11-COPLANAR" data-thpt-first-try-id="THPT-G11-B11-TRY05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Hai cạnh \(AB\) và \(A'B'\) cùng nằm trên mặt bên \(ABB'A'\), phân biệt, không cắt và cùng phương, nên song song. Hai cạnh \(AA'\) và \(BC\) không cắt; nếu đồng phẳng thì mặt chứa \(BC\) và A sẽ là đáy \((ABC)\) nhưng \(A'\) nằm ngoài đáy, vô lý. Vì vậy chúng chéo nhau.
+
+    <span data-thpt-help-id="HELP-G11-B11-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Em nói \(AA'\) với \(BC\) song song chỉ vì không giao trên hình.
+
+        **Tự sửa:** Xác định mặt phẳng chứa từng cặp: \(AB,A'B'\) có chung mặt bên, \(AA',BC\) thì không. Ôn mục 2.1 và hình ở mục 2.3; luyện Core B11-C02 tại [Luyện tập Bài 11](../luyen-tap/).
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Các vị trí tương đối của hai đường thẳng trong không gian
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Phân loại:</strong> Hai đường thẳng có thể (1) trùng nhau; (2) cắt nhau tại một điểm; (3) song song nếu **phân biệt, đồng phẳng và không có điểm chung**; hoặc (4) chéo nhau nếu **không đồng phẳng**.</div>
+
+    **Quy trình chọn loại:** Trước tiên xem có đồng phẳng không; nếu đồng phẳng thì xét trùng/cắt/song song, nếu không đồng phẳng thì chéo nhau. Hai đường **không cắt nhau** có thể song song hoặc chéo nhau; không thể kết luận chỉ bằng vẻ ngoài hình vẽ.
+
+    ### 2.2. Tính chất của hai đường thẳng song song
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất:</strong> Qua một điểm M ở ngoài đường thẳng a có **một và chỉ một** đường thẳng đi qua M song song với a. Nếu hai đường phân biệt đều song song một đường thứ ba, chúng song song nhau. Hai đường thẳng phân biệt song song xác định một mặt phẳng duy nhất.</div>
+
+    **Chứng minh bằng tam giác:** Có thể dùng đường trung bình: nếu M,N là trung điểm hai cạnh SA,SB trong mặt \((SAB)\), thì \(MN\parallel AB\). Không cần bất cứ dấu hiệu “nhìn như song song” nào ngoài tính chất phẳng đã biết.
+
+    ### 2.3. Giao tuyến của hai mặt chứa các đường cùng phương
+
+    Khi hai mặt phẳng **phân biệt** cùng chứa một điểm S, và mỗi mặt chứa một đường song song với đường còn lại, giao tuyến (nếu xác định) có thể tìm bằng cách dựng **đường qua S song song với phương chung**. Phải kiểm nó nằm trong cả hai mặt; không nói cứ có một đường trong mỗi mặt là giao tuyến đã song song.
+
+    <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/FIG-G11-B11-01_R01.svg" loading="lazy" alt="Lăng trụ tam giác ABC.A'B'C' biểu diễn các cặp cạnh song song và chéo nhau"><figcaption>Đọc hình: \(AB\parallel A'B'\) vì chúng cùng nằm trên mặt bên \(ABB'A'\). \(AA'\) và \(BC\) không đồng phẳng nên chéo nhau; đừng dùng nét chiếu 2D làm điều kiện đồng phẳng.</figcaption></figure>
+
+    **Hướng làm bài:** Để tìm giao tuyến hai mặt trong hình chóp, tìm điểm chung; nếu có hai cạnh song song tương ứng trong hai mặt thì dựng đường qua điểm chung theo phương ấy, kiểm lại hai mặt phân biệt. Đây là kỹ thuật đã hình thành từ các tính chất SGK, không phải phép đo góc trực tiếp trên hình.
+
+=== "Ví dụ"
+
+    ### 3.1. Hai cạnh đối diện tứ diện không đồng phẳng
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Trong tứ diện \(S.ABC\), xét \(SB\) và \(AC\). Chúng song song hay chéo nhau?</p>
+    <p><strong>Phân tích:</strong> Không cắt là chưa đủ; xét liệu một mặt có chứa cả bốn điểm S,B,A,C không.</p>
+    <p><strong>Lời giải:</strong> Nếu SB và AC đồng phẳng, mặt chung chứa S,B,A,C, trái tứ diện. Hai đường không có đỉnh chung và không đồng phẳng nên chéo nhau.</p>
+    <p><strong>Kiểm lại:</strong> Không có định lý phẳng nào cho phép gọi hai cạnh không chung đỉnh của tứ diện song song.</p></div>
+
+    ### 3.2. Định lý trung bình trong một mặt tam giác
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Với tứ diện \(S.ABC\), M,N lần lượt là trung điểm \(SB,SC\). Chứng minh \(MN\parallel BC\).</p>
+    <p><strong>Phân tích:</strong> M,N cùng thuộc mặt tam giác SBC, nên dùng đúng định lý đường trung bình của tam giác SBC.</p>
+    <p><strong>Lời giải:</strong> M,N là trung điểm của SB,SC nên MN là đường trung bình tam giác SBC; do đó \(MN\parallel BC\). Hai đường này thuộc \((SBC)\) và phân biệt.</p>
+    <p><strong>Kiểm lại:</strong> MN nối hai cạnh từ S và song song cạnh thứ ba BC, không lẫn với AB hay AC.</p></div>
+
+    ### 3.3. Hình chóp đáy hình bình hành
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Hình chóp \(S.ABCD\) có đáy ABCD là hình bình hành. Phân loại \(AD\) với \(BC\) và \(SB\) với \(CD\).</p>
+    <p><strong>Phân tích:</strong> AD,BC thuộc cùng mặt đáy; SB chứa điểm S ngoài đáy và CD là cạnh đáy.</p>
+    <p><strong>Lời giải:</strong> Hai cạnh đối AD và BC của hình bình hành phân biệt song song. SB và CD không cắt (B không thuộc CD), và nếu đồng phẳng thì mặt chứa CD và B là đáy (ABCD), phải chứa S, vô lý. Vì vậy SB với CD **chéo nhau**.</p>
+    <p><strong>Kiểm lại:</strong> Mỗi cặp được phân loại bằng đồng phẳng/không đồng phẳng trước khi xét giao.</p></div>
+
+    ### 3.4. Khi hai đường cùng phương nhưng có thể trùng
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Cho \(a\parallel b\) và \(c\parallel b\). Vì sao cần thêm \(a\ne c\) nếu muốn nói \(a\parallel c\)?</p>
+    <p><strong>Phân tích:</strong> Theo tính chất cùng phương, a và c hoặc cùng một đường hoặc là hai đường khác nhau song song.</p>
+    <p><strong>Lời giải:</strong> Nếu a=c, chúng trùng nhau nên không gọi song song theo định nghĩa hai đường phân biệt. Nếu a khác c, chúng cùng phương, đồng phẳng và không giao nên song song.</p>
+    <p><strong>Kiểm lại:</strong> Thử trường hợp c=a là phản ví dụ cho kết luận “luôn \(a\parallel c\)” không thêm điều kiện.</p></div>
+
+    ### 3.5. Xác định giao tuyến qua một phương song song
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Hình chóp \(S.ABCD\), đáy ABCD hình bình hành. Tìm giao tuyến \((SAD)\cap(SBC)\).</p>
+    <p><strong>Phân tích:</strong> Hai mặt có S chung. Đáy có AD∥BC, nên xây dựng đường qua S có cùng phương hai cạnh.</p>
+    <p><strong>Lời giải:</strong> Trong \((SAD)\) có đường qua S song song AD; trong \((SBC)\) có đường qua S song song BC. Vì AD∥BC, hai đường qua S trùng nhau, cùng thuộc cả hai mặt. Hai mặt phân biệt nên giao tuyến là **đường qua S song song AD và BC**.</p>
+    <p><strong>Kiểm lại:</strong> Đường qua S không nằm đáy, khác AD/BC; việc dùng AB∥CD ở đây sẽ sai cặp mặt.</p></div>
+
+=== "Lỗi thường gặp"
+
+    Nếu sai Vận dụng, mở Kiểm lỗi ngay dưới Đối chiếu. Những lỗi tổng quát thường lặp lại:
+
+    <span data-thpt-help-id="HELP-G11-B11-01" hidden></span>
+
+    ??? tip "4.1. Không cắt nghĩa là song song"
+
+        **Dấu hiệu:** Đường SB và AC trong tứ diện không giao nhau nên em gọi là song song.
+
+        **Vì sao sai:** Hai đường có thể chéo nếu không đồng phẳng.
+
+        **Tự sửa:** Ôn mục 2.1 và Ví dụ 3.1; luyện Core B11-C01, Practice B11-P01 tại [Luyện tập Bài 11](../luyen-tap/).
+
+    <span data-thpt-help-id="HELP-G11-B11-02" hidden></span>
+
+    ??? tip "4.2. Dùng đường trung bình ngoài tam giác"
+
+        **Dấu hiệu:** Em nối hai trung điểm nhưng không chỉ ra hai cạnh thuộc **cùng một tam giác**.
+
+        **Vì sao sai:** Định lý đường trung bình được chứng minh cho một tam giác trong mặt phẳng.
+
+        **Tự sửa:** Đánh dấu tam giác SAB/SBC/SAC phù hợp, dùng đúng cạnh thứ ba; ôn mục 2.2 và luyện Practice B11-P02 tại [Core và Luyện tập](../luyen-tap/).
+
+    <span data-thpt-help-id="HELP-G11-B11-03" hidden></span>
+
+    ??? tip "4.3. Quên phân biệt hai đường cùng phương"
+
+        **Dấu hiệu:** Em viết a∥c dù có thể a=c.
+
+        **Vì sao sai:** Hai đường trùng không phải hai đường song song **phân biệt**.
+
+        **Tự sửa:** Ghi rõ \(a\ne c\), thử phản ví dụ c=a, ôn mục 2.2; luyện Practice B11-P04.
+
+    <span data-thpt-help-id="HELP-G11-B11-04" hidden></span>
+
+    ??? tip "4.4. Chọn sai phương giao tuyến của hai mặt"
+
+        **Dấu hiệu:** Em lấy AB hoặc CD làm giao tuyến của hai mặt bên đi qua S.
+
+        **Vì sao sai:** Giao tuyến phải thuộc cả hai mặt và chứa S; còn AB/CD nằm trên đáy.
+
+        **Tự sửa:** Qua S dựng đường cùng phương những cạnh đáy **thuộc từng mặt cần giao**; ôn mục 2.3 và Ví dụ 3.5.
+
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương IV](../../../../thu-vien/tu-luan-g11-chuong-iv/).
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 11 (trang in 78–83).</p>
