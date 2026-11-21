@@ -500,8 +500,22 @@ for(const [lesson,row] of rows){
    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"))),
    g("B11_CANONICAL_CURRENT_BLOB"),"B11 current one canonical Section A SHA mismatch");
  }
- assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
- assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
+ // 20/11 owner-signed local HELP placement supersedes the earlier
+ // ChIV source. Verify both bytes of the historical chain; do not relabel
+ // DELTA_C math repairs as UI-only or silently replace legacy receipts.
+ const placement=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+ assert(placement.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+  placement.includes("G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120"),
+  lesson+" signed material delta classification and receipt required");
+ const sourceRows=placement.split("\n").filter(x=>x.startsWith("| "+lesson+" | "));
+ assert.equal(sourceRows.length,1,lesson+" exactly one final HELP-placement source row");
+ const blobs=[...sourceRows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(blobs.length,2,lesson+" source predecessor and successor both signed");
+ assert.equal(blobs[0],expected,lesson+" historical Rxx learner source must remain immutable");
+ expected=blobs[1];
+ assert.equal(blob(source),expected,lesson+" exact current Q18 learner source");
+ assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 router selects latest immutable source");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id"])
   assert.deepEqual(ids(source,key),ids(previous,key),lesson+" canonical/outcome IDs changed");
  if(lesson==="B10"){
