@@ -10,7 +10,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
 CURRENT_DELTA: DELTA_C_ACADEMIC_MATERIAL_TARGETED_T01_T02_T09 (3 originally pre-exposed numbers changed to 9/15/12, with per-item CONTENT_VERSION); DELTA_C_PED_TARGETED_KIEM_LOI_14_REAL_28_RETRIES; DELTA_A_EDITORIAL_42_UNIQUE_PRACTICE_LABELS_7_SAME_ID_SELF_CHECK_NAVIGATOR
-BLOCKERS: NONE_IN_TARGETED_AUTHORING_SOURCE
+BLOCKERS: NONE
 
 One learner `Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md` existing path and single latest current source Git blob `2faa5d797eb16020d21673c572c443f1cb7acb41`, previous R11 learner `2809816539e438726858daf18d7efb1d751ea7f7` remains immutable historical. S1 core original G10 KNTT Tập Hai ChVIII B23–B25 printed pp60–65/66–71/72–75 source-scoped inherited direct owner-scan receipt `850dd241e60de58ccf032e48e1e13530988436e3`. 14 full Knowledge outcomes, 15 worked Ví dụ, 14 Vận dụng→opt-in Đối chiếu→specific Kiểm lỗi and 28 math-matched real Practice Bài; 42 continuous Bài luyện 1–42, 25 original shared SGK exact math projections from unchanged JS owner `2ae62fada28913ec336b3507684408a1e05a3232`, 14 original Topic Practice plus 3 original Topic Written rubric /4 maths unchanged. Exactly 56 canonical public IDs, 7 question-only public same-ID placements with optional final locator 7/12/20/22/27/30/40; one effective 56-row and 7-replay source-exact line Q15 mapping `a7b15e559626c6d1f3b6b62c10b1662d0209ddbd`. All four original SVG source/paths + original optional counting HTML model unchanged; 57/57 opt-in disclosure balance, one last SGK credit.
 
