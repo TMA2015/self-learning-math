@@ -9,7 +9,9 @@ function signedChviBlob(name){
  if(!next)return original?.candidate;
  assert(original,name+" UX delta without signed original S1 receipt");
  assert.equal(next.baseline,original.candidate,name+" published → Golden UX delta identity chain");
- return name==="B15"?candidateG10KnowledgeBlob(15):next.candidate;
+ // Historical ChVI UX receipt remains pinned; current B15–B18 follows
+ // owner-signed 20/21 Nov Q18 First Try/HELP placement and source footer.
+ return candidateG10KnowledgeBlob(Number(name.slice(1)));
 }
 const {chromium}=require("playwright");
 // Run the same no-duplicate / assessment-exposure contract on every THPT QA run.
