@@ -1,3 +1,18 @@
+<!-- TOP01_MASTER974_BANK_SELFCHECK_GAP_CLOSURE_20261121 -->
+## CĐ01 — Bổ sung kiểm sâu 24 canonical và đường Đối chiếu 11 câu Tự kiểm tra (21/11/2026)
+
+**Nguồn learner duy nhất hiện hành:** `prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md`, Git blob `9271a9784e343ea87981a67dae7dabcf69e4c0ed` (trước sửa `53e0cc45a3b101c80c83b4412db0195e9f226c47`). **Giữ 1 Q18 receipt trên đúng tệp này; không tạo nghiệm thu NotebookLM độc lập.**
+
+**Nguồn canonical đối chiếu trực tiếp:** SGK bank 18 item original `THPT_G10_CHI_B01_B02_D1D6_AUTHORING_R01_SNAPSHOT.md` blob `95a554e31a613b8e215679fe6790738473d598df`; Topic extension bank 6 item `Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md` blob `89ae1cd2338f2c5c48b9af874a8b52b1306c8acd`. **18/18 gốc + 6/6 mở rộng có đúng đề bài, lời giải gốc và không nhân bản item ID; 2/2 Written rubric được giữ.** Các câu tự kiểm tra công khai tái sử dụng item (không độc lập, không Mastery).
+
+**Hai lỗi hiện hành đã sửa (#977 TOP22-20261121-004 / -005):** (a) Bài 1 bổ sung kết luận tường minh *mệnh đề đúng / mệnh đề chứa biến*; Bài 12 tường minh *cả hai đúng*; Bài 18 biểu diễn phần bù `U\\A={1,3,5}` bằng MathJax. Chúng là **kết luận tương đương với answer canonical gốc**, không đổi bài toán, điều kiện hay rubric (`DELTA_B_SOURCE_EQUIVALENT`). (b) Một disclosure `<summary>Đối chiếu</summary>` **sau 11 câu công khai** chỉ dẫn sang các lời giải thật ở Luyện tập theo map `1→1, 2→3, 3→5, 4→8, 5→10, 6→12, 7→14, 8→16, 9→18, 10→20, 11→22`, không nhân bản lời giải (`DELTA_C_PED_TARGETED`, ảnh hưởng Q08/Q17/PED6). Thực hiện tự kiểm trước rồi tự mở; không tự chấm chính thức, không Final Submit/Mastery.
+
+**Tự QA thực tế trong lượt sửa:** đọc lại 11 Knowledge outcomes, từng Vận dụng/Đối chiếu/Kiểm lỗi, 24 Practice stems và solutions, 11 public selfcheck questions; giải ngược các miền logic, tập hợp, khoảng, bảng số lượng và trường hợp biên; 3 kết luận kiểm với original item answer; 11 mapping item_id thực tế khớp Luyện tập đã có; 36/36 disclosure cân bằng (11 Knowledge + 24 Practice + 1 selfcheck), chỉ **một dòng nguồn SGK ở cuối toàn Chuyên đề**, không lộ code metadata. Diff ngược xác nhận source mới chỉ có **3 bổ sung kết luận + 1 disclosure học sinh**, nội dung Kiến thức byte-identical, stem/rubric/math bank giữ nguyên.
+
+**Thẩm quyền chứng cứ:** S1 G10 T1 B01 pp5–11, B02 pp12–19 kế thừa original primary scan receipt `6d3a7195672b35c569f7829451b5f3e4703423cb`; không mới đọc sách PDF, không giả reviewer PASS. `P0=0, P1=0` **trong phạm vi thay đổi này** theo author self-QA; đây không phải verdict hoàn thành 22 Topic/RELEASE.
+
+---
+
 <!-- TOP01_MASTER974_TARGETED_Q18_DELTA_A_PLUS_C_20261121 -->
 ## AUTHORING #974 — targeted self-QA for latest CĐ01 canonical learner, 21/11/2026
 
@@ -18,7 +33,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 PACKET_ID: THPT-TOPIC01-LOGIC-SETS-FULL-R01
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
-CURRENT_SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
+CURRENT_SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
 PREVIOUS_SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
 AUTHOR_ACTUAL_MATH_REVIEW: 24/24 student-visible canonical questions read, keys restored 10/10 byte-exact original
 ORIGINAL_BANK_G10: 95a554e31a613b8e215679fe6790738473d598df
@@ -44,8 +59,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
-ACADEMIC_SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
+SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
+ACADEMIC_SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R06_STUDENT_FIRST_24_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: d4eafd811066997ee64de70a49c5da4a7ff26dcd
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -55,12 +70,12 @@ AUTHOR_QA_H2_H3_SEQ: PASS
 AUTHOR_QA_OUTCOMES: 11/11
 AUTHOR_QA_CANONICAL: 24/24 EXACT_ITEM_ID_STEM_KEY_SOLUTION_RUBRIC_D6
 AUTHOR_QA_SELFCHECK: 11/11 QUESTION_ONLY_PRESERVED
-AUTHOR_QA_REVEAL_CONTENT: BYTE_EXACT_OLD_NEW
+AUTHOR_QA_REVEAL_CONTENT: 36_VALID_DISCLOSURES_11_KNOWLEDGE_24_PRACTICE_1_PUBLIC_SELFCHECK_MAP
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOP01_20261121_TARGETED_D6_LABEL_SELF_VERIFIED_53e0cc45a3b101c80c83b4412db0195e9f226c47
+AUTHOR_SIGNOFF: TOP01_20261121_SELFQA_24_CANONICAL_11_SELFCHK_NAV_9271a9784e343ea87981a67dae7dabcf69e4c0ed
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
