@@ -6,6 +6,78 @@
  */
 const fs=require("node:fs"),path=require("node:path"),assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
+
+// Owner's ONE anti-repeat ledger (#795); this is its Q18 source-lock delta,
+// not a second checklist. Historic signed snapshots remain immutable.
+const antiRepeatReceipt="prototypes/thpt/ux795/G10_B19_B26_ONE_SOURCE_AND_SEMANTIC_BOX_Q18_DELTA_20261121.md";
+const oldGenericFootnote='<p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>';
+const gitBlobAntiRepeat=bytes=>{
+ const b=Buffer.isBuffer(bytes)?bytes:Buffer.from(bytes);
+ return require("node:crypto").createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");
+};
+function g10PublicKnowledgePath(n) {
+ const chapter=n<=2?"i":n<=4?"ii":n<=6?"iii":n<=11?"iv":n<=14?"v":n<=18?"vi":n<=22?"vii":n<=25?"viii":"ix";
+ return "docs/thpt-preview/sgk/chuong-"+chapter+"/bai-"+n+".md";
+}
+function g10OneSourceCitation(n,content){
+ const footers=[...content.matchAll(/<p class="thpt-r4-footnote">([^\n]*)<\/p>/g)];
+ assert.equal(footers.length,1,"B"+n+" must have ONE final source footer");
+ assert(footers[0][1].includes("SGK"),"B"+n+" source citation must identify SGK");
+ assert(!/<small>\s*(?:Nguồn|Đối chiếu SGK)/.test(content),
+  "B"+n+" must not carry a second small-font source note");
+ return footers[0];
+}
+function ownerAntiRepeatCandidate(name,immutableCurrent){
+ const n=Number(String(name).replace(/^B/,""));
+ if(n<19||n>26)return immutableCurrent;
+ const receiptFile=path.join(root,antiRepeatReceipt);
+ if(!fs.existsSync(receiptFile))return immutableCurrent;
+ const r=fs.readFileSync(receiptFile,"utf8");
+ assert(r.includes("G10-B19-B26-ONE-SOURCE-SEMANTIC-Q18-20261121")&&
+  r.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&r.includes("SINGLE_ANTI_REPEAT_LEDGER"),
+  "B19–B26 receipt must link to the one existing #795 ledger");
+ const rows=r.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(rows.length,1,"Exactly one B"+n+" source transition row");
+ const tick=String.fromCharCode(96),pattern=new RegExp(tick+"([a-f0-9]{40})"+tick,"g");
+ const shas=[...rows[0].matchAll(pattern)].map(x=>x[1]);
+ assert.equal(shas.length,2,"B"+n+" source row must carry old/new SHA");
+ assert.equal(shas[0],immutableCurrent,"B"+n+" successor must extend historical Q18 receipt");
+ assert.notEqual(shas[0],shas[1],"B"+n+" source must actually change");
+ assert(rows[0].includes(n===26?"DELTA_C_ACADEMIC_MATERIAL":"DELTA_A_UI_METADATA"),
+  "B"+n+" correction class must match receipt");
+ const content=fs.readFileSync(path.join(root,g10PublicKnowledgePath(n)),"utf8");
+ assert.equal(gitBlobAntiRepeat(content),shas[1],
+  "B"+n+" corrected source must match signed exact Git blob");
+ const match=g10OneSourceCitation(n,content);
+ if(n<=25){
+  // Prove that ONLY duplicated source footer changed; not one math/ID byte.
+  const reconstructed=content.replace(match[0],
+   oldGenericFootnote+"\n\n<small>"+match[1]+(n<=21?" ":"")+"</small>");
+  assert.equal(gitBlobAntiRepeat(reconstructed),shas[0],
+   "B"+n+" DELTA_A must ONLY deduplicate its source note");
+ }else{
+  const tab=content.split('=== "Kiến thức SGK"')[1]?.split('=== "Ví dụ"')[0];
+  assert(tab,"B26 missing canonical SGK knowledge tab");
+  const concept=(tab.match(/<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length;
+  const rules=(tab.match(/<div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length;
+  assert.equal(concept,3,"B26 event/complement/classical definitions must be 3 concept cards");
+  assert.equal(rules,2,"B26 probability properties and small-probability principle must be 2 rule cards");
+  for(const token of ["Định nghĩa — Biến cố.","Định nghĩa — Biến cố đối.",
+   "Định nghĩa cổ điển của xác suất.","Tính chất cơ bản của xác suất",
+   "Nguyên lí xác suất bé (SGK).","**Vận dụng — Ước lượng số trẻ mới sinh",
+   "2.1. Biến cố (SGK mục 1, tr. 77–79)",
+   "2.2. Định nghĩa cổ điển của xác suất (SGK mục 2, tr. 79–81)"])
+   assert(tab.includes(token),"B26 SGK semantic content missing: "+token);
+  assert(!tab.includes('<strong>Vận dụng ý nghĩa thực tế.</strong>')&&
+   !content.includes("Mỗi ví dụ có **Đề bài")&&
+   !content.includes("**Phạm vi bài:**"),
+   "B26 must not box numeric applications or narrate visible lesson structure");
+  assert.equal((content.match(/class="thpt-g10-example-solution"/g)||[]).length,6,
+   "B26 must retain six solved examples");
+ }
+ return shas[1];
+}
+
 const ledger="prototypes/thpt/ux795/UX795_G10_KNOWLEDGE_RELEASE_SOURCE_INTAKE_R01_20261110.md";
 const editorReceipt="prototypes/thpt/ux795/G10_CHIV_B07_B11_SGK_S1_Q18_EDITORIAL_RECEIPT_20261112.md";
 function chivEditorialReceiptRows(){
@@ -243,7 +315,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
   }
   const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-23.md"));
   const gitBlob=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
-  assert.equal(gitBlob,current,"B23 canonical source must match immutable R01→R04 chain exact Git SHA");
+  assert.equal(gitBlob,ownerAntiRepeatCandidate(name,current),"B23 canonical source must match signed Q18 successor");
 
   // B23 owner P2 regression source checks apply only when a signed R02 exists.
   // The actual computed-style and click-to-open behavior were independently
@@ -1213,7 +1285,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    }
    const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-24.md"));
    const actual=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
-   assert.equal(actual,current,"B24 R01→R02 source SHA chain mismatch");
+   assert.equal(actual,ownerAntiRepeatCandidate(name,current),"B24 source must match immutable chain + signed footer delta");
    const t=lesson.toString("utf8");
    assert(t.includes("2.5. Sử dụng máy tính cầm tay")&&t.includes("nPr")&&t.includes("nCr")&&
     !t.includes("0le kle n")&&[...t.matchAll(/^=== "([^"]+)"$/gm)].length===4,
@@ -1261,7 +1333,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    }
    const full=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-25.md"));
    const actual=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+full.length+"\0")).update(full).digest("hex");
-   assert.equal(actual,current,"B25 source Git SHA must match R01→R02 receipt chain");
+   assert.equal(actual,ownerAntiRepeatCandidate(name,current),"B25 source must match immutable chain + signed footer delta");
    const s=full.toString("utf8");
    assert(s.includes("G10_B25_NEWTON_BRANCH_TREE_R01.svg")&&
      s.includes("G10_B25_PASCAL_TRIANGLE_R02.svg")&&
@@ -1300,7 +1372,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
   const gitBlob=buf=>require("node:crypto").createHash("sha1")
     .update(Buffer.from("blob "+buf.length+"\0")).update(buf).digest("hex");
   const full=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-ix/bai-26.md"));
-  assert.equal(gitBlob(full),current,"B26 canonical source must match signed exact Git blob");
+  assert.equal(gitBlob(full),ownerAntiRepeatCandidate(name,current),"B26 canonical source must match signed semantic successor");
   const t=full.toString("utf8");
   assert.deepEqual([...t.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
    ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
@@ -1328,6 +1400,8 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
 function expectedG10KnowledgeBlob(lesson,legacy){
  const current=expectedG10KnowledgeBlobHistorical(lesson,legacy);
  const n=Number(String(lesson).replace(/^B/,""));
+ if(n>=1&&n<=26)g10OneSourceCitation(n,fs.readFileSync(path.join(root,g10PublicKnowledgePath(n)),"utf8"));
+ if(n>=19&&n<=26)return ownerAntiRepeatCandidate("B"+n,current);
  if(!(n>=7&&n<=14))return current;
  const file=path.join(root,"prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
  if(!fs.existsSync(file))return current;
