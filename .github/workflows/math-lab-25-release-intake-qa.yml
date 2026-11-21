@@ -1,0 +1,49 @@
+name: Math Lab 25 RELEASE intake QA (NO DEPLOY)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/assets/math-lab/models/**'
+      - 'docs/thpt-preview/math-lab/**'
+      - 'docs/assets/stylesheets/math-lab-library-v1.css'
+      - 'docs/assets/javascripts/math-lab-library-v1.js'
+      - 'docs/thpt-preview/home.md'
+      - 'mkdocs.yml'
+      - 'mkdocs.thpt-preview.yml'
+      - 'scripts/math-lab-25-release-manifest.tsv'
+      - 'scripts/test-math-lab-25-release-intake.cjs'
+      - 'scripts/test-math-lab-25-browser.py'
+      - '.github/workflows/math-lab-25-release-intake-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-models:
+    name: 25 exact-source models, builds and Chromium/WebKit browser QA
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Static source, route and UI gates
+        run: |
+          node --check docs/assets/javascripts/math-lab-library-v1.js
+          node --check scripts/test-math-lab-25-release-intake.cjs
+          node scripts/test-math-lab-25-release-intake.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install MkDocs and Playwright
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Full site builds (NO DEPLOY)
+        run: |
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+      - name: Exact bytes preserved in built site
+        run: node scripts/test-math-lab-25-release-intake.cjs --built
+      - name: Browser, accessibility and frame isolation
+        run: python scripts/test-math-lab-25-browser.py
