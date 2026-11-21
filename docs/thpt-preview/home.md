@@ -80,6 +80,7 @@ hide:
 <a class="thpt-r4-tile" href="../sgk/"><span aria-hidden="true">▣</span><strong>Học theo SGK KNTT</strong><small>Lớp → Chương → Bài · Kiến thức, Core, luyện tập, tự kiểm tra chương</small><em>Mở tổng quan SGK →</em></a>
 <a class="thpt-r4-tile" href="../chuyen-de/"><span aria-hidden="true">x²</span><strong>Học theo chuyên đề</strong><small>Kiến thức · Luyện tập nhiều cấp độ · Tự kiểm tra</small><em>Mở danh mục chuyên đề →</em></a>
 <a class="thpt-r4-tile" href="../thu-vien/"><span aria-hidden="true">✎</span><strong>Thư viện bài tập</strong><small>Tự luận · Bài mẫu tiêu biểu · Mỏ neo · Bản đồ kỹ năng</small><em>Mở thư viện →</em></a>
+<a class="thpt-r4-tile" href="../math-lab/"><span aria-hidden="true">⚛</span><strong>Math Lab</strong><small>25 mô hình tương tác · Đồ thị, hình học và xác suất</small><em>Khám phá mô hình →</em></a>
 <a class="thpt-r4-tile" href="../tien-do/"><span aria-hidden="true">◴</span><strong>Tiến độ học tập</strong><small>Tiến độ độc lập của THPT; không dùng dữ liệu THCS</small><em>Xem trạng thái bản mẫu →</em></a>
 <a class="thpt-r4-tile" href="../huong-dan/"><span aria-hidden="true">?</span><strong>Hướng dẫn</strong><small>Phân biệt Core, Practice, Readiness và tự luận</small><em>Mở hướng dẫn →</em></a>
 </div>

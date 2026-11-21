@@ -1,0 +1,120 @@
+<!doctype html>
+<!-- MODEL_ID: SLM-TOP20-PROB-EVENTS-R00; DEV_BASE: Temp_I798_FINAL_12_VENN_PROBABILITY.html; SOURCE_SCOPE: AUTHORING_STANDALONE; QUALITY: ORIGINAL_CHROMIUM_SELF_QA_ONLY; NO_MASTERY -->
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light">
+<title>Sơ đồ Venn và xác suất | G Learning</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:#f4f9f8;color:#203d49;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;padding:17px 12px 36px}main{max-width:1130px;margin:auto}
+.hero,.panel{background:white;border:1px solid #cfdfdf;border-radius:18px;box-shadow:0 3px 15px #1d49500b}
+.hero{padding:22px 24px;margin-bottom:15px}.kicker{font-size:.77rem;color:#246e63;letter-spacing:.11em;font-weight:800;margin:0 0 9px;text-transform:uppercase}
+h1{font-size:clamp(1.45rem,3.1vw,2rem);margin:0 0 9px;line-height:1.28}h2{font-size:1.12rem;margin:0;padding:14px 18px;background:#eaf6f8;border-radius:18px 18px 0 0}
+.hero p{color:#486371;line-height:1.6;margin:0}.question{border-left:4px solid #278366;border-radius:11px;background:#e9f7f0;margin:15px 0;padding:14px 17px;line-height:1.6}
+.lab{container-type:inline-size}.layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(294px,.9fr);align-items:start;gap:16px;padding:16px}
+.visual,.controls{min-width:0}.visual figure{border:1px solid #c8dae0;border-radius:13px;overflow:hidden;margin:0;background:#fff}
+.visual svg{display:block;width:100%;height:auto;background:linear-gradient(180deg,#f8fcfd,#fff)}figcaption{padding:10px 12px;color:#506774;font-size:.87rem;line-height:1.5;background:#f7fafb}
+.subhead{font-size:.96rem;font-weight:800;color:#28546c;margin:15px 0 6px}.bar{height:36px;display:flex;border:1px solid #97b2b9;border-radius:9px;overflow:hidden;background:#f3f5f7}
+.bar .seg{height:100%;min-width:0;transition:opacity .12s}.bar .seg:nth-child(1){background:#b9ddec}.bar .seg:nth-child(2){background:#c6dfbd}.bar .seg:nth-child(3){background:#f7d2ab}.bar .seg:nth-child(4){background:#e2e6ec}.bar .muted{opacity:.27}
+.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 10px;font-size:.86rem;margin-top:9px}.legend>div{display:flex;align-items:center;gap:7px;min-width:0}.dot{display:inline-block;width:13px;height:13px;border-radius:3px;flex-shrink:0}.d1{background:#a5d5ea}.d2{background:#bad5af}.d3{background:#f3c796}.d4{background:#d3dbe4}
+fieldset{border:1px solid #c7dce3;border-radius:12px;padding:12px 13px;margin:0 0 13px;min-width:0}legend{font-weight:750;padding:0 6px;font-size:.95rem}.inputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+label{display:block;font-weight:650;font-size:.86rem;margin:0 0 5px}input,select,button{font:inherit;color:#203d49}input[type=number],select{display:block;width:100%;min-width:0;min-height:44px;border:1px solid #8cabb8;border-radius:9px;background:#fff;padding:9px}input[aria-invalid="true"]{border:2px solid #ba4f37;background:#fff8f5}
+button{border:1px solid #9db8c0;border-radius:10px;background:#eaf7f3;min-height:44px;padding:8px 11px;font-weight:690;cursor:pointer;line-height:1.25}button:hover{background:#d9eee5}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #1269b3;outline-offset:2px}.buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.muted-note{font-size:.86rem;color:#4d6471;line-height:1.48;margin:10px 0 0}
+.error{min-height:1.1em;color:#a33f30;font-weight:700;font-size:.88rem;margin:7px 0}.output{border-left:4px solid #22816b;background:#e9f6f0;padding:12px 13px;border-radius:11px;line-height:1.6;margin-top:13px;min-height:84px}
+.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:11px 0}.metric{padding:10px;border:1px solid #d2e3e7;border-radius:10px;background:#f8fbfc}.metric strong{display:block;font-size:.82rem;color:#4a6774}.metric output{font-weight:790;font-variant-numeric:tabular-nums;font-size:1.07rem;overflow-wrap:anywhere}
+table{border-collapse:collapse;width:100%;font-size:.86rem;margin-top:11px}th,td{border:1px solid #c9dbe1;padding:8px;text-align:left;vertical-align:top}th{background:#f1f7f8}td{font-variant-numeric:tabular-nums}details{margin:15px 0 0;border:1px solid #d0e1e3;border-radius:12px;background:#fff;padding:11px 14px}summary{cursor:pointer;font-weight:750}details p,details li{font-size:.9rem;line-height:1.55;color:#455e6b}details code{overflow-wrap:anywhere;word-break:break-word;white-space:normal}details ul{padding-left:20px}.foot{font-size:.82rem;color:#58717c;margin:14px 3px 0;line-height:1.55}
+@container (max-width:780px){.layout{grid-template-columns:1fr}.inputs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){body{padding:9px 8px 30px}.hero{padding:16px}.layout{padding:11px;gap:10px}.buttons{grid-template-columns:1fr 1fr}.visual svg{max-height:320px}.legend{font-size:.8rem}.metrics{gap:6px}.metric{padding:8px}.metric output{font-size:.96rem}}
+@media(prefers-reduced-motion:reduce){.bar .seg{transition:none}}
+</style></head><body><main>
+<header class="hero"><div class="kicker">G Learning · Toán 11 · Mô hình tương tác 12</div><h1>Sơ đồ Venn và quy tắc xác suất</h1><p>Chọn ngẫu nhiên <strong>đều</strong> một phần tử trong tập Ω. Thay đổi số phần tử ở bốn miền để khám phá hợp, giao, phần bù và kiểm tra tính độc lập.</p></header>
+<section class="question" aria-label="Dự đoán"><strong>Dự đoán trước khi thử:</strong> Nếu A và B không thể xảy ra cùng lúc, chúng có độc lập không? Thử mẫu “Xung khắc” và mẫu “Độc lập” để tự giải thích.</section>
+<section class="panel lab" id="model12"><h2>Thao tác và quan sát</h2><div class="layout">
+<div class="visual"><figure>
+<svg id="venn" viewBox="0 0 640 350" role="img" aria-labelledby="vennTitle vennDesc"><title id="vennTitle">Sơ đồ Venn hai biến cố A, B</title><desc id="vennDesc">Số phần tử ở bốn miền được trình bày bằng văn bản trong bảng bên dưới.</desc>
+<rect x="21" y="22" width="598" height="309" rx="15" fill="#f5fafc" stroke="#91b4c6" stroke-width="2"/>
+<text x="38" y="54" font-size="26" font-weight="800" fill="#355b6a">Ω</text>
+<circle cx="249" cy="163" r="124" fill="#a5d9e7" fill-opacity=".64" stroke="#217a9b" stroke-width="3.5"/>
+<circle cx="388" cy="163" r="124" fill="#f8d4ab" fill-opacity=".65" stroke="#c97b32" stroke-width="3.5"/>
+<text x="172" y="85" font-size="23" font-weight="800" fill="#175e7b">A</text>
+<text x="461" y="85" font-size="23" font-weight="800" fill="#a05720">B</text>
+<g fill="#203e4a" text-anchor="middle" font-size="22" font-weight="800">
+<text id="vennOnlyA" x="186" y="170">9</text><text id="vennBoth" x="319" y="170">6</text><text id="vennOnlyB" x="448" y="170">11</text><text id="vennNeither" x="561" y="296">14</text></g>
+
+</svg><figcaption><strong>Đọc hình:</strong> miền A ∩ B nằm ở giữa; A ∪ B gồm ba miền trong hai vòng. Diện tích vùng tô <em>không</em> biểu thị xác suất. Thanh tỉ lệ bên dưới mới biểu diễn đúng tỷ trọng.</figcaption></figure>
+<h3 class="subhead">Tỷ trọng thật trong không gian mẫu</h3><div class="bar" id="ratio" role="img" aria-label="Thanh tỉ lệ bốn miền tương ứng với số phần tử"><div class="seg" id="s1"></div><div class="seg" id="s2"></div><div class="seg" id="s3"></div><div class="seg" id="s4"></div></div>
+<div class="legend"><div><i class="dot d1"></i>Chỉ A</div><div><i class="dot d2"></i>Cả A và B</div><div><i class="dot d3"></i>Chỉ B</div><div><i class="dot d4"></i>Ngoài A và B</div></div>
+<p class="muted-note">Thanh chia đúng theo số phần tử. Nếu một miền có 0 phần tử, phần thanh của miền đó biến mất.</p>
+<table id="regionTable"><caption style="text-align:left;padding:13px 0 6px;font-weight:800">Bảng thay thế hình vẽ</caption><thead><tr><th scope="col">Miền</th><th scope="col">Số phần tử</th><th scope="col">Xác suất</th></tr></thead><tbody>
+<tr><th scope="row">Chỉ A</th><td id="t1">9</td><td id="p1"></td></tr>
+<tr><th scope="row">A ∩ B</th><td id="t2">6</td><td id="p2"></td></tr>
+<tr><th scope="row">Chỉ B</th><td id="t3">11</td><td id="p3"></td></tr>
+<tr><th scope="row">Ngoài A ∪ B</th><td id="t4">14</td><td id="p4"></td></tr>
+</tbody></table></div>
+<div class="controls"><fieldset><legend>Thay đổi bốn miền (số nguyên)</legend><div class="inputs">
+<div><label for="onlyA">Chỉ thuộc A</label><input id="onlyA" type="number" inputmode="numeric" min="0" max="1000" step="1" value="9"></div>
+<div><label for="both">Thuộc cả A và B</label><input id="both" type="number" inputmode="numeric" min="0" max="1000" step="1" value="6"></div>
+<div><label for="onlyB">Chỉ thuộc B</label><input id="onlyB" type="number" inputmode="numeric" min="0" max="1000" step="1" value="11"></div>
+<div><label for="neither">Ngoài cả hai</label><input id="neither" type="number" inputmode="numeric" min="0" max="1000" step="1" value="14"></div></div>
+<p class="error" id="error" role="alert"></p></fieldset>
+<fieldset><legend>Thử ví dụ</legend><div class="buttons">
+<button data-preset="survey" type="button">40 bạn (ví dụ)</button>
+<button data-preset="independent" type="button">Hai đồng xu</button>
+<button data-preset="disjoint" type="button">Xung khắc</button>
+<button data-preset="nested" type="button">A nằm trong B</button>
+<button data-preset="zero" type="button">Biến cố rỗng</button>
+<button data-preset="reset" type="button">Đặt lại</button>
+</div><p class="muted-note" id="presetContext" aria-live="polite">Ví dụ 40 bạn: A = thích vẽ; B = thích thể thao; chọn đều một bạn.</p></fieldset>
+<fieldset><legend>Chọn biến cố để đọc</legend><label for="focus">Biến cố</label><select id="focus"><option value="union">A ∪ B (ít nhất một)</option><option value="both">A ∩ B (cùng xảy ra)</option><option value="a">A</option><option value="b">B</option><option value="notA">Phần bù của A</option><option value="notB">Phần bù của B</option><option value="neither">Không A, không B</option></select></fieldset>
+<div class="metrics"><div class="metric"><strong>Tổng phần tử N</strong><output id="total">40</output></div><div class="metric"><strong>P(A ∪ B)</strong><output id="union">13/20</output></div><div class="metric"><strong>P(A ∩ B)</strong><output id="intersection">3/20</output></div><div class="metric"><strong>P(Ā)</strong><output id="complement">5/8</output></div></div>
+<div class="output" id="output" role="status" aria-live="polite"></div>
+</div></div></section>
+<details><summary>Giải thích vì sao và kiểm tra kết quả</summary>
+<p><strong>Quy tắc cộng:</strong> P(A ∪ B) = P(A) + P(B) − P(A ∩ B). Vùng chung bị đếm hai lần khi cộng P(A)+P(B), nên phải trừ một lần. Công thức này đúng dù A, B độc lập hay không.</p>
+<p><strong>Độc lập:</strong> trong mô hình chọn đều từ N phần tử, kiểm tra P(A ∩ B) = P(A)·P(B). <strong>Xung khắc:</strong> A ∩ B rỗng. Hai biến cố có xác suất dương không thể vừa xung khắc vừa độc lập; biến cố xác suất 0 là ngoại lệ.</p>
+<p><strong>Giới hạn:</strong> Mô hình giả sử tất cả N kết quả đồng khả năng. Dữ liệu khảo sát thô không tự chứng minh hai sự kiện độc lập trong một quá trình ngẫu nhiên khác. Hình tròn là sơ đồ, không phải biểu đồ diện tích chính xác.</p>
+<p><strong>Nguồn ứng viên:</strong> Toán 11 KNTT Chương VIII, Bài 28–30; hồ sơ tác giả GitHub <code>G11_CHVIII_B28_B30_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md</code> (blob <code>fde4f8be91b5884b4559fef59fde46cf826c2bc9</code>). Mô hình nghiên cứu, chưa tích hợp website hoặc chấm điểm.</p>
+</details><p class="foot">G Learning — Learn · Grow · Go · Nghiên cứu mô hình độc lập #798 · Không ghi dữ liệu cá nhân, không kết nối mạng và không tính điểm.</p>
+</main>
+<script>
+(()=>{'use strict';
+const root=document.getElementById('model12');
+const ids=['onlyA','both','onlyB','neither'];
+const inputs=ids.map(id=>document.getElementById(id));
+const el=id=>document.getElementById(id);
+const defaults={onlyA:9,both:6,onlyB:11,neither:14,focus:'union'};
+const presets={survey:defaults,reset:defaults,independent:{onlyA:1,both:1,onlyB:1,neither:1,focus:'union'},disjoint:{onlyA:12,both:0,onlyB:8,neither:20,focus:'union'},nested:{onlyA:0,both:8,onlyB:12,neither:20,focus:'union'},zero:{onlyA:0,both:0,onlyB:12,neither:28,focus:'union'}};
+let state={...defaults},dead=false;
+const contexts={survey:'Ví dụ 40 bạn: A = thích vẽ; B = thích thể thao; chọn đều một bạn.',reset:'Ví dụ 40 bạn: A = thích vẽ; B = thích thể thao; chọn đều một bạn.',independent:'Hai đồng xu công bằng, độc lập: A = xu thứ nhất ngửa; B = xu thứ hai ngửa; có 4 kết quả đồng khả năng.',disjoint:'40 thẻ đồng khả năng: A và B là hai nhóm thẻ không có phần tử chung.',nested:'40 thẻ đồng khả năng: mọi phần tử của A đều thuộc B.',zero:'A là biến cố rỗng; B gồm 12 trên 40 kết quả đồng khả năng.',custom:'Dữ liệu tùy chỉnh: chọn đều một phần tử trong N kết quả của Ω.'};
+const controller=new AbortController();
+const gcd=(a,b)=>{while(b){let q=a%b;a=b;b=q;}return a;};
+const frac=(a,n)=>{if(a===0)return '0';if(a===n)return '1';const d=gcd(a,n);return `${a/d}/${n/d}`;};
+const fmt=(x)=>new Intl.NumberFormat('vi-VN',{maximumFractionDigits:1}).format(x);
+function validate(raw){
+const result={}; for(const k of ids){const v=raw[k];if(typeof v!=='number'||!Number.isSafeInteger(v)||v<0||v>1000)return {ok:false,field:k,message:'Nhập số nguyên từ 0 đến 1000 cho từng miền.'};result[k]=v;}
+const N=ids.reduce((a,k)=>a+result[k],0);if(N===0)return {ok:false,field:null,message:'Không gian mẫu Ω phải có ít nhất một phần tử.'};return {ok:true,value:{...result,focus:raw.focus??state.focus}};
+}
+function math(s){const N=s.onlyA+s.both+s.onlyB+s.neither,A=s.onlyA+s.both,B=s.onlyB+s.both,U=s.onlyA+s.both+s.onlyB,C=s.both;
+const independent=C*N===A*B,disjoint=C===0;return {N,A,B,U,C,complementA:N-A,complementB:N-B,independent,disjoint,difference:C*N-A*B};}
+const makeText=(s,m)=>{const event={union:['A ∪ B',m.U,[0,1,2]],both:['A ∩ B',m.C,[1]],a:['A',m.A,[0,1]],b:['B',m.B,[1,2]],notA:['Ā',m.N-m.A,[2,3]],notB:['B̄',m.N-m.B,[0,3]],neither:['(A ∪ B)̄',s.neither,[3]]}[s.focus]||['A ∪ B',m.U,[0,1,2]];
+const independentText=m.independent?'độc lập trong mô hình chọn đều':'không độc lập trong mô hình chọn đều';
+let qualification=m.disjoint?`A và B xung khắc (vùng giao rỗng). ${m.A===0||m.B===0?'Đây là ngoại lệ xác suất 0: chúng vẫn có thể độc lập.':'Do P(A) và P(B) đều dương, chúng không độc lập.'}`:'A và B không xung khắc vì vùng giao có phần tử.';
+return {event,html:`<strong>${event[0]}:</strong> ${event[1]}/${m.N} = ${frac(event[1],m.N)} (${fmt(event[1]/m.N*100)}%).<br>\
+<strong>Quy tắc cộng:</strong> (${m.A}+${m.B}−${m.C})/${m.N} = ${frac(m.U,m.N)}. Trừ phần giao vì đã đếm hai lần.<br>\
+<strong>Độc lập?</strong> ${m.C}×${m.N} ${m.independent?'=':'≠'} ${m.A}×${m.B}, nên A và B <strong>${independentText}</strong>.<br>${qualification}`};};
+function paint(){if(dead)return;const s=state,m=math(s),txt=makeText(s,m);inputs.forEach((input,i)=>{if(document.activeElement!==input)input.value=s[ids[i]];input.setAttribute('aria-invalid','false')});el('focus').value=s.focus;
+[['vennOnlyA',s.onlyA],['vennBoth',s.both],['vennOnlyB',s.onlyB],['vennNeither',s.neither],['t1',s.onlyA],['t2',s.both],['t3',s.onlyB],['t4',s.neither],['total',m.N],['union',frac(m.U,m.N)],['intersection',frac(m.C,m.N)],['complement',frac(m.complementA,m.N)]].forEach(([id,val])=>el(id).textContent=val);
+[s.onlyA,s.both,s.onlyB,s.neither].forEach((v,i)=>{const e=el('s'+(i+1));e.style.width=(v/m.N*100)+'%';e.classList.toggle('muted',!txt.event[2].includes(i));el('p'+(i+1)).textContent=frac(v,m.N);});el('ratio').setAttribute('aria-label',`Trong ${m.N} kết quả đồng khả năng: chỉ A ${s.onlyA}, cả hai ${s.both}, chỉ B ${s.onlyB}, ngoài cả hai ${s.neither}. Vùng chọn ${txt.event[0]} có ${txt.event[1]} kết quả.`);
+el('vennDesc').textContent=`Bốn miền sơ đồ: chỉ A ${s.onlyA}, A giao B ${s.both}, chỉ B ${s.onlyB}, ngoài cả hai ${s.neither}. Sơ đồ không theo tỷ lệ diện tích.`;
+el('output').innerHTML=txt.html;el('error').textContent='';return {s,m};
+}
+function apply(raw){const valid=validate(raw);inputs.forEach(x=>x.setAttribute('aria-invalid','false'));if(!valid.ok){if(valid.field)el(valid.field).setAttribute('aria-invalid','true');el('error').textContent=valid.message;return false;}state={...valid.value};paint();return true;}
+function fromInputs(){const raw={focus:el('focus').value};for(const input of inputs){const value=input.value.trim();raw[input.id]=value===''?NaN:Number(value);}return apply(raw);}
+inputs.forEach(input=>input.addEventListener('change',()=>{const ok=fromInputs();if(ok)el('presetContext').textContent=contexts.custom;},{signal:controller.signal}));
+el('focus').addEventListener('change',()=>apply({...state,focus:el('focus').value}),{signal:controller.signal});
+root.querySelectorAll('button[data-preset]').forEach(b=>b.addEventListener('click',()=>{if(apply(presets[b.dataset.preset]))el('presetContext').textContent=contexts[b.dataset.preset];},{signal:controller.signal}));
+function getState(){return {...state};}
+function getResult(){return {...math(state)};}
+function destroy(){if(dead)return;dead=true;controller.abort();}
+window.__I798_MODEL12__={getState,getResult,setState:apply,update:apply,destroy,isDestroyed:()=>dead,math,validate};
+paint();
+})();
+</script></body></html>

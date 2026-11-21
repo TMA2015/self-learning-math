@@ -1,0 +1,119 @@
+<!doctype html>
+<!-- MODEL_ID: SLM-SGK-G11-B03-SINCOS; DEV_BASE: Temp_I798_FINAL_08_SIN_COS_PERIOD.html; SOURCE_SCOPE: AUTHORING_STANDALONE; QUALITY: ORIGINAL_CHROMIUM_SELF_QA_ONLY; NO_MASTERY -->
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Đồ thị sin và cos – tính tuần hoàn | G Learning</title>
+<style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:#203b47;background:#f5f9f8;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;padding:18px 12px 40px}.page{max-width:1120px;margin:auto}
+.hero,.lab{background:#fff;border:1px solid #d2e6e4;border-radius:18px;box-shadow:0 3px 16px #12394809}
+.hero{padding:20px 24px;margin-bottom:15px}.kicker{color:#266c62;font-size:.76rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin:0 0 7px}
+h1{font-size:clamp(1.4rem,3vw,2rem);line-height:1.25;margin:0 0 9px}.hero p{margin:0;line-height:1.55;color:#415a66}
+.question{padding:15px 17px;background:#eaf6f1;border-left:4px solid #198269;border-radius:11px;line-height:1.6;margin:0 0 15px}
+.lab{overflow:hidden;container-type:inline-size}.lab h2{font-size:1.19rem;margin:0;background:#eaf6fb;padding:14px 17px}
+.intro{color:#486273;font-size:.91rem;line-height:1.55;margin:11px 16px}
+.grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,1fr);gap:15px;padding:15px;align-items:start}
+.visual,.controls{min-width:0}.visual figure{margin:0;border:1px solid #c7dce7;border-radius:12px;overflow:hidden}
+canvas{display:block;width:100%;height:390px;background:#fff}
+figcaption{background:#f5f9fc;color:#506a79;border-top:1px solid #c7dce7;padding:9px 11px;font-size:.85rem;line-height:1.5}
+.output{font-weight:650;background:#edf7f1;border-left:4px solid #16775b;border-radius:9px;padding:12px;margin:11px 0;min-height:60px;line-height:1.55}
+table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{border:1px solid #c7dce7;text-align:left;padding:8px 9px;vertical-align:top}th{background:#f4f9fc;width:42%}
+fieldset{border:1px solid #c7dce7;border-radius:12px;padding:13px;min-width:0;margin:0 0 11px}legend{padding:0 6px;font-weight:750}
+label{display:block;font-weight:650;font-size:.92rem;margin-bottom:8px}input{background:#fff;color:#21394a;font:inherit;border:1px solid #90b3c6;border-radius:8px;padding:7px;min-height:44px}
+input[type=number]{width:100%}input[type=range]{width:100%;margin:11px 0;accent-color:#198269;cursor:pointer}
+input[type=radio]{min-height:auto;accent-color:#198269;margin-right:5px}.choice{display:flex;align-items:center;font-weight:500;margin:7px 0}
+input[aria-invalid=true]{border:2px solid #b34e35}.error{color:#a03b26;font-size:.9rem;min-height:21px;font-weight:650}
+.buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}
+button{min-height:44px;padding:9px 8px;background:#fff;color:#135474;border:1px solid #8fbbcf;border-radius:9px;font:inherit;font-weight:650;cursor:pointer}
+button:hover:not(:disabled){background:#eaf6fb}button:disabled{opacity:.46;cursor:not-allowed}
+:is(button,input):focus-visible,summary:focus-visible{outline:3px solid #005aa0;outline-offset:2px}
+.tip{font-size:.9rem;line-height:1.55;color:#496372;margin:12px 0 0}.legendline{display:flex;gap:13px;flex-wrap:wrap;margin:7px 0 10px;font-size:.86rem;color:#34566d}
+.swatch{display:inline-block;width:26px;height:0;border-top:3px solid #146fa6;vertical-align:middle;margin-right:5px}.swatch.cos{border-top:3px dashed #c65f29}
+.footer{margin:17px 4px 0;font-size:.87rem;line-height:1.55;color:#48616c}.footer details{padding:11px 12px;background:#fff;border:1px solid #d2e6e4;border-radius:10px}.footer summary{cursor:pointer;font-weight:700}
+@container (max-width:720px){.grid{grid-template-columns:1fr}.controls{order:1}.visual{order:2}canvas{height:330px}}
+@media(max-width:480px){body{padding:10px 8px 28px}.hero{padding:15px 14px}.question{padding:12px}.grid{padding:9px;gap:9px}canvas{height:290px}.buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.lab h2{padding:12px}.footer{font-size:.84rem}}
+</style></head>
+<body><main class="page"><header class="hero"><p class="kicker">G Learning · Mô hình Toán tương tác</p>
+<h1>Đồ thị sin, cos và tính tuần hoàn</h1><p>Dự đoán → thao tác → quan sát → giải thích sự lặp lại sau một vòng tròn.</p></header>
+<section class="question"><strong>Hãy dự đoán:</strong> Khi góc tăng từ <strong>90° lên 450°</strong>, giá trị sin và cos có đổi không? Vì sao đồ thị lặp lại sau <strong>360° = 2π rad</strong>?</section>
+<section class="lab" id="lab"><h2>Hai đồ thị trên cùng hệ trục</h2><p class="intro">Đổi góc, chọn đường sin hoặc cos và quan sát điểm trên đồ thị. Trục ngang dùng <strong>radian</strong>; ô nhập sử dụng độ để dễ thao tác.</p>
+<div class="grid"><div class="visual"><figure><div class="legendline" style="padding:9px 10px 0"><span><i class="swatch"></i>sin x (nét liền)</span><span><i class="swatch cos"></i>cos x (nét đứt)</span></div><canvas id="plot" role="img" aria-label="Đồ thị y=sin x nét liền xanh và y=cos x nét đứt cam từ -2π đến 4π; mọi giá trị điểm được ghi trong bảng bên dưới"></canvas>
+<figcaption>Trục Ox đo bằng radian, từ −2π đến 4π. Mỗi đường lặp lại sau 2π; vạch tím biểu thị góc đang chọn. Hai đường có miền giá trị [−1;1]. Khi chỉ bật một đường, bảng vẫn cho biết cả hai giá trị để tự so sánh.</figcaption></figure>
+<div class="output" id="result" role="status" aria-live="polite" aria-atomic="true"></div>
+<table aria-label="Bảng giá trị và chu kỳ hàm lượng giác"><tbody>
+<tr><th scope="row">Góc đang chọn</th><td id="angle"></td></tr>
+<tr><th scope="row">Góc cùng tia cuối</th><td id="coterminal"></td></tr>
+<tr><th scope="row">sin α</th><td id="sine"></td></tr>
+<tr><th scope="row">cos α</th><td id="cosine"></td></tr>
+<tr><th scope="row">Sau thêm 360°</th><td id="repeated"></td></tr>
+<tr><th scope="row">Chu kỳ cơ bản</th><td id="period"></td></tr>
+</tbody></table></div>
+<div class="controls"><fieldset><legend>Chọn góc</legend>
+<label for="degrees">Góc α (độ), từ −360° đến 720°</label><input id="degrees" type="number" min="-360" max="720" step="1" value="90" aria-describedby="rangeHelp">
+<label for="slider">Kéo để đổi góc</label><input id="slider" type="range" min="-360" max="720" step="1" value="90">
+<p class="tip" id="rangeHelp">Bạn cũng có thể dùng ↑/↓ trong ô số. Các giá trị trên trục đồ thị tính theo π rad.</p><p id="error" class="error" role="alert" aria-live="assertive"></p></fieldset>
+<fieldset><legend>Hiển thị đường nào?</legend>
+<label class="choice"><input type="radio" name="mode" value="both" checked> Cả hai đồ thị</label>
+<label class="choice"><input type="radio" name="mode" value="sin"> Chỉ sin x</label>
+<label class="choice"><input type="radio" name="mode" value="cos"> Chỉ cos x</label>
+</fieldset>
+<div class="buttons"><button type="button" data-angle="0">0°</button><button type="button" data-angle="90">90°</button><button type="button" data-angle="180">180°</button><button type="button" data-angle="360">360°</button><button type="button" data-angle="450">450°</button><button type="button" data-angle="-270">−270°</button></div>
+<div class="buttons" style="grid-template-columns:repeat(2,minmax(0,1fr))"><button type="button" id="plus">Góc +360°</button><button type="button" id="minus">Góc −360°</button></div>
+<p class="tip"><strong>Giải thích:</strong> Trên đường tròn đơn vị, sau mỗi vòng 360° điểm cuối trở về đúng tọa độ cũ. Vì vậy sin(α+360°)=sin α và cos(α+360°)=cos α. Nhưng góc quay ban đầu vẫn thay đổi một vòng.</p>
+<p class="tip"><strong>Đọc đồ thị:</strong> sin đạt 1 tại π/2+2kπ và cos đạt 1 tại 2kπ. Không kết luận sin hay cos tăng trên toàn ℝ chỉ từ một đoạn đồ thị.</p></div></div></section>
+<footer class="footer"><details><summary>Nguồn học liệu và giới hạn nghiên cứu</summary>
+<p>Ứng viên hỗ trợ SGK Toán 11 KNTT Chương I Bài 3 (đồ thị, tính tuần hoàn), kết nối kiến thức Bài 1 đường tròn lượng giác. Bản nguồn đối chiếu: <code>prototypes/thpt/content-drafts/THPT_G11_CHI_B01_B04_FULL_CHAPTER_D1_D6_REVIEW_SOURCE_R01_20261031.md</code>, Git blob <code>599d12ac7c2252001f881833c39978f94112cee4</code>, outcomes ứng viên <code>G11-B03-PERIOD</code>, <code>G11-B03-SIN_GRAPH</code>, <code>G11-B03-COS_GRAPH</code>. Tài liệu gốc SGK/SBT theo trang in chưa được mở trực tiếp cho lượt làm mô hình này.</p>
+<p>Đây là mô hình độc lập để học, không chấm điểm hoặc lưu thông tin học sinh. Giá trị hiển thị là xấp xỉ số ở các góc bất kỳ; góc bội 90° được xử lý chính xác ở các trục. Chưa tích hợp website hoặc phát hành.</p>
+</details></footer></main>
+<script>
+(function(global){'use strict';
+const root=document.getElementById('lab'),degree=root.querySelector('#degrees'),slider=root.querySelector('#slider'),err=root.querySelector('#error'),canvas=root.querySelector('#plot');
+const read=id=>root.querySelector('#'+id);const fields=['angle','coterminal','sine','cosine','repeated','period'];
+let angleDeg=90,mode='both',dead=false,observer=null;const handlers=[];
+function on(el,name,fn){el.addEventListener(name,fn);handlers.push([el,name,fn]);}
+function validateAngle(a){if(typeof a!=='number'||!Number.isInteger(a)||a< -360||a>720)throw new RangeError('Nhập góc nguyên từ −360 đến 720 độ');return a;}
+function validateMode(m){if(!['sin','cos','both'].includes(m))throw new RangeError('Chỉ chọn sin, cos hoặc cả hai');return m;}
+function norm(a){return((a%360)+360)%360;}
+function compute(a){if(typeof a!=='number'||!Number.isFinite(a))throw new RangeError('Góc phải là số hữu hạn');const k=norm(a);let sin=Math.sin(k*Math.PI/180),cos=Math.cos(k*Math.PI/180);
+if(k===0){sin=0;cos=1;}else if(k===90){sin=1;cos=0;}else if(k===180){sin=0;cos=-1;}else if(k===270){sin=-1;cos=0;}
+return {angleDeg:a,terminalDeg:k,radians:a*Math.PI/180,sin,cos,sinAgain:sin,cosAgain:cos,periodRad:2*Math.PI,periodDeg:360};}
+function fmt(n){return Number(n.toFixed(6)).toLocaleString('vi-VN',{maximumFractionDigits:6});}
+function sg(n){return n<0?'−'+fmt(-n):fmt(n);}
+function radExact(a){if(a===0)return '0';const gcd=(u,v)=>v?gcd(v,u%v):Math.abs(u),d=gcd(Math.abs(a),180),v=a/d,w=180/d,sign=v<0?'−':'',abs=Math.abs(v);return sign+(abs===1?'':abs)+'π'+(w===1?'':'/'+w);}
+function renderText(){const g=compute(angleDeg),desc=[`${g.angleDeg}° = ${radExact(g.angleDeg)} rad`,`${g.terminalDeg}°`,`sin ${g.angleDeg}° = ${sg(g.sin)}`,`cos ${g.angleDeg}° = ${sg(g.cos)}`,`sin ${g.angleDeg+360}° = ${sg(g.sinAgain)}; cos ${g.angleDeg+360}° = ${sg(g.cosAgain)}`,'360° = 2π rad (cả sin và cos)'];
+ fields.forEach((key,i)=>{read(key).textContent=desc[i]});read('result').textContent=`Vì góc ${g.angleDeg}° và ${g.angleDeg+360}° cùng tia cuối nên sin và cos bằng nhau. Đường đang xem: ${mode==='both'?'cả sin và cos':mode==='sin'?'sin x':'cos x'}.`;
+ read('plus').disabled=angleDeg+360>720;read('minus').disabled=angleDeg-360< -360;
+}
+function draw(){const rect=canvas.getBoundingClientRect(),w=rect.width,h=rect.height;if(w<20||h<20)return;
+ const dpr=Math.min(global.devicePixelRatio||1,2);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);
+ const c=canvas.getContext('2d');c.setTransform(dpr,0,0,dpr,0,0);c.clearRect(0,0,w,h);
+ const left=35,right=w-15,top=28,bottom=h-31,xx0=-2*Math.PI,xx1=4*Math.PI,y0=-1.25,y1=1.25;
+ const X=x=>left+(x-xx0)/(xx1-xx0)*(right-left),Y=y=>bottom-(y-y0)/(y1-y0)*(bottom-top);
+ c.lineWidth=1;c.strokeStyle='#e2ebf0';for(let k=-2;k<=4;k++){let x=X(k*Math.PI);c.beginPath();c.moveTo(x,top);c.lineTo(x,bottom);c.stroke();}
+ for(let v=-1;v<=1;v+=.5){c.beginPath();c.moveTo(left,Y(v));c.lineTo(right,Y(v));c.stroke();}
+ c.strokeStyle='#526d7a';c.lineWidth=1.4;c.beginPath();c.moveTo(left,Y(0));c.lineTo(right,Y(0));c.moveTo(X(0),top);c.lineTo(X(0),bottom);c.stroke();
+ c.fillStyle='#466374';c.font='11px system-ui';c.textAlign='center';for(let k=-2;k<=4;k++){
+ let l=k===0?'0':(k===1?'π':k===-1?'−π':k+'π');c.fillText(l,X(k*Math.PI),bottom+18);}
+ c.textAlign='right';for(let v of [-1,0,1])c.fillText(String(v),left-5,Y(v)+4);
+ function curve(kind){c.save();c.lineWidth=2.5;c.strokeStyle=kind==='sin'?'#146fa6':'#c65f29';if(kind==='cos')c.setLineDash([7,4]);c.beginPath();for(let i=0;i<=500;i++){let x=xx0+(xx1-xx0)*i/500,y=kind==='sin'?Math.sin(x):Math.cos(x);if(i===0)c.moveTo(X(x),Y(y));else c.lineTo(X(x),Y(y));}c.stroke();c.restore();}
+ if(mode!=='cos')curve('sin');if(mode!=='sin')curve('cos');
+ let g=compute(angleDeg),gx=X(g.radians);
+ c.strokeStyle='#8b54a4';c.lineWidth=1.5;c.save();c.setLineDash([3,4]);c.beginPath();c.moveTo(gx,top);c.lineTo(gx,bottom);c.stroke();c.restore();
+ function dot(value,color){c.fillStyle=color;c.beginPath();c.arc(gx,Y(value),5.5,0,Math.PI*2);c.fill();c.strokeStyle='#fff';c.lineWidth=2;c.stroke();}
+ if(mode!=='cos')dot(g.sin,'#146fa6');if(mode!=='sin')dot(g.cos,'#c65f29');
+}
+function render(){if(dead)return;degree.value=String(angleDeg);slider.value=String(angleDeg);for(let el of root.querySelectorAll('input[name=mode]'))el.checked=el.value===mode;renderText();draw();}
+function getState(){if(dead)throw Error('Model destroyed');return {angleDeg,mode};}
+function getResult(){if(dead)throw Error('Model destroyed');return compute(angleDeg);}
+function setState(s){if(dead)throw Error('Model destroyed');const a=validateAngle(s?.angleDeg),m=validateMode(s?.mode??mode);
+angleDeg=a;mode=m;err.textContent='';degree.removeAttribute('aria-invalid');render();return getState();}
+function apply(raw){try{if(String(raw).trim()==='')throw RangeError();setState({angleDeg:Number(raw),mode});}catch(_){err.textContent='Hãy nhập góc nguyên từ −360° đến 720°.';degree.setAttribute('aria-invalid','true');}}
+on(degree,'change',()=>apply(degree.value));on(slider,'input',()=>apply(slider.value));
+for(const el of root.querySelectorAll('input[name=mode]'))on(el,'change',()=>{if(el.checked)setState({angleDeg,mode:el.value});});
+for(const el of root.querySelectorAll('button[data-angle]'))on(el,'click',()=>setState({angleDeg:Number(el.dataset.angle),mode}));
+on(read('plus'),'click',()=>setState({angleDeg:angleDeg+360,mode}));on(read('minus'),'click',()=>setState({angleDeg:angleDeg-360,mode}));
+if('ResizeObserver'in global){observer=new ResizeObserver(()=>{if(!dead)draw();});observer.observe(canvas);}
+function resize(){if(dead)throw Error('Model destroyed');draw();}
+function destroy(){if(dead)return false;dead=true;for(const [el,n,fn]of handlers)el.removeEventListener(n,fn);if(observer)observer.disconnect();root.innerHTML='';return true;}
+const model=Object.freeze({getState,getResult,setState,update:setState,resize,destroy});global.__I798_FINAL_QA__=Object.freeze({type:'sin-cos-period',model,compute});render();
+})(window);
+</script></body></html>
