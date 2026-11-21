@@ -33,14 +33,14 @@ function verifyTopicKnowledge(src,pages,label) {
  const isGoldenDomTabs=label.replace(/\\/g,"/").endsWith("/cd01/kien-thuc.md") &&
    src.includes("data-topic01-knowledge-start");
  if(isGoldenDomTabs){
-   const modules=[...src.matchAll(/^## (\\d+)\\. /gm)].map(x=>Number(x[1]));
-   const subtopic=[...src.matchAll(/^### (\\d+)\\.(\\d+)\\. /gm)];
+   const modules=[...src.matchAll(/^## (\d+)\. /gm)].map(x=>Number(x[1]));
+   const subtopic=[...src.matchAll(/^### (\d+)\.(\d+)\. /gm)];
    assert.deepEqual(modules,[1,2,3],label+": Golden R4 modules must cover 1–3 in source order");
    assert.equal(subtopic.length,11,label+": must expose 11 genuine mathematical knowledge tabs");
    assert(subtopic.every(x=>[1,2,3].includes(Number(x[1]))),label+": invalid module ownership");
    const ui=fs.readFileSync(path.join(ROOT,"docs/assets/javascripts/thpt-topic01-release-tabs-v1.js"),"utf8");
-   assert(ui.includes("data-topic01-module-layout")&&ui.includes("data.topic01ModuleTab")&&
-     ui.includes("data.topic01Subtab")&&ui.includes('setAttribute("role","tab")')&&
+   assert(ui.includes("data-topic01-module-layout")&&ui.includes("dataset.topic01ModuleTab")&&
+     ui.includes("dataset.topic01Subtab")&&ui.includes('setAttribute("role","tab")')&&
      ui.includes("ArrowLeft")&&ui.includes("ArrowRight")&&ui.includes("aria-selected"),
      label+": actual Golden two-level accessible tab engine missing");
  }else{
