@@ -1,26 +1,33 @@
+<!-- TOP18_MASTER974_CURRENT_READY_AUTHORING_20261121 -->
+**CURRENT CĐ18 ONE AUTHORING CONTENT_READY snapshot, NOT website release:** 21/11/2026, owner-effective one `SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18` self-QA on current R04 learner `8a2b6289fd5ccf1380c0b250b6ffecc34d25e355`; source commit `af0993c1b636213f99bdd705e1e2132d2a19cf62`, signed Q18 self source `57db7f94a670d3290b7c5e06304a13fe0376b60f`, A1–A7 `5b9ea079b07be1821ddaae6c49a5a01679f3d6e6`, one V2 `b6f2450093669748712142225df6ac5f22fbc574`. 40 complete independently readable Knowledge outcomes and mathematical firsttry unchanged; 40 voluntary Kiểm lỗi with 80 authentic existing current math-matched Practice reattempts, 207 original full mathematical Practice stems/keys/solutions including 47 Written rubric bodies byte-exact vs historical learner, continuous Bài luyện 1–207 with 40 SGK-bank headers removed; 40 exactly-labelled Vận dụng, 12 original public question-only selfchecks with optional final same-ID answer-location lookup Bài 15/35/50/70/81/86/96/112/118/143/175/201, 10 original SVG/source model unchanged, 248/248 voluntary disclosures, one Topic-end SGK provenance. Q15 original 247 canonical IDs preserved; Q16 public CLIENT_SELF_CHECK_NO_MASTERY only, no private RD1 or official final Readiness/Mastery. Targeted Q18 v3.2.0 author source/math/PED verified only, not new independent NotebookLM PASS.
+
+**Open nonblocking P2=2:** old original G12 SBT B14 printed p25 absent from retained reference, unverified exercises 5.6–5.7; new #977-062 24 original G12 canonical Written source-solution admin Mastery notes require SGK owner coordinated equivalent editorial fix, not Topic-only source change. Neither is a math P0/P1 in current author-verified changed source. No live site/Golden AP/R browser/device or fresh PDF page scan, no CI pass assumed and no release/deploy permission. Older source and receipt snapshots remain immutable Git history.
+---
+
 # CĐ18 · Oxyz · AUTHORING CONTENT_READY R04 · 16/11/2026
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R04
+CONTENT_REVISION: R04_MASTER974_40_D6_207_PRACTICE_20261121
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 8f9bf62de631edabf4c1fc55b6b449c53060d325
+SOURCE_COMMIT: af0993c1b636213f99bdd705e1e2132d2a19cf62
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
+ACADEMIC_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_SELF_VERIFIED; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
+REVIEW_RECEIPT_BLOB: 57db7f94a670d3290b7c5e06304a13fe0376b60f
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 237d92f3cffe3ce9ff6643b868263dc5a8141311
+AUTHOR_A1_A7_BLOB: 5b9ea079b07be1821ddaae6c49a5a01679f3d6e6
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R04_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: a0cb9a120c0245db2b592b5b51f86a2be26e4456
+AUTHOR_HANDOFF_BLOB: b6f2450093669748712142225df6ac5f22fbc574
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -31,7 +38,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-P2: 1
+P2: 2
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25
 BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
