@@ -238,7 +238,9 @@ jobs:
       - name: Guard G10 ChIV B07/B08 source-locked original items, SVG, Written and D6
         run: node scripts/test-thpt-g10-chiv-b07-b08-release-integration.cjs
       - name: Guard G10 ChIV B09–B11 exact source and canonical uniqueness
-        run: node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs
+        run: |
+          git fetch --no-tags --depth=1 origin 214a117fb2e17595bad64ddde6e0fa656fee856e # signed B10 R01 runtime baseline
+          node scripts/test-thpt-g10-chiv-b09-b11-release-integration.cjs
       - name: Guard G10 ChV B12 R02 academic source, exact SVG, 8 canonical, 2 HELP
         run: |
           node --check docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js
