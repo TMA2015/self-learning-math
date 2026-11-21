@@ -632,14 +632,14 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B07-P04; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
 
 ### Bài luyện 4
-**Đề:** Theo quy ước SGK/SBT KNTT, phát biểu nào đúng về vectơ-không $\vec0$?
+**Đề:** Theo quy ước đã học, phát biểu nào đúng về vectơ-không $\vec0$?
 
 **Lựa chọn:** A. Có độ dài 1 ; B. Có điểm đầu và cuối khác nhau ; C. Không có bất kỳ quy ước nào về cùng phương ; D. Độ dài 0, được quy ước cùng hướng với mọi vectơ
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** D
 
-**Lời giải:** $\overrightarrow{AA}=\vec0$ với mọi A, có độ dài bằng 0; SGK/SBT quy ước $\vec0$ cùng phương, cùng hướng với mọi vectơ. Đây là quy ước, không suy ra nó có giá hoặc chiều hình học thông thường.
+**Lời giải:** $\overrightarrow{AA}=\vec0$ với mọi A, có độ dài bằng 0; theo quy ước đã học, $\vec0$ cùng phương, cùng hướng với mọi vectơ. Đây là quy ước, không suy ra nó có giá hoặc chiều hình học thông thường.
 
 **Nếu làm sai:** So chiều AB–DC–CD trong hình bình hành trước khi kết luận bằng nhau.
 
