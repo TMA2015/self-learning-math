@@ -1,13 +1,18 @@
+<!-- TOP11_MASTER974_CURRENT_AUTHOR_CUSTODY_20261121 -->
+**Current single CĐ11 learner AUTHORING source** `prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md` current Git blob **`9c27c384af7fad186047aed555ef1a9877c6a30a`**, existing sole current Q18 `a6c64c4d9280fbde9752598190206ff1a8e82fca` author-self-verified v3.2.0, previous signed SHA artifacts immutable historical. Actual reproduced #977-036/037/038 resolved: 22/22 concept-specific Kiểm lỗi inside voluntary FirstTry route to real original Practice Bài; one optional at-end post-22-question SelfCheck lookup maps **all 22 original shared item IDs** to existing answers; removed three dispersed SGK mentions and source-footer Core management text, leaving one correct SGK KNTT Toán 12 Tập Hai Chương IV source line at end. All 116 original Practice item/math/answers/solutions, 28 Written rubrics, original 22 public question-only prompts and 4 SVG unchanged; 139/139 disclosure tags balanced. S1 original primary and SGK-only reviewer receipts inherited only for *unchanged mathematics*, not independent Topic Academic/PED verdict. This current AUTHOR self-Q18 is affected-scope PED/math proof, not web/RD1/official Topic Readiness/Final Submit/Skill Mastery/merge/deploy. Historical blobs in older text below remain source-SHA scoped.
+
+---
+
 # CĐ11 — R06 AUTHORING-only provenance and custody
 
 R03_IMMUTABLE_SOURCE_BLOB: 6c78b455f9d95e85c713108292908bf6f922d2f1
 LEARNER_R06_SOURCE: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-LEARNER_R06_SOURCE_BLOB: c46d07f8f7d260a71e84bf8c44677da895cb66cc
+LEARNER_R06_SOURCE_BLOB: 9c27c384af7fad186047aed555ef1a9877c6a30a
 Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-Q18_R06_RECEIPT_BLOB: c9e56423f647e53a2c2ef1171a45d702e31d73ae
+Q18_R06_RECEIPT_BLOB: a6c64c4d9280fbde9752598190206ff1a8e82fca
 ACTIVE_NEW28_BANK_R05: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
 ACTIVE_NEW28_BANK_R05_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
-STATUS: CONTENT_READY_FULL_S1_KNOWLEDGE
+STATUS: R06_MASTER974_22_PED6_SELFCHECK_AND_ONE_SGK_AUTHOR_SELF_VERIFIED
 
 ## Nguồn S1 và phạm vi khóa
 
