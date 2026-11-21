@@ -1,3 +1,16 @@
+<!-- TOP02_MASTER974_O04_O06_CURRENT_AUTHORING_Q18_20261121 -->
+## CĐ02 — Targeted Q18 tác giả tự xác minh sau sửa lỗi toán O04 / PED O06 (21/11/2026)
+
+**Một canonical learner duy nhất** `prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md`; new blob `3161436a92a450e17aaf5c6b53736f70d9d5bfa0`, previous verified baseline `6c975c6f19c11193fad7546cebccb27a9bcbcd2b`. Xác nhận diff chính xác **hai đoạn**, và byte content sau sửa khớp candidate lưu như bằng chứng `Temp_TOPIC02_R07_O04_O06_SIGN_AND_D6_CANDIDATE_20261121.md` blob `3161436a92a450e17aaf5c6b53736f70d9d5bfa0`. Candidate **không** được chọn làm learner path thứ hai. Chỉ sửa nội dung trên R06 hiện hành. Nội dung trước sửa lưu lịch sử ở Git và packet review cũ.
+
+**Lỗi #977 đã xác minh, kiểm toán bằng toán:** `TOP02-O04`: khi `Δ=0`, tam thức `f(x)=a(x−x₀)²`, `a≠0`; với `x≠x₀`, `(x−x₀)²>0` nên f cùng dấu a **trên cả hai phía**, `f(x₀)=0`; đồ thị chạm trục hoành **không đổi dấu**. Kiểm x=1,2,3 với `3(x−2)²`: 3,0,3; `−3(x−2)²`: −3,0,−3. Đã bỏ câu mâu thuẫn “quy tắc dấu thay đổi” và thay bằng phát biểu có chứng minh bản chất. `TOP02-O06`: `−x²+4x−3=−(x−1)(x−3)`; nghiệm `>0` là `(1,3)`; tại x=1 và x=3 bằng 0 nên **loại**; tại x=2 bằng 1 là điểm **trong** khoảng, không phải thử đầu mút. D6 giờ chỉ rõ vì sao dấu `≥0` mới nhận biên. Hai sửa tác động đúng **Q03/Q08/Q11/Q13/Q14/PED3/PED5–6**, không phải chỉnh metadata để làm đẹp.
+
+**Bảo toàn học sinh:** Giữ 16/16 Knowledge unit (chỉ hai đoạn nêu trên được đổi), **38/38 original canonical Practice item stems/keys/solutions/rubrics**, 4 Written rubrics, 16/16 public question-only selfchecks, 54/54 voluntary disclosure blocks, 3 original SVG paths, một dòng nguồn SGK cuối toàn Topic. Không nhập private RD1, không cấp điểm/Final Submit/Mastery mới. S1 primary original G10 Toán 10 KNTT T1 B03 pp22–25/B04 pp26–30 và T2 B17 pp19–24 được đối chiếu theo **receipt đã có** `53ecd902154118ba7ea9ab2a96e57f523feb8fd4`; không giả có lần đọc mới nguyên trang.
+
+**Chế độ Q18:** `AUTHOR_SELF_VERIFIED` cho **affected math/PED DELTA_C** dưới chuẩn Q01–Q18 v3.2.0; không tuyên bố NotebookLM độc lập đã review (packet trước ghi PENDING là trạng thái theo candidate cũ, không phải cổng cố định). Tự QA hai phép chứng minh và biên, nguồn/canonical diff đúng hai chỗ, P0=0/P1=0 **trong phạm vi hai lỗi đã sửa**; chưa suy toàn CĐ02 đã đạt MASTER #974. Không merge/deploy.
+
+---
+
 # CĐ2 R06 Q18 AUTHOR_SELF_VERIFIED — formal statements and key-recall QA · 17/11/2026
 
 PACKET_ID: THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01
@@ -7,8 +20,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b
-ACADEMIC_SOURCE_BLOB: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b
+SOURCE_BLOB: 3161436a92a450e17aaf5c6b53736f70d9d5bfa0
+ACADEMIC_SOURCE_BLOB: 3161436a92a450e17aaf5c6b53736f70d9d5bfa0
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R05_FULL_LEARNER_VISIBLE_38_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: eb5a01b50262dc4b151b3915f5a5e4b436432374
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -26,12 +39,12 @@ CURRENT_RECALL_SUMMARY_QA: TOP02-O01_O02_O03_O09_O15_O16 PASS
 CURRENT_SOURCE_PRACTICE_PARITY: 38/38 SAME_STEM_KEY_SOLUTION_RUBRIC_D6
 CURRENT_SOURCE_PUBLIC_REPLAY_PARITY: 16/16 SAME_QUESTION_ONLY
 CURRENT_SOURCE_SVG_PARITY: 3/3 SAME_PATH
-CURRENT_SOURCE_QA_DELTA: 4 MATH CLASSIFICATION BLOCKS AND ONE RECALL SUMMARY, 0 ITEM_OR_RUBRIC_CHANGES
+CURRENT_SOURCE_QA_DELTA: HISTORIC 4 FORMAL MATH BLOCKS PLUS CURRENT O04 DOUBLE_ROOT_SIGN_AND_O06_STRICT_BOUNDARY_PED_FIX; 0 CANONICAL_ITEM_OR_RUBRIC_CHANGES
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOPIC2_R06_FORMAL_CONCEPT_SELF_QA_702163e95642d24f070c442cf13f4ad575678145
+AUTHOR_SIGNOFF: TOP02_O04_O06_SIGN_BOUNDARY_SELFQA_3161436a92a450e17aaf5c6b53736f70d9d5bfa0
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
