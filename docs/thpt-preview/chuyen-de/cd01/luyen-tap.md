@@ -296,7 +296,7 @@ Cho X=(-∞,3], Y=(1,+∞). Tìm X∩Y.
 (1,3].
 
 
-Hai điều kiện đồng thời x≤3 và x>1 nên 1<x≤3.
+Hai điều kiện đồng thời x≤3 và x>1 nên 1&lt;x≤3.
 
 </details>
 
