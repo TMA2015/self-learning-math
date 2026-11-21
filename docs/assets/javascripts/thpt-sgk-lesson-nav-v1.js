@@ -332,6 +332,7 @@ const polishG10ChapterIV=(article)=>{
  const section=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
    "4. Lỗi thường gặp và cách tự khắc phục"];
  blocks.forEach((block,i)=>{
+  if(block.querySelector(":scope > h2.thpt-g10-section-heading"))return;
   const h=document.createElement("h2");
   h.className="thpt-g10-section-heading";
   h.textContent=section[i];block.prepend(h);
