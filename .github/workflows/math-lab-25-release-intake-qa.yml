@@ -47,14 +47,3 @@ jobs:
         run: node scripts/test-math-lab-25-release-intake.cjs --built
       - name: Browser, accessibility and frame isolation
         run: python scripts/test-math-lab-25-browser.py
-      - name: Save review-only Preview artifact (no hosting or deploy)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: math-lab-25-preview-${{ github.sha }}
-          path: |
-            site-thpt-preview/
-            artifacts/math-lab-review/
-            scripts/math-lab-25-release-manifest.tsv
-          retention-days: 7
-          if-no-files-found: error
