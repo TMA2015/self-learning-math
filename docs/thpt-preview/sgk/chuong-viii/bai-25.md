@@ -236,6 +236,8 @@
 
     \(1{,}05^4\approx1{,}20\), trong khi máy tính cho \(1{,}21550625\), nên sai số tuyệt đối là \(0{,}01550625\). Với mô hình tăng dân số, phải nêu rõ điều kiện tỉ lệ mỗi năm không đổi và đơn vị kết quả.
 
+    **Tự kiểm thêm với bậc 5:** \(1{,}02^5\approx1+5(0{,}02)=1{,}10\). Máy tính cho \(1{,}1040808032\); độ lệch tuyệt đối là \(0{,}0040808032\). Ở đây số gần đúng nhỏ hơn kết quả tính đủ vì các hạng có \(t^2,t^3,\ldots\) đều dương khi \(t=0{,}02\).
+
 === "Ví dụ"
 
     Các ví dụ có **Phân tích** trước lời giải và kiểm tra lại bằng phép tính độc lập.

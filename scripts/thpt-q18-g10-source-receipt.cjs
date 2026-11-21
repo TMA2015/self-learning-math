@@ -1245,9 +1245,23 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
     "INDEPENDENT_NOTEBOOKLM_REVIEW_NOT_CLAIMED","OWNER_P2_PENDING"]){
     assert(r.includes(marker),"B25 Q18 receipt incomplete: "+marker);
    }
+   let current=next;
+   const p02=path.join(root,"prototypes/thpt/ux795/G10_CHVIII_B25_APPLICATION_R02_SOURCE_Q18_20261121.md");
+   if(fs.existsSync(p02)){
+    const r02=fs.readFileSync(p02,"utf8"),field2=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(field2("R02_PREVIOUS_SOURCE_BLOB"),next,
+      "B25 R02 must extend exact B25 G2 R01 source SHA");
+    current=field2("R02_CORRECTED_SOURCE_BLOB");
+    assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==next,
+      "B25 R02 new source Git blob SHA malformed");
+    for(const marker of ["G10-CHVIII-B25-APPLICATION-R02-SOURCE-Q18-20261121",
+     "DELTA_C_ACADEMIC_MATERIAL","OWNER_P2_PENDING","1,02^5","0,0040808032"]){
+     assert(r02.includes(marker),"B25 R02 receipt incomplete: "+marker);
+    }
+   }
    const full=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-25.md"));
    const actual=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+full.length+"\0")).update(full).digest("hex");
-   assert.equal(actual,next,"B25 exact source/receipt Git SHA mismatch");
+   assert.equal(actual,current,"B25 source Git SHA must match R01→R02 receipt chain");
    const s=full.toString("utf8");
    assert(s.includes("G10_B25_NEWTON_BRANCH_TREE_R01.svg")&&
      s.includes("G10_B25_PASCAL_TRIANGLE_R02.svg")&&
@@ -1263,7 +1277,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
       s.includes('data-thpt-help-id="HELP-G10-CHVIII-TRY'+id+'"'),
       "B25 canonical TRY/HELP ID changed: "+id);
    }
-   return next;
+   return current;
   }
  }
  return blobs[1];
