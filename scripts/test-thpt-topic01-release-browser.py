@@ -50,6 +50,9 @@ with sync_playwright() as pw:
        article:!!document.querySelector('[data-topic01-practice-start]')?.closest('.md-typeset'),
        h2:[...document.querySelectorAll('article.md-typeset h2, .md-typeset > h2')].slice(-10).map(x=>x.textContent.slice(0,60)),
        sourceBai:[...document.querySelectorAll('.md-typeset p > strong')].filter(x=>/^Bài\\s+\\d+\\./.test(x.textContent)).length,
+       allBai:[...document.querySelectorAll('.md-typeset strong')].filter(x=>/^Bài\\s+\\d+\\./.test(x.textContent)).map(x=>({text:x.textContent,tag:x.parentElement.tagName,grand:x.parentElement.parentElement?.tagName})),
+       directH2:[...document.querySelectorAll('.md-typeset > h2')].map(x=>x.textContent.slice(0,60)),
+       pDirect:[...document.querySelectorAll('.md-typeset > p')].filter(x=>/^Bài\\s+\\d+\\./.test(x.textContent)).length,
        golden:!!window.THPT_GOLDEN_RUNTIME,
        library:!!document.querySelector('script[src*="thpt-topic01-release-tabs"]'),
        ready:document.querySelector('[data-topic01-practice-start]')?.dataset.ready||null
