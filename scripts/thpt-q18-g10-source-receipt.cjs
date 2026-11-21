@@ -1383,7 +1383,6 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
   for(const term of ["2.1. Sử dụng phương pháp tổ hợp","2.2. Sử dụng sơ đồ hình cây",
     "2.3. Xác suất của biến cố đối" ,"P(\\overline E)=1-P(E)"])
     assert(knowledge.includes(term),"B27 S1 section or formula missing "+term);
-  }
   assert.equal((knowledge.match(/<div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
    "B27 precisely ONE official boxed theorem/rule: complement probability");
   assert.equal((knowledge.match(/thpt-r4-concept-card/g)||[]).length,0,
