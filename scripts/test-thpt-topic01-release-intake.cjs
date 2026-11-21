@@ -43,6 +43,8 @@ for(const config of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){const text=read(co
  assert(text.includes("thpt-topic01-release-tabs-v1.js")&&text.includes("thpt-topic01-release-v1.css"),"Missing two-level tab assets in "+config);
 }
 const js=read("docs/assets/javascripts/thpt-topic01-release-tabs-v1.js");
+assert(js.includes("golden.bindDialog")&&js.includes("golden.renderNav")&&js.includes("golden.bindPager"),"CĐ01 Practice must use one-question Golden shared modal");
+assert(read(paths[1]).includes("data-topic01-practice-start")&&read(paths[1]).includes("data-topic01-practice-end"),"Missing public Practice source shelf markers");
 assert(js.includes("data-topic01-module-layout")&&js.includes("aria-selected"),"Missing accessible adaptive knowledge tabs");
 assert(js.includes("math-lab/models/slm-top01-truth-01/"),"Missing optional existing Math Lab link");
 assert(!/localStorage|sessionStorage|indexedDB|\bfetch\s*\(|XMLHttpRequest|WebSocket/.test(js),"Topic UI unexpectedly writes user data");

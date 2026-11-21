@@ -43,8 +43,24 @@ with sync_playwright() as pw:
      assert p.locator("img[src*='THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg']").count()==1
      assert p.locator("img[src*='THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg']").count()==1
     elif part=="luyen-tap":
-     assert p.get_by_text(re.compile(r"Bài 24")).count()>0,(engine,width,"full practice")
-     assert p.locator("details").count()==24,(engine,width,"24 voluntary solutions")
+     p.locator("[data-topic01-practice-card]").first.wait_for(timeout=15000)
+     assert p.locator("[data-topic01-practice-card]").count()==24,(engine,width,"24 Golden cards")
+     assert p.locator("[data-topic01-source-shelf]").count()==1,(engine,width,"source shelf")
+     assert p.locator("[data-topic01-source-shelf]").is_hidden(),(engine,width,"no inline bulk questions")
+     assert p.locator("dialog.topic01-practice-dialog[open]").count()==0
+     p.locator('[data-topic01-practice-card="1"]').click()
+     modal=p.locator("dialog.topic01-practice-dialog")
+     assert modal.is_visible(),(engine,width,"Golden modal open")
+     assert modal.locator("[data-topic01-current-item]").get_attribute("data-topic01-current-item")=="1"
+     assert modal.locator(".thpt-r4-modal-question-nav button").count()==24
+     assert modal.locator("details[open]").count()==0,(engine,width,"one question no answer pre-open")
+     modal.locator(".thpt-r4-modal-question-nav button").last.click()
+     assert modal.locator("[data-topic01-current-item]").get_attribute("data-topic01-current-item")=="24"
+     assert modal.locator("details").count()==1,(engine,width,"one actual Practice solution")
+     modal.locator("details summary").click()
+     assert modal.locator("details[open]").count()==1
+     modal.locator(".topic01-close").click()
+     assert not modal.is_visible()
     else:
      assert p.get_by_text(re.compile(r"Câu 11")).count()>0,(engine,width,"full selfcheck")
      assert p.locator("details").count()==1,(engine,width,"only voluntary answer-location disclosure")
