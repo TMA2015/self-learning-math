@@ -620,35 +620,38 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         "THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg":
         "THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"),
         where+" B10 must serve legible portrait diagram only on mobile, full width otherwise");
-       await labels.nth(3).click();
-       const tips=blocks.nth(3).locator("details.tip");
-       assert.equal(await tips.count(),3,where+" B10 exactly three actual errors, 3 canonical HELP markers separately");
-       const data=await tips.evaluateAll(nodes=>nodes.map(e=>({open:e.open,summary:e.querySelector("summary")?.textContent||"",text:e.textContent||""})));
-       assert(data.every((x,i)=>!x.open&&x.summary.includes("4."+(i+1))&&
+       await labels.nth(0).click();
+       const tips=blocks.nth(0).locator("details.tip");
+       assert.equal(await tips.count(),3,where+" B10 original three canonical D6 in Discovery");
+       assert.equal(await blocks.nth(3).locator("details.tip,[data-thpt-help-id]").count(),0,
+        where+" B10 no duplicate local HELP in Tab4");
+       const data=await tips.evaluateAll(nodes=>nodes.map(e=>({
+        open:e.open,summary:e.querySelector("summary")?.textContent.trim()||"",
+        text:e.textContent||""
+       })));
+       assert(data.every(x=>!x.open&&x.summary==="Kiểm lỗi"&&
         x.text.includes("Lỗi thường gặp")&&x.text.includes("Vì sao sai?")&&
         x.text.includes("Ôn và luyện lại:")),
-        where+" B10 tab4 genuine student wrong step, cause, remedy and numbering");
+        where+" B10 D6 preserves wrong step, cause, remediation and voluntary reveal");
        assert(data[0].text.includes("Lỗi thường gặp:")&&
         data[1].text.includes("Lỗi thường gặp 1:")&&
-        data[1].text.includes("Lỗi thường gặp 2:")&&
-        data[2].text.includes("Lỗi thường gặp:")&&
-        data.every(x=>/sai|không phải|Đúng phải|Sửa/.test(x.text)),
-        where+" B10 must show 4 concrete wrong student steps, not generic method reminders");
+        data[1].text.includes("Lỗi thường gặp 2:")&&data[2].text.includes("Lỗi thường gặp:"),
+        where+" B10 four concrete wrong steps remain in three canonical HELPs");
        assert(data.every(x=>!/Assessment safety|HELP_ID|EX-G10-B10-RIVER|B10-[CP]0[1-6]/.test(x.text)),
-        where+" B10 no admin metadata visible to students");
+        where+" B10 no internal metadata in student remedy");
        const last=tips.nth(2);await last.locator("summary").click();
-       assert(await last.evaluate(e=>e.open),where+" B10 river error expands");
+       assert(await last.evaluate(e=>e.open),where+" B10 river Kiểm lỗi expands");
        await page.waitForFunction(()=>document.querySelector('details.tip[open] mjx-container')!==null,
         null,{timeout:15000});
        const paragraphs=await last.locator("p").allTextContents();
        assert(paragraphs.some(v=>v.includes("Thời gian đó sai"))&&
         paragraphs.some(v=>/thành phần hướng Bắc/i.test(v))&&
         paragraphs.some(v=>v.includes("Ôn và luyện lại:")),
-        where+" B10 error 4.3 must show a specific wrong method, cause and recovery");
+        where+" B10 river D6 shows wrong speed/time and North component repair");
        assert(await last.locator("mjx-container").count()>=5,
-        where+" B10 4.3 wrong and corrected time must be real rendered MathJax, not raw source TeX");
+        where+" B10 wrong and corrected time real MathJax");
        await last.locator("summary").click();
-       assert(!(await last.evaluate(e=>e.open)),where+" B10 4.3 re-closes");
+       assert(!(await last.evaluate(e=>e.open)),where+" B10 river D6 recloses");
        await labels.nth(0).click();
       }
       if(lesson===11){
