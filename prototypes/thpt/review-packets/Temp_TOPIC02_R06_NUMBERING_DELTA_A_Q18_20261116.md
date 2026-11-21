@@ -1,3 +1,18 @@
+<!-- MASTER974_TOPIC02_D6_SELFCHK_PED_AFFECTED_20261121 -->
+## CĐ02 · Chất lượng tự học sau sửa O04/O06: D6 16 outcome, tự đối chiếu cuối Topic và một nguồn SGK
+
+**Nguồn hiện hành duy nhất:** `prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md`, Git blob `d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5`, previous learner snapshot `3161436a92a450e17aaf5c6b53736f70d9d5bfa0`. **Không** nhân bản bản thảo R07 hay reviewer receipt; tiếp tục biên tập đúng R06 và đúng Q18 receipt hiện hữu.
+
+**Q01–Q02/Q08/Q14/PED6 affected evidence:** Trực tiếp đọc 16/16 đoạn `Vận dụng→Đối chiếu`, đối chiếu các Practice hiện hữu. Trước sửa **15/16 không dẫn tới một bài luyện cụ thể** (chỉ O07 có đề cập Bài 17); nay cả **16/16** có `Kiểm lỗi` tự mở, nêu lỗ hổng toán và chỉ chính xác tới mục `Kiến thức 1.1–4.2` và một hoặc hai bài hiện hữu. Thử riêng đổi chiều khi chia số âm (O01), Δ và nghiệm kép (O02–O04), dấu nghiêm/không nghiêm và mốc nghiệm (O05–O07), thời gian/chiều dài (O08), hệ số zero trong hai ẩn và điểm thử không nằm trên biên (O09–O11), đơn vị/nguyên và giao của hệ (O12–O13), miền rỗng vs không bị chặn (O14), cực đại trên cả một cạnh (O15), nguyên khác liên tục (O16). Phép toán O04 “không đổi dấu qua nghiệm kép” và O06 “tại x=1,3 thì f=0” từ bước trước giữ nguyên và đã tự kiểm.
+
+**Q17/Q16:** 16 public selfcheck `PUBLIC_REPLAY_ONLY` câu hỏi vẫn nguyên văn; một `<details><summary>Đối chiếu</summary>` ở cuối tự mở sau học sinh tự làm dẫn từng câu 1–16 đến Bài `1,3,5,7,9,11,13,15,18,19,20,23,26,29,33,35`, tất cả item_id public trùng đúng nguồn Practice hiện hữu. Không nhân bản câu/đáp án/rubric, không chấm độc lập, không Mastery/Final Submit. Hiện có **55/55 disclosure cân bằng** =16 Knowledge +38 Practice +1 tự kiểm. 38 Practice canonical, 4 Written rubric, 3 SVG giữ nguyên từng byte đoạn/source asset.
+
+**Q03/#864 mục 12:** bỏ duy nhất cách dẫn nguồn giữa Kiến thức “**SGK còn dùng biệt thức thu gọn**” bằng lời giảng trực tiếp “ta có thể dùng biệt thức thu gọn”; **chỉ một dòng nguồn SGK còn lại ở cuối toàn Chuyên đề**, không phá nội dung về \(b'=b/2\), \(\Delta'=b'^2-ac\) hoặc điều kiện \(a≠0\).
+
+**Kết quả tác giả tự kiểm:** kiểm exact source readback `16/16` nhãn Kiểm lỗi trong chính disclosure, `16/16` Knowledge targets và Practice mapping thật, `38` Practice items; (55) thẻ tự mở đóng/mở đủ; original equations/keys/rubric không thay; 1 source footer. `DELTA_C_ACADEMIC_MATERIAL` chỉ ảnh hưởng giải thích D6/PED6 và nav tự kiểm, `DELTA_A_UI` cho bỏ dẫn nguồn thừa. **Q18_AUTHOR_SELF_VERIFIED affected scope theo Q01–Q18 v3.2.0, P0/P1=0 với các lỗi đã sửa**, không giả reviewer/NotebookLM độc lập và không cấp toàn CĐ02 full audit PASS khi chưa kiểm hết toán/SGK/outcome.
+
+---
+
 <!-- TOP02_MASTER974_O04_O06_CURRENT_AUTHORING_Q18_20261121 -->
 ## CĐ02 — Targeted Q18 tác giả tự xác minh sau sửa lỗi toán O04 / PED O06 (21/11/2026)
 
@@ -20,8 +35,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 3161436a92a450e17aaf5c6b53736f70d9d5bfa0
-ACADEMIC_SOURCE_BLOB: 3161436a92a450e17aaf5c6b53736f70d9d5bfa0
+SOURCE_BLOB: d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5
+ACADEMIC_SOURCE_BLOB: d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R05_FULL_LEARNER_VISIBLE_38_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: eb5a01b50262dc4b151b3915f5a5e4b436432374
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -31,7 +46,7 @@ AUTHOR_QA_H2_H3_SEQ: PASS
 AUTHOR_QA_OUTCOMES: 16/16
 AUTHOR_QA_CANONICAL: 38/38 EXACT_ITEM_ID_STEM_KEY_SOLUTION_RUBRIC_D6
 AUTHOR_QA_SELFCHECK: 16/16 QUESTION_ONLY_PRESERVED
-AUTHOR_QA_REVEAL_CONTENT: BYTE_EXACT_OLD_NEW
+AUTHOR_QA_REVEAL_CONTENT: 55_VALID_SELF_REVEALS_16_KNOWLEDGE_38_PRACTICE_1_SELFCHECK_NAV
 CURRENT_PREVIOUS_NUMBERING_SOURCE_BLOB: 41a3d0497057217368ba63fecfa43d118f3e4519
 CURRENT_PREVIOUS_EDITORIAL_SOURCE_BLOB: 351dc607a6721fd56947344034f06c6cc8cca253
 CURRENT_FORMAL_KNOWLEDGE_QA: TOP02-O01_O02_O03_O09 PASS
@@ -39,12 +54,12 @@ CURRENT_RECALL_SUMMARY_QA: TOP02-O01_O02_O03_O09_O15_O16 PASS
 CURRENT_SOURCE_PRACTICE_PARITY: 38/38 SAME_STEM_KEY_SOLUTION_RUBRIC_D6
 CURRENT_SOURCE_PUBLIC_REPLAY_PARITY: 16/16 SAME_QUESTION_ONLY
 CURRENT_SOURCE_SVG_PARITY: 3/3 SAME_PATH
-CURRENT_SOURCE_QA_DELTA: HISTORIC 4 FORMAL MATH BLOCKS PLUS CURRENT O04 DOUBLE_ROOT_SIGN_AND_O06_STRICT_BOUNDARY_PED_FIX; 0 CANONICAL_ITEM_OR_RUBRIC_CHANGES
+CURRENT_SOURCE_QA_DELTA: CORRECTED_O04_O06_MATH_PLUS_16_KIEM_LOI_D6_PATHS_AND_16_PUBLIC_SELFCHK_MAP_AND_ONE_SOURCE_FOOTER; 0 CANONICAL_ITEM_OR_RUBRIC_CHANGES
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOP02_O04_O06_SIGN_BOUNDARY_SELFQA_3161436a92a450e17aaf5c6b53736f70d9d5bfa0
+AUTHOR_SIGNOFF: TOP02_20261121_D6_SELFCHK_ONE_FOOTER_SELFQA_d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
