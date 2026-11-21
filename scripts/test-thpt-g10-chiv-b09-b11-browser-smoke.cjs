@@ -12,7 +12,7 @@ const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs")
     for(const n of [9,10,11]){
      const response=await page.goto(base+"bai-"+n+"/",{waitUntil:"domcontentloaded"});
      assert(response?.ok(),"B"+n+" route");
-     if(!(await verifyModelBLesson(page,{n,chapter:"iv",tries:n===10?6:5,helps:n>=10?3:2,images:n===9?["THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg"]:n===10?["THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg","THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"]:["THPT_G10_B11_DOT_PRODUCT_OBTUSE_D5_R01.svg","THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg"]}))){
+     if(!(await verifyModelBLesson(page,{n,chapter:"iv",tries:n===10?6:5,helps:n>=10?3:2,remediationTab:"Khám phá kiến thức",images:n===9?["THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg"]:n===10?["THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg","THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"]:["THPT_G10_B11_DOT_PRODUCT_OBTUSE_D5_R01.svg","THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg"]}))){
 assert.equal(await page.locator('[data-thpt-help-id^="HELP-G10-B"]').count(),2,"Preserve exactly two historic reviewed D6 per lesson");
      const image=page.locator(".thpt-r4-probability-figure:not([data-thpt-reviewed-d5]) img");
      assert.equal(await image.count(),1);
