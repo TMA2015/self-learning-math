@@ -38,6 +38,10 @@ Giải \(3x+2=11\). Vì sao hai bước chuyển vế và chia cho 3 không làm
 
 Trừ 2 ở hai vế được \(3x=9\); chia cho \(3\ne0\) được \(x=3\). Cả hai bước đều có phép ngược hợp lệ. Thử lại: \(3\cdot3+2=11\). Nếu em dùng dấu tương đương cho phép bình phương mà không kiểm điều kiện, hãy so trường hợp \(x=3\) và \(x=-3\) ở ví dụ trên.
 
+**Kiểm lỗi**
+
+Nếu em chỉ tìm một nghiệm sau khi biến đổi hoặc đặt dấu tương đương cho một phép bình phương không có chiều ngược, hãy đọc lại **Kiến thức 1.1**, rồi giải **Bài 1** và **Bài 2** trong Luyện tập. Kiểm từng nghiệm bằng cách thế vào phương trình ban đầu; phân biệt phép trừ/chia hằng số khác 0 với bước có thể sinh nghiệm ngoại lai.
+
 </details>
 
 <!-- LESSON_ID: TOP03-M02; OUTCOME_ID: TOP03-O02; PREVIOUS_SOURCE_BLOB: e94bbe37339f7002bd8e29bdf60e0c86fae0aa95 -->
@@ -884,5 +888,20 @@ Hãy tự làm trọn 12 câu trước khi xem lại lời giải. Các câu dư
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B18-P04; ORIGINAL_BLOB: 1223d4c2b574433479c5d222dbeff363718ee4bb; NO_MASTERY; NOT_RD1 -->
 
 **Câu 12.** Tam giác vuông có hai cạnh góc vuông dài x>0 mét và 3 mét; cạnh huyền dài x+1 mét. Tìm x.
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi tự làm xong đủ 12 câu, hãy mở **Lời giải** ở đúng bài trong phần **Luyện tập**, theo thứ tự:
+
+| Câu tự kiểm tra | Bài luyện tập có lời giải |
+| --- | --- |
+| Câu 1 – 2 – 3 | Bài 1 – 3 – 5 |
+| Câu 4 – 5 – 6 | Bài 7 – 9 – 11 |
+| Câu 7 – 8 – 9 | Bài 19 – 14 – 13 |
+| Câu 10 – 11 – 12 | Bài 17 – 28 – 26 |
+
+Nếu còn sai, quay lại mục **Kiến thức** về phép biến đổi, điều kiện xác định, kiểm nghiệm sau bình phương hoặc ẩn phụ; thử giải lại khi đã đóng lời giải. Đây là tự đối chiếu bài công khai, **không phải kiểm tra năng lực độc lập** và không ghi Mastery.
+
+</details>
 
 Học liệu tham khảo SGK Toán 10 Kết nối tri thức với cuộc sống, Tập Hai, Chương VI, Bài 18; các kiến thức phương trình cơ bản được giải thích đầy đủ tại đây.
