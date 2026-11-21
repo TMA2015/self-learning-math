@@ -1,3 +1,10 @@
+<!-- TOP01_OWNER_AUTHORING_20261121_DELTA_A_C_CURRENT -->
+## CURRENT AUTHORING CĐ01 HANDOFF — same packet, scoped learner quality improvement
+
+Authoring source `53e0cc45a3b101c80c83b4412db0195e9f226c47` on the **same** one learner file. Current targeted signed AUTHOR_SELF_VERIFIED Q18 receipt `effb212b7f36007ec1d185def983da3ef2075b7c`, author metadata `8277985901c1f245c499a6e2a107999e513f928a`. `DELTA_A_UI` removed 10 `Đáp án canonical` labels and the `Tự luận/Anchor` label in opt-in learner content; `DELTA_C_ACADEMIC_MATERIAL` added 11 Knowledge first-try mistake → remediation → *existing* Practice retry paths. Math/conditions/Practice keys and Written rubrics/Q15 canonical IDs unchanged; first-attempt hidden reveals and public selfcheck question-only retained; 2 SVGs unchanged. Historical SOURCE_BLOB `a34680...` below is **not current**, prior original canonical keys remain mathematical equivalent but no longer use internal label. No new NotebookLM independent verdict, RELEASE/merge/deploy, RD1 or Mastery changes.
+
+---
+
 <!-- TOP01_CURRENT_DELTA_B_10_APPROVED_ORIGINAL_KEYS_20261121 -->
 ## CURRENT SOURCE-LOCKED CĐ01 V2 — 10 exact canonical answers restored to opt-in Practice, no new mathematics
 
@@ -17,11 +24,11 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: a34680c23f1be53feeda073f9e99d64f45ad8257
+ACADEMIC_SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-REVIEW_RECEIPT_BLOB: 291d902ce2948b3d2436b91b64b6b8ebf01a02d9
+REVIEW_RECEIPT_BLOB: effb212b7f36007ec1d185def983da3ef2075b7c
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 6942f39863b2f7596cdf263773eac76a47c39a0e
+AUTHOR_METADATA_BLOB: 8277985901c1f245c499a6e2a107999e513f928a
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
