@@ -1,3 +1,8 @@
+<!-- TOP09_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
+**CURRENT CĐ09 AUTHORING CONTENT_READY (source/Q18 only, NOT RELEASE):** one R05 learner canonical `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md` blob `5681dd894755165e799b4a20d9741f43115778d9` (learner commit `4fd65f54be372ca24e2d292cb799c4e8afe9e62d`), unchanged 71 SGK original +37 Topic item canonical source banks, 14 Written rubrics/four SVG. Current existing Q18 `AUTHOR_SELF_VERIFIED` v3.2.0 `b0e17ea8fbd00075c5de7dcaeb178985743645f8`, author custody `f740d4d08a5003d013e3ca70278367b6a8a6552e`, one V2 `7bbd719fedd21d3c4d836e3be4daf989671c6c5e`. Three real verified #977-030–032 repaired: 32 individually actionable D6 `Kiểm lỗi`→numbered Practice in existing opt-in reveals; 32 PUBLIC selfchecks mapped by exact original `item_id` to one voluntary Practice-answer lookup; O32 firsttry now independent nonpolynomial f=1/x,a=2,dx=0.2; correct domain [2,2.2], dy=-1/20, Δy=-1/22, error1/220. Inverse full-source diff confirms original 108 unique Practice stems/keys/solutions/14 Written rubrics, 32 question-only original selfchecks and four SVG unchanged byte-exact; 141/141 details balanced, one SGK source footer, hidden metadata explicitly NOT_FOR_STUDENT_VIEW. One prior R06 candidate historical/nonactive; affected-only independent NotebookLM reviewer request remains `PENDING`, **not reviewer PASS**. Current Q18 is direct math/PED self-proof under effective v3.2 quality-first owner instruction, not independent academic pass or official Topic Readiness/Mastery; no RD1/Final Submit, website/Golden/AP/R/Release, merge/deploy.
+
+---
+
 # CĐ09 — Đạo hàm và Ý nghĩa vi phân · AUTHORING CONTENT_READY R05 (stable PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
@@ -8,18 +13,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 64bfdd729f12bf33b28ffaaba01d1a6e7a1eff7c
+SOURCE_COMMIT: 4fd65f54be372ca24e2d292cb799c4e8afe9e62d
 AUTHOR_PR: 831
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/831 — DRAFT AUTHORING, not merged or deployed
 CATALOG_TOPIC_ID: CD09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
+ACADEMIC_SOURCE_BLOB: 5681dd894755165e799b4a20d9741f43115778d9
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author SELF_VERIFIED, no independent new NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: a44f1503ee112b16afaf5d651ec852eca6410e27
+REVIEW_RECEIPT_BLOB: b0e17ea8fbd00075c5de7dcaeb178985743645f8
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R05_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: dd0878750e43c336222fc009fe0255ba40b36209
+AUTHOR_HANDOFF_BLOB: 7bbd719fedd21d3c4d836e3be4daf989671c6c5e
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL71_INDEX_BLOB: 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8
 PUBLIC_NEW37_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
