@@ -1,5 +1,5 @@
-<!-- AUTHORING R05 STUDENT-FIRST candidate 2026-11-16; R04 source 68fe5b8a3ded75b6f774b4685655487d9b4bdff9 immutable. New Q18 review pending. -->
-<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R05_AUTHORING_REVIEW_PENDING; SGK71_BLOB=3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; INDEX71_BLOB=3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8; NEW37_BLOB=f249949be3b254a29c8859301b6c4904e636c505 -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: CĐ09 one current R05 learner canonical; older R04 remains immutable historical; active source and Q18 verified by source SHA. -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.2.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R05_CANONICAL_AUTHOR_SELF_Q18; SGK71_BLOB=3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; INDEX71_BLOB=3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8; NEW37_BLOB=f249949be3b254a29c8859301b6c4904e636c505 -->
 # CĐ09 — Đạo hàm và ý nghĩa vi phân
 
 # Kiến thức
@@ -31,6 +31,11 @@ Nếu một chiếc xe đi thêm 16 mét trong 2 giây, ta nói vận tốc trun
 
 \([f(2)-f(0)]/(2-0)=(4-0)/2=2\) đơn vị đầu ra trên một đơn vị đầu vào. Nếu em dùng \(f(2)/2\) ở trường hợp này thì may mắn ra cùng kết quả vì \(f(0)=0\); hãy thử khoảng \([1,3]\) để thấy công thức đúng phải dùng **hai hiệu**.
 
+
+**Kiểm lỗi**
+
+Nếu dùng giá trị tại cuối khoảng chia cho thời gian thay vì **độ dời**, đọc **Kiến thức 1.1** rồi giải **Bài 1** và **Bài 3**. Tách hiệu tọa độ khỏi quãng đường và giữ đơn vị m/s.
+
 </details>
 
 ### 1.2. Cát tuyến và giới hạn độ dốc
@@ -55,6 +60,11 @@ Chẳng hạn, f(x)=x², a=1: thương [(1+h)²−1]/h=2+h, h≠0; khi h→0 thu
 [(3+h)²−9]/h=6+h, h≠0; giới hạn 6.
 
 Nếu gọi 0/0 là độ dốc, cần biểu diễn h khác 0 và khử nhân tử.
+
+
+**Kiểm lỗi**
+
+Nếu thay h=0 trực tiếp vào thương sai phân rồi viết 0/0, đọc **Kiến thức 1.2**, làm **Bài 4** và **Bài 6**; rút gọn khi h≠0 trước khi cho h→0.
 
 </details>
 
@@ -91,6 +101,11 @@ Hình minh họa riêng \(f(x)=x^2\) tại \(a=1\): điểm cố định \(P=(1,
 
 Nếu quên 'hai phía', so giới hạn thương khi h>0 và h<0.
 
+
+**Kiểm lỗi**
+
+Nếu dùng quy tắc lũy thừa mà đề yêu cầu định nghĩa, đọc **Kiến thức 1.3**, làm **Bài 8** rồi **Bài 10**; dựng thương sai phân tại đúng a và kiểm giới hạn hai phía.
+
 </details>
 
 ### 1.4. Miền khả vi
@@ -119,6 +134,11 @@ Chẳng hạn, f(x)=√x xác định x≥0; với x>0 f'(x)=1/(2√x), suy đư
 Không; chỉ trên ℝ\{0}, với f'(x)=−1/x².
 
 Nếu áp công thức ngoài miền, bắt đầu bằng định nghĩa miền xác định.
+
+
+**Kiểm lỗi**
+
+Nếu ghi đạo hàm tại điểm ngoài miền hoặc cho căn có đạo hàm hữu hạn tại đầu mút một phía, đọc **Kiến thức 1.4**, làm **Bài 11** và **Bài 13**; phân biệt miền xác định với khả vi hai phía.
 
 </details>
 
@@ -149,6 +169,11 @@ Liên tục; không có đạo hàm hai phía vì −1 và +1 khác nhau.
 
 Nếu dùng tính liên tục để suy đạo hàm, đối chiếu phản ví dụ góc nhọn.
 
+
+**Kiểm lỗi**
+
+Nếu suy ngược 'liên tục ⇒ khả vi', đọc **Kiến thức 1.5**, làm **Bài 14** và **Bài 16**; |x| liên tục tại góc nhọn nhưng đạo hàm trái/phải khác nhau.
+
 </details>
 
 ### 1.6. Đạo hàm một phía
@@ -173,6 +198,11 @@ Chẳng hạn, f(x)=|x−3| tại 3: [|h|−0]/h=−1 khi h<0, +1 khi h>0. Chọ
 Trái −2, phải +2, không có đạo hàm hai phía.
 
 Nếu một bài chỉ cho đồ thị, kiểm bên trái và bên phải tại điểm gãy.
+
+
+**Kiểm lỗi**
+
+Nếu lấy một độ dốc cho cả trái và phải ở điểm gãy, đọc **Kiến thức 1.6**, làm **Bài 18** và **Bài 20**; vẽ hai nhánh rồi xét hai giới hạn thương riêng.
 
 </details>
 
@@ -205,6 +235,11 @@ Nếu gọi \(\alpha\) là góc định hướng từ chiều dương trục ho�
 
 Nếu nhầm giá trị và độ dốc, ghi riêng P(a,f(a)) và m=f'(a).
 
+
+**Kiểm lỗi**
+
+Nếu lấy f(a) làm hệ số góc, đọc **Kiến thức 2.1**, giải **Bài 23** rồi **Bài 24**; tọa độ điểm tiếp xúc và f'(a) là hai đại lượng khác nhau.
+
 </details>
 
 ### 2.2. Viết phương trình tiếp tuyến
@@ -230,6 +265,11 @@ f(0)=0, f'(0)=0 ⇒ y=0.
 
 Nếu kết quả không qua (a,f(a)), thế lại x=a để phát hiện.
 
+
+**Kiểm lỗi**
+
+Nếu viết đường thẳng không đi qua (a,f(a)) hoặc nhầm tung độ với đạo hàm, đọc **Kiến thức 2.2**, giải **Bài 25** và **Bài 27**, thử thế x=a vào phương trình tiếp tuyến.
+
 </details>
 
 ### 2.3. Vận tốc có hướng
@@ -254,6 +294,11 @@ Chẳng hạn, s(t)=t²−6t (m), t≥0: v(t)=2t−6; tại t=2, v=−2 m/s, t�
 v=−3 m/s, tốc độ3 m/s.
 
 Nếu gọi tốc độ âm, kiểm định nghĩa |v|.
+
+
+**Kiểm lỗi**
+
+Nếu gọi vận tốc âm là tốc độ âm, đọc **Kiến thức 2.3**, làm **Bài 29** và **Bài 31**; vận tốc s'(t) có hướng còn tốc độ là |s'(t)|.
 
 </details>
 
@@ -281,6 +326,11 @@ Không chỉ vận tốc và nhiệt độ: trong mạch điện, nếu điện 
 3 đồng/sản phẩm (tỉ lệ biến thiên cận biên của mô hình).
 
 Nếu viết đơn vị đồng, bạn đang trả giá trị P thay vì đạo hàm.
+
+
+**Kiểm lỗi**
+
+Nếu bỏ đơn vị mẫu của đạo hàm, đọc **Kiến thức 2.4**, làm **Bài 33** và **Bài 35**; đơn vị của tốc độ biến thiên phải là đơn vị đầu ra trên một đơn vị đầu vào.
 
 </details>
 
@@ -311,6 +361,11 @@ Chẳng hạn, y=3x⁴−2: đạo hàm 3·4x³=12x³ và đạo hàm hằng−2
 
 Nếu ra 7x², bạn bỏ hệ số mũ 3.
 
+
+**Kiểm lỗi**
+
+Nếu quên nhân số mũ hoặc đạo hàm hằng số khác 0, đọc **Kiến thức 3.1**, làm **Bài 36** và **Bài 38**; kiểm từng hạng của đa thức.
+
 </details>
 
 ### 3.2. Căn thức và điểm biên
@@ -336,6 +391,11 @@ Không; hàm xác định tại1 nhưng thương phải→+∞.
 
 Nếu chỉ xét x−1≥0, còn phải kiểm mẫu đạo hàm khác0.
 
+
+**Kiểm lỗi**
+
+Nếu dùng công thức căn ngay ở điểm biên mà mẫu trở thành 0, đọc **Kiến thức 3.2**, làm **Bài 39** và **Bài 41**; kiểm điều kiện công thức đạo hàm, khác với điều kiện chỉ cần xác định hàm.
+
 </details>
 
 ### 3.3. Quy tắc tổng
@@ -360,6 +420,11 @@ Xét ví dụ: y=4x³−3x+6 ⇒ y'=12x²−3; hằng6 biến mất. Chọn phâ
 4x+5.
 
 Nếu viết −8 ở đạo hàm, xem lại định nghĩa đạo hàm hằng.
+
+
+**Kiểm lỗi**
+
+Nếu giữ nguyên hằng số khi đạo hàm tổng, đọc **Kiến thức 3.3**, làm **Bài 43** và **Bài 44**; lấy đạo hàm từng hạng rồi cộng.
 
 </details>
 
@@ -394,6 +459,11 @@ sin x+x cos x.
 
 Nếu lấy cos x, bạn đã làm mất biến thiên của thừa số x.
 
+
+**Kiểm lỗi**
+
+Nếu cho (uv)'=u'v' hoặc quên đạo hàm một thừa số, đọc **Kiến thức 3.4**, làm **Bài 46** và **Bài 48**; viết u'v+uv' trước khi thu gọn.
+
 </details>
 
 ### 3.5. Quy tắc thương
@@ -418,6 +488,11 @@ Chẳng hạn, f=(x+1)/(x−2) có miền x≠2, f'=[1(x−2)−(x+1)·1]/(x−2
 1/(x+1)², với x≠−1.
 
 Nếu cho x=−1 hợp lệ vì kết quả nhìn đơn giản, quay lại mẫu gốc.
+
+
+**Kiểm lỗi**
+
+Nếu áp quy tắc thương tại mẫu 0 hoặc đảo thứ tự tử số, đọc **Kiến thức 3.5**, làm **Bài 50** và **Bài 52**; ghi miền rồi dùng (u'v−uv')/v².
 
 </details>
 
@@ -450,6 +525,11 @@ Chẳng hạn, y=(2x+1)^5: u=2x+1, u'=2, F'(u)=5u⁴ ⇒ y'=10(2x+1)^4. Chọn t
 
 Nếu ra 3(x²+1)², thiếu u'=2x.
 
+
+**Kiểm lỗi**
+
+Nếu đạo hàm (u(x))^n nhưng quên u', đọc **Kiến thức 3.6**, làm **Bài 55** và **Bài 56**; phân biệt hàm ngoài với hàm trong.
+
 </details>
 
 ## 4. Đem quy tắc trở lại các hàm quen thuộc
@@ -479,6 +559,11 @@ Chẳng hạn, f=3sin x+cos x (radian): f'=3cos x−sin x. Dấu âm của cos x
 
 Nếu ra +4sin x, kiểm đạo hàm cos âm.
 
+
+**Kiểm lỗi**
+
+Nếu nhầm dấu đạo hàm cos hoặc áp công thức lượng giác khi góc đo độ, đọc **Kiến thức 4.1**, làm **Bài 57** và **Bài 59**; các công thức đang dùng góc radian.
+
 </details>
 
 ### 4.2. Tan và cot
@@ -504,6 +589,11 @@ Xét ví dụ: tan x ở x=π/2 không xác định vì cos π/2=0. Ở x=0: (ta
 
 Nếu thiếu dấu trừ, dùng quy tắc thương cos/sin để tự tái lập.
 
+
+**Kiểm lỗi**
+
+Nếu thiếu miền cos x≠0 đối với tan hay sin x≠0 đối với cot, đọc **Kiến thức 4.2**, làm **Bài 60** và **Bài 62**; đạo hàm chỉ xét nơi hàm gốc xác định.
+
 </details>
 
 ### 4.3. Hàm lượng giác hợp
@@ -528,6 +618,11 @@ Chẳng hạn, y=cos(3x²) ⇒ u=3x², u'=6x, y'=−6x sin(3x²). Chọn xác đ
 5cos(5x) trong radian.
 
 Nếu ra cos(5x), đạo hàm trong 5x chưa được nhân.
+
+
+**Kiểm lỗi**
+
+Nếu lấy đạo hàm sin(2x²) mà quên đạo hàm 2x² hoặc bỏ điều kiện của tan hợp, đọc **Kiến thức 4.3**, làm **Bài 63** và **Bài 65**; áp quy tắc dây chuyền sau khi kiểm miền.
 
 </details>
 
@@ -555,6 +650,11 @@ Chẳng hạn, f=5^x tại x=0: f'(x)=5^x ln5, f'(0)=ln5. Chọn công thức m�
 3e^{3x}.
 
 Nếu thiếu hệ số3, kết hợp quy tắc mũ với dây chuyền.
+
+
+**Kiểm lỗi**
+
+Nếu đạo hàm a^x thiếu ln a hoặc đạo hàm e^{u} quên u', đọc **Kiến thức 4.4**, làm **Bài 66** và **Bài 68**; cơ số a>0, a≠1 với hàm mũ cơ số a.
 
 </details>
 
@@ -587,6 +687,11 @@ Chẳng hạn, f=log₂ x, x>0: f'=1/(x ln2). Đơn vị ln2 là hằng dương,
 
 Nếu tính với x<0, ln(4x) không có nghĩa trong số thực.
 
+
+**Kiểm lỗi**
+
+Nếu dùng công thức ln x cho log_a x mà bỏ ln a hoặc nhận x≤0, đọc **Kiến thức 4.5**, làm **Bài 69** và **Bài 71**; kiểm đối số dương trước.
+
 </details>
 
 ### 4.6. Mũ–logarit hợp
@@ -614,6 +719,11 @@ Chẳng hạn, f=ln(x²+1) xác định mọi x, f'=2x/(x²+1). Chọn **quy t�
 
 Nếu chỉ ghi mẫu≠0 mà cho x<2/3, điều kiện log phải dương bị vi phạm.
 
+
+**Kiểm lỗi**
+
+Nếu cho ln(3x−2) trên x≤2/3 hoặc quên nhân đạo hàm hàm trong, đọc **Kiến thức 4.6**, giải **Bài 72** và **Bài 74**; kết hợp điều kiện miền với dây chuyền.
+
 </details>
 
 ### 4.7. Đạo hàm và miền gốc
@@ -639,6 +749,11 @@ x>0 và x≠2.
 
 Nếu chỉ đặt x≠2, quên điều kiện ln x và đạo hàm được ở x≤0 sai.
 
+
+**Kiểm lỗi**
+
+Nếu kiểm mẫu khác 0 mà quên điều kiện căn/log trong tử, đọc **Kiến thức 4.7**, làm **Bài 77** và **Bài 79**; giao miền xác định trước khi đạo hàm.
+
 </details>
 
 ### 4.8. Chọn đúng quy tắc
@@ -663,6 +778,11 @@ Chẳng hạn, f=x e^{2x}: ngoài cùng tích, f'=e^{2x}+x·2e^{2x}=e^{2x}(1+2x)
 2x sin x+(x²+1)cos x.
 
 Nếu thử nhân hai đạo hàm, so lại với ví dụ f=x·x=x² cho thấy lỗi.
+
+
+**Kiểm lỗi**
+
+Nếu dùng tích hai đạo hàm hoặc làm dây chuyền trước khi nhận cấu trúc tích, đọc **Kiến thức 4.8**, làm **Bài 80** và **Bài 82**; ghi quy tắc ngoài rồi xử lý từng hàm trong.
 
 </details>
 
@@ -693,6 +813,11 @@ v=3t²−3, v(1)=0 m/s.
 
 Nếu dùng s(1)=−2 thay v(1), phân biệt vị trí với đạo hàm.
 
+
+**Kiểm lỗi**
+
+Nếu đánh đồng s(t) với vận tốc v(t), đọc **Kiến thức 5.1**, làm **Bài 83** và **Bài 85**; lấy s'(t), xét dấu vận tốc và cuối cùng mới lấy |v|.
+
 </details>
 
 ### 5.2. Đạo hàm bậc hai
@@ -717,6 +842,11 @@ Chẳng hạn, f=x³: f'=3x², f''=6x. Chọn lấy đạo hàm lại vì ta mu�
 f'=2x+3, f''=2.
 
 Nếu ra (2x+3)², bạn đã bình phương f'.
+
+
+**Kiểm lỗi**
+
+Nếu viết f''=(f')², đọc **Kiến thức 5.2**, làm **Bài 86** và **Bài 88**; đạo hàm lần hai là đạo hàm của f'.
 
 </details>
 
@@ -743,6 +873,11 @@ Chẳng hạn, f=3x⁴−2x²+1: f'=12x³−4x, f''=36x²−4. Chọn hai bướ
 
 Nếu ra 5x³, thiếu nhân n−1.
 
+
+**Kiểm lỗi**
+
+Nếu bỏ nhân thêm một hệ số số mũ ở lần đạo hàm thứ hai, đọc **Kiến thức 5.3**, làm **Bài 89** và **Bài 91**; kiểm riêng f' và f''.
+
 </details>
 
 ### 5.4. Đạo hàm hàm hợp bậc hai
@@ -767,6 +902,11 @@ Xét ví dụ: f=cos(3x): f'=−3sin(3x), f''=−9cos(3x). Chọn lấy đạo h
 4e^{2x}.
 
 Nếu ra 2e^{2x}, bạn chỉ lấy đạo hàm một lần.
+
+
+**Kiểm lỗi**
+
+Nếu quên đạo hàm dây chuyền ở lần thứ hai với sin/cos hoặc mũ, đọc **Kiến thức 5.4**, làm **Bài 93** và **Bài 95**; lấy đạo hàm lần một chính xác rồi mới đạo hàm lần hai.
 
 </details>
 
@@ -801,6 +941,11 @@ v=10t m/s, a=10 m/s².
 
 Nếu nhầm đơn vị m/s, đó là vận tốc chứ không phải gia tốc.
 
+
+**Kiểm lỗi**
+
+Nếu nhầm gia tốc với vận tốc hoặc đơn vị m/s² thành m/s, đọc **Kiến thức 5.5**, làm **Bài 97** và **Bài 99**, tính a(t)=s''(t) sau v(t)=s'(t).
+
 </details>
 
 ### 5.6. Dấu vận tốc và gia tốc
@@ -825,6 +970,11 @@ Chẳng hạn, s(t)=−t², t>0: v=−2t<0, a=−2<0. Vì cùng dấu, |v|=2t đ
 Đang tăng tại thời điểm xét (v,a cùng dấu).
 
 Nếu viết gia tốc âm = giảm tốc độ, hãy thử v âm xem điều gì xảy ra với |v|.
+
+
+**Kiểm lỗi**
+
+Nếu cho rằng gia tốc âm luôn làm tốc độ giảm, đọc **Kiến thức 5.6**, làm **Bài 101** và **Bài 103**; khi v≠0 hãy xét dấu v·a, lưu ý điểm dừng phải xử lý riêng.
 
 </details>
 
@@ -851,6 +1001,11 @@ f(0)=1, f'(0)=0 ⇒ y=1; f''=2 không phải độ dốc.
 
 Nếu đặt f'' vào phương trình tiếp tuyến, quay lại ý nghĩa hình học O07–O08.
 
+
+**Kiểm lỗi**
+
+Nếu đặt f''(a) vào hệ số góc tiếp tuyến thay f'(a), đọc **Kiến thức 5.7**, giải **Bài 105** và **Bài 107**; kiểm điểm tiếp xúc và đạo hàm cấp một.
+
 </details>
 
 ### 5.8. Vi phân xấp xỉ
@@ -873,14 +1028,19 @@ Chẳng hạn, f=x²,a=3,dx=0,02: f'(3)=6 nên dy=0,12; Δy=(3,02)²−9=0,1204,
 
 **Lời giải:** f=x², a=4, dx=0,05. dy=2·4·0,05=0,4; Δy=0,4025. Sai lệch Δy−dy=0,0025=(dx)². Hình minh họa dùng a=2.
 
-**Vận dụng** f=x²,a=1,dx=0,1: dy và Δy lần lượt bằng?
+**Vận dụng** Với \(f(x)=1/x\), \(a=2\), \(dx=0{,}2\): (a) kiểm miền từ \(a\) tới \(a+dx\); (b) tính vi phân \(dy\) và độ tăng thật \(\Delta y\); (c) tìm \(|\Delta y-dy|\) và giải thích vì sao vi phân chỉ là xấp xỉ.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-dy=2·0,1=0,2; Δy=1,1²−1=0,21; sai lệch0,01.
+Vì \(f(x)=1/x\) có miền \(x\ne0\), cả đoạn \([2;2{,}2]\) đều thuộc miền. Ta có \(f'(x)=-1/x^2\), nên \(dy=f'(2)\,dx=(-1/4)(1/5)=-1/20=-0{,}05\). Độ tăng thật \(\Delta y=f(2{,}2)-f(2)=5/11-1/2=-1/22\approx-0{,}04545\). Sai số tuyệt đối \(|\Delta y-dy|=|-1/22+1/20|=1/220\approx0{,}00455\). Cả hai độ tăng đều âm, nhưng không bằng nhau khi bước \(dx\) hữu hạn.
 
-Nếu nói dy=Δy chính xác, khai triển bình phương để thấy thêm dx².
+Nếu em tính \(dy\) dương, kiểm dấu \(f'(2)<0\); nếu đặt \(dy=\Delta y\), so hai phân số \(-1/20\) và \(-1/22\). Với mô hình xấp xỉ phải kiểm tính khả vi tại a và bước đủ nhỏ trong miền.
+
+
+**Kiểm lỗi**
+
+Nếu cho rằng vi phân dy luôn bằng chính xác độ tăng Δy hoặc bỏ miền xác định, đọc **Kiến thức 5.8**, làm **Bài 50** (hàm phân thức, điều kiện mẫu) và **Bài 108** (tự tính sai số vi phân). Phân biệt xấp xỉ bậc nhất với độ tăng thật.
 
 </details>
 
@@ -2743,5 +2903,20 @@ Hãy tự giải 32 câu sau trước khi đối chiếu lại phần Luyện t�
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P32; NO_RD1; NO_MASTERY -->
 
 **Câu 32.** f(x)=x², x ban đầu a=2 và tăng Δx=0,1. Tính vi phân tuyến tính dy=f'(a)Δx, độ tăng thật Δy=f(2,1)−f(2), sai lệch |Δy−dy|; phát biểu điều kiện khi dùng xấp xỉ.
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi tự giải đủ 32 câu, em có thể mở **Lời giải** trong phần **Luyện tập** theo đúng bài ở bảng dưới. Nếu sai, quay lại mục Kiến thức tương ứng và tự làm lại trước khi xem lời giải.
+
+| Câu tự kiểm tra | Bài luyện tập chứa lời giải |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 – 5 – 6 – 7 – 8 | Bài 3 – 6 – 10 – 13 – 16 – 20 – 24 – 27 |
+| Câu 9 – 10 – 11 – 12 – 13 – 14 – 15 – 16 | Bài 31 – 35 – 38 – 41 – 44 – 48 – 52 – 56 |
+| Câu 17 – 18 – 19 – 20 – 21 – 22 – 23 – 24 | Bài 59 – 62 – 65 – 68 – 71 – 74 – 79 – 82 |
+| Câu 25 – 26 – 27 – 28 – 29 – 30 – 31 – 32 | Bài 85 – 88 – 91 – 95 – 99 – 103 – 107 – 108 |
+
+Các câu này là bài công khai đã xuất hiện trong Luyện tập; đây chỉ là **tự đối chiếu**, không phải kiểm tra năng lực độc lập hoặc ghi Mastery.
+
+</details>
 
 Nguồn: SGK Toán 11, tập Hai, Chương IX (Bài 31–33), bộ Kết nối tri thức với cuộc sống. Phần vi phân là mở rộng của Chuyên đề, không gán là Core SGK.
