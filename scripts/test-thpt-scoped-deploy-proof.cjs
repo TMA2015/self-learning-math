@@ -139,6 +139,14 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
   assert.equal(historic.length,5,"B26 history must include exactly five closed answer blocks");
   assert.deepEqual(candidate,historic,
     "B26 approved answers/rationales must be byte-identical after exact label normalization");
+ } else if(lesson==="docs/thpt-preview/sgk/chuong-ix/bai-27.md"&&
+    receipt.includes("G10-CHIX-B27-S1-GOLDEN-ENRICHMENT-Q18-R01-20261121")){
+  // B27 original five golden answers and their complete rationales are an
+  // immutable source bank, even though the learner-facing label is shorter.
+  const historical=b26CanonicalAnswers(before),candidate=b26CanonicalAnswers(now);
+  assert.equal(historical.length,5,"B27 baseline has five closed answer disclosures");
+  assert.deepEqual(candidate,historical,
+    "B27 five original answer/rationale disclosures must be byte-identical after label normalization");
  } else if(receipt.includes("G10-CHVIII-B23-G0G2-Q18") ||
     receipt.includes("G10-CHVIII-B23-VAN-DUNG-KIEM-LOI-R04-20261120")) {
   const original=b23CanonicalAnswers(before),candidate=b23CanonicalAnswers(now);
@@ -184,6 +192,21 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
     "n(\\Omega)>0","2.3. Nguyên lí xác suất bé"]){
     assert(now.includes(token),"B26 math migration lacks correct new equivalent "+token);
    }
+  }else if(lesson==="docs/thpt-preview/sgk/chuong-ix/bai-27.md"&&
+   receipt.includes("G10-CHIX-B27-S1-GOLDEN-ENRICHMENT-Q18-R01-20261121")){
+   // Explicitly self-audited pedagogical rewrite of three SGK methods.
+   // This checks a locked old/new SHA pair and fifteen moved/rephrased TeX
+   // occurrences, not a general permission to discard mathematics.
+   assert(receipt.includes("B27_AFFECTED_MATH_TOKEN_MIGRATION=15")&&
+    receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+    receipt.includes("DELTA_C_ACADEMIC_MATERIAL"),
+    "B27 changed source maths requires exact-scope Q18 evidence");
+   assert.equal(removedMathCount(before,now),15,
+    "B27 expected exactly 15 historical TeX tokens restructured");
+   for(const term of ["\\binom nk","\\binom{45}{6}","P(\\overline E)=1-P(E)",
+    "\\dfrac{25}{66}","P_5=\\dfrac{234}{\\binom{45}{6}}",
+    "THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"])
+    assert(now.includes(term),"B27 replacement math S1 outcome missing: "+term);
   } else {
    // The historical three narrowly owner-verified HELP context repairs:
    // B10 mismatched coordinates, B11 stale resultant-force data, B12 cube-root 7.
