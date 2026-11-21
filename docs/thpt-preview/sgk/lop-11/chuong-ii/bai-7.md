@@ -159,6 +159,8 @@
     \]
     </div>
 
+    **Trường hợp công bội bằng 0:** Khi \(q=0\), hiểu riêng \(u_1\) là số hạng đã cho và \(u_n=0\) với \(n\ge2\); không cần tính biểu thức không xác định \(0^0\) tại \(n=1\). Công thức \(u_n=u_1q^{n-1}\) áp dụng thông thường với \(q\ne0\); với \(q=0\) dùng trực tiếp hệ thức truy hồi.
+
     **Hệ quả ba số hạng:** Với các số hạng liên tiếp tồn tại \(u_{n-1},u_n,u_{n+1}\) (\(n\ge2\)),
     \[
        u_n^2=u_{n-1}u_{n+1}.
@@ -229,7 +231,7 @@
     <p><strong>Lời giải:</strong> \(S_5=\dfrac{4[1-(-2)^5]}{1-(-2)}=\dfrac{4(1+32)}3=44\).</p>
     <p><strong>Kiểm lại:</strong> \(4-8+16-32+64=44\).</p></div>
 
-    ### 3.5. Kiểm hệ thức trung bình nhân cùng dấu
+    ### 3.5. Kiểm hệ thức ba số hạng khi công bội âm
 
     <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Ba số liên tiếp \(-3,6,-12\) có tạo thành một cấp số nhân không? Hãy kiểm cả hệ quả ba số hạng và công bội.</p>
     <p><strong>Phân tích:</strong> Đẳng thức \(b^2=ac\) là điều kiện cần; ở bộ ba không có số hạng \(0\), kiểm tiếp tỉ số để xác định công bội.</p>
