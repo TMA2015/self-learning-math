@@ -40,6 +40,10 @@ Giải \(-3(x-2)\ge6\). Hãy giải thích bước nào buộc đổi chiều d�
 
 Khai triển \(-3x+6\ge6\), suy ra \(-3x\ge0\). Chia cho \(-3<0\), ta được \(x\le0\), kể cả \(x=0\) vì dấu ban đầu có bằng. Nếu em viết \(x\ge0\), hãy thử \(x=1\) trong đề gốc để thấy kết luận sai.
 
+**Kiểm lỗi**
+
+Nếu em quên đổi chiều khi chia cho số âm, thử thế một giá trị vào bất phương trình ban đầu để phát hiện sai miền nghiệm. Đọc lại **Kiến thức 1.1** rồi làm **Bài 1** trong Luyện tập; phải nêu rõ hệ số âm ở bước chia.
+
 </details>
 
 ## 2. Tại sao nghiệm của tam thức chia trục số thành các khoảng?
@@ -58,7 +62,7 @@ Muốn xét dấu một biểu thức bậc hai, trước tiên ta phải biết
 
 
 
-Khi hệ số của \(x\) là số chẵn, SGK còn dùng **biệt thức thu gọn** để tính ngắn hơn. Viết \(b=2b'\) (nghĩa là \(b'=b/2\)); khi đó phương trình \(ax^2+bx+c=0\) với \(a\ne0\) chính là \(ax^2+2b'x+c=0\). Không được tính \(\Delta'\) bằng cách thay nhầm \(b\) cho \(b'\), vì \(\Delta=4\Delta'\).
+Khi hệ số của \(x\) là số chẵn, ta có thể dùng **biệt thức thu gọn** để tính ngắn hơn. Viết \(b=2b'\) (nghĩa là \(b'=b/2\)); khi đó phương trình \(ax^2+bx+c=0\) với \(a\ne0\) chính là \(ax^2+2b'x+c=0\). Không được tính \(\Delta'\) bằng cách thay nhầm \(b\) cho \(b'\), vì \(\Delta=4\Delta'\).
 
 > **CÔNG THỨC — Biệt thức thu gọn và nghiệm tương ứng.** Với \(a\ne0\), \(b=2b'\), đặt \(\Delta'=(b')^2-ac\). Nếu \(\Delta'>0\) thì phương trình có hai nghiệm \(x=\dfrac{-b'\pm\sqrt{\Delta'}}{a}\); nếu \(\Delta'=0\) thì có một nghiệm kép \(x=-\dfrac{b'}{a}\); nếu \(\Delta'<0\) thì không có nghiệm thực. Hai biệt thức \(\Delta=b^2-4ac\) và \(\Delta'=(b')^2-ac\) đưa ra **cùng một tập nghiệm**, chỉ khác cách tính.
 
@@ -81,6 +85,10 @@ x²+2x+1 có Δ và nghiệm nào?
 Δ=0, nghiệm kép −1 vì (x+1)².
 
 Quên 2a hoặc sai dấu b thì thử nhân tích để kiểm nghiệm.
+
+**Kiểm lỗi**
+
+Nếu em nhầm hệ số \(b\) với \(b'=b/2\), nghiệm tính được sẽ sai dù quy trình xét dấu trông đúng. Xem **Kiến thức 2.1**, làm **Bài 3** rồi **Bài 4** để so trường hợp hai nghiệm và nghiệm kép; thế nghiệm ngược vào tam thức để kiểm.
 
 </details>
 
@@ -112,6 +120,10 @@ Xét ví dụ: 2x²+2x+3 có Δ=−20<0, a=2>0 ⇒ luôn dương; hoàn phương
 
 Nếu kết luận ‘không có nghiệm vì Δ<0’, thử x=0 trước khi quyết định.
 
+**Kiểm lỗi**
+
+Nếu thấy \(\Delta<0\) rồi kết luận biểu thức không dương hay âm ở đâu cả, em đã nhầm **không có nghiệm bằng 0** với **không có dấu**. Đọc **Kiến thức 2.2**, thử **Bài 5** và **Bài 6** bằng cách hoàn phương.
+
 </details>
 
 <!-- LESSON_ID: TOP02-M04; OUTCOME_ID: TOP02-O04; R04_BASE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1 -->
@@ -137,6 +149,10 @@ Giải (x+4)²≤0.
 Chỉ x=−4 vì bình phương ≥0.
 
 Nếu viết một khoảng, thử x=−3 để bác bỏ.
+
+**Kiểm lỗi**
+
+Nếu em vẽ bảng dấu đổi từ dương sang âm khi gặp nghiệm kép, hãy thử ở hai phía: \(3(1-2)^2=3\) và \(3(3-2)^2=3\). Đọc lại **Kiến thức 2.3**, rồi làm **Bài 7** và **Bài 8** để phân biệt nghiệm kép, dấu bằng và dấu của hệ số \(a\).
 
 </details>
 
@@ -168,6 +184,10 @@ Giải −(x+1)(x−4)>0.
 
 Nếu sai, thử một x nằm giữa nghiệm để đối chiếu dấu của hai thừa số.
 
+**Kiểm lỗi**
+
+Nếu chọn khoảng sai dấu, hãy thử mỗi miền bằng một giá trị cụ thể rồi nhìn dấu của từng thừa số, không chỉ nhìn sơ đồ. Ôn **Kiến thức 2.4**, làm **Bài 9** và **Bài 10** trong Luyện tập, nhớ tách hẳn hai nghiệm với các khoảng.
+
 </details>
 
 <!-- LESSON_ID: TOP02-M06; OUTCOME_ID: TOP02-O06; R04_BASE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1 -->
@@ -198,6 +218,10 @@ Giải −x²+4x−3>0.
 
 Nếu em lấy nhầm hai đầu mút \(x=1\) hoặc \(x=3\) cho bất phương trình \(-x^2+4x-3>0\), hãy thế lại: ở cả hai điểm, vế trái bằng \(0\), nên **không thỏa dấu \(>0\)**. Dấu \(\ge0\) mới cho phép lấy hai đầu mút.
 
+**Kiểm lỗi**
+
+Nếu em lấy \(x=1\) hoặc \(x=3\) cho dấu \(>0\), hãy thế vào đề gốc để thấy cả hai cho giá trị 0. Đọc **Kiến thức 2.5**, rồi so **Bài 11** (dấu nghiêm) với **Bài 12** (dấu có bằng).
+
 </details>
 
 <!-- LESSON_ID: TOP02-M07; OUTCOME_ID: TOP02-O07; R04_BASE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1 -->
@@ -224,6 +248,10 @@ Tìm m để x²−2mx+1≥0 mọi x.
 
 Nếu đang xét dấu nghiêm \(>0\) mà vẫn nhận biên \(\Delta=0\), hãy thử ngay tại nghiệm kép: giá trị tam thức bằng 0 nên phải loại. Ôn lại bằng Bài 17, phần (b)–(c), trong Luyện tập — bài này yêu cầu giải thích rõ vì sao \(m=2\) không được nhận.
 
+**Kiểm lỗi**
+
+Nếu em nhận cả \(m=\pm3\) khi yêu cầu tam thức **dương nghiêm ngặt với mọi x**, em đã nhầm \(\Delta<0\) với \(\Delta\le0\). Xem lại **Kiến thức 2.6**, giải **Bài 13** và **Bài 14**, rồi tự luận **Bài 17** để kiểm trực tiếp giá trị tại nghiệm kép.
+
 </details>
 
 <!-- LESSON_ID: TOP02-M08; OUTCOME_ID: TOP02-O08; R04_BASE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1 -->
@@ -249,6 +277,10 @@ h(t)=−t²+6t với t≥0; khi nào h≥8?
 (t−2)(t−4)≤0 ⇒ t∈[2,4].
 
 Nếu có nghiệm âm, kiểm lại điều kiện khi đặt biến thay vì nhận tất cả.
+
+**Kiểm lỗi**
+
+Nếu em cho nghiệm âm hoặc bỏ qua đơn vị thời gian/độ dài, kết quả đại số có thể không là phương án thực tế. Đọc **Kiến thức 2.7**, làm **Bài 15** và **Bài 16** trong Luyện tập; lấy giao với miền vật lý trước khi kết luận.
 
 </details>
 
@@ -286,6 +318,10 @@ Hợp lệ, (a,b)=(−1,0)≠(0,0); 0<1 đúng.
 
 Nếu nghĩ bắt buộc có cả x và y, kiểm điều kiện hệ số không đồng thời bằng 0.
 
+**Kiểm lỗi**
+
+Nếu em loại \(0x-3y>1\) chỉ vì không có \(x\) trong thực tế, hãy nhớ điều kiện là \((a,b)\ne(0,0)\), không cần cả hai khác 0. Quay lại **Kiến thức 3.1** rồi làm **Bài 18** và **Bài 32**.
+
 </details>
 
 <!-- LESSON_ID: TOP02-M10; OUTCOME_ID: TOP02-O10; R04_BASE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1 -->
@@ -311,6 +347,10 @@ Chẳng hạn, với \(x-2y>3\), điểm \((4,0)\) thỏa vì \(4>3\); điểm \
 (3,0) thỏa dấu bằng; O ngoài đường x+2y=3 nên thử phía được, nhưng O không thỏa BPT.
 
 Nếu điểm thử ở biên, chọn (1,0) hoặc (0,1) khác và thế lại.
+
+**Kiểm lỗi**
+
+Nếu em lấy một điểm **nằm trên đường biên** để quyết định phía tô, phép thử chỉ cho dấu bằng nên không xác định phía. Đọc **Kiến thức 3.2**, thực hiện **Bài 22** và **Bài 24** với điểm thử ngoài đường thẳng.
 
 </details>
 
@@ -342,6 +382,10 @@ Biên liền, O không thỏa 0≥4, tô phía y≥2−x/2.
 
 Tô sai? Thử O hoặc một điểm ngoài biên để kiểm dấu và đổi chiều.
 
+**Kiểm lỗi**
+
+Nếu em vẽ biên nét đứt cho dấu \(\ge\), em đã bỏ các phương án đạt **bằng** ngưỡng. Đọc **Kiến thức 3.3**, làm **Bài 20** và **Bài 21**; kiểm dấu bằng với một điểm trên đường thẳng trước khi tô miền.
+
 </details>
 
 <!-- LESSON_ID: TOP02-M12; OUTCOME_ID: TOP02-O12; R04_BASE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1 -->
@@ -367,6 +411,10 @@ Doanh thu mỗi loại 2 và 3 điểm, cần ít nhất 12. (3,2) đạt?
 2x+3y≥12; 2·3+3·2=12 đúng.
 
 Nhầm ít nhất với ≤ thì thử phương án bằng và thấp hơn ngưỡng để sửa.
+
+**Kiểm lỗi**
+
+Nếu em viết \(\le\) khi đề nói “ít nhất” hoặc quên \(x,y\) là số sản phẩm/vé, mô hình có thể nhận cả phương án sai thực tế. Đọc **Kiến thức 3.4**, làm **Bài 23** và **Bài 25**, kiểm đơn vị và tính nguyên không âm.
 
 </details>
 
@@ -398,6 +446,10 @@ Không, vì một giá trị t=x+y không thể vừa ≤5 và ≥7.
 
 Nếu nhầm giao thành hợp, lấy một điểm chỉ thỏa một điều kiện để bác bỏ.
 
+**Kiểm lỗi**
+
+Nếu em nhầm **giao** thành **hợp**, một điểm chỉ thỏa một bất phương trình sẽ bị nhận sai. Đọc **Kiến thức 3.5**, làm **Bài 26** và **Bài 29**: thay cùng một cặp \((x,y)\) vào **mọi** điều kiện của hệ.
+
 </details>
 
 <!-- LESSON_ID: TOP02-M14; OUTCOME_ID: TOP02-O14; R04_BASE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1 -->
@@ -421,6 +473,10 @@ Trên miền \(x\ge0,y\ge0\) không bị chặn, hàm mục tiêu \(F=-2x-y\) c�
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Miền \(x,y\ge0\) không bị chặn, nhưng \(F=-2x-y\le0\) nên có **giá trị lớn nhất bằng 0** tại \(O=(0,0)\). Không có giá trị nhỏ nhất hữu hạn: lấy \(x=t\ge0,y=0\), ta được \(F=-2t\to-\infty\) khi \(t\to+\infty\). Đây là lý do không được suy từ “miền không bị chặn” ra “không có mọi cực trị”.
+
+**Kiểm lỗi**
+
+Nếu thấy miền không bị chặn rồi kết luận không có cả giá trị lớn nhất lẫn nhỏ nhất, em đã bỏ qua chiều biến thiên của hàm mục tiêu. Đọc **Kiến thức 3.6**, rồi làm **Bài 29** (miền rỗng) và **Bài 30** (miền không bị chặn); chỉ kết luận sau khi kiểm trực tiếp hàm.
 
 </details>
 
@@ -456,6 +512,10 @@ Mọi điểm trên cạnh x+y=4 đều đạt 4, không chỉ một đỉnh.
 
 Nếu bỏ một đỉnh, vẽ từng đường và kiểm giao có thỏa tất cả ràng buộc.
 
+**Kiểm lỗi**
+
+Nếu em chỉ kiểm một đỉnh rồi nói đó là **nghiệm tối ưu duy nhất**, em có thể bỏ cả cạnh mà hàm mục tiêu không đổi. Đọc **Kiến thức 4.1**, so **Bài 33** (một đỉnh đạt cực đại) với **Bài 34** (mọi điểm trên cạnh đạt cực đại).
+
 </details>
 
 <!-- LESSON_ID: TOP02-M16; OUTCOME_ID: TOP02-O16; R04_BASE_BLOB: 907af796ff6f61dee518f7d25e5ff99cb23467f1 -->
@@ -481,6 +541,10 @@ x+2y≤4,2x+y≤4, x,y nguyên≥0, max F=x+y?
 Max nguyên 2 tại (2,0),(1,1),(0,2), dù liên tục có thể đạt 8/3.
 
 Nếu làm tròn tọa độ mà bỏ điều kiện, liệt kê từng y và x lớn nhất hợp lệ.
+
+**Kiểm lỗi**
+
+Nếu em làm tròn nghiệm tối ưu liên tục thành số nguyên mà không kiểm lại ràng buộc, kết quả có thể không khả thi hoặc chưa tối ưu. Đọc **Kiến thức 4.2**, thử **Bài 35** và **Bài 37** bằng liệt kê các cặp nguyên hợp lệ rồi so giá trị mục tiêu.
 
 </details>
 
@@ -1154,5 +1218,20 @@ Em hãy làm đủ 16 câu công khai dưới đây trước khi xem lại lời
 **Câu 16.** Với x,y là số nguyên không âm, x+2y≤5, 2x+y≤5, giá trị lớn nhất của 3x+2y là bao nhiêu?
 
 **Các phương án:** A. 7 | B. 8 | C. 25/3 | D. 9
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi làm xong 16 câu, em mở **Lời giải** của đúng bài tương ứng trong phần **Luyện tập** theo bảng dưới đây. Nếu còn sai, đọc lại **Kiểm lỗi** của mục Kiến thức liên quan rồi thử giải lại mà không nhìn đáp án.
+
+| Câu tự kiểm tra | Bài có lời giải trong Luyện tập |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 | Bài 1 – 3 – 5 – 7 |
+| Câu 5 – 6 – 7 – 8 | Bài 9 – 11 – 13 – 15 |
+| Câu 9 – 10 – 11 – 12 | Bài 18 – 19 – 20 – 23 |
+| Câu 13 – 14 – 15 – 16 | Bài 26 – 29 – 33 – 35 |
+
+Đây là tự đối chiếu những câu đã học, **không phải bài đánh giá năng lực độc lập** và không ghi Mastery.
+
+</details>
 
 Học liệu tham khảo SGK Toán 10 Kết nối tri thức với cuộc sống, Tập Một Chương II (Bài 3–4) và phần dấu tam thức bậc hai liên quan trong Tập Hai (Bài 17).
