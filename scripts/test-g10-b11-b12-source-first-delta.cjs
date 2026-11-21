@@ -81,8 +81,16 @@ for(const [id,chapter,n] of [["B11","iv",11],["B12","v",12]]){
    "\\(|\\vec F_1+\\vec F_2|^2=4^2+4^2+2\\cdot4\\cdot4\\cos60^\\circ=48\\)",
    "\\(4\\sqrt3\\,\\mathrm N\\)"])
    assert(current.includes(expr),"B11 material-delta force example missing "+expr);
-  assert(!current.includes("\\(120^\\circ\\)"),
-   "B11 previous 6N/120-degree wrong-context HELP must not reappear");
+  const forceAnchor='data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01"';
+  const forceStart=current.indexOf(forceAnchor);
+  assert(forceStart>=0,"B11 FORCE HELP canonical anchor must be preserved");
+  const rest=current.slice(forceStart);
+  const nextHeading=rest.search(/\n    #{3,4} |\n=== "/);
+  const forceHelp=nextHeading<0?rest:rest.slice(0,nextHeading);
+  assert(forceHelp.includes("\\(4\\sqrt3\\,\\mathrm N\\)")&&
+   forceHelp.includes("\\(60^\\circ\\)")&&
+   !forceHelp.includes("\\(120^\\circ\\)"),
+   "B11 corrected FORCE HELP must use 4N/60 degrees; unrelated example 6N/120 remains valid");
  }else{
   for(const expr of ["\\(\\sqrt[3]{11}\\)","\\(11^{(1/3)}\\)",
    "\\(2{,}224\\)","\\(2{,}2235^3<11<2{,}2245^3\\)"])
