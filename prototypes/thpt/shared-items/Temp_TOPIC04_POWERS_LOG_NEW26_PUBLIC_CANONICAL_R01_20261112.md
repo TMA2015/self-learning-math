@@ -237,7 +237,7 @@ role: TOPIC_PRACTICE
 difficulty_band: APPLY
 problem_family_id: TOP04-EXP_DECAY_DISCRETE
 **Đề:** Một quần thể giả định có 500 cá thể và giảm 20% sau mỗi chu kỳ, không có sinh nhập cư. Mô hình N(n)=500·0,8^n. Tính N(3) và diễn giải phạm vi mô hình.
-**Đáp án:** N(3)=256 cá thể theo giá trị kỳ vọng của mô hình; không bảo đảm số thực tế nếu tác động ngẫu nhiên.
+**Đáp án:** N(3)=256 cá thể **theo mô hình giảm cố định 20% mỗi chu kỳ**; đây là kết quả của công thức đã cho, không phải một kỳ vọng xác suất. Số lượng ngoài thực tế có thể khác khi các giả thiết của mô hình không còn đúng.
 **Lời giải có suy luận:** Mỗi chu kỳ nhân 1−0,2=0,8; ba chu kỳ 500·(4/5)³=500·64/125=256. Mô hình nhân cố định chỉ là giả thiết, không tính các biến cố ngẫu nhiên.
 **D6 tự khắc phục:** Nếu lấy 500−3·100=200, đó là giảm tuyến tính theo lượng cố định, không phải giảm 20% của lượng còn lại.
 
