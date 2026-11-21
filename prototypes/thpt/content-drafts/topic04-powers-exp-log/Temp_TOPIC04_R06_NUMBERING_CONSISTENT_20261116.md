@@ -44,6 +44,11 @@ Tính \(5^{-2}\cdot25\). Biểu thức \(0^{-1}\) có nghĩa không? Vì sao?
 
 \(5^{-2}\cdot25=\frac1{25}\cdot25=1\). \(0^{-1}\) không xác định vì dẫn tới phép chia cho 0. Nếu em nhầm dấu âm của số mũ thành dấu âm của giá trị, hãy so \(-2^2=-4\) với \(2^{-2}=1/4\).
 
+
+**Kiểm lỗi**
+
+Nếu nghĩ số mũ âm làm kết quả âm, đọc lại **Kiến thức 1.1** rồi giải **Bài 13** và **Bài 11**: viết thành phân số nghịch đảo và kiểm điều kiện cơ số khác 0.
+
 </details>
 
 <!-- LESSON_ID: TOP04-M02; OUTCOME_ID: TOP04-O02; R04_SNAPSHOT: 1f51b01357f87359b689131fd6afcc1ad998209d -->
@@ -89,6 +94,11 @@ Tính 27^(2/3) và ³√(−27).
 
 Nếu chỉ nhận nghiệm dương khi giải x⁴=16, thử số đối; nếu đổi dấu căn bậc chẵn, nhớ căn số học ≥0.
 
+
+**Kiểm lỗi**
+
+Nếu nhầm căn bậc chẵn số học với cả hai nghiệm của phương trình, đọc **Kiến thức 1.2**, làm **Bài 14** rồi **Bài 5**; luôn kiểm dấu của căn và trường hợp bậc lẻ.
+
 </details>
 
 <!-- LESSON_ID: TOP04-M03; OUTCOME_ID: TOP04-O03; R04_SNAPSHOT: 1f51b01357f87359b689131fd6afcc1ad998209d -->
@@ -121,6 +131,11 @@ So sánh (1/3)^(√3) với (1/3)^2.
 
 Nếu đảo dấu sai, dùng x=0 và x=1 để quan sát 1 và cơ số a; xem lại mục Kiến thức 1.3 về chiều tăng/giảm của lũy thừa khi cơ số lớn hơn 1 hoặc nằm giữa 0 và 1.
 
+
+**Kiểm lỗi**
+
+Nếu so sánh mũ thực mà giữ chiều như cơ số lớn hơn 1, quay lại **Kiến thức 1.3**, giải **Bài 15** và **Bài 16**, dùng cơ số trong khoảng (0,1) để thử ngược kết luận.
+
 </details>
 
 <!-- LESSON_ID: TOP04-M04; OUTCOME_ID: TOP04-O04; R04_SNAPSHOT: 1f51b01357f87359b689131fd6afcc1ad998209d -->
@@ -148,6 +163,11 @@ Với a>0, rút gọn a^(3/4)·a^(−1/4)/√a.
 Bằng a^(3/4−1/4−1/2)=1; giữ a>0 để mẫu và mũ hữu tỉ được xác định.
 
 Nếu cộng số mũ cho phép **cộng** hai lũy thừa, thử 2²+2³=12 khác 2⁵=32.
+
+
+**Kiểm lỗi**
+
+Nếu rút gọn lũy thừa mà quên \(a>0\) hoặc dùng nhầm quy tắc cộng hai lũy thừa, đọc **Kiến thức 1.4**, làm **Bài 17** và **Bài 9**; thế một số dương để kiểm kết quả.
 
 </details>
 
@@ -250,6 +270,11 @@ log₂(24/3)=log₂8=3 vì hai đối số dương và 2³=8.
 
 Nếu viết log(x+y)=log x+log y, thử x=y=1: log2≠0; phân biệt tổng với tích.
 
+
+**Kiểm lỗi**
+
+Nếu tự ý biến \(\log_a(x+y)\) thành hai lôgarit, đọc **Kiến thức 2.3**, làm **Bài 22** và **Bài 32**; chỉ dùng quy tắc tích/thương sau khi kiểm từng đối số dương.
+
 </details>
 
 <!-- LESSON_ID: TOP04-M08; OUTCOME_ID: TOP04-O08; R04_SNAPSHOT: 1f51b01357f87359b689131fd6afcc1ad998209d -->
@@ -286,6 +311,11 @@ ln2/ln8=1/3 (hoặc 8^(1/3)=2).
 
 Nếu tính log_(1/9)3=+1/2, kiểm cơ số nhỏ 1 và thử lũy thừa.
 
+
+**Kiểm lỗi**
+
+Nếu dấu của lôgarit cơ số nhỏ hơn 1 hoặc phép đổi cơ số bị nhầm, đọc **Kiến thức 2.4**, làm **Bài 26** rồi **Bài 33**, so lại với định nghĩa lũy thừa.
+
 </details>
 
 
@@ -321,6 +351,11 @@ Không: 2^x>0 mọi x∈ℝ, chỉ tiến dần về 0 khi x→−∞.
 
 Nếu nhầm số rất nhỏ với 0, thử x=−10 và viết 2^(−10)=1/1024>0.
 
+
+**Kiểm lỗi**
+
+Nếu cho rằng \(2^x=0\) có nghiệm, đọc **Kiến thức 3.1** rồi làm **Bài 36** và **Bài 46**; phân biệt tiệm cận ngang với điểm thuộc đồ thị.
+
 </details>
 
 <!-- LESSON_ID: TOP04-M10; OUTCOME_ID: TOP04-O10; R04_SNAPSHOT: 1f51b01357f87359b689131fd6afcc1ad998209d -->
@@ -349,6 +384,11 @@ So (1/5)^(−1) và (1/5)^2.
 
 Nếu luôn giữ dấu so sánh khi bỏ mũ, vẽ hai điểm 0,1 trên đồ thị để sửa.
 
+
+**Kiểm lỗi**
+
+Nếu so sánh hai lũy thừa cơ số 0<a<1 mà không đảo chiều, đọc **Kiến thức 3.2**, thực hiện **Bài 37** và **Bài 41** với điểm thử 0,1.
+
 </details>
 
 <!-- LESSON_ID: TOP04-M11; OUTCOME_ID: TOP04-O11; R04_SNAPSHOT: 1f51b01357f87359b689131fd6afcc1ad998209d -->
@@ -376,6 +416,11 @@ Với y=log₂x, giá trị tại x=1/8 và x=8 là gì?
 log₂(1/8)=−3, log₂8=3, hàm tăng vì cơ số 2>1.
 
 Nếu đặt điểm x=0 lên đồ thị log, hỏi cơ số nào lũy thừa ra 0 (không có).
+
+
+**Kiểm lỗi**
+
+Nếu nhận \(x\le0\) vào tập xác định của \(\log_a x\), đọc **Kiến thức 3.3**, thử **Bài 38** và **Bài 40**; kiểm từng tọa độ theo điều kiện đối số dương.
 
 </details>
 
@@ -548,6 +593,11 @@ Miền x>−1; log giảm nên x+1<4 ⇒ x<3; S=(−1,3).
 
 Nếu em nhận đầu mút \(x=-2\) hoặc \(x=6\) trong **Ví dụ**, một đối số bằng 0 nên lôgarit không xác định; xét lại điều kiện trước khi so sánh. Với câu Vận dụng, hai đầu mút phải loại là \(x=-1\) và \(x=3\) (đầu thứ hai là biên bất phương trình nghiêm, không phải biên miền).
 
+
+**Kiểm lỗi**
+
+Nếu quên giao miền đối số dương hoặc không đảo dấu khi cơ số 0<a<1, đọc **Kiến thức 4.4**, làm **Bài 54** và **Bài 58**; kiểm riêng từng điểm biên.
+
 </details>
 
 
@@ -575,11 +625,11 @@ Chẳng hạn, 200 triệu đồng lãi gộp 5%/năm, sau 2 năm có 200·1,05�
 
 **Vận dụng**
 
-Với số lượng 500 giảm 20% mỗi kỳ, tính sau 3 kỳ theo mô hình.
+Một quần thể giả định ban đầu có 640 cá thể và giảm 25% mỗi kỳ theo quy tắc nhân cố định. Tính số lượng theo mô hình sau 2 kỳ; vì sao không trừ 160 cá thể ở mỗi kỳ?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-N(3)=500·0,8³=256. Giảm 20% trên số còn lại mỗi kỳ, không trừ 100 cố định mỗi lần.
+Sau 2 kỳ, mô hình cho \(N(2)=640\cdot(0{,}75)^2=360\) cá thể. Mỗi kỳ số còn lại nhân với \(0{,}75\): kỳ 1 còn 480, kỳ 2 còn 360. Nếu trừ cố định 160 cá thể mỗi kỳ thì chỉ còn 320, không phải quy tắc giảm 25% của số còn lại. Đây là kết quả của mô hình giả định, không phải dự đoán chắc chắn số lượng ngoài thực tế.
 
 Nếu tăng/giảm tuyến tính theo số cộng, kiểm tỷ lệ thực mỗi năm; làm lại Bài 73, Bài 75 (mô hình tăng/giảm theo kỳ) và Bài 65 (lãi kép) trong phần Luyện tập.
 
@@ -608,6 +658,11 @@ Giải \(\log_3(x-1)=1+\log_3(5-x)\). Hãy nêu miền trước khi dùng quy t�
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Điều kiện \(x-1>0\), \(5-x>0\), tức \(1<x<5\). Vì \(1=\log_3 3\), ta có \(\log_3(x-1)=\log_3[3(5-x)]\). Hai đối số dương và cơ số 3 hợp lệ nên \(x-1=15-3x\), suy ra \(x=4\). Thử: \(\log_3 3=1+\log_3 1=1\). Nếu em bỏ điều kiện và nhận nghiệm ngoài (1,5), quay lại bước xác định miền trước khi giải.
+
+
+**Kiểm lỗi**
+
+Nếu giải phương trình logarit rồi quên lọc nghiệm theo đồng thời hai đối số, đọc **Kiến thức 5.2** rồi thử **Bài 67** và **Bài 69**; chỉ kết luận sau khi thế vào phương trình gốc.
 
 </details>
 
@@ -1692,7 +1747,7 @@ Mô hình P(n)=60(1,2)^n triệu đồng, n nguyên không âm. (a) Năm đầu 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP04-P21; ORIGINAL_BLOB: 004692a2d996b5ba955318a087f4d58dcdb2df04; OUTCOME: TOP04-O17; NOT_NEW_BANK -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-TOP04-P21; ORIGINAL_BLOB: 377de2e2e9fb6771f02270e8d85e950559669895; OUTCOME: TOP04-O17; NOT_NEW_BANK -->
 
 **Bài 73.**
 
@@ -1700,7 +1755,7 @@ Một quần thể giả định có 500 cá thể và giảm 20% sau mỗi chu 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** N(3)=256 cá thể theo giá trị kỳ vọng của mô hình; không bảo đảm số thực tế nếu tác động ngẫu nhiên.
+**Đáp án:** N(3)=256 cá thể **theo mô hình giảm cố định 20% mỗi chu kỳ**; đây là kết quả của công thức đã cho, không phải một kỳ vọng xác suất. Số lượng ngoài thực tế có thể khác khi các giả thiết của mô hình không còn đúng.
 
 Mỗi chu kỳ nhân 1−0,2=0,8; ba chu kỳ 500·(4/5)³=500·64/125=256. Mô hình nhân cố định chỉ là giả thiết, không tính các biến cố ngẫu nhiên.
 
@@ -1813,5 +1868,21 @@ Hãy tự làm đủ 18 câu trước khi xem lại lời giải. Đây là các
 <!-- PUBLIC_REPLAY_ONLY: THPT-G11-CHVI-B21-P05; ORIGINAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872; OUTCOME: TOP04-O18; NO_MASTERY; NOT_RD1 -->
 
 **Câu 18.** Giải log₃(x−4)=log₃(2−x) trên ℝ.
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi tự hoàn thành 18 câu, em tìm **Lời giải** của đúng bài trong phần **Luyện tập** theo bảng sau. Chỉ mở lời giải khi em đã tự thử; nếu còn sai, theo mục Kiểm lỗi của Kiến thức tương ứng để làm lại.
+
+| Câu tự kiểm tra | Bài có lời giải trong Luyện tập |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 | Bài 1 – 2 – 4 – 6 |
+| Câu 5 – 6 – 7 – 8 | Bài 19 – 21 – 22 – 26 |
+| Câu 9 – 10 – 11 – 12 | Bài 36 – 37 – 38 – 39 |
+| Câu 13 – 14 – 15 – 16 | Bài 51 – 52 – 53 – 54 |
+| Câu 17 – 18 | Bài 65 – 67 |
+
+Đây là **tự đối chiếu bài công khai đã học**, không phải đánh giá năng lực độc lập và không ghi Mastery.
+
+</details>
 
 Học liệu tham khảo SGK Toán 11, Tập Hai, Chương VI (Bài 18–21), bộ Kết nối tri thức với cuộc sống.
