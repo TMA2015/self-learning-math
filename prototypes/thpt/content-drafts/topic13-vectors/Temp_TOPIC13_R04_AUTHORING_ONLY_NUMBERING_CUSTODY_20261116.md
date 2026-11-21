@@ -1,3 +1,8 @@
+<!-- TOP13_MASTER974_CURRENT_AUTHOR_CUSTODY_20261121 -->
+**Current effective one R07 CĐ13 learner on existing R04 path** `prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md` Git blob **`893829bacc3b4bae8c1463b1bdb0ebbd9857831f`**, existing Q18 affected author self review blob `9c902eb7d5c8fcf5eb62690fa8e2b9a6c3d5cad7` v3.2.0; original Topic NEW20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563` untouched. Current #977-042–044: all **16** Knowledge Kiểm lỗi use true numbers and specific student misconceptions, one optional public Selfcheck exact 16-ID answer-location map, **52 unique Bài luyện** captions and one SGK chapter source-credit footer; 52 existing canonical Practice math/answer/solution/4 Written rubrics, 16 public original Selfcheck stems and 4 SVG unchanged, 69/69 balanced disclosures. Historical original source and receipt snapshots remain immutable. **Known canonical-source exception:** item `THPT-G10-B07-P04` displays “SGK/SBT” in its original question and answer; this contextual phrase must be resolved by original G10 source owner on external PR #750 if enforcing literal no source-name beyond footer. It is not a second bibliography entry; do not alter original item in Topic independently or call perfect literal one-source wording. Affected source Q18 AUTHOR_SELF_VERIFIED; no independent NotebookLM Topic PASS, official RD1/Final Submit/Mastery or website release. RELEASE combined-HEAD must reconcile original G10 source blob and original item owner.
+
+---
+
 <!-- TOP13_S1_B08_B09_PROPERTIES_A1_20261120 -->
 **20/11 S1 G10 B08/B09 extra mandatory outcome coverage:** TOP13-M03/O03 now explicitly lists vector addition commutativity, associativity and zero; TOP13-M05/O05 now lists scalar/vector distributivity, scalar associativity and identity. Current learner blob `fcac52eb1263eb3c91799a647aad184f08952d34` and affected Q18 self-QA `74f6661547f5a1a38ab8c103f85988a8ef9d8d2b`. 10/10 math/source/ID checks; original Q15 stem/key/placement/rubric unchanged, old educational snapshots immutable. DELTA_C_ACADEMIC_MATERIAL, author CONTENT_READY maintained, full 22-topic S1 audit not yet complete.
 
@@ -18,18 +23,18 @@ CONTENT_REVISION: R07_EDITORIAL_FINAL_20261118
 PUBLIC_NEW20_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_NEW20_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 Q18_R04_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-Q18_R04_RECEIPT_BLOB: df60f4ef23e6782f54c851f585789b210b6ea2a1
+Q18_R04_RECEIPT_BLOB: 9c902eb7d5c8fcf5eb62690fa8e2b9a6c3d5cad7
 G10_SOURCE_EXTERNAL_PR: 750
 G10_SOURCE_EXTERNAL_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
-AUTHORING_STATUS: FULL_S1_KNOWLEDGE_AUTHOR_SELF_VERIFIED
+AUTHORING_STATUS: CURRENT_R07_TOPIC13_16_PED6_52_UNIQUE_AUTHOR_SELF_VERIFIED
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: b89f0309213a357768c4b3a94da474b6dbc0ac3c
-SOURCE_BLOB: b89f0309213a357768c4b3a94da474b6dbc0ac3c
+ACADEMIC_SOURCE_BLOB: 893829bacc3b4bae8c1463b1bdb0ebbd9857831f
+SOURCE_BLOB: 893829bacc3b4bae8c1463b1bdb0ebbd9857831f
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
