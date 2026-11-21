@@ -1,21 +1,29 @@
+<!-- G12_CHV_R01_CANONICAL_W07_V2_AUTHORING_LOCK_20261120 -->
+## Current R01 packet content revision W07 version2 — preserve old signed snapshot
+
+Current ONE active canonical source path `prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md` now Git blob `a24abd682932e11761f7c85fa3a3d3cdd77b600e` (one reviewed Delta C: W07 stem, answer, proof, rubric and CONTENT_VERSION2). Original previously accepted R01 source blob `11eb2834cfdb4a24685157f84666c2bb0767970a` is immutable in Git and the old signed manifest archived; all 95 other items/source bytes remain unchanged. It is not a second active canonical. The 79-SGK catalog packet remains `G12-SGK-CHV-B14-B17-R01` as the built-in gate requires, and this **new signed content revision** is governed by standard v3.2.0; earlier inline metadata/receipts are historical.
+
+SCOPED_INDEPENDENT_VERDICT: Academic PASS, PED PASS, P0/P1/P2 0/0/0, MINIMAL_DELTA NONE (only THPT-G12-B14-W07 v2; Topic18 O38/O23/O40 context). Original R01 outcomes and remaining 95 items carry previous independent signed evidence without blanket rereview. New content source `a24abd...`, composite new independent receipt `811114aebcf53743375b2f546b0a9cdf391f7c01`. Old SBT p25 provenance is nonblocking to proved mathematics. 24 outcomes/96 public canonical, B14 O07 optional after B17, 28 private RD1 not published. AUTHORING only — RELEASE gates still hold, no merge/deploy/Final Submit/Mastery.
+
+---
 # G12-SGK-CHV-B14-B17-R01 — AUTHORING V2 CONTENT_READY on source-lock snapshot, RELEASE HOLD
 PACKET_ID: G12-SGK-CHV-B14-B17-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 1.1.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: a4a3055000ac6d657b42fbe396ed3aae3d04cdbb
-AUTHOR_PR: 725
-CURRENT_PR: #725 Draft AUTHORING, source-locked no website release
+SOURCE_COMMIT: 0ea6dc4ce2670ac1f3f098ce63cb3f0a0967c47f
+AUTHOR_PR: 896
+CURRENT_PR: #896 Draft AUTHORING, source-locked no website release
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
-ACADEMIC_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHV_R01_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
-REVIEW_RECEIPT_BLOB: a07070119259bd0133535fc3250d008cd78d8195
-REVIEW_RECEIPT: prototypes/thpt/review-packets/G12_CHV_R01_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
-AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G12-SGK-CHV-B14-B17-R01_HANDOFF_V2_20261103.md
+ACADEMIC_SOURCE_BLOB: a24abd682932e11761f7c85fa3a3d3cdd77b600e
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_G12_CHV_R01_W07V2_ACTIVE_SCOPED_INDEPENDENT_COMPOSITE_20261120.md
+REVIEW_RECEIPT_BLOB: 811114aebcf53743375b2f546b0a9cdf391f7c01
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_G12_CHV_R01_W07V2_ACTIVE_SCOPED_INDEPENDENT_COMPOSITE_20261120.md
+AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G12-SGK-CHV-B14-B17-R01_W07V2_HANDOFF_V2_20261120.md
 ACADEMIC_VERDICT: PASS_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: PASS_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE

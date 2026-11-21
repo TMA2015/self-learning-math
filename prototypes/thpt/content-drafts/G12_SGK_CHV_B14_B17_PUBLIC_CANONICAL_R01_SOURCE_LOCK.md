@@ -623,11 +623,11 @@ ASSESSMENT: CLIENT_SELF_CHECK_NO_MASTERY, public answer data must be hidden by R
 - **Lời giải có suy luận:** h=6<R=10 nên r=√(100−36)=8m.
 
 #### THPT-G12-B14-W07 — SGK_WRITTEN
-- `ITEM_ID`: `THPT-G12-B14-W07` · `OUTCOME_ID`: `G12-CHV-B14-O07` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Giải thích ba trường hợp giao của cầu tâm cách mặt phẳng h và bán kính R.
-- **Đáp án canonical (chỉ mở khi được phép):** h<R: hình tròn; h=R: tiếp xúc; h>R: không giao.
-- **Lời giải có suy luận:** Dùng vuông góc tâm–mặt phẳng và r²=R²−h² khi vế phải không âm.
-- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định khoảng cách tâm–mặt và điều kiện h so R; 1đ lập r²+h²=R²; 1đ tính bán kính/3 trường hợp; 1đ giải thích ý nghĩa vật lý.
+- `ITEM_ID`: `THPT-G12-B14-W07` · `OUTCOME_ID`: `G12-CHV-B14-O07` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3 · `CONTENT_VERSION`: 2
+- **Đề duy nhất:** Cho **mặt cầu** tâm I, bán kính R>0 và mặt phẳng (P) cách I một khoảng h≥0. Giải thích ba trường hợp giao của **mặt cầu** với (P), nêu rõ giao là đường tròn, một điểm hay không có điểm chung.
+- **Đáp án canonical (chỉ mở khi được phép):** Với \(h<R\), giao của **mặt cầu** và mặt phẳng là **đường tròn** bán kính \(r=\sqrt{R^2-h^2}\), không phải hình tròn chứa phần bên trong; với \(h=R\), tiếp xúc tại một điểm; với \(h>R\), không có điểm chung.
+- **Lời giải có suy luận:** Gọi H là hình chiếu vuông góc của I lên (P), IH=h. Khi 0≤h<R, với mọi M thuộc giao tuyến, tam giác IHM vuông tại H nên HM²=IM²−IH²=R²−h²>0: M nằm trên đường tròn tâm H, bán kính r=√(R²−h²), không phải cả đĩa tròn. Khi h=R, HM=0 nên chỉ H thuộc giao; h>R làm HM²<0 nên không có điểm chung.
+- **Rubric Written /5 (chấm theo từng bước):** 2đ xác định h, R và phân loại đúng h<R, h=R, h>R; 1đ dựng H và giải thích tam giác vuông IHM; 1đ suy ra r²+h²=R² và bán kính khi h<R; 1đ phân biệt đường tròn thuộc **mặt cầu** với hình tròn (đĩa) thuộc **khối cầu**, đồng thời kết luận đúng trường hợp tiếp xúc/không giao.
 - **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery từ câu tự luận chưa chấm độc lập.
 
 #### HELP-G12-B14-07 — D6 khắc phục theo đúng outcome
