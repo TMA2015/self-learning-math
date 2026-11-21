@@ -1,6 +1,6 @@
 # Chuyên đề 19 — Đại số tổ hợp và Nhị thức Newton
 
-<!-- AUTHORING_R10_LANGUAGE_CANDIDATE; PREVIOUS_R09_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d; Q18_TARGETED_RECHECK_PENDING; NOT_CONTENT_READY; PREVIOUS_R08_SOURCE_BLOB: 989c648e2218096aa63696e1852562d79f40949c; G10_SGK_SHARED_CANONICAL_JS_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; EXACT_25_SOURCE_DISPLAYS; PUBLIC_SELF_CHECK_ONLY; NO_RD1; NO_RELEASE -->
+<!-- CURRENT_R11_ONE_LEARNER_AUTHORING_TARGETED_DELTA_20261121; PREVIOUS_R09_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d; CURRENT_Q18_EVIDENCE_EXTERNAL_SOURCE_LOCK; PREVIOUS_R08_SOURCE_BLOB: 989c648e2218096aa63696e1852562d79f40949c; G10_SGK_SHARED_CANONICAL_JS_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; EXACT_25_SOURCE_DISPLAYS; PUBLIC_SELF_CHECK_ONLY; NO_RD1; NO_RELEASE -->
 
 # Kiến thức
 
@@ -42,14 +42,16 @@ Một kết quả hoàn chỉnh ở đây chỉ là **một** câu lạc bộ. C
 
 **Vận dụng**
 
-Một tủ sách có 5 truyện khác nhau và 2 sách tranh khác nhau. Chọn đúng một cuốn để đọc. Hỏi có mấy cách?
+Một tủ sách có 5 truyện khác nhau và 4 sách tranh khác nhau, không có cuốn nào trùng hai nhóm. Chọn đúng một cuốn để đọc. Hỏi có mấy cách?
 
-<!-- ITEM_ID: THPT-TOP19-T01; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O01; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP19-T01; CONTENT_VERSION: TOP19-R11-20261121-T01; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O01; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**7 cách**, vì hai nhóm cuốn sách không trùng nhau và mỗi kết quả chỉ lấy đúng một cuốn: 5+2=7.
+**9 cách**, vì hai nhóm cuốn sách không trùng nhau và mỗi kết quả chỉ lấy đúng một cuốn: 5+4=9.
 
-**Khi làm sai:** Nếu tính 5×2, hãy thử viết một kết quả: chỉ tên **một** cuốn sách, không phải một cặp. Quay lại xem điều kiện “hoặc”.
+**Kiểm lỗi**
+
+Nếu tính 5×2, hãy thử viết một kết quả: chỉ tên **một** cuốn sách, không phải một cặp. Quay lại xem điều kiện “hoặc”. Đọc lại **Kiến thức 1.1**, sau đó thử **Bài luyện 1** và **Bài luyện 3** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -81,14 +83,16 @@ Nếu có \(m\) kiểu áo và với **mỗi kiểu áo** đều ghép được 
 
 **Vận dụng**
 
-Có 4 loại áo và 3 kiểu huy hiệu. Mỗi bộ quà gồm đúng một loại áo và một kiểu huy hiệu. Hỏi có bao nhiêu bộ quà khác nhau?
+Có 5 loại áo và 3 kiểu huy hiệu, mỗi loại áo đều có thể ghép với đủ ba kiểu huy hiệu. Mỗi bộ quà gồm đúng một loại áo và một kiểu huy hiệu. Hỏi có bao nhiêu bộ quà khác nhau?
 
-<!-- ITEM_ID: THPT-TOP19-T02; CONTENT_VERSION: TOP19-R10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O02; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP19-T02; CONTENT_VERSION: TOP19-R11-20261121-T02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O02; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**12 bộ.** Với mỗi loại trong 4 loại áo đều có 3 cách chọn huy hiệu, nên theo quy tắc nhân ta có \(4\cdot3=12\) bộ.
+**15 bộ.** Với mỗi loại trong 5 loại áo đều có 3 cách chọn huy hiệu, nên theo quy tắc nhân ta có \(5\cdot3=15\) bộ.
 
-**Khi làm sai:** Nếu được 7, em có thể đã cộng \(4+3\). Hãy vẽ bảng gồm 4 hàng cho các loại áo và 3 cột cho các kiểu huy hiệu. Mỗi ô là một bộ quà; đếm tất cả các ô để kiểm tra phép nhân.
+**Kiểm lỗi**
+
+Nếu được 8, em có thể đã cộng \(5+3\). Hãy vẽ bảng gồm 5 hàng cho các loại áo và 3 cột cho các kiểu huy hiệu. Mỗi ô là một bộ quà; đếm đủ 15 ô để kiểm tra phép nhân. Đọc lại **Kiến thức 1.2**, sau đó thử **Bài luyện 4** và **Bài luyện 7** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -129,7 +133,9 @@ Từ {0,1,2,3,4} lập số tự nhiên có hai chữ số khác nhau. Có bao n
 
 Hàng chục có 4 cách (1–4); hàng đơn vị còn 4 cách (kể cả 0 nếu chưa dùng): 4×4=**16** số.
 
-**Khi làm sai:** Nếu có 20, em đã cho chữ số hàng chục nhận 0. Nếu có 12, em có thể đã loại 0 khỏi cả hàng đơn vị.
+**Kiểm lỗi**
+
+Nếu có 20, em đã cho chữ số hàng chục nhận 0. Nếu có 12, em có thể đã loại 0 khỏi cả hàng đơn vị. Đọc lại **Kiến thức 1.3**, sau đó thử **Bài luyện 8** và **Bài luyện 9** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -168,7 +174,9 @@ Từ {0,1,2,3} lập số chẵn có hai chữ số khác nhau. Có bao nhiêu s
 
 Đơn vị 0: hàng chục có 3 cách; đơn vị 2: hàng chục chỉ 1 hoặc 3, có 2 cách; tổng **3+2=5** số.
 
-**Khi làm sai:** Nếu em nhân 2×3, hãy xét riêng đuôi 0: hàng chục có 3 lựa chọn, còn đuôi 2 chỉ có 2.
+**Kiểm lỗi**
+
+Nếu em nhân 2×3, hãy xét riêng đuôi 0: hàng chục có 3 lựa chọn, còn đuôi 2 chỉ có 2. Đọc lại **Kiến thức 1.4**, sau đó thử **Bài luyện 10** và **Bài luyện 12** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -212,7 +220,9 @@ Có 5 học sinh khác nhau xếp thành một hàng, không ràng buộc. Có b
 
 Hoán vị cả 5 học sinh, mỗi người một vị trí: 5!=**120**.
 
-**Khi làm sai:** Nếu em dùng tổ hợp, hãy đổi chỗ hai học sinh; thứ tự hàng đổi thành kết quả khác, do đó phải đếm tất cả thứ tự.
+**Kiểm lỗi**
+
+Nếu em dùng tổ hợp, hãy đổi chỗ hai học sinh; thứ tự hàng đổi thành kết quả khác, do đó phải đếm tất cả thứ tự. Đọc lại **Kiến thức 2.1**, sau đó thử **Bài luyện 14** và **Bài luyện 17** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -247,7 +257,9 @@ Từ 6 bạn chọn một trưởng nhóm và một phó nhóm khác nhau. Có b
 
 Hai vai phân biệt, lần lượt 6 rồi 5 lựa chọn: A(6,2)=**30**.
 
-**Khi làm sai:** Nếu ra 15, em đang coi A làm trưởng/B làm phó giống B trưởng/A phó; hãy viết hai kết quả để thấy khác.
+**Kiểm lỗi**
+
+Nếu ra 15, em đang coi A làm trưởng/B làm phó giống B trưởng/A phó; hãy viết hai kết quả để thấy khác. Đọc lại **Kiến thức 2.2**, sau đó thử **Bài luyện 18** và **Bài luyện 20** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -290,7 +302,9 @@ Chọn một nhóm 3 người từ 6 người khác nhau, không phân vai. Có 
 
 C(6,3)=6×5×4/(3×2×1)=**20** nhóm.
 
-**Khi làm sai:** Nếu em ra 120, đó là số thứ tự của bộ ba; mỗi nhóm bị đếm 3!=6 lần, phải chia 6.
+**Kiểm lỗi**
+
+Nếu em ra 120, đó là số thứ tự của bộ ba; mỗi nhóm bị đếm 3!=6 lần, phải chia 6. Đọc lại **Kiến thức 2.3**, sau đó thử **Bài luyện 21** và **Bài luyện 22** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -325,7 +339,9 @@ Từ 4 bạn nữ và 3 bạn nam chọn nhóm 3 người gồm đúng 2 nữ, 1
 
 Chọn 2 nữ trong 4: C(4,2)=6; chọn 1 nam trong 3: 3. Nhân: **18** nhóm.
 
-**Khi làm sai:** Nếu tính A(4,2)×3, em đã phân biệt thứ tự hai nữ; bài này chỉ chọn nhóm nên dùng tổ hợp.
+**Kiểm lỗi**
+
+Nếu tính A(4,2)×3, em đã phân biệt thứ tự hai nữ; bài này chỉ chọn nhóm nên dùng tổ hợp. Đọc lại **Kiến thức 2.4**, sau đó thử **Bài luyện 23** và **Bài luyện 25** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -361,7 +377,9 @@ Từ 8 ứng viên khác nhau, chọn 3 bạn giữ ba vai trò phân biệt. H�
 
 Ba vai khác nhau, nên dùng **nPr** (chỉnh hợp): A(8,3)=8×7×6=**336** cách. Trên máy có `nPr`, tính `8 nPr 3`; trên máy không có, nhân ba số giảm dần 8·7·6. Không dùng C(8,3) vì đó là chọn **nhóm không phân vai**.
 
-**Khi làm sai:** Nếu kết quả ra 56, em mới chọn hai vai thay vì ba. Nếu ra C(8,3)=56, em quên **ba vai phân biệt**; so A(8,3)=C(8,3)×3!=56×6=336. Quay lại Kiến thức 2.2–2.3 để phân biệt kết quả có thứ tự và không có thứ tự.
+**Kiểm lỗi**
+
+Nếu kết quả ra 56, em mới chọn hai vai thay vì ba. Nếu ra C(8,3)=56, em quên **ba vai phân biệt**; so A(8,3)=C(8,3)×3!=56×6=336. Quay lại Kiến thức 2.2–2.3 để phân biệt kết quả có thứ tự và không có thứ tự. Đọc lại **Kiến thức 2.5**, sau đó thử **Bài luyện 20** và **Bài luyện 27** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -401,14 +419,16 @@ Khi khai triển \((a+b)^4\), ta nhân bốn thừa số \((a+b)\). Mỗi lần 
 
 **Vận dụng**
 
-Hệ số của x³ trong (x+1)^4 bằng bao nhiêu?
+Hệ số của x³ trong (x+3)^4 bằng bao nhiêu? Giải thích số cách chọn ba thừa số chứa x và hệ số của thừa số còn lại.
 
-<!-- ITEM_ID: THPT-TOP19-T09; CONTENT_VERSION: TOP19-R03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O09; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP19-T09; CONTENT_VERSION: TOP19-R11-20261121-T09; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP19-O09; ANSWER_REVEAL: OPT_IN_AFTER_TRY; ASSESSMENT: FORMATIVE_ONLY_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Muốn x³ chọn x tại 3 trong 4 vị trí: C(4,3)=**4**.
+Muốn x³ chọn x tại 3 trong 4 vị trí: C(4,3)=4 cách; vị trí còn lại phải chọn 3, nên hệ số là 4·3=**12**.
 
-**Khi làm sai:** Nếu em lấy C(4,1) thì vẫn ra 4 vì đối xứng, nhưng phải giải thích số lần chọn x là 3; thử hệ số x² để tự kiểm khái niệm.
+**Kiểm lỗi**
+
+Nếu em chép số 4 ở hàng n=4 của tam giác Pascal thì mới đếm số cách chọn vị trí, chưa nhân hệ số 3 của thừa số không chứa x. Viết rõ ba lần chọn x và một lần chọn 3: C(4,3)·3=12. Đọc lại **Kiến thức 3.1**, sau đó thử **Bài luyện 28** và **Bài luyện 30** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -451,7 +471,9 @@ Hệ số x² trong (x−2)^4 là bao nhiêu?
 
 Muốn x² thì k=2 lần chọn −2. Hệ số C(4,2)(−2)²=6·4=**24**.
 
-**Khi làm sai:** Nếu ra −24, kiểm lại: chọn −2 hai lần thì tích dương; dấu phụ thuộc k chẵn/lẻ.
+**Kiểm lỗi**
+
+Nếu ra −24, kiểm lại: chọn −2 hai lần thì tích dương; dấu phụ thuộc k chẵn/lẻ. Đọc lại **Kiến thức 3.2**, sau đó thử **Bài luyện 31** và **Bài luyện 36** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -486,7 +508,9 @@ Một kho ban đầu có 5 000 bộ dụng cụ, tăng 1% mỗi năm theo cùng 
 
 r=0,01. Hai số hạng đầu là 1+5r=1,05. Do đó 5 000×1,05=**5 250 bộ** (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình 5 000×1,01^5 lớn hơn 5 250 một ít.
 
-**Khi làm sai:** Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay lại Kiến thức 3.1 để viết năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua.
+**Kiểm lỗi**
+
+Nếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay lại Kiến thức 3.1 để viết năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua. Đọc lại **Kiến thức 3.3**, sau đó thử **Bài luyện 29** và **Bài luyện 38** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -526,7 +550,9 @@ Trong khai triển \((3x-2)^5\), số hạng không chứa \(x\) là bao nhiêu?
 
 Chọn \(-2\) từ cả năm thừa số, không chọn \(3x\) ở vị trí nào, nên có duy nhất \(C(5,5)=1\) cách cho hạng tử đó. Hệ số tự do là \((-2)^5=\mathbf{-32}\).
 
-**Khi làm sai:** Nếu được +32, em đã quên số lần chọn thừa số âm là **5 lần (lẻ)**. Nếu tính \(5\cdot(-2)\), em đã nhầm cộng năm lần với **nhân năm thừa số**. Thử n=2 trước: \((x-2)^2=x^2-4x+4\) có hằng số \((-2)^2=4\).
+**Kiểm lỗi**
+
+Nếu được +32, em đã quên số lần chọn thừa số âm là **5 lần (lẻ)**. Nếu tính \(5\cdot(-2)\), em đã nhầm cộng năm lần với **nhân năm thừa số**. Thử n=2 trước: \((x-2)^2=x^2-4x+4\) có hằng số \((-2)^2=4\). Đọc lại **Kiến thức 3.4**, sau đó thử **Bài luyện 35** và **Bài luyện 40** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -563,7 +589,9 @@ Tổng hệ số của đa thức (x+2)^5 bằng bao nhiêu?
 
 Thay x=1: (1+2)^5=**243**.
 
-**Khi làm sai:** Nếu cộng lẻ từng số hạng và sai, nhớ P(1) chỉ đúng khi cả đa thức được tính tại 1, không chỉ thay hệ số tổ hợp.
+**Kiểm lỗi**
+
+Nếu cộng lẻ từng số hạng và sai, nhớ P(1) chỉ đúng khi cả đa thức được tính tại 1, không chỉ thay hệ số tổ hợp. Đọc lại **Kiến thức 3.5**, sau đó thử **Bài luyện 41** và **Bài luyện 42** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
@@ -584,7 +612,7 @@ Luyện tập theo ba mạch toán: khi nào hai cách chọn khác nhau, có th
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-C01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O01; SOURCE_ROLE: CORE; NO_NEW_ID -->
-**Bài SGK 1.** Một cửa hàng có 4 loại bút mực và 3 loại bút chì khác nhau. Chọn đúng một cây bút. Có bao nhiêu cách chọn?
+**Bài luyện 1.** Một cửa hàng có 4 loại bút mực và 3 loại bút chì khác nhau. Chọn đúng một cây bút. Có bao nhiêu cách chọn?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -594,7 +622,7 @@ Lời giải: Hai loại lựa chọn loại trừ nhau nên áp dụng quy tắ
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-P03; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O01; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 2.** Học sinh chọn tham gia đúng một câu lạc bộ: 5 CLB khoa học hoặc 4 CLB thể thao, danh sách hai nhóm không trùng nhau. Có bao nhiêu cách?
+**Bài luyện 2.** Học sinh chọn tham gia đúng một câu lạc bộ: 5 CLB khoa học hoặc 4 CLB thể thao, danh sách hai nhóm không trùng nhau. Có bao nhiêu cách?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -604,7 +632,7 @@ Lời giải: Hai nhóm lựa chọn rời nhau, cộng 5+4=9.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P01; PRIMARY_OUTCOME: TOP19-O01; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 1.** Trong quầy có 6 loại nước trà và 4 loại nước trái cây khác nhau, các loại không trùng nhau. Khách chọn đúng một loại. Có bao nhiêu cách?
+**Bài luyện 3.** Trong quầy có 6 loại nước trà và 4 loại nước trái cây khác nhau, các loại không trùng nhau. Khách chọn đúng một loại. Có bao nhiêu cách?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -616,7 +644,7 @@ Lời giải: Hai nhóm lựa chọn rời nhau, cộng 5+4=9.
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-C02; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O02; SOURCE_ROLE: CORE; NO_NEW_ID -->
-**Bài SGK 3.** Có 3 áo khác màu và 2 quần khác màu. Mỗi bộ gồm đúng một áo và một quần. Có bao nhiêu bộ?
+**Bài luyện 4.** Có 3 áo khác màu và 2 quần khác màu. Mỗi bộ gồm đúng một áo và một quần. Có bao nhiêu bộ?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -626,7 +654,7 @@ Lời giải: Mỗi lựa chọn áo kết hợp được với 2 quần: 3×2=6
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-P02; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O02; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 4.** Từ A đến B có 3 tuyến đường, từ B đến C có 4 tuyến. Mọi hành trình A→C bắt buộc qua B và chọn một tuyến ở mỗi đoạn. Có bao nhiêu hành trình?
+**Bài luyện 5.** Từ A đến B có 3 tuyến đường, từ B đến C có 4 tuyến. Mọi hành trình A→C bắt buộc qua B và chọn một tuyến ở mỗi đoạn. Có bao nhiêu hành trình?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -636,7 +664,7 @@ Lời giải: Quy tắc nhân cho hai chặng: 3×4=12.
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-P04; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O02; SOURCE_ROLE: APPLICATION; NO_NEW_ID -->
-**Bài SGK 5.** Một thực đơn có 2 món khai vị, 3 món chính, 2 món tráng miệng. Suất ăn gồm đúng một món mỗi nhóm. Có bao nhiêu thực đơn khác nhau?
+**Bài luyện 6.** Một thực đơn có 2 món khai vị, 3 món chính, 2 món tráng miệng. Suất ăn gồm đúng một món mỗi nhóm. Có bao nhiêu thực đơn khác nhau?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -646,7 +674,7 @@ Lời giải: Quy tắc nhân ba bước: 2×3×2=12.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P02; PRIMARY_OUTCOME: TOP19-O02; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 2.** Một suất ăn gồm đúng một món khai vị từ 2 món, một món chính từ 3 món và một đồ uống từ 4 món. Có bao nhiêu suất ăn?
+**Bài luyện 7.** Một suất ăn gồm đúng một món khai vị từ 2 món, một món chính từ 3 món và một đồ uống từ 4 món. Có bao nhiêu suất ăn?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -658,7 +686,7 @@ Lời giải: Quy tắc nhân ba bước: 2×3×2=12.
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-P01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O03; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 6.** Mã gồm hai chữ cái lấy từ {A,B,C}, được lặp, tiếp theo một chữ số từ 0 đến 9. Có bao nhiêu mã?
+**Bài luyện 8.** Mã gồm hai chữ cái lấy từ {A,B,C}, được lặp, tiếp theo một chữ số từ 0 đến 9. Có bao nhiêu mã?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -668,7 +696,7 @@ Lời giải: Có 3×3×10=90 mã; mỗi vị trí là một bước độc lậ
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P03; PRIMARY_OUTCOME: TOP19-O03; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 3.** Từ {0,1,2,3,4} lập số tự nhiên ba chữ số đôi một khác nhau. Có bao nhiêu số?
+**Bài luyện 9.** Từ {0,1,2,3,4} lập số tự nhiên ba chữ số đôi một khác nhau. Có bao nhiêu số?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -680,7 +708,7 @@ Lời giải: Có 3×3×10=90 mã; mỗi vị trí là một bước độc lậ
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-P05; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O04; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 7.** Từ các chữ số \(0,1,2,3,4\), lập số tự nhiên có ba chữ số khác nhau và là số chẵn. Có bao nhiêu số?
+**Bài luyện 10.** Từ các chữ số \(0,1,2,3,4\), lập số tự nhiên có ba chữ số khác nhau và là số chẵn. Có bao nhiêu số?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -690,7 +718,7 @@ Lời giải: Chia hai trường hợp rời nhau. (i) Hàng đơn vị bằng 0
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B23-P06; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O04; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 8.** Một khách có thể chọn đúng một cách đi lại: 3 tuyến xe đạp khác nhau hoặc 2 tuyến xe buýt khác nhau. Nếu đi xe buýt, mỗi tuyến có 2 loại vé. Nếu đi xe đạp thì không chọn vé. Có bao nhiêu phương án hoàn chỉnh?
+**Bài luyện 11.** Một khách có thể chọn đúng một cách đi lại: 3 tuyến xe đạp khác nhau hoặc 2 tuyến xe buýt khác nhau. Nếu đi xe buýt, mỗi tuyến có 2 loại vé. Nếu đi xe đạp thì không chọn vé. Có bao nhiêu phương án hoàn chỉnh?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -700,7 +728,7 @@ Lời giải: Phương án xe đạp: 3. Phương án xe buýt: \(2\) tuyến nh
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P04; PRIMARY_OUTCOME: TOP19-O04; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 4.** Từ {0,1,2,3,4,5} lập số chẵn có ba chữ số khác nhau. Có bao nhiêu số?
+**Bài luyện 12.** Từ {0,1,2,3,4,5} lập số chẵn có ba chữ số khác nhau. Có bao nhiêu số?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -711,7 +739,7 @@ Lời giải: Phương án xe đạp: 3. Phương án xe buýt: \(2\) tuyến nh
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-W01; PRIMARY_OUTCOME: TOP19-O04; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_R08_UNCHANGED -->
-**Tự luận 1.** Dùng các chữ số {0,1,2,3,4}, lập số tự nhiên **ba chữ số lẻ**, các chữ số không lặp. Hãy đếm bằng chia trường hợp và giải thích vì sao không đếm cả chuỗi bắt đầu 0.
+**Bài luyện 13.** Dùng các chữ số {0,1,2,3,4}, lập số tự nhiên **ba chữ số lẻ**, các chữ số không lặp. Hãy đếm bằng chia trường hợp và giải thích vì sao không đếm cả chuỗi bắt đầu 0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -731,7 +759,7 @@ Lời giải: Phương án xe đạp: 3. Phương án xe buýt: \(2\) tuyến nh
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-C01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O05; SOURCE_ROLE: CORE; NO_NEW_ID -->
-**Bài SGK 9.** Có 5 người khác nhau đứng thành một hàng. Có bao nhiêu thứ tự xếp?
+**Bài luyện 14.** Có 5 người khác nhau đứng thành một hàng. Có bao nhiêu thứ tự xếp?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -741,7 +769,7 @@ Lời giải: Số hoán vị \(5!=120\).
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-P03; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O05; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 10.** Các chữ T, O, A, N khác nhau được sắp thành một dãy 4 chữ. Có bao nhiêu dãy?
+**Bài luyện 15.** Các chữ T, O, A, N khác nhau được sắp thành một dãy 4 chữ. Có bao nhiêu dãy?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -751,7 +779,7 @@ Lời giải: Hoán vị của 4 chữ khác nhau: \(4!=24\).
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-P06; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O05; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 11.** Xếp 5 học sinh khác nhau thành một hàng, biết hai bạn A và B phải đứng cạnh nhau. Có bao nhiêu cách?
+**Bài luyện 16.** Xếp 5 học sinh khác nhau thành một hàng, biết hai bạn A và B phải đứng cạnh nhau. Có bao nhiêu cách?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -761,7 +789,7 @@ Lời giải: Gộp A và B thành một khối, cùng 3 học sinh còn lại l
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P05; PRIMARY_OUTCOME: TOP19-O05; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 5.** Có 6 quyển sách phân biệt xếp vào 6 vị trí liên tiếp. Có bao nhiêu cách?
+**Bài luyện 17.** Có 6 quyển sách phân biệt xếp vào 6 vị trí liên tiếp. Có bao nhiêu cách?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -773,7 +801,7 @@ Lời giải: Gộp A và B thành một khối, cùng 3 học sinh còn lại l
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-C02; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O06; SOURCE_ROLE: CORE; NO_NEW_ID -->
-**Bài SGK 12.** Từ 7 học sinh khác nhau, chọn 3 người vào ba vị trí có tên A, B, C. Có bao nhiêu cách?
+**Bài luyện 18.** Từ 7 học sinh khác nhau, chọn 3 người vào ba vị trí có tên A, B, C. Có bao nhiêu cách?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -783,7 +811,7 @@ Lời giải: Chỉnh hợp chập 3 của 7: \(A_7^3=7\cdot6\cdot5=210\).
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-P02; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O06; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 13.** Một lớp có 6 ứng viên, chọn một lớp trưởng và một lớp phó (hai người khác nhau). Có bao nhiêu cách?
+**Bài luyện 19.** Một lớp có 6 ứng viên, chọn một lớp trưởng và một lớp phó (hai người khác nhau). Có bao nhiêu cách?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -793,7 +821,7 @@ Lời giải: Có 6 lựa chọn lớp trưởng, sau đó 5 lựa chọn lớp 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P06; PRIMARY_OUTCOME: TOP19-O06; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 6.** Có 7 vận động viên phân biệt, trao huy chương vàng, bạc, đồng cho 3 người khác nhau. Có bao nhiêu kết quả?
+**Bài luyện 20.** Có 7 vận động viên phân biệt, trao huy chương vàng, bạc, đồng cho 3 người khác nhau. Có bao nhiêu kết quả?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -805,7 +833,7 @@ Lời giải: Có 6 lựa chọn lớp trưởng, sau đó 5 lựa chọn lớp 
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-P01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O07; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 14.** Chọn một nhóm gồm 3 học sinh từ 8 học sinh khác nhau, không phân vai. Có bao nhiêu nhóm?
+**Bài luyện 21.** Chọn một nhóm gồm 3 học sinh từ 8 học sinh khác nhau, không phân vai. Có bao nhiêu nhóm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -815,7 +843,7 @@ Lời giải: \(\binom83=\frac{8\cdot7\cdot6}{3\cdot2\cdot1}=56\).
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P07; PRIMARY_OUTCOME: TOP19-O07; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 7.** Chọn nhóm 4 người từ 7 người khác nhau, không phân vai. Có bao nhiêu nhóm?
+**Bài luyện 22.** Chọn nhóm 4 người từ 7 người khác nhau, không phân vai. Có bao nhiêu nhóm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -827,7 +855,7 @@ Lời giải: \(\binom83=\frac{8\cdot7\cdot6}{3\cdot2\cdot1}=56\).
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-P04; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O08; SOURCE_ROLE: APPLICATION; NO_NEW_ID -->
-**Bài SGK 15.** Chọn đội gồm 2 bạn nữ từ 5 nữ và 3 bạn nam từ 7 nam, không phân vai. Có bao nhiêu đội?
+**Bài luyện 23.** Chọn đội gồm 2 bạn nữ từ 5 nữ và 3 bạn nam từ 7 nam, không phân vai. Có bao nhiêu đội?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -837,7 +865,7 @@ Lời giải: \(\binom52\binom73=10\cdot35=350\).
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B24-P05; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O08; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 16.** Chọn nhóm 3 người từ 6 người khác nhau, trong đó có hai người được chỉ định A và B. Có bao nhiêu nhóm chứa ít nhất một trong hai người A, B?
+**Bài luyện 24.** Chọn nhóm 3 người từ 6 người khác nhau, trong đó có hai người được chỉ định A và B. Có bao nhiêu nhóm chứa ít nhất một trong hai người A, B?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -847,7 +875,7 @@ Lời giải: Tổng số nhóm \(\binom63=20\). Nhóm không có A lẫn B ch�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P08; PRIMARY_OUTCOME: TOP19-O08; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 8.** Một lớp có 6 bạn nam và 5 bạn nữ. Chọn nhóm 4 người gồm đúng 2 nam, 2 nữ, không phân vai. Có bao nhiêu nhóm?
+**Bài luyện 25.** Một lớp có 6 bạn nam và 5 bạn nữ. Chọn nhóm 4 người gồm đúng 2 nam, 2 nữ, không phân vai. Có bao nhiêu nhóm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -858,7 +886,7 @@ Lời giải: Tổng số nhóm \(\binom63=20\). Nhóm không có A lẫn B ch�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-W02; PRIMARY_OUTCOME: TOP19-O08; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_R08_UNCHANGED -->
-**Tự luận 2.** Có 5 học sinh nữ và 4 học sinh nam. Chọn một nhóm gồm đúng 2 nữ và 2 nam không phân vai. Sau đó chọn đúng **một đội trưởng từ nhóm đã chọn**. Có bao nhiêu cách lập nhóm **có đội trưởng**?
+**Bài luyện 26.** Có 5 học sinh nữ và 4 học sinh nam. Chọn một nhóm gồm đúng 2 nữ và 2 nam không phân vai. Sau đó chọn đúng **một đội trưởng từ nhóm đã chọn**. Có bao nhiêu cách lập nhóm **có đội trưởng**?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -875,7 +903,7 @@ Lời giải: Tổng số nhóm \(\binom63=20\). Nhóm không có A lẫn B ch�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P14; PRIMARY_OUTCOME: TOP19-O14; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 9.** Từ 9 người khác nhau: (a) chỉ chọn nhóm 3 người không phân vai, (b) chọn 3 người giữ ba chức danh phân biệt. Hãy nêu phép tính trên máy (nCr hay nPr), cho đáp án và kiểm quan hệ giữa hai kết quả mà không cần máy.
+**Bài luyện 27.** Từ 9 người khác nhau: (a) chỉ chọn nhóm 3 người không phân vai, (b) chọn 3 người giữ ba chức danh phân biệt. Hãy nêu phép tính trên máy (nCr hay nPr), cho đáp án và kiểm quan hệ giữa hai kết quả mà không cần máy.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -889,7 +917,7 @@ Lời giải: Tổng số nhóm \(\binom63=20\). Nhóm không có A lẫn B ch�
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-C01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O09; SOURCE_ROLE: CORE; NO_NEW_ID -->
-**Bài SGK 17.** Hệ số của \(a^2b^2\) trong \((a+b)^4\) là bao nhiêu?
+**Bài luyện 28.** Hệ số của \(a^2b^2\) trong \((a+b)^4\) là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -899,7 +927,7 @@ Lời giải: Trong khai triển Newton, hệ số là \(\binom42=6\).
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-C02; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O09; SOURCE_ROLE: CORE; NO_NEW_ID -->
-**Bài SGK 18.** Hệ số của \(x^2\) trong \((1+x)^5\) bằng bao nhiêu?
+**Bài luyện 29.** Hệ số của \(x^2\) trong \((1+x)^5\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -909,7 +937,7 @@ Lời giải: \(\binom52=10\).
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P09; PRIMARY_OUTCOME: TOP19-O09; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 10.** Hãy khai triển đầy đủ (x+2)^4 và cho biết hệ số x².
+**Bài luyện 30.** Hãy khai triển đầy đủ (x+2)^4 và cho biết hệ số x².
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -921,7 +949,7 @@ Lời giải: \(\binom52=10\).
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P01; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O10; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 19.** Tìm hệ số của \(x^3\) trong \((2x-1)^4\).
+**Bài luyện 31.** Tìm hệ số của \(x^3\) trong \((2x-1)^4\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -931,7 +959,7 @@ Lời giải: Chọn 3 lần \(2x\), một lần \(-1\): \(\binom43(2)^3(-1)=-32
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P03; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O10; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 20.** Tìm hệ số của \(x^2\) trong \((1+3x)^4\).
+**Bài luyện 32.** Tìm hệ số của \(x^2\) trong \((1+3x)^4\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -941,7 +969,7 @@ Lời giải: \(\binom42(3)^2=6\cdot9=54\).
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P04; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O10; SOURCE_ROLE: APPLICATION; NO_NEW_ID -->
-**Bài SGK 21.** Tìm hệ số của \(x^4\) trong \((x-2)^5\).
+**Bài luyện 33.** Tìm hệ số của \(x^4\) trong \((x-2)^5\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -951,7 +979,7 @@ Lời giải: Lấy 4 thừa số x và 1 thừa số \(-2\): \(\binom51(-2)=-10
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P05; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O10; SOURCE_ROLE: SUPPORT_EXTENSION; NO_NEW_ID -->
-**Bài SGK 22.** Tìm hệ số của \(x^3\) trong \((2-x)^6\). Bài tham khảo/mở rộng tự chọn, không dùng làm Core bắt buộc.
+**Bài luyện 34.** Tìm hệ số của \(x^3\) trong \((2-x)^6\). Bài tham khảo/mở rộng tự chọn, không dùng làm Core bắt buộc.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -961,7 +989,7 @@ Lời giải: Chọn 3 thừa số \((-x)\) và 3 thừa số \(2\): hệ số \
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P07; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O10; SOURCE_ROLE: PRACTICE; NO_NEW_ID -->
-**Bài SGK 23.** Trong khai triển nhị thức \((4x-3)^5\), hãy tìm số hạng không chứa \(x\) mà không cần khai triển toàn bộ. Giải thích vì sao chỉ có đúng một số hạng như vậy.
+**Bài luyện 35.** Trong khai triển nhị thức \((4x-3)^5\), hãy tìm số hạng không chứa \(x\) mà không cần khai triển toàn bộ. Giải thích vì sao chỉ có đúng một số hạng như vậy.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -978,7 +1006,7 @@ T_0=\binom50 (4x)^0 (-3)^5=\boxed{-243}.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P10; PRIMARY_OUTCOME: TOP19-O10; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 11.** Tìm hệ số của x⁴ trong (3x−2)^5.
+**Bài luyện 36.** Tìm hệ số của x⁴ trong (3x−2)^5.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -989,7 +1017,7 @@ T_0=\binom50 (4x)^0 (-3)^5=\boxed{-243}.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-W03; PRIMARY_OUTCOME: TOP19-O10; ROLE: TOPIC_WRITTEN; RUBRIC_ORIGINAL_R08_UNCHANGED -->
-**Tự luận 3.** Với đa thức P(x)=(x−2)^5, hãy **(a)** tìm hệ số của x², **(b)** tính tổng tất cả hệ số của P mà không cần khai triển đủ. Giải thích vì sao dấu âm xuất hiện.
+**Bài luyện 37.** Với đa thức P(x)=(x−2)^5, hãy **(a)** tìm hệ số của x², **(b)** tính tổng tất cả hệ số của P mà không cần khai triển đủ. Giải thích vì sao dấu âm xuất hiện.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1006,7 +1034,7 @@ T_0=\binom50 (4x)^0 (-3)^5=\boxed{-243}.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P13; PRIMARY_OUTCOME: TOP19-O13; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 12.** Một kho ban đầu có 2 000 sản phẩm. Số sản phẩm tăng theo hệ số 2% mỗi năm trong 5 năm. **(a)** Dùng hai số hạng đầu của (1+0,02)^5 để ước lượng số sản phẩm. **(b)** Tính giá trị mô hình chính xác bằng máy (làm tròn đến 2 chữ số thập phân) và nhận xét ước lượng cao hay thấp.
+**Bài luyện 38.** Một kho ban đầu có 2 000 sản phẩm. Số sản phẩm tăng theo hệ số 2% mỗi năm trong 5 năm. **(a)** Dùng hai số hạng đầu của (1+0,02)^5 để ước lượng số sản phẩm. **(b)** Tính giá trị mô hình chính xác bằng máy (làm tròn đến 2 chữ số thập phân) và nhận xét ước lượng cao hay thấp.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1018,7 +1046,7 @@ T_0=\binom50 (4x)^0 (-3)^5=\boxed{-243}.
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P02; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O11; SOURCE_ROLE: SUPPORT_EXTENSION; NO_NEW_ID -->
-**Bài SGK 24.** Tìm số hạng không chứa \(x\) trong \((x+1/x)^6\) với \(x\ne0\). Bài tham khảo/mở rộng tự chọn, không dùng làm Core bắt buộc.
+**Bài luyện 39.** Tìm số hạng không chứa \(x\) trong \((x+1/x)^6\) với \(x\ne0\). Bài tham khảo/mở rộng tự chọn, không dùng làm Core bắt buộc.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1028,7 +1056,7 @@ Lời giải: Số hạng thứ \(k+1\) có lũy thừa \(x^{6-2k}\). Bằng \(x
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P11; PRIMARY_OUTCOME: TOP19-O11; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 13.** **Tự chọn mở rộng SBT (sau phần đa thức):** Tìm số hạng không chứa x trong (2x+1/x)^4, x≠0.
+**Bài luyện 40.** **Tự chọn mở rộng SBT (sau phần đa thức):** Tìm số hạng không chứa x trong (2x+1/x)^4, x≠0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1040,7 +1068,7 @@ Lời giải: Số hạng thứ \(k+1\) có lũy thừa \(x^{6-2k}\). Bằng \(x
 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B25-P06; ORIGINAL_BANK_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; OUTCOME_ID: TOP19-O12; SOURCE_ROLE: OPTIONAL_SPECIALIZED; NO_NEW_ID -->
-**Bài SGK 25.** Tính tổng các hệ số của những số hạng có số mũ lẻ của \(x\) trong khai triển \((1+x)^7\). Bài tham khảo/mở rộng tự chọn, không dùng làm Core bắt buộc.
+**Bài luyện 41.** Tính tổng các hệ số của những số hạng có số mũ lẻ của \(x\) trong khai triển \((1+x)^7\). Bài tham khảo/mở rộng tự chọn, không dùng làm Core bắt buộc.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1050,7 +1078,7 @@ Lời giải: Đặt \(f(x)=(1+x)^7\). Tổng hệ số bậc chẵn trừ tổn
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP19-P12; PRIMARY_OUTCOME: TOP19-O12; ROLE: TOPIC_PRACTICE; ORIGINAL_R08_KEY_UNCHANGED -->
-**Bài luyện 14.** Tổng hệ số của đa thức (2x+1)^4 bằng bao nhiêu?
+**Bài luyện 42.** Tổng hệ số của đa thức (2x+1)^4 bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1086,5 +1114,21 @@ Bảy câu dưới đây dùng lại các bài trong phần Luyện tập để 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP19-P11; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC -->
 **Câu 7.** **Tự chọn mở rộng SBT (sau phần đa thức):** Tìm số hạng không chứa x trong (2x+1/x)^4, x≠0.
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Chỉ sau khi tự làm đủ **bảy câu**, em tìm lại bài có **cùng câu hỏi** trong Luyện tập và tự mở **Lời giải**. Các số dưới đây là vị trí bài đã có, không phải đáp án của một đề kiểm tra độc lập.
+
+| Câu tự kiểm tra | Vị trí lời giải trong Luyện tập |
+| --- | --- |
+| Câu 1 | Bài luyện 7 |
+| Câu 2 | Bài luyện 12 |
+| Câu 3 | Bài luyện 20 |
+| Câu 4 | Bài luyện 22 |
+| Câu 5 | Bài luyện 27 |
+| Câu 6 | Bài luyện 30 |
+| Câu 7 (mở rộng tự chọn) | Bài luyện 40 |
+
+</details>
 
 **Nguồn tài liệu:** SGK Toán 10 Kết nối tri thức với cuộc sống, Tập Hai, Chương VIII (Bài 23–25).
