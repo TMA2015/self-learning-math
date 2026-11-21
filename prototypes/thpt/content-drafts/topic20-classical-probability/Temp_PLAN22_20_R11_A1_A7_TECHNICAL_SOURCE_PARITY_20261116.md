@@ -1,14 +1,31 @@
+<!-- TOP20_MASTER974_CURRENT_A1_A7_20261121 -->
+## Effective CĐ20 R12 — A1–A7 on exact source (AUTHOR_SELF_VERIFIED)
+
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+CURRENT_LEARNER_SOURCE_BLOB: b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9
+CURRENT_Q15_MATRIX_BLOB: d65cf51dbe72f62484ae26171d8afe45daf47ae8
+CURRENT_Q18_AUTHOR_RECEIPT_BLOB: 00cfd99a633e993090bd1759437d975389c42c15
+CURRENT_SOURCE_COMMIT: ffd9dedc11bea298a8a53fabdb27afd9b76d47e5
+Q18_MODE: AUTHOR_SELF_VERIFIED
+NO_RELEASE_AUTHORITY: YES
+
+**A1/Q01–Q02 original S1 custody:** G10 KNTT Tập Hai ChIX B26–B27 original audited scope `cc77149f693bde62ceaa1920e74df7e9dbc9bfec`, G11 KNTT Tập Hai ChVIII B28–B30 owner S1 `d7477d24e8513e8e2e60a1f583d4b52e6c29bfc9`. Combined current Topic 17 math outcomes across nine continuous concept-first teaching subsections, no Topic Core; S1 original receipt inherited snapshot-scoped, no new direct SGK/SBT scan. Public interactive probability model/source unchanged, two original SVG source assets unchanged.
+
+**A2–A7/Q03–Q18 actual current learner QA:** 17 existing Knowledge Vận dụng→opt-in Đối chiếu blocks with meaningful problem-specific Kiểm lỗi, one corrected T05 remediation route to real P06 non-uniform total sums; T06 same original ID but new content version `TOP20-R12-20261121-T06`, distinct from original pre-exposed Venn `A∩B={2}`, `A∪B={1,2,4,6}` for B≤2, so student must independently derive sets after concept image. Original sixteen other FirstTry math stems/answers and 20 original full Practice/Written math stems/solutions/rubrics byte-identical, three Written /4 rubrics intact. All 20 current visible Practice questions sequentially titled Bài luyện1–20; 11 unchanged public same-ID selfchecks and one optional *after all questions* original locator to Bài1/3/4/7/8/10/11/13/14/16/17, no key/rubric clone. 37 public unique canonical IDs, 48 placement markers including 11 replays, source-current 37/37 Q15 direct item/outcome/role/version/line pointers `d65cf51dbe72f62484ae26171d8afe45daf47ae8`, 38/38 voluntary disclosures. External NotebookLM whole-Topic not rerun, 20/11 37-question scoped check applies on unchanged math only, targeted author T06 arithmetic/PED reviewed in Q18 receipt `00cfd99a633e993090bd1759437d975389c42c15`. `CLIENT_SELF_CHECK_NO_MASTERY`, no protected RD1 item body, no Final Submit/Mastery changes. No browser/RELEASE/AP/R/device or owner deploy permission; no merge/deploy.
+---
+
 # CĐ20 R11 · A1–A7 / Q01–Q18 SOURCE-EQUIVALENT technical evidence · 16/11/2026
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: a336816eb1935c739bd1f128bd81de7b510d0060
-CURRENT_Q18_RECEIPT_BLOB: 3e04e984cbe9e2f23b95c0f23a1f698489367ebe
+SOURCE_BLOB: b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9
+CURRENT_Q18_RECEIPT_BLOB: 00cfd99a633e993090bd1759437d975389c42c15
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md
 AFFECTED_SCOPE_HISTORICAL_Q18_BLOB: 9b8ae77f1e9558e6f4d85c81f04e850ab5d5aa5d
-CURRENT_Q15_MATRIX_BLOB: ba603da329ebf8a922db82783609902db1321dc6
+CURRENT_Q15_MATRIX_BLOB: d65cf51dbe72f62484ae26171d8afe45daf47ae8
 CONTENT_SNAPSHOT: R11_SOURCE_EQUIVALENT_R10 / FULL_TOPIC_LEARNING_PATH / KIEN_THUC + LUYEN_TAP + TU_KIEM_TRA
 STATUS: AUTHOR_SELF_QA_PASS_CURRENT_SOURCE; A1_A7_PASS; READY_ONLY_WHEN_CURRENT_V2_MANIFEST_REGISTER_SYNC
 
