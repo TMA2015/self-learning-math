@@ -1,12 +1,16 @@
+<!-- TOP22_MASTER974_CURRENT_EDITORIAL_POLISH_20261121 -->
+**Final learner-copy Delta A after existing signed source:** one voluntary SelfCheck `Đối chiếu` prose sentence changed from leaking internal `CLIENT_SELF_CHECK_NO_MASTERY` runtime terminology to natural student-facing “đây là hoạt động tự ôn, không phải điểm đánh giá chính thức”. Exactly ONE learner text sentence, not an item stem, answer/key/rubric/math/assessment mode; all **114** original complete Practice, **13** existing FT question/answer bodies, 39 outcomes, 9 same-ID selfcheck question stems, 127 canonical IDs, 128 disclosures, 36 math-matched D6 routes and two SVG assets unchanged. Final source `7ac79e5ed705a5ce482c3d9c42a4451e659e1109`, commit `75c1be1493feb239147b493fecd933965181ad5a`. The hidden source metadata still correctly enforces `CLIENT_SELF_CHECK_NO_MASTERY`, no actual official Readiness/Final Submit/Mastery writes. Q18 final author-signoff and source pointers now re-locked. No fresh external reviewer or SGK PDF review.
+---
+
 <!-- TOP22_MASTER974_CURRENT_Q18_20261121 -->
 ## CĐ22 R09 — CURRENT targeted v3.2.0 Q18 source/math/PED signoff · 21/11/2026
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
-CURRENT_ACADEMIC_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
-CURRENT_SOURCE_COMMIT: 3c23bd06ea9d5f12bb8884b2b250e8cbc044b967
+CURRENT_ACADEMIC_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
+CURRENT_SOURCE_COMMIT: 75c1be1493feb239147b493fecd933965181ad5a
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-CURRENT_AUTHOR_SIGNOFF: TOP22_MASTER974_39_OUTCOMES_13_FT_114_SHARED_PRACTICE_9_SELF_REPLAY_20261121_ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
+CURRENT_AUTHOR_SIGNOFF: TOP22_MASTER974_39_OUTCOMES_13_FT_114_SHARED_PRACTICE_9_SELF_REPLAY_20261121_7ac79e5ed705a5ce482c3d9c42a4451e659e1109
 CURRENT_S1_ORIGINAL_SOURCE_REVIEW_PDF_PAGE_INDEX_P2: OPEN_NONBLOCKING_REFERENCE_METADATA
 CURRENT_ACADEMIC_MATH_P0: 0
 CURRENT_ACADEMIC_MATH_P1: 0
@@ -33,7 +37,7 @@ RELEASE_PERMISSION: NO
 
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
+ACADEMIC_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
 PREVIOUS_LOCKED_SOURCE_BLOB: 155f14cc191800d52fce98b0f7df6ab30bb0faf4
 CANONICAL_ID_COUNT_BEFORE_AFTER: 114/114
 DETAILS_REVEAL_COUNT_BEFORE_AFTER: 127/127
@@ -78,7 +82,7 @@ STANDARD_VERSION: 3.2.0
 PACKET_ID: THPT-TOPIC-STATISTICS-G10-G12-FULL-R09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
+SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
 PREVIOUS_R06_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 BASELINE_R05_BLOB: 0762cc67491965a4bab700aa1d33937aa3bf7cb6
 ORIGINAL_R01_BLOB: 4f4dc4abcf671479fe0650595e9b67f745738b9a
