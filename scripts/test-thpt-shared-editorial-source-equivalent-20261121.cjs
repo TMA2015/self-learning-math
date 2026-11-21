@@ -72,6 +72,32 @@ const record = b07.slice(idx, next < 0 ? undefined : next);
 assert(record.includes('"answerKey": "D"'), "P04 answer D changed");
 assert(record.includes("D. Độ dài 0, được quy ước cùng hướng với mọi vectơ"), "P04 D option changed");
 
+// #054 and #062 are repaired in AUTHORING drafts but not yet released.
+// Preserve the current published legacy projections byte-for-byte: they
+// already do not expose the corresponding obsolete student labels.
+const alreadyClean = [
+  {
+    file: "docs/assets/javascripts/thpt-g11-chvii-b22-b27-source-locked-formative-r01.js",
+    sha: "4d656f2b8d952a2ad0be1c4298d065e0b8c95c88",
+    forbidden: "Đáp án sau Submit luyện tập",
+    items: 51
+  },
+  {
+    file: "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+    sha: "04478b7f379efb21377216b3543de656e2ace1f0",
+    forbidden: "**Written:** học sinh tự đối chiếu, không được tự động ghi Mastery",
+    items: 120
+  }
+];
+for (const c of alreadyClean) {
+  const content = fs.readFileSync(path.join(root, c.file), "utf8");
+  assert.equal(gitBlobSHA(content), c.sha, "Unapproved G11/G12 legacy bank change");
+  assert(!content.includes(c.forbidden), "Obsolete student-facing note: " + c.file);
+  assert.equal((content.match(/"item_id":/g) || []).length, c.items,
+    "G11/G12 canonical IDs altered");
+  console.log("PASS LEGACY_UNCHANGED " + c.file);
+}
+
 if (process.argv.includes("--built")) {
   const dir = path.join(root, "site-thpt-preview");
   const written = [
