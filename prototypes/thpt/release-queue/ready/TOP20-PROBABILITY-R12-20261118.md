@@ -1,3 +1,24 @@
+<!-- TOP20_MASTER974_CURRENT_READY_20261121 -->
+## CURRENT CĐ20 R12 SOURCE_CONTENT_READY — AUTHORING ONLY
+
+CURRENT_SOURCE_BLOB: b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9
+CURRENT_SOURCE_COMMIT: ffd9dedc11bea298a8a53fabdb27afd9b76d47e5
+CURRENT_Q15_37_CANONICAL_MATRIX_BLOB: d65cf51dbe72f62484ae26171d8afe45daf47ae8
+CURRENT_Q18_AUTHOR_VERIFIED_BLOB: 00cfd99a633e993090bd1759437d975389c42c15
+CURRENT_A1_A7_BLOB: 60728e71c8fbdfe7846dc8b5e0e045ae4599fae4
+CURRENT_V2_HANDOFF_BLOB: 86ce97f7801ac88ca47e9640898044e0c9e99d38
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+RELEASE_AUTHORIZATION: NO
+
+**One current R12 learner:** `prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md` source Git `b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9`; 17 FirstTry covering all 17 actual Knowledge outcomes under nine natural sections/2 math areas, two original SVG and the public optional model unchanged. Original 17 Topic Practice and 3 Written /4 **all 20 mathematical problem+solution/rubric bodies byte-identical** vs old learner `a336816eb1935c739bd1f128bd81de7b510d0060`, with one consistent display Bài luyện1–20, three Written labels preserved by item role and exact original 3 rubrics. 17 differentiated opt-in `Kiểm lỗi` now owner editorial compliant; T05 firsttry D6 points to original P06 Bài6 nonuniform sums as primary repair. One math-content `DELTA_C` on SAME Topic-owned T06 (new content-version `TOP20-R12-20261121-T06`): A even `{2,4,6}`, B≤2 `{1,2}`, intersection `{2}`, union `{1,2,4,6}`; cannot copy union from prior Venn SVG. The other 16 FirstTry actual math stem/keys unchanged.
+
+**Q15 and Q16 custody:** `37` unique canonical public item IDs (17 T+17 P+3 W), `11` additional question-only public replay placements (P01/P03/P04/P07/P08/P10/P11/P13/P14/P16/P17) with ONE after-all-11 voluntary `Đối chiếu` linking to same canonical existing Practice numbered Bài1/3/4/7/8/10/11/13/14/16/17; original question-only lines unchanged, no duplicate keys/rubrics, `CLIENT_SELF_CHECK_NO_MASTERY`. `38/38` voluntary disclosures balanced, single SGK credit at very end. Source-exact Q15 matrix `d65cf51dbe72f62484ae26171d8afe45daf47ae8` verifies 37 source line/role/outcome/version plus 11 replay marker lines. S1 G10 KNTT Tập Hai ChIX B26–B27 and G11 KNTT Tập Hai ChVIII B28–B30 receipts inherited scoped `cc77149f693bde62ceaa1920e74df7e9dbc9bfec`/`d7477d24e8513e8e2e60a1f583d4b52e6c29bfc9`, not fresh PDF scan. Former 20/11 37-item direct author spot-check inherited on unchanged maths, T06 specifically reverified now, no invented independent NotebookLM full-Topic PASS.
+
+**Governance:** signed targeted Q18 `AUTHOR_SELF_VERIFIED` at current SHA and no active Academic P0/P1 blocker in changed source; `STATE=CONTENT_READY` solely for authoring handoff. No official independent RD1/Readiness, Final Submit/Mastery, no browser/website Golden AP/R, no owner merge/deploy permission, no Firebase/student record changes. Older source/receipt references below are immutable dated history superseded by current top fields.
+---
+
 # TOP20-PROBABILITY-R12-20261118 — AUTHORING CONTENT_READY · CĐ20 Xác suất cổ điển
 
 PACKET_ID: TOP20-PROBABILITY-R12-20261118
@@ -9,19 +30,19 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-SOURCE_COMMIT: f30607e26bf2d2117eff6fa2984a4d840e687fa0
+SOURCE_COMMIT: ffd9dedc11bea298a8a53fabdb27afd9b76d47e5
 CURRENT_PR: #884 — AUTHORING Draft only, no website release
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: a336816eb1935c739bd1f128bd81de7b510d0060
+ACADEMIC_SOURCE_BLOB: b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md
-REVIEW_RECEIPT_BLOB: 3e04e984cbe9e2f23b95c0f23a1f698489367ebe
+REVIEW_RECEIPT_BLOB: 00cfd99a633e993090bd1759437d975389c42c15
 REVIEW_RECEIPT: signed current-source AUTHOR_SELF_VERIFIED composite, no independent NotebookLM Topic PASS
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP20-PROBABILITY-R11-20261116_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 5707b2349fb3eae4c5ff3ecc6d17db255f67db2e
+AUTHOR_HANDOFF_BLOB: 86ce97f7801ac88ca47e9640898044e0c9e99d38
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 4b51e1d503bee212d10db2544d1206c87208760e
+AUTHOR_A1_A7_BLOB: 60728e71c8fbdfe7846dc8b5e0e045ae4599fae4
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: 4b51e1d503bee212d10db2544d1206c87208760e
+AUTHOR_METADATA_BLOB: 60728e71c8fbdfe7846dc8b5e0e045ae4599fae4
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
