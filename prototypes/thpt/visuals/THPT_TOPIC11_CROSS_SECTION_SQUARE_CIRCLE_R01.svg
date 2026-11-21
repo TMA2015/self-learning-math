@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="ttl dsc"><title id="ttl">Thiết diện vuông và thiết diện tròn tạo hai công thức thể tích khác nhau</title><desc id="dsc">Cùng một đơn vị chiều dài làm cạnh của hình vuông hoặc bán kính hình tròn. Hình vuông cạnh s=1 có diện tích một đơn vị vuông. Hình tròn bán kính r=1 có diện tích pi đơn vị vuông. Thể tích qua tích phân diện tích mặt cắt, chỉ tiết diện tròn mới có pi.</desc><rect width="960" height="560" fill="#fff"/>
+<rect x="198" y="204" width="116" height="116" fill="#d6ebf7" stroke="#20759c" stroke-width="3.5"/><circle cx="655" cy="265" r="116" fill="#f6e1cf" stroke="#ac5f34" stroke-width="3.5"/>
+<text x="178" y="120" font-size="22" fill="#205f8e">THIẾT DIỆN VUÔNG</text><text x="560" y="120" font-size="22" fill="#a35629">THIẾT DIỆN TRÒN</text>
+<text x="200" y="366" font-size="20" fill="#253a55">s=1 đơn vị</text><text x="560" y="412" font-size="20" fill="#253a55">r=1 đơn vị</text><text x="165" y="405" font-size="21" fill="#205f8e">A=s²=1 đơn vị²</text><text x="545" y="445" font-size="21" fill="#a35629">A=πr²=π đơn vị²</text>
+<text x="145" y="508" font-size="22" fill="#243f59">V = ∫ A(x)dx. Chọn A theo đúng hình của lát cắt.</text>
+</svg>
