@@ -1,25 +1,30 @@
+<!-- TOP08_MASTER974_CURRENT_AUTHORING_R05_READY_20261121 -->
+**CURRENT AUTHORING CONTENT_READY v3.2.0, NOT WEBSITE RELEASE:** one original R05 learner source `0853a6de4be055d63a767b58dab20fa113e11098` (Git source commit `c2b045234514b1e9f2042064c145cd6abfffd6da`), same original36 G11 SGK placement bank `43cbb73bd06e0da6bf8838d925186bc4db4194a7` and Topic22 source `2e93db80384de53e208248eaa0396a7f487302ac`; existing current author Q18 receipt `9e80780f05096269b7cd1942c7006138d72d7ec9`, source custody `b997e079eac17c2cd807b57124cdfc142259f260`, **one V2** `acd074d8104eab7639037c94aa64782092c80816`. Five actually verified student issues #977-025–029 fixed: 18/18 genuine D6 recovery routes, 18/18 public question-only selfcheck lookup, O08 correct left/right probes near x3, O10 x6 instead of false x3, O12 independent limit at −∞ with result −3 rather than copied previously revealed +∞ example. Original 58 unique Practice items and 10 Written rubrics, 18 selfcheck question stems, three SVG fully preserved; 77/77 balanced disclosures and only one SGK credit footer. Corrected authoring management comments flagged NOT_FOR_STUDENT_VIEW. S1 scanned original G11 ChV B15–B17 proven in previous scoped receipt; affected Delta C self-Q18 under v3.2.0, no new independent NotebookLM reviewer Academic/PED PASS, RD1, Final Submit/Mastery, AP/R website, owner release authorization or merge/deploy. Historic original R05 QA counts are previous snapshot only, not falsely current new independent tests.
+
+---
+
 # CĐ08 — Giới hạn và Tính liên tục · AUTHORING CONTENT_READY R05 (stable PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: ae302db78d6701e2169260954aa0e95976bb4345
+SOURCE_COMMIT: c2b045234514b1e9f2042064c145cd6abfffd6da
 AUTHOR_PR: 829
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/829 — DRAFT AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD08
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: df47c56c8a7559047d35b44640ea74dce27a3f91
+ACADEMIC_SOURCE_BLOB: 0853a6de4be055d63a767b58dab20fa113e11098
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: af756b88c81782a664aa8597f0c87ae15e35f261
+REVIEW_RECEIPT_BLOB: 9e80780f05096269b7cd1942c7006138d72d7ec9
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R05_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: 05cd6a250874fc1089c3fe3f7291590f7f71dd2e
+AUTHOR_HANDOFF_BLOB: acd074d8104eab7639037c94aa64782092c80816
 PUBLIC_ORIGINAL36_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
 PUBLIC_ORIGINAL36_INDEX_BLOB: 43cbb73bd06e0da6bf8838d925186bc4db4194a7
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R05_20261115.md
