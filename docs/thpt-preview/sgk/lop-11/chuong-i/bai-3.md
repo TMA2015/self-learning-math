@@ -65,21 +65,21 @@
 
     <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/FIG-G11-B03-01_R01.svg" loading="lazy" alt="Đồ thị sin với các mốc từ âm pi đến hai pi, giới hạn tung độ từ âm một đến một"><figcaption>Đọc hình sin: xét phần đường cong nằm trên trục hoành trước khi suy ra nơi \(\sin x>0\). Đường cong lặp lại sau một khoảng \(2\pi\).</figcaption></figure>
 
-    **Vận dụng.** Trên đoạn \([0;\pi]\), khi nào \(\sin x\) dương? Có được kể hai đầu mút vào tập kết quả không?
+    **Vận dụng.** Dựa vào đường cong đã đọc, trên đoạn \([-\pi;\pi]\) khi nào \(\sin x<0\)? Có được lấy các mốc \(x=-\pi\), \(x=0\) không?
 
     <span data-ped-first-try="3" data-outcome-id="G11-B03-SIN_GRAPH" data-thpt-first-try-id="THPT-G11-B03-TRY03" hidden></span>
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Đường cong ở trên trục hoành với \(0<x<\pi\). Tại \(x=0\) và \(x=\pi\), giá trị sin bằng \(0\), không dương. Vậy tập cần tìm là \((0;\pi)\).
+        **Lời giải:** Trên \((-\pi;0)\), đồ thị sin nằm **dưới** trục hoành nên \(\sin x<0\). Tại \(-\pi\) và \(0\), sin bằng \(0\), không thỏa điều kiện nghiêm ngặt. Đáp án: \((-\pi;0)\).
 
     <span data-thpt-help-id="HELP-G11-B03-TRY03" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
-        **Dấu hiệu:** Em ghi \([0;\pi]\), hoặc nghĩ “sin đồng biến” trên toàn đoạn này.
+        **Dấu hiệu:** Em ghi cả \(-\pi\) và \(0\), hoặc nhầm phần đồ thị dưới Ox thành giá trị dương.
 
-        **Tự sửa:** Phân biệt \(y>0\) với \(y\ge0\), chỉ lấy phần **trên** trục hoành; sau đó chỉ ra đỉnh tại \(\pi/2\), nên sin tăng rồi giảm. Ôn mục 2.3 và luyện câu Practice nhận diện khoảng đồng biến của sin trong [Core và Luyện tập Bài 3](../luyen-tap/).
+        **Tự sửa:** Phân biệt \(y<0\) với \(y\le0\), nhìn phần đường cong **dưới** trục hoành trên đoạn âm; đừng nhầm đọc dấu với đọc khoảng đồng biến. Ôn mục 2.3 và luyện câu Practice nhận diện khoảng đồng biến của sin trong [Core và Luyện tập Bài 3](../luyen-tap/).
 
     Với cos, đồ thị bắt đầu tại \((0;1)\) chứ không phải \((0;0)\). Trong nửa vòng từ \(0\) đến \(\pi\), cos đi từ \(1\) xuống \(-1\). Đối xứng qua trục tung phản ánh tính chẵn; những lần cắt trục hoành xảy ra ở góc có hoành độ điểm quay bằng \(0\).
 
@@ -211,7 +211,7 @@
 
     **Đọc hình:** Tiệm cận đứng \(x=k\pi\), còn nghiệm \(\cot x=0\) là \(x=\pi/2+k\pi\). Đừng nhầm điểm cắt Ox với điểm bị loại khỏi tập xác định.
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"><strong>Kiến thức cần nhớ:</strong> Trước khi xét bất kỳ hàm nào, hỏi bốn điều: <em>đầu vào nào được phép?</em> → <em>đầu ra có thể nhận gì?</em> → <em>đồ thị đối xứng/lặp lại ra sao?</em> → <em>hàm tăng hay giảm trên từng khoảng nào?</em> Với tan/cot, luôn xét mẫu và các tiệm cận trước.</div>
+    **Cách tự kiểm khi đọc đồ thị:** Trước khi xét một hàm, hỏi: đầu vào nào được phép; đầu ra có thể nhận gì; đồ thị đối xứng/lặp lại thế nào; hàm tăng hay giảm trên từng khoảng nào? Với tan/cot, luôn xét mẫu và các tiệm cận trước.
 
 === "Ví dụ"
 
