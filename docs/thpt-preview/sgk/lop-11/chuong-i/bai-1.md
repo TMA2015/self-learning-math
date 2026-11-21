@@ -212,111 +212,68 @@
 
 === "Kiến thức SGK"
 
-### 1.1. Góc lượng giác và số đo
+    ### 2.1. Góc lượng giác
 
-**Chiều quay.** Một góc lượng giác ghi lại cả tia đầu, tia cuối và chiều quay: ngược chiều kim đồng hồ lấy dương, cùng chiều lấy âm.
+    Một góc hình học cho biết độ mở giữa hai tia, còn một góc lượng giác mô tả phép quay từ tia đầu đến tia cuối theo **một chiều xác định**. Hai phép quay có thể cùng tia cuối nhưng khác chiều và khác số vòng. Để hiểu đúng số đo, trước hết xác định tia đầu, tia cuối, chiều quay.
 
-**Các góc cùng tia cuối.** Hai góc cùng tia đầu/tia cuối có thể chênh nhau một số nguyên lần \(360°\) hoặc \(2π\) rad.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Góc lượng giác</strong> Góc lượng giác \((Ou,Ov)\) là phép quay tia \(Ou\) quanh đỉnh \(O\) tới tia \(Ov\). Chiều ngược kim đồng hồ lấy dương, chiều cùng kim đồng hồ lấy âm; số đo không bị giới hạn trong \([0;360^\circ]\).</div>
 
-**Đổi giữa độ và radian:**
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Các góc cùng tia cuối</strong> Khi tia đầu cố định, các góc cùng tia cuối có số đo \(\alpha+k\cdot360^\circ\), hoặc \(\alpha+2k\pi\) rad, với \(k\in\mathbb Z\). Chỉ dùng quy góc này khi cần tia cuối hay giá trị lượng giác, không thay tổng góc quay trong bài toán quãng đường.</div>
 
-- \(180° = π rad\)
-- \(α rad = α·180°/π\)
-- \(x° = xπ/180 rad\)
+    **Cộng các góc lượng giác.** Với ba tia \(Ou,Ov,Ow\), số đo quay liên tiếp từ \(Ou\) tới \(Ov\), rồi từ \(Ov\) tới \(Ow\), bằng số đo từ \(Ou\) tới \(Ow\) cộng một bội nguyên của \(360^\circ\) nếu đang xét các đại diện góc. Phải giữ cùng đơn vị và chiều quay khi cộng.
 
-**Chú ý:** Khi chỉ xét vị trí cuối trên đường tròn lượng giác có thể quy về một đại diện trong \([0,2π)\), nhưng **không được xóa ý nghĩa số vòng quay** nếu bài toán hỏi quãng đường chuyển động.
+    ### 2.2. Đơn vị đo góc và độ dài cung tròn
 
-### 1.2. Radian và độ dài cung
+    Đường tròn bán kính \(R\) có chu vi \(2\pi R\). Góc ở tâm chắn cung dài bằng bán kính được chọn có độ lớn **1 radian**. Vì cả vòng dài \(2\pi R\), cả vòng ứng với \(2\pi\) rad và \(360^\circ\).
 
-**Công thức độ dài cung.** Với bán kính \(R>0\), góc ở tâm có độ lớn \(|α|\) rad chắn cung có độ dài:
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Rađian</strong> Với bán kính \(R>0\), một cung dài \(R\) chắn góc ở tâm \(1\) rad. Hệ thức \(180^\circ=\pi\) rad cho phép đổi \(x^\circ=\dfrac{x\pi}{180}\) rad và \(a\) rad \(=\dfrac{180a}{\pi}^\circ\).</div>
 
-\[
-s=R|α|
-\]
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Độ dài cung tròn</strong> Với bán kính \(R>0\) và góc quét \(\alpha\) **tính bằng radian**, độ dài cung đã đi là \(s=R|\alpha|\). Dấu góc cho chiều quay, không làm độ dài âm. Khi góc cho bằng độ phải đổi đơn vị trước.</div>
 
-**Lưu ý:** Cung đi theo số lần quay được mô tả.
+    **Ứng dụng quỹ đạo.** Trạm vũ trụ ISS cách mặt đất khoảng 400 km; bán kính Trái Đất lấy khoảng 6400 km. Bán kính quỹ đạo xấp xỉ 6800 km; góc ở tâm \(45^\circ=\pi/4\) rad. Độ dài cung khác với đoạn thẳng nối hai vị trí trạm.
 
-Không dùng trực tiếp độ cho công thức này; góc 180° chắn cung nửa đường tròn dài \(πR\).
+    ### 2.3. Giá trị lượng giác của góc lượng giác
 
-### 1.3. Đường tròn lượng giác
+    Trên đường tròn lượng giác tâm \(O\), bán kính bằng 1, chọn tia đầu là trục \(Ox\) dương. Mỗi góc \(\alpha\) cho một điểm cuối \(M=(x;y)\). Lấy hoành độ làm cos và tung độ làm sin là cách mở rộng lượng giác từ góc nhọn sang mọi góc lượng giác.
 
-**Điểm cuối.** Gắn O với gốc tọa độ, bán kính đơn vị. Khi quay từ trục Ox dương, điểm cuối trên đường tròn là:
+    <figure class="thpt-r4-plot thpt-r4-probability-figure" data-g11-b01-knowledge-figure="shared-unit-circle"><img src="../../../../../assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg" loading="lazy" alt="Góc 5π/6 trên đường tròn lượng giác thuộc góc phần tư II, cos âm và sin dương"/><figcaption><strong>Hướng dẫn đọc hình:</strong> từ trục Ox dương đến điểm M ở góc phần tư II. Hoành độ M cho cos, tung độ M cho sin. Góc tham chiếu π/6 cho độ lớn còn góc phần tư quyết định dấu.</figcaption></figure>
 
-\[
-M=(cos α,sin α)
-\]
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Giá trị lượng giác trên đường tròn đơn vị</strong> Nếu \(M=(x;y)\) biểu diễn góc \(\alpha\) thì \(\cos\alpha=x\), \(\sin\alpha=y\). Khi \(\cos\alpha\ne0\): \(\tan\alpha=\dfrac{\sin\alpha}{\cos\alpha}\). Khi \(\sin\alpha\ne0\): \(\cot\alpha=\dfrac{\cos\alpha}{\sin\alpha}\).</div>
 
-**Hệ thức cơ bản (đúng với mọi α):**
+    **Miền xác định và dấu.** Sin/cos có nghĩa với mọi \(\alpha\), và \(-1\le\sin\alpha,\cos\alpha\le1\). Tang không xác định khi \(\alpha=\pi/2+k\pi\); côtang không xác định khi \(\alpha=k\pi\), \(k\in\mathbb Z\). Dấu theo vị trí điểm cuối:
 
-\[
-sin²α+cos²α=1
-\]
+    | Giá trị | I | II | III | IV |
+    | :--- | :---: | :---: | :---: | :---: |
+    | \(\sin\alpha\) | + | + | − | − |
+    | \(\cos\alpha\) | + | − | − | + |
+    | \(\tan\alpha,\ \cot\alpha\) | + | − | + | − |
 
-**Quy tắc dấu.** Dấu của sin/cos phụ thuộc góc phần tư, không phụ thuộc việc chỉ nhớ số dương của góc tham chiếu.
+    **Bảng góc thường gặp.** Các giá trị của tang/côtang không xác định ở vị trí mẫu bằng 0.
 
-### 1.4. Tang, côtang và điều kiện xác định
+    | Giá trị | \(0\) | \(\pi/6\) | \(\pi/4\) | \(\pi/3\) | \(\pi/2\) |
+    | :--- | :---: | :---: | :---: | :---: | :---: |
+    | \(\sin\alpha\) | \(0\) | \(1/2\) | \(\sqrt2/2\) | \(\sqrt3/2\) | \(1\) |
+    | \(\cos\alpha\) | \(1\) | \(\sqrt3/2\) | \(\sqrt2/2\) | \(1/2\) | \(0\) |
+    | \(\tan\alpha\) | \(0\) | \(\sqrt3/3\) | \(1\) | \(\sqrt3\) | Không xác định |
+    | \(\cot\alpha\) | Không xác định | \(\sqrt3\) | \(1\) | \(\sqrt3/3\) | \(0\) |
 
-**Tang:**
+    **Máy tính cầm tay.** Chọn DEG khi nhập số đo bằng độ, RAD khi nhập radian; chẳng hạn \(\sin30^\circ=\sin(\pi/6)=1/2\). Giá trị từ máy có thể gần đúng; kết quả chứa căn và \(\pi\) trong bảng là chính xác.
 
-\[
-tan α=sin α/cos α
-\]
+    ### 2.4. Quan hệ giữa các giá trị lượng giác
 
-**Điều kiện:** cos α ≠ 0.
+    Điểm \(M=(\cos\alpha;\sin\alpha)\) nằm trên đường tròn đơn vị nên thỏa phương trình \(x^2+y^2=1\). Thay tọa độ vào cho hệ thức cơ bản; chỉ chia cho \(\sin^2\alpha\) hoặc \(\cos^2\alpha\) sau khi kiểm mẫu khác 0.
 
-**Côtang:**
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Hệ thức lượng giác cơ bản</strong> Với mọi \(\alpha\), \(\sin^2\alpha+\cos^2\alpha=1\). Khi \(\cos\alpha\ne0\): \(1+\tan^2\alpha=\dfrac1{\cos^2\alpha}\). Khi \(\sin\alpha\ne0\): \(1+\cot^2\alpha=\dfrac1{\sin^2\alpha}\). Nếu cả sin và cos đều khác 0 thì \(\tan\alpha\cot\alpha=1\).</div>
 
-\[
-cot α=cos α/sin α
-\]
+    **Các góc liên quan đặc biệt.** Đối xứng các điểm trên đường tròn qua các trục hoặc tâm làm các tọa độ giữ nguyên, đổi dấu hay hoán đổi. Nhờ vậy có thể liên hệ sin, cos của góc đối, góc bù, góc phụ và góc hơn kém \(\pi\).
 
-**Điều kiện:** sin α ≠ 0.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Góc đối và góc bù</strong> \(\sin(-\alpha)=-\sin\alpha,\ \cos(-\alpha)=\cos\alpha;\quad \sin(\pi-\alpha)=\sin\alpha,\ \cos(\pi-\alpha)=-\cos\alpha\).</div>
 
-**Các hệ thức suy ra từ đẳng thức cơ bản:**
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Góc phụ và góc hơn kém (pi)</strong> \(\sin(\pi/2-\alpha)=\cos\alpha,\ \cos(\pi/2-\alpha)=\sin\alpha;\quad \sin(\pi+\alpha)=-\sin\alpha,\ \cos(\pi+\alpha)=-\cos\alpha\).</div>
 
-\[
-1+tan²α=1/cos²α
-\]
+    **Tang và côtang của góc liên quan.** Suy ra từ các tỉ số sin/cos: góc đối và góc bù làm tan/cot đổi dấu; góc phụ hoán đổi tan với cot; góc hơn kém \(\pi\) giữ nguyên hai giá trị. Mỗi đẳng thức chỉ áp dụng khi hai vế xác định.
 
-trên miền \(cos α ≠ 0\);
-
-\[
-1+cot²α=1/sin²α
-\]
-
-trên miền \(sin α ≠ 0\).
-
-**Chu kì.** Sin/cos chu kì 2π; tan/cot chu kì π khi xác định.
-
-### 1.5. Các góc liên quan đặc biệt
-
-**Góc đối:**
-
-- \(sin(−α)=−sinα\)
-- \(cos(−α)=cosα\)
-
-**Góc liên quan tới π:**
-
-- \(sin(π−α)=sinα\)
-- \(cos(π−α)=−cosα\)
-- \(sin(π+α)=−sinα\)
-- \(cos(π+α)=−cosα\)
-
-**Góc phụ:**
-
-- \(sin(π/2−α)=cosα\)
-- \(cos(π/2−α)=sinα\)
-
-**Điều kiện:** Mọi hệ thức tan/cot cần kiểm điều kiện mẫu khác 0.
-
-**Bảng góc đặc biệt:** Bảng giá trị \(0,π/6,π/4,π/3,π/2\) là tiền đề cần học sinh tự tái dựng trên đường tròn, không chỉ học thuộc.
-
-
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg" loading="lazy" alt="Điểm M tại góc 5π/6 trên đường tròn lượng giác"><figcaption>Điểm M tại góc 5π/6 trên đường tròn lượng giác.</figcaption></figure>
-
-### Hướng dẫn đọc hình, đồ thị
-
-- **Hình minh họa:** tìm tâm O, tia đầu Ox dương và tia cuối OM, xác định góc quay cùng/ ngược chiều và góc phần tư của M. Đọc hoành độ M → cos α, tung độ M → sin α; hai góc cùng tia cuối có thể khác **số vòng**. Trước khi dùng hình để suy dấu tan/cot, kiểm mẫu khác 0.
+    **Chu kì.** Với \(k\in\mathbb Z\), \(\sin(\alpha+2k\pi)=\sin\alpha\), \(\cos(\alpha+2k\pi)=\cos\alpha\); \(\tan(\alpha+k\pi)=\tan\alpha\), \(\cot(\alpha+k\pi)=\cot\alpha\), khi xác định. Quy góc theo chu kì giúp tìm giá trị lượng giác, không thay tổng góc quay thực tế.
 
 
 === "Ví dụ"
