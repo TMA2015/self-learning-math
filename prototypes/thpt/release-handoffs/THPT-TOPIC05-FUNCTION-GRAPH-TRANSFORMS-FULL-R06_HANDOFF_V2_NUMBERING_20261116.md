@@ -1,3 +1,10 @@
+<!-- TOP05_MASTER974_PED6_CURRENT_ONE_V2_20261121 -->
+## CURRENT AUTHORING CĐ05 — V2 one locked source (Q01–Q18 v3.2.0)
+
+One canonical R06 learner source `909f873c57e543b8f6d3c383d0b88df6900e334a`; exact bank source `ab878f1a18dea87872449a79c27b75a612d81b39` unchanged. One existing signed composite Q18 AUTHOR_SELF_VERIFIED receipt `9c8c62a406e24af99efbdbe0bc081f1998c1f2ba`, existing author A1–A7/custody `701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a`. Reused direct 38-canonical +17-outcome math/PED audit for its unchanged source, with two additional independently checked affected PED6 corrections: O01 returns students to specific Bài1/Bài2 after an error; 17 PUBLIC selfchecks gain **one opt-in** map to actual Practice (no duplicated answer/key). Full Practice 38 original math and 4 Written rubrics untouched, three SVG unchanged, 56/56 balanced disclosures, 1 SGK credit at Topic end. PUBLIC replay only/no Mastery/RD1. `DELTA_C_PED_TARGETED` signed by author, no independent NotebookLM reviewer PASS claim, no RELEASE/merge/deploy.
+
+---
+
 <!-- TOP05_S1_G10_B16_QUADRATIC_AUTHORING_DELTA_C_20261120 -->
 **20/11 Owner Authoring Q01 Delta C / G10 T2 B16:** Single source `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd` explicitly teaches quadratic y=ax²+bx+c (a≠0), domain R, value-table, parabola construction, vertex/axis, upward/downward and variation; S1 printed pages 11–14. Scoped Q18 `a9a4e5261dc9444018d316a393a5d4ac6c868d00`, A1 `e63fd2c3ea1be9736a6fdfc565e99554b38e545d`. 9/9 math+source tests; canonical examples/questions/keys/rubrics untouched, no additional placement or private RD1. Source academic CONTENT_READY preserved under owner, no RELEASE or new independent NotebookLM claim.
 
@@ -8,18 +15,18 @@ PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: 28ddbef7523a8e62daa98234a20a33ae1a3a7f80
-AUTHOR_A1_A7_BLOB: 28ddbef7523a8e62daa98234a20a33ae1a3a7f80
+AUTHOR_METADATA_BLOB: 701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a
+AUTHOR_A1_A7_BLOB: 701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1
+ACADEMIC_SOURCE_BLOB: 909f873c57e543b8f6d3c383d0b88df6900e334a
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: f20c9cfae613b6dfb65fe1a7b754e05f54cf84ce
+REVIEW_RECEIPT_BLOB: 9c8c62a406e24af99efbdbe0bc081f1998c1f2ba
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 CATALOG_TOPIC_ID: CD05
