@@ -61,25 +61,153 @@
 
 === "Khám phá kiến thức"
 
-### Trước khi học: Vì sao cần kiến thức này?
+    Một bánh xe quay thêm hai vòng rồi trở về cùng vị trí. Nếu chỉ nhìn tia cuối, ta không biết bánh xe đã quay bao nhiêu vòng hoặc theo chiều nào. Kiến thức về góc lượng giác giúp mô tả **góc quay có hướng**; radian cho phép tính **độ dài cung**; đường tròn lượng giác giúp tính sin và cos của những góc không còn là góc nhọn.
 
-**Vấn đề:** Khi một bánh xe quay nửa vòng, rồi tiếp tục thêm hai vòng, tia cuối có thể giống nhau nhưng tổng góc quay và quãng đường đi được khác nhau. Góc hình học thông thường chỉ mô tả độ mở, chưa ghi được **chiều quay** và **số vòng quay**. Vì vậy Bài 1 dùng **góc lượng giác có hướng** và số đo radian: góc dương khi quay ngược chiều kim đồng hồ, âm khi quay cùng chiều.
+    Kiến thức tiền đề: ở lớp 10, em đã dùng \(\sin\) và \(\cos\) cho góc từ \(0^\circ\) đến \(180^\circ\), biết tỉ số lượng giác trong tam giác vuông, hệ thức Pythagore và chu vi đường tròn. Bài này mở rộng sin/cos ra mọi số đo góc, rồi hình thành những quan hệ lượng giác.
 
-**Kiến thức đã biết → kiến thức mới:** Ở tam giác vuông, với góc nhọn, sin/cos là **tỉ số cạnh đối/huyền, kề/huyền**; tam giác đồng dạng khiến các tỉ số không phụ thuộc kích thước. Nhưng cách này không trực tiếp mô tả góc quay âm hay hơn 180°. Ta đặt điểm M chạy trên **đường tròn bán kính 1**, lấy trục Ox dương làm tia đầu. Khi góc quay là α, **hoành độ** của M chính là cos α và **tung độ** là sin α. Hai tọa độ vừa giải thích ý nghĩa đại lượng vừa tự làm rõ vì sao sin²α+cos²α=1 và mọi sin/cos nằm trong [-1,1]. Chỉ sau cầu nối ấy hãy học cách tính và các điều kiện tan/cot.
+    ### 1.1. Góc quay có hướng
 
-**Radian xuất hiện từ đâu?** Với một góc ở tâm có độ lớn α, tỉ số **độ dài cung / bán kính** không phụ thuộc kích thước đường tròn: số đo radian của góc lấy theo tỉ số này, kèm dấu chiều quay. Vì cả vòng có độ dài 2πR nên cả vòng là 2π rad; nửa vòng là π rad. Nếu bánh xe quay ngược chiều 2π rồi quay tiếp 2π, điểm cuối trùng ban đầu nhưng **tổng đường đi** là 4πR, không phải 0.
+    Kim phút đi từ số 2 đến số 12: ngược chiều kim đồng hồ chỉ đi qua hai khoảng số, cùng chiều kim đồng hồ phải đi qua mười khoảng số. Hai phép quay có cùng tia cuối nhưng khác **chiều** và **độ lớn**. Quy ước ngược chiều kim đồng hồ là chiều dương; chiều ngược lại là âm.
 
-**Khi nào dùng và điều kiện:** Dùng radian để tính độ dài cung, dùng tọa độ M để tính sin/cos cho góc bất kỳ; tan α chỉ xác định nếu cos α ≠ 0, cot α chỉ xác định nếu sin α ≠ 0. Không coi sin/cos là độ dài có đơn vị.
+    **Vận dụng.** Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Nêu góc quay theo radian và độ dài cung đã đi.
 
-### Tự thử trước khi luyện tập
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-SIGNED_ROTATION" data-thpt-first-try-id="THPT-G11-CHI-TRY01" hidden></span>
 
-Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Góc có hướng bao nhiêu radian, và quãng đường cung là bao nhiêu cm? Hãy giải thích vì sao một vòng quay khác “không quay” dù tia cuối giống nhau.
+    ??? question "Đối chiếu"
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã thử xong? Mở hướng dẫn đối chiếu</summary>
+        <p><strong>Đáp án và lập luận:</strong> Góc quay \(+2\pi\) rad. Một vòng dài \(2\pi R\), nên với \(R=2\) cm, độ dài cung là \(4\pi\) cm. Tia cuối trùng tia đầu không có nghĩa là bánh xe đứng yên.</p>
 
-Góc +2π rad, độ dài 4π cm. Hai tia cuối trùng nhau không có nghĩa bánh xe không quay. Nếu chưa chắc, đọc lại phần giải thích radian và Ví dụ 3, rồi làm câu Core đầu tiên của bài.
+    <span data-thpt-help-id="HELP-G11-CHI-TRY01" hidden></span>
 
-</details>
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi cần kiểm:</strong> Đồng nhất tia cuối với tổng góc đã quay.</p>
+        <p><strong>Bước 1:</strong> Xác định đề hỏi vị trí cuối hay tổng chuyển động.</p>
+        <p><strong>Bước 2:</strong> Một vòng bằng (2pi) rad và đi hết chu vi (2pi R).</p>
+        <p><strong>Bước 3:</strong> Giữ góc quay có dấu, nhưng quãng đường phải không âm.</p>
+        <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
+
+
+    ### 1.2. Góc cùng tia cuối
+
+    Nếu từ cùng tia đầu, hai số đo chênh nhau trọn một số nguyên vòng, chúng cho cùng tia cuối. Chẳng hạn \(-150^\circ\) và \(210^\circ\) khác nhau \(360^\circ\). Điều này cho phép tìm giá trị lượng giác của góc lớn hơn một vòng mà không làm mất ý nghĩa chuyển động thực.
+
+    **Vận dụng.** Hai góc (-150^circ) và (210^circ) có cùng tia đầu Ox. Chúng có cùng tia cuối không? Viết các số đo cùng tia cuối với (210^circ).
+
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-COTERMINAL" data-thpt-first-try-id="THPT-G11-CHI-TRY02" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <p><strong>Đáp án và lập luận:</strong> Có, vì \(210^\circ-(-150^\circ)=360^\circ\). Các góc cùng tia cuối có số đo \(210^\circ+k\cdot360^\circ\), \(k\in\mathbb Z\).</p>
+
+    <span data-thpt-help-id="HELP-G11-CHI-TRY02" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi cần kiểm:</strong> Không xét số nguyên âm trong công thức các góc cùng tia cuối.</p>
+        <p><strong>Bước 1:</strong> Lấy hiệu hai số đo góc cùng đơn vị.</p>
+        <p><strong>Bước 2:</strong> Kiểm hiệu có bằng một bội nguyên của (360^circ) không.</p>
+        <p><strong>Bước 3:</strong> Viết (kinmathbb Z), không hạn chế chỉ những góc dương.</p>
+        <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
+
+
+    ### 1.3. Đơn vị radian và cung tròn
+
+    Một cung có độ dài đúng bằng bán kính chắn góc ở tâm **1 radian**. Vì một vòng dài \(2\pi R\), toàn bộ một vòng ứng với \(2\pi\) rad. Công thức tính độ dài cung dùng góc tính theo radian; không được thay trực tiếp giá trị góc theo độ.
+
+    Trạm vũ trụ ISS chuyển động trên quỹ đạo cách bề mặt Trái Đất khoảng 400 km. Với bán kính Trái Đất khoảng 6400 km, bán kính quỹ đạo là 6800 km. Khi trạm quét góc ở tâm \(45^\circ\), cần đổi đơn vị góc trước khi tìm quãng đường cung.
+
+    **Vận dụng.** Cho quỹ đạo tròn bán kính 6800 km. Tính độ dài cung chắn góc (45^circ), làm tròn đến kilômét.
+
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-ARC_LENGTH" data-thpt-first-try-id="THPT-G11-CHI-TRY03" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <p><strong>Đáp án và lập luận:</strong> Đổi \(45^\circ=\pi/4\) rad. Khi đó \(s=6800\cdot\pi/4=1700\pi\approx5341\) km. Đây là độ dài cung, không phải dây cung.</p>
+
+    <span data-thpt-help-id="HELP-G11-CHI-TRY03" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi cần kiểm:</strong> Nhân bán kính với số 45 trong công thức dành cho radian.</p>
+        <p><strong>Bước 1:</strong> Đổi góc độ sang radian.</p>
+        <p><strong>Bước 2:</strong> Dùng (s=R|alpha|), đơn vị là km.</p>
+        <p><strong>Bước 3:</strong> Kiểm cung một phần tám vòng thì dài đúng một phần tám chu vi.</p>
+        <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
+
+
+    ### 1.4. Đọc đường tròn lượng giác
+
+    Trong tam giác vuông, sin và cos của góc nhọn là những tỉ số giữa độ dài các cạnh. Muốn có sin và cos cho góc âm, góc tù hoặc góc quay hơn một vòng, ta dùng điểm \(M=(x;y)\) trên **đường tròn bán kính 1**: \(\cos\alpha=x\), \(\sin\alpha=y\).
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg" loading="lazy" alt="Đường tròn lượng giác với góc 5π/6 ở góc phần tư II, hoành độ âm và tung độ dương"/><figcaption><strong>Hướng dẫn đọc hình:</strong> tìm trục Ox dương là tia đầu, điểm cuối M tại góc phần tư II. Hoành độ M cho cos, tung độ M cho sin; góc tham chiếu π/6 giúp tìm độ lớn, góc phần tư xác định dấu.</figcaption></figure>
+
+    Trên hình, góc \(5\pi/6\) nằm ở góc phần tư II nên cos âm và sin dương. Để tính góc khác, em dùng **góc tham chiếu** cho độ lớn, sau đó gắn đúng dấu theo góc phần tư.
+
+    **Vận dụng.** Tính (sin(7pi/6)), (cos(7pi/6)) và (	an(7pi/6)).
+
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-UNIT_CIRCLE" data-thpt-first-try-id="THPT-G11-CHI-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <p><strong>Đáp án và lập luận:</strong> Góc \(7\pi/6\) thuộc góc phần tư III, có góc tham chiếu \(\pi/6\). Do đó \(\sin(7\pi/6)=-1/2\), \(\cos(7\pi/6)=-\sqrt3/2\), \(\tan(7\pi/6)=\sqrt3/3\).</p>
+
+    <span data-thpt-help-id="HELP-G11-CHI-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi cần kiểm:</strong> Đúng góc tham chiếu nhưng quên dấu sin/cos của góc phần tư.</p>
+        <p><strong>Bước 1:</strong> Xác định góc phần tư của điểm cuối.</p>
+        <p><strong>Bước 2:</strong> Lấy trị tuyệt đối sin/cos từ (pi/6), sau đó gắn dấu.</p>
+        <p><strong>Bước 3:</strong> Chỉ tính tan khi cos khác 0; kiểm dấu tan bằng dấu tỉ số.</p>
+        <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
+
+
+    ### 1.5. Miền xác định của tang và côtang
+
+    Tang là tỉ số sin/cos; côtang là cos/sin. Khi điểm cuối nằm trên trục Oy, cos bằng 0 nên tan không xác định; khi điểm nằm trên trục Ox, sin bằng 0 nên cot không xác định. Không được coi “không xác định” là bằng 0.
+
+    **Vận dụng.** Với (alpha=3pi/2), xác định (sinalpha,cosalpha); xét sự tồn tại của (	analpha,cotalpha).
+
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-TRIG_DOMAIN" data-thpt-first-try-id="THPT-G11-CHI-TRY05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <p><strong>Đáp án và lập luận:</strong> Điểm cuối \((0;-1)\) nên \(\sin\alpha=-1\), \(\cos\alpha=0\). Tang không xác định vì mẫu cos bằng 0; côtang bằng \(0/(-1)=0\).</p>
+
+    <span data-thpt-help-id="HELP-G11-CHI-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi cần kiểm:</strong> Nhầm giá trị bằng 0 với phép chia không xác định.</p>
+        <p><strong>Bước 1:</strong> Viết công thức của tan và cot dưới dạng phân số.</p>
+        <p><strong>Bước 2:</strong> Kiểm mẫu từng phân số trước khi tính.</p>
+        <p><strong>Bước 3:</strong> Đối chiếu vị trí điểm cuối trên trục Oy âm.</p>
+        <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
+
+
+    ### 1.6. Các góc liên quan đặc biệt
+
+    Từ đối xứng trên đường tròn đơn vị, ta tìm nhanh sin/cos của các góc đối, bù, phụ và hơn kém \(\pi\). Cần xác định đúng loại góc trước khi sử dụng dấu.
+
+    **Vận dụng.** Tính (sin(-pi/6)) và (cos(pi-pi/6)) dựa vào góc chuẩn (pi/6).
+
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-RELATED_ANGLES" data-thpt-first-try-id="THPT-G11-CHI-TRY06" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        <p><strong>Đáp án và lập luận:</strong> Với góc đối: \(\sin(-\pi/6)=-\sin(\pi/6)=-1/2\). Với góc bù: \(\cos(\pi-\pi/6)=-\cos(\pi/6)=-\sqrt3/2\).</p>
+
+    <span data-thpt-help-id="HELP-G11-CHI-TRY06" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi cần kiểm:</strong> Áp dụng quy tắc cùng dấu cho góc đối và góc bù.</p>
+        <p><strong>Bước 1:</strong> Nhận diện một góc đối và một góc bù.</p>
+        <p><strong>Bước 2:</strong> Tìm tọa độ điểm đối xứng để xác định đại lượng đổi dấu.</p>
+        <p><strong>Bước 3:</strong> Kiểm góc cuối và dấu kết quả trên đường tròn lượng giác.</p>
+        <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
+
 
 
 === "Kiến thức SGK"
