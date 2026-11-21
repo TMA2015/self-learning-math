@@ -1,3 +1,6 @@
+<!-- TOP05_MASTER974_ONE_CANONICAL_CURRENT_PED6_CUSTODY_20261121 -->
+**CURRENT AUTHORING:** one learner `909f873c57e543b8f6d3c383d0b88df6900e334a` (same R06 path), current existing Q18 receipt `9c8c62a406e24af99efbdbe0bc081f1998c1f2ba`, unchanged one bank `ab878f1a18dea87872449a79c27b75a612d81b39`. Targeted pedagogy after original direct 38-item/17-outcome source audit: 17/17 Knowledge FirstTry have actual D6 Practice routes, 17 public selfchecks mapped voluntarily to real Practice keys; all 38 bank questions/rubrics and 3 SVG unchanged. No additional independent NotebookLM verdict or website RELEASE. Historical snapshots preserved below.
+
 <!-- TOP05_S1_B16_G10_A1_DELTA_C_20261120 -->
 ## Q01/O06 G10 B16 mandatory concepts coverage
 
@@ -11,13 +14,13 @@
 
 PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1
+SOURCE_BLOB: 909f873c57e543b8f6d3c383d0b88df6900e334a
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-CURRENT_Q18_RECEIPT_BLOB: f20c9cfae613b6dfb65fe1a7b754e05f54cf84ce
+CURRENT_Q18_RECEIPT_BLOB: 9c8c62a406e24af99efbdbe0bc081f1998c1f2ba
 BLOCKERS_AUTHORING_P0_P1: NONE_IN_CHECKED_SOURCE
 AUTHORING_STATUS: CURRENT_SOURCE_Q01_Q18_AUTHOR_SELF_QA_PASS
 RELEASE_AUTHORIZATION: NO
