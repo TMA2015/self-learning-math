@@ -46,6 +46,12 @@ for(const [name,chapter,num]of specs){
  // current main must equal EITHER the old published blob or its exact approved
  // replacement. No arbitrary source drift is accepted.
  const baselineSha=blob(mainRaw);
+ // Current main may itself already contain the latest signed Q18 revision.
+ // Keep the frozen intake ledger AND require an independently matched
+ // exact current candidate; never label this a fresh Academic/PED review.
+ const signedCurrent=candidateG10KnowledgeBlob(num)||row.candidate;
+ assert.equal(blob(candidateRaw),signedCurrent,
+   name+" current candidate must match the complete Q18 successor chain");
  // The immutable ChIV v3.1.0 Q18 receipt adds the third approved
  // state for B09 only. Keep the old ledger snapshots and identity chain:
  // historical main -> Model B candidate -> S1 editorial candidate.
@@ -82,6 +88,22 @@ for(const [name,chapter,num]of specs){
    receiptField(b09P1Receipt,"ONE_CANONICAL_LESSON_BLOB"),
    "B09 R06 one academic manuscript must follow frozen P1 snapshot");
  }
+ // B09 20/11 R02 moves a general vector error into Tab 4 and extends
+ // the prior 20/11 placement R01, without changing any academic math.
+ const b09R02=name==="B09"?read(root,
+  "prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md").toString("utf8"):null;
+ const b09CurrentR02=b09R02?receiptField(b09R02,"R02_CORRECTED_SOURCE_BLOB"):null;
+ if(b09R02){
+  assert.equal(receiptField(b09R02,"R02_PREVIOUS_SOURCE_BLOB"),
+   "e1bc7777f5b39f831f8009f4b564381d23d40aa2",
+   "B09 R02 must extend the frozen 20/11 R01 source");
+  assert.equal(b09CurrentR02,signedCurrent,
+   "B09 R02 source must match the current canonical Q18 router");
+  assert(b09R02.includes("DELTA_A_UI")&&
+   b09R02.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+   b09R02.includes("OWNER_P2_PENDING"),
+   "B09 R02 placement receipt must not claim academic or owner P2 PASS");
+ }
  const b15Historical=name==="B15"?read(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md").toString("utf8"):null;
   const b15P2=name==="B15"?read(root,
@@ -98,12 +120,16 @@ for(const [name,chapter,num]of specs){
    ...(chviReceiptRow?[chviReceiptRow.candidate]:[]),...(ux?[ux.candidate]:[]),
    ...(b09PublishedP1?[b09PublishedP1]:[]),
    ...(b09OwnerP2?[b09OwnerP2]:[]),
+   ...(b09CurrentR02?[b09CurrentR02]:[]),
+   // Approved current main is allowed ONLY if exactly pinned to the
+   // same complete Q18 chain as the checked candidate.
+   signedCurrent,
    ...(b15Historical?[receiptField(b15Historical,"CANDIDATE_B15_SOURCE_BLOB")]:[]),
    ...(b15P2?[receiptField(b15P2,"CANDIDATE_B15_SOURCE_BLOB")]:[]),
    ...(b15R02?[receiptField(b15R02,"CANDIDATE_B15_SOURCE_BLOB")]:[])];
   assert(approvedSources.includes(baselineSha),
    name+" unknown main baseline source drift outside immutable 27-row/Q18 chain");
- assert.equal(blob(candidateRaw),candidateG10KnowledgeBlob(num)||row.candidate,name+" exact approved historical/editorial source drift");
+ assert.equal(blob(candidateRaw),signedCurrent,name+" exact approved historical/editorial source drift");
  const base=mainRaw.toString("utf8"),s=candidateRaw.toString("utf8");
  assert.deepEqual(getIDs(s),getIDs(base),name+" original First Try/HELP/outcome IDs changed");
  assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),tabs,name+" changed owner Model B tabs");
@@ -118,11 +144,10 @@ for(const [name,chapter,num]of specs){
   assert(originalStart>=0&&originalEnd>originalStart,"B09 historic main S1 source intact");
   const historic=[...base.slice(originalStart,originalEnd).matchAll(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\$([^$]+)\$/g)]
     .map(x=>(x[1]??x[2]??x[3]).trim().replace(/\s+/g," "));
-  if(baselineSha===b09PublishedP1||baselineSha===b09OwnerP2){
-   // This main source is the immutable R05 owner P1 publication, not the
-   // original 30-expression historical baseline. Validate its signed SHA,
-   // complete S1 meaning, stable First Tries and new diagram, not the old
-   // expression order that legitimately changed under reviewed Delta C.
+  if([b09PublishedP1,b09OwnerP2,b09CurrentR02].includes(baselineSha)){
+   // This main source is a signed R05/R06/R02 successor, not the original
+   // 30-expression historical baseline. The immutable ledger still freezes
+   // that original snapshot; source-locked Delta C may reorder its math.
    assert(base.includes("Phân tích duy nhất theo hai vectơ không cùng phương")&&
     base.includes("THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg")&&
     base.includes("THPT-G10-CHIV-TRY11"),"B09 signed R05 published main mathematics missing");
@@ -152,7 +177,7 @@ for(const [name,chapter,num]of specs){
    assert.equal(row.main,historicalMainB09GitBlob,"B09 ledger must retain immutable historic published Git blob");
    assert.notEqual(blob(candidateRaw),historicalMainB09GitBlob,"B09 must remain a distinct source-locked Delta C");
   assert.equal(ids.first.length,5);assert.equal(ids.help.length,2);
-  console.log("PASS EVIDENCE B09: historical 30-math witness frozen; baseline SHA "+baselineSha+" approved R03→R05→R06 chain, five First Tries/two HELP, Q18 current candidate math signed");
+  console.log("PASS EVIDENCE B09: historical 30-math witness frozen; baseline SHA "+baselineSha+" approved R03→R05→R06→R01→R02 chain, five First Tries/two HELP, Q18 current candidate math signed");
  }else{
   const old=chvi.match(new RegExp(num+':\\{display:(\\d+),inline:(\\d+),sha:"([a-f0-9]{40})",tries:(\\d+),extraFold:(\\d+)\\}'));
   assert(old,name+" historical math spec missing");
