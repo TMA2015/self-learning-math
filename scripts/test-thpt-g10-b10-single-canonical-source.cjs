@@ -115,10 +115,10 @@ const exactKnowledge=part("B10_KNOWLEDGE_MARKDOWN");
 assert(src.endsWith("\n"),"B10 learner source must retain final newline");
 assert.equal(exactKnowledge,src+"\n",
  "B10 manuscript and learner are exact, except one signed section-boundary LF");
-assert.equal(part("B10_R01_CORE_PRACTICE"),old("THPT-G10-B10-C01","THPT-G10-B11-C01"),
- "B10 original 8 records/keys/solutions not exact");
-assert.equal(part("B10_R01_WRITTEN"),old("THPT-G10-CHIV-W10","THPT-G10-CHIV-W11-ANCHOR"),
- "Original W10 rubrics not exact");
+assert.equal(part("B10_R01_CORE_PRACTICE")+"\n",old("THPT-G10-B10-C01","THPT-G10-B11-C01"),
+ "B10 original 8 records/keys/solutions exact, accounting for one legacy section delimiter LF");
+assert.equal(part("B10_R01_WRITTEN")+"\n",old("THPT-G10-CHIV-W10","THPT-G10-CHIV-W11-ANCHOR"),
+ "Original W10 rubric exact, accounting for one legacy section delimiter LF");
 const ids=[...src.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]);
 const help=[...src.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(x=>x[1]);
 assert.deepEqual(ids,["THPT-G10-CHIV-TRY16","THPT-G10-CHIV-TRY17","THPT-G10-CHIV-TRY18",
