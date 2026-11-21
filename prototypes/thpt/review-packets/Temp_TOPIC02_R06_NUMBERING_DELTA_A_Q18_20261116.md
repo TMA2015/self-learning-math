@@ -1,3 +1,50 @@
+<!-- MASTER974_TOPIC02_FINAL_SOURCE_SELF_Q18_20261121 -->
+## CĐ02 — ĐỐI CHIẾU ĐỦ 16 OUTCOME / 38 CANONICAL / 3 HÌNH · Q18 AUTHOR_SELF_VERIFIED v3.2.0 (21/11/2026)
+
+**KẾT LUẬN HIỆN HÀNH CỦA AUTHORING:** Đã đọc trọn *một* canonical `prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md` Git blob `d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5`. Mọi ghi chú dưới đây và các mục R06 cũ là lịch sử kiểm toán theo source SHA; đoạn này **ghi lại quyết định tự kiểm hiện hành trên nguồn đã sửa**. `Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED`, **không phải Academic/PED reviewer PASS**. Áp dụng chuẩn duy nhất `SLM-THPT-QUALITY-ONE v3.2.0`.
+
+**Q01/S1 có phạm vi và giới hạn trung thực:** SGK KNTT Toán 10 Tập 1 Bài 3 trang in 22–25, Bài 4 trang 26–30; Tập 2 Bài 17 trang 19–24 đã được đọc quét trực tiếp và ghi ở source receipt `Temp_TOPIC02_G10_B03_B04_B17_ORIGINAL_S1_IMAGE_AUDIT_20261120.md` blob `53ecd902154118ba7ea9ab2a96e57f523feb8fd4`. Audit đó xác nhận trang in/PDF index, bốn họ kiến thức và các khối chủ chốt, không giả nhận đã kiểm từng bài SBT hoặc tất cả phương trình in nguyên quyển. Đối chiếu yêu cầu thực tế: quy tắc bất phương trình 1 ẩn, tam thức/Δ và nghiệm kép, miền nghiệm hai ẩn, hệ giao miền và mô hình tối ưu đều được dạy đủ trong learner; không phát hiện thiếu một mảng S1 bắt buộc ở 16 outcome đã đọc.
+
+### Kiểm toàn bộ outcome theo toán + năng lực tự học (Q02–Q14)
+
+| Outcome | Kiến thức/ví dụ/Vận dụng đã kiểm | Tự tính/căn cứ bác bỏ sai lầm |
+| --- | --- | --- |
+| TOP02-O01 / 1.1 | Biến đổi BPT giữ tập nghiệm, chia số âm đổi chiều | `−5x+2>12 ⇒ x<−2`; `−3(x−2)≥6 ⇒ x≤0`; kiểm bằng thế |
+| TOP02-O02 / 2.1 | Tam thức bậc hai a≠0, Δ và Δ′ = (b/2)²−ac | `2x²−8x+6=0 ⇒ x=1,3`; `2x²−7x+3=0 ⇒ x=1/2,3` |
+| TOP02-O03 / 2.2 | Δ<0 thì tam thức cùng dấu a trên ℝ | `x²+2x+5=(x+1)²+4>0`, `−x²+2x−3=−[(x−1)²+2]<0` |
+| TOP02-O04 / 2.3 | Nghiệm kép không đổi dấu khi đi qua, nhận/loại nghiệm tùy dấu | `−3(x−2)²≥0` chỉ x=2; với `3(x−2)²` giá trị hai phía 3,3 |
+| TOP02-O05 / 2.4 | Tam thức hai nghiệm, ngoài cùng dấu a, trong trái dấu a | `x²−4x+3=(x−1)(x−3)`; `−(x+1)(x−4)>0 ⇒ −1<x<4` |
+| TOP02-O06 / 2.5 | Tập nghiệm BPT bậc hai; dấu nghiêm khác dấu có bằng | `−x²+4x−3>0 ⇒ (1,3)`; tại x=1,3 bằng 0 nên loại |
+| TOP02-O07 / 2.6 | Điều kiện đúng mọi x khi a>0 cố định: strict Δ<0; ≥ Δ≤0 | `x²+2(m−1)x+(m+1)>0` ⇔ `0<m<3`; `x²−2mx+1≥0` ⇔ `−1≤m≤1` |
+| TOP02-O08 / 2.7 | Miền vật lý giao miền đại số; đơn vị/độ dài/thời gian | `x(20−2x)≥32` với 0<x<10 ⇔ 2≤x≤8; `−t²+6t≥8` ⇔ 2≤t≤4 |
+| TOP02-O09 / 3.1 | BPT bậc nhất hai ẩn yêu cầu (a,b)≠(0,0), có thể 1 hệ số 0 | `0x+2y≥4 ⇒ y≥2`, hai cặp (10,3) đúng, (0,1) sai |
+| TOP02-O10 / 3.2 | Điểm chọn phía không được ở đường biên | `x−2y>3`: (4,0) đúng, (1,−1) ở biên sai; O không thỏa nhưng dùng thử được |
+| TOP02-O11 / 3.3 | Biên liền cho ≤/≥, biên đứt cho </> | `2x−y<1 ⇔ y>2x−1`; O thỏa 0<1, biên không được nhận |
+| TOP02-O12 / 3.4 | Chuyển lời nói thành ràng buộc, đúng đơn vị, biến nguyên | `4x+7y≤56` với (7,4) bằng 56 đúng, (8,4) bằng 60 sai |
+| TOP02-O13 / 3.5 | Hệ là giao các nửa mặt phẳng, nghiệm phải thỏa mọi ràng buộc | `x+y≤2` và `x+y≥5` không có điểm chung |
+| TOP02-O14 / 3.6 | Miền rỗng khác không bị chặn, hàm tuyến tính có thể vẫn có max | `F=−2x−y≤0` với x,y≥0 đạt max 0 tại O, không min hữu hạn do x→∞ |
+| TOP02-O15 / 4.1 | Trên đa giác đóng/bị chặn/khác rỗng, tối ưu tuyến tính tại đỉnh; có thể đạt cả cạnh | x+y≤6,2x+y≤8, x,y≥0 cho đỉnh (0,0),(4,0),(2,4),(0,6); `F=3x+2y` max 14 tại (2,4); `F=x+y` trên x+y≤4 có cả cạnh tối ưu |
+| TOP02-O16 / 4.2 | Phân biệt cực trị liên tục và cực trị số nguyên; không làm tròn tùy ý | x+2y≤8,2x+y≤8, P=3x+2y cho max liên tục 40/3 tại (8/3,8/3); max nguyên 13 tại (3,2); kiểm thêm 4 bài canonical tối ưu bên dưới |
+
+**D1/D2/PED1–PED6:** Đã đọc đầy đủ 16 mạch WHY→BRIDGE→lập luận→phát biểu/điều kiện→Ví dụ có Đề bài/Lời giải→16 Vận dụng tự làm→16 Đối chiếu opt-in→16 Kiểm lỗi nêu *lỗi toán và số Bài Luyện tập đúng có thật*. Ba nhóm nội dung nối từ bất đẳng thức 1 ẩn/tam thức đến nửa mặt phẳng/hệ và tối ưu số nguyên; giữ đúng ba phần `Kiến thức/Luyện tập/Tự kiểm tra` (không có Core Topic). Đủ D6 theo bản hiện hành; không ép một bảng điều hành PED xuất hiện trong lời học sinh.
+
+**Q05/Q06/Q15 — đối chiếu ngân hàng nguồn thật:** Original SGK bank `THPT_G10_CHII_B03_B04_D1D6_AUTHORING_R01_SNAPSHOT.md` blob `acea9776d1c7534a4cd0cd28e98db26dedf0c122` (16 MCQ +2 Written) và original Topic extension `Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md` blob `e10e57d7684497b0dfa9325af766a75b7cfa239f` (18 formative +2 Written). Đọc trực tiếp và so **38/38** learner Practice projections trên canonical `item_id`, đề và `worked_solution` gốc, canonical đáp án và bốn rubric; 0 thiếu/thừa/collision/copy thành item khác. Các phép toán điều kiện được giải và phản chứng dựa trên kiến thức từng outcome, không nhận chỉ vì 38 ID giống. Kiểm lại riêng 4 bài tối ưu khó bằng liệt kê từng cặp nguyên và xét các đỉnh độc lập:
+- `THPT-G10-B04-P06`: max nguyên 8 tại (2,1), liên tục 25/3 tại (5/3,5/3);
+- `THPT-TOP02-ADD18`: max nguyên 11 tại (3,1), liên tục 35/3 tại (7/3,7/3);
+- `THPT-TOP02-W02`: max nguyên 14 tại (2,2), liên tục 15 tại (9/5,13/5);
+- `THPT-G10-CHII-W04-ANCHOR`: max liên tục/nguyên 32 tại (4,3).
+Các bài tham số `Δ<0/Δ≤0`, miền vật lý, dấu biên và phép thế các lựa chọn trắc nghiệm đều kiểm được từ stem/solution hiện hành, không có kết quả sai còn phát hiện.
+
+**Q07/Q12 hình gắn bài:** Đọc ba nguồn SVG thật: `a69e5ffabce6c77787ba3829471be7da97e21578` cho hai nửa mặt phẳng (biên nét liền/đứt, thử điểm O đúng), `64b0ca1142f9cbcb1edebbb220e5bb7a0752ec61` cho đa giác bốn đỉnh và max 14, `809ee7091849592e8312548fb8d916f1f461a77f` cho tam thức `(x−1)(x−3)` dấu +/−/+ và đỉnh (2,−1). Nhãn, phương trình và vị trí tương đối được kiểm trực tiếp cùng lời hướng dẫn đọc. Đánh giá **nguồn SVG/toán**, không giả browser AP QA.
+
+**Q16/Q17 assessment:** 16 câu Tự kiểm tra là **public reuse** có `PUBLIC_REPLAY_ONLY`; 16/16 được mapping đúng `item_id` về 16 lời giải có thật trong 38 Practice, chỉ hiện bảng đối chiếu sau khi học sinh tự mở. `CLIENT_SELF_CHECK_NO_MASTERY`, không dùng làm chứng cứ TOPIC_READINESS độc lập; không import private RD1/đáp án protected, không kích hoạt Final Submit, AI Tutor hay Mastery.
+
+**Q18/A1–A7:** Các lỗi thật #977 **006–010 đã `FIXED_VERIFIED`**; trên learner hiện hành không còn lỗi P0/P1 được nhận diện trong bản kiểm 16 outcome và 38 bank; đảm bảo 1 SGK footer ở cuối, 55/55 details opt-in đúng, 38 canonical đúng một nguồn và 4 rubric. Hình/điều kiện nguyên/thực/miền rỗng đã kiểm. AUTHOR tự ký trên snapshot `d2f1ac...` dựa vào đọc và tính toán thực; không yêu cầu NotebookLM kiểm SHA/CI/manifest; **không nhận independent reviewer PASS mới**. Các mục lịch sử từng ghi “full audit PENDING” bên dưới là checkpoint *trước* vòng đọc/sửa này; không rút PASS của snapshot bất biến.
+
+**Verdict:** `TOP02_CURRENT_Q01_Q18_AUTHOR_SELF_VERIFIED = PASS_ON_SOURCE_BLOB_d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5`. `ACADEMIC/PED_REVIEWER_INDEPENDENT = NOT_CLAIMED`. `AUTHORING_CONTENT_READY = YES` khi source-lock QA đúng HEAD trên cùng V2/ready/REGISTER. **Không** phải RELEASE AP1–AP5/R1–R5, production/browser/scoring chính thức; không merge/deploy.
+
+---
+
 <!-- MASTER974_TOPIC02_D6_SELFCHK_PED_AFFECTED_20261121 -->
 ## CĐ02 · Chất lượng tự học sau sửa O04/O06: D6 16 outcome, tự đối chiếu cuối Topic và một nguồn SGK
 
@@ -31,7 +78,7 @@
 PACKET_ID: THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01
 CONTENT_REVISION: R06
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
@@ -59,7 +106,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOP02_20261121_D6_SELFCHK_ONE_FOOTER_SELFQA_d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5
+AUTHOR_SIGNOFF: TOP02_MASTER974_FULL_16_OUTCOME_38_BANK_SELF_Q18_d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
