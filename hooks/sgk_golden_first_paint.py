@@ -90,5 +90,21 @@ def _render_first_paint(html: str, class_names: tuple[str, str]) -> str:
 
 
 def on_post_page(output, page, config):
-    classes = _classes(page.file.src_uri)
-    return _render_first_paint(output, classes) if classes else output
+    uri = page.file.src_uri
+    classes = _classes(uri)
+    if classes is None:
+        return output
+    rendered = _render_first_paint(output, classes)
+    # Published G10 B01-B27 and G11 B01 are known four-tab Golden routes.
+    # Make a broken initial-HTML contract fail during MkDocs build, not after
+    # deployment; the older G11 B02 is intentionally skipped until upgraded.
+    required = uri.startswith("thpt-preview/sgk/chuong-") or (
+        uri == "thpt-preview/sgk/lop-11/chuong-i/bai-1.md"
+    )
+    if required and (
+        rendered == output or
+        'data-sgk-golden-first-paint="true"' not in rendered or
+        len(_H2.findall(rendered)) != 4
+    ):
+        raise RuntimeError("Golden first-paint build contract failed: " + uri)
+    return rendered
