@@ -1,3 +1,9 @@
+<!-- TOP04_MASTER974_ACTIVE_Q18_V2_20261121 -->
+## CURRENT AUTHORING — một canonical CĐ04 / V2 source lock
+Same learner `prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md` blob `4e8238e188204eefc060f18c88ef7a0a3c51a60e`, current one Topic bank `377de2e2e9fb6771f02270e8d85e950559669895`, existing author self-Q18 under Q01–Q18 v3.2.0 `eba1e820c2544b54e3ff09b0c37ed780e18c3dd5`, author metadata `e305b9a8eec21ca972af8c607292d4f7b1b467e5`. Verified changes #977 013–016: deterministic P21=256 (not probabilistic expectation), new independent O17 first-try=360, 18/18 actionable D6/return-to-Practice, 18 public selfcheck→existing 75 Practice opt-in navigation, original 12 Written rubrics unchanged. Historical original 49 SGK bank source refs preserved; Topic 26 canonical now point exactly to current one bank source. 94 disclosure tags balanced; 5 SVG assets unchanged; 1 SGK source line at end. No reviewer NotebookLM fresh PASS claimed (older P21 optional packet remains pending); AUTHOR_SELF_VERIFIED direct proof only. Not RELEASE AP/R or production, no merge/deploy.
+
+---
+
 # AUTHORING CONTENT_READY — CĐ04 Lũy thừa, mũ và lôgarit · V2 current R05 (stable original R01 packet)
 
 **Hành trình TOPIC độc lập CĐ04/22**, đúng ba trang Kiến thức / Luyện tập / Tự kiểm tra, không có Topic Core. KNTT G11 tập 2 SGK/SBT nguồn S1, không phải thứ tự các trang SGK. 18 mục tiêu và mô-đun, 75 câu canonical PUBLIC (49 gốc +26 mới), 12 Written cùng một library, 5 SVG nguồn thực, 18 lượt Self Check công khai reuse. Mô hình tương tác chỉ SPEC_ONLY; không nhận đã tích hợp frontend. AUTHORING Draft PR #822; không merge/deploy.
@@ -5,21 +11,21 @@
 PACKET_ID: THPT-TOPIC04-POWERS-EXP-LOG-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 62a5d407d72ada6a4539f0e4e0b6f02ff26b55ec
+AUTHOR_METADATA_BLOB: e305b9a8eec21ca972af8c607292d4f7b1b467e5
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: a101ca5e0130ff51fab1a1c867e1b23d642d98b8
+ACADEMIC_SOURCE_BLOB: 4e8238e188204eefc060f18c88ef7a0a3c51a60e
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 87f6cfb2aee17596409123c0bf632b3bfefae42a
+REVIEW_RECEIPT_BLOB: eba1e820c2544b54e3ff09b0c37ed780e18c3dd5
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
-PUBLIC_EXTENSION_BLOB: 004692a2d996b5ba955318a087f4d58dcdb2df04
+PUBLIC_EXTENSION_BLOB: 377de2e2e9fb6771f02270e8d85e950559669895
 ORIGINAL_PUBLIC_CANONICAL_PATH: prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md
 ORIGINAL_PUBLIC_CANONICAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872
 ORIGINAL_NOTEBOOKLM_REVIEW_PATH: prototypes/thpt/review-packets/G11_CHVI_B18_B21_V2_COMPOSITE_HISTORIC_REVIEW_AND_OWNER_S1_RECEIPT_20261102.md
