@@ -14,7 +14,7 @@ const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs")
     assert.equal(await cards.first().getAttribute("href"),"bai-12/");
     const html=await page.goto(base+"bai-12/",{waitUntil:"domcontentloaded"});assert(html?.ok());
     assert.equal(await page.locator("h3").filter({hasText:/Ví dụ [1234]/}).count(),4,"B12 four approved reasoning examples, including calculator");
-    if(!(await verifyModelBLesson(page,{n:12,chapter:"v",tries:5,helps:3,images:["THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"]}))){
+    if(!(await verifyModelBLesson(page,{n:12,chapter:"v",tries:5,helps:3,remediationTab:"Khám phá kiến thức",images:["THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"]}))){
 assert.equal(await page.locator("[data-thpt-help-id]").count(),3);
     const image=page.locator('[data-thpt-fig-id="FIG-G10-B12-01"] img');
     assert.equal(await image.count(),1);
