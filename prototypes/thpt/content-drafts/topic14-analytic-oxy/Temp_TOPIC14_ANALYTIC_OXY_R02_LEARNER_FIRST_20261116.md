@@ -1676,7 +1676,7 @@ Phân biệt elip, hypebol và parabol; tính tiêu điểm, tiệm cận, giao 
 
 Đáp án: \(y^2=8x\). Lời giải: Với \(y^2=2px\), tiêu điểm \((p/2;0)\), đường chuẩn \(x=-p/2\), nên \(p=4\).
 
-**Nếu làm sai:** Dùng quy ước SGK (y^2=2px), (p>0).
+**Nếu làm sai:** Dùng dạng chính tắc đã học (y^2=2px), (p>0).
 
 </details>
 
@@ -1796,7 +1796,7 @@ Một elip tâm \(O\), trục lớn trùng \(Ox\), độ dài trục lớn bằn
 
 **Rubric /6:** \(a,c,b\) (2), phương trình (2), hai đỉnh (1), tiếp tuyến và lập luận (1).
 
-**Depth note:** kết luận về tiếp tuyến dựa vào duy nhất một giao điểm thực, không yêu cầu phép tính giải tích ngoài SGK.
+**Lưu ý phương pháp:** Kết luận về tiếp tuyến dựa vào duy nhất một giao điểm thực, không cần dùng phép tính giải tích.
 
 </details>
 
