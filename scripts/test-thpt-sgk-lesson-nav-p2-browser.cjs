@@ -64,7 +64,14 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual).pathname,expected);
        const section=page.locator(".thpt-g10-knowledge-ap1>h2").first();
        assert(await section.count()>0,"G10 AP1 historical knowledge heading exists B"+lesson);
       }
-     }else assert.equal(await page.locator(".md-content__inner.thpt-g10-knowledge-ap1").count(),0,"G10 CSS not applied cross-grade");
+     }else{
+       // G11 B01 is a frozen, owner-reviewed exception: its canonical source
+       // and first-paint hook intentionally reuse the Golden AP1/G10 styling.
+       // All other G11/G12 lessons must remain free of that class.
+       const shared=await page.locator(".md-content__inner.thpt-g10-knowledge-ap1").count();
+       assert.equal(shared,grade===11&&lesson===1?1:0,
+         "Only Q18 G11 B01 may reuse Golden AP1 styling across grades");
+     }
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
      assert(overflow<=20,"Horizontal overflow "+grade+" B"+lesson+" @"+viewport.width+" "+overflow);
     }
