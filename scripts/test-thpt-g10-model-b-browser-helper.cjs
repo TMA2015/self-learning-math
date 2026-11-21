@@ -132,11 +132,12 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
  await tip.locator("summary").click();
  assert(!(await tip.evaluate(x=>x.open)),"B"+n+" student cannot close D6");
  for(const asset of images){
-  // B23/B24 source-locked Q18 D5 has two genuinely different uses of ONE
-  // original SVG: a discovery reading guide and a formal SGK reference.
-  // No other G10 lesson gains a duplicate figure by this exception.
+  // Exact signed Q18 sources B23/B24/B27 use the SAME original D5
+  // SVG once for guided Discovery and once as the formal SGK reference.
+  // Keep strict single-placement limits for B25, B26 and every other lesson.
   const signedDouble=(n===23&&asset==="G10_B23_ADD_MULTIPLY_CHOICES_R02.svg")||
-   (n===24&&asset==="G10_B24_ORDER_VS_COMBINATION_R02.svg");
+   (n===24&&asset==="G10_B24_ORDER_VS_COMBINATION_R02.svg")||
+   (n===27&&asset==="THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg");
   const count=signedDouble?2:1;
   const all=article.locator('img[src$="'+asset+'"]');
   assert.equal(await all.count(),count,
