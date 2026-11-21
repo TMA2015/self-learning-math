@@ -400,9 +400,13 @@ for(const [lesson,row] of rows){
    worked.includes("96"),
    "B10 river worked example must match the same geometry/units as its desktop and mobile figures");
   const tab4=source.split('=== "Lỗi thường gặp"')[1];
-  assert((tab4.match(/^    \?\?\? tip "/gm)||[]).length===3&&
-   ["Lỗi thường gặp:","Vì sao sai?","Tự kiểm:","Ôn và luyện lại:"].every(x=>tab4.includes(x)),
-   "B10 must teach actual student error, why wrong, correction and remediation");
+   // Signed 20/11 source moves three canonical D6 to Discovery Vận dụng.
+   assert.equal((tab4.match(/^    \?\?\? tip "/gm)||[]).length,0,
+    "B10 all canonical HELP are local; none duplicated in tab4");
+   assert.equal((discover.match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,3,
+    "B10 three item-specific Kiểm lỗi disclosures remain in Discovery");
+   for(const phrase of ["Vì sao sai","Tự kiểm","Luyện lại"])
+    assert(discover.includes(phrase),"B10 D6 repair missing "+phrase);
   assert(!source.includes("EX-G10-B10-RIVER-TR01")&&
    !source.includes("Assessment safety")&&!source.includes("HELP_ID")&&
    !source.includes(String.fromCharCode(96)),"B10 learner text has exposed internal metadata/code");
