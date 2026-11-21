@@ -595,7 +595,7 @@ Ta còn có thể phát biểu mạnh hơn phần “giao tuyến song song”. 
 
 **Ví dụ**
 
-**Đề bài:** Cho \((P):z=0\), \((Q):z=4\), \((R):x+y=1\).
+**Đề bài:** Cho \((P):z=0\), \((Q):z=4\), \((R):x+y=1\). Xác định giao tuyến của \((R)\) với từng mặt \((P),(Q)\), và chứng minh quan hệ giữa hai giao tuyến.
 
 **Lời giải:** Mặt \((R)\) cắt \((P)\) theo \(g:\{x+y=1,z=0\}\). Nó cũng cắt \((Q)\) theo \(h:\{x+y=1,z=4\}\). Cả hai giao tuyến có vectơ chỉ phương \((1,-1,0)\), ở hai độ cao khác nhau nên song song phân biệt. Bước bắt buộc là chứng minh \((R)\) không song song \((Q)\), chứ không chỉ nhìn hai đường trên hình.
 
@@ -641,7 +641,7 @@ Khi mặt cắt đồng dạng với đáy, độ dài thay theo một hệ số
 
 **Ví dụ**
 
-**Đề bài:** Ba mặt song song \(z=0,z=2,z=5\) cắt hai đường \(d:(0,0,t)\), \(e:(t,2,2t)\) ở \(t=0,2,5\) trên \(d\) và \(t=0,1,5/2\) trên \(e\).
+**Đề bài:** Ba mặt song song \(z=0,z=2,z=5\) cắt hai đường \(d:(0,0,t)\), \(e:(t,2,2t)\) ở \(t=0,2,5\) trên \(d\) và \(t=0,1,5/2\) trên \(e\). Tính các độ dài đoạn liên tiếp trên từng cát tuyến, rồi so tỉ số của chúng.
 
 **Lời giải:** Trên \(d\), hai đoạn liên tiếp dài \(2\) và \(3\); trên \(e\), vectơ chỉ phương \((1,0,2)\) có độ dài \(\sqrt5\), nên hai đoạn dài \(\sqrt5\) và \(\frac32\sqrt5\). Tỉ số hai đoạn là \(2/3\) trên cả hai cát tuyến. Chọn tỉ số thay vì đo trực tiếp từ hình chiếu.
 
@@ -653,7 +653,7 @@ Không phải khối nào có hai mặt song song cũng là hình chóp cụt. T
 
 **Ví dụ**
 
-**Đề bài:** Cho lăng trụ tam giác có \(A(0,0,0),B(2,0,0),C(0,3,0)\) và ba đỉnh trên lần lượt là \(A'(1,0,4),B'(3,0,4),C'(1,3,4)\).
+**Đề bài:** Cho lăng trụ tam giác có \(A(0,0,0),B(2,0,0),C(0,3,0)\) và ba đỉnh trên lần lượt là \(A'(1,0,4),B'(3,0,4),C'(1,3,4)\). Kiểm tra hai đáy là các hình bằng nhau và mặt \(ABB'A'\) là hình bình hành; so diện tích hai đáy.
 
 **Lời giải:** Khi đó ba vectơ cạnh bên đều là \((1,0,4)\), đáy trên là bản tịnh tiến của đáy dưới. Ta có \(\overrightarrow{AB}=(2,0,0)=\overrightarrow{A'B'}\); vì hai cặp cạnh đối song song và bằng nhau, mặt \(ABB'A'\) là hình bình hành. Hai đáy đều có diện tích \(3\), **không giảm theo bình phương tỉ số** như các mặt cắt thu nhỏ của hình chóp.
 
@@ -777,7 +777,7 @@ Tỉ số được bảo toàn không chỉ khi hai đoạn nằm **trên một 
 
 **Ví dụ**
 
-**Đề bài:** Dưới \(T(x,y,z)=(x-z,y,0)\), lấy \(A(0,0,0),B(2,0,0),C(0,1,3),D(4,1,3)\). Hai đoạn \(AB,CD\) cùng hướng trục \(Ox\), dài lần lượt \(2\) và \(4\).
+**Đề bài:** Dưới \(T(x,y,z)=(x-z,y,0)\), lấy \(A(0,0,0),B(2,0,0),C(0,1,3),D(4,1,3)\). Hai đoạn \(AB,CD\) cùng hướng trục \(Ox\), dài lần lượt \(2\) và \(4\). Tính ảnh các đầu mút rồi so tỉ số hai độ dài trước và sau chiếu.
 
 **Lời giải:** Ảnh \(A'(0,0,0),B'(2,0,0),C'(-3,1,0),D'(1,1,0)\) cũng có độ dài \(2\) và \(4\); cả hai tỉ số đều bằng \(1/2\). Trong trường hợp phương đoạn có thành phần theo hướng chiếu, độ dài riêng từng đoạn có thể đổi, nhưng **tỉ số của hai đoạn cùng hướng** vẫn giữ.
 
@@ -821,7 +821,7 @@ Một hình chữ nhật thật có thể hiện thành hình bình hành xiên 
 
 **Ví dụ**
 
-**Đề bài:** Xét đường tròn \(y^2+z^2=4\) trong mặt \(x=0\) và phép chiếu lên \(z=0\) theo vectơ \((1,0,2)\).
+**Đề bài:** Xét đường tròn \(y^2+z^2=4\) trong mặt \(x=0\) và phép chiếu lên \(z=0\) theo vectơ \((1,0,2)\). Tìm phương trình hình chiếu trên mặt nhận ảnh, hai bán trục và giải thích vì sao không đọc bán kính thật từ trục ngắn.
 
 **Lời giải:** Điểm \((0,y,z)\) có ảnh \((-z/2,y,0)\), nên \(z=-2x'\), \(y=y'\). Phương trình ảnh là \(4x'^2+y'^2=4\), tức \(\frac{x'^2}{1}+\frac{y'^2}{4}=1\), một elip. Hai bán trục của hình chiếu dài \(1\) và \(2\), còn bán kính của đường tròn gốc bằng \(2\); không suy bán kính thật bằng trục ngắn trên hình chiếu.
 
