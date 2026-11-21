@@ -130,6 +130,79 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
  }
  assert(fields.includes(currentBlob)||Boolean(row),
   "Q18 receipt missing exact current SOURCE candidate SHA");
+ // Global 28/79 is G11 B01 (G10 has only 27 SGK lessons). It is an
+ // explicit DELTA_C full Knowledge rewrite; old lesson has no canonical
+ // First Try IDs. Never generalize this exception to other G11 lessons.
+ if(lesson==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"&&
+    receipt.includes("G11-B01-GLOBAL28-S1-GOLDEN-Q18-R01-20261121")){
+  assert.equal(beforeBlob,"9605eaf510f9f873751e20bef29f4aac848609a3",
+   "G11 B01 rewrite must start from historical published source");
+  assert.equal(currentBlob,"2d7cff18f4e46375f06a672a3742a2a43b5f2db5",
+   "G11 B01 cannot bypass the exact signed new source");
+  assert(receipt.includes("GLOBAL_SGK_ORDER:** 28/79")&&
+   receipt.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+   receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+   receipt.includes("P0=0 P1=0"),"G11 B01 source/outcome review receipt missing");
+  assert.equal(tokenSet(before,"data-thpt-first-try-id").length,0,
+   "G11 B01 old source does not contain canonical practice IDs");
+  assert.deepEqual(tokenSet(before,"data-thpt-help-id"),
+   ["HELP-G11-B01-01","HELP-G11-B01-02"],
+   "G11 B01 original independent remediation HELP IDs changed");
+  assert.deepEqual([...now.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),
+   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+   "G11 B01 must contain 4 exact Golden tabs");
+  assert.deepEqual(tokenSet(now,"data-thpt-first-try-id"),
+   [1,2,3,4,5,6].map(n=>"THPT-G11-CHI-TRY0"+n),
+   "G11 B01 six unscored canonical First Try identities incomplete");
+  assert.deepEqual(tokenSet(now,"data-thpt-help-id"),
+   [...[1,2,3,4,5,6].map(n=>"HELP-G11-CHI-TRY0"+n),
+    "HELP-G11-B01-01","HELP-G11-B01-02"].sort(),
+   "G11 B01 must retain two old D6 identities and six new paired HELP");
+  assert.equal((now.match(/^    \?\?\? question "Đối chiếu"$/gm)||[]).length,6,
+   "G11 B01 six answers must remain closed until voluntarily opened");
+  assert.equal((now.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,8,
+   "G11 B01 eight D6 panels must have owner-approved short labels");
+  assert.equal((now.match(/<p><strong>Lỗi cần kiểm:<\/strong>/g)||[]).length,8,
+   "G11 B01 error names belong inside D6 panels");
+  assert.equal((now.match(/class="thpt-g11-example-solution"/g)||[]).length,6,
+   "G11 B01 preserve six solved examples with reasoning");
+  const know=now.split('=== "Kiến thức SGK"')[1]?.split('=== "Ví dụ"')[0];
+  assert(know,"G11 B01 Knowledge SGK tab missing");
+  for(const term of ["2.1. Góc lượng giác",
+   "2.2. Đơn vị đo góc và độ dài cung tròn",
+   "2.3. Giá trị lượng giác của góc lượng giác",
+   "2.4. Quan hệ giữa các giá trị lượng giác",
+   "\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}",
+   "\\cot\\alpha=\\dfrac{\\cos\\alpha}{\\sin\\alpha}",
+   "\\sin^2\\alpha+\\cos^2\\alpha=1",
+   "\\pi/2+k\\pi", "\\alpha+k\\pi"])
+   assert(know.includes(term),"G11 B01 source missing S1 concept/condition "+term);
+  assert.equal((know.match(/class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"/g)||[]).length,3,
+   "G11 B01 must present three actual SGK concepts in green cards");
+  assert.equal((know.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,5,
+   "G11 B01 must present five correct SGK properties/conditions");
+  assert.equal((now.match(/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg/g)||[]).length,2,
+   "G11 B01 must reuse one SVG in both Discovery and Knowledge");
+  assert.equal((now.match(/class="thpt-r4-footnote"/g)||[]).length,1,
+   "G11 B01 must have one final S1 source footnote");
+  assert(!now.includes("Mỗi ví dụ có")&&
+   !now.includes("Không phải một định nghĩa mới")&&
+   !/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(now),
+   "G11 B01 inappropriate meta / assessment leaking");
+  const originalIds=tokenSet(before,"data-thpt-fig-id");
+  assert.deepEqual(tokenSet(now,"data-thpt-fig-id"),originalIds,
+   "G11 B01 protected original figure metadata changed");
+  assert.equal(latex(before).length,38,"Old G11 B01 S1 source math count changed");
+  assert.equal(latex(now).length,203,"G11 B01 full revised source mathematical notation changed");
+  assert.equal(removedMathCount(before,now),37,
+   "G11 B01 signed academic rewrite unexpectedly removed extra math tokens");
+  const image="docs/assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg";
+  const figure=fs.readFileSync(path.join(root,image));
+  assert.equal(blob(figure),"a75d70c2dbbedce6934f0f4521c159dd9045844e",
+   "G11 B01 existing SVG must stay immutable");
+  console.log("SCOPED_G11_B01_SOURCE_Q18_PASS: exact two Git blobs, S1, 6 unscored IDs, 8 HELP, 203 math");
+  return;
+ }
  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"]){
   assert.deepEqual(tokenSet(now,id),tokenSet(before,id),"Q15/source identity changed: "+id);
  }

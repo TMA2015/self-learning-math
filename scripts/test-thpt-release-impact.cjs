@@ -145,6 +145,21 @@ function classify(paths,{manual=false}={}){
     fs.readFileSync(b27,"utf8").includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"))
   return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:b27,
    reason:"EXACT_G10_B27_S1_SIGNED_SOURCE_Q18_GOLDEN_AND_PROOF"};
+ // Exactly one new global 28/79 SGK lesson: G11 B01. All other G11
+ // changes / shared runtime / missing signed Q18 evidence fail to FULL.
+ const g11b01="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md";
+ const g11b01Receipt="prototypes/thpt/ux795/G11_B01_GLOBAL28_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md";
+ const g11b01Proof="scripts/test-thpt-scoped-deploy-proof.cjs";
+ if(lessons.length===1&&lessons[0]===g11b01&&
+    files.includes(g11b01Receipt)&&files.includes(g11b01Proof)&&
+    files.every(x=>x===g11b01||x===g11b01Receipt||x===g11b01Proof||
+      x==="scripts/test-thpt-release-impact.cjs")&&
+    fs.readFileSync(g11b01Receipt,"utf8").includes(
+      "G11-B01-GLOBAL28-S1-GOLDEN-Q18-R01-20261121")&&
+    fs.readFileSync(g11b01,"utf8").includes(
+      "THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg"))
+  return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:g11b01,
+   reason:"EXACT_G11_B01_GLOBAL28_S1_GOLDEN_Q18_SIGNED_SOURCE_PROOF"};
  // Owner-directed G10 B07–B14 migration: four existing manuscript files are
  // exactly paired with the eight canonical published lesson Markdown files.
  const manuscripts=[
@@ -231,6 +246,20 @@ function selfTest(){
   "Missing eighth lesson cannot qualify for exact 8-lesson batch");
  assert.equal(classify(antiRepeatCase.filter(x=>!x.endsWith("scoped-deploy-proof.cjs"))).impact,"FULL",
   "No source-locked production proof means exact 8-lesson batch must fail closed");
+ const g11B01Case=[
+  "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+  "prototypes/thpt/ux795/G11_B01_GLOBAL28_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md",
+  "scripts/test-thpt-scoped-deploy-proof.cjs",
+  "scripts/test-thpt-release-impact.cjs"];
+ assert.equal(classify(g11B01Case).impact,"SCOPED_LESSON",
+  "Exactly source-locked G11 B01 28/79 must receive targeted technical QA");
+ assert.equal(classify([...g11B01Case,"mkdocs.thpt-preview.yml"]).impact,"FULL",
+  "G11 B01 cannot hide shared preview configuration");
+ assert.equal(classify([...g11B01Case,
+  "docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,"FULL",
+  "G11 B01 cannot hide global Golden runtime changes");
+ assert.equal(classify(g11B01Case.filter(x=>!x.endsWith("scoped-deploy-proof.cjs"))).impact,
+  "FULL","G11 B01 exact release cannot omit source-locked deploy proof");
  const b27Case=[
   "docs/thpt-preview/sgk/chuong-ix/bai-27.md",
   "prototypes/thpt/ux795/G10_CHIX_B27_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md",
