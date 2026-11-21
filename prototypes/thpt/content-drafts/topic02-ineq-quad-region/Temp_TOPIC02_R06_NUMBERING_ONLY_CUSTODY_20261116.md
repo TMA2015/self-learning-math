@@ -1,9 +1,12 @@
+<!-- MASTER974_TOPIC02_O04_O06_SOURCE_LOCK_20261121 -->
+**CURRENT AUTHORING #974:** original canonical R06 path unchanged; learner blob `3161436a92a450e17aaf5c6b53736f70d9d5bfa0`, signed affected-scope author Q18 `08a67fa54b230a03422bc851a1d934aede189095`. Two concrete math/PED P1 repairs: double root **does not change sign** and strict inequality endpoints 1,3 must be excluded with actual boundary substitution. Existing 38 canonical Practice/4 Written rubrics/16 public selfchecks/3 SVG remain unchanged. No independent NotebookLM PASS, new learner source, RELEASE, merge or deploy. Historical fields below remain as history only.
+
 # CĐ2 R06 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b
+CURRENT_SOURCE_BLOB: 3161436a92a450e17aaf5c6b53736f70d9d5bfa0
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: d91f05f9fdb43229a19d396c93e740568151154d
+CURRENT_Q18_RECEIPT_BLOB: 08a67fa54b230a03422bc851a1d934aede189095
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
