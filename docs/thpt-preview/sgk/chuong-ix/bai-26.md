@@ -209,41 +209,41 @@
 
 === "Kiến thức SGK"
 
-    ### 2.1. Biến cố (SGK mục 1, tr. 78–79)
+    ### 2.1. Biến cố (SGK mục 1, tr. 77–79)
 
     **Phép thử ngẫu nhiên:** hành động hoặc thí nghiệm chưa biết trước kết quả cụ thể. **Không gian mẫu** \(\Omega\) là tập tất cả kết quả có thể xảy ra; trong phạm vi bài này xét \(\Omega\) **hữu hạn và khác rỗng**. Một kết quả sơ cấp phải mô tả trọn phép thử: gieo hai xúc xắc phân biệt được ghi \((i,j)\) với \(i,j\in\{1,\ldots,6\}\), không chỉ ghi tổng \(i+j\).
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"><strong>Bản chất.</strong> Một biến cố \(A\) là **tập các kết quả thuận lợi**: \(A\subseteq\Omega\). Biến cố chắc chắn là \(\Omega\), biến cố không thể là \(\varnothing\). Tên gọi biến cố chỉ diễn tả điều kiện; tập hợp mới cho biết chính xác các kết quả làm nó xảy ra.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Biến cố.</strong> Biến cố \(A\) là tập các kết quả thuận lợi cho \(A\), tức \(A\subseteq\Omega\). Biến cố chắc chắn là \(\Omega\); biến cố không thể là \(\varnothing\). Muốn mô tả biến cố chính xác, hãy chỉ rõ những kết quả nào làm nó xảy ra.</div>
 
-    **Biến cố đối:** \(\overline A=\Omega\setminus A\), nghĩa là \(A\) **không** xảy ra trong cùng phép thử. Chúng không thể đồng thời xảy ra và luôn bao phủ \(\Omega\): \(A\cap\overline A=\varnothing,\ A\cup\overline A=\Omega\).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Biến cố đối.</strong> Biến cố đối \(\overline A=\Omega\setminus A\) xảy ra khi và chỉ khi \(A\) không xảy ra trong cùng phép thử. Hai tập không giao nhau và hợp lại đúng bằng không gian mẫu: \(A\cap\overline A=\varnothing,\ A\cup\overline A=\Omega\).</div>
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B26_EVENT_COMPLEMENT_R01.svg" loading="lazy" alt="Hai sơ đồ tập hợp: biến cố A nằm bên trong không gian mẫu Omega; biến cố đối là vùng Omega nằm ngoài A" /><figcaption><strong>Đọc hình:</strong> hình chữ nhật là toàn bộ kết quả \(\Omega\); miền elip là \(A\). Ở hình bên phải, phần còn lại sau khi bỏ elip là \(\overline A\). Không để sót các kết quả thuộc \(\Omega\) nhưng ngoài \(A\).</figcaption></figure>
 
     **Ví dụ ngắn về cách phủ định:** Gieo một xúc xắc: \(A=\{2,3,5\}\) là “ra số nguyên tố”, còn \(\overline A=\{1,4,6\}\) là “ra số không nguyên tố”. Số \(1\) không phải hợp số, nên nói biến cố đối của “nguyên tố” là “hợp số” sẽ thiếu một kết quả.
 
-    ### 2.2. Định nghĩa cổ điển của xác suất (SGK mục 2, tr. 80–81)
+    ### 2.2. Định nghĩa cổ điển của xác suất (SGK mục 2, tr. 79–81)
 
     Để biết một biến cố có bao nhiêu cơ hội xảy ra, cần so **số kết quả thuận lợi** với **tổng số kết quả có cùng khả năng**. Chỉ khi \(\Omega\) hữu hạn, không rỗng, **mọi kết quả sơ cấp đồng khả năng**, ta mới dùng tỉ số số phần tử.
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"><strong>Quy tắc và điều kiện.</strong> Với \(A\subseteq\Omega\) và các kết quả sơ cấp đồng khả năng, \(P(A)=\dfrac{n(A)}{n(\Omega)}\), \(n(\Omega)>0\). Trước phép chia phải (1) xác định đúng \(\Omega\); (2) xác định đúng \(A\); (3) kiểm tra mô hình đồng khả năng.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa cổ điển của xác suất.</strong> Khi không gian mẫu \(\Omega\) hữu hạn, khác rỗng và các kết quả sơ cấp <strong>đồng khả năng</strong>, xác suất của biến cố \(A\subseteq\Omega\) là \(P(A)=\dfrac{n(A)}{n(\Omega)}\), với \(n(\Omega)>0\). Cần xác định đúng \(\Omega\), tập \(A\) và giả thiết đồng khả năng trước khi tính.</div>
 
-    Vì \(0\le n(A)\le n(\Omega)\), suy ra \(0\le P(A)\le 1\); \(P(\varnothing)=0\), \(P(\Omega)=1\). Với hai biến cố đối, \(P(\overline A)=1-P(A)\). Công thức biến cố đối là kết quả của hai nhóm bổ sung nhau, không phải một mẹo trừ số.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất cơ bản của xác suất (Nhận xét SGK).</strong> Với mọi biến cố \(A\), \(0\le P(A)\le 1\); biến cố không thể có \(P(\varnothing)=0\), còn biến cố chắc chắn có \(P(\Omega)=1\).</div>
+
+    Vì \(A\) và \(\overline A\) là hai phần không giao nhau và phủ hết \(\Omega\), ta suy ra hệ quả \(P(\overline A)=1-P(A)\). Công thức này sẽ được dùng sâu hơn ở Bài 27.
 
     **Bảng kết quả là công cụ đếm:** hai túi chứa lần lượt 4 và 3 thẻ phân biệt, mỗi túi chọn đều một thẻ, độc lập nhau. Khi đó 12 cặp kết quả đồng khả năng; muốn đếm điều kiện theo tổng hai số, có thể lập bảng \(4\times3\) thay vì gộp các giá trị tổng (vốn không đồng khả năng).
 
     ### 2.3. Nguyên lí xác suất bé và ý nghĩa thực tế (SGK mục 3, tr. 81–82)
 
-    **Nguyên lí xác suất bé** là một nguyên tắc **thực hành**: khi xác suất một biến cố rất nhỏ, trong một hoặc vài phép thử người ta thường dự kiến biến cố ấy không xảy ra. Đây không phải khẳng định toán học \(P(A)=0\); một kết quả hiếm vẫn có thể xuất hiện. Không có ngưỡng “bé” dùng chung cho mọi tình huống: một sự cố có hậu quả nghiêm trọng không được bỏ qua chỉ vì xác suất nhỏ.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Nguyên lí xác suất bé (SGK).</strong> Khi một biến cố có xác suất rất bé, trong một phép thử người ta thường dự kiến biến cố ấy không xảy ra.</div>
+
+    **Hiểu đúng nguyên lí:** đây là cách dự kiến thực hành, <strong>không phải</strong> kết luận toán học \(P(A)=0\) hay bảo đảm biến cố không thể xảy ra. Xác suất nào được xem là “bé” còn tùy trường hợp và hậu quả: rủi ro nghiêm trọng không thể bỏ qua chỉ vì hiếm gặp.
 
     **Ước lượng tần số:** khi phép thử được lặp nhiều lần trong điều kiện thích hợp, số lần xảy ra biến cố có xác suất \(p\) xấp xỉ \(np\) (SGK xét \(n\ge30\)). Đây là **giá trị ước lượng**, không bảo đảm đúng bằng \(np\) và không cho biết kết quả từng lần thử.
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"><strong>Vận dụng ý nghĩa thực tế.</strong> Nếu tỉ lệ sinh bé gái được giả thiết là \(0{,}488\), bé trai là \(0{,}512\), và quan sát khoảng 10 000 bé gái, thì tổng số trẻ được ước tính \(n\approx10000/0{,}488\approx20491{,}8\); số bé trai ước tính \(0{,}512n\approx10491{,}8\), tức khoảng **10 492 bé trai**. Không coi số ước tính là kết quả đếm chắc chắn.</div>
-
-    **Phạm vi bài:** nắm biến cố, tập kết quả thuận lợi, biến cố đối, định nghĩa cổ điển, tính chất \(0\le P(A)\le1\) và nguyên lí xác suất bé. Bài 27 sẽ đi sâu vào cách dùng tổ hợp, sơ đồ cây và biến cố đối để giải các phép thử nhiều bước.
+    **Vận dụng — Ước lượng số trẻ mới sinh (SGK tr. 82).** Nếu tỉ lệ sinh bé gái được giả thiết là \(0{,}488\), bé trai là \(0{,}512\), và quan sát khoảng 10 000 bé gái, thì tổng số trẻ được ước tính \(n\approx10000/0{,}488\approx20491{,}8\); số bé trai ước tính \(0{,}512n\approx10491{,}8\), tức khoảng **10 492 bé trai**. Đây là phép ước lượng số liệu thực tế, <strong>không phải định nghĩa hay quy tắc mới</strong> và không bảo đảm đúng bằng số đếm thực tế.
 
 === "Ví dụ"
-
-    Mỗi ví dụ có **Đề bài → Phân tích → Lời giải → Kiểm lại**. Em có thể tự thử trước khi xem khung giải; các ví dụ minh họa những cấu trúc suy luận khác nhau, không chỉ thay số.
 
     ### 3.1. Ví dụ — Không gian mẫu nhiều lần gieo
 
@@ -333,6 +333,4 @@
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
-    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 10 Kết nối tri thức với cuộc sống và học liệu SLM hiện hành. Lời giảng được biên tập nhằm hỗ trợ tự học độc lập.</p>
-
-<small>Nguồn S1: SGK Toán 10 KNTT tập 2 tr.77–82, SBT Bài 26 phần bài tập tr.61–63. Hình minh họa và thẻ hướng dẫn giúp học sinh tự ôn tập; không phải bài đánh giá thành thạo.</small>
+    <p class="thpt-r4-footnote">Nguồn S1: SGK Toán 10 KNTT tập 2 tr.77–82, SBT Bài 26 phần bài tập tr.61–63. Hình minh họa và thẻ hướng dẫn giúp học sinh tự ôn tập; không phải bài đánh giá thành thạo.</p>
