@@ -43,3 +43,9 @@ S1 kiểm theo trang **in** SGK Toán 10 Kết nối tri thức với cuộc s�
 ## G3–G5 release boundary
 
 Đợi **exact-final-HEAD CI scoped** (source Q18 proof, Golden/AP, MathJax/TeX, SVG, responsive, Q15–Q16), kiểm trang build/gh-pages so với source, rồi mới đề xuất merge/deploy theo quyết định chủ dự án. **PR Draft, không merge/deploy từ receipt này.** Browser/P1/owner P2 vẫn `PENDING`; các bài B01–B25 đã được khóa snapshot, không thay cùng đợt.
+
+## R01 scoped production proof: nguồn toán được viết lại, không âm thầm xóa
+
+**B26_AFFECTED_MATH_TOKEN_MIGRATION=13** — so exact previous/current source bằng bộ đếm TeX hiện hữu: 29 biểu thức TeX ban đầu; bản mới 118; **13 lần xuất hiện TeX cũ không còn đúng chuỗi** vì viết lại toàn mạch SGK và chuyển ví dụ. Chúng gồm cách viết cũ `P(A)=n(A)/n(Ω)`, `n(A)/n(Ω)`, `\bar A=Ω\setminus A`, `P(\bar A)=1-P(A)`, diễn giải `1/3`, `2/3` của ví dụ đồng xu–xúc xắc được thể hiện bằng hình+bảng, và `Ω`, `A` dạng liệt kê đã được thay bằng giải thích/ví dụ độc lập. Phép kiểm chỉ cho phép đúng số lượng **13** trên đúng cặp SHA, yêu cầu biểu thức mới `P(A)=\dfrac{n(A)}{n(Ω)}`, `\overline A=Ω\setminus A`, `P(\overline A)=1-P(A)`, `n(Ω)>0` và mục 2.3. Không phải nới lỏng mọi DELTA_C hoặc thay thế Q18/math source proof. 5 đáp án cũ giữ nguyên nguyên văn; chỉ chuẩn hóa nhãn cũ `Tự đối chiếu lời giải sau khi em đã thử` thành `Đối chiếu` để QA so nội dung.
+
+**G3 caution:** Chỉ mở rộng đúng **bộ kiểm production proof hiện hữu** cho scope B26 được ký; không tắt bất kỳ cổng Q15/Q16/TeX/Golden/CI nào.
