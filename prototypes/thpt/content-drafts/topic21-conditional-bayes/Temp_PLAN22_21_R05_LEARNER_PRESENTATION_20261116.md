@@ -43,7 +43,9 @@ Trong 24 vé khác nhau được chọn đều có 9 vé xanh, 6 trong 9 vé xan
 
 Nhóm điều kiện gồm 9 vé xanh; có 6 vé trong nhóm đó có sao. Do đó P(sao | xanh)=6/9=2/3, không phải 6/24.
 
-**Khi làm sai:** Nếu chia cho 24, em đã quên thu hẹp Ω khi biết màu vé. Tự gạch riêng 9 vé xanh, đánh dấu 6 vé sao rồi thử lại. Ôn lại mục Kiến thức 1.1 (đổi nhóm đang xét) và Bài luyện 1 tại Luyện tập 1.1.
+**Kiểm lỗi**
+
+Nếu chia cho 24, em đã quên thu hẹp Ω khi biết màu vé. Tự gạch riêng 9 vé xanh, đánh dấu 6 vé sao rồi thử lại. Ôn lại mục Kiến thức 1.1 (đổi nhóm đang xét) và Bài luyện 1 tại Luyện tập 1.1.
 
 </details>
 
@@ -95,7 +97,9 @@ Gieo xúc xắc sáu mặt cân đối. A là 'chia hết cho 3', B là 'số ch
 
 B={2,4,6}, A∩B={6}; P(A|B)=(1/6)/(3/6)=1/3. Mẫu số P(B)=1/2>0.
 
-**Khi làm sai:** Nếu viết 1/2, em đã lấy P(B) thay cho xác suất giao trong B. Nếu chia cho P(A), em đã đổi chiều thành P(B|A). Ôn lại mục Kiến thức 1.2 (công thức xác suất có điều kiện) và Bài luyện 2 tại Luyện tập 1.2.
+**Kiểm lỗi**
+
+Nếu viết 1/2, em đã lấy P(B) thay cho xác suất giao trong B. Nếu chia cho P(A), em đã đổi chiều thành P(B|A). Ôn lại mục Kiến thức 1.2 (công thức xác suất có điều kiện) và Bài luyện 2 tại Luyện tập 1.2.
 
 </details>
 
@@ -140,7 +144,9 @@ Có 4 thẻ đỏ và 5 thẻ xanh khác nhau; rút liên tiếp hai thẻ khôn
 
 P(đỏ đầu)=4/9; sau đó còn 8 thẻ, 5 xanh nên P(xanh sau | đỏ đầu)=5/8. Giao = (4/9)(5/8)=5/18.
 
-**Khi làm sai:** Nếu dùng (4/9)(5/9), em chưa đổi tổng số thẻ ở lượt hai từ 9 xuống 8. Vẽ một nhánh đỏ trước rồi ghi nội dung túi còn lại. Ôn lại mục Kiến thức 1.3 (quy tắc nhân cho lượt phụ thuộc) và Bài luyện 3 tại Luyện tập 1.3.
+**Kiểm lỗi**
+
+Nếu dùng (4/9)(5/9), em chưa đổi tổng số thẻ ở lượt hai từ 9 xuống 8. Vẽ một nhánh đỏ trước rồi ghi nội dung túi còn lại. Ôn lại mục Kiến thức 1.3 (quy tắc nhân cho lượt phụ thuộc) và Bài luyện 3 tại Luyện tập 1.3.
 
 </details>
 
@@ -175,7 +181,9 @@ Tung hai đồng xu cân đối, độc lập. A: đồng xu đầu ngửa; B: c
 
 Ω={NN,NS,SN,SS}. P(A)=2/4, P(B)=2/4, P(A∩B)=1/4 (chỉ NS). Vì 1/4=(1/2)(1/2), A và B độc lập trong mô hình này.
 
-**Khi làm sai:** Nếu kết luận phụ thuộc chỉ vì B có nhắc đồng xu đầu, em đã suy theo ngôn ngữ. Hãy đếm giao và tích; cả hai cùng bằng 1/4. Ôn lại mục Kiến thức 1.4 (dấu hiệu độc lập) và Bài luyện 4 tại Luyện tập 1.4.
+**Kiểm lỗi**
+
+Nếu kết luận phụ thuộc chỉ vì B có nhắc đồng xu đầu, em đã suy theo ngôn ngữ. Hãy đếm giao và tích; cả hai cùng bằng 1/4. Ôn lại mục Kiến thức 1.4 (dấu hiệu độc lập) và Bài luyện 4 tại Luyện tập 1.4.
 
 </details>
 
@@ -224,7 +232,9 @@ Nguồn X cung cấp 1/4 sản phẩm, tỉ lệ lỗi 1/10; nguồn Y cung cấ
 
 P(lỗi)=(1/4)(1/10)+(3/4)(1/30)=1/40+1/40=1/20.
 
-**Khi làm sai:** Nếu ra 1/10+1/30, em đã quên nhân tỉ trọng nguồn; làm lại từng đường 'chọn nguồn → lỗi' trước khi cộng. Ôn lại mục Kiến thức 2.1 (công thức xác suất toàn phần) và Bài luyện 5 tại Luyện tập 2.1.
+**Kiểm lỗi**
+
+Nếu ra 1/10+1/30, em đã quên nhân tỉ trọng nguồn; làm lại từng đường 'chọn nguồn → lỗi' trước khi cộng. Ôn lại mục Kiến thức 2.1 (công thức xác suất toàn phần) và Bài luyện 5 tại Luyện tập 2.1.
 
 </details>
 
@@ -265,7 +275,9 @@ Nguồn X chiếm 2/5 sản phẩm, tỉ lệ lỗi 1/10; Y chiếm 3/5, tỉ l�
 
 P(Y∩lỗi)=(3/5)(1/5)=3/25; P(X∩lỗi)=(2/5)(1/10)=1/25. P(lỗi)=4/25 nên P(Y|lỗi)=(3/25)/(4/25)=3/4.
 
-**Khi làm sai:** Nếu trả lời 1/5, em mới tính xác suất lỗi khi đã biết Y, chưa đảo chiều. Cộng tất cả nhánh lỗi thành mẫu số rồi chia đường Y–lỗi. Ôn lại mục Kiến thức 2.2 (Bayes) và Bài luyện 6 tại Luyện tập 2.2.
+**Kiểm lỗi**
+
+Nếu trả lời 1/5, em mới tính xác suất lỗi khi đã biết Y, chưa đảo chiều. Cộng tất cả nhánh lỗi thành mẫu số rồi chia đường Y–lỗi. Ôn lại mục Kiến thức 2.2 (Bayes) và Bài luyện 6 tại Luyện tập 2.2.
 
 </details>
 
@@ -306,7 +318,9 @@ Chọn lớp A với xác suất 3/5, trong A tỉ lệ thẻ đỏ là 3/10; l�
 
 A-đỏ=9/50, A-không đỏ=21/50; B-đỏ=1/10, B-không đỏ=3/10. Tổng bốn lá bằng 1, P(đỏ)=9/50+1/10=7/25.
 
-**Khi làm sai:** Nếu bốn lá không cộng thành 1, hãy rà mỗi nút: đỏ và không đỏ trong A phải có tổng 1; tương tự B. Đừng cộng trực tiếp 3/10 và 1/4. Ôn lại mục Kiến thức 3.1 (đọc sơ đồ cây) và Bài luyện 7 tại Luyện tập 3.1.
+**Kiểm lỗi**
+
+Nếu bốn lá không cộng thành 1, hãy rà mỗi nút: đỏ và không đỏ trong A phải có tổng 1; tương tự B. Đừng cộng trực tiếp 3/10 và 1/4. Ôn lại mục Kiến thức 3.1 (đọc sơ đồ cây) và Bài luyện 7 tại Luyện tập 3.1.
 
 </details>
 
@@ -349,7 +363,9 @@ Một hệ thống giả định có 2% hồ sơ thuộc nhóm H. Hệ thống b
 
 P(H∩báo)=0,02·0,90=0,018; P(không H∩báo)=0,98·0,15=0,147. Xác suất cần tìm là 0,018/(0,018+0,147)=18/165=6/55≈10,91%.
 
-**Khi làm sai:** Nếu ra 90%, em đã nhầm 'báo khi biết H' với 'H khi đã báo'. Hãy lập bảng 10.000 hồ sơ: 200 H có 180 báo; 9.800 không H có 1.470 báo; tỉ lệ 180/(180+1470). Ôn lại mục Kiến thức 3.2 (tỉ lệ nền) và Bài luyện 8 tại Luyện tập 3.2.
+**Kiểm lỗi**
+
+Nếu ra 90%, em đã nhầm 'báo khi biết H' với 'H khi đã báo'. Hãy lập bảng 10.000 hồ sơ: 200 H có 180 báo; 9.800 không H có 1.470 báo; tỉ lệ 180/(180+1470). Ôn lại mục Kiến thức 3.2 (tỉ lệ nền) và Bài luyện 8 tại Luyện tập 3.2.
 
 </details>
 
@@ -500,9 +516,9 @@ Trong mô hình kiểm tra 1.000 sản phẩm có đúng 20 sản phẩm lỗi. 
 
 **Bài tự luận tổng hợp:** Hãy trình bày lời giải và giải thích ý nghĩa xác suất trước khi tự kiểm rubric.
 
-### 3.3. Bài tự luận 1: Bảng hai chiều và xác suất có điều kiện
+### 3.3. Bảng hai chiều và xác suất có điều kiện
 
-**Tự luận 1.**
+**Bài luyện 9.**
 
 Một tập hợp 60 học sinh được chọn đều một học sinh: có 24 bạn thuộc câu lạc bộ C, trong đó 15 bạn đeo kính; trong 36 bạn không thuộc C có 18 bạn đeo kính. Hãy lập bảng 2×2, tính P(kính|C), P(C|kính), P(C∩kính) và giải thích vì sao hai xác suất có điều kiện không bằng nhau.
 
@@ -532,9 +548,9 @@ Một tập hợp 60 học sinh được chọn đều một học sinh: có 24 
 </details>
 
 
-### 3.4. Bài tự luận 2: Xác suất toàn phần và Bayes
+### 3.4. Xác suất toàn phần và Bayes
 
-**Tự luận 2.**
+**Bài luyện 10.**
 
 Sản phẩm từ nguồn X chiếm 1/3, tỉ lệ lỗi 1/5; nguồn Y chiếm 2/3, tỉ lệ lỗi 1/10. Một sản phẩm được lấy ngẫu nhiên. (a) Vẽ hoặc mô tả bốn đường đi lỗi/không lỗi. (b) Tính P(lỗi). (c) Biết sản phẩm lỗi, tính P(X|lỗi).
 
@@ -562,9 +578,9 @@ Tổng bốn lá bằng \(1/15+4/15+1/15+3/5=1\), nên không bỏ sót trườn
 </details>
 
 
-### 3.5. Bài tự luận 3: Tỉ lệ nền và phản biện kết luận
+### 3.5. Tỉ lệ nền và phản biện kết luận
 
-**Tự luận 3.**
+**Bài luyện 11.**
 
 Trong một hệ thống giả định 10.000 hồ sơ có 1% hồ sơ thuộc nhóm H. Bộ lọc nhận ra 80% hồ sơ H và báo nhầm 5% hồ sơ không H. (a) Tính số lần báo đúng và báo nhầm. (b) Tính P(H|báo). (c) Phản biện nhận định “máy chính xác 80%, vậy 80% hồ sơ bị báo thuộc H”.
 
@@ -614,5 +630,22 @@ Tám câu dưới đây dùng lại bài đã xuất hiện trong Luyện tập,
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P08; PRIMARY_OUTCOME: TOP21-O08; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
 **Câu 8.** Trong mô hình kiểm tra 1.000 sản phẩm có đúng 20 sản phẩm lỗi. Thiết bị phát hiện 80% sản phẩm lỗi và báo nhầm 5% của 980 sản phẩm tốt. Nếu máy báo lỗi, xác suất sản phẩm thực sự lỗi là bao nhiêu?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi **tự làm đủ tám câu**, em tìm lại đúng bài trong phần Luyện tập và tự mở **Lời giải** để sửa bài. Mỗi dòng dưới đây dẫn về **cùng một câu hỏi đã có**, không phải đáp án của đề kiểm tra độc lập.
+
+| Câu tự ôn | Bài có lời giải trong Luyện tập |
+| --- | --- |
+| Câu 1 | Bài luyện 1 |
+| Câu 2 | Bài luyện 2 |
+| Câu 3 | Bài luyện 3 |
+| Câu 4 | Bài luyện 4 |
+| Câu 5 | Bài luyện 5 |
+| Câu 6 | Bài luyện 6 |
+| Câu 7 | Bài luyện 7 |
+| Câu 8 | Bài luyện 8 |
+
+</details>
 
 **Nguồn tài liệu:** SGK Toán 12, Tập Hai, Chương VI (Bài 18–19), bộ sách *Kết nối tri thức với cuộc sống*.
