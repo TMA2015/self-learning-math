@@ -1,3 +1,6 @@
+<!-- OWNER_20261121_G12_SGK_CHV_24_WRITTEN_STAFF_NOTES_V2 -->
+**CURRENT SOURCE/EVIDENCE AFTER OWNER DELTA_B:** SGK ChV 24 original source-owned Written items `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39`; exactly 24 irrelevant student-visible Written/Mastery administrative notes removed, all 24 mathematical rubrics, questions, answers, solutions preserved. Q16 rule kept in a single hidden metadata note in source and full historic independent R01 receipt `a07070119259bd0133535fc3250d008cd78d8195` **unchanged immutable**; current targeted author Q18 Delta B receipt `b81c2cfdda530897740c19c92cbe7e99fd0631f2` on matching current source. Source version original `11eb2834cfdb4a24685157f84666c2bb0767970a` remains historical, SBT B14 p25 source gap explicitly remains HOLD for page provenance. Current V2 `current` / ready `current`. `AUTHOR_SELF_VERIFIED_TARGETED_DELTA_B` only, NOT new independent full Reviewer PASS, no website/merge/deploy.
+---
 # G12 SGK Chương V B14–B17 R01 — ONE V2 source-locked AUTHORING handoff (not RELEASE authorization)
 PACKET_ID: G12-SGK-CHV-B14-B17-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,9 +11,9 @@ LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 CONTENT_READY: YES_SOURCE_CANDIDATE_EXACT_HEAD_CI_REQUIRED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
-ACADEMIC_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHV_R01_ACADEMIC_PED_COMPOSITE_SOURCE_RECEIPT_20261103.md
-REVIEW_RECEIPT_BLOB: a07070119259bd0133535fc3250d008cd78d8195
+ACADEMIC_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_G12_CHV_R01_WRITTEN_ADMIN_LABEL_DELTA_B_Q18_20261121.md
+REVIEW_RECEIPT_BLOB: b81c2cfdda530897740c19c92cbe7e99fd0631f2
 ACADEMIC_VERDICT: PASS
 PEDAGOGICAL_VERDICT: PASS
 P0: 0
