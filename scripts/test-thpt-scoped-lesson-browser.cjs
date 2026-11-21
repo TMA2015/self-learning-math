@@ -103,6 +103,48 @@ async function execute(){
        assert(await fig.evaluate(img=>img.naturalWidth>0),rel+" "+width+" figure failed to render");
       }
      }
+     if(rel==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md" && source.includes('data-g11-b01-owner-g0g2="r01"')){
+      // P2 screenshot regression: computed style, not merely a colored fill.
+      const v=await page.evaluate(()=>{
+       const root=document.querySelector("article.md-content__inner");
+       const selectors={question:"details.question",tip:"details.tip",
+        concept:".thpt-r4-concept-card",rule:".thpt-r4-rule-card",
+        example:".thpt-g10-example-solution",heading:".tabbed-block > h3",
+        tab:":scope > .tabbed-set > .tabbed-labels > label"};
+       const out={found:true,rootClass:root.classList.contains("thpt-g10-knowledge-ap1")&&
+        root.classList.contains("thpt-g10-chiv-golden")};
+       for(const [name,selector] of Object.entries(selectors)){
+        const el=root.querySelector(selector);
+        if(!el){out.found=false;continue}
+        const st=getComputedStyle(el);
+        out[name]={bg:st.backgroundColor,pad:parseFloat(st.paddingLeft),
+         left:parseFloat(st.borderLeftWidth),radius:parseFloat(st.borderTopLeftRadius),
+         image:st.backgroundImage};
+       }
+       out.solutions=root.querySelectorAll(".thpt-g10-example-solution").length;
+       out.legacySolutions=root.querySelectorAll(".thpt-g11-example-solution").length;
+       out.generalHelp=root.querySelectorAll(".tabbed-block [data-thpt-help-id^='HELP-G11-B01-0']").length;
+       out.footnotes=root.querySelectorAll(".thpt-r4-footnote").length;
+       return out;
+      });
+      assert(v.found&&v.rootClass,rel+" "+width+" Golden shared root class not activated");
+      for(const name of ["concept","rule"])
+       assert(v[name].pad>=12&&v[name].left>=3&&v[name].radius>=5,
+        rel+" "+width+" "+name+" semantic border/padding/radius missing");
+      assert(v.question.bg===v.tip.bg&&v.question.radius>=7&&v.tip.radius>=7&&
+       v.question.bg!=="rgb(236, 248, 228)"&&v.question.bg!=="rgba(0, 0, 0, 0)",
+       rel+" "+width+" native green/turquoise disclosure colors leaked");
+      assert(v.solutions===6&&v.legacySolutions===0&&v.example.left<=2&&
+       v.example.pad>=12&&v.example.radius>=6&&v.example.bg!=="rgba(0, 0, 0, 0)",
+       rel+" "+width+" example card differs from G10 approved neutral card");
+      assert(v.heading.left>=3&&v.heading.image!=="none"&&
+       v.tab.radius>=6&&v.tab.pad>=8,
+       rel+" "+width+" Golden blue headings/tabs not rendered");
+      assert(v.generalHelp===2&&v.footnotes===1,
+       rel+" "+width+" General HELP or source duplication");
+      console.log("PASS G11 B01 P2 Golden computed-style @"+width+
+       "px: neutral disclosure, semantic padding, 6 G10 neutral examples, blue tabs");
+     }
      const mathExpected=isLesson||/\\\(|\\\[|\$\$/.test(source);
      if(mathExpected)await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,null,{timeout:30000});
      const layout=await page.evaluate(()=>{
