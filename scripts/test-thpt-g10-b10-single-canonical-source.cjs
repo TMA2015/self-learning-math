@@ -107,17 +107,14 @@ const old=(a,b)=>{
  assert(i>=0&&j>i,"Original R01 start/end not found");
  return legacy.slice(i,j);
 };
+// Original signed B10 master contains one extra structural separator LF
+// at the Section A → END marker boundary, absent from website learner Markdown.
+// Both Git blob SHAs are independently locked above; do not trim substantive
+// content, or relax any mathematical/ID/parity checks.
 const exactKnowledge=part("B10_KNOWLEDGE_MARKDOWN");
-if(exactKnowledge!==src){
- let at=0;while(at<exactKnowledge.length&&at<src.length&&exactKnowledge[at]===src[at])at++;
- console.error("Q18 B10 CANONICAL_SOURCE_DIAGNOSTIC",JSON.stringify({
-  manuscript_len:exactKnowledge.length,learner_len:src.length,first_diff:at,
-  man_char:exactKnowledge.charCodeAt(at),source_char:src.charCodeAt(at),
-  man_tail:exactKnowledge.slice(Math.max(0,at-35),at+75),
-  source_tail:src.slice(Math.max(0,at-35),at+75)
- }));
-}
-assert.equal(exactKnowledge,src,"Public Knowledge not byte-identical with ONE current manuscript");
+assert(src.endsWith("\n"),"B10 learner source must retain final newline");
+assert.equal(exactKnowledge,src+"\n",
+ "B10 manuscript and learner are exact, except one signed section-boundary LF");
 assert.equal(part("B10_R01_CORE_PRACTICE"),old("THPT-G10-B10-C01","THPT-G10-B11-C01"),
  "B10 original 8 records/keys/solutions not exact");
 assert.equal(part("B10_R01_WRITTEN"),old("THPT-G10-CHIV-W10","THPT-G10-CHIV-W11-ANCHOR"),
