@@ -161,7 +161,7 @@
     \]
     Các đoạn trong mẫu khác \(0\); các cát tuyến không cần song song nhau.</div>
 
-    **Vì sao:** Có thể dựng các đường phụ và một mặt phẳng qua hai cát tuyến hoặc qua đường song song thích hợp để chuyển về định lí Thalès đã học trong mặt phẳng. Điều quan trọng là ba **mặt song song** và cách ghép đúng các đoạn tương ứng, không phải những khoảng cách bằng nhau.
+    **Vì sao:** Nếu hai cát tuyến đồng phẳng, dùng các giao tuyến song song và định lí Thalès trong mặt phẳng. Nếu chúng **chéo nhau**, phải dựng cát tuyến phụ thích hợp rồi liên hệ tỉ số qua các mặt phẳng phụ; **không được mặc nhiên cho hai cát tuyến cùng nằm trong một mặt**. Điều quan trọng là ba mặt **đôi một song song** và ghép đúng các đoạn tương ứng, không phải các khoảng cách bằng nhau.
 
     **Ứng dụng mặt cắt:** Với \((MNK)\parallel(ABC)\) trong tứ diện \(S.ABC\), các tỉ số \(SM/SA=SN/SB=SK/SC=t\) bằng nhau khi ba giao điểm trên các tia cạnh phù hợp. Các tam giác đồng dạng có tỉ số chu vi \(t\), diện tích \(t^2\).
 
