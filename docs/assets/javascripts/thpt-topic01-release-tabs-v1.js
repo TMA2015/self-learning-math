@@ -78,6 +78,9 @@ function initTopic01Practice(){
  if(!article||!end||!golden)return;
  const headings=[...article.children].filter(x=>x.tagName==="H2"&&/^[123]\.\s/.test(x.textContent));
  if(headings.length!==3)return;
+ // ID placements only, taken in original order from the 24 AUTHORING Q15 markers.
+ // No canonical stems, keys, solutions or rubrics duplicated in JavaScript.
+ const approvedIds=["THPT-G10-B01-C01","THPT-TOP01-ADD01","THPT-G10-B01-C02","THPT-G10-B01-P05","THPT-G10-B01-P03","THPT-G10-B01-P06","THPT-G10-CHI-W01","THPT-G10-B01-P04","THPT-TOP01-ADD02","THPT-G10-B01-P01","THPT-G10-B01-P02","THPT-G10-B02-C01","THPT-G10-B02-P06","THPT-G10-B02-C02","THPT-TOP01-ADD03","THPT-G10-B02-P01","THPT-TOP01-ADD04","THPT-G10-B02-P02","THPT-TOP01-ADD05","THPT-G10-B02-P03","THPT-G10-B02-P04","THPT-G10-B02-P05","THPT-G10-CHI-W02-ANCHOR","THPT-TOP01-ADD06"];
  const items=[];let group="",current=null,node=headings[0];
  const originalNodes=[];
  while(node&&node!==end){originalNodes.push(node);node=node.nextSibling;}
@@ -88,11 +91,13 @@ function initTopic01Practice(){
   if(match){
    let previous=n.previousSibling;
    while(previous&&previous.nodeType===3&&!previous.textContent.trim())previous=previous.previousSibling;
-   const itemId=(previous?.nodeType===8?previous.textContent:"").match(/DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)/)?.[1]||"";
+   const commentId=(previous?.nodeType===8?previous.textContent:"").match(/DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)/)?.[1]||"";
+   const itemId=approvedIds[Number(match[1])-1]||"";
+   if(commentId&&commentId!==itemId)return; // source display marker changed
    current={number:Number(match[1]),group,itemId,nodes:[n]};items.push(current);
   }else if(current)current.nodes.push(n);
  }
- if(items.length!==24||items.some((x,i)=>x.number!==i+1||!x.itemId)||new Set(items.map(x=>x.itemId)).size!==24)return;
+ if(items.length!==24||items.some((x,i)=>x.number!==i+1||!x.itemId)||new Set(items.map(x=>x.itemId)).size!==24){console.error("TOPIC01_GOLDEN_SOURCE_GATE",JSON.stringify({count:items.length,ids:items.map(x=>x.itemId),numbers:items.map(x=>x.number)}));return;}
  golden.publicOnly();marker.dataset.ready="1";
  const hub=document.createElement("section");hub.className="topic01-golden-hub";hub.dataset.topic01GoldenHub="1";
  const lead=document.createElement("p");lead.textContent="24 bài luyện tập đã duyệt. Chọn một bài để tự giải rồi mở Lời giải / rubric. Mỗi lần chỉ hiện một bài, không ghi điểm thành thạo.";
