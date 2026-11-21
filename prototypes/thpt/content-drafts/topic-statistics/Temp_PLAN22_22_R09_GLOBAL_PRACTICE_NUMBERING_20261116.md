@@ -2312,7 +2312,7 @@ Chín câu dưới đây giúp em ôn lại từ dữ liệu thô đến bảng 
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Chỉ sau khi **tự giải cả chín câu**, em tìm đến **cùng bài đã có** trong Luyện tập và tự mở `Lời giải` để kiểm tra. Đây là hoạt động tự ôn `CLIENT_SELF_CHECK_NO_MASTERY`, **không phải** đề kiểm tra độc lập hoặc điểm đánh giá chính thức.
+Chỉ sau khi **tự giải cả chín câu**, em tìm đến **cùng bài đã có** trong Luyện tập và tự mở `Lời giải` để kiểm tra. Đây là hoạt động tự ôn để em tự tìm chỗ cần sửa, **không phải** đề kiểm tra độc lập hay điểm đánh giá chính thức.
 
 | Câu tự kiểm tra | Bài gốc có lời giải |
 | --- | --- |
