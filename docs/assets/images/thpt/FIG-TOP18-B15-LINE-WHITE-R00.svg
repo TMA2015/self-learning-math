@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" role="img" aria-labelledby="t d">
+<title id="t">Đường thẳng: điểm gốc và một hướng</title><desc id="d">Một đường thẳng trong hình chiếu với M0, vectơ chỉ phương u không bằng vectơ không, điểm M(t) phụ thuộc cùng tham số t ở cả ba tọa độ.</desc>
+<rect x="0" y="0" width="760" height="380" rx="14" fill="#ffffff"/>
+<rect x="12" y="12" width="736" height="356" rx="11" fill="#ffffff" stroke="#d3e0ef" stroke-width="2"/>
+<style>text{font-family:Arial,sans-serif;fill:#203f62}.head{font-weight:bold;font-size:20px;fill:#15538d}.sub{font-size:14px;fill:#526781}.key{font-size:16px;font-weight:bold;fill:#14578f}.formula{font-size:18px;font-weight:bold;fill:#1d6c62}</style>
+<text x="32" y="45" class="head">Đường thẳng: điểm gốc và một hướng</text>
+
+<path d="M77 284 L455 94" stroke="#2872b4" stroke-width="4" fill="none"/><path d="M455 94 l-18 1 m18 -1 l-9 17" stroke="#2872b4" stroke-width="3" fill="none"/>
+<circle cx="160" cy="242" r="7" fill="#1b6c9f"/><circle cx="364" cy="139" r="7" fill="#1b6c9f"/>
+<text x="109" y="271" class="key">M₀</text><text x="360" y="115" class="key">M(t)</text>
+<path d="M188 228 L258 192" stroke="#238776" stroke-width="4"/><path d="M258 192 l-12 1 m12 -1 l-8 10" stroke="#238776" stroke-width="2.5"/>
+<text x="213" y="179" class="key">u ≠ 0</text>
+<text x="500" y="114" class="formula">M(t) = M₀ + t·u</text>
+<text x="500" y="157" class="sub">Cùng một tham số t</text>
+<text x="500" y="191" class="sub">cho cả x, y và z.</text>
+<text x="500" y="239" class="key">t = 0 → M₀</text>
+<text x="500" y="272" class="key">t = 1 → M₀ + u</text>
+
+<text x="34" y="350" class="sub">Sơ đồ giải thích phương và điều kiện; không đo góc hoặc chiều dài bằng hình phối cảnh.</text>
+</svg>

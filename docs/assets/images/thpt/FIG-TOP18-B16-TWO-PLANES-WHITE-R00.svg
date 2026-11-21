@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" role="img" aria-labelledby="t d">
+<title id="t">Góc hai mặt: so hai pháp tuyến</title><desc id="d">Minh họa hai mặt phẳng có hai pháp tuyến n1, n2 khác không, góc nhỏ giữa các mặt được xác định bằng trị tuyệt đối của tích vô hướng chuẩn hóa giữa pháp tuyến.</desc>
+<rect x="0" y="0" width="760" height="380" rx="14" fill="#ffffff"/>
+<rect x="12" y="12" width="736" height="356" rx="11" fill="#ffffff" stroke="#d3e0ef" stroke-width="2"/>
+<style>text{font-family:Arial,sans-serif;fill:#203f62}.head{font-weight:bold;font-size:20px;fill:#15538d}.sub{font-size:14px;fill:#526781}.key{font-size:16px;font-weight:bold;fill:#14578f}.formula{font-size:18px;font-weight:bold;fill:#1d6c62}</style>
+<text x="32" y="45" class="head">Góc hai mặt: so hai pháp tuyến</text>
+
+<polygon points="83,269 298,269 380,196 164,196" fill="#e9f3ff" stroke="#2d73b5" stroke-width="2.7"/>
+<polygon points="164,196 381,196 337,105 122,105" fill="#d9f3ee" fill-opacity=".7" stroke="#228370" stroke-width="2.5"/>
+<path d="M244 204 L244 80" stroke="#ba6739" stroke-width="3.5"/><path d="M244 80 l-8 13 m8 -13 l8 13" stroke="#ba6739" stroke-width="2.5" fill="none"/>
+<path d="M244 204 L336 153" stroke="#238776" stroke-width="3.5"/><path d="M336 153 l-13 0 m13 0 l-6 13" stroke="#238776" stroke-width="2.5" fill="none"/>
+<text x="257" y="83" class="key">n₁</text><text x="341" y="147" class="key">n₂</text>
+<text x="354" y="276" class="key">(P)</text><text x="351" y="112" class="key">(Q)</text>
+<text x="485" y="137" class="formula">cos θ = |n₁·n₂|</text>
+<text x="529" y="170" class="formula">/ (|n₁||n₂|)</text>
+<text x="488" y="220" class="sub">Cả n₁, n₂ đều ≠ 0.</text>
+<text x="488" y="257" class="sub">Góc giữa hai mặt: 0°–90°</text>
+<text x="488" y="288" class="sub">Không phụ thuộc dấu của pháp tuyến.</text>
+
+<text x="34" y="350" class="sub">Sơ đồ giải thích phương và điều kiện; không đo góc hoặc chiều dài bằng hình phối cảnh.</text>
+</svg>
