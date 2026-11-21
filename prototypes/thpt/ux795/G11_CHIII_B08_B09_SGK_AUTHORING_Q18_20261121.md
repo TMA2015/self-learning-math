@@ -24,7 +24,7 @@ SBT Toán 11 KNTT tập một historical **direct visual original scan** receipt
 
 ## Q03–Q14 — new academic depth and self-learning audit
 
-**B08 concept-first route:** 6 WHY / discovery arcs: (1) classify values at left-closed/right-open shared boundary and detect out-of-range end; (2) assign every observation exactly once and conserve sample size; (3) distinguish equal and unequal interval widths; (4) frequency vs proportion; (5) show two raw datasets with identical grouped counts but different true means; (6) apply grouping to a waiting-time scenario. Exactly 3 formal Knowledge groups, each placed after seven? Actually **six** independently testable FirstTry; 6 full worked examples, four general D6 misconceptions. Existing SVG FIG-G11-B08-01_R01.svg Git blob **ef440d8b314bbbf74a21d624843a38577b040876** reused adjacent to group frequency table with accurate caption about four equal-width groups/frequencies 4,8,6,2.
+**B08 concept-first route:** 6 WHY / discovery arcs: (1) classify values at left-closed/right-open shared boundary and detect out-of-range end; (2) assign every observation exactly once and conserve sample size; (3) distinguish equal and unequal interval widths; (4) frequency vs proportion; (5) show two raw datasets with identical grouped counts but different true means; (6) apply grouping to a waiting-time scenario. Exactly 3 formal Knowledge groups and **six** independently testable FirstTry; 6 full worked examples, four general D6 misconceptions. Existing SVG FIG-G11-B08-01_R01.svg Git blob **ef440d8b314bbbf74a21d624843a38577b040876** reused adjacent to group frequency table with accurate caption about four equal-width groups/frequencies 4,8,6,2.
 
 **B09 concept-first route:** 7 WHY / discovery arcs: representative; mean with frequency weights; cumulative counts; median as within-group interpolation; quartile positions/own class; mode interpolation with equal-width and neighboring-frequency conditions; recognizing insufficient information and unequal widths. Exactly 6 formal Knowledge sections and 7 voluntary FirstTry→opt-in comparison→D6 chains. **Eight** independent worked examples with Đề bài, Phân tích, Lời giải, Kiểm lại; five generalized misconceptions. Existing SVG FIG-G11-B09-01_R01.svg **blob 84b570e65c5cdf63871be984b2c186508591bce9** visualizes cumulative Mẫu A [4,12,18,20], and SVG FIG-G11-B09-02_R01.svg **blob 9cf54f86f54a81070bfc75a2782c3ab48b1842da** visualizes interpolated Q1=11.25, Me=17.5, Q3=25. Captions explicitly warn these are grouped estimates, not observed individual values. Both figures are after the voluntary Discovery tasks, attached to matching formal Knowledge sections.
 
@@ -36,6 +36,24 @@ SBT Toán 11 KNTT tập một historical **direct visual original scan** receipt
 ## Q15–Q16 — one canonical public question per item/role, RD1 and Written protected
 
 Original reviewed and frozen 28 formative C/P items remain in **docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js**, **blob ac9b93b1b62d4976fc78a7b1807e87e9cf878448**: **B08 13 IDs** (C01–C05 and P01–P08), **B09 15 IDs** (C01–C05 and P01–P10). New learner FirstTry IDs THPT-G11-B08-TRY01–TRY06 and THPT-G11-B09-TRY01–TRY07 are **13 distinct ungraded/opt-in Knowledge source-owned stems**, one answer/HELP per item within the single learner source; no cloned official C/P item ID, and no Key/rubric/role mutation. Exhaustive across all historic branches cannot be claimed. There are 13 corresponding local HELP entries plus 4+5 general HELP entries, each unique in its lesson.
+
+**New voluntary FirstTry/outcome/role matrix (canonical in the relevant learner source, not official exam bank):**
+
+| Item ID | OUTCOME_ID | Role / placement |
+| --- | --- | --- |
+| THPT-G11-B08-TRY01 | G11-B08-CLASS-BOUNDARIES | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B08-TRY02 | G11-B08-FREQUENCY-TABLE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B08-TRY03 | G11-B08-GROUP-WIDTH | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B08-TRY04 | G11-B08-INTERPRETATION | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B08-TRY05 | G11-B08-INTERPRETATION | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B08-TRY06 | G11-B08-FREQUENCY-TABLE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B09-TRY01 | G11-B09-REPRESENTATIVE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B09-TRY02 | G11-B09-GROUPED-MEAN | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B09-TRY03 | G11-B09-CUMULATIVE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B09-TRY04 | G11-B09-GROUPED-MEDIAN | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B09-TRY05 | G11-B09-GROUPED-QUARTILES | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B09-TRY06 | G11-B09-GROUPED-MODE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B09-TRY07 | G11-B09-MODE-CONDITIONS | SGK_KNOWLEDGE_FIRST_TRY |
 
 Original Written/Anchor unified source unchanged: **docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iii.md, blob 7642de8c885faaff932a58233bf812a141efcbfc**, with four original Written/Anchor items. Both learner files link to this existing library, not a second Written bank. Original Chapter III 21 private RD1 items remain private (historical evidence only; never copied to public repository), official readiness/Final Submit and learner Skill Mastery keys untouched. Practice and voluntary answer opening do NOT grant Mastery. No release of student data.
 
