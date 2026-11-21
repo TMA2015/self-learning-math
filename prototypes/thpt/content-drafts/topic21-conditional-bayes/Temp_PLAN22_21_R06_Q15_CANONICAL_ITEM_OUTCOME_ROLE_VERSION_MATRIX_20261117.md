@@ -1,14 +1,33 @@
+<!-- TOP21_MASTER974_CURRENT_Q15_20261121 -->
+## Current CĐ21 R06 — 19 canonical ID / 8 public same-ID replay source map
+
+CURRENT_SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
+CURRENT_SOURCE_COMMIT: 17d155a9bb939e221dbd6c6dad7dc8594f77bcbe
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+Q15_ITEM_COUNT: 19
+Q15_PUBLIC_REPLAY_COUNT: 8
+CURRENT_AUTHORING_READY: YES_SOURCE_SCOPED_ONLY
+CONTENT_DELTA: DELTA_A_SOURCE_EQUIVALENT_LABELS_AND_RECOVERY_NAV; NO_MATH_ITEM_VERSION_BUMP
+Q15_SOURCE_MARKER_CHECK: 19/19 PASS
+PUBLIC_REPLAY_POINTER_CHECK: 8/8 SAME_P_ID PASS
+
+**Direct current source audit:** Exactly one existing learner `e526468f2452221e08070fc96e3a64d42ad5c8f9`; matrix below has 19 true canonical owner item markers with **all current exact source line numbers, original outcome, role and unchanged content-version**. Eight public question-only same-ID placements P01–P08 are located at lines 610, 613, 616, 619, 622, 625, 628, 631, correspond one-to-one to existing original solved Practice `Bài luyện 1–8`; display-only mapping does not create eight new ID or official held-out evidence. Visible exercise captions now 1–11 (eight Practice plus three original Written /4), 8 learner opt-in `Kiểm lỗi` labels for prior already-valid math diagnoses, one voluntary after-all-eight `Đối chiếu` locator. Original 19 full question/key/solution/rubric item bodies unchanged except exact label `Khi làm sai→Kiểm lỗi` in eight voluntary FirstTry diagnoses, **no mathematical edit and no content-version bump**. Existing independently reported O01–O08 D6-only PASS on older reviewed source is inherited solely for unchanged diagnosis substance, not a fresh independent full Topic PASS. Original private RD1/official Final Submit/Mastery unaffected.
+
+Historical candidate-only text below reflects old dated checkpoints and does not override CURRENT top fields and exact Q18/ready manifest custody; no website/RELEASE authority.
+---
+
 # CĐ21 · Q15 canonical item–outcome–role–version matrix · candidate only · 17/11/2026
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q15_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED_TARGETED
 CANDIDATE_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-CANDIDATE_SOURCE_BLOB: ab886f53b9bee89f71a852febb7f2d9ccfff2373
+CANDIDATE_SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
 HISTORICAL_SIGNED_SOURCE_BLOB: 65938a700e0da630694e9cbb6e636d337e67aeb5
 HISTORICAL_Q18_RECEIPT_BLOB: aa3e00f55eb8f6930e23e9b15bbba3ba2d8e972a
-Q15_ACTIVATION: CANDIDATE_ONLY; NOT_GLOBAL_REGISTER
-CONTENT_READY: NO
+Q15_ACTIVATION: CURRENT_AUTHORING_R06_ONE_SOURCE; NO_RELEASE_BANK_OR_OFFICIAL_READINESS
+CONTENT_READY: YES_AUTHORING_ONLY
 
 ## Scope and uniqueness
 
@@ -19,24 +38,24 @@ One canonical source for the NEW proposed Topic revision is the exact candidate 
 | # | item_id | primary_outcome | role | content_version | source line |
 |---:|---|---|---|---|---:|
 | 1 | THPT-TOP21-T01 | TOP21-O01 | TOPIC_FIRST_TRY | TOP21-R06 | 41 |
-| 2 | THPT-TOP21-T02 | TOP21-O02 | TOPIC_FIRST_TRY | TOP21-R06 | 93 |
-| 3 | THPT-TOP21-T03 | TOP21-O03 | TOPIC_FIRST_TRY | TOP21-R06 | 138 |
-| 4 | THPT-TOP21-T04 | TOP21-O04 | TOPIC_FIRST_TRY | TOP21-R06 | 173 |
-| 5 | THPT-TOP21-T05 | TOP21-O05 | TOPIC_FIRST_TRY | TOP21-R06 | 222 |
-| 6 | THPT-TOP21-T06 | TOP21-O06 | TOPIC_FIRST_TRY | TOP21-R06 | 263 |
-| 7 | THPT-TOP21-T07 | TOP21-O07 | TOPIC_FIRST_TRY | TOP21-R06 | 304 |
-| 8 | THPT-TOP21-T08 | TOP21-O08 | TOPIC_FIRST_TRY | TOP21-R06 | 347 |
-| 9 | THPT-TOP21-P01 | TOP21-O01 | TOPIC_PRACTICE | TOP21-R03 | 366 |
-| 10 | THPT-TOP21-P02 | TOP21-O02 | TOPIC_PRACTICE | TOP21-R03 | 383 |
-| 11 | THPT-TOP21-P03 | TOP21-O03 | TOPIC_PRACTICE | TOP21-R03 | 400 |
-| 12 | THPT-TOP21-P04 | TOP21-O04 | TOPIC_PRACTICE | TOP21-R03 | 417 |
-| 13 | THPT-TOP21-P05 | TOP21-O05 | TOPIC_PRACTICE | TOP21-R03 | 436 |
-| 14 | THPT-TOP21-P06 | TOP21-O06 | TOPIC_PRACTICE | TOP21-R03 | 453 |
-| 15 | THPT-TOP21-P07 | TOP21-O07 | TOPIC_PRACTICE | TOP21-R03 | 472 |
-| 16 | THPT-TOP21-P08 | TOP21-O08 | TOPIC_PRACTICE | TOP21-R03 | 489 |
-| 17 | THPT-TOP21-W01 | TOP21-O02 | TOPIC_WRITTEN | TOP21-R06 | 509 |
-| 18 | THPT-TOP21-W02 | TOP21-O06 | TOPIC_WRITTEN | TOP21-R06 | 541 |
-| 19 | THPT-TOP21-W03 | TOP21-O08 | TOPIC_WRITTEN | TOP21-R06 | 571 |
+| 2 | THPT-TOP21-T02 | TOP21-O02 | TOPIC_FIRST_TRY | TOP21-R06 | 95 |
+| 3 | THPT-TOP21-T03 | TOP21-O03 | TOPIC_FIRST_TRY | TOP21-R06 | 142 |
+| 4 | THPT-TOP21-T04 | TOP21-O04 | TOPIC_FIRST_TRY | TOP21-R06 | 179 |
+| 5 | THPT-TOP21-T05 | TOP21-O05 | TOPIC_FIRST_TRY | TOP21-R06 | 230 |
+| 6 | THPT-TOP21-T06 | TOP21-O06 | TOPIC_FIRST_TRY | TOP21-R06 | 273 |
+| 7 | THPT-TOP21-T07 | TOP21-O07 | TOPIC_FIRST_TRY | TOP21-R06 | 316 |
+| 8 | THPT-TOP21-T08 | TOP21-O08 | TOPIC_FIRST_TRY | TOP21-R06 | 361 |
+| 9 | THPT-TOP21-P01 | TOP21-O01 | TOPIC_PRACTICE | TOP21-R03 | 382 |
+| 10 | THPT-TOP21-P02 | TOP21-O02 | TOPIC_PRACTICE | TOP21-R03 | 399 |
+| 11 | THPT-TOP21-P03 | TOP21-O03 | TOPIC_PRACTICE | TOP21-R03 | 416 |
+| 12 | THPT-TOP21-P04 | TOP21-O04 | TOPIC_PRACTICE | TOP21-R03 | 433 |
+| 13 | THPT-TOP21-P05 | TOP21-O05 | TOPIC_PRACTICE | TOP21-R03 | 452 |
+| 14 | THPT-TOP21-P06 | TOP21-O06 | TOPIC_PRACTICE | TOP21-R03 | 469 |
+| 15 | THPT-TOP21-P07 | TOP21-O07 | TOPIC_PRACTICE | TOP21-R03 | 488 |
+| 16 | THPT-TOP21-P08 | TOP21-O08 | TOPIC_PRACTICE | TOP21-R03 | 505 |
+| 17 | THPT-TOP21-W01 | TOP21-O02 | TOPIC_WRITTEN | TOP21-R06 | 525 |
+| 18 | THPT-TOP21-W02 | TOP21-O06 | TOPIC_WRITTEN | TOP21-R06 | 557 |
+| 19 | THPT-TOP21-W03 | TOP21-O08 | TOPIC_WRITTEN | TOP21-R06 | 587 |
 
 ## Public question-only placements: no new canonical item
 
