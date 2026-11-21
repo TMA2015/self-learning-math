@@ -1,3 +1,25 @@
+<!-- TOP21_MASTER974_CURRENT_READY_20261121 -->
+## CĐ21 AUTHORING CONTENT_READY R06 — current Q15/Q18/V2/SVG exact SHA custody
+
+CURRENT_SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
+CURRENT_SOURCE_COMMIT: 17d155a9bb939e221dbd6c6dad7dc8594f77bcbe
+CURRENT_Q15_MATRIX_BLOB: 188fe6c44f55b081be9b28f25e905de483129189
+CURRENT_Q18_AUTHOR_RECEIPT_BLOB: b0ba354f6edd5c2477aa121457570119928ccef1
+CURRENT_A1_A7_BLOB: 93d9d9edbfd7743f1a78af5496b1e2eea4f313b1
+CURRENT_V2_HANDOFF_BLOB: d79f2c2e5c918a8c24951cbe12575f0a2a4a72b2
+CURRENT_ROUTE_TREE_SVG_BLOB: daeff4448dd64f89feef080039c73c9f437d016f
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+CURRENT_AUTHOR_Q18_MODE: AUTHOR_SELF_VERIFIED
+CURRENT_ONE_LEARNER_OWNER: SAME_EXISTING_R06_SOURCE_NO_R07
+OFFICIAL_READINESS: NOT_CLAIMED
+RELEASE_AUTHORIZATION: NO
+
+**Current authoring learner:** `prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md` Git `e526468f2452221e08070fc96e3a64d42ad5c8f9`. Exactly 8 complete Knowledge outcomes, 8 original FirstTry with differentiated voluntary `Kiểm lỗi`, 8 original Practice +3 full original Written /4 (=**Bài luyện1–11** one sequence, all 11 original full mathematical stems, answers, solutions and rubrics byte-identical to earlier `ab886f53b9bee89f71a852febb7f2d9ccfff2373`), 8 question-only public same-ID replay prompts P01–P08 unchanged with single optional final `Đối chiếu` locating same ID Bài luyện1–8. Current 19 unique canonical item IDs and 27 placements signed Q15 `188fe6c44f55b081be9b28f25e905de483129189`, no content-version bump when only editorial role labels/cross references changed. Two unchanged math SVG assets; route-tree figure visible original false section locator 7 corrected to **Kiến thức 3.1** by exactly one SVG text line, retained mathematical route-probability diagram Git `daeff4448dd64f89feef080039c73c9f437d016f`, other total-probability SVG identical and existing public interactive event model untouched. 20/20 voluntary disclosures balanced, three Topic outer pages, one SGK KNTT Toán12 TậpHai ChVI B18/B19 provenance credit at final end.
+
+**Evidence and scope:** Current targeted Q18 `AUTHOR_SELF_VERIFIED v3.2.0` signs effective source and corrected SVG label; prior full Topic author math source check 19/19 `bc3fadfc3e547be929fed30ad222e5403911b4cf` applies to source-equivalent original math only. Earlier owner-supplied independent targeted D6-only verdict `06157b8c7e5873611b463f991620c466b72e2741` remains exact *old-SHA/scoped* evidence, not a new whole Topic NotebookLM Academic/PED PASS. No new SGK/SBT visual PDF scan. Public selfcheck `CLIENT_SELF_CHECK_NO_MASTERY` not official held-out Readiness, private RD1/Final Submit/Mastery not exposed/changed. This is AUTHORING source ready, not browser/RELEASE AP/R device QA or permission to merge/deploy, no Firebase/learner data changes. Older dated receipt pointers below represent historical immutable snapshots and do not override active exact top metadata.
+---
+
 # TOP21-CONDITIONAL-BAYES-R06-20261118 · AUTHORING CONTENT_READY · CĐ21 Xác suất có điều kiện, toàn phần và Bayes
 
 PACKET_ID: TOP21-CONDITIONAL-BAYES-R06-20261118
@@ -11,20 +33,20 @@ STATE: CONTENT_READY
 CONTENT_READY: YES_AUTHORING_ONLY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: ab886f53b9bee89f71a852febb7f2d9ccfff2373
-SOURCE_COMMIT: 60007fdc5cb45ebc97c08e8437e06738afd24a19
+ACADEMIC_SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
+SOURCE_COMMIT: 17d155a9bb939e221dbd6c6dad7dc8594f77bcbe
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md
-REVIEW_RECEIPT_BLOB: d7625fbe3b7f02a99485687ed49f499decf3b913
+REVIEW_RECEIPT_BLOB: b0ba354f6edd5c2477aa121457570119928ccef1
 INDEPENDENT_TARGETED_REVIEW_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md
 INDEPENDENT_TARGETED_REVIEW_BLOB: 06157b8c7e5873611b463f991620c466b72e2741
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 5988aa2ba3995466598d2a153e8c2c92c223ba17
+AUTHOR_A1_A7_BLOB: 93d9d9edbfd7743f1a78af5496b1e2eea4f313b1
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: 5988aa2ba3995466598d2a153e8c2c92c223ba17
+AUTHOR_METADATA_BLOB: 93d9d9edbfd7743f1a78af5496b1e2eea4f313b1
 Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_Q15_CANONICAL_ITEM_OUTCOME_ROLE_VERSION_MATRIX_20261117.md
-Q15_MATRIX_BLOB: d8ec7c462fa229508b0129b64cca90d68fb339ff
+Q15_MATRIX_BLOB: 188fe6c44f55b081be9b28f25e905de483129189
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP21-CONDITIONAL-BAYES-R05-20261116_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 5cc6aebc7efbec3a39e06300e34026b341121c3f
+AUTHOR_HANDOFF_BLOB: d79f2c2e5c918a8c24951cbe12575f0a2a4a72b2
 CURRENT_AUTHORING_PR: 885
 CURRENT_PR: #885 — AUTHORING Draft only, not website release
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md, Git blob 28f53dd1279dc065e7f429f7337ba8f5df90acb8
