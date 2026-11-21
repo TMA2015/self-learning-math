@@ -82,7 +82,7 @@
     "lesson": "7",
     "role": "PRACTICE",
     "skill": "G10-B07-ZERO",
-    "stem": "Theo quy ước SGK/SBT KNTT, phát biểu nào đúng về vectơ-không $\\vec0$?",
+    "stem": "Theo quy ước đã học, phát biểu nào đúng về vectơ-không $\\vec0$?",
     "options": [
       "A. Có độ dài 1",
       "B. Có điểm đầu và cuối khác nhau",
@@ -90,8 +90,8 @@
       "D. Độ dài 0, được quy ước cùng hướng với mọi vectơ"
     ],
     "answerKey": "D",
-    "solution": "Đáp án: D\nLời giải: $\\overrightarrow{AA}=\\vec0$ với mọi A, có độ dài bằng 0; SGK/SBT quy ước $\\vec0$ cùng phương, cùng hướng với mọi vectơ. Đây là quy ước, không suy ra nó có giá hoặc chiều hình học thông thường.",
-    "hint": "Kiểm tra riêng trường hợp điểm đầu trùng điểm cuối và quy ước của SGK.",
+    "solution": "Đáp án: D\nLời giải: $\\overrightarrow{AA}=\\vec0$ với mọi A, có độ dài bằng 0; theo quy ước đã học, $\\vec0$ cùng phương, cùng hướng với mọi vectơ. Đây là quy ước, không suy ra nó có giá hoặc chiều hình học thông thường.",
+    "hint": "Kiểm tra riêng trường hợp điểm đầu trùng điểm cuối và quy ước đã học.",
     "exposure": "FORMATIVE_ONLY",
     "difficulty": "CORE_APPLY"
   },
