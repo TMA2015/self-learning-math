@@ -1,13 +1,16 @@
+<!-- TOP06_MASTER974_CURRENT_SOURCE_CUSTODY_20261121 -->
+**CURRENT AUTHORING / one effective R06 learner:** `edfecb3edd165e87bcb615ec4cbb66833ad52675`, **existing composite author Q18** `ef1e607675b82fcbf7c7aa6005c0c1005a836d1f` under v3.2.0; immutable 46 G11+20 Topic shared banks and eight original Written rubrics. Three affected PED6 upgrades #977 019–021: O01 real Kiến thức/Bài routes, 16 real public replay→Practice answer-location links, and new O16 selftry `h=4+0.8sin(πt/8)` with `T=16 h`, `h(4)=4.8 m`, `t=20` excluded from [0,16]. Current source inverse-diff against immutable previous `55cbb23d860aaff700c959bc291ec44699584159` restricts modifications to O01 FirstTry disclosure, O16 FirstTry disclosure, one selfcheck map. Prior 66-item/16-outcome author math audit remains valid for unchanged source portions, new O16 calculations separately self-proved and signed. 83/83 disclosures, 16/16 actual recovery routes, 1 SGK credit, 3 original SVG. No independent new NotebookLM PASS, private RD1, official Readiness, website or merge/deploy. Old SHA narratives below are historical scoped records.
+
 # CĐ06 · R06 A1–A7 exact-current-source intake QA · 18/11/2026
 
 PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R06
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 55cbb23d860aaff700c959bc291ec44699584159
+SOURCE_BLOB: edfecb3edd165e87bcb615ec4cbb66833ad52675
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: 72596f066ba642a682fff724891923e777a30abf
+REVIEW_RECEIPT_BLOB: ef1e607675b82fcbf7c7aa6005c0c1005a836d1f
 ORIGINAL_G11_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 ORIGINAL46_INDEX_BLOB: d8279df37c9dcd74a0b26f0da389baf7d53ecf64
 NEW20_CANONICAL_BANK_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65
@@ -53,7 +56,7 @@ PED_VERIFICATION: 16 complete local concept-first modules and 15 affected D6 rou
 CANONICAL_Q15: 46 original+20 new, original bank pointers unchanged, no duplicate ownership
 ASSESSMENT_Q16: no official Readiness/Final Submit/Mastery, public replays only
 
-AUTHOR_SIGNOFF: TOP06_R06_A1_A7_SOURCE_TO_Q18_7040dfe92bb4ab06e433a6843d23f7b8c8ec5999_20261118
+AUTHOR_SIGNOFF: TOP06_MASTER974_CURRENT_PED6_16_PUBLIC_SELFCHECK_20261121_edfecb3edd165e87bcb615ec4cbb66833ad52675
 CONTENT_READY_CONDITION: ONE_CURRENT_V2_READY_REGISTER_AND_EXACT_HEAD_SOURCE_GATE
 RELEASE_AUTHORIZATION: NO
 
