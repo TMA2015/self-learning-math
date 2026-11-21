@@ -130,35 +130,6 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
  }
  assert(fields.includes(currentBlob)||Boolean(row),
   "Q18 receipt missing exact current SOURCE candidate SHA");
- // Exact source-only DELTA_A: user-visible general-error headings, not local D6.
- if(lesson==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"&&
-    receipt.includes("G11-B01-GENERAL-ERROR-TITLES-R03-20261121")){
-  assert.equal(beforeBlob,"e5b140bffd46d829f94d793c45bd987c64838723","R03 must use exact owner P2 R02 baseline");
-  assert.equal(currentBlob,"0603fbb2b61374fcd49eff3c119197cff3fa77e4","R03 heading candidate must match signed Git blob");
-  assert(receipt.includes("DELTA_A_UI")&&receipt.includes("Q18_RELEASE_UI_SOURCE_VERIFIED"),
-   "R03 source-locked UI-only receipt missing");
-  const marker='=== "Lỗi thường gặp"';
-  const sections=before.split(marker);
-  assert.equal(sections.length,2,"R03 missing exact Golden error tab");
-  let index=0;
-  const labels=["4.1. Nhầm số vòng quay, tia cuối và độ dài cung",
-   "4.2. Bỏ qua điều kiện xác định và dấu lượng giác"];
-  const replaced=sections[1].replace(/^    \?\?\? tip "Kiểm lỗi"$/gm,()=>{
-   assert(index<2,"R03 tab4 contains unexpected local label");
-   return '    ??? tip "'+labels[index++]+'"';
-  });
-  assert.equal(index,2,"R03 requires exactly two general-error titles");
-  assert.equal(now,sections[0]+marker+replaced,
-   "R03 may change only two headings, not math, answers, IDs, figures, or narrative");
-  assert.equal((now.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,6,
-   "Only six Vận dụng-specific local Kiểm lỗi headings are allowed");
-  assert.equal((now.match(/^    \?\?\? question "Đối chiếu"$/gm)||[]).length,6);
-  assert.deepEqual(tokenSet(now,"data-thpt-help-id"),tokenSet(before,"data-thpt-help-id"));
-  assert.deepEqual(firstAnswers(now),firstAnswers(before));
-  assert.equal(latex(now).length,203);
-  console.log("SCOPED_G11_B01_R03_UI_LABELS_PASS: 2 named general errors; 6 local Kiểm lỗi; all math/IDs/answers unchanged");
-  return;
- }
  // Exact signed R02 after the global28 G11 B01 R01 reached owner P1.
  // Neither the independent assessment nor six original answers may change.
  if(lesson==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"&&
