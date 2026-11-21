@@ -1,3 +1,8 @@
+<!-- TOP01_MASTER974_BANK_SELFCHK_CURRENT_20261121 -->
+**CURRENT AUTHORING snapshot (#974):** same one canonical CĐ01 learner, blob `9271a9784e343ea87981a67dae7dabcf69e4c0ed`, targeted existing Q18 receipt `e5cccc6d98bf3ce5244114752075f74a3389c46b`, author metadata `dcfd83b571e8eea776b47a9b87e3cd8b990675b1`, one V2 handoff `fe0dff5b4c7cca90296fcb18175032a973519023`. Academic original banks verified 18 SGK + 6 Topic source stems/solutions; 3 exact original conclusions now stated plainly for learners and one 11-question selfcheck `Đối chiếu` links to real Practice (public replay only, NO_MASTERY). Previously fixed 11 targeted `Kiểm lỗi` Knowledge paths stay. `DELTA_B_SOURCE_EQUIVALENT + DELTA_C_PED_TARGETED`, author self-QA affected scope; inherited CONTENT_READY historical signoffs remain at their original source SHA, **do not interpret as fresh complete #974 Academic/PED pass or RELEASE permission**. Student-facing SGK source only once, at end. NO merge/deploy.
+
+---
+
 <!-- TOP01_MASTER974_CURRENT_SCOPED_QUALITY_DELTA_20261121 -->
 **CURRENT AUTHORING quality revision (#974):** One existing learner path, blob `53e0cc45a3b101c80c83b4412db0195e9f226c47`. Eleven learner-visible metadata labels removed (10 `Đáp án canonical` and `Tự luận/Anchor`); 11 context-specific **Kiểm lỗi** guidance blocks now point to real same-Topic Knowledge sections + Practice tasks. No change in math/conditions or existing Practice question/answer/rubric, one SGK source footer and public Q16 no-Mastery protections remain. Current scoped signed Q18 self-QA `effb212b7f36007ec1d185def983da3ef2075b7c`, author metadata `8277985901c1f245c499a6e2a107999e513f928a`, one V2 `4fcfedda99496c39a3e97b9a67dc284ab8c50eb2`. `DELTA_A_UI + DELTA_C_ACADEMIC_MATERIAL` (PED D6). **Historical academic PASS is snapshot-bound; this is target-scope author self-QA, NOT full new #974 academic acceptance, NOT RELEASE, no independent NotebookLM PASS.**
 
@@ -23,12 +28,12 @@ CURRENT_PR: #817 Draft AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD01
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
+ACADEMIC_SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC01_R07_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA, no fresh independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-REVIEW_RECEIPT_BLOB: effb212b7f36007ec1d185def983da3ef2075b7c
+REVIEW_RECEIPT_BLOB: e5cccc6d98bf3ce5244114752075f74a3389c46b
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC01-LOGIC-SETS-FULL-R07_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 4fcfedda99496c39a3e97b9a67dc284ab8c50eb2
+AUTHOR_HANDOFF_BLOB: fe0dff5b4c7cca90296fcb18175032a973519023
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
