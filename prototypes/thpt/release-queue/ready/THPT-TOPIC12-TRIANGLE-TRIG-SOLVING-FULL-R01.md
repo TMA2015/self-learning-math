@@ -1,3 +1,8 @@
+<!-- TOP12_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
+**CURRENT CĐ12 AUTHORING CONTENT_READY on one R04 learner, NOT website RELEASE:** learner `prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md` source Git blob **`f773f2622c88bd3e3a1e0137613846a83b3e6629`** (commit `24127fe2a00f8217deaca2312f51dc8fca91597c`), existing Q18 self-author `496ce6005b50c6fd5baae2a6ac4f3d9414becc20`, author A1/custody `b9615f81200f82952c92f9b8a362603e2a95eae9`, **one** V2 `bb5baa4df5bbd9ccd2ee67c075e00305d57d57d2`; original canonical bank NEW16 `8f05b5556d83675649451dec76a8c1ffa5e1098d` and original G10 SGK18  source untouched. New current student #977-039–041 verified/fixed: 12/12 Knowledge `Kiểm lỗi` route to two real Practice Bài per outcome; 12 original public Selfcheck prompts now have one after-questions voluntary answer location map by original canonical item IDs; 34 unique student **Bài luyện** sequential labels 1–34, 28 `Lời giải`+6 `Lời giải và rubric` opt-in reveals; only one learner-facing verified SGK Toán 10 KNTT Tập Một ChIII B05–B06 footer, no admin text in lesson. All 34 original canonical mathematical card bodies (stems/keys/solutions/rubrics), original 12 public question-only selfcheck stems and two SVG refs unchanged; 47/47 balanced voluntary details. Q18 current v3.2 AUTHOR_SELF_VERIFIED targeted PED/editorial on source, old original SGK independent receipt inherited only to unchanged math/bank, **no current new full Topic independent NotebookLM verdict**. Public Selfcheck NOT official held-out RD1/Topic Readiness/Mastery/Final Submit; no browser AP/R, owner permission, merge/deploy/Firebase.
+
+---
+
 # CĐ12 — Hệ thức lượng trong tam giác và giải tam giác · AUTHORING CONTENT_READY R04 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R01
@@ -8,18 +13,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 2389e3ae9f73dae3019fa8c823d220af3014fdb7
+SOURCE_COMMIT: 24127fe2a00f8217deaca2312f51dc8fca91597c
 CATALOG_TOPIC_ID: CD12
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
+ACADEMIC_SOURCE_BLOB: f773f2622c88bd3e3a1e0137613846a83b3e6629
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (self-QA, not independent Topic NotebookLM review)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: a692d47dd544604d404df0635986bee9c5251394
+REVIEW_RECEIPT_BLOB: 496ce6005b50c6fd5baae2a6ac4f3d9414becc20
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC12-TRIANGLE-TRIG-SOLVING-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 4dfcca3cf35b5e196cbd43f23a75f37245bb82c6
+AUTHOR_HANDOFF_BLOB: bb5baa4df5bbd9ccd2ee67c075e00305d57d57d2
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 8067282a595a93ce77b9de83185f2bc3b35a6866
+AUTHOR_A1_A7_BLOB: b9615f81200f82952c92f9b8a362603e2a95eae9
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
