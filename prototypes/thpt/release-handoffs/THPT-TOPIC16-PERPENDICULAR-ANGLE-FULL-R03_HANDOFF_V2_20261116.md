@@ -1,9 +1,19 @@
+<!-- TOP16_MASTER974_CURRENT_V2_20261121 -->
+## ONE effective CĐ16 R03 V2 handoff — 21/11/2026
+
+**CURRENT Q18 SOURCE LOCK:** source `9b548af2169cabccf4e9191e9dd57b2f13dcdf6d` → one author-self Q18 `5fb70a7644f6bf9d56fb8d51dd456f98cb5d1efe` → same one A1–A7 `2324f83b982ccffd513c8ddb7f3666177aa70b8f`. Existing learner path unchanged, no R04 parallel learner and no duplicate item bank. `MASTER #974 / #977 verified #051–053 FIXED`; one original SGK source-owner label `#054 P2 OPEN_NONBLOCKING`.
+
+`DELTA_C_PED_TARGETED`: 21 distinct optional Kiểm lỗi with misconception→exact Knowledge section→two authentic existing numbered Practice retries per outcome; 8 PUBLIC_SELF_CHECK replay-only placements retain the original same ID and get one voluntary end-of-questions answer locator to Practice positions 11,26,29,42,44,59,61,64. `DELTA_A_EDITORIAL`: 65 real Practice captions sequential Bài luyện 1–65, four natural math group titles, one SGK end footer. All 65 original complete question/key/solution/11 Written rubrics exact unchanged; 21 FirstTry answers and 8 question-only selfcheck stems unchanged; four SVG and one model original source unchanged. 87/87 details balanced.
+
+**Signed scope:** `AUTHOR_SELF_VERIFIED` Q18 v3.2.0 for affected source, not independent NotebookLM; P0/P1=0 in verified source scope; #054 shared original G11 canonical “Đáp án sau Submit luyện tập” wording requires original G11 owner to approve cross-placement Q15 editorial edit. No official held-out RD1, Final Submit, website AP/R, Skill Mastery, or release authorization.
+---
+
 # CĐ16 · Hình học không gian: Quan hệ vuông góc & Góc · AUTHORING V2 R03
 
-**Authoring CONTENT_READY candidate** under one owner-effective `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Academic/PED are AUTHOR `SELF_VERIFIED`, not independent NotebookLM verdict. The 22-topic catalog is a historical research proposal, NOT an owner-approved runtime Topic ID. RELEASE retains full release/QA/owner gating.
+**Authoring CONTENT_READY candidate** under one owner-effective `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18. Academic/PED are AUTHOR `SELF_VERIFIED`, not independent NotebookLM verdict. The 22-topic catalog is a historical research proposal, NOT an owner-approved runtime Topic ID. RELEASE retains full release/QA/owner gating.
 
 PACKET_ID: THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03
-CONTENT_REVISION: R03_FULL_S1_KNOWLEDGE_20261120
+CONTENT_REVISION: R03_MASTER974_21D6_PUBLIC_LOOKUP_20261121
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -13,13 +23,13 @@ CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 439ee3833a864638eedd11bc80baf564c77485a5
+ACADEMIC_SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 27975aff2764f84f62be45763d3014ed7b00ea7e
+REVIEW_RECEIPT_BLOB: 5fb70a7644f6bf9d56fb8d51dd456f98cb5d1efe
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 1c52217f82a702c33eb0232ab11e6254f96229d7
+AUTHOR_A1_A7_BLOB: 2324f83b982ccffd513c8ddb7f3666177aa70b8f
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 1c52217f82a702c33eb0232ab11e6254f96229d7
+AUTHOR_METADATA_BLOB: 2324f83b982ccffd513c8ddb7f3666177aa70b8f
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 MODEL_ID: SLM-TOP16-RAMP-ANGLE-R00
