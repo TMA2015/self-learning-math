@@ -204,6 +204,21 @@ function selfTest(){
  assert.equal(classify(b26Case.filter(p=>!p.endsWith("G10_B26_EVENT_COMPLEMENT_R01.svg"))).impact,"FULL",
   "Missing reviewed figure must not use exception");
 
+ const antiRepeatCase=[
+  ...[19,20,21,22,23,24,25,26].map(n=>
+   "docs/thpt-preview/sgk/chuong-"+(n<=22?"vii":n<=25?"viii":"ix")+"/bai-"+n+".md"),
+  "prototypes/thpt/ux795/G10_B19_B26_ONE_SOURCE_AND_SEMANTIC_BOX_Q18_DELTA_20261121.md",
+  "scripts/thpt-q18-g10-source-receipt.cjs",
+  "scripts/test-thpt-scoped-deploy-proof.cjs",
+  "scripts/test-thpt-release-impact.cjs"];
+ assert.equal(classify(antiRepeatCase).impact,"SCOPED_LESSON",
+  "Exact 8-lesson owner anti-repeat correction must remain targeted");
+ assert.equal(classify([...antiRepeatCase,"mkdocs.yml"]).impact,"FULL",
+  "Anti-repeat correction cannot hide global build config changes");
+ assert.equal(classify(antiRepeatCase.filter(x=>!x.endsWith("bai-26.md"))).impact,"FULL",
+  "Missing eighth lesson cannot qualify for exact 8-lesson batch");
+ assert.equal(classify(antiRepeatCase.filter(x=>!x.endsWith("scoped-deploy-proof.cjs"))).impact,"SCOPED_LESSON",
+  "Without modified production proof source paths alone may use generic classifier, but main deploy proof must remain fail-closed");
  const bBatch=[7,8,9,10,11,12,13,14].map(n=>
   "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md");
  const mBatch=[
