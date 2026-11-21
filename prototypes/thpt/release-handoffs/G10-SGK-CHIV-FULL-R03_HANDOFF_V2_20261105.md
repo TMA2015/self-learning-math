@@ -1,3 +1,6 @@
+<!-- OWNER_20261121_G10_B07_P04_DELTA_B_CANONICAL_EDITORIAL_V2 -->
+**CURRENT AUTHOR SELF-VERIFIED SOURCE_EQUIVALENT ONLY**: One G10 SGK ChIV current bank `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` (previous `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` Git history), one source-owned item `THPT-G10-B07-P04` shared by CĐ13. Original MCQ asks same zero-vector convention; only textbook name removed from question, same choice D and other choices. Mathematical explanation still states zero vector has length zero and the special convention about same direction. One short hint now says 'quy ước đã học' instead of attributing SGK; all original math solutions/rubrics unaffected. Source-scoped Q18 `8061eb7e4016858b0f6db0dfbd52708a87eb785d`, A1 `e0550597b681dd13e74a362ccb77e8bf29d6cedb`, V2 `current`. Prior independent R02 NotebookLM PASS stays on its original immutable snapshot; this is Delta B source-equivalent AUTHOR_SELF_VERIFIED, NOT a new independent full source review. No RELEASE/merge/deploy.
+---
 # G10 SGK Chương IV Vectơ — FULL R03 V2 AUTHORING handoff (immutable)
 
 PACKET_ID: G10-SGK-CHIV-FULL-R03-CANDIDATE-20261105
@@ -17,9 +20,9 @@ OFFICIAL_INDEPENDENT_READINESS: NOT_CLAIMED
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHIV_FULL_R03_CONSOLIDATED_SOURCE_20261105.md
-ACADEMIC_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
+ACADEMIC_SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G10_SGK_CHIV_FULL_R03_COMPOSITE_SOURCE_REVIEW_CHAIN_20261105.md
-REVIEW_RECEIPT_BLOB: 08d96225ea02bf9695238a77a1a13a3afdaa52ce
+REVIEW_RECEIPT_BLOB: 8061eb7e4016858b0f6db0dfbd52708a87eb785d
 SOURCE_REVIEW_CHAIN_TYPE: R01_INDEPENDENT_D1D6_AND_R02_INDEPENDENT_PED_DELTA_C_PLUS_AUTHOR_DELTA_B
 
 **AUTHORING scope:** five SGK lessons, 24 outcomes, 90 public canonical item IDs from R01, reviewed R02 and already public CHIV client Final Submit selfchecks. Exactly one shared original source/receipt V2 handoff. R02 reviewer used current Q01–Q18 v1.2.0; `STANDARD_VERSION: 1.1.0` here is the existing V2 parser compatibility field pending governance effective-version transition, not a second quality rubric. No website integration, held-out RD1 or Mastery.
