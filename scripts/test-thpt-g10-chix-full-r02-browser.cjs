@@ -16,18 +16,18 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-ix/";
      const response=await page.goto(base+"bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(response?.ok(),"Missing G10 ChIX B"+n);
      const article=page.locator("article.md-content__inner");
-     if(await verifyModelBLesson(page,{n,chapter:"ix",tries:5,helps:7,
+     if(await verifyModelBLesson(page,{n,chapter:"ix",tries:5,helps:7,remediationTab:"Khám phá kiến thức",
        images:n===26?["THPT_G10_B26_COIN_DIE_SAMPLE_SPACE.svg"]:["THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"]})){
        const article=page.locator("article.md-content__inner");
        const tab=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
-        .filter({hasText:/^Kiến thức SGK$/});await tab.click();
+        .filter({hasText:/^Khám phá kiến thức$/});await tab.click();
        const items=article.locator('[data-thpt-first-try-id^="THPT-G10-CHIX-TRY"]');
        const helps=article.locator('[data-thpt-help-id^="HELP-G10-CHIX-TRY"]');
        assert.equal(await items.count(),5,"B"+n+" five original source-locked First Try items");
        assert.equal(await helps.count(),5,"B"+n+" five original five-step D6 help items");
        const answers=article.locator("details.question:visible"),tips=article.locator("details.tip:visible");
-       assert.equal(await answers.count(),5,"B"+n+" every original First Try visible in Knowledge tab");
-       assert.equal(await tips.count(),5,"B"+n+" every original D6 visible in Knowledge tab");
+       assert.equal(await answers.count(),5,"B"+n+" every source-locked First Try visible in Discovery tab");
+       assert.equal(await tips.count(),5,"B"+n+" all five contextual D6 visible in Discovery tab");
        for(let k=0;k<5;k++){
         const id="THPT-G10-CHIX-TRY"+String(start+k).padStart(2,"0");
         assert.equal(await items.nth(k).getAttribute("data-thpt-first-try-id"),id,
