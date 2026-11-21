@@ -20,7 +20,20 @@ for(const n of [26,27]){
  const tabs=[...knowledge.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]);
  if(tabs.length){
   assert.deepEqual(tabs,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],"B"+n+" exact four Knowledge tabs");
-  assert(knowledge.includes("EX-G10-B"+n+"-"),"B"+n+" original worked example identity missing");
+  // The published four-tab B26/B27 Golden R4 source was signed under Q18:
+  // learner-facing examples now use meaningful 3.x titles, not old EX IDs.
+  // Fail closed on the complete source SHA and exactly six worked examples.
+  const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+  const bytes=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-ix/bai-"+n+".md"));
+  const sha=require("node:crypto").createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
+  assert.equal(sha,candidateG10KnowledgeBlob(n),
+   "B"+n+" must keep exactly the current owner-signed Q18 Knowledge blob");
+  assert.equal((knowledge.match(/^    ### 3\.\d+\. Ví dụ/gm)||[]).length,6,
+   "B"+n+" six learner-facing worked examples must remain");
+  assert.equal((knowledge.match(/class="thpt-g10-example-solution"/g)||[]).length,6,
+   "B"+n+" six Golden worked-solution containers must remain");
+  assert(!knowledge.includes("EX-G10-B"+n+"-"),
+   "B"+n+" obsolete internal EX identifier must not reappear in learner source");
  }else{
   assert(knowledge.includes("## 1.")&&knowledge.includes("## 2.")&&knowledge.includes("EX-G10-B"+n+"-"),"Knowledge/explanation source not integrated B"+n);
  }
