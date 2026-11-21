@@ -1,3 +1,8 @@
+<!-- MASTER974_TOPIC02_FULL_AUTHORING_SIGNED_Q18_HANDOFF_20261121 -->
+**CURRENT AUTHORING full deep audit:** one existing R06 learner source `d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5`, 16 outcome Q01–Q18 author self-reviewed, 38 canonical public questions matched original SGK/Topic banks and mathematics independently tested across bounded topics, 4 Written rubrics, 3 SVGs and 16 client-only public selfchecks. Signed current Q18 `c1766ba52a80be61b9f8fd2124d0116605f74b92` and author metadata `11a25dac858fd6d33096b90dccb65c60abcc334c` on effective standard `SLM-THPT-QUALITY-ONE v3.2.0`. No independent NotebookLM PASS, RD1, scoring or Mastery; Draft PR #818, no merge/deploy. Older target-scope descriptions below are history under prior signed snapshot.
+
+---
+
 <!-- MASTER974_TOPIC02_D6_16_AND_PUBLIC_SELFCHK_20261121 -->
 ## CURRENT AUTHORING CĐ02 V2 — one source, targeted math/PED after deep quality audit
 
@@ -18,17 +23,17 @@ Learner Git blob `3161436a92a450e17aaf5c6b53736f70d9d5bfa0` corrects two **verif
 PACKET_ID: THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 261d0d978dcf733a24d8d3f68e6af926d7c244ed
+AUTHOR_METADATA_BLOB: 11a25dac858fd6d33096b90dccb65c60abcc334c
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
 ACADEMIC_SOURCE_BLOB: d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 4c9fbec5d319806f76dd5757af0c6dba77189aed
+REVIEW_RECEIPT_BLOB: c1766ba52a80be61b9f8fd2124d0116605f74b92
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
