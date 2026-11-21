@@ -1,3 +1,23 @@
+<!-- TOP19_MASTER974_CURRENT_READY_20261121 -->
+## CĐ19 — one active R11 AUTHORING CONTENT_READY source-only · 21/11/2026
+
+CURRENT_SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
+CURRENT_Q15_SOURCE_MATRIX_BLOB: a7b15e559626c6d1f3b6b62c10b1662d0209ddbd
+CURRENT_Q18_SIGNED_AUTHOR_RECEIPT_BLOB: 019254781e99ba857019ee662ab49056d298d18e
+CURRENT_A1_A7_BLOB: 4c08fb4a13a709d1b636c7244b66f8b3dacbefb9
+CURRENT_V2_HANDOFF_BLOB: 8540aa7dc426b508c9ddf4a987d4ce5db12aced7
+CURRENT_SOURCE_COMMIT: 20e7b3d9f03e143945aa63a9cbfcb4cd0d43f6f2
+CURRENT_QUALITY_STANDARD: SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18
+CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
+CURRENT_OWNERSHIP: ONE_EXISTING_R11_LEARNER / no alternate source / no RELEASE authority
+
+One student source path `prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md`, 14 actual complete Knowledge outcomes/14 learner FirstTry/15 worked examples, 42 complete original Practice with 25 G10 SGK canonical display-only body math and 14 Topic P/3 Written rubrics unchanged, one continuous Bài luyện 1–42 and correct opt-in explanations; 14 differentiated Kiểm lỗi → 28 original mathematically matched Practice retries; original four pedagogical SVGs + optional counting/Pascal public model unchanged. Three original Topic FirstTry IDs T01/T02/T09 revised as targeted Delta C to avoid copying numbers directly from displayed teaching diagrams: T01=9 (5+4), T02=15 (5×3), T09=12 (C4,3×3), each assigned its own new `CONTENT_VERSION` with full mathematical answer rechecked under current Q18. No other FirstTry stem/key changed. 56 unique original public canonical IDs retained and 7 same-ID public question-only SelfChecks P02/P04/P06/P07/P14/P09/P11 now have voluntary final answer-location references to existing Practice numbered 7/12/20/22/27/30/40. One SGK source credit at end, 57 balanced opt-in `<details>`.
+
+G10 KNTT Tập Hai ChVIII B23–B25 S1 exact SGK printed60–65/66–71/72–75 receipt `850dd241e60de58ccf032e48e1e13530988436e3`, provenance inherited snapshot-scoped; no new direct PDF scan, no new independent full NotebookLM verdict. Original 25 SGK JS canonical owner unchanged, private RD1 held out unchanged, public `CLIENT_SELF_CHECK_NO_MASTERY` only, not official Topic readiness, Final Submit, Mastery. No P0/P1/P2 in changed author-verified source scope; no active academic blocker. Historic R09/R10 earlier review valid only for immutable old SHAs.
+
+This is AUTHORING `CONTENT_READY`, **not** RELEASE QA/production integration/CI pass/merge/deploy/owner website permission. CI on latest exact HEAD must be verified separately.
+---
+
 # CĐ19 · một nguồn hiện hành R11 · SOURCE-LOCKED AUTHORING CONTENT_READY
 
 PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R11-20261117
@@ -10,18 +30,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 639a81e09a863b4763870618a9d71c72918f28e9
+SOURCE_COMMIT: 20e7b3d9f03e143945aa63a9cbfcb4cd0d43f6f2
 CATALOG_TOPIC_ID: CD19
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 CURRENT_PR: #897 — AUTHORING DRAFT source-only, no website permission
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 2809816539e438726858daf18d7efb1d751ea7f7
+ACADEMIC_SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md — AUTHOR_SELF_VERIFIED composite of immutable R09 + targeted R10/R11; NOT independent NotebookLM
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: e3faacd20740cc7806677ecae3577bf3ad4efcaa
+REVIEW_RECEIPT_BLOB: 019254781e99ba857019ee662ab49056d298d18e
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/TOP19-COMBINATORICS-BINOMIAL-R11-20261117_HANDOFF_V2.md
-AUTHOR_HANDOFF_BLOB: 0dfc7dcf3d3e2999baeb742315efa368335fc6ff
+AUTHOR_HANDOFF_BLOB: 8540aa7dc426b508c9ddf4a987d4ce5db12aced7
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
@@ -34,9 +54,9 @@ RELEASE_AUTHORIZATION: NO
 RELEASE_STATUS: NOT_INTEGRATED_NOT_PUBLISHED
 
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 55605f5b6c99f61f3b9629244f9c6830c7223d07
+AUTHOR_A1_A7_BLOB: 4c08fb4a13a709d1b636c7244b66f8b3dacbefb9
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 55605f5b6c99f61f3b9629244f9c6830c7223d07
+AUTHOR_METADATA_BLOB: 4c08fb4a13a709d1b636c7244b66f8b3dacbefb9
 
 ## R09 IMMUTABLE FULL MATH/PED BASELINE (inherited)
 
