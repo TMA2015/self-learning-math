@@ -22,7 +22,28 @@ const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCo
 const ctx={window:{}};vm.runInNewContext(fs.readFileSync("docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js","utf8"),ctx);
 const bank=ctx.window.THPT_CHIV_B07_B08_REVIEWED_FORMATIVE;assert(bank?.validate().valid);assert.equal(bank.records.length,16);assert.equal(bank.records.filter(x=>x.options).length,8);assert.equal(bank.records.filter(x=>!x.options).length,8);
 assert.deepEqual(Object.keys(expected).sort(),Array.from(bank.records,x=>x.item_id).sort());
-for(const it of bank.records){const match=it.solution.match(/^Đáp án: ([^\n]*)\nLời giải: ([\s\S]*)$/);assert(match,"missing solution "+it.item_id);const raw=[it.stem,it.options?.join(" | ")||"",match[1],it.hint,match[2]].join("\u241f");assert.equal(fnv(raw),expected[it.item_id],"Academic source changed "+it.item_id);assert.equal(it.exposure,"FORMATIVE_ONLY");}
+for(const it of bank.records){
+ const match=it.solution.match(/^Đáp án: ([^\n]*)\nLời giải: ([\s\S]*)$/);
+ assert(match,"missing solution "+it.item_id);
+ let raw=[it.stem,it.options?.join(" | ")||"",match[1],it.hint,match[2]].join("\u241f");
+ if(it.item_id==="THPT-G10-B07-P04"){
+  // Owner-approved DELTA_B_SOURCE_EQUIVALENT (#977-044): only three student
+  // wording substitutions. The independent whole-file SHA reverse-proof
+  // is run by test-thpt-shared-editorial-source-equivalent-20261121.cjs.
+  // Normalize ONLY these exact approved phrases to the immutable old
+  // academic fingerprint, without changing old expected hash b12dcf05.
+  assert.equal(match[1],"D","P04 answer changed");
+  assert(it.stem.includes("Theo quy ước đã học, phát biểu"));
+  assert(it.hint.endsWith("quy ước đã học."));
+  assert(match[2].includes("theo quy ước đã học, $"));
+  const stem=it.stem.replace("Theo quy ước đã học, phát biểu","Theo quy ước SGK/SBT KNTT, phát biểu");
+  const hint=it.hint.replace("quy ước đã học.","quy ước của SGK.");
+  const explanation=match[2].replace("theo quy ước đã học, $","SGK/SBT quy ước $");
+  raw=[stem,it.options?.join(" | ")||"",match[1],hint,explanation].join("\u241f");
+ }
+ assert.equal(fnv(raw),expected[it.item_id],"Academic source changed "+it.item_id);
+ assert.equal(it.exposure,"FORMATIVE_ONLY");
+}
 for(const n of [7,8]){assert.equal(bank.forLesson(n,"core").length,2);assert.equal(bank.forLesson(n,"practice").length,6);const p=fs.readFileSync("docs/thpt-preview/sgk/chuong-iv/bai-"+n+".md","utf8");assert.equal((p.match(/data-thpt-help-id=/g)||[]).length,2);assert.deepEqual([...p.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],"B"+n+": four owner-approved Model B tabs required");assert(!/NotebookLM|ACADEMIC_REVIEWED|PILOT_PARTIAL/i.test(p));}
 for(const [name,sha] of [["THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg","55ec9add04cb79da2cad7703b3897271e5b3436a"],["THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg","3d7550c8667ed8ea629563b8078ae3dfbc680135"]]){const bytes=fs.readFileSync("docs/assets/images/thpt/"+name);assert.equal(crypto.createHash("sha1").update(Buffer.concat([Buffer.from("blob "+bytes.length+"\0"),bytes])).digest("hex"),sha,"SVG source altered");}
 const written=fs.readFileSync("docs/thpt-preview/thu-vien/tu-luan-chuong-iv-b07-b08.md","utf8");for(const id of ["THPT-G10-CHIV-W07","THPT-G10-CHIV-W08-ANCHOR"])assert(written.includes('data-thpt-written-canonical="'+id+'"'));

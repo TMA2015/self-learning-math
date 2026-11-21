@@ -372,7 +372,20 @@ for(const [p,old]of [
  ["docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js","028fb4c053ed08863ca4ba3110d104b46708da0c"],
  ["docs/assets/javascripts/thpt-chiv-b09-b11-reviewed-formative-v1.js","713e6a97b95c2c807c8b76045b324bdddf1a6737"],
  ["docs/assets/data/thpt-g10-readiness/CHIV.json","55b2753c04cffff897947d7007bdc860bc19fcfb"]]){
- assert.equal(gitblob(p),old,"Historic formative and Q16 bank MUST remain immutable: "+p);
+ let checked=read(p);
+ if(p==="docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js"){
+  // Owner #977-044 equivalent wording only. Restore old phrases solely
+  // for historical whole-file SHA; all math, key D and Q16 remain locked.
+  for(const [current,historic] of [
+   ["Theo quy ước đã học, phát biểu nào đúng","Theo quy ước SGK/SBT KNTT, phát biểu nào đúng"],
+   ["theo quy ước đã học, $","SGK/SBT quy ước $"],
+   ["quy ước đã học.","quy ước của SGK."]
+  ]){
+   assert.equal(checked.split(current).length-1,1,"Missing unique owner-approved #044 Delta B phrase");
+   checked=checked.replace(current,historic);
+  }
+ }
+ assert.equal(sha(checked),old,"Historic formative and Q16 bank MUST remain immutable beyond exact approved #044: "+p);
 }
 const bank=JSON.parse(read("docs/assets/data/thpt-g10-readiness/CHIV.json"));
 assert.equal(bank.items.length,21);assert.equal(bank.mastery_credit,false);assert.equal(bank.persist_results,false);

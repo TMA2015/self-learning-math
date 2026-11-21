@@ -53,7 +53,7 @@
 <details><summary>Xem lời giải, hướng dẫn và rubric sau khi tự làm</summary>
 <p><span class="arithmatex">\(a=3,c=\sqrt5\)</span>, nên <span class="arithmatex">\(b^2=a^2-c^2=9-5=4\)</span>. Phương trình <span class="arithmatex">\(\frac{x^2}{9}+\frac{y^2}{4}=1\)</span>. Hai đỉnh trên trục nhỏ là <span class="arithmatex">\((0;2)\)</span>, <span class="arithmatex">\((0;-2)\)</span>. Đường thẳng <span class="arithmatex">\(y=2\)</span> chỉ gặp elip ở <span class="arithmatex">\((0;2)\)</span>, nên là tiếp tuyến ngang tại đỉnh trên.</p>
 <p><strong>Rubric /6:</strong> <span class="arithmatex">\(a,c,b\)</span> (2), phương trình (2), hai đỉnh (1), tiếp tuyến và lập luận (1).</p>
-<p><strong>Depth note:</strong> kết luận về tiếp tuyến dựa vào duy nhất một giao điểm thực, không yêu cầu phép tính giải tích ngoài SGK.</p></details>
+<p><strong>Lưu ý phương pháp:</strong> Kết luận về tiếp tuyến dựa vào duy nhất một giao điểm thực, không cần dùng phép tính giải tích.</p></details>
 </section>
 
 <!-- G10_CHVII_TRANSFER_WRITTEN_ALL_BEGIN -->

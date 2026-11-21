@@ -1,0 +1,38 @@
+name: THPT shared editorial source-equivalent QA (no deploy)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js'
+      - 'docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js'
+      - 'docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md'
+      - 'scripts/test-thpt-shared-editorial-source-equivalent-20261121.cjs'
+      - '.github/workflows/thpt-shared-editorial-source-equivalent-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-equivalence:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript syntax
+        run: |
+          node --check docs/assets/javascripts/thpt-chiv-b07-b08-reviewed-formative-v1.js
+          node --check docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js
+          node --check scripts/test-thpt-shared-editorial-source-equivalent-20261121.cjs
+      - name: Prove Git blob reverse-exact nonmathematical changes and source ID
+        run: node scripts/test-thpt-shared-editorial-source-equivalent-20261121.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build protected THPT HTML (no deployment)
+        run: |
+          python -m pip install --disable-pip-version-check 'mkdocs-material>=9,<10'
+          mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview --strict
+      - name: Verify compiled student HTML and JS projection
+        run: node scripts/test-thpt-shared-editorial-source-equivalent-20261121.cjs --built
