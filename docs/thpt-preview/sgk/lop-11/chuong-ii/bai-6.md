@@ -149,6 +149,8 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Dấu hiệu nhận biết:</strong> \(u_{n+1}-u_n=d\) không phụ thuộc vào \(n\). Nếu \(d>0\), cấp số cộng tăng; nếu \(d<0\), cấp số cộng giảm; nếu \(d=0\), cấp số cộng **không đổi**. Dãy \(u_n=n^2\) không phải cấp số cộng vì \(u_{n+1}-u_n=2n+1\) phụ thuộc \(n\).</div>
 
+    <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/FIG-G11-B06-01_R01.svg" loading="lazy" alt="Năm điểm rời rạc của cấp số cộng u_n bằng 3n, ở n từ một đến năm, lần lượt có giá trị 3, 6, 9, 12, 15"><figcaption>Đọc hình cấp số cộng: mỗi lần chỉ số \(n\) tăng \(1\), tung độ \(u_n\) tăng đúng \(3\). Các điểm không được nối thành đồ thị liên tục trên mọi số thực.</figcaption></figure>
+
     **Hệ quả ba số hạng:** Với ba số hạng liên tiếp \(u_{n-1},u_n,u_{n+1}\) (\(n\ge2\) và các số hạng đều có), ta có
     \[
       2u_n=u_{n-1}+u_{n+1}.
