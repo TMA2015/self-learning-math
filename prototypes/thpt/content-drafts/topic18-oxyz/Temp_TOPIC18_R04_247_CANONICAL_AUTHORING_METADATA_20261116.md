@@ -1,7 +1,10 @@
+<!-- OWNER_APPROVED_SHARED_G12_CHV_WRITTEN_24_STAFF_NOTE_REMOVAL_A1_20261121 -->
+**CURRENT EXACT SOURCE_EQUIVALENT AUTHORING:** Same one CĐ18 original R04 learner `d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960` and original G12 SGK ChV B14–B17 shared bank `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39` (matching source-owner #725 and CĐ18 branch hash). All **24** original `- **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery...` staff-only visible prose removed from original shared SGK canonical and exactly 24 Topic projected Written answers. In SGK canonical there is now ONE hidden `Q16_AUTHORING_ONLY` metadata comment retaining the existing no self-graded Mastery policy; Topic source keeps `NO_MASTERY` Q16 controls. Original **24/24 original Written rubric mathematical criteria/point weights and solutions byte-for-byte unchanged** once removing the one staff sentence; remaining 183 Practice question/answer bodies untouched, all 247 original canonical public IDs, 40 FirstTry, 12 public question-only selfcheck, 10 SVG and W07 anti-spoiler preserved. Historical G12 SBT B14 page25 source provenance remains P2 not claimed solved. Q18 `3a0cbbfb74252787f08c9504de9018c7e58bf8a1`, A1 `current`, V2 `current`; `DELTA_B_SOURCE_EQUIVALENT` (student-only editorial). No full independent NotebookLM Topic PASS or website release/merge/deploy.
+---
 <!-- TOP18_MASTER974_W07_TARGETED_Q18_A1_CORRECTION_20261121 -->
 ## CĐ18 current W07 answer-leak fix · signed A1 recheck 21/11/2026
 
-CURRENT_EFFECTIVE_LEARNER_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+CURRENT_EFFECTIVE_LEARNER_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
 PREVIOUS_AFFECTED_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
 SOURCE_COMMIT: aee8a33bcf44acb90268f96b297fa161a3861de3
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_TARGETED_W07_STANDALONE_GIVENS; DELTA_A_UI_SVG_MOVED_UNDER_VOLUNTARY_ANSWER
@@ -15,7 +18,7 @@ CURRENT_STANDARD_VERSION: 3.2.0; Q18_MODE: AUTHOR_SELF_VERIFIED; NO independent 
 <!-- TOP18_MASTER974_CURRENT_A1_A7_20261121 -->
 ## CĐ18 current AUTHORING A1–A7 source-snapshot 21/11/2026
 
-CURRENT_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+CURRENT_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
 CURRENT_SOURCE_COMMIT: aee8a33bcf44acb90268f96b297fa161a3861de3
 CURRENT_STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -47,7 +50,7 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+ACADEMIC_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
 ORIGINAL_S1_CROSSWALK_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_S1_40_OUTCOME_160_SGK_CANONICAL_CROSSWALK_20261114.md
 ORIGINAL_S1_CROSSWALK_BLOB: 7cba588cfe60d3675df99d8aa7e4b9275da9690e
 S1_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
