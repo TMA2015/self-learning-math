@@ -20,12 +20,12 @@
   2. `4.2. Bỏ qua điều kiện xác định và dấu lượng giác`.
 - Giữ **sáu** accordion `Kiểm lỗi` cạnh sáu Vận dụng/Đối chiếu ở tab Khám phá kiến thức.
 - Toàn bộ stem, answer, solution, toán/MathJax, HELP/TRY IDs, SVG, Core/Readiness/Final Submit/RD1, vị trí các tab và câu chữ ngoài hai nhãn giữ nguyên byte-for-byte.
-- Guard `scripts/test-thpt-scoped-deploy-proof.cjs` khóa đúng hai blob và hai thay đổi nhãn; từ chối sửa học thuật/đánh giá ngoài phạm vi này.
+- Giữ nguyên guard phát hành đã có `scripts/test-thpt-scoped-deploy-proof.cjs` (không thay runtime/test chung); receipt khóa old/new blob để QA nguồn hiện hữu đối chiếu Q15/Q16 và công thức.
 
 ## QA cần hoàn tất trước phát hành
 - G3 exact-final-HEAD relevant workflows; browser 390/820/1440px; mở/đóng hai accordion tab 4; xác nhận 6 Kiểm lỗi chỉ cạnh Vận dụng.
 - Sau owner cho phép merge/deploy, P1 so HTML `gh-pages` với source, owner P2 trên thiết bị thật.
-- Kết quả SOURCE_GUARD thiết kế ở mức chứng cứ mã; **không tuyên bố CI/browser/P1/P2 PASS trước khi chạy**.
+- Cần ghi kết quả exact-final-HEAD CI/browser/P1/P2 sau khi chạy, không mặc định PASS.
 
 ## Kiểm toán Toán 10 (ngoài phạm vi chỉnh sửa PR)
 - G10 B01–B06, B09 và B19–B27 có mục lỗi được đặt tên trong tab 4.
