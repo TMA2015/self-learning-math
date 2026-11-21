@@ -86,6 +86,49 @@ async function execute(){
        assert(await fig.evaluate(x=>x.naturalWidth>0),rel+" "+width+" broken educational image");
       }
      }
+     // OWNER B27 P2: the first published snapshot technically had one formal
+     // blue rule at the end, but no KEY_FORMULA in Knowledge §2.1 and no SVG
+     // in Knowledge §2.2. Test exact learner TAB, not just whole-page counts.
+     if(rel==="docs/thpt-preview/sgk/chuong-ix/bai-27.md"){
+      await tabs.locator(".tabbed-labels > label").nth(1).click();
+      const k=groups.nth(1),disc=groups.nth(0);
+      const key=k.locator('.thpt-g10-key-formula[data-b27-key-formula="combinations"]');
+      const fig=k.locator('figure[data-b27-knowledge-figure="reused-discovery-tree"] img');
+      const discFig=disc.locator('figure img[src*="THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"]');
+      const rule=k.locator(".thpt-r4-knowledge-conclusion.thpt-r4-rule-card");
+      assert.equal(await key.count(),1,rel+" "+width+" neutral formula must be in SGK Knowledge tab");
+      assert.equal(await fig.count(),1,rel+" "+width+" tree reused in SGK Knowledge tab");
+      assert.equal(await discFig.count(),1,rel+" "+width+" original tree must still exist in Discovery");
+      assert.equal(await fig.getAttribute("src"),await discFig.getAttribute("src"),
+       rel+" "+width+" both tabs must link the SAME SVG file");
+      assert.equal(await rule.count(),1,rel+" "+width+" exactly one formal SGK complement box");
+      assert.equal(await k.locator(".thpt-r4-knowledge-conclusion.thpt-r4-concept-card").count(),0,
+       rel+" "+width+" do not invent an SGK formal definition");
+      await page.waitForFunction(()=>
+       document.querySelectorAll('[data-b27-key-formula="combinations"] mjx-container').length>=3,
+       null,{timeout:30000});
+      const light=await key.evaluate(el=>{const x=getComputedStyle(el);return {
+       border:parseFloat(x.borderLeftWidth),background:x.backgroundColor,color:x.color,
+       math:el.querySelectorAll("mjx-container").length,
+       visible:!!el.getClientRects().length};});
+      assert(light.visible&&light.border>=3&&light.math>=3,
+       rel+" "+width+" formula absent/invisible/unstyled in light mode");
+      assert(["rgba(0, 0, 0, 0)","transparent"].includes(light.background),
+       rel+" "+width+" KEY_FORMULA must have neutral transparent background");
+      const official=await rule.evaluate(el=>{const x=getComputedStyle(el);return {
+       border:parseFloat(x.borderLeftWidth),background:x.backgroundColor};});
+      assert(official.border>=3&&official.background!=="rgba(0, 0, 0, 0)",
+       rel+" "+width+" SGK formal complement rule needs its distinct blue card");
+      await page.evaluate(()=>document.body.setAttribute("data-md-color-scheme","slate"));
+      const dark=await key.evaluate(el=>{const x=getComputedStyle(el);return {
+       border:parseFloat(x.borderLeftWidth),background:x.backgroundColor,color:x.color};});
+      assert(dark.border>=3&&dark.color!==light.color,
+       rel+" "+width+" KEY_FORMULA dark mode must retain contrast and border");
+      assert(await fig.evaluate(el=>el.complete&&el.naturalWidth>0),
+       rel+" "+width+" reused SGK tree should decode in real Chromium");
+      console.log("PASS B27 owner P2 SGK knowledge placements @"+width+
+       "px: neutral KEY_FORMULA, original SVG in two tabs, official rule, light/slate");
+     }
      }else{
       const article=page.locator("article.md-content__inner");
       await article.waitFor({state:"visible"});
