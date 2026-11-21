@@ -92,6 +92,23 @@ function classify(paths,{manual=false}={}){
    reason:"OWNER_B16_EXACT_FILES_AND_BYTE_VERIFIED_RUNTIME"};
  const lessons=files.filter(x=>CANONICAL_PAGE(x));
  const safeCompanions=x=>RECEIPT.test(x)||SOURCE_TEST.test(x);
+ // Owner-authorized B19–B26 editorial QA batch: exact eight canonical
+ // sources, ONE Q18 receipt and scoped proof. Any shared runtime/unknown path
+ // falls back to FULL, never a broad whitelist of multi-lesson changes.
+ const antiRepeatLessons=[19,20,21,22,23,24,25,26].map(n=>
+  "docs/thpt-preview/sgk/chuong-"+(n<=22?"vii":n<=25?"viii":"ix")+"/bai-"+n+".md");
+ const antiRepeatReceipt="prototypes/thpt/ux795/G10_B19_B26_ONE_SOURCE_AND_SEMANTIC_BOX_Q18_DELTA_20261121.md";
+ const antiRepeatProof="scripts/test-thpt-scoped-deploy-proof.cjs";
+ if(lessons.length===antiRepeatLessons.length&&
+    antiRepeatLessons.every(p=>lessons.includes(p))&&
+    files.includes(antiRepeatReceipt)&&files.includes(antiRepeatProof)&&
+    files.every(p=>antiRepeatLessons.includes(p)||p===antiRepeatReceipt||
+     p===antiRepeatProof||p==="scripts/test-thpt-release-impact.cjs"||
+     SOURCE_TEST.test(p))&&
+    fs.readFileSync(antiRepeatReceipt,"utf8").includes("G10-B19-B26-ONE-SOURCE-SEMANTIC-Q18-20261121"))
+  return {impact:"SCOPED_LESSON",full_suite:"false",
+   changed_lessons:antiRepeatLessons.join(","),
+   reason:"EXACT_G10_B19_B26_SIGNED_ANTI_REPEAT_Q18_AND_DEPLOY_PROOF"};
  // B09 DELTA_A: one learner page, the SAME one canonical manuscript and
  // its exact chained Q18 receipt. Unknown/shared files still require FULL.
  const b09="docs/thpt-preview/sgk/chuong-iv/bai-9.md";
