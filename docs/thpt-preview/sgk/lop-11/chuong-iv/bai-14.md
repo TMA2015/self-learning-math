@@ -1,60 +1,216 @@
 # Bài 14. Phép chiếu song song
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IV · SGK KNTT</p><p class="thpt-r4-lead">Vì sao cần học → kiến thức/điều kiện → ví dụ → Tự thử trước Core → hình đọc đúng → luyện tập và khắc phục. Tự kiểm tra tự đối chiếu không ghi Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../luyen-tap/">Core & Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IV</p>
+<p class="thpt-r4-lead">Từ bóng nắng và hình vẽ 3D đến phép chiếu cùng phương: xác định ảnh, đọc tính chất giữ thẳng hàng/tỉ số, và nhận ra hình suy biến.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-## Vì sao cần học?
+=== "Khám phá kiến thức"
 
-Hình vuông được vẽ lên giấy dưới dạng hình bình hành: hình biểu diễn không giữ góc dù vẫn giữ tính song song. Hãy chiếu mọi điểm theo **cùng một hướng** lên mặt đích. Khi hướng cắt mặt đích, mỗi điểm có một ảnh; một đường trùng hướng chiếu có thể co thành một điểm. Vì vậy phép chiếu giữ một số quan hệ thẳng hàng và tỉ số trong trường hợp không suy biến nhưng không giữ góc hoặc độ dài nói chung.
+    Khi ánh sáng Mặt Trời chiếu gần như **cùng một hướng**, bóng của nhiều điểm lên mặt đất được tạo bởi những đường **song song** đi qua từng điểm. Nhờ đó một hình không gian có thể được biểu diễn trên giấy. Nhưng hình vẽ có thể thay đổi **góc, độ dài**: một hình vuông nhìn xiên như hình bình hành. Bài này giải thích chính xác **điều gì được giữ và điều gì không được giữ**.
 
-## 1. Bản chất, điều kiện và kiến thức SGK
+    ### 1.1. Mỗi điểm có một ảnh khi phương chiếu cắt mặt chiếu
 
-<span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
+    Chọn một mặt phẳng \((P)\) và **phương chiếu** \(\Delta\) không song song \((P)\). Qua mỗi điểm M dựng đường thẳng theo phương \(\Delta\); đường ấy cắt P tại điểm duy nhất M', gọi là **hình chiếu song song** của M. Nếu M đã nằm trên P, ảnh của M chính là M. Không được chọn phương chiếu nằm song song với mặt: khi đó có những đường chiếu không gặp P.
 
-Cho mặt chiếu $(P)$ và một **phương** $\Delta$ không song song mặt chiếu (đường chỉ phương cắt $(P)$). Ảnh của $M$ là giao điểm duy nhất của $(P)$ với đường qua $M$ song song $\Delta$ (hoặc chính $\Delta$ khi $M$ nằm trên đường đó). Điểm nằm sẵn trên $(P)$ bất biến.
+    **Vận dụng.** Nếu điểm A đã thuộc mặt chiếu \((P)\), khi chiếu theo phương không song song P, ảnh A' có thể khác A không? Giải thích.
 
-**Tính chất trong trường hợp không suy biến.** Một đường thẳng không song song phương chiếu cho ảnh là đường thẳng; đường thẳng song song phương chiếu cho ảnh **là một điểm**, không phải đường. Ba điểm thẳng hàng cho ba ảnh thẳng hàng và giữ thứ tự khi ảnh đường không suy biến. Hai đường song song không theo phương chiếu có ảnh là hai đường song song **hoặc trùng nhau**; tỉ số hai đoạn thuộc cùng đường hoặc hai đường song song được giữ khi đoạn ảnh không co lại thành điểm. Từ đó trung điểm, trọng tâm tam giác, đường trung bình được bảo toàn khi hình tam giác không bị suy biến.
+    <span data-ped-first-try="1" data-outcome-id="G11-B14-PROJECTION_DEF" data-thpt-first-try-id="THPT-G11-B14-TRY01" hidden></span>
 
-**Không bảo toàn tổng quát:** số đo độ dài, góc, vuông góc, đường tròn thành đường tròn. Hình vuông có thể được biểu diễn bằng hình bình hành; đường tròn trong mặt phẳng xiên có thể biểu diễn thành elip. Khi vẽ hình chiếu song song cần phân biệt hình biểu diễn và hình thật, đánh dấu đúng đường khuất. Phép chiếu trong chùm tia hội tụ (phối cảnh) không phải phép chiếu song song.
+    ??? question "Đối chiếu"
 
-## 2. Ví dụ có giải thích
+        **Lời giải:** **Không.** Đường qua A theo phương chiếu cắt P ngay tại A; vì phương chiếu không song song P, giao điểm là duy nhất. Do đó **A'=A**: các điểm có sẵn trên mặt chiếu đều bất biến.
 
-**EX-G11-B14-EX01: Chiếu hình lăng trụ.** Trong lăng trụ tam giác ABC.A′B′C′, chiếu song song lên (ABC) theo phương AA′. Khi đó A′,B′,C′ lần lượt có ảnh A,B,C vì AA′∥BB′∥CC′, còn các điểm A,B,C của mặt đáy bất biến.
+    <span data-thpt-help-id="HELP-G11-B14-TRY01" hidden></span>
 
-**EX-G11-B14-EX02: Ảnh trung điểm.** Lấy M′ trung điểm A′B′ ở mặt trên lăng trụ. Hình chiếu theo phương AA′ lên (ABC) là M trung điểm AB. Lí do: ảnh A′B′ là AB không suy biến và bảo toàn tỉ số A′M′/M′B′=1.
+    ??? tip "Kiểm lỗi"
 
-**EX-G11-B14-EX03: Ảnh suy biến một mặt.** Chiếu hình lăng trụ lên (ABC) theo phương AA′. Cạnh AA′ có ảnh là duy nhất A; toàn bộ mặt bên (ABB′A′) có ảnh là đoạn AB chứ không phải một mặt hai chiều.
+        **Dấu hiệu:** Em chuyển cả những điểm đã nằm trên P theo một khoảng tùy ý.
 
-**EX-G11-B14-EX04: Giới hạn của hình biểu diễn.** Hình vuông trong không gian có thể được biểu diễn thành hình bình hành có góc không vuông. Phép chiếu song song bảo toàn các cặp cạnh song song khi không suy biến nhưng nói chung không bảo toàn góc hoặc độ dài.
+        **Tự sửa:** Hãy dựng **đường chiếu qua chính điểm ấy** rồi lấy giao với mặt đích. Ôn mục 2.1 và luyện Core B14-C01 trong [Bài 14 – Luyện tập](../luyen-tap/).
 
-### Lý do chọn phương pháp và giới hạn
+    ### 1.2. Cả một đoạn có thể co lại thành một điểm
 
-- `EX-G11-B14-EX01`: Theo dõi ảnh các cặp đỉnh theo phương chung; kiểm rõ điều kiện áp dụng trước kết luận.
-- `EX-G11-B14-EX02`: Tỉ số trung điểm chỉ bảo toàn khi ảnh đoạn không suy biến; kiểm rõ điều kiện áp dụng trước kết luận.
-- `EX-G11-B14-EX03`: Đường theo phương chiếu co lại thành điểm, mặt có thể co thành đoạn; kiểm rõ điều kiện áp dụng trước kết luận.
-- `EX-G11-B14-EX04`: Không coi số đo góc/độ dài trên hình biểu diễn là thật; kiểm rõ điều kiện áp dụng trước kết luận.
+    Trong lăng trụ tam giác \(ABC.A'B'C'\), chiếu lên đáy \((ABC)\) theo phương cạnh bên \(AA'\). Vì \(AA',BB',CC'\) song song, A' được chiếu về A, B' về B, C' về C. Riêng cả đoạn **AA'** nằm trên một đường song song phương chiếu nên **mọi điểm** trên nó cùng có ảnh A. Đó là trường hợp suy biến; không thể đòi ảnh mọi đoạn đều là đoạn dài dương.
 
-## 3. Tự thử trước Core (không chấm điểm)
+    **Vận dụng.** Khi chiếu lăng trụ \(ABC.A'B'C'\) về \((ABC)\) theo phương \(AA'\), ảnh của cả đoạn \(CC'\) là đoạn nào?
 
-Chiếu cạnh AA' của lăng trụ lên mặt đáy (ABC) theo phương AA': ảnh là đoạn hay điểm?
+    <span data-ped-first-try="2" data-outcome-id="G11-B14-DEGENERACY" data-thpt-first-try-id="THPT-G11-B14-TRY02" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở đối chiếu</summary>
+    ??? question "Đối chiếu"
 
-Chỉ là điểm A. Trở về D1 B14 và THPT-G11-CHIV-B14-C01.
+        **Lời giải:** Vì \(CC'\parallel AA'\) nên mọi điểm của CC' nằm trên cùng một đường chiếu qua C. Giao của đường ấy với mặt \((ABC)\) là C. Do đó **ảnh đoạn \(CC'\) là một điểm C**, không phải một đoạn có chiều dài nào khác.
 
-</details>
+    <span data-thpt-help-id="HELP-G11-B14-TRY02" hidden></span>
 
-## 4. Hình minh họa và cách đọc
+    ??? tip "Kiểm lỗi"
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/FIG-G11-B14-01_R01.svg" loading="lazy" alt="Hai hình bình hành ABCD và A phẩy B phẩy C phẩy D phẩy ở hai mặt phẳng, các đường chiếu AA phẩy BB phẩy CC phẩy DD phẩy có cùng phương xiên; hình chiếu giữ song song, không nhất thiết giữ góc và độ dài."/><figcaption>Hai hình bình hành ABCD và A phẩy B phẩy C phẩy D phẩy ở hai mặt phẳng, các đường chiếu AA phẩy BB phẩy CC phẩy DD phẩy có cùng phương xiên; hình chiếu giữ song song, không nhất thiết giữ góc và độ dài.</figcaption></figure>
+        **Dấu hiệu:** Em coi ảnh CC' vẫn là một đoạn vì “ảnh đường thẳng là đường thẳng”.
 
-phân biệt hình thật và hình biểu diễn; những đoạn theo hướng chiếu có thể suy biến, không mặc nhiên giữ độ dài/góc.
+        **Tự sửa:** Kiểm trước đường gốc có **song song phương chiếu** không. Ôn mục 2.2, làm Practice B14-P03 tại [Core và Luyện tập](../luyen-tap/).
 
-## 5. Tự khắc phục lỗi thường gặp
+    ### 1.3. Trung điểm được giữ nếu ảnh đoạn không suy biến
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B14-01"><summary>Quên đường theo hướng chiếu có ảnh một điểm.</summary><ol><li><strong>Nhận diện:</strong> Quên đường theo hướng chiếu có ảnh một điểm.</li><li><strong>Nhắc đúng điều kiện:</strong> kiểm tra giả thiết về quan hệ đường–mặt và điểm đang xét.</li><li><strong>Sửa sai:</strong> Tách trường hợp suy biến trước khi dùng định lý ảnh đường.</li><li><strong>Tự thử:</strong> Chiếu lăng trụ theo AA′ lên đáy: ảnh của đoạn AA′ là gì? <strong>Tự đối chiếu:</strong> Một điểm A, vì AA′ theo phương chiếu.</li><li><strong>Quay lại câu gốc:</strong> giải lại <code>THPT-G11-CHIV-B14-P03</code> và tự nêu lí do mỗi giả thiết cần thiết.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIV-B14-P03">Quay lại THPT-G11-CHIV-B14-P03 để tự làm</a></p></details>
+    Với A,M,B thẳng hàng, M là trung điểm AB, phép chiếu song song giữ **tỉ số trên cùng một đường** nếu ảnh AB không co lại thành một điểm. Vì \(AM/MB=1\), ảnh M' chia A'B' theo tỉ số 1, nên M' là **trung điểm** của A'B'. Không thể dùng “độ dài tuyệt đối giữ nguyên”: hai độ dài có thể cùng thay đổi, chỉ **tỉ số** được giữ.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B14-02"><summary>Cho rằng phép chiếu giữ độ dài và góc.</summary><ol><li><strong>Nhận diện:</strong> Cho rằng phép chiếu giữ độ dài và góc.</li><li><strong>Nhắc đúng điều kiện:</strong> kiểm tra giả thiết về quan hệ đường–mặt và điểm đang xét.</li><li><strong>Sửa sai:</strong> Chỉ kết luận các bất biến affine đủ điều kiện.</li><li><strong>Tự thử:</strong> Ảnh một đoạn có độ dài 2 cm; có suy ra đoạn gốc cũng 2 cm không? <strong>Tự đối chiếu:</strong> Không; phép chiếu song song không bảo toàn độ dài tổng quát.</li><li><strong>Quay lại câu gốc:</strong> giải lại <code>THPT-G11-CHIV-B14-P02</code> và tự nêu lí do mỗi giả thiết cần thiết.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIV-B14-P02">Quay lại THPT-G11-CHIV-B14-P02 để tự làm</a></p></details>
+    **Vận dụng.** Trong lăng trụ, P' là trung điểm \(B'C'\). Chiếu xuống \((ABC)\) theo phương \(AA'\). Ảnh của P' là điểm nào trên BC, và vì sao?
 
-## 6. Tiếp tục
+    <span data-ped-first-try="3" data-outcome-id="G11-B14-AFFINE_INVARIANTS" data-thpt-first-try-id="THPT-G11-B14-TRY03" hidden></span>
 
-[Core và Luyện tập Bài 14](luyen-tap.md) · [Tự luận Chương IV](../../../thu-vien/tu-luan-g11-chuong-iv.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    ??? question "Đối chiếu"
+
+        **Lời giải:** B' có ảnh B, C' có ảnh C. Ảnh của đoạn \(B'C'\) là BC **không suy biến**; phép chiếu giữ tỉ số \(B'P'/P'C'=1\). Vì thế ảnh P của P' thỏa \(BP/PC=1\), tức **P là trung điểm BC**.
+
+    <span data-thpt-help-id="HELP-G11-B14-TRY03" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Em nói ảnh P' phải chia BC thành hai đoạn bằng đúng chiều dài của B'P' và P'C'.
+
+        **Tự sửa:** Dùng **tỉ số 1:1**, không dùng độ dài tuyệt đối; ôn mục 2.2 và luyện Core B14-C02, Practice B14-P02 ở [Luyện tập Bài 14](../luyen-tap/).
+
+    ### 1.4. Hai đường song song có thể cho hai ảnh song song hoặc trùng
+
+    Khi chiếu hai đường phân biệt cùng phương nhưng **không song song phương chiếu**, ảnh thường là hai đường cùng phương trên mặt đích. Tuy vậy chúng có thể **trùng nhau** nếu cả hai đường gốc nằm trên cùng một mặt phẳng chứa phương chiếu. Muốn gọi hai ảnh song song theo nghĩa phân biệt, phải kiểm **không trùng**.
+
+    **Vận dụng.** Hai đường \(a,b\) phân biệt song song, không cùng phương chiếu. Có chắc ảnh \(a',b'\) là hai đường **phân biệt** song song không? Nêu các khả năng.
+
+    <span data-ped-first-try="4" data-outcome-id="G11-B14-PARALLEL_AND_SHAPES" data-thpt-first-try-id="THPT-G11-B14-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Không chắc **phân biệt**. Vì a,b cùng phương không trùng phương chiếu, ảnh là hai đường có cùng phương, nên chúng có thể **song song nếu phân biệt** hoặc **trùng nhau**. Không thể khẳng định hai đường cắt nhau tại một điểm riêng lẻ.
+
+    <span data-thpt-help-id="HELP-G11-B14-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Em viết “hai ảnh luôn song song phân biệt” dù hình có thể chồng hai đường lên cùng nét.
+
+        **Tự sửa:** Kiểm ảnh đường có **suy biến** không và có **trùng nhau** không trước khi nêu song song. Ôn mục 2.2, luyện Practice B14-P04 trong [Core và Luyện tập](../luyen-tap/).
+
+    ### 1.5. Hình biểu diễn không bảo toàn góc hoặc độ dài
+
+    Một hình vuông có hai cặp cạnh đối song song. Qua phép chiếu không suy biến, ta có thể thu được một **hình bình hành**, giữ quan hệ song song nhưng các góc không còn nhất thiết là \(90^\circ\). Không được suy ra độ dài cạnh, diện tích hay góc vuông của hình gốc bằng cách đặt thước đo lên hình phối cảnh.
+
+    **Vận dụng.** Khi thấy hình biểu diễn của một mặt vuông là hình bình hành có một góc \(60^\circ\), có thể kết luận góc thật của mặt vuông đó bằng \(60^\circ\) không? Vì sao?
+
+    <span data-ped-first-try="5" data-outcome-id="G11-B14-PARALLEL_AND_SHAPES" data-thpt-first-try-id="THPT-G11-B14-TRY05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** **Không.** Phép chiếu song song nhìn chung **không bảo toàn góc**; hình vuông có góc thật \(90^\circ\) có thể được biểu diễn thành hình bình hành có góc \(60^\circ\). Các cặp cạnh đối song song là quan hệ có thể giữ khi không suy biến; số đo góc trên giấy không quyết định số đo góc trong không gian.
+
+    <span data-thpt-help-id="HELP-G11-B14-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Em lấy thước đo góc của hình vẽ rồi coi là góc thật.
+
+        **Tự sửa:** Tách **hình gốc** và **hình biểu diễn**, nêu các bất biến đúng điều kiện. Ôn mục 2.3 và Ví dụ 3.5; luyện Practice B14-P04 trong [Luyện tập Bài 14](../luyen-tap/).
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Khái niệm phép chiếu song song
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa:</strong> Cho mặt chiếu \((P)\) và phương chiếu \(\Delta\) **không song song \((P)\)**. Ảnh M' của M là giao điểm duy nhất của \((P)\) và đường thẳng đi qua M song song với phương \(\Delta\). Tập hợp các ảnh của các điểm một hình là hình chiếu song song của hình đó.</div>
+
+    **Điểm bất biến:** Nếu M đã thuộc P, M'=M. Các đường chiếu **cùng phương** nhưng không nhất thiết vuông góc mặt đích; vì vậy phép chiếu song song không đồng nghĩa phép chiếu vuông góc.
+
+    ### 2.2. Các tính chất của phép chiếu song song
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất (trong trường hợp ảnh không suy biến):</strong> Phép chiếu giữ quan hệ thẳng hàng và thứ tự các điểm thẳng hàng, giữ **tỉ số hai đoạn trên cùng một đường thẳng hoặc hai đường thẳng song song** khi ảnh các đoạn không co thành điểm, và giữ các đường cùng phương thành những ảnh song song **hoặc trùng nhau** nếu các đường không theo phương chiếu.</div>
+
+    **Giới hạn bắt buộc:** Đường thẳng **song song phương chiếu** có ảnh một điểm, không phải đường. Trong trường hợp khác, ảnh đường là đường; trung điểm chia đoạn tỉ số 1:1 nên được bảo toàn khi đoạn ảnh không suy biến. Phép chiếu không bảo toàn tổng quát **góc, vuông góc, độ dài, diện tích**, hoặc hình tròn thành hình tròn.
+
+    ### 2.3. Hình biểu diễn của hình không gian
+
+    Hình biểu diễn thường là hình chiếu song song của một hình, hoặc hình đồng dạng với hình chiếu đó. Để vẽ: (1) chọn mặt biểu diễn và phương chiếu; (2) xác định ảnh các đỉnh; (3) nối các ảnh của cạnh theo **quan hệ liên thuộc**; (4) đánh dấu cạnh thấy và cạnh khuất; (5) chỉ suy những quan hệ mà phép chiếu bảo toàn.
+
+    <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/FIG-G11-B14-01_R01.svg" loading="lazy" alt="Hai hình bình hành trên các mặt khác nhau với những đường chiếu song song nối cặp điểm tương ứng"><figcaption>Đọc hình: các đường nối đỉnh tương ứng có chung phương chiếu; các cặp cạnh song song có thể có ảnh song song. Vẽ hình xiên không bảo đảm góc hoặc độ dài giữ nguyên; cần kiểm trường hợp suy biến.</figcaption></figure>
+
+    **Ứng dụng thực tiễn:** Bóng nắng khi các tia sáng gần như song song, hình biểu diễn vật thể trên bản vẽ kỹ thuật, các cạnh tương ứng của mô hình lăng trụ. Cần phân biệt mô hình lý tưởng với bóng thực có thể bị biến dạng do nguồn sáng phân kỳ.
+
+=== "Ví dụ"
+
+    ### 3.1. Hình chiếu các đỉnh của lăng trụ lên mặt đáy
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Lăng trụ tam giác \(ABC.A'B'C'\), chiếu lên \((ABC)\) theo phương \(AA'\). Tìm ảnh A',B',C'.</p>
+    <p><strong>Phân tích:</strong> Các cạnh bên AA',BB',CC' cùng phương; đường chiếu qua mỗi đỉnh trên đỉnh chạm đúng chân đáy tương ứng.</p>
+    <p><strong>Lời giải:</strong> A'→A, B'→B, C'→C; vì các đường AA',BB',CC' đều song song phương chiếu và A,B,C thuộc mặt đáy.</p>
+    <p><strong>Kiểm lại:</strong> A,B,C đã nằm trên mặt chiếu nên ảnh của chúng không đổi.</p></div>
+
+    ### 3.2. Một đường theo phương chiếu suy biến thành điểm
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Với cùng lăng trụ, hình chiếu của đoạn \(BB'\) và mặt \(ABB'A'\) là gì?</p>
+    <p><strong>Phân tích:</strong> BB' theo đúng hướng chiếu, mọi điểm trên nó cùng một đường chiếu. Trong mặt ABB'A', mọi đường qua A,B theo hướng chiếu được đưa về đáy.</p>
+    <p><strong>Lời giải:</strong> Đoạn BB' có ảnh duy nhất điểm B. Toàn bộ hình bình hành ABB'A' có ảnh là **đoạn AB** (không phải một hình bình hành có diện tích dương).</p>
+    <p><strong>Kiểm lại:</strong> A,A' đều cho ảnh A; B,B' đều cho ảnh B; các điểm ở giữa cho điểm trên AB.</p></div>
+
+    ### 3.3. Ảnh trung điểm qua phép chiếu không suy biến
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Trong lăng trụ, M' là trung điểm \(A'C'\). Tìm ảnh của M' trên đáy theo phương \(AA'\).</p>
+    <p><strong>Phân tích:</strong> A'→A, C'→C; đoạn A'C' không theo hướng chiếu nên ảnh là AC không suy biến.</p>
+    <p><strong>Lời giải:</strong> Tỉ số A'M'/M'C'=1 được bảo toàn thành AM/MC=1. Vậy M, ảnh của M', là **trung điểm AC**.</p>
+    <p><strong>Kiểm lại:</strong> M nằm trên AC và chia AC thành hai phần bằng nhau; không giả định hai độ dài AM và A'M' bằng nhau.</p></div>
+
+    ### 3.4. Hai đường song song có ảnh trùng nhau
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Chiếu lăng trụ \(ABC.A'B'C'\) xuống đáy theo phương cạnh bên. Ảnh của hai đường \(AB,A'B'\) có phải hai đường **phân biệt** không?</p>
+    <p><strong>Phân tích:</strong> A'→A và B'→B, còn A,B bất biến, nên hai ảnh đều đi qua A,B.</p>
+    <p><strong>Lời giải:</strong> Ảnh của cả AB và A'B' là **cùng đường AB**; chúng trùng nhau, không phải hai đường phân biệt song song. Đây là một khả năng của tính chất ảnh các đường cùng phương.</p>
+    <p><strong>Kiểm lại:</strong> Kiểm từng cặp đầu mút, không chỉ suy hai ảnh “song song” theo khẩu hiệu.</p></div>
+
+    ### 3.5. Hình vuông thành hình bình hành
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Một hình vuông trong không gian được biểu diễn thành hình bình hành trên giấy. Từ hình ấy có thể khẳng định hai đường chéo hình gốc vuông góc do góc đo trên giấy không?</p>
+    <p><strong>Phân tích:</strong> Hình gốc là hình vuông nên hai đường chéo vuông góc theo tính chất hình vuông đã học, **không phải vì** đo hình chiếu.</p>
+    <p><strong>Lời giải:</strong> Ta biết hai đường chéo gốc vuông góc **do định nghĩa/tính chất hình vuông**. Nếu chỉ biết ảnh là một hình bình hành mà không có giả thiết gốc vuông, thì **không thể** suy góc thật từ phép đo trên giấy. Phép chiếu song song không bảo toàn tổng quát góc.</p>
+    <p><strong>Kiểm lại:</strong> Phân biệt rõ kết luận suy ra từ **giả thiết hình gốc** và kết luận suy ra từ **hình biểu diễn**.</p></div>
+
+=== "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G11-B14-01" hidden></span>
+
+    ??? tip "4.1. Tưởng đường theo phương chiếu vẫn có ảnh đường"
+
+        **Dấu hiệu:** Em nói đoạn AA' trong lăng trụ có ảnh là một đoạn dương.
+
+        **Vì sao sai:** Mọi điểm trên đường theo phương chiếu cùng rơi vào một điểm của mặt đích.
+
+        **Tự sửa:** Ôn mục 2.2 và Ví dụ 3.2; luyện Practice B14-P03 ở [Bài 14 – Luyện tập](../luyen-tap/).
+
+    <span data-thpt-help-id="HELP-G11-B14-02" hidden></span>
+
+    ??? tip "4.2. Suy ảnh song song luôn là hai đường phân biệt"
+
+        **Dấu hiệu:** Em nói ảnh AB và A'B' là hai đường song song dù cả hai cùng ảnh AB.
+
+        **Vì sao sai:** Hai ảnh có thể trùng; chỉ khi phân biệt mới gọi song song.
+
+        **Tự sửa:** Ôn mục 2.2, Ví dụ 3.4; luyện Practice B14-P04 ở [Luyện tập Bài 14](../luyen-tap/).
+
+    <span data-thpt-help-id="HELP-G11-B14-03" hidden></span>
+
+    ??? tip "4.3. Cho rằng độ dài/góc không đổi"
+
+        **Dấu hiệu:** Em đo góc hình chiếu rồi lấy làm góc thật.
+
+        **Vì sao sai:** Phép chiếu song song giữ cấu trúc affine có điều kiện nhưng không bảo toàn tổng quát góc hay độ dài.
+
+        **Tự sửa:** Ôn mục 2.2–2.3 và Ví dụ 3.5; làm Practice B14-P02 tại [Core và Luyện tập](../luyen-tap/).
+
+    <span data-thpt-help-id="HELP-G11-B14-04" hidden></span>
+
+    ??? tip "4.4. Dùng tính chất tỉ số khi đoạn ảnh suy biến"
+
+        **Dấu hiệu:** Em gọi ảnh trung điểm đoạn AA' là trung điểm một đoạn ảnh khác 0.
+
+        **Vì sao sai:** Ảnh đoạn AA' chỉ là điểm A; không có tỉ số hai độ dài dương trong ảnh để áp dụng.
+
+        **Tự sửa:** Kiểm ảnh đoạn **không co** trước; ôn mục 2.2 và Ví dụ 3.3, luyện Core B14-C02.
+
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương IV](../../../../thu-vien/tu-luan-g11-chuong-iv/).
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 14 (trang in 95–101).</p>
