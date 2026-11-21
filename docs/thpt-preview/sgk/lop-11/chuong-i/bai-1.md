@@ -1,7 +1,7 @@
 # Bài 1. Giá trị lượng giác của góc lượng giác
 
 <style>
-/* Scoped to B27 by its canonical First Try marker; no shared UI changes. */
+/* Scoped to the G11 B01 canonical first-try marker; shared CSS untouched. */
 .md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
 .md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
 [data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
@@ -13,7 +13,7 @@
 </style>
 
 <script>
-/* B27 source-scoped Golden bridge: reuse the approved B22 presentation CSS,
+/* G11 B01 source-scoped Golden bridge: reuse the approved Golden presentation CSS,
    without altering the shared SGK route/assessment runtime or cloning a theme.
    Only classes and section-heading DOM are attached to this one lesson. */
 (() => {
@@ -240,7 +240,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Giá trị lượng giác trên đường tròn đơn vị</strong> Nếu \(M=(x;y)\) biểu diễn góc \(\alpha\) thì \(\cos\alpha=x\), \(\sin\alpha=y\). Khi \(\cos\alpha\ne0\): \(\tan\alpha=\dfrac{\sin\alpha}{\cos\alpha}\). Khi \(\sin\alpha\ne0\): \(\cot\alpha=\dfrac{\cos\alpha}{\sin\alpha}\).</div>
 
-    **Miền xác định và dấu.** Sin/cos có nghĩa với mọi \(\alpha\), và \(-1\le\sin\alpha,\cos\alpha\le1\). Tang không xác định khi \(\alpha=\pi/2+k\pi\); côtang không xác định khi \(\alpha=k\pi\), \(k\in\mathbb Z\). Dấu theo vị trí điểm cuối:
+    **Miền xác định và dấu.** Sin/cos có nghĩa với mọi \(\alpha\), với \(-1\le\sin\alpha\le1\) và \(-1\le\cos\alpha\le1\). Tang không xác định khi \(\alpha=\pi/2+k\pi\); côtang không xác định khi \(\alpha=k\pi\), \(k\in\mathbb Z\). Dấu theo vị trí điểm cuối:
 
     | Giá trị | I | II | III | IV |
     | :--- | :---: | :---: | :---: | :---: |
