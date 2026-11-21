@@ -1,3 +1,23 @@
+<!-- TOP21_MASTER974_CURRENT_HANDOFF_20261121 -->
+## CĐ21 one effective R06 V2 — source/QA/Q15/Q18/A1 chain for AUTHORING handoff
+
+CURRENT_SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
+CURRENT_SOURCE_COMMIT: 17d155a9bb939e221dbd6c6dad7dc8594f77bcbe
+CURRENT_Q15_MATRIX_BLOB: 188fe6c44f55b081be9b28f25e905de483129189
+CURRENT_Q18_AUTHOR_SIGNED_BLOB: b0ba354f6edd5c2477aa121457570119928ccef1
+CURRENT_A1_A7_BLOB: 93d9d9edbfd7743f1a78af5496b1e2eea4f313b1
+CURRENT_ROUTE_TREE_SVG_BLOB: daeff4448dd64f89feef080039c73c9f437d016f
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+DELTA_CLASS: DELTA_A_UI
+RELEASE_AUTHORIZATION: NO
+
+**One canonical learner:** same original active `prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md` Git blob `e526468f2452221e08070fc96e3a64d42ad5c8f9`, historical prior `ab886f53b9bee89f71a852febb7f2d9ccfff2373` immutable. Same existing R06 `PACKET_ID`, no R07 duplicate. 8 actual SGK Toán 12 KNTT Tập Hai ChVI B18–B19 Knowledge outcomes, each complete concept-first explanation, reasoned worked example, voluntary independent FirstTry and math-specific opt-in D6; 8 real Topic Practice+3 original Written /4 all full original mathematical stems/answers/solutions/rubrics **byte-exact unchanged**, now consecutively student titled `Bài luyện 1–11`; original 8 answers inside `Đối chiếu` retain full mathematical text and remediation words with only student role label `Kiểm lỗi` standardized. Original 8 public question-only SelfChecks reuse same original P01–P08 item IDs and preserve original complete question text; one optional `Đối chiếu` after ALL questions directs Bài luyện1–8, never duplicates key/rubric. 19 distinct canonical public IDs, 27 placements including 8 public replay, all current exact Q15 role/outcome/line and **unchanged item content versions**, no separate Topic Core. Existing original route-tree diagram caption falsely said `Kiến thức 7`; single literal visible text change now directs actual `Kiến thức 3.1`, Git blob `daeff4448dd64f89feef080039c73c9f437d016f`. All other SVG mathematical nodes, alt/description/links and second total-probability diagram preserved; optional probability model untouched. 20 voluntary disclosure opens/closes balanced.
+
+**Evidence/source limits:** prior independently reported 8/8 D6-only Academic/PED PASS `06157b8c7e5873611b463f991620c466b72e2741` and 20/11 author math scoped 19/19 `bc3fadfc3e547be929fed30ad222e5403911b4cf` are original SHA-bounded evidence with exact same mathematical content; **not** new full independent NotebookLM Topic Academic/PED PASS or current-SHA external review. Original S1 verified G12 KNTT source is inherited scoped, no new PDF visual reading. Signed latest targeted author Q18 `b0ba354f6edd5c2477aa121457570119928ccef1`, one A1/A7 `93d9d9edbfd7743f1a78af5496b1e2eea4f313b1`, original private RD1 count+SHA preserved not disclosed question/key/rubric. Client selfcheck is `CLIENT_SELF_CHECK_NO_MASTERY`, no official held-out Readiness/Final Submit/Mastery. AUTHORING-only source content ready, not RELEASE QA/website/AP1–AP5/R1–R5/device/owner permission, no merge/deploy/Firebase/student changes.
+---
+
 # CĐ21 · Single effective R06 in-place learner HANDOFF V2 · updated 18/11/2026
 
 PACKET_ID: TOP21-CONDITIONAL-BAYES-R06-20261118
@@ -7,9 +27,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: ab886f53b9bee89f71a852febb7f2d9ccfff2373
+ACADEMIC_SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_CURRENT_SOURCE_Q18_AUTHOR_SELF_QA_RECEIPT_20261118.md
-REVIEW_RECEIPT_BLOB: d7625fbe3b7f02a99485687ed49f499decf3b913
+REVIEW_RECEIPT_BLOB: b0ba354f6edd5c2477aa121457570119928ccef1
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 BLOCKERS: NONE
@@ -20,13 +40,13 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 8
 PRIVATE_RD1_SHA256: c4242630d329f794e570cc406939fd85d5f65302b8b286ddcd2c74e8220a2e3b
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 5988aa2ba3995466598d2a153e8c2c92c223ba17
+AUTHOR_A1_A7_BLOB: 93d9d9edbfd7743f1a78af5496b1e2eea4f313b1
 
-CONTENT_REVISION: R06_FULL_S1_KNOWLEDGE_20261120
+CONTENT_REVISION: R06_MASTER974_EDITORIAL_8_D6_11_PRACTICE_8_SELF_CHECK_20261121
 ORIGINAL_IMMUTABLE_R04_SOURCE_BLOB: 2fa6557286aba05dd0eea972d4c4ac68371842d7
 ORIGINAL_IMMUTABLE_R04_RECEIPT_BLOB: 3dec04e92a96d24b4b77ebda144bc1ca80b8f1f8
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_METADATA_BLOB: 5988aa2ba3995466598d2a153e8c2c92c223ba17
+AUTHOR_METADATA_BLOB: 93d9d9edbfd7743f1a78af5496b1e2eea4f313b1
 
 ## R05_CURRENT_SOURCE_AND_EQUIVALENT_DELTA
 
@@ -173,7 +193,7 @@ AUTHORING verifies R05 source-equiv student headings + eight actual public selfc
 CURRENT_LEARNER_SOURCE_BLOB: 60b62c112ce6df70849379b9e0aba828031d00ac
 CURRENT_Q18_AUTHOR_RECEIPT_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
 CURRENT_A1_A7_BLOB: 84e79e01031b5ab3be5e9efa8afd64dda5fd5934
-CURRENT_Q15_MATRIX_BLOB: d8ec7c462fa229508b0129b64cca90d68fb339ff
+CURRENT_Q15_MATRIX_BLOB: 188fe6c44f55b081be9b28f25e905de483129189
 TARGETED_INDEPENDENT_REVIEW_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md
 TARGETED_INDEPENDENT_REVIEW_BLOB: 06157b8c7e5873611b463f991620c466b72e2741
 TARGETED_REVIEW_SCOPE: TOP21-O01_TO_O08_D6_ONLY
