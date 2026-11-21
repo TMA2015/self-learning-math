@@ -1,6 +1,24 @@
+<!-- TOP11_MASTER974_CURRENT_R06_PED6_Q18_20261121 -->
+## CĐ11 · CURRENT AUTHORING Q18 SELF_VERIFIED v3.2.0 — 22 outcome / 116 canonical
+
+**One current learner source only:** `prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md`, current Git blob **`9c27c384af7fad186047aed555ef1a9877c6a30a`**, old signed immutable learner `c46d07f8f7d260a71e84bf8c44677da895cb66cc`. Effective sole standard `SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18`, owner #864, MASTER #974. Top two hidden student source metadata lines now explicitly `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW` and correctly refer to R06/v3.2 instead of historic R05/v3.1.
+
+**Current actual student deficits verified on source and now corrected in sole #977:**
+- **TOP22-20261121-036 P1 Q08/Q14/PED6 FIXED_VERIFIED**: old 22 immediate Knowledge `Vận dụng→Đối chiếu` disclosures had real solutions and hints but 0 actual numbered Practice Bài retries. Added **22 different `Kiểm lỗi`** inside existing 22 voluntary reveals with misconception→correct Knowledge subsection (1.1–4.3)→actual Practice Bài, checked original prompts for all targets. Includes family-specific mistakes in +C/initial value, negative domain ln|x|, integration bounds/sign, signed change vs geometric area, curve crossing subdivision, square vs circular cross section, washer vs disk; does not turn these into generic audit labels.
+- **TOP22-20261121-037 P2 Q16/Q17/PED6 FIXED_VERIFIED**: old 22 public replay questions had no lookup to existing source answer in 116 tasks. Added **ONE after-all-22-questions optional `Đối chiếu`** mapping exact `PUBLIC_REPLAY_ONLY item_id` Câu1–22 to actual `DISPLAY_ONLY_CANONICAL` Practice Bài `5,10,16,21,27,32,37,42,47,52,57,62,68,73,78,83,88,93,99,104,110,115`. **22/22 exact item IDs verified**. No copied answer/key/rubric, no private RD1, official Readiness/Final Submit/Mastery; `CLIENT_SELF_CHECK_NO_MASTERY`. The student sees practical after-attempt direction to identify first wrong step and retry, not management jargon.
+- **TOP22-20261121-038 P2 owner #864 Q09/Q17 FIXED_VERIFIED**: removed THREE unnecessary SGK attributions inside live mathematics lessons (O01 endpoint derivative for antiderivative on K, O20 continuous sectional area, O22 disk vs washer conditions) **without changing any assumptions, formulas or examples**; kept exactly **one** final source attribution `Nguồn: SGK Toán 12, Tập Hai, Chương IV, bộ Kết nối tri thức với cuộc sống.`. Removed internal Core-management aside from source footer.
+
+**Direct affected-source proof (Q03/Q04/Q07/Q08/Q14/Q15/Q16):** original source can be reconstructed **byte-for-byte** by reversing 22 opt-in Kiểm lỗi blocks + one after-selfcheck voluntary lookup (including learner-only retry sentence) + three editorial attribution phrases + one footer line + two hidden header comments. Therefore all **116 original Practice unique canonical IDs, mathematical stems, correct answers, solutions and 28 Written rubrics**, original 22 public question-only Selfchecks, 4 referenced original SVG remain byte-identical. 22 Knowledge outcomes and examples untouched mathematically; 22/22 actual D6 return paths, 22/22 shared-ID Selfcheck maps, **139/139 voluntary disclosures balanced** (22 Knowledge +116 Practice +1 public map). Did not create Topic Core, hidden bank, renderer feature, new second Rxx source or competing Q18 file.
+
+**Mathematical author spot retests on current source** for relevant learner transfer: O08 \(\int_1^3 4x\,dx=16\); O12 signed integral \(\int_0^4(x-1)=4\) but area5; O14 \(\int_0^2(5-2t)dt=6\,m\); O16 \(\int_{-2}^2(x^2-1)dx=4/3\) but geometric area4; O18 split area y=3x vs y=x² on [0,4] yields19/3, different firsttry y=2x vs x² [0,3] yields8/3; O19 two-curve area9/2; O20 square cross-sectional volume13/3 cm³; O21 circular section15π/2 cm³; O22 washer volume6π. Underlying conceptual/conditions learned from original source and signed prior R06 math receipt maintained **only on unchanged maths**. Inherited S1 original Toán12 KNTT Tập Hai ChIV B11 in4–11/B12 12–18/B13 19–26 and end27–28, corresponding owner-scanned SBT historic print/PDF ranges in author metadata. Original **SGK-only** independent reviewer receipt `feabeeeef262e7f6b28c898cdf77e6aa4194da24` does **not** certify current Topic. This round does **not** re-read full SGK/SBT PDFs, claim full independent NotebookLM or browser/RELEASE PASS.
+
+**Changed-scope classification:** `DELTA_C_PED_TARGETED` for 22 actual remediation paths (source math/existing keys unchanged), `DELTA_A_EDITORIAL` for three SGK phrases/footer and two hidden metadata comments. `AUTHOR_SELF_VERIFIED` current affected source; observed P0/P1 among 3 corrected defects=0, no false external reviewer verdict. After relocking same metadata→V2→ready→REGISTER, author intake ready; not official TOPIC_READINESS/RD1, browser Golden UI AP/R, Firebase or deploy.
+
+---
+
 # CĐ11 — Q18 trên nguồn hiệu lực · AUTHOR_SELF_QA, DELTA_C scoped HOLD · 18/11/2026
 
-**AUTHORING ONLY.** AUTHOR_SELF_QA_RECEIPT: TOP11_R06_SOURCE_LOCKED_20261118. Q01–Q18 thuộc chuẩn duy nhất `SLM-THPT-QUALITY-ONE v3.1.0`. Không tự cấp kết quả NotebookLM independent Academic/PED, không coi source CI/HTML là website RELEASE, không ghi Mastery/official TOPIC_READINESS, không merge/deploy.
+**AUTHORING ONLY.** AUTHOR_SELF_QA_RECEIPT: TOP11_R06_SOURCE_LOCKED_20261118. Q01–Q18 thuộc chuẩn duy nhất `SLM-THPT-QUALITY-ONE v3.2.0`. Không tự cấp kết quả NotebookLM independent Academic/PED, không coi source CI/HTML là website RELEASE, không ghi Mastery/official TOPIC_READINESS, không merge/deploy.
 
 PACKET_ID: THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -9,8 +27,8 @@ LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CURRENT_STATUS: AUTHOR_SELF_VERIFIED_FULL_S1_KNOWLEDGE_B11_B13
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: c46d07f8f7d260a71e84bf8c44677da895cb66cc
-ACADEMIC_SOURCE_BLOB: c46d07f8f7d260a71e84bf8c44677da895cb66cc
+SOURCE_BLOB: 9c27c384af7fad186047aed555ef1a9877c6a30a
+ACADEMIC_SOURCE_BLOB: 9c27c384af7fad186047aed555ef1a9877c6a30a
 SIGNED_R06_PREVIOUS_SOURCE_BLOB: 58b16f7c442d560f3950aafdbaf1f686e1e337e4
 SIGNED_R06_PREVIOUS_Q18_BLOB: ee42fcc98ccc51fef08a7eabdbf99032b0110c27
 ORIGINAL_R05_STUDENT_BLOB: 7d8eac917be4f7688a8a718e54cce4a84bc055ef
@@ -26,7 +44,7 @@ P0: 0
 P1: 0
 P2: 0
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON — owner-effective Q18 v3.1.0 author self verification; O08/O14 exact math and PED conditions directly checked
-AUTHOR_SIGNOFF: TOP11_S1_G12_T2_B11_B13_FULL_KNOWLEDGE_c46d07f8f7d260a71e84bf8c44677da895cb66cc
+AUTHOR_SIGNOFF: TOP11_MASTER974_CURRENT_R06_22_PED6_ONE_SGK_9c27c384af7fad186047aed555ef1a9877c6a30a
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
 PRIVATE_RD1_IMPORTED: 0
