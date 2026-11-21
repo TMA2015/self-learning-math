@@ -187,6 +187,21 @@ e0) trước khi dùng quy tắc. Ôn mục 2.3, luyện Practice B17-P01/P04.
 
     <div class="thpt-g10-example-solution"><p>**Đề:** Xét \(p(x)=x(x-1)(x+1)\) trên \([-2,2]\). Hai đầu có trái dấu không, và p có bao nhiêu nghiệm phân biệt? **Chọn phương pháp:** Tính hai đầu và phân tích nhân tử, không suy duy nhất từ đổi dấu. **Giải:** \(p(-2)=(-2)(-3)(-1)=-6<0\), \(p(2)=2\cdot1\cdot3=6>0\). Nhưng p có **ba nghiệm** \(-1,0,1\) nằm trong đoạn. **Kiểm:** Ví dụ bác bỏ kết luận “trái dấu ⇒ đúng một nghiệm”.</p></div>
 
+    ### 3.7. Ứng dụng: kiểm tính liên tục của bảng cước taxi theo quãng đường
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề:</strong> Trong một **mô hình giả định tính cước liên tục theo kilômét**, khách trả 10.000 đồng cho \(0<x\le0{,}5\) km; phần quãng đường vượt \(0{,}5\) đến \(30\) km tính 13.500 đồng/km; phần **vượt 30** km tính 11.000 đồng/km. Viết hàm cước \(C(x)\) và kiểm tính liên tục tại \(x=0{,}5\) và \(x=30\).</p>
+    <p><strong>Chọn phương pháp:</strong> Mỗi mức giá theo kilomet chỉ áp cho **phần vượt ngưỡng**, nên sau ngưỡng phải cộng số tiền tích lũy ở ngưỡng trước. Sau đó so giới hạn trái/phải với giá tại ngưỡng, không lấy giá 13.500 làm toàn bộ cước của km sau.</p>
+    <p><strong>Lời giải:</strong> Với \(x>0\), đơn vị đồng:
+    \[
+    C(x)=\begin{cases}
+    10000,&0<x\le0{,}5,\\
+    10000+13500(x-0{,}5),&0{,}5<x\le30,\\
+    10000+13500(30-0{,}5)+11000(x-30),&x>30.
+    \end{cases}
+    \]
+    Khi \(x\to0{,}5^-\) và \(x\to0{,}5^+\), hai phía đều tiến tới 10.000 đồng, đúng \(C(0{,}5)\). Tại \(x=30\), hai phía đều tiến tới \(10000+13500\cdot29{,}5=408250\) đồng, đúng \(C(30)\). Vì vậy mô hình liên tục ở **hai điểm ghép**.</p>
+    <p><strong>Kiểm lại:</strong> Mỗi nhánh là hàm liên tục trên khoảng của nó. Đây là **mô hình cước lũy tiến giả định** giúp học điều kiện liên tục, không khẳng định biểu phí thực tế hay cơ chế làm tròn từng km của hãng taxi.</p></div>
+
 === "Lỗi thường gặp"
 
     Nếu sai Vận dụng, hãy mở Kiểm lỗi tương ứng và giải lại Core/Practice khác số liệu.
