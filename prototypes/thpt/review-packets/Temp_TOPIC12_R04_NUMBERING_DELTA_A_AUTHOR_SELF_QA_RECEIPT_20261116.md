@@ -1,3 +1,19 @@
+<!-- TOP12_MASTER974_CURRENT_R04_AUTHOR_Q18_20261121 -->
+## CURRENT AUTHORING Q18 v3.2.0 · CĐ12 / 12 outcome · 34 nguyên bản canonical
+
+**ONE current source:** `prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob **`f773f2622c88bd3e3a1e0137613846a83b3e6629`**. Previous immutable R04 source `56a2b7a0bab2d210beed28a0a4663c9aa6001b3e`, prior R03 receipt and SGK original academic-source proof remain historic in Git; this updated existing Q18 is **AUTHOR_SELF_VERIFIED** for actual changed learner areas, NOT NotebookLM independent new Topic PASS. Effective one standard `SLM-THPT-QUALITY-ONE v3.2.0`; #864 label and one-source rule.
+
+**Three actual student defects #977-039/040/041 verified then fixed, all evidence from learner view:**
+- `#039 P1 Q08/Q14/PED6`: 12 original firsttry Knowledge voluntary answers had no actual numbered return target. Added **12 tailored `Kiểm lỗi`** after original opt-in Đối chiếu answer, each reflecting real misconception→exact Knowledge subsection 1.1–3.4→two actual numbered **Bài luyện 1–34**; verified target IDs and real card maths. Covers unit semicircle cos120, supplementary sin/cos, tan/cot domain, trig sign, cosine/sine law, SSS/SAS, SSA 0/1/2 including arcsin DEG and A+B<180, area sin, Heron radii, measurement and impossible triangle cases.
+- `#040 P2 Q16/PED6`: 12 original PUBLIC_REPLAY_ONLY question stems had no answer navigation; now **one voluntary `Đối chiếu` after all 12** directs to original same-canonical-ID Practice Bài `1,4,7,19,10,14,24,25,15,28,32,33`. Checked **12/12 exact unique item_id pairings** in real learner source, no answer duplication/new item/rubric, no RD1/official Topic Readiness/Final Submit/Mastery.
+- `#041 P2 #864/Q03/Q09/Q15/Q17`: three groups had duplicate display numbering 1–18/1–12/1–4 and 18 “Bài SGK...” repetitive provenance labels; made **34 unique sequential `Bài luyện 1–34`** while preserving all original canonical IDs, separate maths tasks and their familiar group titles. 28 original non-Written Practice `Đối chiếu` reveal titles corrected to **Lời giải**; four original new Written titles and two existing SGK Written = six **Lời giải và rubric**. Removed source-bank/website-assessment administrative text from Practice/Selfcheck intros; source SGK KNTT Toán10 Tập Một ChIII B05–B06 appears **exactly once** in final whole-Topic footer. Historical R02/R03 comments flagged `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW`.
+
+**Mathematics/canonical protection proof:** **34/34** current Practice cards' complete `Đề`/choices, key, mathematical `Lời giải` body, *all six Written 7-point rubric scoring bodies* and item ID equal **byte-for-byte** to previous signed R04 source after standardizing reveal titles for comparison. Only outside-card prose, visible display headings and reveal title text changed; **12/12 Selfcheck original stems/options byte-exact**. **12/12** student recovery routes point to at least two real Practice numbers; all 12 public selfcheck exact-ID lookups; **47/47** balanced `<details>` disclosures (12 knowledge+34 practice+1 optional lookup), **2 original SVG references unchanged**, 3 Topic main sections only; one source footer. Previous R03 original bank math/30/30 tests, original Toán10 KNTT Tập Một B05 printed33–37 and B06 printed38–43/SGK-only reviewer receipt inherited **only on math & bank unchanged at source SHA**. Current author independently rechecks SSA: A30,a8,b6 one triangle; A30,a6,b10 two valid angle branches; A30,a3,b7 impossible sinB>1; A30,a8,b10 two triangles; sin/cos signs and law of cosines plus Heron remain valid. No newly found P0 in checked actual arithmetic; not an independent reviewer claim.
+
+**DELTA:** `DELTA_C_PED_TARGETED` for 12 new targeted D6 learner guidance; `DELTA_A_EDITORIAL` for one SGK footer, 34 display labels, solution label consistency and removal of administrative text. Prior historic author R03 academic Delta C remains immutable source-scoped in old receipt. This current Q18 scoped student improvement not site UI AP/R test, no official student assessment or website and no new R05 learner. Retain owner authorization boundary: PR Draft, no merge/deploy or protected data.
+
+---
+
 # CĐ12 R04 — Q18 AUTHOR_SELF_VERIFIED · DELTA_A_UI numbering only · 16/11/2026
 
 **Phạm vi AUTHORING:** kiểm soát đánh số các cấp đầu mục và biểu thị bài luyện theo yêu cầu Owner 16/11/2026. Đây là **DELTA_A_UI** theo nguồn học thuật `e74f32b1092d571af0091174a55104e7d3bec5b5` bất biến, không sửa câu hỏi, công thức, điều kiện, đáp án, lời giải, rubric, canonical IDs hay RD1. Không gọi là NotebookLM independent review hoặc RELEASE browser QA.
@@ -9,8 +25,8 @@ STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
-ACADEMIC_SOURCE_BLOB: 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
+SOURCE_BLOB: f773f2622c88bd3e3a1e0137613846a83b3e6629
+ACADEMIC_SOURCE_BLOB: f773f2622c88bd3e3a1e0137613846a83b3e6629
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R03_LEARNER_FIRST_34_CANONICAL_VISIBLE_20261116.md
@@ -19,19 +35,19 @@ PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R03_AUTHO
 PREVIOUS_Q18_RECEIPT_BLOB: d8ad3986da4776260c950cca337e0407da015252
 SVG1_BLOB: 6fd343ea37fdd1f737a17da245c18b7b82b3bc4d
 SVG2_BLOB: 0dd2f62277ae264fb4f6d6c99699d5a984a0b562
-DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O02_O03_O08 + DELTA_A_UI_HEADING
+DELTA_CLASS: DELTA_C_PED_TARGETED_12_D6 + DELTA_A_EDITORIAL_34_LABELS_ONE_SOURCE
 AUTHOR_QA_NUMBERING: PASS
 AUTHOR_QA_NUMBERING_H2_H3: NO_GAPS_NO_MIXED_SIBLINGS
 AUTHOR_QA_CANONICAL_PARITY: 34/34 UNCHANGED
 AUTHOR_QA_LESSON_HIERARCHY: 12/12 PASS
 AUTHOR_QA_PUBLIC_SELFCHECK: 12/12 UNCHANGED
-AUTHOR_QA_ANSWER_SOLUTION_RUBRIC_D6: EXACT_LINE_AND_ORDER_PARITY
+AUTHOR_QA_ANSWER_SOLUTION_RUBRIC_D6: ORIGINAL_34_CARD_MATH_KEY_SOLUTION_6_RUBRICS_BYTE_EXACT; 12_OUTCOME_D6_ROUTING_ADDED
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOPIC12_FULL_S1_B05_B06_56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
+AUTHOR_SIGNOFF: TOP12_MASTER974_R04_12_PED6_UNIQUE34_20261121_f773f2622c88bd3e3a1e0137613846a83b3e6629
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
