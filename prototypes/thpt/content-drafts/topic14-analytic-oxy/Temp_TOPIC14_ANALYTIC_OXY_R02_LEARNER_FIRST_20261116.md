@@ -38,6 +38,11 @@ Có thể chọn (−2,3), vì (3,2)·(−2,3)=0.
 
 **Nếu làm sai:** Nếu lấy (3,2) làm chỉ phương, bạn đã nhầm với pháp tuyến; kiểm tích vô hướng.
 
+
+**Kiểm lỗi**
+
+Nếu em lấy (3,2) làm chỉ phương cho đường 3x+2y−1=0, đọc **Kiến thức 1.1** để tách vai trò pháp tuyến/chỉ phương. Làm **Bài luyện 1** và **Bài luyện 17**, kiểm tích vô hướng bằng 0.
+
 </details>
 
 ### 1.2. Lập phương trình tổng quát từ điểm và pháp tuyến
@@ -66,6 +71,11 @@ Qua P(2,3), có pháp tuyến n=(1,−2). Viết phương trình đường thẳ
 
 **Nếu làm sai:** Nếu phương trình không đi qua P, thay tọa độ P để tìm sai dấu trước.
 
+
+**Kiểm lỗi**
+
+Nếu phương trình không qua P(2,3), đọc **Kiến thức 1.2** về n·PM=0. Làm **Bài luyện 2** rồi **Bài luyện 18**, thay tọa độ điểm vào phương trình để phát hiện sai dấu.
+
 </details>
 
 ### 1.3. Lập phương trình tham số
@@ -93,6 +103,11 @@ Qua A(1,−1), u=(2,3), tìm tọa độ điểm ứng với t=2.
 M=(5,5). Dùng cùng t=2 ở cả hai tọa độ.
 
 **Nếu làm sai:** Nếu thay t khác nhau cho x và y, bạn đã bỏ mất điều kiện một tham số chung.
+
+
+**Kiểm lỗi**
+
+Nếu dùng hai giá trị t khác nhau cho x,y, đọc **Kiến thức 1.3**: một điểm trên đường tương ứng một tham số chung. Làm **Bài luyện 3** và **Bài luyện 19**, thế t vào cả hai tọa độ.
 
 </details>
 
@@ -130,6 +145,11 @@ Qua A(0,2), B(2,0), viết phương trình đường.
 
 **Nếu làm sai:** Nếu ra x−y−2=0, bạn chưa kiểm cả hai điểm thuộc đường.
 
+
+**Kiểm lỗi**
+
+Nếu đường vừa lập không chứa cả hai điểm, đọc **Kiến thức 1.4** để dùng vectơ AB làm chỉ phương. Làm **Bài luyện 4** và **Bài luyện 20**, kiểm trực tiếp hai điểm.
+
 </details>
 
 ### 1.5. Kiểm tra điểm thuộc đường thẳng
@@ -158,6 +178,11 @@ Có, vì −1+6−5=0.
 
 **Nếu làm sai:** Nếu chỉ nhìn hình hoặc kiểm một tọa độ, hãy viết đầy đủ biểu thức bên trái.
 
+
+**Kiểm lỗi**
+
+Nếu chỉ so một tọa độ hoặc nhìn hình để xác định điểm thuộc đường, đọc **Kiến thức 1.5**. Làm **Bài luyện 5** và **Bài luyện 21**, thay đầy đủ x,y vào vế trái.
+
 </details>
 
 ### 1.6. Dựng đường thẳng thỏa nhiều điều kiện
@@ -185,6 +210,11 @@ Qua giao của x+y=6 và x−y=2, song song \(3x+y-1=0\). Tìm phương trình.
 Giao là (4,2). Đường có 3x+y+c=0, nên c=−14, thu được \(3x+y-14=0\).
 
 **Nếu làm sai:** Nếu thế điểm giao không thỏa, quay lại giải hệ trước khi đặt hằng số.
+
+
+**Kiểm lỗi**
+
+Nếu đặt đường qua giao điểm mà không giải hệ trước, đọc **Kiến thức 1.6**. Làm **Bài luyện 8** và **Bài luyện 22**, kiểm nghiệm giao thuộc cả hai đường rồi thế vào đường cần tìm.
 
 </details>
 
@@ -226,6 +256,11 @@ Mức tăng 2 lít/phút, V(t)=2t+5 nên V(4)=13 lít, nếu chưa tràn bể.
 
 **Nếu làm sai:** Nếu chỉ lấy 11/3, bạn đã nhầm lượng tổng với lượng **tăng thêm**.
 
+
+**Kiểm lỗi**
+
+Nếu lấy 11/3 làm lượng tăng mỗi phút, đọc **Kiến thức 1.7**: hệ số góc là hiệu lượng chia hiệu thời gian, có giá trị ban đầu. Làm **Bài luyện 6** và **Bài luyện 23**, chú ý miền thời gian mô hình có ý nghĩa.
+
 </details>
 
 ## 2. Vị trí, góc và khoảng cách giữa các đường thẳng
@@ -258,6 +293,11 @@ Trùng nhau: toàn bộ phương trình thứ hai bằng 2 lần thứ nhất.
 
 **Nếu làm sai:** Nếu chỉ xét tỉ số a/b mà bỏ c, bạn sẽ nhầm trùng và song song.
 
+
+**Kiểm lỗi**
+
+Nếu chỉ thấy pháp tuyến tỉ lệ mà kết luận hai đường trùng, đọc **Kiến thức 2.1**. Làm **Bài luyện 25** và **Bài luyện 39**: kiểm cả hệ số tự do để phân biệt trùng với song song phân biệt.
+
 </details>
 
 ### 2.2. Dựng đường vuông góc qua một điểm
@@ -285,6 +325,11 @@ Qua P(1,2), vuông góc \(x-3y+1=0\). Viết đường thẳng.
 Phương trình \(3x+y-5=0\), vì có pháp tuyến (3,1) vuông góc với (1,−3) của d.
 
 **Nếu làm sai:** Nếu chỉ sao chép a,b của đường cũ, bạn đang dựng đường song song chứ không phải vuông góc.
+
+
+**Kiểm lỗi**
+
+Nếu dùng lại pháp tuyến của đường cũ khi dựng đường vuông góc, đọc **Kiến thức 2.2**. Làm **Bài luyện 30** và **Bài luyện 40**, kiểm tích vô hướng hai hướng và điểm đã cho.
 
 </details>
 
@@ -317,6 +362,11 @@ Tìm giao của x+2y=7 và x−y=1.
 Từ x=y+1, thế được 3y=6, y=2,x=3. Giao (3,2).
 
 **Nếu làm sai:** Nếu chỉ thế được một đường, hãy kiểm điều kiện thứ hai.
+
+
+**Kiểm lỗi**
+
+Nếu nghiệm chỉ thỏa một đường, đọc **Kiến thức 2.3** rồi làm **Bài luyện 27** và **Bài luyện 41**. Giải cùng một hệ và thay nghiệm vào cả hai phương trình.
 
 </details>
 
@@ -354,6 +404,11 @@ P(2,1), d:3x+4y−20=0. Tính khoảng cách.
 
 **Nếu làm sai:** Nếu ra −2, bạn quên trị tuyệt đối; nếu ra 10, bạn quên chia độ dài pháp tuyến.
 
+
+**Kiểm lỗi**
+
+Nếu khoảng cách có dấu âm hay quên chia độ dài pháp tuyến, đọc **Kiến thức 2.4**. Làm **Bài luyện 28** và **Bài luyện 42**, kiểm trị tuyệt đối và mẫu √(a²+b²).
+
 </details>
 
 ### 2.5. Góc nhỏ giữa hai đường thẳng
@@ -381,6 +436,11 @@ Góc nhỏ giữa trục Oy (x=0) và đường y=x là bao nhiêu?
 45°, vì pháp tuyến (1,0) và (1,−1) có cos góc nhỏ 1/√2.
 
 **Nếu làm sai:** Nếu dùng góc 135° do đổi chiều vectơ, hãy nhớ đường thẳng không có chiều cố định.
+
+
+**Kiểm lỗi**
+
+Nếu góc nhọn ra 135° vì chọn hướng pháp tuyến khác, đọc **Kiến thức 2.5**. Làm **Bài luyện 29** và **Bài luyện 43**, dùng trị tuyệt đối trong công thức cos góc nhỏ giữa hai đường.
 
 </details>
 
@@ -414,6 +474,11 @@ Viết đường tròn tâm (−1,3), bán kính 2.
 
 **Nếu làm sai:** Nếu dấu trước hoành độ tâm nhầm, thay trực tiếp điểm cách tâm đúng R vào phương trình.
 
+
+**Kiểm lỗi**
+
+Nếu khai triển sai dấu của tâm I(−1,3), đọc **Kiến thức 3.1**. Làm **Bài luyện 45** và **Bài luyện 59**, thế điểm cách tâm đúng R để kiểm.
+
 </details>
 
 ### 3.2. Nhận dạng đường tròn từ phương trình tổng quát
@@ -441,6 +506,11 @@ x²+y²+2x−4y+1=0 là đường tròn tâm nào, bán kính bao nhiêu?
 (x+1)²+(y−2)²=4, tâm (−1,2), R=2.
 
 **Nếu làm sai:** Nếu đọc R=4, bạn đã nhầm bán kính với **bình phương** bán kính.
+
+
+**Kiểm lỗi**
+
+Nếu đọc R=4 khi hoàn thành bình phương cho R²=4, đọc **Kiến thức 3.2**. Làm **Bài luyện 46** và **Bài luyện 60**, kiểm R>0 và tâm đúng dấu.
 
 </details>
 
@@ -474,6 +544,11 @@ Tại tiếp điểm, bán kính vuông góc tiếp tuyến. Nhưng phải xác 
 
 **Nếu làm sai:** Nếu dùng vectơ tiếp tuyến làm pháp tuyến, hãy vẽ IP vuông góc với tiếp tuyến rồi kiểm P thực sự thuộc đường tròn.
 
+
+**Kiểm lỗi**
+
+Nếu chọn vectơ tiếp tuyến làm pháp tuyến hoặc chưa kiểm P nằm trên đường tròn, đọc **Kiến thức 3.3**. Làm **Bài luyện 48** và **Bài luyện 61**, dùng bán kính IP vuông góc tiếp tuyến.
+
 </details>
 
 ### 3.4. Đường tròn đi qua ba điểm
@@ -502,6 +577,11 @@ Tâm trung điểm cạnh huyền BC=(3,4), R=5.
 
 **Nếu làm sai:** Nếu một điểm không cách tâm đúng R, kiểm lại dấu ở tọa độ trung điểm.
 
+
+**Kiểm lỗi**
+
+Nếu tâm tìm được không cách đều A,B,C, đọc **Kiến thức 3.4**. Làm **Bài luyện 50** và **Bài luyện 62**, kiểm ba bán kính bằng nhau; ba điểm không thẳng hàng.
+
 </details>
 
 ### 3.5. Đường thẳng và đường tròn: số giao điểm
@@ -529,6 +609,11 @@ Khoảng cách từ tâm đến đường cho biết nó ở ngoài, tiếp xúc
 δ=5=R, tiếp xúc tại (5,0).
 
 **Nếu làm sai:** Nếu đếm hai nghiệm bằng nhau là hai tiếp điểm, nhớ nghiệm bội chỉ cho **một** điểm.
+
+
+**Kiểm lỗi**
+
+Nếu tính hai giao điểm khi đường chỉ tiếp xúc, đọc **Kiến thức 3.5**. Làm **Bài luyện 49** và **Bài luyện 63**, so d(I,đường) với R; tiếp xúc chỉ có một điểm.
 
 </details>
 
@@ -570,6 +655,11 @@ c²=25−16=9⇒c=3, F₁(−3,0),F₂(3,0).
 
 **Nếu làm sai:** Nếu lấy c²=a²+b², bạn đang dùng công thức của **hypebol** chứ không phải elip.
 
+
+**Kiểm lỗi**
+
+Nếu dùng c²=a²+b² cho elip, đọc **Kiến thức 4.1**. Làm **Bài luyện 65** và **Bài luyện 80**: trên elip chính tắc a²>b²>0, c²=a²−b².
+
 </details>
 
 ### 4.2. Hypebol và hai nhánh
@@ -604,6 +694,11 @@ c²=16+9=25, c=5, tiêu điểm (−5,0),(5,0).
 
 **Nếu làm sai:** Nếu tính c=√7, bạn đã dùng nhầm phép trừ của elip.
 
+
+**Kiểm lỗi**
+
+Nếu lấy c²=a²−b² cho hypebol, đọc **Kiến thức 4.2**. Làm **Bài luyện 66** và **Bài luyện 81**, kiểm dấu trừ trong phương trình và c²=a²+b².
+
 </details>
 
 ### 4.3. Hai tiệm cận của hypebol
@@ -631,6 +726,11 @@ Với x²/25−y²/9=1, viết phương trình hai tiệm cận.
 \(y=\pm\frac35 x\).
 
 **Nếu làm sai:** Nếu ra x=±5, bạn đã nhầm tọa độ đỉnh với tiệm cận.
+
+
+**Kiểm lỗi**
+
+Nếu nhầm tọa độ đỉnh (±a,0) với hai tiệm cận, đọc **Kiến thức 4.3**. Làm **Bài luyện 75** và **Bài luyện 82**; đường tiệm cận qua tâm có hệ số góc ±b/a.
 
 </details>
 
@@ -674,6 +774,11 @@ p=3, F(3/2,0), đường chuẩn x=−3/2.
 
 **Nếu làm sai:** Nếu lấy F(3,0), bạn đã nhầm p với p/2.
 
+
+**Kiểm lỗi**
+
+Nếu đồng nhất p với hoành độ tiêu điểm, đọc **Kiến thức 4.4**. Làm **Bài luyện 69** và **Bài luyện 83**, xác định F(p/2,0), đường chuẩn x=−p/2 trong y²=2px.
+
 </details>
 
 ### 4.5. Giao điểm của đường thẳng với conic
@@ -701,6 +806,11 @@ Parabol y²=4x và đường x=1 có bao nhiêu giao điểm?
 Có hai giao (1,2),(1,−2).
 
 **Nếu làm sai:** Nếu chỉ lấy \(y=2\), em đã bỏ nghiệm âm khi giải \(y^2=4\). Thay \(x=1\) vào parabol \(y^2=4x\), ta được \(y=\pm2\); cả \((1,2)\) và \((1,-2)\) đều thuộc parabol và đối xứng qua trục \(Ox\).
+
+
+**Kiểm lỗi**
+
+Nếu chỉ giữ nghiệm y dương khi giao parabol với đường thẳng hoặc nhầm parabol và elip, đọc **Kiến thức 4.5**. Làm **Bài luyện 84** (cắt elip) và **Bài luyện 87** (cắt parabol), thế nghiệm trở lại cả hai phương trình.
 
 </details>
 
@@ -735,6 +845,11 @@ Nguồn thu ở tiêu điểm cách đỉnh 3 cm; với trục Ox và đơn vị
 f=3 ⇒ y²=4fx=12x (cùng đơn vị cm); đường chuẩn x=−3 cm.
 
 **Nếu làm sai:** Nếu viết y²=6x, bạn đã quên rằng f=p/2.
+
+
+**Kiểm lỗi**
+
+Nếu viết y²=2fx thay cho y²=4fx khi f là khoảng cách từ đỉnh đến tiêu điểm, đọc **Kiến thức 4.6**. Làm **Bài luyện 78** và **Bài luyện 85**; độ rộng mặt cắt bằng hai lần |y| tại cùng x.
 
 </details>
 
