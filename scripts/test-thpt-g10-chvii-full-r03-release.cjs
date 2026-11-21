@@ -245,8 +245,8 @@ for(const tag of ["ELLIPSE","HYPERBOLA"]){
      assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),
        expectedG10KnowledgeBlob(22,original[22]),
        "B22 transfer headings require the complete signed Q18 successor chain");
-     const learnerTitle=tag==="ELLIPSE"?"#### Minh họa — Kiểm tra độ hở của mái nửa elip":
-       "#### Minh họa — Hai trạm phát tín hiệu";
+     const learnerTitle=tag==="ELLIPSE"?"#### 1.2.7. Chuyển giao: mái nửa elip và độ hở":
+       "#### 1.2.8. Chuyển giao: hai trạm tín hiệu và nhánh hypebol";
      assert(b22.includes(learnerTitle),"Transfer D2 learner-facing reasoning still required "+tag);
      assert(!b22.includes("#### Ví dụ giải có hướng dẫn — "+ex),
        "B22 reviewed internal EX identifier must not leak in learner interface");
