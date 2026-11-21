@@ -42,6 +42,10 @@ Các cặp \((1,3),(2,3),(3,5)\) có thể là dữ liệu của một hàm số
 
 Có. Ba đầu vào 1, 2, 3 khác nhau và mỗi đầu vào chỉ có một đầu ra. Việc hai đầu vào cùng cho giá trị 3 không vi phạm định nghĩa. Nếu em nhầm với yêu cầu “mỗi y chỉ đến từ một x”, hãy nhớ đó là tính một-một, không phải điều kiện cơ bản của hàm số.
 
+**Kiểm lỗi**
+
+Nếu em nhầm “nhiều đầu vào có cùng một đầu ra” với “một đầu vào có nhiều đầu ra”, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** và **Bài 2** trong Luyện tập. Ở Bài 1, cặp (1,4) lặp lại nhưng vẫn là hàm; ở Bài 2, một đầu vào 0 cho hai giá trị 1 và 3 nên không là hàm.
+
 </details>
 
 <!-- LESSON_ID: TOP05-M02; OUTCOME_ID: TOP05-O02; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
@@ -1180,5 +1184,20 @@ Hãy làm đủ 17 câu trước khi mở lại phần Luyện tập để tự 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP05-P33; ORIGINAL_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39; OUTCOME: TOP05-O17; NO_MASTERY; NOT_RD1 -->
 
 **Câu 17.** Lợi nhuận giả định R(q)=−(q−5)²+25 (triệu đồng), q∈{0,1,...,8} là số sản phẩm. Tìm giá trị lớn nhất hợp lệ và q tương ứng.
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi tự làm hết 17 câu, em mở **Lời giải** của đúng bài trong phần **Luyện tập** theo bảng dưới đây. Nếu sai, xem lại Kiến thức của dạng ấy, thử làm lại rồi mới tự mở lời giải.
+
+| Câu tự kiểm tra | Bài có lời giải trong Luyện tập |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 | Bài 1 – 3 – 5 – 8 |
+| Câu 5 – 6 – 7 – 8 | Bài 10 – 12 – 14 – 16 |
+| Câu 9 – 10 – 11 – 12 | Bài 18 – 20 – 22 – 24 |
+| Câu 13 – 14 – 15 – 16 – 17 | Bài 26 – 28 – 30 – 32 – 34 |
+
+Đây là **tự đối chiếu bài công khai đã học**, không phải kiểm tra năng lực độc lập và không ghi Mastery.
+
+</details>
 
 Học liệu tham khảo SGK Toán 10, Tập Hai (Bài 15–16) và SGK Toán 11, Tập Một (Bài 3), bộ Kết nối tri thức với cuộc sống.
