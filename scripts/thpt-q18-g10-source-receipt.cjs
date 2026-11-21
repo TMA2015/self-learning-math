@@ -1280,6 +1280,49 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    return current;
   }
  }
+ if(name==="B26"){
+  // Owner-authorized B26 SGK enrichment; require a source-locked Q18 delta
+  // on the one canonical lesson, never silently promote the old 27-row ledger.
+  const receiptPath="prototypes/thpt/ux795/G10_CHIX_B26_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md";
+  const r=fs.readFileSync(path.join(root,receiptPath),"utf8");
+  const field=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("BASELINE_SOURCE_BLOB"),blobs[1],
+   "B26 Q18 baseline must extend exactly the immutable old source");
+  const current=field("CANDIDATE_SOURCE_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(current||"")&&current!==blobs[1],
+   "B26 candidate must have a distinct valid source Git blob SHA");
+  for(const marker of ["G10-CHIX-B26-S1-GOLDEN-ENRICHMENT-Q18-R01-20261121",
+   "Q18_OWNER_SELF_VERIFIED_ENRICHMENT","DELTA_C_ACADEMIC_MATERIAL",
+   "INDEPENDENT_NOTEBOOKLM_REVIEW_NOT_CLAIMED","OWNER_P2_PENDING",
+   "G10-B26-SCOPE_SMALL_PROBABILITY","P0=0","P1=0"]){
+   assert(r.includes(marker),"B26 Q18 source evidence missing "+marker);
+  }
+  const gitBlob=buf=>require("node:crypto").createHash("sha1")
+    .update(Buffer.from("blob "+buf.length+"\0")).update(buf).digest("hex");
+  const full=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-ix/bai-26.md"));
+  assert.equal(gitBlob(full),current,"B26 canonical source must match signed exact Git blob");
+  const t=full.toString("utf8");
+  assert.deepEqual([...t.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
+   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+   "B26 Golden UI must retain exactly four tabs in approved order");
+  for(let i=1;i<=5;i++){
+   const id="0"+i;
+   assert(t.includes('data-thpt-first-try-id="THPT-G10-CHIX-TRY'+id+'"')&&
+    t.includes('data-thpt-help-id="HELP-G10-CHIX-TRY'+id+'"'),
+    "B26 canonical FirstTry/HELP ID missing: "+id);
+  }
+  assert((t.match(/\?\?\? question "Đối chiếu"/g)||[]).length===5&&
+   (t.match(/\?\?\? tip "Kiểm lỗi"/g)||[]).length===5&&
+   (t.match(/class="thpt-g10-example-solution"/g)||[]).length===6&&
+   t.includes("2.3. Nguyên lí xác suất bé")&&t.includes("10 492 bé trai")&&
+   t.includes("G10_B26_EVENT_COMPLEMENT_R01.svg")&&
+   t.includes("THPT_G10_B26_COIN_DIE_SAMPLE_SPACE.svg")&&
+   t.includes('bai-26\\/?$')&&!t.includes('bai-25\\/?$'),
+   "B26 SGK outcomes, Golden solved examples, visual or self-check placement missing");
+  const svg=fs.readFileSync(path.join(root,"docs/assets/images/thpt/G10_B26_EVENT_COMPLEMENT_R01.svg"));
+  assert.equal(gitBlob(svg),field("VENN_SVG_BLOB"),"B26 complement figure must match signed Git SHA");
+  return current;
+ }
  return blobs[1];
 }
 function expectedG10KnowledgeBlob(lesson,legacy){
