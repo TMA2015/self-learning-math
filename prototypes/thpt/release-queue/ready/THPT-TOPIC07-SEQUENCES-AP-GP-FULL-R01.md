@@ -1,25 +1,30 @@
+<!-- TOP07_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
+**CURRENT AUTHORING CONTENT_READY (source-only, not RELEASE):** original single R07 canonical learner `7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba`, source commit `2a1c6bc0896b7e6f357f516acfe3e4d3b02c1382`, unchanged original 47 SGK placements+22 new Topic canonical and 11 Written rubrics; existing Q18 AUTHOR_SELF_VERIFIED v3.2.0 receipt `737f3c09766f4c15b50ee05ce93bcf0bb375d861`, metadata `f7e0045bed4b0d6ae614bc004835e17e9d892580`, sole R07 V2 `623807375bedd118586a280fbfc1f0c4239e58d9`. Verified student-only corrections: **18/18** first-try voluntary Đối chiếu have actionable **Kiểm lỗi** and correct numbered Bài returns; 18/18 PUBLIC SelfCheck item IDs have one voluntary after-question navigation to existing Practice solutions; SGK attribution one time only at Topic end, obsolete R06-candidate hidden management header corrected to AUTHORING_ONLY. No edits to 69 original canonical Practice math/key/solutions, 18 public replay question-only stems, 11 Written rubrics or 3 SVG; 88/88 disclosures balanced, NO_MASTERY. Existing S1 original scan and 69-item/18-outcome author deep audit inherited only for unchanged maths; new D6 Delta C checked directly by author on current source. No independent NotebookLM verdict newly claimed, no official Topic Readiness/Final Submit, no website source integration/merge/deploy.
+
+---
+
 # CĐ07 — Dãy số, Cấp số cộng và Cấp số nhân · AUTHORING current R07 (PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 5bfc4ae9c256111868d6771bba593d34515f0965
+SOURCE_COMMIT: 2a1c6bc0896b7e6f357f516acfe3e4d3b02c1382
 AUTHOR_PR: 828
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/828 — DRAFT AUTHORING, no merge/deploy
 CATALOG_TOPIC_ID: CD07
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: b6074c8641963a296e3f990397eba685c968c6ea
+ACADEMIC_SOURCE_BLOB: 7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md (Q18 targeted AUTHOR_SELF_VERIFIED, no independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 64187138ee705a0f1209b171856db988efe85a4d
+REVIEW_RECEIPT_BLOB: 737f3c09766f4c15b50ee05ce93bcf0bb375d861
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R07_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 80d859da4c00590b1dcc07bbca52988da1955dd1
+AUTHOR_HANDOFF_BLOB: 623807375bedd118586a280fbfc1f0c4239e58d9
 PUBLIC_ORIGINAL47_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_ORIGINAL47_SGK_PLACEMENT_INDEX_R06_20261115.md
 PUBLIC_ORIGINAL47_INDEX_BLOB: 01154e0801e77c2e81d56a717c77f7dae5a3515d
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC07_SEQUENCES_NEW22_PUBLIC_CANONICAL_R06_20261115.md
