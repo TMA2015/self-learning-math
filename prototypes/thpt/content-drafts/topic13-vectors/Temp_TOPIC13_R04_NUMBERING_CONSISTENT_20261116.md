@@ -2,7 +2,7 @@
 
 Từ mũi tên chỉ hướng trên mặt phẳng, em sẽ hiểu phép cộng, trừ và nhân vectơ trước khi tính bằng tọa độ. Các ví dụ về chuyển động, lực và hình không gian cho thấy một vectơ luôn mô tả cả độ lớn lẫn hướng. Em hãy tự giải câu Vận dụng rồi mở Đối chiếu; kiến thức về tọa độ Oxy và Oxyz được giải thích tại chỗ, không đòi học một chuyên đề khác trước.
 
-<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: G10 source owner PR750 SHA 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; G12 856a37bd16d2746ffc2e12906de18d1f4338a3b6; NEW20 c74505ba59d047c19943c2309f5fd7c033ac9563. -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: G10 source owner PR750 SHA 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; G12 856a37bd16d2746ffc2e12906de18d1f4338a3b6; NEW20 c74505ba59d047c19943c2309f5fd7c033ac9563. -->
 <!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: one active learner on R04 path; prior R02/R03 snapshots historic; no merge/deploy. -->
 
 # Kiến thức
@@ -583,7 +583,7 @@ Giải theo từng nhóm kiến thức. Với bài chọn đáp án, giải thí
 
 Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ, tích vô hướng và hình không gian. Tự làm trước khi mở **Lời giải**; nếu khác kết quả, ghi rõ bước sai và cách sửa.
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B07-C01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O01; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B07-C01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O01; SINGLE_ITEM_ID -->
 
 ### Bài luyện 1
 **Đề:** Theo định nghĩa, vectơ $\overrightarrow{AB}$ có điểm đầu và điểm cuối là gì?
@@ -599,7 +599,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B07-P01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O01; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B07-P01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O01; SINGLE_ITEM_ID -->
 
 ### Bài luyện 2
 **Đề:** Cho $AB=7\,\mathrm{cm}$. Tính độ dài của $\overrightarrow{BA}$.
@@ -613,7 +613,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B07-P02; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B07-P02; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
 
 ### Bài luyện 3
 **Đề:** Cho hình bình hành $ABCD$ theo thứ tự. Vectơ nào luôn bằng $\overrightarrow{AB}$?
@@ -629,7 +629,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B07-P04; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B07-P04; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O02; SINGLE_ITEM_ID -->
 
 ### Bài luyện 4
 **Đề:** Theo quy ước đã học, phát biểu nào đúng về vectơ-không $\vec0$?
@@ -645,7 +645,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B08-C01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O03; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B08-C01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O03; SINGLE_ITEM_ID -->
 
 ### Bài luyện 5
 **Đề:** Với ba điểm A, B, C bất kì, $\overrightarrow{AB}+\overrightarrow{BC}$ bằng vectơ nào?
@@ -661,7 +661,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B08-P01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O03; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B08-P01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O03; SINGLE_ITEM_ID -->
 
 ### Bài luyện 6
 **Đề:** Rút gọn $\overrightarrow{AB}+\overrightarrow{BA}$.
@@ -675,7 +675,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B08-P02; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O04; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B08-P02; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O04; SINGLE_ITEM_ID -->
 
 ### Bài luyện 7
 **Đề:** Rút gọn $\overrightarrow{AB}-\overrightarrow{AC}$.
@@ -689,7 +689,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B08-P05; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B08-P05; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
 
 ### Bài luyện 8
 **Đề:** Cho G là trọng tâm tam giác ABC. Rút gọn $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}$.
@@ -703,7 +703,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B09-C01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B09-C01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
 
 ### Bài luyện 9
 **Đề:** Cho $\vec u\ne\vec0$, $|\vec u|=4$ cm, $\vec v=-2\vec u$. Phát biểu nào đúng?
@@ -719,7 +719,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B09-P01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B09-P01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
 
 ### Bài luyện 10
 **Đề:** Nếu $|\vec a|=6$ m, tính $|3\vec a|$.
@@ -733,7 +733,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B09-P03; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B09-P03; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O05; SINGLE_ITEM_ID -->
 
 ### Bài luyện 11
 **Đề:** M nằm trên đoạn AB và $AM=\frac35 AB$. Biểu thị $\overrightarrow{MA}$ qua $\overrightarrow{AB}$.
@@ -747,7 +747,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B09-P05; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B09-P05; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O06; SINGLE_ITEM_ID -->
 
 ### Bài luyện 12
 **Đề:** Hai vectơ khác không thỏa $\vec v=-\frac52\vec u$. So sánh hướng và tỉ số độ dài $|\vec v|/|\vec u|$.
@@ -761,7 +761,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B10-C01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O07; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B10-C01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O07; SINGLE_ITEM_ID -->
 
 ### Bài luyện 13
 **Đề:** Cho $A(-2;3),B(4;1)$. Tọa độ $\overrightarrow{AB}$ là?
@@ -777,7 +777,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B10-P01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O07; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B10-P01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O07; SINGLE_ITEM_ID -->
 
 ### Bài luyện 14
 **Đề:** Cho $\vec u=(1;-2),\vec v=(-3;4)$. Tính $2\vec u-\vec v$.
@@ -791,7 +791,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B10-P03; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O08; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B10-P03; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O08; SINGLE_ITEM_ID -->
 
 ### Bài luyện 15
 **Đề:** Tìm trung điểm M của $A(-2;5)$ và $B(4;-1)$.
@@ -805,7 +805,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B10-P05; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O08; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B10-P05; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O08; SINGLE_ITEM_ID -->
 
 ### Bài luyện 16
 **Đề:** Với $\vec u=(2;-3)$, $\vec v=(-4;6)$, chọn phát biểu đúng.
@@ -821,7 +821,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B11-C01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O09; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B11-C01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O09; SINGLE_ITEM_ID -->
 
 ### Bài luyện 17
 **Đề:** Cho $\vec u=(3;-2),\vec v=(1;4)$. Tính $\vec u\cdot\vec v$.
@@ -835,7 +835,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B11-P01; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O09; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B11-P01; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O09; SINGLE_ITEM_ID -->
 
 ### Bài luyện 18
 **Đề:** Cho $|\vec u|=5$, $|\vec v|=4$ và góc giữa chúng $60^\circ$. Tính $\vec u\cdot\vec v$.
@@ -849,7 +849,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B11-P03; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B11-P03; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
 
 ### Bài luyện 19
 **Đề:** Cho $\vec u=(1;3),\vec v=(-1;1)$. Tính $\cos\theta$ với $\theta$ là góc giữa hai vectơ.
@@ -863,7 +863,7 @@ Bắt đầu từ quan hệ hình học của vectơ, rồi luyện tọa độ,
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B11-P05; SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G10-B11-P05; SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd; OUTCOME: TOP13-O10; SINGLE_ITEM_ID -->
 
 ### Bài luyện 20
 **Đề:** Một lực không đổi $\vec F=(10;0)$ N tác dụng lên vật dịch chuyển $\vec s=(3;4)$ m. Tính công $W=\vec F\cdot\vec s$.
