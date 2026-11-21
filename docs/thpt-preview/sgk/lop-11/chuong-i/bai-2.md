@@ -17,8 +17,6 @@
 
     Hai góc \(60^\circ\) và \(30^\circ\) ghép thành \(90^\circ\), nhưng \(\sin60^\circ+\sin30^\circ\) không phải \(\sin90^\circ\): bên trái là **tổng hai tung độ**, bên phải là **tung độ của tia ở góc tổng**. Công thức cộng phải có các tích chéo của sin và cos để mô tả sự quay.
 
-    <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/THPT_G11_B02_ANGLE_SUM_60_30_D5_R01.svg" loading="lazy" alt="Ba tia góc 30 độ, 60 độ, 90 độ cùng gốc trên đường tròn đơn vị"><figcaption>Đọc tia 60° rồi tia 90°: ghép thêm 30° tạo góc 90°. Hình minh họa phép ghép góc, không biểu diễn phép cộng các tung độ sin.</figcaption></figure>
-
     **Vận dụng.** Tính \(\cos(60^\circ+30^\circ)\). Kết quả có bằng \(\cos60^\circ+\cos30^\circ\) không? Hãy dự đoán trước khi tính.
 
     <span data-ped-first-try="1" data-outcome-id="G11-B02-SUM_DIFFERENCE" data-thpt-first-try-id="THPT-G11-B02-TRY01" hidden></span>
@@ -28,6 +26,10 @@
         **Kết quả:** \(\cos90^\circ=0\), còn \(\cos60^\circ+\cos30^\circ=\frac{1+\sqrt3}{2}>0\), nên không bằng nhau.
 
         **Vì sao:** \(\cos(u+v)=\cos u\cos v-\sin u\sin v\). Thay hai giá trị góc vào cho \(0\); không được phân phối hàm cos qua dấu cộng.
+
+        <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/THPT_G11_B02_ANGLE_SUM_60_30_D5_R01.svg" loading="lazy" alt="Ba tia góc 30 độ, 60 độ, 90 độ cùng gốc trên đường tròn đơn vị"><figcaption>Đọc tia 60° rồi tia 90°: ghép thêm 30° tạo góc 90°. Hình minh họa phép ghép góc, không biểu diễn phép cộng các tung độ sin.</figcaption></figure>
+
+        **Đọc hình sau khi tự làm:** Ba tia 30°, 60°, 90° cho thấy cộng số đo góc là đúng, còn các giá trị sin/cos phải tính theo quy tắc lượng giác. Hình có ghi giá trị để **kiểm kết quả**, nên chỉ hiện sau khi em mở Đối chiếu.
 
     <span data-thpt-help-id="HELP-G11-B02-TRY01" hidden></span>
 
