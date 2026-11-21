@@ -56,6 +56,8 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
       const page=await context.newPage();
       const response=await page.goto(base+"/"+row.rel+"/",{waitUntil:"domcontentloaded",timeout:60000});
       assert(response?.ok(),row.rel+" page missing");
+      // A DOMContentLoaded response is not proof that late stylesheets have loaded.
+      await page.waitForLoadState("load",{timeout:30000});
       const v=await page.evaluate(()=>{
        const a=document.querySelector("article.md-content__inner");
        const labels=[...a.querySelectorAll(".tabbed-set > .tabbed-labels > label")];
@@ -66,7 +68,10 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
         active:labels.filter(x=>x.classList.contains("slm-g10-active-tab")).length,
         labels:labels.map(x=>x.textContent.trim()),headings:h2.map(x=>x.textContent.trim()),
         pad:parseFloat(ls.paddingLeft),radius:parseFloat(ls.borderTopLeftRadius),
-        headingBorder:parseFloat(hs.borderLeftWidth)};
+        headingBorder:parseFloat(hs.borderLeftWidth),
+        rootClasses:a.className,hasDirectTabs:Boolean(a.querySelector(":scope > .tabbed-set")),
+        hybridStyleLinks:[...document.querySelectorAll("link[rel=stylesheet]")].filter(x=>x.href.includes("thpt-g10-knowledge-hybrid-l1-v1.css")).map(x=>x.href),
+        styleSheets:document.styleSheets.length};
       });
       const k=row.rel+" "+width+" "+(js?"JS":"NO_JS");
       assert.equal(v.marker,"true",k+" marker");
