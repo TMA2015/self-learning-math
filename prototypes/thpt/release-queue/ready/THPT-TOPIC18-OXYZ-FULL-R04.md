@@ -1,13 +1,16 @@
 <!-- TOP18_MASTER974_CURRENT_READY_AUTHORING_20261121 -->
-**CURRENT CĐ18 ONE AUTHORING CONTENT_READY snapshot, NOT website release:** 21/11/2026, owner-effective one `SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18` self-QA on current R04 learner `8a2b6289fd5ccf1380c0b250b6ffecc34d25e355`; source commit `af0993c1b636213f99bdd705e1e2132d2a19cf62`, signed Q18 self source `57db7f94a670d3290b7c5e06304a13fe0376b60f`, A1–A7 `5b9ea079b07be1821ddaae6c49a5a01679f3d6e6`, one V2 `b6f2450093669748712142225df6ac5f22fbc574`. 40 complete independently readable Knowledge outcomes and mathematical firsttry unchanged; 40 voluntary Kiểm lỗi with 80 authentic existing current math-matched Practice reattempts, 207 original full mathematical Practice stems/keys/solutions including 47 Written rubric bodies byte-exact vs historical learner, continuous Bài luyện 1–207 with 40 SGK-bank headers removed; 40 exactly-labelled Vận dụng, 12 original public question-only selfchecks with optional final same-ID answer-location lookup Bài 15/35/50/70/81/86/96/112/118/143/175/201, 10 original SVG/source model unchanged, 248/248 voluntary disclosures, one Topic-end SGK provenance. Q15 original 247 canonical IDs preserved; Q16 public CLIENT_SELF_CHECK_NO_MASTERY only, no private RD1 or official final Readiness/Mastery. Targeted Q18 v3.2.0 author source/math/PED verified only, not new independent NotebookLM PASS.
+**CURRENT AUTHORING CONTENT_READY, NOT WEBSITE RELEASE · 21/11/2026:** CĐ18 one R04 canonical learner `19d9b2d2f1dd2ec59750d92d9835cd111207ed4d`, source commit `aee8a33bcf44acb90268f96b297fa161a3861de3`, author Q18 v3.2.0 `AUTHOR_SELF_VERIFIED` blob `92c8d449b242f5f1fea9b7e4a7b1830d0396b1b6`, A1 `b11c3441d2e7f3ce364f9f8389bff662f4bff6be`, V2 `19e9a10b21202e5399adc8edb90b63536ff9504d`. 40 actual Knowledge outcomes and FirstTry math kept, 40 individualized opt-in Kiểm lỗi with 80 original valid Bài targets, 207 unique Bài luyện 1–207, 12 public same-ID question-only replays with opt-in after-all navigation (Bài 15/35/50/70/81/86/96/112/118/143/175/201), 247 unique canonical IDs, 10 original unchanged SVG source assets and model, one last SGK credit, 248/248 details.
 
-**Open nonblocking P2=2:** old original G12 SBT B14 printed p25 absent from retained reference, unverified exercises 5.6–5.7; new #977-062 24 original G12 canonical Written source-solution admin Mastery notes require SGK owner coordinated equivalent editorial fix, not Topic-only source change. Neither is a math P0/P1 in current author-verified changed source. No live site/Golden AP/R browser/device or fresh PDF page scan, no CI pass assumed and no release/deploy permission. Older source and receipt snapshots remain immutable Git history.
+**Full math preservation qualification:** 206/207 complete Practice problem bodies byte-exact to preceding snapshot `8a2b6289fd5ccf1380c0b250b6ffecc34d25e355`. The SINGLE changed author-owned W07 `THPT-TOP18-W07` now states radar O, R, A, u, t≥0 explicitly to be a standalone task; original solved graphic revealing t=3/6/9 prior to learner's question was moved unchanged beneath W07's opt-in `Lời giải`. W07 original full correct mathematical answer and /4 rubric preserved byte-exact, and all 47 canonical Written rubric bodies unchanged. 40 FirstTry/math, 12 public question-only stems and 10 SVG source SHAs unchanged. Targeted author math/PED Q18 on effective source, not fresh full original 92 checks or independent NotebookLM full Topic PASS. `DELTA_C_TARGETED_W07_STANDALONE_STEM` + `DELTA_C_PED_40_D6` + `DELTA_A_UI_PLACEMENT_AND_LABELS`.
+
+**Two acknowledged nonblocking P2 (not false academic PASS):** old G12 SBT B14 printed p25 unavailable (SBT 5.6–5.7 not directly checked); G12 SGK original 24 Written source-solution administrative Mastery labels #977-062 remain for original owner to coordinate, without Topic-only Q15 divergence. Current affected source P0/P1=0, P2=2. Public replays `CLIENT_SELF_CHECK_NO_MASTERY`, no official held-out RD1/Final Submit/Mastery, website/Golden/AP/R, browser/device, CI permission, merge/deploy or Firebase/student data changes. Previous snapshots remain immutable in Git.
+
 ---
 
 # CĐ18 · Oxyz · AUTHORING CONTENT_READY R04 · 16/11/2026
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R04
-CONTENT_REVISION: R04_MASTER974_40_D6_207_PRACTICE_20261121
+CONTENT_REVISION: R04_MASTER974_W07_SAFE_40_D6_207_PRACTICE_20261121
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
@@ -15,19 +18,19 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: af0993c1b636213f99bdd705e1e2132d2a19cf62
+SOURCE_COMMIT: aee8a33bcf44acb90268f96b297fa161a3861de3
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
+ACADEMIC_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_SELF_VERIFIED; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 57db7f94a670d3290b7c5e06304a13fe0376b60f
+REVIEW_RECEIPT_BLOB: 92c8d449b242f5f1fea9b7e4a7b1830d0396b1b6
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 5b9ea079b07be1821ddaae6c49a5a01679f3d6e6
+AUTHOR_A1_A7_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R04_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: b6f2450093669748712142225df6ac5f22fbc574
+AUTHOR_HANDOFF_BLOB: 19e9a10b21202e5399adc8edb90b63536ff9504d
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
