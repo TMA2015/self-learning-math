@@ -160,8 +160,8 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B19 must remove legacy learner-facing metadata and non-Golden labels");
   assert(d.includes("G10_B19_LINE_NORMAL_R02.svg")&&!knowledge.includes("G10_B19_LINE_NORMAL_R02.svg"),
    "B19 real figure must appear in Discovery before learner reads its arrows");
-  for(const x of ["đồ thị của một hàm số","t không nhất thiết là thời gian",
-    "nhắc lại bài toán liên quan"])
+  // Protect mathematical interpretation, not a removed generic editorial phrase.
+  for(const x of ["đồ thị của một hàm số","t không nhất thiết là thời gian"])
    assert(s.includes(x), "B19 learner-first explanation missing "+x);
  }
  if(n===20){
