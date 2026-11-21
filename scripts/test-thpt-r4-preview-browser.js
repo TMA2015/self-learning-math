@@ -465,12 +465,16 @@ async function ready(page,path){
 
   await ready(page,"chuyen-de/");
   const topicSearch=page.locator("#thpt-topic-search");
-  await topicSearch.fill("hàm số");
-  assert(await page.locator('a.library-topic-tile[href="ham-so/kien-thuc/"]').isVisible(),"Topic search did not retain sample");
+  const approvedTopic=page.locator('a.library-topic-tile[data-thpt-topic="1"]');
+  assert(await approvedTopic.count()===1,"Topic overview must have exactly one owner-approved CĐ01");
+  assert(await page.locator('.topic01-legacy-note a[href*="ham-so/kien-thuc/"]').count()===1,
+   "Existing technical demo deep link must remain without pretending it is an approved Topic");
+  await topicSearch.fill("mệnh đề");
+  assert(await approvedTopic.isVisible(),"Topic search must retain approved CĐ01 by meaning");
   await topicSearch.fill("zzz_khong_co_chuyen_de");
-  assert(await page.locator('a.library-topic-tile[href="ham-so/kien-thuc/"]').isHidden(),"Topic search did not filter sample");
+  assert(await approvedTopic.isHidden(),"Topic search did not filter nonmatching CĐ01");
   await topicSearch.fill("");
-  assert(await page.locator('a.library-topic-tile[href="ham-so/kien-thuc/"]').isVisible(),"Topic search did not restore sample");
+  assert(await approvedTopic.isVisible(),"Topic search did not restore CĐ01 after reset");
 
   function canonical(href,currentUrl){
    const pathname=new URL(href,currentUrl).pathname;
