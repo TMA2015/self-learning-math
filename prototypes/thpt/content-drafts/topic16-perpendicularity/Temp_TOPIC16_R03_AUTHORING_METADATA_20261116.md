@@ -1,3 +1,21 @@
+<!-- TOP16_MASTER974_CURRENT_A1_A7_20261121 -->
+## CĐ16 current AUTHORING A1–A7 · one R03 learner, #974 / #977 #051–054
+
+CURRENT_SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
+DELTA_SCOPE: DELTA_C_PED_TARGETED_21_D6_AND_PUBLIC_LOOKUP; DELTA_A_EDITORIAL_65_DISPLAY_TITLES
+SOURCE_COMMIT: b998dfbe82ba2fd60d0838e91fb2c9413e68fa41
+CANONICAL_Q15: Original 41 G11 SGK +21 TOP16-T01–T21 +21 TOP16-P01–P21 +3 TOP16-W01–W03 =86 unique public IDs. Same original SGK source blob afc8ec039213b87b4930f2d34d48c28d1fc6277f. Eight PUBLIC_SELF_CHECK use P02/P06/P09/P12/P14/P16/P18/P21 as second placement only; Practice ordinals 11,26,29,42,44,59,61,64.
+A1_A7_SOURCE_QA: 21 unchanged outcome knowledge mathematics and FirstTry stems/keys; 21 individualized voluntary Kiểm lỗi with one true subsection and two actual source-matched practice return items; 65/65 canonical original complete Practice stem/key/solution/11 Written rubric bodies byte-exact, only display title 1–65 and grouping labels changed; 8 public question-only prompts unchanged; 4 SVG and one model unchanged; 87/87 details balanced, one end Topic SGK source credit.
+OPEN_P2: TOP22-20261121-054 original owner SGK answer string "Đáp án sau Submit luyện tập" in 33 reused G11 original solution bodies; leave canonical original item text unchanged pending coordinated source-owner editorial edit. P0=0, P1=0 in directly changed scope; do not equate this P2 with math hold.
+SOURCE_RECEIPT_SCOPE: original Toán11 KNTT Tập Hai ChVII B22–B25 custody as historical source owner; no new physical PDF visual scan and no newly independent NotebookLM full-Topic PASS.
+RELEASE_AUTHORIZATION: NO
+---
+
 # CĐ16 · R03 scope-corrected canonical / outcome / placement register · AUTHORING CANDIDATE
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -8,7 +26,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_R03_SELF_VERIFIED
 SCOPE_NOTES: PLAN22-17 Khoảng cách & Thể tích (G11 B26–B27 + CHVII-INTEGRATED) out of CĐ16, not silently retired/finished
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 439ee3833a864638eedd11bc80baf564c77485a5
+ACADEMIC_SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
