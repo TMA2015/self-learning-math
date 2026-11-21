@@ -2,7 +2,7 @@
 
 Ta bắt đầu từ những câu hỏi gần gũi: một vật chuyển động ra sao, mặt phẳng nghiêng thế nào, và một vùng không gian hình cầu có bao phủ một vị trí không? Tọa độ cho phép chuyển từng câu hỏi hình học thành suy luận có thể kiểm tra bằng phép tính. Mỗi khi dùng công thức, hãy nhận diện đối tượng và điều kiện trước.
 
-<!-- AUTHORING_R04_LEARNER_CANDIDATE; EDITORIAL_R03_BLOB: 66df020c242cbbeb5c4bd50670e245a4d8c7f31f; FROZEN_R02_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd; SGK_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; SGK_CHV_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; NOT_REVIEWED_INDEPENDENTLY; NO_PRIVATE_RD1 -->
+<!-- AUTHORING_R04_LEARNER_CANDIDATE; EDITORIAL_R03_BLOB: 66df020c242cbbeb5c4bd50670e245a4d8c7f31f; FROZEN_R02_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd; SGK_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6; SGK_CHV_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; NOT_REVIEWED_INDEPENDENTLY; NO_PRIVATE_RD1 -->
 
 # Kiến thức
 
@@ -2308,7 +2308,7 @@ M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
 
 ## 4. Mặt phẳng trong Oxyz
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 82.** Mặt phẳng x−2y+3z−4=0 có pháp tuyến nào?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2318,7 +2318,7 @@ M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 83.** Tìm một n vuông góc với u=(1,2,0),v=(0,1,2).
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2328,7 +2328,7 @@ M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 84.** Hai mép mái có hướng (1,0,1) và (0,2,1). Tìm hướng vuông góc mái.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2338,7 +2338,7 @@ M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 85.** Giải thích vì sao u=(1,1,0),v=(2,2,0) không đủ để xác định pháp tuyến duy nhất bằng tích có hướng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2360,7 +2360,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 87.** Qua M(0,1,-1), n=(1,2,3) viết mặt phẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2370,7 +2370,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 88.** Qua M(2,0,1), n=(1,-2,2), viết (P).
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2380,7 +2380,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 89.** Mặt sàn ngang qua điểm A(1,2,4). Viết phương trình của sàn.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2390,7 +2390,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 90.** Qua M(-1,2,0) có pháp tuyến n=(2,3,-1). Viết phương trình và kiểm tại M.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2412,7 +2412,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 92.** A(1,0,0),B(1,1,0),C(1,0,1). Viết (ABC).
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2422,7 +2422,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 93.** A(0,0,0),B(1,1,0),C(0,0,1). Tìm mặt phẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2432,7 +2432,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 94.** Ba đỉnh tường (4,0,0),(0,4,0),(4,0,2). Viết mặt phẳng tường.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2442,7 +2442,7 @@ u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 95.** Viết mặt phẳng qua A(1,0,0),B(0,1,0),C(0,0,1) và chứng minh ba điểm không thẳng hàng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2479,7 +2479,7 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 98.** Qua (2,1,0) song song Ox và Oz. Viết mặt phẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2489,7 +2489,7 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 99.** Mặt phẳng chứa trục Oy và điểm (1,0,2). Viết phương trình.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2499,7 +2499,7 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 100.** Mái qua P(0,0,2), song song hai hướng (1,1,0),(0,1,1). Viết mặt mái.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2509,7 +2509,7 @@ AB=(−1,1,0), AC=(−1,0,1) không cùng phương (chẳng hạn vì thành ph�
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 101.** Mặt phẳng qua O chứa Ox và điểm B(0,2,1); lập phương trình.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2531,7 +2531,7 @@ Dùng e2=(0,1,0) và OA=(2,0,−1); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 103.** x−2y+z=1 và 2x−4y+2z=5 có vị trí gì?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2541,7 +2541,7 @@ Dùng e2=(0,1,0) và OA=(2,0,−1); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 104.** Hai mặt 2x+y−z=0 và x−2y=0 có vuông góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2551,7 +2551,7 @@ Dùng e2=(0,1,0) và OA=(2,0,−1); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 105.** Mặt sàn z=0 và tường x=0 có vuông góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2561,7 +2561,7 @@ Dùng e2=(0,1,0) và OA=(2,0,−1); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 106.** Chứng minh (P):x+y−z=0 song song (Q):2x+2y−2z+1=0 và vuông góc (R):x−y=0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2583,7 +2583,7 @@ Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C06; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 108.** Khoảng cách O tới x+2y+2z−3=0?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2593,7 +2593,7 @@ Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P06; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 109.** M(2,-1,1), P:2x+y+2z−1=0. Tính d.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2603,7 +2603,7 @@ Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A06; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 110.** Hai mặt sàn z=0 và trần z=3 có khoảng cách bao nhiêu mét nếu tọa độ mét?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2613,7 +2613,7 @@ Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W06; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 111.** Tính khoảng cách M(1,1,2) đến 2x−2y+z−4=0. Viết đủ tử, mẫu và kết luận.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2652,7 +2652,7 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 
 ## 5. Đường thẳng và giao điểm
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 114.** Đường thẳng qua O hướng (1,0,2)?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2662,7 +2662,7 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 115.** Qua (-1,0,4), hướng (3,2,-1), viết tham số.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2672,7 +2672,7 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 116.** Drone xuất phát (0,2,1), bay thẳng theo tốc độ (1,-1,2) m/s. Vị trí sau t giây?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2682,7 +2682,7 @@ Thay d(t) vào P: (2+t)−1+t=1+2t=3 ⇒ t=1, giao điểm (3,−1,1). Pháp tuy
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 117.** Qua P(2,1,-1), hướng (-1,3,2). Viết tham số và tìm tọa độ khi t=2.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2704,7 +2704,7 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 119.** Qua A(0,0,0), B(2,0,1).
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2714,7 +2714,7 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 120.** Qua A(1,2,0),B(1,5,3).
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2724,7 +2724,7 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 121.** Cáp căng từ (0,0,4) tới (4,2,0). Viết quỹ đạo cáp.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2734,7 +2734,7 @@ x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 122.** Viết tham số qua P(2,-1,0),Q(0,3,2) và kiểm Q.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2756,7 +2756,7 @@ CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 124.** Qua O, hướng (1,2,3). Viết chính tắc.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2766,7 +2766,7 @@ CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 125.** Qua (1,2,0), hướng (0,1,-2). Viết dạng không chia cho 0.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2776,7 +2776,7 @@ CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 126.** Đường trục thẳng đứng qua (2,3,0) theo hướng Oz có phương trình?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2786,7 +2786,7 @@ CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 127.** Qua (-1,1,2),u=(2,0,3). Viết cả tham số và dạng chính tắc đúng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2808,7 +2808,7 @@ x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 129.** d=(t,2t,3). Điểm M(2,4,3) thuộc d?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2818,7 +2818,7 @@ x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 130.** d=(1+2t,3−t,0). M(5,1,0) thuộc d?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2828,7 +2828,7 @@ x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 131.** Vị trí p(t)=(1+t,2+t,3−t). Tại t=3 drone ở đâu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2838,7 +2838,7 @@ x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 132.** d=(2−t,1+2t,3t). Kiểm M(0,5,6) và N(0,5,5).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2860,7 +2860,7 @@ Không. Từ x=2 suy t=1; khi đó y=z=1, khác y=0,z=2 của P.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 134.** u=(1,2,0),v=(2,4,0). Hai hướng?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2870,7 +2870,7 @@ Không. Từ x=2 suy t=1; khi đó y=z=1, khác y=0,z=2 của P.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 135.** u=(1,0,1),v=(1,0,-1). Hai hướng?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2880,7 +2880,7 @@ Không. Từ x=2 suy t=1; khi đó y=z=1, khác y=0,z=2 của P.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 136.** Hai hành lang có hướng (2,1,0),(-1,2,0). Các hướng vuông góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2890,7 +2890,7 @@ Không. Từ x=2 suy t=1; khi đó y=z=1, khác y=0,z=2 của P.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 137.** Chứng minh u=(1,2,-1) vuông góc v=(2,-1,0) và song song w=(3,6,-3).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2912,7 +2912,7 @@ Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C06; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 139.** d1=(t,0,0), d2=(0,s,0). Có giao?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2922,7 +2922,7 @@ Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P06; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 140.** d1=(t,1,0), d2=(0,s,1). Quan hệ?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2932,7 +2932,7 @@ Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A06; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 141.** Hai cáp d1=(t,0,2),d2=(0,s,2). Chúng giao đâu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2942,7 +2942,7 @@ Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W06; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W06; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 142.** Chứng minh d1=(1+t,t,0), d2=(0,s,1) chéo nhau.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -2964,7 +2964,7 @@ Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ ch
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C07; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-C07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 144.** d=(1+t,0,1), P:x=3. Tìm giao.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2974,7 +2974,7 @@ Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ ch
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P07; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-P07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 145.** d=(1+2t,t,3−t), P:x+y+z=8. Tìm giao.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2984,7 +2984,7 @@ Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ ch
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A07; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-A07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 146.** Quỹ đạo drone (2t,0,5−t), t≥0, chạm mặt đất z=0 ở đâu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -2994,7 +2994,7 @@ Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ ch
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W07; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B15-W07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 147.** Tìm giao d=(1+t,2−t,3+2t) với P:x−2y+z=10, kiểm kết quả.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3033,7 +3033,7 @@ Thay tọa độ vào P: (1+t)+(2−t)+t=3+t=4 ⇒ t=1. Khi ấy M(1)=(2,1,1); k
 
 ## 6. Góc và quan hệ vị trí
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 150.** u=(1,0,0),v=(0,1,0). Góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3043,7 +3043,7 @@ Thay tọa độ vào P: (1+t)+(2−t)+t=3+t=4 ⇒ t=1. Khi ấy M(1)=(2,1,1); k
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 151.** u=(1,1,0),v=(1,-1,0). Góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3053,7 +3053,7 @@ Thay tọa độ vào P: (1+t)+(2−t)+t=3+t=4 ⇒ t=1. Khi ấy M(1)=(2,1,1); k
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 152.** Hai hướng (1,0,0) và (1,1,0) tạo góc mấy độ?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3063,7 +3063,7 @@ Thay tọa độ vào P: (1+t)+(2−t)+t=3+t=4 ⇒ t=1. Khi ấy M(1)=(2,1,1); k
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 153.** Góc giữa u=(1,1,1) và v=(1,1,-1). Tính cos góc, giải thích trị tuyệt đối.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3085,7 +3085,7 @@ Tích vô hướng 0, nên góc 90°. Hai hướng đều khác không.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 155.** u=(1,0,0) và mặt z=0 tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3095,7 +3095,7 @@ Tích vô hướng 0, nên góc 90°. Hai hướng đều khác không.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 156.** u=(0,0,1) và mặt z=0 tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3105,7 +3105,7 @@ Tích vô hướng 0, nên góc 90°. Hai hướng đều khác không.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 157.** Đường dốc hướng (3,0,4) so với nền z=0 có góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3115,7 +3115,7 @@ Tích vô hướng 0, nên góc 90°. Hai hướng đều khác không.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 158.** u=(1,2,2), (P):z=0. Tìm sin và góc đường–mặt.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3152,7 +3152,7 @@ u·n=√3, |u|=2, |n|=1 ⇒ sinθ=√3/2, nên góc đường–mặt θ=60°. G
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 161.** Hai mặt z=0 và x=0 tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3162,7 +3162,7 @@ u·n=√3, |u|=2, |n|=1 ⇒ sinθ=√3/2, nên góc đường–mặt θ=60°. G
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 162.** Hai mặt x+y=0 và x−y=0 tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3172,7 +3172,7 @@ u·n=√3, |u|=2, |n|=1 ⇒ sinθ=√3/2, nên góc đường–mặt θ=60°. G
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 163.** Mái z=x và nền z=0 tạo góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3182,7 +3182,7 @@ u·n=√3, |u|=2, |n|=1 ⇒ sinθ=√3/2, nên góc đường–mặt θ=60°. G
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 164.** Góc giữa P:x+2y+2z=0 và Q:z=0?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3204,7 +3204,7 @@ Pháp tuyến n1=(1,1,0),n2=(1,−1,0), dot=0 nên góc 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 166.** u=(0,0,1), mặt z=0. Quan hệ hướng?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3214,7 +3214,7 @@ Pháp tuyến n1=(1,1,0),n2=(1,−1,0), dot=0 nên góc 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 167.** u=(1,0,0), mặt z=0. Góc?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3224,7 +3224,7 @@ Pháp tuyến n1=(1,1,0),n2=(1,−1,0), dot=0 nên góc 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 168.** Thang máy đi theo hướng Oz; sàn nằm z=2. Góc đường với sàn?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3234,7 +3234,7 @@ Pháp tuyến n1=(1,1,0),n2=(1,−1,0), dot=0 nên góc 90°.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 169.** u=(1,1,0) và P:x−y=0. Chứng minh góc0 và cho biết điều kiện để đường nằm trọn trong P.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3256,7 +3256,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-C05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 171.** Đường có hướng (1,0,1) so với nền ngang?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3266,7 +3266,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-P05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 172.** Pháp tuyến mái n=(0,3,4); mặt đất n0=(0,0,1). Góc hai mặt?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3276,7 +3276,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-A05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 173.** Một mái có n=(0,3,4) và nền z=0; độ nghiêng?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3286,7 +3286,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B16-W05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 174.** Một thanh chống có hướng (6,0,8) dài 10m. Tính sin góc với nền và độ cao tăng sau đoạn đó.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3310,7 +3310,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 ## 7. Mặt cầu và thiết diện
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 176.** Tâm O, bán kính2, phương trình?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3320,7 +3320,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 177.** C(2,0,-1),R=3. Viết phương trình.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3330,7 +3330,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 178.** Bộ phát sóng tâm (0,0,5), bán kính 10m. Biên phủ 3D?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3340,7 +3340,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W01; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W01; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 179.** C(-1,2,0), R=√5. Lập phương trình mặt cầu và chứng minh R>0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3362,7 +3362,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 181.** x²+y²+z²−2x=0 có tâm và bán kính?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3372,7 +3372,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 182.** x²+y²+z²+2x−4y+6z+5=0 có tâm, R?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3382,7 +3382,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 183.** x²+y²+z²+4=0 có là mặt cầu thực?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3392,7 +3392,7 @@ n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song so
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W02; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W02; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 184.** Hoàn chỉnh và phân loại x²+y²+z²−4x+2y−2z+1=0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3414,7 +3414,7 @@ Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 186.** C=O,R=3,P(1,1,1). Vị trí?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3424,7 +3424,7 @@ Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 187.** C(1,0,0),R=2,P(4,0,0). Vị trí?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3434,7 +3434,7 @@ Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 188.** Mặt cầu tâm (0,0,3), R=5 cắt nền z=0 theo vòng tròn bán kính?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3444,7 +3444,7 @@ Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W03; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W03; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 189.** C(1,2,2),R=3. Phân loại P(4,2,2), Q(1,2,0), Z(1,2,6).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3466,7 +3466,7 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 191.** A=(0,0,0),B=(2,0,0). Mặt cầu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3476,7 +3476,7 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 192.** A(1,1,1), B(3,1,1). Mặt cầu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3486,7 +3486,7 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 193.** Cáp đối diện A(0,0,0),B(0,6,8). Tâm và bán kính mặt cầu đường kính AB?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3496,7 +3496,7 @@ CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W04; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W04; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 194.** A(-1,0,2),B(3,2,0) là hai đầu đường kính. Viết mặt cầu và kiểm A,B.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3533,7 +3533,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-C05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 197.** C=O, R=3, mặt z=3 phân loại?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3543,7 +3543,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-P05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 198.** C(0,0,1),R=5, mặt z=0 cắt theo vòng tròn bán kính?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3553,7 +3553,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-A05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 199.** Vùng phát sóng tâm (0,0,10),R=6m có chạm nền z=0 không?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3563,7 +3563,7 @@ Tâm C=(1,2,0), AB=√(4+16)=2√5, R=√5. Phương trình (x−1)²+(y−2)²+
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W05; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B17-W05; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 200.** C(1,-2,3), R=4, P:2x−y+2z+2=0. Chứng minh tiếp xúc và tìm tiếp điểm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -3622,7 +3622,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 ## 8. Vận dụng tích hợp sau B17 (tự chọn)
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C07; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-C07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 203.** C(0,0,2),R=3; sàn z=0. Bán kính giao?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3632,7 +3632,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P07; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-P07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 204.** C(1,2,1),R=2; sàn z=0. Bán kính giao?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3642,7 +3642,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A07; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-A07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 205.** Bóng phủ của nguồn cầu đặt cao 6m, bán kính 10m trên nền ngang có bán kính?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -3652,7 +3652,7 @@ Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W07; ORIGINAL_SOURCE_BLOB: 11eb2834cfdb4a24685157f84666c2bb0767970a; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B14-W07; ORIGINAL_SOURCE_BLOB: ad4165de0a2c3442b50d7f3d0019a99b5bbdef39; ORIGINAL_OWNER: SGK; NO_NEW_ITEM_ID; CHV_SOURCE -->
 **Bài luyện 206.** Giải thích ba trường hợp giao của cầu tâm cách mặt phẳng h và bán kính R.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
