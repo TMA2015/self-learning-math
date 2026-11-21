@@ -91,5 +91,38 @@ const unexpectedChapters=fs.readdirSync(path.join(base,gradeDir),{withFileTypes:
 assert.deepEqual(unexpectedChapters,[],"New G12 chapter practice requires explicit Golden and browser contract registration");
 const topicsDir="docs/thpt-preview/chuyen-de";
 const futureTopics=fs.readdirSync(path.join(base,topicsDir),{withFileTypes:true}).filter(e=>e.isDirectory()&&e.name!=="ham-so"&&exists(topicsDir+"/"+e.name+"/luyen-tap.md")).map(e=>e.name);
-assert.deepEqual(futureTopics,[],"New THPT Topic practice must register Golden modal, three-page UX and independent browser/Q16 gate first");
+// An owner-approved Topic must register the SAME Golden R4 single-question
+// runtime plus independent source-SHA/browser/Q16 QA; no generic exception.
+const topicRegistration={cd01:{
+ source:"docs/thpt-preview/chuyen-de/cd01/kien-thuc.md",
+ practice:"docs/thpt-preview/chuyen-de/cd01/luyen-tap.md",
+ self:"docs/thpt-preview/chuyen-de/cd01/tu-kiem-tra.md",
+ ui:"docs/assets/javascripts/thpt-topic01-release-tabs-v1.js",
+ browser:"scripts/test-thpt-topic01-release-browser.py",
+ sha:"scripts/test-thpt-topic01-release-intake.cjs"
+}};
+assert.deepEqual(futureTopics.filter(x=>!topicRegistration[x]),[],
+ "New THPT Topic practice must register Golden modal, three-page UX and independent browser/Q16 gate first");
+for(const name of futureTopics){
+ const spec=topicRegistration[name],knowledge=read(spec.source),practice=read(spec.practice),
+  self=read(spec.self),ui=read(spec.ui),browser=read(spec.browser),sha=read(spec.sha);
+ assert(knowledge.includes("data-topic01-knowledge-start")&&
+  practice.includes("data-topic01-practice-start")&&
+  self.includes("TOPIC01_APPROVED_SOURCE_START"),
+  name+": all three genuine learner pages required");
+ for(const contract of ["THPT_GOLDEN_RUNTIME","golden.publicOnly()","golden.bindDialog","golden.renderNav","golden.bindPager",
+ "thpt-r4-practice-dialog","thpt-r4-modal-question-nav","topic01-question-body","dataset.thptCanonicalItem"]){
+  assert(ui.includes(contract),name+": missing Golden shared one-question Q16-safe runtime "+contract);
+ }
+ for(const contract of ["data-topic01-practice-card","topic01-practice-dialog","data-topic01-current-item","Câu 11","Golden modal"]){
+  assert(browser.includes(contract),name+": missing independent browser test "+contract);
+ }
+ assert(sha.includes("9271a9784e343ea87981a67dae7dabcf69e4c0ed")&&
+  sha.includes("TOPIC01_APPROVED_SOURCE_START")&&sha.includes("CLIENT_SELF_CHECK_NO_MASTERY"),
+  name+": original learner mathematical SHA, 24 Practice and Q16 not guarded");
+ assert(!/localStorage|sessionStorage|indexedDB|firebase\.|recordMastery|setDoc\(/.test(ui),
+  name+": shared public Golden UI must not write student/assessment state");
+ assert(!/<form\b|data-thpt-readiness|data-mastery-credit/i.test(self),
+  name+": public SelfCheck must not impersonate protected assessment");
+}
 console.log("PASS Golden RELEASE AP/R: G10/G11 reference modal, G12 I–VI six chapter hubs, canonical source-locked items, one-question browser contract, Q16 boundary and G10/G11/G12 AI Tutor regression. New Topic production remains separate gated release.");
