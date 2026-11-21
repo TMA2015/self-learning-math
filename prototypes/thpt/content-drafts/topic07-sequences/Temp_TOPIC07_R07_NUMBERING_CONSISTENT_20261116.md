@@ -37,13 +37,18 @@ Trên hình ngay dưới, dãy hữu hạn \(u_n=2n-1\) chỉ được cho với
 
 Dãy gồm 3, 6, 9 và **không có \(u_0\)** vì 0 không thuộc miền chỉ số. Nếu em tính \(u_0=0\), hãy phân biệt giá trị của biểu thức đại số tại 0 với số hạng thực sự thuộc dãy.
 
+
+**Kiểm lỗi**
+
+Nếu em tính thêm số hạng ở một chỉ số **ngoài tập đã cho**, em đang nhầm công thức đại số với miền chỉ số của dãy. Đọc lại **Kiến thức 1.1**, giải **Bài 2** (dãy hữu hạn không có số hạng thứ năm) và **Bài 1** (liệt kê đúng số hạng trong miền).
+
 </details>
 
 ### 1.2. Công thức tường minh và quy luật
 
 <!-- LESSON_ID: TOP07-M02; OUTCOME_ID: TOP07-O02 -->
 
-**Các cách cho một dãy số.** SGK sử dụng bốn cách trình bày bổ trợ nhau: **liệt kê** các số hạng, **mô tả bằng lời** một quy luật xác định, **cho công thức số hạng tổng quát** và **cho bằng hệ thức truy hồi** kèm điều kiện ban đầu. Chúng không phải bốn loại dãy riêng biệt: cùng một dãy có thể viết theo nhiều cách. Chẳng hạn, số ghế của các hàng lần lượt là \(12,15,18,21,\ldots\) khi biết rõ quy luật **hàng đầu có 12 ghế, mỗi hàng sau nhiều hơn 3 ghế**. Viết bằng công thức được \(u_n=12+3(n-1)\), \(n\ge1\); còn bằng truy hồi là \(u_1=12\), \(u_{n+1}=u_n+3\) với mọi \(n\ge1\). Liệt kê một vài số đầu **chỉ minh họa**; nếu không có lời mô tả, công thức hay giả thiết thêm thì chưa xác định được duy nhất các số tiếp theo.
+**Các cách cho một dãy số.** Có bốn cách thường dùng để cho một dãy số, bổ trợ nhau: **liệt kê** các số hạng, **mô tả bằng lời** một quy luật xác định, **cho công thức số hạng tổng quát** và **cho bằng hệ thức truy hồi** kèm điều kiện ban đầu. Chúng không phải bốn loại dãy riêng biệt: cùng một dãy có thể viết theo nhiều cách. Chẳng hạn, số ghế của các hàng lần lượt là \(12,15,18,21,\ldots\) khi biết rõ quy luật **hàng đầu có 12 ghế, mỗi hàng sau nhiều hơn 3 ghế**. Viết bằng công thức được \(u_n=12+3(n-1)\), \(n\ge1\); còn bằng truy hồi là \(u_1=12\), \(u_{n+1}=u_n+3\) với mọi \(n\ge1\). Liệt kê một vài số đầu **chỉ minh họa**; nếu không có lời mô tả, công thức hay giả thiết thêm thì chưa xác định được duy nhất các số tiếp theo.
 
 Cách nào thuận tiện tùy câu hỏi: cần ngay số hạng thứ \(100\) thì công thức tổng quát hiệu quả; biết mỗi bước phụ thuộc bước trước thì truy hồi tự nhiên hơn; bảng liệt kê hữu ích để **quan sát** nhưng không thay thế quy luật cần chứng minh.
 
@@ -65,6 +70,11 @@ Chẳng hạn, u_n=2n+1, n≥1 cho u_1=3,u_2=5,u_3=7 và u_10=21. Nhưng thêm m
 23; n bắt đầu từ 1 nhưng số hạng thứ sáu thế n=6, không phải 5.
 
 Nếu dùng n−1 vô cớ, phân biệt chỉ số của biểu thức với số lần tăng trong cấp số.
+
+
+**Kiểm lỗi**
+
+Nếu thế sai chỉ số hoặc cho rằng một giá trị có thể đạt chỉ vì biểu thức tiến gần tới nó, đọc lại **Kiến thức 1.2** rồi làm **Bài 5** (đúng thứ tự chỉ số) và **Bài 6** (kiểm tra một giá trị có thực sự là số hạng hay không).
 
 </details>
 
@@ -91,6 +101,11 @@ u_2=6,u_3=10; cần chạy truy hồi hai lần.
 
 Nếu nhảy trực tiếp từ u_1 đến u_3, ghi hai mũi tên n=1→2→3 và kiểm chênh lệch.
 
+
+**Kiểm lỗi**
+
+Nếu bỏ qua điều kiện đầu hoặc nhảy một bước khi dùng hệ thức truy hồi, đọc lại **Kiến thức 1.3**, làm **Bài 8** (tính từng bước) rồi **Bài 11** (chứng minh công thức tường minh bằng dãy đã cho).
+
 </details>
 
 ### 1.4. Chứng minh tăng, giảm
@@ -115,6 +130,11 @@ Chẳng hạn, u_n=n/(n+1) với n≥1. u_{n+1}−u_n=(n+1)/(n+2)−n/(n+1)=[(n+
 Giảm nghiêm ngặt vì 1/(n+1)<1/n với mẫu dương.
 
 Nếu chỉ nhìn 1,1/2,1/3 thì đó mới là gợi ý; chứng minh dấu cho mọi n.
+
+
+**Kiểm lỗi**
+
+Nếu chỉ dựa vào vài số hạng đầu để khẳng định dãy tăng/giảm, đọc lại **Kiến thức 1.4**; giải **Bài 14** và **Bài 16**, luôn xét dấu hiệu hai số hạng liên tiếp cho **mọi chỉ số hợp lệ**.
 
 </details>
 
@@ -142,6 +162,11 @@ Chẳng hạn, u_n=1−1/(n+1), n≥1. Vì 0<1/(n+1)≤1/2 nên 1/2≤u_n<1. u_1
 Không; 1/n>0 nên u_n<2 với mọi n nguyên dương.
 
 Phân biệt ký hiệu '≤' và '<'; thử giải u_n=2 bằng phương trình.
+
+
+**Kiểm lỗi**
+
+Nếu nhầm cận trên với số hạng lớn nhất, hoặc dấu nhỏ hơn nghiêm ngặt với dấu bằng, đọc lại **Kiến thức 1.5**, làm **Bài 19** (chứng minh hai cận) và **Bài 20** (cận dưới đạt, cận trên không đạt).
 
 </details>
 
@@ -178,6 +203,11 @@ Có, công sai d=0.
 
 Nếu thấy 'không tăng' rồi loại, nhớ CSC cho phép công sai 0.
 
+
+**Kiểm lỗi**
+
+Nếu loại một cấp số cộng chỉ vì các số hạng không tăng, đọc lại **Kiến thức 2.1**: công sai có thể bằng 0 hoặc âm. Làm **Bài 22** (hiệu âm không đổi) và **Bài 23** (nhận diện quy luật, viết công sai).
+
 </details>
 
 ### 2.2. Công thức số hạng tổng quát
@@ -202,6 +232,11 @@ Chẳng hạn, u_1=7,d=−2, u_6=7+5(−2)=−3. Ta chọn công thức tổng q
 u_4=10+3(−3)=1.
 
 Nếu tính thành −2, xem lại từ số hạng 1 đến 4 chỉ có 3 khoảng.
+
+
+**Kiểm lỗi**
+
+Nếu dùng n thay n−1 lần cộng công sai, đọc lại **Kiến thức 2.2**, làm **Bài 26** (tìm số hạng theo chỉ số) và **Bài 27** (giải số hạng xa). Đếm số *khoảng cách chỉ số* từ số hạng đầu.
 
 </details>
 
@@ -230,6 +265,11 @@ d=(16−7)/(5−2)=3.
 
 Không chia cho số thứ tự lớn hơn; chia chênh chỉ số.
 
+
+**Kiểm lỗi**
+
+Nếu tính công sai bằng cách chia cho số thứ tự thay vì **hiệu chỉ số**, đọc lại **Kiến thức 2.3**, làm **Bài 25** và **Bài 30**; lấy hiệu hai giá trị chia cho hiệu hai chỉ số rồi thế ngược để kiểm.
+
 </details>
 
 ### 2.4. Tổng các số hạng đầu
@@ -255,6 +295,11 @@ Chẳng hạn, CSC u_1=2,d=3,n=6 có u_6=17 và S_6=6(2+17)/2=57. Chọn ghép �
 
 Nếu lấy n bằng số cuối 9, viết rõ có bao nhiêu số được cộng.
 
+
+**Kiểm lỗi**
+
+Nếu nhầm số số hạng n với số hạng cuối, đọc lại **Kiến thức 2.4**, tính tổng ở **Bài 34** và **Bài 35** theo cặp đầu–cuối; kiểm xem đã xác định đúng n và u_n chưa.
+
 </details>
 
 ### 2.5. Bài toán tích lũy
@@ -279,6 +324,11 @@ Chẳng hạn, Xưởng tuần đầu làm 20 sản phẩm, mỗi tuần thêm 4
 8+10+12+14=44 ghế.
 
 Nếu chỉ trả số ghế hàng cuối, phân biệt 'mỗi hàng' và 'tổng toàn bộ'.
+
+
+**Kiểm lỗi**
+
+Nếu chỉ trả sản lượng hàng cuối thay vì tổng tất cả hàng/kỳ, đọc lại **Kiến thức 2.5**, giải **Bài 38** và **Bài 40**; trước khi cộng, ghi rõ số hàng và số ghế hàng cuối.
 
 </details>
 
@@ -315,6 +365,11 @@ Có, với q=0.
 
 Nếu loại vì phép chia 0/0, hãy quay lại định nghĩa u_{n+1}=qu_n.
 
+
+**Kiểm lỗi**
+
+Nếu cố tìm công bội bằng phép chia 0/0 hoặc loại q âm, q=0, đọc lại **Kiến thức 3.1**, làm **Bài 41** (q=0) và **Bài 44** (công bội âm). Ưu tiên hệ thức nhân liên tiếp thay vì phép chia khi mẫu bằng 0.
+
 </details>
 
 ### 3.2. Số hạng tổng quát
@@ -339,6 +394,11 @@ Chẳng hạn, u_1=−2, q=3, u_4=−2·3³=−54. Chọn số mũ 3 vì từ s�
 5(−2)³=−40.
 
 Đặt dấu âm trong ngoặc của lũy thừa; không tính −2³ như (−2)³ mà không xét ngữ cảnh.
+
+
+**Kiểm lỗi**
+
+Nếu đặt mũ là n thay cho n−1 hoặc làm mất dấu của công bội âm, đọc lại **Kiến thức 3.2**, làm **Bài 46** (số hạng thứ sáu) và **Bài 47** (công bội âm). Kiểm trực tiếp hai số hạng đầu.
 
 </details>
 
@@ -365,6 +425,11 @@ b²=36 ⇒ b=±6; q=b/2 là ±3.
 
 Nếu chỉ ra b=6, xem lại phép lấy căn bình phương.
 
+
+**Kiểm lỗi**
+
+Nếu từ q² chỉ lấy một căn dương mà đề **không yêu cầu mọi số hạng dương**, đọc lại **Kiến thức 3.3**, so **Bài 48** (giả thiết các số dương) với **Bài 50** (cả q dương và âm có thể thỏa).
+
 </details>
 
 ### 3.4. Tổng hữu hạn
@@ -390,6 +455,11 @@ S_5=5(−4)=−20; không chia cho 1−q=0.
 
 Nếu gặp 0 ở mẫu, tách q=1 trước.
 
+
+**Kiểm lỗi**
+
+Nếu dùng công thức có mẫu 1−q khi q=1, hoặc nhầm tổng hữu hạn với tổng vô hạn, đọc lại **Kiến thức 3.4**, làm **Bài 52** (q=1) và **Bài 55** (q khác 1). Thử cộng trực tiếp vài số hạng để kiểm dấu.
+
 </details>
 
 ### 3.5. Tổng vô hạn và phần dư
@@ -414,6 +484,11 @@ Chẳng hạn, Với u_1=6,q=1/2, S_n=12[1−(1/2)^n], S_∞=12; sau n=4 phần 
 Không; |q|=1, tổng riêng lần lượt 4,0,4,0,… không hội tụ.
 
 Nếu tự thay q=−1 vào biểu thức u_1/(1−q) được 2, đó là lạm dụng công thức ngoài miền |q|<1.
+
+
+**Kiểm lỗi**
+
+Nếu lấy tổng vô hạn khi |q|≥1 hoặc bỏ mất dấu phần dư với công bội âm, đọc lại **Kiến thức 3.5**, làm **Bài 58** (chuỗi lùi có hội tụ) và **Bài 61** (tổng cùng phần dư). Chỉ sử dụng công thức sau khi kiểm |q|<1.
 
 </details>
 
@@ -450,6 +525,11 @@ Không, 50·1,1²=60,5.
 
 Nếu ghi 60, bạn đã cộng 5 cố định và vô tình dùng CSC thay CSN.
 
+
+**Kiểm lỗi**
+
+Nếu nhầm tăng đều một lượng với tăng theo phần trăm của **giá trị kỳ trước**, đọc lại **Kiến thức 4.1**, làm **Bài 40** (mô hình cộng đều) rồi **Bài 63** (đặt hai quy luật tăng cạnh nhau theo chỉ số kỳ).
+
 </details>
 
 ### 4.2. Mô hình lãi kép
@@ -474,6 +554,11 @@ Chẳng hạn, P=10 triệu, r=6%/năm, hai năm: 10·1,06²=11,236 triệu. Ch�
 1·1,1²=1,21 triệu.
 
 Nếu làm thành 1,2 triệu, bạn đã dùng lãi đơn thay lãi kép; ghi rõ 'không nộp/rút'.
+
+
+**Kiểm lỗi**
+
+Nếu cộng cùng một khoản lãi mỗi kỳ dù đề đã nói **lãi nhập gốc**, đọc lại **Kiến thức 4.2**, giải **Bài 65** và **Bài 67**; ghi mốc kỳ 0, kỳ 1 rồi kỳ 2 và nhân hệ số tăng cho từng kỳ.
 
 </details>
 
@@ -503,6 +588,11 @@ Xét ví dụ đúng với sơ đồ: gửi **100 đơn vị vào cuối mỗi k
 20·1,1+20=42; khoản gửi cuối kỳ 2 chưa sinh lãi.
 
 Nếu nhân cả hai khoản với 1,1², vẽ trục kỳ 0–1–2 và đánh dấu ngay sau khi nộp.
+
+
+**Kiểm lỗi**
+
+Nếu cộng lãi cho khoản gửi ngay **cuối kỳ** vừa nộp hoặc nhầm thời điểm trả nợ với tính lãi, đọc lại **Kiến thức 4.3**, làm **Bài 68** (gửi đầu/cuối kỳ) và **Bài 69** (trả nợ cuối kỳ); vẽ trục thời gian và đánh dấu khoản tiền trước khi lập công thức.
 
 </details>
 
@@ -1550,5 +1640,20 @@ Hãy tự làm đủ 18 câu trước khi đối chiếu. Trình bày lý do ch�
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P18; NO_MASTERY; NOT_RD1 -->
 
 **Câu 18.** Gửi 40 đơn vị vào CUỐI mỗi kỳ của 3 kỳ, lãi cố định 5%/kỳ, không phí. (a) Số dư ngay sau khoản gửi cuối kỳ 3? (b) Nếu gửi 40 vào ĐẦU mỗi kỳ 1,2,3 thì số dư cuối kỳ 3 lớn hơn bao nhiêu?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Em hãy tự giải đủ 18 câu trước khi mở bảng này. Sau đó, xem **Lời giải** ở đúng bài trong phần **Luyện tập** để tự kiểm tra cách làm. Nếu còn nhầm, đọc lại mục Kiến thức và thực hiện lại bài tương ứng.
+
+| Câu tự kiểm tra | Bài có lời giải trong Luyện tập |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 – 5 | Bài 2 – 6 – 11 – 16 – 20 |
+| Câu 6 – 7 – 8 – 9 – 10 | Bài 23 – 27 – 30 – 35 – 40 |
+| Câu 11 – 12 – 13 – 14 – 15 | Bài 44 – 47 – 50 – 55 – 61 |
+| Câu 16 – 17 – 18 | Bài 63 – 67 – 68 |
+
+Các câu này là bài công khai đã học; việc tự đối chiếu **không phải đánh giá năng lực độc lập** và không ghi Mastery.
+
+</details>
 
 Học liệu được xây dựng dựa trên SGK Toán 11, Tập Một, Chương II (Bài 5–7) và Chương V (Bài 15), bộ Kết nối tri thức với cuộc sống. Các mô hình tài chính là tình huống toán học mở rộng tự biên soạn.
