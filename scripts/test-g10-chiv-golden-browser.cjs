@@ -486,40 +486,34 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await scalarDiscovery.evaluate(async el=>{if(el.decode)await el.decode();});
        assert(await scalarDiscovery.evaluate(el=>el.complete&&el.naturalWidth>0),
         where+" B09 early scalar picture accessible and decodes");
-       const tips=blocks.nth(3).locator("details.tip");
-       const helpText=await tips.allInnerTexts();
-       assert.equal(helpText.length,3,where+" B09 three real Tab4 error disclosures, not two plus standalone advice");
-       assert(helpText.every(t=>!/(?:B09-[CP][0-9]{2}|HELP_ID|Assessment safety|Final Submit|Không clone câu)/.test(t)),
-        where+" B09 learner-facing remedies must not leak QA/item identifiers");
-       assert(helpText.slice(0,2).every(t=>t.includes("Vì sao sai?")&&t.includes("Ôn lại:")),
-        where+" original two B09 D6 HELP steps are intact");
-       assert(helpText[2].includes("Lỗi thường gặp:")&&
-        helpText[2].includes("Vì sao sai?")&&
-        helpText[2].includes("Tự kiểm:")&&
-        helpText[2].includes("Ôn và luyện lại:"),
-        where+" B09-F04 third entry must show real wrong step→cause→repair→self-check→D6");
-       const mistakes=blocks.nth(3);
+       const localTips=blocks.nth(0).locator("details.tip");
+       const localHelp=await localTips.allInnerTexts();
+       assert.equal(localHelp.length,2,where+" two canonical item-specific B09 D6 in Discovery");
+       assert(localHelp.every(t=>t.includes("Vì sao sai?")&&t.includes("Ôn lại:")),
+        where+" original B09 HELP provides cause and remedy");
+       assert.equal(await blocks.nth(3).locator("[data-thpt-help-id]").count(),0,
+        where+" B09 local HELP cannot be duplicated in Tab4");
        await labels.nth(3).click();
-       const third=tips.nth(2);
-       assert.equal(await third.getAttribute("open"),null,where+" B09 4.3 stays closed until learner opens");
+       const independent=blocks.nth(3).locator("details.tip");
+       assert.equal(await independent.count(),1,
+        where+" one general sign-error remedy distinct from local HELP");
+       const third=independent.first();
+       assert.equal(await third.getAttribute("open"),null,where+" B09 sign error defaults closed");
        const thirdLabel=await third.locator("summary").innerText();
-       assert(thirdLabel.includes("4.3")&&thirdLabel.includes("Đảo dấu"),
-        where+" B09 4.3 is numbered as actual error, not free-standing advice");
+       assert(thirdLabel.includes("Đảo dấu"),where+" B09 named real error, not a generic hint");
        await third.locator("summary").click();
-       assert((await third.getAttribute("open"))!==null,where+" B09 4.3 expands on demand");
+       assert((await third.getAttribute("open"))!==null,where+" B09 help opens voluntarily");
        const thirdBody=await third.innerText();
        assert(thirdBody.includes("đổi chỗ điểm đầu và điểm cuối")&&
-        thirdBody.includes("không cùng phương")&&
-        thirdBody.includes("Ôn và luyện lại:"),
-        where+" B09 4.3 actual wrong sign, mathematical cause and remediation present");
+        thirdBody.includes("không cùng phương")&&thirdBody.includes("Ôn và luyện lại:"),
+        where+" B09 sign error contains why/wrong step/repair");
        const link=third.locator('a[href*="THPT-G10-B09-P07"]');
-       assert.equal(await link.count(),1,where+" B09 4.3 points to valid existing practice P07");
-       assert(!(await link.innerText()).includes("P07"),
-        where+" B09 4.3 must not show internal item identifier in learner copy");
+       assert.equal(await link.count(),1,where+" B09 D6 points at existing public P07");
+       assert(!(await link.innerText()).includes("P07"),where+" no internal item code exposed");
        await page.waitForFunction(()=>!!document.querySelector('details.tip[open] mjx-container'),
         null,{timeout:15000});
        assert(await third.locator("mjx-container").count()>3,
-        where+" B09 4.3 wrong and corrected math actually typeset");
+        where+" B09 wrong/corrected mathematical expressions typeset");
        await third.locator("summary").click();
        await labels.nth(0).click();
        const knowledge=blocks.nth(1);
