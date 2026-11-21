@@ -83,7 +83,7 @@
 
         <p><strong>Lỗi cần kiểm:</strong> Đồng nhất tia cuối với tổng góc đã quay.</p>
         <p><strong>Bước 1:</strong> Xác định đề hỏi vị trí cuối hay tổng chuyển động.</p>
-        <p><strong>Bước 2:</strong> Một vòng bằng (2pi) rad và đi hết chu vi (2pi R).</p>
+        <p><strong>Bước 2:</strong> Một vòng bằng \(2\pi\) rad và đi hết chu vi \(2\pi R\).</p>
         <p><strong>Bước 3:</strong> Giữ góc quay có dấu, nhưng quãng đường phải không âm.</p>
         <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
 
@@ -92,7 +92,7 @@
 
     Nếu từ cùng tia đầu, hai số đo chênh nhau trọn một số nguyên vòng, chúng cho cùng tia cuối. Chẳng hạn \(-150^\circ\) và \(210^\circ\) khác nhau \(360^\circ\). Điều này cho phép tìm giá trị lượng giác của góc lớn hơn một vòng mà không làm mất ý nghĩa chuyển động thực.
 
-    **Vận dụng.** Hai góc (-150^circ) và (210^circ) có cùng tia đầu Ox. Chúng có cùng tia cuối không? Viết các số đo cùng tia cuối với (210^circ).
+    **Vận dụng.** Hai góc \(-150^\circ\) và \(210^\circ\) có cùng tia đầu Ox. Chúng có cùng tia cuối không? Viết các số đo cùng tia cuối với \(210^\circ\).
 
     <span data-ped-first-try="1" data-outcome-id="G11-B01-COTERMINAL" data-thpt-first-try-id="THPT-G11-CHI-TRY02" hidden></span>
 
@@ -106,8 +106,8 @@
 
         <p><strong>Lỗi cần kiểm:</strong> Không xét số nguyên âm trong công thức các góc cùng tia cuối.</p>
         <p><strong>Bước 1:</strong> Lấy hiệu hai số đo góc cùng đơn vị.</p>
-        <p><strong>Bước 2:</strong> Kiểm hiệu có bằng một bội nguyên của (360^circ) không.</p>
-        <p><strong>Bước 3:</strong> Viết (kinmathbb Z), không hạn chế chỉ những góc dương.</p>
+        <p><strong>Bước 2:</strong> Kiểm hiệu có bằng một bội nguyên của \(360^\circ\) không.</p>
+        <p><strong>Bước 3:</strong> Viết \(k\in\mathbb Z\), không hạn chế chỉ những góc dương.</p>
         <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
 
 
@@ -117,7 +117,7 @@
 
     Trạm vũ trụ ISS chuyển động trên quỹ đạo cách bề mặt Trái Đất khoảng 400 km. Với bán kính Trái Đất khoảng 6400 km, bán kính quỹ đạo là 6800 km. Khi trạm quét góc ở tâm \(45^\circ\), cần đổi đơn vị góc trước khi tìm quãng đường cung.
 
-    **Vận dụng.** Cho quỹ đạo tròn bán kính 6800 km. Tính độ dài cung chắn góc (45^circ), làm tròn đến kilômét.
+    **Vận dụng.** Cho quỹ đạo tròn bán kính 6800 km. Tính độ dài cung chắn góc \(45^\circ\), làm tròn đến kilômét.
 
     <span data-ped-first-try="1" data-outcome-id="G11-B01-ARC_LENGTH" data-thpt-first-try-id="THPT-G11-CHI-TRY03" hidden></span>
 
@@ -131,7 +131,7 @@
 
         <p><strong>Lỗi cần kiểm:</strong> Nhân bán kính với số 45 trong công thức dành cho radian.</p>
         <p><strong>Bước 1:</strong> Đổi góc độ sang radian.</p>
-        <p><strong>Bước 2:</strong> Dùng (s=R|alpha|), đơn vị là km.</p>
+        <p><strong>Bước 2:</strong> Dùng \(s=R|\alpha|\), đơn vị là km.</p>
         <p><strong>Bước 3:</strong> Kiểm cung một phần tám vòng thì dài đúng một phần tám chu vi.</p>
         <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
 
@@ -144,7 +144,7 @@
 
     Trên hình, góc \(5\pi/6\) nằm ở góc phần tư II nên cos âm và sin dương. Để tính góc khác, em dùng **góc tham chiếu** cho độ lớn, sau đó gắn đúng dấu theo góc phần tư.
 
-    **Vận dụng.** Tính (sin(7pi/6)), (cos(7pi/6)) và (	an(7pi/6)).
+    **Vận dụng.** Tính \(\sin(7\pi/6)\), \(\cos(7\pi/6)\) và \(\tan(7\pi/6)\).
 
     <span data-ped-first-try="1" data-outcome-id="G11-B01-UNIT_CIRCLE" data-thpt-first-try-id="THPT-G11-CHI-TRY04" hidden></span>
 
@@ -158,7 +158,7 @@
 
         <p><strong>Lỗi cần kiểm:</strong> Đúng góc tham chiếu nhưng quên dấu sin/cos của góc phần tư.</p>
         <p><strong>Bước 1:</strong> Xác định góc phần tư của điểm cuối.</p>
-        <p><strong>Bước 2:</strong> Lấy trị tuyệt đối sin/cos từ (pi/6), sau đó gắn dấu.</p>
+        <p><strong>Bước 2:</strong> Lấy trị tuyệt đối sin/cos từ \(\pi/6\), sau đó gắn dấu.</p>
         <p><strong>Bước 3:</strong> Chỉ tính tan khi cos khác 0; kiểm dấu tan bằng dấu tỉ số.</p>
         <p><strong>Luyện tiếp:</strong> Chọn bài cùng kiến thức trong Core và Luyện tập; tự làm lại trước khi mở lời giải.</p>
 
@@ -167,7 +167,7 @@
 
     Tang là tỉ số sin/cos; côtang là cos/sin. Khi điểm cuối nằm trên trục Oy, cos bằng 0 nên tan không xác định; khi điểm nằm trên trục Ox, sin bằng 0 nên cot không xác định. Không được coi “không xác định” là bằng 0.
 
-    **Vận dụng.** Với (alpha=3pi/2), xác định (sinalpha,cosalpha); xét sự tồn tại của (	analpha,cotalpha).
+    **Vận dụng.** Với \(\alpha=3\pi/2\), xác định \(\sin\alpha,\cos\alpha\); xét sự tồn tại của \(\tan\alpha,\cot\alpha\).
 
     <span data-ped-first-try="1" data-outcome-id="G11-B01-TRIG_DOMAIN" data-thpt-first-try-id="THPT-G11-CHI-TRY05" hidden></span>
 
@@ -190,7 +190,7 @@
 
     Từ đối xứng trên đường tròn đơn vị, ta tìm nhanh sin/cos của các góc đối, bù, phụ và hơn kém \(\pi\). Cần xác định đúng loại góc trước khi sử dụng dấu.
 
-    **Vận dụng.** Tính (sin(-pi/6)) và (cos(pi-pi/6)) dựa vào góc chuẩn (pi/6).
+    **Vận dụng.** Tính \(\sin(-\pi/6)\) và \(\cos(\pi-\pi/6)\) dựa vào góc chuẩn \(\pi/6\).
 
     <span data-ped-first-try="1" data-outcome-id="G11-B01-RELATED_ANGLES" data-thpt-first-try-id="THPT-G11-CHI-TRY06" hidden></span>
 
@@ -280,37 +280,37 @@
 
     ### 3.1. Ví dụ — Đổi đơn vị và tìm góc cùng tia cuối
 
-    **Đề bài.** Đổi (-150^circ) sang radian và tìm góc trong ([0;2pi)) cùng tia cuối.
+    **Đề bài.** Đổi \(-150^\circ\) sang radian và tìm góc trong \([0;2\pi)\) cùng tia cuối.
 
     **Phân tích.** Đổi đơn vị cho số đo có dấu; chỉ sau đó cộng trọn một vòng để tìm đại diện cùng tia cuối.
 
     <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(-150^\circ=-150\pi/180=-5\pi/6\) rad. Cộng \(2\pi\) được \(-5\pi/6+2\pi=7\pi/6\), thuộc \([0;2\pi)\).</p></div>
 
-    **Kiểm lại.** Giá trị (7pi/6) là đại diện của tia cuối, không thay chiều quay âm ban đầu.
+    **Kiểm lại.** Giá trị \(7\pi/6\) là đại diện của tia cuối, không thay chiều quay âm ban đầu.
 
     ### 3.2. Ví dụ — Tính độ dài cung trên quỹ đạo
 
-    **Đề bài.** Trạm vũ trụ chuyển động trên cung tròn bán kính 6800 km, quét góc ở tâm (45^circ). Tính độ dài cung, làm tròn đến kilômét.
+    **Đề bài.** Trạm vũ trụ chuyển động trên cung tròn bán kính 6800 km, quét góc ở tâm \(45^\circ\). Tính độ dài cung, làm tròn đến kilômét.
 
-    **Phân tích.** Do công thức độ dài cung dùng radian, đổi (45^circ) trước; bán kính không bị trừ khỏi chiều dài cung.
+    **Phân tích.** Do công thức độ dài cung dùng radian, đổi \(45^\circ\) trước; bán kính không bị trừ khỏi chiều dài cung.
 
     <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(45^\circ=\pi/4\) rad, nên \(s=6800\cdot\pi/4=1700\pi\approx5341\) km.</p></div>
 
-    **Kiểm lại.** Cung một phần tám vòng bằng một phần tám chu vi (2picdot6800), đúng kết quả.
+    **Kiểm lại.** Cung một phần tám vòng bằng một phần tám chu vi \(2\pi\cdot6800\), đúng kết quả.
 
     ### 3.3. Ví dụ — Tính giá trị lượng giác trên đường tròn
 
-    **Đề bài.** Cho (alpha=5pi/6). Tìm (sinalpha,cosalpha,	analpha,cotalpha).
+    **Đề bài.** Cho \(\alpha=5\pi/6\). Tìm \(\sin\alpha,\cos\alpha,\tan\alpha,\cot\alpha\).
 
-    **Phân tích.** Điểm cuối ở góc phần tư II; góc tham chiếu (pi/6) cho độ lớn, góc phần tư cho dấu.
+    **Phân tích.** Điểm cuối ở góc phần tư II; góc tham chiếu \(\pi/6\) cho độ lớn, góc phần tư cho dấu.
 
     <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(\sin\alpha=1/2,\ \cos\alpha=-\sqrt3/2\). Tang là \((1/2)/(-\sqrt3/2)=-\sqrt3/3\); côtang \((-\sqrt3/2)/(1/2)=-\sqrt3\).</p></div>
 
-    **Kiểm lại.** Kiểm (sin^2alpha+cos^2alpha=1) và (	analphacotalpha=1).
+    **Kiểm lại.** Kiểm \(\sin^2\alpha+\cos^2\alpha=1\) và \(\tan\alpha\cot\alpha=1\).
 
     ### 3.4. Ví dụ — Dùng hệ thức cơ bản và dấu góc phần tư
 
-    **Đề bài.** Biết (cosalpha=-2/3), (pi<alpha<3pi/2). Tính (sinalpha,	analpha,cotalpha).
+    **Đề bài.** Biết \(\cos\alpha=-2/3\), \(\pi<\alpha<3\pi/2\). Tính \(\sin\alpha,\tan\alpha,\cot\alpha\).
 
     **Phân tích.** Góc ở phần tư III nên sin âm. Hệ thức cơ bản cho bình phương sin, chưa tự quyết định được dấu.
 
@@ -320,9 +320,9 @@
 
     ### 3.5. Ví dụ — Quy góc lớn về góc thường gặp
 
-    **Đề bài.** Tính (sin(-675^circ)) và (cot(-675^circ)).
+    **Đề bài.** Tính \(\sin(-675^\circ)\) và \(\cot(-675^\circ)\).
 
-    **Phân tích.** Giá trị lượng giác phụ thuộc tia cuối, nên cộng hai vòng để đưa góc đã cho về (45^circ).
+    **Phân tích.** Giá trị lượng giác phụ thuộc tia cuối, nên cộng hai vòng để đưa góc đã cho về \(45^\circ\).
 
     <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(-675^\circ+720^\circ=45^\circ\). Suy ra \(\sin(-675^\circ)=\sin45^\circ=\sqrt2/2\) và \(\cot(-675^\circ)=\cot45^\circ=1\).</p></div>
 
@@ -330,13 +330,13 @@
 
     ### 3.6. Ví dụ — Phân biệt chiều quay và độ dài
 
-    **Đề bài.** Bánh xe bán kính 30 cm quay góc (-2pi/3) rad. Xác định chiều quay và độ dài cung đã đi.
+    **Đề bài.** Bánh xe bán kính 30 cm quay góc \(-2\pi/3\) rad. Xác định chiều quay và độ dài cung đã đi.
 
     **Phân tích.** Góc âm biểu thị chiều thuận kim đồng hồ; độ dài cung là đại lượng không âm.
 
     <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Góc quay âm nên chuyển động theo chiều kim đồng hồ. Độ dài cung \(s=30\cdot|-2\pi/3|=20\pi\) cm.</p></div>
 
-    **Kiểm lại.** Cung dài bằng một phần ba chu vi (60pi) cm, phù hợp với độ lớn góc (2pi/3).
+    **Kiểm lại.** Cung dài bằng một phần ba chu vi \(60\pi\) cm, phù hợp với độ lớn góc \(2\pi/3\).
 
 
 === "Lỗi thường gặp"
