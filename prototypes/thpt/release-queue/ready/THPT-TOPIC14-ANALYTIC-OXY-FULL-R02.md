@@ -1,3 +1,8 @@
+<!-- TOP14_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
+**CURRENT AUTHORING content snapshot, NOT website RELEASE:** same one R02 CĐ14 learner `prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md` source SHA **`ff3d838680899b3c0a54ddd5774bebdf2f7d7d19`** (source commit `f1a10ca651859d10112a0b363677f08a860997c7`), Q18 existing v3.2.0 `AUTHOR_SELF_VERIFIED` blob `f2b0f32b7b9be7d0d4329f9f4359979b0622e3b9`, A1 author metadata `291d03fbd0901fa25906c991ff48d34ffcf97f09` and same one V2 handoff `750baf9362eda3f0929a60bca5d572270d4e1b6b`. In sole ledger #977, #045 P1: all **23** first-try opt-in answer reveals now have accurate `Kiểm lỗi`→correct Knowledge→two authentic Practice Bài retry; #046 P2: one optional after-23-public-question table maps all exact shared original canonical IDs to existing answer positions `17,18,19,20,21,22,23,39,40,41,42,43,59,60,61,62,63,80,81,82,83,84,85`; #047 P2: **87 sequential learner Bài luyện 1–87** across four math groups with clearer learner-purpose cues, one full Topic SGK source-credit at end. All **87/87 original canonical mathematical stem/key/solution/rubric** (9 Written) byte exact; 23 original public question-only selfchecks unchanged; 3 original SVG unchanged, **111/111** disclosures balanced. **P2 editorial original-G10-owner follow-up remains**: shared item `THPT-G10-B22-P03` answer mentions “SGK”, original Written `THPT-G10-CHVII-W22-01` answer displays “Depth note ... SGK”, from original G10 bank projection. Do NOT modify only Topic representation and violate Q15; original source-equivalent word edit/QA needed by G10 owner if exact one-location source wording to be enforced. Source-math/PED AUTHOR_SELF_VERIFIED affected scope, no independent NotebookLM Topic PASS, no browser AP/R, RD1/Mastery/Final Submit, merge/deploy or owner RELEASE authorization.
+
+---
+
 # CĐ14 — Phương pháp tọa độ Oxy · AUTHORING CONTENT_READY R02
 
 PACKET_ID: THPT-TOPIC14-ANALYTIC-OXY-FULL-R02
@@ -8,19 +13,19 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 6226de8daca6f09df1490fc7b9cbeaee42321557
+SOURCE_COMMIT: f1a10ca651859d10112a0b363677f08a860997c7
 CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
+ACADEMIC_SOURCE_BLOB: ff3d838680899b3c0a54ddd5774bebdf2f7d7d19
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author-self; NO new independent NotebookLM Topic14 verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: a62e6b1e43bc96e7a6a5b81bceb410c36293e489
+REVIEW_RECEIPT_BLOB: f2b0f32b7b9be7d0d4329f9f4359979b0622e3b9
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 75d65376414f88c403d1ce9461d2d9eee8cd8689
+AUTHOR_A1_A7_BLOB: 291d03fbd0901fa25906c991ff48d34ffcf97f09
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC14-ANALYTIC-OXY-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: cbbcb35ecd4102d585ef80643af4cd119c234b6a
+AUTHOR_HANDOFF_BLOB: 750baf9362eda3f0929a60bca5d572270d4e1b6b
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
 SVG1_BLOB: 57485fed0a5dcee6ebcd060f100abe5eed43bc76
