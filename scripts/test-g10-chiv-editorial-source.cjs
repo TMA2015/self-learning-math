@@ -346,8 +346,12 @@ for(const [lesson,row] of rows){
   assert(r06.includes("Q18_AUTHOR_SELF_VERIFIED")&&r06.includes("B09-F04"),
    "B09 real-error corrected Tab4 requires scoped Q18 self-QA receipt");
   const mistakes=source.slice(source.indexOf('=== "Lỗi thường gặp"'));
-  assert.equal((mistakes.match(/^    \?\?\? tip "/gm)||[]).length,3,
-   "B09 Tab4 must have exactly three real error disclosures 4.1–4.3");
+   // Signed 20/11 HELP relocation put 2 canonical D6 after Vận dụng.
+   assert.equal((mistakes.match(/^    \?\?\? tip "/gm)||[]).length,1,
+    "B09 final Tab4 contains only independent B09-F04 error");
+   assert.equal((source.split('=== "Kiến thức SGK"')[0]
+    .match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,2,
+    "B09 two original local HELP must remain next to Vận dụng");
   assert(!mistakes.includes("**Khi chưa phân tích được vectơ theo hai hướng:**"),
    "B09 P2 regression: standalone method advice is NOT an error");
   assert(mistakes.includes('??? tip "Đảo dấu khi phân tích vectơ theo hai vectơ không cùng phương"')&&
