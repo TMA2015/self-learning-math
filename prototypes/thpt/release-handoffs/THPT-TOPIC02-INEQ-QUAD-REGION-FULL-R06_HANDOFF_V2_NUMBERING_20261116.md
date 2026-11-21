@@ -1,3 +1,9 @@
+<!-- MASTER974_TOPIC02_O04_O06_AFFECTED_SCOPED_CURRENT_V2_20261121 -->
+## CURRENT AUTHORING CĐ02 — exact same canonical packet and R06 learner path
+Learner Git blob `3161436a92a450e17aaf5c6b53736f70d9d5bfa0` corrects two **verified mathematical/pedagogical errors** only in TOP02-O04/O06: no sign flip at a double root, and evaluating the actual boundary points for `−x²+4x−3>0`. Signed author self-Q18 `08a67fa54b230a03422bc851a1d934aede189095`, author metadata `da7632535fc6c71fca4eb05622292b88d3186de6`. **DELTA_C** affected-scope, not a new NotebookLM independent verdict. Exact original 38 PUBLIC canonical bank items, four Written rubrics, 16 selfcheck public questions and three SVG retained. Historical R06 prior signed blob/receipt remain in Git history; R07 candidate is NOT active. Not an integrated or released Topic; no merge/deploy.
+
+---
+
 # AUTHORING CONTENT_READY — CĐ02/22 Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm · Current learner R06 / V2 canonical packet
 
 **CĐ02 là đơn vị học độc lập** trong danh mục 22; S1 KNTT lớp 10 chương II và B17 chỉ xác thực phạm vi/toán, không cấu trúc chuyên đề như SGK. Ba trang Knowledge/Practice/Self-check; 2 interactive models SPEC_ONLY. AUTHORING Draft PR #818, **no merge/deploy**, runtime TOPIC_ID chưa được chủ dự án gán.
@@ -5,7 +11,7 @@
 PACKET_ID: THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 9fd8df6cad90e212bbdfaed74971937a0845e476
+AUTHOR_METADATA_BLOB: da7632535fc6c71fca4eb05622292b88d3186de6
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
@@ -13,9 +19,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 6c975c6f19c11193fad7546cebccb27a9bcbcd2b
+ACADEMIC_SOURCE_BLOB: 3161436a92a450e17aaf5c6b53736f70d9d5bfa0
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: caa5371a764d5f622d28cf249423c74df1d06d50
+REVIEW_RECEIPT_BLOB: 08a67fa54b230a03422bc851a1d934aede189095
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
