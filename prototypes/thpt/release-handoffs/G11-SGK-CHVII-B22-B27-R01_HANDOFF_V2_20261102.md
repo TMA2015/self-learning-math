@@ -1,3 +1,6 @@
+<!-- OWNER_APPROVED_G11_CHVII_51_SAME_CANONICAL_ANSWER_LABELS_DELTA_B_20261121 -->
+**CURRENT SGK AUTHORING SOURCE** `5646241f4bb72f12419aaf585ee1fbea6f4185d0` and Q18 targeted Delta B `3c4c0b30afa53117f4244eafbaa33f8488fd6160`; original historic independent Academic/PED review `25e7be8637cdd9cfe021fbc70537e44bbdec04e2` immutable. Exactly 51 source-owned public answer labels become **Đáp án** instead of **Đáp án sau Submit luyện tập**; entire original answer content/stem/reasoning/rubrics unchanged, CĐ16 and CĐ17 source projects share same Git blob. Q16 Final Submit/Mastery code unmodified; owner SGK branch #708 no merge/deploy, release still HOLD.
+---
 # G11 Chương VII B22_B27 — signed V2 immutable-source AUTHORING handoff
 
 PACKET_ID: G11-SGK-CHVII-B22-B27-R01
@@ -8,9 +11,9 @@ LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 STATE: CONTENT_READY_AUTHORING_ONLY
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
-ACADEMIC_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
-REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHVII_B22_B27_V2_COMPOSITE_HISTORIC_REVIEW_AND_OWNER_S1_RECEIPT_20261102.md
-REVIEW_RECEIPT_BLOB: 25e7be8637cdd9cfe021fbc70537e44bbdec04e2
+ACADEMIC_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0
+REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_G11_CHVII_B22_B27_PUBLIC_ANSWER_LABEL_DELTA_B_Q18_20261121.md
+REVIEW_RECEIPT_BLOB: 3c4c0b30afa53117f4244eafbaa33f8488fd6160
 ACADEMIC_VERDICT: PASS
 PEDAGOGICAL_VERDICT: PASS
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
