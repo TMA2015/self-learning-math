@@ -1,12 +1,29 @@
+<!-- TOP21_MASTER974_CURRENT_A1_A7_20261121 -->
+## CĐ21 current A1–A7 / same Q01–Q18 v3.2 author scope
+
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+CURRENT_SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
+CURRENT_Q15_MATRIX_BLOB: 188fe6c44f55b081be9b28f25e905de483129189
+CURRENT_Q18_SIGNED_AUTHOR_BLOB: b0ba354f6edd5c2477aa121457570119928ccef1
+CURRENT_ROUTE_TREE_SVG_BLOB: daeff4448dd64f89feef080039c73c9f437d016f
+CURRENT_SOURCE_COMMIT: 17d155a9bb939e221dbd6c6dad7dc8594f77bcbe
+VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+
+**A1/Q01–Q02 S1 inheritance:** Toán 12 KNTT Tập Hai ChVI B18–B19 original source receipt and prior independent **D6-only** reviewer original scope remain immutable historical; no new original PDF image page audit and no new independent full Topic NotebookLM report for this latest learner. 8 actual probability concept-first Knowledge outcome lessons covering conditional P(A|B), P(B)>0, dependent sequential probability, total probability over exhaustive disjoint sources, Bayes and prior/base-rate, with independently fully stated examples and 8 Vận dụng before opt-in answer.
+
+**A2–A7/Q03–Q18 current source parity:** eight original complete Topic FirstTry answers and detailed pre-existing 8 meaningful D6 diagnoses retained with only role label `Kiểm lỗi` standardized; original 8 Practice and 3 Written /4 full mathematical question+key+solution/rubric bodies exactly unchanged, only three Written display headings and captions become Bài luyện9–11 after original Practice1–8. Eight same-ID public question-only Selfchecks P01–P08 remain question-body identical; one voluntary after-all-eight `Đối chiếu` locates existing solved original Practice Bài luyện1–8; `CLIENT_SELF_CHECK_NO_MASTERY` and no protected official readiness/Final Submit/Mastery. Exactly 19 canonical public item IDs, 27 total placements, all exact line/outcome/role/version entries on current Q15 source `188fe6c44f55b081be9b28f25e905de483129189`, no new math content-version bumped. SVG total probability original unchanged; original route-tree SVG math unchanged, one student-visible wrong section caption `Kiến thức 7` corrected to 3.1 on asset `daeff4448dd64f89feef080039c73c9f437d016f`. Original optional public probability HTML model preserved; one final source credit, 20 voluntary balanced opt-in disclosures. S1/17–20/11 historic proof carries forward on unchanged maths only; changed labels/image placement SELF verified on current SHA signed by Q18 `b0ba354f6edd5c2477aa121457570119928ccef1`. This source-only AUTHORING clearance is not website browser/RELEASE AP/R real device, private assessment activation, owner merge/deploy authorization or independent current full Topic reviewer PASS.
+---
+
 # CĐ21 R05 · A1–A7 TECHNICAL SOURCE EQUIVALENCE + original outcome audit · 16/11/2026
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: ab886f53b9bee89f71a852febb7f2d9ccfff2373
-CURRENT_Q18_RECEIPT_BLOB: d7625fbe3b7f02a99485687ed49f499decf3b913
-CURRENT_Q15_MATRIX_BLOB: d8ec7c462fa229508b0129b64cca90d68fb339ff
+SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
+CURRENT_Q18_RECEIPT_BLOB: b0ba354f6edd5c2477aa121457570119928ccef1
+CURRENT_Q15_MATRIX_BLOB: 188fe6c44f55b081be9b28f25e905de483129189
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 A1_A7_AUTHOR_VERDICT: TECHNICAL_PARITY_PASS_R05__R04_ACADEMIC_AUTHOR_SELF_QA_FROZEN
