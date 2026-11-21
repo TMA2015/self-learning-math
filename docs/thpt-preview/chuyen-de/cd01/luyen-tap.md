@@ -16,6 +16,7 @@ hide:
 
 <!-- TOPIC01_APPROVED_SOURCE_START -->
 
+
 # Luyện tập
 
 Hãy tự làm bài, kiểm điều kiện, thử tìm phản ví dụ và viết lý do chọn phép tính trước khi mở lời giải. Nếu còn nhầm, em có thể quay lại mảng Kiến thức liên quan rồi giải một bài khác.
@@ -347,5 +348,6 @@ Trong 50 học sinh, 31 tham gia CLB Hát, 27 tham gia CLB Robot, 12 tham gia c�
 Giao 12. Chỉ Hát=31−12=19; chỉ Robot=27−12=15; hợp=19+12+15=46 (=31+27−12); ngoài=50−46=4. Kiểm 19+12+15+4=50.
 
 </details>
+
 <!-- TOPIC01_APPROVED_SOURCE_END -->
 <p class="topic01-end-nav"><a href="../../">← Tổng quan các Chuyên đề</a> · <a href="../tu-kiem-tra/">Tiếp tục: Tự kiểm tra →</a></p>

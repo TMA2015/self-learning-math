@@ -16,6 +16,7 @@ hide:
 <span data-topic01-knowledge-start hidden></span>
 
 <!-- TOPIC01_APPROVED_SOURCE_START -->
+
 # Chuyên đề 01 · Mệnh đề, tập hợp và tư duy logic toán học
 
 Khi học một khái niệm toán, điều quan trọng không chỉ là nhớ ký hiệu mà là biết mình đang khẳng định điều gì, dựa vào đâu để kết luận và có bỏ sót trường hợp nào không. Chuyên đề này đưa em đi từ việc kiểm tra một câu nói đến việc mô tả các nhóm đối tượng bằng tập hợp, rồi dùng chính các tập hợp ấy để giải quyết bài toán đếm.
@@ -456,6 +457,7 @@ Nếu em cộng 26 và 30 rồi coi ngay đó là số bạn tham gia ít nhất
 > - **Các tập hợp số:** \(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\); số hữu tỉ viết được dưới dạng \(a/b\) với \(a,b\in\mathbb Z,\ b\ne0\), còn số vô tỉ không viết được như vậy.
 > - **Tập hợp:** \(A\cap B\) chứa các phần tử thuộc cả hai; \(A\cup B\) thuộc ít nhất một; \(A\setminus B\) thuộc A nhưng không thuộc B. Phần bù phải nói rõ tập vũ trụ \(U\).
 > - **Khoảng và bài toán đếm:** phân biệt dấu ngoặc nhận/loại điểm mút; với hai tập hữu hạn, \(|A\cup B|=|A|+|B|-|A\cap B|\), tránh đếm trùng vùng giao.
+
 <!-- TOPIC01_APPROVED_SOURCE_END -->
 <span data-topic01-knowledge-end hidden></span>
 <p class="topic01-end-nav"><a href="../../">← Tổng quan các Chuyên đề</a> · <a href="../luyen-tap/">Tiếp tục: Luyện tập →</a></p>

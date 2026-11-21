@@ -16,6 +16,7 @@ hide:
 
 <!-- TOPIC01_APPROVED_SOURCE_START -->
 
+
 # Tự kiểm tra
 
 Hãy tự làm đủ 11 câu trước khi đối chiếu. Các câu này là bài công khai đã học, giúp em biết phần nào còn nhầm chứ không phải kiểm tra năng lực độc lập. Sau khi làm xong, mở lời giải bài tương ứng trong Luyện tập để tự sửa và thử lại.
@@ -78,5 +79,6 @@ Sau khi tự hoàn thành 11 câu, em mở **Lời giải** của các bài tư�
 </details>
 
 Học liệu được xây dựng dựa trên Chương I SGK Toán 10, Tập Một – Kết nối tri thức với cuộc sống.
+
 <!-- TOPIC01_APPROVED_SOURCE_END -->
 <p class="topic01-end-nav"><a href="../../">← Tổng quan các Chuyên đề</a></p>
