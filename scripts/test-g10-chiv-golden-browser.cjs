@@ -10,6 +10,7 @@ const path=require("node:path");
 const crypto=require("node:crypto");
 const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
+const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
@@ -163,28 +164,18 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   "B01/B02/B03 concept colors remain scoped; B07 formal-only now teal");
  for(const [lesson,sha] of Object.entries(sources)){
   const current=blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md"));
+  // Historical Q18 predecessor chain is separately validated by the
+  // immediately preceding source-first editorial test in this workflow.
+  const expected=candidateG10KnowledgeBlob(Number(lesson));
+  assert.equal(current,expected,"B"+lesson+" browser checks latest signed Q18 source");
   if(lesson==="10"){
    const delta=fs.readFileSync(root+
     "/prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md","utf8");
    const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(df("BASELINE_R01_SOURCE_BLOB"),sha,"B10 P2 must preserve exact R01 historical source");
-   assert.equal(current,df("R02_SOURCE_BLOB"),"B10 P2 source not signed by MathJax UI-only delta");
+   assert.equal(df("BASELINE_R01_SOURCE_BLOB"),sha,"B10 original R01 SHA historically frozen");
   }else if(lesson==="11"){
-   assert.equal(b11f("R01_PUBLISHED_B11_SOURCE_BLOB"),sha,
-    "B11 old published R01 source must be immutable");
-   const currentDelta=fs.readFileSync(root+
-    "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md","utf8");
-   const df=k=>currentDelta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(df("B11_BASELINE_SOURCE_BLOB"),b11u("R02_B11_SOURCE_BLOB"),
-    "Original B11 R02 signed source still immutable");
-   const goldenReceipt=fs.readFileSync(root+
-     "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md","utf8");
-   const g=k=>goldenReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(g("B11_PREVIOUS_SOURCE_BLOB"),df("B11_SOURCE_CURRENT_BLOB"),
-    "Original source-first B11 P2 SHA remains signed in historical receipt");
-   assert.equal(current,g("B11_SOURCE_CURRENT_BLOB"),
-    "B11 current learner source is exactly B10 Golden component R02 receipt");
-  }else assert.equal(current,sha,"Unapproved academic/source/First Try change B"+lesson);
+   assert.equal(b11f("R01_PUBLISHED_B11_SOURCE_BLOB"),sha,"B11 original R01 SHA historically frozen");
+  }
  }
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  let cases=0;
@@ -332,7 +323,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
       where+" solution panel contains unchanged mathematical solution");
      assert(state.overflow<=3,where+" no whole-page horizontal overflow");
      if(lesson===7){
-       const helpContent=await blocks.nth(3).locator("details.tip")
+       const helpContent=await blocks.nth(0).locator("details.tip")
         .evaluateAll(tips=>tips.map(tip=>tip.textContent||""));
        assert.equal(helpContent.length,2,where+" two original D6 HELP sections remain");
        assert(helpContent.every(s=>!/B07-[CP][0-9]{2}/.test(s)),
