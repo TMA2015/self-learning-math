@@ -32,6 +32,17 @@ for(const row of rows){
  const active=[...html.matchAll(/<label\b[^>]*class="slm-g10-active-tab"[^>]*>(.*?)<\/label>/g)];
  assert.equal(active.length,1,row.rel+" initial active tab count");
  assert.equal(active[0][1],labels[0],row.rel+" initial selected tab");
+
+ const initialNav=[...html.matchAll(/<nav class="thpt-r4-lesson-tabs thpt-sgk-lesson-nav" data-sgk-lesson-nav="([^"]+)"/g)];
+ assert.equal(initialNav.length,1,row.rel+" exactly one initial SGK navigation");
+ assert.equal(initialNav[0][1],row.grade+"-B"+row.n,row.rel+" navigation owner route");
+ assert.equal(attr(html,"data-sgk-lesson-link").length,(row.n===1||row.n===(row.grade===10?27:33)?3:4),
+  row.rel+" exactly four navigation choices, with disabled edge slots");
+ // G10's existing runtime removes only these decorative hero leads after load;
+ // they must not flash and then disappear on the first browser paint.
+ if(row.grade===10&&row.n<=22)
+  assert(!html.includes('<p class="thpt-r4-lead">'),row.rel+" decorative lead still flashes");
+
  for(const k of ["data-thpt-first-try-id","data-thpt-help-id"])
   assert.deepEqual(attr(html,k),attr(source,k),row.rel+" Q15 source-to-DOM "+k);
 }
@@ -72,13 +83,21 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
         headingBorder:parseFloat(hs.borderLeftWidth),
         rootClasses:a.className,hasDirectTabs:Boolean(a.querySelector(":scope > .tabbed-set")),
         hybridStyleLinks:[...document.querySelectorAll("link[rel=stylesheet]")].filter(x=>x.href.includes("thpt-g10-knowledge-hybrid-l1-v1.css")).map(x=>x.href),
-        styleSheets:document.styleSheets.length};
+        styleSheets:document.styleSheets.length,
+        navCount:a.querySelectorAll(".thpt-r4-screen > nav[data-sgk-lesson-nav]").length,
+        navId:a.querySelector(".thpt-r4-screen > nav[data-sgk-lesson-nav]")?.dataset.sgkLessonNav,
+        navChoices:a.querySelectorAll(".thpt-r4-screen nav.thpt-sgk-lesson-nav > a, .thpt-r4-screen nav.thpt-sgk-lesson-nav > span").length,
+        leadCount:a.querySelectorAll(".thpt-r4-screen .thpt-r4-lead").length};
       });
       const k=engine+" "+row.rel+" "+width+" "+(js?"JS":"NO_JS");
       assert.equal(v.marker,"true",k+" marker");
       assert.deepEqual(v.labels,labels,k+" labels");
       assert.deepEqual(v.headings,headings,k+" missing/duplicate headings");
       assert.equal(v.active,1,k+" active label");
+      assert.equal(v.navCount,1,k+" prebuilt navigation count");
+      assert.equal(v.navId,row.grade+"-B"+row.n,k+" navigation route");
+      assert.equal(v.navChoices,4,k+" exact four nav destinations, including disabled edge");
+      if(row.grade===10&&row.n<=22)assert.equal(v.leadCount,0,k+" hero lead must not appear and then disappear");
       if(!(v.pad>=8&&v.radius>=4&&v.headingBorder>=3))
        console.error("GOLDEN_STYLE_DIAGNOSTIC "+k+" "+JSON.stringify(v));
       assert(v.pad>=8&&v.radius>=4&&v.headingBorder>=3,
