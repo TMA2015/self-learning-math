@@ -1,3 +1,19 @@
+<!-- TOP15_MASTER974_CURRENT_AUTHOR_Q18_20261121 -->
+## CĐ15 · current R04 learner AUTHOR_SELF_VERIFIED Q18 v3.2.0, source-scoped DELTA_C pedagogy + DELTA_A editorial
+
+**One current effective student source** `prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md` Git blob **`c1be91f17044d89474d6399308385b4f1fbc7aeb`**, exact unchanged historical signed learner `89dd1b775c782bd2a8638560a2aa93d49b589eee` retained in Git. Existing one Q18; `AUTHOR_SELF_VERIFIED` for direct learner changes, NOT newly independent NotebookLM full-Topic Academic/PED PASS. Original G11 KNTT Tập Một ChIV B10–B14, printed 70–101/end102–103, item owner [PR #705](https://github.com/TMA2015/self-learning-math/pull/705) source `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b` directly reopened this round. No new original PDF scan, historical owner PDF/proof inherited only on matching unchanged original SGK question and unchanged scope.
+
+**Three actual verified student defects on previous active blob #977-048–050, all affected source facets now fixed:**
+- **#048 P1 Q08/PED6:** 22/22 Knowledge Vận dụng voluntary `Đối chiếu` had actual key and generic errors but no numbered original Practice retry. Added **22 individualized `Kiểm lỗi`**, each actual misconception → correct Knowledge section (1.1–5.5) → two authentic math-matched numbered existing **Bài luyện 1–67**. Examples O01 1/9 point on plane, O04 4/12 line-plane intersection, O08 18/25 Thalès triangle, O10 28/36 three line/plane relations, O15 41/51 two intersecting parallel-plane directions, O16 42/52 parallel plane cut, O17 45/49 `t²` area, O19 58/62 collapsed projection, O21 59/66 parallelogram image, O22 49/67 plane section vs projection. 22/22 actual target stems directly reviewed; original FirstTry question/answer mathematical text unchanged.
+- **#049 P2 Q16/PED6:** 8 original PUBLIC_SELF_CHECK_QUESTION_ONLY items formerly had no answer-location navigation. Added exactly **one opt-in `Đối chiếu` after all eight** mapping each original item ID to existing Practice **Bài luyện 36,9,12,25,37,50,63,64**, in that order. 8/8 same ID equality `THPT-TOP15-P03/P06/P09/P12/P14/P17/P20/P21` direct source check; no second key/rubric/item or official RD1/Final Submit/Mastery.
+- **#050 P2 #864/Q03/Q09/Q15/Q17:** normalized all **67 original Practice learner captions** from overlapping Bài SGK/Tự luận SGK/Bài luyện/Tự luận to **Bài luyện 1–67** consecutively; five repeated “Bài tập dùng chung từ SGK” headers replaced by actual math skill prompts, intro now teaches students how to check assumptions instead of exposing source/assessment mechanics. Five supplemental math calculations (intersecting planes, spatial Thalès, prism, same-direction ratio under projection and circle→ellipse) reorganized as **Ví dụ → Đề bài → Lời giải** with explicit self-contained task prompts; original worked mathematical calculations substantively preserved (Delta C pedagogy for new task framing, not a change to original canonical bank). Only **one SGK KNTT source credit footer at end**, old admin comment `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW`.
+
+**Author direct Q01–Q18 evidence bounded to source changes and inherited S1:** 22 lessons/outcomes concept before rule, 22 original examples+5 supplementary worked tasks now 27 explicit `Đề bài`/worked `Lời giải`; 22 original FirstTry unchanged; **67 original canonical Practice question/answer/explanation/15 Written rubric bodies byte-identical** to signed old learner after display-label normalization; original 8 public Selfcheck question-only stems/options unchanged. 22/22 misconception→two authentic Practice target routes, 8/8 exact public reuse locator, **91 opens/91 closes `<details>`** (one optional coordinate reading bridge +22 Knowledge +67 Practice +1 optional answer locator), **52 original `Lời giải` plus 15 `Lời giải và rubric`**. Five existing original `FIG_G11_CHIV_B10–B14_SHARED_R01.svg` path/source SHA unchanged; model HTML/Canvas untouched. Direct geometry sanity: noncollinear unique plane, skew SA/BC, three line-vs-plane positions, two intersecting lines necessary to certify plane parallels, third cutting plane intersections parallel, Thalès 3 distinct parallel planes + nonzero lengths, section area t², prism translation area unchanged, oblique projection degeneracy, same-direction length ratio 1/2, parallelogram preservation and projected circle equation `4x'²+y'²=4`. No new reproducible P0/P1 math in inspected source; do not claim full independent current NotebookLM verdict or browser AP/R.
+
+**DELTA_C_PED_TARGETED** for 22 individual D6 navigation and five explicit self-contained original-math worked tasks, **DELTA_A_EDITORIAL** for 67 visible captions/study headings/one source credit; Q15 original bank, Q16 held-out assessment/Final Submit, no protected data touched. Existing same Q18/source→metadata→same V2→ready→REGISTER to relock. Never transfer full SGK reviewer verdict across full Topic. No merge/deploy/owner RELEASE.
+
+---
+
 # CĐ15 R04 · AUTHOR_SELF_QA_RECEIPT · 16/11/2026
 
 **AUTHOR_SELF_QA_RECEIPT** của tác giả, theo một chuẩn `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Không nhận là independent NotebookLM Topic verdict; không nhận website đã chạy; SGK và Topic R02 chỉ giữ PASS trên snapshot bất biến của chính chúng.
@@ -7,8 +23,8 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 89dd1b775c782bd2a8638560a2aa93d49b589eee
-SOURCE_BLOB: 89dd1b775c782bd2a8638560a2aa93d49b589eee
+ACADEMIC_SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
+SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: e8d3d03c5a3a339eac9f68e41429fc0c8621de3c
 ORIGINAL_R02_SOURCE_BLOB: ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b
@@ -20,7 +36,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP15_G11_T1_B10_B14_FULL_KNOWLEDGE_89dd1b775c782bd2a8638560a2aa93d49b589eee
+AUTHOR_SIGNOFF: TOP15_MASTER974_22_D6_67_LEARNER_20261121_c1be91f17044d89474d6399308385b4f1fbc7aeb
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
