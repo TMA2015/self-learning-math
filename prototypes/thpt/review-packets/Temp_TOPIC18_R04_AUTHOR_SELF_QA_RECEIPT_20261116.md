@@ -1,3 +1,6 @@
+<!-- OWNER_APPROVED_SHARED_G12_CHV_WRITTEN_24_STAFF_NOTE_REMOVAL_Q18_20261121 -->
+**CURRENT EXACT SOURCE_EQUIVALENT AUTHORING:** Same one CĐ18 original R04 learner `d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960` and original G12 SGK ChV B14–B17 shared bank `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39` (matching source-owner #725 and CĐ18 branch hash). All **24** original `- **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery...` staff-only visible prose removed from original shared SGK canonical and exactly 24 Topic projected Written answers. In SGK canonical there is now ONE hidden `Q16_AUTHORING_ONLY` metadata comment retaining the existing no self-graded Mastery policy; Topic source keeps `NO_MASTERY` Q16 controls. Original **24/24 original Written rubric mathematical criteria/point weights and solutions byte-for-byte unchanged** once removing the one staff sentence; remaining 183 Practice question/answer bodies untouched, all 247 original canonical public IDs, 40 FirstTry, 12 public question-only selfcheck, 10 SVG and W07 anti-spoiler preserved. Historical G12 SBT B14 page25 source provenance remains P2 not claimed solved. Q18 `author self`, A1 `current`, V2 `current`; `DELTA_B_SOURCE_EQUIVALENT` (student-only editorial). No full independent NotebookLM Topic PASS or website release/merge/deploy.
+---
 <!-- TOP18_MASTER974_CURRENT_Q18_W07_SOURCE_SIGNOFF_20261121 -->
 ## TARGETED CURRENT AUTHOR Q18 self-verification — CĐ18 W07 and 40-outcome packet
 
@@ -48,8 +51,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
-SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+ACADEMIC_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
+SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
 ORIGINAL_R02_SOURCE_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd
