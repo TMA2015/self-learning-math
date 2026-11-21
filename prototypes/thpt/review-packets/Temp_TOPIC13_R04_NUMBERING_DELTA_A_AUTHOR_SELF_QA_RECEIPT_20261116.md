@@ -1,3 +1,21 @@
+<!-- TOP13_MASTER974_20261121_CURRENT_AUTHOR_SELF_Q18 -->
+## CĐ13 CURRENT AUTHORING — same R04 learner, Q18 self-verification v3.2.0
+
+**Single effective learner:** `prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob **`893829bacc3b4bae8c1463b1bdb0ebbd9857831f`**. Old signed source `b89f0309213a357768c4b3a94da474b6dbc0ac3c` immutable historic; previous G10 B08/B09 required S1 additions and vector-zero/W03 revisions untouched. One standard `SLM-THPT-QUALITY-ONE v3.2.0`; this is the **same** composite Q18 receipt signed for actual new learner changes; no new competing reviewer.
+
+**Verified learner defect corrections in one source (#977-042/043/044):**
+1. **#042 P1 Q08/PED6:** 16/16 immediate FirstTry `Vận dụng→Đối chiếu` previously gave generic “Khi làm sai” guidance but no *genuine numbered* return to practice. Added 16 outcome-tailored opt-in **Kiểm lỗi** passages: misconception → correct Knowledge subsection (1.1–3.6) → two actual numbered existing Practice **Bài luyện 1–52**. FirstTry questions and voluntary original answers are unchanged. Examples: O01 direction vs length→33/9, O03 Chasles vs total path→5/35, O05 negative scalar→9/37, O09 perpendicular force work→18/41, O11 vector in box→22/43, O13 Oxyz dot→42/45, O16 drone displacement vs path→48/52.
+2. **#043 P2 Q16/PED6:** 16 original public `PUBLIC_REPLAY_ONLY` Selfcheck questions remain question-only, no key exposure. Added **one optional after-all-16-questions `Đối chiếu`** mapping exact original public same `item_id` Câu1–16 to actual Practice `Bài luyện 33–48`. Direct 16/16 ID parity verified in final current learner, no new hidden readiness/RD1, Final Submit or Mastery.
+3. **#044 P2 owner editorial #864 (student view):** 32 original `### Bài SGK`, 16 `### Luyện`, four `### Tự luận` reset numbering and dispersed source/protocol narration. Now **52 unique consecutive learner headings `Bài luyện 1–52`**, old 48 `Lời giải` and 4 `Lời giải và rubric` preserved, student intros teach how to solve not provenance/assessment mechanics. Original Knowledge source-name phrases at O01/O09 rewritten to direct identical mathematical zero-vector *conventions* (no equation/assumption changed). One explicit Topic source-credit footer now gives SGK Toán10 KNTT Tập Một ChIV + Toán12 Tập Một ChII; historical SHA/source-owner comments flagged `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW`.
+
+**Important source-owner exception, not silently hidden:** The original imported G10 canonical item `THPT-G10-B07-P04` still has the literal phrase **“SGK/SBT KNTT”** in its **one exact question stem and existing one worked solution**, because authoritative original SGK owner lives on sibling PR #750, source blob `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` not in this Topic tree. **Do not create a second paraphrased item/key/solution or modify the original SGK authoring branch without owner scope.** This is a *contextual attribution inside a protected canonical math question*, not a second end-of-Topic bibliography. The one explicit source credit at Topic end is verified; the owner's strictly literal one-SGK-mention objective has this remaining **source-owner follow-up**. Cross-branch wording improvement must preserve Q15 original item and be approved/reconciled in original G10 source. Mark as `EDITORIAL_CROSS_BRANCH_SOURCE_OWNER_FOLLOWUP`, not falsely claim zero mentions outside footer.
+
+**Changed source math direct author proof:** every one of **52/52 original Practice item IDs and full `Đề`/correct answer/solution/rubric text bodies** byte-identical to previous Git source `b89f030...` (changed *only titles / Study prose* outside canonical body); existing four Written 7-point rubrics untouched, original 16 public Selfcheck question stems/options exact, four SVG file paths and their original blobs unchanged. 16/16 current real misconception→Practice routes; 16/16 public exact ID lookup; **69/69 balanced voluntary reveals** (16 Knowledge, 52 Practice, one selfcheck locator). 48 `Lời giải`+4 `Lời giải và rubric` unchanged, no extra Topic Core or bank duplicate. Direct arithmetic spot-check: robot (6 east,8 north) displacement10/path14, G10 G10 law dot for work 5N perpendicular2m→0J; plane basis determinant ≠0 for two noncollinear vectors; W03 box 3–4–12 diagonal13, dot9, cos3/13; W02 Oxy G=(8/3,4/3), dot12, area12; W04 drone Q=(1,2,3), path3+√10, net3m and work3J. Prior original source math/S1 proofs inherited ONLY for unchanged source; `DELTA_C_PED_TARGETED` for actual learner recovery, `DELTA_A_EDITORIAL` practice presentation and source names **source equivalent** to math; not new full independent NotebookLM Topic PASS.
+
+**No artificial management gate:** exact source-Q18/metadata→V2→ready→REGISTER chain will be relocked to this blob. `AUTHOR_SELF_VERIFIED` affected scope, no invented independent reviewer, no browser Golden/AP/R, no official private Topic Readiness/RD1, Firebase/Mastery/Final Submit or owner release. G10 original sibling PR #750 dependency remains for combined-HEAD RELEASE R1.
+
+---
+
 <!-- TOP13_S1_G10_B08_B09_VECTOR_OPERATIONS_PROPERTIES_DELTA_C_20261120 -->
 ## 20/11/2026 · S1 bổ sung Q01 B08/B09 phép toán vectơ
 
@@ -25,8 +43,8 @@ STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: b89f0309213a357768c4b3a94da474b6dbc0ac3c
-ACADEMIC_SOURCE_BLOB: b89f0309213a357768c4b3a94da474b6dbc0ac3c
+SOURCE_BLOB: 893829bacc3b4bae8c1463b1bdb0ebbd9857831f
+ACADEMIC_SOURCE_BLOB: 893829bacc3b4bae8c1463b1bdb0ebbd9857831f
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R03_STUDENT_FIRST_52_CANONICAL_VISIBLE_20261116.md
@@ -49,7 +67,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0
-AUTHOR_SIGNOFF: TOP13_G10B07_B11_G12B06_B08_FULL_KNOWLEDGE_b89f0309213a357768c4b3a94da474b6dbc0ac3c
+AUTHOR_SIGNOFF: TOP13_MASTER974_16_PED6_52_LABEL_20261121_893829bacc3b4bae8c1463b1bdb0ebbd9857831f
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
