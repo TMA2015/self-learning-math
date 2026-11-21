@@ -1,3 +1,8 @@
+<!-- TOP10_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
+**CĐ10 CURRENT AUTHORING CONTENT_READY v3.2.0 on one R06 learner, NOT RELEASE:** current student source `prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md` Git blob `7954f917b89c64527b166d02aac1844da08ed806`, source commit `b726d0497ed6b36a057bde556c2e5f3ee5430f34`; original 78 G12 source-backed SGK +42 Topic bank IDs unchanged; existing Q18 author SELF_VERIFIED current receipt `4cf2638f752b93fd87aa5446a1d89b66665afede`, author custody `a4cc9fd38e2c50405df1ca33a89465620cb33926`, **one** V2 handoff `d8e921c658d1d9594aa597017cea0203ee890ce9`. Three verified #977-033–035 student issues FIXED: 36 individualized Knowledge Kiểm lỗi→real numbered Practice tasks, 36 public Selfcheck question-only IDs→one voluntary original Practice answer map, one-only SGK attribution at end of topic. 120 original Practice entire byte-identical (incl 18 Written rubrics), 36 original public replay prompts and 4 SVG refs unchanged, **157/157 voluntary disclosure tags balanced**, no duplicate canonical item. Source management comments explicitly AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW. DELTA_C_PED_TARGETED author math/PED Q18; unchanged prior S1 G12 original academic proofs inherited scoped to their own SHA. No independent current Topic NotebookLM reviewer PASS, official Topic Readiness/Mastery/Final Submit, private RD1, website/AP/R/owner deployment, merge/deploy.
+
+---
+
 # CĐ10 — Ứng dụng đạo hàm: Khảo sát hàm số và Tối ưu hóa · AUTHORING CONTENT_READY R06
 
 PACKET_ID: THPT-TOPIC10-APPLIED-DERIVATIVE-SURVEY-OPTIMIZATION-FULL-R01
@@ -10,19 +15,19 @@ RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
 CONTENT_REVISION: R06_FULL_S1_KNOWLEDGE_20261120
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
-AUTHOR_METADATA_BLOB: 63f6a8a9d9e7db0d1b7523ad7f742d313a5c2d5d
-SOURCE_COMMIT: 18a4f9d06f824a2414e5ae99285ed41743801fb9
+AUTHOR_METADATA_BLOB: a4cc9fd38e2c50405df1ca33a89465620cb33926
+SOURCE_COMMIT: b726d0497ed6b36a057bde556c2e5f3ee5430f34
 AUTHOR_PR: 833
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/886 — DRAFT AUTHORING, not merged or deployed
 CATALOG_TOPIC_ID: CD10
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
+ACADEMIC_SOURCE_BLOB: 7954f917b89c64527b166d02aac1844da08ed806
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md (source-locked AUTHOR_SELF_VERIFIED v3.1.0, not independent new Topic NotebookLM verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: d5fa113d2d55d9baa0e5cd6d5cd6634f82b10517
+REVIEW_RECEIPT_BLOB: 4cf2638f752b93fd87aa5446a1d89b66665afede
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC10-APPLIED-DERIVATIVE-SURVEY-OPTIMIZATION-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 87a70e00cba2406db0c93da9f00b1b5cd1c3ea7d
+AUTHOR_HANDOFF_BLOB: d8e921c658d1d9594aa597017cea0203ee890ce9
 PUBLIC_ORIGINAL78_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_ORIGINAL78_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL78_INDEX_BLOB: ffaba90bddc47a1d86dd905535e37c07d22173d9
 PUBLIC_NEW42_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
