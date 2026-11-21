@@ -1,12 +1,17 @@
+<!-- TOP10_MASTER974_CURRENT_AUTHORING_CUSTODY_20261121 -->
+**CURRENT CĐ10 one R06 canonical learner** `prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md` Git blob **`7954f917b89c64527b166d02aac1844da08ed806`**, one current Q18 `AUTHOR_SELF_VERIFIED` v3.2.0 receipt `4cf2638f752b93fd87aa5446a1d89b66665afede`. Actual current owner-authorized AUTHORING fixes #977-033–035: all 36 original Knowledge Vận dụng/Đối chiếu now have genuine specified Practice retry route, 36 public question-only Tự kiểm tra exact original item IDs have one post-completion voluntary original answer-location disclosure, extra SGK citation removed from middle of pedagogy (single footer retained). All 120 original PUBLIC canonical Practice STEM/ANSWER/SOLUTION and 18 Written rubrics, all original 36 public question-only Selfcheck stems, four SVG untouched, 157/157 opt-in reveal balance, exact full inverse-diff source parity to old baseline. Prior math/PED and SGK S1 evidence inherited **only for original unchanged mathematical content**, author-self-verification for targeted D6; no independent full Topic NotebookLM, RD1/Final Submit/Mastery, website RELEASE, merge or deploy. Old source-SHA narratives below are immutable historical snapshots, not a second active learner.
+
+---
+
 # CĐ10 R06 — AUTHORING-ONLY S1 and academic custody
 
 R03_IMMUTABLE_BLOB: 51cebfe1cb71c5db85c42d40e6167ea4497fa1d9
 CURRENT_STUDENT_R06_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_STUDENT_R06_BLOB: b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
+CURRENT_STUDENT_R06_BLOB: 7954f917b89c64527b166d02aac1844da08ed806
 CURRENT_Q18_R06_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md
-CURRENT_Q18_R06_RECEIPT_BLOB: d5fa113d2d55d9baa0e5cd6d5cd6634f82b10517
+CURRENT_Q18_R06_RECEIPT_BLOB: 4cf2638f752b93fd87aa5446a1d89b66665afede
 CURRENT_NEW42_CANONICAL_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
-STATUS: AUTHORING_CONTENT_READY_FULL_S1_KNOWLEDGE
+STATUS: R06_MASTER974_AUTHOR_SELF_VERIFIED_36_PED6_SELFCHECK_ONE_SGK
 
 ## S1 primary provenance and exact boundaries
 
