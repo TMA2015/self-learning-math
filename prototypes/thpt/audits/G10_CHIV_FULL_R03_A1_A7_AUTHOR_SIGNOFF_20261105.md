@@ -1,3 +1,6 @@
+<!-- OWNER_20261121_G10_B07_P04_DELTA_B_CANONICAL_EDITORIAL_A1 -->
+**CURRENT AUTHOR SELF-VERIFIED SOURCE_EQUIVALENT ONLY**: One G10 SGK ChIV current bank `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` (previous `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` Git history), one source-owned item `THPT-G10-B07-P04` shared by CĐ13. Original MCQ asks same zero-vector convention; only textbook name removed from question, same choice D and other choices. Mathematical explanation still states zero vector has length zero and the special convention about same direction. One short hint now says 'quy ước đã học' instead of attributing SGK; all original math solutions/rubrics unaffected. Source-scoped Q18 `8061eb7e4016858b0f6db0dfbd52708a87eb785d`, A1 `current`, V2 `current`. Prior independent R02 NotebookLM PASS stays on its original immutable snapshot; this is Delta B source-equivalent AUTHOR_SELF_VERIFIED, NOT a new independent full source review. No RELEASE/merge/deploy.
+---
 # G10 SGK ChIV FULL R03 AUTHORING closure — source equivalence, review and provenance
 
 AUDIT_ID: G10-SGK-CHIV-FULL-R03-AUTHORING-SIGNOFF-20261105
@@ -6,8 +9,8 @@ ROLE: AUTHORING_ONLY
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 1.1.0
 CURRENT_GOVERNANCE_VERSION: 1.2.0
-ACADEMIC_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
-REVIEW_RECEIPT_BLOB: 08d96225ea02bf9695238a77a1a13a3afdaa52ce
+ACADEMIC_SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd
+REVIEW_RECEIPT_BLOB: 8061eb7e4016858b0f6db0dfbd52708a87eb785d
 HANDOFF_BLOB: 1d67c7ad6ee600cfaac01d87ca8e3bb5d5c3a14e
 OWNER_MD_REVIEW_BLOB: 3a9ee88d87f30253c4ed3ecf81abfd83f3ba1e7a
 OWNER_TXT_REVIEW_BLOB: 93f79f8ccb1f24108bb2f6743db9207f13757c73
