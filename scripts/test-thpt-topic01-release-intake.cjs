@@ -24,7 +24,7 @@ const sections=paths.map(x=>{
 const normal=sections[0].replaceAll("../../../assets/visuals/","../../visuals/")+sections[1]+sections[2];
 assert.equal(blob(normal),sourceSHA,"Learner body differs from owner-accepted canonical Git blob");
 const manifest=read("scripts/topic01-release-intake-manifest.tsv");
-assert(manifest.includes(sourceSHA)&&manifest.includes(receiptSHA)&&manifest.includes(modelId),"Missing source/receipt/model manifest");
+assert(manifest.includes(sourceSHA)&&manifest.includes(receiptSHA)&&manifest.includes(modelId)&&manifest.includes("CLIENT_SELF_CHECK_NO_MASTERY"),"Missing source/receipt/model/Q16 manifest");
 assert.equal((sections[0].match(/^## \d+\./gm)||[]).length,3,"Knowledge math groups not 3");
 assert.equal((sections[0].match(/^### \d+\.\d+\./gm)||[]).length,11,"Knowledge outcomes not 11");
 assert.deepEqual([...sections[1].matchAll(/\*\*Bài\s+(\d+)/g)].map(m=>Number(m[1])),Array.from({length:24},(_,i)=>i+1),"Practice missing/reordered original 24");
