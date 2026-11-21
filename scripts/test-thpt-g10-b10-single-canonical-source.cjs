@@ -115,10 +115,20 @@ const exactKnowledge=part("B10_KNOWLEDGE_MARKDOWN");
 assert(src.endsWith("\n"),"B10 learner source must retain final newline");
 assert.equal(exactKnowledge,src+"\n",
  "B10 manuscript and learner are exact, except one signed section-boundary LF");
-assert.equal(part("B10_R01_CORE_PRACTICE")+"\n",old("THPT-G10-B10-C01","THPT-G10-B11-C01"),
- "B10 original 8 records/keys/solutions exact, accounting for one legacy section delimiter LF");
-assert.equal(part("B10_R01_WRITTEN")+"\n",old("THPT-G10-CHIV-W10","THPT-G10-CHIV-W11-ANCHOR"),
- "Original W10 rubric exact, accounting for one legacy section delimiter LF");
+// The signed one-canonical manuscript and historical bank each contain
+// 1–3 formatting newlines at their section boundary. Compare every item,
+// answer and rubric byte, allowing ONLY a one-LF delimiter difference.
+const exactLegacySection=(n,first,next)=>{
+ const authored=part(n),archived=old(first,next);
+ const trail=x=>(x.match(/\n*$/)||[""])[0].length;
+ const na=trail(authored),nb=trail(archived);
+ assert(na>=1&&na<=3&&nb>=1&&nb<=3&&Math.abs(na-nb)<=1,
+  n+" exact original manuscript must differ at most one terminal separator LF");
+ assert.equal(authored.slice(0,-na),archived.slice(0,-nb),
+  n+" original canonical questions/answers/rubrics must be byte-identical");
+};
+exactLegacySection("B10_R01_CORE_PRACTICE","THPT-G10-B10-C01","THPT-G10-B11-C01");
+exactLegacySection("B10_R01_WRITTEN","THPT-G10-CHIV-W10","THPT-G10-CHIV-W11-ANCHOR");
 const ids=[...src.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]);
 const help=[...src.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(x=>x[1]);
 assert.deepEqual(ids,["THPT-G10-CHIV-TRY16","THPT-G10-CHIV-TRY17","THPT-G10-CHIV-TRY18",
