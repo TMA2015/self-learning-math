@@ -1,11 +1,15 @@
+<!-- TOP22_MASTER974_FINAL_READY_SOURCE_LOCK_20261121 -->
+**CĐ22 final R09 AUTHORING ready SHA lock:** learner `7ac79e5ed705a5ce482c3d9c42a4451e659e1109`, signed Q18 `2e35a06020768e5a6db2e9f2fe65a46f577960c2`, one 127-item/9-same-ID Q15 A1 `496b936cfcdee2347aaf8460188bb6381205ce2c`, one V2 `5f57cec1d8d2a47d674aedd88fa18350af78645f` (source commit `75c1be1493feb239147b493fecd933965181ad5a`). Final learner wording corrected one voluntary SelfCheck explanation to remove technical status label; no math/key/rubric/39-outcome/13-FirstTry/114-SGK-Practice/9-public-replay/128-detail/SVG effect. Original P2 S1 PDF-index reference unresolved nonblocking; source AUTHORING `CONTENT_READY` not independent NotebookLM whole-Topic PASS nor website RELEASE, and `BLOCKERS: NONE` refers to no blocker in newly changed authoring delta, not dismissal of original P2.
+---
+
 <!-- TOP22_MASTER974_CURRENT_READY_20261121 -->
 ## CĐ22 · one active R09 ready manifest — AUTHORING CONTENT_READY source-only
 
-CURRENT_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
-CURRENT_SOURCE_COMMIT: 3c23bd06ea9d5f12bb8884b2b250e8cbc044b967
-CURRENT_Q18_AUTHOR_SIGNED_BLOB: 3e0b1763b034f4d461d438708b0784e5b3576679
-CURRENT_A1_A7_Q15_127_ITEM_MATRIX_BLOB: 101421d8a74806de6a75ce995498aff7e3df9f90
-CURRENT_V2_HANDOFF_BLOB: 6d47b3c57a8b98fa5dc15763de824615bfd7d7c4
+CURRENT_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
+CURRENT_SOURCE_COMMIT: 75c1be1493feb239147b493fecd933965181ad5a
+CURRENT_Q18_AUTHOR_SIGNED_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
+CURRENT_A1_A7_Q15_127_ITEM_MATRIX_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
+CURRENT_V2_HANDOFF_BLOB: 5f57cec1d8d2a47d674aedd88fa18350af78645f
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
@@ -18,9 +22,9 @@ CURRENT_QUALITY_P0_P1: 0/0
 CURRENT_S1_PDF_PAGE_INDEX_PROVENANCE_P2: OPEN_NONBLOCKING
 RELEASE_AUTHORIZATION: NO
 
-**One learner and one genuine current author handoff:** `prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md` Git blob `ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145`, 39 original exact S1 outcomes in 13 complete Knowledge lessons across three disciplines (G10 raw descriptive/accuracy, G11 grouped location estimates, G12 grouped dispersion). Exactly **114 original source-locked shared Practice** all complete stem/key/opt-in worked solution (19 Written/rubric) remain **byte-exact unchanged**, including 15 SGK-approved answer conclusions already repaired in preceding snapshot; original shared index `51a6e99587187838aea61c5c72108adae7874d1d` (107 SGK), original public extension `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` (7 existing), 114 original IDs/owner source versions never changed. **13 original previously existing `Vận dụng→Đối chiếu` questions** now assigned specific Topic-owned `THPT-TOP22-T01..T13` item IDs and versions, no new stems/keys/answers—Q15 formally covers the full 127 original/distinct learner questions. Thirteen `Kiểm lỗi` preserve exact prior mathematical short diagnoses, link 36 correctly matched existing numbered Practice cards and 13 corresponding genuine Knowledge subsections. Nine already-public question-only selfchecks identical original Practice IDs/stems have one optional answer location `Đối chiếu` after all nine pointing to original Bài luyện 3/13/23/40/52/54/73/97/105. **128/128** balanced opt-in disclosures; two original SVG sources/path unchanged, one final KNTT textbook citation line. No Topic Core or parallel ready; R01/R06/R07 historical archives remain unchanged.
+**One learner and one genuine current author handoff:** `prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md` Git blob `7ac79e5ed705a5ce482c3d9c42a4451e659e1109`, 39 original exact S1 outcomes in 13 complete Knowledge lessons across three disciplines (G10 raw descriptive/accuracy, G11 grouped location estimates, G12 grouped dispersion). Exactly **114 original source-locked shared Practice** all complete stem/key/opt-in worked solution (19 Written/rubric) remain **byte-exact unchanged**, including 15 SGK-approved answer conclusions already repaired in preceding snapshot; original shared index `51a6e99587187838aea61c5c72108adae7874d1d` (107 SGK), original public extension `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` (7 existing), 114 original IDs/owner source versions never changed. **13 original previously existing `Vận dụng→Đối chiếu` questions** now assigned specific Topic-owned `THPT-TOP22-T01..T13` item IDs and versions, no new stems/keys/answers—Q15 formally covers the full 127 original/distinct learner questions. Thirteen `Kiểm lỗi` preserve exact prior mathematical short diagnoses, link 36 correctly matched existing numbered Practice cards and 13 corresponding genuine Knowledge subsections. Nine already-public question-only selfchecks identical original Practice IDs/stems have one optional answer location `Đối chiếu` after all nine pointing to original Bài luyện 3/13/23/40/52/54/73/97/105. **128/128** balanced opt-in disclosures; two original SVG sources/path unchanged, one final KNTT textbook citation line. No Topic Core or parallel ready; R01/R06/R07 historical archives remain unchanged.
 
-**QA/risk boundaries:** New Q18 `AUTHOR_SELF_VERIFIED` v3.2.0 on current source `3e0b1763b034f4d461d438708b0784e5b3576679`; original source 13-path mathematics author spotcheck and 15 canonical key G11/G12 source-equivalence remain precise proof for their unchanged maths, not a new independent NotebookLM whole-Topic PASS. Original SGK Toán10 TậpMột ChV B12–14, Toán11 TậpMột ChIII B08–09, Toán12 TậpMột ChIII B09–10 scope inherited source evidence; original PDF viewer-vs-printed G11 page-index **P2 OPEN_NONBLOCKING** and no new direct PDF scan. Public `CLIENT_SELF_CHECK_NO_MASTERY`, not independent `TOPIC_READINESS`, no private RD1/official Final Submit/Skill Mastery/learner state changed. This manifest records **AUTHORING CONTENT_READY**, not browser/Golden UI/AP1–AP5/R1–R5 device verification, owner RELEASE permission, merge/deploy/Firebase changes. Historical date-stamped narratives below refer to earlier R09 SHA snapshots, not simultaneously current content.
+**QA/risk boundaries:** New Q18 `AUTHOR_SELF_VERIFIED` v3.2.0 on current source `2e35a06020768e5a6db2e9f2fe65a46f577960c2`; original source 13-path mathematics author spotcheck and 15 canonical key G11/G12 source-equivalence remain precise proof for their unchanged maths, not a new independent NotebookLM whole-Topic PASS. Original SGK Toán10 TậpMột ChV B12–14, Toán11 TậpMột ChIII B08–09, Toán12 TậpMột ChIII B09–10 scope inherited source evidence; original PDF viewer-vs-printed G11 page-index **P2 OPEN_NONBLOCKING** and no new direct PDF scan. Public `CLIENT_SELF_CHECK_NO_MASTERY`, not independent `TOPIC_READINESS`, no private RD1/official Final Submit/Skill Mastery/learner state changed. This manifest records **AUTHORING CONTENT_READY**, not browser/Golden UI/AP1–AP5/R1–R5 device verification, owner RELEASE permission, merge/deploy/Firebase changes. Historical date-stamped narratives below refer to earlier R09 SHA snapshots, not simultaneously current content.
 ---
 
 <!-- TOP22_R09_15_CANONICAL_KEYS_HIDDEN_RESTORE_20261121 -->
@@ -45,15 +49,15 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 3c23bd06ea9d5f12bb8884b2b250e8cbc044b967
+SOURCE_COMMIT: 75c1be1493feb239147b493fecd933965181ad5a
 AUTHOR_PR: 812
 CURRENT_PR: #812 Draft AUTHORING, no release or merge authorization
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
+ACADEMIC_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC_STATISTICS_G10_G12_R09_AUTHOR_TECHNICAL_Q18_RECEIPT_20261116.md — exact source R09 technical AUTHOR_SELF_VERIFIED, NOT independent NotebookLM
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-REVIEW_RECEIPT_BLOB: 3e0b1763b034f4d461d438708b0784e5b3576679
+REVIEW_RECEIPT_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R09_HANDOFF_V2_20261116.md
 PUBLIC_SOURCE_INDEX: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
@@ -82,11 +86,11 @@ AUTHORING_Q18_DELTA: R06→R07 student prose ONLY; technical Final Submit/websit
 PREVIOUS_AUTHORING_SOURCE_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 PREVIOUS_AUTHORING_RECEIPT_BLOB: b3a2836d6d0a339648347a82f4332f9a69439dfb
 
-AUTHOR_HANDOFF_BLOB: 6d47b3c57a8b98fa5dc15763de824615bfd7d7c4
+AUTHOR_HANDOFF_BLOB: 5f57cec1d8d2a47d674aedd88fa18350af78645f
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_A1_A7_BLOB: 101421d8a74806de6a75ce995498aff7e3df9f90
+AUTHOR_A1_A7_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_METADATA_BLOB: 101421d8a74806de6a75ce995498aff7e3df9f90
+AUTHOR_METADATA_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
 
 ## R09 CURRENT LEARNER SOURCE AND Q18 TECHNICAL EQUIVALENCE
 
