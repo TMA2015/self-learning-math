@@ -1,0 +1,105 @@
+<!doctype html>
+<!-- MODEL_ID: SLM-TOP06-UNIT-CIRCLE-01; DEV_BASE: Temp_I798_FINAL_07_UNIT_CIRCLE.html; SOURCE_SCOPE: AUTHORING_STANDALONE; QUALITY: ORIGINAL_CHROMIUM_SELF_QA_ONLY; NO_MASTERY -->
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Đường tròn lượng giác | G Learning</title>
+<style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:#203b47;background:#f5f9f8; color-scheme:light}
+*{box-sizing:border-box}body{margin:0;padding:18px 12px 40px}.page{max-width:1120px;margin:auto}
+.hero,.lab{background:#fff;border:1px solid #d2e6e4;border-radius:18px;box-shadow:0 3px 16px #12394809}
+.hero{padding:20px 24px;margin-bottom:15px}.kicker{color:#266c62;font-size:.76rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin:0 0 7px}
+h1{font-size:clamp(1.4rem,3vw,2rem);line-height:1.25;margin:0 0 9px}.hero p{margin:0;line-height:1.55;color:#415a66}
+.question{padding:15px 17px;background:#eaf6f1;border-left:4px solid #198269;border-radius:11px;line-height:1.6;margin:0 0 15px}
+.lab{overflow:hidden;container-type:inline-size}.lab h2{font-size:1.19rem;margin:0;background:#eaf6fb;padding:14px 17px}
+.intro{color:#486273;font-size:.91rem;line-height:1.55;margin:11px 16px}
+.grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,1fr);gap:15px;padding:15px;align-items:start}
+.visual,.controls{min-width:0}.visual figure{margin:0;border:1px solid #c7dce7;border-radius:12px;overflow:hidden}
+canvas{display:block;width:100%;height:380px;background:#fff}
+figcaption{background:#f5f9fc;color:#506a79;border-top:1px solid #c7dce7;padding:9px 11px;font-size:.85rem;line-height:1.5}
+.output{font-weight:650;background:#edf7f1;border-left:4px solid #16775b;border-radius:9px;padding:12px;margin:11px 0;min-height:60px;line-height:1.55}
+table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{border:1px solid #c7dce7;text-align:left;padding:8px 9px;vertical-align:top}th{background:#f4f9fc;width:41%}
+fieldset{border:1px solid #c7dce7;border-radius:12px;padding:13px;min-width:0;margin:0 0 11px}legend{padding:0 6px;font-weight:750}
+label{display:block;font-weight:650;font-size:.92rem;margin-bottom:8px}input{background:#fff;color:#21394a;font:inherit;border:1px solid #90b3c6;border-radius:8px;padding:7px;min-height:44px}
+input[type=number]{width:100%}input[type=range]{width:100%;margin:11px 0;accent-color:#198269;cursor:pointer}
+input[aria-invalid=true]{border:2px solid #b34e35}.error{color:#a03b26;font-size:.9rem;min-height:21px;font-weight:650}
+.buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}
+button{min-height:44px;padding:9px 8px;background:#fff;color:#135474;border:1px solid #8fbbcf;border-radius:9px;font:inherit;font-weight:650;cursor:pointer}
+button:hover{background:#eaf6fb}:is(button,input):focus-visible,summary:focus-visible{outline:3px solid #005aa0;outline-offset:2px}
+.tip{font-size:.9rem;line-height:1.55;color:#496372;margin:12px 0 0}
+.footer{margin:17px 4px 0;font-size:.87rem;line-height:1.55;color:#48616c}.footer details{padding:11px 12px;background:#fff;border:1px solid #d2e6e4;border-radius:10px}.footer summary{cursor:pointer;font-weight:700}
+@container (max-width:700px){.grid{grid-template-columns:1fr}.controls{order:1}.visual{order:2}canvas{height:310px}}
+@media(max-width:480px){body{padding:10px 8px 28px}.hero{padding:15px 14px}.question{padding:12px}.grid{padding:9px;gap:9px}canvas{height:290px}.buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.lab h2{padding:12px}.footer{font-size:.84rem}}
+</style></head>
+<body><main class="page"><header class="hero"><p class="kicker">G Learning · Mô hình Toán tương tác</p>
+<h1>Đường tròn lượng giác: góc, sin và cos</h1><p>Dự đoán → thao tác → quan sát → giải thích bằng tọa độ trên đường tròn đơn vị.</p></header>
+<section class="question"><strong>Hãy thử trước:</strong> Góc <strong>150°</strong> nằm ở góc phần tư nào? Sin và cos cùng dấu hay khác dấu? Khi cộng thêm 360°, tọa độ M thay đổi không, còn số đo góc quay có thay đổi không?</section>
+<section class="lab" id="lab"><h2>Điểm M trên đường tròn đơn vị</h2><p class="intro">Kéo thanh góc hoặc dùng phím mũi tên trong ô số. Điểm cuối có tọa độ <strong>M = (cos α; sin α)</strong>. Góc dương quay ngược chiều kim đồng hồ; góc âm quay theo chiều kim đồng hồ.</p>
+<div class="grid"><div class="visual"><figure><canvas id="plot" role="img" aria-label="Đường tròn đơn vị và điểm M theo góc; toàn bộ tọa độ và giá trị cũng có trong bảng kết quả ngay dưới hình"></canvas><figcaption>Đường xanh nối O tới M; các đoạn nét đứt biểu diễn hoành độ cos α và tung độ sin α. Cung tím chỉ phần góc còn lại CÓ HƯỚNG sau các vòng trọn (dương: ngược chiều kim đồng hồ, âm: cùng chiều). Số vòng và góc gốc nằm trong bảng. Tọa độ M chỉ phụ thuộc góc cùng tia cuối.</figcaption></figure>
+<div class="output" id="result" role="status" aria-live="polite" aria-atomic="true"></div><table aria-label="Bảng giá trị góc lượng giác"><tbody>
+<tr><th scope="row">Góc ban đầu</th><td id="angle"></td></tr><tr><th scope="row">Góc cùng tia cuối</th><td id="coterminal"></td></tr>
+<tr><th scope="row">Tọa độ M</th><td id="point"></td></tr><tr><th scope="row">sin α, cos α</th><td id="trig"></td></tr>
+<tr><th scope="row">tan α, cot α</th><td id="quotient"></td></tr><tr><th scope="row">Số vòng quay</th><td id="turns"></td></tr></tbody></table></div>
+<div class="controls"><fieldset><legend>Thay đổi góc quay</legend><label for="degrees">Góc α (độ), từ −720° đến 720°</label><input id="degrees" type="number" min="-720" max="720" step="1" value="150" aria-describedby="rangeHelp"><label for="slider">Kéo để đổi góc</label><input id="slider" type="range" min="-720" max="720" step="1" value="150"><p id="rangeHelp" class="tip">Nhập góc nguyên theo độ; khi dùng bàn phím, ↑/↓ thay đổi 1°. Bảng giá trị luôn cập nhật theo góc thực đang chọn.</p><p id="error" class="error" role="alert" aria-live="assertive"></p></fieldset>
+<div class="buttons"><button type="button" data-angle="0">0°</button><button type="button" data-angle="90">90°</button><button type="button" data-angle="150">150°</button><button type="button" data-angle="-150">−150°</button><button type="button" data-angle="450">450°</button><button type="button" data-angle="-360">−360°</button></div>
+<p class="tip"><strong>Giải thích:</strong> Hoành độ là cos α, tung độ là sin α. Vì M ở trên đường tròn đơn vị nên cos²α + sin²α = 1. tan α không xác định khi cos α = 0; cot α không xác định khi sin α = 0.</p>
+<p class="tip">Ví dụ: 150° = 5π/6 nằm ở góc phần tư II, nên cos 150° = −√3/2, sin 150° = 1/2. 450° cùng tia cuối với 90° nhưng khác tổng góc quay.</p>
+</div></div></section><footer class="footer"><details><summary>Giới hạn mô hình và nguồn học thuật</summary><p>Ứng viên minh họa SGK Toán 11 KNTT Chương I Bài 1, các nội dung <code>G11-B01-DEG_RAD</code>, <code>G11-B01-TRIG_UNIT_CIRCLE</code>, <code>G11-B01-PERIODIC_REDUCTION</code>. Nguồn Git: <code>prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md</code> (blob <code>256ceb5edc5e02aec320e83e99c8e08e035654f3</code>), và hình SVG đơn vị góc 5π/6 trên <code>main</code>. Chưa thực hiện đối chiếu PDF gốc S1 trong lượt phát triển mẫu này.</p><p>Đây là bản tương tác độc lập để nghiên cứu, không phải bài kiểm tra. Không lưu, chấm điểm hoặc gửi dữ liệu học sinh; chưa đưa vào website. Giá trị số là xấp xỉ, trừ các góc phần tư đặc biệt được xử lý đúng quy tắc xác định.</p></details></footer></main>
+<script>
+(function(global){'use strict';
+ const root=document.getElementById('lab'), degree=root.querySelector('#degrees'), slider=root.querySelector('#slider'),err=root.querySelector('#error'), canvas=root.querySelector('#plot');
+ const read=id=>root.querySelector('#'+id);const fields=['angle','coterminal','point','trig','quotient','turns'];
+ let angleDeg=150,dead=false,observer=null;const handlers=[];
+ function on(el,name,fn){el.addEventListener(name,fn);handlers.push([el,name,fn]);}
+ function validate(n){if(typeof n!=='number'||!Number.isInteger(n)||n< -720||n>720)throw new RangeError('Nhập số độ nguyên từ −720 đến 720.');return n;}
+ function norm(a){return ((a%360)+360)%360;}
+ function compute(a){validate(a);const k=norm(a),rad=a*Math.PI/180;let x=Math.cos(k*Math.PI/180),y=Math.sin(k*Math.PI/180);
+ // The quadrant axes must be treated as exactly zero, not a tiny floating-point cosine.
+ if(k===0){x=1;y=0;}else if(k===90){x=0;y=1;}else if(k===180){x=-1;y=0;}else if(k===270){x=0;y=-1;}
+ const quadrant=k===0||k===90||k===180||k===270?'axis':k<90?'I':k<180?'II':k<270?'III':'IV';
+ const tan=x===0?null:y/x,cot=y===0?null:x/y;
+ return {angleDeg:a,terminalDeg:k,radians:rad,cos:x,sin:y,tan,cot,quadrant,
+    wholeTurns:Math.trunc(a/360),residualAngle:a-Math.trunc(a/360)*360};
+ }
+ function fmt(n){return Number(n.toFixed(5)).toLocaleString('vi-VN',{maximumFractionDigits:5});}
+ function fmtSigned(n){return n<0?'−'+fmt(-n):fmt(n);}
+ function info(g){return g.quadrant==='axis'?'trục tọa độ':'góc phần tư '+g.quadrant;}
+ function radianExact(a){if(a===0)return '0';const gcd=(x,y)=>y?gcd(y,x%y):Math.abs(x),d=gcd(Math.abs(a),180),n=a/d,k=180/d,sign=n<0?'−':'',abs=Math.abs(n);return sign+(abs===1?'':abs)+'π'+(k===1?'':'/'+k);}
+ function putText(g){let v=[`${g.angleDeg}° = ${radianExact(g.angleDeg)} rad ≈ ${fmtSigned(g.radians)} rad`,`${g.terminalDeg}°`,
+ `(${fmtSigned(g.cos)}; ${fmtSigned(g.sin)})`,`sin α = ${fmtSigned(g.sin)}; cos α = ${fmtSigned(g.cos)}`,
+ `tan α = ${g.tan===null?'không xác định':fmtSigned(g.tan)}; cot α = ${g.cot===null?'không xác định':fmtSigned(g.cot)}`,
+ `${g.wholeTurns} vòng trọn có hướng (âm = cùng chiều kim đồng hồ); góc còn lại ${g.residualAngle}° (có hướng)`];
+ fields.forEach((id,i)=>{read(id).textContent=v[i];});
+ read('result').textContent=`Tia cuối ở ${info(g)}. cos α ${g.cos===0?'bằng 0':g.cos>0?'dương':'âm'}; sin α ${g.sin===0?'bằng 0':g.sin>0?'dương':'âm'}. Góc cùng tia cuối: ${g.terminalDeg}°.`;
+ }
+ function draw(g){const rect=canvas.getBoundingClientRect(),w=rect.width,h=rect.height;if(w<20||h<20)return;
+ const dpr=Math.min(global.devicePixelRatio||1,2);canvas.width=Math.max(1,Math.round(w*dpr));canvas.height=Math.max(1,Math.round(h*dpr));
+ const c=canvas.getContext('2d');c.setTransform(dpr,0,0,dpr,0,0);c.clearRect(0,0,w,h);
+ let cx=w*.5,cy=h*.51,r=Math.min(w*.36,h*.38);const X=v=>cx+v*r,Y=v=>cy-v*r;
+ c.lineWidth=1;c.strokeStyle='#e1ebef';for(let v=-1;v<=1.001;v+=.5){c.beginPath();c.moveTo(X(v),cy-r-18);c.lineTo(X(v),cy+r+18);c.stroke();c.beginPath();c.moveTo(cx-r-18,Y(v));c.lineTo(cx+r+18,Y(v));c.stroke();}
+ c.strokeStyle='#526d7a';c.lineWidth=1.6;c.beginPath();c.moveTo(cx-r-24,cy);c.lineTo(cx+r+24,cy);c.moveTo(cx,cy-r-24);c.lineTo(cx,cy+r+24);c.stroke();
+ c.strokeStyle='#198269';c.lineWidth=2.6;c.beginPath();c.arc(cx,cy,r,0,Math.PI*2);c.stroke();
+ const px=X(g.cos),py=Y(g.sin);c.save();c.setLineDash([6,5]);c.strokeStyle='#cc6c33';c.lineWidth=2;c.beginPath();c.moveTo(px,py);c.lineTo(px,cy);c.moveTo(px,py);c.lineTo(cx,py);c.stroke();c.restore();
+ c.strokeStyle='#0963a8';c.lineWidth=3.3;c.beginPath();c.moveTo(cx,cy);c.lineTo(px,py);c.stroke();
+ c.fillStyle='#0963a8';c.beginPath();c.arc(px,py,6,0,Math.PI*2);c.fill();c.fillStyle='#213c4c';c.font='600 13px system-ui';c.fillText('M',Math.min(w-17,px+9),Math.max(13,py-9));c.font='12px system-ui';
+ c.fillText('O',cx-14,cy+17);c.fillText('x',cx+r+15,cy+15);c.fillText('y',cx+10,cy-r-10);
+ // Use the signed residual angle: -90° must be a clockwise quarter-turn, not a +270° sweep.
+ const t=g.residualAngle*Math.PI/180,rr=Math.min(28,r*.25);
+ c.strokeStyle='#9764a6';c.lineWidth=2;c.beginPath();c.arc(cx,cy,rr,0,-t,t>=0);if(t!==0)c.stroke();
+ if(t!==0){const tx=cx+rr*Math.cos(-t),ty=cy+rr*Math.sin(-t),u=-t+(t>0?-Math.PI/2:Math.PI/2);
+  c.beginPath();c.moveTo(tx,ty);c.lineTo(tx-6*Math.cos(u-.48),ty-6*Math.sin(u-.48));
+  c.moveTo(tx,ty);c.lineTo(tx-6*Math.cos(u+.48),ty-6*Math.sin(u+.48));c.stroke();}
+ c.fillStyle='#9764a6';c.font='11px system-ui';c.fillText((g.residualAngle>0?'+':'')+g.residualAngle+'° còn lại',cx+rr+7,cy-10);
+ }
+ function render(){if(dead)return;const g=compute(angleDeg);degree.value=String(angleDeg);slider.value=String(angleDeg);putText(g);draw(g);}
+ function setState(s){if(dead)throw new Error('Model destroyed');const a=validate(s?.angleDeg);angleDeg=a;err.textContent='';degree.removeAttribute('aria-invalid');render();return getState();}
+ function getState(){if(dead)throw new Error('Model destroyed');return {angleDeg};}
+ function getResult(){if(dead)throw new Error('Model destroyed');return compute(angleDeg);}
+ function apply(raw,el){let a=Number(raw);try{if(String(raw).trim()===''|| !Number.isInteger(a))throw new RangeError();setState({angleDeg:a});}catch(_){err.textContent='Chỉ nhận góc nguyên từ −720° đến 720°.';degree.setAttribute('aria-invalid','true');if(el!==degree)degree.value=String(angleDeg);}}
+ on(degree,'change',()=>apply(degree.value,degree));on(slider,'input',()=>apply(slider.value,slider));
+ for(const btn of root.querySelectorAll('button[data-angle]'))on(btn,'click',()=>setState({angleDeg:Number(btn.dataset.angle)}));
+ if('ResizeObserver'in global){observer=new ResizeObserver(()=>{if(!dead)draw(compute(angleDeg));});observer.observe(canvas);}
+ function destroy(){if(dead)return false;dead=true;for(const [el,n,fn]of handlers)el.removeEventListener(n,fn);if(observer)observer.disconnect();root.innerHTML='';return true;}
+ function resize(){if(dead)throw new Error('Model destroyed');draw(compute(angleDeg));}
+ const model=Object.freeze({getState,setState,update:setState,getResult,resize,destroy});
+ global.__I798_FINAL_QA__=Object.freeze({type:'unit-circle',model,compute});render();
+})(window);
+</script></body></html>

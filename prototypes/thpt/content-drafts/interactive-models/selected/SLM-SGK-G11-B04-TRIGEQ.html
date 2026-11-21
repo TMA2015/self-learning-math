@@ -1,0 +1,133 @@
+<!doctype html>
+<!-- MODEL_ID: SLM-SGK-G11-B04-TRIGEQ; DEV_BASE: Temp_I798_FINAL_10_TRIG_EQUATIONS.html; SOURCE_SCOPE: AUTHORING_STANDALONE; QUALITY: ORIGINAL_CHROMIUM_SELF_QA_ONLY; NO_MASTERY -->
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Giải phương trình lượng giác bằng đồ thị | G Learning</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#213d49;background:#f4f9f8;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;padding:18px 12px 40px}.page{max-width:1160px;margin:auto}
+.hero,.lab{background:#fff;border:1px solid #d0e4e1;border-radius:18px;box-shadow:0 3px 16px #12394809}
+.hero{padding:21px 23px;margin-bottom:15px}.kicker{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#276e63;font-weight:800;margin:0 0 7px}
+h1{font-size:clamp(1.43rem,3vw,2rem);line-height:1.25;margin:0 0 9px}.hero p{margin:0;color:#496373;line-height:1.6}
+.question{background:#eaf5f0;border-left:4px solid #278066;border-radius:11px;padding:14px 17px;line-height:1.6;margin-bottom:15px}
+.lab{overflow:hidden;container-type:inline-size}.lab h2{background:#eaf6fb;padding:13px 17px;font-size:1.14rem;margin:0}
+.intro{font-size:.91rem;color:#486373;padding:0 16px;line-height:1.55}.grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(286px,1fr);gap:16px;padding:15px;align-items:start}
+.visual,.controls{min-width:0}.visual figure{border:1px solid #c9dce7;border-radius:12px;overflow:hidden;margin:0}.legendline{display:flex;flex-wrap:wrap;gap:13px;font-size:.87rem;color:#3d5c6e;padding:9px 11px}.swatch{display:inline-block;width:26px;height:0;border-top:3px solid #1c73a3;vertical-align:middle;margin-right:5px}.swatch.line{border-top-color:#dc703d;border-top-style:dashed}.swatch.interval{border-top:7px solid #dff4e8}
+canvas{display:block;width:100%;height:380px;background:#fff}figcaption{font-size:.84rem;padding:9px 11px;color:#506976;background:#f7fafb;border-top:1px solid #c9dce7;line-height:1.5}
+.output{font-weight:650;line-height:1.55;background:#edf8f2;border-left:4px solid #278066;border-radius:9px;padding:12px;margin:12px 0;min-height:65px}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:8px 0}th,td{border:1px solid #ccdfe7;padding:8px 9px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#f5fafc}table.small th{width:37%}caption{text-align:left;padding:8px 0;font-weight:750;color:#32556b}
+fieldset{border:1px solid #c7dce7;border-radius:12px;padding:12px 13px;margin:0 0 12px;min-width:0}legend{font-weight:750;padding:0 5px}label{font-size:.9rem;font-weight:650;display:block;margin:7px 0 5px}
+input,select{font:inherit;border:1px solid #8caec2;border-radius:9px;min-height:43px;padding:8px;color:#223d4c;background:#fff;max-width:100%}input[type=number],select{width:100%}input[type=range]{width:100%;cursor:pointer;accent-color:#228069;padding:0;margin:8px 0}input[type=checkbox]{min-height:auto;margin:0 7px 0 0;accent-color:#228069}.choices{display:flex;gap:12px;flex-wrap:wrap}.choices label{font-weight:550;display:flex;align-items:center;gap:3px;margin:7px 0}
+input[aria-invalid=true]{border:2px solid #b94b3d}.error{color:#9e3d2f;min-height:22px;font-size:.88rem;font-weight:700}
+.bound-label{display:flex;align-items:center;justify-content:space-between;gap:8px}.bound-label output{color:#135b74;font-weight:800}
+.buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}.buttons button{min-width:0}
+button{font:inherit;font-weight:650;min-height:43px;background:#fff;color:#145372;border:1px solid #90bdcd;border-radius:9px;padding:9px 7px;cursor:pointer}
+button:hover{background:#ecf6fa}:is(button,input,select,summary):focus-visible{outline:3px solid #0765a4;outline-offset:2px}
+.tip{line-height:1.55;color:#4c6877;font-size:.88rem;margin:10px 0}.warn{background:#fff5ed;border-left:4px solid #bd7747;border-radius:8px;padding:10px;line-height:1.6;margin:10px 0;color:#6a4736;font-size:.89rem}
+.footer{font-size:.87rem;color:#506779;margin-top:16px;line-height:1.6}.footer details{background:#fff;border:1px solid #d2e5e5;padding:11px;border-radius:10px}.footer summary{font-weight:750;cursor:pointer}
+@container(max-width:730px){.grid{grid-template-columns:1fr}.controls{order:1}.visual{order:2}canvas{height:335px}}
+@media(max-width:480px){body{padding:9px 7px 30px}.hero{padding:15px 13px}.question{padding:11px}.grid{padding:9px;gap:10px}canvas{height:295px}.buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.lab h2{padding:12px 13px}}
+</style></head><body><main class="page">
+<header class="hero"><p class="kicker">G Learning · Mô hình Toán tương tác</p><h1>Phương trình lượng giác cơ bản: nhìn thấy các nghiệm</h1><p>Dự đoán → thay đổi giá trị m → quan sát giao điểm → giải thích và chọn nghiệm trong khoảng.</p></header>
+<section class="question"><strong>Hãy dự đoán:</strong> Vì sao <strong>sin x = 1</strong> chỉ có một họ nghiệm, dù công thức tổng quát của sin thường có hai họ? Khi đổi khoảng <strong>[0, 2π]</strong> thành <strong>[0, 2π)</strong>, nghiệm nào cần loại?</section>
+<section class="lab" id="lab"><h2>Giao điểm đồ thị y = f(x) và đường ngang y = m</h2>
+<p class="intro">Mỗi giao điểm tương ứng một nghiệm; chỉ tính nghiệm nằm trong khoảng đã chọn. Đường thẳng đứng gạch mảnh là tiệm cận khi chọn tan/cot. Không nối qua vị trí không xác định.</p>
+<div class="grid"><div class="visual"><figure>
+<div class="legendline"><span><i class="swatch"></i>y = f(x)</span><span><i class="swatch line"></i>y = m</span><span><i class="swatch interval"></i>Khoảng xét nghiệm</span></div>
+<canvas id="plot" role="img" aria-label="Đồ thị lượng giác và đường ngang y bằng m, giao điểm biểu diễn nghiệm nằm trong khoảng. Bảng bên dưới cung cấp danh sách nghiệm bằng văn bản."></canvas>
+<figcaption>Trục hoành (radian) từ −3π đến 3π. Trục tung tự điều chỉnh theo |m| để đường y=m và các giao điểm nằm đúng vị trí (không kẹp đường vào mép hình). Chấm xanh thể hiện nghiệm được nhận trong khoảng.</figcaption></figure>
+<div class="output" id="summary" role="status" aria-live="polite" aria-atomic="true"></div>
+<table class="small" aria-label="Kết quả giải phương trình lượng giác"><tbody>
+<tr><th scope="row">Phương trình</th><td id="equationText"></td></tr>
+<tr><th scope="row">Miền xác định</th><td id="domainText"></td></tr>
+<tr><th scope="row">Chu kỳ</th><td id="periodText"></td></tr>
+<tr><th scope="row">Nghiệm tổng quát</th><td id="generalText"></td></tr>
+<tr><th scope="row">Khoảng đang xét</th><td id="intervalText"></td></tr>
+<tr><th scope="row">Số nghiệm phân biệt</th><td id="countText"></td></tr>
+</tbody></table>
+<table aria-label="Danh sách nghiệm phân biệt thuộc khoảng đã chọn"><caption>Nghiệm thuộc khoảng đã chọn</caption><thead><tr><th>STT</th><th>Nghiệm x (radian)</th><th>Kiểm tra f(x)</th></tr></thead><tbody id="solutionRows"></tbody></table>
+<p class="warn"><strong>Chú ý:</strong> Hai công thức có thể cho cùng một nghiệm (sin x = ±1, cos x = ±1); chỉ đếm một lần. Nghiệm đúng ở cận chỉ được nhận khi cận đó đóng. Với tan/cot, nghiệm không thể nằm ở vị trí hàm không xác định.</p></div>
+<div class="controls"><fieldset><legend>1 · Chọn phương trình</legend>
+<label for="family">Hàm số</label><select id="family"><option value="sin" selected>sin x = m</option><option value="cos">cos x = m</option><option value="tan">tan x = m</option><option value="cot">cot x = m</option></select>
+<label for="mValue">Giá trị m (số thực)</label><input id="mValue" type="number" step="0.25" min="-20" max="20" value="0.5" inputmode="decimal"><p id="mError" class="error" role="alert" aria-live="assertive"></p>
+<p class="tip">Với sin/cos, |m| &gt; 1 thì vô nghiệm. Tan/cot có thể bằng mọi số thực; giới hạn ±20 chỉ phục vụ thao tác trên mô hình.</p></fieldset>
+<fieldset><legend>2 · Chọn khoảng nghiệm</legend>
+<div class="bound-label"><label for="leftBound">Cận trái</label><output id="leftValue" for="leftBound">−π</output></div>
+<input id="leftBound" type="range" min="-12" max="12" step="1" value="-4">
+<div class="bound-label"><label for="rightBound">Cận phải</label><output id="rightValue" for="rightBound">π</output></div>
+<input id="rightBound" type="range" min="-12" max="12" step="1" value="4">
+<div class="choices"><label><input id="includeLeft" type="checkbox" checked> Nhận cận trái [</label><label><input id="includeRight" type="checkbox" checked> Nhận cận phải ]</label></div>
+<p class="tip">Các cận di chuyển theo bước π/4. Hãy thử [0,2π] và [0,2π) để thấy khác biệt.</p><p id="boundsError" class="error" role="alert" aria-live="assertive"></p></fieldset>
+<fieldset><legend>3 · Ví dụ nhanh</legend><div class="buttons"><button type="button" data-preset="sin1">sin = 1</button><button type="button" data-preset="sinlarge">sin = 1,5</button><button type="button" data-preset="cosminus">cos = −1</button><button type="button" data-preset="tan0">tan = 0</button><button type="button" data-preset="cot0">cot = 0</button><button type="button" data-preset="halfopen">[0, 2π)</button></div>
+<button type="button" id="reset" style="width:100%;margin-top:10px">Về ví dụ ban đầu</button></fieldset>
+<p class="tip"><strong>Cách đọc đồ thị:</strong> Đường ngang y=m cắt nhánh đồ thị ở đâu thì đó là nghiệm. Nhưng cần viết <strong>họ nghiệm</strong> với k∈ℤ, rồi mới lọc nghiệm trong khoảng đang xét.</p></div></div></section>
+<footer class="footer"><details><summary>Nguồn và giới hạn mô hình</summary>
+<p>Ứng viên trực quan hóa cho Toán 11 Kết nối tri thức, Chương I, Bài 4: phương trình lượng giác cơ bản; đối chiếu nguồn tác giả <code>prototypes/thpt/content-drafts/THPT_G11_CHI_B01_B04_FULL_CHAPTER_D1_D6_REVIEW_SOURCE_R01_20261031.md</code>, Git blob <code>599d12ac7c2252001f881833c39978f94112cee4</code>. Nguồn này là snapshot tác giả; chưa tự thay thế nghiệm thu theo trang in SGK/SBT, không sinh item canonical mới.</p>
+<p>Giá trị x/m ở bảng được làm tròn khi hiển thị; phép lọc sử dụng giá trị số độ chính xác cao. Chỉ minh họa phương trình cơ bản f(x)=m, không tự giải mọi phương trình biến đổi dạng f(ax+b)=m. Đây là HTML nghiên cứu độc lập, không ghi điểm/lưu Mastery, chưa đưa lên website.</p>
+</details></footer></main>
+<script>
+(function(global){'use strict';
+const P=Math.PI, EPS=1e-8, LAB=document.getElementById('lab'),plot=LAB.querySelector('#plot');
+const $=id=>LAB.querySelector('#'+id);const hooks=[];let dead=false,ro=null,stat=null;
+let state={family:'sin',m:0.5,left:-4,right:4,includeLeft:true,includeRight:true};
+function on(el,event,fn){el.addEventListener(event,fn);hooks.push([el,event,fn]);}
+function num(x){if(typeof x!=='number'||!Number.isFinite(x)||x< -20||x>20)throw RangeError('m phải là số thực hữu hạn từ −20 đến 20');return x;}
+function validate(s){if(!s||!['sin','cos','tan','cot'].includes(s.family))throw RangeError('Chọn một trong sin, cos, tan, cot');num(s.m);
+ for(const k of ['left','right'])if(!Number.isInteger(s[k])||s[k]< -12||s[k]>12)throw RangeError('Cận phải là bội số π/4 trong [−3π,3π]');
+ if(s.left>=s.right)throw RangeError('Cận trái phải nhỏ hơn cận phải');
+ if(typeof s.includeLeft!=='boolean'||typeof s.includeRight!=='boolean')throw RangeError('Điều kiện biên phải là đúng/sai');return {...s};}
+function fmtNumber(x){if(Math.abs(x)<1e-10)x=0;return Number(x.toFixed(5)).toLocaleString('vi-VN',{maximumFractionDigits:5});}
+function fmtPiFromTick(t){if(t===0)return '0';const sign=t<0?'−':'';let a=Math.abs(t),d=4;function gcd(u,v){while(v){let x=u%v;u=v;v=x;}return u;}let g=gcd(a,d);a/=g;d/=g;return sign+(a===1?'':String(a))+'π'+(d===1?'':'/'+d);}
+function fmtRadian(x){if(Math.abs(x)<EPS)return '0';const k=x/P;for(const d of [1,2,3,4,6,12]){const n=Math.round(k*d);if(Math.abs(k-n/d)<5e-8){let a=n,b=d;function gcd(u,v){u=Math.abs(u);v=Math.abs(v);while(v){[u,v]=[v,u%v];}return u||1;}const g=gcd(a,b);a/=g;b/=g;return (a<0?'−':'')+(Math.abs(a)===1?'':Math.abs(a))+'π'+(b===1?'':'/'+b);}}
+ return fmtNumber(x)+' rad';}
+function compute(input){const s=validate(input);const a=s.left*P/4,b=s.right*P/4;const alpha=s.family==='sin'?(Math.abs(s.m)<=1?Math.asin(s.m):null):s.family==='cos'?(Math.abs(s.m)<=1?Math.acos(s.m):null):s.family==='tan'?Math.atan(s.m):Math.atan2(1,s.m);
+ const period=(s.family==='sin'||s.family==='cos')?2*P:P;
+ let families=[];
+ if(alpha!==null){if(s.family==='sin')families=[{base:alpha,tag:'α + 2kπ'},{base:P-alpha,tag:'π − α + 2kπ'}];
+ else if(s.family==='cos')families=[{base:alpha,tag:'α + 2kπ'},{base:-alpha,tag:'−α + 2kπ'}];
+ else families=[{base:alpha,tag:'α + kπ'}];}
+ const roots=[];for(const f of families){const lo=Math.floor((a-f.base)/period)-1,hi=Math.ceil((b-f.base)/period)+1;for(let k=lo;k<=hi;k++){
+ const x=f.base+k*period;let inclLeft=s.includeLeft?x>=a-EPS:x>a+EPS;let inclRight=s.includeRight?x<=b+EPS:x<b-EPS;
+ if(!inclLeft||!inclRight)continue;
+ const actual=Math.abs(x-a)<EPS?a:(Math.abs(x-b)<EPS?b:x);
+ if(!roots.some(t=>Math.abs(t-actual)<1e-7))roots.push(actual);
+ }}roots.sort((u,v)=>u-v);
+ const domain={sin:'x ∈ ℝ',cos:'x ∈ ℝ',tan:'x ≠ π/2 + kπ (k ∈ ℤ)',cot:'x ≠ kπ (k ∈ ℤ)'}[s.family];
+ const general=alpha===null?'Vô nghiệm trên ℝ vì |m| > 1.':s.family==='sin'?'Đặt α = arcsin(m). x = α + 2kπ hoặc x = π − α + 2kπ; k ∈ ℤ.':s.family==='cos'?'Đặt α = arccos(m). x = ±α + 2kπ; k ∈ ℤ.':s.family==='tan'?'Đặt α = arctan(m). x = α + kπ; k ∈ ℤ.':'Chọn α ∈ (0,π), cot α = m. x = α + kπ; k ∈ ℤ.';
+ return {...s,a,b,alpha,period,domain,general,families,roots,interval:(s.includeLeft?'[':'(')+fmtPiFromTick(s.left)+'; '+fmtPiFromTick(s.right)+(s.includeRight?']':')')};}
+function value(f,x){const sn=Math.sin(x),cs=Math.cos(x);if(f==='sin')return sn;if(f==='cos')return cs;if(f==='tan')return Math.abs(cs)<1e-11?null:sn/cs;return Math.abs(sn)<1e-11?null:cs/sn;}
+function renderTable(r){$('equationText').textContent=r.family+' x = '+fmtNumber(r.m);$('domainText').textContent=r.domain;$('periodText').textContent=r.period===P?'π':'2π';
+ $('generalText').textContent=r.general;$('intervalText').textContent=r.interval;$('countText').textContent=String(r.roots.length);
+ $('summary').textContent=r.alpha===null?'|m| > 1: phương trình '+r.family+' x = '+fmtNumber(r.m)+' vô nghiệm trên ℝ.':r.roots.length===0?'Không có nghiệm trong '+r.interval+'. Nghiệm tổng quát có thể vẫn tồn tại ngoài khoảng này.':'Tìm thấy '+r.roots.length+' nghiệm phân biệt trong '+r.interval+'. Hãy đối chiếu các chấm trên đường y = m với bảng bên dưới.';
+ const rows=$('solutionRows');rows.replaceChildren();if(!r.roots.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=3;td.textContent='Không có nghiệm được nhận trong khoảng này.';tr.append(td);rows.append(tr);return;}
+ r.roots.forEach((x,i)=>{const tr=document.createElement('tr');for(const text of [String(i+1),fmtRadian(x)+' ≈ '+fmtNumber(x),fmtNumber(value(r.family,x))+' ≈ '+fmtNumber(r.m)]){const td=document.createElement('td');td.textContent=text;tr.append(td);}rows.append(tr);});}
+function draw(r){if(dead)return;const ratio=global.devicePixelRatio||1,w=Math.max(180,plot.clientWidth),h=Math.max(140,plot.clientHeight);plot.width=Math.round(w*ratio);plot.height=Math.round(h*ratio);let g=plot.getContext('2d');g.setTransform(ratio,0,0,ratio,0,0);g.clearRect(0,0,w,h);const left=43,right=14,top=19,bottom=36,W=w-left-right,H=h-top-bottom,xmin=-3*P,xmax=3*P,ymax=Math.max(3.5,Math.abs(r.m)+1),ymin=-ymax;
+ const X=x=>left+(x-xmin)/(xmax-xmin)*W,Y=y=>top+(ymax-y)/(ymax-ymin)*H;
+ g.fillStyle='#fff';g.fillRect(0,0,w,h);g.fillStyle='#e8f8ee';g.fillRect(X(r.a),top,X(r.b)-X(r.a),H);
+ g.strokeStyle='#e0ebf0';g.lineWidth=1;g.font='11px system-ui';g.fillStyle='#46667a';for(let t=-3;t<=3;t++){const x=t*P;g.beginPath();g.moveTo(X(x),top);g.lineTo(X(x),top+H);g.stroke();const label=t===0?'0':(t===1?'π':(t===-1?'−π':t+'π'));g.fillText(label,X(x)-10,top+H+20);}
+ for(let j=-3;j<=3;j++){const v=j*ymax/3;g.beginPath();g.moveTo(left,Y(v));g.lineTo(left+W,Y(v));g.stroke();if(j%2===0)g.fillText(fmtNumber(v),4,Y(v)+4);}
+ g.strokeStyle='#698798';g.lineWidth=1.6;g.beginPath();g.moveTo(X(0),top);g.lineTo(X(0),top+H);g.moveTo(left,Y(0));g.lineTo(left+W,Y(0));g.stroke();
+ let poleCount=0,segments=0,drawCount=0,poles=[];if(r.family==='tan'||r.family==='cot'){const off=r.family==='tan'?P/2:0;for(let k=-4;k<=4;k++){let x=off+k*P;if(x>xmin+1e-9&&x<xmax-1e-9){poles.push(x);poleCount++;g.save();g.setLineDash([4,5]);g.lineWidth=1;g.strokeStyle='#a89aad';g.beginPath();g.moveTo(X(x),top);g.lineTo(X(x),top+H);g.stroke();g.restore();}}}
+ const boundaries=[xmin,...poles,xmax];g.lineWidth=2.5;g.strokeStyle='#1674aa';for(let j=0;j<boundaries.length-1;j++){let aa=boundaries[j],bb=boundaries[j+1],started=false;g.beginPath();for(let i=0;i<=Math.max(10,Math.ceil((bb-aa)*85));i++){const xx=aa+(bb-aa)*i/Math.max(10,Math.ceil((bb-aa)*85));const y=value(r.family,xx);if(y===null||!Number.isFinite(y)||Math.abs(y)>ymax){started=false;continue;}if(!started){g.moveTo(X(xx),Y(y));segments++;started=true;}else g.lineTo(X(xx),Y(y));drawCount++;}g.stroke();}
+ g.save();g.setLineDash([8,5]);g.strokeStyle='#ce6a37';g.lineWidth=2;const yy=Y(r.m);g.beginPath();g.moveTo(left,yy);g.lineTo(left+W,yy);g.stroke();g.restore();
+ g.lineWidth=1.5;for(const bound of [r.a,r.b]){g.strokeStyle='#319d73';g.beginPath();g.moveTo(X(bound),top);g.lineTo(X(bound),top+H);g.stroke();}
+ let dotCount=0;for(const x of r.roots){if(r.m<ymin||r.m>ymax)continue;g.fillStyle='#0b8a6d';g.beginPath();g.arc(X(x),Y(r.m),5.3,0,2*P);g.fill();g.strokeStyle='#fff';g.lineWidth=2;g.stroke();dotCount++;}
+ stat={family:r.family,poles:poleCount,segments,dots:dotCount,points:drawCount,width:plot.width,height:plot.height};}
+function render(){const r=compute(state);$('family').value=state.family;$('mValue').value=String(state.m);$('mValue').removeAttribute('aria-invalid');$('mError').textContent='';$('leftBound').value=state.left;$('rightBound').value=state.right;$('leftValue').textContent=fmtPiFromTick(state.left);$('rightValue').textContent=fmtPiFromTick(state.right);$('includeLeft').checked=state.includeLeft;$('includeRight').checked=state.includeRight;renderTable(r);draw(r);}
+function getState(){if(dead)throw Error('Mô hình đã tháo');return {...state};}
+function getResult(){if(dead)throw Error('Mô hình đã tháo');return compute(state);}
+function setState(s){if(dead)throw Error('Mô hình đã tháo');const next=validate({...state,...s});state=next;$('boundsError').textContent='';render();return getState();}
+function setCandidate(data,errEl){try{setState(data);errEl.textContent='';}catch(e){errEl.textContent=String(e.message||e);renderControlsOnly();}}
+function renderControlsOnly(){$('family').value=state.family;$('mValue').value=String(state.m);$('leftBound').value=state.left;$('rightBound').value=state.right;$('leftValue').textContent=fmtPiFromTick(state.left);$('rightValue').textContent=fmtPiFromTick(state.right);$('includeLeft').checked=state.includeLeft;$('includeRight').checked=state.includeRight;}
+on($('family'),'change',()=>setCandidate({family:$('family').value},$('mError')));
+on($('mValue'),'change',()=>{const raw=$('mValue').value;try{if(!raw.trim())throw RangeError('Hãy nhập số thực hữu hạn.');setState({m:num(Number(raw))});}catch(e){$('mError').textContent=String(e.message||e);$('mValue').setAttribute('aria-invalid','true');}});
+for(const side of ['left','right'])on($(side+'Bound'),'input',()=>setCandidate({[side]:Number($(side+'Bound').value)},$('boundsError')));
+for(const side of ['Left','Right'])on($('include'+side),'change',()=>setCandidate({['include'+side]:$('include'+side).checked},$('boundsError')));
+const examples={sin1:{family:'sin',m:1,left:0,right:8,includeLeft:true,includeRight:true},sinlarge:{family:'sin',m:1.5,left:-4,right:4,includeLeft:true,includeRight:true},cosminus:{family:'cos',m:-1,left:0,right:8,includeLeft:true,includeRight:true},tan0:{family:'tan',m:0,left:0,right:8,includeLeft:true,includeRight:true},cot0:{family:'cot',m:0,left:0,right:8,includeLeft:true,includeRight:true},halfopen:{family:'tan',m:0,left:0,right:8,includeLeft:true,includeRight:false}};
+for(const btn of LAB.querySelectorAll('[data-preset]'))on(btn,'click',()=>setState(examples[btn.dataset.preset]));
+on($('reset'),'click',()=>setState({family:'sin',m:0.5,left:-4,right:4,includeLeft:true,includeRight:true}));
+if('ResizeObserver'in global){ro=new ResizeObserver(()=>{if(!dead)draw(compute(state));});ro.observe(plot);}
+function resize(){if(dead)throw Error('Mô hình đã tháo');draw(compute(state));}
+function destroy(){if(dead)return false;dead=true;for(const [el,type,fn]of hooks)el.removeEventListener(type,fn);ro?.disconnect();LAB.innerHTML='';return true;}
+const api=Object.freeze({getState,getResult,setState,update:setState,resize,destroy});global.__I798_FINAL_QA__=Object.freeze({type:'trig-equations',model:api,compute,getPlotStats:()=>stat,value,fmtRadian});render();
+})(window);
+</script></body></html>

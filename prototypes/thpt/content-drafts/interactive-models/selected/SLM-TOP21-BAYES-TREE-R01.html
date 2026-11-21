@@ -1,0 +1,96 @@
+<!doctype html>
+<!-- MODEL_ID: SLM-TOP21-BAYES-TREE-R01; ROLE: PUBLIC_DISCOVERY_NO_MASTERY; SOURCE_BASE: PR#880 blob 33632fdf8743b5526b925e8c9f393397bb04d943; DONOR: Temp_I798_FINAL_13_PROBABILITY_TREE.html; OWNER: #798 AUTHORING -->
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>CĐ21 · Bayes trên cây xác suất | G Learning</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#203d49;background:#f3f9f7;color-scheme:light}*{box-sizing:border-box}body{margin:0;padding:15px 11px 35px}main{max-width:1140px;margin:auto}h1{font-size:clamp(1.45rem,3.3vw,2rem);margin:0 0 9px;line-height:1.28}h2{font-size:1.1rem;margin:0;padding:14px 16px;background:#e7f5f2;border-radius:16px 16px 0 0;color:#1b554b}h3{font-size:.96rem;margin:14px 0 7px}.hero,.panel{background:#fff;border:1px solid #cbdedb;border-radius:17px;box-shadow:0 4px 14px #22554b0b}.hero{padding:21px 23px;margin-bottom:13px}.kicker{color:#227267;font-weight:800;font-size:.76rem;letter-spacing:.11em;text-transform:uppercase;margin-bottom:9px}.hero p,.prompt,.caption,.muted,.foot{line-height:1.55}.hero p{margin:0;color:#456473}.prompt{background:#eaf8f1;border-left:4px solid #248a6d;border-radius:10px;padding:13px 16px;margin:13px 0}.lab{container-type:inline-size}.layout{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(290px,.84fr);gap:16px;padding:16px;align-items:start}.visual,.controls{min-width:0}figure{margin:0;border:1px solid #c5dadd;border-radius:12px;overflow:hidden;background:#fbfefd}svg{display:block;width:100%;height:auto}figcaption{padding:10px 12px;background:#f4f9fa;color:#496671;font-size:.87rem}.tree-node{fill:white;stroke:#8aabb0;stroke-width:2}.trunk{stroke:#6b8e9e;stroke-width:3.8;fill:none;stroke-linecap:round}.branch-a{stroke:#2a8b77}.branch-na{stroke:#bd8050}.branch-label{font-size:23px;fill:#224b5c;font-weight:700}.node-title{font-size:22px;fill:#173e49;font-weight:800}.leaf-text{font-size:21px;fill:#174f61;font-weight:800}.leaf-none{fill:#6a7e86}.guide{font-size:18px;fill:#54717c}.sumbar{display:flex;width:100%;height:31px;border-radius:10px;overflow:hidden;border:1px solid #a1bbc1;margin:8px 0 6px}.sumbar div{min-width:0;transition:width .12s}.sumbar div:nth-child(1){background:#85c9b8}.sumbar div:nth-child(2){background:#b5deeb}.sumbar div:nth-child(3){background:#f4cb9d}.sumbar div:nth-child(4){background:#cbd8e7}.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;font-size:.82rem;margin-bottom:9px}.legend span{display:flex;align-items:center;gap:6px}.swatch{display:inline-block;width:12px;height:12px;flex:none;border-radius:3px}.sw1{background:#85c9b8}.sw2{background:#b5deeb}.sw3{background:#f4cb9d}.sw4{background:#cbd8e7}table{width:100%;border-collapse:collapse;font-size:.84rem;margin-top:9px}caption{text-align:left;font-weight:750;padding:10px 0 6px}th,td{border:1px solid #cadcde;padding:8px;text-align:left;vertical-align:top}th{background:#f2f9f9}td{font-variant-numeric:tabular-nums}fieldset{border:1px solid #c8dadf;border-radius:11px;padding:12px;margin:0 0 12px;min-width:0}legend{font-weight:750;font-size:.91rem;padding:0 5px}label{font-size:.86rem;font-weight:680;display:block;margin-bottom:5px}input,button{font:inherit;color:#21464d}input[type=number]{width:100%;min-width:0;min-height:44px;border:1px solid #90aeb7;border-radius:9px;padding:8px 10px;background:white}input[aria-invalid=true]{border:2px solid #b94938;background:#fff7f4}input:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #1971b1;outline-offset:2px}button{min-height:44px;padding:8px 10px;border:1px solid #9eb9bb;border-radius:9px;background:#e7f5ef;font-weight:710;cursor:pointer;line-height:1.3}button:hover{background:#d7ede3}.gridinputs{display:grid;grid-template-columns:1fr;gap:9px}.buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.error{min-height:1.3em;font-size:.84rem;color:#a34334;font-weight:700;margin:4px 0}.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0}.metric{border:1px solid #c7dcdf;border-radius:10px;background:#f4faf9;padding:10px;min-width:0}.metric strong{display:block;font-size:.81rem;color:#4a6770}.metric output{font-size:1.12rem;font-weight:780;display:block;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.explanation{margin-top:12px;background:#eaf7f1;border-left:4px solid #23886a;padding:13px;border-radius:9px;line-height:1.58;overflow-wrap:anywhere}.muted{font-size:.82rem;color:#58717a;margin:8px 0}.note{font-size:.86rem;line-height:1.55;color:#45616b}details{margin:13px 0 0;border:1px solid #cedfe2;padding:12px 14px;border-radius:12px;background:white;overflow-wrap:anywhere}summary{font-weight:750;cursor:pointer}details p{color:#47626e;font-size:.88rem;line-height:1.55}details code{overflow-wrap:anywhere;white-space:normal}.foot{font-size:.8rem;color:#54727d;margin-top:13px}
+@container(max-width:760px){.layout{grid-template-columns:1fr}}@media(max-width:500px){body{padding:9px 8px 27px}.hero{padding:15px}.layout{padding:10px;gap:10px}.branch-label{font-size:25px}.leaf-text{font-size:25px}.guide{font-size:22px}.node-title{font-size:23px}.metric{padding:8px}.metric output{font-size:1rem}.buttons{gap:7px}.caption{font-size:.82rem}}@media(prefers-reduced-motion:reduce){.sumbar div{transition:none}}
+</style></head><body><main>
+<header class="hero"><div class="kicker">G Learning · Math Lab · Chuyên đề 21</div><h1>Xác suất toàn phần và Bayes trên sơ đồ cây</h1><p>Thử hai nguồn X và Y tạo ra sản phẩm. Thay tỉ trọng nguồn và tỉ lệ lỗi, quan sát bốn đường đi để phân biệt P(lỗi | X) với P(X | lỗi).</p></header>
+<section class="prompt"><strong>Dự đoán trước khi thử:</strong> Nếu nguồn X cung cấp 30% sản phẩm và tỉ lệ lỗi ở X là 2%, Y cung cấp 70% với tỉ lệ lỗi 4%, sản phẩm đã bị lỗi có xác suất đến từ X bằng bao nhiêu? Đừng nhầm với 2%.</section>
+<section class="panel lab" id="model21"><h2>Thao tác và quan sát</h2><div class="layout"><div class="visual"><figure>
+<svg viewBox="0 0 690 380" role="img" aria-labelledby="treeTitle treeDesc"><title id="treeTitle">Cây nguồn X/Y và trạng thái lỗi</title><desc id="treeDesc">Bảng bên dưới liệt kê xác suất chính xác ở bốn lá cây.</desc>
+<rect x="10" y="13" width="668" height="352" rx="16" fill="#f7fcfc" stroke="#d3e4e5"/>
+<path class="trunk branch-a" d="M73 184 L243 91"/><path class="trunk branch-na" d="M73 184 L243 285"/>
+<path class="trunk branch-a" d="M243 91 L477 40"/><path class="trunk branch-a" d="M243 91 L477 136"/>
+<path class="trunk branch-na" d="M243 285 L477 232"/><path class="trunk branch-na" d="M243 285 L477 331"/>
+<circle cx="73" cy="184" r="24" class="tree-node"/><circle cx="243" cy="91" r="20" class="tree-node"/><circle cx="243" cy="285" r="20" class="tree-node"/>
+<text x="73" y="192" text-anchor="middle" class="node-title">Ω</text><text x="243" y="99" text-anchor="middle" class="node-title">X</text><text x="243" y="293" text-anchor="middle" class="node-title">Y</text>
+<g class="branch-label"><text x="135" y="120" id="labelA">80%</text><text x="131" y="260" id="labelNotA">20%</text><text x="344" y="52" id="labelBA">60%</text><text x="335" y="137" id="labelNotBA">40%</text><text x="342" y="239" id="labelBNotA">60%</text><text x="337" y="327" id="labelNotBNotA">40%</text></g>
+<g class="leaf-text"><text x="492" y="35">X · lỗi</text><text x="492" y="132">X · không lỗi</text><text x="492" y="230">Y · lỗi</text><text x="492" y="326">Y · không lỗi</text></g>
+<g class="guide"><text x="492" y="62" id="leafAB">48%</text><text x="492" y="158" id="leafAN">32%</text><text x="492" y="256" id="leafNB">12%</text><text x="492" y="352" id="leafNN">8%</text></g>
+</svg><figcaption>Chiều dài nhánh chỉ để bố trí hình, <strong>không biểu thị xác suất</strong>. Xác suất của mỗi lá = tích xác suất dọc đường đi; có thể kiểm bằng bảng bên dưới.</figcaption></figure>
+<h3>Bốn đường đi có tổng xác suất 100%</h3><div class="sumbar" id="bars" role="img" aria-label="Bốn tỷ trọng của các lá"><div id="barAB"></div><div id="barAN"></div><div id="barNB"></div><div id="barNN"></div></div><div class="legend"><span><i class="swatch sw1"></i>X và lỗi</span><span><i class="swatch sw2"></i>X và không lỗi</span><span><i class="swatch sw3"></i>Y và lỗi</span><span><i class="swatch sw4"></i>Y và không lỗi</span></div>
+<table aria-label="Bảng xác suất bốn trường hợp nguồn và lỗi"><caption>Bảng thay thế hình vẽ</caption><thead><tr><th scope="col">Kết quả</th><th scope="col">Phép nhân</th><th scope="col">Xác suất</th></tr></thead><tbody>
+<tr><th scope="row">X và lỗi</th><td id="formulaAB"></td><td id="valueAB"></td></tr>
+<tr><th scope="row">X và không lỗi</th><td id="formulaAN"></td><td id="valueAN"></td></tr>
+<tr><th scope="row">Y và lỗi</th><td id="formulaNB"></td><td id="valueNB"></td></tr>
+<tr><th scope="row">Y và không lỗi</th><td id="formulaNN"></td><td id="valueNN"></td></tr>
+<tr><th scope="row">Tổng</th><td>4 lá rời nhau</td><td id="total">100%</td></tr></tbody></table></div>
+<div class="controls">
+<fieldset><legend>1. Điều chỉnh xác suất</legend><div class="gridinputs">
+<div><label for="pA">P(X) — tỉ trọng nguồn X (%)</label><input id="pA" type="number" inputmode="numeric" min="0" max="100" step="1" value="30"></div>
+<div><label for="pBA">P(lỗi | X) khi P(X) &gt; 0 (%)</label><input id="pBA" type="number" inputmode="numeric" min="0" max="100" step="1" value="2"></div>
+<div><label for="pBN">P(lỗi | Y) khi P(Y) &gt; 0 (%)</label><input id="pBN" type="number" inputmode="numeric" min="0" max="100" step="1" value="4"></div>
+</div><p id="inputError" class="error" role="alert"></p><p class="muted">Ô số có thể điều chỉnh bằng phím ↑/↓. Khi nguồn X (hoặc Y) có tỉ trọng 0%, tỉ lệ lỗi <em>có điều kiện trên nguồn đó</em> không xác định. Ô vẫn là tham số giả định để thử, không được dùng để chia trên biến cố xác suất 0.</p></fieldset>
+<fieldset><legend>2. Chọn tình huống</legend><div class="buttons">
+<button type="button" data-preset="independent">Hai nguồn, 2% và 4%</button>
+<button type="button" data-preset="dependent">Lỗi ở X nhiều hơn Y</button>
+<button type="button" data-preset="disjoint">Chỉ X có thể lỗi</button>
+<button type="button" data-preset="zero">Biên P(X)=0</button>
+<button type="button" data-preset="one">Biên P(X)=100</button>
+<button type="button" data-preset="reset">Đặt lại</button>
+</div><p class="muted" id="context">X và Y là hai nguồn riêng, tổng 100%. Lỗi là trạng thái xảy ra ở một trong hai nguồn; hai tỷ lệ lỗi có điều kiện được giả định theo mô hình.</p></fieldset>
+<div class="metrics">
+<div class="metric"><strong>P(X ∩ lỗi)</strong><output id="outIntersection"></output></div>
+<div class="metric"><strong>P(Y ∩ lỗi)</strong><output id="outJointY"></output></div>
+<div class="metric"><strong>P(lỗi) — xác suất toàn phần</strong><output id="outB"></output></div>
+<div class="metric"><strong>P(X | lỗi) — Bayes</strong><output id="outPosterior"></output></div>
+<div class="metric"><strong>P(lỗi | X) — chiều ngược</strong><output id="outConditional"></output></div>
+<div class="metric"><strong>P(X ∪ lỗi) — để so sánh</strong><output id="outUnion"></output></div>
+</div>
+<div class="explanation" id="explain" role="status" aria-live="polite"></div>
+</div></div></section>
+<details><summary>Giải thích vì sao cần Bayes và điều kiện sử dụng</summary>
+<p><strong>Trước công thức:</strong> Sản phẩm lỗi có thể đến từ X hoặc Y. Ta cần biết phần sản phẩm “vừa X vừa lỗi” chiếm bao nhiêu trong <em>toàn bộ sản phẩm lỗi</em>. Vì vậy mẫu số phải là P(lỗi), không phải P(X).</p>
+<p><strong>Theo đường đi:</strong> P(X∩lỗi)=P(X)×P(lỗi|X) nếu P(X)&gt;0. Tương tự P(Y∩lỗi)=P(Y)×P(lỗi|Y) nếu P(Y)&gt;0. Nếu một nguồn không thể xảy ra thì giao của nó bằng 0; xác suất có điều kiện trên nguồn ấy không xác định.</p>
+<p><strong>Xác suất toàn phần:</strong> P(lỗi)=P(X∩lỗi)+P(Y∩lỗi). Khi P(lỗi)&gt;0, <strong>P(X|lỗi)=P(X∩lỗi)/P(lỗi)</strong>. Nếu P(lỗi)=0, xác suất hậu nghiệm P(X|lỗi) <strong>không xác định</strong> (không chia cho 0).</p>
+<p><strong>Độc lập khác xung khắc:</strong> Nếu cả hai nguồn có xác suất dương, việc tỉ lệ lỗi ở hai nguồn bằng nhau cho biết “nguồn X” và “lỗi” độc lập; nhưng X và Y luôn xung khắc. Sơ đồ không chứng minh dữ liệu thực là độc lập.</p>
+<p><strong>Nguồn tác giả đã kiểm:</strong> Bản ứng viên CĐ21 trong Draft PR #880, Git blob <code>33632fdf8743b5526b925e8c9f393397bb04d943</code>; mô hình tương tác hai bước #13 trong thư viện Issue #798 là nguồn bổ sung hiển thị bốn lá và xử lý biên. Chưa xác nhận lại trang SGK/SBT gốc trong lượt này.</p>
+</details>
+<section class="panel" style="padding:16px;margin-top:13px"><strong>Vận dụng · Tự thử trước khi xem lời giải:</strong>
+<p>Cho P(X)=30%, P(lỗi|X)=8%, P(lỗi|Y)=2%. Tính P(lỗi) và P(X|lỗi). Hãy viết đủ hai đường đi và nêu vì sao đáp án không phải 8%.</p>
+<details><summary>Đối chiếu sau khi tự thử</summary><p>P(lỗi)=0,30×0,08 + 0,70×0,02=0,038=3,8%. P(X|lỗi)=0,024/0,038=12/19≈63,16%. Nếu em lấy 8%, em đã đảo chiều điều kiện.</p></details></section><p class="foot">G Learning — Learn · Grow · Go · Mô hình ứng viên CĐ21 · AUTHORING #798 · Không ghi dữ liệu học sinh, không chấm điểm và không kết nối Internet.</p>
+</main><script>
+(()=>{'use strict';
+const MODEL_ID='SLM-TOP21-BAYES-TREE-R01';
+const ids=['pA','pBA','pBN'];const el=id=>document.getElementById(id);const root=el('model21');const inputs=ids.map(el);const ctrl=new AbortController();let dead=false;
+const presets={independent:[30,2,4],dependent:[30,8,2],disjoint:[40,5,0],zero:[0,90,4],one:[100,2,75],reset:[30,2,4]};
+const descriptions={independent:'X chiếm 30%, lỗi ở X là 2%, lỗi ở Y là 4%; hai tỷ lệ khác nhau nên “X” và “lỗi” không độc lập.',dependent:'X chiếm 30%, lỗi ở X là 8% và Y là 2%. Hãy quan sát xác suất hậu nghiệm tăng.',disjoint:'X và Y là hai nguồn xung khắc; sản phẩm lỗi ở một nguồn không có nghĩa biến cố “X” và “lỗi” xung khắc.',zero:'Nguồn X không xảy ra. P(lỗi|X) không xác định, nhưng P(X|lỗi)=0 khi P(lỗi)>0.',one:'Nguồn X xảy ra chắc chắn. P(lỗi|Y) không xác định, nhưng P(X|lỗi)=1 khi P(lỗi)>0.',reset:'Hai nguồn sản phẩm X và Y. Dữ liệu ví dụ đầu tiên của CĐ21.',custom:'Dữ liệu tự chọn: mỗi nhánh có giá trị giả định, không kết luận xác suất thực nghiệm nếu không có dữ liệu.'};
+let state={pA:30,pBA:2,pBN:4};
+const fmt=n=>new Intl.NumberFormat('vi-VN',{maximumFractionDigits:2}).format(n/100)+'%';
+const fmtPosterior=(n,d)=>d===0?'Không xác định':new Intl.NumberFormat('vi-VN',{maximumFractionDigits:2}).format(100*n/d)+'%';
+function validate(raw){for(const id of ids){if(!Number.isInteger(raw[id])||raw[id]<0||raw[id]>100)return {ok:false,id};}return {ok:true,s:{pA:raw.pA,pBA:raw.pBA,pBN:raw.pBN}};}
+// Each leaf is stored in units of 1/10000, so all totals and independence decisions are exact integers.
+function compute(s){const a=s.pA,x=s.pBA,y=s.pBN;
+ const AB=a*x,AN=a*(100-x),NB=(100-a)*y,NN=(100-a)*(100-y),B=AB+NB,union=AB+AN+NB;
+ return {AB,AN,NB,NN,B,union,total:AB+AN+NB+NN,posteriorNumerator:AB,posteriorDenominator:B,posteriorDefined:B>0,independent:a===0||a===100||x===y};}
+function render(){if(dead)return;const m=compute(state),s=state;
+ for(const id of ids){el(id).value=s[id];el(id).setAttribute('aria-invalid','false');}el('inputError').textContent='';
+ for(const [id,v] of [['labelA',s.pA+'%'],['labelNotA',(100-s.pA)+'%'],['labelBA',s.pA===0?'—':s.pBA+'%'],['labelNotBA',s.pA===0?'—':(100-s.pBA)+'%'],['labelBNotA',s.pA===100?'—':s.pBN+'%'],['labelNotBNotA',s.pA===100?'—':(100-s.pBN)+'%']])el(id).textContent=v;
+ for(const [id,v] of [['AB',m.AB],['AN',m.AN],['NB',m.NB],['NN',m.NN]]){el('leaf'+id).textContent=fmt(v);el('value'+id).textContent=fmt(v);el('bar'+id).style.width=v/100+'%';}
+ for(const [id,v,a,b,ok] of [['formulaAB',m.AB,s.pA,s.pBA,s.pA>0],['formulaAN',m.AN,s.pA,100-s.pBA,s.pA>0],['formulaNB',m.NB,100-s.pA,s.pBN,s.pA<100],['formulaNN',m.NN,100-s.pA,100-s.pBN,s.pA<100]])el(id).textContent=ok?a+'% × '+b+'% = '+fmt(v):'Nhánh bất khả (giao 0%)';
+ el('total').textContent=fmt(m.total);el('outIntersection').textContent=fmt(m.AB);el('outJointY').textContent=fmt(m.NB);el('outB').textContent=fmt(m.B);el('outPosterior').textContent=fmtPosterior(m.AB,m.B);el('outConditional').textContent=s.pA===0?'Không xác định':s.pBA+'%';el('outUnion').textContent=fmt(m.union);
+ el('bars').setAttribute('aria-label',`Bốn lá: X lỗi ${fmt(m.AB)}, X không lỗi ${fmt(m.AN)}, Y lỗi ${fmt(m.NB)}, Y không lỗi ${fmt(m.NN)}. Tổng 100%.`);
+ el('treeDesc').textContent=`Từ nguồn X ${s.pA}% và nguồn Y ${100-s.pA}%, xác suất lỗi chung ${fmt(m.B)}. Hậu nghiệm nguồn X khi lỗi ${fmtPosterior(m.AB,m.B)}. Bảng dưới ghi bốn nhánh.`;
+ const p=m.B===0?'P(lỗi)=0: sản phẩm lỗi là biến cố bất khả; <strong>P(X | lỗi) không xác định</strong>, không chia cho 0.':`P(X | lỗi) = ${fmt(m.AB)} / ${fmt(m.B)} = <strong>${fmtPosterior(m.AB,m.B)}</strong>. Khác P(lỗi | X) = ${s.pA===0?'không xác định':s.pBA+'%'}.`;
+ const impossible=s.pA===0?' P(X)=0 nên P(lỗi | X) không xác định; số nhập cho nhánh này chỉ là tham số thử.':s.pA===100?' P(Y)=0 nên P(lỗi | Y) không xác định; số nhập cho nhánh này chỉ là tham số thử.':'';
+ el('explain').innerHTML=`<strong>Vì sao?</strong> P(X ∩ lỗi)=${fmt(m.AB)}, P(Y ∩ lỗi)=${fmt(m.NB)}. Cộng hai đường đi: P(lỗi)=<strong>${fmt(m.B)}</strong>.<br>${p}<br>${m.independent?'Nguồn X và biến cố lỗi độc lập trong mô hình đang chọn.':'Tỉ lệ lỗi khác nhau theo nguồn; “nguồn X” và “lỗi” không độc lập trong mô hình.'}${impossible}`;
+ return {state:{...s},result:{...m}};}
+function apply(raw){const v=validate(raw);inputs.forEach(i=>i.setAttribute('aria-invalid','false'));if(!v.ok){el(v.id).setAttribute('aria-invalid','true');el('inputError').textContent='Nhập số nguyên từ 0 đến 100 cho cả ba xác suất.';return false;}state=v.s;render();return true;}
+function fromInputs(){const raw={};for(const i of inputs){const v=i.value.trim();raw[i.id]=v===''?NaN:Number(v);}if(apply(raw))el('context').textContent=descriptions.custom;}
+inputs.forEach(i=>i.addEventListener('change',fromInputs,{signal:ctrl.signal}));
+root.querySelectorAll('[data-preset]').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.preset,v=presets[k];apply({pA:v[0],pBA:v[1],pBN:v[2]});el('context').textContent=descriptions[k];},{signal:ctrl.signal}));
+function destroy(){if(dead)return;dead=true;ctrl.abort();delete window.__SLM_MATH_LAB_21__;}
+window.__SLM_MATH_LAB_21__={MODEL_ID,getState:()=>({...state}),getResult:()=>({...compute(state)}),update:x=>{if(dead)return false;return apply({...state,...x});},destroy};render();
+})();
+</script></body></html>
