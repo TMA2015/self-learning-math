@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 475" role="img" aria-labelledby="title description">
+<title id="title">Sơ đồ cây chọn tuyến R hoặc S và khả năng đến đúng giờ</title>
+<desc id="description">Bắt đầu chọn tuyến R với xác suất 3 phần 5 hoặc S với 2 phần 5. Nếu đi R, đúng giờ 4 phần 5 và muộn 1 phần 5; nếu đi S, đúng giờ 1 phần 2 và muộn 1 phần 2. Bốn xác suất lá là 12 phần 25, 3 phần 25, 1 phần 5, 1 phần 5. Hai lá đúng giờ cộng thành 17 phần 25.</desc>
+<rect x="1" y="1" width="998" height="473" rx="12" fill="#fff" stroke="#77818a" stroke-width="2"/>
+<g font-family="Arial, sans-serif" fill="#1f2933">
+<text x="27" y="38" font-size="22" font-weight="bold">Đọc cây theo hướng: chọn tuyến → đúng giờ hoặc muộn</text>
+<text x="28" y="69" font-size="15">Hình của Ví dụ đã giải tại Kiến thức 3.1</text>
+</g>
+<g fill="none" stroke="#5d6a75" stroke-width="3" stroke-linecap="round">
+<path d="M137 231 L342 120 M137 231 L342 354"/>
+<path d="M388 120 L644 80 M388 120 L644 169"/>
+<path d="M388 354 L644 296 M388 354 L644 399"/>
+</g>
+<g font-family="Arial, sans-serif" fill="#1f2933" stroke="#77818a" stroke-width="1.2">
+<rect x="35" y="212" width="111" height="38" rx="8" fill="white"/><text x="51" y="237" font-size="16" stroke="none">Bắt đầu</text>
+<rect x="342" y="101" width="60" height="38" rx="8" fill="white"/><text x="365" y="126" font-size="18" stroke="none">R</text>
+<rect x="342" y="335" width="60" height="38" rx="8" fill="white"/><text x="365" y="360" font-size="18" stroke="none">S</text>
+</g>
+<g font-family="Arial, sans-serif" font-size="17" fill="#27333d">
+<text x="216" y="161">P(R) = 3/5</text>
+<text x="215" y="316">P(S) = 2/5</text>
+<text x="469" y="86">Đúng | R: 4/5</text>
+<text x="472" y="182">Muộn | R: 1/5</text>
+<text x="473" y="304">Đúng | S: 1/2</text>
+<text x="474" y="413">Muộn | S: 1/2</text>
+</g>
+<g font-family="Arial, sans-serif" fill="#172530" stroke="#78818b" stroke-width="1.2">
+<rect x="648" y="58" width="322" height="46" rx="7" fill="#f1f3f5"/>
+<rect x="648" y="151" width="322" height="46" rx="7" fill="#fff"/>
+<rect x="648" y="275" width="322" height="46" rx="7" fill="#f1f3f5"/>
+<rect x="648" y="382" width="322" height="46" rx="7" fill="#fff"/>
+<text x="660" y="87" stroke="none" font-size="18">R, đúng: (3/5)(4/5) = 12/25</text>
+<text x="660" y="181" stroke="none" font-size="18">R, muộn: (3/5)(1/5) = 3/25</text>
+<text x="660" y="305" stroke="none" font-size="18">S, đúng: (2/5)(1/2) = 1/5</text>
+<text x="660" y="413" stroke="none" font-size="18">S, muộn: (2/5)(1/2) = 1/5</text>
+</g>
+<text x="28" y="458" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#172530">P(đúng giờ) = 12/25 + 1/5 = 17/25 · Tổng bốn lá = 1</text>
+</svg>
