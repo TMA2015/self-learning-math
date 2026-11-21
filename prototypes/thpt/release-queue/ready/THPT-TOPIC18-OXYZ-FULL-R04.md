@@ -1,3 +1,6 @@
+<!-- OWNER_APPROVED_SHARED_G12_CHV_WRITTEN_24_STAFF_NOTE_REMOVAL_READY_20261121 -->
+**CURRENT EXACT SOURCE_EQUIVALENT AUTHORING:** Same one CĐ18 original R04 learner `d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960` and original G12 SGK ChV B14–B17 shared bank `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39` (matching source-owner #725 and CĐ18 branch hash). All **24** original `- **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery...` staff-only visible prose removed from original shared SGK canonical and exactly 24 Topic projected Written answers. In SGK canonical there is now ONE hidden `Q16_AUTHORING_ONLY` metadata comment retaining the existing no self-graded Mastery policy; Topic source keeps `NO_MASTERY` Q16 controls. Original **24/24 original Written rubric mathematical criteria/point weights and solutions byte-for-byte unchanged** once removing the one staff sentence; remaining 183 Practice question/answer bodies untouched, all 247 original canonical public IDs, 40 FirstTry, 12 public question-only selfcheck, 10 SVG and W07 anti-spoiler preserved. Historical G12 SBT B14 page25 source provenance remains P2 not claimed solved. Q18 `3a0cbbfb74252787f08c9504de9018c7e58bf8a1`, A1 `baac29f51c2bbc7a66d95f39680c6d7be285916d`, V2 `79fe1557f85488361322d9e36b606f1e44b3ddd1`; `DELTA_B_SOURCE_EQUIVALENT` (student-only editorial). No full independent NotebookLM Topic PASS or website release/merge/deploy.
+---
 <!-- TOP18_MASTER974_CURRENT_READY_AUTHORING_20261121 -->
 **CURRENT AUTHORING CONTENT_READY, NOT WEBSITE RELEASE · 21/11/2026:** CĐ18 one R04 canonical learner `19d9b2d2f1dd2ec59750d92d9835cd111207ed4d`, source commit `aee8a33bcf44acb90268f96b297fa161a3861de3`, author Q18 v3.2.0 `AUTHOR_SELF_VERIFIED` blob `92c8d449b242f5f1fea9b7e4a7b1830d0396b1b6`, A1 `b11c3441d2e7f3ce364f9f8389bff662f4bff6be`, V2 `19e9a10b21202e5399adc8edb90b63536ff9504d`. 40 actual Knowledge outcomes and FirstTry math kept, 40 individualized opt-in Kiểm lỗi with 80 original valid Bài targets, 207 unique Bài luyện 1–207, 12 public same-ID question-only replays with opt-in after-all navigation (Bài 15/35/50/70/81/86/96/112/118/143/175/201), 247 unique canonical IDs, 10 original unchanged SVG source assets and model, one last SGK credit, 248/248 details.
 
@@ -23,14 +26,14 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+ACADEMIC_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_SELF_VERIFIED; NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 92c8d449b242f5f1fea9b7e4a7b1830d0396b1b6
+REVIEW_RECEIPT_BLOB: 3a0cbbfb74252787f08c9504de9018c7e58bf8a1
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
+AUTHOR_A1_A7_BLOB: baac29f51c2bbc7a66d95f39680c6d7be285916d
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC18-OXYZ-FULL-R04_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 19e9a10b21202e5399adc8edb90b63536ff9504d
+AUTHOR_HANDOFF_BLOB: 79fe1557f85488361322d9e36b606f1e44b3ddd1
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_SUBSTANTIVE_AUDIT_BLOB: 4785b3be15b49f968de27fad99fc311cb2f8bb1b
 S1_ORIGINAL_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
