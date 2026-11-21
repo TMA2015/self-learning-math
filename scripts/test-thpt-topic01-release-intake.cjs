@@ -42,7 +42,11 @@ assert(overview.includes("mẫu kỹ thuật cũ"),"Existing legacy demo must be
 for(const config of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){const text=read(config);for(const file of paths)assert(text.includes(file.replace(/^docs\//,"")),"Missing official three-page nav in "+config);
  assert(text.includes("thpt-topic01-release-tabs-v1.js")&&text.includes("thpt-topic01-release-v1.css"),"Missing two-level tab assets in "+config);
 }
+const approvedIDs=[...sections[1].matchAll(/<!-- DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+);/g)].map(m=>m[1]);
+assert.equal(approvedIDs.length,24,"Original CĐ01 item ID annotations disappeared");
+assert.equal(new Set(approvedIDs).size,24,"Duplicate CĐ01 Practice ID annotations");
 const js=read("docs/assets/javascripts/thpt-topic01-release-tabs-v1.js");
+assert(js.includes("const approvedIds="+JSON.stringify(approvedIDs)),"CĐ01 modal Q15 ID placements differ from original source");
 assert(js.includes("golden.bindDialog")&&js.includes("golden.renderNav")&&js.includes("golden.bindPager"),"CĐ01 Practice must use one-question Golden shared modal");
 assert(read(paths[1]).includes("data-topic01-practice-start")&&read(paths[1]).includes("data-topic01-practice-end"),"Missing public Practice source shelf markers");
 assert(js.includes("data-topic01-module-layout")&&js.includes("aria-selected"),"Missing accessible adaptive knowledge tabs");
