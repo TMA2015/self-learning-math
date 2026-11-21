@@ -1,5 +1,5 @@
-<!-- AUTHORING R05 learner candidate; R04 frozen SHA 4a17269c608b4916ba085c13aae898fd9c4733ce. Three independent TOPIC pages; Q18 pending. -->
-<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R05_AUTHORING_CANDIDATE -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: CĐ10 R06 one current learner canonical with source-locked author Q18; historical R04/R05 snapshots remain in Git, not competing learner sources. -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.2.0; LEARNING_PATH=TOPIC; SOURCE_VERSION=R06_CANONICAL_AUTHOR_SELF_Q18 -->
 # CĐ10 — Ứng dụng đạo hàm: Khảo sát hàm số và tối ưu hóa
 
 # Kiến thức
@@ -35,6 +35,11 @@ Xét \(f(x)=-2x+5\) trên \(\mathbb R\). Với bất kỳ \(x_1<x_2\), ta có \(
 
 \(f(x_2)-f(x_1)=3(x_2-x_1)>0\), nên hàm đồng biến trên \(\mathbb R\). Nếu em chỉ thế hai giá trị cụ thể, hãy quay lại điều kiện **với mọi** cặp \(x_1<x_2\) trong khoảng.
 
+
+**Kiểm lỗi**
+
+Nếu em kết luận chiều biến thiên từ hai điểm mẫu, đọc lại **Kiến thức 1.1** và giải **Bài 1–2**. Với mọi \(x_1<x_2\) trong cùng khoảng, phải kiểm dấu hiệu hai giá trị hoặc dấu đạo hàm, không chỉ quan sát hình.
+
 </details>
 
 ### 1.2. Dấu đạo hàm
@@ -58,6 +63,11 @@ Chẳng hạn, \(f(x)=x^2\) có \(f'(x)=2x\). Ở phía trái 0, đạo hàm âm
 
 Có. Với \(x_1<x_2\) thì \(x_1^3<x_2^3\); đạo hàm \(3x^2\ge0\) và chỉ bằng 0 tại một điểm, không tạo ra đoạn hằng. Nếu em gán mọi nghiệm \(f'=0\) thành cực trị, hãy lập dấu đạo hàm **hai phía** điểm ấy.
 
+
+**Kiểm lỗi**
+
+Nếu em gán mọi nghiệm \(f'=0\) thành cực trị hoặc quên các khoảng đổi dấu, đọc **Kiến thức 1.2**, làm **Bài 3** và **Bài 5**. Lập trục dấu \(f'\), phân biệt một điểm dừng với khoảng tăng/giảm.
+
 </details>
 
 ### 1.3. Điểm cấm và khoảng biến thiên
@@ -80,6 +90,11 @@ Vì thế, khi khảo sát một hàm số, ta luôn tìm miền trước, rồi
 <summary>Đối chiếu</summary>
 
 Điều kiện \(x-1\ge0\) cho miền \([1,+\infty)\). Trên \((1,+\infty)\), \(g'(x)=\dfrac1{2\sqrt{x-1}}>0\); từ giá trị ở biên \(x=1\), ta vẫn có thể nói hàm tăng trên \([1,+\infty)\). Nếu em ghi miền \(\mathbb R\), hãy kiểm điều kiện tồn tại của căn trước.
+
+
+**Kiểm lỗi**
+
+Nếu em kết luận nghịch biến trên toàn tập rời nhau hoặc dùng đạo hàm tại điểm cấm, đọc **Kiến thức 1.3**, làm **Bài 6** rồi **Bài 8**. Trước tiên tách miền thành các khoảng hợp lệ.
 
 </details>
 
@@ -110,6 +125,11 @@ x=0, f' đổi âm→dương, f(0)=0.
 
 Nếu chỉ giải f'=0, lập bảng dấu qua nghiệm.
 
+
+**Kiểm lỗi**
+
+Nếu em chỉ giải \(f'=0\) mà không xét dấu trái/phải điểm tới hạn, đọc **Kiến thức 1.4**, làm **Bài 9** và **Bài 12**. Dấu \(+\to-\) cho cực đại, \(-\to+\) cho cực tiểu.
+
 </details>
 
 ### 1.5. Điểm dừng không cực trị
@@ -135,6 +155,11 @@ Có, f'=4x³ đổi âm→dương ở0; f(0)=0.
 
 Nếu bỏ điểm gấp khúc |x|, bổ sung điểm f không khả vi nhưng có giá trị.
 
+
+**Kiểm lỗi**
+
+Nếu em nghĩ có \(f'=0\) chắc chắn có cực trị hoặc bỏ điểm không khả vi, đọc **Kiến thức 1.5**, làm **Bài 14** và **Bài 16**. Đối chiếu \(|x|\) với \(x^5\) quanh 0.
+
 </details>
 
 ### 1.6. Hướng chuyển động so với tốc độ
@@ -159,6 +184,11 @@ Chẳng hạn, s(t)=t²−4t, t≥0: v=2t−4, âm t<2, 0 tại2, dương t>2; t
 v=2t>0 nên tăng.
 
 Nếu nhìn s âm hay dương để đo chiều, thay bằng dấu s'.
+
+
+**Kiểm lỗi**
+
+Nếu em dùng dấu tọa độ \(s(t)\) để kết luận chiều chuyển động, đọc **Kiến thức 1.6**, làm **Bài 17** và **Bài 18**. Xét vận tốc có hướng \(v=s'\), còn tốc độ là \(|v|\).
 
 </details>
 
@@ -189,6 +219,11 @@ GTNN0 tại0; không có GTLN vì x²→∞.
 
 Nếu nói cực đại 2 là GTLN của hàm bậc ba, thử x=10.
 
+
+**Kiểm lỗi**
+
+Nếu em lấy cực đại địa phương làm GTLN trên toàn miền vô hạn, đọc **Kiến thức 2.1**, làm **Bài 19** và **Bài 21**. So cả biên và hành vi ở xa; muốn có GTLN phải có điểm thực sự đạt.
+
 </details>
 
 ### 2.2. Tồn tại GTLN/GTNN trên đoạn
@@ -217,6 +252,11 @@ Xét ví dụ: f=x²−2x trên [0,3] là đa thức liên tục nên tồn tạ
 Có, GTLN4 tại2 và GTNN0 tại0.
 
 Nếu miền mở, thử xét f=x trên (0,1) không đạt cận1.
+
+
+**Kiểm lỗi**
+
+Nếu em áp dụng định lí GTLN/GTNN cho miền hở hoặc không liên tục, đọc **Kiến thức 2.2**, làm **Bài 22** và **Bài 24**. Điều kiện đủ quen thuộc là **liên tục trên đoạn đóng hữu hạn**.
 
 </details>
 
@@ -249,6 +289,11 @@ f'=2x−4=0 tại2: f(0)=0,f(2)=−4,f(3)=−3⇒GTNN−4 tại2.
 
 Nếu thấy nghiệm đạo hàm nằm ngoài đoạn, bỏ ứng viên ấy.
 
+
+**Kiểm lỗi**
+
+Nếu em chỉ kiểm nghiệm \(f'=0\) mà bỏ hai đầu đoạn hoặc điểm không khả vi, đọc **Kiến thức 2.3**, làm **Bài 28** và **Bài 29**. Ghi đủ các giá trị ứng viên rồi so sánh.
+
 </details>
 
 ### 2.4. Miền mở và khả đạt
@@ -273,6 +318,11 @@ Chẳng hạn, f=1−(x−2)² trên (0,3) có GTLN1 tại x=2 (nội miền) d�
 Không, vì g→0 khi x→0⁺ nhưng x=0 bị loại.
 
 Nếu ghi GTLN là cận không đạt, hãy hỏi có x∈D sao cho f(x)=cận không.
+
+
+**Kiểm lỗi**
+
+Nếu em gọi một cận tiến tới nhưng không đạt là GTLN/GTNN, đọc **Kiến thức 2.4**, làm **Bài 30** và **Bài 32**. Hỏi rõ có tồn tại \(x\) trong miền để \(f(x)\) bằng cận không.
 
 </details>
 
@@ -299,6 +349,11 @@ x=2, f(2)=−9; x=5 không hợp lệ.
 
 Nếu nghiệm f'=0 ngoài miền, kiểm đầu mút hợp lệ.
 
+
+**Kiểm lỗi**
+
+Nếu nghiệm tối ưu không thuộc miền ràng buộc nhưng vẫn được chọn, đọc **Kiến thức 2.5**, làm **Bài 33** và **Bài 34**. Trước khi đạo hàm cần chốt miền; nghiệm ngoài miền bị loại.
+
 </details>
 
 ### 2.6. Lập mô hình ba cạnh
@@ -323,6 +378,11 @@ Chẳng hạn, Chu vi hình chữ nhật 20 m, cạnh x∈(0,10), cạnh kia10�
 x=3, cạnh còn lại3, diện tích9 m².
 
 Nếu mục tiêu chưa đưa về một biến, quay lại ràng buộc trước khi đạo hàm.
+
+
+**Kiểm lỗi**
+
+Nếu em viết ràng buộc cho hình chữ nhật sát tường như phải rào đủ bốn cạnh, đọc **Kiến thức 2.6**, làm **Bài 35** và **Bài 37**. Vẽ rõ những cạnh dùng vật liệu, sau đó đưa diện tích về một biến.
 
 </details>
 
@@ -353,6 +413,11 @@ y=3 khi x→±∞.
 
 Nếu lấy hệ số hằng ở tử làm tiệm cận, chia cho x bậc cao nhất.
 
+
+**Kiểm lỗi**
+
+Nếu em nhầm hệ số tự do với tỉ số bậc cao nhất của phân thức, đọc **Kiến thức 3.1**, làm **Bài 39** và **Bài 41**. Tính giới hạn khi \(x\to\pm\infty\), rồi viết tiệm cận ngang \(y=L\).
+
 </details>
 
 ### 3.2. Tiệm cận đứng
@@ -381,6 +446,11 @@ Chẳng hạn, f=(x+1)/(x−2), tại2 tử→3>0, mẫu âm phía trái/dương
 x=−1; trái −∞, phải+∞.
 
 Nếu viết 0/0 rồi gọi đứng, thử phân tích và rút gọn.
+
+
+**Kiểm lỗi**
+
+Nếu em chỉ thấy mẫu bằng 0 mà không xét giới hạn một phía và dấu, đọc **Kiến thức 3.2**, làm **Bài 42** và **Bài 44**. Điểm tiệm cận đứng đòi giá trị hàm tiến vô cực từ ít nhất một phía trong miền.
 
 </details>
 
@@ -411,6 +481,11 @@ f=x−1+2/x⇒y=x−1.
 
 Nếu chỉ tính a mà quên b, tiệm cận sẽ dịch sai.
 
+
+**Kiểm lỗi**
+
+Nếu em ghi \(y=ax\) nhưng bỏ hệ số dịch \(b\), đọc **Kiến thức 3.3**, làm **Bài 46** và **Bài 48**. Chia đa thức, chứng minh phần dư tiến về 0 tại vô cực.
+
 </details>
 
 ### 3.4. Lỗ khử được
@@ -435,6 +510,11 @@ Chẳng hạn, f=(x²−4)/(x−2), x≠2 ⇒ f=x+2 trên miền. Lim tại2 là
 Không, vì f=x+3 cho x≠3, giới hạn6.
 
 Nếu rút gọn nhưng tự gán f(3)=6, đã thay đổi hàm gốc.
+
+
+**Kiểm lỗi**
+
+Nếu em xem lỗ khử được như tiệm cận đứng hoặc tự điền điểm bị loại, đọc **Kiến thức 3.4**, làm **Bài 50** và **Bài 52**. Rút gọn chỉ có giá trị trên miền gốc, rồi mới xét giới hạn.
 
 </details>
 
@@ -461,6 +541,11 @@ Chỉ x→0⁺; giới hạn +∞, x=0 là TCD.
 
 Nếu viết giới hạn trái của f không có miền thực, đó là sai điều kiện.
 
+
+**Kiểm lỗi**
+
+Nếu em đòi giới hạn từ phía ngoài miền của một hàm có căn ở mẫu, đọc **Kiến thức 3.5**, làm **Bài 54** và **Bài 55**. Chỉ xét hướng đến điểm nằm trong miền xác định thực.
+
 </details>
 
 ### 3.6. Tiệm cận qua hình
@@ -485,6 +570,11 @@ Xét ví dụ: f=x+1/x, x≠0: TCD x=0 vì 1/x vô cực, TC xiên y=x vì f−x
 TCD x=0, TCN y=1.
 
 Nếu đọc đường y=1 như trục hoành, hãy ghi phương trình theo trục.
+
+
+**Kiểm lỗi**
+
+Nếu em nhầm đường xiên với đường ngang hoặc đọc hai nhánh liền nhau qua điểm cấm, đọc **Kiến thức 3.6**, làm **Bài 56** và **Bài 58**. Viết phương trình từng tiệm cận và kiểm giới hạn sai khác.
 
 </details>
 
@@ -514,6 +604,11 @@ Chẳng hạn, f=1/(x−1): D=ℝ\{1}, f'=−1/(x−1)²<0, TCD x=1, TCN y=0; ha
 D=ℝ, f'=2x, giảm trước0 tăng sau0, đỉnh(0,0), không TCD/TC ngang, đồ thị parabol.
 
 Nếu thiếu nhánh phía trái, bảng dấu f' là nơi tìm lại.
+
+
+**Kiểm lỗi**
+
+Nếu em bắt đầu phác hình trước khi kiểm miền xác định, đạo hàm và giao trục, đọc **Kiến thức 4.1**, làm **Bài 59** và **Bài 61**. Bảng biến thiên phải xuất phát từ miền và dấu \(f'\).
 
 </details>
 
@@ -546,6 +641,11 @@ Không; f'=3x²≥0, không đổi dấu ở0.
 
 Nếu vẽ hình có hai đỉnh cho x³, kiểm lại số nghiệm đổi dấu của f'.
 
+
+**Kiểm lỗi**
+
+Nếu em vẽ đồ thị bậc ba luôn tăng hoặc bỏ một điểm đổi dấu đạo hàm, đọc **Kiến thức 4.2**, làm **Bài 62** và **Bài 65**. Xét cả giới hạn hai đầu và cực trị trước khi phác đồ thị.
+
 </details>
 
 ### 4.3. Khảo sát phân thức
@@ -560,7 +660,7 @@ Chẳng hạn, f=(2x+1)/(x−1): D=ℝ\{1}, f'=[2(x−1)−(2x+1)]/(x−1)²=−
 
 *Quan sát hình:* Đường x=1 là tiệm cận đứng, y=2 tiệm cận ngang của (2x+1)/(x−1); không nối các nhánh qua x=1.
 
-Ngoài phân thức bậc nhất trên bậc nhất, SGK còn yêu cầu khảo sát **phân thức bậc hai trên bậc nhất** \(\displaystyle y=\frac{ax^2+bx+c}{px+q}\) với \(a,p\ne0\) và tử không chia hết cho mẫu. Chia đa thức, ta đưa hàm về \(y=mx+n+\frac{k}{px+q}\), \(k\ne0\). Từ đây xác định đường tiệm cận đứng \(x=-q/p\), tiệm cận xiên \(y=mx+n\), rồi xét dấu đạo hàm, điểm cực trị và giới hạn ở từng nhánh miền. Nếu tử chia hết cho mẫu, điểm mẫu bị loại có thể chỉ là **lỗ**, không được tự kết luận có tiệm cận đứng.
+Ngoài phân thức bậc nhất trên bậc nhất, ta còn khảo sát **phân thức bậc hai trên bậc nhất** \(\displaystyle y=\frac{ax^2+bx+c}{px+q}\) với \(a,p\ne0\) và tử không chia hết cho mẫu. Chia đa thức, ta đưa hàm về \(y=mx+n+\frac{k}{px+q}\), \(k\ne0\). Từ đây xác định đường tiệm cận đứng \(x=-q/p\), tiệm cận xiên \(y=mx+n\), rồi xét dấu đạo hàm, điểm cực trị và giới hạn ở từng nhánh miền. Nếu tử chia hết cho mẫu, điểm mẫu bị loại có thể chỉ là **lỗ**, không được tự kết luận có tiệm cận đứng.
 
 > **PHƯƠNG PHÁP — Khảo sát phân thức bậc hai trên bậc nhất.** Xác định miền → chia đa thức và kiểm phần dư → tìm tiệm cận từ giới hạn → tính \(y'\), xét dấu trên từng khoảng, kể cả nơi mẫu đổi dấu → lập bảng biến thiên → tìm giao trục/điểm đặc biệt và vẽ các nhánh. Giao điểm của tiệm cận đứng và xiên là tâm đối xứng.
 
@@ -580,6 +680,11 @@ Ngoài phân thức bậc nhất trên bậc nhất, SGK còn yêu cầu khảo 
 f'=−5/(x−2)²<0 trên mỗi nhánh; TCD x=2, TCN y=1.
 
 Nếu đọc 'giảm trên toàn ℝ\{2}' theo mọi cặp, lưu ý hai nhánh không tạo một khoảng.
+
+
+**Kiểm lỗi**
+
+Nếu em gộp hai khoảng bị ngăn bởi tiệm cận đứng thành một khoảng giảm/tăng, đọc **Kiến thức 4.3**, làm **Bài 68** và **Bài 69**. Tách nhánh theo từng thành phần liên thông của miền.
 
 </details>
 
@@ -605,6 +710,11 @@ Chẳng hạn, f=(x−2)/(x+1): Ox (2,0), Oy(0,−2), TCD x=−1 và TCN y=1. Ta
 Không; f=1 trên D nên không có nghiệm f=0, x=1 bị loại.
 
 Nếu rút gọn rồi tự điền điểm bị loại, đã đổi đồ thị.
+
+
+**Kiểm lỗi**
+
+Nếu em giải tử bằng 0 nhưng quên mẫu cũng bằng 0 tại nghiệm đó, đọc **Kiến thức 4.4**, làm **Bài 70** và **Bài 72**. Điểm giao trục chỉ hợp lệ khi tọa độ thuộc miền.
 
 </details>
 
@@ -639,6 +749,11 @@ f=1+3/(x−2) nên I(2,1).
 
 Nếu lấy tâm tại giao trục, nhầm với giao tiệm cận.
 
+
+**Kiểm lỗi**
+
+Nếu em đặt tâm đối xứng tại giao trục thay vì giao hai tiệm cận của phân thức dạng phù hợp, đọc **Kiến thức 4.5**, làm **Bài 74** và **Bài 75**. Kiểm lại bằng cặp điểm đối xứng qua tâm.
+
 </details>
 
 ### 4.6. Bảng biến thiên
@@ -664,6 +779,11 @@ Do f liên tục tại 2 và tăng trước2, giảm sau2 theo dấu đạo hàm
 
 Nếu tưởng min, nhớ +→− là đi lên rồi đi xuống.
 
+
+**Kiểm lỗi**
+
+Nếu em kết luận cực trị chỉ từ dấu hai phía mà quên tính liên tục tại điểm, đọc **Kiến thức 4.6**, làm **Bài 76** và **Bài 77**. Với hàm liên tục ở mốc, dấu đạo hàm \(+\to-\) cho cực đại, \(-\to+\) cho cực tiểu.
+
 </details>
 
 ### 4.7. Miền rời và chiều biến thiên
@@ -688,6 +808,11 @@ Chẳng hạn, f=1/x, D=ℝ\{0}, f'=−1/x²<0 trên từng nhánh. Nhưng −1<
 Trên từng khoảng (−∞,1) và (1,∞); không trên cả tập gộp theo mọi cặp.
 
 Nếu gộp, thử một cặp điểm ở hai nhánh.
+
+
+**Kiểm lỗi**
+
+Nếu em nói một phân thức giảm trên toàn miền rời nhau chỉ vì đạo hàm âm trên mỗi nhánh, đọc **Kiến thức 4.7**, làm **Bài 78** và **Bài 80**. Hãy thử một cặp điểm nằm ở hai nhánh để tự phản biện.
 
 </details>
 
@@ -722,6 +847,11 @@ Trong hóa học, nếu nồng độ \(C(t)=10-2t\) (mg/lít) trên \(0\le t\le3
 
 Nếu trả 50+3q, bạn đang nêu mức chi phí chứ không tốc độ.
 
+
+**Kiểm lỗi**
+
+Nếu em trả tổng chi phí thay vì chi phí cận biên hoặc bỏ đơn vị, đọc **Kiến thức 5.1**, làm **Bài 81** và **Bài 83**. Đơn vị \(C'\) là đơn vị tiền trên một sản phẩm.
+
 </details>
 
 ### 5.2. Vận tốc và gia tốc
@@ -746,6 +876,11 @@ Chẳng hạn, s(t)=−t², t>0: v=−2t<0, a=−2<0 cùng dấu nên |v|=2t tă
 Đang tăng tại lúc xét vì v·a>0.
 
 Nếu viết 'a âm nên chậm', kiểm chiều v.
+
+
+**Kiểm lỗi**
+
+Nếu em kết luận gia tốc âm luôn làm tốc độ giảm, đọc **Kiến thức 5.2**, làm **Bài 84** và **Bài 86**. Khi \(v\ne0\), tốc độ tăng/giảm tùy dấu của \(v\cdot a\).
 
 </details>
 
@@ -772,6 +907,11 @@ C'(3)=8, còn 4²+8−(9+6)=9, không bằng nhau.
 
 Không tuyên bố đạo hàm luôn bằng tăng một sản phẩm.
 
+
+**Kiểm lỗi**
+
+Nếu em cho rằng đạo hàm đúng bằng chênh lệch khi tăng nguyên một sản phẩm, đọc **Kiến thức 5.3**, làm **Bài 87** và **Bài 90**. Tính riêng \(C'(q)\) và \(C(q+1)-C(q)\) để thấy sai khác.
+
 </details>
 
 ### 5.4. Miền khả thi của hộp
@@ -796,6 +936,11 @@ Chẳng hạn, Hình chữ nhật có tổng hai cạnh bằng10 m, x>0 và 10�
 0<x<4 để cạnh 8−2x>0.
 
 Nếu xét x=5, đáy có cạnh âm, không có hộp.
+
+
+**Kiểm lỗi**
+
+Nếu em đạo hàm mô hình hộp trước khi đặt điều kiện chiều dài dương, đọc **Kiến thức 5.4**, làm **Bài 92** và **Bài 93**. Chiều cao và mọi cạnh đáy đều phải dương.
 
 </details>
 
@@ -828,6 +973,11 @@ x=4,A=16.
 
 Nếu x>0 nhưng nghiệm ngoài miền, phải loại.
 
+
+**Kiểm lỗi**
+
+Nếu em chỉ giữ nghiệm \(f'=0\) mà không so biên hoặc khả đạt, đọc **Kiến thức 5.5**, làm **Bài 94** và **Bài 96**. Kết luận tối ưu phải thuộc miền hợp lệ và đạt được.
+
 </details>
 
 ### 5.6. Điểm không khả vi
@@ -853,6 +1003,11 @@ GTLN1 tại1, GTNN0 tại0.
 
 Nếu miền (0,1) kết quả KHÔNG đạt, đọc kí hiệu ngoặc.
 
+
+**Kiểm lỗi**
+
+Nếu em bỏ điểm không khả vi hoặc bỏ đầu đoạn trong bài GTLN/GTNN, đọc **Kiến thức 5.6**, làm **Bài 98** và **Bài 100**. Liệt kê cả điểm gãy, điểm tới hạn và biên.
+
 </details>
 
 ### 5.7. Nghiệm tối ưu nguyên
@@ -877,6 +1032,11 @@ Chẳng hạn, Giả sử lợi nhuận P(q)=−(q−2,4)²+10 (triệu đồng)
 q=3 và4; P(3)=19,64, P(4)=19,84 nên q=4.
 
 Đừng dùng q=3,6 sản phẩm trong câu trả lời số nguyên.
+
+
+**Kiểm lỗi**
+
+Nếu em làm tròn kích thước liên tục vô cớ hoặc chọn nghiệm sản lượng phân số, đọc **Kiến thức 5.7**, làm **Bài 101** và **Bài 103**. Chỉ yêu cầu số nguyên khi biến thực sự đếm số sản phẩm.
 
 </details>
 
@@ -907,6 +1067,11 @@ GTNN−4 tại2, không có GTLN.
 
 Nếu nhầm cực đại địa phương với toàn cục, so f khi x rất lớn.
 
+
+**Kiểm lỗi**
+
+Nếu em nhầm cực đại địa phương của đa thức với GTLN trên \(\mathbb R\), đọc **Kiến thức 6.1**, làm **Bài 104** và **Bài 107**. Kiểm miền và hành vi khi \(x\to\pm\infty\).
+
 </details>
 
 ### 6.2. Tiệm cận và bảng dấu
@@ -931,6 +1096,11 @@ Chẳng hạn, f=(x²+1)/(x−1)=x+1+2/(x−1) ⇒ TCD x=1, TC xiên y=x+1. f'= 
 x=1,y=1, do tử tại1 bằng3 khác0.
 
 Nếu nói y=x, kiểm bậc tử/mẫu trước.
+
+
+**Kiểm lỗi**
+
+Nếu em chỉ nhìn tử và mẫu cùng bậc mà bỏ phần thương bậc nhất, đọc **Kiến thức 6.2**, làm **Bài 108** và **Bài 111**. Phân biệt TCD, TCN và tiệm cận xiên sau chia đa thức.
 
 </details>
 
@@ -957,6 +1127,11 @@ P=−q²+8q−1; P'=−2q+8=0⇒q=4; P(4)=15, biên P(0)=−1,P(6)=11.
 
 Phải thiết lập P=R−C thay vì tối ưu trực tiếp C.
 
+
+**Kiểm lỗi**
+
+Nếu em tối ưu chi phí thay vì lợi nhuận, đọc **Kiến thức 6.3**, làm **Bài 112**, **Bài 115** và **Bài 116**. Viết mục tiêu \(P=R-C\), kiểm ràng buộc sản lượng và so biên.
+
 </details>
 
 ### 6.4. Kiểm lỗi bằng điều kiện
@@ -981,6 +1156,11 @@ Chẳng hạn, với f=1/x trên D=ℝ\{0}, f'<0 ở hai nhánh. Lời giải 'f
 Không, vì lim f=2 hữu hạn (lỗ).
 
 Nếu chỉ nhìn mẫu bằng0, cần rút nhân tử trên miền bỏ điểm.
+
+
+**Kiểm lỗi**
+
+Nếu em nghĩ mẫu bằng 0 chắc chắn có TCD hoặc \(f'(a)=0\) chắc chắn có cực tiểu, đọc **Kiến thức 6.4**, làm **Bài 117**, **Bài 118** và **Bài 120**. Phân biệt lỗ, tiệm cận đứng, điểm dừng và cực trị bằng giới hạn/dấu.
 
 </details>
 
@@ -2758,5 +2938,22 @@ Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tậ
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P36; NO_RD1; NO_MASTERY -->
 
 **Câu 36.** g(x)=1−(x−2)² trên miền (0,3) có đạt GTLN/GTNN không?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi tự giải đủ **36 câu**, em có thể mở **Lời giải** trong phần **Luyện tập** tại đúng bài ở bảng dưới. Nếu sai, quay lại mục Kiến thức cùng dạng và làm lại trước khi xem lời giải.
+
+| Câu tự kiểm tra | Bài có lời giải ở Luyện tập |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 – 5 – 6 | Bài 2 – 5 – 8 – 12 – 16 – 18 |
+| Câu 7 – 8 – 9 – 10 – 11 – 12 | Bài 21 – 24 – 28 – 32 – 34 – 37 |
+| Câu 13 – 14 – 15 – 16 – 17 – 18 | Bài 41 – 44 – 48 – 52 – 55 – 58 |
+| Câu 19 – 20 – 21 – 22 – 23 – 24 | Bài 61 – 65 – 69 – 72 – 75 – 77 |
+| Câu 25 – 26 – 27 – 28 – 29 – 30 | Bài 80 – 83 – 86 – 90 – 93 – 96 |
+| Câu 31 – 32 – 33 – 34 – 35 – 36 | Bài 100 – 103 – 107 – 111 – 115 – 120 |
+
+Đây là **tự đối chiếu câu hỏi công khai đã học**. Kết quả này không phải kiểm tra năng lực độc lập và không ghi Mastery.
+
+</details>
 
 Nguồn: SGK Toán 12 tập Một, Chương I, Kết nối tri thức với cuộc sống. Các mở rộng của Chuyên đề không tạo Core riêng.
