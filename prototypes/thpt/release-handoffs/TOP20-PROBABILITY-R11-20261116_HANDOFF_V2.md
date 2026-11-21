@@ -1,3 +1,23 @@
+<!-- TOP20_MASTER974_CURRENT_V2_SOURCE_LOCK_20261121 -->
+## CURRENT one CĐ20 R12 V2 handoff exact source and owner-gated readiness
+
+CURRENT_SOURCE_BLOB: b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9
+CURRENT_SOURCE_COMMIT: ffd9dedc11bea298a8a53fabdb27afd9b76d47e5
+CURRENT_Q15_MATRIX_BLOB: d65cf51dbe72f62484ae26171d8afe45daf47ae8
+CURRENT_Q18_AUTHOR_SIGNED_BLOB: 00cfd99a633e993090bd1759437d975389c42c15
+CURRENT_A1_A7_BLOB: 60728e71c8fbdfe7846dc8b5e0e045ae4599fae4
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+RELEASE_AUTHORIZATION: NO
+
+**Current single effective learner source:** `prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md` Git `b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9`, preserves old immutable `a336816eb1935c739bd1f128bd81de7b510d0060` in history. 17 math outcome FirstTry, 17 original Practice and 3 original Written /4 with **20/20 complete question+answer+solution+rubric bodies unchanged** and only visible labels unified Bài luyện1–20 (3 Written still original IDs/rubrics). Nine Knowledge teaching subsections under two math groups, 17 voluntary `Đối chiếu` +17 now owner-compliant `Kiểm lỗi`; one T05 remediation correctly uses P06 nonuniform observed sums instead of unrelated P10 as primary target.
+
+**Targeted material D6/PED delta in true Q18:** Existing pedagogically correct G11 Venn original SVG before T06 gave entire old union `{2,4,5,6}` pre-try; T06 now same `THPT-TOP20-T06` original ID but unique content version `TOP20-R12-20261121-T06`, A=even `{2,4,6}`, B=at most 2 `{1,2}`, intersection `{2}`, union `{1,2,4,6}` independently recomputed, no longer copyable from diagram. Other 16 original firsttry math stem/key bodies unaffected; original two SVGs and optional public event model unchanged. Single exact 37/37 canonical ID/outcome/role/version/line Q15 matrix `d65cf51dbe72f62484ae26171d8afe45daf47ae8`; 11 public same-ID **question-only** replay placements P01/P03/P04/P07/P08/P10/P11/P13/P14/P16/P17 now have one optional answer-location navigator after all questions to existing Practice Bài1/3/4/7/8/10/11/13/14/16/17. No duplicate key/rubric; `CLIENT_SELF_CHECK_NO_MASTERY`, not private RD1/official Final Submit/Readiness, and no score/Mastery write. 38 opt-in disclosures balanced, one SGK provenance at final Topic end.
+
+S1 original G10 KNTT Tập Hai ChIX B26–B27 and G11 KNTT Tập Hai ChVIII B28–B30 direct original evidence reused scoped `cc77149f693bde62ceaa1920e74df7e9dbc9bfec` + `d7477d24e8513e8e2e60a1f583d4b52e6c29bfc9`, no fresh PDF visual scan. 20/11 37-item prior snapshot author math audit remains valid on unchanged content but **not a full rerun on new T06 SHA**. Current author self-Q18 `00cfd99a633e993090bd1759437d975389c42c15` re-verifies changed T06 math + pedagogy, without pretending a new independent NotebookLM full Topic PASS. SOURCE_CONTENT_READY is AUTHORING-only, NOT RELEASE or website AP/R/browser/device/owner permission, no merge/deploy/Firebase or learner record changes.
+---
+
 # CĐ20 · ONE HANDOFF V2 R12 · CURRENT SOURCE LOCKED AUTHOR SELF-QA · 18/11/2026
 
 PACKET_ID: TOP20-PROBABILITY-R12-20261118
@@ -7,9 +27,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-ACADEMIC_SOURCE_BLOB: a336816eb1935c739bd1f128bd81de7b510d0060
+ACADEMIC_SOURCE_BLOB: b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/TOP20_R12_Q18_AUTHOR_SELF_QA_COMPOSITE_20261118.md
-REVIEW_RECEIPT_BLOB: 3e04e984cbe9e2f23b95c0f23a1f698489367ebe
+REVIEW_RECEIPT_BLOB: 00cfd99a633e993090bd1759437d975389c42c15
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 BLOCKERS: NONE
@@ -20,10 +40,10 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 17
 PRIVATE_RD1_SHA256: a3107e6434d2359f86752412a14fd45b7a1da1bef84d18e53b6da3532f2520b2
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_A1_A7_TECHNICAL_SOURCE_PARITY_20261116.md
-AUTHOR_A1_A7_BLOB: 4b51e1d503bee212d10db2544d1206c87208760e
+AUTHOR_A1_A7_BLOB: 60728e71c8fbdfe7846dc8b5e0e045ae4599fae4
 
-CONTENT_REVISION: R12_FULL_S1_KNOWLEDGE_20261120
-DELTA_CLASS: DELTA_C_PED_TARGETED
+CONTENT_REVISION: R12_MASTER974_PED_SELF_CHECK_T06_MATERIAL_TRANSFER_20261121
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 
 ## R11_SOURCE_EQUIVALENCE_CUSTODY
 
@@ -146,7 +166,7 @@ PRIVATE_BANK_SHA256 = a3107e6434d2359f86752412a14fd45b7a1da1bef84d18e53b6da3532f
 | `THPT-TOP20-T13` | `TOP20-O08` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_R10_TOP20-R02 |
 | `THPT-TOP20-T05` | `TOP20-O10` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_R10_TOP20-R02 |
 | `THPT-TOP20-T14` | `TOP20-O09` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_R10_TOP20-R02 |
-| `THPT-TOP20-T06` | `TOP20-O11` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_R10_TOP20-R02 |
+| `THPT-TOP20-T06` | `TOP20-O11` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_R12_TOP20-R12-20261121-T06 |
 | `THPT-TOP20-T07` | `TOP20-O12` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_R10_TOP20-R02 |
 | `THPT-TOP20-T15` | `TOP20-O13` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_R10_TOP20-R02 |
 | `THPT-TOP20-T08` | `TOP20-O14` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_R10_TOP20-R02 |
