@@ -1,3 +1,21 @@
+<!-- TOP19_MASTER974_CURRENT_A1_A7_20261121 -->
+## CĐ19 — CURRENT single A1–A7 evidence 21/11/2026
+
+STANDARD_VERSION: 3.2.0
+CURRENT_SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
+CURRENT_Q15_MATRIX_BLOB: a7b15e559626c6d1f3b6b62c10b1662d0209ddbd
+CURRENT_Q18_SIGNED_AUTHOR_RECEIPT_BLOB: 019254781e99ba857019ee662ab49056d298d18e
+CURRENT_SOURCE_COMMIT: 20e7b3d9f03e143945aa63a9cbfcb4cd0d43f6f2
+CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
+DELTA_CLASSES: DELTA_C_ACADEMIC_MATERIAL_T01_T02_T09_VERSIONED_CORRECT_KEYS; DELTA_C_PED_14_REMEDIATIONS; DELTA_A_42_PRACTICE_CAPTIONS_7_SELF_CHECK_NAVIGATION
+
+**A1/Q01 source scope** G10 KNTT Tập Hai ChVIII B23/B24/B25. Original direct SGK/SBT visual receipt Git `850dd241e60de58ccf032e48e1e13530988436e3` inherited snapshot-scoped, SGK printed B23 60–65/B24 66–71/B25 72–75 and chapter-end76; no new original PDF pages rescanned. Core O13 two-term estimate and O14 calculator n!/nPr/nCr mandatory, reciprocal/Pascal extra applications remain optional. Original 25 SGK reusable public item math stems/answers and rubrics source-owned Git `2ae62fada28913ec336b3507684408a1e05a3232` unchanged. No new external independent whole Topic reviewer.
+
+**A2–A7 / Q03–Q18 directly rechecked current learner:** 14 full Knowledge outcomes/FirstTry, 15 independently stated Ví dụ, three genuine math groups, four SVGs and optional public counting model unchanged. Three new item content versions T01 = `TOP19-R11-20261121-T01` (5+4=9), T02 `TOP19-R11-20261121-T02` (5·3=15), T09 `TOP19-R11-20261121-T09` (coefficient x³ of (x+3)^4 =4·3=12) mathematically reverified and cannot copy preexposed old figure results. Remaining 11 original Topic FirstTry question/answers unchanged. Original 14 concrete D6 diagnoses kept with exact `Kiểm lỗi` label and Knowledge subsection plus two math-matched actual Practice Bài each (28 current targets). 42 complete original Practice problem stems/keys/solutions plus three original Written rubric texts byte-exact, only student captions normalized to Bài luyện 1–42. 7 original public same-ID question-only selfchecks P02/P04/P06/P07/P14/P09/P11 remain byte-exact, one optional final answer-location locator to original Bài 7/12/20/22/27/30/40. 56 distinct canonical public IDs and 63 source placement markers verified and current line numbers recalculated in Q15 source matrix `a7b15e559626c6d1f3b6b62c10b1662d0209ddbd`. Three outer Topic pages, no Topic Core, 57 balanced disclosure blocks, one SGK final credit. Private RD1 count/hash metadata from prior source remained unchanged and not exposed; client selfchecks `CLIENT_SELF_CHECK_NO_MASTERY`, no official held-out Readiness/Final Submit/Mastery writes.
+
+**Defects #977-064/065/066/067** verified on previous R11 blob and corrected on current exact source, author targeted Q18 `019254781e99ba857019ee662ab49056d298d18e` signs affected math/PED; old R09/R10/R11 review on immutable different snapshot is preserved as historical not automatically current. Current source P0/P1/P2 from targeted QA = 0/0/0. AUTHORING source-only, never release/merge/deploy/website/runtime/learner data, no fictional CI pass.
+---
+
 # CĐ19 R11 — public canonical item–outcome–role–placement matrix · 17/11/2026
 
 PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R11-20261117
@@ -8,11 +26,11 @@ STATE: CURRENT_Q15_Q18_AUTHOR_VERIFIED_READY_CUSTODY
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 2809816539e438726858daf18d7efb1d751ea7f7
+ACADEMIC_SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: e3faacd20740cc7806677ecae3577bf3ad4efcaa
+REVIEW_RECEIPT_BLOB: 019254781e99ba857019ee662ab49056d298d18e
 R11_Q15_MATRIX_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_Q15_56_CANONICAL_SOURCE_LOCKED_CANDIDATE_MATRIX_20261117.md
-R11_Q15_MATRIX_BLOB: 67c0c719bc1597e490506542e82ce0f286c32818
+R11_Q15_MATRIX_BLOB: a7b15e559626c6d1f3b6b62c10b1662d0209ddbd
 BASELINE_R09_SIGNED_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d
 
 S1_ORIGINAL_PUBLIC_BANK_PATH: docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js
