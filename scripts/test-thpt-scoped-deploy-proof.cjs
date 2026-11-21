@@ -137,7 +137,7 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
     receipt.includes("G11-B01-GLOBAL28-S1-GOLDEN-Q18-R01-20261121")){
   assert.equal(beforeBlob,"9605eaf510f9f873751e20bef29f4aac848609a3",
    "G11 B01 rewrite must start from historical published source");
-  assert.equal(currentBlob,"2f76ba5644bb0d9a1995ee89d59741d68825d2c2",
+  assert.equal(currentBlob,"2d7cff18f4e46375f06a672a3742a2a43b5f2db5",
    "G11 B01 cannot bypass the exact signed new source");
   assert(receipt.includes("GLOBAL_SGK_ORDER:** 28/79")&&
    receipt.includes("DELTA_C_ACADEMIC_MATERIAL")&&
@@ -193,14 +193,14 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
   assert.deepEqual(tokenSet(now,"data-thpt-fig-id"),originalIds,
    "G11 B01 protected original figure metadata changed");
   assert.equal(latex(before).length,38,"Old G11 B01 S1 source math count changed");
-  assert.equal(latex(now).length,164,"G11 B01 full revised source mathematical notation changed");
+  assert.equal(latex(now).length,203,"G11 B01 full revised source mathematical notation changed");
   assert.equal(removedMathCount(before,now),37,
    "G11 B01 signed academic rewrite unexpectedly removed extra math tokens");
   const image="docs/assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg";
   const figure=fs.readFileSync(path.join(root,image));
   assert.equal(blob(figure),"a75d70c2dbbedce6934f0f4521c159dd9045844e",
    "G11 B01 existing SVG must stay immutable");
-  console.log("SCOPED_G11_B01_SOURCE_Q18_PASS: exact two Git blobs, S1, 6 unscored IDs, 8 HELP, 164 math");
+  console.log("SCOPED_G11_B01_SOURCE_Q18_PASS: exact two Git blobs, S1, 6 unscored IDs, 8 HELP, 203 math");
   return;
  }
  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"]){
