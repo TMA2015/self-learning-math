@@ -8,13 +8,13 @@ Quan sát các cạnh của căn phòng, cột và mái dốc, em sẽ học cá
 
 **Mạch mở đầu — Từ quan sát đến lập luận.** Hãy tưởng tượng một căn phòng: các cạnh tường giao nhau ở những chỗ nhìn thấy được, nhưng nhiều thanh ngang và thanh đứng ở hai phía phòng không hề chạm nhau. Chúng ta vẫn muốn trả lời chúng có vuông góc hay không. Điểm khởi đầu không phải là đo góc trên bức hình phối cảnh: hãy tìm hai **phương** và đưa chúng về cùng một điểm. Khi đã làm được việc đó, quan hệ hai đường vuông góc trở thành một cách nhìn xuyên suốt các bài toán cột, sàn, mái và góc.
 
-**Lời dẫn học sinh:** Ở mỗi bước, đừng học một định lí rời rạc. Hãy tự hỏi: *Mình cần kiểm tra điều gì? Kiểm tra ít hơn có đủ không? Giả thiết nào làm cho kết luận đúng?* Bốn chặng dưới đây dẫn từ góc giữa hai đường, sang pháp tuyến mặt, rồi hình chiếu và góc giữa hai mặt.
+**Cách tự học:** Ở mỗi bước, đừng học một định lí rời rạc. Hãy tự hỏi: *Mình cần kiểm tra điều gì? Kiểm tra ít hơn có đủ không? Giả thiết nào làm cho kết luận đúng?* Bốn chặng dưới đây dẫn từ góc giữa hai đường, sang pháp tuyến mặt, rồi hình chiếu và góc giữa hai mặt.
 
-## 1. B22 · Hai đường thẳng vuông góc
+## 1. Hai đường thẳng vuông góc
 
 ![Hai đường a,b chéo nhau; tại O dựng a′ song song a và b′ song song b, góc giữa hai phương bằng 90°](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg)
 
-**Đọc hình — B22:**
+**Đọc hình:**
 
 Quan sát đường **a** và **b** ở hai vị trí không cắt nhau; đừng cố nối đầu mút để lấy góc. Theo các dấu **a′∥a**, **b′∥b**, đưa hai phương về điểm **O** và đọc góc tại O. Nếu thay O bằng điểm khác thì hai phương không đổi, nên góc không đổi.
 
@@ -52,7 +52,9 @@ Trong hình hộp chữ nhật, góc giữa AB và A′B′ bằng bao nhiêu?
 
 0° vì AB và A′B′ song song.
 
-**Nếu làm sai:** Đừng dùng góc tù hoặc kết luận không có góc chỉ vì hai đường không gặp nhau. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu lấy góc tù 145° làm góc giữa hai đường, đọc lại **Kiến thức 1.1**: phải đưa hai phương về chung gốc và chọn góc không tù. Thử **Bài luyện 1** (góc bù) và **Bài luyện 10** (hai cạnh song song).
 
 </details>
 
@@ -82,7 +84,9 @@ AB và DD′ ở hộp chữ nhật có phải là hai đường vuông góc kh�
 
 Có. Chúng chéo nhau nhưng cùng phương với hai cạnh vuông góc AB, AA′.
 
-**Nếu làm sai:** Phân biệt “vuông góc theo phương” với “hai đường cắt nhau tại góc vuông”. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu nghĩ hai đường không cắt thì không thể vuông góc, đọc **Kiến thức 1.2**: vuông góc là quan hệ giữa hai phương, còn chéo nhau là quan hệ vị trí. Thử **Bài luyện 7** (phản ví dụ) và **Bài luyện 11** (hình hộp).
 
 </details>
 
@@ -112,7 +116,9 @@ Nếu a⊥b và c∥b thì kết luận gì về a,c?
 
 a⊥c theo tính bất biến của góc khi thay đường bằng đường song song.
 
-**Nếu làm sai:** Không suy hai đường cùng vuông góc một đường thứ ba thì chúng song song trong không gian. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu suy 'cùng vuông góc một đường' thì phải song song, xem lại **Kiến thức 1.3**: phép chuyển phương đúng là thay **một** đường bằng đường song song với nó. Thử **Bài luyện 3** và **Bài luyện 12**, xác định cặp đường nào thật sự song song.
 
 </details>
 
@@ -142,7 +148,9 @@ Nét vẽ có hai đoạn tạo góc 90° trên giấy, đủ kết luận hai t
 
 Chưa; cần chứng cứ hình học về phương hoặc góc thật.
 
-**Nếu làm sai:** Khi lời giải viết “nhìn hình thấy”, hãy thay bằng quan hệ song song/vuông góc có giả thiết. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu kết luận chỉ vì hình vẽ trông có góc vuông, trở lại **Kiến thức 1.4** và thay nét vẽ bằng dữ kiện về phương, cạnh đáy và cạnh bên. Thử **Bài luyện 4** và **Bài luyện 13**.
 
 </details>
 
@@ -151,11 +159,11 @@ Chưa; cần chứng cứ hình học về phương hoặc góc thật.
 
 Chẳng hạn, Cho chóp S.ABC, tam giác ABC vuông tại B và SA⊥(ABC). Vì SA⊥BC và AB⊥BC; hai đường SA,AB cắt nhau ở A cùng thuộc (SAB), nên BC⊥(SAB), do đó BC⊥SB. Một kết luận từ “vô số phương” được đưa về hai điều kiện có thể chứng minh.
 
-## 2. B23 · Đường thẳng vuông góc mặt phẳng
+## 2. Đường thẳng vuông góc mặt phẳng
 
 ![Cột AH vuông góc hai đường AB,AD cắt tại A trong mặt P nên AH vuông góc mặt P](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg)
 
-**Đọc hình — B23:**
+**Đọc hình:**
 
 Chỉ hai cạnh **AB** và **AD** trong mặt **(P)**, chúng cắt nhau tại **A**. Cột **AH** vuông góc với cả hai: không phải “hai góc vuông là đủ” một cách máy móc, mà vì AB,AD tạo hai hướng không song song cùng nằm trong một mặt. Nếu hai cạnh kiểm tra song song thì không được suy AH⊥(P).
 
@@ -187,7 +195,9 @@ d vuông góc chỉ một đường a thuộc (P). Đủ kết luận d⊥(P) kh
 
 Không; cần thêm dữ kiện, thường là d vuông góc hai đường cắt nhau trong (P).
 
-**Nếu làm sai:** Một đường không đại diện cho tất cả các phương trong một mặt phẳng. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu thấy d vuông góc một đường trên sân rồi kết luận d vuông góc cả mặt, đọc **Kiến thức 2.1**: một hướng không đủ đại diện cho mọi hướng trong mặt phẳng. Thử **Bài luyện 15** và **Bài luyện 25**; đối chiếu dữ kiện cần bổ sung.
 
 </details>
 
@@ -221,7 +231,9 @@ Nếu a∥b trong (P), d⊥a và d⊥b đã đủ d⊥(P) chưa?
 
 Chưa, vì hai phương song song chỉ kiểm tra một hướng.
 
-**Nếu làm sai:** Dừng lại khi hai đường kiểm tra song song, trùng nhau hoặc không cùng mặt phẳng. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu hai đường dùng để kiểm tra lại song song, điều kiện của dấu hiệu chưa đủ; đọc **Kiến thức 2.2**: phải có hai đường **cắt nhau** thuộc cùng mặt. Thử **Bài luyện 21** và **Bài luyện 26**.
 
 </details>
 
@@ -251,7 +263,9 @@ Nếu a⊥(P) và b∥a thì b có vuông góc (P) không?
 
 Có; mọi đường của (P) vẫn vuông góc phương b.
 
-**Nếu làm sai:** Không lấy việc hai mặt phẳng nhìn cùng hướng trên giấy làm chứng cứ song song. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu thay đường/mặt mà không kiểm tra song song thực sự, đọc **Kiến thức 2.3**: đường cùng phương pháp tuyến vẫn vuông góc với mặt song song. Thử **Bài luyện 17** và **Bài luyện 27**, ghi rõ giả thiết song song.
 
 </details>
 
@@ -281,7 +295,9 @@ Qua điểm M có thể có hai đường phân biệt cùng vuông góc (P) kh�
 
 Không; pháp tuyến qua M xác định duy nhất.
 
-**Nếu làm sai:** Không lẫn tính duy nhất theo phương pháp tuyến với tính duy nhất mọi đường qua M. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu cho rằng qua M có hai pháp tuyến phân biệt, đọc **Kiến thức 2.4**: một điểm và một phương pháp tuyến xác định một đường duy nhất. Thử **Bài luyện 18** và **Bài luyện 28**, phân biệt đường trùng với đường song song khác.
 
 </details>
 
@@ -311,18 +327,20 @@ Chỉ dùng một thước vuông với một vạch trên nền vẫn cho phép
 
 Chưa; cần thêm một đường cắt AB trong nền (ví dụ AD).
 
-**Nếu làm sai:** Không bỏ điều kiện hai phương kiểm tra phải độc lập. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu chỉ kiểm cột với một cạnh sàn, quay lại **Kiến thức 2.5**: cần hai hướng sàn cắt nhau. Thử **Bài luyện 19** và **Bài luyện 29**, nêu hai đường trong nền trước khi kết luận.
 
 </details>
 
 
 **Từ cột thẳng sang mái dốc.** Với một mái nghiêng, ta không thể lấy ngay góc giữa mái và cột đứng rồi gọi đó là “góc nghiêng so với sàn”. Hãy hạ chân vuông góc từ một điểm trên mái xuống sàn. Khi ấy cạnh xiên, chiều cao và hình chiếu tạo thành một tam giác vuông: góc với sàn nằm **giữa cạnh xiên và hình chiếu**, còn góc với cột đứng là góc phụ. Mục tiêu của hình chiếu là biến một câu hỏi ba chiều thành một tam giác có thể chứng minh và tính được.
 
-## 3. B24 · Phép chiếu vuông góc và góc đường–mặt
+## 3. Phép chiếu vuông góc và góc đường–mặt
 
 ![Đoạn AM dốc, AH vuông góc nền P, HM là hình chiếu; góc AMH là góc đường với nền](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg)
 
-**Đọc hình — B24:**
+**Đọc hình:**
 
 Tìm **A** ở cao, **H** là chân AH⊥(P), **M** ở nền. Đường xiên **AM** chiếu thành **HM**, do đó góc cần đo là **AMH tại M**, không phải góc ở A. Tam giác AHM vuông tại H nên khi biết AH,AM có thể dùng sin(góc AMH)=AH/AM; không lấy nét vẽ phối cảnh làm phép đo.
 
@@ -360,7 +378,9 @@ Nếu A thuộc (P), hình chiếu vuông góc của A trên (P) ở đâu?
 
 Chính là A; khoảng cách A đến (P) bằng 0.
 
-**Nếu làm sai:** Không lấy điểm gần nhất theo hình phối cảnh thay cho chân vuông góc. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu chọn hình chiếu theo cảm giác gần nhất trên hình vẽ, đọc **Kiến thức 3.1**: chân H phải thỏa AH vuông góc mặt. Thử **Bài luyện 30** và **Bài luyện 40**, phân biệt chân hình chiếu với đoạn xiên.
 
 </details>
 
@@ -390,7 +410,9 @@ Hai đầu đoạn có hai ảnh khác nhau thì hình chiếu là một đoạn
 
 Một điểm: chân giao d∩(P).
 
-**Nếu làm sai:** Luôn xét xem hai đầu mút có chiếu trùng nhau không trước khi nối ảnh. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu nối hai ảnh trùng nhau rồi gọi đó là một đường, đọc **Kiến thức 3.2**: ảnh đường pháp tuyến có thể suy biến thành một điểm. Thử **Bài luyện 31** và **Bài luyện 41**, kiểm ảnh từng đầu mút.
 
 </details>
 
@@ -428,7 +450,9 @@ AH⊥(P), B∈(P) và B≠H nên BH là một đường thẳng trên (P). Nếu
 
 Có: BH là hình chiếu của AB lên (P); dùng định lí ba đường vuông góc.
 
-**Nếu làm sai:** Trước khi dùng định lí, xác định chân H và đảm bảo BH thật sự là hình chiếu AB. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu dùng định lí ba đường vuông góc mà chưa xác định đúng hình chiếu của đường xiên, đọc **Kiến thức 3.3**: H là chân từ A và B≠H để BH không suy biến. Thử **Bài luyện 32** (chiều thuận) và **Bài luyện 42** (chiều đảo), chỉ rõ ba đường liên quan.
 
 </details>
 
@@ -471,7 +495,9 @@ Trong đó \(AH\) là **độ cao vuông góc**, \(BH\) là **độ dài hình c
 
 0°. Khi đường vuông góc (P), góc 90°.
 
-**Nếu làm sai:** Không lấy góc giữa đường xiên và pháp tuyến làm góc đường–mặt; đó là góc phụ. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu đo góc với đường pháp tuyến thay cho góc đường–mặt, đọc **Kiến thức 3.4**: dùng góc giữa đường xiên và hình chiếu không suy biến. Thử **Bài luyện 33** và **Bài luyện 43**, kiểm xem tỉ số sin lấy đúng cạnh.
 
 </details>
 
@@ -501,7 +527,9 @@ Dốc cao 3 m, ngang 4 m: độ dài đoạn dốc?
 
 5 m theo định lí Pitago, không phải 7 m.
 
-**Nếu làm sai:** Chỉ áp dụng tỉ số lượng giác cho tam giác vuông sau khi dựng hình chiếu đúng. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu cộng 5 và 12 để tính chiều dài dốc hoặc dùng nhầm tan với sin, đọc **Kiến thức 3.5**: dựng tam giác vuông giữa chiều cao, chiều ngang và đoạn xiên. Thử **Bài luyện 36** và **Bài luyện 44**.
 
 </details>
 
@@ -510,11 +538,11 @@ Dốc cao 3 m, ngang 4 m: độ dài đoạn dốc?
 
 **Một ví dụ nối ba ý tưởng:** Cho SA⊥(ABC) và H là chân vuông góc từ A đến BC. Khi ấy BC⊥SA và BC⊥AH; suy BC⊥(SAH), nên BC⊥SH. Hai đường AH⊂(ABC) và SH⊂(SBC) cùng vuông góc BC tại H, vì vậy góc SHA trong tiết diện SAH diễn tả góc phẳng của nhị diện có bờ BC (với hai nửa mặt tương ứng), còn góc giữa hai mặt phẳng là góc nhỏ giữa AH và SH. Đừng nhầm góc tại S với góc tại H.
 
-## 4. B25 · Hai mặt phẳng vuông góc và hình khối đặc biệt
+## 4. Hai mặt phẳng vuông góc và hình khối đặc biệt
 
 ![Hai nửa mặt phẳng chung bờ Delta, tiết diện tạo hai tia OU và OV vuông góc Delta, góc UOV đo nhị diện](../../../../docs/assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg)
 
-**Đọc hình — B25:**
+**Đọc hình:**
 
 Trước hết chỉ **giao tuyến Δ**, sau đó xem hai tia **OU, OV** cùng vuông góc Δ tại **O** nhưng nằm trên hai mặt khác nhau. **UOV** là góc phẳng của nhị diện đã chọn, có thể tù. Khi câu hỏi nói góc **giữa hai mặt phẳng**, lấy góc không tù giữa hai đường thẳng chứa OU và OV, không tùy tiện giữ góc nhị diện lớn hơn 90°.
 
@@ -546,7 +574,9 @@ Hai mặt phẳng song song tạo góc giữa hai mặt bằng bao nhiêu?
 
 0° theo quy ước góc giữa các mặt phẳng.
 
-**Nếu làm sai:** Không đồng nhất góc giữa hai mặt với bất kì góc của hai đường tùy chọn ở hai mặt. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu lấy hai đường tùy ý trên hai mặt để đo góc, trở lại **Kiến thức 4.1**: cần đường vuông góc giao tuyến trong tiết diện phù hợp (hoặc hai pháp tuyến). Thử **Bài luyện 46** và **Bài luyện 58**, ghi rõ cách chọn góc không tù.
 
 </details>
 
@@ -582,7 +612,9 @@ Nhị diện 120° cho góc nhỏ giữa hai mặt phẳng chứa nó bằng bao
 
 60° = 180°−120°.
 
-**Nếu làm sai:** Phải nêu đang nói nhị diện hay góc giữa hai mặt phẳng; khác nhau ở định hướng. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu kết luận góc hai mặt bằng trực tiếp góc nhị diện tù, đọc **Kiến thức 4.2**: nhị diện gắn hai nửa mặt có hướng, còn góc giữa hai mặt lấy góc không tù. Thử **Bài luyện 47** và **Bài luyện 59**.
 
 </details>
 
@@ -612,7 +644,9 @@ d⊂(P), d⊥(Q). Quan hệ hai mặt (P),(Q)?
 
 (P)⊥(Q), theo dấu hiệu một đường trong mặt vuông góc mặt kia.
 
-**Nếu làm sai:** Chỉ “có hai đường vuông góc” chưa đủ nếu không có đường vuông góc toàn bộ mặt. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu chỉ tìm được một cặp đường vuông góc mà kết luận hai mặt vuông góc, đọc **Kiến thức 4.3**: cần một **đường nằm trong mặt này** vuông góc **toàn bộ mặt kia**. Thử **Bài luyện 48** và **Bài luyện 60**.
 
 </details>
 
@@ -642,7 +676,9 @@ Hai mặt vuông góc có giao tuyến d. Muốn một đường trong mặt th�
 
 Có, theo định lí hai mặt phẳng vuông góc. a phải nằm trong (P) và vuông góc giao tuyến d.
 
-**Nếu làm sai:** Nhớ cả điều kiện a nằm trong mặt và a vuông góc giao tuyến. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu quên điều kiện đường a vuông góc với giao tuyến, đọc **Kiến thức 4.4**: với hai mặt vuông góc, a phải thuộc một mặt và vuông góc giao tuyến mới suy ra a vuông góc mặt kia. Thử **Bài luyện 49** và **Bài luyện 61**.
 
 </details>
 
@@ -672,7 +708,9 @@ Lăng trụ đứng có cạnh bên 7 cm, chiều cao bao nhiêu?
 
 7 cm, vì cạnh bên vuông góc mặt đáy.
 
-**Nếu làm sai:** Không dùng chiều dài cạnh bên của lăng trụ xiên làm chiều cao. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu cho rằng lăng trụ đứng có đáy bất kì cũng là lăng trụ đều, đọc **Kiến thức 4.5**: lăng trụ đều phải có đáy là đa giác đều, còn chiều cao lăng trụ đứng bằng cạnh bên. Thử **Bài luyện 50** và **Bài luyện 62**.
 
 </details>
 
@@ -710,7 +748,9 @@ Chóp đều đáy vuông cạnh 6, h=4. Đường cao của mặt bên qua trun
 
 5, do tam giác vuông có hai cạnh 4 và 3.
 
-**Nếu làm sai:** Không lấy cạnh bên hay đường cao mặt bên làm chiều cao vuông góc của chóp. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu nhầm cạnh bên SA hay đường cao mặt bên với chiều cao SO, đọc **Kiến thức 4.6**: chóp đều có SO vuông góc đáy, còn đường cao mặt bên tới trung điểm một cạnh đáy. Thử **Bài luyện 57** và **Bài luyện 63**, vẽ hai tam giác vuông khác nhau.
 
 </details>
 
@@ -740,7 +780,9 @@ Hai đáy hình vuông cạnh 6 và 3 có tỉ số diện tích đáy lớn : �
 
 36:9 = 4:1.
 
-**Nếu làm sai:** Không nhân tỉ số cạnh trực tiếp để suy tỉ số diện tích. Tự dựng lại quan hệ trên hình hoặc viết một phản ví dụ kiểm tra đúng điều kiện, rồi thử câu tương tự.
+**Kiểm lỗi**
+
+Nếu lấy tỉ số cạnh 8:4 làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 64**.
 
 </details>
 
@@ -757,10 +799,10 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 ## 1. Góc và quan hệ vuông góc giữa hai đường
 
-**Bài dùng chung từ SGK**
+**Chọn phương thích hợp để xác định góc và vuông góc**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-C01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 1.** Hai đường có góc giữa hai tia cùng phương được chọn là 145°. Góc giữa hai đường thẳng là bao nhiêu?
+**Bài luyện 1.** Hai đường có góc giữa hai tia cùng phương được chọn là 145°. Góc giữa hai đường thẳng là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -771,7 +813,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-C02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 2.** Có thể có a⊥b nhưng a và b không có điểm chung không?
+**Bài luyện 2.** Có thể có a⊥b nhưng a và b không có điểm chung không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -782,7 +824,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-C03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 3.** Nếu a//a′ và a⊥b thì góc giữa a′ và b bằng bao nhiêu?
+**Bài luyện 3.** Nếu a//a′ và a⊥b thì góc giữa a′ và b bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -793,7 +835,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-C04; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 4.** Hai thanh thép cách nhau, một theo phương Đông–Tây, một thẳng đứng. Chúng có vuông góc theo định nghĩa không?
+**Bài luyện 4.** Hai thanh thép cách nhau, một theo phương Đông–Tây, một thẳng đứng. Chúng có vuông góc theo định nghĩa không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -804,7 +846,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-P01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 5.** Nêu cách xác định góc của hai đường chéo nhau mà không phải kéo chúng tới chỗ gặp nhau.
+**Bài luyện 5.** Nêu cách xác định góc của hai đường chéo nhau mà không phải kéo chúng tới chỗ gặp nhau.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -815,7 +857,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-P02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 6.** Trong hộp chữ nhật, AB và D′C′ có góc giữa là bao nhiêu?
+**Bài luyện 6.** Trong hộp chữ nhật, AB và D′C′ có góc giữa là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -826,7 +868,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-P03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 7.** Một bạn nói hai đường vuông góc phải gặp nhau. Nêu một phản ví dụ chính xác.
+**Bài luyện 7.** Một bạn nói hai đường vuông góc phải gặp nhau. Nêu một phản ví dụ chính xác.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -837,7 +879,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-W01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Tự luận SGK 1.** Hình hộp chữ nhật ABCD.A′B′C′D′: chứng minh AB⊥DD′ và nêu tại sao không cần giao điểm.
+**Bài luyện 8.** Hình hộp chữ nhật ABCD.A′B′C′D′: chứng minh AB⊥DD′ và nêu tại sao không cần giao điểm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -852,7 +894,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B22-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Tự luận SGK 2.** Hai đường a,b chéo nhau; qua O dựng a′//a,b′//b và biết góc giữa hai tia đã chọn là 135°. Tính góc giữa a,b, nêu vì sao độc lập O.
+**Bài luyện 9.** Hai đường a,b chéo nhau; qua O dựng a′//a,b′//b và biết góc giữa hai tia đã chọn là 135°. Tính góc giữa a,b, nêu vì sao độc lập O.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -866,10 +908,10 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 </details>
 
-**Bài của chuyên đề**
+**Chuyển phương và phản biện ngộ nhận từ hình không gian**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P01; OUTCOME_ID: TOP16-O01; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 1.** Trong hình hộp chữ nhật, góc giữa AD và B′C′ bằng bao nhiêu?
+**Bài luyện 10.** Trong hình hộp chữ nhật, góc giữa AD và B′C′ bằng bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -880,7 +922,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P02; OUTCOME_ID: TOP16-O02; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 2.** Trong hình hộp chữ nhật, chứng minh BC vuông góc AA′.
+**Bài luyện 11.** Trong hình hộp chữ nhật, chứng minh BC vuông góc AA′.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -891,7 +933,7 @@ Vì AA′⊥(ABCD) nên AA′ vuông góc mọi đường của đáy, trong đ�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P03; OUTCOME_ID: TOP16-O03; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 3.** Trong hình hộp, từ BC⊥BB′ và DD′∥BB′ chứng minh BC⊥DD′.
+**Bài luyện 12.** Trong hình hộp, từ BC⊥BB′ và DD′∥BB′ chứng minh BC⊥DD′.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -902,7 +944,7 @@ Thay DD′ bằng BB′ cùng phương. Vì BC⊥BB′ nên BC⊥DD′; không y
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P04; OUTCOME_ID: TOP16-O04; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 4.** Nêu một chứng cứ chắc chắn để kết luận AB⊥CC′ trong hộp chữ nhật.
+**Bài luyện 13.** Nêu một chứng cứ chắc chắn để kết luận AB⊥CC′ trong hộp chữ nhật.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -913,7 +955,7 @@ Từ AB thuộc đáy và CC′ vuông góc mặt đáy, CC′⊥AB; kết luậ
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-W01; OUTCOME_ID: TOP16-O02; ROLE: TOPIC_WRITTEN; ORIGINAL_R01_RUBRIC_UNCHANGED -->
-**Tự luận 1.** Trong lập phương ABCD.A′B′C′D′, chứng minh AB và DD′ là hai đường chéo nhau vuông góc; sau đó qua A dựng một đường song song DD′ và xác định góc của hai đường từ đường vừa dựng.
+**Bài luyện 14.** Trong lập phương ABCD.A′B′C′D′, chứng minh AB và DD′ là hai đường chéo nhau vuông góc; sau đó qua A dựng một đường song song DD′ và xác định góc của hai đường từ đường vừa dựng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -929,10 +971,10 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 ## 2. Đường vuông góc với mặt phẳng
 
-**Bài dùng chung từ SGK**
+**Kiểm đủ hai hướng cắt nhau trên mặt phẳng**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-C01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 8.** Một cột chỉ vuông góc một đường trong mặt sân, có đủ kết luận cột vuông góc sân?
+**Bài luyện 15.** Một cột chỉ vuông góc một đường trong mặt sân, có đủ kết luận cột vuông góc sân?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -943,7 +985,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-C02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 9.** Trong mặt (P), a,b cắt nhau. d⊥a và d⊥b thì d quan hệ gì với (P)?
+**Bài luyện 16.** Trong mặt (P), a,b cắt nhau. d⊥a và d⊥b thì d quan hệ gì với (P)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -954,7 +996,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-C03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 10.** d⊥(P) và e//d. e có vuông góc (P)?
+**Bài luyện 17.** d⊥(P) và e//d. e có vuông góc (P)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -965,7 +1007,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-C04; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 11.** Hai đường d,e cùng vuông góc một mặt phẳng, chúng có thể cắt nhau mà không trùng nhau không?
+**Bài luyện 18.** Hai đường d,e cùng vuông góc một mặt phẳng, chúng có thể cắt nhau mà không trùng nhau không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -976,7 +1018,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-C05; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 12.** Chân giá treo đỡ cột theo hai thanh nằm trên nền mà hai thanh cắt nhau. Cột vuông góc cả hai thanh. Kết luận?
+**Bài luyện 19.** Chân giá treo đỡ cột theo hai thanh nằm trên nền mà hai thanh cắt nhau. Cột vuông góc cả hai thanh. Kết luận?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -987,7 +1029,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-P01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 13.** d⊥(P) và (P)//(Q). d có vuông góc (Q)?
+**Bài luyện 20.** d⊥(P) và (P)//(Q). d có vuông góc (Q)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -998,7 +1040,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-P02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 14.** Nếu một đường d vuông góc hai đường song song trong (P), kết luận d⊥(P) có chắc đúng?
+**Bài luyện 21.** Nếu một đường d vuông góc hai đường song song trong (P), kết luận d⊥(P) có chắc đúng?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1009,7 +1051,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-P03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 15.** Có thể có hai đường phân biệt, cắt nhau và đều vuông góc (P)?
+**Bài luyện 22.** Có thể có hai đường phân biệt, cắt nhau và đều vuông góc (P)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1020,7 +1062,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-W01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Tự luận SGK 3.** Trong tam giác ABC, đường d qua A vuông góc AB và AC. Hãy chứng minh d vuông góc BC và mọi đường thuộc (ABC).
+**Bài luyện 23.** Trong tam giác ABC, đường d qua A vuông góc AB và AC. Hãy chứng minh d vuông góc BC và mọi đường thuộc (ABC).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1035,7 +1077,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B23-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Tự luận SGK 4.** Hai cột k,m khác nhau đều vuông góc nền phẳng (P); một bạn nói chúng có thể cắt nhau tạo góc nhọn. Hãy phản biện và mô tả phương của chúng.
+**Bài luyện 24.** Hai cột k,m khác nhau đều vuông góc nền phẳng (P); một bạn nói chúng có thể cắt nhau tạo góc nhọn. Hãy phản biện và mô tả phương của chúng.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1049,10 +1091,10 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 </details>
 
-**Bài của chuyên đề**
+**Chứng minh điều kiện vuông góc với mặt phẳng**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P05; OUTCOME_ID: TOP16-O05; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 5.** Một đường d vuông góc hai đường cắt nhau a,b của (P); kết luận và lí do?
+**Bài luyện 25.** Một đường d vuông góc hai đường cắt nhau a,b của (P); kết luận và lí do?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1063,7 +1105,7 @@ d⊥(P) theo dấu hiệu hai phương cắt nhau trong cùng mặt phẳng; a,b
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P06; OUTCOME_ID: TOP16-O06; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 6.** Trong mặt phẳng (P), a,b cắt tại O. Biết d⊥a và d⊥b. Chứng minh d⊥(P).
+**Bài luyện 26.** Trong mặt phẳng (P), a,b cắt tại O. Biết d⊥a và d⊥b. Chứng minh d⊥(P).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1074,7 +1116,7 @@ d⊥(P) theo dấu hiệu hai phương cắt nhau trong cùng mặt phẳng; a,b
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P07; OUTCOME_ID: TOP16-O07; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 7.** Đường a⊥(P), hai mặt phẳng (P)∥(Q). Quan hệ a và (Q)?
+**Bài luyện 27.** Đường a⊥(P), hai mặt phẳng (P)∥(Q). Quan hệ a và (Q)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1085,7 +1127,7 @@ a⊥(Q) vì hai mặt phẳng song song có cùng phương pháp tuyến; kiểm
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P08; OUTCOME_ID: TOP16-O08; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 8.** d⊥(P), e⊥(P) và d≠e. Chứng minh d∥e.
+**Bài luyện 28.** d⊥(P), e⊥(P) và d≠e. Chứng minh d∥e.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1096,7 +1138,7 @@ Cả d và e cùng hướng pháp tuyến của (P); hai đường phân biệt 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P09; OUTCOME_ID: TOP16-O09; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 9.** Trong nền chữ nhật, kiểm tra cột d⊥AB và d⊥AD với AB cắt AD. Kết luận?
+**Bài luyện 29.** Trong nền chữ nhật, kiểm tra cột d⊥AB và d⊥AD với AB cắt AD. Kết luận?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1108,10 +1150,10 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 ## 3. Hình chiếu và góc đường–mặt
 
-**Bài dùng chung từ SGK**
+**Xác định chân chiếu, đoạn chiếu và góc dốc**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-C01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 16.** M nằm cách (P) 7cm qua đường MH⊥(P). H là gì?
+**Bài luyện 30.** M nằm cách (P) 7cm qua đường MH⊥(P). H là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1122,7 +1164,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-C02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 17.** Đường l vuông góc (P). Hình chiếu của l trên (P) là đường hay điểm?
+**Bài luyện 31.** Đường l vuông góc (P). Hình chiếu của l trên (P) là đường hay điểm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1133,7 +1175,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-C03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 18.** a nằm trong (P), b là đường xiên có hình chiếu b′ trên (P). Biết a⊥b′; suy gì?
+**Bài luyện 32.** a nằm trong (P), b là đường xiên có hình chiếu b′ trên (P). Biết a⊥b′; suy gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1144,7 +1186,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-C04; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 19.** Đường AB xiên xuống (P), AC là hình chiếu của AB. Góc AB và (P) được xác định ở đâu?
+**Bài luyện 33.** Đường AB xiên xuống (P), AC là hình chiếu của AB. Góc AB và (P) được xác định ở đâu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1155,7 +1197,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-C05; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 20.** Đoạn xiên dài 13m, chiều cao 5m. Tính sin góc với mặt đất.
+**Bài luyện 34.** Đoạn xiên dài 13m, chiều cao 5m. Tính sin góc với mặt đất.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1166,7 +1208,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-P01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 21.** Một tia tạo góc 35° với mặt nền. Góc tia đó với phương thẳng đứng bằng bao nhiêu (cùng mặt phẳng đứng chứa tia)?
+**Bài luyện 35.** Một tia tạo góc 35° với mặt nền. Góc tia đó với phương thẳng đứng bằng bao nhiêu (cùng mặt phẳng đứng chứa tia)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1177,7 +1219,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-P02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 22.** Cầu trượt có độ cao 3m, độ dài trượt 5m. Tính độ dài hình chiếu lên nền.
+**Bài luyện 36.** Cầu trượt có độ cao 3m, độ dài trượt 5m. Tính độ dài hình chiếu lên nền.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1188,7 +1230,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-P03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 23.** Có thể dùng đoạn hình chiếu nằm trên mặt nền để biểu diễn độ cao AH?
+**Bài luyện 37.** Có thể dùng đoạn hình chiếu nằm trên mặt nền để biểu diễn độ cao AH?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1199,7 +1241,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-W01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Tự luận SGK 5.** Trong tam giác vuông AHB tại H, AH=9m vuông góc nền và HB=12m. Chứng minh HB là hình chiếu AB, tính góc AB–nền.
+**Bài luyện 38.** Trong tam giác vuông AHB tại H, AH=9m vuông góc nền và HB=12m. Chứng minh HB là hình chiếu AB, tính góc AB–nền.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1214,7 +1256,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B24-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Tự luận SGK 6.** b là đường xiên với hình chiếu b′ trên (P); a thuộc (P), a⊥b′. Một bạn cho rằng kết luận a⊥b chỉ đúng nếu a,b cắt nhau. Hãy phân tích theo định nghĩa góc hai đường trong không gian.
+**Bài luyện 39.** b là đường xiên với hình chiếu b′ trên (P); a thuộc (P), a⊥b′. Một bạn cho rằng kết luận a⊥b chỉ đúng nếu a,b cắt nhau. Hãy phân tích theo định nghĩa góc hai đường trong không gian.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1228,10 +1270,10 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 </details>
 
-**Bài của chuyên đề**
+**Tìm hình chiếu và dùng định lí ba đường vuông góc**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P10; OUTCOME_ID: TOP16-O10; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 10.** Cho AH⊥(P), AH=7 cm; tìm hình chiếu của A và khoảng cách từ A đến (P).
+**Bài luyện 40.** Cho AH⊥(P), AH=7 cm; tìm hình chiếu của A và khoảng cách từ A đến (P).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1242,7 +1284,7 @@ H là hình chiếu; d(A,(P))=AH=7 cm. Không dùng độ dài một đoạn xi�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P11; OUTCOME_ID: TOP16-O11; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 11.** Trong lăng trụ đứng ABC.A′B′C′, ảnh của đoạn B′C′ lên (ABC)?
+**Bài luyện 41.** Trong lăng trụ đứng ABC.A′B′C′, ảnh của đoạn B′C′ lên (ABC)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1253,7 +1295,7 @@ H là hình chiếu; d(A,(P))=AH=7 cm. Không dùng độ dài một đoạn xi�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P12; OUTCOME_ID: TOP16-O12; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 12.** AH⊥(P), B,H∈(P), B≠H, c⊂(P) và c⊥AB. Hỏi c⊥BH không?
+**Bài luyện 42.** AH⊥(P), B,H∈(P), B≠H, c⊂(P) và c⊥AB. Hỏi c⊥BH không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1264,7 +1306,7 @@ Có. Vì AH⊥(P) nên c⊥AH. Mặt khác, theo giả thiết c⊥AB. Hình chi
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P13; OUTCOME_ID: TOP16-O13; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 13.** AH⊥(P), AH=5 m, BH=12 m. Tính sin góc của AB với (P).
+**Bài luyện 43.** AH⊥(P), AH=5 m, BH=12 m. Tính sin góc của AB với (P).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1275,7 +1317,7 @@ AB=√(5²+12²)=13 m; sinθ=AH/AB=5/13. Góc là giữa đường AB và hình 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P14; OUTCOME_ID: TOP16-O14; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 14.** Đoạn đường dốc cao 5 m và chạy ngang 12 m. Tính độ dài và tan góc dốc.
+**Bài luyện 44.** Đoạn đường dốc cao 5 m và chạy ngang 12 m. Tính độ dài và tan góc dốc.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1286,7 +1328,7 @@ AB=√(5²+12²)=13 m; sinθ=AH/AB=5/13. Góc là giữa đường AB và hình 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-W02; OUTCOME_ID: TOP16-O12; ROLE: TOPIC_WRITTEN; ORIGINAL_R01_RUBRIC_UNCHANGED -->
-**Tự luận 2.** Trong tứ diện S.ABC biết SA⊥(ABC), H thuộc BC, AH⊥BC. Chứng minh SH⊥BC.
+**Bài luyện 45.** Trong tứ diện S.ABC biết SA⊥(ABC), H thuộc BC, AH⊥BC. Chứng minh SH⊥BC.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1302,10 +1344,10 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 ## 4. Góc giữa hai mặt, lăng trụ và chóp đều
 
-**Bài dùng chung từ SGK**
+**Đo góc hai mặt, xét nhị diện và hình khối**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 24.** Góc giữa hai đường pháp tuyến của hai mặt phẳng là 75°. Góc hai mặt là bao nhiêu?
+**Bài luyện 46.** Góc giữa hai đường pháp tuyến của hai mặt phẳng là 75°. Góc hai mặt là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1316,7 +1358,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 25.** Góc phẳng của một góc nhị diện bằng 125°. Góc giữa hai mặt phẳng chứa nó?
+**Bài luyện 47.** Góc phẳng của một góc nhị diện bằng 125°. Góc giữa hai mặt phẳng chứa nó?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1327,7 +1369,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 26.** a⊂(P), a⊥(Q) thì (P) và (Q) có vuông góc?
+**Bài luyện 48.** a⊂(P), a⊥(Q) thì (P) và (Q) có vuông góc?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1338,7 +1380,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C04; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 27.** (P)⊥(Q) theo giao tuyến Δ; a⊂(P), a⊥Δ. Có suy a⊥(Q)?
+**Bài luyện 49.** (P)⊥(Q) theo giao tuyến Δ; a⊂(P), a⊥Δ. Có suy a⊥(Q)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1349,7 +1391,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C05; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 28.** Lăng trụ đứng đáy ngũ giác đều có phải lăng trụ đều?
+**Bài luyện 50.** Lăng trụ đứng đáy ngũ giác đều có phải lăng trụ đều?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1360,7 +1402,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C06; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 29.** Trong chóp đều có đáy hình vuông tâm O, chân đường cao kẻ từ S nằm ở đâu?
+**Bài luyện 51.** Trong chóp đều có đáy hình vuông tâm O, chân đường cao kẻ từ S nằm ở đâu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1371,7 +1413,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-C07; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 30.** Hai đáy của chóp cụt đều có quan hệ nào?
+**Bài luyện 52.** Hai đáy của chóp cụt đều có quan hệ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1382,7 +1424,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-P01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 31.** Có thể khẳng định góc giữa hai mặt phẳng là 130°?
+**Bài luyện 53.** Có thể khẳng định góc giữa hai mặt phẳng là 130°?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1393,7 +1435,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-P02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 32.** Hình chóp đều có cạnh bên luôn vuông góc đáy?
+**Bài luyện 54.** Hình chóp đều có cạnh bên luôn vuông góc đáy?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1404,7 +1446,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-P03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_PRACTICE; ORIGINAL_CANONICAL_UNCHANGED -->
-**Bài SGK 33.** Hình lăng trụ đứng có đáy hình thang bất kỳ có là lăng trụ đều không?
+**Bài luyện 55.** Hình lăng trụ đứng có đáy hình thang bất kỳ có là lăng trụ đều không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1415,7 +1457,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-W01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Tự luận SGK 7.** Góc phẳng một góc nhị diện là 112°. Tính góc giữa hai mặt phẳng chứa hai nửa mặt và giải thích vì sao khác 112°.
+**Bài luyện 56.** Góc phẳng một góc nhị diện là 112°. Tính góc giữa hai mặt phẳng chứa hai nửa mặt và giải thích vì sao khác 112°.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1430,7 +1472,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B25-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; SOURCE_ROLE: SGK_WRITTEN; ORIGINAL_CANONICAL_UNCHANGED -->
-**Tự luận SGK 8.** Chóp đều S.ABCD đáy vuông cạnh 8, chân đường cao O tâm đáy, SO=6. Tính AO, SA và giải thích tại sao SA không phải chiều cao.
+**Bài luyện 57.** Chóp đều S.ABCD đáy vuông cạnh 8, chân đường cao O tâm đáy, SO=6. Tính AO, SA và giải thích tại sao SA không phải chiều cao.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1444,10 +1486,10 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 </details>
 
-**Bài của chuyên đề**
+**Vận dụng dấu hiệu hai mặt vuông góc và tỉ số hình khối**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P15; OUTCOME_ID: TOP16-O15; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 15.** Hai mặt phẳng cắt nhau theo d; trong mỗi mặt chọn một đường vuông góc d và góc giữa chúng là 70°. Góc hai mặt?
+**Bài luyện 58.** Hai mặt phẳng cắt nhau theo d; trong mỗi mặt chọn một đường vuông góc d và góc giữa chúng là 70°. Góc hai mặt?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1458,7 +1500,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P16; OUTCOME_ID: TOP16-O16; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 16.** Góc phẳng của nhị diện 135°. Tìm góc giữa hai mặt phẳng chứa hai nửa mặt phẳng.
+**Bài luyện 59.** Góc phẳng của nhị diện 135°. Tìm góc giữa hai mặt phẳng chứa hai nửa mặt phẳng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1469,7 +1511,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P17; OUTCOME_ID: TOP16-O17; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 17.** Một mặt đứng (P) chứa cột d vuông góc sàn (Q). Chứng minh (P)⊥(Q).
+**Bài luyện 60.** Một mặt đứng (P) chứa cột d vuông góc sàn (Q). Chứng minh (P)⊥(Q).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1480,7 +1522,7 @@ Vì d⊂(P) và d⊥(Q), áp dụng dấu hiệu hai mặt phẳng vuông góc.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P18; OUTCOME_ID: TOP16-O18; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 18.** Trong tường vuông góc nền, đường xiên a trong tường không vuông góc chân tường d. Có kết luận a⊥nền được không?
+**Bài luyện 61.** Trong tường vuông góc nền, đường xiên a trong tường không vuông góc chân tường d. Có kết luận a⊥nền được không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1491,7 +1533,7 @@ Không; thiếu điều kiện a⊥d. Đổi thành đường trong tường vu�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P19; OUTCOME_ID: TOP16-O19; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 19.** Một lăng trụ đứng có đáy là hình thang không cân. Nó có phải lăng trụ đều không? Hãy giải thích vì sao cạnh bên của nó vẫn vuông góc với đáy.
+**Bài luyện 62.** Một lăng trụ đứng có đáy là hình thang không cân. Nó có phải lăng trụ đều không? Hãy giải thích vì sao cạnh bên của nó vẫn vuông góc với đáy.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1502,7 +1544,7 @@ Không phải lăng trụ đều vì đáy không phải đa giác đều. Tuy n
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P20; OUTCOME_ID: TOP16-O20; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 20.** Chóp đều đáy vuông cạnh 8, chiều cao 3. Tính đường cao của mặt bên.
+**Bài luyện 63.** Chóp đều đáy vuông cạnh 8, chiều cao 3. Tính đường cao của mặt bên.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1513,7 +1555,7 @@ Không phải lăng trụ đều vì đáy không phải đa giác đều. Tuy n
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-P21; OUTCOME_ID: TOP16-O21; ROLE: TOPIC_PRACTICE; ORIGINAL_R01_KEY_UNCHANGED -->
-**Bài luyện 21.** Chóp cụt đều có hai đáy là tam giác đều cạnh 8 và 4. Tỉ số diện tích hai đáy?
+**Bài luyện 64.** Chóp cụt đều có hai đáy là tam giác đều cạnh 8 và 4. Tỉ số diện tích hai đáy?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1524,7 +1566,7 @@ Không phải lăng trụ đều vì đáy không phải đa giác đều. Tuy n
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP16-W03; OUTCOME_ID: TOP16-O18; ROLE: TOPIC_WRITTEN; ORIGINAL_R01_RUBRIC_UNCHANGED -->
-**Tự luận 3.** Hai mặt phẳng (P),(Q) vuông góc, cắt theo d. a⊂(P) và a⊥d. Chứng minh a⊥(Q) và giải thích vì sao phải có điều kiện a⊥d.
+**Bài luyện 65.** Hai mặt phẳng (P),(Q) vuông góc, cắt theo d. a⊂(P) và a⊥d. Chứng minh a⊥(Q) và giải thích vì sao phải có điều kiện a⊥d.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1568,4 +1610,16 @@ Tám câu dưới đây là những câu tự ôn công khai từ Luyện tập.
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP16-P21; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEYS_HINTS -->
 **Câu 8.** Chóp cụt đều có hai đáy là tam giác đều cạnh 8 và 4. Tỉ số diện tích hai đáy?
 
-**Nguồn tài liệu:** SGK Toán 11 Kết nối tri thức với cuộc sống, Tập Hai, Chương VII (Bài 22–25).
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi làm đủ tám câu, em hãy tìm đúng bài ở **Luyện tập**, tự mở **Lời giải** và đánh dấu bước sai đầu tiên. Mỗi Câu dùng lại đúng một bài canonical đã có, không tính điểm năng lực độc lập.
+
+| Câu tự kiểm tra | Bài luyện có lời giải |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 | Bài luyện 11 – 26 – 29 – 42 |
+| Câu 5 – 6 – 7 – 8 | Bài luyện 44 – 59 – 61 – 64 |
+
+</details>
+
+Nguồn: SGK Toán 11, Tập Hai, Chương VII (Bài 22–25), bộ Kết nối tri thức với cuộc sống.
