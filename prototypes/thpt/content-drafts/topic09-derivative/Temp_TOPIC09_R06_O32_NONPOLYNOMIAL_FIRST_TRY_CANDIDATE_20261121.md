@@ -1,3 +1,8 @@
+<!-- MASTER974_TOPIC09_O32_HISTORIC_CANDIDATE_NOT_ACTIVE_20261121 -->
+**SOURCE STATUS UPDATE / AUTHORING_ONLY, 21/11/2026:** This is a **historical affected-only candidate/reviewer packet**, **NOT** the student learner, current source of truth or independently accepted reviewer PASS. Owner-authorized author self-verification under Q18 v3.2.0 has now corrected the same O32 transfer gap and related D6/selfcheck routes **directly in the one R05 learner** `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md` Git blob **`5681dd894755165e799b4a20d9741f43115778d9`**, existing author Q18 receipt `b0e17ea8fbd00075c5de7dcaeb178985743645f8`. Earlier exact snapshots and the conditional NotebookLM-only promotion workflow described **below are historical**: source moved on; the independent NotebookLM targeted request is still **PENDING (no reviewer verdict claimed)**, not a current mandatory academic gate under the owner's quality-first Q18 authorization. Do not select this candidate as a second learner and do not update its original exam questions, answer keys or rubrics. No merge/deploy, RD1 or web assessment change.
+
+---
+
 <!-- AUTHORING ONLY: R06 O32 transfer FirstTry DELTA_C_ACADEMIC_MATERIAL candidate dated 2026-11-21. Active signed learner R05 blob e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7 remains untouched; this is NOT CONTENT_READY. One Voluntary FirstTry prompt and one opt-in answer replaced; all canonical Practice, public Selfcheck, rubrics, IDs, SVG and 31 other outcome sections unmodified. -->
 
 <!-- AUTHORING R05 STUDENT-FIRST candidate 2026-11-16; R04 source 68fe5b8a3ded75b6f774b4685655487d9b4bdff9 immutable. New Q18 review pending. -->
