@@ -35,7 +35,9 @@ if(chviiReceipt)assert.equal(chviiRows.length,4,"ChVII must have all four signed
 const chvii=new Map(chviiRows.map(m=>[Number(m[1]),{
  baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
 
-const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s*<\/summary>/g;
+// B17/B18 20/11 signed local practice is now labelled “Đối chiếu ba câu Vận dụng”.
+// Keep exactly one closed, opt-in disclosure, also accepting frozen B15 label.
+const htmlSelfPractice=/<summary[^>]*>\s*(?:Xem lời giải ba câu tự luyện|Đối chiếu ba câu Vận dụng)\s*<\/summary>/g;
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
 // Frozen 20/11 Q18 matrix: B7–B14 old→new Knowledge, plus B09–B12
