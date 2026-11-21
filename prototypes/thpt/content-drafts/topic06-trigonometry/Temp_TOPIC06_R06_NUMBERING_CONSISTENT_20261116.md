@@ -46,6 +46,10 @@ Chẳng hạn, quay \(-450^\circ\) nghĩa là quay một vòng và thêm \(90^\c
 
 \(-150^\circ=-150\pi/180=-5\pi/6\) radian. Dấu âm cho biết chiều quay thuận kim đồng hồ. Nếu em làm mất dấu, hãy so vị trí cuối của \(+90^\circ\) và \(-90^\circ\) trên đường tròn.
 
+**Kiểm lỗi**
+
+Nếu em đổi độ sang radian nhưng bỏ dấu quay hoặc thay góc ban đầu bằng góc đại diện mà quên số vòng, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** (đổi độ sang radian, xác định góc phần tư) và **Bài 6** (góc âm và tia cuối) trong Luyện tập. Giữ nguyên góc quay gốc khi đề hỏi chuyển động đã thực hiện.
+
 </details>
 
 <!-- LESSON_ID: TOP06-M02; OUTCOME_ID: TOP06-O02; PREVIOUS_R04_BLOB: 9fee274efababcf7ffd91c78c7e39e89191f17c0 -->
@@ -559,13 +563,15 @@ Chẳng hạn, Mực nước giả định h(t)=3+1,2cos(πt/6) (m), 0≤t≤24 
 
 **Vận dụng**
 
-Cho mô hình \(h(t)=2+0{,}5\cos(\pi t/4)\) (m), \(0\le t\le12\) giờ. Tính \(h(12)\).
+Một mô hình giả định mô tả độ cao \(h(t)=4+0{,}8\sin(\pi t/8)\) mét trong khoảng \(0\le t\le16\) giờ. Tìm chu kỳ của hàm theo công thức, tính \(h(4)\), và cho biết có được dùng mô hình này để khẳng định độ cao tại \(t=20\) giờ không.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(h(12)=2+0{,}5\cos(3\pi)=2-0{,}5=1{,}5\) m, vì \(\cos(3\pi)=-1\). Thời điểm \(t=12\) thuộc miền của mô hình và trùng thời điểm cực tiểu đã tìm trong Ví dụ.
+Với \(\omega=\pi/8\ne0\), chu kỳ của hàm sin là \(T=2\pi/(\pi/8)=16\) giờ. Tại \(t=4\), góc bằng \(\pi/2\), do đó \(h(4)=4+0{,}8\sin(\pi/2)=4{,}8\) m. Vì mô hình chỉ được giả thiết trên \([0,16]\), thời điểm \(t=20\) **ngoài miền đã cho**: không thể khẳng định độ cao thực tế lúc ấy từ công thức này, dù phép tính đại số vẫn thực hiện được.
 
-Nếu ra \(4{,}2\) m, em đã lẫn mô hình ở đoạn Khám phá (hệ số \(3\) và \(1{,}2\)) với mô hình của câu hỏi. Thay đúng \(t=12\): góc \(3\pi\), không phải \(2\pi\). Sau đó so pha ở t=0 và t=12; nếu viết t<0 ngoài phạm vi thì đọc miền. Hãy làm lại Bài 43, Bài 56 và Bài 64 trong phần Luyện tập.
+**Kiểm lỗi**
+
+Nếu em quên hệ số \(\omega\) khi tính chu kỳ, viết \(\omega T=2\pi\); nếu em áp dụng công thức ở mọi thời điểm chỉ vì hàm sin tuần hoàn, kiểm lại miền thời gian của **mô hình**, khác miền xác định của hàm sin. Đọc lại **Kiến thức 4.5**, làm **Bài 64** (giới hạn thời gian và chu kỳ) và **Bài 56** (lọc điều kiện trong bài toán lượng giác) ở Luyện tập.
 
 </details>
 
@@ -1631,5 +1637,20 @@ Hãy tự giải đủ 16 câu sau, trước khi trở lại phần Luyện tậ
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P16; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O16; NO_MASTERY; NOT_RD1 -->
 
 **Câu 16.** Mô hình h(t)=20+6sin(πt/12) với 0≤t≤24. Tìm chu kỳ, max/min và khoảng h>20.
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi tự giải xong **cả 16 câu**, em có thể mở lời giải tại đúng bài trong phần **Luyện tập** theo bảng dưới đây. Chỉ mở lời giải sau khi tự thử; nếu sai, quay lại phần Kiến thức tương ứng và làm lại bài ấy.
+
+| Câu tự kiểm tra | Bài có lời giải trong Luyện tập |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 | Bài 6 – 7 – 8 – 23 |
+| Câu 5 – 6 – 7 – 8 | Bài 24 – 25 – 26 – 39 |
+| Câu 9 – 10 – 11 – 12 | Bài 40 – 41 – 42 – 60 |
+| Câu 13 – 14 – 15 – 16 | Bài 61 – 62 – 63 – 64 |
+
+Các câu này đã xuất hiện trong Luyện tập: đây là phần **tự đối chiếu bài công khai**, không phải đánh giá năng lực độc lập.
+
+</details>
 
 Học liệu tham khảo SGK Toán 11, Tập Một, Chương I (Bài 1–4), bộ Kết nối tri thức với cuộc sống.
