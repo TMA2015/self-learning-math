@@ -1,3 +1,24 @@
+<!-- TOP19_MASTER974_CURRENT_V2_20261121 -->
+## CĐ19 R11 current one V2 handoff · author-verified source only
+
+SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
+SOURCE_COMMIT: 20e7b3d9f03e143945aa63a9cbfcb4cd0d43f6f2
+Q15_MATRIX_BLOB: a7b15e559626c6d1f3b6b62c10b1662d0209ddbd
+SIGNED_Q18_AUTHOR_RECEIPT_BLOB: 019254781e99ba857019ee662ab49056d298d18e
+A1_A7_BLOB: 4c08fb4a13a709d1b636c7244b66f8b3dacbefb9
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
+CURRENT_DELTA: DELTA_C_ACADEMIC_MATERIAL_TARGETED_T01_T02_T09 (3 originally pre-exposed numbers changed to 9/15/12, with per-item CONTENT_VERSION); DELTA_C_PED_TARGETED_KIEM_LOI_14_REAL_28_RETRIES; DELTA_A_EDITORIAL_42_UNIQUE_PRACTICE_LABELS_7_SAME_ID_SELF_CHECK_NAVIGATOR
+BLOCKERS: NONE_IN_TARGETED_AUTHORING_SOURCE
+
+One learner `Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md` existing path and single latest current source Git blob `2faa5d797eb16020d21673c572c443f1cb7acb41`, previous R11 learner `2809816539e438726858daf18d7efb1d751ea7f7` remains immutable historical. S1 core original G10 KNTT Tập Hai ChVIII B23–B25 printed pp60–65/66–71/72–75 source-scoped inherited direct owner-scan receipt `850dd241e60de58ccf032e48e1e13530988436e3`. 14 full Knowledge outcomes, 15 worked Ví dụ, 14 Vận dụng→opt-in Đối chiếu→specific Kiểm lỗi and 28 math-matched real Practice Bài; 42 continuous Bài luyện 1–42, 25 original shared SGK exact math projections from unchanged JS owner `2ae62fada28913ec336b3507684408a1e05a3232`, 14 original Topic Practice plus 3 original Topic Written rubric /4 maths unchanged. Exactly 56 canonical public IDs, 7 question-only public same-ID placements with optional final locator 7/12/20/22/27/30/40; one effective 56-row and 7-replay source-exact line Q15 mapping `a7b15e559626c6d1f3b6b62c10b1662d0209ddbd`. All four original SVG source/paths + original optional counting HTML model unchanged; 57/57 opt-in disclosure balance, one last SGK credit.
+
+**Q15 material delta scoped:** item ID `THPT-TOP19-T01` remains same but content-version `TOP19-R11-20261121-T01` (5+4=9), T02 content-version `TOP19-R11-20261121-T02` (5×3=15), T09 `TOP19-R11-20261121-T09` (C(4,3)·3=12); correctly revised expected answers and diagnoses, previous 11 FirstTry item stem/key unaffected. The original four mathematically correct concept SVGs previously pre-exposed old numerical T01/T02/T09 results; the three new attempts require genuine transfer, no original figure altered. Only labels/cross-links changed for all 42 Practice; all original full stem/answer/solution and Written rubrics remain byte exact. No new question ID or official held-out exam.
+
+**Q16/RD1:** public replays `CLIENT_SELF_CHECK_NO_MASTERY`, no independent Topic Readiness, private RD1 contents not made public, no official Final Submit/Skill Mastery/AI Tutor before protected assessment. `AUTHOR_SELF_VERIFIED` targeted Q18 `019254781e99ba857019ee662ab49056d298d18e`; earlier 31 item spot-check and independent original PDF source provenance inherited on their original identical math, not falsely rerun as a current full reviewer PASS. No website/AP/R device/CI or owner release permission, merge/deploy/Firebase/student writes.
+---
+
 # CĐ19 · AUTHORING source-locked handoff V2 R11 · 17/11/2026
 
 PACKET_ID: TOP19-COMBINATORICS-BINOMIAL-R11-20261117
@@ -9,9 +30,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_PLAN22_19_R10_LANGUAGE_LOCAL_REFERENTS_CANDIDATE_20261117.md
-ACADEMIC_SOURCE_BLOB: 2809816539e438726858daf18d7efb1d751ea7f7
+ACADEMIC_SOURCE_BLOB: 2faa5d797eb16020d21673c572c443f1cb7acb41
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC19_R11_AUTHOR_SELF_QA_COMPOSITE_RECEIPT_20261117.md
-REVIEW_RECEIPT_BLOB: e3faacd20740cc7806677ecae3577bf3ad4efcaa
+REVIEW_RECEIPT_BLOB: 019254781e99ba857019ee662ab49056d298d18e
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 BLOCKERS: NONE
@@ -22,11 +43,11 @@ RELEASE_AUTHORIZATION: NO
 PRIVATE_RD1_COUNT: 14
 PRIVATE_RD1_SHA256: 6cc51485931317083b5ba673d490e5688a7538d4731dca29f002e804c0f9271a
 
-CONTENT_REVISION: R11_FULL_S1_KNOWLEDGE_20261120
+CONTENT_REVISION: R11_MASTER974_PED_20261121_3_FT_VERSIONED_DELTA_C
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_A1_A7_BLOB: 55605f5b6c99f61f3b9629244f9c6830c7223d07
+AUTHOR_A1_A7_BLOB: 4c08fb4a13a709d1b636c7244b66f8b3dacbefb9
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic19-combinatorics-binomial/Temp_TOP19_R11_56_CANONICAL_AUTHORING_METADATA_20261117.md
-AUTHOR_METADATA_BLOB: 55605f5b6c99f61f3b9629244f9c6830c7223d07
+AUTHOR_METADATA_BLOB: 4c08fb4a13a709d1b636c7244b66f8b3dacbefb9
 
 ## R09 IMMUTABLE BASELINE LEARNER SOURCE AND Q18
 
@@ -156,8 +177,8 @@ V2_SOURCE_TYPE_ROLE_CONTRACT_DELTA_B: 25 shared SGK canonical display placements
 
 | item_id | primary_outcome | role | source_type | status |
 |---|---|---|---|---|
-| `THPT-TOP19-T01` | `TOP19-O01` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
-| `THPT-TOP19-T02` | `TOP19-O02` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R10 |
+| `THPT-TOP19-T01` | `TOP19-O01` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R11-20261121-T01 |
+| `THPT-TOP19-T02` | `TOP19-O02` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R11-20261121-T02 |
 | `THPT-TOP19-T03` | `TOP19-O03` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
 | `THPT-TOP19-T04` | `TOP19-O04` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
 | `THPT-TOP19-T05` | `TOP19-O05` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
@@ -165,7 +186,7 @@ V2_SOURCE_TYPE_ROLE_CONTRACT_DELTA_B: 25 shared SGK canonical display placements
 | `THPT-TOP19-T07` | `TOP19-O07` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
 | `THPT-TOP19-T08` | `TOP19-O08` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
 | `THPT-TOP19-T14` | `TOP19-O14` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
-| `THPT-TOP19-T09` | `TOP19-O09` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
+| `THPT-TOP19-T09` | `TOP19-O09` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R11-20261121-T09 |
 | `THPT-TOP19-T10` | `TOP19-O10` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
 | `THPT-TOP19-T13` | `TOP19-O13` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
 | `THPT-TOP19-T11` | `TOP19-O11` | TOPIC_FIRST_TRY | TOPIC_NEW_CANDIDATE | VERIFIED_TOP19-R03 |
