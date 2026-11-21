@@ -244,7 +244,7 @@ function selfTest(){
  assert.equal(classify([...b27Case,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,
   "FULL","B27 cannot hide shared Golden JS changes");
  assert.equal(classify(b27Case.filter(x=>!x.endsWith("scoped-deploy-proof.cjs"))).impact,
-  "SCOPED_LESSON","Without proof file B27 returns generic one-source classifier; production gate still fails because it requires receipt");
+  "FULL","B27 without exact production proof must fail closed for mixed test+learner change");
  const bBatch=[7,8,9,10,11,12,13,14].map(n=>
   "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md");
  const mBatch=[
