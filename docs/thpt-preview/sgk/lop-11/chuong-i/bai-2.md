@@ -103,7 +103,7 @@
 
         **Tự sửa:** Lập hai ô \((u+v)/2\), \((u-v)/2\), tự nhân trở lại để kiểm góc ban đầu. Ôn lại mục 2.4 và luyện một cặp cos.
 
-    ### 1.5. Từ tổng hai âm đến tín hiệu của một phím điện thoại
+    **Ứng dụng thực tế: từ tổng hai âm đến tín hiệu của một phím điện thoại.**
 
     Một phím trên bàn phím điện thoại có thể được nhận diện qua **hai tần số âm** phát cùng lúc. Đây là lúc phép biến đổi tổng thành tích có ý nghĩa: thay vì hai sóng riêng, ta mô tả tín hiệu tổng bằng tích của một dao động nhanh và một hệ số biến thiên theo thời gian.
 
