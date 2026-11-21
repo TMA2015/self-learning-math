@@ -135,8 +135,13 @@ function checkSHA(){
     const r11=fs.readFileSync(path.join(root,
      "prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md"),"utf8");
     const f11=k=>r11.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-    assert.equal(hash(data),f11("CSS_B11_SCOPED_APPEND_BLOB"),
-     "B11 appended CSS must be exact source locked");
+    // The signed B11 stylesheet is a historical prefix before B12–B27
+    // extensions. Lock those bytes, rather than the newer complete CSS hash.
+    const b12Start=cssText.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity");
+    assert(b12Start>cut11&&cssText.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity",b12Start+1)===-1,
+     "Exactly one B12 scoped CSS appendix follows signed B11");
+    assert.equal(hash(cssText.slice(0,b12Start-1)),f11("CSS_B11_SCOPED_APPEND_BLOB"),
+     "B11 accepted Golden CSS must remain byte-exact immutable prefix");
     assert(cssText.slice(cut10,cut11).includes('data-thpt-first-try-id="THPT-G10-CHIV-TRY16"')&&
       !/TRY0[1-9]|TRY1[1-5]/.test(cssText.slice(cut10,cut11))&&
       cssText.slice(cut11).includes('data-thpt-first-try-id="THPT-G10-CHIV-TRY21"')&&
