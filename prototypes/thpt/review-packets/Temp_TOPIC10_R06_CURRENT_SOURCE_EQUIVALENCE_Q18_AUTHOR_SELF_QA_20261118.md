@@ -1,3 +1,21 @@
+<!-- TOP10_MASTER974_CURRENT_DELTA_C_PED_SELF_Q18_20261121 -->
+## CĐ10 R06 CURRENT · AUTHOR_SELF_VERIFIED toán/PED theo source (21/11/2026)
+
+**Một learner canonical duy nhất** `prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md`, **current Git blob `7954f917b89c64527b166d02aac1844da08ed806`**, immutable old learner `b7d7ef5d8ca87b2225e6977ae54afe3261dbd220`. One effective `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18, one original Q18 composite file; owner MASTER #974 / editorial #864. Source top two metadata comments now explicitly `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW` and correct non-rendered R06/v3.2 status, not student-facing notices.
+
+**Inherited S1 source authority for unchanged math only:** SGK Toán 12 KNTT Tập Một ChI B01 printed 5–14/B02 15–19/B03 20–25/B04 26–32/B05 33–41/end 42–44 and corresponding SBT historically verified per owner original scan; original SGK full Chapter PUBLIC canonical bank `f0862dcdab21dec136e43969f45c42638e7c7574` and old **SGK-only** independent NotebookLM academic/PED receipt `8fef1c7dbd9b404881ff40cec8147c9ae89ef473` (do **not** extend PASS to current Topic). Previous author signed current R06 Q18 math/36 outcomes, formal Weierstrass/monotone/asymptote/continuity statements, 120 public canonical Practice and 18 rubrics, four SVG source-specific proof applies **only to unchanged mathematical content**, not presumed full present Topic independent reviewer PASS or new SGK/SBT visual scan.
+
+**Three actually verified current learner defects now FIXED_VERIFIED in sole #977:**
+- `TOP22-20261121-033` **P1 Q08/Q14/PED6:** all **36/36** original Knowledge `Vận dụng→Đối chiếu` had correct answer with error notes but zero actionable specific numbered Practice paths. Added **36 different `Kiểm lỗi`** inside existing voluntary `<details class="slm-topic-first-try">` with mathematical misconception, correct Knowledge 1.1–6.4 and **verified actual Practice numbered Bài**; checked 36/36 real targets in source across all 120 questions. Includes disjoint derivative-sign intervals and differentiability/continuity, segment vs open extrema, existence vs attainment, vertical/oblique vs removable asymptotes, cubic/rational survey, marginal vs discrete cost, physical box feasibility, integer optimal production and error analysis; no generic filler.
+- `TOP22-20261121-034` **P2 Q16/Q17/PED6:** after **all 36 original public `PUBLIC_REPLAY_ONLY` question-only stems**, inserted **ONE voluntary `<details><summary>Đối chiếu</summary>`** mapping Câu1–36 to actual Practice Bài `2,5,8,12,16,18,21,24,28,32,34,37,41,44,48,52,55,58,61,65,69,72,75,77,80,83,86,90,93,96,100,103,107,111,115,120`. All **36/36 exact shared canonical item IDs** and original Bài numbers verified by actual learner content; NO cloned key/answer/rubric, no independent official readiness or Skill Mastery, `CLIENT_SELF_CHECK_NO_MASTERY`.
+- `TOP22-20261121-035` **P2 owner #864 / Q09:** removed **one explicit SGK-source cite from the middle of mathematical pedagogy** of the quadratic-over-linear rational-function survey: `Ngoài phân thức bậc nhất trên bậc nhất, SGK còn yêu cầu khảo sát...` → `Ngoài phân thức bậc nhất trên bậc nhất, ta còn khảo sát...`. All conditions `a,p≠0`, quotient/remainder and vertical/oblique versus removable distinction preserved. Exactly **one** real learner-visible SGK source attribution at very end of Topic, no management narrative on learner page.
+
+**Q15/Q16 and academic direct inverse QA:** Recover **byte-for-byte the entire earlier signed learner** simply by deleting the 36 added D6 paragraphs, removing the one final voluntary public-selfcheck answer navigation, restoring the one Oxx source-attribution phrase and two non-rendered admin comments. Hence the **entire original 120/120 Practice canonical IDs, prompts, answers, explanations and all 18 Written rubrics** are byte-identical to prior source; original 36 public selfcheck question stems and four verified SVG path references unchanged. **36/36** genuine Knowledge error/retry outcomes, **36/36** exact public selfcheck answer locations, **157/157 opt-in disclosures balanced** (36 Knowledge +120 Practice +1 public lookup); no revealed answer before students choose voluntary reveal. `DELTA_C_PED_TARGETED` for D6 student guidance; `DELTA_A_EDITORIAL` for one SGK mention/author-only metadata, no material new mathematical formula/key or bank. Author personally reread all affected recovery routes against actual Practice stems, restored example/FirstTry math unaffected and rechecked three groups of critical conditions (extrema interval/continuity, asymptotes with removable holes, feasible-domain optimization). Observed P0/P1 after affected source corrections=0, no claim about independent NotebookLM full-topic PASS.
+
+**Disposition:** `AUTHOR_SELF_VERIFIED` on current source, not release/certified hidden assessment; original Q18 inherited S1 proof scoped to immutable original SGK. Source/Q18 metadata → V2 → ready → REGISTER must be relocked to exact new blob before considering author handoff. PR remains Draft, NO merge/deploy, no RD1, Final Submit, Mastery, Firebase or website changes.
+
+---
+
 # CĐ10 — Q18 composite current-source author verification · 18/11/2026
 
 > **AUTHORING only.** One standard `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. This is source-equivalent affected-scope AUTHOR_SELF_VERIFIED, **not** an invented independent NotebookLM Topic Academic/PED verdict, not browser/AP QA, not production Readiness, and not merge/deploy approval.
@@ -9,8 +27,8 @@ STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
-ACADEMIC_SOURCE_BLOB: b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
+SOURCE_BLOB: 7954f917b89c64527b166d02aac1844da08ed806
+ACADEMIC_SOURCE_BLOB: 7954f917b89c64527b166d02aac1844da08ed806
 PREVIOUS_SIGNED_R06_SOURCE_BLOB: bd33faa8e7bc348cda78da6e44d3f40a68223596
 PREVIOUS_SIGNED_R06_Q18_BLOB: 96cc3e1dee497f7a42e1ef50bee4c17692a9158e
 PREVIOUS_FULL_R05_SOURCE_BLOB: 68d3ccd180162c0b850c7e419a5098982d3785a0
@@ -31,7 +49,7 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
 PRIVATE_RD1_IMPORTED: 0
 RELEASE_AUTHORIZATION: NO
-AUTHOR_SIGNOFF: TOP10_FULL_S1_KNOWLEDGE_b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
+AUTHOR_SIGNOFF: TOP10_MASTER974_36_PED6_SELFCHECK_ONE_SGK_CURRENT_R06_7954f917b89c64527b166d02aac1844da08ed806
 AUTHOR_SELF_QA_RECEIPT: TOP10_R06_EQUIVALENT_20261118_SOURCE_LOCKED
 S1_RECEIPT: Toán 12 KNTT tập Một SGK ChI B01–B05 and SBT corresponding sections, owner-verified printed/PDF page pairing preserved in Topic A1 metadata; immutable G12 SGK source blob f0862dcdab21dec136e43969f45c42638e7c7574 and original independent SGK-only receipt 8fef1c7dbd9b404881ff40cec8147c9ae89ef473; no new PDF rescanning or independent Topic verdict.
 OUTCOME_AUDIT: TOP10-M01..M36 map one-to-one TOP10-O01..O36 in 6 numbered arcs; 36 full worked examples, 36 immediate First Try/voluntary Đối chiếu, 120 source-visible canonical Practice placements, 36 public replay-only selfchecks.
