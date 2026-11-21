@@ -137,15 +137,10 @@ function classify(paths,{manual=false}={}){
  // scoped proof. Unknown/shared runtime/config/asset changes route FULL.
  const b27="docs/thpt-preview/sgk/chuong-ix/bai-27.md";
  const b27Receipt="prototypes/thpt/ux795/G10_CHIX_B27_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md";
- const b27R02="prototypes/thpt/ux795/G10_CHIX_B27_KNOWLEDGE_FORMULA_TREE_OWNER_P2_Q18_R02_20261121.md";
  const b27Proof="scripts/test-thpt-scoped-deploy-proof.cjs";
- const b27BrowserHarness="scripts/test-thpt-scoped-lesson-browser.cjs";
- // Only B27 may combine its one canonical source, exact signed receipt,
- // and B27-specific browser-harness assertion in a scoped QA run.
  if(lessons.length===1&&lessons[0]===b27&&
-    (files.includes(b27Receipt)||files.includes(b27R02))&&files.includes(b27Proof)&&
-    files.every(x=>x===b27||x===b27Receipt||x===b27R02||x===b27Proof||
-      x===b27BrowserHarness||
+    files.includes(b27Receipt)&&files.includes(b27Proof)&&
+    files.every(x=>x===b27||x===b27Receipt||x===b27Proof||
       x==="scripts/test-thpt-release-impact.cjs"||SOURCE_TEST.test(x))&&
     fs.readFileSync(b27,"utf8").includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"))
   return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:b27,
@@ -244,16 +239,6 @@ function selfTest(){
   "scripts/test-thpt-release-impact.cjs"];
  assert.equal(classify(b27Case).impact,"SCOPED_LESSON",
   "B27 exact one-lesson signed source and same proof must be scoped");
- assert.equal(classify([...b27Case,"scripts/test-thpt-scoped-lesson-browser.cjs"]).impact,"SCOPED_LESSON",
-  "B27 specific owner P2 browser knowledge-tab proof stays scoped, no global learner change");
- const b27R02Case=b27Case.map(x=>x.endsWith("G10_CHIX_B27_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md")?
-  "prototypes/thpt/ux795/G10_CHIX_B27_KNOWLEDGE_FORMULA_TREE_OWNER_P2_Q18_R02_20261121.md":x);
- assert.equal(classify([...b27R02Case,"scripts/test-thpt-scoped-lesson-browser.cjs"]).impact,"SCOPED_LESSON",
-  "Exact B27 P2 source-locked R02 plus visual-browser proof must remain scoped");
- assert.equal(classify([
-  "docs/thpt-preview/sgk/chuong-ix/bai-26.md",
-  "scripts/test-thpt-scoped-lesson-browser.cjs"]).impact,"FULL",
-  "B27-only browser test cannot weaken B26/other lesson gates");
  assert.equal(classify([...b27Case,"mkdocs.yml"]).impact,"FULL",
   "B27 cannot hide global site build config");
  assert.equal(classify([...b27Case,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,
