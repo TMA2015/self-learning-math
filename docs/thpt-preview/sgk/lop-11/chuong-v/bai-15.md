@@ -1,83 +1,234 @@
 # Bài 15. Giới hạn của dãy số
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG V · SGK KNTT</p><p class="thpt-r4-lead">Khám phá bản chất và điều kiện → ví dụ giải thích phương pháp → Tự thử trước Core → Core/Luyện tập/Vận dụng → tự khắc phục. Không ghi Skill Mastery từ tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG V</p><p class="thpt-r4-lead">Từ trực giác tiến gần đến định nghĩa giới hạn, giới hạn vô cực, phép toán có điều kiện và tổng cấp số nhân lùi vô hạn.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Vì sao học và kiến thức nền tảng
+=== "Khám phá kiến thức"
 
-### 1.1. Vì sao cần khái niệm "giới hạn"?
+    Khi \(n\) tăng mãi, dãy số có thể tiến về một số, tăng ra vô cực, hoặc dao động không tiến đến đâu. Ta cần **nói rõ thế nào là “tiến gần”**, và kiểm được điều kiện trước khi thay công thức. Kiến thức tiền đề: dãy số, công thức số hạng tổng quát và tổng cấp số nhân ở Chương II.
 
-Em hãy nhìn dãy số: **1; 1/2; 1/3; 1/4; 1/5; ...**. Mỗi số hạng đều lớn hơn 0, nhưng càng về sau giá trị càng nhỏ. Nếu tiếp tục mãi, các số hạng **tiến gần đến 0**, dù không bắt buộc có số hạng nào bằng 0. Ta muốn mô tả chính xác chuyện "ngày càng gần" này, vì nó giúp hiểu những quá trình có thể tiếp tục vô hạn (ví dụ các phần tiết kiệm ngày càng nhỏ).
+    ### 1.1. Vì sao một dãy không có số hạng cuối vẫn có thể có giới hạn?
 
-**Cầu nối kiến thức:** dãy số là các số xếp theo thứ tự u₁,u₂,u₃,...; chỉ số n là số thứ tự. Không phải giới hạn là một "số hạng cuối": dãy có thể không có số hạng cuối.
+    Dãy \(1,\frac12,\frac13,\ldots,\frac1n,\ldots\) không có “số hạng cuối”, nhưng mọi số hạng đều dương và càng về sau càng sát \(0\). Giới hạn diễn tả **xu hướng khi chỉ số tăng mãi**, không phải giá trị của một phần tử đặc biệt. Số \(0\) vẫn có thể là giới hạn dù không số hạng nào bằng \(0\).
 
-### 1.2. Quan sát trước khi định nghĩa
+    **Vận dụng — Tự thử trước Core.** Với \(u_n=4+\frac{3}{n}\), hãy dự đoán giới hạn và giải thích vì sao số hạng thứ \(n\) không cần bằng chính xác giới hạn ấy.
 
-**Hình trực quan D5:** <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B15-01_R01.svg" alt="Dãy 1/n giảm dần, tiến về trục 0, không có số hạng cuối"/><figcaption>Dãy 1/n giảm dần, tiến về trục 0, không có số hạng cuối</figcaption></figure>
+    <span data-ped-first-try="1" data-outcome-id="G11-B15-FINITE_SEQUENCE" data-thpt-first-try-id="THPT-G11-B15-TRY01" hidden></span>
 
-**Cách đọc hình:** Mỗi chấm ứng với một chỉ số n và giá trị uₙ=1/n. Các chấm càng về bên phải càng sát trục ngang uₙ=0 nhưng luôn ở phía trên. Vì vậy “tiến đến 0” KHÔNG có nghĩa “đến một số hạng cuối bằng 0”. Hãy quan sát điều này trước khi đọc ε và N trong định nghĩa.
+    ??? question "Đối chiếu"
 
-Với u_n=1/n: u₁=1, u₂=0,5, u₁₀=0,1, u₁₀₀=0,01. Nếu chọn một vùng rất gần 0, chẳng hạn khoảng cách nhỏ hơn 0,01, từ khi n>100 trở đi **mọi** u_n đều nằm trong vùng ấy. Nếu em muốn gần hơn nữa, vẫn có thể chọn n đủ lớn. Đó là ý cốt lõi của "giới hạn bằng 0".
+        **Lời giải:** Vì \(\frac3n\to0\) khi \(n\to+\infty\), ta có \(u_n\to4\). Với mỗi \(n\ge1\), \(u_n=4+3/n>4\), nên không có số hạng nào đúng bằng \(4\); điều này **không mâu thuẫn với hội tụ**.
 
-Không phải dãy nào cũng tiến gần một số. Với v_n=(−1)^n, các số hạng thay đổi liên tục −1,1,−1,1,..., không thể ngày càng ở sát một số cố định. Dãy này **không có giới hạn**, không phải "có giới hạn vô cực".
+    <span data-thpt-help-id="HELP-G11-B15-TRY01" hidden></span>
 
-### 1.3. Phát biểu toán học và giải thích ký hiệu
+    ??? tip "Kiểm lỗi"
 
-Ta viết **lim_{n→∞}u_n=a** khi các số hạng từ một lúc đủ muộn trở đi có thể gần a tùy ý. Nói chặt chẽ: với mọi sai số ε>0 mà ta chọn, tồn tại một chỉ số N sao cho **mọi n≥N** đều thỏa **|u_n−a|<ε**.
+        **Dấu hiệu:** Cho rằng không có số hạng nào bằng 4 thì dãy không hội tụ.
 
-- ε (đọc là *ép-si-lon*) chỉ một mức sai số dương tùy nhỏ, **không** phải số cố định do giáo viên chọn sẵn.
-- N là mốc có thể phụ thuộc mức sai số ε; sau mốc đó **tất cả** số hạng đều gần a, không chỉ một vài số hạng.
-- |u_n−a| là khoảng cách trên trục số từ số hạng u_n đến a.
-- n→∞ nghĩa là xét các chỉ số n tăng mãi, **không** thay n bằng một số gọi là "vô cực".
-- Khi a=0, điều kiện trở thành |u_n|<ε từ một lúc đủ muộn; muốn chứng minh lim u_n=a thường đưa về lim(u_n−a)=0.
+        **Tự sửa:** Phân biệt *giới hạn* và *giá trị từng số hạng*. Đọc mục 2.1, thử Core B15-C01 và Practice B15-P02 ở [Luyện tập](../luyen-tap/).
 
-**Ví dụ áp dụng định nghĩa:** Cho u_n=1/n và sai số ε>0. Chọn một số tự nhiên N lớn hơn 1/ε. Khi n≥N, 1/n≤1/N<ε, nên lim_{n→∞}1/n=0.
+    ### 1.2. Từ “ngày càng gần” đến điều kiện mọi số hạng về sau
 
-### 1.4. Giới hạn vô cực khác giới hạn hữu hạn thế nào?
+    Để nói một dãy tiến về \(a\), ta phải đáp ứng **mọi** độ chính xác \(\varepsilon>0\): sẽ có một mốc \(N\) để **tất cả** \(n\ge N\) thỏa \(|u_n-a|<\varepsilon\). Chọn vài chỉ số có vẻ gần \(a\) chưa đủ. Với \(u_n=2+\frac1n\), khoảng cách tới 2 là \(1/n\); ta chủ động chọn \(N>1/\varepsilon\).
 
-Nếu u_n cuối cùng vượt **mọi mốc lớn** M>0, ta viết lim u_n=+∞; nếu u_n cuối cùng nhỏ hơn −M với mọi M>0, viết lim u_n=−∞. Đây là mô tả cách dãy lớn/nhỏ không bị chặn về một phía, **không phải cộng/trừ một số thực có tên "∞"**. Ví dụ u_n=n→+∞; còn (−1)^n n đổi dấu và có độ lớn tăng nên không có giới hạn theo hai nghĩa ±∞ vừa nêu.
+    **Vận dụng — Tự thử trước Core.** Với \(u_n=2+\frac1n\), cần chọn \(N\) như thế nào để mọi \(n\ge N\) có \(|u_n-2|<0{,}01\)? Nêu một giá trị \(N\) hợp lệ.
 
-### 1.5. Quy tắc tính được dùng khi nào?
+    <span data-ped-first-try="2" data-outcome-id="G11-B15-FINITE_SEQUENCE" data-thpt-first-try-id="THPT-G11-B15-TRY02" hidden></span>
 
-Những giới hạn cơ bản: lim 1/n^p=0 với p>0; lim q^n=0 khi **|q|<1**. Nếu u_n→a, v_n→b **đều hữu hạn**, tổng/hiệu/tích có giới hạn lần lượt a±b, ab. Thương có giới hạn a/b **chỉ khi b≠0**, và mẫu v_n phải khác 0 từ một chỉ số đủ lớn. Nếu cả tử và mẫu tiến đến 0, không được lấy 0/0; hãy biến đổi biểu thức hoặc chọn phương pháp khác.
+    ??? question "Đối chiếu"
 
-### 1.6. Vì sao có tổng của vô hạn số hạng?
+        **Lời giải:** Cần \(\frac1n<0{,}01\), tức \(n>100\). Chọn \(N=101\), khi đó mọi \(n\ge101\) đều thỏa \(|u_n-2|=1/n\le1/101<0{,}01\). Không lấy \(N=100\) vì tại \(n=100\) chỉ có **bằng** \(0{,}01\), không phải nhỏ hơn.
 
-Xét 5+5/4+5/16+... . Mỗi số hạng sau bằng **1/4** số hạng trước. Cộng lần lượt các số hạng đầu ta được những tổng riêng tăng dần, nhưng các phần tăng thêm nhỏ dần. Với cấp số nhân có số hạng đầu a và công bội q, khi **|q|<1** thì q^n→0; từ S_n=a(1−q^n)/(1−q) suy ra tổng vô hạn S=a/(1−q). Điều kiện |q|<1 không chỉ là chú thích: nó giải thích vì sao phần còn lại nhỏ dần.
+    <span data-thpt-help-id="HELP-G11-B15-TRY02" hidden></span>
 
+    ??? tip "Kiểm lỗi"
 
+        **Dấu hiệu:** Chọn N=100 vì ở đó khoảng cách bằng chính mức cho phép 0,01.
 
-**Tự thử trước Core:** Dãy 2+1/n tiến gần số nào? Tại sao không cần có số hạng nào đúng bằng số đó?
+        **Tự sửa:** Chú ý bất đẳng thức **nghiêm ngặt**; dùng (N=101). Ôn mục 2.1 và làm lại phép chọn N với ngưỡng 0,001 trước khi vào Core B15-C01.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở đối chiếu</summary><p>tiến gần 2 vì 1/n→0. Đây là formative tự học, không ghi Skill Mastery.</p></details>
+    ### 1.3. Dao động không phải lúc nào cũng ngăn hội tụ
 
+    Hai dãy \(a_n=(-1)^n\) và \(b_n=\frac{(-1)^n}{n}\) đều đổi dấu. Nhưng \(a_n\) cứ nhảy giữa \(-1\) và \(1\), trong khi \(|b_n|=1/n\to0\), nên \(b_n\to0\). Điều cần xem là **biên độ dao động có thu nhỏ** hay không, thay vì chỉ thấy có dấu trừ.
 
+    **Vận dụng — Tự thử trước Core.** Hai dãy \(a_n=(-1)^n\) và \(b_n=(-1)^n/n\) có giới hạn hữu hạn không? Giải thích qua dãy con hoặc bất đẳng thức.
 
-## 2. Ví dụ có suy luận và điều kiện
+    <span data-ped-first-try="3" data-outcome-id="G11-B15-FINITE_SEQUENCE" data-thpt-first-try-id="THPT-G11-B15-TRY03" hidden></span>
 
-### Bốn ví dụ độc lập
+    ??? question "Đối chiếu"
 
-**EX-G11-B15-01 — Giới hạn hữu hạn bằng chia bậc cao nhất.** Tính lim_{n→∞}(3n+1)/(n+4). Chia cả tử và mẫu cho n: (3+1/n)/(1+4/n)→3. Mẫu giới hạn 1 khác 0, do đó phép chia giới hạn hợp lệ. **Bẫy:** không được thay n=∞ như một số.
+        **Lời giải:** Dãy \(a_n\) **không có giới hạn**: số hạng chẵn bằng \(1\), lẻ bằng \(-1\), hai dãy con không thể cùng tiến về một giá trị. Dãy \(b_n\) có \(-1/n\le b_n\le1/n\); hai biên tiến về 0 nên theo nguyên lí kẹp \(b_n\to0\).
 
-**EX-G11-B15-02 — Dao động và giới hạn 0.** Xét u_n=(−1)^n/n và v_n=(−1)^n. Ta có |u_n|≤1/n→0, nên u_n→0. Nhưng v_n có hai dãy con n chẵn, n lẻ lần lượt bằng 1 và −1, không thể có cùng giới hạn. **Bẫy:** dấu luân phiên không tự quyết định hội tụ.
+    <span data-thpt-help-id="HELP-G11-B15-TRY03" hidden></span>
 
-**EX-G11-B15-03 — Tổng cấp số nhân lùi vô hạn.** Tính T=5+5/4+5/16+... . Ta có a=5, q=1/4, |q|<1; S=5/(1−1/4)=20/3. Thử tổng 3 số hạng đầu 105/16<20/3 để đối chiếu chiều tăng. **Bẫy:** không dùng công thức khi |q|≥1.
+    ??? tip "Kiểm lỗi"
 
-**EX-G11-B15-04 — Tình huống vận dụng.** Một thiết bị lần đầu tiết kiệm 120 đơn vị năng lượng, mỗi đợt sau chỉ tiết kiệm bằng 2/5 đợt liền trước. Tổng tiết kiệm lý thuyết sau vô hạn đợt: 120/(1−2/5)=200 đơn vị. Mô hình giả định công bội không đổi; số đợt thực tế hữu hạn thì tổng nhỏ hơn 200. **Bẫy:** phân biệt giới hạn mô hình và quá trình hữu hạn.
+        **Dấu hiệu:** Kết luận cả hai đều không hội tụ chỉ vì các số hạng đổi dấu.
 
-## 3. Tự khắc phục lỗi và quay lại câu gốc
+        **Tự sửa:** So sánh **độ lớn** của phần đổi dấu và thử hai dãy con chẵn/lẻ. Ôn 2.1 và Ví dụ 3.2; luyện Practice B15-P05 ở [Core và Luyện tập](../luyen-tap/).
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHV-B15-01"><summary>Nhầm 'giới hạn' với số hạng cuối cùng.</summary><ol><li><strong>Nhận diện:</strong> Nhầm 'giới hạn' với số hạng cuối cùng.</li>
-<li><strong>Nhắc bản chất và điều kiện:</strong> Dãy vô hạn không cần có số hạng cuối; yêu cầu các số hạng sau một mốc đều gần cùng một số.</li>
-<li><strong>Sửa cách nghĩ:</strong> Hãy nói lại bằng lời tại sao bước trước chưa đủ để kết luận, rồi kiểm tra giả thiết trước phép biến đổi.</li>
-<li><strong>Tự thử trước khi mở đáp án:</strong> Với uₙ=7+3/n, hãy nhìn khoảng cách |uₙ−7|=3/n. <strong>Tự đối chiếu sau khi thử:</strong> Khi n&gt;300, khoảng cách nhỏ hơn 0,01; vì vậy giới hạn là 7.</li>
-<li><strong>Quay lại bài gốc:</strong> làm lại <code>THPT-G11-CHV-B15-C01</code> và giải thích bằng lời vì sao kết luận đúng.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHV-B15-C01">Quay lại THPT-G11-CHV-B15-C01</a></p></details>
+    ### 1.4. Tiến ra vô cực khác hẳn tiến đến một số hữu hạn
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHV-B15-02"><summary>Thấy vô hạn số hạng thì kết luận tổng luôn vô hạn.</summary><ol><li><strong>Nhận diện:</strong> Thấy vô hạn số hạng thì kết luận tổng luôn vô hạn.</li>
-<li><strong>Nhắc bản chất và điều kiện:</strong> Tổng cấp số nhân hữu hạn cần |q|&lt;1; khi q=1 mỗi số hạng không nhỏ dần.</li>
-<li><strong>Sửa cách nghĩ:</strong> Hãy nói lại bằng lời tại sao bước trước chưa đủ để kết luận, rồi kiểm tra giả thiết trước phép biến đổi.</li>
-<li><strong>Tự thử trước khi mở đáp án:</strong> Dự đoán tổng 2+1+1/2+… và so với 2+2+2+…. <strong>Tự đối chiếu sau khi thử:</strong> Dãy thứ nhất có q=1/2 nên tổng 4; dãy thứ hai q=1 nên tổng tăng không chặn.</li>
-<li><strong>Quay lại bài gốc:</strong> làm lại <code>THPT-G11-CHV-B15-C03</code> và giải thích bằng lời vì sao kết luận đúng.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHV-B15-C03">Quay lại THPT-G11-CHV-B15-C03</a></p></details>
+    Kí hiệu \(u_n\to+\infty\) nói rằng với **mọi** mốc \(M>0\) ta có \(u_n>M\) với mọi \(n\) đủ lớn; \(u_n\to-\infty\) tương tự với \(u_n<-M\). \(+\infty\) và \(-\infty\) không phải hai số thực để thế trực tiếp vào biểu thức. Dãy \(n(-1)^n\) lớn về độ lớn nhưng đổi dấu, nên không tiến về \(+\infty\) hoặc \(-\infty\).
 
-## 4. Luyện tập và tự đối chiếu
+    **Vận dụng — Tự thử trước Core.** Cho \(u_n=-3n+7\). Dãy tiến về \(+\infty\), \(-\infty\) hay có giới hạn hữu hạn? Dựa vào dấu và bậc của \(n\).
 
-[Core và Luyện tập Bài 15](luyen-tap.md) · [Tự luận Chương V](../../../thu-vien/tu-luan-g11-chuong-v.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    <span data-ped-first-try="4" data-outcome-id="G11-B15-INFINITE_SEQUENCE" data-thpt-first-try-id="THPT-G11-B15-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Khi \(n\to+\infty\), \(-3n+7\) giảm không bị chặn dưới nên \(u_n\to-\infty\). Với mọi \(M>0\), chọn \(N>(M+7)/3\), khi đó \(n\ge N\) cho \(-3n+7<-M\).
+
+    <span data-thpt-help-id="HELP-G11-B15-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Thấy có số 7 dương rồi cho rằng dãy tiến tới +∞.
+
+        **Tự sửa:** Nhìn **hạng tử trội (-3n)** và chứng minh bằng một mốc tùy lớn. Ôn mục 2.2 và Core B15-C02 ở [Luyện tập](../luyen-tap/).
+
+    ### 1.5. Muốn dùng phép toán giới hạn, phải kiểm mẫu và dạng chưa xác định
+
+    Khi \(u_n\to a\), \(v_n\to b\) là **hai giới hạn hữu hạn**, phép cộng/trừ/nhân cho giới hạn tương ứng. Phép chia chỉ được phép khi \(b\ne0\) và mẫu thực sự khác 0 từ một chỉ số đủ lớn. Nếu trực tiếp thấy dạng \(0/0\) hoặc \(\infty/\infty\), đó **không phải kết quả**, mà là dấu hiệu cần biến đổi, thường chia tử mẫu cho lũy thừa lớn nhất.
+
+    **Vận dụng — Tự thử trước Core.** Tính \(\lim_{n\to+\infty}\frac{5n^2+3n}{2n^2+1}\). Vì sao không thể viết đơn giản “\(\infty/\infty=5/2\)”?
+
+    <span data-ped-first-try="5" data-outcome-id="G11-B15-LIMIT_ARITHMETIC" data-thpt-first-try-id="THPT-G11-B15-TRY05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Với \(n\ge1\), chia cả tử và mẫu cho \(n^2\):
+\[
+\frac{5n^2+3n}{2n^2+1}=\frac{5+3/n}{2+1/n^2}\to\frac52.
+\]
+Mẫu tiến tới \(2\ne0\), nên phép lấy thương hợp lệ **sau khi biến đổi**. Vô cực không phải số để chia.
+
+    <span data-thpt-help-id="HELP-G11-B15-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Rút gọn (infty/infty) như phân số hoặc bỏ kiểm mẫu giới hạn khác 0.
+
+        **Tự sửa:** Chia theo bậc (n) cao nhất rồi kiểm mẫu. Ôn mục 2.3, làm Practice B15-P01/P04 ở [Luyện tập](../luyen-tap/).
+
+    ### 1.6. Vì sao một tổng có vô hạn số hạng vẫn hữu hạn?
+
+    Tổng vô hạn không phải phép cộng “hết vô hạn lần” trên giấy. Ta tính **tổng riêng \(S_n\)** rồi xét \(\lim S_n\). Với cấp số nhân \(a+aq+aq^2+\cdots\), nếu \(|q|<1\) thì \(q^n\to0\) và \(S_n=a(1-q^n)/(1-q)\to a/(1-q)\). Khi \(|q|\ge1\), không dùng công thức này như một tổng hội tụ (trừ trường hợp tất cả số hạng bằng 0).
+
+    **Vận dụng — Tự thử trước Core.** Tính tổng \(8-4+2-1+\cdots\) và giải thích công bội âm có làm mất khả năng hội tụ không.
+
+    <span data-ped-first-try="6" data-outcome-id="G11-B15-GEOMETRIC_APPLICATION" data-thpt-first-try-id="THPT-G11-B15-TRY06" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Đây là cấp số nhân với \(a=8\), \(q=-1/2\), \(|q|=1/2<1\). Tổng bằng
+\[
+S=\frac{8}{1-(-1/2)}=\frac{16}{3}.
+\]
+Các tổng riêng dao động quanh \(16/3\) nhưng tiến gần giá trị ấy vì \(q^n\to0\). Dấu công bội âm **không ngăn hội tụ** khi \(|q|<1\).
+
+    <span data-thpt-help-id="HELP-G11-B15-TRY06" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Không cho phép q âm hoặc dùng công thức vô hạn khi q=-2.
+
+        **Tự sửa:** Kiểm **giá trị tuyệt đối (|q|<1)**, không chỉ (q<1). Ôn mục 2.4; luyện Core B15-C03 và Practice B15-P06/P07 tại [Core và Luyện tập](../luyen-tap/).
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Giới hạn hữu hạn của dãy số
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm:</strong> \(\lim_{n\to+\infty}u_n=a\) nếu với mọi \(\varepsilon>0\) tồn tại số tự nhiên \(N\) để mọi \(n\ge N\) đều có \(|u_n-a|<\varepsilon\). Riêng \(a=0\), điều kiện là \(|u_n|<\varepsilon\). **Giới hạn không yêu cầu số hạng nào bằng a.**</div>
+
+    **Giới hạn cơ bản:** Với \(p>0\), \(\lim 1/n^p=0\). Nếu \(|q|<1\) thì \(\lim q^n=0\). Với \(u_n=(-1)^n/n\), có \(|u_n|\le1/n\), nên giới hạn bằng 0 nhờ nguyên lí kẹp.
+
+    <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/FIG-G11-B15-01_R01.svg" loading="lazy" alt="Các điểm rời rạc u_n=1/n tiến sát trục hoành khi chỉ số n tăng, không có số hạng cuối"><figcaption>Đọc hình: mỗi điểm ứng với **một chỉ số nguyên dương**. Khoảng cách đến trục \(u_n=0\) giảm dần; không nối chấm thành đường liên tục hay kết luận có một “điểm cuối” bằng 0.</figcaption></figure>
+
+    ### 2.2. Giới hạn vô cực và dãy không có giới hạn
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Vô cực:</strong> \(u_n\to+\infty\) nghĩa là với mọi \(M>0\), cuối cùng **mọi** \(u_n>M\). Tương tự \(u_n\to-\infty\) nếu cuối cùng \(u_n<-M\). Đây không phải giới hạn bằng một số thực. Một dãy có thể **không có giới hạn** kiểu nào, như \((-1)^n\) hoặc \(n(-1)^n\).</div>
+
+    ### 2.3. Các phép toán giới hạn và phương pháp tính
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Phép toán:</strong> Nếu \(u_n\to a\), \(v_n\to b\) đều hữu hạn, thì \(u_n\pm v_n\to a\pm b\), \(u_nv_n\to ab\); thương \(u_n/v_n\to a/b\) khi \(b\ne0\) (và mẫu xác định đủ muộn).</div>
+
+    **Chọn phương pháp:** Phân thức theo \(n\) → chia cho lũy thừa cao nhất của \(n\); căn → phân tích \(n^2\) và nhớ \(n>0\); biểu thức đổi dấu → xét trị tuyệt đối hoặc kẹp; dạng \(0/0,\infty/\infty\) là dấu hiệu cần biến đổi, **không phải phép chia hai “số vô cực”**.
+
+    ### 2.4. Tổng cấp số nhân lùi vô hạn
+
+    Xét các tổng riêng \(S_n=a+aq+\cdots+aq^{n-1}\). Với \(|q|<1\), \(q^n\to0\), nên \(S_n=a(1-q^n)/(1-q)\to a/(1-q)\).
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Công thức có điều kiện:</strong>
+    \[
+    S=a+aq+aq^2+\cdots=\frac{a}{1-q},\qquad |q|<1.
+    \]
+    Với \(|q|\ge1\) và \(a\ne0\), tổng các số hạng của cấp số nhân thường không hội tụ hữu hạn; không tự thay vào công thức trên. Đặc biệt \(q=-1\) làm các tổng riêng luân phiên.</div>
+
+=== "Ví dụ"
+
+    Mỗi ví dụ có đề, lý do chọn cách giải, các bước và điều kiện kiểm lại.
+
+    ### 3.1. Giới hạn của một phân thức bậc nhất
+
+    <div class="thpt-g10-example-solution"><p>**Đề bài:** Tính \(\lim_{n\to\infty}\frac{3n+1}{n+4}\). **Chọn cách:** Cả tử, mẫu đều bậc nhất; chia cho \(n\) để lộ các giới hạn hữu hạn. **Giải:** \(\frac{3+1/n}{1+4/n}\to3\). **Kiểm:** Mẫu giới hạn \(1\ne0\), đúng điều kiện phép chia.</p></div>
+
+    ### 3.2. Đổi dấu nhưng biên độ thu về 0
+
+    <div class="thpt-g10-example-solution"><p>**Đề bài:** Chứng minh \(u_n=(-1)^n/(n+1)\to0\). **Chọn cách:** Không xét dấu riêng từng số; dùng bất đẳng thức kẹp. **Giải:** \(-1/(n+1)\le u_n\le1/(n+1)\); cả hai biên tiến về 0, suy ra \(u_n\to0\). **Kiểm:** Dãy không đơn điệu nhưng vẫn hội tụ.</p></div>
+
+    ### 3.3. Một giới hạn vô cực có dấu
+
+    <div class="thpt-g10-example-solution"><p>**Đề bài:** Xét \(u_n=2-5n\). **Chọn cách:** Hạng tử \(-5n\) quyết định khi \(n\) lớn. **Giải:** Với bất kỳ \(M>0\), chọn \(N>(M+2)/5\). Khi \(n\ge N\), \(2-5n<-M\), nên \(\lim u_n=-\infty\). **Kiểm:** Không viết \(-\infty\) như một số hạng của dãy.</p></div>
+
+    ### 3.4. Tổng của một cấp số nhân lùi vô hạn
+
+    <div class="thpt-g10-example-solution"><p>**Đề bài:** Tính \(5+5/4+5/16+\cdots\). **Chọn cách:** Kiểm đây là cấp số nhân \(|q|<1\) rồi xét tổng riêng. **Giải:** \(a=5,q=1/4\), nên \(S=5/(1-1/4)=20/3\). **Kiểm:** Tổng ba số đầu \(5+5/4+5/16=105/16\), nhỏ hơn \(20/3\), phù hợp vì các số hạng dương.</p></div>
+
+    ### 3.5. Quả bóng nảy: tổng các đoạn đi lên và đi xuống
+
+    <div class="thpt-g10-example-solution"><p>**Đề bài:** Quả bóng thả từ độ cao \(3\) m, sau mỗi lần chạm đất bật lên bằng nửa độ cao vừa rơi. Theo mô hình lý tưởng vô hạn, tổng quãng đường thẳng đứng là bao nhiêu? **Chọn cách:** Cú rơi đầu chỉ xảy ra **một lần**; mỗi độ cao bật lên sau đó được đi **lên và xuống**. **Giải:** \(L=3+2(3/2+3/4+\cdots)=3+2\cdot(3/2)/(1-1/2)=9\) m. **Kiểm:** Bỏ cú rơi đầu hoặc nhân đôi cú đầu đều đếm sai quãng đường; mô hình không khẳng định quả bóng thực nảy vô hạn.</p></div>
+
+    ### 3.6. Trường hợp công bội không hội tụ
+
+    <div class="thpt-g10-example-solution"><p>**Đề bài:** Có thể áp \(S=a/(1-q)\) cho \(2+2+2+\cdots\) không? **Chọn cách:** Kiểm điều kiện **trước công thức**. **Giải:** \(a=2,q=1\), \(|q|=1\) không thỏa. Tổng riêng \(S_n=2n\to+\infty\), nên không có tổng vô hạn hữu hạn. **Kiểm:** Thế \(q=1\) vào biểu thức sẽ chia cho \(0\), vô nghĩa.</p></div>
+
+=== "Lỗi thường gặp"
+
+    Nếu sai một câu Tự thử, mở Kiểm lỗi tại câu đó rồi làm lại một bài Core/Practice khác số liệu.
+
+    <span data-thpt-help-id="HELP-G11-B15-01" hidden></span>
+
+    ??? tip "4.1. Nhầm giới hạn với một số hạng cuối"
+
+        **Vì sao sai:** Nhầm giới hạn với một số hạng cuối làm mất điều kiện hoặc ý nghĩa của giới hạn.
+
+        **Tự sửa:** Đọc lại mục 2.1, kiểm mọi số hạng (4+3/n>4) vẫn có giới hạn 4; quay về Core B15-C01.
+
+    <span data-thpt-help-id="HELP-G11-B15-02" hidden></span>
+
+    ??? tip "4.2. Ghi giới hạn khi chỉ một vài số hạng gần"
+
+        **Vì sao sai:** Ghi giới hạn khi chỉ một vài số hạng gần làm mất điều kiện hoặc ý nghĩa của giới hạn.
+
+        **Tự sửa:** Dùng đúng định nghĩa: **mọi** (nge N); thử sai số 0,01 và N=101 trong mục 1.2.
+
+    <span data-thpt-help-id="HELP-G11-B15-03" hidden></span>
+
+    ??? tip "4.3. Thấy dao động rồi loại mọi hội tụ"
+
+        **Vì sao sai:** Thấy dao động rồi loại mọi hội tụ làm mất điều kiện hoặc ý nghĩa của giới hạn.
+
+        **Tự sửa:** So ((-1)^n) với ((-1)^n/n) theo biên độ; ôn Ví dụ 3.2 và Practice B15-P05.
+
+    <span data-thpt-help-id="HELP-G11-B15-04" hidden></span>
+
+    ??? tip "4.4. Tự ý tính thương vô cực hoặc tổng hình học"
+
+        **Vì sao sai:** Tự ý tính thương vô cực hoặc tổng hình học làm mất điều kiện hoặc ý nghĩa của giới hạn.
+
+        **Tự sửa:** Kiểm mẫu giới hạn (
+e0); với cấp số nhân vô hạn cần (|q|<1). Ôn mục 2.3–2.4 rồi luyện B15-P01/P06.
+
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương V](../../../../thu-vien/tu-luan-g11-chuong-v/).
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 15 (trang in 104–110).</p>
