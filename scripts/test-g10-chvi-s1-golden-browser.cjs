@@ -178,7 +178,8 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
      assert.equal(await exTab.locator(".thpt-g10-example-solution details.question").count(),0,
       where+" voluntary student self-practice must not sit inside worked solution");
      if([15,17,18].includes(item.n)){
-      const practice=exTab.locator('details.question > summary:text-is("Xem lời giải ba câu tự luyện")');
+      const sourceLabel=item.n===15?"Xem lời giải ba câu tự luyện":"Đối chiếu ba câu Vận dụng";
+      const practice=exTab.locator("details.question > summary").filter({hasText:sourceLabel});
       assert.equal(await practice.count(),1,where+" three student exercises must have meaningful answer label");
       const fold=practice.locator("xpath=..");
       assert(!(await fold.evaluate(el=>el.open)),where+" additional exercises must stay closed");
