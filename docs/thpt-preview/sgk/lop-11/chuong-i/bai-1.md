@@ -342,7 +342,7 @@
 
     <span data-thpt-help-id="HELP-G11-B01-01" hidden></span>
 
-    ??? tip "Kiểm lỗi"
+    ??? tip "4.1. Nhầm số vòng quay, tia cuối và độ dài cung"
 
         <p><strong>Nhóm lỗi tổng quát:</strong> Không phân biệt số đo góc quay, vị trí tia cuối và độ dài quãng đường chuyển động.</p>
         <p><strong>Biểu hiện ở nhiều dạng bài:</strong> Quy \(765^\circ\) về \(45^\circ\) để tính sin/cos là hợp lí, nhưng lấy góc \(45^\circ\) thay tổng góc quay để tính quãng đường thì sai; hoặc dùng độ thay radian trong công thức cung.</p>
@@ -352,7 +352,7 @@
 
     <span data-thpt-help-id="HELP-G11-B01-02" hidden></span>
 
-    ??? tip "Kiểm lỗi"
+    ??? tip "4.2. Bỏ qua điều kiện xác định và dấu lượng giác"
 
         <p><strong>Nhóm lỗi tổng quát:</strong> Suy giá trị lượng giác mà chưa kiểm điều kiện, dấu và phép đối xứng trên đường tròn.</p>
         <p><strong>Biểu hiện ở nhiều dạng bài:</strong> Coi \(\tan(\pi/2)\) là hữu hạn; gán cos dương ở góc phần tư II; hoặc lấy căn bậc hai mà không chọn dấu theo góc phần tư và loại góc không thuộc miền xác định.</p>
