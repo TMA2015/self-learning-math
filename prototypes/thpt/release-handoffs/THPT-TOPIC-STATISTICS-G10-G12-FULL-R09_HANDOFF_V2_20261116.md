@@ -1,10 +1,14 @@
+<!-- TOP22_MASTER974_FINAL_STUDENT_COPY_20261121 -->
+**V2 final source lock:** `7ac79e5ed705a5ce482c3d9c42a4451e659e1109` → current author Q18 `2e35a06020768e5a6db2e9f2fe65a46f577960c2` → current one A1/Q15 127-item matrix `496b936cfcdee2347aaf8460188bb6381205ce2c`. Only one student-visible voluntary SelfCheck explanation sentence was converted from internal runtime status terminology to natural language; original 114 signed math Practice and 15 answer-restored lines, 13 FT existing math, 9 identical question-only SelfChecks, 39 outcomes/13 lessons, 128 disclosures, old SVG and no-Mastery policy unchanged. Does not create new Q15 item version, academic math Delta C, independent Topic review or RELEASE permission. `BLOCKERS: NONE` retains its V2 source-only meaning, original S1 PDF viewer page-index P2 remains recorded separately.
+---
+
 <!-- TOP22_MASTER974_CURRENT_AUTHORING_V2_20261121 -->
 ## CĐ22 R09 current one V2 authoring — 127 public canonical identities / 114 source-owned shared Practice
 
-CURRENT_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
-CURRENT_SOURCE_COMMIT: 3c23bd06ea9d5f12bb8884b2b250e8cbc044b967
-CURRENT_Q18_AUTHOR_RECEIPT_BLOB: 3e0b1763b034f4d461d438708b0784e5b3576679
-CURRENT_A1_A7_Q15_SOURCE_MATRIX_BLOB: 101421d8a74806de6a75ce995498aff7e3df9f90
+CURRENT_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
+CURRENT_SOURCE_COMMIT: 75c1be1493feb239147b493fecd933965181ad5a
+CURRENT_Q18_AUTHOR_RECEIPT_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
+CURRENT_A1_A7_Q15_SOURCE_MATRIX_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
 SHARED_ORIGINAL_PRACTICE_ITEM_COUNT: 114
 EXISTING_TOPIC_FIRSTTRY_NOW_CANONICALLY_IDENTIFIED: 13
 PUBLIC_UNIQUE_CANONICAL_ID_COUNT: 127
@@ -16,11 +20,11 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CURRENT_S1_PRINTED_PDF_INDEX_PROVENANCE_P2: OPEN_NONBLOCKING
 RELEASE_AUTHORIZATION: NO
 
-**Source:** One learner already in R09 original path `prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md`, Git `ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145`. Original 107 canonical SGK shared source-index Git `51a6e99587187838aea61c5c72108adae7874d1d` plus 7 original public Topic extension `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` **=114 actual Practice canonical IDs** remain original and unchanged in 114-row historical SGK ITEM_OUTCOME_MATRIX below; none cloned or given a second answer/score. Already-correct 15 original authorized G11/G12 key conclusion lines inside opt-in original Practice retained byte exact, 19 Written rubrics unchanged.
+**Source:** One learner already in R09 original path `prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md`, Git `7ac79e5ed705a5ce482c3d9c42a4451e659e1109`. Original 107 canonical SGK shared source-index Git `51a6e99587187838aea61c5c72108adae7874d1d` plus 7 original public Topic extension `c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3` **=114 actual Practice canonical IDs** remain original and unchanged in 114-row historical SGK ITEM_OUTCOME_MATRIX below; none cloned or given a second answer/score. Already-correct 15 original authorized G11/G12 key conclusion lines inside opt-in original Practice retained byte exact, 19 Written rubrics unchanged.
 
-**Q15 Q14 real prior gap repaired in place:** 13 previously existing complete Knowledge Vận dụng questions+answer opt-in blocks in 13 lessons had zero question `item_id`. Assigned exactly 13 unique `THPT-TOP22-T01..T13` **Topic-owned canonical FirstTry identities**, each with original stem and existing solution, original lesson primary/secondary source outcomes and initial `TOP22-R09-20261121-FTxx` item version. Not new mathematical authored questions, no extra source bank 114 item. Full 127-row source line/outcome/role/version matrix now in **single A1–A7/Q15** Git blob `101421d8a74806de6a75ce995498aff7e3df9f90`, while old 114-row V2 matrix below continues to inventory only previously original SGK and public extension shared Practice cards; no competing canonical source. Original 39 outcome narratives retained with 13 FirstTry plus 114 Practice depth—do not claim 39 separately unique FirstTry. Each original 13 FirstTry math/answer body unchanged, prior short real misconception diagnosis relabeled `Kiểm lỗi` and now points to corresponding lesson plus **36 actual source-equivalent math Practice retries**. The original 9 same-ID public question-only selfchecks stay identical to original shared Practice questions and are linked via ONE optional after-all-nine `Đối chiếu` to Bài luyện3/13/23/40/52/54/73/97/105, no duplicate key or official independent readiness. The two original SVG source assets/path and their math/reading untouched; **128/128** opt-in disclosures balanced (13FT+114Practice+one selfcheck lookup), three outer student Topic parts.
+**Q15 Q14 real prior gap repaired in place:** 13 previously existing complete Knowledge Vận dụng questions+answer opt-in blocks in 13 lessons had zero question `item_id`. Assigned exactly 13 unique `THPT-TOP22-T01..T13` **Topic-owned canonical FirstTry identities**, each with original stem and existing solution, original lesson primary/secondary source outcomes and initial `TOP22-R09-20261121-FTxx` item version. Not new mathematical authored questions, no extra source bank 114 item. Full 127-row source line/outcome/role/version matrix now in **single A1–A7/Q15** Git blob `496b936cfcdee2347aaf8460188bb6381205ce2c`, while old 114-row V2 matrix below continues to inventory only previously original SGK and public extension shared Practice cards; no competing canonical source. Original 39 outcome narratives retained with 13 FirstTry plus 114 Practice depth—do not claim 39 separately unique FirstTry. Each original 13 FirstTry math/answer body unchanged, prior short real misconception diagnosis relabeled `Kiểm lỗi` and now points to corresponding lesson plus **36 actual source-equivalent math Practice retries**. The original 9 same-ID public question-only selfchecks stay identical to original shared Practice questions and are linked via ONE optional after-all-nine `Đối chiếu` to Bài luyện3/13/23/40/52/54/73/97/105, no duplicate key or official independent readiness. The two original SVG source assets/path and their math/reading untouched; **128/128** opt-in disclosures balanced (13FT+114Practice+one selfcheck lookup), three outer student Topic parts.
 
-**Honest evidence:** exact source self-signed Q18 `3e0b1763b034f4d461d438708b0784e5b3576679` under one effective v3.2 Q01–Q18; earlier 13-path author mathematical spotcheck and 15-key original SGK proof apply on unchanged maths only; no newly alleged independent full-Topic NotebookLM Academic/PED PASS or fresh SGK PDF visual scan. Original G11 page index reviewer reference **P2 OPEN_NONBLOCKING**, not a math P0/P1. Public `CLIENT_SELF_CHECK_NO_MASTERY`; private RD1 not published, official Final Submit/Mastery not supported by these question-only replays. `AUTHORING CONTENT_READY` source-only once exact HEAD intake checks pass, NOT website/RELEASE/AP-R/device QA, no owner merge/deploy/Firebase/student-data authorization.
+**Honest evidence:** exact source self-signed Q18 `2e35a06020768e5a6db2e9f2fe65a46f577960c2` under one effective v3.2 Q01–Q18; earlier 13-path author mathematical spotcheck and 15-key original SGK proof apply on unchanged maths only; no newly alleged independent full-Topic NotebookLM Academic/PED PASS or fresh SGK PDF visual scan. Original G11 page index reviewer reference **P2 OPEN_NONBLOCKING**, not a math P0/P1. Public `CLIENT_SELF_CHECK_NO_MASTERY`; private RD1 not published, official Final Submit/Mastery not supported by these question-only replays. `AUTHORING CONTENT_READY` source-only once exact HEAD intake checks pass, NOT website/RELEASE/AP-R/device QA, no owner merge/deploy/Firebase/student-data authorization.
 
 **Canonical existing FirstTry identity map (distinct from original 114 SGK bank IDs):**
 - `THPT-TOP22-T01` → Kiến thức 1.1 · `CONTENT_VERSION=TOP22-R09-20261121-FT01`
@@ -68,9 +72,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
+ACADEMIC_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-REVIEW_RECEIPT_BLOB: 3e0b1763b034f4d461d438708b0784e5b3576679
+REVIEW_RECEIPT_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_CANONICAL_SOURCE_INDEX_R00_20261111.md
 PUBLIC_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G12_PUBLIC_EXTENSION_07ITEM_R00_20261111.md
@@ -94,9 +98,9 @@ RELEASE_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 CONTENT_REVISION: R09_MASTER974_Q15_13_EXISTING_FIRSTTRY_CANONICAL_PED6_20261121
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_A1_A7_BLOB: 101421d8a74806de6a75ce995498aff7e3df9f90
+AUTHOR_A1_A7_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_SOURCE_EQUIVALENCE_114_Q15_20261116.md
-AUTHOR_METADATA_BLOB: 101421d8a74806de6a75ce995498aff7e3df9f90
+AUTHOR_METADATA_BLOB: 496b936cfcdee2347aaf8460188bb6381205ce2c
 ORIGINAL_R07_SOURCE_BLOB: e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6
 ORIGINAL_R07_AUTHOR_RECEIPT_BLOB: 40feca220c54fc0620ab113cc354e3d37a66088e
 
