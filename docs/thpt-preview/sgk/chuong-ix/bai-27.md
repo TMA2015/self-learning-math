@@ -9,6 +9,18 @@
 
 .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-example-solution{display:block;margin:.75rem 0 1rem;padding:.75rem 1rem;border:1px solid #cbd5e1;border-left:4px solid #64748b;border-radius:10px;background:#f8fafc;color:#1e293b}
 [data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-example-solution{background:#253245;border-color:#64748b;border-left-color:#94a3b8;color:#f1f5f9}
+
+/* B27 KEY_FORMULA is a neutral outline, not a new SGK definition/rule. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-key-formula{
+  display:block;margin:1rem 0 1.2rem;padding:.85rem 1.05rem;
+  border:1.5px solid #78869b;border-left:4px solid #64748b;border-radius:10px;
+  background:transparent;color:inherit;line-height:1.75
+}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-key-formula strong{display:block;margin-bottom:.4rem}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-key-formula p{margin:.4rem 0}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-key-formula{
+  border-color:#8c9ab0;border-left-color:#bdc8d8;background:transparent;color:#edf2f8
+}
 </style>
 
 <script>
@@ -216,7 +228,9 @@
 
     Khi có rất nhiều kết quả, ta không cần liệt kê từng kết quả để đếm \(n(\Omega)\) và \(n(A)\). Từ Bài 23–24, em dùng quy tắc nhân, chỉnh hợp, tổ hợp tùy cách một kết quả được xác định.
 
-    **Chọn nhóm không xét thứ tự.** Nếu chọn đều một nhóm \(k\) đối tượng từ \(n\) đối tượng **phân biệt**, mỗi nhóm gồm \(k\) phần tử là một kết quả sơ cấp. Khi đó \(n(\Omega)=\binom nk\) với \(0\le k\le n\). Để tính \(P(A)\), hãy đếm nhóm thuận lợi \(n(A)\) rồi dùng định nghĩa cổ điển của xác suất \(P(A)=n(A)/n(\Omega)\).
+    **Chọn nhóm không xét thứ tự.** Nếu chọn đều một nhóm \(k\) đối tượng từ \(n\) đối tượng **phân biệt**, mỗi nhóm gồm \(k\) phần tử là một kết quả sơ cấp. Tử số và mẫu số phải cùng đếm **các nhóm không xét thứ tự**.
+
+    <div class="thpt-g10-key-formula" role="note" data-b27-key-formula="combinations"><strong>Công thức áp dụng — kết hợp kiến thức Bài 24 và Bài 26</strong><p>\(n(\Omega)=\binom nk\) với \(0\le k\le n\); theo định nghĩa cổ điển \(P(A)=n(A)/n(\Omega)\). Do đó, khi mọi nhóm \(k\) phần tử đồng khả năng, \(P(A)=\dfrac{n(A)}{\binom nk}\).</p><p>Muốn tính \(P(A)\), hãy đếm số nhóm thuận lợi \(n(A)\) trong cùng mô hình, rồi kiểm \(n(\Omega)>0\). Đây là <strong>cách vận dụng các công thức đã học</strong>, không phải một định nghĩa mới của SGK Bài 27.</p></div>
 
     **Khi nào nhân các tổ hợp?** Ví dụ chọn 6 học sinh trong lớp có 7 nam và 5 nữ, yêu cầu 3 nam và 3 nữ. Chọn nam và nữ là hai công đoạn độc lập về **đếm nhóm**: có \(\binom73\binom53\) nhóm thuận lợi. Điều kiện phải kiểm là giáo viên chọn đều **giữa các nhóm 6 học sinh**, không phải chỉ nói “chọn ngẫu nhiên”.
 
@@ -224,7 +238,11 @@
 
     ### 2.2. Sử dụng sơ đồ hình cây (SGK mục 2, tr. 84–85)
 
-    Sơ đồ cây mô tả phép thử gồm nhiều bước: từ mỗi nhánh lượt trước, chỉ vẽ **những kết quả còn có thể xảy ra** ở lượt sau; mỗi đường đi từ gốc đến lá ứng với một kết quả hoàn chỉnh. Hình cây ở tab Khám phá minh họa đúng 12 lá của phép rút không hoàn lại.
+    Sơ đồ cây mô tả phép thử gồm nhiều bước: từ mỗi nhánh lượt trước, chỉ vẽ **những kết quả còn có thể xảy ra** ở lượt sau; mỗi đường đi từ gốc đến lá ứng với một kết quả hoàn chỉnh.
+
+    <figure class="thpt-r4-plot thpt-r4-probability-figure" data-b27-knowledge-figure="reused-discovery-tree"><img src="../../../../assets/images/thpt/THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg" loading="lazy" alt="Sơ đồ cây 4 thẻ R1, R2, B1, B2 rút hai lượt không hoàn lại; có 4 nhánh đầu, mỗi nhánh còn 3 thẻ, tổng 12 cặp có thứ tự đồng khả năng"/><figcaption><strong>Đọc hình trong phần Kiến thức:</strong> chọn một nhánh đầu, đi tiếp theo từng nhánh của ba thẻ còn lại để đọc một kết quả hoàn chỉnh ở lá. Có 12 lá: 2 đỏ–đỏ, 4 đỏ–xanh, 4 xanh–đỏ, 2 xanh–xanh. Đây là <strong>cùng hình cây</strong> ở tab Khám phá, đặt lại ngay nơi sử dụng phương pháp.</figcaption></figure>
+
+    **Tại sao phải đọc hình như vậy?** Rút không hoàn lại làm số lựa chọn ở lượt sau giảm từ bốn xuống ba. Đếm số lá thuận lợi chỉ được chia cho 12 khi 12 cặp thẻ cụ thể là các kết quả đồng khả năng.
 
     **Ví dụ về ba hộp:** hộp I có ba lựa chọn (đỏ, xanh, vàng), hộp II có hai lựa chọn (xanh, vàng), hộp III có hai lựa chọn (đỏ, xanh). Khi rút đều từ từng hộp và các lượt độc lập, có \(3\cdot2\cdot2=12\) kết quả (bộ ba màu) đồng khả năng. Muốn tìm “đúng một viên xanh”, chỉ đánh dấu các đường có đúng một chữ X, rồi đếm.
 
