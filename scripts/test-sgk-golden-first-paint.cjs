@@ -40,7 +40,7 @@ for(const row of rows){
   row.rel+" exactly four navigation choices, with disabled edge slots");
  // G10's existing runtime removes only these decorative hero leads after load;
  // they must not flash and then disappear on the first browser paint.
- if(row.grade===10&&row.n<=22)
+ if(row.grade===10&&(row.n<=22||row.n>=24))
   assert(!html.includes('<p class="thpt-r4-lead">'),row.rel+" decorative lead still flashes");
 
  for(const k of ["data-thpt-first-try-id","data-thpt-help-id"])
@@ -107,7 +107,7 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
       assert.equal(v.navCount,1,k+" prebuilt navigation count");
       assert.equal(v.navId,row.grade+"-B"+row.n,k+" navigation route");
       assert.equal(v.navChoices,4,k+" exact four nav destinations, including disabled edge");
-      if(row.grade===10&&row.n<=22)assert.equal(v.leadCount,0,k+" hero lead must not appear and then disappear");
+      if(row.grade===10&&(row.n<=22||row.n>=24))assert.equal(v.leadCount,0,k+" hero lead must not appear and then disappear");
       if(!(v.pad>=8&&v.radius>=4&&v.headingBorder>=3))
        console.error("GOLDEN_STYLE_DIAGNOSTIC "+k+" "+JSON.stringify(v));
       assert(v.pad>=8&&v.radius>=4&&v.headingBorder>=3,

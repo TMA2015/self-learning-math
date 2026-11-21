@@ -80,7 +80,9 @@ def _hero_first_paint(html: str, src_uri: str) -> str:
         return html  # Unknown nested hero: fail-closed in on_post_page.
     m = _ROUTE.fullmatch(src_uri)
     level, _, raw = m.groups()
-    if level is None and int(raw) <= 22:
+    # Hide presentation-only hero leads in G10 B01-B22 and B24-B27.
+    # B23 has no lead; no learner Markdown or tab content is altered.
+    if level is None and (int(raw) <= 22 or 24 <= int(raw) <= 27):
         body = _LEAD.sub('', body)
     body = _OLD_NAV.sub('', body)  # G11 B01 preexisting small nav.
     new_hero = hero.group(1) + body + '\n' + nav + '\n' + hero.group(3)
