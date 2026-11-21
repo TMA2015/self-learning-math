@@ -23,8 +23,8 @@ with sync_playwright() as pw:
    p.on("pageerror",lambda error:errors.append(str(error)))
    route=BASE+"/thpt-preview/chuyen-de/"
    assert p.goto(route,wait_until="domcontentloaded").status==200
-   assert p.locator('a[href="cd01/kien-thuc/"]').count()==1,(engine,width,"catalog")
-   assert p.locator('a[href="ham-so/kien-thuc/"]').count()==1,(engine,width,"legacy deep link")
+   assert p.locator('[data-thpt-topic="1"]').count()==1,(engine,width,"catalog")
+   assert p.locator('a[href*="ham-so/kien-thuc/"]').count()==1,(engine,width,"legacy deep link")
    for part in ("kien-thuc","luyen-tap","tu-kiem-tra"):
     res=p.goto(route+"cd01/"+part+"/",wait_until="networkidle")
     assert res.status==200,(engine,width,part,"HTTP")
