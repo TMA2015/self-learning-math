@@ -6,6 +6,7 @@ on:
       - 'hooks/sgk_golden_first_paint.py'
       - 'scripts/test-sgk-golden-first-paint.cjs'
       - 'scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs'
+      - 'scripts/test-thpt-academic-presentation-browser.cjs'
       - '.github/workflows/sgk-golden-first-paint-qa.yml'
       - 'mkdocs.yml'
       - 'docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js'
@@ -27,6 +28,7 @@ jobs:
           python -m py_compile hooks/sgk_golden_first_paint.py
           node --check scripts/test-sgk-golden-first-paint.cjs
           node --check scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
+          node --check scripts/test-thpt-academic-presentation-browser.cjs
           node --check docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js
       - name: Compile HTML
         run: |
@@ -52,3 +54,4 @@ jobs:
           PY
           node scripts/test-sgk-golden-first-paint.cjs
           node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
+          node scripts/test-thpt-academic-presentation-browser.cjs
