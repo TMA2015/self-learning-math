@@ -1,3 +1,6 @@
+<!-- TOP01_MASTER974_CANONICAL_DEPTH_GAP_CLOSED_20261121 -->
+**Current scoped AUTHORING verification:** source `9271a9784e343ea87981a67dae7dabcf69e4c0ed`, existing self-Q18 receipt `e5cccc6d98bf3ce5244114752075f74a3389c46b`. Verified 18 SGK + 6 Topic original canonical stems/solutions and both Written rubrics. Added 3 explicit learner answer conclusions matching original canonical + 1 optional public selfcheck `Đối chiếu` mapping 11 questions to existing Practice answers; 36 opt-in disclosure blocks total. This is a targeted pedagogical improvement, **not** a new bank, duplicate learner, independent NotebookLM full PASS, or website release. Older snapshots and SHA in historical sections below remain historical.
+
 <!-- TOP01_MASTER974_PED_D6_LABELS_CURRENT_20261121 -->
 **Current AUTHORING #974, one canonical learner only:** source blob `53e0cc45a3b101c80c83b4412db0195e9f226c47`; existing Q18 receipt updated in place to `effb212b7f36007ec1d185def983da3ef2075b7c`. DELTA_A removed 11 learner-visible internal labels; DELTA_C added 11 optional learner `Kiểm lỗi` D6 directions, verified to real Practice headings. Original 10 approved canonical math conclusions remain present and unchanged. The historical `a34680...` snapshot and its exact-old-source parity explanations below are retained as *history*, not current blob claims. No second learner/assessment, independent NotebookLM PASS or RELEASE.
 
@@ -10,9 +13,9 @@ Original G10/Topic bank keys exact 10/10, visible only inside optional answer di
 # CĐ1 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
+CURRENT_SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-CURRENT_Q18_RECEIPT_BLOB: effb212b7f36007ec1d185def983da3ef2075b7c
+CURRENT_Q18_RECEIPT_BLOB: e5cccc6d98bf3ce5244114752075f74a3389c46b
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
