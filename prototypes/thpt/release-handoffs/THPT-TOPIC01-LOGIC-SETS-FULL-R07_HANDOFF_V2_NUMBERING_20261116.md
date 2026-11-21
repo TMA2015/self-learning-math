@@ -1,3 +1,10 @@
+<!-- TOP01_MASTER974_DEEP_AUDIT_Q15_SELFCHK_20261121 -->
+## CURRENT V2 OWNER-SCOPED AUTHORING (CĐ01)
+
+Same learner canonical path and packet `THPT-TOPIC01-LOGIC-SETS-FULL-R01` at `9271a9784e343ea87981a67dae7dabcf69e4c0ed`. Current existing receipt `e5cccc6d98bf3ce5244114752075f74a3389c46b`, metadata `dcfd83b571e8eea776b47a9b87e3cd8b990675b1`. Retained Q15 original **18 SGK + 6 Topic independent source item IDs** and 2 original Written rubrics without cloning. New scope: Bài 1, 12, 18 state original correct conclusions explicitly (source-equivalent) and public selfcheck 11 items gets **one opt-in learner `Đối chiếu` routing table** pointing to previously present practice solutions; no answers/rubrics copied. Previous snapshot's 35 disclosures + one new selfcheck disclosure = 36 current (11 Knowledge, 24 Practice, 1 selfcheck). No private RD1, no official Readiness/Final Submit/Mastery, no website integration. **Targeted AUTHOR_SELF_VERIFIED in current receipt; historic broader Q18/NotebookLM verdicts are source-scoped, not new full Topic PASS.**
+
+---
+
 <!-- TOP01_OWNER_AUTHORING_20261121_DELTA_A_C_CURRENT -->
 ## CURRENT AUTHORING CĐ01 HANDOFF — same packet, scoped learner quality improvement
 
@@ -24,11 +31,11 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
+ACADEMIC_SOURCE_BLOB: 9271a9784e343ea87981a67dae7dabcf69e4c0ed
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-REVIEW_RECEIPT_BLOB: effb212b7f36007ec1d185def983da3ef2075b7c
+REVIEW_RECEIPT_BLOB: e5cccc6d98bf3ce5244114752075f74a3389c46b
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 8277985901c1f245c499a6e2a107999e513f928a
+AUTHOR_METADATA_BLOB: dcfd83b571e8eea776b47a9b87e3cd8b990675b1
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_CANONICAL_SOURCE_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC01_LOGIC_SETS_PUBLIC_EXTENSION_06ITEM_R01_20261112.md
