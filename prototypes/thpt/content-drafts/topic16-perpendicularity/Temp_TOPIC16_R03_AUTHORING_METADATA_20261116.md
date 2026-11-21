@@ -1,7 +1,10 @@
+<!-- OWNER_APPROVED_SHARED_SGK_G11_B22_B27_DELTA_B_A1_20261121 -->
+**CURRENT EXACT AUTHORING:** one CĐ16 learner `1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84`, current source-owner SGK B22–B27 bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` (**both Topic branches use same source blob**), current Q18 `19a2ed6ebfd7898da5f186350ea6042e2134fa7e`, A1/Q15 `current`, V2 `current`. Original 33/41 G11 shared canonical Practice student-answer labels formerly `Đáp án sau Submit luyện tập`, misleading in direct voluntary Lời giải; now exact `Đáp án` in one **canonical source** (all 51 public SGK items same) and CĐ16 projection (33) + CĐ17 projection (18). **No stem, numeric key, mathematical reasoning, option, rubric, disclosure, final submit/mastery evaluator code changed**; one original G11 Q15 same-ID source bank, old `afc8ec039213b87b4930f2d34d48c28d1fc6277f` preserved in Git history. `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL`, affected source author self QA; no blanket independent NotebookLM PASS, no website/release/merge/deploy.
+---
 <!-- TOP16_MASTER974_CURRENT_A1_A7_20261121 -->
 ## CĐ16 current AUTHORING A1–A7 · one R03 learner, #974 / #977 #051–054
 
-CURRENT_SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
+CURRENT_SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -26,7 +29,7 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 STATE: AUTHORING_R03_SELF_VERIFIED
 SCOPE_NOTES: PLAN22-17 Khoảng cách & Thể tích (G11 B26–B27 + CHVII-INTEGRATED) out of CĐ16, not silently retired/finished
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
+ACADEMIC_SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
 ORIGINAL_G11_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
