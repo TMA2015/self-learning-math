@@ -1,3 +1,8 @@
+<!-- TOP15_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
+**Current AUTHORING source-Q18 CONTENT_READY snapshot (NOT website RELEASE):** one R04 learner `prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md` blob **`c1be91f17044d89474d6399308385b4f1fbc7aeb`**, source commit `15ae14f190554ba26ad12ce26a76df84f2e2e401`; same existing Q18 receipt `e84c2f66c9b95d63fbef8d5f0e1493f004036164` v3.2 author-self, A1 `48e4fbdaffd39aa8e7d641bed60b672a585dc01f`, same V2 `56b544d8eecbfa3ec1e01f07517dff4f68ff3faf`. All verified source defects #977-048/049/050: 22 unique error→exact Knowledge→two authentic original Practice Bài retries, 8 original public selfchecks one opt-in after-all-question answer locator by item ID to Bài luyện `36,9,12,25,37,50,63,64`, all **67 sequential Bài luyện 1–67** headings, five complete supplemental worked examples with student self-contained tasks, one explicit Topic SGK credit at end. **67/67 existing original canonical Practice question/key/solution/15 Written rubric mathematical bodies byte-for-byte identical**, original 8 public Selfcheck question-only and 22 FirstTry stems unchanged, original 5 SVG and model HTML intact, 91/91 disclosures balanced. Original SGK item owner sibling PR #705 `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b` external for combined-HEAD RELEASE R1; no duplicate canonical items. Delta C targeted pedagogy + A editorial under same Q01–Q18. **AUTHOR_SELF_VERIFIED** affected learning source, not independent full Topic NotebookLM PASS or Golden/AP/R browser QA. No official RD1/Mastery/Final Submit, no merge/deploy, no Firebase or learner data changed.
+
+---
+
 # CĐ15 — Quan hệ song song trong không gian · AUTHORING CONTENT_READY R04
 
 PACKET_ID: THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04
@@ -11,19 +16,19 @@ STATE: CONTENT_READY
 CONTENT_REVISION: R04_FULL_S1_KNOWLEDGE_20261120
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O16_O17_O20_O21; DELTA_A_UI_MODEL_STYLE_HISTORICAL
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: 70a65dc18e8c8f1da5c3fabdbd2e7aa3d4bf83ff
+SOURCE_COMMIT: 15ae14f190554ba26ad12ce26a76df84f2e2e401
 CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 89dd1b775c782bd2a8638560a2aa93d49b589eee
+ACADEMIC_SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md (author-self; NOT an independent NotebookLM verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 05776193cb36606c99a90a539369afef5c0bac86
+REVIEW_RECEIPT_BLOB: e84c2f66c9b95d63fbef8d5f0e1493f004036164
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_R04_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: c0fbda043ac2947be1b49321a33fec5407065d59
+AUTHOR_A1_A7_BLOB: 48e4fbdaffd39aa8e7d641bed60b672a585dc01f
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC15-SPATIAL-PARALLELISM-FULL-R04_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 0d8b12c9cbab461ee7fc8701700484551616ab92
+AUTHOR_HANDOFF_BLOB: 56b544d8eecbfa3ec1e01f07517dff4f68ff3faf
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html
 INTERACTIVE_MODEL_BLOB: cf6510d5d964958982fae3ebce5823e35aeac639
