@@ -1,0 +1,15 @@
+/* Scope to RELEASE CĐ01 only; reuse Golden R4 typography and adaptive tab tokens. */
+.topic01-release-nav{max-width:100%;margin:0 0 18px}
+.topic01-release-nav .thpt-r4-topic-steps{margin-block:10px}
+.topic01-release-nav .topic01-back{font-size:.87rem}
+.topic01-assessment-note,.topic01-legacy-note{padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;background:var(--md-code-bg-color);font-size:.87rem;line-height:1.6}
+.topic01-end-nav{margin-top:30px;padding-top:14px;border-top:1px solid var(--md-default-fg-color--lightest)}
+.topic01-knowledge-layout{min-width:0}
+.topic01-knowledge-layout .thpt-r4-knowledge-panel[hidden]{display:none!important}
+.topic01-knowledge-layout .thpt-r4-knowledge-module-panel{min-width:0}
+.topic01-knowledge-layout .thpt-r4-knowledge-content-panel{min-width:0;overflow-wrap:anywhere}
+.topic01-knowledge-layout img{max-width:100%;height:auto;display:block;margin:16px auto}
+.topic01-knowledge-layout .topic01-model-note{line-height:1.6}
+.topic01-knowledge-layout .thpt-r4-knowledge-module-panel > h2{line-height:1.45}
+.topic01-knowledge-layout details{max-width:100%}
+@media(max-width:600px){.topic01-knowledge-layout .thpt-r4-knowledge-modules{grid-template-columns:1fr}.topic01-knowledge-layout .thpt-r4-knowledge-subtabs{display:grid;grid-template-columns:1fr}.topic01-knowledge-layout .thpt-r4-knowledge-subtabs button{text-align:left;white-space:normal;overflow-wrap:anywhere}}

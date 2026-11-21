@@ -224,6 +224,10 @@ nav:
               - Core hàm bậc hai: thpt-preview/sgk/core/ham-so-bac-hai.md
           - Chuyên đề:
               - Tổng quan: thpt-preview/chuyen-de/index.md
+              - CĐ01 · Mệnh đề và tập hợp:
+                  - Kiến thức: thpt-preview/chuyen-de/cd01/kien-thuc.md
+                  - Luyện tập: thpt-preview/chuyen-de/cd01/luyen-tap.md
+                  - Tự kiểm tra: thpt-preview/chuyen-de/cd01/tu-kiem-tra.md
               - Kiến thức · Hàm số (mẫu): thpt-preview/chuyen-de/ham-so/kien-thuc.md
               - Luyện tập · Hàm số (mẫu): thpt-preview/chuyen-de/ham-so/luyen-tap.md
               - Tự kiểm tra · Hàm số (demo): thpt-preview/chuyen-de/ham-so/tu-kiem-tra.md
@@ -276,6 +280,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r30-consistency.css
 
   - assets/stylesheets/math-lab-library-v1.css
+  - assets/stylesheets/thpt-topic01-release-v1.css
   - assets/stylesheets/thpt-r4-preview.css
   - assets/stylesheets/thpt-g12-golden-formative-modal-v1.css
   - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
@@ -343,6 +348,7 @@ extra_javascript:
   - assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js
   - assets/javascripts/thpt-golden-runtime-v1.js
   - assets/javascripts/thpt-r4-preview.js
+  - assets/javascripts/thpt-topic01-release-tabs-v1.js
   - assets/javascripts/math-lab-library-v1.js
   - assets/javascripts/thpt-g12-golden-formative-modal-v1.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
