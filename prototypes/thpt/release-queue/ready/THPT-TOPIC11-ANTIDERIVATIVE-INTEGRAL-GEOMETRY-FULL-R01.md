@@ -1,3 +1,8 @@
+<!-- TOP11_MASTER974_CURRENT_ONE_READY_20261121 -->
+**CURRENT AUTHORING CONTENT_READY CĐ11 on same one R06 source; not RELEASE:** learner `prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md` Git blob **`9c27c384af7fad186047aed555ef1a9877c6a30a`**, source commit `521e7eba349ea59160dcdc4ef22d4dbd4037f62a`; current existing Q18 affected-scope author-self proof `a6c64c4d9280fbde9752598190206ff1a8e82fca`, A1 author metadata `cfdcd049c6b1ae66d61f87f10fd4b40da3c7c1f2`, same one V2 handoff `37e3ef8476c042751b4c326e2fa28ed384af3d11`. Source retains **116 original unique Practice items (88 G12 SGK +28 Topic)** with 28 Written rubrics, 22 original PUBLIC_REPLAY_ONLY question-only Selfcheck stems, 4 original SVG assets/refs. #977-036/037/038 FIXED_VERIFIED: all **22/22** FirstTry optional Kiểm lỗi have outcome-specific actual original Practice Bài retry; a single voluntary final `Đối chiếu` navigates exact 22 public selfcheck item IDs to original Practice answer locations; three SGK mentions removed from lessons, only one end of whole Topic proper reference; obsolete hidden metadata updated NOT_FOR_STUDENT_VIEW. Original bank maths, stems, keys/solutions and rubric text preserved byte-exact. **139/139** balanced opt-in disclosures, no new Topic Core, no official held-out Topic Readiness/RD1/Final Submit/Mastery. One standard v3.2.0 Q01–Q18 with scoped inherited original SGK review, current author SELF_VERIFIED PED evidence (not independent NotebookLM Topic PASS). No website AP/R, merge/deploy or Firebase changes.
+
+---
+
 # CĐ11 — Nguyên hàm, Tích phân và Ứng dụng hình học · AUTHORING CONTENT_READY R06 (stable PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01
@@ -9,21 +14,21 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
 CONTENT_REVISION: R06_FULL_S1_KNOWLEDGE_20261120
-AUTHOR_METADATA_BLOB: 0e78f0a4b19f4af4c2142b2efb1beb4dbe2b003c
+AUTHOR_METADATA_BLOB: cfdcd049c6b1ae66d61f87f10fd4b40da3c7c1f2
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O08_O15_O20_O22
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: 9d66086263ce4b5be4dab3f3692261d355bab2e1
+SOURCE_COMMIT: 521e7eba349ea59160dcdc4ef22d4dbd4037f62a
 AUTHOR_PR: 887
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/887 — DRAFT AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD11
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: c46d07f8f7d260a71e84bf8c44677da895cb66cc
-REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md (Q18 AUTHOR_SELF_VERIFIED v3.1.0, exact-source Delta C author math/PED QA; not independent NotebookLM)
+ACADEMIC_SOURCE_BLOB: 9c27c384af7fad186047aed555ef1a9877c6a30a
+REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md (Q18 AUTHOR_SELF_VERIFIED v3.2.0, exact-source Delta C author math/PED QA; not independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-REVIEW_RECEIPT_BLOB: c9e56423f647e53a2c2ef1171a45d702e31d73ae
+REVIEW_RECEIPT_BLOB: a6c64c4d9280fbde9752598190206ff1a8e82fca
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: a7420b634a9639cdf2cebf995d5f13500b563ac0
+AUTHOR_HANDOFF_BLOB: 37e3ef8476c042751b4c326e2fa28ed384af3d11
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_ORIGINAL88_INDEX_BLOB: 672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c
 PUBLIC_NEW28_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
