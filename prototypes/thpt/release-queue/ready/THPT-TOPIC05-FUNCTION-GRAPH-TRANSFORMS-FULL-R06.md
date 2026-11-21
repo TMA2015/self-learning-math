@@ -1,3 +1,8 @@
+<!-- TOP05_MASTER974_READY_ON_ONE_AUTHORING_SOURCE_20261121 -->
+**CURRENT AUTHORING source-only Q18 v3.2.0 (not RELEASE):** same one R06 canonical learner `909f873c57e543b8f6d3c383d0b88df6900e334a` (source commit `6a1d1d158f9c0a4aa5d93b09650e62ffda1078b1`), original bank `ab878f1a18dea87872449a79c27b75a612d81b39` unchanged; existing composite author Q18 receipt `9c8c62a406e24af99efbdbe0bc081f1998c1f2ba`, existing A1–A7 source custody `701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a`, one V2 handoff `be57f89611335a5e7547e77ebb0ad15e3eef1312`. Source deep 38-item/17-outcome original author math/PED audit inherited for unchanged content. New targeted Q08/PED6 Delta C self-verified: O01 explains error→retries at Kiến thức 1.1 Bài1/2, and 17 public question-only Selfchecks now have one voluntary answer-navigation disclosure mapped by the same original item_id. 38 original Practice math/rubric byte-identical, 3 SVG untouched, 56/56 balanced disclosures, exactly one SGK footer. No new independent NotebookLM reviewer verdict, official TOPIC_READINESS, RD1 or Mastery. No merge/deploy.
+
+---
+
 <!-- TOP05_Q01_B16_READY_DELTA_C_20261120 -->
 **20/11 source-complete SGK B16 mini audit:** learner `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd`, author Q18 `a9a4e5261dc9444018d316a393a5d4ac6c868d00`, A1 `e63fd2c3ea1be9736a6fdfc565e99554b38e545d`, V2 `b45d1fd2b3d26e9d9caa4aec0fe0744d7ed72fc3`; newly explained full quadratic definition/table/parabola/variation in TOP05-O06 only; all existing canonical and outcomes preserved. STATE CONTENT_READY remains authoring, not a website release; full 22-topic source audit pending.
 
@@ -6,31 +11,31 @@
 
 PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 1a6cdd2d9f2effd43b0571c4c462db404dc5fd67
+SOURCE_COMMIT: 6a1d1d158f9c0a4aa5d93b09650e62ffda1078b1
 CURRENT_PR: #889 Draft AUTHORING R06 — no RELEASE authority
 AUTHOR_PR: 889
 CATALOG_TOPIC_ID: CD05
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1
+ACADEMIC_SOURCE_BLOB: 909f873c57e543b8f6d3c383d0b88df6900e334a
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: f20c9cfae613b6dfb65fe1a7b754e05f54cf84ce
+REVIEW_RECEIPT_BLOB: 9c8c62a406e24af99efbdbe0bc081f1998c1f2ba
 REVIEW_RECEIPT: current-source signed AUTHOR_SELF_VERIFIED Q18 composite; no independent NotebookLM PASS
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_A1_A7_BLOB: 28ddbef7523a8e62daa98234a20a33ae1a3a7f80
+AUTHOR_A1_A7_BLOB: 701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: 28ddbef7523a8e62daa98234a20a33ae1a3a7f80
+AUTHOR_METADATA_BLOB: 701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: a412516f605f2012c431ef89afc0e2f493a9eeb4
+AUTHOR_HANDOFF_BLOB: be57f89611335a5e7547e77ebb0ad15e3eef1312
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 BLOCKERS: NONE
