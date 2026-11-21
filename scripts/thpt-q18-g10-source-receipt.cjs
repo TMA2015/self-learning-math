@@ -1363,6 +1363,23 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
   const next=field("CANDIDATE_SOURCE_BLOB");
   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==blobs[1],
     "B27 new source must have a real SHA successor");
+  // Owner P2 source-only semantic correction. R01 history stays immutable.
+  const r02file="prototypes/thpt/ux795/G10_CHIX_B27_KNOWLEDGE_FORMULA_TREE_OWNER_P2_Q18_R02_20261121.md";
+  let final=next;
+  if(fs.existsSync(path.join(root,r02file))){
+   const r02=fs.readFileSync(path.join(root,r02file),"utf8");
+   const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f02("R02_PREVIOUS_SOURCE_BLOB"),next,
+    "B27 formula/tree P2 delta must descend from EXACT published R01 source");
+   final=f02("R02_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(final||"")&&final!==next,
+    "B27 P2 source replacement must name a distinct real Git blob");
+   for(const token of ["G10-CHIX-B27-KNOWLEDGE-FORMULA-TREE-R02-20261121",
+    "DELTA_C_ACADEMIC_MATERIAL","DELTA_A_UI","OWNER_P2_DEFECT_RECEIVED",
+    "OWNER_P2_RECHECK_PENDING","Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
+    "B27-G0-KNOWLEDGE-FORMULA-FIGURE-20261121"])
+    assert(r02.includes(token),"B27 P2 Q18 receipt missing "+token);
+  }
   for(const marker of ["G10-CHIX-B27-S1-GOLDEN-ENRICHMENT-Q18-R01-20261121",
    "SLM-THPT-QUALITY-ONE","Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
    "DELTA_C_ACADEMIC_MATERIAL","INDEPENDENT_NOTEBOOKLM_REVIEW_NOT_CLAIMED",
@@ -1373,7 +1390,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    "docs/thpt-preview/sgk/chuong-ix/bai-27.md"));
   const blob=require("node:crypto").createHash("sha1")
    .update("blob "+lesson.length+"\0").update(lesson).digest("hex");
-  assert.equal(blob,next,"B27 Q18 candidate Git SHA mismatch");
+  assert.equal(blob,final,"B27 current Git SHA must match signed R01 → R02 exact chain");
   const t=lesson.toString("utf8");
   assert.deepEqual([...t.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
    ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
@@ -1413,7 +1430,38 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
   assert(t.includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg")&&
    t.includes("Cây")&&t.includes("8\\,145\\,060")&&
    t.includes("234"),"B27 SGK tree/lottery application lost");
-  return next;
+  if(final!==next){
+   // B27 P2: visual/semantic requirements must hold in the exact SGK tab.
+   const discovery=t.split('=== "Khám phá kiến thức"')[1]?.split('=== "Kiến thức SGK"')[0];
+   const k1=knowledge.split('### 2.1. Sử dụng phương pháp tổ hợp')[1]?.split('### 2.2. Sử dụng sơ đồ hình cây')[0];
+   const k2=knowledge.split('### 2.2. Sử dụng sơ đồ hình cây')[1]?.split('### 2.3. Xác suất của biến cố đối')[0];
+   assert(discovery&&k1&&k2,"B27 exact SGK section placements missing");
+   assert.equal((k1.match(/<div class="thpt-g10-key-formula"/g)||[]).length,1,
+    "B27 Knowledge §2.1 must contain exactly one visible neutral KEY_FORMULA");
+   for(const token of ["data-b27-key-formula=\"combinations\"","P(A)=\\dfrac{n(A)}{\\binom nk}",
+    "0\\le k\\le n","n(\\Omega)>0","các nhóm"]){
+    assert(k1.includes(token),"B27 formula application missing item/condition "+token);
+   }
+   assert.equal((k2.match(/<figure/g)||[]).length,1,
+    "B27 Knowledge §2.2 needs the one existing source SVG figure");
+   assert(k2.includes('data-b27-knowledge-figure="reused-discovery-tree"')&&
+    k2.includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg")&&
+    discovery.includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"),
+    "B27 must reuse the same actual tree SVG in both Discovery and SGK tabs");
+   assert(k2.indexOf("<figure")<k2.indexOf("**Tại sao phải đọc hình như vậy?**"),
+    "B27 knowledge tree must appear BEFORE its reading explanation");
+   assert.equal((t.match(/THPT_G10_B27_WITHOUT_REPLACEMENT_TREE\.svg/g)||[]).length,2,
+    "B27 original tree must be placed twice, never cloned or renamed");
+   assert.equal((knowledge.match(/<div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
+    "B27 still has exactly one official SGK formal probability-complement rule");
+   assert.equal((knowledge.match(/thpt-r4-concept-card/g)||[]).length,0,
+    "B27 practice lesson must not invent a formal definition");
+   assert(t.includes("background:transparent;color:inherit")&&
+    t.includes('data-md-color-scheme="slate"')&&
+    t.includes('.thpt-g10-key-formula'),
+    "B27 neutral key formula must be scoped and legible in light/slate");
+  }
+  return final;
  }
  if(name==="B26"){
   // Owner-authorized B26 SGK enrichment; require a source-locked Q18 delta
