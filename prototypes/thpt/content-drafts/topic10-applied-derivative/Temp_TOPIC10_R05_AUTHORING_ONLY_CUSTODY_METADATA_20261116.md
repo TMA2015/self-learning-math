@@ -1,0 +1,176 @@
+# CĐ10 R05 — AUTHORING-ONLY S1 and academic custody
+
+R03_IMMUTABLE_BLOB: 51cebfe1cb71c5db85c42d40e6167ea4497fa1d9
+CURRENT_STUDENT_R05_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R05_STUDENT_FIRST_120_CANONICAL_VISIBLE_20261116.md
+CURRENT_STUDENT_R05_BLOB: 68d3ccd180162c0b850c7e419a5098982d3785a0
+CURRENT_Q18_R05_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
+CURRENT_Q18_R05_RECEIPT_BLOB: cdf1356b3bedc5c3a246464f34600ed7ec99579a
+CURRENT_NEW42_CANONICAL_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
+STATUS: R05_Q18_AUTHOR_SELF_VERIFIED_PENDING_V2_GATE
+
+## S1 primary provenance and exact boundaries
+
+- **Toán 12 KNTT SGK Tập Một Chương I:** B01 Tính đơn điệu và cực trị p5–14 (PDF1 7–16), B02 Giá trị lớn nhất và nhỏ nhất p15–19 (17–21), B03 Đường tiệm cận p20–25 (22–27), B04 Khảo sát sự biến thiên và vẽ đồ thị p26–32 (28–34), B05 Ứng dụng đạo hàm giải quyết bài toán thực tiễn p33–41 (35–43), cuối ChI p42–44 (44–46). SGK scanned publisher original SHA256 `faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd`. Exact source-locked independent SGK review covers B01–B05 and end.
+- **SBT Toán12 KNTT Tập Một:** B01 p4–9 (PDF1 2–7), B02 p10–16 (8–14), B03 p17–20 (15–18), B04 p21–26 (19–24), B05 p27–32 (25–30), end p33–37 (31–35), SBT publisher original SHA256 `db9d07a2fbe55cda3b4b50fb13d1767e45a7552f668b726241c59febac69c0ca`. **These page matches were verified by historical owner primary source scan receipt**, not claimed newly rescanned during this CĐ10 author turn.
+- **Exact immutable SGK canonical source:** `prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md`, blob `f0862dcdab21dec136e43969f45c42638e7c7574`. Historical independent NotebookLM v2.1 SGK Academic/PED PASS (36 outcomes,78 public items,24 worked examples,6 SVG,36 D6) composite receipt `prototypes/thpt/review-packets/G12_SGK_CHI_B01_B05_R00_INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_PASS_SOURCE_RECEIPT_20261102.md`, blob `8fef1c7dbd9b404881ff40cec8147c9ae89ef473`. Original SGK **PASS is only original immutable SGK scope**, not Topic author PASS.
+- **Division of concepts:** CĐ09 explains derivative at point and computation rules; here CĐ10 fully restates needed derivative sign meanings and requirements. B01–B05 covers monotonicity, extreme values, asymptotes, graph survey and optimization; do not insert non-S1 new SGK Core. Data applications are explicitly *assumed mathematical models*, not measured facts.
+
+
+## Phụ lục AUTHORING — metadata không xuất cho học sinh
+
+PACKET_ID: THPT-TOPIC10-APPLIED-DERIVATIVE-SURVEY-OPTIMIZATION-FULL-R01
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.1.0
+LEARNING_PATH: TOPIC
+LESSON_IDS: TOP10-M01..TOP10-M36
+OUTCOME_IDS: TOP10-O01..TOP10-O36
+ORIGINAL_SGK_PUBLIC_CANONICAL: 78
+ORIGINAL_SGK_OUTCOMES: 36
+TOPIC_NEW_PRACTICE: 36
+TOPIC_NEW_WRITTEN: 6
+TOPIC_NEW_PUBLIC_CANONICAL: 42
+TOTAL_PUBLIC_UNIQUE_CANONICAL: 120
+PUBLIC_SELF_CHECK_REUSE_PLACEMENTS: 36
+PRIVATE_RD1_IMPORTED: 0
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+OFFICIAL_READINESS: NOT_CLAIMED
+MASTERY_ACTIVATION: NO
+RELEASE_AUTHORIZATION: NO
+RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
+ORIGINAL78_INDEX_BLOB: ffaba90bddc47a1d86dd905535e37c07d22173d9
+NEW42_BANK_BLOB: f8a8491f60168e07ccd77b5eea59d2f67198b05a
+
+### Original 78 SGK public item_id — reference only
+- THPT-G12-CHI-B01-C01
+- THPT-G12-CHI-B01-C02
+- THPT-G12-CHI-B01-C03
+- THPT-G12-CHI-B01-C04
+- THPT-G12-CHI-B01-P01
+- THPT-G12-CHI-B01-P02
+- THPT-G12-CHI-B01-P03
+- THPT-G12-CHI-B01-P04
+- THPT-G12-CHI-B01-A01
+- THPT-G12-CHI-B01-W01
+- THPT-G12-CHI-B01-W02
+- THPT-G12-CHI-B02-C01
+- THPT-G12-CHI-B02-C02
+- THPT-G12-CHI-B02-C03
+- THPT-G12-CHI-B02-C04
+- THPT-G12-CHI-B02-P01
+- THPT-G12-CHI-B02-P02
+- THPT-G12-CHI-B02-P03
+- THPT-G12-CHI-B02-P04
+- THPT-G12-CHI-B02-P05
+- THPT-G12-CHI-B02-A01
+- THPT-G12-CHI-B02-W01
+- THPT-G12-CHI-B02-W02
+- THPT-G12-CHI-B03-C01
+- THPT-G12-CHI-B03-C02
+- THPT-G12-CHI-B03-C03
+- THPT-G12-CHI-B03-C04
+- THPT-G12-CHI-B03-P01
+- THPT-G12-CHI-B03-P02
+- THPT-G12-CHI-B03-P03
+- THPT-G12-CHI-B03-P04
+- THPT-G12-CHI-B03-P05
+- THPT-G12-CHI-B03-P06
+- THPT-G12-CHI-B03-P07
+- THPT-G12-CHI-B03-A01
+- THPT-G12-CHI-B03-W01
+- THPT-G12-CHI-B03-W02
+- THPT-G12-CHI-B04-C01
+- THPT-G12-CHI-B04-C02
+- THPT-G12-CHI-B04-C03
+- THPT-G12-CHI-B04-C04
+- THPT-G12-CHI-B04-P01
+- THPT-G12-CHI-B04-P02
+- THPT-G12-CHI-B04-P03
+- THPT-G12-CHI-B04-P04
+- THPT-G12-CHI-B04-P05
+- THPT-G12-CHI-B04-P06
+- THPT-G12-CHI-B04-A01
+- THPT-G12-CHI-B04-A02
+- THPT-G12-CHI-B04-W01
+- THPT-G12-CHI-B04-W02
+- THPT-G12-CHI-B05-C01
+- THPT-G12-CHI-B05-C02
+- THPT-G12-CHI-B05-C03
+- THPT-G12-CHI-B05-C04
+- THPT-G12-CHI-B05-P01
+- THPT-G12-CHI-B05-P02
+- THPT-G12-CHI-B05-P03
+- THPT-G12-CHI-B05-P04
+- THPT-G12-CHI-B05-P05
+- THPT-G12-CHI-B05-P06
+- THPT-G12-CHI-B05-A01
+- THPT-G12-CHI-B05-A02
+- THPT-G12-CHI-B05-A03
+- THPT-G12-CHI-B05-W01
+- THPT-G12-CHI-B05-W02
+- THPT-G12-CHI-END-C01
+- THPT-G12-CHI-END-C02
+- THPT-G12-CHI-END-C03
+- THPT-G12-CHI-END-C04
+- THPT-G12-CHI-END-P01
+- THPT-G12-CHI-END-P02
+- THPT-G12-CHI-END-P03
+- THPT-G12-CHI-END-P04
+- THPT-G12-CHI-END-A01
+- THPT-G12-CHI-END-A02
+- THPT-G12-CHI-END-W01
+- THPT-G12-CHI-END-W02
+
+### NEW42 Topic public canonical item_id
+- THPT-TOP10-P01
+- THPT-TOP10-P02
+- THPT-TOP10-P03
+- THPT-TOP10-P04
+- THPT-TOP10-P05
+- THPT-TOP10-P06
+- THPT-TOP10-P07
+- THPT-TOP10-P08
+- THPT-TOP10-P09
+- THPT-TOP10-P10
+- THPT-TOP10-P11
+- THPT-TOP10-P12
+- THPT-TOP10-P13
+- THPT-TOP10-P14
+- THPT-TOP10-P15
+- THPT-TOP10-P16
+- THPT-TOP10-P17
+- THPT-TOP10-P18
+- THPT-TOP10-P19
+- THPT-TOP10-P20
+- THPT-TOP10-P21
+- THPT-TOP10-P22
+- THPT-TOP10-P23
+- THPT-TOP10-P24
+- THPT-TOP10-P25
+- THPT-TOP10-P26
+- THPT-TOP10-P27
+- THPT-TOP10-P28
+- THPT-TOP10-P29
+- THPT-TOP10-P30
+- THPT-TOP10-P31
+- THPT-TOP10-P32
+- THPT-TOP10-P33
+- THPT-TOP10-P34
+- THPT-TOP10-P35
+- THPT-TOP10-P36
+- THPT-TOP10-W01
+- THPT-TOP10-W02
+- THPT-TOP10-W03
+- THPT-TOP10-W04
+- THPT-TOP10-W05
+- THPT-TOP10-W06
+
+END_AUTHOR_SOURCE: SOURCE_LOCKED_R01
+
+<!-- R02 repaired bank is candidate and not active canonical until Q18/owner UAT; old R01 original lock remains immutable. -->
+
+
+## R05 SOURCE LOCK AND NO DUPLICATE (16/11/2026)
+- R05 learner exact Git blob `68d3ccd180162c0b850c7e419a5098982d3785a0` có 36 outcome, 36 Ví dụ độc lập, 36 Vận dụng sát bài, 120 real Practice stems/solutions 78 SGK+42 Topic, 18 Written rubrics, 120 D6, 36 public replay selfcheck chỉ câu hỏi, 4 SVG gốc.
+- Signed source-locked Q18 R05 `cdf1356b3bedc5c3a246464f34600ed7ec99579a` mode `AUTHOR_SELF_VERIFIED` v3.1.0; 305 direct source/PED/canonical tests và 40 toán/hình PASS. Không NotebookLM independent R05 PASS, không browser RELEASE QA.
+- NEW42 canonical current remains unchanged R04 `5f6ab764df6541ada9b4d4475403d29984d8e7da`; original78 SGK `f0862dcdab21dec136e43969f45c42638e7c7574` and placement index `ffaba90bddc47a1d86dd905535e37c07d22173d9` immutable. 120 projections chỉ là placement, không nhân item_id.
+- Historical R04 learner SHA `4a17269c608b4916ba085c13aae898fd9c4733ce`, Q18 `e54f0f502446e5ac1ecff35e58acbf7679f28dc3`, V2 `bd2a153fcdbf3a583a0fd2cc5cb057f64a765805` retained immutable. No change to 31 protected RD1 SGK, no Gemini/Firebase/Golden, no merge or deploy.
