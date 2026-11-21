@@ -10,15 +10,40 @@ const {chromium}=require("playwright"),assert=require("node:assert/strict");
     for(const n of [1,2]){
      let resp=await page.goto(base+"bai-"+n+"/",{waitUntil:"networkidle"});
      assert(resp?.ok(),"G11 SGK lesson "+n+" unavailable");
-     assert.equal(await page.locator("[data-thpt-help-id]").count(),2);
-     const image=page.locator(".thpt-r4-probability-figure img");
-     assert.equal(await image.count(),1);
-     // The reviewed SVG loads lazily; AP knowledge grouping can move it below the fold.
-     // Explicitly simulate learner scrolling rather than treating offscreen loading as missing content.
-     await image.scrollIntoViewIfNeeded();
-     await page.waitForFunction(()=>[...document.querySelectorAll(".thpt-r4-probability-figure img")].every(x=>x.complete&&x.naturalWidth>0));
-     const dims=await image.evaluate(el=>({child:el.getBoundingClientRect().width,parent:el.parentElement.getBoundingClientRect().width}));
-     assert(dims.child<=dims.parent+2,"SVG oversized on viewport "+viewport.width);
+     // B01 is owner-accepted four-tab Golden (#982): six local plus two
+     // general canonical HELP and the one reviewed unit-circle SVG used
+     // once in Discovery and once in Knowledge. B02 remains historical.
+     const isGolden=n===1;
+     if(isGolden){
+       const fs=require("node:fs"),crypto=require("node:crypto");
+       const src=fs.readFileSync("docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md");
+       const sha=crypto.createHash("sha1").update("blob "+src.length+"\\0").update(src).digest("hex");
+       assert.equal(sha,"0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+         "G11 B01 must retain exact owner-accepted Q18 Golden Knowledge");
+     }
+     assert.equal(await page.locator("[data-thpt-help-id]").count(),isGolden?8:2,
+       "G11 canonical D6 resources must not be lost or duplicated");
+     const images=page.locator(".thpt-r4-probability-figure img");
+     assert.equal(await images.count(),isGolden?2:1,
+       "G11 B01 two figure placements / B02 one original figure");
+     for(let i=0;i<await images.count();i++){
+       if(isGolden){
+         const tab=page.locator("article .tabbed-set").first().locator(".tabbed-labels label").nth(i);
+         await tab.click(); // Discovery then Knowledge; do not scroll a hidden figure
+       }
+       const image=images.nth(i);
+       await image.scrollIntoViewIfNeeded();
+       await page.waitForFunction(index=>{
+         const x=document.querySelectorAll(".thpt-r4-probability-figure img")[index];
+         return !!x&&x.complete&&x.naturalWidth>0;
+       },i,{timeout:20000});
+       const dims=await image.evaluate(el=>({
+         child:el.getBoundingClientRect().width,
+         parent:el.parentElement.getBoundingClientRect().width
+       }));
+       assert(dims.child<=dims.parent+2,
+         "G11 reviewed SVG placement overflow at "+viewport.width);
+     }
      resp=await page.goto(base+"luyen-tap/?item=THPT-G11-B0"+n+"-C01",{waitUntil:"networkidle"});
      assert(resp?.ok(),"G11 practice route unavailable");
      const dlg=page.locator("dialog.thpt-r4-practice-dialog");
