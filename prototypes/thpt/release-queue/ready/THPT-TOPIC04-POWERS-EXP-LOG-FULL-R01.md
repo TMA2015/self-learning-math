@@ -1,29 +1,34 @@
+<!-- TOP04_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
+**CURRENT AUTHORING CĐ04 CONTENT_READY Q18 v3.2.0 (NOT RELEASE):** one learner source `4e8238e188204eefc060f18c88ef7a0a3c51a60e` (commit `d2e755b6b511adfbe62c59b3431fdd91d2f38e9e`), original canonical Topic bank 26 records `377de2e2e9fb6771f02270e8d85e950559669895`, author self-Q18 `eba1e820c2544b54e3ff09b0c37ed780e18c3dd5`, metadata `e305b9a8eec21ca972af8c607292d4f7b1b467e5`, one V2 `1d48e0f65a7e7c031594bb828dd2a72a360f8e39`. P21 source bank + learner answer now explicitly deterministic 256 not statistical expectation; O17 different student first-try (640 × 0.75²=360); 11 missing D6 routes upgraded to 18/18, 18 public selfchecks opt-in map to genuine Practice, no hidden scoring. Preserved 49 SGK originals, all 75 unique Practice IDs and 12 Written rubrics, 5 SVG and one SGK source footer. Snapshot old content-ready immutable; current change math/PED `DELTA_C_ACADEMIC_MATERIAL` on affected scope Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS or owner release. `P0/P1=0` for defects #977 013–016 after self-proof and QA. No merge/deploy or website student data change.
+
+---
+
 # CĐ04 — Lũy thừa, mũ và lôgarit · AUTHORING revised R06 (stable packet R01)
 
 PACKET_ID: THPT-TOPIC04-POWERS-EXP-LOG-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 08552fab67594fe0672d54f10eb7189a5ebe108a
+SOURCE_COMMIT: d2e755b6b511adfbe62c59b3431fdd91d2f38e9e
 AUTHOR_PR: 822
 CURRENT_PR: #890 Draft AUTHORING from previous #822, not merged/deployed
 CATALOG_TOPIC_ID: CD04
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic04-powers-exp-log/Temp_TOPIC04_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: a101ca5e0130ff51fab1a1c867e1b23d642d98b8
+ACADEMIC_SOURCE_BLOB: 4e8238e188204eefc060f18c88ef7a0a3c51a60e
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md (scoped AUTHOR_SELF_VERIFIED, no new independent Topic NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC04_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 87f6cfb2aee17596409123c0bf632b3bfefae42a
+REVIEW_RECEIPT_BLOB: eba1e820c2544b54e3ff09b0c37ed780e18c3dd5
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC04-POWERS-EXP-LOG-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: d3d633527edc6f19c66df29ea83228c67e109009
+AUTHOR_HANDOFF_BLOB: 1d48e0f65a7e7c031594bb828dd2a72a360f8e39
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_ORIGINAL49_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 7d257edda0a2d29ba063987a51c61980558dbab6
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC04_POWERS_LOG_NEW26_PUBLIC_CANONICAL_R01_20261112.md
-PUBLIC_EXTENSION_BLOB: 004692a2d996b5ba955318a087f4d58dcdb2df04
+PUBLIC_EXTENSION_BLOB: 377de2e2e9fb6771f02270e8d85e950559669895
 ORIGINAL_G11_CHVI_CANONICAL_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872
 ORIGINAL_HISTORIC_REVIEW_BLOB: 1badeeaf12462da1b0e2778213ce8a8dbf92e14b
 OWNER_PRIMARY_S1_RECEIPT_BLOB: c63ca380fe0416b4ed4214f5192197c7e95d20a6
@@ -48,7 +53,7 @@ CURRENT_LEARNER_REVISION: R05
 PREVIOUS_R04_SOURCE_BLOB: 1f51b01357f87359b689131fd6afcc1ad998209d
 PREVIOUS_R04_Q18_RECEIPT_BLOB: ed93d742a34245953f03712c75c66a50c1b29f30
 TOPIC_EDITORIAL_CHECKLIST: 13 owner-approved requirements, Issue #864
-TOPIC_DEFECT_LEDGER: Issue #865 (reuse; no second academic standard)
+TOPIC_DEFECT_LEDGER: Issue #977 (current), Issue #865 historical only
 REAL_PRACTICE_DISPLAY: 75 immutable canonical stems+solutions, 12 original Written rubrics
 SELF_CHECK_PUBLIC_REPLAY: 18 full question stems, no official Readiness/Mastery
 
