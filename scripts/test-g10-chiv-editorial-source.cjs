@@ -664,31 +664,27 @@ for(const [lesson,row] of rows){
    "B11 force transfer First Try must not remain in error tab");
   assert.equal((last.match(/^    ### 4\.[1-3]\./gm)||[]).length,0,
    "B11 Golden Tab4 must have zero redundant heading cards like owner-P2 B10");
-  assert.deepEqual([...last.matchAll(/^    \?\?\? tip "(4\.[1-3]\. [^"]+)"$/gm)]
-   .map(x=>x[1].slice(0,3)),["4.1","4.2","4.3"],
-   "B11 Tab4 must have 3 numbered accordion summaries, with no separate h3 cards");
-  assert.equal((last.match(/\*\*Tự nhận diện:\*\*/g)||[]).length,3,
-   "B11 original mistake-identification questions must remain inside accordions");
-  // Reverse *only* the three UI placements. The resulting source must equal
-  // the exact independently reviewed R01 Git blob: no mathematical delta.
-  let count=0;
-  const reconstructed=source.replace(/^    (<span[^\n]*data-thpt-help-id="[^"]+"[^\n]*><\/span>)\n\n    \?\?\? tip "(4\.[1-3])\. ([^"]+)"\n\n        \*\*Tự nhận diện:\*\* ([^\n]+)\n\n/gm,
-   (_all,span,n,h,q)=>{count++;return "    ### "+n+". "+h+"\n\n    "+span+"\n\n    ??? tip "+String.fromCharCode(34)+q+String.fromCharCode(34)+"\n\n";});
-  assert.equal(count,3,"B11 R02 must move exactly three original headings and summary questions");
-  const ui=fs.readFileSync(path.join(root,
-   "prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md"),"utf8");
-  const uf=k=>ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(uf("R02_B11_SOURCE_BLOB"),"60a3d043694986e3250f15b51350380b86f70cfc",
-    "B11 original R02 signed Knowledge source remains immutable");
-   // The new Delta A only changes Examples. Guard every byte of Tab4 against
-   // the owner-approved R02 snapshot rather than comparing whole old lesson.
-   let h4=0xcbf29ce484222325n;
-   for(const ch of source.split('=== "Lỗi thường gặp"')[1])
-    h4=(h4^BigInt(ch.charCodeAt(0)))*0x100000001b3n&0xffffffffffffffffn;
-   assert.equal(h4.toString(16).padStart(16,"0"),"c41feeaf19e96098",
-    "B11 original Tab4 error examples and HELP unchanged from approved R02");
-  assert.equal((last.match(/^    \?\?\? tip "/gm)||[]).length,3,
-   "B11 must keep exactly three independent HELP disclosures");
+  // Owner-signed 20/11 Q18 moved three item-specific D6 disclosures
+  // under their Vận dụng in Discovery; Tab4 must never clone them.
+  // The historical and current manuscript/source SHA chain is checked above.
+  const discovery=source.split('=== "Khám phá kiến thức"')[1]
+   .split('=== "Kiến thức SGK"')[0];
+  assert.equal((discovery.match(/^    \\?\\?\\? tip "Kiểm lỗi"$/gm)||[]).length,3,
+   "B11 3 signed local Kiểm lỗi disclosures remain in Discovery");
+  assert.equal((last.match(/data-thpt-help-id=/g)||[]).length,0,
+   "B11 Tab4 must not duplicate HELP moved to Vận dụng");
+  assert.equal((source.match(/data-thpt-help-id=/g)||[]).length,3,
+   "B11 3 original canonical HELP IDs unchanged");
+  for(const [tryId,helpId] of [
+   ["THPT-G10-CHIV-TRY21","HELP-G10-B11-02"],
+   ["THPT-G10-CHIV-TRY23","HELP-G10-B11-01"],
+   ["THPT-G10-CHIV-TRY-FORCE-TR01","HELP-G10-CHIV-FORCE-TR01"]
+  ]){
+   const atTry=discovery.indexOf('data-thpt-first-try-id="'+tryId+'"');
+   const atHelp=discovery.indexOf('data-thpt-help-id="'+helpId+'"');
+   assert(atTry>=0&&atHelp>atTry,
+    "B11 Kiểm lỗi must follow related Vận dụng with original IDs "+tryId+"/"+helpId);
+  }
   assert(!source.includes(String.fromCharCode(96))&&
    !source.includes("Assessment safety")&&
    !source.includes("Ví dụ có hướng dẫn — EX-"),
