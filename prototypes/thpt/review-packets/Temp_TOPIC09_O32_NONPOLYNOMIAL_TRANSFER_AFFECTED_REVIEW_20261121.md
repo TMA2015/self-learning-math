@@ -54,7 +54,7 @@ Nếu cho dy dương, kiểm dấu f'(2)<0. Nếu cho dy=Δy đúng tuyệt đ�
 - Với dx=0,2=1/5, dy=−1/20=−0,05. a+dx=11/5 nên Δy=5/11−1/2=−1/22≈−0,04545.
 - Δy−dy=(−1/22)−(−1/20)=1/220>0, nên |Δy−dy|=1/220≈0,004545. Khi dx nhỏ, dy là xấp xỉ bậc nhất; với dx hữu hạn, không tự nhận bằng Δy.
 - Giữ câu hỏi trước lời giải: một khối `<details class="slm-topic-first-try">` opt-in duy nhất, không đưa đáp án vào đề. D6 chữa riêng dấu âm, sai số và miền.
-- Đối chiếu raw source trước/sau: ngoài comment header ứng viên, **chỉ đúng một đoạn Vận dụng+Đối chiếu TOP09-O32** thay đổi; mọi byte trước đoạn ấy và sau đoạn ấy khớp. **108/108 canonical Practice**, 32 replay-only selfchecks, 31 Kiến thức outcomes còn lại, 140/140 balanced details, 14 original Written rubrics, 4 visuals giữ nguyên. Mọi nội dung đang `CONTENT_READY` có Git blob khóa cũ; chưa promote candidate.
+- Đối chiếu raw source trước/sau: ngoài comment header ứng viên, **chỉ đúng một đoạn Vận dụng+Đối chiếu TOP09-O32** thay đổi; mọi byte trước đoạn ấy và sau đoạn ấy khớp. **108/108 canonical Practice**, 32 replay-only selfchecks, 31 Kiến thức outcomes còn lại, 140/140 balanced details, 14 Written rubrics (9 SGK + 5 Topic), 4 visuals giữ nguyên. Mọi nội dung đang `CONTENT_READY` có Git blob khóa cũ; chưa promote candidate.
 - Tác giả đã đối chiếu **108/108** item IDs với original 71 G11 ChIX + 37 Topic bank và **159/159** trường đáp án/lời giải/rubric exact original nguồn, không phát hiện P0/P1 mới trong phần không sửa. Đây là QA AUTHORING, không thay independent NotebookLM review.
 
 ## E. Prompt NotebookLM — bốn câu, phản biện chỉ toán và PED
