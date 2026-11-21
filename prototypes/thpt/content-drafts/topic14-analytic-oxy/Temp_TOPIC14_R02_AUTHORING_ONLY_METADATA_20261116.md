@@ -1,3 +1,8 @@
+<!-- TOP14_MASTER974_CURRENT_AUTHOR_CUSTODY_20261121 -->
+**Current exact CĐ14 AUTHORING source:** single R02 learner `prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md` Git blob `ff3d838680899b3c0a54ddd5774bebdf2f7d7d19`, Q18 same existing receipt `f2b0f32b7b9be7d0d4329f9f4359979b0622e3b9` v3.2.0 AUTHOR_SELF_VERIFIED. New #977-045–047 verified learner improvements: 23/23 true math-matched Kiểm lỗi→correct Knowledge→two numbered genuine Practice retries; 23/23 public selfcheck same `item_id` answer-location map to original practice; 87 original unique G10+Topic Practice displayed in sequence **Bài luyện 1–87**, original complete mathematical source body `Đề`/answer/solution/9 Written rubrics byte exact and original 23 selfcheck stems unchanged; one explicit SGK source footer; original 3 SVG assets untouched; 111/111 opt-in disclosures balanced. Only `DELTA_C_PED_TARGETED` plus `DELTA_A_EDITORIAL` on current student source; old source SHA `3949c0a989da436c34967bbc3357cfd08ed14e1a` historical. **Two original G10 canonical answer note fields** still contain `SGK` (item `THPT-G10-B22-P03` and Written `THPT-G10-CHVII-W22-01`, “Depth note”) so strict literal one-source-mention and total elimination of staff note are **P2 original-source-owner FOLLOWUP**, not silently "PASS". Leave original source bank untouched without owner/editor coordination under Q15, no separate second version. No new NotebookLM independent Topic PASS, independent Readiness/RD1, browser AP/R or website release. This source-specific author handoff remains ready for learner math/PED scoped QA; owner-only G10 text editorial follow-up not converted into an academic/metadata blocker.
+
+---
+
 <!-- TOP14_G10_B19_S1_COVERAGE_DELTA_C_20261120 -->
 ## Q01 S1 mandatory concept coverage: TOP14-O07 (20/11/2026)
 - S1 G10 KNTT Tập 2 B19 trang in 30–31: đồ thị của hàm bậc nhất là một đường thẳng, \(ax-y+b=0\) mô tả cùng đồ thị \(y=ax+b\). Với \(Ax+By+C=0\), khi B≠0 chuyển thành y=−(A/B)x−C/B; B=0 và A≠0: đường x=−C/A không là đồ thị hàm số theo x.
@@ -14,8 +19,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
-SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
+ACADEMIC_SOURCE_BLOB: ff3d838680899b3c0a54ddd5774bebdf2f7d7d19
+SOURCE_BLOB: ff3d838680899b3c0a54ddd5774bebdf2f7d7d19
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_SGK_PED_R01_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
