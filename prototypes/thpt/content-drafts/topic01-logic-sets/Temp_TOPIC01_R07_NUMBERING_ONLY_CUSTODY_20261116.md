@@ -1,3 +1,6 @@
+<!-- TOP01_MASTER974_PED_D6_LABELS_CURRENT_20261121 -->
+**Current AUTHORING #974, one canonical learner only:** source blob `53e0cc45a3b101c80c83b4412db0195e9f226c47`; existing Q18 receipt updated in place to `effb212b7f36007ec1d185def983da3ef2075b7c`. DELTA_A removed 11 learner-visible internal labels; DELTA_C added 11 optional learner `Kiểm lỗi` D6 directions, verified to real Practice headings. Original 10 approved canonical math conclusions remain present and unchanged. The historical `a34680...` snapshot and its exact-old-source parity explanations below are retained as *history*, not current blob claims. No second learner/assessment, independent NotebookLM PASS or RELEASE.
+
 <!-- CĐ01_CURRENT_DELTA_B_CANONICAL_10_KEYS_20261121 -->
 ## CĐ01 current R07 — 10 signed answers restored, unchanged questions, author-only source-equivalent
 
@@ -7,9 +10,9 @@ Original G10/Topic bank keys exact 10/10, visible only inside optional answer di
 # CĐ1 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: a34680c23f1be53feeda073f9e99d64f45ad8257
+CURRENT_SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R07_10_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-CURRENT_Q18_RECEIPT_BLOB: 291d902ce2948b3d2436b91b64b6b8ebf01a02d9
+CURRENT_Q18_RECEIPT_BLOB: effb212b7f36007ec1d185def983da3ef2075b7c
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
