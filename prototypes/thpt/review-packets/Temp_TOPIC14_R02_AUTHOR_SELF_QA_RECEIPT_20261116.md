@@ -1,3 +1,6 @@
+<!-- OWNER_APPROVED_TOPIC14_20261121_EDITORIAL_EQUIVALENCE_Q18 -->
+**LATEST SOURCE_EQUIVALENT_CLEANUP:** Current one CĐ14 original R02 learner Git `d3c54d3867e6e831d6968a81d9c24d9d6b219363`, Q18 `current self`, A1/Q15 `current`, V2 `current`. The old learner `ff3d838680899b3c0a54ddd5774bebdf2f7d7d19` had two student-facing SGK/staff-like source-specific notes in reused `THPT-G10-B22-P03` and `THPT-G10-CHVII-W22-01`. Now only `SGK` citation reference removed in explanatory `Nếu làm sai` and `Depth note` renamed normal `Lưu ý phương pháp`; the math **y²=2px, p>0**, F(p/2;0), unique-intersection tangent proof, original problem, key and /6 written rubric unchanged. Original SGK ChVII canonical author source has no identical extra student notes; therefore changes are to **Topic-only extra annotation** and do not manufacture alternate SGK bank answers. Exactly 57/59 other shared SGK projection card bodies and 28 Topic practice untouched. `DELTA_A_UI_EDITORIAL` + source-equivalent D6; no independent full Topic review, merge/deploy or website behavior changes.
+---
 <!-- TOP14_MASTER974_20261121_CURRENT_AUTHORING_Q18 -->
 ## CĐ14 — current one R02 source Q18 AUTHOR_SELF_VERIFIED v3.2.0 (affected learning scope)
 
@@ -35,8 +38,8 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-SOURCE_BLOB: ff3d838680899b3c0a54ddd5774bebdf2f7d7d19
-ACADEMIC_SOURCE_BLOB: ff3d838680899b3c0a54ddd5774bebdf2f7d7d19
+SOURCE_BLOB: d3c54d3867e6e831d6968a81d9c24d9d6b219363
+ACADEMIC_SOURCE_BLOB: d3c54d3867e6e831d6968a81d9c24d9d6b219363
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
 ORIGINAL_R01_SOURCE_BLOB: 277ccb8b5d9f0a8c5f08680fa7e5b70925710308
