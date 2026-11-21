@@ -75,8 +75,22 @@ const neighbors={
  "docs/thpt-preview/sgk/chuong-v/bai-13.md":"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
  "docs/thpt-preview/sgk/chuong-v/bai-14.md":"a23afab8015c83813f0c8cbe918efa93e58aa623"
 };
-for(const [p,sha]of Object.entries(neighbors))
- assert.equal(blob(fs.readFileSync(path.join(root,p))),sha,"Out-of-scope frozen source "+p);
+// Signed 20/11 Golden correction moved local HELP in ChV B12–B14 as well.
+ // Those files are no longer byte-identical to their 19/11 screenshots.
+ // Preserve BOTH historical neighbors and approved successor source locks.
+const chvPlacement=read(ux+"G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+for(const [p,previous]of Object.entries(neighbors)){
+ const lesson=Number(p.match(/bai-(1[234])\.md$/)?.[1]);
+ assert([12,13,14].includes(lesson),"Only signed ChV neighbors may transition");
+ const rows=chvPlacement.split("\n").filter(x=>x.startsWith("| B"+lesson+" | "));
+ assert.equal(rows.length,1,"B"+lesson+" unique approved HELP-placement row");
+ const signed=[...rows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.deepEqual(signed,[previous,candidateG10KnowledgeBlob(lesson)],
+  "B"+lesson+" historical frozen SHA must have exact approved HELP successor");
+ assert.equal(blob(fs.readFileSync(path.join(root,p))),signed[1],
+  "B"+lesson+" current source must be exactly the signed Q18 successor");
+}
 // B17 is now independently revised by the owner. Verify its new signed
 // Q18 baseline→candidate chain instead of treating B17 as a frozen B15 neighbor.
 const b17=read(ux+"G10_CHVI_B17_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md");
