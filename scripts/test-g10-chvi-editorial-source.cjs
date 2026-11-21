@@ -106,8 +106,19 @@ for(const n of [15,16,17,18]){
   const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f02("PREVIOUS_B15_SOURCE_BLOB"),p2f("CANDIDATE_B15_SOURCE_BLOB"),
    "B15 new R02 must follow exact approved owner screenshot P2 source");
-  assert.equal(f02("CANDIDATE_B15_SOURCE_BLOB"),expected,
-   "B15 new R02 source must match latest signed SHA");
+  // R02 is the historical P2 readability/figure snapshot. The newer
+  // 20/11 Q18 HELP-placement receipt is an exact, additional signed source
+  // successor; never compare R02 directly to the final candidate.
+  const moved=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHVI_B15_B18_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+  const placementRows=moved.split("\n").filter(x=>x.startsWith("| B15 | "));
+  assert.equal(placementRows.length,1,"B15 must have exactly one signed HELP-placement receipt");
+  assert(moved.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+   moved.includes("G10-CHVI-B15-B18-KIEM-LOI-PLACEMENT-Q18-R01-20261120"),
+   "B15 R03 HELP transition must retain exact Q18 change classification and receipt");
+  const blobs=[...placementRows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+  assert.deepEqual(blobs,[f02("CANDIDATE_B15_SOURCE_BLOB"),expected],
+   "B15 R02 immutable P2 source must lead to exact signed HELP-placement current SHA");
  }
  assert.equal(row.moved,tries[n],"B"+n+" historical First Try count");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id","data-thpt-fig-id"]){
