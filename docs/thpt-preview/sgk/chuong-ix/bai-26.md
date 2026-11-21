@@ -227,7 +227,9 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa cổ điển của xác suất.</strong> Khi không gian mẫu \(\Omega\) hữu hạn, khác rỗng và các kết quả sơ cấp <strong>đồng khả năng</strong>, xác suất của biến cố \(A\subseteq\Omega\) là \(P(A)=\dfrac{n(A)}{n(\Omega)}\), với \(n(\Omega)>0\). Cần xác định đúng \(\Omega\), tập \(A\) và giả thiết đồng khả năng trước khi tính.</div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất cơ bản của xác suất (Nhận xét SGK).</strong> Với mọi biến cố \(A\), \(0\le P(A)\le 1\); biến cố không thể có \(P(\varnothing)=0\), còn biến cố chắc chắn có \(P(\Omega)=1\).</div>
+    Vì \(0\le n(A)\le n(\Omega)\), tỉ số giữa số kết quả thuận lợi và tổng số kết quả phải nằm trong đoạn từ 0 đến 1.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất cơ bản của xác suất (Nhận xét SGK).</strong> Với mọi biến cố \(A\), \(0\le P(A)\le1\); biến cố không thể có \(P(\varnothing)=0\), còn biến cố chắc chắn có \(P(\Omega)=1\).</div>
 
     Vì \(A\) và \(\overline A\) là hai phần không giao nhau và phủ hết \(\Omega\), ta suy ra hệ quả \(P(\overline A)=1-P(A)\). Công thức này sẽ được dùng sâu hơn ở Bài 27.
 
