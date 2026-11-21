@@ -13,3 +13,26 @@
 .topic01-knowledge-layout .thpt-r4-knowledge-module-panel > h2{line-height:1.45}
 .topic01-knowledge-layout details{max-width:100%}
 @media(max-width:600px){.topic01-knowledge-layout .thpt-r4-knowledge-modules{grid-template-columns:1fr}.topic01-knowledge-layout .thpt-r4-knowledge-subtabs{display:grid;grid-template-columns:1fr}.topic01-knowledge-layout .thpt-r4-knowledge-subtabs button{text-align:left;white-space:normal;overflow-wrap:anywhere}}
+
+/* Golden public Practice: one question in the shared modal, no inline bulk. */
+.topic01-golden-hub{margin:22px 0}
+.topic01-golden-lead{font-size:.9rem;line-height:1.65;margin:12px 0 20px}
+.topic01-golden-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.topic01-golden-section-heading{grid-column:1/-1;font-size:1.06rem;margin:17px 0 5px}
+.topic01-golden-card{appearance:none;text-align:left;cursor:pointer;min-height:92px;display:flex;flex-direction:column;gap:9px;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);padding:14px 16px;font:inherit}
+.topic01-golden-card:hover,.topic01-golden-card:focus-visible{border-color:var(--md-accent-fg-color);box-shadow:0 4px 18px #203f8f18}
+.topic01-golden-card strong{font-size:1rem}
+.topic01-golden-card span{font-size:.8rem;line-height:1.4;color:var(--md-default-fg-color--light)}
+.topic01-practice-dialog{max-width:min(900px,95vw);width:95vw;max-height:91vh;overflow:auto;padding:22px;border-radius:14px}
+.topic01-practice-dialog .topic01-question-body{max-width:100%;padding:12px 0;line-height:1.65}
+.topic01-practice-dialog .thpt-r4-modal-question-nav{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.topic01-practice-dialog .thpt-r4-modal-question-nav button{min-width:39px;min-height:40px;cursor:pointer}
+.topic01-draft-label{display:block;font-size:.86rem;margin:14px 0}
+.topic01-draft-label textarea{display:block;width:100%;font:inherit;min-height:78px;padding:10px;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px}
+.topic01-practice-dialog .thpt-r4-modal-buttons{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+.topic01-practice-dialog .thpt-r4-modal-buttons button{min-height:44px;cursor:pointer}
+.topic01-practice-dialog .topic01-close{min-height:44px}
+.topic01-practice-dialog details{margin:12px 0}
+.topic01-practice-dialog::backdrop{background:rgba(13,20,42,.55)}
+@media(max-width:660px){.topic01-golden-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.topic01-practice-dialog{padding:12px;width:96vw}}
+@media(max-width:380px){.topic01-golden-grid{grid-template-columns:1fr}}

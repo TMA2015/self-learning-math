@@ -67,5 +67,87 @@ const init=()=>{
  if(firstSub)outerPanels[0].insertBefore(note,firstSub);
  bind(outerButtons,outerPanels);
 };
-if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
+
+/* CĐ01 public Practice ONLY. The existing approved Markdown body remains
+   a single source; cards show one original item at a time in shared Golden R4. */
+function initTopic01Practice(){
+ const marker=document.querySelector("[data-topic01-practice-start]");
+ if(!marker||marker.dataset.ready==="1")return;
+ const article=marker.closest(".md-typeset"),end=article?.querySelector("[data-topic01-practice-end]");
+ const golden=window.THPT_GOLDEN_RUNTIME;
+ if(!article||!end||!golden)return;
+ const headings=[...article.children].filter(x=>x.tagName==="H2"&&/^[123]\.\s/.test(x.textContent));
+ if(headings.length!==3)return;
+ const items=[];let group="",current=null,node=headings[0];
+ const originalNodes=[];
+ while(node&&node!==end){originalNodes.push(node);node=node.nextSibling;}
+ for(const n of originalNodes){
+  if(n.nodeType===1&&n.tagName==="H2"){group=n.textContent.trim();current=null;continue;}
+  const name=n.nodeType===1&&n.tagName==="P"?n.querySelector(":scope > strong")?.textContent?.trim():"";
+  const match=/^Bài\s+(\d+)\.$/.exec(name||"");
+  if(match){
+   let previous=n.previousSibling;
+   while(previous&&previous.nodeType===3&&!previous.textContent.trim())previous=previous.previousSibling;
+   const itemId=(previous?.nodeType===8?previous.textContent:"").match(/DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)/)?.[1]||"THPT-TOP01-PRACTICE-"+match[1];
+   current={number:Number(match[1]),group,itemId,nodes:[n]};items.push(current);
+  }else if(current)current.nodes.push(n);
+ }
+ if(items.length!==24||items.some((x,i)=>x.number!==i+1))return;
+ golden.publicOnly();marker.dataset.ready="1";
+ const hub=document.createElement("section");hub.className="topic01-golden-hub";hub.dataset.topic01GoldenHub="1";
+ const lead=document.createElement("p");lead.textContent="24 bài luyện tập đã duyệt. Chọn một bài để tự giải rồi mở Lời giải / rubric. Mỗi lần chỉ hiện một bài, không ghi điểm thành thạo.";
+ lead.className="topic01-golden-lead";hub.append(lead);
+ const grid=document.createElement("div");grid.className="thpt-r4-practice-card-grid topic01-golden-grid";hub.append(grid);
+ const shelf=document.createElement("div");shelf.hidden=true;shelf.dataset.topic01SourceShelf="1";shelf.setAttribute("aria-hidden","true");
+ article.insertBefore(hub,headings[0]);article.insertBefore(shelf,headings[0]);
+ originalNodes.forEach(n=>shelf.appendChild(n));
+ const cards=[];let lastGroup="";
+ for(const q of items){
+  if(q.group!==lastGroup){lastGroup=q.group;const title=document.createElement("h2");title.className="topic01-golden-section-heading";title.textContent=lastGroup;grid.append(title);}
+  const button=document.createElement("button");button.type="button";button.className="topic01-golden-card thpt-r4-practice-card";
+  button.dataset.topic01PracticeCard=String(q.number);
+  const title=document.createElement("strong");title.textContent="Bài "+q.number;
+  const subtitle=document.createElement("span");subtitle.textContent=q.group.replace(/^\d+\.\s*/,"");
+  button.append(title,subtitle);grid.append(button);cards.push(button);
+ }
+ const dialog=document.createElement("dialog");dialog.className="thpt-r4-practice-dialog topic01-practice-dialog";
+ dialog.dataset.topic01GoldenDialog="1";
+ const bar=document.createElement("div");bar.className="thpt-r4-modal-top";
+ const heading=document.createElement("div");heading.className="thpt-r4-modal-heading";
+ const eyebrow=document.createElement("p");eyebrow.className="thpt-r4-modal-meta";eyebrow.textContent="CĐ01 · LUYỆN TẬP CÔNG KHAI";
+ const title=document.createElement("h2");title.textContent="Một bài – một lần tự giải";
+ heading.append(eyebrow,title);
+ const close=document.createElement("button");close.type="button";close.className="topic01-close";close.textContent="Đóng ×";close.setAttribute("aria-label","Đóng bài luyện tập");
+ bar.append(heading,close);
+ const body=document.createElement("div");body.className="thpt-r4-modal-main";dialog.append(bar,body);document.body.append(dialog);
+ let cursor=0;const drafts=new Map();
+ const lifecycle=golden.bindDialog({dialog,closeButton:close,getReturnFocus:()=>cards[cursor]});
+ const prev=document.createElement("button"),next=document.createElement("button");prev.type="button";next.type="button";
+ prev.textContent="← Bài trước";next.textContent="Bài tiếp →";
+ let pager=null;
+ const render=()=>{
+  const q=items[cursor];body.replaceChildren();
+  const status=document.createElement("p");status.className="thpt-r4-modal-progress";
+  status.textContent="Bài "+q.number+" / 24 · "+q.group;body.append(status);
+  const nav=document.createElement("div");nav.className="thpt-r4-modal-question-nav";
+  golden.renderNav({container:nav,count:items.length,index:cursor,label:i=>String(i+1),onSelect:i=>{cursor=i;render();}});
+  body.append(nav);
+  const content=document.createElement("article");content.className="thpt-r4-reviewed-formative-card topic01-question-body";
+  content.dataset.topic01CurrentItem=String(q.number);content.dataset.thptCanonicalItem=q.itemId;
+  q.nodes.forEach(n=>content.append(n.cloneNode(true)));body.append(content);
+  const label=document.createElement("label");label.className="topic01-draft-label";
+  label.textContent="Ghi cách làm của em (không lưu vào tài khoản)";
+  const area=document.createElement("textarea");area.rows=3;area.placeholder="Tự làm trước khi mở Lời giải";
+  area.setAttribute("aria-label","Bản nháp Bài "+q.number);
+  area.value=drafts.get(q.itemId)||"";area.addEventListener("input",()=>drafts.set(q.itemId,area.value));
+  label.append(area);body.append(label);
+  const paging=document.createElement("div");paging.className="thpt-r4-modal-buttons";paging.append(prev,next);body.append(paging);
+  pager?.sync();
+  window.MathJax?.typesetPromise?.([content])?.catch(()=>{});
+ };
+ pager=golden.bindPager({prev,next,getIndex:()=>cursor,getCount:()=>items.length,go:i=>{cursor=i;render();}});
+ cards.forEach((button,i)=>button.addEventListener("click",()=>{cursor=i;render();lifecycle.open(button);}));
+}
+const launch=()=>{init();initTopic01Practice();};
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",launch,{once:true});else launch();
 })();

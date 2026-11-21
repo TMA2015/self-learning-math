@@ -14,6 +14,7 @@ hide:
   
 </div>
 
+<span data-topic01-practice-start hidden></span>
 <!-- TOPIC01_APPROVED_SOURCE_START -->
 
 
@@ -350,4 +351,5 @@ Giao 12. Chỉ Hát=31−12=19; chỉ Robot=27−12=15; hợp=19+12+15=46 (=31+2
 </details>
 
 <!-- TOPIC01_APPROVED_SOURCE_END -->
+<span data-topic01-practice-end hidden></span>
 <p class="topic01-end-nav"><a href="../../">← Tổng quan các Chuyên đề</a> · <a href="../tu-kiem-tra/">Tiếp tục: Tự kiểm tra →</a></p>
