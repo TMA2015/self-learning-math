@@ -50,7 +50,7 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
   // historical chain are both mandatory; no ad hoc editorial acceptance.
   const placement=fs.readFileSync(
    "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md","utf8");
-  const row=placement.split("\\n").find(x=>x.startsWith("| B9 | "));
+  const row=placement.split("\n").find(x=>x.startsWith("| B9 | "));
   assert(row,"B09 needs immutable 20/11 placement receipt");
   const shas=[...row.matchAll(/`([a-f0-9]{40})`/g)].map(m=>m[1]);
   assert.equal(shas[0],signed,"B09 20/11 original must be frozen owner R06 source");
