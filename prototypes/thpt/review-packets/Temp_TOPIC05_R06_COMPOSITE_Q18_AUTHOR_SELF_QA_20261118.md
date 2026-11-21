@@ -1,3 +1,18 @@
+<!-- TOP05_MASTER974_CURRENT_PED6_D6_SELFCHECK_Q18_20261121 -->
+## CĐ05 — Q18 AUTHOR_SELF_VERIFIED v3.2.0 · O01 Kiểm lỗi và đường Tự kiểm tra (21/11/2026)
+
+**Một bản thảo learner canonical duy nhất:** `prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md`, current Git blob `909f873c57e543b8f6d3c383d0b88df6900e334a`, previous signed source `583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1`. One original canonical bank `Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md` blob `ab878f1a18dea87872449a79c27b75a612d81b39` untouched.
+
+**Kế thừa học thuật đúng scope:** 21/11 author direct 38-original-canonical / 17-outcome rigorous math/PED audit `prototypes/thpt/review-packets/Temp_TOPIC05_R06_DIRECT_MATH_PED_38_CANONICAL_17_PATHS_20261121.md` Git blob `7599d4c24c54fbaca0b157c4ff39620128a1ae94`, signed prior Q18 and direct S1 B15/B16 source math evidence preserved on its original blob. Those mathematical keys, examples, SVGs and canonical projections have not changed. **Không nhận thêm NotebookLM academic/PED PASS độc lập.**
+
+**#977 TOP22-20261121-017, P2 Q08/Q14/PED6 FIXED:** Outcome O01 §1.1 `Vận dụng` đã có lời giải đúng nhưng thiếu đường luyện lại. Chèn `Kiểm lỗi` trong **Đối chiếu do học sinh tự mở**, phân biệt tính đơn trị của hàm và hai đầu vào cùng cho một giá trị. Đọc lại Kiến thức 1.1 và làm hai câu **Bài 1** `(1,4)` lặp nhất quán vẫn là hàm và **Bài 2** `x=0\to1,3` không là hàm. Hai stem/solution đã đọc trực tiếp, đúng nội dung Q02/PED6 và có thao tác tự kiểm.
+
+**#977 TOP22-20261121-018, P2 Q08/Q17/PED6 FIXED:** 17 public `PUBLIC_REPLAY_ONLY` questions đều **giữ nguyên đề**, no hidden scoring; thêm một `<details><summary>Đối chiếu</summary>` **sau khi tự làm đủ 17 câu**, dẫn tới 17 lời giải `DISPLAY_ONLY_CANONICAL` trong Practice theo mapping Câu1–17→Bài `1,3,5,8,10,12,14,16,18,20,22,24,26,28,30,32,34`. Tự đối chiếu, không nhân bản đáp án hay rubric, `CLIENT_SELF_CHECK_NO_MASTERY`, NOT_RD1, không tuyên bố TOPIC_READINESS chính thức.
+
+**QA direct source:** reverse-diff đúng **chỉ hai phần chèn vào học liệu**; toàn bộ 38/38 Practice stem/key/solution/4 Written rubrics **byte-exact**, 17 selfcheck stems nguyên vẹn, 3 SVG không đổi; 17 Knowledge outcomes/17 first tries, 17/17 retry routes (O01 bổ sung, O02–O17 đã có), 56/56 opt-in disclosures (17 Knowledge +38 Practice +1 selfcheck), SGK KNTT provenance **một dòng cuối**. `DELTA_C_PED_TARGETED` author self-verified on affected scope, no substantive math/rubric change, P0/P1=0 in affected source verification. One Q18 receipt/one V2/ready/REGISTER relock to current snapshot; không đổi/duyệt website, Final Submit, Mastery hoặc Firebase. Không merge/deploy.
+
+---
+
 <!-- TOP05_S1_G10_B16_REQUIRED_QUADRATIC_DEFINITION_TABLE_GRAPH_DELTA_C_20261120 -->
 ## 20/11/2026 · S1 G10 Tập 2 Bài 16 required concept gap — Delta C affected
 
@@ -13,10 +28,10 @@
 AUTHOR_SELF_QA_RECEIPT
 PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1
+SOURCE_BLOB: 909f873c57e543b8f6d3c383d0b88df6900e334a
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 BASELINE_R05_SOURCE_BLOB: 3052d5f7090f74af2eca7739047c59ed76ccda63
@@ -73,7 +88,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## AUTHOR_SIGNOFF:
 
-AUTHOR_SIGNOFF: TOP05_R06_17_OUTCOME_38_BANK_17_D6_AUTHOR_SELF_QA_20261118
+AUTHOR_SIGNOFF: TOP05_MASTER974_17_OUTCOME_38_CANONICAL_17_SELFCHECK_PED6_909f873c57e543b8f6d3c383d0b88df6900e334a
 VERDICT: AUTHOR_SELF_VERIFIED_ON_SOURCE_SHA_9e9965e8bf5f1053a1c50820bfa7ac0800801dcd
 S1_RECEIPT: historical owner S1 G10/G11 scope evidence, no new page scan claimed
 OUTCOME_AUDIT: 17/17 Knowledge/FirstTry + 38 real canonical Practice/Written +17 question-only replays, source checked
