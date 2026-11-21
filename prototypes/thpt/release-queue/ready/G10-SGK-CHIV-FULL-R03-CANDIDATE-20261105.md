@@ -1,3 +1,6 @@
+<!-- OWNER_20261121_G10_B07_P04_DELTA_B_CANONICAL_EDITORIAL_READY -->
+**CURRENT AUTHOR SELF-VERIFIED SOURCE_EQUIVALENT ONLY**: One G10 SGK ChIV current bank `18c29d7f60448a0a52d5b9f5aa5002e0f331defd` (previous `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` Git history), one source-owned item `THPT-G10-B07-P04` shared by CĐ13. Original MCQ asks same zero-vector convention; only textbook name removed from question, same choice D and other choices. Mathematical explanation still states zero vector has length zero and the special convention about same direction. One short hint now says 'quy ước đã học' instead of attributing SGK; all original math solutions/rubrics unaffected. Source-scoped Q18 `8061eb7e4016858b0f6db0dfbd52708a87eb785d`, A1 `e0550597b681dd13e74a362ccb77e8bf29d6cedb`, V2 `fd21b992c324532f518ad91338b7106da2b1c284`. Prior independent R02 NotebookLM PASS stays on its original immutable snapshot; this is Delta B source-equivalent AUTHOR_SELF_VERIFIED, NOT a new independent full source review. No RELEASE/merge/deploy.
+---
 # G10 SGK ChIV Vectơ — FULL R03 V2 SOURCE-LOCKED AUTHORING CONTENT_READY
 
 PACKET_ID: G10-SGK-CHIV-FULL-R03-CANDIDATE-20261105
@@ -5,7 +8,7 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: ec772d4cbc5868eff8888bc8608484edb0d54a6f
+SOURCE_COMMIT: a425571697274bf56b8efd9484704c41ad602377
 CURRENT_PR: #750 Draft AUTHORING G10 ChIV R02 PASS and FULL R03 handoff; no release
 REVIEW_RECEIPT: prototypes/thpt/review-packets/G10_SGK_CHIV_FULL_R03_COMPOSITE_SOURCE_REVIEW_CHAIN_20261105.md exact component reviewer chain
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -23,9 +26,9 @@ PRIVATE_RD1_COUNT: 0
 RELEASE_AUTHORIZATION: NO
 MASTERY_ACTIVATION: NO
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHIV_FULL_R03_CONSOLIDATED_SOURCE_20261105.md
-ACADEMIC_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
+ACADEMIC_SOURCE_BLOB: 18c29d7f60448a0a52d5b9f5aa5002e0f331defd
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G10_SGK_CHIV_FULL_R03_COMPOSITE_SOURCE_REVIEW_CHAIN_20261105.md
-REVIEW_RECEIPT_BLOB: 08d96225ea02bf9695238a77a1a13a3afdaa52ce
+REVIEW_RECEIPT_BLOB: 8061eb7e4016858b0f6db0dfbd52708a87eb785d
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G10-SGK-CHIV-FULL-R03_HANDOFF_V2_20261105.md
 EXISTING_LEGACY_PACKET: G10-SGK-CHIV_B07_B08_AND_B09_B11_PUBLIC_FORMATIVE_ONLY_RETAINED
 
