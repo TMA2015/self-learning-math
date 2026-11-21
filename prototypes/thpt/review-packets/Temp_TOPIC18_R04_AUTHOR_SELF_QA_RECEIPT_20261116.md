@@ -1,3 +1,17 @@
+<!-- TOP18_MASTER974_CURRENT_Q18_W07_SOURCE_SIGNOFF_20261121 -->
+## TARGETED CURRENT AUTHOR Q18 self-verification — CĐ18 W07 and 40-outcome packet
+
+`STANDARD_ID=SLM-THPT-QUALITY-ONE` · `STANDARD_VERSION=3.2.0` · `SOURCE_BLOB=19d9b2d2f1dd2ec59750d92d9835cd111207ed4d` · `Q18_VERIFICATION_MODE=AUTHOR_SELF_VERIFIED` · `A1_A7_BLOB=b11c3441d2e7f3ce364f9f8389bff662f4bff6be`. This section overrides earlier 21/11 exact-source text referring to prior immutable 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355, without rewriting prior snapshot history. No independent NotebookLM Topic PASS.
+
+**New confirmed P1 #977-063 resolved in affected source:** W07 `THPT-TOP18-W07` Practice **Bài luyện 202** previously had five numeric givens only in a preceding unstructured paragraph; preceding SVG `FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg` source `c818e636ded54730582b139f4476ce9daa2156b2` openly displayed full answers t=3,6,9 and min distance4 BEFORE the learner question. The revised SAME canonical W07 question now explicitly provides radar at O=(0,0,0) km, R=5 km, A=(6,4,0) km, velocity u=(-1,0,0) km/h, t≥0 hours; same (a) trajectory, (b) minimal distance, (c) boundary/inside tasks. The identical SVG asset and reading guide moved under W07's own voluntary `<details><summary>Lời giải và tự đối chiếu</summary>` **after** mathematical proof and before rubric, invisible before learner opens answer. Associated provenance-only NotebookLM editorial sentence removed from student narrative. W07 mathematics invariant: M(t)=(6−t,4,0); OM²=(t−6)²+16, closest at t6 with distance4, boundary t3 and t9, interior 3<t<9; independent arithmetic/distance/sphere condition retested. Original W07 complete solution and /4 rubric byte-identical to previous source, SVG Git blob unchanged; this targeted `DELTA_C_ACADEMIC_MATERIAL_W07_STANDALONE_STEM` + `DELTA_A_VISUAL_PLACEMENT` is genuinely author-reviewed, not misclassified as pure UI.
+
+**Active packet proof after change:** all other **206/206** original Practice mathematical card bodies byte-identical; of 207 total only W07 question and hidden figure placement altered, all **47 original Written rubrics** unchanged; exactly **247 unique canonical IDs**, 40 lesson outcomes/FirstTry mathematical stems/answers, 40 precise remedial Kiểm lỗi passages with 80 current genuine Practice targets and correct Knowledge subsections, 12 unchanged public question-only same-ID replays with 12 exact Bài lookups, 8 math Knowledge strands and 3 outer Topic parts unchanged; 10 exact SVG Git sources and offline model unchanged, **248 opens/248 closes** opt-in disclosures, one SGK end credit. Source owner original G12 ChII/ChV original bank math/answers/rubrics unchanged; old SBT B14 p25 reference gap P2 and 24 inherited original source-owner Written administrative notes P2 #977-062 remain OPEN NONBLOCKING. `P0=0,P1=0` in currently reverified affected scope. `P2=2` including SBT historical reference limitation, not new math claims.
+
+**Pedagogical learner intent:** W07 now genuinely allows a first attempt without seeing a complete solved graphic, which is optional only inside solution; no change to official RD1/Final Submit or Mastery. Source S1 and historical 92 math assertions remain inherited by unchanged mathematics only and **were not re-executed in full on this current SHA**; no new direct PDF scan/NotebookLM independent whole-Topic PASS, no website browser device/AP-R/CI or release approval.
+
+**FINAL CURRENT AUTHOR SIGNOFF:** `TOP18_MASTER974_W07_STANDALONE_HIDDEN_SVG_40_D6_207_PRACTICE_20261121_19d9b2d2f1dd2ec59750d92d9835cd111207ed4d`.
+---
+
 <!-- TOP18_MASTER974_CURRENT_SIGNED_TARGETED_Q18_20261121 -->
 ## CĐ18 R04 current AUTHOR_SELF_VERIFIED Q18 · 21/11/2026 · MASTER #974
 
@@ -11,13 +25,13 @@
 
 **#977-059 P2 Q16 → FIXED_VERIFIED:** public 12 question-only selfcheck prompts unmodified, one voluntary `Đối chiếu` after all prompts maps P03,P07,P10,P14,P16,P17,P19,P22,P24,P29,P35,P40 to **original exact same-ID** existing Practice numbers 15,35,50,70,81,86,96,112,118,143,175,201. This is `CLIENT_SELF_CHECK_NO_MASTERY`, not official `TOPIC_READINESS`, Final Submit, protected RD1, or independent mastery evidence.
 
-**#977-060 P2 #864 → FIXED_VERIFIED:** 120 original SGK formative +40 original SGK Written /5 +40 Topic Practice+7 Topic Written /4, total **207/207 entire original mathematical stem/key/solution and 47 Written rubric texts byte-identical** to previous locked learner after dropping *display caption only*. Captions now unique sequential `Bài luyện 1–207` across 8 math groups; 39 old repeated “Bài dùng chung từ nguồn SGK” + one extra “Bài mở rộng dùng chung...” labels removed; one Topic-end SGK KNTT citation. Exactly **247 unique public canonical IDs** =160 original SGK +40 FirstTry +40 Topic P+7 Topic W. No new placement duplicate ID or modified original SGK owner source.
+**#977-060 P2 #864 → FIXED_VERIFIED:** 120 original SGK formative +40 original SGK Written /5 +40 Topic Practice+7 Topic Written /4, total **206/207 entire Practice card mathematical stem/key/solution text byte-identical to immediately preceding learner 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355; Topic W07 standalone stem expanded and solved SVG moved inside its voluntary answer, while its original mathematical answer and rubric /4 remain byte-exact, as do all 47 Written rubric texts** to previous locked learner after dropping *display caption only*. Captions now unique sequential `Bài luyện 1–207` across 8 math groups; 39 old repeated “Bài dùng chung từ nguồn SGK” + one extra “Bài mở rộng dùng chung...” labels removed; one Topic-end SGK KNTT citation. Exactly **247 unique public canonical IDs** =160 original SGK +40 FirstTry +40 Topic P+7 Topic W. No new placement duplicate ID or modified original SGK owner source.
 
 **#977-061 P2 #864 → FIXED_VERIFIED:** all 40 Knowledge `**Vận dụng:**` normalized to exact functional label `**Vận dụng**` with original FirstTry stem preserved; misplaced repeated `### 2. Phương pháp tọa độ trong không gian` after section 3 and redundant “Phần B” marker removed. Eight correct outer math strand groups and 40 lessons stay. Three true Topic pages Kiến thức/Luyện tập/Tự kiểm tra, no extra Topic Core.
 
 **Open nonblocking P2:** (1) Original legacy G12 SBT B14 printed p25 missing from old retained reference scan, no independent source certification of SBT 5.6–5.7; (2) `#977-062 ORIGINAL_G12_SOURCE_OWNER_FOLLOWUP`: 24 original G12 Written display-only source solutions retain admin line about “Written ... Mastery”; keep same canonical bank text until original G12 source owner directly verifies and coordinates source-equivalent across all placements. No Topic-only divergence and no website Mastery effect claimed. **P0=0/P1=0 within reverified changed scope, P2=2 known nonblocking.**
 
-**Q18 source chain:** learner `8a2b6289fd5ccf1380c0b250b6ffecc34d25e355` → this one exact Q18 → **A1–A7 `5b9ea079b07be1821ddaae6c49a5a01679f3d6e6`** → one V2/ready/REGISTER to relock. Exact source QA 40 D6 +80 real Practice references, 207/207 full Practice bodies +47 rubric unchanged, 12/12 public question-only stems exact, 10 identical SVG links, **248/248 balanced voluntary details** (40 FirstTry+207 Practice+1 after Selfcheck), one SGK footer. `DELTA_C_PED_TARGETED` 40 D6 plus O06 concept distinction, `DELTA_A_EDITORIAL` 207 captions/labels, not altering formal math results/answers/rubrics. No site browser/MathJax/AP/R/Golden/runtime/device/CI approval, merge/deploy, Firebase/student data/official Final Submit/Mastery changes.
+**Q18 source chain:** learner `8a2b6289fd5ccf1380c0b250b6ffecc34d25e355` → this one exact Q18 → **A1–A7 `5b9ea079b07be1821ddaae6c49a5a01679f3d6e6`** → one V2/ready/REGISTER to relock. Exact source QA 40 D6 +80 real Practice references, 206/207 full Practice bodies byte-exact; W07 original math answer/rubric unchanged, 12/12 public question-only stems exact, 10 identical SVG links, **248/248 balanced voluntary details** (40 FirstTry+207 Practice+1 after Selfcheck), one SGK footer. `DELTA_C_PED_TARGETED` 40 D6 plus O06 concept distinction, `DELTA_A_EDITORIAL` 207 captions/labels, not altering formal math results/answers/rubrics. No site browser/MathJax/AP/R/Golden/runtime/device/CI approval, merge/deploy, Firebase/student data/official Final Submit/Mastery changes.
 
 **AUTHOR SELF SIGNOFF** `TOP18_MASTER974_40_D6_207_PRACTICE_12_SAME_ID_REPLAY_20261121_8a2b6289fd5ccf1380c0b250b6ffecc34d25e355`.
 ---
@@ -34,10 +48,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
-SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
+ACADEMIC_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 5b9ea079b07be1821ddaae6c49a5a01679f3d6e6
+AUTHOR_METADATA_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
 ORIGINAL_R02_SOURCE_BLOB: f84dee296e2880c2d17fa2306c44458031c057cd
 EDITORIAL_R03_CANDIDATE_BLOB: 66df020c242cbbeb5c4bd50670e245a4d8c7f31f
 ORIGINAL_S1_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
@@ -56,7 +70,7 @@ ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_COUNT: 0
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
-AUTHOR_SIGNOFF: TOP18_MASTER974_40_D6_207_PRACTICE_12_SAME_ID_REPLAY_20261121_8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
+AUTHOR_SIGNOFF: TOP18_MASTER974_W07_STANDALONE_HIDDEN_SVG_40_D6_207_PRACTICE_20261121_19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
 
 S1_RECEIPT: G12 SGK KNTT Tập Một ChII B06–B08 printed pp45–74; SBT pp38–58. SGK Tập Hai ChV B14 pp29–40, B15 pp41–49, B16 pp50–53, B17 pp54–60, chapter-end pp61–63; SBT B14 printed pp22–25 (p25 missing from available original scan; do NOT source-certify SBT 5.6–5.7), B15 pp26–29, B16 pp30–31, B17 pp32–34, chapter-end pp35–39. Provenance inherited from original Git source and prior owner/author source receipt, not a fresh SGK/SBT PDF scan or new source equivalence claim.
 OUTCOME_AUDIT: 40/40 mapped outcomes O01–O40, 16 from ChII and 24 from ChV. Eight logical numbered subject areas: 6+4+6+6+7+5+5+1 (last O23 optional after B17). 40 genuine learner-first explanation/definition/condition, 40 independent `Ví dụ/Đề bài/Lời giải`, 40 `Vận dụng` and opt-in `Đối chiếu` with local D6, 40 authored Topic Practice.
