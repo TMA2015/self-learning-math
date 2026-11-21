@@ -102,6 +102,20 @@ function classify(paths,{manual=false}={}){
   return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:b09,
    reason:"EXACT_B09_COMMON_ERROR_TAB4_DELTA_A_ONE_CANONICAL"};
 
+ // B26 owner-authorized DELTA_C source-lock proof follows the one existing
+ // canonical manuscript and one existing scoped test, not a shared runtime edit.
+ const b26="docs/thpt-preview/sgk/chuong-ix/bai-26.md";
+ const b26Receipt="prototypes/thpt/ux795/G10_CHIX_B26_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md";
+ const b26Proof="scripts/test-thpt-scoped-deploy-proof.cjs";
+ const b26Figure="docs/assets/images/thpt/G10_B26_EVENT_COMPLEMENT_R01.svg";
+ if(lessons.length===1&&lessons[0]===b26&&files.includes(b26Receipt)&&
+    files.includes(b26Proof)&&files.includes(b26Figure)&&
+    files.every(x=>x===b26||x===b26Receipt||x===b26Proof||x===b26Figure||
+     x==="scripts/test-thpt-release-impact.cjs"||SOURCE_TEST.test(x))&&
+    fs.readFileSync(b26,"utf8").includes("G10_B26_EVENT_COMPLEMENT_R01.svg"))
+  return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:b26,
+   reason:"EXACT_B26_SIGNED_G0G2_MATH_AND_GOLDEN_SOURCE_PROOF"};
+
  // Owner-directed G10 B07–B14 migration: four existing manuscript files are
  // exactly paired with the eight canonical published lesson Markdown files.
  const manuscripts=[
@@ -155,6 +169,23 @@ function selfTest(){
   "Shared runtime change cannot use B09 exception");
  assert.equal(classify([...b09Case,"mkdocs.yml"]).impact,"FULL",
   "Global build config cannot use B09 exception");
+
+ const b26Case=[
+  "docs/thpt-preview/sgk/chuong-ix/bai-26.md",
+  "docs/assets/images/thpt/G10_B26_EVENT_COMPLEMENT_R01.svg",
+  "prototypes/thpt/ux795/G10_CHIX_B26_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md",
+  "scripts/thpt-q18-g10-source-receipt.cjs",
+  "scripts/test-thpt-scoped-deploy-proof.cjs",
+  "scripts/test-thpt-release-impact.cjs"];
+ assert.equal(classify(b26Case).impact,"SCOPED_LESSON",
+  "B26 exact signed lesson+figure+scoped safety test must not trigger site-wide QA");
+ assert.equal(classify([...b26Case,"mkdocs.yml"]).impact,"FULL",
+  "B26 exception cannot hide shared configuration");
+ assert.equal(classify([...b26Case,
+  "docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,"FULL",
+  "B26 exception cannot hide shared JS regression");
+ assert.equal(classify(b26Case.filter(p=>!p.endsWith("G10_B26_EVENT_COMPLEMENT_R01.svg"))).impact,"FULL",
+  "Missing reviewed figure must not use exception");
 
  const bBatch=[7,8,9,10,11,12,13,14].map(n=>
   "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md");

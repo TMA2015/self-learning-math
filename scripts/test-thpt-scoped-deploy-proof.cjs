@@ -45,6 +45,13 @@ function b23CanonicalAnswers(s) {
    '        [B23_D6_NAVIGATION]');
  return firstAnswers(normalized);
 }
+// B26 historical source used the wording below; normalize exactly the label
+// while protecting all five original answer/rationale blocks byte-for-byte.
+function b26CanonicalAnswers(s){
+ return firstAnswers(s.replace(
+  /^    \?\?\? question "Tự đối chiếu lời giải sau khi em đã thử"$/gm,
+  '    ??? question "Đối chiếu"'));
+}
 function firstAnswers(s){
  const html=[...s.matchAll(/<div class="thpt-r4-first-try-answer">[\s\S]*?<\/div>/g)].map(x=>x[0]);
  const md=markdownAnswers(s),count=tokenSet(s,"data-thpt-first-try-id").length;
@@ -123,7 +130,13 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"]){
   assert.deepEqual(tokenSet(now,id),tokenSet(before,id),"Q15/source identity changed: "+id);
  }
- if(receipt.includes("G10-CHVIII-B23-G0G2-Q18") ||
+ if(lesson==="docs/thpt-preview/sgk/chuong-ix/bai-26.md"&&
+    receipt.includes("G10-CHIX-B26-S1-GOLDEN-ENRICHMENT-Q18-R01-20261121")){
+  const historic=b26CanonicalAnswers(before),candidate=b26CanonicalAnswers(now);
+  assert.equal(historic.length,5,"B26 history must include exactly five closed answer blocks");
+  assert.deepEqual(candidate,historic,
+    "B26 approved answers/rationales must be byte-identical after exact label normalization");
+ } else if(receipt.includes("G10-CHVIII-B23-G0G2-Q18") ||
     receipt.includes("G10-CHVIII-B23-VAN-DUNG-KIEM-LOI-R04-20261120")) {
   const original=b23CanonicalAnswers(before),candidate=b23CanonicalAnswers(now);
   assert.equal(original.length,4,"B23 historical four answer disclosures must be preserved");
@@ -139,14 +152,32 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
  assert.equal(tokenSet(now,"data-thpt-first-try-id").length,firstAnswers(now).length,
   "First Try question/closed answer cardinality mismatch");
  if(!originalMathPreserved(before,now)){
-  // Only the three exact owner-self-verified HELP context repairs are allowed:
-  // B10 mismatched coordinates, B11 stale resultant-force data, B12 cube-root 7.
-  const expected={10:13,11:6,12:7};
-  assert(row&&row.batch.id==="G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120"&&
-   Object.hasOwn(expected,row.n)&&receipt.includes("Ba chỗ sửa ngữ cảnh"),
-   "Removed source math without signed affected-scope self-verification");
-  assert.equal(removedMathCount(before,now),expected[row.n],
-   "Exact contextual correction removed unexpected mathematical expressions");
+  if(lesson==="docs/thpt-preview/sgk/chuong-ix/bai-26.md"&&
+     receipt.includes("G10-CHIX-B26-S1-GOLDEN-ENRICHMENT-Q18-R01-20261121")){
+   // This exact old-to-new SHA pair has a signed mathematical/content delta.
+   // The 13 legacy TeX occurrences were reformatted/restructured or subsumed
+   // into the new teaching flow; NOT a general math-removal exemption.
+   assert(receipt.includes("B26_AFFECTED_MATH_TOKEN_MIGRATION=13")&&
+    receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+    receipt.includes("DELTA_C_ACADEMIC_MATERIAL"),
+    "B26 source-math replacement requires signed exact-scope Q18 evidence");
+   assert.equal(removedMathCount(before,now),13,
+    "B26 must retain all original math except 13 explicitly audited old tokens");
+   for(const token of ["P(A)=\\dfrac{n(A)}{n(\\Omega)}",
+    "\\overline A=\\Omega\\setminus A","P(\\overline A)=1-P(A)",
+    "n(\\Omega)>0","2.3. Nguyên lí xác suất bé"]){
+    assert(now.includes(token),"B26 math migration lacks correct new equivalent "+token);
+   }
+  } else {
+   // The historical three narrowly owner-verified HELP context repairs:
+   // B10 mismatched coordinates, B11 stale resultant-force data, B12 cube-root 7.
+   const expected={10:13,11:6,12:7};
+   assert(row&&row.batch.id==="G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120"&&
+    Object.hasOwn(expected,row.n)&&receipt.includes("Ba chỗ sửa ngữ cảnh"),
+    "Removed source math without signed affected-scope self-verification");
+   assert.equal(removedMathCount(before,now),expected[row.n],
+    "Exact contextual correction removed unexpected mathematical expressions");
+  }
  }
  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(now),
   "Q16: private Readiness/Final Submit/Mastery leaked into public Knowledge");

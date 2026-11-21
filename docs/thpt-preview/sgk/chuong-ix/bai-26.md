@@ -1,48 +1,80 @@
 # Bài 26. Biến cố và định nghĩa cổ điển của xác suất
 
-<div class="thpt-r4-screen" data-thpt-r4>
+<style>
+/* Scoped to B26 by its canonical First Try marker; no shared UI changes. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
+
+<script>
+/* B26 source-scoped Golden bridge: reuse the approved B22 presentation CSS,
+   without altering the shared SGK route/assessment runtime or cloning a theme.
+   Only classes and section-heading DOM are attached to this one lesson. */
+(() => {
+ "use strict";
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/chuong-ix\/bai-26\/?$/.test(location.pathname))return;
+  const article=document.querySelector(".md-content__inner");
+  if(!article||article.dataset.g10B26Golden==="true"||
+    !article.querySelector('.thpt-r4-screen[data-b26-owner-g0g2="r01"]'))return;
+  const tab=article.querySelector(":scope > .tabbed-set");
+  const labels=[...(tab?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+  const panes=[...(tab?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+  const radios=[...(tab?.querySelectorAll(':scope > input[type="radio"]')||[])];
+  const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+  if(labels.length!==4||panes.length!==4||radios.length!==4||
+     !labels.every((el,i)=>el.textContent.trim()===names[i]))return;
+  const heading=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
+   "4. Lỗi thường gặp và cách tự khắc phục"];
+  article.classList.add("thpt-g10-chiv-golden");
+  panes.forEach((pane,i)=>{
+   if(pane.querySelector(":scope > h2.thpt-g10-section-heading"))return;
+   const h=document.createElement("h2");
+   h.className="thpt-g10-section-heading";
+   h.textContent=heading[i];
+   pane.prepend(h);
+  });
+  const sync=()=>labels.forEach((label,i)=>
+   label.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  tab.addEventListener("change",sync);
+  sync();
+  article.dataset.g10B26Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script>
+
+<div class="thpt-r4-screen" data-thpt-r4 data-b26-owner-g0g2="r01">
 <p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IX · KIẾN THỨC SGK KNTT</p>
-<p class="thpt-r4-lead">Học khái niệm, kiểm các điều kiện của xác suất cổ điển và tự đối chiếu trước khi luyện tập.</p>
+<p class="thpt-r4-lead">Từ phép thử và biến cố đến xác suất cổ điển; hiểu nguyên lí xác suất bé và cách ước lượng trong thực tế.</p>
 
 </div>
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+    **Vì sao cần học?** Trong một trò chơi chọn 6 số từ 45 số, có rất nhiều kết quả có thể xảy ra. Trước khi hỏi “cơ hội trúng thưởng là bao nhiêu?”, ta cần mô tả chính xác **một kết quả của phép thử**, rồi nhận ra những kết quả nào làm ta trúng. Bài 26 xây nền tảng ấy; Bài 27 mới thực hành đếm số bộ trúng thưởng bằng tổ hợp và sơ đồ cây.
 
-    Tung một đồng xu và gieo một con xúc xắc. Nếu một bạn chỉ ghi “ra số 3”, bạn ấy đã **bỏ mất kết quả đồng xu**. Một kết quả hoàn chỉnh phải là một **cặp**, chẳng hạn (ngửa, 3), vì phép thử gồm cả hai thao tác. Tập hợp mọi kết quả hoàn chỉnh được gọi là **không gian mẫu** \(\Omega\).
+    **Cần biết trước:** Tập hợp, phần tử, tập con, phần bù; phân biệt số nguyên tố với hợp số (số 1 không thuộc loại nào); quy tắc nhân Bài 23. Khi có nhiều thao tác, phải ghi đủ thông tin về từng thao tác trước khi đếm.
 
-    Bây giờ giả sử ta quan tâm biến cố “số chấm chia hết cho 3”. Biến cố ấy không phải một phép thử mới; nó là **tập con của \(\Omega\)** gồm bốn cặp có số chấm 3 hoặc 6. Khi đồng xu cân đối, xúc xắc công bằng và hai thao tác độc lập, 12 cặp kết quả sơ cấp có xác suất như nhau, nên xác suất biến cố bằng **4 chia 12**.
+    ### 1.1. Từ phép thử đến không gian mẫu
 
-    Công thức cổ điển \(P(A)=n(A)/n(\Omega)\) chỉ đúng khi các kết quả sơ cấp trong \(\Omega\) **hữu hạn, không rỗng và đồng khả năng**. Nếu chỉ gộp các kết quả vào vài “nhãn” có số lượng khác nhau rồi chia đều cho số nhãn, ta đã thay đổi mô hình và có thể tính sai.
+    Gieo một đồng xu và một xúc xắc: “ra số 3” **chưa** phải kết quả hoàn chỉnh, vì còn thiếu mặt đồng xu. Nếu ghi N (ngửa), S (sấp), mỗi kết quả có dạng \((\text{mặt xu},\text{số chấm})\). Tập hợp **mọi** kết quả hoàn chỉnh gọi là *không gian mẫu* \(\Omega\). Có hai mặt xu và sáu số chấm, nên ta có 12 cặp khác nhau.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B26_COIN_DIE_SAMPLE_SPACE.svg" loading="lazy" alt="Bảng hai hàng N, S và sáu cột chấm xúc xắc; bốn cặp ở cột 3 và 6 được đánh dấu" /><figcaption><strong>Đọc hình:</strong> đi theo từng hàng để thấy 12 cặp (mặt xu, số chấm). Bốn ô viền xanh ứng với số chấm 3 hoặc 6. Chỉ coi 12 cặp đồng khả năng khi xu cân đối, xúc xắc công bằng và hai thao tác độc lập.</figcaption></figure>
 
-    **Thuật ngữ:** Phép thử ngẫu nhiên, kết quả sơ cấp, không gian mẫu (Omega), biến cố (AsubseteqOmega), đồng khả năng, xác suất cổ điển, biến cố đối.
+    Một bảng hoặc cây giúp em không bỏ sót và không viết trùng kết quả. Với hai lựa chọn qua mỗi bước, dùng quy tắc nhân **sau khi** đã hiểu một phần tử của \(\Omega\) thực sự là gì.
 
-    **Sau bài học, em cần làm được:** Liệt kê kết quả hoàn chỉnh; kiểm giả thiết đồng khả năng; phân biệt biến cố với kết quả sơ cấp; tính xác suất và biến cố đối, không coi xác suất nhỏ là bất khả.
-
-=== "Kiến thức SGK"
-
-    ### Một kết quả sơ cấp phải ghi đủ thông tin
-
-    Trong một trò chơi có hai thao tác, nói chỉ “ra số 2” chưa mô tả đầy đủ kết quả nếu còn phải ghi mặt đồng xu. Thiếu một thành phần làm không gian mẫu bị thiếu và các xác suất sau đó sai ngay từ đầu.
-
-    Nhớ quy tắc nhân của B23 và khái niệm cặp có thứ tự: (ô 1, ngửa) khác (ô 1, sấp). Một kết quả sơ cấp phải tương ứng đúng một cách hoàn tất phép thử.
-
-    Ta tạo không gian mẫu bằng cách liệt kê mọi kết quả hoàn chỉnh; mỗi kết quả chứa một lựa chọn ở từng giai đoạn. **Đếm bằng phép nhân là đếm các cặp hoàn chỉnh, không đếm các nhãn đơn lẻ.** Khi từng lựa chọn vật lí đồng đều và hai thao tác độc lập, các cặp mới đồng khả năng.
-
-    **Hướng dẫn đọc hình/bảng:** Vẽ bảng ba hàng ứng với các ô 1,2,3 và hai cột N,S. Mỗi giao điểm là một cặp (ô,mặt xu); quét bảng theo hàng để chắc chắn mỗi cặp xuất hiện đúng một lần.
-
-    Ưu tiên bảng hoặc cây khi có ít tầng; dùng tích số lựa chọn sau khi xác định đúng phần tử của Ω. Chỉ nói mọi cặp đồng khả năng khi đã có giả thiết ô bằng nhau, đồng xu cân đối và hai thao tác độc lập.
-
-    **Em vận dụng.**
+    **Vận dụng.**
 
     Một vòng quay có **3 ô bằng nhau** mang số 1,2,3, dừng đều trên từng ô; đồng thời tung một đồng xu cân đối, độc lập với vòng quay, ghi N (ngửa) hoặc S (sấp). Kết quả được ghi dưới dạng (số ô, mặt xu). Hãy viết Ω và n(Ω).
 
     <span data-ped-first-try="1" data-outcome-id="G10-B26-EXPERIMENT_SAMPLE_SPACE" data-thpt-first-try-id="THPT-G10-CHIX-TRY01" hidden></span>
 
-    ??? question "Tự đối chiếu lời giải sau khi em đã thử"
+    ??? question "Đối chiếu"
 
         <p><strong>Đáp án và lập luận:</strong> <span class="arithmatex">\(\Omega=\{(1,N),(1,S),(2,N),(2,S),(3,N),(3,S)\}\)</span>, <span class="arithmatex">\(n(\Omega)=6\)</span>. Vì có ba lựa chọn ô và hai mặt xu độc lập, số cặp là <span class="arithmatex">\(3\cdot2=6\)</span>; mỗi ô kết hợp đủ hai mặt xu.</p>
 
@@ -50,36 +82,28 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY01" hidden></span>
 
-    ??? tip "Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức"
+    ??? tip "Kiểm lỗi"
 
         <p><strong>Bước 1:</strong> Nhận diện lỗi hay gặp: chỉ viết {1,2,3} hoặc {N,S} và bỏ mất một thành phần của kết quả.</p>
         <p><strong>Bước 2:</strong> Nhớ quy tắc nhân B23: kết quả hai giai đoạn là một cặp có thứ tự; phân biệt ô 1 và mặt N.</p>
         <p><strong>Bước 3:</strong> Thử trường hợp nhỏ: hai ô 1,2 và một đồng xu cho bốn cặp (1,N),(1,S),(2,N),(2,S).</p>
-        <p><strong>Bước 4:</strong> Trở lại bảng 3×2; tự điền từng ô rồi mới mở lời giải của Tự thử để đối chiếu.</p>
+        <p><strong>Bước 4:</strong> Trở lại bảng 3×2; tự điền từng ô rồi mới mở phần Đối chiếu để đối chiếu.</p>
         <p><strong>Bước 5:</strong> Luyện đúng kỹ năng mô tả Ω với câu luyện tập liên quan; giữ kết quả hoàn chỉnh trước khi đếm.</p>
         <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-C01">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
+    ### 1.2. Một biến cố là tập con, không phải phép thử mới
 
+    Cùng một lần rút thẻ, ta có thể hỏi thẻ có số chẵn, số nguyên tố hay lớn hơn 4. Những câu hỏi đó là các **biến cố** khác nhau của cùng phép thử. Nếu \(\Omega\) là tập tất cả số thẻ, biến cố \(A\) được biểu diễn bằng tập **những phần tử trong \(\Omega\) làm \(A\) xảy ra**: \(A\subseteq\Omega\). Không được thêm kết quả ngoài \(\Omega\), và không được coi số 1 là số nguyên tố.
 
-    ### Biến cố là một tập con của không gian mẫu
+    Hai trường hợp biên rất có ích: \(A=\Omega\) là biến cố chắc chắn; \(A=\varnothing\) là biến cố không thể. Các biến cố này không phải là câu nói “rất dễ” hoặc “rất khó”, mà có tập kết quả thuận lợi xác định rõ.
 
-    Cùng một phép thử có thể hỏi “ra số nguyên tố”, “ra số chẵn” hay “ra số lớn hơn 5”. Mỗi câu hỏi tương ứng một nhóm kết quả, không phải một phép thử mới.
-
-    Nhắc định nghĩa tập hợp, kí hiệu \(A\subseteq\Omega\) và số nguyên tố (số tự nhiên lớn hơn 1 chỉ có hai ước dương 1 và chính nó); đặc biệt số 1 không nguyên tố.
-
-    Phép thử quyết định Ω trước, phát biểu biến cố chọn từ Ω **những kết quả thỏa điều kiện**, không thêm phần tử bên ngoài Ω. Khi đã liệt kê đúng A, số phần tử thuận lợi mới dùng được để tính xác suất nếu Ω đồng khả năng.
-
-    **Hướng dẫn đọc hình/bảng:** Viết Ω trên một hàng bảy vị trí. Dùng dấu khoanh vào các vị trí thuộc A; các vị trí còn lại cho thấy A thực sự là tập con của Ω.
-
-    Với ít kết quả, liệt kê A minh bạch hơn đếm tắt; với nhiều kết quả dùng tính chất số học nhưng vẫn phải chứng minh thuộc Ω. Chỉ chia \(n(A)/n(\Omega)\) sau khi xác nhận chọn đều.
-
-    **Em vận dụng.**
+    **Vận dụng.**
 
     Rút đều ngẫu nhiên một thẻ trong **7 thẻ phân biệt** được ghi số 1,2,3,4,5,6,7. Gọi A là biến cố “rút được thẻ mang số nguyên tố”. Hãy viết Ω, A và tính P(A).
 
     <span data-ped-first-try="1" data-outcome-id="G10-B26-EVENT_SUBSET" data-thpt-first-try-id="THPT-G10-CHIX-TRY02" hidden></span>
 
-    ??? question "Tự đối chiếu lời giải sau khi em đã thử"
+    ??? question "Đối chiếu"
 
         <p><strong>Đáp án và lập luận:</strong> <span class="arithmatex">\(\Omega=\{1,2,3,4,5,6,7\}\)</span>, <span class="arithmatex">\(A=\{2,3,5,7\}\)</span> nên <span class="arithmatex">\(P(A)=4/7\)</span>. Số 1 không phải số nguyên tố; bảy thẻ phân biệt được rút đều nên các kết quả đồng khả năng.</p>
 
@@ -87,36 +111,28 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY02" hidden></span>
 
-    ??? tip "Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức"
+    ??? tip "Kiểm lỗi"
 
         <p><strong>Bước 1:</strong> Kiểm lỗi: viết nhầm A={1,2,3,5,7} vì coi 1 là số nguyên tố, hoặc quên xác định Ω.</p>
         <p><strong>Bước 2:</strong> Ôn định nghĩa tập con và số nguyên tố; chỉ chọn những thẻ số thuộc Ω thỏa đúng điều kiện.</p>
         <p><strong>Bước 3:</strong> Thử trên các số 1 đến 4: tập số nguyên tố chỉ là {2,3}, không gồm 1.</p>
-        <p><strong>Bước 4:</strong> Gạch chân từng số nguyên tố trong Ω bảy phần tử, kiểm đã đếm đúng bốn kết quả rồi tự mở đối chiếu.</p>
+        <p><strong>Bước 4:</strong> Gạch chân từng số nguyên tố trong Ω bảy phần tử, kiểm đã đếm đúng bốn kết quả rồi tự mở Đối chiếu.</p>
         <p><strong>Bước 5:</strong> Luyện tiếp đã có THPT-G10-B26-P02 để phân biệt Ω và biến cố trong phép thử nhiều bước.</p>
         <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-P02">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
+    ### 1.3. Vì sao phải kiểm sự đồng khả năng?
 
+    Khi chọn đều **từng thẻ phân biệt**, mỗi thẻ có cơ hội như nhau. Nhưng nếu một số thẻ cùng ghi X và những thẻ khác ghi Y, hai *nhãn* X, Y chưa chắc đồng khả năng. Ta chỉ áp dụng công thức cổ điển \(P(A)=\dfrac{n(A)}{n(\Omega)}\) nếu không gian mẫu **hữu hạn, không rỗng và các kết quả sơ cấp đồng khả năng**.
 
-    ### Đồng khả năng thuộc kết quả sơ cấp, không mặc định thuộc nhãn
+    Bởi vậy, khi giải, hãy nói rõ “ta chọn đều đối tượng nào?” trước khi đếm số kết quả thuận lợi. Nếu cơ chế chọn không xác định, chỉ biết có mấy nhãn thì chưa đủ để chia đều.
 
-    Nếu 10 thẻ có hai nhãn X và Y, xác suất nhãn X không vì thế bằng 1/2: số thẻ thực tế mang mỗi nhãn mới quyết định tần suất khi từng thẻ được chọn đều.
-
-    Nhớ phân biệt đối tượng vật lí (thẻ có số riêng) và nhãn cùng loại; ô/hồ sơ có cùng nhãn vẫn là các kết quả sơ cấp khác nhau.
-
-    Định nghĩa cổ điển \(P(A)=n(A)/n(\Omega)\) chỉ đúng với **Ω hữu hạn, không rỗng và các kết quả sơ cấp đồng khả năng**. Có thể nhiều kết quả sơ cấp cùng mang một nhãn; gom nhãn lại không bảo toàn đồng khả năng.
-
-    **Hướng dẫn đọc hình/bảng:** Xếp 10 ô có tên riêng 1–10, tô dấu X lên đúng bốn ô, dấu Y lên sáu ô. Đếm 10 ô vật lí, không lấy mẫu số 2 là hai nhãn.
-
-    Chọn Ω là các thẻ phân biệt được rút đều; đếm số thẻ mang X. Nếu đề chỉ nói “ngẫu nhiên” mà không cho chọn đều, phải kiểm mô hình trước khi tính.
-
-    **Em vận dụng.**
+    **Vận dụng.**
 
     Có 10 thẻ **phân biệt được khi đánh số**, trong đó đúng **4 thẻ ghi X** và 6 thẻ ghi Y. Chọn đều ngẫu nhiên một thẻ. Tính P(đọc được nhãn X) và giải thích vì sao không phải 1/2.
 
     <span data-ped-first-try="1" data-outcome-id="G10-B26-CLASSICAL_RATIO" data-thpt-first-try-id="THPT-G10-CHIX-TRY03" hidden></span>
 
-    ??? question "Tự đối chiếu lời giải sau khi em đã thử"
+    ??? question "Đối chiếu"
 
         <p><strong>Đáp án và lập luận:</strong> <span class="arithmatex">\(P(X)=4/10=2/5\)</span>. Mỗi thẻ vật lí là một kết quả sơ cấp đồng khả năng; bốn thẻ mang X. Hai nhãn X,Y không đồng khả năng vì xuất hiện trên số thẻ khác nhau.</p>
 
@@ -124,7 +140,7 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY03" hidden></span>
 
-    ??? tip "Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức"
+    ??? tip "Kiểm lỗi"
 
         <p><strong>Bước 1:</strong> Nhận diện lỗi: lấy 1/2 vì có hai tên X, Y, trong khi mẫu phải là số thẻ đồng khả năng.</p>
         <p><strong>Bước 2:</strong> Tách “thẻ vật lí” khỏi “nhãn đọc được”; hãy đặt chỉ số riêng cho từng thẻ.</p>
@@ -133,27 +149,19 @@
         <p><strong>Bước 5:</strong> Ôn đã có THPT-G10-B26-C02 (vòng quay có nhãn màu lặp) để luyện chọn đúng kết quả sơ cấp.</p>
         <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-C02">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
+    ### 1.4. Biến cố đối: đếm đúng phần còn lại
 
+    Nếu \(A\) là “lấy được số chia hết cho 3”, thì “không chia hết cho 3” là biến cố đối \(\overline A\). Hai nhóm không chung kết quả và khi ghép lại chúng phủ hết \(\Omega\). Do đó \(\overline A=\Omega\setminus A\), và trong mô hình xác suất \(P(\overline A)=1-P(A)\). Dùng biến cố đối khi việc đếm \(A\) ngắn hơn đếm tất cả kết quả ngoài \(A\).
 
-    ### Biến cố đối đếm phần còn lại mà không bỏ sót
+    Hãy cẩn thận với phủ định: nếu \(A\) là “số nguyên tố”, biến cố đối là “không nguyên tố”, **bao gồm cả số 1** khi \(1\in\Omega\), chứ không chỉ gồm các hợp số.
 
-    Muốn tìm xác suất “không xuất hiện bội số của 3”, đếm riêng mọi kết quả không phải bội số có thể dài và dễ bỏ sót. Phần bù cho phép tính ngắn hơn.
-
-    Nhớ quan hệ \(\bar A=\Omega\setminus A\) trong **cùng Ω**, và các xác suất đồng khả năng cộng thành 1. Không nhầm “không thuộc A” với một điều kiện khác.
-
-    A và biến cố đối không thể xảy ra cùng lúc và phủ kín Ω, nên \(P(\bar A)=1-P(A)\). Đây không phải một mẹo trừ số không có căn cứ; chính việc phân hoạch Ω thành hai phần rời nhau làm công thức đúng.
-
-    **Hướng dẫn đọc hình/bảng:** Đánh dấu 12 số 1–12; tô nhóm bội của 3 bằng một kí hiệu, để phần còn lại không tô. Hai phần ghép lại đủ 12 phần tử.
-
-    Dùng phần bù khi A dễ liệt kê hơn \(\bar A\). Với nhóm số, vẫn kiểm các phần tử bội của 3, không nhân thừa vì trùng số.
-
-    **Em vận dụng.**
+    **Vận dụng.**
 
     Chọn đều một số nguyên từ 1 đến 12. Tính xác suất số được chọn **không chia hết cho 3** bằng biến cố đối.
 
     <span data-ped-first-try="1" data-outcome-id="G10-B26-COMPLEMENT" data-thpt-first-try-id="THPT-G10-CHIX-TRY04" hidden></span>
 
-    ??? question "Tự đối chiếu lời giải sau khi em đã thử"
+    ??? question "Đối chiếu"
 
         <p><strong>Đáp án và lập luận:</strong> Các bội của 3 là 3,6,9,12, có 4 trong 12 số. Do đó <span class="arithmatex">\(P(\text{không chia hết cho 3})=1-4/12=8/12=2/3\)</span>.</p>
 
@@ -161,36 +169,28 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY04" hidden></span>
 
-    ??? tip "Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức"
+    ??? tip "Kiểm lỗi"
 
         <p><strong>Bước 1:</strong> Kiểm lỗi: biến cố đối của “chia hết cho 3” phải gồm toàn bộ các số không chia hết cho 3, không chỉ số lẻ.</p>
         <p><strong>Bước 2:</strong> Xác định Ω={1,…,12}; gọi A là nhóm bội 3, viết phần bù trong cùng Ω.</p>
         <p><strong>Bước 3:</strong> Trên Ω={1,…,6}, nhóm bội 3 là {3,6}; phần không chia hết có 4 phần tử.</p>
-        <p><strong>Bước 4:</strong> Liệt kê bốn bội 3 trong 1–12, trừ khỏi tổng; chỉ sau đó mở lời giải Tự thử.</p>
+        <p><strong>Bước 4:</strong> Liệt kê bốn bội 3 trong 1–12, trừ khỏi tổng; chỉ sau đó mở lời giải Vận dụng.</p>
         <p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để củng cố phép tính biến cố đối.</p>
         <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-P01">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
+    ### 1.5. Xác suất bé: hiểu đúng giới hạn của dự báo
 
+    Một biến cố có xác suất rất bé thường được xem là khó xảy ra trong **một hoặc vài phép thử**. Đó là ý nghĩa thực hành của *nguyên lí xác suất bé* trong SGK, **không phải** chứng minh rằng biến cố ấy tuyệt đối không thể xảy ra. Mức “rất bé” cũng phụ thuộc hậu quả: nguy cơ nhỏ có thể vẫn quan trọng khi thiệt hại nghiêm trọng.
 
-    ### Biết khi nào KHÔNG đủ dữ kiện để chia đều
+    Khi lặp phép thử nhiều lần trong điều kiện mô hình phù hợp, số lần biến cố xuất hiện có thể **ước lượng** bằng \(nP(A)\); không thể khẳng định lần nào hoặc đúng bao nhiêu lần biến cố sẽ xảy ra.
 
-    Từ “ngẫu nhiên” trong đời sống không bảo đảm mọi nhãn đầu ra có xác suất bằng nhau. Tự học xác suất bắt đầu từ việc kiểm dữ kiện, không phải từ việc tìm một phân số bằng mọi giá.
-
-    Ôn ý nghĩa của xác suất dương rất nhỏ và điều kiện đồng khả năng của Ω. Phân biệt “một trong ba lựa chọn có thể xảy ra” với “ba lựa chọn có cùng xác suất”.
-
-    Nếu chưa biết quy tắc chọn hoặc tần suất/mô hình, không thể tự gán \(1/3\) chỉ vì có ba kết quả được đặt tên. Đây là một **giới hạn áp dụng** của định nghĩa cổ điển. Một biến cố có xác suất rất nhỏ vẫn có thể xảy ra, không đồng nghĩa biến cố không thể.
-
-    **Hướng dẫn đọc hình/bảng:** Vẽ ba nhánh A,B,C nhưng để dấu hỏi ở độ rộng/xác suất nhánh; dấu hỏi nhắc rằng chưa có chứng cứ ba nhánh đồng khả năng.
-
-    Chỉ tính \(n(A)/n(\Omega)\) khi chọn đều từng kết quả sơ cấp đã được nêu. Nếu thiếu giả thiết, kết luận 'không đủ thông tin' và nói rõ cần thêm dữ kiện về cơ chế chọn; không bịa phân bố đều.
-
-    **Em vận dụng.**
+    **Vận dụng.**
 
     (a) Một ứng dụng phát ngẫu nhiên một trong ba thông báo A, B, C theo một **thuật toán không được mô tả**. Bạn Minh nói: “Vì có ba thông báo nên P(hiện A)=1/3”. Minh đã đủ căn cứ chưa? Giải thích. (b) Trong một hộp có **200 vé phân biệt**, chỉ một vé đặc biệt; rút đều một vé. Hãy tính xác suất rút được vé đặc biệt và đánh giá lời khẳng định “Xác suất rất nhỏ nghĩa là không thể trúng”.
 
     <span data-ped-first-try="1" data-outcome-id="G10-B26-SCOPE_SMALL_PROBABILITY" data-thpt-first-try-id="THPT-G10-CHIX-TRY05" hidden></span>
 
-    ??? question "Tự đối chiếu lời giải sau khi em đã thử"
+    ??? question "Đối chiếu"
 
         <p><strong>Đáp án và lập luận:</strong> **(a) Chưa đủ căn cứ.** Từ “ngẫu nhiên” không cho biết thuật toán chọn A,B,C có đồng khả năng hay không. Chỉ khi ba kết quả được chọn đều mới suy ra <span class="arithmatex">\(P(A)=1/3\)</span>; đề bài hiện tại không cho điều đó. **(b)** Vì 200 vé được rút đều và chỉ 1 vé trúng, <span class="arithmatex">\(P(\text{trúng})=1/200=0{,}005&gt;0\)</span>. Trúng rất hiếm trong một lần rút nhưng không phải biến cố không thể.</p>
 
@@ -198,64 +198,116 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY05" hidden></span>
 
-    ??? tip "Khi chưa làm được: tự phát hiện lỗi và quay về kiến thức"
+    ??? tip "Kiểm lỗi"
 
         <p><strong>Bước 1:</strong> Nhận diện lỗi: tự đồng nhất “có ba nhãn” với “mỗi nhãn có xác suất 1/3”.</p>
         <p><strong>Bước 2:</strong> Nhắc điều kiện định nghĩa cổ điển: Ω hữu hạn, khác rỗng, từng kết quả sơ cấp đồng khả năng.</p>
         <p><strong>Bước 3:</strong> Xét thuật toán khác: chọn A với xác suất 1/2, B và C mỗi cái 1/4; vẫn ngẫu nhiên nhưng không đều.</p>
-        <p><strong>Bước 4:</strong> Trở lại (a) tìm giả thiết đồng khả năng còn thiếu; với (b) nêu 200 vé đồng khả năng, đúng một kết quả thuận lợi, soát <span class="arithmatex">\(1/200&gt;0\)</span>, rồi tự mở đối chiếu.</p>
+        <p><strong>Bước 4:</strong> Trở lại (a) tìm giả thiết đồng khả năng còn thiếu; với (b) nêu 200 vé đồng khả năng, đúng một kết quả thuận lợi, soát <span class="arithmatex">\(1/200&gt;0\)</span>, rồi tự mở Đối chiếu.</p>
         <p><strong>Bước 5:</strong> Ôn đã có THPT-G10-B26-P05 để luyện phát hiện giả thiết đồng khả năng còn thiếu.</p>
         <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B26-P05">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
+=== "Kiến thức SGK"
 
-    ### Kiến thức SGK — khái niệm và điều kiện
+    ### 2.1. Biến cố (SGK mục 1, tr. 78–79)
 
-    ### 26.1. Phép thử ngẫu nhiên và không gian mẫu
+    **Phép thử ngẫu nhiên:** hành động hoặc thí nghiệm chưa biết trước kết quả cụ thể. **Không gian mẫu** \(\Omega\) là tập tất cả kết quả có thể xảy ra; trong phạm vi bài này xét \(\Omega\) **hữu hạn và khác rỗng**. Một kết quả sơ cấp phải mô tả trọn phép thử: gieo hai xúc xắc phân biệt được ghi \((i,j)\) với \(i,j\in\{1,\ldots,6\}\), không chỉ ghi tổng \(i+j\).
 
-    **Cách đọc hình.** Mỗi ô của bảng là một cặp **(mặt đồng xu, số chấm xúc xắc)**. Có 2 hàng và 6 cột nên 12 kết quả; bốn ô đánh dấu có số chấm 3 hoặc 6, suy ra xác suất 4/12.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"><strong>Bản chất.</strong> Một biến cố \(A\) là **tập các kết quả thuận lợi**: \(A\subseteq\Omega\). Biến cố chắc chắn là \(\Omega\), biến cố không thể là \(\varnothing\). Tên gọi biến cố chỉ diễn tả điều kiện; tập hợp mới cho biết chính xác các kết quả làm nó xảy ra.</div>
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../assets/images/thpt/THPT_G10_B26_COIN_DIE_SAMPLE_SPACE.svg" loading="lazy" alt="Bảng 2 nhân 6 kết quả gieo đồng xu và xúc xắc"><figcaption>Mô hình 12 kết quả đồng khả năng của phép thử đồng xu × xúc xắc.</figcaption></figure>
+    **Biến cố đối:** \(\overline A=\Omega\setminus A\), nghĩa là \(A\) **không** xảy ra trong cùng phép thử. Chúng không thể đồng thời xảy ra và luôn bao phủ \(\Omega\): \(A\cap\overline A=\varnothing,\ A\cup\overline A=\Omega\).
 
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B26_EVENT_COMPLEMENT_R01.svg" loading="lazy" alt="Hai sơ đồ tập hợp: biến cố A nằm bên trong không gian mẫu Omega; biến cố đối là vùng Omega nằm ngoài A" /><figcaption><strong>Đọc hình:</strong> hình chữ nhật là toàn bộ kết quả \(\Omega\); miền elip là \(A\). Ở hình bên phải, phần còn lại sau khi bỏ elip là \(\overline A\). Không để sót các kết quả thuộc \(\Omega\) nhưng ngoài \(A\).</figcaption></figure>
 
-    Một **phép thử ngẫu nhiên** là hành động có thể biết trước các kết quả có thể xảy ra nhưng không chắc kết quả cụ thể của lần thử. Kí hiệu **Ω** là *không gian mẫu*: tập tất cả kết quả của phép thử. Khi gieo một con xúc xắc sáu mặt cân đối, Ω={1,2,3,4,5,6}. Nêu rõ một kết quả là một số chấm, không phải xác suất.
+    **Ví dụ ngắn về cách phủ định:** Gieo một xúc xắc: \(A=\{2,3,5\}\) là “ra số nguyên tố”, còn \(\overline A=\{1,4,6\}\) là “ra số không nguyên tố”. Số \(1\) không phải hợp số, nên nói biến cố đối của “nguyên tố” là “hợp số” sẽ thiếu một kết quả.
 
-    **Chốt điều kiện:** Khi gieo đồng thời hai xúc xắc phân biệt, mỗi kết quả của phép thử là một *cặp có thứ tự* (i,j), i,j∈{1,…,6}. Có 36 cặp có khả năng như nhau; nếu chỉ liệt kê các tổng từ 2 đến 12, những tổng đó **không** đồng khả năng.
+    ### 2.2. Định nghĩa cổ điển của xác suất (SGK mục 2, tr. 80–81)
 
-    ### 26.2. Biến cố là tập con của Ω
+    Để biết một biến cố có bao nhiêu cơ hội xảy ra, cần so **số kết quả thuận lợi** với **tổng số kết quả có cùng khả năng**. Chỉ khi \(\Omega\) hữu hạn, không rỗng, **mọi kết quả sơ cấp đồng khả năng**, ta mới dùng tỉ số số phần tử.
 
-    Một **biến cố A** được biểu diễn bằng tập những kết quả làm A xảy ra, nên A⊆Ω. Ví dụ với Ω={1,2,3,4,5,6}, biến cố “xuất hiện số lớn hơn 4” là A={5,6}; biến cố không thể là ∅, biến cố chắc chắn là Ω. Em cần phân biệt cách nói về biến cố với tập các kết quả thuận lợi, đồng thời tránh đếm trùng.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"><strong>Quy tắc và điều kiện.</strong> Với \(A\subseteq\Omega\) và các kết quả sơ cấp đồng khả năng, \(P(A)=\dfrac{n(A)}{n(\Omega)}\), \(n(\Omega)>0\). Trước phép chia phải (1) xác định đúng \(\Omega\); (2) xác định đúng \(A\); (3) kiểm tra mô hình đồng khả năng.</div>
 
-    ### 26.3. Biến cố đối
+    Vì \(0\le n(A)\le n(\Omega)\), suy ra \(0\le P(A)\le 1\); \(P(\varnothing)=0\), \(P(\Omega)=1\). Với hai biến cố đối, \(P(\overline A)=1-P(A)\). Công thức biến cố đối là kết quả của hai nhóm bổ sung nhau, không phải một mẹo trừ số.
 
-    Biến cố đối của A, kí hiệu Ā, là biến cố “A không xảy ra”; xét trong **cùng một không gian mẫu Ω**: Ā=Ω\A. Hai biến cố này không thể xảy ra đồng thời và phủ hết Ω. Do đó P(Ā)=1−P(A). Tránh nhầm “không xảy ra A” với một biến cố khác được viết thiếu trường hợp.
+    **Bảng kết quả là công cụ đếm:** hai túi chứa lần lượt 4 và 3 thẻ phân biệt, mỗi túi chọn đều một thẻ, độc lập nhau. Khi đó 12 cặp kết quả đồng khả năng; muốn đếm điều kiện theo tổng hai số, có thể lập bảng \(4\times3\) thay vì gộp các giá trị tổng (vốn không đồng khả năng).
 
-    ### 26.4. Định nghĩa cổ điển và tính chất cơ bản
+    ### 2.3. Nguyên lí xác suất bé và ý nghĩa thực tế (SGK mục 3, tr. 81–82)
 
-    **Chỉ khi Ω hữu hạn và mọi kết quả sơ cấp đồng khả năng**, xác suất theo định nghĩa cổ điển được tính bằng P(A)=n(A)/n(Ω), với n(Ω)>0. Vì 0≤n(A)≤n(Ω) nên 0≤P(A)≤1, P(∅)=0 và P(Ω)=1. Nếu các kết quả không đồng khả năng, không được lấy số phần tử chia cho tổng phần tử một cách máy móc. Nếu sử dụng hai kết quả không phân biệt về nhãn, phải kiểm tra chúng có cùng xác suất hay không.
+    **Nguyên lí xác suất bé** là một nguyên tắc **thực hành**: khi xác suất một biến cố rất nhỏ, trong một hoặc vài phép thử người ta thường dự kiến biến cố ấy không xảy ra. Đây không phải khẳng định toán học \(P(A)=0\); một kết quả hiếm vẫn có thể xuất hiện. Không có ngưỡng “bé” dùng chung cho mọi tình huống: một sự cố có hậu quả nghiêm trọng không được bỏ qua chỉ vì xác suất nhỏ.
 
-    ### 26.5. Nguyên lí xác suất bé
+    **Ước lượng tần số:** khi phép thử được lặp nhiều lần trong điều kiện thích hợp, số lần xảy ra biến cố có xác suất \(p\) xấp xỉ \(np\) (SGK xét \(n\ge30\)). Đây là **giá trị ước lượng**, không bảo đảm đúng bằng \(np\) và không cho biết kết quả từng lần thử.
 
-    Biến cố có xác suất rất nhỏ **khó xảy ra trong một phép thử**, nhưng **không phải không thể xảy ra**; ngược lại, xác suất gần 1 không bảo đảm chắc chắn. Trong tình huống thực tế, cần tách điều SGK trình bày với một quy tắc dự báo số lần xuất hiện (chỉ ước lượng, không bảo đảm số lần đúng bằng n·P(A)).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"><strong>Vận dụng ý nghĩa thực tế.</strong> Nếu tỉ lệ sinh bé gái được giả thiết là \(0{,}488\), bé trai là \(0{,}512\), và quan sát khoảng 10 000 bé gái, thì tổng số trẻ được ước tính \(n\approx10000/0{,}488\approx20491{,}8\); số bé trai ước tính \(0{,}512n\approx10491{,}8\), tức khoảng **10 492 bé trai**. Không coi số ước tính là kết quả đếm chắc chắn.</div>
+
+    **Phạm vi bài:** nắm biến cố, tập kết quả thuận lợi, biến cố đối, định nghĩa cổ điển, tính chất \(0\le P(A)\le1\) và nguyên lí xác suất bé. Bài 27 sẽ đi sâu vào cách dùng tổ hợp, sơ đồ cây và biến cố đối để giải các phép thử nhiều bước.
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
+    Mỗi ví dụ có **Đề bài → Phân tích → Lời giải → Kiểm lại**. Em có thể tự thử trước khi xem khung giải; các ví dụ minh họa những cấu trúc suy luận khác nhau, không chỉ thay số.
 
-    ### Ví dụ — Tại sao mẫu phải gồm cả đồng xu lẫn xúc xắc?
+    ### 3.1. Ví dụ — Không gian mẫu nhiều lần gieo
 
-    **Đề bài.** Tung một đồng xu cân đối và một xúc xắc công bằng, độc lập. Tính xác suất biến cố \(A\): “số chấm trên xúc xắc chia hết cho 3”.
+    **Đề bài.** Tung một đồng xu cân đối, độc lập, ba lần. Tính xác suất xuất hiện đúng **hai lần sấp**.
 
-    **Vì sao chọn cách này?** Mỗi kết quả sơ cấp phải mô tả **đầy đủ hai thao tác**, không chỉ giá trị của xúc xắc. Khi đó mới có căn cứ chia đều xác suất.
+    **Phân tích:** Mỗi lần phải ghi N hoặc S; thứ tự các lần gieo phân biệt kết quả. Có \(2^3\) dãy, không phải bốn kết quả theo “số lần sấp” đồng khả năng.
 
-    **Giải.** \(\Omega=\{(N,i),(S,i)\mid i=1,2,\ldots,6\}\) có 12 kết quả đồng khả năng. \(A=\{(N,3),(S,3),(N,6),(S,6)\}\) có 4 kết quả; do đó \(P(A)=4/12=1/3\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(\Omega=\{NNN,NNS,NSN,NSS,SNN,SNS,SSN,SSS\}\), \(n(\Omega)=8\). Biến cố \(A=\{NSS,SNS,SSN\}\) có ba dãy, nên \(P(A)=3/8\).</p></div>
 
-    **Kiểm lại:** Biến cố “không chia hết cho 3” có 8 kết quả, xác suất \(2/3\), cộng với \(1/3\) bằng 1.
+    **Kiểm lại:** Mỗi dãy có xác suất \(1/8\); ba dãy thuận lợi khác nhau về vị trí xuất hiện N.
 
-    **Ví dụ 1 (EX-G10-B26-01) — Biểu diễn biến cố và công thức cổ điển.** Một vòng quay chia thành sáu ô bằng nhau mang kí hiệu A,A,B,C,C,C; giả sử mũi tên dừng đều nhau trên từng ô vật lí. Gọi các vị trí là A₁,A₂,B,C₁,C₂,C₃, tức n(Ω)=6. Biến cố “ra kí hiệu C” có 3 vị trí thuận lợi nên P(C)=3/6=1/2, trong khi P(A)=2/6=1/3. **Tại sao không dùng Ω={A,B,C} với 3 kết quả đồng khả năng?** Vì ba kí hiệu xuất hiện trên số ô khác nhau. Trình bày hai tầng “kết quả vật lí/nhãn đọc được” để chống nhầm.
+    ### 3.2. Ví dụ — Phủ định đúng của một biến cố
 
-    **Ví dụ 2 (EX-G10-B26-02) — Biến cố đối và xác suất rất bé.** Một phiếu được chọn đều từ 500 phiếu khác nhau, có đúng một phiếu đặc biệt. Nếu A là “trúng phiếu đặc biệt”, P(A)=1/500; P(Ā)=499/500. Xác suất nhỏ không đồng nghĩa A không thể xảy ra, và không thể kết luận sau 500 lần thử chắc chắn sẽ trúng nếu không quy định chính xác cách chọn phiếu qua từng lần.
+    **Đề bài.** Rút đều một thẻ ghi số từ 1 đến 9. Gọi \(A\) là biến cố “số trên thẻ là số nguyên tố”. Mô tả \(A\), \(\overline A\) và xác suất của chúng.
+
+    **Phân tích:** Phải dùng **toàn bộ** \(\Omega\) để viết biến cố đối; số 1 không nguyên tố cũng không hợp số.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(\Omega=\{1,2,\ldots,9\}\); \(A=\{2,3,5,7\}\) có 4 kết quả. \(\overline A=\{1,4,6,8,9\}\) có 5 kết quả. Do rút đều, \(P(A)=4/9\), \(P(\overline A)=5/9\).</p></div>
+
+    **Kiểm lại:** \(A\cap\overline A=\varnothing\), \(A\cup\overline A=\Omega\), và \(4/9+5/9=1\).
+
+    ### 3.3. Ví dụ — Đếm biến cố bằng bảng hai chiều
+
+    **Đề bài.** Túi I có các thẻ 1,2,3,4; túi II có các thẻ 1,2,3. Chọn đều một thẻ từ mỗi túi, độc lập. Tính xác suất tổng hai số **ít nhất bằng 5**.
+
+    **Phân tích:** Một kết quả là cặp \((i,j)\) theo túi. Các tổng không đồng khả năng, nhưng 12 cặp thẻ thì có.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Có \(4\cdot3=12\) cặp đồng khả năng. Tổng ít nhất 5 ứng với các cặp \((2,3),(3,2),(3,3),(4,1),(4,2),(4,3)\), gồm 6 kết quả. Vậy \(P(A)=6/12=1/2\).</p></div>
+
+    **Kiểm lại:** Đếm theo hàng: với \(i=1\) có 0 cặp, \(i=2\) có 1, \(i=3\) có 2, \(i=4\) có 3; tổng \(0+1+2+3=6\).
+
+    ### 3.4. Ví dụ — Không chia đều theo tên nhãn
+
+    **Đề bài.** Có 8 vé phân biệt, 3 vé ghi tên A và 5 vé ghi tên B. Lấy đều một vé. Xác suất nhận tên A là bao nhiêu?
+
+    **Phân tích:** Một vé vật lí, không phải một loại tên, là kết quả sơ cấp đồng khả năng.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(\Omega\) gồm 8 vé được đánh số riêng; biến cố lấy tên A có đúng 3 vé thuận lợi. Do đó \(P(A)=3/8\), không phải \(1/2\) chỉ vì có hai tên.</p></div>
+
+    **Kiểm lại:** Xác suất tên B là \(5/8\); \(3/8+5/8=1\).
+
+    ### 3.5. Ví dụ — Xác suất bé không phải bằng 0
+
+    **Đề bài.** Trong 1 000 thẻ khác nhau có đúng một thẻ trúng quà. Rút ngẫu nhiên đều một thẻ. Có thể khẳng định thẻ trúng “không thể xuất hiện” không?
+
+    **Phân tích:** Phân biệt biến cố có xác suất nhỏ với biến cố không thể \(P=0\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(n(\Omega)=1000\), \(n(A)=1\), nên \(P(A)=1/1000=0{,}001>0\). Vì vậy không thể nói trúng thưởng là bất khả; chỉ có thể nói cơ hội trong một lần rút rất nhỏ.</p></div>
+
+    **Kiểm lại:** Nếu \(A\) không thể, tập kết quả thuận lợi phải là \(\varnothing\), trái với việc có một thẻ trúng.
+
+    ### 3.6. Ví dụ — Ước lượng số lần xảy ra
+
+    **Đề bài.** Một dây chuyền có xác suất sản phẩm đạt tiêu chuẩn là \(0{,}97\). Nếu điều kiện sản xuất ổn định, ước lượng số sản phẩm đạt trong 200 sản phẩm tiếp theo.
+
+    **Phân tích:** Đây là bài toán **ước lượng**, không dùng công thức cổ điển để đếm các sản phẩm; áp dụng ý nghĩa tần số \(nP(A)\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Số sản phẩm đạt tiêu chuẩn được ước lượng \(200\cdot0{,}97=194\). Số không đạt được ước lượng khoảng \(200-194=6\).</p></div>
+
+    **Kiểm lại:** Một lô thật có thể có 193, 194 hay 195 sản phẩm đạt; 194 **không** phải lời hứa chắc chắn.
 
 === "Lỗi thường gặp"
+
+    **Chỉ các lỗi tổng quát nằm ở tab này; lỗi của từng Vận dụng đã có khung Kiểm lỗi ngay dưới câu hỏi.**
 
     <span data-thpt-help-id="D6-G10-B26-01" hidden></span>
 
