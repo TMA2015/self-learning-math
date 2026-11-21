@@ -1,0 +1,321 @@
+<!-- AUTHORING CANDIDATE R03 · learner-first continuity at conceptual arc level, 11 source-locked lessons, First Try placed after arc explanation. NOT CONTENT_READY / Q18 pending / R01 immutable. -->
+<!-- AUTHORING CANDIDATE · R02 continuous student-first narrative · DELTA_C_ACADEMIC_MATERIAL. R01 remains immutable source-reviewed snapshot. This is NOT CONTENT_READY and must be math/PED reviewed as a whole unit, then owner UX review before replacing active source. -->
+# CĐ01 — Mệnh đề, Tập hợp và Tư duy logic toán học · Liền mạch R02 — ứng viên phản biện
+
+**LEARNING_PATH: TOPIC** · **OUTER_PAGES: Kiến thức / Luyện tập / Tự kiểm tra** · **STANDARD: SLM-THPT-QUALITY-ONE v3.0.1** · **CONTENT_VERSION: R01**.
+
+Đây là một chuyên đề tự học độc lập theo danh mục CĐ01/22. Chuyên đề kết nối cách kiểm tra lời khẳng định với cách tổ chức tập hợp và đếm đúng; KHÔNG chia chương/bài SGK làm lộ trình học. Các mã kỹ thuật phía cuối là metadata dành cho AUTHORING/RELEASE, không hiển thị trong giao diện học sinh.
+
+# Kiến thức
+
+## Khám phá — Hai câu hỏi dẫn dắt
+
+- Một bạn nói “mọi thành viên CLB Toán đều biết lập trình”. Chỉ một bạn không biết lập trình có đủ bác bỏ câu ấy không? → Em cần phân biệt “mọi”, “tồn tại” và phản ví dụ.
+- Trong lớp có 23 bạn học Anh, 25 bạn học Toán, 12 bạn học cả hai. Cộng 23+25 có phải số bạn học ít nhất một môn không? → Em cần hiểu hợp, giao và mô hình Venn.
+
+**Bản đồ hành trình:** mệnh đề → phủ định → kéo theo/đảo → tương đương → lượng từ → tập hợp/phần tử → hợp/giao → hiệu → phần bù → khoảng trên trục số → đếm tập hợp bằng Venn. Mỗi mảng có giải thích trước phương pháp, ví dụ có lý do, một Tự thử, phần Đối chiếu chỉ mở khi tự quyết định và đường sửa lỗi. Không phải học lại một chương SGK theo thứ tự bài.
+
+**Kiến thức tiền đề đủ dùng tại chỗ:** số nguyên ℤ gồm ...,−2,−1,0,1,2,...; số thực ℝ chứa các số trên trục số; dấu ≤ nghĩa “nhỏ hơn hoặc bằng”; A={1,2} là một tập hợp có hai phần tử; phép chia hết n chia hết cho k khi n=kt với một số nguyên t. Nếu quên, đọc lại ngay ghi chú này trước khi sang ký hiệu logic.
+
+## Từ câu nói đến suy luận chính xác
+
+Để lập luận đúng, ta phải hiểu câu nào có thể xét đúng–sai, câu nào còn phụ thuộc vào biến và cách bác bỏ một nhận định. Những ý tưởng về phủ định, kéo theo, tương đương và lượng từ sẽ lần lượt xuất hiện từ chính câu hỏi ấy.
+
+<!-- LESSON_ID: TOP01-M01; OUTCOME_ID: TOP01-O01; source: candidate R02 -->
+
+Khi nghe một câu nói, không phải lúc nào ta cũng có thể kết luận ngay câu đó đúng hay sai. “13 là số nguyên tố” là một khẳng định đúng vì 13 chỉ có hai ước dương là 1 và 13; “13 là số chẵn” là khẳng định sai. Cả hai đều là **mệnh đề**, bởi mỗi câu có một giá trị đúng hoặc sai xác định. Câu hỏi “13 có phải số nguyên tố không?” thì khác: nó yêu cầu trả lời, chứ chưa khẳng định điều gì.
+
+Bây giờ xét câu \(n+1=4\) với \(n\) là số nguyên. Nếu thay \(n=3\), đẳng thức đúng; thay \(n=4\), đẳng thức sai. Ta không thể gán cho phát biểu ban đầu một giá trị đúng–sai độc lập với \(n\). Đây là **mệnh đề chứa biến**. Để kiểm chứng một phát biểu như vậy, phải biết biến thuộc miền nào và đã được gán giá trị hay lượng từ nào chưa. Chính sự phân biệt này giúp việc chứng minh sau này không bị mơ hồ.
+
+<!-- LESSON_ID: TOP01-M02; OUTCOME_ID: TOP01-O02; source: candidate R02 -->
+
+Khi đã phân biệt được khẳng định, ta cần biết thế nào là câu thực sự bác bỏ khẳng định ấy. Một mệnh đề có thể đúng hoặc sai; **phủ định** là phát biểu đổi giá trị đúng–sai ấy. Nếu \(P\) là “7 là số chẵn” thì \(\neg P\) là “7 không phải số chẵn”. Khi \(P\) sai, phủ định đúng, và ngược lại. Với bất đẳng thức, phải đảo đúng cả dấu bằng: phủ định của \(x\ge3\) là \(x<3\), chứ không phải \(x\le3\), bởi tại \(x=3\) hai câu sau không đối lập đúng–sai.
+
+Điều này càng quan trọng khi câu chứa lượng từ. Xét \(P\): “Mọi số thực \(x\) đều thỏa \(x^2\ge0\)”. Để bác bỏ \(P\), ta cần **ít nhất một** số thực làm \(x^2<0\); vì không tồn tại số ấy, phủ định là sai và \(P\) đúng. Như vậy, phủ định của “mọi” không phải “mọi phần tử đều không”, mà là “tồn tại ít nhất một phần tử không”.
+
+<!-- LESSON_ID: TOP01-M03; OUTCOME_ID: TOP01-O03; source: candidate R02 -->
+
+Phủ định giúp nhận ra phát biểu sai; còn để suy ra kết luận mới, ta phải hiểu chiều của lập luận. Giả sử một số nguyên chia hết cho 6. Vì số ấy viết được \(n=6k=3(2k)\), nó chắc chắn cũng chia hết cho 3. Ta diễn đạt: “Nếu \(n\) chia hết cho 6 thì \(n\) chia hết cho 3”, ký hiệu \(P\Rightarrow Q\). Khi đó \(P\) là **điều kiện đủ** để có \(Q\), còn \(Q\) là **điều kiện cần** để có \(P\).
+
+Nhưng một kết luận đúng theo chiều thuận chưa cho phép đọc ngược. Số 3 chia hết cho 3 mà không chia hết cho 6, nên câu đảo \(Q\Rightarrow P\) sai. Một phản ví dụ đủ bác bỏ một mệnh đề kéo theo nếu tiền đề đúng mà kết luận sai. Về logic hình thức, \(P\Rightarrow Q\) chỉ sai khi \(P\) đúng và \(Q\) sai; quy tắc này không có nghĩa mọi câu “nếu...thì...” là một quan hệ nguyên nhân trong đời sống.
+
+![Bội của 6 nằm trong tập bội của 3](../../visuals/THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg)
+
+*Quan sát hình:* Hình giúp đọc chiều suy luận: mọi bội của 6 là bội của 3, nhưng vùng chỉ thuộc bội của 3 không cho phép suy ngược.
+
+<!-- LESSON_ID: TOP01-M04; OUTCOME_ID: TOP01-O04; source: candidate R02 -->
+
+Không phải suy luận nào cũng đảo được. Để được tương đương, cả hai chiều đều cần chứng minh. Ta vừa thấy một mệnh đề kéo theo đúng chưa chắc có chiều đảo đúng. Vậy khi nào hai phát biểu thực sự tương đương? Khi **cả** \(P\Rightarrow Q\) và \(Q\Rightarrow P\) đều đúng, ta viết \(P\Leftrightarrow Q\), đọc là “\(P\) khi và chỉ khi \(Q\)”. Vì thế chứng minh tương đương đòi hỏi hai chiều, hoặc một chuỗi biến đổi mà từng bước đều có thể làm ngược hợp lệ.
+
+Chẳng hạn, với \(n\in\mathbb Z\), “\(n\) chẵn khi và chỉ khi \(n^2\) chẵn” là đúng. Chiều thuận: nếu \(n=2k\) thì \(n^2=4k^2\) chẵn. Chiều ngược: nếu \(n\) lẻ thì \(n=2k+1\), suy ra \(n^2=4k(k+1)+1\) lẻ; do đó \(n^2\) chẵn buộc \(n\) chẵn. Cả hai chiều đều có lập luận, không dựa vào vài phép thử.
+
+<!-- LESSON_ID: TOP01-M05; OUTCOME_ID: TOP01-O05; source: candidate R02 -->
+
+Đọc đúng một mệnh đề còn đòi hỏi biết câu ấy đang nói về một phần tử hay tất cả phần tử. Trong lớp học, câu “Mọi học sinh đều biết bơi” chỉ đúng khi **tất cả** học sinh được xét đều biết bơi. Để bác bỏ, chỉ cần tìm **một** học sinh không biết bơi; còn câu “Có học sinh biết bơi” chỉ cần một trường hợp thỏa. Hai từ “mọi” và “có” vì vậy quy định lượng bằng chứng cần có.
+
+Trong ký hiệu toán, \(\forall x\in D,\ P(x)\) yêu cầu \(P\) đúng với từng phần tử của miền \(D\); \(\exists x\in D,\ P(x)\) chỉ cần có một phần tử thỏa. Phủ định của “với mọi” là “tồn tại một trường hợp không”, và ngược lại. Miền xét phải giữ nguyên: “có số nguyên \(n\) sao cho \(n^2=2\)” sai, nhưng thay số nguyên bằng số thực thì câu đúng nhờ \(n=\sqrt2\). Điều kiện về miền không phải chú thích có thể bỏ qua.
+
+### Vận dụng và tự đối chiếu
+
+<!-- First Try for TOP01-M01; noncanonical knowledge question -->
+**1.** “\(2k+1\) là số lẻ”, với \(k\in\mathbb Z\), là mệnh đề hay phát biểu chứa biến? Nếu viết “Với mọi \(k\in\mathbb Z\), \(2k+1\) là số lẻ”, em có thể kết luận gì?
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+Câu đầu còn chứa biến \(k\) chưa được lượng hóa. Câu thứ hai là một mệnh đề đúng: mọi số nguyên \(k\) đều cho biểu thức \(2k+1\) có dạng số lẻ. Nếu em vẫn phân vân, thử \(k=0\) và \(k=2\), rồi phân biệt việc kiểm vài giá trị với một lời khẳng định cho **mọi** số nguyên.
+
+</details>
+
+<!-- First Try for TOP01-M02; noncanonical knowledge question -->
+**2.** Hãy phủ định hai phát biểu “\(t\ge5\)” và “\(t<-1\)”, với \(t\in\mathbb R\).
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+Hai phủ định lần lượt là \(t<5\) và \(t\ge-1\). Nếu em viết \(t\le5\), hãy thử ngay \(t=5\): cả phát biểu gốc và câu mới đều đúng, nên đó không thể là phép phủ định.
+
+</details>
+
+<!-- First Try for TOP01-M03; noncanonical knowledge question -->
+**3.** Với \(n\in\mathbb Z\), “Nếu \(n\) chia hết cho 8 thì \(n\) chia hết cho 4” đúng không? Chiều đảo có đúng không?
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+Chiều thuận đúng vì \(n=8k=4(2k)\). Chiều đảo sai: \(n=4\) chia hết cho 4 nhưng không chia hết cho 8. Muốn chứng minh hai chiều, phải có hai lập luận riêng hoặc phép biến đổi tương đương hợp lệ.
+
+</details>
+
+<!-- First Try for TOP01-M04; noncanonical knowledge question -->
+**4.** Có đúng rằng “\(n\) chia hết cho 4 khi và chỉ khi \(n^2\) chia hết cho 4” với mọi số nguyên \(n\) không?
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+Sai. Chiều thuận đúng, nhưng \(n=2\) cho \(n^2=4\) chia hết cho 4 trong khi \(n\) không chia hết cho 4. Nếu em mới chứng minh một chiều, hãy tìm một phản ví dụ cho chiều còn lại trước khi kết luận tương đương.
+
+</details>
+
+<!-- First Try for TOP01-M05; noncanonical knowledge question -->
+**5.** Câu “Với mọi số thực \(x\), \(x^2+1>0\)” đúng hay sai? Viết phủ định của câu ấy.
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+Đúng vì \(x^2\ge0\) cho mọi số thực, nên \(x^2+1\ge1>0\). Phủ định là “Tồn tại số thực \(x\) sao cho \(x^2+1\le0\)”, và phát biểu đó sai. Nếu em phủ định “mọi” thành “mọi ... không”, hãy thử nhớ lại chỉ một phản ví dụ đã đủ bác bỏ câu “mọi”.
+
+</details>
+
+## Những điều kiện trở thành tập hợp
+
+Khi đã biết một đối tượng phải thỏa điều kiện nào, ta có thể gom các đối tượng lại thành một tập hợp. Phép giao, hợp, hiệu hay phần bù khi ấy mô tả cách ghép hoặc loại các điều kiện, thay vì chỉ là các ký hiệu để học thuộc.
+
+<!-- LESSON_ID: TOP01-M06; OUTCOME_ID: TOP01-O06; source: candidate R02 -->
+
+Khi nói một học sinh **thuộc** câu lạc bộ, ta đang xét một cá thể có ở trong nhóm hay không. Khi nói câu lạc bộ Toán là **một nhóm con** của câu lạc bộ học thuật, ta so hai tập hợp với nhau. Toán học phân biệt hai quan hệ ấy bằng ký hiệu \(x\in A\) cho phần tử thuộc tập \(A\), và \(A\subseteq B\) khi **mọi phần tử** của \(A\) đều thuộc \(B\).
+
+Xét \(A=\{1,2\}\) và \(B=\{x\in\mathbb N:1\le x\le2\}\). Hai cách mô tả cho đúng cùng các phần tử nên \(A=B\); để chứng minh hai tập bằng nhau, ta có thể chứng minh mỗi tập là tập con của tập kia. Trong \(A\), số 2 là một **phần tử**, ký hiệu \(2\in A\), còn \(\{2\}\) là một **tập con**, ký hiệu \(\{2\}\subseteq A\). Số 2 không đồng nhất với tập chỉ chứa số 2. Tập rỗng \(\varnothing\) không có phần tử nhưng vẫn là tập con của mọi tập.
+
+<!-- LESSON_ID: TOP01-M07; OUTCOME_ID: TOP01-O07; source: candidate R02 -->
+
+Sau khi phân biệt phần tử với tập con, ta mới có thể ghép các nhóm mà không nhầm lẫn. Giả sử một học sinh có thể tham gia cả câu lạc bộ Toán và câu lạc bộ Anh. Khi hỏi ai tham gia **cả hai**, ta đang lấy **giao** hai tập hợp; khi hỏi ai tham gia **ít nhất một** trong hai, ta đang lấy **hợp**. Chữ “hoặc” trong hợp được hiểu theo nghĩa bao hàm: học sinh tham gia cả hai vẫn được tính, nhưng chỉ tính **một lần**.
+
+Với \(A=\{1,2,3,4\}\) và \(B=\{3,4,5\}\), các phần tử chung là 3,4 nên \(A\cap B=\{3,4\}\). Gom mọi phần tử xuất hiện trong ít nhất một tập và xóa lặp, ta được \(A\cup B=\{1,2,3,4,5\}\). Không có lý do bỏ 3 và 4 khỏi hợp chỉ vì chúng cùng ở hai tập. Trên biểu đồ Ven, vùng chung nằm trong cả hình của giao lẫn hợp.
+
+<!-- LESSON_ID: TOP01-M08; OUTCOME_ID: TOP01-O08; source: candidate R02 -->
+
+Đôi khi bài toán không hỏi ai có mặt trong ít nhất một nhóm, mà hỏi ai chỉ ở một nhóm. Một danh sách có thể lọc những người thuộc nhóm A nhưng **không** thuộc nhóm B. Đó là phép **hiệu** \(A\setminus B\). Nếu đổi lại thành “thuộc B nhưng không thuộc A”, kết quả là \(B\setminus A\), thường khác hẳn. Cách viết định nghĩa là \(A\setminus B=\{x\in A:x\notin B\}\): ta **giữ** tập đứng trước dấu trừ và loại những phần tử cũng có trong tập đứng sau.
+
+Với \(A=\{1,2,3,4\}\), \(B=\{3,4,5\}\), giữ A rồi bỏ phần chung 3,4 cho \(A\setminus B=\{1,2\}\); đổi chiều lại cho \(B\setminus A=\{5\}\). Như vậy hiệu không có tính giao hoán. Trên biểu đồ Ven, \(A\setminus B\) chính là miền chỉ thuộc A, còn miền giao không thuộc hiệu của hai tập theo bất cứ chiều nào.
+
+<!-- LESSON_ID: TOP01-M09; OUTCOME_ID: TOP01-O09; source: candidate R02 -->
+
+Những đối tượng bị loại khỏi A luôn phải được hiểu trong một phạm vi U cụ thể. Câu hỏi “Ai **không** tham gia câu lạc bộ Toán?” chưa đủ rõ nếu ta chưa biết đang hỏi trong **một lớp** hay **toàn trường**. Toán học gọi tập tất cả đối tượng đang xét là **tập vũ trụ** \(U\). Nếu \(A\subseteq U\), phần bù của \(A\) trong \(U\) là \(U\setminus A\). Vì thế thay \(U\) có thể thay kết quả phần bù, dù \(A\) giữ nguyên.
+
+Chẳng hạn, \(U=\{1,2,3,4,5,6\}\) và \(A=\{2,4,6\}\), phần bù là \(\{1,3,5\}\). Nếu mở rộng \(U\) để thêm 0, phần bù cũng có thêm 0. Với các khoảng số thực, xác định vũ trụ cũng giúp ta quyết định đúng đầu mút nào nằm ở phần bù.
+
+### Vận dụng và tự đối chiếu
+
+<!-- First Try for TOP01-M06; noncanonical knowledge question -->
+**1.** Với \(A=\{2,4\}\), hãy phân biệt đúng sai cho ba phát biểu: \(2\in A\), \(\{2\}\subseteq A\), \(\{2\}\in A\).
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+Hai phát biểu đầu đúng, phát biểu cuối sai: các phần tử của \(A\) là **số** 2 và 4, không phải **tập** \(\{2\}\). Nếu em còn lẫn, xác định đối tượng bên trái ký hiệu là một phần tử hay một tập hợp trước khi so.
+
+</details>
+
+<!-- First Try for TOP01-M07; noncanonical knowledge question -->
+**2.** Cho \(A=\{-1,0,1,2\}\) và \(B=\{0,2,4\}\). Tìm \(A\cap B\) và \(A\cup B\).
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+\(A\cap B=\{0,2\}\), còn \(A\cup B=\{-1,0,1,2,4\}\). Nếu em muốn đếm vùng Ven, hãy đưa 0 và 2 vào phần chung nhưng khi tính tổng mỗi phần tử chỉ xuất hiện một lần.
+
+</details>
+
+<!-- First Try for TOP01-M08; noncanonical knowledge question -->
+**3.** \(A=\{1,3,5\}\), \(B=\{3,4,5\}\). Hãy tính hai hiệu theo hai chiều.
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+\(A\setminus B=\{1\}\), còn \(B\setminus A=\{4\}\). Nếu em đổi nhầm kết quả, hãy đọc lại tên tập **đứng trước dấu \(\setminus\)** và xác định phần tử được giữ.
+
+</details>
+
+<!-- First Try for TOP01-M09; noncanonical knowledge question -->
+**4.** Trong \(U=\{1,2,3,4,5,6,7,8\}\), lấy \(A=\{2,3,5,7\}\). Tìm phần bù của A.
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+\(U\setminus A=\{1,4,6,8\}\). Nếu em chỉ viết “phần bù của A” mà không nêu U, hãy tự hỏi đang loại A khỏi **tập nào**.
+
+</details>
+
+## Đọc điều kiện bằng hình và đếm không trùng
+
+Trục số cho thấy một giá trị ở trong hay ngoài khoảng, còn biểu đồ Ven làm rõ các nhóm đối tượng có thể giao nhau. Hai hình thức biểu diễn này đưa phép lập luận về điều kiện trở lại một bài toán trực quan.
+
+<!-- LESSON_ID: TOP01-M10; OUTCOME_ID: TOP01-O10; source: candidate R02 -->
+
+Một điều kiện như “giữa 1 và 3” cần nói rõ **có lấy** 1 hoặc 3 không. Trên trục số, điều này được thể hiện bằng ngoặc: \((a,b)\) nghĩa \(a<x<b\), còn \([a,b]\) nghĩa \(a\le x\le b\). Khoảng \((a,b]\) bỏ a nhưng nhận b. Với vô cực, luôn dùng ngoặc tròn vì \(\pm\infty\) không phải một số thực có thể lấy làm đầu mút.
+
+Xét \(X=(-\infty,3]\) và \(Y=(1,+\infty)\). Muốn thuộc **giao**, số phải vừa lớn hơn 1 vừa không vượt 3, nên \(X\cap Y=(1,3]\). Muốn thuộc **hợp**, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy \(X\cup Y=\mathbb R\). Thử riêng \(x=1\) và \(x=3\) giúp ta kiểm dấu ngoặc ở biên.
+
+<!-- LESSON_ID: TOP01-M11; OUTCOME_ID: TOP01-O11; source: candidate R02 -->
+
+Khi có số lượng của hai nhóm, phần giao cần được tính đúng một lần để đếm không trùng. Một học sinh tham gia hai câu lạc bộ sẽ được tính **hai lần** nếu ta chỉ cộng số học sinh của từng câu lạc bộ. Vì vậy với hai tập hữu hạn, ta phải trừ một lần phần đã đếm trùng: \(|A\cup B|=|A|+|B|-|A\cap B|\). Hình Ven hai nhóm chia vũ trụ thành bốn vùng: chỉ A, cả hai, chỉ B và ngoài cả hai. Ta điền vùng giao trước rồi mới tính các vùng riêng.
+
+Giả sử lớp có 40 bạn: 23 bạn học Anh, 25 bạn học Toán, 12 bạn học cả hai. Vùng chỉ Anh có \(23-12=11\) bạn, chỉ Toán có \(25-12=13\), vùng cả hai 12. Vậy số bạn học ít nhất một môn là \(11+12+13=36\); còn \(40-36=4\) bạn không học môn nào trong hai. Kiểm lại \(11+12+13+4=40\) cho thấy không có vùng nào bị tính thiếu hoặc trùng.
+
+![Bốn vùng trong biểu đồ Ven của lớp 40 học sinh](../../visuals/THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg)
+
+*Quan sát hình:* Đọc lần lượt chỉ Anh 11, cả hai 12, chỉ Toán 13, không tham gia 4; tổng bốn vùng bằng 40 và vùng giao chỉ tính một lần.
+
+### Vận dụng và tự đối chiếu
+
+<!-- First Try for TOP01-M10; noncanonical knowledge question -->
+**1.** Cho \(X=[-2,2)\), \(Y=(0,4]\). Tìm hợp và giao, giải thích việc lấy hay bỏ hai đầu 0,2.
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+\(X\cap Y=(0,2)\), còn \(X\cup Y=[-2,4]\). Trong giao, 0 bị Y loại và 2 bị X loại; trong hợp, hai điểm ấy vẫn được nhận bởi ít nhất một tập.
+
+</details>
+
+<!-- First Try for TOP01-M11; noncanonical knowledge question -->
+**2.** Trong 60 học sinh, 32 bạn chơi bóng đá, 28 bạn chơi bóng rổ, 10 bạn chơi cả hai. Tìm số chỉ chơi từng môn, chơi ít nhất một môn và không chơi môn nào.
+
+<details class="slm-topic-first-try" markdown="1">
+<summary>Đối chiếu sau khi tự làm</summary>
+
+Chỉ bóng đá: \(32-10=22\); chỉ bóng rổ: \(28-10=18\); cả hai: 10; ít nhất một: \(22+10+18=50\); không chơi: \(60-50=10\). Kiểm tổng bốn vùng: \(22+10+18+10=60\). Nếu em cộng \(32+28\) mà quên trừ 10, hãy tô riêng vùng giao để thấy nó đã bị đếm hai lần.
+
+</details>
+
+
+<!-- AUTHORING_ONLY: source-locked figure custody and interaction SPEC_ONLY notes preserved in original R02 blob 1edc9b33f28b7c07ad91a7aac091b1aa8e048540. The learner text already places verified SVG inline. -->
+
+
+# Luyện tập
+
+**Cách học:** Tự giải từng mục tiêu trước khi mở gợi ý và lời giải trong ngân hàng câu hỏi; mỗi câu giữ nguyên một bản canonical. Các câu trắc nghiệm/tự luận cũ được tham chiếu theo ID chứ không sao chép đề/đáp án; sáu câu mới chỉ có một bản tại thư viện extension. Nếu sai, quay lại M01–M11 đúng với đường sửa lỗi. Không yêu cầu học phần Core SGK như điều kiện bắt buộc.
+
+| Mục tiêu của CĐ01 | Câu luyện tập / tự luận canonical |
+|---|---|
+| TOP01-O01 — Nhận diện mệnh đề và biến | `THPT-G10-B01-C01`, `THPT-TOP01-ADD01` |
+| TOP01-O02 — Phủ định | `THPT-G10-B01-C02`, `THPT-G10-B01-P05` |
+| TOP01-O03 — Kéo theo, đảo, đủ–cần | `THPT-G10-B01-P03`, `THPT-G10-B01-P06`, `THPT-G10-CHI-W01` |
+| TOP01-O04 — Tương đương hai chiều | `THPT-G10-B01-P04`, `THPT-TOP01-ADD02` |
+| TOP01-O05 — Lượng từ ∀/∃ | `THPT-G10-B01-P01`, `THPT-G10-B01-P02` |
+| TOP01-O06 — Phần tử, tập con, tập bằng nhau | `THPT-G10-B02-C01`, `THPT-G10-B02-P06` |
+| TOP01-O07 — Hợp và giao | `THPT-G10-B02-C02`, `THPT-TOP01-ADD03` |
+| TOP01-O08 — Hiệu hai tập | `THPT-G10-B02-P01`, `THPT-TOP01-ADD04` |
+| TOP01-O09 — Phần bù trong U | `THPT-G10-B02-P02`, `THPT-TOP01-ADD05` |
+| TOP01-O10 — Khoảng/đoạn trên ℝ | `THPT-G10-B02-P03`, `THPT-G10-B02-P04` |
+| TOP01-O11 — Đếm tập hợp bằng Venn | `THPT-G10-B02-P05`, `THPT-G10-CHI-W02-ANCHOR`, `THPT-TOP01-ADD06` |
+
+**Tự luận có rubric chuẩn một nguồn:** `THPT-G10-CHI-W01` (chứng minh, mệnh đề đảo và lượng từ, 7 điểm) và `THPT-G10-CHI-W02-ANCHOR` (đếm bốn miền Venn, 7 điểm). Anchor chỉ là nhãn cho Written; không chép một bản riêng. Lời giải và rubric gốc trong source immutable `95a554e31a613b8e215679fe6790738473d598df`. Không tự động ghi điểm năng lực từ học viên tự đối chiếu.
+
+**Hướng dẫn chọn dạng:** Câu có “mọi/tồn tại” → M05; câu “nếu ... thì” → M03; “khi và chỉ khi” → M04; số lượng hai CLB → M11; tập nghiệm bất phương trình → M10. Lý do chọn phương pháp phải được viết thành lời, không chỉ chọn một phép tính.
+
+# Tự kiểm tra
+
+**Mục đích:** Tự nhận biết phần kiến thức cần ôn sau khi học trọn CĐ01. Đây là một lượt **công khai, tự đối chiếu** `CLIENT_SELF_CHECK_NO_MASTERY`, **KHÔNG phải** bộ `TOPIC_READINESS` kín/độc lập. Một số câu đã có ở Luyện tập nên không được dùng làm bằng chứng đánh giá chính thức.
+
+**Cách thực hiện:** Làm tất cả câu trước; chọn **Nộp bài cuối cùng / Final Submit** cho toàn lượt rồi mới được đối chiếu. Khi chưa Final Submit: **không gợi ý, không AI Tutor, không đáp án, không phản hồi đúng/sai, không hiện lời giải hay rubric**. Sau khi nộp mới hiện đối chiếu và các liên kết sửa lỗi M01–M11. WEBSITE phải thực thi khóa này bằng cơ chế thật; source Markdown không chứng minh đã an toàn trình duyệt.
+
+| Thứ tự | Outcome kiểm tra | Placement trỏ về item công khai có sẵn | Quay lại |
+|---|---|---|---|
+| 1 | TOP01-O01 | `THPT-G10-B01-C01` | TOP01-M01 |
+| 2 | TOP01-O02 | `THPT-G10-B01-C02` | TOP01-M02 |
+| 3 | TOP01-O03 | `THPT-G10-B01-P03` | TOP01-M03 |
+| 4 | TOP01-O04 | `THPT-G10-B01-P04` | TOP01-M04 |
+| 5 | TOP01-O05 | `THPT-G10-B01-P01` | TOP01-M05 |
+| 6 | TOP01-O06 | `THPT-G10-B02-C01` | TOP01-M06 |
+| 7 | TOP01-O07 | `THPT-G10-B02-C02` | TOP01-M07 |
+| 8 | TOP01-O08 | `THPT-G10-B02-P01` | TOP01-M08 |
+| 9 | TOP01-O09 | `THPT-G10-B02-P02` | TOP01-M09 |
+| 10 | TOP01-O10 | `THPT-G10-B02-P03` | TOP01-M10 |
+| 11 | TOP01-O11 | `THPT-G10-B02-P05` | TOP01-M11 |
+
+**Sau khi nộp:** Tự ghi 1) câu còn chưa hiểu, 2) sai ở mệnh đề hay phép tập hợp, 3) mục tiêu tương ứng, 4) một câu luyện lại **khác** theo ID còn lại trong từng dòng. Không tạo Skill Mastery từ điểm tự đối chiếu. Đề đánh giá năng lực độc lập chính thức chỉ có thể dùng ngân hàng kín chưa lộ và phải được kiểm Q16/RD1 riêng.
+
+## Phụ lục kỹ thuật AUTHORING (không hiện cho học viên)
+
+PACKET_ID: THPT-TOPIC01-LOGIC-SETS-FULL-R01
+CATALOG_TOPIC: CĐ01 / 22 (OWNER-CATALOG-ORDER)
+RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
+ORIGINAL_SGK_REFERENCE: Toán 10 KNTT tập 1 B01 in 5–11, B02 in 12–19, cuối 20–21; SBT tập 1 B01 in 5–7, B02 in 8–11, cuối 12–15 theo receipt original; không dùng SGK làm cấu trúc Topic.
+ORIGINAL_CANONICAL_SNAPSHOT: prototypes/thpt/content-drafts/THPT_G10_CHI_B01_B02_D1D6_AUTHORING_R01_SNAPSHOT.md
+ORIGINAL_CANONICAL_BLOB: 95a554e31a613b8e215679fe6790738473d598df
+ORIGINAL_REVIEW_SNAPSHOT: prototypes/thpt/content-drafts/THPT_G10_CHI_B01_B02_NOTEBOOKLM_D1D6_R01_PASS_RECEIPT_20261029.md
+ORIGINAL_REVIEW_BLOB: fece80dcb4b0e17d369e2ecbe12e8d13b672281a
+PUBLIC_SOURCE_INDEX_BLOB: 09d36b0d289ebc54cc4ee51805503cf7f6e714f2
+PUBLIC_EXTENSION_BLOB: 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd
+ASSET_IMPLICATION_BLOB: 40b53b26deb48a7cfdff91be5fe01d12a67bebeb
+ASSET_VENN_BLOB: ea84ee68187e83aa4bc6b14e49a965b3d7da5a11
+TOPIC_OUTCOMES: 11
+KNOWLEDGE_MODULES: 11
+FIRST_TRY_REVEAL_REMEDIATION: 11 EACH
+UNIQUE_CANONICAL_PUBLIC_ITEM_IDS: 24 (18 unchanged original +6 new)
+PUBLIC_SELF_CHECK_PLACEMENTS: 11 (reuse existing IDs, NO_MASTERY)
+ORIGINAL_WRITTEN_IDS: 2 (one rubric each)
+PRIVATE_RD1_IMPORTED: 0
+OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
+RELEASE_AUTHORIZATION: NO
+
+| item_id | topic outcome | role | original canonical or extension |
+|---|---|---|---|
+| `THPT-G10-B01-C01` | `TOP01-O01` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-TOP01-ADD01` | `TOP01-O01` | TOPIC_PRACTICE | 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd |
+| `THPT-G10-B01-C02` | `TOP01-O02` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B01-P05` | `TOP01-O02` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B01-P03` | `TOP01-O03` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B01-P06` | `TOP01-O03` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-CHI-W01` | `TOP01-O03` | TOPIC_WRITTEN | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B01-P04` | `TOP01-O04` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-TOP01-ADD02` | `TOP01-O04` | TOPIC_PRACTICE | 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd |
+| `THPT-G10-B01-P01` | `TOP01-O05` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B01-P02` | `TOP01-O05` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B02-C01` | `TOP01-O06` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B02-P06` | `TOP01-O06` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B02-C02` | `TOP01-O07` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-TOP01-ADD03` | `TOP01-O07` | TOPIC_PRACTICE | 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd |
+| `THPT-G10-B02-P01` | `TOP01-O08` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-TOP01-ADD04` | `TOP01-O08` | TOPIC_PRACTICE | 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd |
+| `THPT-G10-B02-P02` | `TOP01-O09` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-TOP01-ADD05` | `TOP01-O09` | TOPIC_PRACTICE | 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd |
+| `THPT-G10-B02-P03` | `TOP01-O10` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B02-P04` | `TOP01-O10` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-B02-P05` | `TOP01-O11` | TOPIC_PRACTICE | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-G10-CHI-W02-ANCHOR` | `TOP01-O11` | TOPIC_WRITTEN | 95a554e31a613b8e215679fe6790738473d598df |
+| `THPT-TOP01-ADD06` | `TOP01-O11` | TOPIC_PRACTICE | 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd |
+
+**Source-lock và review:** 18 historical SGK original item + 2 SVG đã được independent reviewer PASS trong phạm vi SGK nguyên gốc; 11 Topic mô-đun, cách dẫn dắt và 6 item mới là Delta C tự QA theo Q18 v3.0.1, **không** tự ghi “NotebookLM PASS chuyên đề”. 0 câu đề kín được nhập. Bài Topic là hành trình độc lập, không có Topic Core.
