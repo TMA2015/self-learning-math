@@ -6,7 +6,8 @@ const path=require("node:path");
 const sourceFile=fs.readFileSync(path.join(__dirname,"../docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"));
 const page=sourceFile.toString("utf8");
 const sha=require("node:crypto").createHash("sha1")
- .update("blob "+sourceFile.length+"\\0").update(sourceFile).digest("hex");
+ .update("blob "+sourceFile.length).update(Buffer.from([0]))
+ .update(sourceFile).digest("hex");
 if(sha==="0603fbb2b61374fcd49eff3c119197cff3fa77e4"){
   // Owner-accepted G11 B01 Golden four-tab canonical as merged in #982.
   // Exact Git blob is necessary: no content, math, HELP, IDs or pedagogy
