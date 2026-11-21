@@ -8,7 +8,7 @@
 **OWNER_AUTHORIZATION:** User 21/11/2026: “B27 pass. tiếp tục nâng cấp bài 28. phát hành khi đạt.” Master #795 sequential order G10 → G11 → G12; therefore the 28th canonical SGK lesson is **G11-B01**, not a non-existent G10 B28.
 **CANONICAL_LEARNER_PATH:** `docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md`
 **BASELINE_SOURCE_BLOB:** `9605eaf510f9f873751e20bef29f4aac848609a3`
-**CANDIDATE_SOURCE_BLOB:** `2f76ba5644bb0d9a1995ee89d59741d68825d2c2`
+**CANDIDATE_SOURCE_BLOB:** `2d7cff18f4e46375f06a672a3742a2a43b5f2db5`
 **ORIGINAL_SVG_PATH:** `docs/assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg`
 **ORIGINAL_SVG_BLOB:** `a75d70c2dbbedce6934f0f4521c159dd9045844e`
 **DELTA:** DELTA_C_ACADEMIC_MATERIAL (targeted rewritten explanations and newly authored unscored First Try; no alterations to Core/Written/RD1) plus scoped DELTA_A_UI (four Golden tabs/semantic frame placement).
@@ -50,7 +50,7 @@ The six new IDs identify **only** these six standalone unscored learning-check q
 - Six fully independent worked examples with **Đề bài / Phân tích / Lời giải / Kiểm lại** in one local block: -150° conversion, ISS arc, 5π/6 unit-circle sign+tan/cot, cos=-2/3 QIII resulting sin=-√5/3 and tan=√5/2, -675° periodicity, and R=30cm -2π/3 signed wheel arc.
 - Maths checked algebraically and arithmetically: (1700pi=5340.7075...), (sin^2+cos^2=1) and (	ancot=1) on the valid domain, correct table at 0 and π/2 where exactly one of tan/cot is undefined, cos(π-α)=-cos(α), tan(π-α)=-tan(α) when defined. No hint, answer, correctness or Tutor exposed before an independent Final Submit because only the voluntary **unscored** learner accordion is modified; Core/Assessment not changed.
 - **Q15/Q16**: new local First Try IDs not reused for Readiness or Skill Mastery, existing two HELP IDs unchanged, no changed Practice, Written, RD1 private, Firebase or Q16. Public self-check is `CLIENT_SELF_CHECK_NO_MASTERY`.
-- Baseline original source had 38 old TeX chunks, 37 old spellings restructured with canonical LaTeX commands. New source has 164 TeX chunks; this is a real academic and pedagogical rewrite, *not* a source-equivalent formatting delta. Source lock and verified outcomes guard the replacement instead of a lax total-token quota.
+- Baseline original source had 38 old TeX chunks, 37 old spellings restructured with canonical LaTeX commands. After a learner-view sweep, 23 source lines in new First Try/Example prompts and D6 steps were repaired to render mathematical notation as actual MathJax (rather than literal non-math parentheses). New source has 203 TeX chunks; this is a real academic and pedagogical rewrite, *not* a source-equivalent formatting delta. Source lock and verified outcomes guard the replacement instead of a lax total-token quota.
 
 ## G3/G5 gates and handoff
 
