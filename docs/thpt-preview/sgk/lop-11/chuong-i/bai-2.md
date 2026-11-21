@@ -37,7 +37,7 @@
 
         **Dấu hiệu:** Em cộng \(\cos60^\circ+\cos30^\circ\) để tìm cos của góc tổng.
 
-        **Tự sửa:** Chỉ góc tổng trên hình rồi áp dụng công thức cộng với hai tích \(\cos u\cos v\) và \(\sin u\sin v\). Dùng ngay \(\cos90^\circ=0\) làm phép kiểm lại. Luyện lại công thức cộng ở Core của Bài 2.
+        **Tự sửa:** Chỉ góc tổng trên hình rồi áp dụng công thức cộng với hai tích \(\cos u\cos v\) và \(\sin u\sin v\). Dùng \(\cos90^\circ=0\) làm phép kiểm lại. **Luyện lại:** [Core và Luyện tập Bài 2](../luyen-tap/) — thẻ *Bài 2 · Vận dụng*, câu tính \(\cos75^\circ\); em phải viết đủ hai tích trước khi cộng/trừ.
 
     ### 1.2. Vì sao có công thức góc nhân đôi?
 
@@ -59,7 +59,7 @@
 
         **Dấu hiệu:** Em lấy \(\cos u=+\frac45\) dù \(u\) thuộc góc phần tư II, hoặc nhầm \(\sin2u=2\sin u\).
 
-        **Tự sửa:** Xác định \(\cos u<0\) trước khi lấy căn từ hệ thức cơ bản; sau đó thay vào \(\sin2u=2\sin u\cos u\) và \(\cos2u=\cos^2u-\sin^2u\). Ôn mục 2.2 và luyện dạng góc nhân đôi ở Core Bài 2.
+        **Tự sửa:** Xác định \(\cos u<0\) trước khi lấy căn từ hệ thức cơ bản; sau đó thay vào \(\sin2u=2\sin u\cos u\) và \(\cos2u=\cos^2u-\sin^2u\). **Ôn mục 2.2**, rồi mở [Core và Luyện tập Bài 2](../luyen-tap/): thẻ *Bài 2 · Kiến thức cơ bản*, câu tính \(\cos(2\pi/3)\), sau đó thẻ *Bài 2 · Vận dụng*, câu tính \(\sin2\alpha,\cos2\alpha\). Trước khi làm phải ghi dấu sin/cos của góc ban đầu.
 
     ### 1.3. Khi biểu thức là tích, vì sao nên đổi thành tổng?
 
@@ -81,7 +81,7 @@
 
         **Dấu hiệu:** Em viết \(\cos(u+v)-\cos(u-v)\), khiến kết quả bị đổi dấu.
 
-        **Tự sửa:** Viết lại theo thứ tự **cos hiệu trừ cos tổng**, rồi thử \(u=v\) để thấy kết quả không được âm vì \(2\sin^2u\ge0\). Trở lại mục 2.3 và luyện một tích cos·cos khác.
+        **Tự sửa:** Viết lại theo thứ tự **cos hiệu trừ cos tổng**, rồi thử \(u=v\) để thấy kết quả không được âm vì \(2\sin^2u\ge0\). **Ôn mục 2.3**, sau đó vào [Core và Luyện tập Bài 2](../luyen-tap/), thẻ *Bài 2 · Vận dụng*, câu tính \(2\sin75^\circ\sin15^\circ\). Đây là đề khác Vận dụng vừa làm nhưng cùng cách biến đổi.
 
     ### 1.4. Khi biểu thức là tổng, vì sao xuất hiện nửa tổng và nửa hiệu?
 
@@ -103,7 +103,7 @@
 
         **Dấu hiệu:** Em thay \(75^\circ+15^\circ=90^\circ\) và \(75^\circ-15^\circ=60^\circ\) trực tiếp, quên chia hai.
 
-        **Tự sửa:** Lập hai ô \((u+v)/2\), \((u-v)/2\), tự nhân trở lại để kiểm góc ban đầu. Ôn lại mục 2.4 và luyện một cặp cos.
+        **Tự sửa:** Lập hai ô \((u+v)/2\), \((u-v)/2\), tự nhân trở lại để kiểm góc ban đầu. **Ôn mục 2.4**, rồi vào [Core và Luyện tập Bài 2](../luyen-tap/), thẻ *Bài 2 · Vận dụng*, câu tính \(\sin75^\circ+\sin15^\circ\). Cần ghi rõ nửa tổng và nửa hiệu.
 
     **Ứng dụng thực tế: từ tổng hai âm đến tín hiệu của một phím điện thoại.**
 
@@ -139,12 +139,12 @@
 
         **Dấu hiệu:** Em đổi tổng hai sin thành sin nhân sin, hoặc lấy \(770+1209=1979\) làm tần số mới mà bỏ qua hệ số \(2\pi\).
 
-        **Tự sửa:** Viết đúng \(\sin u+\sin v=2\sin\frac{u+v}{2}\cos\frac{u-v}{2}\), ghi cả hai góc \(u,v\) rồi mới chia hai. Kiểm \(\cos(-z)=\cos z\), sau đó trở về mục 2.4 và luyện lại dạng tổng hai sin trong Core/Luyện tập.
+        **Tự sửa:** Viết đúng \(\sin u+\sin v=2\sin\frac{u+v}{2}\cos\frac{u-v}{2}\), ghi cả hai góc \(u,v\) rồi mới chia hai. Kiểm \(\cos(-z)=\cos z\). **Ôn mục 2.4**, rồi thử [Core và Luyện tập Bài 2](../luyen-tap/), thẻ *Bài 2 · Vận dụng*, câu \(\sin75^\circ+\sin15^\circ\), trước khi quay lại tính tín hiệu phím 4.
 
 
 === "Kiến thức SGK"
 
-    Bốn nhóm công thức cho phép chuyển qua lại giữa góc tổng, góc nhân đôi, tích và tổng các giá trị lượng giác. Việc chọn chiều biến đổi phụ thuộc cấu trúc biểu thức và điều kiện xác định.
+
 
     ### 2.1. Công thức cộng và trừ
 
@@ -295,6 +295,23 @@
     <p><strong>Lời giải:</strong> \(\sin(t+\pi/4)=\frac{\sqrt2}{2}\sin t+\frac{\sqrt2}{2}\cos t\). Vì vậy \(f(t)=5\sqrt2\sin(t+\pi/4)\), suy ra \(k=5\sqrt2\), \(\varphi=\pi/4\).</p>
 
     <p><strong>Kiểm lại:</strong> Khai triển vế phải thu đúng \(5\sin t+5\cos t\). Điều này giải quyết tình huống mở đầu SGK.</p></div>
+
+    ### 3.6. Tổng hợp hai dao động có cùng tần số
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Hai dao động có cùng đơn vị li độ (cm) là \(x_1(t)=3\cos(2t+\pi/3)\) và \(x_2(t)=3\cos(2t-\pi/6)\), với \(t\) tính bằng giây. Viết dao động tổng \(x(t)=x_1(t)+x_2(t)\) theo dạng \(A\cos(2t+\varphi)\), xác định biên độ \(A>0\) và pha ban đầu \(\varphi\in[-\pi,\pi]\).</p>
+
+    <p><strong>Phân tích:</strong> Hai cos có cùng hệ số \(2t\) nên dùng công thức **tổng thành tích**. Nửa hiệu của hai pha không phụ thuộc \(t\), vì vậy một thừa số là số không đổi và cho biết biên độ.</p>
+
+    <p><strong>Lời giải:</strong> Đặt \(u=2t+\pi/3\), \(v=2t-\pi/6\). Khi đó \(\frac{u+v}{2}=2t+\pi/12\), \(\frac{u-v}{2}=\pi/4\). Suy ra
+    \[
+      x(t)=3(\cos u+\cos v)
+          =6\cos\left(2t+\frac{\pi}{12}\right)\cos\frac{\pi}{4}
+          =3\sqrt2\cos\left(2t+\frac{\pi}{12}\right).
+    \]
+    Do đó \(A=3\sqrt2\) cm và \(\varphi=\pi/12\) rad.</p>
+
+    <p><strong>Kiểm lại:</strong> Thay \(t=0\) ở vế đầu được \(\frac32+\frac{3\sqrt3}{2}\), còn vế sau là \(3\sqrt2\cos(\pi/12)\), bằng nhau. Hai pha và biên độ đều đáp ứng điều kiện đề bài.</p></div>
+
 
 === "Lỗi thường gặp"
 
