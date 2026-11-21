@@ -479,7 +479,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** MH<MK
+**Đáp án:** MH<MK
 
 **Lời giải và vì sao:** Tam giác MHK vuông tại H cho MK²=MH²+HK².
 
@@ -490,7 +490,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 0
+**Đáp án:** 0
 
 **Lời giải và vì sao:** M là hình chiếu chính nó; không có khoảng cách dương.
 
@@ -501,7 +501,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Bằng nhau
+**Đáp án:** Bằng nhau
 
 **Lời giải và vì sao:** Cả đường có cùng phương song song nên độ cao vuông góc tới mặt không đổi.
 
@@ -512,7 +512,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 4,5m
+**Đáp án:** 4,5m
 
 **Lời giải và vì sao:** Khoảng cách hai mặt song song đo theo pháp tuyến không đổi.
 
@@ -523,7 +523,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Không
+**Đáp án:** Không
 
 **Lời giải và vì sao:** Phải nối hai điểm thuộc hai đường và vuông góc **cả hai** phương.
 
@@ -534,7 +534,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 8
+**Đáp án:** 8
 
 **Lời giải và vì sao:** Độ cao là khoảng cách vuông góc SH, không phải cạnh bên SA.
 
@@ -545,7 +545,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 8cm.
+**Đáp án:** 8cm.
 
 **Lời giải và vì sao:** h=√(17²−15²)=8cm.
 
@@ -556,7 +556,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Vì là độ dài đoạn vuông góc MH≥0.
+**Đáp án:** Vì là độ dài đoạn vuông góc MH≥0.
 
 **Lời giải và vì sao:** Độ dài đoạn thẳng không âm; =0 khi M∈(P).
 
@@ -567,7 +567,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Hai đường chéo nhau cố định có đoạn vuông góc chung độ dài dương; giao nhau mới cho khoảng cách 0.
 
@@ -695,7 +695,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 105cm³
+**Đáp án:** 105cm³
 
 **Lời giải và vì sao:** V=S·h=15×7=105cm³.
 
@@ -706,7 +706,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 42cm³
+**Đáp án:** 42cm³
 
 **Lời giải và vì sao:** V=S·h/3=21×6/3=42cm³.
 
@@ -717,7 +717,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 24m³
+**Đáp án:** 24m³
 
 **Lời giải và vì sao:** V=dài×rộng×cao=24m³ nếu hộp trống hoàn toàn.
 
@@ -728,7 +728,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 39cm³
+**Đáp án:** 39cm³
 
 **Lời giải và vì sao:** V=3(25+4+√100)/3=39cm³.
 
@@ -739,7 +739,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 360 lít
+**Đáp án:** 360 lít
 
 **Lời giải và vì sao:** 1m³=1000L nên 0,36m³=360L.
 
@@ -750,7 +750,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 36dm³.
+**Đáp án:** 36dm³.
 
 **Lời giải và vì sao:** 12×9/3=36dm³.
 
@@ -761,7 +761,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 74cm³.
+**Đáp án:** 74cm³.
 
 **Lời giải và vì sao:** 6(16+9+√144)/3=2(25+12)=74cm³.
 
@@ -772,7 +772,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Sai trừ trường hợp cạnh đó vuông góc hai đáy.
+**Đáp án:** Sai trừ trường hợp cạnh đó vuông góc hai đáy.
 
 **Lời giải và vì sao:** Chiều cao phải là khoảng cách vuông góc giữa hai đáy song song.
 
@@ -917,7 +917,7 @@ Hai diện tích S=36,S′=9, √(SS′)=18. V=(4/3)·(36+9+18)=84 cm³. Nếu S
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** h=6cm, V=48cm³
+**Đáp án:** h=6cm, V=48cm³
 
 **Lời giải và vì sao:** Độ cao là khoảng cách vuông góc S tới mặt đáy; V=24×6/3=48, không dùng cạnh xiên.
 
