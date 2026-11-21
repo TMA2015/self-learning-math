@@ -343,8 +343,16 @@ async function ready(page,path){
       "Progress planet must contain a three-bar chart instead of an arrow");
     assert.equal(await ui.locator(".thpt-r4-home-stat-chart svg rect").count(),3,
       "Progress feature strip must use the matching three-bar chart icon");
-    assert.equal(await ui.locator(".thpt-r4-grid .thpt-r4-tile").count(),5,
-      "Golden THPT five-entry landing menu must remain");
+    const homeTiles=ui.locator(".thpt-r4-grid .thpt-r4-tile");
+    assert.equal(await homeTiles.count(),6,
+      "Owner-approved Golden THPT six-card home must remain");
+    const expectedTitles=["Học theo SGK KNTT","Học theo chuyên đề","Thư viện bài tập","Math Lab","Tiến độ học tập","Hướng dẫn"];
+    for(let i=0;i<expectedTitles.length;i++){
+      assert((await homeTiles.nth(i).innerText()).includes(expectedTitles[i]),
+        "THPT home space order mismatch: "+expectedTitles[i]);
+    }
+    assert.equal(await homeTiles.nth(3).getAttribute("href"),"../math-lab/",
+      "Math Lab must be the fourth card beside the exercise library");
     let overflow=await ui.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
     assert(overflow<=20,"THPT home hero overflow "+viewport.width+"px: "+overflow);
     await ready(ui,"sgk/chuong-vi/luyen-tap/");
