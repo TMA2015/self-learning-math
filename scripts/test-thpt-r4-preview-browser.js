@@ -184,7 +184,7 @@ async function ready(page,path){
     }
     const helpCards=page.locator('[data-thpt-help-id^="D6-G10-B19-"]');
     assert.equal(await helpCards.count(),2,"R02 D6 B19 must retain both canonical remedy ids");
-    const helpCard=page.locator("details").filter({hasText:"Nhầm vectơ pháp tuyến/chỉ phương"}).first();
+    const helpCard=page.locator('article .tabbed-block:visible details.tip').filter({hasText:"4.1. Chấp nhận vectơ không làm pháp tuyến"}).first();
     assert.equal(await helpCard.count(),1,"Visible B19 D6 remedy panel missing");
     assert(!await helpCard.evaluate(node=>node.open),"D6 should start collapsed");
     await helpCard.locator("summary").click();
