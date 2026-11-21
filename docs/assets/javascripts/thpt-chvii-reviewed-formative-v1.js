@@ -238,7 +238,7 @@
     "skill": "G10-B22-PARABOLA_FOCUS",
     "stem": "Viết phương trình chính tắc của parabol có tiêu điểm \\(F(2;0)\\) và đường chuẩn \\(x=-2\\).",
     "solution": "Đáp án: \\(y^2=8x\\). Lời giải: Với \\(y^2=2px\\), tiêu điểm \\((p/2;0)\\), đường chuẩn \\(x=-p/2\\), nên \\(p=4\\).",
-    "hint": "Dùng quy ước SGK (y^2=2px), (p>0).",
+    "hint": "Dùng dạng chính tắc đã học (y^2=2px), (p>0).",
     "exposure": "FORMATIVE_ONLY"
   },
   {
