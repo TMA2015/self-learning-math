@@ -1,3 +1,6 @@
+<!-- OWNER_APPROVED_TOPIC14_20261121_EDITORIAL_EQUIVALENCE_READY -->
+**LATEST SOURCE_EQUIVALENT_CLEANUP:** Current one CĐ14 original R02 learner Git `d3c54d3867e6e831d6968a81d9c24d9d6b219363`, Q18 `e407a0318965dbf6cb65c9e6a2e1ac971f65221e`, A1/Q15 `ba2fb889ed7d6e1ed107c8218545bf99c46fb7d4`, V2 `224d04d6d787dc043e4bcda57f4c94811b4e3c9a`. The old learner `ff3d838680899b3c0a54ddd5774bebdf2f7d7d19` had two student-facing SGK/staff-like source-specific notes in reused `THPT-G10-B22-P03` and `THPT-G10-CHVII-W22-01`. Now only `SGK` citation reference removed in explanatory `Nếu làm sai` and `Depth note` renamed normal `Lưu ý phương pháp`; the math **y²=2px, p>0**, F(p/2;0), unique-intersection tangent proof, original problem, key and /6 written rubric unchanged. Original SGK ChVII canonical author source has no identical extra student notes; therefore changes are to **Topic-only extra annotation** and do not manufacture alternate SGK bank answers. Exactly 57/59 other shared SGK projection card bodies and 28 Topic practice untouched. `DELTA_A_UI_EDITORIAL` + source-equivalent D6; no independent full Topic review, merge/deploy or website behavior changes.
+---
 <!-- TOP14_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
 **CURRENT AUTHORING content snapshot, NOT website RELEASE:** same one R02 CĐ14 learner `prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md` source SHA **`ff3d838680899b3c0a54ddd5774bebdf2f7d7d19`** (source commit `f1a10ca651859d10112a0b363677f08a860997c7`), Q18 existing v3.2.0 `AUTHOR_SELF_VERIFIED` blob `f2b0f32b7b9be7d0d4329f9f4359979b0622e3b9`, A1 author metadata `291d03fbd0901fa25906c991ff48d34ffcf97f09` and same one V2 handoff `750baf9362eda3f0929a60bca5d572270d4e1b6b`. In sole ledger #977, #045 P1: all **23** first-try opt-in answer reveals now have accurate `Kiểm lỗi`→correct Knowledge→two authentic Practice Bài retry; #046 P2: one optional after-23-public-question table maps all exact shared original canonical IDs to existing answer positions `17,18,19,20,21,22,23,39,40,41,42,43,59,60,61,62,63,80,81,82,83,84,85`; #047 P2: **87 sequential learner Bài luyện 1–87** across four math groups with clearer learner-purpose cues, one full Topic SGK source-credit at end. All **87/87 original canonical mathematical stem/key/solution/rubric** (9 Written) byte exact; 23 original public question-only selfchecks unchanged; 3 original SVG unchanged, **111/111** disclosures balanced. **P2 editorial original-G10-owner follow-up remains**: shared item `THPT-G10-B22-P03` answer mentions “SGK”, original Written `THPT-G10-CHVII-W22-01` answer displays “Depth note ... SGK”, from original G10 bank projection. Do NOT modify only Topic representation and violate Q15; original source-equivalent word edit/QA needed by G10 owner if exact one-location source wording to be enforced. Source-math/PED AUTHOR_SELF_VERIFIED affected scope, no independent NotebookLM Topic PASS, no browser AP/R, RD1/Mastery/Final Submit, merge/deploy or owner RELEASE authorization.
 
@@ -18,14 +21,14 @@ CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: ff3d838680899b3c0a54ddd5774bebdf2f7d7d19
+ACADEMIC_SOURCE_BLOB: d3c54d3867e6e831d6968a81d9c24d9d6b219363
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 author-self; NO new independent NotebookLM Topic14 verdict)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: f2b0f32b7b9be7d0d4329f9f4359979b0622e3b9
+REVIEW_RECEIPT_BLOB: e407a0318965dbf6cb65c9e6a2e1ac971f65221e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 291d03fbd0901fa25906c991ff48d34ffcf97f09
+AUTHOR_A1_A7_BLOB: ba2fb889ed7d6e1ed107c8218545bf99c46fb7d4
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC14-ANALYTIC-OXY-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 750baf9362eda3f0929a60bca5d572270d4e1b6b
+AUTHOR_HANDOFF_BLOB: 224d04d6d787dc043e4bcda57f4c94811b4e3c9a
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
 SVG1_BLOB: 57485fed0a5dcee6ebcd060f100abe5eed43bc76
