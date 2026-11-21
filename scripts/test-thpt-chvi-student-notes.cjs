@@ -16,7 +16,12 @@ for(const [lesson,anchor] of Object.entries(pedagogical)){
  assert(!source.includes("!!! warning"),"B"+lesson+" contains an old alarming review callout");
  if(built){
   const html=read("site/thpt-preview/sgk/chuong-vi/bai-"+lesson+"/index.html");
-  const start=html.indexOf('<article class="md-content__inner md-typeset">'),end=html.indexOf("</article>",start);
+  // Accept only the previous exact MkDocs article tag or the source-locked
+  // RELEASE first-paint Golden tag; all lesson content checks below remain.
+  const original='<article class="md-content__inner md-typeset">';
+  const golden='<article class="md-content__inner md-typeset thpt-g10-knowledge-ap1 thpt-g10-chiv-golden" data-sgk-golden-first-paint="true">';
+  const start=html.indexOf(golden)>=0?html.indexOf(golden):html.indexOf(original);
+  const end=html.indexOf("</article>",start);
   assert(start>=0&&end>start,"B"+lesson+" compiled article missing");
   const article=html.slice(start,end);
   assert(!banned.test(article),"B"+lesson+" published student article leaks review metadata");
