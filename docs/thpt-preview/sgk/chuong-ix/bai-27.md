@@ -16,7 +16,7 @@
   border:1.5px solid #78869b;border-left:4px solid #64748b;border-radius:10px;
   background:transparent;color:inherit;line-height:1.75
 }
-.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-key-formula strong{display:block;margin-bottom:.4rem}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-key-formula > strong{display:block;margin-bottom:.4rem}
 .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-key-formula p{margin:.4rem 0}
 [data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHIX-TRY06"]) .thpt-g10-key-formula{
   border-color:#8c9ab0;border-left-color:#bdc8d8;background:transparent;color:#edf2f8
@@ -64,7 +64,7 @@
 </script>
 
 <div class="thpt-r4-screen" data-thpt-r4 data-b27-owner-g0g2="r01">
-<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IX · KIẾN THỨC SGK KNTT</p>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IX</p>
 <p class="thpt-r4-lead">Biết chọn tổ hợp, đọc cây nhiều bước và dùng biến cố đối để tính xác suất cổ điển đúng điều kiện.</p>
 
 </div>
@@ -75,7 +75,7 @@
 
     Em đã biết không gian mẫu, biến cố và điều kiện **các kết quả sơ cấp đồng khả năng** ở Bài 26; đã học quy tắc cộng, nhân ở Bài 23 và tổ hợp ở Bài 24. Ba công cụ đó được dùng trong cùng một việc: mô tả đúng một kết quả, đếm đủ kết quả thuận lợi, rồi lấy tỉ số.
 
-    ### 1.1. Chọn nhóm: vì sao cần tổ hợp?
+    ### 1.1. Chọn nhóm không xét thứ tự
 
     Chọn đồng thời hai thẻ trong năm thẻ ghi số 1–5, không phân biệt thứ tự: nhóm {1,2} và cách viết {2,1} chính là **một** kết quả. Vì vậy mẫu số là \(\binom52=10\), không phải \(5\cdot4=20\). Để có tổng lẻ, em cần ghép một số lẻ với một số chẵn; thử đếm các nhóm như vậy trước khi mở lời giải.
 
@@ -95,8 +95,9 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY06" hidden></span>
 
-    ??? tip "Kiểm lỗi — Đếm trùng một nhóm khi chọn không xét thứ tự"
+    ??? tip "Kiểm lỗi"
 
+        <p><strong>Lỗi cần kiểm:</strong> Đếm trùng một nhóm khi chọn không xét thứ tự.</p>
         <p><strong>Bước 1:</strong> Nhận diện lỗi: đếm (1,2) và (2,1) thành hai nhóm khác nhau khi chọn đồng thời.</p>
         <p><strong>Bước 2:</strong> Ôn B24 tổ hợp và tính chẵn lẻ; tổng hai số lẻ khi có một lẻ và một chẵn.</p>
         <p><strong>Bước 3:</strong> Thử {1,2,3}: ba nhóm {1,2},{1,3},{2,3}; hai nhóm có tổng lẻ.</p>
@@ -104,7 +105,7 @@
         <p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để củng cố chọn đều các nhóm bằng tổ hợp.</p>
         <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B27-P01">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
-    ### 1.2. Rút nhiều lượt: cây cho thấy điều gì thay đổi?
+    ### 1.2. Rút thẻ theo nhiều lượt
 
     Với bốn thẻ \(R_1,R_2,B_1,B_2\), rút lần lượt hai thẻ **không hoàn lại** và chọn đều từ các thẻ còn lại. Sau lượt đầu chỉ còn ba thẻ. Một kết quả hoàn chỉnh là \((\text{thẻ lượt 1},\text{thẻ lượt 2})\), có \(4\cdot3=12\) kết quả đồng khả năng.
 
@@ -126,8 +127,9 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY07" hidden></span>
 
-    ??? tip "Kiểm lỗi — Quên nhánh xanh trước, đỏ sau khi rút thẻ"
+    ??? tip "Kiểm lỗi"
 
+        <p><strong>Lỗi cần kiểm:</strong> Quên nhánh xanh trước, đỏ sau khi rút thẻ.</p>
         <p><strong>Bước 1:</strong> Chẩn đoán: rút không hoàn lại mà vẫn cho thẻ đầu xuất hiện ở nhánh thứ hai; hoặc quên thứ tự xanh→đỏ.</p>
         <p><strong>Bước 2:</strong> Nhắc quy tắc nhân và điều kiện mỗi lượt rút đều thẻ còn lại, tạo cặp có thứ tự.</p>
         <p><strong>Bước 3:</strong> Xét 2 thẻ đỏ R₁,R₂ và 1 xanh B: sáu cặp có thứ tự, bốn cặp khác màu.</p>
@@ -135,7 +137,7 @@
         <p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập và đọc SVG cây rút không hoàn lại để kiểm trạng thái sau rút.</p>
         <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B27-C01">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
-    ### 1.3. “Ít nhất một”: có cách nào đếm ngắn hơn?
+    ### 1.3. Sử dụng biến cố đối
 
     Tung đồng xu cân đối ba lần độc lập, ghi N (ngửa), S (sấp). Tính xác suất có “ít nhất một N” bằng cách liệt kê bảy chuỗi chứa N được, nhưng dễ bỏ sót. Biến cố đối chỉ gồm chuỗi SSS. Từ đó, em thử tính xác suất của biến cố ban đầu bằng cách lấy 1 trừ xác suất chuỗi SSS.
 
@@ -155,8 +157,9 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY08" hidden></span>
 
-    ??? tip "Kiểm lỗi — Hiểu “ít nhất một” thành “đúng một”"
+    ??? tip "Kiểm lỗi"
 
+        <p><strong>Lỗi cần kiểm:</strong> Hiểu “ít nhất một” thành “đúng một”.</p>
         <p><strong>Bước 1:</strong> Nhận diện lỗi: hiểu 'ít nhất một N' là 'đúng một N', bỏ qua N xuất hiện hai hoặc ba lần.</p>
         <p><strong>Bước 2:</strong> Ôn từ khóa 'ít nhất' và phép lấy phần bù trong cùng không gian Ω.</p>
         <p><strong>Bước 3:</strong> Với hai lần tung, 'ít nhất một N' là {NN,NS,SN}, đối là {SS}; kiểm 3/4.</p>
@@ -164,7 +167,7 @@
         <p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để áp dụng biến cố đối trong chọn nhóm nhiều đối tượng.</p>
         <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B27-P02">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
-    ### 1.4. Một chữ “hoàn lại” thay đổi cả không gian mẫu
+    ### 1.4. Phép rút có hoàn lại và không hoàn lại
 
     Rút hai lượt từ năm thẻ phân biệt: có hoàn lại thì mỗi lượt đều có năm lựa chọn, được \(5\cdot5=25\) cặp, kể cả (2,2); không hoàn lại thì lượt hai còn bốn lựa chọn, chỉ có \(5\cdot4=20\) cặp.
 
@@ -184,8 +187,9 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY09" hidden></span>
 
-    ??? tip "Kiểm lỗi — Rút có hoàn lại nhưng giảm số thẻ ở lượt hai"
+    ??? tip "Kiểm lỗi"
 
+        <p><strong>Lỗi cần kiểm:</strong> Rút có hoàn lại nhưng giảm số thẻ ở lượt hai.</p>
         <p><strong>Bước 1:</strong> Chẩn đoán: bỏ qua 'bỏ lại hộp' và giảm số thẻ lượt hai từ 5 xuống 4.</p>
         <p><strong>Bước 2:</strong> Ôn cặp có thứ tự, quy tắc nhân và điều kiện hoàn lại.</p>
         <p><strong>Bước 3:</strong> Xét hai thẻ A,B, rút hai lần có hoàn lại: các cặp AA,AB,BA,BB đều có thể xảy ra.</p>
@@ -193,7 +197,7 @@
         <p><strong>Bước 5:</strong> luyện câu liên quan trong phần Luyện tập để so sánh với rút **không** hoàn lại và tránh tráo mô hình.</p>
         <p><strong>Luyện tiếp:</strong> <a href="../luyen-tap/?item=THPT-G10-B27-P03">Mở câu luyện cùng kiến thức</a>. Nếu đã xem lời giải, hãy chọn thêm câu khác để tự làm không có gợi ý.</p>
 
-    ### 1.5. Đếm đủ nhưng vẫn sai nếu kết quả không đồng khả năng
+    ### 1.5. Điều kiện đồng khả năng
 
     Gieo hai xúc xắc cân đối **phân biệt**: cặp (1,2) khác (2,1), nên 36 cặp có thứ tự đồng khả năng. Nếu gộp thành 21 cặp không thứ tự, nhóm {1,2} gồm hai kết quả gốc còn {1,1} chỉ có một. Vì vậy **21 nhóm không đồng khả năng**; không thể dùng số nhóm làm mẫu số của định nghĩa cổ điển.
 
@@ -213,8 +217,9 @@
 
     <span data-thpt-help-id="HELP-G10-CHIX-TRY10" hidden></span>
 
-    ??? tip "Kiểm lỗi — Cho 21 nhóm xúc xắc không thứ tự là đồng khả năng"
+    ??? tip "Kiểm lỗi"
 
+        <p><strong>Lỗi cần kiểm:</strong> Cho 21 nhóm xúc xắc không thứ tự là đồng khả năng.</p>
         <p><strong>Bước 1:</strong> Chẩn đoán: mặc nhiên coi 21 cặp không thứ tự là các kết quả đồng khả năng.</p>
         <p><strong>Bước 2:</strong> Nhớ định nghĩa Ω của hai xúc xắc phân biệt; (1,2) và (2,1) khác nhau, còn (1,1) chỉ một cặp.</p>
         <p><strong>Bước 3:</strong> Thử hai xúc xắc hai mặt cân đối: các cặp có thứ tự (1,1),(1,2),(2,1),(2,2), trong đó cùng số có 2/4.</p>
@@ -224,41 +229,41 @@
 
 === "Kiến thức SGK"
 
-    ### 2.1. Sử dụng phương pháp tổ hợp (SGK mục 1, tr. 83–84)
+    ### 2.1. Sử dụng phương pháp tổ hợp
 
     Khi có rất nhiều kết quả, ta không cần liệt kê từng kết quả để đếm \(n(\Omega)\) và \(n(A)\). Từ Bài 23–24, em dùng quy tắc nhân, chỉnh hợp, tổ hợp tùy cách một kết quả được xác định.
 
     **Chọn nhóm không xét thứ tự.** Nếu chọn đều một nhóm \(k\) đối tượng từ \(n\) đối tượng **phân biệt**, mỗi nhóm gồm \(k\) phần tử là một kết quả sơ cấp. Tử số và mẫu số phải cùng đếm **các nhóm không xét thứ tự**.
 
-    <div class="thpt-g10-key-formula" role="note" data-b27-key-formula="combinations"><strong>Công thức áp dụng — kết hợp kiến thức Bài 24 và Bài 26</strong><p>\(n(\Omega)=\binom nk\) với \(0\le k\le n\); theo định nghĩa cổ điển \(P(A)=n(A)/n(\Omega)\). Do đó, khi mọi nhóm \(k\) phần tử đồng khả năng, \(P(A)=\dfrac{n(A)}{\binom nk}\).</p><p>Muốn tính \(P(A)\), hãy đếm số nhóm thuận lợi \(n(A)\) trong cùng mô hình, rồi kiểm \(n(\Omega)>0\). Đây là <strong>cách vận dụng các công thức đã học</strong>, không phải một định nghĩa mới của SGK Bài 27.</p></div>
+    <div class="thpt-g10-key-formula" role="note" data-b27-key-formula="combinations"><strong>Công thức tính xác suất bằng tổ hợp</strong><p>\(n(\Omega)=\binom nk\) với \(0\le k\le n\); theo định nghĩa cổ điển \(P(A)=n(A)/n(\Omega)\). Do đó, khi mọi nhóm \(k\) phần tử đồng khả năng, \(P(A)=\dfrac{n(A)}{\binom nk}\).</p><p>Muốn tính \(P(A)\), hãy đếm số nhóm thuận lợi \(n(A)\) trong cùng mô hình, rồi kiểm \(n(\Omega)>0\).</p></div>
 
-    **Khi nào nhân các tổ hợp?** Ví dụ chọn 6 học sinh trong lớp có 7 nam và 5 nữ, yêu cầu 3 nam và 3 nữ. Chọn nam và nữ là hai công đoạn độc lập về **đếm nhóm**: có \(\binom73\binom53\) nhóm thuận lợi. Điều kiện phải kiểm là giáo viên chọn đều **giữa các nhóm 6 học sinh**, không phải chỉ nói “chọn ngẫu nhiên”.
+    **Kết hợp các phép chọn.** Ví dụ chọn 6 học sinh trong lớp có 7 nam và 5 nữ, yêu cầu 3 nam và 3 nữ. Chọn nam và nữ là hai công đoạn độc lập về **đếm nhóm**: có \(\binom73\binom53\) nhóm thuận lợi. Điều kiện phải kiểm là giáo viên chọn đều **giữa các nhóm 6 học sinh**, không phải chỉ nói “chọn ngẫu nhiên”.
 
-    **Không tráo mô hình:** rút lần lượt và ghi thứ tự khác với chọn cùng lúc không ghi thứ tự. Công thức tổ hợp không phải quy tắc thay thế mọi sơ đồ cây. Khi xét một bộ 6 số từ 45 số, việc chọn theo nhóm cho \(n(\Omega)=\binom{45}{6}\); đây chính là cấu trúc của tình huống mở đầu SGK, không phải một khung định nghĩa mới.
+    **Phân biệt các mô hình:** rút lần lượt và ghi thứ tự khác với chọn cùng lúc không ghi thứ tự. Công thức tổ hợp không phải quy tắc thay thế mọi sơ đồ cây. Khi xét một bộ 6 số từ 45 số, việc chọn theo nhóm cho \(n(\Omega)=\binom{45}{6}\); đây là mô hình chọn nhóm không xét thứ tự.
 
-    ### 2.2. Sử dụng sơ đồ hình cây (SGK mục 2, tr. 84–85)
+    ### 2.2. Sử dụng sơ đồ hình cây
 
     Sơ đồ cây mô tả phép thử gồm nhiều bước: từ mỗi nhánh lượt trước, chỉ vẽ **những kết quả còn có thể xảy ra** ở lượt sau; mỗi đường đi từ gốc đến lá ứng với một kết quả hoàn chỉnh.
 
-    <figure class="thpt-r4-plot thpt-r4-probability-figure" data-b27-knowledge-figure="reused-discovery-tree"><img src="../../../../assets/images/thpt/THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg" loading="lazy" alt="Sơ đồ cây 4 thẻ R1, R2, B1, B2 rút hai lượt không hoàn lại; có 4 nhánh đầu, mỗi nhánh còn 3 thẻ, tổng 12 cặp có thứ tự đồng khả năng"/><figcaption><strong>Đọc hình trong phần Kiến thức:</strong> chọn một nhánh đầu, đi tiếp theo từng nhánh của ba thẻ còn lại để đọc một kết quả hoàn chỉnh ở lá. Có 12 lá: 2 đỏ–đỏ, 4 đỏ–xanh, 4 xanh–đỏ, 2 xanh–xanh. Đây là <strong>cùng hình cây</strong> ở tab Khám phá, đặt lại ngay nơi sử dụng phương pháp.</figcaption></figure>
+    <figure class="thpt-r4-plot thpt-r4-probability-figure" data-b27-knowledge-figure="reused-discovery-tree"><img src="../../../../assets/images/thpt/THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg" loading="lazy" alt="Sơ đồ cây 4 thẻ R1, R2, B1, B2 rút hai lượt không hoàn lại; có 4 nhánh đầu, mỗi nhánh còn 3 thẻ, tổng 12 cặp có thứ tự đồng khả năng"/><figcaption><strong>Hướng dẫn đọc hình:</strong> chọn một nhánh đầu, đi tiếp theo từng nhánh của ba thẻ còn lại để đọc một kết quả hoàn chỉnh ở lá. Có 12 lá: 2 đỏ–đỏ, 4 đỏ–xanh, 4 xanh–đỏ, 2 xanh–xanh. Các lá chỉ biểu diễn các kết quả có thứ tự của phép rút không hoàn lại.</figcaption></figure>
 
-    **Tại sao phải đọc hình như vậy?** Rút không hoàn lại làm số lựa chọn ở lượt sau giảm từ bốn xuống ba. Đếm số lá thuận lợi chỉ được chia cho 12 khi 12 cặp thẻ cụ thể là các kết quả đồng khả năng.
+    **Hướng dẫn đọc sơ đồ cây.** Rút không hoàn lại làm số lựa chọn ở lượt sau giảm từ bốn xuống ba. Đếm số lá thuận lợi chỉ được chia cho 12 khi 12 cặp thẻ cụ thể là các kết quả đồng khả năng.
 
     **Ví dụ về ba hộp:** hộp I có ba lựa chọn (đỏ, xanh, vàng), hộp II có hai lựa chọn (xanh, vàng), hộp III có hai lựa chọn (đỏ, xanh). Khi rút đều từ từng hộp và các lượt độc lập, có \(3\cdot2\cdot2=12\) kết quả (bộ ba màu) đồng khả năng. Muốn tìm “đúng một viên xanh”, chỉ đánh dấu các đường có đúng một chữ X, rồi đếm.
 
-    **Điều kiện không được bỏ qua:** việc cây có cùng số lá ở mỗi nhánh chưa đủ chứng minh các lá đồng khả năng nếu việc chọn ở từng nhánh bị thiên lệch. Chỉ được dùng tỉ số **số lá thuận lợi / tổng số lá** khi các kết quả hoàn chỉnh đồng khả năng. Nếu không biết cách chọn, không tự gán mỗi lá xác suất bằng nhau.
+    **Điều kiện đồng khả năng:** việc cây có cùng số lá ở mỗi nhánh chưa đủ chứng minh các lá đồng khả năng nếu việc chọn ở từng nhánh bị thiên lệch. Chỉ được dùng tỉ số **số lá thuận lợi / tổng số lá** khi các kết quả hoàn chỉnh đồng khả năng. Nếu không biết cách chọn, không tự gán mỗi lá xác suất bằng nhau.
 
-    ### 2.3. Xác suất của biến cố đối (SGK mục 3, tr. 85–86)
+    ### 2.3. Xác suất của biến cố đối
 
     Gọi \(E\) là một biến cố của phép thử với không gian mẫu \(\Omega\). Biến cố đối \(\overline E=\Omega\setminus E\) xảy ra **khi và chỉ khi** \(E\) không xảy ra. Vì \(E\) và \(\overline E\) rời nhau và phủ \(\Omega\), nên tổng xác suất của hai biến cố bằng 1.
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Xác suất của biến cố đối (SGK).</strong> Với mọi biến cố \(E\) và biến cố đối \(\overline E\) trong cùng không gian mẫu: \(P(\overline E)=1-P(E)\), hay tương đương \(P(E)=1-P(\overline E)\).</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Xác suất của biến cố đối</strong> Với mọi biến cố \(E\) và biến cố đối \(\overline E\) trong cùng không gian mẫu: \(P(\overline E)=1-P(E)\), hay tương đương \(P(E)=1-P(\overline E)\).</div>
 
-    **Vì sao chọn biến cố đối?** Khi \(E\) gồm quá nhiều trường hợp nhưng “\(E\) không xảy ra” có ít trường hợp hơn, tính \(P(\overline E)\) trước để tránh đếm thiếu hoặc đếm trùng. Chẳng hạn “ít nhất một lần ra 6” có biến cố đối là “không lần nào ra 6”.
+    **Áp dụng biến cố đối.** Khi \(E\) gồm quá nhiều trường hợp nhưng “\(E\) không xảy ra” có ít trường hợp hơn, tính \(P(\overline E)\) trước để tránh đếm thiếu hoặc đếm trùng. Chẳng hạn “ít nhất một lần ra 6” có biến cố đối là “không lần nào ra 6”.
 
     **Giới hạn áp dụng:** phải phủ định đúng điều kiện trong cùng phép thử. “Ít nhất một” đối với “không có lần nào”; “đúng một” thì biến cố đối gồm cả không có và từ hai lần trở lên. Nếu các kết quả sơ cấp không đồng khả năng, vẫn có công thức biến cố đối, nhưng không được dùng tỉ số đếm số lá khi chưa đủ giả thiết.
 
-    **Liên hệ tình huống SGK trang 86.** Một bộ 6 số trong 45 số có \(\binom{45}{6}\) khả năng chọn đều; đúng 6 số trúng có 1 bộ thuận lợi, đúng 5 số trúng có \(\binom65\binom{39}{1}=234\) bộ. Đây là bài toán **áp dụng công thức**, trình bày bằng lời văn chứ không đóng trong khung định nghĩa hay quy tắc.
+    **Bài toán chọn bộ số.** Một bộ 6 số trong 45 số có \(\binom{45}{6}\) khả năng chọn đều; đúng 6 số trúng có 1 bộ thuận lợi, đúng 5 số trúng có \(\binom65\binom{39}{1}=234\) bộ. 
 
 === "Ví dụ"
 

@@ -1380,6 +1380,23 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
     "B27-G0-KNOWLEDGE-FORMULA-FIGURE-20261121"])
     assert(r02.includes(token),"B27 P2 Q18 receipt missing "+token);
   }
+  // R03 editorial-only successor; R01/R02 immutable.
+  const r03file="prototypes/thpt/ux795/G10_CHIX_B27_EDITORIAL_HEADINGS_KIEM_LOI_Q18_R03_20261121.md";
+  if(fs.existsSync(path.join(root,r03file))){
+   const r03=fs.readFileSync(path.join(root,r03file),"utf8");
+   const f03=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(f03("R03_PREVIOUS_SOURCE_BLOB"),final,
+    "B27 R03 must descend from the exact published R02 Git blob");
+   const newer=f03("R03_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(newer||"")&&newer!==final,
+    "B27 R03 must identify a distinct valid source Git blob");
+   final=newer;
+   for(const m of ["G10-CHIX-B27-EDITORIAL-HEADINGS-KIEM-LOI-Q18-R03-20261121",
+    "DELTA_A_UI_EDITORIAL","DELTA_B_SOURCE_EQUIVALENT",
+    "Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
+    "SGK-G0-EDITORIAL-HEADINGS-D6-NO-META-20261121","OWNER_P2_RECHECK_PENDING"])
+     assert(r03.includes(m),"B27 R03 editorial receipt missing "+m);
+  }
   for(const marker of ["G10-CHIX-B27-S1-GOLDEN-ENRICHMENT-Q18-R01-20261121",
    "SLM-THPT-QUALITY-ONE","Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
    "DELTA_C_ACADEMIC_MATERIAL","INDEPENDENT_NOTEBOOKLM_REVIEW_NOT_CLAIMED",
@@ -1448,7 +1465,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
     k2.includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg")&&
     discovery.includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"),
     "B27 must reuse the same actual tree SVG in both Discovery and SGK tabs");
-   assert(k2.indexOf("<figure")<k2.indexOf("**Tại sao phải đọc hình như vậy?**"),
+   assert(k2.indexOf("<figure")<k2.indexOf("**Hướng dẫn đọc sơ đồ cây.**"),
     "B27 knowledge tree must appear BEFORE its reading explanation");
    assert.equal((t.match(/THPT_G10_B27_WITHOUT_REPLACEMENT_TREE\.svg/g)||[]).length,2,
     "B27 original tree must be placed twice, never cloned or renamed");
@@ -1460,6 +1477,46 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
     t.includes('data-md-color-scheme="slate"')&&
     t.includes('.thpt-g10-key-formula'),
     "B27 neutral key formula must be scoped and legible in light/slate");
+  }
+  if(fs.existsSync(path.join(root,r03file))){
+   // Audit the whole learner page, not only one screenshot.
+   const heads=t.split("\n").filter(x=>x.trimStart().startsWith("### ")||x.trimStart().startsWith("#### "));
+   assert(heads.length>=10,"B27 book headings unexpectedly missing");
+   assert(heads.every(x=>!x.includes("?")&&!x.includes("？")&&
+    !x.includes("(SGK")&&!x.includes("KNTT")&&!x.includes("tr.")),
+    "B27 headings cannot be questions or source/page citations");
+   for(const title of [
+    "### 1.1. Chọn nhóm không xét thứ tự",
+    "### 1.2. Rút thẻ theo nhiều lượt",
+    "### 1.3. Sử dụng biến cố đối",
+    "### 1.4. Phép rút có hoàn lại và không hoàn lại",
+    "### 1.5. Điều kiện đồng khả năng",
+    "### 2.1. Sử dụng phương pháp tổ hợp",
+    "### 2.2. Sử dụng sơ đồ hình cây",
+    "### 2.3. Xác suất của biến cố đối",
+    "**Hướng dẫn đọc sơ đồ cây.**",
+    "<strong>Công thức tính xác suất bằng tổ hợp</strong>"
+   ])assert(t.includes(title),"B27 book-style title missing "+title);
+   for(const forbidden of [
+    "TOÁN 10 · CHƯƠNG IX · KIẾN THỨC SGK KNTT",
+    "không phải một định nghĩa mới",
+    "cách vận dụng các công thức đã học",
+    "**Khi nào nhân các tổ hợp?**",
+    "**Vì sao chọn biến cố đối?**",
+    "**Tại sao phải đọc hình như vậy?**",
+    "Kiểm lỗi —"])
+    assert(!t.includes(forbidden),"B27 redundant learner-facing label/prose: "+forbidden);
+   const d6=t.split('??? tip "Kiểm lỗi"').slice(1);
+   assert.equal(d6.length,5,"Exactly 5 B27 First Try disclosures titled Kiểm lỗi");
+   for(const part of d6)assert(part.startsWith("\n\n        <p><strong>Lỗi cần kiểm:</strong>")&&
+    part.indexOf("<p><strong>Lỗi cần kiểm:</strong>")<
+    part.indexOf("<p><strong>Bước 1:</strong>"),
+    "Error name belongs inside Kiểm lỗi before Bước 1");
+   assert(t.includes(".thpt-g10-key-formula > strong{display:block")&&
+    !t.includes(".thpt-g10-key-formula strong{display:block"),
+    "Strong prose in KEY_FORMULA must not become a standalone line");
+   assert.equal((t.match(/class="thpt-r4-footnote"/g)||[]).length,1,
+    "B27 one and only one final SGK/SBT source note");
   }
   return final;
  }
