@@ -19,7 +19,7 @@ Hai người có thể cùng đi 5 m, nhưng nếu một người đi về đôn
 
 > **ĐỊNH NGHĨA — Vectơ.** Vectơ \(\overrightarrow{AB}\) là đoạn thẳng có hướng với điểm đầu \(A\), điểm cuối \(B\). Độ dài vectơ là \(|\overrightarrow{AB}|=AB\ge0\); \(AB\) chỉ là số đo độ dài, không phải chính vectơ.
 
- Vectơ \(\overrightarrow{BA}=-\overrightarrow{AB}\) là vectơ đối; \(\overrightarrow{AA}=\vec 0\) là vectơ-không, có độ dài 0. **Quy ước KNTT B07:** vectơ-không được coi là cùng phương và cùng hướng với mọi vectơ; không gán cho nó một hướng hình học riêng. **Quy ước SGK Toán 12 Bài 6:** Khi có một vectơ bằng \(\vec0\), góc giữa vectơ ấy với vectơ còn lại **có thể nhận tùy ý** một số đo từ \(0^\circ\) đến \(180^\circ\); không xác định duy nhất bằng hình vẽ. Tích vô hướng với vectơ-không vẫn bằng 0, nhưng không được lấy \(0/(|\vec0||\vec u|)\) để tính cos góc vì mẫu bằng 0.
+ Vectơ \(\overrightarrow{BA}=-\overrightarrow{AB}\) là vectơ đối; \(\overrightarrow{AA}=\vec 0\) là vectơ-không, có độ dài 0. **Quy ước đối với vectơ-không:** vectơ-không được coi là cùng phương và cùng hướng với mọi vectơ; đây là quy ước so sánh, không phải một hướng hình học riêng. Khi một vectơ bằng \(\vec0\), số đo góc của nó với vectơ còn lại **có thể chọn tùy ý** trong đoạn \(0^\circ\) đến \(180^\circ\), không được xác định duy nhất bởi hình vẽ. Tích vô hướng với vectơ-không vẫn bằng 0, nhưng không được lấy \(0/(|\vec0||\vec u|)\) để tính cos góc vì mẫu bằng 0.
 
 **Ví dụ**
 
@@ -294,7 +294,7 @@ Nếu em suy cùng hướng chỉ từ định thức bằng 0, đọc **Kiến 
 
 Nếu một người dùng lực kéo ngang mà vật chỉ chuyển thẳng đứng, độ lớn của lực không nói lên công sinh ra. Ta cần biết góc giữa hướng lực và độ dời, vì phần lực theo hướng chuyển động mới đóng góp vào công.
 
-> **ĐỊNH NGHĨA — Tích vô hướng qua góc: lực cùng hướng và ngược hướng.** Với hai vectơ **khác không**, u·v=|u||v|cosθ, góc θ trong [0°,180°]. Tích dương cho góc nhọn, 0 cho góc vuông, âm cho góc tù. Vectơ-không có tích vô hướng 0 với mọi vectơ nhưng góc với vectơ-không **được SGK quy ước có thể nhận giá trị tùy ý từ 0° đến 180°**; không suy góc bằng công thức cos khi độ dài mẫu bằng 0. Công W=F·s khi lực F không đổi và s là độ dời.
+> **ĐỊNH NGHĨA — Tích vô hướng qua góc: lực cùng hướng và ngược hướng.** Với hai vectơ **khác không**, u·v=|u||v|cosθ, góc θ trong [0°,180°]. Tích dương cho góc nhọn, 0 cho góc vuông, âm cho góc tù. Vectơ-không có tích vô hướng 0 với mọi vectơ nhưng góc với vectơ-không **theo quy ước có thể chọn tùy ý số đo từ 0° đến 180°**; không suy góc bằng công thức cos khi độ dài mẫu bằng 0. Công W=F·s khi lực F không đổi và s là độ dời.
 
 **Ví dụ**
 
