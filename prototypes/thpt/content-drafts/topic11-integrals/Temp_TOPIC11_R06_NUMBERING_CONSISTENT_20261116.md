@@ -1,5 +1,5 @@
-<!-- AUTHORING CĐ11 R05 student-first candidate; historical R04 Git blob 3b998d76120485502e33c5d5d131210d1f7ef444 preserved immutable; source/receipt must be locked before handoff. -->
-<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_REVISION=R05 -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: CĐ11 current R06 canonical learner; R04/R05 previous revisions immutable in Git; source Q18 is separately signed. -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.2.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_REVISION=R06_AUTHOR_SELF_Q18 -->
 <!-- ORIGINAL88_SGK_BLOB=45722cd386a498f3e0e96a09928c85565af56d1b; ORIGINAL88_INDEX_BLOB=672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c; NEW28_ACTIVE_R05_BLOB=6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0 -->
 # CĐ11 — Nguyên hàm, tích phân và ứng dụng hình học
 
@@ -21,7 +21,7 @@ Giả sử ta biết một đại lượng thay đổi nhanh thế nào, nhưng 
 
 
 
-Không chỉ trên khoảng mở: theo SGK, có thể xét nguyên hàm trên một khoảng, một nửa khoảng hoặc một đoạn \(K\). Chẳng hạn với \(K=[a,b]\), tại đầu \(a\) ta hiểu \(F'(a)=f(a)\) theo **đạo hàm bên phải**, còn tại đầu \(b\) theo **đạo hàm bên trái**; không đòi lấy đạo hàm ở phía nằm ngoài đoạn. Nếu \(f\) **liên tục trên một khoảng** thì \(f\) có ít nhất một nguyên hàm trên khoảng ấy; đây là điều kiện đủ bảo đảm tồn tại, không phải yêu cầu bắt buộc trong định nghĩa. Khi \(F'=f\), ký hiệu \(dF(x)=F'(x)\,dx=f(x)\,dx\) gọi là **vi phân** của \(F\); ký hiệu này mô tả quan hệ đạo hàm–nguyên hàm, không cho phép coi \(\int f(x)\,dx\) là phép nhân đại số tùy ý.
+Không chỉ trên khoảng mở: ta có thể xét nguyên hàm trên một khoảng, một nửa khoảng hoặc một đoạn \(K\). Chẳng hạn với \(K=[a,b]\), tại đầu \(a\) ta hiểu \(F'(a)=f(a)\) theo **đạo hàm bên phải**, còn tại đầu \(b\) theo **đạo hàm bên trái**; không đòi lấy đạo hàm ở phía nằm ngoài đoạn. Nếu \(f\) **liên tục trên một khoảng** thì \(f\) có ít nhất một nguyên hàm trên khoảng ấy; đây là điều kiện đủ bảo đảm tồn tại, không phải yêu cầu bắt buộc trong định nghĩa. Khi \(F'=f\), ký hiệu \(dF(x)=F'(x)\,dx=f(x)\,dx\) gọi là **vi phân** của \(F\); ký hiệu này mô tả quan hệ đạo hàm–nguyên hàm, không cho phép coi \(\int f(x)\,dx\) là phép nhân đại số tùy ý.
 
 Ví dụ, với \(f(x)=4x^3+2\), ta nhận thấy \((x^4)'=4x^3\) và \((2x)'=2\), nên \(F(x)=x^4+2x\) là một nguyên hàm. Nhưng \(x^4+2x+5\) cũng có đạo hàm ấy, bởi đạo hàm của hằng số bằng 0. Vì thế khi hỏi **họ nguyên hàm**, ta phải viết \(F(x)=x^4+2x+C\). Hãy kiểm bằng cách lấy đạo hàm ngược; phép tích phân bất định không phải một phép nhân với ký hiệu \(dx\).
 
@@ -37,6 +37,11 @@ Ví dụ, với \(f(x)=4x^3+2\), ta nhận thấy \((x^4)'=4x^3\) và \((2x)'=2\
 <summary>Đối chiếu</summary>
 
 \(F(x)=2x^4-2x+C\). Đạo hàm của biểu thức này là \(8x^3-2\), đúng bằng \(f\). Nếu em quên \(+C\), hãy thử cộng thêm 5 vào nguyên hàm của mình rồi lấy đạo hàm: kết quả vẫn không đổi.
+
+
+**Kiểm lỗi**
+
+Nếu em chỉ thấy một nguyên hàm mà bỏ \(+C\), hoặc kết luận bằng cách nhìn dạng hàm, đọc **Kiến thức 1.1**, giải **Bài 3** (đạo hàm để kiểm) và **Bài 5** (tìm cả họ). Cứ lấy đạo hàm kết quả để đối chiếu với \(f\).
 
 </details>
 
@@ -62,6 +67,11 @@ Chẳng hạn, F'=3x²−4, F(1)=5. Họ F=x³−4x+C, thay x=1 cho 1−4+C=5 �
 F=x²+x+7.
 
 Nếu thay F'(0)=7, bạn đã dùng sai loại dữ kiện; F(0) mới là vị trí ban đầu.
+
+
+**Kiểm lỗi**
+
+Nếu em thay điều kiện \(F(a)\) thành \(F'(a)\) hoặc không tìm hằng \(C\), đọc **Kiến thức 1.2**, giải **Bài 8** rồi **Bài 10**. Phải thỏa đồng thời đạo hàm và giá trị ban đầu.
 
 </details>
 
@@ -92,6 +102,11 @@ x⁵+x²+C.
 
 Nếu không chia hệ số mũ mới, kiểm đạo hàm ngược sẽ phát hiện hệ số dư.
 
+
+**Kiểm lỗi**
+
+Nếu em quên chia hệ số theo mũ mới khi tính nguyên hàm lũy thừa, đọc **Kiến thức 1.3**, làm **Bài 14** rồi **Bài 16**. Lấy đạo hàm ngược để phát hiện hệ số thiếu.
+
 </details>
 
 ### 1.4. Nguyên hàm 1/x trên khoảng
@@ -117,6 +132,11 @@ F(x)=ln(−x)+2 trên x<0.
 
 Không viết ln x ở x âm; sau đó kiểm đạo hàm trước khi kết luận.
 
+
+**Kiểm lỗi**
+
+Nếu em dùng \(\ln x\) cho \(x<0\) hoặc ghép hằng số xuyên qua điểm \(x=0\) bị loại, đọc **Kiến thức 1.4**, làm **Bài 17** và **Bài 21**. Luôn chọn một khoảng xác định không qua 0.
+
 </details>
 
 ### 1.5. Hàm mũ và hệ số bù
@@ -141,6 +161,11 @@ Chẳng hạn, ∫(6e^{3x}+2^x)dx=2e^{3x}+2^x/ln2+C. Đạo hàm ngược cho 6e
 e^{5x}+C.
 
 Nếu ra 5e^{5x}, đạo hàm ngược sẽ cho 25e^{5x}, phải chia5.
+
+
+**Kiểm lỗi**
+
+Nếu em đạo hàm ngược \(e^{kx}\) hay \(a^x\) mà thiếu hệ số bù, đọc **Kiến thức 1.5**, làm **Bài 25** và **Bài 27**; phải dùng \(\ln a\) khi cơ số là \(a>0,a\ne1\).
 
 </details>
 
@@ -176,6 +201,11 @@ Chẳng hạn, ∫(4cos2x+3sin3x)dx=2sin2x−cos3x+C. Chọn đạo hàm ngượ
 
 Nếu thiếu dấu âm, lấy đạo hàm cos(2x) là −2sin(2x) rồi sửa.
 
+
+**Kiểm lỗi**
+
+Nếu em mất dấu khi nguyên hàm \(\sin\) hoặc quên nhân hệ số góc theo radian, đọc **Kiến thức 1.6**, làm **Bài 30** rồi **Bài 32**. Lấy đạo hàm kết quả theo quy tắc dây chuyền.
+
 </details>
 
 ### 1.7. Từ vận tốc khôi phục vị trí
@@ -200,6 +230,11 @@ Chẳng hạn, cho v(t)=4t−2 (m/s), s(0)=3m: s(t)=2t²−2t+3. Sau2 giây s(2)
 s(t)=3t²+1 nên s(1)=4m.
 
 Nếu không có s(0), không thể nói vị trí tuyệt đối cụ thể.
+
+
+**Kiểm lỗi**
+
+Nếu em tích phân vận tốc để ra độ dời nhưng ghi ngay vị trí tuyệt đối không có dữ kiện đầu, đọc **Kiến thức 1.7**, làm **Bài 35** và **Bài 37**. Viết \(s'=v\), tìm hằng \(C\) từ vị trí đã biết rồi mới tính.
 
 </details>
 
@@ -240,6 +275,11 @@ Xét ví dụ: ∫₁² 4x³dx=[x⁴]₁²=16−1=15. Chọn nguyên hàm x⁴, 
 
 Nếu chỉ thế cận trên, luôn nhắc hiệu F(b)−F(a).
 
+
+**Kiểm lỗi**
+
+Nếu em thêm \(+C\) vào tích phân có cận hoặc chỉ thế cận trên, đọc **Kiến thức 2.1**, làm **Bài 40** và **Bài 42**. Kiểm hàm liên tục trên đoạn và tính đúng \(F(b)-F(a)\).
+
 </details>
 
 ### 2.2. Tính tuyến tính của tích phân
@@ -264,6 +304,11 @@ Chẳng hạn, ∫₀¹(3x²+2x+1)dx=[x³+x²+x]₀¹=3. Có thể tách thành1
 [x²+3x]₀²=4+6=10.
 
 Nếu ghép các tích phân khác cận mà không đổi cận, đó không phải quy tắc tuyến tính.
+
+
+**Kiểm lỗi**
+
+Nếu em tách biểu thức nhưng đổi nhầm cận hoặc không nhân hệ số, đọc **Kiến thức 2.2**, làm **Bài 45** và **Bài 47**. Quy tắc tuyến tính giữ nguyên cận cho các tích phân thành phần.
 
 </details>
 
@@ -290,6 +335,11 @@ Chẳng hạn, ∫₂⁰(3x²+1)dx=−∫₀²(3x²+1)dx=−10. Giá trị âm x
 
 Nếu kết luận diện tích hình học từ tích phân đảo cận, phải quay lại miền và |f|.
 
+
+**Kiểm lỗi**
+
+Nếu em quên dấu khi đảo cận hoặc ghép sai khoảng, đọc **Kiến thức 2.3**, làm **Bài 48** và **Bài 52**. Xác định đúng chiều cận và điểm nối trước khi cộng.
+
 </details>
 
 ### 2.4. Từ tích lũy tới diện tích không âm
@@ -314,6 +364,11 @@ Chẳng hạn, y=2x trên [0,2] không âm: S=∫₀²2x dx=[x²]₀²=4, đúng
 ∫₀¹x²dx=1/3 đơn vị².
 
 Nếu trả diện tích âm, kiểm f có âm trên đoạn hay không.
+
+
+**Kiểm lỗi**
+
+Nếu em coi tích phân âm là diện tích âm, hoặc bỏ kiểm dấu \(f\), đọc **Kiến thức 2.4**, làm **Bài 55** và **Bài 57**. Diện tích hình học yêu cầu hàm không âm trên đoạn, hoặc phải tách theo dấu.
 
 </details>
 
@@ -346,6 +401,11 @@ Diện tích1, tích phân có dấu0.
 
 Nếu câu hỏi 'quãng đường', hãy chia đoạn tại nghiệm v=0 rồi lấy |v|.
 
+
+**Kiểm lỗi**
+
+Nếu em lấy trị tuyệt đối của **một** tích phân có dấu làm quãng đường/diện tích khi hàm đổi dấu, đọc **Kiến thức 2.5**, làm **Bài 58** và **Bài 62**. Tách các khoảng tại điểm đổi dấu, tích phân \(|f|\) hoặc \(|v|\).
+
 </details>
 
 ### 2.6. Tích phân lượng giác
@@ -371,6 +431,11 @@ Xét ví dụ: ∫₀^{ln3}e^x dx=e^{ln3}−1=2. Chọn F=e^x vì d(e^x)=e^x, c�
 
 Nếu thay cận góc độ mà không quy đổi, xem lại giả thiết radian.
 
+
+**Kiểm lỗi**
+
+Nếu em quên đạo hàm \(-\cos x\) bằng \(\sin x\) hoặc thế cận góc độ vào công thức radian, đọc **Kiến thức 2.6**, giải **Bài 64** và **Bài 68**. Chọn nguyên hàm đúng trước khi tính hiệu giá trị tại cận.
+
 </details>
 
 ### 2.7. Tích lũy từ tốc độ biến thiên
@@ -395,6 +460,11 @@ Chẳng hạn, Lưu lượng r(t)=2t lít/phút trên [0,2]: Q(2)−Q(0)=∫₀�
 Độ dời bằng ∫₀¹3t²dt=1 m.
 
 Nếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (giây).
+
+
+**Kiểm lỗi**
+
+Nếu em lấy giá trị vận tốc cuối nhân tổng thời gian, hoặc không đổi đơn vị m/s theo giây thành mét, đọc **Kiến thức 2.7**, làm **Bài 71** và **Bài 73**. Độ dời là \(\int v(t)dt\); quãng đường mới cần \(\int|v(t)|dt\).
 
 </details>
 
@@ -433,6 +503,11 @@ Không phải mọi hình phẳng có hàm căn đều cần tìm nguyên hàm b
 
 Nếu coi √x như x², phải đổi thành x^{1/2} trước tính.
 
+
+**Kiểm lỗi**
+
+Nếu em áp dụng công thức nguyên hàm \(x^2\) cho \(\sqrt{x}\) hoặc bỏ miền \(x\ge0\), đọc **Kiến thức 3.1**, làm **Bài 74** và **Bài 78**. Đổi \(\sqrt{x}=x^{1/2}\) rồi kiểm cận và đơn vị diện tích.
+
 </details>
 
 ### 3.2. Diện tích đổi dấu qua trục
@@ -462,6 +537,11 @@ Chẳng hạn, f(x)=x trên [−2,2]: tích phân có dấu0, nhưng S=∫−₂
 
 Nếu tích phân có dấu0 mà hình có hai miền, bạn đã để triệt tiêu sai.
 
+
+**Kiểm lỗi**
+
+Nếu em cho phép hai phần hình nằm trên/dưới Ox triệt tiêu thành diện tích 0, đọc **Kiến thức 3.2**, làm **Bài 79** và **Bài 83**. Tìm mọi nghiệm \(f(x)=0\), tách đoạn và tích phân \(|f|\).
+
 </details>
 
 ### 3.3. Diện tích giữa hai đường
@@ -486,6 +566,11 @@ Chẳng hạn, Trên [0,1], f=2, g=x², rõ 2>x², S=∫₀¹(2−x²)dx=2−1/3
 ∫₀²(3−x)dx=4.
 
 Nếu hiệu âm, hãy kiểm đã trừ đúng 'trên−dưới'.
+
+
+**Kiểm lỗi**
+
+Nếu em lấy đường dưới trừ đường trên hoặc bỏ kiểm vị trí đường cong, đọc **Kiến thức 3.3**, làm **Bài 84** và **Bài 88**. Kiểm dấu hiệu hai hàm trên từng khoảng để chọn \(\int(\text{trên}-\text{dưới})dx\).
 
 </details>
 
@@ -514,6 +599,11 @@ Xét ví dụ: f=x,g=x² trên [0,2], giao x=0,1. Trên (0,1) x>x², trên (1,2)
 
 Giải \(2x=x^2\) được \(x=0\) và \(x=2\). Trên \([0,2]\), \(2x\ge x^2\); trên \([2,3]\), \(x^2\ge2x\). Vì thế \(S=\int_0^2(2x-x^2)dx+\int_2^3(x^2-2x)dx=4/3+4/3=8/3\). Nếu em lấy ngay \(\left|\int_0^3(2x-x^2)dx\right|\), hai phần trái dấu sẽ bị triệt và không cho diện tích thực.
 
+
+**Kiểm lỗi**
+
+Nếu em dùng một hiệu có dấu xuyên qua giao điểm đổi thứ tự của hai đường, đọc **Kiến thức 3.4**, làm **Bài 89** và **Bài 93**; thử thêm **Bài 94** để lập hai tích phân đúng chiều. Diện tích phải cộng trị dương từng mảnh.
+
 </details>
 
 ### 3.5. Mô hình diện tích từ giao điểm
@@ -539,6 +629,11 @@ Chẳng hạn, cho y=2x và y=x²: giao x=0 và2, trên (0,2) 2x≥x² nên S=�
 
 Nếu thiếu cận trong đề không tự nói đó là hình kín; tìm giao điểm/ranh giới trước.
 
+
+**Kiểm lỗi**
+
+Nếu em lấy cận theo cảm tính thay vì giải giao điểm, hoặc quên miền của mô hình, đọc **Kiến thức 3.5**, làm **Bài 95** và **Bài 99**. Giao điểm cùng điều kiện đề mới xác định cận và miền diện tích.
+
 </details>
 
 ## 4. Khi mỗi lát cắt có diện tích, toàn khối có thể tích
@@ -551,7 +646,7 @@ Mỗi lát cắt mỏng của một khối có diện tích riêng; cộng chún
 
 <!-- LESSON_ID: TOP11-M20; OUTCOME_ID: TOP11-O20 -->
 
-Nếu mỗi lát mỏng đã biết diện tích, tổng lát cho thể tích như thế nào? Cần nhớ tiết diện A(x)≥0 có đơn vị diện tích, độ dày dx. Với khối được xác định trên [a,b], diện tích thiết diện vuông góc Ox tại x là A(x), V=∫_a^bA(x)dx (đặc biệt theo giả thiết SGK khi hàm diện tích thiết diện A liên tục trên [a,b]). Chọn công thức A theo **hình dạng tiết diện thật**: vuông thì s², tròn thì πr², hình khác có công thức khác. Không thêm π nếu không phải mặt cắt tròn.
+Nếu mỗi lát mỏng đã biết diện tích, tổng lát cho thể tích như thế nào? Cần nhớ tiết diện A(x)≥0 có đơn vị diện tích, độ dày dx. Với khối được xác định trên [a,b], diện tích thiết diện vuông góc Ox tại x là A(x), V=∫_a^bA(x)dx (khi hàm diện tích thiết diện A liên tục trên [a,b]). Chọn công thức A theo **hình dạng tiết diện thật**: vuông thì s², tròn thì πr², hình khác có công thức khác. Không thêm π nếu không phải mặt cắt tròn.
 
 Chẳng hạn, Tiết diện vuông cạnh 2x trên [0,1] (đơn vị cm): A=4x² cm², V=∫₀¹4x²dx=4/3 cm³. Chọn vuông nên không có π.
 
@@ -586,6 +681,11 @@ Bình phương rồi lấy tích phân từ \(0\) đến \(h\) cho thể tích.
 
 Nếu dùng 3 thay cho9, bạn lấy cạnh làm diện tích.
 
+
+**Kiểm lỗi**
+
+Nếu em lấy chiều dài cạnh hình vuông làm diện tích, hoặc nhân thêm \(\pi\) dù thiết diện là vuông, đọc **Kiến thức 4.1**, làm **Bài 100** và **Bài 104**. Phải lập \(A(x)=s(x)^2\) rồi tích phân theo chiều dài.
+
 </details>
 
 ### 4.2. Thể tích từ tiết diện tròn
@@ -611,13 +711,18 @@ Chẳng hạn, r(x)=2x trên [0,1], V=π∫₀¹4x²dx=4π/3 đơn vị³. Chọ
 
 Nếu ra 2π, bạn đã tích phân r thay r².
 
+
+**Kiểm lỗi**
+
+Nếu em quên bình phương bán kính hoặc nhầm đường kính với bán kính, đọc **Kiến thức 4.2**, làm **Bài 106** và **Bài 110**. Với tiết diện tròn, \(A(x)=\pi r(x)^2\); kiểm đơn vị cm³.
+
 </details>
 
 ### 4.3. Đĩa và vành khăn khối xoay
 
 <!-- LESSON_ID: TOP11-M22; OUTCOME_ID: TOP11-O22 -->
 
-> **CÔNG THỨC — Đĩa và vành khăn khối xoay.** Khối xoay cho tiết diện đĩa hoặc vành khăn tùy vùng. Vì sao thể tích quay một vùng giữa hai đồ thị có thể phải trừ hai đĩa? Ta đã biết bán kính là khoảng cách từ đồ thị đến Ox, miền f≥g≥0. Nếu \(f\) **liên tục, không âm** trên \([a,b]\) và quay vùng 0≤y≤f(x) quanh Ox, lát cắt đĩa bán kính f, thể tích V=π∫f²dx. Điều kiện liên tục và không âm giúp sử dụng đúng công thức SGK; với vùng khác cần phân tích lại thiết diện. Nếu quay miền g≤y≤f với 0≤g≤f quanh Ox, lát cắt là vành khăn với bán kính ngoài R=f, bán kính trong r=g, V=π∫(R²−r²)dx. Nếu đường cắt Ox/hai vùng chồng khi quay, công thức đơn giản có thể không áp; cần phân tích hình cắt cẩn thận.
+> **CÔNG THỨC — Đĩa và vành khăn khối xoay.** Khối xoay cho tiết diện đĩa hoặc vành khăn tùy vùng. Vì sao thể tích quay một vùng giữa hai đồ thị có thể phải trừ hai đĩa? Ta đã biết bán kính là khoảng cách từ đồ thị đến Ox, miền f≥g≥0. Nếu \(f\) **liên tục, không âm** trên \([a,b]\) và quay vùng 0≤y≤f(x) quanh Ox, lát cắt đĩa bán kính f, thể tích V=π∫f²dx. Điều kiện liên tục và không âm giúp áp dụng đúng công thức đĩa; với vùng khác cần phân tích lại thiết diện. Nếu quay miền g≤y≤f với 0≤g≤f quanh Ox, lát cắt là vành khăn với bán kính ngoài R=f, bán kính trong r=g, V=π∫(R²−r²)dx. Nếu đường cắt Ox/hai vùng chồng khi quay, công thức đơn giản có thể không áp; cần phân tích hình cắt cẩn thận.
 
 Chẳng hạn, Quay vùng 0≤y≤x, x∈[0,1] quanh Ox, V=π∫₀¹x²dx=π/3. Nếu quay vùng x≤y≤2, x∈[0,2], ngoài R=2 trong r=x: V=π∫₀²(4−x²)dx=16π/3. Chọn hiệu bình phương bán kính chứ không bình phương chiều dày.
 
@@ -641,6 +746,11 @@ Ngay trên hình, lấy miền \(0\le x\le2\), \(x\le y\le2\) quay quanh \(Ox\).
 Đĩa r=2 không đổi, V=π·4·3=12π.
 
 Nếu vùng không chạm Ox, không dùng đĩa đầy; kiểm lỗ r>0.
+
+
+**Kiểm lỗi**
+
+Nếu em dùng công thức đĩa đặc cho một miền quay có lỗ hoặc lấy \((R-r)^2\) thay \(R^2-r^2\), đọc **Kiến thức 4.3**, làm **Bài 111** và **Bài 115**; giải **Bài 116** về vành khăn trước khi kết luận. Chỉ áp dụng công thức sau khi xác định vùng và bán kính thật.
 
 </details>
 
@@ -2482,4 +2592,19 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 **Câu 22.** Cho miền 0≤x≤2, 0≤y≤√x quay quanh Ox, V?
 
-Nguồn: SGK Toán 12 Kết nối tri thức Tập Hai, Chương IV, cùng các bài mở rộng của Chuyên đề; không tạo Core riêng.
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi tự giải **22 câu**, em có thể mở phần **Lời giải** ở đúng bài trong **Luyện tập** theo bảng dưới. Nếu chưa đúng, quay lại mục Kiến thức cùng dạng và làm thử lại trước khi xem lời giải.
+
+| Câu tự kiểm tra | Bài có lời giải trong Luyện tập |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 – 5 – 6 | Bài 5 – 10 – 16 – 21 – 27 – 32 |
+| Câu 7 – 8 – 9 – 10 – 11 – 12 | Bài 37 – 42 – 47 – 52 – 57 – 62 |
+| Câu 13 – 14 – 15 – 16 – 17 – 18 | Bài 68 – 73 – 78 – 83 – 88 – 93 |
+| Câu 19 – 20 – 21 – 22 | Bài 99 – 104 – 110 – 115 |
+
+Đây là tự đối chiếu những câu hỏi **công khai đã học**, không phải bài kiểm tra năng lực độc lập hoặc ghi Mastery.
+
+</details>
+
+Nguồn: SGK Toán 12, Tập Hai, Chương IV, bộ Kết nối tri thức với cuộc sống.
