@@ -64,7 +64,7 @@
 </script>
 
 <div class="thpt-r4-screen" data-thpt-r4 data-b27-owner-g0g2="r01">
-<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IX · KIẾN THỨC SGK KNTT</p>
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG IX</p>
 <p class="thpt-r4-lead">Biết chọn tổ hợp, đọc cây nhiều bước và dùng biến cố đối để tính xác suất cổ điển đúng điều kiện.</p>
 
 </div>
