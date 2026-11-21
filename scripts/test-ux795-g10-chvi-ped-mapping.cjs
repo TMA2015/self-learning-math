@@ -14,6 +14,12 @@ const rows=mapping.split("\n").filter(line=>/^\| B(?:15|16|17|18) \| \x60B\d{2}_
 assert.equal(rows.length,19,"Expected 19 G10 ChVI mappings");
 const tick=String.fromCharCode(96);
 const seen=new Set();
+const placement=fs.readFileSync(path.join(root,
+ "prototypes/thpt/ux795/G10_CHVI_B15_B18_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+assert(placement.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+ placement.includes("G10-CHVI-B15-B18-KIEM-LOI-PLACEMENT-Q18-R01-20261120"),
+ "ChVI PED structural map must follow signed HELP-placement Q18 receipt");
+
 for(const n of [15,16,17,18]){
  const rel="docs/thpt-preview/sgk/chuong-vi/bai-"+n+".md";
  const raw=fs.readFileSync(path.join(root,rel));
@@ -26,6 +32,12 @@ for(const n of [15,16,17,18]){
  const ux=chviExampleUxReceiptRows().get("B"+n);
  if(ux)assert.equal(ux.baseline,editorial.candidate,"B"+n+" follow-on UX cannot rewrite historical PED/S1 source");
  const expected=candidateG10KnowledgeBlob(n);
+ const sourceRows=placement.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(sourceRows.length,1,"B"+n+" exact HELP-placement receipt row");
+ const chain=[...sourceRows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(chain.length,2,"B"+n+" must retain historical + current signed SHA");
+ assert.equal(chain[1],expected,"B"+n+" canonical source must use 20/11 HELP placement");
+
  if(n!==15&&n!==16&&n!==17&&n!==18)assert.equal(expected,ux?ux.candidate:(editorial?editorial.candidate:historic),
   "B"+n+" unmodified ChVI source must remain at historical approved signed Q18 SHA");
  else if(n===17){
@@ -45,7 +57,7 @@ for(const n of [15,16,17,18]){
   const field03=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field03("PREVIOUS_B17_SOURCE_BLOB"),next("CANDIDATE_B17_SOURCE_BLOB"),
    "B17 PED R03 lineage must follow R02 exact source");
-  assert.equal(field03("CANDIDATE_B17_SOURCE_BLOB"),expected,
+  assert.equal(field03("CANDIDATE_B17_SOURCE_BLOB"),chain[0],
    "B17 owner R03 pedagogy candidate is exact latest source");
  }else if(n===18){
   const r18=fs.readFileSync(path.join(root,
@@ -63,7 +75,7 @@ for(const n of [15,16,17,18]){
   const f03=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f03("PREVIOUS_B18_SOURCE_BLOB"),f02("CANDIDATE_B18_SOURCE_BLOB"),
    "B18 editorial R03 preserves the accepted R02 source");
-  assert.equal(f03("CANDIDATE_B18_SOURCE_BLOB"),expected,
+  assert.equal(f03("CANDIDATE_B18_SOURCE_BLOB"),chain[0],
    "B18 source must match exact new R03 proof");
  }else if(n===16){
   const r16=fs.readFileSync(path.join(root,
@@ -71,7 +83,7 @@ for(const n of [15,16,17,18]){
   const f16=k=>r16.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f16("BASELINE_PUBLISHED_B16_SOURCE_BLOB"),ux.candidate,
    "B16 new receipt must follow immutable original UX source");
-  assert.equal(f16("CANDIDATE_B16_SOURCE_BLOB"),expected,
+  assert.equal(f16("CANDIDATE_B16_SOURCE_BLOB"),chain[0],
    "B16 owner candidate must be SHA-locked in original pedagogy map");
  }else{
   const latest=fs.readFileSync(path.join(root,
@@ -91,7 +103,7 @@ for(const n of [15,16,17,18]){
   const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f02("PREVIOUS_B15_SOURCE_BLOB"),p2f("CANDIDATE_B15_SOURCE_BLOB"),
    "B15 R02 exact previous source");
-  assert.equal(f02("CANDIDATE_B15_SOURCE_BLOB"),expected,
+  assert.equal(f02("CANDIDATE_B15_SOURCE_BLOB"),chain[0],
    "B15 latest visual-flow source must match signed R02 Delta");
  }
  assert.equal(blob,expected,"B"+n+" learner source matches one canonical current source");
