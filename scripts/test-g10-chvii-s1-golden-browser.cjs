@@ -45,7 +45,12 @@ const specs={
       tag+" questions/remediation leaked into official S1 Knowledge tab");
      assert.equal(await blocks.nth(2).locator("[data-thpt-first-try-id], [data-thpt-help-id]").count(),0,
       tag+" cloned canonical item in worked examples");
-     assert.equal(await blocks.nth(3).locator("[data-thpt-help-id]").count(),s.help,tag+" lost 5-step HELP");
+     assert.equal(await blocks.nth(0).locator("[data-thpt-help-id]").count(),s.tries,
+      tag+" local HELP after signed 20/11 Discovery Vận dụng");
+     assert.equal(await blocks.nth(3).locator("[data-thpt-help-id]").count(),s.help-s.tries,
+      tag+" only independent general D6 in last Golden tab");
+     assert.equal(await article.locator("[data-thpt-help-id]").count(),s.help,
+      tag+" total original canonical HELP IDs must not change");
      assert.equal(await article.locator("details.question[open],details.tip[open]").count(),0,
       tag+" any answer/help exposed before user action");
      await t.nth(0).click();
@@ -94,15 +99,20 @@ const specs={
      const learnerText=await ex.innerText();
      assert(!/Ví dụ tự biên soạn|do dự án biên soạn|outcome Core|phạm vi Core|RD1/.test(learnerText),
       tag+" internal project note leaked into learner examples");
-     await t.nth(3).click();
-     const folded=blocks.nth(3).locator("details.tip");
-     assert.equal(await folded.count(),s.help,tag+" tips count");
+     await t.nth(0).click();
+     const folded=blocks.nth(0).locator("details.tip");
+     assert.equal(await folded.count(),s.tries,tag+" one local Kiểm lỗi per original First Try");
      const tip=folded.first();
+     assert.equal((await tip.locator("summary").innerText()).trim(),"Kiểm lỗi",
+      tag+" local D6 must have owner-approved voluntary disclosure label");
      assert(!(await tip.evaluate(el=>el.open)),tag+" remediation open by default");
      await tip.locator("summary").click();
      assert(await tip.evaluate(el=>el.open),tag+" HELP not voluntarily openable");
      await tip.locator("summary").click();
      assert(!(await tip.evaluate(el=>el.open)),tag+" HELP not voluntarily closable");
+     await t.nth(3).click();
+     assert.equal(await blocks.nth(3).locator("details.tip").count(),s.help-s.tries,
+      tag+" general remediation tab must not clone local HELP");
      for(let pane=0;pane<4;pane++){
       await t.nth(pane).click();
       for(const img of await blocks.nth(pane).locator("figure img").all()){
