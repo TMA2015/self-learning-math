@@ -1,84 +1,234 @@
 # Bài 16. Giới hạn của hàm số
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG V · SGK KNTT</p><p class="thpt-r4-lead">Khám phá bản chất và điều kiện → ví dụ giải thích phương pháp → Tự thử trước Core → Core/Luyện tập/Vận dụng → tự khắc phục. Không ghi Skill Mastery từ tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG V</p><p class="thpt-r4-lead">Quan sát hành vi gần điểm trước khi tính: giới hạn hai phía/một phía, phương pháp khử dạng chưa xác định và giới hạn vô cực.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Vì sao học và kiến thức nền tảng
+=== "Khám phá kiến thức"
 
-### 1.1. Câu hỏi mở đầu: tại một điểm chưa tính được thì sao?
+    Ở Bài 15, khi chỉ số \(n\) tăng mãi thì dãy có thể tiến tới một số. Với **hàm số**, ta xét \(x\) tiến gần một điểm \(a\) (từ hai phía hoặc một phía) hoặc tiến ra vô cực. Giá trị **tại** \(a\) và xu hướng **gần** \(a\) có thể khác nhau. Cần nhớ phép phân tích đa thức, hằng đẳng thức và ý nghĩa của miền xác định.
 
-Xét f(x)=(x²−4)/(x−2). Em thử thế x=2: mẫu bằng 0, phép chia không xác định. Nhưng nếu xét **gần 2**, ta có bảng:
+    ### 1.1. Giới hạn tại điểm không nhất thiết là giá trị tại điểm
 
-| x | 1,9 | 1,99 | 2,01 | 2,1 |
-|---|---:|---:|---:|---:|
-| f(x) | 3,9 | 3,99 | 4,01 | 4,1 |
+    Với \(f(x)=\frac{x^2-4}{x-2}\) chỉ xét \(x\ne2\), ta rút gọn thành \(x+2\). Ở gần \(2\), các giá trị tiến về **4** nhưng \(f(2)\) không có nghĩa. Giới hạn nói về những \(x\) **gần, khác điểm đang xét**; nó không đòi hàm phải được xác định tại điểm ấy. Cầu nối: giới hạn dãy số ở Bài 15 và các phép phân tích đa thức.
 
-Vì x≠2, ta có thể rút gọn f(x)=x+2. Khi x tiến về 2, các giá trị f(x) tiến về **4**, mặc dù chính f(2) **không tồn tại**. Khái niệm **giới hạn của hàm số** giúp mô tả xu hướng ở gần một điểm, không đòi biết giá trị ngay tại điểm ấy.
+    **Vận dụng — Tự thử trước Core.** Hàm \(f(x)=\frac{x^2-9}{x-3}\) (\(x\ne3\)) có \(\lim_{x\to3}f(x)\) bằng bao nhiêu? \(f(3)\) có tồn tại không?
 
-**Cầu nối:** Em đã biết đọc đồ thị và tính giá trị f(x) tại x có nghĩa. Bài này khác ở chỗ quan sát x **tiến gần** a, không chỉ thay đúng x=a vào công thức.
+    <span data-ped-first-try="1" data-outcome-id="G11-B16-LIMIT_AT_POINT" data-thpt-first-try-id="THPT-G11-B16-TRY01" hidden></span>
 
-**Hình trực quan D5:** <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B16-01_R01.svg" alt="Đồ thị y=x+2 có lỗ rỗng tại (2,4)"/><figcaption>Đồ thị y=x+2 có lỗ rỗng tại (2,4)</figcaption></figure>
+    ??? question "Đối chiếu"
 
-**Cách đọc hình:** Đường màu xanh đi tới độ cao 4 khi x tiến từ trái hoặc phải về 2; vòng tròn rỗng tại (2,4) cho biết hàm gốc **không có giá trị ở x=2**. Đừng nhầm lỗ trống với việc giới hạn không tồn tại.
+        **Lời giải:** Với \(x\ne3\), \((x^2-9)/(x-3)=x+3\). Vì vậy \(\lim_{x\to3}f(x)=6\). Tuy nhiên \(f(3)\) **không xác định**; rút gọn chỉ giữ giá trị khi \(x\ne3\), không tự tạo ra giá trị tại 3.
 
-### 1.2. Định nghĩa và kí hiệu
+    <span data-thpt-help-id="HELP-G11-B16-TRY01" hidden></span>
 
-Viết **lim_{x→a}f(x)=L** nghĩa là: khi x thuộc miền xác định, khác a và tiến gần a, giá trị f(x) tiến gần L. **Giới hạn không nhất thiết bằng f(a)**, và f(a) có thể chưa được định nghĩa. Một hàm có giới hạn khi x tiến về a qua các giá trị thuộc miền xác định đủ gần a, dù nó có thể bị "thủng" ngay tại a.
+    ??? tip "Kiểm lỗi"
 
-- "Giới hạn trái" **x→a⁻** là xét các x<a tiến gần a; "giới hạn phải" **x→a⁺** là xét x>a.
-- Nếu miền xác định cho phép tiến gần từ hai phía, một giới hạn hữu hạn hai phía bằng L **chỉ khi cả hai giới hạn một phía đều tồn tại và bằng L**.
-- Không được suy giới hạn hai phía từ một phía duy nhất.
+        **Dấu hiệu:** Thế ngay x=3 thấy 0/0 rồi kết luận không có giới hạn.
 
-### 1.3. Nhìn đường đi của giá trị
+        **Tự sửa:** Phân biệt miền xác định và xu hướng. Ôn mục 2.1; thử Core B16-C01, Practice B16-P02 trong [Luyện tập](../luyen-tap/).
 
-Với g(x)=1/(x−1), khi x→1⁺ thì mẫu là số dương rất nhỏ, g(x)→+∞; khi x→1⁻ thì mẫu âm rất nhỏ, g(x)→−∞. Hai phía **không cùng tiến đến một giá trị hữu hạn**, nên không có giới hạn hữu hạn hai phía tại 1. Dấu của mẫu là thông tin thiết yếu, không phải chi tiết phụ.
+    ### 1.2. Tại sao phải xét cả bên trái lẫn bên phải?
 
-Khi nói x→+∞, ta cho x tăng mãi; x→−∞ là cho x giảm mãi về phía âm. **Phải kiểm tra dấu trước khi đưa x ra ngoài căn:** √(x²)=|x|, bằng −x nếu x<0.
+    Một con đường có thể có biển báo trước và sau mốc khác nhau. Với hàm \(f(x)=x+1\) khi \(x<0\) và \(f(x)=3-x\) khi \(x\ge0\), giới hạn trái tại 0 là **1**, giới hạn phải là **3**. Hai phía không đồng ý, nên không có giới hạn **hai phía hữu hạn**; giá trị \(f(0)=3\) không sửa được khác biệt ấy.
 
-**Thuật ngữ mới — “nhân liên hợp” nghĩa là gì?** Khi gặp biểu thức có dạng `√A−b`, ta thường nhân cả tử và mẫu với `√A+b` (giữ nguyên giá trị phân thức ở nơi mẫu khác 0). Hai biểu thức `√A−b` và `√A+b` được gọi là **liên hợp** của nhau; tích của chúng là `A−b²`, nhờ hằng đẳng thức hiệu hai bình phương. Ví dụ `(√(x+4)−2)(√(x+4)+2)=x`, giúp khử căn khi tính giới hạn ở x=0. **Vì sao làm bước này?** Để biến dạng `0/0` chưa thể kết luận thành một biểu thức có giới hạn tính được. Trước khi rút gọn, phải kiểm tra đang xét `x≠0` và căn có nghĩa.
+    **Vận dụng — Tự thử trước Core.** Với \(g(x)=2x+1\) khi \(x<1\), \(g(x)=x+2\) khi \(x\ge1\), hãy tính hai giới hạn một phía tại 1 và kết luận giới hạn hai phía.
 
-### 1.4. Cách lựa chọn phương pháp
+    <span data-ped-first-try="2" data-outcome-id="G11-B16-ONE_SIDED" data-thpt-first-try-id="THPT-G11-B16-TRY02" hidden></span>
 
-- Thay trực tiếp cho kết quả hữu hạn hợp lệ → có thể dùng tính liên tục/phép toán giới hạn thích hợp.
-- Nếu thay trực tiếp ra **0/0** → đây chưa phải đáp số; tìm nhân tử chung, phân tích hoặc nhân liên hợp.
-- Nếu tử tiến đến giá trị khác 0, mẫu tiến đến 0 → xét dấu ở từng phía trước khi kết luận ±∞.
-- Khi x→±∞ → chia lũy thừa trội hoặc nhân liên hợp; với căn phải nhớ dấu của |x|.
+    ??? question "Đối chiếu"
 
+        **Lời giải:** Khi \(x\to1^-\), \(g(x)=2x+1\to3\). Khi \(x\to1^+\), \(g(x)=x+2\to3\). Hai giới hạn hữu hạn **cùng bằng 3**, nên \(\lim_{x\to1}g(x)=3\); đồng thời \(g(1)=3\), dù điều cuối không phải điều kiện bắt buộc để giới hạn tồn tại.
 
+    <span data-thpt-help-id="HELP-G11-B16-TRY02" hidden></span>
 
-**Tự thử trước Core:** Nếu k(x)=(x²−9)/(x−3) với x≠3, em đoán lim_{x→3}k(x) bằng bao nhiêu? Hãy giải thích tại sao phép "rút gọn" chỉ dùng cho x≠3, không phải xác định k(3).
+    ??? tip "Kiểm lỗi"
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở đối chiếu</summary><p>6.</p></details>
+        **Dấu hiệu:** Chỉ tính phía có dấu bằng trong công thức rồi coi đó là giới hạn hai phía.
 
+        **Tự sửa:** Tính **riêng trái và phải** rồi so. Ôn mục 2.2, luyện Core B16-C02 và Practice B16-P03 tại [Luyện tập](../luyen-tap/).
 
+    ### 1.3. Nhân liên hợp để biến dạng (0/0) thành phép tính hợp lệ
 
-## 2. Ví dụ có suy luận và điều kiện
+    Dạng \(0/0\) sau khi thay số **không phải giá trị giới hạn**. Với biểu thức căn \(\sqrt{x+4}-2\), nhân cả tử và mẫu với \(\sqrt{x+4}+2\) vì hai biểu thức liên hợp có tích bằng \(x\). Bước biến đổi chỉ đúng **khi mẫu và căn có nghĩa** trong miền đang xét, chẳng hạn \(x\ne0\), \(x\ge-4\).
 
-### Bốn ví dụ độc lập
+    **Vận dụng — Tự thử trước Core.** Tính \(\lim_{x\to0}\frac{\sqrt{x+4}-2}{x}\). Hãy ghi rõ tại sao được rút gọn x.
 
-**EX-G11-B16-01 — Khử 0/0.** lim_{x→2}(x²−4)/(x−2) = lim_{x→2}(x+2)=4 vì x²−4=(x−2)(x+2) khi x≠2. Hàm gốc không xác định tại 2 nhưng giới hạn vẫn bằng 4.
+    <span data-ped-first-try="3" data-outcome-id="G11-B16-ALGEBRAIC_TECHNIQUES" data-thpt-first-try-id="THPT-G11-B16-TRY03" hidden></span>
 
-**EX-G11-B16-02 — Giới hạn một phía khác nhau.** Với f(x)=1/(x−1), khi x→1^+ mẫu dương nhỏ, f(x)→+∞; khi x→1^- mẫu âm nhỏ, f(x)→−∞. Không tồn tại giới hạn hữu hạn hai phía ở 1. Phải ghi **riêng từng phía**, không cộng hai vô cực.
+    ??? question "Đối chiếu"
 
-**EX-G11-B16-03 — Liên hợp tại +∞.** Tính lim_{x→+∞}(√(x²+x)−x). Nhân liên hợp được x/(√(x²+x)+x)=1/(√(1+1/x)+1)→1/2, vì x>0 khi x→+∞. **Bẫy:** rút x khỏi căn phải dùng dấu x.
+        **Lời giải:** Với \(x\ne0\) đủ gần 0 và \(x\ge-4\),
+\[
+\frac{\sqrt{x+4}-2}{x}=\frac{(\sqrt{x+4}-2)(\sqrt{x+4}+2)}{x(\sqrt{x+4}+2)}=\frac1{\sqrt{x+4}+2}.
+\]
+Vậy giới hạn là \(1/(2+2)=\boxed{1/4}\). Chỉ rút gọn **với \(x\ne0\)**, không khẳng định phân thức gốc xác định tại 0.
 
-**EX-G11-B16-04 — Dấu của căn khi x âm lớn.** lim_{x→−∞}√(x²+1)/x=lim_{x→−∞}(|x|√(1+1/x²))/x=−1. **Bẫy:** viết √(x²)=x cho x<0 là sai.
+    <span data-thpt-help-id="HELP-G11-B16-TRY03" hidden></span>
 
-**EX-G11-B16-05 — Vì sao giới hạn một phía quan trọng trong tình huống thực tế?** Một bãi xe thu **10 nghìn đồng** nếu thời gian gửi t thỏa 0<t≤1 giờ, và thu **20 nghìn đồng** nếu t>1 giờ. Gọi C(t) là chi phí (nghìn đồng), ta có C(t)=10 khi 0<t≤1, C(t)=20 khi t>1. Khi t tiến gần 1 **từ phía nhỏ hơn**, C(t) luôn là 10 nên giới hạn trái là 10; khi t tiến gần 1 **từ phía lớn hơn**, C(t) là 20 nên giới hạn phải là 20. Do hai phía khác nhau nên **không có giới hạn hai phía** tại t=1. Giá đúng tại t=1 là C(1)=10 nhưng điều này **không làm giới hạn hai phía xuất hiện**. **Ý nghĩa:** tại một ngưỡng tính phí, hai quá trình tiến gần từ hai phía có thể dẫn đến kết quả khác nhau. **Bẫy:** không được lấy trung bình (10+20)/2=15 hay lấy C(1) làm giới hạn.
+    ??? tip "Kiểm lỗi"
 
-## 3. Tự khắc phục lỗi và quay lại câu gốc
+        **Dấu hiệu:** Lấy 0/0 bằng 0, hoặc nhân liên hợp nhưng quên nhân cả mẫu.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHV-B16-01"><summary>Nhầm giá trị hàm tại điểm với giới hạn.</summary><ol><li><strong>Nhận diện:</strong> Nhầm giá trị hàm tại điểm với giới hạn.</li>
-<li><strong>Nhắc bản chất và điều kiện:</strong> Giới hạn nói về giá trị gần điểm, xét x≠a; hàm có thể không xác định đúng tại a.</li>
-<li><strong>Sửa cách nghĩ:</strong> Hãy nói lại bằng lời tại sao bước trước chưa đủ để kết luận, rồi kiểm tra giả thiết trước phép biến đổi.</li>
-<li><strong>Tự thử trước khi mở đáp án:</strong> Với h(x)=(x²−16)/(x−4), x≠4, hãy rút gọn. <strong>Tự đối chiếu sau khi thử:</strong> h(x)=x+4 khi x≠4; giới hạn tại 4 là 8 dù h(4) chưa xác định.</li>
-<li><strong>Quay lại bài gốc:</strong> làm lại <code>THPT-G11-CHV-B16-C01</code> và giải thích bằng lời vì sao kết luận đúng.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHV-B16-C01">Quay lại THPT-G11-CHV-B16-C01</a></p></details>
+        **Tự sửa:** Viết hằng đẳng thức ((sqrt A-b)(sqrt A+b)=A-b^2); ôn mục 2.3, luyện Practice B16-P01/P02.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHV-B16-02"><summary>Chỉ nhìn một phía rồi kết luận giới hạn hai phía.</summary><ol><li><strong>Nhận diện:</strong> Chỉ nhìn một phía rồi kết luận giới hạn hai phía.</li>
-<li><strong>Nhắc bản chất và điều kiện:</strong> Khi tiến gần được từ cả hai phía, giới hạn trái và phải phải bằng nhau.</li>
-<li><strong>Sửa cách nghĩ:</strong> Hãy nói lại bằng lời tại sao bước trước chưa đủ để kết luận, rồi kiểm tra giả thiết trước phép biến đổi.</li>
-<li><strong>Tự thử trước khi mở đáp án:</strong> Với k(x)=|x|/x, x≠0, tìm giá trị ở x&gt;0 và x&lt;0. <strong>Tự đối chiếu sau khi thử:</strong> Bên phải bằng 1, bên trái bằng −1, nên không có giới hạn hai phía tại 0.</li>
-<li><strong>Quay lại bài gốc:</strong> làm lại <code>THPT-G11-CHV-B16-C02</code> và giải thích bằng lời vì sao kết luận đúng.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHV-B16-C02">Quay lại THPT-G11-CHV-B16-C02</a></p></details>
+    ### 1.4. Dấu của mẫu quyết định hướng giới hạn vô cực
 
-## 4. Luyện tập và tự đối chiếu
+    Khi tử tiến tới số dương khác 0 còn mẫu tiến tới 0, dấu của mẫu là then chốt. Ví dụ \(1/(x-2)\) tiến tới \(+\infty\) khi \(x\to2^+\) nhưng tới \(-\infty\) khi \(x\to2^-\). Vì vậy không được viết một “giới hạn bằng vô cực” hai phía nếu dấu không nhất quán.
 
-[Core và Luyện tập Bài 16](luyen-tap.md) · [Tự luận Chương V](../../../thu-vien/tu-luan-g11-chuong-v.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    **Vận dụng — Tự thử trước Core.** Xét \(h(x)=\frac{x+1}{2-x}\). Hãy tìm xu hướng khi \(x\to2^-\) và khi \(x\to2^+\).
+
+    <span data-ped-first-try="4" data-outcome-id="G11-B16-INFINITE_LIMIT" data-thpt-first-try-id="THPT-G11-B16-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Tử \(x+1\to3>0\). Khi \(x\to2^-\), mẫu \(2-x>0\) rất nhỏ nên \(h(x)\to+\infty\); khi \(x\to2^+\), mẫu \(2-x<0\) rất nhỏ nên \(h(x)\to-\infty\). Hai phía khác nhau, không có giới hạn hai phía theo nghĩa thông thường.
+
+    <span data-thpt-help-id="HELP-G11-B16-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Bỏ dấu và ghi cả hai phía +∞, hoặc lấy trung bình hai vô cực.
+
+        **Tự sửa:** Lập bảng dấu **tử/mẫu** cho từng phía, ôn mục 2.4; luyện Core B16-C03 và Practice B16-P06 tại [Core và Luyện tập](../luyen-tap/).
+
+    ### 1.5. Ở (x	o-infty), vì sao (sqrt{x^2}=|x|) mà không phải x?
+
+    Ta biết \(\sqrt{x^2}\) là căn bậc hai **không âm**, nên bằng \(|x|\). Khi \(x\) âm rất lớn về độ lớn, \(|x|=-x\). Đây là điểm quyết định dấu của các giới hạn có căn tại âm vô cực. Với phân thức hữu tỉ, hãy so bậc và chia cho lũy thừa trội; với căn, tách đúng \(|x|\).
+
+    **Vận dụng — Tự thử trước Core.** Tính \(\lim_{x\to-\infty}\frac{\sqrt{x^2+9}}x\). Vì sao kết quả không phải \(1\)?
+
+    <span data-ped-first-try="5" data-outcome-id="G11-B16-LIMIT_AT_INFINITY" data-thpt-first-try-id="THPT-G11-B16-TRY05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Ta có
+\[
+\frac{\sqrt{x^2+9}}{x}=\frac{|x|}{x}\sqrt{1+\frac9{x^2}}.
+\]
+Khi \(x<0\), \(|x|/x=-1\). Thừa số căn tiến về 1 nên giới hạn là \(-1\), **không phải \(+1\)**.
+
+    <span data-thpt-help-id="HELP-G11-B16-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Rút (sqrt{x^2}=x) dù x âm.
+
+        **Tự sửa:** Ghi rõ (|x|/x=-1) cho (x<0); ôn mục 2.5, luyện Practice B16-P04 và B16-P05 tại [Luyện tập](../luyen-tap/).
+
+    ### 1.6. Một ngưỡng trong đời sống có thể tạo hai giới hạn khác nhau
+
+    Một bãi gửi xe giả định tính phí \(10\) nghìn đồng khi \(0<t\le1\) giờ và \(20\) nghìn đồng khi \(t>1\). Giá đúng tại \(t=1\) là \(10\), nhưng trước và sau ngưỡng khách hàng thấy **hai xu hướng phí khác nhau**. Mô hình bước nhảy giúp phân biệt **giá tại ngưỡng** với **giới hạn**; đó không phải chỉ là kỹ thuật tính.
+
+    **Vận dụng — Tự thử trước Core.** Với \(C(t)=10\) khi \(0<t\le1\), \(C(t)=20\) khi \(t>1\) (nghìn đồng), tính \(C(1)\), giới hạn trái và phải tại 1; có giới hạn hai phía không?
+
+    <span data-ped-first-try="6" data-outcome-id="G11-B16-REAL_CONTEXT" data-thpt-first-try-id="THPT-G11-B16-TRY06" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Ta có \(C(1)=10\). Khi \(t\to1^-\), \(C(t)\to10\); khi \(t\to1^+\), \(C(t)\to20\). Do \(10\ne20\), **giới hạn hai phía tại 1 không tồn tại**, dù giá tại ngưỡng được xác định.
+
+    <span data-thpt-help-id="HELP-G11-B16-TRY06" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Lấy trung bình 15 hoặc lấy C(1)=10 làm giới hạn hai phía.
+
+        **Tự sửa:** Viết hai cột (t<1), (t>1), rồi so; ôn mục 2.2/2.6, luyện tình huống mô hình ở Practice B16-P07.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Giới hạn hữu hạn của hàm số tại một điểm
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Ý nghĩa:</strong> \(\lim_{x\to a}f(x)=L\) khi \(x\) thuộc miền xác định, **khác \(a\)** và tiến tới \(a\), thì \(f(x)\) tiến gần \(L\). Giới hạn phụ thuộc hành vi quanh điểm, **không bắt buộc** \(f(a)\) có nghĩa hoặc bằng \(L\).</div>
+
+    **Chính xác hơn:** Điều kiện cần xem \(a\) là điểm có thể tiến gần từ các giá trị của miền xác định. Với mọi \(\varepsilon>0\) phải chọn được \(\delta>0\) để \(0<|x-a|<\delta\) (và \(x\) thuộc miền xác định) kéo theo \(|f(x)-L|<\varepsilon\). Khi chỉ có miền từ một phía, phải ghi rõ hướng tiến gần.
+
+    <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/FIG-G11-B16-01_R01.svg" loading="lazy" alt="Đồ thị y=x+2 có lỗ rỗng tại tọa độ (2,4), thể hiện giới hạn bằng 4 dù hàm không xác định tại 2"><figcaption>Đọc hình: **vòng tròn rỗng** ở (2;4) chỉ hàm gốc không xác định tại điểm ấy; các điểm trên hai nhánh đường vẫn tiến gần mức 4. Không kết luận giới hạn không tồn tại chỉ vì có lỗ.</figcaption></figure>
+
+    ### 2.2. Giới hạn một phía và điều kiện giới hạn hai phía
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Một phía:</strong> \(x\to a^-\) nghĩa là \(x<a\), \(x\to a^+\) nghĩa là \(x>a\). Khi miền xác định có điểm đủ gần ở **cả hai phía**, giới hạn hữu hạn hai phía \(\lim_{x\to a}f(x)=L\) tồn tại **khi và chỉ khi** hai giới hạn trái/phải đều bằng cùng \(L\).</div>
+
+    **Không nhầm:** Hàm có thể có \(f(a)\) xác định nhưng vẫn không có giới hạn hai phía; ngược lại có thể có giới hạn nhưng \(f(a)\) không xác định. Giá trị tại ngưỡng cần xử lý riêng.
+
+    ### 2.3. Phép toán và cách giải dạng \(0/0\)
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện:</strong> Với các giới hạn hữu hạn, tổng/hiệu/tích tuân theo các phép toán thông thường; thương cần **giới hạn mẫu khác 0**. Nếu thay trực tiếp ra \(0/0\), cần **biến đổi biểu thức đúng trên miền gần điểm** (phân tích nhân tử, rút gọn khi \(x\ne a\), nhân liên hợp) rồi mới áp dụng quy tắc.</div>
+
+    **Nhân liên hợp:** \((\sqrt A-\sqrt B)(\sqrt A+\sqrt B)=A-B\), với \(A,B\ge0\). Nhân cả tử và mẫu, kiểm mẫu mới khác 0 trong vùng đang xét. Không coi \(0/0\) là kết quả.
+
+    ### 2.4. Giới hạn vô cực tại điểm và giới hạn ở vô cực
+
+    Một hàm có thể tăng/giảm không bị chặn khi \(x\to a^-\) hoặc \(a^+\); ký hiệu \(+\infty,-\infty\) diễn tả xu hướng chứ không phải số thực để cộng/chia tùy tiện.
+
+    Khi \(x\to\pm\infty\), ta phân tích bậc trội hoặc nhân liên hợp. **Bẫy dấu:** \(\sqrt{x^2}=|x|\). Khi \(x\to-\infty\), \(|x|=-x\), nên các giới hạn kiểu \(\sqrt{x^2+c}/x\) thường tiến đến \(-1\), không phải \(1\).
+
+    **Ứng dụng:** Hàm bước phí gửi xe có giới hạn trái/phải khác nhau tại một ngưỡng; hàm hiệu suất \(100t/(t+5)\) tiến về mức 100 dù giá trị mô hình tại mọi \(t\) hữu hạn vẫn nhỏ hơn 100. Không dùng một điểm dữ liệu để suy cả xu hướng.
+
+=== "Ví dụ"
+
+    Mỗi Ví dụ nêu phương pháp trước, rồi giải và kiểm miền/điều kiện.
+
+    ### 3.1. Khử dạng (0/0) bằng phân tích nhân tử
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** Tính \(\lim_{x\to2}\frac{x^2-4}{x-2}\). **Chọn phương pháp:** Thế trực tiếp ra \(0/0\), cần phân tích tử. **Giải:** Với \(x\ne2\), \((x-2)(x+2)/(x-2)=x+2\), do đó giới hạn bằng \(4\). **Kiểm:** Hàm gốc không xác định tại 2 nhưng tiến gần 4 khi \(x\) gần 2.</p></div>
+
+    ### 3.2. Hai phía có dấu mẫu trái nhau
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** Tính \(\lim_{x\to1^-}1/(x-1)\) và \(\lim_{x\to1^+}1/(x-1)\). **Chọn phương pháp:** Tử dương; dấu mẫu khác phía. **Giải:** Bên trái mẫu âm rất nhỏ → \(-\infty\); bên phải mẫu dương rất nhỏ → \(+\infty\). **Kiểm:** Không kết luận có giới hạn hai phía hữu hạn.</p></div>
+
+    ### 3.3. Giới hạn chứa căn ở dương vô cực
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** Tính \(\lim_{x\to+\infty}(\sqrt{x^2+x}-x)\). **Chọn phương pháp:** Hiệu hai số lớn gây dạng \(\infty-\infty\), dùng liên hợp. **Giải:** \(\sqrt{x^2+x}-x=\frac{x}{\sqrt{x^2+x}+x}=\frac1{\sqrt{1+1/x}+1}\) khi \(x>0\) đủ lớn, nên giới hạn \(=1/2\). **Kiểm:** \(x>0\) cho phép \(\sqrt{x^2}=x\).</p></div>
+
+    ### 3.4. Âm vô cực cần giữ đúng trị tuyệt đối
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** Tính \(\lim_{x\to-\infty}\frac{\sqrt{x^2+1}}x\). **Chọn phương pháp:** Tách \(|x|\), không tách x tùy tiện. **Giải:** \(\frac{|x|}{x}\sqrt{1+1/x^2}\to(-1)\cdot1=-1\). **Kiểm:** Biểu thức gốc âm với mọi \(x<0\) đủ xa, không thể có giới hạn \(+1\).</p></div>
+
+    ### 3.5. Hai phía khớp dù biểu thức thay đổi
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** Cho \(f(x)=x^2\) nếu \(x\le2\), \(f(x)=3x-2\) nếu \(x>2\). Tìm \(\lim_{x\to2}f(x)\). **Chọn phương pháp:** Xét trái và phải độc lập. **Giải:** \(\lim_{x\to2^-}x^2=4\); \(\lim_{x\to2^+}(3x-2)=4\); nên giới hạn hai phía bằng \(4\). **Kiểm:** Giá \(f(2)=4\) khớp nhưng không thay cho bước so hai phía.</p></div>
+
+    ### 3.6. Mô hình hiệu suất có mức bão hòa
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** \(H(t)=\frac{100t}{t+5}\) với \(t\ge0\). Mức hiệu suất mô hình tiến đến đâu khi \(t\to+\infty\)? **Chọn phương pháp:** Chia cả tử/mẫu cho t, kiểm miền t>0. **Giải:** \(H(t)=100/(1+5/t)\to100\). **Kiểm:** Với mọi \(t\ge0\), \(H(t)<100\) và tăng về mức 100; mô hình không bảo đảm thiết bị thực đạt đúng 100.</p></div>
+
+=== "Lỗi thường gặp"
+
+    Mỗi sai lầm có hướng sửa liên kết về mạch lý thuyết và câu luyện tập khác số liệu.
+
+    <span data-thpt-help-id="HELP-G11-B16-01" hidden></span>
+
+    ??? tip "4.1. Nhầm giá trị tại điểm với giới hạn"
+
+        **Vì sao sai:** Bỏ điều kiện hoặc hiểu sai ý nghĩa giới hạn.
+
+        **Tự sửa:** Phân biệt (f(a)) và xu hướng (x	o a); ôn mục 2.1, giải Core B16-C01.
+
+    <span data-thpt-help-id="HELP-G11-B16-02" hidden></span>
+
+    ??? tip "4.2. Chỉ tính giới hạn từ một phía"
+
+        **Vì sao sai:** Bỏ điều kiện hoặc hiểu sai ý nghĩa giới hạn.
+
+        **Tự sửa:** Tách (x	o a^-) và (x	o a^+), so kết quả; ôn 2.2 và Practice B16-P03.
+
+    <span data-thpt-help-id="HELP-G11-B16-03" hidden></span>
+
+    ??? tip "4.3. Lấy (0/0) làm đáp số hoặc nhân liên hợp sai"
+
+        **Vì sao sai:** Bỏ điều kiện hoặc hiểu sai ý nghĩa giới hạn.
+
+        **Tự sửa:** Giữ miền (x
+e a); phân tích/rút gọn hoặc nhân cả tử và mẫu với liên hợp; Practice B16-P01.
+
+    <span data-thpt-help-id="HELP-G11-B16-04" hidden></span>
+
+    ??? tip "4.4. Bỏ dấu của mẫu hoặc căn khi (x	o-infty)"
+
+        **Vì sao sai:** Bỏ điều kiện hoặc hiểu sai ý nghĩa giới hạn.
+
+        **Tự sửa:** Bảng dấu từng phía, (sqrt{x^2}=|x|); ôn 2.4–2.5, giải Practice B16-P04/P06.
+
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương V](../../../../thu-vien/tu-luan-g11-chuong-v/).
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 16 (trang in 111–118).</p>
