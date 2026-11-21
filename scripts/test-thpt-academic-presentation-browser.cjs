@@ -8,9 +8,15 @@ const chivEditorial=chivEditorialReceiptRows();
 const pages=[
   {
     path:"sgk/lop-11/chuong-i/bai-1/",
-    expected:["1.1. Góc lượng giác và số đo","1.2. Radian và độ dài cung",
-      "1.3. Đường tròn lượng giác","1.4. Tang, côtang và điều kiện xác định",
-      "1.5. Các góc liên quan đặc biệt"],
+    // Q18 frozen G11 B01 Model B: six concept-first Discovery headings
+    // and four canonical SGK Knowledge headings (not the superseded list).
+    expected:["1.1. Góc quay có hướng","1.2. Góc cùng tia cuối",
+      "1.3. Đơn vị radian và cung tròn","1.4. Đọc đường tròn lượng giác",
+      "1.5. Miền xác định của tang và côtang",
+      "1.6. Các góc liên quan đặc biệt",
+      "2.1. Góc lượng giác","2.2. Đơn vị đo góc và độ dài cung tròn",
+      "2.3. Giá trị lượng giác của góc lượng giác",
+      "2.4. Quan hệ giữa các giá trị lượng giác"],
     minMath:27
   },
   {
