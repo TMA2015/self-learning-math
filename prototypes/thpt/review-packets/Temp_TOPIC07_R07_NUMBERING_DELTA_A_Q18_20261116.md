@@ -1,14 +1,34 @@
+<!-- TOP07_MASTER974_CURRENT_EDITORIAL_PED6_Q18_20261121 -->
+## CURRENT CĐ07 AUTHOR_SELF_VERIFIED — 18 tuyến khắc phục thật, 18 Tự kiểm tra tự mở (21/11/2026)
+
+**One current learner canonical** `prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md` Git blob **`7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba`**; previous signed immutable source `b6074c8641963a296e3f990397eba685c968c6ea`. One effective `SLM-THPT-QUALITY-ONE v3.2.0 / Q01–Q18` + #864; existing R07 Q18 filename reused, no new review file, no second learner. The first two HTML comments in learner source are explicitly `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW`; older R06-candidate metadata was stale and has been corrected without student-visible text change.
+
+**Q01 S1 source proof inherited (only original scope):** SGK Toán 11 KNTT Tập Một B05 printed 42–47, B06 48–51, B07 52–55, B15 104–110 from scanned-image provenance `Temp_TOPIC07_G11_B05_B07_B15_ORIGINAL_S1_IMAGE_AUDIT_20261120.md` Git blob `bada66e655a07b111f361b1cad634015f5dbae07`; original direct math/PED author assessment `Temp_TOPIC07_R07_DIRECT_MATH_PED_69_CANONICAL_18_OUTCOMES_20261121.md` blob `3d2b55591b538e5e82af9526afed26d0d90a0114` remains valid for **unchanged** 69 canonical items and 18 concept/example/math arcs. Primary audit was limited to pages/critical concept blocks, **not** 100% of original SBT equations, full independent NotebookLM or website QA.
+
+**Issue #977 `TOP22-20261121-022` P1 (Q08/Q14/PED6), FIXED_VERIFIED:** actual previous learner had 18/18 first-try `Đối chiếu` with zero numbered Practice destinations. Added **18 distinct error diagnoses** `Kiểm lỗi` INSIDE existing `<details class="slm-topic-first-try" markdown="1">` to send learners back to correct existing subsection and source-backed Practice examples. Verified real Bài destinations by opening original learner Practice stems:
+`O01: Kiến thức1.1→Bài2/1`, `O02:1.2→Bài5/6`, `O03:1.3→Bài8/11`, `O04:1.4→Bài14/16`, `O05:1.5→Bài19/20`, `O06:2.1→Bài22/23`, `O07:2.2→Bài26/27`, `O08:2.3→Bài25/30`, `O09:2.4→Bài34/35`, `O10:2.5→Bài38/40`, `O11:3.1→Bài41/44`, `O12:3.2→Bài46/47`, `O13:3.3→Bài48/50`, `O14:3.4→Bài52/55`, `O15:3.5→Bài58/61`, `O16:4.1→Bài40/63`, `O17:4.2→Bài65/67`, `O18:4.3→Bài68/69`. Misconceptions are individually appropriate to finite index domain, recurrence, bound attainment, arithmetic/geometric q=0/q=1, signed q, convergence |q|<1, strict error bound and end-period interest; no generic checklist visible to students.
+
+**Issue #977 `TOP22-20261121-023` P2 (Q16/Q17/PED6), FIXED_VERIFIED:** one voluntary **Đối chiếu AFTER all 18 question-only PUBLIC_REPLAY_ONLY** prompts maps Câu1–18 to actual existing Practice Bài `2,6,11,16,20,23,27,30,35,40,44,47,50,55,61,63,67,68`. Checked 18/18 real `item_id` equality with `DISPLAY_ONLY_CANONICAL` placement. No duplicate correct answer, no official independent Topic Readiness/RD1/Final Submit or Mastery; `CLIENT_SELF_CHECK_NO_MASTERY`.
+
+**Issue #977 `TOP22-20261121-024` P2 (#864 one-only SGK credit), FIXED_VERIFIED:** changed only phrase `SGK sử dụng bốn cách trình bày bổ trợ nhau` in O02 body to natural direct pedagogy `Có bốn cách thường dùng để cho một dãy số, bổ trợ nhau`, leaving explanations/forms/notation intact. **Exactly one** final source credit line remains at bottom of whole Topic. Student sees only learning content, not editorial/state metadata.
+
+**Q15/Q16 inverse source proof:** previous whole source reconstructed **byte-exact** after removing 18 added D6 regions, one after-selfcheck voluntary map, reverting one nonmathematical O02 phrase and two hidden authoring-only metadata comments. Thus all **69/69 original Practice stems, keys, solutions, 11 Written rubrics** are untouched byte-for-byte, 18 original public selfcheck stems unchanged; three original SVG path references unchanged; 18 standalone original examples/concept text untouched otherwise; **88/88 balanced opt-in details** (18 Knowledge +69 Practice +1 final mapping). Strict math: q=0 and q=1 handled separately; `|q|<1` required for infinite sums; model timing/early/late repayments distinguished. `DELTA_C_PED_TARGETED` (D6 tutorial paths), `DELTA_A_UI_EDITORIAL` (single SGK source mention/hidden metadata only). `AUTHOR_SELF_VERIFIED` for changed scope, no fake independent NotebookLM reviewer pass.
+
+**Gate:** This source is AUTHORING-ready only after current V2/ready/REGISTER are relocked to this Q18 Git SHA and source; no website AP/R/production claim, no merge/deploy.
+
+---
+
 # CĐ7 R07 Q18 AUTHOR_SELF_VERIFIED — numbering and formal-knowledge refinement · 17/11/2026
 
 PACKET_ID: THPT-TOPIC07-SEQUENCES-AP-GP-FULL-R01
 CONTENT_REVISION: R07
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: b6074c8641963a296e3f990397eba685c968c6ea
-ACADEMIC_SOURCE_BLOB: b6074c8641963a296e3f990397eba685c968c6ea
+SOURCE_BLOB: 7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba
+ACADEMIC_SOURCE_BLOB: 7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R06_STUDENT_FIRST_69_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: 22609934f525e6e9c2c8f1513e439c3cd4d54221
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -18,21 +38,21 @@ AUTHOR_QA_H2_H3_SEQ: PASS
 AUTHOR_QA_OUTCOMES: 18/18
 AUTHOR_QA_CANONICAL: 69/69 EXACT_ID_STEM_KEY_SOLUTION_RUBRIC_D6
 AUTHOR_QA_SELFCHECK: 18/18 PRESERVED
-AUTHOR_QA_REVEAL_CONTENT: BYTE_EXACT_OLD_NEW
+AUTHOR_QA_REVEAL_CONTENT: 18_VOLUNTARY_KNOWLEDGE_D6_UPDATED; 69_PRACTICE_REVEALS_BYTE_EXACT; ONE_EXTRA_POST_SELFCHECK_VOLUNTARY_MAP
 PRIOR_R07_NUMBERING_SNAPSHOT_BLOB: b28b4222c19ae949072c507ac53be0a4ebfbf535
 PRIOR_EFFECTIVE_EDITORIAL_SOURCE_BLOB: c2a04632a0e6e2a37d48abb5360e0a90eb69e9a4
 CURRENT_FORMAL_KNOWLEDGE_QA: TOP07-O01_O06_O11 PASS
 CURRENT_RECALL_SUMMARY_QA: TOP07-O01_O06_O11_O18 PASS
 CURRENT_SOURCE_STRUCTURE: THREE_PARTS_H1_H2_H3_PASS
-CURRENT_SOURCE_PROTECTED_REPLAY: 18/18 SAME_QUESTION_ONLY_BYTE_EXACT
+CURRENT_SOURCE_PROTECTED_REPLAY: 18/18 SAME_QUESTION_ONLY_BYTE_EXACT; ONE OPTIONAL_POST_SELFCHECK_NAVIGATION_TO_EXISTING_PRACTICE_ANSWERS_NO_MASTERY
 CURRENT_SOURCE_ITEM_PROJECTION: 69/69 SAME_PRACTICE_STEM_KEY_SOLUTION_RUBRIC_D6
 CURRENT_SOURCE_SVG: 3/3 SAME_PATH
-CURRENT_SOURCE_DELTA: 3 FORMAL DEFINITIONS + 1 RECALL SUMMARY, 0 CANONICAL CONTENT CHANGES
+CURRENT_SOURCE_DELTA: 18 original voluntary D6 reveals extended with actual Knowledge and numbered Practice remediation; 1 voluntary post-selfcheck answer-location map; 1 SGK body attribution converted to normal mathematical instruction; 2 hidden authoring metadata comments clarified; all 69 Practice and 18 selfcheck question stems immutable.
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOPIC7_R07_FORMAL_CONCEPT_SELF_QA_8aeef9a0f0c30bed76f93bcf923fff57f8c00b04
+AUTHOR_SIGNOFF: TOP07_MASTER974_D6_18_OUTCOMES_AND_18_PUBLIC_SELFCHK_AUTHOR_Q18_7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
