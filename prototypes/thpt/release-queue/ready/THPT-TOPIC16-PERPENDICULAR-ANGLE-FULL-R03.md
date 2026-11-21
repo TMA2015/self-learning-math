@@ -1,3 +1,7 @@
+<!-- TOP16_MASTER974_EFFECTIVE_READY_20261121 -->
+**CURRENT AUTHORING CONTENT_READY snapshot (NOT RELEASE):** ONE CĐ16 R03 learner `9b548af2169cabccf4e9191e9dd57b2f13dcdf6d`, source commit `b998dfbe82ba2fd60d0838e91fb2c9413e68fa41`, signed Q18 AUTHOR_SELF_VERIFIED v3.2.0 `5fb70a7644f6bf9d56fb8d51dd456f98cb5d1efe`, A1–A7 `2324f83b982ccffd513c8ddb7f3666177aa70b8f`, sole V2 `c75fff429089d3d38209f51d6e7375736c1a2779`. 21 existing real Knowledge outcomes with one precise error→Knowledge→two original numbered Practice retries each; 8 original public question-only selfchecks use same original IDs with one voluntary after-all-questions practice answer lookup (11,26,29,42,44,59,61,64); original 65 canonical Practice full maths/keys/solutions/11 Written rubrics source-exact, only learner display Bài luyện 1–65 and natural section titles changed. Four original SVG and model unchanged, 87/87 opt-in details, end-only SGK credit. Delta C pedagogy / A editorial under one Q01–Q18; P0/P1 0 in changed source scope. **OPEN NONBLOCKING P2 #977-054:** original G11 canonical answer label “Đáp án sau Submit luyện tập” remains same across 33 reused items, requires source-owner cross-placement Q15 editorial action, not a Topic-only rewrite; no private RD1/official readiness/Mastery, website browser/RELEASE, merge/deploy/Firebase.
+---
+
 # CĐ16 — Quan hệ vuông góc & Góc · AUTHORING CONTENT_READY R03
 
 PACKET_ID: THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03
@@ -8,22 +12,22 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-CONTENT_REVISION: R03_FULL_S1_KNOWLEDGE_20261120
-DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_O01_O06_O12_O13_O16_O20; DELTA_A_UI_MODEL_CSS_HISTORICAL
+CONTENT_REVISION: R03_MASTER974_21D6_PUBLIC_LOOKUP_20261121
+DELTA_CLASS: DELTA_C_PED_TARGETED_21_D6_PUBLIC_SELF_CHECK; DELTA_A_EDITORIAL_65_TITLES; OLD_O01_O06_O12_O13_O16_O20_AND_MODEL_CSS_HISTORICAL
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: d9349832c120c0d0ed4b3c968d2aa58f50e5683d
+SOURCE_COMMIT: b998dfbe82ba2fd60d0838e91fb2c9413e68fa41
 CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 439ee3833a864638eedd11bc80baf564c77485a5
+ACADEMIC_SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_Q18, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 27975aff2764f84f62be45763d3014ed7b00ea7e
+REVIEW_RECEIPT_BLOB: 5fb70a7644f6bf9d56fb8d51dd456f98cb5d1efe
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 1c52217f82a702c33eb0232ab11e6254f96229d7
+AUTHOR_A1_A7_BLOB: 2324f83b982ccffd513c8ddb7f3666177aa70b8f
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: a6a986f5f89eb9aafc0718164c749921090fd2e8
+AUTHOR_HANDOFF_BLOB: c75fff429089d3d38209f51d6e7375736c1a2779
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
