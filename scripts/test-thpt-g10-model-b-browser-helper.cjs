@@ -44,9 +44,25 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
  if(n===9&&fs.existsSync(r06Path)){
   const r06=fs.readFileSync(r06Path,"utf8");
   const signed=r06.split("**R06_SOURCE_BLOB:** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(signed,sha,"B09 third mistake is permitted only on signed owner P2 R06 source");
+  // Frozen 17/11 R06 is the predecessor of the owner-signed 20/11
+  // local-HELP placement (R01), then the one general vector mistake
+  // remains in Tab4 after the 20/11 R02 relocation. Source identity and
+  // historical chain are both mandatory; no ad hoc editorial acceptance.
+  const placement=fs.readFileSync(
+   "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md","utf8");
+  const row=placement.split("\\n").find(x=>x.startsWith("| B9 | "));
+  assert(row,"B09 needs immutable 20/11 placement receipt");
+  const shas=[...row.matchAll(/`([a-f0-9]{40})`/g)].map(m=>m[1]);
+  assert.equal(shas[0],signed,"B09 20/11 original must be frozen owner R06 source");
+  const next=fs.readFileSync(
+   "prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md","utf8");
+  const field=k=>next.split("**"+k+":** `")[1]?.slice(0,40);
+  assert.equal(field("R02_PREVIOUS_SOURCE_BLOB"),shas[1],
+   "B09 current general mistake must extend 20/11 local-HELP placement");
+  assert.equal(field("R02_CORRECTED_SOURCE_BLOB"),sha,
+   "B09 current rendered error must match exact 20/11 source receipt");
   assert(r06.includes("B09-F04")&&source.includes("Đảo dấu khi phân tích vectơ"),
-   "B09 4.3 must be genuine error with root-cause and formal scoped receipt");
+   "B09 general Tab4 must diagnose a genuine sign error");
   extraMistake=1;
  }
  assert.equal((source.match(/^    \?\?\? tip "/gm)||[]).length,helps+extraMistake,
@@ -55,8 +71,8 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
   "B"+n+" exact collapsed error count; canonical HELP markers remain independently checked");
  if(extraMistake){
   const third=article.locator("details.tip").nth(2);
-  assert((await third.locator("summary").innerText()).includes("4.3"),
-   "B09 owner P2 4.3 must be a correctly numbered error disclosure");
+  assert((await third.locator("summary").innerText()).includes("Đảo dấu khi phân tích vectơ"),
+   "B09 must retain one real general wrong-sign diagnosis in Tab4");
   await labels.nth(3).click();
   assert(!(await third.evaluate(x=>x.open)),"B09 4.3 remains closed before learner action");
   await third.locator("summary").click();
