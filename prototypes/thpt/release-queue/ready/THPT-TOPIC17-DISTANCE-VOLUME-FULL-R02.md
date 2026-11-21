@@ -1,3 +1,6 @@
+<!-- OWNER_APPROVED_SHARED_G11_B22_B27_LABEL_EQUIVALENCE_CĐ17_READY_20261121 -->
+**CURRENT SOURCE_OWNER_PARITY:** Existing one CĐ17 learner `0ef0ad696e97d2549f29c5a22ba675970572a089`, original shared G11 SGK ChVII B22–27 one bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` matched EXACT identical blob in CĐ16 branch. Corrected all **18** original B26–B27 student `Đáp án sau Submit luyện tập` headings to `Đáp án`, matching 51/51 source-owner bank and 33 CĐ16 projection. All original 37 Practice mathematical stems, numeric/text answer values, worked solutions, 7 Written rubrics, 8 public same-ID selfchecks, 2 diagrams, Q16/Final Submit/Mastery unchanged; no duplicate SGK bank or new item version. Current Q18 `5f6fb06ac8751e59d08d22ba78ebeee829c28a55`, A1 `041ba48f0302b6b121fa2017f7ab6bc27d60443e`, V2 `ae9c4caec79325bd35038ac7f9a3411bdf3cbf2f`; `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL` author-self check only, not independent whole Topic review or website RELEASE. Prior bank `afc8ec039213b87b4930f2d34d48c28d1fc6277f` immutable history.
+---
 <!-- TOP17_MASTER974_CURRENT_READY_20261121 -->
 **CURRENT ONE CĐ17 AUTHORING CONTENT_READY (NOT website RELEASE):** active one unchanged-path R03 learner `f4ccf992d19ffe2f8680f99995e9b8a75cebfd66` exact source commit `648c048d96fff2ae82489c4878fb43306e4011cf` → one Q18 `AUTHOR_SELF_VERIFIED` v3.2.0 `e040ecd6c0c7585e7497d8d418e4d2d43b1781cb` → one A1 `c858c664abcf46168e38e8f470dcde1267bfbd7a` → same V2 `60c3ce666c3bb568b3148a672ec9cf65de1f4369`. Student source 12/12 Knowledge outcomes and voluntary `Kiểm lỗi` routes to 24 actual math-matched current original numbered Bài; 37/37 pre-delta canonical Practice mathematical questions/answers/solutions/seven Written rubric bodies byte-identical, now student-labelled **Bài luyện 1–37**, 8 original public selfchecks same-ID question-only and one optional after-all answer locator Câu1–8→Bài 12,13,15,16,17,30,32,34. Two SVG and one original HTML model remain source-locked; 51/51 details, one end-only SGK source credit. **One existing nonmath P2 #977-054** original G11 `Đáp án sau Submit luyện tập` label in 18 preserved source-equivalent answer bodies requires original canonical owner coordinated editorial change; no Topic-only rewrite. Delta C targeted pedagogy + A editorial; no claimed independent NotebookLM whole-Topic PASS, RD1/official readiness/Mastery, production AP/R/browser UAT, CI or owner release. P0/P1=0 verified affected scope, original-source owner P2 open.
 ---
@@ -19,14 +22,14 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
+ACADEMIC_SOURCE_BLOB: 0ef0ad696e97d2549f29c5a22ba675970572a089
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md (AUTHOR_SELF_VERIFIED, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: e040ecd6c0c7585e7497d8d418e4d2d43b1781cb
+REVIEW_RECEIPT_BLOB: 5f6fb06ac8751e59d08d22ba78ebeee829c28a55
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: c858c664abcf46168e38e8f470dcde1267bfbd7a
+AUTHOR_A1_A7_BLOB: 041ba48f0302b6b121fa2017f7ab6bc27d60443e
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: 60c3ce666c3bb568b3148a672ec9cf65de1f4369
+AUTHOR_HANDOFF_BLOB: ae9c4caec79325bd35038ac7f9a3411bdf3cbf2f
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
 INTERACTIVE_MODEL_BLOB: cfb2bd522531167003eeae8e7342c6d1349ca425
