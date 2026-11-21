@@ -2,7 +2,7 @@
 
 Một bản vẽ không gian chỉ là hình biểu diễn trên mặt phẳng. Muốn biết hai đường có thật sự song song hay không, em cần chỉ ra các điểm, đường và mặt phẳng liên quan bằng lập luận toán học — rồi tự kiểm chứng với hình và bài làm.
 
-<!-- AUTHORING_R04_CANDIDATE: based on locked R03 blob 4a5a0c1fd140aab342737f6bde95e37b79237d80; R02 historical unchanged ab4bd6a9f40b4925da35b725ccf396cd3c4eae9b; 40 source-exact SGK cards are DISPLAY_ONLY, one owner canonical source e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; 49 Topic T/P/W canonical IDs unchanged; 8 public selfchecks use same P IDs NO_MASTERY; no official held-out RD1 -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: one effective R04 learner source, prior R02/R03 historical, original G11 B10-B14 canonical owner PR705 e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; 8 public selfchecks reuse original item IDs without official assessment. -->
 
 # Kiến thức
 
@@ -593,7 +593,11 @@ Ta còn có thể phát biểu mạnh hơn phần “giao tuyến song song”. 
 
 > **TÍNH CHẤT — Hai mặt phẳng song song bị mặt thứ ba cắt.** Nếu \((P)\parallel(Q)\), và \((R)\) cắt \((P)\) theo đường \(g\), thì \((R)\) cũng cắt \((Q)\) theo đường \(h\), đồng thời \(g\parallel h\). Hai mặt \((P),(Q)\) phải **phân biệt**; không suy ra kết luận nếu \((R)\) chỉ song song cả hai.
 
-**Ví dụ bổ sung.** Cho \((P):z=0\), \((Q):z=4\), \((R):x+y=1\). Mặt \((R)\) cắt \((P)\) theo \(g:\{x+y=1,z=0\}\). Nó cũng cắt \((Q)\) theo \(h:\{x+y=1,z=4\}\). Cả hai giao tuyến có vectơ chỉ phương \((1,-1,0)\), ở hai độ cao khác nhau nên song song phân biệt. Bước bắt buộc là chứng minh \((R)\) không song song \((Q)\), chứ không chỉ nhìn hai đường trên hình.
+**Ví dụ**
+
+**Đề bài:** Cho \((P):z=0\), \((Q):z=4\), \((R):x+y=1\).
+
+**Lời giải:** Mặt \((R)\) cắt \((P)\) theo \(g:\{x+y=1,z=0\}\). Nó cũng cắt \((Q)\) theo \(h:\{x+y=1,z=4\}\). Cả hai giao tuyến có vectơ chỉ phương \((1,-1,0)\), ở hai độ cao khác nhau nên song song phân biệt. Bước bắt buộc là chứng minh \((R)\) không song song \((Q)\), chứ không chỉ nhìn hai đường trên hình.
 
 **Ví dụ**
 
@@ -635,7 +639,11 @@ Khi mặt cắt đồng dạng với đáy, độ dài thay theo một hệ số
 
 > **ĐỊNH LÍ — Thalès trong không gian.** Ba mặt phẳng \((P),(Q),(R)\) đôi một song song phân biệt cắt một đường thẳng tại \(A,B,C\) và một đường thẳng khác tại \(A',B',C'\) theo **cùng thứ tự mặt phẳng**. Khi đó \(\displaystyle\frac{AB}{BC}=\frac{A'B'}{B'C'}\) (các mẫu phải khác \(0\)); nếu xét đoạn có hướng, dùng các tỉ số đại số tương ứng. Không dùng định lí nếu các mặt phẳng không đôi một song song hoặc một cát tuyến không cắt đủ ba mặt.
 
-**Ví dụ bổ sung.** Ba mặt song song \(z=0,z=2,z=5\) cắt hai đường \(d:(0,0,t)\), \(e:(t,2,2t)\) ở \(t=0,2,5\) trên \(d\) và \(t=0,1,5/2\) trên \(e\). Trên \(d\), hai đoạn liên tiếp dài \(2\) và \(3\); trên \(e\), vectơ chỉ phương \((1,0,2)\) có độ dài \(\sqrt5\), nên hai đoạn dài \(\sqrt5\) và \(\frac32\sqrt5\). Tỉ số hai đoạn là \(2/3\) trên cả hai cát tuyến. Chọn tỉ số thay vì đo trực tiếp từ hình chiếu.
+**Ví dụ**
+
+**Đề bài:** Ba mặt song song \(z=0,z=2,z=5\) cắt hai đường \(d:(0,0,t)\), \(e:(t,2,2t)\) ở \(t=0,2,5\) trên \(d\) và \(t=0,1,5/2\) trên \(e\).
+
+**Lời giải:** Trên \(d\), hai đoạn liên tiếp dài \(2\) và \(3\); trên \(e\), vectơ chỉ phương \((1,0,2)\) có độ dài \(\sqrt5\), nên hai đoạn dài \(\sqrt5\) và \(\frac32\sqrt5\). Tỉ số hai đoạn là \(2/3\) trên cả hai cát tuyến. Chọn tỉ số thay vì đo trực tiếp từ hình chiếu.
 
 ### Hình lăng trụ và hình hộp
 
@@ -643,7 +651,11 @@ Không phải khối nào có hai mặt song song cũng là hình chóp cụt. T
 
 > **TÍNH CHẤT — Cạnh và mặt bên của hình lăng trụ.** Với lăng trụ \(ABC.A'B'C'\), ta có \(\overrightarrow{AA'}=\overrightarrow{BB'}=\overrightarrow{CC'}\), \(AB\parallel A'B'\), \(BC\parallel B'C'\), \(CA\parallel C'A'\); các mặt \(ABB'A'\), \(BCC'B'\), \(CAA'C'\) là hình bình hành, còn \((ABC)\parallel(A'B'C')\). Hình hộp là trường hợp lăng trụ có đáy là hình bình hành. Tính chất này phân biệt lăng trụ với mặt cắt đồng dạng **thu nhỏ** trong hình chóp.
 
-**Ví dụ bổ sung.** Cho lăng trụ tam giác có \(A(0,0,0),B(2,0,0),C(0,3,0)\) và ba đỉnh trên lần lượt là \(A'(1,0,4),B'(3,0,4),C'(1,3,4)\). Khi đó ba vectơ cạnh bên đều là \((1,0,4)\), đáy trên là bản tịnh tiến của đáy dưới. Ta có \(\overrightarrow{AB}=(2,0,0)=\overrightarrow{A'B'}\); vì hai cặp cạnh đối song song và bằng nhau, mặt \(ABB'A'\) là hình bình hành. Hai đáy đều có diện tích \(3\), **không giảm theo bình phương tỉ số** như các mặt cắt thu nhỏ của hình chóp.
+**Ví dụ**
+
+**Đề bài:** Cho lăng trụ tam giác có \(A(0,0,0),B(2,0,0),C(0,3,0)\) và ba đỉnh trên lần lượt là \(A'(1,0,4),B'(3,0,4),C'(1,3,4)\).
+
+**Lời giải:** Khi đó ba vectơ cạnh bên đều là \((1,0,4)\), đáy trên là bản tịnh tiến của đáy dưới. Ta có \(\overrightarrow{AB}=(2,0,0)=\overrightarrow{A'B'}\); vì hai cặp cạnh đối song song và bằng nhau, mặt \(ABB'A'\) là hình bình hành. Hai đáy đều có diện tích \(3\), **không giảm theo bình phương tỉ số** như các mặt cắt thu nhỏ của hình chóp.
 
 **Ví dụ**
 
@@ -763,7 +775,11 @@ Tỉ số được bảo toàn không chỉ khi hai đoạn nằm **trên một 
 
 > **TÍNH CHẤT — Bảo toàn tỉ số trên các đường song song.** Nếu \(AB\parallel CD\) và dưới phép chiếu song song các đoạn \(A'B',C'D'\) đều không suy biến, thì \(\displaystyle\frac{A'B'}{C'D'}=\frac{AB}{CD}\). Cần phân biệt **bảo toàn tỉ số cùng phương** với **bảo toàn độ dài**, điều mà phép chiếu xiên không đảm bảo.
 
-**Ví dụ bổ sung.** Dưới \(T(x,y,z)=(x-z,y,0)\), lấy \(A(0,0,0),B(2,0,0),C(0,1,3),D(4,1,3)\). Hai đoạn \(AB,CD\) cùng hướng trục \(Ox\), dài lần lượt \(2\) và \(4\). Ảnh \(A'(0,0,0),B'(2,0,0),C'(-3,1,0),D'(1,1,0)\) cũng có độ dài \(2\) và \(4\); cả hai tỉ số đều bằng \(1/2\). Trong trường hợp phương đoạn có thành phần theo hướng chiếu, độ dài riêng từng đoạn có thể đổi, nhưng **tỉ số của hai đoạn cùng hướng** vẫn giữ.
+**Ví dụ**
+
+**Đề bài:** Dưới \(T(x,y,z)=(x-z,y,0)\), lấy \(A(0,0,0),B(2,0,0),C(0,1,3),D(4,1,3)\). Hai đoạn \(AB,CD\) cùng hướng trục \(Ox\), dài lần lượt \(2\) và \(4\).
+
+**Lời giải:** Ảnh \(A'(0,0,0),B'(2,0,0),C'(-3,1,0),D'(1,1,0)\) cũng có độ dài \(2\) và \(4\); cả hai tỉ số đều bằng \(1/2\). Trong trường hợp phương đoạn có thành phần theo hướng chiếu, độ dài riêng từng đoạn có thể đổi, nhưng **tỉ số của hai đoạn cùng hướng** vẫn giữ.
 
 **Ví dụ**
 
@@ -803,7 +819,11 @@ Một hình chữ nhật thật có thể hiện thành hình bình hành xiên 
 
 > **TÍNH CHẤT — Hình biểu diễn đường tròn.** Phép chiếu song song **không suy biến trên mặt phẳng chứa đường tròn** biến đường tròn thành elip, với đường tròn là trường hợp đặc biệt. Không đánh đồng phép chiếu song song với **phép chiếu xuyên tâm phối cảnh**: hai đường thẳng song song trong không gian có ảnh song song hoặc trùng dưới phép chiếu song song, còn trong phối cảnh xuyên tâm chúng có thể gặp nhau tại điểm tụ.
 
-**Ví dụ bổ sung.** Xét đường tròn \(y^2+z^2=4\) trong mặt \(x=0\) và phép chiếu lên \(z=0\) theo vectơ \((1,0,2)\). Điểm \((0,y,z)\) có ảnh \((-z/2,y,0)\), nên \(z=-2x'\), \(y=y'\). Phương trình ảnh là \(4x'^2+y'^2=4\), tức \(\frac{x'^2}{1}+\frac{y'^2}{4}=1\), một elip. Hai bán trục của hình chiếu dài \(1\) và \(2\), còn bán kính của đường tròn gốc bằng \(2\); không suy bán kính thật bằng trục ngắn trên hình chiếu.
+**Ví dụ**
+
+**Đề bài:** Xét đường tròn \(y^2+z^2=4\) trong mặt \(x=0\) và phép chiếu lên \(z=0\) theo vectơ \((1,0,2)\).
+
+**Lời giải:** Điểm \((0,y,z)\) có ảnh \((-z/2,y,0)\), nên \(z=-2x'\), \(y=y'\). Phương trình ảnh là \(4x'^2+y'^2=4\), tức \(\frac{x'^2}{1}+\frac{y'^2}{4}=1\), một elip. Hai bán trục của hình chiếu dài \(1\) và \(2\), còn bán kính của đường tròn gốc bằng \(2\); không suy bán kính thật bằng trục ngắn trên hình chiếu.
 
 **Ví dụ**
 
@@ -873,14 +893,14 @@ Nếu đánh đồng diện tích thiết diện với ảnh chiếu xiên, đ�
 
 # Luyện tập
 
-Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài tập theo nội dung SGK và các câu luyện mới đều có đề và lời giải ở ngay trang này; phần tự luận có thêm hướng dẫn chấm để em tự đối chiếu. Lời giải đã xem không phải chứng cứ đánh giá độc lập.
+Hãy tự giải mỗi bài vào vở trước khi mở **Lời giải**. Trước khi tính, xác định rõ hai đường có đồng phẳng không, đường có nằm trong mặt không và các tỉ số có thỏa điều kiện định lí không. Nếu làm sai, ghi bước sai đầu tiên rồi luyện lại bài cùng dạng.
 
 ## 1. Điểm, đường, mặt phẳng và thiết diện
 
-**Bài tập dùng chung từ SGK**
+**Xác định mặt phẳng, giao tuyến và thiết diện**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-C01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 1.** Hai điểm phân biệt A,B thuộc (P). Có chắc AB nằm trong (P) không?
+**Bài luyện 1.** Hai điểm phân biệt A,B thuộc (P). Có chắc AB nằm trong (P) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -891,7 +911,7 @@ Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-C02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 2.** Ba điểm A,B,C thẳng hàng có xác định duy nhất một mặt phẳng không?
+**Bài luyện 2.** Ba điểm A,B,C thẳng hàng có xác định duy nhất một mặt phẳng không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -902,7 +922,7 @@ Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-P01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 3.** Trong tứ diện S.ABC, giao tuyến (SAB) và (SAC) là đường nào?
+**Bài luyện 3.** Trong tứ diện S.ABC, giao tuyến (SAB) và (SAC) là đường nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -913,7 +933,7 @@ Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-P02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 4.** Trong tứ diện S.ABC, M nằm trong cạnh SB. Giao của CM với (SAB) là gì?
+**Bài luyện 4.** Trong tứ diện S.ABC, M nằm trong cạnh SB. Giao của CM với (SAB) là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -924,7 +944,7 @@ Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-P03; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 5.** Cho đường a và A∉a. Có bao nhiêu mặt phẳng chứa a và A?
+**Bài luyện 5.** Cho đường a và A∉a. Có bao nhiêu mặt phẳng chứa a và A?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -935,7 +955,7 @@ Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-P04; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 6.** Trong tứ diện S.ABC, M,N,K là điểm bên trong SA,SB,SC. Thiết diện bởi (MNK) là đa giác nào?
+**Bài luyện 6.** Trong tứ diện S.ABC, M,N,K là điểm bên trong SA,SB,SC. Thiết diện bởi (MNK) là đa giác nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -946,7 +966,7 @@ Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 1.** Trong tứ diện S.ABC, M∈SA, N∈SB, K∈SC là ba điểm trong cạnh. Tìm giao tuyến của (SMN) và (SBC); rồi cho biết thiết diện (MNK) của tứ diện.
+**Bài luyện 7.** Trong tứ diện S.ABC, M∈SA, N∈SB, K∈SC là ba điểm trong cạnh. Tìm giao tuyến của (SMN) và (SBC); rồi cho biết thiết diện (MNK) của tứ diện.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -961,7 +981,7 @@ Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài t
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B10-W02-ANCHOR; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 2.** Cho tứ diện S.ABC và P∈AB (khác A,B). Mặt phẳng (SCP) cắt tứ diện theo thiết diện nào? Giải thích từng cạnh của thiết diện.
+**Bài luyện 8.** Cho tứ diện S.ABC và P∈AB (khác A,B). Mặt phẳng (SCP) cắt tứ diện theo thiết diện nào? Giải thích từng cạnh của thiết diện.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -978,7 +998,7 @@ Hãy giải mỗi bài vào vở trước khi tự mở **Lời giải**. Bài t
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P06; OUTCOME_ID: TOP15-O01; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 1.** Cho A,B phân biệt thuộc (P), M∈AB, C nằm ngoài (P). Hỏi M∈(P) không và AC⊂(P) có đúng không?
+**Bài luyện 9.** Cho A,B phân biệt thuộc (P), M∈AB, C nằm ngoài (P). Hỏi M∈(P) không và AC⊂(P) có đúng không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -991,7 +1011,7 @@ M∈(P) vì AB⊂(P). AC không nằm trọn (P), do C nằm ngoài (P).
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P07; OUTCOME_ID: TOP15-O02; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 2.** Xét ba điểm A(0,0,0),B(1,0,0),C(2,0,0). Chúng có xác định duy nhất một mặt phẳng không? Thêm D(0,1,0) thì (ABD) có duy nhất không?
+**Bài luyện 10.** Xét ba điểm A(0,0,0),B(1,0,0),C(2,0,0). Chúng có xác định duy nhất một mặt phẳng không? Thêm D(0,1,0) thì (ABD) có duy nhất không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1004,7 +1024,7 @@ A,B,C thẳng hàng theo Ox nên không xác định một mặt duy nhất. A,B
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P08; OUTCOME_ID: TOP15-O03; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 3.** Trong tứ diện S.ABC, tìm (SAC)∩(SBC). Chỉ ra hai điểm chung hợp lệ.
+**Bài luyện 11.** Trong tứ diện S.ABC, tìm (SAC)∩(SBC). Chỉ ra hai điểm chung hợp lệ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1017,7 +1037,7 @@ Hai mặt có S,C chung và phân biệt; giao tuyến là SC.
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P09; OUTCOME_ID: TOP15-O04; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 4.** Cho d:(x,y,z)=(2+t,1,4−2t), (P):z=0. Tìm d∩(P); đường e:(t,1,4) có cắt (P) không?
+**Bài luyện 12.** Cho d:(x,y,z)=(2+t,1,4−2t), (P):z=0. Tìm d∩(P); đường e:(t,1,4) có cắt (P) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1030,7 +1050,7 @@ Với d: 4−2t=0 ⇒ t=2, giao tại (4,1,0). e có z=4 với mọi t nên song
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P10; OUTCOME_ID: TOP15-O05; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 5.** Trong tứ diện S.ABC, P∈AB và Q∈AC là các điểm trong cạnh. Mặt (SPQ) có thiết diện gì? Nêu các đoạn giao.
+**Bài luyện 13.** Trong tứ diện S.ABC, P∈AB và Q∈AC là các điểm trong cạnh. Mặt (SPQ) có thiết diện gì? Nêu các đoạn giao.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1043,7 +1063,7 @@ Thiết diện tam giác SPQ: các đoạn SP trên (SAB), SQ trên (SAC), PQ tr
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-W03; OUTCOME_ID: TOP15-O05; ROLE: TOPIC_WRITTEN; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Tự luận 1.** Trong tứ diện S.ABC, P là trung điểm AB, Q là trung điểm AC. Xét mặt (SPQ). a) Xác định thiết diện. b) Chứng minh PQ∥BC. c) Nếu BC=10 cm, tính PQ.
+**Bài luyện 14.** Trong tứ diện S.ABC, P là trung điểm AB, Q là trung điểm AC. Xét mặt (SPQ). a) Xác định thiết diện. b) Chứng minh PQ∥BC. c) Nếu BC=10 cm, tính PQ.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1059,10 +1079,10 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 
 ## 2. Quan hệ giữa hai đường thẳng
 
-**Bài tập dùng chung từ SGK**
+**Phân loại đường cắt nhau, song song, chéo nhau**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-C01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 7.** Hai đường thẳng khác nhau không cắt nhau trong không gian chắc chắn song song?
+**Bài luyện 15.** Hai đường thẳng khác nhau không cắt nhau trong không gian chắc chắn song song?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1073,7 +1093,7 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-C02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 8.** Trong hình bình hành ABCD, AB và CD có quan hệ nào?
+**Bài luyện 16.** Trong hình bình hành ABCD, AB và CD có quan hệ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1084,7 +1104,7 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-P01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 9.** Trong tứ diện S.ABC, SA và BC có quan hệ nào?
+**Bài luyện 17.** Trong tứ diện S.ABC, SA và BC có quan hệ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1095,7 +1115,7 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-P02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 10.** Trong tam giác SAB, M,N lần lượt trung điểm SA,SB. Chứng minh MN và AB có quan hệ nào.
+**Bài luyện 18.** Trong tam giác SAB, M,N lần lượt trung điểm SA,SB. Chứng minh MN và AB có quan hệ nào.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1106,7 +1126,7 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-P03; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 11.** Trong hình chóp S.ABCD đáy ABCD hình bình hành, SA và CD song song hay chéo nhau?
+**Bài luyện 19.** Trong hình chóp S.ABCD đáy ABCD hình bình hành, SA và CD song song hay chéo nhau?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1117,7 +1137,7 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-P04; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 12.** Nếu a∥b và b∥c, có thể kết luận a∥c ngay khi chưa biết a≠c không?
+**Bài luyện 20.** Nếu a∥b và b∥c, có thể kết luận a∥c ngay khi chưa biết a≠c không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1128,7 +1148,7 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 3.** Trong tứ diện S.ABC, M,N lần lượt là trung điểm SA và SB. (a) Chứng minh MN∥AB. (b) SA và BC song song hay chéo nhau?
+**Bài luyện 21.** Trong tứ diện S.ABC, M,N lần lượt là trung điểm SA và SB. (a) Chứng minh MN∥AB. (b) SA và BC song song hay chéo nhau?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1143,7 +1163,7 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B11-W02-ANCHOR; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 4.** Hình chóp S.ABCD có đáy là hình bình hành. Lấy M,N là trung điểm SA,SD. (a) Chứng minh MN∥AD. (b) Suy ra MN∥BC.
+**Bài luyện 22.** Hình chóp S.ABCD có đáy là hình bình hành. Lấy M,N là trung điểm SA,SD. (a) Chứng minh MN∥AD. (b) Suy ra MN∥BC.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1160,7 +1180,7 @@ a) Thiết diện là tam giác SPQ vì P,Q trong đáy, S thuộc hai mặt bê
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P02; OUTCOME_ID: TOP15-O06; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 6.** Không giao hay chéo?. a=(t,0,0), b=(0,2,1)+u(1,0,0), c=(0,2,1)+u(0,1,0), t,u∈ℝ. Phân loại từng cặp a,b; a,c; b,c.
+**Bài luyện 23.** Không giao hay chéo?. a=(t,0,0), b=(0,2,1)+u(1,0,0), c=(0,2,1)+u(0,1,0), t,u∈ℝ. Phân loại từng cặp a,b; a,c; b,c.
 <details markdown="1"><summary>Lời giải</summary>
 
 a∥b; a,c chéo vì hai hướng khác nhau và z=0 so với z=1; b,c cắt nhau tại (0,2,1). Đặt từng phương trình tham số thay vì tin nét vẽ.
@@ -1168,7 +1188,7 @@ a∥b; a,c chéo vì hai hướng khác nhau và z=0 so với z=1; b,c cắt nha
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P11; OUTCOME_ID: TOP15-O07; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 7.** Trong tứ diện S.ABC, giải thích vì sao SA và BC chéo nhau; nhưng SA và SB không chéo nhau.
+**Bài luyện 24.** Trong tứ diện S.ABC, giải thích vì sao SA và BC chéo nhau; nhưng SA và SB không chéo nhau.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1181,7 +1201,7 @@ Nếu SA và BC đồng phẳng thì S,A,B,C đồng phẳng, vô lý. SA và SB
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P12; OUTCOME_ID: TOP15-O08; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 8.** Trong tam giác SAB, M∈SA, N∈SB với SM:MA=2:3 và SN:NB=2:3. Chứng minh MN∥AB.
+**Bài luyện 25.** Trong tam giác SAB, M∈SA, N∈SB với SM:MA=2:3 và SN:NB=2:3. Chứng minh MN∥AB.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1194,7 +1214,7 @@ SM/SA=2/5 và SN/SB=2/5; hai điểm trên hai cạnh có cùng tỉ số tính 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P13; OUTCOME_ID: TOP15-O09; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 9.** Hình chóp S.ABCD có đáy hình bình hành. Xác định giao tuyến (SAB)∩(SCD) bằng điểm và phương. Có được kết luận giao tuyến là AB không?
+**Bài luyện 26.** Hình chóp S.ABCD có đáy hình bình hành. Xác định giao tuyến (SAB)∩(SCD) bằng điểm và phương. Có được kết luận giao tuyến là AB không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1207,7 +1227,7 @@ Giao tuyến đi qua S và song song AB∥CD. Không thể là AB vì S ngoài m
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-W04; OUTCOME_ID: TOP15-O09; ROLE: TOPIC_WRITTEN; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Tự luận 2.** Trong hình chóp S.ABCD, ABCD là hình bình hành. a) Xác định d=(SAB)∩(SCD). b) Xác định e=(SAD)∩(SBC). c) Giải thích vì sao d và e cắt nhau tại S mà không trùng nhau.
+**Bài luyện 27.** Trong hình chóp S.ABCD, ABCD là hình bình hành. a) Xác định d=(SAB)∩(SCD). b) Xác định e=(SAD)∩(SBC). c) Giải thích vì sao d và e cắt nhau tại S mà không trùng nhau.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1223,10 +1243,10 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 
 ## 3. Đường thẳng song song mặt phẳng
 
-**Bài tập dùng chung từ SGK**
+**Kiểm điều kiện đường song song mặt phẳng**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-C01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 13.** Một đường a nằm trong (P) có được gọi là a∥(P) theo định nghĩa không?
+**Bài luyện 28.** Một đường a nằm trong (P) có được gọi là a∥(P) theo định nghĩa không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1237,7 +1257,7 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-C02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 14.** Điều kiện còn thiếu: a∥b, b⊂(P) suy ra a∥(P) khi ...?
+**Bài luyện 29.** Điều kiện còn thiếu: a∥b, b⊂(P) suy ra a∥(P) khi ...?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1248,7 +1268,7 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-P01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 15.** Trong hình chóp S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC).
+**Bài luyện 30.** Trong hình chóp S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1259,7 +1279,7 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-P02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 16.** Trong tứ diện S.ABC, đường SA và mặt (ABC) có vị trí tương đối nào?
+**Bài luyện 31.** Trong tứ diện S.ABC, đường SA và mặt (ABC) có vị trí tương đối nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1270,7 +1290,7 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-P03; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 17.** Cho d∥(P), d⊂(Q), (Q)∩(P)=e. Quan hệ d,e?
+**Bài luyện 32.** Cho d∥(P), d⊂(Q), (Q)∩(P)=e. Quan hệ d,e?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1281,7 +1301,7 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-P04; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 18.** Hình chóp S.ABCD đáy hình bình hành. M,N trung điểm SA,SB. MN∥(ABCD) nhưng MN có nằm trong (ABCD) không?
+**Bài luyện 33.** Hình chóp S.ABCD đáy hình bình hành. M,N trung điểm SA,SB. MN∥(ABCD) nhưng MN có nằm trong (ABCD) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1292,7 +1312,7 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 5.** Cho hình chóp S.ABC; M,N trung điểm SA,SB. (a) Chứng minh MN∥(ABC). (b) Giao tuyến của (SAB) và (ABC)?
+**Bài luyện 34.** Cho hình chóp S.ABC; M,N trung điểm SA,SB. (a) Chứng minh MN∥(ABC). (b) Giao tuyến của (SAB) và (ABC)?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1307,7 +1327,7 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B12-W02-ANCHOR; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 6.** Hình chóp S.ABCD đáy hình bình hành, M,N trung điểm SA,SB. Một học sinh nói “MN∥AB và AB nằm trong đáy, nên MN nằm trong đáy”. Phản biện và kết luận chính xác.
+**Bài luyện 35.** Hình chóp S.ABCD đáy hình bình hành, M,N trung điểm SA,SB. Một học sinh nói “MN∥AB và AB nằm trong đáy, nên MN nằm trong đáy”. Phản biện và kết luận chính xác.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1324,7 +1344,7 @@ d qua S song song AB∥CD; e qua S song song AD∥BC. Hai hướng AB và AD kh�
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P03; OUTCOME_ID: TOP15-O10; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 10.** Đường và mặt. d=(1+t,2,3+2t); (P): z=0. Xác định d∩(P). Đường e=(1+t,2,3) và f=(1+t,2,0) thuộc loại nào so với (P)?
+**Bài luyện 36.** Đường và mặt. d=(1+t,2,3+2t); (P): z=0. Xác định d∩(P). Đường e=(1+t,2,3) và f=(1+t,2,0) thuộc loại nào so với (P)?
 <details markdown="1"><summary>Lời giải</summary>
 
 d cắt (P) khi t=−3/2, tại (−1/2,2,0). e∥(P) vì z=3 không đổi; f⊂(P) vì z=0 với mọi t. Ba trường hợp phải phân biệt.
@@ -1332,7 +1352,7 @@ d cắt (P) khi t=−3/2, tại (−1/2,2,0). e∥(P) vì z=3 không đổi; f�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P14; OUTCOME_ID: TOP15-O11; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 11.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
+**Bài luyện 37.** Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1345,7 +1365,7 @@ MN∥AB⊂(ABC) theo đường trung bình; M,N nằm ngoài đáy, MN⊄(ABC), 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P15; OUTCOME_ID: TOP15-O12; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 12.** Trong tứ diện S.ABC, với M,N∈SA,SB, M,N khác S và đáy, MN∥AB. Biết (SAB)∩(ABC)=AB. Hãy giải thích vì sao MN∥g với g là giao tuyến hai mặt.
+**Bài luyện 38.** Trong tứ diện S.ABC, với M,N∈SA,SB, M,N khác S và đáy, MN∥AB. Biết (SAB)∩(ABC)=AB. Hãy giải thích vì sao MN∥g với g là giao tuyến hai mặt.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1358,7 +1378,7 @@ Giao tuyến g=AB; MN và AB cùng nằm trong (SAB), phân biệt và không g�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P16; OUTCOME_ID: TOP15-O13; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 13.** Trong tứ diện S.ABC, chọn M∈SA sao cho SM/SA=1/4. Dựng N∈SB, K∈SC để mặt MNK song song đáy; xác định ba tỉ số và dạng thiết diện.
+**Bài luyện 39.** Trong tứ diện S.ABC, chọn M∈SA sao cho SM/SA=1/4. Dựng N∈SB, K∈SC để mặt MNK song song đáy; xác định ba tỉ số và dạng thiết diện.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1372,10 +1392,10 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 
 ## 4. Hai mặt phẳng song song và tỉ số thiết diện
 
-**Bài tập dùng chung từ SGK**
+**Chứng minh mặt phẳng song song, dựng thiết diện đúng tỉ số**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-C01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 19.** Hai mặt phẳng phân biệt không có điểm chung gọi là gì?
+**Bài luyện 40.** Hai mặt phẳng phân biệt không có điểm chung gọi là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1386,7 +1406,7 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-C02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 20.** Trong (P), a và b cắt nhau, cả a,b song song (Q). Có thể suy ra gì?
+**Bài luyện 41.** Trong (P), a và b cắt nhau, cả a,b song song (Q). Có thể suy ra gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1397,7 +1417,7 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-P01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 21.** (P)∥(Q), (R) cắt cả hai theo d,e. Quan hệ d,e?
+**Bài luyện 42.** (P)∥(Q), (R) cắt cả hai theo d,e. Quan hệ d,e?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1408,7 +1428,7 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-P02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 22.** Trong (P) chỉ có một đường a∥(Q). Có đủ khẳng định (P)∥(Q) không?
+**Bài luyện 43.** Trong (P) chỉ có một đường a∥(Q). Có đủ khẳng định (P)∥(Q) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1419,7 +1439,7 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-P03; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 23.** Trong chóp S.ABC, M,N,K cùng tỉ số SM/SA=SN/SB=SK/SC=1/3. Có (MNK)∥(ABC) không?
+**Bài luyện 44.** Trong chóp S.ABC, M,N,K cùng tỉ số SM/SA=SN/SB=SK/SC=1/3. Có (MNK)∥(ABC) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1430,7 +1450,7 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-P04; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 24.** Trong cùng chóp, mặt cắt song song đáy có tỉ số cạnh 2/3. Tỉ số diện tích thiết diện/đáy?
+**Bài luyện 45.** Trong cùng chóp, mặt cắt song song đáy có tỉ số cạnh 2/3. Tỉ số diện tích thiết diện/đáy?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1441,7 +1461,7 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 7.** Trong tứ diện S.ABC, M,N,K lần lượt nằm trên SA,SB,SC và SM/SA=SN/SB=SK/SC=t với 0<t<1. Chứng minh (MNK)∥(ABC).
+**Bài luyện 46.** Trong tứ diện S.ABC, M,N,K lần lượt nằm trên SA,SB,SC và SM/SA=SN/SB=SK/SC=t với 0<t<1. Chứng minh (MNK)∥(ABC).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1456,7 +1476,7 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B13-W02-ANCHOR; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 8.** Trong tứ diện S.ABC có mặt (MNK)∥(ABC) cắt các cạnh SA,SB,SC; biết SM/SA=2/5 và diện tích ABC là 50 cm². Tính diện tích MNK, giải thích công thức.
+**Bài luyện 47.** Trong tứ diện S.ABC có mặt (MNK)∥(ABC) cắt các cạnh SA,SB,SC; biết SM/SA=2/5 và diện tích ABC là 50 cm². Tính diện tích MNK, giải thích công thức.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1473,7 +1493,7 @@ Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết di
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P01; OUTCOME_ID: TOP15-O17; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 14.** Thiết diện có điều kiện. Trong tứ diện S.ABC, M∈SA, N∈SB, K∈SC, biết SM/SA=SN/SB=2/5 nhưng SK/SC=3/5. Có (MNK)∥(ABC) không? Nếu thay SK/SC thành 2/5 và diện tích ABC là 100 cm², tính diện tích MNK.
+**Bài luyện 48.** Thiết diện có điều kiện. Trong tứ diện S.ABC, M∈SA, N∈SB, K∈SC, biết SM/SA=SN/SB=2/5 nhưng SK/SC=3/5. Có (MNK)∥(ABC) không? Nếu thay SK/SC thành 2/5 và diện tích ABC là 100 cm², tính diện tích MNK.
 <details markdown="1"><summary>Lời giải</summary>
 
 Ban đầu không song song vì ba tỉ số không cùng bằng 2/5. Khi cùng t=2/5 thì (MNK)∥(ABC), diện tích MNK=(2/5)²·100=16 cm². Lỗi thường gặp là nhân diện tích với t thay vì t².
@@ -1481,7 +1501,7 @@ Ban đầu không song song vì ba tỉ số không cùng bằng 2/5. Khi cùng 
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P04; OUTCOME_ID: TOP15-O17; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 15.** Mặt cắt và tỉ số. Tứ diện S.ABC, (MNK)∥(ABC); tỉ số SM/SA=3/5. Nếu chu vi ABC là 30 cm và diện tích ABC là 75 cm², hãy tính chu vi và diện tích MNK. Giải thích vì sao hai phép tính dùng lũy thừa khác nhau.
+**Bài luyện 49.** Mặt cắt và tỉ số. Tứ diện S.ABC, (MNK)∥(ABC); tỉ số SM/SA=3/5. Nếu chu vi ABC là 30 cm và diện tích ABC là 75 cm², hãy tính chu vi và diện tích MNK. Giải thích vì sao hai phép tính dùng lũy thừa khác nhau.
 <details markdown="1"><summary>Lời giải</summary>
 
 Chu vi tỉ lệ t, bằng 18 cm; diện tích tỉ lệ t², bằng 27 cm². Đồng dạng biến mỗi cạnh nhân t, còn diện tích là tích hai chiều nên nhân t².
@@ -1489,7 +1509,7 @@ Chu vi tỉ lệ t, bằng 18 cm; diện tích tỉ lệ t², bằng 27 cm². Đ
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P17; OUTCOME_ID: TOP15-O14; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 16.** Phân loại: (P):z=0, (Q):z=−3, (R):x=0, (T):3z=0; xét (P) với từng mặt còn lại.
+**Bài luyện 50.** Phân loại: (P):z=0, (Q):z=−3, (R):x=0, (T):3z=0; xét (P) với từng mặt còn lại.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1502,7 +1522,7 @@ Chu vi tỉ lệ t, bằng 18 cm; diện tích tỉ lệ t², bằng 27 cm². Đ
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P18; OUTCOME_ID: TOP15-O15; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 17.** Trong (P), a và b cắt nhau tại M; cả a,b song song (Q). Kết luận quan hệ (P),(Q). Nếu thay b song song a, kết luận còn chắc chắn không?
+**Bài luyện 51.** Trong (P), a và b cắt nhau tại M; cả a,b song song (Q). Kết luận quan hệ (P),(Q). Nếu thay b song song a, kết luận còn chắc chắn không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1515,7 +1535,7 @@ Vì hai đường cắt nhau trong (P) đều song song (Q), suy (P)∥(Q). Nế
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P19; OUTCOME_ID: TOP15-O16; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 18.** Cho (P):z=0, (Q):z=4, (R):y=1. Viết phương trình tham số hai giao tuyến và chứng minh chúng song song.
+**Bài luyện 52.** Cho (P):z=0, (Q):z=4, (R):y=1. Viết phương trình tham số hai giao tuyến và chứng minh chúng song song.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1528,7 +1548,7 @@ g=(t,1,0), h=(t,1,4), cùng vectơ (1,0,0), phân biệt, cùng thuộc (R); g�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-W01; OUTCOME_ID: TOP15-O16; ROLE: TOPIC_WRITTEN; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Tự luận 3.** Cho hình hộp ABCD.A′B′C′D′. Gọi (R) là mặt phẳng đi qua ba điểm A,C,A′. Chứng minh C′ cũng thuộc (R), xác định giao tuyến của (R) với hai mặt đáy và giải thích vì sao hai giao tuyến song song.
+**Bài luyện 53.** Cho hình hộp ABCD.A′B′C′D′. Gọi (R) là mặt phẳng đi qua ba điểm A,C,A′. Chứng minh C′ cũng thuộc (R), xác định giao tuyến của (R) với hai mặt đáy và giải thích vì sao hai giao tuyến song song.
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C∈(R), đường qua C song song AA′ nằm trong (R), suy C′∈(R) (1đ). Giao tuyến (R) với (ABCD) là AC, với (A′B′C′D′) là A′C′ (1đ). Hai mặt đáy song song, cắt bởi mặt (R) nên AC∥A′C′ (1đ). Đừng nhận định A′C′ thuộc (R) chỉ vì nhìn giống AC trên hình biểu diễn.
@@ -1537,10 +1557,10 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 
 ## 5. Phép chiếu song song
 
-**Bài tập dùng chung từ SGK**
+**Xác định ảnh chiếu, suy biến và tính chất giữ lại**
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B14-C01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 25.** Phương chiếu Δ có thể song song mặt phẳng chiếu (P) không?
+**Bài luyện 54.** Phương chiếu Δ có thể song song mặt phẳng chiếu (P) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1551,7 +1571,7 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B14-C02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_CORE; NO_NEW_CANONICAL -->
-**Bài SGK 26.** Phép chiếu song song có giữ mọi số đo góc không?
+**Bài luyện 55.** Phép chiếu song song có giữ mọi số đo góc không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1562,7 +1582,7 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B14-P01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 27.** Trong lăng trụ ABC.A′B′C′, chiếu lên (ABC) theo phương AA′. Ảnh của B′ là điểm nào?
+**Bài luyện 56.** Trong lăng trụ ABC.A′B′C′, chiếu lên (ABC) theo phương AA′. Ảnh của B′ là điểm nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1573,7 +1593,7 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B14-P02; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 28.** M′ là trung điểm B′C′ của lăng trụ tam giác ABC.A′B′C′. Chiếu theo AA′ lên (ABC). Ảnh M′ là điểm nào?
+**Bài luyện 57.** M′ là trung điểm B′C′ của lăng trụ tam giác ABC.A′B′C′. Chiếu theo AA′ lên (ABC). Ảnh M′ là điểm nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1584,7 +1604,7 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B14-P03; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 29.** Một đường a song song phương chiếu Δ có ảnh là đường hay điểm?
+**Bài luyện 58.** Một đường a song song phương chiếu Δ có ảnh là đường hay điểm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1595,7 +1615,7 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B14-P04; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: SGK_PRACTICE; NO_NEW_CANONICAL -->
-**Bài SGK 30.** Một hình bình hành không suy biến chiếu song song thành hình gì?
+**Bài luyện 59.** Một hình bình hành không suy biến chiếu song song thành hình gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1606,7 +1626,7 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B14-W01; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 9.** Trong lăng trụ ABC.A′B′C′, M′∈A′B′ có A′M′:M′B′=2:3. Chiếu theo phương AA′ xuống mặt (ABC), M là ảnh M′. Biết AB=25 cm. Tính AM, MB và chứng minh tỉ số được bảo toàn.
+**Bài luyện 60.** Trong lăng trụ ABC.A′B′C′, M′∈A′B′ có A′M′:M′B′=2:3. Chiếu theo phương AA′ xuống mặt (ABC), M là ảnh M′. Biết AB=25 cm. Tính AM, MB và chứng minh tỉ số được bảo toàn.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1621,7 +1641,7 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIV-B14-W02-ANCHOR; SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b; ORIGINAL_ROLE: WRITTEN; NO_NEW_CANONICAL -->
-**Tự luận SGK 10.** Cho ΔABC, D là trung điểm BC. Một phép chiếu song song không làm tam giác suy biến biến A,B,C,D thành A′,B′,C′,D′. Chứng minh A′D′ là trung tuyến, và nêu một đại lượng của tam giác không nhất thiết bảo toàn.
+**Bài luyện 61.** Cho ΔABC, D là trung điểm BC. Một phép chiếu song song không làm tam giác suy biến biến A,B,C,D thành A′,B′,C′,D′. Chứng minh A′D′ là trung tuyến, và nêu một đại lượng của tam giác không nhất thiết bảo toàn.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1638,7 +1658,7 @@ Do A,A′∈(R) nên AA′⊂(R) (1đ). Trong hình hộp, CC′∥AA′; vì C�
 **Bài luyện và tự luận của chuyên đề**
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P05; OUTCOME_ID: TOP15-O19; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 19.** Ảnh suy biến. Cho T(x,y,z)=(x−z,y,0). Tìm ảnh của U(1,2,3) và V(3,2,5); xác định ảnh của cả đoạn UV; nêu điều kiện phương làm đoạn co thành điểm.
+**Bài luyện 62.** Ảnh suy biến. Cho T(x,y,z)=(x−z,y,0). Tìm ảnh của U(1,2,3) và V(3,2,5); xác định ảnh của cả đoạn UV; nêu điều kiện phương làm đoạn co thành điểm.
 <details markdown="1"><summary>Lời giải</summary>
 
 T(U)=T(V)=(-2,2,0); mọi điểm U+λ(V−U) có ảnh giống U. Đoạn co thành điểm vì UV∥(1,0,1), đúng phương chiếu.
@@ -1646,7 +1666,7 @@ T(U)=T(V)=(-2,2,0); mọi điểm U+λ(V−U) có ảnh giống U. Đoạn co th
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P20; OUTCOME_ID: TOP15-O18; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 20.** Chiếu song song theo (1,0,2) lên (P):z=0. Tìm ảnh M(3,1,4) và giải thích vì sao không dùng T(x,y,z)=(x−z,y,0).
+**Bài luyện 63.** Chiếu song song theo (1,0,2) lên (P):z=0. Tìm ảnh M(3,1,4) và giải thích vì sao không dùng T(x,y,z)=(x−z,y,0).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1659,7 +1679,7 @@ Chuyển điểm theo λ(1,0,2), λ=−z/2=−2: M′=(1,1,0). Công thức T c�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P21; OUTCOME_ID: TOP15-O19; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 21.** Qua phép chiếu T(x,y,z)=(x−z,y,0), ảnh đường d:(x,y,z)=(2+t,5,−1+t) là đường hay điểm?
+**Bài luyện 64.** Qua phép chiếu T(x,y,z)=(x−z,y,0), ảnh đường d:(x,y,z)=(2+t,5,−1+t) là đường hay điểm?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1672,7 +1692,7 @@ T(d(t))=(2+t−(−1+t),5,0)=(3,5,0), là một điểm vì vectơ chỉ phươn
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-P22; OUTCOME_ID: TOP15-O20; ROLE: TOPIC_PRACTICE; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Bài luyện 22.** Cho A(1,0,1),B(5,2,1),M=(A+B)/2. Dưới T(x,y,z)=(x−z,y,0), tính A′, B′, M′ và kiểm tính trung điểm.
+**Bài luyện 65.** Cho A(1,0,1),B(5,2,1),M=(A+B)/2. Dưới T(x,y,z)=(x−z,y,0), tính A′, B′, M′ và kiểm tính trung điểm.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1685,7 +1705,7 @@ A′=(0,0,0), B′=(4,2,0), M=(3,1,1) nên M′=(2,1,0), đúng trung điểm A�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-W02; OUTCOME_ID: TOP15-O22; ROLE: TOPIC_WRITTEN; CONTENT_VERSION: 2; DELTA_C_VECTOR_DOT_PRODUCT_NOTATION_20261118; CANONICAL_ID_UNCHANGED -->
-**Tự luận 4.** Chứng minh phép chiếu T(x,y,z)=(x−z,y,0) biến hình chữ nhật ABCD với A(0,0,0), B(2,0,0), C(2,1,1), D(0,1,1) thành hình bình hành không có góc vuông tại A′.
+**Bài luyện 66.** Chứng minh phép chiếu T(x,y,z)=(x−z,y,0) biến hình chữ nhật ABCD với A(0,0,0), B(2,0,0), C(2,1,1), D(0,1,1) thành hình bình hành không có góc vuông tại A′.
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 \(\overrightarrow{AB}\cdot\overrightarrow{AD}=0\) và các cạnh đối tương ứng song song, xác lập ABCD là hình chữ nhật (1đ); tính A′(0,0), B′(2,0), C′(1,1), D′(−1,1) (1đ); \(A′B′\parallel C′D′\) và \(A′D′\parallel B′C′\) (1đ); \(\overrightarrow{A′B′}\cdot\overrightarrow{A′D′}=-2\ne0\), nên góc A′ không vuông (1đ). Không suy vuông góc từ hình biểu diễn.
@@ -1693,7 +1713,7 @@ A′=(0,0,0), B′=(4,2,0), M=(3,1,1) nên M′=(2,1,0), đúng trung điểm A�
 </details>
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP15-W05; OUTCOME_ID: TOP15-O22; ROLE: TOPIC_WRITTEN; ORIGINAL_R02_ITEM_BODY_PRESERVED -->
-**Tự luận 5.** Cho S(0,0,5), A(0,0,0), B(5,0,0), C(0,5,0). Lấy M∈SA, N∈SB, K∈SC sao cho SM/SA=SN/SB=SK/SC=3/5. a) Tìm tọa độ M,N,K. b) Chứng minh (MNK)∥(ABC). c) Tính diện tích hai tam giác. d) Chiếu vuông góc theo Oz lên đáy, tìm ảnh M′N′K′ và giải thích tỉ số diện tích.
+**Bài luyện 67.** Cho S(0,0,5), A(0,0,0), B(5,0,0), C(0,5,0). Lấy M∈SA, N∈SB, K∈SC sao cho SM/SA=SN/SB=SK/SC=3/5. a) Tìm tọa độ M,N,K. b) Chứng minh (MNK)∥(ABC). c) Tính diện tích hai tam giác. d) Chiếu vuông góc theo Oz lên đáy, tìm ảnh M′N′K′ và giải thích tỉ số diện tích.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1709,7 +1729,7 @@ M=(0,0,2), N=(3,0,2), K=(0,3,2). M,N,K ở mặt z=2 song song đáy z=0. Tam gi
 
 # Tự kiểm tra
 
-Hãy trả lời tám câu hỏi dưới đây trên giấy, chưa xem lại lời giải phần Luyện tập. Đây là lượt tự ôn công khai dùng lại chính những bài đã học, **không phải** bộ đánh giá độc lập hay nguồn ghi điểm năng lực.
+Hãy tự giải đủ **8 câu** ra giấy, vẽ hoặc mô tả các mặt và đường cần dùng, chỉ rõ giả thiết song song/đồng phẳng và kiểm kết luận. Sau khi làm xong cả lượt, em có thể mở phần **Đối chiếu** cuối chuyên đề để tìm lời giải.
 
 ## 1. Câu hỏi tự ôn
 
@@ -1737,4 +1757,15 @@ Hãy trả lời tám câu hỏi dưới đây trên giấy, chưa xem lại l�
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP15-P21; ROLE: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_KEY_HINT_RUBRIC_AI_PRE_SUBMIT -->
 **Câu 8.** Qua phép chiếu T(x,y,z)=(x−z,y,0), ảnh đường d:(x,y,z)=(2+t,5,−1+t) là đường hay điểm?
 
-**Nguồn tài liệu:** SGK Toán 11 Kết nối tri thức với cuộc sống, Tập Một, Chương IV (Bài 10–14).
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi làm hết tám câu, em hãy tìm đúng bài dưới đây tại **Luyện tập**, tự mở **Lời giải** rồi nhận ra bước sai đầu tiên. Nếu còn lúng túng, quay lại mục Kiến thức tương ứng và làm thêm một bài cùng dạng.
+
+| Câu Tự kiểm tra | Bài luyện có lời giải |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 | Bài luyện 36 – 9 – 12 – 25 |
+| Câu 5 – 6 – 7 – 8 | Bài luyện 37 – 50 – 63 – 64 |
+
+</details>
+
+Nguồn: SGK Toán 11, Tập Một, Chương IV (Bài 10–14), bộ Kết nối tri thức với cuộc sống.
