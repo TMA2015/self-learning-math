@@ -510,9 +510,21 @@ for(const [lesson,row] of rows){
   assert.equal(d("B11_BASELINE_CANONICAL_BLOB"),uf("R02_ONE_CANONICAL_B11_BLOB"),
    "B11 prior signed canonical remains immutable");
   expected=g("B11_SOURCE_CURRENT_BLOB");
-  assert.equal(blob(fs.readFileSync(path.join(root,
-   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"))),
-   g("B11_CANONICAL_CURRENT_BLOB"),"B11 current one canonical Section A SHA mismatch");
+  // The 18/11 owner-P2 manuscript is a historical snapshot; current B11
+  // follows the signed 20/11 Q18 HELP-placement material-delta transition.
+  // Verify both ends of the exact immutable SHA chain (not a whitelist).
+  const currentManuscript=fs.readFileSync(path.join(root,
+   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"));
+  const placementReceipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+  const canonicalRows=placementReceipt.split("\n")
+   .filter(x=>x.startsWith("| CANONICAL_B11 | "));
+  assert.equal(canonicalRows.length,1,"B11 exactly one signed manuscript transition");
+  const canonicalShaChain=[...canonicalRows[0].matchAll(/`([a-f0-9]{40})`/g)]
+   .map(x=>x[1]);
+  assert.deepEqual(canonicalShaChain,
+   [g("B11_CANONICAL_CURRENT_BLOB"),blob(currentManuscript)],
+   "B11 historical owner-P2 and current manuscript must match signed Q18 SHA chain");
  }
  // 20/11 owner-signed local HELP placement supersedes the earlier
  // ChIV source. Verify both bytes of the historical chain; do not relabel
