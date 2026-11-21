@@ -1,9 +1,39 @@
+<!-- TOP22_MASTER974_CURRENT_Q18_20261121 -->
+## CĐ22 R09 — CURRENT targeted v3.2.0 Q18 source/math/PED signoff · 21/11/2026
+
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+CURRENT_ACADEMIC_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
+CURRENT_SOURCE_COMMIT: 3c23bd06ea9d5f12bb8884b2b250e8cbc044b967
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+CURRENT_AUTHOR_SIGNOFF: TOP22_MASTER974_39_OUTCOMES_13_FT_114_SHARED_PRACTICE_9_SELF_REPLAY_20261121_ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
+CURRENT_S1_ORIGINAL_SOURCE_REVIEW_PDF_PAGE_INDEX_P2: OPEN_NONBLOCKING_REFERENCE_METADATA
+CURRENT_ACADEMIC_MATH_P0: 0
+CURRENT_ACADEMIC_MATH_P1: 0
+CURRENT_PED_RETARGET_P1: 0
+CURRENT_PED_RETARGET_P2: 0
+INDEPENDENT_NOTEBOOKLM_FULL_TOPIC_PASS: NOT_CLAIMED
+RELEASE_PERMISSION: NO
+
+**Source and scope exact:** one active learner original path `prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md`, source Git blob **`ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145`**; old 21/11 source `e4546cb506a40f1345da74bb9b2be5f73088e78b` immutable Git. Exactly **39 original S1 outcomes across 13 differentiated subject lessons**, 13 individually existing FirstTry `Vận dụng` mathematical question/answer/diagnosis blocks, 114 original/immutable SGK-owner +7 public extension `Bài luyện1–114` canonical IDs, including 19 original Written rubric items, and nine public question-only same-ID replay placements. 2 original SVG mathematically unchanged. Distinct public learner question **canonical identities now 127 = 114 original shared bank Practice IDs + 13 existing Topic FirstTry newly given unique owner IDs `THPT-TOP22-T01..T13`**, with one source stem, one existing answer/reveal, one source content-version per item and no new math stem/answer. Nine SelfCheck reuse **the exact original 114 Practice ID**; 136 occurrences including 9 selfcheck replays, *not 136 distinct items*.
+
+**Q15 metadata-only repair (#977-078):** Old source had thirteen genuine mathematical FirstTry stems and revealed answers **without any item_id marker**; 13 canonical markers `THPT-TOP22-T01..T13` were assigned in place **before their own original `Vận dụng` question**, primary/secondary original existing S1 outcome refs and initial per-existing-item version `TOP22-R09-20261121-FTxx`; original math of all 13 existing questions, answers, conditions, formula derivations unchanged, no new source-backed SGK item, independent test or duplicated learner block. The 114 original 114 canonical SGK+public-extension card bodies including 15 original restored answer conclusion lines remain **BYTE-IDENTICAL** to pre-edit `e4546cb506a40f1345da74bb9b2be5f73088e78b`, and shared public source index blobs unchanged. The Q15 one-question-one-ID rule is now directly enforceable for all student FirstTry without misrepresenting 127 as 127 SGK bank items.
+
+**Q08/PED6 targeted remediation (#977-076):** Old 13 FirstTry all had distinct already-valid short `Nếu còn vướng` diagnoses, *not missing answers*, but lacked actual reattempt destinations. Preserved every original distinct mathematics misconception explanation, displayed as 13 `Kiểm lỗi` under voluntary answer, each points to its **actual corresponding Kiến thức 1.1–3.4 and 2–3 COMPLETE authentic math-matched earlier original numbered Practice cards** (36 exact source card lookup destinations across 13 outcomes-clusters). Examples exact original source: sai số rounding/relative Bài2/3/4; mean/mode 11/13; Me/Q 12/15; IQR/outliers 21/31; descriptive variance/units 22/23/32; class boundary/count 38/40/44; weighted mean/cumulative 47/48/51; grouped Me/Q 52/53/58; grouped mode/nonmode/unequal class 50/54/59; grouped range nonempty classes 71/73/74; grouped quartiles/IQR 83/84/85; weighted grouped variance 95/98/106; dispersion comparison and inference 108/110/114. All targets checked against actual full original question+voluntary solution in same source. New D6 routing is `DELTA_C_PED_TARGETED` with author math/ped item-by-item check, **not** new independent NotebookLM review.
+
+**Q16/PED6 (#977-077):** exactly nine original `REUSE_PUBLIC` question-only SelfChecks at end unchanged word-for-word, each previously no precise answer locator; now **ONE optional `Đối chiếu` after all nine questions** maps exactly original same canonical item ID to original solved `Bài luyện 3,13,23,40,52,54,73,97,105`, no key/rubric repeated, no student answer leak before voluntary open. Public `CLIENT_SELF_CHECK_NO_MASTERY`, not official `TOPIC_READINESS` or protected RD1/Final Submit, does not write Skill Mastery.
+
+**Q01–Q14 source/math and pedagogy receipts retained:** Original 13-path math QA Git `0eac01c7b6b14e32ba3a80a450ada818e08ee97b` on old source matches **byte-identical mathematics** in the 13 FirstTry and 114 Practice. The 15 original signed source bank answer restorations in prior Q18 header remain verbatim in existing answer details from G11 bank `4ea8df2ca2682d9fac8b1556852334af336930a5` and G12 bank `4e8e462a5c2243583be8c71625a9be3095e48c7b`. The 39 S1 outcomes are tracked across the 13 lesson narratives (each lesson may deliberately contain 2–5 outcomes), not falsely counted as 39 distinct FirstTry questions; 114 original Practice covers the SGK outcomes through existing 10–12 bank, not replaced with quantitative fake PASS. Original S1 actual scope G10 Tập Một ChV B12–14; G11 Tập Một ChIII B08–09; G12 Tập Một ChIII B09–10, but original PDF printed-vs-viewer page-index source reviewer **P2 stays OPEN_NONBLOCKING**, no new physical PDF visual verification this turn. **No new independent NotebookLM whole-Topic reviewer PASS**, only current `AUTHOR_SELF_VERIFIED` v3.2.0 delta and inherited previous author math checks of unchanged bodies.
+
+**Current direct structural checks:** 114 original complete Practice card bodies/answer+rubes EXACT byte parity; original 39 `OUTCOME_REF` unchanged, 13 original FT math question/answer text byte equivalence, 13 unique Topic item IDs, 9 public replay identical stems and ID references, 2 unchanged original SVG paths, **128/128 balanced voluntary answer disclosures** (13 FirstTry+114 Practice+one post-selfcheck locator), one SGK KNTT reference line at learner end, three exact Topic student parts and no Topic Core. Source index and bank SHA protected; 0 published private RD1. Original 19 written rubrics and 114 math answers unchanged. No golden website/branch integration, browser/device/AP-R, official Final Submit, Mastery or owner merge/deploy authorization.
+---
+
 <!-- TOP22_R09_DELTA_B_15_ORIGINAL_CANONICAL_KEYS_20261121 -->
 ## 21/11/2026 — source-equivalent answer restoration, full original question/solution untouched
 
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: e4546cb506a40f1345da74bb9b2be5f73088e78b
+ACADEMIC_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
 PREVIOUS_LOCKED_SOURCE_BLOB: 155f14cc191800d52fce98b0f7df6ab30bb0faf4
 CANONICAL_ID_COUNT_BEFORE_AFTER: 114/114
 DETAILS_REVEAL_COUNT_BEFORE_AFTER: 127/127
@@ -48,7 +78,7 @@ STANDARD_VERSION: 3.2.0
 PACKET_ID: THPT-TOPIC-STATISTICS-G10-G12-FULL-R09
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-SOURCE_BLOB: e4546cb506a40f1345da74bb9b2be5f73088e78b
+SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
 PREVIOUS_R06_BLOB: 12f3af42c2e6b0f316355dcedfc34ec8b6136694
 BASELINE_R05_BLOB: 0762cc67491965a4bab700aa1d33937aa3bf7cb6
 ORIGINAL_R01_BLOB: 4f4dc4abcf671479fe0650595e9b67f745738b9a
