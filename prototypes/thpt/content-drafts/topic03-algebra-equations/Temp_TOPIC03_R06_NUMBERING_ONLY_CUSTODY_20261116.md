@@ -1,15 +1,18 @@
+<!-- TOP03_MASTER974_PED6_SOURCE_CUSTODY_20261121 -->
+**Current AUTHORING source custody:** one R06 canonical learner `38f41f013e75b42605d7a88f9205c20af6315a41`; existing Q18 self-QA receipt `ef40b5871762558959108cf1879155c7e14158fe` under Q01–Q18 v3.2.0. Fixes #977 TOP22-20261121-011 (O01 missing target) and -012 (12-item public selfcheck voluntary answer navigation). Prior 31-item direct academic audit retained on unchanged bank/Knowledge; only two inserted PED-facing regions with inverse-diff proof. Header is current, all historical SHA below are historical. No Reviewer independent PASS, RELEASE, merge/deploy.
+
 # CĐ03 — metadata bản thảo hiện hành, đã sửa D6 + Ví dụ trực tiếp
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
+CURRENT_SOURCE_BLOB: 38f41f013e75b42605d7a88f9205c20af6315a41
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 65841734363d64cc474c359041d65e99535cae23
+CURRENT_Q18_RECEIPT_BLOB: ef40b5871762558959108cf1879155c7e14158fe
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: 9b69bbbff0e9af27a8b7190df89243d8751f858b
-AUTHORING_STATUS: REVISED_SINGLE_SOURCE_QA_HOLD
+AUTHORING_STATUS: AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_PED6_DELTA; NO_RELEASE
 RELEASE_AUTHORIZATION: NO
 
 Original A1–A7/SGK/outcome/item source matrix below is inherited **unaltered**; only current learner snapshot formatting and Q18 source custody above changed. User-facing headings are now page H1, numbered group H2 and child H3, with Practice Bài labels not H4. Old author metadata Git blob `9b69bbbff0e9af27a8b7190df89243d8751f858b` and old academic source/Q18 remain immutable. No independent reviewer claim or RELEASE approval.
