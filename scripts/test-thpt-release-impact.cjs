@@ -145,6 +145,23 @@ function classify(paths,{manual=false}={}){
     fs.readFileSync(b27,"utf8").includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"))
   return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:b27,
    reason:"EXACT_G10_B27_S1_SIGNED_SOURCE_Q18_GOLDEN_AND_PROOF"};
+ // Owner-P2-only G11 B01 correction after published R01.
+ // Visual computed-style browser changes are allowed ONLY with one exact
+ // canonical + R02 receipt + fail-closed deploy source proof + this classifier.
+ const g11b01r02="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md";
+ const g11r02Receipt="prototypes/thpt/ux795/G11_B01_OWNER_P2_GOLDEN_VISUAL_GENERAL_D6_Q18_R02_20261121.md";
+ const g11r02Proof="scripts/test-thpt-scoped-deploy-proof.cjs";
+ const g11r02Browser="scripts/test-thpt-scoped-lesson-browser.cjs";
+ if(lessons.length===1&&lessons[0]===g11b01r02&&
+    [g11b01r02,g11r02Receipt,g11r02Proof,g11r02Browser,
+     "scripts/test-thpt-release-impact.cjs"].every(x=>files.includes(x))&&
+    files.length===5&&
+    fs.readFileSync(g11r02Receipt,"utf8").includes(
+     "G11-B01-OWNER-P2-GOLDEN-VISUAL-GENERAL-D6-R02-20261121")&&
+    fs.readFileSync(g11b01r02,"utf8").includes(
+     'article.classList.add("thpt-g10-knowledge-ap1","thpt-g10-chiv-golden");'))
+  return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:g11b01r02,
+   reason:"EXACT_G11_B01_P2_R02_GOLDEN_COMPUTED_BROWSER_PLUS_SOURCE_Q18"};
  // Exactly one new global 28/79 SGK lesson: G11 B01. All other G11
  // changes / shared runtime / missing signed Q18 evidence fail to FULL.
  const g11b01="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md";
@@ -246,6 +263,20 @@ function selfTest(){
   "Missing eighth lesson cannot qualify for exact 8-lesson batch");
  assert.equal(classify(antiRepeatCase.filter(x=>!x.endsWith("scoped-deploy-proof.cjs"))).impact,"FULL",
   "No source-locked production proof means exact 8-lesson batch must fail closed");
+ const g11B01R02Case=[
+  "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+  "prototypes/thpt/ux795/G11_B01_OWNER_P2_GOLDEN_VISUAL_GENERAL_D6_Q18_R02_20261121.md",
+  "scripts/test-thpt-scoped-deploy-proof.cjs",
+  "scripts/test-thpt-scoped-lesson-browser.cjs",
+  "scripts/test-thpt-release-impact.cjs"];
+ assert.equal(classify(g11B01R02Case).impact,"SCOPED_LESSON",
+  "Exact G11 B01 P2 R02 requires targeted real computed CSS browser QA");
+ assert.equal(classify([...g11B01R02Case,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"]).impact,"FULL",
+  "G11 B01 P2 cannot hide changes to the approved shared G10 stylesheet");
+ assert.equal(classify([...g11B01R02Case,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,"FULL",
+  "G11 B01 P2 cannot hide shared Golden runtime changes");
+ assert.equal(classify(g11B01R02Case.filter(x=>x!=="scripts/test-thpt-scoped-lesson-browser.cjs")).impact,"FULL",
+  "G11 B01 P2 cannot claim computed visual parity without a dedicated browser regression");
  const g11B01Case=[
   "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
   "prototypes/thpt/ux795/G11_B01_GLOBAL28_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md",
