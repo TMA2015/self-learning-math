@@ -88,11 +88,11 @@ function initTopic01Practice(){
   if(match){
    let previous=n.previousSibling;
    while(previous&&previous.nodeType===3&&!previous.textContent.trim())previous=previous.previousSibling;
-   const itemId=(previous?.nodeType===8?previous.textContent:"").match(/DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)/)?.[1]||"THPT-TOP01-PRACTICE-"+match[1];
+   const itemId=(previous?.nodeType===8?previous.textContent:"").match(/DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)/)?.[1]||"";
    current={number:Number(match[1]),group,itemId,nodes:[n]};items.push(current);
   }else if(current)current.nodes.push(n);
  }
- if(items.length!==24||items.some((x,i)=>x.number!==i+1))return;
+ if(items.length!==24||items.some((x,i)=>x.number!==i+1||!x.itemId)||new Set(items.map(x=>x.itemId)).size!==24)return;
  golden.publicOnly();marker.dataset.ready="1";
  const hub=document.createElement("section");hub.className="topic01-golden-hub";hub.dataset.topic01GoldenHub="1";
  const lead=document.createElement("p");lead.textContent="24 bài luyện tập đã duyệt. Chọn một bài để tự giải rồi mở Lời giải / rubric. Mỗi lần chỉ hiện một bài, không ghi điểm thành thạo.";
