@@ -165,7 +165,7 @@ assert(!src.includes(t)&&!src.includes("Assessment safety")&&!src.includes("EX-G
  !src.includes("HELP_ID"),"B10 learner text exposes source/metadata or code style");
 // Three item-specific D6 disclosures were moved into Discovery on 20/11;
  // original HELP_ID and repair reasoning remain intact, not duplicated in Tab4.
- assert.equal((disc.match(/^    \\?\\?\\? tip "Kiểm lỗi"/gm)||[]).length,3,
+ assert.equal((disc.match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,3,
   "B10 three local Kiểm lỗi disclosures must be under Vận dụng");
  assert.equal((error.match(/data-thpt-help-id=/g)||[]).length,0,
   "B10 Tab4 must not duplicate canonical HELP anchors");
