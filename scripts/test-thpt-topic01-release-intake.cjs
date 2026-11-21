@@ -21,7 +21,8 @@ const sections=paths.map(x=>{
  assert(!raw.includes("data-thpt-readiness")&&!raw.includes("data-mastery-credit"),"Unauthorised official assessment "+x);
  return raw.slice(a+start.length,z);
 });
-const normal=sections[0].replaceAll("../../../assets/visuals/","../../visuals/")+sections[1]+sections[2];
+const normal=sections[0].replaceAll("../../../assets/visuals/","../../visuals/")+sections[1].replace("1&lt;x≤3.","1<x≤3.")+sections[2];
+assert.equal(sections[1].split("1&lt;x≤3.").length,2,"Exactly one HTML-safe less-than presentation normalization is allowed");
 assert.equal(blob(normal),sourceSHA,"Learner body differs from owner-accepted canonical Git blob");
 const manifest=read("scripts/topic01-release-intake-manifest.tsv");
 assert(manifest.includes(sourceSHA)&&manifest.includes(receiptSHA)&&manifest.includes(modelId)&&manifest.includes("CLIENT_SELF_CHECK_NO_MASTERY"),"Missing source/receipt/model/Q16 manifest");
