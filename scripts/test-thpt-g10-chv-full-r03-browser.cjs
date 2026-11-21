@@ -15,7 +15,7 @@ const base="http://127.0.0.1:8765/thpt-preview/sgk/chuong-v/";
     for(const {n,first,count}of [{n:12,first:1,count:5},{n:13,first:5,count:5},{n:14,first:10,count:5}]){
      const res=await page.goto(base+"bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(res?.ok(),"G10 ChV student Knowledge page missing B"+n);
-     if(await verifyModelBLesson(page,{n,chapter:"v",tries:count,helps:n===12?3:2,images:[
+     if(await verifyModelBLesson(page,{n,chapter:"v",tries:count,helps:n===12?3:2,remediationTab:"Khám phá kiến thức",images:[
        n===12?"THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg":
        n===13?"THPT_G10_B13_QUARTILES_D5_R01.svg":"THPT_G10_B14_DISPERSION_D5_R01.svg"
      ]})){
