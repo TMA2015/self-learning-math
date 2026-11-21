@@ -421,7 +421,7 @@ Cho m∈ℤ. Phát biểu (a) “m+2=7”; (b) “∀m∈ℤ, m+2=7”; (c) “�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** (a) Mệnh đề chứa biến, chưa có chân lý khi chưa gán m; (b) mệnh đề sai vì m=0 thì 2≠7; (c) mệnh đề đúng vì m=5.
+(a) Mệnh đề chứa biến, chưa có chân lý khi chưa gán m; (b) mệnh đề sai vì m=0 thì 2≠7; (c) mệnh đề đúng vì m=5.
 
 
 (a) Chưa gán m nên chưa thể gán đúng/sai; thử m=5 và m=0. (b) Phủ định bằng một phản ví dụ m=0. (c) Một chứng cứ m=5 đủ xác nhận tồn tại.
@@ -436,7 +436,7 @@ Phủ định của P: “15 chia hết cho 4” là gì? Xét giá trị đúng
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** “15 không chia hết cho 4”; P sai, phủ định đúng.
+“15 không chia hết cho 4”; P sai, phủ định đúng.
 
 
 15 chia 4 dư 3 nên P sai; phủ định của P đúng.
@@ -451,7 +451,7 @@ Phủ định của Q: “Với mọi x∈ℝ, x²≥0” là gì? Đúng hay sa
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** “Tồn tại x∈ℝ sao cho x²<0”; mệnh đề phủ định sai.
+“Tồn tại x∈ℝ sao cho x²<0”; mệnh đề phủ định sai.
 
 
 Với mọi x thực, x²≥0. Vậy không có x thực có bình phương âm, phủ định sai.
@@ -540,7 +540,7 @@ Xác định đúng/sai của “Tồn tại số nguyên n sao cho n²=2”. Vi
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** Sai; phủ định đúng: “Với mọi số nguyên n, n²≠2”.
+Sai; phủ định đúng: “Với mọi số nguyên n, n²≠2”.
 
 
 Không có số nguyên có bình phương bằng 2; đổi ∃ thành ∀ và = thành ≠ để phủ định.
@@ -581,7 +581,7 @@ Với A={1,2,3,4}, B={3,4,5}, tìm A∩B và A∪B.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** A∩B={3,4}; A∪B={1,2,3,4,5}.
+A∩B={3,4}; A∪B={1,2,3,4,5}.
 
 
 Phần tử chung: 3,4. Phần tử thuộc A hoặc B: 1,2,3,4,5 không lặp.
@@ -596,7 +596,7 @@ Phần tử chung: 3,4. Phần tử thuộc A hoặc B: 1,2,3,4,5 không lặp.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** A∩B={1,3,5}; A∪B={1,2,3,4,5,7}.
+A∩B={1,3,5}; A∪B={1,2,3,4,5,7}.
 
 
 Phần chung 1,3,5 đi vào giao. Hợp chứa mọi phần tử xuất hiện ở ít nhất một tập và theo định nghĩa tập hợp mỗi phần tử chỉ viết một lần.
@@ -611,7 +611,7 @@ Với A={1,2,3,4}, B={3,4,5}, hãy tìm A\B và B\A.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** A\B={1,2}; B\A={5}.
+A\B={1,2}; B\A={5}.
 
 
 A\B lấy phần tử chỉ trong A; B\A lấy phần tử chỉ trong B.
@@ -626,7 +626,7 @@ Cho A={1,2,4,6}, B={2,3,6,8}. Tính A\\B và B\\A. Có thể kết luận hai hi
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** A\\B={1,4}; B\\A={3,8}; không.
+A\\B={1,4}; B\\A={3,8}; không.
 
 
 Giữ phần tử nằm trong A nhưng không ở B cho A\\B; đổi vai A,B cho B\\A. Hai kết quả khác nhau là phản ví dụ cho tính giao hoán.
@@ -653,7 +653,7 @@ Cho U={−3,−2,−1,0,1,2,3}, A={x∈U | x²≤1}. Xác định U\\A.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** A={−1,0,1}; U\\A={−3,−2,2,3}.
+A={−1,0,1}; U\\A={−3,−2,2,3}.
 
 
 Do x²≤1 trên các số nguyên của U đúng khi x∈{−1,0,1}. Loại chính các phần tử ấy ra khỏi U, giữ bốn số còn lại.
@@ -670,7 +670,7 @@ Cho X=(-∞,3], Y=(1,+∞). Tìm X∩Y.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án canonical:** (1,3].
+(1,3].
 
 
 Hai điều kiện đồng thời x≤3 và x>1 nên 1<x≤3.
@@ -705,7 +705,7 @@ n(A∪B)=23+25−12=36; ngoài cả hai =40−36=4.
 
 **Bài 23.**
 
-Tự luận/Anchor: Khối lớp có 42 học sinh. Có 24 bạn đăng kí CLB Tiếng Anh, 21 bạn đăng kí CLB Âm nhạc, 9 bạn đăng kí cả hai. (a) Vẽ sơ đồ Venn kèm đủ bốn miền; (b) tính số bạn chỉ học Tiếng Anh; (c) số bạn không vào CLB nào; (d) giải thích ý nghĩa hiệu A\B.
+Khối lớp có 42 học sinh. Có 24 bạn đăng kí CLB Tiếng Anh, 21 bạn đăng kí CLB Âm nhạc, 9 bạn đăng kí cả hai. (a) Vẽ sơ đồ Venn kèm đủ bốn miền; (b) tính số bạn chỉ học Tiếng Anh; (c) số bạn không vào CLB nào; (d) giải thích ý nghĩa hiệu A\B.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
