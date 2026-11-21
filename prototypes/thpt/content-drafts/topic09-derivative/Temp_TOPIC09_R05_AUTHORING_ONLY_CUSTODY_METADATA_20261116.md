@@ -1,11 +1,16 @@
+<!-- TOP09_MASTER974_SOURCE_CUSTODY_CURRENT_20261121 -->
+**CURRENT AUTHORING CĐ09:** one actual student learner `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md` Git blob `5681dd894755165e799b4a20d9741f43115778d9`, current existing author Q18 source-scoped `b0e17ea8fbd00075c5de7dcaeb178985743645f8`, unified Q01–Q18 v3.2.0. Three verified current #977 defects #030–032 fixed: 32/32 actual D6 Knowledge→Practice numbered routes, one voluntary final selfcheck lookup for 32/32 original canonical IDs, O32 independent f(x)=1/x differential firsttry with correct domain, signed dy=-1/20, actual Δy=-1/22 and absolute error1/220. The earlier separate R06 candidate is NONACTIVE and optional independent NotebookLM affected-only reviewer packet remains PENDING; current signoff is honest `AUTHOR_SELF_VERIFIED` based on direct author math/PED, not a forged reviewer verdict. Original 108 canonical Practice stems/answers/solutions, 14 Written rubrics, four SVG, 32 public selfcheck question-only original stems unchanged; 141/141 disclosures balanced, one SGK credit. Historical source/Q18/learner SHA in paragraphs below are old receipts not current competing canonical. No RD1/official readiness/Final Submit/Mastery, website, merge/deploy.
+
+---
+
 # CĐ09 R05 — AUTHORING-ONLY S1 and canonical custody
 
 R03_IMMUTABLE_GIT_BLOB: 52be5ef6b8684632435ae22429bf7b5db5cf50cf
 CURRENT_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-CURRENT_LEARNER_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
+CURRENT_LEARNER_SOURCE_BLOB: 5681dd894755165e799b4a20d9741f43115778d9
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: a44f1503ee112b16afaf5d651ec852eca6410e27
-STATUS: AUTHORING_CONTENT_READY
+CURRENT_Q18_RECEIPT_BLOB: b0e17ea8fbd00075c5de7dcaeb178985743645f8
+STATUS: R05_MASTER974_AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_32_D6_O32_TRANSFER
 
 ## 18/11/2026 — Active source correction, signed scoped Q18 provenance
 
