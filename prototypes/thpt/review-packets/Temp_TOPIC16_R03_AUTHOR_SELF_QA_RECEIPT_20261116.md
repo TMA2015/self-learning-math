@@ -1,6 +1,22 @@
+<!-- TOP16_MASTER974_CURRENT_Q18_AUTHOR_SELF_VERIFIED_20261121 -->
+## TARGETED signed author Q18 — CĐ16 R03 current learner source 21/11/2026
+
+Q18 mode `AUTHOR_SELF_VERIFIED` only for active **9b548af2169cabccf4e9191e9dd57b2f13dcdf6d**, under one owner-approved `SLM-THPT-QUALITY-ONE v3.2.0`. Previous signed blobs/old source checks remain immutable in Git history; no fabricated independent NotebookLM Topic PASS.
+
+- **Q01/Q02 source and scope:** existing original G11 Toán 11 KNTT Tập Hai ChVII B22 tr.27–30, B23 tr.31–37, B24 tr.38–43, B25 tr.44–53 verified from original Git S1 source `afc8ec039213b87b4930f2d34d48c28d1fc6277f` and scoped previous Q18. No new printed-PDF visual scan this round; B26/B27/CHVII-integrated reserved to CĐ17.
+- **Q03/Q04/Q09–Q14 source reread:** 21 unchanged concept-first outcome narratives, mathematically framed worked examples with original conditions, 21 unchanged FirstTry stems/key and voluntary answer. Only 21 **`Kiểm lỗi`** paragraphs edited: misconception → exact existing Knowledge 1.1–4.7 → **two** actual numbered current Practice targets, 42/42 targets rechecked against real maths (angle 145°→35°; skew vs perpendicular; 2 intersecting floor lines; a⊥plane transfers; degenerate projection; three-perpendicular theorem needs nondegenerate BH; sin vs tan ramp 5-12-13; dihedral 135° vs between planes 45°; lateral height of regular pyramid; area ratio squared). These are pedagogical `DELTA_C_PED_TARGETED`, not new mathematical stem/key/rubric.
+- **Q05/Q06/Q15 direct invariant:** 65/65 original canonical Practice complete stem+key+solution+**11 Written rubrics** byte-exact with pre-delta `439ee3833a864638eedd11bc80baf564c77485a5` after ignoring *only* visible caption/group heading. 41 original SGK +21 Topic P+3 Topic W =65 displayed `Bài luyện 1–65` unique sequential. Total 86 public canonical IDs (41 original SGK +21 FirstTry +21 Topic P +3 W), no new clone. Original 8 same-ID public selfcheck questions unmodified; ONE voluntary after-all-question `Đối chiếu` Câu1..8↔Practice 11,26,29,42,44,59,61,64 verified 8/8 exact ID. Same 4 original SVG/source SHA and model unchanged.
+- **Q07/Q08:** four original SVG placements and read-guides remain; new D6 21/21 real math-matched retry routes; 87 opens/87 closes `details` (21 Knowledge +65 Practice +1 Selfcheck answer navigator), one end-only SGK credit. Original 65 problem bodies and 21 mathematical firsttry answers untouched. No new browser/device visual QA claim.
+- **Q16/Q17:** 3 Topic pages `Kiến thức/Luyện tập/Tự kiểm tra`, no Topic Core. Public eight question-only selfchecks `CLIENT_SELF_CHECK_NO_MASTERY`, answers reachable voluntarily **only after the full eight prompts** in rendered Markdown; not official held-out `TOPIC_READINESS`, RD1 or Final Submit runtime; NO Skill Mastery, Firebase/learner writes or website changes.
+- **P0=0, P1=0 in affected source scope; one P2 open** `TOP22-20261121-054`: 33 original SGK solution bodies display literal “Đáp án sau Submit luyện tập” even though Topic uses optional `Lời giải` disclosure. Original canonical G11 source has same text and was **not edited** to preserve Q15. Only original SGK content owner can authorize a source-equivalent editorial correction across SGK and Topic projections. This nonmath P2 does not self-certify website Submit behavior.
+- **Q18 chain:** learner `9b548af2169cabccf4e9191e9dd57b2f13dcdf6d` → this one receipt → one A1–A7 blob `2324f83b982ccffd513c8ddb7f3666177aa70b8f` → same V2 → sole ready + REGISTER after current source locks. Evidence signed by AUTHOR self-verification; no independent reviewer verdict or RELEASE authorization.
+
+**SOURCE_LOCKED_AFFECTED_SCOPE_SIGNOFF:** `TOP16_MASTER974_21_D6_65_PRACTICE_20261121_9b548af2169cabccf4e9191e9dd57b2f13dcdf6d`. `ACADEMIC_AUTHOR_CHECK=PASS_CHANGED_SCOPE`, `PED_AUTHOR_CHECK=PASS_CHANGED_SCOPE`, `Q15=UNCHANGED_MATH_BANK`, `P2_ORIGINAL_SGK_LABEL=OPEN_NONBLOCKING`.
+---
+
 # CĐ16 R03 — AUTHOR_SELF_QA_RECEIPT · 16/11/2026
 
-**AUTHOR_SELF_QA_RECEIPT**, Q18 `AUTHOR_SELF_VERIFIED` under `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Chỉ chứng nhận tự kiểm tác giả trên R03 exact blob, không phải independent NotebookLM PASS, không phải kiểm thử website. R01 và SGK PASS nếu có vẫn chỉ thuộc snapshot lịch sử của chúng.
+**AUTHOR_SELF_QA_RECEIPT**, Q18 `AUTHOR_SELF_VERIFIED` under `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18. Chỉ chứng nhận tự kiểm tác giả trên R03 exact blob, không phải independent NotebookLM PASS, không phải kiểm thử website. R01 và SGK PASS nếu có vẫn chỉ thuộc snapshot lịch sử của chúng.
 
 PACKET_ID: THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -9,10 +25,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 439ee3833a864638eedd11bc80baf564c77485a5
-SOURCE_BLOB: 439ee3833a864638eedd11bc80baf564c77485a5
+ACADEMIC_SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
+SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: b2fef1fab9629e53bab34295ce858c888bb4448f
+AUTHOR_METADATA_BLOB: 2324f83b982ccffd513c8ddb7f3666177aa70b8f
 ORIGINAL_R01_SOURCE_BLOB: 0e934389ebfe239ace19cc23c5dedf9c23d8ebdc
 ORIGINAL_R02_EDITORIAL_CANDIDATE_BLOB: 60f69d43bfa3f4508e8c7a787bad517141f9b2b2
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
@@ -21,8 +37,8 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-P2: 0
-AUTHOR_SIGNOFF: TOP16_G11_CHVII_B22_B25_FULL_KNOWLEDGE_439ee3833a864638eedd11bc80baf564c77485a5
+P2: 1
+AUTHOR_SIGNOFF: TOP16_MASTER974_21_D6_65_PRACTICE_20261121_9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
