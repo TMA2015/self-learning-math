@@ -880,7 +880,7 @@ Chẳng hạn, f=x²,a=3,dx=0,02: f'(3)=6 nên dy=0,12; Δy=(3,02)²−9=0,1204,
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Miền xác định f là ℝ\\{0}; cả đoạn [2;2,2] nằm trong miền và f khả vi tại a=2. Vì f'(x)=−1/x² nên f'(2)=−1/4. Với dx=0,2=1/5, vi phân dy=f'(2)dx=−1/20=−0,05. Độ tăng thật Δy=f(2,2)−f(2)=5/11−1/2=−1/22≈−0,04545. Sai số tuyệt đối |Δy−dy|=|−1/22+1/20|=1/220≈0,00455. Cả dy và Δy đều âm (giá trị hàm đang giảm), nhưng vi phân chỉ là xấp xỉ bậc nhất cho bước hữu hạn, không bằng Δy.
+Miền xác định f đòi x≠0; cả đoạn [2;2,2] nằm trong miền và f khả vi tại a=2. Vì f'(x)=−1/x² nên f'(2)=−1/4. Với dx=0,2=1/5, vi phân dy=f'(2)dx=−1/20=−0,05. Độ tăng thật Δy=f(2,2)−f(2)=5/11−1/2=−1/22≈−0,04545. Sai số tuyệt đối |Δy−dy|=|−1/22+1/20|=1/220≈0,00455. Cả dy và Δy đều âm (giá trị hàm đang giảm), nhưng vi phân chỉ là xấp xỉ bậc nhất cho bước hữu hạn, không bằng Δy.
 
 Nếu cho dy dương, kiểm dấu f'(2)<0. Nếu cho dy=Δy đúng tuyệt đối, so hai phân số −1/20 và −1/22; muốn dùng xấp xỉ, kiểm f khả vi và bước dx đủ nhỏ trong miền.
 
