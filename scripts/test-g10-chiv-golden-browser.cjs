@@ -487,7 +487,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        assert(await scalarDiscovery.evaluate(el=>el.complete&&el.naturalWidth>0),
         where+" B09 early scalar picture accessible and decodes");
        const localTips=blocks.nth(0).locator("details.tip");
-       const localHelp=await localTips.allInnerTexts();
+       const localHelp=await localTips.allTextContents();
        assert.equal(localHelp.length,2,where+" two canonical item-specific B09 D6 in Discovery");
        assert(localHelp.every(t=>t.includes("Vì sao sai?")&&t.includes("Ôn lại:")),
         where+" original B09 HELP provides cause and remedy");
