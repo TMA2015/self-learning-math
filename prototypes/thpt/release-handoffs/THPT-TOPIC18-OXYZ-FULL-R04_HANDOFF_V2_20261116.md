@@ -1,25 +1,41 @@
+<!-- TOP18_MASTER974_CURRENT_V2_AUTHORING_20261121 -->
+## Current effective ONE CĐ18 R04 V2 handoff — 21/11/2026
+
+CURRENT_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
+CURRENT_AUTHOR_Q18_BLOB: 57db7f94a670d3290b7c5e06304a13fe0376b60f
+CURRENT_AUTHOR_A1_A7_BLOB: 5b9ea079b07be1821ddaae6c49a5a01679f3d6e6
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
+CURRENT_DELTA: DELTA_C_PED_TARGETED_40_D6_80_CURRENT_EXERCISE_TARGETS_AND_O06_RELATED_MODELS; DELTA_A_EDITORIAL_207_UNIQUE_DISPLAY_LABELS_12_SELF_CHECK_LOCATIONS
+
+One existing R04 learner path, one canonical question/answer/rubric source per item and no parallel learner. 247 original public canonical: 160 SGK owner display-only source-exact mathematical bodies+40 Topic FirstTry+40 Topic Practice+7 Topic Written, 12 existing same-ID public SelfCheck replays. 40 genuine Vận dụng/Đối chiếu now have individualized Kiểm lỗi returning to correct Knowledge 1.1–8.1 and exactly two original math-matched Practice cards each. O06 pedagogically distinguishes vector resultant (3,4⇒5 and 6,8⇒10 N) from force work (10N,2m,60°⇒10J) without changing original question/key/solution or outcome. 207 original complete Practice mathematical stem/solution/47 Written rubrics byte-identical to prior immutable `41daf40a3b639a3ef35e129099525137a05b1848`, numbered Bài luyện 1–207 only for student navigation and removed 40 repeated SGK-bank announcements; 40 Vận dụng labels normalized, 8 math groups and 40 lessons unchanged, one SGK end credit. All 12 selfcheck questions source-exact and one optional after-all answer locator maps exact same Topic P canonical IDs to Bài 15,35,50,70,81,86,96,112,118,143,175,201. 248/248 opt-in disclosures, 10 original SVG and offline HTML model remain unchanged.
+
+**Q15/Q16 boundary:** original SGK source owners `856a37bd16d2746ffc2e12906de18d1f4338a3b6` and `11eb2834cfdb4a24685157f84666c2bb0767970a` unedited; public `CLIENT_SELF_CHECK_NO_MASTERY` no independent final Readiness, no private RD1/official Final Submit/Skill Mastery. Original G12 SBT B14 printed p25 missing, exercises 5.6–5.7 not source-certified, one old nonblocking P2; newly found 24 source-owned G12 Written “Mastery” staff notes P2 #977-062 remain open original-source-owner coordination. `P0=0`, `P1=0` in changed scope and `P2=2` open nonblocking. No new independent NotebookLM full-Topic reviewer verdict, website/browsers/AP/R/CI, merge/deploy/Firebase/learner data or owner release authorization.
+---
+
 # CĐ18 — Phương pháp tọa độ không gian Oxyz · AUTHORING V2 R04 · 14/11/2026
 
-**Source-only `CONTENT_READY` handoff under ONE standard `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18.** Author Q18 mathematical/PED **SELF_VERIFIED**; no independent NotebookLM Topic PASS claimed. This does **not** authorize website merge/deploy, official assessment, Firebase write, or production route.
+**Source-only `CONTENT_READY` handoff under ONE standard `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18.** Author Q18 mathematical/PED **SELF_VERIFIED**; no independent NotebookLM Topic PASS claimed. This does **not** authorize website merge/deploy, official assessment, Firebase write, or production route.
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R04
-CONTENT_REVISION: R04
+CONTENT_REVISION: R04_MASTER974_40_D6_207_PRACTICE_20261121
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
+ACADEMIC_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 5262fd454346801b050b5eb4f3dc407bc99d3530
+REVIEW_RECEIPT_BLOB: 57db7f94a670d3290b7c5e06304a13fe0376b60f
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 237d92f3cffe3ce9ff6643b868263dc5a8141311
+AUTHOR_A1_A7_BLOB: 5b9ea079b07be1821ddaae6c49a5a01679f3d6e6
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 237d92f3cffe3ce9ff6643b868263dc5a8141311
+AUTHOR_METADATA_BLOB: 5b9ea079b07be1821ddaae6c49a5a01679f3d6e6
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
@@ -33,7 +49,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 P0: 0
 P1: 0
-P2: 1
+P2: 2
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25_SECONDARY_REFERENCE_ONLY
 BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
