@@ -322,6 +322,6 @@
 
         **Ôn và luyện:** Mục 2.3–2.4, Ví dụ 3.3–3.4, Core/Luyện tập Bài 2.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương I](../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md).
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương I](../../../../thu-vien/tu-luan-g11-chuong-i-b01-b02/).
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 2 (trang in 17–21).</p>
