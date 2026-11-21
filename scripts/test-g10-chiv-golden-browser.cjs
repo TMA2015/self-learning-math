@@ -702,41 +702,25 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         exText.includes("Ví dụ 4 — Hợp lực"),
         where+" B11 force figure 8/15 must distinguish worked 6/6 dataset in student text");
        await labels.nth(3).click();
-       assert.equal(await blocks.nth(3).locator("[data-thpt-first-try-id]").count(),0,
-        where+" B11 no First Try allowed in error tab");
-       const tips=blocks.nth(3).locator("details.tip");
-       assert.equal(await tips.count(),3,where+" B11 three canonical HELP plus genuinely wrong steps");
+       assert.equal(await blocks.nth(3).locator("[data-thpt-first-try-id],details.tip,[data-thpt-help-id]").count(),0,
+        where+" B11 Tab4 must not repeat local Vận dụng, HELPs or First Try");
+       await labels.nth(0).click();
+       const tips=blocks.nth(0).locator("details.tip");
+       assert.equal(await tips.count(),3,where+" B11 three signed canonical local D6");
        const ts=await tips.evaluateAll(nodes=>nodes.map(el=>({
-        open:el.open,text:el.textContent||""
+        open:el.open,summary:el.querySelector("summary")?.textContent.trim(),
+        text:el.textContent||""
        })));
-       assert(ts.every(x=>!x.open&&["Cách làm sai:","Vì sao sai:","Tự sửa:","Luyện lại:"].every(t=>x.text.includes(t))),
-        where+" B11 errors must give wrong action, cause, correction and retry");
+       assert(ts.every(x=>!x.open&&x.summary==="Kiểm lỗi"&&
+        ["Cách làm sai:","Vì sao sai:","Tự sửa:","Luyện lại:"].every(t=>x.text.includes(t))),
+        where+" B11 original local wrong step/cause/repair/retry only after learner opt-in");
        assert(ts.every(x=>!/Assessment safety|HELP_ID|EX-G10-|B11-[CP][0-9]{2}/.test(x.text)),
-        where+" B11 visible help cannot leak internal assessment metadata");
-       // Owner P2 B11-UI-TAB4-01: match the accepted B10 pattern.
-       // R01 incorrectly asserted three h3 cards *plus* three tips.
-       assert.equal(await blocks.nth(3).locator("h3").count(),0,
-        where+" B11 Tab4 must have ZERO duplicate standalone heading cards");
-       const summaries=await tips.locator("summary").allTextContents();
-       assert.equal(summaries.length,3,where+" B11 exactly three accordion summaries");
-       assert.deepEqual(summaries.map(t=>t.trim().slice(0,3)),["4.1","4.2","4.3"],
-        where+" B11 numbered summary headings must replace redundant h3 cards");
-       const b10Tab4=fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-10.md","utf8")
-        .split('=== "Lỗi thường gặp"')[1];
-       assert.equal((b10Tab4.match(/^    ### 4\.[1-3]\./gm)||[]).length,0,
-        where+" Golden reference B10 must be accordion-only");
-       assert.equal((b10Tab4.match(/^    \?\?\? tip "4\.[1-3]\. /gm)||[]).length,3,
-        where+" Golden reference B10 has three numbered accordions");
-       // Check default-closed, voluntary reveal/reclose and math typesetting.
-       await tips.first().locator("summary").click();
-       assert.equal(await tips.first().getAttribute("open"),"",
-        where+" first B11 help disclosure must open on learner action");
-       await tips.first().locator("mjx-container").first().waitFor({state:"attached",timeout:15000});
-       await tips.first().locator("summary").click();
-       assert.equal(await tips.first().getAttribute("open"),null,
-        where+" B11 disclosure must reclose; no always-visible answer");
-       assert.equal(await blocks.nth(3).locator("h3").count(),0,
-        where+" opening B11 help must not introduce duplicate heading cards");
+        where+" B11 no internal item identifier leaks");
+       const first=tips.first();await first.locator("summary").click();
+       assert.equal(await first.getAttribute("open"),"",where+" B11 D6 opens voluntarily");
+       await first.locator("mjx-container").first().waitFor({state:"attached",timeout:15000});
+       await first.locator("summary").click();
+       assert.equal(await first.getAttribute("open"),null,where+" B11 D6 re-closes");
        await labels.nth(0).click();
       }
       // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.
