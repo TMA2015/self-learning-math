@@ -1,3 +1,6 @@
+<!-- OWNER_APPROVED_SHARED_SGK_G11_B22_B27_DELTA_B_READY_20261121 -->
+**CURRENT EXACT AUTHORING:** one CĐ16 learner `1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84`, current source-owner SGK B22–B27 bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` (**both Topic branches use same source blob**), current Q18 `19a2ed6ebfd7898da5f186350ea6042e2134fa7e`, A1/Q15 `3bdf5ef98ab262407983d5053fcad07632571bfe`, V2 `7ea472429022a313e5457cdafb665d4c9f10f68c`. Original 33/41 G11 shared canonical Practice student-answer labels formerly `Đáp án sau Submit luyện tập`, misleading in direct voluntary Lời giải; now exact `Đáp án` in one **canonical source** (all 51 public SGK items same) and CĐ16 projection (33) + CĐ17 projection (18). **No stem, numeric key, mathematical reasoning, option, rubric, disclosure, final submit/mastery evaluator code changed**; one original G11 Q15 same-ID source bank, old `afc8ec039213b87b4930f2d34d48c28d1fc6277f` preserved in Git history. `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL`, affected source author self QA; no blanket independent NotebookLM PASS, no website/release/merge/deploy.
+---
 <!-- TOP16_MASTER974_EFFECTIVE_READY_20261121 -->
 **CURRENT AUTHORING CONTENT_READY snapshot (NOT RELEASE):** ONE CĐ16 R03 learner `9b548af2169cabccf4e9191e9dd57b2f13dcdf6d`, source commit `b998dfbe82ba2fd60d0838e91fb2c9413e68fa41`, signed Q18 AUTHOR_SELF_VERIFIED v3.2.0 `5fb70a7644f6bf9d56fb8d51dd456f98cb5d1efe`, A1–A7 `2324f83b982ccffd513c8ddb7f3666177aa70b8f`, sole V2 `c75fff429089d3d38209f51d6e7375736c1a2779`. 21 existing real Knowledge outcomes with one precise error→Knowledge→two original numbered Practice retries each; 8 original public question-only selfchecks use same original IDs with one voluntary after-all-questions practice answer lookup (11,26,29,42,44,59,61,64); original 65 canonical Practice full maths/keys/solutions/11 Written rubrics source-exact, only learner display Bài luyện 1–65 and natural section titles changed. Four original SVG and model unchanged, 87/87 opt-in details, end-only SGK credit. Delta C pedagogy / A editorial under one Q01–Q18; P0/P1 0 in changed source scope. **OPEN NONBLOCKING P2 #977-054:** original G11 canonical answer label “Đáp án sau Submit luyện tập” remains same across 33 reused items, requires source-owner cross-placement Q15 editorial action, not a Topic-only rewrite; no private RD1/official readiness/Mastery, website browser/RELEASE, merge/deploy/Firebase.
 ---
@@ -20,14 +23,14 @@ CATALOG_TOPIC_ID: CD16
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
+ACADEMIC_SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md (SIGNED_AUTHOR_Q18, NOT independent NotebookLM)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC16_R03_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 5fb70a7644f6bf9d56fb8d51dd456f98cb5d1efe
+REVIEW_RECEIPT_BLOB: 19a2ed6ebfd7898da5f186350ea6042e2134fa7e
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 2324f83b982ccffd513c8ddb7f3666177aa70b8f
+AUTHOR_A1_A7_BLOB: 3bdf5ef98ab262407983d5053fcad07632571bfe
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC16-PERPENDICULAR-ANGLE-FULL-R03_HANDOFF_V2_20261116.md
-AUTHOR_HANDOFF_BLOB: c75fff429089d3d38209f51d6e7375736c1a2779
+AUTHOR_HANDOFF_BLOB: 7ea472429022a313e5457cdafb665d4c9f10f68c
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html
 INTERACTIVE_MODEL_BLOB: 931093557eb411b9f78286a92e6545dcbd59aa73
