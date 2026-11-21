@@ -71,8 +71,19 @@ for(const n of [12,13,14]){
  const ui14=fs.readFileSync(path.join(root,
   "prototypes/thpt/ux795/G10_CHV_B14_EM_VAN_DUNG_LABEL_DELTA_A_R01_20261119.md"),"utf8");
  const f14=k=>ui14.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
- const expected=n===12?ui("B12_CURRENT_SOURCE_BLOB"):
+ const predecessor=n===12?ui("B12_CURRENT_SOURCE_BLOB"):
   n===13?ui("B13_CURRENT_SOURCE_BLOB"):f14("B14_CURRENT_SOURCE_BLOB");
+ const placement=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+ assert(placement.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+  placement.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT"),
+  "B"+n+" material HELP relocation must have proper Q18 self-QA receipt");
+ const q18row=placement.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(q18row.length,1,"B"+n+" exactly one signed 20/11 source row");
+ const signedPair=[...q18row[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(signedPair.length,2,"B"+n+" predecessor/current SHA pair");
+ assert.equal(signedPair[0],predecessor,"B"+n+" immutable 19 Nov historical predecessor");
+ const expected=signedPair[1];
  if(n===14){
   assert.equal(f14("B14_PREVIOUS_SOURCE_BLOB"),b14f("CANDIDATE_LESSON_GIT_BLOB"),
    "B14 owner UI correction preserves original signed §X-C source predecessor");
@@ -107,8 +118,11 @@ for(const n of [12,13,14]){
    "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"),"utf8");
   assert.equal(d("B12_BASELINE_CANONICAL_BLOB"),r12("ONE_CANONICAL_B12_R01_BLOB"),
     "B12 historic independent-reviewed canonical SHA must remain immutable");
-  assert.equal(blob(master),ui("B12_CURRENT_CANONICAL_BLOB"),
-    "B12 ONE current canonical must match scoped duplicate-heading Delta A receipt");
+  const canonicalRow=placement.split("\n").filter(x=>x.startsWith("| CANONICAL_B12 | "));
+  assert.equal(canonicalRow.length,1,"B12 single signed manuscript Q18 transition");
+  const canonicalPair=[...canonicalRow[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+  assert.deepEqual(canonicalPair,[ui("B12_CURRENT_CANONICAL_BLOB"),blob(master)],
+   "B12 19/11 manuscript predecessor must extend exactly to 20/11 current manuscript");
   assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
    .split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],s,"B12 learner Knowledge must equal ONE canonical Section A");
   const bank=fs.readFileSync(path.join(root,
