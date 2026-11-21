@@ -54,8 +54,18 @@ for(const [key,n,chapter,asset,expected] of specs){
    assert(c.length>40,key+" readable figure caption");
    return c;
   };
-  assert.notEqual(caption(discovery),caption(official),
-   key+" distinct discovery and SGK interpretations, no duplicate caption");
+  // B23 reuses one accurate caption, but teaches a different reading
+  // under each tab. B24 adds distinct captions. Both require tab-specific
+  // mathematical guidance, not a blind duplicate counted twice.
+  const guidance=part=>{
+   const at=part.indexOf(target),after=part.slice(at).split("</figure>")[1]||"";
+   const lead=after.slice(0,600);
+   assert(lead.length>60,key+" full learner image-reading guidance present");
+   return lead;
+  };
+  assert(guidance(discovery)!==guidance(official)||
+   caption(discovery)!==caption(official),
+   key+" separate pedagogical readings for repeated signed SVG");
  }else assert.equal(count,1,key+" source must reference signed SVG exactly once");
  vals[key]=svg;
 }
