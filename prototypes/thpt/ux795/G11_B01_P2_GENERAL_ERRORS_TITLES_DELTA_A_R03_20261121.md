@@ -26,8 +26,3 @@
 - G3 exact-final-HEAD relevant workflows; browser 390/820/1440px; mở/đóng hai accordion tab 4; xác nhận 6 Kiểm lỗi chỉ cạnh Vận dụng.
 - Sau owner cho phép merge/deploy, P1 so HTML `gh-pages` với source, owner P2 trên thiết bị thật.
 - Cần ghi kết quả exact-final-HEAD CI/browser/P1/P2 sau khi chạy, không mặc định PASS.
-
-## Kiểm toán Toán 10 (ngoài phạm vi chỉnh sửa PR)
-- G10 B01–B06, B09 và B19–B27 có mục lỗi được đặt tên trong tab 4.
-- G10 B07–B08, B10–B17 có tab 4 thiếu nội dung lỗi (chỉ học tiếp/nguồn); B18 có mô tả chung nhưng thiếu các khung khắc phục đã được dẫn.
-- Đây là phát hiện audit source, **không** cho phép tự ý nhân bản Kiểm lỗi từ Vận dụng lên tab 4. Cần xử lý theo từng bài/outcome/Q08 và DELTA_C nếu viết thêm học liệu; giữ snapshot P2 cũ bất biến.
