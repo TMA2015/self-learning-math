@@ -17,7 +17,7 @@ const {chromium}=require("playwright"),assert=require("node:assert/strict");
      if(isGolden){
        const fs=require("node:fs"),crypto=require("node:crypto");
        const src=fs.readFileSync("docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md");
-       const sha=crypto.createHash("sha1").update("blob "+src.length+"\\0").update(src).digest("hex");
+       const sha=crypto.createHash("sha1").update("blob "+src.length+"\0").update(src).digest("hex");
        assert.equal(sha,"0603fbb2b61374fcd49eff3c119197cff3fa77e4",
          "G11 B01 must retain exact owner-accepted Q18 Golden Knowledge");
      }
