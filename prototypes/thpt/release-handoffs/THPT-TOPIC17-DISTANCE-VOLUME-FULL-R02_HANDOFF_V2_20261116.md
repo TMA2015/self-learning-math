@@ -1,9 +1,25 @@
+<!-- TOP17_MASTER974_CURRENT_ONE_HANDOFF_20261121 -->
+## CĐ17 R03 effective V2 custody (same R02 packet), current AUTHORING 21/11/2026
+
+CURRENT_LEARNER_BLOB: f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
+CURRENT_AUTHOR_Q18_BLOB: e040ecd6c0c7585e7497d8d418e4d2d43b1781cb
+CURRENT_AUTHOR_A1_A7_BLOB: c858c664abcf46168e38e8f470dcde1267bfbd7a
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+RELEASE_AUTHORIZATION: NO
+DELTA: DELTA_C_PED_TARGETED_12_D6_PLUS_8_SELF_CHECK_NAV; DELTA_A_EDITORIAL_37_UNIQUE_TITLES
+
+Current original learner source academic math: 12 Knowledge outcome explanations, FirstTry mathematical question/answer and independent worked examples unchanged; 12/12 voluntary Kiểm lỗi identify misconception → correct Knowledge subsection → two authentic numbered original Practice retry opportunities. 37 student Practice cards continuously Bài luyện 1–37, all original mathematical stems/keys/solutions/seven Written rubrics byte-exact compared with prior signed 38aa934fc2422b342e314fabddca54a0eb679cce. Eight public same-ID selfcheck replays now have one voluntary answer navigation table after all questions: P01/P02/P04/P05/P06/P08/P10/P12 → Bài 12/13/15/16/17/30/32/34, no key clone. One SGK end source credit, two SVG references and model unchanged; 51/51 balanced voluntary disclosures.
+
+Existing original shared SGK source `afc8ec039213b87b4930f2d34d48c28d1fc6277f` remains intact. 18 original G11 shared solution display labels “Đáp án sau Submit luyện tập” retained exactly as on source owner, shared P2 #977-054 OPEN_NONBLOCKING until original owner coordinates Q15 source-equivalent replacement. No official held-out readiness/RD1, actual site Final Submit, Mastery or RELEASE AP/R/browser/CI claim. Q18 is `AUTHOR_SELF_VERIFIED`, not new independent NotebookLM full Topic PASS.
+---
+
 # CĐ17 · Khoảng cách & Thể tích khối đa diện · AUTHORING V2 — bản thảo hiệu lực R03
 
-**AUTHORING CONTENT_READY_CANDIDATE, SOURCE-ONLY**, academic/PED self-author-verified `SLM-THPT-QUALITY-ONE v3.1.0` one Q01–Q18 standard; **not** an independent NotebookLM PASS, not website RELEASE readiness or owner merge/deploy permission. PLAN22-17 follows historical NotebookLM 22-topic study proposal, not a locked runtime `TOPIC_ID`.
+**AUTHORING CONTENT_READY_CANDIDATE, SOURCE-ONLY**, academic/PED self-author-verified `SLM-THPT-QUALITY-ONE v3.2.0` one Q01–Q18 standard; **not** an independent NotebookLM PASS, not website RELEASE readiness or owner merge/deploy permission. PLAN22-17 follows historical NotebookLM 22-topic study proposal, not a locked runtime `TOPIC_ID`.
 
 PACKET_ID: THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02
-CONTENT_REVISION: R03_FULL_S1_KNOWLEDGE_20261120
+CONTENT_REVISION: R03_MASTER974_12D6_SELF_CHECK_20261121
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -13,13 +29,13 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 38aa934fc2422b342e314fabddca54a0eb679cce
+ACADEMIC_SOURCE_BLOB: f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 61c43e3eb1878235bbb8b2b963695a7d8924f299
+REVIEW_RECEIPT_BLOB: e040ecd6c0c7585e7497d8d418e4d2d43b1781cb
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: d5de00ad09dbd6f6658500fda175d082781a0183
+AUTHOR_A1_A7_BLOB: c858c664abcf46168e38e8f470dcde1267bfbd7a
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: d5de00ad09dbd6f6658500fda175d082781a0183
+AUTHOR_METADATA_BLOB: c858c664abcf46168e38e8f470dcde1267bfbd7a
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
