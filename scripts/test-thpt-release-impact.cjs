@@ -133,6 +133,18 @@ function classify(paths,{manual=false}={}){
   return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:b26,
    reason:"EXACT_B26_SIGNED_G0G2_MATH_AND_GOLDEN_SOURCE_PROOF"};
 
+ // Owner-authorized single canonical B27 SGK S1/PED source-lock and exact
+ // scoped proof. Unknown/shared runtime/config/asset changes route FULL.
+ const b27="docs/thpt-preview/sgk/chuong-ix/bai-27.md";
+ const b27Receipt="prototypes/thpt/ux795/G10_CHIX_B27_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md";
+ const b27Proof="scripts/test-thpt-scoped-deploy-proof.cjs";
+ if(lessons.length===1&&lessons[0]===b27&&
+    files.includes(b27Receipt)&&files.includes(b27Proof)&&
+    files.every(x=>x===b27||x===b27Receipt||x===b27Proof||
+      x==="scripts/test-thpt-release-impact.cjs"||SOURCE_TEST.test(x))&&
+    fs.readFileSync(b27,"utf8").includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"))
+  return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:b27,
+   reason:"EXACT_G10_B27_S1_SIGNED_SOURCE_Q18_GOLDEN_AND_PROOF"};
  // Owner-directed G10 B07–B14 migration: four existing manuscript files are
  // exactly paired with the eight canonical published lesson Markdown files.
  const manuscripts=[
@@ -219,6 +231,20 @@ function selfTest(){
   "Missing eighth lesson cannot qualify for exact 8-lesson batch");
  assert.equal(classify(antiRepeatCase.filter(x=>!x.endsWith("scoped-deploy-proof.cjs"))).impact,"FULL",
   "No source-locked production proof means exact 8-lesson batch must fail closed");
+ const b27Case=[
+  "docs/thpt-preview/sgk/chuong-ix/bai-27.md",
+  "prototypes/thpt/ux795/G10_CHIX_B27_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md",
+  "scripts/thpt-q18-g10-source-receipt.cjs",
+  "scripts/test-thpt-scoped-deploy-proof.cjs",
+  "scripts/test-thpt-release-impact.cjs"];
+ assert.equal(classify(b27Case).impact,"SCOPED_LESSON",
+  "B27 exact one-lesson signed source and same proof must be scoped");
+ assert.equal(classify([...b27Case,"mkdocs.yml"]).impact,"FULL",
+  "B27 cannot hide global site build config");
+ assert.equal(classify([...b27Case,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,
+  "FULL","B27 cannot hide shared Golden JS changes");
+ assert.equal(classify(b27Case.filter(x=>!x.endsWith("scoped-deploy-proof.cjs"))).impact,
+  "SCOPED_LESSON","Without proof file B27 returns generic one-source classifier; production gate still fails because it requires receipt");
  const bBatch=[7,8,9,10,11,12,13,14].map(n=>
   "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md");
  const mBatch=[
