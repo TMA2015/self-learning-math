@@ -63,7 +63,7 @@
 
     ### 1.3. Khi biểu thức là tích, vì sao nên đổi thành tổng?
 
-    Với \(2\cos u\cos v\), cộng hai công thức \(\cos(u-v)\) và \(\cos(u+v)\) sẽ triệt tiêu tích sin. Vì vậy **tích hai cos** có thể đổi thành **tổng hai cos**, rất hữu ích khi \(u+v\) hay \(u-v\) là góc đặc biệt.
+    Với \(2\cos u\cos v\), cộng hai công thức \(\cos(u-v)\) và \(\cos(u+v)\) sẽ triệt tiêu tích sin. Nếu cần xử lí \(2\sin u\sin v\), hãy **lấy cos của hiệu trừ cos của tổng**: các tích cos triệt tiêu, còn lại đúng \(2\sin u\sin v\). Vì thế phải nhìn **loại tích** trước khi chọn dấu, rồi xem \(u+v\) hoặc \(u-v\) có phải góc đặc biệt hay không.
 
     **Vận dụng.** Không dùng máy tính, tính \(2\sin75^\circ\sin45^\circ\) bằng công thức biến đổi tích thành tổng.
 
