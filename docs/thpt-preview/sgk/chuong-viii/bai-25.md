@@ -1,42 +1,77 @@
 # Bài 25. Nhị thức Newton
 
-<div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VIII · KIẾN THỨC SGK KNTT</p>
-<p class="thpt-r4-lead">Khai triển nhị thức Newton và tìm hệ số hoặc số hạng theo đúng điều kiện.</p>
+<style>
+/* Scoped to B25 by its canonical First Try marker; no shared UI changes. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY09"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY09"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY09"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G10-CHVIII-TRY09"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
 
+<script>
+/* B25 source-scoped Golden bridge: reuse the approved B22 presentation CSS,
+   without altering the shared SGK route/assessment runtime or cloning a theme.
+   Only classes and section-heading DOM are attached to this one lesson. */
+(() => {
+ "use strict";
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/chuong-viii\/bai-25\/?$/.test(location.pathname))return;
+  const article=document.querySelector(".md-content__inner");
+  if(!article||article.dataset.g10B25Golden==="true"||
+    !article.querySelector('.thpt-r4-screen[data-b25-owner-g0g2="r01"]'))return;
+  const tab=article.querySelector(":scope > .tabbed-set");
+  const labels=[...(tab?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+  const panes=[...(tab?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+  const radios=[...(tab?.querySelectorAll(':scope > input[type="radio"]')||[])];
+  const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+  if(labels.length!==4||panes.length!==4||radios.length!==4||
+     !labels.every((el,i)=>el.textContent.trim()===names[i]))return;
+  const heading=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
+   "4. Lỗi thường gặp và cách tự khắc phục"];
+  article.classList.add("thpt-g10-chiv-golden");
+  panes.forEach((pane,i)=>{
+   if(pane.querySelector(":scope > h2.thpt-g10-section-heading"))return;
+   const h=document.createElement("h2");
+   h.className="thpt-g10-section-heading";
+   h.textContent=heading[i];
+   pane.prepend(h);
+  });
+  const sync=()=>labels.forEach((label,i)=>
+   label.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  tab.addEventListener("change",sync);
+  sync();
+  article.dataset.g10B25Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script>
+
+<div class="thpt-r4-screen" data-thpt-r4 data-b25-owner-g0g2="r01">
+<p class="thpt-r4-eyebrow">TOÁN 10 · CHƯƠNG VIII · KIẾN THỨC SGK KNTT</p>
+<p class="thpt-r4-lead">Hiểu hệ số bằng sơ đồ nhánh, khai triển bậc 4–5 và ước lượng có kiểm sai số.</p>
 </div>
 
 === "Khám phá kiến thức"
 
-    ### Cùng tìm hiểu
+    **Vì sao cần học?** Nhân nhiều nhị thức bằng cách phân phối từng lần dễ đếm trùng hoặc bỏ sót. Tổ hợp ở Bài 24 giúp ta đếm số lần mỗi đơn thức xuất hiện mà không cần viết mọi tích trung gian.
 
-    Khi nhân \((a+b)^4\), mỗi trong bốn thừa số \((a+b)\) buộc em chọn **một trong hai hạng tử**. Để tạo hạng tử \(a^2b^2\), ta phải chọn \(b\) đúng **hai lần**, còn hai lần chọn \(a\). Số cách chọn vị trí cho hai chữ \(b\) trong bốn thừa số là \(\binom42=6\), vì thế hệ số của \(a^2b^2\) là 6.
+    **Tiền đề:** Hằng đẳng thức \((a+b)^2,\ (a+b)^3\), quy tắc nhân và số tổ hợp \(C_n^k\). **Phạm vi SGK:** khai triển bậc 4 hoặc bậc 5.
 
-    Đây là ý nghĩa của **nhị thức Newton**: hệ số không xuất hiện từ một mẹo nhớ, mà là số cách chọn vị trí khi khai triển tích nhiều thừa số giống nhau. Các hệ số xếp thành **tam giác Pascal**; ở mỗi hàng, hai số liền kề của hàng trước cộng lại thành số ở giữa hàng sau.
+    ### 1.1. Sơ đồ nhánh giải thích nguồn gốc hệ số
 
-    Khi nhị thức có dấu âm hoặc chứa \(x\) với số mũ âm, em phải theo dõi **số lần chọn từng hạng tử** và **số mũ của \(x\)**, không tự đoán dấu xen kẽ. Muốn tính tổng hệ số của đa thức, cách nhanh là thay \(x=1\), nhưng chỉ sau khi xác nhận biểu thức thực sự là đa thức theo \(x\).
+    Mỗi lần đi qua một nhánh trong tích \((a+b)^3\), em chọn hạng tử \(a\) hoặc \(b\). Một đường từ gốc tới lá tạo một tích; nhiều đường có thể thu gọn về cùng một đơn thức.
 
-    ### Thuật ngữ, kiến thức và kỹ năng
+    <figure class="thpt-r4-plot thpt-r4-concept-figure" style="overflow-x:auto"><img src="../../../../assets/images/thpt/G10_B25_NEWTON_BRANCH_TREE_R01.svg" loading="lazy" style="min-width:600px" alt="Cây ba lần chọn a hoặc b cho tám tích với dãy hệ số 1 3 3 1"><figcaption>Đọc từ gốc đến lá: aab, aba, baa đều tạo a²b, nên hệ số a²b là 3. Có thể kéo ngang để đọc từng lá trên điện thoại.</figcaption></figure>
 
-    **Thuật ngữ:** Nhị thức Newton, hệ số nhị thức, tổ hợp, tam giác Pascal, số hạng tổng quát, hệ số, số hạng không chứa (x).
+    **Đọc hình:** Có tám đường nhưng sau thu gọn còn bốn loại đơn thức. Cách tạo đường cũng áp dụng cho \((a+b)(c+d)\), với bốn lá \(ac,ad,bc,bd\). Từ đây có thể đếm số vị trí lấy \(b\) ở bậc 4–5.
 
-    **Sau bài học, em cần làm được:** Giải thích hệ số bằng chọn vị trí; viết khai triển đúng dấu/số mũ; tìm một hệ số hoặc số hạng tự do; tính tổng hệ số bằng thay giá trị thích hợp.
+    ### 1.2. Tìm hệ số bằng cách đếm vị trí
 
-=== "Kiến thức SGK"
+    Để có \(a^3b^2\) trong \((a+b)^5\), chọn đúng hai trong năm vị trí lấy \(b\); ba vị trí còn lại lấy \(a\). Hãy tự đếm số cách, không nhầm số mũ 2 với hệ số.
 
     <span id="thpt-g10-chviii-try09" data-thpt-first-try-id="THPT-G10-CHVIII-TRY09" data-outcome-id="G10-B25-NEWTON_EXPANSION"></span>
-
-    ### Từ năm nhân tử đến hệ số Newton
-
-    Khai triển (a+b)⁵ bằng nhân từng cặp dài; hãy hiểu vì sao hệ số của a³b² xuất hiện nhiều lần.
-
-    **Tiền đề:** Ôn C₅² là số cách chọn 2 vị trí khác nhau trong 5 vị trí; từ mỗi nhân tử (a+b), lấy a hoặc b.
-
-    Đơn thức a³b² xuất hiện khi chọn b từ đúng hai trong năm nhân tử; ba nhân tử còn lại chọn a. Có C₅²=10 cách chọn vị trí b.
-
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ năm ô (a+b), đánh dấu hai ô lấy b, ba ô lấy a; đổi cặp ô đánh dấu cho các tích cùng a³b².
-
-    **Lý do chọn phương pháp, điều kiện và giới hạn:** Với SGK Core n=4 hoặc n=5, số mũ của a và b cộng bằng n. Hệ số a^(n−k)b^k bằng C(n,k); không dùng n lớn làm nội dung bắt buộc.
 
     **Em vận dụng.** Trong khai triển (a+b)⁵, hệ số của a³b² là bao nhiêu? Giải thích bằng cách chọn nhân tử.
 
@@ -53,7 +88,7 @@
 
     <span id="help-g10-chviii-try09" data-thpt-help-id="HELP-G10-CHVIII-TRY09"></span>
 
-    ??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    ??? tip "Kiểm lỗi"
 
         1. **Nhận diện lỗi:** Nếu đáp 5, em nhầm số mũ với số cách chọn; nếu 20, em đếm thứ tự hai vị trí b không cần thiết.
         2. **Quay lại bản chất:** Đơn thức a³b² xuất hiện khi chọn b từ đúng hai trong năm nhân tử; ba nhân tử còn lại chọn a. Có C₅²=10 cách chọn vị trí b.
@@ -63,20 +98,11 @@
 
         <a href="../luyen-tap/?item=THPT-G10-B25-C01">Mở câu luyện tập đã được kiểm tra</a>
 
+    ### 1.3. Dấu âm phải đi theo hạng tử
+
+    Trong \((1-x)^3\), số lần lấy \(-x\) lẻ cho tích âm, chẵn cho tích dương. Với \((2-x)^4\), ngoài tổ hợp vị trí còn phải nhân lũy thừa của phần hệ số 2.
 
     <span id="thpt-g10-chviii-try10" data-thpt-first-try-id="THPT-G10-CHVIII-TRY10" data-outcome-id="G10-B25-COEFFICIENT_SIGN"></span>
-
-    ### Dấu hệ số phụ thuộc hạng tử âm được chọn bao nhiêu lần
-
-    Trong (2−x)⁴, có số hạng dương và âm; nhầm dấu có thể làm sai cả hệ số dù tổ hợp tính đúng.
-
-    **Tiền đề:** Ôn (−x)^k=(−1)^k x^k, dấu âm mũ lẻ giữ dấu trừ; chọn k nhân tử (−x) từ n nhân tử.
-
-    Hệ số x^k gồm ba phần: số cách chọn k vị trí là C(n,k), phần số 2^(n−k) từ các vị trí còn lại và dấu (−1)^k. Dấu không tùy ý.
-
-    **Hướng dẫn đọc hình/sơ đồ:** Dùng bốn ô (2−x), đánh dấu ba ô lấy −x và một ô lấy 2; mỗi tích chọn có ba dấu trừ nên kết quả âm.
-
-    **Lý do chọn phương pháp, điều kiện và giới hạn:** Trong n=4 Core, hệ số x³ của (2−x)⁴ là C(4,3)·2¹·(−1)³. Kiểm đúng số mũ x trước khi tính, không mở rộng cấp số tùy chọn n lớn.
 
     **Em vận dụng.** Tìm hệ số của x³ trong (2−x)⁴.
 
@@ -93,7 +119,7 @@
 
     <span id="help-g10-chviii-try10" data-thpt-help-id="HELP-G10-CHVIII-TRY10"></span>
 
-    ??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    ??? tip "Kiểm lỗi"
 
         1. **Nhận diện lỗi:** Nếu đáp +8, em đã bỏ dấu (−1)³; nếu đáp −4, em quên nhân hệ số 2 ở nhân tử còn lại.
         2. **Quay lại bản chất:** Hệ số x^k gồm ba phần: số cách chọn k vị trí là C(n,k), phần số 2^(n−k) từ các vị trí còn lại và dấu (−1)^k. Dấu không tùy ý.
@@ -103,20 +129,11 @@
 
         <a href="../luyen-tap/?item=THPT-G10-B25-P01">Mở câu luyện tập đã được kiểm tra</a>
 
+    ### 1.4. Số hạng không chứa \(x\)
+
+    Trong \((2x+1)^3\), chỉ khi lấy \(1\) ở cả ba nhân tử, tích mới không chứa \(x\). Không cần khai triển hết. Nếu đề chứa \(x^{-1}\), phải kiểm điều kiện \(x\ne0\) và tổng số mũ; đây là nhánh tự chọn.
 
     <span id="thpt-g10-chviii-try11" data-thpt-first-try-id="THPT-G10-CHVIII-TRY11" data-outcome-id="G10-B25-CONSTANT_TERM"></span>
-
-    ### Số hạng tự do chỉ khi không chọn thừa số có x
-
-    Trong (2x+3)⁴, không cần khai triển hết để biết số hạng không chứa x: chỉ cần nhận ra tích nào không lấy 2x lần nào.
-
-    **Tiền đề:** Ôn mỗi nhân tử (2x+3) cho hai lựa chọn 2x hoặc 3; số mũ x là số lần chọn 2x.
-
-    Số hạng không chứa x đòi số mũ x bằng 0: lấy 3 ở tất cả bốn nhân tử. Đây là phạm vi SGK Core n=4; biểu thức 1/x hoặc n lớn thuộc phần hỗ trợ/mở rộng, không bắt làm Tự thử bắt buộc.
-
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ bốn ô (2x+3) và khoanh 3 trong cả bốn ô, thấy tích 3⁴ không có x.
-
-    **Lý do chọn phương pháp, điều kiện và giới hạn:** Dùng số hạng C(4,k)(2x)^k·3^(4−k), cho k=0; không giải bài có số mũ âm ngoài phạm vi SGK Core.
 
     **Em vận dụng.** Trong khai triển (2x+3)⁴, số hạng không chứa x bằng bao nhiêu?
 
@@ -133,30 +150,21 @@
 
     <span id="help-g10-chviii-try11" data-thpt-help-id="HELP-G10-CHVIII-TRY11"></span>
 
-    ??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    ??? tip "Kiểm lỗi"
 
         1. **Nhận diện lỗi:** Nếu đáp 16, em lấy hệ số bậc x⁴; nếu chỉ 3, em quên tích của cả bốn nhân tử.
-        2. **Quay lại bản chất:** Số hạng không chứa x đòi số mũ x bằng 0: lấy 3 ở tất cả bốn nhân tử. Đây là phạm vi SGK Core n=4; biểu thức 1/x hoặc n lớn thuộc phần hỗ trợ/mở rộng, không bắt làm Tự thử bắt buộc.
+        2. **Quay lại bản chất:** Số hạng không chứa x đòi số mũ x bằng 0: lấy 3 ở tất cả bốn nhân tử. Đây là phạm vi SGK Core n=4; biểu thức 1/x hoặc n lớn thuộc phần hỗ trợ/mở rộng, không bắt làm phần Vận dụng.
         3. **Tự làm lại:** Lập bảng k=0,1,2,3,4 và số mũ x là k, chọn k=0.
         4. **Đối chiếu tự nguyện:** tự mở lời giải trong fold và giải thích lại mỗi điều kiện, không tính điểm thành thạo.
         5. **Luyện tiếp:** Mở câu luyện qua liên kết bên dưới và tự làm trước khi đối chiếu. Nếu đã xem lời giải, hãy chọn một câu khác để thử không có gợi ý.
 
         <a href="../luyen-tap/?item=THPT-G10-B25-P07">Mở câu luyện tập đã được kiểm tra</a>
 
+    ### 1.5. Tổng hệ số: thay \(x=1\)
+
+    Với đa thức \(P(x)=a_0+a_1x+\cdots+a_mx^m\), ta có \(P(1)=a_0+a_1+\cdots+a_m\). Mẹo này dùng cho **tổng tất cả hệ số**, không dùng khi chỉ hỏi một hệ số.
 
     <span id="thpt-g10-chviii-try12" data-thpt-first-try-id="THPT-G10-CHVIII-TRY12" data-outcome-id="G10-B25-COEFFICIENT_SUM"></span>
-
-    ### Tổng hệ số bằng giá trị đa thức tại x=1
-
-    Cộng riêng từng hệ số khai triển (1+2x)⁴ dễ sai; thay x=1 làm mọi lũy thừa x bằng 1.
-
-    **Tiền đề:** Nhắc P(x)=a₀+a₁x+...+a₄x⁴ có P(1)=a₀+...+a₄; chỉ dùng n=4 trong học liệu Core này.
-
-    Thay x=1, tất cả x^k=1 nên giá trị P(1) chính là tổng hệ số. Tách tổng hệ số lẻ/chẵn bằng P(−1) là nhánh mở rộng tự chọn, không thay phần SGK bắt buộc.
-
-    **Hướng dẫn đọc hình/sơ đồ:** Vẽ bảng bậc 0..4 và hệ số tương ứng, rồi cho x=1 để từng hạng đóng góp đúng hệ số của nó.
-
-    **Lý do chọn phương pháp, điều kiện và giới hạn:** Hỏi tổng mọi hệ số thì tính P(1). Chỉ khi tự chọn học thêm tổng lẻ/chẵn mới dùng (P(1)−P(−1))/2, không dùng bài n=7 nâng cao làm Core.
 
     **Em vận dụng.** Tổng tất cả hệ số của đa thức (1+2x)⁴ là bao nhiêu?
 
@@ -173,7 +181,7 @@
 
     <span id="help-g10-chviii-try12" data-thpt-help-id="HELP-G10-CHVIII-TRY12"></span>
 
-    ??? tip "Nếu chưa làm được — khắc phục 5 bước"
+    ??? tip "Kiểm lỗi"
 
         1. **Nhận diện lỗi:** Nếu đáp 16, em nhầm (1+2x)⁴ với (1+x)⁴, bỏ hệ số 2.
         2. **Quay lại bản chất:** Thay x=1, tất cả x^k=1 nên giá trị P(1) chính là tổng hệ số. Tách tổng hệ số lẻ/chẵn bằng P(−1) là nhánh mở rộng tự chọn, không thay phần SGK bắt buộc.
@@ -183,50 +191,122 @@
 
         <a href="../../../thu-vien/tu-luan-chuong-viii/">Mở câu luyện tập đã được kiểm tra</a>
 
+    ### 1.6. Ứng dụng: khai triển để tính gần đúng
 
-    ### Khái niệm, điều kiện và công thức
+    Với \(t>0\) nhỏ, \((1+t)^4=1+4t+6t^2+4t^3+t^4\). Lấy hai số hạng đầu \(1+4t\) để ước lượng, nhưng nhớ rằng **phần dư tạo sai số**. Sai số tuyệt đối bằng độ lớn của hiệu giữa kết quả tính đủ và kết quả gần đúng.
 
-    **Cách đọc hình.** Đọc từng hàng hệ số theo n từ 0 đến 4; hệ số giữa bằng tổng hai hệ số ở trên. Hàng n=4 là 1,4,6,4,1 ứng với khai triển (a+b)⁴.
-
-    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B25_PASCAL_TRIANGLE_R02.svg" loading="lazy" alt="Tam giác Pascal các hàng 1; 1 1; 1 2 1; 1 3 3 1; 1 4 6 4 1"><figcaption>Các hệ số \(1,4,6,4,1\) của \((a+b)^4\) xuất phát từ số cách chọn hạng tử \(b\) đúng \(k\) lần trong bốn thừa số.</figcaption></figure>
+    Các bài số mũ lớn, \(x^{-1}\) và tổng hệ số chẵn/lẻ là **mở rộng tự chọn**, không thay yêu cầu bậc 4–5.
 
 
-    **Công thức.** Với \(n\) là số nguyên không âm,
+=== "Kiến thức SGK"
 
-    \[
-    (a+b)^n=\sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k.
-    \]
+    ### 2.1. Khai triển nhị thức bậc 4
 
-    Có n+1 số hạng trước khi thu gọn các số hạng đồng dạng. Hệ số tổ hợp \(\binom nk=\binom n{n-k}\) và \(\binom nk=\binom{n-1}{k-1}+\binom{n-1}k\) với \(1\le k\le n-1\). Khi \(b\) là một biểu thức âm, dấu âm ở \(b^k\) phải được giữ: \((-1)^k\) khác nhau cho số mũ chẵn/lẻ.
+    Trong bốn nhân tử, nếu lấy \(b\) đúng \(k\) lần sẽ tạo \(a^{4-k}b^k\). Số cách chọn những vị trí đó bằng \(C_4^k\).
 
-    **Đọc hệ số.** Trong \((a+bx)^n\), hệ số của \(x^r\) là \(\binom nr a^{n-r}b^r\) (\(0\le r\le n\)), với a,b là hằng số. Với biểu thức có các lũy thừa x khác nhau hoặc \(x^{-1}\), phải viết số mũ tổng quát, giải phương trình số mũ cần tìm, và kiểm tra điều kiện xác định \(x\ne0\) nếu có.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card"><strong>Bản chất.</strong> Hệ số là số cách chọn hạng tử tạo ra cùng một tích trước khi thu gọn các tích đồng dạng.</div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"><strong>Công thức.</strong> \((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\).</div>
+
+    **Cách đọc:** Số mũ của \(a\) giảm từ 4 đến 0, số mũ \(b\) tăng từ 0 đến 4; tổng hai số mũ bằng 4.
+
+    ### 2.2. Khai triển nhị thức bậc 5
+
+    Khi có năm nhân tử, số cách lấy \(b\) đúng \(k\) lần là \(C_5^k\). Dãy hệ số là \(1,5,10,10,5,1\).
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"><strong>Công thức.</strong> \((a+b)^5=a^5+5a^4b+10a^3b^2+10a^2b^3+5ab^4+b^5\).</div>
+
+    **Cách đọc:** Trong mỗi hạng, tổng hai số mũ là 5. Khi \(b\) là biểu thức âm, phải giữ nguyên dấu của \(b^k\).
+
+    ### 2.3. Tam giác Pascal và cách đối chiếu hệ số
+
+    <figure class="thpt-r4-plot thpt-r4-concept-figure"><img src="../../../../assets/images/thpt/G10_B25_PASCAL_TRIANGLE_R02.svg" loading="lazy" alt="Tam giác Pascal các hàng đầu"><figcaption>Đọc từ trên xuống: số giữa bằng tổng hai số ngay phía trên. Hàng bậc 4 là 1,4,6,4,1; từ hàng đó, cộng hai số kề phía trên để suy ra hàng bậc 5: 1,5,10,10,5,1.</figcaption></figure>
+
+    Tam giác Pascal giúp kiểm **dãy hệ số**, còn sơ đồ nhánh ở Khám phá giải thích **vì sao** hệ số đếm số đường chọn. Số hạng dạng \(C_n^k a^{n-k}b^k\) là liên hệ tổng quát; SGK B25 chỉ bắt buộc \(n=4\) hoặc \(n=5\).
+
+    ### 2.4. Khi thay một hạng tử bằng biểu thức có dấu
+
+    Với \((3x-2)^5\), đặt \(a=3x,\ b=-2\). Hạng có số lần lấy \(-2\) lẻ mang dấu âm; khi tính \((3x)^k\), phải nâng cả số 3 lên mũ \(k\).
+
+    Trong \((a+bx)^n\) với \(a,b\) hằng số, hệ số \(x^r\) là \(C_n^r a^{n-r}b^r\) cho \(0\le r\le n\). Nếu cả hai hạng tử có \(x\), phải xét số mũ tổng quát trước.
+
+    ### 2.5. Dùng khai triển để ước lượng và kiểm sai số
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"><strong>Xấp xỉ hai số hạng đầu.</strong> Với \(t\) nhỏ, \((1+t)^4\approx1+4t\) và \((1+t)^5\approx1+5t\). Không được coi đây là đẳng thức.</div>
+
+    \(1{,}05^4\approx1{,}20\), trong khi máy tính cho \(1{,}21550625\), nên sai số tuyệt đối là \(0{,}01550625\). Với mô hình tăng dân số, phải nêu rõ điều kiện tỉ lệ mỗi năm không đổi và đơn vị kết quả.
 
 === "Ví dụ"
 
-    Trước khi xem lời giải, hãy xác định dữ kiện, điều phải tìm và lý do chọn cách giải. Sau đó kiểm tra lại điều kiện áp dụng và kết quả, thay vì chỉ nhìn phép tính cuối cùng.
+    Các ví dụ có **Phân tích** trước lời giải và kiểm tra lại bằng phép tính độc lập.
 
-    ### Ví dụ — Tìm hệ số từ số lần chọn hạng tử
+    ### 3.1. Ví dụ — Khai triển bậc 4
 
-    **Đề bài.** Tìm hệ số của \(x^2\) trong \((1+2x)^4\), rồi tính tổng mọi hệ số của đa thức.
+    **Đề bài.** Khai triển \((2x+1)^4\).
 
-    **Vì sao chọn cách này?** Để có \(x^2\), trong bốn thừa số phải chọn \(2x\) đúng hai lần; số cách chọn vị trí là \(\binom42\).
+    **Phân tích:** Đặt \(a=2x,\ b=1\); không được quên lũy thừa hệ số 2.
 
-    **Giải.** Hệ số của \(x^2\) bằng \(\binom42\cdot2^2=6\cdot4=24\). Tổng tất cả hệ số bằng giá trị đa thức tại \(x=1\): \((1+2)^4=81\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \((2x+1)^4=16x^4+32x^3+24x^2+8x+1\).</p></div>
 
-    **Kiểm lại:** Hệ số 24 không phải 6 vì mỗi lần chọn \(2x\) còn đóng góp thừa số 2.
+    **Kiểm lại:** Với \(x=1\), tổng các hệ số 81 khớp \(3^4\).
 
-    **Ví dụ 1.** Hệ số x² trong (1-2x)^5 là C(5,2)×(-2)^2=10×4=40; dấu dương do mũ chẵn. Hệ số x³ là C(5,3)×(-2)^3=10×(-8)=-80.
+    ### 3.2. Ví dụ — Dấu âm
 
-    **Ví dụ 2.** Tổng tất cả hệ số của đa thức f(x)=(2+x)^4 bằng f(1)=3^4=81. Tổng có trọng số dấu luân phiên bằng f(-1)=1. Dùng thay x=1 chỉ khi biết f(x) là đa thức hữu hạn và hiểu rõ hệ số cần cộng.
+    **Đề bài.** Khai triển \((x-2)^4\).
+
+    **Phân tích:** Coi \(b=-2\); mũ lẻ cho dấu âm, mũ chẵn cho dấu dương.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \((x-2)^4=x^4-8x^3+24x^2-32x+16\).</p></div>
+
+    **Kiểm lại:** Thay \(x=2\), kết quả phải bằng 0.
+
+    ### 3.3. Ví dụ — Khai triển bậc 5
+
+    **Đề bài.** Khai triển \((3x-2)^5\), chỉ ra hệ số \(x^4\).
+
+    **Phân tích:** Chọn \(-2\) một lần và \(3x\) bốn lần để tạo \(x^4\); hệ số âm.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \((3x-2)^5=243x^5-810x^4+1080x^3-720x^2+240x-32\). Hệ số \(x^4\) là \(-810\).</p></div>
+
+    **Kiểm lại:** Với \(x=0\) có \(-32\); với \(x=1\) có 1.
+
+    ### 3.4. Ví dụ — Tìm riêng hệ số
+
+    **Đề bài.** Tìm hệ số \(x^4\) của \((3x-1)^5\).
+
+    **Phân tích:** Chọn bốn lần \(3x\), một lần \(-1\); số cách là \(C_5^4\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Hệ số \(C_5^4\cdot3^4(-1)=-405\).</p></div>
+
+    **Kiểm lại:** Dấu âm do lấy \(-1\) đúng một lần.
+
+    ### 3.5. Ví dụ — Xấp xỉ và sai số
+
+    **Đề bài.** Dùng hai hạng đầu để ước lượng \(1{,}05^4\), so với máy tính.
+
+    **Phân tích:** Lấy \(1+4t\), với \(t=0{,}05\), rồi tính hiệu tuyệt đối.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(1{,}05^4\approx1{,}20\). Máy tính \(1{,}21550625\); sai số là \(\lvert1{,}21550625-1{,}20\rvert=0{,}01550625\).</p></div>
+
+    **Kiểm lại:** Các hạng \(6t^2+4t^3+t^4>0\) nên số gần đúng nhỏ hơn kết quả tính đủ.
+
+    ### 3.6. Ví dụ — Dân số sau năm năm
+
+    **Đề bài.** Một địa phương có 800 nghìn người, dân số tăng đều \(1{,}5\%\) hằng năm. Ước lượng sau 5 năm.
+
+    **Phân tích:** Dùng \(800(1+0{,}015)^5\), tính gần đúng với hai hạng đầu và giữ đơn vị nghìn người.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(800(1+5\cdot0{,}015)=860\) nghìn người. Tính đủ khoảng \(861{,}827\) nghìn, độ lệch xấp xỉ \(1{,}827\) nghìn.</p></div>
+
+    **Kiểm lại:** Đây chỉ là mô hình khi tỉ lệ tăng không đổi; 860 không phải số chính xác.
 
     ??? question "Luyện tập mở rộng và chuyên sâu"
 
-        <p>Các câu có nhãn “hỗ trợ mở rộng” hoặc “chuyên sâu tự chọn” không thuộc yêu cầu bắt buộc của phần Core. Hãy nắm chắc cách khai triển và xác định hệ số trước khi luyện nâng cao.</p>
-
-
-    **Lỗi hay gặp.** Nhầm k và n-k; bỏ hệ số b^k; quên dấu âm với số mũ lẻ; đọc hệ số x^r sai khi a hoặc b còn chứa x; tự áp dụng f(1) cho tổng *một số* hệ số không thích hợp.
+        <p>Những câu có nhãn “hỗ trợ mở rộng” hoặc “chuyên sâu tự chọn” không thuộc Core. Hãy nắm chắc bậc 4–5 và ứng dụng xấp xỉ trước.</p>
 
 === "Lỗi thường gặp"
+
+    **Lỗi hay gặp.** Nhầm k và n-k; bỏ hệ số b^k; quên dấu âm với số mũ lẻ; đọc hệ số x^r sai khi a hoặc b còn chứa x; tự áp dụng f(1) cho tổng *một số* hệ số không thích hợp.
 
     <span data-thpt-help-id="D6-G10-B25-01" hidden></span>
 

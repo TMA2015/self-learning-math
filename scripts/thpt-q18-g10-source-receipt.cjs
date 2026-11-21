@@ -1232,6 +1232,40 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    return current;
   }
  }
+ if(name==="B25"){
+  const rPath=path.join(root,"prototypes/thpt/ux795/G10_CHVIII_B25_NEWTON_TREE_APPLICATION_Q18_R01_20261121.md");
+  if(fs.existsSync(rPath)){
+   const r=fs.readFileSync(rPath,"utf8"),field=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+   assert.equal(field("R01_PREVIOUS_SOURCE_BLOB"),blobs[1],
+     "B25 R01 must extend immutable published old source Git SHA");
+   const next=field("R01_CORRECTED_SOURCE_BLOB");
+   assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==blobs[1],"B25 R01 source SHA invalid");
+   for(const marker of ["G10-CHVIII-B25-NEWTON-TREE-APPLICATION-Q18-R01-20261121",
+    "DELTA_C_ACADEMIC_MATERIAL","G2_AFFECTED_SCOPE_P0=0_P1=0",
+    "INDEPENDENT_NOTEBOOKLM_REVIEW_NOT_CLAIMED","OWNER_P2_PENDING"]){
+    assert(r.includes(marker),"B25 Q18 receipt incomplete: "+marker);
+   }
+   const full=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-25.md"));
+   const actual=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+full.length+"\0")).update(full).digest("hex");
+   assert.equal(actual,next,"B25 exact source/receipt Git SHA mismatch");
+   const s=full.toString("utf8");
+   assert(s.includes("G10_B25_NEWTON_BRANCH_TREE_R01.svg")&&
+     s.includes("G10_B25_PASCAL_TRIANGLE_R02.svg")&&
+     s.includes("2.5. Dùng khai triển để ước lượng và kiểm sai số")&&
+     (s.match(/class="thpt-g10-example-solution"/g)||[]).length===6&&
+     !s.includes("Lộ trình chính thức của SGK")&&!s.includes("Vì sao chọn cách này"),
+    "B25 S1/PED source contract missing");
+   const svg=fs.readFileSync(path.join(root,"docs/assets/images/thpt/G10_B25_NEWTON_BRANCH_TREE_R01.svg"));
+   const svgActual=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+svg.length+"\0")).update(svg).digest("hex");
+   assert.equal(svgActual,field("FIGURE_GIT_BLOB"),"B25 Q07 image must match signed source");
+   for(const id of ["09","10","11","12"]){
+    assert(s.includes('data-thpt-first-try-id="THPT-G10-CHVIII-TRY'+id+'"')&&
+      s.includes('data-thpt-help-id="HELP-G10-CHVIII-TRY'+id+'"'),
+      "B25 canonical TRY/HELP ID changed: "+id);
+   }
+   return next;
+  }
+ }
  return blobs[1];
 }
 function expectedG10KnowledgeBlob(lesson,legacy){
