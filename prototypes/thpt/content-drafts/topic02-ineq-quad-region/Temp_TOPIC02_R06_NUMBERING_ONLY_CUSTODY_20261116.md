@@ -1,3 +1,6 @@
+<!-- MASTER974_TOPIC02_FULL_AUTHOR_Q18_CURRENT_20261121 -->
+**Current AUTHORING full-scope Q18 author self-verification:** `SLM-THPT-QUALITY-ONE v3.2.0`, learner source `d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5`, Q18 receipt `c1766ba52a80be61b9f8fd2124d0116605f74b92`; current 16 outcome Knowledge, 38 original canonical Practice, 4 Written rubrics, 3 math-valid SVGs and 16 public selfchecks examined on the source. 5 verified quality defects #977 fixed. One canonical path, no new receipt or independent NotebookLM review. Prior scoped/history entries below are retained only as chronology; source-lock review is not a RELEASE approval.
+
 <!-- MASTER974_TOPIC02_D6_SELFCHECK_CURRENT_20261121 -->
 **CURRENT AUTHORING #974:** same one canonical learner R06, Git blob `d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5`; targeted author Q18 `4c9fbec5d319806f76dd5757af0c6dba77189aed`. Two fixed O04/O06 math/PED errors and now 16/16 specifically routed Kiểm lỗi, 16→Practice selfcheck voluntary mapping and one SGK source footer. Original 38 public canonical items/4 Written rubric/3 SVG unchanged. No independent reviewer or RELEASE. Old snapshot SHA below remains for history.
 
@@ -9,9 +12,9 @@
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
 CURRENT_SOURCE_BLOB: d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 4c9fbec5d319806f76dd5757af0c6dba77189aed
+CURRENT_Q18_RECEIPT_BLOB: c1766ba52a80be61b9f8fd2124d0116605f74b92
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
 PREVIOUS_AUTHOR_METADATA_BLOB: d6b967c73272d57664b070b4163fa652deddfdaf
