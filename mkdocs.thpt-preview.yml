@@ -237,6 +237,7 @@ nav:
       - Tự luận Toán 11 · Chương IX B31–B33: thpt-preview/thu-vien/tu-luan-g11-chuong-ix.md
       - Bài mẫu tiêu biểu: thpt-preview/thu-vien/bai-mau-tieu-bieu.md
       - Bản đồ kỹ năng: thpt-preview/thu-vien/ban-do-ky-nang.md
+  - Math Lab: thpt-preview/math-lab/index.md
   - Tiến độ học tập: thpt-preview/tien-do.md
   - Hướng dẫn: thpt-preview/huong-dan.md
 # MkDocs INHERIT replaces lists, so keep the inherited THCS design assets,
@@ -262,6 +263,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r19-semantic.css
   - assets/stylesheets/math-knowledge-r21-final-polish.css
   - assets/stylesheets/math-knowledge-r30-consistency.css
+  - assets/stylesheets/math-lab-library-v1.css
   - assets/stylesheets/thpt-r4-preview.css
   - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
   - assets/stylesheets/thpt-g12-golden-formative-modal-v1.css
@@ -337,6 +339,7 @@ extra_javascript:
   - assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js
   - assets/javascripts/thpt-golden-runtime-v1.js
   - assets/javascripts/thpt-r4-preview.js
+  - assets/javascripts/math-lab-library-v1.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-supplement-p99-p109-r00.js

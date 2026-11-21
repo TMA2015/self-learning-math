@@ -1,0 +1,257 @@
+<!doctype html>
+<!-- MODEL_ID: SLM-TOP11-RIEMANN-01; DEV_BASE: Temp_I798_FINAL_06_RIEMANN.html; SOURCE_SCOPE: AUTHORING_STANDALONE; QUALITY: ORIGINAL_CHROMIUM_SELF_QA_ONLY; NO_MASTERY -->
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Tổng Riemann cho y = x² | G Learning</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#f5f9f8;color:#203b47;}
+*{box-sizing:border-box}
+body{margin:0;padding:18px 12px 40px}
+.page{max-width:1180px;margin:0 auto}
+.hero{padding:21px 24px 19px;margin-bottom:16px;background:#fff;border:1px solid #d2e6e4;border-radius:18px;box-shadow:0 3px 16px #12394809}
+.kicker{font-weight:750;letter-spacing:.1em;text-transform:uppercase;color:#266c62;font-size:.77rem;margin:0 0 8px}
+.hero h1{font-size:clamp(1.35rem,3vw,2rem);line-height:1.25;margin:0 0 9px}
+.hero p{line-height:1.55;margin:0;color:#415a66}
+.question{margin:14px 0;padding:15px 17px;background:#eaf6f1;border-left:4px solid #198269;border-radius:10px;line-height:1.55}
+.footer{margin:17px 4px 0;font-size:.88rem;line-height:1.55;color:#48616c}
+.footer details{padding:10px 12px;background:#fff;border:1px solid #d2e6e4;border-radius:10px}
+.footer summary{cursor:pointer;font-weight:650}
+.footer p{margin:8px 0}
+@media (max-width:480px){body{padding:10px 8px 28px}.hero{padding:15px 14px}.question{padding:12px}.footer{font-size:.84rem}}
+
+/* Scoped, light UI. No global CSS/Golden UI mutation. */
+.i798r8{container-type:inline-size;box-sizing:border-box;background:white;color:#263e50;font:16px/1.5 system-ui,'Segoe UI',sans-serif}
+.i798r8 *{box-sizing:border-box}
+.i798r8 .card{border:1px solid #c8dce5;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 3px 12px #1b48690c}
+.i798r8 h2{font-size:1.22rem;line-height:1.35;background:#eaf6fa;margin:0;padding:14px 16px}
+.i798r8 .intro{font-size:.94rem;margin:12px 16px;color:#4c6677}
+.i798r8 .layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(240px,1fr);gap:14px;padding:14px}
+.i798r8 .visual{min-width:0}
+.i798r8 figure{margin:0;border:1px solid #c9dce7;border-radius:12px;overflow:hidden}
+.i798r8 canvas{width:100%;height:310px;display:block;touch-action:pan-y}
+.i798r8 figcaption{background:#f4f9fc;padding:9px 11px;color:#536b79;font-size:.88rem}
+.i798r8 .status{margin:12px 0;background:#e8f7ef;border-left:4px solid #278668;border-radius:8px;padding:10px 12px;font-weight:650}
+.i798r8 .notice{font-size:.87rem;color:#4c6677}
+.i798r8 table{width:100%;border-collapse:collapse;font-size:.88rem}
+.i798r8 th,.i798r8 td{border:1px solid #cbdde7;padding:7px 8px;text-align:left;vertical-align:top}
+.i798r8 th{background:#f5f9fc;width:44%}
+.i798r8 fieldset{min-width:0;border:1px solid #cbdce5;border-radius:11px;padding:12px;margin:0}
+.i798r8 legend{font-weight:700;padding:0 5px}
+.i798r8 .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.i798r8 label{display:flex;flex-direction:column;gap:4px;font-size:.9rem;font-weight:600}
+.i798r8 input,.i798r8 select,.i798r8 button{font:inherit;color:#28485a}
+.i798r8 input,.i798r8 select{border:1px solid #92b0c2;background:#fff;border-radius:9px;width:100%;min-width:0;height:44px;padding:7px}
+.i798r8 button{border:1px solid #9bbdcc;background:#fff;border-radius:9px;min-height:44px;padding:8px 11px;font-weight:650;cursor:pointer;flex:1 1 130px}
+.i798r8 button:hover{background:#eaf6fb}
+.i798r8 .actions{display:flex;flex-wrap:wrap;gap:7px;margin:11px 0}
+.i798r8 .error{color:#a33225;font-weight:700;min-height:24px;font-size:.9rem}
+.i798r8 [aria-invalid=true]{border:2px solid #b43b2b}
+.i798r8 :is(input,select,button):focus-visible{outline:3px solid #205a9b;outline-offset:2px}
+.i798r8 .info{font-size:.88rem;color:#526b7a}
+@container (max-width:700px){.i798r8 .layout{grid-template-columns:1fr}.i798r8 .controls{order:1}.i798r8 .visual{order:2}.i798r8 canvas{height:285px}}
+@container (max-width:370px){.i798r8 .layout{padding:8px}.i798r8 canvas{height:260px}.i798r8 .fields{gap:7px}.i798r8 th,.i798r8 td{padding:5px}}
+
+/* R08 source-custody note: neutral, responsive, separate from numeric result tables. */
+.i798r8 .sourceNote{font-size:.93rem;line-height:1.55;background:#f8fbf8;border-left:4px solid #528e7d;border-radius:7px;padding:11px 13px;margin:11px 0 17px;color:#25473e}
+.i798r8 .sourceNote code{overflow-wrap:anywhere;font-size:.78rem}
+</style></head>
+<body><main class="page"><header class="hero"><p class="kicker">G Learning · Mô hình Toán tương tác</p>
+<h1>Tổng Riemann cho y = x²</h1><p>Tự dự đoán → thao tác → quan sát → tự giải thích.</p></header>
+<section class="question" aria-label="Thử trước khi xem kết quả"><strong>Hãy thử:</strong> Bắt đầu trên [1;2], rồi thay cách chọn điểm mẫu và tăng n. Trước khi bấm, hãy dự đoán tổng sẽ cao hay thấp hơn tích phân chính xác.</section>
+<div id="model" aria-label="Mô hình tương tác"></div>
+<footer class="footer"><details><summary>Điều kiện áp dụng và nguồn học thuật</summary><p>Tổng hữu hạn là xấp xỉ diện tích, không phải định nghĩa tích phân được nêu trong SGK. Tích phân chính xác của x² là (b³−a³)/3; với [1;2] bằng 7/3.</p>
+<p>Đây là mô hình học tập độc lập, không phải bài kiểm tra chính thức; không ghi điểm hoặc lưu dữ liệu học sinh. Việc đưa vào website cần nghiệm thu tích hợp riêng.</p></details></footer></main>
+<script>/* Issue #798 R08 SOURCE-BOUND RESEARCH, standalone mathematical core; no I/O or DOM. */
+(function (global) {
+  'use strict';
+  const finite=(xs)=>{if(!xs.every(x=>typeof x==='number'&&Number.isFinite(x))) throw new TypeError('Chỉ nhận số hữu hạn.');};
+  function parabola({a,h,k,x}) {
+    finite([a,h,k,x]);
+    const y=a*(x-h)*(x-h)+k;
+    if(!Number.isFinite(y)) throw new RangeError('Kết quả vượt miền số máy.');
+    if(a===0) return {kind:'constant',formula:'constant',value:y,vertex:null,axis:null,range:{type:'singleton',bound:k},direction:'none',roots:k===0?{kind:'all',xs:null}:{kind:'none',xs:[]},symmetry:null};
+    const q=-k/a;
+    const roots=q>0?{kind:'two',xs:[h-Math.sqrt(q),h+Math.sqrt(q)]}:q===0?{kind:'one',xs:[h]}:{kind:'none',xs:[]};
+    return {kind:'quadratic',value:y,vertex:{x:h,y:k},axis:h,range:{type:a>0?'min':'max',bound:k},direction:a>0?'up':'down',roots,symmetry:{left:a*(x-h)*(x-h)+k,right:a*(2*h-x-h)*(2*h-x-h)+k}};
+  }
+  function riemann({a,b,n,mode}){
+    finite([a,b,n]);
+    if(!(b>a)) throw new RangeError('Phải có a < b.');
+    if(!Number.isInteger(n)||n<1||n>200) throw new RangeError('Số khoảng n phải là số nguyên từ 1 đến 200.');
+    if(!['left','right','mid'].includes(mode)) throw new RangeError('Cách chọn mẫu không hợp lệ.');
+    const dx=(b-a)/n,off=mode==='left'?0:mode==='right'?1:.5;
+    const rectangles=[];let sum=0,compensation=0;
+    for(let i=0;i<n;i++){
+      const start=a+i*dx, end=a+(i+1)*dx,x=a+(i+off)*dx;
+      const height=x*x,area=height*dx;
+      // Kahan accumulation to make cancellation and rounding easier to inspect.
+      const term=area-compensation, interim=sum+term;
+      compensation=(interim-sum)-term;sum=interim;
+      rectangles.push({i:i+1,start,end,x,height,area});
+    }
+    const exact=(b*b*b-a*a*a)/3;
+    // Quadratic closed-form rectangle-rule error. This is specific to f(x)=x².
+    const theorError=mode==='mid'?-(b-a)*dx*dx/12:
+       (mode==='left'?-1:1)*(b*b-a*a)*dx/2+(b-a)*dx*dx/6;
+    if(![dx,sum,exact,theorError].every(Number.isFinite))throw new RangeError('Kết quả không hữu hạn.');
+    return {function:'x²',a,b,n,mode,delta:dx,rectangles,sum,exact,error:sum-exact,absError:Math.abs(sum-exact),theorError,errorCheck:sum-exact-theorError,signedArea:false,nonnegativeArea:true};
+  }
+  Object.defineProperty(global,'I798MathR08',{value:Object.freeze({parabola,riemann}),configurable:false,writable:false});
+})(window);
+</script><script>/* Issue #798 R08 source-bound research module. Independent per-instance Canvas and native controls. */
+(function (g) {
+'use strict';
+const MathCore=g.I798MathR08;if(!MathCore)throw new Error('I798MathR08 is required first.');
+let serial=0,active=0;
+const defaults={parabola:()=>({a:1,h:1,k:-2,x:2}),riemann:()=>({a:1,b:2,n:8,mode:'mid'})};
+const bounds={a:[-3,3,.5],h:[-3,3,.5],k:[-3,3,.5],x:[-5,5,.5],b:[-3,3,.5],n:[1,80,1]};
+const copy=s=>JSON.parse(JSON.stringify(s));
+const fmt=n=>Number.isFinite(n)?Number(n.toPrecision(7)).toString().replace(/-/g,'−').replace(/\./g,','):'Không hữu hạn';
+const htmlParabola=`<section class="card" aria-label="Mô hình biến đổi parabol"><h2>Biến đổi đồ thị: y = a(x − h)² + k</h2>
+<p class="intro">Dự đoán: a đổi dấu thì đồ thị quay hướng nào? h và k dịch đỉnh ra sao? Đặt a = 0 có còn là parabol không?</p>
+<details class="sourceNote"><summary>Nguồn và giới hạn của mô hình</summary><p>Tham chiếu Chuyên đề Hàm số M3, các outcome O06–O08. Điều kiện <strong>a ≠ 0</strong> bắt buộc để gọi đồ thị là parabol; với a=0 chỉ còn hàm hằng. Mô hình trên toàn ℝ, không thay việc xét miền của bài toán.</p></details>
+<div class="layout"><div class="visual"><figure><canvas data-ref="plot" role="img" aria-label="Đồ thị hàm bậc hai hoặc hàm hằng; hãy đọc cùng thông tin tương đương trong bảng phía dưới."></canvas><figcaption>Đồ thị theo đúng hệ số, không thay a = 0 bằng số gần 0. Trục và đỉnh chỉ có khi a ≠ 0.</figcaption></figure>
+<p data-ref="status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+<table aria-label="Đối chiếu các đặc trưng hàm số"><tbody>
+<tr><th scope="row">Loại hàm</th><td data-ref="kind"></td></tr><tr><th scope="row">Đỉnh và trục</th><td data-ref="vertex"></td></tr><tr><th scope="row">Chiều mở và tập giá trị</th><td data-ref="range"></td></tr><tr><th scope="row">Nghiệm y = 0</th><td data-ref="roots"></td></tr><tr><th scope="row">Điểm đang xét</th><td data-ref="value"></td></tr><tr><th scope="row">Hai điểm đối xứng</th><td data-ref="symmetry"></td></tr></tbody></table></div>
+<div class="controls"><fieldset><legend>Điều chỉnh hệ số (phím ↑/↓)</legend><div class="fields">
+<label>a — độ mở và hướng<input type="number" data-field="a" min="-3" max="3" step="0.5"></label>
+<label>h — dịch ngang<input type="number" data-field="h" min="-3" max="3" step="0.5"></label>
+<label>k — dịch dọc<input type="number" data-field="k" min="-3" max="3" step="0.5"></label>
+<label>x — điểm cần tính<input type="number" data-field="x" min="-5" max="5" step="0.5"></label>
+</div></fieldset><p data-ref="error" class="error" role="alert"></p><div class="actions">
+<button type="button" data-preset="up">Mở lên</button><button type="button" data-preset="down">Mở xuống</button>
+<button type="button" data-preset="constant">a = 0</button><button type="button" data-preset="tangent">Một nghiệm kép</button>
+<button type="button" data-preset="two">Hai nghiệm</button><button type="button" data-preset="none">Không nghiệm thực</button>
+<button type="button" data-preset="reset">Đặt lại</button></div>
+<p class="info">Chỉ khi <strong>a ≠ 0</strong> đây mới là hàm bậc hai. Khi a = 0, y = k là hàm hằng: thay h không đổi đồ thị và không được gọi (h,k) là đỉnh parabol.</p></div></div></section>`;
+const htmlRiemann=`<section class="card" aria-label="Mô hình tổng Riemann"><h2>Tổng Riemann cho f(x) = x²</h2>
+<p class="intro">Bắt đầu như HĐ2 SGK Toán 12: y = x² trên [1,2]. Dự đoán tổng các hình chữ nhật thay đổi ra sao khi chọn điểm trái, phải, trung điểm và tăng n. Sau đó thử đoạn đi qua 0 để kiểm tra giới hạn dự đoán.</p>
+<aside class="sourceNote" aria-label="Giới hạn và nguồn học thuật" data-source-receipt="SBT12T2-B12-PRINT9-PDF8"><strong>Từ hình SGK đến mô hình:</strong> Trong Bài 12, SGK dùng y=x² trên [1,2] để tìm diện tích dưới đồ thị. Hình chữ nhật ở đây là <em>xấp xỉ</em>; tích phân chính xác được xác định qua hiệu nguyên hàm F(b) − F(a).<details><summary>Đọc nguồn, vị trí bài và giới hạn</summary><p>Bài 12 HĐ2, SGK Toán 12 Tập Hai, hoạt động y=x² trên [1,2]; văn bản PDF đã đối chiếu, nhưng cần xác nhận lại ảnh trang gốc khi tích hợp. SBT Toán 12 Tập Hai, Bài 12, trang in 9/PDF 8, bản scan gốc đã kiểm: tích phân qua nguyên hàm và ý nghĩa diện tích với hàm không âm. Vị trí nghiên cứu đề xuất: Kiến thức B12, G12-CHIV-B12-O04 (diện tích), liên hệ O01 (hiệu nguyên hàm). Chưa có quyết định tích hợp hay Academic/PED PASS độc lập; không tạo item_id mới và không thay định nghĩa bằng tổng hữu hạn.</p></details></aside>
+<div class="layout"><div class="visual"><figure><canvas data-ref="plot" role="img" aria-label="Các hình chữ nhật xấp xỉ diện tích dưới đường y bằng x bình phương. Dữ liệu tương đương đọc ở bảng."></canvas><figcaption>Mỗi hình chữ nhật có chiều rộng Δx; chiều cao f(điểm mẫu). Đây là đồ thị 2D xấp xỉ <em>diện tích</em> vì x² ≥ 0.</figcaption></figure>
+<p data-ref="status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+<table aria-label="So sánh tổng Riemann và tích phân"><tbody>
+<tr><th scope="row">Độ rộng Δx</th><td data-ref="delta"></td></tr>
+<tr><th scope="row">Tổng hình chữ nhật</th><td data-ref="sum"></td></tr>
+<tr><th scope="row">Tích phân chính xác</th><td data-ref="exact"></td></tr>
+<tr><th scope="row">Sai số (tổng − tích phân)</th><td data-ref="errorValue"></td></tr>
+<tr><th scope="row">Giới hạn của cách tính</th><td data-ref="limit"></td></tr>
+</tbody></table><p class="info">Một số hình chữ nhật mẫu, không phải toàn bộ khi n lớn:</p><table aria-label="Mẫu các hình chữ nhật"><thead><tr><th scope="col">Khoảng</th><th scope="col">Điểm mẫu</th><th scope="col">Diện tích</th></tr></thead><tbody data-ref="samples"></tbody></table></div>
+<div class="controls"><fieldset><legend>Chia đoạn và chọn mẫu</legend><div class="fields">
+<label>a — cận trái<input type="number" data-field="a" min="-3" max="3" step="0.5"></label>
+<label>b — cận phải<input type="number" data-field="b" min="-3" max="3" step="0.5"></label>
+<label>n — số khoảng<input type="number" data-field="n" min="1" max="80" step="1"></label>
+<label>Điểm mẫu<select data-field="mode"><option value="left">Đầu trái</option><option value="right">Đầu phải</option><option value="mid">Trung điểm</option></select></label>
+</div></fieldset><p data-ref="error" class="error" role="alert"></p><div class="actions">
+<button type="button" data-preset="left">Lấy đầu trái</button><button type="button" data-preset="right">Lấy đầu phải</button><button type="button" data-preset="mid">Lấy trung điểm</button>
+<button type="button" data-preset="dense">Tăng n lên 40</button><button type="button" data-preset="cross">Đoạn qua x = 0</button><button type="button" data-preset="sgk">Về HĐ2 SGK [1,2]</button><button type="button" data-preset="reset">Đặt lại</button></div>
+<p class="info">Tổng Riemann là <strong>Σ f(xᵢ*) Δx</strong>. Trên đoạn [1,2], x² đồng biến: tổng lấy đầu trái thấp hơn tích phân và lấy đầu phải cao hơn. Nhưng trên đoạn đi qua 0, x² không đơn điệu; không suy rộng so sánh trái/phải đó. Tích phân chính xác dùng nguyên hàm x³/3, không do mô hình đoán.</p></div></div></section>`;
+function validate(type,s){
+  if(!s||typeof s!=='object')throw new TypeError('Thiếu trạng thái.');
+  const out={},keys=type==='parabola'?['a','h','k','x']:['a','b','n'];
+  for(const key of keys){const v=s[key],B=bounds[key]||[-3,3,.5];
+    if(typeof v!=='number'||!Number.isFinite(v)||v<B[0]-1e-10||v>B[1]+1e-10||Math.abs(v/B[2]-Math.round(v/B[2]))>1e-8)
+      throw new RangeError(`${key} phải ở [${B[0]}; ${B[1]}], bước ${B[2]}.`);
+    out[key]=B[2]===1?Math.round(v):Math.round(v*2)/2;
+  }
+  if(type==='riemann'){
+    if(!(out.b>out.a))throw new RangeError('Cần a < b; phép lấy tổng trên đoạn có độ dài dương.');
+    if(!['left','right','mid'].includes(s.mode))throw new RangeError('Điểm mẫu chưa hợp lệ.');out.mode=s.mode;
+  }
+  return out;
+}
+function getFrame(canvas){let r=canvas.getBoundingClientRect(),w=r.width,h=r.height;if(w<30||h<30)return null;const dpr=Math.min(g.devicePixelRatio||1,2);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);let ctx=canvas.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);return {ctx,w,h};}
+function drawParabola(frame,s,res){if(!frame)return;let{ctx,w,h}=frame;
+  const L=40,R=w-15,T=14,B=h-32;
+  let xmin=Math.min(s.h-4,-.3),xmax=Math.max(s.h+4,.3);
+  const value=x=>s.a*(x-s.h)**2+s.k;
+  let ys=Array.from({length:101},(_,i)=>value(xmin+(xmax-xmin)*i/100));ys.push(0);
+  let ymin=Math.min(...ys),ymax=Math.max(...ys),pad=Math.max(1,(ymax-ymin)*.13);ymin-=pad;ymax+=pad;
+  const X=x=>L+(x-xmin)*(R-L)/(xmax-xmin),Y=y=>B-(y-ymin)*(B-T)/(ymax-ymin);
+  ctx.save();ctx.strokeStyle='#dbe9f1';ctx.lineWidth=1;
+  for(let i=-5;i<=5;i++){if(i>=xmin&&i<=xmax){ctx.beginPath();ctx.moveTo(X(i),T);ctx.lineTo(X(i),B);ctx.stroke();}}
+  for(let i=Math.ceil(ymin);i<=Math.floor(ymax)&&i<=60;i++){if(Math.abs(i)<=60){ctx.beginPath();ctx.moveTo(L,Y(i));ctx.lineTo(R,Y(i));ctx.stroke();}}
+  ctx.strokeStyle='#8aa5b4';ctx.lineWidth=1.4;
+  if(xmin<=0&&0<=xmax){ctx.beginPath();ctx.moveTo(X(0),T);ctx.lineTo(X(0),B);ctx.stroke();}
+  if(ymin<=0&&0<=ymax){ctx.beginPath();ctx.moveTo(L,Y(0));ctx.lineTo(R,Y(0));ctx.stroke();}
+  ctx.strokeStyle='#1476a7';ctx.lineWidth=3;ctx.beginPath();for(let i=0;i<=160;i++){const x=xmin+(xmax-xmin)*i/160,y=value(x);if(i===0)ctx.moveTo(X(x),Y(y));else ctx.lineTo(X(x),Y(y));}ctx.stroke();
+  if(res.kind==='quadratic'){
+    ctx.strokeStyle='#8a6b9a';ctx.setLineDash([4,4]);ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(X(s.h),T);ctx.lineTo(X(s.h),B);ctx.stroke();ctx.setLineDash([]);
+    ctx.fillStyle='#186f91';ctx.beginPath();ctx.arc(X(s.h),Y(s.k),5,0,Math.PI*2);ctx.fill();
+    ctx.font='12px system-ui';ctx.fillText('Đỉnh ('+fmt(s.h)+'; '+fmt(s.k)+')',Math.min(R-92,Math.max(L+4,X(s.h)+7)),Math.max(T+12,Y(s.k)-8));
+  }
+  const vx=X(s.x),vy=Y(value(s.x));if(vx>=L&&vx<=R&&vy>=T&&vy<=B){ctx.beginPath();ctx.arc(vx,vy,5,0,2*Math.PI);ctx.strokeStyle='#c3762e';ctx.lineWidth=3;ctx.stroke();}
+  for(const r of res.roots.xs||[]){let xx=X(r),yy=Y(0);if(xx>=L&&xx<=R){ctx.fillStyle='#9b4e9b';ctx.beginPath();ctx.arc(xx,yy,4,0,2*Math.PI);ctx.fill();}}
+  ctx.font='11px system-ui';ctx.fillStyle='#506978';ctx.fillText('x: '+fmt(xmin)+' … '+fmt(xmax),L,B+17);ctx.fillText('y',L+7,T+12);ctx.restore();
+}
+function drawRiemann(frame,s,res){if(!frame)return;let{ctx,w,h}=frame,L=41,R=w-13,T=14,B=h-34;
+  const ymin=0,ymax=Math.max(s.a*s.a,s.b*s.b,.5)*1.16;
+  const X=x=>L+(x-s.a)*(R-L)/(s.b-s.a),Y=y=>B-y*(B-T)/ymax;
+  ctx.save();ctx.strokeStyle='#d9e8f1';ctx.lineWidth=1;for(let i=0;i<=4;i++){let yy=T+(B-T)*i/4;ctx.beginPath();ctx.moveTo(L,yy);ctx.lineTo(R,yy);ctx.stroke();}
+  for(const r of res.rectangles){const x0=X(r.start),x1=X(r.end),top=Y(r.height);ctx.fillStyle='rgba(41,126,162,.19)';ctx.fillRect(x0,top,x1-x0,B-top);ctx.strokeStyle='rgba(42,121,158,.65)';ctx.lineWidth=Math.max(.35,Math.min(1.25,(x1-x0)/6));ctx.strokeRect(x0,top,x1-x0,B-top);}
+  ctx.strokeStyle='#db812f';ctx.lineWidth=3;ctx.beginPath();for(let i=0;i<=180;i++){const x=s.a+(s.b-s.a)*i/180,y=x*x;if(i===0)ctx.moveTo(X(x),Y(y));else ctx.lineTo(X(x),Y(y));}ctx.stroke();
+  ctx.strokeStyle='#7996a9';ctx.beginPath();ctx.moveTo(L,B);ctx.lineTo(R,B);ctx.stroke();
+  if(s.a<0&&s.b>0){ctx.setLineDash([4,4]);ctx.beginPath();ctx.moveTo(X(0),T);ctx.lineTo(X(0),B);ctx.stroke();ctx.setLineDash([]);}
+  ctx.fillStyle='#4c6577';ctx.font='12px system-ui';ctx.fillText('a='+fmt(s.a),L,B+19);ctx.fillText('b='+fmt(s.b),R-48,B+19);ctx.fillText('y=x²',L+4,T+13);ctx.restore();
+}
+const parabolaPresets={up:{a:1,h:1,k:-2,x:2},down:{a:-1,h:1,k:2,x:2},constant:{a:0,h:2,k:1,x:0},tangent:{a:1,h:1,k:0,x:1},two:{a:1,h:0,k:-2,x:1},none:{a:1,h:0,k:2,x:1},reset:defaults.parabola()};
+const riemannPresets={left:{a:1,b:2,n:8,mode:'left'},right:{a:1,b:2,n:8,mode:'right'},mid:{a:1,b:2,n:8,mode:'mid'},dense:{a:1,b:2,n:40,mode:'mid'},cross:{a:-2,b:2,n:8,mode:'left'},sgk:{a:1,b:2,n:8,mode:'mid'},reset:defaults.riemann()};
+function mount(host,{type='riemann',initialState,onChange}={}){
+  if(!host||host.nodeType!==1)throw new TypeError('Thiếu host HTML.');
+  if(!Object.prototype.hasOwnProperty.call(defaults,type))throw new RangeError('Loại mô hình không hợp lệ.');
+  let state=validate(type,initialState||defaults[type]()); // fail before touching DOM
+  let root=document.createElement('div');const id=++serial;root.className='i798r8';root.dataset.instance=String(id);
+  root.innerHTML=type==='parabola'?htmlParabola:htmlRiemann;host.appendChild(root);active++;
+  const q=k=>root.querySelector(`[data-ref="${k}"]`),fields=[...root.querySelectorAll('[data-field]')],canvas=q('plot');
+  let dead=false,last=null,observer=null;const unsub=[];
+  const listen=(el,ev,fn)=>{el.addEventListener(ev,fn);unsub.push(()=>el.removeEventListener(ev,fn));};
+  const guard=()=>{if(dead)throw new Error('Đã destroy mô hình.');};
+  const calc=s=>type==='parabola'?MathCore.parabola(s):MathCore.riemann(s);
+  function sync(force=false){for(const el of fields){if(force||document.activeElement!==el)el.value=String(state[el.dataset.field]);}}
+  function render(){if(dead)return false;last=calc(state);if(type==='parabola'){
+    drawParabola(getFrame(canvas),state,last);
+    q('kind').textContent=last.kind==='quadratic'?'Hàm bậc hai (a ≠ 0)':'Hàm hằng (a = 0), không phải parabol';
+    q('vertex').textContent=last.vertex?`(${fmt(state.h)}; ${fmt(state.k)}); x=${fmt(state.h)}`:'Không có đỉnh/trục parabol';
+    q('range').textContent=last.kind==='constant'?`Tập giá trị {${fmt(state.k)}}`:last.direction==='up'?`Mở lên; y ≥ ${fmt(state.k)}`:`Mở xuống; y ≤ ${fmt(state.k)}`;
+    q('roots').textContent=last.roots.kind==='all'?'Mọi số thực (y=0)':last.roots.kind==='none'?'Không có nghiệm thực':last.roots.xs.map(fmt).join(' ; ');
+    q('value').textContent=`f(${fmt(state.x)}) = ${fmt(last.value)}`;
+    q('symmetry').textContent=last.kind==='quadratic'?`f(h−1) = f(h+1) = ${fmt(state.a+state.k)}`:'Hàm hằng: mọi đầu vào đều có cùng giá trị.';
+    q('status').textContent=last.kind==='constant'?`a = 0: y = ${fmt(state.k)} là hàm hằng, h không làm đổi đồ thị.`:`a ${state.a>0?'>':'<'} 0: đồ thị mở ${state.a>0?'lên':'xuống'}, đỉnh (${fmt(state.h)}; ${fmt(state.k)}). ${last.roots.kind==='two'?'Có 2 giao điểm với Ox.':last.roots.kind==='one'?'Tiếp xúc Ox tại đỉnh.':'Không cắt Ox.'}`;
+  }else{
+    drawRiemann(getFrame(canvas),state,last);
+    q('delta').textContent=`(b−a)/n = ${fmt(last.delta)}`;
+    q('sum').textContent=`${fmt(last.sum)}`;
+    q('exact').textContent=`(b³−a³)/3 = ${fmt(last.exact)}`;
+    q('errorValue').textContent=`${fmt(last.error)}; độ lớn ${fmt(last.absError)}; theo công thức x²: ${fmt(last.theorError)}`;
+    const modeReason=state.mode==='mid'
+      ? 'Với riêng f(x)=x², tổng trung điểm LUÔN nhỏ hơn tích phân: E=−(b−a)Δx²/12.'
+      : state.mode==='left'
+        ? 'Với riêng f(x)=x², E trái=−(b²−a²)Δx/2+(b−a)Δx²/6; dấu sai số còn phụ thuộc đoạn [a;b].'
+        : 'Với riêng f(x)=x², E phải=(b²−a²)Δx/2+(b−a)Δx²/6; dấu sai số còn phụ thuộc đoạn [a;b].';
+    q('limit').textContent=modeReason+' Khi n→∞ với a,b cố định, sai số tiến về 0; không được suy ra độ lớn sai số giảm ở từng bước tăng n. Đối chiếu số và công thức trên.';
+    q('status').textContent=`${state.n} khoảng, mẫu ${state.mode==='left'?'đầu trái':state.mode==='right'?'đầu phải':'trung điểm'}, tổng ${fmt(last.sum)}, tích phân ${fmt(last.exact)}. ${last.sum>=last.exact?'Tổng đang lớn hơn hoặc bằng':'Tổng đang nhỏ hơn'} giá trị chính xác.`;
+    const tb=q('samples');tb.replaceChildren();const chosen=last.rectangles.length<=5?last.rectangles:[...last.rectangles.slice(0,2),...last.rectangles.slice(-2)];
+    chosen.forEach(d=>{const tr=document.createElement('tr');for(const val of [String(d.i),fmt(d.x),fmt(d.area)]){const td=document.createElement('td');td.textContent=val;tr.appendChild(td);}tb.appendChild(tr);});
+  }sync(false);return true;}
+  function update(s,notify=true){guard();const candidate=validate(type,s),out=calc(candidate);state=candidate;last=out;q('error').textContent='';fields.forEach(el=>el.removeAttribute('aria-invalid'));sync(true);render();if(notify&&typeof onChange==='function')onChange(copy(state));return true;}
+  function commit(){let candidate={};for(const el of fields){const key=el.dataset.field;candidate[key]=key==='mode'?el.value:el.value.trim()===''?NaN:Number(el.value);}try{update(candidate);}catch(e){
+    q('error').textContent=e.message;
+    fields.forEach(el=>el.removeAttribute('aria-invalid'));
+    const bad=/^([abhnkx]) phải/.exec(e.message);
+    const targets=bad?fields.filter(el=>el.dataset.field===bad[1]):
+      /Cần a < b/.test(e.message)?fields.filter(el=>['a','b'].includes(el.dataset.field)):fields;
+    targets.forEach(el=>el.setAttribute('aria-invalid','true'));
+  }}
+  fields.forEach(el=>listen(el,'change',commit));
+  root.querySelectorAll('button[data-preset]').forEach(el=>listen(el,'click',()=>{const key=el.dataset.preset;update(copy(type==='parabola'?parabolaPresets[key]:riemannPresets[key]));}));
+  if(typeof ResizeObserver==='function'){observer=new ResizeObserver(()=>{if(!dead)render();});observer.observe(canvas);}else listen(g,'resize',render);
+  render();
+  return Object.freeze({id,type,root,getState(){guard();return copy(state);},getResult(){guard();return copy(last);},setState(s){return update(s);},update(s){return update(s);},resize(){guard();return render();},destroy(){if(dead)return false;dead=true;unsub.forEach(off=>off());unsub.length=0;if(observer)observer.disconnect();observer=null;root.remove();active--;return true;}});
+}
+Object.defineProperty(g,'I798ModulesR08',{value:Object.freeze({mount,activeCount:()=>active}),writable:false,configurable:false});
+})(window);
+</script>
+<script>
+'use strict';
+const model=window.I798ModulesR08.mount(document.getElementById('model'),{type:'riemann'});
+Object.defineProperty(window,'__I798_FINAL_QA__',{value:Object.freeze({model,type:'riemann',name:'06_RIEMANN',version:'FINAL_CANDIDATE'}),configurable:false});
+</script></body></html>

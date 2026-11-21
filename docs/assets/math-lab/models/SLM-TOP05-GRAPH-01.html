@@ -1,0 +1,109 @@
+<!-- MODEL_ID: SLM-TOP05-GRAPH-01; ORIGINAL_GIT_BLOB: 249c433ba4fc58c8b6f88467ca003fb978d18c01; AUTHORING_CANDIDATE; FINAL_QA_PENDING -->
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M3 · Parabol và hai phép biến đổi đồ thị</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#183b54;background:#fff}
+*{box-sizing:border-box}body{margin:0;padding:12px}
+.lab{max-width:880px;margin:auto;border:1px solid #c8dee9;border-radius:15px;overflow:hidden;background:#fff}
+header{padding:15px 20px;background:#eaf5fb}h1{font-size:19px;margin:0 0 5px}
+p{margin:6px 0;line-height:1.6}
+main{padding:15px 20px}.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:8px 0 13px}
+label{font-size:14px;font-weight:650}
+input[type=range]{width:100%;min-height:28px;accent-color:#1687b4}
+.actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:10px}
+.actions label{display:flex;align-items:center;gap:6px;cursor:pointer}
+input[type=checkbox]{accent-color:#1687b4;width:16px;height:16px}
+button{font:inherit;background:#fff;border:1px solid #bad4e1;border-radius:9px;color:#174a66;padding:8px 11px;cursor:pointer}
+button:focus-visible{outline:2px solid #1687b4;outline-offset:2px}
+.canvaswrap{border:1px solid #deecf3;background:#fafdff;border-radius:12px;overflow:hidden}
+canvas{display:block;width:100%;height:360px}
+.summary{margin-top:10px;padding:11px 13px;border:1px solid #d5e9f2;background:#f5fafd;border-radius:11px;line-height:1.7;font-size:14px}
+.small{font-size:13px;color:#557185}
+@media(max-width:540px){body{padding:6px}header,main{padding:12px}.controls{grid-template-columns:1fr;gap:10px}.controls input[type=range]{width:100%;min-height:44px}h1{font-size:17px}canvas{height:315px}.actions{gap:9px}}
+
+/* SLM_MATH_LAB_GOLDEN_UI_TOKENS_R02_20261117: authoring CSS-only parity; math/JS unchanged */
+:root{--slm-bg:#fff;--slm-header:#eaf4fa;--slm-canvas:#fafdff;--slm-border:#c7dfe9;--slm-ink:#183b54;--slm-muted:#50697b;--slm-blue:#1687b4;--slm-green:#218f73;--slm-orange:#e9922a;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+body{background:var(--slm-bg)!important;color:var(--slm-ink)!important;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;font-size:16px!important;line-height:1.6!important}
+main,.lab,.d5-card,.d5-box{background:#fff!important;border-color:var(--slm-border)!important}
+header,.d5-top,.d5-head{background:var(--slm-header)!important}
+h1{font-size:clamp(1.3rem,2.5vw,1.7rem)!important;line-height:1.3!important;color:var(--slm-ink)!important}
+h2{font-size:1.1rem!important;line-height:1.35!important;color:var(--slm-ink)!important}
+label,.control label,.d5-control label,.d5-controls label{color:var(--slm-ink)!important;font-size:1rem!important}
+small,.muted,.small,.sub,.d5-note{color:var(--slm-muted)!important}
+button,select{font:inherit;min-height:42px;background:var(--slm-header)!important;color:var(--slm-ink)!important;border:1px solid var(--slm-border)!important;border-radius:10px!important}
+input[type=range],input[type=checkbox],input[type=radio]{accent-color:var(--slm-blue)!important}
+input[type=range]{min-height:32px}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--slm-orange)!important;outline-offset:2px!important}
+canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)!important}
+.canvaswrap,.d5-stage,.d5-graph,.pane,article,.field,.box,.panel,section{border-color:var(--slm-border)!important}
+.summary,.d5-results,.output,.result,.answer,.stats,.field{background:var(--slm-canvas)!important}
+</style></head><body>
+<section class="lab" aria-label="Mô hình Parabol và trị tuyệt đối">
+<header><h1>Parabol và hai phép biến đổi đồ thị</h1>
+<p>Quan sát từng phép biến đổi trước khi bật cùng lúc. Trị tuyệt đối <strong>bên ngoài</strong> thay đổi đầu ra; trị tuyệt đối <strong>bên trong</strong> thay đổi đầu vào.</p></header>
+<main>
+<div class="controls">
+<div><label for="a">Hệ số a: <output id="oa">1</output></label><input id="a" type="range" min="-2" max="2" step="0.1" value="1"></div>
+<div><label for="b">Hệ số b: <output id="ob">−4</output></label><input id="b" type="range" min="-4" max="4" step="0.1" value="-4"></div>
+<div><label for="c">Hệ số c: <output id="oc">3</output></label><input id="c" type="range" min="-4" max="4" step="0.1" value="3"></div>
+</div>
+<div class="actions">
+<label><input id="absOut" type="checkbox"> <span style="color:#126c94">y = |f(x)|</span></label>
+<label><input id="absIn" type="checkbox"> <span style="color:#1b795d">y = f(|x|)</span></label>
+<button id="reset" type="button">Đặt lại</button>
+</div>
+<p class="small" id="guide" aria-live="polite">Bước 1: chỉ nhìn đường xám f(x). Trước khi bật đường xanh, hãy đoán điểm nào thay đổi khi lấy |f(x)| và điểm nào đối xứng khi dùng f(|x|). Bước 2: bật từng ô, quan sát rồi giải thích.</p>
+<div class="canvaswrap"><canvas id="graph" role="img" aria-label="Đồ thị f(x), giá trị tuyệt đối đầu ra và giá trị tuyệt đối đầu vào. Đọc chú giải văn bản ở bên dưới." height="360" width="760"></canvas></div>
+<div class="summary" id="summary" role="status" aria-live="polite"></div>
+<p class="small">Đường xám: f(x). Đường xanh dương: |f(x)|. Đường xanh lá: f(|x|). Nét vẽ thống nhất; không tô những mảng màu đặc. Cửa sổ hiển thị x từ −4 đến 4; thang tung độ tự điều chỉnh để không cắt các đường trong phạm vi này. Các nhánh vẫn tiếp tục ngoài khoảng x đang vẽ.</p>
+<p class="small">Đây là hoạt động công khai để hiểu bài, không phải bài Tự kiểm tra và không ghi điểm thành thạo.</p>
+</main></section>
+<script>
+(()=>{"use strict";
+const ids=["a","b","c"],el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
+const canvas=document.getElementById("graph"),ctx=canvas.getContext("2d");
+const summary=document.getElementById("summary"),out=document.getElementById("absOut"),inside=document.getElementById("absIn");
+const xmin=-4,xmax=4;
+function nice(v){const n=Math.round(v*1000)/1000;return String(Object.is(n,-0)?0:n).replace("-","−").replace(".",",");}
+function coef(){return ids.map(id=>Number(el[id].value));}
+function f(a,b,c,x){return (a*x+b)*x+c;}
+function draw(){
+ const [a,b,c]=coef(),w=canvas.clientWidth||760,h=canvas.clientHeight||360,dpr=Math.min(window.devicePixelRatio||1,2);
+ const values=[0];for(let j=0;j<=320;j++){const t=xmin+(xmax-xmin)*j/320,y=f(a,b,c,t);values.push(y,Math.abs(y),f(a,b,c,Math.abs(t)));}
+ const rawMin=Math.min(...values),rawMax=Math.max(...values),span=Math.max(6,rawMax-rawMin),padding=span*.12,ymin=rawMin-padding,ymax=rawMax+padding;
+ canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+ ctx.fillStyle="#fafdff";ctx.fillRect(0,0,w,h);
+ const left=57,right=w-17,top=18,bottom=h-33,plotW=right-left,plotH=bottom-top;
+ const X=x=>left+(x-xmin)/(xmax-xmin)*plotW,Y=y=>top+(ymax-y)/(ymax-ymin)*plotH;
+ ctx.lineWidth=1;ctx.strokeStyle="#e3edf3";ctx.font="12px system-ui,Arial";ctx.fillStyle="#557185";
+ for(let x=-4;x<=4;x++){const xx=X(x);ctx.beginPath();ctx.moveTo(xx,top);ctx.lineTo(xx,bottom);ctx.stroke();if(x%2===0)ctx.fillText(String(x),xx-4,bottom+18)}
+ for(let j=0;j<=6;j++){const y=ymin+(ymax-ymin)*j/6,yy=Y(y);ctx.beginPath();ctx.moveTo(left,yy);ctx.lineTo(right,yy);ctx.stroke();ctx.fillText(nice(y),3,yy+4)}
+ ctx.strokeStyle="#91a9ba";ctx.lineWidth=1.4;ctx.beginPath();ctx.moveTo(X(0),top);ctx.lineTo(X(0),bottom);ctx.moveTo(left,Y(0));ctx.lineTo(right,Y(0));ctx.stroke();
+ ctx.save();ctx.beginPath();ctx.rect(left,top,plotW,plotH);ctx.clip();
+ function curve(fn,color,width,dash){ctx.beginPath();ctx.strokeStyle=color;ctx.lineWidth=width;ctx.setLineDash(dash||[]);
+  const n=Math.max(250,Math.round(plotW));
+  for(let i=0;i<=n;i++){const x=xmin+(xmax-xmin)*i/n,y=fn(x),xx=X(x),yy=Y(y);if(i===0)ctx.moveTo(xx,yy);else ctx.lineTo(xx,yy);}ctx.stroke();ctx.setLineDash([]);
+ }
+ curve(x=>f(a,b,c,x),"#8196a8",2,[]);
+ if(out.checked)curve(x=>Math.abs(f(a,b,c,x)),"#1687b4",2.8,[]);
+ if(inside.checked)curve(x=>f(a,b,c,Math.abs(x)),"#218f73",2.8,[]);
+ ctx.restore();
+ ["a","b","c"].forEach((id,i)=>document.getElementById("o"+id).textContent=nice([a,b,c][i]));
+ let desc;if(Math.abs(a)<1e-9){desc=Math.abs(b)<1e-9?"a = 0 và b = 0: f là hàm hằng, không có đỉnh parabol.":"a = 0: f là hàm bậc nhất, không có đỉnh parabol; không được chia cho 2a.";}
+ else{const hx=-b/(2*a),ky=f(a,b,c,hx),delta=b*b-4*a*c;desc="Đỉnh parabol: ("+nice(hx)+"; "+nice(ky)+"). Δ = "+nice(delta)+". "+(delta>1e-8?"Có hai nghiệm thực phân biệt.":Math.abs(delta)<=1e-8?"Có nghiệm kép.":"Không có nghiệm thực.");}
+ const probe=f(a,b,c,2),negProbe=f(a,b,c,-2),outerNeg=Math.abs(negProbe),innerNeg=probe;
+ const expression=Math.abs(a)<1e-9?(Math.abs(b)<1e-9?"f(x) = "+nice(c):"f(x) = "+nice(b)+"x + ("+nice(c)+")"):"f(x) = "+nice(a)+"x² + ("+nice(b)+")x + ("+nice(c)+")";
+ let reveal="Chỉ hiện đồ thị gốc. Hãy dự đoán trước khi bật một trong hai phép biến đổi.";
+ if(out.checked && inside.checked)reveal="Tại x = −2: f(−2) = "+nice(negProbe)+"; |f(−2)| = "+nice(outerNeg)+" (phản chiếu qua trục Ox khi f<0), còn f(|−2|) = f(2) = "+nice(innerNeg)+" (phản chiếu NỬA PHẢI qua trục Oy). Hai kết quả có thể bằng nhau trong vài trường hợp, không phải hai phép biến đổi giống nhau.";
+ else if(out.checked)reveal="Đã bật |f(x)|: phần tung độ âm của f lật lên qua trục Ox. Tại x=−2, |f(−2)|="+nice(outerNeg)+". Hãy đoán f(|−2|)="+nice(innerNeg)+" rồi bật đường xanh lá.";
+ else if(inside.checked)reveal="Đã bật f(|x|): giữ nguyên nửa phải (x≥0), phản chiếu nửa phải sang x âm qua trục Oy, không giữ nửa trái gốc. Tại x=−2: f(|−2|)=f(2)="+nice(innerNeg)+". Hãy dự đoán |f(−2)| rồi bật đường xanh dương.";
+ summary.textContent=expression+". "+desc+" "+reveal;
+}
+let pending=false;function schedule(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;draw()});}
+for(const id of ids)el[id].addEventListener("input",schedule);
+out.addEventListener("change",schedule);inside.addEventListener("change",schedule);
+document.getElementById("reset").addEventListener("click",()=>{el.a.value=1;el.b.value=-4;el.c.value=3;out.checked=false;inside.checked=false;draw()});
+window.addEventListener("resize",schedule);draw();
+})();
+</script></body></html>
