@@ -47,13 +47,26 @@ for(const [lessonStr,info]of Object.entries(specs)){
  const expected=(n===19||n===20||n===21||n===22)?candidateG10KnowledgeBlob(n):row.candidate;
  assert.equal(blob(bytes),expected,name+" candidate Markdown differs from signed latest receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,name+" canonical current source router not signed");
+
+ // The owner-signed 21/11 metadata-only footer correction is a later
+ // source successor. Preserve the R01/R02 predecessor SHA and compare the
+ // latest SHA to the canonical Q18 router (which checks byte reconstruction).
+ const antirepeat=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_B19_B26_ONE_SOURCE_AND_SEMANTIC_BOX_Q18_DELTA_20261121.md"),"utf8");
+ const antirow=antirepeat.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(antirow.length,1,name+" needs one signed footer successor");
+ const transition=[...antirow[0].matchAll(/\x60([a-f0-9]{40})\x60/g)].map(x=>x[1]);
+ assert.equal(transition.length,2,name+" requires old and new Git SHA");
+ const [preFooter,finalFooter]=transition;
+ assert.equal(finalFooter,expected,name+" final source must match signed Q18 router");
+
  if(n===19){
   const latest=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVII_B19_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
   const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("PREVIOUS_B19_SOURCE_BLOB"),row.candidate,
    "B19 owner update must preserve published 13/11 receipt/source");
-  assert.equal(field("CANDIDATE_B19_SOURCE_BLOB"),expected,
+  assert.equal(field("CANDIDATE_B19_SOURCE_BLOB"),preFooter,
    "B19 current exact Git source must match new owner Q18 receipt");
  }
  if(n===20){
@@ -62,7 +75,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
   const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("PREVIOUS_B20_SOURCE_BLOB"),row.candidate,
    "B20 owner source must extend original signed S1/G10-CHVII receipt");
-  assert.equal(field("CANDIDATE_B20_SOURCE_BLOB"),expected,
+  assert.equal(field("CANDIDATE_B20_SOURCE_BLOB"),preFooter,
    "B20 new learner-first source must match Q18 signed Git blob");
  }
  if(n===21){
@@ -79,7 +92,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
   const f02=k=>fixed.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f02("PREVIOUS_B21_SOURCE_BLOB"),r01,
    "B21 display-math R02 must extend exact R01");
-  assert.equal(f02("CANDIDATE_B21_SOURCE_BLOB"),expected,
+  assert.equal(f02("CANDIDATE_B21_SOURCE_BLOB"),preFooter,
    "B21 canonical source must match exact R02 source SHA");
  }
  if(n===22){
@@ -88,7 +101,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
   const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("PREVIOUS_B22_SOURCE_BLOB"),row.candidate,
    "B22 must preserve signed original ChVII S1 source");
-  assert.equal(field("CANDIDATE_B22_SOURCE_BLOB"),expected,
+  assert.equal(field("CANDIDATE_B22_SOURCE_BLOB"),preFooter,
    "B22 authored Git blob must match signed owner Q18 receipt");
  }
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
