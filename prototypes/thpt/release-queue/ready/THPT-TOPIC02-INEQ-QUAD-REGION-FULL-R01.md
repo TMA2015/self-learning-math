@@ -1,3 +1,8 @@
+<!-- MASTER974_TOPIC02_D6_AND_SELFCHECK_CURRENT_20261121 -->
+**CURRENT AUTHORING CĐ02 #974:** same single canonical R06 learner source `d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5` (source commit `5944692c05c7ae651a42ede9afa752749a2edc08`); existing Q18 author self-receipt `4c9fbec5d319806f76dd5757af0c6dba77189aed`, metadata `261d0d978dcf733a24d8d3f68e6af926d7c244ed`, sole handoff V2 `e565d397c48df50ee065c25f3e2f2fe18f371821`. Two mathematically verified O04/O06 P1 corrections, 16/16 student-first `Kiểm lỗi` D6 routes, 16-question opt-in selfcheck→real Practice answer map, exactly one SGK source footer, unchanged 38 canonical item/math/rubric + original 3 SVG. Historical CONTENT_READY retains frozen signoffs; current changes self-verified at affected scope, **not yet full new 22-topic audit PASS**. #977 current ledger; no RELEASE/merge/deploy.
+
+---
+
 <!-- MASTER974_TOPIC02_SCOPE_DELTA_C_20261121 -->
 **CURRENT AUTHORING CĐ02 source correction:** One canonical R06 learner `3161436a92a450e17aaf5c6b53736f70d9d5bfa0`, source commit `85e00e7bd9516e1578e77f1a222c6242d5396bb0`. Two **actual** math/PED P1 defects fixed by ΔC: `TOP02-O04` double root has same sign on both sides, and `TOP02-O06` strict (>0) excludes roots (x=1,3). Corrected exactly those two paragraphs, with 38 canonical Practice, 4 Written rubrics, 16 public selfchecks and 3 SVG unchanged. Targeted signed author Q18 `08a67fa54b230a03422bc851a1d934aede189095`, metadata `da7632535fc6c71fca4eb05622292b88d3186de6`, one V2 handoff `d5e0e20301ff4347ba57bfd42252d019fed09286`. Inherited CONTENT_READY of original source snapshot is preserved; current ΔC AUTHOR_SELF_VERIFIED **only** O04/O06, overall MASTER #974 CĐ02 outcome audit remains in progress. #977 is active ledger, #865 archival. No RELEASE, merge/deploy.
 
@@ -13,18 +18,18 @@ HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 STATE: CONTENT_READY
-SOURCE_COMMIT: 85e00e7bd9516e1578e77f1a222c6242d5396bb0
+SOURCE_COMMIT: 5944692c05c7ae651a42ede9afa752749a2edc08
 AUTHOR_PR: 818
 CURRENT_PR: #818 Draft AUTHORING; no merge or deploy
 CATALOG_TOPIC_ID: CD02
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic02-ineq-quad-region/Temp_TOPIC02_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 3161436a92a450e17aaf5c6b53736f70d9d5bfa0
+ACADEMIC_SOURCE_BLOB: d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md (AUTHOR_SELF_QA only, not a new independent reviewer PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC02_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 08a67fa54b230a03422bc851a1d934aede189095
+REVIEW_RECEIPT_BLOB: 4c9fbec5d319806f76dd5757af0c6dba77189aed
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC02-INEQ-QUAD-REGION-FULL-R06_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: d5e0e20301ff4347ba57bfd42252d019fed09286
+AUTHOR_HANDOFF_BLOB: e565d397c48df50ee065c25f3e2f2fe18f371821
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL18_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: 6412d01a5d2c9b04c6f97d5b6a41c43e85d1c2df
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md
