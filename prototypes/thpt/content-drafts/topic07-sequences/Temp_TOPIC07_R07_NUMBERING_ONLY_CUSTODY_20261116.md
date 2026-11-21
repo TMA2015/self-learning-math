@@ -1,15 +1,19 @@
+<!-- TOP07_MASTER974_CURRENT_SOURCE_AND_Q18_CUSTODY_20261121 -->
+**CURRENT AUTHORING (one R07 learner + one source-custody record):** `prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md` Git blob `7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba` and **existing one current Q18** Git blob `737f3c09766f4c15b50ee05ce93bcf0bb375d861` under effective `SLM-THPT-QUALITY-ONE v3.2.0`. In original 18-outcome concept-first R07, real learner defects #977-022/-023/-024 now self-verified fixed: 18/18 voluntary FirstTry/D6 return to actual Practice, 18/18 public-replay question→existing Practice answer location after self-try, **one** SGK attribution footer (none scattered), stale R06-candidate hidden header corrected and labeled AUTHORING_ONLY/NOT_FOR_STUDENT_VIEW. Original 69 canonical math items/11 Written rubrics/3 SVG & 18 SelfCheck stems intact. Current affected-scoped Q18 AUTHOR_SELF_VERIFIED, no newly claimed independent NotebookLM verdict. Old Q18/source hashes in historical rows below remain frozen history, not new active source. No web RELEASE, RD1/Final Submit/Mastery, merge/deploy.
+
+---
 # CĐ7 R07 — AUTHORING numbering-only Q18 custody
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: b6074c8641963a296e3f990397eba685c968c6ea
+CURRENT_SOURCE_BLOB: 7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC07_R07_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: 270e1502c12d409817b283b7ee9a2e9bced5f9f4
+CURRENT_Q18_RECEIPT_BLOB: 737f3c09766f4c15b50ee05ce93bcf0bb375d861
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
 PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R06_AUTHORING_ONLY_CUSTODY_METADATA_20261115.md
 PREVIOUS_AUTHOR_METADATA_BLOB: 48199cd454a97c1a55719057d499da6c2162dd4b
-AUTHORING_STATUS: R07_FORMAL_KNOWLEDGE_TARGETED_Q18_AUTHOR_SELF_VERIFIED
+AUTHORING_STATUS: R07_MASTER974_18_OUTCOME_PED6_AND_PUBLIC_SELFCHECK_AUTHOR_SELF_VERIFIED
 RELEASE_AUTHORIZATION: NO
 
 Original A1–A7/SGK/outcome/item source matrix below is inherited unaltered; the learner snapshot formatting and Q18 source custody above are the only changes. The R07 prior numbering proof remains historical; current source adds three formal definitions (O01/O06/O11) and one summary after Knowledge, with unchanged canonical bank and Practice/Selfcheck. This is a scoped DELTA_C with new Q18 self-verification on source 8aeef9a0f0c30bed76f93bcf923fff57f8c00b04. Heading and item bank custody unchanged. No independent NotebookLM or RELEASE verdict.
