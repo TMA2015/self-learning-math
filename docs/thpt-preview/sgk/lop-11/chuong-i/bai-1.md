@@ -278,40 +278,91 @@
 
 === "Ví dụ"
 
-### Ví dụ 1.
+    ### 3.1. Ví dụ — Đổi đơn vị và tìm góc cùng tia cuối
 
-Đổi \(−150°\) sang radian: \(−150°×π/180°=−5π/6\); một đại diện đồng tia cuối trong \([0,2π)\) là \(7π/6\). Cần phân biệt “góc lượng giác −5π/6” (thể hiện chiều quay âm) với “vị trí cuối 7π/6” (chỉ xác định tia cuối).
+    **Đề bài.** Đổi (-150^circ) sang radian và tìm góc trong ([0;2pi)) cùng tia cuối.
 
-### Ví dụ 2.
+    **Phân tích.** Đổi đơn vị cho số đo có dấu; chỉ sau đó cộng trọn một vòng để tìm đại diện cùng tia cuối.
 
-Tại \(α=5π/6\), sin dương, cos âm vì góc phần tư II; \(sin(5π/6)=sin(π−π/6)=1/2\), \(cos(5π/6)=−cos(π/6)=−√3/2\). Từ đây tan là tỉ số âm và xác định, không lấy dấu từ góc tham chiếu một cách máy móc. FIG01 diễn tả vị trí M trên đường tròn.
+    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(-150^\circ=-150\pi/180=-5\pi/6\) rad. Cộng \(2\pi\) được \(-5\pi/6+2\pi=7\pi/6\), thuộc \([0;2\pi)\).</p></div>
 
-### Ví dụ 3.
+    **Kiểm lại.** Giá trị (7pi/6) là đại diện của tia cuối, không thay chiều quay âm ban đầu.
 
-Bánh xe bán kính \(30 cm\) quay góc \(−2π/3 rad\); độ dài cung quét trên vành là \(30×|−2π/3|=20π cm\). Dấu trừ chỉ chiều quay, không làm độ dài âm. Nếu xe quay qua hơn một vòng, tổng quãng đường phải dùng độ lớn góc quay **thực tế**, không chỉ góc quy về \([0,2π)\).
+    ### 3.2. Ví dụ — Tính độ dài cung trên quỹ đạo
 
-## Hướng suy luận trong các ví dụ
+    **Đề bài.** Trạm vũ trụ chuyển động trên cung tròn bán kính 6800 km, quét góc ở tâm (45^circ). Tính độ dài cung, làm tròn đến kilômét.
 
-- **Ví dụ 01:** dùng đổi độ–radian theo tỷ lệ 180°=π rad; chỉ **sau** đó mới quy góc về tia cuối nếu bài toán yêu cầu, không làm mất chiều quay khi tính quãng đường.
-- **Ví dụ 02:** định góc phần tư và điểm trên đường tròn trước khi lấy dấu; góc tham chiếu π/6 cho **độ lớn**, vị trí ở góc phần tư II quyết định dấu.
-- **Ví dụ 03:** cung dài không âm; lấy độ lớn của góc quay thực tế và nhân bán kính, không lấy số đo góc đã quy về một vòng.
+    **Phân tích.** Do công thức độ dài cung dùng radian, đổi (45^circ) trước; bán kính không bị trừ khỏi chiều dài cung.
+
+    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(45^\circ=\pi/4\) rad, nên \(s=6800\cdot\pi/4=1700\pi\approx5341\) km.</p></div>
+
+    **Kiểm lại.** Cung một phần tám vòng bằng một phần tám chu vi (2picdot6800), đúng kết quả.
+
+    ### 3.3. Ví dụ — Tính giá trị lượng giác trên đường tròn
+
+    **Đề bài.** Cho (alpha=5pi/6). Tìm (sinalpha,cosalpha,	analpha,cotalpha).
+
+    **Phân tích.** Điểm cuối ở góc phần tư II; góc tham chiếu (pi/6) cho độ lớn, góc phần tư cho dấu.
+
+    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(\sin\alpha=1/2,\ \cos\alpha=-\sqrt3/2\). Tang là \((1/2)/(-\sqrt3/2)=-\sqrt3/3\); côtang \((-\sqrt3/2)/(1/2)=-\sqrt3\).</p></div>
+
+    **Kiểm lại.** Kiểm (sin^2alpha+cos^2alpha=1) và (	analphacotalpha=1).
+
+    ### 3.4. Ví dụ — Dùng hệ thức cơ bản và dấu góc phần tư
+
+    **Đề bài.** Biết (cosalpha=-2/3), (pi<alpha<3pi/2). Tính (sinalpha,	analpha,cotalpha).
+
+    **Phân tích.** Góc ở phần tư III nên sin âm. Hệ thức cơ bản cho bình phương sin, chưa tự quyết định được dấu.
+
+    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(\sin^2\alpha=1-4/9=5/9\), vì vậy \(\sin\alpha=-\sqrt5/3\). Do sin và cos khác 0, \(\tan\alpha=\sqrt5/2\), \(\cot\alpha=2/\sqrt5=2\sqrt5/5\).</p></div>
+
+    **Kiểm lại.** Phần tư III có sin, cos đều âm nhưng tan, cot dương; tích hai tỉ số bằng 1.
+
+    ### 3.5. Ví dụ — Quy góc lớn về góc thường gặp
+
+    **Đề bài.** Tính (sin(-675^circ)) và (cot(-675^circ)).
+
+    **Phân tích.** Giá trị lượng giác phụ thuộc tia cuối, nên cộng hai vòng để đưa góc đã cho về (45^circ).
+
+    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(-675^\circ+720^\circ=45^\circ\). Suy ra \(\sin(-675^\circ)=\sin45^\circ=\sqrt2/2\) và \(\cot(-675^\circ)=\cot45^\circ=1\).</p></div>
+
+    **Kiểm lại.** Độ lớn số đo góc không quyết định dấu sin; vị trí tia cuối mới quyết định.
+
+    ### 3.6. Ví dụ — Phân biệt chiều quay và độ dài
+
+    **Đề bài.** Bánh xe bán kính 30 cm quay góc (-2pi/3) rad. Xác định chiều quay và độ dài cung đã đi.
+
+    **Phân tích.** Góc âm biểu thị chiều thuận kim đồng hồ; độ dài cung là đại lượng không âm.
+
+    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Góc quay âm nên chuyển động theo chiều kim đồng hồ. Độ dài cung \(s=30\cdot|-2\pi/3|=20\pi\) cm.</p></div>
+
+    **Kiểm lại.** Cung dài bằng một phần ba chu vi (60pi) cm, phù hợp với độ lớn góc (2pi/3).
 
 
 === "Lỗi thường gặp"
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B01-01"><summary>Nhầm góc cùng tia cuối với cùng số vòng quay</summary><ul><li>**Dấu hiệu:** Rút <code>765°</code> thành <code>45°</code> rồi dùng góc 45° để tính quãng đường xe quay 765°.  </li>
-<li>**Bản chất:** Hai góc chênh bội của 360° có cùng tia cuối / cùng sin cos, nhưng tổng độ dài cung di chuyển còn phụ thuộc số vòng quay thực tế.  </li>
-<li>**Tự sửa:** ghi rõ đại lượng cần hỏi; với giá trị lượng giác quy góc modulo 2π, với quãng đường dùng độ lớn tổng góc quay ban đầu ở radian; kiểm đơn vị và dấu.  </li>
-<li>**Ôn:** SGK Bài 1 góc lượng giác, radian, cung tròn.  </li>
-<li>**Quay lại item:** <code>THPT-G11-B01-P02</code>, <code>THPT-G11-B01-P03</code>, <code>THPT-G11-CHI-W01</code>.</li></ul><p><a href="../luyen-tap/">Về Luyện tập</a></p></details>
+    <span data-thpt-help-id="HELP-G11-B01-01" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B01-02"><summary>Quên điều kiện tan/cot và dấu góc phần tư</summary><ul><li>**Dấu hiệu:** Kết luận tan(π/2) có giá trị hữu hạn hoặc chọn dấu cos dương trong góc phần tư II.  </li>
-<li>**Bản chất:** tan α chỉ xác định nếu cos α≠0; cot α chỉ nếu sin α≠0. Hệ thức sin²+cos²=1 chỉ cho độ lớn; góc phần tư quyết định dấu.  </li>
-<li>**Tự sửa:** khoanh miền xác định trước; xác định góc phần tư, lấy căn đúng dấu; thử ngược bằng tan=sin/cos và sin²+cos²=1.  </li>
-<li>**Ôn:** SGK Bài 1 giá trị lượng giác, dấu và hệ thức cơ bản.  </li>
-<li>**Quay lại item:** <code>THPT-G11-B01-C02</code>, <code>THPT-G11-B01-P01</code>, <code>THPT-G11-B01-P04</code>, <code>THPT-G11-B01-P05</code>.</li></ul><p><a href="../luyen-tap/">Về Luyện tập</a></p></details>
+    ??? tip "Kiểm lỗi"
 
+        <p><strong>Lỗi cần kiểm:</strong> Nhầm góc cùng tia cuối với cùng số vòng quay.</p>
+        <p><strong>Dấu hiệu:</strong> Quy \(765^\circ\) về \(45^\circ\) rồi dùng góc \(45^\circ\) để tính quãng đường bánh xe đã quay.</p>
+        <p><strong>Bước 1:</strong> Xác định bài toán hỏi tia cuối, giá trị lượng giác hay quãng đường di chuyển thực.</p>
+        <p><strong>Bước 2:</strong> Chỉ được quy góc theo \(2k\pi\) khi xét vị trí tia cuối hoặc giá trị sin, cos; không xóa các vòng đã quay khi tính chiều dài cung.</p>
+        <p><strong>Bước 3:</strong> Với quãng đường, dùng tổng góc quay thực ở radian, tính \(s=R|\alpha|\), kiểm đơn vị.</p>
+        <p><strong>Luyện tiếp:</strong> B01-P02, B01-P03 và tự luận CHI-W01 trong thư viện.</p>
 
-    **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+    <span data-thpt-help-id="HELP-G11-B01-02" hidden></span>
 
-    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 11 Kết nối tri thức, tập 1, Bài 1 (trang in 5–16); SBT Toán 11 Bài 1 tham khảo bài tập. Ví dụ và giải thích bổ trợ do SLM biên soạn.</p>
+    ??? tip "Kiểm lỗi"
+
+        <p><strong>Lỗi cần kiểm:</strong> Quên miền xác định của tang, côtang hoặc dấu của góc phần tư.</p>
+        <p><strong>Dấu hiệu:</strong> Coi \(\tan(\pi/2)\) hữu hạn hoặc gán cos dương ở góc phần tư II.</p>
+        <p><strong>Bước 1:</strong> Viết \(\tan=\sin/\cos\), \(\cot=\cos/\sin\), loại những giá trị làm mẫu bằng 0.</p>
+        <p><strong>Bước 2:</strong> Tìm phần tư của điểm cuối trên đường tròn đơn vị, xác định dấu sin, cos trước khi lấy căn.</p>
+        <p><strong>Bước 3:</strong> Dùng \(\sin^2+\cos^2=1\) và \(\tan\cot=1\) trên miền xác định để kiểm lại.</p>
+        <p><strong>Luyện tiếp:</strong> B01-C02, B01-P01, B01-P04, B01-P05 trong phần Luyện tập.</p>
+
+    **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md) · [Tự luận Chương I](../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md).
+
+    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 11 Kết nối tri thức, tập 1, Bài 1 (trang in 5–16); SBT Toán 11 Bài 1 dùng tham khảo dạng bài. Ví dụ và lời giảng bổ trợ do SLM biên soạn.</p>
