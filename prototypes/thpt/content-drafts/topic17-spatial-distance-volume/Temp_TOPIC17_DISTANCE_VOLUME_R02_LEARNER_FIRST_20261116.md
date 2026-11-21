@@ -2,7 +2,7 @@
 
 Đoạn ngắn nhất giữa các đối tượng hình học đi theo đường vuông góc; muốn tính thể tích, hãy xác định đáy và chiều cao vuông góc trước khi thay số.
 
-<!-- AUTHORING_R02_CANDIDATE; ORIGINAL_R00_SOURCE: baa6c6c575a4cf79187b2aebd2047b1cf872b983; EDITORIAL_R01_SOURCE: af08791b4d7104679a3ea3481068266a07c72dce; S1_G11_SOURCE: afc8ec039213b87b4930f2d34d48c28d1fc6277f; NO_RD1; NO_RELEASE -->
+<!-- AUTHORING_R02_CANDIDATE; ORIGINAL_R00_SOURCE: baa6c6c575a4cf79187b2aebd2047b1cf872b983; EDITORIAL_R01_SOURCE: af08791b4d7104679a3ea3481068266a07c72dce; S1_G11_SOURCE: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; NO_RD1; NO_RELEASE -->
 
 # Kiến thức
 
@@ -474,7 +474,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 **Bài tập từ nguồn SGK**
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 1.** Nếu H là hình chiếu M trên a, với K∈a khác H thì MH và MK so sánh thế nào?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -485,7 +485,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 2.** Nếu M thuộc (P), d(M,(P)) là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -496,7 +496,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 3.** a//(P). Khoảng cách từ hai điểm M,N∈a tới (P) có bằng nhau?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -507,7 +507,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C04; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C04; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 4.** Hai mặt phẳng song song cách nhau h=4,5m. M trên mặt thứ nhất, d(M,mặt thứ hai)?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -518,7 +518,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C05; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C05; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 5.** Đoạn nối hai đường chéo nhau chỉ vuông góc đường đầu, không vuông góc đường hai. Có là đoạn vuông góc chung?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -529,7 +529,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C06; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-C06; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 6.** Trong chóp S.ABC, SA=10, SH=8 với H là hình chiếu S lên đáy. Chiều cao chóp?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -540,7 +540,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-P01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-P01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 7.** Chóp có cạnh xiên tới một đỉnh đáy 17cm, hình chiếu ngang tới đỉnh đó 15cm. Tính chiều cao.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -551,7 +551,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-P02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-P02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 8.** Vì sao d(M,(P)) không thể âm?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -562,7 +562,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-P03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-P03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 9.** Hai đường chéo nhau có thể có khoảng cách 0 khi chúng là hai đường phân biệt cố định?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -573,7 +573,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-W01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-W01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 10.** Điểm M ngoài (P), H là hình chiếu, MH=5cm; K∈(P), HK=12cm. Tính MK và chứng minh MH là khoảng cách ngắn nhất từ M tới (P).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -588,7 +588,7 @@ Hãy tự giải từng bài, xác định đoạn vuông góc và chiều cao t
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B26-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 11.** a={(t,0,0)}, b={(5,s,4)} (t,s thực) là hai đường chéo nhau. Chỉ ra hai chân nối, chứng minh đoạn nối vuông góc chung và tính khoảng cách.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -690,7 +690,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 **Bài tập từ nguồn SGK**
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 19.** Lăng trụ có diện tích đáy 15cm², chiều cao vuông góc 7cm. Thể tích?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -701,7 +701,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 20.** Chóp có S_đáy=21cm², chiều cao 6cm. Thể tích?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -712,7 +712,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 21.** Hộp chữ nhật 2m×3m×4m chứa tối đa bao nhiêu m³?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -723,7 +723,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C04; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C04; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 22.** Chóp cụt đều có S=25cm²,S′=4cm²,h=3cm. Thể tích?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -734,7 +734,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C05; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-C05; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 23.** Thể tích khối là 0,36m³. Đổi ra lít?
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -745,7 +745,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-P01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-P01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 24.** Chóp S.ABC có S đáy 12dm², cao 9dm. Tính V theo dm³.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -756,7 +756,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-P02; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-P02; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 25.** Chóp cụt đều S=16,S′=9,h=6 (cm). Tính V.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -767,7 +767,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-P03; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-P03; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 26.** Một bạn dùng h là cạnh xiên bên để tính thể tích chóp cụt đều. Nhận xét.
 
 <details markdown="1"><summary>Lời giải</summary>
@@ -778,7 +778,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-W01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-W01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 27.** Lăng trụ và chóp có cùng đáy diện tích 18cm² và cùng chiều cao vuông góc 12cm. Tính hai thể tích, so sánh và giải thích hệ số 1/3.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -793,7 +793,7 @@ Chân cao O là tâm đáy. Với M là trung điểm cạnh đáy, OM=3 cm và 
 
 </details>
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-B27-W02-ANCHOR; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 28.** Chóp cụt đều có đáy lớn 49cm², đáy bé 16cm², cao 6cm. Tính V, thử thay đáy bé bằng 0 và giải thích ý nghĩa giới hạn công thức.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -912,7 +912,7 @@ Hai diện tích S=36,S′=9, √(SS′)=18. V=(4/3)·(36+9+18)=84 cm³. Nếu S
 
 ## 3. Bài tổng hợp: chọn đúng chiều cao
 
-<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-CHVII-C01; ORIGINAL_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f; CANONICAL_KEY_UNCHANGED -->
+<!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHVII-CHVII-C01; ORIGINAL_SOURCE_BLOB: 5646241f4bb72f12419aaf585ee1fbea6f4185d0; CANONICAL_KEY_UNCHANGED -->
 **Bài luyện 37.** Đỉnh S cao 6cm trên đáy có diện tích 24cm². Một bạn dùng cạnh xiên 10cm tính V chóp. Chọn chiều cao và kết quả đúng.
 
 <details markdown="1"><summary>Lời giải</summary>
