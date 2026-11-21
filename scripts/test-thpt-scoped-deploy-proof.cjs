@@ -76,6 +76,9 @@ function originalMathPreserved(old,now){
 // Owner-authorized, exact-scope source-locked G10 HELP placement migrations only.
 // All unrelated multi-lesson production changes remain fail CLOSED.
 const PLACEMENT_BATCHES=[
+ {id:"G10-B19-B26-ONE-SOURCE-SEMANTIC-Q18-20261121",
+  receipt:"prototypes/thpt/ux795/G10_B19_B26_ONE_SOURCE_AND_SEMANTIC_BOX_Q18_DELTA_20261121.md",
+  lessons:[19,20,21,22,23,24,25,26].map(n=>"docs/thpt-preview/sgk/chuong-"+(n<=22?"vii":n<=25?"viii":"ix")+"/bai-"+n+".md")},
  {id:"G10-CHVI-B15-B18-KIEM-LOI-PLACEMENT-Q18-R01-20261120",
   receipt:"prototypes/thpt/ux795/G10_CHVI_B15_B18_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md",
   lessons:[15,16,17,18].map(n=>"docs/thpt-preview/sgk/chuong-vi/bai-"+n+".md")},
@@ -152,7 +155,20 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
  assert.equal(tokenSet(now,"data-thpt-first-try-id").length,firstAnswers(now).length,
   "First Try question/closed answer cardinality mismatch");
  if(!originalMathPreserved(before,now)){
-  if(lesson==="docs/thpt-preview/sgk/chuong-ix/bai-26.md"&&
+  if(row&&row.batch.id==="G10-B19-B26-ONE-SOURCE-SEMANTIC-Q18-20261121"&&row.n===26){
+   // One old spelling of the probability-bound TeX is subsumed by an
+   // equivalent displayed property. Signed exact blob pair, no quota bypass.
+   assert(receipt.includes("B26_SOURCE_FORMULA_REPHRASE")&&
+    receipt.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT")&&
+    receipt.includes("DELTA_C_ACADEMIC_MATERIAL"),
+    "B26 one-formula rephrase needs signed affected-scope Q18 evidence");
+   assert.equal(removedMathCount(before,now),1,
+    "B26 owner corrective delta must remove exactly one legacy TeX occurrence");
+   for(const token of ["0\\le n(A)\\le n(\\Omega)",
+    "0\\le P(A)\\le1","P(A)=\\dfrac{n(A)}{n(\\Omega)}",
+    "Nguyên lí xác suất bé (SGK)."])
+    assert(now.includes(token),"B26 correct formula/principle missing: "+token);
+  }else if(lesson==="docs/thpt-preview/sgk/chuong-ix/bai-26.md"&&
      receipt.includes("G10-CHIX-B26-S1-GOLDEN-ENRICHMENT-Q18-R01-20261121")){
    // This exact old-to-new SHA pair has a signed mathematical/content delta.
    // The 13 legacy TeX occurrences were reformatted/restructured or subsumed
@@ -247,7 +263,7 @@ function main(){
   b.lessons.length===lessonPaths.length&&b.lessons.every(x=>lessonPaths.includes(x))&&
   receipts.includes(b.receipt));
  assert(lessonPaths.length===1||Boolean(batch),
-  "Only one lesson or exact B07–B14/B15–B18 owner placement batch");
+  "Only one lesson or one exact signed B07–B14/B15–B18/B19–B26 owner batch");
  assert(receipts.length>=1,"Scoped production requires changed signed Q18 receipt");
  if(batch)assert.equal(receipts.length,1,"Placement batch must have one exact Q18 receipt");
  const expected=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).sort();
