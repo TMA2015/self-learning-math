@@ -1,3 +1,13 @@
+<!-- SLM_TOPIC22_SINGLE_MASTER_READER_GATE_20261121 -->
+## BẮT BUỘC ĐỌC TRƯỚC MỌI TASK AUTHORING–CHUYÊN ĐỀ 01–22 (OWNER 21/11/2026)
+
+**Một nhiệm vụ xuyên suốt duy nhất trong phạm vi AUTHORING–Chuyên đề:** **[MASTER Issue #974 — hậu kiểm học liệu S1/PED → nâng cấp khả năng tự học của 22 Chuyên đề](https://github.com/TMA2015/self-learning-math/issues/974)**. **Trước mọi cuộc trò chuyện mới / lượt tự động / chỉnh nguồn / kiểm toán / QA / handoff về Topic**, mở lại **toàn bộ Issue #974 và checkpoint mới nhất ở comments**; sau đó đọc 13 yêu cầu biên tập #864, audit lịch sử #882, ledger #865, nguồn S1, nguyên văn learner canonical và chuẩn Q01–Q18 hiện hành. Nếu chưa đọc #974, không tự chọn CĐ kế tiếp, không tạo hồ sơ, không tuyên bố QA.
+
+**Thứ tự công việc:** (1) dùng kết quả audit đã có, xác minh **lỗ hổng thật theo từng outcome** về S1, bản chất toán, mạch diễn giải, Ví dụ có suy luận, hình/đọc hình, Vận dụng có chuyển giao, Luyện tập/Written, D6 và Tự kiểm tra; **không lặp vòng đếm item/canonical parity để thay kiểm toán học thuật–PED**; (2) khi được owner cho phép AUTHORING, sửa **một canonical learner hiện hữu** của từng Topic, **không tạo Rxx learner/receipt/ledger song song**, QA như học sinh, quản trị Delta/Q18 và snapshot PASS; (3) đóng **từng Topic thật sự** theo một chuẩn Q01–Q18/A1–A7, Q18, V2/ready/REGISTER, ghi tiến độ vào Master #974 và lỗi vào #865. NotebookLM **không bắt buộc mặc định** theo Q18 v3.2.0, chỉ review phần cần khi owner yêu cầu hoặc tác giả chưa tự kiểm được. **Không tự merge/deploy; quyền AUTHORING PAUSE/RELEASE ở các mục bên dưới vẫn có hiệu lực.**
+
+**Ranh giới nhiệm vụ:** Các PR/Issue từng Topic là đầu việc con của #974, không phải nhiệm vụ thứ hai; AUTHORING SGK 79 bài (#795) và RELEASE là nhánh nhiệm vụ riêng. Điều hành #974 không mở rộng quyền phát hành hoặc tạo tiêu chuẩn mới. Quyết định owner mới hơn luôn có ưu tiên; khi xung đột `STANDARD_CONFLICT_HOLD` thay vì tự suy.
+
+---
 <!-- OWNER_BASELINES_GOLDEN_PROCESS_20261119 -->
 
 ### RELEASE — MỘT BẢN THẢO CANONICAL, CHỦ BIÊN TOÀN BÀI, QA THEO PHẠM VI (OWNER 19/11/2026)
