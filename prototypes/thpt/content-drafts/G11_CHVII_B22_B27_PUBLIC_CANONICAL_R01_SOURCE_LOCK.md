@@ -560,7 +560,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Hai đường có góc giữa hai tia cùng phương được chọn là 145°. Góc giữa hai đường thẳng là bao nhiêu?
 
-**Đáp án sau Submit luyện tập:** 35°
+**Đáp án:** 35°
 
 **Lời giải và vì sao:** Góc giữa hai đường thẳng là góc không tù: 180°−145°=35°.
 
@@ -570,7 +570,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Có thể có a⊥b nhưng a và b không có điểm chung không?
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Góc vuông là quan hệ giữa phương; đường chéo nhau vẫn có thể có hai phương vuông góc.
 
@@ -580,7 +580,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Nếu a//a′ và a⊥b thì góc giữa a′ và b bằng bao nhiêu?
 
-**Đáp án sau Submit luyện tập:** 90°
+**Đáp án:** 90°
 
 **Lời giải và vì sao:** Đường song song giữ phương nên giữ góc với b.
 
@@ -590,7 +590,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Hai thanh thép cách nhau, một theo phương Đông–Tây, một thẳng đứng. Chúng có vuông góc theo định nghĩa không?
 
-**Đáp án sau Submit luyện tập:** Có, góc giữa hai phương bằng 90°
+**Đáp án:** Có, góc giữa hai phương bằng 90°
 
 **Lời giải và vì sao:** Chuyển một thanh bằng đường song song đến cùng điểm; không cần chúng cắt nhau.
 
@@ -600,7 +600,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Nêu cách xác định góc của hai đường chéo nhau mà không phải kéo chúng tới chỗ gặp nhau.
 
-**Đáp án sau Submit luyện tập:** Qua một điểm chung dựng hai đường lần lượt song song hai đường ban đầu, đo góc không tù giữa chúng.
+**Đáp án:** Qua một điểm chung dựng hai đường lần lượt song song hai đường ban đầu, đo góc không tù giữa chúng.
 
 **Lời giải và vì sao:** Hình thức tịnh tiến hướng, không biến hai đường thật thành đồng phẳng.
 
@@ -610,7 +610,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Trong hộp chữ nhật, AB và D′C′ có góc giữa là bao nhiêu?
 
-**Đáp án sau Submit luyện tập:** 0°
+**Đáp án:** 0°
 
 **Lời giải và vì sao:** AB//D′C′, hai đường song song trong không gian.
 
@@ -620,7 +620,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Một bạn nói hai đường vuông góc phải gặp nhau. Nêu một phản ví dụ chính xác.
 
-**Đáp án sau Submit luyện tập:** Trong hộp chữ nhật AB⊥CC′ dù không cắt nhau.
+**Đáp án:** Trong hộp chữ nhật AB⊥CC′ dù không cắt nhau.
 
 **Lời giải và vì sao:** Vì CC′//AA′ và AA′⊥AB.
 
@@ -633,7 +633,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Một cột chỉ vuông góc một đường trong mặt sân, có đủ kết luận cột vuông góc sân?
 
-**Đáp án sau Submit luyện tập:** Chưa đủ
+**Đáp án:** Chưa đủ
 
 **Lời giải và vì sao:** Định nghĩa đòi vuông góc mọi phương nằm trong mặt; một phương chưa đủ.
 
@@ -643,7 +643,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Trong mặt (P), a,b cắt nhau. d⊥a và d⊥b thì d quan hệ gì với (P)?
 
-**Đáp án sau Submit luyện tập:** d⊥(P)
+**Đáp án:** d⊥(P)
 
 **Lời giải và vì sao:** Hai phương cắt nhau đủ theo điều kiện xác định đường vuông góc mặt phẳng.
 
@@ -653,7 +653,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** d⊥(P) và e//d. e có vuông góc (P)?
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Đường e giữ phương vuông góc (P) của d.
 
@@ -663,7 +663,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Hai đường d,e cùng vuông góc một mặt phẳng, chúng có thể cắt nhau mà không trùng nhau không?
 
-**Đáp án sau Submit luyện tập:** Không; d//e hoặc d=e
+**Đáp án:** Không; d//e hoặc d=e
 
 **Lời giải và vì sao:** Hai đường cùng phương pháp tuyến. Nếu cùng đi qua một điểm thì chúng trùng, nếu khác đường thì song song.
 
@@ -673,7 +673,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Chân giá treo đỡ cột theo hai thanh nằm trên nền mà hai thanh cắt nhau. Cột vuông góc cả hai thanh. Kết luận?
 
-**Đáp án sau Submit luyện tập:** Cột vuông góc nền
+**Đáp án:** Cột vuông góc nền
 
 **Lời giải và vì sao:** Vì hai thanh thuộc nền cắt nhau và cột vuông góc cả hai.
 
@@ -683,7 +683,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** d⊥(P) và (P)//(Q). d có vuông góc (Q)?
 
-**Đáp án sau Submit luyện tập:** Có.
+**Đáp án:** Có.
 
 **Lời giải và vì sao:** Mặt song song có các phương trong mặt giống nhau; pháp tuyến chung.
 
@@ -693,7 +693,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Nếu một đường d vuông góc hai đường song song trong (P), kết luận d⊥(P) có chắc đúng?
 
-**Đáp án sau Submit luyện tập:** Không chắc.
+**Đáp án:** Không chắc.
 
 **Lời giải và vì sao:** Thiếu hai phương cắt nhau/độc lập trong mặt phẳng.
 
@@ -703,7 +703,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Có thể có hai đường phân biệt, cắt nhau và đều vuông góc (P)?
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Hai đường cùng vuông góc một mặt chỉ có thể song song hoặc trùng nhau.
 
@@ -716,7 +716,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** M nằm cách (P) 7cm qua đường MH⊥(P). H là gì?
 
-**Đáp án sau Submit luyện tập:** H là hình chiếu vuông góc của M lên (P)
+**Đáp án:** H là hình chiếu vuông góc của M lên (P)
 
 **Lời giải và vì sao:** Vị trí chân đường vuông góc xác định hình chiếu.
 
@@ -726,7 +726,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Đường l vuông góc (P). Hình chiếu của l trên (P) là đường hay điểm?
 
-**Đáp án sau Submit luyện tập:** Một điểm
+**Đáp án:** Một điểm
 
 **Lời giải và vì sao:** Mọi điểm trên l chiếu đến cùng chân l∩(P).
 
@@ -736,7 +736,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** a nằm trong (P), b là đường xiên có hình chiếu b′ trên (P). Biết a⊥b′; suy gì?
 
-**Đáp án sau Submit luyện tập:** a⊥b
+**Đáp án:** a⊥b
 
 **Lời giải và vì sao:** Định lí ba đường vuông góc cho phép chuyển góc với hình chiếu sang góc với đường xiên.
 
@@ -746,7 +746,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Đường AB xiên xuống (P), AC là hình chiếu của AB. Góc AB và (P) được xác định ở đâu?
 
-**Đáp án sau Submit luyện tập:** Góc giữa AB và AC (góc nhỏ)
+**Đáp án:** Góc giữa AB và AC (góc nhỏ)
 
 **Lời giải và vì sao:** Hình chiếu đưa bài toán 3D về góc trong tam giác phẳng chứa đường xiên.
 
@@ -756,7 +756,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Đoạn xiên dài 13m, chiều cao 5m. Tính sin góc với mặt đất.
 
-**Đáp án sau Submit luyện tập:** 5/13
+**Đáp án:** 5/13
 
 **Lời giải và vì sao:** sinθ=h/độ dài xiên=5/13, không lấy h/độ dài hình chiếu.
 
@@ -766,7 +766,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Một tia tạo góc 35° với mặt nền. Góc tia đó với phương thẳng đứng bằng bao nhiêu (cùng mặt phẳng đứng chứa tia)?
 
-**Đáp án sau Submit luyện tập:** 55°.
+**Đáp án:** 55°.
 
 **Lời giải và vì sao:** Hai góc phụ nhau do phương thẳng đứng vuông góc mặt nền.
 
@@ -776,7 +776,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Cầu trượt có độ cao 3m, độ dài trượt 5m. Tính độ dài hình chiếu lên nền.
 
-**Đáp án sau Submit luyện tập:** 4m.
+**Đáp án:** 4m.
 
 **Lời giải và vì sao:** Tam giác vuông, cạnh hình chiếu bằng √(25−9)=4m.
 
@@ -786,7 +786,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Có thể dùng đoạn hình chiếu nằm trên mặt nền để biểu diễn độ cao AH?
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Hình chiếu là thành phần nằm trong mặt; AH là thành phần vuông góc.
 
@@ -799,7 +799,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Góc giữa hai đường pháp tuyến của hai mặt phẳng là 75°. Góc hai mặt là bao nhiêu?
 
-**Đáp án sau Submit luyện tập:** 75°
+**Đáp án:** 75°
 
 **Lời giải và vì sao:** Góc hai mặt là góc không tù giữa các pháp tuyến.
 
@@ -809,7 +809,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Góc phẳng của một góc nhị diện bằng 125°. Góc giữa hai mặt phẳng chứa nó?
 
-**Đáp án sau Submit luyện tập:** 55°
+**Đáp án:** 55°
 
 **Lời giải và vì sao:** Hai mặt chứa hai nửa mặt tạo góc không tù bằng 180°−125°.
 
@@ -819,7 +819,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** a⊂(P), a⊥(Q) thì (P) và (Q) có vuông góc?
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Tiêu chí đủ: một mặt chứa đường vuông góc với mặt kia.
 
@@ -829,7 +829,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** (P)⊥(Q) theo giao tuyến Δ; a⊂(P), a⊥Δ. Có suy a⊥(Q)?
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Định lí quan hệ vuông góc giữa hai mặt đã vuông góc; kiểm a nằm trong (P).
 
@@ -839,7 +839,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Lăng trụ đứng đáy ngũ giác đều có phải lăng trụ đều?
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Định nghĩa lăng trụ đều: lăng trụ đứng có đáy đa giác đều.
 
@@ -849,7 +849,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Trong chóp đều có đáy hình vuông tâm O, chân đường cao kẻ từ S nằm ở đâu?
 
-**Đáp án sau Submit luyện tập:** Tại O
+**Đáp án:** Tại O
 
 **Lời giải và vì sao:** Đường cao chóp đều đi qua tâm đa giác đáy.
 
@@ -859,7 +859,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Hai đáy của chóp cụt đều có quan hệ nào?
 
-**Đáp án sau Submit luyện tập:** Song song, đồng dạng, đều
+**Đáp án:** Song song, đồng dạng, đều
 
 **Lời giải và vì sao:** Các mặt cắt song song đáy của một chóp đều tạo các đa giác đều đồng dạng.
 
@@ -869,7 +869,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Có thể khẳng định góc giữa hai mặt phẳng là 130°?
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Góc hai mặt phẳng theo định nghĩa nằm trong [0°,90°]; 130° có thể là góc phẳng của góc nhị diện.
 
@@ -879,7 +879,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Hình chóp đều có cạnh bên luôn vuông góc đáy?
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Đường cao qua đỉnh S tới tâm O đáy mới vuông góc đáy; cạnh SA thường xiên.
 
@@ -889,7 +889,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Hình lăng trụ đứng có đáy hình thang bất kỳ có là lăng trụ đều không?
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Lăng trụ đều còn đòi đáy là đa giác đều.
 
@@ -902,7 +902,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Nếu H là hình chiếu M trên a, với K∈a khác H thì MH và MK so sánh thế nào?
 
-**Đáp án sau Submit luyện tập:** MH<MK
+**Đáp án:** MH<MK
 
 **Lời giải và vì sao:** Tam giác MHK vuông tại H cho MK²=MH²+HK².
 
@@ -912,7 +912,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Nếu M thuộc (P), d(M,(P)) là bao nhiêu?
 
-**Đáp án sau Submit luyện tập:** 0
+**Đáp án:** 0
 
 **Lời giải và vì sao:** M là hình chiếu chính nó; không có khoảng cách dương.
 
@@ -922,7 +922,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** a//(P). Khoảng cách từ hai điểm M,N∈a tới (P) có bằng nhau?
 
-**Đáp án sau Submit luyện tập:** Bằng nhau
+**Đáp án:** Bằng nhau
 
 **Lời giải và vì sao:** Cả đường có cùng phương song song nên độ cao vuông góc tới mặt không đổi.
 
@@ -932,7 +932,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Hai mặt phẳng song song cách nhau h=4,5m. M trên mặt thứ nhất, d(M,mặt thứ hai)?
 
-**Đáp án sau Submit luyện tập:** 4,5m
+**Đáp án:** 4,5m
 
 **Lời giải và vì sao:** Khoảng cách hai mặt song song đo theo pháp tuyến không đổi.
 
@@ -942,7 +942,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Đoạn nối hai đường chéo nhau chỉ vuông góc đường đầu, không vuông góc đường hai. Có là đoạn vuông góc chung?
 
-**Đáp án sau Submit luyện tập:** Không
+**Đáp án:** Không
 
 **Lời giải và vì sao:** Phải nối hai điểm thuộc hai đường và vuông góc **cả hai** phương.
 
@@ -952,7 +952,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Trong chóp S.ABC, SA=10, SH=8 với H là hình chiếu S lên đáy. Chiều cao chóp?
 
-**Đáp án sau Submit luyện tập:** 8
+**Đáp án:** 8
 
 **Lời giải và vì sao:** Độ cao là khoảng cách vuông góc SH, không phải cạnh bên SA.
 
@@ -962,7 +962,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Chóp có cạnh xiên tới một đỉnh đáy 17cm, hình chiếu ngang tới đỉnh đó 15cm. Tính chiều cao.
 
-**Đáp án sau Submit luyện tập:** 8cm.
+**Đáp án:** 8cm.
 
 **Lời giải và vì sao:** h=√(17²−15²)=8cm.
 
@@ -972,7 +972,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Vì sao d(M,(P)) không thể âm?
 
-**Đáp án sau Submit luyện tập:** Vì là độ dài đoạn vuông góc MH≥0.
+**Đáp án:** Vì là độ dài đoạn vuông góc MH≥0.
 
 **Lời giải và vì sao:** Độ dài đoạn thẳng không âm; =0 khi M∈(P).
 
@@ -982,7 +982,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Hai đường chéo nhau có thể có khoảng cách 0 khi chúng là hai đường phân biệt cố định?
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Hai đường chéo nhau cố định có đoạn vuông góc chung độ dài dương; giao nhau mới cho khoảng cách 0.
 
@@ -995,7 +995,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Lăng trụ có diện tích đáy 15cm², chiều cao vuông góc 7cm. Thể tích?
 
-**Đáp án sau Submit luyện tập:** 105cm³
+**Đáp án:** 105cm³
 
 **Lời giải và vì sao:** V=S·h=15×7=105cm³.
 
@@ -1005,7 +1005,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Chóp có S_đáy=21cm², chiều cao 6cm. Thể tích?
 
-**Đáp án sau Submit luyện tập:** 42cm³
+**Đáp án:** 42cm³
 
 **Lời giải và vì sao:** V=S·h/3=21×6/3=42cm³.
 
@@ -1015,7 +1015,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Hộp chữ nhật 2m×3m×4m chứa tối đa bao nhiêu m³?
 
-**Đáp án sau Submit luyện tập:** 24m³
+**Đáp án:** 24m³
 
 **Lời giải và vì sao:** V=dài×rộng×cao=24m³ nếu hộp trống hoàn toàn.
 
@@ -1025,7 +1025,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Chóp cụt đều có S=25cm²,S′=4cm²,h=3cm. Thể tích?
 
-**Đáp án sau Submit luyện tập:** 39cm³
+**Đáp án:** 39cm³
 
 **Lời giải và vì sao:** V=3(25+4+√100)/3=39cm³.
 
@@ -1035,7 +1035,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Thể tích khối là 0,36m³. Đổi ra lít?
 
-**Đáp án sau Submit luyện tập:** 360 lít
+**Đáp án:** 360 lít
 
 **Lời giải và vì sao:** 1m³=1000L nên 0,36m³=360L.
 
@@ -1045,7 +1045,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Chóp S.ABC có S đáy 12dm², cao 9dm. Tính V theo dm³.
 
-**Đáp án sau Submit luyện tập:** 36dm³.
+**Đáp án:** 36dm³.
 
 **Lời giải và vì sao:** 12×9/3=36dm³.
 
@@ -1055,7 +1055,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Chóp cụt đều S=16,S′=9,h=6 (cm). Tính V.
 
-**Đáp án sau Submit luyện tập:** 74cm³.
+**Đáp án:** 74cm³.
 
 **Lời giải và vì sao:** 6(16+9+√144)/3=2(25+12)=74cm³.
 
@@ -1065,7 +1065,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Một bạn dùng h là cạnh xiên bên để tính thể tích chóp cụt đều. Nhận xét.
 
-**Đáp án sau Submit luyện tập:** Sai trừ trường hợp cạnh đó vuông góc hai đáy.
+**Đáp án:** Sai trừ trường hợp cạnh đó vuông góc hai đáy.
 
 **Lời giải và vì sao:** Chiều cao phải là khoảng cách vuông góc giữa hai đáy song song.
 
@@ -1078,7 +1078,7 @@ Các ví dụ sử dụng hệ trục minh họa để kiểm chứng phương v
 
 **Đề:** Đỉnh S cao 6cm trên đáy có diện tích 24cm². Một bạn dùng cạnh xiên 10cm tính V chóp. Chọn chiều cao và kết quả đúng.
 
-**Đáp án sau Submit luyện tập:** h=6cm, V=48cm³
+**Đáp án:** h=6cm, V=48cm³
 
 **Lời giải và vì sao:** Độ cao là khoảng cách vuông góc S tới mặt đáy; V=24×6/3=48, không dùng cạnh xiên.
 
