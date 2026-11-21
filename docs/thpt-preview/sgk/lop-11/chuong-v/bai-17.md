@@ -1,77 +1,243 @@
 # Bài 17. Hàm số liên tục
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG V · SGK KNTT</p><p class="thpt-r4-lead">Khám phá bản chất và điều kiện → ví dụ giải thích phương pháp → Tự thử trước Core → Core/Luyện tập/Vận dụng → tự khắc phục. Không ghi Skill Mastery từ tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG V</p><p class="thpt-r4-lead">Giá trị tại điểm phải khớp với giới hạn: kiểm liên tục tại điểm và trên đoạn, chọn đúng miền, vận dụng định lý tồn tại nghiệm.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Vì sao học và kiến thức nền tảng
+=== "Khám phá kiến thức"
 
-### 1.1. Từ giới hạn sang liên tục
+    Ở Bài 16, một hàm có thể tiến đến một số khi \(x\) gần \(a\) nhưng có “lỗ” hoặc giá trị khác tại \(a\). **Liên tục** mô tả sự khớp giữa **giá trị tại điểm** và **giới hạn gần điểm**. Muốn học chắc, cần hiểu giới hạn trái/phải, miền xác định và cách đọc đồ thị trước khi dùng công thức.
 
-Ở Bài 16, em thấy một hàm vẫn có thể tiến tới 4 khi x→2 nhưng không được định nghĩa tại x=2. Điều gì xảy ra nếu ta **bổ sung giá trị tại điểm ấy**?
+    ### 1.1. Giới hạn khớp giá trị hàm: vì sao là liên tục?
 
-Xét h(x)=x+2 khi x≠2. Nếu đặt h(2)=4, đồ thị không bị "lỗ" ở điểm tương ứng và giá trị tại 2 khớp với những giá trị xung quanh. Nếu cố tình đặt h(2)=0, x ở gần 2 vẫn làm h(x) gần 4, **nhưng h(2) lại bằng 0**: điểm riêng lẻ bị lệch khỏi xu hướng. Ta gọi hiện tượng "khớp" đó là **liên tục tại một điểm**.
+    Ở Bài 16, hàm \(g(x)=\frac{x^2-1}{x-1}\) với \(x\ne1\) tiến đến \(2\) khi \(x\to1\), nhưng có “lỗ” tại \(x=1\). Nếu đặt \(g(1)=2\), lỗ được lấp đúng xu hướng; nếu đặt \(g(1)=0\), một điểm đơn lẻ lệch khỏi xu hướng. Tính **liên tục tại điểm** yêu cầu giá trị tại điểm có nghĩa, có giới hạn hữu hạn và **hai giá trị bằng nhau**.
 
-**Cầu nối:** Cần biết ở Bài 16 rằng **lim_{x→a}f(x)** mô tả xu hướng ở gần a, còn **f(a)** là giá trị đúng tại a; hai thứ không tự động giống nhau.
+    **Vận dụng — Tự thử trước Core.** Đặt \(f(x)=\frac{x^2-1}{x-1}\) khi \(x\ne1\) và \(f(1)=m\). Tìm \(m\) để f liên tục tại 1.
 
-**Hình trực quan D5:** <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B17-01_R01.svg" alt="Đồ thị có lỗ tại (1,2) và chấm đặc tại (1,0)"/><figcaption>Đồ thị có lỗ tại (1,2) và chấm đặc tại (1,0)</figcaption></figure>
+    <span data-ped-first-try="1" data-outcome-id="G11-B17-CONTINUITY_POINT" data-thpt-first-try-id="THPT-G11-B17-TRY01" hidden></span>
 
-**Cách đọc hình:** Vòng tròn rỗng ở (1,2) thể hiện xu hướng giá trị hàm khi x gần 1; chấm đỏ đặc ở (1,0) là giá trị f(1) thực sự. Hai độ cao không khớp nên hàm gián đoạn tại 1. Hình cho trực giác; định nghĩa dưới đây mới là tiêu chuẩn kiểm tra chính thức.
+    ??? question "Đối chiếu"
 
-### 1.2. Định nghĩa và điều kiện
+        **Lời giải:** Với \(x\ne1\), \(f(x)=x+1\) nên \(\lim_{x\to1}f(x)=2\). Điều kiện liên tục là \(f(1)=m=2\). Nếu \(m\ne2\), giới hạn vẫn bằng 2 nhưng hàm **gián đoạn tại 1**.
 
-Hàm f **liên tục tại a** khi (1) a thuộc tập xác định để f(a) có nghĩa; (2) giới hạn hữu hạn lim_{x→a}f(x) tồn tại; (3) **lim_{x→a}f(x)=f(a)**. Cả ba ý đều phải kiểm tra. "Đồ thị vẽ một nét không nhấc bút" là trực giác giúp hình dung, **không thay thế** điều kiện toán học.
+    <span data-thpt-help-id="HELP-G11-B17-TRY01" hidden></span>
 
-Với hàm cho bởi các công thức khác nhau ở các khoảng, hãy so sánh giới hạn trái, giới hạn phải và **giá trị thật tại điểm nối**. Ví dụ f(x)=x+1 khi x<1 và f(x)=m khi x≥1: phía trái tiến đến 2, phía phải tiến đến m, đồng thời f(1)=m. Liên tục tại 1 khi và chỉ khi m=2.
+    ??? tip "Kiểm lỗi"
 
-### 1.3. Từ điểm sang khoảng, đoạn
+        **Dấu hiệu:** Chỉ thấy giới hạn bằng 2 rồi kết luận liên tục bất kể f(1).
 
-Liên tục trên khoảng (a,b) nghĩa là liên tục tại mọi điểm bên trong. Liên tục trên đoạn [a,b] còn cần:
-- ở a: **lim_{x→a⁺}f(x)=f(a)**;
-- ở b: **lim_{x→b⁻}f(x)=f(b)**.
+        **Tự sửa:** Kiểm đủ ba bước: f(a) có nghĩa, giới hạn hữu hạn tồn tại, chúng bằng nhau. Ôn mục 2.1; luyện Core B17-C01/C02 ở [Luyện tập](../luyen-tap/).
 
-Tại đầu mút không đòi hỏi phía nằm **ngoài** đoạn xác định. Ví dụ √x liên tục trên [0,9], kiểm tra tại 0 từ bên phải và tại 9 từ bên trái.
+    ### 1.2. Tại điểm nối của hàm từng đoạn, phải kiểm hai phía và giá trị thật
 
-Các hàm đa thức liên tục trên R; hàm phân thức liên tục ở nơi mẫu khác 0. Tổng/hiệu/tích của các hàm liên tục là liên tục; thương chỉ khi **mẫu tại điểm xét khác 0**. Không được nói phân thức liên tục trên toàn R nếu mẫu có nghiệm thực.
+    Nếu quy tắc tính thay đổi tại \(x=a\), ta không thể tự dùng một công thức duy nhất. Hãy tính \(\lim_{x\to a^-}f(x)\), \(\lim_{x\to a^+}f(x)\), và \(f(a)\). Ba giá trị phải khớp mới liên tục. Câu hỏi “tham số bao nhiêu?” chính là bài toán **ép ba giá trị khớp**.
 
-### 1.4. Ứng dụng: biết có nghiệm dù chưa giải ra
+    **Vận dụng — Tự thử trước Core.** Cho \(f(x)=mx+1\) khi \(x<2\) và \(f(x)=x^2-1\) khi \(x\ge2\). Tìm \(m\) để f liên tục tại 2.
 
-Nếu f **liên tục trên cả đoạn [a,b]** và f(a), f(b) trái dấu, đồ thị phải đi qua trục hoành ở **ít nhất một điểm** nằm giữa a và b. Ta viết điều kiện f(a)f(b)<0 và kết luận tồn tại c∈(a,b) sao cho f(c)=0. Không thể kết luận chỉ có đúng một nghiệm; muốn chứng minh duy nhất phải có lập luận bổ sung.
+    <span data-ped-first-try="2" data-outcome-id="G11-B17-CONTINUITY_POINT" data-thpt-first-try-id="THPT-G11-B17-TRY02" hidden></span>
 
-Ví dụ f(x)=x³+x−1: f(0)=−1, f(1)=1, và f là đa thức liên tục trên [0,1]. Vậy tồn tại một nghiệm trong (0,1).
+    ??? question "Đối chiếu"
 
+        **Lời giải:** Giới hạn trái là \(2m+1\), giới hạn phải là \(2^2-1=3\); \(f(2)=3\). Liên tục khi \(2m+1=3\), suy ra \(\boxed{m=1}\). Phải dùng **nhánh phải** để xác định giá trị tại 2 vì dấu \(\ge\).
 
+    <span data-thpt-help-id="HELP-G11-B17-TRY02" hidden></span>
 
-**Tự thử trước Core:** Giả sử f có giới hạn tại a bằng 3 nhưng f(a)=5. Hàm có liên tục tại a không? Vì sao? Sau đó chuyển sang Core/Practice để luyện độc lập, không tính điểm mastery từ câu tự thử.
+    ??? tip "Kiểm lỗi"
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở đối chiếu</summary><p>không, vì giá trị tại a khác giới hạn.</p></details>
+        **Dấu hiệu:** Cho x=2 vào nhánh có dấu < hoặc chỉ so hai biểu thức mà quên f(2).
 
+        **Tự sửa:** Đánh dấu nhánh chứa dấu bằng để lấy f(a), rồi so trái/phải. Ôn mục 2.1; luyện Practice B17-P02/P06 trong [Core và Luyện tập](../luyen-tap/).
 
+    ### 1.3. Liên tục trên đoạn cần kiểm hai đầu mút theo đúng phía
 
-## 2. Ví dụ có suy luận và điều kiện
+    Liên tục trên khoảng \((a,b)\) nghĩa là liên tục ở mọi điểm bên trong. Với đoạn **đóng** \([a,b]\), còn phải kiểm \(\lim_{x\to a^+}f(x)=f(a)\) và \(\lim_{x\to b^-}f(x)=f(b)\). Không đòi xét giá trị từ bên **ngoài đoạn**; ví dụ \(\sqrt x\) có nghĩa cho \(x\ge0\) mà vẫn liên tục trên \([0,9]\).
 
-### Bốn ví dụ độc lập
+    **Vận dụng — Tự thử trước Core.** Hàm \(f(x)=\sqrt{x}\) liên tục trên \([0,4]\) không? Tại \(x=0\) phải xét giới hạn từ phía nào?
 
-**EX-G11-B17-01 — Tham số ghép nhánh.** Cho f(x)=x+1 nếu x<1; f(x)=m nếu x≥1. Hai phía tại 1 lần lượt tiến tới 2 và m, f(1)=m. Để liên tục tại 1 cần và đủ m=2.
+    <span data-ped-first-try="3" data-outcome-id="G11-B17-CONTINUITY_INTERVAL" data-thpt-first-try-id="THPT-G11-B17-TRY03" hidden></span>
 
-**EX-G11-B17-02 — Miền liên tục của phân thức.** Với h(x)=(x+1)/(x−2), mẫu chỉ bằng 0 tại x=2. Vì vậy h liên tục trên (−∞,2) và (2,+∞), không liên tục tại 2 do hàm không xác định. **Bẫy:** không thể gọi liên tục trên toàn R.
+    ??? question "Đối chiếu"
 
-**EX-G11-B17-03 — Đoạn có đầu mút.** f(x)=√x liên tục trên [0,9]: với mọi điểm trong (0,9) hàm liên tục; lim_{x→0^+}√x=0=f(0), lim_{x→9^-}√x=3=f(9). Không xét lim_{x→0^-} trong miền R, vì căn không xác định khi x<0.
+        **Lời giải:** Có. Trên \((0,4)\), căn bậc hai liên tục. Tại 0, xét \(\lim_{x\to0^+}\sqrt x=0=f(0)\); tại 4, xét \(\lim_{x\to4^-}\sqrt x=2=f(4)\). Vì vậy f liên tục trên **đoạn \([0,4]\)**; không cần giới hạn trái tại 0.
 
-**EX-G11-B17-04 — Chứng minh tồn tại nghiệm.** Đặt g(x)=x³+x−1. Đa thức liên tục trên [0,1], g(0)=−1<0, g(1)=1>0. Vậy tồn tại c∈(0,1) sao cho g(c)=0. Kết luận mới là **ít nhất một nghiệm**; chưa dùng phép đổi dấu để suy duy nhất.
+    <span data-thpt-help-id="HELP-G11-B17-TRY03" hidden></span>
 
-## 3. Tự khắc phục lỗi và quay lại câu gốc
+    ??? tip "Kiểm lỗi"
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHV-B17-01"><summary>Biết lim f(x) mà quên kiểm tra f(a).</summary><ol><li><strong>Nhận diện:</strong> Biết lim f(x) mà quên kiểm tra f(a).</li>
-<li><strong>Nhắc bản chất và điều kiện:</strong> Liên tục tại điểm yêu cầu f(a) xác định VÀ bằng giới hạn hữu hạn hai phía.</li>
-<li><strong>Sửa cách nghĩ:</strong> Hãy nói lại bằng lời tại sao bước trước chưa đủ để kết luận, rồi kiểm tra giả thiết trước phép biến đổi.</li>
-<li><strong>Tự thử trước khi mở đáp án:</strong> Giới hạn g khi x→3 là 9, nhưng g(3)=0: liên tục không?. <strong>Tự đối chiếu sau khi thử:</strong> Không, vì giá trị tại điểm không khớp với giới hạn.</li>
-<li><strong>Quay lại bài gốc:</strong> làm lại <code>THPT-G11-CHV-B17-C02</code> và giải thích bằng lời vì sao kết luận đúng.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHV-B17-C02">Quay lại THPT-G11-CHV-B17-C02</a></p></details>
+        **Dấu hiệu:** Cho rằng không liên tục vì (sqrt x) không định nghĩa với (x<0).
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHV-B17-02"><summary>Suy ngay nghiệm duy nhất từ việc đổi dấu.</summary><ol><li><strong>Nhận diện:</strong> Suy ngay nghiệm duy nhất từ việc đổi dấu.</li>
-<li><strong>Nhắc bản chất và điều kiện:</strong> Định lí giá trị trung gian chỉ bảo đảm ít nhất một nghiệm khi liên tục trên đoạn và hai đầu trái dấu.</li>
-<li><strong>Sửa cách nghĩ:</strong> Hãy nói lại bằng lời tại sao bước trước chưa đủ để kết luận, rồi kiểm tra giả thiết trước phép biến đổi.</li>
-<li><strong>Tự thử trước khi mở đáp án:</strong> Với p(x)=x³−2 trên [1,2], hãy xác định dấu hai đầu. <strong>Tự đối chiếu sau khi thử:</strong> p(1)=−1, p(2)=6, nên có ít nhất một nghiệm; muốn duy nhất cần lí do khác.</li>
-<li><strong>Quay lại bài gốc:</strong> làm lại <code>THPT-G11-CHV-B17-P03</code> và giải thích bằng lời vì sao kết luận đúng.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHV-B17-P03">Quay lại THPT-G11-CHV-B17-P03</a></p></details>
+        **Tự sửa:** Phân biệt **điểm trong** và **đầu mút** đoạn. Ôn mục 2.2; luyện Core B17-C03 và Practice B17-P05.
 
-## 4. Luyện tập và tự đối chiếu
+    ### 1.4. Các hàm thường gặp liên tục ở đâu?
 
-[Core và Luyện tập Bài 17](luyen-tap.md) · [Tự luận Chương V](../../../thu-vien/tu-luan-g11-chuong-v.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    Hàm đa thức liên tục tại mọi số thực. Hàm phân thức hữu tỉ liên tục **trên miền mà mẫu khác 0**, không nhất thiết trên toàn trục thực. Căn bậc hai liên tục ở miền xác định (kiểm một phía tại đầu mút). Vì thế trước khi tuyên bố “hàm liên tục”, phải nêu rõ **miền hoặc khoảng đang xét**.
+
+    **Vận dụng — Tự thử trước Core.** Cho \(h(x)=\frac{x+3}{x-2}\). Hãy nêu các khoảng mà h liên tục và lý do không được ghi “liên tục trên \(\mathbb R\)”.
+
+    <span data-ped-first-try="4" data-outcome-id="G11-B17-ELEMENTARY_CONTINUITY" data-thpt-first-try-id="THPT-G11-B17-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Mẫu bằng 0 khi \(x=2\), nên h không xác định tại 2. Là phân thức, h liên tục trên mỗi khoảng \((-\infty,2)\) và \((2,+\infty)\). Không thể liên tục tại điểm **không thuộc tập xác định**.
+
+    <span data-thpt-help-id="HELP-G11-B17-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Bỏ điều kiện mẫu khác 0.
+
+        **Tự sửa:** Tìm miền xác định trước, sau đó áp dụng định lý hàm sơ cấp. Ôn mục 2.3; luyện Practice B17-P01 trong [Luyện tập](../luyen-tap/).
+
+    ### 1.5. Tổng, tích và thương các hàm liên tục vẫn cần điều kiện
+
+    Nếu \(f,g\) liên tục tại \(a\), tổng, hiệu, tích cũng liên tục tại \(a\). Thương \(f/g\) chỉ liên tục nếu **\(g(a)\ne0\)**. Đây chính là điều kiện phép chia của giới hạn Bài 16. Những quy tắc ấy không cho phép bỏ qua miền xác định hoặc lấy giá trị tại chỗ phân thức có mẫu bằng 0.
+
+    **Vận dụng — Tự thử trước Core.** Hai hàm \(f(x)=x+1\), \(g(x)=x-3\) liên tục mọi nơi. Thương \(f/g\) có liên tục tại \(x=3\) không?
+
+    <span data-ped-first-try="5" data-outcome-id="G11-B17-CONTINUITY_OPERATIONS" data-thpt-first-try-id="THPT-G11-B17-TRY05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Không. Tại \(x=3\), \(g(3)=0\) nên \((f/g)(3)\) **không xác định**. Thương \((x+1)/(x-3)\) liên tục ở mọi \(x\ne3\), nhưng không thể gọi liên tục tại 3 dù từng hàm f,g đều liên tục.
+
+    <span data-thpt-help-id="HELP-G11-B17-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Cho rằng thương hai hàm liên tục luôn liên tục ở mọi số thực.
+
+        **Tự sửa:** Thêm kiểm (g(a)
+e0) trước khi dùng quy tắc. Ôn mục 2.3, luyện Practice B17-P01/P04.
+
+    ### 1.6. Đổi dấu và liên tục: vì sao bảo đảm ít nhất một nghiệm?
+
+    Nếu một hàm **liên tục trên cả đoạn \([a,b]\)** và \(f(a)f(b)<0\), nó phải đi qua giá trị 0 tại **ít nhất một** điểm trong \((a,b)\). Đây là ứng dụng định lý giá trị trung gian. Nhưng **đổi dấu không tự chứng minh nghiệm duy nhất**: một đường liên tục có thể đi qua trục hoành nhiều lần.
+
+    **Vận dụng — Tự thử trước Core.** Cho \(p(x)=x^3-5\) trên \([1,2]\). Chứng minh tồn tại nghiệm trong \((1,2)\). Có được kết luận ngay “nghiệm duy nhất” chỉ từ hai giá trị ở đầu đoạn không?
+
+    <span data-ped-first-try="6" data-outcome-id="G11-B17-ZERO_EXISTENCE" data-thpt-first-try-id="THPT-G11-B17-TRY06" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Đa thức liên tục trên \([1,2]\). \(p(1)=-4<0\), \(p(2)=3>0\), nên theo định lý giá trị trung gian tồn tại **ít nhất một** \(c\in(1,2)\) với \(p(c)=0\). Chỉ từ điều kiện liên tục và đổi dấu chưa thể khẳng định **duy nhất**; nếu muốn chứng minh riêng tính duy nhất của bài này, cần thêm lập luận đơn điệu \(x^3-5\) tăng nghiêm ngặt.
+
+    <span data-thpt-help-id="HELP-G11-B17-TRY06" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Viết “đổi dấu nên có đúng một nghiệm” mà không xét thêm tính đơn điệu.
+
+        **Tự sửa:** Chỉ kết luận **ít nhất một**, sau đó nêu yêu cầu riêng để chứng minh duy nhất. Ôn mục 2.4; làm Practice B17-P03/P07 tại [Luyện tập](../luyen-tap/).
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Hàm số liên tục tại một điểm
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa:</strong> Hàm \(f\) liên tục tại \(a\) nếu **\(f(a)\) xác định**, giới hạn hữu hạn \(\lim_{x\to a}f(x)\) tồn tại (theo các phía phù hợp của miền xác định) và
+    \[
+      \lim_{x\to a}f(x)=f(a).
+    \]
+    Với điểm trong miền có hai phía, phải khớp cả giới hạn trái và phải. Không sử dụng một hình vẽ “liền nét” thay cho ba điều kiện toán học.</div>
+
+    <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/FIG-G11-B17-01_R01.svg" loading="lazy" alt="Đồ thị có lỗ rỗng tại (1,2) và chấm đặc tại (1,0) cho thấy giới hạn là 2 nhưng f(1)=0"><figcaption>Đọc hình: **vòng tròn rỗng** tại \((1;2)\) mô tả giá trị được tiến gần; **chấm đặc** tại \((1;0)\) là \(f(1)\) thật. Hai độ cao không khớp ⇒ hàm **không liên tục tại 1**.</figcaption></figure>
+
+    ### 2.2. Liên tục trên khoảng và trên đoạn
+
+    Hàm liên tục trên \((a,b)\) nếu liên tục ở mọi điểm thuộc khoảng. Hàm liên tục trên **đoạn \([a,b]\)** nếu liên tục trên \((a,b)\), và
+    \[
+    \lim_{x\to a^+}f(x)=f(a),\qquad \lim_{x\to b^-}f(x)=f(b).
+    \]
+    **Ở hai đầu mút** chỉ xét phía thuộc đoạn. Điều kiện còn cần mọi điểm trên đoạn đều thuộc miền xác định.
+
+    ### 2.3. Hàm sơ cấp và phép toán với hàm liên tục
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc:</strong> Hàm đa thức liên tục trên \(\mathbb R\). Hàm phân thức liên tục tại nơi mẫu khác \(0\). Hàm căn liên tục trên miền xác định (đầu mút xét một phía). Tổng, hiệu, tích của hai hàm liên tục tại a cũng liên tục; thương cần thêm **mẫu tại a khác 0**.</div>
+
+    Với hàm từng phần, **tính hai giới hạn một phía và giá trị tại điểm ghép**; không chỉ xét công thức có dấu bằng rồi kết luận.
+
+    ### 2.4. Định lý giá trị trung gian và hệ quả về nghiệm
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lý và hệ quả:</strong> Nếu \(f\) **liên tục trên đoạn \([a,b]\)** thì với mọi số \(L\) nằm giữa \(f(a)\) và \(f(b)\), tồn tại \(c\in[a,b]\) sao cho \(f(c)=L\). Đặc biệt, nếu \(f(a)f(b)<0\), tồn tại **ít nhất một** \(c\in(a,b)\) có \(f(c)=0\).</div>
+
+    **Giới hạn suy luận:** Không khẳng định nghiệm duy nhất từ đổi dấu. Nếu muốn kết luận duy nhất còn cần cơ sở khác, chẳng hạn chứng minh hàm **tăng/giảm nghiêm ngặt** trên đoạn.
+
+=== "Ví dụ"
+
+    Mỗi Ví dụ có lí do chọn phương pháp và bước kiểm điều kiện.
+
+    ### 3.1. Lấp lỗ bằng giá trị đúng giới hạn
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** Với \(f(x)=\frac{x^2-16}{x-4}\) khi \(x\ne4\) và \(f(4)=m\), tìm m để liên tục tại 4. **Chọn phương pháp:** Tính giới hạn quanh 4 trước. **Giải:** Với \(x\ne4\), \(f(x)=x+4\); giới hạn bằng 8. Do đó \(m=8\). **Kiểm:** Khi đặt m=8, giá trị tại 4 khớp giới hạn.</p></div>
+
+    ### 3.2. Nối hai công thức với tham số
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** \(f(x)=x+1\) nếu \(x<1\), \(f(x)=m\) nếu \(x\ge1\). **Chọn phương pháp:** So trái, phải và giá trị tại điểm nối. **Giải:** Giới hạn trái bằng 2, giới hạn phải bằng m, \(f(1)=m\). Liên tục tại 1 khi và chỉ khi \(m=2\). **Kiểm:** Khi m khác 2, hàm bị nhảy tại 1.</p></div>
+
+    ### 3.3. Hàm căn trên đoạn đóng
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** Chứng minh \(f(x)=\sqrt x\) liên tục trên \([0,9]\). **Chọn phương pháp:** Kiểm trong khoảng và **hai giới hạn một phía** ở đầu. **Giải:** Căn liên tục trên \((0,9)\); \(\lim_{x\to0^+}\sqrt x=0=f(0)\); \(\lim_{x\to9^-}\sqrt x=3=f(9)\). **Kiểm:** Không đòi giá trị với \(x<0\).</p></div>
+
+    ### 3.4. Miền liên tục của phân thức
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** \(h(x)=\frac{x+1}{x-2}\) liên tục ở đâu? **Chọn phương pháp:** Tìm miền xác định trước. **Giải:** Hàm phân thức liên tục khi mẫu khác 0, tức trên \((-\infty,2)\) và \((2,\infty)\). **Kiểm:** Tại 2, mẫu 0 và h không xác định.</p></div>
+
+    ### 3.5. Tồn tại nghiệm nhưng chưa đủ để nói duy nhất
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** Chứng minh \(g(x)=x^3+x-1\) có nghiệm trong \((0,1)\). **Chọn phương pháp:** Dùng định lý giá trị trung gian. **Giải:** g là đa thức nên liên tục trên \([0,1]\); \(g(0)=-1<0\), \(g(1)=1>0\), suy ra tồn tại \(c\in(0,1)\) với \(g(c)=0\). **Kiểm:** Lập luận này **chỉ xác nhận ít nhất một nghiệm**; nếu cần duy nhất, chứng minh thêm g tăng nghiêm ngặt.</p></div>
+
+    ### 3.6. Phản ví dụ: đổi dấu vẫn có thể có ba nghiệm
+
+    <div class="thpt-g10-example-solution"><p>**Đề:** Xét \(p(x)=x(x-1)(x+1)\) trên \([-2,2]\). Hai đầu có trái dấu không, và p có bao nhiêu nghiệm phân biệt? **Chọn phương pháp:** Tính hai đầu và phân tích nhân tử, không suy duy nhất từ đổi dấu. **Giải:** \(p(-2)=(-2)(-3)(-1)=-6<0\), \(p(2)=2\cdot1\cdot3=6>0\). Nhưng p có **ba nghiệm** \(-1,0,1\) nằm trong đoạn. **Kiểm:** Ví dụ bác bỏ kết luận “trái dấu ⇒ đúng một nghiệm”.</p></div>
+
+    ### 3.7. Ứng dụng: kiểm tính liên tục của bảng cước taxi theo quãng đường
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề:</strong> Trong một **mô hình giả định tính cước liên tục theo kilômét**, khách trả 10.000 đồng cho \(0<x\le0{,}5\) km; phần quãng đường vượt \(0{,}5\) đến \(30\) km tính 13.500 đồng/km; phần **vượt 30** km tính 11.000 đồng/km. Viết hàm cước \(C(x)\) và kiểm tính liên tục tại \(x=0{,}5\) và \(x=30\).</p>
+    <p><strong>Chọn phương pháp:</strong> Mỗi mức giá theo kilomet chỉ áp cho **phần vượt ngưỡng**, nên sau ngưỡng phải cộng số tiền tích lũy ở ngưỡng trước. Sau đó so giới hạn trái/phải với giá tại ngưỡng, không lấy giá 13.500 làm toàn bộ cước của km sau.</p>
+    <p><strong>Lời giải:</strong> Với \(x>0\), đơn vị đồng:
+    \[
+    C(x)=\begin{cases}
+    10000,&0<x\le0{,}5,\\
+    10000+13500(x-0{,}5),&0{,}5<x\le30,\\
+    10000+13500(30-0{,}5)+11000(x-30),&x>30.
+    \end{cases}
+    \]
+    Khi \(x\to0{,}5^-\) và \(x\to0{,}5^+\), hai phía đều tiến tới 10.000 đồng, đúng \(C(0{,}5)\). Tại \(x=30\), hai phía đều tiến tới \(10000+13500\cdot29{,}5=408250\) đồng, đúng \(C(30)\). Vì vậy mô hình liên tục ở **hai điểm ghép**.</p>
+    <p><strong>Kiểm lại:</strong> Mỗi nhánh là hàm liên tục trên khoảng của nó. Đây là **mô hình cước lũy tiến giả định** giúp học điều kiện liên tục, không khẳng định biểu phí thực tế hay cơ chế làm tròn từng km của hãng taxi.</p></div>
+
+=== "Lỗi thường gặp"
+
+    Nếu sai Vận dụng, hãy mở Kiểm lỗi tương ứng và giải lại Core/Practice khác số liệu.
+
+    <span data-thpt-help-id="HELP-G11-B17-01" hidden></span>
+
+    ??? tip "4.1. Biết giới hạn nhưng quên kiểm (f(a))"
+
+        **Vì sao sai:** Kết luận chưa đủ điều kiện để áp định nghĩa hoặc định lý.
+
+        **Tự sửa:** Kiểm đủ 3 điều kiện liên tục tại a; ôn 2.1, làm Core B17-C01/C02.
+
+    <span data-thpt-help-id="HELP-G11-B17-02" hidden></span>
+
+    ??? tip "4.2. Chọn nhầm nhánh tại điểm ghép"
+
+        **Vì sao sai:** Kết luận chưa đủ điều kiện để áp định nghĩa hoặc định lý.
+
+        **Tự sửa:** Đọc dấu (<,le,ge) để lấy f(a), so trái/phải; ôn 2.1 và Practice B17-P02/P06.
+
+    <span data-thpt-help-id="HELP-G11-B17-03" hidden></span>
+
+    ??? tip "4.3. Đòi giới hạn hai phía tại đầu mút đoạn"
+
+        **Vì sao sai:** Kết luận chưa đủ điều kiện để áp định nghĩa hoặc định lý.
+
+        **Tự sửa:** Ở đầu trái xét giới hạn phải, ở đầu phải xét giới hạn trái; ôn 2.2, Practice B17-P05.
+
+    <span data-thpt-help-id="HELP-G11-B17-04" hidden></span>
+
+    ??? tip "4.4. Quên miền xác định hoặc kết luận duy nhất từ đổi dấu"
+
+        **Vì sao sai:** Kết luận chưa đủ điều kiện để áp định nghĩa hoặc định lý.
+
+        **Tự sửa:** Thương yêu cầu mẫu khác 0; định lý giá trị trung gian chỉ đảm bảo **ít nhất một nghiệm**; luyện B17-P01/P07.
+
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương V](../../../../thu-vien/tu-luan-g11-chuong-v/).
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 17 (trang in 119–122).</p>
