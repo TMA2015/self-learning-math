@@ -1,20 +1,39 @@
+<!-- TOP06_MASTER974_CURRENT_Q18_DELTAC_20261121 -->
+## CĐ06 — CURRENT Q18 AUTHOR_SELF_VERIFIED (Q01–Q18 v3.2.0) · học sinh tự học thật
+
+**CURRENT one canonical learner:** `prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md` Git blob **`edfecb3edd165e87bcb615ec4cbb66833ad52675`**, baseline immutable source `55cbb23d860aaff700c959bc291ec44699584159`; no new R07/alternate student text. One shared Topic bank `f83b285ff0c8f4e45b724cf06248935e5d618b65` and original 46 G11 items `256ceb5edc5e02aec320e83e99c8e08e035654f3` unchanged. One current Q18 file reused, standard `SLM-THPT-QUALITY-ONE v3.2.0`.
+
+**Inherited S1/math proof, with scoped receipt:** SGK KNTT G11 tập 1 Chương I B1 p5–16/B2 p17–21/B3 p22–30/B4 p31–39, primary original-image section audit Git blob `166c06dce6de9490e0a855a2c10dc9ca1e69ca89` and direct author mathematical audit of 66 canonical/16 student paths `9745d0c9a2feb091ac84428a3e319e69d0110325`. These prove original SOURCE-specific inspected scope, not a new direct full-book PDF or independent NotebookLM full-Topic verdict. Only the three learner regions below materially changed, each rechecked math/PED by author.
+
+**Verified/current #977 TOP22-20261121-019 (P2, Q08/Q14/PED6) FIXED:** O01 Vận dụng `-150°=-5π/6` original math preserved; added one `Kiểm lỗi` inside original voluntary `Đối chiếu` pointing to **Kiến thức 1.1 + real Practice Bài 1** (135°→3π/4, quadrant II) and **Bài 6** (−450°→−5π/2, final ray (0,−1)), with sign and number-of-revolutions diagnosis. Now **all 16/16 outcomes** have actual Practice-number recovery targets; previous 15 are unchanged.
+
+**Verified/current #977 TOP22-20261121-020 (P2, Q16/Q17/PED6) FIXED:** Tự kiểm tra remains **16 original public question-only `PUBLIC_REPLAY_ONLY` stems** reused; after all questions insert **one opt-in `Đối chiếu`** mapping Câu 1–16 to actual original Practice Bài `6,7,8,23,24,25,26,39,40,41,42,60,61,62,63,64` in order. Checked each shared `item_id` against `DISPLAY_ONLY_CANONICAL` Bài number, **16/16 exact**. No original key/solution/rubric disclosed within selfcheck; students first solve all, then voluntarily open map and original Practice solutions. **`CLIENT_SELF_CHECK_NO_MASTERY`**, not hidden/official held-out TOPIC_READINESS, Final Submit or any Mastery.
+
+**Verified/current #977 TOP22-20261121-021 (P1, Q04/Q08/Q14/PED4–6) FIXED:** O16 immediate Ví dụ already gives `h(t)=2+0.5cos(πt/4)`, T=8, **minimum 1.5 m at t=4,12**, and prior first-try simply asks **same h(12)**, exposing answer 1.5 before self-attempt. Kept Ví dụ exact; replaced only `Vận dụng` and existing opt-in `Đối chiếu` with distinct transfer model `h(t)=4+0.8sin(πt/8)` m, `0≤t≤16` h, asking period, h(4), and whether one can assert a model value at t=20 from supplied time range. Mathematically independently checked: `ω=π/8`, `T=2π/(π/8)=16` hours; `sin(π·4/8)=sin(π/2)=1`, so **h(4)=4.8 m**; **20 outside [0,16]** so no valid *real-scenario inference*, even though abstract sin function is defined. D6 explains missing angular coefficient/extension beyond model and points to actual Bài64 (period/domain) and Bài56 (time restrictions). Not duplicate original 66 Practice or former worked Example.
+
+**Source Q15/Q16 inverse-diff/direct readback:** by replacing only **O01 whole FirstTry+reveal**, **O16 whole FirstTry+reveal** and removing **one post-selfcheck navigation disclosure** from current source, reconstructed prior whole source **byte-identically**. Therefore no accidental changes outside three bounded regions. All **66/66 original canonical Practice IDs/stems/keys/solutions (46 SGK +20 Topic), 8 Written rubrics** unchanged byte-for-byte, all original 16 selfcheck questions unchanged, 3 SVG unchanged; 16/16 Knowledge units, 83/83 balanced `details` (16 Knowledge +66 Practice +1 Selfcheck navigation), SGK attribution exactly once at entire Topic end. All new selftry answers hidden behind original voluntary opt-in. `DELTA_C_PED_TARGETED` because O16 reasoning/first-try changed; direct AUTHOR_SELF_VERIFIED scope with P0/P1=0 after fix. Independent NotebookLM reviewer verdict **NOT_NEWLY_REQUESTED/NOT_CLAIMED**; no RELEASE/website/RD1/Final Submit/Firebase/merge/deploy.
+
+**Handoff:** After this source lock, existing single metadata A1–A7, one V2, one ready and one REGISTER entry must match this source/Q18 Git SHA; RELEASE AP/R and owner authorization remain independent.
+
+---
+
 # CĐ06 R06 · Current source-locked Q18 composite self-review · 18/11/2026
 
 PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R06
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-AUTHOR_SELF_QA_RECEIPT: TOP06_R06_CURRENT_SOURCE_SIGNED_AUTHOR_SELF_QA_20261118
+AUTHOR_SELF_QA_RECEIPT: TOP06_MASTER974_20261121_PED6_AND_INDEPENDENT_FIRSTTRY_SOURCE_LOCK_edfecb3edd165e87bcb615ec4cbb66833ad52675
 P0: 0
 P1: 0
 S1_RECEIPT: Historic immutable owner-S1 KNTT G11 Tập Một ChI B01–B04 SGK and SBT printed-page receipts reused from signed prior R05; no new physical PDF scan claimed.
 OUTCOME_AUDIT: Direct inspected current student 16/16 TOP06-O01–O16, 16 standalone Ví dụ/Đề bài/Lời giải and Vận dụng/Đối chiếu, 66 real unique public Bài and 16 question-only Tự kiểm tra placements.
 MATH_VERIFICATION: Checked current domain/degree/radian/quadrant/tan/cot restrictions, interval and phase examples; R05 older 54 signed maths checks remain scoped to old source, no unsupported newly comprehensive maths PASS.
-PED_VERIFICATION: Verified current 16 meaning-first lessons, 15 corrected D6 destinations linked to real Bài headings and error-specific phase/range O10 and lost-root O14, three in-context SVG.
+PED_VERIFICATION: 16/16 correct D6 routes to actual Practice; independent O16 model FirstTry verified and 16 public selfchecks have one voluntary answer-location map; 3 SVG and 66 canonical items preserved.
 CANONICAL_Q15: 46 immutable original G11 IDs plus 20 new original Topic IDs =66 unique real display-only item placements, two frozen bank source hashes, 16 public question-only replay IDs, no duplicate canonical owner.
 ASSESSMENT_Q16: Public replays are CLIENT_SELF_CHECK_NO_MASTERY only; no private RD1 exposed, official Final Submit, independent Topic Readiness or Skill Mastery produced.
 SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 55cbb23d860aaff700c959bc291ec44699584159
+SOURCE_BLOB: edfecb3edd165e87bcb615ec4cbb66833ad52675
 BASELINE_R05_SOURCE_BLOB: dd3af68f681eba9a7b75040d9490815f81efdd6b
 BASELINE_R05_Q18_RECEIPT_BLOB: 8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f
 R06_PED6_TARGETED_RECEIPT_BLOB: 2d7686a55f2196e7422bf30dfd6d0dc3fcc10e83
@@ -50,7 +69,7 @@ Public 16 reused Selfchecks are question-only and `CLIENT_SELF_CHECK_NO_MASTERY`
 ## DELTA_CLASSIFICATION_AND_Q18_SCOPE
 R05 student blob `dd3af68f681eba9a7b75040d9490815f81efdd6b` and author self-verification receipt `8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f` are immutable historical evidence, not automatically valid for current R06. The R06 numbered headings were verified in scoped delta `879ad8bf09e1b5f5efd33c8266a021d9d9638df8`; the 15 current FirstTry D6 repairs and exact learner bank pointers in targeted receipt `2d7686a55f2196e7422bf30dfd6d0dc3fcc10e83`. Additional formal knowledge boxes/recap were re-read in CURRENT R06 source, not backdated to R05. These are DELTA_C academic/pedagogical affected changes with source-specific author self-Q18 evidence, not a claim of new full-independent NotebookLM verdict. Check #864 13 editorial rules and #865 OPEN/RECHECK regressions on actual source. Source SHA pinned, original bank source and three SVG bytes unchanged.
 
-AUTHOR_SIGNOFF: TOP06_R06_16_OUTCOMES_66_CANONICAL_15_PED6_CURRENT_AUTHOR_SELF_Q18_20261118
+AUTHOR_SIGNOFF: TOP06_MASTER974_AUTHOR_SELF_QA_16_OUTCOME_66_PRACTICE_O16_TRANSFER_edfecb3edd165e87bcb615ec4cbb66833ad52675
 VERDICT: ACADEMIC_PED_AUTHOR_SELF_VERIFIED_CURRENT_R06_SOURCE
 RELEASE_AUTHORIZATION: NO
 
