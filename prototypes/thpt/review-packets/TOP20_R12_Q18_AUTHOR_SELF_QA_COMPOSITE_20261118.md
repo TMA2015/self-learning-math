@@ -1,3 +1,33 @@
+<!-- TOP20_MASTER974_CURRENT_Q18_SOURCE_LOCK_20261121 -->
+## CURRENT CĐ20 R12 · targeted author Q18 source/math/PED verification
+
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+SOURCE_BLOB: b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9
+SOURCE_COMMIT: ffd9dedc11bea298a8a53fabdb27afd9b76d47e5
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+Q15_CURRENT_MATRIX_BLOB: d65cf51dbe72f62484ae26171d8afe45daf47ae8
+CURRENT_AUTHOR_SIGNOFF: TOP20_MASTER974_17_D6_20_PRACTICE_11_SAME_ID_REPLAY_T06_TRANSFER_20261121_b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9
+DELTA_CLASSES: DELTA_C_ACADEMIC_MATERIAL_TARGETED_T06_STEM_KEY_VERSION; DELTA_C_PED_TARGETED_T05_REMEDIAL_LINK; DELTA_A_17_KIEM_LOI_LABELS_20_UNIQUE_CAPTIONS_11_PUBLIC_REPLAY_LOOKUP
+QA_OBSERVED_P0: 0
+QA_OBSERVED_P1: 0
+QA_OBSERVED_P2: 0
+INDEPENDENT_NOTEBOOKLM_FULL_TOPIC_PASS: NOT_CLAIMED
+BROWSER_AP_R_REAL_DEVICE_FINAL_SUBMIT: NOT_ASSESSED_IN_AUTHORING
+
+**Current source custody:** One and only existing R12 learner `prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md` Git blob `b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9`, previous source `a336816eb1935c739bd1f128bd81de7b510d0060` immutable in Git history. Exact one owner-effective `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18, owner editorial #864; historical R10/R11/R12 author receipts remain source-scoped. Original G10 KNTT Tập Hai ChIX B26–B27 printed77–89 historical source receipt `cc77149f693bde62ceaa1920e74df7e9dbc9bfec`, original G11 KNTT Tập Hai ChVIII B28–B30 printed66–80 owner-source receipt `d7477d24e8513e8e2e60a1f583d4b52e6c29bfc9` are **INHERITED_SNAPSHOT_SCOPED**, no new direct PDF image inspection or independent full Topic NotebookLM in this revision.
+
+**Q03–Q14 PED and direct math changes:**
+- **#977-071 P1 fixed** on original Topic-owned canonical ID `THPT-TOP20-T06` (outcome O11): existing mathematically correct visible Venn SVG `FIG-TOP20-G11-B28-B29_VENN_WHITE_R00.svg` Git `f5a545211a078d4b39ec1efcae21be696bc62f60` had exactly original student union `A∪B={2,4,5,6}` displayed BEFORE T06, making much of the transfer answer copyable. Preserve original source-locked picture as correct concept formation, but NOW T06 states independently `Ω={1,2,3,4,5,6}`, A even `{2,4,6}`, B number ≤2 `{1,2}`; actual intersection `{2}`, union `{1,2,4,6}` (not the visually pre-shown union). Checked conditions and distinctness, updated exact one original T06 content-version `TOP20-R12-20261121-T06`, voluntary answer and explicit D6 diagnostic about confusing figure's B>3 with new B≤2. Other sixteen actual FirstTry mathematical stem/key bodies **unchanged**; T05 only valid remedy navigation changed (not mathematical answer/content version). This is real targeted `DELTA_C_ACADEMIC_MATERIAL`.
+- **#977-068 P2 fixed**: Original 17 differentiated practical `Khi làm sai` explanations were mathematical and source-accurate, now student-visible `Kiểm lỗi` label consistently inside voluntary `Đối chiếu`. T05 (two dice and sum12, non-equiprobable sum totals) previously misdirected novice to Bài luyện10 (two-red sequential draw) rather than existing correct **Bài luyện6** (P06: sum of two nonreturned cards, 12 equally likely ordered pairs but sums have different weights, P(sum5)=4/12 and sum7=2/12). Changed T05 recommendation to Bài6 for non-uniform-sum diagnostic and Bài10 only for later sequence-order refinement; original T05 answer36 elementary pairs, P(sum12)=1/36 **unchanged**. All 17 original contextual diagnoses remain (no fake generic duplication).
+- **#977-069 P2 fixed:** Original 17 Topic Practice+3 Topic Written /4 question+key+explanation+rubric bodies **20/20 byte-identical** to prior learner after isolating display captions. Three Written heading names now describe actual math (select two tickets/complement, overlap and independence, coin+die union/complement), and three Written student captions normalized to **Bài luyện18/19/20**, following existing Bài luyện1–17 without gaps. Original W01/W02/W03 canonical IDs, `TOP20-R12` versions and /4 rubric bodies unchanged. All correct answers from 20/11 scoped 37-item author spot-check remain on unchanged items; previous spotcheck not falsely rerun on this source.
+- **#977-070 P2 fixed:** 11 original `PUBLIC_SELF_CHECK_QUESTION_ONLY` public prompts `P01,P03,P04,P07,P08,P10,P11,P13,P14,P16,P17` byte-identical to prior learner, same-ID Practice order Bài `1,3,4,7,8,10,11,13,14,16,17` source-exact. ONE optional `Đối chiếu` AFTER all 11 question-only items maps back to original corresponding Practice and only then allows voluntary original explanation viewing; no duplicate answer/key/rubric, no protected held-out Readiness. `CLIENT_SELF_CHECK_NO_MASTERY`, **not** an independent Topic Readiness/Final Submit/Mastery route.
+
+**Source mathematical/structural direct assertions on CURRENT SHA:** 9 actual Knowledge teaching subsections in two mathematical groups cover 17 outcome IDs, with 17 FirstTry and all 17 correct matching Practice outcomes; two pedagogically correct source-locked SVG images unchanged, public sample-space/union interactive model untouched, all 20 original Practice complete mathematical body texts, 3 Written /4 rubrics and old 11 public question-only prompts byte-identical, 37 **distinct canonical IDs** (17 FirstTry+17 Practice+3 Written) and 11 extra public same-ID placements; 38 opening/closing optional disclosures (17+20+1), one final SGK credit. One Q15 original 37-row current source-line/role/primary outcome/content version matrix `d65cf51dbe72f62484ae26171d8afe45daf47ae8`; T06 only new mathematical content version; old 37/37 author spot-check `199d8c1f0fe552448d50dc40eab5bdafe342e798` is **INHERITED_SNAPSHOT_SCOPED** for unchanged original math, not new full item independent reviewer pass. `Q18_VERIFICATION_MODE=AUTHOR_SELF_VERIFIED` for current changed math/PED/assessment. No official protected RD1/Final Submit or Skill Mastery changes. No website integration/merge/deploy or owner release rights.
+
+**Current AUTHOR signoff:** `TOP20_MASTER974_17_D6_20_PRACTICE_11_SAME_ID_REPLAY_T06_TRANSFER_20261121_b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9`.
+---
+
 # CĐ20 R12 — AUTHOR_SELF_QA_RECEIPT · current-source academic/PED completion
 
 AUTHOR_SELF_QA_RECEIPT
@@ -6,7 +36,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 SOURCE_PATH: prototypes/thpt/content-drafts/topic20-classical-probability/Temp_PLAN22_20_R11_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: a336816eb1935c739bd1f128bd81de7b510d0060
+SOURCE_BLOB: b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9
 SOURCE_ROLE: ONE_CURRENT_CANONICAL_LEARNER_SOURCE
 REVIEW_SCOPE: R10_FULL_AUTHOR_MATH_PED + R11_EQUIVALENT_LAYOUT + R12_AFFECTED_D6_PED + CURRENT_SOURCE_Q15_Q16
 INDEPENDENT_REVIEWER_VERDICT: NOT_CLAIMED
