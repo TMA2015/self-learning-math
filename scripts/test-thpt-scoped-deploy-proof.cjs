@@ -130,6 +130,71 @@ function verifySource(before,now,receipt,beforeBlob,currentBlob,lesson=""){
  }
  assert(fields.includes(currentBlob)||Boolean(row),
   "Q18 receipt missing exact current SOURCE candidate SHA");
+ // Exact signed R02 after the global28 G11 B01 R01 reached owner P1.
+ // Neither the independent assessment nor six original answers may change.
+ if(lesson==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"&&
+    receipt.includes("G11-B01-OWNER-P2-GOLDEN-VISUAL-GENERAL-D6-R02-20261121")){
+  assert.equal(beforeBlob,"2d7cff18f4e46375f06a672a3742a2a43b5f2db5",
+   "G11 B01 R02 must descend from exact R01 published source");
+  assert.equal(currentBlob,"e5b140bffd46d829f94d793c45bd987c64838723",
+   "G11 B01 R02 source must be exact Q18 candidate");
+  for(const [key,expected] of [["R02_PREVIOUS_SOURCE_BLOB",beforeBlob],
+   ["R02_CORRECTED_SOURCE_BLOB",currentBlob]]){
+   const mark="**"+key+":** "+String.fromCharCode(96)+expected+String.fromCharCode(96);
+   assert(receipt.includes(mark),"Signed R02 receipt mismatch: "+key);
+  }
+  for(const key of ["DELTA_A_UI","DELTA_C_ACADEMIC_MATERIAL",
+   "Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
+   "SGK-G11-B01-P2-GOLDEN-CARD-AND-GENERAL-D6-20261121",
+   "OWNER_P2_RECHECK_PENDING"])
+   assert(receipt.includes(key),"R02 Q18 role/scope marker missing "+key);
+  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"])
+   assert.deepEqual(tokenSet(now,key),tokenSet(before,key),
+    "R02 changed source-locked First Try/HELP/figure identity "+key);
+  assert.deepEqual(firstAnswers(now),firstAnswers(before),
+   "R02 must keep the six original closed answers and reasoning byte-identical");
+  assert.equal(firstAnswers(now).length,6,"Six original closed First Try answers required");
+  assert.equal(latex(before).length,203,"R01 historical math count changed");
+  assert.equal(latex(now).length,203,"R02 math count must remain 203");
+  assert(originalMathPreserved(before,now)&&originalMathPreserved(now,before),
+   "R02 must preserve every original MathJax expression as a multiset");
+  const section=(s,a,b)=>s.split(a)[1]?.split(b)[0];
+  for(const [start,end] of [
+   ['=== "Khám phá kiến thức"','=== "Kiến thức SGK"'],
+   ['=== "Kiến thức SGK"','=== "Ví dụ"']])
+   assert.equal(section(now,start,end),section(before,start,end),
+    "R02 cannot rewrite S1 academic outcomes "+start);
+  const oldExamples=section(before,'=== "Ví dụ"','=== "Lỗi thường gặp"');
+  const newExamples=section(now,'=== "Ví dụ"','=== "Lỗi thường gặp"');
+  assert.equal(newExamples.replaceAll('class="thpt-g10-example-solution"',
+   'class="thpt-g11-example-solution"'),oldExamples,
+   "Six example prompts/analysis/solutions/checks must be identical except CSS class");
+  assert.equal((now.match(/class="thpt-g10-example-solution"/g)||[]).length,6,
+   "R02 must use approved G10 neutral solution class six times");
+  assert(!now.includes(".thpt-g11-example-solution")&&
+   !now.includes('class="thpt-g11-example-solution"'),
+   "R02 cannot keep G11-only dark 4px left-rule example CSS");
+  assert(now.includes('article.classList.add("thpt-g10-knowledge-ap1","thpt-g10-chiv-golden");'),
+   "R02 must mount both proven Golden classes");
+  assert.equal((now.match(/^    \?\?\? question "Đối chiếu"$/gm)||[]).length,6);
+  assert.equal((now.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,8);
+  const errors=now.split('=== "Lỗi thường gặp"')[1];
+  assert(errors&&errors.includes("Những lỗi gắn với")&&
+   (errors.match(/<strong>Nhóm lỗi tổng quát:<\/strong>/g)||[]).length===2,
+   "R02 last tab needs two genuinely general HELP categories");
+  for(const phrase of ["số đo góc quay, vị trí tia cuối và độ dài",
+   "trong nhiều dạng bài","điều kiện, dấu và phép đối xứng"])
+   assert(errors.includes(phrase),"General HELP not multi-outcome "+phrase);
+  assert.equal((now.match(/class="thpt-r4-footnote"/g)||[]).length,1);
+  assert.equal((now.match(/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg/g)||[]).length,2);
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(now));
+  const css=fs.readFileSync(path.join(root,
+   "docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"));
+  assert.equal(blob(css),"14001f525b1825557493f439a1f0555e9614185f",
+   "R02 must reuse exactly the existing unchanged owner-approved G10 Golden CSS");
+  console.log("SCOPED_G11_B01_R02_Q18_PASS: 203 math, 6 original answers, 8 HELP, approved computed Golden styling");
+  return;
+ }
  // Global 28/79 is G11 B01 (G10 has only 27 SGK lessons). It is an
  // explicit DELTA_C full Knowledge rewrite; old lesson has no canonical
  // First Try IDs. Never generalize this exception to other G11 lessons.

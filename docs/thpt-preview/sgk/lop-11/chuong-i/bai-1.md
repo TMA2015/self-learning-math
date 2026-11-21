@@ -7,9 +7,6 @@
 [data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
 [data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
 
-.md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-g11-example-solution{display:block;margin:.75rem 0 1rem;padding:.75rem 1rem;border:1px solid #cbd5e1;border-left:4px solid #64748b;border-radius:10px;background:#f8fafc;color:#1e293b}
-[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-g11-example-solution{background:#253245;border-color:#64748b;border-left-color:#94a3b8;color:#f1f5f9}
-
 </style>
 
 <script>
@@ -32,7 +29,7 @@
      !labels.every((el,i)=>el.textContent.trim()===names[i]))return;
   const heading=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
    "4. Lỗi thường gặp và cách tự khắc phục"];
-  article.classList.add("thpt-g10-chiv-golden");
+  article.classList.add("thpt-g10-knowledge-ap1","thpt-g10-chiv-golden");
   panes.forEach((pane,i)=>{
    if(pane.querySelector(":scope > h2.thpt-g10-section-heading"))return;
    const h=document.createElement("h2");
@@ -284,7 +281,7 @@
 
     **Phân tích.** Đổi đơn vị cho số đo có dấu; chỉ sau đó cộng trọn một vòng để tìm đại diện cùng tia cuối.
 
-    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(-150^\circ=-150\pi/180=-5\pi/6\) rad. Cộng \(2\pi\) được \(-5\pi/6+2\pi=7\pi/6\), thuộc \([0;2\pi)\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(-150^\circ=-150\pi/180=-5\pi/6\) rad. Cộng \(2\pi\) được \(-5\pi/6+2\pi=7\pi/6\), thuộc \([0;2\pi)\).</p></div>
 
     **Kiểm lại.** Giá trị \(7\pi/6\) là đại diện của tia cuối, không thay chiều quay âm ban đầu.
 
@@ -294,7 +291,7 @@
 
     **Phân tích.** Do công thức độ dài cung dùng radian, đổi \(45^\circ\) trước; bán kính không bị trừ khỏi chiều dài cung.
 
-    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(45^\circ=\pi/4\) rad, nên \(s=6800\cdot\pi/4=1700\pi\approx5341\) km.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(45^\circ=\pi/4\) rad, nên \(s=6800\cdot\pi/4=1700\pi\approx5341\) km.</p></div>
 
     **Kiểm lại.** Cung một phần tám vòng bằng một phần tám chu vi \(2\pi\cdot6800\), đúng kết quả.
 
@@ -304,7 +301,7 @@
 
     **Phân tích.** Điểm cuối ở góc phần tư II; góc tham chiếu \(\pi/6\) cho độ lớn, góc phần tư cho dấu.
 
-    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(\sin\alpha=1/2,\ \cos\alpha=-\sqrt3/2\). Tang là \((1/2)/(-\sqrt3/2)=-\sqrt3/3\); côtang \((-\sqrt3/2)/(1/2)=-\sqrt3\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(\sin\alpha=1/2,\ \cos\alpha=-\sqrt3/2\). Tang là \((1/2)/(-\sqrt3/2)=-\sqrt3/3\); côtang \((-\sqrt3/2)/(1/2)=-\sqrt3\).</p></div>
 
     **Kiểm lại.** Kiểm \(\sin^2\alpha+\cos^2\alpha=1\) và \(\tan\alpha\cot\alpha=1\).
 
@@ -314,7 +311,7 @@
 
     **Phân tích.** Góc ở phần tư III nên sin âm. Hệ thức cơ bản cho bình phương sin, chưa tự quyết định được dấu.
 
-    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(\sin^2\alpha=1-4/9=5/9\), vì vậy \(\sin\alpha=-\sqrt5/3\). Do sin và cos khác 0, \(\tan\alpha=\sqrt5/2\), \(\cot\alpha=2/\sqrt5=2\sqrt5/5\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(\sin^2\alpha=1-4/9=5/9\), vì vậy \(\sin\alpha=-\sqrt5/3\). Do sin và cos khác 0, \(\tan\alpha=\sqrt5/2\), \(\cot\alpha=2/\sqrt5=2\sqrt5/5\).</p></div>
 
     **Kiểm lại.** Phần tư III có sin, cos đều âm nhưng tan, cot dương; tích hai tỉ số bằng 1.
 
@@ -324,7 +321,7 @@
 
     **Phân tích.** Giá trị lượng giác phụ thuộc tia cuối, nên cộng hai vòng để đưa góc đã cho về \(45^\circ\).
 
-    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(-675^\circ+720^\circ=45^\circ\). Suy ra \(\sin(-675^\circ)=\sin45^\circ=\sqrt2/2\) và \(\cot(-675^\circ)=\cot45^\circ=1\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(-675^\circ+720^\circ=45^\circ\). Suy ra \(\sin(-675^\circ)=\sin45^\circ=\sqrt2/2\) và \(\cot(-675^\circ)=\cot45^\circ=1\).</p></div>
 
     **Kiểm lại.** Độ lớn số đo góc không quyết định dấu sin; vị trí tia cuối mới quyết định.
 
@@ -334,34 +331,34 @@
 
     **Phân tích.** Góc âm biểu thị chiều thuận kim đồng hồ; độ dài cung là đại lượng không âm.
 
-    <div class="thpt-g11-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Góc quay âm nên chuyển động theo chiều kim đồng hồ. Độ dài cung \(s=30\cdot|-2\pi/3|=20\pi\) cm.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Góc quay âm nên chuyển động theo chiều kim đồng hồ. Độ dài cung \(s=30\cdot|-2\pi/3|=20\pi\) cm.</p></div>
 
     **Kiểm lại.** Cung dài bằng một phần ba chu vi \(60\pi\) cm, phù hợp với độ lớn góc \(2\pi/3\).
 
 
 === "Lỗi thường gặp"
 
+    Hai nhóm lỗi dưới đây có thể xuất hiện **trong nhiều dạng bài** của cả chương: chuyển đổi số đo, xét tia cuối, độ dài cung, giá trị lượng giác và hệ thức lượng giác. Những lỗi gắn với **một Vận dụng cụ thể** đã có khung Kiểm lỗi ngay dưới câu hỏi trong tab Khám phá kiến thức.
+
     <span data-thpt-help-id="HELP-G11-B01-01" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
-        <p><strong>Lỗi cần kiểm:</strong> Nhầm góc cùng tia cuối với cùng số vòng quay.</p>
-        <p><strong>Dấu hiệu:</strong> Quy \(765^\circ\) về \(45^\circ\) rồi dùng góc \(45^\circ\) để tính quãng đường bánh xe đã quay.</p>
-        <p><strong>Bước 1:</strong> Xác định bài toán hỏi tia cuối, giá trị lượng giác hay quãng đường di chuyển thực.</p>
-        <p><strong>Bước 2:</strong> Chỉ được quy góc theo \(2k\pi\) khi xét vị trí tia cuối hoặc giá trị sin, cos; không xóa các vòng đã quay khi tính chiều dài cung.</p>
-        <p><strong>Bước 3:</strong> Với quãng đường, dùng tổng góc quay thực ở radian, tính \(s=R|\alpha|\), kiểm đơn vị.</p>
-        <p><strong>Luyện tiếp:</strong> B01-P02, B01-P03 và tự luận CHI-W01 trong thư viện.</p>
+        <p><strong>Nhóm lỗi tổng quát:</strong> Không phân biệt số đo góc quay, vị trí tia cuối và độ dài quãng đường chuyển động.</p>
+        <p><strong>Biểu hiện ở nhiều dạng bài:</strong> Quy \(765^\circ\) về \(45^\circ\) để tính sin/cos là hợp lí, nhưng lấy góc \(45^\circ\) thay tổng góc quay để tính quãng đường thì sai; hoặc dùng độ thay radian trong công thức cung.</p>
+        <p><strong>Nguyên nhân:</strong> Cùng một góc được sử dụng cho những đại lượng khác nhau: vị trí tia cuối, số vòng quay và độ dài cung. Quy góc làm mất số vòng đã quay.</p>
+        <p><strong>Cách tự kiểm:</strong> Với vị trí tia cuối và lượng giác, có thể dùng góc hơn kém \(2k\pi\). Với độ dài chuyển động, phải lấy tổng góc quay thật ở radian và tính \(s=R|\alpha|\). Kiểm đơn vị kết quả trước khi kết luận.</p>
+        <p><strong>Ôn và luyện:</strong> Kiểm qua bài đổi đơn vị, góc cùng tia cuối và độ dài cung; luyện B01-P02, B01-P03 và tự luận CHI-W01.</p>
 
     <span data-thpt-help-id="HELP-G11-B01-02" hidden></span>
 
     ??? tip "Kiểm lỗi"
 
-        <p><strong>Lỗi cần kiểm:</strong> Quên miền xác định của tang, côtang hoặc dấu của góc phần tư.</p>
-        <p><strong>Dấu hiệu:</strong> Coi \(\tan(\pi/2)\) hữu hạn hoặc gán cos dương ở góc phần tư II.</p>
-        <p><strong>Bước 1:</strong> Viết \(\tan=\sin/\cos\), \(\cot=\cos/\sin\), loại những giá trị làm mẫu bằng 0.</p>
-        <p><strong>Bước 2:</strong> Tìm phần tư của điểm cuối trên đường tròn đơn vị, xác định dấu sin, cos trước khi lấy căn.</p>
-        <p><strong>Bước 3:</strong> Dùng \(\sin^2+\cos^2=1\) và \(\tan\cot=1\) trên miền xác định để kiểm lại.</p>
-        <p><strong>Luyện tiếp:</strong> B01-C02, B01-P01, B01-P04, B01-P05 trong phần Luyện tập.</p>
+        <p><strong>Nhóm lỗi tổng quát:</strong> Suy giá trị lượng giác mà chưa kiểm điều kiện, dấu và phép đối xứng trên đường tròn.</p>
+        <p><strong>Biểu hiện ở nhiều dạng bài:</strong> Coi \(\tan(\pi/2)\) là hữu hạn; gán cos dương ở góc phần tư II; hoặc lấy căn bậc hai mà không chọn dấu theo góc phần tư và loại góc không thuộc miền xác định.</p>
+        <p><strong>Nguyên nhân:</strong> Hệ thức cho bình phương của sin/cos không tự quyết định dấu; tan/cot là tỉ số và có thể không xác định.</p>
+        <p><strong>Cách tự kiểm:</strong> Xác định tia cuối, góc phần tư và phép đối xứng trước. Viết \(\tan=\sin/\cos\), \(\cot=\cos/\sin\), loại mẫu bằng 0; sau đó đối chiếu \(\sin^2+\cos^2=1\) và \(\tan\cot=1\) **chỉ trên miền các biểu thức xác định**.</p>
+        <p><strong>Ôn và luyện:</strong> Kiểm qua bảng góc chuẩn, giá trị ở góc phần tư, góc đối/bù/phụ; luyện B01-C02, B01-P01, B01-P04 và B01-P05.</p>
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md) · [Tự luận Chương I](../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md).
 
