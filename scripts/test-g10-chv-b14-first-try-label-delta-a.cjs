@@ -27,9 +27,9 @@ assert.equal(historic.status,0,"B14 19/11 signed historical commit must be fetch
 const previous=historic.stdout;
 assert.equal(gitblob(previous),field("B14_PREVIOUS_SOURCE_BLOB"),
  "B14 19/11 previous exact learner blob");
-assert.equal((previous.match(/\\*\\*Em tự thử\\.\\*\\*/g)||[]).length,3,
+assert.equal((previous.match(/\*\*Em tự thử\.\*\*/g)||[]).length,3,
  "B14 historical source must have exactly three obsolete labels");
-const labelFixed=previous.replace(/\\*\\*Em tự thử\\.\\*\\*/g,"**Em vận dụng.**");
+const labelFixed=previous.replace(/\*\*Em tự thử\.\*\*/g,"**Em vận dụng.**");
 assert.equal(gitblob(labelFixed),field("B14_CURRENT_SOURCE_BLOB"),
  "B14 approved 19/11 Delta A consists of only three exact label fixes");
 const placement=get("prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
@@ -38,9 +38,9 @@ assert.equal(row.length,1,"B14 single signed 20/11 local HELP source transition"
 const chain=[...row[0].matchAll(/`([a-f0-9]{40})`/g)].map(m=>m[1]);
 assert.deepEqual([field("B14_CURRENT_SOURCE_BLOB"),gitblob(current)],chain,
  "B14 historical label-only source must extend to signed 20/11 Q18 current source");
-const match=[...current.matchAll(/\\*\\*Em vận dụng\\.\\*\\*/g)];
+const match=[...current.matchAll(/\*\*Em vận dụng\.\*\*/g)];
 assert.equal(match.length,5,"B14 all five current Vận dụng labels retained");
-assert.equal((current.match(/Em tự thử\\./g)||[]).length,0,
+assert.equal((current.match(/Em tự thử\./g)||[]).length,0,
  "B14 obsolete label must not resurface");
 const ids=[...current.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]);
 assert.deepEqual(ids,[10,11,12,13,14].map(i=>"THPT-G10-CHV-TRY"+i),
