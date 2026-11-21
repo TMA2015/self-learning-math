@@ -1,3 +1,9 @@
+<!-- TOP03_MASTER974_Q18_PED6_20261121 -->
+## CURRENT AUTHORING CĐ03 — one V2 source-locked snapshot
+Same canonical learner `prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md` Git blob `38f41f013e75b42605d7a88f9205c20af6315a41`, Q18 author self-verified `ef40b5871762558959108cf1879155c7e14158fe`, custody `3ce4f7ec703a437bea18b5389f2968d099cc7c58`. Inherited 31-item math/12-outcome deep audit on untouched learner mathematics; new source only adds O01 actionable `Kiểm lỗi` and one opt-in Câu 1–12→Practice mapping `1,3,5,7,9,11,19,14,13,17,28,26`. No new bank items or Written rubrics; total 44 voluntary disclosure blocks, exact original 31 Practice and three SVGs kept. `DELTA_C_PED_TARGETED`, one source, one signed Q18 file, 0 current P0/P1 found; no independent NotebookLM fresh verdict. Historical QA HOLD headings below refer to superseded source snapshots only. `CONTENT_READY` AUTHORING limited; RELEASE AP/R/UI and owner authorization unclaimed. No merge/deploy.
+
+---
+
 # AUTHORING QA HOLD — CĐ03, một bản thảo hiện hành đã sửa D6 và Ví dụ
 
 **Scope:** CĐ03/22 trong danh mục được chủ dự án yêu cầu theo thứ tự. Chuyên đề độc lập có ba trang Kiến thức / Luyện tập / Tự kiểm tra; SGK KNTT Toán 10 tập 2 ChVI B18 chỉ là nguồn S1 và item reuse, không là thứ tự nội dung Topic. 12 outcomes, 31 unique PUBLIC canonical IDs, 3 SVG. Mô hình tương tác SPEC_ONLY, không trình bày là website đã hoạt động. AUTHORING Draft PR #820, không merge/deploy.
@@ -5,17 +11,17 @@
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 56257640ac50a9809756b5715c1f877182e071c8
+AUTHOR_METADATA_BLOB: 3ce4f7ec703a437bea18b5389f2968d099cc7c58
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
+ACADEMIC_SOURCE_BLOB: 38f41f013e75b42605d7a88f9205c20af6315a41
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: 6380d2340c6cb3dc597777eac1d514d95e140322
+REVIEW_RECEIPT_BLOB: ef40b5871762558959108cf1879155c7e14158fe
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
