@@ -1,3 +1,10 @@
+<!-- TOP14_MASTER974_CURRENT_ONE_V2_20261121 -->
+## CĐ14 same one V2 handoff, changed-scope math/PED AUTHORING v3.2.0
+
+One R02 canonical learner `prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md` Git blob **`ff3d838680899b3c0a54ddd5774bebdf2f7d7d19`**, existing signed Q18 AUTHOR_SELF_VERIFIED `f2b0f32b7b9be7d0d4329f9f4359979b0622e3b9`, A1 author custody `291d03fbd0901fa25906c991ff48d34ffcf97f09`. In one source, #977-045: 23 original opt-in firsttry `Kiểm lỗi` routes from math error→actual Knowledge→two numbered original Practice attempts; #046: one optional after-23-question SelfCheck `Đối chiếu` maps exact reused `item_id` to original solution positions `17,18,19,20,21,22,23,39,40,41,42,43,59,60,61,62,63,80,81,82,83,84,85`; #047: **87 unique sequential Bài luyện labels** and pedagogical section cues, one full SGK source attribution footer, O21/O23 concept wording no dispersed source labels. All **87 original mathematical canonical Practice bodies, 9 Written rubrics, 23 original question-only public Selfcheck stems**, original 3 SVG SHA unchanged; **111/111** voluntary reveals balanced. No second bank or learner. Shared original G10 `THPT-G10-B22-P03` and `THPT-G10-CHVII-W22-01` retain `SGK` contextual words, latter a “Depth note” in original written key: clearly documented as **P2 source-owner wording follow-up** under Q15; user-facing one-credit-literal rule not fully achieved, source-equivalent fix requires original G10 owner coordination. Current math/PED scoped author SELF_VERIFIED, not independent NotebookLM full Topic PASS; no official Q16 Readiness/RD1/Mastery, browser AP/R or RELEASE/merge/deploy.
+
+---
+
 # CĐ14 — Phương pháp tọa độ trong mặt phẳng Oxy · AUTHORING V2 handoff R02
 
 **AUTHORING_CONTENT_READY_CANDIDATE** under owner-effective `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Exact source/receipt/metadata Git SHA and no RELEASE rights. One self-sufficient Topic has **Kiến thức / Luyện tập / Tự kiểm tra**, no separate Core. Q18 self-check is **not** new independent NotebookLM verdict.
@@ -13,13 +20,13 @@ CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
+ACADEMIC_SOURCE_BLOB: ff3d838680899b3c0a54ddd5774bebdf2f7d7d19
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: a62e6b1e43bc96e7a6a5b81bceb410c36293e489
+REVIEW_RECEIPT_BLOB: f2b0f32b7b9be7d0d4329f9f4359979b0622e3b9
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_A1_A7_BLOB: 75d65376414f88c403d1ce9461d2d9eee8cd8689
+AUTHOR_A1_A7_BLOB: 291d03fbd0901fa25906c991ff48d34ffcf97f09
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 75d65376414f88c403d1ce9461d2d9eee8cd8689
+AUTHOR_METADATA_BLOB: 291d03fbd0901fa25906c991ff48d34ffcf97f09
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/Temp_G10_SGK_CHVII_FULL_R02_SOURCE_WITH_CANONICAL_REFERENCES_20261105.md
 ORIGINAL_SGK_SOURCE_BLOB: c5c222af88b0e932f9b60df059d8ffd4da5f0f26
 ORIGINAL_R01_PED_BLOB: 5377380447ca2f131b634b8b65db885f86418cdd
