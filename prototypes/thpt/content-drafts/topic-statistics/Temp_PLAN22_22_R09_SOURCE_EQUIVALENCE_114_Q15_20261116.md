@@ -1,11 +1,15 @@
+<!-- TOP22_MASTER974_CURRENT_FINAL_COPY_Q15_SOURCE_20261121 -->
+**Final source-safe learner copy:** `7ac79e5ed705a5ce482c3d9c42a4451e659e1109`; Q18 signed `2e35a06020768e5a6db2e9f2fe65a46f577960c2`. Last Delta A replaced ONE public SelfCheck explanation sentence showing internal mode token with a normal student instruction; 127 source item markers/line numbers, 114 old practice bodies, 13 existing FirstTry question/keys, 9 SelfCheck stems and 36 direct math D6 references unchanged. One current 127-row/9-replay Q15 matrix below remains source-exact, all versions/roles unchanged.
+---
+
 <!-- TOP22_MASTER974_CURRENT_Q15_A1_A7_20261121 -->
 ## CĐ22 — AUTHORING one-source A1–A7 and exact Q15: 127 distinct public items / 136 placements
 
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
-CURRENT_ACADEMIC_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
-CURRENT_SOURCE_COMMIT: 3c23bd06ea9d5f12bb8884b2b250e8cbc044b967
-CURRENT_Q18_AUTHOR_SIGNED_BLOB: 3e0b1763b034f4d461d438708b0784e5b3576679
+CURRENT_ACADEMIC_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
+CURRENT_SOURCE_COMMIT: 75c1be1493feb239147b493fecd933965181ad5a
+CURRENT_Q18_AUTHOR_SIGNED_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
 CURRENT_PUBLIC_ORIGINAL_SGK_ITEM_SOURCE_INDEX_BLOB: 51a6e99587187838aea61c5c72108adae7874d1d
 CURRENT_PUBLIC_ORIGINAL_7_EXTENSION_BLOB: c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3
 Q15_ACTIVATION: CURRENT_AUTHORING_ONE_SOURCE_ONLY
@@ -168,7 +172,7 @@ RELEASE_AUTHORIZATION: NO
 | 9 | `THPT-G12-B10-P08` | Bài luyện 105 | 2309 |
 
 
-**Historical dated notes and R09 original 114 bank count below describe the old source, not two competing active Q15 matrices. Above one source `ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145` is current.** AUTHORING source only; original protected RD1/website/AP/R/Golden/iPad/production and merge/deploy remain outside scope.
+**Historical dated notes and R09 original 114 bank count below describe the old source, not two competing active Q15 matrices. Above one source `7ac79e5ed705a5ce482c3d9c42a4451e659e1109` is current.** AUTHORING source only; original protected RD1/website/AP/R/Golden/iPad/production and merge/deploy remain outside scope.
 ---
 
 <!-- TOP22_R09_15_CANONICAL_KEYS_DELTA_B_AUTHOR_A1_20261121 -->
@@ -198,9 +202,9 @@ CONTENT_REVISION: R09
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic-statistics/Temp_PLAN22_22_R09_GLOBAL_PRACTICE_NUMBERING_20261116.md
-ACADEMIC_SOURCE_BLOB: ed8a3a832ed4ffbdfdbfd9e1a26fcf023fe35145
+ACADEMIC_SOURCE_BLOB: 7ac79e5ed705a5ce482c3d9c42a4451e659e1109
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC22_R09_15_CANONICAL_KEY_RESTORE_AUTHOR_Q18_20261121.md
-REVIEW_RECEIPT_BLOB: 3e0b1763b034f4d461d438708b0784e5b3576679
+REVIEW_RECEIPT_BLOB: 2e35a06020768e5a6db2e9f2fe65a46f577960c2
 PREVIOUS_R07_HANDOFF_PATH: prototypes/thpt/release-handoffs/THPT-TOPIC-STATISTICS-G10-G12-FULL-R07_HANDOFF_V2_20261115.md
 PREVIOUS_R07_HANDOFF_BLOB: 4c32eaf6342b2cb9cd2ccc69357fed80a0aeca92
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_KNOWLEDGE_ONLY
