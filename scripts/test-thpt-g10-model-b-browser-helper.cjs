@@ -6,7 +6,7 @@ const fs=require("node:fs");
 const crypto=require("node:crypto");
 const {expectedG10KnowledgeBlob,chivEditorialReceiptRows,chvEditorialReceiptRows,chviiEditorialReceiptRows}=require("./thpt-q18-g10-source-receipt.cjs");
 const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
-async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=tries}){
+async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=tries,remediationTab="Lỗi thường gặp"}){
  const article=page.locator("article.md-content__inner");
  const group=article.locator(".tabbed-set").first();
  if(await group.count()===0)return false;
@@ -93,9 +93,9 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
  assert((await answer.innerText()).length>before.length+18,"B"+n+" First Try did not reveal reasoning");
  await answer.locator("summary").click();
  assert(!(await answer.evaluate(x=>x.open)),"B"+n+" student cannot reclose First Try");
- await select("Lỗi thường gặp");
+ await select(remediationTab);
  const tip=article.locator("details.tip:visible").first();
- assert(await tip.count()===1,"B"+n+" remediation must be available in mistakes tab");
+ assert(await tip.count()===1,"B"+n+" signed D6 must be available in "+remediationTab);
  const tipBefore=await tip.innerText();
  await tip.locator("summary").click();
  assert(await tip.evaluate(x=>x.open),"B"+n+" student cannot open D6");
