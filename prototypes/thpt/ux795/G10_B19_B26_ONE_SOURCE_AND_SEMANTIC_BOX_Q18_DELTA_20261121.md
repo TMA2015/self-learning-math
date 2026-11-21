@@ -19,7 +19,7 @@
 | B23 | `25f460ab8432496a2685cbaed4d21fd04ed1adbe` | `a5512d5a206d89808863257d5094e242e28d91c9` | DELTA_A_UI_METADATA | Single source SGK p60–65/SBT p51–53 |
 | B24 | `31aca301dafaf86403873e324b5bce7d4fa66a43` | `dbf48cdd16811a2581be679bdc86fc6ca15fe311` | DELTA_A_UI_METADATA | Single source SGK p66–71/SBT p54–55 |
 | B25 | `3fdd065beb95b317d7e213a9ab9d9ed845fc16a2` | `d8491aa03be4d1356fbbbb902d7f97a6e8553e0d` | DELTA_A_UI_METADATA | Single source SGK p72–75/SBT p56–57 |
-| B26 | `72f336c1c0113d530f6f7687505b347b97c9d191` | `23920a5295c13fffd246625e9519f68acd73080c` | DELTA_C_ACADEMIC_MATERIAL | One source SGK p77–82/SBT p61–63; remove redundant example exposition; semantic boxes match SGK |
+| B26 | `72f336c1c0113d530f6f7687505b347b97c9d191` | `6b695c41cff31490630b380522752636fc57f8b7` | DELTA_C_ACADEMIC_MATERIAL | One source SGK p77–82/SBT p61–63; remove redundant example exposition; semantic boxes match SGK |
 
 ## G2 B26 semantic outcomes (source audited)
 
