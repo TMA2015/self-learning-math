@@ -217,8 +217,8 @@ function selfTest(){
   "Anti-repeat correction cannot hide global build config changes");
  assert.equal(classify(antiRepeatCase.filter(x=>!x.endsWith("bai-26.md"))).impact,"FULL",
   "Missing eighth lesson cannot qualify for exact 8-lesson batch");
- assert.equal(classify(antiRepeatCase.filter(x=>!x.endsWith("scoped-deploy-proof.cjs"))).impact,"SCOPED_LESSON",
-  "Without modified production proof source paths alone may use generic classifier, but main deploy proof must remain fail-closed");
+ assert.equal(classify(antiRepeatCase.filter(x=>!x.endsWith("scoped-deploy-proof.cjs"))).impact,"FULL",
+  "No source-locked production proof means exact 8-lesson batch must fail closed");
  const bBatch=[7,8,9,10,11,12,13,14].map(n=>
   "docs/thpt-preview/sgk/chuong-"+(n<=11?"iv":"v")+"/bai-"+n+".md");
  const mBatch=[
