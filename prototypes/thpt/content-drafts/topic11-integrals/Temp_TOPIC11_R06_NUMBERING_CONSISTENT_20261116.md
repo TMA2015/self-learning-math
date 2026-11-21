@@ -2603,7 +2603,7 @@ Sau khi tự giải **22 câu**, em có thể mở phần **Lời giải** ở �
 | Câu 13 – 14 – 15 – 16 – 17 – 18 | Bài 68 – 73 – 78 – 83 – 88 – 93 |
 | Câu 19 – 20 – 21 – 22 | Bài 99 – 104 – 110 – 115 |
 
-Đây là tự đối chiếu những câu hỏi **công khai đã học**, không phải bài kiểm tra năng lực độc lập hoặc ghi Mastery.
+Nếu bài làm của em khác lời giải, hãy tìm bước sai đầu tiên, xem lại mục Kiến thức tương ứng rồi tự giải một lần nữa.
 
 </details>
 
