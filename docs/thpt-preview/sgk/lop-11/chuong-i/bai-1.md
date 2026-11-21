@@ -1,12 +1,67 @@
 # Bài 1. Giá trị lượng giác của góc lượng giác
 
-<div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC</p>
-<p class="thpt-r4-lead">Học theo SGK từng bước: kiến thức, ví dụ, luyện tập và tự khắc phục lỗi. Chương I gồm Bài 1–4; Bài tự kiểm tra cuối chương chỉ hỗ trợ tự đối chiếu sau Final Submit, không ghi điểm thành thạo.</p>
-<nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra · tự đối chiếu</a></nav>
+<style>
+/* Scoped to B27 by its canonical First Try marker; no shared UI changes. */
+.md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+
+.md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-g11-example-solution{display:block;margin:.75rem 0 1rem;padding:.75rem 1rem;border:1px solid #cbd5e1;border-left:4px solid #64748b;border-radius:10px;background:#f8fafc;color:#1e293b}
+[data-md-color-scheme="slate"] .md-typeset:has([data-thpt-first-try-id^="THPT-G11-CHI-TRY01"]) .thpt-g11-example-solution{background:#253245;border-color:#64748b;border-left-color:#94a3b8;color:#f1f5f9}
+
+</style>
+
+<script>
+/* B27 source-scoped Golden bridge: reuse the approved B22 presentation CSS,
+   without altering the shared SGK route/assessment runtime or cloning a theme.
+   Only classes and section-heading DOM are attached to this one lesson. */
+(() => {
+ "use strict";
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/lop-11\/chuong-i\/bai-1\/?$/.test(location.pathname))return;
+  const article=document.querySelector(".md-content__inner");
+  if(!article||article.dataset.g11B01Golden==="true"||
+    !article.querySelector('.thpt-r4-screen[data-g11-b01-owner-g0g2="r01"]'))return;
+  const tab=article.querySelector(":scope > .tabbed-set");
+  const labels=[...(tab?.querySelectorAll(":scope > .tabbed-labels > label")||[])];
+  const panes=[...(tab?.querySelectorAll(":scope > .tabbed-content > .tabbed-block")||[])];
+  const radios=[...(tab?.querySelectorAll(':scope > input[type="radio"]')||[])];
+  const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
+  if(labels.length!==4||panes.length!==4||radios.length!==4||
+     !labels.every((el,i)=>el.textContent.trim()===names[i]))return;
+  const heading=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
+   "4. Lỗi thường gặp và cách tự khắc phục"];
+  article.classList.add("thpt-g10-chiv-golden");
+  panes.forEach((pane,i)=>{
+   if(pane.querySelector(":scope > h2.thpt-g10-section-heading"))return;
+   const h=document.createElement("h2");
+   h.className="thpt-g10-section-heading";
+   h.textContent=heading[i];
+   pane.prepend(h);
+  });
+  const sync=()=>labels.forEach((label,i)=>
+   label.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  tab.addEventListener("change",sync);
+  sync();
+  article.dataset.g11B01Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script>
+
+<div class="thpt-r4-screen" data-thpt-r4 data-g11-b01-owner-g0g2="r01">
+<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG I</p>
+<p class="thpt-r4-lead">Góc có hướng, radian, đường tròn lượng giác và các quan hệ lượng giác cơ bản.</p>
+
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
 </div>
 
-## Trước khi học: Vì sao cần kiến thức này?
+=== "Khám phá kiến thức"
+
+### Trước khi học: Vì sao cần kiến thức này?
 
 **Vấn đề:** Khi một bánh xe quay nửa vòng, rồi tiếp tục thêm hai vòng, tia cuối có thể giống nhau nhưng tổng góc quay và quãng đường đi được khác nhau. Góc hình học thông thường chỉ mô tả độ mở, chưa ghi được **chiều quay** và **số vòng quay**. Vì vậy Bài 1 dùng **góc lượng giác có hướng** và số đo radian: góc dương khi quay ngược chiều kim đồng hồ, âm khi quay cùng chiều.
 
@@ -16,7 +71,7 @@
 
 **Khi nào dùng và điều kiện:** Dùng radian để tính độ dài cung, dùng tọa độ M để tính sin/cos cho góc bất kỳ; tan α chỉ xác định nếu cos α ≠ 0, cot α chỉ xác định nếu sin α ≠ 0. Không coi sin/cos là độ dài có đơn vị.
 
-## Tự thử trước khi luyện tập
+### Tự thử trước khi luyện tập
 
 Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Góc có hướng bao nhiêu radian, và quãng đường cung là bao nhiêu cm? Hãy giải thích vì sao một vòng quay khác “không quay” dù tia cuối giống nhau.
 
@@ -26,9 +81,8 @@ Góc +2π rad, độ dài 4π cm. Hai tia cuối trùng nhau không có nghĩa b
 
 </details>
 
-## 1. Kiến thức SGK
 
-<span class="thpt-ap-knowledge-pilot" hidden aria-hidden="true"></span>
+=== "Kiến thức SGK"
 
 ### 1.1. Góc lượng giác và số đo
 
@@ -129,7 +183,15 @@ trên miền \(sin α ≠ 0\).
 
 **Bảng góc đặc biệt:** Bảng giá trị \(0,π/6,π/4,π/3,π/2\) là tiền đề cần học sinh tự tái dựng trên đường tròn, không chỉ học thuộc.
 
-## 2. Ví dụ
+
+<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg" loading="lazy" alt="Điểm M tại góc 5π/6 trên đường tròn lượng giác"><figcaption>Điểm M tại góc 5π/6 trên đường tròn lượng giác.</figcaption></figure>
+
+### Hướng dẫn đọc hình, đồ thị
+
+- **Hình minh họa:** tìm tâm O, tia đầu Ox dương và tia cuối OM, xác định góc quay cùng/ ngược chiều và góc phần tư của M. Đọc hoành độ M → cos α, tung độ M → sin α; hai góc cùng tia cuối có thể khác **số vòng**. Trước khi dùng hình để suy dấu tan/cot, kiểm mẫu khác 0.
+
+
+=== "Ví dụ"
 
 ### Ví dụ 1.
 
@@ -149,15 +211,8 @@ Bánh xe bán kính \(30 cm\) quay góc \(−2π/3 rad\); độ dài cung quét 
 - **Ví dụ 02:** định góc phần tư và điểm trên đường tròn trước khi lấy dấu; góc tham chiếu π/6 cho **độ lớn**, vị trí ở góc phần tư II quyết định dấu.
 - **Ví dụ 03:** cung dài không âm; lấy độ lớn của góc quay thực tế và nhân bán kính, không lấy số đo góc đã quy về một vòng.
 
-## 3. Hình minh họa
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg" loading="lazy" alt="Điểm M tại góc 5π/6 trên đường tròn lượng giác"><figcaption>Điểm M tại góc 5π/6 trên đường tròn lượng giác.</figcaption></figure>
-
-### Hướng dẫn đọc hình, đồ thị
-
-- **Hình minh họa:** tìm tâm O, tia đầu Ox dương và tia cuối OM, xác định góc quay cùng/ ngược chiều và góc phần tư của M. Đọc hoành độ M → cos α, tung độ M → sin α; hai góc cùng tia cuối có thể khác **số vòng**. Trước khi dùng hình để suy dấu tan/cot, kiểm mẫu khác 0.
-
-## 4. Tự khắc phục lỗi thường gặp
+=== "Lỗi thường gặp"
 
 <details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B01-01"><summary>Nhầm góc cùng tia cuối với cùng số vòng quay</summary><ul><li>**Dấu hiệu:** Rút <code>765°</code> thành <code>45°</code> rồi dùng góc 45° để tính quãng đường xe quay 765°.  </li>
 <li>**Bản chất:** Hai góc chênh bội của 360° có cùng tia cuối / cùng sin cos, nhưng tổng độ dài cung di chuyển còn phụ thuộc số vòng quay thực tế.  </li>
@@ -171,6 +226,7 @@ Bánh xe bán kính \(30 cm\) quay góc \(−2π/3 rad\); độ dài cung quét 
 <li>**Ôn:** SGK Bài 1 giá trị lượng giác, dấu và hệ thức cơ bản.  </li>
 <li>**Quay lại item:** <code>THPT-G11-B01-C02</code>, <code>THPT-G11-B01-P01</code>, <code>THPT-G11-B01-P04</code>, <code>THPT-G11-B01-P05</code>.</li></ul><p><a href="../luyen-tap/">Về Luyện tập</a></p></details>
 
-## 5. Tiếp tục
 
-[Core và Luyện tập Bài 1](luyen-tap.md) · [Tự luận Chương I](../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md)
+    **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn toán học: SGK Toán 11 Kết nối tri thức, tập 1, Bài 1 (trang in 5–16); SBT Toán 11 Bài 1 tham khảo bài tập. Ví dụ và giải thích bổ trợ do SLM biên soạn.</p>
