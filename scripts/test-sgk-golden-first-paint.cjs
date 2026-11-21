@@ -3,7 +3,7 @@
 /* UI-only: no academic/P2 verdict, no learner mutation. */
 const assert=require("node:assert/strict");
 const fs=require("node:fs"),path=require("node:path");
-const {chromium}=require("playwright");
+const {chromium,webkit}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const chapters=[["i",1,2],["ii",3,4],["iii",5,6],["iv",7,11],["v",12,14],
@@ -42,7 +42,8 @@ assert.equal(rows.length,28);
 console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden headings, unchanged IDs; excluded G11 B02/G12");
 
 (async()=>{
- const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ for(const [engine,driver] of [["Chromium",chromium],["WebKit",webkit]]){
+ const browser=await driver.launch(engine==="Chromium"?{headless:true,args:["--no-sandbox"]}:{headless:true});
  const reps=rows.filter(x=>x.grade===11||[1,7,16,23,27].includes(x.n));
  const base=(process.env.SGK_FIRST_PAINT_BASE_URL||"http://127.0.0.1:8765").replace(/\/$/,"");
  let checks=0;
@@ -73,7 +74,7 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
         hybridStyleLinks:[...document.querySelectorAll("link[rel=stylesheet]")].filter(x=>x.href.includes("thpt-g10-knowledge-hybrid-l1-v1.css")).map(x=>x.href),
         styleSheets:document.styleSheets.length};
       });
-      const k=row.rel+" "+width+" "+(js?"JS":"NO_JS");
+      const k=engine+" "+row.rel+" "+width+" "+(js?"JS":"NO_JS");
       assert.equal(v.marker,"true",k+" marker");
       assert.deepEqual(v.labels,labels,k+" labels");
       assert.deepEqual(v.headings,headings,k+" missing/duplicate headings");
@@ -98,5 +99,6 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
   }
  }finally{await browser.close()}
  assert.equal(checks,reps.length*3*2);
- console.log("PASS GOLDEN FIRST PAINT: "+checks+" Chromium modes/viewports");
+ console.log("PASS GOLDEN FIRST PAINT "+engine+": "+checks+" JS/no-JS modes/viewports");
+ }
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1});
