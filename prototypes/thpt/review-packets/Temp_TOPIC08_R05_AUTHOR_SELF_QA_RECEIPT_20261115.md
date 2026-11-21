@@ -1,3 +1,23 @@
+<!-- TOP08_MASTER974_CURRENT_AUTHOR_SOURCE_Q18_20261121 -->
+## CURRENT Q18 AUTHOR_SELF_VERIFIED v3.2.0 — CĐ08 source chính, 18 outcome, 58 câu gốc
+
+**One active learner canonical** `prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md`, current Git blob **`0853a6de4be055d63a767b58dab20fa113e11098`**, prior immutable author source `df47c56c8a7559047d35b44640ea74dce27a3f91`; official one `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18; existing R05 Q18 receipt *reused*, no new separate reviewer file. New learner top HTML metadata comments labeled `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW` and corrected obsolete “R05 Q18 pending”/standard 3.1 text without rendering source-management notes.
+
+**S1 original source and direct author math audit inheritance only for unchanged maths:** primary scanned-image SGK G11 Toán KNTT T1 B15 printed p104–110 (PDF 105–111), B16 p111–118 (PDF 112–119), B17 p119–122 (PDF 120–123), actual original scoped receipt `Temp_TOPIC08_G11_B15_B17_ORIGINAL_S1_IMAGE_AUDIT_20261120.md` Git blob `f33a3b5986e01d2e8be1020a13a6ca407c328ebc`. Direct author math/PED audit `Temp_TOPIC08_R05_DIRECT_MATH_PED_58_ITEMS_18_OUTCOMES_20261121.md` Git blob `1364b85499b0cc39b1ad81ef67347593bbf5f23f`: 58 original canonical IDs and 120/120 source answer/solution/rubric fields, full 18 instructional outcome families, tests for |q|<1, unilateral/discontinuous/endpoint IVT and interval bisection. Source-specific proof carries forward **only unchanged math and bank**, not false claim that S1 all pages/SBT or NotebookLM independent new verdict was reread/reissued.
+
+**Real affected defects recorded in one #977, verified and fixed:**
+- `TOP22-20261121-025` **P1 Q08/Q14/PED6**: 18 Knowledge opt-in FirstTries had 0 numbered Practice recovery targets. Added **18 individualized `Kiểm lỗi`** inside existing voluntary reveals, with actual error→correct subsection→existing Bài. Verified destination items against 58 real Practice prompts: O01→Bài1/3, O02→4/5/6, O03→7/4, O04→11/12, O05→16/18/19, O06→21/22, O07→24/25, O08→27/29, O09→31/32, O10→33/34, O11→35/36, O12→37/38/39, O13→42/43, O14→45/46, O15→48/50, O16→51/52, O17→54/56, O18→57/58. **18/18** actual outcomes now have student actionable next steps; they are *teaching*, not metadata.
+- `TOP22-20261121-026` **P2 Q16/Q17/PED6**: 18 original public `PUBLIC_REPLAY_ONLY` questions remained question-only but had no route to actual canonical Practice answers. Added a **single voluntary `Đối chiếu` after all questions**: Câu1–18 → Practice Bài `3,6,7,12,18,22,25,29,32,34,36,39,43,46,50,52,56,57`. Rechecked **18/18 exact shared original `item_id`** with real numbered Practice placements. Does not copy any answer/rubric, no official Topic Readiness, Final Submit/Mastery, RD1 or independent assessment; `CLIENT_SELF_CHECK_NO_MASTERY`.
+- `TOP22-20261121-027` **P2 Q04/Q08/PED6**: O08 first try near x→3⁻ was wrongly instructed to inspect 4.99/5.01 (near 5). Corrected on original opt-in `Đối chiếu` to **2.99/3.01** on opposite sides of x=3: `3−2.99>0`, `3−3.01<0`, so left-side (1/(3−x)\to+\infty) correctly; no conflating both side signs.
+- `TOP22-20261121-028` **P2 Q04/Q08/PED6**: O10 first try limit at x→6 incorrectly told student to inspect function at x=3. Corrected the **student diagnostic point to x=6**, original fraction undefined there though near-point cancellation gives limit 12.
+- `TOP22-20261121-029` **P1 Q04/Q08/Q14/PED4–6**: O12 original immediate Ví dụ already solved **identical** `lim_(x→+∞)(√(x²+8x)−x)=4`; first-try copied same expression/result. Kept original full teaching example; replaced only **Vận dụng + voluntary Đối chiếu** with *different left-infinity transfer*, `lim_(x→−∞)(√(x²+6x)+x)`. Author direct mathematical proof: for x<0 sufficiently large in magnitude, radical domain holds, `√(x²+6x)=−x√(1+6/x)`; conjugate `(√(x²+6x)+x)=6x/(√(x²+6x)−x)=−6/(√(1+6/x)+1)→−3`. Explicitly teach why `√(x²)=|x|=−x` when x<0; remediate via original **Bài37/Bài38/Bài39**. Not a second bank item or a new answer accidentally shown before FirstTry.
+
+**Exact inverse-diff academic scope QA:** remove only 18 new D6 paragraphs, restore the three local opt-in O08/O10/O12 regions, remove one final public selfcheck navigation disclosure and revert two **hidden** admin comments: reconstructed **entire prior learner source byte-for-byte**. Therefore all **58/58 original Practice stems/keys/solutions (36 SGK+22 Topic), ten Written rubrics**, 18 question-only Selfcheck prompts, 3 SVG assets/paths untouched. 18 full Knowledge outcomes, **18/18** D6 routes, 77/77 disclosure tags balanced (18 Knowledge +58 Practice +1 public lookup), original single SGK attribution at very end. No new Core for Topic or unreleased feature. `DELTA_C_ACADEMIC_MATERIAL` on O12 teaching and localized `DELTA_C_PED_TARGETED` on errors/D6. P0/P1 in five corrected issues **0 remaining after author direct proof**, without claiming global independent academic verdict; all historical Q18 mathematical signatures are SHA-scoped to old snapshots.
+
+**Disposition:** `AUTHOR_SELF_VERIFIED` signed to this source/Q18 on affected scope and unchanged original author's 58-item math audit; not independent NotebookLM PASS. Source is ready for relock existing single metadata → V2 → ready → REGISTER; not RELEASE AP/R/CI/browser or owner authorized merge/deploy.
+
+---
+
 # CĐ08 R05 — AUTHOR_SELF_QA_RECEIPT · original R05 plus targeted concept closure 18/11/2026
 
 **AUTHORING only, SLM-THPT-QUALITY-ONE v3.1.0 (Q01–Q18).** Đây là kiểm học thuật và sư phạm của tác giả trên bản R05 exact SHA, **không** là NotebookLM independent reviewer PASS, học sinh thật UAT, website/AP/RELEASE/owner signoff. Không chuyển Q18 của R04 sang R05 mà tự rà lại.
@@ -5,12 +25,12 @@
 PACKET_ID: THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01
 CONTENT_REVISION: R05
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-SOURCE_BLOB: df47c56c8a7559047d35b44640ea74dce27a3f91
-ACADEMIC_SOURCE_BLOB: df47c56c8a7559047d35b44640ea74dce27a3f91
+SOURCE_BLOB: 0853a6de4be055d63a767b58dab20fa113e11098
+ACADEMIC_SOURCE_BLOB: 0853a6de4be055d63a767b58dab20fa113e11098
 PREVIOUS_R04_SOURCE_BLOB: 8fd1c9d223ccab794ae20fc8f0206df32f0671c4
 PREVIOUS_R04_AUTHOR_RECEIPT_BLOB: c3cfa8ca4ec9c05710fed4ab2428f3d2814eec07
 PUBLIC_ORIGINAL36_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
@@ -29,7 +49,7 @@ PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
 P2: 0 (source-level AUTHORING only; no re-scan S1 PDF, browser QA or learner UAT)
-AUTHOR_SIGNOFF: TOPIC08_R05_20261118_TARGETED_CONCEPT_SOURCE_b3d24c35675d4b39fb8d14c201b7d965d1183f44
+AUTHOR_SIGNOFF: TOP08_MASTER974_18_OUTCOME_D6_FIVE_VERIFIED_FIXES_20261121_0853a6de4be055d63a767b58dab20fa113e11098
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_READINESS: NOT_CLAIMED
