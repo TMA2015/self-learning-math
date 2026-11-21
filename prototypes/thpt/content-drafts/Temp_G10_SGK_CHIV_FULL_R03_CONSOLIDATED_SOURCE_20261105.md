@@ -880,11 +880,11 @@ Outcome IDs là ứng viên cần đối soát với skill registry toàn hệ t
 **Lời giải:** $\overrightarrow{CD}$ cùng độ dài với $\overrightarrow{AB}$ nhưng ngược hướng; vì vậy $\overrightarrow{CD}=-\overrightarrow{AB}$.
 
 ### `THPT-G10-B07-P04` — B07 | `SGK_PRACTICE` | `G10-B07-ZERO` | `MCQ` | `CORE_APPLY`
-**Câu hỏi:** Theo quy ước SGK/SBT KNTT, phát biểu nào đúng về vectơ-không $\vec0$?
+**Câu hỏi:** Theo quy ước đã học, phát biểu nào đúng về vectơ-không $\vec0$?
 **Lựa chọn:** A. Có độ dài 1 ; B. Có điểm đầu và cuối khác nhau ; C. Không có bất kỳ quy ước nào về cùng phương ; D. Độ dài 0, được quy ước cùng hướng với mọi vectơ
 **Đáp án:** D
-**Gợi ý chỉ dành cho Luyện tập:** Kiểm tra riêng trường hợp điểm đầu trùng điểm cuối và quy ước của SGK.
-**Lời giải:** $\overrightarrow{AA}=\vec0$ với mọi A, có độ dài bằng 0; SGK/SBT quy ước $\vec0$ cùng phương, cùng hướng với mọi vectơ. Đây là quy ước, không suy ra nó có giá hoặc chiều hình học thông thường.
+**Gợi ý chỉ dành cho Luyện tập:** Kiểm tra riêng trường hợp điểm đầu trùng điểm cuối và quy ước đã học về vectơ-không.
+**Lời giải:** $\overrightarrow{AA}=\vec0$ với mọi A, có độ dài bằng 0; theo quy ước đã học, $\vec0$ cùng phương, cùng hướng với mọi vectơ. Đây là quy ước, không suy ra nó có giá hoặc chiều hình học thông thường.
 
 ### `THPT-G10-B07-P05` — B07 | `SGK_PRACTICE` | `G10-B07-DIRECTION` | `MCQ` | `CORE_APPLY`
 **Câu hỏi:** Ba điểm phân biệt A, C, B thẳng hàng **theo thứ tự đó**, $AC=3\,\mathrm{cm}$, $CB=2\,\mathrm{cm}$. So sánh $\overrightarrow{AC}$ và $\overrightarrow{CB}$.
