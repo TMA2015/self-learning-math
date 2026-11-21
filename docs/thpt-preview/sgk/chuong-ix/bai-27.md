@@ -1,4 +1,4 @@
-# Bài 26. Biến cố và định nghĩa cổ điển của xác suất
+# Bài 27. Thực hành tính xác suất theo định nghĩa cổ điển
 
 <style>
 /* Scoped to B27 by its canonical First Try marker; no shared UI changes. */
@@ -18,7 +18,7 @@
 (() => {
  "use strict";
  const mount=()=>{
-  if(!/\/thpt-preview\/sgk\/chuong-ix\/bai-26\/?$/.test(location.pathname))return;
+  if(!/\/thpt-preview\/sgk\/chuong-ix\/bai-27\/?$/.test(location.pathname))return;
   const article=document.querySelector(".md-content__inner");
   if(!article||article.dataset.g10B27Golden==="true"||
     !article.querySelector('.thpt-r4-screen[data-b27-owner-g0g2="r01"]'))return;
@@ -65,7 +65,7 @@
 
     ### 1.1. Chọn nhóm: vì sao cần tổ hợp?
 
-    Chọn đồng thời hai thẻ trong năm thẻ ghi số 1–5, không phân biệt thứ tự: nhóm {1,2} và cách viết {2,1} chính là **một** kết quả. Vì vậy mẫu số là \(\binom52=10\), không phải \(5\cdot4=20\). Để có tổng lẻ, phải ghép một trong ba số lẻ với một trong hai số chẵn, được \(3\cdot2=6\) nhóm.
+    Chọn đồng thời hai thẻ trong năm thẻ ghi số 1–5, không phân biệt thứ tự: nhóm {1,2} và cách viết {2,1} chính là **một** kết quả. Vì vậy mẫu số là \(\binom52=10\), không phải \(5\cdot4=20\). Để có tổng lẻ, em cần ghép một số lẻ với một số chẵn; thử đếm các nhóm như vậy trước khi mở lời giải.
 
     Nếu đề bài đổi thành “rút liên tiếp và quan tâm thứ tự”, kết quả phải là **cặp có thứ tự**. Hai cách đếm đều có thể cho cùng xác suất trong mô hình phù hợp, nhưng **tử số và mẫu số phải theo cùng một loại kết quả**.
 
@@ -125,7 +125,7 @@
 
     ### 1.3. “Ít nhất một”: có cách nào đếm ngắn hơn?
 
-    Tung đồng xu cân đối ba lần độc lập, ghi N (ngửa), S (sấp). Tính xác suất có “ít nhất một N” bằng cách liệt kê bảy chuỗi chứa N được, nhưng dễ bỏ sót. Biến cố đối chỉ gồm chuỗi SSS, nên xác suất cần tìm là \(1-1/8=7/8\).
+    Tung đồng xu cân đối ba lần độc lập, ghi N (ngửa), S (sấp). Tính xác suất có “ít nhất một N” bằng cách liệt kê bảy chuỗi chứa N được, nhưng dễ bỏ sót. Biến cố đối chỉ gồm chuỗi SSS. Từ đó, em thử tính xác suất của biến cố ban đầu bằng cách lấy 1 trừ xác suất chuỗi SSS.
 
     Điều quan trọng không phải mẹo trừ số, mà là **hai biến cố đối không thể xảy ra đồng thời và phủ toàn bộ không gian mẫu**.
 
