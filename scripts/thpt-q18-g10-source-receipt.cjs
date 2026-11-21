@@ -1352,6 +1352,69 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
    return current;
   }
  }
+ if(name==="B27"){
+  // One canonical, complete SGK S1 83–87 enrichment, Q18 source-locked.
+  // Preserve the unchanged B01–B26 previously accepted source snapshots.
+  const p="prototypes/thpt/ux795/G10_CHIX_B27_S1_GOLDEN_ENRICHMENT_Q18_R01_20261121.md";
+  const r=fs.readFileSync(path.join(root,p),"utf8");
+  const field=k=>r.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("BASELINE_SOURCE_BLOB"),blobs[1],
+    "B27 must extend exact previous original canonical SGK source");
+  const next=field("CANDIDATE_SOURCE_BLOB");
+  assert(/^[a-f0-9]{40}$/.test(next||"")&&next!==blobs[1],
+    "B27 new source must have a real SHA successor");
+  for(const marker of ["G10-CHIX-B27-S1-GOLDEN-ENRICHMENT-Q18-R01-20261121",
+   "SLM-THPT-QUALITY-ONE","Q18_OWNER_SELF_VERIFIED_ENRICHMENT",
+   "DELTA_C_ACADEMIC_MATERIAL","INDEPENDENT_NOTEBOOKLM_REVIEW_NOT_CLAIMED",
+   "PDF_INDEX_NOT_VERIFIED_NON_BLOCKING","OWNER_P2_PENDING",
+   "B27_AFFECTED_MATH_TOKEN_MIGRATION=15","P0=0 P1=0"])
+   assert(r.includes(marker),"B27 S1/PED signed Q18 receipt missing "+marker);
+  const lesson=fs.readFileSync(path.join(root,
+   "docs/thpt-preview/sgk/chuong-ix/bai-27.md"));
+  const blob=require("node:crypto").createHash("sha1")
+   .update("blob "+lesson.length+"\0").update(lesson).digest("hex");
+  assert.equal(blob,next,"B27 Q18 candidate Git SHA mismatch");
+  const t=lesson.toString("utf8");
+  assert.deepEqual([...t.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),
+   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+   "B27 Golden must have four exact owner-approved tabs");
+  const knowledge=t.split('=== "Kiến thức SGK"')[1]?.split('=== "Ví dụ"')[0];
+  assert(knowledge,"B27 no formal S1 knowledge tab");
+  for(const term of ["2.1. Sử dụng phương pháp tổ hợp","2.2. Sử dụng sơ đồ hình cây",
+    "2.3. Xác suất của biến cố đối" ,"P(\\overline E)=1-P(E)"])
+    assert(knowledge.includes(term),"B27 S1 section or formula missing "+term);
+  assert.equal((knowledge.match(/<div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
+   "B27 precisely ONE official boxed theorem/rule: complement probability");
+  assert.equal((knowledge.match(/thpt-r4-concept-card/g)||[]).length,0,
+   "B27 cannot invent a formal concept when SGK teaches application methods");
+  for(const id of ["06","07","08","09","10"]){
+   assert(t.includes('data-thpt-first-try-id="THPT-G10-CHIX-TRY'+id+'"')&&
+    t.includes('data-thpt-help-id="HELP-G10-CHIX-TRY'+id+'"'),
+    "B27 canonical First Try and D6 identity lost: "+id);
+  }
+  assert.equal((t.match(/\?\?\? question "Đối chiếu"/g)||[]).length,5,
+    "B27 five original answer disclosures must remain closed, exact labels");
+  assert.equal((t.match(/\?\?\? tip "Kiểm lỗi/g)||[]).length,5,
+    "B27 five local outcome D6 steps must be directly below First Try");
+  assert.equal((t.match(/class="thpt-g10-example-solution"/g)||[]).length,6,
+   "B27 six full solved examples have to keep neutral explanation boxes");
+  assert(t.includes("data-b27-owner-g0g2=")&&t.includes("chuong-ix\\/bai-27\\/?$")&&
+   !t.includes("chuong-ix\\/bai-26\\/?$"),"B27 Golden route and marker mismatch");
+  assert.equal((t.match(/class="thpt-r4-footnote"/g)||[]).length,1,
+   "B27 one source note only; no duplicate footer");
+  assert(!t.includes("<small>Nguồn")&&!t.includes("Mỗi ví dụ có")&&
+   !t.includes("Tự đối chiếu lời giải sau khi em đã thử"),
+   "B27 learner prose still duplicates source or narration");
+  const svg=fs.readFileSync(path.join(root,"docs/assets/images/thpt/THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg"));
+  const svgSha=require("node:crypto").createHash("sha1")
+   .update("blob "+svg.length+"\0").update(svg).digest("hex");
+  assert.equal(svgSha,field("SOURCE_FIGURE_SVG_BLOB"),
+   "B27 existing tree SVG must match signed source");
+  assert(t.includes("THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg")&&
+   t.includes("Cây")&&t.includes("8\\,145\\,060")&&
+   t.includes("234"),"B27 SGK tree/lottery application lost");
+  return next;
+ }
  if(name==="B26"){
   // Owner-authorized B26 SGK enrichment; require a source-locked Q18 delta
   // on the one canonical lesson, never silently promote the old 27-row ledger.
