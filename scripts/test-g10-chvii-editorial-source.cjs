@@ -138,8 +138,12 @@ for(const [lessonStr,info]of Object.entries(specs)){
   name+" only real S1 textbook sections in Knowledge");
  assert.equal(ids(d,"data-thpt-first-try-id").length,info.count,name+" all First Try MUST be before Core/SGK Knowledge");
  assert.equal(ids(knowledge+examples+rem,"data-thpt-first-try-id").length,0,name+" cloned First Try outside Discovery");
- assert.equal(ids(rem,"data-thpt-help-id").length,info.helps,name+" all HELPs in remediation tab");
- assert.equal(ids(d+knowledge+examples,"data-thpt-help-id").length,0,name+" HELP outside remediation");
+ assert.equal(ids(d,"data-thpt-help-id").length,info.count,
+  name+" one local Kiểm lỗi per learner Vận dụng in Discovery");
+ assert.equal(ids(rem,"data-thpt-help-id").length,info.helps-info.count,
+  name+" only generic error HELP remains in final Golden tab");
+ assert.equal(ids(knowledge+examples,"data-thpt-help-id").length,0,
+  name+" no HELP in knowledge/examples");
  assert.equal((s.match(/<figure/g)||[]).length,info.figures,name+" original D5 figures lost");
  assert.equal([...examples.matchAll(/^    ### /gm)].length,info.examples,name+" worked example sections incorrect");
  const solutions=(n===19||n===20||n===21||n===22)?
@@ -158,7 +162,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B19 must distinguish general and parametric equation rules");
   assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,7,
    "B19 must have seven visible Vận dụng prompts, not Tự thử");
-  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-9]\. /gm)||[]).length,9,
+  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-9]\. /gm)||[]).length,2,
    "B19 9 original D6 IDs need 9 meaningfully distinguished errors");
   assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Tự khắc phục theo năm bước/.test(s),
    "B19 must remove legacy learner-facing metadata and non-Golden labels");
@@ -179,7 +183,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B20 three conditional formula/rule cards must be present");
   assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,
    "B20 exactly five learner-facing Vận dụng before original Đối chiếu");
-  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,7,
+  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,2,
    "B20 original seven D6 IDs must map to seven distinct 4.x errors");
   assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Bản chất trước công thức:|Tự khắc phục theo năm bước/.test(s),
    "B20 retained obsolete machine-like student copy or non-Golden labels");
@@ -201,7 +205,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B21 four actual conditional rules across two SGK sections missing");
   assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,
    "B21 needs five learner-facing Vận dụng items before Đối chiếu");
-  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,7,
+  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,2,
    "B21 must map seven unique learner-repair mistakes to original HELP");
   assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Bản chất trước công thức:|Tự khắc phục theo năm bước/.test(s),
    "B21 must not retain obsolete learner labels or repetitive D6");
@@ -233,7 +237,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B22 equation/method/application conditional rules require exactly four roles");
   assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,8,
    "B22 eight original learner questions must all be Vận dụng");
-  assert.equal((rem.match(/^    \?\?\? tip "4\.(?:[1-9]|10)\. /gm)||[]).length,10,
+  assert.equal((rem.match(/^    \?\?\? tip "4\.(?:[1-9]|10)\. /gm)||[]).length,2,
    "B22 all ten original HELP need distinct named 4.x cases");
   assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Bản chất trước công thức:|Hướng dẫn đọc hình:|Tự khắc phục theo năm bước|Tại sao là D2 mới/.test(s),
    "B22 student source has obsolete machine labels or redundant D6 lists");
