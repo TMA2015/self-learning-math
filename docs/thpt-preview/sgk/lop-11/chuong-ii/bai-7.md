@@ -147,6 +147,8 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Nhận biết và điều kiện:</strong> Nếu \(u_n\ne0\), có thể kiểm \(u_{n+1}/u_n=q\) không đổi. **Không chia khi \(u_n=0\)**; hãy dùng phương trình nhân \(u_{n+1}=qu_n\). Công bội có thể âm, \(0\), dương hoặc \(1\). Với \(q=0\), từ \(u_2\) trở đi dãy có các số hạng \(0\); khi \(q<0\), dấu luân phiên nếu \(u_1\ne0\).</div>
 
+    <figure class="thpt-r4-plot"><img src="../../../../../assets/images/thpt/FIG-G11-B07-01_R01.svg" loading="lazy" alt="Năm điểm rời rạc của cấp số nhân u_n bằng hai mũ n, có giá trị 2, 4, 8, 16, 32"><figcaption>Đọc hình cấp số nhân: khi \(n\) tăng từng đơn vị, giá trị **nhân đôi**; khoảng chênh lệch \(2,4,8,16\) không cố định. Đồ thị chỉ có điểm tại các chỉ số nguyên dương, không phải đường liên tục.</figcaption></figure>
+
     **Phân biệt với Bài 6:** Cấp số cộng có hiệu liên tiếp \(d\) cố định, cấp số nhân có hệ số nhân \(q\) cố định. Không có quy tắc nói rằng cứ một dãy tăng là cấp số nhân.
 
     ### 2.2. Công thức số hạng tổng quát và hệ quả ba số hạng
