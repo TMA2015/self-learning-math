@@ -1,9 +1,16 @@
+<!-- TOP09_MASTER974_CURRENT_AUTHORING_V2_20261121 -->
+## CURRENT CĐ09 AUTHORING one V2 · math/PED Q18 v3.2.0
+
+One effective learner `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md` blob `5681dd894755165e799b4a20d9741f43115778d9`, same original 71 SGK and 37 Topic canonical source banks with unchanged item math and four SVG; current existing Q18 author-only `b0e17ea8fbd00075c5de7dcaeb178985743645f8`, author source-custody `f740d4d08a5003d013e3ca70278367b6a8a6552e`. Three source-proved PED issues #977-030…032 addressed directly on one learner: 32/32 outcome-specific remedial Kiểm lỗi with real Practice Bài numbers; one opt-in Câu1–32→same item-ID Bài Practice map; O32 immediate FirstTry independent f(x)=1/x at a=2, dx=0.2, domain [2,2.2], signed dy=-1/20, Δy=-1/22, error1/220, explicit why local linear approximation only. Inverse-diff certifies all 108 Practice original stems/keys/solutions, 14 Written rubrics, 32 original PUBLIC question stems, four SVG preserved; 141/141 disclosure balance, SGK source credit only once at Topic end. Previous R06 nonpolynomial candidate is NONACTIVE, affected-only NotebookLM **independent PENDING**, current `AUTHOR_SELF_VERIFIED` source proof only—never assert independent reviewer PASS. No RD1, official readiness, Mastery, Final Submit, website implementation, merge/deploy.
+
+---
+
 # AUTHORING CĐ09 — Đạo hàm và ý nghĩa vi phân · V2 current R05
 
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 1574bafd8f380abca1305c01c9e0daec490c4c54
+AUTHOR_METADATA_BLOB: f740d4d08a5003d013e3ca70278367b6a8a6552e
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -11,9 +18,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: e35b9a0d2e09bb06167ef9a051d979b9b7d5c6d7
+ACADEMIC_SOURCE_BLOB: 5681dd894755165e799b4a20d9741f43115778d9
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: a44f1503ee112b16afaf5d651ec852eca6410e27
+REVIEW_RECEIPT_BLOB: b0e17ea8fbd00075c5de7dcaeb178985743645f8
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
