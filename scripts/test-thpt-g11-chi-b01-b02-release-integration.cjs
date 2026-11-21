@@ -33,13 +33,39 @@ const svg=[
 for(const [name,sha] of svg){const bytes=fs.readFileSync("docs/assets/images/thpt/"+name);assert.equal(blobHash(bytes),sha);assert(!/<script/i.test(bytes.toString()));}
 for(const [n,numExamples,nPractice] of [[1,3,5],[2,4,7]]){
  const page=read("docs/thpt-preview/sgk/lop-11/chuong-i/bai-"+n+".md");
- assert(page.includes("Chương I gồm Bài 1–4; Bài tự kiểm tra cuối chương chỉ hỗ trợ tự đối chiếu sau Final Submit, không ghi điểm thành thạo."),
-  "B01/B02 lead must describe the staged four-lesson chapter, not stale B01–B02-only scope");
  assert(!page.includes("Phạm vi đang công bố chỉ gồm Bài 1–2."),
   "Stale two-lesson learner-facing scope after B03/B04 integration");
- assert(page.includes("## 1. Kiến thức SGK")&&page.includes("## 2. Ví dụ"));
- assert.equal((page.match(/^### Ví dụ \d+\./gm)||[]).length,numExamples);
- assert.equal((page.match(/data-thpt-help-id=/g)||[]).length,2);
+ if(n===1){
+  // #982 owner-accepted G11 B01 is already Golden four-tab on main.
+  // Its exact Git blob is also pinned by test-thpt-g11-b01-ap-parity:
+  // do not replace its six local D6, two general D6 or six worked examples
+  // with old two-tab/three-example limits.
+  assert.equal(blobHash(fs.readFileSync("docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md")),
+   "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+   "G11 B01 immutable owner-accepted Golden public source changed");
+  assert.deepEqual([...page.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]),
+   ["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+   "G11 B01 accepted four-tab Golden structure");
+  assert.equal((page.match(/^    ### 3\.[1-6]\. Ví dụ/gm)||[]).length,6,
+   "G11 B01 Golden must have six source-locked examples");
+  assert.equal((page.match(/data-thpt-first-try-id=/g)||[]).length,6,
+   "G11 B01 six learner-first unscored tries");
+  assert.equal((page.match(/data-thpt-help-id=/g)||[]).length,8,
+   "G11 B01 six local and two general canonical D6");
+  const overview=read("docs/thpt-preview/sgk/lop-11/chuong-i.md");
+  for(const k of [1,2,3,4])assert(overview.includes('href="bai-'+k+'/"'),
+   "G11 ChI parent must link all four independent lessons");
+  assert(overview.includes("Final Submit")&&overview.includes("Skill Mastery")&&
+   page.includes('href="../tu-kiem-tra-chuong/"'),
+   "G11 B01 chapter selfcheck remains voluntary with no Mastery");
+ }else{
+  assert(page.includes("Chương I gồm Bài 1–4; Bài tự kiểm tra cuối chương chỉ hỗ trợ tự đối chiếu sau Final Submit, không ghi điểm thành thạo."),
+   "G11 B02 retains the four-lesson selfcheck-only source lead");
+  assert(page.includes("## 1. Kiến thức SGK")&&page.includes("## 2. Ví dụ"),
+   "G11 B02 historical Knowledge layout must remain");
+  assert.equal((page.match(/^### Ví dụ \d+\./gm)||[]).length,numExamples);
+  assert.equal((page.match(/data-thpt-help-id=/g)||[]).length,2);
+ }
  assert.equal(bank.forLesson(n,"core").length,2);
  assert.equal(bank.forLesson(n,"practice").length,nPractice);
  const hub=read("docs/thpt-preview/sgk/lop-11/chuong-i/luyen-tap.md");
