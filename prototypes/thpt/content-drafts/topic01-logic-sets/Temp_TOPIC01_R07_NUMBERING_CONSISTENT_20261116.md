@@ -453,7 +453,7 @@ Xét hai câu: (a) “9 là số chính phương”; (b) “x + 1 = 3”. Câu n
 
 <details markdown="1"><summary>Lời giải</summary>
 
-9=3²; câu x+1=3 đúng khi x=2 và sai khi x khác 2 nên chưa là một mệnh đề xác định nếu không gán biến.
+(a) là **mệnh đề đúng**; (b) là **mệnh đề chứa biến**, chưa có giá trị đúng–sai cố định khi chưa gán biến. 9=3²; câu x+1=3 đúng khi x=2 và sai khi x khác 2 nên chưa là một mệnh đề xác định nếu không gán biến.
 
 </details>
 
@@ -601,7 +601,7 @@ Cho A={1,2}, B={1,2,3}. Xác định 2∈A và A⊆B đúng/sai; phân biệt ha
 
 <details markdown="1"><summary>Lời giải</summary>
 
-2 là thành viên A; mọi phần tử của A đều trong B nên A⊆B. Không viết A∈B khi B chỉ chứa các số.
+**Cả hai phát biểu đều đúng.** 2 là thành viên A; mọi phần tử của A đều trong B nên A⊆B. Không viết A∈B khi B chỉ chứa các số.
 
 </details>
 
@@ -685,7 +685,7 @@ Trong tập vũ trụ U={1,2,3,4,5,6}, cho A={2,4,6}. Tìm phần bù U\A.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-Loại 2,4,6 khỏi U, còn 1,3,5.
+Phần bù là \(U\setminus A=\{1,3,5\}\). Loại 2,4,6 khỏi U, còn 1,3,5.
 
 </details>
 
@@ -818,5 +818,18 @@ Hãy tự làm đủ 11 câu trước khi đối chiếu. Các câu này là bà
 <!-- PUBLIC_REPLAY_ONLY: THPT-G10-B02-P05; NO_MASTERY; NOT_RD1 -->
 
 **Câu 11.** Lớp có 40 học sinh, 23 học câu lạc bộ Anh, 25 học câu lạc bộ Toán, 12 học cả hai. Hỏi bao nhiêu học sinh không học câu lạc bộ nào?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi tự hoàn thành 11 câu, em mở **Lời giải** của các bài tương ứng trong phần **Luyện tập** theo bảng dưới đây. Nếu còn sai, đọc lại mục **Kiểm lỗi** của nội dung kiến thức liên quan rồi thử làm lại bài mà không nhìn lời giải.
+
+| Câu tự kiểm tra | Xem lời giải ở Luyện tập |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 – 5 | Bài 1 – 3 – 5 – 8 – 10 |
+| Câu 6 – 7 – 8 – 9 – 10 – 11 | Bài 12 – 14 – 16 – 18 – 20 – 22 |
+
+Đây là cách tự đối chiếu bài công khai đã học, **không phải kết quả kiểm tra năng lực độc lập**.
+
+</details>
 
 Học liệu được xây dựng dựa trên Chương I SGK Toán 10, Tập Một – Kết nối tri thức với cuộc sống.
