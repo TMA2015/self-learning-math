@@ -73,6 +73,8 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
       assert.deepEqual(v.labels,labels,k+" labels");
       assert.deepEqual(v.headings,headings,k+" missing/duplicate headings");
       assert.equal(v.active,1,k+" active label");
+      if(!(v.pad>=8&&v.radius>=4&&v.headingBorder>=3))
+       console.error("GOLDEN_STYLE_DIAGNOSTIC "+k+" "+JSON.stringify(v));
       assert(v.pad>=8&&v.radius>=4&&v.headingBorder>=3,
        k+" incorrect computed Golden CSS");
       if(js){
