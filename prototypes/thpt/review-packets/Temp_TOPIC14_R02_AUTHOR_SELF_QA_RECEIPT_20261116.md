@@ -1,3 +1,21 @@
+<!-- TOP14_MASTER974_20261121_CURRENT_AUTHORING_Q18 -->
+## CĐ14 — current one R02 source Q18 AUTHOR_SELF_VERIFIED v3.2.0 (affected learning scope)
+
+**One current learner:** `prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md`, Git blob **`ff3d838680899b3c0a54ddd5774bebdf2f7d7d19`**. Prior signed source `3949c0a989da436c34967bbc3357cfd08ed14e1a` immutable historic. Same existing Q18 file, same one standard `SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18`, no independent NotebookLM full Topic current PASS claim. Previous Delta C G10 SGK B19 graph-function O07 and parabola O22 first-try misdirection corrections preserved.
+
+**Source-local verified improvements #977-045/046/047 (original P0/P1 checked math):**
+1. **#045 P1 Q08/PED6 FIXED_VERIFIED:** 23/23 existing Knowledge FirstTry→voluntary Đối chiếu answers provided short `Nếu làm sai` but no authentic numbered retry. Added **23 distinct opt-in Kiểm lỗi** segments, each diagnoses a real mistake, points to correct 1.1–4.6 Knowledge subsection and **two real `Bài luyện` out of 87**. Direct candidate exercise stems checked for same mathematical family. E.g. O01 normal/direction→Bài1/17; O07 affine growth→Bài6/23; O11 distance→28/42; O17 circle tangent→49/63; O20 hyperbola asymptotes→75/82; O21 parabola parameter p→69/83; O22 line-parabola intersection→84/87; O23 reflective model→78/85.
+2. **#046 P2 Q08/Q16/PED6 FIXED_VERIFIED:** 23 original question-only public `THPT-TOP14-P01…P23` remain exact; added **one opt-in after-all-23-questions Đối chiếu** with full same-canonical-item lookup Câu1–23 → original Practice positions `17,18,19,20,21,22,23,39,40,41,42,43,59,60,61,62,63,80,81,82,83,84,85`, direct **23/23 exact `item_id` parity** checked. No independent TOPIC_READINESS/RD1/Final Submit/Mastery claim, no answer/key copies.
+3. **#047 P2 #864 editorial mostly FIXED with canonical-source exception:** old 55 `Bài SGK`, 4 `Tự luận SGK`, 23 Topic `Bài luyện` and five Topic `Tự luận` reset numbering; changed **only 87 visible title prefixes** to `Bài luyện 1–87` sequential, no underlying source item ID/answer/solution/rubric changes. All four `Luyện tập từ SGK` and four redundant `Bài luyện thêm theo chuyên đề` headings replaced with learner-purpose descriptions per math area; removed source/bank/release technical explanations in introduction; O21 parabola parameter p and O23 conic optics cite mathematical conventions directly rather than repeat SGK provenance. One explicit final `Nguồn: SGK Toán 10, Tập Hai, Chương VII (Bài 19–22), bộ Kết nối tri thức với cuộc sống.` at end. Top source-ownership comment now clearly `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW`.
+
+**Exactly identified inherited canonical unresolved editorial exception:** original G10 source projection **`THPT-G10-B22-P03`** has `**Nếu làm sai:** Dùng quy ước SGK (y²=2px)…` and original G10 Written `THPT-G10-CHVII-W22-01` ends `**Depth note:** kết luận về tiếp tuyến ... ngoài SGK`. These are **two leftover learner-visible source references, one of them explicitly internal writer prose**, not an additional full-Topic bibliography. Both are within the original **canonical mathematical question/solution card body**. Do NOT silently modify just the Topic projection while its authoritative original G10 source owner is separate/unavailable in this PR. Requires **source-owner source-equivalent editorial correction to the original G10 canonical answer/rubric and matching one Topic projection under Q15**; this is an identified **P2_EDITORIAL_ORIGINAL_CANONICAL_FOLLOWUP**, not a new P0 or NotebookLM academic gate. Therefore literal one-SGK-mention across the entire learner file **NOT achieved yet**; only one full Topic source-credit line exists. Original shared G10 source specified in metadata blob `c5c222af88b0e932f9b60df059d8ffd4da5f0f26`; path currently not fetched on this branch; full reconciliation remains pending.
+
+**Direct self-QA comparing one current learner to prior Git snapshot:** 23 original worked Knowledge examples, all 23 first-try question stems and answers unchanged; only new 23 D6 after opt-in answer and O21/O23 source names. **87/87 original Practice `item_id` and complete question/key/explanation/9 Written rubric text body BYTE-EXACT**, normalizing only former title prefixes. 23/23 public Selfcheck original question stems/options remain byte exact. 23/23 original public same-ID lookups exact, **111 open/111 close disclosures** (23 Knowledge+87 Practice+one optional lookup), 78 `Lời giải` and 9 `Lời giải và rubric` untouched, original three SVG original source paths and files untouched. Actual math checks in affected scopes: 3x+2y−1=0 direction(−2,3), affine V(t)=2t+5 for V0=5 V3=11, distance from P(2,1) to 3x+4y−20=0 equals2, circle x²+y²=25 tangent x=5 only (5,0), elip a²25,b²16 c3, hypebol a²16,b²9 c5 and asymptotes ±3x/5, parabola y²=6x gives p3/F(1.5,0), y²=4x ∩ x=1 gives (1,±2), focus f3 gives y²=12x. Mathematical source S1 Toán10 KNTT Tập Hai ChVII B19–B22 and previous Q18 targeted O07 S1 supplement inherited only for unchanged math, **no fresh full PDF S1 inspection**; no full Topic independent external reviewer assertion.
+
+**Delta classification:** `DELTA_C_PED_TARGETED` 23 new learner recovery pathways; `DELTA_A_EDITORIAL` visible titles/headings/SGK attribution. One original G10 source owner P2 context pending, not silently ignored. Preserved Q15/Q16/SVG/RD1. One source→same Q18→A1→V2→ready→REGISTER must all point exact new Git blob before claiming `AUTHORING_CONTENT_READY`. Not website QA or owner RELEASE authorization; no merge/deploy.
+
+---
+
 <!-- TOP14_S1_G10T2_B19_MISSING_GRAPH_LINE_20261120 -->
 ## 20/11/2026 · Q01/Q03/Q10/Q11 — Bổ sung S1 bắt buộc TOP14-O07 (Delta C)
 
@@ -17,8 +35,8 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md
-SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
-ACADEMIC_SOURCE_BLOB: 3949c0a989da436c34967bbc3357cfd08ed14e1a
+SOURCE_BLOB: ff3d838680899b3c0a54ddd5774bebdf2f7d7d19
+ACADEMIC_SOURCE_BLOB: ff3d838680899b3c0a54ddd5774bebdf2f7d7d19
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_R02_AUTHORING_ONLY_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: e2dd3eb2985aba77e354dbd21c9025a273163be5
 ORIGINAL_R01_SOURCE_BLOB: 277ccb8b5d9f0a8c5f08680fa7e5b70925710308
