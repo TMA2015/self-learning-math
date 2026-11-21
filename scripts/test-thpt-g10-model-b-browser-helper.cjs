@@ -132,40 +132,61 @@ async function verifyModelBLesson(page,{n,chapter,tries,helps,images,questions=t
  await tip.locator("summary").click();
  assert(!(await tip.evaluate(x=>x.open)),"B"+n+" student cannot close D6");
  for(const asset of images){
-  const img=article.locator('img[src$="'+asset+'"]');
-  assert.equal(await img.count(),1,"B"+n+" reviewed D5 asset missing "+asset);
-  let visible=false;
-  // Lazy SVG may be zero-size until scrolled; select its visible figure/caption.
-  const figure=img.locator("xpath=..");
-  for(const name of tabsExpected){
-   await select(name);
-   if(await figure.isVisible()){visible=true;break;}
+  // B23/B24 source-locked Q18 D5 has two genuinely different uses of ONE
+  // original SVG: a discovery reading guide and a formal SGK reference.
+  // No other G10 lesson gains a duplicate figure by this exception.
+  const signedDouble=(n===23&&asset==="G10_B23_ADD_MULTIPLY_CHOICES_R02.svg")||
+   (n===24&&asset==="G10_B24_ORDER_VS_COMBINATION_R02.svg");
+  const count=signedDouble?2:1;
+  const all=article.locator('img[src$="'+asset+'"]');
+  assert.equal(await all.count(),count,
+   "B"+n+" exact Q18 D5 asset placements required: "+asset);
+  if(signedDouble){
+   const blocks=group.locator(".tabbed-content > .tabbed-block");
+   for(const i of [0,1])assert.equal(
+    await blocks.nth(i).locator('img[src$="'+asset+'"]').count(),1,
+    "B"+n+" approved D5 must appear once in Discovery and once in SGK Knowledge");
+   for(const i of [2,3])assert.equal(
+    await blocks.nth(i).locator('img[src$="'+asset+'"]').count(),0,
+    "B"+n+" cannot duplicate this D5 in Examples or Mistakes");
   }
-  assert(visible,"B"+n+" reviewed D5 figure inaccessible under four tabs "+asset);
-  await figure.scrollIntoViewIfNeeded();
-  await img.evaluate(async x=>{if(typeof x.decode==="function")await x.decode()});
-  const measure=await img.evaluate(x=>{
-   const fig=x.closest("figure");
-   return {loaded:x.complete&&x.naturalWidth>0,w:x.getBoundingClientRect().width,
-    p:x.parentElement.getBoundingClientRect().width,
-    width:innerWidth,scroll:fig?fig.scrollWidth:0,client:fig?fig.clientWidth:0,
-    figureOverflow:fig?getComputedStyle(fig).overflowX:null};
-  });
-  assert(measure.loaded,"B"+n+" D5 SVG missing or failed to decode "+asset);
-  if(n===6&&measure.width<=740){
-   assert(measure.w>=755&&measure.scroll>measure.client+2&&
-    (measure.figureOverflow==="auto"||measure.figureOverflow==="scroll"),
-    "B06 phone D5 must be readable at 760px and scroll inside figure "+asset);
+  // Both placements must be visible, load, and fit a mobile/tablet/desktop
+  // figure independently, rather than merely counting a repeated filename.
+  for(let i=0;i<count;i++){
+   const img=all.nth(i);
+   const figure=img.locator("xpath=..");
+   let visible=false;
+   for(const name of tabsExpected){
+    await select(name);
+    if(await figure.isVisible()){visible=true;break;}
+   }
+   assert(visible,"B"+n+" source-signed D5 inaccessible in four tabs "+asset+" @"+i);
+   await figure.scrollIntoViewIfNeeded();
+   await img.evaluate(async x=>{if(typeof x.decode==="function")await x.decode()});
+   const measure=await img.evaluate(x=>{
+    const fig=x.closest("figure");
+    return {loaded:x.complete&&x.naturalWidth>0,w:x.getBoundingClientRect().width,
+     p:x.parentElement.getBoundingClientRect().width,
+     width:innerWidth,scroll:fig?fig.scrollWidth:0,client:fig?fig.clientWidth:0,
+     figureOverflow:fig?getComputedStyle(fig).overflowX:null};
+   });
+   assert(measure.loaded,"B"+n+" D5 SVG missing or failed to decode "+asset);
+   if(n===6&&measure.width<=740){
+    assert(measure.w>=755&&measure.scroll>measure.client+2&&
+     (measure.figureOverflow==="auto"||measure.figureOverflow==="scroll"),
+     "B06 phone D5 must be readable at 760px and scroll inside figure "+asset);
    }else if(n===13&&measure.width<=600&&asset==="THPT_G10_B13_QUARTILES_D5_R01.svg"){
-   assert(measure.w>=580&&measure.scroll>measure.client+50&&
-    (measure.figureOverflow==="auto"||measure.figureOverflow==="scroll"),
-    "B13 quartile illustration must pan inside figure on mobile");
-  }else if(n===12&&measure.width<=600&&asset==="THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"){
-   assert(measure.w>=580&&measure.scroll>measure.client+50&&
-    (measure.figureOverflow==="auto"||measure.figureOverflow==="scroll"),
-    "B12 source-authored D5 must show readable 600px graphic and pan only inside figure "+asset);
-  }else{
-   assert(measure.w<=measure.p+2,"B"+n+" D5 must fit ordinary figure "+asset);
+    assert(measure.w>=580&&measure.scroll>measure.client+50&&
+     (measure.figureOverflow==="auto"||measure.figureOverflow==="scroll"),
+     "B13 quartile illustration must pan inside figure on mobile");
+   }else if(n===12&&measure.width<=600&&asset==="THPT_G10_B12_ERROR_INTERVAL_D5_R02_REVIEWED.svg"){
+    assert(measure.w>=580&&measure.scroll>measure.client+50&&
+     (measure.figureOverflow==="auto"||measure.figureOverflow==="scroll"),
+     "B12 source-authored D5 must show readable 600px graphic and pan only inside figure");
+   }else{
+    assert(measure.w<=measure.p+2,
+     "B"+n+" D5 must fit ordinary figure "+asset+" @"+i);
+   }
   }
  }
  const bounds=await page.evaluate(()=>({w:document.documentElement.scrollWidth,v:innerWidth}));
