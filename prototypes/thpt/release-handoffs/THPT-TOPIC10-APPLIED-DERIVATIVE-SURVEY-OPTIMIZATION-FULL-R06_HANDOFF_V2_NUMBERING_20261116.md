@@ -1,9 +1,18 @@
+<!-- TOP10_MASTER974_CURRENT_ONE_V2_HANDOFF_20261121 -->
+## CURRENT AUTHORING V2 CĐ10 — source-Q18 v3.2.0 / no RELEASE
+
+**Single effective R06 learner** `prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md`, Git blob **`7954f917b89c64527b166d02aac1844da08ed806`**, existing composite author Q18 `4cf2638f752b93fd87aa5446a1d89b66665afede`, A1–A7/S1 custodian `a4cc9fd38e2c50405df1ca33a89465620cb33926`. One original G12 SGK78 source-index `ffaba90bddc47a1d86dd905535e37c07d22173d9` + one unchanged new42 Topic bank `5f6ab764df6541ada9b4d4475403d29984d8e7da`, four original SVG unchanged.
+
+**Verified actual teaching corrections #977-033–035:** 36 uniquely relevant Kiểm lỗi inside existing voluntary Knowledge FirstTry disclosures with exact same-subsection + original Practice numbered retry; ONE post-all-36-public-selfcheck voluntary answer-navigation map based on 36 exact shared original item IDs, no duplicated bank answers/rubrics; SGK attribution only once in final Topic footer. Source inverse reconstruction proves entire original 120 Practice including 18 Written rubric, 36 original public Selfcheck question stems and 4 SVG unaffected; **157/157 disclosures balanced**. No student-view admin comments, source notes labeled `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW`. `DELTA_C_PED_TARGETED` direct author self-proven for error/recovery pathways, `DELTA_A_EDITORIAL` for source attribution; previous SGK source S1 math audited and kept immutable. No newly claimed NotebookLM full-Topic reviewer PASS, no public independent Topic Readiness, RD1, Skill Mastery or Final Submit. AUTHORING only; RELEASE/website AP/R and owner release authorization independent. No merge/deploy.
+
+---
+
 # CĐ10/22 — Ứng dụng đạo hàm: Khảo sát hàm số và Bài toán tối ưu hóa · HANDOFF V2
 
 PACKET_ID: THPT-TOPIC10-APPLIED-DERIVATIVE-SURVEY-OPTIMIZATION-FULL-R01
 CONTENT_REVISION: R06_FULL_S1_20261120
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 63f6a8a9d9e7db0d1b7523ad7f742d313a5c2d5d
+AUTHOR_METADATA_BLOB: a4cc9fd38e2c50405df1ca33a89465620cb33926
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -11,9 +20,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: b7d7ef5d8ca87b2225e6977ae54afe3261dbd220
+ACADEMIC_SOURCE_BLOB: 7954f917b89c64527b166d02aac1844da08ed806
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: d5fa113d2d55d9baa0e5cd6d5cd6634f82b10517
+REVIEW_RECEIPT_BLOB: 4cf2638f752b93fd87aa5446a1d89b66665afede
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
 PUBLIC_CANONICAL_BANK_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da
 PUBLIC_ORIGINAL78_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_ORIGINAL78_SGK_CANONICAL_INDEX_R01_20261112.md
