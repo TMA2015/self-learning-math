@@ -41,7 +41,9 @@ Gieo một xúc xắc 8 mặt đồng khả năng ghi các số 1–8. Viết Ω
 
 Ω={1,2,3,4,5,6,7,8}; A={2,4,6,8}.
 
-**Khi làm sai:** Nếu chỉ viết xác suất 1/2, em chưa mô tả biến cố; hãy ghi kết quả sơ cấp vào tập. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 1 tại Luyện tập 1.1. Không gian mẫu và tập kết quả của biến cố.
+**Kiểm lỗi**
+
+Nếu chỉ viết xác suất 1/2, em chưa mô tả biến cố; hãy ghi kết quả sơ cấp vào tập. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 1 tại Luyện tập 1.1. Không gian mẫu và tập kết quả của biến cố.
 
 </details>
 
@@ -58,7 +60,9 @@ Một vòng quay cân đối có các kết quả ghi 1 đến 6. Biến cố A 
 
 **Lời giải:** A={1,2}; A xảy ra nếu lượt quay cho kết quả 1 hoặc 2.
 
-**Khi làm sai:** Nếu viết A={2}, em đã bỏ kết quả 1 cũng không lớn hơn 2. Xem từng phần tử Ω={1,…,6}. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 2 tại Luyện tập 1.2. Mô tả biến cố từ một điều kiện.
+**Kiểm lỗi**
+
+Nếu viết A={2}, em đã bỏ kết quả 1 cũng không lớn hơn 2. Xem từng phần tử Ω={1,…,6}. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 2 tại Luyện tập 1.2. Mô tả biến cố từ một điều kiện.
 
 </details>
 
@@ -104,7 +108,9 @@ Hộp có 2 phiếu đỏ và 4 phiếu xanh khác nhau, rút đều một phi�
 
 Không. Sáu phiếu vật lí đồng khả năng, P(đỏ)=2/6=1/3.
 
-**Khi làm sai:** Nếu dùng 1/2, em đếm màu thay vì từng phiếu; hãy đặt tên cho sáu phiếu. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 3 tại Luyện tập 1.3. Xác suất cổ điển từ phiếu đồng khả năng.
+**Kiểm lỗi**
+
+Nếu dùng 1/2, em đếm màu thay vì từng phiếu; hãy đặt tên cho sáu phiếu. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 3 tại Luyện tập 1.3. Xác suất cổ điển từ phiếu đồng khả năng.
 
 </details>
 
@@ -123,7 +129,9 @@ Tung hai đồng xu cân đối và độc lập. Nếu chỉ ghi số mặt ng�
 
 **Lời giải:** Không. Không gian mẫu gồm NN, NS, SN, SS, mỗi chuỗi có xác suất 1/4. Số ngửa 0 ứng với SS, số ngửa 1 ứng với NS và SN, số ngửa 2 ứng với NN. Vì vậy ba giá trị **không** đồng khả năng; xác suất đúng một ngửa là \(2/4=1/2\).
 
-**Khi làm sai:** Nếu ra 1/3, em đã đếm ba **nhãn** thay vì bốn chuỗi sơ cấp. Liệt kê đủ NN, NS, SN, SS rồi ghép mỗi chuỗi với số mặt ngửa tương ứng. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 6 tại Luyện tập 1.6. Gộp kết quả không đồng khả năng.
+**Kiểm lỗi**
+
+Nếu ra 1/3, em đã đếm ba **nhãn** thay vì bốn chuỗi sơ cấp. Liệt kê đủ NN, NS, SN, SS rồi ghép mỗi chuỗi với số mặt ngửa tương ứng. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 6 tại Luyện tập 1.6. Gộp kết quả không đồng khả năng.
 
 </details>
 
@@ -158,7 +166,9 @@ Có 20 thẻ đồng khả năng, đúng 1 thẻ màu đen. Tính P(không đen)
 
 P(không đen)=19/20; P(đen)=1/20>0 nên đen là hiếm, không phải không thể.
 
-**Khi làm sai:** Nếu nói xác suất 0, em đã nhầm ít xảy ra với biến cố rỗng. Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 4 tại Luyện tập 1.4. Tính xác suất bằng biến cố đối.
+**Kiểm lỗi**
+
+Nếu nói xác suất 0, em đã nhầm ít xảy ra với biến cố rỗng. Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 4 tại Luyện tập 1.4. Tính xác suất bằng biến cố đối.
 
 </details>
 
@@ -177,7 +187,9 @@ Trong 100 vé đồng khả năng chỉ có một vé trúng. Biến cố trúng
 
 **Lời giải:** P(trúng)=1/100>0; hiếm chứ không phải biến cố không thể.
 
-**Khi làm sai:** Nếu P=0, em đã bỏ một vé trúng còn có mặt trong Ω. Đếm n(A)=1 và n(Ω)=100. Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 5 tại Luyện tập 1.5. Biến cố hiếm và biến cố không thể.
+**Kiểm lỗi**
+
+Nếu P=0, em đã bỏ một vé trúng còn có mặt trong Ω. Đếm n(A)=1 và n(Ω)=100. Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 5 tại Luyện tập 1.5. Biến cố hiếm và biến cố không thể.
 
 </details>
 
@@ -226,7 +238,9 @@ Từ 6 học sinh chọn một nhóm 2 người không phân vai; so với chọ
 
 Không phân vai có C(6,2)=15 nhóm; phân hai vai có 6×5=30 cặp có thứ tự.
 
-**Khi làm sai:** Nếu có cả hai bằng 30, nhóm AB và BA đã bị đếm hai lần ở trường hợp không phân vai. Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 7 tại Luyện tập 1.7. Chọn nhóm không xét thứ tự.
+**Kiểm lỗi**
+
+Nếu có cả hai bằng 30, nhóm AB và BA đã bị đếm hai lần ở trường hợp không phân vai. Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 7 tại Luyện tập 1.7. Chọn nhóm không xét thứ tự.
 
 </details>
 
@@ -243,7 +257,9 @@ Từ 5 phiếu khác nhau (1 đỏ, 4 xanh), chọn đều **hai phiếu không 
 
 **Lời giải:** P=1−P(cả hai xanh)=1−C(4,2)/C(5,2)=1−6/10=2/5.
 
-**Khi làm sai:** Nếu dùng 1−4/5 thì em đang xét một phiếu. Mẫu này là **nhóm hai phiếu**, phải đếm C(5,2). Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 8 tại Luyện tập 1.8. Ít nhất một và biến cố đối.
+**Kiểm lỗi**
+
+Nếu dùng 1−4/5 thì em đang xét một phiếu. Mẫu này là **nhóm hai phiếu**, phải đếm C(5,2). Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 8 tại Luyện tập 1.8. Ít nhất một và biến cố đối.
 
 </details>
 
@@ -278,7 +294,9 @@ Gieo hai xúc xắc phân biệt, cân đối. Có bao nhiêu cặp sơ cấp đ
 
 Có 36 cặp có thứ tự; chỉ (6,6) có tổng12 nên P=1/36.
 
-**Khi làm sai:** Không coi 11 tổng số chấm từ 2 đến12 là đồng khả năng; tổng12 chỉ có một cặp. Ôn lại mục Kiến thức 1.5. Chọn đúng mô hình trước khi tính và Bài luyện 10 tại Luyện tập 1.10. Rút không hoàn lại theo từng bước.
+**Kiểm lỗi**
+
+Không coi 11 tổng số chấm từ 2 đến12 là đồng khả năng; tổng12 chỉ có một cặp. Ôn lại Kiến thức 1.5, rồi làm Bài luyện 6 (Luyện tập 1.6) để lập các cặp sơ cấp đồng khả năng trước khi đếm mỗi giá trị tổng. Nếu vẫn nhầm thứ tự rút, luyện thêm Bài luyện 10 (Luyện tập 1.10).
 
 </details>
 
@@ -293,7 +311,9 @@ Tung một đồng xu cân đối ba lần, coi chuỗi có thứ tự. Có mấ
 
 **Lời giải:** Có 2³=8 chuỗi; đúng hai ngửa là NNS, NSN, SNN (3 chuỗi), P=3/8.
 
-**Khi làm sai:** Nếu đếm ba loại “0/1/2/3 ngửa” là 4 kết quả đồng khả năng, em đã gộp các chuỗi khác nhau. Vẽ cây ba tầng. Ôn lại mục Kiến thức 1.5. Chọn đúng mô hình trước khi tính và Bài luyện 9 tại Luyện tập 1.9. Chuỗi có thứ tự trên sơ đồ cây.
+**Kiểm lỗi**
+
+Nếu đếm ba loại “0/1/2/3 ngửa” là 4 kết quả đồng khả năng, em đã gộp các chuỗi khác nhau. Vẽ cây ba tầng. Ôn lại mục Kiến thức 1.5. Chọn đúng mô hình trước khi tính và Bài luyện 9 tại Luyện tập 1.9. Chuỗi có thứ tự trên sơ đồ cây.
 
 </details>
 
@@ -327,14 +347,16 @@ Hãy xét một lần gieo xúc xắc, với A là biến cố ra số chẵn v�
 
 **Vận dụng**
 
-Gieo xúc xắc cân đối. A=ra số chẵn, B=ra số lớn hơn 4. Viết A∩B và A∪B.
+Gieo một xúc xắc sáu mặt cân đối. A=ra số chẵn, B=ra số không lớn hơn 2. Viết A∩B và A∪B.
 
-<!-- ITEM_ID: THPT-TOP20-T06; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O11; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP20-T06; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O11; CONTENT_VERSION: TOP20-R12-20261121-T06; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-A={2,4,6}, B={5,6}; giao={6}, hợp={2,4,5,6}.
+A={2,4,6}, B={1,2}; giao={2}, hợp={1,2,4,6}.
 
-**Khi làm sai:** Giao chỉ lấy phần có chung, hợp chứa tất cả nhưng mỗi số chỉ ghi một lần. Ôn lại mục Kiến thức 2.1. Hợp, giao và xung khắc và Bài luyện 11 tại Luyện tập 2.1. Hợp và giao hai biến cố.
+**Kiểm lỗi**
+
+Nếu lấy B={4,5,6} thì em đã chép điều kiện “lớn hơn 3” của hình minh họa, không phải điều kiện “không lớn hơn 2” trong đề này. Viết B={1,2} trước; giao chỉ lấy phần chung {2}, còn hợp chứa {1,2,4,6} và mỗi số được ghi đúng một lần. Ôn lại Kiến thức 2.1 và giải lại Bài luyện 11.
 
 </details>
 
@@ -379,7 +401,9 @@ Tung một đồng xu cân đối và gieo xúc xắc cân đối độc lập. 
 
 P=1/2×3/6=1/4. Hai phép thử độc lập nên số cặp thuận lợi=1×3 trong 12 cặp.
 
-**Khi làm sai:** Nếu tính 1/2+1/2, em đang cộng xác suất mà đề yêu cầu cùng xảy ra. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 12 tại Luyện tập 2.2. Xác suất giao của hai biến cố độc lập.
+**Kiểm lỗi**
+
+Nếu tính 1/2+1/2, em đang cộng xác suất mà đề yêu cầu cùng xảy ra. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 12 tại Luyện tập 2.2. Xác suất giao của hai biến cố độc lập.
 
 </details>
 
@@ -396,7 +420,9 @@ Gieo một xúc xắc: A=ra 1 và B=ra 6. A,B có xung khắc không? Có độc
 
 **Lời giải:** A∩B=∅ nên xung khắc; P(A)P(B)=1/36>0 nhưng P(A∩B)=0 nên **không độc lập**.
 
-**Khi làm sai:** Nếu viết “vì không xảy ra cùng nên độc lập”, em đã đảo khái niệm. Xung khắc là giao rỗng, độc lập cần kiểm tích xác suất. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 13 tại Luyện tập 2.3. Phân biệt xung khắc và độc lập.
+**Kiểm lỗi**
+
+Nếu viết “vì không xảy ra cùng nên độc lập”, em đã đảo khái niệm. Xung khắc là giao rỗng, độc lập cần kiểm tích xác suất. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 13 tại Luyện tập 2.3. Phân biệt xung khắc và độc lập.
 
 </details>
 
@@ -435,7 +461,9 @@ Gieo xúc xắc cân đối. A=lẻ, B=lớn hơn 3. Tính P(A∪B) bằng quy t
 
 A={1,3,5}, B={4,5,6}, giao={5}; P(hợp)=3/6+3/6−1/6=5/6.
 
-**Khi làm sai:** Nếu ra 1, em đã cộng mà quên trừ kết quả 5 được đếm hai lần. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 14 tại Luyện tập 2.4. Áp dụng quy tắc cộng xác suất.
+**Kiểm lỗi**
+
+Nếu ra 1, em đã cộng mà quên trừ kết quả 5 được đếm hai lần. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 14 tại Luyện tập 2.4. Áp dụng quy tắc cộng xác suất.
 
 </details>
 
@@ -452,7 +480,9 @@ Gieo xúc xắc cân đối. A={1,2}, B={5,6}. Tính P(A∪B) và nêu vì sao c
 
 **Lời giải:** Hai tập rời nhau nên P(A∩B)=0, P(A∪B)=2/6+2/6=4/6=2/3.
 
-**Khi làm sai:** Nếu nhân 2/6×2/6, em đã tính giao của biến cố độc lập; ở đây A,B xung khắc và đề hỏi hợp. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 15 tại Luyện tập 2.5. Quy tắc cộng khi hai biến cố xung khắc.
+**Kiểm lỗi**
+
+Nếu nhân 2/6×2/6, em đã tính giao của biến cố độc lập; ở đây A,B xung khắc và đề hỏi hợp. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 15 tại Luyện tập 2.5. Quy tắc cộng khi hai biến cố xung khắc.
 
 </details>
 
@@ -491,7 +521,9 @@ Hai thiết bị hoạt động độc lập, xác suất hỏng lần lượt 1
 
 P=1−P(cả hai hỏng)=1−(1/5)(1/4)=19/20.
 
-**Khi làm sai:** Nếu nhân hai xác suất hoạt động 4/5×3/4, em đang tính cả hai hoạt động, không phải ít nhất một. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 16 tại Luyện tập 2.6. Quy tắc nhân cho hai phép thử độc lập.
+**Kiểm lỗi**
+
+Nếu nhân hai xác suất hoạt động 4/5×3/4, em đang tính cả hai hoạt động, không phải ít nhất một. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 16 tại Luyện tập 2.6. Quy tắc nhân cho hai phép thử độc lập.
 
 </details>
 
@@ -510,7 +542,9 @@ Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. A=đ�
 
 **Lời giải:** P(A)=1/2, P(B)=1/2, P(A∩B)=1/4. Vậy P(A∪B)=1/2+1/2−1/4=3/4.
 
-**Khi làm sai:** Nếu được 1, em đã cộng mà chưa trừ phần **cả hai cùng xảy ra**; nếu được 1/4 đó là giao, không phải hợp. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 17 tại Luyện tập 2.7. Tính xác suất hợp bằng cộng và trừ giao.
+**Kiểm lỗi**
+
+Nếu được 1, em đã cộng mà chưa trừ phần **cả hai cùng xảy ra**; nếu được 1/4 đó là giao, không phải hợp. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 17 tại Luyện tập 2.7. Tính xác suất hợp bằng cộng và trừ giao.
 
 </details>
 
@@ -764,11 +798,11 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 Ba bài tự luận dưới đây yêu cầu trình bày lời giải và giải thích. Rubric giúp em tự kiểm tra cách trình bày sau khi đã làm xong; kết quả này không phải điểm đánh giá chính thức.
 
-### 3.1. Bài tự luận 1
+### 3.1. Chọn nhóm hai phiếu và dùng biến cố đối
 
 <!-- ITEM_ID: THPT-TOP20-W01; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O08; CONTENT_VERSION: TOP20-R12; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
 
-**Tự luận 1.** Có 8 phiếu phân biệt, 3 phiếu đỏ và 5 phiếu xanh. Chọn đều một nhóm 2 phiếu không xét thứ tự. (a) Có bao nhiêu nhóm kết quả? (b) Tính P(cả hai đỏ). (c) Tính P(ít nhất một đỏ) bằng biến cố đối.
+**Bài luyện 18.** Có 8 phiếu phân biệt, 3 phiếu đỏ và 5 phiếu xanh. Chọn đều một nhóm 2 phiếu không xét thứ tự. (a) Có bao nhiêu nhóm kết quả? (b) Tính P(cả hai đỏ). (c) Tính P(ít nhất một đỏ) bằng biến cố đối.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -792,11 +826,11 @@ Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ 
 
 </details>
 
-### 3.2. Bài tự luận 2
+### 3.2. Hợp, giao và kiểm tra tính độc lập
 
 <!-- ITEM_ID: THPT-TOP20-W02; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O14; CONTENT_VERSION: TOP20-R12; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
 
-**Tự luận 2.** Một lần gieo xúc xắc cân đối. A={2,4,6}, B={2,3,5}. (a) Tìm giao và hợp. (b) Tính xác suất hợp bằng quy tắc cộng. (c) Hai biến cố có độc lập không?
+**Bài luyện 19.** Một lần gieo xúc xắc cân đối. A={2,4,6}, B={2,3,5}. (a) Tìm giao và hợp. (b) Tính xác suất hợp bằng quy tắc cộng. (c) Hai biến cố có độc lập không?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -818,11 +852,11 @@ Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ 
 
 </details>
 
-### 3.3. Bài tự luận 3
+### 3.3. Ghép biến cố độc lập và xét phần bù
 
 <!-- ITEM_ID: THPT-TOP20-W03; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O17; CONTENT_VERSION: TOP20-R12; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
 
-**Tự luận 3.** Tung đồng xu cân đối và gieo một xúc xắc cân đối, hai phép thử độc lập. A: xu ngửa; B: xúc xắc lớn hơn 4. (a) Tính P(A∩B). (b) Tính P(A∪B). (c) Tính xác suất cả A và B đều không xảy ra.
+**Bài luyện 20.** Tung đồng xu cân đối và gieo một xúc xắc cân đối, hai phép thử độc lập. A: xu ngửa; B: xúc xắc lớn hơn 4. (a) Tính P(A∩B). (b) Tính P(A∪B). (c) Tính xác suất cả A và B đều không xảy ra.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -884,5 +918,25 @@ Trước hết, đồng xu cân đối có xác suất ngửa \(P(A)=1/2\). Xúc
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P17; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
 **Câu 11.** Gieo hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lẻ, B: con thứ hai không lớn hơn 2. Tính P(A∪B).
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi **tự làm đủ 11 câu**, em tìm lại đúng bài trong phần Luyện tập và chủ động mở **Lời giải** để tự sửa. Đây là nơi xem bài gốc có cùng câu hỏi, không phải đáp án của một bài đánh giá độc lập.
+
+| Câu tự ôn | Bài có lời giải trong Luyện tập |
+| --- | --- |
+| Câu 1 | Bài luyện 1 |
+| Câu 2 | Bài luyện 3 |
+| Câu 3 | Bài luyện 4 |
+| Câu 4 | Bài luyện 7 |
+| Câu 5 | Bài luyện 8 |
+| Câu 6 | Bài luyện 10 |
+| Câu 7 | Bài luyện 11 |
+| Câu 8 | Bài luyện 13 |
+| Câu 9 | Bài luyện 14 |
+| Câu 10 | Bài luyện 16 |
+| Câu 11 | Bài luyện 17 |
+
+</details>
 
 **Nguồn tài liệu:** SGK Toán 10 Kết nối tri thức với cuộc sống, Tập Hai, Chương IX (Bài 26–27) và SGK Toán 11, Tập Hai, Chương VIII (Bài 28–30).
