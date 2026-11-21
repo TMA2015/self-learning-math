@@ -1,16 +1,30 @@
+<!-- TOP18_MASTER974_W07_TARGETED_Q18_A1_CORRECTION_20261121 -->
+## CĐ18 current W07 answer-leak fix · signed A1 recheck 21/11/2026
+
+CURRENT_EFFECTIVE_LEARNER_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+PREVIOUS_AFFECTED_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
+SOURCE_COMMIT: aee8a33bcf44acb90268f96b297fa161a3861de3
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_TARGETED_W07_STANDALONE_GIVENS; DELTA_A_UI_SVG_MOVED_UNDER_VOLUNTARY_ANSWER
+VERIFIED_DEFECT: TOP22-20261121-063 P1 FIXED_VERIFIED
+W07_DIRECT_CHECK: Original W07 asked (a) M(t), (b) minimal radar distance, (c) entry/exit but numeric O, R, A, u, t≥0 were only in a separate prefatory paragraph, not self-contained card. Its source SVG c818e636ded54730582b139f4476ce9daa2156b2 showed full solved t=3/t=6/t=9 and d_min=4 BEFORE W07 student attempt. Current W07 stem now repeats precisely radar O=(0,0,0), R=5 km, A=(6,4,0) km, u=(-1,0,0) km/h, t≥0. The exact SVG file/sha is unchanged but same image+read-guide moved inside W07 own opt-in answer disclosure after math solution, so it is hidden until requested. Student-facing NotebookLM author-source note in prelude removed.
+MATHEMATICAL_PARITY: 206/207 Practice bodies byte-exact to previously source-locked 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355. W07 answer/rubric original byte-exact, original numeric result M(t)=(6−t,4,0), OM²=(t−6)²+16, min4 at t6, boundary t3/9, inside for 3<t<9 all verified. No other canonical item stem/key/answer/rubric changed, all 47 Written rubric texts unchanged. 247 IDs and 12 original replay placements preserved; 40 firsttry/80 D6 routes remain. Ten SVG sources unchanged, 248/248 details.
+INHERITED_P2: SBT G12 B14 printed p25 scan missing; original G12 shared administrative Written solution line P2 #977-062 remains source-owner followup, not magically fixed.
+CURRENT_STANDARD_VERSION: 3.2.0; Q18_MODE: AUTHOR_SELF_VERIFIED; NO independent reviewer/RELEASE/merge/deploy/RD1/Final Submit/Mastery claim.
+---
+
 <!-- TOP18_MASTER974_CURRENT_A1_A7_20261121 -->
 ## CĐ18 current AUTHORING A1–A7 source-snapshot 21/11/2026
 
-CURRENT_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
+CURRENT_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-CURRENT_SOURCE_COMMIT: af0993c1b636213f99bdd705e1e2132d2a19cf62
+CURRENT_SOURCE_COMMIT: aee8a33bcf44acb90268f96b297fa161a3861de3
 CURRENT_STANDARD_ID: SLM-THPT-QUALITY-ONE
 CURRENT_STANDARD_VERSION: 3.2.0
 CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
 CURRENT_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
 CURRENT_DELTA: DELTA_C_PED_TARGETED_40_D6_80_MATH_LINKS_AND_O06_EXPLANATION; DELTA_A_EDITORIAL_40_VANDUNG_207_PRACTICE_12_REPLAY_LABELS
 CURRENT_PUBLIC_CANONICAL: 247 unique IDs exactly = 160 original G12 SGK (from original ChII 856a37bd16d2746ffc2e12906de18d1f4338a3b6 and ChV 11eb2834cfdb4a24685157f84666c2bb0767970a), 40 TOP18 FirstTry T01–T40, 40 original TOP18 Practice P01–P40 and seven Topic Written W01–W07; 12 extra public SelfCheck placements reuse P03/P07/P10/P14/P16/P17/P19/P22/P24/P29/P35/P40 at real Practice numbers 15/35/50/70/81/86/96/112/118/143/175/201, not extra items.
-CURRENT_SOURCE_QA: 40/40 Knowledge lesson/outcome math and Vận dụng stem/answer untouched, 40 individualized voluntary Kiểm lỗi passages mapping exact subsection and two mathematically relevant existing numbered Bài (80 valid references total); all 207/207 original complete learner Practice mathematical stems/answers/solutions and 47 original Written rubric bodies byte-exact vs frozen source 41daf40a3b639a3ef35e129099525137a05b1848, labels-only 207 sequential Bài luyện 1–207, 40 source-bank lead-in labels removed, 40 Vận dụng visible labels normalized, redundant "### 2." removed without deleting underlying math content; 12 public question-only items byte-exact, one voluntary after-12 answer-location disclosure; 10 SVG links/model unchanged; 248 balanced opt-in details, one SGK end source.
+CURRENT_SOURCE_QA: 40/40 Knowledge lesson/outcome math and Vận dụng stem/answer untouched, 40 individualized voluntary Kiểm lỗi passages mapping exact subsection and two mathematically relevant existing numbered Bài (80 valid references total); 206/207 entire Practice mathematical stems/answers/solutions byte-exact versus preceding blob 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355; the remaining Topic W07 question is now self-contained and its original full mathematical answer plus rubric /4 remain byte-exact; all 47 Written rubrics remain unchanged, labels-only 207 sequential Bài luyện 1–207, 40 source-bank lead-in labels removed, 40 Vận dụng visible labels normalized, redundant "### 2." removed without deleting underlying math content; 12 public question-only items byte-exact, one voluntary after-12 answer-location disclosure; 10 SVG links/model unchanged; 248 balanced opt-in details, one SGK end source.
 CURRENT_O06_PED_NOTE: Original resultant example 3N/4N gives 5N, FirstTry 6N/8N gives 10N, source question bank P06 tests WORK =10J for force10N, displacement2m and angle60°. New concept distinction between vector resultant and work added, no canonical bank item stem/key changed.
 CURRENT_P0: 0
 CURRENT_P1: 0
@@ -33,7 +47,7 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
+ACADEMIC_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
 ORIGINAL_S1_CROSSWALK_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_S1_40_OUTCOME_160_SGK_CANONICAL_CROSSWALK_20261114.md
 ORIGINAL_S1_CROSSWALK_BLOB: 7cba588cfe60d3675df99d8aa7e4b9275da9690e
 S1_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
