@@ -1,3 +1,8 @@
+<!-- TOP13_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
+**AUTHORING handoff current R07/source v3.2.0 — not website RELEASE:** one learner `prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md`, Git blob **`893829bacc3b4bae8c1463b1bdb0ebbd9857831f`**, source commit `feaaff2eaed2eb0c52fb1d2d778d66d859dd3475`; same Q18 AUTHOR_SELF_VERIFIED `9c902eb7d5c8fcf5eb62690fa8e2b9a6c3d5cad7` and custody `8cb53d363c0dc77d4b3c297115807e1d29118ccb`, same one V2 `6b1885f1d98c3a0ed3d7d9e116919b7e093b7478`. Original 52 public canonical IDs with 20 G10/12 G12/20 Topic, original new20 bank `c74505ba59d047c19943c2309f5fd7c033ac9563` and all 4 rubric bodies protected; 16 Selfcheck replays original question stems, 4 original SVG. Real #977-042/043/044 student deltas: 16 differentiated error→Knowledge→two real numbered Practice retries; one end after 16 public Selfcheck opt-in map exact item ID to Practice `Bài luyện 33–48`; 52 sequential `Bài luyện` learner captions, 48 original `Lời giải`/four `Lời giải và rubric` preserved; student knowledge zero-vector rule now explains mathematical convention without scattered SGK/author metadata, sole full-Topic SGK credit footer, 69/69 disclosures balanced. Entire 52 original Practice mathematical question/answer/rubric source cards byte-identical and original 16 Selfcheck question stems untouched. **Open source-owner editorial note:** G10 original shared `THPT-G10-B07-P04` **itself** says “SGK/SBT KNTT” in exact original stem/solution verified on sibling PR #750 original G10 blob `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9`; retain this canonical body, do not silently create an inconsistent displayed variant. One full source bibliography at bottom, yet literal source-name suppression still requires original SGK source owner coordination; not a new independent current Topic NotebookLM PASS nor owner release authorization. External SGK G10 dependency needs combined-HEAD RELEASE R1 review. No public official Readiness/RD1/Final Submit/Mastery or website/Firebase change.
+
+---
+
 <!-- TOP13_S1_B08_B09_PROPERTIES_READY_20261120 -->
 **20/11 supplemental S1 mandatory G10 B08/B09:** active learner `fcac52eb1263eb3c91799a647aad184f08952d34`, Q18 `74f6661547f5a1a38ab8c103f85988a8ef9d8d2b`, A1 `88b46525111b9cbd8079e4e70a259937b8727826`, V2 `1b9419f37bac9280d09d3d52092eb658168787a2`. Typed addition/scalar properties and prior unique decomposition, 10/10+8/8 targeted QA, original canonical item IDs/answers/solutions and RD1 preserved. STATE stays CONTENT_READY as owner-approved Authoring scope; website separate.
 
@@ -19,23 +24,23 @@ STATE: CONTENT_READY
 CONTENT_REVISION: R07_FULL_S1_KNOWLEDGE_20261120
 DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL_AFFECTED_VECTOR_AND_W03
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
-SOURCE_COMMIT: 92d5aa5588c11f0c7ad7ce1e1d67d6eed0803838
+SOURCE_COMMIT: feaaff2eaed2eb0c52fb1d2d778d66d859dd3475
 CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: b89f0309213a357768c4b3a94da474b6dbc0ac3c
+ACADEMIC_SOURCE_BLOB: 893829bacc3b4bae8c1463b1bdb0ebbd9857831f
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md (Q18 AUTHOR_SELF_VERIFIED, not new independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: df60f4ef23e6782f54c851f585789b210b6ea2a1
+REVIEW_RECEIPT_BLOB: 9c902eb7d5c8fcf5eb62690fa8e2b9a6c3d5cad7
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 6caa4e15bcfc2edaa7b547d3c6d51df86849953e
+AUTHOR_A1_A7_BLOB: 8cb53d363c0dc77d4b3c297115807e1d29118ccb
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 G10_SGK_ORIGINAL_DEPENDENCY_PR: 750
 G10_SGK_ORIGINAL_DEPENDENCY_BRANCH: authoring/g10-chiv-ped-r02-24-outcomes-20261105
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC13-PLANAR-SPATIAL-VECTORS-FULL-R04_HANDOFF_V2_NUMBERING_20261116.md
-AUTHOR_HANDOFF_BLOB: 2236d2faa2e77aa1432566901c40863f9a7992c8
+AUTHOR_HANDOFF_BLOB: 6b1885f1d98c3a0ed3d7d9e116919b7e093b7478
 ORIGINAL_G10_SGK_SOURCE_BLOB: 96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9
 ORIGINAL_G12_SGK_SOURCE_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
 SVG1_BLOB: 55ec9add04cb79da2cad7703b3897271e5b3436a
