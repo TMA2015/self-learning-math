@@ -47,38 +47,13 @@ for(const [lessonStr,info]of Object.entries(specs)){
  const expected=(n===19||n===20||n===21||n===22)?candidateG10KnowledgeBlob(n):row.candidate;
  assert.equal(blob(bytes),expected,name+" candidate Markdown differs from signed latest receipt");
  assert.equal(candidateG10KnowledgeBlob(n),expected,name+" canonical current source router not signed");
-
- // The owner-signed 21/11 metadata-only footer correction is a later
- // source successor. Preserve the R01/R02 predecessor SHA and compare the
- // latest SHA to the canonical Q18 router (which checks byte reconstruction).
- const antirepeat=fs.readFileSync(path.join(root,
-  "prototypes/thpt/ux795/G10_B19_B26_ONE_SOURCE_AND_SEMANTIC_BOX_Q18_DELTA_20261121.md"),"utf8");
- const antirow=antirepeat.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
- assert.equal(antirow.length,1,name+" needs one signed footer successor");
- const transition=[...antirow[0].matchAll(/\x60([a-f0-9]{40})\x60/g)].map(x=>x[1]);
- assert.equal(transition.length,2,name+" requires old and new Git SHA");
- const [preFooter,finalFooter]=transition;
- assert.equal(finalFooter,expected,name+" final source must match signed Q18 router");
-
- // Exact signed intermediate chain: owner R01 knowledge -> HELP placement
- // R02/R03 -> footer-only R04. Never equate R01 directly with final content.
- const helpVersion=n===21?"R03":"R02";
- const helpFile="prototypes/thpt/ux795/G10_CHVII_B"+n+
-  "_VAN_DUNG_KIEM_LOI_Q18_"+helpVersion+"_20261120.md";
- const helpReceipt=fs.readFileSync(path.join(root,helpFile),"utf8");
- const h=k=>helpReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
- const beforeHelp=h(helpVersion+"_PREVIOUS_SOURCE_BLOB");
- const afterHelp=h(helpVersion+"_CORRECTED_SOURCE_BLOB");
- assert.equal(afterHelp,preFooter,name+" metadata correction must follow exact HELP source");
-
-
  if(n===19){
   const latest=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVII_B19_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
   const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("PREVIOUS_B19_SOURCE_BLOB"),row.candidate,
    "B19 owner update must preserve published 13/11 receipt/source");
-  assert.equal(field("CANDIDATE_B19_SOURCE_BLOB"),beforeHelp,
+  assert.equal(field("CANDIDATE_B19_SOURCE_BLOB"),expected,
    "B19 current exact Git source must match new owner Q18 receipt");
  }
  if(n===20){
@@ -87,7 +62,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
   const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("PREVIOUS_B20_SOURCE_BLOB"),row.candidate,
    "B20 owner source must extend original signed S1/G10-CHVII receipt");
-  assert.equal(field("CANDIDATE_B20_SOURCE_BLOB"),beforeHelp,
+  assert.equal(field("CANDIDATE_B20_SOURCE_BLOB"),expected,
    "B20 new learner-first source must match Q18 signed Git blob");
  }
  if(n===21){
@@ -104,7 +79,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
   const f02=k=>fixed.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f02("PREVIOUS_B21_SOURCE_BLOB"),r01,
    "B21 display-math R02 must extend exact R01");
-  assert.equal(f02("CANDIDATE_B21_SOURCE_BLOB"),beforeHelp,
+  assert.equal(f02("CANDIDATE_B21_SOURCE_BLOB"),expected,
    "B21 canonical source must match exact R02 source SHA");
  }
  if(n===22){
@@ -113,7 +88,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
   const field=k=>latest.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(field("PREVIOUS_B22_SOURCE_BLOB"),row.candidate,
    "B22 must preserve signed original ChVII S1 source");
-  assert.equal(field("CANDIDATE_B22_SOURCE_BLOB"),beforeHelp,
+  assert.equal(field("CANDIDATE_B22_SOURCE_BLOB"),expected,
    "B22 authored Git blob must match signed owner Q18 receipt");
  }
  assert.equal(row.moved,info.count,name+" 25 First Try count source receipt");
@@ -138,12 +113,8 @@ for(const [lessonStr,info]of Object.entries(specs)){
   name+" only real S1 textbook sections in Knowledge");
  assert.equal(ids(d,"data-thpt-first-try-id").length,info.count,name+" all First Try MUST be before Core/SGK Knowledge");
  assert.equal(ids(knowledge+examples+rem,"data-thpt-first-try-id").length,0,name+" cloned First Try outside Discovery");
- assert.equal(ids(d,"data-thpt-help-id").length,info.count,
-  name+" one local Kiểm lỗi per learner Vận dụng in Discovery");
- assert.equal(ids(rem,"data-thpt-help-id").length,info.helps-info.count,
-  name+" only generic error HELP remains in final Golden tab");
- assert.equal(ids(knowledge+examples,"data-thpt-help-id").length,0,
-  name+" no HELP in knowledge/examples");
+ assert.equal(ids(rem,"data-thpt-help-id").length,info.helps,name+" all HELPs in remediation tab");
+ assert.equal(ids(d+knowledge+examples,"data-thpt-help-id").length,0,name+" HELP outside remediation");
  assert.equal((s.match(/<figure/g)||[]).length,info.figures,name+" original D5 figures lost");
  assert.equal([...examples.matchAll(/^    ### /gm)].length,info.examples,name+" worked example sections incorrect");
  const solutions=(n===19||n===20||n===21||n===22)?
@@ -162,7 +133,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B19 must distinguish general and parametric equation rules");
   assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,7,
    "B19 must have seven visible Vận dụng prompts, not Tự thử");
-  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-9]\. /gm)||[]).length,2,
+  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-9]\. /gm)||[]).length,9,
    "B19 9 original D6 IDs need 9 meaningfully distinguished errors");
   assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Tự khắc phục theo năm bước/.test(s),
    "B19 must remove legacy learner-facing metadata and non-Golden labels");
@@ -183,7 +154,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B20 three conditional formula/rule cards must be present");
   assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,
    "B20 exactly five learner-facing Vận dụng before original Đối chiếu");
-  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,2,
+  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,7,
    "B20 original seven D6 IDs must map to seven distinct 4.x errors");
   assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Bản chất trước công thức:|Tự khắc phục theo năm bước/.test(s),
    "B20 retained obsolete machine-like student copy or non-Golden labels");
@@ -205,7 +176,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B21 four actual conditional rules across two SGK sections missing");
   assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,5,
    "B21 needs five learner-facing Vận dụng items before Đối chiếu");
-  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,2,
+  assert.equal((rem.match(/^    \?\?\? tip "4\.[1-7]\. /gm)||[]).length,7,
    "B21 must map seven unique learner-repair mistakes to original HELP");
   assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Bản chất trước công thức:|Tự khắc phục theo năm bước/.test(s),
    "B21 must not retain obsolete learner labels or repetitive D6");
@@ -237,7 +208,7 @@ for(const [lessonStr,info]of Object.entries(specs)){
    "B22 equation/method/application conditional rules require exactly four roles");
   assert.equal((d.match(/\*\*Vận dụng\.\*\*/g)||[]).length,8,
    "B22 eight original learner questions must all be Vận dụng");
-  assert.equal((rem.match(/^    \?\?\? tip "4\.(?:[1-9]|10)\. /gm)||[]).length,2,
+  assert.equal((rem.match(/^    \?\?\? tip "4\.(?:[1-9]|10)\. /gm)||[]).length,10,
    "B22 all ten original HELP need distinct named 4.x cases");
   assert(!/Tự thử|Em vận dụng\.|Vì sao chọn cách này\?|Kiến thức tiền đề:|Bản chất trước công thức:|Hướng dẫn đọc hình:|Tự khắc phục theo năm bước|Tại sao là D2 mới/.test(s),
    "B22 student source has obsolete machine labels or redundant D6 lists");
