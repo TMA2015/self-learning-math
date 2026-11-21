@@ -1,3 +1,16 @@
+<!-- TOP01_MASTER974_TARGETED_Q18_DELTA_A_PLUS_C_20261121 -->
+## AUTHORING #974 — targeted self-QA for latest CĐ01 canonical learner, 21/11/2026
+
+**One learner path only:** `prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md`; current blob `53e0cc45a3b101c80c83b4412db0195e9f226c47`, previous signed blob `a34680c23f1be53feeda073f9e99d64f45ad8257`. This paragraph amends the existing Q18 receipt **in place**, preserving historical signoff in Git history. No independent NotebookLM verdict claimed.
+
+**Real changed scope and classification:** `DELTA_A_UI` removed 10 `Đáp án canonical:` management labels and one `Tự luận/Anchor:` display label; `DELTA_C_ACADEMIC_MATERIAL` added **11 targeted D6/PED remediation paragraphs** under existing opt-in `Vận dụng → Đối chiếu` of TOP01-O01..O11. Each paragraph identifies an actual conceptual mistake, a current visible `Kiến thức 1.1–3.2` section and 1–2 existing visible `Bài N` exercises. Mathematical conclusions, all 11 first-try questions, 24 Practice stems, 24 existing Practice solution bodies (apart from labels), two original Written rubrics, 11 question-only public replays and original two SVG assets have been preserved in an exact-before/after source check. 11/11 D6 disclosures are opt-in; no key/hint outside intended reveal and no private RD1 publication. One general SGK source footer remains.
+
+**Math/PED author self-check by affected outcome:** Checked O01 free variable vs quantification; O02 boundary counterexample t=5 and De Morgan; O03 proof 8|n ⇒ 4|n with counterexample 4 for converse; O04 x²=9 has ±3 over reals; O05 product consecutive integers even; O06 elements vs subsets; O07 inclusive union; O08 oriented set difference; O09 relative complement; O10 open/closed interval endpoints; O11 two-set Venn overlap counted once. Each D6 path points to a numbered Practice that exists and matches the misconception; exercise results remain unchanged. Printed S1 G10 T1 B01 pp5–11 / B02 pp12–19 scanned primary audit preserved at `Temp_TOPIC01_G10T1_B01_B02_ORIGINAL_S1_IMAGE_AUDIT_20261120.md`, scope limited to chapter B01/B02 critical content. Do not claim new direct PDF rescan on this exact turn.
+
+**Scoped author verdict:** Changed learner labels and D6 explanations: `SELF_VERIFIED / P0=0 / P1=0 on the affected delta`; no 22-topic audit completion, no new independent academic or browser QA claim, no fabricated readiness/mastery. Historic `DELTA_B` ten exact canonical keys were added to previous blob `a34680c23f1be53feeda073f9e99d64f45ad8257`; they are still present as unchanged mathematical answer statements, but no longer carry the redundant visible label. The historical 10-line byte-equivalence proof below pertains to `a34680c23f1be53feeda073f9e99d64f45ad8257`, not the present blob.
+
+---
+
 <!-- TOP01_R07_10_CANONICAL_KEY_RESTORE_SOURCE_EQUIVALENT_20261121 -->
 ## 21/11/2026 — CĐ01 answer-completeness fix against original SGK canonical; no new mathematics
 
@@ -5,7 +18,7 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.1.0
 PACKET_ID: THPT-TOPIC01-LOGIC-SETS-FULL-R01
 DELTA_CLASS: DELTA_B_SOURCE_EQUIVALENT
-CURRENT_SOURCE_BLOB: a34680c23f1be53feeda073f9e99d64f45ad8257
+CURRENT_SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
 PREVIOUS_SOURCE_BLOB: 98041b546daedde82a54f41b5c57b502eee6794f
 AUTHOR_ACTUAL_MATH_REVIEW: 24/24 student-visible canonical questions read, keys restored 10/10 byte-exact original
 ORIGINAL_BANK_G10: 95a554e31a613b8e215679fe6790738473d598df
@@ -31,8 +44,8 @@ STANDARD_VERSION: 3.1.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R07_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: a34680c23f1be53feeda073f9e99d64f45ad8257
-ACADEMIC_SOURCE_BLOB: a34680c23f1be53feeda073f9e99d64f45ad8257
+SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
+ACADEMIC_SOURCE_BLOB: 53e0cc45a3b101c80c83b4412db0195e9f226c47
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic01-logic-sets/Temp_TOPIC01_R06_STUDENT_FIRST_24_CANONICAL_VISIBLE_20261115.md
 PREVIOUS_SOURCE_BLOB: d4eafd811066997ee64de70a49c5da4a7ff26dcd
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC01_R06_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -47,7 +60,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOPIC01_R07_RECAP_Q18_fefe797ee158ee357533605267496ed415a7681a
+AUTHOR_SIGNOFF: TOP01_20261121_TARGETED_D6_LABEL_SELF_VERIFIED_53e0cc45a3b101c80c83b4412db0195e9f226c47
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
