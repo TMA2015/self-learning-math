@@ -1,3 +1,8 @@
+<!-- TOP15_MASTER974_AUTHOR_CUSTODY_20261121 -->
+**CURRENT one effective R04 SOURCE:** `prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md` Git blob **`c1be91f17044d89474d6399308385b4f1fbc7aeb`** (prior immutable `89dd1b775c782bd2a8638560a2aa93d49b589eee`); Q18 current one self-verified v3.2.0 `e84c2f66c9b95d63fbef8d5f0e1493f004036164`. Topic #977-048/049/050 verified and resolved in changed learning source: 22 precise Knowledge Kiểm lỗi→two genuine numbered Practice reattempts; one opt-in 8-public-selfcheck original ID→Practice location; 67 unique contiguous Bài luyện titles and five complete supplemental worked problems; single end-only SGK source credit. **67 complete original SGK+Topic Practice mathematical stem/key/solution/15 Written rubric bodies byte-for-byte preserved**, original 8 public question-only stems, 5 SVG+model assets unchanged, 91/91 voluntary details balanced. Source owner G11 ChIV B10–B14 remains external [PR #705](https://github.com/TMA2015/self-learning-math/pull/705), source SHA `e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b`; combined RELEASE R1 still must verify source on integrated HEAD, no copy or private RD1. Old R02/R03 and earlier source SHA lines below are historical, not a second active learner. Current author `SELF_VERIFIED` affected scope, not independent NotebookLM full Topic PASS, browser AP/R or deploy.
+
+---
+
 # CĐ15 R04 — AUTHORING A1–A7, Q15 canonical source metadata
 
 `STANDARD_ID=SLM-THPT-QUALITY-ONE` · `STANDARD_VERSION=3.1.0` · `CATALOG_TOPIC_ID=CD15` · `RUNTIME_TOPIC_ID=UNASSIGNED_OWNER_DECISION` (catalogue number is production sequence, not a website route)
@@ -15,8 +20,8 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 CATALOG_TOPIC_ID: CD15
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 89dd1b775c782bd2a8638560a2aa93d49b589eee
-SOURCE_BLOB: 89dd1b775c782bd2a8638560a2aa93d49b589eee
+ACADEMIC_SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
+SOURCE_BLOB: c1be91f17044d89474d6399308385b4f1fbc7aeb
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md
 ORIGINAL_SGK_SOURCE_BLOB: e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b
 INTERACTIVE_MODEL_ID: SLM-TOP15-LINE-PLANE-R00
@@ -265,4 +270,4 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF
 
 ## 20/11 — Complete SGK G11 Tập Một ChIV B10–B14 Knowledge
 
-Learner 89dd1b775c782bd2a8638560a2aa93d49b589eee and self-verified Q18 05776193cb36606c99a90a539369afef5c0bac86, 22/22 outcomes. O16 third-plane transversal property, O17 Thalès in space + prism/hình hộp, O20 ratio across parallel lines under projection, O21 ellipse image of circle and perspective distinction. Mathematically worked examples and hypotheses directly checked. Q15/Q16 original 89 canonical, 8 question-only selfchecks, five SVG, Practice/Selfcheck unchanged; not a new independent NotebookLM reviewer, not RELEASE.
+Learner 89dd1b775c782bd2a8638560a2aa93d49b589eee and self-verified Q18 e84c2f66c9b95d63fbef8d5f0e1493f004036164, 22/22 outcomes. O16 third-plane transversal property, O17 Thalès in space + prism/hình hộp, O20 ratio across parallel lines under projection, O21 ellipse image of circle and perspective distinction. Mathematically worked examples and hypotheses directly checked. Q15/Q16 original 89 canonical, 8 question-only selfchecks, five SVG, Practice/Selfcheck unchanged; not a new independent NotebookLM reviewer, not RELEASE.
