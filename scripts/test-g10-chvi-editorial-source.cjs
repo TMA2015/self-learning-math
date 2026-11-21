@@ -41,6 +41,18 @@ for(const n of [15,16,17,18]){
   "B"+n+" historical UX example count must remain frozen");
  const expected=candidateG10KnowledgeBlob(n);
  assert.equal(blob(bytes),expected,"B"+n+" current source must equal its own latest Q18 receipt");
+ // The owner-approved HELP-placement receipt is the FINAL 20/11 source;
+ // earlier R01/R02/R03 receipts are historical predecessor snapshots.
+ const placement=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHVI_B15_B18_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+ const placementRows=placement.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(placementRows.length,1,"B"+n+" requires a unique signed HELP-placement row");
+ assert(placement.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+  placement.includes("G10-CHVI-B15-B18-KIEM-LOI-PLACEMENT-Q18-R01-20261120"),
+  "B"+n+" immutable Q18 HELP-placement marker and classification missing");
+ const placementBlobs=[...placementRows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(placementBlobs.length,2,"B"+n+" requires exact old/new Git blob receipt");
+ assert.equal(placementBlobs[1],expected,"B"+n+" latest source must equal signed HELP correction");
  if(n!==15&&n!==16&&n!==17&&n!==18)assert.equal(expected,uxrow.candidate,
   "B"+n+" current source remains identical to published UX snapshot");
  else if(n===16){
@@ -49,8 +61,8 @@ for(const n of [15,16,17,18]){
   const f16=k=>r16.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f16("BASELINE_PUBLISHED_B16_SOURCE_BLOB"),uxrow.candidate,
    "B16 draft must follow immutable historical ChVI UX snapshot");
-  assert.equal(f16("CANDIDATE_B16_SOURCE_BLOB"),expected,
-   "B16 latest draft source must match its own signed owner receipt");
+  assert.equal(f16("CANDIDATE_B16_SOURCE_BLOB"),placementBlobs[0],
+   "B16 old owner source must be exact parent of HELP-placement successor");
  }else if(n===17){
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B17_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md"),"utf8");
@@ -68,8 +80,8 @@ for(const n of [15,16,17,18]){
   const f03=k=>afterR02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f03("PREVIOUS_B17_SOURCE_BLOB"),next("CANDIDATE_B17_SOURCE_BLOB"),
    "B17 new PED source follows R02 display-only historical receipt");
-  assert.equal(f03("CANDIDATE_B17_SOURCE_BLOB"),expected,
-   "B17 current source must match signed owner R03 pedagogic candidate");
+  assert.equal(f03("CANDIDATE_B17_SOURCE_BLOB"),placementBlobs[0],
+   "B17 pedagogic R03 must be parent of HELP-placement successor");
  }else if(n===18){
   const r18=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B18_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md"),"utf8");
@@ -86,8 +98,8 @@ for(const n of [15,16,17,18]){
   const f03=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f03("PREVIOUS_B18_SOURCE_BLOB"),f02("CANDIDATE_B18_SOURCE_BLOB"),
    "B18 R03 must extend exact previously published R02");
-  assert.equal(f03("CANDIDATE_B18_SOURCE_BLOB"),expected,
-   "B18 latest source must match owner R03 editorial delta");
+  assert.equal(f03("CANDIDATE_B18_SOURCE_BLOB"),placementBlobs[0],
+   "B18 editorial R03 must be parent of HELP-placement successor");
  }else{
   const receipt=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md"),"utf8");
@@ -106,8 +118,11 @@ for(const n of [15,16,17,18]){
   const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
   assert.equal(f02("PREVIOUS_B15_SOURCE_BLOB"),p2f("CANDIDATE_B15_SOURCE_BLOB"),
    "B15 new R02 must follow exact approved owner screenshot P2 source");
-  assert.equal(f02("CANDIDATE_B15_SOURCE_BLOB"),expected,
-   "B15 new R02 source must match latest signed SHA");
+  // R02 is the historical P2 readability/figure snapshot. The newer
+  // 20/11 Q18 HELP-placement receipt is an exact, additional signed source
+  // successor; never compare R02 directly to the final candidate.
+  assert.equal(f02("CANDIDATE_B15_SOURCE_BLOB"),placementBlobs[0],
+   "B15 R02 P2 snapshot must be exact parent of HELP-placement successor");
  }
  assert.equal(row.moved,tries[n],"B"+n+" historical First Try count");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id","data-thpt-fig-id"]){
@@ -153,8 +168,8 @@ for(const n of [15,16,17,18]){
   }
   assert.equal(nowHelp.length,tries[n],"B"+n+" D6 body count");
  }else{
-  assert.equal((s.match(/^    \?\?\? tip "4\.[1-5]\. /gm)||[]).length,5,
-   "B15 must have five meaningfully named misconceptions, not repeated D6 tips");
+  assert.equal((s.match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,5,
+   "B15 must retain exactly five local canonical Kiểm lỗi disclosures");
   assert(!s.includes("Gợi ý khắc phục khi chưa làm được — 5 bước"),
    "B15 generic repeated error headings must be eliminated");
   for(const term of ["Dấu hiệu sai:","Vì sao sai?","Tự kiểm:","Sửa lại:","Tập tiếp:"])
@@ -188,9 +203,14 @@ for(const n of [15,16,17,18]){
    "No obsolete labels or editorial pseudo-headings for B16");
  }
  assert.equal(ids(d,"data-thpt-first-try-id").length,tries[n],"B"+n+" every First Try in Discovery");
- assert.equal(ids(m,"data-thpt-help-id").length,tries[n],"B"+n+" every HELP in last tab");
- assert(!/data-thpt-(?:first-try-id|help-id)=/.test(k+e),"B"+n+" misplaced study/HELP ID");
- assert(!/data-thpt-help-id=/.test(d),"B"+n+" HELP in discovery");
+ assert.equal(ids(d,"data-thpt-help-id").length,tries[n],
+  "B"+n+" local HELP must be adjacent to its Discovery Vận dụng");
+ assert.equal(ids(m,"data-thpt-help-id").length,0,
+  "B"+n+" no duplicated HELP in tab 4 after approved placement");
+ assert.equal((d.match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,tries[n],
+  "B"+n+" exactly one local Kiểm lỗi per canonical First Try");
+ assert(!/data-thpt-(?:first-try-id|help-id)=/.test(k+e),
+  "B"+n+" no HELP or FirstTry in knowledge/examples");
  assert.equal((s.match(/<figure/g)||[]).length,figs[n],"B"+n+" original figures");
  assert.equal((e.match(/^    ### /gm)||[]).length,examples[n],"B"+n+" original worked examples");
  assert(!/data-mastery-credit|data-mastery-write|data-thpt-readiness/.test(s),"B"+n+" exam or Mastery leaked");

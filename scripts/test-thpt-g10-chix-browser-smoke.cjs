@@ -31,18 +31,27 @@ const {chromium}=require("playwright");
      assert.deepEqual(ids.filter(id=>id.startsWith("HELP-G10-CHIX-TRY")),Array.from({length:5},(_,i)=>"HELP-G10-CHIX-TRY"+String((lesson-26)*5+i+1).padStart(2,"0")),"Reviewed new First Try HELP B"+lesson);
      assert.deepEqual(ids.filter(id=>id.startsWith("D6-G10-B")),["D6-G10-B"+lesson+"-01","D6-G10-B"+lesson+"-02"],"Original D6 retained B"+lesson);
      assert.equal(await page.locator("[data-thpt-help-id][open]").count(),0,"D6 cards must be collapsed");
-     const fig=page.locator(".thpt-r4-probability-figure img");
-     assert.equal(await fig.count(),1,"Missing D5 teaching SVG B"+lesson);
-     await selectTab("Kiến thức SGK");
-     // Lazy SVG can have zero intrinsic dimensions until scrolled to.
-     // Its educational FIGURE/figcaption must be reachable first.
-     const figure=fig.locator("xpath=..");
-     assert(await figure.isVisible(),"B"+lesson+" reviewed D5 figure should be accessible in Knowledge panel");
-     await figure.scrollIntoViewIfNeeded();
-     await fig.evaluate(el=>el.decode());
-     const check=await fig.evaluate(el=>({loaded:el.complete&&el.naturalWidth>0,imgWidth:el.getBoundingClientRect().width,boxWidth:el.parentElement.getBoundingClientRect().width}));
-     assert(check.loaded,"Broken D5 SVG image link B"+lesson+" at "+width);
-     assert(check.imgWidth<=check.boxWidth+1,"SVG overflows container B"+lesson+" at "+width);
+     // Frozen Q18 B26 uses one Discovery SVG; B27 uses the same D5
+     // once in Discovery and once in formal SGK Knowledge. Check each
+     // placement actually loads and fits, not merely its image filename.
+     const asset=lesson===26?"THPT_G10_B26_COIN_DIE_SAMPLE_SPACE.svg":
+      "THPT_G10_B27_WITHOUT_REPLACEMENT_TREE.svg";
+     const count=lesson===26?1:2;
+     const fig=page.locator('.thpt-r4-probability-figure img[src$="'+asset+'"]');
+     assert.equal(await fig.count(),count,"B"+lesson+" exact signed Q18 D5 placements");
+     for(let i=0;i<count;i++){
+       const tab=i===0?"Khám phá kiến thức":"Kiến thức SGK";
+       await selectTab(tab);
+       const image=fig.nth(i);
+       const figure=image.locator("xpath=..");
+       assert(await figure.isVisible(),"B"+lesson+" D5 inaccessible in "+tab);
+       await figure.scrollIntoViewIfNeeded();
+       await image.evaluate(async el=>{if(el.decode)await el.decode()});
+       const check=await image.evaluate(el=>({loaded:el.complete&&el.naturalWidth>0,
+        imgWidth:el.getBoundingClientRect().width,boxWidth:el.parentElement.getBoundingClientRect().width}));
+       assert(check.loaded,"Broken D5 SVG B"+lesson+" at "+width+" in "+tab);
+       assert(check.imgWidth<=check.boxWidth+1,"D5 overflow B"+lesson+" at "+width+" in "+tab);
+     }
      await selectTab("Lỗi thường gặp");
      // Canonical D6 marker is a hidden SPAN immediately preceding the
      // public MkDocs details.tip; it is not itself a details element.

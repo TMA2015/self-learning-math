@@ -16,6 +16,19 @@ const previous=fs.readFileSync(path.join(root,
  "prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md"),"utf8");
 const currentUi=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_B12_B13_DUPLICATE_DE_HEADING_DELTA_A_R01_20261119.md"),"utf8");
 const ui=k=>currentUi.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+const placement=fs.readFileSync(path.join(root,
+ "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+assert(placement.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+ placement.includes("G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120"),
+ "Signed 20/11 source is a material D6 change; no UI-only reclassification");
+const placementSha=n=>{
+ const rows=placement.split("\n").filter(line=>line.startsWith("| B"+n+" | "));
+ assert.equal(rows.length,1,"B"+n+" exactly one approved source successor receipt");
+ const blobs=[...rows[0].matchAll(/`([0-9a-f]{40})`/g)].map(m=>m[1]);
+ assert.equal(blobs.length,2,"B"+n+" needs both previous/current exact blobs");
+ assert.notEqual(blobs[0],blobs[1],"B"+n+" signed change must not be a no-op");
+ return {previous:blobs[0],current:blobs[1]};
+};
 assert.equal(ui("B12_PREVIOUS_SOURCE_BLOB"),field("B12_SOURCE_CURRENT_BLOB"),
  "B12 signed predecessor current before owner duplicate-heading Delta A");
 assert.equal(ui("B12_PREVIOUS_CANONICAL_BLOB"),field("B12_CANONICAL_CURRENT_BLOB"),
@@ -31,8 +44,10 @@ const fnv=s=>{
  for(let i=0;i<s.length;i++)h=(h^BigInt(s.charCodeAt(i)))*0x100000001b3n&0xffffffffffffffffn;
  return h.toString(16).padStart(16,"0");
 };
-const formulaLock={B11:{count:168,hash:"4864b93648eb37f6"},
-                   B12:{count:165,hash:"3116ae4e24ba7fc8"}};
+// First SHA/fingerprint remains the immutable owner-P2 snapshot; second is
+// exact 20/11 signed HELP-context source. Neither is a new Academic verdict.
+const formulaLock={B11:{count:168,old:"4864b93648eb37f6",current:"eba599d1087c95a8"},
+                   B12:{count:165,old:"3116ae4e24ba7fc8",current:"1b5638a3d7c9c893"}};
 for(const [id,chapter,n] of [["B11","iv",11],["B12","v",12]]){
  const lesson="docs/thpt-preview/sgk/chuong-"+chapter+"/bai-"+n+".md";
  const master="prototypes/thpt/content-drafts/THPT_G10_CH"+chapter.toUpperCase()+"_"+id+"_CANONICAL.md";
@@ -42,15 +57,47 @@ for(const [id,chapter,n] of [["B11","iv",11],["B12","v",12]]){
   id+" previous published learner source SHA must be locked by R01 receipt");
  assert.equal(field(id+"_PREVIOUS_CANONICAL_BLOB"),prior(id+"_CANONICAL_CURRENT_BLOB"),
   id+" previous published canonical SHA must be locked by R01 receipt");
- const signedSource=id==="B12"?ui("B12_CURRENT_SOURCE_BLOB"):field(id+"_SOURCE_CURRENT_BLOB");
- const signedCanonical=id==="B12"?ui("B12_CURRENT_CANONICAL_BLOB"):field(id+"_CANONICAL_CURRENT_BLOB");
- assert.equal(gitblob(current),signedSource,id+" exact learner-source SHA");
- assert.equal(gitblob(manuscript),signedCanonical,id+" single current canonical SHA");
+ const original=id==="B12"?ui("B12_CURRENT_SOURCE_BLOB"):field(id+"_SOURCE_CURRENT_BLOB");
+ const earlierCanonical=id==="B12"?ui("B12_CURRENT_CANONICAL_BLOB"):field(id+"_CANONICAL_CURRENT_BLOB");
+ const transition=placementSha(n);
+ assert.equal(transition.previous,original,id+" immutable owner P2 source predecessor");
+ const expectedCanonical={B11:"22228598320ee81549c4ee9783559e2d4ff9476c",
+  B12:"1d11fadde3b592d68b328eb448318ac52d8a8c95"}[id];
+ // Historical parent and its manuscript must remain source locked in the
+ // original 18–19 Nov receipts while current manuscript follows 20 Nov receipt.
+ assert(/^[a-f0-9]{40}$/.test(earlierCanonical),id+" historical manuscript SHA");
+ assert.equal(gitblob(current),transition.current,id+" signed current learner source SHA");
+ assert.equal(gitblob(manuscript),expectedCanonical,id+" current signed manuscript SHA");
  const a="<!-- BEGIN_"+id+"_KNOWLEDGE_MARKDOWN -->\n",b="\n<!-- END_"+id+"_KNOWLEDGE_MARKDOWN -->";
  assert.equal(manuscript.split(a)[1]?.split(b)[0],current,id+" canonical Section A must byte-equal learner Markdown");
  const stream=tex(current);
  assert.equal(stream.length,formulaLock[id].count,id+" full authored math token count");
- assert.equal(fnv(stream.join("\u241f")),formulaLock[id].hash,id+" changed any pre-reviewed TeX token");
+ assert.equal(fnv(stream.join("\u241f")),formulaLock[id].current,
+  id+" 20/11 signed TeX stream changed outside approved Q18 material delta");
+ assert.notEqual(formulaLock[id].old,formulaLock[id].current,
+  id+" original P2 formula fingerprint must remain a distinct historical baseline");
+ if(id==="B11"){
+  for(const expr of ["\\(60^\\circ\\)","\\(4\\,\\mathrm N\\)",
+   "\\(|\\vec F_1+\\vec F_2|^2=4^2+4^2+2\\cdot4\\cdot4\\cos60^\\circ=48\\)",
+   "\\(4\\sqrt3\\,\\mathrm N\\)"])
+   assert(current.includes(expr),"B11 material-delta force example missing "+expr);
+  const forceAnchor='data-thpt-help-id="HELP-G10-CHIV-FORCE-TR01"';
+  const forceStart=current.indexOf(forceAnchor);
+  assert(forceStart>=0,"B11 FORCE HELP canonical anchor must be preserved");
+  const rest=current.slice(forceStart);
+  const nextHeading=rest.search(/\n    #{3,4} |\n=== "/);
+  const forceHelp=nextHeading<0?rest:rest.slice(0,nextHeading);
+  assert(forceHelp.includes("\\(4\\sqrt3\\,\\mathrm N\\)")&&
+   forceHelp.includes("\\(60^\\circ\\)")&&
+   !forceHelp.includes("\\(120^\\circ\\)"),
+   "B11 corrected FORCE HELP must use 4N/60 degrees; unrelated example 6N/120 remains valid");
+ }else{
+  for(const expr of ["\\(\\sqrt[3]{11}\\)","\\(11^{(1/3)}\\)",
+   "\\(2{,}224\\)","\\(2{,}2235^3<11<2{,}2245^3\\)"])
+   assert(current.includes(expr),"B12 owner-checked cube-root-11 correction missing "+expr);
+  assert(!current.includes("\\(\\sqrt[3]{7}\\)"),
+   "B12 legacy cube-root-7 HELP not the related First Try");
+ }
  const ex=current.split('=== "Ví dụ"')[1].split('=== "Lỗi thường gặp"')[0];
  for(const [label,re] of [
   ["B10 neutral solution component",/<div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ">/g],

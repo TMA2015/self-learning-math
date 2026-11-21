@@ -35,8 +35,14 @@ for(let n=23;n<=25;n++){
  // Exact original scanned SGK/SBT printed-page citation guard, metadata only.
  const s1Pages={23:["60–65","51–53"],24:["66–71","54–55"],25:["72–75","56–57"]};
  const [sgkPages,sbtPages]=s1Pages[n];
- const receipt=lesson.match(/<small>Nguồn: SGK[^<]*<\/small>/);
- assert(receipt&&receipt[0].includes(sgkPages)&&receipt[0].includes(sbtPages),
+ // Signed owner 21/11 one-source footer supersedes historical <small>
+ // wrapper without changing any original printed SGK/SBT page range.
+ const oldReceipt=[...lesson.matchAll(/<small>Nguồn: SGK[^<]*<\/small>/g)];
+ const finalFooter=[...lesson.matchAll(/<p class="thpt-r4-footnote">Nguồn: SGK[^<]*<\/p>/g)];
+ assert.equal(oldReceipt.length+finalFooter.length,1,
+  "B"+n+" exactly one canonical SGK/SBT footnote, no duplicated sources");
+ const receipt=(oldReceipt[0]||finalFooter[0])[0];
+ assert(receipt.includes(sgkPages)&&receipt.includes(sbtPages),
   "Incorrect original printed SGK/SBT S1 source pages B"+n);
 }
 assert(bank.records.some(x=>x.item_id==="THPT-G10-B25-P07"&&x.role==="PRACTICE"&&x.solution.includes("-243")),

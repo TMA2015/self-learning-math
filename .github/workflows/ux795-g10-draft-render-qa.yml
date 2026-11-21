@@ -94,20 +94,30 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           css = "  - assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css\n"
+          golden_hook = "  - hooks/sgk_golden_first_paint.py\n"
           for name in ("mkdocs.yml", "mkdocs.thpt-preview.yml"):
               candidate = Path(name).read_text(encoding="utf-8")
               live_file = Path("integration-main") / name
               published = live_file.read_text(encoding="utf-8")
               if candidate.count(css) != 1:
                   raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} must register exactly one scoped G10 CSS")
-              if published == candidate:
-                  print(f"PASS current published {name}: exactly identical, original G10 CSS already present")
-              elif candidate.replace(css, "", 1) == published:
-                  print(f"PASS historical {name}: only the G10 Knowledge CSS was added")
-              else:
+              # The #984 initial-HTML hook is added ONLY to the main config.
+              # Require exact byte-preserving parity after removing ONLY
+              # that one named hook and/or the one historic scoped CSS.
+              if name == "mkdocs.yml" and candidate.count(golden_hook) != 1:
+                  raise SystemExit("STANDARD_CONFLICT_HOLD: exactly one First Paint hook required")
+              if name != "mkdocs.yml" and golden_hook in candidate:
+                  raise SystemExit("STANDARD_CONFLICT_HOLD: no First Paint hook in alternate preview config")
+              allowed = [candidate, candidate.replace(css, "", 1)]
+              if name == "mkdocs.yml":
+                  no_hook = candidate.replace(golden_hook, "", 1)
+                  allowed.extend([no_hook, no_hook.replace(css, "", 1)])
+              if published not in allowed:
                   raise SystemExit(f"STANDARD_CONFLICT_HOLD: {name} has unapproved config differences")
+              print(f"PASS {name}: only the source-locked CSS/Golden hook states are permitted")
               live_file.write_text(candidate, encoding="utf-8")
           PY
+          cp hooks/sgk_golden_first_paint.py integration-main/hooks/
           cp docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css integration-main/docs/assets/stylesheets/
           # B09 new responsive decomposition D5: QA-only overlay, not deploy.
           for image in THPT_G10_B09_DECOMPOSITION_TWO_DIRECTIONS_D5_R03.svg THPT_G10_B09_DECOMPOSITION_MOBILE_D5_R03.svg; do

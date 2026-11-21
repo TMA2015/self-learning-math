@@ -18,7 +18,7 @@ const root="http://127.0.0.1:8765/thpt-preview/";
      assert(response?.ok(),"Missing ChIV B"+n);
      const article=page.locator("article.md-content__inner");
      if(await verifyModelBLesson(page,{n,chapter:"iv",tries:count,helps:n>=10?3:2,
-        images:n===7?["THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg"]:
+        remediationTab:"Khám phá kiến thức",images:n===7?["THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg"]:
                n===8?["THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"]:
                n===9?["THPT_G10_B09_SCALAR_MULTIPLE_VECTORS_D5_R01.svg"]:
                n===10?["THPT_G10_B10_COORDINATES_DIFFERENCE_D5_R01.svg",

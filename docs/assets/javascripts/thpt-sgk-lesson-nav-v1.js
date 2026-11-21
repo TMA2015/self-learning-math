@@ -332,6 +332,7 @@ const polishG10ChapterIV=(article)=>{
  const section=["1. Khám phá kiến thức","2. Kiến thức SGK","3. Ví dụ",
    "4. Lỗi thường gặp và cách tự khắc phục"];
  blocks.forEach((block,i)=>{
+  if(block.querySelector(":scope > h2.thpt-g10-section-heading"))return;
   const h=document.createElement("h2");
   h.className="thpt-g10-section-heading";
   h.textContent=section[i];block.prepend(h);
@@ -571,6 +572,13 @@ const polishG10ChapterVII=(article)=>{
  let sections=0,boxes=0;
  for(const h of panes[2].querySelectorAll(":scope > h3")){
   sections++;
+  // B19–B22 canonical source already has signed solution-only panels.
+  // Count exactly one existing panel before considering a JS DOM wrapper.
+  const existing=[];
+  for(let cursor=h.nextElementSibling;cursor&&cursor.tagName!=="H3";cursor=cursor.nextElementSibling)
+   if(cursor.classList.contains("thpt-g10-example-solution"))existing.push(cursor);
+  if(existing.length===1){boxes++;continue;}
+  if(existing.length>1)continue; // fail closed, QA checks boxes===sections
   let node=h.nextElementSibling;
   while(node&&node.tagName!=="H3"&&!isLead(node,/^Lời giải\./iu))
    node=node.nextElementSibling;

@@ -5,7 +5,7 @@
  * receipts; B03–B06 keep exact historic SHA. Golden UI/answer and D6
  * regressions are checked; this does NOT independently approve Delta C.
  */
-const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto"),cp=require("node:child_process");
 const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_G10_URL||"http://127.0.0.1:8765";
@@ -135,8 +135,13 @@ function checkSHA(){
     const r11=fs.readFileSync(path.join(root,
      "prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md"),"utf8");
     const f11=k=>r11.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-    assert.equal(hash(data),f11("CSS_B11_SCOPED_APPEND_BLOB"),
-     "B11 appended CSS must be exact source locked");
+    // The signed B11 stylesheet is a historical prefix before B12–B27
+    // extensions. Lock those bytes, rather than the newer complete CSS hash.
+    const b12Start=cssText.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity");
+    assert(b12Start>cut11&&cssText.indexOf("/* G10 ChV B12 · OWNER P2 Golden parity",b12Start+1)===-1,
+     "Exactly one B12 scoped CSS appendix follows signed B11");
+    assert.equal(hash(cssText.slice(0,b12Start-1)),f11("CSS_B11_SCOPED_APPEND_BLOB"),
+     "B11 accepted Golden CSS must remain byte-exact immutable prefix");
     assert(cssText.slice(cut10,cut11).includes('data-thpt-first-try-id="THPT-G10-CHIV-TRY16"')&&
       !/TRY0[1-9]|TRY1[1-5]/.test(cssText.slice(cut10,cut11))&&
       cssText.slice(cut11).includes('data-thpt-first-try-id="THPT-G10-CHIV-TRY21"')&&
@@ -146,6 +151,14 @@ function checkSHA(){
       "Only B06 canonical Knowledge marker may add CSS");
    assert(data.toString("utf8").includes('data-thpt-first-try-id="THPT-G10-CHIII-TRY01"'),
     "B05 CSS must scope solely to B05");
+  }else if(p==="mkdocs.yml"){
+   // First Paint intentionally registers exactly one scoped MkDocs hook.
+   // Reconstruct the accepted pre-PR config byte-for-byte; no other config
+   // (including THCS / plugins / Firebase) may drift in this UI-only PR.
+   const source=data.toString("utf8"),entry="  - hooks/sgk_golden_first_paint.py\n";
+   assert.equal(source.split(entry).length-1,1,"One Golden First Paint hook only");
+   assert.equal(hash(source.replace(entry,"")),sha,
+    "Golden First Paint registration must be the ONLY config change");
   }else assert.equal(hash(data),sha,"Untouched SGK sibling source/theme drift: "+p);
  }
  const q18=fs.readFileSync(path.join(root,
@@ -191,22 +204,32 @@ function checkSHA(){
    "prototypes/thpt/ux795/G10_CHIV_B10_S1_PED_SINGLE_CANONICAL_Q18_R01_20261118.md"),"utf8");
  const f10=k=>b10.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
  const newJs=js.toString("utf8");
+ const former=cp.spawnSync("git",["show",
+  "e8d6f76e82711738e1e2af569d1613052b30f910:docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js"],
+  {cwd:root,encoding:"utf8"});
+ assert.equal(former.status,0,"Golden runtime main baseline must be fetched and readable");
+ const signedJs=former.stdout;
+ assert.equal(hash(signedJs),f10("B10_SCOPED_GOLDEN_RUNTIME_BLOB"),
+  "Previous signed B10 runtime must stay immutable in Git history");
  const start1=" const isEnrichedB10=",end1=" const section=",
        start2=" // B10 signed Q18:",end2=" // Golden example solution panel.";
- const a=newJs.indexOf(start1),b=newJs.indexOf(end1,a),
-       c=newJs.indexOf(start2),d=newJs.indexOf(end2,c);
+ const a=signedJs.indexOf(start1),b=signedJs.indexOf(end1,a),
+       c=signedJs.indexOf(start2),d=signedJs.indexOf(end2,c);
  assert(a>0&&b>a&&c>b&&d>c&&
-  newJs.indexOf(start1,a+1)<0&&newJs.indexOf(start2,c+1)<0,
-  "B10 JavaScript may add only two exact scoped Golden regions");
- const baseJs=newJs.slice(0,a)+newJs.slice(b,c)+newJs.slice(d);
+  signedJs.indexOf(start1,a+1)<0&&signedJs.indexOf(start2,c+1)<0,
+  "Historical signed B10 JavaScript must preserve two exact scoped regions");
+ const baseJs=signedJs.slice(0,a)+signedJs.slice(b,c)+signedJs.slice(d);
  assert.equal(hash(baseJs),f09("NAV_JS_R03_BLOB"),
-   "B01–B09 original runtime byte-exact after removing only B10 additions");
+   "B01–B09 owner accepted JS historically byte-exact before B10");
  assert.equal(f10("B09_OWNER_P2_RUNTIME_BASELINE_BLOB"),f09("NAV_JS_R03_BLOB"),
-   "B10 JS must extend owner accepted B09 exact runtime SHA");
- assert.equal(hash(js),f10("B10_SCOPED_GOLDEN_RUNTIME_BLOB"),
-   "B10 current complete runtime must equal signed Q18 exact SHA");
- assert(newJs.slice(a,b).includes("TRY16")&&newJs.slice(c,d).includes("isEnrichedB10"),
-  "B10 JS additions must affect only B10 lesson runtime");
+  "B10 JS must extend owner-accepted B09 source");
+ assert(signedJs.slice(a,b).includes("TRY16")&&signedJs.slice(c,d).includes("isEnrichedB10"),
+  "Original B10 additions were scoped to B10");
+ // Current shared runtime differs by UI First Paint, checked in real browser
+ // 28-page Chromium/WebKit first-paint suite. Do not compare it to 18 Nov SHA.
+ assert(newJs.includes('querySelector(":scope > h2.thpt-g10-section-heading")')&&
+  newJs.includes("data-sgk-lesson-nav"),
+  "Golden First Paint runtime must retain native H2 and lesson navigation logic");
 }
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
 const ch=n=>n<=2?"i":n<=4?"ii":"iii";

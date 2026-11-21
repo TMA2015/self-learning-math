@@ -346,8 +346,12 @@ for(const [lesson,row] of rows){
   assert(r06.includes("Q18_AUTHOR_SELF_VERIFIED")&&r06.includes("B09-F04"),
    "B09 real-error corrected Tab4 requires scoped Q18 self-QA receipt");
   const mistakes=source.slice(source.indexOf('=== "Lỗi thường gặp"'));
-  assert.equal((mistakes.match(/^    \?\?\? tip "/gm)||[]).length,3,
-   "B09 Tab4 must have exactly three real error disclosures 4.1–4.3");
+   // Signed 20/11 HELP relocation put 2 canonical D6 after Vận dụng.
+   assert.equal((mistakes.match(/^    \?\?\? tip "/gm)||[]).length,1,
+    "B09 final Tab4 contains only independent B09-F04 error");
+   assert.equal((source.split('=== "Kiến thức SGK"')[0]
+    .match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,2,
+    "B09 two original local HELP must remain next to Vận dụng");
   assert(!mistakes.includes("**Khi chưa phân tích được vectơ theo hai hướng:**"),
    "B09 P2 regression: standalone method advice is NOT an error");
   assert(mistakes.includes('??? tip "Đảo dấu khi phân tích vectơ theo hai vectơ không cùng phương"')&&
@@ -396,9 +400,13 @@ for(const [lesson,row] of rows){
    worked.includes("96"),
    "B10 river worked example must match the same geometry/units as its desktop and mobile figures");
   const tab4=source.split('=== "Lỗi thường gặp"')[1];
-  assert((tab4.match(/^    \?\?\? tip "/gm)||[]).length===3&&
-   ["Lỗi thường gặp:","Vì sao sai?","Tự kiểm:","Ôn và luyện lại:"].every(x=>tab4.includes(x)),
-   "B10 must teach actual student error, why wrong, correction and remediation");
+   // Signed 20/11 source moves three canonical D6 to Discovery Vận dụng.
+   assert.equal((tab4.match(/^    \?\?\? tip "/gm)||[]).length,0,
+    "B10 all canonical HELP are local; none duplicated in tab4");
+   assert.equal((discover.match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,3,
+    "B10 three item-specific Kiểm lỗi disclosures remain in Discovery");
+   for(const phrase of ["Vì sao sai","Tự kiểm","Ôn và luyện lại"])
+    assert(discover.includes(phrase),"B10 D6 repair missing "+phrase);
   assert(!source.includes("EX-G10-B10-RIVER-TR01")&&
    !source.includes("Assessment safety")&&!source.includes("HELP_ID")&&
    !source.includes(String.fromCharCode(96)),"B10 learner text has exposed internal metadata/code");
@@ -457,9 +465,15 @@ for(const [lesson,row] of rows){
   assert.equal(r02f("BASELINE_R01_CANONICAL_BLOB"),f("ONE_CANONICAL_LESSON_BLOB"),"B10 P2 R02 canonical ancestry changed");
   assert(r02.includes("DELTA_A_UI")&&r02.includes("MathJax"),"B10 P2 targeted UI fix must be documented");
   expected=r02f("R02_SOURCE_BLOB");
-  assert.equal(blob(fs.readFileSync(path.join(root,
-   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md"))),
-   r02f("R02_ONE_CANONICAL_LESSON_BLOB"),"B10 P2 canonical SHA mismatch");
+   const canonical=fs.readFileSync(path.join(root,
+    "prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md"));
+   const receipt20=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+   const sourceRows=receipt20.split("\n").filter(x=>x.startsWith("| CANONICAL_B10 | "));
+   assert.equal(sourceRows.length,1,"B10 one signed current manuscript");
+   const historical=[...sourceRows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+   assert.deepEqual(historical,[r02f("R02_ONE_CANONICAL_LESSON_BLOB"),blob(canonical)],
+    "B10 historical P2 manuscript must extend to exact signed 20/11 current manuscript");
  }else if(lesson==="B11"){
   const signed=fs.readFileSync(path.join(root,
    "prototypes/thpt/ux795/G10_CHIV_B11_S1_PED_CANONICAL_Q18_R01_20261118.md"),"utf8");
@@ -496,12 +510,60 @@ for(const [lesson,row] of rows){
   assert.equal(d("B11_BASELINE_CANONICAL_BLOB"),uf("R02_ONE_CANONICAL_B11_BLOB"),
    "B11 prior signed canonical remains immutable");
   expected=g("B11_SOURCE_CURRENT_BLOB");
-  assert.equal(blob(fs.readFileSync(path.join(root,
-   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"))),
-   g("B11_CANONICAL_CURRENT_BLOB"),"B11 current one canonical Section A SHA mismatch");
+  // The 18/11 owner-P2 manuscript is a historical snapshot; current B11
+  // follows the signed 20/11 Q18 HELP-placement material-delta transition.
+  // Verify both ends of the exact immutable SHA chain (not a whitelist).
+  const currentManuscript=fs.readFileSync(path.join(root,
+   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"));
+  const placementReceipt=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+  const canonicalRows=placementReceipt.split("\n")
+   .filter(x=>x.startsWith("| CANONICAL_B11 | "));
+  assert.equal(canonicalRows.length,1,"B11 exactly one signed manuscript transition");
+  const canonicalShaChain=[...canonicalRows[0].matchAll(/`([a-f0-9]{40})`/g)]
+   .map(x=>x[1]);
+  assert.deepEqual(canonicalShaChain,
+   [g("B11_CANONICAL_CURRENT_BLOB"),blob(currentManuscript)],
+   "B11 historical owner-P2 and current manuscript must match signed Q18 SHA chain");
  }
- assert.equal(blob(source),expected,lesson+" exact final Q18 academic source receipt");
- assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 source router selects correct immutable snapshot");
+ // 20/11 owner-signed local HELP placement supersedes the earlier
+ // ChIV source. Verify both bytes of the historical chain; do not relabel
+ // DELTA_C math repairs as UI-only or silently replace legacy receipts.
+ const placement=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+ assert(placement.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+  placement.includes("G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120"),
+  lesson+" signed material delta classification and receipt required");
+ const sourceRows=placement.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(sourceRows.length,1,lesson+" exactly one final HELP-placement source row");
+ const blobs=[...sourceRows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(blobs.length,2,lesson+" source predecessor and successor both signed");
+ assert.equal(blobs[0],expected,lesson+" historical Rxx learner source must remain immutable");
+ expected=blobs[1];
+ if(lesson==="B09"){
+  // R02 subsequently moved the general wrong-vector-decomposition tip
+  // back to tab 4 (not a local First Try D6). Require exact signed parent,
+  // current public SHA and the ONE current canonical manuscript SHA.
+  const r02=fs.readFileSync(path.join(root,
+   "prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md"),"utf8");
+  const field=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+  assert.equal(field("R02_PREVIOUS_SOURCE_BLOB"),expected,
+   "B09 current R02 general error must extend signed HELP-placement R01");
+  const oldCanonical=placement.split("\n")
+   .find(x=>x.startsWith("| CANONICAL_B09 | "));
+  assert(oldCanonical,"B09 one-canonical manuscript transition receipt missing");
+  const historical=[...oldCanonical.matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+  assert.equal(historical.length,2);
+  assert.equal(field("R02_PREVIOUS_CANONICAL_BLOB"),historical[1],
+   "B09 canonical R02 must extend same signed current R01 manuscript");
+  expected=field("R02_CORRECTED_SOURCE_BLOB");
+  const manuscript=fs.readFileSync(path.join(root,
+   "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md"));
+  assert.equal(blob(manuscript),field("R02_CORRECTED_CANONICAL_BLOB"),
+   "B09 one current canonical manuscript must match exact final R02 Q18 SHA");
+ }
+ assert.equal(blob(source),expected,lesson+" exact current Q18 learner source");
+ assert.equal(candidateG10KnowledgeBlob(n),expected,lesson+" Q18 router selects latest immutable source");
  for(const key of ["data-thpt-first-try-id","data-thpt-help-id","data-outcome-id"])
   assert.deepEqual(ids(source,key),ids(previous,key),lesson+" canonical/outcome IDs changed");
  if(lesson==="B10"){
@@ -602,31 +664,27 @@ for(const [lesson,row] of rows){
    "B11 force transfer First Try must not remain in error tab");
   assert.equal((last.match(/^    ### 4\.[1-3]\./gm)||[]).length,0,
    "B11 Golden Tab4 must have zero redundant heading cards like owner-P2 B10");
-  assert.deepEqual([...last.matchAll(/^    \?\?\? tip "(4\.[1-3]\. [^"]+)"$/gm)]
-   .map(x=>x[1].slice(0,3)),["4.1","4.2","4.3"],
-   "B11 Tab4 must have 3 numbered accordion summaries, with no separate h3 cards");
-  assert.equal((last.match(/\*\*Tự nhận diện:\*\*/g)||[]).length,3,
-   "B11 original mistake-identification questions must remain inside accordions");
-  // Reverse *only* the three UI placements. The resulting source must equal
-  // the exact independently reviewed R01 Git blob: no mathematical delta.
-  let count=0;
-  const reconstructed=source.replace(/^    (<span[^\n]*data-thpt-help-id="[^"]+"[^\n]*><\/span>)\n\n    \?\?\? tip "(4\.[1-3])\. ([^"]+)"\n\n        \*\*Tự nhận diện:\*\* ([^\n]+)\n\n/gm,
-   (_all,span,n,h,q)=>{count++;return "    ### "+n+". "+h+"\n\n    "+span+"\n\n    ??? tip "+String.fromCharCode(34)+q+String.fromCharCode(34)+"\n\n";});
-  assert.equal(count,3,"B11 R02 must move exactly three original headings and summary questions");
-  const ui=fs.readFileSync(path.join(root,
-   "prototypes/thpt/ux795/G10_CHIV_B11_P2_TAB4_GOLDEN_DELTA_A_UI_R02_20261118.md"),"utf8");
-  const uf=k=>ui.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-  assert.equal(uf("R02_B11_SOURCE_BLOB"),"60a3d043694986e3250f15b51350380b86f70cfc",
-    "B11 original R02 signed Knowledge source remains immutable");
-   // The new Delta A only changes Examples. Guard every byte of Tab4 against
-   // the owner-approved R02 snapshot rather than comparing whole old lesson.
-   let h4=0xcbf29ce484222325n;
-   for(const ch of source.split('=== "Lỗi thường gặp"')[1])
-    h4=(h4^BigInt(ch.charCodeAt(0)))*0x100000001b3n&0xffffffffffffffffn;
-   assert.equal(h4.toString(16).padStart(16,"0"),"c41feeaf19e96098",
-    "B11 original Tab4 error examples and HELP unchanged from approved R02");
-  assert.equal((last.match(/^    \?\?\? tip "/gm)||[]).length,3,
-   "B11 must keep exactly three independent HELP disclosures");
+  // Owner-signed 20/11 Q18 moved three item-specific D6 disclosures
+  // under their Vận dụng in Discovery; Tab4 must never clone them.
+  // The historical and current manuscript/source SHA chain is checked above.
+  const discovery=source.split('=== "Khám phá kiến thức"')[1]
+   .split('=== "Kiến thức SGK"')[0];
+  assert.equal((discovery.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,3,
+   "B11 3 signed local Kiểm lỗi disclosures remain in Discovery");
+  assert.equal((last.match(/data-thpt-help-id=/g)||[]).length,0,
+   "B11 Tab4 must not duplicate HELP moved to Vận dụng");
+  assert.equal((source.match(/data-thpt-help-id=/g)||[]).length,3,
+   "B11 3 original canonical HELP IDs unchanged");
+  for(const [tryId,helpId] of [
+   ["THPT-G10-CHIV-TRY21","HELP-G10-B11-02"],
+   ["THPT-G10-CHIV-TRY23","HELP-G10-B11-01"],
+   ["THPT-G10-CHIV-TRY-FORCE-TR01","HELP-G10-CHIV-FORCE-TR01"]
+  ]){
+   const atTry=discovery.indexOf('data-thpt-first-try-id="'+tryId+'"');
+   const atHelp=discovery.indexOf('data-thpt-help-id="'+helpId+'"');
+   assert(atTry>=0&&atHelp>atTry,
+    "B11 Kiểm lỗi must follow related Vận dụng with original IDs "+tryId+"/"+helpId);
+  }
   assert(!source.includes(String.fromCharCode(96))&&
    !source.includes("Assessment safety")&&
    !source.includes("Ví dụ có hướng dẫn — EX-"),

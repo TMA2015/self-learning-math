@@ -8,12 +8,22 @@ const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
 const {chromium}=require("playwright");
+const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,"..");
 const base=process.env.SLM_CHV_URL||"http://127.0.0.1:8765";
 const expectedSources={
- 12:"a2ea6c909cdd2317188b13c2bde22e7923dba3de",
- 13:"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
- 14:"a23afab8015c83813f0c8cbe918efa93e58aa623"
+ 12:candidateG10KnowledgeBlob(12),
+ 13:candidateG10KnowledgeBlob(13),
+ 14:candidateG10KnowledgeBlob(14)
+};
+const receipt20=fs.readFileSync(root+
+ "/prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md","utf8");
+const signedTransition=key=>{
+ const rows=receipt20.split("\n").filter(x=>x.startsWith("| "+key+" | "));
+ assert.equal(rows.length,1,key+" one Q18 transition row");
+ const pair=[...rows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(pair.length,2,key+" exact Q18 old/current SHA pair");
+ return pair;
 };
 const ids={12:5,13:5,14:5};
 const names=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
@@ -52,13 +62,13 @@ const blob=data=>{
      "B12 pre-fix Golden receipt stays frozen");
     assert.equal(u("B12_PREVIOUS_CANONICAL_BLOB"),g("B12_CANONICAL_CURRENT_BLOB"),
      "B12 pre-fix canonical receipt stays frozen");
-    assert.equal(u("B12_CURRENT_SOURCE_BLOB"),blob(source),
-     "B12 post-fix learner source matches Delta A");
+    assert.deepEqual([u("B12_CURRENT_SOURCE_BLOB"),blob(source)],signedTransition("B12"),
+     "B12 19 Nov Golden source to signed 20 Nov Q18 source transition");
    const master=fs.readFileSync(root+"/prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md","utf8");
    assert.equal(df("B12_BASELINE_CANONICAL_BLOB"),get("ONE_CANONICAL_B12_R01_BLOB"),
      "B12 prior approved canonical remains frozen");
-    assert.equal(blob(master),u("B12_CURRENT_CANONICAL_BLOB"),
-     "B12 post-fix one canonical matches Delta A SHA");
+    assert.deepEqual([u("B12_CURRENT_CANONICAL_BLOB"),blob(master)],signedTransition("CANONICAL_B12"),
+     "B12 19 Nov manuscript to signed 20 Nov current manuscript");
    assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
     ?.split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],source.toString("utf8"),
     "B12 learner Knowledge must be byte-identical to current canonical");
@@ -364,10 +374,14 @@ const blob=data=>{
        await labels.nth(2).click();
        const examples=await blocks.nth(2).locator(".thpt-g10-example-solution").allInnerTexts();
        assert(examples.length===4&&examples.every(t=>t.includes("Bước")),context+" examples must explain reasoning");
-       await labels.nth(3).click();
-       assert.deepEqual((await blocks.nth(3).locator("details.tip > summary").allTextContents())
-        .map(t=>t.trim().slice(0,3)),["4.1","4.2"],context+" numbered recovery no fake titles");
        await labels.nth(0).click();
+       const local=blocks.nth(0).locator("details.tip");
+       assert.equal(await local.count(),2,context+" B13 two local signed D6 near Vận dụng");
+       assert.equal(await blocks.nth(3).locator("details.tip").count(),0,
+        context+" B13 Tab4 cannot clone targeted HELP");
+       assert((await local.locator("summary").allTextContents()).every(x=>x.trim()==="Kiểm lỗi"),
+        context+" B13 uniform opt-in Kiểm lỗi label");
+
       }
 
      if(lesson===12){
@@ -424,21 +438,22 @@ const blob=data=>{
       await labels.nth(2).click();
       assert((await blocks.nth(2).innerText()).includes("Ví dụ 4 — Bấm máy tính"),
        context+" B12 four method-first examples include genuine calculator operation");
-      await labels.nth(3).click();
-      const tips=blocks.nth(3).locator("details.tip");
-      assert.equal(await blocks.nth(3).locator("h3").count(),0,
-       context+" B12 Golden Tab4 must not regress to B11 duplicate heading cards");
-      assert.equal(await tips.count(),3,context+" B12 three actual wrong-step diagnosis disclosures");
-      assert.deepEqual((await tips.locator("summary").allTextContents())
-       .map(t=>t.trim().slice(0,3)),["4.1","4.2","4.3"],
-       context+" B12 three numbered accordion titles in summaries");
+      await labels.nth(0).click();
+      const tips=blocks.nth(0).locator("details.tip");
+      assert.equal(await blocks.nth(3).locator("details.tip,[data-thpt-help-id]").count(),0,
+       context+" B12 Tab4 cannot duplicate local D6");
+      assert.equal(await tips.count(),3,context+" B12 three original local Kiểm lỗi");
+      assert((await tips.locator("summary").allTextContents()).every(t=>t.trim()==="Kiểm lỗi"),
+       context+" B12 uniform local HELP labels");
       await tips.last().locator("summary").click();
       assert.notEqual(await tips.last().getAttribute("open"),null,
-       context+" B12 calculator D6 voluntarily opens");
+       context+" B12 calculator HELP opens voluntarily");
+      await tips.last().locator("mjx-container").first().waitFor({state:"attached",timeout:15000});
       await tips.last().locator("summary").click();
       assert.equal(await tips.last().getAttribute("open"),null,
-       context+" B12 calculator D6 must reclose");
+       context+" B12 calculator HELP closes again");
       await labels.nth(0).click();
+
      }
      // The cross-tab TOC must open the hidden source tab, preserving URL anchors.
      const headingId=await blocks.nth(1).locator("h3[id]").first().getAttribute("id");

@@ -37,8 +37,15 @@ for(const lesson of required){
   "21":["43–47","39–41"],"22":["48–57","42–46"]
  };
  const [sgkPages,sbtPages]=s1Pages[lesson];
- const receipt=lessonText.match(/<small>Nguồn đối chiếu:[^<]*<\/small>/);
- assert(receipt&&receipt[0].includes(sgkPages)&&receipt[0].includes(sbtPages),
+ // Source-page evidence is now rendered as the signed single footer in
+ // the owner Q18 one-source metadata delta; historic <small> remains valid.
+ // Verify exact printed-page ranges in either canonical, unique structure.
+ const small=[...lessonText.matchAll(/<small>Nguồn đối chiếu:[^<]*<\/small>/g)];
+ const foot=[...lessonText.matchAll(/<p class="thpt-r4-footnote">Nguồn đối chiếu:[^<]*<\/p>/g)];
+ assert.equal(small.length+foot.length,1,
+  "B"+lesson+" must have ONE student-facing SGK/SBT source receipt, not duplicates");
+ const receipt=(small[0]||foot[0])[0];
+ assert(receipt.includes(sgkPages)&&receipt.includes(sbtPages),
   "Incorrect original printed SGK/SBT S1 source pages B"+lesson);
  assert(!/NotebookLM|ACADEMIC_CLEARANCE|đang QA/i.test(lessonText),"Student-facing ChVII lesson leaked project notes");
  assert(lessonText.includes("luyen-tap/"),"SGK lesson missing practice link B"+lesson);

@@ -3,7 +3,38 @@
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const path=require("node:path");
-const page=fs.readFileSync(path.join(__dirname,"../docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"),"utf8");
+const sourceFile=fs.readFileSync(path.join(__dirname,"../docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"));
+const page=sourceFile.toString("utf8");
+const sha=require("node:crypto").createHash("sha1")
+ .update("blob "+sourceFile.length).update(Buffer.from([0]))
+ .update(sourceFile).digest("hex");
+if(sha==="0603fbb2b61374fcd49eff3c119197cff3fa77e4"){
+  // Owner-accepted G11 B01 Golden four-tab canonical as merged in #982.
+  // Exact Git blob is necessary: no content, math, HELP, IDs or pedagogy
+  // can silently differ. The pre-Golden historical test stays below.
+  const labels=[...page.matchAll(/^=== "([^"]+)"$/gm)].map(x=>x[1]);
+  assert.deepEqual(labels,["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],
+   "G11 B01 final Golden four tabs");
+  const tryIds=[...page.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(x=>x[1]);
+  const helpIds=[...page.matchAll(/data-thpt-help-id="([^"]+)"/g)].map(x=>x[1]);
+  assert.deepEqual(tryIds,Array.from({length:6},(_,i)=>"THPT-G11-CHI-TRY0"+(i+1)),
+   "G11 B01 six exact unscored first tries");
+  assert.deepEqual(helpIds,[
+    ...Array.from({length:6},(_,i)=>"HELP-G11-CHI-TRY0"+(i+1)),
+    "HELP-G11-B01-01","HELP-G11-B01-02"
+  ],"G11 B01 six local D6 + two general error HELP");
+  assert.equal((page.match(/^\s*\?\?\? tip "Kiểm lỗi"/gm)||[]).length,6,
+   "G11 B01 Kiểm lỗi belongs only to six Vận dụng");
+  for(const title of [
+   '??? tip "4.1. Nhầm số vòng quay, tia cuối và độ dài cung"',
+   '??? tip "4.2. Bỏ qua điều kiện xác định và dấu lượng giác"'
+  ])assert(page.includes(title),"G11 B01 general error title missing: "+title);
+  assert(page.includes('data-g11-b01-owner-g0g2="r01"'),
+   "G11 B01 signed Golden source marker");
+  assert(!/data-thpt-readiness|data-mastery-credit|data-scoring-engine/.test(page),
+   "G11 B01 knowledge must never mount protected assessment");
+  console.log("PASS G11 B01 CURRENT owner-P2 source-locked 0603fbb2: 4 tabs, 6 first tries, 8 D6, 2 named general errors, no protected scoring");
+}else{
 const start=page.indexOf("## 1. Kiến thức SGK"),end=page.indexOf("## 2. Ví dụ",start);
 assert(start>=0&&end>start,"G11 B01 expected knowledge block");
 const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return (h>>>0).toString(16).padStart(8,"0")};
@@ -44,3 +75,5 @@ for(const key of ["s=R|α|","M=(cos α,sin α)","sin²α+cos²α=1","tan α=sin 
 assert(!/\\bD1\\.\\d\\b/.test(knowledge),"Technical outcome labels in student Knowledge");
 assert(!/data-thpt-readiness|data-mastery-credit|data-scoring-engine/.test(page),"Protected assessment activated");
 console.log("PASS G11 B01 AP1/AP2/AP4 source: 27/27 unchanged math expressions, protected examples/SVG/HELP exact, no learner scoring; browser AP3/AP5 checked separately.");
+
+}

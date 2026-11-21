@@ -273,8 +273,18 @@ for(const [tag,rec]of Object.entries(transfer)){
     const f02=k=>r02.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
     assert.equal(f02("BASELINE_R01_SOURCE_BLOB"),field("R01_SOURCE_BLOB"),
      "River D2 must preserve immutable R01 B10 source prior to UI correction");
-    assert.equal(sha(modelB),f02("R02_SOURCE_BLOB"),
-     "River D2 remains signed in the single current B10 P2 MathJax source");
+    // The original 18/11 MathJax source remains frozen. The 20/11 Q18
+    // receipt explicitly extends that source with the correctly located
+    // context-specific D6, without changing the river D2 maths.
+    const b10Placement=read("prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+    const b10Rows=b10Placement.split("\n").filter(x=>x.startsWith("| B10 | "));
+    assert.equal(b10Rows.length,1,"B10 needs one signed 20/11 placement row");
+    const b10Shas=[...b10Rows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+    assert.deepEqual(b10Shas,[f02("R02_SOURCE_BLOB"),
+     expectedG10KnowledgeBlob(10,original[10])],
+     "B10 current source must extend the exact immutable P2 MathJax receipt");
+    assert.equal(sha(modelB),b10Shas[1],
+     "River D2 remains in the current signed B10 canonical learner source");
     const example=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
     assert(example.includes("### 3.4. Ví dụ 4 — Qua sông")&&
      example.includes("96")&&example.includes("THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg")&&
@@ -295,8 +305,18 @@ for(const [tag,rec]of Object.entries(transfer)){
     const gold=k=>goldenReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
     assert.equal(gold("B11_PREVIOUS_SOURCE_BLOB"),d("B11_SOURCE_CURRENT_BLOB"),
      "Prior published B11 source-first receipt remains signed");
-    assert.equal(sha(modelB),gold("B11_SOURCE_CURRENT_BLOB"),
-     "B11 force D2 remains in source-first current canonical learner source");
+    // The frozen 18/11 Golden receipt precedes the owner's signed 20/11
+    // B11 contextual HELP relocation. Require both historical/current SHAs;
+    // do not change the learner mathematics or rewrite the P2 snapshot.
+    const b11Placement=read("prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+    const b11Row=b11Placement.split("\n").filter(x=>x.startsWith("| B11 | "));
+    assert.equal(b11Row.length,1,"B11 Q18 placement must have exactly one receipt row");
+    const b11Shas=[...b11Row[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+    assert.deepEqual(b11Shas,[gold("B11_SOURCE_CURRENT_BLOB"),
+     expectedG10KnowledgeBlob(11,original[11])],
+     "B11 source must extend exact frozen owner P2 into the signed 20/11 Q18 snapshot");
+    assert.equal(sha(modelB),b11Shas[1],
+     "B11 force D2 must remain in current signed canonical learner source");
     const examples=modelB.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
     assert(examples.includes("### 3.4. Ví dụ 4 — Hợp lực")&&
      examples.includes("THPT_G10_CHIV_FORCE_TRANSFER_D5_R01_CORRECTED.svg")&&

@@ -37,7 +37,36 @@ for(const [key,n,chapter,asset,expected] of specs){
  assert(svg.includes("<svg")&&svg.includes("<title")&&svg.includes("<desc")&&svg.includes('role="img"'),key+" SVG accessibility metadata");
  const source=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-"+chapter+"/bai-"+n+".md"),"utf8");
  const target="../../../../assets/images/thpt/"+asset;
- assert.equal(source.split(target).length-1,1,key+" source must reference exactly this figure once");
+ const count=source.split(target).length-1;
+ if(key==="B23"||key==="B24"){
+  // Current canonical learner uses one signed SVG twice for separate tasks:
+  // independent Discovery reading vs formal SGK Knowledge synthesis.
+  // Lock exact placement and distinct didactic captions, not blind allowance.
+  const discovery=source.split('=== "Khám phá kiến thức"')[1]?.split('=== "Kiến thức SGK"')[0]||"";
+  const official=source.split('=== "Kiến thức SGK"')[1]?.split('=== "Ví dụ"')[0]||"";
+  assert.equal(count,2,key+" exactly two signed cross-tab figure placements");
+  assert.equal(discovery.split(target).length-1,1,key+" one discovery image");
+  assert.equal(official.split(target).length-1,1,key+" one official recap image");
+  const caption=part=>{
+   const i=part.indexOf(target),tail=part.slice(i);
+   assert(i>=0&&tail.includes("</figcaption>"),key+" labelled mathematical figure");
+   const c=tail.split("<figcaption>")[1]?.split("</figcaption>")[0]||"";
+   assert(c.length>40,key+" readable figure caption");
+   return c;
+  };
+  // B23 reuses one accurate caption, but teaches a different reading
+  // under each tab. B24 adds distinct captions. Both require tab-specific
+  // mathematical guidance, not a blind duplicate counted twice.
+  const guidance=part=>{
+   const at=part.indexOf(target),after=part.slice(at).split("</figure>")[1]||"";
+   const lead=after.slice(0,600);
+   assert(lead.length>60,key+" full learner image-reading guidance present");
+   return lead;
+  };
+  assert(guidance(discovery)!==guidance(official)||
+   caption(discovery)!==caption(official),
+   key+" separate pedagogical readings for repeated signed SVG");
+ }else assert.equal(count,1,key+" source must reference signed SVG exactly once");
  vals[key]=svg;
 }
 {

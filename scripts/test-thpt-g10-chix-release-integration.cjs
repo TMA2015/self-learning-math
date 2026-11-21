@@ -55,7 +55,13 @@ for(const n of [26,27]){
  const svg=fs.readFileSync("docs/assets/images/thpt/"+fig,"utf8");
  assert(svg.startsWith("<svg")&&svg.includes('role="img"')&&svg.includes("viewBox="),"Reviewed D5 SVG missing accessibility or viewBox");
  assert(src.includes('src="../../../../assets/images/thpt/'+fig+'"'),"Source SVG not linked in B"+n);
- assert(src.includes("SBT Bài "+n+" phần bài tập tr."+(n===26?"61–63":"64–66")),"SBT receipt correction not applied");
+ // The #795 owner-signed one-source footer keeps the exact printed S1
+ // ranges while B27 uses a learner-facing "trang in" expression.
+ const foot=[...src.matchAll(/<p class="thpt-r4-footnote">([^<]*)<\/p>/g)];
+ assert.equal(foot.length,1,"B"+n+" must show one, not duplicated, source receipt");
+ assert(foot[0][1].includes(n===26?"SBT Bài 26 phần bài tập tr.61–63":
+  "SBT Bài 27 (trang in 64–66)")&&foot[0][1].includes("SGK Toán 10"),
+  "B"+n+" SBT/SGK printed-page provenance must be retained exactly");
  assert(!/(NotebookLM|REVIEWED D3|Reviewer kiểm tra|DRAFT|chưa hoàn tất)/.test(src),"Reviewer metadata leaked to learner B"+n);
 }
 assert(linked>=14&&writtenLinks>=2,"D6 links not fully connected");

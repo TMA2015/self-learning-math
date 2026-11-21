@@ -239,10 +239,14 @@ for(const tag of ["ELLIPSE","HYPERBOLA"]){
       "Transfer Q15/D6 source identity "+tag);
     const editor=chviiEditorialReceiptRows().get("B22");
     if(editor){
-     assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),editor.candidate,
-       "B22 approved S1 Q18 source required for learner-facing transfer headings");
-     const learnerTitle=tag==="ELLIPSE"?"#### Minh họa — Kiểm tra độ hở của mái nửa elip":
-       "#### Minh họa — Hai trạm phát tín hiệu";
+     // Keep historic editorial R03 frozen; later owner-signed Q18 deltas
+     // define the current learner source. This uses the same exact source
+     // router checked for every ChVII lesson earlier in the script.
+     assert.equal(gitblob("docs/thpt-preview/sgk/chuong-vii/bai-22.md"),
+       expectedG10KnowledgeBlob(22,original[22]),
+       "B22 transfer headings require the complete signed Q18 successor chain");
+     const learnerTitle=tag==="ELLIPSE"?"#### 1.2.7. Chuyển giao: mái nửa elip và độ hở":
+       "#### 1.2.8. Chuyển giao: hai trạm tín hiệu và nhánh hypebol";
      assert(b22.includes(learnerTitle),"Transfer D2 learner-facing reasoning still required "+tag);
      assert(!b22.includes("#### Ví dụ giải có hướng dẫn — "+ex),
        "B22 reviewed internal EX identifier must not leak in learner interface");

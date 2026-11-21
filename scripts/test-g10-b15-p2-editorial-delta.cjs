@@ -15,10 +15,26 @@ const blob=b=>{const v=Buffer.isBuffer(b)?b:Buffer.from(b);return crypto.createH
 const old=read(ux+"G10_CHVI_B15_OWNER_Q18_KNOWLEDGE_ENRICHMENT_20261119.md");
 const p2=read(ux+"G10_CHVI_B15_P2_EDITORIAL_NOTE_DELTA_R01_20261119.md");
 const r02=read(ux+"G10_CHVI_B15_OWNER_P2_READABILITY_FIGURE_R02_20261119.md");
+const relocation=read(ux+"G10_CHVI_B15_B18_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+assert(relocation.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+ relocation.includes("G10-CHVI-B15-B18-KIEM-LOI-PLACEMENT-Q18-R01-20261120"),
+ "Owner-signed HELP placement must retain its material-delta Q18 classification");
+const relocatedBlobs=n=>{
+ const rows=relocation.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(rows.length,1,"B"+n+" one source-locked HELP relocation receipt row");
+ const shas=[...rows[0].matchAll(/`([a-f0-9]{40})`/g)].map(m=>m[1]);
+ assert.equal(shas.length,2,"B"+n+" previous/current exact SHA transition");
+ assert.notEqual(shas[0],shas[1],"B"+n+" source must have changed after HELP relocation");
+ return {previous:shas[0],current:shas[1]};
+};
+
 assert.equal(field(p2,"PREVIOUS_B15_SOURCE_BLOB"),field(old,"CANDIDATE_B15_SOURCE_BLOB"),"B15 P1→P2 source ancestry");
 assert.equal(field(r02,"PREVIOUS_B15_SOURCE_BLOB"),field(p2,"CANDIDATE_B15_SOURCE_BLOB"),"B15 P2→R02 source ancestry");
 const src=read("docs/thpt-preview/sgk/chuong-vi/bai-15.md");
-assert.equal(blob(src),field(r02,"CANDIDATE_B15_SOURCE_BLOB"),"B15 candidate must match its own latest Q18 SHA");
+assert.equal(relocatedBlobs(15).previous,field(r02,"CANDIDATE_B15_SOURCE_BLOB"),
+ "B15 R02 P2 snapshot must remain exact historical HELP-placement parent");
+assert.equal(blob(src),relocatedBlobs(15).current,
+ "B15 final source must equal signed R03 HELP-placement successor");
 const css=fs.readFileSync(path.join(root,"docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css"),"utf8");
 const svg=fs.readFileSync(path.join(root,"docs/assets/images/thpt/THPT_G10_CHVI_B15_FUNCTION_MAPPING_D5_R03.svg"));
 const b16=read(ux+"G10_CHVI_B16_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md");
@@ -59,8 +75,22 @@ const neighbors={
  "docs/thpt-preview/sgk/chuong-v/bai-13.md":"cb5adaa7804902fece7dd4ec30575733efd4c9c1",
  "docs/thpt-preview/sgk/chuong-v/bai-14.md":"a23afab8015c83813f0c8cbe918efa93e58aa623"
 };
-for(const [p,sha]of Object.entries(neighbors))
- assert.equal(blob(fs.readFileSync(path.join(root,p))),sha,"Out-of-scope frozen source "+p);
+// Signed 20/11 Golden correction moved local HELP in ChV B12–B14 as well.
+ // Those files are no longer byte-identical to their 19/11 screenshots.
+ // Preserve BOTH historical neighbors and approved successor source locks.
+const chvPlacement=read(ux+"G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+for(const [p,previous]of Object.entries(neighbors)){
+ const lesson=Number(p.match(/bai-(1[234])\.md$/)?.[1]);
+ assert([12,13,14].includes(lesson),"Only signed ChV neighbors may transition");
+ const rows=chvPlacement.split("\n").filter(x=>x.startsWith("| B"+lesson+" | "));
+ assert.equal(rows.length,1,"B"+lesson+" unique approved HELP-placement row");
+ const signed=[...rows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.deepEqual(signed,[previous,candidateG10KnowledgeBlob(lesson)],
+  "B"+lesson+" historical frozen SHA must have exact approved HELP successor");
+ assert.equal(blob(fs.readFileSync(path.join(root,p))),signed[1],
+  "B"+lesson+" current source must be exactly the signed Q18 successor");
+}
 // B17 is now independently revised by the owner. Verify its new signed
 // Q18 baseline→candidate chain instead of treating B17 as a frozen B15 neighbor.
 const b17=read(ux+"G10_CHVI_B17_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261119.md");
@@ -75,9 +105,11 @@ const b17r03=read(ux+"G10_CHVI_B17_OWNER_P2_LEARNER_READABILITY_R03_20261120.md"
 assert.equal(field(b17r03,"PREVIOUS_B17_SOURCE_BLOB"),
  field(b17r02,"CANDIDATE_B17_SOURCE_BLOB"),
  "B17 semantic Golden R03 source extends R02 without history rewrite");
+assert.equal(relocatedBlobs(17).previous,field(b17r03,"CANDIDATE_B17_SOURCE_BLOB"),
+ "B17 R03 remains historical owner snapshot before HELP-placement R04");
 assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-17.md")),
- field(b17r03,"CANDIDATE_B17_SOURCE_BLOB"),
- "B17 source must match R03 while B15/12–14/18 remain frozen");
+ relocatedBlobs(17).current,
+ "B17 current source must match signed HELP-placement successor");
 // B18 is now independently enhanced, never a frozen neighbor of B15.
 // Compare its historical UX source to the separate immutable R01 owner receipt.
 const b18=read(ux+"G10_CHVI_B18_OWNER_Q18_KNOWLEDGE_ENRICHMENT_R01_20261120.md");
@@ -92,13 +124,17 @@ const b18r03=read(ux+"G10_CHVI_B18_OWNER_EDITORIAL_POLISH_R03_20261120.md");
 assert.equal(field(b18r03,"PREVIOUS_B18_SOURCE_BLOB"),
  field(b18r02,"CANDIDATE_B18_SOURCE_BLOB"),
  "B18 editorial R03 must extend exact previously published R02");
+assert.equal(relocatedBlobs(18).previous,field(b18r03,"CANDIDATE_B18_SOURCE_BLOB"),
+ "B18 R03 remains unchanged historical predecessor of local HELP placement");
 assert.equal(blob(read("docs/thpt-preview/sgk/chuong-vi/bai-18.md")),
- field(b18r03,"CANDIDATE_B18_SOURCE_BLOB"),
- "B18 current source must match latest R03 while original B15 and ChV neighbors stay frozen");
+ relocatedBlobs(18).current,
+ "B18 current source must match signed HELP-placement successor");
 assert.equal(field(b16,"BASELINE_PUBLISHED_B16_SOURCE_BLOB"),
  "4ddf9c449f92a9f48bace5a3f9b84186bf33af20",
  "B16 baseline must match historical accepted source, not overwrite it");
+assert.equal(relocatedBlobs(16).previous,field(b16,"CANDIDATE_B16_SOURCE_BLOB"),
+ "B16 original academic R01 remains exact parent of signed HELP relocation");
 assert.equal(blob(fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-vi/bai-16.md"))),
- field(b16,"CANDIDATE_B16_SOURCE_BLOB"),
- "B16 is the sole allowed neighboring academic delta, exactly source-locked");
-console.log("PASS B15 screenshot R02 source: 3 SHA-linked receipts, 5 fluent Discovery topics, 5 TRY/HELP/Đối chiếu, original SVG/CSS and six neighboring sources.");
+ relocatedBlobs(16).current,
+ "B16 current source must match signed HELP-placement successor");
+console.log("PASS B15–B18 exact Q18 chain: historical R02/R03 snapshots + signed HELP relocation; B15 5 Vận dụng, original SVG/CSS, protected IDs and neighboring sources.");

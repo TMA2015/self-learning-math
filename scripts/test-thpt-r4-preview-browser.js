@@ -9,7 +9,9 @@ function signedChviBlob(name){
  if(!next)return original?.candidate;
  assert(original,name+" UX delta without signed original S1 receipt");
  assert.equal(next.baseline,original.candidate,name+" published → Golden UX delta identity chain");
- return name==="B15"?candidateG10KnowledgeBlob(15):next.candidate;
+ // Historical ChVI UX receipt remains pinned; current B15–B18 follows
+ // owner-signed 20/21 Nov Q18 First Try/HELP placement and source footer.
+ return candidateG10KnowledgeBlob(Number(name.slice(1)));
 }
 const {chromium}=require("playwright");
 // Run the same no-duplicate / assessment-exposure contract on every THPT QA run.
@@ -184,7 +186,7 @@ async function ready(page,path){
     }
     const helpCards=page.locator('[data-thpt-help-id^="D6-G10-B19-"]');
     assert.equal(await helpCards.count(),2,"R02 D6 B19 must retain both canonical remedy ids");
-    const helpCard=page.locator("details").filter({hasText:"Nhầm vectơ pháp tuyến/chỉ phương"}).first();
+    const helpCard=page.locator('article .tabbed-block:visible details.tip').filter({hasText:"4.1. Chấp nhận vectơ không làm pháp tuyến"}).first();
     assert.equal(await helpCard.count(),1,"Visible B19 D6 remedy panel missing");
     assert(!await helpCard.evaluate(node=>node.open),"D6 should start collapsed");
     await helpCard.locator("summary").click();

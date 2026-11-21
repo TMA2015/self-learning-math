@@ -52,4 +52,5 @@ jobs:
           else:
               raise SystemExit("Preview HTTP server not ready")
           PY
+          git fetch --no-tags --depth=1 origin e8d6f76e82711738e1e2af569d1613052b30f910 # signed pre-first-paint runtime
           node scripts/test-g10-b01-b06-editorial-numbering-browser.cjs

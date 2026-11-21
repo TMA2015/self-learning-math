@@ -9,6 +9,7 @@ const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const path=require("node:path");
 const crypto=require("node:crypto");
+const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const root=path.resolve(__dirname,"..");
 const chapter=n=>n<=2?"i":n<=4?"ii":n<=6?"iii":n<=11?"iv":n<=14?"v":n<=18?"vi":n<=22?"vii":n<=25?"viii":"ix";
 const foldName=/^\s*\?\?\?\s+question\s+"([^"]+)"/gm;
@@ -34,15 +35,31 @@ if(chviiReceipt)assert.equal(chviiRows.length,4,"ChVII must have all four signed
 const chvii=new Map(chviiRows.map(m=>[Number(m[1]),{
  baseline:m[2],candidate:m[3],tries:Number(m[4]),helps:Number(m[5]),examples:Number(m[6])}]));
 
-const htmlSelfPractice=/<summary[^>]*>\s*Xem lời giải ba câu tự luyện\s*<\/summary>/g;
+// B17/B18 20/11 signed local practice is now labelled “Đối chiếu ba câu Vận dụng”.
+// Keep exactly one closed, opt-in disclosure, also accepting frozen B15 label.
+const htmlSelfPractice=/<summary[^>]*>\s*(?:Xem lời giải ba câu tự luyện|Đối chiếu ba câu Vận dụng)\s*<\/summary>/g;
 const blob=raw=>crypto.createHash("sha1")
  .update(Buffer.from("blob "+raw.length+"\0")).update(raw).digest("hex");
+// Frozen 20/11 Q18 matrix: B7–B14 old→new Knowledge, plus B09–B12
+// one manuscript. Later owner-signed deltas are read by the Q18 router.
+const placement=fs.readFileSync(path.join(root,
+ "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+const signedRow=name=>{
+ const row=placement.split("\n").filter(x=>x.startsWith("| "+name+" | "));
+ assert.equal(row.length,1,"one source receipt row for "+name);
+ const shas=[...row[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(shas.length,2,"exact old/current SHA cells for "+name);
+ return shas;
+};
 
 let lessons=0,first=0,reveals=0,legacyCount=0,newB05Count=0,newB12Count=0;
 for(let n=1;n<=27;n++){
  const route="thpt-preview/sgk/chuong-"+chapter(n)+"/bai-"+n;
  const markdown=fs.readFileSync(path.join(root,"docs",route+".md"),"utf8");
  const html=fs.readFileSync(path.join(root,"site-thpt-preview",route,"index.html"),"utf8");
+ const sourceBlob=blob(fs.readFileSync(path.join(root,"docs",route+".md")));
+ assert.equal(sourceBlob,candidateG10KnowledgeBlob(n),
+  "B"+n+" isolated dry-run must exactly match current complete Q18 source router");
  const titles=[...markdown.matchAll(foldName)].map(m=>m[1]);
  const count=titles.filter(isAnswerReveal).length;
  const ids=[...markdown.matchAll(/data-thpt-first-try-id="([^"]+)"/g)].map(m=>m[1]);
@@ -77,9 +94,12 @@ for(let n=1;n<=27;n++){
   // the original signed reviewer receipt and the new current Delta A receipt.
   assert.equal(f("B12_R01_SOURCE_BLOB"),"fc2942aeafdcd34d3cedd9eeb24c48716bbe7e78",
    "B12 historical reviewed calculator SHA must remain locked");
-  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
-   "a2ea6c909cdd2317188b13c2bde22e7923dba3de",
-   "B12 current one-canonical source must match 19/11 owner duplicate-heading Delta A SHA");
+  const [priorB12,currentB12]=signedRow("B12");
+  assert.equal(priorB12,"a2ea6c909cdd2317188b13c2bde22e7923dba3de",
+   "B12 original owner duplicate-heading Delta A must remain an immutable baseline");
+  assert.equal(currentB12,candidateG10KnowledgeBlob(12),
+   "B12 new 20/11 local calculator D6 must use its exact Q18 successor");
+  assert.equal(sourceBlob,currentB12,"B12 current one-canonical Q18 source");
   assert(q18.includes("INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_REVIEW_PENDING"),
    "B12 distinct calculator attempt does not itself grant Academic/PED clearance");
   newB12Count++;
@@ -129,8 +149,12 @@ for(let n=1;n<=27;n++){
     "B08 R04 owner-approved semantic roles require signed Q18 evidence");
    expected=semField("R04_SOURCE_BLOB");
   }
-  assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),expected,
-   "B08 source must match its complete immutable R02→R03→R04 academic source chain");
+  const [priorB08,currentB08]=signedRow("B8");
+  assert.equal(priorB08,expected,
+   "B08 20/11 D6 placement must extend the exact signed R02→R03→R04 source");
+  assert.equal(currentB08,candidateG10KnowledgeBlob(8),
+   "B08 20/11 current D6 placement must match complete Q18 source router");
+  assert.equal(sourceBlob,currentB08,"B08 current source locked after R04→20/11");
   const first=markdown.indexOf('=== "Khám phá kiến thức"'),second=markdown.indexOf('=== "Kiến thức SGK"');
   assert(first>=0&&second>first&&markdown.slice(first,second).includes("THPT_G10_B08_TRIANGLE_PARALLELOGRAM_SUM_D5_R01.svg"),
    "B08 authentic D5 figure must guide concept-first discovery");
@@ -164,16 +188,36 @@ for(let n=1;n<=27;n++){
    const manuscriptPath=path.join(root,
     "prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md");
    assert(fs.existsSync(manuscriptPath),"B09 one-current manuscript missing from QA");
-   assert.equal(blob(fs.readFileSync(manuscriptPath)),q06("R06_ONE_CANONICAL_LESSON_BLOB"),
-    "B09 complete academic manuscript SHA differs from R06 signed owner correction");
-   assert.equal(blob(fs.readFileSync(path.join(root,"docs",route+".md"))),
-    q06("R06_SOURCE_BLOB"),"B09 public Knowledge must match R06 exact learner-error correction");
+   // Immutable R06→20/11 local HELP→R02 Tab4 general-error source.
+   // Both Knowledge AND its ONE canonical manuscript must follow signed
+   // old/new SHA pairs; never overwrite a previously approved receipt.
+   const [oldB09,movedB09]=signedRow("B9");
+   const [oldMasterB09,movedMasterB09]=signedRow("CANONICAL_B09");
+   assert.equal(oldB09,q06("R06_SOURCE_BLOB"),
+    "B09 20/11 placement must descend from immutable R06 Knowledge");
+   assert.equal(oldMasterB09,q06("R06_ONE_CANONICAL_LESSON_BLOB"),
+    "B09 20/11 placement must descend from immutable R06 manuscript");
+   const r02=fs.readFileSync(path.join(root,
+    "prototypes/thpt/ux795/G10_CHIV_B09_GENERAL_VECTOR_ERROR_TAB4_Q18_R02_20261120.md"),"utf8");
+   const f02=k=>r02.split("**"+k+":** `")[1]?.slice(0,40);
+   assert.equal(f02("R02_PREVIOUS_SOURCE_BLOB"),movedB09,
+    "B09 R02 source must follow 20/11 signed local HELP placement");
+   assert.equal(f02("R02_PREVIOUS_CANONICAL_BLOB"),movedMasterB09,
+    "B09 R02 manuscript must follow same 20/11 signed local HELP placement");
+   assert.equal(f02("R02_CORRECTED_SOURCE_BLOB"),candidateG10KnowledgeBlob(9),
+    "B09 current 20/11 Tab4 source must match complete Q18 router");
+   assert.equal(sourceBlob,f02("R02_CORRECTED_SOURCE_BLOB"),
+    "B09 current Knowledge after R02 must match exact signed source");
+   assert.equal(blob(fs.readFileSync(manuscriptPath)),f02("R02_CORRECTED_CANONICAL_BLOB"),
+    "B09 ONE manuscript must match the exact R02 canonical source");
    const manuscript=fs.readFileSync(manuscriptPath,"utf8");
    assert(manuscript.includes("<!-- BEGIN_B09_KNOWLEDGE_MARKDOWN -->")&&
     manuscript.includes("THPT-G10-B09-P07"),"B09 manuscript needs Knowledge and P07");
    const tab4=markdown.slice(markdown.indexOf('=== "Lỗi thường gặp"'));
-   assert.equal((tab4.match(/^    \?\?\? tip "/gm)||[]).length,3,
-    "B09 P2 needs 4.3 genuine errors, not a free-standing reminder");
+   assert.equal((tab4.match(/^    \?\?\? tip "/gm)||[]).length,1,
+    "B09 Tab4 must keep one genuinely diagnosed general vector error");
+   assert.equal((markdown.match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,2,
+    "B09 two local mistake-specific HELP must remain after the relevant First Try");
    assert(tab4.includes("Đảo dấu khi phân tích vectơ")&&
     !tab4.includes("**Khi chưa phân tích được vectơ theo hai hướng:**"),
     "B09 tab4 real wrong-sign diagnosis must replace misplaced D6 prose");
@@ -207,10 +251,16 @@ for(let n=1;n<=27;n++){
     "G10 B10 UI-only R02 must descend from P1 R01 Knowledge");
    assert.equal(df("BASELINE_R01_CANONICAL_BLOB"),f("ONE_CANONICAL_LESSON_BLOB"),
     "G10 B10 UI-only R02 must descend from P1 R01 canonical");
-   assert.equal(currentPublic,df("R02_SOURCE_BLOB"),
-    "G10 B10 candidate Knowledge does not match P2 MathJax receipt");
-   assert.equal(currentMaster,df("R02_ONE_CANONICAL_LESSON_BLOB"),
-    "G10 B10 candidate manuscript/receipt SHA mismatch");
+   const [priorB10,currentB10]=signedRow("B10");
+   const [priorMasterB10,currentMasterB10]=signedRow("CANONICAL_B10");
+   assert.equal(priorB10,df("R02_SOURCE_BLOB"),
+    "B10 immutable P2 MathJax source must precede 20/11 D6 placement");
+   assert.equal(priorMasterB10,df("R02_ONE_CANONICAL_LESSON_BLOB"),
+    "B10 immutable P2 manuscript must precede 20/11 D6 placement");
+   assert.equal(currentB10,candidateG10KnowledgeBlob(10),
+    "B10 final Q18 source must be complete current Knowledge");
+   assert.equal(currentPublic,currentB10,"B10 current Knowledge source drift");
+   assert.equal(currentMaster,currentMasterB10,"B10 current ONE manuscript source drift");
   }else{
    // UX795 separately reconstructs unmodified published main, which has only R01.
    assert.equal(currentPublic,f("R01_SOURCE_BLOB"),
@@ -228,8 +278,8 @@ for(let n=1;n<=27;n++){
    markdown.includes("Đọc hình theo đúng dữ kiện Ví dụ 4")&&
    markdown.includes("luyen-tap.md")&&markdown.includes("tu-kiem-tra-chuong.md"),
    "B10 real S1 river method belongs in Tab3 with figures and working routes");
-  assert.equal((markdown.match(/^    \?\?\? tip "/gm)||[]).length,3,
-   "B10 exactly three student-error diagnosis disclosures");
+  assert.equal((markdown.match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,3,
+   "B10 exactly three contextual student-error diagnosis disclosures");
   assert.equal((markdown.match(/data-thpt-help-id=/g)||[]).length,3,
    "B10 HELP Q15 ID count is independent of UI error disclosure count");
   assert(!markdown.includes("EX-G10-B10-RIVER-TR01")&&
@@ -272,13 +322,16 @@ for(let n=1;n<=27;n++){
     "B16 owner Q18 must extend exact historical UX source");
    active=f16("CANDIDATE_B16_SOURCE_BLOB");
   }
-  assert.equal(blob(source),active,
-    "B"+n+" learner source must match latest signed Q18, never an obsolete UX ancestor");
+  // All historic B15–B18 receipt links remain checked above; Q18's
+  // current router additionally locks later 20/11 D6 and 21/11 source.
+  assert.equal(blob(source),candidateG10KnowledgeBlob(n),
+    "B"+n+" source must match full owner-signed Q18 successor chain");
  }
  const signedVII=chvii.get(n);
  if(signedVII){
   const source=fs.readFileSync(path.join(root,"docs",route+".md"));
-  assert.equal(blob(source),signedVII.candidate,"B"+n+" ChVII Q18 source receipt drift");
+  assert.equal(blob(source),candidateG10KnowledgeBlob(n),
+   "B"+n+" ChVII Nov13 receipt must extend to signed Nov20/21 current source");
   assert.equal(ids.length,signedVII.tries,"B"+n+" original ChVII FirstTry count");
   assert.equal([...markdown.matchAll(/data-thpt-help-id="([^"]+)"/g)].length,signedVII.helps,
    "B"+n+" ChVII D6 source receipt drift");

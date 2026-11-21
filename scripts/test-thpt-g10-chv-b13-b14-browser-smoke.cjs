@@ -11,7 +11,7 @@ const {verifyModelBLesson}=require("./test-thpt-g10-model-b-browser-helper.cjs")
     assert((await page.goto(base,{waitUntil:"domcontentloaded"}))?.ok());
     for(const n of [13,14]){
      assert((await page.goto(base+"bai-"+n+"/",{waitUntil:"domcontentloaded"}))?.ok(),"Lesson "+n);
-     if(!(await verifyModelBLesson(page,{n,chapter:"v",tries:5,helps:2,images:n===13?["THPT_G10_B13_QUARTILES_D5_R01.svg"]:["THPT_G10_B14_DISPERSION_D5_R01.svg"]}))){
+     if(!(await verifyModelBLesson(page,{n,chapter:"v",tries:5,helps:2,remediationTab:"Khám phá kiến thức",images:n===13?["THPT_G10_B13_QUARTILES_D5_R01.svg"]:["THPT_G10_B14_DISPERSION_D5_R01.svg"]}))){
 assert.equal(await page.locator("[data-thpt-help-id]").count(),2);
      assert.equal(await page.locator("h3").filter({hasText:/Ví dụ [123]/}).count(),3);
      const img=page.locator(".thpt-r4-probability-figure img");

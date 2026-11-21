@@ -17,7 +17,7 @@ const root="http://127.0.0.1:8765/thpt-preview/sgk/chuong-viii/";
      const response=await page.goto(root+"bai-"+n+"/",{waitUntil:"networkidle",timeout:90000});
      assert(response?.ok(),"Missing Chapter VIII B"+n);
      const article=page.locator("article.md-content__inner");
-     if(await verifyModelBLesson(page,{n,chapter:"viii",tries:4,helps:6,
+     if(await verifyModelBLesson(page,{n,chapter:"viii",tries:4,helps:6,remediationTab:"Khám phá kiến thức",
        questions:n===25?5:4,
        images:n===23?["G10_B23_ADD_MULTIPLY_CHOICES_R02.svg"]:
               n===24?["G10_B24_ORDER_VS_COMBINATION_R02.svg"]:
@@ -33,12 +33,12 @@ const root="http://127.0.0.1:8765/thpt-preview/sgk/chuong-viii/";
         assert.equal(await helps.nth(k).getAttribute("data-thpt-help-id"),
           "HELP-G10-CHVIII-TRY"+v,"B"+n+" original D6 mapping");
        }
-       const knowledge=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
-         .filter({hasText:/^Kiến thức SGK$/});
-       await knowledge.click();
+       const discovery=article.locator(".tabbed-set").first().locator(".tabbed-labels label")
+         .filter({hasText:/^Khám phá kiến thức$/});
+       await discovery.click();
        const answers=article.locator("details.question:visible"),tips=article.locator("details.tip:visible");
        assert((await answers.count())>=4&&(await tips.count())>=4,
-         "B"+n+" all reviewed First Try/D6 must remain visible on Knowledge tab");
+         "B"+n+" all Q18 First Try/D6 must be visible beside their application in Discovery");
        for(let k=0;k<4;k++){
         const a=answers.nth(k),h=tips.nth(k);
         assert(!(await a.evaluate(x=>x.open))&&!(await h.evaluate(x=>x.open)),"B"+n+" no automatic solution");

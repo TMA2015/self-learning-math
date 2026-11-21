@@ -23,6 +23,8 @@ jobs:
       - name: Verify Q18 exact final source SHAs, S1 mathematics, unchanged answers and negative mutations
         run: |
           git fetch --no-tags --depth=3 origin 95c111b313886283bd8245babcc9ffdbfcc7c54f
+          git fetch --no-tags --depth=1 origin f1d3e498c28b6379aaca40603db22015682c3628 # immutable 19/11 Delta A predecessor
+          git fetch --no-tags --depth=1 origin b85723c1cc3252862f41a5bd7f78dfbfb4f4b130 # immutable B14 label predecessor
           node scripts/test-g10-chv-editorial-source.cjs
           node scripts/test-thpt-q18-release-test-router.cjs
       - name: Build actual site

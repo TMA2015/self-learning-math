@@ -111,9 +111,25 @@ if(process.argv.includes("--built")){
  for(const p of ["site/thpt-preview/sgk/chuong-v/bai-12/index.html","site/thpt-preview/sgk/chuong-v/luyen-tap/index.html"])
   assert(fs.existsSync(p),"Missing built public page "+p);
 }
-assert(page.includes('data-thpt-help-id="HELP-G10-B12-CALC-01"')&&
- page.includes('??? tip "4.3. Nhập nhầm căn bậc ba'),
- "B12 third error disclosure must diagnose real wrong calculator action");
+// The 20/11 signed Q18 placement moves the calculator misconception from
+// Tab 4 directly below its First Try in Discovery. Do not restore an obsolete
+// Tab-4 title or weaken the actual wrong-operation / recovery assertions.
+const discovery=page.slice(page.indexOf('=== "Khám phá kiến thức"'),
+ page.indexOf('=== "Kiến thức SGK"'));
+const calcTry=discovery.indexOf('data-thpt-first-try-id="THPT-G10-CHV-TRY-CALC-R01"');
+const calcHelp=discovery.indexOf('data-thpt-help-id="HELP-G10-B12-CALC-01"');
+assert(calcTry>=0&&calcHelp>calcTry,
+ "B12 calculator D6 must follow its unscored First Try in Discovery");
+assert.equal(page.split('data-thpt-help-id="HELP-G10-B12-CALC-01"').length-1,1,
+ "B12 must use one canonical calculator HELP ID");
+const calcRecovery=discovery.slice(calcHelp,discovery.indexOf('    ### 1.4.',calcHelp));
+assert(calcRecovery.includes('??? tip "Kiểm lỗi"')&&
+ calcRecovery.includes('Muốn tính')&&calcRecovery.includes('nhập \\(11/3\\)')&&
+ calcRecovery.includes('2{,}2235^3<11<2{,}2245^3'),
+ "B12 calculator D6 must diagnose the wrong operation and prove the 11→2,224 repair");
+assert(!page.slice(page.indexOf('=== "Lỗi thường gặp"'))
+ .includes('data-thpt-help-id="HELP-G10-B12-CALC-01"'),
+ "B12 calculator HELP cannot be duplicated in Tab 4");
 assert.equal((page.slice(page.indexOf('=== "Lỗi thường gặp"')).match(/^    ### 4\./gm)||[]).length,0,
  "B12 must not recreate owner P2 rejected duplicate heading cards");
 console.log("PASS G10 ChV B12 candidate: old 8/8 source identical, one new P07, full calculator pedagogic chain, 25 IDs, Q16 Readiness unchanged. ACADEMIC/PED REVIEW HOLD.");

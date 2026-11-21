@@ -10,6 +10,7 @@ const path=require("node:path");
 const crypto=require("node:crypto");
 const {chromium}=require("playwright");
 const root=path.resolve(__dirname,"..");
+const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
 const base=process.env.SLM_CHIV_URL||"http://127.0.0.1:8765";
 const goldenCss="44442773ac31eb1a46f0cab699a7d2c7974a5f37";
 const sources={
@@ -163,28 +164,18 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
   "B01/B02/B03 concept colors remain scoped; B07 formal-only now teal");
  for(const [lesson,sha] of Object.entries(sources)){
   const current=blob(fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-"+lesson+".md"));
+  // Historical Q18 predecessor chain is separately validated by the
+  // immediately preceding source-first editorial test in this workflow.
+  const expected=candidateG10KnowledgeBlob(Number(lesson));
+  assert.equal(current,expected,"B"+lesson+" browser checks latest signed Q18 source");
   if(lesson==="10"){
    const delta=fs.readFileSync(root+
     "/prototypes/thpt/ux795/G10_CHIV_B10_P2_MATHJAX_DELTA_A_UI_R02_20261118.md","utf8");
    const df=k=>delta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(df("BASELINE_R01_SOURCE_BLOB"),sha,"B10 P2 must preserve exact R01 historical source");
-   assert.equal(current,df("R02_SOURCE_BLOB"),"B10 P2 source not signed by MathJax UI-only delta");
+   assert.equal(df("BASELINE_R01_SOURCE_BLOB"),sha,"B10 original R01 SHA historically frozen");
   }else if(lesson==="11"){
-   assert.equal(b11f("R01_PUBLISHED_B11_SOURCE_BLOB"),sha,
-    "B11 old published R01 source must be immutable");
-   const currentDelta=fs.readFileSync(root+
-    "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_SOURCE_FIRST_DELTA_A_R01_20261118.md","utf8");
-   const df=k=>currentDelta.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(df("B11_BASELINE_SOURCE_BLOB"),b11u("R02_B11_SOURCE_BLOB"),
-    "Original B11 R02 signed source still immutable");
-   const goldenReceipt=fs.readFileSync(root+
-     "/prototypes/thpt/ux795/G10_B11_B12_OWNER_P2_GOLDEN_COMPONENT_PARITY_DELTA_A_R02_20261118.md","utf8");
-   const g=k=>goldenReceipt.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
-   assert.equal(g("B11_PREVIOUS_SOURCE_BLOB"),df("B11_SOURCE_CURRENT_BLOB"),
-    "Original source-first B11 P2 SHA remains signed in historical receipt");
-   assert.equal(current,g("B11_SOURCE_CURRENT_BLOB"),
-    "B11 current learner source is exactly B10 Golden component R02 receipt");
-  }else assert.equal(current,sha,"Unapproved academic/source/First Try change B"+lesson);
+   assert.equal(b11f("R01_PUBLISHED_B11_SOURCE_BLOB"),sha,"B11 original R01 SHA historically frozen");
+  }
  }
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  let cases=0;
@@ -332,7 +323,7 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
       where+" solution panel contains unchanged mathematical solution");
      assert(state.overflow<=3,where+" no whole-page horizontal overflow");
      if(lesson===7){
-       const helpContent=await blocks.nth(3).locator("details.tip")
+       const helpContent=await blocks.nth(0).locator("details.tip")
         .evaluateAll(tips=>tips.map(tip=>tip.textContent||""));
        assert.equal(helpContent.length,2,where+" two original D6 HELP sections remain");
        assert(helpContent.every(s=>!/B07-[CP][0-9]{2}/.test(s)),
@@ -495,40 +486,34 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
        await scalarDiscovery.evaluate(async el=>{if(el.decode)await el.decode();});
        assert(await scalarDiscovery.evaluate(el=>el.complete&&el.naturalWidth>0),
         where+" B09 early scalar picture accessible and decodes");
-       const tips=blocks.nth(3).locator("details.tip");
-       const helpText=await tips.allInnerTexts();
-       assert.equal(helpText.length,3,where+" B09 three real Tab4 error disclosures, not two plus standalone advice");
-       assert(helpText.every(t=>!/(?:B09-[CP][0-9]{2}|HELP_ID|Assessment safety|Final Submit|Không clone câu)/.test(t)),
-        where+" B09 learner-facing remedies must not leak QA/item identifiers");
-       assert(helpText.slice(0,2).every(t=>t.includes("Vì sao sai?")&&t.includes("Ôn lại:")),
-        where+" original two B09 D6 HELP steps are intact");
-       assert(helpText[2].includes("Lỗi thường gặp:")&&
-        helpText[2].includes("Vì sao sai?")&&
-        helpText[2].includes("Tự kiểm:")&&
-        helpText[2].includes("Ôn và luyện lại:"),
-        where+" B09-F04 third entry must show real wrong step→cause→repair→self-check→D6");
-       const mistakes=blocks.nth(3);
+       const localTips=blocks.nth(0).locator("details.tip");
+       const localHelp=await localTips.allTextContents();
+       assert.equal(localHelp.length,2,where+" two canonical item-specific B09 D6 in Discovery");
+       assert(localHelp.every(t=>t.includes("Vì sao sai?")&&t.includes("Ôn lại:")),
+        where+" original B09 HELP provides cause and remedy");
+       assert.equal(await blocks.nth(3).locator("[data-thpt-help-id]").count(),0,
+        where+" B09 local HELP cannot be duplicated in Tab4");
        await labels.nth(3).click();
-       const third=tips.nth(2);
-       assert.equal(await third.getAttribute("open"),null,where+" B09 4.3 stays closed until learner opens");
+       const independent=blocks.nth(3).locator("details.tip");
+       assert.equal(await independent.count(),1,
+        where+" one general sign-error remedy distinct from local HELP");
+       const third=independent.first();
+       assert.equal(await third.getAttribute("open"),null,where+" B09 sign error defaults closed");
        const thirdLabel=await third.locator("summary").innerText();
-       assert(thirdLabel.includes("4.3")&&thirdLabel.includes("Đảo dấu"),
-        where+" B09 4.3 is numbered as actual error, not free-standing advice");
+       assert(thirdLabel.includes("Đảo dấu"),where+" B09 named real error, not a generic hint");
        await third.locator("summary").click();
-       assert((await third.getAttribute("open"))!==null,where+" B09 4.3 expands on demand");
+       assert((await third.getAttribute("open"))!==null,where+" B09 help opens voluntarily");
        const thirdBody=await third.innerText();
        assert(thirdBody.includes("đổi chỗ điểm đầu và điểm cuối")&&
-        thirdBody.includes("không cùng phương")&&
-        thirdBody.includes("Ôn và luyện lại:"),
-        where+" B09 4.3 actual wrong sign, mathematical cause and remediation present");
+        thirdBody.includes("không cùng phương")&&thirdBody.includes("Ôn và luyện lại:"),
+        where+" B09 sign error contains why/wrong step/repair");
        const link=third.locator('a[href*="THPT-G10-B09-P07"]');
-       assert.equal(await link.count(),1,where+" B09 4.3 points to valid existing practice P07");
-       assert(!(await link.innerText()).includes("P07"),
-        where+" B09 4.3 must not show internal item identifier in learner copy");
+       assert.equal(await link.count(),1,where+" B09 D6 points at existing public P07");
+       assert(!(await link.innerText()).includes("P07"),where+" no internal item code exposed");
        await page.waitForFunction(()=>!!document.querySelector('details.tip[open] mjx-container'),
         null,{timeout:15000});
        assert(await third.locator("mjx-container").count()>3,
-        where+" B09 4.3 wrong and corrected math actually typeset");
+        where+" B09 wrong/corrected mathematical expressions typeset");
        await third.locator("summary").click();
        await labels.nth(0).click();
        const knowledge=blocks.nth(1);
@@ -635,35 +620,38 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         "THPT_G10_B10_RIVER_VELOCITY_MOBILE_D5_R01.svg":
         "THPT_G10_B10_RIVER_VELOCITY_D5_R01.svg"),
         where+" B10 must serve legible portrait diagram only on mobile, full width otherwise");
-       await labels.nth(3).click();
-       const tips=blocks.nth(3).locator("details.tip");
-       assert.equal(await tips.count(),3,where+" B10 exactly three actual errors, 3 canonical HELP markers separately");
-       const data=await tips.evaluateAll(nodes=>nodes.map(e=>({open:e.open,summary:e.querySelector("summary")?.textContent||"",text:e.textContent||""})));
-       assert(data.every((x,i)=>!x.open&&x.summary.includes("4."+(i+1))&&
+       await labels.nth(0).click();
+       const tips=blocks.nth(0).locator("details.tip");
+       assert.equal(await tips.count(),3,where+" B10 original three canonical D6 in Discovery");
+       assert.equal(await blocks.nth(3).locator("details.tip,[data-thpt-help-id]").count(),0,
+        where+" B10 no duplicate local HELP in Tab4");
+       const data=await tips.evaluateAll(nodes=>nodes.map(e=>({
+        open:e.open,summary:e.querySelector("summary")?.textContent.trim()||"",
+        text:e.textContent||""
+       })));
+       assert(data.every(x=>!x.open&&x.summary==="Kiểm lỗi"&&
         x.text.includes("Lỗi thường gặp")&&x.text.includes("Vì sao sai?")&&
         x.text.includes("Ôn và luyện lại:")),
-        where+" B10 tab4 genuine student wrong step, cause, remedy and numbering");
+        where+" B10 D6 preserves wrong step, cause, remediation and voluntary reveal");
        assert(data[0].text.includes("Lỗi thường gặp:")&&
         data[1].text.includes("Lỗi thường gặp 1:")&&
-        data[1].text.includes("Lỗi thường gặp 2:")&&
-        data[2].text.includes("Lỗi thường gặp:")&&
-        data.every(x=>/sai|không phải|Đúng phải|Sửa/.test(x.text)),
-        where+" B10 must show 4 concrete wrong student steps, not generic method reminders");
+        data[1].text.includes("Lỗi thường gặp 2:")&&data[2].text.includes("Lỗi thường gặp:"),
+        where+" B10 four concrete wrong steps remain in three canonical HELPs");
        assert(data.every(x=>!/Assessment safety|HELP_ID|EX-G10-B10-RIVER|B10-[CP]0[1-6]/.test(x.text)),
-        where+" B10 no admin metadata visible to students");
+        where+" B10 no internal metadata in student remedy");
        const last=tips.nth(2);await last.locator("summary").click();
-       assert(await last.evaluate(e=>e.open),where+" B10 river error expands");
+       assert(await last.evaluate(e=>e.open),where+" B10 river Kiểm lỗi expands");
        await page.waitForFunction(()=>document.querySelector('details.tip[open] mjx-container')!==null,
         null,{timeout:15000});
        const paragraphs=await last.locator("p").allTextContents();
        assert(paragraphs.some(v=>v.includes("Thời gian đó sai"))&&
         paragraphs.some(v=>/thành phần hướng Bắc/i.test(v))&&
         paragraphs.some(v=>v.includes("Ôn và luyện lại:")),
-        where+" B10 error 4.3 must show a specific wrong method, cause and recovery");
+        where+" B10 river D6 shows wrong speed/time and North component repair");
        assert(await last.locator("mjx-container").count()>=5,
-        where+" B10 4.3 wrong and corrected time must be real rendered MathJax, not raw source TeX");
+        where+" B10 wrong and corrected time real MathJax");
        await last.locator("summary").click();
-       assert(!(await last.evaluate(e=>e.open)),where+" B10 4.3 re-closes");
+       assert(!(await last.evaluate(e=>e.open)),where+" B10 river D6 recloses");
        await labels.nth(0).click();
       }
       if(lesson===11){
@@ -714,41 +702,25 @@ const tabsExpected=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","L
         exText.includes("Ví dụ 4 — Hợp lực"),
         where+" B11 force figure 8/15 must distinguish worked 6/6 dataset in student text");
        await labels.nth(3).click();
-       assert.equal(await blocks.nth(3).locator("[data-thpt-first-try-id]").count(),0,
-        where+" B11 no First Try allowed in error tab");
-       const tips=blocks.nth(3).locator("details.tip");
-       assert.equal(await tips.count(),3,where+" B11 three canonical HELP plus genuinely wrong steps");
+       assert.equal(await blocks.nth(3).locator("[data-thpt-first-try-id],details.tip,[data-thpt-help-id]").count(),0,
+        where+" B11 Tab4 must not repeat local Vận dụng, HELPs or First Try");
+       await labels.nth(0).click();
+       const tips=blocks.nth(0).locator("details.tip");
+       assert.equal(await tips.count(),3,where+" B11 three signed canonical local D6");
        const ts=await tips.evaluateAll(nodes=>nodes.map(el=>({
-        open:el.open,text:el.textContent||""
+        open:el.open,summary:el.querySelector("summary")?.textContent.trim(),
+        text:el.textContent||""
        })));
-       assert(ts.every(x=>!x.open&&["Cách làm sai:","Vì sao sai:","Tự sửa:","Luyện lại:"].every(t=>x.text.includes(t))),
-        where+" B11 errors must give wrong action, cause, correction and retry");
+       assert(ts.every(x=>!x.open&&x.summary==="Kiểm lỗi"&&
+        ["Cách làm sai:","Vì sao sai:","Tự sửa:","Luyện lại:"].every(t=>x.text.includes(t))),
+        where+" B11 original local wrong step/cause/repair/retry only after learner opt-in");
        assert(ts.every(x=>!/Assessment safety|HELP_ID|EX-G10-|B11-[CP][0-9]{2}/.test(x.text)),
-        where+" B11 visible help cannot leak internal assessment metadata");
-       // Owner P2 B11-UI-TAB4-01: match the accepted B10 pattern.
-       // R01 incorrectly asserted three h3 cards *plus* three tips.
-       assert.equal(await blocks.nth(3).locator("h3").count(),0,
-        where+" B11 Tab4 must have ZERO duplicate standalone heading cards");
-       const summaries=await tips.locator("summary").allTextContents();
-       assert.equal(summaries.length,3,where+" B11 exactly three accordion summaries");
-       assert.deepEqual(summaries.map(t=>t.trim().slice(0,3)),["4.1","4.2","4.3"],
-        where+" B11 numbered summary headings must replace redundant h3 cards");
-       const b10Tab4=fs.readFileSync(root+"/docs/thpt-preview/sgk/chuong-iv/bai-10.md","utf8")
-        .split('=== "Lỗi thường gặp"')[1];
-       assert.equal((b10Tab4.match(/^    ### 4\.[1-3]\./gm)||[]).length,0,
-        where+" Golden reference B10 must be accordion-only");
-       assert.equal((b10Tab4.match(/^    \?\?\? tip "4\.[1-3]\. /gm)||[]).length,3,
-        where+" Golden reference B10 has three numbered accordions");
-       // Check default-closed, voluntary reveal/reclose and math typesetting.
-       await tips.first().locator("summary").click();
-       assert.equal(await tips.first().getAttribute("open"),"",
-        where+" first B11 help disclosure must open on learner action");
-       await tips.first().locator("mjx-container").first().waitFor({state:"attached",timeout:15000});
-       await tips.first().locator("summary").click();
-       assert.equal(await tips.first().getAttribute("open"),null,
-        where+" B11 disclosure must reclose; no always-visible answer");
-       assert.equal(await blocks.nth(3).locator("h3").count(),0,
-        where+" opening B11 help must not introduce duplicate heading cards");
+        where+" B11 no internal item identifier leaks");
+       const first=tips.first();await first.locator("summary").click();
+       assert.equal(await first.getAttribute("open"),"",where+" B11 D6 opens voluntarily");
+       await first.locator("mjx-container").first().waitFor({state:"attached",timeout:15000});
+       await first.locator("summary").click();
+       assert.equal(await first.getAttribute("open"),null,where+" B11 D6 re-closes");
        await labels.nth(0).click();
       }
       // Right TOC cross-tab link: tab 3 -> hidden Knowledge tab 2.

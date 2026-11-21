@@ -49,8 +49,10 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
       where+" public First Try leaked into formal Knowledge");
      assert.equal(await blocks.nth(2).locator("[data-thpt-first-try-id], [data-thpt-help-id]").count(),0,
       where+" extra worked examples cannot clone canonical item");
-     assert.equal(await blocks.nth(3).locator("[data-thpt-help-id]").count(),item.helps,
-      where+" 5-step D6 cards in last tab");
+     assert.equal(await blocks.nth(0).locator("[data-thpt-help-id]").count(),item.helps,
+      where+" all signed HELP anchors placed after Discovery Vận dụng");
+     assert.equal(await blocks.nth(3).locator("[data-thpt-help-id]").count(),0,
+      where+" no duplicated local HELP in tab4");
      if(item.n===15){
       // Owner P2: figure must reuse existing large concept-figure treatment.
       await lab.nth(1).click();
@@ -109,11 +111,13 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
       });
       assert(sizes.every(Boolean)&&sizes[0]===sizes[1],
        where+" graph explanation must use normal body font size, not a small admonition");
-      const mistakes=await blocks.nth(3).locator("details.tip > summary").allInnerTexts();
-      assert.equal(mistakes.length,5,where+" five source-aligned D6 errors");
-      assert.equal(new Set(mistakes).size,5,where+" five D6 headings must be truly distinct");
-      assert(mistakes.every(x=>/^4\.[1-5]\. /u.test(x)),
-       where+" D6 headings must describe a concrete numbered wrong method");
+      const mistakes=await blocks.nth(0).locator("details.tip > summary").allInnerTexts();
+      assert.equal(mistakes.length,5,where+" five signed item-specific D6 disclosures");
+      assert(mistakes.every(x=>x.trim()==="Kiểm lỗi"),
+       where+" use the approved local Kiểm lỗi summary");
+      const helpIds=await blocks.nth(0).locator("[data-thpt-help-id]")
+       .evaluateAll(nodes=>nodes.map(x=>x.dataset.thptHelpId));
+      assert.equal(new Set(helpIds).size,5,where+" unique canonical HELP anchor per placement");
      }
      assert.equal(await article.locator("details.question[open],details.tip[open]").count(),0,
       where+" answer/help must not open before learner action");
@@ -174,7 +178,8 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
      assert.equal(await exTab.locator(".thpt-g10-example-solution details.question").count(),0,
       where+" voluntary student self-practice must not sit inside worked solution");
      if([15,17,18].includes(item.n)){
-      const practice=exTab.locator('details.question > summary:text-is("Xem lời giải ba câu tự luyện")');
+      const sourceLabel=item.n===15?"Xem lời giải ba câu tự luyện":"Đối chiếu ba câu Vận dụng";
+      const practice=exTab.locator("details.question > summary").filter({hasText:sourceLabel});
       assert.equal(await practice.count(),1,where+" three student exercises must have meaningful answer label");
       const fold=practice.locator("xpath=..");
       assert(!(await fold.evaluate(el=>el.open)),where+" additional exercises must stay closed");
@@ -190,16 +195,20 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
       assert.equal(await optional.count(),1,where+" learner-oriented coefficient condition note missing");
       assert(!(await optional.locator("xpath=..").evaluate(el=>el.open)),where+" extension unexpectedly revealed");
      }
-     await lab.nth(3).click();
-     const tip=blocks.nth(3).locator("details.tip").first();
-     assert.equal(await blocks.nth(3).locator("details.tip").count(),item.helps,where+" preserved HELP count");
-     assert((await tip.locator("summary").innerText()).trim().startsWith("4.1."),
-      where+" Golden remediation numbering");
+     await lab.nth(0).click();
+     const tip=blocks.nth(0).locator("details.tip").first();
+     assert.equal(await blocks.nth(0).locator("details.tip").count(),item.helps,
+      where+" preserved HELP count with Vận dụng");
+     assert.equal((await tip.locator("summary").innerText()).trim(),"Kiểm lỗi",
+      where+" closed local remediation title");
      assert(!(await tip.evaluate(el=>el.open)),where+" D6 opens prematurely");
      await tip.locator("summary").click();
      assert(await tip.evaluate(el=>el.open),where+" HELP cannot be opened voluntarily");
      await tip.locator("summary").click();
      assert(!(await tip.evaluate(el=>el.open)),where+" HELP cannot be reclosed");
+     await lab.nth(3).click();
+     assert.equal(await blocks.nth(3).locator("details.tip").count(),0,
+      where+" moved D6 must not reappear in last tab");
      for(let tab=0;tab<4;tab++){
       await lab.nth(tab).click();
       for(const img of await blocks.nth(tab).locator("figure img").all()){

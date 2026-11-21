@@ -71,8 +71,19 @@ for(const n of [12,13,14]){
  const ui14=fs.readFileSync(path.join(root,
   "prototypes/thpt/ux795/G10_CHV_B14_EM_VAN_DUNG_LABEL_DELTA_A_R01_20261119.md"),"utf8");
  const f14=k=>ui14.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
- const expected=n===12?ui("B12_CURRENT_SOURCE_BLOB"):
+ const predecessor=n===12?ui("B12_CURRENT_SOURCE_BLOB"):
   n===13?ui("B13_CURRENT_SOURCE_BLOB"):f14("B14_CURRENT_SOURCE_BLOB");
+ const placement=fs.readFileSync(path.join(root,
+  "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md"),"utf8");
+ assert(placement.includes("DELTA_C_ACADEMIC_MATERIAL")&&
+  placement.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT"),
+  "B"+n+" material HELP relocation must have proper Q18 self-QA receipt");
+ const q18row=placement.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
+ assert.equal(q18row.length,1,"B"+n+" exactly one signed 20/11 source row");
+ const signedPair=[...q18row[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+ assert.equal(signedPair.length,2,"B"+n+" predecessor/current SHA pair");
+ assert.equal(signedPair[0],predecessor,"B"+n+" immutable 19 Nov historical predecessor");
+ const expected=signedPair[1];
  if(n===14){
   assert.equal(f14("B14_PREVIOUS_SOURCE_BLOB"),b14f("CANDIDATE_LESSON_GIT_BLOB"),
    "B14 owner UI correction preserves original signed §X-C source predecessor");
@@ -107,8 +118,11 @@ for(const n of [12,13,14]){
    "prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md"),"utf8");
   assert.equal(d("B12_BASELINE_CANONICAL_BLOB"),r12("ONE_CANONICAL_B12_R01_BLOB"),
     "B12 historic independent-reviewed canonical SHA must remain immutable");
-  assert.equal(blob(master),ui("B12_CURRENT_CANONICAL_BLOB"),
-    "B12 ONE current canonical must match scoped duplicate-heading Delta A receipt");
+  const canonicalRow=placement.split("\n").filter(x=>x.startsWith("| CANONICAL_B12 | "));
+  assert.equal(canonicalRow.length,1,"B12 single signed manuscript Q18 transition");
+  const canonicalPair=[...canonicalRow[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
+  assert.deepEqual(canonicalPair,[ui("B12_CURRENT_CANONICAL_BLOB"),blob(master)],
+   "B12 19/11 manuscript predecessor must extend exactly to 20/11 current manuscript");
   assert.equal(master.split("<!-- BEGIN_B12_KNOWLEDGE_MARKDOWN -->\n")[1]
    .split("\n<!-- END_B12_KNOWLEDGE_MARKDOWN -->")[0],s,"B12 learner Knowledge must equal ONE canonical Section A");
   const bank=fs.readFileSync(path.join(root,
@@ -196,12 +210,15 @@ for(const n of [12,13,14]){
    "B12 legacy method heading still present in current manuscript");
   assert(ex.includes("2^9")&&ex.includes("886{,}810"),
    "B12 authentic SGK p74 calculator worked example absent");
-  assert.equal((errors.match(/^    \?\?\? tip "4\.[1-3]\. /gm)||[]).length,3,
-   "B12 exactly three numbered GOLDEN mistake accordions");
+  assert.equal((discovery.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,3,
+   "B12 exactly three signed local Kiểm lỗi in Discovery");
+  assert.equal((errors.match(/^    \?\?\? tip /gm)||[]).length,0,
+   "B12 Tab4 must not duplicate HELP under Vận dụng");
   assert.equal((errors.match(/^    ### 4\./gm)||[]).length,0,
    "B12 Tab4 cannot recreate B11 P2 duplicate-heading regression");
-  assert(errors.includes("HELP-G10-B12-CALC-01")&&
-   errors.includes("**Cách làm sai:**"),"B12 new calculator actual wrong-step recovery missing");
+  assert(discovery.includes("HELP-G10-B12-CALC-01")&&
+   discovery.includes("**Cách làm sai:**"),
+   "B12 calculator local Kiểm lỗi must include real wrong-step recovery");
  }else if(n===13){
   const examples=s.slice(r,t),help=s.slice(t);
   assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
@@ -219,8 +236,10 @@ for(const n of [12,13,14]){
    "B13 four new formal conceptual statements in Golden teal");
   assert.equal((official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
    "B13 one positional quartile rule in Golden blue");
-  assert.equal((help.match(/^    \?\?\? tip "4\.[12]\./gm)||[]).length,2,
-   "B13 two real numbered D6 tip disclosures");
+  assert.equal((discovery.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,2,
+   "B13 two original local Kiểm lỗi in Discovery");
+  assert.equal((help.match(/^    \?\?\? tip /gm)||[]).length,0,
+   "B13 Tab4 must not clone targeted D6");
   assert(!s.includes("Em tự thử.")&&!s.includes("Hiểu bản chất trước công thức"),
    "B13 visible copy cannot reference obsolete labels or nonexistent sections");
  }else{
@@ -238,8 +257,10 @@ for(const n of [12,13,14]){
    "B14 exactly three S1 math definitions use Golden teal");
   assert.equal((official.match(/class="thpt-r4-knowledge-conclusion thpt-r4-rule-card"/g)||[]).length,1,
    "B14 one S1 outlier rule uses Golden blue");
-  assert.equal((help.match(/^    \?\?\? tip "4\.[12]\. /gm)||[]).length,2,
-   "B14 exactly two original numbered D6 recoveries");
+  assert.equal((discovery.match(/^    \?\?\? tip "Kiểm lỗi"$/gm)||[]).length,2,
+   "B14 two original local D6 near Vận dụng");
+  assert.equal((help.match(/^    \?\?\? tip /gm)||[]).length,0,
+   "B14 no duplicate targeted HELP in Tab4");
   assert.equal((discovery.match(/\*\*Em vận dụng\.\*\*/g)||[]).length,5,
    "B14 five pre-Core First Tries must have one approved Em vận dụng label each");
   assert(!discovery.includes("Em tự thử."),

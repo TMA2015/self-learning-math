@@ -14,7 +14,9 @@ const chapters=["i","ii","iii","iv","v","vi","vii","viii","ix"];
 const chapterOf=(grade,lesson)=>chapters[ranges[grade].findIndex(last=>lesson<=last)];
 const baseOf=grade=>"/thpt-preview/sgk/"+(grade===10?"":"lop-"+grade+"/");
 const routeOf=(grade,lesson)=>baseOf(grade)+"chuong-"+chapterOf(grade,lesson)+"/bai-"+lesson+"/";
-const eqHref=(actual,expected)=>assert.equal(new URL(actual,site).pathname,expected);
+// Compare the browser-resolved destination: first-paint HTML deliberately
+// uses relative links, which must resolve against the lesson page, not site /.
+const eqHref=(actual,expected)=>assert.equal(new URL(actual).pathname,expected);
 (async()=>{
  const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
  try{
@@ -34,11 +36,11 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual,site).pathname,expec
      assert.equal(await nav.count(),1,grade+" B"+lesson+" one nav only");
      assert.equal(await nav.locator("a,span[aria-disabled]").count(),4,"Four stable Golden nav positions");
      const chapter=chapterOf(grade,lesson),root=baseOf(grade)+"chuong-"+chapter+"/";
-     await eqHref(await nav.locator('[data-sgk-lesson-link="practice"]').getAttribute("href"),root+"luyen-tap/");
-     await eqHref(await nav.locator('[data-sgk-lesson-link="selfcheck"]').getAttribute("href"),root+"tu-kiem-tra-chuong/");
-     if(lesson>1)await eqHref(await nav.locator('[data-sgk-lesson-link="previous"]').getAttribute("href"),routeOf(grade,lesson-1));
+     await eqHref(await nav.locator('[data-sgk-lesson-link="practice"]').evaluate(a=>a.href),root+"luyen-tap/");
+     await eqHref(await nav.locator('[data-sgk-lesson-link="selfcheck"]').evaluate(a=>a.href),root+"tu-kiem-tra-chuong/");
+     if(lesson>1)await eqHref(await nav.locator('[data-sgk-lesson-link="previous"]').evaluate(a=>a.href),routeOf(grade,lesson-1));
      else assert.equal(await nav.locator('span[aria-disabled]').count(),1,"B1 no prior lesson");
-     if(lesson<ranges[grade].at(-1))await eqHref(await nav.locator('[data-sgk-lesson-link="next"]').getAttribute("href"),routeOf(grade,lesson+1));
+     if(lesson<ranges[grade].at(-1))await eqHref(await nav.locator('[data-sgk-lesson-link="next"]').evaluate(a=>a.href),routeOf(grade,lesson+1));
      else assert.equal(await nav.locator('span[aria-disabled]').count(),1,"Final lesson has no unpublished next");
      if(grade===10){
       assert.equal(await page.locator(".md-content__inner.thpt-g10-knowledge-ap1").count(),1);
@@ -62,7 +64,14 @@ const eqHref=(actual,expected)=>assert.equal(new URL(actual,site).pathname,expec
        const section=page.locator(".thpt-g10-knowledge-ap1>h2").first();
        assert(await section.count()>0,"G10 AP1 historical knowledge heading exists B"+lesson);
       }
-     }else assert.equal(await page.locator(".md-content__inner.thpt-g10-knowledge-ap1").count(),0,"G10 CSS not applied cross-grade");
+     }else{
+       // G11 B01 is a frozen, owner-reviewed exception: its canonical source
+       // and first-paint hook intentionally reuse the Golden AP1/G10 styling.
+       // All other G11/G12 lessons must remain free of that class.
+       const shared=await page.locator(".md-content__inner.thpt-g10-knowledge-ap1").count();
+       assert.equal(shared,grade===11&&lesson===1?1:0,
+         "Only Q18 G11 B01 may reuse Golden AP1 styling across grades");
+     }
      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
      assert(overflow<=20,"Horizontal overflow "+grade+" B"+lesson+" @"+viewport.width+" "+overflow);
     }
