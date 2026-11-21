@@ -280,7 +280,13 @@ for(const tag of ["ELLIPSE","HYPERBOLA"]){
 assert.equal(all.length,25);assert.equal(new Set(all).size,25);
 const oldWritten="docs/thpt-preview/thu-vien/tu-luan-chuong-vii.md",w=read(oldWritten);
 const wRange=/\n<!-- G10_CHVII_TRANSFER_WRITTEN_ALL_BEGIN -->[\s\S]*?<!-- G10_CHVII_TRANSFER_WRITTEN_ALL_END -->\n/;
-assert(wRange.test(w));assert.equal(shaText(w.replace(wRange,"")),"ebc70018a168998c7dd43b34c3e195a2b1e15ed7","Four historic Written must remain exact");
+assert(wRange.test(w));
+const originalW22Note='<p><strong>Depth note:</strong> kết luận về tiếp tuyến dựa vào duy nhất một giao điểm thực, không yêu cầu phép tính giải tích ngoài SGK.</p>';
+const approvedW22Note='<p><strong>Lưu ý phương pháp:</strong> Kết luận về tiếp tuyến dựa vào duy nhất một giao điểm thực, không cần dùng phép tính giải tích.</p>';
+assert(w.includes(approvedW22Note)&&!w.includes(originalW22Note),"Owner-approved W22 editorial Delta B missing");
+assert.equal(shaText(w.replace(wRange,"").replace(approvedW22Note,originalW22Note)),
+ "ebc70018a168998c7dd43b34c3e195a2b1e15ed7",
+ "Four historic Written must remain exact after ONLY approved student-visible note normalization");
 for(const tag of ["ELLIPSE","HYPERBOLA"]){
  const id="THPT-G10-CHVII-W22-"+tag+"-TR01";
  const begin="<!-- G10_CHVII_TRANSFER_WRITTEN_BEGIN:"+id+" -->",end="<!-- G10_CHVII_TRANSFER_WRITTEN_END:"+id+" -->";
@@ -290,7 +296,18 @@ for(const tag of ["ELLIPSE","HYPERBOLA"]){
 }
 for(const [p,sha]of [
  ["docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js","2b191d7abba7a4f5bd79d4c122673cd53a45495b"],
- ["docs/assets/data/thpt-g10-readiness/CHVII.json","113e291ecf9e2e3258e6bf573b87b53b02372ca6"]])assert.equal(gitblob(p),sha,"Frozen historical public item source mutated: "+p);
+ ["docs/assets/data/thpt-g10-readiness/CHVII.json","113e291ecf9e2e3258e6bf573b87b53b02372ca6"]]){
+ let source=read(p);
+ if(p.endsWith("thpt-chvii-reviewed-formative-v1.js")){
+  // Owner-approved #977-047: one P03 nonmathematical hint. Preserve the
+  // old reviewed source blob exactly after ONLY this signed reverse delta.
+  const oldHint="Dùng quy ước SGK (y^2=2px), (p>0).";
+  const newHint="Dùng dạng chính tắc đã học (y^2=2px), (p>0).";
+  assert(source.includes(newHint)&&!source.includes(oldHint),"P03 label delta missing");
+  source=source.replace(newHint,oldHint);
+ }
+ assert.equal(shaText(source),sha,"Frozen historical source mutated beyond approved Delta B: "+p);
+}
 const self=JSON.parse(read("docs/assets/data/thpt-g10-readiness/CHVII.json"));assert.equal(self.items.length,22);assert.equal(self.mastery_credit,false);assert.equal(self.persist_results,false);
 const svgs=["ELLIPSE","HYPERBOLA"].map(k=>"docs/assets/images/thpt/THPT_G10_CHVII_"+k+"_TRANSFER_D5_R00.svg");
 for(const file of svgs){const s=read(file);assert(/<svg[\s\S]*<\/svg>/.test(s)&&s.includes("<desc")&&s.includes("viewBox")&&!s.includes("<script"),"Accessible static reviewed-geometry SVG "+file)}
