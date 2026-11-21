@@ -5,6 +5,7 @@ on:
     paths:
       - 'hooks/sgk_golden_first_paint.py'
       - 'scripts/test-sgk-golden-first-paint.cjs'
+      - 'scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs'
       - '.github/workflows/sgk-golden-first-paint-qa.yml'
       - 'mkdocs.yml'
       - 'docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js'
@@ -13,7 +14,7 @@ permissions:
   contents: read
 jobs:
   first-paint:
-    name: Static HTML 28 pages + Chromium/WebKit JS/no-JS 390/820/1440
+    name: Static HTML 28 first-paint + 79 nav / Chromium-WebKit 390-1440
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
@@ -25,6 +26,7 @@ jobs:
         run: |
           python -m py_compile hooks/sgk_golden_first_paint.py
           node --check scripts/test-sgk-golden-first-paint.cjs
+          node --check scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
           node --check docs/assets/javascripts/thpt-sgk-lesson-nav-v1.js
       - name: Compile HTML
         run: |
@@ -49,3 +51,4 @@ jobs:
           else: raise SystemExit('SGK Golden server unavailable')
           PY
           node scripts/test-sgk-golden-first-paint.cjs
+          node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
