@@ -1,3 +1,6 @@
+<!-- OWNER_APPROVED_SHARED_SGK_G11_B22_B27_DELTA_B_Q18_20261121 -->
+**CURRENT EXACT AUTHORING:** one CĐ16 learner `1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84`, current source-owner SGK B22–B27 bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` (**both Topic branches use same source blob**), current Q18 `self`, A1/Q15 `current`, V2 `current`. Original 33/41 G11 shared canonical Practice student-answer labels formerly `Đáp án sau Submit luyện tập`, misleading in direct voluntary Lời giải; now exact `Đáp án` in one **canonical source** (all 51 public SGK items same) and CĐ16 projection (33) + CĐ17 projection (18). **No stem, numeric key, mathematical reasoning, option, rubric, disclosure, final submit/mastery evaluator code changed**; one original G11 Q15 same-ID source bank, old `afc8ec039213b87b4930f2d34d48c28d1fc6277f` preserved in Git history. `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL`, affected source author self QA; no blanket independent NotebookLM PASS, no website/release/merge/deploy.
+---
 <!-- TOP16_MASTER974_CURRENT_Q18_AUTHOR_SELF_VERIFIED_20261121 -->
 ## TARGETED signed author Q18 — CĐ16 R03 current learner source 21/11/2026
 
@@ -25,8 +28,8 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_PERPENDICULARITY_R03_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
-SOURCE_BLOB: 9b548af2169cabccf4e9191e9dd57b2f13dcdf6d
+ACADEMIC_SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
+SOURCE_BLOB: 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic16-perpendicularity/Temp_TOPIC16_R03_AUTHORING_METADATA_20261116.md
 AUTHOR_METADATA_BLOB: 2324f83b982ccffd513c8ddb7f3666177aa70b8f
 ORIGINAL_R01_SOURCE_BLOB: 0e934389ebfe239ace19cc23c5dedf9c23d8ebdc
