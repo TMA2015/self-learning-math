@@ -1,3 +1,28 @@
+<!-- TOP21_MASTER974_CURRENT_Q18_20261121 -->
+## CĐ21 R06 · CURRENT source-locked AUTHOR_SELF_VERIFIED Q18 · 21/11/2026
+
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
+CURRENT_SOURCE_COMMIT: 17d155a9bb939e221dbd6c6dad7dc8594f77bcbe
+CURRENT_Q15_MATRIX_BLOB: 188fe6c44f55b081be9b28f25e905de483129189
+CURRENT_ROUTE_TREE_SVG_BLOB: daeff4448dd64f89feef080039c73c9f437d016f
+CURRENT_AUTHOR_SIGNOFF: TOP21_MASTER974_8_D6_11_PRACTICE_8_SAME_ID_SELF_CHECK_20261121_e526468f2452221e08070fc96e3a64d42ad5c8f9
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+DELTA_CLASSES: DELTA_A_UI_EDITORIAL_8_EXISTING_D6_LABELS_11_EXERCISE_CAPTIONS_8_SAME_ID_LOOKUP_AND_ONE_IMAGE_CAPTION
+CURRENT_TARGETED_QA_P0: 0
+CURRENT_TARGETED_QA_P1: 0
+CURRENT_TARGETED_QA_P2: 0
+INDEPENDENT_NOTEBOOKLM_FULL_TOPIC_PASS: NOT_CLAIMED
+RELEASE_AUTHORIZATION: NO
+
+**Current ONE learner:** `prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md` Git blob **`e526468f2452221e08070fc96e3a64d42ad5c8f9`**. Before-edit immutable learner `ab886f53b9bee89f71a852febb7f2d9ccfff2373`. Existing 8 outcome concept-first Knowledge units in three subject math groups on original S1 G12 KNTT Tập Hai ChVI B18/B19, original conditional probability denominator P(B)>0, no replacement, partition weighted total probability, Bayes reverse conditional and base-rate checks. This revision makes **no mathematical stem, solution, key, condition, answer or Written rubric content changes**, not a new Delta C mathematical source. Original 20/11 AUTHOR scoped direct mathematics 19/19 from `Temp_TOPIC21_R06_DIRECT_MATH_PED_19_ITEMS_20261120.md` Git `bc3fadfc3e547be929fed30ad222e5403911b4cf` is inherited only for the 19 completely unchanged full item mathematical bodies; not claimed as a fresh independent full-Topic rerun. Prior owner-supplied **independent D6-only** review `Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md` Git `06157b8c7e5873611b463f991620c466b72e2741` applies to unchanged eight misconception/return substance only, not a new independent review of this new SHA or the whole Topic. No new SGK PDF image inspection or independent full Topic academic/PED verdict, and existing reviewed snapshots retained immutable.
+
+**#977 actual minimal editorial defects all fixed:** #072 original 8 concept FirstTry `<details><summary>Đối chiếu` had good mathematical `**Khi làm sai:**` texts and real matching Practice 1–8, now only role label correctly `**Kiểm lỗi**` after student opens; all 8 original mathematical FirstTry marker-to-answer text otherwise byte-exact. #073 8 original Practice +3 original Written /4 one `Bài luyện1–11` visible sequence, Written math-specific H3 names; **11/11 full Practice/response mathematical item bodies byte exact** and all 3 Written rubrics unchanged. #074 original 8 question-only public same-ID P01..P08 replay stems **byte identical**, one voluntary AFTER all eight `Đối chiếu` links to original same-ID Bài luyện1–8, no duplicate answer key. #075 original Route-tree SVG `FIG-TOP21_ROUTE_TREE_3_5_2_5_R01.svg` math/source preimage `e6b10a7dc30e723360dc7e2cfd0228d3d48e023d` now `daeff4448dd64f89feef080039c73c9f437d016f` by **one visible caption substitution** `Kiến thức 7`→`Kiến thức 3.1`, correct actual section name; every original route/number/fraction/text/shape/alt/link/desc and companion total-probability SVG unchanged. All SVG paths source-locked, original optional probability model unchanged.
+
+**Current direct Q15/Q16/Q17/Q18 source QA:** precisely 8 original FirstTry+8 original Practice+3 Written = **19 distinct canonical public IDs** plus eight same-ID question-only replay placements (27 placements), 8 outcome coverage firsttry→practice, 11 student-visible Bài luyện captions 1–11, 20/20 balanced voluntary disclosures (8 FirstTry+11 Practice+1 answer locator), two retained SVG references and one SGK final provenance line. The updated single 19-row Q15 map Git `188fe6c44f55b081be9b28f25e905de483129189` re-computes CURRENT source lines, roles, IDs, original item content versions (unchanged, no fictitious mathematical reversion) and eight public replay line positions. `CLIENT_SELF_CHECK_NO_MASTERY` only; no protected independent `TOPIC_READINESS`, Final Submit, learner evidence, RD1/mastery or Firebase updates. Q18 targeted `AUTHOR_SELF_VERIFIED` of exact new source/label/image placement, **NOT** full NotebookLM PASS. No browser/RELEASE/AP-R/device QA or owner permission to merge/deploy.
+---
+
 # CĐ21 R06 — CURRENT author self-QA receipt, incorporating independent D6 delta
 
 AUTHOR_SELF_QA_RECEIPT: TOP21-R06-CURRENT-SOURCE-Q18-20261118
@@ -7,11 +32,11 @@ Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 LEARNING_PATH: TOPIC
 SOURCE_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R05_LEARNER_PRESENTATION_20261116.md
-SOURCE_BLOB: ab886f53b9bee89f71a852febb7f2d9ccfff2373
+SOURCE_BLOB: e526468f2452221e08070fc96e3a64d42ad5c8f9
 AUTHOR_TARGETED_Q18_PATH: prototypes/thpt/content-drafts/topic21-conditional-bayes/Temp_PLAN22_21_R06_D6_Q15_Q18_AUTHOR_TARGETED_RECEIPT_20261117.md
 AUTHOR_TARGETED_Q18_BLOB: d67d28772fe1f724624b19f314dd6df1f62c8cc7
-AUTHOR_A1_A7_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
-CANONICAL_Q15_MATRIX_BLOB: 522d13493d18ec53280a752dc5498e92c8896805
+HISTORICAL_AUTHOR_A1_A7_BLOB: 1ea2b6a48abb8fa8d84025511177eb7671a765d4
+CANONICAL_Q15_MATRIX_BLOB: 188fe6c44f55b081be9b28f25e905de483129189
 TARGETED_REVIEW_PATH: prototypes/thpt/review-packets/Temp_TOPIC21_R06_D6_INDEPENDENT_OWNER_PASTED_VERDICT_20261118.md
 TARGETED_REVIEW_BLOB: 06157b8c7e5873611b463f991620c466b72e2741
 ACADEMIC_REVIEWER_PASS_FOR_WHOLE_TOPIC: NOT_CLAIMED
