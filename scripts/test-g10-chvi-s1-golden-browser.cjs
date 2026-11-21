@@ -200,14 +200,14 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
       where+" preserved HELP count with Vận dụng");
      assert.equal((await tip.locator("summary").innerText()).trim(),"Kiểm lỗi",
       where+" closed local remediation title");
-     await lab.nth(3).click();
-     assert.equal(await blocks.nth(3).locator("details.tip").count(),0,
-      where+" moved D6 must not reappear in last tab");
      assert(!(await tip.evaluate(el=>el.open)),where+" D6 opens prematurely");
      await tip.locator("summary").click();
      assert(await tip.evaluate(el=>el.open),where+" HELP cannot be opened voluntarily");
      await tip.locator("summary").click();
      assert(!(await tip.evaluate(el=>el.open)),where+" HELP cannot be reclosed");
+     await lab.nth(3).click();
+     assert.equal(await blocks.nth(3).locator("details.tip").count(),0,
+      where+" moved D6 must not reappear in last tab");
      for(let tab=0;tab<4;tab++){
       await lab.nth(tab).click();
       for(const img of await blocks.nth(tab).locator("figure img").all()){
