@@ -89,8 +89,9 @@ const specs={
       assert(exItem.firstStrong.startsWith("Lời giải."),tag+" a prompt instead of solution was boxed");
       assert(exItem.inside.length>35,tag+" worked solution empty");
       assert(exItem.outside.includes("Đề bài."),tag+" problem must be outside the solution box");
-      assert(exItem.outside.includes("Vì sao chọn cách này?"),tag+" method rationale must be outside box");
-      for(const forbidden of ["Đề bài.","Vì sao chọn cách này?","Kiểm lại:","Tự luyện thêm.",
+      assert(exItem.outside.includes("Phân tích:"),
+       tag+" source-authored method analysis must remain outside worked solution box");
+      for(const forbidden of ["Đề bài.","Vì sao chọn cách này?","Phân tích:","Kiểm lại:","Tự luyện thêm.",
         "Tự mở rộng.","Tự kiểm:","Học tiếp:","do dự án biên soạn"])
        assert(!exItem.inside.includes(forbidden),tag+" whole example/control wrongly boxed: "+forbidden);
      }
