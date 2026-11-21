@@ -1,3 +1,12 @@
+<!-- TOP13_MASTER974_ONE_CURRENT_V2_20261121 -->
+## CURRENT CĐ13 AUTHORING V2 / source-specific mathematics and PED
+
+One active learner `prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md` Git blob **`893829bacc3b4bae8c1463b1bdb0ebbd9857831f`**, existing Q18 v3.2.0 `AUTHOR_SELF_VERIFIED` receipt `9c902eb7d5c8fcf5eb62690fa8e2b9a6c3d5cad7`, A1 author custody `8cb53d363c0dc77d4b3c297115807e1d29118ccb`; original NEW20 public item bank `c74505ba59d047c19943c2309f5fd7c033ac9563` unchanged. Three current reproducible learner defects #977-042/043/044 addressed: all 16 opt-in Knowledge FirstTry `Kiểm lỗi` now specific and route to real numbered Practice; 16 public replay Selfchecks have one voluntary final exact-ID answer navigation; Practice has one learner numbering `Bài luyện 1–52`, 48 `Lời giải` and four `Lời giải và rubric`, one SGK chapter credit footer. Mathematical zero-vector convention in O01/O09 stated directly without in-lesson source labels. Full original 52 canonical `Đề` through mathematical answer/solution/rubric byte-exact, 16 original public selfcheck question-only stems unchanged, original 4 SVG untouched; 69/69 balanced disclosure blocks.
+
+**Source-ownership caveat:** original shared item `THPT-G10-B07-P04` still contains literal “SGK/SBT KNTT” in its authoritative original question/answer imported from G10 sibling PR #750. Keep that exact canonical stem/solution (Q15); changing this wording to meet literal one-source-mention rule belongs to original source owner and requires cross-branch reconciliation, not a hidden Topic-only clone. Only **one explicit full-Topic bibliography footer** is present; do not claim zero contextual SGK mentions outside it. Source-related reviewer info lives in author-only file, not learner prose. G10 original SGK source `96b5c95f9b74a3ed3b9fd66dc6c60481d8b0dcb9` remains external exact dependency; RELEASE R1 must inspect combined integrated HEAD. Current Q18 AUTHOR_SELF_VERIFIED changed PED scope; NOT independent NotebookLM full Topic reviewer PASS; no website RELEASE/merge/deploy/RD1/Mastery/Final Submit.
+
+---
+
 <!-- TOP13_S1_B08_B09_PROPERTIES_HANDOFF_20261120 -->
 **20/11 SGK G10 B08/B09 additional Q01 scope:** One learner now includes formal `TÍNH CHẤT` of vector addition (commutativity, associativity, zero) and scalar multiplication (two distributive identities and scalar associativity/identity), placed at O03/O05 before old examples. Active learner `fcac52eb1263eb3c91799a647aad184f08952d34`, affected Q18 `74f6661547f5a1a38ab8c103f85988a8ef9d8d2b`, A1 `88b46525111b9cbd8079e4e70a259937b8727826`; 10/10 targeted math/source/ID QA, original canonical preserved. AUTHORING CONTENT_READY remains; no RELEASE.
 
@@ -21,13 +30,13 @@ CATALOG_TOPIC_ID: CD13
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: b89f0309213a357768c4b3a94da474b6dbc0ac3c
+ACADEMIC_SOURCE_BLOB: 893829bacc3b4bae8c1463b1bdb0ebbd9857831f
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: df60f4ef23e6782f54c851f585789b210b6ea2a1
+REVIEW_RECEIPT_BLOB: 9c902eb7d5c8fcf5eb62690fa8e2b9a6c3d5cad7
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 6caa4e15bcfc2edaa7b547d3c6d51df86849953e
+AUTHOR_A1_A7_BLOB: 8cb53d363c0dc77d4b3c297115807e1d29118ccb
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 6caa4e15bcfc2edaa7b547d3c6d51df86849953e
+AUTHOR_METADATA_BLOB: 8cb53d363c0dc77d4b3c297115807e1d29118ccb
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC13_VECTORS_NEW20_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: c74505ba59d047c19943c2309f5fd7c033ac9563
 G10_SGK_CROSS_PR_DEPENDENCY: 750
