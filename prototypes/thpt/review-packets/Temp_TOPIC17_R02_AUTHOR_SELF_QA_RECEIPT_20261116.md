@@ -1,6 +1,28 @@
+<!-- TOP17_MASTER974_AUTHOR_Q18_CURRENT_20261121 -->
+## CĐ17 · current R03 source-targeted Q18 AUTHOR_SELF_VERIFIED (21/11/2026)
+
+**Effective learner** `f4ccf992d19ffe2f8680f99995e9b8a75cebfd66` at single existing learner path, previous signed `38aa934fc2422b342e314fabddca54a0eb679cce` immutable in Git history. **Q18 MODE: AUTHOR_SELF_VERIFIED v3.2.0** — not a fresh independent NotebookLM Academic/PED whole-Topic PASS.
+
+**Q01/Q02 Source scope:** original Toán 11 KNTT Tập Hai ChVII B26 printed54–60, B27 printed61–63, end exercise64–65 from G11 original custody `afc8ec039213b87b4930f2d34d48c28d1fc6277f`; SBT B26 35–37/B27 38–40/end41–43 historical source receipt. No fresh original scanned PDF visual inspection in this round, no independent whole-Topic S1 review claim. B22–B25 remain CĐ16.
+
+**Q03–Q14 mathematics/PED actual checked scope:** 12 original explanatory outcome families and 12 standalone worked examples, 12 original FirstTry question/answer mathematics kept unchanged. Distinctions checked: (1) perpendicular foot vs diagonal; (2) zero distance for point on plane; (3) point-to-plane distance constant for distinct parallel line; (4) parallel planes common normal; (5) skew common perpendicular with two proper feet, not merely perpendicular to one line; (6) regular-pyramid altitude h=√(5²−3²)=4; (7) oblique prism S=18,h=7 gives V126 independent of slant length10; (8) pyramid S18,h7 V42 not126; (9) cuboid2×3×4 V24, units cubed; (10) frustum with large square side6/small3/h4 V84 and 0≤k≤1 `V=48(1+k+k²)` endpoints48/84/144 for k=0/.5/1; (11) right-triangle-base prism (6·8/2)·7=168cm³=0.168L; (12) regular pyramid base side8, face altitude5 → true height3, V64. Original two SVG placements and their reading guides kept; no new model or JS mathematical code.
+
+**#977-055 Q08/PED6 FIXED_VERIFIED:** 12/12 original voluntary FirstTry `Đối chiếu` blocks have individually meaningful **Kiểm lỗi** with original misconception→exact Knowledge 1.1–2.6 subsection→two authentic matching current Practice numbered Bài, 24 verified total. Separate O10 extra voluntary k=0/.5/1 exploration disclosure and mathematical content unchanged. Q05 skew distance uses two-direction constraint, Q10 frustum requires similar bases.
+
+**#977-056 Q16/PED6 FIXED_VERIFIED:** 8 public question-only `P01,P02,P04,P05,P06,P08,P10,P12` are the **same** canonical IDs as previously displayed Practice Bài `12,13,15,16,17,30,32,34`; one voluntary final `Đối chiếu` gives learner exact answer location only after all questions, not a duplicate answer bank, independent held-out Topic Readiness, official Final Submit or Mastery.
+
+**#977-057 #864/Q15/Q17 FIXED_VERIFIED:** 37 actual original Practice display headings normalized from overlapping Bài SGK/Tự luận SGK/Bài luyện/Tự luận to unique contiguous **Bài luyện 1–37**. Entire **37/37 mathematical problem body+answer+solution including seven Written rubric bodies byte-identical** to prior `38aa934...` after removing display-title text only; original 8 question-only selfchecks byte exact, 49 canonical unique Q15 IDs untouched. Three outer Topic pages only: Kiến thức/Luyện tập/Tự kiểm tra, no Topic Core. One whole Topic SGK credit at end; original source owner bank not edited. **51 opens/51 closes** `details` (12 Knowledge+one extra O10 exploration+37 Practice+one optional Selfcheck lookup).
+
+**Original source-owner nonblocking P2:** `#977-054` applies to CĐ17's **18** existing G11 original solution bodies saying `Đáp án sau Submit luyện tập` despite voluntary source-reading `Lời giải`. Same text in original `afc8ec...`, unchanged to protect Q15 cross-placement. Requires original SGK owner source-equivalent edit + reconciliation of all active projections if desired. `P0=0`, `P1=0` in impacted source checks; `P2=1` inherited SGK owner wording pending. Not a false claim about website Submit.
+
+**Delta:** `DELTA_C_PED_TARGETED` for 12 real remediation routes + 8-answer-location support; `DELTA_A_EDITORIAL` for 37 captions and source credit. No math stems/keys/rubrics, original SGK bank, canonical register ID, SVG/model, RD1/assessment, learner/website/Firebase changed. Signed current Q18 → one A1 blob `c858c664abcf46168e38e8f470dcde1267bfbd7a` → one V2/ready/REGISTER after SHA relock. This is an AUTHORING source assessment, not RELEASE AP/R browser QA, CI, independent reviewer or owner deploy permission.
+
+`AUTHOR_SIGNOFF=TOP17_MASTER974_12_D6_37_PRACTICE_20261121_f4ccf992d19ffe2f8680f99995e9b8a75cebfd66`
+---
+
 # CĐ17 — Q18 receipt hiệu lực R03, lưu lịch sử R02 · 17/11/2026
 
-**AUTHOR_SELF_QA_RECEIPT** theo một chuẩn `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Đây là tự kiểm chứng học thuật/sư phạm từ bản nguồn học sinh R02 cụ thể, không phải kết quả phản biện NotebookLM độc lập, không cấp phép RELEASE/website.
+**AUTHOR_SELF_QA_RECEIPT** theo một chuẩn `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18. Đây là tự kiểm chứng học thuật/sư phạm từ bản nguồn học sinh R02 cụ thể, không phải kết quả phản biện NotebookLM độc lập, không cấp phép RELEASE/website.
 
 PACKET_ID: THPT-TOPIC17-DISTANCE-VOLUME-FULL-R02
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -9,10 +31,10 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 38aa934fc2422b342e314fabddca54a0eb679cce
-SOURCE_BLOB: 38aa934fc2422b342e314fabddca54a0eb679cce
+ACADEMIC_SOURCE_BLOB: f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
+SOURCE_BLOB: f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: 7d0f43a1ae6fb5ccce67baf3fda21ca4261f29d9
+AUTHOR_METADATA_BLOB: c858c664abcf46168e38e8f470dcde1267bfbd7a
 ORIGINAL_R00_SOURCE_BLOB: baa6c6c575a4cf79187b2aebd2047b1cf872b983
 ORIGINAL_R01_EDITORIAL_CANDIDATE_BLOB: af08791b4d7104679a3ea3481068266a07c72dce
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
@@ -21,8 +43,8 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-P2: 0
-AUTHOR_SIGNOFF: TOP17_G11_CHVII_B26_B27_FULL_KNOWLEDGE_38aa934fc2422b342e314fabddca54a0eb679cce
+P2: 1
+AUTHOR_SIGNOFF: TOP17_MASTER974_12_D6_37_PRACTICE_20261121_f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
 CONTENT_REVISION: R03
 BASELINE_R02_SIGNED_SOURCE_BLOB: 7cfc1c44d8f8aa722118d945900290fd560b621b
 BASELINE_R02_RECEIPT_GIT_BLOB: 5d55b6a38bf5bb4e81d099e05635001876c2a90a
