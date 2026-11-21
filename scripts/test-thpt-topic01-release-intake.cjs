@@ -39,7 +39,7 @@ for(const [file,sha] of images){assert.equal(blob(read("docs/assets/visuals/"+fi
 const overview=read("docs/thpt-preview/chuyen-de/index.md");
 assert(overview.includes('href="cd01/kien-thuc/"'),"Missing CĐ01 catalog entry");
 assert(overview.includes("mẫu kỹ thuật cũ"),"Existing legacy demo must be retained");
-for(const config of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){const text=read(config);for(const file of paths)assert(text.includes(file),"Missing official three-page nav in "+config);
+for(const config of ["mkdocs.yml","mkdocs.thpt-preview.yml"]){const text=read(config);for(const file of paths)assert(text.includes(file.replace(/^docs\//,"")),"Missing official three-page nav in "+config);
  assert(text.includes("thpt-topic01-release-tabs-v1.js")&&text.includes("thpt-topic01-release-v1.css"),"Missing two-level tab assets in "+config);
 }
 const js=read("docs/assets/javascripts/thpt-topic01-release-tabs-v1.js");
