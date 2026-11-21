@@ -18,6 +18,75 @@ _BLOCK = '<div class="tabbed-block">'
 _LABELS = re.compile(r'<div class="tabbed-labels">([\s\S]*?)</div>')
 _LABEL = re.compile(r'<label\b[^>]*>([\s\S]*?)</label>')
 _H2 = re.compile(r'<h2 class="thpt-g10-section-heading">')
+_HERO = re.compile(r'(<div class="thpt-r4-screen"[^>]*>)([\s\S]*?)(</div>)')
+_LEAD = re.compile(r'\s*<p class="thpt-r4-lead">[^<]*</p>')
+_OLD_NAV = re.compile(r'<nav class="thpt-r4-lesson-tabs">[\s\S]*?</nav>')
+_G11_ENDS = [4, 7, 9, 14, 17, 21, 27, 30, 33]
+
+
+def _nav_markup(src_uri: str):
+    """Mirror the one existing SGK runtime nav before first paint.
+
+    Relative URLs work both under GitHub project prefix and local MkDocs
+    preview. No canonical lesson URLs, user state or assessment are changed.
+    """
+    m = _ROUTE.fullmatch(src_uri)
+    if m is None:
+        return None
+    level, chapter, raw = m.groups()
+    grade = 10 if level is None else int(level[4:])
+    ends = _G10_ENDS if grade == 10 else _G11_ENDS
+    num = int(raw)
+    if grade not in (10, 11) or num < 1 or num > ends[-1]:
+        return None
+
+    def href(neighbor: int):
+        index = next(i for i, e in enumerate(ends) if neighbor <= e)
+        destination = _CHAPTERS[index]
+        return ("../" if destination == chapter else
+                "../../chuong-" + destination + "/") + "bai-" + str(neighbor) + "/"
+
+    def choice(label: str, kind: str, dest: str | None):
+        if dest is None:
+            return ('<span class="thpt-sgk-nav-unavailable" aria-disabled="true">' +
+                    label + '</span>')
+        return ('<a href="' + dest + '" data-sgk-lesson-link="' + kind +
+                '">' + label + '</a>')
+
+    return ('<nav class="thpt-r4-lesson-tabs thpt-sgk-lesson-nav" ' +
+            'data-sgk-lesson-nav="' + str(grade) + '-B' + str(num) +
+            '" aria-label="Điều hướng bài học theo SGK">' +
+            choice("← Bài trước", "previous", href(num - 1) if num > 1 else None) +
+            choice("Bài sau →", "next", href(num + 1) if num < ends[-1] else None) +
+            choice("Core và Luyện tập", "practice", "../luyen-tap/") +
+            choice("Tự kiểm tra", "selfcheck", "../tu-kiem-tra-chuong/") +
+            '</nav>')
+
+
+def _hero_first_paint(html: str, src_uri: str) -> str:
+    """Do the same *above-the-fold* layout work now done after JS starts.
+
+    The old JS removes only these decorative leads on G10 B01–B22 and
+    inserts/replaces one nav in every SGK lesson. Keep student narrative,
+    source IDs, diagrams and every text inside the four tabs unchanged.
+    """
+    matches = list(_HERO.finditer(html))
+    nav = _nav_markup(src_uri)
+    if len(matches) != 1 or nav is None or 'data-sgk-lesson-nav=' in html:
+        return html
+    hero = matches[0]
+    body = hero.group(2)
+    if '<div' in body or len(_OLD_NAV.findall(body)) > 1:
+        return html  # Unknown nested hero: fail-closed in on_post_page.
+    m = _ROUTE.fullmatch(src_uri)
+    level, _, raw = m.groups()
+    if level is None and int(raw) <= 22:
+        body = _LEAD.sub('', body)
+    body = _OLD_NAV.sub('', body)  # G11 B01 preexisting small nav.
+    new_hero = hero.group(1) + body + '\n' + nav + '\n' + hero.group(3)
+    return html[:hero.start()] + new_hero + html[hero.end():]
+
+
 
 
 def _classes(src_uri: str):
@@ -95,6 +164,8 @@ def on_post_page(output, page, config):
     if classes is None:
         return output
     rendered = _render_first_paint(output, classes)
+    if rendered != output:
+        rendered = _hero_first_paint(rendered, uri)
     # Published G10 B01-B27 and G11 B01 are known four-tab Golden routes.
     # Make a broken initial-HTML contract fail during MkDocs build, not after
     # deployment; the older G11 B02 is intentionally skipped until upgraded.
@@ -104,7 +175,8 @@ def on_post_page(output, page, config):
     if required and (
         rendered == output or
         'data-sgk-golden-first-paint="true"' not in rendered or
-        len(_H2.findall(rendered)) != 4
+        len(_H2.findall(rendered)) != 4 or
+        rendered.count('data-sgk-lesson-nav="') != 1
     ):
         raise RuntimeError("Golden first-paint build contract failed: " + uri)
     return rendered
