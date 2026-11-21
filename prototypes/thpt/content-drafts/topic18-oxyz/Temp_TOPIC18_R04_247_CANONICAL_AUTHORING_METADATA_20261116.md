@@ -1,17 +1,39 @@
+<!-- TOP18_MASTER974_CURRENT_A1_A7_20261121 -->
+## CĐ18 current AUTHORING A1–A7 source-snapshot 21/11/2026
+
+CURRENT_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
+CURRENT_SOURCE_COMMIT: af0993c1b636213f99bdd705e1e2132d2a19cf62
+CURRENT_STANDARD_ID: SLM-THPT-QUALITY-ONE
+CURRENT_STANDARD_VERSION: 3.2.0
+CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
+CURRENT_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
+CURRENT_DELTA: DELTA_C_PED_TARGETED_40_D6_80_MATH_LINKS_AND_O06_EXPLANATION; DELTA_A_EDITORIAL_40_VANDUNG_207_PRACTICE_12_REPLAY_LABELS
+CURRENT_PUBLIC_CANONICAL: 247 unique IDs exactly = 160 original G12 SGK (from original ChII 856a37bd16d2746ffc2e12906de18d1f4338a3b6 and ChV 11eb2834cfdb4a24685157f84666c2bb0767970a), 40 TOP18 FirstTry T01–T40, 40 original TOP18 Practice P01–P40 and seven Topic Written W01–W07; 12 extra public SelfCheck placements reuse P03/P07/P10/P14/P16/P17/P19/P22/P24/P29/P35/P40 at real Practice numbers 15/35/50/70/81/86/96/112/118/143/175/201, not extra items.
+CURRENT_SOURCE_QA: 40/40 Knowledge lesson/outcome math and Vận dụng stem/answer untouched, 40 individualized voluntary Kiểm lỗi passages mapping exact subsection and two mathematically relevant existing numbered Bài (80 valid references total); all 207/207 original complete learner Practice mathematical stems/answers/solutions and 47 original Written rubric bodies byte-exact vs frozen source 41daf40a3b639a3ef35e129099525137a05b1848, labels-only 207 sequential Bài luyện 1–207, 40 source-bank lead-in labels removed, 40 Vận dụng visible labels normalized, redundant "### 2." removed without deleting underlying math content; 12 public question-only items byte-exact, one voluntary after-12 answer-location disclosure; 10 SVG links/model unchanged; 248 balanced opt-in details, one SGK end source.
+CURRENT_O06_PED_NOTE: Original resultant example 3N/4N gives 5N, FirstTry 6N/8N gives 10N, source question bank P06 tests WORK =10J for force10N, displacement2m and angle60°. New concept distinction between vector resultant and work added, no canonical bank item stem/key changed.
+CURRENT_P0: 0
+CURRENT_P1: 0
+CURRENT_P2: 2 (older SBT_REFERENCE_GAP_DOCUMENTED_G12_CHV_B14_PRINTED_P25; new TOP22-20261121-062 original G12 source-owner 24 administrative Written/Mastery labels, pending coordinated canonical source edit)
+CURRENT_NOTEBOOKLM_INDEPENDENT_PASS: NOT_CLAIMED
+CURRENT_S1_Q01: G12 KNTT Tập Một ChII B06–B08 and Tập Hai ChV B14–B17 evidence INHERITED_SNAPSHOT_SCOPED from prior SGK owner/Git original; G12 SBT B14 printed p25 remains unavailable. No new direct PDF screenshot/page read or new source-proof claim.
+CURRENT_OFFICIAL_TOPIC_READINESS: NOT_CLAIMED; PUBLIC_SELF_CHECK=CLIENT_SELF_CHECK_NO_MASTERY; PRIVATE_RD1=UNCHANGED; FINAL_SUBMIT=UNCHANGED; WEBSITE=NOT_IN_SCOPE; RELEASE_AUTHORIZATION=NO
+---
+
 # CĐ18 · Oxyz · 247 canonical item–outcome–role–placement · AUTHORING R04
 
-**AUTHOR_Q18_MATH_PED_SELF_VERIFIED_ON_SOURCE / website NOT RELEASE_READY**. Standard: one `SLM-THPT-QUALITY-ONE v3.1.0` Q01–Q18. Source page S1 KNTT G12 ChII B06–B08 and G12 ChV B14–B17; G12 SBT ChV B14 printed p25 missing from original PDF; affected SBT exercise IDs 5.6–5.7 require separately verified source. No autonomous source equivalence or independent Topic NotebookLM PASS claimed.
+**AUTHOR_Q18_MATH_PED_SELF_VERIFIED_ON_SOURCE / website NOT RELEASE_READY**. Standard: one `SLM-THPT-QUALITY-ONE v3.2.0` Q01–Q18. Source page S1 KNTT G12 ChII B06–B08 and G12 ChV B14–B17; G12 SBT ChV B14 printed p25 missing from original PDF; affected SBT exercise IDs 5.6–5.7 require separately verified source. No autonomous source equivalence or independent Topic NotebookLM PASS claimed.
 
 PACKET_ID: THPT-TOPIC18-OXYZ-FULL-R04
 STATE: AUTHORING_R04_SELF_VERIFIED_SOURCE_ONLY
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 41daf40a3b639a3ef35e129099525137a05b1848
+ACADEMIC_SOURCE_BLOB: 8a2b6289fd5ccf1380c0b250b6ffecc34d25e355
 ORIGINAL_S1_CROSSWALK_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R01_S1_40_OUTCOME_160_SGK_CANONICAL_CROSSWALK_20261114.md
 ORIGINAL_S1_CROSSWALK_BLOB: 7cba588cfe60d3675df99d8aa7e4b9275da9690e
 S1_G12_CHII_BLOB: 856a37bd16d2746ffc2e12906de18d1f4338a3b6
