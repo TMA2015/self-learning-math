@@ -1,9 +1,12 @@
+<!-- OWNER_APPROVED_SHARED_G11_B22_B27_LABEL_EQUIVALENCE_CĐ17_V2_20261121 -->
+**CURRENT SOURCE_OWNER_PARITY:** Existing one CĐ17 learner `0ef0ad696e97d2549f29c5a22ba675970572a089`, original shared G11 SGK ChVII B22–27 one bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` matched EXACT identical blob in CĐ16 branch. Corrected all **18** original B26–B27 student `Đáp án sau Submit luyện tập` headings to `Đáp án`, matching 51/51 source-owner bank and 33 CĐ16 projection. All original 37 Practice mathematical stems, numeric/text answer values, worked solutions, 7 Written rubrics, 8 public same-ID selfchecks, 2 diagrams, Q16/Final Submit/Mastery unchanged; no duplicate SGK bank or new item version. Current Q18 `5f6fb06ac8751e59d08d22ba78ebeee829c28a55`, A1 `041ba48f0302b6b121fa2017f7ab6bc27d60443e`, V2 `current`; `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL` author-self check only, not independent whole Topic review or website RELEASE. Prior bank `afc8ec039213b87b4930f2d34d48c28d1fc6277f` immutable history.
+---
 <!-- TOP17_MASTER974_CURRENT_ONE_HANDOFF_20261121 -->
 ## CĐ17 R03 effective V2 custody (same R02 packet), current AUTHORING 21/11/2026
 
-CURRENT_LEARNER_BLOB: f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
-CURRENT_AUTHOR_Q18_BLOB: e040ecd6c0c7585e7497d8d418e4d2d43b1781cb
-CURRENT_AUTHOR_A1_A7_BLOB: c858c664abcf46168e38e8f470dcde1267bfbd7a
+CURRENT_LEARNER_BLOB: 0ef0ad696e97d2549f29c5a22ba675970572a089
+CURRENT_AUTHOR_Q18_BLOB: 5f6fb06ac8751e59d08d22ba78ebeee829c28a55
+CURRENT_AUTHOR_A1_A7_BLOB: 041ba48f0302b6b121fa2017f7ab6bc27d60443e
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 RELEASE_AUTHORIZATION: NO
@@ -29,13 +32,13 @@ CATALOG_TOPIC_ID: CD17
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_DISTANCE_VOLUME_R02_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: f4ccf992d19ffe2f8680f99995e9b8a75cebfd66
+ACADEMIC_SOURCE_BLOB: 0ef0ad696e97d2549f29c5a22ba675970572a089
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC17_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: e040ecd6c0c7585e7497d8d418e4d2d43b1781cb
+REVIEW_RECEIPT_BLOB: 5f6fb06ac8751e59d08d22ba78ebeee829c28a55
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: c858c664abcf46168e38e8f470dcde1267bfbd7a
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_TOPIC17_R02_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: c858c664abcf46168e38e8f470dcde1267bfbd7a
+AUTHOR_METADATA_BLOB: 041ba48f0302b6b121fa2017f7ab6bc27d60443e
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md
 ORIGINAL_SGK_SOURCE_BLOB: afc8ec039213b87b4930f2d34d48c28d1fc6277f
 INTERACTIVE_MODEL_PATH: prototypes/thpt/content-drafts/topic17-spatial-distance-volume/Temp_THPT_TOPIC17_FRUSTUM_VOLUME_MODEL_R00_20261113.html
