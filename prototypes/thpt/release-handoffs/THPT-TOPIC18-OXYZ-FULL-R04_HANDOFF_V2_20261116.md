@@ -1,9 +1,12 @@
+<!-- OWNER_APPROVED_SHARED_G12_CHV_WRITTEN_24_STAFF_NOTE_REMOVAL_V2_20261121 -->
+**CURRENT EXACT SOURCE_EQUIVALENT AUTHORING:** Same one CĐ18 original R04 learner `d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960` and original G12 SGK ChV B14–B17 shared bank `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39` (matching source-owner #725 and CĐ18 branch hash). All **24** original `- **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery...` staff-only visible prose removed from original shared SGK canonical and exactly 24 Topic projected Written answers. In SGK canonical there is now ONE hidden `Q16_AUTHORING_ONLY` metadata comment retaining the existing no self-graded Mastery policy; Topic source keeps `NO_MASTERY` Q16 controls. Original **24/24 original Written rubric mathematical criteria/point weights and solutions byte-for-byte unchanged** once removing the one staff sentence; remaining 183 Practice question/answer bodies untouched, all 247 original canonical public IDs, 40 FirstTry, 12 public question-only selfcheck, 10 SVG and W07 anti-spoiler preserved. Historical G12 SBT B14 page25 source provenance remains P2 not claimed solved. Q18 `3a0cbbfb74252787f08c9504de9018c7e58bf8a1`, A1 `baac29f51c2bbc7a66d95f39680c6d7be285916d`, V2 `current`; `DELTA_B_SOURCE_EQUIVALENT` (student-only editorial). No full independent NotebookLM Topic PASS or website release/merge/deploy.
+---
 <!-- TOP18_MASTER974_CURRENT_V2_W07_SOURCE_LOCK_20261121 -->
 ## CĐ18 effective V2: W07 no-solution-before-try patch & custody (21/11/2026)
 
-CURRENT_R04_LEARNER_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
-CURRENT_AUTHOR_Q18_BLOB: 92c8d449b242f5f1fea9b7e4a7b1830d0396b1b6
-CURRENT_A1_A7_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
+CURRENT_R04_LEARNER_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
+CURRENT_AUTHOR_Q18_BLOB: 3a0cbbfb74252787f08c9504de9018c7e58bf8a1
+CURRENT_A1_A7_BLOB: baac29f51c2bbc7a66d95f39680c6d7be285916d
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
@@ -19,9 +22,9 @@ Current original SGK G12 ChII `856a37bd16d2746ffc2e12906de18d1f4338a3b6` and ChV
 <!-- TOP18_MASTER974_CURRENT_V2_AUTHORING_20261121 -->
 ## Current effective ONE CĐ18 R04 V2 handoff — 21/11/2026
 
-CURRENT_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+CURRENT_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
 CURRENT_AUTHOR_Q18_BLOB: 92c8d449b242f5f1fea9b7e4a7b1830d0396b1b6
-CURRENT_AUTHOR_A1_A7_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
+CURRENT_AUTHOR_A1_A7_BLOB: baac29f51c2bbc7a66d95f39680c6d7be285916d
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 CURRENT_Q18_MODE: AUTHOR_SELF_VERIFIED
@@ -47,13 +50,13 @@ CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_OXYZ_R04_LEARNER_FIRST_20261116.md
-ACADEMIC_SOURCE_BLOB: 19d9b2d2f1dd2ec59750d92d9835cd111207ed4d
+ACADEMIC_SOURCE_BLOB: d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC18_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: 92c8d449b242f5f1fea9b7e4a7b1830d0396b1b6
+REVIEW_RECEIPT_BLOB: 3a0cbbfb74252787f08c9504de9018c7e58bf8a1
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
 AUTHOR_A1_A7_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R04_247_CANONICAL_AUTHORING_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: b11c3441d2e7f3ce364f9f8389bff662f4bff6be
+AUTHOR_METADATA_BLOB: baac29f51c2bbc7a66d95f39680c6d7be285916d
 Q01_FAMILY_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q01_SGK_PROBLEM_FAMILY_SCOPE_AUDIT_20261114.md
 Q01_FAMILY_AUDIT_BLOB: 052b06ea90d6191f125aef72f42d74dd9a6d86c8
 Q18_OUTCOME_ITEM_PED_AUDIT_PATH: prototypes/thpt/content-drafts/topic18-oxyz/Temp_TOPIC18_R02_Q18_40_OUTCOME_MATH_PED_ITEM_AUDIT_20261114.md
