@@ -806,7 +806,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 35°
+**Đáp án:** 35°
 
 **Lời giải và vì sao:** Góc giữa hai đường thẳng là góc không tù: 180°−145°=35°.
 
@@ -817,7 +817,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Góc vuông là quan hệ giữa phương; đường chéo nhau vẫn có thể có hai phương vuông góc.
 
@@ -828,7 +828,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 90°
+**Đáp án:** 90°
 
 **Lời giải và vì sao:** Đường song song giữ phương nên giữ góc với b.
 
@@ -839,7 +839,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Có, góc giữa hai phương bằng 90°
+**Đáp án:** Có, góc giữa hai phương bằng 90°
 
 **Lời giải và vì sao:** Chuyển một thanh bằng đường song song đến cùng điểm; không cần chúng cắt nhau.
 
@@ -850,7 +850,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Qua một điểm chung dựng hai đường lần lượt song song hai đường ban đầu, đo góc không tù giữa chúng.
+**Đáp án:** Qua một điểm chung dựng hai đường lần lượt song song hai đường ban đầu, đo góc không tù giữa chúng.
 
 **Lời giải và vì sao:** Hình thức tịnh tiến hướng, không biến hai đường thật thành đồng phẳng.
 
@@ -861,7 +861,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 0°
+**Đáp án:** 0°
 
 **Lời giải và vì sao:** AB//D′C′, hai đường song song trong không gian.
 
@@ -872,7 +872,7 @@ Em hãy giải bằng hình học và suy luận, ghi rõ điều kiện của t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Trong hộp chữ nhật AB⊥CC′ dù không cắt nhau.
+**Đáp án:** Trong hộp chữ nhật AB⊥CC′ dù không cắt nhau.
 
 **Lời giải và vì sao:** Vì CC′//AA′ và AA′⊥AB.
 
@@ -978,7 +978,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Chưa đủ
+**Đáp án:** Chưa đủ
 
 **Lời giải và vì sao:** Định nghĩa đòi vuông góc mọi phương nằm trong mặt; một phương chưa đủ.
 
@@ -989,7 +989,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** d⊥(P)
+**Đáp án:** d⊥(P)
 
 **Lời giải và vì sao:** Hai phương cắt nhau đủ theo điều kiện xác định đường vuông góc mặt phẳng.
 
@@ -1000,7 +1000,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Đường e giữ phương vuông góc (P) của d.
 
@@ -1011,7 +1011,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Không; d//e hoặc d=e
+**Đáp án:** Không; d//e hoặc d=e
 
 **Lời giải và vì sao:** Hai đường cùng phương pháp tuyến. Nếu cùng đi qua một điểm thì chúng trùng, nếu khác đường thì song song.
 
@@ -1022,7 +1022,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Cột vuông góc nền
+**Đáp án:** Cột vuông góc nền
 
 **Lời giải và vì sao:** Vì hai thanh thuộc nền cắt nhau và cột vuông góc cả hai.
 
@@ -1033,7 +1033,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Có.
+**Đáp án:** Có.
 
 **Lời giải và vì sao:** Mặt song song có các phương trong mặt giống nhau; pháp tuyến chung.
 
@@ -1044,7 +1044,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Không chắc.
+**Đáp án:** Không chắc.
 
 **Lời giải và vì sao:** Thiếu hai phương cắt nhau/độc lập trong mặt phẳng.
 
@@ -1055,7 +1055,7 @@ Trong lập phương, AB và D cùng nằm ở mặt đáy (ABCD) nhưng D khôn
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Hai đường cùng vuông góc một mặt chỉ có thể song song hoặc trùng nhau.
 
@@ -1157,7 +1157,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** H là hình chiếu vuông góc của M lên (P)
+**Đáp án:** H là hình chiếu vuông góc của M lên (P)
 
 **Lời giải và vì sao:** Vị trí chân đường vuông góc xác định hình chiếu.
 
@@ -1168,7 +1168,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Một điểm
+**Đáp án:** Một điểm
 
 **Lời giải và vì sao:** Mọi điểm trên l chiếu đến cùng chân l∩(P).
 
@@ -1179,7 +1179,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** a⊥b
+**Đáp án:** a⊥b
 
 **Lời giải và vì sao:** Định lí ba đường vuông góc cho phép chuyển góc với hình chiếu sang góc với đường xiên.
 
@@ -1190,7 +1190,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Góc giữa AB và AC (góc nhỏ)
+**Đáp án:** Góc giữa AB và AC (góc nhỏ)
 
 **Lời giải và vì sao:** Hình chiếu đưa bài toán 3D về góc trong tam giác phẳng chứa đường xiên.
 
@@ -1201,7 +1201,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 5/13
+**Đáp án:** 5/13
 
 **Lời giải và vì sao:** sinθ=h/độ dài xiên=5/13, không lấy h/độ dài hình chiếu.
 
@@ -1212,7 +1212,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 55°.
+**Đáp án:** 55°.
 
 **Lời giải và vì sao:** Hai góc phụ nhau do phương thẳng đứng vuông góc mặt nền.
 
@@ -1223,7 +1223,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 4m.
+**Đáp án:** 4m.
 
 **Lời giải và vì sao:** Tam giác vuông, cạnh hình chiếu bằng √(25−9)=4m.
 
@@ -1234,7 +1234,7 @@ d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Hình chiếu là thành phần nằm trong mặt; AH là thành phần vuông góc.
 
@@ -1351,7 +1351,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 75°
+**Đáp án:** 75°
 
 **Lời giải và vì sao:** Góc hai mặt là góc không tù giữa các pháp tuyến.
 
@@ -1362,7 +1362,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** 55°
+**Đáp án:** 55°
 
 **Lời giải và vì sao:** Hai mặt chứa hai nửa mặt tạo góc không tù bằng 180°−125°.
 
@@ -1373,7 +1373,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Tiêu chí đủ: một mặt chứa đường vuông góc với mặt kia.
 
@@ -1384,7 +1384,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Định lí quan hệ vuông góc giữa hai mặt đã vuông góc; kiểm a nằm trong (P).
 
@@ -1395,7 +1395,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Có
+**Đáp án:** Có
 
 **Lời giải và vì sao:** Định nghĩa lăng trụ đều: lăng trụ đứng có đáy đa giác đều.
 
@@ -1406,7 +1406,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Tại O
+**Đáp án:** Tại O
 
 **Lời giải và vì sao:** Đường cao chóp đều đi qua tâm đa giác đáy.
 
@@ -1417,7 +1417,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Song song, đồng dạng, đều
+**Đáp án:** Song song, đồng dạng, đều
 
 **Lời giải và vì sao:** Các mặt cắt song song đáy của một chóp đều tạo các đa giác đều đồng dạng.
 
@@ -1428,7 +1428,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Góc hai mặt phẳng theo định nghĩa nằm trong [0°,90°]; 130° có thể là góc phẳng của góc nhị diện.
 
@@ -1439,7 +1439,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Đường cao qua đỉnh S tới tâm O đáy mới vuông góc đáy; cạnh SA thường xiên.
 
@@ -1450,7 +1450,7 @@ SA⊥(ABC) nên SA⊥BC; AH⊥BC đã cho. Hai đường SA, AH cắt tại A, t
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án sau Submit luyện tập:** Không.
+**Đáp án:** Không.
 
 **Lời giải và vì sao:** Lăng trụ đều còn đòi đáy là đa giác đều.
 
