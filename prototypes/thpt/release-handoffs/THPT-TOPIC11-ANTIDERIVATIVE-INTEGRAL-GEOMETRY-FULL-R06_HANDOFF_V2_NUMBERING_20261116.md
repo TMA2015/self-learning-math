@@ -1,9 +1,16 @@
+<!-- TOP11_MASTER974_CURRENT_ONE_V2_20261121 -->
+## CURRENT AUTHORING CĐ11 ONE V2 — existing R06 learner / Q18 SELF_VERIFIED v3.2.0
+
+One current source `prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md` Git blob **`9c27c384af7fad186047aed555ef1a9877c6a30a`**; existing one Q18 `a6c64c4d9280fbde9752598190206ff1a8e82fca`, author-only custody `cfdcd049c6b1ae66d61f87f10fd4b40da3c7c1f2`. S1 original88 SGK index `672fdce0c02ebf4f6ae6b37b331ca59e259d9b5c` and current same original NEW28 Topic bank `6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0` intact. Student source fixes #977-036…038: 22 differentiated first-try opt-in error→knowledge→actual Practice task recovery, 22 public-replay question-only prompts map exact `item_id` to original Practice answer Bài in one optional final `Đối chiếu`, exactly one SGK source footer, all metadata hidden. Full original **116 original canonical Practice** stems/keys/solutions including **28 Written rubrics**, 22 public selfcheck question-only stems and four SVG untouched. **139/139 voluntary disclosures balanced**, no copied key or RD1/official independent Readiness/Mastery. Current author Q18 verifies affected pedagogical Delta C, original S1 and mathematical content proof inherited only for unchanged source; no new external NotebookLM full Topic verdict, browser AP/R, Firebase, merge/deploy.
+
+---
+
 # CĐ11 — Nguyên hàm, Tích phân, Ứng dụng hình học · AUTHORING HANDOFF V2 R01
 
 PACKET_ID: THPT-TOPIC11-ANTIDERIVATIVE-INTEGRAL-GEOMETRY-FULL-R01
 CONTENT_REVISION: R06_FULL_S1_20261120
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 0e78f0a4b19f4af4c2142b2efb1beb4dbe2b003c
+AUTHOR_METADATA_BLOB: cfdcd049c6b1ae66d61f87f10fd4b40da3c7c1f2
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -11,9 +18,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: c46d07f8f7d260a71e84bf8c44677da895cb66cc
+ACADEMIC_SOURCE_BLOB: 9c27c384af7fad186047aed555ef1a9877c6a30a
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC11_R06_CURRENT_SOURCE_AUTHOR_Q18_AFFECTED_DELTA_20261118.md
-REVIEW_RECEIPT_BLOB: c9e56423f647e53a2c2ef1171a45d702e31d73ae
+REVIEW_RECEIPT_BLOB: a6c64c4d9280fbde9752598190206ff1a8e82fca
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_NEW28_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0
 PUBLIC_ORIGINAL88_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC11_INTEGRALS_ORIGINAL88_SGK_CANONICAL_INDEX_R01_20261112.md
