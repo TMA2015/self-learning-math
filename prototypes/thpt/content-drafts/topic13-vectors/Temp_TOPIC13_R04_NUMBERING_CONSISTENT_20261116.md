@@ -35,6 +35,11 @@ Không: cùng độ dài nhưng ngược hướng.
 
 **Khi làm sai:** Nếu chỉ so số 4, vẽ đuôi và đầu mũi tên rồi so **chiều**, không so mỗi độ dài.
 
+
+**Kiểm lỗi**
+
+Nếu em chỉ so độ dài mà quên hướng, đọc **Kiến thức 1.1** rồi làm **Bài luyện 33** (cùng hướng) và **Bài luyện 9** (nhân số âm đổi chiều). Mũi tên ngược chiều không phải vectơ bằng nhau.
+
 </details>
 
 ### 1.2. Cùng phương, cùng hướng và vectơ bằng nhau
@@ -66,6 +71,11 @@ Với hai vectơ khác không, cùng phương nghĩa là có giá song song ho�
 BC, vì cùng hướng và độ dài; CB là vectơ đối.
 
 **Khi làm sai:** Nếu nhầm BC/CB, đọc mũi tên từ điểm đầu đến điểm cuối trước khi dùng tính chất hình bình hành.
+
+
+**Kiểm lỗi**
+
+Nếu em đọc \(\overrightarrow{CB}\) như \(\overrightarrow{BC}\), đọc **Kiến thức 1.2**, làm **Bài luyện 3** và **Bài luyện 33**. Kiểm riêng điểm đầu, điểm cuối, phương, chiều và độ dài.
 
 </details>
 
@@ -105,6 +115,11 @@ Vì mũi tên tổng cho biết đúng **độ dời cuối cùng**, đổi th�
 
 **Khi làm sai:** Nếu chọn 14 m, vẽ đường thẳng nối điểm xuất phát với đích: đó mới là độ dời.
 
+
+**Kiểm lỗi**
+
+Nếu em cộng quãng đường thay cho độ dài độ dời, đọc **Kiến thức 1.3**, làm **Bài luyện 5** (Chasles) và **Bài luyện 35** (đi hai chặng). Độ dời nối điểm đầu với điểm cuối, không phải tổng mọi đoạn đã đi.
+
 </details>
 
 ### 1.4. Hình bình hành và phép trừ vectơ
@@ -128,6 +143,11 @@ Hai lực xuất phát tại cùng một điểm thường được vẽ thành 
 RQ.
 
 **Khi làm sai:** Nếu ra QR, thay tọa độ đơn giản để kiểm chiều của kết quả.
+
+
+**Kiểm lỗi**
+
+Nếu em đổi chiều \(\overrightarrow{RQ}\) thành \(\overrightarrow{QR}\), đọc **Kiến thức 1.4**, làm **Bài luyện 7** và **Bài luyện 36**. Viết phép trừ thành cộng vectơ đối rồi đối chiếu tọa độ cuối trừ đầu.
 
 </details>
 
@@ -172,6 +192,11 @@ Khi cần mô tả một độ dời theo **hai phương đã biết**, ta có t
 
 **Khi làm sai:** Nếu ghi −6, nhớ độ dài không thể âm; lấy |k| trước.
 
+
+**Kiểm lỗi**
+
+Nếu em ghi độ dài \(|-3\vec u|=-6\) hoặc nói vectơ cùng chiều, đọc **Kiến thức 1.5**, làm **Bài luyện 9** và **Bài luyện 37**. Độ dài nhân \(|k|\), dấu âm chỉ làm ngược hướng vectơ khác không.
+
 </details>
 
 ### 1.6. Trung điểm và trọng tâm từ sự cân bằng vectơ
@@ -195,6 +220,11 @@ Muốn tìm vị trí cân bằng của hai hay ba điểm, lấy trung bình đ
 G=(1,2).
 
 **Khi làm sai:** Nếu lấy trung bình ba độ dài cạnh, hãy nhớ mỗi tọa độ của G là trung bình ba tọa độ tương ứng.
+
+
+**Kiểm lỗi**
+
+Nếu em lấy trung bình độ dài thay vì tọa độ đỉnh, đọc **Kiến thức 1.6**, làm **Bài luyện 8** và **Bài luyện 38**. Trung điểm và trọng tâm là các tổ hợp vectơ của vị trí các đỉnh.
 
 </details>
 
@@ -222,6 +252,11 @@ Trên bản đồ tọa độ, chuyển động từ A đến B được mô t�
 
 **Khi làm sai:** Nếu ra (6,−4), em đã tính \(\overrightarrow{BA}\); hãy viết “cuối trừ đầu” bên cạnh phép tính.
 
+
+**Kiểm lỗi**
+
+Nếu em tính A−B thay vì B−A, đọc **Kiến thức 2.1**, làm **Bài luyện 13** và **Bài luyện 39**. Viết rõ tọa độ điểm cuối trừ điểm đầu rồi mới tính độ dài.
+
 </details>
 
 ### 2.2. Độ dài, khoảng cách và cùng phương trong Oxy
@@ -245,6 +280,11 @@ Trên bản đồ tọa độ, chuyển động từ A đến B được mô t�
 Cùng phương nhưng ngược hướng vì v=−u/2.
 
 **Khi làm sai:** Nếu dựa vào định thức bằng 0 để chọn cùng hướng, cần kiểm tiếp dấu của hệ số tỉ lệ.
+
+
+**Kiểm lỗi**
+
+Nếu em suy cùng hướng chỉ từ định thức bằng 0, đọc **Kiến thức 2.2**, làm **Bài luyện 16** và **Bài luyện 40**. Cùng phương vẫn có thể ngược hướng khi hệ số tỉ lệ âm.
 
 </details>
 
@@ -270,6 +310,11 @@ Nếu một người dùng lực kéo ngang mà vật chỉ chuyển thẳng đ�
 
 **Khi làm sai:** Nếu nhân thành 10 J, còn thiếu cos của góc giữa hai vectơ.
 
+
+**Kiểm lỗi**
+
+Nếu em nhân \(5\cdot2\) mà quên góc lực–độ dời, đọc **Kiến thức 2.3**, làm **Bài luyện 18** và **Bài luyện 41**. Công bằng tích vô hướng, cần hệ số \(\cos\theta\).
+
 </details>
 
 ### 2.4. Tích vô hướng trong Oxy và cách kiểm vuông góc
@@ -293,6 +338,11 @@ Hình tọa độ không phải lúc nào cũng đủ chính xác để nhìn m�
 Có, tích 1×4+2×(−2)=0.
 
 **Khi làm sai:** Nếu cộng thành phần thay vì nhân từng cặp, xem lại hai trục tọa độ vuông góc.
+
+
+**Kiểm lỗi**
+
+Nếu em cộng các thành phần thay vì nhân từng cặp tọa độ khi kiểm vuông góc, đọc **Kiến thức 2.4**, làm **Bài luyện 19** và **Bài luyện 42**. Chỉ khi cả hai vectơ khác không mới suy góc 90° từ tích vô hướng bằng 0.
 
 </details>
 
@@ -324,6 +374,11 @@ C' vì còn một bước theo chiều cao AA'.
 
 **Khi làm sai:** Nếu chọn C, nhìn ký hiệu dấu phẩy ở đỉnh và vẽ ba mũi tên theo thứ tự.
 
+
+**Kiểm lỗi**
+
+Nếu em dừng tại đỉnh C thay vì C′ khi còn vectơ \(\overrightarrow{AA'}\), đọc **Kiến thức 3.1**, làm **Bài luyện 22** và **Bài luyện 43**. Hãy đi đủ ba phương trong hình hộp và phân biệt vectơ đường chéo với độ dài 13.
+
 </details>
 
 ### 3.2. Chasles, trung điểm và trọng tâm vẫn đúng trong không gian
@@ -353,6 +408,11 @@ Trong không gian, **trọng tâm của tứ diện** không chỉ là trung bì
 \(\overrightarrow{AC}=(-2,1,3)\).
 
 **Khi làm sai:** Nếu trừ vì nghĩ chiều BC ngược AB, nhớ quy tắc đường đi là cộng nối tiếp.
+
+
+**Kiểm lỗi**
+
+Nếu em trừ \(\overrightarrow{BC}\) vì nhìn hai mũi tên khác chiều trên hình, đọc **Kiến thức 3.2**, làm **Bài luyện 23** và **Bài luyện 44**. Quy tắc ba điểm vẫn là \(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\).
 
 </details>
 
@@ -396,6 +456,11 @@ Có: dot=1−1+0=0, cả hai khác không.
 
 **Khi làm sai:** Nếu hình xiên đánh lừa thị giác, dùng phép tích vô hướng.
 
+
+**Kiểm lỗi**
+
+Nếu em tin trực giác hình xiên mà không kiểm tích vô hướng, đọc **Kiến thức 3.3**, làm **Bài luyện 42** và **Bài luyện 45**. Tính tổng ba tích thành phần; dùng góc chỉ khi hai vectơ khác không.
+
 </details>
 
 ### 3.4. Oxyz: tọa độ điểm khác tọa độ vectơ
@@ -430,6 +495,11 @@ Có: dot=1−1+0=0, cả hai khác không.
 
 **Khi làm sai:** Nếu đổi dấu tất cả, bạn đã làm A−B thay vì B−A.
 
+
+**Kiểm lỗi**
+
+Nếu em viết tọa độ điểm B thay vì tọa độ \(\overrightarrow{AB}\), đọc **Kiến thức 3.4**, làm **Bài luyện 25** và **Bài luyện 46**. Phân biệt vị trí so với O với độ dời B−A.
+
 </details>
 
 ### 3.5. Cộng, tính độ dài và điểm cân bằng trong Oxyz
@@ -462,6 +532,11 @@ G=(2,1,3).
 
 **Khi làm sai:** Nếu z=9, bạn đã quên chia z cho 3.
 
+
+**Kiểm lỗi**
+
+Nếu em chia tọa độ trọng tâm sai hoặc nhầm khoảng cách với vectơ, đọc **Kiến thức 3.5**, làm **Bài luyện 31** và **Bài luyện 47**. Trung điểm lấy trung bình từng tọa độ, độ dài luôn là một số không âm.
+
 </details>
 
 ### 3.6. Độ dời, quãng đường và công trong ứng dụng ba chiều
@@ -485,6 +560,11 @@ Drone bay qua hai chặng có thể trở gần điểm xuất phát dù đã đ
 Độ dài độ dời 0 m, quãng đường 2 m.
 
 **Khi làm sai:** Nếu trả lời cả hai bằng 0, bạn đang triệt tiêu cả quãng đường; chỉ vectơ mới triệt tiêu.
+
+
+**Kiểm lỗi**
+
+Nếu em cho quãng đường bằng 0 khi hai chặng triệt tiêu vectơ, đọc **Kiến thức 3.6**, làm **Bài luyện 48** và **Bài luyện 52**. Cộng vectơ cho độ dời; cộng **độ dài** mỗi chặng mới là quãng đường.
 
 </details>
 
