@@ -43,6 +43,18 @@ with sync_playwright() as pw:
      assert p.locator("img[src*='THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg']").count()==1
      assert p.locator("img[src*='THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg']").count()==1
     elif part=="luyen-tap":
+     if p.locator("[data-topic01-practice-card]").count()!=24:
+      debug=p.evaluate("""() => ({
+       marker:!!document.querySelector('[data-topic01-practice-start]'),
+       end:!!document.querySelector('[data-topic01-practice-end]'),
+       article:!!document.querySelector('[data-topic01-practice-start]')?.closest('.md-typeset'),
+       h2:[...document.querySelectorAll('article.md-typeset h2, .md-typeset > h2')].slice(-10).map(x=>x.textContent.slice(0,60)),
+       sourceBai:[...document.querySelectorAll('.md-typeset p > strong')].filter(x=>/^Bài\\s+\\d+\\./.test(x.textContent)).length,
+       golden:!!window.THPT_GOLDEN_RUNTIME,
+       library:!!document.querySelector('script[src*="thpt-topic01-release-tabs"]'),
+       ready:document.querySelector('[data-topic01-practice-start]')?.dataset.ready||null
+      })""")
+      raise AssertionError((engine,width,"Golden 24-card source projection failed",debug))
      p.locator("[data-topic01-practice-card]").first.wait_for(timeout=15000)
      assert p.locator("[data-topic01-practice-card]").count()==24,(engine,width,"24 Golden cards")
      assert p.locator("[data-topic01-source-shelf]").count()==1,(engine,width,"source shelf")
