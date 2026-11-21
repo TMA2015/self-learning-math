@@ -1,14 +1,27 @@
+<!-- TOP03_MASTER974_12_PUBLIC_SELFCHK_MAP_AND_O01_D6_20261121 -->
+## CĐ03 · Q18 AUTHOR_SELF_VERIFIED targeted learner PED6 navigation — 21/11/2026
+
+**Active one canonical source** `prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md`, **current blob** `38f41f013e75b42605d7a88f9205c20af6315a41`, previous source blob `9df43259cfb61646ec1d60c036e360c40417daae`. Standard `SLM-THPT-QUALITY-ONE v3.2.0`. Reused existing Q18 file, did not open another reviewer receipt. Previous deep direct author math/PED audit of 31 original public items and 12 outcome lines `Temp_TOPIC03_R06_DIRECT_ACADEMIC_PED_31_ITEMS_20261121.md` blob `e1b7668fc5f87d64a56f4e6199f6dac5159cb305` remains scope-locked to old source for unchanged math, not retroactively relabeled as current independent NotebookLM PASS. S1 direct image scan scope G10 KNTT T2 B17 printed p19–24/B18 p25–27 `b777fd99df1cfe6f79184e1e0df352a1d45b118c` inherited.
+
+**Reproduced current student defects #977 TOP22-20261121-011/012:** (a) TOP03-O01 `Vận dụng` earlier gave math solution and examples of loss of equivalence but no concrete return-to-Practice. Now one `Kiểm lỗi` **inside the already opt-in O01 disclosure** says why a one-way squaring step needs original check and directs to `Kiến thức 1.1` and actual `Bài 1/2`. Both exercises inspected: B1 `2x+6=14` reversible operations, B2 `x=3` vs `x²=9` inverse invalid because ±3; original stem/key/solution unchanged. (b) After 12 real public selfcheck stems, a **single opt-in `Đối chiếu`** maps Câu 1–12 to existing Practice Bài `1,3,5,7,9,11,19,14,13,17,28,26` in this order. Checked **12/12 exact `PUBLIC_REPLAY_ONLY item_id` ↔ `DISPLAY_ONLY_CANONICAL item_id`** matching Bài numbers. Guidance explicitly says self-try before opening, correction back to learning, `CLIENT_SELF_CHECK_NO_MASTERY`, no separate scoring or readiness. No answer/rubric cloned to selfcheck; original 12 selfcheck question stems unchanged.
+
+**Source parity QA:** exact inverse-diff test shows **only one inserted O01 D6 explanation plus one inserted selfcheck disclosure**; source Knowledge otherwise unchanged, **Practice whole section byte-identical** (31 original canonical public questions, 4 Written rubrics 5/6/7/7, original source item paths), 3 original SVG refs unchanged, 12 question-only selfcheck stems unchanged. Current source has 12 Knowledge outcomes, 31 numbered Practice, 12 public selfcheck questions, 44/44 balanced opt-in `details` (12 FirstTry, 31 Practice, 1 final navigation), one SGK source credit at end. No official RD1/Final Submit/Mastery or website changes. Two verified P2 fixes = `DELTA_C_PED_TARGETED` Q08/Q14/Q17, **AUTHOR_SELF_VERIFIED** at affected scope with P0/P1=0 *in this inspected delta*. Old independent review scope not extended to new source.
+
+**Result and gate:** Targeted D6 / navigation no longer blocks autonomous replay/remediation; Q01–Q18 full mathematical source evidence is inherited for **unchanged** source from original 21/11 author direct audit, and all changes above are separately self-verified. One learner canonical, same Packet ID / V2 / ready / REGISTER to be locked to new SHA. No new independent NotebookLM pass; no merge/deploy.
+
+---
+
 # CĐ03 — Q18 AUTHOR_SELF_VERIFIED for current learner draft, D6 + Example + formal knowledge · 18/11/2026
 
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 CONTENT_REVISION: R06
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
-ACADEMIC_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
+SOURCE_BLOB: 38f41f013e75b42605d7a88f9205c20af6315a41
+ACADEMIC_SOURCE_BLOB: 38f41f013e75b42605d7a88f9205c20af6315a41
 PREVIOUS_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R05_FULL_LEARNER_VISIBLE_31_CANONICAL_20261115.md
 PREVIOUS_SOURCE_BLOB: 05e9675a7dca802aa9540a96a46d76d013055d8b
 PREVIOUS_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
@@ -18,12 +31,12 @@ AUTHOR_QA_H2_H3_SEQ: PASS
 AUTHOR_QA_OUTCOMES: 12/12
 AUTHOR_QA_CANONICAL: 31/31 EXACT_ITEM_ID_STEM_KEY_SOLUTION_RUBRIC; 11 D6 REMEDIAL_DESTINATIONS_REVISED
 AUTHOR_QA_SELFCHECK: 12/12 QUESTION_ONLY_PRESERVED
-AUTHOR_QA_REVEAL_CONTENT: SAME_43_DISCLOSURES; 11 D6 DESTINATIONS_UPDATED; OTHER ANSWER/SOLUTION/RUBRIC UNCHANGED
+AUTHOR_QA_REVEAL_CONTENT: 44_VALID_DISCLOSURES_12_FIRST_TRY_31_PRACTICE_1_PUBLIC_SELFCHECK_NAV
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-AUTHOR_SIGNOFF: TOP03_ONE_DRAFT_Q18_FORMAL_SOURCE_41b070e06267a5486f00ff977e164c4198f387d4
+AUTHOR_SIGNOFF: TOP03_MASTER974_PED6_SOURCE_DIRECT_31_CANONICAL_20261121_38f41f013e75b42605d7a88f9205c20af6315a41
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_IMPORTED: 0
 OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
