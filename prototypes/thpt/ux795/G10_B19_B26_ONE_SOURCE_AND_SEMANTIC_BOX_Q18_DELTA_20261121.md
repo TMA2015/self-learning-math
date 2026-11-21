@@ -1,6 +1,6 @@
 # G10 SGK B19–B26 · One source, no redundant prose, correct SGK semantic cards
 
-**RECEIPT_ID:** `G10-B19-B26-ONE-SOURCE-SEMANTIC-Q18-20261121`
+**RECEIPT_ID:** G10-B19-B26-ONE-SOURCE-SEMANTIC-Q18-20261121
 **DECISION:** owner 21/11/2026 — remove duplicated source footer in B23–B26 and all earlier affected lessons; remove B26 meta-explanation; box ONLY SGK concepts, definitions, properties, formulas and principles, not an application calculation.
 **SINGLE_ANTI_REPEAT_LEDGER:** Issue [#795](https://github.com/TMA2015/self-learning-math/issues/795), IDs `SGK-G0-SOURCE-DUPLICATE-20261121`, `SGK-G0-REDUNDANT-META-TEXT-20261121`, `SGK-G0-SEMANTIC-BOX-ROLE-20261121`. This file is a Q18 *source receipt*, not another checklist.
 **STANDARD:** SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18; G0–G5; preserve canonical Q15/Q16, Golden four tabs, original reviewed answers, Golden UI, THCS, assessment/privacy and owner P2 historical receipts.
@@ -20,6 +20,8 @@
 | B24 | `31aca301dafaf86403873e324b5bce7d4fa66a43` | `dbf48cdd16811a2581be679bdc86fc6ca15fe311` | DELTA_A_UI_METADATA | Single source SGK p66–71/SBT p54–55 |
 | B25 | `3fdd065beb95b317d7e213a9ab9d9ed845fc16a2` | `d8491aa03be4d1356fbbbb902d7f97a6e8553e0d` | DELTA_A_UI_METADATA | Single source SGK p72–75/SBT p56–57 |
 | B26 | `72f336c1c0113d530f6f7687505b347b97c9d191` | `6b695c41cff31490630b380522752636fc57f8b7` | DELTA_C_ACADEMIC_MATERIAL | One source SGK p77–82/SBT p61–63; remove redundant example exposition; semantic boxes match SGK |
+
+**B26_SOURCE_FORMULA_REPHRASE:** `1` historical \\(0\\le P(A)\\le 1\\) occurrence subsumed into the equivalent blue-box property with compact TeX spacing; original range, event conditions, probabilities and values are preserved. Affected scope exact old and new B26 blob SHAs are locked in the B26 row above. No loss of a mathematical outcome.
 
 ## G2 B26 semantic outcomes (source audited)
 
