@@ -53,6 +53,12 @@ A,B∈(P), A≠B; M chia AB theo tỉ số AM:MB=2:1. M có thuộc (P) không?
 
 Có. M thuộc đường AB, mà AB⊂(P); không cần biết tỉ số để suy quan hệ thuộc.
 
+
+
+**Kiểm lỗi**
+
+Nếu chỉ vì M chia AB theo một tỉ số mà em không chắc M thuộc (P), trở lại **Kiến thức 1.1**: cả đường AB thuộc (P) khi A,B phân biệt cùng thuộc (P). Thử **Bài luyện 1** và **Bài luyện 9**.
+
 </details>
 
 **Nếu làm sai:** Em chỉ nhìn M ở gần mặt: quay lại nguyên tắc “hai điểm xác định đường nằm trong mặt”, rồi tìm hai điểm thuộc (P) trên một đường đã cho.
@@ -80,6 +86,12 @@ Một đường a và điểm M∉a xác định bao nhiêu mặt phẳng?
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Đúng một mặt phẳng. Nếu M∈a sẽ có vô số mặt phẳng chứa a.
+
+
+
+**Kiểm lỗi**
+
+Nếu ba điểm thẳng hàng mà em kết luận duy nhất một mặt phẳng, đọc **Kiến thức 1.2**: cần ba điểm không thẳng hàng hoặc đường và điểm ngoài đường. Thử **Bài luyện 2** và **Bài luyện 10**.
 
 </details>
 
@@ -109,6 +121,12 @@ Trong tứ diện S.ABC, giao tuyến của (SAB) và (SBC) là gì?
 
 SB vì S,B là hai điểm chung phân biệt của hai mặt.
 
+
+
+**Kiểm lỗi**
+
+Nếu nhầm giao tuyến của hai mặt tứ diện, đọc **Kiến thức 1.3**: tìm hai điểm chung phân biệt. Làm **Bài luyện 3** và **Bài luyện 11**, chỉ rõ điểm nào thuộc cả hai mặt.
+
 </details>
 
 **Nếu làm sai:** Nếu thiếu một điểm chung, hãy liệt kê các cạnh nằm trong từng mặt trước khi kết luận.
@@ -137,6 +155,12 @@ Với d:(x,y,z)=(1+t,2,3+t), d cắt (P):z=0 ở đâu?
 
 t=−3, nên d∩(P)={(-2,2,0)}.
 
+
+
+**Kiểm lỗi**
+
+Nếu chỉ ghi tham số hoặc coi cả d là giao tuyến, đọc **Kiến thức 1.4**. Làm **Bài luyện 4** và **Bài luyện 12**; điểm giao phải thỏa phương trình đường và mặt.
+
 </details>
 
 **Nếu làm sai:** Nếu giải ra t mà không xác định đúng điểm, thay t ngược vào cả ba tọa độ.
@@ -164,6 +188,12 @@ Trong tứ diện S.ABC, P nằm trong AB. Mặt (SCP) cắt đáy và mặt (SA
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Theo CP và SP; cạnh còn lại của thiết diện là SC. Thiết diện là tam giác SCP.
+
+
+
+**Kiểm lỗi**
+
+Nếu vẽ thiết diện kéo dài ra ngoài khối, đọc **Kiến thức 1.5**. Làm **Bài luyện 6** và **Bài luyện 13**; mỗi cạnh thiết diện là đoạn thực sự nằm trên một mặt tứ diện.
 
 </details>
 
@@ -205,6 +235,12 @@ Trong tứ diện S.ABC, SA và BC có phải song song vì không gặp nhau?
 
 Không; SA và BC chéo nhau do không đồng phẳng.
 
+
+
+**Kiểm lỗi**
+
+Nếu nói hai đường không gặp nhau chắc chắn song song, đọc **Kiến thức 2.1**. Làm **Bài luyện 15** và **Bài luyện 24**; phải chứng minh đồng phẳng rồi mới kết luận.
+
 </details>
 
 **Nếu làm sai:** Trước khi nói “song song”, hỏi: có một mặt phẳng chứa **cả hai** đường không?
@@ -232,6 +268,12 @@ Hai đường cắt nhau tại M có thể chéo nhau không?
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Không. Hai đường cắt nhau xác định duy nhất một mặt phẳng, nên đồng phẳng.
+
+
+
+**Kiểm lỗi**
+
+Nếu nhầm đường cắt nhau thành chéo nhau vì hình phối cảnh, đọc **Kiến thức 2.2**. Làm **Bài luyện 16** và **Bài luyện 23**, kiểm mặt phẳng chung.
 
 </details>
 
@@ -261,6 +303,12 @@ Nếu SM/SA=SN/SB=3/5, M,N nằm trên hai cạnh SA,SB, kết luận về MN v�
 
 MN∥AB nhờ Thales đảo trong tam giác SAB.
 
+
+
+**Kiểm lỗi**
+
+Nếu áp dụng Thalès đảo cho hai tỉ số không cùng đỉnh, đọc **Kiến thức 2.3**. Làm **Bài luyện 18** và **Bài luyện 25**; so hai tỉ lệ từ đỉnh S trong cùng tam giác.
+
 </details>
 
 **Nếu làm sai:** Nếu chỉ biết SM=SN, hãy kiểm hai cạnh SA,SB có bằng nhau hay không trước khi dùng Thales.
@@ -288,6 +336,12 @@ Trong chóp S.ABCD đáy hình bình hành, giao tuyến (SAD)∩(SBC) có phư�
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Là đường qua S song song AD và BC vì AD∥BC.
+
+
+
+**Kiểm lỗi**
+
+Nếu coi giao tuyến qua S trùng cạnh AB, đọc **Kiến thức 2.4**: giao tuyến chỉ cùng phương với AB. Làm **Bài luyện 26** và **Bài luyện 27**, nêu điểm chung S trước khi xác định phương.
 
 </details>
 
@@ -329,6 +383,12 @@ Là đường qua S song song AD và BC vì AD∥BC.
 
 Song song vì z luôn bằng 3≠0.
 
+
+
+**Kiểm lỗi**
+
+Nếu nhầm đường trên cao z=3 với đường nằm trong z=0, đọc **Kiến thức 3.1**. Làm **Bài luyện 28** và **Bài luyện 36**, dùng số điểm chung để phân biệt ba quan hệ.
+
 </details>
 
 **Nếu làm sai:** Hãy xét phương trình z=0 với **mọi** t trước khi gọi một đường là nằm trong mặt.
@@ -356,6 +416,12 @@ d và a là hai đường phân biệt cùng nằm trong (P), d∥a. Có thể k
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Không; d nằm trong (P) nên có vô số điểm chung với (P).
+
+
+
+**Kiểm lỗi**
+
+Nếu thấy d song song a⊂(P) mà quên d có nằm trong (P) hay không, đọc **Kiến thức 3.2**. Làm **Bài luyện 29** và **Bài luyện 37**, kiểm một điểm ngoài mặt.
 
 </details>
 
@@ -390,6 +456,12 @@ Trong (Q), d∥(P) và g=(Q)∩(P). d và g có thể cắt nhau không?
 
 Không, vì giao điểm nếu có thuộc (P), trái d∥(P); do đó d∥g.
 
+
+
+**Kiểm lỗi**
+
+Nếu phát biểu d song song g khi hai mặt không cắt, đọc **Kiến thức 3.3**. Làm **Bài luyện 32** và **Bài luyện 38**; phải có giao tuyến g thật và d không gặp mặt kia.
+
 </details>
 
 **Nếu làm sai:** Nếu chưa biết g có tồn tại, hãy xác minh hai mặt cắt nhau trước khi áp dụng.
@@ -417,6 +489,12 @@ Cho SM/SA=2/3, chọn SN/SB và SK/SC bằng bao nhiêu để mặt cắt song s
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Cả hai tỉ số bằng 2/3.
+
+
+
+**Kiểm lỗi**
+
+Nếu tự chọn N,K mà ba tỉ số không đều, đọc **Kiến thức 3.4**. Làm **Bài luyện 39** và **Bài luyện 44**, kiểm cùng tỉ số SM/SA, SN/SB, SK/SC.
 
 </details>
 
@@ -458,6 +536,12 @@ Hai mặt z=0 và 2z=0 trùng hay song song phân biệt?
 
 Trùng nhau, vì chúng cùng tập điểm z=0.
 
+
+
+**Kiểm lỗi**
+
+Nếu coi z=0 và 2z=0 song song phân biệt, đọc **Kiến thức 4.1**. Làm **Bài luyện 40** và **Bài luyện 50**; trước hết kiểm hai tập điểm có trùng nhau không.
+
 </details>
 
 **Nếu làm sai:** Nếu chỉ thấy hai pháp tuyến cùng phương, kiểm hai phương trình có cùng tập nghiệm không.
@@ -485,6 +569,12 @@ Cho a,b⊂(P) nhưng a∥b và a∥(Q),b∥(Q). Có đủ kết luận (P)∥(Q)
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Chưa đủ. Cần a và b cắt nhau trong (P), không song song với nhau.
+
+
+
+**Kiểm lỗi**
+
+Nếu chỉ có một đường a trong (P) song song (Q) mà kết luận (P)∥(Q), đọc **Kiến thức 4.2**. Làm **Bài luyện 41** và **Bài luyện 51**, cần hai đường cắt nhau trong (P).
 
 </details>
 
@@ -519,6 +609,12 @@ Nếu (R) chỉ cắt (P) nhưng song song (Q), có được phát biểu hai gi
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Không; chưa có giao tuyến thứ hai. Hơn nữa nếu (P)∥(Q), một mặt (R) cắt (P) thì cũng cắt (Q); giả thiết vừa nêu mâu thuẫn.
+
+
+
+**Kiểm lỗi**
+
+Nếu quên điều kiện mặt thứ ba cắt cả hai mặt song song, đọc **Kiến thức 4.3**. Làm **Bài luyện 42** và **Bài luyện 52**; xác định hai giao tuyến trước khi suy chúng song song.
 
 </details>
 
@@ -564,6 +660,12 @@ Khi t=2/5, diện tích đáy 100 cm², diện tích thiết diện bao nhiêu?
 
 (2/5)²·100=16 cm².
 
+
+
+**Kiểm lỗi**
+
+Nếu lấy t thay cho t² làm tỉ số diện tích, đọc **Kiến thức 4.4** và Thalès trong không gian. Làm **Bài luyện 45** và **Bài luyện 49**, phân biệt tỉ số cạnh/chu vi và diện tích.
+
 </details>
 
 **Nếu làm sai:** Nếu em nhân diện tích với t, hãy thử so sánh một hình có cả chiều ngang và chiều dọc đều nhân t.
@@ -604,6 +706,12 @@ Tìm ảnh N(3,−1,2) dưới phép chiếu T(x,y,z)=(x−z,y,0).
 
 N′=(1,−1,0). Kiểm z′=0 và N−N′=2(1,0,1).
 
+
+
+**Kiểm lỗi**
+
+Nếu chiếu theo phương song song z=0 mà tưởng mọi điểm đều có ảnh, đọc **Kiến thức 5.1**. Làm **Bài luyện 54** và **Bài luyện 63**; giải tham số tại z=0.
+
 </details>
 
 **Nếu làm sai:** Nếu phương chiếu v có tọa độ z bằng 0, đường qua điểm ngoài z=0 sẽ không gặp mặt; cần đổi phương.
@@ -631,6 +739,12 @@ Tùy hướng chiếu, một đoạn có thể thu ngắn đến đúng một đ
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Một điểm: T(1+t,2,3+t)=(-2,2,0) với mọi t.
+
+
+
+**Kiểm lỗi**
+
+Nếu tưởng đường nào cũng có ảnh là đường, đọc **Kiến thức 5.2**. Làm **Bài luyện 58** và **Bài luyện 62**, so ảnh hai điểm khi đường cùng phương chiếu.
 
 </details>
 
@@ -666,6 +780,12 @@ Nếu M là trung điểm AB và A′≠B′, M′ nằm ở đâu?
 
 Là trung điểm A′B′; điều kiện A′≠B′ loại trường hợp đường ảnh co thành điểm.
 
+
+
+**Kiểm lỗi**
+
+Nếu chia tỉ số độ dài ảnh khi A′=B′, đọc **Kiến thức 5.3**. Làm **Bài luyện 57** và **Bài luyện 65**, kiểm ảnh đoạn không suy biến trước.
+
 </details>
 
 **Nếu làm sai:** Nếu định dùng tỉ số trên đoạn ảnh, trước tiên kiểm đoạn ảnh có độ dài dương.
@@ -700,6 +820,12 @@ Hình chiếu song song của hình bình hành không suy biến có thể là 
 
 Không. Hai cặp cạnh đối vẫn song song, nên nếu ảnh không suy biến, nó vẫn là hình bình hành.
 
+
+
+**Kiểm lỗi**
+
+Nếu suy giữ nguyên góc vuông vì hình chiếu còn hai cặp cạnh đối song song, đọc **Kiến thức 5.4**. Làm **Bài luyện 59** và **Bài luyện 66**, kiểm góc ảnh riêng.
+
 </details>
 
 **Nếu làm sai:** Khi kết luận giữ góc, hãy thử tính tích vô hướng của hai cạnh trước và sau chiếu; góc thường không được bảo toàn.
@@ -727,6 +853,12 @@ Nếu thay các trung điểm bằng các điểm có t=3/5, mặt cắt có t�
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Là 9/25; không nhầm với t=3/5 áp dụng cho chu vi.
+
+
+
+**Kiểm lỗi**
+
+Nếu đánh đồng diện tích thiết diện với ảnh chiếu xiên, đọc **Kiến thức 5.5**. Làm **Bài luyện 49** và **Bài luyện 67**, tính t² cho mặt cắt và xét hướng chiếu độc lập.
 
 </details>
 
