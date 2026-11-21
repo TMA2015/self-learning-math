@@ -1196,6 +1196,21 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
       assert(r02.includes(phrase),"B24 R02 receipt missing "+phrase);
     }
    }
+   const p03=path.join(root,"prototypes/thpt/ux795/G10_CHVIII_B24_GOLDEN_COPY_UI_Q18_R03_20261121.md");
+   if(fs.existsSync(p03)){
+    const r03=fs.readFileSync(p03,"utf8");
+    const field=k=>r03.split("**"+k+":** "+String.fromCharCode(96))[1]?.slice(0,40);
+    assert.equal(field("R03_PREVIOUS_SOURCE_BLOB"),current,
+     "B24 UI R03 must descend exactly from R02 current source SHA");
+    const candidate=field("R03_CORRECTED_SOURCE_BLOB");
+    assert(/^[a-f0-9]{40}$/.test(candidate||"")&&candidate!==current,
+     "B24 R03 source SHA invalid");
+    for(const phrase of ["G10-CHVIII-B24-GOLDEN-COPY-UI-Q18-R03-20261121",
+      "DELTA_A_UI","OWNER_P2_RECHECK_PENDING","Vì sao chọn cách này","Phân tích:"]){
+      assert(r03.includes(phrase),"B24 R03 Q18 receipt lacks "+phrase);
+    }
+    current=candidate;
+   }
    const lesson=fs.readFileSync(path.join(root,"docs/thpt-preview/sgk/chuong-viii/bai-24.md"));
    const actual=require("node:crypto").createHash("sha1").update(Buffer.from("blob "+lesson.length+"\0")).update(lesson).digest("hex");
    assert.equal(actual,current,"B24 R01→R02 source SHA chain mismatch");

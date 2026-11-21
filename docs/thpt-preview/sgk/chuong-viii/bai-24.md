@@ -205,8 +205,6 @@
 
 === "Kiến thức SGK"
 
-    **Lộ trình chính thức của SGK:** (1) Hoán vị → (2) Chỉnh hợp → (3) Tổ hợp → (4) Ứng dụng vào bài toán đếm → (5) Sử dụng máy tính cầm tay. Mỗi mục dưới đây nối nhận xét ở Khám phá với định nghĩa, điều kiện và quy tắc tương ứng.
-
     ### 2.1. Hoán vị — xếp thứ tự toàn bộ \(n\) phần tử
 
     Trong phép xếp bốn bạn, vị trí thứ nhất có 4 cách, rồi còn 3, 2, 1 cách. Đó là quy tắc nhân, từ đó suy ra công thức tổng quát chứ không phải giả định công thức trước.
@@ -245,7 +243,7 @@
 
     **Nếu có hai chức vụ riêng:** Chọn một trưởng và một phó từ 20 người trước rồi chọn 4 thành viên khác là \(A_{20}^2\cdot C_{18}^4\). Phép đếm này tương đương chọn 6 người rồi phân hai chức danh, vì hai cách mô tả cùng một kết quả hoàn chỉnh.
 
-    ### 2.5. Sử dụng máy tính cầm tay (SGK tr. 70)
+    ### 2.5. Sử dụng máy tính cầm tay
 
     Máy tính giúp <strong>kiểm kết quả tính toán</strong>, không quyết định thay em là hoán vị, chỉnh hợp hay tổ hợp. Trước khi bấm, xác định \(n,k\), điều kiện và tính chất thứ tự của phương án.
 
@@ -280,7 +278,7 @@
 
     **Đề bài.** Có năm học sinh. (a) Chọn một trưởng nhóm và một phó nhóm khác người. (b) Chọn nhóm hai người không phân vai.
 
-    **Vì sao chọn cách này?** (a) Có hai **vai khác nhau** nên thứ tự chọn quyết định kết quả; (b) chỉ cần nhóm gồm ai, không xét vai.
+    **Phân tích:** (a) Có hai **vai khác nhau** nên thứ tự chọn quyết định kết quả; (b) chỉ cần nhóm gồm ai, không xét vai.
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1">
     <p><strong>Lời giải.</strong> (a) Có \(5\cdot4=20=A_5^2\) cách. (b) Mỗi nhóm đã đếm hai lần nếu phân thứ tự, nên \(\binom52=\frac{5\cdot4}{2}=10\) nhóm.</p>
@@ -304,7 +302,7 @@
 
     **Đề bài.** Có 6 học sinh nam và 5 học sinh nữ phân biệt. Chọn nhóm 3 bạn gồm đúng 2 nam và 1 nữ, không phân vai. Có bao nhiêu nhóm?
 
-    **Vì sao chọn cách này?** “Đúng 2 nam, 1 nữ” là hai lựa chọn thành phần cùng cần làm; vì không phân vai trong nhóm nên dùng tổ hợp, không dùng chỉnh hợp.
+    **Phân tích:** “Đúng 2 nam, 1 nữ” là hai lựa chọn thành phần cùng cần làm; vì không phân vai trong nhóm nên dùng tổ hợp, không dùng chỉnh hợp.
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4">
     <p><strong>Lời giải.</strong> Chọn 2 nam từ 6 có \(C_6^2=15\) nhóm; chọn 1 nữ từ 5 có \(C_5^1=5\) cách. Mỗi lựa chọn hai nam ghép với một nữ tạo đúng một nhóm 3 người. Vậy số nhóm là \(15\cdot5=75\).</p>
@@ -316,7 +314,7 @@
 
     **Đề bài.** Câu lạc bộ có 20 bạn. Chọn 6 bạn vào ban, trong đó một bạn làm trưởng, một bạn khác làm phó, bốn thành viên còn lại không phân biệt vai. Hỏi có bao nhiêu cách?
 
-    **Vì sao chọn cách này?** Hai chức vụ riêng đếm có thứ tự, bốn thành viên còn lại chỉ là nhóm. Phân hai vai trước giúp không lẫn số người có thể được chọn tiếp.
+    **Phân tích:** Hai chức vụ riêng đếm có thứ tự, bốn thành viên còn lại chỉ là nhóm. Phân hai vai trước giúp không lẫn số người có thể được chọn tiếp.
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5">
     <p><strong>Lời giải.</strong> Chọn trưởng rồi phó: \(20\cdot19=380\) cách. Từ 18 bạn còn lại chọn bốn thành viên không phân vai: \(C_{18}^{4}=3060\) cách. Mỗi cặp chức vụ ghép được với mỗi nhóm bốn bạn nên có \(380\cdot3060=1\,162\,800\) phương án.</p>
