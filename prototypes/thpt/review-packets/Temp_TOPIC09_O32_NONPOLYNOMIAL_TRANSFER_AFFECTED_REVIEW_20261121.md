@@ -1,3 +1,8 @@
+<!-- MASTER974_TOPIC09_O32_HISTORIC_CANDIDATE_NOT_ACTIVE_20261121 -->
+**SOURCE STATUS UPDATE / AUTHORING_ONLY, 21/11/2026:** This is a **historical affected-only candidate/reviewer packet**, **NOT** the student learner, current source of truth or independently accepted reviewer PASS. Owner-authorized author self-verification under Q18 v3.2.0 has now corrected the same O32 transfer gap and related D6/selfcheck routes **directly in the one R05 learner** `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md` Git blob **`5681dd894755165e799b4a20d9741f43115778d9`**, existing author Q18 receipt `b0e17ea8fbd00075c5de7dcaeb178985743645f8`. Earlier exact snapshots and the conditional NotebookLM-only promotion workflow described **below are historical**: source moved on; the independent NotebookLM targeted request is still **PENDING (no reviewer verdict claimed)**, not a current mandatory academic gate under the owner's quality-first Q18 authorization. Do not select this candidate as a second learner and do not update its original exam questions, answer keys or rubrics. No merge/deploy, RD1 or web assessment change.
+
+---
+
 # CĐ09 · Scoped NotebookLM academic/PED review packet — O32 vi phân chuyển giao từ đa thức sang phân thức
 
 PACKET_ID: THPT-TOPIC09-O32-FIRST_TRY-TRANSFER-20261121
