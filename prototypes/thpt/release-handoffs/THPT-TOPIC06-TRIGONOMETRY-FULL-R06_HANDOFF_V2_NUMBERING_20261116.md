@@ -1,21 +1,30 @@
+<!-- TOP06_MASTER974_CURRENT_AUTHORING_V2_20261121 -->
+## CURRENT CĐ06 AUTHORING V2 · source-locked (Q01–Q18 v3.2.0)
+
+**Single R06 learner** `prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md`, Git blob `edfecb3edd165e87bcb615ec4cbb66833ad52675`; existing one Q18 source-author-self-QA receipt `ef1e607675b82fcbf7c7aa6005c0c1005a836d1f`, A1–A7 metadata `103a0f784a45d8cad76395b08753bffd99b580a7`. The Topic canonical bank is `f83b285ff0c8f4e45b724cf06248935e5d618b65`, original G11 46-item source `256ceb5edc5e02aec320e83e99c8e08e035654f3`, both unchanged. Q01 original SGK S1 scan scope G11 Toán KNTT tập 1 B01–B04 inherited with source proof `166c06dce6de9490e0a855a2c10dc9ca1e69ca89`.
+
+**Targeted source Delta C AUTHOR_SELF_VERIFIED** on current O16 math/PED and O01+Tự kiểm tra D6: (i) 16/16 genuine practice retry destinations; (ii) one end-of-SelfCheck voluntary answer-location map for 16 public replay IDs; (iii) O16 independent Vận dụng uses `h(t)=4+0.8sin(πt/8)` on [0,16] hours, `T=16`, `h(4)=4.8`, `t=20` excluded, not pre-solved in the preceding Example. No original 66 Practice math/stems/answers/8 Written rubrics, 3 SVG or 16 public selfcheck question stems changed. 83/83 disclosure blocks, one SGK source footer. Historical source receipts remain immutable to previous blobs. No independent NotebookLM fresh reviewer verdict, private RD1, Final Submit/Mastery, website integration or authorization to release. No merge/deploy.
+
+---
+
 # AUTHORING CĐ06 — Lượng giác và phương trình lượng giác · ONE current R06 V2
 
 PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R06
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: dc134f8ca66a4303f2fcb5947955a3cc5c62ff18
-AUTHOR_A1_A7_BLOB: dc134f8ca66a4303f2fcb5947955a3cc5c62ff18
+AUTHOR_METADATA_BLOB: 103a0f784a45d8cad76395b08753bffd99b580a7
+AUTHOR_A1_A7_BLOB: 103a0f784a45d8cad76395b08753bffd99b580a7
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.1.0
+STANDARD_VERSION: 3.2.0
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 55cbb23d860aaff700c959bc291ec44699584159
+ACADEMIC_SOURCE_BLOB: edfecb3edd165e87bcb615ec4cbb66833ad52675
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: 72596f066ba642a682fff724891923e777a30abf
+REVIEW_RECEIPT_BLOB: ef1e607675b82fcbf7c7aa6005c0c1005a836d1f
 PUBLIC_ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md
 PUBLIC_ORIGINAL_SGK_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 PUBLIC_ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_ORIGINAL46_CANONICAL_INDEX_R01_20261112.md
