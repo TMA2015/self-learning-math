@@ -7,6 +7,7 @@ const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const crypto=require("node:crypto");
 const path=require("node:path");
+const cp=require("node:child_process");
 const root=path.resolve(__dirname,"..");
 const receipt=fs.readFileSync(path.join(root,
  "prototypes/thpt/ux795/G10_B12_B13_DUPLICATE_DE_HEADING_DELTA_A_R01_20261119.md"),"utf8");
@@ -21,6 +22,22 @@ const sha1=data=>{
  return crypto.createHash("sha1").update(Buffer.from("blob "+b.length+"\0")).update(b).digest("hex");
 };
 const get=p=>fs.readFileSync(path.join(root,p),"utf8");
+const historicCommit=field("BASE_MAIN_COMMIT");
+const historyAt=p=>{
+ const z=cp.spawnSync("git",["show",historicCommit+":"+p],{cwd:root,encoding:"utf8"});
+ assert.equal(z.status,0,"Fetch historical 19/11 signed commit before QA: "+p+" "+z.stderr);
+ return z.stdout;
+};
+const placement=get("prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
+assert(placement.includes("DELTA_C_ACADEMIC_MATERIAL")&&placement.includes("Q18_OWNER_SELF_VERIFIED_ENRICHMENT"),
+ "20/11 B12/B13 material HELP relocation receipt required");
+const transition=(prefix)=>{
+ const rows=placement.split("\n").filter(l=>l.startsWith("| "+prefix+" | "));
+ assert.equal(rows.length,1,prefix+": one signed Q18 transition row");
+ const values=[...rows[0].matchAll(/`([a-f0-9]{40})`/g)].map(m=>m[1]);
+ assert.equal(values.length,2,prefix+": exact old/current SHA pair");
+ return values;
+};
 const heading="    #### Đề bài\n\n";
 const marker='    #### &nbsp; {style="display:none"}\n\n';
 const canon="prototypes/thpt/content-drafts/THPT_G10_CHV_B12_CANONICAL.md";
@@ -40,11 +57,15 @@ const expectedDiff=(previous,label)=>{
 for(const n of [12,13]){
  const lesson="B"+n;
  const p="docs/thpt-preview/sgk/chuong-v/bai-"+n+".md";
- const candidate=get(p),previous=restorePrevious(candidate,lesson);
- assert.equal(sha1(previous),field(lesson+"_PREVIOUS_SOURCE_BLOB"),lesson+": previous SHA");
- assert.equal(sha1(candidate),field(lesson+"_CURRENT_SOURCE_BLOB"),lesson+": current SHA");
- assert.equal(candidate,expectedDiff(previous,lesson),
-  lesson+": ONLY the four redundant headings may be replaced by invisible structural boundaries");
+ const candidate=get(p),previous=historyAt(p);
+ // The 19/11 Delta A must be replayed from its historical Git commit,
+ // not reconstructed from the later signed 20/11 Q18 material delta.
+ assert.equal(sha1(previous),field(lesson+"_PREVIOUS_SOURCE_BLOB"),lesson+": historical predecessor");
+ const uiCandidate=expectedDiff(previous,lesson);
+ assert.equal(sha1(uiCandidate),field(lesson+"_CURRENT_SOURCE_BLOB"),lesson+": historical four-heading edit");
+ const [oldQ18,newQ18]=transition(lesson);
+ assert.deepEqual([oldQ18,sha1(candidate)],[field(lesson+"_CURRENT_SOURCE_BLOB"),newQ18],
+  lesson+": signed 19/11 UI-only→20/11 material source chain");
  const examples=candidate.split('=== "Ví dụ"')[1]?.split('=== "Lỗi thường gặp"')[0]||"";
  assert.equal((examples.match(/^    ### 3\.[1-4]\. Ví dụ [1-4] —/gm)||[]).length,4,
   lesson+": four distinct worked examples must remain");
@@ -61,17 +82,19 @@ for(const n of [12,13]){
 }
 const b12=get("docs/thpt-preview/sgk/chuong-v/bai-12.md");
 const master=get(canon);
-const formerMaster=master.replace(section(master),restorePrevious(section(master),"B12 canonical"));
+const formerMaster=historyAt(canon);
 assert.equal(sha1(formerMaster),field("B12_PREVIOUS_CANONICAL_BLOB"),
- "B12 immutable predecessor canonical blob");
-assert.equal(sha1(master),field("B12_CURRENT_CANONICAL_BLOB"),
- "B12 current one-canonical SHA");
-assert.equal(master,expectedDiff(formerMaster,"B12 canonical"),
- "B12 canonical may change only by four heading-to-invisible-boundary substitutions");
+ "B12 immutable 19/11 predecessor canonical");
+assert.equal(sha1(expectedDiff(formerMaster,"B12 canonical")),field("B12_CURRENT_CANONICAL_BLOB"),
+ "B12 exact historical four-heading canonical transformation");
+const [oldCanonical,newCanonical]=transition("CANONICAL_B12");
+assert.deepEqual([oldCanonical,sha1(master)],[field("B12_CURRENT_CANONICAL_BLOB"),newCanonical],
+ "B12 one current manuscript must match 20/11 signed Q18 successor");
 assert.equal(section(master),b12,"B12 canonical Section A must equal current learner source");
 const b11p="docs/thpt-preview/sgk/chuong-iv/bai-11.md";
-assert.equal(sha1(get(b11p)),field("B11_UNCHANGED_SOURCE_BLOB"),
- "B11 owner-approved presentation must not change");
+const b11Q18=transition("B11");
+assert.deepEqual([field("B11_UNCHANGED_SOURCE_BLOB"),sha1(get(b11p))],b11Q18,
+ "B11 owner-approved 19/11 SHA must extend signed 20/11 HELP relocation");
 const fullCss=get("docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css");
 const b14CssMarker="/* G10 ChV B14 · scoped X-C RELEASE Golden";
 const at=fullCss.indexOf(b14CssMarker);
@@ -92,4 +115,4 @@ for(const [p,key] of [
  assert.equal(sha1(fs.readFileSync(path.join(root,p))),field(key),
   "Unrelated assessed bank or original educational SVG changed: "+p);
 }
-console.log("PASS G10 B12/B13 Delta A: 8 visible 'Đề bài' removed, 8 original 'Đề:' retained; four hidden boundary markers per lesson; one B12 canonical; historical source, CSS, Q15/Q16 and bank SHA guarded.");
+console.log("PASS G10 B12/B13 historical 19/11 Delta A Git replay + 20/11 signed Q18 successor: 8 hidden boundaries, one B12 canonical, Q15/Q16/CSS/banks.");
