@@ -405,7 +405,7 @@ for(const [lesson,row] of rows){
     "B10 all canonical HELP are local; none duplicated in tab4");
    assert.equal((discover.match(/^    \?\?\? tip "Kiểm lỗi"/gm)||[]).length,3,
     "B10 three item-specific Kiểm lỗi disclosures remain in Discovery");
-   for(const phrase of ["Vì sao sai","Tự kiểm","Luyện lại"])
+   for(const phrase of ["Vì sao sai","Tự kiểm","Ôn và luyện lại"])
     assert(discover.includes(phrase),"B10 D6 repair missing "+phrase);
   assert(!source.includes("EX-G10-B10-RIVER-TR01")&&
    !source.includes("Assessment safety")&&!source.includes("HELP_ID")&&
