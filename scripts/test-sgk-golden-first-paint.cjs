@@ -58,6 +58,8 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
  const reps=rows.filter(x=>x.grade===11||[1,7,16,23,27].includes(x.n));
  const base=(process.env.SGK_FIRST_PAINT_BASE_URL||"http://127.0.0.1:8765").replace(/\/$/,"");
  let checks=0;
+ const unloadedGeometry=new Map();
+ let maxGeometryDelta=0;
  try{
   for(const width of [390,820,1440]){
    for(const row of reps){
@@ -87,7 +89,15 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
         navCount:a.querySelectorAll(".thpt-r4-screen > nav[data-sgk-lesson-nav]").length,
         navId:a.querySelector(".thpt-r4-screen > nav[data-sgk-lesson-nav]")?.dataset.sgkLessonNav,
         navChoices:a.querySelectorAll(".thpt-r4-screen nav.thpt-sgk-lesson-nav > a, .thpt-r4-screen nav.thpt-sgk-lesson-nav > span").length,
-        leadCount:a.querySelectorAll(".thpt-r4-screen .thpt-r4-lead").length};
+        leadCount:a.querySelectorAll(".thpt-r4-screen .thpt-r4-lead").length,
+        geometry:Object.fromEntries([
+         ["heroBottom",a.querySelector(".thpt-r4-screen")?.getBoundingClientRect().bottom],
+         ["navTop",a.querySelector(".thpt-r4-screen > nav[data-sgk-lesson-nav]")?.getBoundingClientRect().top],
+         ["navBottom",a.querySelector(".thpt-r4-screen > nav[data-sgk-lesson-nav]")?.getBoundingClientRect().bottom],
+         ["tabsTop",a.querySelector(".tabbed-set > .tabbed-labels")?.getBoundingClientRect().top],
+         ["tabsHeight",a.querySelector(".tabbed-set > .tabbed-labels")?.getBoundingClientRect().height],
+         ["firstHeadingTop",h2[0]?.getBoundingClientRect().top]
+        ])};
       });
       const k=engine+" "+row.rel+" "+width+" "+(js?"JS":"NO_JS");
       assert.equal(v.marker,"true",k+" marker");
@@ -102,7 +112,24 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
        console.error("GOLDEN_STYLE_DIAGNOSTIC "+k+" "+JSON.stringify(v));
       assert(v.pad>=8&&v.radius>=4&&v.headingBorder>=3,
        k+" incorrect computed Golden CSS");
-      if(js){
+      // Compare finished styles with JS off vs on. The initial article
+      // must not be geometrically moved by the runtime's late DOM patching.
+      const key=row.rel+"@"+width;
+      if(!js){
+       unloadedGeometry.set(key,v.geometry);
+      }else{
+       const original=unloadedGeometry.get(key);
+       assert(original,k+" missing no-JS comparison");
+       for(const [part,before] of Object.entries(original)){
+        const after=v.geometry[part];
+        assert(Number.isFinite(before)&&Number.isFinite(after),
+         k+" missing geometry anchor "+part);
+        const shift=Math.abs(after-before);
+        maxGeometryDelta=Math.max(maxGeometryDelta,shift);
+        assert(shift<=4,
+         k+" unexpected top-of-page visual shift "+part+
+         " (no-JS "+before.toFixed(2)+"px; JS "+after.toFixed(2)+"px)");
+       }
        const t=page.locator(".tabbed-set > .tabbed-labels > label");
        await t.nth(3).click();
        assert(await page.locator(".tabbed-set > input[type=radio]").nth(3).isChecked(),
@@ -118,6 +145,8 @@ console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden heading
   }
  }finally{await browser.close()}
  assert.equal(checks,reps.length*3*2);
- console.log("PASS GOLDEN FIRST PAINT "+engine+": "+checks+" JS/no-JS modes/viewports");
+ console.log("PASS GOLDEN FIRST PAINT "+engine+": "+checks+
+  " JS/no-JS modes/viewports; max top-of-page geometric delta "+
+  maxGeometryDelta.toFixed(2)+"px");
  }
 })().catch(e=>{console.error(e.stack||e);process.exitCode=1});
