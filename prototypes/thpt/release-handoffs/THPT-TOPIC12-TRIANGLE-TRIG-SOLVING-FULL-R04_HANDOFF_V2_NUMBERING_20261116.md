@@ -1,3 +1,10 @@
+<!-- TOP12_MASTER974_CURRENT_R04_ONE_V2_20261121 -->
+## CURRENT AUTHORING V2 CĐ12 — one canonical learner, scoped Q18 3.2.0
+
+One effective R04 student source `prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md` Git blob **`f773f2622c88bd3e3a1e0137613846a83b3e6629`**, same existing Q18 author self-verification `496ce6005b50c6fd5baae2a6ac4f3d9414becc20`, one author A1/custody `b9615f81200f82952c92f9b8a362603e2a95eae9`; original NEW16 bank `8f05b5556d83675649451dec76a8c1ffa5e1098d` and G10 SGK18 historical source/index remain unchanged. Corrected verified student #977-039/040/041: 12 original FirstTry voluntary `Đối chiếu` have exact-topic `Kiểm lỗi` routes to authentic Practice numbers, one voluntary 12-public-selfcheck map to matching canonical answer locations, 34 unique sequential display `Bài luyện 1–34`/28 `Lời giải`+6 `Lời giải và rubric`, only one SGK citation at whole Topic end, no learner-visible bank/admin prose. All 34 original card mathematical `Đề`/choices/keys/solution/rubric **byte-preserved**; 12 public SelfCheck question stems original; 2 original SVG unchanged. 47/47 reveals balanced. `DELTA_C_PED_TARGETED` and `DELTA_A_EDITORIAL` only; source Q18 AUTHOR_SELF_VERIFIED not fresh independent NotebookLM academic/ped full-Topic reviewer PASS, nor independent held-out Readiness/RD1, website AP/R or deploy. No merge/deploy.
+
+---
+
 # CĐ12 — Hệ thức lượng trong tam giác và giải tam giác · AUTHORING HANDOFF V2 R01
 
 **Gói học liệu tự học độc lập** theo bản danh mục PLAN22-12 lịch sử, đúng ba trang Kiến thức/Luyện tập/Tự kiểm tra. Không merge/deploy. Q18 là tác giả tự kiểm thực chất, KHÔNG phải NotebookLM độc lập đã review CĐ12.
@@ -11,13 +18,13 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 56a2b7a0bab2d210beed28a0a4663c9aa6001b3e
+ACADEMIC_SOURCE_BLOB: f773f2622c88bd3e3a1e0137613846a83b3e6629
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: a692d47dd544604d404df0635986bee9c5251394
+REVIEW_RECEIPT_BLOB: 496ce6005b50c6fd5baae2a6ac4f3d9414becc20
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_A1_A7_BLOB: 8067282a595a93ce77b9de83185f2bc3b35a6866
+AUTHOR_A1_A7_BLOB: b9615f81200f82952c92f9b8a362603e2a95eae9
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 8067282a595a93ce77b9de83185f2bc3b35a6866
+AUTHOR_METADATA_BLOB: b9615f81200f82952c92f9b8a362603e2a95eae9
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: 8f05b5556d83675649451dec76a8c1ffa5e1098d
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_D1D6_AUTHORING_R01_SNAPSHOT.md
