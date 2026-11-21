@@ -1,5 +1,5 @@
-<!-- AUTHORING R05 STUDENT_FIRST Q18_REVIEW_SOURCE 15/11/2026; R04 SOURCE_BLOB 8fd1c9d223ccab794ae20fc8f0206df32f0671c4 and signed R04 ready/receipt stay immutable until R05 Q18. -->
-<!-- STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.1.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_VERSION=R05_AUTHORING_REVIEW_SOURCE; ORIGINAL36_INDEX_BLOB=43cbb73bd06e0da6bf8838d925186bc4db4194a7; NEW22_BANK_BLOB=2e93db80384de53e208248eaa0396a7f487302ac -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: CĐ08 R05 is current one source-author-self-verified learner canonical; R04 was immutable historical source, not the active release handoff. -->
+<!-- AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW: STANDARD_ID=SLM-THPT-QUALITY-ONE; STANDARD_VERSION=3.2.0; LEARNING_PATH=TOPIC; OUTER_PAGES=Kiến thức|Luyện tập|Tự kiểm tra; SOURCE_VERSION=R05_CANONICAL_AUTHOR_SELF_Q18; ORIGINAL36_INDEX_BLOB=43cbb73bd06e0da6bf8838d925186bc4db4194a7; NEW22_BANK_BLOB=2e93db80384de53e208248eaa0396a7f487302ac -->
 # CĐ08 — Giới hạn và tính liên tục
 
 # Kiến thức
@@ -39,6 +39,11 @@ Ta xét dãy \(u_n=2+1/n\) với \(n\) nguyên dương. Mọi số hạng đều
 
 Giới hạn bằng 1 vì \(|v_n-1|=3/n\to0\). Nếu em cho rằng giới hạn phải là một số hạng, hãy thử giải \(1+3/n=1\) để thấy không có \(n\) hữu hạn nào thỏa, dù dãy vẫn tiến tới 1.
 
+
+**Kiểm lỗi**
+
+Nếu em cho rằng giới hạn phải là một số hạng của dãy, đọc lại **Kiến thức 1.1** rồi giải **Bài 1** và **Bài 3** trong Luyện tập. Tách điều kiện chỉ số nguyên dương khỏi việc khoảng cách tới giá trị giới hạn tiến về 0.
+
 </details>
 
 ### 1.2. Dãy tiến vô cực và dãy dao động
@@ -64,6 +69,11 @@ Chẳng hạn, v_n=−n² với n≥1 đi về −∞ vì với mọi M>0, n>√
 
 Nếu viết 'vô hạn' cho (−1)^n, hãy liệt kê các số hạng chẵn và lẻ rồi xét giới hạn từng dãy con.
 
+
+**Kiểm lỗi**
+
+Nếu em cho rằng mọi dãy không hội tụ hữu hạn đều tiến ra vô cực có dấu, đọc lại **Kiến thức 1.2**, làm **Bài 4** (dao động chẵn/lẻ), **Bài 5** (tiến −∞) rồi **Bài 6** (dãy con có hai giới hạn khác nhau).
+
 </details>
 
 ### 1.3. Giới hạn dãy lũy thừa
@@ -88,6 +98,11 @@ Xét ví dụ: Với q=−1/4, số hạng q^n đổi dấu nhưng có độ l�
 +∞ vì 3/2>1 và lũy thừa tăng không bị chặn.
 
 Nếu nhầm q âm với không hội tụ, so (−1/4)^n và (−1)^n qua |q|.
+
+
+**Kiểm lỗi**
+
+Nếu nhầm lũy thừa cơ số âm có độ lớn nhỏ hơn 1 với dãy dao động không hội tụ, đọc **Kiến thức 1.3** rồi giải **Bài 7** và so sánh **Bài 4**. Hãy xét \(|q|^n\) trước, sau đó mới xét dấu.
 
 </details>
 
@@ -124,6 +139,11 @@ Chẳng hạn, lim(n→∞)(3n²+n)/(n²+7)=lim(3+1/n)/(1+7/n²)=3. Chọn bậc
 
 Nếu thế 'n=∞', hãy thực hiện phép chia n^k để chuyển sang giới hạn có thể tính.
 
+
+**Kiểm lỗi**
+
+Nếu lấy các hệ số khác bậc hoặc thế máy móc \(n=\infty\), đọc lại **Kiến thức 1.4**, làm **Bài 11** và **Bài 12**: chia đúng lũy thừa bậc cao nhất và kiểm mẫu giới hạn khác 0.
+
 </details>
 
 ### 1.5. Tổng cấp số nhân vô hạn
@@ -152,6 +172,11 @@ Chẳng hạn, 10+5+2,5+… có a=10,q=1/2; S_n=20(1−(1/2)^n), phần dư=20/2
 9, vì q=1/3 và S=6/(1−1/3)=9.
 
 Nếu dùng công thức khi q=1 hoặc −1, hãy xét giới hạn của số hạng trước: nó không về 0.
+
+
+**Kiểm lỗi**
+
+Nếu áp dụng tổng cấp số nhân vô hạn khi \(|q|\ge1\) hoặc nhầm dấu phần dư, đọc lại **Kiến thức 1.5**, giải **Bài 16** và **Bài 18**; thử thêm **Bài 19** để kiểm điều kiện sai số nghiêm ngặt.
 
 </details>
 
@@ -186,6 +211,11 @@ Chẳng hạn, f(x)=(x²−5x+6)/(x−2) với x≠2. Tử=(x−2)(x−3), rút 
 
 Nếu gọi 0/0 là giới hạn, xem hai hàm (x−2)/(x−2) và 2(x−2)/(x−2), cùng thế 0/0 nhưng có giới hạn 1 và 2.
 
+
+**Kiểm lỗi**
+
+Nếu coi dạng \(0/0\) là đáp số hoặc tự gán giá trị của hàm tại điểm cấm, đọc **Kiến thức 2.1**, làm **Bài 21** và **Bài 22**. Chỉ rút gọn trên lân cận bỏ điểm rồi mới tính giới hạn.
+
 </details>
 
 ### 2.2. Giới hạn trái và phải
@@ -211,6 +241,11 @@ Chẳng hạn, f(x)=x+2 nếu x<0; f(x)=2x+1 nếu x≥0. Khi x→0⁻, f→2; k
 
 Nếu chỉ thế nhánh x≥0 tại 0, hãy vẽ hai mũi tên tiến vào 0 từ hai phía.
 
+
+**Kiểm lỗi**
+
+Nếu dùng cùng một nhánh của hàm cho cả trái và phải, đọc lại **Kiến thức 2.2**, làm **Bài 24** rồi **Bài 25**. Tính hai giới hạn một phía riêng; chỉ ghép thành giới hạn hai phía khi chúng bằng nhau.
+
 </details>
 
 ### 2.3. Giới hạn vô cực gần điểm
@@ -234,7 +269,12 @@ Xét ví dụ: f(x)=1/(x−5): x→5⁻ thì mẫu âm nhỏ ⇒ f→−∞; x�
 
 +∞ vì 3−x tiến 0 từ phía dương.
 
-Nếu cứ thấy mẫu 0 là +∞, đặt x=4,99 và 5,01 để kiểm dấu mẫu.
+Nếu cứ thấy mẫu tiến tới 0 là tự kết luận +∞, thử x=2,99 (từ trái 3) và x=3,01 (từ phải 3) để kiểm: 3−x lần lượt dương và âm, nên hai phía có dấu giới hạn khác nhau.
+
+
+**Kiểm lỗi**
+
+Nếu thấy mẫu về 0 rồi tự kết luận \(+\infty\), đọc **Kiến thức 2.3**, làm **Bài 27** và **Bài 29**. Lập bảng dấu tử/mẫu theo từng phía; đừng kết luận theo mẫu số bằng 0 ở đúng điểm.
 
 </details>
 
@@ -261,6 +301,11 @@ Chẳng hạn, lim(x→−∞)(2x²+5x)/(5x²−1) = lim(2+5/x)/(5−1/x²)=2/5.
 
 Nếu giữ dấu 'x âm' ở mọi hạng, tách x² và x³ ra để so dấu của từng lũy thừa.
 
+
+**Kiểm lỗi**
+
+Nếu dùng dấu của x thay cho dấu của \(x^2\), hoặc chọn sai bậc chia, đọc lại **Kiến thức 2.4**, làm **Bài 31** và **Bài 32**; kiểm riêng x tiến \(+\infty\) và \(-\infty\).
+
 </details>
 
 ### 2.5. Khử dạng 0/0 bằng nhân tử
@@ -284,7 +329,12 @@ Chẳng hạn, (x²−7x+12)/(x−3) có tử (x−3)(x−4); với x≠3 rút t
 
 12, vì tử=(x−6)(x+6) và x≠6.
 
-Nếu viết 0/0 hoặc giá trị hàm tại x=3, trở lại định nghĩa lân cận loại điểm.
+Nếu viết 0/0 như đáp số hoặc nhầm giới hạn với giá trị hàm tại x=6, hãy trở lại lân cận bỏ điểm x=6; phân thức gốc không xác định ở đúng điểm ấy.
+
+
+**Kiểm lỗi**
+
+Nếu khử nhân tử chung ngay tại điểm cấm rồi kết luận hàm gốc được định nghĩa ở đó, đọc **Kiến thức 2.5**, làm **Bài 33** và **Bài 34**. Phép khử chỉ đúng trên lân cận bỏ điểm; giới hạn không phải giá trị hàm tại điểm ấy.
 
 </details>
 
@@ -311,6 +361,11 @@ Chẳng hạn, lim(x→0)(√(x+16)−4)/x: nhân liên hợp (√(x+16)+4), đ�
 
 Nếu căn khiến bạn 'bình phương cả phân thức', thử nhân liên hợp đúng dạng và giữ điều kiện x+c≥0.
 
+
+**Kiểm lỗi**
+
+Nếu biến đổi căn bằng cách bình phương tùy ý hoặc bỏ điều kiện trong căn, đọc **Kiến thức 2.6**, làm **Bài 35** và **Bài 36**: nhân **liên hợp** đúng cả tử/mẫu và kiểm miền xác định.
+
 </details>
 
 ### 2.7. Biến đổi dạng vô cực trừ vô cực
@@ -327,14 +382,17 @@ Chẳng hạn, lim(x→+∞)[√(x²+6x)−x] = lim(6x)/[√(x²+6x)+x]=lim 6/[�
 
 **Lời giải.** Nhân liên hợp được \(\dfrac{8x}{\sqrt{x^2+8x}+x}\). Vì \(x>0\) khi đủ lớn, chia cho \(x\) được \(\dfrac8{\sqrt{1+8/x}+1}\to4\). Không dùng \(\sqrt{x^2}=x\) nếu biến tiến về \(-\infty\).
 
-**Vận dụng** lim(x→+∞)[√(x²+8x)−x] bằng bao nhiêu?
+**Vận dụng** Tính \(\lim_{x\to-\infty}\bigl(\sqrt{x^2+6x}+x\bigr)\). Vì sao không thể thay \(\sqrt{x^2}\) bằng x trong bước biến đổi?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-4, bằng 8/[√(1+8/x)+1]→4.
+Với x đủ âm, biểu thức trong căn không âm. Nhân liên hợp: \(\sqrt{x^2+6x}+x=\dfrac{6x}{\sqrt{x^2+6x}-x}\). Do \(x<0\), ta có \(\sqrt{x^2+6x}=(-x)\sqrt{1+6/x}\). Bởi vậy phân thức bằng \(\dfrac{-6}{\sqrt{1+6/x}+1}\to-3\). Nếu thay sai \(\sqrt{x^2}=x\), em sẽ đánh mất dấu khi chia cho x âm. Chỉ dùng công thức trong miền xác định và ở phía x→−∞.
 
-Nếu quên dấu x, thay x=−10 để thấy √(x²)=10 chứ không phải −10.
+
+**Kiểm lỗi**
+
+Nếu thay \(\sqrt{x^2}=x\) cả khi x âm, đọc **Kiến thức 2.7**, làm **Bài 37** và **Bài 38** trước khi đối chiếu **Bài 39**. Với \(x\to-\infty\), phải dùng \(\sqrt{x^2}=|x|=-x\), không tự bỏ dấu.
 
 </details>
 
@@ -371,6 +429,11 @@ c=0 vì lim(x→0)sin x=0, bằng giá trị ở điểm.
 
 Nếu quên hàm phải được định nghĩa tại a, so 'hole' và 'point f(a)=...' trên đồ thị.
 
+
+**Kiểm lỗi**
+
+Nếu tính được giới hạn nhưng quên điều kiện giá trị hàm phải bằng giới hạn tại điểm, đọc **Kiến thức 3.1**, làm **Bài 42** và **Bài 43**. Kiểm đủ: có \(f(a)\), có giới hạn khi x→a và chúng bằng nhau.
+
 </details>
 
 ### 3.2. Ba kiểu gián đoạn thường gặp
@@ -402,6 +465,11 @@ Khử được: lim(x→1)g(x)=2 nhưng g(1)=3; đổi g(1)=2 thì liên tục.
 
 Nếu gọi tất cả lỗ bằng vô cực, kiểm có khử được nhân tử chung hay không.
 
+
+**Kiểm lỗi**
+
+Nếu thấy mẫu số bằng 0 rồi gọi tất cả là gián đoạn vô cực, đọc **Kiến thức 3.2**, làm **Bài 45** và **Bài 46**: xét giới hạn trái/phải và xem có thể sửa bằng một giá trị tại điểm hay không.
+
 </details>
 
 ### 3.3. Liên tục trên khoảng và đoạn
@@ -429,6 +497,11 @@ Có; trong đoạn biểu thức trong căn không âm và liên tục, tại �
 
 Nếu hỏi giới hạn trái của √x ở 0 trong ℝ và nói 'không liên tục', hãy trở về định nghĩa liên tục trên miền [0,9].
 
+
+**Kiểm lỗi**
+
+Nếu cho rằng đầu mút không liên tục vì thiếu một phía nằm ngoài miền xác định, đọc **Kiến thức 3.3**, làm **Bài 48** và **Bài 50**. Tại đầu đoạn dùng giới hạn từ phía **trong miền**, không yêu cầu một phía không có giá trị.
+
 </details>
 
 ### 3.4. Miền xác định và phép toán liên tục
@@ -453,6 +526,11 @@ Chẳng hạn, f(x)=(x²+1)/(x−1) có miền ℝ\{1} nên liên tục trên (�
 x≥−2 và x≠−1; liên tục trên [−2,−1) và (−1,∞) theo miền.
 
 Nếu kiểm căn x+2≥0 nhưng bỏ mẫu x+1≠0, hãy ghi hai điều kiện bằng dấu 'và'.
+
+
+**Kiểm lỗi**
+
+Nếu xét mỗi điều kiện căn nhưng quên mẫu khác 0, hoặc nói liên tục xuyên khoảng bị loại, đọc **Kiến thức 3.4**, làm **Bài 51** và **Bài 52**; giao tất cả điều kiện miền trước khi kết luận các thành phần liên tục.
 
 </details>
 
@@ -489,6 +567,11 @@ Có; f(1)=−2<0, f(2)=1>0 và đa thức liên tục.
 
 Nếu viết 'duy nhất do IVT', thử g(x)=x(x−1)(x+1) trên [−2,2] có nhiều nghiệm mặc dù đổi dấu hai đầu.
 
+
+**Kiểm lỗi**
+
+Nếu suy ngay nghiệm **duy nhất** chỉ từ trái dấu ở hai đầu, đọc **Kiến thức 4.1**, làm **Bài 54** và **Bài 56**. Định lí giá trị trung gian cho tồn tại **ít nhất một** nghiệm trên đoạn liên tục; tính duy nhất cần lập luận riêng.
+
 </details>
 
 ### 4.2. Chia đôi khoảng để khoanh nghiệm
@@ -517,6 +600,11 @@ Xét ví dụ: Với g(x)=x²−2 trên [1,2], g(1)=−1,g(2)=2. Bước 1 m=1,5
 g(1,5)=−0,75, g(2)=1 nên giữ [1,5; 2]; g vẫn đổi dấu.
 
 Nếu chọn nửa không trái dấu, viết bảng f(a),f(m),f(b) và tìm cặp tích âm trước khi loại nửa còn lại.
+
+
+**Kiểm lỗi**
+
+Nếu chọn nửa khoảng không còn đổi dấu hoặc đếm sai độ dài sau mỗi bước, đọc **Kiến thức 4.2**, làm **Bài 57** và **Bài 58**; lập bảng dấu \(g(a),g(m),g(b)\), mỗi lần chỉ giữ nửa có hai đầu trái dấu.
 
 </details>
 
@@ -1416,5 +1504,20 @@ Hãy tự làm đủ 18 câu sau đây trên giấy hoặc phần trả lời ri
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P18; NO_RD1; NO_MASTERY -->
 
 **Câu 18.** Mô hình giả định g(t)=t²+t−3, t∈[1,2]. Chứng minh có thời điểm g(t)=0; sau hai bước chia đôi nêu một khoảng dài 1/4 chứa nghiệm.
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Sau khi tự giải đủ 18 câu, em có thể mở **Lời giải** của đúng bài trong **Luyện tập** theo bảng này. Chỉ xem khi đã tự thử; nếu còn nhầm, quay lại Kiến thức của dạng đó và giải lại.
+
+| Câu tự kiểm tra | Bài luyện tập có lời giải |
+| --- | --- |
+| Câu 1 – 2 – 3 – 4 – 5 | Bài 3 – 6 – 7 – 12 – 18 |
+| Câu 6 – 7 – 8 – 9 – 10 | Bài 22 – 25 – 29 – 32 – 34 |
+| Câu 11 – 12 – 13 – 14 – 15 | Bài 36 – 39 – 43 – 46 – 50 |
+| Câu 16 – 17 – 18 | Bài 52 – 56 – 57 |
+
+Đây là phần tự đối chiếu các câu hỏi **công khai đã học**, không phải bài kiểm tra năng lực độc lập và không ghi Mastery.
+
+</details>
 
 Nguồn kiến thức: SGK Toán 11, tập 1, Chương V (Bài 15–17), bộ Kết nối tri thức với cuộc sống. Các câu vận dụng mô hình mở rộng được xây dựng riêng cho Chuyên đề.
