@@ -50,13 +50,19 @@ Làm tròn là thay giá trị bởi số thuận tiện hơn ở một hàng x�
 
 
 
-**Vận dụng** Giá trị thật 9,68 mm ghi 9,7 mm: tìm sai số tuyệt đối và phần trăm tương đối.
+<!-- ITEM_ID: THPT-TOP22-T01; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B12-ABS_ERROR; SECONDARY_OUTCOME: G10-B12-REL_ERROR; CONTENT_VERSION: TOP22-R09-20261121-FT01; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Giá trị thật 9,68 mm ghi 9,7 mm: tìm sai số tuyệt đối và phần trăm tương đối.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 \(\Delta=0{,}02\) mm; \(\delta_a=(0{,}02/9{,}7)\cdot100\%\approx0{,}206\%\).
 
-**Nếu còn vướng:** Đừng lấy độ chính xác làm sai số thật; kiểm đơn vị và việc nhân 100 để ra phần trăm.
+**Kiểm lỗi**
+
+Đừng lấy độ chính xác làm sai số thật; kiểm đơn vị và việc nhân 100 để ra phần trăm. Đọc lại **Kiến thức 1.1**, rồi tự làm **Bài luyện 2**, **Bài luyện 3**, **Bài luyện 4** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -92,13 +98,19 @@ Mốt trả lời 'giá trị gặp thường nhất' chứ không đo vị trí
 
 
 
-**Vận dụng** Mẫu 1,3,3,5,8 có trung bình và mốt nào?
+<!-- ITEM_ID: THPT-TOP22-T02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B13-MEAN; SECONDARY_OUTCOME: G10-B13-MODE; CONTENT_VERSION: TOP22-R09-20261121-FT02; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Mẫu 1,3,3,5,8 có trung bình và mốt nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Trung bình 4, mốt 3. Năm số có tổng bằng 20.
 
-**Nếu còn vướng:** Nếu nhầm mốt với trung vị, lập bảng số lần xuất hiện trước khi kết luận.
+**Kiểm lỗi**
+
+Nếu nhầm mốt với trung vị, lập bảng số lần xuất hiện trước khi kết luận. Đọc lại **Kiến thức 1.2**, rồi tự làm **Bài luyện 11**, **Bài luyện 13** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -132,13 +144,19 @@ Trên dãy thô, dùng đúng quy ước chia nửa mẫu của SGK KNTT. Với 
 
 
 
-**Vận dụng** Tìm Me, Q1, Q3 của 2,4,6,8,10,12.
+<!-- ITEM_ID: THPT-TOP22-T03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B13-MEDIAN; SECONDARY_OUTCOME: G10-B13-QUARTILES; CONTENT_VERSION: TOP22-R09-20261121-FT03; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Tìm Me, Q1, Q3 của 2,4,6,8,10,12.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Có 6 số: \(Me=(6+8)/2=7\); nửa dưới 2,4,6 có \(Q_1=4\), nửa trên 8,10,12 có \(Q_3=10\).
 
-**Nếu còn vướng:** Đánh dấu vị trí giữa và chia hai nửa sau khi đã sắp; không đoán từ thứ tự đề liệt kê.
+**Kiểm lỗi**
+
+Đánh dấu vị trí giữa và chia hai nửa sau khi đã sắp; không đoán từ thứ tự đề liệt kê. Đọc lại **Kiến thức 1.3**, rồi tự làm **Bài luyện 12**, **Bài luyện 15** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -180,13 +198,19 @@ Hàng rào \(Q_1-1{,}5IQR\) và \(Q_3+1{,}5IQR\) là quy tắc **phát hiện đ
 
 
 
-**Vận dụng** Mẫu 2,3,4,5,6,7,25 có IQR và hàng rào trên bao nhiêu?
+<!-- ITEM_ID: THPT-TOP22-T04; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B14-RANGE_IQR; SECONDARY_OUTCOME: G10-B14-OUTLIERS; CONTENT_VERSION: TOP22-R09-20261121-FT04; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Mẫu 2,3,4,5,6,7,25 có IQR và hàng rào trên bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 \(Q_1=3,Q_3=7,IQR=4\); hàng rào trên \(7+1{,}5\cdot4=13\). Số 25 vượt hàng rào.
 
-**Nếu còn vướng:** Đọc đúng Q1/Q3 trước khi gán nhãn ngoại lệ; đừng loại bỏ điểm dữ liệu chỉ vì trông khác.
+**Kiểm lỗi**
+
+Đọc đúng Q1/Q3 trước khi gán nhãn ngoại lệ; đừng loại bỏ điểm dữ liệu chỉ vì trông khác. Đọc lại **Kiến thức 1.4**, rồi tự làm **Bài luyện 21**, **Bài luyện 31** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -235,13 +259,19 @@ Vì tổng bình phương không âm, luôn \(s^2\ge0\); và \(s^2=0\) **khi và
 
 
 
-**Vận dụng** So sánh phương sai A=4,5,6 và B=2,5,8.
+<!-- ITEM_ID: THPT-TOP22-T05; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B14-VARIANCE; SECONDARY_OUTCOME: G10-B14-COMPARISON; CONTENT_VERSION: TOP22-R09-20261121-FT05; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+So sánh phương sai A=4,5,6 và B=2,5,8.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Trung bình cùng bằng 5; \(s_A^2=2/3\), \(s_B^2=6\). A ít phân tán hơn.
 
-**Nếu còn vướng:** Lập bảng x−x̄ rồi bình phương và chia đúng n; kiểm phương sai không âm.
+**Kiểm lỗi**
+
+Lập bảng x−x̄ rồi bình phương và chia đúng n; kiểm phương sai không âm. Đọc lại **Kiến thức 1.5**, rồi tự làm **Bài luyện 22**, **Bài luyện 23**, **Bài luyện 32** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -290,13 +320,19 @@ Tần số 8 trên tổng 20 nghĩa là 40% mẫu nằm trong khoảng đó. Đi
 
 
 
-**Vận dụng** Tần số của các nhóm [0,10), [10,20), [20,30) với dữ liệu 3,10,10,20,29?
+<!-- ITEM_ID: THPT-TOP22-T06; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G11-B08-FREQUENCY-TABLE; SECONDARY_OUTCOME: G11-B08-CLASS-BOUNDARIES; CONTENT_VERSION: TOP22-R09-20261121-FT06; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Tần số của các nhóm [0,10), [10,20), [20,30) với dữ liệu 3,10,10,20,29?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 1,2,2; tổng 5. Hai số 10 thuộc nhóm thứ hai.
 
-**Nếu còn vướng:** Khoanh từng quan sát theo biên trái đóng–phải mở, rồi đối chiếu tổng tần số với n.
+**Kiểm lỗi**
+
+Khoanh từng quan sát theo biên trái đóng–phải mở, rồi đối chiếu tổng tần số với n. Đọc lại **Kiến thức 2.1**, rồi tự làm **Bài luyện 38**, **Bài luyện 40**, **Bài luyện 44** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -337,13 +373,19 @@ Tần số tích lũy nối lần lượt các nhóm từ trái sang phải; nh�
 
 
 
-**Vận dụng** Nhóm [0,10):1, [10,20):2, [20,30):1: ước lượng trung bình, tích lũy.
+<!-- ITEM_ID: THPT-TOP22-T07; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G11-B09-GROUPED-MEAN; SECONDARY_OUTCOME: G11-B09-CUMULATIVE; CONTENT_VERSION: TOP22-R09-20261121-FT07; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Nhóm [0,10):1, [10,20):2, [20,30):1: ước lượng trung bình, tích lũy.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Trung điểm 5,15,25; trung bình (5+30+25)/4=15, tích lũy 1,3,4.
 
-**Nếu còn vướng:** Không lấy trung bình ba trung điểm nếu nhóm có tần số khác nhau.
+**Kiểm lỗi**
+
+Không lấy trung bình ba trung điểm nếu nhóm có tần số khác nhau. Đọc lại **Kiến thức 2.2**, rồi tự làm **Bài luyện 47**, **Bài luyện 48**, **Bài luyện 51** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -387,13 +429,19 @@ Với \(Q_1,Q_3\), thay vị trí \(p\) bằng \(n/4\) hoặc \(3n/4\) trong quy
 
 
 
-**Vận dụng** Nhóm [0,10):5, [10,20):5, [20,30):10: ước lượng Me, Q1, Q3.
+<!-- ITEM_ID: THPT-TOP22-T08; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G11-B09-GROUPED-MEDIAN; SECONDARY_OUTCOME: G11-B09-GROUPED-QUARTILES; CONTENT_VERSION: TOP22-R09-20261121-FT08; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Nhóm [0,10):5, [10,20):5, [20,30):10: ước lượng Me, Q1, Q3.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Tích lũy 5,10,20. \(Me=20,Q_1=10,Q_3=25\).
 
-**Nếu còn vướng:** Nếu chọn nhầm nhóm, tô cột tích lũy đến n/4,n/2,3n/4 trước khi nội suy.
+**Kiểm lỗi**
+
+Nếu chọn nhầm nhóm, tô cột tích lũy đến n/4,n/2,3n/4 trước khi nội suy. Đọc lại **Kiến thức 2.3**, rồi tự làm **Bài luyện 52**, **Bài luyện 53**, **Bài luyện 58** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -435,13 +483,19 @@ Từ bảng nhóm, trung bình, trung vị, tứ phân vị và mốt đều đ�
 
 
 
-**Vận dụng** Nhóm [0,10):4,[10,20):10,[20,30):6, cùng độ rộng: ước lượng mốt.
+<!-- ITEM_ID: THPT-TOP22-T09; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G11-B09-GROUPED-MODE; SECONDARY_OUTCOME: G11-B09-MODE-CONDITIONS; CONTENT_VERSION: TOP22-R09-20261121-FT09; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Nhóm [0,10):4,[10,20):10,[20,30):6, cùng độ rộng: ước lượng mốt.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Nhóm mốt [10,20); \(Mo=10+(6/(6+4))10=16\).
 
-**Nếu còn vướng:** Kiểm mẫu số dương, tần số các nhóm kề và điều kiện cùng độ rộng.
+**Kiểm lỗi**
+
+Kiểm mẫu số dương, tần số các nhóm kề và điều kiện cùng độ rộng. Đọc lại **Kiến thức 2.4**, rồi tự làm **Bài luyện 50**, **Bài luyện 54**, **Bài luyện 59** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -480,13 +534,19 @@ Chỉ một nhóm cực biên có vài quan sát cũng có thể khiến độ p
 
 
 
-**Vận dụng** Nhóm [5,15):3,[15,25):4,[25,35):1: ước lượng độ rộng phủ theo nhóm.
+<!-- ITEM_ID: THPT-TOP22-T10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B09-O01; SECONDARY_OUTCOME: G12-CHIII-B09-O02; CONTENT_VERSION: TOP22-R09-20261121-FT10; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Nhóm [5,15):3,[15,25):4,[25,35):1: ước lượng độ rộng phủ theo nhóm.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 35−5=30 đơn vị; không kết luận R thực chắc chắn bằng 30.
 
-**Nếu còn vướng:** Nếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm.
+**Kiểm lỗi**
+
+Nếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -523,13 +583,19 @@ Khi so độ ổn định hai mẫu, R cho biết độ phủ từ cực thấp 
 
 
 
-**Vận dụng** Nhóm [0,10):4,[10,20):10,[20,30):6: Q1,Q3,IQR ước lượng?
+<!-- ITEM_ID: THPT-TOP22-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B09-O04; SECONDARY_OUTCOME: G12-CHIII-B09-O05; CONTENT_VERSION: TOP22-R09-20261121-FT11; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Nhóm [0,10):4,[10,20):10,[20,30):6: Q1,Q3,IQR ước lượng?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 \(Q_1=11\), \(Q_3=20+10/6=65/3\), \(IQR_g=32/3\approx10{,}67\).
 
-**Nếu còn vướng:** Nếu sai Q1/Q3, tự kiểm nhóm chứa vị trí n/4 và 3n/4, luôn kiểm Q1≤Q3.
+**Kiểm lỗi**
+
+Nếu sai Q1/Q3, tự kiểm nhóm chứa vị trí n/4 và 3n/4, luôn kiểm Q1≤Q3. Đọc lại **Kiến thức 3.2**, rồi tự làm **Bài luyện 83**, **Bài luyện 84**, **Bài luyện 85** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -575,13 +641,19 @@ Có hai cách kiểm chéo: \(\sum f_i(c_i-\bar x_g)^2/n\) và \(\sum f_i c_i^2/
 
 
 
-**Vận dụng** Nhóm [0,10):1,[10,20):2,[20,30):1: phương sai/std nhóm?
+<!-- ITEM_ID: THPT-TOP22-T12; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B10-O02; SECONDARY_OUTCOME: G12-CHIII-B10-O03; CONTENT_VERSION: TOP22-R09-20261121-FT12; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+Nhóm [0,10):1,[10,20):2,[20,30):1: phương sai/std nhóm?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Các trung điểm 5,15,25; \(\bar x_g=15\); \(s_g^2=(100+0+100)/4=50\), \(s_g=5\sqrt2\approx7{,}071\).
 
-**Nếu còn vướng:** Đừng chia n−1 hoặc bỏ trọng số f; dùng hai công thức kiểm chéo để tránh phương sai âm.
+**Kiểm lỗi**
+
+Đừng chia n−1 hoặc bỏ trọng số f; dùng hai công thức kiểm chéo để tránh phương sai âm. Đọc lại **Kiến thức 3.3**, rồi tự làm **Bài luyện 95**, **Bài luyện 98**, **Bài luyện 106** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -615,13 +687,19 @@ Thống kê mô tả chỉ mô tả dữ liệu đã quan sát, không chứng m
 
 
 
-**Vận dụng** A có tần số 1,4,1 và B 2,2,2 trên ba nhóm trên: so sánh phương sai nhóm.
+<!-- ITEM_ID: THPT-TOP22-T13; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B10-O05; SECONDARY_OUTCOME: G12-CHIII-B10-O06; CONTENT_VERSION: TOP22-R09-20261121-FT13; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+
+**Vận dụng**
+
+A có tần số 1,4,1 và B 2,2,2 trên ba nhóm trên: so sánh phương sai nhóm.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
 Cùng \(\bar x_g=15\). \(s_A^2=100/3\), \(s_B^2=200/3\), nên A ít phân tán hơn.
 
-**Nếu còn vướng:** Không suy nhân quả từ các số mô tả; kiểm cỡ mẫu, đơn vị và cách ghép nhóm.
+**Kiểm lỗi**
+
+Không suy nhân quả từ các số mô tả; kiểm cỡ mẫu, đơn vị và cách ghép nhóm. Đọc lại **Kiến thức 3.4**, rồi tự làm **Bài luyện 108**, **Bài luyện 110**, **Bài luyện 114** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.
 
 </details>
 
@@ -2231,6 +2309,24 @@ Chín câu dưới đây giúp em ôn lại từ dữ liệu thô đến bảng 
 <!-- REUSE_PUBLIC: THPT-G12-B10-P08 NO_MASTERY NOT_RD1 -->
 
 **Câu 9.** Câu “s=16 giờ²” khi s²=16 giờ² sai ở đâu?
+
+<details markdown="1"><summary>Đối chiếu</summary>
+
+Chỉ sau khi **tự giải cả chín câu**, em tìm đến **cùng bài đã có** trong Luyện tập và tự mở `Lời giải` để kiểm tra. Đây là hoạt động tự ôn `CLIENT_SELF_CHECK_NO_MASTERY`, **không phải** đề kiểm tra độc lập hoặc điểm đánh giá chính thức.
+
+| Câu tự kiểm tra | Bài gốc có lời giải |
+| --- | --- |
+| Câu 1 | Bài luyện 3 |
+| Câu 2 | Bài luyện 13 |
+| Câu 3 | Bài luyện 23 |
+| Câu 4 | Bài luyện 40 |
+| Câu 5 | Bài luyện 52 |
+| Câu 6 | Bài luyện 54 |
+| Câu 7 | Bài luyện 73 |
+| Câu 8 | Bài luyện 97 |
+| Câu 9 | Bài luyện 105 |
+
+</details>
 
 <!-- TOPIC_SELF_CHECK_END -->
 
