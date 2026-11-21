@@ -508,7 +508,7 @@ for(const [lesson,row] of rows){
  assert(placement.includes("DELTA_C_ACADEMIC_MATERIAL")&&
   placement.includes("G10-B07-B14-KIEM-LOI-PLACEMENT-Q18-R01-20261120"),
   lesson+" signed material delta classification and receipt required");
- const sourceRows=placement.split("\n").filter(x=>x.startsWith("| "+lesson+" | "));
+ const sourceRows=placement.split("\n").filter(x=>x.startsWith("| B"+n+" | "));
  assert.equal(sourceRows.length,1,lesson+" exactly one final HELP-placement source row");
  const blobs=[...sourceRows[0].matchAll(/`([a-f0-9]{40})`/g)].map(x=>x[1]);
  assert.equal(blobs.length,2,lesson+" source predecessor and successor both signed");
