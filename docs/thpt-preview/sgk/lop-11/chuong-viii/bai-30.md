@@ -128,6 +128,34 @@
 
         **Tự sửa:** Không suy rộng ra toàn dân nếu mẫu không đại diện. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C06">Luyện lại câu B30-C06</a>
 
+    ### 1.7. Tích hợp Chương VIII: giao, hợp, độc lập và biến cố đối
+
+    Bài 28 phân biệt **giao** (cùng xảy ra), **hợp** (ít nhất một), xung khắc và độc lập. Bài 29 cho thấy xác suất hợp phải **trừ phần giao** để không đếm hai lần. Chỉ khi Bài 30 có giả thiết hoặc chứng cứ **độc lập** mới được nhân \(P(A)P(B)\) để tìm giao. Khi đề đã cho số liệu phần giao, hãy dùng chúng để *kiểm độc lập* chứ không tự giả định.
+
+    **Vận dụng — Tự thử tích hợp trước Core.** Chọn ngẫu nhiên một trong **1 000 người** được khảo sát, tất cả có khả năng được chọn như nhau. Có 400 người thuộc nhóm \(A\), 300 người thuộc nhóm \(B\), và 120 người thuộc **cả hai**. (a) Tính \(P(A)\), \(P(B)\), \(P(A\cap B)\). (b) Kiểm tra \(A\) và \(B\) có độc lập không. (c) Tính xác suất thuộc **ít nhất một** nhóm, **đúng một** nhóm và **không thuộc nhóm nào**. Tự lập bảng bốn miền trước khi mở Đối chiếu.
+
+    <span data-ped-first-try="7" data-outcome-id="G11-CHVIII-INTEGRATED" data-thpt-first-try-id="THPT-G11-B30-TRY07" hidden></span>
+
+    ??? question "Đối chiếu — bốn miền và kiểm độc lập"
+
+        **Đếm giao trước:** \(P(A)=400/1000=0{,}4\), \(P(B)=300/1000=0{,}3\), \(P(A\cap B)=120/1000=0{,}12\).
+
+        **Kiểm điều kiện nhân:** \(P(A)P(B)=0{,}4\cdot0{,}3=0{,}12=P(A\cap B)\). Do đó \(A,B\) độc lập trong mô hình này, **nhưng không xung khắc** vì phần giao \(0{,}12>0\).
+
+        **Bốn miền:** Chỉ \(A\): \(400-120=280\); chỉ \(B\): \(300-120=180\); cả hai: \(120\); không nhóm nào: \(1000-280-180-120=420\). Vì vậy \(P(A\cup B)=(400+300-120)/1000=0{,}58\), \(P(\text{đúng một})=(280+180)/1000=0{,}46\), \(P(\overline{A\cup B})=420/1000=0{,}42\).
+
+        **Kiểm tổng:** \(280+180+120+420=1000\); xác suất hợp và xác suất đối cộng thành \(0{,}58+0{,}42=1\).
+
+    <span data-thpt-help-id="HELP-G11-B30-TRY07" hidden></span>
+
+    ??? tip "Kiểm lỗi — tự giả độc lập hay quên trừ phần giao"
+
+        **Dấu hiệu:** Em lấy \(0{,}4\cdot0{,}3\) làm dữ liệu phần giao trước khi xem 120 người, hoặc cộng \(0{,}4+0{,}3\) thành xác suất hợp.
+
+        **Vì sao sai:** Độc lập là điều cần **kiểm** từ giao và hai xác suất đã cho; công thức cộng hợp luôn trừ phần bị đếm hai lần.
+
+        **Tự sửa:** Vẽ bốn miền *chỉ A / chỉ B / cả hai / không nhóm nào*, kiểm tổng 1 000; so sánh giao thực tế với tích để xác định độc lập. Ôn Bài 28–30 rồi tự giải câu Practice tích hợp `THPT-G11-CHVIII-CHVIII-P01` tại <a href="../luyen-tap/?item=THPT-G11-CHVIII-CHVIII-P01">Core và Luyện tập</a> sau khi thử.
+
 === "Kiến thức SGK"
 
     ### 2.1. Công thức nhân xác suất cho hai biến cố độc lập
@@ -180,6 +208,15 @@
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B30-R02-07"><p><strong>Đề bài:</strong> Khảo sát 200 người: trong 80 người dùng xe buýt có 24 người mang ô; trong 120 người không dùng xe buýt có 56 người mang ô. Chọn đều một người. Hai biến cố dùng xe buýt và mang ô có độc lập không?</p><p><strong>Phân tích:</strong> Lập bảng hai chiều. Mỗi ô trong thân bảng đếm đúng một nhóm; đọc giao ở ô 24, xác suất biên từ hàng/cột tổng.</p><table><thead><tr><th scope="col">Phương tiện</th><th scope="col">Mang ô</th><th scope="col">Không mang ô</th><th scope="col">Tổng</th></tr></thead><tbody><tr><th scope="row">Xe buýt</th><td>24</td><td>56</td><td>80</td></tr><tr><th scope="row">Không đi xe buýt</th><td>56</td><td>64</td><td>120</td></tr><tr><th scope="row">Tổng</th><td>80</td><td>120</td><td>200</td></tr></tbody></table><p><strong>Lời giải:</strong> P(A)=80/200=0,4; P(B)=80/200=0,4; P(AB)=24/200=0,12 ≠ 0,16. Không độc lập trong phân bố khảo sát.</p><p><strong>Kiểm lại:</strong> Hàng tổng 80,120; cột tổng 80,120; tổng 200. Không kết luận xe buýt gây ảnh hưởng đến việc mang ô.</p></div>
 
+    ### 3.8. Tích hợp hai phép thử độc lập, giao và đúng một
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B30-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Hai thiết bị hoạt động độc lập. Xác suất thiết bị thứ nhất tốt là \(3/4\), thứ hai tốt là \(2/3\). Tính xác suất cả hai tốt, ít nhất một tốt và đúng một tốt.</p>
+    <p><strong>Chọn phương pháp:</strong> Giả thiết xác nhận độc lập, nên có thể nhân để tính giao. “Ít nhất một” dùng biến cố đối cả hai hỏng; “đúng một” chia thành hai trường hợp xung khắc.</p>
+    <p><strong>Lời giải:</strong> Gọi \(A,B\) lần lượt là hai thiết bị tốt. \(P(A\cap B)=\frac34\frac23=\frac12\). Vì hai biến cố đối cũng độc lập, \(P(A\cup B)=1-P(\overline A\cap\overline B)=1-\frac14\frac13=\frac{11}{12}\). Xác suất đúng một tốt là \(P(A\cap\overline B)+P(\overline A\cap B)=\frac34\frac13+\frac14\frac23=\frac14+\frac16=\frac5{12}\).</p>
+    <p><strong>Kiểm lại:</strong> Cả hai tốt \(6/12\), đúng một tốt \(5/12\), cả hai hỏng \(1/12\), tổng \(12/12=1\). Hai biến cố tốt **không xung khắc**: xác suất cả hai tốt là \(1/2\) khác 0.</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G11-CHVIII-B30-01" hidden></span>
@@ -199,6 +236,16 @@
     ??? tip "4.3. Suy độc lập từ tên biến cố"
     
         Tính ba xác suất rồi so tích, xem 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-P02">Luyện lại câu B30-P02</a>
+
+    <span data-thpt-help-id="HELP-G11-B30-INTEGRATED" hidden></span>
+
+    ??? tip "4.4. Lẫn lộn độc lập, xung khắc và biến cố đối"
+
+        **Dấu hiệu:** Em gọi hai biến cố độc lập là không thể xảy ra cùng lúc hoặc bỏ phần giao khi cộng hợp.
+
+        **Vì sao sai:** Độc lập liên quan điều kiện \(P(A\cap B)=P(A)P(B)\); xung khắc đòi \(P(A\cap B)=0\). Hai khái niệm khác nhau.
+
+        **Tự sửa:** Ôn §1.7 và Ví dụ 3.8, đếm bốn miền rồi quay về <a href="../luyen-tap/?item=THPT-G11-CHVIII-CHVIII-P01">Practice tích hợp gốc</a> trước khi mở lời giải.
 
     [Core và Luyện tập Bài 30](luyen-tap.md) · <a href="../../../thu-vien/tu-luan-g11-chuong-viii.md">Tự luận Chương VIII</a> · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
