@@ -9,13 +9,13 @@ LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 STATE: CONTENT_READY
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
-SOURCE_COMMIT: d447a41fe249954e57ff243944f5a1f59260012e
+SOURCE_COMMIT: b6a5380a6747985a4c3efae66854903c2340bb80
 AUTHOR_PR: 1008
 CURRENT_PR: #1008 Draft AUTHORING (source locked; no integration or release)
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_R02_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-ACADEMIC_SOURCE_BLOB: bc90bd1b544a51675ee1d66b4f0c27758d55e1cb
+ACADEMIC_SOURCE_BLOB: 26cf102bc8aebf274c9791b42772c5edf7154e7c
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md
-REVIEW_RECEIPT_BLOB: 6cc05a5789cf64917afe31a0f0c8e6573bb30741
+REVIEW_RECEIPT_BLOB: 8b3a6287d6586d4b73a6418d63b683e08697b50f
 REVIEW_RECEIPT: prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G12-SGK-CHV-B14-B17-R02_HANDOFF_V2_20261122.md
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -32,9 +32,9 @@ RELEASE_AUTHORIZATION: NO
 **Scope:** the new R02 authoring **content** replaces neither the R01 immutable historical ready packet nor the original four learner Markdown paths. The source SHA is a manifest pointing to exact unchanged canonical paths + current bank; do not render this manifest as a second lesson. Four complete SGK lessons B14–B17, 27 canonical outcomes (26 mandatory + 1 optional after B17) and 108 canonical items /27 each role with 27 five-step D6 and 27 existing Application-ID public END references. Author self-verifies v3.2.0; not an independent reviewer-only approval.
 
 ## AUTHORING A1–A7 — source evidence signed in this pass
-- [x] A1_SOURCE_SNAPSHOT — Bundle `bc90bd1b544a51675ee1d66b4f0c27758d55e1cb` lists 16 exact immutable learner/bank/SVG source path+blob pairs; four canonical lessons, optional after B17 and only one public bank. R01 source/receipt untouched.
+- [x] A1_SOURCE_SNAPSHOT — Bundle `26cf102bc8aebf274c9791b42772c5edf7154e7c` lists 16 exact immutable learner/bank/SVG source path+blob pairs; four canonical lessons, optional after B17 and only one public bank. R01 source/receipt untouched.
 - [x] A2_SGK_SBT_SCOPE — Original SGK 12 KNTT Tập hai printed29–60 directly visual read; SBT original printed B14 21–24, B15 26–29, B16 30–32, B17 32–35. Printed SBT p25 absent, `SBT_REFERENCE_GAP_DOCUMENTED`; secondary 5.6/5.7 corroborated, not counterfeit original SBT custody; no mandatory S1 content missing.
-- [x] A3_NOTEBOOKLM_VERDICT — `AUTHOR_SELF_VERIFIED` Q18 in receipt `6cc05a5789cf64917afe31a0f0c8e6573bb30741` source-locks R02 and 197/197 limited math cases, 101/101 local structural checks, 18/18 bank global invariants. No invented independent R02 reviewer verdict.
+- [x] A3_NOTEBOOKLM_VERDICT — `AUTHOR_SELF_VERIFIED` Q18 in receipt `8b3a6287d6586d4b73a6418d63b683e08697b50f` source-locks R02 and 197/197 limited math cases, 101/101 local structural checks, 18/18 bank global invariants. No invented independent R02 reviewer verdict.
 - [x] A4_ITEM_OUTCOME_IDS — 27 outcomes, 108 unique canonical public items 27 x four roles, 27 public END reuse-only references, 27 HELP, optional B14 O07 only after B17; no duplicated question or separate readiness.
 - [x] A5_D1_D6_SCOPE — Four full theory+FirstTry+formal+worked+repair lesson flows, 45 worked examples, ten SVG source locks, 27 five-step D6, 27 Written rubric /5; SGK B14 trigonometric locus O08, B15 finite screen O08 and B17 geography O06 deeply exercised in new roles.
 - [x] A6_DELTA_RESOLVED — Actual Delta-C repairs independently recomputed and audited on affected source, B15 W05 perpendicular/skew, 12 new public questions, source-aligned FirstTry recovery and maths; other original 96 item IDs preserved, R01 PASS untouched.
@@ -49,7 +49,11 @@ RELEASE_AUTHORIZATION: NO
 - [x] PED6_FIRST_TRY_REMEDIATION — 27 mandatory local FirstTry with hidden compare and same-outcome CORE/PRACTICE recovery, one post-B17 optional; 27 canonical five-step D6 loops, without claiming Mastery or independent held-out exam.
 
 ## QUALITY_Q01_Q18_EVIDENCE
-One standard: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` v3.2.0. The **full 18-row signed** Q01–Q18 table plus 108-item matrix lives in `prototypes/thpt/release-handoffs/G12-SGK-CHV-B14-B17-R02_HANDOFF_V2_20261122.md` and points to `ACADEMIC_SOURCE_BLOB=bc90bd1b544a51675ee1d66b4f0c27758d55e1cb`, `REVIEW_RECEIPT_PATH=prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md`. AUTHORING has signed its academic/PED Q18 evidence, not RELEASE Q16 interaction or browser AP/R.
+One standard: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` v3.2.0. The **full 18-row signed** Q01–Q18 table plus 108-item matrix lives in `prototypes/thpt/release-handoffs/G12-SGK-CHV-B14-B17-R02_HANDOFF_V2_20261122.md` and points to `ACADEMIC_SOURCE_BLOB=26cf102bc8aebf274c9791b42772c5edf7154e7c`, `REVIEW_RECEIPT_PATH=prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md`. AUTHORING has signed its academic/PED Q18 evidence, not RELEASE Q16 interaction or browser AP/R.
+
+## SOURCE_EQUIVALENT_NAV_LINK_RELOCK
+
+All **129** relative source links changed only from Markdown link syntax to equivalent HTML anchor syntax. URL/fragment, visible learner text, academic content, item IDs and answers unchanged. Exact current SOURCE_BLOB `26cf102bc8aebf274c9791b42772c5edf7154e7c`, Q18 receipt `8b3a6287d6586d4b73a6418d63b683e08697b50f`, source commit after link conversion `b6a5380a6747985a4c3efae66854903c2340bb80`. Raw-Markdown curriculum validator formerly misread MkDocs clean URLs as filesystem folders; no additional Academic/PED review on equivalent markup. R3/AP4 rendered routes and dynamic anchors still RELEASE-owned checks.
 
 ## RELEASE R1–R5 / AP1–AP5 / P1–P2 — outside AUTHORING
 - [ ] R1_INTEGRATED_CURRENT_MAIN — RELEASE imports same original learner Markdown, 10 SVG and 108-item one bank and reconciles source/receipt locks without modifying math.
