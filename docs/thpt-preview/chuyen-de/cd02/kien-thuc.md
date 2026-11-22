@@ -75,7 +75,7 @@ Giải \(-3(x-2)\ge6\). Hãy giải thích bước nào buộc đổi chiều d�
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Khai triển \(-3x+6\ge6\), suy ra \(-3x\ge0\). Chia cho \(-3<0\), ta được \(x\le0\), kể cả \(x=0\) vì dấu ban đầu có bằng. Nếu em viết \(x\ge0\), hãy thử \(x=1\) trong đề gốc để thấy kết luận sai.
+Khai triển \(-3x+6\ge6\), suy ra \(-3x\ge0\). Chia cho \(-3&lt;0\), ta được \(x\le0\), kể cả \(x=0\) vì dấu ban đầu có bằng. Nếu em viết \(x\ge0\), hãy thử \(x=1\) trong đề gốc để thấy kết luận sai.
 
 **Kiểm lỗi**
 
@@ -153,13 +153,13 @@ Xét ví dụ: 2x²+2x+3 có Δ=−20<0, a=2>0 ⇒ luôn dương; hoàn phương
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-−[(x−1)²+2]<0 mọi x.
+−[(x−1)²+2]&lt;0 mọi x.
 
-Nếu kết luận ‘không có nghiệm vì Δ<0’, thử x=0 trước khi quyết định.
+Nếu kết luận ‘không có nghiệm vì Δ&lt;0’, thử x=0 trước khi quyết định.
 
 **Kiểm lỗi**
 
-Nếu thấy \(\Delta<0\) rồi kết luận biểu thức không dương hay âm ở đâu cả, em đã nhầm **không có nghiệm bằng 0** với **không có dấu**. Đọc **Kiến thức 2.2**, thử **Bài 5** và **Bài 6** bằng cách hoàn phương.
+Nếu thấy \(\Delta&lt;0\) rồi kết luận biểu thức không dương hay âm ở đâu cả, em đã nhầm **không có nghiệm bằng 0** với **không có dấu**. Đọc **Kiến thức 2.2**, thử **Bài 5** và **Bài 6** bằng cách hoàn phương.
 
 </details>
 
@@ -217,7 +217,7 @@ Giải −(x+1)(x−4)>0.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-−1<x<4, không lấy −1,4.
+−1&lt;x&lt;4, không lấy −1,4.
 
 Nếu sai, thử một x nằm giữa nghiệm để đối chiếu dấu của hai thừa số.
 
@@ -251,7 +251,7 @@ Giải −x²+4x−3>0.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-1<x<3 vì −(x−1)(x−3)>0.
+1&lt;x&lt;3 vì −(x−1)(x−3)>0.
 
 Nếu em lấy nhầm hai đầu mút \(x=1\) hoặc \(x=3\) cho bất phương trình \(-x^2+4x-3>0\), hãy thế lại: ở cả hai điểm, vế trái bằng \(0\), nên **không thỏa dấu \(>0\)**. Dấu \(\ge0\) mới cho phép lấy hai đầu mút.
 
@@ -287,7 +287,7 @@ Nếu đang xét dấu nghiêm \(>0\) mà vẫn nhận biên \(\Delta=0\), hãy 
 
 **Kiểm lỗi**
 
-Nếu em nhận cả \(m=\pm3\) khi yêu cầu tam thức **dương nghiêm ngặt với mọi x**, em đã nhầm \(\Delta<0\) với \(\Delta\le0\). Xem lại **Kiến thức 2.6**, giải **Bài 13** và **Bài 14**, rồi tự luận **Bài 17** để kiểm trực tiếp giá trị tại nghiệm kép.
+Nếu em nhận cả \(m=\pm3\) khi yêu cầu tam thức **dương nghiêm ngặt với mọi x**, em đã nhầm \(\Delta&lt;0\) với \(\Delta\le0\). Xem lại **Kiến thức 2.6**, giải **Bài 13** và **Bài 14**, rồi tự luận **Bài 17** để kiểm trực tiếp giá trị tại nghiệm kép.
 
 </details>
 
@@ -351,7 +351,7 @@ Hãy kiểm tra trường hợp sau: 0x+2y≥4 vẫn bậc nhất hai ẩn, tư�
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Hợp lệ, (a,b)=(−1,0)≠(0,0); 0<1 đúng.
+Hợp lệ, (a,b)=(−1,0)≠(0,0); 0&lt;1 đúng.
 
 Nếu nghĩ bắt buộc có cả x và y, kiểm điều kiện hệ số không đồng thời bằng 0.
 
