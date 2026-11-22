@@ -24,7 +24,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đọc dấu tọa độ tâm ngược với dấu trong ngoặc; R=5 chứ không phải 25. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p01). Sau đó tự làm lại Vận dụng.
+        Đọc dấu tọa độ tâm ngược với dấu trong ngoặc; R=5 chứ không phải 25. <a href="../luyen-tap/#thpt-g12-b17-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.2. Hoàn thành bình phương và nhận diện
     
@@ -42,7 +42,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Cộng đúng bình phương nửa hệ số tuyến tính; R²=0 chỉ là điểm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p02). Sau đó tự làm lại Vận dụng.
+        Cộng đúng bình phương nửa hệ số tuyến tính; R²=0 chỉ là điểm. <a href="../luyen-tap/#thpt-g12-b17-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.3. Trong, trên, ngoài
     
@@ -60,7 +60,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        So bình phương với bình phương, không so IM² với R. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p03). Sau đó tự làm lại Vận dụng.
+        So bình phương với bình phương, không so IM² với R. <a href="../luyen-tap/#thpt-g12-b17-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.4. Đường kính xác định tâm
     
@@ -78,7 +78,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Nếu A=B không có mặt cầu bán kính dương. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p04). Sau đó tự làm lại Vận dụng.
+        Nếu A=B không có mặt cầu bán kính dương. <a href="../luyen-tap/#thpt-g12-b17-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.5. Tiếp xúc và khoảng cách tâm–mặt
     
@@ -96,7 +96,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm tiếp điểm vừa thuộc mặt phẳng vừa cách tâm R. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p05). Sau đó tự làm lại Vận dụng.
+        Kiểm tiếp điểm vừa thuộc mặt phẳng vừa cách tâm R. <a href="../luyen-tap/#thpt-g12-b17-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.6. Từ vĩ độ, kinh độ tới tọa độ
     
@@ -116,7 +116,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn [Core tọa độ địa lí](../luyen-tap/#thpt-g12-b17-c06) và [Luyện tập khoảng cách mặt cầu](../luyen-tap/#thpt-g12-b17-p06), đều thuộc đúng outcome địa lí. Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
+        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn <a href="../luyen-tap/#thpt-g12-b17-c06">Core tọa độ địa lí</a> và <a href="../luyen-tap/#thpt-g12-b17-p06">Luyện tập khoảng cách mặt cầu</a>, đều thuộc đúng outcome địa lí. Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
 
     ### 1.7. Khoảng cách ngắn nhất trên bề mặt Trái Đất
     
@@ -136,7 +136,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn [Core địa lí](../luyen-tap/#thpt-g12-b17-c06) và [Luyện tập tính cung](../luyen-tap/#thpt-g12-b17-p06); nếu quên tích vô hướng, xem [Bài 16](../bai-16/). Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
+        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn <a href="../luyen-tap/#thpt-g12-b17-c06">Core địa lí</a> và <a href="../luyen-tap/#thpt-g12-b17-p06">Luyện tập tính cung</a>; nếu quên tích vô hướng, xem <a href="../bai-16/">Bài 16</a>. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
 
 === "Kiến thức SGK"
 
@@ -204,44 +204,44 @@
     
     ??? tip "Cách tự sửa"
     
-        Đọc dấu tọa độ tâm ngược với dấu trong ngoặc; R=5 chứ không phải 25. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p01). Sau đó tự làm lại Vận dụng.
+        Đọc dấu tọa độ tâm ngược với dấu trong ngoặc; R=5 chứ không phải 25. <a href="../luyen-tap/#thpt-g12-b17-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.2. Hoàn thành bình phương và nhận diện
     
     ??? tip "Cách tự sửa"
     
-        Cộng đúng bình phương nửa hệ số tuyến tính; R²=0 chỉ là điểm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p02). Sau đó tự làm lại Vận dụng.
+        Cộng đúng bình phương nửa hệ số tuyến tính; R²=0 chỉ là điểm. <a href="../luyen-tap/#thpt-g12-b17-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.3. Trong, trên, ngoài
     
     ??? tip "Cách tự sửa"
     
-        So bình phương với bình phương, không so IM² với R. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p03). Sau đó tự làm lại Vận dụng.
+        So bình phương với bình phương, không so IM² với R. <a href="../luyen-tap/#thpt-g12-b17-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.4. Đường kính xác định tâm
     
     ??? tip "Cách tự sửa"
     
-        Nếu A=B không có mặt cầu bán kính dương. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p04). Sau đó tự làm lại Vận dụng.
+        Nếu A=B không có mặt cầu bán kính dương. <a href="../luyen-tap/#thpt-g12-b17-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.5. Tiếp xúc và khoảng cách tâm–mặt
     
     ??? tip "Cách tự sửa"
     
-        Kiểm tiếp điểm vừa thuộc mặt phẳng vừa cách tâm R. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p05). Sau đó tự làm lại Vận dụng.
+        Kiểm tiếp điểm vừa thuộc mặt phẳng vừa cách tâm R. <a href="../luyen-tap/#thpt-g12-b17-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b17-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.6. Từ vĩ độ, kinh độ tới tọa độ
     
     ??? tip "Cách tự sửa"
     
-        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn [Core tọa độ địa lí](../luyen-tap/#thpt-g12-b17-c06) và [Luyện tập khoảng cách mặt cầu](../luyen-tap/#thpt-g12-b17-p06), đều thuộc đúng outcome địa lí. Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
+        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn <a href="../luyen-tap/#thpt-g12-b17-c06">Core tọa độ địa lí</a> và <a href="../luyen-tap/#thpt-g12-b17-p06">Luyện tập khoảng cách mặt cầu</a>, đều thuộc đúng outcome địa lí. Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
 
     ### 4.7. Khoảng cách ngắn nhất trên bề mặt Trái Đất
     
     ??? tip "Cách tự sửa"
     
-        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn [Core địa lí](../luyen-tap/#thpt-g12-b17-c06) và [Luyện tập tính cung](../luyen-tap/#thpt-g12-b17-p06); nếu quên tích vô hướng, xem [Bài 16](../bai-16/). Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
+        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn <a href="../luyen-tap/#thpt-g12-b17-c06">Core địa lí</a> và <a href="../luyen-tap/#thpt-g12-b17-p06">Luyện tập tính cung</a>; nếu quên tích vô hướng, xem <a href="../bai-16/">Bài 16</a>. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
 
-    [Core Bài 17](../luyen-tap/#b17-core) · [Luyện tập và Tự luận](../luyen-tap/#b17-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b17-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Mở rộng không bắt buộc sau B17](../mo-rong-sau-bai-17/)
+    <a href="../luyen-tap/#b17-core">Core Bài 17</a> · <a href="../luyen-tap/#b17-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b17-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../mo-rong-sau-bai-17/">Mở rộng không bắt buộc sau B17</a>
 
 *Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 54–60; SBT trang in 32–35.*
