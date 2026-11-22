@@ -42,7 +42,7 @@
 
     ### 1.1. Khái niệm phương trình tương đương
 
-    Trước khi tìm nghiệm lượng giác, ta cần biết khi nào được thay một phương trình bằng phương trình khác. Chẳng hạn \(2x-4=0\) có nghiệm duy nhất \(x=2\). Phương trình \((x-2)(x^2+1)=0\) cũng chỉ có nghiệm thực \(x=2\), bởi \(x^2+1>0\) với mọi \(x\). Hai phương trình có hình thức khác nhau nhưng cùng tập nghiệm, nên được gọi là **tương đương**.
+    Bốn dạng \(\sin x=m\), \(\cos x=m\), \(\tan x=m\), \(\cot x=m\) được gọi là những **phương trình lượng giác cơ bản**, vì ẩn nằm trong biểu thức sin, cos, tan hoặc cot. Tìm nghiệm nghĩa là tìm **mọi giá trị làm hai vế cùng có nghĩa và bằng nhau**. Trước khi tìm nghiệm lượng giác, ta cần biết khi nào được thay một phương trình bằng phương trình khác. Chẳng hạn \(2x-4=0\) có nghiệm duy nhất \(x=2\). Phương trình \((x-2)(x^2+1)=0\) cũng chỉ có nghiệm thực \(x=2\), bởi \(x^2+1>0\) với mọi \(x\). Hai phương trình có hình thức khác nhau nhưng cùng tập nghiệm, nên được gọi là **tương đương**.
 
     Không phải phép biến đổi nào nhìn có vẻ hợp lí cũng giữ nguyên tập nghiệm. Nhân hai vế của \(x=1\) với \(x-2\) cho \(x(x-2)=x-2\), tương đương \((x-1)(x-2)=0\): bất ngờ xuất hiện nghiệm \(x=2\) không có ở bài ban đầu. Nguyên nhân là ta nhân với biểu thức có thể bằng \(0\). Đối với phương trình lượng giác, kiểm tra miền xác định và điều kiện phép biến đổi chính là hàng rào chống **thêm hoặc bỏ nghiệm**.
 
@@ -147,6 +147,8 @@
 === "Kiến thức SGK"
 
     ### 2.1. Khái niệm phương trình tương đương
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Phương trình lượng giác cơ bản</strong><p><strong>Phương trình lượng giác</strong> là phương trình có ẩn nằm trong biểu thức của một hàm số lượng giác. Các dạng <strong>cơ bản</strong> của bài là \(\sin x=m\), \(\cos x=m\), \(\tan x=m\), \(\cot x=m\), với \(m\in\mathbb R\). Giải phương trình nghĩa là tìm <strong>tất cả các giá trị thực của ẩn</strong> để hai vế xác định và bằng nhau.</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hai phương trình tương đương</strong><p>Hai phương trình (trên cùng tập số đang xét) được gọi là <strong>tương đương</strong> khi chúng có <strong>cùng tập nghiệm</strong>. Kí hiệu \(f(x)=0\ \Leftrightarrow\ g(x)=0\) khi hai phương trình tương đương. Hai phương trình cùng vô nghiệm cũng tương đương.</p></div>
 
