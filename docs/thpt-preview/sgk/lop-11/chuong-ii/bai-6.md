@@ -28,7 +28,7 @@
 
         **Dấu hiệu:** Em lấy \(u_2/u_1=15/11\) làm công sai hoặc chỉ quan sát vài số đầu.
 
-        **Tự sửa:** Ghi \(u_{n+1}-u_n\) trước, rút gọn cho mọi \(n\), tìm hằng \(d\). Ôn mục 2.1; giải Core nhận diện dãy \(11,7,3,-1,\ldots\) rồi thử Practice \(u_n=3n^2+1\) ở [Bài 6 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ghi \(u_{n+1}-u_n\) trước, rút gọn cho mọi \(n\), tìm hằng \(d\). Ôn mục 2.1; giải Core nhận diện dãy \(11,7,3,-1,\ldots\) rồi thử Practice \(u_n=3n^2+1\) ở <a href="../luyen-tap/">Bài 6 – Luyện tập</a>.
 
     ### 1.2. Vì sao công thức số hạng thứ \(n\) có \(n-1\)?
 
@@ -48,7 +48,7 @@
 
         **Dấu hiệu:** Em tính \(13-2\cdot7=-1\) hoặc đổi dấu khi \(d<0\).
 
-        **Tự sửa:** Vẽ trục chỉ số \(1\to7\), đánh dấu sáu mũi tên; ôn mục 2.2, sau đó làm Core \(u_1=6,d=3\) tìm \(u_9\) và Practice tìm số hạng từ \(u_3,u_8\) ở [Bài 6 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Vẽ trục chỉ số \(1\to7\), đánh dấu sáu mũi tên; ôn mục 2.2, sau đó làm Core \(u_1=6,d=3\) tìm \(u_9\) và Practice tìm số hạng từ \(u_3,u_8\) ở <a href="../luyen-tap/">Bài 6 – Luyện tập</a>.
 
     ### 1.3. Số ở giữa bằng trung bình cộng hai số kề
 
@@ -68,7 +68,7 @@
 
         **Dấu hiệu:** Em chọn \(x=\sqrt{4\cdot20}\) như trung bình nhân hoặc lấy \(x=20-4\).
 
-        **Tự sửa:** Xuất phát từ **hai hiệu bằng nhau** \(x-4=20-x\), không từ tỉ số. Ôn mục 2.1; thử Core \(6,x,14\) và Practice ba biểu thức chứa \(x\) ở [Bài 6 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Xuất phát từ **hai hiệu bằng nhau** \(x-4=20-x\), không từ tỉ số. Ôn mục 2.1; thử Core \(6,x,14\) và Practice ba biểu thức chứa \(x\) ở <a href="../luyen-tap/">Bài 6 – Luyện tập</a>.
 
     ### 1.4. Ghép cặp hai đầu để hiểu công thức tổng
 
@@ -95,7 +95,7 @@
 
         **Dấu hiệu:** Em dùng \(8\cdot31\) làm tổng hoặc chia hai lần.
 
-        **Tự sửa:** Phân biệt \(u_n\) là **một số hạng**, \(S_n\) là **tổng**. Ôn mục 2.3 và bảng ghép cặp; luyện Core tổng \(2,4,6,8,10\) và Practice cấp số cộng có \(u_1=9,d=-2\) ở [Bài 6 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Phân biệt \(u_n\) là **một số hạng**, \(S_n\) là **tổng**. Ôn mục 2.3 và bảng ghép cặp; luyện Core tổng \(2,4,6,8,10\) và Practice cấp số cộng có \(u_1=9,d=-2\) ở <a href="../luyen-tap/">Bài 6 – Luyện tập</a>.
 
     ### 1.5. Ứng dụng: công việc tăng đều theo từng tuần
 
@@ -115,7 +115,7 @@
 
         **Dấu hiệu:** Em trả lời \(22\) cho cả hai câu hoặc tính tổng đến tuần thứ bảy.
 
-        **Tự sửa:** Ghi rõ \(u_6\) và \(S_6\) trước khi thay; ôn mục 2.2–2.3, rồi luyện Practice bài tiền thưởng tăng cố định qua 10 tháng tại [Bài 6 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ghi rõ \(u_6\) và \(S_6\) trước khi thay; ôn mục 2.2–2.3, rồi luyện Practice bài tiền thưởng tăng cố định qua 10 tháng tại <a href="../luyen-tap/">Bài 6 – Luyện tập</a>.
 
     ### 1.6. Khi chỉ biết hai số hạng cách xa nhau
 
@@ -135,7 +135,7 @@
 
         **Dấu hiệu:** Em dùng \(7-3=4\) như số bước nhưng lại chia cho \(7\), hoặc lấy \(u_1=u_3-3d\).
 
-        **Tự sửa:** Vẽ các vị trí \(1,3,7,10\); từ \(u_1\) đến \(u_3\) chỉ có hai bước. Ôn mục 2.2 rồi luyện Practice bài \(u_3=10,u_8=30\) ở [Core và Luyện tập Bài 6](../luyen-tap/).
+        **Tự sửa:** Vẽ các vị trí \(1,3,7,10\); từ \(u_1\) đến \(u_3\) chỉ có hai bước. Ôn mục 2.2 rồi luyện Practice bài \(u_3=10,u_8=30\) ở <a href="../luyen-tap/">Core và Luyện tập Bài 6</a>.
 
 === "Kiến thức SGK"
 
@@ -252,7 +252,7 @@
 
         **Vì sao sai:** Cấp số cộng có **hiệu** liên tiếp không đổi, không chỉ tăng. Tăng là tính đơn điệu; cấp số cộng là một quy luật chặt hơn.
 
-        **Tự sửa:** Ôn mục 2.1, tính \(u_{n+1}-u_n\) rồi thử Core dãy \(11,7,3,-1\) và Practice dãy \(3n^2+1\) ở [Core và Luyện tập Bài 6](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.1, tính \(u_{n+1}-u_n\) rồi thử Core dãy \(11,7,3,-1\) và Practice dãy \(3n^2+1\) ở <a href="../luyen-tap/">Core và Luyện tập Bài 6</a>.
 
     <span data-thpt-help-id="HELP-G11-B06-02" hidden></span>
 
@@ -262,7 +262,7 @@
 
         **Vì sao sai:** Từ số hạng đầu đến thứ \(n\) chỉ đi qua \(n-1\) khoảng.
 
-        **Tự sửa:** Thử công thức tại \(n=1\) để phát hiện lỗi; ôn mục 2.2 và Ví dụ 3.2, rồi luyện Core tìm \(u_9\) khi biết \(u_1,d\) ở [Bài 6 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Thử công thức tại \(n=1\) để phát hiện lỗi; ôn mục 2.2 và Ví dụ 3.2, rồi luyện Core tìm \(u_9\) khi biết \(u_1,d\) ở <a href="../luyen-tap/">Bài 6 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B06-03" hidden></span>
 
@@ -272,7 +272,7 @@
 
         **Vì sao sai:** \(u_n\) là một lượng ở một vị trí; \(S_n\) cộng mọi số hạng từ \(1\) tới \(n\).
 
-        **Tự sửa:** Viết kí hiệu trước khi thế; ôn mục 2.3/ bảng ghép cặp, luyện Core tính \(S_5\) và Practice \(S_8\) công sai âm tại [Bài 6 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Viết kí hiệu trước khi thế; ôn mục 2.3/ bảng ghép cặp, luyện Core tính \(S_5\) và Practice \(S_8\) công sai âm tại <a href="../luyen-tap/">Bài 6 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B06-04" hidden></span>
 
@@ -282,8 +282,8 @@
 
         **Vì sao sai:** Trung bình **cộng** đến từ hai hiệu liên tiếp bằng nhau; trung bình nhân thuộc cấu trúc nhân ở Bài 7 và còn có điều kiện.
 
-        **Tự sửa:** Xuất phát từ \(u_n-u_{n-1}=u_{n+1}-u_n\). Ôn mục 2.1, thử Core ba số \(6,x,14\) hoặc Practice ba biểu thức \(2x-1,x+5,3x+1\) tại [Luyện tập Bài 6](../luyen-tap/).
+        **Tự sửa:** Xuất phát từ \(u_n-u_{n-1}=u_{n+1}-u_n\). Ôn mục 2.1, thử Core ba số \(6,x,14\) hoặc Practice ba biểu thức \(2x-1,x+5,3x+1\) tại <a href="../luyen-tap/">Luyện tập Bài 6</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương II](../../../../thu-vien/tu-luan-g11-chuong-ii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-ii/">Tự luận Chương II</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 6 (trang in 48–51).</p>
