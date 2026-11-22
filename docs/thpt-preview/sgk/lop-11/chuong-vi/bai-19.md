@@ -6,7 +6,7 @@
 
     Bài 18 trả lời câu hỏi “nâng cơ số lên số mũ đã biết thì được bao nhiêu?”. Bây giờ, biết kết quả mà chưa biết số mũ, chẳng hạn muốn biết một khoản đầu tư cần bao nhiêu kỳ để tăng gấp ba, ta cần phép tính ngược. Lôgarit giải quyết đúng câu hỏi đó. Kiến thức tiền đề: lũy thừa số mũ thực, tính dương và quy tắc nhân lũy thừa.
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg" alt="Sơ đồ hai chiều giữa lũy thừa và lôgarit cơ số 2"><figcaption>Đọc hình từ trái sang phải: \(2^3=8\). Đọc ngược: \(\log_2 8=3\). Mũ là kết quả của phép lôgarit, không phải thương hai số. Kiểm cơ số dương khác 1 và đối số dương trước khi đọc.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg" alt="Sơ đồ hai chiều giữa lũy thừa và lôgarit cơ số 2"><figcaption>Đọc hình: đi từ trái sang phải để đọc \(2^3=8\). Đọc ngược: \(\log_2 8=3\). Mũ là kết quả của phép lôgarit, không phải thương hai số. Kiểm cơ số dương khác 1 và đối số dương trước khi đọc.</figcaption></figure>
 
     ### 1.1. Lôgarit trả về số mũ
 
