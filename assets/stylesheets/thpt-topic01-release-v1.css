@@ -1,0 +1,82 @@
+/* DELTA_A_UI: CĐ01 only. Golden reference 20261122.1. SGK components unchanged. */
+.topic01-release-nav{max-width:100%;margin:0 0 18px}
+.topic01-release-nav .topic01-back{font-size:.8rem}
+.topic01-assessment-note,.topic01-legacy-note{padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;background:var(--md-code-bg-color);font-size:.8rem;line-height:1.6}
+.topic01-end-nav{margin-top:30px;padding-top:14px;border-top:1px solid var(--md-default-fg-color--lightest)}
+.md-typeset.topic01-golden-knowledge{font-size:.8rem;line-height:1.6;--slm-g10-line:var(--md-default-fg-color--lightest)}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout,
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-panel{min-width:0;max-width:100%;width:100%;box-sizing:border-box;font-size:inherit}
+.topic01-knowledge-layout .thpt-r4-knowledge-panel[hidden],#topic01-current-solution[hidden],[data-topic01-source-shelf][hidden],[data-topic01-selfcheck-source][hidden]{display:none!important}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs{display:flex;flex-wrap:nowrap;grid-template-columns:none;overflow-x:auto;overflow-y:hidden;min-width:0;max-width:100%;width:100%;box-sizing:border-box;gap:8px;padding:12px 2px;border-bottom:1px solid #cfdaee}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{flex:0 0 auto;width:auto;max-width:none;white-space:nowrap;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;height:44px;min-height:44px;font-size:15px;line-height:1.45;padding:9px 13px;border-radius:9px;font-weight:700;letter-spacing:normal;border:1px solid #cdd8ec;background:#edf2fb;color:#2d426f;box-shadow:none}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab.is-active{border-color:#284db5;background:#284db5;color:#fff;box-shadow:none}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab:focus-visible{outline:3px solid #dfaa3a;outline-offset:2px}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel p,
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel li{font-size:inherit;line-height:1.79;overflow-wrap:break-word}
+.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion{background:#fff3d5;border:1px solid #eacb7c;border-left:4px solid #c49a37;border-radius:8px;padding:13px 16px;color:#27344f;font-size:inherit;line-height:1.7;margin:14px 0;min-width:0;max-width:100%;box-sizing:border-box}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-key-formula{background:transparent;border:1px solid var(--slm-g10-line);border-radius:8px;padding:12px 14px;margin:14px 0;line-height:1.75;font-size:inherit;overflow-x:auto;max-width:100%;box-sizing:border-box}
+.topic01-knowledge-layout :is(.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula)>:first-child{margin-top:0}
+.topic01-knowledge-layout :is(.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula)>:last-child{margin-bottom:0}
+.topic01-knowledge-layout img,.topic01-knowledge-layout figure{max-width:100%;height:auto}
+.topic01-knowledge-layout img{display:block;margin:16px auto}
+.topic01-knowledge-layout :is(table,.arithmatex,mjx-container[display="true"]){max-width:100%;overflow-x:auto}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion{color:#fff3d5;background:#4a3a25;border-color:#9e7d39;border-left-color:#d6aa49}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{color:#e6edff;background:#263753;border-color:#455b83}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab.is-active{color:#fff;background:#3457bd;border-color:#5976d9}
+.topic01-golden-hub{margin:22px 0}
+.topic01-golden-hub .topic01-golden-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+.topic01-golden-hub .thpt-r4-practice-lesson{display:flex;flex-direction:column;min-width:0}
+.topic01-golden-hub .topic01-single-card{grid-template-columns:minmax(0,1fr);padding:12px;flex:1}
+.topic01-golden-hub .thpt-r4-practice-card{gap:12px;padding:14px}
+.topic01-golden-hub .thpt-r4-practice-card p{margin:.5rem 0}
+.topic01-golden-hub .thpt-r4-practice-lesson-header h2{overflow-wrap:anywhere}
+.topic01-practice-dialog .thpt-r4-formative-answer p:first-child{margin:0}
+.topic01-practice-dialog .thpt-r4-formative-actions details>summary::after{display:none}
+.topic01-practice-dialog .thpt-r4-formative-actions details>summary::before{position:static;width:auto;height:auto;mask:none;background:none;transform:none}
+.topic01-practice-dialog .thpt-r4-formative-actions details[open]>summary::before{transform:rotate(90deg)}
+@media(max-width:640px){body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{font-size:14px;padding:8px 10px}.topic01-golden-hub .topic01-golden-grid{grid-template-columns:1fr}}
+
+/* Golden SGK B05 formative disclosure, scoped to CĐ01 knowledge subpanels.
+ * Exact values from thpt-g10-knowledge-hybrid-l1-v1.css: native SGK
+ * blue-neutral details.question, not Material's neon-green question default.
+ * Source/render is independent of Material tabbed-block visibility state. */
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question {
+  margin:.7rem 0 1rem;
+  background:#f8faff;border:1px solid #d9e4f4;border-radius:.62rem;
+  box-shadow:none;color:#243753;overflow:hidden;
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary {
+  list-style:none;position:relative;
+  color:#263e73;background:transparent;border-radius:.62rem;border:none;
+  font-weight:700;font-size:.88rem;padding:.7rem .85rem .7rem 2.15rem;line-height:1.45;
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::before {
+  -webkit-mask:none;mask:none;background:none;content:"▶";display:block;
+  color:#263e73;width:.85rem;height:auto;font-size:.72rem;
+  top:.76rem;left:.88rem;transform:none;
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question[open] > summary::before {transform:rotate(90deg)}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::after {display:none}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary:focus-visible {outline:2px solid #6c8adb;outline-offset:-2px}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question {color:#dce6fc;background:#202e48;border-color:#465978}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary,
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::before {color:#e2ebff}
+
+/* CĐ01 FOUC guard — apply only during the initial Golden hydration.
+ * Inline bootstrap before the public source sets pending; successful runtime
+ * clears it. On missing/broken JS, DOMContentLoaded removes pending and exposes
+ * the source fallback (including 11 public prompts). No hidden academic data. */
+.topic01-boot-status{display:none;margin:12px 0 18px;padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;background:var(--md-code-bg-color);color:var(--md-default-fg-color);font-size:.8rem;line-height:1.5}
+html:is(.topic01-boot-pending-knowledge,.topic01-boot-pending-practice,.topic01-boot-pending-selfcheck,.topic01-boot-fallback-knowledge,.topic01-boot-fallback-practice,.topic01-boot-fallback-selfcheck) .topic01-boot-status{display:block}
+html.topic01-boot-pending-knowledge .md-typeset > p:has(> span[data-topic01-knowledge-start]) ~ *,
+html.topic01-boot-pending-practice .md-typeset > p:has(> span[data-topic01-practice-start]) ~ *,
+html.topic01-boot-pending-selfcheck .md-typeset > p:has(> span[data-topic01-selfcheck-start]) ~ *{display:none!important}
+
+/* A 2px document scroll leak was found on 820px while nested tab rails and
+ * MathJax intentionally scroll inside the CĐ01 knowledge area. Clip only the
+ * outer knowledge canvas; nested rails/formulas keep their own x-scroll. */
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout{overflow-x:clip}

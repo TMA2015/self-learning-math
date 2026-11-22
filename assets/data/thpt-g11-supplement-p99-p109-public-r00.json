@@ -1,0 +1,1192 @@
+{
+  "packet_id": "G11-SGK-SUPPLEMENT-P99-P109-R00",
+  "mode": "CLIENT_SELF_CHECK_NO_MASTERY",
+  "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+  "receipt_blob": "3183783afc69d263328a55f937ba22e6deb1f34d",
+  "author_components": [
+    "7d369b8e6c3aa25fcfcbe5e10418d87f59d4b8e5",
+    "f78e1f4bcb477c995ffdb1281d366bf3b0e88a59"
+  ],
+  "experience": [
+    {
+      "id": "E01",
+      "title": "Mô hình hàm mũ và các thang lôgarit (SGK trang in 99–101)",
+      "ped": {
+        "PED1": "Khi một số lượng tăng theo tỉ lệ thay vì cộng một phần cố định mỗi năm, sau nhiều năm các biến đổi rất lớn. Log chuyển tỉ số nhân thành chênh lệch để so sánh đại lượng có nhiều bậc độ lớn: nồng độ ion, biên độ địa chấn và cường độ âm. Mục tiêu là giải thích hiện tượng, không chỉ nhập công thức máy tính.",
+        "PED2": "Nhắc lũy thừa số thực, tính log của số dương, log10(10^a)=a, ln(e^a)=a; biến thời gian t phải khớp đơn vị của k hoặc chu kì bán rã T. Nồng độ, biên độ và cường độ tham chiếu phải dương.",
+        "PED3": "Tăng trưởng 3% mỗi năm là nhân 1,03 mỗi bước; sau n năm số lượng A(n)=A0(1+0,03)^n. Tăng trưởng liên tục với tốc độ tương đối hằng k thì A(t)=A0 exp(kt). Hai giả định KHÔNG đồng nhất nếu đặt cùng số k=r; để trùng tại n nguyên, chọn k=ln(1+r). Nếu vật chất còn một nửa mỗi T năm thì A(t)=A0·2^(-t/T). Muốn tìm t từ A/A0 phải dùng log và kiểm A,A0,T>0.\nVới pH=-log10[H+], [H+] là nồng độ ion H+ (mol/L), dương; nồng độ giảm 100 lần làm pH tăng 2. Thang Richter trong mô hình SGK M=log10(I/S) với I/S>0: chênh 1 mức biểu thị tỉ số biên độ 10 (không suy tỉ số năng lượng). Mức dB L=10log10(I/I0), I/I0>0: nếu cường độ tăng 10 lần thì L tăng 10 dB, không nói cảm giác âm 'to gấp 10'.",
+        "PED4": "Bảng pH trang 100 là dữ liệu ví dụ; đọc đúng nồng độ/đơn vị và lưu ý độ pH của mẫu thực có thể khác. Bảng động đất Richter trang 100 xếp hạng cường độ theo mô hình đã định nghĩa, không suy năng lượng vật lý từ bảng. Bảng decibel trang 101 biểu diễn mức theo thang log, không phải bảng chuyển đổi chính xác cảm giác 'độ to'. Khi vẽ đồ thị A(t), ghi t (năm) và A (người/gam) trên hai trục, xác định mốc A0.",
+        "PED5": "Biết tỉ lệ tăng mỗi năm → dùng công thức lặp nhân; biết bán rã → dùng mũ âm theo chu kì T; tìm thời gian → cô lập t trong mũ rồi log. Với pH/Richter/dB bắt đầu từ tỉ số trong log, kiểm dương, cơ số 10 và hệ số ngoài log. Luôn kiểm kết quả bằng cách thay ngược và ghi nhận mô hình giả định tốc độ không đổi.",
+        "PED6": "1) Sau hai chu kì bán rã, vật còn mấy phần ban đầu? 2) Nồng độ [H+] giảm 10 lần thì pH biến đổi thế nào, vì sao? 3) Tỉ số biên độ 100 lần cho chênh Richter bao nhiêu? 4) I tăng 100 lần thì L tăng mấy dB? Đề nghị học sinh dự đoán TRƯỚC khi mở đáp án formative; nếu sai dùng D6 rồi tự làm lại."
+      }
+    },
+    {
+      "id": "E02",
+      "title": "Hình học trải nghiệm và đo đạc (SGK trang in 102–104)",
+      "ped": {
+        "PED1": "Hình phối cảnh có thể làm lệch nhận thức góc và khoảng cách. Mô hình giấy cho phép kiểm cặp cạnh và mặt khớp nhau; phép đo cọc/bóng biến định nghĩa hình chiếu thành dữ liệu; GeoGebra giúp nhìn cấu trúc nhưng không thay thế chứng minh.",
+        "PED2": "Hai mặt đáy của lăng trụ nằm trên hai mặt phẳng song song, cạnh bên nối đỉnh tương ứng; góc đường với mặt phẳng được xác định từ hình chiếu, không phải góc tùy ý trong bản vẽ. Góc nhị diện đo bằng hai tia trong hai mặt cùng vuông góc giao tuyến ở một điểm. V_lăng trụ = Sđáy·h; V_chóp = (1/3)Sđáy·h, h vuông góc đáy.",
+        "PED3": "Với lăng trụ tam giác, cần hai đáy tam giác bằng nhau và ba mặt bên là hình bình hành, nối đỉnh cùng tên. Trước khi cắt giấy, kiểm cạnh nào sẽ dán cùng chiều dài và có thể khép hình. Một cọc thẳng đứng dài h và bóng trên đất phẳng dài l tạo tam giác vuông; ánh sáng tạo cạnh huyền, bóng là hình chiếu, nên tan(góc tia–nền)=h/l. Với nhị diện, chọn mặt cắt vuông góc giao tuyến d; hai tia nằm trong mỗi mặt và cùng vuông góc d tạo góc phẳng đo được.",
+        "PED4": "H.T1: tìm chân cọc, đỉnh cọc, đầu bóng; đánh dấu đối h và kề l, không nhầm với độ dài tia. H.T2: H là hình chiếu chân cọc lên vạch a; góc BHA mới biểu diễn góc nhị diện, với tan BHA=AB/AH. H.T3 minh họa vẽ ABC, sao chép A'B'C', nối các đỉnh tương ứng, đổi nét khuất. H.T4 là lăng trụ đứng khi các cạnh bên vuông góc đáy. Nếu không có GeoGebra, dùng giấy kẻ ô và nhãn đỉnh để đạt cùng outcome.",
+        "PED5": "Cọc phải vuông góc mặt đất và đo bóng cùng thời điểm, nền đủ phẳng; đo góc nhị diện phải theo góc phẳng chứ không đo đường chéo trong ảnh phối cảnh; khi tính thể tích phải dùng chiều cao vuông góc đáy, không tùy ý lấy cạnh bên. Nếu thiết kế bìa, tránh tự ý thêm nắp vào thùng không nắp.",
+        "PED6": "1) Cọc cao 1m và bóng dài 1m: góc tia–mặt đất? 2) Có thể đo nhị diện bằng hai cạnh chéo bất kỳ trên bản vẽ không? 3) Một chóp và lăng trụ có chung đáy/cùng chiều cao, thể tích tỉ lệ thế nào? 4) Vì sao AA' phải nối với A' tương ứng mà không nối nhầm B'? Sau tự thử dùng D6 để sửa chỗ sai."
+      }
+    }
+  ],
+  "year": [
+    {
+      "id": "TRIG",
+      "title": "G11-YR-TRIG_IDENTITY",
+      "ped": {
+        "PED1": "Tại sao ôn lượng giác trước khi giải phương trình tuần hoàn?",
+        "PED2": "Góc đo radian, đơn vị vòng, dấu sin/cos từng góc, chu kì cơ bản và miền tan/cot.",
+        "PED3": "Bản chất cộng góc là phép quay, không phải nhân hai giá trị; cos(a+b)=cos a cos b−sin a sin b. Chu kì của sin/cos là 2π, tan/cot là π trên miền xác định. Với phương trình phải liệt kê họ nghiệm rồi lọc miền.",
+        "PED5": "Ví dụ sin(x)=sin(π/6) cho x=π/6+2kπ hoặc x=5π/6+2kπ, không lấy một nghiệm duy nhất.",
+        "PED4": "Đọc đồ thị y=sin x: hai điểm liên tiếp cùng trạng thái cách nhau 2π, đường bị ngắt ở tan không được coi liên tục toàn R.",
+        "PED6": "Tự thử: cos(π/2+x) bằng gì? Dấu và chu kì hàm cos?"
+      }
+    },
+    {
+      "id": "SEQUENCE",
+      "title": "G11-YR-SEQUENCE_MODEL",
+      "ped": {
+        "PED1": "Vì sao hai hợp đồng lương cần hai kiểu dãy số khác nhau?",
+        "PED2": "Số hạng đầu, công sai/công bội và cách tính tổng hữu hạn, phép lấy chênh/tỉ số.",
+        "PED3": "Tăng thêm khoản cố định là cấp số cộng u_n=u1+(n−1)d; tăng theo tỉ lệ là cấp số nhân v_n=v1 q^(n−1). Tổng phải cộng các số hạng theo từng năm; không nhầm năm thứ n với tổng n năm.",
+        "PED5": "Ví dụ hợp đồng A u1=100, mỗi năm +10 ⇒ năm 4 là130, tổng 4 năm=460. Hợp đồng B v1=100, mỗi năm +10% ⇒ năm4=133,1, tổng4≈464,1.",
+        "PED4": "Đọc bảng năm và tiền: quan sát chênh cố định ở A, tỉ số cố định ở B; đường biểu diễn không tuyến tính như nhau.",
+        "PED6": "Tự thử: 4,7,10,... có công sai? 4,8,16,... có công bội?"
+      }
+    },
+    {
+      "id": "LIMIT",
+      "title": "G11-YR-LIMIT_CONTINUITY",
+      "ped": {
+        "PED1": "Vì sao chỉ thế x=a vào biểu thức đôi khi dẫn đến 0/0 vô nghĩa?",
+        "PED2": "Điều kiện biểu thức, nhân tử, liên tục tại điểm và giới hạn trái/phải.",
+        "PED3": "Giới hạn đo giá trị khi tiến gần a, không phụ thuộc riêng f(a); 0/0 báo cần biến đổi chứ không có nghĩa giới hạn bằng 0. Để liên tục tại a cần f(a) xác định và bằng giới hạn hai phía hữu hạn.",
+        "PED5": "Ví dụ lim(x→3)(x²−9)/(x−3)=lim(x→3)(x+3)=6 vì x≠3 khi xét giới hạn; muốn liên tục tại x=3 gán f(3)=6.",
+        "PED4": "Đọc hai nhánh trên đồ thị: nếu đến điểm từ trái/phải lệch nhau thì không thể kết luận giới hạn chung dù có chấm đặc.",
+        "PED6": "Tự thử: lim(x→2)(x²−4)/(x−2) bằng? Vì sao không thay trực tiếp 0/0?"
+      }
+    },
+    {
+      "id": "EXPLOG",
+      "title": "G11-YR-EXP_LOG_DOMAIN",
+      "ped": {
+        "PED1": "Vì sao phải xét miền log trước khi dùng tính đơn điệu?",
+        "PED2": "Hàm mũ cơ số a>0 và a≠1; log_a(x) chỉ cho x>0, chiều bất đẳng thức phụ thuộc a.",
+        "PED3": "Lũy thừa/mũ là hàm đơn ánh, log là hàm ngược với miền dương. Giải log_a(f(x))=k đòi f(x)>0 và đưa về f(x)=a^k; nếu 0<a<1, log giảm nên chiều bất đẳng thức đổi khi lấy log của hai số dương.",
+        "PED5": "Ví dụ log_2(x−1)=3 ⇒ x>1 và x−1=8 ⇒ x=9. Câu x=−7 từ bỏ qua miền là sai.",
+        "PED4": "Đọc đồ thị y=a^x: cắt trục tung (0,1), tăng nếu a>1 và giảm nếu 0<a<1; không có giá trị âm.",
+        "PED6": "Tự thử: 2^(x−1)=8; log_3(x+2)=2 có miền nào?"
+      }
+    },
+    {
+      "id": "DERIV",
+      "title": "G11-YR-DERIVATIVE_RATE",
+      "ped": {
+        "PED1": "Đạo hàm khác tốc độ trung bình và gia tốc thế nào?",
+        "PED2": "Giới hạn thương sai phân, đạo hàm hàm hợp, tiếp tuyến, điều kiện khả vi.",
+        "PED3": "f'(a) là độ dốc tiếp tuyến tức thời; đạo hàm tích uv là u'v+uv', không phải u'v'. Với chuyển động có vị trí s(t), v=s' (có hướng), a=s'', tốc độ là |v|. Vật nhanh dần khi v·a>0, chậm dần khi v·a<0 tại v≠0, không chỉ nhìn dấu a.",
+        "PED5": "Ví dụ s(t)=t³−3t² có v=3t²−6t, a=6t−6; tại t=2 v=0, a=6 nên không được dựa dấu gia tốc để nói đang nhanh dần ngay tại điểm dừng.",
+        "PED4": "Đọc đồ thị và tiếp tuyến: dấu độ dốc không phải tung độ, góc nhọn hàm |x| tại 0 không có đạo hàm hai phía.",
+        "PED6": "Tự thử: đạo hàm (x²+1)sin x gồm mấy hạng?"
+      }
+    },
+    {
+      "id": "SPACE",
+      "title": "G11-YR-SPACE_PERP_DISTANCE",
+      "ped": {
+        "PED1": "Vì sao hình hộp trên giấy dễ khiến ta tưởng hai đoạn vuông góc?",
+        "PED2": "Điều kiện hai phương cắt nhau khi chứng minh vuông góc mặt phẳng, pháp tuyến, hình chiếu, góc nhị diện và đoạn vuông góc chung.",
+        "PED3": "Khoảng cách điểm đến mặt phẳng là độ dài đường vuông góc; góc giữa đường và mặt phẳng đo với hình chiếu lên mặt; hai đường chéo nhau chỉ có thể xét khoảng cách khi xác định đoạn vuông góc chung hoặc dựng mặt song song hợp lệ. Không dùng trực giác trên phối cảnh.",
+        "PED5": "Ví dụ một cột vuông góc hai đường cắt nhau trong nền ⇒ cột vuông góc cả nền; chỉ vuông góc hai đường song song chưa đủ.",
+        "PED4": "Đọc hình 3D: phân biệt đoạn nét đứt khuất, đường cao, cạnh xiên, góc giữa mặt (qua cắt vuông góc giao tuyến).",
+        "PED6": "Tự thử: hai đường cắt nhau trong mặt đáy là điều kiện vì sao quan trọng?"
+      }
+    },
+    {
+      "id": "VOLUME",
+      "title": "G11-YR-SPACE_VOLUME",
+      "ped": {
+        "PED1": "Vì sao cùng đáy và cao mà thể tích chóp khác lăng trụ?",
+        "PED2": "Diện tích đáy, chiều cao vuông góc và đơn vị cm²/cm³, xác định loại khối.",
+        "PED3": "Lăng trụ/hộp có V=Sđáy·h; chóp có V=(1/3)Sđáy·h. Điều kiện 'cùng đáy, cùng chiều cao' cho phép so tỉ lệ 1:3; cạnh bên xiên không mặc định là chiều cao.",
+        "PED5": "Ví dụ Sđáy=24cm² và h=6cm: lăng trụ V=144cm³, chóp V=48cm³.",
+        "PED4": "Đọc hình khối: đáy là mặt nào, h có dấu vuông góc ở chân nào, công thức cần chiều cao chứ không dùng đường chéo.",
+        "PED6": "Tự thử: hình chóp có Sđáy=18cm², h=3cm, V=?"
+      }
+    },
+    {
+      "id": "STAT",
+      "title": "G11-YR-GROUPED_STATS",
+      "ped": {
+        "PED1": "Tại sao dữ liệu chia nhóm chỉ cho phép ước lượng vị trí, không cho biết từng giá trị thật?",
+        "PED2": "Bảng tần số, chiều rộng khoảng lớp và tần số tích lũy; vị trí trung vị n/2, tứ phân vị thứ nhất n/4, tứ phân vị thứ ba 3n/4 (n là tổng tần số) và lớp mốt.",
+        "PED3": "Với bảng ghép nhóm, các giá trị gốc không quan sát được nên trung vị Q2 và Q1/Q3 chỉ là ước lượng theo giả định trải đều trong lớp. Tính tích lũy; tìm lớp chứa vị trí n/4 cho Q1, n/2 cho Q2, 3n/4 cho Q3. Nội suy trong lớp: Q≈L+((vị trí−F_trước)/f_lớp)·h với L là cận dưới, F_trước tần số tích lũy trước lớp, f_lớp tần số lớp và h độ rộng lớp; không chia cho 0 khi lớp rỗng. Nhóm tần số lớn nhất là nhóm mốt (có thể hòa), không được coi trung điểm lớp là giá trị mốt chắc chắn.",
+        "PED5": "Ví dụ ba nhóm [0,10),[10,20),[20,30) có tần số 2,5,3 (n=10), tích lũy 2,7,10. Trung vị nằm nhóm [10,20) vì n/2=5, nội suy Q2≈10+(5−2)/5·10=16. Q1 ở vị trí n/4=2,5 cũng thuộc lớp [10,20), nội suy Q1≈10+(2,5−2)/5·10=11; Q3 ở vị trí 7,5 thuộc [20,30), Q3≈20+(7,5−7)/3·10≈21,67. Cần chọn nhóm dựa trên tích lũy trước khi thay số; vì dữ liệu ghép nhóm, các số chỉ là ước lượng.",
+        "PED4": "Đọc biểu đồ tần số: bề ngang nhóm có thể bằng nhau, chiều cao nhóm là tần số, không đọc dữ liệu cá nhân từ một cột.",
+        "PED6": "Tự thử: với tích lũy 3,9,15 và n=15, nhóm nào chứa trung vị (vị trí 7,5), nhóm nào chứa Q1 (vị trí 3,75), nhóm nào chứa Q3 (vị trí 11,25)? Hãy xác định lớp TRƯỚC khi dùng công thức nội suy."
+      }
+    },
+    {
+      "id": "PROB",
+      "title": "G11-YR-PROBABILITY_COMBINE",
+      "ped": {
+        "PED1": "Vì sao cộng hai cơ hội có thể đếm trùng?",
+        "PED2": "Biến cố là tập kết quả, hợp/giao, xác suất từ 0 tới 1, biến cố độc lập khác xung khắc.",
+        "PED3": "P(A∪B)=P(A)+P(B)−P(A∩B) vì phần giao bị cộng hai lần. Nếu A,B độc lập thì P(A∩B)=P(A)P(B); 'ít nhất một' thường tính qua bổ sung 1−P(không cái nào). Độc lập không có nghĩa không thể xảy ra cùng.",
+        "PED5": "Ví dụ P(A)=0,6, P(B)=0,5, giao=0,3 ⇒ hợp=0,8; tích=0,3 nên dữ liệu phù hợp độc lập (chưa đủ từ chỉ riêng hợp).",
+        "PED4": "Đọc Venn: miền giao tô hai biến cố, miền hợp tô cả ba vùng; bù tô phần còn lại trong Ω.",
+        "PED6": "Tự thử: độc lập với P(A)=0,2 và P(B)=0,3, giao bao nhiêu?"
+      }
+    },
+    {
+      "id": "INTEGRATE",
+      "title": "G11-YR_CROSS_CHAPTER_REMEDIATION",
+      "ped": {
+        "PED1": "Vì sao cần biết sai do thiếu tiền đề nào chứ không chỉ kiểm đáp số đúng?",
+        "PED2": "Kiểm cấu trúc điều kiện, công thức, phép tính, đơn vị, kết luận; đọc rubric tự luận 4 điểm theo chứng cứ.",
+        "PED3": "Gắn mỗi lỗi vào đúng một outcome chính, quay lại D1/D2 của chương liên quan, làm câu song song D6 rồi quay lại câu ban đầu; không dùng câu đã xem đáp án làm chứng cứ kiểm tra độc lập.",
+        "PED5": "Ví dụ bài pH sai do log cơ số/điều kiện thuộc EXPLOG; bài góc nhị diện sai vì hình chiếu thuộc SPACE, dù cả hai có biểu thức lượng giác.",
+        "PED4": "Đọc bảng ma trận năm học: mỗi hàng là một năng lực có bài/phiên tự học tương ứng, không đếm nhiều placement thành nhiều câu.",
+        "PED6": "Tự thử: bạn sai ở bước định nghĩa/điều kiện hay ở bước số học? Chọn đường D6 tương ứng."
+      }
+    }
+  ],
+  "examples": [
+    {
+      "example_id": "EX-G11-SUPP-E01-01",
+      "outcome_id": "G11-E01-EXPONENTIAL_MODEL",
+      "text": "Một quần thể 500 cá thể tăng 2% hằng năm. Sau 3 năm mô hình rời rạc N=500·(1,02)^3≈530,60. Mỗi năm phải nhân trên số năm trước, không cộng 10 cố định. Nếu mô hình liên tục với k=0,02 thì N=500 exp(0,02t), số gần nhau nhưng không bằng đúng khi t=3; muốn trùng tại năm nguyên phải dùng k=ln(1,02)."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E01-02",
+      "outcome_id": "G11-E01-HALF_LIFE",
+      "text": "Chu kì bán rã T=6 năm, lượng đầu A0=80g: sau 18 năm A=80·2^(-18/6)=10g. Nếu còn 20g thì 2^(-t/6)=1/4=2^(-2), t=12. Vì sao dùng log hoặc so sánh lũy thừa: thời gian nằm ở số mũ, không cộng trừ khối lượng mỗi năm."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E01-03",
+      "outcome_id": "G11-E01-PH_SCALE",
+      "text": "Nồng độ [H+]=10^(-5) mol/L → pH=5. Nếu giảm [H+] 100 lần → 10^(-7), pH=7. Giải thích dấu: pH=-log10[H+], khi [H+] nhỏ đi thì -log tăng. Không tính pH của [H+]=0 bằng công thức này."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E01-04",
+      "outcome_id": "G11-E01-RICHTER_SCALE",
+      "text": "Đại lượng có tỉ số biên độ I/S=1000 thì M=log10(1000)=3. Hai biên độ hơn kém 100 lần sẽ có chênh 2 đơn vị M; đây là so biên độ theo định nghĩa mô hình, không khẳng định năng lượng lớn hơn đúng 100 lần."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E01-05",
+      "outcome_id": "G11-E01-DECIBEL_SCALE",
+      "text": "I0=10^(-12) W/m², I=10^(-8) W/m² ⇒ L=10·log10(10^4)=40 dB. Nếu cường độ tăng 100 lần thì mức tăng thêm 20 dB, không viết 40×100 dB hay 'nghe to gấp 100'."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E01-06",
+      "outcome_id": "G11-E01-MODEL_ASSUMPTIONS",
+      "text": "Dự báo dân số với r=2% cố định trong 15 năm chỉ là mô hình có giả định điều kiện tăng không đổi. Nếu tỉ lệ sinh/di cư thay đổi, kết quả có thể sai đáng kể. Bài giải phải kèm đơn vị, mốc gốc, phép thay số, độ làm tròn và một giới hạn mô hình."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E02-01",
+      "outcome_id": "G11-E02-NET_CONSTRUCTION",
+      "text": "Lăng trụ tam giác có hai đáy là hai tam giác bằng nhau và ba mặt bên hình bình hành; lăng trụ đứng có mặt bên chữ nhật. Trước khi dán, ghép cặp cạnh cùng chiều dài và không chồng lên nhau. Nếu quên đáy thứ hai hoặc ghép nhầm cạnh không thể khép khối."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E02-02",
+      "outcome_id": "G11-E02-LINE_PLANE_MEASURE",
+      "text": "Cọc 1,5m thẳng đứng, bóng trên đất phẳng dài 2m: tanθ=1,5/2=0,75, θ≈36,87°. Tại sao tan chứ không sin: dữ liệu cho cạnh đối và kề, chưa cho cạnh huyền; góc là giữa tia và hình chiếu xuống đất."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E02-03",
+      "outcome_id": "G11-E02-DIHEDRAL_MEASURE",
+      "text": "Hai mặt (P),(Q) giao đường d. Chọn H∈d, trong mỗi mặt dựng một tia vuông góc d tại H. Góc giữa hai tia là góc phẳng nhị diện. Không lấy góc giữa hai cạnh tùy ý trên hình phối cảnh vì chúng có thể không vuông góc d."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E02-04",
+      "outcome_id": "G11-E02-VOLUME_MODEL",
+      "text": "Lăng trụ đứng đáy tam giác vuông cạnh 3cm,4cm, cao 5cm: Sđáy=6cm², V=30cm³. Chóp có cùng đáy/cao: V=10cm³. Hệ số 1/3 là quan hệ thể tích chóp, không dùng khi tính lăng trụ."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E02-05",
+      "outcome_id": "G11-E02-GEOGEBRA_REPRESENTATION",
+      "text": "Vẽ tam giác ABC, sao chép cùng dạng thành A'B'C' trên một mặt phẳng song song, nối AA',BB',CC'. Kiểm ba cạnh tương ứng song song; nếu tùy ý dịch bản sao làm cạnh bên xiên, không được gọi lăng trụ đứng. Cạnh khuất trong biểu diễn 2D dùng nét đứt và gắn nhãn."
+    },
+    {
+      "example_id": "EX-G11-SUPP-E02-06",
+      "outcome_id": "G11-E02-LINE_PLANE_MEASURE",
+      "text": "Để xác định góc nhị diện tạo bởi vạch a trên đất và một tấm dựng qua cọc AB, hạ H là hình chiếu vuông góc của chân A trên a. Tam giác ABH vuông tại A nên tan∠BHA=AB/AH. Chỉ lấy AB/độ dài vạch a là nhầm đoạn không thuộc tam giác đo."
+    },
+    {
+      "example_id": "EX-G11-YR-TRIG-01",
+      "outcome_id": "G11-YR-TRIG_IDENTITY",
+      "text": "Với sinx=3/5, cosx=4/5 trong góc phần tư I, tính sin2x=2·3/5·4/5=24/25. Không dùng sin²x+cos²x làm sin2x. Giả thiết góc phần tư giúp chọn dấu cos đúng."
+    },
+    {
+      "example_id": "EX-G11-YR-TRIG-02",
+      "outcome_id": "G11-YR-TRIG_IDENTITY",
+      "text": "Chu kì y=cos(2x) là π vì khi tăng x thêm π, 2x tăng 2π. Không lấy 2π là chu kì nhỏ nhất theo thói quen của cosx."
+    },
+    {
+      "example_id": "EX-G11-YR-SEQ-01",
+      "outcome_id": "G11-YR-SEQUENCE_MODEL",
+      "text": "Hợp đồng A 100 triệu năm đầu, tăng thêm 10 triệu/năm: u5=100+4·10=140; tổng năm 1..5=(100+140)·5/2=600. Vì d là cộng cố định nên phải dùng cấp số cộng."
+    },
+    {
+      "example_id": "EX-G11-YR-SEQ-02",
+      "outcome_id": "G11-YR-SEQUENCE_MODEL",
+      "text": "Cùng đầu 100 triệu, tăng 10% mỗi năm: v5=100·1,1^4≈146,41, tổng năm 1..5=100(1,1^5−1)/0,1≈610,51. Dùng cấp số nhân vì tỉ số 1,1, không cộng 10 hàng năm."
+    },
+    {
+      "example_id": "EX-G11-YR-LIMIT-01",
+      "outcome_id": "G11-YR-LIMIT_CONTINUITY",
+      "text": "lim x→3 của (x²−9)/(x−3) không thể thế trực tiếp 0/0; phân tích (x−3)(x+3), rút gọn khi x≠3 rồi lấy giới hạn 6. Điểm bị khuyết vẫn có giới hạn 6."
+    },
+    {
+      "example_id": "EX-G11-YR-LIMIT-02",
+      "outcome_id": "G11-YR-LIMIT_CONTINUITY",
+      "text": "Hàm piecewise f(x)=(x²−1)/(x−1) khi x≠1, f(1)=c. Giới hạn hai phía khi x→1 là 2, nên liên tục nếu c=2. Không cần f(1) theo biểu thức nhánh x≠1."
+    },
+    {
+      "example_id": "EX-G11-YR-EXPL-01",
+      "outcome_id": "G11-YR-EXP_LOG_DOMAIN",
+      "text": "log2(x−1)=3: điều kiện x>1 rồi x−1=8 ⇒ x=9. Phương trình log không thể dùng nghiệm làm đối số âm; thử ngược log2(8)=3."
+    },
+    {
+      "example_id": "EX-G11-YR-EXPL-02",
+      "outcome_id": "G11-YR-EXP_LOG_DOMAIN",
+      "text": "(1/2)^x < (1/2)^3 ⇒ x>3 vì cơ số 0<a<1 cho hàm nghịch biến, nên chiều bất đẳng thức đảo. Không áp quy tắc của cơ số lớn hơn 1."
+    },
+    {
+      "example_id": "EX-G11-YR-DERIV-01",
+      "outcome_id": "G11-YR-DERIVATIVE_RATE",
+      "text": "f(x)=(x²+1)sin x ⇒ f'(x)=2x sin x+(x²+1)cos x. Quy tắc tích sinh hai hạng; chỉ nhân 2x·cos x là sai."
+    },
+    {
+      "example_id": "EX-G11-YR-DERIV-02",
+      "outcome_id": "G11-YR-DERIVATIVE_RATE",
+      "text": "Vị trí s(t)=t³−3t²: v=3t²−6t, a=6t−6; tại t=1 v=−3, a=0; tại t=2 v=0, a=6. Dấu a một mình không nói nhanh/chậm: phải xét v·a khi v≠0."
+    },
+    {
+      "example_id": "EX-G11-YR-SPACE-01",
+      "outcome_id": "G11-YR-SPACE_PERP_DISTANCE",
+      "text": "Một đường d vuông góc hai đường a,b **cắt nhau** trong (P) ⇒ d vuông góc cả mặt phẳng (P). Nếu a,b song song, hai phương ấy chỉ đưa một điều kiện, không đủ."
+    },
+    {
+      "example_id": "EX-G11-YR-SPACE-02",
+      "outcome_id": "G11-YR-SPACE_VOLUME",
+      "text": "Chóp có đáy tam giác vuông hai cạnh góc vuông 6cm,8cm, chiều cao 5cm ⇒ Sđáy=24cm², V=24·5/3=40cm³; không dùng cạnh bên xiên thay chiều cao."
+    },
+    {
+      "example_id": "EX-G11-YR-STAT-01",
+      "outcome_id": "G11-YR-GROUPED_STATS",
+      "text": "Ba lớp [0,10),[10,20),[20,30) với tần số 2,5,3: n=10, nhóm chứa vị trí n/2=5 là lớp thứ 2. Với giả định nội suy đều, M≈10+(5−2)/5·10=16. Không nói tất cả mẫu thật có trung vị đúng 16."
+    },
+    {
+      "example_id": "EX-G11-YR-PROB-01",
+      "outcome_id": "G11-YR-PROBABILITY_COMBINE",
+      "text": "P(A)=0,6, P(B)=0,5, P(A∩B)=0,3 thì P(A∪B)=0,6+0,5−0,3=0,8. Nếu A và B độc lập tích riêng=0,3 phù hợp; vẫn cần điều kiện xét mô hình độc lập."
+    },
+    {
+      "example_id": "EX-G11-YR-PROB-02",
+      "outcome_id": "G11-YR-PROBABILITY_INDEP",
+      "text": "Hai phép thử độc lập với xác suất thành công 0,2 và 0,3. Xác suất có ít nhất một thành công=1−(0,8)(0,7)=0,44. Dùng bù để tránh cộng trùng cả hai thành công."
+    },
+    {
+      "example_id": "EX-G11-YR-INT-01",
+      "outcome_id": "G11-YR_CROSS_CHAPTER_REMEDIATION",
+      "text": "Một câu chuyển động sai vì chỉ xét dấu a(t) → về đạo hàm cấp hai và tốc độ |v| trước khi tự thử câu mới. Một câu góc nhị diện sai vì chỉ đọc hình → dựng góc phẳng vuông góc giao tuyến. Phân loại nguyên nhân lỗi theo outcome, không chấm học sinh chỉ bằng số bài đúng."
+    }
+  ],
+  "items": [
+    {
+      "item_id": "THPT-G11-SUPP-E01-C01",
+      "outcome_id": "G11-E01-EXPONENTIAL_MODEL",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Số lượng ban đầu 200, tăng 5% mỗi năm, sau hai năm theo ghép lãi là bao nhiêu?",
+      "answer": "200·1,05²=220,5; nếu là số cá thể thật cần quy ước làm tròn."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-P01",
+      "outcome_id": "G11-E01-EXPONENTIAL_MODEL",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Hai công thức A0(1+r)^t và A0e^(rt) có luôn bằng nhau khi cùng r? Giải thích.",
+      "answer": "Không. Công thức đầu ghép theo bước, thứ hai liên tục. Để khớp năm nguyên cần k=ln(1+r), không đặt k=r tùy tiện."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-C02",
+      "outcome_id": "G11-E01-HALF_LIFE",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Sau mấy chu kì bán rã vật còn 1/8 khối lượng đầu?",
+      "answer": "3 chu kì do (1/2)^3=1/8."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-P02",
+      "outcome_id": "G11-E01-HALF_LIFE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Chu kì bán rã 10 năm; sau 15 năm còn tỉ lệ khối lượng nào?",
+      "answer": "2^(-1,5)=1/(2√2)≈0,3536; chu kì có thể là 1,5, không chỉ số nguyên."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-C03",
+      "outcome_id": "G11-E01-PH_SCALE",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "[H+]=10^(-6) mol/L, theo công thức pH=-log10[H+] có pH bao nhiêu?",
+      "answer": "6, giả thiết nồng độ dương."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-P03",
+      "outcome_id": "G11-E01-PH_SCALE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "pH tăng từ 4 lên 6 thì nồng độ ion H+ giảm bao nhiêu lần?",
+      "answer": "100 lần; 10^-4 / 10^-6=10²."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-C04",
+      "outcome_id": "G11-E01-RICHTER_SCALE",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Mô hình M=log10(I/S), tỉ số I/S=10^5. Tìm M.",
+      "answer": "5."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-P04",
+      "outcome_id": "G11-E01-RICHTER_SCALE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Hai biên độ chênh nhau hệ số 10^0,7 thì chênh số đo M?",
+      "answer": "0,7. Không suy kết luận về tỉ số năng lượng từ công thức biên độ."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-C05",
+      "outcome_id": "G11-E01-DECIBEL_SCALE",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "I/I0=100, mức L=10log10(I/I0) bằng bao nhiêu?",
+      "answer": "20 dB vì 10·2=20."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-P05",
+      "outcome_id": "G11-E01-DECIBEL_SCALE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Mức âm tăng 30 dB; tỉ số cường độ mới/cũ bằng bao nhiêu?",
+      "answer": "1000, vì log10(k)=30/10=3."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-P06",
+      "outcome_id": "G11-E01-MODEL_ASSUMPTIONS",
+      "role": "SGK_APPLICATION",
+      "placement": "SGK_APPLICATION",
+      "stem": "Ngoại suy quần thể tăng 2% mỗi năm suốt 100 năm: nêu 2 giả định cần kiểm.",
+      "answer": "Tốc độ tăng bất biến và môi trường/nguồn lực không ràng buộc; thời gian, di cư, dịch bệnh và sai số có thể làm kết quả thực tế khác mô hình."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-C01",
+      "outcome_id": "G11-E02-NET_CONSTRUCTION",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Lăng trụ tam giác có bao nhiêu mặt đáy và bao nhiêu mặt bên?",
+      "answer": "2 đáy tam giác bằng nhau và 3 mặt bên hình bình hành."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-P01",
+      "outcome_id": "G11-E02-NET_CONSTRUCTION",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Làm thùng không nắp từ bìa, điều kiện nào cần kiểm trước khi cắt/dán?",
+      "answer": "Không tạo nắp, cặp cạnh ghép đúng chiều dài/vị trí, các mặt có thể khép mà không chồng sai."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-C02",
+      "outcome_id": "G11-E02-LINE_PLANE_MEASURE",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Cọc thẳng cao 2m, bóng dài 2m trên nền phẳng, góc tia với mặt đất?",
+      "answer": "45° vì tanθ=2/2=1; điều kiện cọc vuông góc đất."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-P02",
+      "outcome_id": "G11-E02-LINE_PLANE_MEASURE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Cọc cao 1m bóng 3m, học sinh ghi sinθ=1/3. Sửa và giải thích.",
+      "answer": "Sai vì 3m là cạnh kề chứ không phải huyền: tanθ=1/3, sinθ=1/√10."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-C03",
+      "outcome_id": "G11-E02-DIHEDRAL_MEASURE",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Hai tia đo góc phẳng nhị diện phải quan hệ với giao tuyến d thế nào?",
+      "answer": "Mỗi tia nằm trong một mặt, cùng vuông góc với d tại điểm H trên d."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-P03",
+      "outcome_id": "G11-E02-DIHEDRAL_MEASURE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Có thể lấy góc giữa hai đường chéo nhìn thấy trên hình phối cảnh để gọi là góc nhị diện?",
+      "answer": "Không. Chúng có thể không vuông góc giao tuyến, góc phối cảnh cũng không bảo toàn."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-C04",
+      "outcome_id": "G11-E02-VOLUME_MODEL",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Chóp có diện tích đáy 18cm², chiều cao 4cm; thể tích?",
+      "answer": "(1/3)·18·4=24cm³."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-P04",
+      "outcome_id": "G11-E02-VOLUME_MODEL",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Lăng trụ có Sđáy=12cm², V=60cm³ thì chiều cao?",
+      "answer": "h=V/Sđáy=5cm; không lấy 1/3."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-C05",
+      "outcome_id": "G11-E02-GEOGEBRA_REPRESENTATION",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Vì sao nối A với A', B với B', C với C' khi dựng lăng trụ ABC.A'B'C'?",
+      "answer": "Đó là các đỉnh tương ứng của hai đáy và tạo các cạnh bên song song."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-P05",
+      "outcome_id": "G11-E02-GEOGEBRA_REPRESENTATION",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Khi vẽ lăng trụ trên giấy, cạnh bị che khuất thường nên dùng nét nào?",
+      "answer": "Nét đứt, kết hợp nhãn rõ. Đừng kết luận vuông góc chỉ từ phối cảnh."
+    },
+    {
+      "item_id": "THPT-G11-YR-TRIG-C01",
+      "outcome_id": "G11-YR-TRIG_IDENTITY",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Viết đúng công thức cos(a+b).",
+      "answer": "cos a cos b−sin a sin b; dấu trừ không phải cộng."
+    },
+    {
+      "item_id": "THPT-G11-YR-TRIG-P01",
+      "outcome_id": "G11-YR-TRIG_IDENTITY",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Chu kì cơ bản của hàm y=sin(3x) là?",
+      "answer": "2π/3, bởi 3(x+T)=3x+2π."
+    },
+    {
+      "item_id": "THPT-G11-YR-TRIG-P02",
+      "outcome_id": "G11-YR-TRIG_IDENTITY",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Giải sin x=0 với x thuộc [0,2π].",
+      "answer": "x=0,π,2π. Nếu khoảng có cả hai đầu mút thì tính cả 0 và 2π."
+    },
+    {
+      "item_id": "THPT-G11-YR-SEQ-C01",
+      "outcome_id": "G11-YR-SEQUENCE_MODEL",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "u1=5 và d=2 cấp số cộng, tìm u6.",
+      "answer": "u6=5+5·2=15."
+    },
+    {
+      "item_id": "THPT-G11-YR-SEQ-P01",
+      "outcome_id": "G11-YR-SEQUENCE_MODEL",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Cấp số nhân v1=3, q=2, tìm tổng 4 số hạng đầu.",
+      "answer": "S4=3(1+2+4+8)=45."
+    },
+    {
+      "item_id": "THPT-G11-YR-SEQ-P02",
+      "outcome_id": "G11-YR-SEQUENCE_MODEL",
+      "role": "SGK_APPLICATION",
+      "placement": "SGK_APPLICATION",
+      "stem": "Tiền công năm đầu 50 triệu, thêm 5 triệu mỗi năm. Tổng 3 năm?",
+      "answer": "50+55+60=165 triệu; cấp số cộng, không nhân 1,05."
+    },
+    {
+      "item_id": "THPT-G11-YR-LIMIT-C01",
+      "outcome_id": "G11-YR-LIMIT_CONTINUITY",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Tính lim(x→2)(x²−4)/(x−2).",
+      "answer": "4, do x²−4=(x−2)(x+2) khi x≠2."
+    },
+    {
+      "item_id": "THPT-G11-YR-LIMIT-P01",
+      "outcome_id": "G11-YR-LIMIT_CONTINUITY",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Với f(x)=x+2 khi x≠1, f(1)=a, tìm a để liên tục tại1.",
+      "answer": "a=3, bằng giới hạn hai phía 3."
+    },
+    {
+      "item_id": "THPT-G11-YR-LIMIT-P02",
+      "outcome_id": "G11-YR-LIMIT_CONTINUITY",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "lim(x→+∞)(3x²+2)/(x²−1) bằng?",
+      "answer": "3, chia cả tử và mẫu cho x²."
+    },
+    {
+      "item_id": "THPT-G11-YR-EXPL-C01",
+      "outcome_id": "G11-YR-EXP_LOG_DOMAIN",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Giải log2(x−1)=3 và ghi miền.",
+      "answer": "x>1, x−1=8 ⇒ x=9."
+    },
+    {
+      "item_id": "THPT-G11-YR-EXPL-P01",
+      "outcome_id": "G11-YR-EXP_LOG_DOMAIN",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Giải 3^(x−2)=27.",
+      "answer": "x−2=3 ⇒ x=5."
+    },
+    {
+      "item_id": "THPT-G11-YR-EXPL-P02",
+      "outcome_id": "G11-YR-EXP_LOG_DOMAIN",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Giải bất phương trình (1/2)^x ≥ (1/2)^3.",
+      "answer": "x≤3 vì hàm cơ số 1/2 nghịch biến."
+    },
+    {
+      "item_id": "THPT-G11-YR-DERIV-C01",
+      "outcome_id": "G11-YR-DERIVATIVE_RATE",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Hàm f(x)=x³−2x có đạo hàm tại x=1 bằng?",
+      "answer": "f'=3x²−2 nên f'(1)=1."
+    },
+    {
+      "item_id": "THPT-G11-YR-DERIV-P01",
+      "outcome_id": "G11-YR-DERIVATIVE_RATE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Tính đạo hàm (x²+1)sin x.",
+      "answer": "2x sin x+(x²+1)cos x; chọn quy tắc tích."
+    },
+    {
+      "item_id": "THPT-G11-YR-DERIV-P02",
+      "outcome_id": "G11-YR-DERIVATIVE_RATE",
+      "role": "SGK_APPLICATION",
+      "placement": "SGK_APPLICATION",
+      "stem": "s(t)=t²−4t, tại t=1 vật đang đi chiều dương hay âm?",
+      "answer": "v=2t−4 nên v(1)=−2, đi chiều âm; tốc độ=2."
+    },
+    {
+      "item_id": "THPT-G11-YR-SPACE-C01",
+      "outcome_id": "G11-YR-SPACE_PERP_DISTANCE",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "d vuông góc hai đường a,b cắt nhau và cùng thuộc (P). Kết luận?",
+      "answer": "d vuông góc mặt phẳng (P); điều kiện a,b cắt nhau là quan trọng."
+    },
+    {
+      "item_id": "THPT-G11-YR-SPACE-P01",
+      "outcome_id": "G11-YR-SPACE_PERP_DISTANCE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Cọc thẳng 1m bóng 2m trên nền phẳng, góc tia sáng với nền có tanθ=?",
+      "answer": "1/2, vì góc đo với hình chiếu bóng, cạnh đối là độ cao cọc."
+    },
+    {
+      "item_id": "THPT-G11-YR-SPACE-P02",
+      "outcome_id": "G11-YR-SPACE_PERP_DISTANCE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Trong hình lập phương cạnh a, khoảng cách giữa AB và CC' bằng?",
+      "answer": "a, vì BC nối B∈AB tới C∈CC', vuông góc với cả AB và CC'."
+    },
+    {
+      "item_id": "THPT-G11-YR-VOL-C01",
+      "outcome_id": "G11-YR-SPACE_VOLUME",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Chóp có diện tích đáy 12cm², cao 6cm, thể tích?",
+      "answer": "24cm³ vì V=12·6/3."
+    },
+    {
+      "item_id": "THPT-G11-YR-VOL-P01",
+      "outcome_id": "G11-YR-SPACE_VOLUME",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Lăng trụ đáy tam giác vuông cạnh 6cm và 8cm, cao 3cm, thể tích?",
+      "answer": "Sđáy=24cm², V=72cm³."
+    },
+    {
+      "item_id": "THPT-G11-YR-VOL-P02",
+      "outcome_id": "G11-YR-SPACE_VOLUME",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Chóp và lăng trụ cùng diện tích đáy và cao; nếu Vchóp=15cm³ thì Vlăng trụ?",
+      "answer": "45cm³, tỉ số 1:3."
+    },
+    {
+      "item_id": "THPT-G11-YR-STAT-C01",
+      "outcome_id": "G11-YR-GROUPED_STATS",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "Dữ liệu nhóm [0,10):2, [10,20):5, [20,30):3, nhóm chứa trung vị?",
+      "answer": "[10,20), vì n=10 và tích lũy nhóm đầu2, nhóm thứ hai7."
+    },
+    {
+      "item_id": "THPT-G11-YR-STAT-P01",
+      "outcome_id": "G11-YR-GROUPED_STATS",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Với bảng nhóm trên, nhóm có tần số lớn nhất là?",
+      "answer": "[10,20) với tần số 5; đây là lớp mốt, không phải khẳng định mốt đúng bằng 15."
+    },
+    {
+      "item_id": "THPT-G11-YR-STAT-P02",
+      "outcome_id": "G11-YR-GROUPED_STATS",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Bảng ghép nhóm [0,10):4, [10,20):8, [20,30):8 (n=20). Ước lượng Q1 và Q3 bằng nội suy trong lớp; nói rõ giả định.",
+      "answer": "Tích lũy 4,12,20; Q1 vị trí 5 thuộc [10,20) ⇒ Q1≈10+(5−4)/8·10=11,25. Q3 vị trí 15 thuộc [20,30) ⇒ Q3≈20+(15−12)/8·10=23,75. Các số là ước lượng do giả định dữ liệu phân bố đều trong mỗi lớp."
+    },
+    {
+      "item_id": "THPT-G11-YR-PROB-C01",
+      "outcome_id": "G11-YR-PROBABILITY_COMBINE",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "P(A)=0,6, P(B)=0,5, P(A∩B)=0,3. Tính P(A∪B).",
+      "answer": "0,6+0,5−0,3=0,8."
+    },
+    {
+      "item_id": "THPT-G11-YR-PROB-P01",
+      "outcome_id": "G11-YR-PROBABILITY_COMBINE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "A,B xung khắc với xác suất 0,2 và 0,4. P(A∪B)?",
+      "answer": "0,6 vì giao rỗng."
+    },
+    {
+      "item_id": "THPT-G11-YR-PROB-P02",
+      "outcome_id": "G11-YR-PROBABILITY_COMBINE",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "P(A)=0,7. Xác suất biến cố đối Ā?",
+      "answer": "0,3, vì P(A)+P(Ā)=1."
+    },
+    {
+      "item_id": "THPT-G11-YR-IND-C01",
+      "outcome_id": "G11-YR-PROBABILITY_INDEP",
+      "role": "SGK_CORE",
+      "placement": "SGK_CORE",
+      "stem": "A,B độc lập với P(A)=0,2, P(B)=0,3. Tìm P(A∩B).",
+      "answer": "0,06 do tích 0,2·0,3."
+    },
+    {
+      "item_id": "THPT-G11-YR-IND-P01",
+      "outcome_id": "G11-YR-PROBABILITY_INDEP",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Hai phép thử độc lập, xác suất thành công mỗi lần là 0,2. Xác suất ít nhất một thành công?",
+      "answer": "1−0,8²=0,36."
+    },
+    {
+      "item_id": "THPT-G11-YR-IND-P02",
+      "outcome_id": "G11-YR-PROBABILITY_INDEP",
+      "role": "SGK_PRACTICE",
+      "placement": "SGK_PRACTICE",
+      "stem": "Hai biến cố có P(A)=1/2, P(B)=1/3, P(A∩B)=1/5. Có độc lập?",
+      "answer": "Không vì tích riêng=1/6 khác 1/5."
+    },
+    {
+      "item_id": "THPT-G11-YR-INT-P01",
+      "outcome_id": "G11-YR_CROSS_CHAPTER_REMEDIATION",
+      "role": "SGK_APPLICATION",
+      "placement": "SGK_APPLICATION",
+      "stem": "Một bạn tìm giới hạn 0/0 bằng 0, bạn khác giải log mà bỏ x>0. Hai bạn cần quay lại kết quả học nào?",
+      "answer": "Giới hạn cần xử lí dạng vô định thuộc G11-YR-LIMIT_CONTINUITY; kiểm miền của log thuộc G11-YR-EXP_LOG_DOMAIN. Không đánh giá bằng một tổng điểm duy nhất."
+    }
+  ],
+  "written": [
+    {
+      "item_id": "THPT-G11-SUPP-E01-W01",
+      "outcome_id": "G11-E01-HALF_LIFE",
+      "role": "ANCHOR_TAG",
+      "placement": "SGK_WRITTEN",
+      "stem": "Một mẫu A0=120g với chu kì bán rã 8 năm. (a) Lập A(t). (b) Tính A(16). (c) Tìm t để A(t)=15g. (d) Nêu giả định mô hình.",
+      "answer": "A(t)=120·2^(-t/8); A(16)=30g; A(t)=15g ⇒ 2^(-t/8)=1/8 ⇒ t=24 năm; chu kì bán rã 8 năm giả định ổn định.",
+      "rubric": "1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-W02",
+      "outcome_id": "G11-E01-DECIBEL_SCALE",
+      "role": "WRITTEN",
+      "placement": "SGK_WRITTEN",
+      "stem": "Cường độ nguồn âm đo được L=50dB với I0=10^-12 W/m². (a) Tìm I/I0. (b) Tìm I. (c) I tăng 10 lần thì mức mới? (d) Không suy cảm giác âm từ tỉ số nào?",
+      "answer": "I/I0=10^5; I=10^-7 W/m²; mức mới 60dB. Không được suy độ to cảm giác người nghe gấp 10 từ cường độ vật lý gấp 10.",
+      "rubric": "1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E01-W03",
+      "outcome_id": "G11-E01-MODEL_ASSUMPTIONS",
+      "role": "ANCHOR_TAG",
+      "placement": "SGK_WRITTEN",
+      "stem": "Ban đầu 800 cá thể tăng 4%/năm. (a) Lập mô hình năm rời rạc. (b) Tìm k liên tục tương đương tại năm nguyên. (c) Tính N(3). (d) Nêu giới hạn.",
+      "answer": "N(n)=800·1,04^n; k=ln(1,04)≈0,0392207; N(3)≈899,89; tỉ lệ và môi trường không chắc bất biến.",
+      "rubric": "1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-W01",
+      "outcome_id": "G11-E02-LINE_PLANE_MEASURE",
+      "role": "WRITTEN",
+      "placement": "SGK_WRITTEN",
+      "stem": "Cọc 1,8m thẳng đứng, bóng 2,4m. (a) Vẽ tam giác vuông, gắn nhãn. (b) Nêu hình chiếu tia sáng. (c) Tính góc tia–đất. (d) Nêu điều kiện đo.",
+      "answer": "Cạnh đối 1,8m/cạnh kề 2,4m; tanθ=0,75; θ≈36,87°. Nền phẳng, cọc vuông góc, bóng đo cùng thời điểm.",
+      "rubric": "1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-W02",
+      "outcome_id": "G11-E02-VOLUME_MODEL",
+      "role": "ANCHOR_TAG",
+      "placement": "SGK_WRITTEN",
+      "stem": "Một lăng trụ đứng có đáy tam giác vuông hai cạnh góc vuông 6cm,8cm, cao 5cm. (a) Tìm Sđáy. (b) Tìm V lăng trụ. (c) V chóp cùng đáy và cao? (d) Lý do hệ số 1/3?",
+      "answer": "Sđáy=24cm²; Vlăng trụ=120cm³; Vchóp=40cm³; chóp một phần ba lăng trụ cùng diện tích đáy/chiều cao.",
+      "rubric": "1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp."
+    },
+    {
+      "item_id": "THPT-G11-SUPP-E02-W03",
+      "outcome_id": "G11-E02-GEOGEBRA_REPRESENTATION",
+      "role": "WRITTEN",
+      "placement": "SGK_WRITTEN",
+      "stem": "Thiết kế giấy/GeoGebra một lăng trụ ABC.A'B'C': (a) hai đáy; (b) nối cạnh bên; (c) đánh dấu cạnh khuất; (d) điều kiện để lăng trụ đứng.",
+      "answer": "Đáy tam giác bằng nhau ở hai mặt song song; nối đỉnh tương ứng; nét khuất đứt; cạnh bên vuông góc hai đáy mới là lăng trụ đứng.",
+      "rubric": "1 điểm lập mô hình/điều kiện; 1 điểm thao tác toán đúng; 1 điểm kết quả/đơn vị; 1 điểm giải thích tại sao và giới hạn phương pháp."
+    },
+    {
+      "item_id": "THPT-G11-YR-TRIG-W01",
+      "outcome_id": "G11-YR-TRIG_IDENTITY",
+      "role": "ANCHOR_TAG",
+      "placement": "SGK_WRITTEN",
+      "stem": "(a) Giải sinx=1/2 trong [0,2π]. (b) Giải thích hai vị trí trên vòng tròn. (c) Viết chu kì sin. (d) Kiểm đủ đầu mút.",
+      "answer": "x=π/6 hoặc 5π/6; sin dương ở hai góc đối xứng trong nửa trên; chu kì 2π; 0 và 2π không thỏa sin=1/2.",
+      "rubric": "Hai nghiệm/2 điểm 1đ; dấu và giải thích 1đ; chu kì 1đ; kiểm miền và kết luận 1đ."
+    },
+    {
+      "item_id": "THPT-G11-YR-SEQ-W01",
+      "outcome_id": "G11-YR-SEQUENCE_MODEL",
+      "role": "WRITTEN",
+      "placement": "SGK_WRITTEN",
+      "stem": "Hợp đồng A trả 120 triệu năm 1 và tăng 8 triệu/năm. Hợp đồng B trả 120 triệu năm 1 và tăng 5%/năm. (a) Viết u_n, v_n. (b) Tính năm 4. (c) Tổng 4 năm. (d) So sánh.",
+      "answer": "A u_n=120+8(n−1): năm4 144, tổng4 528. B v_n=120·1,05^(n−1): năm4 138,915, tổng4 517,215. A lớn hơn sau 4 năm theo giả định đã nêu.",
+      "rubric": "Mô hình dãy đúng 1đ; số hạng năm4 đúng 1đ; hai tổng đúng 1đ; so sánh kèm giả định và đơn vị 1đ."
+    },
+    {
+      "item_id": "THPT-G11-YR-LIMIT-W01",
+      "outcome_id": "G11-YR-LIMIT_CONTINUITY",
+      "role": "ANCHOR_TAG",
+      "placement": "SGK_WRITTEN",
+      "stem": "Cho f(x)=(x²−9)/(x−3) khi x≠3 và f(3)=c. (a) Tính giới hạn tại 3. (b) Tìm c để liên tục. (c) Giải thích vì sao thay trực tiếp không hợp lệ. (d) Nêu kiểm trái/phải.",
+      "answer": "Vì x≠3 được rút (x−3)(x+3)/(x−3)=x+3, giới hạn 6, c=6. Biểu thức 0/0 tại x=3 không được tính trực tiếp; hai nhánh cùng về 6.",
+      "rubric": "Rút đúng 1đ; giới hạn 6 1đ; c=6 1đ; giải thích khuyết, trái/phải 1đ."
+    },
+    {
+      "item_id": "THPT-G11-YR-EXPL-W01",
+      "outcome_id": "G11-YR-EXP_LOG_DOMAIN",
+      "role": "WRITTEN",
+      "placement": "SGK_WRITTEN",
+      "stem": "Giải log3(x−1)+log3(x+1)=1. (a) Điều kiện. (b) Quy tắc log. (c) Giải. (d) Thử nghiệm và bác nghiệm sai.",
+      "answer": "Điều kiện x>1. Gộp log3((x−1)(x+1))=1 → x²−1=3 → x=±2; nhận x=2, loại x=−2 vì ngoài miền. Thế lại log3(1)+log3(3)=1.",
+      "rubric": "Điều kiện 1đ; quy tắc log 1đ; nghiệm đại số 1đ; loại nghiệm sai/thử lại 1đ."
+    },
+    {
+      "item_id": "THPT-G11-YR-DERIV-W01",
+      "outcome_id": "G11-YR-DERIVATIVE_RATE",
+      "role": "ANCHOR_TAG",
+      "placement": "SGK_WRITTEN",
+      "stem": "Cho f(x)=x³−3x. (a) Tính f'(x). (b) f(2),f'(2). (c) Tiếp tuyến tại x=2. (d) Nếu s(t)=f(t) m, tìm gia tốc ở t=2 và nêu đơn vị.",
+      "answer": "f'=3x²−3, f(2)=2, f'(2)=9; y−2=9(x−2); s''(t)=6t, a(2)=12 m/s². Hệ số góc 9 không phải tung độ 2.",
+      "rubric": "Đạo hàm 1đ; điểm và hệ số góc 1đ; phương trình tiếp tuyến 1đ; gia tốc và đơn vị 1đ."
+    },
+    {
+      "item_id": "THPT-G11-YR-SPACE-W01",
+      "outcome_id": "G11-YR-SPACE_PERP_DISTANCE",
+      "role": "WRITTEN",
+      "placement": "SGK_WRITTEN",
+      "stem": "Trong lập phương ABCD.A'B'C'D' cạnh a, (a) vẽ/ghi đúng AB và CC'. (b) Chứng minh BC vuông góc cả hai đường. (c) Suy khoảng cách. (d) Nêu vì sao không dùng cạnh xiên bất kì.",
+      "answer": "BC⊥AB do đáy vuông, BC⊥CC' vì CC'⊥(ABCD); B∈AB, C∈CC', BC là vuông góc chung, d(AB,CC')=a.",
+      "rubric": "Nêu phương và vị trí 1đ; hai vuông góc 1đ; BC là đoạn chung và khoảng cách a 1đ; điều kiện không dùng đoạn xiên 1đ."
+    },
+    {
+      "item_id": "THPT-G11-YR-VOLUME-W01",
+      "outcome_id": "G11-YR-SPACE_VOLUME",
+      "role": "ANCHOR_TAG",
+      "placement": "SGK_WRITTEN",
+      "stem": "Một lăng trụ đứng đáy tam giác vuông cạnh góc vuông 3cm và 4cm, cao 10cm. (a) Sđáy. (b) Vlăng trụ. (c) Vchóp cùng đáy/cao. (d) Tỉ số và đơn vị.",
+      "answer": "S=6cm², Vlăng trụ=60cm³, Vchóp=20cm³, tỉ lệ chóp/lăng trụ=1/3; chiều cao phải vuông góc đáy.",
+      "rubric": "Diện tích đáy 1đ; lăng trụ 1đ; chóp 1đ; tỉ lệ/đơn vị/chiều cao 1đ."
+    },
+    {
+      "item_id": "THPT-G11-YR-STAT-W01",
+      "outcome_id": "G11-YR-GROUPED_STATS",
+      "role": "WRITTEN",
+      "placement": "SGK_WRITTEN",
+      "stem": "Bảng nhóm [0,10):4; [10,20):8; [20,30):8. (a) n. (b) Nhóm chứa trung vị. (c) Ước lượng trung vị theo nội suy đều. (d) Nêu vì sao không thể nói mốt là số cụ thể chắc chắn.",
+      "answer": "n=20; vị trí n/2=10 nằm ở [10,20); median≈10+(10−4)/8·10=17,5. Hai nhóm sau cùng có cùng tần số 8, không có một nhóm mốt duy nhất; số liệu gốc đã mất thông tin cá nhân.",
+      "rubric": "n/tích lũy 1đ; nhóm trung vị 1đ; ước lượng 17,5 1đ; giải thích mốt và giới hạn grouped data 1đ."
+    },
+    {
+      "item_id": "THPT-G11-YR-PROB-W01",
+      "outcome_id": "G11-YR-PROBABILITY_COMBINE",
+      "role": "ANCHOR_TAG",
+      "placement": "SGK_WRITTEN",
+      "stem": "Hai biến cố có P(A)=0,5, P(B)=0,4, P(A∩B)=0,2. (a) Tính hợp. (b) Tính bù của hợp. (c) Kiểm độc lập. (d) Giải thích khác biệt với xung khắc.",
+      "answer": "Hợp=0,5+0,4−0,2=0,7; bù=0,3; tích P(A)P(B)=0,2 nên độc lập; không xung khắc vì giao có xác suất 0,2.",
+      "rubric": "Hợp 1đ; bù 1đ; tích và kết luận độc lập 1đ; phân biệt xung khắc 1đ."
+    },
+    {
+      "item_id": "THPT-G11-YR-IND-W01",
+      "outcome_id": "G11-YR-PROBABILITY_INDEP",
+      "role": "WRITTEN",
+      "placement": "SGK_WRITTEN",
+      "stem": "Ba phép thử độc lập, mỗi lần thành công p=0,2. (a) Không lần nào thành công. (b) Ít nhất một. (c) Chính xác một. (d) Chỉ ra chỗ cần giả định độc lập.",
+      "answer": "Không thành công=0,8³=0,512; ít nhất một=1−0,512=0,488; đúng một=3·0,2·0,8²=0,384; tích xác suất chỉ được dùng vì phép thử độc lập.",
+      "rubric": "Không lần nào 1đ; ít nhất một 1đ; chính xác một 1đ; điều kiện độc lập 1đ."
+    }
+  ],
+  "help": [
+    {
+      "help_id": "HELP-G11-SUPP-E01-01",
+      "outcome_id": "G11-E01-EXPONENTIAL_MODEL",
+      "return_item": "THPT-G11-SUPP-E01-P01",
+      "steps": [
+        "Chẩn đoán: Cộng số tăng cố định thay vì nhân 1+r?",
+        "Bản chất: Mỗi năm nhân trên tổng năm trước.",
+        "Gỡ lỗi: Liệt kê N0,N1,N2 rồi rút ra (1+r)^n.",
+        "Tự thử độc lập: 100 tăng 10% hai năm cho 121.",
+        "Quay lại: Quay lại P01 và giải thích k=ln(1+r)."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E01-02",
+      "outcome_id": "G11-E01-HALF_LIFE",
+      "return_item": "THPT-G11-SUPP-E01-P02",
+      "steps": [
+        "Chẩn đoán: Chỉ đếm chu kì bán rã nguyên?",
+        "Bản chất: A/A0=2^(-t/T), t/T có thể là số thực.",
+        "Gỡ lỗi: Kiểm đơn vị năm của t và T rồi chia.",
+        "Tự thử độc lập: Sau T/2 còn 1/√2.",
+        "Quay lại: Quay lại P02, giữ 15/10=1,5 chu kì."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E01-03",
+      "outcome_id": "G11-E01-PH_SCALE",
+      "return_item": "THPT-G11-SUPP-E01-P03",
+      "steps": [
+        "Chẩn đoán: Quên dấu trừ trước log?",
+        "Bản chất: pH=-log10[H+], giảm nồng độ làm tăng pH.",
+        "Gỡ lỗi: Viết hai nồng độ ở dạng 10^(-pH).",
+        "Tự thử độc lập: 10^-2 xuống 10^-3 làm pH 2→3.",
+        "Quay lại: Quay lại P03 và so 10^-4/10^-6."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E01-04",
+      "outcome_id": "G11-E01-DECIBEL_SCALE",
+      "return_item": "THPT-G11-SUPP-E01-P05",
+      "steps": [
+        "Chẩn đoán: Quên hệ số 10 bên ngoài log?",
+        "Bản chất: Chênh L=10log10(I2/I1).",
+        "Gỡ lỗi: Cô lập log10(k)=ΔL/10 trước khi lấy 10 mũ.",
+        "Tự thử độc lập: Tăng 20dB nghĩa là I gấp 100.",
+        "Quay lại: Quay lại P05, không đồng nhất dB và cảm giác."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E02-01",
+      "outcome_id": "G11-E02-LINE_PLANE_MEASURE",
+      "return_item": "THPT-G11-SUPP-E02-P02",
+      "steps": [
+        "Chẩn đoán: Dùng sin khi mẫu số là cạnh kề?",
+        "Bản chất: Dựng tam giác vuông có cao đối, bóng kề.",
+        "Gỡ lỗi: Tan=h/bóng, cạnh huyền phải tính riêng.",
+        "Tự thử độc lập: h=bóng ⇒ góc 45°.",
+        "Quay lại: Quay lại P02, kiểm sin bằng cạnh huyền."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E02-02",
+      "outcome_id": "G11-E02-DIHEDRAL_MEASURE",
+      "return_item": "THPT-G11-SUPP-E02-P03",
+      "steps": [
+        "Chẩn đoán: Đọc góc trên phối cảnh thay góc phẳng?",
+        "Bản chất: Hai tia đo trong hai mặt cùng vuông góc d tại H.",
+        "Gỡ lỗi: Dựng mặt phẳng cắt vuông góc giao tuyến d.",
+        "Tự thử độc lập: Hai mặt vuông góc thì góc phẳng 90°.",
+        "Quay lại: Quay lại P03 và bỏ đường chéo tùy tiện."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E02-03",
+      "outcome_id": "G11-E02-VOLUME_MODEL",
+      "return_item": "THPT-G11-SUPP-E02-P04",
+      "steps": [
+        "Chẩn đoán: Áp dụng 1/3 cho lăng trụ?",
+        "Bản chất: V lăng trụ=Sđáy·h; V chóp=Sđáy·h/3.",
+        "Gỡ lỗi: Kiểm đơn vị cm²×cm=cm³.",
+        "Tự thử độc lập: S=10,h=2 thì lăng trụ V=20.",
+        "Quay lại: Quay lại P04, h=V/Sđáy."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E01-05",
+      "outcome_id": "G11-E01-RICHTER_SCALE",
+      "return_item": "THPT-G11-SUPP-E01-P04",
+      "steps": [
+        "Chẩn đoán: Nhầm mức M với năng lượng động đất.",
+        "Bản chất: M=log10(I/S) ở đây chỉ mô tả **biên độ** theo tỉ số.",
+        "Gỡ lỗi và giới hạn: ΔM=log10(I1/I2), kiểm I1,I2>0.",
+        "Tự thử khác câu gốc: I1/I2=100 ⇒ ΔM=2.",
+        "Quay lại câu canonical: Quay lại P04, không suy năng lượng từ hệ số biên độ."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E01-06",
+      "outcome_id": "G11-E01-MODEL_ASSUMPTIONS",
+      "return_item": "THPT-G11-SUPP-E01-P06",
+      "steps": [
+        "Chẩn đoán: Ngoại suy mà không ghi tốc độ không đổi.",
+        "Bản chất: Lũy thừa là dự báo có giả định dữ liệu và tốc độ thay đổi theo một quy tắc.",
+        "Gỡ lỗi và giới hạn: Viết mốc A0, đơn vị t, miền dự báo và điều kiện môi trường.",
+        "Tự thử khác câu gốc: Nếu r năm sau khác năm trước, A0(1+r)^n không còn đúng với r cố định.",
+        "Quay lại câu canonical: Quay lại P06 và nêu ít nhất hai giới hạn."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E02-04",
+      "outcome_id": "G11-E02-NET_CONSTRUCTION",
+      "return_item": "THPT-G11-SUPP-E02-P01",
+      "steps": [
+        "Chẩn đoán: Không kiểm cặp mép trước khi gấp giấy.",
+        "Bản chất: Đáy/mặt bên phải cùng kích thước tại mép dán; hộp không nắp thiếu một mặt.",
+        "Gỡ lỗi và giới hạn: Đánh số cặp cạnh cùng chiều dài và đánh dấu mặt cần bỏ.",
+        "Tự thử khác câu gốc: Hộp vuông không nắp có 5 mặt, không phải 6.",
+        "Quay lại câu canonical: Quay lại P01, giải thích điều kiện có thể khép."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-SUPP-E02-05",
+      "outcome_id": "G11-E02-GEOGEBRA_REPRESENTATION",
+      "return_item": "THPT-G11-SUPP-E02-P05",
+      "steps": [
+        "Chẩn đoán: Vẽ cạnh khuất nét liền và nối nhầm đỉnh.",
+        "Bản chất: Hai đáy song song, các đỉnh tương ứng tạo cạnh bên song song; cạnh khuất dùng nét đứt.",
+        "Gỡ lỗi và giới hạn: Đánh nhãn A↔A', B↔B', C↔C', kiểm sự song song.",
+        "Tự thử khác câu gốc: Vẽ hai tam giác bằng nhau rồi nối đúng ba cặp đỉnh.",
+        "Quay lại câu canonical: Quay lại P05, tách điều đã chứng minh với điều chỉ nhìn thấy trên hình."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-TRIG-01",
+      "outcome_id": "G11-YR-TRIG_IDENTITY",
+      "return_item": "THPT-G11-YR-TRIG-P01",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Sai chu kì vì quên hệ số của x.",
+        "Bản chất: Hàm sin có chu kì 2π theo biến ở trong ngoặc.",
+        "Hướng dẫn gỡ lỗi: Đặt 3(x+T)=3x+2π rồi tìm T.",
+        "Tự thử chưa lộ đáp án câu gốc: cos(4x) có chu kì π/2.",
+        "Quay lại canonical: Quay lại TRIG-P01 và kiểm sin(3(x+T))=sin3x."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-SEQ-01",
+      "outcome_id": "G11-YR-SEQUENCE_MODEL",
+      "return_item": "THPT-G11-YR-SEQ-P01",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Nhầm cộng cố định với nhân công bội.",
+        "Bản chất: Cấp số cộng dùng chênh u(n+1)−u(n), cấp số nhân dùng tỉ số.",
+        "Hướng dẫn gỡ lỗi: Viết 4 số hạng đầu trước khi dùng tổng.",
+        "Tự thử chưa lộ đáp án câu gốc: u1=2, q=3 ⇒ 2,6,18,54.",
+        "Quay lại canonical: Quay lại SEQ-P01 và tính lại tổng."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-LIMIT-01",
+      "outcome_id": "G11-YR-LIMIT_CONTINUITY",
+      "return_item": "THPT-G11-YR-LIMIT-C01",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Thay trực tiếp ra 0/0 rồi kết luận bằng 0.",
+        "Bản chất: Giới hạn không yêu cầu biểu thức xác định ngay tại điểm đó.",
+        "Hướng dẫn gỡ lỗi: Phân tích tử thành nhân tử, rút gọn trên x≠a.",
+        "Tự thử chưa lộ đáp án câu gốc: lim(x→1)(x²−1)/(x−1)=2.",
+        "Quay lại canonical: Quay lại LIMIT-C01, kiểm kết quả bằng điểm gần 2."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-EXPLOG-01",
+      "outcome_id": "G11-YR-EXP_LOG_DOMAIN",
+      "return_item": "THPT-G11-YR-EXPL-C01",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Bỏ miền của log hoặc không xét cơ số.",
+        "Bản chất: log_a(f(x)) chỉ tồn tại f(x)>0, a>0 và a≠1.",
+        "Hướng dẫn gỡ lỗi: Ghi điều kiện trước khi giải ẩn.",
+        "Tự thử chưa lộ đáp án câu gốc: log2(x−2)=0 ⇒ x=3, điều kiện x>2.",
+        "Quay lại canonical: Quay lại EXPL-C01 và thế thử nghiệm."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-DERIV-01",
+      "outcome_id": "G11-YR-DERIVATIVE_RATE",
+      "return_item": "THPT-G11-YR-DERIV-P01",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Sai quy tắc tích bằng tích hai đạo hàm.",
+        "Bản chất: (uv)'=u'v+uv' có hai hạng biến đổi.",
+        "Hướng dẫn gỡ lỗi: Đặt u=x²+1, v=sinx và tính từng đạo hàm.",
+        "Tự thử chưa lộ đáp án câu gốc: (x+1)cosx có đạo hàm cosx−(x+1)sinx.",
+        "Quay lại canonical: Quay lại DERIV-P01, kiểm đủ hai hạng."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-DERIV-02",
+      "outcome_id": "G11-YR-DERIVATIVE_RATE",
+      "return_item": "THPT-G11-YR-DERIV-P02",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Đọc dấu gia tốc để kết luận chiều chuyển động.",
+        "Bản chất: Vận tốc v=s'(t) có dấu phương, tốc độ |v| không âm.",
+        "Hướng dẫn gỡ lỗi: Tính v trước, rồi dùng v·a nếu cần nhanh/chậm.",
+        "Tự thử chưa lộ đáp án câu gốc: s(t)=t²: tại t=-1 v=-2 dù a=2.",
+        "Quay lại canonical: Quay lại DERIV-P02 và diễn giải đơn vị."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-SPACE-01",
+      "outcome_id": "G11-YR-SPACE_PERP_DISTANCE",
+      "return_item": "THPT-G11-YR-SPACE-P02",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Nhìn phối cảnh rồi kết luận đoạn xiên là khoảng cách.",
+        "Bản chất: Khoảng cách chéo nhau đo bằng đoạn vuông góc cả hai đường.",
+        "Hướng dẫn gỡ lỗi: Dựng BC nối B∈AB, C∈CC' rồi chứng minh hai vuông góc.",
+        "Tự thử chưa lộ đáp án câu gốc: Trong lập phương, BC vuông góc AB và CC'.",
+        "Quay lại canonical: Quay lại SPACE-P02, chỉ rõ chân vuông góc."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-VOLUME-01",
+      "outcome_id": "G11-YR-SPACE_VOLUME",
+      "return_item": "THPT-G11-YR-VOL-C01",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Quên 1/3 hoặc dùng cạnh bên làm chiều cao.",
+        "Bản chất: V_chóp=(1/3)Sđáy·h, h vuông góc đáy.",
+        "Hướng dẫn gỡ lỗi: Ghi loại hình, đáy, h, đơn vị trước khi thế số.",
+        "Tự thử chưa lộ đáp án câu gốc: S=9cm²,h=3cm ⇒ Vchóp=9cm³.",
+        "Quay lại canonical: Quay lại VOL-C01, phân biệt lăng trụ."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-STAT-01",
+      "outcome_id": "G11-YR-GROUPED_STATS",
+      "return_item": "THPT-G11-YR-STAT-C01",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Chọn nhóm trung vị theo tần số lớn nhất.",
+        "Bản chất: Trung vị dựa vị trí n/2 trong tần số tích lũy, không phải tần số đơn.",
+        "Hướng dẫn gỡ lỗi: Cộng tích lũy 2,7,10 cho n=10; đánh dấu riêng vị trí Q1=2,5, Q2=5, Q3=7,5 và đọc lớp tương ứng trước khi nội suy.",
+        "Tự thử chưa lộ đáp án câu gốc: bảng 2,5,3 nhóm, nhóm nào chứa vị trí 2,5 (Q1) và vị trí 7,5 (Q3)?",
+        "Quay lại canonical: Quay lại STAT-C01, không coi trung điểm là đáp án chắc chắn."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-PROB-01",
+      "outcome_id": "G11-YR-PROBABILITY_COMBINE",
+      "return_item": "THPT-G11-YR-PROB-C01",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Cộng P(A)+P(B) nhưng quên trừ giao.",
+        "Bản chất: Vùng A∩B đã bị đếm hai lần.",
+        "Hướng dẫn gỡ lỗi: Vẽ Venn với ba vùng chỉ A, giao, chỉ B.",
+        "Tự thử chưa lộ đáp án câu gốc: P(A)=.3,P(B)=.5, giao=.1 ⇒ hợp=.7.",
+        "Quay lại canonical: Quay lại PROB-C01, kiểm kết quả không vượt 1."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-INDEP-01",
+      "outcome_id": "G11-YR-PROBABILITY_INDEP",
+      "return_item": "THPT-G11-YR-IND-P01",
+      "steps": [
+        "Chẩn đoán lỗ hổng: Cộng hai khả năng độc lập không trừ trường hợp cả hai.",
+        "Bản chất: Ít nhất một=1−(không cái nào); cần độc lập để nhân.",
+        "Hướng dẫn gỡ lỗi: P(cả hai thất bại)=(1−p)².",
+        "Tự thử chưa lộ đáp án câu gốc: p=.5 hai lần ⇒ ít nhất một=.75.",
+        "Quay lại canonical: Quay lại IND-P01, giải thích giả định độc lập."
+      ]
+    },
+    {
+      "help_id": "HELP-G11-YR-INTEGRATE-01",
+      "outcome_id": "G11-YR_CROSS_CHAPTER_REMEDIATION",
+      "return_item": "THPT-G11-YR-INT-P01",
+      "steps": [
+        "Chẩn đoán: Đếm tổng số câu sai mà không biết chỗ sai gốc.",
+        "Bản chất: Mỗi câu có một outcome chính; quay lại phần nền tảng đúng chương rồi tự thử mới.",
+        "Gỡ lỗi và giới hạn: Phân loại lỗi: điều kiện/định nghĩa, phương pháp, tính toán, biểu diễn/đơn vị, sau đó định tuyến.",
+        "Tự thử khác câu gốc: Bài log sai do đối số âm ⇒ ôn log domain; bài hình sai do hình chiếu ⇒ ôn vuông góc.",
+        "Quay lại câu canonical: Quay lại INT-P01 và chỉ hai đường khắc phục khác nhau."
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "FIG-G11-SUPP-E01-01",
+      "src": "FIG-G11-SUPP-E01-01_R00.svg",
+      "group": "E01",
+      "description": "time-versus-quantity axes, discrete dot model and continuous model with k=ln(1+r) if synchronized at integer years. Avoid pretending k=r gives identical graphs."
+    },
+    {
+      "figure_id": "FIG-G11-SUPP-E01-02",
+      "src": "FIG-G11-SUPP-E01-02_R00.svg",
+      "group": "E01",
+      "description": "three independent logarithmic scales pH/Richter/dB, each showing base and unit/coefficients and one ×10 comparison; no false cross-scale equivalence."
+    },
+    {
+      "figure_id": "FIG-G11-SUPP-E02-01",
+      "src": "FIG-G11-SUPP-E02-01_R00.svg",
+      "group": "E02",
+      "description": "rod–shadow–light triangle with right angle, projected beam and tanθ=h/l as SGK H.T1 concept re-authored diagram."
+    },
+    {
+      "figure_id": "FIG-G11-SUPP-E02-02",
+      "src": "FIG-G11-SUPP-E02-02_R00.svg",
+      "group": "E02",
+      "description": "two planes sharing intersection d, correct normal section with two rays perpendicular to d at common H; mark relevant flat dihedral angle."
+    },
+    {
+      "figure_id": "FIG-G11-SUPP-E02-03",
+      "src": "FIG-G11-SUPP-E02-03_R00.svg",
+      "group": "E02",
+      "description": "four steps prism ABC.A'B'C' (base, parallel copy, matching edges, dashed hidden edges) and note skew vs right prism."
+    },
+    {
+      "figure_id": "FIG-G11-YR-01",
+      "src": "FIG-G11-YR-01_R00.svg",
+      "group": "YEAR",
+      "description": "trục và tiếp tuyến hàm f(x)=x² tại x=1; điểm (1,1), hệ số góc 2, phân biệt tiếp tuyến và giá trị hàm."
+    },
+    {
+      "figure_id": "FIG-G11-YR-02",
+      "src": "FIG-G11-YR-02_R00.svg",
+      "group": "YEAR",
+      "description": "biểu đồ ghép nhóm tần số [0,10)=2,[10,20)=5,[20,30)=3, tích lũy 2,7,10; xác định đúng nhóm trung vị (not precise individual median)."
+    },
+    {
+      "figure_id": "FIG-G11-YR-03",
+      "src": "FIG-G11-YR-03_R00.svg",
+      "group": "YEAR",
+      "description": "hai vòng Venn A,B: chỉ A=0,3, giao=0,2, chỉ B=0,2, ngoài=0,3, cho P(A)=0,5,P(B)=0,4 và hợp=0,7. Không đặt sai số vùng."
+    }
+  ]
+}

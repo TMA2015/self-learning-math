@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 485" role="img" aria-labelledby="title description">
+<title id="title">Sơ đồ đo khoảng cách qua vật cản bằng tam giác vuông cân</title>
+<desc id="description">A và B cùng nằm trên đoạn thẳng dài 20 căn hai mét. Góc A và B đều 45 độ, góc C là 90 độ. Hai cạnh AC và BC bằng 20 mét. Chân đường vuông góc từ C tới AB là H, CH bằng 10 căn hai mét. Đây là sơ đồ hình học, không mô tả chính xác địa hình thực tế.</desc>
+<rect x="0" y="0" width="760" height="485" fill="#f8fbff" rx="22"/>
+<text x="27" y="40" fill="#142c54" font-size="23" font-weight="700" font-family="Arial,sans-serif">Đo gián tiếp khoảng cách qua một vật cản</text>
+<path d="M120 390 L560 390 L340 170 Z" fill="#dcefff" stroke="#214e9b" stroke-width="4" stroke-linejoin="round"/>
+<path d="M340 170 V390" stroke="#ad6516" stroke-width="3.5" stroke-dasharray="9 7"/>
+<path d="M340 378 H352 V390" stroke="#ad6516" stroke-width="3" fill="none"/>
+<path d="M307 203 L340 236 L373 203" fill="none" stroke="#214e9b" stroke-width="3"/>
+<path d="M172 390 A52 52 0 0 0 156.8 353.2 M523.2 353.2 A52 52 0 0 0 508 390" fill="none" stroke="#b65e11" stroke-width="3"/>
+<circle cx="120" cy="390" r="5" fill="#17233e"/><circle cx="560" cy="390" r="5" fill="#17233e"/><circle cx="340" cy="170" r="5" fill="#17233e"/><circle cx="340" cy="390" r="4" fill="#ad6516"/>
+<g fill="#16284b" font-family="Arial,sans-serif" font-size="24" font-weight="700">
+<text x="99" y="422">A</text><text x="565" y="422">B</text><text x="326" y="151">C</text><text x="344" y="420">H</text>
+</g>
+<g fill="#174c77" font-family="Arial,sans-serif" font-size="19">
+<text x="149" y="364">45°</text><text x="504" y="364">45°</text><text x="350" y="218">90°</text>
+<text x="171" y="259">AC = 20 m</text><text x="409" y="259">BC = 20 m</text>
+<text x="246" y="457">AB = 20√2 m</text>
+<text x="360" y="290" fill="#9a4c0b">CH = 10√2 m</text>
+</g>
+<text x="27" y="81" fill="#526783" font-size="16" font-family="Arial,sans-serif">H là hình chiếu của C lên AB. Dùng sin/côsin hoặc diện tích để tìm chiều cao CH.</text>
+</svg>

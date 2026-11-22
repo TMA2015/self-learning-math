@@ -1,0 +1,1074 @@
+{
+  "packet_id": "G12-SGK-CHI-B01-B05-R00",
+  "mode": "CLIENT_SELF_CHECK_NO_MASTERY",
+  "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+  "receipt_blob": "8fef1c7dbd9b404881ff40cec8147c9ae89ef473",
+  "source_component_blobs": [
+    "adf4f161ff4db1d203465b22b88da8827bf8a699",
+    "ae768307157fbfc38cb4c61443dee599197aa0f4",
+    "0143707da223a2dd476ab9cbc40d48c15b87b916",
+    "01242eea1c26fb142b3a285bb8e122c7d6ebfa18",
+    "a5abc67eb67aaf33c7954c200d836779c2da5e5b",
+    "b9dc8aa0ae1e4f36fb365df4f01b2d4d259e5d85"
+  ],
+  "items": [
+    {
+      "item_id": "THPT-G12-CHI-B01-C01",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-MONOTONICITY_MEANING",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "Hàm f(x)=x² giảm trên khoảng nào trong (−∞,0), (0,+∞)?",
+      "answer": "(−∞,0): khi x tiến về 0 từ bên trái, giá trị x² giảm; trên (0,+∞) hàm tăng.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-C02",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-DERIVATIVE_SIGN",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "Cho f(x)=x²−4x+1. Xác định dấu f′ và khoảng tăng/giảm.",
+      "answer": "f′=2x−4, âm x<2, dương x>2 ⇒ giảm (−∞,2), tăng (2,+∞).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-C03",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-EXTREMA_SIGN_CHANGE",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "f′ đổi dấu + sang − tại x=−1 và − sang + tại x=1. Xác định loại cực trị tại mỗi điểm nếu f liên tục và khả vi quanh chúng.",
+      "answer": "Cực đại tại −1, cực tiểu tại 1; dấu đổi mới quyết định loại cực trị.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-C04",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "f(x)=x³ có f′(0)=0. x=0 có là điểm cực trị không, vì sao?",
+      "answer": "Không; f′=3x²>0 ở hai phía (trừ x=0), nên hàm vẫn tăng qua x=0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-P01",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-DOMAIN_INTERVALS",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Với f(x)=1/(x−2), nêu miền xác định và tất cả khoảng nghịch biến, giải thích tại sao phải tách.",
+      "answer": "D=ℝ\\{2}, f′=−1/(x−2)²<0. Giảm trên (−∞,2) và (2,+∞), không nối qua x=2 không thuộc D.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-P02",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-DERIVATIVE_SIGN",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Cho f′(x)=(x+1)(x−2) trên ℝ. Hãy nêu các khoảng tăng/giảm của f.",
+      "answer": "f′>0 khi x<−1 hoặc x>2, f′<0 khi −1<x<2 ⇒ tăng, giảm, tăng theo ba khoảng.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-P03",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-EXTREMA_SIGN_CHANGE",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "f(x)=x³−3x. Tìm hoành độ và giá trị của các cực trị.",
+      "answer": "f′=3(x+1)(x−1); cực đại tại −1, giá trị 2; cực tiểu tại 1, giá trị −2.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-P04",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Hàm f(x)=|x| có cực tiểu tại 0 không, mặc dù f′(0) không tồn tại?",
+      "answer": "Có, f(x)≥f(0)=0; điều kiện f′(0)=0 chỉ là điều kiện cần đối với cực trị nội tại điểm có đạo hàm.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-A01",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-MOTION_CONTEXT",
+      "placement": "SGK_APPLICATION",
+      "role": "SGK_APPLICATION",
+      "stem": "Vật có vị trí s(t)=t³−6t²+9t m, t≥0 s. Xác định các khoảng thời gian vật chuyển động theo chiều dương và âm.",
+      "answer": "v(t)=3(t−1)(t−3). Chiều dương khi 0<t<1 và t>3; chiều âm khi 1<t<3; t=1,3 dừng tức thời.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-W01",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-EXTREMA_SIGN_CHANGE",
+      "placement": "SGK_WRITTEN",
+      "role": "WRITTEN",
+      "stem": "Khảo sát sự đồng biến, nghịch biến và cực trị của f(x)=x³−3x, tự vẽ phác thảo bảng dấu. Trình bày vì sao f′=0 riêng lẻ chưa phải kết luận.",
+      "answer": "Tập xác định $\\mathbb R$. $f'(x)=3(x-1)(x+1)$, bằng 0 tại $-1$ và $1$; dấu đạo hàm là $+,-,+$ lần lượt trên $(-\\infty,-1)$, $(-1,1)$ và $(1,+\\infty)$. Hàm số tăng trên $(-\\infty,-1)$ và $(1,+\\infty)$, giảm trên $(-1,1)$. Cực đại địa phương ở $x=-1$ với $f(-1)=2$; cực tiểu địa phương ở $x=1$ với $f(1)=-2$. Cần xét **dấu đổi chiều** của $f'$ tại điểm tới hạn, không kết luận cực trị chỉ vì $f'=0$.",
+      "rubric": "1 điểm xác định D=ℝ và f′=3(x²−1); 1 điểm tìm đúng −1,1 và dấu +,−,+; 1 điểm nêu đúng các khoảng tăng/giảm; 1 điểm tính đúng cực đại (−1,2), cực tiểu (1,−2) và giải thích đổi dấu.",
+      "solution": "**Bước 1 — Xét điều kiện.** $f(x)=x^3-3x$ là đa thức nên xác định trên $D=\\mathbb R$ và khả vi với mọi $x\\in\\mathbb R$.\n\n**Bước 2 — Đạo hàm và các điểm cần kiểm tra.**\n\\[\nf'(x)=3x^2-3=3(x-1)(x+1).\n\\]\nPhương trình $f'(x)=0$ cho hai nghiệm $x=-1$ và $x=1$, chia trục số thành ba khoảng.\n\n**Bước 3 — Xét dấu, không bỏ qua bước này.**\n- Nếu $x<-1$: hai thừa số $(x-1)$ và $(x+1)$ đều âm, nên $f'(x)>0$.\n- Nếu $-1<x<1$: một âm, một dương, nên $f'(x)<0$.\n- Nếu $x>1$: cả hai dương, nên $f'(x)>0$.\n\nBảng biến thiên có hàng dấu đạo hàm **$+\\;|\\;0\\;|\\;-\\;|\\;0\\;|\\;+$** qua các mốc $-1$ và $1$. Hàng giá trị hàm: tăng đến $f(-1)=2$, giảm đến $f(1)=-2$, rồi lại tăng.\n\n**Bước 4 — Kết luận đồng biến/nghịch biến và cực trị.** Hàm đồng biến trên $(-\\infty,-1)$ và $(1,+\\infty)$; nghịch biến trên $(-1,1)$. Tại $x=-1$, $f'$ đổi dấu **dương → âm**, nên $x=-1$ là điểm cực đại, giá trị cực đại địa phương $2$ (điểm trên đồ thị $(-1,2)$). Tại $x=1$, $f'$ đổi dấu **âm → dương**, nên $x=1$ là điểm cực tiểu, giá trị cực tiểu địa phương $-2$ (điểm $(1,-2)$).\n\n**Bước 5 — Vì sao $f'(x_0)=0$ chưa đủ?** Đây mới là dấu hiệu của một **ứng viên điểm cực trị** đối với hàm khả vi trong khoảng đang xét. Phải kiểm tra sự đổi chiều đơn điệu, chẳng hạn xét dấu đạo hàm hai bên. Phản ví dụ $g(x)=x^3$ có $g'(0)=0$ nhưng $g$ đồng biến trên cả hai phía của 0, nên $x=0$ không là cực trị. Lưu ý hàm $f$ không có giá trị lớn nhất/nhỏ nhất toàn cục trên $\\mathbb R$; các cực trị ở trên là **cực trị địa phương**, không phải cực trị toàn miền.\n\n**D6 sau đối chiếu:** Nếu sai đạo hàm, trở về kiến thức $f'$; nếu tìm đúng $f'=0$ mà kết luận sai, làm lại bảng dấu và giải thích đổi dấu; nếu nhầm cực trị với GTLN/GTNN, đối chiếu định nghĩa cực trị địa phương và ứng dụng giới hạn miền ở Bài 2. Học sinh không tự cấp Mastery."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-W02",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-DOMAIN_INTERVALS",
+      "placement": "SGK_WRITTEN",
+      "role": "ANCHOR_TAG",
+      "stem": "Xét f(x)=1/(x−2). Chứng minh f nghịch biến trên mỗi thành phần khoảng của miền xác định; nêu một cặp x1<x2 ở hai phía x=2 cho thấy không thể gộp các khoảng vào một phát biểu \\\"nghịch biến trên D\\\".",
+      "answer": "$D=\\mathbb R\\setminus\\{2\\}$. $f'(x)=-1/(x-2)^2<0$ với mọi $x\\in D$, nên $f$ nghịch biến trên **từng khoảng** $(-\\infty,2)$ và $(2,+\\infty)$. Nhưng $1<3$ đều thuộc $D$, trong khi $f(1)=-1<f(3)=1$; điều này trái với yêu cầu $f(x_1)>f(x_2)$ của một hàm nghịch biến khi lấy hai điểm bất kỳ $x_1<x_2$ trên toàn $D$. Không được gộp hai khoảng qua điểm $x=2$ bị loại.",
+      "rubric": "1 điểm D=ℝ\\{2}; 1 điểm f′=−1/(x−2)²<0; 1 điểm hai khoảng (−∞,2),(2,+∞); 1 điểm phản ví dụ f(1)=−1, f(3)=1 với 1<3 nhưng f(1)<f(3), nên không nghịch biến trên D theo định nghĩa toàn miền.\n**Anchor chỉ gắn nhãn** cho cùng item_id W02, không tạo bản chép chấm điểm thứ hai.",
+      "solution": "**Bước 1 — Miền xác định là bước không thể bỏ qua.** Mẫu $x-2\\ne0$, do đó $D=\\mathbb R\\setminus\\{2\\}=(-\\infty,2)\\cup(2,+\\infty)$. Hai khoảng này rời nhau, **không** tạo thành một khoảng liên thông chứa $x=2$.\n\n**Bước 2 — Đạo hàm trên từng thành phần miền xác định.**\n\\[\nf'(x)=\\left(\\frac{1}{x-2}\\right)'=-\\frac{1}{(x-2)^2}.\n\\]\nVới mọi $x\\in D$, $(x-2)^2>0$, nên $f'(x)<0$.\n\n**Bước 3 — Áp dụng đúng phạm vi của định lí dấu đạo hàm.** Trên mỗi khoảng $(-\\infty,2)$ và $(2,+\\infty)$, hàm xác định, liên tục và khả vi; đạo hàm luôn âm. Vì vậy theo tiêu chuẩn đơn điệu, hàm **nghịch biến trên từng khoảng** này.\n\n**Bước 4 — Bác bỏ phát biểu gộp thành \"nghịch biến trên D\".** Chọn $x_1=1$ và $x_2=3$. Có $1<3$, cả hai thuộc $D$, nhưng\n\\[\nf(1)=\\frac1{1-2}=-1 < 1=\\frac1{3-2}=f(3).\n\\]\nMột hàm nghịch biến trên toàn tập xét theo so sánh mọi cặp $x_1<x_2$ phải cho $f(x_1)>f(x_2)$; cặp trên cho bất đẳng thức **ngược lại**. Vậy không thể kết luận hàm nghịch biến trên cả $D$ theo nghĩa toàn tập.\n\n**Bước 5 — Chỉ ra lỗi tư duy cần tránh.** Mệnh đề \"$f'(x)<0$ trên miền xác định\" chỉ bảo đảm nghịch biến **trên từng khoảng nằm trọn trong miền xác định**. Không được áp dụng định lí trên đoạn $[1,3]$, vì tại $x=2$ hàm **không xác định**. Không thể đi xuyên qua điểm gián đoạn để nối hai bảng biến thiên thành một khoảng đơn điệu chung.\n\n**D6 sau đối chiếu:** Nếu sai $D$, kiểm tra mẫu số trước khi đạo hàm; nếu nhầm \"$f'<0$\" thành \"giảm trên mọi hợp khoảng\", quay về điều kiện áp dụng trên **một khoảng**; nếu chưa hiểu phản ví dụ, so sánh trực tiếp $f(1)=-1$ với $f(3)=1$. Không ghi Mastery."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-C01",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-EXTREMA_GLOBAL_MEANING",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "f(x)=x trên (0,1) có GTLN bằng 1 không? Giải thích.",
+      "answer": "Không; với mọi x<1 tồn tại y=(x+1)/2 trong (x,1), nên f(y)>f(x). 1 chỉ là supremum.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-C02",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-CLOSED_INTERVAL_EXISTENCE",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "Hàm liên tục trên [−1,3] có chắc đạt GTNN và GTLN không?",
+      "answer": "Có, bởi định lý giá trị cực trị trên đoạn đóng hữu hạn; chưa cần biết chúng ở điểm nào.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-C03",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-CRITICAL_END_POINTS",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "Tìm GTLN/GTNN f(x)=x²−2x trên [0,4].",
+      "answer": "f'=2x−2, ứng viên x=0,1,4, lần lượt f=0,−1,8; GTNN=−1, GTLN=8.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-C04",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-OPEN_DOMAIN_NONATTAINMENT",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "Trên miền (0,+∞), f(x)=1/x có giá trị nhỏ nhất bằng 0 không?",
+      "answer": "Không; mọi 1/x>0, lim∞=0 không đạt được; cũng không có GTLN vì không bị chặn trên gần 0+.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-P01",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-CRITICAL_END_POINTS",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Tìm max/min g(x)=−x²+4x+2 trên [0,5], ghi cả điểm đạt.",
+      "answer": "g'=−2x+4, c=2; g(0)=2, g(2)=6, g(5)=−3. Max=6 tại2, min=−3 tại5.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-P02",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-OPEN_DOMAIN_NONATTAINMENT",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "f(x)=x² trên (−1,1) có GTNN? GTLN? Chứng minh.",
+      "answer": "min=0 tại x=0; không có max, vì x²<1 với mọi |x|<1 dù sup=1.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-P03",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-CONSTRAINED_DOMAIN",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Xét f(x)=x/(x²+1), x≥0. Tìm GTLN, GTNN.",
+      "answer": "f'=(1−x²)/(x²+1)²; max 1/2 tại1, min0 tại0. Mệnh đề f→0 khi x∞ không tự chứng minh GTNN nếu quên x=0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-P04",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-EXTREMA_GLOBAL_MEANING",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Trên [−2,2], f(x)=x³ có GTLN, GTNN và cực trị nội không?",
+      "answer": "max=8 tại2; min=−8 tại−2; không có cực trị nội dù f'(0)=0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-P05",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-CLOSED_INTERVAL_EXISTENCE",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Vì sao f(x)=1/x trên [−1,1]\\{0} không được áp dụng định lý liên tục trên đoạn [−1,1]?",
+      "answer": "Không xác định tại0, miền xét không phải toàn đoạn đóng [−1,1]; f không bị chặn gần 0 nên cũng không có min/max toàn miền.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-A01",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-OPTIMIZATION_MODEL",
+      "placement": "SGK_APPLICATION",
+      "role": "SGK_APPLICATION",
+      "stem": "Mảnh vườn chữ nhật chu vi 24 m, hai cạnh dương. Diện tích lớn nhất và có GTNN dương không?",
+      "answer": "x∈(0,12), A=x(12−x)≤36 m² (dấu bằng x=6); không có GTNN vì A→0+ khi x→0+.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-W01",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-CRITICAL_END_POINTS",
+      "placement": "SGK_WRITTEN",
+      "role": "WRITTEN",
+      "stem": "Tìm max/min f(x)=x³−3x trên [−2,2]. Phân biệt cực trị nội với GTLN/GTNN.",
+      "answer": "f'=3(x+1)(x−1). Ứng viên −2,−1,1,2; f lần lượt −2,2,−2,2. GTLN=2 đạt tại x=−1 và2, GTNN=−2 đạt tại x=−2 và1. Cực đại nội x=−1, cực tiểu nội x=1, không vì thế bỏ qua hai biên.",
+      "rubric": "1 D+f'; 1 các điểm tới hạn và biên; 1 bốn giá trị; 1 max/min đúng cả điểm đạt và phân biệt cực trị nội."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-W02",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-OPTIMIZATION_MODEL",
+      "placement": "SGK_WRITTEN",
+      "role": "ANCHOR_TAG",
+      "stem": "Từ 28 m dây quây khu chữ nhật không suy biến, tìm diện tích lớn nhất; giải thích có đạt diện tích nhỏ nhất không.",
+      "answer": "x+y=14, 0<x<14; A=x(14−x), A'=14−2x; max49 m² khi x=y=7. A>0 và tiến về0 khi x→0+, nhưng 0 không đạt nên không có min.",
+      "rubric": "1 xác lập đúng miền/biến; 1 công thức diện tích; 1 tìm tối ưu và đơn vị; 1 xử lý biên mở, giải thích min không tồn tại. Anchor là tag, không clone item."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-C01",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-HORIZONTAL_LIMIT",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "lim(x→∞)[5+2/(x−1)] và phương trình tiệm cận ngang?",
+      "answer": "Giới hạn 5; y=5.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-C02",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-VERTICAL_ONE_SIDED",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "f=1/(x+3). Điểm x=−3 có là tiệm cận đứng? Nêu giới hạn hai phía.",
+      "answer": "lim x→−3− f=−∞, lim x→−3+ f=+∞; x=−3 là tiệm cận đứng.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-C03",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-OBLIQUE_REMAINDER",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "g(x)=x−2+3/(x+1). Tiệm cận xiên khi x→∞?",
+      "answer": "y=x−2, vì phần dư →0; g=x−2 không phải y=x+1.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-C04",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-REMOVABLE_DISCONTINUITY",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "f=(x²−9)/(x−3) có tiệm cận đứng x=3 không?",
+      "answer": "Không; x≠3, f=x+3; lim x→3 f=6, chỉ là lỗ tại (3,6).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-P01",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-HORIZONTAL_LIMIT",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "f=(2x−1)/(x+2). Tìm tiệm cận ngang.",
+      "answer": "Chia 2−5/(x+2) nên y=2.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-P02",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-VERTICAL_ONE_SIDED",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "g=(x+1)/(x−2). Tính giới hạn một bên khi x→2±.",
+      "answer": "Tử gần3>0, mẫu âm/dương nên lim 2−=−∞, 2+=+∞; x=2 tiệm cận đứng.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-P03",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-OBLIQUE_REMAINDER",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "h=(x²+2x+3)/(x+1). Tìm tiệm cận xiên và đứng.",
+      "answer": "h=x+1+2/(x+1); xiên y=x+1, đứng x=−1.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-P04",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-DOMAIN_SIDED_LIMITS",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "f(x)=1/sqrt(x−1), D=(1,+∞). x=1 có là tiệm cận đứng dù không thể xét từ bên trái?",
+      "answer": "Có, lim x→1+=+∞ đủ để kết luận; chỉ dùng giới hạn trong D.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-P05",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-REMOVABLE_DISCONTINUITY",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "k=(x²−4)/(x−2), x≠2. Vẽ mô tả đồ thị có nên vẽ chấm đặc tại (2,4)?",
+      "answer": "Không. k=x+2 chỉ khi x≠2; (2,4) là lỗ, không có tiệm cận đứng.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-P06",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-GRAPH_INTERPRETATION",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Với f=3+7/(x−2), nhánh phải x>2 nằm trên hay dưới y=3? Nhánh trái?",
+      "answer": "x>2 ⇒ 7/(x−2)>0 ⇒ trên; x<2 ⇒ dưới. Không cần vẽ thêm đường sai.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-P07",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-HORIZONTAL_LIMIT",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "f=x/sqrt(x²+1) có bao nhiêu đường tiệm cận ngang? Phía nào?",
+      "answer": "Hai: y=1 khi x→+∞, y=−1 khi x→−∞, dùng sqrt(x²)=|x|.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-A01",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-DOMAIN_SIDED_LIMITS",
+      "placement": "SGK_APPLICATION",
+      "role": "SGK_APPLICATION",
+      "stem": "Chi phí trung bình đơn vị C(q)=20+120/q (nghìn đồng/sp), q>0. Phân tích q→+∞ và q→0+, chỉ ra tiệm cận; ý nghĩa mô hình.",
+      "answer": "y=20 khi q→∞, q=0 là tiệm cận đứng từ phải (C→∞). q=0 không thể là mức sản lượng có chi phí trung bình xác định.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-W01",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-GRAPH_INTERPRETATION",
+      "placement": "SGK_WRITTEN",
+      "role": "WRITTEN",
+      "stem": "Khảo sát tiệm cận và vị trí hai nhánh của f=(3x+1)/(x−2) so với các tiệm cận.",
+      "answer": "D=ℝ\\{2}; f=3+7/(x−2), y=3 ngang, x=2 đứng; x<2 dưới y=3 và xuống −∞ khi x→2−, x>2 trên y=3 và lên +∞ khi x→2+.",
+      "rubric": "1 D+biến đổi; 1 tiệm cận ngang; 1 đứng với dấu một bên; 1 mô tả nhánh tương ứng."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B03-W02",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-OBLIQUE_REMAINDER",
+      "placement": "SGK_WRITTEN",
+      "role": "ANCHOR_TAG",
+      "stem": "Với g=(x²+1)/(x−1), tìm tiệm cận xiên và đứng, giải thích không có ngang.",
+      "answer": "D=ℝ\\{1}; g=x+1+2/(x−1); y=x+1 xiên; x=1 đứng; vì g lớn theo x khi |x|→∞ nên không có tiệm cận ngang.",
+      "rubric": "1 D; 1 chia đa thức đúng; 1 đứng và giới hạn; 1 xiên, chứng minh phần dư→0 và bác ngang. Anchor chỉ nhãn."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-C01",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-SURVEY_WORKFLOW",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "Khi khảo sát f=(x+1)/(x−2), cần xác định D trước hay giao Ox trước, vì sao?",
+      "answer": "D=ℝ\\{2} trước; điểm không thuộc D không thể vẽ thành điểm trên đồ thị hoặc cực trị.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-C02",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-CUBIC_VARIATION",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "f=x³−3x² có mấy cực trị và ở đâu?",
+      "answer": "f'=3x(x−2), cực đại (0,0), cực tiểu (2,−4).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-C03",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-RATIONAL_VARIATION",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "g=(x+2)/(x−1), xác định các khoảng giảm.",
+      "answer": "g'=−3/(x−1)²<0; giảm riêng trên (−∞,1) và (1,+∞).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-C04",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-INTERCEPTS_LIMITS",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "f=(x+2)/(x−1) cắt trục Ox và Oy ở đâu?",
+      "answer": "Ox: x=−2 ⇒ (−2,0); Oy: x=0 ⇒ (0,−2).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-P01",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-CENTER_SYMMETRY",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Tâm đối xứng của y=2+5/(x−4)?",
+      "answer": "(4,2), giao hai tiệm cận x=4, y=2.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-P02",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-READ_VARIATION_TABLE",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Nếu bảng dấu y' trên ℝ là + trên (−∞,−1), − trên (−1,3), + trên (3,∞), loại cực trị tại −1 và 3?",
+      "answer": "Cực đại ở −1; cực tiểu ở3. Muốn biết giá trị phải thay vào hàm.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-P03",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-DOMAIN_NONCONNECT",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Với y=1+2/(x+1), có nên nối hai nhánh qua x=−1?",
+      "answer": "Không; x=−1 bị loại khỏi D và là tiệm cận đứng.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-P04",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-CUBIC_VARIATION",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "h=−x³+3x, tìm các khoảng tăng/giảm và cực trị.",
+      "answer": "h'=3(1−x²), tăng (−1,1), giảm (−∞,−1),(1,∞); min (−1,−2), max (1,2) là **cực trị cục bộ**, không GTLN/GTNN toàn ℝ.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-P05",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-INTERCEPTS_LIMITS",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "y=x³−3x² cắt hay tiếp xúc Ox tại x=0 và tại x=3?",
+      "answer": "x=0 nghiệm kép, tiếp xúc Ox tại (0,0); x=3 nghiệm đơn, cắt Ox tại (3,0).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-P06",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-CENTER_SYMMETRY",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Tâm đối xứng đồ thị y=x³−3x²?",
+      "answer": "(1,−2), vì hoành độ điểm uốn x=−b/(3a)=1 và f(1)=−2; không phải (0,0).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-A01",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-RATIONAL_VARIATION",
+      "placement": "SGK_APPLICATION",
+      "role": "SGK_APPLICATION",
+      "stem": "Chi phí bình quân f(q)=4+200/(q−10) cho q>10 đơn vị. Tính giới hạn q→10+, q→∞ và nhận định chi phí theo q.",
+      "answer": "f→+∞ khi q→10+, f→4 khi q→∞, f'<0; trên (10,∞) chi phí giảm dần và tiệm cận y=4. Không mở rộng sang q≤10 nếu mô hình quy định q>10.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-A02",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-SURVEY_WORKFLOW",
+      "placement": "SGK_APPLICATION",
+      "role": "SGK_APPLICATION",
+      "stem": "Người học vẽ y=x³−3x² đi từ +∞ ở x→−∞ và tăng liên tục tới +∞. Chỉ ra hai lỗi từ dữ liệu khảo sát.",
+      "answer": "lim x→−∞ =−∞ (không phải +∞); y'<0 trên (0,2) nên không tăng liên tục.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-W01",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-CUBIC_VARIATION",
+      "placement": "SGK_WRITTEN",
+      "role": "WRITTEN",
+      "stem": "Lập đầy đủ bảng biến thiên và mô tả đồ thị f=x³−3x² (D, y', cực trị, giới hạn, giao Ox và tâm).",
+      "answer": "D=ℝ, f'=3x(x−2), tăng/giảm/tăng ba khoảng, max cục bộ (0,0), min cục bộ (2,−4), lim hai đầu −∞/+∞; nghiệm x=0 bội2 và x=3 đơn; tâm (1,−2).",
+      "rubric": "1 miền+đạo hàm+dấu; 1 cực trị+bảng; 1 giới hạn+giao trục; 1 tâm và đồ thị khớp chứng cứ."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B04-W02",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-DOMAIN_NONCONNECT",
+      "placement": "SGK_WRITTEN",
+      "role": "ANCHOR_TAG",
+      "stem": "Khảo sát y=(x+2)/(x−1) và thuyết minh vì sao hai nhánh không nối.",
+      "answer": "D ℝ\\{1}, y'=−3/(x−1)², giảm từng nhánh; x=1, y=1 tiệm cận; tâm (1,1); Ox (−2,0), Oy (0,−2), hai nhánh tách tại tiệm cận đứng.",
+      "rubric": "1 D+đạo hàm; 1 đơn điệu từng khoảng; 1 giới hạn/tiệm cận; 1 giao trục+đúng hai nhánh. Anchor chỉ tag một câu."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-C01",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-RATE_INTERPRETATION",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "f(x)=2x²+3, x là s, f là m. f'(2) và đơn vị?",
+      "answer": "f'=4x, f'(2)=8 m/s. Không gọi đây là gia tốc.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-C02",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MOTION_SPEED_ACCELERATION",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "s(t)=t²−4t+5 m, t≥0 s. Vận tốc/tốc độ tại t=1?",
+      "answer": "v=2t−4, v(1)=−2 m/s; tốc độ 2 m/s, chiều âm.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-C03",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MARGINAL_COST",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "C(q)=q²+10q+100 (nghìn đồng). Chi phí cận biên tại q=5?",
+      "answer": "C'=2q+10, C'(5)=20 nghìn đồng/sản phẩm; không phải C(5).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-C04",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MODEL_VARIABLE_DOMAIN",
+      "placement": "SGK_CORE",
+      "role": "SGK_CORE",
+      "stem": "Tấm bìa 30×20, cắt vuông góc x ở bốn góc làm hộp không nắp. Miền x hợp lệ?",
+      "answer": "0<x<10 cm, vì 30−2x>0, 20−2x>0 và x>0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-P01",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-RATE_INTERPRETATION",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Từ f(x)=x³ cm với x phút, f'(2) và ý nghĩa x tăng rất nhỏ?",
+      "answer": "3x² ⇒ f'(2)=12 cm/phút, thay đổi tức thời của f khi x ở gần2 phút.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-P02",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MOTION_SPEED_ACCELERATION",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Vật có v(t)=t−3 m/s, a=1 m/s². Ở t=2 tốc độ đang tăng hay giảm? Tại t=3 có thể kết luận chỉ bằng dấu a?",
+      "answer": "t=2, v=−1 nên v·a<0, tốc độ giảm; tại t=3 v=0, phải xét lân cận, không suy chỉ từ a.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-P03",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MARGINAL_COST",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "C(q)=0.02q²+5q+1200. So C'(100) với C(101)−C(100).",
+      "answer": "9 so với 9.02 nghìn đồng; sai phân hữu hạn không luôn bằng đạo hàm.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-P04",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-OPTIMIZATION_DERIVATIVE",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Tối đa hóa f(x)=−x²+8x−3, 0≤x≤6.",
+      "answer": "f'=−2x+8, x=4 cho f=13; f(0)=−3, f(6)=9; max13 tại4.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-P05",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-BOUNDARY_FEASIBILITY",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Với V=x(30−2x)(20−2x), tại x=10 có thể gọi V=0 là thể tích nhỏ nhất của một **hộp** tạo được không?",
+      "answer": "Không, x=10 làm chiều rộng đáy 0, hộp suy biến; miền (0,10), inf V=0 nhưng không có min.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-P06",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-UNIT_ASSUMPTION_CHECK",
+      "placement": "SGK_PRACTICE",
+      "role": "SGK_PRACTICE",
+      "stem": "Nếu diện tích A(x) đo bằng m² và x bằng m, đơn vị A'(x) là gì? Có được gọi A' là vận tốc không?",
+      "answer": "m²/m=m; đó là độ nhạy diện tích theo độ dài, **không** là vận tốc nếu x không phải thời gian.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-A01",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-OPTIMIZATION_DERIVATIVE",
+      "placement": "SGK_APPLICATION",
+      "role": "SGK_APPLICATION",
+      "stem": "Quây vườn sát tường bằng 40 m hàng rào chỉ cho ba cạnh; hai kích thước tối ưu?",
+      "answer": "10 m cạnh vuông góc tường, 20 m song song; Amax=200 m².",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-A02",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MODEL_VARIABLE_DOMAIN",
+      "placement": "SGK_APPLICATION",
+      "role": "SGK_APPLICATION",
+      "stem": "Mô hình giá p(q)=30−0.1q, q≥0 và không cho giá âm. Miền q nào hợp lệ?",
+      "answer": "0≤q≤300, đơn vị sản phẩm theo mô hình liên tục; nếu cần q nguyên thì lấy giao với ℤ.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-A03",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-UNIT_ASSUMPTION_CHECK",
+      "placement": "SGK_APPLICATION",
+      "role": "SGK_APPLICATION",
+      "stem": "Lợi nhuận P(q)=20q−0.1q²−400 (nghìn đồng), 0≤q≤300. Nếu tính được q=100, lợi nhuận tối đa là bao nhiêu và với đơn vị nào?",
+      "answer": "P(100)=600 nghìn đồng, không phải 600 sản phẩm; q=100 sản phẩm tối ưu trong mô hình.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-W01",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-BOUNDARY_FEASIBILITY",
+      "placement": "SGK_WRITTEN",
+      "role": "WRITTEN",
+      "stem": "Từ giấy 30×20 cm, cắt bốn góc vuông cạnh x để gấp hộp không nắp. Tìm miền x và kích thước tạo thể tích lớn nhất; giải thích tại sao không chọn nghiệm f'=0 ngoài miền.",
+      "answer": "0<x<10, V=600x−100x²+4x³, V'=600−200x+12x². Nghiệm x*=(25−5√7)/3≈3.9237 hợp lệ, nghiệm còn lại >10; đạo hàm + sang − tại x*, hai biên cho V→0 nhưng hộp không hợp lệ; chiều dài đáy 30−2x*, rộng20−2x*, cao x*.",
+      "rubric": "1 biến+miền; 1 mô hình V+đạo hàm; 1 nghiệm và dấu; 1 loại nghiệm ngoài miền, kích thước và đơn vị."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B05-W02",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MARGINAL_COST",
+      "placement": "SGK_WRITTEN",
+      "role": "ANCHOR_TAG",
+      "stem": "Chi phí C(q)=0.01q²+4q+200 (nghìn đồng) với q≥0. Tính C'(50), C(51)−C(50), nêu ý nghĩa, đơn vị và giới hạn dùng xấp xỉ đạo hàm.",
+      "answer": "C'=0.02q+4; C'(50)=5 nghìn đồng/sp; C(51)−C(50)=0.01·101+4=5.01 nghìn đồng; sai số 0.01 nghìn đồng do bước rời rạc.",
+      "rubric": "1 đạo hàm; 1 giá trị C'(50); 1 sai phân; 1 diễn giải đúng đơn vị và \"xấp xỉ\". Anchor là nhãn, không nhân bản."
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-C01",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "f=x³−6x²+9x trên ℝ. Khoảng tăng/giảm và cực trị?",
+      "answer": "f'=3(x−1)(x−3), tăng (−∞,1),(3,+∞), giảm (1,3); cực đại (1,4), cực tiểu (3,0).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-C02",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "g=(2x+1)/(x−3): các tiệm cận và tâm đồ thị?",
+      "answer": "g=2+7/(x−3), đứng x=3, ngang y=2, tâm (3,2).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-C03",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "\"f'(0)=0 với f=x³ nên x=0 là cực tiểu.\" Đúng hay sai?",
+      "answer": "Sai, f'=3x² không đổi dấu, f tăng qua0; không có cực trị tại0.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-C04",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "s(t)=2t²−8t+7 (m), t≥0 (s). Tại t=1 chiều chuyển động và tốc độ?",
+      "answer": "v=4t−8, v(1)=−4m/s, đi chiều âm, tốc độ 4m/s.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-P01",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "f=x²−4x+5 trên [0,4]. GTLN/GTNN và tất cả điểm đạt?",
+      "answer": "min1 tại2; max5 tại cả x=0 và4.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-P02",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "g=(x²+4)/(x−2). Tiệm cận đứng và xiên?",
+      "answer": "g=x+2+8/(x−2), đứng x=2, xiên y=x+2.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-P03",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "h=(x²−4)/(x−2), x≠2. \"Có tiệm cận đứng x=2 vì mẫu bằng 0.\" Giải thích.",
+      "answer": "Sai; h=x+2 trên D, lim x→2 h=4 hữu hạn, có lỗ (2,4).",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-P04",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "Quây ba cạnh khu vườn sát tường bằng 36m rào, chiều rộng vuông góc x. Diện tích lớn nhất?",
+      "answer": "2x+y=36, 0<x<18; A=x(36−2x), x=9,y=18, Amax162m².",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-A01",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "f=x(2−x) trên (0,2). GTLN/GTNN?",
+      "answer": "max1 tại1; không min, vì f>0 nhưng →0 ở hai biên bị loại.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-A02",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK",
+      "stem": "\"f=1+2/(x+1), f'<0 mọi x∈D nên f nghịch biến trên cả D.\" Phản biện bằng hai điểm.",
+      "answer": "Chỉ giảm mỗi khoảng (−∞,−1), (−1,∞). Chọn x1=−2, x2=0: f(x1)=−1<f(x2)=3; không giảm trên toàn hợp.",
+      "rubric": ""
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-W01",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK_WRITTEN",
+      "stem": "g=(x²+2x+5)/(x+1). Tìm D, các tiệm cận, dấu đạo hàm, cực trị và vì sao không nối hai nhánh.",
+      "answer": "D=ℝ\\{−1}, g=x+1+4/(x+1), đứng x=−1, xiên y=x+1. g'=1−4/(x+1)²=(x−1)(x+3)/(x+1)². Dấu + trên (−∞,−3),(1,∞); − trên (−3,−1), (−1,1). Cực đại cục bộ (−3,−4), cực tiểu cục bộ (1,4).",
+      "rubric": "1 D/chia; 1 tiệm cận; 1 đạo hàm/dấu; 1 cực trị và nhánh không nối. Không ghi điểm Skill Mastery."
+    },
+    {
+      "item_id": "THPT-G12-CHI-END-W02",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM",
+      "placement": "SGK_CHAPTER_SELF_CHECK_PUBLIC",
+      "role": "CLIENT_SELF_CHECK_WRITTEN_ANCHOR",
+      "stem": "P(q)=−0.2q²+16q−100 nghìn đồng, 0≤q≤80. Tìm lợi nhuận lớn nhất, so biên và giải thích miền.",
+      "answer": "P'=16−0.4q=0 ⇒ q=40, P(0)=P(80)=−100, P(40)=220 nghìn đồng, tối ưu ở q=40 sản phẩm.",
+      "rubric": "1 miền+đơn vị; 1 đạo hàm; 1 so ba giá trị; 1 kết luận thực tế. Anchor chỉ là nhãn của câu W02."
+    }
+  ],
+  "help": [
+    {
+      "help_id": "HELP-G12-B01-01",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-MONOTONICITY_MEANING",
+      "return_item": "THPT-G12-CHI-B01-C01",
+      "body": "1. Chẩn đoán: nhầm khoảng âm với giá trị hàm âm.  \n2. Bản chất: nhìn hai đầu vào x1<x2, không xem x âm hay dương riêng lẻ.  \n3. Gợi lại: tính g(−3), g(−2) với g(x)=x².  \n4. Tự thử riêng: trên (0,+∞), g(x) tăng hay giảm?  \n5. Quay lại C01, tự trả lời bằng định nghĩa."
+    },
+    {
+      "help_id": "HELP-G12-B01-02",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-DERIVATIVE_SIGN",
+      "return_item": "THPT-G12-CHI-B01-C02",
+      "body": "1. Chẩn đoán: tìm f′=0 nhưng không xét dấu.  \n2. Bản chất: dấu f′ là hướng dịch chuyển của f khi x tăng.  \n3. Gợi lại: với h′=x−3, so sánh dấu khi x=2 và x=4.  \n4. Tự thử riêng: từ hai dấu đó dự đoán h giảm/tăng ở hai phía 3.  \n5. Quay lại C02, tự viết hai khoảng."
+    },
+    {
+      "help_id": "HELP-G12-B01-03",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-DOMAIN_INTERVALS",
+      "return_item": "THPT-G12-CHI-B01-P01",
+      "body": "1. Chẩn đoán: bỏ quên điểm làm mẫu số 0.  \n2. Bản chất: định lý đạo hàm xét trên từng khoảng nằm hẳn trong D.  \n3. Gợi lại: k(x)=1/x, x=0 không thuộc D.  \n4. Tự thử riêng: k(−1)=−1, k(1)=1; việc nối hai phía có thể làm sai phát biểu toàn miền.  \n5. Quay lại P01, viết D trước dấu f′."
+    },
+    {
+      "help_id": "HELP-G12-B01-04",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-EXTREMA_SIGN_CHANGE",
+      "return_item": "THPT-G12-CHI-B01-C03",
+      "body": "1. Chẩn đoán: lẫn lộn cực đại và cực tiểu hoặc nhầm x0 với f(x0).  \n2. Bản chất: + sang − tức đi lên rồi đi xuống, tạo đỉnh.  \n3. Gợi lại: nhìn hình D5 tại x=−1 và x=1.  \n4. Tự thử riêng: nếu f′ đổi − sang + tại x=3, đó là loại cực trị nào?  \n5. Quay lại C03, nêu riêng x0 và giá trị f(x0) khi biết hàm."
+    },
+    {
+      "help_id": "HELP-G12-B01-05",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT",
+      "return_item": "THPT-G12-CHI-B01-C04",
+      "body": "1. Chẩn đoán: coi mọi nghiệm f′=0 là cực trị.  \n2. Bản chất: cần chuyển từ tăng sang giảm hoặc ngược lại, nếu hàm khả vi.  \n3. Gợi lại: đạo hàm x³ là 3x² không đổi dấu ở 0.  \n4. Tự thử riêng: y=x⁵ có điểm dừng tại 0 nhưng có đảo hướng không?  \n5. Quay lại C04, tự giải thích bằng dấu."
+    },
+    {
+      "help_id": "HELP-G12-B01-06",
+      "lesson_id": "B01",
+      "outcome_id": "G12-B01-MOTION_CONTEXT",
+      "return_item": "THPT-G12-CHI-B01-A01",
+      "body": "1. Chẩn đoán: lấy s(t)>0 để đoán chiều chuyển động.  \n2. Bản chất: chiều phụ thuộc v=s′, không phải dấu s.  \n3. Gợi lại: vị trí giảm từ 10 m xuống 8 m trong một giây nghĩa là vận tốc trung bình âm.  \n4. Tự thử riêng: nếu v(t)=2(t−4), trước và sau 4 s chiều nào?  \n5. Quay lại A01, xét riêng miền thời gian t≥0."
+    },
+    {
+      "help_id": "HELP-G12-B02-01",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-EXTREMA_GLOBAL_MEANING",
+      "return_item": "THPT-G12-CHI-B02-C01",
+      "body": "1. Lỗi: cho rằng tiến tới 1 nghĩa là đạt 1.\n2. Bản chất: \"lớn nhất\" yêu cầu có x0 trong miền.\n3. Gợi lại: giữa x=0.8 và1 luôn có 0.9.\n4. Tự thử: f(x)=x, (2,3) có max3?\n5. Quay lại C01."
+    },
+    {
+      "help_id": "HELP-G12-B02-02",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-CLOSED_INTERVAL_EXISTENCE",
+      "return_item": "THPT-G12-CHI-B02-C02",
+      "body": "1. Lỗi: bỏ điều kiện liên tục và đoạn đóng.\n2. Bản chất: \"đạt\" là điều kiện quan trọng của định lý đoạn.\n3. Gợi lại: y=x trên (0,1) khác [0,1].\n4. Tự thử: y=x trên [0,1] đạt max/min tại đâu?\n5. Quay lại C02."
+    },
+    {
+      "help_id": "HELP-G12-B02-03",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-CRITICAL_END_POINTS",
+      "return_item": "THPT-G12-CHI-B02-C03",
+      "body": "1. Lỗi: chỉ ghi nghiệm f'=0.\n2. Bản chất: điểm biên có thể lớn hơn/nhỏ hơn cực trị nội.\n3. Gợi lại: f(0), f(1), f(4) của x²−2x.\n4. Tự thử: tại sao không bỏ x=4?\n5. Quay lại C03."
+    },
+    {
+      "help_id": "HELP-G12-B02-04",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-OPEN_DOMAIN_NONATTAINMENT",
+      "return_item": "THPT-G12-CHI-B02-C04",
+      "body": "1. Lỗi: nhầm giới hạn với giá trị đạt.\n2. Bản chất: giới hạn bằng0 nhưng 1/x không thể bằng0.\n3. Gợi lại: với x>0, 1/x>0.\n4. Tự thử: f=1/x trên [1,∞) có max ở đâu, có min0?\n5. Quay lại C04."
+    },
+    {
+      "help_id": "HELP-G12-B02-05",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-CONSTRAINED_DOMAIN",
+      "return_item": "THPT-G12-CHI-B02-P03",
+      "body": "1. Lỗi: lấy x<0 dù bài quy định x≥0.\n2. Bản chất: miền xét là ràng buộc của tối ưu.\n3. Gợi lại: f(0)=0 và f(1)=1/2.\n4. Tự thử: khi x>1, f tăng hay giảm?\n5. Quay lại P03."
+    },
+    {
+      "help_id": "HELP-G12-B02-06",
+      "lesson_id": "B02",
+      "outcome_id": "G12-B02-OPTIMIZATION_MODEL",
+      "return_item": "THPT-G12-CHI-B02-A01",
+      "body": "1. Lỗi: tối ưu không ghi miền chiều dài.\n2. Bản chất: đoạn dây cố định, hai chiều dương.\n3. Gợi lại: chiều dài=12−x.\n4. Tự thử: nếu x=0 có còn khu vườn hình chữ nhật không?\n5. Quay lại A01."
+    },
+    {
+      "help_id": "HELP-G12-B03-01",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-HORIZONTAL_LIMIT",
+      "return_item": "THPT-G12-CHI-B03-C01",
+      "body": "1. Lỗi: lấy x=∞ như một số. 2. Bản chất: xét xu hướng khi |x| tăng. 3. Gợi lại: 1/(1000−1) rất nhỏ. 4. Tự thử 8+1/x khi x→∞. 5. Về C01."
+    },
+    {
+      "help_id": "HELP-G12-B03-02",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-VERTICAL_ONE_SIDED",
+      "return_item": "THPT-G12-CHI-B03-C02",
+      "body": "1. Lỗi: quên dấu mẫu hai phía. 2. Bản chất: 1/số âm rất nhỏ có độ lớn lớn, mang dấu âm. 3. Gợi lại 1/(−0.01),1/(0.01). 4. Tự thử x→1± của 1/(x−1). 5. Về C02."
+    },
+    {
+      "help_id": "HELP-G12-B03-03",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-OBLIQUE_REMAINDER",
+      "return_item": "THPT-G12-CHI-B03-C03",
+      "body": "1. Lỗi: thấy x và chọn ngang. 2. Bản chất: đường xiên phải có phần dư tiến về0. 3. Gợi lại x+1+1/x. 4. Tự thử y=2x−3+1/(x+4). 5. Về C03."
+    },
+    {
+      "help_id": "HELP-G12-B03-04",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-REMOVABLE_DISCONTINUITY",
+      "return_item": "THPT-G12-CHI-B03-C04",
+      "body": "1. Lỗi: mọi nghiệm mẫu0 đều là tiệm cận. 2. Bản chất: có thể rút gọn tử. 3. Gợi lại x²−a²=(x−a)(x+a). 4. Tự thử (x²−1)/(x−1). 5. Về C04."
+    },
+    {
+      "help_id": "HELP-G12-B03-05",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-DOMAIN_SIDED_LIMITS",
+      "return_item": "THPT-G12-CHI-B03-P04",
+      "body": "1. Lỗi: bắt buộc có hai phía. 2. Bản chất: một giới hạn vô cực đủ. 3. Gợi lại sqrt(x−1) chỉ có nghĩa khi x≥1. 4. Tự thử 1/sqrt(x−4) khi x→4+. 5. Về P04."
+    },
+    {
+      "help_id": "HELP-G12-B03-06",
+      "lesson_id": "B03",
+      "outcome_id": "G12-B03-GRAPH_INTERPRETATION",
+      "return_item": "THPT-G12-CHI-B03-P06",
+      "body": "1. Lỗi: nhầm dấu phần dư trong hai nhánh. 2. Bản chất: f−3=7/(x−2). 3. Gợi lại tại x=1 giá trị phần dư âm, tại3 dương. 4. Tự thử đối chiếu x=0 và4. 5. Về P06."
+    },
+    {
+      "help_id": "HELP-G12-B04-01",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-SURVEY_WORKFLOW",
+      "return_item": "THPT-G12-CHI-B04-C01",
+      "body": "1. Lỗi: chưa xác định D đã vẽ. 2. Bản chất: điểm ngoài D không có trên đồ thị. 3. Gợi lại x−2 không bằng0. 4. Tự thử y=1/(x+4): loại x nào? 5. Trở lại C01."
+    },
+    {
+      "help_id": "HELP-G12-B04-02",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-CUBIC_VARIATION",
+      "return_item": "THPT-G12-CHI-B04-C02",
+      "body": "1. Lỗi: xét nghiệm f'=0 nhưng bỏ đổi dấu. 2. Bản chất: dấu dẫn đến tăng/giảm. 3. Gợi lại tích x(x−2). 4. Tự thử tại x=1 dấu ra sao? 5. Trở lại C02."
+    },
+    {
+      "help_id": "HELP-G12-B04-03",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-RATIONAL_VARIATION",
+      "return_item": "THPT-G12-CHI-B04-C03",
+      "body": "1. Lỗi: kết luận giảm trên hợp hai khoảng. 2. Bản chất: định lý xét từng khoảng trong D. 3. Gợi lại x=1 không hợp lệ. 4. Tự thử g(0),g(2) có phù hợp \"giảm trên hợp\" không? 5. Trở lại C03."
+    },
+    {
+      "help_id": "HELP-G12-B04-04",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-INTERCEPTS_LIMITS",
+      "return_item": "THPT-G12-CHI-B04-C04",
+      "body": "1. Lỗi: đặt y=0 và x=0 lẫn nhau. 2. Bản chất: Ox thì y=0, Oy thì x=0. 3. Gợi lại tử x+2. 4. Tự thử với (x+3)/(x−1). 5. Trở lại C04."
+    },
+    {
+      "help_id": "HELP-G12-B04-05",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-CENTER_SYMMETRY",
+      "return_item": "THPT-G12-CHI-B04-P01",
+      "body": "1. Lỗi: lấy tâm (0,0) mọi đồ thị. 2. Bản chất: tâm là giao các tiệm cận trong mẫu y=a+k/(x−b). 3. Gợi lại y=2 đường ngang. 4. Tự thử y=−1+3/(x−2) tâm đâu? 5. Trở lại P01."
+    },
+    {
+      "help_id": "HELP-G12-B04-06",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-READ_VARIATION_TABLE",
+      "return_item": "THPT-G12-CHI-B04-P02",
+      "body": "1. Lỗi: nhầm +→− với tiểu. 2. Bản chất: đi lên rồi xuống tức đỉnh. 3. Gợi lại y=x² ở0: −→+. 4. Tự thử y'=−→+ tại 5. 5. Trở lại P02."
+    },
+    {
+      "help_id": "HELP-G12-B04-07",
+      "lesson_id": "B04",
+      "outcome_id": "G12-B04-DOMAIN_NONCONNECT",
+      "return_item": "THPT-G12-CHI-B04-P03",
+      "body": "1. Lỗi: nối nét qua điểm cấm. 2. Bản chất: giới hạn đứng tạo nhánh vô hạn. 3. Gợi lại 1/(x+1). 4. Tự thử giá trị khi x→−1±. 5. Trở lại P03."
+    },
+    {
+      "help_id": "HELP-G12-B05-01",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-RATE_INTERPRETATION",
+      "return_item": "THPT-G12-CHI-B05-C01",
+      "body": "1. Lỗi: lẫn f và f'. 2. Bản chất: f' là độ đổi mỗi đơn vị x. 3. Gợi lại y=x², y'=2x. 4. Tự thử f=x³ tại x=1. 5. Quay lại C01."
+    },
+    {
+      "help_id": "HELP-G12-B05-02",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MOTION_SPEED_ACCELERATION",
+      "return_item": "THPT-G12-CHI-B05-C02",
+      "body": "1. Lỗi: vận tốc âm thì tốc độ âm. 2. Bản chất: tốc độ=|v|. 3. Gợi lại v=−4 ⇒ tốc độ4. 4. Tự thử v=−6. 5. Quay lại C02."
+    },
+    {
+      "help_id": "HELP-G12-B05-03",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MARGINAL_COST",
+      "return_item": "THPT-G12-CHI-B05-C03",
+      "body": "1. Lỗi: tính C(q) thay cho C'(q). 2. Bản chất: chi phí cận biên là đạo hàm theo q. 3. Gợi lại (q²)'=2q. 4. Tự thử C=q²+3q tại q=2. 5. Quay lại C03."
+    },
+    {
+      "help_id": "HELP-G12-B05-04",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-MODEL_VARIABLE_DOMAIN",
+      "return_item": "THPT-G12-CHI-B05-C04",
+      "body": "1. Lỗi: cho x lớn hơn nửa chiều ngắn nhất. 2. Bản chất: hai đáy sau cắt phải dương. 3. Gợi lại 20−2x>0. 4. Tự thử giấy 20×10. 5. Quay lại C04."
+    },
+    {
+      "help_id": "HELP-G12-B05-05",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-OPTIMIZATION_DERIVATIVE",
+      "return_item": "THPT-G12-CHI-B05-P04",
+      "body": "1. Lỗi: bỏ giá trị tại biên đoạn. 2. Bản chất: so ứng viên và hai đầu được phép. 3. Gợi lại f(0), f(6). 4. Tự thử x ở đỉnh4. 5. Quay lại P04."
+    },
+    {
+      "help_id": "HELP-G12-B05-06",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-BOUNDARY_FEASIBILITY",
+      "return_item": "THPT-G12-CHI-B05-P05",
+      "body": "1. Lỗi: dùng hộp bẹt là hộp khả thi. 2. Bản chất: x,30−2x,20−2x cùng dương. 3. Gợi lại x=10 cho bề rộng đáy0. 4. Tự thử x=9.9 hợp lệ và còn thể tích dương không? 5. Quay lại P05."
+    },
+    {
+      "help_id": "HELP-G12-B05-07",
+      "lesson_id": "B05",
+      "outcome_id": "G12-B05-UNIT_ASSUMPTION_CHECK",
+      "return_item": "THPT-G12-CHI-B05-P06",
+      "body": "1. Lỗi: mọi đạo hàm gọi vận tốc. 2. Bản chất: đơn vị y chia đơn vị x. 3. Gợi lại diện tích m², chiều dài m. 4. Tự thử thể tích m³ theo thời gian s. 5. Quay lại P06."
+    },
+    {
+      "help_id": "HELP-G12-CHI-END-01",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA",
+      "return_item": "THPT-G12-CHI-END-C01",
+      "body": "1. Chẩn đoán: chưa tách điểm tới hạn với giá trị. 2. Bản chất: f' đổi dấu rồi tính f(x0). 3. Gợi lại 3(x−1)(x−3). 4. Tự thử dấu tại x=2. 5. Làm lại END-C01."
+    },
+    {
+      "help_id": "HELP-G12-CHI-END-02",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH",
+      "return_item": "THPT-G12-CHI-END-C02",
+      "body": "1. Chẩn đoán: suy sai tiệm cận từ tử. 2. Bản chất: hằng cộng phần dư. 3. Gợi lại g=2+7/(x−3). 4. Tự thử giới hạn khi x→+∞. 5. Làm lại END-C02."
+    },
+    {
+      "help_id": "HELP-G12-CHI-END-03",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS",
+      "return_item": "THPT-G12-CHI-END-C03",
+      "body": "1. Chẩn đoán: nhầm f'=0 đồng nghĩa cực trị. 2. Bản chất: xét dấu hai phía. 3. Gợi lại f=x³. 4. Tự thử f=x⁵ ở0. 5. Làm lại END-C03."
+    },
+    {
+      "help_id": "HELP-G12-CHI-END-04",
+      "lesson_id": "END",
+      "outcome_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM",
+      "return_item": "THPT-G12-CHI-END-C04",
+      "body": "1. Chẩn đoán: nhầm vị trí, vận tốc và tốc độ. 2. Bản chất: v=s', speed=|v|. 3. Gợi lại v=4t−8. 4. Tự thử tại t=3. 5. Làm lại END-C04."
+    }
+  ],
+  "lessons": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "END"
+  ],
+  "targeted_delta": {
+    "scope": "G12_B01_W01_W02_SOLUTION_ONLY",
+    "class": "DELTA_C_ACADEMIC_MATERIAL",
+    "item_ids": [
+      "THPT-G12-CHI-B01-W01",
+      "THPT-G12-CHI-B01-W02"
+    ],
+    "authoring_source_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+    "independent_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
+    "composite_receipt_blob": "39c7c98a0f311f72a7eb70b25b75d38b34998793",
+    "original_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+    "protected_rd1_new": 0,
+    "mastery": false
+  }
+}

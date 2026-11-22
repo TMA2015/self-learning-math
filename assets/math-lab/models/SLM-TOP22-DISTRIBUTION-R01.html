@@ -1,0 +1,98 @@
+<!-- MODEL_ID: SLM-TOP22-DISTRIBUTION-R01; BASE_BLOB: 33632fdf8743b5526b925e8c9f393397bb04d943; AUTHORING_CANDIDATE; G1_G4_OPEN -->
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CĐ22 · Dữ liệu thô và ngoại lệ</title>
+<style>
+:root{color-scheme:light;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--ink:#183b54;--muted:#50697b;--head:#eaf4fa;--surface:#fafdff;--edge:#c7dfe9;--blue:#1687b4;--green:#218f73;--orange:#e9922a;color:var(--ink)}
+*{box-sizing:border-box}body{margin:0;background:#f6fafc}main{max-width:980px;margin:15px auto;padding:0 10px}article{background:white;border:1px solid var(--edge);border-radius:15px;overflow:hidden}
+header{background:var(--head);padding:17px 21px;border-bottom:1px solid var(--edge)}h1{font-size:clamp(1.3rem,2.5vw,1.7rem);line-height:1.3;margin:0}h2{font-size:1.1rem;margin:0 0 8px}p{margin:7px 0 14px}.sub,.small{color:var(--muted)}.small{font-size:.9rem}
+.content{padding:18px 21px}.columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.panel{padding:14px;border:1px solid var(--edge);border-radius:11px;background:var(--surface);min-width:0}
+label{display:block;margin:11px 0 17px;font-weight:600}label span{display:flex;justify-content:space-between;gap:8px}output{font-variant-numeric:tabular-nums}
+input[type=range]{display:block;width:100%;min-height:44px;margin-top:9px;accent-color:var(--blue);cursor:pointer}
+button,.menu a{font:inherit;border:1px solid #98bdcd;border-radius:8px;padding:9px 13px;background:var(--head);color:#125778;cursor:pointer;min-height:42px;text-decoration:none}
+button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.menu{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}.chart{max-width:100%;overflow-x:auto}.chart svg{width:100%;min-width:0;height:auto;display:block;background:#fff;border:1px solid #d7e7ee;border-radius:10px}
+.numbers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}
+.value{padding:10px;background:white;border:1px solid var(--edge);border-radius:8px}.value b{display:block;font-variant-numeric:tabular-nums}.value small{font-size:.85rem;color:var(--muted)}
+.observe{padding:12px 15px;border-left:4px solid var(--green);background:#edf8f4;margin:13px 0}
+details{border:1px solid var(--edge);padding:10px 13px;border-radius:8px;background:#f7fbfd;margin-top:12px}summary{cursor:pointer;color:#115b7b;font-weight:700}
+.controls-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 13px}
+[hidden]{display:none!important}@media(max-width:680px){main{margin:6px auto;padding:0 6px}.content,header{padding:13px}.columns,.controls-grid{grid-template-columns:1fr}.panel{padding:12px}}
+
+/* SLM_MATH_LAB_GOLDEN_UI_TOKENS_R02_20261117: authoring CSS-only parity; math/JS unchanged */
+:root{--slm-bg:#fff;--slm-header:#eaf4fa;--slm-canvas:#fafdff;--slm-border:#c7dfe9;--slm-ink:#183b54;--slm-muted:#50697b;--slm-blue:#1687b4;--slm-green:#218f73;--slm-orange:#e9922a;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+body{background:var(--slm-bg)!important;color:var(--slm-ink)!important;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;font-size:16px!important;line-height:1.6!important}
+main,.lab,.d5-card,.d5-box{background:#fff!important;border-color:var(--slm-border)!important}
+header,.d5-top,.d5-head{background:var(--slm-header)!important}
+h1{font-size:clamp(1.3rem,2.5vw,1.7rem)!important;line-height:1.3!important;color:var(--slm-ink)!important}
+h2{font-size:1.1rem!important;line-height:1.35!important;color:var(--slm-ink)!important}
+label,.control label,.d5-control label,.d5-controls label{color:var(--slm-ink)!important;font-size:1rem!important}
+small,.muted,.small,.sub,.d5-note{color:var(--slm-muted)!important}
+button,select,.menu a{font:inherit;min-height:42px;background:var(--slm-header)!important;color:var(--slm-ink)!important;border:1px solid var(--slm-border)!important;border-radius:10px!important}
+input[type=range],input[type=checkbox],input[type=radio]{accent-color:var(--slm-blue)!important}
+input[type=range]{min-height:44px}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.menu a:focus-visible{outline:3px solid var(--slm-orange)!important;outline-offset:2px!important}
+canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)!important}
+.canvaswrap,.d5-stage,.d5-graph,.pane,article,.field,.box,.panel,section{border-color:var(--slm-border)!important}
+.summary,.d5-results,.output,.result,.answer,.stats,.field{background:var(--slm-canvas)!important}
+</style></head><body><main>
+<article data-model-id="SLM-TOP22-DISTRIBUTION-R01" data-assessment="PUBLIC_DISCOVERY_NO_MASTERY">
+<header><h1>Giá trị cực đoan làm thay đổi phân phối ra sao?</h1><p class="sub">CĐ22 · Khám phá số trung bình, trung vị, tứ phân vị và giá trị ngoại lệ</p></header><div class="content">
+<p><b>Dự đoán:</b> Dãy 2, 2, 3, 4, 5, 5, 6 có trung vị 4. Nếu thay 6 bằng 20, số trung bình, trung vị và khoảng biến thiên sẽ biến đổi như nhau không?</p>
+<div class="columns"><section class="panel"><h2>Điều chỉnh bảy số liệu</h2><div id="data-sliders" class="controls-grid"></div><button type="button" id="reset-stats">Đặt lại</button> <button type="button" id="try-extreme">Thử ngoại lệ 20</button>
+<p class="small">7 quan sát nguyên, mỗi giá trị từ 1 đến 20. Tứ phân vị KNTT với n lẻ: bỏ giá trị trung vị rồi lấy trung vị của hai nửa.</p></section>
+<section class="panel"><h2>Quan sát biểu đồ chấm</h2><div class="chart"><svg id="plot-svg" viewBox="0 0 705 218" role="img" aria-labelledby="dot-title dot-desc">
+<title id="dot-title">Biểu đồ chấm dữ liệu thô</title><desc id="dot-desc">Bảy dấu chấm, trùng giá trị thì xếp chồng. Số liệu được viết bên dưới.</desc>
+<line id="axis" x1="42" y1="168" x2="685" y2="168" stroke="#668698" stroke-width="2"/><g id="ticks"></g><g id="stat-markers"></g><g id="dots"></g><text id="axis-caption" x="300" y="214" font-size="16" fill="#50697b">Giá trị (1–20)</text>
+</svg></div><p class="small"><strong>Đường tím đứt:</strong> số trung bình; <strong>đường xanh lá đứt:</strong> trung vị. Chấm cam: giá trị ngoài hàng rào 1,5×IQR (không có nghĩa số liệu nhập sai).</p><div class="numbers">
+<div class="value"><small>Trung bình</small><b id="mean"></b></div><div class="value"><small>Trung vị</small><b id="median"></b></div>
+<div class="value"><small>Khoảng biến thiên</small><b id="spread"></b></div><div class="value"><small>Q1 · Q3 · IQR</small><b id="quartiles"></b></div>
+</div></section></div><p id="stats-explain" class="observe" aria-live="polite"></p>
+<p><b>Giải thích:</b> Trung bình phụ thuộc tổng toàn bộ số liệu; trung vị là giá trị giữa sau sắp xếp; khoảng biến thiên bằng max−min. Quy tắc hàng rào 1,5×IQR chỉ đánh dấu giá trị cần chú ý, không khẳng định số liệu bị sai.</p>
+<p><b>Vận dụng · Tự thử trước:</b> Đặt dãy 2, 2, 3, 4, 5, 5, 20; tính trung bình, Me, Q1, Q3 và khoảng biến thiên.</p>
+<details><summary>Đối chiếu sau khi tự thử</summary><p><b>Đối chiếu:</b> Tổng 41; trung bình 41/7≈5,86; Me=4; Q1=2, Q3=5, IQR=3; khoảng biến thiên 18; hàng rào trên 9,5 nên 20 nằm ngoài. Nếu chọn trung vị 5, hãy sắp lại dãy tăng dần.</p></details>
+<p class="small">Mô hình dùng số liệu thô, không áp dụng cách ước lượng cho số liệu ghép nhóm. Em có thể thay đổi từng giá trị để tự kiểm tra dự đoán của mình.</p></div></article>
+<noscript>Cần JavaScript để tương tác; trang bài học vẫn phải có nội dung kiến thức và ví dụ đầy đủ không phụ thuộc mô hình.</noscript></main>
+<script>
+(function(){"use strict";
+const $=id=>document.getElementById(id);
+const fmt=n=>n.toLocaleString("vi-VN",{maximumFractionDigits:2});
+const initial=[2,2,3,4,5,5,6],data=initial.slice(),ns="http://www.w3.org/2000/svg";
+function el(name,attrs,txt){const node=document.createElementNS(ns,name);Object.entries(attrs).forEach(([k,v])=>node.setAttribute(k,String(v)));if(txt!==undefined)node.textContent=String(txt);return node;}
+for(let i=0;i<7;i++){const label=document.createElement("label"),span=document.createElement("span"),t=document.createElement("span"),out=document.createElement("output"),range=document.createElement("input");
+t.textContent="Quan sát "+(i+1);out.id="out-"+i;span.append(t,out);
+range.type="range";range.id="data-"+i;range.min=1;range.max=20;range.step=1;range.value=initial[i];range.setAttribute("aria-label","Quan sát thứ "+(i+1));range.addEventListener("input",()=>{data[i]=Number(range.value);stats();});
+label.append(span,range);$("data-sliders").appendChild(label);}
+function stats(){
+ const sorted=data.slice().sort((a,b)=>a-b),mean=data.reduce((a,b)=>a+b,0)/7,med=sorted[3],q1=sorted[1],q3=sorted[5],iqr=q3-q1,spread=sorted[6]-sorted[0];
+ const lo=q1-1.5*iqr,hi=q3+1.5*iqr,counts={};$("dots").replaceChildren();
+ // Keep every data value (including 20) visible without sideways scrolling.
+ const chart=document.querySelector(".chart"),width=Math.max(270,Math.min(705,Math.floor(chart.clientWidth||705)));
+ const compact=width<540,x0=compact?24:42,x1=width-(compact?20:21),dx=(x1-x0)/19;
+ $("plot-svg").setAttribute("viewBox","0 0 "+width+" 218");
+ const xPos=v=>x0+(v-1)*dx;
+ const axis=$("axis");axis.setAttribute("x1",x0);axis.setAttribute("x2",x1);
+ $("axis-caption").setAttribute("x",Math.max(85,width/2-38));
+ const ticks=$("ticks");ticks.replaceChildren();
+ for(let i=1;i<=20;i++){const px=xPos(i);
+  ticks.appendChild(el("line",{x1:px,y1:168,x2:px,y2:174,stroke:"#708a98"}));
+  if((compact?[1,5,10,15,20].includes(i):i===1||i%2===0||i===20))
+   ticks.appendChild(el("text",{x:px-(i>=10?9:5),y:193,"font-size":compact?13:14,fill:"#50697b"},i));
+ }
+ const markers=$("stat-markers");markers.replaceChildren();
+ const addMarker=(v,color,dash,caption,y)=>{const px=xPos(v);
+  markers.appendChild(el("line",{x1:px,y1:44,x2:px,y2:168,stroke:color,"stroke-width":2,"stroke-dasharray":dash}));
+  markers.appendChild(el("text",{x:Math.max(6,Math.min(width-(compact?60:110),px+7)),y,fill:color,"font-size":compact?13:14,"font-weight":700},caption));
+ };
+ addMarker(mean,"#8555a5","5 4","TB "+fmt(mean),17);
+ addMarker(med,"#218f73","3 5","Me "+fmt(med),36);
+ sorted.forEach(v=>{const layer=counts[v]||0;counts[v]=layer+1;const out=v<lo||v>hi;$("dots").appendChild(el("circle",{cx:xPos(v),cy:152-(compact?14:17)*layer,r:compact?7.5:11,fill:out?"#e9922a":"#1687b4",stroke:"white","stroke-width":compact?1.4:2}));});
+ data.forEach((v,i)=>$("out-"+i).textContent=v);
+ $("mean").textContent=fmt(mean);$("median").textContent=fmt(med);$("spread").textContent=fmt(spread);$("quartiles").textContent=[q1,q3,iqr].map(fmt).join(" · ");
+ const exceptions=sorted.filter(v=>v<lo||v>hi);
+ $("dot-desc").textContent="Biểu đồ chấm gồm 7 giá trị: "+sorted.join(", ")+". Các chấm trùng xếp chồng. Đường trung bình tại "+fmt(mean)+"; đường trung vị tại "+fmt(med)+". "+exceptions.length+" quan sát ngoài hàng rào 1,5×IQR.";
+ $("stats-explain").textContent="Dãy tăng: "+sorted.join(", ")+". Trung bình "+fmt(mean)+"; Me "+fmt(med)+"; Q1 "+q1+"; Q3 "+q3+"; hàng rào ["+fmt(lo)+"; "+fmt(hi)+"]. "+(exceptions.length?"Giá trị ngoài rào: "+exceptions.join(", ")+".":"Không có giá trị ngoài rào.");
+}
+function setData(vals){vals.forEach((v,i)=>{data[i]=v;$("data-"+i).value=v;});stats();}
+$("reset-stats").addEventListener("click",()=>setData(initial));$("try-extreme").addEventListener("click",()=>setData([2,2,3,4,5,5,20]));window.addEventListener("resize",stats);stats();
+})();
+</script></body></html>

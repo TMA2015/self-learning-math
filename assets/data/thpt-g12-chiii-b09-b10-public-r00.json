@@ -1,0 +1,942 @@
+{
+  "packet_id": "G12-SGK-CHIII-B09-B10-R00",
+  "source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+  "receipt_blob": "0fb489698a92c71e1fb9e0ab17671c5d90d65327",
+  "mode": "CLIENT_SELF_CHECK_NO_MASTERY",
+  "items": [
+    {
+      "item_id": "THPT-G12-B09-C01",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O01",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Các nhóm [0;10), [10;20), [20;30) có tần số 0,5,7. Cỡ mẫu là bao nhiêu?",
+      "answer": "12",
+      "solution": "Cộng tần số 0+5+7=12; lớp rỗng không làm tăng cỡ mẫu.",
+      "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc."
+    },
+    {
+      "item_id": "THPT-G12-B09-P01",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Bảng gồm các nhóm [5;10), [10;15), [15;20) với f=(2,0,6). Nhóm giữa có giá trị gốc không?",
+      "answer": "Không",
+      "solution": "Tần số lớp giữa bằng 0 nên không có quan sát nằm ở lớp ấy.",
+      "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc."
+    },
+    {
+      "item_id": "THPT-G12-B09-P02",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Có hai bảng ghép nhóm cùng tần số (3,4,3). Có thể khẳng định các số liệu gốc của chúng bằng nhau không?",
+      "answer": "Không",
+      "solution": "Tần số chỉ cho biết số quan sát thuộc nhóm, không giữ từng giá trị gốc.",
+      "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc."
+    },
+    {
+      "item_id": "THPT-G12-B09-W01",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O01",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN",
+      "anchor_tag": false,
+      "level": "2–3",
+      "stem": "Trình bày bảng [0;5),[5;10),[10;15),[15;20) với f=(0,3,7,0): cỡ mẫu, hai nhóm có quan sát và điều ta không thể biết chính xác về mẫu gốc.",
+      "answer": "n=10; chỉ [5;10),[10;15) có quan sát; không tái tạo được số liệu thô",
+      "solution": "Tổng f=10; loại hai nhóm có f=0; trong các nhóm còn lại không biết từng quan sát cụ thể.",
+      "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
+      "rubric": [
+        "1 điểm — Tính n",
+        "2 điểm — Xác định hai lớp có dữ liệu",
+        "2 điểm — Nêu giới hạn suy luận từ bảng ghép nhóm"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B09-C02",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O02",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Các nhóm [0;5),[5;10),[10;15),[15;20) có f=(0,5,10,0). R là bao nhiêu?",
+      "answer": "10",
+      "solution": "Nhóm đầu có dữ liệu là [5;10), cuối [10;15), nên R=15−5=10.",
+      "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô."
+    },
+    {
+      "item_id": "THPT-G12-B09-P03",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Các nhóm [10;20),[20;30),[30;40),[40;50) có f=(2,0,7,1). R ghép nhóm?",
+      "answer": "40",
+      "solution": "Nhóm đầu [10;20), cuối [40;50): R=50−10=40.",
+      "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô."
+    },
+    {
+      "item_id": "THPT-G12-B09-P04",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Một mẫu gốc có min=13, max=47; bảng ghép lớp [10;20) đến [40;50) ở hai biên. So R gốc với R ghép nhóm.",
+      "answer": "R gốc=34; R ghép nhóm=40",
+      "solution": "R gốc=47−13=34; nhóm biên có f>0 nên R ghép=50−10=40.",
+      "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô."
+    },
+    {
+      "item_id": "THPT-G12-B09-W02",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O02",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN",
+      "anchor_tag": false,
+      "level": "2–3",
+      "stem": "Đọc bảng nhóm [2;4),[4;6),[6;8),[8;10),[10;12), tần số 0,3,4,2,0; tính R ghép và giải thích vì sao không được lấy 12−2.",
+      "answer": "R=10−4=6",
+      "solution": "Loại các lớp có tần số 0 ở hai biên; lấy cận lớp đầu có dữ liệu là 4 và cận cuối là 10; nêu R chỉ xấp xỉ dữ liệu gốc.",
+      "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
+      "rubric": [
+        "1 điểm — Chỉ ra nhóm có tần số dương",
+        "2 điểm — Chọn đúng hai cận",
+        "1 điểm — Tính R=6",
+        "1 điểm — Giải thích lỗi 12−2"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B09-C03",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O03",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "R thay đổi nhiều nếu thêm một quan sát vào lớp rất xa lớp cuối hiện tại. Đúng hay sai?",
+      "answer": "Đúng",
+      "solution": "R dựa vào hai cận nhóm có dữ liệu ở xa nhất; một quan sát có thể đổi biên.",
+      "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R."
+    },
+    {
+      "item_id": "THPT-G12-B09-P05",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Phân bố ban đầu có nhóm dương đầu [10;20), cuối [30;40). Sau thêm 1 số liệu ở [60;70), R tăng bao nhiêu?",
+      "answer": "30",
+      "solution": "R cũ=40−10=30; R mới=70−10=60; tăng 30.",
+      "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R."
+    },
+    {
+      "item_id": "THPT-G12-B09-P06",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Mẫu A có R=20, mẫu B có R=30 (cùng đơn vị). Có thể suy B có IQR lớn hơn không?",
+      "answer": "Không",
+      "solution": "Khoảng biến thiên không quyết định mức phân tán ở 50% giữa mẫu.",
+      "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R."
+    },
+    {
+      "item_id": "THPT-G12-B09-W03",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O03",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN; ANCHOR_TAG",
+      "anchor_tag": true,
+      "level": "2–3",
+      "stem": "Một bảng ban đầu có lớp đầu [0;10), lớp cuối [20;30), tần số dương. Sau thêm 1 quan sát trong [50;60), tính R trước/sau và giải thích điều chưa thể kết luận về IQR.",
+      "answer": "R trước=30, sau=60; chưa thể xác định IQR từ các cận",
+      "solution": "Cùng đầu 0; biên cuối đổi 30→60; IQR cần toàn bộ tần số tích lũy chứ không chỉ hai lớp biên.",
+      "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
+      "rubric": [
+        "1 điểm — Xác định R trước",
+        "1 điểm — Xác định R sau",
+        "1 điểm — Xác định tăng 30",
+        "2 điểm — Giải thích giới hạn với IQR"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B09-C04",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O04",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Với f=(6,14,12,8), n=40; lớp chứa Q₁ thuộc vị trí nào?",
+      "answer": "Lớp 2",
+      "solution": "n/4=10; cộng dồn 6<10≤20 nên nằm lớp 2.",
+      "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm."
+    },
+    {
+      "item_id": "THPT-G12-B09-P07",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Với f=(6,14,12,8), lớp chứa Q₃ là lớp mấy?",
+      "answer": "Lớp 3",
+      "solution": "3n/4=30; cộng dồn 6,20,32 nên lớp 3.",
+      "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm."
+    },
+    {
+      "item_id": "THPT-G12-B09-P08",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Tần số (2,6,10,6) có n=24. Nêu vị trí n/4 và 3n/4 và hai lớp tương ứng.",
+      "answer": "6 và 18; lớp 2 và lớp 3",
+      "solution": "Cộng dồn 2,8,18,24; vị trí 6 nằm lớp 2; vị trí 18 ở biên trên lớp 3.",
+      "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm."
+    },
+    {
+      "item_id": "THPT-G12-B09-W04",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O04",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN",
+      "anchor_tag": false,
+      "level": "2–3",
+      "stem": "Bảng tần số 4 nhóm liên tiếp f=(4,8,12,8): lập tần số cộng dồn, tìm vị trí n/4,3n/4 và hai nhóm chứa Q.",
+      "answer": "n=32; cộng dồn 4,12,24,32; Q₁ lớp 2; Q₃ lớp 3 (biên trên)",
+      "solution": "Lập n=32; hai vị trí 8 và 24; dùng cộng dồn nhận đúng lớp. Ở mốc biên trên, nội suy lớp kề cho cùng giá trị nếu lớp liền nhau.",
+      "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
+      "rubric": [
+        "1 điểm — Tính n",
+        "1 điểm — Vị trí hai tứ phân vị",
+        "1 điểm — Dãy tích lũy",
+        "2 điểm — Chọn lớp và giải thích biên"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B09-C05",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O05",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Nhóm [15;20) chứa Q₁ của mẫu n=40, C=6, f=14. Tính Q₁ (2 chữ số).",
+      "answer": "16,43",
+      "solution": "Q₁≈15+((10−6)/14)·5=16,42857≈16,43.",
+      "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương."
+    },
+    {
+      "item_id": "THPT-G12-B09-P09",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Nhóm [20;25) chứa Q₃ của mẫu n=40, C=20, f=12. Tính Q₃ (2 chữ số).",
+      "answer": "24,17",
+      "solution": "Q₃≈20+((30−20)/12)·5=24,1667≈24,17.",
+      "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương."
+    },
+    {
+      "item_id": "THPT-G12-B09-P10",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Với Bảng f=(6,14,12,8) trên các lớp [10;15),[15;20),[20;25),[25;30), IQR bằng bao nhiêu (2 chữ số)?",
+      "answer": "7,74",
+      "solution": "Tính Q₁≈16,4286; Q₃≈24,1667; Δ_Q≈7,7381≈7,74.",
+      "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương."
+    },
+    {
+      "item_id": "THPT-G12-B09-W05",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O05",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN",
+      "anchor_tag": false,
+      "level": "2–3",
+      "stem": "Bảng [0;20),[20;40),[40;60),[60;80) có f=(5,10,10,5). Xác định Q₁, Q₃, Δ_Q và giới hạn phương pháp.",
+      "answer": "Q₁=25; Q₃=55; Δ_Q=30 (xấp xỉ)",
+      "solution": "n=30; Q₁ ở lớp 2, Q₁=20+((7,5−5)/10)20=25; Q₃ ở lớp 3, Q₃=40+((22,5−15)/10)20=55; trừ được 30; nội suy từ bảng ghép nên chỉ xấp xỉ.",
+      "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
+      "rubric": [
+        "1 điểm — Xác định vị trí và nhóm",
+        "1 điểm — Tính Q₁",
+        "1 điểm — Tính Q₃",
+        "1 điểm — IQR",
+        "1 điểm — Nêu giới hạn xấp xỉ"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B09-C06",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O06",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Muốn bớt nhạy với các nhóm cực trị khi so sánh nửa giữa của hai mẫu, nên ưu tiên R hay IQR?",
+      "answer": "IQR",
+      "solution": "IQR dựa trên Q₁ và Q₃, phản ánh 50% giữa; R dựa hai biên.",
+      "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số."
+    },
+    {
+      "item_id": "THPT-G12-B09-P11",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Hai mẫu cùng đơn vị có R_A=50, IQR_A=14; R_B=30, IQR_B=9. Nhận xét chính xác?",
+      "answer": "A trải rộng hơn theo cả hai thước đo này",
+      "solution": "R_A>R_B và IQR_A>IQR_B; chỉ nhận xét trên 2 số đặc trưng, không suy mọi đặc điểm phân bố.",
+      "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số."
+    },
+    {
+      "item_id": "THPT-G12-B09-P12",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Nếu IQR của A nhỏ hơn B nhưng R_A lớn hơn R_B thì kết luận “A luôn ít phân tán hơn B” có đúng không?",
+      "answer": "Không",
+      "solution": "Hai chỉ số đo các phần khác nhau; dữ liệu có thể có biên xa nhưng nửa giữa tập trung.",
+      "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số."
+    },
+    {
+      "item_id": "THPT-G12-B09-W06",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O06",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN; ANCHOR_TAG",
+      "anchor_tag": true,
+      "level": "2–3",
+      "stem": "Các nhóm [0;10),…,[40;50) có A f=(1,9,12,9,1), B f=(0,7,18,7,0). So sánh R và IQR (làm tròn hai chữ số); giải thích.",
+      "answer": "R_A=50, R_B=30; IQR_A≈14,44, IQR_B≈8,89",
+      "solution": "Tính 2 R từ cận nhóm dương, n=32 mỗi mẫu; nội suy Q₁ và Q₃ bằng cộng dồn rồi trừ; A lớn hơn B theo cả R và IQR, với giới hạn xấp xỉ.",
+      "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
+      "rubric": [
+        "1 điểm — Hai khoảng biến thiên",
+        "1 điểm — Q₁ của hai mẫu",
+        "1 điểm — Q₃ của hai mẫu",
+        "1 điểm — Hai IQR",
+        "1 điểm — Nhận xét có điều kiện"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B10-C01",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O01",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Giá trị đại diện của nhóm [10;20) là số nào?",
+      "answer": "15",
+      "solution": "Trung điểm (10+20)/2=15.",
+      "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật."
+    },
+    {
+      "item_id": "THPT-G12-B10-P01",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O01",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Các nhóm [0;10),[10;20),[20;30),[30;40), f=(2,6,6,2). Tính x̄ ghép nhóm.",
+      "answer": "20",
+      "solution": "Giá trị đại diện 5,15,25,35; tổng trọng số=320, n=16 ⇒ x̄=20.",
+      "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật."
+    },
+    {
+      "item_id": "THPT-G12-B10-P02",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O01",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Lớp [0;20) có f=1, [20;40) có f=9. Trung bình ghép nhóm?",
+      "answer": "28",
+      "solution": "Giá trị đại diện 10 và 30; (1·10+9·30)/10=28, không phải (10+30)/2.",
+      "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật."
+    },
+    {
+      "item_id": "THPT-G12-B10-W01",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O01",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN",
+      "anchor_tag": false,
+      "level": "2–3",
+      "stem": "Bảng [0;10),[10;20),[20;30) có f=(2,3,5). Tìm cỡ mẫu, ba giá trị đại diện và x̄; giải thích tính xấp xỉ.",
+      "answer": "n=10; c=(5,15,25); x̄=18",
+      "solution": "n=2+3+5=10; các trung điểm 5,15,25; Σfc=2·5+3·15+5·25=180; x̄=18, phụ thuộc việc đại diện lớp.",
+      "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
+      "rubric": [
+        "1 điểm — Cỡ mẫu",
+        "1 điểm — Ba trung điểm",
+        "1 điểm — Tổng fc",
+        "1 điểm — Trung bình",
+        "1 điểm — Giới hạn xấp xỉ"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B10-C02",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O02",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Các trung điểm (1,3,5,7) có f=(1,3,3,1). Phương sai s² theo mẫu số n là bao nhiêu?",
+      "answer": "3",
+      "solution": "x̄=4, tổng f(c−4)²=24; n=8; s²=24/8=3.",
+      "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1."
+    },
+    {
+      "item_id": "THPT-G12-B10-P03",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O02",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Nếu 10 quan sát đại diện đều bằng 6, s² bằng bao nhiêu?",
+      "answer": "0",
+      "solution": "Mỗi độ lệch c−x̄ bằng 0 nên tổng bình phương bằng 0.",
+      "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1."
+    },
+    {
+      "item_id": "THPT-G12-B10-P04",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O02",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Đơn vị dữ liệu là giờ. Đơn vị phương sai là gì?",
+      "answer": "Giờ²",
+      "solution": "Phương sai lấy bình phương sai lệch nên đơn vị bình phương.",
+      "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1."
+    },
+    {
+      "item_id": "THPT-G12-B10-W02",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O02",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN",
+      "anchor_tag": false,
+      "level": "2–3",
+      "stem": "Các nhóm [5;15),[15;25),[25;35) có f=(2,6,2). Tính x̄, s² với mẫu số n và giải thích dấu/đơn vị nếu số liệu tính bằng phút.",
+      "answer": "x̄=20 phút; s²=40 phút²",
+      "solution": "c=(10,20,30), n=10; x̄=(20+120+60)/10=20; s²=(2·100+6·0+2·100)/10=40; không âm và đơn vị phút².",
+      "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
+      "rubric": [
+        "1 điểm — Trung điểm và n",
+        "1 điểm — Trung bình",
+        "2 điểm — Tổng bình phương/10",
+        "1 điểm — Đơn vị và tính không âm"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B10-C03",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O03",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Dữ liệu có E(c²)=19 và x̄=4. s² bằng bao nhiêu?",
+      "answer": "3",
+      "solution": "Áp dụng s²=E(c²)−x̄²=19−16=3.",
+      "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn."
+    },
+    {
+      "item_id": "THPT-G12-B10-P05",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O03",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Có f=(2,6,2), c=(10,20,30). Tính E(c²).",
+      "answer": "440",
+      "solution": "(2·100+6·400+2·900)/10=440.",
+      "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn."
+    },
+    {
+      "item_id": "THPT-G12-B10-P06",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O03",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Nếu tính được s²≈−0,000001 do làm tròn, có kết luận phương sai âm thật không?",
+      "answer": "Không",
+      "solution": "Phương sai theo định nghĩa luôn không âm; kiểm độ chính xác trung gian và công thức.",
+      "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn."
+    },
+    {
+      "item_id": "THPT-G12-B10-W03",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O03",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN; ANCHOR_TAG",
+      "anchor_tag": true,
+      "level": "2–3",
+      "stem": "Cho c=(1,3,5,7), f=(1,3,3,1). Tính Σfc², x̄, s² bằng công thức rút gọn và giải thích kiểm bằng công thức gốc.",
+      "answer": "Σfc²=152; x̄=4; s²=152/8−16=3",
+      "solution": "n=8; Σfc=32, x̄=4; Σfc²=1+27+75+49=152; s²=19−16=3; khớp tổng f(c−4)²/8=3.",
+      "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
+      "rubric": [
+        "1 điểm — Tính n,Σfc",
+        "1 điểm — x̄",
+        "1 điểm — Σfc²",
+        "1 điểm — s²",
+        "1 điểm — Kiểm chéo hai cách"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B10-C04",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O04",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Nếu s²=9 cm², độ lệch chuẩn s là bao nhiêu?",
+      "answer": "3 cm",
+      "solution": "s=√9=3 và đơn vị trở lại cm.",
+      "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min."
+    },
+    {
+      "item_id": "THPT-G12-B10-P07",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O04",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Phương sai 75 phút² cho độ lệch chuẩn xấp xỉ bao nhiêu phút?",
+      "answer": "8,66 phút",
+      "solution": "s=√75≈8,66 phút.",
+      "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min."
+    },
+    {
+      "item_id": "THPT-G12-B10-P08",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O04",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Câu “s=16 giờ²” khi s²=16 giờ² sai ở đâu?",
+      "answer": "s=4 giờ; nhầm giá trị và đơn vị",
+      "solution": "Phải lấy căn √16=4, đơn vị giờ.",
+      "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min."
+    },
+    {
+      "item_id": "THPT-G12-B10-W04",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O04",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN",
+      "anchor_tag": false,
+      "level": "2–3",
+      "stem": "Bảng [0;10),[10;20),[20;30),[30;40) có f=(2,6,6,2). Tính n, x̄, s², s và đơn vị nếu biến là phút.",
+      "answer": "n=16; x̄=20 phút; s²=75 phút²; s≈8,66 phút",
+      "solution": "c=(5,15,25,35); Σfc/16=20; Σf(c−20)²=1200; s²=75; s=√75≈8,66 phút.",
+      "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
+      "rubric": [
+        "1 điểm — Trung điểm và n",
+        "1 điểm — x̄",
+        "1 điểm — s²",
+        "1 điểm — s",
+        "1 điểm — Phân biệt đơn vị"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B10-C05",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O05",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "Hai mẫu cùng trung bình/cùng đơn vị có s_A=2, s_B=5. Mẫu nào ít phân tán quanh trung bình theo s?",
+      "answer": "A",
+      "solution": "2<5; với cùng bối cảnh, A ổn định hơn theo tiêu chí độ lệch chuẩn.",
+      "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp."
+    },
+    {
+      "item_id": "THPT-G12-B10-P09",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O05",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Tần số A=(2,6,2), B=(4,2,4) trên c=(10,20,30). So s²_A và s²_B.",
+      "answer": "40 và 80",
+      "solution": "Cả hai x̄=20; A: (2·100+2·100)/10=40; B: (4·100+4·100)/10=80.",
+      "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp."
+    },
+    {
+      "item_id": "THPT-G12-B10-P10",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O05",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Nếu A có s thấp nhưng điểm trung bình cũng thấp hơn mục tiêu tối thiểu, có thể kết luận A tốt hơn không?",
+      "answer": "Không",
+      "solution": "Độ phân tán và độ đạt mục tiêu là hai tiêu chí khác nhau.",
+      "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp."
+    },
+    {
+      "item_id": "THPT-G12-B10-W05",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O05",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN",
+      "anchor_tag": false,
+      "level": "2–3",
+      "stem": "Hai máy có cùng mức đo trung bình 20, mẫu A tần số (2,6,2), B (4,2,4), cùng trung điểm 10,20,30. Tính hai s, đưa ra nhận xét có điều kiện.",
+      "answer": "s_A≈6,32; s_B≈8,94; A ít dao động hơn theo tiêu chí này",
+      "solution": "Hai trung bình bằng 20; phương sai A=40, B=80; lấy căn; so cùng đơn vị và chỉ nói độ ổn định trong mẫu.",
+      "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
+      "rubric": [
+        "1 điểm — Hai trung bình",
+        "1 điểm — s²_A",
+        "1 điểm — s²_B",
+        "1 điểm — Hai s",
+        "1 điểm — Nhận xét giới hạn"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B10-C06",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O06",
+      "role": "CORE",
+      "source_role": "CORE",
+      "anchor_tag": false,
+      "level": "1",
+      "stem": "A có x̄=20, s=4; B có x̄=200, s=20. So s trực tiếp 20>4 để kết luận B có rủi ro tương đối lớn hơn có đủ không?",
+      "answer": "Không",
+      "solution": "Mức trung bình khác xa; s tuyệt đối không đủ đánh giá rủi ro tương đối.",
+      "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc."
+    },
+    {
+      "item_id": "THPT-G12-B10-P11",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "anchor_tag": false,
+      "level": "2",
+      "stem": "Trong ô tham khảo “Em có biết”, CV=s/x̄. Nếu x̄=20,s=4, CV là bao nhiêu?",
+      "answer": "0,2 = 20%",
+      "solution": "Khi x̄>0, CV=4/20=0,2=20%; đây là tham khảo, không phải Core.",
+      "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc."
+    },
+    {
+      "item_id": "THPT-G12-B10-P12",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "anchor_tag": false,
+      "level": "3",
+      "stem": "Nếu x̄=0, có được dùng CV=s/x̄ không?",
+      "answer": "Không",
+      "solution": "Mẫu số bằng 0; không xác định. Trước đó cần xem lại mô hình và phạm vi áp dụng.",
+      "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc."
+    },
+    {
+      "item_id": "THPT-G12-B10-W06",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O06",
+      "role": "WRITTEN",
+      "source_role": "WRITTEN; ANCHOR_TAG",
+      "anchor_tag": true,
+      "level": "2–3",
+      "stem": "Hai phương án thu nhập có x̄_A=30 triệu, s_A=6 triệu; x̄_B=300 triệu, s_B=18 triệu. Giải thích vì sao không so “rủi ro tương đối” chỉ theo s, và nêu một lựa chọn thước đo có điều kiện.",
+      "answer": "Không thể chỉ so s: trung bình chênh 10 lần; CV_A=0,2, CV_B=0,06 nếu sử dụng tham khảo với x̄>0",
+      "solution": "Nhận ra trung bình lệch xa; s tuyệt đối 18>6 không đủ kết luận; CV chỉ là công cụ tham khảo SGK: 6/30=0,2, 18/300=0,06; nêu giả định thu nhập dương và cùng bối cảnh.",
+      "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
+      "rubric": [
+        "1 điểm — Chỉ ra hai trung bình khác xa",
+        "1 điểm — Nêu giới hạn so s tuyệt đối",
+        "1 điểm — Giới thiệu CV là tham khảo có điều kiện",
+        "1 điểm — Tính hai tỷ số",
+        "1 điểm — Nhận xét không vượt chứng cứ"
+      ]
+    }
+  ],
+  "help": [
+    {
+      "help_id": "HELP-G12-B09-01",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O01",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Đọc một nhóm tần số 0 như nhóm có quan sát.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B09-O01`, đặc biệt tiền đề: Tần số; kí hiệu n; khoảng nửa kín [a;b); số liệu gốc và số liệu ghép nhóm.",
+        "**Quay lại bản chất/điều kiện:** Bề rộng nhóm h=b−a; tổng tần số n; lớp đầu/lớp cuối có tần số dương mới xác định phần hỗ trợ của dữ liệu. Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B09-01` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B09-P01` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B09-C01`."
+      ],
+      "practice_item": "THPT-G12-B09-P01",
+      "return_item": "THPT-G12-B09-C01"
+    },
+    {
+      "help_id": "HELP-G12-B09-02",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O02",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Lấy cận của nhóm tần số 0 hoặc trừ hai trung điểm.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B09-O02`, đặc biệt tiền đề: O01: lớp đầu và cuối có tần số dương.",
+        "**Quay lại bản chất/điều kiện:** Khoảng biến thiên ghép nhóm đo độ trải dài xấp xỉ của miền dữ liệu; không phải khoảng cách giữa 2 trung điểm nhóm. R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B09-02` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B09-P03` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B09-C02`."
+      ],
+      "practice_item": "THPT-G12-B09-P03",
+      "return_item": "THPT-G12-B09-C02"
+    },
+    {
+      "help_id": "HELP-G12-B09-03",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O03",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Kết luận mọi giá trị phân tán đều tăng cùng tỷ lệ khi R tăng.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B09-O03`, đặc biệt tiền đề: O02: nhóm đầu/nhóm cuối và R.",
+        "**Quay lại bản chất/điều kiện:** R nhạy với giá trị ngoại lệ và với việc mở rộng lớp ở biên; vì vậy R không mô tả đầy đủ nửa giữa phân bố. Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B09-03` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B09-P05` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B09-C03`."
+      ],
+      "practice_item": "THPT-G12-B09-P05",
+      "return_item": "THPT-G12-B09-C03"
+    },
+    {
+      "help_id": "HELP-G12-B09-04",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O04",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Nhầm 3n/4 thành n/3 hoặc lấy lớp có số người lớn nhất.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B09-O04`, đặc biệt tiền đề: Tần số tích lũy; cỡ mẫu n; các lớp có độ rộng dương.",
+        "**Quay lại bản chất/điều kiện:** Q₁ và Q₃ là các vị trí phân chia mẫu thành bốn phần theo tỉ lệ; từ bảng ghép nhóm chỉ xác định được lớp và ước lượng nội suy. Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B09-04` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B09-P07` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B09-C04`."
+      ],
+      "practice_item": "THPT-G12-B09-P07",
+      "return_item": "THPT-G12-B09-C04"
+    },
+    {
+      "help_id": "HELP-G12-B09-05",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O05",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Dùng nhầm C cộng dồn đến **sau** lớp đang xét, hoặc làm tròn Q₁ sớm.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B09-O05`, đặc biệt tiền đề: O04: vị trí n/4,3n/4; lớp [L;L+h), tần số f và cộng dồn trước lớp C.",
+        "**Quay lại bản chất/điều kiện:** Nội suy tuyến tính giả định quan sát phân bố tương đối đều trong lớp để ước lượng vị trí Qᵣ; IQR = Q₃ − Q₁. Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B09-05` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B09-P09` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B09-C05`."
+      ],
+      "practice_item": "THPT-G12-B09-P09",
+      "return_item": "THPT-G12-B09-C05"
+    },
+    {
+      "help_id": "HELP-G12-B09-06",
+      "lesson_id": "B09",
+      "outcome_id": "G12-CHIII-B09-O06",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Dùng R để nhận xét cả nửa giữa hoặc dùng IQR để phủ nhận hoàn toàn tác động biên.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B09-O06`, đặc biệt tiền đề: O02, O03, O05; cùng đơn vị và cách chia lớp.",
+        "**Quay lại bản chất/điều kiện:** R xem miền ngoài cùng, IQR xem 50% giữa mẫu; dùng kết hợp khi cần kể cả mức nhạy với giá trị bất thường. IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B09-06` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B09-P11` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B09-C06`."
+      ],
+      "practice_item": "THPT-G12-B09-P11",
+      "return_item": "THPT-G12-B09-C06"
+    },
+    {
+      "help_id": "HELP-G12-B10-01",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O01",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Cộng trung điểm chia số lớp khi tần số không đều.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B10-O01`, đặc biệt tiền đề: Tần số, cỡ mẫu n và trung điểm đoạn thẳng.",
+        "**Quay lại bản chất/điều kiện:** Chọn trung điểm cᵢ=(aᵢ+aᵢ₊₁)/2 như giá trị đại diện ước lượng của các quan sát trong nhóm. Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B10-01` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B10-P01` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B10-C01`."
+      ],
+      "practice_item": "THPT-G12-B10-P01",
+      "return_item": "THPT-G12-B10-C01"
+    },
+    {
+      "help_id": "HELP-G12-B10-02",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O02",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Quên bình phương hoặc chia n−1 theo công thức khác.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B10-O02`, đặc biệt tiền đề: O01: x̄; số âm bình phương; số không âm.",
+        "**Quay lại bản chất/điều kiện:** Phương sai cân bằng các bình phương độ lệch (cᵢ−x̄)² với trọng số tần số fᵢ, chứ không chỉ nhìn hai giá trị biên. Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B10-02` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B10-P03` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B10-C02`."
+      ],
+      "practice_item": "THPT-G12-B10-P03",
+      "return_item": "THPT-G12-B10-C02"
+    },
+    {
+      "help_id": "HELP-G12-B10-03",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O03",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Lấy (Σ fᵢcᵢ/n)² thay cho Σfᵢcᵢ²/n.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B10-O03`, đặc biệt tiền đề: O01–O02; hằng đẳng thức (a−b)².",
+        "**Quay lại bản chất/điều kiện:** Phương sai bằng trung bình trọng số của bình phương giá trị đại diện trừ bình phương trung bình. Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B10-03` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B10-P05` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B10-C03`."
+      ],
+      "practice_item": "THPT-G12-B10-P05",
+      "return_item": "THPT-G12-B10-C03"
+    },
+    {
+      "help_id": "HELP-G12-B10-04",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O04",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Gán đơn vị phút cho phương sai phút², hoặc ghi s=s².",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B10-O04`, đặc biệt tiền đề: O02–O03; căn bậc hai không âm.",
+        "**Quay lại bản chất/điều kiện:** Độ lệch chuẩn s=√s²≥0 có cùng đơn vị với quan sát; phản ánh mức độ phân tán quanh x̄ ở dữ liệu ghép nhóm. Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B10-04` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B10-P07` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B10-C04`."
+      ],
+      "practice_item": "THPT-G12-B10-P07",
+      "return_item": "THPT-G12-B10-C04"
+    },
+    {
+      "help_id": "HELP-G12-B10-05",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O05",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** Kết luận bên nào “tốt hơn” chỉ từ s mà bỏ qua mục tiêu hoặc giá trị trung bình.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B10-O05`, đặc biệt tiền đề: O01–O04; so sánh số đo cùng đơn vị.",
+        "**Quay lại bản chất/điều kiện:** Khi mức trung bình tương đương và cùng đơn vị, s nhỏ hơn thường cho biết dữ liệu tập trung hơn quanh x̄; s lớn hơn cho biết biến động nhiều hơn. Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B10-05` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B10-P09` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B10-C05`."
+      ],
+      "practice_item": "THPT-G12-B10-P09",
+      "return_item": "THPT-G12-B10-C05"
+    },
+    {
+      "help_id": "HELP-G12-B10-06",
+      "lesson_id": "B10",
+      "outcome_id": "G12-CHIII-B10-O06",
+      "steps": [
+        "**Nhận diện dấu hiệu sai:** So sánh rủi ro tương đối của hai quy mô khác nhau chỉ qua s tuyệt đối.",
+        "**Chẩn đoán lỗ hổng:** Thiếu kiến thức ở `G12-CHIII-B10-O06`, đặc biệt tiền đề: O05, trung bình, độ lệch chuẩn, cùng thang đo.",
+        "**Quay lại bản chất/điều kiện:** Mục tiêu so sánh biến động/tính ổn định gắn với quy mô và ngữ cảnh; chênh trung bình lớn là dấu hiệu cần cẩn trọng. Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
+        "**Xem lại ví dụ có suy luận:** `EX-G12-B10-06` và giải thích vì sao chọn cách này.",
+        "**Tự làm một câu khác cùng outcome:** `THPT-G12-B10-P11` → đối chiếu lời giải **sau khi làm**, sau đó quay lại câu Core `THPT-G12-B10-C06`."
+      ],
+      "practice_item": "THPT-G12-B10-P11",
+      "return_item": "THPT-G12-B10-C06"
+    }
+  ],
+  "end_references": [
+    {
+      "placement_id": "G12-CHIII-END-B09-01",
+      "item_id": "THPT-G12-B09-P02",
+      "outcome_id": "G12-CHIII-B09-O01"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B09-02",
+      "item_id": "THPT-G12-B09-P04",
+      "outcome_id": "G12-CHIII-B09-O02"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B09-03",
+      "item_id": "THPT-G12-B09-P06",
+      "outcome_id": "G12-CHIII-B09-O03"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B09-04",
+      "item_id": "THPT-G12-B09-P08",
+      "outcome_id": "G12-CHIII-B09-O04"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B09-05",
+      "item_id": "THPT-G12-B09-P10",
+      "outcome_id": "G12-CHIII-B09-O05"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B09-06",
+      "item_id": "THPT-G12-B09-P12",
+      "outcome_id": "G12-CHIII-B09-O06"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B10-01",
+      "item_id": "THPT-G12-B10-P02",
+      "outcome_id": "G12-CHIII-B10-O01"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B10-02",
+      "item_id": "THPT-G12-B10-P04",
+      "outcome_id": "G12-CHIII-B10-O02"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B10-03",
+      "item_id": "THPT-G12-B10-P06",
+      "outcome_id": "G12-CHIII-B10-O03"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B10-04",
+      "item_id": "THPT-G12-B10-P08",
+      "outcome_id": "G12-CHIII-B10-O04"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B10-05",
+      "item_id": "THPT-G12-B10-P10",
+      "outcome_id": "G12-CHIII-B10-O05"
+    },
+    {
+      "placement_id": "G12-CHIII-END-B10-06",
+      "item_id": "THPT-G12-B10-P12",
+      "outcome_id": "G12-CHIII-B10-O06"
+    }
+  ]
+}

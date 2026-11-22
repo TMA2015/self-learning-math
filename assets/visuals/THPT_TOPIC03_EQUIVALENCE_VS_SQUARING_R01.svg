@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="titleEq descEq">
+<title id="titleEq">Phân biệt biến đổi tương đương và biến đổi chỉ suy ra</title>
+<desc id="descEq">Bên trái cộng trừ cùng một lượng giữ nguyên tập nghiệm và có mũi tên hai chiều. Bên phải từ A bằng B suy ra A bình phương bằng B bình phương, nhưng chiều ngược không đúng: x bình phương bằng 4 có x bằng 2 hoặc âm 2, còn x bằng 2 chỉ có một nghiệm. Vì vậy phải xét dấu hoặc thử lại.</desc>
+<rect x="0" y="0" width="1100" height="560" fill="#f9fafb" rx="22"/>
+<text x="45" y="54" fill="#102a43" font-family="Arial,sans-serif" font-size="30" font-weight="700">Hai loại phép biến đổi phương trình</text>
+<rect x="40" y="88" width="500" height="390" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2" rx="15"/>
+<rect x="560" y="88" width="500" height="390" fill="#fff7ed" stroke="#c2410c" stroke-width="2" rx="15"/>
+<text x="75" y="133" fill="#1e40af" font-family="Arial,sans-serif" font-size="23" font-weight="700">TƯƠNG ĐƯƠNG ⇔</text>
+<text x="592" y="133" fill="#9a3412" font-family="Arial,sans-serif" font-size="23" font-weight="700">CHỈ SUY RA ⇒</text>
+<text x="83" y="211" fill="#0f172a" font-family="Arial,sans-serif" font-size="30">x + 3 = 7</text>
+<text x="83" y="271" fill="#1e40af" font-family="Arial,sans-serif" font-size="39" font-weight="700">⇕</text>
+<text x="83" y="331" fill="#0f172a" font-family="Arial,sans-serif" font-size="30">x = 4</text>
+<text x="83" y="401" fill="#334155" font-family="Arial,sans-serif" font-size="20">Trừ 3 ở cả hai vế: tập nghiệm giữ nguyên.</text>
+<text x="596" y="211" fill="#0f172a" font-family="Arial,sans-serif" font-size="28">x = 2</text>
+<text x="596" y="263" fill="#c2410c" font-family="Arial,sans-serif" font-size="35" font-weight="700">↓</text>
+<text x="596" y="314" fill="#0f172a" font-family="Arial,sans-serif" font-size="28">x² = 4</text>
+<text x="596" y="363" fill="#7c2d12" font-family="Arial,sans-serif" font-size="20">Nghiệm mới x = −2 xuất hiện nếu đảo chiều.</text>
+<text x="596" y="402" fill="#7c2d12" font-family="Arial,sans-serif" font-size="20">Cần kiểm điều kiện dấu hoặc thử lại nghiệm gốc.</text>
+<rect x="40" y="490" width="1020" height="46" rx="9" fill="#e2e8f0"/>
+<text x="60" y="519" fill="#102a43" font-family="Arial,sans-serif" font-size="19">Quy tắc học: tìm nghiệm ứng viên → xét miền và điều kiện → thế về phương trình gốc.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="485" viewBox="0 0 960 485" role="img" aria-labelledby="g10b02-title g10b02-desc">
+<title id="g10b02-title">Các tập hợp số tự nhiên, nguyên, hữu tỉ và thực lồng nhau</title>
+<desc id="g10b02-desc">Bốn miền lồng nhau minh họa N là tập con của Z, Z là tập con của Q, Q là tập con của R. Phía trong N có 0, 1, 2; phía trong Z nhưng ngoài N có âm 3; trong Q nhưng ngoài Z có một phần hai; trong R nhưng ngoài Q có căn bậc hai của 2.</desc>
+<rect x="0" y="0" width="960" height="485" fill="#f8fafc" rx="20"/>
+<text x="34" y="41" fill="#0f172a" font-family="Arial, sans-serif" font-size="25" font-weight="700">Đọc từ trong ra ngoài: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ</text>
+<rect x="48" y="66" width="865" height="382" rx="28" fill="#eaf2ff" stroke="#315899" stroke-width="4"/>
+<text x="76" y="108" fill="#183b78" font-family="Arial, sans-serif" font-size="29" font-weight="700">ℝ</text>
+<text x="714" y="110" fill="#183b78" font-family="Arial, sans-serif" font-size="21">√2</text>
+<rect x="117" y="134" width="717" height="282" rx="25" fill="#e6f6ef" stroke="#1d7f66" stroke-width="4"/>
+<text x="147" y="179" fill="#115a49" font-family="Arial, sans-serif" font-size="29" font-weight="700">ℚ</text>
+<text x="692" y="175" fill="#115a49" font-family="Arial, sans-serif" font-size="21">1/2</text>
+<rect x="197" y="201" width="555" height="177" rx="24" fill="#fff2d8" stroke="#b7812a" stroke-width="4"/>
+<text x="224" y="246" fill="#895712" font-family="Arial, sans-serif" font-size="29" font-weight="700">ℤ</text>
+<text x="622" y="249" fill="#895712" font-family="Arial, sans-serif" font-size="21">−3</text>
+<rect x="275" y="269" width="395" height="77" rx="20" fill="#f3eaff" stroke="#7753a1" stroke-width="4"/>
+<text x="299" y="317" fill="#553277" font-family="Arial, sans-serif" font-size="29" font-weight="700">ℕ</text>
+<text x="405" y="315" fill="#553277" font-family="Arial, sans-serif" font-size="24">0, 1, 2, …</text>
+<text x="56" y="473" fill="#475569" font-family="Arial, sans-serif" font-size="16">Hình biểu diễn quan hệ bao hàm; kích thước các vùng không biểu diễn số lượng phần tử.</text>
+</svg>
