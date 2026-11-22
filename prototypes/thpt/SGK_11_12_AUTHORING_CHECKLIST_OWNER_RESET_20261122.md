@@ -1,7 +1,7 @@
 # CHECKLIST BIÊN SOẠN SGK TOÁN 11–12
 
 **Quyết định của chủ dự án: 22/11/2026.**  
-**Phạm vi:** Bài 2–33 Toán 11 và Bài 1–19 Toán 12. **Trạng thái:** Chưa bắt đầu lại. Các bản thảo của đợt nâng cấp vừa hủy không được sử dụng làm nguồn hay mẫu viết bài mới.
+**Phạm vi:** Bài 2–33 Toán 11 và Bài 1–19 Toán 12. **Trạng thái:** Đang biên soạn lại tuần tự từ Toán 11 Bài 2 theo chỉ đạo chủ dự án ngày 23/11/2026: **tác giả tự viết và tự kiểm, không dừng chờ chủ dự án xem từng bài**. Các bản thảo của đợt nâng cấp vừa hủy không được sử dụng làm nguồn hay mẫu viết bài mới.
 
 ## Bốn điểm duy nhất quyết định công việc biên soạn
 
@@ -52,14 +52,14 @@
 4. **Có tự biến công thức thành định nghĩa/tính chất, hoặc tự tạo khung ghi nhớ không cần thiết không?**
 5. **Sau khi biên soạn, học sinh có nhận biết đúng bản chất kiến thức qua cả nhãn chữ và màu/kiểu khung không?** Không chỉ nhìn màu: **Định nghĩa phải có chữ “Định nghĩa”, Tính chất phải có chữ “Tính chất”, Định lý/Quy tắc/Công thức cũng phải có nhãn tương ứng trước nội dung**; nguồn đủ rõ để RELEASE giữ đúng nhãn–loại–màu khi phát hành chưa?
 
-**Điều kiện tự kiểm:** Chưa trả lời thỏa đáng cả năm câu trên hoặc nhãn–loại–màu không khớp SGK thì ghi `TỰ KIỂM CẦN SỬA`, không ký `BẢN THẢO HOÀN CHỈNH — CHỜ CHỦ DỰ ÁN`.
+**Điều kiện tự kiểm:** Chưa trả lời thỏa đáng cả năm câu trên hoặc nhãn–loại–màu không khớp SGK thì ghi `TỰ KIỂM CẦN SỬA`, không ghi `TỰ KIỂM ĐẠT`. Nếu đủ, tác giả tự xác nhận `TỰ KIỂM ĐẠT` cho đúng source/scope và **tiếp tục bài kế tiếp mà không chờ chủ dự án xem**. `TỰ KIỂM ĐẠT` **không tự động là** `CONTENT_READY`, QA RELEASE hoặc quyền merge/deploy; các hồ sơ/handoff Q18 hậu trường vẫn phải đủ khi chuyển trạng thái theo chuẩn đã có.
 
 ## Hồ sơ hoàn thành ngắn gọn cho mỗi bài
 
 - **Bài:** Lớp – chương – số bài – tên bài.
 - **Đã đọc:** Bài SGK KNTT; bài Toán 10 đã dùng làm mẫu.
 - **Tác giả xác nhận:** Từng mục kiến thức chính SGK đã đối ứng đủ trong cả tab Khám phá và tab Kiến thức SGK; hai tab tự đủ theo đúng vai trò; kiến thức đúng và đủ; bốn tab dễ học; Ví dụ/Vận dụng đã tự giải kiểm; nhãn/khung đúng mẫu; những điểm chưa đạt (nếu có).
-- **Trạng thái:** `CHƯA LÀM` / `ĐANG VIẾT` / `TỰ KIỂM CẦN SỬA` / `BẢN THẢO HOÀN CHỈNH — CHỜ CHỦ DỰ ÁN`.
+- **Trạng thái:** `CHƯA LÀM` / `ĐANG VIẾT` / `TỰ KIỂM CẦN SỬA` / `TỰ KIỂM ĐẠT` / `CONTENT_READY` (chỉ khi đủ nguồn/receipt/handoff theo chuẩn). Không có cổng mặc định “chờ chủ dự án xem từng bài” ở AUTHORING.
 
 ## Giới hạn
 
