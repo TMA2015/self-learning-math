@@ -1,0 +1,11 @@
+# Math Lab · Kho tham khảo nguồn không chọn làm nền
+
+**Chỉ phục vụ AUTHORING. Không tích hợp website từ thư mục này.**
+
+- **25 HTML ứng viên đang phát triển:** duy nhất tại [`../selected/`](../selected/), mỗi `MODEL_ID` một file, sửa trực tiếp cùng tên; danh mục gốc, SHA và tình trạng tại [sổ 25 mục](../Temp_SLM_MATH_LAB_MODEL_REGISTER_22_R01_20261117.md).
+- **7 HTML mới không chọn làm bản nền:** `#01` vectơ Oxy, `#02` giao đường/parabol, `#03` mặt cầu và mặt phẳng ngang, `#04` hàm từng đoạn, `#05` biến đổi parabol, `#11` tiếp tuyến/đạo hàm, `#13` cây xác suất. Lưu bản gốc byte-identical trong ChatGPT Library `/SLM/Research-Issue798/Model-Library-25/reference/Temp_MATHLAB_REFERENCE_UNSELECTED.zip` SHA256 `c97f9d6b4cb7b9d576aab992315542fea80dbea1366a8c925768e37f9f285526`. Chỉ trích chức năng thiếu, không giữ thêm bản ACTIVE.
+- **11 HTML nguồn cũ thực sự có trên lịch sử các PR:** [#844](https://github.com/TMA2015/self-learning-math/pull/844), [#801](https://github.com/TMA2015/self-learning-math/pull/801), [#793](https://github.com/TMA2015/self-learning-math/pull/793), [#846](https://github.com/TMA2015/self-learning-math/pull/846), [#848](https://github.com/TMA2015/self-learning-math/pull/848), [#853](https://github.com/TMA2015/self-learning-math/pull/853), [#855](https://github.com/TMA2015/self-learning-math/pull/855), [#858](https://github.com/TMA2015/self-learning-math/pull/858), [#860](https://github.com/TMA2015/self-learning-math/pull/860) (CLOSED/SUPERSEDED), [#880](https://github.com/TMA2015/self-learning-math/pull/880). Không xóa/move Git blobs cũ, chỉ ngừng dùng làm nguồn đang sửa.
+- **MASTER_CURRENT lịch sử 13 HTML:** `/SLM/Research-Issue798/Temp_I798_MODELS_MASTER_CURRENT.zip`, SHA256 `bed77d2c29761f6056ddd80a8f884123bf6e6a381fd473bb909751093a98c45c`, vẫn giữ để truy nguyên QA cũ; **KHÔNG phải** bộ ACTIVE 25.
+- **Chứng cứ CĐ21:** `/SLM/Research-Issue798/Model-Library-25/evidence/SLM-TOP21-BAYES-TREE-R01_QA.json`, 1153/1153 PASS Chromium, cùng 390/820 screenshot, Python runner.
+
+**Nguyên tắc:** một MODEL_ID/một HTML ACTIVE. Muốn bổ sung chức năng: chỉnh file tại `../selected/<MODEL_ID>.html`, không tạo R02/R03/final-new cạnh bên. G1 toán/PED, G2 hình/Golden, G3 runtime, G4 handoff đánh giá trên exact file SHA mới sau sửa, không dùng PASS của file khác. Chủ dự án quyết định phát hành riêng.

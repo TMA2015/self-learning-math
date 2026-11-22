@@ -1,0 +1,116 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Math Lab · Xác suất và dữ liệu</title>
+<style>
+:root{color-scheme:light;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--ink:#183b54;--muted:#50697b;--head:#eaf4fa;--surface:#fafdff;--edge:#c7dfe9;--blue:#1687b4;--green:#218f73;--orange:#e9922a;color:var(--ink)}
+*{box-sizing:border-box}body{margin:0;background:#f6fafc}main{max-width:980px;margin:15px auto;padding:0 10px}article{background:white;border:1px solid var(--edge);border-radius:15px;overflow:hidden}
+header{background:var(--head);padding:17px 21px;border-bottom:1px solid var(--edge)}h1{font-size:clamp(1.3rem,2.5vw,1.7rem);line-height:1.3;margin:0}h2{font-size:1.1rem;margin:0 0 8px}p{margin:7px 0 14px}.sub,.small{color:var(--muted)}.small{font-size:.9rem}
+.content{padding:18px 21px}.columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.panel{padding:14px;border:1px solid var(--edge);border-radius:11px;background:var(--surface);min-width:0}
+label{display:block;margin:11px 0 17px;font-weight:600}label span{display:flex;justify-content:space-between;gap:8px}output{font-variant-numeric:tabular-nums}
+input[type=range]{display:block;width:100%;min-height:32px;margin-top:9px;accent-color:var(--blue);cursor:pointer}
+button,.menu a{font:inherit;border:1px solid #98bdcd;border-radius:8px;padding:9px 13px;background:var(--head);color:#125778;cursor:pointer;min-height:42px;text-decoration:none}
+button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.menu{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}.chart{max-width:100%;overflow-x:auto}.chart svg{width:100%;min-width:600px;height:auto;display:block;background:#fff;border:1px solid #d7e7ee;border-radius:10px}
+.numbers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}
+.value{padding:10px;background:white;border:1px solid var(--edge);border-radius:8px}.value b{display:block;font-variant-numeric:tabular-nums}.value small{font-size:.85rem;color:var(--muted)}
+.observe{padding:12px 15px;border-left:4px solid var(--green);background:#edf8f4;margin:13px 0}
+details{border:1px solid var(--edge);padding:10px 13px;border-radius:8px;background:#f7fbfd;margin-top:12px}summary{cursor:pointer;color:#115b7b;font-weight:700}
+.controls-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 13px}
+[hidden]{display:none!important}@media(max-width:680px){main{margin:6px auto;padding:0 6px}.content,header{padding:13px}.columns,.controls-grid{grid-template-columns:1fr}.panel{padding:12px}}
+
+/* SLM_MATH_LAB_GOLDEN_UI_TOKENS_R02_20261117: authoring CSS-only parity; math/JS unchanged */
+:root{--slm-bg:#fff;--slm-header:#eaf4fa;--slm-canvas:#fafdff;--slm-border:#c7dfe9;--slm-ink:#183b54;--slm-muted:#50697b;--slm-blue:#1687b4;--slm-green:#218f73;--slm-orange:#e9922a;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+body{background:var(--slm-bg)!important;color:var(--slm-ink)!important;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;font-size:16px!important;line-height:1.6!important}
+main,.lab,.d5-card,.d5-box{background:#fff!important;border-color:var(--slm-border)!important}
+header,.d5-top,.d5-head{background:var(--slm-header)!important}
+h1{font-size:clamp(1.3rem,2.5vw,1.7rem)!important;line-height:1.3!important;color:var(--slm-ink)!important}
+h2{font-size:1.1rem!important;line-height:1.35!important;color:var(--slm-ink)!important}
+label,.control label,.d5-control label,.d5-controls label{color:var(--slm-ink)!important;font-size:1rem!important}
+small,.muted,.small,.sub,.d5-note{color:var(--slm-muted)!important}
+button,select,.menu a{font:inherit;min-height:42px;background:var(--slm-header)!important;color:var(--slm-ink)!important;border:1px solid var(--slm-border)!important;border-radius:10px!important}
+input[type=range],input[type=checkbox],input[type=radio]{accent-color:var(--slm-blue)!important}
+input[type=range]{min-height:32px}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,.menu a:focus-visible{outline:3px solid var(--slm-orange)!important;outline-offset:2px!important}
+canvas,svg{background:var(--slm-canvas)!important;border-color:var(--slm-border)!important}
+.canvaswrap,.d5-stage,.d5-graph,.pane,article,.field,.box,.panel,section{border-color:var(--slm-border)!important}
+.summary,.d5-results,.output,.result,.answer,.stats,.field{background:var(--slm-canvas)!important}
+</style></head><body><main>
+<nav id="menu" class="menu" aria-label="Mô hình có thể xem thử"><a href="?model=SLM-TOP21-BAYES-TREE-R01">CĐ21 · Bayes</a><a href="?model=SLM-TOP22-DISTRIBUTION-R01">CĐ22 · Dữ liệu</a></nav><p id="bad-route" class="observe" hidden></p>
+<article data-model-id="SLM-TOP21-BAYES-TREE-R01" data-assessment="PUBLIC_DISCOVERY_NO_MASTERY" hidden>
+<header><h1>Xác suất toàn phần và Bayes trên sơ đồ cây</h1><p class="sub">CĐ21 · Khám phá xác suất có điều kiện, xác suất toàn phần và công thức Bayes</p></header><div class="content">
+<p><b>Dự đoán:</b> Nguồn X chiếm 30% sản phẩm, có 2% lỗi; nguồn Y chiếm 70% và có 4% lỗi. Nếu gặp một sản phẩm lỗi, xác suất đến từ X là bao nhiêu?</p>
+<div class="columns"><section class="panel"><h2>Điều chỉnh ba tỉ lệ</h2>
+<label><span>Nguồn X <output id="v-prior">30%</output></span><input type="range" id="prior" min="1" max="99" value="30" aria-label="Tỉ trọng nguồn X, phần trăm"></label>
+<label><span>Lỗi khi biết X <output id="v-a">2%</output></span><input type="range" id="rate-a" min="0" max="100" value="2" aria-label="Tỉ lệ lỗi nguồn X, phần trăm"></label>
+<label><span>Lỗi khi biết Y <output id="v-b">4%</output></span><input type="range" id="rate-b" min="0" max="100" value="4" aria-label="Tỉ lệ lỗi nguồn Y, phần trăm"></label>
+<button type="button" id="reset-bayes">Đặt lại</button><p class="small">X và Y rời nhau, phủ toàn bộ; mỗi nguồn có tỉ trọng dương, các xác suất nhánh không âm và không vượt 100%.</p></section>
+<section class="panel"><h2>Quan sát đường đi</h2><div class="chart"><svg viewBox="0 0 700 310" role="img" aria-labelledby="tree-title tree-desc">
+<title id="tree-title">Cây xác suất X, Y và lỗi</title><desc id="tree-desc">Mỗi nhánh cho một xác suất. Dữ liệu cập nhật đầy đủ bằng văn bản bên dưới.</desc>
+<g fill="none" stroke="#1687b4" stroke-width="3"><path d="M70 145L245 65M70 145L245 235M245 65L475 30M245 65L475 125M245 235L475 190M245 235L475 282"/></g>
+<g font-size="19" fill="#183b54"><text x="10" y="150">Gốc</text><text x="255" y="67">X</text><text x="255" y="240">Y</text>
+<text x="492" y="38">Lỗi</text><text x="492" y="132">Không lỗi</text><text x="492" y="196">Lỗi</text><text x="492" y="290">Không lỗi</text></g>
+<g font-size="18" fill="#116d94"><text id="tree-prior" x="125" y="88">30%</text><text id="tree-other" x="124" y="215">70%</text><text id="tree-a" x="352" y="35">2%</text><text id="tree-na" x="357" y="132">98%</text><text id="tree-b" x="352" y="198">4%</text><text id="tree-nb" x="357" y="292">96%</text></g>
+</svg></div><div class="numbers">
+<div class="value"><small>P(X ∩ lỗi)</small><b id="joint-a"></b></div><div class="value"><small>P(Y ∩ lỗi)</small><b id="joint-b"></b></div>
+<div class="value"><small>P(lỗi)</small><b id="total"></b></div><div class="value"><small>P(X | lỗi)</small><b id="posterior"></b></div>
+</div></section></div>
+<p id="bayes-explain" class="observe" aria-live="polite"></p>
+<p><b>Giải thích:</b> Nhân xác suất dọc từng nhánh lỗi, cộng xác suất hai đường dẫn đến lỗi, rồi mới chia đường X ∩ lỗi cho toàn bộ lỗi. Không được đồng nhất P(lỗi | X) với P(X | lỗi). Khi P(lỗi)=0 thì P(X | lỗi) không xác định.</p>
+<p><b>Vận dụng · Tự thử trước:</b> Đặt X=30%, lỗi ở X=8%, lỗi ở Y=2%; tính P(lỗi), P(X | lỗi) rồi so với kết quả mô hình.</p>
+<details><summary>Đối chiếu sau khi tự thử</summary><p><b>Đối chiếu:</b> P(lỗi)=0,3×0,08+0,7×0,02=3,8%. P(X | lỗi)=0,024/0,038≈63,16%. Nếu lấy 8%, em đã đảo chiều điều kiện; hãy vẽ hai đường đi.</p></details>
+<p class="small">Mô hình dùng để khám phá và tự đối chiếu, không phải bài kiểm tra chấm điểm.</p></div></article>
+<article data-model-id="SLM-TOP22-DISTRIBUTION-R01" data-assessment="PUBLIC_DISCOVERY_NO_MASTERY" hidden>
+<header><h1>Giá trị cực đoan làm thay đổi phân phối ra sao?</h1><p class="sub">CĐ22 · Khám phá số trung bình, trung vị, tứ phân vị và giá trị ngoại lệ</p></header><div class="content">
+<p><b>Dự đoán:</b> Dãy 2, 2, 3, 4, 5, 5, 6 có trung vị 4. Nếu thay 6 bằng 20, số trung bình, trung vị và khoảng biến thiên sẽ biến đổi như nhau không?</p>
+<div class="columns"><section class="panel"><h2>Điều chỉnh bảy số liệu</h2><div id="data-sliders" class="controls-grid"></div><button type="button" id="reset-stats">Đặt lại</button> <button type="button" id="try-extreme">Thử ngoại lệ 20</button>
+<p class="small">7 quan sát nguyên, mỗi giá trị từ 1 đến 20. Tứ phân vị KNTT với n lẻ: bỏ giá trị trung vị rồi lấy trung vị của hai nửa.</p></section>
+<section class="panel"><h2>Quan sát biểu đồ chấm</h2><div class="chart"><svg viewBox="0 0 705 218" role="img" aria-labelledby="dot-title dot-desc">
+<title id="dot-title">Biểu đồ chấm dữ liệu thô</title><desc id="dot-desc">Bảy dấu chấm, trùng giá trị thì xếp chồng. Số liệu được viết bên dưới.</desc>
+<line x1="42" y1="168" x2="685" y2="168" stroke="#668698" stroke-width="2"/><g id="ticks"></g><g id="dots"></g><text x="300" y="214" font-size="17" fill="#50697b">Giá trị</text>
+</svg></div><div class="numbers">
+<div class="value"><small>Trung bình</small><b id="mean"></b></div><div class="value"><small>Trung vị</small><b id="median"></b></div>
+<div class="value"><small>Khoảng biến thiên</small><b id="spread"></b></div><div class="value"><small>Q1 · Q3 · IQR</small><b id="quartiles"></b></div>
+</div></section></div><p id="stats-explain" class="observe" aria-live="polite"></p>
+<p><b>Giải thích:</b> Trung bình phụ thuộc tổng toàn bộ số liệu; trung vị là giá trị giữa sau sắp xếp; khoảng biến thiên bằng max−min. Quy tắc hàng rào 1,5×IQR chỉ đánh dấu giá trị cần chú ý, không khẳng định số liệu bị sai.</p>
+<p><b>Vận dụng · Tự thử trước:</b> Đặt dãy 2, 2, 3, 4, 5, 5, 20; tính trung bình, Me, Q1, Q3 và khoảng biến thiên.</p>
+<details><summary>Đối chiếu sau khi tự thử</summary><p><b>Đối chiếu:</b> Tổng 41; trung bình 41/7≈5,86; Me=4; Q1=2, Q3=5, IQR=3; khoảng biến thiên 18; hàng rào trên 9,5 nên 20 nằm ngoài. Nếu chọn trung vị 5, hãy sắp lại dãy tăng dần.</p></details>
+<p class="small">Mô hình dùng số liệu thô, không áp dụng cách ước lượng cho số liệu ghép nhóm. Em có thể thay đổi từng giá trị để tự kiểm tra dự đoán của mình.</p></div></article>
+<noscript>Cần JavaScript để tương tác; trang bài học vẫn phải có nội dung kiến thức và ví dụ đầy đủ không phụ thuộc mô hình.</noscript></main>
+<script>
+(function(){"use strict";
+const ids=["SLM-TOP21-BAYES-TREE-R01","SLM-TOP22-DISTRIBUTION-R01"];
+const wanted=new URLSearchParams(location.search).get("model"),active=wanted||ids[0],valid=ids.includes(active);
+const $=id=>document.getElementById(id);
+$("menu").hidden=!!wanted;$("bad-route").hidden=valid;
+if(!valid){$("bad-route").textContent="Không tìm thấy mã mô hình: "+active;return;}
+document.querySelectorAll("[data-model-id]").forEach(el=>el.hidden=el.dataset.modelId!==active);
+const percent=p=>(p*100).toLocaleString("vi-VN",{maximumFractionDigits:2})+"%";
+const fmt=n=>n.toLocaleString("vi-VN",{maximumFractionDigits:2});
+function bayes(){
+ const p=Number($("prior").value)/100,a=Number($("rate-a").value)/100,b=Number($("rate-b").value)/100;
+ const ax=p*a,by=(1-p)*b,total=ax+by,posterior=total>0?ax/total:null;
+ [["v-prior",p],["v-a",a],["v-b",b],["tree-prior",p],["tree-other",1-p],["tree-a",a],["tree-na",1-a],["tree-b",b],["tree-nb",1-b],["joint-a",ax],["joint-b",by],["total",total]].forEach(([id,n])=>$(id).textContent=percent(n));
+ $("posterior").textContent=posterior===null?"Không xác định":percent(posterior);
+ $("bayes-explain").textContent=posterior===null?"P(lỗi)=0: không thể dùng Bayes để chia cho 0.":"P(lỗi)="+percent(ax)+" + "+percent(by)+" = "+percent(total)+". Trong nhóm sản phẩm lỗi, phần từ X="+percent(posterior)+".";
+}
+["prior","rate-a","rate-b"].forEach(id=>$(id).addEventListener("input",bayes));
+$("reset-bayes").addEventListener("click",()=>{[["prior",30],["rate-a",2],["rate-b",4]].forEach(([id,v])=>$(id).value=v);bayes();});bayes();
+const initial=[2,2,3,4,5,5,6],data=initial.slice(),ns="http://www.w3.org/2000/svg";
+function el(name,attrs,txt){const node=document.createElementNS(ns,name);Object.entries(attrs).forEach(([k,v])=>node.setAttribute(k,String(v)));if(txt!==undefined)node.textContent=String(txt);return node;}
+for(let i=0;i<7;i++){const label=document.createElement("label"),span=document.createElement("span"),t=document.createElement("span"),out=document.createElement("output"),range=document.createElement("input");
+t.textContent="Quan sát "+(i+1);out.id="out-"+i;span.append(t,out);
+range.type="range";range.id="data-"+i;range.min=1;range.max=20;range.step=1;range.value=initial[i];range.setAttribute("aria-label","Quan sát thứ "+(i+1));range.addEventListener("input",()=>{data[i]=Number(range.value);stats();});
+label.append(span,range);$("data-sliders").appendChild(label);}
+for(let i=1;i<=20;i++){const x=45+(i-1)*33.1;$("ticks").appendChild(el("line",{x1:x,y1:168,x2:x,y2:174,stroke:"#708a98"}));if(i===1||i%2===0)$("ticks").appendChild(el("text",{x:x-5,y:193,"font-size":14,fill:"#50697b"},i));}
+function stats(){
+ const sorted=data.slice().sort((a,b)=>a-b),mean=data.reduce((a,b)=>a+b,0)/7,med=sorted[3],q1=sorted[1],q3=sorted[5],iqr=q3-q1,spread=sorted[6]-sorted[0];
+ const lo=q1-1.5*iqr,hi=q3+1.5*iqr,counts={};$("dots").replaceChildren();
+ sorted.forEach(v=>{const layer=counts[v]||0;counts[v]=layer+1;const out=v<lo||v>hi;$("dots").appendChild(el("circle",{cx:45+(v-1)*33.1,cy:152-17*layer,r:11,fill:out?"#e9922a":"#1687b4",stroke:"white","stroke-width":2}));});
+ data.forEach((v,i)=>$("out-"+i).textContent=v);
+ $("mean").textContent=fmt(mean);$("median").textContent=fmt(med);$("spread").textContent=fmt(spread);$("quartiles").textContent=[q1,q3,iqr].map(fmt).join(" · ");
+ const exceptions=sorted.filter(v=>v<lo||v>hi);
+ $("stats-explain").textContent="Dãy tăng: "+sorted.join(", ")+". Trung bình "+fmt(mean)+"; Me "+fmt(med)+"; Q1 "+q1+"; Q3 "+q3+"; hàng rào ["+fmt(lo)+"; "+fmt(hi)+"]. "+(exceptions.length?"Giá trị ngoài rào: "+exceptions.join(", ")+".":"Không có giá trị ngoài rào.");
+}
+function setData(vals){vals.forEach((v,i)=>{data[i]=v;$("data-"+i).value=v;});stats();}
+$("reset-stats").addEventListener("click",()=>setData(initial));$("try-extreme").addEventListener("click",()=>setData([2,2,3,4,5,5,20]));stats();
+})();
+</script></body></html>
