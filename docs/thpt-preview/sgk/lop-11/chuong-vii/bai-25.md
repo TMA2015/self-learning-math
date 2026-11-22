@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Lấy góc mở tù làm góc giữa hai mặt.
 
-        **Tự sửa:** Xác định hai đường vuông góc giao tuyến và góc nhỏ. [Luyện lại câu B25-C01](../luyen-tap/?item=THPT-G11-CHVII-B25-C01).
+        **Tự sửa:** Xác định hai đường vuông góc giao tuyến và góc nhỏ. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C01">Luyện lại câu B25-C01</a>.
 
     ### 1.2. Một đường nằm trong mặt và vuông góc mặt kia
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Dùng hai cạnh vuông góc ở hai mặt mà chưa có đường vuông góc mặt.
 
-        **Tự sửa:** Tìm đường vuông góc mặt đích rồi chỉ ra nó thuộc mặt cần xét. [Luyện lại câu B25-C03](../luyen-tap/?item=THPT-G11-CHVII-B25-C03).
+        **Tự sửa:** Tìm đường vuông góc mặt đích rồi chỉ ra nó thuộc mặt cần xét. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C03">Luyện lại câu B25-C03</a>.
 
     ### 1.3. Từ hai mặt vuông góc suy một đường vuông góc mặt
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** Cho mọi đường trong hai mặt vuông góc đều vuông góc mặt kia.
 
-        **Tự sửa:** Kiểm đường trong mặt và vuông góc giao tuyến. [Luyện lại câu B25-C04](../luyen-tap/?item=THPT-G11-CHVII-B25-C04).
+        **Tự sửa:** Kiểm đường trong mặt và vuông góc giao tuyến. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C04">Luyện lại câu B25-C04</a>.
 
     ### 1.4. Góc nhị diện chọn hai nửa mặt
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Tự động lấy góc nhị diện nhỏ hơn 90°.
 
-        **Tự sửa:** Đánh dấu hai nửa mặt, dựng hai tia đúng phía. [Luyện lại câu B25-C02](../luyen-tap/?item=THPT-G11-CHVII-B25-C02).
+        **Tự sửa:** Đánh dấu hai nửa mặt, dựng hai tia đúng phía. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C02">Luyện lại câu B25-C02</a>.
 
     ### 1.5. Hình đứng và hình đều khác nhau
 
@@ -106,7 +106,7 @@
 
         **Dấu hiệu:** Gọi mọi lăng trụ đứng là lăng trụ đều.
 
-        **Tự sửa:** Kiểm cả điều kiện đứng lẫn đáy đều. [Luyện lại câu B25-C05](../luyen-tap/?item=THPT-G11-CHVII-B25-C05).
+        **Tự sửa:** Kiểm cả điều kiện đứng lẫn đáy đều. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C05">Luyện lại câu B25-C05</a>.
 
     ### 1.6. Chân đường cao của chóp đều nằm tại tâm đáy
 
@@ -126,7 +126,7 @@
 
         **Dấu hiệu:** Lấy nửa cạnh 5 làm OA.
 
-        **Tự sửa:** Tìm bán kính đường tròn ngoại tiếp đáy; dùng tam giác SOA. [Luyện lại câu B25-C06](../luyen-tap/?item=THPT-G11-CHVII-B25-C06).
+        **Tự sửa:** Tìm bán kính đường tròn ngoại tiếp đáy; dùng tam giác SOA. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C06">Luyện lại câu B25-C06</a>.
 
     ### 1.7. Hai chóp đồng dạng tạo chóp cụt đều
 
@@ -146,7 +146,7 @@
 
         **Dấu hiệu:** Lấy độ cao chóp cụt làm chiều cao chóp nhỏ trong tỉ số.
 
-        **Tự sửa:** Vẽ đoạn cao từ đỉnh qua hai tâm đáy, dùng tỉ số đồng dạng. [Luyện lại câu B25-C07](../luyen-tap/?item=THPT-G11-CHVII-B25-C07).
+        **Tự sửa:** Vẽ đoạn cao từ đỉnh qua hai tâm đáy, dùng tỉ số đồng dạng. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C07">Luyện lại câu B25-C07</a>.
 
 === "Kiến thức SGK"
 
@@ -198,7 +198,7 @@
 
     ### 3.1. Tính góc giữa hai mặt qua pháp tuyến
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B25-R02-01"><p><strong>Đề bài:</strong> Hai pháp tuyến biểu diễn bằng hai tia tạo góc \(118^\circ\). Tìm góc giữa hai mặt.</p><p><strong>Phân tích:</strong> Hai mặt không chọn phía; lấy góc giữa đường chứa hai tia.</p><p><strong>Lời giải:</strong> \(180^\circ-118^\circ=62^\circ\).</p><p><strong>Kiểm lại:</strong> Góc thuộc [0°,90°].</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B25-R02-01"><p><strong>Đề bài:</strong> Hai pháp tuyến biểu diễn bằng hai tia tạo góc \(118^\circ\). Tìm góc giữa hai mặt.</p><p><strong>Phân tích:</strong> Hai mặt không chọn phía; lấy góc giữa đường chứa hai tia.</p><p><strong>Lời giải:</strong> \(180^\circ-118^\circ=62^\circ\).</p><p><strong>Kiểm lại:</strong> Góc giữa hai mặt thuộc \([0^\circ,90^\circ]\); \(62^\circ\) thỏa điều kiện.</p></div>
 
     ### 3.2. Mặt bên chứa cạnh vuông góc đáy
 
@@ -236,7 +236,7 @@
 
         **Vì sao sai:** Góc nhị diện chọn phía; góc giữa hai mặt không tù.
 
-        **Tự sửa:** Dựng hai tia đúng phía, rồi mới lấy góc bù nếu cần góc hai mặt. [Luyện lại câu B25-C02](../luyen-tap/?item=THPT-G11-CHVII-B25-C02).
+        **Tự sửa:** Dựng hai tia đúng phía, rồi mới lấy góc bù nếu cần góc hai mặt. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C02">Luyện lại câu B25-C02</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVII-B25-02" hidden></span>
 
@@ -244,7 +244,7 @@
 
         **Vì sao sai:** Chân cao ở tâm đáy, phải tính từ tam giác SOA.
 
-        **Tự sửa:** Ôn 2.6, làm 3.7. [Luyện lại câu B25-C06](../luyen-tap/?item=THPT-G11-CHVII-B25-C06).
+        **Tự sửa:** Ôn 2.6, làm 3.7. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C06">Luyện lại câu B25-C06</a>.
 
     <span data-thpt-help-id="HELP-G11-B25-03" hidden></span>
 
@@ -252,7 +252,7 @@
 
         **Vì sao sai:** Đường trong một mặt chưa đủ để vuông góc mặt kia.
 
-        **Tự sửa:** Kiểm thêm đường vuông góc giao tuyến ở 2.3. [Luyện lại câu B25-C04](../luyen-tap/?item=THPT-G11-CHVII-B25-C04).
+        **Tự sửa:** Kiểm thêm đường vuông góc giao tuyến ở 2.3. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C04">Luyện lại câu B25-C04</a>.
 
     <span data-thpt-help-id="HELP-G11-B25-04" hidden></span>
 
@@ -260,8 +260,8 @@
 
         **Vì sao sai:** Đứng yêu cầu cạnh bên vuông góc đáy; đều thêm đáy đa giác đều; chóp cụt có hai đáy đồng dạng.
 
-        **Tự sửa:** Đối chiếu các định nghĩa 2.5–2.6 và tỉ số đồng dạng. [Luyện lại câu B25-C07](../luyen-tap/?item=THPT-G11-CHVII-B25-C07).
+        **Tự sửa:** Đối chiếu các định nghĩa 2.5–2.6 và tỉ số đồng dạng. <a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C07">Luyện lại câu B25-C07</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VII](../../../../thu-vien/tu-luan-g11-chuong-vii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vii/">Tự luận Chương VII</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 25 (trang in 44–53).</p>
