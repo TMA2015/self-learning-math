@@ -25,7 +25,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tìm điểm làm phản ví dụ cho giá trị dự đoán. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-c01)
+        Tìm điểm làm phản ví dụ cho giá trị dự đoán. <a href="../luyen-tap/#thpt-g12-chi-b02-c01">Luyện lại câu tương ứng</a>
 
     ### 1.2. Vai trò của đoạn đóng
     
@@ -43,7 +43,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm miền trước khi viện dẫn định lý. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-c02)
+        Kiểm miền trước khi viện dẫn định lý. <a href="../luyen-tap/#thpt-g12-chi-b02-c02">Luyện lại câu tương ứng</a>
 
     ### 1.3. Ứng viên phải được so sánh
     
@@ -63,7 +63,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không bỏ điểm biên. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-c03)
+        Không bỏ điểm biên. <a href="../luyen-tap/#thpt-g12-chi-b02-c03">Luyện lại câu tương ứng</a>
 
     ### 1.4. Giới hạn không phải giá trị đạt
     
@@ -81,7 +81,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Phân biệt 0 là cận dưới và giá trị đạt. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-c04)
+        Phân biệt 0 là cận dưới và giá trị đạt. <a href="../luyen-tap/#thpt-g12-chi-b02-c04">Luyện lại câu tương ứng</a>
 
     ### 1.5. Miền nửa khoảng và vô hạn
     
@@ -99,7 +99,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm q≥0 và giới hạn 0 không tự tạo điểm ở vô hạn. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-p03)
+        Kiểm q≥0 và giới hạn 0 không tự tạo điểm ở vô hạn. <a href="../luyen-tap/#thpt-g12-chi-b02-p03">Luyện lại câu tương ứng</a>
 
     ### 1.6. Đặt biến từ hình học
     
@@ -117,7 +117,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Loại nghiệm 12 vì hộp suy biến. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-a01)
+        Loại nghiệm 12 vì hộp suy biến. <a href="../luyen-tap/#thpt-g12-chi-b02-a01">Luyện lại câu tương ứng</a>
 
 === "Kiến thức SGK"
 
@@ -161,38 +161,50 @@
     
     ??? tip "Cách tự sửa"
     
-        Tìm điểm làm phản ví dụ cho giá trị dự đoán. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-c01).
+        **Vì sao dễ sai:** GTLN/GTNN phải được so sánh trên toàn miền được hỏi, khác cực trị chỉ ở lân cận một điểm.
+
+        **Tự sửa:** Tìm điểm làm phản ví dụ cho giá trị dự đoán. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b02-c01">Core/Luyện tập</a>.
 
     ### 4.2. Vai trò của đoạn đóng
     
     ??? tip "Cách tự sửa"
     
-        Kiểm miền trước khi viện dẫn định lý. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-c02).
+        **Vì sao dễ sai:** Định lí đạt cực trị toàn cục áp dụng cho hàm liên tục trên đoạn đóng và bị chặn; đổi sang khoảng mở phải kiểm khả năng không đạt biên.
+
+        **Tự sửa:** Kiểm miền trước khi viện dẫn định lý. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b02-c02">Core/Luyện tập</a>.
 
     ### 4.3. Ứng viên phải được so sánh
     
     ??? tip "Cách tự sửa"
     
-        Không bỏ điểm biên. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-c03).
+        **Vì sao dễ sai:** Nghiệm f'=0 là một trong các ứng viên, không thể bỏ qua hai đầu mút được phép hoặc điểm hàm không khả vi mà vẫn xác định.
+
+        **Tự sửa:** Không bỏ điểm biên. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b02-c03">Core/Luyện tập</a>.
 
     ### 4.4. Giới hạn không phải giá trị đạt
     
     ??? tip "Cách tự sửa"
     
-        Phân biệt 0 là cận dưới và giá trị đạt. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-c04).
+        **Vì sao dễ sai:** Giới hạn ở đầu mút không thuộc miền chỉ là giá trị có thể tiến gần, không phải giá trị hàm đạt tại một x hợp lệ.
+
+        **Tự sửa:** Phân biệt 0 là cận dưới và giá trị đạt. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b02-c04">Core/Luyện tập</a>.
 
     ### 4.5. Miền nửa khoảng và vô hạn
     
     ??? tip "Cách tự sửa"
     
-        Kiểm q≥0 và giới hạn 0 không tự tạo điểm ở vô hạn. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-p03).
+        **Vì sao dễ sai:** Miền nửa khoảng/vô hạn cần kiểm điểm được lấy và giới hạn ở vô cùng; không tự thêm ∞ như một giá trị x.
+
+        **Tự sửa:** Kiểm q≥0 và giới hạn 0 không tự tạo điểm ở vô hạn. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b02-p03">Core/Luyện tập</a>.
 
     ### 4.6. Đặt biến từ hình học
     
     ??? tip "Cách tự sửa"
     
-        Loại nghiệm 12 vì hộp suy biến. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-a01).
+        **Vì sao dễ sai:** Biến hình học chỉ khả thi khi mọi cạnh/thể tích dương; nghiệm biên khiến hộp suy biến không được nhận dù phương trình đạo hàm cho nghiệm.
 
-    [Core Bài 2](../luyen-tap/#b02-core) · [Luyện tập, Vận dụng, Tự luận](../luyen-tap/#b02-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b02-help) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+        **Tự sửa:** Loại nghiệm 12 vì hộp suy biến. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b02-a01">Core/Luyện tập</a>.
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 15–19.*
+    **Học tiếp:** <a href="../luyen-tap/#b02-core">Core Bài 2</a> · <a href="../luyen-tap/#b02-practice">Luyện tập, Vận dụng, Tự luận</a> · <a href="../luyen-tap/#b02-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
+
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 2 (trang in 15–19). SBT cùng bộ được đối chiếu ở gói nguồn lịch sử; trang in khác chỉ số trang PDF.</p>
