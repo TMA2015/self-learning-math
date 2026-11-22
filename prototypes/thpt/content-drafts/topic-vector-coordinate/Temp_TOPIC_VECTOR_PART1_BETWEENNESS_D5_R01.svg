@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 455" role="img" aria-labelledby="vTitle vDesc">
+<title id="vTitle">Phân biệt M nằm giữa A và B với M nằm ngoài đoạn AB</title>
+<desc id="vDesc">Bên trái, ba điểm phân biệt A, M, B theo thứ tự, các vectơ MA và MB từ M chỉ về hai phía ngược nhau. Bên phải, A, B, M theo thứ tự, hai vectơ MA và MB cùng chỉ về bên trái: M không nằm giữa A và B.</desc>
+<defs>
+<marker id="arrBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="#1769aa"/></marker>
+<marker id="arrOrange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="#c05e16"/></marker>
+</defs>
+<rect width="1100" height="455" rx="18" fill="#f9fbfd"/>
+<rect x="24" y="66" width="516" height="322" rx="16" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="560" y="66" width="516" height="322" rx="16" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<g font-family="Arial, sans-serif" fill="#19293a">
+<text x="32" y="42" font-size="27" font-weight="bold">Điểm nằm giữa: nhìn hai mũi tên xuất phát từ M</text>
+<text x="56" y="108" font-size="24" font-weight="bold">Trường hợp 1: M ở giữa</text>
+<text x="592" y="108" font-size="24" font-weight="bold">Trường hợp 2: M ở ngoài</text>
+</g>
+<g stroke="#64748b" stroke-width="3" fill="none">
+<line x1="102" y1="201" x2="490" y2="201"/>
+<line x1="605" y1="201" x2="1018" y2="201"/>
+</g>
+<g stroke="#1f2937" stroke-width="1.7" fill="#1f2937">
+<circle cx="147" cy="201" r="6"/><circle cx="315" cy="201" r="6"/><circle cx="481" cy="201" r="6"/>
+<circle cx="633" cy="201" r="6"/><circle cx="791" cy="201" r="6"/><circle cx="988" cy="201" r="6"/>
+</g>
+<g font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1f2937">
+<text x="138" y="182">A</text><text x="306" y="182">M</text><text x="473" y="182">B</text>
+<text x="624" y="182">A</text><text x="783" y="182">B</text><text x="978" y="182">M</text>
+</g>
+<g stroke-width="5" fill="none" stroke-linecap="round">
+<line x1="315" y1="247" x2="147" y2="247" stroke="#1769aa" marker-end="url(#arrBlue)"/>
+<line x1="315" y1="291" x2="481" y2="291" stroke="#c05e16" marker-end="url(#arrOrange)"/>
+<line x1="988" y1="247" x2="633" y2="247" stroke="#1769aa" marker-end="url(#arrBlue)"/>
+<line x1="988" y1="291" x2="791" y2="291" stroke="#c05e16" marker-end="url(#arrOrange)"/>
+</g>
+<g font-family="Arial, sans-serif" font-size="19" fill="#253649">
+<text x="52" y="342">MA và MB ngược hướng</text>
+<text x="52" y="367">⇒ M nằm giữa A và B</text>
+<text x="584" y="342">MA và MB cùng hướng</text>
+<text x="584" y="367">⇒ M không nằm giữa A và B</text>
+<text x="35" y="423" font-size="17">Điểm A, B, M đôi một phân biệt. Các mũi tên chỉ phương và hướng; hình không dùng để đo độ dài.</text>
+</g>
+</svg>
