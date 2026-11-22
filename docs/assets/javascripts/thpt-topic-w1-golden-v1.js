@@ -19,7 +19,7 @@ const topicTabNames={
  "04":{modules:["1. Lũy thừa","2. Lôgarit","3. Hàm mũ và logarit","4. Phương trình, BPT","5. Tăng trưởng"],
  subs:[["1.1. Mũ nguyên và âm","1.2. Căn và mũ hữu tỉ","1.3. Mũ thực","1.4. Quy tắc lũy thừa"],["2.1. Định nghĩa lôgarit","2.2. Điều kiện lôgarit","2.3. Quy tắc lôgarit","2.4. Đổi cơ số"],["3.1. Hàm mũ","3.2. Đơn điệu hàm mũ","3.3. Hàm lôgarit","3.4. Hai hàm ngược"],["4.1. PT mũ","4.2. PT lôgarit","4.3. BPT mũ","4.4. BPT lôgarit"],["5.1. Mô hình tăng giảm","5.2. Bài toán tổng hợp"]]},
  "05":{modules:["1. Hàm số","2. Đọc đồ thị","3. Biến đổi đồ thị","4. Ứng dụng"],
- subs:[["1.1. Nhận biết hàm số","1.2. Tập xác định","1.3. Tập giá trị","1.4. Điểm trên đồ thị"],["2.1. Đồng biến, nghịch biến","2.2. Đỉnh parabol","2.3. Chẵn, lẻ","2.4. Hàm tuần hoàn"],["3.1. Dịch đứng","3.2. Dịch ngang","3.3. Phản xạ trục","3.4. Co giãn đứng","3.5. Co giãn ngang","3.6. |f(x)| và f(|x|)"],["4.1. Kết hợp biến đổi","4.2. Hàm từng đoạn","4.3. Tối ưu theo miền"]]}
+ subs:[["1.1. Nhận biết hàm số","1.2. Tập xác định","1.3. Tập giá trị","1.4. Điểm trên đồ thị"],["2.1. Đồng biến, nghịch biến","2.2. Đỉnh parabol","2.3. Chẵn, lẻ","2.4. Chu kỳ"],["3.1. Dịch đứng","3.2. Dịch ngang","3.3. Phản xạ trục","3.4. Co giãn đứng","3.5. Co giãn ngang","3.6. |f(x)| và f(|x|)"],["4.1. Kết hợp biến đổi","4.2. Hàm từng đoạn","4.3. Tối ưu theo miền"]]}
 };
 const displayShortTopicW1=(button,label,full)=>{
  if(!label||!full||label.length>=full.length)throw Error("TOPIC_W1_SHORT_TAB_SOURCE_HOLD");
