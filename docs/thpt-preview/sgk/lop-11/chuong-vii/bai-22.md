@@ -72,13 +72,13 @@
 
     Ở hình chiếu song song Chương IV, góc và độ dài có thể biến dạng. Muốn chứng minh vuông góc, cần giả thiết hình học: tam giác vuông, hình chữ nhật, đường trung bình hoặc định lý đã học.
 
-    **Vận dụng — Tự thử trước Core.** Tứ diện ABCD có tam giác ABC vuông tại A. M,N là trung điểm BD,CD. Biết \(AB\perp BC\) có suy \(AB\perp MN\) được không? Hãy kiểm dữ kiện: giả thiết vuông tại A có thật cho \(AB\perp BC\) không?
+    **Vận dụng — Tự thử trước Core.** Tứ diện ABCD có tam giác ABC vuông tại A. M,N là trung điểm BD,CD. Một bạn kết luận \(AB\perp MN\) vì tam giác ABC vuông tại A. Hãy kiểm kết luận ấy bằng cách xác định phương của MN.
 
     <span data-ped-first-try="4" data-outcome-id="G11-B22-PROOF_CONTEXT" data-thpt-first-try-id="THPT-G11-B22-TRY04" hidden></span>
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Trong tam giác BCD, \(MN\parallel BC\). Nếu có thêm \(AB\perp BC\) thì suy được \(AB\perp MN\). Nhưng tam giác ABC vuông tại A chỉ cho \(AB\perp AC\), không cho \(AB\perp BC\). Với tam giác không suy biến, AB và BC không thể vuông góc thêm tại B. Vì thế không được kết luận từ giả thiết đã cho.
+        **Lời giải:** Trong tam giác BCD, \(MN\parallel BC\) vì M,N là trung điểm BD,CD. Do đó \((AB,MN)=(AB,BC)\). Tam giác ABC vuông tại A, nên góc ABC nhọn và không bằng 90°. Vậy AB không vuông góc MN. Giả thiết chỉ cho \(AB\perp AC\), không cho AB vuông góc cạnh huyền BC.
 
     <span data-thpt-help-id="HELP-G11-B22-TRY04" hidden></span>
 
