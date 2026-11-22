@@ -9,9 +9,9 @@ LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_R02_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-ACADEMIC_SOURCE_BLOB: bc90bd1b544a51675ee1d66b4f0c27758d55e1cb
+ACADEMIC_SOURCE_BLOB: 26cf102bc8aebf274c9791b42772c5edf7154e7c
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md
-REVIEW_RECEIPT_BLOB: 6cc05a5789cf64917afe31a0f0c8e6573bb30741
+REVIEW_RECEIPT_BLOB: 8b3a6287d6586d4b73a6418d63b683e08697b50f
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 AUTHORING_STATUS: AUTHORING_PASS_CONTENT_READY
@@ -189,6 +189,10 @@ PED1 motivation on realistic geometry and why subject matters; PED2 prerequisite
 ## DELTA_LEDGER
 Previous independently reviewed R01 source `11eb2834cfdb4a24685157f84666c2bb0767970a` and receipt `a07070119259bd0133535fc3250d008cd78d8195` remain untouched at their old hashes. Current R02 material `DELTA_C_ACADEMIC_MATERIAL` modifies concept-first knowledge, worked examples, FirstTry, source SVG and formal methods only where actually affected, corrects B15-W05 perpendicular/skew rubric/solution, supplies canonical B14-O08 / B15-O08 / B17-O06 with 12 new public IDs. Original 96 item IDs are retained, aside from one material W05 correction, with one shared public JSON bank. No independent reviewer source-locked PASS is misattributed to current R02; Q18 author performs direct S1/Math/PED and signs on exact source/receipt. Cosmetic release changes must not trigger blanket academic re-review. No P0/P1 remain after complete 4-lesson G2.
 
+## SOURCE_EQUIVALENT_LINK_MARKUP_DELTA
+
+129 unchanged label+href Markdown source links in 4 lessons and optional page were normalized to equivalent HTML anchors so the raw-Markdown curriculum dependency audit does not mistake valid MkDocs clean URLs for missing directory source files. New original Markdown learner blobs are independently exact-hash referenced in the current R02 SOURCE manifest `26cf102bc8aebf274c9791b42772c5edf7154e7c`; Q18 self-QA receipt `8b3a6287d6586d4b73a6418d63b683e08697b50f` explicitly documents this nonacademic source-equivalent navigation syntax correction. No student-facing phrasing, item ID, answers, rubrics, FirstTry, SVG or mathematical logic changed. User-facing navigation remains RELEASE browser QA responsibility.
+
 ## PRIVATE_RD1_CUSTODY_METADATA
 Historic protected R01 RD1: 28 original owner-held candidates SHA256 `b0a0bbe4922cf06373d6392070c8211d08f2c4db03286fede89c64a98809fb17`; the private questions, solutions, rubrics and keys remain OFF public GitHub and were not accessed/altered in R02. They are not certified as a refreshed R02 independent readiness bank; OFFICIAL_READINESS: NOT_CLAIMED. Public END=27 reused SGK_APPLICATION IDs only, `CLIENT_SELF_CHECK_NO_MASTERY`. The current JS 96/24/24 guard is incompatible with 108/27/27, so R02 is an approved academic source for RELEASE intake, NOT website-compatible without separately authorized integration, exact-head Q16 Final Submit/no-hint/no-Tutor/no-Mastery tests and owner deploy approval.
 
@@ -305,7 +309,7 @@ Historic protected R01 RD1: 28 original owner-held candidates SHA256 `b0a0bbe492
 | THPT-G12-B14-W08 | G12-CHV-B14-O08 | SGK_WRITTEN | SGK_WRITTEN | SGK_CHAPTER |
 
 ## QUALITY_Q01_Q18_EVIDENCE
-Sole normative standard: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, VERSION 3.2.0. This is the same Q01–Q18 for AUTHORING and RELEASE. `Q18_VERIFICATION_MODE=AUTHOR_SELF_VERIFIED` uses `REVIEW_RECEIPT_PATH=prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md`, `ACADEMIC_SOURCE_BLOB=bc90bd1b544a51675ee1d66b4f0c27758d55e1cb`, `AUTHOR_SELF_QA_RECEIPT`. Every Qxx row below has actual checked outcome/lesson evidence; AP/R is RELEASE's rendering and protection check, not another academic rubric.
+Sole normative standard: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, VERSION 3.2.0. This is the same Q01–Q18 for AUTHORING and RELEASE. `Q18_VERIFICATION_MODE=AUTHOR_SELF_VERIFIED` uses `REVIEW_RECEIPT_PATH=prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md`, `ACADEMIC_SOURCE_BLOB=26cf102bc8aebf274c9791b42772c5edf7154e7c`, `AUTHOR_SELF_QA_RECEIPT`. Every Qxx row below has actual checked outcome/lesson evidence; AP/R is RELEASE's rendering and protection check, not another academic rubric.
 
 | Q_ID | LESSON/OUTCOME/S1 SOURCE | AUTHOR_MATH_PED_QA | Q18_MODE_EVIDENCE | RELEASE_AP_R_MAPPING |
 |---|---|---|---|---|
@@ -329,7 +333,7 @@ Sole normative standard: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD
 | Q18 | R02 one source bundle SHA / one AUTHOR_SELF_QA_RECEIPT SHA, baseline R01 immutable | SELF_QA_PASS source-locked Q01–Q18 A1–A7 with P0=P1=0 | AUTHOR_SELF_VERIFIED receipt 6cc05a5789cf SOURCE bc90bd1b544a | RELEASE R1 exact SHA and R2 exact-head CI |
 
 ## REVIEW_SOURCE_RECEIPT
-One `AUTHOR_SELF_QA_RECEIPT` R02 at `prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md`, exact Git blob `6cc05a5789cf64917afe31a0f0c8e6573bb30741`. Its own `SOURCE_BLOB: bc90bd1b544a51675ee1d66b4f0c27758d55e1cb` binds 4 original lesson files, one optional interlesson page, one bank and 10 SVG, all SHA locked in the source bundle. The reviewer content for B17-O06 is matched but its independent receipt recorded Topic18 and old ChV pointers, so R02 signed by the authorized author self-QA mode, not mislabeled independent reviewer PASS. Source verification reached 197/197 math and 25/25,26/26,25/25,25/25 individual structural tests plus 18/18 global bank assertions. No extra review cycle is automatically required.
+One `AUTHOR_SELF_QA_RECEIPT` R02 at `prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md`, exact Git blob `8b3a6287d6586d4b73a6418d63b683e08697b50f`. Its own `SOURCE_BLOB: 26cf102bc8aebf274c9791b42772c5edf7154e7c` binds 4 original lesson files, one optional interlesson page, one bank and 10 SVG, all SHA locked in the source bundle. The reviewer content for B17-O06 is matched but its independent receipt recorded Topic18 and old ChV pointers, so R02 signed by the authorized author self-QA mode, not mislabeled independent reviewer PASS. Source verification reached 197/197 math and 25/25,26/26,25/25,25/25 individual structural tests plus 18/18 global bank assertions. No extra review cycle is automatically required.
 
 ## AUTHOR_SIGNOFF
 The author signs Q01–Q18 and A1–A7 for all 4 lessons, 26 mandatory outcomes, 1 post-B17 optional outcome and the 108 public canonical items based on original SGK S1, direct mathematical checks, genuine learner-first reading and source-locked R02 receipt. P0=0/P1=0 for AUTHORING. This is `AUTHORING_PASS = CONTENT_READY` (after one ready/manifest and REGISTER row created in same pass), not a merge, release or device-QA certificate.
