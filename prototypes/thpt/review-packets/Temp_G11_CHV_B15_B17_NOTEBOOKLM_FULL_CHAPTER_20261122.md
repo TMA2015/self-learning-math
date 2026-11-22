@@ -4,7 +4,7 @@ PACKET_ID: Temp_G11_CHV_B15_B17_R04_INDEPENDENT_REVIEW_20261122
 ROLE: REVIEW_COPY_ONLY_NOT_LEARNER_CANONICAL
 CANONICAL_BRANCH: authoring/sgk-g11-chv-b15-b17-r02-20261122
 Q18_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHV_B15_B17_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
-Q18_RECEIPT_GIT_BLOB: f64549651a45423068536dc540d9d15eb495b943
+Q18_RECEIPT_GIT_BLOB: 5c2746e715944a7682a303b8a8960ca69e5b10d6
 SOURCE_KIND: NEW_DELTA_C_NOT_INDEPENDENTLY_REVIEWED
 PRIOR_R02_R03_PASS: HISTORICAL_BLOBS_ONLY
 RD1_EXPOSURE: NONE; NEVER INCLUDE PRIVATE_RD1
@@ -951,7 +951,7 @@ REVIEW_PROMPT_SENTENCES: 4
 
 ---
 
-## Q18 AUTHORING SOURCE RECEIPT BEGIN · f64549651a45423068536dc540d9d15eb495b943
+## Q18 AUTHORING SOURCE RECEIPT BEGIN · 5c2746e715944a7682a303b8a8960ca69e5b10d6
 
 # G11 SGK Chương V B15–B17 · R04 academic and pedagogic author self-Q18 · 22/11/2026
 
@@ -982,7 +982,7 @@ MASTERY_ACTIVATION: NO
 
 ## Current source truth and prior independent review
 
-**Current source Git blob `d548d4dfb1761c4709c370b88fb70093b4343c4c`** is a manifest for 11 original source components including three student Knowledge articles, original unchanged 30-item formative bank, 6-item Written/Anchor library and 3 original SVG. B15 learner SHA `f4065659173d27ef3999f1b0ee42ff2982701267`, B16 `687bb852f1b8465527902ead7dfeae9858584171`, B17 `c8dcdc741fc0d718acd3474c7b521bcf1193eaf3`. Historic primary S1 SBT Toán 11 KNTT T1 PDF SHA256 `fb5292103e5b682531ce37b5f30598393bba81b2943da9c1a374fdeb56557229` printed B15 75–78, B16 79–83, B17 84–86 and chapter end 87–90. Original SGK KNTT T1 chapter printed B15 104–110, B16 111–118, B17 119–122, final p123. Current session checked online SGK source PDF text (actual sections B15–B17 and original examples) but web visual screenshot failed and original publisher final-print PDF bytes were not rescanned. **No new printed-image receipt is claimed**.
+**Current source Git blob `d548d4dfb1761c4709c370b88fb70093b4343c4c`** is a manifest for 11 original source components including three student Knowledge articles, original unchanged 30-item formative bank, one original shared Written/Anchor library with six historic entries unchanged and one new integrated Written /4, plus 3 original SVG. B15 learner SHA `f4065659173d27ef3999f1b0ee42ff2982701267`, B16 `687bb852f1b8465527902ead7dfeae9858584171`, B17 `c8dcdc741fc0d718acd3474c7b521bcf1193eaf3`. Historic primary S1 SBT Toán 11 KNTT T1 PDF SHA256 `fb5292103e5b682531ce37b5f30598393bba81b2943da9c1a374fdeb56557229` printed B15 75–78, B16 79–83, B17 84–86 and chapter end 87–90. Original SGK KNTT T1 chapter printed B15 104–110, B16 111–118, B17 119–122, final p123. Current session checked online SGK source PDF text (actual sections B15–B17 and original examples) but web visual screenshot failed and original publisher final-print PDF bytes were not rescanned. **No new printed-image receipt is claimed**.
 
 Historical independent Academic/PED source `7934757ed06de4ae4b63dbc351ef524fc054e0d0` and review receipt `2fdc39c755f399b0df81e17a9c8978384612e2f1` are immutable history only. R04 pedagogic rewrites are `DELTA_C_ACADEMIC_MATERIAL` and current signoff is a new Q18 author self-verification **under owner-effective v3.2.0**, not fabricated NotebookLM PASS. Source-scoped prior 100k randomized probes from previous source blobs are historical and **not rerun or claimed as current**.
 
