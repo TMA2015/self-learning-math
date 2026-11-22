@@ -22,7 +22,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Gạch từng quan sát đã đếm, kiểm tổng tần số và đầu mút. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p01). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Tần số của lớp rỗng bằng 0, vì vậy không được coi lớp ấy là một quan sát; số nằm đúng cận trên của lớp nửa kín phải chuyển sang lớp tiếp theo.
+
+        **Tự sửa:** Gạch từng quan sát đã đếm, kiểm tổng tần số và đầu mút. <a href="../luyen-tap/#thpt-g12-b09-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b09-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.2. Khoảng biến thiên dùng hai cận
     
@@ -40,7 +42,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Bỏ lớp rỗng ở hai đầu; không dùng trung điểm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p03). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Khoảng biến thiên của bảng ghép nhóm dựa trên cận của hai lớp có dữ liệu ngoài cùng, không phải cận của lớp rỗng hay hiệu trung điểm; đây chỉ là ước lượng từ dữ liệu đã gộp.
+
+        **Tự sửa:** Bỏ lớp rỗng ở hai đầu; không dùng trung điểm. <a href="../luyen-tap/#thpt-g12-b09-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b09-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.3. Biên nhạy với một quan sát xa
     
@@ -58,7 +62,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        So cận ngoài trước và sau, phân biệt một ngoại lệ với toàn bộ mẫu. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p05). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Một quan sát ở lớp biên xa hơn có thể tăng mạnh R dù 50% giữa gần như không đổi; từ riêng R không thể suy IQR hay phương sai.
+
+        **Tự sửa:** So cận ngoài trước và sau, phân biệt một ngoại lệ với toàn bộ mẫu. <a href="../luyen-tap/#thpt-g12-b09-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b09-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.4. Vị trí tứ phân vị và cộng dồn
     
@@ -78,7 +84,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không chọn lớp đông nhất; tại đúng biên, không nội suy tùy tiện qua lớp rỗng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p07). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Q₁ và Q₃ nằm tại vị trí n/4 và 3n/4 trong bảng tần số cộng dồn; phải tìm lớp chứa mốc trước, không chọn lớp có tần số lớn nhất.
+
+        **Tự sửa:** Không chọn lớp đông nhất; tại đúng biên, không nội suy tùy tiện qua lớp rỗng. <a href="../luyen-tap/#thpt-g12-b09-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b09-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.5. Nội suy: phần nào của bề rộng lớp?
     
@@ -96,7 +104,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm phần nội suy từ 0 đến 1; không lấy tổng cộng dồn hết lớp làm C. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p09). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Trong công thức nội suy Q=L+[(vị trí−C)/f]h, C là cộng dồn TRƯỚC lớp đang xét và f phải dương; làm tròn quá sớm có thể làm sai hiệu Q₃−Q₁.
+
+        **Tự sửa:** Kiểm phần nội suy từ 0 đến 1; không lấy tổng cộng dồn hết lớp làm C. <a href="../luyen-tap/#thpt-g12-b09-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b09-p09">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.6. Chọn đại lượng theo câu hỏi
     
@@ -116,7 +126,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đọc kỹ đề hỏi biên hay phần giữa; nêu cả hai nhận xét nếu cần. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p11). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** R đo toàn bộ hai đầu; IQR đo nửa giữa, nên cần so sánh đúng mục tiêu và các bảng chung đơn vị/cách chia lớp trước khi kết luận 'ổn định hơn'.
+
+        **Tự sửa:** Đọc kỹ đề hỏi biên hay phần giữa; nêu cả hai nhận xét nếu cần. <a href="../luyen-tap/#thpt-g12-b09-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b09-p11">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.7. Thực hành cả hai cách: mẫu thô và ghép nhóm
     
@@ -134,7 +146,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Giữ nguyên mẫu gốc để tính chính xác, không dùng trung điểm lớp thay từng quan sát. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p09). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Tứ phân vị từ mẫu số liệu gốc có thể dùng trung vị hai nửa, còn dữ liệu ghép nhóm chỉ cho nội suy xấp xỉ; không thể thay 12 số đo bằng 3 trung điểm mà tuyên bố có đáp án nguyên bản.
+
+        **Tự sửa:** Giữ nguyên mẫu gốc để tính chính xác, không dùng trung điểm lớp thay từng quan sát. <a href="../luyen-tap/#thpt-g12-b09-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b09-p09">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
 === "Kiến thức SGK"
 
@@ -194,44 +208,44 @@
     
     ??? tip "Cách tự sửa"
     
-        Gạch từng quan sát đã đếm, kiểm tổng tần số và đầu mút. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p01).
+        Gạch từng quan sát đã đếm, kiểm tổng tần số và đầu mút. <a href="../luyen-tap/#thpt-g12-b09-c01">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b09-p01">luyện câu khác rồi quay lại</a>.
 
     ### 4.2. Khoảng biến thiên dùng hai cận
     
     ??? tip "Cách tự sửa"
     
-        Bỏ lớp rỗng ở hai đầu; không dùng trung điểm. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p03).
+        Bỏ lớp rỗng ở hai đầu; không dùng trung điểm. <a href="../luyen-tap/#thpt-g12-b09-c02">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b09-p03">luyện câu khác rồi quay lại</a>.
 
     ### 4.3. Biên nhạy với một quan sát xa
     
     ??? tip "Cách tự sửa"
     
-        So cận ngoài trước và sau, phân biệt một ngoại lệ với toàn bộ mẫu. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p05).
+        So cận ngoài trước và sau, phân biệt một ngoại lệ với toàn bộ mẫu. <a href="../luyen-tap/#thpt-g12-b09-c03">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b09-p05">luyện câu khác rồi quay lại</a>.
 
     ### 4.4. Vị trí tứ phân vị và cộng dồn
     
     ??? tip "Cách tự sửa"
     
-        Không chọn lớp đông nhất; tại đúng biên, không nội suy tùy tiện qua lớp rỗng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p07).
+        Không chọn lớp đông nhất; tại đúng biên, không nội suy tùy tiện qua lớp rỗng. <a href="../luyen-tap/#thpt-g12-b09-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b09-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.5. Nội suy: phần nào của bề rộng lớp?
     
     ??? tip "Cách tự sửa"
     
-        Kiểm phần nội suy từ 0 đến 1; không lấy tổng cộng dồn hết lớp làm C. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p09).
+        Kiểm phần nội suy từ 0 đến 1; không lấy tổng cộng dồn hết lớp làm C. <a href="../luyen-tap/#thpt-g12-b09-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b09-p09">luyện câu khác rồi quay lại</a>.
 
     ### 4.6. Chọn đại lượng theo câu hỏi
     
     ??? tip "Cách tự sửa"
     
-        Đọc kỹ đề hỏi biên hay phần giữa; nêu cả hai nhận xét nếu cần. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p11).
+        Đọc kỹ đề hỏi biên hay phần giữa; nêu cả hai nhận xét nếu cần. <a href="../luyen-tap/#thpt-g12-b09-c06">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b09-p11">luyện câu khác rồi quay lại</a>.
 
     ### 4.7. Thực hành cả hai cách: mẫu thô và ghép nhóm
     
     ??? tip "Cách tự sửa"
     
-        Giữ nguyên mẫu gốc để tính chính xác, không dùng trung điểm lớp thay từng quan sát. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p09).
+        Giữ nguyên mẫu gốc để tính chính xác, không dùng trung điểm lớp thay từng quan sát. <a href="../luyen-tap/#thpt-g12-b09-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b09-p09">luyện câu khác rồi quay lại</a>.
 
-    [Core Bài 9](../luyen-tap/#b09-core) · [Luyện tập và Tự luận](../luyen-tap/#b09-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b09-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b09-core">Core Bài 9</a> · <a href="../luyen-tap/#b09-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b09-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 75–79.*
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 9 (trang in 75–79). Biên bản SGK/SBT gốc đã kiểm theo trang in/PDF lịch sử; không xem đây là lần quét lại toàn bộ bản gốc.</p>
