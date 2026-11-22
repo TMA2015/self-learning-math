@@ -1,81 +1,211 @@
 # Bài 28. Biến cố hợp, biến cố giao, biến cố độc lập
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VIII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do → điều kiện → đọc hình D5 → Tự thử trước Core → xem D2 giải có suy luận → Core, Luyện tập, Tự khắc phục D6. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VIII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VIII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Diễn đạt các biến cố bằng tập hợp, phân biệt hợp, giao, đối, xung khắc và độc lập.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VIII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Kiến thức SGK — hình thành bản chất trước quy tắc
+=== "Khám phá kiến thức"
 
-### 1.1. Tại sao một biến cố đơn lẻ chưa đủ?
-Ở lớp trước em biết xác suất để lấy được thẻ màu đỏ. Nhưng một câu hỏi như “rút được thẻ đỏ **hoặc** thẻ mang số chẵn”, hay “vừa đỏ **vừa** chẵn” đòi phối hợp **hai biến cố**. Nếu chỉ cộng số trường hợp ta có thể đếm trùng một thẻ vừa đỏ vừa chẵn. Chương này học ngôn ngữ biến cố trước, sau đó mới tính xác suất; học sinh không phải học thuộc công thức khi chưa hiểu vùng kết quả.
+    Khi chọn một học sinh để khảo sát, có thể bạn ấy biết bơi, biết đạp xe, biết cả hai hoặc không biết môn nào. Ta cần ngôn ngữ để mô tả từng tình huống trước khi tính cơ hội xảy ra. Một biến cố là tập hợp các kết quả thỏa điều kiện, không phải bản thân một lần thử.
 
-### 1.2. Phép thử, không gian mẫu, biến cố (nhắc nền tảng)
-**Phép thử ngẫu nhiên** là thao tác với kết quả chưa biết trước (chẳng hạn lấy ngẫu nhiên một thẻ). **Không gian mẫu** Ω là tập *mọi kết quả có thể xảy ra* của phép thử; **biến cố** A là tập con Ω. Với Ω={1,2,3,4,5,6} khi chọn số từ sáu thẻ đánh số, A="số chẵn"={2,4,6}; B="số lớn hơn 3"={4,5,6}. Trong mô hình sáu kết quả **đồng khả năng**, P(A)=3/6. Nếu cách chọn khiến các kết quả không đồng khả năng, tuyệt đối không dùng số phần tử/6 mà phải có xác suất của từng kết quả.
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVIII-B28-01_R00.svg" alt="Bốn miền của sơ đồ Venn: chỉ A, giao A và B, chỉ B và ngoài cả hai; một kết quả nằm đúng một miền."><figcaption>Đọc hình: Bốn miền của sơ đồ Venn: chỉ A, giao A và B, chỉ B và ngoài cả hai; một kết quả nằm đúng một miền. Diện tích hình chỉ minh họa miền, không biểu thị tỉ lệ xác suất.</figcaption></figure>
 
-### 1.3. "Hoặc" và "đồng thời" là hai tập khác nhau
-**Hợp** A∪B có kết quả thuộc A **hoặc** B, kể cả khi cả hai xảy ra. Ví dụ A∪B={2,4,5,6}. **Giao** A∩B có kết quả thuộc **cả A lẫn B**, ở ví dụ là {4,6}. **Phần bù** Ā=Ω\\A={1,3,5}, nghĩa là A không xảy ra. **Xung khắc** nếu A∩B=∅, không thể xảy ra đồng thời. Hai biến cố có phần giao không rỗng là **không xung khắc**. Xem FIG-G11-CHVIII-B28-01; vùng giao ở giữa được tính **một lần** trong hợp.
+    ### 1.1. Không gian mẫu
+    
+    Liệt kê mọi kết quả riêng biệt của đúng phép thử. Chẳng hạn chọn một thẻ thì một kết quả là một thẻ, không phải hai thẻ.
+    
+    **Vận dụng.** Chọn một thẻ trong năm thẻ đánh số 2,4,6,8,10. Viết không gian mẫu.
+    
+    <span data-ped-first-try="1" data-outcome-id="G11-B28-SAMPLE_SPACE" data-thpt-first-try-id="THPT-G11-B28-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Ω={2,4,6,8,10}.
+    
+    <span data-thpt-help-id="HELP-G11-B28-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không thêm các cặp vì chỉ chọn một thẻ. [Luyện lại câu B28-C01](../luyen-tap/?item=THPT-G11-CHVIII-B28-C01)
 
-### 1.4. Độc lập không phải xung khắc
-Hai biến cố **độc lập** khi việc một biến cố xảy ra **không làm thay đổi xác suất** của biến cố kia. Một phép kiểm trong mô hình có số liệu xác suất là **P(A∩B)=P(A)P(B)**; trong bài này nêu ý nghĩa, bài 30 dùng công thức nhân để tính. Ví dụ gieo **hai đồng xu công bằng độc lập**, A="xu thứ nhất ngửa", B="xu thứ hai ngửa": mỗi biến cố xác suất 1/2 và cả hai cùng ngửa là 1/4. Ngược lại, trong *một* lần gieo xúc xắc, A="ra 2", B="ra 5" xung khắc nhưng **không độc lập**, do biết A xảy ra thì B chắc chắn không thể xảy ra. **Không được** chỉ vì hai câu chuyện nghe không liên quan mà kết luận độc lập; cần giả thiết hoặc xác minh mô hình.
+    ### 1.2. Mô tả biến cố
+    
+    Từ mô tả bằng lời, giữ lại đúng các kết quả thỏa điều kiện; nếu chọn đều mới đếm số kết quả chia tổng.
+    
+    **Vận dụng.** Chọn đều thẻ từ 1 đến 8. A là biến cố chọn số nguyên tố. Viết A và tính P(A).
+    
+    <span data-ped-first-try="2" data-outcome-id="G11-B28-EVENT_MODEL" data-thpt-first-try-id="THPT-G11-B28-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** A={2,3,5,7}; P(A)=4/8=1/2.
+    
+    <span data-thpt-help-id="HELP-G11-B28-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Số 1 không nguyên tố; kiểm điều kiện đồng khả năng. [Luyện lại câu B28-C02](../luyen-tap/?item=THPT-G11-CHVIII-B28-C02)
 
-### 1.5. Đọc hình, suy luận và lỗi dễ mắc
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVIII-B28-01_R00.svg" alt="FIG-G11-CHVIII-B28-01"/><figcaption>Hình D5 — FIG-G11-CHVIII-B28-01. Đọc hình cùng các chỉ dẫn trong bài trước khi dùng quy tắc.</figcaption></figure>
-**D5:** Hãy đặt một kết quả vào vùng chỉ A, chỉ B, cả hai hoặc ngoài cả hai. Vùng A∪B gồm ba vùng trong hai hình tròn, còn A∩B chỉ vùng chồng nhau. Việc A và B *không cùng xảy ra* là xung khắc, không phải bằng chứng độc lập.
+    ### 1.3. Hoặc: kể cả hai
+    
+    Một kết quả thỏa ít nhất một điều kiện thì thuộc hợp, kể cả kết quả thỏa cả hai; không viết lặp.
+    
+    **Vận dụng.** Cho A={1,3,7}, B={2,3,8}. Tìm hợp.
+    
+    <span data-ped-first-try="3" data-outcome-id="G11-B28-UNION" data-thpt-first-try-id="THPT-G11-B28-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** A∪B={1,2,3,7,8}.
+    
+    <span data-thpt-help-id="HELP-G11-B28-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Nếu bỏ 3, em đang hiểu hoặc theo nghĩa loại trừ. [Luyện lại câu B28-C03](../luyen-tap/?item=THPT-G11-CHVIII-B28-C03)
 
-### 1.6. Tự thử trước luyện tập
-Với Ω={1,2,3,4,5,6}, A={2,4,6}, B={4,5,6}, em hãy viết A∪B, A∩B và Ā; hỏi hai biến cố này xung khắc không và giải thích. 
+    ### 1.4. Và: đồng thời
+    
+    Chỉ giữ kết quả trong cả hai tập; khi một điều kiện không thể cùng xảy ra với điều kiện kia thì giao rỗng.
+    
+    **Vận dụng.** Chọn một số từ 1 đến 12. A là bội của 2, B là bội của 3. Tìm AB.
+    
+    <span data-ped-first-try="4" data-outcome-id="G11-B28-INTERSECTION" data-thpt-first-try-id="THPT-G11-B28-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** AB=A∩B={6,12}.
+    
+    <span data-thpt-help-id="HELP-G11-B28-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm từng số phải chia hết cho cả 2 và 3. [Luyện lại câu B28-C04](../luyen-tap/?item=THPT-G11-CHVIII-B28-C04)
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Tự đối chiếu sau khi làm:</strong> {2,4,5,6}; {4,6}; {1,3,5}; không xung khắc vì giao khác rỗng.</p></details>
+    ### 1.5. Chỉ một và không có cái nào
+    
+    Chia Ω thành bốn miền: chỉ A, chỉ B, cả hai, ngoài cả hai. Hai cách nói 'chỉ một' và 'không cái nào' khác nhau.
+    
+    **Vận dụng.** Ω={1,2,3,4,5,6}, A={1,2,3}, B={3,4}. Liệt kê các kết quả chỉ thuộc một biến cố và không thuộc biến cố nào.
+    
+    <span data-ped-first-try="5" data-outcome-id="G11-B28-COMPLEMENT" data-thpt-first-try-id="THPT-G11-B28-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Chỉ một: {1,2,4}; không thuộc biến cố nào: {5,6}.
+    
+    <span data-thpt-help-id="HELP-G11-B28-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Tránh hiểu 'không có cả hai' mơ hồ; viết rõ không A và không B. [Luyện lại câu B28-C05](../luyen-tap/?item=THPT-G11-CHVIII-B28-C05)
 
+    ### 1.6. Xung khắc không phải độc lập
+    
+    Xung khắc nói về khả năng cùng xảy ra. Độc lập nói về việc thông tin xảy ra của biến cố này có thay đổi cơ hội biến cố kia hay không.
+    
+    **Vận dụng.** Gieo một xúc xắc đều. A là ra 1 hoặc 2, B là ra 5. Xung khắc không? Độc lập không?
+    
+    <span data-ped-first-try="6" data-outcome-id="G11-B28-DISJOINT" data-thpt-first-try-id="THPT-G11-B28-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Có xung khắc vì giao rỗng. Không độc lập vì khi A xảy ra, B chắc chắn không xảy ra, khác cơ hội trước đó 1/6.
+    
+    <span data-thpt-help-id="HELP-G11-B28-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Hai biến cố xung khắc có xác suất dương không độc lập. [Luyện lại câu B28-C06](../luyen-tap/?item=THPT-G11-CHVIII-B28-C06)
 
-## 2. Ví dụ có suy luận
+    ### 1.7. Hoàn lại hay không hoàn lại
+    
+    Hộp có 2 bi đỏ, 3 bi xanh, mỗi bi được chọn đều. Nếu trả bi đầu lại, cơ hội đỏ ở lượt sau vẫn 2/5. Nếu không trả, thành phần hộp phụ thuộc màu lượt đầu.
+    
+    **Vận dụng.** Cùng hộp trên, không hoàn lại: so sánh cơ hội đỏ lượt hai khi lượt đầu đỏ và khi lượt đầu xanh.
+    
+    <span data-ped-first-try="7" data-outcome-id="G11-B28-INDEPENDENCE" data-thpt-first-try-id="THPT-G11-B28-TRY07" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Nếu đầu đỏ: 1/4; nếu đầu xanh: 2/4. Khác nhau nên hai biến cố đỏ ở từng lượt không độc lập.
+    
+    <span data-thpt-help-id="HELP-G11-B28-TRY07" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Phải xét lại số bi còn trong hộp, không giữ mẫu số 5. [Luyện lại câu B28-C07](../luyen-tap/?item=THPT-G11-CHVIII-B28-C07)
 
-#### EX-G11-CHVIII-B28-01: Đọc biến cố từ tập số
+=== "Kiến thức SGK"
 
-**Nhiệm vụ:** Chọn đều một thẻ từ {1,2,3,4,5,6}; A="số chẵn", B="từ 4 trở lên". Tìm A∩B, A∪B.
+    ### 2.1. Biến cố hợp
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Biến cố hợp.</strong>
+    
+    Cho A, B cùng thuộc không gian mẫu Ω. Biến cố hợp là A hoặc B xảy ra, kí hiệu \(A\cup B\). Một kết quả thuộc hợp nếu nó thuộc A, B hoặc cả hai. Nhắc: Ω gồm mọi kết quả có thể; biến cố là tập con Ω. Với các kết quả đồng khả năng, \(P(A)=n(A)/n(\Omega)\). Không được dùng phép đếm đơn thuần nếu các kết quả không đồng khả năng.
+    
+    </div>
 
-**Đáp án và lời giải:** A={2,4,6}, B={4,5,6}; A∩B={4,6}, A∪B={2,4,5,6}.
+    ### 2.2. Biến cố giao
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Biến cố giao.</strong>
+    
+    Biến cố giao, kí hiệu \(AB=A\cap B\), xảy ra khi cả A và B xảy ra. Biến cố đối \(\overline A=\Omega\setminus A\) xảy ra khi A không xảy ra. Chỉ A: \(A\overline B\); chỉ B: \(\overline A B\); đúng một: \((A\overline B)\cup(\overline A B)\); không biến cố nào: \(\overline A\,\overline B=\overline{A\cup B}\). Xung khắc nghĩa là \(AB=\varnothing\).
+    
+    </div>
 
-**Tại sao cách làm đúng:** Giao là chữ "và"; hợp là chữ "hoặc" gồm cả trường hợp đồng thời. Không nhân xác suất khi đề chỉ yêu cầu tập hợp.
+    ### 2.3. Biến cố độc lập
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Biến cố độc lập.</strong>
+    
+    A và B độc lập nếu việc xảy ra hay không xảy ra của biến cố này không ảnh hưởng đến xác suất của biến cố kia. Ví dụ hai lần gieo xúc xắc độc lập; hai lần rút không hoàn lại có thể phụ thuộc. Khi A và B độc lập, các cặp \(A,\overline B\), \(\overline A,B\), \(\overline A,\overline B\) cũng độc lập: nếu tỉ lệ B không đổi thì tỉ lệ không B cũng không đổi; khi biết A không xảy ra, giả thiết độc lập vẫn giữ nguyên tỉ lệ. Bài 30 sẽ dùng phép kiểm \(P(AB)=P(A)P(B)\), bao gồm cả trường hợp xác suất 0. Không kết luận chỉ từ tên biến cố.
+    
+    </div>
 
-#### EX-G11-CHVIII-B28-02: Đếm bù đúng
+=== "Ví dụ"
 
-**Nhiệm vụ:** Có Ω={a,b,c,d,e}, A={a,d}. Hỏi "không thuộc A" là tập nào?
+    ### 3.1. Hợp và giao từ điều kiện
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B28-01"><p><strong>Đề bài:</strong> Chọn đều một số từ 1 đến 10. A là số chẵn, B là bội của 3. Tìm hợp và giao.</p><p><strong>Phân tích:</strong> Liệt kê từng tập rồi so sánh.</p><p><strong>Lời giải:</strong> A={2,4,6,8,10}; B={3,6,9}; hợp {2,3,4,6,8,9,10}; giao {6}.</p><p><strong>Kiểm lại:</strong> 6 thuộc cả hai nhưng chỉ ghi một lần trong hợp.</p></div>
 
-**Đáp án và lời giải:** Ā={b,c,e}.
+    ### 3.2. Biến cố đối và đúng một
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B28-02"><p><strong>Đề bài:</strong> Ω={a,b,c,d,e,f}, A={a,c,d}, B={b,d,e}. Tìm biến cố đối A, đúng một và không cái nào.</p><p><strong>Phân tích:</strong> Tách bốn miền rời nhau.</p><p><strong>Lời giải:</strong> Đối A={b,e,f}; chỉ A={a,c}; chỉ B={b,e}; đúng một={a,b,c,e}; không cái nào={f}.</p><p><strong>Kiểm lại:</strong> Bốn miền có 2+2+1+1=6 kết quả.</p></div>
 
-**Tại sao cách làm đúng:** Bù luôn xét tương đối với Ω; không tự lấy phần bù trong một tập không nêu.
+    ### 3.3. Xung khắc và độc lập
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B28-03"><p><strong>Đề bài:</strong> Một lần gieo xúc xắc đều. A ra 2, B ra 5. Nhận xét quan hệ.</p><p><strong>Phân tích:</strong> Phân biệt giao rỗng với sự thay đổi khả năng.</p><p><strong>Lời giải:</strong> A∩B=∅. Nếu A xảy ra, B có xác suất 0 thay vì 1/6. Xung khắc nhưng không độc lập.</p><p><strong>Kiểm lại:</strong> Cả A và B đều có xác suất dương.</p></div>
 
-#### EX-G11-CHVIII-B28-03: Hai biến cố xung khắc trong cùng phép thử
+    ### 3.4. Độc lập qua bảng kết quả
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B28-04"><p><strong>Đề bài:</strong> Hai đồng xu cân bằng được gieo độc lập. A là xu đầu ngửa, B là xu sau sấp. Xét B khi A xảy ra và khi A không xảy ra.</p><p><strong>Phân tích:</strong> Bốn kết quả NN, NS, SN, SS đồng khả năng.</p><p><strong>Lời giải:</strong> Trong NN, NS có một kết quả B; trong SN, SS cũng có một kết quả B. Hai tỉ lệ đều 1/2; A và B độc lập.</p><p><strong>Kiểm lại:</strong> Nếu thay B bằng biến cố xu sau ngửa, tỉ lệ vẫn 1/2.</p></div>
 
-**Nhiệm vụ:** Gieo một xúc xắc: A="ra 2", B="ra 5". Xung khắc hay độc lập?
+    ### 3.5. Đọc bốn miền
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B28-05"><p><strong>Đề bài:</strong> Trong nhóm 24 học sinh, 8 biết bơi, 10 biết đạp xe, 3 biết cả hai. Hỏi bao nhiêu bạn chỉ biết một môn và không biết môn nào trong hai môn.</p><p><strong>Phân tích:</strong> Bỏ 3 khỏi từng nhóm để tìm hai miền riêng.</p><p><strong>Lời giải:</strong> Chỉ bơi=5; chỉ đạp xe=7; đúng một=12; ngoài cả hai=24−(5+7+3)=9.</p><p><strong>Kiểm lại:</strong> 5+7+3+9=24.</p></div>
 
-**Đáp án và lời giải:** A∩B=∅, P(A)=P(B)=1/6>0, P(A∩B)=0≠1/36. Xung khắc, không độc lập.
+    ### 3.6. So sánh hai cách rút
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B28-R02-06"><p><strong>Đề bài:</strong> Hộp 4 bi đỏ, 2 bi xanh đồng kích thước. A là lần đầu đỏ, B là lần sau xanh. So sánh lấy có hoàn lại và không hoàn lại.</p><p><strong>Phân tích:</strong> So màu còn trong hộp dựa theo lượt đầu.</p><p><strong>Lời giải:</strong> Hoàn lại: dù lượt đầu đỏ hay xanh, cơ hội xanh lượt hai đều 2/6=1/3; độc lập. Không hoàn lại: đầu đỏ ⇒ 2/5, đầu xanh ⇒ 1/5; phụ thuộc.</p><p><strong>Kiểm lại:</strong> Kết luận dựa vào sự thay đổi thành phần, không dựa vào việc hai lượt có tên khác nhau.</p></div>
 
-**Tại sao cách làm đúng:** Chỉ một kết quả được rút nên không thể vừa ra 2 vừa ra 5. Hai biến cố xác suất dương và xung khắc thì không độc lập.
+=== "Lỗi thường gặp"
 
-#### EX-G11-CHVIII-B28-04: Cùng ngửa nhưng hai phép thử
+    <span data-thpt-help-id="HELP-G11-CHVIII-B28-01" hidden></span>
+    
+    ??? tip "4.1. Hiểu hoặc là chỉ một"
+    
+        Hợp vẫn gồm miền giao; xem mục 2.1. [Luyện lại câu B28-C03](../luyen-tap/?item=THPT-G11-CHVIII-B28-C03)
 
-**Nhiệm vụ:** Hai đồng xu độc lập cân bằng: A="xu đầu ngửa", B="xu sau ngửa".
+    <span data-thpt-help-id="HELP-G11-CHVIII-B28-02" hidden></span>
+    
+    ??? tip "4.2. Nhầm giao với hợp"
+    
+        Giao đòi thỏa cả hai điều kiện; xem mục 2.2. [Luyện lại câu B28-C04](../luyen-tap/?item=THPT-G11-CHVIII-B28-C04)
 
-**Đáp án và lời giải:** Ω={NN,NS,SN,SS}; P(A)=P(B)=1/2, P(A∩B)=1/4=(1/2)^2.
+    <span data-thpt-help-id="HELP-G11-CHVIII-B28-03" hidden></span>
+    
+    ??? tip "4.3. Nhầm xung khắc với độc lập"
+    
+        Giao rỗng và xác suất hai biến cố dương làm thay đổi cơ hội; xem mục 2.3. [Luyện lại câu B28-P04](../luyen-tap/?item=THPT-G11-CHVIII-B28-P04)
 
-**Tại sao cách làm đúng:** Cần giả thiết hai lần thử công bằng, độc lập. Cả hai cùng xảy ra vẫn có thể độc lập.
+    [Core và Luyện tập Bài 28](luyen-tap.md) · [Tự luận Chương VIII](../../../thu-vien/tu-luan-g11-chuong-viii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
-#### EX-G11-CHVIII-B28-05: Phân biệt hai tầng mô hình
-
-**Nhiệm vụ:** Bốc số 1–4 đều, A="số lớn hơn 2", B="số lẻ".
-
-**Đáp án và lời giải:** A={3,4}, B={1,3}; A∩B={3}, A∪B={1,3,4}.
-
-**Tại sao cách làm đúng:** Kết quả đơn lẻ số 3 nằm cả hai biến cố; không được chỉ dùng chữ "hoặc" như loại trừ.
-
-## 3. Tự khắc phục lỗi
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVIII-B28-01"><summary><strong>Chẩn đoán lỗi:</strong> Nhầm hoặc với loại trừ.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Nhầm hoặc với loại trừ.</li><li><strong>Nhắc khái niệm/điều kiện:</strong> A∪B bao gồm cả giao, một kết quả viết một lần.</li><li><strong>Giải thích vì sao:</strong> Đọc lại phần D1 của B28, vẽ tập hợp/nhánh xác suất tương ứng, rồi nói lại bằng lời trước khi thay số.</li><li><strong>Tự thử có dẫn:</strong> A={a,c},B={b,c}; hợp chứa c không? <strong>Đối chiếu sau thử:</strong> Có; {a,b,c}.</li><li><strong>Quay về câu nguồn:</strong> Tự làm lại <code>THPT-G11-CHVIII-B28-C03</code> từ đầu, ghi lý do chọn công thức. Không tính lời giải đã xem là bằng chứng Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C03">Quay lại câu gốc THPT-G11-CHVIII-B28-C03</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVIII-B28-02"><summary><strong>Chẩn đoán lỗi:</strong> Viết giao bằng tất cả phần tử xuất hiện.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Viết giao bằng tất cả phần tử xuất hiện.</li><li><strong>Nhắc khái niệm/điều kiện:</strong> Giao chỉ chứa phần tử thuộc hai biến cố đồng thời.</li><li><strong>Giải thích vì sao:</strong> Đọc lại phần D1 của B28, vẽ tập hợp/nhánh xác suất tương ứng, rồi nói lại bằng lời trước khi thay số.</li><li><strong>Tự thử có dẫn:</strong> A={1,3},B={2,3}; giao là? <strong>Đối chiếu sau thử:</strong> {3}.</li><li><strong>Quay về câu nguồn:</strong> Tự làm lại <code>THPT-G11-CHVIII-B28-C04</code> từ đầu, ghi lý do chọn công thức. Không tính lời giải đã xem là bằng chứng Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C04">Quay lại câu gốc THPT-G11-CHVIII-B28-C04</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVIII-B28-03"><summary><strong>Chẩn đoán lỗi:</strong> Đánh đồng xung khắc và độc lập.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Đánh đồng xung khắc và độc lập.</li><li><strong>Nhắc khái niệm/điều kiện:</strong> Nếu P(A),P(B)&gt;0 và A,B xung khắc thì không độc lập.</li><li><strong>Giải thích vì sao:</strong> Đọc lại phần D1 của B28, vẽ tập hợp/nhánh xác suất tương ứng, rồi nói lại bằng lời trước khi thay số.</li><li><strong>Tự thử có dẫn:</strong> Với P(A)=1/2,P(B)=1/4 và giao rỗng, tích là? <strong>Đối chiếu sau thử:</strong> 1/8&gt;0, khác giao 0.</li><li><strong>Quay về câu nguồn:</strong> Tự làm lại <code>THPT-G11-CHVIII-B28-P04</code> từ đầu, ghi lý do chọn công thức. Không tính lời giải đã xem là bằng chứng Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-P04">Quay lại câu gốc THPT-G11-CHVIII-B28-P04</a></p></details>
-
-## 4. Tiếp tục
-
-[Core/Luyện tập Bài 28](luyen-tap.md) · [Tự luận Chương VIII](../../../thu-vien/tu-luan-g11-chuong-viii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+*Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 28, trang in 66–71.*
