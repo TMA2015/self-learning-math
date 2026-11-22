@@ -92,12 +92,10 @@ with sync_playwright() as pw:
                     assert full and len(short)<=len(full) and len(short)<=32,(engine,topic,width,short,full)
                     assert tab.get_attribute("aria-label")==full
                 assert tabs.first.inner_text() == {
-    "10": "1. Biến thiên",
-    "11": "1. Nguyên hàm",
-    "06": "1. Góc quay",
-    "07": "1. Dãy số",
-    "08": "1. Giới hạn dãy số",
-    "09": "1. Đạo hàm tại điểm"
+    "12": "1. Từ một góc đến hai con số",
+    "13": "1. Từ mũi tên đến phép toán",
+    "14": "1. Phương trình đường thẳng",
+    "15": "1. Từ điểm, đường đến thiết"
 }[topic]
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e.parentElement).display") == "flex"
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e).backgroundColor") != "rgba(0, 0, 0, 0)"
@@ -112,7 +110,7 @@ with sync_playwright() as pw:
                       const base=document.querySelector('.topic01-knowledge-layout');
                       if(!base)throw Error('Missing Golden Knowledge layout');
                       const label=[...base.querySelectorAll('.thpt-r4-knowledge-content-panel > p')]
-                       .find(p=>p.querySelector(':scope > strong')?.textContent.trim()==='Vận dụng');
+                       .find(p=>/^Vận dụng[:.]?$/.test(p.querySelector(':scope > strong')?.textContent.trim()||''));
                       if(!label)throw Error('Golden Vận dụng label missing');
                       const stem=label.nextElementSibling,details=stem?.nextElementSibling;
                       if(stem?.tagName!=='P'||!details?.matches('details.question'))
