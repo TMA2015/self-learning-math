@@ -28,7 +28,7 @@
 
         **Dấu hiệu:** Em gọi đường nằm trong mặt là đường song song mặt.
 
-        **Tự sửa:** Đếm **số điểm chung**: vô số → nằm trong; một → cắt; không → song song. Ôn mục 2.1, luyện Core B12-C01 và Practice B12-P02 tại [Bài 12 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Đếm **số điểm chung**: vô số → nằm trong; một → cắt; không → song song. Ôn mục 2.1, luyện Core B12-C01 và Practice B12-P02 tại <a href="../luyen-tap/">Bài 12 – Luyện tập</a>.
 
     ### 1.2. Song song một đường trong mặt chưa đủ để song song cả mặt
 
@@ -48,7 +48,7 @@
 
         **Dấu hiệu:** Em chỉ nêu một cặp đường song song rồi kết luận ngay song song mặt.
 
-        **Tự sửa:** Viết cùng lúc **đường b trong mặt, a∥b, a không nằm trong mặt**. Ôn mục 2.2 và luyện Core B12-C02, Practice B12-P01 tại [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Viết cùng lúc **đường b trong mặt, a∥b, a không nằm trong mặt**. Ôn mục 2.2 và luyện Core B12-C02, Practice B12-P01 tại <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     ### 1.3. Đường trung bình tạo được chứng minh đường song song mặt
 
@@ -68,7 +68,7 @@
 
         **Dấu hiệu:** Em chỉ viết MN∥BC, BC⊂đáy rồi ngừng.
 
-        **Tự sửa:** Chỉ rõ **ít nhất một điểm của MN ngoài đáy**. Ôn mục 2.2 và giải Practice B12-P01 ở [Luyện tập Bài 12](../luyen-tap/).
+        **Tự sửa:** Chỉ rõ **ít nhất một điểm của MN ngoài đáy**. Ôn mục 2.2 và giải Practice B12-P01 ở <a href="../luyen-tap/">Luyện tập Bài 12</a>.
 
     ### 1.4. Mặt phẳng phụ biến bài toán đường–mặt thành bài toán hai đường
 
@@ -88,7 +88,7 @@
 
         **Dấu hiệu:** Em nêu e=SA do SA vẽ gần đường MN, hoặc quên kiểm mặt phụ Q có chứa MN.
 
-        **Tự sửa:** Trước hết tìm **hai điểm chung của Q và P**, rồi mới dùng định lý song song. Ôn mục 2.3 và luyện Practice B12-P03 trong [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Trước hết tìm **hai điểm chung của Q và P**, rồi mới dùng định lý song song. Ôn mục 2.3 và luyện Practice B12-P03 trong <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     ### 1.5. Ứng dụng mặt cắt hình chóp: chọn đúng mặt chứa đoạn
 
@@ -108,7 +108,7 @@
 
         **Dấu hiệu:** Em nói UV nằm trong mặt đáy vì UV cùng phương CD.
 
-        **Tự sửa:** Phân biệt **cùng phương với một đường trong đáy** và **thuộc đáy**. Ôn mục 2.2, hình ở mục 2.3 và làm Practice B12-P04 ở [Bài 12 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Phân biệt **cùng phương với một đường trong đáy** và **thuộc đáy**. Ôn mục 2.2, hình ở mục 2.3 và làm Practice B12-P04 ở <a href="../luyen-tap/">Bài 12 – Luyện tập</a>.
 
 === "Kiến thức SGK"
 
@@ -185,7 +185,7 @@
 
         **Vì sao sai:** Song song mặt theo SGK đòi **không có điểm chung**, còn đường nằm trong mặt có vô số điểm chung.
 
-        **Tự sửa:** Ôn mục 2.1 và Ví dụ 3.3; luyện Core B12-C01 và Practice B12-P02 tại [Luyện tập Bài 12](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.1 và Ví dụ 3.3; luyện Core B12-C01 và Practice B12-P02 tại <a href="../luyen-tap/">Luyện tập Bài 12</a>.
 
     <span data-thpt-help-id="HELP-G11-B12-02" hidden></span>
 
@@ -195,7 +195,7 @@
 
         **Vì sao sai:** Nếu a cũng nằm trong P, kết luận sai.
 
-        **Tự sửa:** Ôn mục 2.2, nêu điểm ngoài mặt, rồi luyện Core B12-C02, Practice B12-P01 ở [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2, nêu điểm ngoài mặt, rồi luyện Core B12-C02, Practice B12-P01 ở <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B12-03" hidden></span>
 
@@ -217,6 +217,6 @@
 
         **Tự sửa:** Bài 13 sẽ có dấu hiệu **hai đường cắt nhau**; hiện hãy ghi đúng kết luận về đường UV. Ôn Ví dụ 3.5, luyện Practice B12-P04.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương IV](../../../../thu-vien/tu-luan-g11-chuong-iv/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-iv/">Tự luận Chương IV</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 12 (trang in 84–87).</p>
