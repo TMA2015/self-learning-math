@@ -125,3 +125,10 @@ body :is([data-topic-w1-module-tab],[data-topic-w1-subtab]){
 @media(max-width:640px){
  body :is([data-topic-w1-module-tab],[data-topic-w1-subtab]){font-size:14px!important;padding:8px 10px!important}
 }
+
+/* Exclusive W1 Knowledge disclosure override; public Practice and SGK
+ * remain untouched, including their independent action contracts. */
+body [data-topic-w1-knowledge] details.question{background-color:#f8faff!important;border-color:#d9e4f4!important;color:#243753!important}
+body [data-topic-w1-knowledge] details.question>summary{background-color:transparent!important;color:#263e73!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question{background-color:#202e48!important;border-color:#465978!important;color:#dce6fc!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question>summary{color:#e2ebff!important}
