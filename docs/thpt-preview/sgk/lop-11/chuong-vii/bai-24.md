@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Chiếu một điểm nằm sẵn trong mặt sang điểm khác.
 
-        **Tự sửa:** Dựng đường qua chính điểm theo phương pháp tuyến, lấy giao duy nhất. [Luyện lại câu B24-C01](../luyen-tap/?item=THPT-G11-CHVII-B24-C01).
+        **Tự sửa:** Dựng đường qua chính điểm theo phương pháp tuyến, lấy giao duy nhất. <a href="../luyen-tap/?item=THPT-G11-CHVII-B24-C01">Luyện lại câu B24-C01</a>.
 
     ### 1.2. Hình chiếu đoạn, đường và tam giác có thể suy biến
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Luôn vẽ ảnh đoạn/tam giác vẫn là đoạn/tam giác không suy biến.
 
-        **Tự sửa:** Chiếu từng đỉnh; kiểm các ảnh có trùng hoặc thẳng hàng không. [Luyện lại câu B24-C02](../luyen-tap/?item=THPT-G11-CHVII-B24-C02).
+        **Tự sửa:** Chiếu từng đỉnh; kiểm các ảnh có trùng hoặc thẳng hàng không. <a href="../luyen-tap/?item=THPT-G11-CHVII-B24-C02">Luyện lại câu B24-C02</a>.
 
     ### 1.3. Ba đường vuông góc: hình chiếu giúp chứng minh
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** Chọn sai hình chiếu của SB là SA.
 
-        **Tự sửa:** Chiếu hai đầu S,B vào đáy; dùng đường trong mặt vuông góc ảnh. [Luyện lại câu B24-C03](../luyen-tap/?item=THPT-G11-CHVII-B24-C03).
+        **Tự sửa:** Chiếu hai đầu S,B vào đáy; dùng đường trong mặt vuông góc ảnh. <a href="../luyen-tap/?item=THPT-G11-CHVII-B24-C03">Luyện lại câu B24-C03</a>.
 
     ### 1.4. Góc đường–mặt là góc với hình chiếu
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Lấy góc với đường cao.
 
-        **Tự sửa:** Đánh dấu góc tại M, dùng tổng hai góc nhọn trong tam giác vuông. [Luyện lại câu B24-C04](../luyen-tap/?item=THPT-G11-CHVII-B24-C04).
+        **Tự sửa:** Đánh dấu góc tại M, dùng tổng hai góc nhọn trong tam giác vuông. <a href="../luyen-tap/?item=THPT-G11-CHVII-B24-C04">Luyện lại câu B24-C04</a>.
 
     ### 1.5. Độ dốc khác chiều dài dốc
 
@@ -106,7 +106,7 @@
 
         **Dấu hiệu:** Đổi phần trăm độ dốc thành số độ.
 
-        **Tự sửa:** Viết tang trước rồi dùng phím arctan ở chế độ DEG. [Luyện lại câu B24-C05](../luyen-tap/?item=THPT-G11-CHVII-B24-C05).
+        **Tự sửa:** Viết tang trước rồi dùng phím arctan ở chế độ DEG. <a href="../luyen-tap/?item=THPT-G11-CHVII-B24-C05">Luyện lại câu B24-C05</a>.
 
 === "Kiến thức SGK"
 
@@ -140,7 +140,7 @@
 
     ### 3.1. Hình chiếu một tam giác không suy biến
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B24-R02-01"><p><strong>Đề bài:</strong> Cho lăng trụ \(ABC.A'B'C'\) với \(AA'\perp(ABC)\). Tìm hình chiếu của tam giác \(A'BC'\) xuống đáy (ABC).</p><p><strong>Phân tích:</strong> Các cạnh bên song song AA', nên đều vuông góc đáy. Chiếu từng đỉnh theo các phương ấy.</p><p><strong>Lời giải:</strong> A' chiếu về A, C' về C và B giữ nguyên. Phép chiếu song song đưa các đoạn nối và phần tam giác về tam giác ABC (ba ảnh không thẳng hàng).</p><p><strong>Kiểm lại:</strong> Không nhầm A'B với cạnh bên; ảnh của A'B là AB.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B24-R02-01"><p><strong>Đề bài:</strong> Cho lăng trụ \(ABC.A'B'C'\) với \(AA'\perp(ABC)\). Tìm hình chiếu của tam giác \(A'BC'\) xuống đáy (ABC).</p><p><strong>Phân tích:</strong> Các cạnh bên song song AA', nên đều vuông góc đáy. Chiếu từng đỉnh theo các phương ấy.</p><p><strong>Lời giải:</strong> A' chiếu về A, C' về C và B giữ nguyên. Phép chiếu **vuông góc** lên (ABC) lần lượt đưa ba đỉnh về A, B, C; ảnh của tam giác A'BC' là tam giác ABC (không suy biến).</p><p><strong>Kiểm lại:</strong> Không nhầm A'B với cạnh bên; ảnh của A'B là AB.</p></div>
 
     ### 3.2. Chứng minh ba đường vuông góc
 
@@ -170,7 +170,7 @@
 
         **Vì sao sai:** Góc đường–mặt đo với hình chiếu trên mặt (hoặc quy ước 90°).
 
-        **Tự sửa:** Ôn 2.2 và ví dụ 3.3. [Luyện lại câu B24-C04](../luyen-tap/?item=THPT-G11-CHVII-B24-C04).
+        **Tự sửa:** Ôn 2.2 và ví dụ 3.3. <a href="../luyen-tap/?item=THPT-G11-CHVII-B24-C04">Luyện lại câu B24-C04</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVII-B24-02" hidden></span>
 
@@ -178,7 +178,7 @@
 
         **Vì sao sai:** Đường a ở trong mặt, b' là hình chiếu của đường b không vuông góc mặt.
 
-        **Tự sửa:** Chiếu hai điểm của b, rồi dùng định lí ở 2.1. [Luyện lại câu B24-C03](../luyen-tap/?item=THPT-G11-CHVII-B24-C03).
+        **Tự sửa:** Chiếu hai điểm của b, rồi dùng định lí ở 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVII-B24-C03">Luyện lại câu B24-C03</a>.
 
     <span data-thpt-help-id="HELP-G11-B24-03" hidden></span>
 
@@ -186,7 +186,7 @@
 
         **Vì sao sai:** Đường theo phương pháp tuyến co thành một điểm.
 
-        **Tự sửa:** Xem hình chiếu điểm và ví dụ 3.6. [Luyện lại câu B24-C02](../luyen-tap/?item=THPT-G11-CHVII-B24-C02).
+        **Tự sửa:** Xem hình chiếu điểm và ví dụ 3.6. <a href="../luyen-tap/?item=THPT-G11-CHVII-B24-C02">Luyện lại câu B24-C02</a>.
 
     <span data-thpt-help-id="HELP-G11-B24-04" hidden></span>
 
@@ -194,8 +194,8 @@
 
         **Vì sao sai:** Độ dốc bằng tang, phải tính góc ngược với đơn vị độ.
 
-        **Tự sửa:** Ôn 3.5, kiểm cao/ngang. [Luyện lại câu B24-C05](../luyen-tap/?item=THPT-G11-CHVII-B24-C05).
+        **Tự sửa:** Ôn 3.5, kiểm cao/ngang. <a href="../luyen-tap/?item=THPT-G11-CHVII-B24-C05">Luyện lại câu B24-C05</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VII](../../../../thu-vien/tu-luan-g11-chuong-vii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vii/">Tự luận Chương VII</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 24 (trang in 38–43).</p>
