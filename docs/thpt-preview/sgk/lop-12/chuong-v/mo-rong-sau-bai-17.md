@@ -29,19 +29,23 @@
 <!-- FIRST_TRY_ID: B14-T02 -->
 ### Tự thử
 
-Tâm phát sóng C(0,0,3), R=5m; mặt sàn z=0. Tính bán kính thiết diện.
+Tâm phát sóng C(0,0,5), R=13 m; mặt sàn z=0. Tính bán kính vùng phủ trên sàn trong mô hình khối cầu.
 
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
+<span data-ped-first-try="1" data-outcome-id="G12-CHV-B14-O07" data-thpt-first-try-id="THPT-G12-B14-TRY-OPTIONAL02" hidden></span>
 
-**Đối chiếu:** 4m.
+??? question "Đối chiếu"
 
-**Vì sao:** Khoảng cách từ tâm tới mặt phẳng và hệ thức Pythagoras trong tam giác vuông..
+    $h=5<R=13$. Đường tròn giao có bán kính $r=\sqrt{13^2-5^2}=12$ m. Vùng phủ khối cầu trên sàn là đĩa tròn tương ứng.
 
-</details>
+<span data-thpt-help-id="HELP-G12-B14-TRY-OPTIONAL02" hidden></span>
+
+??? tip "Kiểm lỗi"
+
+    Hạ hình chiếu H của tâm lên sàn, dùng tam giác IHX vuông tại H. [Ôn câu nền tảng mở rộng](../luyen-tap/#thpt-g12-b14-c07) rồi [luyện câu khác](../luyen-tap/#thpt-g12-b14-p07). Không dùng R trực tiếp cho bán kính thiết diện. Đây không phải nội dung Core bắt buộc B14.
 
 ## 3. Đọc hình minh họa
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHV-B14-R00.png" alt="Hình minh họa gốc về Phương trình mặt phẳng" /><figcaption>Hình 1: Phương trình mặt phẳng. Đọc nhãn và quan hệ hình học; không suy số đo trong không gian từ tỷ lệ hình phẳng.</figcaption></figure>
+<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHV-B17-SECTION-R02.svg" alt="Tam giác vuông IHX trong mặt cắt qua tâm I; IH=h, IX=R, HX=r" /><figcaption>Hạ IH vuông góc mặt phẳng. Từ tam giác IHX, r²+h²=R². Hình không theo dữ kiện câu Tự thử.</figcaption></figure>
 
 ## 4. Core/Luyện tập dành riêng cho phần mở rộng
 
