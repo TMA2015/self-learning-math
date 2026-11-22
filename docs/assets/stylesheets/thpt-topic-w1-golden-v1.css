@@ -176,3 +176,20 @@ body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-l
 body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary{
  font-size:.88rem;font-weight:700;line-height:1.45;padding:.7rem .85rem .7rem 2.15rem
 }
+
+/* Computed Chromium/WebKit comparison against owner-approved CĐ01 Golden.
+   W1 inherits higher-specificity Topic/SGK declarations (400-weight tab,
+   12.8px summary); lock the actual values on W1 only, never on SGK or CĐ01. */
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs :is([data-topic-w1-module-tab],[data-topic-w1-subtab]){
+ font-weight:700!important;letter-spacing:normal!important
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel :is(p,li){
+ line-height:1.79!important
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question{
+ margin:.7rem 0 1rem!important;border-radius:.62rem!important
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary{
+ font-size:.88rem!important;line-height:1.45!important;
+ padding:.7rem .85rem .7rem 2.15rem!important
+}
