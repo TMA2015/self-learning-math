@@ -70,12 +70,15 @@ with sync_playwright() as pw:
                 tabs = page.locator("[data-topic-w1-module-tab]")
                 expect(tabs).to_have_count(groups)
                 expect(page.locator("[data-topic-w1-subtab]")).to_have_count(outcomes)
+                assert tabs.first.evaluate("(e)=>getComputedStyle(e.parentElement).display") == "flex"
+                assert tabs.first.evaluate("(e)=>getComputedStyle(e).backgroundColor") != "rgba(0, 0, 0, 0)"
                 assert page.locator("article.md-typeset").evaluate(
                     "(e)=>parseFloat(getComputedStyle(e).fontSize)"
                 ) == page.evaluate("parseFloat(getComputedStyle(document.documentElement).fontSize)*.8")
                 page.locator("body").evaluate("(e)=>e.setAttribute('data-md-color-scheme','default')")
                 roles = page.locator("[data-topic-w1-callout]")
                 assert roles.count() >= outcomes, (topic, "missing 3+1 boxes", roles.count())
+                assert roles.evaluate_all("""els=>els.every(el=>[...el.children].filter(p=>/^(ĐỊNH NGHĨA|KHÁI NIỆM|CÔNG THỨC|HỆ THỨC|TÍNH CHẤT|ĐỊNH LÝ|QUY TẮC|PHƯƠNG PHÁP|KIẾN THỨC CẦN GHI NHỚ|GHI NHỚ|LƯU Ý)/.test(p.querySelector(":scope > strong")?.textContent||"")).length===1)"""), (topic,"merged formal cards")
                 for role, color in PALETTE.items():
                     elems = page.locator('[data-topic-w1-callout="' + role + '"]')
                     for e in elems.all():
@@ -107,6 +110,7 @@ with sync_playwright() as pw:
                         width_info = page.evaluate("({scroll:document.documentElement.scrollWidth,inner:innerWidth})")
                         assert width_info["scroll"] <= width_info["inner"] + 1, (engine, topic, width, width_info)
                 assert disclosure_found, (engine, topic, "knowledge must include a voluntary solution")
+                assert knowledge.locator(".topic-w1-application").count() > 0
                 # All original SVG source figures must be available in generated THPT site.
                 imgs = page.locator("[data-topic-w1-knowledge] img")
                 expect(imgs).to_have_count(svg_count)
@@ -138,6 +142,7 @@ with sync_playwright() as pw:
                         chooser.nth(j).click()
                         card = modal.locator("[data-thpt-canonical-item]")
                         assert card.get_attribute("data-thpt-canonical-item"), (topic,i,j,"item_id missing")
+                        expect(card.locator(":scope > .topic-w1-stem-label strong")).to_have_text("Đề bài")
                         assert modal.locator(".thpt-r4-formative-submit").count() == 0, "duplicate answer action"
                         details = modal.locator(".thpt-r4-formative-actions details")
                         expect(details).to_have_count(1)
@@ -160,6 +165,7 @@ with sync_playwright() as pw:
                     body = selfcheck.locator(".g10sc-body")
                     expect(body.locator("h3")).to_have_text("Câu "+str(j+1))
                     assert body.locator("input,textarea").count() == 0
+                    expect(body.locator(":scope > .topic-w1-stem-label strong")).to_have_text("Đề bài")
                     solution = body.locator("[data-topic-w1-solution]")
                     expect(solution).to_be_hidden()
                     body.get_by_role("button",name="Đối chiếu",exact=True).click()
