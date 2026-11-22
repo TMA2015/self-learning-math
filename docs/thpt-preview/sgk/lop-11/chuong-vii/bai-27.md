@@ -167,7 +167,7 @@
 
     ### 3.5. Chóp đều từ cạnh đáy và cạnh bên
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B27-R02-05"><p><strong>Đề bài:</strong> Chóp đều S.ABCD có đáy vuông cạnh \(8\sqrt2\) cm, cạnh bên SA=17 cm. Tính thể tích.</p><p><strong>Phân tích:</strong> Tìm bán kính ngoại tiếp đáy và chiều cao từ tam giác SOA.</p><p><strong>Lời giải:</strong> \(OA=(8\sqrt2)\sqrt2/2=8\) cm, \(SO=\sqrt{17^2-8^2}=15\) cm. \(S_{\text{đáy}}=(8\sqrt2)^2=128\) cm². \(V=128\cdot15/3=640\) cm³.</p><p><strong>Kiểm lại:</strong> h=15 <17, đúng tam giác vuông; đáy phải dùng diện tích 128.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B27-R02-05"><p><strong>Đề bài:</strong> Chóp đều S.ABCD có đáy vuông cạnh \(8\sqrt2\) cm, cạnh bên SA=17 cm. Tính thể tích.</p><p><strong>Phân tích:</strong> Tìm bán kính ngoại tiếp đáy và chiều cao từ tam giác SOA.</p><p><strong>Lời giải:</strong> \(OA=(8\sqrt2)\sqrt2/2=8\) cm, \(SO=\sqrt{17^2-8^2}=15\) cm. \(S_{\text{đáy}}=(8\sqrt2)^2=128\) cm². \(V=128\cdot15/3=640\) cm³.</p><p><strong>Kiểm lại:</strong> Chiều cao 15 cm nhỏ hơn cạnh bên 17 cm, đúng tam giác vuông; đáy phải dùng diện tích 128.</p></div>
 
     ### 3.6. Chóp cụt đều khi biết hai diện tích
 
