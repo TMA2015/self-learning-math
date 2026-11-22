@@ -23,3 +23,28 @@ html.topic-w1-pending .md-content__inner > p:has(> span[data-topic-w1-source-sta
 .topic-w1-selfcheck .g10sc-body{max-width:100%;overflow-wrap:break-word}
 .topic-w1-selfcheck .g10sc-body mjx-container{max-width:100%;overflow-x:auto}
 @media(max-width:640px){.topic-w1-practice-hub .topic01-golden-grid{grid-template-columns:1fr}}
+
+/* Scoped 3+1 token lock for W1. Values copied from approved SGK/CĐ01 Golden,
+ * not a new palette. Topic01 stylesheet's generic recap background must never
+ * override semantic concept/rule roles on CĐ02–05. */
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="concept"]{
+ background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="rule"]{
+ background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="recap"]{
+ background:#fff3d5;border-color:#eacb7c;border-left-color:#c49a37;color:#27344f
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="formula"]{
+ background:transparent;border:1px solid var(--slm-g10-line);color:inherit
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="concept"]{
+ background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="rule"]{
+ background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="recap"]{
+ background:#4a3a25;border-color:#9e7d39;border-left-color:#d6aa49;color:#fff3d5
+}
