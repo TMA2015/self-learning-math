@@ -211,6 +211,10 @@ nav:
               - 31 câu trắc nghiệm/tự luận · Final Submit: thpt-preview/sgk/lop-12/on-tap-cuoi-nam/tu-kiem-tra.md
   - Học theo chuyên đề:
       - Tổng quan chuyên đề: thpt-preview/chuyen-de/index.md
+      - CĐ01 · Mệnh đề và tập hợp:
+          - Kiến thức: thpt-preview/chuyen-de/cd01/kien-thuc.md
+          - Luyện tập: thpt-preview/chuyen-de/cd01/luyen-tap.md
+          - Tự kiểm tra: thpt-preview/chuyen-de/cd01/tu-kiem-tra.md
       - Hàm số và đồ thị:
           - Kiến thức: thpt-preview/chuyen-de/ham-so/kien-thuc.md
           - Luyện tập: thpt-preview/chuyen-de/ham-so/luyen-tap.md
@@ -264,6 +268,7 @@ extra_css:
   - assets/stylesheets/math-knowledge-r21-final-polish.css
   - assets/stylesheets/math-knowledge-r30-consistency.css
   - assets/stylesheets/math-lab-library-v1.css
+  - assets/stylesheets/thpt-topic01-release-v1.css
   - assets/stylesheets/thpt-r4-preview.css
   - assets/stylesheets/thpt-g11-supplement-p99-p109-r00.css
   - assets/stylesheets/thpt-g12-golden-formative-modal-v1.css
@@ -339,6 +344,7 @@ extra_javascript:
   - assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js
   - assets/javascripts/thpt-golden-runtime-v1.js
   - assets/javascripts/thpt-r4-preview.js
+  - assets/javascripts/thpt-topic01-release-tabs-v1.js
   - assets/javascripts/math-lab-library-v1.js
   - assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js
   - assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js

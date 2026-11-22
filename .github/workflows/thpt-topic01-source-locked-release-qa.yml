@@ -1,0 +1,48 @@
+name: THPT Topic01 source-locked release QA (NO DEPLOY)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/thpt-preview/chuyen-de/cd01/**'
+      - 'docs/thpt-preview/chuyen-de/index.md'
+      - 'docs/assets/visuals/THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg'
+      - 'docs/assets/visuals/THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg'
+      - 'docs/assets/stylesheets/thpt-topic01-release-v1.css'
+      - 'docs/assets/javascripts/thpt-topic01-release-tabs-v1.js'
+      - 'mkdocs.yml'
+      - 'mkdocs.thpt-preview.yml'
+      - 'scripts/topic01-release-intake-manifest.tsv'
+      - 'scripts/test-thpt-topic01-release-intake.cjs'
+      - 'scripts/test-thpt-topic01-release-browser.py'
+      - '.github/workflows/thpt-topic01-source-locked-release-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  topic01-qa:
+    name: CĐ01 source exact, MkDocs build, two-level tabs, public selfcheck safety
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Static source SHA and canonical three-page fidelity
+        run: |
+          node --check docs/assets/javascripts/thpt-topic01-release-tabs-v1.js
+          node --check scripts/test-thpt-topic01-release-intake.cjs
+          node scripts/test-thpt-topic01-release-intake.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build both site configs and prepare browser QA
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+      - name: Verify built MathJax/SVG pages and source-route coverage
+        run: node scripts/test-thpt-topic01-release-intake.cjs --built
+      - name: Browser AP/R smoke for CĐ01, no deploy
+        run: python scripts/test-thpt-topic01-release-browser.py
