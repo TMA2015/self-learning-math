@@ -9,6 +9,12 @@ if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
 const sizes={"02":{outcomes:16,items:38,replay:16,groups:4},"03":{outcomes:12,items:31,replay:12,groups:4},"04":{outcomes:18,items:75,replay:18,groups:5},"05":{outcomes:17,items:38,replay:17,groups:4}};
 const expected=sizes[topic];
+const topicTitles={
+ "02":"Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm",
+ "03":"Phương trình đại số và kỹ thuật chuyển đổi dạng",
+ "04":"Lũy thừa, hàm mũ và lôgarit",
+ "05":"Hàm số, đồ thị và phép biến đổi"
+};
 if(!expected||!["kien-thuc","luyen-tap","tu-kiem-tra"].includes(part))return;
 const article=config.closest(".md-content__inner");
 const start=article?.querySelector("[data-topic-w1-source-start]"),end=article?.querySelector("[data-topic-w1-source-end]");
@@ -69,20 +75,9 @@ function styleKnowledge(root){
   details.replaceChildren(summary,...content.childNodes);
   details.addEventListener("toggle",()=>{if(details.open)renderMath(details)});
  }
- // Form one coherent Vận dụng card with its own voluntary Đối chiếu.
- for(const p of [...root.querySelectorAll("p")]){
-  if(p.querySelector(":scope > strong")?.textContent.trim().replace(/[.]$/,"")!=="Vận dụng")continue;
-  const frame=create("section","thpt-r4-reviewed-formative-card topic-w1-application");
-  p.before(frame);frame.append(p);
-  let node=frame.nextElementSibling;
-  while(node&&!node.matches("h2,h3,h4,.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula")){
-   const next=node.nextElementSibling;
-   if(node.matches("p")&&/^(Ví dụ|Kiểm lỗi|Kiểm lại|Lời giải)/.test(node.textContent.trim()))break;
-   frame.append(node);
-   if(node.matches("details"))break;
-   node=next;
-  }
- }
+ // SGK/CĐ01 Golden: Vận dụng label + stem are ordinary sibling paragraphs;
+ // ONLY its voluntary Đối chiếu uses the existing blue-neutral details.question.
+ // Do not wrap them in a separate formative card or rewrite learner text.
  for(const p of root.querySelectorAll("p")){
   if(p.querySelector(":scope > strong")?.textContent.trim()!=="Lời giải.")continue;
   const box=create("div","thpt-g10-example-solution");p.before(box);box.append(p);let n=box.nextElementSibling;
@@ -97,6 +92,12 @@ function initKnowledge(){
  if(headings.length!==expected.groups)throw Error("Knowledge group count mismatch");
  const outcomes=elements.filter(x=>x.tagName==="H3"&&/^\d+\.\d+\./.test(x.textContent));
  if(outcomes.length!==expected.outcomes)throw Error("Knowledge outcome count mismatch actual="+outcomes.length+" expected="+expected.outcomes+" directH3="+elements.filter(x=>x.tagName==="H3").map(x=>x.textContent.slice(0,30)).join("|")+" nestedH3="+[...article.querySelectorAll("h3")].filter(x=>/^\\d+\\.\\d+\\./.test(x.textContent)).map(x=>x.textContent.slice(0,12)+":"+x.parentElement?.tagName+":"+x.parentElement?.className).join("|")+" missing25="+(()=>{let h=article.innerHTML;let i=h.indexOf("2.5. Giải bất phương trình bậc hai");return i<0?"MISSING":h.slice(i-200,i+280)})()+" missing26="+(()=>{let h=article.innerHTML;let i=h.indexOf("2.6. Bất phương trình đúng với mọi x");return i<0?"MISSING":h.slice(i-200,i+250)})());
+ // Restore the reviewed topic title from the published topic index as display-only
+ // chrome, before the existing introduction; source-locked learner Markdown untouched.
+ const intro=config.querySelector(".topic-w1-source-intro");
+ if(!intro||!topicTitles[topic])throw Error("Approved topic title/intro unavailable");
+ const title=create("h1","topic-w1-topic-heading","Chuyên đề "+topic+" · "+topicTitles[topic]);
+ config.after(title,intro);
  article.classList.add("thpt-g10-knowledge-ap1","thpt-g10-first-six-golden","topic01-golden-knowledge","topic-w1-knowledge");
  document.body.classList.add("thpt-r4-topic-knowledge");
  const layout=create("section","topic01-knowledge-layout"),rails=create("nav","thpt-r4-knowledge-tabs thpt-r4-knowledge-modules");
