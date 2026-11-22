@@ -111,7 +111,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-recap-card" role="note"><strong>Kiến thức cần nhớ — Bốn cách cho một dãy số</strong><p><strong>(1) Liệt kê đầy đủ các số hạng:</strong> chỉ thuận tiện cho dãy hữu hạn có ít số hạng; vài số đầu kèm dấu ba chấm <strong>không tự xác định duy nhất</strong> dãy vô hạn.</p><p><strong>(2) Công thức số hạng tổng quát:</strong> \(u_n=f(n)\), tính trực tiếp số hạng theo chỉ số \(n\).</p><p><strong>(3) Phương pháp mô tả:</strong> dùng một tính chất/quy luật bằng lời để xác định từng số hạng.</p><p><strong>(4) Phương pháp truy hồi:</strong> nêu đủ một hay nhiều giá trị đầu và hệ thức tính số hạng sau từ số hạng trước.</p></div>
 
-    **Ví dụ cùng một dãy:** \(5,10,15,\ldots\) có thể viết \(u_n=5n\) (\(n\ge1\)), mô tả “các bội nguyên dương của \(5\) theo thứ tự tăng”, hoặc cho bằng \(u_1=5,\ u_n=u_{n-1}+5\) (\(n\ge2\)). Không coi các cách cho này là những dãy khác nhau.
+    **Ví dụ cùng một dãy:** Những số đầu \(5,10,15,\ldots\) chỉ **minh họa** quy luật; dãy được xác định rõ bởi công thức \(u_n=5n\) (\(n\ge1\)), mô tả “các bội nguyên dương của \(5\) theo thứ tự tăng”, hoặc hệ thức \(u_1=5,\ u_n=u_{n-1}+5\) (\(n\ge2\)). Những cách xác định này cùng chỉ một dãy, còn vài số đầu đơn lẻ không xác định duy nhất một dãy vô hạn.
 
     **Điều kiện tự học:** Với dãy truy hồi, phải có giá trị khởi đầu và chỉ rõ bắt đầu áp dụng hệ thức từ \(n\) nào. Nếu chỉ có \(u_n=u_{n-1}+5\) mà không cho \(u_1\), sẽ có vô số dãy khác nhau thỏa cùng hệ thức.
 
