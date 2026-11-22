@@ -171,13 +171,13 @@ Nếu chỉ dựa vào vài số hạng đầu để khẳng định dãy tăng/
 
 > **ĐỊNH NGHĨA — Dãy số bị chặn.** Dãy \((u_n)\) **bị chặn trên** nếu tồn tại số thực \(M\) sao cho \(u_n\le M\) với **mọi** chỉ số \(n\) hợp lệ; **bị chặn dưới** nếu tồn tại số thực \(m\) sao cho \(u_n\ge m\) với mọi \(n\). Dãy **bị chặn** nếu có cả hai cận, tức tồn tại \(m,M\in\mathbb R\) thỏa \(m\le u_n\le M\) với mọi \(n\). Các cận không nhất thiết là số hạng của dãy và cũng không nhất thiết là cận tốt nhất.
 
-Chẳng hạn, u_n=1−1/(n+1), n≥1. Vì 0<1/(n+1)≤1/2 nên 1/2≤u_n<1. u_1=1/2 là cận dưới đạt, còn 1 không là một số hạng của dãy. Chọn tách thành 1 trừ số dương để nhìn cận.
+Chẳng hạn, u_n=1−1/(n+1), n≥1. Vì 0&lt;1/(n+1)≤1/2 nên 1/2≤u_n&lt;1. u_1=1/2 là cận dưới đạt, còn 1 không là một số hạng của dãy. Chọn tách thành 1 trừ số dương để nhìn cận.
 
 **Ví dụ**
 
 **Đề bài.** Tìm cận dưới đạt được và cận trên không đạt được của \(u_n=5-\dfrac2{n+1}\), \(n\ge1\).
 
-**Lời giải.** Vì \(0<2/(n+1)\le1\) nên \(4\le u_n<5\). Tại \(n=1\), \(u_1=4\); không có số hạng bằng \(5\) vì \(2/(n+1)>0\).
+**Lời giải.** Vì \(0&lt;2/(n+1)\le1\) nên \(4\le u_n&lt;5\). Tại \(n=1\), \(u_1=4\); không có số hạng bằng \(5\) vì \(2/(n+1)>0\).
 
 **Vận dụng** u_n=2−1/n (n≥1) có đạt 2 không?
 
@@ -208,7 +208,7 @@ Mỗi kỳ tăng thêm 5 đơn vị và mỗi kỳ tăng 5% có phải cùng m�
 
 > **ĐỊNH NGHĨA — Cấp số cộng.** Dãy \((u_n)\) là cấp số cộng khi có một số thực \(d\) không đổi sao cho \(u_{n+1}=u_n+d\) với mọi cặp chỉ số liên tiếp của dãy. Khi đó \(d=u_{n+1}-u_n\) gọi là *công sai*.
 
- \(d=0\) cho dãy hằng, \(d<0\) cho dãy giảm nghiêm ngặt. Một phần trăm cố định thường cho cấp số nhân chứ không phải CSC (trừ trường hợp suy biến đặc biệt).
+ \(d=0\) cho dãy hằng, \(d&lt;0\) cho dãy giảm nghiêm ngặt. Một phần trăm cố định thường cho cấp số nhân chứ không phải CSC (trừ trường hợp suy biến đặc biệt).
 
 Chẳng hạn, Dãy 14,11,8,5 có các hiệu −3; là CSC với d=−3. Dãy 10,20,40 có hiệu 10,20 nên không CSC. Chọn kiểm hiệu trước khi áp công thức.
 
@@ -237,7 +237,7 @@ Nếu loại một cấp số cộng chỉ vì các số hạng không tăng, đ
 
 <!-- LESSON_ID: TOP07-M07; OUTCOME_ID: TOP07-O07 -->
 
-> **CÔNG THỨC — Công thức số hạng tổng quát.** Khi mỗi bước cộng cùng một lượng, ta suy được số hạng bất kỳ. Vì sao ở số hạng thứ n lại xuất hiện n−1? Ta đã biết truy hồi cộng d và số đếm bước. Từ \(u_1\) đến \(u_n\) thực hiện đúng \(n-1\) lần cộng công sai, nên **\(u_n=u_1+(n-1)d\)**. Nếu d=0 công thức vẫn đúng; nếu cho u_k thì u_n=u_k+(n−k)d với cả n<k.
+> **CÔNG THỨC — Công thức số hạng tổng quát.** Khi mỗi bước cộng cùng một lượng, ta suy được số hạng bất kỳ. Vì sao ở số hạng thứ n lại xuất hiện n−1? Ta đã biết truy hồi cộng d và số đếm bước. Từ \(u_1\) đến \(u_n\) thực hiện đúng \(n-1\) lần cộng công sai, nên **\(u_n=u_1+(n-1)d\)**. Nếu d=0 công thức vẫn đúng; nếu cho u_k thì u_n=u_k+(n−k)d với cả n&lt;k.
 
 Chẳng hạn, u_1=7,d=−2, u_6=7+5(−2)=−3. Ta chọn công thức tổng quát thay vì cộng năm bước riêng lẻ; thử u_2=5 để kiểm chiều âm.
 
@@ -365,7 +365,7 @@ Tăng gấp đôi nhưng có kỳ đổi dấu: vẫn là cấp số nhân chứ
 
 > **ĐỊNH NGHĨA — Cấp số nhân.** Dãy \((u_n)\) là cấp số nhân khi có một số thực \(q\) không đổi sao cho \(u_{n+1}=qu_n\) với mọi cặp chỉ số liên tiếp của dãy. Số \(q\) gọi là *công bội*.
 
- Khi các số hạng khác 0 có thể kiểm tỉ số u_{n+1}/u_n=q. q=0 là trường hợp hợp lệ nếu u_1≠0: từ u_2 trở đi bằng 0; không chia cho 0. q<0 làm dấu luân phiên nếu u_1 khác 0.
+ Khi các số hạng khác 0 có thể kiểm tỉ số u_{n+1}/u_n=q. q=0 là trường hợp hợp lệ nếu u_1≠0: từ u_2 trở đi bằng 0; không chia cho 0. q&lt;0 làm dấu luân phiên nếu u_1 khác 0.
 
 Chẳng hạn, Dãy 2,−6,18,−54 là CSN q=−3. Dãy 5,0,0,… là CSN q=0; tỉ số 0/0 không có nghĩa nhưng truy hồi u_{n+1}=0·u_n vẫn đúng. Chọn kiểm phép nhân thay chia khi xuất hiện 0.
 
@@ -460,7 +460,7 @@ Chẳng hạn, Với u_1=2,q=3,n=4: S_4=2(1−3^4)/(1−3)=2·40=80. Thử bằn
 
 **Đề bài.** CSN có \(u_1=3,\ q=2\). Tính tổng năm số hạng đầu.
 
-**Lời giải.** Vì \(q\ne1\), \(S_5=3\dfrac{1-2^5}{1-2}=93\). Kiểm \(3+6+12+24+48=93\); tổng hữu hạn không cần \(|q|<1\).
+**Lời giải.** Vì \(q\ne1\), \(S_5=3\dfrac{1-2^5}{1-2}=93\). Kiểm \(3+6+12+24+48=93\); tổng hữu hạn không cần \(|q|&lt;1\).
 
 **Vận dụng** Tính S_5 nếu u_1=−4, q=1.
 
@@ -481,7 +481,7 @@ Nếu dùng công thức có mẫu 1−q khi q=1, hoặc nhầm tổng hữu h�
 
 <!-- LESSON_ID: TOP07-M15; OUTCOME_ID: TOP07-O15 -->
 
-> **CÔNG THỨC — Tổng vô hạn và phần dư.** Nếu trị tuyệt đối công bội nhỏ hơn 1, phần dư của tổng giảm dần. Vì sao có thể cộng vô hạn số hạng mà được một số hữu hạn? Cần nhớ tổng n số hạng cấp số nhân và xem số hạng \(q^n\) thay đổi như thế nào khi \(n\) tăng mãi. Với \(|q|<1\), \(q^n\to0\); lấy giới hạn của \(S_n=\dfrac{u_1(1-q^n)}{1-q}\) được **\(S_\infty=\dfrac{u_1}{1-q}\)**. Điều kiện |q|<1 là bắt buộc cho cấp số nhân có u_1≠0; q=−1 làm tổng riêng dao động, |q|>1 thường không hội tụ. Phần dư S_∞−S_n=u_1q^n/(1−q); trị tuyệt đối đo sai số.
+> **CÔNG THỨC — Tổng vô hạn và phần dư.** Nếu trị tuyệt đối công bội nhỏ hơn 1, phần dư của tổng giảm dần. Vì sao có thể cộng vô hạn số hạng mà được một số hữu hạn? Cần nhớ tổng n số hạng cấp số nhân và xem số hạng \(q^n\) thay đổi như thế nào khi \(n\) tăng mãi. Với \(|q|&lt;1\), \(q^n\to0\); lấy giới hạn của \(S_n=\dfrac{u_1(1-q^n)}{1-q}\) được **\(S_\infty=\dfrac{u_1}{1-q}\)**. Điều kiện |q|&lt;1 là bắt buộc cho cấp số nhân có u_1≠0; q=−1 làm tổng riêng dao động, |q|>1 thường không hội tụ. Phần dư S_∞−S_n=u_1q^n/(1−q); trị tuyệt đối đo sai số.
 
 Chẳng hạn, Với u_1=6,q=1/2, S_n=12[1−(1/2)^n], S_∞=12; sau n=4 phần dư=12/16=3/4. Chọn công thức phần dư khi muốn biết phải cộng bao nhiêu số hạng để đủ chính xác.
 
@@ -489,7 +489,7 @@ Chẳng hạn, Với u_1=6,q=1/2, S_n=12[1−(1/2)^n], S_∞=12; sau n=4 phần 
 
 **Đề bài.** CSN có \(u_1=5,\ q=\frac14\). Tính tổng vô hạn và phần dư sau ba số hạng.
 
-**Lời giải.** Do \(|q|<1\), \(S_\infty=\dfrac5{1-1/4}=\dfrac{20}3\). Phần dư sau ba số hạng \(R_3=\dfrac{5(1/4)^3}{1-1/4}=\dfrac5{48}\).
+**Lời giải.** Do \(|q|&lt;1\), \(S_\infty=\dfrac5{1-1/4}=\dfrac{20}3\). Phần dư sau ba số hạng \(R_3=\dfrac{5(1/4)^3}{1-1/4}=\dfrac5{48}\).
 
 **Vận dụng** Với u_1=4,q=−1, tổng vô hạn có giá trị theo công thức trên không?
 

@@ -297,7 +297,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-P05; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O05; NOT_A_NEW_BANK -->
 
-**Bài 20.** Cho u_n=(2n+1)/(n+2), n≥1. Chứng minh 1≤u_n<2 và cho biết số hạng nào nhận cận dưới 1.
+**Bài 20.** Cho u_n=(2n+1)/(n+2), n≥1. Chứng minh 1≤u_n&lt;2 và cho biết số hạng nào nhận cận dưới 1.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -860,7 +860,7 @@ Hãy tự giải từng bài rồi mới mở **Lời giải**. Cần kiểm mi�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP07-W03; ORIGINAL_BLOB: f70e2c961dfcf31825d135b61e301cbb4c322767; OUTCOME: TOP07-O15; NOT_A_NEW_BANK -->
 
-**Bài 62.** CSN có u_1=12,q=−1/2. (a) Viết S_n và lý do được tính tổng vô hạn. (b) Tính S_∞. (c) Tìm số nguyên n nhỏ nhất sao cho |S_∞−S_n|<1/4; chú ý dấu < nghiêm ngặt.
+**Bài 62.** CSN có u_1=12,q=−1/2. (a) Viết S_n và lý do được tính tổng vô hạn. (b) Tính S_∞. (c) Tìm số nguyên n nhỏ nhất sao cho |S_∞−S_n|&lt;1/4; chú ý dấu &lt; nghiêm ngặt.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 

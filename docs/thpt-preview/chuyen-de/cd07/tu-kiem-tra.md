@@ -52,7 +52,7 @@ Hãy tự làm đủ 18 câu trước khi đối chiếu. Trình bày lý do ch�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P05; NO_MASTERY; NOT_RD1 -->
 
-**Câu 5.** Cho u_n=(2n+1)/(n+2), n≥1. Chứng minh 1≤u_n<2 và cho biết số hạng nào nhận cận dưới 1.
+**Câu 5.** Cho u_n=(2n+1)/(n+2), n≥1. Chứng minh 1≤u_n&lt;2 và cho biết số hạng nào nhận cận dưới 1.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP07-P06; NO_MASTERY; NOT_RD1 -->
 

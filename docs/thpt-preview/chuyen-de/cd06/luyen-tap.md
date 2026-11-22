@@ -182,7 +182,7 @@ Vì α ở II, sinα>0. sin²α=1−25/169=144/169 ⇒ sinα=12/13; tanα=(12/13
 
 **Bài 10.**
 
-Biết sin α=3/5 và π/2<α<π. Tính cos α và tan α.
+Biết sin α=3/5 và π/2&lt;α&lt;π. Tính cos α và tan α.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -844,7 +844,7 @@ Phải có cosx≠0 và cos2x≠0. Khi đó tanA=tanB ⇔ A=B+kπ; x=2x+kπ ⇔ 
 
 **Bài 56.**
 
-Mực nước H(t)=10+2sin(πt/6), với 0≤t<12 (giờ), bằng 11 lúc mấy giờ?
+Mực nước H(t)=10+2sin(πt/6), với 0≤t&lt;12 (giờ), bằng 11 lúc mấy giờ?
 
 <details markdown="1"><summary>Lời giải</summary>
 
