@@ -48,3 +48,22 @@ body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-
 body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="recap"]{
  background:#4a3a25;border-color:#9e7d39;border-left-color:#d6aa49;color:#fff3d5
 }
+
+/* Golden SGK Knowledge disclosure is blue-neutral, NEVER default neon green. */
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question{
+ background:#f8faff;border:1px solid #d9e4f4;border-radius:.62rem;box-shadow:none;color:#243753;overflow:hidden
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary{
+ list-style:none;position:relative;color:#263e73;background:transparent;border:0;border-radius:.62rem;
+ font-weight:700;font-size:.88rem;line-height:1.45;padding:.7rem .85rem .7rem 2.15rem
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::before{
+ -webkit-mask:none;mask:none;background:none;content:"▶";display:block;color:#263e73;
+ width:.85rem;height:auto;font-size:.72rem;top:.76rem;left:.88rem;transform:none
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::after{display:none}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question{
+ background:#202e48;border-color:#465978;color:#dce6fc
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary,
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::before{color:#e2ebff}
