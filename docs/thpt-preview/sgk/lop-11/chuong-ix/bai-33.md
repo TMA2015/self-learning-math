@@ -164,7 +164,7 @@
 
     ### 2.2. Ý nghĩa cơ học của đạo hàm cấp hai
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Ý nghĩa cơ học của đạo hàm cấp hai.</strong><p>Nếu s(t) là tọa độ trên đường thẳng, v(t)=s′(t). Gia tốc tức thời là tốc độ biến đổi của vận tốc:
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Gia tốc tức thời.</strong><p>Nếu s(t) là tọa độ trên đường thẳng, v(t)=s′(t). Gia tốc tức thời là tốc độ biến đổi của vận tốc:
     
     \[a(t)=v'(t)=s''(t).\]
     
