@@ -5,14 +5,17 @@ hide:
 
 <div class="thpt-r4-screen topic01-release-nav" data-thpt-r4>
   <p class="thpt-r4-eyebrow">HỌC THEO CHUYÊN ĐỀ · CĐ01 · TOÁN THPT</p>
-  <nav class="thpt-r4-topic-steps" aria-label="Ba phần học của Chuyên đề 01">
-    <a href="../kien-thuc/">01 · Kiến thức</a>
-    <a href="../luyen-tap/">02 · Luyện tập</a>
-    <a href="../tu-kiem-tra/" aria-current="page">03 · Tự kiểm tra</a>
+  <nav class="thpt-sgk-lesson-nav" aria-label="Ba phần học của Chuyên đề 01">
+    <span class="thpt-sgk-nav-unavailable" aria-disabled="true">← Chuyên đề trước</span>
+    <span class="thpt-sgk-nav-unavailable" aria-disabled="true">Chuyên đề sau →</span>
+    <a href="../kien-thuc/">Kiến thức</a>
+    <a href="../luyen-tap/">Luyện tập</a>
   </nav>
   <p class="topic01-back"><a href="../../">← Tổng quan các Chuyên đề</a></p>
   <p class="topic01-assessment-note">11 câu hỏi công khai để em tự thử trước khi mở Đối chiếu. Không phải bài đánh giá năng lực độc lập và không ghi điểm thành thạo.</p>
 </div>
+
+<span data-topic01-selfcheck-start hidden></span>
 
 <!-- TOPIC01_APPROVED_SOURCE_START -->
 
@@ -81,4 +84,5 @@ Sau khi tự hoàn thành 11 câu, em mở **Lời giải** của các bài tư�
 Học liệu được xây dựng dựa trên Chương I SGK Toán 10, Tập Một – Kết nối tri thức với cuộc sống.
 
 <!-- TOPIC01_APPROVED_SOURCE_END -->
+<span data-topic01-selfcheck-end hidden></span>
 <p class="topic01-end-nav"><a href="../../">← Tổng quan các Chuyên đề</a></p>
