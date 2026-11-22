@@ -32,6 +32,21 @@
 
         **Tự sửa:** Viết quy tắc \(a\le x<b\) cạnh mỗi khoảng và kiểm riêng hai đầu. Ôn mục 2.1; luyện Core xét biên bằng 10 và Practice ghép sáu số liệu tại [Bài 8 – Core và Luyện tập](../luyen-tap/).
 
+
+    **Tự thử bổ sung — hiểu bản chất của mẫu ghép nhóm.** Một khảo sát ghi số người có tuổi trong hai khoảng \([18;24)\) và \([24;30)\), tương ứng là \(6\) và \(4\). Đây là bảng ghi từng tuổi chính xác hay bảng số liệu ghép nhóm? Có tất cả bao nhiêu người? Có thể khẳng định sáu người đầu đều 20 tuổi không?
+
+    <span data-ped-first-try="7" data-outcome-id="G11-B08-GROUPED-DEFINITION" data-thpt-first-try-id="THPT-G11-B08-TRY07" hidden></span>
+
+    ??? question "Đối chiếu — mẫu ghép nhóm"
+
+        **Lời giải:** Đây là **bảng mẫu số liệu ghép nhóm**: mỗi khoảng tuổi đại diện một nhóm, các số \(6\) và \(4\) là **tần số nhóm**, không phải tuổi của từng người. Cỡ mẫu là \(n=6+4=10\). Không thể kết luận sáu người nhóm đầu đều 20 tuổi: chỉ biết tuổi của từng người trong khoảng \([18;24)\); những số đo gốc cụ thể đã không còn trong bảng. Hai nhóm không chồng lấn nên người đủ 24 tuổi thuộc nhóm thứ hai.
+
+    <span data-thpt-help-id="HELP-G11-B08-TRY07" hidden></span>
+
+    ??? tip "Kiểm lỗi — ý nghĩa ghép nhóm"
+
+        **Dấu hiệu:** Em tưởng có \(2\) người vì bảng có hai hàng, hoặc xem trung điểm nhóm như tuổi chính xác của mọi người. **Tự sửa:** Phân biệt **số nhóm** với **tổng tần số**, ghi \(n=\sum_i m_i\), rồi chỉ ra một người thuộc khoảng nào theo dấu ngoặc. **Luyện lại:** Ôn mục 2.1, làm Core **THPT-G11-B08-C01** về cỡ mẫu và Practice **THPT-G11-B08-P08** về nhóm mở tại <a href="../luyen-tap/">Core và Luyện tập Bài 8</a>, sau đó tự thử lại.
+
     ### 1.2. Đếm từng quan sát và kiểm tổng tần số
 
     Một bảng ghép nhóm gồm **khoảng** và **tần số**. Quy trình chắc chắn là: xác định miền dữ liệu → chia nhóm không chồng lấn → đánh dấu mỗi số đúng một lần → cộng các dấu trong từng nhóm. Nếu mẫu có \(n\) quan sát và tất cả được phủ, tổng tần số phải bằng \(n\). Đó là phép kiểm quan trọng hơn việc nhìn bảng có vẻ hợp lý.
