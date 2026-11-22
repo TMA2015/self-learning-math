@@ -1135,9 +1135,9 @@
       "steps": [
         "**Nhận ra lỗi:** Đạo hàm nhầm x^3 thành 3x hoặc kiểm thử tại một điểm rồi kết luận mọi x.",
         "**Trở về tiền đề:** Đạo hàm đa thức, quy tắc đạo hàm tổng và tích với hằng số.",
-        "**Ví dụ sửa nhỏ:** Bài chữa nhanh: d(x^5-2x)/dx=5x^4-2; tự kiểm d(3x^2+1)/dx=6x, sau đó quay lại CORE C01. Lỗi cần tránh sau khi tự sửa: Đạo hàm nhầm x^3 thành 3x hoặc kiểm thử tại một điểm rồi kết luận mọi x.",
+        "**Ví dụ sửa nhỏ:** Bài chữa nhanh: d(x^5-2x)/dx=5x^4-2; tự kiểm d(3x^2+1)/dx=6x, sau đó quay lại câu Core. Lỗi cần tránh sau khi tự sửa: Đạo hàm nhầm x^3 thành 3x hoặc kiểm thử tại một điểm rồi kết luận mọi x.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C01` hoặc bài `THPT-G12-B11-P01`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B11-C01",
       "practice_item": "THPT-G12-B11-P01"
@@ -1149,9 +1149,9 @@
       "steps": [
         "**Nhận ra lỗi:** Quên +C hoặc xem mọi nguyên hàm đều bằng đúng F không có độ dịch.",
         "**Trở về tiền đề:** Đạo hàm hằng số bằng 0; nghiệm phương trình tuyến tính đơn giản.",
-        "**Ví dụ sửa nhỏ:** Ví dụ chữa: G'=2x, G(0)=5 => G=x^2+5; tự thử H'=4x,H(0)=3 => H=2x^2+3; quay lại C02. Lỗi cần tránh sau khi tự sửa: Quên +C hoặc xem mọi nguyên hàm đều bằng đúng F không có độ dịch.",
+        "**Ví dụ sửa nhỏ:** Ví dụ chữa: G'=2x, G(0)=5 => G=x^2+5; tự thử H'=4x,H(0)=3 => H=2x^2+3; quay lại câu Core. Lỗi cần tránh sau khi tự sửa: Quên +C hoặc xem mọi nguyên hàm đều bằng đúng F không có độ dịch.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Tích phân được F+C; thay x0 vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C02` hoặc bài `THPT-G12-B11-P02`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B11-C02",
       "practice_item": "THPT-G12-B11-P02"
@@ -1163,9 +1163,9 @@
       "steps": [
         "**Nhận ra lỗi:** Áp quy tắc lũy thừa n=-1 gây chia 0; quên chia cho số mũ mới.",
         "**Trở về tiền đề:** Đạo hàm x^(n+1)=(n+1)x^n, phép biến đổi tổng.",
-        "**Ví dụ sửa nhỏ:** Chữa nhanh ∫4x^3dx=x^4+C (vì đạo hàm x^4=4x^3); thử ∫2x dx=x^2+C; về C03. Lỗi cần tránh sau khi tự sửa: Áp quy tắc lũy thừa n=-1 gây chia 0; quên chia cho số mũ mới.",
+        "**Ví dụ sửa nhỏ:** Chữa nhanh ∫4x^3dx=x^4+C (vì đạo hàm x^4=4x^3); thử ∫2x dx=x^2+C; về câu Core. Lỗi cần tránh sau khi tự sửa: Áp quy tắc lũy thừa n=-1 gây chia 0; quên chia cho số mũ mới.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C03` hoặc bài `THPT-G12-B11-P03`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B11-C03",
       "practice_item": "THPT-G12-B11-P03"
@@ -1177,9 +1177,9 @@
       "steps": [
         "**Nhận ra lỗi:** Viết ln x cho x âm hoặc áp 1/(n+1) với n=−1.",
         "**Trở về tiền đề:** Đạo hàm ln|x|=1/x khi x≠0.",
-        "**Ví dụ sửa nhỏ:** Chữa: (ln|x|)'=1/x (x≠0); (−1/x)'=1/x². Thử ∫(1/x−1/x²)dx=ln|x|+1/x+C, về C04. Lỗi cần tránh sau khi tự sửa: Viết ln x cho x âm hoặc áp 1/(n+1) với n=−1.",
+        "**Ví dụ sửa nhỏ:** Chữa: (ln|x|)'=1/x (x≠0); (−1/x)'=1/x². Thử ∫(1/x−1/x²)dx=ln|x|+1/x+C, về câu Core. Lỗi cần tránh sau khi tự sửa: Viết ln x cho x âm hoặc áp 1/(n+1) với n=−1.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C04` hoặc bài `THPT-G12-B11-P04`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B11-C04",
       "practice_item": "THPT-G12-B11-P04"
@@ -1191,9 +1191,9 @@
       "steps": [
         "**Nhận ra lỗi:** Nhầm ∫2^x dx=2^x+C (thiếu 1/ln2).",
         "**Trở về tiền đề:** (e^x)'=e^x, (a^x)'=a^x ln a.",
-        "**Ví dụ sửa nhỏ:** Chữa: d(5^x/ln5)/dx=5^x; tự thử ∫3^x dx=3^x/ln3+C rồi về C05. Lỗi cần tránh sau khi tự sửa: Nhầm ∫2^x dx=2^x+C (thiếu 1/ln2).",
+        "**Ví dụ sửa nhỏ:** Chữa: d(5^x/ln5)/dx=5^x; tự thử ∫3^x dx=3^x/ln3+C rồi về câu Core. Lỗi cần tránh sau khi tự sửa: Nhầm ∫2^x dx=2^x+C (thiếu 1/ln2).",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Tách hệ số rồi chia ln a nếu cơ số a không phải e.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C05` hoặc bài `THPT-G12-B11-P05`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B11-C05",
       "practice_item": "THPT-G12-B11-P05"
@@ -1205,9 +1205,9 @@
       "steps": [
         "**Nhận ra lỗi:** Quên dấu âm của nguyên hàm sin hoặc viết tan x trên đoạn đi qua cosx=0.",
         "**Trở về tiền đề:** (sin x)'=cos x, (cos x)'=−sin x, (tan x)'=1/cos²x.",
-        "**Ví dụ sửa nhỏ:** Chữa: (−cosx)'=sinx; (tanx)'=1/cos²x; thử ∫sinx dx=−cosx+C rồi về C06. Lỗi cần tránh sau khi tự sửa: Quên dấu âm của nguyên hàm sin hoặc viết tan x trên đoạn đi qua cosx=0.",
+        "**Ví dụ sửa nhỏ:** Chữa: (−cosx)'=sinx; (tanx)'=1/cos²x; thử ∫sinx dx=−cosx+C rồi về câu Core. Lỗi cần tránh sau khi tự sửa: Quên dấu âm của nguyên hàm sin hoặc viết tan x trên đoạn đi qua cosx=0.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C06` hoặc bài `THPT-G12-B11-P06`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B11-C06",
       "practice_item": "THPT-G12-B11-P06"
@@ -1219,9 +1219,9 @@
       "steps": [
         "**Nhận ra lỗi:** Dùng gia tốc trực tiếp làm vị trí hoặc quên hai điều kiện đầu khi tích phân hai lần.",
         "**Trở về tiền đề:** Vận tốc s'=v, gia tốc v'=a, đơn vị thời gian và điều kiện đầu.",
-        "**Ví dụ sửa nhỏ:** Chữa: nếu a(t)=2, v(0)=3, s(0)=5 thì v=2t+3, s=t²+3t+5. Tự kiểm đạo hàm hai lần; về C07. Lỗi cần tránh sau khi tự sửa: Dùng gia tốc trực tiếp làm vị trí hoặc quên hai điều kiện đầu khi tích phân hai lần.",
+        "**Ví dụ sửa nhỏ:** Chữa: nếu a(t)=2, v(0)=3, s(0)=5 thì v=2t+3, s=t²+3t+5. Tự kiểm đạo hàm hai lần; về câu Core. Lỗi cần tránh sau khi tự sửa: Dùng gia tốc trực tiếp làm vị trí hoặc quên hai điều kiện đầu khi tích phân hai lần.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B11-C07` hoặc bài `THPT-G12-B11-P07`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B11-C07",
       "practice_item": "THPT-G12-B11-P07"
@@ -1233,9 +1233,9 @@
       "steps": [
         "**Nhận ra lỗi:** Tính F(a)−F(b) (đảo dấu) hoặc giữ +C ở kết quả xác định.",
         "**Trở về tiền đề:** Hàm liên tục trên đoạn và nguyên hàm F trên đoạn.",
-        "**Ví dụ sửa nhỏ:** Chữa: ∫_0^1 4x dx=[2x²]_0^1=2; tự thử ∫_1^2 2x dx=3, rồi về C01. Lỗi cần tránh sau khi tự sửa: Tính F(a)−F(b) (đảo dấu) hoặc giữ +C ở kết quả xác định.",
+        "**Ví dụ sửa nhỏ:** Chữa: ∫_0^1 4x dx=[2x²]_0^1=2; tự thử ∫_1^2 2x dx=3, rồi về câu Core. Lỗi cần tránh sau khi tự sửa: Tính F(a)−F(b) (đảo dấu) hoặc giữ +C ở kết quả xác định.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C01` hoặc bài `THPT-G12-B12-P01`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B12-C01",
       "practice_item": "THPT-G12-B12-P01"
@@ -1247,9 +1247,9 @@
       "steps": [
         "**Nhận ra lỗi:** Tách ∫(f+g) rồi quên một hệ số hoặc dùng hai cận khác nhau.",
         "**Trở về tiền đề:** Tính tuyến tính nguyên hàm và Newton–Leibniz.",
-        "**Ví dụ sửa nhỏ:** Chữa: ∫_0^1 (x+2)dx=1/2+2=5/2; thử ∫_0^1(2x+1)dx=2; về C02. Lỗi cần tránh sau khi tự sửa: Tách ∫(f+g) rồi quên một hệ số hoặc dùng hai cận khác nhau.",
+        "**Ví dụ sửa nhỏ:** Chữa: ∫_0^1 (x+2)dx=1/2+2=5/2; thử ∫_0^1(2x+1)dx=2; về câu Core. Lỗi cần tránh sau khi tự sửa: Tách ∫(f+g) rồi quên một hệ số hoặc dùng hai cận khác nhau.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C02` hoặc bài `THPT-G12-B12-P02`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B12-C02",
       "practice_item": "THPT-G12-B12-P02"
@@ -1261,9 +1261,9 @@
       "steps": [
         "**Nhận ra lỗi:** Xem tích phân như độ dài tuyệt đối nên luôn dương; khi đảo cận quên dấu trừ.",
         "**Trở về tiền đề:** Số có dấu, cộng đại số, định nghĩa tích phân xác định.",
-        "**Ví dụ sửa nhỏ:** Chữa: nếu ∫_1^2 f=−3 thì ∫_2^1 f=+3; tự thử ∫_0^2=3, ∫_2^3=4 => ∫_3^0=−7; về C03. Lỗi cần tránh sau khi tự sửa: Xem tích phân như độ dài tuyệt đối nên luôn dương; khi đảo cận quên dấu trừ.",
+        "**Ví dụ sửa nhỏ:** Chữa: nếu ∫_1^2 f=−3 thì ∫_2^1 f=+3; tự thử ∫_0^2=3, ∫_2^3=4 => ∫_3^0=−7; về câu Core. Lỗi cần tránh sau khi tự sửa: Xem tích phân như độ dài tuyệt đối nên luôn dương; khi đảo cận quên dấu trừ.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C03` hoặc bài `THPT-G12-B12-P03`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B12-C03",
       "practice_item": "THPT-G12-B12-P03"
@@ -1275,9 +1275,9 @@
       "steps": [
         "**Nhận ra lỗi:** Tự động gắn S=∫ f cho f âm hoặc qua chỗ cắt trục.",
         "**Trở về tiền đề:** Hình thang cong với f liên tục không âm, trục Ox và hai đường x=a,b.",
-        "**Ví dụ sửa nhỏ:** Chữa: y=2x trên [0,1] không âm nên S=∫_0¹2xdx=1; tự thử f=−x trên [0,1] cần lấy −f nếu muốn diện tích; về C04.",
+        "**Ví dụ sửa nhỏ:** Chữa: y=2x trên [0,1] không âm nên S=∫_0¹2xdx=1; tự thử f=−x trên [0,1] cần lấy −f nếu muốn diện tích; về câu Core.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C04` hoặc bài `THPT-G12-B12-P04`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B12-C04",
       "practice_item": "THPT-G12-B12-P04"
@@ -1289,9 +1289,9 @@
       "steps": [
         "**Nhận ra lỗi:** Lấy |∫f| thay cho ∫|f| hoặc nghĩ đồ thị âm tạo “diện tích âm”.",
         "**Trở về tiền đề:** Giải phương trình f(x)=0 và chia đoạn theo dấu.",
-        "**Ví dụ sửa nhỏ:** Chữa: ∫_{−1}¹ xdx=0 nhưng ∫_{−1}¹|x|dx=1. Tự thử y=x trên [−3,3] có diện tích 9; về C05. Lỗi cần tránh sau khi tự sửa: Lấy |∫f| thay cho ∫|f| hoặc nghĩ đồ thị âm tạo “diện tích âm”.",
+        "**Ví dụ sửa nhỏ:** Chữa: ∫_{−1}¹ xdx=0 nhưng ∫_{−1}¹|x|dx=1. Tự thử y=x trên [−3,3] có diện tích 9; về câu Core. Lỗi cần tránh sau khi tự sửa: Lấy |∫f| thay cho ∫|f| hoặc nghĩ đồ thị âm tạo “diện tích âm”.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Lập bảng dấu, chia cận, đổi dấu trên vùng âm, cộng phần diện tích dương.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C05` hoặc bài `THPT-G12-B12-P05`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B12-C05",
       "practice_item": "THPT-G12-B12-P05"
@@ -1303,9 +1303,9 @@
       "steps": [
         "**Nhận ra lỗi:** Nhầm sinπ=1 hoặc quên dấu khi ∫sinx dx=−cosx.",
         "**Trở về tiền đề:** Nguyên hàm e^x, sin, cos; π và ln là giá trị chính xác.",
-        "**Ví dụ sửa nhỏ:** Chữa: ∫_0^{π/2} cosx dx=1; tự thử ∫_0^π sinx dx=2; về C06. Lỗi cần tránh sau khi tự sửa: Nhầm sinπ=1 hoặc quên dấu khi ∫sinx dx=−cosx.",
+        "**Ví dụ sửa nhỏ:** Chữa: ∫_0^{π/2} cosx dx=1; tự thử ∫_0^π sinx dx=2; về câu Core. Lỗi cần tránh sau khi tự sửa: Nhầm sinπ=1 hoặc quên dấu khi ∫sinx dx=−cosx.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C06` hoặc bài `THPT-G12-B12-P06`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B12-C06",
       "practice_item": "THPT-G12-B12-P06"
@@ -1317,9 +1317,9 @@
       "steps": [
         "**Nhận ra lỗi:** Đổi vận tốc âm thành dương trước khi tính độ dời hoặc bỏ qua đơn vị phút/giờ.",
         "**Trở về tiền đề:** Đơn vị rate × thời gian; phân biệt độ dời và quãng đường khi rate có dấu.",
-        "**Ví dụ sửa nhỏ:** Chữa: nếu q'=2 lít/phút trong 5 phút thì Δq=∫_0⁵2dt=10 lít; tự thử q'=3t trên [0,2] =>6 lít; về C07.",
+        "**Ví dụ sửa nhỏ:** Chữa: nếu q'=2 lít/phút trong 5 phút thì Δq=∫_0⁵2dt=10 lít; tự thử q'=3t trên [0,2] =>6 lít; về câu Core.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Lập tích phân từ đầu đến cuối, tính và kiểm thứ nguyên/kịch bản sign.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B12-C07` hoặc bài `THPT-G12-B12-P07`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B12-C07",
       "practice_item": "THPT-G12-B12-P07"
@@ -1331,9 +1331,9 @@
       "steps": [
         "**Nhận ra lỗi:** Tính F(a)−F(b) hoặc không kiểm hàm âm trên miền hình.",
         "**Trở về tiền đề:** Giới hạn hình bởi y=f(x), Ox, x=a,b; kiểm f không âm.",
-        "**Ví dụ sửa nhỏ:** Chữa: diện tích dưới y=2 trên [0,3] là 6 (hình chữ nhật); tự thử y=x trên [0,1] là 1/2; về C01.",
+        "**Ví dụ sửa nhỏ:** Chữa: diện tích dưới y=2 trên [0,3] là 6 (hình chữ nhật); tự thử y=x trên [0,1] là 1/2; về câu Core.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C01` hoặc bài `THPT-G12-B13-P01`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B13-C01",
       "practice_item": "THPT-G12-B13-P01"
@@ -1345,9 +1345,9 @@
       "steps": [
         "**Nhận ra lỗi:** Lấy tích phân có dấu trực tiếp khi hình cắt trục, làm các vùng triệt tiêu.",
         "**Trở về tiền đề:** Nghiệm f=0, bảng xét dấu và tích phân từng đoạn.",
-        "**Ví dụ sửa nhỏ:** Chữa: y=x trên [−1,1] có ∫x=0 nhưng diện tích1; tự thử y=x−1 từ0 tới2 có diện tích1; về C02. Lỗi cần tránh sau khi tự sửa: Lấy tích phân có dấu trực tiếp khi hình cắt trục, làm các vùng triệt tiêu.",
+        "**Ví dụ sửa nhỏ:** Chữa: y=x trên [−1,1] có ∫x=0 nhưng diện tích1; tự thử y=x−1 từ0 tới2 có diện tích1; về câu Core. Lỗi cần tránh sau khi tự sửa: Lấy tích phân có dấu trực tiếp khi hình cắt trục, làm các vùng triệt tiêu.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Tìm nghiệm, phân vùng, trên vùng âm dùng −f, tính tổng.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C02` hoặc bài `THPT-G12-B13-P02`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B13-C02",
       "practice_item": "THPT-G12-B13-P02"
@@ -1359,9 +1359,9 @@
       "steps": [
         "**Nhận ra lỗi:** Lấy hàm dưới trừ trên cho diện tích âm hoặc bỏ mất đường biên/cận.",
         "**Trở về tiền đề:** Hai hàm liên tục f,g và xét thứ tự đồ thị trên [a,b].",
-        "**Ví dụ sửa nhỏ:** Chữa: nếu f=5, g=3 trên [0,2], S=(5−3)·2=4; tự thử giữa 3x và x trên [0,1] có S=1; về C03. Lỗi cần tránh sau khi tự sửa: Lấy hàm dưới trừ trên cho diện tích âm hoặc bỏ mất đường biên/cận.",
+        "**Ví dụ sửa nhỏ:** Chữa: nếu f=5, g=3 trên [0,2], S=(5−3)·2=4; tự thử giữa 3x và x trên [0,1] có S=1; về câu Core. Lỗi cần tránh sau khi tự sửa: Lấy hàm dưới trừ trên cho diện tích âm hoặc bỏ mất đường biên/cận.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C03` hoặc bài `THPT-G12-B13-P03`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B13-C03",
       "practice_item": "THPT-G12-B13-P03"
@@ -1373,9 +1373,9 @@
       "steps": [
         "**Nhận ra lỗi:** Quên giao điểm giữa khoảng và để các vùng triệt dấu.",
         "**Trở về tiền đề:** Giải f(x)=g(x), khảo sát dấu hiệu f−g.",
-        "**Ví dụ sửa nhỏ:** Chữa: hiệu h=x−x²≥0 trên (0,1); tự thử giao điểm y=x và y=x² là0,1; về C04. Lỗi cần tránh sau khi tự sửa: Quên giao điểm giữa khoảng và để các vùng triệt dấu.",
+        "**Ví dụ sửa nhỏ:** Chữa: hiệu h=x−x²≥0 trên (0,1); tự thử giao điểm y=x và y=x² là0,1; về câu Core. Lỗi cần tránh sau khi tự sửa: Quên giao điểm giữa khoảng và để các vùng triệt dấu.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C04` hoặc bài `THPT-G12-B13-P04`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B13-C04",
       "practice_item": "THPT-G12-B13-P04"
@@ -1387,9 +1387,9 @@
       "steps": [
         "**Nhận ra lỗi:** Nhìn thấy tích phân rồi gọi kết quả m³ thay vì m², hoặc quên kiểm miền vật lý.",
         "**Trở về tiền đề:** Đơn vị trục Ox/Oy và mô hình biểu thức f(x).",
-        "**Ví dụ sửa nhỏ:** Chữa: hình chữ nhật rộng2m và cao3m có S=6m²=∫_0²3dx; thử cao x+1 trên [0,1] được3/2m²; về C05.",
+        "**Ví dụ sửa nhỏ:** Chữa: hình chữ nhật rộng2m và cao3m có S=6m²=∫_0²3dx; thử cao x+1 trên [0,1] được3/2m²; về câu Core.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Nêu biến x và đơn vị, mô tả hai cận, xét h≥0, rồi tính số và thứ nguyên.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C05` hoặc bài `THPT-G12-B13-P05`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B13-C05",
       "practice_item": "THPT-G12-B13-P05"
@@ -1401,9 +1401,9 @@
       "steps": [
         "**Nhận ra lỗi:** Nhầm tích phân cạnh hình vuông với tích phân diện tích (quên bình phương).",
         "**Trở về tiền đề:** Diện tích mặt cắt S(x) theo một trục dài, tổng thể tích các lát mỏng.",
-        "**Ví dụ sửa nhỏ:** Chữa: mặt cắt vuông cạnh2cm thì S=4cm²; dày3cm thể tích12cm³. Thử S=x² trên [0,1] =>1/3cm³; về C06.",
+        "**Ví dụ sửa nhỏ:** Chữa: mặt cắt vuông cạnh2cm thì S=4cm²; dày3cm thể tích12cm³. Thử S=x² trên [0,1] =>1/3cm³; về câu Core.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C06` hoặc bài `THPT-G12-B13-P06`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B13-C06",
       "practice_item": "THPT-G12-B13-P06"
@@ -1415,9 +1415,9 @@
       "steps": [
         "**Nhận ra lỗi:** Bình phương đường kính thay vì bán kính, làm kết quả lớn gấp4.",
         "**Trở về tiền đề:** Diện tích hình tròn πr², r(x)≥0.",
-        "**Ví dụ sửa nhỏ:** Chữa: đường kính 6cm => r=3cm, S=9π cm², không phải36π; thử d(x)=2x trên[0,1] =>V=π/3; về C07. Lỗi cần tránh sau khi tự sửa: Bình phương đường kính thay vì bán kính, làm kết quả lớn gấp4.",
+        "**Ví dụ sửa nhỏ:** Chữa: đường kính 6cm => r=3cm, S=9π cm², không phải36π; thử d(x)=2x trên[0,1] =>V=π/3; về câu Core. Lỗi cần tránh sau khi tự sửa: Bình phương đường kính thay vì bán kính, làm kết quả lớn gấp4.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C07` hoặc bài `THPT-G12-B13-P07`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B13-C07",
       "practice_item": "THPT-G12-B13-P07"
@@ -1429,9 +1429,9 @@
       "steps": [
         "**Nhận ra lỗi:** Nhầm V=π∫f dx hoặc quên bình phương bán kính; dùng diện tích m² làm thể tích m³.",
         "**Trở về tiền đề:** Diện tích đĩa πr² và tích phân theo chiều dài.",
-        "**Ví dụ sửa nhỏ:** Chữa: quay y=1 trên x∈[0,2] quanh Ox thành trụ V=2π; thử y=x trên [0,1] =>π/3; về C08. Lỗi cần tránh sau khi tự sửa: Nhầm V=π∫f dx hoặc quên bình phương bán kính; dùng diện tích m² làm thể tích m³.",
+        "**Ví dụ sửa nhỏ:** Chữa: quay y=1 trên x∈[0,2] quanh Ox thành trụ V=2π; thử y=x trên [0,1] =>π/3; về câu Core. Lỗi cần tránh sau khi tự sửa: Nhầm V=π∫f dx hoặc quên bình phương bán kính; dùng diện tích m² làm thể tích m³.",
         "**Làm lại có dẫn:** tự nói lại phương pháp: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.",
-        "**Quay về cùng outcome:** làm lại `THPT-G12-B13-C08` hoặc bài `THPT-G12-B13-P08`, không nhận PASS chỉ vì đã xem lời giải."
+        "**Quay về cùng nội dung:** làm lại câu Core được liên kết bên dưới hoặc bài câu Luyện tập được liên kết bên dưới, chỉ tự đánh giá sau khi tự làm lại, không chỉ xem lời giải."
       ],
       "return_item": "THPT-G12-B13-C08",
       "practice_item": "THPT-G12-B13-P08"
