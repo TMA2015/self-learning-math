@@ -99,4 +99,15 @@ mk = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
 for topic in CASES:
     for part in PARTS:
         assert f"thpt-preview/chuyen-de/cd{topic}/{part}.md" in mk
+# Directly affected existing CĐ01 routes: ONLY previously unavailable "next topic"
+# now targets CĐ02. Keep original academic body and other Golden nav unchanged.
+for part in PARTS:
+    path = ROOT / f"docs/thpt-preview/chuyen-de/cd01/{part}.md"
+    text = path.read_text(encoding="utf-8")
+    nav = re.search(r'<nav class="thpt-sgk-lesson-nav"[^>]*>[\\s\\S]*?</nav>', text)
+    assert nav and nav.group(0).count('href="../../cd02/kien-thuc/"') == 1, (part,"CĐ01 → CĐ02 deep-link")
+    assert len(re.findall(r'<(?:a|span)\\b', nav.group(0))) == 4, (part,"exact four navigation controls")
+    assert text.count("<!-- TOPIC01_APPROVED_SOURCE_START -->") == 1
+    assert text.count("<!-- TOPIC01_APPROVED_SOURCE_END -->") == 1
+print("PASS CĐ01 direct impact: only Golden next-Topic deep-link, academic source delimiters intact")
 print("PASS W1 source/receipt/Q15/Q16, no private grader/Mastery or unrelated site changes")
