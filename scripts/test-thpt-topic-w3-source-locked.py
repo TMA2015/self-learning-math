@@ -51,15 +51,15 @@ def projection(s: str) -> str:
         asset = "visuals" if name.startswith("FIG_G11_CHIV_B") else "images/thpt"
         return f"](../../../assets/{asset}/{name})"
     s = re.sub(r"\]\(([^)\n]+\.svg)\)", replace_svg, s)
-    # Display-only route adaptation: authoring HTML experiment was not public.
-    s = s.replace("[Mở thí nghiệm đường–mặt](./Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html)",
-      '<a href="../../../math-lab/models/slm-top15-line-plane-r00/">Mở thí nghiệm đường–mặt</a>')
     s = re.sub(r'<details class="slm-topic-first-try" markdown="1">\s*<summary>([^<]*)</summary>',
                r'<details markdown="1"><summary>\1</summary>', s)
     s = re.sub(r'(<details\b[^>]*>)(.*?)(</details>)',
                lambda m: m.group(1) + re.sub(r"<(?!/?summary\b)", "&lt;", m.group(2)) + m.group(3),
                s, flags=re.S)
-    return re.sub(r"<(?!/?(?:details|summary)(?:\s|>)|!--)", "&lt;", s)
+    s = re.sub(r"<(?!/?(?:details|summary)(?:\\s|>)|!--)", "&lt;", s)
+    # Preserve link adaptation after HTML escaping, without modifying canonical source.
+    return s.replace("[Mở thí nghiệm đường–mặt](./Temp_THPT_TOPIC15_LINE_PLANE_RELATION_R01_20261113.html)",
+        '<a href="../../../math-lab/models/slm-top15-line-plane-r00/">Mở thí nghiệm đường–mặt</a>')
 
 
 for topic, d in data["topics"].items():
