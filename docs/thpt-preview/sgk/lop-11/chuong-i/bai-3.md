@@ -59,7 +59,7 @@
 
     Trên đồ thị \(y=x^2\), hai đầu vào \(x\) và \(-x\) có cùng đầu ra; đồ thị phản chiếu qua trục tung. Nhưng với \(y=x^3\), đổi \(x\) thành \(-x\) sẽ đổi dấu đầu ra, nên đồ thị đối xứng qua gốc \(O\). Đó là trực giác về **hàm chẵn** và **hàm lẻ**. Trước khi so \(f(-x)\), phải kiểm xem miền xác định có chứa đồng thời cả \(x\) và \(-x\) hay không.
 
-    Trở lại đường tròn: quay thêm \(2\pi\) thì điểm \(M\) về đúng vị trí cũ. Vì thế \(\sin(x+2\pi)=\sin x\), \(\cos(x+2\pi)=\cos x\). Tang và côtang lặp giá trị chỉ sau \(\pi\), do tử và mẫu đồng thời đổi dấu. Một hàm như thế được gọi là **tuần hoàn**. Điều quan trọng không phải chỉ tìm được một số làm hàm lặp lại, mà còn xem số dương nhỏ nhất ấy có tồn tại không: với hàm hằng trên \(\mathbb R\), mọi \(T>0\) đều là chu kì, nhưng không có **chu kì dương nhỏ nhất**.
+    Trở lại đường tròn: quay thêm \(2\pi\) thì điểm \(M\) về đúng vị trí cũ. Vì thế \(\sin(x+2\pi)=\sin x\), \(\cos(x+2\pi)=\cos x\). Tang và côtang lặp giá trị chỉ sau \(\pi\), do tử và mẫu đồng thời đổi dấu. Một hàm như thế được gọi là **tuần hoàn**. Điều quan trọng không phải chỉ tìm được một số làm hàm lặp lại, mà còn xem số dương nhỏ nhất ấy có tồn tại không: với hàm hằng trên \(\mathbb R\), mọi \(T>0\) đều làm hàm lặp lại, nhưng không có **số dương nhỏ nhất**, nên hàm **không có chu kì** theo định nghĩa SGK.
 
     Để biểu diễn nhịp lặp lại, ta dùng tính tuần hoàn của đối số: nếu \(y=\sin(3x)\), muốn đối số tăng thêm \(2\pi\), chỉ cần \(x\) tăng \(2\pi/3\). Đó là lý do hệ số trong đối số làm thay đổi chu kì theo **chiều ngược lại**.
 
@@ -67,7 +67,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** \(f(-x)=(-x)\sin(-x)=x\sin x=f(x)\), nên \(f\) chẵn. Với \(g(x)=2\), mọi \(T>0\) đều thỏa \(g(x+T)=g(x)\), vì thế không có số dương nhỏ nhất làm chu kì.
+        **Lời giải:** \(f(-x)=(-x)\sin(-x)=x\sin x=f(x)\), nên \(f\) chẵn. Với \(g(x)=2\), mọi \(T>0\) đều thỏa \(g(x+T)=g(x)\), nên hàm tuần hoàn nhưng không có số dương nhỏ nhất thỏa điều kiện; do đó **không có chu kì** theo định nghĩa SGK.
 
     ??? tip "Kiểm lỗi"
 
@@ -161,9 +161,9 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Đối xứng đồ thị</strong><p>Đồ thị hàm chẵn đối xứng qua <strong>trục tung</strong>; đồ thị hàm lẻ đối xứng qua <strong>gốc tọa độ</strong>. Phải kiểm miền xác định có đối xứng qua \(0\) trước khi áp dụng các đẳng thức \(f(-x)\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hàm số tuần hoàn và chu kì</strong><p>Hàm \(f\) trên tập \(D\) là <strong>tuần hoàn</strong> nếu tồn tại \(T\ne0\) sao cho với mọi \(x\in D\), cả \(x+T\) và \(x-T\) thuộc \(D\), đồng thời \(f(x+T)=f(x)\). Một \(T>0\) có tính chất này được gọi là một chu kì. <strong>Chu kì cơ bản</strong> là số \(T>0\) nhỏ nhất trong các chu kì, <em>nếu có</em>.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hàm số tuần hoàn và chu kì</strong><p>Hàm \(f\) trên tập \(D\) là <strong>tuần hoàn</strong> nếu tồn tại \(T\ne0\) sao cho với mọi \(x\in D\), cả \(x+T\) và \(x-T\) thuộc \(D\), đồng thời \(f(x+T)=f(x)\). <strong>Chu kì</strong> của hàm số tuần hoàn (theo SGK) là số \(T>0\) nhỏ nhất thỏa các điều kiện trên, <em>nếu tồn tại</em>. Không nhầm với một số dương bất kì làm giá trị hàm lặp lại.</p></div>
 
-    **Ghi nhớ:** sin và cos tuần hoàn với chu kì cơ bản \(2\pi\); tan và cot tuần hoàn với chu kì cơ bản \(\pi\). Với hàm hằng trên \(\mathbb R\), không tồn tại chu kì cơ bản dù hàm tuần hoàn.
+    **Ghi nhớ:** sin và cos tuần hoàn với chu kì cơ bản \(2\pi\); tan và cot tuần hoàn với chu kì cơ bản \(\pi\). Với hàm hằng trên \(\mathbb R\), hàm vẫn tuần hoàn nhưng không có chu kì nhỏ nhất theo định nghĩa SGK.
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức chu kì đối số tuyến tính</strong><p>\(y=A\sin(\omega x+\varphi)\) hoặc \(y=A\cos(\omega x+\varphi)\) có chu kì cơ bản \(T=\dfrac{2\pi}{|\omega|}\) khi \(A\ne0,\ \omega\ne0\).</p><p>Đối với \(y=\tan(\omega x+\varphi)\), \(y=\cot(\omega x+\varphi)\), chu kì cơ bản là \(T=\dfrac{\pi}{|\omega|}\) khi \(\omega\ne0\) và xét đúng miền xác định.</p></div>
 
@@ -273,13 +273,13 @@
 
     **Cách sửa:** Kiểm miền \(D\) đối xứng trước; sau đó biến đổi \(f(-x)\) cho mọi \(x\in D\) để so với \(f(x),-f(x)\).
 
-    ### 4.3. Nhầm tính tuần hoàn với chu kì cơ bản
+    ### 4.3. Nhầm khoảng lặp với chu kì nhỏ nhất
 
-    **Dấu hiệu:** Nói hàm hằng có chu kì cơ bản bằng \(1\), hoặc cho \(T=3\cdot2\pi\) là chu kì cơ bản của sin.
+    **Dấu hiệu:** Nói hàm hằng có chu kì bằng \(1\), hoặc cho \(T=3\cdot2\pi\) là chu kì nhỏ nhất của sin.
 
-    **Vì sao sai:** Một số dương bất kỳ khiến hàm lặp lại không nhất thiết là số dương **nhỏ nhất**; hàm hằng trên \(\mathbb R\) không có chu kì cơ bản.
+    **Vì sao sai:** Một số dương làm hàm lặp lại chưa chắc là số dương **nhỏ nhất**; hàm hằng trên \(\mathbb R\) không có chu kì theo định nghĩa SGK.
 
-    **Cách sửa:** Phân biệt “một chu kì” với “chu kì cơ bản nếu có”; kiểm đối số và miền xác định, không chỉ thử một giá trị của \(T\).
+    **Cách sửa:** Phân biệt **khoảng lặp** bất kì với **chu kì nhỏ nhất nếu có**; kiểm đối số và miền xác định, không chỉ thử một giá trị của \(T\).
 
     ### 4.4. Nhầm khoảng đồng biến và nghịch biến trên hình sin/cos
 
