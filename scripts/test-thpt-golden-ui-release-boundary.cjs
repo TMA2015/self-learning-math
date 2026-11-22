@@ -101,11 +101,51 @@ const topicRegistration={cd01:{
  browser:"scripts/test-thpt-topic01-release-browser.py",
  sha:"scripts/test-thpt-topic01-release-intake.cjs"
 }};
+const w1Sources={
+ cd02:"d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5",
+ cd03:"38f41f013e75b42605d7a88f9205c20af6315a41",
+ cd04:"4e8238e188204eefc060f18c88ef7a0a3c51a60e",
+ cd05:"909f873c57e543b8f6d3c383d0b88df6900e334a"
+};
+for(const name of Object.keys(w1Sources)){
+ topicRegistration[name]={
+  source:"docs/thpt-preview/chuyen-de/"+name+"/kien-thuc.md",
+  practice:"docs/thpt-preview/chuyen-de/"+name+"/luyen-tap.md",
+  self:"docs/thpt-preview/chuyen-de/"+name+"/tu-kiem-tra.md",
+  ui:"docs/assets/javascripts/thpt-topic-w1-golden-v1.js",
+  browser:"scripts/test-thpt-topic-w1-golden-browser.py",
+  sha:"scripts/test-thpt-topic-w1-source-locked.py"
+ };
+}
 assert.deepEqual(futureTopics.filter(x=>!topicRegistration[x]),[],
  "New THPT Topic practice must register Golden modal, three-page UX and independent browser/Q16 gate first");
 for(const name of futureTopics){
  const spec=topicRegistration[name],knowledge=read(spec.source),practice=read(spec.practice),
   self=read(spec.self),ui=read(spec.ui),browser=read(spec.browser),sha=read(spec.sha);
+ if(w1Sources[name]){
+  const id=name.slice(2);
+  for(const [value,file] of [[knowledge,"Kiến thức"],[practice,"Luyện tập"],[self,"Tự kiểm tra"]]){
+   assert(value.includes("TOPIC"+id+"_APPROVED_SOURCE_START")&&
+    value.includes(w1Sources[name]),name+" "+file+": approved exact Q18 learner snapshot required");
+  }
+  for(const contract of ["THPT_GOLDEN_RUNTIME","golden.publicOnly()","golden.bindDialog","golden.renderNav","golden.bindPager",
+   "thpt-r4-practice-dialog","thpt-r4-modal-question-nav","dataset.thptCanonicalItem"]){
+   assert(ui.includes(contract),name+": W1 needs real shared Golden modal and same canonical IDs "+contract);
+  }
+  for(const contract of ["topic-w1-boot-status","data-topic-w1-source-start","topic-w1-fallback"]){
+   assert(knowledge.includes(contract)&&practice.includes(contract)&&self.includes(contract),
+    name+": no raw Markdown flash without accessible fallback "+contract);
+  }
+  assert(browser.includes("data-topic-w1-selfcheck")&&
+   browser.includes("data-topic-w1-practice-card")&&
+   browser.includes("data-thpt-canonical-solution")&&
+   sha.includes(w1Sources[name]),name+": scoped browser Q15/Q16/source receipt gate missing");
+  assert(!/localStorage|sessionStorage|indexedDB|firebase\.|recordMastery|setDoc\(/.test(ui),
+   name+": W1 public read-only Golden must not write student/assessment state");
+  assert(!/<form\b|data-thpt-readiness|data-mastery-credit/i.test(self),
+   name+": public SelfCheck must not impersonate protected assessment");
+  continue;
+ }
  assert(knowledge.includes("data-topic01-knowledge-start")&&
   practice.includes("data-topic01-practice-start")&&
   self.includes("TOPIC01_APPROVED_SOURCE_START"),

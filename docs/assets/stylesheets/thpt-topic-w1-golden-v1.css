@@ -1,0 +1,134 @@
+/* CĐ02–05 W1 · owner-approved CĐ01/SGK Golden. Visual styles from
+ * thpt-topic01-release-v1.css + SGK R4 (already loaded by MkDocs).
+ * This stylesheet is strictly a scoped first-paint/boot and layout adapter,
+ * NOT an alternative palette, typography or standard. */
+.topic-w1-release-nav{max-width:100%;margin:0 0 18px}
+.topic-w1-release-nav .topic-w1-back{font-size:.8rem}
+.topic-w1-release-nav .topic-w1-assessment-note{padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;background:var(--md-code-bg-color);font-size:.8rem;line-height:1.6}
+.topic-w1-source-intro{margin:.7rem 0}
+.topic-w1-end-nav{margin-top:30px;padding-top:14px;border-top:1px solid var(--md-default-fg-color--lightest)}
+.topic-w1-boot-status{display:none;margin:12px 0 18px;padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;background:var(--md-code-bg-color);color:var(--md-default-fg-color);font-size:.8rem;line-height:1.5}
+html:is(.topic-w1-pending,.topic-w1-fallback) .topic-w1-boot-status{display:block}
+html.topic-w1-pending .md-content__inner > p:has(> span[data-topic-w1-source-start]) ~ *{display:none!important}
+.topic-w1-source-shelf[hidden],.topic-w1-selfcheck-source-shelf[hidden],[data-topic-w1-solution][hidden]{display:none!important}
+.topic-w1-knowledge .topic01-knowledge-layout{max-width:100%;width:100%;min-width:0;overflow-x:clip}
+.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs{max-width:100%;min-width:0;overflow-x:auto;overflow-y:hidden}
+.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-panel{max-width:100%;min-width:0}
+.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel :is(mjx-container[display="true"],table,.arithmatex){max-width:100%;overflow-x:auto}
+.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel :is(p,li){overflow-wrap:break-word}
+.topic-w1-practice-hub .topic01-golden-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+.topic-w1-practice-hub .topic01-single-card{grid-template-columns:minmax(0,1fr)}
+.topic-w1-practice-dialog .thpt-r4-formative-actions details{max-width:100%}
+.topic-w1-practice-dialog .thpt-r4-formative-reveal{white-space:pre-wrap;overflow-wrap:anywhere}
+.topic-w1-selfcheck .g10sc-body{max-width:100%;overflow-wrap:break-word}
+.topic-w1-selfcheck .g10sc-body mjx-container{max-width:100%;overflow-x:auto}
+@media(max-width:640px){.topic-w1-practice-hub .topic01-golden-grid{grid-template-columns:1fr}}
+
+/* Scoped 3+1 token lock for W1. Values copied from approved SGK/CĐ01 Golden,
+ * not a new palette. Topic01 stylesheet's generic recap background must never
+ * override semantic concept/rule roles on CĐ02–05. */
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="concept"]{
+ background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="rule"]{
+ background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="recap"]{
+ background:#fff3d5;border-color:#eacb7c;border-left-color:#c49a37;color:#27344f
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="formula"]{
+ background:transparent;border:1px solid var(--slm-g10-line);color:inherit
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="concept"]{
+ background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="rule"]{
+ background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="recap"]{
+ background:#4a3a25;border-color:#9e7d39;border-left-color:#d6aa49;color:#fff3d5
+}
+
+/* Golden SGK Knowledge disclosure is blue-neutral, NEVER default neon green. */
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question{
+ background:#f8faff;border:1px solid #d9e4f4;border-radius:.62rem;box-shadow:none;color:#243753;overflow:hidden
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary{
+ list-style:none;position:relative;color:#263e73;background:transparent;border:0;border-radius:.62rem;
+ font-weight:700;font-size:.88rem;line-height:1.45;padding:.7rem .85rem .7rem 2.15rem
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::before{
+ -webkit-mask:none;mask:none;background:none;content:"▶";display:block;color:#263e73;
+ width:.85rem;height:auto;font-size:.72rem;top:.76rem;left:.88rem;transform:none
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::after{display:none}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question{
+ background:#202e48;border-color:#465978;color:#dce6fc
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary,
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::before{color:#e2ebff}
+
+/* SGK/CĐ01 accepted horizontal 44px tab rail; keep identical on all W1 topics. */
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs{
+ display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;max-width:100%;min-width:0;gap:8px;padding:12px 2px
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{
+ flex:0 0 auto;width:auto;max-width:none;white-space:nowrap;box-sizing:border-box;
+ display:inline-flex;align-items:center;justify-content:center;height:44px;min-height:44px;
+ font-size:15px;line-height:1.45;padding:9px 13px;border-radius:9px;font-weight:700;
+ border:1px solid #cdd8ec;background:#edf2fb;color:#2d426f;box-shadow:none
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab.is-active{
+ background:#284db5;color:#fff;border-color:#284db5
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{
+ background:#263753;color:#e6edff;border-color:#455b83
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab.is-active{
+ background:#3457bd;color:#fff;border-color:#5976d9
+}
+@media(max-width:640px){
+ body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{
+  font-size:14px;padding:8px 10px
+ }
+}
+
+/* Specific W1 token guard against legacy generic thpt-r4-knowledge-conclusion
+ * background override (scoped to attributes created only by this adapter).
+ * Important is intentionally limited to 3+1 semantic tokens, never sitewide. */
+body [data-topic-w1-callout="concept"]{background-color:#e8f7f2!important;border-color:#a9dccc!important;border-left-color:#087d69!important;color:#174137!important}
+body [data-topic-w1-callout="rule"]{background-color:#eaf1fc!important;border-color:#a5bee5!important;border-left-color:#4879c2!important;color:#193d66!important}
+body [data-topic-w1-callout="recap"]{background-color:#fff3d5!important;border-color:#eacb7c!important;border-left-color:#c49a37!important;color:#27344f!important}
+body [data-topic-w1-callout="formula"]{background-color:transparent!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-callout="concept"]{background-color:#193d36!important;border-color:#447e70!important;border-left-color:#76dfc7!important;color:#e9fff7!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-callout="rule"]{background-color:#203551!important;border-color:#45658a!important;border-left-color:#8cb4ed!important;color:#ecf5ff!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-callout="recap"]{background-color:#4a3a25!important;border-color:#9e7d39!important;border-left-color:#d6aa49!important;color:#fff3d5!important}
+
+/* Release regression G-R02: exact pixel-locked approved SGK/CĐ01 tab dimensions.
+ * Existing SGK-specific selectors have unusually high specificity; restrict
+ * the override to the four W1 Topic canvases (never global tabs/SGK). */
+body .topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs .thpt-r4-knowledge-tab{
+ font-size:15px!important;height:44px!important;min-height:44px!important
+}
+@media(max-width:640px){
+ body .topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs .thpt-r4-knowledge-tab{
+  font-size:14px!important;height:44px!important;min-height:44px!important
+ }
+}
+
+/* Strict SGK tab metrics on W1's unique attributes; inherited Material
+ * accordion/tab sizing may otherwise override the old class-only adapter. */
+body :is([data-topic-w1-module-tab],[data-topic-w1-subtab]){
+ font-size:15px!important;height:44px!important;min-height:44px!important;
+ box-sizing:border-box!important;line-height:1.45!important;padding:9px 13px!important
+}
+@media(max-width:640px){
+ body :is([data-topic-w1-module-tab],[data-topic-w1-subtab]){font-size:14px!important;padding:8px 10px!important}
+}
+
+/* Exclusive W1 Knowledge disclosure override; public Practice and SGK
+ * remain untouched, including their independent action contracts. */
+body [data-topic-w1-knowledge] details.question{background-color:#f8faff!important;border-color:#d9e4f4!important;color:#243753!important}
+body [data-topic-w1-knowledge] details.question>summary{background-color:transparent!important;color:#263e73!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question{background-color:#202e48!important;border-color:#465978!important;color:#dce6fc!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question>summary{color:#e2ebff!important}
