@@ -24,7 +24,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Phải trừ 4, không trừ hai lần. [Luyện lại câu B29-C01](../luyen-tap/?item=THPT-G11-CHVIII-B29-C01)
+        **Vì sao dễ sai:** Cộng hai tổng nhóm trực tiếp đếm phần giao hai lần; phải trừ đúng một lần.
+
+        **Tự sửa:** Phải trừ 4, không trừ hai lần. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B29-C01">Luyện lại câu B29-C01</a>
 
     ### 1.2. Cộng khi không giao
     
@@ -42,7 +44,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm tra giao trước khi cộng. [Luyện lại câu B29-C02](../luyen-tap/?item=THPT-G11-CHVIII-B29-C02)
+        **Vì sao dễ sai:** Cộng trực tiếp chỉ khi giao rỗng; một kết quả trong giao không thể được đếm hai lần.
+
+        **Tự sửa:** Kiểm tra giao trước khi cộng. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B29-C02">Luyện lại câu B29-C02</a>
 
     ### 1.3. Không biến cố nào
     
@@ -60,7 +64,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không dùng 1−P(AB) nếu muốn cả hai đều không xảy ra. [Luyện lại câu B29-C03](../luyen-tap/?item=THPT-G11-CHVIII-B29-C03)
+        **Vì sao dễ sai:** Không xảy ra cả A lẫn B là biến cố đối của hợp, không phải đối của giao.
+
+        **Tự sửa:** Không dùng 1−P(AB) nếu muốn cả hai đều không xảy ra. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B29-C03">Luyện lại câu B29-C03</a>
 
     ### 1.4. Đọc bốn miền
     
@@ -78,7 +84,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm 13+11+7+19=50. [Luyện lại câu B29-C04](../luyen-tap/?item=THPT-G11-CHVIII-B29-C04)
+        **Vì sao dễ sai:** Bốn miền không giao nhau phải khớp tổng mẫu; nếu thiếu miền ngoài cả hai, bảng chưa đủ.
+
+        **Tự sửa:** Kiểm 13+11+7+19=50. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B29-C04">Luyện lại câu B29-C04</a>
 
     ### 1.5. Kiểm dữ kiện
     
@@ -96,7 +104,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm cả giới hạn dưới của giao, không chỉ giới hạn trên. [Luyện lại câu B29-C05](../luyen-tap/?item=THPT-G11-CHVIII-B29-C05)
+        **Vì sao dễ sai:** Độ lớn phần giao còn chịu giới hạn dưới do P(A∪B) ≤ 1, chứ không chỉ bị chặn trên.
+
+        **Tự sửa:** Kiểm cả giới hạn dưới của giao, không chỉ giới hạn trên. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B29-C05">Luyện lại câu B29-C05</a>
 
     ### 1.6. Đếm bằng tổ hợp
     
@@ -114,7 +124,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy tổng 9 làm mẫu số; đơn vị kết quả là cặp. [Luyện lại câu B29-C06](../luyen-tap/?item=THPT-G11-CHVIII-B29-C06)
+        **Vì sao dễ sai:** Đơn vị cơ bản là một cặp thẻ không thứ tự; đổi sang đếm từng thẻ riêng làm sai mẫu số.
+
+        **Tự sửa:** Không lấy tổng 9 làm mẫu số; đơn vị kết quả là cặp. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B29-C06">Luyện lại câu B29-C06</a>
 
 === "Kiến thức SGK"
 
@@ -174,14 +186,16 @@
     
     ??? tip "4.1. Cộng quên trừ giao"
     
-        Đếm từng miền riêng, xem 2.2. [Luyện lại câu B29-C01](../luyen-tap/?item=THPT-G11-CHVIII-B29-C01)
+        Đếm từng miền riêng, xem 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B29-C01">Luyện lại câu B29-C01</a>
 
     <span data-thpt-help-id="HELP-G11-CHVIII-B29-02" hidden></span>
     
     ??? tip "4.2. Chấp nhận xác suất lớn hơn 1"
     
-        So giới hạn giao và hợp, xem 2.2. [Luyện lại câu B29-C05](../luyen-tap/?item=THPT-G11-CHVIII-B29-C05)
+        So giới hạn giao và hợp, xem 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B29-C05">Luyện lại câu B29-C05</a>
 
-    [Core và Luyện tập Bài 29](luyen-tap.md) · [Tự luận Chương VIII](../../../thu-vien/tu-luan-g11-chuong-viii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    [Core và Luyện tập Bài 29](luyen-tap.md) · <a href="../../../thu-vien/tu-luan-g11-chuong-viii.md">Tự luận Chương VIII</a> · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
 *Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 29, trang in 72–75.*
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 29 (trang in 72–75); đối chiếu SBT cùng bộ (tài liệu tham khảo luyện tập).</p>
