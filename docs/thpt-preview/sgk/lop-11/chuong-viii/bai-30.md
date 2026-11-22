@@ -24,7 +24,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Chỉ nhân vì đã nêu độc lập. [Luyện lại câu B30-C01](../luyen-tap/?item=THPT-G11-CHVIII-B30-C01)
+        **Vì sao dễ sai:** Quy tắc nhân xác suất biên chỉ đúng khi đã kiểm/được cho tính độc lập; chữ 'và' không tự cho phép nhân.
+
+        **Tự sửa:** Chỉ nhân vì đã nêu độc lập. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C01">Luyện lại câu B30-C01</a>
 
     ### 1.2. Kiểm tra bằng số liệu
     
@@ -42,7 +44,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không suy luận từ tên A,B. [Luyện lại câu B30-C02](../luyen-tap/?item=THPT-G11-CHVIII-B30-C02)
+        **Vì sao dễ sai:** Độc lập là điều kiện định lượng P(A∩B)=P(A)P(B), không suy từ tên hoặc bối cảnh nghe tách biệt.
+
+        **Tự sửa:** Không suy luận từ tên A,B. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C02">Luyện lại câu B30-C02</a>
 
     ### 1.3. Cây và các lần thử
     
@@ -60,7 +64,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Bốn lá phải cộng bằng 1. [Luyện lại câu B30-C03](../luyen-tap/?item=THPT-G11-CHVIII-B30-C03)
+        **Vì sao dễ sai:** Mỗi đường đi trên cây nhân xác suất nhánh; các lá rời nhau phải cộng thành toàn bộ 1.
+
+        **Tự sửa:** Bốn lá phải cộng bằng 1. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C03">Luyện lại câu B30-C03</a>
 
     ### 1.4. Dùng bù
     
@@ -78,7 +84,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không nhầm với đúng một hay cả hai. [Luyện lại câu B30-C04](../luyen-tap/?item=THPT-G11-CHVIII-B30-C04)
+        **Vì sao dễ sai:** Ít nhất một là biến cố đối của cả hai đều thất bại; không đồng nhất với cả hai cùng thành công.
+
+        **Tự sửa:** Không nhầm với đúng một hay cả hai. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C04">Luyện lại câu B30-C04</a>
 
     ### 1.5. Độc lập và xung khắc
     
@@ -96,7 +104,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Trường hợp xác suất 0 cần xét riêng bằng đẳng thức. [Luyện lại câu B30-C05](../luyen-tap/?item=THPT-G11-CHVIII-B30-C05)
+        **Vì sao dễ sai:** Khi xung khắc mà từng xác suất dương, tích xác suất riêng dương nhưng giao bằng 0; ngoại lệ 0 phải kiểm riêng.
+
+        **Tự sửa:** Trường hợp xác suất 0 cần xét riêng bằng đẳng thức. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C05">Luyện lại câu B30-C05</a>
 
     ### 1.6. Bảng số liệu hai chiều
     
@@ -114,7 +124,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không suy rộng ra toàn dân nếu mẫu không đại diện. [Luyện lại câu B30-C06](../luyen-tap/?item=THPT-G11-CHVIII-B30-C06)
+        **Vì sao dễ sai:** Từ một bảng chọn đều người ta suy được xác suất của phân bố đang khảo sát, không suy quan hệ nhân quả hoặc đại diện dân số.
+
+        **Tự sửa:** Không suy rộng ra toàn dân nếu mẫu không đại diện. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C06">Luyện lại câu B30-C06</a>
 
 === "Kiến thức SGK"
 
@@ -174,20 +186,22 @@
     
     ??? tip "4.1. Nhân khi chưa biết độc lập"
     
-        Kiểm tiêu chí tích bằng giao hoặc giả thiết, xem 2.1. [Luyện lại câu B30-C01](../luyen-tap/?item=THPT-G11-CHVIII-B30-C01)
+        Kiểm tiêu chí tích bằng giao hoặc giả thiết, xem 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C01">Luyện lại câu B30-C01</a>
 
     <span data-thpt-help-id="HELP-G11-CHVIII-B30-02" hidden></span>
     
     ??? tip "4.2. Lấy giao thay cho ít nhất một"
     
-        Dùng bù cả hai thất bại, xem 2.2. [Luyện lại câu B30-C04](../luyen-tap/?item=THPT-G11-CHVIII-B30-C04)
+        Dùng bù cả hai thất bại, xem 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C04">Luyện lại câu B30-C04</a>
 
     <span data-thpt-help-id="HELP-G11-CHVIII-B30-03" hidden></span>
     
     ??? tip "4.3. Suy độc lập từ tên biến cố"
     
-        Tính ba xác suất rồi so tích, xem 2.1. [Luyện lại câu B30-P02](../luyen-tap/?item=THPT-G11-CHVIII-B30-P02)
+        Tính ba xác suất rồi so tích, xem 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-P02">Luyện lại câu B30-P02</a>
 
-    [Core và Luyện tập Bài 30](luyen-tap.md) · [Tự luận Chương VIII](../../../thu-vien/tu-luan-g11-chuong-viii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    [Core và Luyện tập Bài 30](luyen-tap.md) · <a href="../../../thu-vien/tu-luan-g11-chuong-viii.md">Tự luận Chương VIII</a> · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
 *Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 30, trang in 76–78.*
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 30 (trang in 76–78); đối chiếu SBT cùng bộ (tài liệu tham khảo luyện tập).</p>
