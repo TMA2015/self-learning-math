@@ -174,7 +174,7 @@
 
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B26-R02-04"><p><strong>Đề bài:</strong> Lăng trụ xiên có cạnh bên 13 cm, hình chiếu cạnh ấy trên đáy dài 5 cm. Tính khoảng cách hai mặt đáy.</p><p><strong>Phân tích:</strong> Dùng tam giác vuông từ một đỉnh trên xuống đáy.</p><p><strong>Lời giải:</strong> \(h=\sqrt{13^2-5^2}=12\) cm; khoảng cách hai mặt đáy là 12 cm.</p><p><strong>Kiểm lại:</strong> Chiều cao nhỏ hơn cạnh xiên 13 cm.</p></div>
 
-    ### 3.5. Dựng đoạn vuông góc chung trong hình hộp
+    ### 3.5. Khoảng cách giữa hai đường song song trong hình hộp
 
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B26-R02-05"><p><strong>Đề bài:</strong> Hộp chữ nhật ABCD.A'B'C'D' có AB=6, BC=10, AA'=4 cm. Tính d(AD, B'C').</p><p><strong>Phân tích:</strong> AD và B'C' cùng phương, đây là hai đường song song chứ không chéo nhau. Chọn A thuộc AD và B' thuộc B'C'.</p><p><strong>Lời giải:</strong> \(AB'\perp AD\) vì AD vuông góc AB,AA' cắt nhau trong (ABB'A'); AD cũng song song B'C', nên \(AB'\perp B'C'\). Khoảng cách bằng \(AB'=\sqrt{6^2+4^2}=2\sqrt{13}\) cm.</p><p><strong>Kiểm lại:</strong> Đã phân loại đúng: hai đường song song; không cần gọi là chéo nhau.</p></div>
 
