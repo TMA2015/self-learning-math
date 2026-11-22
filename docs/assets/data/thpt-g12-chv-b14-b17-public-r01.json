@@ -1353,6 +1353,62 @@
         "2đ tính khoảng cách h từ tâm tới mặt phẳng; 1đ so với R; 1đ tìm bán kính thiết diện hoặc tiếp điểm; 1đ kiểm kết luận và điều kiện h<R/h=R/h>R."
       ],
       "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B17-C06",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O06",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Trên mô hình Trái Đất là mặt cầu đơn vị Oxyz, Ox hướng kinh tuyến gốc ở xích đạo, Oy hướng 90° Đông, Oz hướng Bắc. Điểm M ở vĩ độ 30° Bắc, kinh độ 90° Tây có tọa độ nào?",
+      "answer": "M=(0,−√3/2,1/2)",
+      "solution": "Lấy φ=30°, λ=−90°. M=(cosφ cosλ,cosφ sinλ,sinφ)=(0,−√3/2,1/2). Kiểm 0²+3/4+1/4=1 và Oy âm vì kinh độ Tây."
+    },
+    {
+      "item_id": "THPT-G12-B17-P06",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O06",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Trên mặt cầu đơn vị, P ở vĩ độ 45° Bắc kinh độ 0°, Q ở vĩ độ 45° Bắc kinh độ 90° Đông. Giả sử bán kính Trái Đất 6371 km. Tính góc tâm nhỏ POQ và khoảng cách cung ngắn, làm tròn 0,1 km.",
+      "answer": "θ=60°=π/3 rad; s=6371π/3≈6671,7 km",
+      "solution": "P=(√2/2,0,√2/2), Q=(0,√2/2,√2/2). Tích vô hướng OP·OQ=1/2; hai vectơ đơn vị nên cosθ=1/2, θ=60°=π/3. Cung ngắn theo đường tròn lớn: s=6371θ≈6671,7 km. Không lấy độ dài cung trên vĩ tuyến 45° vì nói đến đường ngắn nhất trên mặt cầu."
+    },
+    {
+      "item_id": "THPT-G12-B17-A06",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O06",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Hai vị trí A(0° vĩ độ, 0° kinh độ) và B(0° vĩ độ, 135° Tây) nằm trên mô hình mặt cầu Trái Đất bán kính 6371 km. Tính khoảng cách cung ngắn và khoảng cách dây thẳng AB, làm tròn 0,1 km; giải thích vì sao hai số khác nhau.",
+      "answer": "Cung ngắn s=6371·3π/4≈15011,3 km; dây AB=2·6371·sin(3π/8)≈11772,1 km",
+      "solution": "OA=(1,0,0), OB=(−√2/2,−√2/2,0), nên OA·OB=−√2/2. Góc tâm θ=arccos(−√2/2)=135°=3π/4 rad, không lấy trị tuyệt đối của tích vô hướng. Cung trên mặt cầu s=Rθ≈15011,3 km; đoạn nối thẳng qua bên trong cầu là dây c=2R sin(θ/2)≈11772,1 km. Dây ngắn hơn cung, không phải đường đi trên bề mặt."
+    },
+    {
+      "item_id": "THPT-G12-B17-W06",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O06",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 4,
+      "stem": "Trong mô hình Trái Đất bán kính 6371 km, P ở 30° Bắc, 60° Đông; Q ở 30° Nam, 60° Tây. (a) Viết tọa độ P, Q trên cầu đơn vị. (b) Tính tích vô hướng OP·OQ, góc tâm POQ trong [0°,180°]. (c) Tính khoảng cách cung ngắn theo km (làm tròn 0,1 km) và nêu vì sao không được thay tích vô hướng bằng trị tuyệt đối.",
+      "answer": "P=(√3/4,3/4,1/2); Q=(√3/4,−3/4,−1/2); OP·OQ=−5/8; θ=arccos(−5/8)≈128,6822°; s≈14308,8 km",
+      "solution": "Đặt φP=30°, λP=60°, φQ=−30°, λQ=−60°. Theo công thức tọa độ trên cầu đơn vị, P=(√3/4,3/4,1/2), Q=(√3/4,−3/4,−1/2). Tích vô hướng bằng 3/16−9/16−1/4=−5/8, độ dài mỗi vectơ bằng 1. Do đó θ=arccos(−5/8)≈2,24592786 rad (>π/2), s=6371θ≈14308,8 km. Lấy |dot| sẽ biến góc tù thành góc nhọn và cho cung ngắn sai.",
+      "rubric": [
+        "1đ đúng tọa độ P và quy ước Bắc/Đông; 1đ đúng tọa độ Q và quy ước Nam/Tây; 1đ tính và kiểm tích vô hướng −5/8, hai vectơ đơn vị; 1đ tìm θ=arccos(−5/8) trong [0,π] và không dùng trị tuyệt đối; 1đ đổi radian, tính s≈14308,8 km và giải thích hạn chế của trị tuyệt đối."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
     }
   ],
   "help": [
@@ -1715,6 +1771,21 @@
       ],
       "return_item": "THPT-G12-B17-C05",
       "practice_item": "THPT-G12-B17-P05"
+    },
+    {
+      "help_id": "HELP-G12-B17-06",
+      "lesson_id": "B17",
+      "outcome_id": "G12-CHV-B17-O06",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Đảo dấu kinh độ Tây hoặc lấy |OP·OQ| như tính góc giữa hai đường thẳng, dẫn tới cung mặt cầu sai.",
+        "**Quay lại tiền đề:** Tích vô hướng hai vectơ đơn vị cho cos của góc tâm có hướng từ 0 đến π; kinh độ Đông dương, Tây âm; s=6371θ chỉ khi θ là radian.",
+        "**Ví dụ chữa nhỏ:** Với P ở xích đạo 0° và Q ở xích đạo 180° Đông, P=(1,0,0), Q=(−1,0,0), dot=−1, θ=π và cung ngắn dài 6371π km; hai điểm đối cực có nhiều đường tròn lớn ngắn nhất cùng độ dài. Không đổi dot thành 1.",
+        "**Tự làm lại có dẫn:** Xác định dấu vĩ độ/kinh độ → tính tọa độ đơn vị → tự kiểm độ dài bằng 1 → lấy dot trong [−1,1] → θ=arccos(dot) trong [0,π] → s=6371θ; làm tròn sau cùng. Thử bài độc lập trước khi đối chiếu.",
+        "**Quay lại cùng outcome:** làm câu Core địa lí được liên kết trước, sau đó Luyện tập cung mặt cầu; tự giải trước khi xem đáp án. Xem lời giải không ghi Mastery."
+      ],
+      "return_item": "THPT-G12-B17-C06",
+      "practice_item": "THPT-G12-B17-P06"
     }
   ],
   "end_references": [
@@ -1837,6 +1908,11 @@
       "placement_id": "END-CHV-17-05",
       "item_id": "THPT-G12-B17-A05",
       "outcome_id": "G12-CHV-B17-O05"
+    },
+    {
+      "placement_id": "END-CHV-17-06",
+      "item_id": "THPT-G12-B17-A06",
+      "outcome_id": "G12-CHV-B17-O06"
     }
   ]
 }
