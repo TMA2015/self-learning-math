@@ -24,7 +24,8 @@ with sync_playwright() as pw:
     assert p.goto(BASE+part+"/",wait_until="domcontentloaded").status==200
     nav=p.locator(".topic01-release-nav .thpt-sgk-lesson-nav")
     expect(nav.locator(":scope > *")).to_have_count(4)
-    expect(nav.locator("a")).to_have_count(2)
+    expect(nav.locator("a")).to_have_count(3)  # CĐ02 W1 neighbor now published
+    expect(nav.locator("a[href='../../cd02/kien-thuc/']")).to_have_count(1)
     assert not any(("/"+part+"/") in (link.get_attribute("href") or "") for link in nav.locator("a").all())
     assert p.locator("[data-thpt-readiness],[data-mastery-credit]").count()==0
     assert not p.evaluate("document.documentElement.className.includes('topic01-boot-pending-')"),(engine,width,part,"hydration never completed")
