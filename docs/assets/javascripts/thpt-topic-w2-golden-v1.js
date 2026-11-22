@@ -301,7 +301,7 @@ const normalizeRenderedMath=node=>{
  while(walker.nextNode()){
   const t=walker.currentNode,p=t.parentElement;
   if(!p||p.closest(".arithmatex,mjx-container,code,pre,script,style,textarea,svg"))continue;
-  if(t.nodeValue.includes("^")||t.nodeValue.includes("\\operatorname{sđ}"))texts.push(t);
+  if(t.nodeValue.includes("^")||t.nodeValue.includes("\\operatorname{sđ}")||t.nodeValue.includes("\\lim("))texts.push(t);
  }
  // Python-Markdown stripped two verified blockquote display forms: CĐ06 Chasles
  // and CĐ08 finite-limit theorem. Recover only these original TeX expressions.
