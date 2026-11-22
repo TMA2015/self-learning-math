@@ -57,3 +57,80 @@ Total: 27 local FirstTry, 27 worked examples, 5 unchanged SVG, 30 frozen C/P, 10
 ## AUTHORING_BOUNDARY
 
 R02 author QA (five learner files) previously verified 100/100 source checks, 72,000 numeric geometry/projection spot probes with 9 additional checks on previous blobs; this R04 separately checks changed B14 definition against the line-contained-in-plane counterexample and verifies 55 exact label/href link-preserving conversions. **Those old checks do not automatically run on new SHA.** Current original C/P/Written/SVG unchanged by hash. A1–A7, Q01–Q18 signoff and 40-item reconciliation are in the separate R04 source-locked Q18 author receipt.
+
+## CANONICAL_REGISTER_ANCHORS_FOR_V2_GATE
+
+**The following are identity metadata only, not a copied stem, key, worked solution, or learner article.** Source-locked exact learner Markdown, bank and Written blobs remain above. 22 registered outcomes include 21 lesson outcomes and the original chapter-wide integrated outcome.
+
+### LESSON_IDS
+- G11-B10
+- G11-B11
+- G11-B12
+- G11-B13
+- G11-B14
+
+### OUTCOME_IDS
+- G11-B10-INCIDENCE
+- G11-B10-PLANE
+- G11-B10-PLANE_INTERSECTION
+- G11-B10-LINE_PLANE
+- G11-B10-SECTION
+- G11-B11-RELATIVE
+- G11-B11-COPLANAR
+- G11-B11-PARALLEL_PROOF
+- G11-B11-INTERSECT_PLANES
+- G11-B12-POSITIONS
+- G11-B12-PARALLEL_TEST
+- G11-B12-PLANE_INTERSECTION
+- G11-B12-CONSTRUCTION
+- G11-B13-PLANE_POSITIONS
+- G11-B13-PLANE_TEST
+- G11-B13-TRANSVERSAL
+- G11-B13-PRISM_RATIO
+- G11-B14-PROJECTION_DEF
+- G11-B14-DEGENERACY
+- G11-B14-AFFINE_INVARIANTS
+- G11-B14-PARALLEL_AND_SHAPES
+- G11-CHIV-INTEGRATED
+
+### PUBLIC_ITEM_IDS_ORIGINAL_40
+- THPT-G11-CHIV-B10-C01
+- THPT-G11-CHIV-B10-C02
+- THPT-G11-CHIV-B10-P01
+- THPT-G11-CHIV-B10-P02
+- THPT-G11-CHIV-B10-P03
+- THPT-G11-CHIV-B10-P04
+- THPT-G11-CHIV-B10-W01
+- THPT-G11-CHIV-B10-W02-ANCHOR
+- THPT-G11-CHIV-B11-C01
+- THPT-G11-CHIV-B11-C02
+- THPT-G11-CHIV-B11-P01
+- THPT-G11-CHIV-B11-P02
+- THPT-G11-CHIV-B11-P03
+- THPT-G11-CHIV-B11-P04
+- THPT-G11-CHIV-B11-W01
+- THPT-G11-CHIV-B11-W02-ANCHOR
+- THPT-G11-CHIV-B12-C01
+- THPT-G11-CHIV-B12-C02
+- THPT-G11-CHIV-B12-P01
+- THPT-G11-CHIV-B12-P02
+- THPT-G11-CHIV-B12-P03
+- THPT-G11-CHIV-B12-P04
+- THPT-G11-CHIV-B12-W01
+- THPT-G11-CHIV-B12-W02-ANCHOR
+- THPT-G11-CHIV-B13-C01
+- THPT-G11-CHIV-B13-C02
+- THPT-G11-CHIV-B13-P01
+- THPT-G11-CHIV-B13-P02
+- THPT-G11-CHIV-B13-P03
+- THPT-G11-CHIV-B13-P04
+- THPT-G11-CHIV-B13-W01
+- THPT-G11-CHIV-B13-W02-ANCHOR
+- THPT-G11-CHIV-B14-C01
+- THPT-G11-CHIV-B14-C02
+- THPT-G11-CHIV-B14-P01
+- THPT-G11-CHIV-B14-P02
+- THPT-G11-CHIV-B14-P03
+- THPT-G11-CHIV-B14-P04
+- THPT-G11-CHIV-B14-W01
+- THPT-G11-CHIV-B14-W02-ANCHOR
