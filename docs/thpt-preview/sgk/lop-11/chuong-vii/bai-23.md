@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Từ một góc vuông suy vuông góc cả mặt.
 
-        **Tự sửa:** Kiểm định nghĩa mọi đường trong mặt. [Luyện lại câu B23-C01](../luyen-tap/?item=THPT-G11-CHVII-B23-C01).
+        **Tự sửa:** Kiểm định nghĩa mọi đường trong mặt. <a href="../luyen-tap/?item=THPT-G11-CHVII-B23-C01">Luyện lại câu B23-C01</a>.
 
     ### 1.2. Dấu hiệu hai đường cắt nhau
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Nhảy thẳng sang BD mà chưa chứng minh đường–mặt.
 
-        **Tự sửa:** Nêu hai đường, giao điểm, cùng mặt, dấu hiệu rồi suy hệ quả. [Luyện lại câu B23-C02](../luyen-tap/?item=THPT-G11-CHVII-B23-C02).
+        **Tự sửa:** Nêu hai đường, giao điểm, cùng mặt, dấu hiệu rồi suy hệ quả. <a href="../luyen-tap/?item=THPT-G11-CHVII-B23-C02">Luyện lại câu B23-C02</a>.
 
     ### 1.3. Phương pháp tuyến và tính chất duy nhất
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** Dùng một điểm bất kì trên mặt qua I mà không kiểm mặt vuông góc AB.
 
-        **Tự sửa:** Xác định trung điểm và phương vuông góc; kiểm hai tam giác vuông. [Luyện lại câu B23-C04](../luyen-tap/?item=THPT-G11-CHVII-B23-C04).
+        **Tự sửa:** Xác định trung điểm và phương vuông góc; kiểm hai tam giác vuông. <a href="../luyen-tap/?item=THPT-G11-CHVII-B23-C04">Luyện lại câu B23-C04</a>.
 
     ### 1.4. Chuyển quan hệ qua đường hoặc mặt song song
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Cho rằng phải dùng chung một chân vuông góc.
 
-        **Tự sửa:** Tách chuyển song song đường và chuyển song song mặt. [Luyện lại câu B23-C03](../luyen-tap/?item=THPT-G11-CHVII-B23-C03).
+        **Tự sửa:** Tách chuyển song song đường và chuyển song song mặt. <a href="../luyen-tap/?item=THPT-G11-CHVII-B23-C03">Luyện lại câu B23-C03</a>.
 
     ### 1.5. Hai vạch kiểm tra phải đúng mặt và cắt nhau
 
@@ -106,7 +106,7 @@
 
         **Dấu hiệu:** Đếm số vạch mà không kiểm phương.
 
-        **Tự sửa:** Dùng cặp cạnh kề trong cùng mặt, xem 2.1. [Luyện lại câu B23-C05](../luyen-tap/?item=THPT-G11-CHVII-B23-C05).
+        **Tự sửa:** Dùng cặp cạnh kề trong cùng mặt, xem 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVII-B23-C05">Luyện lại câu B23-C05</a>.
 
 === "Kiến thức SGK"
 
@@ -164,7 +164,7 @@
 
         **Vì sao sai:** Hai phương trùng nhau không đủ xác định phương vuông góc cả mặt.
 
-        **Tự sửa:** Xem 2.1 và phản ví dụ 3.2. [Luyện lại câu B23-C02](../luyen-tap/?item=THPT-G11-CHVII-B23-C02).
+        **Tự sửa:** Xem 2.1 và phản ví dụ 3.2. <a href="../luyen-tap/?item=THPT-G11-CHVII-B23-C02">Luyện lại câu B23-C02</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVII-B23-02" hidden></span>
 
@@ -172,7 +172,7 @@
 
         **Vì sao sai:** Định nghĩa yêu cầu mọi đường thuộc mặt.
 
-        **Tự sửa:** Chọn thêm đường cắt nhau cùng trong mặt. [Luyện lại câu B23-C01](../luyen-tap/?item=THPT-G11-CHVII-B23-C01).
+        **Tự sửa:** Chọn thêm đường cắt nhau cùng trong mặt. <a href="../luyen-tap/?item=THPT-G11-CHVII-B23-C01">Luyện lại câu B23-C01</a>.
 
     <span data-thpt-help-id="HELP-G11-B23-03" hidden></span>
 
@@ -180,7 +180,7 @@
 
         **Vì sao sai:** Hai đường qua cùng điểm cùng vuông góc một mặt phải trùng.
 
-        **Tự sửa:** Ôn tính chất duy nhất 2.2–2.3. [Luyện lại câu B23-P03](../luyen-tap/?item=THPT-G11-CHVII-B23-P03).
+        **Tự sửa:** Ôn tính chất duy nhất 2.2–2.3. <a href="../luyen-tap/?item=THPT-G11-CHVII-B23-P03">Luyện lại câu B23-P03</a>.
 
     <span data-thpt-help-id="HELP-G11-B23-04" hidden></span>
 
@@ -188,8 +188,8 @@
 
         **Vì sao sai:** Mặt trung trực còn phải vuông góc đoạn.
 
-        **Tự sửa:** Xác định I và đường AB, làm lại 3.3. [Luyện lại câu B23-C04](../luyen-tap/?item=THPT-G11-CHVII-B23-C04).
+        **Tự sửa:** Xác định I và đường AB, làm lại 3.3. <a href="../luyen-tap/?item=THPT-G11-CHVII-B23-C04">Luyện lại câu B23-C04</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VII](../../../../thu-vien/tu-luan-g11-chuong-vii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vii/">Tự luận Chương VII</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 23 (trang in 31–37).</p>
