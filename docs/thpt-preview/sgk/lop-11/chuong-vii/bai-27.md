@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Nhân diện tích đáy với cạnh xiên.
 
-        **Tự sửa:** Tính chiều cao từ hình chiếu và góc đường–mặt. [Luyện lại câu B27-C01](../luyen-tap/?item=THPT-G11-CHVII-B27-C01).
+        **Tự sửa:** Tính chiều cao từ hình chiếu và góc đường–mặt. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C01">Luyện lại câu B27-C01</a>.
 
     ### 1.2. Khối chóp có hệ số một phần ba
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Bỏ hệ số 1/3 hoặc lẫn hai hệ số.
 
-        **Tự sửa:** Tính riêng S rồi dùng V=Sh/3. [Luyện lại câu B27-C02](../luyen-tap/?item=THPT-G11-CHVII-B27-C02).
+        **Tự sửa:** Tính riêng S rồi dùng V=Sh/3. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C02">Luyện lại câu B27-C02</a>.
 
     ### 1.3. Khối hộp: không phải cứ nhân ba cạnh
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** Dùng tích ba cạnh khi đáy không phải hình chữ nhật.
 
-        **Tự sửa:** Tính diện tích hình bình hành trước, rồi nhân chiều cao thật. [Luyện lại câu B27-C03](../luyen-tap/?item=THPT-G11-CHVII-B27-C03).
+        **Tự sửa:** Tính diện tích hình bình hành trước, rồi nhân chiều cao thật. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C03">Luyện lại câu B27-C03</a>.
 
     ### 1.4. Khối chóp cụt đều là hiệu hai khối chóp
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Dùng trung bình cộng diện tích hai đáy nhân h.
 
-        **Tự sửa:** Tính đủ ba hạng tử diện tích, kể cả căn tích. [Luyện lại câu B27-C04](../luyen-tap/?item=THPT-G11-CHVII-B27-C04).
+        **Tự sửa:** Tính đủ ba hạng tử diện tích, kể cả căn tích. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C04">Luyện lại câu B27-C04</a>.
 
     ### 1.5. Đơn vị thể tích và sức chứa
 
@@ -106,7 +106,7 @@
 
         **Dấu hiệu:** Đổi m³ sang lít bằng 100 hoặc lấy cả chiều cao bể.
 
-        **Tự sửa:** Tính khối nước thực tế, nhân 1000 để đổi m³ sang lít. [Luyện lại câu B27-C05](../luyen-tap/?item=THPT-G11-CHVII-B27-C05).
+        **Tự sửa:** Tính khối nước thực tế, nhân 1000 để đổi m³ sang lít. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C05">Luyện lại câu B27-C05</a>.
 
 === "Kiến thức SGK"
 
@@ -175,7 +175,7 @@
 
     ### 3.7. Chóp cụt đều khi biết cạnh bên
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B27-R02-07"><p><strong>Đề bài:</strong> Sọt lý tưởng dạng chóp cụt đều có hai đáy vuông cạnh 54 cm và 30 cm, cạnh bên 22 cm. Tính thể tích.</p><p><strong>Phân tích:</strong> Hai tâm đáy cùng nằm trên đường cao. Chiếu đỉnh đáy nhỏ xuống đáy lớn, độ lệch ngang của hai đỉnh tương ứng bằng nửa hiệu đường chéo, tức (12sqrt2) cm.</p><p><strong>Lời giải:</strong> \(h=\sqrt{22^2-(12\sqrt2)^2}=\sqrt{196}=14\) cm. \(S=2916,S'=900,\sqrt{SS'}=1620\) cm². \(V=\frac{14}3(2916+900+1620)=25368\) cm³ =25,368 lít.</p><p><strong>Kiểm lại:</strong> Chiều cao 14 khác cạnh bên 22, tính dung tích theo kích thước trong lòng lý tưởng.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B27-R02-07"><p><strong>Đề bài:</strong> Sọt lý tưởng dạng chóp cụt đều có hai đáy vuông cạnh 54 cm và 30 cm, cạnh bên 22 cm. Tính thể tích.</p><p><strong>Phân tích:</strong> Hai tâm đáy cùng nằm trên đường cao. Chiếu đỉnh đáy nhỏ xuống đáy lớn, độ lệch ngang của hai đỉnh tương ứng bằng nửa hiệu đường chéo, tức \(12\sqrt2\) cm.</p><p><strong>Lời giải:</strong> \(h=\sqrt{22^2-(12\sqrt2)^2}=\sqrt{196}=14\) cm. \(S=2916,S'=900,\sqrt{SS'}=1620\) cm². \(V=\frac{14}3(2916+900+1620)=25368\) cm³ =25,368 lít.</p><p><strong>Kiểm lại:</strong> Chiều cao 14 khác cạnh bên 22, tính dung tích theo kích thước trong lòng lý tưởng.</p></div>
 
     ### 3.8. Ứng dụng ước lượng thể tích phòng
 
@@ -189,7 +189,7 @@
 
         **Vì sao sai:** Diện tích thiết diện thay đổi theo bình phương tỉ số đồng dạng; công thức có căn tích.
 
-        **Tự sửa:** Ôn phép trừ hai chóp và ví dụ 3.6. [Luyện lại câu B27-C04](../luyen-tap/?item=THPT-G11-CHVII-B27-C04).
+        **Tự sửa:** Ôn phép trừ hai chóp và ví dụ 3.6. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C04">Luyện lại câu B27-C04</a>.
 
     <span data-thpt-help-id="HELP-G11-B27-02" hidden></span>
 
@@ -197,7 +197,7 @@
 
         **Vì sao sai:** Chiều cao vuông góc đáy, phải dựng trước khi thay số.
 
-        **Tự sửa:** Xem 3.3–3.4 và B26. [Luyện lại câu B27-P03](../luyen-tap/?item=THPT-G11-CHVII-B27-P03).
+        **Tự sửa:** Xem 3.3–3.4 và B26. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-P03">Luyện lại câu B27-P03</a>.
 
     <span data-thpt-help-id="HELP-G11-B27-03" hidden></span>
 
@@ -205,7 +205,7 @@
 
         **Vì sao sai:** Khối chóp khác lăng trụ cùng S,h.
 
-        **Tự sửa:** Kiểm lại công thức theo loại khối, làm 3.1. [Luyện lại câu B27-C02](../luyen-tap/?item=THPT-G11-CHVII-B27-C02).
+        **Tự sửa:** Kiểm lại công thức theo loại khối, làm 3.1. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C02">Luyện lại câu B27-C02</a>.
 
     <span data-thpt-help-id="HELP-G11-B27-04" hidden></span>
 
@@ -213,8 +213,8 @@
 
         **Vì sao sai:** Một m³ bằng 1000 dm³ hay 1000 lít.
 
-        **Tự sửa:** Ghi đơn vị ở từng bước; ôn 3.7. [Luyện lại câu B27-C05](../luyen-tap/?item=THPT-G11-CHVII-B27-C05).
+        **Tự sửa:** Ghi đơn vị ở từng bước; ôn 3.7. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C05">Luyện lại câu B27-C05</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VII](../../../../thu-vien/tu-luan-g11-chuong-vii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vii/">Tự luận Chương VII</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 27 (trang in 61–63).</p>
