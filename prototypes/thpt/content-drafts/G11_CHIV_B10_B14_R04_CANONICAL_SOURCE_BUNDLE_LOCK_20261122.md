@@ -25,10 +25,10 @@ RELEASE_AUTHORIZATION: NO
 | `docs/thpt-preview/sgk/lop-11/chuong-iv/bai-11.md` | `209dedd5744b2c65b9f6c3fb76f43eae393e3740` | Original B11 learner |
 | `docs/thpt-preview/sgk/lop-11/chuong-iv/bai-12.md` | `c15b9572ae53716f6dd7ede86011845d50d3d816` | Original B12 learner |
 | `docs/thpt-preview/sgk/lop-11/chuong-iv/bai-13.md` | `bd1f0579517c1b55f004ac3c2e657be694c36a76` | Original B13 learner |
-| `docs/thpt-preview/sgk/lop-11/chuong-iv/bai-14.md` | `de290bb663356906a625a4bd7da6758455e55bd0` | Original B14 learner |
+| `docs/thpt-preview/sgk/lop-11/chuong-iv/bai-14.md` | `3fcfcc8c7a3df1b58fa199135f18fcdd85ee722b` | Original B14 learner, new integrated FirstTry/EX/D6 |
 | `docs/thpt-preview/sgk/lop-11/chuong-iv/luyen-tap.md` | `90ba22a4a4d80d8a7469f40718ff21bdadd6b34b` | Shared formative room |
 | `docs/thpt-preview/sgk/lop-11/chuong-iv/tu-kiem-tra-chuong.md` | `e42a59fdd7c47e55a559100c94c00b5fccc5889c` | Public non-Mastery end |
-| `docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iv.md` | `17bb4f8071a421060f665f2ec89e1ea9f88218ca` | Canonical 10 Written/Anchor |
+| `docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iv.md` | `61078f335c242bf0f10cf570880d5fbd15434087` | Same canonical Written/Anchor library, 10 originals unchanged +1 new integrated Written |
 | `docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js` | `b9cae4023f586acd549ffc6e8253d7757f4265d7` | 30-item original C/P bank |
 | `docs/assets/images/thpt/FIG-G11-B10-01_R01.svg` | `ffd7788a36442efae9067f61bc891d360bd65151` | Original unchanged SVG |
 | `docs/assets/images/thpt/FIG-G11-B11-01_R01.svg` | `ab6bd565f48e9addf190e02b0e9d729011d21c52` | Original unchanged SVG |
@@ -51,12 +51,23 @@ B10: 6 Why→FirstTry→self reveal/D6, 6 worked, 4 SGK sections, 5 outcome fami
 B11: 5 Why→FirstTry→self reveal/D6, 5 worked, 3 SGK sections, 4 outcome families including unbanked public `G11-B11-INTERSECT_PLANES` (documented in R03 RD0, with learner worked/FirstTry evidence, not fabricated official C/P item).
 B12: 5 Why→FirstTry→self reveal/D6, 5 worked, 3 SGK sections, 4 outcome families.
 B13: 6 Why→FirstTry→self reveal/D6, 6 worked, 4 SGK sections, 4 outcome families including spatial Thalès and prism/parallelepiped.
-B14: 5 Why→FirstTry→self reveal/D6, 5 worked, 3 SGK sections, 4 outcome families, corrected direction condition and degenerate projection.
-Total: 27 local FirstTry, 27 worked examples, 5 unchanged SVG, 30 frozen C/P, 10 frozen Written/Anchor, 22 outcomes including chapter-integration. No pre-Final Submit help in official readiness is claimed; end page is public unscored self-compare only.
+B14: 6 Why→FirstTry→self reveal/D6, 6 worked, 3 SGK sections, 4 B14 outcome families + the chapter integrated transfer, corrected direction condition and degenerate projection.
+Total: 28 local FirstTry, 28 worked examples, 5 unchanged SVG, 30 frozen C/P, 10 preserved Written/Anchor +1 new canonical integrated Written, 22 outcomes now including one directly tested chapter-integration. No pre-Final Submit help in official readiness is claimed; end page is public unscored self-compare only.
+
+
+## R04_INTEGRATED_OUTCOME_SOURCE_DELTA_C_20261122
+
+Before this scoped review, the registered 22nd outcome \`G11-CHIV-INTEGRATED\` had no question/placement in the 67-row matrix and no corresponding canonical public Written, although 21 per-lesson outcomes did have evidence. It was not enough to declare the integrated outcome "present" in metadata. The existing historical 40 public items are unchanged; this current R04 adds **one distinct canonical** \`THPT-G11-CHIV-W-INTEGRATED\` in the **same** original shared Written library and one separate unscored \`THPT-G11-B14-TRY06\` in the B14 learner. There are no duplicate student sources.
+
+- Active B14 learner Git blob \`3fcfcc8c7a3df1b58fa199135f18fcdd85ee722b\`: new Knowledge §1.6 integrates tetrahedron midsection \`(MNP)\parallel(ABC)\`, two intersecting midsegments, transversality of direction \`SC\`, parallel projection into \`(ABC)\`, and similarity/area ratio \`1/4\`; contains one optional FirstTry \`THPT-G11-B14-TRY06\`, one D6 \`HELP-G11-B14-TRY06\`, one worked lesson example \`EX-G11-B14-R04-INTEGRATED\` using a triangular prism, plus a misconception correction in fourth tab.
+- Shared existing canonical Written library Git blob \`61078f335c242bf0f10cf570880d5fbd15434087\`: **one new ID** \`THPT-G11-CHIV-W-INTEGRATED\` on \`G11-CHIV-INTEGRATED\`, a more advanced 1/3-section of pyramidal parallelogram base and projection along \`SA\`, no protected assessment claims. Four explicit one-point criteria make a self-review /4 rubric. Original ten Written/Anchor item IDs/stems/solutions/rubrics preserved in the same file, original JS 30 C/P blob \`b9cae4023f586acd549ffc6e8253d7757f4265d7\` untouched.
+- Independent finite sanity: Tetrahedron midpoint projection along \`SC\`: M' midpoint AC, N' midpoint BC, P'=C, area ratio 1/4. Triangular prism M,N,P midpoints of parallel lateral edges projected along AA' returns A,B,C, area ratio 1. Pyramid t=1/3 and projection along SA: M'=A, N',P',Q' at one third along AB,AC,AD, image parallelogram area ratio 1/9; sample affine-coordinate check reproduced 1/9 exactly. These are distinct stems, not cloned Written as a FirstTry.
+- Q02/Q05/Q14/Q15 proof: **22/22** registered outcome families now have canonical or explicit FirstTry evidence, **41 unique public canonical IDs** (30 unchanged C/P +ten original Written/Anchor +one added), and **28 local unscored FirstTry IDs**; source-owned combined Q15 matrix requires 69 rows. No added RD1, no false \`SGK_CHAPTER_READINESS\`, no Mastery or Final Submit/browser claim.
+- Classification: \`DELTA_C_ACADEMIC_MATERIAL\` only for the new explanation/TRY/EX/D6/Written; current AUTHOR_SELF_VERIFIED Q18 receipt is source-locked to this manifest. Original R03 independent reviewer verdict applies only to its immutable old source/receipt and was not projected to changed academic material. Original owner S1 book-page custody is historic, not claimed as a freshly reopened publisher PDF.
 
 ## AUTHORING_BOUNDARY
 
-R02 author QA (five learner files) previously verified 100/100 source checks, 72,000 numeric geometry/projection spot probes with 9 additional checks on previous blobs; this R04 separately checks changed B14 definition against the line-contained-in-plane counterexample and verifies 55 exact label/href link-preserving conversions. **Those old checks do not automatically run on new SHA.** Current original C/P/Written/SVG unchanged by hash. A1–A7, Q01–Q18 signoff and 40-item reconciliation are in the separate R04 source-locked Q18 author receipt.
+R02 author QA (five learner files) previously verified 100/100 source checks, 72,000 numeric geometry/projection spot probes with 9 additional checks on previous blobs; this R04 separately checks changed B14 definition against the line-contained-in-plane counterexample and verifies 55 exact label/href link-preserving conversions. **Those old checks do not automatically run on new SHA.** Current original C/P/Written/SVG unchanged by hash. A1–A7, Q01–Q18 signoff and 41-item canonical public reconciliation are in the separate R04 source-locked Q18 author receipt.
 
 ## CANONICAL_REGISTER_ANCHORS_FOR_V2_GATE
 
@@ -93,7 +104,7 @@ R02 author QA (five learner files) previously verified 100/100 source checks, 72
 - G11-B14-PARALLEL_AND_SHAPES
 - G11-CHIV-INTEGRATED
 
-### PUBLIC_ITEM_IDS_ORIGINAL_40
+### PUBLIC_ITEM_IDS_CURRENT_41
 - THPT-G11-CHIV-B10-C01
 - THPT-G11-CHIV-B10-C02
 - THPT-G11-CHIV-B10-P01
@@ -134,3 +145,4 @@ R02 author QA (five learner files) previously verified 100/100 source checks, 72
 - THPT-G11-CHIV-B14-P04
 - THPT-G11-CHIV-B14-W01
 - THPT-G11-CHIV-B14-W02-ANCHOR
+- THPT-G11-CHIV-W-INTEGRATED
