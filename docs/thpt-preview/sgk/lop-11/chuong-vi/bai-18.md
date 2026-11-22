@@ -184,35 +184,35 @@
 
     ### 3.1. Số mũ âm
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \((4/9)^{-2}\).</p><p><strong>Phân tích:</strong> Chuyển mũ âm về nghịch đảo của cơ số khác 0.</p><p><strong>Lời giải:</strong> \((4/9)^{-2}=(9/4)^2=81/16\).</p><p><strong>Kiểm lại:</strong> Kết quả dương và lớn hơn 1 vì cơ số ban đầu thuộc (0,1).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-01"><p><strong>Đề bài:</strong> Tính \((4/9)^{-2}\).</p><p><strong>Phân tích:</strong> Chuyển mũ âm về nghịch đảo của cơ số khác 0.</p><p><strong>Lời giải:</strong> \((4/9)^{-2}=(9/4)^2=81/16\).</p><p><strong>Kiểm lại:</strong> Kết quả dương và lớn hơn 1 vì cơ số ban đầu thuộc (0,1).</p></div>
 
     ### 3.2. Căn và điều kiện
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\sqrt[3]{-216}\) và \(\sqrt{(-11)^2}\).</p><p><strong>Phân tích:</strong> Căn lẻ giữ dấu; căn chẵn của bình phương cho trị tuyệt đối.</p><p><strong>Lời giải:</strong> \(\sqrt[3]{-216}=-6\), còn \(\sqrt{(-11)^2}=|-11|=11\).</p><p><strong>Kiểm lại:</strong> Nâng -6 lên lũy thừa 3 được -216; căn bậc hai không âm.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-02"><p><strong>Đề bài:</strong> Tính \(\sqrt[3]{-216}\) và \(\sqrt{(-11)^2}\).</p><p><strong>Phân tích:</strong> Căn lẻ giữ dấu; căn chẵn của bình phương cho trị tuyệt đối.</p><p><strong>Lời giải:</strong> \(\sqrt[3]{-216}=-6\), còn \(\sqrt{(-11)^2}=|-11|=11\).</p><p><strong>Kiểm lại:</strong> Nâng -6 lên lũy thừa 3 được -216; căn bậc hai không âm.</p></div>
 
     ### 3.3. Nhân hai căn cùng bậc lẻ
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\sqrt[3]{-16}\sqrt[3]4\).</p><p><strong>Phân tích:</strong> Hai căn bậc ba có nghĩa trên toàn bộ số thực, nên gộp tích.</p><p><strong>Lời giải:</strong> \(\sqrt[3]{-16\cdot4}=\sqrt[3]{-64}=-4\).</p><p><strong>Kiểm lại:</strong> Lập phương -4 bằng -64; không dùng máy móc cách gộp căn bậc chẵn của số âm.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-03"><p><strong>Đề bài:</strong> Tính \(\sqrt[3]{-16}\sqrt[3]4\).</p><p><strong>Phân tích:</strong> Hai căn bậc ba có nghĩa trên toàn bộ số thực, nên gộp tích.</p><p><strong>Lời giải:</strong> \(\sqrt[3]{-16\cdot4}=\sqrt[3]{-64}=-4\).</p><p><strong>Kiểm lại:</strong> Lập phương -4 bằng -64; không dùng máy móc cách gộp căn bậc chẵn của số âm.</p></div>
 
     ### 3.4. Số mũ hữu tỉ và điều kiện cơ số
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(32^{3/5}\) và \((1/81)^{-3/4}\).</p><p><strong>Phân tích:</strong> Hai cơ số dương. Lấy căn theo mẫu số rồi nâng lên mũ nguyên ở tử; với mũ âm dùng nghịch đảo.</p><p><strong>Lời giải:</strong> \(32^{3/5}=(\sqrt[5]{32})^3=2^3=8\). Tương tự, \((1/81)^{-3/4}=(1/3)^{-3}=27\).</p><p><strong>Kiểm lại:</strong> \(8^5=32^3\); căn bậc bốn của \(1/81\) là \(1/3\) và nghịch đảo mũ ba cho 27. Không áp dụng định nghĩa chung nếu cơ số không dương.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-04"><p><strong>Đề bài:</strong> Tính \(32^{3/5}\) và \((1/81)^{-3/4}\).</p><p><strong>Phân tích:</strong> Hai cơ số dương. Lấy căn theo mẫu số rồi nâng lên mũ nguyên ở tử; với mũ âm dùng nghịch đảo.</p><p><strong>Lời giải:</strong> \(32^{3/5}=(\sqrt[5]{32})^3=2^3=8\). Tương tự, \((1/81)^{-3/4}=(1/3)^{-3}=27\).</p><p><strong>Kiểm lại:</strong> \(8^5=32^3\); căn bậc bốn của \(1/81\) là \(1/3\) và nghịch đảo mũ ba cho 27. Không áp dụng định nghĩa chung nếu cơ số không dương.</p></div>
 
     ### 3.5. Rút gọn số mũ thực
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Với \(a\gt 0\), rút gọn \(a^{\sqrt3+2}a^{1-\sqrt3}/(a^{1/2})^4\).</p><p><strong>Phân tích:</strong> Gộp số mũ ở tử; nhân số mũ ở mẫu.</p><p><strong>Lời giải:</strong> Tử \(a^3\), mẫu \(a^2\), nên bằng \(a\).</p><p><strong>Kiểm lại:</strong> Điều kiện a>0 đảm bảo các lũy thừa đều xác định.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-05"><p><strong>Đề bài:</strong> Với \(a\gt 0\), rút gọn \(a^{\sqrt3+2}a^{1-\sqrt3}/(a^{1/2})^4\).</p><p><strong>Phân tích:</strong> Gộp số mũ ở tử; nhân số mũ ở mẫu.</p><p><strong>Lời giải:</strong> Tử \(a^3\), mẫu \(a^2\), nên bằng \(a\).</p><p><strong>Kiểm lại:</strong> Điều kiện a>0 đảm bảo các lũy thừa đều xác định.</p></div>
 
     ### 3.6. So sánh cùng cơ số nhỏ hơn 1
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> So sánh \((1/4)^{\sqrt2}\) và \((1/4)^2\).</p><p><strong>Phân tích:</strong> Cơ số nằm giữa 0 và 1 nên thứ tự số mũ đảo khi chuyển thành giá trị.</p><p><strong>Lời giải:</strong> Vì \(\sqrt2\lt 2\), suy ra \((1/4)^{\sqrt2}\gt (1/4)^2=1/16\).</p><p><strong>Kiểm lại:</strong> Số mũ lớn hơn làm giá trị nhỏ hơn khi cơ số dưới 1.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-06"><p><strong>Đề bài:</strong> So sánh \((1/4)^{\sqrt2}\) và \((1/4)^2\).</p><p><strong>Phân tích:</strong> Cơ số nằm giữa 0 và 1 nên thứ tự số mũ đảo khi chuyển thành giá trị.</p><p><strong>Lời giải:</strong> Vì \(\sqrt2\lt 2\), suy ra \((1/4)^{\sqrt2}\gt (1/4)^2=1/16\).</p><p><strong>Kiểm lại:</strong> Số mũ lớn hơn làm giá trị nhỏ hơn khi cơ số dưới 1.</p></div>
 
     ### 3.7. Kí hiệu khoa học
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Viết \(0{,}00000036\) m dưới dạng kí hiệu khoa học.</p><p><strong>Phân tích:</strong> Dịch dấu phẩy bảy vị trí sang phải được 3,6, rồi nhân ngược với \(10^{-7}\).</p><p><strong>Lời giải:</strong> \(0{,}00000036=3{,}6\cdot10^{-7}\) m.</p><p><strong>Kiểm lại:</strong> Hệ số nằm trong [1,10); dịch dấu phẩy ngược bảy vị trí khôi phục giá trị ban đầu.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-07"><p><strong>Đề bài:</strong> Viết \(0{,}00000036\) m dưới dạng kí hiệu khoa học.</p><p><strong>Phân tích:</strong> Dịch dấu phẩy bảy vị trí sang phải được 3,6, rồi nhân ngược với \(10^{-7}\).</p><p><strong>Lời giải:</strong> \(0{,}00000036=3{,}6\cdot10^{-7}\) m.</p><p><strong>Kiểm lại:</strong> Hệ số nằm trong [1,10); dịch dấu phẩy ngược bảy vị trí khôi phục giá trị ban đầu.</p></div>
 
     ### 3.8. Tăng trưởng sau các kỳ nhập lãi
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Một mô hình có lượng ban đầu 80 đơn vị tăng 3% mỗi kỳ, tính lượng sau 4 kỳ.</p><p><strong>Phân tích:</strong> Sau mỗi kỳ nhân 1,03 với lượng hiện tại; tăng 3% không có nghĩa cộng mãi cùng một lượng.</p><p><strong>Lời giải:</strong> \(80(1{,}03)^4=90{,}0407048\), xấp xỉ 90,04 đơn vị.</p><p><strong>Kiểm lại:</strong> Giá trị lớn hơn 80, phép làm tròn được ghi rõ. Mô hình giả định hệ số tăng không đổi.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-08"><p><strong>Đề bài:</strong> Một mô hình có lượng ban đầu 80 đơn vị tăng 3% mỗi kỳ, tính lượng sau 4 kỳ.</p><p><strong>Phân tích:</strong> Sau mỗi kỳ nhân 1,03 với lượng hiện tại; tăng 3% không có nghĩa cộng mãi cùng một lượng.</p><p><strong>Lời giải:</strong> \(80(1{,}03)^4=90{,}0407048\), xấp xỉ 90,04 đơn vị.</p><p><strong>Kiểm lại:</strong> Giá trị lớn hơn 80, phép làm tròn được ghi rõ. Mô hình giả định hệ số tăng không đổi.</p></div>
 
 === "Lỗi thường gặp"
 
