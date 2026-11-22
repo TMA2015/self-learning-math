@@ -24,7 +24,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Nhớ dấu hạng giữa và kiểm bằng hai tích vô hướng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p01). Sau đó tự làm lại Vận dụng.
+        Nhớ dấu hạng giữa và kiểm bằng hai tích vô hướng. <a href="../luyen-tap/#thpt-g12-b14-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.2. Điểm thuộc mặt phẳng bằng một tích vô hướng
     
@@ -42,7 +42,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Dùng hiệu tọa độ x−x₀; xác định D bằng điều kiện qua điểm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p02). Sau đó tự làm lại Vận dụng.
+        Dùng hiệu tọa độ x−x₀; xác định D bằng điều kiện qua điểm. <a href="../luyen-tap/#thpt-g12-b14-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.3. Ba điểm dựng hai hướng
     
@@ -60,7 +60,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm cả ba điểm; tích có hướng bằng 0 thì không có mặt phẳng duy nhất. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p03). Sau đó tự làm lại Vận dụng.
+        Kiểm cả ba điểm; tích có hướng bằng 0 thì không có mặt phẳng duy nhất. <a href="../luyen-tap/#thpt-g12-b14-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.4. Ghép hai điều kiện hình học
     
@@ -78,7 +78,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm pháp tuyến P vuông góc pháp tuyến Q; kiểm điểm A và hướng Ox. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p04). Sau đó tự làm lại Vận dụng.
+        Kiểm pháp tuyến P vuông góc pháp tuyến Q; kiểm điểm A và hướng Ox. <a href="../luyen-tap/#thpt-g12-b14-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.5. Hai mặt phẳng: hướng và vị trí
     
@@ -96,7 +96,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không chia từng hệ số nếu có số 0; tìm hệ số nhân khác 0. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p05). Sau đó tự làm lại Vận dụng.
+        Không chia từng hệ số nếu có số 0; tìm hệ số nhân khác 0. <a href="../luyen-tap/#thpt-g12-b14-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.6. Khoảng cách là độ dài đoạn chiếu vuông góc
     
@@ -116,7 +116,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không quên trị tuyệt đối và mẫu độ dài n; khoảng cách không âm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p06). Sau đó tự làm lại Vận dụng.
+        Không quên trị tuyệt đối và mẫu độ dài n; khoảng cách không âm. <a href="../luyen-tap/#thpt-g12-b14-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.7. Quỹ đạo nằm trong một mặt phẳng cố định
     
@@ -134,7 +134,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Thế biểu thức theo t và kiểm đồng nhất, không chỉ thử một giá trị. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c08); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p08). Sau đó tự làm lại Vận dụng.
+        Thế biểu thức theo t và kiểm đồng nhất, không chỉ thử một giá trị. <a href="../luyen-tap/#thpt-g12-b14-c08">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p08">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
 === "Kiến thức SGK"
 
@@ -218,44 +218,44 @@
     
     ??? tip "Cách tự sửa"
     
-        Nhớ dấu hạng giữa và kiểm bằng hai tích vô hướng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p01). Sau đó tự làm lại Vận dụng.
+        Nhớ dấu hạng giữa và kiểm bằng hai tích vô hướng. <a href="../luyen-tap/#thpt-g12-b14-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.2. Điểm thuộc mặt phẳng bằng một tích vô hướng
     
     ??? tip "Cách tự sửa"
     
-        Dùng hiệu tọa độ x−x₀; xác định D bằng điều kiện qua điểm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p02). Sau đó tự làm lại Vận dụng.
+        Dùng hiệu tọa độ x−x₀; xác định D bằng điều kiện qua điểm. <a href="../luyen-tap/#thpt-g12-b14-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.3. Ba điểm dựng hai hướng
     
     ??? tip "Cách tự sửa"
     
-        Kiểm cả ba điểm; tích có hướng bằng 0 thì không có mặt phẳng duy nhất. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p03). Sau đó tự làm lại Vận dụng.
+        Kiểm cả ba điểm; tích có hướng bằng 0 thì không có mặt phẳng duy nhất. <a href="../luyen-tap/#thpt-g12-b14-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.4. Ghép hai điều kiện hình học
     
     ??? tip "Cách tự sửa"
     
-        Kiểm pháp tuyến P vuông góc pháp tuyến Q; kiểm điểm A và hướng Ox. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p04). Sau đó tự làm lại Vận dụng.
+        Kiểm pháp tuyến P vuông góc pháp tuyến Q; kiểm điểm A và hướng Ox. <a href="../luyen-tap/#thpt-g12-b14-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.5. Hai mặt phẳng: hướng và vị trí
     
     ??? tip "Cách tự sửa"
     
-        Không chia từng hệ số nếu có số 0; tìm hệ số nhân khác 0. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p05). Sau đó tự làm lại Vận dụng.
+        Không chia từng hệ số nếu có số 0; tìm hệ số nhân khác 0. <a href="../luyen-tap/#thpt-g12-b14-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.6. Khoảng cách là độ dài đoạn chiếu vuông góc
     
     ??? tip "Cách tự sửa"
     
-        Không quên trị tuyệt đối và mẫu độ dài n; khoảng cách không âm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p06). Sau đó tự làm lại Vận dụng.
+        Không quên trị tuyệt đối và mẫu độ dài n; khoảng cách không âm. <a href="../luyen-tap/#thpt-g12-b14-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.7. Quỹ đạo nằm trong một mặt phẳng cố định
     
     ??? tip "Cách tự sửa"
     
-        Thế biểu thức theo t và kiểm đồng nhất, không chỉ thử một giá trị. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c08); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p08). Sau đó tự làm lại Vận dụng.
+        Thế biểu thức theo t và kiểm đồng nhất, không chỉ thử một giá trị. <a href="../luyen-tap/#thpt-g12-b14-c08">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b14-p08">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
-    [Core Bài 14](../luyen-tap/#b14-core) · [Luyện tập và Tự luận](../luyen-tap/#b14-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b14-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b14-core">Core Bài 14</a> · <a href="../luyen-tap/#b14-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b14-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
 *Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 29–40; SBT trang in 21–24 đối chiếu trực tiếp. Trang in 25 SBT bị bỏ trong PDF quét; bài 5.6–5.7 đã đối chiếu họ dạng từ lời giải tham khảo, không xác nhận đã đọc trang gốc.*
