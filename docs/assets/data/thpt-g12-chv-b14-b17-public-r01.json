@@ -1465,6 +1465,62 @@
         "1đ lập đúng M(t)=A+t(B−A) và miền 0≤t≤1; 1đ giải đúng z=0 và kiểm t=1/2 nằm trong đoạn; 1đ tính đúng H=(1,1,0); 1đ so sánh CH²=1 với R²=9/4; 1đ kết luận che và giải thích cần đồng thời hai điều kiện đoạn và đĩa."
       ],
       "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B14-C08",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O08",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Một điểm M(t)=(cos t,sin t,cos t+sin t), t∈R. Chỉ ra một mặt phẳng cố định chứa mọi M(t); giải thích vì sao thử vài giá trị t không đủ chứng minh.",
+      "answer": "x+y−z=0",
+      "solution": "Với mọi t, x+y−z=cos t+sin t−(cos t+sin t)=0. Vì (1,1,−1) khác vectơ 0, đây là phương trình một mặt phẳng cố định. Chỉ thử vài t không chứng minh được tính đúng với mọi t."
+    },
+    {
+      "item_id": "THPT-G12-B14-P08",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O08",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Điểm M(t)=(1+2cos t,−1+sin t,cos t+3sin t). Tìm phương trình mặt phẳng chứa mọi M(t), trình bày phép khử cos t, sin t.",
+      "answer": "x+6y−2z+5=0",
+      "solution": "Từ x−1=2cos t, y+1=sin t, suy z=(x−1)/2+3(y+1) ⇒ 2z=x+6y+5. Do đó x+6y−2z+5=0 với mọi t; pháp tuyến (1,6,−2) khác 0."
+    },
+    {
+      "item_id": "THPT-G12-B14-A08",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O08",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Trong một mô hình chuyển động, drone đi theo M(t)=(2+3cos t,−1+2sin t,4+3cos t−4sin t), t≥0. Tìm một mặt phẳng cố định chứa toàn bộ quỹ đạo, rồi nêu vì sao không được đồng nhất quỹ đạo với cả mặt phẳng.",
+      "answer": "x−2y−z=0",
+      "solution": "Ta có x−2=3cos t, y+1=2sin t và z−4=3cos t−4sin t=(x−2)−2(y+1)=x−2y−4. Do đó x−2y−z=0 với mọi t. Quỹ đạo chỉ là tập điểm được tham số hóa bởi một t (ở đây tạo một đường cong trong mặt), không gồm mọi điểm của mặt phẳng."
+    },
+    {
+      "item_id": "THPT-G12-B14-W08",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O08",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 4,
+      "stem": "Xét M(t)=(1+2cos t−sin t, 2+cos t+sin t, −1+3cos t+2sin t), t∈R. (a) Tìm một phương trình mặt phẳng cố định chứa mọi M(t) bằng cách khử hai hàm lượng giác; (b) chứng minh đẳng thức đúng với mọi t; (c) kiểm rằng ba điểm ứng với t=0, π/2, π không thẳng hàng để chứng minh mặt phẳng đó được xác định duy nhất.",
+      "answer": "x+7y−3z−18=0; ba điểm M(0)=(3,3,2), M(π/2)=(0,3,1), M(π)=(−1,1,−4) không thẳng hàng.",
+      "solution": "Đặt c=cos t, s=sin t. Từ x−1=2c−s, y−2=c+s suy c=(x+y−3)/3, s=(2y−x−3)/3. Vì z+1=3c+2s nên 3(z+1)=(x−1)+7(y−2); suy x+7y−3z−18=0. Thế nguyên các biểu thức của x,y,z vào vế trái đều bằng 0 với mọi t, và n=(1,7,−3) khác 0. Ba điểm M(0)=(3,3,2), M(π/2)=(0,3,1), M(π)=(−1,1,−4), hai hướng (-3,0,-1),(-4,-2,-6) có tích có hướng (-2,-14,6) khác 0. Vì ba điểm không thẳng hàng, mặt phẳng chứa toàn bộ quỹ đạo là duy nhất.",
+      "rubric": [
+        "1đ đặt c=cos t,s=sin t và biểu diễn x−1,y−2,z+1 đúng; 1đ khử c,s ra x+7y−3z−18=0; 1đ chứng minh đồng nhất thức với mọi t và pháp tuyến khác 0; 1đ tính đúng ba điểm t=0,π/2,π; 1đ kiểm hai vectơ độc lập và kết luận tính duy nhất, không nhầm quỹ đạo với toàn mặt phẳng."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
     }
   ],
   "help": [
@@ -1857,6 +1913,21 @@
       ],
       "return_item": "THPT-G12-B15-C08",
       "practice_item": "THPT-G12-B15-P08"
+    },
+    {
+      "help_id": "HELP-G12-B14-08",
+      "lesson_id": "B14",
+      "outcome_id": "G12-CHV-B14-O08",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Chỉ thế t=0 hoặc t=π/2 đã kết luận quỹ đạo thuộc một mặt phẳng, hoặc nói quỹ đạo là toàn bộ mặt phẳng. Hai nhận định đều thiếu chứng minh.",
+        "**Quay lại tiền đề:** Mặt phẳng cố định có Ax+By+Cz+D=0 với (A,B,C)≠0; muốn chứng minh mọi vị trí M(t) thuộc P phải cho vế trái bằng 0 với mọi t, không chỉ vài giá trị mẫu.",
+        "**Ví dụ chữa nhỏ:** Với M(t)=(2cos t,2sin t,cos t−sin t), khử trực tiếp được x−y−2z=0 cho mọi t. Thử t=0 và π/2 chỉ là bước kiểm tra, chưa thay được chứng minh đồng nhất.",
+        "**Tự làm lại có dẫn:** Viết từng tọa độ theo c=cos t,s=sin t → tìm một tổ hợp tuyến tính triệt tiêu c,s → rút phương trình Ax+By+Cz+D=0 → kiểm n≠0 và thế lại cho mọi t → nếu đề hỏi duy nhất, lấy ba điểm không thẳng hàng.",
+        "**Quay lại đúng outcome:** tự làm Core THPT-G12-B14-C08 rồi Practice THPT-G12-B14-P08 trước khi mở lời giải, sau đó trở lại Tự thử 1.7; xem đáp án hoặc D6 không phải chứng cứ Mastery."
+      ],
+      "return_item": "THPT-G12-B14-C08",
+      "practice_item": "THPT-G12-B14-P08"
     }
   ],
   "end_references": [
@@ -1989,6 +2060,11 @@
       "placement_id": "END-CHV-15-08",
       "item_id": "THPT-G12-B15-A08",
       "outcome_id": "G12-CHV-B15-O08"
+    },
+    {
+      "placement_id": "END-CHV-14-08",
+      "item_id": "THPT-G12-B14-A08",
+      "outcome_id": "G12-CHV-B14-O08"
     }
   ]
 }
