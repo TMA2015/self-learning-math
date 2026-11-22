@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Chia đối số cho cơ số.
 
-        **Tự sửa:** Đổi câu hỏi sang dạng a mũ x bằng M. [Làm lại câu B19-C01](../luyen-tap/?item=THPT-G11-CHVI-B19-C01).
+        **Tự sửa:** Đổi câu hỏi sang dạng a mũ x bằng M. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-C01">Làm lại câu B19-C01</a>.
 
     ### 1.2. Vì sao hai thừa số phải dương riêng rẽ khi tách tích?
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Tách tích ngay sau khi kiểm tích dương.
 
-        **Tự sửa:** Kiểm từng đối số sau biến đổi; dùng bảng dấu. [Làm lại câu B19-P04](../luyen-tap/?item=THPT-G11-CHVI-B19-P04).
+        **Tự sửa:** Kiểm từng đối số sau biến đổi; dùng bảng dấu. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P04">Làm lại câu B19-P04</a>.
 
     ### 1.3. Nhân, chia và nâng lũy thừa chuyển thành cộng, trừ và nhân số mũ
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** Nhầm dấu trừ hoặc logarit của tổng.
 
-        **Tự sửa:** Viết từng số thành lũy thừa cơ số 5 rồi kiểm lại phép gộp. [Làm lại câu B19-P01](../luyen-tap/?item=THPT-G11-CHVI-B19-P01).
+        **Tự sửa:** Viết từng số thành lũy thừa cơ số 5 rồi kiểm lại phép gộp. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P01">Làm lại câu B19-P01</a>.
 
     ### 1.4. Đổi cơ số để dùng máy tính hoặc lũy thừa dễ nhận biết
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Đổi cơ số bằng logarit của thương.
 
-        **Tự sửa:** Dùng thương của hai logarit cùng một cơ số, không dùng logarit của thương. [Làm lại câu B19-P05](../luyen-tap/?item=THPT-G11-CHVI-B19-P05).
+        **Tự sửa:** Dùng thương của hai logarit cùng một cơ số, không dùng logarit của thương. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P05">Làm lại câu B19-P05</a>.
 
     ### 1.5. Lôgarit thập phân: đọc số mũ trong thang đo
 
@@ -106,7 +106,7 @@
 
         **Dấu hiệu:** Cho rằng giảm nồng độ làm pH giảm cùng tỷ lệ.
 
-        **Tự sửa:** Đổi nồng độ thành lũy thừa 10; chú ý dấu trừ. [Làm lại câu B19-P06](../luyen-tap/?item=THPT-G11-CHVI-B19-P06).
+        **Tự sửa:** Đổi nồng độ thành lũy thừa 10; chú ý dấu trừ. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P06">Làm lại câu B19-P06</a>.
 
     ### 1.6. Số e, lôgarit tự nhiên và tăng trưởng liên tục
 
@@ -126,7 +126,7 @@
 
         **Dấu hiệu:** Dùng số lần nhân nguyên cho mô hình thời gian liên tục.
 
-        **Tự sửa:** Phân biệt cập nhật theo kỳ với công thức liên tục; ghi đơn vị của t. [Làm lại câu B19-P06](../luyen-tap/?item=THPT-G11-CHVI-B19-P06).
+        **Tự sửa:** Phân biệt cập nhật theo kỳ với công thức liên tục; ghi đơn vị của t. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P06">Làm lại câu B19-P06</a>.
 
 === "Kiến thức SGK"
 
@@ -184,15 +184,15 @@
 
     ### 3.2. Điều kiện với bình phương
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-02"><p><strong>Đề bài:</strong> Tìm tập xác định của \(\log_4((x-2)^2)\) và viết biểu thức theo logarit của trị tuyệt đối.</p><p><strong>Phân tích:</strong> Đối số phải dương, bình phương bằng 0 đúng khi x=2.</p><p><strong>Lời giải:</strong> Miền \(\mathbb R\setminus\{2\}\). Vì \(|x-2|\gt 0\), \(\log_4((x-2)^2)=2\log_4|x-2|\).</p><p><strong>Kiểm lại:</strong> Với x<2, logarit của x-2 không có nghĩa nhưng logarit của trị tuyệt đối có nghĩa.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-02"><p><strong>Đề bài:</strong> Tìm tập xác định của \(\log_4((x-2)^2)\) và viết biểu thức theo logarit của trị tuyệt đối.</p><p><strong>Phân tích:</strong> Đối số phải dương, bình phương bằng 0 đúng khi x=2.</p><p><strong>Lời giải:</strong> Miền \(\mathbb R\setminus\{2\}\). Vì \(|x-2|\gt 0\), \(\log_4((x-2)^2)=2\log_4|x-2|\).</p><p><strong>Kiểm lại:</strong> Với \(x<2\), lôgarit của \(x-2\) không có nghĩa nhưng lôgarit của \(|x-2|\) có nghĩa.</p></div>
 
     ### 3.3. Gộp thương và tích
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-03"><p><strong>Đề bài:</strong> Tính \(\log_3 54-\log_3 2+\log_3 9\).</p><p><strong>Phân tích:</strong> Các đối số dương cho phép gộp.</p><p><strong>Lời giải:</strong> \(=\log_3(54\cdot9/2)=\log_3 243=5\).</p><p><strong>Kiểm lại:</strong> (3^5=243); đúng chiều tính ngược.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-03"><p><strong>Đề bài:</strong> Tính \(\log_3 54-\log_3 2+\log_3 9\).</p><p><strong>Phân tích:</strong> Các đối số dương cho phép gộp.</p><p><strong>Lời giải:</strong> \(=\log_3(54\cdot9/2)=\log_3 243=5\).</p><p><strong>Kiểm lại:</strong> \(3^5=243\); đúng chiều tính ngược.</p></div>
 
     ### 3.4. Đổi cơ số và tính gần đúng
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-04"><p><strong>Đề bài:</strong> Tính \(\log_7 13\) đến ba chữ số thập phân.</p><p><strong>Phân tích:</strong> 7 và 13 dương, 7 khác 1; dùng cơ số e.</p><p><strong>Lời giải:</strong> \(\log_7 13=\ln13/\ln7\approx1{,}318\).</p><p><strong>Kiểm lại:</strong> Vì 7<13<49, kết quả nằm giữa 1 và 2.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-04"><p><strong>Đề bài:</strong> Tính \(\log_7 13\) đến ba chữ số thập phân.</p><p><strong>Phân tích:</strong> 7 và 13 dương, 7 khác 1; dùng cơ số e.</p><p><strong>Lời giải:</strong> \(\log_7 13=\ln13/\ln7\approx1{,}318\).</p><p><strong>Kiểm lại:</strong> Vì \(7<13<49\), kết quả nằm giữa \(1\) và \(2\).</p></div>
 
     ### 3.5. Ứng dụng thang lôgarit thập phân
 
@@ -210,7 +210,7 @@
 
         **Vì sao sai:** Logarit trả về số mũ trong a^x=M.
 
-        **Tự sửa:** Chuyển về lũy thừa rồi thế ngược. [Làm lại câu B19-C01](../luyen-tap/?item=THPT-G11-CHVI-B19-C01).
+        **Tự sửa:** Chuyển về lũy thừa rồi thế ngược. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-C01">Làm lại câu B19-C01</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVI-B19-02" hidden></span>
 
@@ -218,7 +218,7 @@
 
         **Vì sao sai:** Tích dương chưa đảm bảo mỗi thừa số dương.
 
-        **Tự sửa:** Lập bảng dấu từng biểu thức ở mục 2.2. [Làm lại câu B19-P04](../luyen-tap/?item=THPT-G11-CHVI-B19-P04).
+        **Tự sửa:** Lập bảng dấu từng biểu thức ở mục 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P04">Làm lại câu B19-P04</a>.
 
     <span data-thpt-help-id="HELP-G11-B19-03" hidden></span>
 
@@ -226,7 +226,7 @@
 
         **Vì sao sai:** Logarit chỉ biến tích thành cộng, không biến tổng thành cộng.
 
-        **Tự sửa:** Thử M=N=1, so log_a2 với 0. [Làm lại câu B19-P02](../luyen-tap/?item=THPT-G11-CHVI-B19-P02).
+        **Tự sửa:** Thử M=N=1, so log_a2 với 0. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P02">Làm lại câu B19-P02</a>.
 
     <span data-thpt-help-id="HELP-G11-B19-04" hidden></span>
 
@@ -234,8 +234,8 @@
 
         **Vì sao sai:** Mẫu đổi cơ số là logarit của cơ số a; ln cơ số e, lg cơ số 10.
 
-        **Tự sửa:** Viết công thức đổi cơ số trước khi bấm máy. [Làm lại câu B19-P05](../luyen-tap/?item=THPT-G11-CHVI-B19-P05).
+        **Tự sửa:** Viết công thức đổi cơ số trước khi bấm máy. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P05">Làm lại câu B19-P05</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vi/">Tự luận Chương VI</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 19 (trang in 10–15).</p>
