@@ -211,14 +211,8 @@ with sync_playwright() as pw:
                     assert page.request.get(url).ok, (topic, "broken SVG", url)
                 # W3 OWNER P2 prevention carried forward into W3 actual browser rendering.
                 assert imgs.count() == imgs.evaluate_all("els => els.filter(e => e.dataset.topicW3Figure === '1').length"), (topic,"figure scope")
-                for img in imgs.all():
-                    img.evaluate("(e) => e.scrollIntoView({block:'nearest'})")
-                    dims = img.evaluate("""e => ({
-                       w:e.getBoundingClientRect().width,h:e.getBoundingClientRect().height,
-                       naturalWidth:e.naturalWidth,complete:e.complete,src:e.src})""")
-                    assert dims["complete"] and 20 < dims["w"] <= 701 and 20 < dims["h"] <= 451, (
-                        engine,topic,width,"source SVG image too large/missing",dims
-                    )
+                # Inactive tab figures have zero layout size by design; real bounding boxes
+                # are checked when every relevant subtab is activated above.
                 # Actual MathJax, not a token-only or syntax-only gate.
                 page.locator('[data-topic-w1-module-tab="1"]').click()
                 page.locator('[data-topic-w1-subtab="1-1"]').click()
