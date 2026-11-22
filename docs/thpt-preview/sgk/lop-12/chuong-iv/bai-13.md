@@ -214,17 +214,17 @@
 
 === "Kiến thức SGK"
 
-    ### 2.1. Diện tích hình phẳng
+    ### 2.1. Ứng dụng tích phân để tính diện tích hình phẳng
     
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Diện tích hình phẳng.</strong><p>Nếu f liên tục trên [a,b], a&lt;b, diện tích giới hạn bởi y=f(x), Ox và hai đường x=a,x=b là \(S=\int_a^b|f(x)|dx\). Với hai hàm liên tục f,g, diện tích giữa hai đồ thị trên [a,b] là \(S=\int_a^b|f(x)-g(x)|dx\). Chia tại điểm đổi dấu hiệu; nếu f≥g, lấy f−g. Đơn vị là tích hai đơn vị theo trục.</p></div>
 
-    ### 2.2. Thể tích vật thể
+    ### 2.2. Ứng dụng tích phân để tính thể tích vật thể
     
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Thể tích vật thể.</strong><p>Nếu mặt cắt vuông góc với trục x có diện tích S(x) liên tục trên [a,b], a&lt;b, thì \(V=\int_a^b S(x)dx\). Tính S từ hình học trước. Lăng trụ có diện tích đáy B không đổi, \(V=Bh\). Chóp có S(x)=B(x/h)^2 từ đỉnh, suy \(V=Bh/3\).</p></div>
 
     ### 2.2.1. Thể tích khối tròn xoay
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Thể tích khối tròn xoay.</strong><p>Khi quay miền giữa đồ thị liên tục y=f(x), Ox, x=a,x=b quanh Ox, bán kính đĩa là |f(x)|, nên \(V=\pi\int_a^b f(x)^2dx\). Với các lớp tròn có bán kính r(x) không âm, \(S(x)=\pi r(x)^2\). Với nón cụt, \(r(x)=r+(R-r)x/h\), suy \(V=\pi h(r^2+rR+R^2)/3\). Đổi trục quay hay miền không chạm Ox phải dựng lại mặt cắt.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Thể tích khối tròn xoay.</strong><p>SGK nêu trường hợp f liên tục và không âm trên [a,b]. Khi quay miền giữa đồ thị y=f(x), Ox, x=a,x=b quanh Ox, bán kính đĩa là f(x), nên \(V=\pi\int_a^b f(x)^2dx\). Với các lớp tròn có bán kính r(x) không âm, \(S(x)=\pi r(x)^2\). Với nón cụt, \(r(x)=r+(R-r)x/h\), suy \(V=\pi h(r^2+rR+R^2)/3\). Nếu f đổi dấu nhưng miền vẫn nằm giữa đồ thị và Ox thì bán kính là |f|, bình phương vẫn bằng f². Đổi trục quay hay miền không chạm Ox phải dựng lại mặt cắt; nếu hai đường đều không âm và f≥g thì mặt cắt là vành khăn diện tích \(\pi(f(x)^2-g(x)^2)\) (vận dụng SBT).</p></div>
 
 === "Ví dụ"
 
@@ -283,6 +283,18 @@
     ### 3.14. Thể tích nón lớn nhất khi đường sinh cố định
 
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B13-R02-14"><p><strong>Đề bài:</strong> Nón tròn xoay có đường sinh 6 cm. Tìm chiều cao h để thể tích lớn nhất.</p><p><strong>Phân tích:</strong> \(r^2+h^2=36\), \(0\le h\le6\) (hai đầu là giới hạn suy biến). Từ công thức nón suy bằng tích phân, viết thể tích chỉ theo h.</p><p><strong>Lời giải:</strong> \(V(h)=\frac{\pi}{3}(36h-h^3)\). \(V'(h)=\pi(12-h^2)\) đổi dấu từ dương sang âm tại \(h=2\sqrt3\). Hai đầu cho V=0. Vậy \(h=2\sqrt3\) cm, \(r=2\sqrt6\) cm và \(V_{\max}=16\sqrt3\pi\) cm³.</p><p><strong>Kiểm lại:</strong> \(r^2+h^2=24+12=36\); h nằm trong (0;6), đạo hàm đổi dấu đúng chiều cực đại.</p></div>
+
+    ### 3.15. Thể tích giữa hai mặt quay: vành khăn (SBT)
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B13-R02-15"><p><strong>Đề bài:</strong> Quay miền giữa \(y=x+2\) và \(y=1\) trên [0,2] quanh Ox. Tính thể tích.</p><p><strong>Phân tích:</strong> Cả hai đường ở phía trên Ox. Lát cắt là vành khăn có bán kính ngoài x+2 và bán kính trong 1. Trừ diện tích hai đĩa, không bình phương hiệu bán kính.</p><p><strong>Lời giải:</strong> \(V=\pi\int_0^2[(x+2)^2-1]dx=\pi[(x+2)^3/3-x]_0^2=50\pi/3\).</p><p><strong>Kiểm lại:</strong> Hai bán kính ngoài và trong không đổi vai trò; diện tích lát luôn dương. Đây là vận dụng công thức mặt cắt SGK.</p></div>
+
+    ### 3.16. Miền có ba đường biên (SBT)
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B13-R02-16"><p><strong>Đề bài:</strong> Tính diện tích hình giới hạn bởi \(y=0\), \(y=x\), \(y=4-x\) với 0≤x≤4.</p><p><strong>Phân tích:</strong> Hai đường xiên gặp tại x=2; trên [0,2] biên trên là x, trên [2,4] biên trên là 4−x.</p><p><strong>Lời giải:</strong> \(S=\int_0^2 xdx+\int_2^4(4-x)dx=2+2=4\).</p><p><strong>Kiểm lại:</strong> Tam giác đáy 4 cao 2 có diện tích 4. Không tích phân một đường trên toàn miền.</p></div>
+
+    ### 3.17. Suy công thức chóp cụt từ diện tích hai đáy
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B13-R02-17"><p><strong>Đề bài:</strong> Chóp cụt đều cao h&gt;0, hai đáy diện tích \(B_0,B_1&gt;0\), đồng dạng. Tìm V.</p><p><strong>Phân tích:</strong> Tỉ số độ dài biến đổi tuyến tính, nên căn diện tích lát cắt bằng \(\sqrt{B_0}+(\sqrt{B_1}-\sqrt{B_0})x/h\) với x từ đáy thứ nhất.</p><p><strong>Lời giải:</strong> \(V=\int_0^h[\sqrt{B_0}+(\sqrt{B_1}-\sqrt{B_0})x/h]^2dx=\frac h3(B_0+\sqrt{B_0B_1}+B_1)\).</p><p><strong>Kiểm lại:</strong> Nếu hai đáy bằng nhau cho Bh; khi một diện tích tiến đến 0 thì thu công thức chóp.</p></div>
 
 === "Lỗi thường gặp"
 
@@ -354,4 +366,4 @@
 
     [Core Bài 13](../luyen-tap/#b13-core) · [Luyện tập và Tự luận](../luyen-tap/#b13-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b13-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 19–26.*
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 19–26; SBT Tập hai, trang in 14–18.*
