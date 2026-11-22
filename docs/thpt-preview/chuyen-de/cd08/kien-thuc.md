@@ -63,8 +63,7 @@ Ta xét dãy \(u_n=2+1/n\) với \(n\) nguyên dương. Mọi số hạng đều
 
 **Vận dụng** Với \(v_n=1+3/n\), \(n\ge1\), dãy tiến tới số nào? Giải thích bằng khoảng cách.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Giới hạn bằng 1 vì \(|v_n-1|=3/n\to0\). Nếu em cho rằng giới hạn phải là một số hạng, hãy thử giải \(1+3/n=1\) để thấy không có \(n\) hữu hạn nào thỏa, dù dãy vẫn tiến tới 1.
 
@@ -91,8 +90,7 @@ Chẳng hạn, v_n=−n² với n≥1 đi về −∞ vì với mọi M>0, n>√
 
 **Vận dụng** u_n=n², n≥1, giới hạn là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 +∞, vì n vượt mọi căn của ngưỡng dương.
 
@@ -121,8 +119,7 @@ Xét ví dụ: Với q=−1/4, số hạng q^n đổi dấu nhưng có độ l�
 
 **Vận dụng** lim(n→∞)(3/2)^n là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 +∞ vì 3/2>1 và lũy thừa tăng không bị chặn.
 
@@ -161,8 +158,7 @@ Chẳng hạn, lim(n→∞)(3n²+n)/(n²+7)=lim(3+1/n)/(1+7/n²)=3. Chọn bậc
 
 **Vận dụng** lim(n→∞)(4n+3)/(2n−1) bằng bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 2, vì chia cho n cho (4+3/n)/(2−1/n)→2.
 
@@ -195,8 +191,7 @@ Chẳng hạn, 10+5+2,5+… có a=10,q=1/2; S_n=20(1−(1/2)^n), phần dư=20/2
 
 **Vận dụng** 6+2+2/3+… có tổng vô hạn bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 9, vì q=1/3 và S=6/(1−1/3)=9.
 
@@ -233,8 +228,7 @@ Chẳng hạn, f(x)=(x²−5x+6)/(x−2) với x≠2. Tử=(x−2)(x−3), rút 
 
 **Vận dụng** lim(x→0) [x(x−4)]/x (x≠0) bằng bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 −4 do biểu thức rút còn x−4 trên miền x≠0.
 
@@ -263,8 +257,7 @@ Chẳng hạn, f(x)=x+2 nếu x<0; f(x)=2x+1 nếu x≥0. Khi x→0⁻, f→2; k
 
 **Vận dụng** lim(x→0⁻)|x|/x và lim(x→0⁺)|x|/x bằng gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 −1 và +1, nên giới hạn hai phía không tồn tại.
 
@@ -293,8 +286,7 @@ Xét ví dụ: f(x)=1/(x−5): x→5⁻ thì mẫu âm nhỏ ⇒ f→−∞; x�
 
 **Vận dụng** lim(x→3⁻) 1/(3−x) là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 +∞ vì 3−x tiến 0 từ phía dương.
 
@@ -323,8 +315,7 @@ Chẳng hạn, lim(x→−∞)(2x²+5x)/(5x²−1) = lim(2+5/x)/(5−1/x²)=2/5.
 
 **Vận dụng** lim(x→+∞)(−3x³+1)/(x³+4) bằng bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 −3; chia cả tử/mẫu cho x³.
 
@@ -353,8 +344,7 @@ Chẳng hạn, (x²−7x+12)/(x−3) có tử (x−3)(x−4); với x≠3 rút t
 
 **Vận dụng** lim(x→6)(x²−36)/(x−6) bằng gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 12, vì tử=(x−6)(x+6) và x≠6.
 
@@ -383,8 +373,7 @@ Chẳng hạn, lim(x→0)(√(x+16)−4)/x: nhân liên hợp (√(x+16)+4), đ�
 
 **Vận dụng** lim(x→0)(√(x+25)−5)/x bằng bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 1/10, vì bằng 1/(√(x+25)+5) gần x=0.
 
@@ -413,8 +402,7 @@ Chẳng hạn, lim(x→+∞)[√(x²+6x)−x] = lim(6x)/[√(x²+6x)+x]=lim 6/[�
 
 **Vận dụng** Tính \(\lim_{x\to-\infty}\bigl(\sqrt{x^2+6x}+x\bigr)\). Vì sao không thể thay \(\sqrt{x^2}\) bằng x trong bước biến đổi?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Với x đủ âm, biểu thức trong căn không âm. Nhân liên hợp: \(\sqrt{x^2+6x}+x=\dfrac{6x}{\sqrt{x^2+6x}-x}\). Do \(x&lt;0\), ta có \(\sqrt{x^2+6x}=(-x)\sqrt{1+6/x}\). Bởi vậy phân thức bằng \(\dfrac{-6}{\sqrt{1+6/x}+1}\to-3\). Nếu thay sai \(\sqrt{x^2}=x\), em sẽ đánh mất dấu khi chia cho x âm. Chỉ dùng công thức trong miền xác định và ở phía x→−∞.
 
@@ -451,8 +439,7 @@ Xét ví dụ: Đặt \(f(x)=\frac{x^2-5x+6}{x-2}\) khi \(x\ne2\) và \(f(2)=k\)
 
 **Vận dụng** Cho f(x)=sin x khi x≠0 và f(0)=c; cần c bằng gì để liên tục?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 c=0 vì lim(x→0)sin x=0, bằng giá trị ở điểm.
 
@@ -487,8 +474,7 @@ Chẳng hạn, f=|x|/x (x≠0) có giới hạn trái −1, phải +1 ⇒ gián 
 
 **Vận dụng** Nếu g(x)=(x²−1)/(x−1) với x≠1 và g(1)=3, thuộc kiểu gián đoạn nào?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Khử được: lim(x→1)g(x)=2 nhưng g(1)=3; đổi g(1)=2 thì liên tục.
 
@@ -519,8 +505,7 @@ Chẳng hạn, f(x)=√x trên [0,9] liên tục bên trong vì căn liên tục
 
 **Vận dụng** g(x)=√(16−x²) có liên tục trên [−4,4] không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Có; trong đoạn biểu thức trong căn không âm và liên tục, tại −4 chỉ cần giới hạn phải, tại 4 chỉ cần trái.
 
@@ -549,8 +534,7 @@ Chẳng hạn, f(x)=(x²+1)/(x−1) có miền ℝ\{1} nên liên tục trên (�
 
 **Vận dụng** h(x)=√(x+2)/(x+1): miền xác định là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 x≥−2 và x≠−1; liên tục trên [−2,−1) và (−1,∞) theo miền.
 
@@ -589,8 +573,7 @@ Chẳng hạn, g(x)=x³−2 liên tục trên [1,2]; g(1)=−1, g(2)=6, nên t�
 
 **Vận dụng** x²−3 có nghiệm trong (1,2) theo IVT không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Có; f(1)=−2&lt;0, f(2)=1>0 và đa thức liên tục.
 
@@ -623,8 +606,7 @@ Xét ví dụ: Với g(x)=x²−2 trên [1,2], g(1)=−1,g(2)=2. Bước 1 m=1,5
 
 **Vận dụng** Với x²−3 trên [1,2], sau một bước chia đôi giữ nửa nào?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 g(1,5)=−0,75, g(2)=1 nên giữ [1,5; 2]; g vẫn đổi dấu.
 

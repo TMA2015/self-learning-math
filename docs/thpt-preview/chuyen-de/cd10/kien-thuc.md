@@ -59,8 +59,7 @@ Xét \(f(x)=-2x+5\) trên \(\mathbb R\). Với bất kỳ \(x_1<x_2\), ta có \(
 
 **Vận dụng** \(f(x)=3x-1\) đồng biến hay nghịch biến trên \(\mathbb R\)? Hãy giải thích bằng hai giá trị \(x_1<x_2\).
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 \(f(x_2)-f(x_1)=3(x_2-x_1)>0\), nên hàm đồng biến trên \(\mathbb R\). Nếu em chỉ thế hai giá trị cụ thể, hãy quay lại điều kiện **với mọi** cặp \(x_1&lt;x_2\) trong khoảng.
 
@@ -87,8 +86,7 @@ Chẳng hạn, \(f(x)=x^2\) có \(f'(x)=2x\). Ở phía trái 0, đạo hàm âm
 
 **Vận dụng** \(f(x)=x^3\) có tăng nghiêm ngặt trên \(\mathbb R\) không? Vì sao \(f'(0)=0\) không bác bỏ điều đó?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Có. Với \(x_1&lt;x_2\) thì \(x_1^3&lt;x_2^3\); đạo hàm \(3x^2\ge0\) và chỉ bằng 0 tại một điểm, không tạo ra đoạn hằng. Nếu em gán mọi nghiệm \(f'=0\) thành cực trị, hãy lập dấu đạo hàm **hai phía** điểm ấy.
 
@@ -115,8 +113,7 @@ Vì thế, khi khảo sát một hàm số, ta luôn tìm miền trước, rồi
 
 **Vận dụng** \(g(x)=\sqrt{x-1}\) có miền xác định nào? Có thể nói hàm tăng trên miền đó không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Điều kiện \(x-1\ge0\) cho miền \([1,+\infty)\). Trên \((1,+\infty)\), \(g'(x)=\dfrac1{2\sqrt{x-1}}>0\); từ giá trị ở biên \(x=1\), ta vẫn có thể nói hàm tăng trên \([1,+\infty)\). Nếu em ghi miền \(\mathbb R\), hãy kiểm điều kiện tồn tại của căn trước.
 
@@ -147,8 +144,7 @@ Chẳng hạn, f=x³−3x: f'=3(x−1)(x+1), dương x<−1, âm −1<x<1, dươ
 
 **Vận dụng** f=x² có cực tiểu ở đâu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 x=0, f' đổi âm→dương, f(0)=0.
 
@@ -177,8 +173,7 @@ Chẳng hạn, f=x³: f'=3x²≥0, không đổi dấu qua0 nên không có cự
 
 **Vận dụng** f=x⁴ có cực tiểu tại0 không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Có, f'=4x³ đổi âm→dương ở0; f(0)=0.
 
@@ -207,8 +202,7 @@ Chẳng hạn, s(t)=t²−4t, t≥0: v=2t−4, âm t<2, 0 tại2, dương t>2; t
 
 **Vận dụng** s(t)=t², t>0, tọa độ tăng hay giảm?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 v=2t>0 nên tăng.
 
@@ -241,8 +235,7 @@ Chẳng hạn, f=x³−3x trên ℝ có cực đại địa phương 2 tại−1
 
 **Vận dụng** Hàm f=x² trên ℝ có GTNN không, GTLN không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 GTNN0 tại0; không có GTLN vì x²→∞.
 
@@ -275,8 +268,7 @@ Xét ví dụ: f=x²−2x trên [0,3] là đa thức liên tục nên tồn tạ
 
 **Vận dụng** f=x² trên [−1,2] có GTLN?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Có, GTLN4 tại2 và GTNN0 tại0.
 
@@ -311,8 +303,7 @@ Chẳng hạn, f=x³−3x trên [0,2], f'=3x²−3⇒ x=1 trong đoạn. f(0)=0,
 
 **Vận dụng** f=x²−4x trên [0,3], GTNN?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 f'=2x−4=0 tại2: f(0)=0,f(2)=−4,f(3)=−3⇒GTNN−4 tại2.
 
@@ -341,8 +332,7 @@ Chẳng hạn, f=1−(x−2)² trên (0,3) có GTLN1 tại x=2 (nội miền) d�
 
 **Vận dụng** g(x)=−x trên (0,1) có GTLN0 không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không, vì g→0 khi x→0⁺ nhưng x=0 bị loại.
 
@@ -371,8 +361,7 @@ Chẳng hạn, Lợi ích P(x)=−(x−4)²+10 với x∈[0,3] không đạt đ�
 
 **Vận dụng** Với f=−(x−5)², x∈[0,2], x tối ưu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 x=2, f(2)=−9; x=5 không hợp lệ.
 
@@ -401,8 +390,7 @@ Chẳng hạn, Chu vi hình chữ nhật 20 m, cạnh x∈(0,10), cạnh kia10�
 
 **Vận dụng** Hình chữ nhật chu vi 12 m, diện tích lớn nhất khi nào?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 x=3, cạnh còn lại3, diện tích9 m².
 
@@ -435,8 +423,7 @@ Xét ví dụ: f=(2x+1)/(x+3)→2 khi x→±∞, nên y=2 là tiệm cận ngang
 
 **Vận dụng** f=(3x−2)/(x+4) có TCN?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 y=3 khi x→±∞.
 
@@ -469,8 +456,7 @@ Chẳng hạn, f=(x+1)/(x−2), tại2 tử→3>0, mẫu âm phía trái/dương
 
 **Vận dụng** f=1/(x+1) có TCD ở đâu và hai phía?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 x=−1; trái −∞, phải+∞.
 
@@ -503,8 +489,7 @@ Chẳng hạn, f=(x²+1)/(x−1)=x+1+2/(x−1); vì 2/(x−1)→0 khi x→±∞ 
 
 **Vận dụng** f=(x²−x+2)/x, x≠0, TC xiên?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 f=x−1+2/x⇒y=x−1.
 
@@ -533,8 +518,7 @@ Chẳng hạn, f=(x²−4)/(x−2), x≠2 ⇒ f=x+2 trên miền. Lim tại2 là
 
 **Vận dụng** f=(x²−9)/(x−3), có TCD x=3?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không, vì f=x+3 cho x≠3, giới hạn6.
 
@@ -563,8 +547,7 @@ Chẳng hạn, f=1/√(x−1) có D=(1,∞); khi x→1⁺, f→+∞ nên x=1 là
 
 **Vận dụng** f=1/√x tại x=0, phía nào xét TCD?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Chỉ x→0⁺; giới hạn +∞, x=0 là TCD.
 
@@ -593,8 +576,7 @@ Xét ví dụ: f=x+1/x, x≠0: TCD x=0 vì 1/x vô cực, TC xiên y=x vì f−x
 
 **Vận dụng** f=(x+1)/x có TCD và TCN?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 TCD x=0, TCN y=1.
 
@@ -627,8 +609,7 @@ Chẳng hạn, f=1/(x−1): D=ℝ\{1}, f'=−1/(x−1)²<0, TCD x=1, TCN y=0; ha
 
 **Vận dụng** Khảo sát \(f(x)=x^2\) trên \(\mathbb R\): tìm miền, đạo hàm, khoảng tăng giảm, cực trị và mô tả hình dạng đồ thị theo đúng thứ tự.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 D=ℝ, f'=2x, giảm trước0 tăng sau0, đỉnh(0,0), không TCD/TC ngang, đồ thị parabol.
 
@@ -663,8 +644,7 @@ Chẳng hạn, f=x³−3x: f'=3(x−1)(x+1), cực đại ở −1 giá trị2, 
 
 **Vận dụng** f=x³ có cực trị không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không; f'=3x²≥0, không đổi dấu ở0.
 
@@ -703,8 +683,7 @@ Ngoài phân thức bậc nhất trên bậc nhất, ta còn khảo sát **phân
 
 **Vận dụng** f=(x+3)/(x−2), dấu đạo hàm?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 f'=−5/(x−2)²&lt;0 trên mỗi nhánh; TCD x=2, TCN y=1.
 
@@ -733,8 +712,7 @@ Chẳng hạn, f=(x−2)/(x+1): Ox (2,0), Oy(0,−2), TCD x=−1 và TCN y=1. Ta
 
 **Vận dụng** f=(x−1)/(x−1), x≠1 có giao Ox không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không; f=1 trên D nên không có nghiệm f=0, x=1 bị loại.
 
@@ -771,8 +749,7 @@ Chẳng hạn, \(f(x)=\dfrac{x+1}{x-2}=1+\dfrac{3}{x-2}\) có tâm \(I(2,1)\) v�
 
 **Vận dụng** f=(x+1)/(x−2) có tâm đối xứng nào?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 f=1+3/(x−2) nên I(2,1).
 
@@ -801,8 +778,7 @@ Chẳng hạn, nếu f' âm trên (−∞,1), dương trên (1,∞) và f(1)=−
 
 **Vận dụng** Cho \(f\) liên tục tại \(x=2\), khả vi ở hai phía gần 2, \(f'(x)>0\) khi \(x<2\) và \(f'(x)<0\) khi \(x>2\), \(f(2)=5\). Điểm \((2,5)\) là cực trị nào?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Do f liên tục tại 2 và tăng trước2, giảm sau2 theo dấu đạo hàm, f đạt cực đại địa phương ở (2,5). Điều kiện liên tục tại 2 rất quan trọng; chỉ biết dấu đạo hàm hai phía và f(2) thì chưa đủ.
 
@@ -831,8 +807,7 @@ Chẳng hạn, f=1/x, D=ℝ\{0}, f'=−1/x²<0 trên từng nhánh. Nhưng −1<
 
 **Vận dụng** f=1/(x−1) giảm ở đâu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Trên từng khoảng (−∞,1) và (1,∞); không trên cả tập gộp theo mọi cặp.
 
@@ -869,8 +844,7 @@ Trong hóa học, nếu nồng độ \(C(t)=10-2t\) (mg/lít) trên \(0\le t\le3
 
 **Vận dụng** C(q)=50+3q (nghìn đồng), C'(q) là bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 3 nghìn đồng/sản phẩm.
 
@@ -899,8 +873,7 @@ Chẳng hạn, s(t)=−t², t>0: v=−2t<0, a=−2<0 cùng dấu nên |v|=2t tă
 
 **Vận dụng** Cho v=−4 m/s,a=−1 m/s², tốc độ biến thiên thế nào?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Đang tăng tại lúc xét vì v·a>0.
 
@@ -929,8 +902,7 @@ Xét ví dụ: C(q)=q²+5q+100 (nghìn đồng)⇒C'(q)=2q+5. Tại q=10, C'=25 
 
 **Vận dụng** C(q)=q²+2q, C'(3) và C(4)−C(3) là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 C'(3)=8, còn 4²+8−(9+6)=9, không bằng nhau.
 
@@ -959,8 +931,7 @@ Chẳng hạn, Hình chữ nhật có tổng hai cạnh bằng10 m, x>0 và 10�
 
 **Vận dụng** Với hộp xăng theo mô hình V=x(8−2x)², kích thước đáy sau cắt phải dương, x nằm đâu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 0&lt;x&lt;4 để cạnh 8−2x>0.
 
@@ -995,8 +966,7 @@ Chẳng hạn, A(x)=x(12−x) trên 0<x<12, A'=12−2x; đổi dương→âm t�
 
 **Vận dụng** A=x(8−x), 0<x<8: x tối ưu và diện tích?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 x=4,A=16.
 
@@ -1025,8 +995,7 @@ Chẳng hạn, P(x)=−(x−5)²+20 trên x∈[0,4]: P tăng đến x=4 nên GTL
 
 **Vận dụng** g=x trên [0,1], GTLN/GTNN?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 GTLN1 tại1, GTNN0 tại0.
 
@@ -1055,8 +1024,7 @@ Chẳng hạn, Giả sử lợi nhuận P(q)=−(q−2,4)²+10 (triệu đồng)
 
 **Vận dụng** Nếu P(q)=−(q−3,6)²+20, q nguyên, nên so những q nào?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 q=3 và4; P(3)=19,64, P(4)=19,84 nên q=4.
 
@@ -1089,8 +1057,7 @@ Xét ví dụ: f=x³−3x: cực đại địa phương2 ở−1,cực tiểu−
 
 **Vận dụng** f=x²−4x trên ℝ có GTNN gì, GTLN?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 GTNN−4 tại2, không có GTLN.
 
@@ -1119,8 +1086,7 @@ Chẳng hạn, f=(x²+1)/(x−1)=x+1+2/(x−1) ⇒ TCD x=1, TC xiên y=x+1. f'= 
 
 **Vận dụng** f=(x+2)/(x−1), TCD và TCN?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 x=1,y=1, do tử tại1 bằng3 khác0.
 
@@ -1149,8 +1115,7 @@ Chẳng hạn, Giả sử R(q)=12q và C(q)=q²+2q+5 (nghìn đồng), q∈[0,8]
 
 **Vận dụng** Với R=10q,C=q²+2q+1, q∈[0,6], q tối ưu lợi nhuận?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 P=−q²+8q−1; P'=−2q+8=0⇒q=4; P(4)=15, biên P(0)=−1,P(6)=11.
 
@@ -1179,8 +1144,7 @@ Chẳng hạn, với f=1/x trên D=ℝ\{0}, f'<0 ở hai nhánh. Lời giải 'f
 
 **Vận dụng** f=(x²−1)/(x−1), x≠1, có TCD tại x=1 không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không, vì lim f=2 hữu hạn (lỗ).
 

@@ -61,8 +61,7 @@ Trên hình ngay dưới, dãy hữu hạn \(u_n=2n-1\) chỉ được cho với
 
 **Vận dụng** Dãy \(u_n=3n\) được cho với \(n\in\{1,2,3\}\). Dãy có các số hạng nào? Có \(u_0\) không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Dãy gồm 3, 6, 9 và **không có \(u_0\)** vì 0 không thuộc miền chỉ số. Nếu em tính \(u_0=0\), hãy phân biệt giá trị của biểu thức đại số tại 0 với số hạng thực sự thuộc dãy.
 
@@ -93,8 +92,7 @@ Chẳng hạn, u_n=2n+1, n≥1 cho u_1=3,u_2=5,u_3=7 và u_10=21. Nhưng thêm m
 
 **Vận dụng** Với u_n=4n−1, tính u_6.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 23; n bắt đầu từ 1 nhưng số hạng thứ sáu thế n=6, không phải 5.
 
@@ -123,8 +121,7 @@ Xét ví dụ: u_1=3, u_{n+1}=2u_n+1. Đặt v_n=u_n+1, v_{n+1}=2v_n và v_1=4, 
 
 **Vận dụng** Cho u_1=2,u_{n+1}=u_n+4. Tính u_3.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 u_2=6,u_3=10; cần chạy truy hồi hai lần.
 
@@ -153,8 +150,7 @@ Chẳng hạn, u_n=n/(n+1) với n≥1. u_{n+1}−u_n=(n+1)/(n+2)−n/(n+1)=[(n+
 
 **Vận dụng** Dãy u_n=1/n (n≥1) tăng hay giảm?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Giảm nghiêm ngặt vì 1/(n+1)&lt;1/n với mẫu dương.
 
@@ -185,8 +181,7 @@ Chẳng hạn, u_n=1−1/(n+1), n≥1. Vì 0<1/(n+1)≤1/2 nên 1/2≤u_n<1. u_1
 
 **Vận dụng** u_n=2−1/n (n≥1) có đạt 2 không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không; 1/n>0 nên u_n&lt;2 với mọi n nguyên dương.
 
@@ -225,8 +220,7 @@ Chẳng hạn, Dãy 14,11,8,5 có các hiệu −3; là CSC với d=−3. Dãy 1
 
 **Vận dụng** Dãy 2,2,2,2 có phải CSC không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Có, công sai d=0.
 
@@ -255,8 +249,7 @@ Chẳng hạn, u_1=7,d=−2, u_6=7+5(−2)=−3. Ta chọn công thức tổng q
 
 **Vận dụng** CSC u_1=10,d=−3: tính u_4.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 u_4=10+3(−3)=1.
 
@@ -287,8 +280,7 @@ Xét ví dụ: u_3=5,u_7=21 ⇒ d=(21−5)/(7−3)=4, u_1=5−2·4=−3. Thử u
 
 **Vận dụng** u_2=7,u_5=16 thì d bằng bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 d=(16−7)/(5−2)=3.
 
@@ -317,8 +309,7 @@ Chẳng hạn, CSC u_1=2,d=3,n=6 có u_6=17 và S_6=6(2+17)/2=57. Chọn ghép �
 
 **Vận dụng** Tính 1+3+5+7+9.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 25; đây là CSC 5 số, đầu1 cuối9, S=5(1+9)/2.
 
@@ -347,8 +338,7 @@ Chẳng hạn, Xưởng tuần đầu làm 20 sản phẩm, mỗi tuần thêm 4
 
 **Vận dụng** Hàng 1 có 8 ghế, mỗi hàng thêm 2 ghế, 4 hàng có bao nhiêu ghế?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 8+10+12+14=44 ghế.
 
@@ -387,8 +377,7 @@ Chẳng hạn, Dãy 2,−6,18,−54 là CSN q=−3. Dãy 5,0,0,… là CSN q=0; 
 
 **Vận dụng** Dãy 4,0,0,0,… có là CSN không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Có, với q=0.
 
@@ -417,8 +406,7 @@ Chẳng hạn, u_1=−2, q=3, u_4=−2·3³=−54. Chọn số mũ 3 vì từ s�
 
 **Vận dụng** CSN u_1=5,q=−2: tính u_4.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 5(−2)³=−40.
 
@@ -447,8 +435,7 @@ Xét ví dụ: u_2=6,u_4=24 ⇒ q²=4 nên q=±2. Với q=2 thì u_1=3; q=−2 t
 
 **Vận dụng** Ba số 2,b,18 là CSN với b≠0: b có thể bằng bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 b²=36 ⇒ b=±6; q=b/2 là ±3.
 
@@ -477,8 +464,7 @@ Chẳng hạn, Với u_1=2,q=3,n=4: S_4=2(1−3^4)/(1−3)=2·40=80. Thử bằn
 
 **Vận dụng** Tính S_5 nếu u_1=−4, q=1.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 S_5=5(−4)=−20; không chia cho 1−q=0.
 
@@ -507,8 +493,7 @@ Chẳng hạn, Với u_1=6,q=1/2, S_n=12[1−(1/2)^n], S_∞=12; sau n=4 phần 
 
 **Vận dụng** Với u_1=4,q=−1, tổng vô hạn có giá trị theo công thức trên không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không; |q|=1, tổng riêng lần lượt 4,0,4,0,… không hội tụ.
 
@@ -547,8 +532,7 @@ Chẳng hạn, bắt đầu ở kỳ 0 với 100 đơn vị. Nếu mỗi kỳ c�
 
 **Vận dụng** Khởi đầu 50, tăng 10% mỗi kỳ sau hai lần tăng có phải 60 không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không, 50·1,1²=60,5.
 
@@ -577,8 +561,7 @@ Chẳng hạn, P=10 triệu, r=6%/năm, hai năm: 10·1,06²=11,236 triệu. Ch�
 
 **Vận dụng** P=1 triệu, r=10% mỗi kỳ, hai kỳ còn bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 1·1,1²=1,21 triệu.
 
@@ -611,8 +594,7 @@ Xét ví dụ đúng với sơ đồ: gửi **100 đơn vị vào cuối mỗi k
 
 **Vận dụng** Gửi 20 vào cuối hai kỳ với r=10%/kỳ, số dư cuối kỳ 2 là bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 20·1,1+20=42; khoản gửi cuối kỳ 2 chưa sinh lãi.
 

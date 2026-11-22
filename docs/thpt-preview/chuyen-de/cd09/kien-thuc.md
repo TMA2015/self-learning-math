@@ -55,8 +55,7 @@ Nếu một chiếc xe đi thêm 16 mét trong 2 giây, ta nói vận tốc trun
 
 **Vận dụng** Hàm \(f(x)=x^2\) biến đổi trung bình bao nhiêu trên khoảng \([0,2]\)?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 \([f(2)-f(0)]/(2-0)=(4-0)/2=2\) đơn vị đầu ra trên một đơn vị đầu vào. Nếu em dùng \(f(2)/2\) ở trường hợp này thì may mắn ra cùng kết quả vì \(f(0)=0\); hãy thử khoảng \([1,3]\) để thấy công thức đúng phải dùng **hai hiệu**.
 
@@ -83,8 +82,7 @@ Chẳng hạn, f(x)=x², a=1: thương [(1+h)²−1]/h=2+h, h≠0; khi h→0 thu
 
 **Vận dụng** f(x)=x²,a=3: hệ số góc cát tuyến theo h là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 [(3+h)²−9]/h=6+h, h≠0; giới hạn 6.
 
@@ -123,8 +121,7 @@ Hình minh họa riêng \(f(x)=x^2\) tại \(a=1\): điểm cố định \(P=(1,
 
 **Vận dụng** Tính f'(0) theo định nghĩa nếu f(x)=x².
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 [h²−0]/h=h→0, nên f'(0)=0.
 
@@ -157,8 +154,7 @@ Chẳng hạn, f(x)=√x xác định x≥0; với x>0 f'(x)=1/(2√x), suy đư
 
 **Vận dụng** Hàm f(x)=1/x có đạo hàm ở mọi x∈ℝ không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không; chỉ trên ℝ\{0}, với f'(x)=−1/x².
 
@@ -191,8 +187,7 @@ Chẳng hạn, Xét |x−1| tại1: f liên tục vì |x−1|→0; đạo hàm t
 
 **Vận dụng** f(x)=|x| có liên tục tại0 không, đạo hàm tại0 không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Liên tục; không có đạo hàm hai phía vì −1 và +1 khác nhau.
 
@@ -221,8 +216,7 @@ Chẳng hạn, f(x)=|x−3| tại 3: [|h|−0]/h=−1 khi h<0, +1 khi h>0. Chọ
 
 **Vận dụng** Tại x=0, đạo hàm một phía của |2x| là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Trái −2, phải +2, không có đạo hàm hai phía.
 
@@ -257,8 +251,7 @@ Nếu gọi \(\alpha\) là góc định hướng từ chiều dương trục ho�
 
 **Vận dụng** f(x)=x²+2 tại x=0, độ dốc và tung độ lần lượt bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Độ dốc f'(0)=0; tung độ f(0)=2.
 
@@ -287,8 +280,7 @@ Xét ví dụ: Với f=x² tại a=2, P(2,4), m=4 ⇒ y−4=4(x−2) ⇒ y=4x−
 
 **Vận dụng** Tiếp tuyến y=x³ tại x=0 là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 f(0)=0, f'(0)=0 ⇒ y=0.
 
@@ -317,8 +309,7 @@ Chẳng hạn, s(t)=t²−6t (m), t≥0: v(t)=2t−6; tại t=2, v=−2 m/s, t�
 
 **Vận dụng** Với s(t)=−3t (m), tốc độ là bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 v=−3 m/s, tốc độ3 m/s.
 
@@ -349,8 +340,7 @@ Không chỉ vận tốc và nhiệt độ: trong mạch điện, nếu điện 
 
 **Vận dụng** Nếu giá P(x)=50+3x đồng, x số sản phẩm, P'(x) có đơn vị gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 3 đồng/sản phẩm (tỉ lệ biến thiên cận biên của mô hình).
 
@@ -383,8 +373,7 @@ Chẳng hạn, y=3x⁴−2: đạo hàm 3·4x³=12x³ và đạo hàm hằng−2
 
 **Vận dụng** (7x³−4)' bằng bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 21x².
 
@@ -413,8 +402,7 @@ Chẳng hạn, f=√(x+4): miền x≥−4, f'(x)=1/(2√(x+4)) với x>−4. Ch
 
 **Vận dụng** f(x)=√(x−1), có đạo hàm hữu hạn tại x=1 không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Không; hàm xác định tại1 nhưng thương phải→+∞.
 
@@ -443,8 +431,7 @@ Xét ví dụ: y=4x³−3x+6 ⇒ y'=12x²−3; hằng6 biến mất. Chọn phâ
 
 **Vận dụng** (2x²+5x−8)' bằng bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 4x+5.
 
@@ -481,8 +468,7 @@ Trong hình chữ nhật minh họa, cạnh ngang \(u=3\) và cạnh đứng \(v
 
 **Vận dụng** (x sin x)' là gì (radian)?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 sin x+x cos x.
 
@@ -511,8 +497,7 @@ Chẳng hạn, f=(x+1)/(x−2) có miền x≠2, f'=[1(x−2)−(x+1)·1]/(x−2
 
 **Vận dụng** (x/(x+1))' là gì, trên miền nào?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 1/(x+1)², với x≠−1.
 
@@ -547,8 +532,7 @@ Chẳng hạn, y=(2x+1)^5: u=2x+1, u'=2, F'(u)=5u⁴ ⇒ y'=10(2x+1)^4. Chọn t
 
 **Vận dụng** (x²+1)^3 có đạo hàm gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 6x(x²+1)².
 
@@ -581,8 +565,7 @@ Chẳng hạn, f=3sin x+cos x (radian): f'=3cos x−sin x. Dấu âm của cos x
 
 **Vận dụng** (4cos x−sin x)' là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 −4sin x−cos x.
 
@@ -611,8 +594,7 @@ Xét ví dụ: tan x ở x=π/2 không xác định vì cos π/2=0. Ở x=0: (ta
 
 **Vận dụng** (cot x)' và miền là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 −1/sin²x, x≠kπ với k nguyên.
 
@@ -641,8 +623,7 @@ Chẳng hạn, y=cos(3x²) ⇒ u=3x², u'=6x, y'=−6x sin(3x²). Chọn xác đ
 
 **Vận dụng** [sin(5x)]' là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 5cos(5x) trong radian.
 
@@ -673,8 +654,7 @@ Chẳng hạn, f=5^x tại x=0: f'(x)=5^x ln5, f'(0)=ln5. Chọn công thức m�
 
 **Vận dụng** (e^{3x})' bằng gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 3e^{3x}.
 
@@ -709,8 +689,7 @@ Chẳng hạn, f=log₂ x, x>0: f'=1/(x ln2). Đơn vị ln2 là hằng dương,
 
 **Vận dụng** [ln(4x)]' trên x>0 là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 (4)/(4x)=1/x; miền x>0.
 
@@ -741,8 +720,7 @@ Chẳng hạn, f=ln(x²+1) xác định mọi x, f'=2x/(x²+1). Chọn **quy t�
 
 **Vận dụng** [ln(3x−2)]' là gì và miền?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 3/(3x−2), x>2/3.
 
@@ -771,8 +749,7 @@ Xét ví dụ: f=√(x−3)/(x−4) có miền x≥3, x≠4. Công thức deriva
 
 **Vận dụng** [ln x/(x−2)] xác định ở những x nào?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 x>0 và x≠2.
 
@@ -801,8 +778,7 @@ Chẳng hạn, f=x e^{2x}: ngoài cùng tích, f'=e^{2x}+x·2e^{2x}=e^{2x}(1+2x)
 
 **Vận dụng** [(x²+1)sin x]' là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 2x sin x+(x²+1)cos x.
 
@@ -835,8 +811,7 @@ Chẳng hạn, s(t)=t²−4t, t≥0: v=2t−4; t=1 vận tốc−2 m/s, t=3 +2 m
 
 **Vận dụng** Nếu s(t)=t³−3t, v(1) bằng?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 v=3t²−3, v(1)=0 m/s.
 
@@ -865,8 +840,7 @@ Chẳng hạn, f=x³: f'=3x², f''=6x. Chọn lấy đạo hàm lại vì ta mu�
 
 **Vận dụng** f=x²+3x thì f'' bằng?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 f'=2x+3, f''=2.
 
@@ -895,8 +869,7 @@ Chẳng hạn, f=3x⁴−2x²+1: f'=12x³−4x, f''=36x²−4. Chọn hai bướ
 
 **Vận dụng** f=x⁵: f''=?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 20x³.
 
@@ -925,8 +898,7 @@ Xét ví dụ: f=cos(3x): f'=−3sin(3x), f''=−9cos(3x). Chọn lấy đạo h
 
 **Vận dụng** f=e^{2x}, f'' là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 4e^{2x}.
 
@@ -963,8 +935,7 @@ Chẳng hạn, s(t)=t³−3t²+2t: v=3t²−6t+2, a=6t−6; tại t=1, a=0 nhưn
 
 **Vận dụng** s(t)=5t² (m), a(t) bằng?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 v=10t m/s, a=10 m/s².
 
@@ -993,8 +964,7 @@ Chẳng hạn, s(t)=−t², t>0: v=−2t<0, a=−2<0. Vì cùng dấu, |v|=2t đ
 
 **Vận dụng** Nếu v=−3 m/s và a=−2 m/s², tốc độ đang tăng hay giảm?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Đang tăng tại thời điểm xét (v,a cùng dấu).
 
@@ -1023,8 +993,7 @@ Chẳng hạn, f=x e^x: f'=e^x(1+x), f''=e^x(2+x); tại x=0 f=0, f'=1, f''=2, t
 
 **Vận dụng** f=x²+1 tại x=0, tiếp tuyến y=?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 f(0)=1, f'(0)=0 ⇒ y=1; f''=2 không phải độ dốc.
 
@@ -1059,8 +1028,7 @@ Chẳng hạn, f=x²,a=3,dx=0,02: f'(3)=6 nên dy=0,12; Δy=(3,02)²−9=0,1204,
 
 **Vận dụng** Với \(f(x)=1/x\), \(a=2\), \(dx=0{,}2\): (a) kiểm miền từ \(a\) tới \(a+dx\); (b) tính vi phân \(dy\) và độ tăng thật \(\Delta y\); (c) tìm \(|\Delta y-dy|\) và giải thích vì sao vi phân chỉ là xấp xỉ.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Vì \(f(x)=1/x\) có miền \(x\ne0\), cả đoạn \([2;2{,}2]\) đều thuộc miền. Ta có \(f'(x)=-1/x^2\), nên \(dy=f'(2)\,dx=(-1/4)(1/5)=-1/20=-0{,}05\). Độ tăng thật \(\Delta y=f(2{,}2)-f(2)=5/11-1/2=-1/22\approx-0{,}04545\). Sai số tuyệt đối \(|\Delta y-dy|=|-1/22+1/20|=1/220\approx0{,}00455\). Cả hai độ tăng đều âm, nhưng không bằng nhau khi bước \(dx\) hữu hạn.
 

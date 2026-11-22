@@ -61,8 +61,7 @@ Ví dụ, với \(f(x)=4x^3+2\), ta nhận thấy \((x^4)'=4x^3\) và \((2x)'=2\
 
 **Vận dụng** Tìm họ nguyên hàm của \(f(x)=8x^3-2\). Em kiểm lại được bằng đạo hàm không?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 \(F(x)=2x^4-2x+C\). Đạo hàm của biểu thức này là \(8x^3-2\), đúng bằng \(f\). Nếu em quên \(+C\), hãy thử cộng thêm 5 vào nguyên hàm của mình rồi lấy đạo hàm: kết quả vẫn không đổi.
 
@@ -89,8 +88,7 @@ Chẳng hạn, F'=3x²−4, F(1)=5. Họ F=x³−4x+C, thay x=1 cho 1−4+C=5 �
 
 **Vận dụng** F'=2x+1 và F(0)=7: tìm F.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 F=x²+x+7.
 
@@ -123,8 +121,7 @@ Xét ví dụ: ∫(6x²−4x+3)dx=2x³−2x²+3x+C. Vì đạo hàm 2x³ là6x²
 
 **Vận dụng** ∫(5x⁴+2x)dx=?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 x⁵+x²+C.
 
@@ -153,8 +150,7 @@ Chẳng hạn, Trên x<0, ∫(3/x)dx=3ln(−x)+C. Lấy đạo hàm 3·(−1)/(�
 
 **Vận dụng** F'=1/x trên x<0, F(−1)=2. F là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 F(x)=ln(−x)+2 trên x&lt;0.
 
@@ -183,8 +179,7 @@ Chẳng hạn, ∫(6e^{3x}+2^x)dx=2e^{3x}+2^x/ln2+C. Đạo hàm ngược cho 6e
 
 **Vận dụng** Tìm ∫5e^{5x}dx.
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 e^{5x}+C.
 
@@ -222,8 +217,7 @@ Chẳng hạn, ∫(4cos2x+3sin3x)dx=2sin2x−cos3x+C. Chọn đạo hàm ngượ
 
 **Vận dụng** ∫2sin(2x)dx?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 −cos(2x)+C.
 
@@ -252,8 +246,7 @@ Chẳng hạn, cho v(t)=4t−2 (m/s), s(0)=3m: s(t)=2t²−2t+3. Sau2 giây s(2)
 
 **Vận dụng** v(t)=6t, s(0)=1, s(1) bằng?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 s(t)=3t²+1 nên s(1)=4m.
 
@@ -296,8 +289,7 @@ Xét ví dụ: ∫₁² 4x³dx=[x⁴]₁²=16−1=15. Chọn nguyên hàm x⁴, 
 
 **Vận dụng** ∫₀²2x dx?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 [x²]₀²=4.
 
@@ -326,8 +318,7 @@ Chẳng hạn, ∫₀¹(3x²+2x+1)dx=[x³+x²+x]₀¹=3. Có thể tách thành1
 
 **Vận dụng** ∫₀²(2x+3)dx?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 [x²+3x]₀²=4+6=10.
 
@@ -356,8 +347,7 @@ Chẳng hạn, ∫₂⁰(3x²+1)dx=−∫₀²(3x²+1)dx=−10. Giá trị âm x
 
 **Vận dụng** ∫₁¹(x²+1)dx?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 0.
 
@@ -386,8 +376,7 @@ Chẳng hạn, y=2x trên [0,2] không âm: S=∫₀²2x dx=[x²]₀²=4, đúng
 
 **Vận dụng** Diện tích dưới y=x² trên [0,1]?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 ∫₀¹x²dx=1/3 đơn vị².
 
@@ -422,8 +411,7 @@ Chẳng hạn, v(t)=t−1 trên [0,2]: ∫v=0, nhưng ∫|v|=∫₀¹(1−t)+∫
 
 **Vận dụng** f=x trên [−1,1], diện tích và tích phân là gì?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Diện tích1, tích phân có dấu0.
 
@@ -452,8 +440,7 @@ Xét ví dụ: ∫₀^{ln3}e^x dx=e^{ln3}−1=2. Chọn F=e^x vì d(e^x)=e^x, c�
 
 **Vận dụng** ∫₀^{π/2} sin x dx?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 [−cos x]₀^{π/2}=−0−(−1)=1.
 
@@ -482,8 +469,7 @@ Chẳng hạn, Lưu lượng r(t)=2t lít/phút trên [0,2]: Q(2)−Q(0)=∫₀�
 
 **Vận dụng** Một vật có vận tốc có hướng v(t)=3t² (m/s) trong 0≤t≤1 giây. Độ dời là bao nhiêu?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Độ dời bằng ∫₀¹3t²dt=1 m.
 
@@ -524,8 +510,7 @@ Không phải mọi hình phẳng có hàm căn đều cần tìm nguyên hàm b
 
 **Vận dụng** S dưới y=√x trên [0,9]?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 (2/3)9^{3/2}=(2/3)27=18 đơn vị².
 
@@ -558,8 +543,7 @@ Chẳng hạn, f(x)=x trên [−2,2]: tích phân có dấu0, nhưng S=∫−₂
 
 **Vận dụng** S giữa y=x và Ox trên [−1,0]?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 1/2 đơn vị².
 
@@ -588,8 +572,7 @@ Chẳng hạn, Trên [0,1], f=2, g=x², rõ 2>x², S=∫₀¹(2−x²)dx=2−1/3
 
 **Vận dụng** S giữa y=3 và y=x trên [0,2]?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 ∫₀²(3−x)dx=4.
 
@@ -622,8 +605,7 @@ Xét ví dụ: f=x,g=x² trên [0,2], giao x=0,1. Trên (0,1) x>x², trên (1,2)
 
 **Vận dụng** Tính diện tích giữa \(y=2x\) và \(y=x^2\) trên đoạn \([0,3]\). Vì sao phải chia miền tại một giao điểm ở trong đoạn?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Giải \(2x=x^2\) được \(x=0\) và \(x=2\). Trên \([0,2]\), \(2x\ge x^2\); trên \([2,3]\), \(x^2\ge2x\). Vì thế \(S=\int_0^2(2x-x^2)dx+\int_2^3(x^2-2x)dx=4/3+4/3=8/3\). Nếu em lấy ngay \(\left|\int_0^3(2x-x^2)dx\right|\), hai phần trái dấu sẽ bị triệt và không cho diện tích thực.
 
@@ -650,8 +632,7 @@ Chẳng hạn, cho y=2x và y=x²: giao x=0 và2, trên (0,2) 2x≥x² nên S=�
 
 **Vận dụng** Cho y=x+1 và y=1 trên [0,2], S?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 ∫₀² x dx=2 đơn vị².
 
@@ -702,8 +683,7 @@ Bình phương rồi lấy tích phân từ \(0\) đến \(h\) cho thể tích.
 
 **Vận dụng** Tiết diện vuông cạnh 3 không đổi, đoạn dài2: thể tích?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 9·2=18 đơn vị³.
 
@@ -732,8 +712,7 @@ Chẳng hạn, r(x)=2x trên [0,1], V=π∫₀¹4x²dx=4π/3 đơn vị³. Chọ
 
 **Vận dụng** r(x)=1+x trên [0,1], V?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 π∫₀¹(1+x)²dx=7π/3.
 
@@ -768,8 +747,7 @@ Ngay trên hình, lấy miền \(0\le x\le2\), \(x\le y\le2\) quay quanh \(Ox\).
 
 **Vận dụng** Quay miền 0≤y≤2, x∈[0,3] quanh Ox, V?
 
-<details class="slm-topic-first-try" markdown="1">
-<summary>Đối chiếu</summary>
+<details markdown="1"><summary>Đối chiếu</summary>
 
 Đĩa r=2 không đổi, V=π·4·3=12π.
 
