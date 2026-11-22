@@ -142,7 +142,7 @@
     
     **Vận dụng.** A(0,0,−4), B(6,2,4). Tấm đĩa tâm O, bán kính 3, nằm trong z=0. Có che khuất B không?
     
-    <span data-ped-first-try="8" data-outcome-id="G12-CHV-B15-O07" data-thpt-first-try-id="THPT-G12-B15-TRY08" hidden></span>
+    <span data-ped-first-try="8" data-outcome-id="G12-CHV-B15-O08" data-thpt-first-try-id="THPT-G12-B15-TRY08" hidden></span>
     
     ??? question "Đối chiếu"
     
@@ -152,7 +152,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p07). Sau đó tự làm lại Vận dụng.
+        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c08); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p08). Sau đó tự làm lại Vận dụng.
 
 === "Kiến thức SGK"
 
@@ -266,7 +266,7 @@
     
     ??? tip "Cách tự sửa"
     
-        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p07). Sau đó tự làm lại Vận dụng.
+        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c08); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p08). Sau đó tự làm lại Vận dụng.
 
     [Core Bài 15](../luyen-tap/#b15-core) · [Luyện tập và Tự luận](../luyen-tap/#b15-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b15-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
 
