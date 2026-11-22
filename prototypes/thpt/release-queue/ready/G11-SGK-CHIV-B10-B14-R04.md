@@ -65,7 +65,7 @@ One normative SLM-THPT-QUALITY-ONE v3.2.0. Full five-column 18-Q evidence table 
 - [ ] R3_CLEAN_STUDENT_UI — check actual 4 tabs, math, five SVGs, responsive/deep links and computed styles.
 - [ ] R4_ASSESSMENT_SAFETY — 17 public reused questions are NOT official independent readiness/Mastery; private RD1, pre-submit security and Tutor must be tested.
 - [ ] R5_OWNER_APPROVAL — no automatic merge/deploy.
-- [ ] P1_DEPLOY_RECEIPT — not deployed.
-- [ ] P2_DEVICE_UAT — not claimed.
+- [ ] P1_DEPLOY_RECEIPT — No production deployment performed; RELEASE P1 publication receipt is not available, and this Draft grants no deployment right.
+- [ ] P2_DEVICE_UAT — No real-device Safari/Android/iPad acceptance performed in AUTHORING; RELEASE P2 will need owner-approved UAT with evidence.
 
 **AUTHORING CONTENT_READY** for R04 source only. Historical R03 independently reviewed source e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b and receipt b95425c53ab55dc4f3d0f05ecba6fd6e2f69bc52 remain immutable. No Firebase/Auth/Mastery/student data/THCS/Topic changes. No merge/deploy.
