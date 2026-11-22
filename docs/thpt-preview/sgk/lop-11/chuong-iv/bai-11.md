@@ -28,7 +28,7 @@
 
         **Dấu hiệu:** Em nói “không cắt nên song song” mà chưa kiểm cả hai có cùng mặt không.
 
-        **Tự sửa:** Trong không gian, tách hai câu hỏi **cắt?**, **đồng phẳng?**. Ôn mục 2.1 rồi luyện Core B11-C01, Practice B11-P01 ở [Bài 11 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Trong không gian, tách hai câu hỏi **cắt?**, **đồng phẳng?**. Ôn mục 2.1 rồi luyện Core B11-C01, Practice B11-P01 ở <a href="../luyen-tap/">Bài 11 – Luyện tập</a>.
 
     ### 1.2. Dùng đường trung bình phải chỉ ra tam giác chứa nó
 
@@ -48,7 +48,7 @@
 
         **Dấu hiệu:** Em dùng ngay “trung điểm” mà không nêu tam giác hoặc suy \(MN\parallel BC\) sai cặp cạnh.
 
-        **Tự sửa:** Viết rõ tam giác \(SAC\), chọn cạnh thứ ba **AC**. Ôn mục 2.2; luyện Practice B11-P02 ở [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Viết rõ tam giác \(SAC\), chọn cạnh thứ ba **AC**. Ôn mục 2.2; luyện Practice B11-P02 ở <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     ### 1.3. Tính chất cùng phương cần kiểm hai đường phân biệt
 
@@ -68,7 +68,7 @@
 
         **Dấu hiệu:** Em ghi \(a\parallel c\) dù có thể \(a=c\).
 
-        **Tự sửa:** Ôn mục 2.2; luôn thêm câu “nếu hai đường phân biệt”. Thử Practice B11-P04 tại [Bài 11 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2; luôn thêm câu “nếu hai đường phân biệt”. Thử Practice B11-P04 tại <a href="../luyen-tap/">Bài 11 – Luyện tập</a>.
 
     ### 1.4. Giao tuyến có thể cùng phương với hai đường song song
 
@@ -88,7 +88,7 @@
 
         **Dấu hiệu:** Em cho rằng hai mặt giao theo AB dù AB không thuộc mặt \((SCD)\).
 
-        **Tự sửa:** Chỉ rõ S là điểm chung, rồi xây dựng **đường qua S cùng phương** hai cạnh. Ôn mục 2.3, luyện bài giao tuyến liên quan cạnh song song trong [Core và Luyện tập Chương IV](../luyen-tap/).
+        **Tự sửa:** Chỉ rõ S là điểm chung, rồi xây dựng **đường qua S cùng phương** hai cạnh. Ôn mục 2.3, luyện bài giao tuyến liên quan cạnh song song trong <a href="../luyen-tap/">Core và Luyện tập Chương IV</a>.
 
     ### 1.5. Đọc hình lăng trụ: song song khác chéo
 
@@ -108,7 +108,7 @@
 
         **Dấu hiệu:** Em nói \(AA'\) với \(BC\) song song chỉ vì không giao trên hình.
 
-        **Tự sửa:** Xác định mặt phẳng chứa từng cặp: \(AB,A'B'\) có chung mặt bên, \(AA',BC\) thì không. Ôn mục 2.1 và hình ở mục 2.3; luyện Core B11-C02 tại [Luyện tập Bài 11](../luyen-tap/).
+        **Tự sửa:** Xác định mặt phẳng chứa từng cặp: \(AB,A'B'\) có chung mặt bên, \(AA',BC\) thì không. Ôn mục 2.1 và hình ở mục 2.3; luyện Core B11-C02 tại <a href="../luyen-tap/">Luyện tập Bài 11</a>.
 
 === "Kiến thức SGK"
 
@@ -181,7 +181,7 @@
 
         **Vì sao sai:** Hai đường có thể chéo nếu không đồng phẳng.
 
-        **Tự sửa:** Ôn mục 2.1 và Ví dụ 3.1; luyện Core B11-C01, Practice B11-P01 tại [Luyện tập Bài 11](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.1 và Ví dụ 3.1; luyện Core B11-C01, Practice B11-P01 tại <a href="../luyen-tap/">Luyện tập Bài 11</a>.
 
     <span data-thpt-help-id="HELP-G11-B11-02" hidden></span>
 
@@ -191,7 +191,7 @@
 
         **Vì sao sai:** Định lý đường trung bình được chứng minh cho một tam giác trong mặt phẳng.
 
-        **Tự sửa:** Đánh dấu tam giác SAB/SBC/SAC phù hợp, dùng đúng cạnh thứ ba; ôn mục 2.2 và luyện Practice B11-P02 tại [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Đánh dấu tam giác SAB/SBC/SAC phù hợp, dùng đúng cạnh thứ ba; ôn mục 2.2 và luyện Practice B11-P02 tại <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B11-03" hidden></span>
 
@@ -213,6 +213,6 @@
 
         **Tự sửa:** Qua S dựng đường cùng phương những cạnh đáy **thuộc từng mặt cần giao**; ôn mục 2.3 và Ví dụ 3.5.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương IV](../../../../thu-vien/tu-luan-g11-chuong-iv/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-iv/">Tự luận Chương IV</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 11 (trang in 78–83).</p>
