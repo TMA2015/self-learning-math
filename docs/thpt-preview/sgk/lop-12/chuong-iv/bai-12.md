@@ -156,9 +156,9 @@
 
 === "Kiến thức SGK"
 
-    ### 2.1. Tích phân của một hàm số liên tục
+    ### 2.1. Khái niệm tích phân
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Tích phân của một hàm số liên tục.</strong><p>Cho f liên tục trên đoạn [a,b], a&lt;b. Với nguyên hàm F của f, \(\int_a^b f(x)\,dx=F(b)-F(a)=[F(x)]_a^b\). Tích phân là một số, không phụ thuộc chọn hằng số C của F. Khi f không âm, tích phân bằng diện tích dưới đồ thị trên [a,b].</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm tích phân.</strong><p>Cho f liên tục trên đoạn [a,b], a&lt;b. Với nguyên hàm F của f, \(\int_a^b f(x)\,dx=F(b)-F(a)=[F(x)]_a^b\). Tích phân là một số, không phụ thuộc chọn hằng số C của F. Khi f không âm, tích phân bằng diện tích hình thang cong dưới đồ thị trên [a,b]. Biến lấy tích phân chỉ là biến giả: \(\int_a^b f(x)dx=\int_a^b f(t)dt\).</p></div>
 
     ### 2.2. Tính chất của tích phân
     
@@ -203,6 +203,18 @@
     ### 3.9. Quãng đường hãm đến lúc dừng
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-R02-09"><p><strong>Đề bài:</strong> Xe đang chạy với \(v(t)=18-6t\) m/s đến khi dừng. Tìm thời gian và quãng đường hãm.</p><p><strong>Phân tích:</strong> Tìm lúc v=0, chỉ tích phân trong miền hãm.</p><p><strong>Lời giải:</strong> t=3 s; \(\int_0^3(18-6t)dt=[18t-3t^2]_0^3=27\) m.</p><p><strong>Kiểm lại:</strong> Tam giác đáy 3 cao 18 có diện tích 27; không kéo dài v sang âm.</p></div>
+
+    ### 3.10. Ý nghĩa hình học: một phần tư hình tròn
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-R02-10"><p><strong>Đề bài:</strong> Tính \(\int_0^5\sqrt{25-x^2}\,dx\) bằng hình học.</p><p><strong>Phân tích:</strong> Đồ thị là cung tròn \(x^2+y^2=25\) ở góc phần tư thứ nhất, y≥0. Bảng nguyên hàm cơ bản không cần xử lý trực tiếp căn này.</p><p><strong>Lời giải:</strong> Tích phân là diện tích một phần tư hình tròn bán kính 5: \(25\pi/4\).</p><p><strong>Kiểm lại:</strong> Cận [0,5] và y≥0; không nhầm với toàn hình tròn.</p></div>
+
+    ### 3.11. Lợi nhuận thay đổi trong một khoảng
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-R02-11"><p><strong>Đề bài:</strong> Lợi nhuận biên \(P'(q)=40-0{,}2q\) nghìn đồng/sản phẩm. Tính mức tăng lợi nhuận khi q từ 10 đến 30.</p><p><strong>Phân tích:</strong> Cần hiệu P(30)−P(10), không cần biết P(0).</p><p><strong>Lời giải:</strong> \(\int_{10}^{30}(40-0{,}2q)dq=[40q-0{,}1q^2]_{10}^{30}=720\) nghìn đồng.</p><p><strong>Kiểm lại:</strong> Lợi nhuận biên từ 38 xuống 34, trung bình 36 nhân 20 bằng 720.</p></div>
+
+    ### 3.12. Giá trị trung bình trên một miền không gian
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-R02-12"><p><strong>Đề bài:</strong> Mô hình tốc độ dòng chảy \(v(r)=k(9-r^2)\), 0≤r≤3, k&gt;0. Tính trung bình của v theo biến r.</p><p><strong>Phân tích:</strong> Đây là trung bình theo bán kính r, không phải bình quân có trọng số theo diện tích tiết diện.</p><p><strong>Lời giải:</strong> \(\bar v=\frac13\int_0^3 k(9-r^2)dr=6k\), trong khi \(v_{\max}=9k\).</p><p><strong>Kiểm lại:</strong> \(0\le6k\le9k\); không dùng kết quả này cho trung bình diện tích nếu đề khác.</p></div>
 
 === "Lỗi thường gặp"
 
@@ -256,4 +268,4 @@
 
     [Core Bài 12](../luyen-tap/#b12-core) · [Luyện tập và Tự luận](../luyen-tap/#b12-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b12-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 12–18.*
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 12–18; SBT Tập hai, trang in 9–13.*
