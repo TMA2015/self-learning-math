@@ -7,7 +7,7 @@ const topic01TabNames={
  modules:["1. Mệnh đề và lập luận","2. Tập hợp","3. Khoảng và sơ đồ Ven"],
  subs:[["1.1. Mệnh đề và biến","1.2. Phủ định","1.3. Điều kiện cần, đủ","1.4. Tương đương","1.5. Lượng từ"],
  ["2.1. Phần tử và tập con","2.2. Giao và hợp","2.3. Hiệu tập hợp","2.4. Phần bù"],
- ["3.1. Khoảng và dấu ngoặc","3.2. Đếm phần hợp"]]
+ ["3.1. Khoảng số","3.2. Đếm phần hợp"]]
 };
 const displayShortTopic01=(button,label,full)=>{
  if(!label||!full||label.length>=full.length)throw Error("TOP01_SHORT_TAB_SOURCE_HOLD");
