@@ -8,7 +8,7 @@ RELEASE_SCOPE: FULL_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 AUTHOR_SELF_QA_RECEIPT: YES_SOURCE_LOCKED_G11_CHIV_R04
 SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: 04d058549fc7c248b213a3c62929b2feecc05bb9
+SOURCE_BLOB: 8133e3e9bf08ac39309c26f3d817c9b0b1974db9
 S1_RECEIPT: HISTORICAL_PRIMARY_SBT_PRINTED_PAGE_SCAN_AND_R03_KNTT_CONTENT_NO_FRESH_FINAL_PRINT_SGK_IMAGE_SCAN
 OUTCOME_AUDIT: 22_REGISTERED_21_LESSON_PLUS_1_CHAPTER_INTEGRATED
 MATH_VERIFICATION: PRIOR_R02_72000_NUMERIC_PROBES_HISTORICAL_AND_CURRENT_TARGETED_B14_DIRECTION_EDGE_CHECK
@@ -141,9 +141,9 @@ SGK Toán 11 KNTT Tập một B10 pp70–77, B11 pp78–83, B12 pp84–87, B13 p
 
 ## A1–A7 and terminal signature
 
-A1: 15 canonical component path/blob hashes source-locked in bundle `04d058549fc7c248b213a3c62929b2feecc05bb9`; A2: historical original SGK/SBT provenance with explicit no-new-rescan limitation; A3: author Q18 self-verification with no fabricated independent PASS; A4: 22 source outcomes and 67 source-owned teaching IDs 1:1 reconciled; A5: D1–D6 and PED1–PED6 observed by lesson, not just totals; A6: B14 projection precision Delta C corrected in the learner + 55 equivalent link conversions Delta A; A7: 22 confidential RD1 remain private, public END no official Mastery and no Firebase/Auth/learner record mutation.
+A1: 15 canonical component path/blob hashes source-locked in bundle `8133e3e9bf08ac39309c26f3d817c9b0b1974db9`; A2: historical original SGK/SBT provenance with explicit no-new-rescan limitation; A3: author Q18 self-verification with no fabricated independent PASS; A4: 22 source outcomes and 67 source-owned teaching IDs 1:1 reconciled; A5: D1–D6 and PED1–PED6 observed by lesson, not just totals; A6: B14 projection precision Delta C corrected in the learner + 55 equivalent link conversions Delta A; A7: 22 confidential RD1 remain private, public END no official Mastery and no Firebase/Auth/learner record mutation.
 
-AUTHOR_SIGNOFF: CONTENT_VERIFIED_Q01_Q18_A1_A7_SOURCE_04d058549fc7c248b213a3c62929b2feecc05bb9
+AUTHOR_SIGNOFF: CONTENT_VERIFIED_Q01_Q18_A1_A7_SOURCE_8133e3e9bf08ac39309c26f3d817c9b0b1974db9
 P0_P1_AUTHORING: 0_0
 AUTHORING_PASS: CONTENT_READY_AFTER_ONE_V2_READY_REGISTER
 RELEASE_STATE: AWAIT_RELEASE_AP_R_EXACT_HEAD_OWNER_AUTHORIZATION
