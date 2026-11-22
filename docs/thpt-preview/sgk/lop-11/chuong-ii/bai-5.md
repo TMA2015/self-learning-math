@@ -28,7 +28,7 @@
 
         **Dấu hiệu:** Em tính thêm \(u_5=16\) và coi đó là số hạng trong dãy, hoặc nhầm \(u_4=4\).
 
-        **Tự sửa:** Đọc **miền chỉ số trước công thức**. Ôn mục 2.1, sau đó giải câu Core về dãy hữu hạn năm số chính phương và câu Practice về chỉ số thỏa \(u_n=87\) tại [Core và Luyện tập Bài 5](../luyen-tap/).
+        **Tự sửa:** Đọc **miền chỉ số trước công thức**. Ôn mục 2.1, sau đó giải câu Core về dãy hữu hạn năm số chính phương và câu Practice về chỉ số thỏa \(u_n=87\) tại <a href="../luyen-tap/">Core và Luyện tập Bài 5</a>.
 
     ### 1.2. Có bốn cách cho một dãy số
 
@@ -50,7 +50,7 @@
 
         **Dấu hiệu:** Em ghi \(u_4=u_1+4+1\), hoặc dùng quy tắc truy hồi như thể là công thức \(u_n=f(n)\).
 
-        **Tự sửa:** Viết một bảng hai cột \(n\) và \(u_n\), tính từng bước \(u_1\to u_2\to u_3\). Ôn mục 2.2; rồi luyện câu Core \(u_1=2,u_{n+1}=u_n+5\) và câu Practice \(u_1=1,u_{n+1}=2u_n+1\) tại [Bài 5 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Viết một bảng hai cột \(n\) và \(u_n\), tính từng bước \(u_1\to u_2\to u_3\). Ôn mục 2.2; rồi luyện câu Core \(u_1=2,u_{n+1}=u_n+5\) và câu Practice \(u_1=1,u_{n+1}=2u_n+1\) tại <a href="../luyen-tap/">Bài 5 – Luyện tập</a>.
 
     ### 1.3. Trên hình của dãy số, không được nối các điểm tùy ý
 
@@ -70,7 +70,7 @@
 
         **Dấu hiệu:** Em cho rằng dãy không đơn điệu thì không bị chặn, hoặc vẽ đường liên tục và chọn một số \(v_{1,5}\).
 
-        **Tự sửa:** Đơn điệu và bị chặn là **hai tính chất độc lập**. Ôn các mục 2.1, 2.3; luyện câu Practice về \(u_n=(-1)^n\) tại [Bài 5 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Đơn điệu và bị chặn là **hai tính chất độc lập**. Ôn các mục 2.1, 2.3; luyện câu Practice về \(u_n=(-1)^n\) tại <a href="../luyen-tap/">Bài 5 – Luyện tập</a>.
 
     ### 1.4. Vì sao phải xét hiệu của hai số hạng liên tiếp?
 
@@ -95,7 +95,7 @@
 
         **Dấu hiệu:** Em thấy mẫu tăng nên vội nói toàn bộ phân thức giảm; hoặc thử ba số đầu rồi kết luận tăng với mọi \(n\).
 
-        **Tự sửa:** Rút gọn hoặc quy đồng \(u_{n+1}-u_n\), ghi \(n\ge1\) để chốt dấu. Ôn mục 2.3; luyện câu Core \(u_n=5-2n\) và câu Practice chứng minh \(u_n=3/(n+2)\) giảm ở [Core và Luyện tập Bài 5](../luyen-tap/).
+        **Tự sửa:** Rút gọn hoặc quy đồng \(u_{n+1}-u_n\), ghi \(n\ge1\) để chốt dấu. Ôn mục 2.3; luyện câu Core \(u_n=5-2n\) và câu Practice chứng minh \(u_n=3/(n+2)\) giảm ở <a href="../luyen-tap/">Core và Luyện tập Bài 5</a>.
 
     ### 1.5. Một dãy tăng vẫn có thể có giới hạn trên
 
@@ -115,7 +115,7 @@
 
         **Dấu hiệu:** Em ghi \(u_n=2\) tại “\(n=\infty\)” hoặc chỉ dùng kết quả tính ở \(n=1,2,3\).
 
-        **Tự sửa:** Bắt đầu từ bất đẳng thức \(0<1/n\le1\) cho **mọi số nguyên dương**. Ôn mục 2.3; luyện câu Practice chứng minh cận của \(u_n=2-1/n\) rồi \(u_n=n/(n+1)\) tại [Bài 5 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Bắt đầu từ bất đẳng thức \(0<1/n\le1\) cho **mọi số nguyên dương**. Ôn mục 2.3; luyện câu Practice chứng minh cận của \(u_n=2-1/n\) rồi \(u_n=n/(n+1)\) tại <a href="../luyen-tap/">Bài 5 – Luyện tập</a>.
 
     ### 1.6. Ứng dụng: số liệu tăng trưởng và mốc năm
 
@@ -135,7 +135,7 @@
 
         **Dấu hiệu:** Em tính \(80(1{,}05)^4\) dù đề nói “năm thứ tư”, hoặc bỏ qua đơn vị nghìn.
 
-        **Tự sửa:** Vẽ trục các năm đánh dấu từ \(1\) và đếm số **bước tăng**, rồi mới thay số mũ \(n-1\). Ôn mục 2.2, luyện bài Practice về số ghế ở **hàng thứ 12** tại [Core và Luyện tập Bài 5](../luyen-tap/); Bài 7 sẽ giải thích sâu hơn tăng trưởng theo tỉ lệ.
+        **Tự sửa:** Vẽ trục các năm đánh dấu từ \(1\) và đếm số **bước tăng**, rồi mới thay số mũ \(n-1\). Ôn mục 2.2, luyện bài Practice về số ghế ở **hàng thứ 12** tại <a href="../luyen-tap/">Core và Luyện tập Bài 5</a>; Bài 7 sẽ giải thích sâu hơn tăng trưởng theo tỉ lệ.
 
 === "Kiến thức SGK"
 
@@ -250,7 +250,7 @@
 
         **Vì sao sai:** \(n\) là nhãn vị trí và phải thuộc miền đã công bố. Hàm có thể có công thức tính ngoài miền nhưng những giá trị ấy **không thuộc dãy được cho**.
 
-        **Tự sửa:** Gạch dưới miền \(n\in\mathbb N^*\) hoặc \(n=1,\ldots,N\), lập bảng n/u_n rồi mới thay số. Ôn mục 2.1, Ví dụ 3.1; thử lại câu Core tìm dãy hữu hạn và câu Practice \(u_n=5n+2\) tại [Luyện tập Bài 5](../luyen-tap/).
+        **Tự sửa:** Gạch dưới miền \(n\in\mathbb N^*\) hoặc \(n=1,\ldots,N\), lập bảng n/u_n rồi mới thay số. Ôn mục 2.1, Ví dụ 3.1; thử lại câu Core tìm dãy hữu hạn và câu Practice \(u_n=5n+2\) tại <a href="../luyen-tap/">Luyện tập Bài 5</a>.
 
     <span data-thpt-help-id="HELP-G11-B05-02" hidden></span>
 
@@ -260,7 +260,7 @@
 
         **Vì sao sai:** Hệ thức chỉ nói cách tạo số **kế tiếp từ số trước**; chưa biết đủ số khởi tạo thì không thể xác định mọi giá trị.
 
-        **Tự sửa:** Viết cột \(u_1,u_2,u_3,\ldots\), tính từng bước và dùng kết quả để kiểm bước sau. Ôn mục 2.2, Ví dụ 3.3; luyện câu Core \(u_1=2,u_{n+1}=u_n+5\) và Practice \(u_1=4,u_{n+1}=3u_n-2\) tại [Luyện tập Bài 5](../luyen-tap/).
+        **Tự sửa:** Viết cột \(u_1,u_2,u_3,\ldots\), tính từng bước và dùng kết quả để kiểm bước sau. Ôn mục 2.2, Ví dụ 3.3; luyện câu Core \(u_1=2,u_{n+1}=u_n+5\) và Practice \(u_1=4,u_{n+1}=3u_n-2\) tại <a href="../luyen-tap/">Luyện tập Bài 5</a>.
 
     <span data-thpt-help-id="HELP-G11-B05-03" hidden></span>
 
@@ -270,7 +270,7 @@
 
         **Vì sao sai:** Tăng/giảm là một mệnh đề \(\forall n\) trong miền, không phải quan sát vài mẫu. Dãy có thể đổi chiều ở các chỉ số xa hơn.
 
-        **Tự sửa:** Viết hiệu \(u_{n+1}-u_n\), tìm dấu trên **mọi chỉ số** rồi kết luận. Ôn mục 2.3 và Ví dụ 3.4; luyện Core \(u_n=5-2n\), Practice chứng minh \(3/(n+2)\) giảm ở [Luyện tập Bài 5](../luyen-tap/).
+        **Tự sửa:** Viết hiệu \(u_{n+1}-u_n\), tìm dấu trên **mọi chỉ số** rồi kết luận. Ôn mục 2.3 và Ví dụ 3.4; luyện Core \(u_n=5-2n\), Practice chứng minh \(3/(n+2)\) giảm ở <a href="../luyen-tap/">Luyện tập Bài 5</a>.
 
     <span data-thpt-help-id="HELP-G11-B05-04" hidden></span>
 
@@ -280,8 +280,8 @@
 
         **Vì sao sai:** Một cận chỉ cần là số thỏa bất đẳng thức cho **mọi** số hạng, không cần đạt. Dãy tăng \(u_n=n\) không bị chặn trên.
 
-        **Tự sửa:** Tìm hai bất đẳng thức \(m\le u_n\le M\) đúng với mọi \(n\); không dùng “\(n=\infty\)” như một chỉ số. Ôn mục 2.3, Ví dụ 3.5; thử lại hai câu Practice xác định cận của \(2-1/n\) và \(n/(n+1)\) ở [Luyện tập Bài 5](../luyen-tap/).
+        **Tự sửa:** Tìm hai bất đẳng thức \(m\le u_n\le M\) đúng với mọi \(n\); không dùng “\(n=\infty\)” như một chỉ số. Ôn mục 2.3, Ví dụ 3.5; thử lại hai câu Practice xác định cận của \(2-1/n\) và \(n/(n+1)\) ở <a href="../luyen-tap/">Luyện tập Bài 5</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương II](../../../../thu-vien/tu-luan-g11-chuong-ii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-ii/">Tự luận Chương II</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 5 (trang in 42–47).</p>
