@@ -44,17 +44,17 @@ def git_blob(data: bytes) -> str:
 
 
 def project_svg(md: str) -> str:
-    def repl(m: re.Match[str]) -> str:
-        name = m.group(1).split("/")[-1]
-        sub = "images/thpt" if name.startswith(("FIG-G11-", "THPT_G10_")) else "visuals"
-        return f"](../../../assets/{sub}/{name})"
-    projected = re.sub(r"\]\(([^)\n]+\.svg)\)", repl, md)
-    # DELTA_A_UI display encoding: plain-text '<' inside raw HTML details
-    # must be an HTML entity; otherwise MkDocs raw-HTML parser consumes
-    # subsequent lesson headings (CĐ02 O06/O07 regression). Same mathematics.
-    def escape_details(match: re.Match[str]) -> str:
-        return match.group(1) + match.group(2).replace("<", "&lt;") + match.group(3)
-    return re.sub(r'(<details markdown="1"><summary>[^<]*</summary>)(.*?)(</details>)',
+    # Display-only SVG path rewrite and safe math '<' escaping inside ANY
+    # author-approved native details block, including <details class=...>
+    # with separate <summary> line. Original SOURCE and words stay frozen.
+    def replace_svg(m: re.Match[str]) -> str:
+        filename = m.group(1).split("/")[-1]
+        return f"](../../../assets/visuals/{filename})"
+    projected = re.sub(r"\]\(([^)\n]+\.svg)\)", replace_svg, md)
+    def escape_details(m: re.Match[str]) -> str:
+        body = re.sub(r"<(?!/?summary\\b)", "&lt;", m.group(2))
+        return m.group(1) + body + m.group(3)
+    return re.sub(r"(<details\\b[^>]*>)(.*?)(</details>)",
                   escape_details, projected, flags=re.S)
 
 
