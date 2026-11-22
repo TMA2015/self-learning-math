@@ -86,19 +86,19 @@
     
     <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIV-B12-SIGNED-R02.svg" alt="Đồ thị y=x−1 cắt Ox tại 1; phần âm trên [0,1] và phần dương trên [1,4]."/><figcaption>Đọc từng vùng theo dấu; diện tích là tổng hai độ lớn, tích phân là hiệu phần dương và phần âm.</figcaption></figure>
     
-    **Vận dụng.** Với $f(x)=x-1$ trên [0,4], tính tích phân và diện tích giới hạn với Ox.
+    **Vận dụng.** Với $f(x)=x-2$ trên [0,5], tính tích phân và diện tích giới hạn với Ox.
     
     <span data-ped-first-try="5" data-outcome-id="G12-CHIV-B12-O05" data-thpt-first-try-id="THPT-G12-B12-TRY05" hidden></span>
     
     ??? question "Đối chiếu"
     
-        **Lời giải:** Tích phân $[x^2/2-x]_0^4=4$. Hai tam giác có diện tích 1/2 và 9/2, tổng 5. Không lấy |4| làm diện tích.
+        **Lời giải:** Tích phân $[x^2/2-2x]_0^5=5/2$. Hai tam giác có diện tích 2 và 9/2, tổng 13/2. Không lấy |5/2| làm diện tích.
     
     <span data-thpt-help-id="HELP-G12-B12-TRY05" hidden></span>
     
     ??? tip "Kiểm lỗi"
     
-        Tìm nghiệm x=1; vẽ vùng âm và dương. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        Tìm nghiệm x=2; vẽ vùng âm và dương. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.6. Tích phân hàm mũ và lượng giác
     
@@ -234,7 +234,7 @@
     
     ??? tip "Cách tự sửa"
     
-        Tìm nghiệm x=1; vẽ vùng âm và dương. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p05).
+        Tìm nghiệm x=2; vẽ vùng âm và dương. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p05).
 
     ### 4.6. Tích phân hàm mũ và lượng giác
     
