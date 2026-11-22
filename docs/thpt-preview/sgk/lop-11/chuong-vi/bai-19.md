@@ -180,27 +180,27 @@
 
     ### 3.1. Đọc số mũ âm
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\log_6(1/216)\).</p><p><strong>Phân tích:</strong> Nhận ra đối số là lũy thừa nguyên của 6.</p><p><strong>Lời giải:</strong> \(216=6^3\), nên \(1/216=6^{-3}\) và logarit bằng \(-3\).</p><p><strong>Kiểm lại:</strong> Lấy 6 nâng lên -3 đúng bằng đối số.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-01"><p><strong>Đề bài:</strong> Tính \(\log_6(1/216)\).</p><p><strong>Phân tích:</strong> Nhận ra đối số là lũy thừa nguyên của 6.</p><p><strong>Lời giải:</strong> \(216=6^3\), nên \(1/216=6^{-3}\) và logarit bằng \(-3\).</p><p><strong>Kiểm lại:</strong> Lấy 6 nâng lên -3 đúng bằng đối số.</p></div>
 
     ### 3.2. Điều kiện với bình phương
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tìm tập xác định của \(\log_4((x-2)^2)\) và viết biểu thức theo logarit của trị tuyệt đối.</p><p><strong>Phân tích:</strong> Đối số phải dương, bình phương bằng 0 đúng khi x=2.</p><p><strong>Lời giải:</strong> Miền \(\mathbb R\setminus\{2\}\). Vì \(|x-2|\gt 0\), \(\log_4((x-2)^2)=2\log_4|x-2|\).</p><p><strong>Kiểm lại:</strong> Với x<2, logarit của x-2 không có nghĩa nhưng logarit của trị tuyệt đối có nghĩa.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-02"><p><strong>Đề bài:</strong> Tìm tập xác định của \(\log_4((x-2)^2)\) và viết biểu thức theo logarit của trị tuyệt đối.</p><p><strong>Phân tích:</strong> Đối số phải dương, bình phương bằng 0 đúng khi x=2.</p><p><strong>Lời giải:</strong> Miền \(\mathbb R\setminus\{2\}\). Vì \(|x-2|\gt 0\), \(\log_4((x-2)^2)=2\log_4|x-2|\).</p><p><strong>Kiểm lại:</strong> Với x<2, logarit của x-2 không có nghĩa nhưng logarit của trị tuyệt đối có nghĩa.</p></div>
 
     ### 3.3. Gộp thương và tích
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\log_3 54-\log_3 2+\log_3 9\).</p><p><strong>Phân tích:</strong> Các đối số dương cho phép gộp.</p><p><strong>Lời giải:</strong> \(=\log_3(54\cdot9/2)=\log_3 243=5\).</p><p><strong>Kiểm lại:</strong> (3^5=243); đúng chiều tính ngược.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-03"><p><strong>Đề bài:</strong> Tính \(\log_3 54-\log_3 2+\log_3 9\).</p><p><strong>Phân tích:</strong> Các đối số dương cho phép gộp.</p><p><strong>Lời giải:</strong> \(=\log_3(54\cdot9/2)=\log_3 243=5\).</p><p><strong>Kiểm lại:</strong> (3^5=243); đúng chiều tính ngược.</p></div>
 
     ### 3.4. Đổi cơ số và tính gần đúng
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\log_7 13\) đến ba chữ số thập phân.</p><p><strong>Phân tích:</strong> 7 và 13 dương, 7 khác 1; dùng cơ số e.</p><p><strong>Lời giải:</strong> \(\log_7 13=\ln13/\ln7\approx1{,}318\).</p><p><strong>Kiểm lại:</strong> Vì 7<13<49, kết quả nằm giữa 1 và 2.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-04"><p><strong>Đề bài:</strong> Tính \(\log_7 13\) đến ba chữ số thập phân.</p><p><strong>Phân tích:</strong> 7 và 13 dương, 7 khác 1; dùng cơ số e.</p><p><strong>Lời giải:</strong> \(\log_7 13=\ln13/\ln7\approx1{,}318\).</p><p><strong>Kiểm lại:</strong> Vì 7<13<49, kết quả nằm giữa 1 và 2.</p></div>
 
     ### 3.5. Ứng dụng thang lôgarit thập phân
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Theo \(\mathrm{pH}=-\lg c\), một mẫu có pH=4,5. Viết giá trị nồng độ \(c\) dưới dạng lũy thừa của 10.</p><p><strong>Phân tích:</strong> Đưa logarit về số mũ; c phải dương.</p><p><strong>Lời giải:</strong> \(\lg c=-4{,}5\), nên \(c=10^{-4{,}5}\) mol/L.</p><p><strong>Kiểm lại:</strong> Thế ngược vào công thức pH cho 4,5.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-05"><p><strong>Đề bài:</strong> Theo \(\mathrm{pH}=-\lg c\), một mẫu có pH=4,5. Viết giá trị nồng độ \(c\) dưới dạng lũy thừa của 10.</p><p><strong>Phân tích:</strong> Đưa logarit về số mũ; c phải dương.</p><p><strong>Lời giải:</strong> \(\lg c=-4{,}5\), nên \(c=10^{-4{,}5}\) mol/L.</p><p><strong>Kiểm lại:</strong> Thế ngược vào công thức pH cho 4,5.</p></div>
 
     ### 3.6. Thời gian trong mô hình liên tục
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Một mô hình lượng chất tăng \(Q(t)=60e^{0{,}08t}\), t tính bằng giờ. Khi nào đạt 180 đơn vị?</p><p><strong>Phân tích:</strong> Chia theo mức đầu và lấy ln vì cơ số e.</p><p><strong>Lời giải:</strong> \(e^{0{,}08t}=3\) nên \(t=\ln3/0{,}08\approx13{,}73\) giờ.</p><p><strong>Kiểm lại:</strong> Thế giá trị chính xác cho Q(t)=180; không kết luận đây là số giờ nguyên.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-06"><p><strong>Đề bài:</strong> Một mô hình lượng chất tăng \(Q(t)=60e^{0{,}08t}\), t tính bằng giờ. Khi nào đạt 180 đơn vị?</p><p><strong>Phân tích:</strong> Chia theo mức đầu và lấy ln vì cơ số e.</p><p><strong>Lời giải:</strong> \(e^{0{,}08t}=3\) nên \(t=\ln3/0{,}08\approx13{,}73\) giờ.</p><p><strong>Kiểm lại:</strong> Thế giá trị chính xác cho Q(t)=180; không kết luận đây là số giờ nguyên.</p></div>
 
 === "Lỗi thường gặp"
 
