@@ -1,149 +1,247 @@
 # Toán 12 · Bài 17. Phương trình mặt cầu
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG V · SGK KẾT NỐI TRI THỨC · TẬP HAI</p><p class="thpt-r4-lead">Học từ lý do và bản chất trước khi áp dụng công thức; có ví dụ giải thích phương pháp, hình gốc và Tự thử.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../bai-16/">Bài 16</a><a href="../mo-rong-sau-bai-17/">Mở rộng sau B17</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG V · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 54–60</p><p class="thpt-r4-lead">Hiểu hình học, đọc hình, tự vận dụng và đối chiếu trước khi luyện tập.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../bai-16/">Bài 16</a><a href="../mo-rong-sau-bai-17/">Mở rộng sau B17</a></nav></div>
 
-## 1. Vì sao cần học và kiến thức tiền đề
+=== "Khám phá kiến thức"
 
-Vùng phủ 3D và mặt cắt cầu.
+    Mặt cầu mô tả các điểm cách tâm một khoảng cố định; khối cầu gồm cả bên trong. Sóng phủ không gian, mặt phẳng tiếp xúc và khoảng cách trên Trái Đất là các mô hình khác nhau. Ôn khoảng cách Oxyz, hoàn thành bình phương, góc giữa vectơ và độ dài cung tròn.
 
-**Tự kiểm tra tiền đề:** Ôn công thức khoảng cách 3D, bình phương hoàn chỉnh và mặt phẳng. Nếu chưa tự giải được câu thử ở dưới, ôn vectơ/tích vô hướng/đạo hàm phù hợp trước khi tiếp tục.
+    ### 1.1. Mặt cầu là tập điểm đẳng cự
+    
+    Mặt cầu tâm I bán kính R>0 gồm đúng các điểm IM=R. Bình phương khoảng cách tọa độ cho phương trình; bình phương tương đương vì khoảng cách và R không âm.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHV-B17-SPHERE-R02.svg" alt="Mặt cầu tâm I, bán kính IM; M trên mặt, A trong và B ngoài."/><figcaption>Đọc khoảng cách từ cùng tâm I; hình phối cảnh chỉ minh họa vị trí.</figcaption></figure>
+    
+    **Vận dụng.** Tâm I(2,−1,4), đi qua M(2,2,0). Viết phương trình.
+    
+    <span data-ped-first-try="1" data-outcome-id="G12-CHV-B17-O01" data-thpt-first-try-id="THPT-G12-B17-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $R^2=0^2+3^2+(-4)^2=25$, nên $(x-2)^2+(y+1)^2+(z-4)^2=25$.
+    
+    <span data-thpt-help-id="HELP-G12-B17-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Đọc dấu tọa độ tâm ngược với dấu trong ngoặc; R=5 chứ không phải 25. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p01). Sau đó tự làm lại Vận dụng.
 
-## 2. Hiểu bản chất, điều kiện và ví dụ
+    ### 1.2. Hoàn thành bình phương và nhận diện
+    
+    Chuyển mỗi nhóm x²−2ax thành (x−a)²−a², tương tự y,z. Nếu vế phải R²>0 mới là mặt cầu. Hệ số x²,y²,z² phải bằng nhau khác 0 (chuẩn hóa), không có tích chéo.
+    
+    **Vận dụng.** $2x^2+2y^2+2z^2+4x-8y+6=0$ có là mặt cầu?
+    
+    <span data-ped-first-try="2" data-outcome-id="G12-CHV-B17-O02" data-thpt-first-try-id="THPT-G12-B17-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Chia 2, hoàn thành $(x+1)^2+(y-2)^2+z^2=2$. Tâm (−1,2,0), R=√2.
+    
+    <span data-thpt-help-id="HELP-G12-B17-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Cộng đúng bình phương nửa hệ số tuyến tính; R²=0 chỉ là điểm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p02). Sau đó tự làm lại Vận dụng.
 
-<!-- OUTCOME_ID: G12-CHV-B17-O01 -->
-### 1. Phương trình mặt cầu tâm và bán kính
+    ### 1.3. Trong, trên, ngoài
+    
+    So sánh IM² với R², không cần lấy căn. Mặt cầu chỉ là biên: nhỏ hơn là trong khối, bằng là trên, lớn hơn là ngoài.
+    
+    **Vận dụng.** I(1,0,0), R=4; A(1,3,0), B(1,0,4), C(6,0,0) ở đâu?
+    
+    <span data-ped-first-try="3" data-outcome-id="G12-CHV-B17-O03" data-thpt-first-try-id="THPT-G12-B17-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** IA²=9<16, IB²=16, IC²=25>16. A trong, B trên, C ngoài.
+    
+    <span data-thpt-help-id="HELP-G12-B17-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        So bình phương với bình phương, không so IM² với R. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p03). Sau đó tự làm lại Vận dụng.
 
-- **Vì sao cần biết:** Mô hình vùng phủ 3D của máy phát hoặc mặt cầu trong thiết kế.
-- **Kiến thức tiền đề:** Khoảng cách giữa hai điểm và chuẩn vectơ.
-- **Bản chất trước công thức:** Mặt cầu gồm các điểm M cách tâm C đúng R; bình phương hai vế là phương trình ba bình phương.
-- **Định nghĩa và công thức:** \((x-a)^2+(y-b)^2+(z-c)^2=R^2\).
-- **Điều kiện và giới hạn:** R>0; không nhầm mặt cầu (bề mặt) với khối cầu (phần trong).
-- **Lý do chọn phương pháp:** Viết bình phương khoảng cách CM=R và kiểm lại tâm, R.
-- **Bẫy cần tự phát hiện:** Dùng vế phải R thay vì R² hoặc nhầm dấu của tọa độ tâm.
+    ### 1.4. Đường kính xác định tâm
+    
+    Hai đầu đường kính A,B đối xứng qua I. Tâm là trung điểm; bán kính bằng AB/2, nên R²=AB²/4.
+    
+    **Vận dụng.** A(−2,1,4),B(4,3,0). Lập mặt cầu đường kính AB.
+    
+    <span data-ped-first-try="4" data-outcome-id="G12-CHV-B17-O04" data-thpt-first-try-id="THPT-G12-B17-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** I=(1,2,2); $AB^2=36+4+16=56$, $R^2=14$. $(x-1)^2+(y-2)^2+(z-2)^2=14$.
+    
+    <span data-thpt-help-id="HELP-G12-B17-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Nếu A=B không có mặt cầu bán kính dương. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p04). Sau đó tự làm lại Vận dụng.
 
-#### Ví dụ có suy luận
+    ### 1.5. Tiếp xúc và khoảng cách tâm–mặt
+    
+    Từ I hạ hình chiếu H trên mặt phẳng P, mọi điểm X của P thỏa $IX^2=IH^2+HX^2$. So IH với R: nhỏ hơn thì giao tròn, bằng thì tiếp xúc, lớn hơn thì không giao.
+    
+    **Vận dụng.** I(2,1,3),R=5,P:z=−2. Phân loại và tìm tiếp điểm.
+    
+    <span data-ped-first-try="5" data-outcome-id="G12-CHV-B17-O05" data-thpt-first-try-id="THPT-G12-B17-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** IH=|3−(−2)|=5=R, H=(2,1,−2) là tiếp điểm duy nhất.
+    
+    <span data-thpt-help-id="HELP-G12-B17-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm tiếp điểm vừa thuộc mặt phẳng vừa cách tâm R. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p05). Sau đó tự làm lại Vận dụng.
 
-**Đề:** Tâm C(1,-2,3), R=4. Viết mặt cầu.
+    ### 1.6. Từ vĩ độ, kinh độ tới tọa độ
+    
+    Mô hình Trái Đất là mặt cầu đơn vị tâm O; mỗi đơn vị tương ứng 6371 km. Oz hướng Bắc, Ox qua giao xích đạo và kinh tuyến gốc, Oy hướng 90° Đông. Vĩ độ có dấu φ∈[−90°,90°] (Bắc dương), kinh độ λ∈[−180°,180°] (Đông dương). Hình chiếu lên Oxy dài cosφ, z=sinφ; tách hình chiếu theo λ cho $P=(\cos\varphi\cos\lambda,\cos\varphi\sin\lambda,\sin\varphi)$.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHV-B17-GEO-R02.svg" alt="Cầu đơn vị với vĩ độ φ và kinh độ λ; hình chiếu H trên Oxy."/><figcaption>Độ cao z=sinφ, OH=cosφ; tách OH theo λ.</figcaption></figure>
+    
+    **Vận dụng.** Tìm tọa độ điểm 30° Nam, 60° Đông trên cầu đơn vị.
+    
+    <span data-ped-first-try="6" data-outcome-id="G12-CHV-B17-O06" data-thpt-first-try-id="THPT-G12-B17-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** φ=−30°, λ=60°. P=(√3/4,3/4,−1/2); tổng bình phương =3/16+9/16+1/4=1.
+    
+    <span data-thpt-help-id="HELP-G12-B17-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Nam đổi dấu z, Tây đổi dấu λ; ở cực kinh độ không xác định duy nhất. Ôn [bài toán tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) và [tích vô hướng, Bài 16](../bai-16/). Đây là tiền đề, không phải câu cùng outcome địa lí. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
 
-**Lời giải có suy luận:** CM²=(x−1)²+(y+2)²+(z−3)²=4².
+    ### 1.7. Khoảng cách ngắn nhất trên bề mặt Trái Đất
+    
+    Hai bán kính OP,OQ tạo góc tâm θ∈[0,π]. Đường tròn lớn qua O,P,Q cho cung ngắn nhất trên cầu (đối cực có nhiều cung cùng độ dài). Trên cầu đơn vị, cosθ=OP·OQ; không lấy trị tuyệt đối như góc hai đường. Độ dài thực s=6371θ với θ radian, khác độ dài dây thẳng $2R\sin(\theta/2)$.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHV-B17-ARC-R02.svg" alt="Mặt cắt qua O,P,Q: cung ngắn và dây PQ, góc tâm θ."/><figcaption>Cung có độ dài Rθ, dây là đoạn thẳng nối P,Q; θ có thể tù.</figcaption></figure>
+    
+    **Vận dụng.** P trên xích đạo kinh độ 0°, Q trên xích đạo kinh độ 120°Đ. Tìm khoảng cách mặt cầu.
+    
+    <span data-ped-first-try="7" data-outcome-id="G12-CHV-B17-O06" data-thpt-first-try-id="THPT-G12-B17-TRY07" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** P=(1,0,0), Q=(−1/2,√3/2,0). Dot=−1/2, θ=120°=2π/3. $s=6371\cdot2\pi/3\approx13343{,}4$ km.
+    
+    <span data-thpt-help-id="HELP-G12-B17-TRY07" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn [bài toán tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) và [tích vô hướng, Bài 16](../bai-16/). Đây là tiền đề, không phải câu cùng outcome địa lí. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
 
-**Kiểm tra kết quả và điều kiện:** (x−1)²+(y+2)²+(z−3)²=16. **Kiểm tra phạm vi:** R>0; không nhầm mặt cầu (bề mặt) với khối cầu (phần trong).
+=== "Kiến thức SGK"
 
+    ### 2.1. Phương trình mặt cầu
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Phương trình mặt cầu.</strong><p>Mặt cầu tâm I(a,b,c), R&gt;0 có phương trình \((x-a)^2+(y-b)^2+(z-c)^2=R^2\). Dạng \(x^2+y^2+z^2-2ax-2by-2cz+d=0\) là mặt cầu khi \(a^2+b^2+c^2-d&gt;0\). Tâm (a,b,c), R bằng căn của biểu thức đó. M là trong, trên, ngoài theo \(IM^2&lt;R^2,=R^2,&gt;R^2\). Đường kính AB (A≠B): I là trung điểm và R=AB/2. Nếu R²=0 chỉ có một điểm; R²&lt;0 vô nghiệm thực.</p></div>
 
-<!-- OUTCOME_ID: G12-CHV-B17-O02 -->
-### 2. Đưa phương trình tổng quát về tâm và bán kính
+    ### 2.2. Một số ứng dụng của phương trình mặt cầu trong thực tiễn
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Một số ứng dụng của phương trình mặt cầu trong thực tiễn.</strong><p>SGK mô hình hóa bề mặt Trái Đất bằng mặt cầu bán kính 6371 km. Trên cầu đơn vị, đặt \(P=(\cos\varphi_1\cos\lambda_1,\cos\varphi_1\sin\lambda_1,\sin\varphi_1)\), tương tự Q; φ có dấu Bắc/Nam, λ có dấu Đông/Tây. \(\theta=\arccos(P\cdot Q)\in[0,\pi]\) không lấy trị tuyệt đối. \(s=6371\theta\) km khi θ tính radian, hoặc \(s=6371\pi\theta^\circ/180\) khi θ tính độ. Với mô hình cầu, s là cung ngắn nhất, không phải chiều dài đường đi thực tế hay dây cung. Giữ đủ chữ số khi tính; diễn giải mô hình gần đúng. Với vùng phủ hình cầu, so khoảng cách tới tâm với R; tiếp xúc mặt phẳng khi d(I,P)=R&gt;0.</p></div>
 
-- **Vì sao cần biết:** Tìm tâm và bán kính khi thiết bị cho phương trình đa thức của biên phủ.
-- **Kiến thức tiền đề:** Hằng đẳng thức hoàn chỉnh bình phương.
-- **Bản chất trước công thức:** Hoàn chỉnh mỗi bình phương để đưa phương trình thành tổng bình phương bằng R².
-- **Định nghĩa và công thức:** \(x^2+y^2+z^2+Dx+Ey+Fz+G=0\Rightarrow C=(-D/2,-E/2,-F/2),\ R^2=\tfrac{D^2+E^2+F^2}{4}-G\).
-- **Điều kiện và giới hạn:** R²>0 để là mặt cầu bán kính dương; R²=0 chỉ là một điểm; R²<0 không có điểm thực.
-- **Lý do chọn phương pháp:** Nhóm theo biến, hoàn chỉnh bình phương và kiểm dấu/radius trước khi kết luận.
-- **Bẫy cần tự phát hiện:** Lấy R bằng R² hoặc bỏ qua trường hợp R² âm.
+=== "Ví dụ"
 
-#### Ví dụ có suy luận
+    ### 3.1. Tâm và bán kính
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-01"><p><strong>Đề bài:</strong> I(1,−2,3), R=4. Viết mặt cầu.</p><p><strong>Phân tích:</strong> Bình phương khoảng cách IM.</p><p><strong>Lời giải:</strong> \((x-1)^2+(y+2)^2+(z-3)^2=16\).</p><p><strong>Kiểm lại:</strong> I đúng dấu, bán kính dương.</p></div>
 
-**Đề:** x²+y²+z²−2x+4y−6z+5=0. Xác định C,R.
+    ### 3.2. Hoàn thành bình phương
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-02"><p><strong>Đề bài:</strong> \(x^2+y^2+z^2-2x+4y-6z+5=0\). Tìm tâm, R.</p><p><strong>Phân tích:</strong> Nhóm từng biến.</p><p><strong>Lời giải:</strong> \((x-1)^2+(y+2)^2+(z-3)^2=9\). I(1,−2,3), R=3.</p><p><strong>Kiểm lại:</strong> Khai triển lại.</p></div>
 
-**Lời giải có suy luận:** Nhóm thành (x−1)²+(y+2)²+(z−3)²=1+4+9−5=9.
+    ### 3.3. Điểm trên cầu
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-03"><p><strong>Đề bài:</strong> I=O,R=5,P(3,4,0).</p><p><strong>Phân tích:</strong> So OP² với R².</p><p><strong>Lời giải:</strong> \(OP^2=25=R^2\); P trên mặt cầu.</p><p><strong>Kiểm lại:</strong> Không kết luận điểm trong.</p></div>
 
-**Kiểm tra kết quả và điều kiện:** C(1,-2,3), R=3. **Kiểm tra phạm vi:** R²>0 để là mặt cầu bán kính dương; R²=0 chỉ là một điểm; R²<0 không có điểm thực.
+    ### 3.4. Đường kính
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-04"><p><strong>Đề bài:</strong> A(0,0,0),B(2,4,0).</p><p><strong>Phân tích:</strong> Lấy trung điểm, AB²/4.</p><p><strong>Lời giải:</strong> I=(1,2,0), \(R^2=5\), \((x-1)^2+(y-2)^2+z^2=5\).</p><p><strong>Kiểm lại:</strong> Hai đầu cách I √5.</p></div>
 
+    ### 3.5. Tiếp xúc
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-05"><p><strong>Đề bài:</strong> I(1,0,0),R=2,P:x=3.</p><p><strong>Phân tích:</strong> Khoảng cách tâm tới P.</p><p><strong>Lời giải:</strong> d=2=R; tiếp xúc tại (3,0,0).</p><p><strong>Kiểm lại:</strong> Thỏa cả hai phương trình.</p></div>
 
-<!-- OUTCOME_ID: G12-CHV-B17-O03 -->
-### 3. Điểm nằm trong, trên hay ngoài mặt cầu
+    ### 3.6. Từ tọa độ địa lí đến vectơ đơn vị
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-R02-06"><p><strong>Đề bài:</strong> P ở 45° Bắc, 90° Tây. Tính tọa độ.</p><p><strong>Phân tích:</strong> φ=45°, λ=−90°.</p><p><strong>Lời giải:</strong> \(P=(0,-\sqrt2/2,\sqrt2/2)\).</p><p><strong>Kiểm lại:</strong> Norm bằng 1; Tây cho tung độ âm.</p></div>
 
-- **Vì sao cần biết:** Kiểm một vị trí có trên biên phủ, bên trong vùng sóng hay ngoài vùng sóng.
-- **Kiến thức tiền đề:** Khoảng cách hai điểm, bình phương số dương.
-- **Bản chất trước công thức:** So sánh CM² với R² tránh khai căn không cần thiết.
-- **Định nghĩa và công thức:** \(CM^2<R^2\text{ (trong)};\ CM^2=R^2\text{ (trên)};\ CM^2>R^2\text{ (ngoài)}\).
-- **Điều kiện và giới hạn:** Với R>0, “trong khối cầu” khác “trên mặt cầu”.
-- **Lý do chọn phương pháp:** Tính CM² và so với R²; kết luận đúng từ.
-- **Bẫy cần tự phát hiện:** Nói điểm ở trong mặt cầu khi CM=R, lẫn biên và miền trong.
+    ### 3.7. Cung lớn với hai vĩ độ khác 0
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-R02-07"><p><strong>Đề bài:</strong> P(30° Bắc,0°), Q(30° Nam,90° Đông). Tính s.</p><p><strong>Phân tích:</strong> P=(√3/2,0,1/2), Q=(0,√3/2,−1/2); dùng góc giữa hai bán kính có hướng.</p><p><strong>Lời giải:</strong> Dot=−1/4, \(\theta=\arccos(-1/4)\approx1{,}8235\) rad; \(s\approx11617{,}4\) km (làm tròn tới 0,1 km từ giá trị đầy đủ).</p><p><strong>Kiểm lại:</strong> Góc &gt;90°, dây cung khác độ dài mặt cầu; không dùng trị tuyệt đối.</p></div>
 
-#### Ví dụ có suy luận
+    ### 3.8. Tâm trên một trục (SBT)
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-R02-08"><p><strong>Đề bài:</strong> I thuộc Ox, mặt cầu qua A(0,2,0), B(4,0,0). Tìm I,R.</p><p><strong>Phân tích:</strong> Đặt I=(t,0,0), IA²=IB².</p><p><strong>Lời giải:</strong> \(t^2+4=(t-4)^2\), t=3/2. \(R^2=25/4\).</p><p><strong>Kiểm lại:</strong> Hai khoảng cách đều 5/2.</p></div>
 
-**Đề:** C=O,R=5,P(3,4,0). P nằm đâu?
+    ### 3.9. Dây thẳng xuyên cầu khác cung mặt cầu
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-R02-09"><p><strong>Đề bài:</strong> Cầu đơn vị O, P=(1,0,0), hướng đào u=(−1,1,0). Tìm giao tiếp theo, chiều dài đường hầm.</p><p><strong>Phân tích:</strong> Thế P+tu vào phương trình cầu và tìm nghiệm t&gt;0.</p><p><strong>Lời giải:</strong> \((1-t)^2+t^2=1\) ⇒ t=0 hoặc 1. Q=(0,1,0), PQ=√2 đơn vị (≈9010 km nếu nhân 6371). Cung mặt cầu là π/2 đơn vị.</p><p><strong>Kiểm lại:</strong> Dây ngắn hơn cung; không mô tả tuyến đào khả thi thực tế.</p></div>
 
-**Lời giải có suy luận:** OP²=3²+4²=25=R².
+    ### 3.10. Định vị từ khoảng cách (tham khảo Em có biết)
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-R02-10"><p><strong>Đề bài:</strong> Trên cầu đơn vị, P cách A(2,0,0) √5, B(0,2,0) √3, và nằm ở Bắc bán cầu. Tìm P.</p><p><strong>Phân tích:</strong> Trừ phương trình cầu khỏi hai phương trình khoảng cách bình phương.</p><p><strong>Lời giải:</strong> \(x^2+y^2+z^2=1\). Từ PA²=5 suy x=0, PB²=3 suy y=1/2. Bắc bán cầu ⇒ \(z=\sqrt3/2\). P=(0,1/2,√3/2).</p><p><strong>Kiểm lại:</strong> Thay cả ba phương trình; bài toán toán học đơn giản hóa, không phải GPS thực.</p></div>
 
-**Kiểm tra kết quả và điều kiện:** Trên mặt cầu. **Kiểm tra phạm vi:** Với R>0, “trong khối cầu” khác “trên mặt cầu”.
+    ### 3.11. Nhận diện trường hợp suy biến
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-R02-11"><p><strong>Đề bài:</strong> \(x^2+y^2+z^2+2x-4y+5=0\). Có mặt cầu không?</p><p><strong>Phân tích:</strong> Hoàn thành bình phương.</p><p><strong>Lời giải:</strong> \((x+1)^2+(y-2)^2+z^2=0\): chỉ điểm (−1,2,0), không phải mặt cầu R&gt;0.</p><p><strong>Kiểm lại:</strong> Nếu vế phải âm thì vô nghiệm.</p></div>
 
+    ### 3.12. Từ bán kính đến vùng phủ
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-R02-12"><p><strong>Đề bài:</strong> Thiết bị tại I(0,0,5), R=7 m. M(3,2,0) thuộc vùng phủ không?</p><p><strong>Phân tích:</strong> Vùng phủ gồm trong và biên khối cầu; tính IM².</p><p><strong>Lời giải:</strong> \(IM^2=9+4+25=38&lt;49\), M thuộc vùng phủ.</p><p><strong>Kiểm lại:</strong> Mô hình bỏ qua vật cản; không khẳng định tín hiệu thực.</p></div>
 
-<!-- OUTCOME_ID: G12-CHV-B17-O04 -->
-### 4. Mặt cầu có đường kính cho bởi hai điểm
+=== "Lỗi thường gặp"
 
-- **Vì sao cần biết:** Tìm mặt cầu an toàn bao trùm hai mốc đối diện trên một đường kính.
-- **Kiến thức tiền đề:** Trung điểm và khoảng cách giữa hai điểm.
-- **Bản chất trước công thức:** Tâm là trung điểm đoạn AB, bán kính bằng nửa AB.
-- **Định nghĩa và công thức:** \(C=\frac{A+B}{2},\ R=\frac{|B-A|}{2}\).
-- **Điều kiện và giới hạn:** A và B khác nhau; không nhầm nửa độ dài với nửa bình phương độ dài.
-- **Lý do chọn phương pháp:** Tính trung điểm, tính AB² rồi chia 4 để được R², lập phương trình.
-- **Bẫy cần tự phát hiện:** Dùng A làm tâm hoặc đặt R=AB²/2.
+    ### 4.1. Mặt cầu là tập điểm đẳng cự
+    
+    ??? tip "Cách tự sửa"
+    
+        Đọc dấu tọa độ tâm ngược với dấu trong ngoặc; R=5 chứ không phải 25. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p01). Sau đó tự làm lại Vận dụng.
 
-#### Ví dụ có suy luận
+    ### 4.2. Hoàn thành bình phương và nhận diện
+    
+    ??? tip "Cách tự sửa"
+    
+        Cộng đúng bình phương nửa hệ số tuyến tính; R²=0 chỉ là điểm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p02). Sau đó tự làm lại Vận dụng.
 
-**Đề:** A(0,0,0),B(2,4,0) là hai đầu đường kính. Viết mặt cầu.
+    ### 4.3. Trong, trên, ngoài
+    
+    ??? tip "Cách tự sửa"
+    
+        So bình phương với bình phương, không so IM² với R. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p03). Sau đó tự làm lại Vận dụng.
 
-**Lời giải có suy luận:** C=(1,2,0); AB²=2²+4²=20, R²=20/4=5.
+    ### 4.4. Đường kính xác định tâm
+    
+    ??? tip "Cách tự sửa"
+    
+        Nếu A=B không có mặt cầu bán kính dương. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p04). Sau đó tự làm lại Vận dụng.
 
-**Kiểm tra kết quả và điều kiện:** (x−1)²+(y−2)²+z²=5. **Kiểm tra phạm vi:** A và B khác nhau; không nhầm nửa độ dài với nửa bình phương độ dài.
+    ### 4.5. Tiếp xúc và khoảng cách tâm–mặt
+    
+    ??? tip "Cách tự sửa"
+    
+        Kiểm tiếp điểm vừa thuộc mặt phẳng vừa cách tâm R. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b17-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b17-p05). Sau đó tự làm lại Vận dụng.
 
+    ### 4.6. Từ vĩ độ, kinh độ tới tọa độ
+    
+    ??? tip "Cách tự sửa"
+    
+        Nam đổi dấu z, Tây đổi dấu λ; ở cực kinh độ không xác định duy nhất. Ôn [bài toán tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) và [tích vô hướng, Bài 16](../bai-16/). Đây là tiền đề, không phải câu cùng outcome địa lí. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
 
-<!-- OUTCOME_ID: G12-CHV-B17-O05 -->
-### 5. Tiếp xúc mặt cầu với mặt phẳng và thiết diện
+    ### 4.7. Khoảng cách ngắn nhất trên bề mặt Trái Đất
+    
+    ??? tip "Cách tự sửa"
+    
+        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn [bài toán tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) và [tích vô hướng, Bài 16](../bai-16/). Đây là tiền đề, không phải câu cùng outcome địa lí. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
 
-- **Vì sao cần biết:** Quyết định một mặt phẳng đi qua, chỉ chạm hay không chạm vùng cầu.
-- **Kiến thức tiền đề:** Khoảng cách từ điểm đến mặt phẳng và Pythagoras.
-- **Bản chất trước công thức:** So sánh khoảng cách h từ tâm đến mặt phẳng với R: h<R cắt theo đường tròn, h=R tiếp xúc, h>R không giao.
-- **Định nghĩa và công thức:** \(h=d(C,(P));\quad r=\sqrt{R^2-h^2}\text{ khi }h<R\).
-- **Điều kiện và giới hạn:** R>0 và pháp tuyến mặt phẳng khác 0; thiết diện bán kính 0 là tiếp điểm, không là đường tròn dương.
-- **Lý do chọn phương pháp:** Tính h từ pháp tuyến và tâm; so sánh với R, rồi mới tính bán kính thiết diện nếu cần.
-- **Bẫy cần tự phát hiện:** Thấy phương trình mặt phẳng có nghiệm rồi kết luận luôn là cát tuyến của mặt cầu.
+    [Core Bài 17](../luyen-tap/#b17-core) · [Luyện tập và Tự luận](../luyen-tap/#b17-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b17-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Mở rộng không bắt buộc sau B17](../mo-rong-sau-bai-17/)
 
-#### Ví dụ có suy luận
-
-**Đề:** C(1,0,0),R=2, P:x=3. Phân loại.
-
-**Lời giải có suy luận:** h=|1−3|=2=R; một tiếp điểm (3,0,0).
-
-**Kiểm tra kết quả và điều kiện:** Tiếp xúc. **Kiểm tra phạm vi:** R>0 và pháp tuyến mặt phẳng khác 0; thiết diện bán kính 0 là tiếp điểm, không là đường tròn dương.
-
-
-## 3. Đọc hình minh họa gốc
-
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHV-B17-R00.png" alt="Hình minh họa gốc về Phương trình mặt cầu" /><figcaption>Hình 1: Phương trình mặt cầu. Đọc nhãn và quan hệ hình học; không suy số đo trong không gian từ tỷ lệ hình phẳng.</figcaption></figure>
-
-## 4. Tự thử trước Core
-
-Em tự làm trước, rồi chủ động mở đối chiếu; không tính điểm hay Mastery.
-
-<!-- FIRST_TRY_ID: B17-T01 -->
-### Tự thử
-
-R=3 thì R² bằng mấy?
-
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
-
-**Đối chiếu:** 9.
-
-**Vì sao:** Khoảng cách giữa hai điểm và chuẩn vectơ..
-
-</details>
-
-<!-- FIRST_TRY_ID: B17-T02 -->
-### Tự thử
-
-C(1,0,0),R=2, P:x=3. Phân loại.
-
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
-
-**Đối chiếu:** Tiếp xúc.
-
-**Vì sao:** Khoảng cách từ điểm đến mặt phẳng và Pythagoras..
-
-</details>
-
-## 5. Core và Luyện tập
-
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b17-core">Core · Bài 17</a><a href="../luyen-tap/#b17-practice">Luyện tập, Vận dụng và Tự luận</a><a href="../luyen-tap/#b17-help">Khi gặp khó khăn</a></nav></div>
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 54–60; SBT trang in 32–35.*
