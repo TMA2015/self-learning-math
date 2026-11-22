@@ -22,7 +22,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Xác định miền, f không âm và cận tăng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p01). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Trước khi tích phân chiều cao lát, phải biết hàm không âm trên toàn miền; diện tích hình học mang đơn vị bình phương và không thể âm.
+
+        **Tự sửa:** Xác định miền, f không âm và cận tăng. <a href="../luyen-tap/#thpt-g12-b13-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.2. Diện tích khi đồ thị qua Ox
     
@@ -40,7 +42,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy trị tuyệt đối của tích phân tổng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p02). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Nếu đồ thị cắt trục hoành, tích phân có dấu hai phía có thể triệt tiêu; diện tích phải tích phân |f| hoặc tách miền tại mọi điểm đổi dấu.
+
+        **Tự sửa:** Không lấy trị tuyệt đối của tích phân tổng. <a href="../luyen-tap/#thpt-g12-b13-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.3. Giữa hai đường: trên trừ dưới
     
@@ -58,7 +62,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        So hai giá trị ở cùng x, không trừ diện tích ngoài miền. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p03). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Diện tích giữa hai đồ thị lấy đường ở trên trừ đường ở dưới; không lấy nhầm biểu thức ngược dấu hay dùng tích phân hiệu khi nó âm.
+
+        **Tự sửa:** So hai giá trị ở cùng x, không trừ diện tích ngoài miền. <a href="../luyen-tap/#thpt-g12-b13-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.4. Giao điểm làm đổi đường trên
     
@@ -78,7 +84,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tìm cả giao điểm bên trong, kiểm dấu riêng từng khoảng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p04). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Giao điểm có thể đổi thứ tự hai đường trên/dưới, phải giải giao điểm và chia khoảng trước khi tính tổng diện tích không âm.
+
+        **Tự sửa:** Tìm cả giao điểm bên trong, kiểm dấu riêng từng khoảng. <a href="../luyen-tap/#thpt-g12-b13-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.5. Mô hình diện tích và đơn vị
     
@@ -96,7 +104,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Bề rộng dương; diện tích không phải m³. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Khi w(x) mô tả độ rộng dải đất, phải kiểm w(x)≥0 và đơn vị của dx; tích phân bề rộng theo chiều dài mới cho diện tích.
+
+        **Tự sửa:** Bề rộng dương; diện tích không phải m³. <a href="../luyen-tap/#thpt-g12-b13-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.6. Thể tích từ lát cắt
     
@@ -116,7 +126,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Bình phương cạnh trước khi tích phân. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p06). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Thể tích từ lát cắt dùng tích phân diện tích mặt cắt S(x) theo chiều dài dx; không tích phân trực tiếp bán kính hoặc chu vi rồi gọi là thể tích.
+
+        **Tự sửa:** Bình phương cạnh trước khi tích phân. <a href="../luyen-tap/#thpt-g12-b13-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.7. Lát cắt tròn: bán kính hay đường kính?
     
@@ -134,7 +146,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Dùng d/2; nhầm d làm r tăng thể tích gấp bốn. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Nếu đề cho đường kính, bán kính bằng một nửa; diện tích lát tròn là πr² nên bỏ phép chia hai sẽ làm thể tích sai gấp bốn.
+
+        **Tự sửa:** Dùng d/2; nhầm d làm r tăng thể tích gấp bốn. <a href="../luyen-tap/#thpt-g12-b13-c07">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.8. Miền quay quanh Ox
     
@@ -154,7 +168,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm trục quay và bình phương bán kính. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c08); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p08). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Khi quay quanh Ox, bán kính lát là khoảng cách từ đồ thị đến trục, dùng π[f(x)]² cho miền nằm giữa đồ thị và trục với điều kiện không có lỗ; nếu có hai bán kính thì dùng vành khăn.
+
+        **Tự sửa:** Kiểm trục quay và bình phương bán kính. <a href="../luyen-tap/#thpt-g12-b13-c08">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p08">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.9. Tự dựng mặt cắt của khối chóp
     
@@ -174,7 +190,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy tỉ số diện tích bằng tỉ số cạnh; chọn gốc ở đỉnh nhất quán. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p06). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Với khối chóp/chóp cụt, độ dài cạnh lát thay đổi tuyến tính theo chiều cao do đồng dạng nhưng diện tích lát tăng theo bình phương độ dài, không theo tuyến tính.
+
+        **Tự sửa:** Không lấy tỉ số diện tích bằng tỉ số cạnh; chọn gốc ở đỉnh nhất quán. <a href="../luyen-tap/#thpt-g12-b13-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.10. Nón cụt: bán kính thay đổi tuyến tính
     
@@ -192,7 +210,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm r(0)=1, r(3)=4; dùng bình phương bán kính. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Trong nón cụt, bán kính r(x) đổi tuyến tính và mặt cắt πr(x)²; nếu hai đáy bằng nhau phải thu công thức trụ, nếu r=0 phải thu nón.
+
+        **Tự sửa:** Kiểm r(0)=1, r(3)=4; dùng bình phương bán kính. <a href="../luyen-tap/#thpt-g12-b13-c07">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.11. Diện tích trong mô hình kinh tế
     
@@ -210,7 +230,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đặt đúng đường trên và cận lượng giao dịch; đây là mô hình lý tưởng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b13-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b13-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Trong mô hình kinh tế, tích phân hiệu hai đường chỉ có ý nghĩa với đúng miền lượng/đơn vị và thứ tự đường trên-dưới; kết quả diện tích không tự đồng nghĩa lợi nhuận kế toán.
+
+        **Tự sửa:** Đặt đúng đường trên và cận lượng giao dịch; đây là mô hình lý tưởng. <a href="../luyen-tap/#thpt-g12-b13-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b13-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
 === "Kiến thức SGK"
 
@@ -302,68 +324,68 @@
     
     ??? tip "Cách tự sửa"
     
-        Xác định miền, f không âm và cận tăng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p01).
+        Xác định miền, f không âm và cận tăng. <a href="../luyen-tap/#thpt-g12-b13-c01">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p01">luyện câu khác rồi quay lại</a>.
 
     ### 4.2. Diện tích khi đồ thị qua Ox
     
     ??? tip "Cách tự sửa"
     
-        Không lấy trị tuyệt đối của tích phân tổng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p02).
+        Không lấy trị tuyệt đối của tích phân tổng. <a href="../luyen-tap/#thpt-g12-b13-c02">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p02">luyện câu khác rồi quay lại</a>.
 
     ### 4.3. Giữa hai đường: trên trừ dưới
     
     ??? tip "Cách tự sửa"
     
-        So hai giá trị ở cùng x, không trừ diện tích ngoài miền. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p03).
+        So hai giá trị ở cùng x, không trừ diện tích ngoài miền. <a href="../luyen-tap/#thpt-g12-b13-c03">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p03">luyện câu khác rồi quay lại</a>.
 
     ### 4.4. Giao điểm làm đổi đường trên
     
     ??? tip "Cách tự sửa"
     
-        Tìm cả giao điểm bên trong, kiểm dấu riêng từng khoảng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p04).
+        Tìm cả giao điểm bên trong, kiểm dấu riêng từng khoảng. <a href="../luyen-tap/#thpt-g12-b13-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p04">luyện câu khác rồi quay lại</a>.
 
     ### 4.5. Mô hình diện tích và đơn vị
     
     ??? tip "Cách tự sửa"
     
-        Bề rộng dương; diện tích không phải m³. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p05).
+        Bề rộng dương; diện tích không phải m³. <a href="../luyen-tap/#thpt-g12-b13-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p05">luyện câu khác rồi quay lại</a>.
 
     ### 4.6. Thể tích từ lát cắt
     
     ??? tip "Cách tự sửa"
     
-        Bình phương cạnh trước khi tích phân. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p06).
+        Bình phương cạnh trước khi tích phân. <a href="../luyen-tap/#thpt-g12-b13-c06">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p06">luyện câu khác rồi quay lại</a>.
 
     ### 4.7. Lát cắt tròn: bán kính hay đường kính?
     
     ??? tip "Cách tự sửa"
     
-        Dùng d/2; nhầm d làm r tăng thể tích gấp bốn. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p07).
+        Dùng d/2; nhầm d làm r tăng thể tích gấp bốn. <a href="../luyen-tap/#thpt-g12-b13-c07">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.8. Miền quay quanh Ox
     
     ??? tip "Cách tự sửa"
     
-        Kiểm trục quay và bình phương bán kính. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c08); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p08).
+        Kiểm trục quay và bình phương bán kính. <a href="../luyen-tap/#thpt-g12-b13-c08">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p08">luyện câu khác rồi quay lại</a>.
 
     ### 4.9. Tự dựng mặt cắt của khối chóp
     
     ??? tip "Cách tự sửa"
     
-        Không lấy tỉ số diện tích bằng tỉ số cạnh; chọn gốc ở đỉnh nhất quán. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p06).
+        Không lấy tỉ số diện tích bằng tỉ số cạnh; chọn gốc ở đỉnh nhất quán. <a href="../luyen-tap/#thpt-g12-b13-c06">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p06">luyện câu khác rồi quay lại</a>.
 
     ### 4.10. Nón cụt: bán kính thay đổi tuyến tính
     
     ??? tip "Cách tự sửa"
     
-        Kiểm r(0)=1, r(3)=4; dùng bình phương bán kính. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p07).
+        Kiểm r(0)=1, r(3)=4; dùng bình phương bán kính. <a href="../luyen-tap/#thpt-g12-b13-c07">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.11. Diện tích trong mô hình kinh tế
     
     ??? tip "Cách tự sửa"
     
-        Đặt đúng đường trên và cận lượng giao dịch; đây là mô hình lý tưởng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b13-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b13-p05).
+        Đặt đúng đường trên và cận lượng giao dịch; đây là mô hình lý tưởng. <a href="../luyen-tap/#thpt-g12-b13-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b13-p05">luyện câu khác rồi quay lại</a>.
 
-    [Core Bài 13](../luyen-tap/#b13-core) · [Luyện tập và Tự luận](../luyen-tap/#b13-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b13-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b13-core">Core Bài 13</a> · <a href="../luyen-tap/#b13-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b13-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 19–26; SBT Tập hai, trang in 14–18.*
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 Kết nối tri thức với cuộc sống, Tập hai, Bài 13, trang in 19–26; SBT cùng bộ, trang in 14–18. Đối chiếu số trang theo biên bản PDF gốc đã kiểm; không đồng nhất chỉ số trang PDF với trang in khi bị đảo.</p>
