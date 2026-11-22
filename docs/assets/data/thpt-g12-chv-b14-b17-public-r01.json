@@ -1409,6 +1409,62 @@
         "1đ đúng tọa độ P và quy ước Bắc/Đông; 1đ đúng tọa độ Q và quy ước Nam/Tây; 1đ tính và kiểm tích vô hướng −5/8, hai vectơ đơn vị; 1đ tìm θ=arccos(−5/8) trong [0,π] và không dùng trị tuyệt đối; 1đ đổi radian, tính s≈14308,8 km và giải thích hạn chế của trị tuyệt đối."
       ],
       "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
+    },
+    {
+      "item_id": "THPT-G12-B15-C08",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O08",
+      "role": "CORE",
+      "source_role": "SGK_CORE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 1,
+      "stem": "Mắt ở A(0,0,−2), vật ở B(0,0,2). Tấm đĩa tâm O(0,0,0), bán kính 1 nằm trong mặt phẳng z=0. Đĩa có chắn đoạn nhìn AB không?",
+      "answer": "Có, giao H=O trong đĩa và t=1/2 thuộc (0,1).",
+      "solution": "Đặt M(t)=A+t(B−A)=(0,0,−2+4t), 0≤t≤1. z=0 ⇒ t=1/2; H=(0,0,0), OH²=0≤1², nên tấm đĩa chắn tầm nhìn."
+    },
+    {
+      "item_id": "THPT-G12-B15-P08",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O08",
+      "role": "SGK_PRACTICE",
+      "source_role": "SGK_PRACTICE",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 2,
+      "stem": "Mắt A(2,0,−3), vật B(2,0,3); đĩa chắn tâm O, bán kính 1 trên mặt phẳng z=0. Đường nhìn xuyên qua mặt phẳng đĩa; vật có thực sự bị che không?",
+      "answer": "Không, H=(2,0,0) nằm ngoài đĩa vì OH²=4>1.",
+      "solution": "M(t)=(2,0,−3+6t), t∈[0,1]. Giao z=0 tại t=1/2 nên H=(2,0,0) nằm trên đoạn AB. Tuy nhiên OH²=4>1²; đĩa hữu hạn không chắn, dù mặt phẳng vô hạn bị cắt."
+    },
+    {
+      "item_id": "THPT-G12-B15-A08",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O08",
+      "role": "SGK_APPLICATION",
+      "source_role": "SGK_APPLICATION",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 3,
+      "stem": "Nguồn sáng A(0,0,1), vật B(0,0,3); màn đĩa tâm O bán kính 2 nằm trong z=0. Đường thẳng AB kéo dài đi qua tâm đĩa. Có thể kết luận màn chắn đoạn ánh sáng từ A đến B không?",
+      "answer": "Không, điểm giao với z=0 ứng với t=−1/2, nằm ngoài đoạn AB.",
+      "solution": "M(t)=A+t(B−A)=(0,0,1+2t). Với z=0 có t=−1/2, không thuộc [0,1]. Dù H=O thuộc đĩa, màn nằm phía sau A, không chắn đoạn ánh sáng đến B. Phải kiểm miền tham số trước phép thử bán kính."
+    },
+    {
+      "item_id": "THPT-G12-B15-W08",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O08",
+      "role": "SGK_WRITTEN",
+      "source_role": "SGK_WRITTEN",
+      "curriculum_scope": "SGK_OUTCOME_ALIGNED",
+      "optional_after_b17": false,
+      "level": 4,
+      "stem": "Mắt A(−2,1,−3), vật B(4,1,3). Một tấm chắn là đĩa có tâm C(1,0,0), bán kính 3/2, nằm trong mặt phẳng z=0. Lập tham số đoạn AB, tính điểm giao H với mặt phẳng, kiểm H có ở trong đĩa và kết luận liệu B bị che; giải thích vì sao kiểm giao với mặt phẳng chưa đủ.",
+      "answer": "Có che: M(t)=(−2+6t,1,−3+6t), 0≤t≤1; t=1/2, H=(1,1,0), CH²=1≤9/4.",
+      "solution": "Đoạn AB được tham số hóa M(t)=A+t(B−A)=(−2+6t,1,−3+6t), t∈[0,1]. Thế z=0 được −3+6t=0 ⇒ t=1/2 thuộc [0,1] (và thuộc (0,1)); H=(1,1,0). C=(1,0,0), CH²=(1−1)²+(1−0)²=1≤(3/2)²=9/4. Vì H vừa ở trên đoạn nhìn vừa trong đĩa (kể cả biên), màn che khuất B. Nếu t ngoài [0,1] hoặc CH²>R² thì không che; giao với mặt phẳng vô hạn không đủ.",
+      "rubric": [
+        "1đ lập đúng M(t)=A+t(B−A) và miền 0≤t≤1; 1đ giải đúng z=0 và kiểm t=1/2 nằm trong đoạn; 1đ tính đúng H=(1,1,0); 1đ so sánh CH²=1 với R²=9/4; 1đ kết luận che và giải thích cần đồng thời hai điều kiện đoạn và đĩa."
+      ],
+      "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
     }
   ],
   "help": [
@@ -1786,6 +1842,21 @@
       ],
       "return_item": "THPT-G12-B17-C06",
       "practice_item": "THPT-G12-B17-P06"
+    },
+    {
+      "help_id": "HELP-G12-B15-08",
+      "lesson_id": "B15",
+      "outcome_id": "G12-CHV-B15-O08",
+      "optional_after_b17": false,
+      "steps": [
+        "**Nhận ra lỗi:** Chỉ vì đoạn nhìn cắt mặt phẳng vô hạn z=0 đã kết luận tấm đĩa hữu hạn che vật, hoặc chỉ thấy giao điểm thuộc đĩa nhưng không kiểm nó có nằm giữa mắt và vật.",
+        "**Quay lại tiền đề:** Đoạn AB dùng M(t)=A+t(B−A), 0≤t≤1, còn tấm đĩa tâm C bán kính R nằm trong một mặt phẳng và gồm những H thỏa CH²≤R².",
+        "**Ví dụ chữa nhỏ:** Mắt A(0,1,−1), vật B(0,1,1), đĩa tâm O bán kính 1 trên z=0. Giao có t=1/2, H=(0,1,0), OH²=1=R²: H ở biên đĩa vẫn chắn. Nếu thay B bằng (0,1,−1/2) thì đoạn AB không qua z=0 nên không chắn.",
+        "**Tự làm lại có dẫn:** (1) nêu miền t cho đoạn; (2) giải t từ phương trình mặt phẳng; (3) nếu t ngoài [0,1], dừng: không chắn; (4) nếu t thuộc đoạn, tính H; (5) so CH² với R² kể cả biên rồi kết luận.",
+        "**Quay lại đúng nội dung:** tự làm Core THPT-G12-B15-C08 rồi Practice THPT-G12-B15-P08 trước khi mở lời giải, sau đó trở lại Tự thử trong bài; tự đối chiếu không phải đánh giá Mastery."
+      ],
+      "return_item": "THPT-G12-B15-C08",
+      "practice_item": "THPT-G12-B15-P08"
     }
   ],
   "end_references": [
@@ -1913,6 +1984,11 @@
       "placement_id": "END-CHV-17-06",
       "item_id": "THPT-G12-B17-A06",
       "outcome_id": "G12-CHV-B17-O06"
+    },
+    {
+      "placement_id": "END-CHV-15-08",
+      "item_id": "THPT-G12-B15-A08",
+      "outcome_id": "G12-CHV-B15-O08"
     }
   ]
 }
