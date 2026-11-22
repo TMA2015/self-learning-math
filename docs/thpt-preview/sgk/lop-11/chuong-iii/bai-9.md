@@ -177,6 +177,32 @@
 
         **Dấu hiệu:** Em lấy \(7{,}5\) làm trung bình chính xác của cả hai mẫu hoặc chia tổng trung điểm cho số nhóm thay vì cho cỡ mẫu. **Tự sửa:** Ghi \(n=3+1\), nhân mỗi trung điểm với **tần số**, rồi so sánh trung bình dữ liệu gốc tự tính để thấy thông tin đã mất. **Luyện lại:** Ôn mục 2.2 về trung bình có trọng số, làm Core **THPT-G11-B09-C02** và Practice **THPT-G11-B09-P10** về giới hạn suy luận từ bảng nhóm tại <a href="../luyen-tap/">Core và Luyện tập Bài 9</a>; không kết luận quá dữ kiện.
 
+    ### 1.8. Từ dữ liệu thô đến số trung bình ghép nhóm
+
+    Ở Bài 8, em học cách đặt các quan sát vào **đúng khoảng lớp** và kiểm tra tổng tần số. Ở Bài 9, chính bảng tần số ấy trở thành dữ liệu đầu vào để **ước lượng** số trung bình qua giá trị đại diện của từng lớp. Đây là hai bước liên tiếp của một phép xử lí số liệu, không phải hai công thức rời rạc. Trung bình ghép nhóm **không nhất thiết bằng** trung bình chính xác của số liệu thô, vì mọi giá trị trong cùng lớp đã được thay bằng một đại diện.
+
+    **Vận dụng — Tự thử tích hợp Bài 8 và 9.** Có sáu số đo giả định \(1,3,9,12,14,17\). (a) Lập bảng tần số theo hai nhóm \([0;10)\), \([10;20)\) và kiểm cỡ mẫu. (b) Dùng trung điểm nhóm để tính số trung bình ghép nhóm. (c) Tính số trung bình thật từ sáu số ban đầu và giải thích vì sao kết quả có thể khác.
+
+    <span data-ped-first-try="9" data-outcome-id="G11-CHIII-INTEGRATED" data-thpt-first-try-id="THPT-G11-B09-TRY09" hidden></span>
+
+    ??? question "Đối chiếu — từ bảng nhóm đến trung bình"
+
+        **Bước 1:** Ba số \(1,3,9\) thuộc \([0;10)\), ba số \(12,14,17\) thuộc \([10;20)\). Tần số là \((3,3)\), tổng \(n=6\).
+
+        **Bước 2:** Trung điểm hai lớp lần lượt là \(5\) và \(15\). Trung bình ghép nhóm \(\overline x_g=(3\cdot5+3\cdot15)/6=10\).
+
+        **Bước 3:** Tổng dữ liệu thô là \(1+3+9+12+14+17=56\), nên \(\overline x=56/6=28/3\approx9{,}33\). Sự chênh lệch là do thay số liệu gốc bằng trung điểm lớp, **không** phải sai phép đếm.
+
+    <span data-thpt-help-id="HELP-G11-B09-TRY09" hidden></span>
+
+    ??? tip "Kiểm lỗi — mất số liệu thô không phải mất cỡ mẫu"
+
+        **Dấu hiệu:** Em chia cho số nhóm \(2\) thay vì số quan sát \(6\), hoặc khẳng định \(\overline x_g=\overline x\) luôn đúng.
+
+        **Vì sao sai:** Trung điểm là giá trị **đại diện**, còn cỡ mẫu vẫn là tổng tần số và bảng nhóm không giữ được từng giá trị gốc.
+
+        **Tự sửa:** Lập ba cột khoảng lớp, tần số, trung điểm; tính \(\sum f_ix_i/\sum f_i\), rồi đối chiếu riêng trung bình thô nếu dữ liệu ban đầu còn. Ôn Bài 8 Core lập bảng và Bài 9 Core trung bình tại <a href="../luyen-tap/">Core và Luyện tập</a>, rồi tự giải lại trước khi mở lời giải.
+
 === "Kiến thức SGK"
 
     ### 2.1. Giá trị đại diện của nhóm và số trung bình
@@ -305,6 +331,15 @@
     <p><strong>Lời giải:</strong> Các độ rộng \(5,15,10\) khác nhau, nên **không áp trực tiếp** công thức mốt của mục 2.5. Muốn phân tích mốt theo cách khác cần thêm quy ước/mô hình thống kê phù hợp.</p>
     <p><strong>Kiểm lại:</strong> Không có một số \(h\) chung để thay vào công thức; chọn \(h=15\) chỉ vì nhóm hai lớn nhất là thiếu điều kiện.</p></div>
 
+    ### 3.9. Kết hợp lập bảng nhóm và ước lượng trung bình
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B09-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Mẫu dữ liệu \(2,4,7,8,11,13,16,18\) được chia thành \([0;10)\) và \([10;20)\). Lập bảng ghép nhóm rồi so trung bình ghép nhóm với trung bình chính xác.</p>
+    <p><strong>Phân tích:</strong> Trước hết đếm đúng tần số (Bài 8), sau đó dùng trung điểm từng nhóm để ước lượng (Bài 9). Khi vẫn còn dữ liệu thô, tính trung bình gốc để thấy sai số ghép nhóm.</p>
+    <p><strong>Lời giải:</strong> Mỗi khoảng có \(4\) giá trị, tổng \(n=8\). Trung điểm lớp là \(5\), \(15\), nên \(\overline x_g=(4\cdot5+4\cdot15)/8=10\). Tổng số liệu gốc là \(79\), nên \(\overline x=79/8=9{,}875\). Hai số không nhất thiết trùng vì giá trị đại diện thay cho số đo cụ thể trong mỗi nhóm.</p>
+    <p><strong>Kiểm lại:</strong> \(4+4=8\), hai trung điểm nằm trong lớp của chúng, và \(\overline x_g-\overline x=1/8\). Không chia theo hai nhóm thay vì tám quan sát.</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     Nếu sai một câu Vận dụng, xem Kiểm lỗi của câu đó. Năm nhóm lỗi dưới đây là những phương pháp sai cần tránh ở nhiều bảng số liệu khác nhau.
@@ -358,6 +393,16 @@
         **Vì sao sai:** Trung bình cân trọng số, trung vị chia đôi vị trí tích lũy, mốt dựa vào nhóm tập trung và các tần số kề. Chúng đo các ý nghĩa **khác nhau** và không nhất thiết bằng nhau.
 
         **Tự sửa:** Đặt ba cột câu hỏi “mức cân bằng / chia đôi / tập trung” rồi chọn phương pháp; ôn các mục 2.1,2.3,2.5 và luyện cả ba loại ở <a href="../luyen-tap/">Core và Luyện tập Bài 9</a>.
+
+    <span data-thpt-help-id="HELP-G11-B09-INTEGRATED" hidden></span>
+
+    ??? tip "4.6. Lập bảng đúng nhưng dùng sai mẫu số khi ước lượng"
+
+        **Dấu hiệu:** Em lấy \(\sum f_ix_i/2\) vì có hai lớp, hoặc coi trung bình ghép nhóm là số trung bình gốc chính xác.
+
+        **Vì sao sai:** Mẫu số phải là tổng **tần số quan sát**, không phải số lớp; trung điểm chỉ là đại diện nên phép tính là ước lượng.
+
+        **Tự sửa:** Quay lại §1.8 và Ví dụ 3.9; kiểm \(\sum f_i=n\) trước khi tính \(\overline x_g\), sau đó tự so với trung bình thô trong câu Tự luận tích hợp tại <a href="../../../../thu-vien/tu-luan-g11-chuong-iii/#thpt-g11-chiii-w-integrated">thư viện Written</a>.
 
     **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-iii/">Tự luận Chương III</a>.
 
