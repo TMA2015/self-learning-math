@@ -162,21 +162,22 @@ function initTopic01Practice(){
 }
 function initTopic01Selfcheck(){
  const marker=document.querySelector("[data-topic01-selfcheck-start]"),end=document.querySelector("[data-topic01-selfcheck-end]");if(!marker||!end||marker.dataset.ready==="1")return;
- const nodes=[];for(let n=marker.nextSibling;n&&n!==end;n=n.nextSibling)nodes.push(n);
+ const startHost=marker.closest("p")||marker,endHost=end.closest("p")||end;
+ const nodes=[];for(let n=startHost.nextSibling;n&&n!==endHost;n=n.nextSibling)nodes.push(n);
  const items=[];
  for(const n of nodes){if(n.nodeType!==8)continue;const id=n.textContent.match(/PUBLIC_REPLAY_ONLY:\s*([A-Z0-9-]+)/)?.[1];if(!id)continue;let p=n.nextSibling;while(p&&p.nodeType!==1)p=p.nextSibling;const num=Number(p?.querySelector(":scope > strong")?.textContent.match(/^Câu (\d+)\./)?.[1]);if(p?.tagName!=="P"||!num)throw Error("Invalid public replay");const stem=p.cloneNode(true);stem.querySelector(":scope > strong").remove();items.push({id,num,stem})}
  if(items.length!==11||items.some((q,i)=>q.num!==i+1)||new Set(items.map(q=>q.id)).size!==11)return;
  const root=el("div","");root.dataset.g10ChapterSelfcheck="TOP01";root.dataset.g10scBound="topic-public-replay";root.dataset.topic01PublicSelfcheck="1";
  root.append(el("h2","g10sc-heading","Tự kiểm tra chuyên đề 01"),el("p","g10sc-notice","Em tự làm từng câu trên giấy, sau đó mở Đối chiếu. Không chấm điểm tự động, không ghi điểm thành thạo."));
  const progress=el("p","g10sc-progress"),nav=el("div","g10sc-jump"),body=el("section","g10sc-body"),controls=el("div","g10sc-controls"),prev=el("button","g10sc-button","Câu trước"),next=el("button","g10sc-button","Câu tiếp");prev.type=next.type="button";controls.append(prev,next);root.append(progress,nav,body,controls,el("p","g10sc-notice","Học liệu được xây dựng dựa trên Chương I SGK Toán 10, Tập Một – Kết nối tri thức với cuộc sống."));
- const shelf=el("div","");shelf.hidden=true;shelf.dataset.topic01SelfcheckSource="1";marker.after(root,shelf);nodes.forEach(n=>shelf.append(n));marker.dataset.ready="1";
+ const shelf=el("div","");shelf.hidden=true;shelf.dataset.topic01SelfcheckSource="1";startHost.after(root,shelf);nodes.forEach(n=>shelf.append(n));marker.dataset.ready="1";
  let cursor=0,publicPractice=null;
  async function existingPublicSolution(id){
   if(!items.some(q=>q.id===id))throw Error("Not public replay");
   if(!publicPractice){const url=new URL("../luyen-tap/",location.href);if(url.origin!==location.origin||!url.pathname.endsWith("/chuyen-de/cd01/luyen-tap/"))throw Error("Invalid public source");
    const response=await fetch(url,{method:"GET",credentials:"omit",redirect:"error"});if(!response.ok)throw Error("Public source unavailable");
    const doc=new DOMParser().parseFromString(await response.text(),"text/html"),begin=doc.querySelector("[data-topic01-practice-start]"),finish=doc.querySelector("[data-topic01-practice-end]");if(!begin||!finish)throw Error("Missing source markers");
-   const bank=new Map();let key="";for(let n=begin.nextSibling;n&&n!==finish;n=n.nextSibling){if(n.nodeType===8){const m=n.textContent.match(/DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)/);if(m)key=m[1]}if(n.nodeType===1&&n.tagName==="DETAILS"&&key){if(bank.has(key))throw Error("Duplicate public ID");bank.set(key,n);key=""}}
+   const bank=new Map();let key="";const sourceStart=begin.closest("p")||begin,sourceEnd=finish.closest("p")||finish;for(let n=sourceStart.nextSibling;n&&n!==sourceEnd;n=n.nextSibling){if(n.nodeType===8){const m=n.textContent.match(/DISPLAY_ONLY_CANONICAL:\s*([A-Z0-9-]+)/);if(m)key=m[1]}if(n.nodeType===1&&n.tagName==="DETAILS"&&key){if(bank.has(key))throw Error("Duplicate public ID");bank.set(key,n);key=""}}
    if(bank.size!==24||items.some(q=>!bank.has(q.id)))throw Error("Public solution mapping incomplete");publicPractice=bank
   }return solutionContent(publicPractice.get(id))
  }
