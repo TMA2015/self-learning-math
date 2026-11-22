@@ -161,6 +161,7 @@ function initTopic01Practice(){
   body.append(el("p","thpt-r4-modal-progress","Câu "+(cursor+1)+" / "+g.items.length));
   const nav=el("div","thpt-r4-modal-question-nav");golden.renderNav({container:nav,count:g.items.length,index:cursor,label:i=>String(i+1),onSelect:i=>{cursor=i;render()}});body.append(nav);
   const card=el("article","md-typeset thpt-r4-reviewed-formative-card topic01-question-body");card.dataset.topic01CurrentItem=String(q.number);card.dataset.thptCanonicalItem=q.itemId;card.append(el("h3","","Bài "+q.number+"."));
+   const stemLabel=el("p","topic01-stem-label");stemLabel.append(el("strong","","Đề bài"));card.append(stemLabel);
   const source=q.nodes.find(n=>n.nodeType===1&&n.tagName==="DETAILS");if(!source)throw Error("Missing canonical solution "+q.itemId);
   for(const n of q.nodes.slice(1)){if(n.nodeType===1&&n.tagName!=="DETAILS"||n.nodeType===3)card.append(n.cloneNode(true))}
   // One canonical voluntary disclosure: no duplicate "Đối chiếu" action above it.
@@ -197,7 +198,8 @@ function initTopic01Selfcheck(){
  function render(){
   const q=items[cursor];progress.textContent="Câu "+(cursor+1)+" / "+items.length;nav.replaceChildren();
   items.forEach((_,j)=>{const b=el("button","g10sc-jump-button"+(j===cursor?" is-current":""),String(j+1));b.type="button";b.setAttribute("aria-label","Đến câu "+(j+1));if(j===cursor)b.setAttribute("aria-current","true");b.onclick=()=>{cursor=j;render()};nav.append(b)});
-  body.replaceChildren(el("h3","","Câu "+q.num));body.dataset.thptCanonicalItem=q.id;const rich=el("div","g10sc-rich");rich.append(q.stem.cloneNode(true));body.append(rich);
+  body.replaceChildren(el("h3","","Câu "+q.num));
+   const stemLabel=el("p","topic01-stem-label");stemLabel.append(el("strong","","Đề bài"));body.append(stemLabel);body.dataset.thptCanonicalItem=q.id;const rich=el("div","g10sc-rich");rich.append(q.stem.cloneNode(true));body.append(rich);
   const button=el("button","g10sc-button g10sc-final","Đối chiếu"),solution=el("section","g10sc-review");button.type="button";solution.hidden=true;solution.id="topic01-current-solution";button.setAttribute("aria-controls",solution.id);button.setAttribute("aria-expanded","false");body.append(button,solution);
   button.onclick=async()=>{if(!solution.hidden){solution.hidden=true;button.textContent="Đối chiếu";button.setAttribute("aria-expanded","false");return}button.disabled=true;try{const original=await existingPublicSolution(q.id);if(!solution.isConnected)return;solution.replaceChildren(...original.childNodes);solution.dataset.thptCanonicalSolution=q.id;solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true");typeset(solution)}catch(error){if(solution.isConnected){solution.replaceChildren(el("p","g10sc-error","Chưa tải được lời giải. Em bấm Đối chiếu để thử lại."));solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true")}}finally{button.disabled=false}};
   prev.disabled=cursor===0;next.disabled=cursor===items.length-1;typeset(body)
