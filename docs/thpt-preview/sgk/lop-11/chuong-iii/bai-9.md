@@ -162,6 +162,21 @@
 
         **Tự sửa:** Tính tất cả \(h_i=b_i-a_i\) trước khi xét nhóm mốt; ôn mục 2.5 và bài kiểm điều kiện nhóm không đều rộng trong [Core và Luyện tập Bài 9](../luyen-tap/).
 
+
+    **Tự thử bổ sung — giải thích giới hạn của ước lượng.** Hai nhóm \([0;10)\) và \([10;20)\) có tần số lần lượt \(3,1\). Dùng trung điểm nhóm để tính số trung bình ghép nhóm \(\overline x_g\). Xét hai bộ số liệu gốc \(A=(1,2,3,11)\) và \(B=(8,9,9,19)\): cả hai có cùng bảng ghép nhóm không, và số trung bình chính xác có bằng \(\overline x_g\) không?
+
+    <span data-ped-first-try="8" data-outcome-id="G11-B09-INTERPRETATION" data-thpt-first-try-id="THPT-G11-B09-TRY08" hidden></span>
+
+    ??? question "Đối chiếu — trung bình ước lượng"
+
+        **Lời giải:** Trung điểm là \(5\) và \(15\), nên \(\overline x_g=(3\cdot5+1\cdot15)/4=7{,}5\). Cả \(A\) và \(B\) đều có ba giá trị trong \([0;10)\), một giá trị trong \([10;20)\), nên **cùng bảng ghép nhóm** và cùng \(\overline x_g=7{,}5\). Tuy nhiên, \(\overline x_A=(1+2+3+11)/4=4{,}25\), còn \(\overline x_B=(8+9+9+19)/4=11{,}25\). Trung bình ghép nhóm là **ước lượng bằng trung điểm**, không phải giá trị chính xác bắt buộc của mọi mẫu số liệu gốc phù hợp bảng.
+
+    <span data-thpt-help-id="HELP-G11-B09-TRY08" hidden></span>
+
+    ??? tip "Kiểm lỗi — giới hạn ước lượng"
+
+        **Dấu hiệu:** Em lấy \(7{,}5\) làm trung bình chính xác của cả hai mẫu hoặc chia tổng trung điểm cho số nhóm thay vì cho cỡ mẫu. **Tự sửa:** Ghi \(n=3+1\), nhân mỗi trung điểm với **tần số**, rồi so sánh trung bình dữ liệu gốc tự tính để thấy thông tin đã mất. **Luyện lại:** Ôn mục 2.2 về trung bình có trọng số, làm Core **THPT-G11-B09-C02** và Practice **THPT-G11-B09-P10** về giới hạn suy luận từ bảng nhóm tại <a href="../luyen-tap/">Core và Luyện tập Bài 9</a>; không kết luận quá dữ kiện.
+
 === "Kiến thức SGK"
 
     ### 2.1. Giá trị đại diện của nhóm và số trung bình
