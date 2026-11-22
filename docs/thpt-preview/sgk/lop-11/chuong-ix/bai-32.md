@@ -8,7 +8,7 @@
 
     ### 1.1. Lũy thừa nguyên
     
-    Khi x thay đổi rất ít, độ biến thiên bậc nhất của $x^n$ là $nx^{n-1}\Delta x$. Với số nguyên dương n, công thức đúng trên $\mathbb R$.
+    Lấy thương sai phân của $x^n$; tử $(x+h)^n-x^n$ có nhân tử h. Sau khi chia h và cho h tiến về 0, chỉ còn số hạng $nx^{n-1}$. Vì vậy $(x^n)'=nx^{n-1}$. Với số nguyên dương n, công thức đúng trên $\mathbb R$.
     
     **Vận dụng.** Tính đạo hàm $3x^4$ tại x=2.
     
@@ -26,7 +26,7 @@
 
     ### 1.2. Căn bậc hai
     
-    Hữu tỉ hóa thương sai phân của $\sqrt{x}$ bằng nhân liên hợp, giới hạn tại x>0 có mẫu $2\sqrt{x}$. Điểm x=0 có giá trị hàm nhưng không có đạo hàm hai phía hữu hạn.
+    Hữu tỉ hóa thương sai phân của $\sqrt{x}$ bằng nhân liên hợp: $[\sqrt{x+h}-\sqrt{x}]/h=1/(\sqrt{x+h}+\sqrt{x})$. Khi h tiến về 0, với x>0, thu được $(\sqrt{x})'=1/(2\sqrt{x})$. Điểm x=0 có giá trị hàm nhưng không có đạo hàm hai phía hữu hạn.
     
     **Vận dụng.** Tính đạo hàm của $3\sqrt{x}$ tại x=9.
     
@@ -44,7 +44,7 @@
 
     ### 1.3. Tổng, hiệu và nhân hằng số
     
-    Độ tăng của tổng chính là tổng độ tăng; chia cùng một $\Delta x$ rồi lấy giới hạn cho quy tắc cộng, trừ. Hằng số không thay đổi.
+    Độ tăng của tổng chính là tổng độ tăng; chia cùng một $\Delta x$ rồi lấy giới hạn cho $(u\pm v)'=u'\pm v'$ và $(cu)'=cu'$ khi c là hằng. Hằng số có đạo hàm bằng 0.
     
     **Vận dụng.** Tính đạo hàm $7x^3+2x-5$.
     
@@ -62,7 +62,7 @@
 
     ### 1.4. Tích của hai hàm
     
-    Hai thừa số đều có thể thay đổi. Hình dưới minh hoạ thêm hai dải và một góc nhỏ; chia biến thiên cho $\Delta x$ cho hai số hạng bậc nhất.
+    Hai thừa số đều có thể thay đổi. Hình dưới minh hoạ thêm hai dải và một góc nhỏ; chia biến thiên cho $\Delta x$ cho hai số hạng bậc nhất: $(uv)'=u'v+uv'$. Độ tăng nhỏ của góc hình chữ nhật không đóng góp vào giới hạn.
     
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg" alt="Hai dải diện tích và góc nhỏ minh họa đạo hàm tích."/><figcaption>Đọc hình: Hình chữ nhật diện tích uv có hai dải vΔu và uΔv cùng một góc ΔuΔv. Khi u,v khả vi, Δu và Δv đều cỡ Δx; chia góc cho Δx thì giới hạn bằng 0. Hình minh họa khi hai kích thước tăng, đẳng thức đại số vẫn đúng với độ tăng âm.</figcaption></figure>
     
@@ -82,7 +82,7 @@
 
     ### 1.5. Thương và mẫu số
     
-    Khi mẫu thay đổi, tỉ số cũng đổi dù tử giữ nguyên. Công thức cần hiệu của hai tích theo đúng thứ tự và bình phương mẫu.
+    Khi mẫu thay đổi, tỉ số cũng đổi dù tử giữ nguyên. Quy đồng hai thương trước và sau thay đổi rồi chia độ tăng của x cho thấy $(u/v)'=(u'v-uv')/v^2$, tại điểm mẫu v khác 0.
     
     **Vận dụng.** Tính đạo hàm $(3x+2)/(x-2)$ và nêu miền.
     
@@ -100,7 +100,7 @@
 
     ### 1.6. Hàm hợp
     
-    Tốc độ biến đổi truyền theo hai tầng: x làm u=g(x) thay đổi rồi u làm y=f(u) thay đổi. Vì vậy tốc độ cuối là tích hai tốc độ.
+    Tốc độ biến đổi truyền theo hai tầng: x làm u=g(x) thay đổi rồi u làm y=f(u) thay đổi. Vì vậy tốc độ cuối là tích hai tốc độ: $y'=f'(g(x))g'(x)$ nếu hai hàm khả vi tại các điểm tương ứng. Với $y=u^3$, đạo hàm theo u là $3u^2$, theo x là $3u^2u'$.
     
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg" alt="Sơ đồ hàm hợp x thành u rồi thành y, nhân hai tầng đạo hàm."/><figcaption>Đọc hình: Đọc từ trái sang phải: x → u=g(x) → y=f(u). Hai tốc độ g′(x) và f′(u) được nhân; tính f′ tại chính u=g(x). Sơ đồ biểu diễn quy tắc đạo hàm, không yêu cầu thương Δy/Δu xác định khi Δu=0.</figcaption></figure>
     
@@ -120,7 +120,7 @@
 
     ### 1.7. Sin và cos
     
-    Độ biến đổi của các hàm lượng giác chuẩn dùng góc đo radian. Sin và cos liên hệ nhưng đạo hàm của cos mang dấu âm.
+    Độ biến đổi của các hàm lượng giác chuẩn dùng góc đo radian. Khi góc tăng một lượng nhỏ h, công thức cộng cho $\sin(x+h)-\sin x=\sin x(\cos h-1)+\cos x\sin h$. Với h đo radian tiến về 0, $\sin h/h\to1$ và $(\cos h-1)/h\to0$. Chia cho h, suy ra $(\sin x)'=\cos x$. Tương tự, công thức cộng cos cho $(\cos x)'=-\sin x$.
     
     **Vận dụng.** Tính đạo hàm $4\sin x+2\cos x$.
     
@@ -138,7 +138,7 @@
 
     ### 1.8. Tan và cot
     
-    Tan và cot là các thương của sin và cos. Từ quy tắc thương, mẫu được bình phương, dấu của cot khác tan.
+    Tan và cot là các thương của sin và cos. Từ quy tắc thương và $\sin^2x+\cos^2x=1$, ta được $(\tan x)'=1/\cos^2x$ khi $\cos x\ne0$ và $(\cot x)'=-1/\sin^2x$ khi $\sin x\ne0$.
     
     **Vận dụng.** Tính đạo hàm $\tan x+2\cot x$, nêu miền.
     
@@ -174,7 +174,7 @@
 
     ### 1.10. Hàm mũ
     
-    Hàm $e^x$ có tốc độ biến đổi bằng chính giá trị hàm. Với cơ số a>0 cố định khác 1, viết $a^x=e^{x\ln a}$ để thấy hệ số $\ln a$.
+    Hàm $e^x$ có tốc độ biến đổi bằng chính giá trị hàm: $(e^x)'=e^x$. Với cơ số a>0 cố định khác 1, viết $a^x=e^{x\ln a}$ và dùng hàm hợp, suy ra $(a^x)'=a^x\ln a$.
     
     **Vận dụng.** Tính đạo hàm $7^x$ và cho biết dấu.
     
@@ -192,7 +192,7 @@
 
     ### 1.11. Logarit và trị tuyệt đối
     
-    $\ln x$ chỉ nhận đối số dương. Hàm $\ln|x|$ nhận x khác 0: ở x<0, đó là $\ln(-x)$. Đạo hàm theo quy tắc hợp bằng $(-1)/(-x)=1/x$.
+    $\ln x$ chỉ nhận đối số dương. Đạo hàm $(\ln x)'=1/x$ trên x>0; đổi cơ số $\log_a x=\ln x/\ln a$ cho $(\log_a x)'=1/(x\ln a)$ nếu a>0 và a≠1. Hàm $\ln|x|$ nhận x khác 0: ở x<0, đó là $\ln(-x)$. Đạo hàm theo quy tắc hợp bằng $(-1)/(-x)=1/x$.
     
     **Vận dụng.** Tính đạo hàm $\ln|x|$ tại x=−4 và $\log_3 x$ tại x=3.
     
@@ -210,7 +210,7 @@
 
     ### 1.12. Mũ và logarit hợp
     
-    Đặt u là biểu thức trong. Với logarit cần kiểm đối số trước; với mũ cơ số cố định dương không đòi u dương.
+    Đặt u là biểu thức trong. Với logarit cần kiểm đối số trước: $(\ln u)'=u'/u$ nếu u>0. Với hàm mũ, $(e^u)'=u'e^u$ với u khả vi; cơ số cố định dương không đòi u dương.
     
     **Vận dụng.** Tính đạo hàm $e^{x^2-2x}+\ln(3x+2)$ và miền.
     
@@ -228,7 +228,7 @@
 
     ### 1.13. Kiểm miền của đạo hàm
     
-    Miền khả vi là nơi hàm gốc xác định và các quy tắc được áp dụng hợp lệ. Một biểu thức rút gọn có mẫu khác 0 chưa đủ nếu log hoặc căn gốc không có nghĩa.
+    Miền khả vi là nơi hàm gốc xác định và các quy tắc được áp dụng hợp lệ. Một biểu thức rút gọn có mẫu khác 0 chưa đủ nếu log hoặc căn gốc không có nghĩa. Với u>0 và u khả vi, $(\sqrt{u})'=u'/(2\sqrt{u})$.
     
     **Vận dụng.** Tìm khoảng khả vi và đạo hàm $\sqrt{16-x^2}$.
     
