@@ -179,6 +179,13 @@ with sync_playwright() as pw:
                                 engine, topic, width, "Golden Knowledge Đối chiếu",
                             )
                             assert d.locator("summary").evaluate("(e)=>getComputedStyle(e).color") == "rgb(38, 62, 115)"
+                        # Every visible W2 SVG must stay a supporting illustration, not a full-width poster.
+                        for fig in active.locator("img[data-topic-w2-figure]").all():
+                            bounds = fig.evaluate("""e => ({w:e.getBoundingClientRect().width,
+                                h:e.getBoundingClientRect().height,src:e.getAttribute('src')})""")
+                            assert 10 < bounds["w"] <= 701 and 10 < bounds["h"] <= 451, (
+                                engine, topic, width, "W2 figure exceeds reading footprint", bounds,
+                            )
                         width_info = page.evaluate("({scroll:document.documentElement.scrollWidth,inner:innerWidth})")
                         assert width_info["scroll"] <= width_info["inner"] + 1, (engine, topic, width, width_info)
                 assert disclosure_found, (engine, topic, "knowledge must include a voluntary solution")
