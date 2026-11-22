@@ -119,3 +119,27 @@ SBT p25 not located; targeted independent Delta C review especially W05 and new 
 **Hard runtime blocker / RELEASE handoff:** Existing `docs/assets/javascripts/thpt-g12-chv-b14-b17-r01.js` has explicit bank count guards `96/24/24`, four role counts 24 each and public END labels `23 main+1 optional / 24 total`; new academic bank is `100/25/25`, 25 per role, `24 main+1 optional`. The authoring lane **does not touch this JS or published UI**. RELEASE must reconcile guards, source/receipt lock and labels based on the approved final bank **only after academic Q18 and V2/ready/REGISTER handoff**, then perform Q16 Final Submit and AP/CI tests at actual HEAD, subject to owner release permission. Current source bundle intentionally **NOT CONTENT_READY / NOT INTEGRATION_READY**; if the bank were loaded with unchanged JS it would fail closed. This blocker is explicit, not a claimed successful feature.
 
 **Remaining:** SBT printed p25 not located (B14/B15 source coverage); independent review of B15-W05 rubric and B17-O06 academic transfer if owner requests or self-QA insufficient; chapter-wide transfer and rubric depth still requires verification; historical source/receipt locks and V2/ready/REGISTER not yet finalized. Snapshot-level previous 96-item source QA remains historical evidence, not an active 100-item QA claim.
+
+
+## Returned external academic/PED review — content mapped, source identity reconciled as metadata discrepancy (22/11/2026)
+
+**Evidence received from owner in current conversation:** independent reviewer text SHA256 `90a3f65e3093f6a5ed045721ab0aa741bd9dabddb7e1482e6a6acebe7cf3feb1` (11,789 bytes); reviewer text title says “Chuyên đề 18” but explicitly reviews `G12-CHV-B17-O06`. Verdict **ACADEMIC_PASS**, **PED_PASS**, P0=0, P1=0, P2=0, MINIMAL_DELTA=NONE for the four listed items and D6 only; RELEASE_AUTHORIZATION=NO, MASTERY_ACTIVATION=NO. Original reviewer text remains immutable in owner-supplied attachment; no fake correction to the reviewer-issued SOURCE_RECEIPT.
+
+**Crucial receipt identity difference:**
+- Reviewer `PACKET_ID=THPT-TOPIC18-B17-O06-TARGETED-DELTA-C-20261122` (incorrect learning-path prefix). Correct attached request: `G12-SGK-CHV-B17-O06-TARGETED-DELTA-C-20261122` in `prototypes/thpt/review-packets/Temp_G12_CHV_B17_O06_TARGETED_DELTA_C_20261122.md` blob `ef48ee88998f9d6df92586c1f53634e6e4849a07`.
+- Reviewer `LEARNER_BLOB=1ad945ea583ce7ee91df64b58d3f31b31c202cd3` is an **existing Chuyên đề 18 learner blob** (verified GitHub blob lookup), **not** SGK B17. Actual SGK B17 canonical = `ce6a4ff6458ba1f2d929134935e494214e3b32d5`.
+- Reviewer `PROPOSED_CANONICAL_W07_V2_BANK_BLOB=a24abd682932e11761f7c85fa3a3d3cdd77b600e` resolves on GitHub to an older ChV source-lock document, **not** the current public bank. Actual existing canonical ChV bank = `622308c8f7293d576e8690db4741ddfe7ad882c8`.
+- Hence **do not assert Q18_INDEPENDENT_REVIEW_SOURCE_LOCKED_PASS for these current two file SHAs**. Evidence is **REVIEW_CONTENT_MATCHED_REVIEW_RECEIPT_IDENTITY_MISMATCH**; preserve external review's content verdict, never fabricate its provenance.
+
+**Independent reviewer text → actual canonical item crosswalk, verified manually and by recomputation:**
+| Reviewed existing ID | Matching live authoring item | Matched mathematical parameters/results |
+|---|---|---|
+| C06 | `THPT-G12-B17-C06` | 30° Bắc, 90° Tây; (0,−√3/2,1/2), norm=1 |
+| P06 | `THPT-G12-B17-P06` | 45° Bắc; longitudes 0°/90° Đông; θ=60°, s=6671.7 km |
+| A06 | `THPT-G12-B17-A06` | 0° latitude, 135° Tây; θ=135°, arc 15011.3 km and chord 11772.1 km |
+| W06 | `THPT-G12-B17-W06` | 30° Bắc/60° Đông vs 30° Nam/60° Tây; dot −5/8, θ≈2.24593 rad, s=14308.8 km; five 1-point rubric components |
+5-step D6 `HELP-G12-B17-06` review describes the same sign error, abs(dot) error, antipodal remedy and Core/Practice return flow. Reviewer gave the four item-level PASS assessments; own previous scoped source QA 18/18 and independent numerical scenario checks 16/16 remain valid for the unchanged learner/bank blobs cited above. Small extra digits in review's A06 arc approximation are off (exact 15011.315..., not 15011.337...) but its published 0.1-km final result is correct; for θ=0 the generalized reviewer phrase “chord always smaller than arc” is not strict, but no item has θ=0 and canonical items' math is correct. No new source content correction is warranted. These two observations are **external-review prose qualifications only**, not new lesson defects or grounds for automatic repeat review.
+
+**Author-scoped disposition under one standard §X-E:** `Q18_AUTHOR_SELF_VERIFIED_B17_O06=SCOPED_CONTENT_PASS`; `TARGETED_ACADEMIC_CONTENT=PASS`; `TARGETED_PED_CONTENT=PASS`; `P0=0,P1=0` within B17-O06 item/lesson subsection; `MINIMAL_DELTA=NONE`; `NOTEBOOKLM_INDEPENDENT_REVIEW_CONTENT_MATCHED_BUT_RECEIPT_IDENTITY_NOT_LOCKED`. No new NotebookLM cycle needed solely to change the bad header. This is a **narrow outcome-level** Q18 disposition, not full ChV Q01–Q18/A1–A7 signoff, not `CONTENT_READY` chapter, and not RELEASE.
+
+**Unchanged important open scopes:** SBT ChV printed p25 not located, broader B14–B17 lesson/outcome self-QA and bank transfer-depth as applicable, B15-W05 rubric verification and source/receipt guard reconciliation; V2/ready/REGISTER only if this is a new packet, otherwise the existing published-Knowledge enrichment exception is governed by §X-C. Runtime JS still expects 96/24/24 while candidate bank is 100/25/25: RELEASE owns compatibility/assessment/QA without pre-authorization to deploy.
