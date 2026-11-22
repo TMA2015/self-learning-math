@@ -13,9 +13,9 @@ SOURCE_COMMIT: 87933a293690d2dbd160095c8d010506cf8e3945
 AUTHOR_PR: 989
 CURRENT_PR: #989 Draft consolidated R04 AUTHORING, NO release permission
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHI_B01_B04_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-ACADEMIC_SOURCE_BLOB: 1458d77706cea3d61602e8961e86fd187c2d0331
+ACADEMIC_SOURCE_BLOB: fcee56967b51d3195979fa8fdff2f927a3538172
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHI_B01_B04_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
-REVIEW_RECEIPT_BLOB: c7f9034b9119eb00bb80623674f9920cc1993fd3
+REVIEW_RECEIPT_BLOB: c1e516fadbe62edfc17b72c6237fda0242ef8175
 REVIEW_RECEIPT: prototypes/thpt/review-packets/G11_CHI_B01_B04_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G11-SGK-CHI-B01-B04-R04_HANDOFF_V2_20261122.md
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -31,10 +31,12 @@ RELEASE_AUTHORIZATION: NO
 
 **Only the current R04 academic source packet is declared CONTENT_READY.** It does NOT overwrite the immutable R03 independent-reviewed historical packet `G11-SGK-CHI-B01-B04`. The academic source manifest points to original canonical B01–B04 learner Markdown and one shared Written library; no duplicate learner, bank, Topic or official held-out exam. One separate R04 author receipt certifies actual changes, not the old independent review.
 
+**B01 Q02/Q14/Q15 scoped mapping correction:** old independently-reviewed R03 B01 snapshot stays untouched; active R04 B01 `4a9e0496988fca78cba29ff5a1d08c5d4fdbf3d4` has four source-local `data-outcome-id` labels matched to the existing six B01 outcome families. Exact original FirstTry ID/stem/answer/D6 math untouched; after repair all **29/29 FirstTry** across B01–B04 reference the 26 registered V2 outcomes. Signed source receipt and V2 handoff bind this new R04 manifest/receipt pair; no new ID, private RD1, grading or Mastery. `DELTA_B_SOURCE_EQUIVALENT`, not an independent reviewer PASS.
+
 ## AUTHORING A1–A7 — signed real source/content checks
-- [x] A1_SOURCE_SNAPSHOT — 15 original source paths and exact Git blobs frozen in one `1458d77706cea3d61602e8961e86fd187c2d0331` bundle, preserving unchanged R03 accepted source and all original B01 learner records.
+- [x] A1_SOURCE_SNAPSHOT — 15 original source paths and exact Git blobs frozen in one `fcee56967b51d3195979fa8fdff2f927a3538172` bundle, preserving unchanged R03 accepted source and all original B01 learner records.
 - [x] A2_SGK_SBT_SCOPE — Historical direct owner S1 SGK 11 KNTT Tập một printed B01 5–16, B02 17–21, B03 22–30, B04 31–39 and matching original SBT page ranges; current S1 text/formula family cross-check, no invented new PDF scan.
-- [x] A3_NOTEBOOKLM_VERDICT — Existing historical R03 independent Academic/PED PASS preserved only on R03 SHA; current `AUTHOR_SELF_VERIFIED` signed Q18 via `c7f9034b9119eb00bb80623674f9920cc1993fd3` for actual R04 source, without impersonating independent reviewer.
+- [x] A3_NOTEBOOKLM_VERDICT — Existing historical R03 independent Academic/PED PASS preserved only on R03 SHA; current `AUTHOR_SELF_VERIFIED` signed Q18 via `c1e516fadbe62edfc17b72c6237fda0242ef8175` for actual R04 source, without impersonating independent reviewer.
 - [x] A4_ITEM_OUTCOME_IDS — Four SGK lessons, 26 registered original outcomes, 46 unique reviewed canonical public IDs (42 Core/Practice plus four shared Written/Anchor), 29 learner-owned unscored FirstTry, no cloned end-of-chapter bank.
 - [x] A5_D1_D6_SCOPE — All lesson Golden four semantic tabs with concept-first D1/PED1–PED6; 21 checked current B02–B04 worked examples, six mathematical SVG original assets, correct five new FirstTry and exact same-outcome repair.
 - [x] A6_DELTA_RESOLVED — Four shared Written scoring guides /7 to /5 and five missing-outcome targeted FirstTry completed with symbolic answer checks, baseline B02–B04 source audit and exact 47/47 + 5/5 math; old Core/Practice JS is unchanged.
@@ -49,7 +51,7 @@ RELEASE_AUTHORIZATION: NO
 - [x] PED6_FIRST_TRY_REMEDIATION — 29 distinct local self-try records (6/5/9/9), B03/B04 eight canonical outcome families each covered after five targeted addenda, hidden answer comparison and specific original C/P recovery links.
 
 ## QUALITY_Q01_Q18_EVIDENCE
-One official standard `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` v3.2.0. The complete 18-row author Q18 table and 46-item mapping are in `prototypes/thpt/release-handoffs/G11-SGK-CHI-B01-B04-R04_HANDOFF_V2_20261122.md`, bound to `ACADEMIC_SOURCE_BLOB=1458d77706cea3d61602e8961e86fd187c2d0331` and `REVIEW_RECEIPT_PATH=prototypes/thpt/review-packets/G11_CHI_B01_B04_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md`; no second academic rubric. Static/source checks are genuine scoped mathematics and pedagogy, not a published website AP/R/P quality or independent reviewer signature.
+One official standard `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` v3.2.0. The complete 18-row author Q18 table and 46-item mapping are in `prototypes/thpt/release-handoffs/G11-SGK-CHI-B01-B04-R04_HANDOFF_V2_20261122.md`, bound to `ACADEMIC_SOURCE_BLOB=fcee56967b51d3195979fa8fdff2f927a3538172` and `REVIEW_RECEIPT_PATH=prototypes/thpt/review-packets/G11_CHI_B01_B04_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md`; no second academic rubric. Static/source checks are genuine scoped mathematics and pedagogy, not a published website AP/R/P quality or independent reviewer signature.
 
 ## RELEASE R1–R5 / AP1–AP5 / P1–P2 — separate owner-controlled work
 - [ ] R1_INTEGRATED_CURRENT_MAIN — RELEASE accepts exact current original four lesson Markdown files and single original shared Written library, preserves item IDs and historical R03 source review.
