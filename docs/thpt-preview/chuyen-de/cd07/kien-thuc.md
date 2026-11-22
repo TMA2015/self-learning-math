@@ -156,7 +156,7 @@ Chẳng hạn, u_n=n/(n+1) với n≥1. u_{n+1}−u_n=(n+1)/(n+2)−n/(n+1)=[(n+
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Giảm nghiêm ngặt vì 1/(n+1)<1/n với mẫu dương.
+Giảm nghiêm ngặt vì 1/(n+1)&lt;1/n với mẫu dương.
 
 Nếu chỉ nhìn 1,1/2,1/3 thì đó mới là gợi ý; chứng minh dấu cho mọi n.
 
@@ -188,9 +188,9 @@ Chẳng hạn, u_n=1−1/(n+1), n≥1. Vì 0<1/(n+1)≤1/2 nên 1/2≤u_n<1. u_1
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Không; 1/n>0 nên u_n<2 với mọi n nguyên dương.
+Không; 1/n>0 nên u_n&lt;2 với mọi n nguyên dương.
 
-Phân biệt ký hiệu '≤' và '<'; thử giải u_n=2 bằng phương trình.
+Phân biệt ký hiệu '≤' và '&lt;'; thử giải u_n=2 bằng phương trình.
 
 
 **Kiểm lỗi**
@@ -512,12 +512,12 @@ Chẳng hạn, Với u_1=6,q=1/2, S_n=12[1−(1/2)^n], S_∞=12; sau n=4 phần 
 
 Không; |q|=1, tổng riêng lần lượt 4,0,4,0,… không hội tụ.
 
-Nếu tự thay q=−1 vào biểu thức u_1/(1−q) được 2, đó là lạm dụng công thức ngoài miền |q|<1.
+Nếu tự thay q=−1 vào biểu thức u_1/(1−q) được 2, đó là lạm dụng công thức ngoài miền |q|&lt;1.
 
 
 **Kiểm lỗi**
 
-Nếu lấy tổng vô hạn khi |q|≥1 hoặc bỏ mất dấu phần dư với công bội âm, đọc lại **Kiến thức 3.5**, làm **Bài 58** (chuỗi lùi có hội tụ) và **Bài 61** (tổng cùng phần dư). Chỉ sử dụng công thức sau khi kiểm |q|<1.
+Nếu lấy tổng vô hạn khi |q|≥1 hoặc bỏ mất dấu phần dư với công bội âm, đọc lại **Kiến thức 3.5**, làm **Bài 58** (chuỗi lùi có hội tụ) và **Bài 61** (tổng cùng phần dư). Chỉ sử dụng công thức sau khi kiểm |q|&lt;1.
 
 </details>
 
