@@ -78,12 +78,74 @@ function b16RuntimeIsIsolated(){
  const bytes=Buffer.from(s),sha=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
  return sha==="fb6650428bc148b536cb1d26ef34d5d521ddf715";
 }
+/* W3 CĐ12–15 is an owner-authorized, separately QA-gated Topic-only wave.
+ * Explicit original-file allowlist includes ONLY new Topic pages/assets and
+ * their navigation/router/test metadata. No shared Golden/SGK/THCS runtime.
+ * This is intentionally a single immutable wave, not a generic bypass. */
+const W3_EXACT_SCOPE_FILES=new Set([
+ ".github/workflows/thpt-topic-w3-golden-release-qa.yml",
+ "docs/assets/javascripts/thpt-topic-w3-golden-v1.js",
+ "docs/assets/visuals/FIG_G11_CHIV_B10_SHARED_R01.svg",
+ "docs/assets/visuals/FIG_G11_CHIV_B11_SHARED_R01.svg",
+ "docs/assets/visuals/FIG_G11_CHIV_B12_SHARED_R01.svg",
+ "docs/assets/visuals/FIG_G11_CHIV_B13_SHARED_R01.svg",
+ "docs/assets/visuals/FIG_G11_CHIV_B14_SHARED_R01.svg",
+ "docs/thpt-preview/chuyen-de/cd11/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd11/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd11/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd12/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd12/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd12/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd13/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd13/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd13/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd14/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd14/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd14/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd15/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd15/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/index.md",
+ "mkdocs.thpt-preview.yml",
+ "mkdocs.yml",
+ "prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json",
+ "scripts/test-thpt-golden-ui-release-boundary.cjs",
+ "scripts/test-thpt-r4-search-browser.cjs",
+ "scripts/test-thpt-topic-knowledge-tabs-v3.cjs",
+ "scripts/test-thpt-topic-w3-golden-browser.py",
+ "scripts/test-thpt-topic-w3-source-locked.py",
+ "scripts/test-thpt-release-impact.cjs",
+ ".github/workflows/deploy.yml",
+ ".github/workflows/thpt-deploy-scope-safety-qa.yml"
+]);
+const W3_SOURCE_HEADS={
+ "12":"f773f2622c88bd3e3a1e0137613846a83b3e6629",
+ "13":"7bd211326e4f644a94e1dfad7868c03e1c415adb",
+ "14":"d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+ "15":"c1be91f17044d89474d6399308385b4f1fbc7aeb"
+};
+function isExactW3TopicWave(files){
+ if(files.length!==W3_EXACT_SCOPE_FILES.size||new Set(files).size!==files.length||
+   !files.every(p=>W3_EXACT_SCOPE_FILES.has(p)))return false;
+ const manifestPath="prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json";
+ if(!fs.existsSync(manifestPath))return false;
+ try{
+  const m=JSON.parse(fs.readFileSync(manifestPath,"utf8"));
+  if(m.wave!=="W3"||Object.keys(m.topics||{}).sort().join(",")!=="12,13,14,15")return false;
+  return Object.entries(W3_SOURCE_HEADS).every(([n,sha])=>{
+   const t=m.topics[n];return t&&t.sourceBlob===sha&&/^[0-9a-f]{40}$/.test(t.q18ReceiptBlob)&&
+    t.items>0&&t.replay>0&&t.outcomes>0;
+  });
+ }catch{return false}
+}
+
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isExactW3TopicWave(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_12_PAGES_240_Q15_59_Q16_GOLDEN_BROWSER_INDEPENDENT"};
  if(files.every(x=>CI_ROUTING_ONLY.has(x)))
   return {impact:"CI_ROUTING_ONLY",full_suite:"false",changed_lessons:"",reason:"ONLY_EXACT_CI_ROUTING_PATHS"};
  if(files.includes(B16_LESSON)&&files.every(x=>B16_ALLOWED.has(x))&&
@@ -216,6 +278,12 @@ function selfTest(){
   "scripts/thpt-q18-g10-source-receipt.cjs",
   "prototypes/thpt/ux795/G10_CHV_B14_DELTA_A.md"
  ];
+ const w3=[...W3_EXACT_SCOPE_FILES];
+ assert.equal(classify(w3).impact,"SCOPED_TOPIC_W3","Exact signed CĐ12–15 changes run W3 scoped QA");
+ assert.equal(classify(w3.filter(x=>!x.endsWith("cd15/tu-kiem-tra.md"))).full_suite,"true","Incomplete W3 must fail closed");
+ assert.equal(classify([...w3,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared Golden change is full site");
+ assert.equal(classify([...w3,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"]).full_suite,"true","SGK mixed change is full site");
+ assert.equal(classify(w3,{manual:true}).full_suite,"true","Explicit manual full remains supported");
  assert.equal(classify([fixture]).impact,"SCOPED_LESSON");
  assert.equal(classify(authoring).full_suite,"false");
  assert.equal(classify([fixture,another]).changed_lessons,fixture+","+another);

@@ -111,16 +111,22 @@ const publishedTopicSources={
   "cd06": "edfecb3edd165e87bcb615ec4cbb66833ad52675",
   "cd07": "7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba",
   "cd08": "0853a6de4be055d63a767b58dab20fa113e11098",
-  "cd09": "5681dd894755165e799b4a20d9741f43115778d9"
+  "cd09": "5681dd894755165e799b4a20d9741f43115778d9",
+  // W3 released learner source blobs: tracked by the Q18 manifest and independently
+  // validated by the source-locked workflow (four immutable AUTHORING heads).
+  "cd12": "f773f2622c88bd3e3a1e0137613846a83b3e6629",
+  "cd13": "7bd211326e4f644a94e1dfad7868c03e1c415adb",
+  "cd14": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+  "cd15": "c1be91f17044d89474d6399308385b4f1fbc7aeb"
 };
 for(const name of Object.keys(publishedTopicSources)){
  topicRegistration[name]={
   source:"docs/thpt-preview/chuyen-de/"+name+"/kien-thuc.md",
   practice:"docs/thpt-preview/chuyen-de/"+name+"/luyen-tap.md",
   self:"docs/thpt-preview/chuyen-de/"+name+"/tu-kiem-tra.md",
-  ui:Number(name.slice(2))>=6?"docs/assets/javascripts/thpt-topic-w2-golden-v1.js":"docs/assets/javascripts/thpt-topic-w1-golden-v1.js",
-  browser:Number(name.slice(2))>=6?"scripts/test-thpt-topic-w2-golden-browser.py":"scripts/test-thpt-topic-w1-golden-browser.py",
-  sha:Number(name.slice(2))>=6?"scripts/test-thpt-topic-w2-source-locked.py":"scripts/test-thpt-topic-w1-source-locked.py"
+  ui:Number(name.slice(2))>=12?"docs/assets/javascripts/thpt-topic-w3-golden-v1.js":Number(name.slice(2))>=6?"docs/assets/javascripts/thpt-topic-w2-golden-v1.js":"docs/assets/javascripts/thpt-topic-w1-golden-v1.js",
+  browser:Number(name.slice(2))>=12?"scripts/test-thpt-topic-w3-golden-browser.py":Number(name.slice(2))>=6?"scripts/test-thpt-topic-w2-golden-browser.py":"scripts/test-thpt-topic-w1-golden-browser.py",
+  sha:Number(name.slice(2))>=12?"scripts/test-thpt-topic-w3-source-locked.py":Number(name.slice(2))>=6?"scripts/test-thpt-topic-w2-source-locked.py":"scripts/test-thpt-topic-w1-source-locked.py"
  };
 }
 assert.deepEqual(futureTopics.filter(x=>!topicRegistration[x]),[],
@@ -145,7 +151,11 @@ for(const name of futureTopics){
   assert(browser.includes("data-topic-w1-selfcheck")&&
    browser.includes("data-topic-w1-practice-card")&&
    browser.includes("data-thpt-canonical-solution")&&
-   sha.includes(publishedTopicSources[name]),name+": scoped browser Q15/Q16/source receipt gate missing");
+   (Number(id)>=12
+     ? sha.includes("W3_CD12_15_SOURCE_INTAKE_20261122.json")&&
+       read("prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json").includes(publishedTopicSources[name])&&
+       sha.includes('Q18_RECEIPT_MISMATCH')&&sha.includes('DISPLAY_ONLY_PROJECTION_NOT_EXACT')&&sha.includes('set(replay) <= set(ids)')
+     : sha.includes(publishedTopicSources[name])),name+": scoped browser Q15/Q16/source receipt gate missing");
   assert(!/localStorage|sessionStorage|indexedDB|firebase\.|recordMastery|setDoc\(/.test(ui),
    name+": W1 public read-only Golden must not write student/assessment state");
   assert(!/<form\b|data-thpt-readiness|data-mastery-credit/i.test(self),

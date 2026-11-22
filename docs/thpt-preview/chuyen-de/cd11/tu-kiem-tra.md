@@ -7,7 +7,7 @@ hide:
 <p class="thpt-r4-eyebrow">HỌC THEO CHUYÊN ĐỀ · CĐ11 · TOÁN THPT</p>
 <nav class="thpt-sgk-lesson-nav" aria-label="Điều hướng Chuyên đề 11">
 <a href="../../cd10/kien-thuc/">← Chuyên đề trước</a>
-<span class="thpt-sgk-nav-unavailable" aria-disabled="true">Chuyên đề sau →</span>
+<a href="../../cd12/kien-thuc/">Chuyên đề sau →</a>
 <a href="../kien-thuc/">Kiến thức</a>
 <a href="../luyen-tap/">Luyện tập</a>
 </nav>

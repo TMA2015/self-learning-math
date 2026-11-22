@@ -1,0 +1,91 @@
+{
+  "wave": "W3",
+  "standard": "SLM-THPT-QUALITY-ONE v3.2.0 Q01-Q18",
+  "golden": "TOPIC_GOLDEN_UI_REV=20261122.1",
+  "ownerScope": "2026-11-22 owner authorized continue RELEASE after W2 P2 PASS",
+  "assessmentMode": "PUBLIC_REPLAY_ONLY / CLIENT_SELF_CHECK_NO_MASTERY",
+  "topics": {
+    "12": {
+      "title": "Hệ thức lượng trong tam giác và giải tam giác",
+      "authorPR": 840,
+      "authorHead": "8ff14130b995ae505978e590c4e65d9287f93342",
+      "sourcePath": "prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md",
+      "sourceBlob": "f773f2622c88bd3e3a1e0137613846a83b3e6629",
+      "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC12_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md",
+      "q18ReceiptBlob": "496ce6005b50c6fd5baae2a6ac4f3d9414becc20",
+      "groupsKnowledge": 3,
+      "groupsPractice": 3,
+      "outcomes": 12,
+      "items": 34,
+      "replay": 12,
+      "svg": [
+        "THPT_G10_B05_SEMICIRCLE_120_D5_R01.svg",
+        "THPT_G10_B06_COSINE_AREA_TRIANGLE_D5_R01.svg"
+      ],
+      "model": "slm-top12-ssa-01"
+    },
+    "13": {
+      "title": "Vectơ trong mặt phẳng và trong không gian",
+      "authorPR": 841,
+      "authorHead": "0edada0daa8a36bcadd4317086bd0530e20ade7e",
+      "sourcePath": "prototypes/thpt/content-drafts/topic13-vectors/Temp_TOPIC13_R04_NUMBERING_CONSISTENT_20261116.md",
+      "sourceBlob": "7bd211326e4f644a94e1dfad7868c03e1c415adb",
+      "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC13_R04_NUMBERING_DELTA_A_AUTHOR_SELF_QA_RECEIPT_20261116.md",
+      "q18ReceiptBlob": "24f5cd26b47852259cdc932fce7577fcf2f44866",
+      "groupsKnowledge": 3,
+      "groupsPractice": 2,
+      "outcomes": 16,
+      "items": 52,
+      "replay": 16,
+      "svg": [
+        "THPT_G10_B07_PARALLELOGRAM_EQUAL_OPPOSITE_D5_R01.svg",
+        "FIG-G12-CHII-B06-R00.svg",
+        "FIG-G12-CHII-B08-R00.svg",
+        "FIG-G12-CHII-B07-R00.svg"
+      ],
+      "model": "slm-top13-dot-01"
+    },
+    "14": {
+      "title": "Phương pháp tọa độ trong mặt phẳng Oxy",
+      "authorPR": 843,
+      "authorHead": "b31c26c4fe630c0e362d48ed868b465bfe7f7177",
+      "sourcePath": "prototypes/thpt/content-drafts/topic14-analytic-oxy/Temp_TOPIC14_ANALYTIC_OXY_R02_LEARNER_FIRST_20261116.md",
+      "sourceBlob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+      "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC14_R02_AUTHOR_SELF_QA_RECEIPT_20261116.md",
+      "q18ReceiptBlob": "e407a0318965dbf6cb65c9e6a2e1ac971f65221e",
+      "groupsKnowledge": 4,
+      "groupsPractice": 4,
+      "outcomes": 23,
+      "items": 87,
+      "replay": 23,
+      "svg": [
+        "THPT_G10_B19_LINE_INTERSECTION_DRAFT.svg",
+        "THPT_G10_B21_CIRCLE_TANGENT_DRAFT.svg",
+        "THPT_G10_B22_PARABOLA_FOCUS_DIRECTRIX_DRAFT.svg"
+      ],
+      "model": "slm-top14-parabola-01"
+    },
+    "15": {
+      "title": "Quan hệ song song trong không gian",
+      "authorPR": 846,
+      "authorHead": "5bb6e5fdb56a2d4d9d6cf749916913da2540b36f",
+      "sourcePath": "prototypes/thpt/content-drafts/topic15-spatial-parallelism/Temp_TOPIC15_SPATIAL_PARALLELISM_R04_LEARNER_FIRST_20261116.md",
+      "sourceBlob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+      "receiptPath": "prototypes/thpt/review-packets/Temp_TOPIC15_R04_AUTHOR_SELF_QA_RECEIPT_20261116.md",
+      "q18ReceiptBlob": "e84c2f66c9b95d63fbef8d5f0e1493f004036164",
+      "groupsKnowledge": 5,
+      "groupsPractice": 5,
+      "outcomes": 22,
+      "items": 67,
+      "replay": 8,
+      "svg": [
+        "FIG_G11_CHIV_B10_SHARED_R01.svg",
+        "FIG_G11_CHIV_B11_SHARED_R01.svg",
+        "FIG_G11_CHIV_B12_SHARED_R01.svg",
+        "FIG_G11_CHIV_B13_SHARED_R01.svg",
+        "FIG_G11_CHIV_B14_SHARED_R01.svg"
+      ],
+      "model": "slm-top15-line-plane-r00"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+name: THPT Topic W3 CĐ12–15 Golden Release QA (NO DEPLOY)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/thpt-preview/chuyen-de/cd11/**'
+      - 'docs/thpt-preview/chuyen-de/cd12/**'
+      - 'docs/thpt-preview/chuyen-de/cd13/**'
+      - 'docs/thpt-preview/chuyen-de/cd14/**'
+      - 'docs/thpt-preview/chuyen-de/cd15/**'
+      - 'docs/thpt-preview/chuyen-de/index.md'
+      - 'docs/assets/javascripts/thpt-topic-w3-golden-v1.js'
+      - 'docs/assets/visuals/FIG_G11_CHIV_B*_SHARED_R01.svg'
+      - 'scripts/test-thpt-topic-w3-source-locked.py'
+      - 'scripts/test-thpt-topic-w3-golden-browser.py'
+      - 'prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json'
+      - 'mkdocs.yml'
+      - 'mkdocs.thpt-preview.yml'
+      - '.github/workflows/thpt-topic-w3-golden-release-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-browser:
+    name: CĐ12–15 exact Q18/Q15/Q16 and CĐ01 Golden Chromium/WebKit (NO DEPLOY)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact signed AUTHORING source/Q18 and public projection
+        shell: bash
+        run: |
+          node --check docs/assets/javascripts/thpt-topic-w3-golden-v1.js
+          git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
+          python3 scripts/test-thpt-topic-w3-source-locked.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install MkDocs and scoped browser engines
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Build both navigations strictly (no global test)
+        run: |
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+      - name: Verify Golden CĐ01 computed styles, 12 W3 pages, SVG/MathJax and public Q16
+        run: python scripts/test-thpt-topic-w3-golden-browser.py
