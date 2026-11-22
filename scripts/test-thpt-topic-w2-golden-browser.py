@@ -230,6 +230,19 @@ with sync_playwright() as pw:
                         # SVG 620 viewBox units, largest label 19 units -> ~15px when capped at 480.
                         label_px = 19 * measured["width"] / 620
                         assert 12 <= label_px <= 20, (topic, width, "SVG text not comparable to prose", label_px)
+                if topic == "08":
+                    page.locator('[data-topic-w1-module-tab="1"]').click()
+                    page.locator('[data-topic-w1-subtab="1-4"]').click()
+                    limits = page.locator('[data-topic-w1-callout="rule"]').filter(
+                        has_text="Phép toán với giới hạn hữu hạn của dãy số"
+                    )
+                    expect(limits).to_have_count(1)
+                    recovered = limits.locator('[data-topic-w2-display-math="recovered-display"]')
+                    expect(recovered).to_have_count(1)
+                    expect(recovered.locator("mjx-container").first).to_be_visible(timeout=20000)
+                    assert not limits.evaluate(r"(e) => e.innerText.includes('\lim(')"), (
+                        engine, topic, width, "raw limit TeX escaped into visible text",
+                    )
                 if topic in ("09", "11"):
                     module, sub = ("4", "4-6") if topic == "09" else ("1", "1-5")
                     page.locator(f'[data-topic-w1-module-tab="{module}"]').click()
