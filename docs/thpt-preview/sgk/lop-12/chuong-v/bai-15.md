@@ -1,191 +1,273 @@
 # Toán 12 · Bài 15. Phương trình đường thẳng trong không gian
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG V · SGK KẾT NỐI TRI THỨC · TẬP HAI</p><p class="thpt-r4-lead">Học từ lý do và bản chất trước khi áp dụng công thức; có ví dụ giải thích phương pháp, hình gốc và Tự thử.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../bai-14/">Bài 14</a><a href="../bai-16/">Bài 16</a></nav></div>
-
-## 1. Vì sao cần học và kiến thức tiền đề
-
-Mô hình quỹ đạo, cáp và điểm giao.
-
-**Tự kiểm tra tiền đề:** Ôn lại vectơ chỉ phương, biểu diễn điểm M0+t u và giải hệ hai tham số. Nếu chưa tự giải được câu thử ở dưới, ôn vectơ/tích vô hướng/đạo hàm phù hợp trước khi tiếp tục.
-
-## 2. Hiểu bản chất, điều kiện và ví dụ
-
-<!-- OUTCOME_ID: G12-CHV-B15-O01 -->
-### 1. Vectơ chỉ phương và phương trình tham số đường thẳng
-
-- **Vì sao cần biết:** Một điểm xuất phát và hướng chuyển động xác định quỹ đạo thẳng của máy bay không người lái.
-- **Kiến thức tiền đề:** Cộng vectơ và tọa độ điểm M0+t u.
-- **Bản chất trước công thức:** Tham số t đo bao nhiêu lần vectơ hướng được cộng vào vị trí ban đầu.
-- **Định nghĩa và công thức:** \((x,y,z)=(x_0,y_0,z_0)+t(a,b,c),\;t\in\mathbb R\).
-- **Điều kiện và giới hạn:** Vectơ chỉ phương (a,b,c) khác 0; t thay đổi trên toàn R đối với đường thẳng vô hạn.
-- **Lý do chọn phương pháp:** Chọn M0 và u rồi viết đủ ba tọa độ theo cùng một t.
-- **Bẫy cần tự phát hiện:** Dùng ba tham số t khác nhau cho ba tọa độ, vô tình tạo mặt phẳng.
-
-#### Ví dụ có suy luận
-
-**Đề:** M0=(1,2,3),u=(2,-1,1). Viết tham số.
-
-**Lời giải có suy luận:** M=M0+t u; kiểm t=0 cho M0 và t=1 cho (3,1,4).
-
-**Kiểm tra kết quả và điều kiện:** (1+2t,2−t,3+t). **Kiểm tra phạm vi:** Vectơ chỉ phương (a,b,c) khác 0; t thay đổi trên toàn R đối với đường thẳng vô hạn.
-
-
-<!-- OUTCOME_ID: G12-CHV-B15-O02 -->
-### 2. Đường thẳng qua hai điểm phân biệt
-
-- **Vì sao cần biết:** Dựng đường đi thẳng qua hai mốc đo đạc trong không gian.
-- **Kiến thức tiền đề:** Trừ tọa độ hai điểm và phương trình tham số.
-- **Bản chất trước công thức:** Hai điểm phân biệt tạo hướng AB, mọi điểm đường thẳng có dạng A+tAB.
-- **Định nghĩa và công thức:** \(\overrightarrow{AB}=B-A\ne0,\;M=A+t(B-A)\).
-- **Điều kiện và giới hạn:** Hai điểm phải khác nhau; có thể nhân vectơ chỉ phương với số khác 0.
-- **Lý do chọn phương pháp:** Tính AB rồi viết tham số; kiểm A ở t=0 và B ở t=1.
-- **Bẫy cần tự phát hiện:** Lấy hiệu tọa độ sai hoặc hai điểm trùng nhau vẫn nói xác định một đường thẳng duy nhất.
-
-#### Ví dụ có suy luận
-
-**Đề:** A(1,0,-1),B(3,2,1). Lập đường thẳng AB.
-
-**Lời giải có suy luận:** AB=(2,2,2); A+tAB đưa t=1 về B; có thể rút hướng (1,1,1).
-
-**Kiểm tra kết quả và điều kiện:** (1+2t,2t,−1+2t). **Kiểm tra phạm vi:** Hai điểm phải khác nhau; có thể nhân vectơ chỉ phương với số khác 0.
-
-
-<!-- OUTCOME_ID: G12-CHV-B15-O03 -->
-### 3. Phương trình chính tắc và tọa độ hướng bằng 0
-
-- **Vì sao cần biết:** Dạng chính tắc giúp nhận nhanh giao điểm với mặt phẳng và thành phần hướng.
-- **Kiến thức tiền đề:** Quy tắc chia và ý nghĩa tham số x−x0=a t.
-- **Bản chất trước công thức:** Khử chung t chỉ khi thành phần hướng được đem chia khác 0; nếu một thành phần bằng 0, tọa độ đó là hằng.
-- **Định nghĩa và công thức:** \(\frac{x-x_0}{a}=\frac{y-y_0}{b}=\frac{z-z_0}{c}\) khi \(abc\ne0\).
-- **Điều kiện và giới hạn:** Nếu a=0, viết x=x0 và chỉ chia theo các thành phần còn lại; không chia cho 0.
-- **Lý do chọn phương pháp:** Kiểm hướng trước khi chuyển; giữ một t chung hoặc điều kiện tọa độ cố định.
-- **Bẫy cần tự phát hiện:** Viết (x−1)/0 vì tưởng công thức luôn có ba phân số.
-
-#### Ví dụ có suy luận
-
-**Đề:** Qua (1,-2,3),u=(2,1,-1). Viết chính tắc.
-
-**Lời giải có suy luận:** Đặt ba biểu thức bằng t, vì cả ba thành phần u khác 0.
-
-**Kiểm tra kết quả và điều kiện:** (x−1)/2=(y+2)/1=(z−3)/(−1). **Kiểm tra phạm vi:** Nếu a=0, viết x=x0 và chỉ chia theo các thành phần còn lại; không chia cho 0.
-
-
-<!-- OUTCOME_ID: G12-CHV-B15-O04 -->
-### 4. Kiểm điểm thuộc đường thẳng bằng một tham số
-
-- **Vì sao cần biết:** Một vị trí có nằm trên tuyến cáp hay đường bay đã thiết kế?
-- **Kiến thức tiền đề:** Nghiệm phương trình bậc nhất và tính nhất quán ba tọa độ.
-- **Bản chất trước công thức:** Thuộc đường thẳng khi có một giá trị t duy nhất (hoặc phù hợp) thỏa đồng thời cả ba phương trình.
-- **Định nghĩa và công thức:** \(M\in d\iff\exists t\in\mathbb R: M=M_0+t\vec u\).
-- **Điều kiện và giới hạn:** Không được dùng t khác nhau cho từng phương trình; nếu một tọa độ hướng bằng 0, điểm phải có tọa độ cố định tương ứng.
-- **Lý do chọn phương pháp:** Giải t từ một tọa độ có hệ số khác 0 rồi thay vào hai tọa độ còn lại.
-- **Bẫy cần tự phát hiện:** Chỉ kiểm được x rồi bỏ qua y,z.
-
-#### Ví dụ có suy luận
-
-**Đề:** d=(1+t,2−2t,3+t). M(3,-2,5) có thuộc d?
-
-**Lời giải có suy luận:** Từ x=3 ⇒ t=2; y=2−4=−2, z=3+2=5 đều khớp.
-
-**Kiểm tra kết quả và điều kiện:** Có, t=2. **Kiểm tra phạm vi:** Không được dùng t khác nhau cho từng phương trình; nếu một tọa độ hướng bằng 0, điểm phải có tọa độ cố định tương ứng.
-
-
-<!-- OUTCOME_ID: G12-CHV-B15-O05 -->
-### 5. Quan hệ hướng giữa hai đường thẳng
-
-- **Vì sao cần biết:** Hai tuyến giao thông có cùng hướng hay tạo góc vuông theo vectơ?
-- **Kiến thức tiền đề:** Tích vô hướng và vectơ cùng phương.
-- **Bản chất trước công thức:** Điều kiện song song của hướng khác với vị trí hình học của hai đường thẳng; hướng vuông góc không đủ khẳng định hai đường thẳng cắt nhau.
-- **Định nghĩa và công thức:** \(\vec u\parallel\vec v \iff\vec u\times\vec v=0;\quad\vec u\perp\vec v\iff\vec u\cdot\vec v=0\).
-- **Điều kiện và giới hạn:** Kiểm vị trí có giao điểm trước khi gọi hai đường thẳng vuông góc theo nghĩa hình học.
-- **Lý do chọn phương pháp:** Phân biệt xét hướng và xét vị trí; nêu rõ kết luận đang dùng.
-- **Bẫy cần tự phát hiện:** Từ u·v=0 kết luận ngay hai đường thẳng luôn cắt nhau trong không gian.
-
-#### Ví dụ có suy luận
-
-**Đề:** u=(1,1,0),v=(1,-1,0). Hướng hai đường thẳng thế nào?
-
-**Lời giải có suy luận:** u·v=1−1=0; chưa đủ để khẳng định hai đường thẳng cắt nhau.
-
-**Kiểm tra kết quả và điều kiện:** Hai hướng vuông góc. **Kiểm tra phạm vi:** Kiểm vị trí có giao điểm trước khi gọi hai đường thẳng vuông góc theo nghĩa hình học.
-
-
-<!-- OUTCOME_ID: G12-CHV-B15-O06 -->
-### 6. Hai đường thẳng cắt nhau, song song, trùng hoặc chéo nhau
-
-- **Vì sao cần biết:** Các tuyến dây trong không gian có thể không giao nhau dù hình chiếu trông như cắt.
-- **Kiến thức tiền đề:** Giải hệ ba tọa độ với hai tham số t,s và xét hướng.
-- **Bản chất trước công thức:** Hai đường không cùng phương mà không có nghiệm chung trong ba phương trình thì chéo nhau; hình chiếu 2D không đủ.
-- **Định nghĩa và công thức:** \(M_1+t\vec u=M_2+s\vec v\), kiểm đồng thời x,y,z.
-- **Điều kiện và giới hạn:** Hệ có nghiệm là cắt (nếu khác hướng) hoặc trùng; không nghiệm + khác hướng là chéo; cùng hướng + khác vị trí là song song.
-- **Lý do chọn phương pháp:** Viết hai t,s khác nhau, giải hai tọa độ rồi bắt buộc kiểm tọa độ thứ ba.
-- **Bẫy cần tự phát hiện:** Thấy đường vẽ cắt trên giấy rồi kết luận thật sự giao trong không gian.
-
-#### Ví dụ có suy luận
-
-**Đề:** d1=(t,0,t), d2=(0,s,1−s). Hai đường có cắt?
-
-**Lời giải có suy luận:** x: t=0; y: s=0; z: 0≠1 nên không giao; hướng (1,0,1),(0,1,-1) không cùng phương.
-
-**Kiểm tra kết quả và điều kiện:** Chéo nhau. **Kiểm tra phạm vi:** Hệ có nghiệm là cắt (nếu khác hướng) hoặc trùng; không nghiệm + khác hướng là chéo; cùng hướng + khác vị trí là song song.
-
-
-<!-- OUTCOME_ID: G12-CHV-B15-O07 -->
-### 7. Giao của đường thẳng với mặt phẳng
-
-- **Vì sao cần biết:** Tìm điểm một đường bay xuyên qua mặt phẳng quy định hoặc chạm nền.
-- **Kiến thức tiền đề:** Thế phương trình tham số vào phương trình mặt phẳng.
-- **Bản chất trước công thức:** Giao điểm tương ứng giá trị t thỏa cùng lúc điều kiện mặt phẳng và đường thẳng.
-- **Định nghĩa và công thức:** \(A(x_0+at)+B(y_0+bt)+C(z_0+ct)+D=0\).
-- **Điều kiện và giới hạn:** Hệ có nghiệm duy nhất: cắt; vô nghiệm: song song; đúng mọi t: đường thẳng nằm trong mặt phẳng.
-- **Lý do chọn phương pháp:** Thế đủ ba tọa độ, giải t, thay lại cả hai phương trình.
-- **Bẫy cần tự phát hiện:** Tìm giao chỉ qua một tọa độ hoặc quên kiểm trường hợp hệ số t bằng 0.
-
-#### Ví dụ có suy luận
-
-**Đề:** d=(t,1,2t), P:x+z−6=0. Tìm giao.
-
-**Lời giải có suy luận:** Thế t+2t−6=0 ⇒ t=2; điểm (2,1,4) thuộc cả d và P.
-
-**Kiểm tra kết quả và điều kiện:** (2,1,4). **Kiểm tra phạm vi:** Hệ có nghiệm duy nhất: cắt; vô nghiệm: song song; đúng mọi t: đường thẳng nằm trong mặt phẳng.
-
-
-## 3. Đọc hình minh họa gốc
-
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHV-B15-R00.png" alt="Hình minh họa gốc về Phương trình đường thẳng trong không gian" /><figcaption>Hình 1: Phương trình đường thẳng trong không gian. Đọc nhãn và quan hệ hình học; không suy số đo trong không gian từ tỷ lệ hình phẳng.</figcaption></figure>
-
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHV-B151-R00.png" alt="Hình minh họa gốc về Phương trình đường thẳng trong không gian" /><figcaption>Hình 2: Phương trình đường thẳng trong không gian. Đọc nhãn và quan hệ hình học; không suy số đo trong không gian từ tỷ lệ hình phẳng.</figcaption></figure>
-
-## 4. Tự thử trước Core
-
-Em tự làm trước, rồi chủ động mở đối chiếu; không tính điểm hay Mastery.
-
-<!-- FIRST_TRY_ID: B15-T01 -->
-### Tự thử
-
-Tại t=0, M0+t u bằng gì?
-
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
-
-**Đối chiếu:** M0.
-
-**Vì sao:** Cộng vectơ và tọa độ điểm M0+t u..
-
-</details>
-
-<!-- FIRST_TRY_ID: B15-T02 -->
-### Tự thử
-
-d=(t,1,2t), P:x+z−6=0. Tìm giao.
-
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
-
-**Đối chiếu:** (2,1,4).
-
-**Vì sao:** Thế phương trình tham số vào phương trình mặt phẳng..
-
-</details>
-
-## 5. Core và Luyện tập
-
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b15-core">Core · Bài 15</a><a href="../luyen-tap/#b15-practice">Luyện tập, Vận dụng và Tự luận</a><a href="../luyen-tap/#b15-help">Khi gặp khó khăn</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG V · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 41–49</p><p class="thpt-r4-lead">Hiểu hình học, đọc hình, tự vận dụng và đối chiếu trước khi luyện tập.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương V</a><a href="../bai-14/">Bài 14</a><a href="../bai-16/">Bài 16</a></nav></div>
+
+=== "Khám phá kiến thức"
+
+    Biết một vị trí xuất phát và hướng chuyển động, ta mô tả đường thẳng bằng một tham số. Đường thẳng vô hạn, đoạn thẳng và chuyển động thực tế khác miền tham số. Ôn vectơ khác 0, tích vô hướng/có hướng và giải hệ hai ẩn.
+
+    ### 1.1. Điểm gốc và một tham số
+    
+    M chạy trên đường qua A theo hướng u≠0 khi $\overrightarrow{AM}=t\vec u$, t chạy toàn R. Như vậy ba tọa độ cùng dùng một t.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHV-B15-LINE-R02.svg" alt="Đường qua A, vectơ u và các điểm A+tu ứng với t âm, 0 và dương."/><figcaption>Đọc điểm gốc, hướng, tham số. Đổi t làm đổi vị trí trên một đường.</figcaption></figure>
+    
+    **Vận dụng.** Qua A(−1,2,0), u=(3,0,−2). Viết tham số và điểm ứng với t=2.
+    
+    <span data-ped-first-try="1" data-outcome-id="G12-CHV-B15-O01" data-thpt-first-try-id="THPT-G12-B15-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $(x,y,z)=(-1+3t,2,-2t)$; t=2 cho (5,2,−4).
+    
+    <span data-thpt-help-id="HELP-G12-B15-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Điểm gốc tại t=0; giữ đúng tọa độ cố định. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p01). Sau đó tự làm lại Vận dụng.
+
+    ### 1.2. Qua hai điểm: hướng là hiệu tọa độ
+    
+    Nếu A≠B thì AB khác 0. Đường thẳng AB lấy A+t(B−A); đoạn AB đúng khi 0≤t≤1 với cách chọn hướng B−A.
+    
+    **Vận dụng.** A(2,1,−1), B(−1,4,2). Viết tham số đoạn AB và trung điểm.
+    
+    <span data-ped-first-try="2" data-outcome-id="G12-CHV-B15-O02" data-thpt-first-try-id="THPT-G12-B15-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $(2-3t,1+3t,-1+3t)$, $0\le t\le1$; t=1/2 cho (1/2,5/2,1/2).
+    
+    <span data-thpt-help-id="HELP-G12-B15-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không áp miền [0,1] nếu đã tùy ý rút gọn hướng mà không đổi thang tham số. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p02). Sau đó tự làm lại Vận dụng.
+
+    ### 1.3. Chính tắc và thành phần hướng bằng 0
+    
+    Chia từng hiệu tọa độ cho thành phần u để tìm t chỉ khi mẫu khác 0. Nếu một thành phần bằng 0 thì giữ tọa độ cố định và dùng tham số, không viết phân thức chia 0.
+    
+    **Vận dụng.** Qua A(1,3,−2), u=(2,0,4). Có phương trình chính tắc ba phân thức theo SGK không?
+    
+    <span data-ped-first-try="3" data-outcome-id="G12-CHV-B15-O03" data-thpt-first-try-id="THPT-G12-B15-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Không, vì b=0. Dùng $(x,y,z)=(1+2t,3,-2+4t)$ hoặc hệ tương đương y=3 và $(x-1)/2=(z+2)/4$.
+    
+    <span data-thpt-help-id="HELP-G12-B15-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không ghi (y−3)/0; hệ hai phân thức là dạng tương đương, không phải chính tắc đầy đủ SGK. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p03). Sau đó tự làm lại Vận dụng.
+
+    ### 1.4. Kiểm một điểm với cùng tham số
+    
+    Điểm M thuộc d nếu tồn tại duy nhất một t thỏa cả ba tọa độ. Chọn tọa độ có hệ số khác 0 để tìm t, kiểm hai tọa độ còn lại.
+    
+    **Vận dụng.** d=(2+t,−1+2t,4−t). Xét M(5,5,0).
+    
+    <span data-ped-first-try="4" data-outcome-id="G12-CHV-B15-O04" data-thpt-first-try-id="THPT-G12-B15-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Từ x suy t=3; y=5 đúng nhưng z=1≠0. M không thuộc d.
+    
+    <span data-thpt-help-id="HELP-G12-B15-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Một tọa độ sai đủ bác bỏ; không chọn t khác nhau. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p04). Sau đó tự làm lại Vận dụng.
+
+    ### 1.5. Vuông góc không đồng nghĩa với cắt nhau
+    
+    Trong không gian, góc giữa hai đường thẳng là góc giữa hai đường song song với chúng qua cùng một điểm (góc nhỏ hơn hoặc bằng 90°). Hai đường vuông góc khi u·v=0, kể cả khi chúng chéo nhau.
+    
+    **Vận dụng.** d₁=(t,0,0), d₂=(0,s,3). Hai đường có vuông góc không? Có giao không?
+    
+    <span data-ped-first-try="5" data-outcome-id="G12-CHV-B15-O05" data-thpt-first-try-id="THPT-G12-B15-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** u=(1,0,0), v=(0,1,0), dot=0; hai đường vuông góc. z lần lượt 0 và 3 nên không giao; chúng chéo nhau.
+    
+    <span data-thpt-help-id="HELP-G12-B15-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Tách hai câu hỏi: góc giữa hướng và vị trí tương đối. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p05). Sau đó tự làm lại Vận dụng.
+
+    ### 1.6. Bốn vị trí tương đối
+    
+    Nếu u,v cùng phương, kiểm một điểm để phân biệt trùng và song song. Nếu không cùng phương, hai đường cắt khi đồng phẳng: $(B-A)\cdot[u,v]=0$; khác 0 thì chéo. Cũng có thể giải hệ hai tham số và kiểm tọa độ thứ ba.
+    
+    **Vận dụng.** d₁=(1+t,2t,0), d₂=(2,s,1−s). Phân loại.
+    
+    <span data-ped-first-try="6" data-outcome-id="G12-CHV-B15-O06" data-thpt-first-try-id="THPT-G12-B15-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Từ x, t=1; y cho s=2; z₂=−1≠0. u=(1,2,0),v=(0,1,−1) không cùng phương, nên chéo.
+    
+    <span data-thpt-help-id="HELP-G12-B15-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không kết luận cắt chỉ khi hai phương trình đầu thỏa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p06). Sau đó tự làm lại Vận dụng.
+
+    ### 1.7. Giao đường–mặt và miền tham số
+    
+    Thế A+tu vào phương trình P cho phương trình bậc nhất theo t. Hệ số là n·u; nếu khác 0 có giao duy nhất; bằng 0 thì kiểm hằng số phân biệt nằm trong và song song.
+    
+    **Vận dụng.** d=(1+t,2−t,−2+3t), P:z=4. Tìm giao, điểm đó có nằm trên đoạn từ t=0 đến t=1 không?
+    
+    <span data-ped-first-try="7" data-outcome-id="G12-CHV-B15-O07" data-thpt-first-try-id="THPT-G12-B15-TRY07" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** −2+3t=4 ⇒ t=2; giao (3,0,4) nhưng không thuộc đoạn.
+    
+    <span data-thpt-help-id="HELP-G12-B15-TRY07" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Sau khi giải t, kiểm miền thời gian/đoạn theo mô hình. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p07). Sau đó tự làm lại Vận dụng.
+
+    ### 1.8. Tầm nhìn bị che bởi đĩa tròn
+    
+    Để tia nhìn từ A đến B bị tấm đĩa phẳng che, điểm giao phải nằm trên đoạn AB (thường kiểm 0<t<1 nếu A,B không nằm trên màn), và trong đĩa kể cả biên. Chỉ giải giao với mặt phẳng chưa đủ.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHV-B15-OCCLUSION-R02.svg" alt="Đoạn AB xuyên mặt phẳng, điểm H có thể nằm ngoài đĩa."/><figcaption>H phải thuộc cả đoạn và đĩa; phần kéo dài vô hạn không đủ kết luận che khuất.</figcaption></figure>
+    
+    **Vận dụng.** A(0,0,−4), B(6,2,4). Tấm đĩa tâm O, bán kính 3, nằm trong z=0. Có che khuất B không?
+    
+    <span data-ped-first-try="8" data-outcome-id="G12-CHV-B15-O07" data-thpt-first-try-id="THPT-G12-B15-TRY08" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** A+t(B−A)=(6t,2t,−4+8t). z=0 cho t=1/2, H(3,1,0). OH²=10>9, H ngoài đĩa; không che.
+    
+    <span data-thpt-help-id="HELP-G12-B15-TRY08" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p07). Sau đó tự làm lại Vận dụng.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Phương trình đường thẳng
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Phương trình đường thẳng.</strong><p>Vectơ u=(a,b,c)≠0 có giá song song hoặc trùng d là chỉ phương. Qua A(x₀,y₀,z₀), \(x=x_0+at,y=y_0+bt,z=z_0+ct\), \(t\in\mathbb R\). Nếu abc≠0 thì chính tắc \((x-x_0)/a=(y-y_0)/b=(z-z_0)/c\). Nếu có thành phần 0, dùng tham số. Qua hai điểm phân biệt chọn u=B−A. Đường qua A vuông góc P nhận pháp tuyến P làm chỉ phương.</p></div>
+
+    ### 2.2. Hai đường thẳng vuông góc
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Hai đường thẳng vuông góc.</strong><p>\(d_1\perp d_2\Leftrightarrow\vec u_1\cdot\vec u_2=0\). Điều kiện không yêu cầu giao điểm: SGK có ví dụ vuông góc và chéo nhau. Góc đường thẳng không phụ thuộc đổi dấu vectơ chỉ phương.</p></div>
+
+    ### 2.3. Vị trí tương đối giữa hai đường thẳng
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Vị trí tương đối giữa hai đường thẳng.</strong><p>Cho d₁ qua A hướng u, d₂ qua B hướng v. Nếu \([u,v]=0\) thì cùng phương: A thuộc d₂ ⇒ trùng, nếu không ⇒ song song phân biệt. Nếu \([u,v]\ne0\): \((B-A)\cdot[u,v]=0\) ⇒ cắt, khác 0 ⇒ chéo. Hoặc giải hệ \(A+tu=B+sv\); với khác hướng, nghiệm duy nhất ⇒ cắt, vô nghiệm ⇒ chéo. Giao đường–mặt: thế A+tu vào P, kiểm hệ số \(n\cdot u\) và hằng số. Với đoạn AB dùng u=B−A và \(0\le t\le1\).</p></div>
+
+=== "Ví dụ"
+
+    ### 3.1. Tham số
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-01"><p><strong>Đề bài:</strong> M₀=(1,2,3),u=(2,−1,1). Viết phương trình.</p><p><strong>Phân tích:</strong> M=M₀+tu.</p><p><strong>Lời giải:</strong> \((x,y,z)=(1+2t,2-t,3+t)\).</p><p><strong>Kiểm lại:</strong> t=0 cho M₀, t=1 cho (3,1,4).</p></div>
+
+    ### 3.2. Qua hai điểm
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-02"><p><strong>Đề bài:</strong> A(1,0,−1),B(3,2,1). Lập AB.</p><p><strong>Phân tích:</strong> Chọn u=B−A=(2,2,2).</p><p><strong>Lời giải:</strong> \((1+2t,2t,-1+2t)\).</p><p><strong>Kiểm lại:</strong> t=1 cho B.</p></div>
+
+    ### 3.3. Dạng chính tắc
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-03"><p><strong>Đề bài:</strong> Qua (1,−2,3),u=(2,1,−1).</p><p><strong>Phân tích:</strong> Cả ba thành phần khác 0.</p><p><strong>Lời giải:</strong> \((x-1)/2=(y+2)/1=(z-3)/(-1)\).</p><p><strong>Kiểm lại:</strong> Các phân thức cùng một tham số.</p></div>
+
+    ### 3.4. Kiểm điểm
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-04"><p><strong>Đề bài:</strong> d=(1+t,2−2t,3+t), M(3,−2,5).</p><p><strong>Phân tích:</strong> Từ x tìm t.</p><p><strong>Lời giải:</strong> t=2 cho y=−2,z=5; M thuộc d.</p><p><strong>Kiểm lại:</strong> Dùng cùng t.</p></div>
+
+    ### 3.5. Vuông góc theo hướng
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-05"><p><strong>Đề bài:</strong> u=(1,1,0),v=(1,−1,0).</p><p><strong>Phân tích:</strong> Tích vô hướng.</p><p><strong>Lời giải:</strong> \(u\cdot v=1-1=0\), hai đường nhận chúng làm hướng là vuông góc.</p><p><strong>Kiểm lại:</strong> Chưa biết cắt hay chéo nếu không biết điểm gốc.</p></div>
+
+    ### 3.6. Chéo nhau
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-06"><p><strong>Đề bài:</strong> d₁=(t,0,t), d₂=(0,s,1−s).</p><p><strong>Phân tích:</strong> Xét hệ giao.</p><p><strong>Lời giải:</strong> t=s=0 từ x,y nhưng z khác nhau; u và v không cùng phương, nên chéo.</p><p><strong>Kiểm lại:</strong> Không nhầm chéo với song song.</p></div>
+
+    ### 3.7. Giao đường–mặt
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-07"><p><strong>Đề bài:</strong> d=(t,1,2t), P:x+z−6=0.</p><p><strong>Phân tích:</strong> Thế tọa độ tham số.</p><p><strong>Lời giải:</strong> \(3t=6\), t=2, giao (2,1,4).</p><p><strong>Kiểm lại:</strong> Thay vào cả d và P.</p></div>
+
+    ### 3.8. Tấm đĩa chắn tầm nhìn
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-R02-08"><p><strong>Đề bài:</strong> A(1,1,−2), B(3,−1,2), đĩa tâm O bán kính 3 trong z=0.</p><p><strong>Phân tích:</strong> Dùng đoạn A+t(B−A), không chỉ đường vô hạn.</p><p><strong>Lời giải:</strong> t=1/2 cho H(2,0,0), \(OH^2=4&lt;9\), t nằm trong (0,1), nên chắn.</p><p><strong>Kiểm lại:</strong> Nếu H ngoài đĩa hoặc t nằm ngoài đoạn thì không chắn.</p></div>
+
+    ### 3.9. Hai vật có va chạm không?
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-R02-09"><p><strong>Đề bài:</strong> A=(0,0,0) chuyển động u=(2,0,0), B=(4,−3,0) chuyển động v=(0,1,0), cùng xuất phát t=0.</p><p><strong>Phân tích:</strong> Giao quỹ đạo chưa đủ, phải đến cùng thời điểm.</p><p><strong>Lời giải:</strong> Giao tại (4,0,0) khi vật A t=2, vật B t=3; không va chạm.</p><p><strong>Kiểm lại:</strong> Cả hai thời gian không âm nhưng khác nhau.</p></div>
+
+    ### 3.10. Mặt phẳng chứa hai đường cắt
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-R02-10"><p><strong>Đề bài:</strong> d₁ qua (1,1,0) hướng (1,0,1), d₂ qua cùng điểm hướng (0,2,1).</p><p><strong>Phân tích:</strong> Hai hướng không cùng phương.</p><p><strong>Lời giải:</strong> \(n=(-2,-1,2)\), \(-2(x-1)-(y-1)+2z=0\), hay \(-2x-y+2z+3=0\).</p><p><strong>Kiểm lại:</strong> Thỏa điểm chung, dot với mỗi hướng bằng 0.</p></div>
+
+    ### 3.11. Đường qua M cắt và vuông góc d
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-R02-11"><p><strong>Đề bài:</strong> M(2,3,1), d=(t,0,1). Tìm đường qua M, cắt d vuông góc.</p><p><strong>Phân tích:</strong> Gọi H(t,0,1) thuộc d; MH·u=0.</p><p><strong>Lời giải:</strong> \((t-2,-3,0)\cdot(1,0,0)=0\) ⇒ t=2, H(2,0,1). Đường \((2,3+s,1)\), s∈R.</p><p><strong>Kiểm lại:</strong> M khác H, hướng vuông góc và giao tại H.</p></div>
+
+    ### 3.12. Đường nằm trên mặt phẳng và vuông góc đường khác
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B15-R02-12"><p><strong>Đề bài:</strong> P:z=0, d=(1+t,2+t,t). Tìm đường trong P cắt và vuông góc d.</p><p><strong>Phân tích:</strong> Giao d,P tại t=0; hướng w phải vuông góc nP và u.</p><p><strong>Lời giải:</strong> w=(1,-1,0), đường \((1+s,2-s,0)\), vì w·(1,1,1)=0.</p><p><strong>Kiểm lại:</strong> Mọi điểm nằm P; giao tại (1,2,0).</p></div>
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Điểm gốc và một tham số
+    
+    ??? tip "Cách tự sửa"
+    
+        Điểm gốc tại t=0; giữ đúng tọa độ cố định. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p01). Sau đó tự làm lại Vận dụng.
+
+    ### 4.2. Qua hai điểm: hướng là hiệu tọa độ
+    
+    ??? tip "Cách tự sửa"
+    
+        Không áp miền [0,1] nếu đã tùy ý rút gọn hướng mà không đổi thang tham số. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p02). Sau đó tự làm lại Vận dụng.
+
+    ### 4.3. Chính tắc và thành phần hướng bằng 0
+    
+    ??? tip "Cách tự sửa"
+    
+        Không ghi (y−3)/0; hệ hai phân thức là dạng tương đương, không phải chính tắc đầy đủ SGK. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p03). Sau đó tự làm lại Vận dụng.
+
+    ### 4.4. Kiểm một điểm với cùng tham số
+    
+    ??? tip "Cách tự sửa"
+    
+        Một tọa độ sai đủ bác bỏ; không chọn t khác nhau. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p04). Sau đó tự làm lại Vận dụng.
+
+    ### 4.5. Vuông góc không đồng nghĩa với cắt nhau
+    
+    ??? tip "Cách tự sửa"
+    
+        Tách hai câu hỏi: góc giữa hướng và vị trí tương đối. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p05). Sau đó tự làm lại Vận dụng.
+
+    ### 4.6. Bốn vị trí tương đối
+    
+    ??? tip "Cách tự sửa"
+    
+        Không kết luận cắt chỉ khi hai phương trình đầu thỏa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p06). Sau đó tự làm lại Vận dụng.
+
+    ### 4.7. Giao đường–mặt và miền tham số
+    
+    ??? tip "Cách tự sửa"
+    
+        Sau khi giải t, kiểm miền thời gian/đoạn theo mô hình. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p07). Sau đó tự làm lại Vận dụng.
+
+    ### 4.8. Tầm nhìn bị che bởi đĩa tròn
+    
+    ??? tip "Cách tự sửa"
+    
+        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p07). Sau đó tự làm lại Vận dụng.
+
+    [Core Bài 15](../luyen-tap/#b15-core) · [Luyện tập và Tự luận](../luyen-tap/#b15-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b15-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 41–49; SBT trang in 26–29 (đã đọc; trang 25 chưa định vị).*
