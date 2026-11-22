@@ -16,7 +16,7 @@ REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_CHVI_B18_B19_R03_AUTHOR_
 REVIEW_RECEIPT_BLOB: d177fa26eb9c3a70b54a4947cebb38f09c905387
 REVIEW_RECEIPT: prototypes/thpt/review-packets/G12_CHVI_B18_B19_R03_AUTHOR_SELF_Q18_RECEIPT_20261122.md
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G12-SGK-CHVI-B18-B19-R03_HANDOFF_V2_20261122.md
-AUTHOR_HANDOFF_BLOB: 731d8aa8ff500618a688a89cffc2b629dad50e10
+AUTHOR_HANDOFF_BLOB: ad01f6f3cf1b291cb82e66aab38bf7500eaf3fc4
 SOURCE_COMMIT: 36c1fa7e0dc0a97b8281880e0a39296ffbbb8cee
 CURRENT_PR: #1010 Draft AUTHORING, source only, not merged/deployed
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
@@ -55,7 +55,7 @@ Author R02 direct-S1 source receipt `94b4a620cf71e143d021c06b75491f19af8ab1f1`: 
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-Full 18-by-5-fields source-locked row table plus 56 item→outcome→role entries: `prototypes/thpt/release-handoffs/G12-SGK-CHVI-B18-B19-R03_HANDOFF_V2_20261122.md`, Git blob `731d8aa8ff500618a688a89cffc2b629dad50e10`, sourced to the exact manifest and Q18 receipt above. No extra Academic signoff stage in v3.2.0 §X-E.
+Full 18-by-5-fields source-locked row table plus 56 item→outcome→role entries: `prototypes/thpt/release-handoffs/G12-SGK-CHVI-B18-B19-R03_HANDOFF_V2_20261122.md`, Git blob `ad01f6f3cf1b291cb82e66aab38bf7500eaf3fc4`, sourced to the exact manifest and Q18 receipt above. No extra Academic signoff stage in v3.2.0 §X-E.
 
 ## RELEASE gates not satisfied or not run in AUTHORING
 
