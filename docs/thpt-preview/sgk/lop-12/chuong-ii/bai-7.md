@@ -26,7 +26,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm cả vuông góc và độ dài 1; không chỉ nhìn ba hướng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b07-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b07-p01). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Ba trục vuông góc chưa tự thành hệ trực chuẩn nếu vectơ cơ sở chưa có độ dài một đơn vị theo quy ước; phải chuẩn hóa từng cạnh.
+
+        **Tự sửa:** Kiểm cả vuông góc và độ dài 1; không chỉ nhìn ba hướng. <a href="../luyen-tap/#thpt-g12-b07-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b07-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.2. Đọc các mặt phẳng
     
@@ -44,7 +46,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tọa độ bằng 0 là chiều bị thiếu, không phải tên mặt phẳng chứa chiều đó. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b07-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b07-p01). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Một điểm thuộc Oxy/Oyz/Oxz khi tọa độ vuông góc với mặt phẳng bằng 0; hai tọa độ bằng 0 mới nằm trên một trục.
+
+        **Tự sửa:** Tọa độ bằng 0 là chiều bị thiếu, không phải tên mặt phẳng chứa chiều đó. <a href="../luyen-tap/#thpt-g12-b07-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b07-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.3. Đọc tọa độ từ hình
     
@@ -64,7 +68,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đọc hệ số theo thứ tự i,j,k; dấu âm chỉ chiều. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b07-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b07-p03). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Tọa độ điểm M dựa vào vectơ vị trí OM từ gốc O; tọa độ của một vectơ tự do không tự xác định vị trí của điểm nếu thiếu gốc.
+
+        **Tự sửa:** Đọc hệ số theo thứ tự i,j,k; dấu âm chỉ chiều. <a href="../luyen-tap/#thpt-g12-b07-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b07-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.4. Hệ quy chiếu và hướng chuyển động
     
@@ -82,7 +88,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đổi thời gian sang giờ; nam là chiều dương y đã chọn. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b07-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b07-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Dấu của độ dời quyết định bởi trục dương đã đặt (nam hay bắc), không chỉ tên hướng chuyển động; phải đổi thời gian về giờ khi vận tốc km/h.
+
+        **Tự sửa:** Đổi thời gian sang giờ; nam là chiều dương y đã chọn. <a href="../luyen-tap/#thpt-g12-b07-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b07-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.5. Cuối trừ đầu
     
@@ -100,7 +108,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tính ba phép trừ; kiểm BA=−AB. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b07-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b07-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Vectơ AB bằng tọa độ B trừ A theo từng trục; đổi thứ tự thành BA sẽ đổi dấu cả ba tọa độ.
+
+        **Tự sửa:** Tính ba phép trừ; kiểm BA=−AB. <a href="../luyen-tap/#thpt-g12-b07-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b07-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.6. Tìm đỉnh còn thiếu của lăng trụ
     
@@ -118,7 +128,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm lại BB′,CC′ cùng độ dời, không giả sử cạnh bên thẳng đứng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b07-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b07-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Mọi cạnh bên của lăng trụ ứng với cùng một vectơ tịnh tiến; không mặc định chúng dựng thẳng đứng theo Oz hoặc dùng lại tọa độ A′ cho B′.
+
+        **Tự sửa:** Kiểm lại BB′,CC′ cùng độ dời, không giả sử cạnh bên thẳng đứng. <a href="../luyen-tap/#thpt-g12-b07-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b07-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
 === "Kiến thức SGK"
 
@@ -170,38 +182,38 @@
     
     ??? tip "Cách tự sửa"
     
-        Kiểm cả vuông góc và độ dài 1; không chỉ nhìn ba hướng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b07-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b07-p01).
+        Kiểm cả vuông góc và độ dài 1; không chỉ nhìn ba hướng. <a href="../luyen-tap/#thpt-g12-b07-c01">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b07-p01">luyện câu khác rồi quay lại</a>.
 
     ### 4.2. Đọc các mặt phẳng
     
     ??? tip "Cách tự sửa"
     
-        Tọa độ bằng 0 là chiều bị thiếu, không phải tên mặt phẳng chứa chiều đó. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b07-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b07-p01).
+        Tọa độ bằng 0 là chiều bị thiếu, không phải tên mặt phẳng chứa chiều đó. <a href="../luyen-tap/#thpt-g12-b07-c01">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b07-p01">luyện câu khác rồi quay lại</a>.
 
     ### 4.3. Đọc tọa độ từ hình
     
     ??? tip "Cách tự sửa"
     
-        Đọc hệ số theo thứ tự i,j,k; dấu âm chỉ chiều. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b07-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b07-p03).
+        Đọc hệ số theo thứ tự i,j,k; dấu âm chỉ chiều. <a href="../luyen-tap/#thpt-g12-b07-c02">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b07-p03">luyện câu khác rồi quay lại</a>.
 
     ### 4.4. Hệ quy chiếu và hướng chuyển động
     
     ??? tip "Cách tự sửa"
     
-        Đổi thời gian sang giờ; nam là chiều dương y đã chọn. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b07-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b07-p05).
+        Đổi thời gian sang giờ; nam là chiều dương y đã chọn. <a href="../luyen-tap/#thpt-g12-b07-c03">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b07-p05">luyện câu khác rồi quay lại</a>.
 
     ### 4.5. Cuối trừ đầu
     
     ??? tip "Cách tự sửa"
     
-        Tính ba phép trừ; kiểm BA=−AB. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b07-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b07-p07).
+        Tính ba phép trừ; kiểm BA=−AB. <a href="../luyen-tap/#thpt-g12-b07-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b07-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.6. Tìm đỉnh còn thiếu của lăng trụ
     
     ??? tip "Cách tự sửa"
     
-        Kiểm lại BB′,CC′ cùng độ dời, không giả sử cạnh bên thẳng đứng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b07-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b07-p07).
+        Kiểm lại BB′,CC′ cùng độ dời, không giả sử cạnh bên thẳng đứng. <a href="../luyen-tap/#thpt-g12-b07-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b07-p07">luyện câu khác rồi quay lại</a>.
 
-    [Core Bài 7](../luyen-tap/#b07-core) · [Luyện tập và Tự luận](../luyen-tap/#b07-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b07-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b07-core">Core Bài 7</a> · <a href="../luyen-tap/#b07-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b07-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 60–66.*
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 7 (trang in 60–66). SBT cùng bộ được kiểm qua biên bản nguồn lịch sử; trang in không đồng nhất chỉ số PDF.</p>
