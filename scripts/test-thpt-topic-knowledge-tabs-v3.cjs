@@ -32,6 +32,21 @@ function verifyTopicKnowledge(src,pages,label) {
  // and the dedicated exact-source Chromium/WebKit workflow validates behavior.
  const isGoldenDomTabs=label.replace(/\\/g,"/").endsWith("/cd01/kien-thuc.md") &&
    src.includes("data-topic01-knowledge-start");
+ const w1Match=label.replace(/\\/g,"/").match(/\/cd(0[2-5])\/kien-thuc\.md$/);
+ const isW1DomTabs=!!w1Match&&src.includes('data-topic-w1-source-start="kien-thuc"');
+ const w1Expected={"02":[4,16],"03":[4,12],"04":[5,18],"05":[4,17]};
+ if(isW1DomTabs){
+   const target=w1Expected[w1Match[1]];
+   const modules=[...src.matchAll(/^## (\d+)\. /gm)].map(x=>Number(x[1]));
+   const subtopic=[...src.matchAll(/^### (\d+)\.(\d+)\. /gm)];
+   assert.deepEqual(modules,Array.from({length:target[0]},(_,i)=>i+1),label+": all W1 knowledge modules must be present");
+   assert.equal(subtopic.length,target[1],label+": source-locked W1 outcome tabs must be complete");
+   const ui=fs.readFileSync(path.join(ROOT,"docs/assets/javascripts/thpt-topic-w1-golden-v1.js"),"utf8");
+   assert(ui.includes("dataset.topicW1ModuleTab")&&ui.includes("dataset.topicW1Subtab")&&
+     ui.includes('setAttribute("role","tab")')&&ui.includes("ArrowLeft")&&
+     ui.includes("ArrowRight")&&ui.includes("aria-selected")&&ui.includes("TOPIC_W1_GOLDEN_HOLD"),
+     label+": accepted W1 Golden DOM adapter/keyboard/fail-closed gate missing");
+ }
  if(isGoldenDomTabs){
    const modules=[...src.matchAll(/^## (\d+)\. /gm)].map(x=>Number(x[1]));
    const subtopic=[...src.matchAll(/^### (\d+)\.(\d+)\. /gm)];
@@ -43,12 +58,12 @@ function verifyTopicKnowledge(src,pages,label) {
      ui.includes("dataset.topic01Subtab")&&ui.includes('setAttribute("role","tab")')&&
      ui.includes("ArrowLeft")&&ui.includes("ArrowRight")&&ui.includes("aria-selected"),
      label+": actual Golden two-level accessible tab engine missing");
- }else{
+ }else if(!isW1DomTabs){
    assert(names.length>=2,label+": long Topic Knowledge needs at least two horizontal subtopic tabs");
    assert(names.every(Boolean)&&new Set(names).size===names.length,
      label+": missing or duplicate subtopic label");
  }
- const isGoldenNavigation=isGoldenDomTabs && src.includes('class="thpt-sgk-lesson-nav"');
+ const isGoldenNavigation=(isGoldenDomTabs||isW1DomTabs) && src.includes('class="thpt-sgk-lesson-nav"');
  const nav=src.match(isGoldenNavigation
    ? /<nav\b[^>]*class="[^"]*thpt-sgk-lesson-nav[^"]*"[^>]*>[\s\S]*?<\/nav>/
    : /<nav\b[^>]*class="[^"]*thpt-r4-topic-steps[^"]*"[^>]*>[\s\S]*?<\/nav>/);
@@ -77,7 +92,7 @@ function verifyTopicKnowledge(src,pages,label) {
  assert(!/href="[^"]*\/core\/"/i.test(nav[0]),label+": Topic must not add standalone Core");
  assert(!/^===\s*"(?:PED\d|D\d|SOURCE|REVIEW)/mi.test(src),
    label+": audit labels must not become learner tabs");
- return isGoldenDomTabs?11:names.length;
+ return isGoldenDomTabs?11:isW1DomTabs?w1Expected[w1Match[1]][1]:names.length;
 }
 function run(){
  const files=walk(DIR), counts=[];
