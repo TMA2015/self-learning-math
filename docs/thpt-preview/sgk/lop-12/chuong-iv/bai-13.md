@@ -66,13 +66,13 @@
     
     <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIV-B13-CURVES-R02.svg" alt="Đồ thị y=x và y=x³ trên [−1,1], hai vùng đổi đường trên tại 0."/><figcaption>Giữa −1 và 0, đường x³ cao hơn; giữa 0 và 1, đường x cao hơn. Tô riêng hai phần.</figcaption></figure>
     
-    **Vận dụng.** Tính diện tích giữa $y=x$ và $y=x^3$ trên [−1,1].
+    **Vận dụng.** Tính diện tích giữa $y=x^2$ và $y=2x$ trên [−1,3].
     
     <span data-ped-first-try="4" data-outcome-id="G12-CHIV-B13-O04" data-thpt-first-try-id="THPT-G12-B13-TRY04" hidden></span>
     
     ??? question "Đối chiếu"
     
-        **Lời giải:** Giao tại −1,0,1. Trên [−1,0], $x^3\ge x$; trên [0,1], $x\ge x^3$. Mỗi phần có diện tích 1/4, tổng 1/2.
+        **Lời giải:** Giao tại 0,2. Hiệu $x^2-2x$ dương trên [−1,0] và [2,3], âm giữa 0 và 2. Dùng nguyên hàm $x^3/3-x^2$; mỗi phần có diện tích 4/3 nên tổng 4.
     
     <span data-thpt-help-id="HELP-G12-B13-TRY04" hidden></span>
     
@@ -104,13 +104,13 @@
     
     <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIV-B13-SLICES-R02.svg" alt="Các lát vuông khi cạnh tăng từ 2 đến 4; mặt cắt vuông góc chiều x."/><figcaption>Mỗi lát có cạnh 2+x, diện tích (2+x)²; hình phối cảnh chỉ diễn tả vị trí lát.</figcaption></figure>
     
-    **Vận dụng.** Khối có mặt cắt vuông cạnh $2+x$ cm, $0\le x\le2$ cm. Tính V.
+    **Vận dụng.** Khối có mặt cắt vuông cạnh $3+x$ cm, $0\le x\le2$ cm. Tính V.
     
     <span data-ped-first-try="6" data-outcome-id="G12-CHIV-B13-O06" data-thpt-first-try-id="THPT-G12-B13-TRY06" hidden></span>
     
     ??? question "Đối chiếu"
     
-        **Lời giải:** $S(x)=(2+x)^2$ cm², $V=[(2+x)^3/3]_0^2=56/3$ cm³.
+        **Lời giải:** $S(x)=(3+x)^2$ cm², $V=[(3+x)^3/3]_0^2=98/3$ cm³.
     
     <span data-thpt-help-id="HELP-G12-B13-TRY06" hidden></span>
     
@@ -142,13 +142,13 @@
     
     <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIV-B13-REVOLUTION-R02.svg" alt="Đường y=3x trên [0,1] quay quanh Ox sinh khối nón; bán kính tại x bằng 3x."/><figcaption>Quay đoạn đứng từ Ox tới đồ thị tạo đĩa, không phải đường tròn rỗng.</figcaption></figure>
     
-    **Vận dụng.** Quay miền dưới $y=3x$ trên [0,1] quanh Ox. Tính V.
+    **Vận dụng.** Quay miền dưới $y=4x$ trên [0,1] quanh Ox. Tính V.
     
     <span data-ped-first-try="8" data-outcome-id="G12-CHIV-B13-O08" data-thpt-first-try-id="THPT-G12-B13-TRY08" hidden></span>
     
     ??? question "Đối chiếu"
     
-        **Lời giải:** $V=\pi\int_0^1 9x^2 dx=3\pi$.
+        **Lời giải:** $V=\pi\int_0^1 16x^2 dx=16\pi/3$.
     
     <span data-thpt-help-id="HELP-G12-B13-TRY08" hidden></span>
     
@@ -275,6 +275,14 @@
     ### 3.12. Chỏm cầu từ lát cắt tròn
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B13-R02-12"><p><strong>Đề bài:</strong> Mặt cầu bán kính R=5 cm, tâm O; chỏm phía x từ 3 đến 5 cm. Tính thể tích.</p><p><strong>Phân tích:</strong> Từ phương trình cầu, bán kính lát bình phương bằng 25−x².</p><p><strong>Lời giải:</strong> \(V=\pi\int_3^5(25-x^2)dx=\pi[25x-x^3/3]_3^5=52\pi/3\) cm³.</p><p><strong>Kiểm lại:</strong> Bán kính tại x=5 bằng 0; chỏm nhỏ hơn nửa cầu.</p></div>
+
+    ### 3.13. Thặng dư của người sản xuất
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B13-R02-13"><p><strong>Đề bài:</strong> Hàm giá sẵn lòng bán \(p_s(q)=2+q\) nghìn đồng/đơn vị, giá thị trường 7 nghìn đồng/đơn vị, lượng trao đổi 5. Tính thặng dư sản xuất trong mô hình này.</p><p><strong>Phân tích:</strong> Đường giá thị trường nằm trên đường cung đến lượng cân bằng; chiều cao lát là \(7-p_s(q)\).</p><p><strong>Lời giải:</strong> \(S=\int_0^5(5-q)dq=[5q-q^2/2]_0^5=25/2\) nghìn đồng.</p><p><strong>Kiểm lại:</strong> Tam giác đáy 5, cao 5 có diện tích 25/2. Đây là thặng dư theo mô hình, không đồng nhất với lợi nhuận kế toán.</p></div>
+
+    ### 3.14. Thể tích nón lớn nhất khi đường sinh cố định
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B13-R02-14"><p><strong>Đề bài:</strong> Nón tròn xoay có đường sinh 6 cm. Tìm chiều cao h để thể tích lớn nhất.</p><p><strong>Phân tích:</strong> \(r^2+h^2=36\), \(0\le h\le6\) (hai đầu là giới hạn suy biến). Từ công thức nón suy bằng tích phân, viết thể tích chỉ theo h.</p><p><strong>Lời giải:</strong> \(V(h)=\frac{\pi}{3}(36h-h^3)\). \(V'(h)=\pi(12-h^2)\) đổi dấu từ dương sang âm tại \(h=2\sqrt3\). Hai đầu cho V=0. Vậy \(h=2\sqrt3\) cm, \(r=2\sqrt6\) cm và \(V_{\max}=16\sqrt3\pi\) cm³.</p><p><strong>Kiểm lại:</strong> \(r^2+h^2=24+12=36\); h nằm trong (0;6), đạo hàm đổi dấu đúng chiều cực đại.</p></div>
 
 === "Lỗi thường gặp"
 
