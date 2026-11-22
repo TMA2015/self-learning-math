@@ -676,9 +676,9 @@
       "level": 3,
       "stem": "Chứng minh u=(1,2,-1) vuông góc v=(2,-1,0) và song song w=(3,6,-3).",
       "answer": "u·v=0 và w=3u",
-      "solution": "u·v=2−2+0=0; w=3u. Cần thêm giao điểm để gọi hai đường thẳng vuông góc hình học.",
+      "solution": "u·v=2−2+0=0; w=3u. Hai đường thẳng nhận u,v làm chỉ phương vuông góc theo định nghĩa SGK, dù cắt nhau hay chéo nhau. Chỉ từ hướng không kết luận được chúng có giao điểm.",
       "rubric": [
-        "2đ tính dot và kiểm cùng phương đúng; 1đ kết luận hướng vuông góc; 1đ kết luận hướng song song; 1đ phân biệt hướng với quan hệ giao nhau hình học."
+        "2đ tính dot và kiểm cùng phương đúng; 1đ kết luận hướng vuông góc; 1đ kết luận hướng cùng phương; 1đ phân biệt vuông góc với điều kiện giao điểm (hai đường vuông góc vẫn có thể chéo nhau)."
       ],
       "rubric_label": "Rubric Written /5 (chấm theo từng bước) /5"
     },
@@ -1366,7 +1366,7 @@
         "**Quay lại tiền đề:** Tích vô hướng bằng 0, tích có hướng và định nghĩa hai vectơ không cùng phương.",
         "**Ví dụ chữa nhỏ:** Tính u·n với u=(1,2,0),n=(2,-1,0). → 0. Giải thích cơ sở: Hai hướng độc lập trong mặt phẳng xác định một pháp tuyến; không chọn tích có hướng bằng 0.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính tích có hướng rồi thử lại hai tích vô hướng bằng 0.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C01` rồi `THPT-G12-B14-P01`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B14-C01",
       "practice_item": "THPT-G12-B14-P01"
@@ -1381,7 +1381,7 @@
         "**Quay lại tiền đề:** Tích vô hướng; tọa độ hiệu M−M0.",
         "**Ví dụ chữa nhỏ:** Thay (1,2,3) vào x+2y−z−2. → 0. Giải thích cơ sở: M nằm trên (P) khi vectơ M0M vuông góc n; nhân vô hướng bằng 0 tạo phương trình bậc nhất.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Thế đúng điểm đã cho vào phương trình cuối để kiểm hệ số tự do.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C02` rồi `THPT-G12-B14-P02`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B14-C02",
       "practice_item": "THPT-G12-B14-P02"
@@ -1396,7 +1396,7 @@
         "**Quay lại tiền đề:** Hiệu tọa độ, hai hướng AB, AC, tích có hướng.",
         "**Ví dụ chữa nhỏ:** Kiểm A(0,0,1),B(1,0,1),C(0,1,1) thuộc z=1. → Đều đúng. Giải thích cơ sở: Hai vectơ AB và AC không song song nằm trên cùng mặt phẳng; AB×AC là pháp tuyến.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tìm hai hướng, tích có hướng, dùng công thức điểm–pháp tuyến và thử B,C.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C03` rồi `THPT-G12-B14-P03`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B14-C03",
       "practice_item": "THPT-G12-B14-P03"
@@ -1411,7 +1411,7 @@
         "**Quay lại tiền đề:** Hai vectơ không cùng phương, pháp tuyến, định nghĩa chứa một trục.",
         "**Ví dụ chữa nhỏ:** Vectơ n=(0,1,-2) có vuông góc Ox? → Có. Giải thích cơ sở: Mặt phẳng chứa mọi dịch chuyển theo hai hướng độc lập; n vuông góc cả hai.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Chuyển điều kiện song song/chứa trục thành hai hướng trước khi viết phương trình.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C04` rồi `THPT-G12-B14-P04`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B14-C04",
       "practice_item": "THPT-G12-B14-P04"
@@ -1426,7 +1426,7 @@
         "**Quay lại tiền đề:** Hai pháp tuyến và tích vô hướng.",
         "**Ví dụ chữa nhỏ:** n=(1,2,3),m=(2,4,6) có cùng phương? → Có. Giải thích cơ sở: Góc giữa hai mặt phẳng được đo qua góc nhọn của hai pháp tuyến; pháp tuyến cùng phương là hai mặt phẳng song song/trùng.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: So sánh n trước; kiểm một điểm nếu hai n cùng phương; dùng dot=0 để kết luận vuông góc.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C05` rồi `THPT-G12-B14-P05`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B14-C05",
       "practice_item": "THPT-G12-B14-P05"
@@ -1441,7 +1441,7 @@
         "**Quay lại tiền đề:** Trị tuyệt đối, căn bậc hai, vectơ pháp tuyến.",
         "**Ví dụ chữa nhỏ:** Chuẩn của n=(2,-2,1) bằng bao nhiêu? → 3. Giải thích cơ sở: Giá trị Ax0+By0+Cz0+D đo độ lệch có dấu; chia độ dài n để ra khoảng cách không âm.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Thay số → lấy trị tuyệt đối → chia chuẩn pháp tuyến; kiểm đơn vị và liệu điểm có nằm trên mặt.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C06` rồi `THPT-G12-B14-P06`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B14-C06",
       "practice_item": "THPT-G12-B14-P06"
@@ -1456,7 +1456,7 @@
         "**Quay lại tiền đề:** Khoảng cách từ tâm tới mặt phẳng và hệ thức Pythagoras trong tam giác vuông.",
         "**Ví dụ chữa nhỏ:** Nếu R=5 và h=4, r bằng bao nhiêu? → 3. Giải thích cơ sở: Mặt phẳng cách tâm cầu h nhỏ hơn R sẽ tạo đường tròn bán kính r bởi r²+h²=R².",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính khoảng cách tâm tới mặt phẳng trước, không đồng nhất R của cầu với r của thiết diện.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B14-C07` rồi `THPT-G12-B14-P07`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B14-C07",
       "practice_item": "THPT-G12-B14-P07"
@@ -1471,7 +1471,7 @@
         "**Quay lại tiền đề:** Cộng vectơ và tọa độ điểm M0+t u.",
         "**Ví dụ chữa nhỏ:** Tại t=0, M0+t u bằng gì? → M0. Giải thích cơ sở: Tham số t đo bao nhiêu lần vectơ hướng được cộng vào vị trí ban đầu.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Chọn M0 và u rồi viết đủ ba tọa độ theo cùng một t.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C01` rồi `THPT-G12-B15-P01`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B15-C01",
       "practice_item": "THPT-G12-B15-P01"
@@ -1486,7 +1486,7 @@
         "**Quay lại tiền đề:** Trừ tọa độ hai điểm và phương trình tham số.",
         "**Ví dụ chữa nhỏ:** AB nếu A=(1,2,3),B=(2,3,4)? → (1,1,1). Giải thích cơ sở: Hai điểm phân biệt tạo hướng AB, mọi điểm đường thẳng có dạng A+tAB.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính AB rồi viết tham số; kiểm A ở t=0 và B ở t=1.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C02` rồi `THPT-G12-B15-P02`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B15-C02",
       "practice_item": "THPT-G12-B15-P02"
@@ -1501,7 +1501,7 @@
         "**Quay lại tiền đề:** Quy tắc chia và ý nghĩa tham số x−x0=a t.",
         "**Ví dụ chữa nhỏ:** Có thể chia cho 0 trong chính tắc không? → Không. Giải thích cơ sở: Khử chung t chỉ khi thành phần hướng được đem chia khác 0; nếu một thành phần bằng 0, tọa độ đó là hằng.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Kiểm hướng trước khi chuyển; giữ một t chung hoặc điều kiện tọa độ cố định.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C03` rồi `THPT-G12-B15-P03`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B15-C03",
       "practice_item": "THPT-G12-B15-P03"
@@ -1516,7 +1516,7 @@
         "**Quay lại tiền đề:** Nghiệm phương trình bậc nhất và tính nhất quán ba tọa độ.",
         "**Ví dụ chữa nhỏ:** Để M=(2,4,3) thuộc d=(t,2t,3) thì t? → 2. Giải thích cơ sở: Thuộc đường thẳng khi có một giá trị t duy nhất (hoặc phù hợp) thỏa đồng thời cả ba phương trình.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Giải t từ một tọa độ có hệ số khác 0 rồi thay vào hai tọa độ còn lại.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C04` rồi `THPT-G12-B15-P04`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B15-C04",
       "practice_item": "THPT-G12-B15-P04"
@@ -1529,9 +1529,9 @@
       "steps": [
         "**Nhận ra lỗi:** Từ u·v=0 kết luận ngay hai đường thẳng luôn cắt nhau trong không gian.",
         "**Quay lại tiền đề:** Tích vô hướng và vectơ cùng phương.",
-        "**Ví dụ chữa nhỏ:** (1,0,1)·(1,0,-1)=? → 0. Giải thích cơ sở: Điều kiện song song của hướng khác với vị trí hình học của hai đường thẳng; hướng vuông góc không đủ khẳng định hai đường thẳng cắt nhau.",
+        "**Ví dụ chữa nhỏ:** (1,0,1)·(1,0,-1)=? → 0. Giải thích cơ sở: Điều kiện song song của hướng khác với vị trí hình học của hai đường thẳng; tích vô hướng bằng 0 xác định hai đường vuông góc theo SGK, nhưng không đủ khẳng định chúng cắt nhau.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Phân biệt xét hướng và xét vị trí; nêu rõ kết luận đang dùng.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C05` rồi `THPT-G12-B15-P05`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B15-C05",
       "practice_item": "THPT-G12-B15-P05"
@@ -1546,7 +1546,7 @@
         "**Quay lại tiền đề:** Giải hệ ba tọa độ với hai tham số t,s và xét hướng.",
         "**Ví dụ chữa nhỏ:** d1 có z=0, d2 có z=1 có giao không? → Không. Giải thích cơ sở: Hai đường không cùng phương mà không có nghiệm chung trong ba phương trình thì chéo nhau; hình chiếu 2D không đủ.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Viết hai t,s khác nhau, giải hai tọa độ rồi bắt buộc kiểm tọa độ thứ ba.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C06` rồi `THPT-G12-B15-P06`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B15-C06",
       "practice_item": "THPT-G12-B15-P06"
@@ -1561,7 +1561,7 @@
         "**Quay lại tiền đề:** Thế phương trình tham số vào phương trình mặt phẳng.",
         "**Ví dụ chữa nhỏ:** (t,1,2t) thuộc x+z=6 khi t=? → 2. Giải thích cơ sở: Giao điểm tương ứng giá trị t thỏa cùng lúc điều kiện mặt phẳng và đường thẳng.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Thế đủ ba tọa độ, giải t, thay lại cả hai phương trình.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B15-C07` rồi `THPT-G12-B15-P07`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B15-C07",
       "practice_item": "THPT-G12-B15-P07"
@@ -1576,7 +1576,7 @@
         "**Quay lại tiền đề:** Tích vô hướng và chuẩn Euclid của vectơ.",
         "**Ví dụ chữa nhỏ:** |(1,0,0)·(-1,0,0)|=? → 1. Giải thích cơ sở: Góc giữa hai đường thẳng là góc không tù của hai hướng, nên dùng trị tuyệt đối tích vô hướng.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính dot, hai chuẩn rồi lấy arccos; kiểm góc trong [0°,90°].",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C01` rồi `THPT-G12-B16-P01`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B16-C01",
       "practice_item": "THPT-G12-B16-P01"
@@ -1591,7 +1591,7 @@
         "**Quay lại tiền đề:** Pháp tuyến mặt phẳng và vectơ chỉ phương đường thẳng.",
         "**Ví dụ chữa nhỏ:** sin góc đường–mặt khi u·n=0? → 0. Giải thích cơ sở: Góc đường–mặt là góc phụ (tổng 90°) với góc nhọn giữa đường thẳng và pháp tuyến; vì vậy dùng sin chứ không dùng cos.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tách hướng của đường và pháp tuyến của mặt; áp dụng sin và kiểm giới hạn.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C02` rồi `THPT-G12-B16-P02`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B16-C02",
       "practice_item": "THPT-G12-B16-P02"
@@ -1606,7 +1606,7 @@
         "**Quay lại tiền đề:** Pháp tuyến của mỗi mặt và tích vô hướng.",
         "**Ví dụ chữa nhỏ:** Góc hai mặt khi pháp tuyến vuông góc? → 90°. Giải thích cơ sở: Góc nhọn giữa hai mặt phẳng bằng góc nhọn giữa các pháp tuyến, khác với góc đường–mặt.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Đọc hệ số của hai phương trình mặt phẳng rồi dùng cos chuẩn có trị tuyệt đối.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C03` rồi `THPT-G12-B16-P03`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B16-C03",
       "practice_item": "THPT-G12-B16-P03"
@@ -1621,7 +1621,7 @@
         "**Quay lại tiền đề:** Quan hệ u·n=0 và u∥n.",
         "**Ví dụ chữa nhỏ:** Đường u song song mặt khi u·n=? → 0. Giải thích cơ sở: u·n=0 nghĩa là hướng đường song song mặt (hoặc nằm trong mặt); u∥n nghĩa là đường vuông góc mặt.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Vẽ sơ đồ hướng và pháp tuyến, dùng dot và kiểm điểm khi cần.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C04` rồi `THPT-G12-B16-P04`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B16-C04",
       "practice_item": "THPT-G12-B16-P04"
@@ -1636,7 +1636,7 @@
         "**Quay lại tiền đề:** Tam giác vuông, độ cao so với đoạn đường, pháp tuyến sàn.",
         "**Ví dụ chữa nhỏ:** Đường hướng (6,0,8) dài mấy? → 10. Giải thích cơ sở: Độ cao là thành phần vuông góc sàn, nên sinθ=độ tăng cao/độ dài đường dốc.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Dùng độ tăng cao thay cho thành phần ngang, và kiểm sin≤1.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B16-C05` rồi `THPT-G12-B16-P05`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B16-C05",
       "practice_item": "THPT-G12-B16-P05"
@@ -1651,7 +1651,7 @@
         "**Quay lại tiền đề:** Khoảng cách giữa hai điểm và chuẩn vectơ.",
         "**Ví dụ chữa nhỏ:** R=3 thì R² bằng mấy? → 9. Giải thích cơ sở: Mặt cầu gồm các điểm M cách tâm C đúng R; bình phương hai vế là phương trình ba bình phương.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Viết bình phương khoảng cách CM=R và kiểm lại tâm, R.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C01` rồi `THPT-G12-B17-P01`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B17-C01",
       "practice_item": "THPT-G12-B17-P01"
@@ -1666,7 +1666,7 @@
         "**Quay lại tiền đề:** Hằng đẳng thức hoàn chỉnh bình phương.",
         "**Ví dụ chữa nhỏ:** (x−2)² triển khai thành gì? → x²−4x+4. Giải thích cơ sở: Hoàn chỉnh mỗi bình phương để đưa phương trình thành tổng bình phương bằng R².",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Nhóm theo biến, hoàn chỉnh bình phương và kiểm dấu/radius trước khi kết luận.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C02` rồi `THPT-G12-B17-P02`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B17-C02",
       "practice_item": "THPT-G12-B17-P02"
@@ -1681,7 +1681,7 @@
         "**Quay lại tiền đề:** Khoảng cách hai điểm, bình phương số dương.",
         "**Ví dụ chữa nhỏ:** R²=9 và CM²=4 thì M ở đâu? → Trong. Giải thích cơ sở: So sánh CM² với R² tránh khai căn không cần thiết.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính CM² và so với R²; kết luận đúng từ.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C03` rồi `THPT-G12-B17-P03`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B17-C03",
       "practice_item": "THPT-G12-B17-P03"
@@ -1696,7 +1696,7 @@
         "**Quay lại tiền đề:** Trung điểm và khoảng cách giữa hai điểm.",
         "**Ví dụ chữa nhỏ:** Trung điểm của (0,0,0) và (2,4,0)? → (1,2,0). Giải thích cơ sở: Tâm là trung điểm đoạn AB, bán kính bằng nửa AB.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính trung điểm, tính AB² rồi chia 4 để được R², lập phương trình.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C04` rồi `THPT-G12-B17-P04`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B17-C04",
       "practice_item": "THPT-G12-B17-P04"
@@ -1711,7 +1711,7 @@
         "**Quay lại tiền đề:** Khoảng cách từ điểm đến mặt phẳng và Pythagoras.",
         "**Ví dụ chữa nhỏ:** Nếu h>R, mặt phẳng cắt cầu không? → Không. Giải thích cơ sở: So sánh khoảng cách h từ tâm đến mặt phẳng với R: h<R cắt theo đường tròn, h=R tiếp xúc, h>R không giao.",
         "**Tự làm lại có dẫn:** trước khi tính, nói thành lời: Tính h từ pháp tuyến và tâm; so sánh với R, rồi mới tính bán kính thiết diện nếu cần.",
-        "**Quay lại cùng outcome:** làm lại `THPT-G12-B17-C05` rồi `THPT-G12-B17-P05`; xem đáp án/HELP không tự tạo Mastery."
+        "**Quay lại cùng nội dung:** làm lại câu Core được liên kết bên dưới rồi câu Luyện tập được liên kết bên dưới; tự làm trước khi đối chiếu; xem lời giải không chứng minh đã nắm vững."
       ],
       "return_item": "THPT-G12-B17-C05",
       "practice_item": "THPT-G12-B17-P05"
