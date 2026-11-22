@@ -181,7 +181,7 @@ Cho f(x)=x² trên D=[−4,−1]. Hàm tăng hay giảm trên D? Tìm giá trị
 
 **Đáp án:** Giảm; lớn nhất 16 ở −4, nhỏ nhất 1 ở −1.
 
-Với −4≤x<y≤−1 đều âm, |x|>|y| nên x²>y². Hàm giảm trên chính đoạn D; hai đầu mút lần lượt cho 16 và 1.
+Với −4≤x&lt;y≤−1 đều âm, |x|>|y| nên x²>y². Hàm giảm trên chính đoạn D; hai đầu mút lần lượt cho 16 và 1.
 
 </details>
 
@@ -195,7 +195,7 @@ Chứng minh f(x)=−2x+7 nghịch biến trên ℝ mà không dùng đạo hàm
 
 **Đáp án:** Nghịch biến nghiêm ngặt.
 
-Với x₁<x₂, f(x₂)−f(x₁)=−2(x₂−x₁)<0, suy ra f(x₂)<f(x₁). Đây là chứng minh cho mọi cặp, không chỉ hai điểm thử.
+Với x₁&lt;x₂, f(x₂)−f(x₁)=−2(x₂−x₁)&lt;0, suy ra f(x₂)&lt;f(x₁). Đây là chứng minh cho mọi cặp, không chỉ hai điểm thử.
 
 </details>
 
@@ -433,9 +433,9 @@ Từ f(x)=x−2, g(x)=|f(x)|. Đỉnh hình chữ V ở đâu? Nửa dưới tr�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Đỉnh (2,0); phần f<0 phản xạ lên phía trên Ox.
+**Đáp án:** Đỉnh (2,0); phần f&lt;0 phản xạ lên phía trên Ox.
 
-Lấy |y| giữ y≥0 và đổi dấu y<0; đồ thị y=|x−2| không có tung độ âm, nghiệm bằng0 tại x=2.
+Lấy |y| giữ y≥0 và đổi dấu y&lt;0; đồ thị y=|x−2| không có tung độ âm, nghiệm bằng0 tại x=2.
 
 </details>
 
@@ -565,7 +565,7 @@ Cho f(x)=(x+2)² nếu x<−1, và f(x)=3−x nếu x≥−1. Tính f(−2), f(�
 
 **Đáp án:** f(−2)=0, f(−1)=4; chấm rỗng(−1,1), chấm đặc(−1,4); có bước nhảy.
 
-Nhánh trái x<−1 cho f(−2)=0 và khi tiến tới −1 thì (x+2)² tiến đến1, nhưng không lấy điểm(−1,1). Nhánh phải có dấu ≥ nên f(−1)=3−(−1)=4 là điểm đặc. Hai nhánh không nối tại cùng y nên bị nhảy.
+Nhánh trái x&lt;−1 cho f(−2)=0 và khi tiến tới −1 thì (x+2)² tiến đến1, nhưng không lấy điểm(−1,1). Nhánh phải có dấu ≥ nên f(−1)=3−(−1)=4 là điểm đặc. Hai nhánh không nối tại cùng y nên bị nhảy.
 
 **Rubric tự đối chiếu:** 7 điểm: chọn đúng nhánh ở −2 (1đ), tính 0 (1đ), chọn đúng nhánh tại −1 và tính 4 (2đ), nêu đúng điểm mở (1đ), điểm đóng (1đ), giải thích bước nhảy (1đ).
 
