@@ -414,7 +414,8 @@ jobs:
           set -euo pipefail
           git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/topic-w3-scope.txt"
           node scripts/test-thpt-release-impact.cjs --self-test
-          env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/topic-w3-scope.txt" | grep -q '^impact=SCOPED_TOPIC_W3
+          env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/topic-w3-scope.txt" > "$RUNNER_TEMP/topic-w3-classified.txt"
+          grep -Fxq "impact=SCOPED_TOPIC_W3" "$RUNNER_TEMP/topic-w3-classified.txt"
           node --check docs/assets/javascripts/thpt-topic-w3-golden-v1.js
           git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
           python3 scripts/test-thpt-topic-w3-source-locked.py
