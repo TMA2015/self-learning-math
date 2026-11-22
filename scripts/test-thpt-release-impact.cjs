@@ -115,7 +115,8 @@ const W3_EXACT_SCOPE_FILES=new Set([
  "scripts/test-thpt-topic-w3-golden-browser.py",
  "scripts/test-thpt-topic-w3-source-locked.py",
  "scripts/test-thpt-release-impact.cjs",
- ".github/workflows/deploy.yml"
+ ".github/workflows/deploy.yml",
+ ".github/workflows/thpt-deploy-scope-safety-qa.yml"
 ]);
 const W3_SOURCE_HEADS={
  "12":"f773f2622c88bd3e3a1e0137613846a83b3e6629",
