@@ -168,11 +168,16 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    assert.equal(await page.locator("[data-thpt-search-only]:visible").count(),0);
    await open("chuyen-de/");
    const topic=await query("chuyên đề 1",1);
-   assert((await topic.first().getAttribute("href")).endsWith("ham-so/kien-thuc/"));
+   assert((await topic.first().getAttribute("href")).endsWith("cd01/kien-thuc/"),"CĐ01 must be the owner-approved logic/set learning path");
    await query("chuyen de 01",1);
-   await query("hàm số",1);
-   await query("ham so",1);
-   await query("đại số",1);
+   await query("mệnh đề",1);
+   await query("menh de",1);
+   await query("tập hợp",1);
+   await query("tap hop",1);
+   await query("logic",1);
+   await query("hàm số",0); // legacy technical sample is not a published topic
+   await query("ham so",0);
+   assert.equal(await page.locator('.topic01-legacy-note a[href*="ham-so/kien-thuc/"]').count(),1,"Preserve technical sample deep link");
    await query("chuyên đề 2",0);
    await query("đạo hàm",0); // Not published: placeholder must not imply otherwise
    assert.equal(await page.locator("[data-thpt-filter-input]").count(),1);
