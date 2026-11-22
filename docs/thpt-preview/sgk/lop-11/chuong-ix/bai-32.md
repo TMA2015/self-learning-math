@@ -26,7 +26,7 @@
 
     ### 1.2. Căn bậc hai
     
-    Rational hoá thương sai phân của $\sqrt{x}$ bằng nhân liên hợp, giới hạn tại x>0 có mẫu $2\sqrt{x}$. Điểm x=0 có giá trị hàm nhưng không có đạo hàm hai phía hữu hạn.
+    Hữu tỉ hóa thương sai phân của $\sqrt{x}$ bằng nhân liên hợp, giới hạn tại x>0 có mẫu $2\sqrt{x}$. Điểm x=0 có giá trị hàm nhưng không có đạo hàm hai phía hữu hạn.
     
     **Vận dụng.** Tính đạo hàm của $3\sqrt{x}$ tại x=9.
     
@@ -320,7 +320,7 @@
 
     ### 2.1. Đạo hàm của một số hàm số thường gặp
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Đạo hàm của một số hàm số thường gặp.</strong><p>Trên \(\mathbb R\), \((c)'=0\), \((x)'=1\), \((x^n)'=nx^{n-1}\) với n nguyên dương. Với \(x&gt;0\), \((\sqrt{x})'=1/(2\sqrt{x})\); nhân liên hợp trong thương sai phân tạo mẫu \(\sqrt{x+h}+\sqrt{x}\). Tại x=0 công thức không có nghĩa, hàm không có đạo hàm hai phía hữu hạn.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Đạo hàm của một số hàm số thường gặp.</strong><p>Trên \(\mathbb R\), \((c)'=0\), \((x)'=1\), \((x^n)'=nx^{n-1}\) với n nguyên dương. Với \(x\gt0\), \((\sqrt{x})'=1/(2\sqrt{x})\); nhân liên hợp trong thương sai phân tạo mẫu \(\sqrt{x+h}+\sqrt{x}\). Tại x=0 công thức không có nghĩa, hàm không có đạo hàm hai phía hữu hạn.</p></div>
 
     ### 2.2. Đạo hàm của tổng, hiệu, tích, thương
     
@@ -352,81 +352,81 @@
 
     ### 2.5. Đạo hàm của hàm số mũ và logarit
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Đạo hàm của hàm số mũ và logarit.</strong><p>Với cơ số a là hằng số, \(a&gt;0,a\ne1\), \((e^x)'=e^x\), \((a^x)'=a^x\ln a\) trên \(\mathbb R\); \((\ln x)'=1/x\), \((\log_a x)'=1/(x\ln a)\) khi x&gt;0. Vì \(\ln|x|=\ln x\) nếu x&gt;0, và \(\ln(-x)\) nếu x&lt;0, \((\ln|x|)'=1/x\) trên hai khoảng không chứa 0. Với u khả vi, \((e^u)'=u'e^u\), \((a^u)'=u'a^u\ln a\), \((\ln u)'=u'/u\) nếu u&gt;0, \((\log_a u)'=u'/(u\ln a)\) nếu u&gt;0; \((\ln|u|)'=u'/u\) nếu u≠0. Trong mô hình SGK pH(c)=−log₁₀c, c&gt;0 là giá trị số nồng độ tính bằng mol/L, đạo hàm đo độ nhạy của pH theo c; dấu âm cho thấy pH giảm khi c tăng. Đây là mô hình toán học, không phải hướng dẫn xử lý dung dịch.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Đạo hàm của hàm số mũ và logarit.</strong><p>Với cơ số a là hằng số, \(a\gt0,a\ne1\), \((e^x)'=e^x\), \((a^x)'=a^x\ln a\) trên \(\mathbb R\); \((\ln x)'=1/x\), \((\log_a x)'=1/(x\ln a)\) khi x&gt;0. Vì \(\ln|x|=\ln x\) nếu x&gt;0, và \(\ln(-x)\) nếu x&lt;0, \((\ln|x|)'=1/x\) trên hai khoảng không chứa 0. Với u khả vi, \((e^u)'=u'e^u\), \((a^u)'=u'a^u\ln a\), \((\ln u)'=u'/u\) nếu u&gt;0, \((\log_a u)'=u'/(u\ln a)\) nếu u&gt;0; \((\ln|u|)'=u'/u\) nếu u≠0. Trong mô hình SGK pH(c)=−log₁₀c, c&gt;0 là giá trị số nồng độ tính bằng mol/L, đạo hàm đo độ nhạy của pH theo c; dấu âm cho thấy pH giảm khi c tăng. Đây là mô hình toán học, không phải hướng dẫn xử lý dung dịch.</p></div>
 
 === "Ví dụ"
 
     ### 3.1. Quy tắc lũy thừa
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-01"><p><strong>Đề bài:</strong> \(f(x)=4x^5-3x^2+7\); tìm \(f'\).</p><p><strong>Phân tích:</strong> Dùng hệ số n; không chuyển thành 4x^4.</p><p><strong>Lời giải:</strong> \(f'=20x^4-6x\); số hằng 7 có đạo hàm 0.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-01"><p><strong>Đề bài:</strong> \(f(x)=4x^5-3x^2+7\); tìm \(f'\).</p><p><strong>Phân tích:</strong> Dùng hệ số n; không chuyển thành 4x^4.</p><p><strong>Lời giải:</strong> \(f'=20x^4-6x\); số hằng 7 có đạo hàm 0.</p><p><strong>Kiểm lại:</strong> Kiểm hệ số 5×4=20 và 2×(−3)=−6.</p></div>
 
     ### 3.2. Căn và miền
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-02"><p><strong>Đề bài:</strong> \(f(x)=2\sqrt{x}+x\); đạo hàm ở x&gt;0.</p><p><strong>Phân tích:</strong> Áp dụng \((\sqrt{x})'=1/(2\sqrt{x})\) và nhân 2.</p><p><strong>Lời giải:</strong> \(f'(x)=1/\sqrt{x}+1\) với x&gt;0; f xác định ở 0 nhưng công thức đạo hàm không có ở đó.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-02"><p><strong>Đề bài:</strong> \(f(x)=2\sqrt{x}+x\); đạo hàm ở x&gt;0.</p><p><strong>Phân tích:</strong> Áp dụng \((\sqrt{x})'=1/(2\sqrt{x})\) và nhân 2.</p><p><strong>Lời giải:</strong> \(f'(x)=1/\sqrt{x}+1\) với x&gt;0; f xác định ở 0 nhưng công thức đạo hàm không có ở đó.</p><p><strong>Kiểm lại:</strong> Hàm có giá trị tại x=0 nhưng thương sai phân một phía của căn không hữu hạn.</p></div>
 
     ### 3.3. Tích
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-03"><p><strong>Đề bài:</strong> \(f(x)=(x^2+2)(x-3)\); đạo hàm chưa khai triển.</p><p><strong>Phân tích:</strong> Hai cạnh cùng thay đổi; không chỉ lấy hai đạo hàm nhân nhau.</p><p><strong>Lời giải:</strong> \(f'=2x(x-3)+(x^2+2)\), hay \(3x^2-6x+2\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-03"><p><strong>Đề bài:</strong> \(f(x)=(x^2+2)(x-3)\); đạo hàm chưa khai triển.</p><p><strong>Phân tích:</strong> Hai cạnh cùng thay đổi; không chỉ lấy hai đạo hàm nhân nhau.</p><p><strong>Lời giải:</strong> \(f'=2x(x-3)+(x^2+2)\), hay \(3x^2-6x+2\).</p><p><strong>Kiểm lại:</strong> Khai triển đa thức rồi đạo hàm cho cùng kết quả.</p></div>
 
     ### 3.4. Thương
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-04"><p><strong>Đề bài:</strong> \(f(x)=(2x-1)/(x+2)\); tính f' và TXĐ.</p><p><strong>Phân tích:</strong> Tử số 2(x+2)-(2x-1)=5; mẫu bình phương.</p><p><strong>Lời giải:</strong> \(f'=5/(x+2)^2\), x≠-2.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-04"><p><strong>Đề bài:</strong> \(f(x)=(2x-1)/(x+2)\); tìm đạo hàm và tập xác định.</p><p><strong>Phân tích:</strong> Tử số 2(x+2)-(2x-1)=5; mẫu bình phương.</p><p><strong>Lời giải:</strong> \(f'=5/(x+2)^2\), x≠-2.</p><p><strong>Kiểm lại:</strong> Thử tại x=0 cho f′(0)=5/4; x=−2 bị loại.</p></div>
 
     ### 3.5. Hàm hợp lũy thừa
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-05"><p><strong>Đề bài:</strong> \(f(x)=(x^2+3x)^4\); tính f'.</p><p><strong>Phân tích:</strong> Đạo hàm ngoài 4u³, nhân u'=2x+3.</p><p><strong>Lời giải:</strong> \(f'=4(x^2+3x)^3(2x+3)\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-05"><p><strong>Đề bài:</strong> \(f(x)=(x^2+3x)^4\); tính f'.</p><p><strong>Phân tích:</strong> Đạo hàm ngoài 4u³, nhân u'=2x+3.</p><p><strong>Lời giải:</strong> \(f'=4(x^2+3x)^3(2x+3)\).</p><p><strong>Kiểm lại:</strong> Đạo hàm của lớp ngoài u⁴ cần nhân 2x+3.</p></div>
 
     ### 3.6. Tích và hợp
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-06"><p><strong>Đề bài:</strong> \(f(x)=x\sin(2x)\); tính f'.</p><p><strong>Phân tích:</strong> Áp tích; sin(2x) cần chain nhân 2.</p><p><strong>Lời giải:</strong> \(f'=\sin(2x)+2x\cos(2x)\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-06"><p><strong>Đề bài:</strong> \(f(x)=x\sin(2x)\); tính f'.</p><p><strong>Phân tích:</strong> Dùng quy tắc tích; đạo hàm sin(2x) cần nhân đạo hàm hàm trong là 2.</p><p><strong>Lời giải:</strong> \(f'=\sin(2x)+2x\cos(2x)\).</p><p><strong>Kiểm lại:</strong> Hai số hạng lần lượt do x và sin(2x) thay đổi.</p></div>
 
     ### 3.7. Cos hợp
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-07"><p><strong>Đề bài:</strong> \(f(x)=3\cos(4x)\); tính f'.</p><p><strong>Phân tích:</strong> Đạo hàm cos có dấu âm và hàm trong 4x có đạo hàm 4.</p><p><strong>Lời giải:</strong> \(f'=-12\sin(4x)\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-07"><p><strong>Đề bài:</strong> \(f(x)=3\cos(4x)\); tính f'.</p><p><strong>Phân tích:</strong> Đạo hàm cos có dấu âm và hàm trong 4x có đạo hàm 4.</p><p><strong>Lời giải:</strong> \(f'=-12\sin(4x)\).</p><p><strong>Kiểm lại:</strong> Hệ số cuối là 3·4=12, mang dấu âm.</p></div>
 
     ### 3.8. Tan với miền
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-08"><p><strong>Đề bài:</strong> \(f(x)=\tan(2x)\); đạo hàm và điều kiện.</p><p><strong>Phân tích:</strong> Không áp dụng ở tiệm cận tan.</p><p><strong>Lời giải:</strong> \(f'=2/\cos^2(2x)\) tại cos(2x)≠0 (x≠π/4+kπ/2).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-08"><p><strong>Đề bài:</strong> \(f(x)=\tan(2x)\); đạo hàm và điều kiện.</p><p><strong>Phân tích:</strong> Không áp dụng ở tiệm cận tan.</p><p><strong>Lời giải:</strong> \(f'=2/\cos^2(2x)\) tại cos(2x)≠0 (x≠π/4+kπ/2).</p><p><strong>Kiểm lại:</strong> Điểm cos(2x)=0 không thuộc miền; k là số nguyên.</p></div>
 
     ### 3.9. Cot với dấu
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-09"><p><strong>Đề bài:</strong> \(f(x)=\cot(3x)\); đạo hàm.</p><p><strong>Phân tích:</strong> Cot âm và chain nhân 3.</p><p><strong>Lời giải:</strong> \(f'=-3/\sin^2(3x)\) với sin(3x)≠0.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-09"><p><strong>Đề bài:</strong> \(f(x)=\cot(3x)\); đạo hàm.</p><p><strong>Phân tích:</strong> Đạo hàm cot mang dấu âm; hàm trong 3x có đạo hàm 3.</p><p><strong>Lời giải:</strong> \(f'=-3/\sin^2(3x)\) với sin(3x)≠0.</p><p><strong>Kiểm lại:</strong> Điều kiện sin(3x)≠0; kiểm dấu âm.</p></div>
 
     ### 3.10. Mũ e hợp
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-10"><p><strong>Đề bài:</strong> \(f(x)=e^{x^2+1}\); tính f'.</p><p><strong>Phân tích:</strong> e^u đạo hàm bằng chính e^u nhân u'.</p><p><strong>Lời giải:</strong> \(f'=2xe^{x^2+1}\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-10"><p><strong>Đề bài:</strong> \(f(x)=e^{x^2+1}\); tính f'.</p><p><strong>Phân tích:</strong> e^u đạo hàm bằng chính e^u nhân u'.</p><p><strong>Lời giải:</strong> \(f'=2xe^{x^2+1}\).</p><p><strong>Kiểm lại:</strong> Hệ số 2x có thể bằng 0 tại x=0, hàm vẫn khả vi.</p></div>
 
     ### 3.11. Mũ cơ số 3
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-11"><p><strong>Đề bài:</strong> \(f(x)=3^{2x}\); tính f'.</p><p><strong>Phân tích:</strong> Cơ số 3 đưa ln 3; chain nhân 2.</p><p><strong>Lời giải:</strong> \(f'=2\ln(3)\,3^{2x}\) với x∈ℝ.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-11"><p><strong>Đề bài:</strong> \(f(x)=3^{2x}\); tính f'.</p><p><strong>Phân tích:</strong> Hàm mũ cơ số 3 có hệ số ln 3; hàm trong 2x có đạo hàm 2.</p><p><strong>Lời giải:</strong> \(f'=2\ln(3)\,3^{2x}\) với x∈ℝ.</p><p><strong>Kiểm lại:</strong> Cơ số &gt;1 nên đạo hàm dương.</p></div>
 
     ### 3.12. Log tự nhiên
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-12"><p><strong>Đề bài:</strong> \(f(x)=\ln(4-x)\); f' trên miền.</p><p><strong>Phân tích:</strong> Miền đối số 4-x&gt;0; không bỏ dấu âm.</p><p><strong>Lời giải:</strong> \(f'=-1/(4-x)\) trên x&lt;4.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-12"><p><strong>Đề bài:</strong> \(f(x)=\ln(4-x)\); f' trên miền.</p><p><strong>Phân tích:</strong> Miền đối số 4-x&gt;0; không bỏ dấu âm.</p><p><strong>Lời giải:</strong> \(f'=-1/(4-x)\) trên x&lt;4.</p><p><strong>Kiểm lại:</strong> Dấu âm xuất phát từ (4−x)′=−1, x&lt;4.</p></div>
 
     ### 3.13. Log cơ số 2
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-13"><p><strong>Đề bài:</strong> \(f(x)=\log_2(3x+1)\); f' trên miền.</p><p><strong>Phân tích:</strong> Nhân đạo hàm đối số 3 và giữ ln2.</p><p><strong>Lời giải:</strong> \(f'=3/[(3x+1)\ln2]\) với x&gt;-1/3.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-13"><p><strong>Đề bài:</strong> \(f(x)=\log_2(3x+1)\); f' trên miền.</p><p><strong>Phân tích:</strong> Nhân đạo hàm đối số 3 và giữ ln2.</p><p><strong>Lời giải:</strong> \(f'=3/[(3x+1)\ln2]\) với x&gt;-1/3.</p><p><strong>Kiểm lại:</strong> Điều kiện 3x+1&gt;0; cơ số 2 giữ nguyên.</p></div>
 
     ### 3.14. Quy tắc tích lẫn mũ
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-14"><p><strong>Đề bài:</strong> \(f(x)=(x+1)e^{-x}\); tính f'.</p><p><strong>Phân tích:</strong> Đạo hàm của e^{-x} mang dấu âm; rồi áp tích.</p><p><strong>Lời giải:</strong> \(f'=e^{-x}-(x+1)e^{-x}=-xe^{-x}\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-14"><p><strong>Đề bài:</strong> \(f(x)=(x+1)e^{-x}\); tính f'.</p><p><strong>Phân tích:</strong> Đạo hàm của e^{-x} mang dấu âm; rồi áp tích.</p><p><strong>Lời giải:</strong> \(f'=e^{-x}-(x+1)e^{-x}=-xe^{-x}\).</p><p><strong>Kiểm lại:</strong> Tại x=0, hai số hạng triệt tiêu; đạo hàm bằng 0.</p></div>
 
     ### 3.15. Thương của hai hàm
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-15"><p><strong>Đề bài:</strong> \(f(x)=\sin x/(x^2+1)\); tính f'.</p><p><strong>Phân tích:</strong> Mẫu luôn &gt;0, trừ tử hai tích đúng thứ tự.</p><p><strong>Lời giải:</strong> \(f'=[(x^2+1)\cos x-2x\sin x]/(x^2+1)^2\) với mọi x.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-15"><p><strong>Đề bài:</strong> \(f(x)=\sin x/(x^2+1)\); tính f'.</p><p><strong>Phân tích:</strong> Mẫu luôn &gt;0, trừ tử hai tích đúng thứ tự.</p><p><strong>Lời giải:</strong> \(f'=[(x^2+1)\cos x-2x\sin x]/(x^2+1)^2\) với mọi x.</p><p><strong>Kiểm lại:</strong> Mẫu x²+1 dương với mọi x.</p></div>
 
     ### 3.16. Điều kiện log hợp
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-16"><p><strong>Đề bài:</strong> \(f(x)=\ln(x^2-4)\), tìm miền và f'.</p><p><strong>Phân tích:</strong> x²−4 dương ngoài [-2,2], không dùng ở -2&lt;x&lt;2.</p><p><strong>Lời giải:</strong> Miền x&lt;-2 hoặc x&gt;2; f'=2x/(x^2-4) chỉ trên miền đó.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-16"><p><strong>Đề bài:</strong> \(f(x)=\ln(x^2-4)\), tìm miền và f'.</p><p><strong>Phân tích:</strong> x²−4 dương ngoài [-2,2], không dùng ở -2&lt;x&lt;2.</p><p><strong>Lời giải:</strong> Miền x&lt;-2 hoặc x&gt;2; f'=2x/(x^2-4) chỉ trên miền đó.</p><p><strong>Kiểm lại:</strong> Không kéo dài biểu thức đạo hàm qua −2,2 dù phân thức có thể tính tại các điểm bên trong khoảng.</p></div>
 
     ### 3.17. Hàm hợp căn
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-17"><p><strong>Đề bài:</strong> \(f(x)=\sqrt{5x+1}\); f' trên miền thích hợp.</p><p><strong>Phân tích:</strong> f có giá trị ở x=-1/5 nhưng không có đạo hàm hữu hạn hai phía.</p><p><strong>Lời giải:</strong> \(f'=5/[2\sqrt{5x+1}]\) tại x&gt;-1/5.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-17"><p><strong>Đề bài:</strong> \(f(x)=\sqrt{5x+1}\); f' trên miền thích hợp.</p><p><strong>Phân tích:</strong> f có giá trị ở x=-1/5 nhưng không có đạo hàm hữu hạn hai phía.</p><p><strong>Lời giải:</strong> \(f'=5/[2\sqrt{5x+1}]\) tại x&gt;-1/5.</p><p><strong>Kiểm lại:</strong> Tại điểm biên, hàm gốc xác định nhưng không có đạo hàm hai phía hữu hạn.</p></div>
 
     ### 3.18. Trộn tan và cot
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-18"><p><strong>Đề bài:</strong> \(f(x)=\tan x-\cot x\); tính đạo hàm và miền.</p><p><strong>Phân tích:</strong> Trừ cot làm hai dấu âm thành dấu cộng.</p><p><strong>Lời giải:</strong> \(f'=1/\cos^2x+1/\sin^2x\) tại sin x≠0 và cos x≠0.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B32-18"><p><strong>Đề bài:</strong> \(f(x)=\tan x-\cot x\); tính đạo hàm và miền.</p><p><strong>Phân tích:</strong> Trừ cot làm hai dấu âm thành dấu cộng.</p><p><strong>Lời giải:</strong> \(f'=1/\cos^2x+1/\sin^2x\) tại sin x≠0 và cos x≠0.</p><p><strong>Kiểm lại:</strong> Cả sin x và cos x phải khác 0.</p></div>
 
     ### 3.19. Logarit trị tuyệt đối trên cả hai phía
     
@@ -438,7 +438,7 @@
 
     ### 3.21. Tìm tốc độ lớn nhất của dao động
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B32-R02-21"><p><strong>Đề bài:</strong> Tọa độ \(s(t)=9+0,6\sin(3\pi t)\) cm. Tìm vận tốc và tốc độ lớn nhất khi t≥0.</p><p><strong>Phân tích:</strong> Dùng hàm hợp; \(|\cos z|\le1\) giúp chặn tốc độ.</p><p><strong>Lời giải:</strong> \(v=1,8\pi\cos(3\pi t)\) cm/s. Tốc độ lớn nhất \(1,8\pi\) cm/s, đạt khi \(t=k/3\) (k nguyên không âm).</p><p><strong>Kiểm lại:</strong> Thời điểm 0 nằm trong mô hình nên cận trên đạt được (xét vận tốc từ phía thời gian mô hình hoặc công thức mở rộng).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B32-R02-21"><p><strong>Đề bài:</strong> Tọa độ \(s(t)=9+0,6\sin(3\pi t)\) cm. Tìm vận tốc và tốc độ lớn nhất khi t≥0.</p><p><strong>Phân tích:</strong> Dùng hàm hợp; \(|\cos z|\le1\) giúp chặn tốc độ.</p><p><strong>Lời giải:</strong> \(v=1,8\pi\cos(3\pi t)\) cm/s. Tốc độ lớn nhất \(1,8\pi\) cm/s, đạt khi \(t=k/3\) (k nguyên không âm).</p><p><strong>Kiểm lại:</strong> Chẳng hạn tại t=1/3 s (nằm trong khoảng t>0), cos bằng −1, tốc độ đạt cận trên. Vận tốc lớn nhất dương cũng đạt tại t=2/3 s.</p></div>
 
     ### 3.22. Vận tốc khi về mặt đất
     
