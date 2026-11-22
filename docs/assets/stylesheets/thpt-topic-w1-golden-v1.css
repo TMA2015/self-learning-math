@@ -133,7 +133,7 @@ body [data-topic-w1-knowledge] details.question>summary{background-color:transpa
 body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question{background-color:#202e48!important;border-color:#465978!important;color:#dce6fc!important}
 body[data-md-color-scheme="slate"] [data-topic-w1-knowledge] details.question>summary{color:#e2ebff!important}
 
-/* Owner P2 screenshots: horizontal Golden tabs, distinct 3+1 boxes, SGK applications. */
+/* Owner P2: horizontal Golden tabs and distinct 3+1 boxes. */
 body .md-typeset.topic-w1-knowledge .topic01-knowledge-layout nav.thpt-r4-knowledge-tabs{
  display:flex!important;flex-wrap:nowrap!important;grid-template-columns:none!important;
  width:100%;max-width:100%;overflow-x:auto!important;overflow-y:hidden!important;gap:8px
@@ -151,13 +151,8 @@ body[data-md-color-scheme="slate"] .md-typeset.topic-w1-knowledge .topic01-knowl
 body[data-md-color-scheme="slate"] .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab.is-active{
  background:#3457bd!important;border-color:#5976d9!important;color:white!important
 }
-body .topic-w1-knowledge .topic-w1-application{
- border:1px solid #d9e4f4;border-radius:12px;background:#f8faff;
- padding:14px 18px;margin:14px 0;max-width:100%;min-width:0
-}
-body .topic-w1-knowledge .topic-w1-application>p:first-child{margin-top:0;font-weight:700;color:#263e73}
-body .topic-w1-knowledge .topic-w1-application>details.question{margin:10px 0 0;max-width:100%}
-body[data-md-color-scheme="slate"] .topic-w1-knowledge .topic-w1-application{background:#202e48;border-color:#465978;color:#dce6fc}
+/* Golden CĐ01 does not put a container around Vận dụng; keep its existing
+   p + prompt + details.question in the normal white Knowledge panel. */
 body .topic-w1-knowledge [data-topic-w1-callout]{margin:14px 0}
 body .topic-w1-knowledge details.question>summary::before{
  content:"▶"!important;-webkit-mask:none!important;mask:none!important;
