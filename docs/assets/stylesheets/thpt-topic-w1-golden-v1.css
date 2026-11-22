@@ -103,3 +103,15 @@ body [data-topic-w1-callout="formula"]{background-color:transparent!important}
 body[data-md-color-scheme="slate"] [data-topic-w1-callout="concept"]{background-color:#193d36!important;border-color:#447e70!important;border-left-color:#76dfc7!important;color:#e9fff7!important}
 body[data-md-color-scheme="slate"] [data-topic-w1-callout="rule"]{background-color:#203551!important;border-color:#45658a!important;border-left-color:#8cb4ed!important;color:#ecf5ff!important}
 body[data-md-color-scheme="slate"] [data-topic-w1-callout="recap"]{background-color:#4a3a25!important;border-color:#9e7d39!important;border-left-color:#d6aa49!important;color:#fff3d5!important}
+
+/* Release regression G-R02: exact pixel-locked approved SGK/CĐ01 tab dimensions.
+ * Existing SGK-specific selectors have unusually high specificity; restrict
+ * the override to the four W1 Topic canvases (never global tabs/SGK). */
+body .topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs .thpt-r4-knowledge-tab{
+ font-size:15px!important;height:44px!important;min-height:44px!important
+}
+@media(max-width:640px){
+ body .topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs .thpt-r4-knowledge-tab{
+  font-size:14px!important;height:44px!important;min-height:44px!important
+ }
+}
