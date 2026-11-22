@@ -8,12 +8,12 @@ AUTHOR_SELF_QA_RECEIPT: SIGNED_ON_CURRENT_G11_CHVII_B22_B27_R04_SOURCE_SHA
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: 6e13b237c2c31c79e5d9ed18170fe7b3783a38d7
+SOURCE_BLOB: c3b4ccabd2701999fe3a59350214bc1b2d668e07
 S1_RECEIPT: OWNER_ORIGINAL_SGK_SBT_TOAN11_T2_HISTORICAL_DIRECT_IMAGE_20261102_NO_NEW_FRESH_PDF_PAGE_SCAN
-OUTCOME_AUDIT: 33_REGISTERED_32_LESSON_PLUS_ONE_INTEGRATED_95_UNIQUE_TEACHING_IDS
-MATH_VERIFICATION: 40_CURRENT_REASONED_WORKED_GEOMETRY_EXAMPLES_SGKSCOPE_REAL_CONDITIONS_AND_EXISTING_72_HISTORICAL_PRE_R04_NUMERIC_PROBES_NOT_REISSUED
-PED_VERIFICATION: 6_ORDERED_GOLDEN_LESSONS_32_FIRST_TRY_32_HIDDEN_COMPARISONS_32_LOCAL_D6_6_ORIGINAL_SVG
-CANONICAL_Q15: 95_UNIQUE_51_ORIGINAL_CP_APPLICATION_12_ORIGINAL_WRITTEN_32_UNSCORED_FIRST_TRY
+OUTCOME_AUDIT: 33_REGISTERED_32_LESSON_PLUS_ONE_INTEGRATED_96_UNIQUE_TEACHING_IDS
+MATH_VERIFICATION: 41_REASONED_WORKED_GEOMETRY_EXAMPLES_PLUS_CURRENT_B27_SQUARE_RECTANGLE_DISTANCE_ANGLE_VOLUME_CHECK_PRIOR_72_PROBES_HISTORICAL_ONLY
+PED_VERIFICATION: 6_ORDERED_GOLDEN_LESSONS_33_FIRST_TRY_33_HIDDEN_COMPARISONS_33_LOCAL_D6_6_ORIGINAL_SVG
+CANONICAL_Q15: 96_UNIQUE_51_ORIGINAL_CP_APPLICATION_12_ORIGINAL_WRITTEN_33_UNSCORED_FIRST_TRY
 ASSESSMENT_Q16: 33_PRIVATE_RD1_OWNER_HELD_18_PUBLIC_REPLAY_NOT_OFFICIAL_READINESS_NO_MASTERY
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -30,7 +30,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## S1 original source and exact latest student SHA
 
-One canonical source bundle `6e13b237c2c31c79e5d9ed18170fe7b3783a38d7` inventories 17 existing components, including original B22–B27 six learner Git blobs `bb0944b4fa0070cd0ba44416e88fccdec56693c3`, `49cf644456389157373f885e018d16cd21a72342`, `74fbd5720f37f110cd2dd04676425f06b2e0c015`, `f941b4edfc4be2a2047084430244b0d4ec4df5b1`, `dec9b2f748dfe39b09c4e7cb9d8ef348a29dcd19`, `ea25f68bf00549c663130e5ea991089db1f144bd`, original 51 C/P/Application frozen JS `4d656f2b8d952a2ad0be1c4298d065e0b8c95c88`, original 12 Written with /4 rubric `ef20f074dcd3972877f852c2bb075f6aa5362b9a`, six original SVG and chapter hub/end. Historical original SGK KNTT Toán 11 T2 114 pages SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, printed B22 27–30/B23 31–37/B24 38–43/B25 44–53/B26 54–60/B27 61–63; original SBT 126 pages SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`, printed B22 24–25/B23 26–28/B24 29–30/B25 31–34/B26 35–37/B27 38–40, solutions 86–102. Historical owner direct original PDF screenshot receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md`; no new original publisher final-print image scan on R04. Old R01 independent Academic/PED PASS uses historical v2.0 permanent sources and original `afc8ec03...` source, not current Delta-C R04. No false current NotebookLM independent PASS.
+One canonical source bundle `c3b4ccabd2701999fe3a59350214bc1b2d668e07` inventories 17 existing components, including original B22–B27 six learner Git blobs `bb0944b4fa0070cd0ba44416e88fccdec56693c3`, `49cf644456389157373f885e018d16cd21a72342`, `74fbd5720f37f110cd2dd04676425f06b2e0c015`, `f941b4edfc4be2a2047084430244b0d4ec4df5b1`, `dec9b2f748dfe39b09c4e7cb9d8ef348a29dcd19`, `e06bddefac10f1c4b380d624c1143d5635c73aa5`, original 51 C/P/Application frozen JS `4d656f2b8d952a2ad0be1c4298d065e0b8c95c88`, original 12 Written with /4 rubric `ef20f074dcd3972877f852c2bb075f6aa5362b9a`, six original SVG and chapter hub/end. Historical original SGK KNTT Toán 11 T2 114 pages SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, printed B22 27–30/B23 31–37/B24 38–43/B25 44–53/B26 54–60/B27 61–63; original SBT 126 pages SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`, printed B22 24–25/B23 26–28/B24 29–30/B25 31–34/B26 35–37/B27 38–40, solutions 86–102. Historical owner direct original PDF screenshot receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md`; no new original publisher final-print image scan on R04. Old R01 independent Academic/PED PASS uses historical v2.0 permanent sources and original `afc8ec03...` source, not current Delta-C R04. No false current NotebookLM independent PASS.
 
 ## Per-lesson current mathematical pedagogical and self-check audit
 
@@ -48,9 +48,9 @@ One canonical source bundle `6e13b237c2c31c79e5d9ed18170fe7b3783a38d7` inventori
 
 **Executed current-source QA** 6/6 Golden four-tab lessons, 32 unique FirstTry, 32 hidden comparisons each indented within `??? question`, 32 local targeted HELP and 24 original general HELP (56 total source HELP markers), 40 distinct worked IDs, six original figure references, one SGK footer each, balanced MathJax delimiters, no raw exposed display math, no false local Knowledge sections, 74 identical-link/target relative Markdown anchors rewritten to semantic HTML (11+12+12+14+13+12). Prior candidate 126 structural and 72 numeric checks applied to previous candidate SHA and are not claimed rerun after these narrowly scoped R04 presentation/math-method clarity changes. No browser AP, actual MathJax raster or independent official readiness simulated.
 
-## ITEM_OUTCOME_ROLE_MATRIX — exact 95 unique student teaching items
+## ITEM_OUTCOME_ROLE_MATRIX — exact 96 unique student teaching items
 
-Original 63 `PUBLIC_ITEM_IDS` frozen: 51 original C/P/Application in original JS plus 12 Written/Anchor in original shared library. Added 32 author Knowledge unscored TRY IDs; total **95 unique canonical teaching question IDs**, one source stem and answer each. All map to 33 original outcomes. 40 worked example annotation IDs are distinct instructional examples, not multiplied as Q15 public assessment items.
+Original 63 `PUBLIC_ITEM_IDS` frozen: 51 original C/P/Application in original JS plus 12 Written/Anchor in original shared library. Added 33 author Knowledge unscored TRY IDs; total **96 unique source-owned pedagogical teaching IDs**, one source stem and answer each. All map to 33 original outcomes. 40 worked example annotation IDs are distinct instructional examples, not multiplied as Q15 public assessment items.
 
 | ITEM_ID | OUTCOME_ID | PLACEMENT | ROLE |
 |---|---|---|---|
@@ -149,6 +149,7 @@ Original 63 `PUBLIC_ITEM_IDS` frozen: 51 original C/P/Application in original JS
 | THPT-G11-B27-TRY03 | G11-B27-BOX_VOLUME | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 | THPT-G11-B27-TRY04 | G11-B27-FRUSTUM_VOLUME | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 | THPT-G11-B27-TRY05 | G11-B27-VOLUME_APPLICATION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B27-TRY06 | G11-CHVII-INTEGRATED | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
@@ -157,29 +158,38 @@ One normative standard `SLM-THPT-QUALITY-ONE v3.2.0` in `prototypes/thpt/THPT_UN
 | Criterion | Current author academic and PED source verdict | Actual evidence / known limitation |
 |---|---|---|
 | Q01 | AUTHOR_SELF_VERIFIED | Correct KNTT Toán 11 Tập Hai chapter VII B22–B27 original owner historical SGK/SBT printed page-image scans and SHA. Primary content from historic source, current final print-image not rescanned this turn |
-| Q02 | AUTHOR_SELF_VERIFIED | 33 original outcomes; B22 4, B23 5, B24 5, B25 7, B26 6, B27 5 plus one integrated, covered by conceptual Knowledge, 95 mapped teaching IDs and full original frozen bank |
+| Q02 | AUTHOR_SELF_VERIFIED | 33 original registered outcomes have canonical original public coverage and 96 distinct teaching items; integrated original C01 preserved and new B27 TRY06 provides a true independent pre-Core skill-transfer attempt for that outcome. |
 | Q03 | AUTHOR_SELF_VERIFIED | Geometry definitions and necessary/sufficient conditions stated: angle between skew lines, 2 intersecting plane lines, perpendicular projection, plane/dihedral angles, skew distances, volume formulas |
-| Q04 | AUTHOR_SELF_VERIFIED | 40 current worked examples individually marked with task, chosen geometry method, proof/solution and check; source learning example counts 5+5+6+8+8+8 |
-| Q05 | AUTHOR_SELF_VERIFIED | 51 original source-locked Core/Practice/Application items in single frozen original JS; no changed stem/answer/solution, practice/application outcomes actually mapped |
+| Q04 | AUTHOR_SELF_VERIFIED | 41 source-owned reasoned worked examples (B22 5/B23 5/B24 6/B25 8/B26 8/B27 9), including new B27 EX3.9 solving orthogonal projection, point-plane distance, line-plane angle and pyramid volume. |
+| Q05 | AUTHOR_SELF_VERIFIED | 51 unchanged original C/P/Application +12 unchanged Written; one new concept-first B27 integrated FirstTry supports old integrated Core with real cross-concept practice, not one relabelled canonical item. |
 | Q06 | AUTHOR_SELF_VERIFIED | 12 original shared Written/Anchor questions with explicit /4 rubric, one original library unmodified and Anchor only a role label |
 | Q07 | AUTHOR_SELF_VERIFIED | 6 original SHA-locked SVGs show angle/skew, planes, projections, dihedral, shortest distances and volume; each original lesson adds reading cue rather than only decorative figure |
-| Q08 | AUTHOR_SELF_VERIFIED | 32 local cause-specific FirstTry Kiểm lỗi and original 24? general HELP counted 56 total; D6 returns to original bank rather than fabricating scoring or replacing explanation |
+| Q08 | AUTHOR_SELF_VERIFIED | 33 local FirstTry with exact hidden answers and targeted cause-specific D6 plus original 24 general HELP; B27 TRY06 links to original integrated C01 only after self-attempt. |
 | Q09 | AUTHOR_SELF_VERIFIED | Every lesson explains why geometry needs directional angles, perpendicular proofs, projection, wall planes, minimum distance and volume before formulas |
 | Q10 | AUTHOR_SELF_VERIFIED | Each outcome recalls plane geometry (Pythagoras, sine/cosine) and previous parallel lines/planes, distinguishing assumed versus proven perpendicular conditions |
 | Q11 | AUTHOR_SELF_VERIFIED | Geometric construction proof precedes static formula: common direction to measure skew angle, two intersecting lines for perpendicular plane, orthogonal projection and 1/3 pyramid volume |
 | Q12 | AUTHOR_SELF_VERIFIED | SVG figure captions teach what points/angles/planes signify, warn against interpreting perspective drawings as proofs and distinguish projection degeneration |
-| Q13 | AUTHOR_SELF_VERIFIED | Method selection checks noncollinear/truly intersecting lines, exact perpendicularity hypotheses, zero projection case, near/far distance and true perpendicular height not oblique side |
-| Q14 | AUTHOR_SELF_VERIFIED | 32 FirstTry before frozen Core with 32 voluntary hidden comparisons and matching 32 cause-specific D6 repairs; no revealed answer in source indentation audit |
-| Q15 | AUTHOR_SELF_VERIFIED | 95 unique teaching item IDs = 51 original Core/Practice/Application + 12 original Written +32 new source-owned unscored FirstTry, no duplicated original stem/answer |
+| Q13 | AUTHOR_SELF_VERIFIED | New B27 integrated example conditions: SA oblique is not true height; SO perpendicular plane, AO orthogonal projection of SA. Square a=6, OA=3√2, SA=√34 => SO=4, V=48 cm³; rectangular 8×6, OA=5, SA=13=>SO=12, V=192 cm³. Both tan angle ratios checked. |
+| Q14 | AUTHOR_SELF_VERIFIED | 33 separate Knowledge FirstTry preceding Core, all voluntary opt-in hidden comparison and cause-specific D6; integrated 33rd outcome now also has own pre-Core TRY06, not only original Core C01. |
+| Q15 | AUTHOR_SELF_VERIFIED | 96 unique source-owned teaching IDs: unchanged 51 original C/P/Application and 12 Written, plus 33 distinct unscored FirstTry including original-learner-only B27 TRY06. 33 original outcomes mapped, one question/one item_id. |
 | Q16 | AUTHOR_SELF_VERIFIED | 33 original owner-held private RD1 off public GitHub; 18 publicly exposed chapter replay only CLIENT_SELF_CHECK_NO_MASTERY and not independent Readiness |
 | Q17 | AUTHOR_SELF_VERIFIED | Complete independent SGK journey six Knowledge lessons plus original Core/Written/public final replay; Topic is a separate complete journey and no new Topic Core introduced |
-| Q18 | AUTHOR_SELF_VERIFIED | 17 exact component path/Git blob inventory, fresh author-signed current Q18 and one V2 SHA receipt, historical R01 independent PASS remains tied to old SHA, no new independent reviewer claim |
+| Q18 | AUTHOR_SELF_VERIFIED | Seventeen current original component paths/blob locks updated solely for B27 learner Delta C, source manifest and signed author Q18 current SHA; historic independent R01 snapshot remains immutable. |
 
 ## Q16 private RD1 and exact author source signature
 
 Original 33 private held-out RD1 items, answers and rubrics owner-held OFF GitHub, never in any Temp_ review copy. Original 18 public end replay items exposed prior to independent chapter readiness, hence `CLIENT_SELF_CHECK_NO_MASTERY`, no Mastery or official Readiness attribution. No original 51 public question keys, 12 original Written/rubrics, shared Golden runtime, Auth/Firebase/student data touched.
 
-AUTHOR_SIGNOFF: Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_CURRENT_BLOB_6e13b237c2c31c79e5d9ed18170fe7b3783a38d7
+AUTHOR_SIGNOFF: Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_CURRENT_BLOB_c3b4ccabd2701999fe3a59350214bc1b2d668e07
 P0_P1_AUTHORING: 0_0_IN_SCOPE
 SOURCE_STATE: AUTHORING_PASS_ELIGIBLE_FOR_SINGLE_V2_READY_REGISTER
 RELEASE_STATE: NOT_AUTHORIZED_NOT_DEPLOYED
+
+## SCOPED_33RD_OUTCOME_INTEGRATED_FIRSTTRY_DELTA_C_20261122
+
+The integrated outcome `G11-CHVII-INTEGRATED` already had one genuine original public Core item `THPT-G11-CHVII-CHVII-C01` (height-vs-slant error); **no source-local voluntary FirstTry on this outcome appeared in the previous 95-item matrix**. Per-outcome Q14/PED6 depth is strengthened without creating or modifying another public Core/Written/question bank. The new Knowledge item is distinct and more demanding than old Core.
+
+- Current B27 one original canonical student source `docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md` Git blob `e06bddefac10f1c4b380d624c1143d5635c73aa5` contains 6 Knowledge first tries (including new `THPT-G11-B27-TRY06` → `G11-CHVII-INTEGRATED`) each with opt-in `Đối chiếu` and local D6. New integrated WHY §1.6 and HELP B27-TRY06 use B23 perpendicular to plane, B24 line-plane angle via orthogonal projection, B26 point-plane distance and B27 pyramid volume. Original B27 five try stems/keys untouched.
+- Independent rigorous current math: square ABCD side 6, O centre, SO perpendicular base, SA=√34, OA=3√2, SO=√(34−18)=4, angle(SA,base)=angle SAO with tan 4/(3√2), base 36 cm², pyramid V=48 cm³. Distinct new worked EX-G11-B27-R04-INTEGRATED uses rectangular 8×6, OA=5, SA=13, SO=12, tan angle=12/5 and V=(8×6)×12/3=192 cm³. Nonzero orthogonal projection AO condition, true perpendicular height and cm/cm²/cm³ consistent.
+- Source counts: 6 Golden four-tab learners, 33/33 outcomes with public canonical and 33/33 outcomes now also covered by own pre-Core FirstTry; 51 JS original C/P/Application and 12 original Written/Anchor unchanged (63 canonical public), one distinct new unscored TRY added (33 total), hence 96 source-owned unique item IDs/placements; original 40 worked annotations untouched plus new 41st. Six old SVG unchanged; 33 owner-private RD1 OFF public GitHub, original 18-item exposed END CLIENT_SELF_CHECK_NO_MASTERY only.
+- This is scoped DELTA_C_ACADEMIC_MATERIAL to current B27 learner only, current author self-Q18 v3.2.0 signoff. Independent reviewer R01 source/receipt unchanged; historical 72 numeric probes belong old source snapshot, no new generalized stress-run or current PDF primary visual rescan claimed. RELEASE AP/R/Final Submit/Q16 browser, owner permission not passed.
