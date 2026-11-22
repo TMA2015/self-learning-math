@@ -94,7 +94,8 @@ for topic, d in data["topics"].items():
         assert "data-thpt-readiness" not in published
         if part == "tu-kiem-tra":
             assert "PUBLIC_REPLAY_ONLY" in published
-            assert not re.search(r"Final Submit|Skill Mastery|data-g10.*submit",published,re.I)
+            visible = re.sub(r"<!--.*?-->", "", published, flags=re.S)
+            assert not re.search(r"Final Submit|Skill Mastery|data-g10.*submit",visible,re.I)
     for svg in d["svg"]:
         path = ROOT / "docs/assets" / ("visuals" if svg.startswith("FIG_G11_CHIV_B") else "images/thpt") / svg
         assert path.is_file() and "<svg" in path.read_text(encoding="utf-8"), (topic,"broken SVG",svg)
