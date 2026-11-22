@@ -3069,6 +3069,16 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 .preview-shell #knowledge .tabbed-block :is(table,th,td,details){font-size:inherit}
 .preview-shell #knowledge .thpt-g10-example-solution{max-width:100%;box-sizing:border-box}
 .preview-shell #knowledge mjx-container[display="true"]{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden}
+
+/* Preview containment: long labels and equations scroll locally, never widen the page. */
+.preview-shell{width:100%;max-width:1040px;min-width:0;box-sizing:border-box}
+.preview-shell>.md-typeset{width:100%;min-width:0;max-width:100%;margin:0;box-sizing:border-box}
+.preview-shell .preview-page,.preview-shell #knowledge .tabbed-set,.preview-shell #knowledge .tabbed-content,.preview-shell #knowledge .tabbed-block,.preview-shell #knowledge #outer-panels{min-width:0;max-width:100%;width:100%;box-sizing:border-box}
+.preview-shell #knowledge .tabbed-labels,.preview-shell #knowledge .sub-rail{min-width:0;max-width:100%;width:100%;box-sizing:border-box;overflow-x:auto;overflow-y:hidden}
+.preview-shell #knowledge .tabbed-block p,.preview-shell #knowledge .tabbed-block li{overflow-wrap:break-word;white-space:normal}
+.preview-shell #knowledge .tabbed-block .arithmatex{max-width:100%}
+.preview-shell #knowledge .tabbed-block table{display:block;max-width:100%;overflow-x:auto}
+.preview-shell #knowledge .tabbed-block figure{max-width:100%;margin-inline:0}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
 <script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},options:{ignoreHtmlClass:'tex2jax_ignore'}};</script>
@@ -3093,10 +3103,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="11-nhan-biet-menh-e-va-menh-e-chua-bien">1.1. Nhận biết mệnh đề và mệnh đề chứa biến</h3>
 <p>Vì sao một câu hỏi không phải là mệnh đề, còn một câu khẳng định có biến lại chưa thể xét đúng–sai ngay?</p>
 <p>Khi nghe một câu nói, không phải lúc nào ta cũng có thể kết luận ngay câu đó đúng hay sai. “13 là số nguyên tố” là một khẳng định đúng vì 13 chỉ có hai ước dương là 1 và 13; “13 là số chẵn” là khẳng định sai. Cả hai đều là <strong>mệnh đề</strong>, bởi mỗi câu có một giá trị đúng hoặc sai xác định. Câu hỏi “13 có phải số nguyên tố không?” thì khác: nó yêu cầu trả lời, chứ chưa khẳng định điều gì.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note" data-preview-callout="concept">
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p>Mệnh đề là câu khẳng định có giá trị đúng hoặc sai xác định. Mệnh đề chứa biến <span class="arithmatex">\(P(x)\)</span> chưa có giá trị đúng-sai cố định nếu chưa gán biến hoặc lượng từ, với miền D nêu rõ.</p>
-</blockquote>
+</div>
 <p>Bây giờ xét câu <span class="arithmatex">\(n+1=4\)</span> với <span class="arithmatex">\(n\)</span> là số nguyên. Nếu thay <span class="arithmatex">\(n=3\)</span>, đẳng thức đúng; thay <span class="arithmatex">\(n=4\)</span>, đẳng thức sai. Ta không thể gán cho phát biểu ban đầu một giá trị đúng–sai độc lập với <span class="arithmatex">\(n\)</span>. Đây là <strong>mệnh đề chứa biến</strong>. Để kiểm chứng một phát biểu như vậy, phải biết biến thuộc miền nào và đã được gán giá trị hay lượng từ nào chưa. Chính sự phân biệt này giúp việc chứng minh sau này không bị mơ hồ.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài.</strong> Xét “16 là số chính phương”, “<span class="arithmatex">\(n+2=7\)</span>” với <span class="arithmatex">\(n\in\mathbb Z\)</span>, và “Hãy tính <span class="arithmatex">\(n+2\)</span>”. Phân loại ba câu.</p>
@@ -3112,10 +3122,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="12-phu-inh-ung-nghia">1.2. Phủ định đúng nghĩa</h3>
 <p>Nếu điểm ở ngay dấu bằng, phủ định của một bất đẳng thức phải đổi dấu thế nào?</p>
 <p>Khi đã phân biệt được khẳng định, ta cần biết thế nào là câu thực sự bác bỏ khẳng định ấy. Một mệnh đề có thể đúng hoặc sai; <strong>phủ định</strong> là phát biểu đổi giá trị đúng–sai ấy. Nếu <span class="arithmatex">\(P\)</span> là “7 là số chẵn” thì <span class="arithmatex">\(\neg P\)</span> là “7 không phải số chẵn”. Khi <span class="arithmatex">\(P\)</span> sai, phủ định đúng, và ngược lại. Với bất đẳng thức, phải đảo đúng cả dấu bằng: phủ định của <span class="arithmatex">\(x\ge3\)</span> là <span class="arithmatex">\(x&lt;3\)</span>, chứ không phải <span class="arithmatex">\(x\le3\)</span>, bởi tại <span class="arithmatex">\(x=3\)</span> hai câu sau không đối lập đúng–sai.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note" data-preview-callout="concept">
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p>Phủ định <span class="arithmatex">\(\neg P\)</span> đúng khi P sai và sai khi P đúng. Phủ định <span class="arithmatex">\(x\ge a\)</span> là <span class="arithmatex">\(x&lt;a\)</span>; phủ định <span class="arithmatex">\(\forall x\in D, P(x)\)</span> là <span class="arithmatex">\(\exists x\in D,\neg P(x)\)</span>.</p>
-</blockquote>
+</div>
 <p>Điều này càng quan trọng khi câu chứa lượng từ. Xét <span class="arithmatex">\(P\)</span>: “Mọi số thực <span class="arithmatex">\(x\)</span> đều thỏa <span class="arithmatex">\(x^2\ge0\)</span>”. Để bác bỏ <span class="arithmatex">\(P\)</span>, ta cần <strong>ít nhất một</strong> số thực làm <span class="arithmatex">\(x^2&lt;0\)</span>; vì không tồn tại số ấy, phủ định là sai và <span class="arithmatex">\(P\)</span> đúng. Như vậy, phủ định của “mọi” không phải “mọi phần tử đều không”, mà là “tồn tại ít nhất một phần tử không”.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài.</strong> Với <span class="arithmatex">\(x\in\mathbb R\)</span>, phủ định câu “<span class="arithmatex">\(x&gt;2\)</span> và <span class="arithmatex">\(x&lt;5\)</span>” là gì?</p>
@@ -3131,10 +3141,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="13-ieu-kien-can-u-va-keo-theo">1.3. Điều kiện cần, đủ và kéo theo</h3>
 <p>Một quan hệ kéo theo đúng có cho phép suy ngược không? Em thử tìm một phản ví dụ.</p>
 <p>Phủ định giúp nhận ra phát biểu sai; còn để suy ra kết luận mới, ta phải hiểu chiều của lập luận. Giả sử một số nguyên chia hết cho 6. Vì số ấy viết được <span class="arithmatex">\(n=6k=3(2k)\)</span>, nó chắc chắn cũng chia hết cho 3. Ta diễn đạt: “Nếu <span class="arithmatex">\(n\)</span> chia hết cho 6 thì <span class="arithmatex">\(n\)</span> chia hết cho 3”, ký hiệu <span class="arithmatex">\(P\Rightarrow Q\)</span>. Khi đó <span class="arithmatex">\(P\)</span> là <strong>điều kiện đủ</strong> để có <span class="arithmatex">\(Q\)</span>, còn <span class="arithmatex">\(Q\)</span> là <strong>điều kiện cần</strong> để có <span class="arithmatex">\(P\)</span>.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note" data-preview-callout="rule">
 <p><strong>TÍNH CHẤT</strong></p>
 <p>Kéo theo <span class="arithmatex">\(P\Rightarrow Q\)</span> chỉ sai khi P đúng mà Q sai. P là <strong>điều kiện đủ</strong> cho Q, Q là <strong>điều kiện cần</strong> cho P. Không mặc nhiên có kéo theo đảo.</p>
-</blockquote>
+</div>
 <p>Nhưng một kết luận đúng theo chiều thuận chưa cho phép đọc ngược. Số 3 chia hết cho 3 mà không chia hết cho 6, nên câu đảo <span class="arithmatex">\(Q\Rightarrow P\)</span> sai. Một phản ví dụ đủ bác bỏ một mệnh đề kéo theo nếu tiền đề đúng mà kết luận sai. Về logic hình thức, <span class="arithmatex">\(P\Rightarrow Q\)</span> chỉ sai khi <span class="arithmatex">\(P\)</span> đúng và <span class="arithmatex">\(Q\)</span> sai; quy tắc này không có nghĩa mọi câu “nếu...thì...” là một quan hệ nguyên nhân trong đời sống.</p>
 <p><img alt="Bội của 6 nằm trong tập bội của 3" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221000%22%20height%3D%22510%22%20viewBox%3D%220%200%201000%20510%22%20role%3D%22img%22%20aria-labelledby%3D%22title%20desc%22%3E%0A%3Ctitle%20id%3D%22title%22%3EV%C3%AD%20d%E1%BB%A5%20minh%20h%E1%BB%8Da%20chi%E1%BB%81u%20k%C3%A9o%20theo%20c%E1%BB%A7a%20m%E1%BB%87nh%20%C4%91%E1%BB%81%20chia%20h%E1%BA%BFt%3C%2Ftitle%3E%0A%3Cdesc%20id%3D%22desc%22%3EC%C3%A1c%20b%E1%BB%99i%20c%E1%BB%A7a%206%20n%E1%BA%B1m%20trong%20t%E1%BA%ADp%20b%E1%BB%99i%20c%E1%BB%A7a%203%20tr%C3%AAn%20s%E1%BB%91%20nguy%C3%AAn.%20Chi%E1%BB%81u%20n%E1%BA%BFu%20chia%20h%E1%BA%BFt%20cho%206%20th%C3%AC%20chia%20h%E1%BA%BFt%20cho%203%20%C4%91%C3%BAng.%20Chi%E1%BB%81u%20%C4%91%E1%BA%A3o%20sai%2C%20v%C3%AC%203%20chia%20h%E1%BA%BFt%20cho%203%20nh%C6%B0ng%20kh%C3%B4ng%20chia%20h%E1%BA%BFt%20cho%206.%20Hai%20%C3%B4%20t%E1%BA%ADp%20h%E1%BB%A3p%20kh%C3%B4ng%20thay%20th%E1%BA%BF%20ch%E1%BB%A9ng%20minh%20t%E1%BB%95ng%20qu%C3%A1t.%3C%2Fdesc%3E%0A%3Crect%20width%3D%221000%22%20height%3D%22510%22%20rx%3D%2220%22%20fill%3D%22%23f8fafc%22%2F%3E%0A%3Ctext%20x%3D%2240%22%20y%3D%2255%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2229%22%20font-weight%3D%22bold%22%20fill%3D%22%230f172a%22%3EM%E1%BB%87nh%20%C4%91%E1%BB%81%20k%C3%A9o%20theo%20v%C3%A0%20m%E1%BB%87nh%20%C4%91%E1%BB%81%20%C4%91%E1%BA%A3o%3C%2Ftext%3E%0A%3Crect%20x%3D%2254%22%20y%3D%2294%22%20width%3D%22892%22%20height%3D%22335%22%20rx%3D%2216%22%20fill%3D%22%23eff6ff%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%223%22%2F%3E%0A%3Ctext%20x%3D%2284%22%20y%3D%22134%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2222%22%20fill%3D%22%231d4ed8%22%3EC%C3%A1c%20s%E1%BB%91%20nguy%C3%AAn%20chia%20h%E1%BA%BFt%20cho%203%20(v%C3%AD%20d%E1%BB%A5%3A%20%E2%88%929%2C%20%E2%88%926%2C%20%E2%88%923%2C%200%2C%203%2C%206%2C%209)%3C%2Ftext%3E%0A%3Crect%20x%3D%22218%22%20y%3D%22190%22%20width%3D%22564%22%20height%3D%22176%22%20rx%3D%2225%22%20fill%3D%22%23dcfce7%22%20stroke%3D%22%23047857%22%20stroke-width%3D%224%22%2F%3E%0A%3Ctext%20x%3D%22500%22%20y%3D%22242%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2Csans-serif%22%20font-weight%3D%22bold%22%20font-size%3D%2227%22%20fill%3D%22%23065f46%22%3EC%C3%A1c%20s%E1%BB%91%20nguy%C3%AAn%20chia%20h%E1%BA%BFt%20cho%206%3C%2Ftext%3E%0A%3Ctext%20x%3D%22500%22%20y%3D%22290%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2229%22%20fill%3D%22%230f172a%22%3E%E2%80%A6%20%E2%88%9212%2C%20%E2%88%926%2C%200%2C%206%2C%2012%20%E2%80%A6%3C%2Ftext%3E%0A%3Ctext%20x%3D%22500%22%20y%3D%22332%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2221%22%20fill%3D%22%23065f46%22%3ENh%E1%BB%AFng%20s%E1%BB%91%20n%C3%A0y%20c%C5%A9ng%20chia%20h%E1%BA%BFt%20cho%203%3C%2Ftext%3E%0A%3Ctext%20x%3D%2254%22%20y%3D%22476%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2219%22%20fill%3D%22%23334155%22%3EV%C3%AD%20d%E1%BB%A5%20ph%E1%BA%A3n%20ch%E1%BB%A9ng%20cho%20chi%E1%BB%81u%20%C4%91%E1%BA%A3o%3A%203%20chia%20h%E1%BA%BFt%20cho%203%2C%20nh%C6%B0ng%20kh%C3%B4ng%20chia%20h%E1%BA%BFt%20cho%206.%3C%2Ftext%3E%0A%3C%2Fsvg%3E%0A" /></p>
 <p><em>Quan sát hình:</em> Hình giúp đọc chiều suy luận: mọi bội của 6 là bội của 3, nhưng vùng chỉ thuộc bội của 3 không cho phép suy ngược.</p>
@@ -3152,10 +3162,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="14-hai-chieu-cua-tuong-uong">1.4. Hai chiều của tương đương</h3>
 <p>Để chứng minh hai điều kiện tương đương, tại sao cần kiểm cả hai chiều?</p>
 <p>Không phải suy luận nào cũng đảo được. Để được tương đương, cả hai chiều đều cần chứng minh. Ta vừa thấy một mệnh đề kéo theo đúng chưa chắc có chiều đảo đúng. Vậy khi nào hai phát biểu thực sự tương đương? Khi <strong>cả</strong> <span class="arithmatex">\(P\Rightarrow Q\)</span> và <span class="arithmatex">\(Q\Rightarrow P\)</span> đều đúng, ta viết <span class="arithmatex">\(P\Leftrightarrow Q\)</span>, đọc là “<span class="arithmatex">\(P\)</span> khi và chỉ khi <span class="arithmatex">\(Q\)</span>”. Vì thế chứng minh tương đương đòi hỏi hai chiều, hoặc một chuỗi biến đổi mà từng bước đều có thể làm ngược hợp lệ.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note" data-preview-callout="concept">
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p>Tương đương <span class="arithmatex">\(P\Leftrightarrow Q\)</span> khi cả <span class="arithmatex">\(P\Rightarrow Q\)</span> và <span class="arithmatex">\(Q\Rightarrow P\)</span> đều đúng. Chứng minh phải kiểm hai chiều hoặc chuỗi biến đổi tương đương.</p>
-</blockquote>
+</div>
 <p>Chẳng hạn, với <span class="arithmatex">\(n\in\mathbb Z\)</span>, “<span class="arithmatex">\(n\)</span> chẵn khi và chỉ khi <span class="arithmatex">\(n^2\)</span> chẵn” là đúng. Chiều thuận: nếu <span class="arithmatex">\(n=2k\)</span> thì <span class="arithmatex">\(n^2=4k^2\)</span> chẵn. Chiều ngược: nếu <span class="arithmatex">\(n\)</span> lẻ thì <span class="arithmatex">\(n=2k+1\)</span>, suy ra <span class="arithmatex">\(n^2=4k(k+1)+1\)</span> lẻ; do đó <span class="arithmatex">\(n^2\)</span> chẵn buộc <span class="arithmatex">\(n\)</span> chẵn. Cả hai chiều đều có lập luận, không dựa vào vài phép thử.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài.</strong> Với <span class="arithmatex">\(x\in\mathbb R\)</span>, hai điều kiện <span class="arithmatex">\(|x|=2\)</span> và <span class="arithmatex">\(x^2=4\)</span> có tương đương không?</p>
@@ -3171,10 +3181,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="15-luong-tu-moi-va-ton-tai">1.5. Lượng từ mọi và tồn tại</h3>
 <p>Một lời khẳng định “mọi” khác “tồn tại” ở lượng bằng chứng cần có như thế nào?</p>
 <p>Đọc đúng một mệnh đề còn đòi hỏi biết câu ấy đang nói về một phần tử hay tất cả phần tử. Trong lớp học, câu “Mọi học sinh đều biết bơi” chỉ đúng khi <strong>tất cả</strong> học sinh được xét đều biết bơi. Để bác bỏ, chỉ cần tìm <strong>một</strong> học sinh không biết bơi; còn câu “Có học sinh biết bơi” chỉ cần một trường hợp thỏa. Hai từ “mọi” và “có” vì vậy quy định lượng bằng chứng cần có.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note" data-preview-callout="concept">
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p><span class="arithmatex">\(\forall x\in D, P(x)\)</span> yêu cầu P đúng với <strong>mọi</strong> x trong miền; <span class="arithmatex">\(\exists x\in D,P(x)\)</span> yêu cầu <strong>ít nhất một</strong>. Phủ định của mọi ↔ tồn tại phản ví dụ; không được đổi miền D tùy tiện.</p>
-</blockquote>
+</div>
 <p>Trong ký hiệu toán, <span class="arithmatex">\(\forall x\in D,\ P(x)\)</span> yêu cầu <span class="arithmatex">\(P\)</span> đúng với từng phần tử của miền <span class="arithmatex">\(D\)</span>; <span class="arithmatex">\(\exists x\in D,\ P(x)\)</span> chỉ cần có một phần tử thỏa. Phủ định của “với mọi” là “tồn tại một trường hợp không”, và ngược lại. Miền xét phải giữ nguyên: “có số nguyên <span class="arithmatex">\(n\)</span> sao cho <span class="arithmatex">\(n^2=2\)</span>” sai, nhưng thay số nguyên bằng số thực thì câu đúng nhờ <span class="arithmatex">\(n=\sqrt2\)</span>. Điều kiện về miền không phải chú thích có thể bỏ qua.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài.</strong> Xét “Tồn tại số nguyên <span class="arithmatex">\(n\)</span> sao cho <span class="arithmatex">\(n^2=25\)</span>”. Kiểm tính đúng và viết phủ định.</p>
@@ -3193,10 +3203,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="21-phan-tu-tap-con-hai-tap-bang-nhau">2.1. Phần tử, tập con, hai tập bằng nhau</h3>
 <p>Em đang so một phần tử với tập, hay đang so hai tập hợp với nhau?</p>
 <p>Khi nói một học sinh <strong>thuộc</strong> câu lạc bộ, ta đang xét một cá thể có ở trong nhóm hay không. Khi nói câu lạc bộ Toán là <strong>một nhóm con</strong> của câu lạc bộ học thuật, ta so hai tập hợp với nhau. Toán học phân biệt hai quan hệ ấy bằng ký hiệu <span class="arithmatex">\(x\in A\)</span> cho phần tử thuộc tập <span class="arithmatex">\(A\)</span>, và <span class="arithmatex">\(A\subseteq B\)</span> khi <strong>mọi phần tử</strong> của <span class="arithmatex">\(A\)</span> đều thuộc <span class="arithmatex">\(B\)</span>.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note" data-preview-callout="concept">
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p><span class="arithmatex">\(x\in A\)</span> nói phần tử x thuộc A; <span class="arithmatex">\(A\subseteq B\)</span> khi mọi phần tử A đều thuộc B. Hai tập hợp bằng nhau khi chứa đúng cùng phần tử, có thể chứng minh hai chiều bao hàm. <span class="arithmatex">\(\varnothing\subseteq A\)</span> với mọi A.</p>
-</blockquote>
+</div>
 <p><strong>Từ tên nhóm đến cách viết tập hợp.</strong> Một tập hợp có thể được mô tả bằng cách <strong>liệt kê</strong> các phần tử (chẳng hạn <span class="arithmatex">\(E=\{0;2;4;6\}\)</span>) hoặc <strong>nêu tính chất đặc trưng</strong> (<span class="arithmatex">\(E=\{x\in\mathbb N\mid x&lt;8,\ x\text{ chẵn}\}\)</span>); hai cách này cho cùng một tập. Khi liệt kê, mỗi phần tử chỉ tính một lần, không phụ thuộc thứ tự viết; <span class="arithmatex">\(\varnothing\)</span> là tập không có phần tử. Trước khi viết tập bằng tính chất, hãy xác định rõ miền của <span class="arithmatex">\(x\)</span>.</p>
 <p><strong>Các tập hợp số thường dùng.</strong> Trước hết, <span class="arithmatex">\(\mathbb N=\{0;1;2;\ldots\}\)</span> là tập số tự nhiên, còn <span class="arithmatex">\(\mathbb Z=\{\ldots;-2;-1;0;1;2;\ldots\}\)</span> là tập số nguyên. Mọi số nguyên <span class="arithmatex">\(a\)</span> đều viết được thành phân số <span class="arithmatex">\(a/1\)</span>. Vì vậy các số nguyên thuộc tập <strong>số hữu tỉ</strong> <span class="arithmatex">\(\mathbb Q=\{a/b\mid a,b\in\mathbb Z,\ b\ne0\}\)</span>; số thập phân hữu hạn và vô hạn tuần hoàn đều là số hữu tỉ. Ngược lại, các số thập phân vô hạn <strong>không tuần hoàn</strong> như <span class="arithmatex">\(\sqrt2\)</span> là <strong>số vô tỉ</strong>, không thuộc <span class="arithmatex">\(\mathbb Q\)</span>. Tập số thực <span class="arithmatex">\(\mathbb R\)</span> gồm tất cả số hữu tỉ và vô tỉ, nên có chuỗi bao hàm</p>
 <div class="arithmatex">\[
@@ -3218,10 +3228,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="22-giao-va-hop-tap-hop">2.2. Giao và hợp tập hợp</h3>
 <p>Một phần tử thuộc cả hai tập có thuộc hợp không? Có bị viết hai lần trong hợp không?</p>
 <p>Sau khi phân biệt phần tử với tập con, ta mới có thể ghép các nhóm mà không nhầm lẫn. Giả sử một học sinh có thể tham gia cả câu lạc bộ Toán và câu lạc bộ Anh. Khi hỏi ai tham gia <strong>cả hai</strong>, ta đang lấy <strong>giao</strong> hai tập hợp; khi hỏi ai tham gia <strong>ít nhất một</strong> trong hai, ta đang lấy <strong>hợp</strong>. Chữ “hoặc” trong hợp được hiểu theo nghĩa bao hàm: học sinh tham gia cả hai vẫn được tính, nhưng chỉ tính <strong>một lần</strong>.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note" data-preview-callout="concept">
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p><span class="arithmatex">\(A\cap B\)</span> là tập các phần tử thuộc <strong>cả</strong> A và B; <span class="arithmatex">\(A\cup B\)</span> là tập thuộc <strong>ít nhất một</strong> trong hai. Hợp không loại bỏ phần giao, chỉ bỏ việc đếm lặp.</p>
-</blockquote>
+</div>
 <p>Với <span class="arithmatex">\(A=\{1,2,3,4\}\)</span> và <span class="arithmatex">\(B=\{3,4,5\}\)</span>, các phần tử chung là 3,4 nên <span class="arithmatex">\(A\cap B=\{3,4\}\)</span>. Gom mọi phần tử xuất hiện trong ít nhất một tập và xóa lặp, ta được <span class="arithmatex">\(A\cup B=\{1,2,3,4,5\}\)</span>. Không có lý do bỏ 3 và 4 khỏi hợp chỉ vì chúng cùng ở hai tập. Trên biểu đồ Ven, vùng chung nằm trong cả hình của giao lẫn hợp.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài.</strong> Với <span class="arithmatex">\(A=\{1,2,4\}\)</span>, <span class="arithmatex">\(B=\{2,3,4\}\)</span>, tìm giao và hợp.</p>
@@ -3237,10 +3247,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="23-hieu-cua-hai-tap-hop">2.3. Hiệu của hai tập hợp</h3>
 <p>Vì sao thứ tự hai tập trong phép hiệu lại quan trọng?</p>
 <p>Đôi khi bài toán không hỏi ai có mặt trong ít nhất một nhóm, mà hỏi ai chỉ ở một nhóm. Một danh sách có thể lọc những người thuộc nhóm A nhưng <strong>không</strong> thuộc nhóm B. Đó là phép <strong>hiệu</strong> <span class="arithmatex">\(A\setminus B\)</span>. Nếu đổi lại thành “thuộc B nhưng không thuộc A”, kết quả là <span class="arithmatex">\(B\setminus A\)</span>, thường khác hẳn. Cách viết định nghĩa là <span class="arithmatex">\(A\setminus B=\{x\in A:x\notin B\}\)</span>: ta <strong>giữ</strong> tập đứng trước dấu trừ và loại những phần tử cũng có trong tập đứng sau.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note" data-preview-callout="concept">
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p>\[A\setminus B=\{x\in A:x\notin B\}.\] Hiệu giữ tập đứng trước và loại phần chung; thông thường <span class="arithmatex">\(A\setminus B\ne B\setminus A\)</span>.</p>
-</blockquote>
+</div>
 <p>Với <span class="arithmatex">\(A=\{1,2,3,4\}\)</span>, <span class="arithmatex">\(B=\{3,4,5\}\)</span>, giữ A rồi bỏ phần chung 3,4 cho <span class="arithmatex">\(A\setminus B=\{1,2\}\)</span>; đổi chiều lại cho <span class="arithmatex">\(B\setminus A=\{5\}\)</span>. Như vậy hiệu không có tính giao hoán. Trên biểu đồ Ven, <span class="arithmatex">\(A\setminus B\)</span> chính là miền chỉ thuộc A, còn miền giao không thuộc hiệu của hai tập theo bất cứ chiều nào.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(A=\{1,2,5\}\)</span>, <span class="arithmatex">\(B=\{2,3\}\)</span>. Tìm hai hiệu theo hai chiều.</p>
@@ -3256,10 +3266,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="24-tap-bu-theo-vu-tru-u">2.4. Tập bù theo vũ trụ U</h3>
 <p>Khi nói một đối tượng không thuộc A, tại sao phải biết tập vũ trụ?</p>
 <p>Những đối tượng bị loại khỏi A luôn phải được hiểu trong một phạm vi U cụ thể. Câu hỏi “Ai <strong>không</strong> tham gia câu lạc bộ Toán?” chưa đủ rõ nếu ta chưa biết đang hỏi trong <strong>một lớp</strong> hay <strong>toàn trường</strong>. Toán học gọi tập tất cả đối tượng đang xét là <strong>tập vũ trụ</strong> <span class="arithmatex">\(U\)</span>. Nếu <span class="arithmatex">\(A\subseteq U\)</span>, phần bù của <span class="arithmatex">\(A\)</span> trong <span class="arithmatex">\(U\)</span> là <span class="arithmatex">\(U\setminus A\)</span>. Vì thế thay <span class="arithmatex">\(U\)</span> có thể thay kết quả phần bù, dù <span class="arithmatex">\(A\)</span> giữ nguyên.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note" data-preview-callout="concept">
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p>Với vũ trụ <span class="arithmatex">\(U\)</span> đã xác định, phần bù của A trong U là <span class="arithmatex">\(U\setminus A\)</span>. Đổi U có thể làm đổi phần bù dù tập A giữ nguyên. Cần kiểm biên khi mô tả trên trục số.</p>
-</blockquote>
+</div>
 <p>Chẳng hạn, <span class="arithmatex">\(U=\{1,2,3,4,5,6\}\)</span> và <span class="arithmatex">\(A=\{2,4,6\}\)</span>, phần bù là <span class="arithmatex">\(\{1,3,5\}\)</span>. Nếu mở rộng <span class="arithmatex">\(U\)</span> để thêm 0, phần bù cũng có thêm 0. Với các khoảng số thực, xác định vũ trụ cũng giúp ta quyết định đúng đầu mút nào nằm ở phần bù.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(U=\{0,1,2,3,4\}\)</span>, <span class="arithmatex">\(A=\{0,2,4\}\)</span>. Tìm phần bù trong U.</p>
@@ -3278,10 +3288,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="31-khoang-va-dau-ngoac">3.1. Khoảng và dấu ngoặc</h3>
 <p>Một đầu mút có thể thuộc hợp nhưng không thuộc giao của hai khoảng không?</p>
 <p>Một điều kiện như “giữa 1 và 3” cần nói rõ <strong>có lấy</strong> 1 hoặc 3 không. Trên trục số, điều này được thể hiện bằng ngoặc: <span class="arithmatex">\((a,b)\)</span> nghĩa <span class="arithmatex">\(a&lt;x&lt;b\)</span>, còn <span class="arithmatex">\([a,b]\)</span> nghĩa <span class="arithmatex">\(a\le x\le b\)</span>. Khoảng <span class="arithmatex">\((a,b]\)</span> bỏ <span class="arithmatex">\(a\)</span> nhưng nhận <span class="arithmatex">\(b\)</span>, còn <strong>nửa khoảng</strong> <span class="arithmatex">\([a,b)\)</span> nhận <span class="arithmatex">\(a\)</span> nhưng bỏ <span class="arithmatex">\(b\)</span>. Nếu <span class="arithmatex">\(a&lt;b\)</span>, <span class="arithmatex">\([a,+\infty)\)</span> gồm mọi <span class="arithmatex">\(x\ge a\)</span> và <span class="arithmatex">\((-\infty,b]\)</span> gồm mọi <span class="arithmatex">\(x\le b\)</span>; ngược lại, <span class="arithmatex">\((a,+\infty)\)</span> và <span class="arithmatex">\((-\infty,b)\)</span> bỏ đầu mút hữu hạn. Với vô cực, luôn dùng ngoặc tròn vì <span class="arithmatex">\(\pm\infty\)</span> không phải một số thực có thể lấy làm đầu mút.</p>
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note" data-preview-callout="concept">
 <p><strong>ĐỊNH NGHĨA</strong></p>
 <p><span class="arithmatex">\((a,b)\)</span> không chứa hai đầu mút; <span class="arithmatex">\([a,b]\)</span> chứa cả hai; <span class="arithmatex">\((a,b]\)</span> chỉ chứa b. Vô cực luôn đi với ngoặc tròn và không là số thực có thể lấy làm đầu mút.</p>
-</blockquote>
+</div>
 <p>Xét <span class="arithmatex">\(X=(-\infty,3]\)</span> và <span class="arithmatex">\(Y=(1,+\infty)\)</span>. Muốn thuộc <strong>giao</strong>, số phải vừa lớn hơn 1 vừa không vượt 3, nên <span class="arithmatex">\(X\cap Y=(1,3]\)</span>. Muốn thuộc <strong>hợp</strong>, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy <span class="arithmatex">\(X\cup Y=\mathbb R\)</span>. Thử riêng <span class="arithmatex">\(x=1\)</span> và <span class="arithmatex">\(x=3\)</span> giúp ta kiểm dấu ngoặc ở biên.</p>
 <p><strong>Ví dụ</strong></p>
 <p><strong>Đề bài.</strong> Cho <span class="arithmatex">\(X=(-2,1]\)</span>, <span class="arithmatex">\(Y=[1,4)\)</span>. Tìm giao và hợp.</p>
@@ -3297,10 +3307,10 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <h3 id="32-em-phan-hop-khong-lap">3.2. Đếm phần hợp không lặp</h3>
 <p>Khi cộng hai nhóm có phần chung, em đã đếm thừa bao nhiêu lần?</p>
 <p>Khi có số lượng của hai nhóm, phần giao cần được tính đúng một lần để đếm không trùng. Một học sinh tham gia hai câu lạc bộ sẽ được tính <strong>hai lần</strong> nếu ta chỉ cộng số học sinh của từng câu lạc bộ. Vì vậy với hai tập hữu hạn, ta phải trừ một lần phần đã đếm trùng: <span class="arithmatex">\(|A\cup B|=|A|+|B|-|A\cap B|\)</span>. Hình Ven hai nhóm chia vũ trụ thành bốn vùng: chỉ A, cả hai, chỉ B và ngoài cả hai. Ta điền vùng giao trước rồi mới tính các vùng riêng.</p>
-<blockquote>
+<div class="thpt-r4-key-formula" role="note" data-preview-callout="formula">
 <p><strong>CÔNG THỨC</strong></p>
 <p>Với hai tập hữu hạn, \[|A\cup B|=|A|+|B|-|A\cap B|.\] Trừ phần giao đúng một lần để tránh đếm hai lần. Nếu có vũ trụ U hữu hạn, số không thuộc nhóm nào là <span class="arithmatex">\(|U|-|A\cup B|\)</span>.</p>
-</blockquote>
+</div>
 <p>Giả sử lớp có 40 bạn: 23 bạn học Anh, 25 bạn học Toán, 12 bạn học cả hai. Vùng chỉ Anh có <span class="arithmatex">\(23-12=11\)</span> bạn, chỉ Toán có <span class="arithmatex">\(25-12=13\)</span>, vùng cả hai 12. Vậy số bạn học ít nhất một môn là <span class="arithmatex">\(11+12+13=36\)</span>; còn <span class="arithmatex">\(40-36=4\)</span> bạn không học môn nào trong hai. Kiểm lại <span class="arithmatex">\(11+12+13+4=40\)</span> cho thấy không có vùng nào bị tính thiếu hoặc trùng.</p>
 <p><img alt="Bốn vùng trong biểu đồ Ven của lớp 40 học sinh" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221000%22%20height%3D%22590%22%20viewBox%3D%220%200%201000%20590%22%20role%3D%22img%22%20aria-labelledby%3D%22title%20desc%22%3E%0A%3Ctitle%20id%3D%22title%22%3ES%C6%A1%20%C4%91%E1%BB%93%20Venn%20cho%20b%C3%A0i%20to%C3%A1n%2040%20h%E1%BB%8Dc%20sinh%2C%2023%20h%E1%BB%8Dc%20Anh%2C%2025%20h%E1%BB%8Dc%20To%C3%A1n%2C%2012%20h%E1%BB%8Dc%20c%E1%BA%A3%20hai%3C%2Ftitle%3E%0A%3Cdesc%20id%3D%22desc%22%3EH%C3%ACnh%20ch%E1%BB%AF%20nh%E1%BA%ADt%20l%C3%A0%20l%E1%BB%9Bp%2040%20h%E1%BB%8Dc%20sinh.%20Hai%20h%C3%ACnh%20tr%C3%B2n%20giao%20nhau%2C%20ph%E1%BA%A7n%20ch%E1%BB%89%20h%E1%BB%8Dc%20Anh%20c%C3%B3%2011%2C%20giao%20c%C3%B3%2012%2C%20ch%E1%BB%89%20h%E1%BB%8Dc%20To%C3%A1n%20c%C3%B3%2013%2C%20ngo%C3%A0i%20c%E1%BA%A3%20hai%20c%C3%B3%204.%20T%E1%BB%95ng%2011%2B12%2B13%2B4%3D40.%3C%2Fdesc%3E%0A%3Crect%20width%3D%221000%22%20height%3D%22590%22%20rx%3D%2220%22%20fill%3D%22%23f8fafc%22%2F%3E%0A%3Ctext%20x%3D%2240%22%20y%3D%2255%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2229%22%20font-weight%3D%22bold%22%20fill%3D%22%230f172a%22%3ES%C6%A1%20%C4%91%E1%BB%93%20Venn%20%E2%80%94%20c%C3%B9ng%20m%E1%BB%99t%20l%E1%BB%9Bp%2040%20h%E1%BB%8Dc%20sinh%3C%2Ftext%3E%0A%3Crect%20x%3D%2270%22%20y%3D%22102%22%20width%3D%22860%22%20height%3D%22387%22%20rx%3D%2217%22%20fill%3D%22%23fff%22%20stroke%3D%22%2364748b%22%20stroke-width%3D%223%22%2F%3E%0A%3Ccircle%20cx%3D%22405%22%20cy%3D%22290%22%20r%3D%22150%22%20fill%3D%22%23bfdbfe%22%20fill-opacity%3D%22.78%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%224%22%2F%3E%0A%3Ccircle%20cx%3D%22605%22%20cy%3D%22290%22%20r%3D%22150%22%20fill%3D%22%23bbf7d0%22%20fill-opacity%3D%22.74%22%20stroke%3D%22%23047857%22%20stroke-width%3D%224%22%2F%3E%0A%3Ctext%20x%3D%22300%22%20y%3D%22170%22%20font-family%3D%22Arial%2Csans-serif%22%20font-weight%3D%22bold%22%20font-size%3D%2223%22%20fill%3D%22%231e40af%22%3EH%E1%BB%8Dc%20Anh%20(23)%3C%2Ftext%3E%0A%3Ctext%20x%3D%22622%22%20y%3D%22170%22%20font-family%3D%22Arial%2Csans-serif%22%20font-weight%3D%22bold%22%20font-size%3D%2223%22%20fill%3D%22%23065f46%22%3EH%E1%BB%8Dc%20To%C3%A1n%20(25)%3C%2Ftext%3E%0A%3Ctext%20x%3D%22330%22%20y%3D%22305%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2243%22%20text-anchor%3D%22middle%22%20font-weight%3D%22bold%22%20fill%3D%22%230f172a%22%3E11%3C%2Ftext%3E%0A%3Ctext%20x%3D%22505%22%20y%3D%22305%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2243%22%20text-anchor%3D%22middle%22%20font-weight%3D%22bold%22%20fill%3D%22%230f172a%22%3E12%3C%2Ftext%3E%0A%3Ctext%20x%3D%22679%22%20y%3D%22305%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2243%22%20text-anchor%3D%22middle%22%20font-weight%3D%22bold%22%20fill%3D%22%230f172a%22%3E13%3C%2Ftext%3E%0A%3Ctext%20x%3D%22810%22%20y%3D%22458%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2223%22%20font-weight%3D%22bold%22%20fill%3D%22%23334155%22%3ENgo%C3%A0i%3A%204%3C%2Ftext%3E%0A%3Ctext%20x%3D%2248%22%20y%3D%22536%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2220%22%20fill%3D%22%23334155%22%3E11%20(ch%E1%BB%89%20Anh)%20%2B%2012%20(c%E1%BA%A3%20hai)%20%2B%2013%20(ch%E1%BB%89%20To%C3%A1n)%20%2B%204%20(kh%C3%B4ng%20h%E1%BB%8Dc%20m%C3%B4n%20n%C3%A0o)%20%3D%2040.%3C%2Ftext%3E%0A%3C%2Fsvg%3E%0A" /></p>
 <p><em>Quan sát hình:</em> Đọc lần lượt chỉ Anh 11, cả hai 12, chỉ Toán 13, không tham gia 4; tổng bốn vùng bằng 40 và vùng giao chỉ tính một lần.</p>
@@ -3313,7 +3323,7 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <p><strong>Kiểm lỗi</strong></p>
 <p>Nếu em cộng 26 và 30 rồi coi ngay đó là số bạn tham gia ít nhất một câu lạc bộ, phần giao đã bị đếm hai lần. Hãy đọc lại <strong>Kiến thức 3.2</strong>, rồi làm <strong>Bài 22</strong> và <strong>Bài 24</strong> trong Luyện tập; mỗi lần kiểm tổng bốn vùng Ven phải bằng sĩ số lớp.</p></details>
 
-<blockquote>
+<div class="thpt-r4-knowledge-conclusion" role="note" data-preview-callout="recap">
 <p><strong>Kiến thức cần ghi nhớ</strong></p>
 <ul>
 <li><strong>Mệnh đề</strong> có giá trị đúng hoặc sai; mệnh đề chứa biến cần miền xét và giá trị của biến hoặc lượng từ. Phủ định của “mọi” là “tồn tại ít nhất một phần tử không thỏa”.</li>
@@ -3322,7 +3332,7 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <li><strong>Tập hợp:</strong> <span class="arithmatex">\(A\cap B\)</span> chứa các phần tử thuộc cả hai; <span class="arithmatex">\(A\cup B\)</span> thuộc ít nhất một; <span class="arithmatex">\(A\setminus B\)</span> thuộc A nhưng không thuộc B. Phần bù phải nói rõ tập vũ trụ <span class="arithmatex">\(U\)</span>.</li>
 <li><strong>Khoảng và bài toán đếm:</strong> phân biệt dấu ngoặc nhận/loại điểm mút; với hai tập hữu hạn, <span class="arithmatex">\(|A\cup B|=|A|+|B|-|A\cap B|\)</span>, tránh đếm trùng vùng giao.</li>
 </ul>
-</blockquote></template>
+</div></template>
 <div class="thpt-r4-section-links"><a href="#practice" data-page="practice">Luyện tập →</a><a href="#selfcheck" data-page="selfcheck">Tự kiểm tra →</a></div>
 </section>
 <section id="practice" class="preview-page" hidden><h1>CĐ01 · Luyện tập</h1><p class="thpt-r4-lead">Chọn nhóm bài, tự làm từng bài rồi mở lời giải để đối chiếu.</p><p>Hãy tự làm bài, kiểm điều kiện, thử tìm phản ví dụ và viết lý do chọn phép tính trước khi mở lời giải. Nếu còn nhầm, em có thể quay lại mảng Kiến thức liên quan rồi giải một bài khác.</p><div class="thpt-r4-practice-sections cd01-practice-groups"><section class="thpt-r4-practice-lesson" data-thpt-grade="10"><div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">1</span><div><p class="thpt-r4-practice-class">Chuyên đề 01 · Nhóm 1</p><h2>Lập luận với mệnh đề</h2></div></div><div class="thpt-r4-practice-card-grid cd01-single-card"><section class="thpt-r4-practice-card" data-thpt-grade="10"><div><p class="thpt-r4-practice-card-desc">Nhận biết mệnh đề, phủ định, kéo theo, tương đương và lượng từ.</p><p>11 bài luyện tập</p></div><button type="button" class="thpt-r4-practice-open" data-group="0">✎ Luyện tập</button></section></div></section><section class="thpt-r4-practice-lesson" data-thpt-grade="10"><div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">2</span><div><p class="thpt-r4-practice-class">Chuyên đề 01 · Nhóm 2</p><h2>Các phép toán tập hợp</h2></div></div><div class="thpt-r4-practice-card-grid cd01-single-card"><section class="thpt-r4-practice-card" data-thpt-grade="10"><div><p class="thpt-r4-practice-card-desc">Xác định phần tử, tập con, giao, hợp, hiệu và phần bù.</p><p>8 bài luyện tập</p></div><button type="button" class="thpt-r4-practice-open" data-group="1">✎ Luyện tập</button></section></div></section><section class="thpt-r4-practice-lesson" data-thpt-grade="10"><div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">3</span><div><p class="thpt-r4-practice-class">Chuyên đề 01 · Nhóm 3</p><h2>Khoảng và sơ đồ Ven</h2></div></div><div class="thpt-r4-practice-card-grid cd01-single-card"><section class="thpt-r4-practice-card" data-thpt-grade="10"><div><p class="thpt-r4-practice-card-desc">Đọc khoảng trên trục số, sử dụng sơ đồ Ven và đếm phần hợp.</p><p>5 bài luyện tập</p></div><button type="button" class="thpt-r4-practice-open" data-group="2">✎ Luyện tập</button></section></div></section></div><div class="thpt-r4-section-links"><a href="#knowledge" data-page="knowledge">← Kiến thức</a><a href="#selfcheck" data-page="selfcheck">Tự kiểm tra →</a></div></section>
@@ -3418,17 +3428,7 @@ for(const n of [...template.childNodes]){if(n.nodeType===1&&n.tagName==="H2"){cu
 if(modules.length!==3||modules.reduce((n,m)=>n+m.subs.length,0)!==11)throw Error("Knowledge source group mismatch");
 const panels=modules.map((m,i)=>{const p=document.createElement("section");m.head.classList.add("thpt-g10-section-heading");p.append(m.head,...m.pre);const rail=document.createElement("div");rail.className="sub-rail";rail.setAttribute("role","tablist");rail.setAttribute("aria-label","Nội dung "+m.label);const content=document.createElement("div");p.append(rail,content);const subs=m.subs.map(a=>{const node=document.createElement("section");node.append(...a.nodes);return node});tabSet(rail,content,m.subs.map(a=>a.label),subs,"group-"+i);return p});
 tabSet($("#outer-tabs"),$("#outer-panels"),modules.map(m=>m.label),panels,"module");
-$('#knowledge blockquote').forEach(q=>{
- const type=(q.querySelector('strong')?.textContent||"").trim().toLocaleUpperCase("vi");
- const el=document.createElement("div");
- if(/ĐỊNH NGHĨA|KHÁI NIỆM/.test(type))el.className="thpt-r4-knowledge-conclusion thpt-r4-concept-card";
- else if(/TÍNH CHẤT|QUY TẮC|ĐỊNH LÝ|ĐỊNH LÍ/.test(type))el.className="thpt-r4-knowledge-conclusion thpt-r4-rule-card";
- else if(/CÔNG THỨC|HỆ THỨC/.test(type))el.className="thpt-r4-key-formula";
- else if(/GHI NHỚ|CẦN NHỚ|LƯU Ý/.test(type))el.className="thpt-r4-knowledge-conclusion";
- else throw Error("Unclassified callout: "+type);
- el.setAttribute("role","note");el.append(...q.childNodes);q.replaceWith(el);
-});
-$$('#knowledge p').forEach(q=>{if(q.querySelector(':scope>strong')?.textContent.trim()!=="Lời giải.")return;const box=document.createElement("div");box.className="thpt-g10-example-solution";q.before(box);box.append(q);let next=box.nextElementSibling;while(next&& !["H2","H3","DETAILS"].includes(next.tagName)&&!next.classList.contains("thpt-r4-knowledge-conclusion")&&!/^(Vận dụng|Kiểm lại|Ví dụ|Kiểm lỗi|Khám phá kiến thức)/.test(next.textContent.trim())){const move=next;next=next.nextElementSibling;box.append(move)}});
+document.querySelectorAll('#knowledge p').forEach(q=>{if(q.querySelector(':scope>strong')?.textContent.trim()!=="Lời giải.")return;const box=document.createElement("div");box.className="thpt-g10-example-solution";q.before(box);box.append(q);let next=box.nextElementSibling;while(next&& !["H2","H3","DETAILS"].includes(next.tagName)&&!next.matches(".thpt-r4-knowledge-conclusion,.thpt-r4-key-formula")&&!/^(Vận dụng|Kiểm lại|Ví dụ|Kiểm lỗi|Khám phá kiến thức)/.test(next.textContent.trim())){const move=next;next=next.nextElementSibling;box.append(move)}});
 function route(){if(typeof lifecycle!=="undefined"&&lifecycle.isOpen)lifecycle.close();const page=location.hash.slice(1);const id=["knowledge","practice","selfcheck"].includes(page)?page:"knowledge";$$(".preview-page").forEach(n=>n.hidden=n.id!==id);$$("nav [data-page]").forEach(n=>{n.hidden=n.dataset.page===id;n.removeAttribute("aria-current");n.classList.remove("is-current")});window.scrollTo(0,0);typeset(document.getElementById(id));}
 window.addEventListener("hashchange",route);
 const dialog=$("#practice-dialog"),runtime=window.THPT_GOLDEN_RUNTIME;let group=0,at=0,activeTrigger;const ranges=[[0,11],[11,19],[19,24]];let pager;
