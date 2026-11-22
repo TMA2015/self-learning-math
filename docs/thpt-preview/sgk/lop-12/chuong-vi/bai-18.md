@@ -24,7 +24,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Liệt kê nhóm B trước, rồi lọc A trong B. Không dùng 15 làm mẫu. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p01). Sau đó tự làm lại Vận dụng.
+        Liệt kê nhóm B trước, rồi lọc A trong B. Không dùng 15 làm mẫu. <a href="../luyen-tap/#thpt-g12-b18-c01">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.2. Từ giao biến cố đến tỉ số xác suất
     
@@ -42,7 +42,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm giao không lớn hơn B và hai kết quả đối nhau có tổng 1. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p02). Sau đó tự làm lại Vận dụng.
+        Kiểm giao không lớn hơn B và hai kết quả đối nhau có tổng 1. <a href="../luyen-tap/#thpt-g12-b18-c02">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.3. Đổi chiều điều kiện là đổi mẫu số
     
@@ -60,7 +60,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Gạch chân cụm 'biết rằng'; chọn mẫu ấy chứ không chọn biến cố đang hỏi. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p03). Sau đó tự làm lại Vận dụng.
+        Gạch chân cụm 'biết rằng'; chọn mẫu ấy chứ không chọn biến cố đang hỏi. <a href="../luyen-tap/#thpt-g12-b18-c03">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.4. Độc lập không phải xung khắc
     
@@ -78,7 +78,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đừng suy độc lập chỉ từ tên gọi hai biến cố; so tích và giao. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p04). Sau đó tự làm lại Vận dụng.
+        Đừng suy độc lập chỉ từ tên gọi hai biến cố; so tích và giao. <a href="../luyen-tap/#thpt-g12-b18-c04">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.5. Đọc bảng 2×2 theo hàng hoặc cột
     
@@ -98,7 +98,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Cộng hết hàng X và cột đạt trước khi chia. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p05). Sau đó tự làm lại Vận dụng.
+        Cộng hết hàng X và cột đạt trước khi chia. <a href="../luyen-tap/#thpt-g12-b18-c05">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.6. Công thức nhân: từ điều kiện đến giao
     
@@ -116,7 +116,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Dùng xác suất bước hai trong điều kiện bước một, không tự coi hai bước độc lập. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p06). Sau đó tự làm lại Vận dụng.
+        Dùng xác suất bước hai trong điều kiện bước một, không tự coi hai bước độc lập. <a href="../luyen-tap/#thpt-g12-b18-c06">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.7. Rút không hoàn lại: cập nhật nhánh
     
@@ -136,7 +136,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không dùng mẫu 7 cho lượt hai và không bỏ một thứ tự. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p07). Sau đó tự làm lại Vận dụng.
+        Không dùng mẫu 7 cho lượt hai và không bỏ một thứ tự. <a href="../luyen-tap/#thpt-g12-b18-c07">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.8. Hai xúc xắc: tránh đếm trùng
     
@@ -154,7 +154,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không đếm (4,4) hai lần; viết cặp có thứ tự. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p01). Sau đó tự làm lại Vận dụng.
+        Không đếm (4,4) hai lần; viết cặp có thứ tự. <a href="../luyen-tap/#thpt-g12-b18-c01">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.9. Tìm số vật ban đầu từ xác suất
     
@@ -172,7 +172,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy căn của n(n−1) như n²; loại nghiệm âm hoặc không nguyên. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p07). Sau đó tự làm lại Vận dụng.
+        Không lấy căn của n(n−1) như n²; loại nghiệm âm hoặc không nguyên. <a href="../luyen-tap/#thpt-g12-b18-c07">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.10. Ô cửa bí mật: thông tin do quản trò tạo ra
     
@@ -192,7 +192,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Liệt kê quản trò được phép mở cửa nào trong từng vị trí xe; kết luận phụ thuộc quy tắc đã nêu. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p06). Sau đó tự làm lại Vận dụng.
+        Liệt kê quản trò được phép mở cửa nào trong từng vị trí xe; kết luận phụ thuộc quy tắc đã nêu. <a href="../luyen-tap/#thpt-g12-b18-c06">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.11. Thông tin đã trượt vòng thi (SBT)
     
@@ -210,7 +210,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Phân biệt trượt vòng hai trong số người đã qua vòng một với trượt chung. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b18-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b18-p02). Sau đó tự làm lại Vận dụng.
+        Phân biệt trượt vòng hai trong số người đã qua vòng một với trượt chung. <a href="../luyen-tap/#thpt-g12-b18-c02">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b18-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
 === "Kiến thức SGK"
 
@@ -282,68 +282,68 @@
     
     ??? tip "Cách tự sửa"
     
-        Liệt kê nhóm B trước, rồi lọc A trong B. Không dùng 15 làm mẫu. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c01); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p01).
+        Liệt kê nhóm B trước, rồi lọc A trong B. Không dùng 15 làm mẫu. <a href="../luyen-tap/#thpt-g12-b18-c01">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p01">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.2. Từ giao biến cố đến tỉ số xác suất
     
     ??? tip "Cách tự sửa"
     
-        Kiểm giao không lớn hơn B và hai kết quả đối nhau có tổng 1. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c02); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p02).
+        Kiểm giao không lớn hơn B và hai kết quả đối nhau có tổng 1. <a href="../luyen-tap/#thpt-g12-b18-c02">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p02">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.3. Đổi chiều điều kiện là đổi mẫu số
     
     ??? tip "Cách tự sửa"
     
-        Gạch chân cụm 'biết rằng'; chọn mẫu ấy chứ không chọn biến cố đang hỏi. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c03); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p03).
+        Gạch chân cụm 'biết rằng'; chọn mẫu ấy chứ không chọn biến cố đang hỏi. <a href="../luyen-tap/#thpt-g12-b18-c03">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p03">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.4. Độc lập không phải xung khắc
     
     ??? tip "Cách tự sửa"
     
-        Đừng suy độc lập chỉ từ tên gọi hai biến cố; so tích và giao. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c04); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p04).
+        Đừng suy độc lập chỉ từ tên gọi hai biến cố; so tích và giao. <a href="../luyen-tap/#thpt-g12-b18-c04">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p04">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.5. Đọc bảng 2×2 theo hàng hoặc cột
     
     ??? tip "Cách tự sửa"
     
-        Cộng hết hàng X và cột đạt trước khi chia. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c05); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p05).
+        Cộng hết hàng X và cột đạt trước khi chia. <a href="../luyen-tap/#thpt-g12-b18-c05">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p05">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.6. Công thức nhân: từ điều kiện đến giao
     
     ??? tip "Cách tự sửa"
     
-        Dùng xác suất bước hai trong điều kiện bước một, không tự coi hai bước độc lập. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c06); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p06).
+        Dùng xác suất bước hai trong điều kiện bước một, không tự coi hai bước độc lập. <a href="../luyen-tap/#thpt-g12-b18-c06">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p06">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.7. Rút không hoàn lại: cập nhật nhánh
     
     ??? tip "Cách tự sửa"
     
-        Không dùng mẫu 7 cho lượt hai và không bỏ một thứ tự. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c07); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p07).
+        Không dùng mẫu 7 cho lượt hai và không bỏ một thứ tự. <a href="../luyen-tap/#thpt-g12-b18-c07">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p07">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.8. Hai xúc xắc: tránh đếm trùng
     
     ??? tip "Cách tự sửa"
     
-        Không đếm (4,4) hai lần; viết cặp có thứ tự. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c01); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p01).
+        Không đếm (4,4) hai lần; viết cặp có thứ tự. <a href="../luyen-tap/#thpt-g12-b18-c01">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p01">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.9. Tìm số vật ban đầu từ xác suất
     
     ??? tip "Cách tự sửa"
     
-        Không lấy căn của n(n−1) như n²; loại nghiệm âm hoặc không nguyên. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c07); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p07).
+        Không lấy căn của n(n−1) như n²; loại nghiệm âm hoặc không nguyên. <a href="../luyen-tap/#thpt-g12-b18-c07">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p07">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.10. Ô cửa bí mật: thông tin do quản trò tạo ra
     
     ??? tip "Cách tự sửa"
     
-        Liệt kê quản trò được phép mở cửa nào trong từng vị trí xe; kết luận phụ thuộc quy tắc đã nêu. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c06); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p06).
+        Liệt kê quản trò được phép mở cửa nào trong từng vị trí xe; kết luận phụ thuộc quy tắc đã nêu. <a href="../luyen-tap/#thpt-g12-b18-c06">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p06">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.11. Thông tin đã trượt vòng thi (SBT)
     
     ??? tip "Cách tự sửa"
     
-        Phân biệt trượt vòng hai trong số người đã qua vòng một với trượt chung. [Ôn câu Core](../luyen-tap/#thpt-g12-b18-c02); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b18-p02).
+        Phân biệt trượt vòng hai trong số người đã qua vòng một với trượt chung. <a href="../luyen-tap/#thpt-g12-b18-c02">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b18-p02">làm câu luyện tập rồi quay lại</a>.
 
-    [Core Bài 18](../luyen-tap/#b18-core) · [Luyện tập và Tự luận](../luyen-tap/#b18-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b18-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b18-core">Core Bài 18</a> · <a href="../luyen-tap/#b18-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b18-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
 *Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 64–71; SBT trang in 40–43.*
