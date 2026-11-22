@@ -25,7 +25,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không gọi 12 L hay vận tốc. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b05-c01)
+        Không gọi 12 L hay vận tốc. <a href="../luyen-tap/#thpt-g12-chi-b05-c01">Luyện lại câu tương ứng</a>
 
     ### 1.2. Vận tốc, tốc độ, gia tốc
     
@@ -43,7 +43,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Xét đồng thời v,a. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b05-c02)
+        Xét đồng thời v,a. <a href="../luyen-tap/#thpt-g12-chi-b05-c02">Luyện lại câu tương ứng</a>
 
     ### 1.3. Chi phí cận biên
     
@@ -61,7 +61,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đạo hàm không phải tổng chi phí hoặc sai phân chính xác. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b05-c03)
+        Đạo hàm không phải tổng chi phí hoặc sai phân chính xác. <a href="../luyen-tap/#thpt-g12-chi-b05-c03">Luyện lại câu tương ứng</a>
 
     ### 1.4. Ràng buộc hình học và miền
     
@@ -81,7 +81,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm cả hai chiều đáy. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b05-c04)
+        Kiểm cả hai chiều đáy. <a href="../luyen-tap/#thpt-g12-chi-b05-c04">Luyện lại câu tương ứng</a>
 
     ### 1.5. Tối ưu trên miền khả thi
     
@@ -99,7 +99,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không tính hàng rào cạnh sát tường. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b05-p04)
+        Không tính hàng rào cạnh sát tường. <a href="../luyen-tap/#thpt-g12-chi-b05-p04">Luyện lại câu tương ứng</a>
 
     ### 1.6. Không nhận hộp suy biến
     
@@ -117,7 +117,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Phân biệt giới hạn với điểm khả thi. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b05-p05)
+        Phân biệt giới hạn với điểm khả thi. <a href="../luyen-tap/#thpt-g12-chi-b05-p05">Luyện lại câu tương ứng</a>
 
     ### 1.7. Kiểm đơn vị và tính rời rạc
     
@@ -135,7 +135,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không tự làm tròn mọi nghiệm nếu chưa kiểm hai ứng viên. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b05-p06)
+        Không tự làm tròn mọi nghiệm nếu chưa kiểm hai ứng viên. <a href="../luyen-tap/#thpt-g12-chi-b05-p06">Luyện lại câu tương ứng</a>
 
     ### 1.8. Cực tiểu vật liệu với thể tích cố định
     
@@ -153,7 +153,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm có hai nắp và đơn vị; không lẫn bài hộp không nắp. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b05-p04)
+        Kiểm có hai nắp và đơn vị; không lẫn bài hộp không nắp. <a href="../luyen-tap/#thpt-g12-chi-b05-p04">Luyện lại câu tương ứng</a>
 
 === "Kiến thức SGK"
 
@@ -201,50 +201,66 @@
     
     ??? tip "Cách tự sửa"
     
-        Không gọi 12 L hay vận tốc. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b05-c01).
+        **Vì sao dễ sai:** Tốc độ biến đổi tức thời dùng đạo hàm theo đúng biến độc lập và đơn vị; lấy hiệu hữu hạn thay cho đạo hàm chỉ cho tốc độ trung bình.
+
+        **Tự sửa:** Không gọi 12 L hay vận tốc. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b05-c01">Core/Luyện tập</a>.
 
     ### 4.2. Vận tốc, tốc độ, gia tốc
     
     ??? tip "Cách tự sửa"
     
-        Xét đồng thời v,a. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b05-c02).
+        **Vì sao dễ sai:** Vận tốc mang dấu theo chiều quy ước, tốc độ là trị tuyệt đối, gia tốc là đạo hàm vận tốc; không gộp ba đại lượng.
+
+        **Tự sửa:** Xét đồng thời v,a. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b05-c02">Core/Luyện tập</a>.
 
     ### 4.3. Chi phí cận biên
     
     ??? tip "Cách tự sửa"
     
-        Đạo hàm không phải tổng chi phí hoặc sai phân chính xác. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b05-c03).
+        **Vì sao dễ sai:** Chi phí cận biên C'(q) là xấp xỉ mức thay đổi chi phí khi số lượng tăng một đơn vị, không luôn bằng đúng C(q+1)−C(q).
+
+        **Tự sửa:** Đạo hàm không phải tổng chi phí hoặc sai phân chính xác. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b05-c03">Core/Luyện tập</a>.
 
     ### 4.4. Ràng buộc hình học và miền
     
     ??? tip "Cách tự sửa"
     
-        Kiểm cả hai chiều đáy. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b05-c04).
+        **Vì sao dễ sai:** Đặt biến tối ưu phải nêu miền hình học và công thức ràng buộc; điểm khiến cạnh/chiều cao không dương không khả thi.
+
+        **Tự sửa:** Kiểm cả hai chiều đáy. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b05-c04">Core/Luyện tập</a>.
 
     ### 4.5. Tối ưu trên miền khả thi
     
     ??? tip "Cách tự sửa"
     
-        Không tính hàng rào cạnh sát tường. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b05-p04).
+        **Vì sao dễ sai:** Điểm nghiệm đạo hàm là ứng viên; phải so với các biên hợp lệ và giới hạn để kết luận lớn/nhỏ nhất trên miền thực tế.
+
+        **Tự sửa:** Không tính hàng rào cạnh sát tường. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b05-p04">Core/Luyện tập</a>.
 
     ### 4.6. Không nhận hộp suy biến
     
     ??? tip "Cách tự sửa"
     
-        Phân biệt giới hạn với điểm khả thi. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b05-p05).
+        **Vì sao dễ sai:** Thể tích hay diện tích ở biên suy biến có thể tiến về 0 nhưng nếu biên bị loại thì 0 không phải giá trị đạt.
+
+        **Tự sửa:** Phân biệt giới hạn với điểm khả thi. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b05-p05">Core/Luyện tập</a>.
 
     ### 4.7. Kiểm đơn vị và tính rời rạc
     
     ??? tip "Cách tự sửa"
     
-        Không tự làm tròn mọi nghiệm nếu chưa kiểm hai ứng viên. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b05-p06).
+        **Vì sao dễ sai:** Đơn vị của diện tích/thể tích khác nhau; khi số lượng phải nguyên, nghiệm đạo hàm thực chỉ định vị hai ứng viên nguyên cần kiểm lại.
+
+        **Tự sửa:** Không tự làm tròn mọi nghiệm nếu chưa kiểm hai ứng viên. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b05-p06">Core/Luyện tập</a>.
 
     ### 4.8. Cực tiểu vật liệu với thể tích cố định
     
     ??? tip "Cách tự sửa"
     
-        Kiểm có hai nắp và đơn vị; không lẫn bài hộp không nắp. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b05-p04).
+        **Vì sao dễ sai:** Hình trụ kín có hai đáy nên S=2πr²+2πrh; hình trụ không nắp khác công thức, cho điều kiện tối ưu khác.
 
-    [Core Bài 5](../luyen-tap/#b05-core) · [Luyện tập, Vận dụng, Tự luận](../luyen-tap/#b05-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b05-help) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+        **Tự sửa:** Kiểm có hai nắp và đơn vị; không lẫn bài hộp không nắp. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b05-p04">Core/Luyện tập</a>.
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 33–41.*
+    **Học tiếp:** <a href="../luyen-tap/#b05-core">Core Bài 5</a> · <a href="../luyen-tap/#b05-practice">Luyện tập, Vận dụng, Tự luận</a> · <a href="../luyen-tap/#b05-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
+
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 5 (trang in 33–41). SBT cùng bộ được đối chiếu ở gói nguồn lịch sử; trang in khác chỉ số trang PDF.</p>
