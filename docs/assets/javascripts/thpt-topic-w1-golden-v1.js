@@ -9,6 +9,22 @@ if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
 const sizes={"02":{outcomes:16,items:38,replay:16,groups:4},"03":{outcomes:12,items:31,replay:12,groups:4},"04":{outcomes:18,items:75,replay:18,groups:5},"05":{outcomes:17,items:38,replay:17,groups:4}};
 const expected=sizes[topic];
+/* Presentation-only aliases. Full, reviewed heading text stays in its panel and
+ * remains accessible through the tab's aria-label/title. */
+const topicTabNames={
+ "02":{modules:["1. Bất phương trình","2. Dấu tam thức","3. Miền nghiệm","4. Tối ưu"],
+ subs:[["1.1. Biến đổi BPT"],["2.1. Biệt thức và nghiệm","2.2. Tam thức cùng dấu","2.3. Nghiệm kép","2.4. Bảng dấu","2.5. BPT bậc hai","2.6. BPT mọi x","2.7. Điều kiện thực tế"],["3.1. BPT hai ẩn","3.2. Chọn điểm thử","3.3. Biên lấy hoặc loại","3.4. Lập ràng buộc","3.5. Miền giao","3.6. Miền rỗng, vô hạn"],["4.1. Tối ưu tuyến tính","4.2. Biến nguyên"]]},
+ "03":{modules:["1. Biến đổi tương đương","2. Điều kiện xác định","3. Nghiệm ngoại lai","4. Đặt ẩn và ứng dụng"],
+ subs:[["1.1. Phép tương đương","1.2. PT có tham số","1.3. Tích bằng 0","1.4. PT bậc hai"],["2.1. PT phân thức","2.2. Giá trị tuyệt đối"],["3.1. Nghiệm ngoại lai","3.2. Hai căn bậc hai","3.3. PT một căn","3.4. Lọc nghiệm"],["4.1. Đặt t = x²","4.2. Mô hình thực tế"]]},
+ "04":{modules:["1. Lũy thừa","2. Lôgarit","3. Hàm mũ và logarit","4. Phương trình, BPT","5. Tăng trưởng"],
+ subs:[["1.1. Mũ nguyên và âm","1.2. Căn và mũ hữu tỉ","1.3. Mũ thực","1.4. Quy tắc lũy thừa"],["2.1. Định nghĩa lôgarit","2.2. Điều kiện lôgarit","2.3. Quy tắc lôgarit","2.4. Đổi cơ số"],["3.1. Hàm mũ","3.2. Đơn điệu hàm mũ","3.3. Hàm lôgarit","3.4. Hai hàm ngược"],["4.1. PT mũ","4.2. PT lôgarit","4.3. BPT mũ","4.4. BPT lôgarit"],["5.1. Mô hình tăng giảm","5.2. Bài toán tổng hợp"]]},
+ "05":{modules:["1. Hàm số","2. Đọc đồ thị","3. Biến đổi đồ thị","4. Ứng dụng"],
+ subs:[["1.1. Nhận biết hàm số","1.2. Tập xác định","1.3. Tập giá trị","1.4. Điểm trên đồ thị"],["2.1. Đồng biến, nghịch biến","2.2. Đỉnh parabol","2.3. Chẵn, lẻ","2.4. Hàm tuần hoàn"],["3.1. Dịch đứng","3.2. Dịch ngang","3.3. Phản xạ trục","3.4. Co giãn đứng","3.5. Co giãn ngang","3.6. |f(x)| và f(|x|)"],["4.1. Kết hợp biến đổi","4.2. Hàm từng đoạn","4.3. Tối ưu theo miền"]]}
+};
+const displayShortTopicW1=(button,label,full)=>{
+ if(!label||!full||label.length>=full.length)throw Error("TOPIC_W1_SHORT_TAB_SOURCE_HOLD");
+ button.textContent=label;button.title=full;button.setAttribute("aria-label",full);
+};
 const topicTitles={
  "02":"Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm",
  "03":"Phương trình đại số và kỹ thuật chuyển đổi dạng",
@@ -115,7 +131,7 @@ function initKnowledge(){
  };
  for(let i=0;i<headings.length;i++){
   const head=headings[i],limit=headings[i+1]||last,key=String(i+1);
-  const button=create("button","thpt-r4-knowledge-tab thpt-r4-knowledge-module-tab",head.textContent);button.type="button";button.id="w1-"+topic+"-module-tab-"+key;button.dataset.topicW1ModuleTab=key;
+  const button=create("button","thpt-r4-knowledge-tab thpt-r4-knowledge-module-tab");displayShortTopicW1(button,topicTabNames[topic].modules[i],head.textContent);button.type="button";button.id="w1-"+topic+"-module-tab-"+key;button.dataset.topicW1ModuleTab=key;
   button.setAttribute("role","tab");button.setAttribute("aria-controls","w1-"+topic+"-module-"+key);
   const panel=create("section","thpt-r4-knowledge-panel thpt-r4-knowledge-module-panel");panel.id="w1-"+topic+"-module-"+key;panel.dataset.topicW1ModulePanel=key;panel.setAttribute("role","tabpanel");panel.setAttribute("aria-labelledby",button.id);
   head.classList.add("thpt-g10-section-heading");
@@ -128,7 +144,7 @@ function initKnowledge(){
   const subButtons=[],subPanels=[];
   for(let j=0;j<subs.length;j++){
    const h=subs[j],until=subs[j+1]||null,subKey=key+"-"+(j+1);
-   const b=create("button","thpt-r4-knowledge-tab",h.textContent);b.type="button";b.id="w1-"+topic+"-subtab-"+subKey;b.dataset.topicW1Subtab=subKey;b.setAttribute("role","tab");b.setAttribute("aria-controls","w1-"+topic+"-content-"+subKey);
+   const b=create("button","thpt-r4-knowledge-tab");displayShortTopicW1(b,topicTabNames[topic].subs[i]?.[j],h.textContent);b.type="button";b.id="w1-"+topic+"-subtab-"+subKey;b.dataset.topicW1Subtab=subKey;b.setAttribute("role","tab");b.setAttribute("aria-controls","w1-"+topic+"-content-"+subKey);
    const p=create("section","thpt-r4-knowledge-panel thpt-r4-knowledge-content-panel");p.id="w1-"+topic+"-content-"+subKey;p.setAttribute("role","tabpanel");p.setAttribute("aria-labelledby",b.id);
    let child=h;while(child&&child!==until){const next=child.nextSibling;p.append(child);child=next}
    subRail.append(b);wrapper.append(p);subButtons.push(b);subPanels.push(p);
