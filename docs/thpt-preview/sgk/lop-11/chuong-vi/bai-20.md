@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Tưởng mũ âm làm kết quả âm.
 
-        **Tự sửa:** Tính ba điểm mốc và kiểm miền giá trị ở mục 2.1. [Làm lại câu B20-C01](../luyen-tap/?item=THPT-G11-CHVI-B20-C01).
+        **Tự sửa:** Tính ba điểm mốc và kiểm miền giá trị ở mục 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C01">Làm lại câu B20-C01</a>.
 
     ### 1.2. Hai cơ số ở hai phía của 1 dẫn tới hai chiều biến thiên
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Chỉ so số mũ rồi giữ chiều bất kể cơ số.
 
-        **Tự sửa:** Xác định a lớn hay nhỏ hơn 1 trước, đối chiếu mục 2.1. [Làm lại câu B20-C02](../luyen-tap/?item=THPT-G11-CHVI-B20-C02).
+        **Tự sửa:** Xác định a lớn hay nhỏ hơn 1 trước, đối chiếu mục 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C02">Làm lại câu B20-C02</a>.
 
     ### 1.3. Logarit chỉ tiếp nhận đầu vào dương
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** Nhầm điều kiện biến x dương với điều kiện đối số dương.
 
-        **Tự sửa:** Viết đúng đối số trên giấy rồi giải bất phương trình của nó. [Làm lại câu B20-C03](../luyen-tap/?item=THPT-G11-CHVI-B20-C03).
+        **Tự sửa:** Viết đúng đối số trên giấy rồi giải bất phương trình của nó. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C03">Làm lại câu B20-C03</a>.
 
     ### 1.4. Chiều biến thiên của hàm lôgarit
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Tưởng mọi hàm logarit đều đồng biến.
 
-        **Tự sửa:** Kiểm cơ số và miền trước khi so; ôn mục 2.2. [Làm lại câu B20-P03](../luyen-tap/?item=THPT-G11-CHVI-B20-P03).
+        **Tự sửa:** Kiểm cơ số và miền trước khi so; ôn mục 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-P03">Làm lại câu B20-P03</a>.
 
     ### 1.5. Hàm ngược: đổi đầu vào và đầu ra
 
@@ -106,7 +106,7 @@
 
         **Dấu hiệu:** Đổi dấu tọa độ thay vì hoán đổi chúng.
 
-        **Tự sửa:** Viết a^u=v rồi viết log_a v=u, kiểm hai điểm theo thứ tự. [Làm lại câu B20-C04](../luyen-tap/?item=THPT-G11-CHVI-B20-C04).
+        **Tự sửa:** Viết a^u=v rồi viết log_a v=u, kiểm hai điểm theo thứ tự. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C04">Làm lại câu B20-C04</a>.
 
 === "Kiến thức SGK"
 
@@ -144,7 +144,7 @@
 
     ### 3.1. Phân biệt hàm mũ và lũy thừa của biến
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-01"><p><strong>Đề bài:</strong> Trong \(y=7^x\) và \(y=x^7\), đâu là hàm số mũ? Nêu miền và tập giá trị của hàm mũ.</p><p><strong>Phân tích:</strong> Cơ số cố định, biến ở số mũ mới là hàm mũ.</p><p><strong>Lời giải:</strong> \(y=7^x\) là hàm mũ, xác định trên \(\mathbb R\), nhận mọi giá trị dương; tăng và đi qua (0;1),(1;7). \(x^7\) là hàm lũy thừa của biến.</p><p><strong>Kiểm lại:</strong> x^7 có thể âm, nên không gán tập giá trị dương của hàm mũ cho nó.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-01"><p><strong>Đề bài:</strong> Trong \(y=7^x\) và \(y=x^7\), đâu là hàm số mũ? Nêu miền và tập giá trị của hàm mũ.</p><p><strong>Phân tích:</strong> Cơ số cố định, biến ở số mũ mới là hàm mũ.</p><p><strong>Lời giải:</strong> \(y=7^x\) là hàm mũ, xác định trên \(\mathbb R\), nhận mọi giá trị dương; đồng biến, qua \((0;1)\) và \((1;7)\). \(x^7\) là hàm lũy thừa của biến.</p><p><strong>Kiểm lại:</strong> \(x^7\) có thể âm, nên không gán tập giá trị dương của hàm mũ cho nó.</p></div>
 
     ### 3.2. Lập điểm để vẽ một hàm mũ giảm
 
@@ -174,7 +174,7 @@
 
         **Vì sao sai:** Cơ số giữa 0 và 1 làm giá trị giảm khi số mũ tăng.
 
-        **Tự sửa:** Ôn bảng ở mục 2.1 và thử hai số mũ khác nhau. [Làm lại câu B20-C02](../luyen-tap/?item=THPT-G11-CHVI-B20-C02).
+        **Tự sửa:** Ôn bảng ở mục 2.1 và thử hai số mũ khác nhau. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C02">Làm lại câu B20-C02</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVI-B20-02" hidden></span>
 
@@ -182,7 +182,7 @@
 
         **Vì sao sai:** Hàm mũ và logarit hoán đổi đầu vào, đầu ra, không đổi dấu.
 
-        **Tự sửa:** Dùng đẳng thức a^u=v, rồi log_a v=u. [Làm lại câu B20-C04](../luyen-tap/?item=THPT-G11-CHVI-B20-C04).
+        **Tự sửa:** Dùng đẳng thức a^u=v, rồi log_a v=u. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C04">Làm lại câu B20-C04</a>.
 
     <span data-thpt-help-id="HELP-G11-B20-03" hidden></span>
 
@@ -190,7 +190,7 @@
 
         **Vì sao sai:** Đối số logarit phải dương; logarit có thể âm nhưng không nhận đối số âm.
 
-        **Tự sửa:** Giải điều kiện của đối số, ôn mục 2.2. [Làm lại câu B20-C03](../luyen-tap/?item=THPT-G11-CHVI-B20-C03).
+        **Tự sửa:** Giải điều kiện của đối số, ôn mục 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C03">Làm lại câu B20-C03</a>.
 
     <span data-thpt-help-id="HELP-G11-B20-04" hidden></span>
 
@@ -198,8 +198,8 @@
 
         **Vì sao sai:** Phải dùng điểm mốc đúng và tính đơn điệu theo cơ số.
 
-        **Tự sửa:** Kiểm (0;1) cho hàm mũ, (1;0) cho logarit rồi lập bảng. [Làm lại câu B20-P03](../luyen-tap/?item=THPT-G11-CHVI-B20-P03).
+        **Tự sửa:** Kiểm (0;1) cho hàm mũ, (1;0) cho logarit rồi lập bảng. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-P03">Làm lại câu B20-P03</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vi/">Tự luận Chương VI</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 20 (trang in 16–19).</p>
