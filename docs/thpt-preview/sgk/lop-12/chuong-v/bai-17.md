@@ -116,7 +116,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Nam đổi dấu z, Tây đổi dấu λ; ở cực kinh độ không xác định duy nhất. Ôn [bài toán tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) và [tích vô hướng, Bài 16](../bai-16/). Đây là tiền đề, không phải câu cùng outcome địa lí. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
+        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn [tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) (tiền đề, không phải câu cùng outcome địa lí). Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
 
     ### 1.7. Khoảng cách ngắn nhất trên bề mặt Trái Đất
     
@@ -174,7 +174,7 @@
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-R02-06"><p><strong>Đề bài:</strong> P ở 45° Bắc, 90° Tây. Tính tọa độ.</p><p><strong>Phân tích:</strong> φ=45°, λ=−90°.</p><p><strong>Lời giải:</strong> \(P=(0,-\sqrt2/2,\sqrt2/2)\).</p><p><strong>Kiểm lại:</strong> Norm bằng 1; Tây cho tung độ âm.</p></div>
 
-    ### 3.7. Cung lớn với hai vĩ độ khác 0
+    ### 3.7. Cung ngắn trên đường tròn lớn
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B17-R02-07"><p><strong>Đề bài:</strong> P(30° Bắc,0°), Q(30° Nam,90° Đông). Tính s.</p><p><strong>Phân tích:</strong> P=(√3/2,0,1/2), Q=(0,√3/2,−1/2); dùng góc giữa hai bán kính có hướng.</p><p><strong>Lời giải:</strong> Dot=−1/4, \(\theta=\arccos(-1/4)\approx1{,}8235\) rad; \(s\approx11617{,}4\) km (làm tròn tới 0,1 km từ giá trị đầy đủ).</p><p><strong>Kiểm lại:</strong> Góc &gt;90°, dây cung khác độ dài mặt cầu; không dùng trị tuyệt đối.</p></div>
 
@@ -234,7 +234,7 @@
     
     ??? tip "Cách tự sửa"
     
-        Nam đổi dấu z, Tây đổi dấu λ; ở cực kinh độ không xác định duy nhất. Ôn [bài toán tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) và [tích vô hướng, Bài 16](../bai-16/). Đây là tiền đề, không phải câu cùng outcome địa lí. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
+        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn [tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) (tiền đề, không phải câu cùng outcome địa lí). Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
 
     ### 4.7. Khoảng cách ngắn nhất trên bề mặt Trái Đất
     
