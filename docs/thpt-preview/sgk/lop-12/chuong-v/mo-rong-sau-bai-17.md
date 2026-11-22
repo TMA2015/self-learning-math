@@ -41,7 +41,7 @@ Tâm phát sóng C(0,0,5), R=13 m; mặt sàn z=0. Tính bán kính vùng phủ 
 
 ??? tip "Kiểm lỗi"
 
-    Hạ hình chiếu H của tâm lên sàn, dùng tam giác IHX vuông tại H. [Ôn câu nền tảng mở rộng](../luyen-tap/#thpt-g12-b14-c07) rồi [luyện câu khác](../luyen-tap/#thpt-g12-b14-p07). Không dùng R trực tiếp cho bán kính thiết diện. Đây không phải nội dung Core bắt buộc B14.
+    Hạ hình chiếu H của tâm lên sàn, dùng tam giác IHX vuông tại H. <a href="../luyen-tap/#thpt-g12-b14-c07">Ôn câu nền tảng mở rộng</a> rồi <a href="../luyen-tap/#thpt-g12-b14-p07">luyện câu khác</a>. Không dùng R trực tiếp cho bán kính thiết diện. Đây không phải nội dung Core bắt buộc B14.
 
 ## 3. Đọc hình minh họa
 
