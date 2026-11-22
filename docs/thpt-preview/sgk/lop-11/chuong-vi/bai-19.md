@@ -38,7 +38,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Điều kiện \((x+3)(x-4)>0\) cho \(x<-3\) hoặc \(x>4\). Chỉ khi \(x>4\) cả \(x+3\) và \(x-4\) đều dương mới viết được \(\log_5(x+3)+\log_5(x-4)\).
+        **Lời giải:** Điều kiện \((x+3)(x-4)\gt 0\) cho \(x\lt -3\) hoặc \(x\gt 4\). Chỉ khi \(x\gt 4\) cả \(x+3\) và \(x-4\) đều dương mới viết được \(\log_5(x+3)+\log_5(x-4)\).
 
     <span data-thpt-help-id="HELP-G11-B19-TRY02" hidden></span>
 
@@ -50,7 +50,7 @@
 
     ### 1.3. Nhân, chia và nâng lũy thừa chuyển thành cộng, trừ và nhân số mũ
 
-    Nếu \(M=a^u,N=a^v\) với \(M,N>0\), thì \(MN=a^{u+v}\). Bởi logarit đọc ra số mũ, logarit của tích bằng tổng logarit. Tương tự với thương và lũy thừa. Không có công thức cộng cho logarit của một tổng.
+    Nếu \(M=a^u,N=a^v\) với \(M,N\gt 0\), thì \(MN=a^{u+v}\). Bởi logarit đọc ra số mũ, logarit của tích bằng tổng logarit. Tương tự với thương và lũy thừa. Không có công thức cộng cho logarit của một tổng.
 
     **Vận dụng — Tự thử trước Core.** Tính \(\log_5 125+\log_5(1/25)-\log_5 5\).
 
@@ -90,7 +90,7 @@
 
     ### 1.5. Lôgarit thập phân: đọc số mũ trong thang đo
 
-    Lôgarit thập phân \(\lg M=\log_{10}M\) biến nhân 10 thành tăng 1 đơn vị lôgarit. Trong mô hình hóa học thường dùng \(\mathrm{pH}=-\lg c\) với \(c>0\) là giá trị số của nồng độ ion hydrogen theo mol/L; dấu trừ làm nồng độ nhỏ tương ứng pH lớn hơn.
+    Lôgarit thập phân \(\lg M=\log_{10}M\) biến nhân 10 thành tăng 1 đơn vị lôgarit. Trong mô hình hóa học thường dùng \(\mathrm{pH}=-\lg c\) với \(c\gt 0\) là giá trị số của nồng độ ion hydrogen theo mol/L; dấu trừ làm nồng độ nhỏ tương ứng pH lớn hơn.
 
     **Vận dụng — Tự thử trước Core.** Theo mô hình trên, nếu \(c=10^{-5}\) mol/L, tính pH. Nếu nồng độ giảm 100 lần, pH thay đổi bao nhiêu?
 
@@ -132,7 +132,7 @@
 
     ### 2.1. Khái niệm lôgarit
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(a>0,\ a\ne1,\ M>0\), lôgarit cơ số a của M là số thực \(\alpha\) duy nhất thỏa
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(a\gt 0,\ a\ne1,\ M\gt 0\), lôgarit cơ số a của M là số thực \(\alpha\) duy nhất thỏa
     \[
     \alpha=\log_a M\Longleftrightarrow a^\alpha=M.
     \]
@@ -148,7 +148,7 @@
 
     ### 2.2. Tính chất của lôgarit
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc tính.</strong> Với \(a>0,a\ne1,M,N>0,\ r\in\mathbb R\):
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc tính.</strong> Với \(a\gt 0,a\ne1,M,N\gt 0,\ r\in\mathbb R\):
     \[
     \log_a(MN)=\log_a M+\log_a N,\quad
     \log_a(M/N)=\log_a M-\log_a N,
@@ -160,7 +160,7 @@
     
     Đặt \(M=a^u,N=a^v\) để suy các quy tắc từ luật số mũ. Muốn tách logarit của tích hay thương, phải kiểm từng thừa số/đối số dương; nếu chứa \(\log_a(x^2)\) với \(x\ne0\), có thể viết \(2\log_a|x|\), không viết \(2\log_a x\) khi x âm. Không có luật \(\log_a(M+N)=\log_a M+\log_a N\).
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Đổi cơ số.</strong> Với \(a,c>0,\ a,c\ne1,\ M>0\):
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Đổi cơ số.</strong> Với \(a,c\gt 0,\ a,c\ne1,\ M\gt 0\):
     \[
     \log_a M=\frac{\log_c M}{\log_c a}.
     \]
@@ -170,9 +170,9 @@
 
     ### 2.3. Lôgarit thập phân và lôgarit tự nhiên
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Hai cơ số thường dùng.</strong> \(\lg M=\log_{10}M\) (cũng viết \(\log M\) theo quy ước thập phân); \(\ln M=\log_e M\), \(M>0\), trong đó \(e=\lim_{x\to+\infty}(1+1/x)^x\approx2{,}71828\).</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Hai cơ số thường dùng.</strong> \(\lg M=\log_{10}M\) (cũng viết \(\log M\) theo quy ước thập phân); \(\ln M=\log_e M\), \(M\gt 0\), trong đó \(e=\lim_{x\to+\infty}(1+1/x)^x\approx2{,}71828\).</div>
     
-    **Lãi kép liên tục:** chia năm thành \(m\) kỳ với lãi suất năm \(r>0\), \(P(1+r/m)^{mt}\to Pe^{rt}\) khi \(m\to+\infty\) (mô hình cho \(t\ge0\)). Khi biết mức \(A>P\), có thể tìm \(t=\ln(A/P)/r\). Công thức này không đồng nhất với lãi kép cuối từng năm.
+    **Lãi kép liên tục:** chia năm thành \(m\) kỳ với lãi suất năm \(r\gt 0\), \(P(1+r/m)^{mt}\to Pe^{rt}\) khi \(m\to+\infty\) (mô hình cho \(t\ge0\)). Khi biết mức \(A\gt P\), có thể tìm \(t=\ln(A/P)/r\). Công thức này không đồng nhất với lãi kép cuối từng năm.
     
     **Máy tính:** tính \(\log_a M\) bằng đổi cơ số \(\ln M/\ln a\) hoặc phím log cơ số tùy máy. Nhập đầy đủ ngoặc, kiểm miền, làm tròn ở bước cuối. Ví dụ \(\log_3 11\approx2{,}1827\).
 
@@ -184,7 +184,7 @@
 
     ### 3.2. Điều kiện với bình phương
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tìm tập xác định của \(\log_4((x-2)^2)\) và viết biểu thức theo logarit của trị tuyệt đối.</p><p><strong>Phân tích:</strong> Đối số phải dương, bình phương bằng 0 đúng khi x=2.</p><p><strong>Lời giải:</strong> Miền \(\mathbb R\setminus\{2\}\). Vì \(|x-2|>0\), \(\log_4((x-2)^2)=2\log_4|x-2|\).</p><p><strong>Kiểm lại:</strong> Với x<2, logarit của x-2 không có nghĩa nhưng logarit của trị tuyệt đối có nghĩa.</p></div>
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tìm tập xác định của \(\log_4((x-2)^2)\) và viết biểu thức theo logarit của trị tuyệt đối.</p><p><strong>Phân tích:</strong> Đối số phải dương, bình phương bằng 0 đúng khi x=2.</p><p><strong>Lời giải:</strong> Miền \(\mathbb R\setminus\{2\}\). Vì \(|x-2|\gt 0\), \(\log_4((x-2)^2)=2\log_4|x-2|\).</p><p><strong>Kiểm lại:</strong> Với x<2, logarit của x-2 không có nghĩa nhưng logarit của trị tuyệt đối có nghĩa.</p></div>
 
     ### 3.3. Gộp thương và tích
 
