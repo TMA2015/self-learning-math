@@ -35,6 +35,12 @@ with sync_playwright() as pw:
      tabs=p.locator("[data-topic01-module-tab]")
      expect(tabs).to_have_count(3)
      expect(p.locator("[data-topic01-subtab]")).to_have_count(11)
+     for short_tab in p.locator("[data-topic01-module-tab],[data-topic01-subtab]").all():
+      short=short_tab.inner_text().strip()
+      full=short_tab.get_attribute("title")
+      assert full and len(short)<len(full) and len(short)<=32,(engine,width,short,full)
+      assert short_tab.get_attribute("aria-label")==full
+     assert p.locator('[data-topic01-module-tab="1"]').inner_text()=="1. Mệnh đề và lập luận"
      expect(p.locator("[data-topic01-callout]")).to_have_count(12)
      expected={"concept":("rgb(232, 247, 242)",9),"rule":("rgb(234, 241, 252)",1),"recap":("rgb(255, 243, 213)",1),"formula":("rgba(0, 0, 0, 0)",1)}
      p.locator("body").evaluate("(el)=>el.setAttribute('data-md-color-scheme','default')")
