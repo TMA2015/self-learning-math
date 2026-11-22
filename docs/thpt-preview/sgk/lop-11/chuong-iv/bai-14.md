@@ -28,7 +28,7 @@
 
         **Dấu hiệu:** Em chuyển cả những điểm đã nằm trên P theo một khoảng tùy ý.
 
-        **Tự sửa:** Hãy dựng **đường chiếu qua chính điểm ấy** rồi lấy giao với mặt đích. Ôn mục 2.1 và luyện Core B14-C01 trong [Bài 14 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Hãy dựng **đường chiếu qua chính điểm ấy** rồi lấy giao với mặt đích. Ôn mục 2.1 và luyện Core B14-C01 trong <a href="../luyen-tap/">Bài 14 – Luyện tập</a>.
 
     ### 1.2. Cả một đoạn có thể co lại thành một điểm
 
@@ -48,7 +48,7 @@
 
         **Dấu hiệu:** Em coi ảnh CC' vẫn là một đoạn vì “ảnh đường thẳng là đường thẳng”.
 
-        **Tự sửa:** Kiểm trước đường gốc có **song song phương chiếu** không. Ôn mục 2.2, làm Practice B14-P03 tại [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Kiểm trước đường gốc có **song song phương chiếu** không. Ôn mục 2.2, làm Practice B14-P03 tại <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     ### 1.3. Trung điểm được giữ nếu ảnh đoạn không suy biến
 
@@ -68,7 +68,7 @@
 
         **Dấu hiệu:** Em nói ảnh P' phải chia BC thành hai đoạn bằng đúng chiều dài của B'P' và P'C'.
 
-        **Tự sửa:** Dùng **tỉ số 1:1**, không dùng độ dài tuyệt đối; ôn mục 2.2 và luyện Core B14-C02, Practice B14-P02 ở [Luyện tập Bài 14](../luyen-tap/).
+        **Tự sửa:** Dùng **tỉ số 1:1**, không dùng độ dài tuyệt đối; ôn mục 2.2 và luyện Core B14-C02, Practice B14-P02 ở <a href="../luyen-tap/">Luyện tập Bài 14</a>.
 
     ### 1.4. Hai đường song song có thể cho hai ảnh song song hoặc trùng
 
@@ -88,7 +88,7 @@
 
         **Dấu hiệu:** Em viết “hai ảnh luôn song song phân biệt” dù hình có thể chồng hai đường lên cùng nét.
 
-        **Tự sửa:** Kiểm ảnh đường có **suy biến** không và có **trùng nhau** không trước khi nêu song song. Ôn mục 2.2, luyện Practice B14-P04 trong [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Kiểm ảnh đường có **suy biến** không và có **trùng nhau** không trước khi nêu song song. Ôn mục 2.2, luyện Practice B14-P04 trong <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     ### 1.5. Hình biểu diễn không bảo toàn góc hoặc độ dài
 
@@ -108,7 +108,7 @@
 
         **Dấu hiệu:** Em lấy thước đo góc của hình vẽ rồi coi là góc thật.
 
-        **Tự sửa:** Tách **hình gốc** và **hình biểu diễn**, nêu các bất biến đúng điều kiện. Ôn mục 2.3 và Ví dụ 3.5; luyện Practice B14-P04 trong [Luyện tập Bài 14](../luyen-tap/).
+        **Tự sửa:** Tách **hình gốc** và **hình biểu diễn**, nêu các bất biến đúng điều kiện. Ôn mục 2.3 và Ví dụ 3.5; luyện Practice B14-P04 trong <a href="../luyen-tap/">Luyện tập Bài 14</a>.
 
 === "Kiến thức SGK"
 
@@ -179,7 +179,7 @@
 
         **Vì sao sai:** Mọi điểm trên đường theo phương chiếu cùng rơi vào một điểm của mặt đích.
 
-        **Tự sửa:** Ôn mục 2.2 và Ví dụ 3.2; luyện Practice B14-P03 ở [Bài 14 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2 và Ví dụ 3.2; luyện Practice B14-P03 ở <a href="../luyen-tap/">Bài 14 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B14-02" hidden></span>
 
@@ -189,7 +189,7 @@
 
         **Vì sao sai:** Hai ảnh có thể trùng; chỉ khi phân biệt mới gọi song song.
 
-        **Tự sửa:** Ôn mục 2.2, Ví dụ 3.4; luyện Practice B14-P04 ở [Luyện tập Bài 14](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2, Ví dụ 3.4; luyện Practice B14-P04 ở <a href="../luyen-tap/">Luyện tập Bài 14</a>.
 
     <span data-thpt-help-id="HELP-G11-B14-03" hidden></span>
 
@@ -199,7 +199,7 @@
 
         **Vì sao sai:** Phép chiếu song song giữ cấu trúc affine có điều kiện nhưng không bảo toàn tổng quát góc hay độ dài.
 
-        **Tự sửa:** Ôn mục 2.2–2.3 và Ví dụ 3.5; làm Practice B14-P02 tại [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2–2.3 và Ví dụ 3.5; làm Practice B14-P02 tại <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B14-04" hidden></span>
 
@@ -211,6 +211,6 @@
 
         **Tự sửa:** Kiểm ảnh đoạn **không co** trước; ôn mục 2.2 và Ví dụ 3.3, luyện Core B14-C02.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương IV](../../../../thu-vien/tu-luan-g11-chuong-iv/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-iv/">Tự luận Chương IV</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 14 (trang in 95–101).</p>
