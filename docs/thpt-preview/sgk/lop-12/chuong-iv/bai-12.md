@@ -24,7 +24,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Phân biệt biến t trong hàm diện tích và cận cố định a. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p01). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Tích phân xác định đo lượng cộng dồn; tìm một nguyên hàm F rồi lấy F(b)−F(a), không để lại hằng số +C trong kết quả.
+
+        **Tự sửa:** Phân biệt biến t trong hàm diện tích và cận cố định a. <a href="../luyen-tap/#thpt-g12-b12-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b12-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.2. Tuyến tính của lượng tích lũy
     
@@ -42,7 +44,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Giữ hệ số và dùng cận trên trừ cận dưới. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p02). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Tính tuyến tính cho phép tách các hạng dưới cùng một cặp cận; không được đổi cận của từng hạng tùy ý hoặc bỏ hệ số.
+
+        **Tự sửa:** Giữ hệ số và dùng cận trên trừ cận dưới. <a href="../luyen-tap/#thpt-g12-b12-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b12-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.3. Ghép cận và đổi chiều
     
@@ -60,7 +64,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Vẽ trục cận và mũi tên chiều đi. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p03). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Ghép hai khoảng đúng thứ tự và khi đảo cận phải đổi dấu; tích phân có thể âm dù tổng quãng đường hay diện tích luôn không âm.
+
+        **Tự sửa:** Vẽ trục cận và mũi tên chiều đi. <a href="../luyen-tap/#thpt-g12-b12-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b12-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.4. Diện tích dưới hàm không âm
     
@@ -78,7 +84,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm bằng hình thang rộng 2, hai cạnh 3 và 7. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p04). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Diện tích dưới f trên [a,b] chỉ bằng tích phân f nếu f≥0 toàn khoảng; nếu f âm phải xét trị tuyệt đối hoặc chia đoạn.
+
+        **Tự sửa:** Kiểm bằng hình thang rộng 2, hai cạnh 3 và 7. <a href="../luyen-tap/#thpt-g12-b12-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b12-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.5. Tích phân có dấu và diện tích thật
     
@@ -98,7 +106,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tìm nghiệm x=2; vẽ vùng âm và dương. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Tích phân có dấu có thể triệt tiêu hai miền trái dấu, còn diện tích hình phẳng là tổng độ lớn từng miền nên cần tách tại nghiệm đổi dấu.
+
+        **Tự sửa:** Tìm nghiệm x=2; vẽ vùng âm và dương. <a href="../luyen-tap/#thpt-g12-b12-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b12-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.6. Tích phân hàm mũ và lượng giác
     
@@ -116,7 +126,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy ln|1|−ln|−1| qua điểm gián đoạn. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p06). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Đạo hàm của −cos x là sin x, của sin x là cos x; không được áp sai giá trị lượng giác đặc biệt ở hai cận.
+
+        **Tự sửa:** Không lấy ln|1|−ln|−1| qua điểm gián đoạn. <a href="../luyen-tap/#thpt-g12-b12-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b12-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.7. Lượng tích lũy và vận tốc có dấu
     
@@ -134,7 +146,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Giữ dấu cho độ dời, đổi dấu vùng âm cho quãng đường. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Lượng nước/chuyển động là tích phân tốc độ biến thiên theo biến thời gian với đơn vị đồng nhất; nếu vận tốc đổi dấu thì độ dời khác quãng đường.
+
+        **Tự sửa:** Giữ dấu cho độ dời, đổi dấu vùng âm cho quãng đường. <a href="../luyen-tap/#thpt-g12-b12-c07">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b12-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.8. Giá trị trung bình của hàm
     
@@ -152,7 +166,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đừng nhầm tích phân với trung bình; kiểm kết quả giữa min và max. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Giá trị trung bình của hàm liên tục trên [a,b] là tích phân chia b−a>0, không phải bản thân tích phân; nên kiểm nằm giữa min và max.
+
+        **Tự sửa:** Đừng nhầm tích phân với trung bình; kiểm kết quả giữa min và max. <a href="../luyen-tap/#thpt-g12-b12-c07">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b12-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
 === "Kiến thức SGK"
 
@@ -222,50 +238,50 @@
     
     ??? tip "Cách tự sửa"
     
-        Phân biệt biến t trong hàm diện tích và cận cố định a. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p01).
+        Phân biệt biến t trong hàm diện tích và cận cố định a. <a href="../luyen-tap/#thpt-g12-b12-c01">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b12-p01">luyện câu khác rồi quay lại</a>.
 
     ### 4.2. Tuyến tính của lượng tích lũy
     
     ??? tip "Cách tự sửa"
     
-        Giữ hệ số và dùng cận trên trừ cận dưới. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p02).
+        Giữ hệ số và dùng cận trên trừ cận dưới. <a href="../luyen-tap/#thpt-g12-b12-c02">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b12-p02">luyện câu khác rồi quay lại</a>.
 
     ### 4.3. Ghép cận và đổi chiều
     
     ??? tip "Cách tự sửa"
     
-        Vẽ trục cận và mũi tên chiều đi. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p03).
+        Vẽ trục cận và mũi tên chiều đi. <a href="../luyen-tap/#thpt-g12-b12-c03">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b12-p03">luyện câu khác rồi quay lại</a>.
 
     ### 4.4. Diện tích dưới hàm không âm
     
     ??? tip "Cách tự sửa"
     
-        Kiểm bằng hình thang rộng 2, hai cạnh 3 và 7. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p04).
+        Kiểm bằng hình thang rộng 2, hai cạnh 3 và 7. <a href="../luyen-tap/#thpt-g12-b12-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b12-p04">luyện câu khác rồi quay lại</a>.
 
     ### 4.5. Tích phân có dấu và diện tích thật
     
     ??? tip "Cách tự sửa"
     
-        Tìm nghiệm x=2; vẽ vùng âm và dương. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p05).
+        Tìm nghiệm x=2; vẽ vùng âm và dương. <a href="../luyen-tap/#thpt-g12-b12-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b12-p05">luyện câu khác rồi quay lại</a>.
 
     ### 4.6. Tích phân hàm mũ và lượng giác
     
     ??? tip "Cách tự sửa"
     
-        Không lấy ln|1|−ln|−1| qua điểm gián đoạn. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p06).
+        Không lấy ln|1|−ln|−1| qua điểm gián đoạn. <a href="../luyen-tap/#thpt-g12-b12-c06">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b12-p06">luyện câu khác rồi quay lại</a>.
 
     ### 4.7. Lượng tích lũy và vận tốc có dấu
     
     ??? tip "Cách tự sửa"
     
-        Giữ dấu cho độ dời, đổi dấu vùng âm cho quãng đường. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p07).
+        Giữ dấu cho độ dời, đổi dấu vùng âm cho quãng đường. <a href="../luyen-tap/#thpt-g12-b12-c07">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b12-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.8. Giá trị trung bình của hàm
     
     ??? tip "Cách tự sửa"
     
-        Đừng nhầm tích phân với trung bình; kiểm kết quả giữa min và max. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p07).
+        Đừng nhầm tích phân với trung bình; kiểm kết quả giữa min và max. <a href="../luyen-tap/#thpt-g12-b12-c07">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b12-p07">luyện câu khác rồi quay lại</a>.
 
-    [Core Bài 12](../luyen-tap/#b12-core) · [Luyện tập và Tự luận](../luyen-tap/#b12-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b12-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b12-core">Core Bài 12</a> · <a href="../luyen-tap/#b12-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b12-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 12–18; SBT Tập hai, trang in 9–13.*
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 Kết nối tri thức với cuộc sống, Tập hai, Bài 12, trang in 12–18; SBT cùng bộ, trang in 9–13. Đối chiếu số trang theo biên bản PDF gốc đã kiểm; không đồng nhất chỉ số trang PDF với trang in khi bị đảo.</p>
