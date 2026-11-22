@@ -1,96 +1,241 @@
-# Toán 11 · Bài 33. Đạo hàm cấp hai
+# Bài 33. Đạo hàm cấp hai
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IX · BÀI 33 · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Hiểu nhu cầu → điều kiện → bản chất trước công thức → xem hình minh họa → Tự thử trước Core → ví dụ có suy luận → Core, Luyện tập và tự khắc phục. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IX</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IX · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Đạo hàm lần hai đo sự thay đổi của đạo hàm lần một; dùng để tính gia tốc và giải bài toán ngược.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IX</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Kiến thức SGK — hình thành bản chất trước công thức
+=== "Khám phá kiến thức"
 
-### 1.1. Vận tốc thay đổi nhanh hay chậm?
-Đạo hàm thứ nhất của quãng đường/tọa độ theo thời gian cho **vận tốc tức thời**. Nhưng khi đang lái xe, vận tốc cũng có thể tăng hoặc giảm: cần tốc độ biến đổi của **vận tốc**, tức **gia tốc**. Đó là động cơ của đạo hàm cấp hai, không phải kí hiệu bí hiểm có hai dấu phẩy.
+    Một vật đang vận động không nhất thiết giữ vận tốc cố định. Đạo hàm lần một mô tả vận tốc; khi vận tốc cũng thay đổi, ta cần thêm một lần đạo hàm để đo gia tốc. Hai dấu phẩy không có nghĩa là bình phương.
 
-### 1.2. Lấy đạo hàm của chính hàm đạo hàm
-Nếu $f$ có đạo hàm $f'$ trên một khoảng và $f'$ lại có đạo hàm thì $f''=(f')'$ là **đạo hàm cấp hai**. Không nhầm $f''$ với $(f')^2$. Chẳng hạn $f(x)=x^3-2x^2+5$: $f'=3x^2-4x$, $f''=6x-4$; còn $(f')^2=(3x^2-4x)^2$ rất khác. Đạo hàm cấp hai không tự tồn tại ở mọi điểm chỉ vì f có đạo hàm lần một.
+    ### 1.1. Đạo hàm của đạo hàm
+    
+    Trước tiên coi f′ là một hàm mới. Nếu chính f′ có đạo hàm tại điểm đang xét thì đó là f″. Có f′ không đủ để suy f″ tồn tại.
+    
+    **Vận dụng.** Với $f(x)=x^2+3x$, tính f′, f″ và $(f')^2$.
+    
+    <span data-ped-first-try="1" data-outcome-id="G11-B33-SECOND_DEF" data-thpt-first-try-id="THPT-G11-B33-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $f'=2x+3$, $f''=2$, $(f')^2=(2x+3)^2$.
+    
+    <span data-thpt-help-id="HELP-G11-B33-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không bình phương đạo hàm; đạo hàm tiếp một lần. [Luyện lại B33-C01](../luyen-tap/?item=THPT-G11-CHIX-B33-C01)
 
-### 1.3. Dùng quy tắc đã học để tính lần hai
-Với $y=e^{2x+1}$, $y'=2e^{2x+1}$, $y''=4e^{2x+1}$: mỗi lần lấy đạo hàm hàm hợp phải nhân đạo hàm hàm trong. Với $y=\sin(3x)$, $y'=3\cos(3x)$, $y''=-9\sin(3x)$, không được quên dấu âm hoặc hệ số 3 lần thứ hai.
+    ### 1.2. Hai lần đạo hàm của đa thức
+    
+    Mỗi lần áp dụng quy tắc lũy thừa và đạo hàm hằng. Nếu đề cho điều kiện f′, f″, có thể lập phương trình tìm hệ số ngược.
+    
+    **Vận dụng.** Tính $f''(2)$ với $f=3x^3-2x^2+4$.
+    
+    <span data-ped-first-try="2" data-outcome-id="G11-B33-POLYNOMIAL" data-thpt-first-try-id="THPT-G11-B33-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $f'=9x^2-4x$, $f''=18x-4$, $f''(2)=32$.
+    
+    <span data-thpt-help-id="HELP-G11-B33-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Tìm cả hàm f″ trước khi thay x=2. [Luyện lại B33-C02](../luyen-tap/?item=THPT-G11-CHIX-B33-C02)
 
-### 1.4. Ý nghĩa cơ học: hướng chuyển động và gia tốc
-Nếu $s(t)$ tính bằng **mét**, $t$ bằng **giây**, thì $v(t)=s'(t)$ có đơn vị m/s, $a(t)=v'(t)=s''(t)$ có đơn vị m/s². Gia tốc âm không nhất thiết có nghĩa “chậm dần”: nếu vật đang đi về chiều âm ($v<0$) và gia tốc cũng âm ($a<0$), **độ lớn vận tốc tăng**, vật nhanh dần theo chiều âm. Khi $v$ và $a$ trái dấu, độ lớn vận tốc giảm (trong một khoảng không qua điểm đổi chiều); khi cùng dấu, tăng. Hình FIG-G11-CHIX-B33-01 cho thấy $s(t)=t^3-3t^2+2t$ có $v=3t^2-6t+2$ và $a=6t-6$; học sinh đọc ba độ biến đổi khác nhau, không lấy chiều cao đường cong làm đạo hàm.
+    ### 1.3. Hàm hợp ở cả hai lượt
+    
+    Nếu lần đầu dùng quy tắc hàm hợp, lần sau cũng phải xét lại cấu trúc biểu thức. Ví dụ hệ số trong sin và cos xuất hiện ở mỗi lượt đạo hàm.
+    
+    **Vận dụng.** Tìm f″ của $f(x)=\cos(3x)+e^{2x}$.
+    
+    <span data-ped-first-try="3" data-outcome-id="G11-B33-TRIG_EXP" data-thpt-first-try-id="THPT-G11-B33-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $f'=-3\sin(3x)+2e^{2x}$; $f''=-9\cos(3x)+4e^{2x}$.
+    
+    <span data-thpt-help-id="HELP-G11-B33-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Hai lượt đều nhân đạo hàm hàm trong. [Luyện lại B33-C03](../luyen-tap/?item=THPT-G11-CHIX-B33-C03)
 
-### 1.5. Lưu ý về tính thực tế
-Mô hình chuyển động phải chỉ xét thời gian vật còn ở trạng thái mô tả, ví dụ không dùng công thức rơi tự do sau khi đã chạm đất. Với hàm chiều cao $h(t)=12t-3t^2$ (m) đến lúc trở về mặt đất, $h(0)=0$, $h(4)=0$, do đó thời gian thực tế là $0\le t\le4$; $v(t)=12-6t$ (m/s), gia tốc $a(t)=-6$ m/s² trên khoảng mô hình. Tại $t=2$, v=0 không đồng nghĩa a=0.
+    ### 1.4. Đọc vận tốc và gia tốc
+    
+    Nếu tọa độ là s(t) (m) và t (s), $v=s'$ mang m/s, $a=v'=s''$ mang m/s². Đồ thị vận tốc và gia tốc mô tả hai đại lượng khác nhau.
+    
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg" alt="Hai đồ thị cùng trục thời gian, đơn vị tung độ khác nhau; tại t=1 vận tốc −1 và gia tốc 0."/><figcaption>Đọc hình: Cùng hàm vị trí \(s=t^3-3t^2+2t\) (m), đồ thị vận tốc \(v=3t^2-6t+2\) (m/s) là parabol, đồ thị gia tốc \(a=6t-6\) (m/s²) là đường thẳng. Cùng đọc tại t=1: v=−1, a=0. Đỉnh đồ thị v ứng với a=0, không phải v=0.</figcaption></figure>
+    
+    **Vận dụng.** $s(t)=2t^3-5t^2$ m, t≥0. Tính v(1), a(1) và đơn vị.
+    
+    <span data-ped-first-try="4" data-outcome-id="G11-B33-ACCELERATION" data-thpt-first-try-id="THPT-G11-B33-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $v=6t^2-10t$, $a=12t-10$; v(1)=−4 m/s, a(1)=2 m/s².
+    
+    <span data-thpt-help-id="HELP-G11-B33-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không thay t vào s′ rồi đạo hàm hằng số đó. [Luyện lại B33-C04](../luyen-tap/?item=THPT-G11-CHIX-B33-C04)
 
-### 1.6. Tự thử *trước* Core
-Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn vị. Tại $t=1$, vật đang đi theo chiều nào và gia tốc theo chiều nào?
+    ### 1.5. Dấu không đồng nghĩa nhanh hay chậm
+    
+    Nếu v≠0, tốc độ là |v|. Vận tốc và gia tốc cùng dấu thì tốc độ tăng cục bộ nếu a≠0; trái dấu thì giảm. Tại v=0 cần xét lân cận, không tự dùng quy tắc dấu.
+    
+    **Vận dụng.** Một vật tại một thời điểm có v=−3 cm/s và a=−4 cm/s². Nhận xét chiều chuyển động, chiều gia tốc và tốc độ.
+    
+    <span data-ped-first-try="5" data-outcome-id="G11-B33-SIGN_INTERPRET" data-thpt-first-try-id="THPT-G11-B33-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Vật đi theo chiều âm, gia tốc hướng âm, độ lớn vận tốc đang tăng tại thời điểm đó.
+    
+    <span data-thpt-help-id="HELP-G11-B33-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Gia tốc âm không tự có nghĩa chậm dần. [Luyện lại B33-C05](../luyen-tap/?item=THPT-G11-CHIX-B33-C05)
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Đối chiếu sau khi thử:</strong> $v=3t^2-6$ cm/s, $a=6t$ cm/s²; tại t=1, $v=-3$ cm/s (chiều âm), $a=+6$ cm/s² (chiều dương), hai dấu trái nhau nên tốc độ tức thời đang giảm. Không suy một gia tốc dương là vật luôn nhanh dần.</p></details>
+    ### 1.6. Tìm hệ số ngược
+    
+    Vận dụng kiến thức vào một tình huống mới. Xác định điều kiện và phương pháp trước khi tính.
+    
+    **Vận dụng.** $f(x)=ax^2+bx+2$ có $f'(1)=5,f''(1)=6$. Tìm a,b.
+    
+    <span data-ped-first-try="6" data-outcome-id="G11-B33-POLYNOMIAL" data-thpt-first-try-id="THPT-G11-B33-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $2a=6$ nên a=3; $6+b=5$ nên b=−1.
+    
+    <span data-thpt-help-id="HELP-G11-B33-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Lập riêng hai điều kiện, không sử dụng giá trị f thay cho f′. [Luyện lại B33-C02](../luyen-tap/?item=THPT-G11-CHIX-B33-C02)
 
-**Liên kết D6:** `HELP-G11-CHIX-B33-01` (nhầm lần hai), `...-02` (vận tốc/gia tốc và dấu), `...-03` (suy đơn vị và phạm vi thời gian).
+    ### 1.7. Chặn độ lớn đạo hàm cấp hai
+    
+    Vận dụng kiến thức vào một tình huống mới. Xác định điều kiện và phương pháp trước khi tính.
+    
+    **Vận dụng.** Chứng minh $|g''(x)|\le8$ với $g(x)=2\cos(2x)+3$.
+    
+    <span data-ped-first-try="7" data-outcome-id="G11-B33-TRIG_EXP" data-thpt-first-try-id="THPT-G11-B33-TRY07" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $g'=-4\sin2x$, $g''=-8\cos2x$. Vì $|\cos2x|\le1$, suy ra cận 8; đạt tại x=0.
+    
+    <span data-thpt-help-id="HELP-G11-B33-TRY07" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không kết luận từ việc thử một vài điểm. [Luyện lại B33-C03](../luyen-tap/?item=THPT-G11-CHIX-B33-C03)
 
-### 1.7. Đọc hình để hiểu lập luận
+    ### 1.8. Gia tốc dao động
+    
+    Vận dụng kiến thức vào một tình huống mới. Xác định điều kiện và phương pháp trước khi tính.
+    
+    **Vận dụng.** $s(t)=7+\sin(2\pi t)$ cm. Tính gia tốc tại t=1/4 s.
+    
+    <span data-ped-first-try="8" data-outcome-id="G11-B33-ACCELERATION" data-thpt-first-try-id="THPT-G11-B33-TRY08" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $a(t)=-4\pi^2\sin(2\pi t)$ cm/s²; $a(1/4)=-4\pi^2$ cm/s².
+    
+    <span data-thpt-help-id="HELP-G11-B33-TRY08" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Mỗi lần đạo hàm nhân 2π; không dùng độ đo góc theo độ. [Luyện lại B33-P04](../luyen-tap/?item=THPT-G11-CHIX-B33-P04)
 
-<figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg" alt="Hình minh họa 1 về lập luận trong Bài 33" /><figcaption>Hình minh họa 1 — đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
+=== "Kiến thức SGK"
 
-## 2. Ví dụ có suy luận
+    ### 2.1. Khái niệm đạo hàm cấp hai
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm đạo hàm cấp hai.</strong><p>Cho f có đạo hàm f′ trên một khoảng. Nếu f′ có đạo hàm tại x, đạo hàm ấy gọi là đạo hàm cấp hai của f tại x:
+    
+    \[f''(x)=(f'(x))'.\]
+    
+    Nếu tồn tại ở mọi x của khoảng, đó là hàm đạo hàm cấp hai. Dùng quy tắc B32 cho f′, không lấy bình phương hoặc thay số trước lần đạo hàm tiếp theo. Hàm \(f(x)=x|x|\) có \(f'(x)=2|x|\) trên \(\mathbb R\) (tại 0, dùng thương sai phân \(|h|\to0\)), nhưng f′ không khả vi tại 0 nên f″(0) không tồn tại. Các hàm logarit, thương, tan/cot phải giữ miền gốc và điều kiện đạo hàm; ví dụ \((\ln u)''\) khi u&gt;0 và u khả vi cấp hai có thể tính bằng đạo hàm của \(u'/u\). Không tự kết luận dấu f″ cho tính đơn điệu của f.</p></div>
 
-#### EX-G11-CHIX-B33-01: Hai lần đa thức
+    ### 2.2. Ý nghĩa cơ học của đạo hàm cấp hai
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Ý nghĩa cơ học của đạo hàm cấp hai.</strong><p>Nếu s(t) là tọa độ trên đường thẳng, v(t)=s′(t). Gia tốc tức thời là tốc độ biến đổi của vận tốc:
+    
+    \[a(t)=v'(t)=s''(t).\]
+    
+    Nếu s tính bằng m, t bằng s, v tính m/s và a tính m/s². Khi v≠0, đạo hàm của |v| bằng a nếu v&gt;0 và −a nếu v&lt;0; từ đó xét cùng/trái dấu. Tại v=0 cần xét hai phía và khoảng mô hình; a=0 tại một thời điểm chưa có nghĩa vận tốc luôn không đổi. Với dao động \(s(t)=c+A\sin(\omega t+\phi)\) (hoặc cos), mỗi lần đạo hàm nhân thêm \(\omega\). Tính a(t) trước rồi thế thời điểm, góc radian, giữ đơn vị. Không ngoại suy công thức sau khi vật rời miền thời gian mô tả.</p></div>
 
-**Bài toán:** $f(x)=2x^4-3x^2+6$; tìm f''.
+=== "Ví dụ"
 
-**Phân tích, đáp án:** $f'=8x^3-6x$, $f''=24x^2-6$.
+    ### 3.1. Hai lần đa thức
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-01"><p><strong>Đề bài:</strong> \(f(x)=2x^4-3x^2+6\); tìm f''.</p><p><strong>Phân tích:</strong> Lấy đạo hàm hai lần, không bình phương f'.</p><p><strong>Lời giải:</strong> \(f'=8x^3-6x\), \(f''=24x^2-6\).</p></div>
 
-**Vì sao:** Lấy đạo hàm hai lần, không bình phương f'.
+    ### 3.2. Hàm sin bậc hai
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-02"><p><strong>Đề bài:</strong> \(f(x)=\sin(2x)\); tìm f''.</p><p><strong>Phân tích:</strong> Chain được nhân cả hai lượt; dấu cos'=-sin.</p><p><strong>Lời giải:</strong> \(f'=2\cos(2x)\), \(f''=-4\sin(2x)\).</p></div>
 
-#### EX-G11-CHIX-B33-02: Hàm sin bậc hai
+    ### 3.3. Mũ bậc hai
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-03"><p><strong>Đề bài:</strong> \(f(x)=e^{3x}\); tìm f''.</p><p><strong>Phân tích:</strong> Nhân 3 ở mỗi lần lấy đạo hàm.</p><p><strong>Lời giải:</strong> \(f'=3e^{3x}\), \(f''=9e^{3x}\).</p></div>
 
-**Bài toán:** $f(x)=\sin(2x)$; tìm f''.
+    ### 3.4. Gia tốc từ vị trí
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-04"><p><strong>Đề bài:</strong> \(s(t)=t^3-2t^2+1\) m; gia tốc t=1.</p><p><strong>Phân tích:</strong> Không nhầm vận tốc v(1)=-1 với a(1)=2.</p><p><strong>Lời giải:</strong> \(v=3t^2-4t\) m/s; \(a=6t-4\) m/s², \(a(1)=2\) m/s².</p></div>
 
-**Phân tích, đáp án:** $f'=2\cos(2x)$, $f''=-4\sin(2x)$.
+    ### 3.5. Ngược dấu
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-05"><p><strong>Đề bài:</strong> Vật có v=-5 m/s, a=-2 m/s² tại t0; đang nhanh hay chậm dần?</p><p><strong>Phân tích:</strong> Gia tốc âm không đồng nghĩa chậm dần.</p><p><strong>Lời giải:</strong> Vì v và a cùng âm, tốc độ |v| đang tăng tại thời điểm đó (nhanh dần theo chiều âm).</p></div>
 
-**Vì sao:** Chain được nhân cả hai lượt; dấu cos'=-sin.
+    ### 3.6. Mô hình bóng bay
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-06"><p><strong>Đề bài:</strong> \(h(t)=8t-2t^2\) m trong 0≤t≤4; tìm h'' và đơn vị.</p><p><strong>Phân tích:</strong> Đối chiếu h(0)=h(4)=0 trước suy chuyển động.</p><p><strong>Lời giải:</strong> \(v=8-4t\) m/s, \(a=-4\) m/s²; chỉ diễn giải trong khoảng thời gian mô hình đang áp dụng.</p></div>
 
-#### EX-G11-CHIX-B33-03: Mũ bậc hai
+    ### 3.7. Đạo hàm cấp hai của tích với hàm mũ
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B33-R02-07"><p><strong>Đề bài:</strong> Tìm \(f''(0)\) nếu \(f(x)=(x^2+x)e^x\).</p><p><strong>Phân tích:</strong> Quy tắc tích dùng ở cả hai lượt; chưa thay 0 vào f′.</p><p><strong>Lời giải:</strong> \(f'=(x^2+3x+1)e^x\); \(f''=(2x+3+x^2+3x+1)e^x=(x^2+5x+4)e^x\). Suy ra \(f''(0)=4\).</p><p><strong>Kiểm lại:</strong> Tại 0, e⁰=1.</p></div>
 
-**Bài toán:** $f(x)=e^{3x}$; tìm f''.
+    ### 3.8. Đạo hàm cấp hai của logarit và tan
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B33-R02-08"><p><strong>Đề bài:</strong> Tìm đạo hàm cấp hai của \(p(x)=\ln(3x+2)\) và \(q(x)=\tan(3x)\), nêu miền.</p><p><strong>Phân tích:</strong> Tính trước đạo hàm lần một; dùng quy tắc hợp khi lấy lần hai.</p><p><strong>Lời giải:</strong> \(p'=3/(3x+2)\), \(p''=-9/(3x+2)^2\) với x&gt;−2/3. \(q'=3/\cos^2(3x)\); \(q''=18\sin(3x)/\cos^3(3x)\) khi \(\cos(3x)\ne0\).</p><p><strong>Kiểm lại:</strong> Không mở rộng miền của logarit sang đối số âm.</p></div>
 
-**Phân tích, đáp án:** $f'=3e^{3x}$, $f''=9e^{3x}$.
+    ### 3.9. Tìm hệ số từ hai điều kiện đạo hàm
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B33-R02-09"><p><strong>Đề bài:</strong> Cho \(P(x)=ax^2+bx+5\) và \(P'(2)=3\), \(P''(2)=-4\). Tìm a,b.</p><p><strong>Phân tích:</strong> Biểu diễn đạo hàm theo tham số, giải điều kiện lần hai trước.</p><p><strong>Lời giải:</strong> \(P'=2ax+b\), \(P''=2a\). Từ 2a=−4 suy a=−2. Điều kiện \(4a+b=3\) cho b=11.</p><p><strong>Kiểm lại:</strong> Kiểm \(P'(2)=-8+11=3\), \(P''(2)=-4\).</p></div>
 
-**Vì sao:** Nhân 3 ở mỗi lần lấy đạo hàm.
+    ### 3.10. Chứng minh một cận đạo hàm cấp hai
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B33-R02-10"><p><strong>Đề bài:</strong> Cho \(f(x)=3\sin^2 x+1\). Chứng minh \(|f''(x)|\le6\) với mọi x.</p><p><strong>Phân tích:</strong> Dùng \(\sin^2 x=(1-\cos2x)/2\) để giảm tích hàm hợp.</p><p><strong>Lời giải:</strong> \(f=(5-3\cos2x)/2\), \(f'=3\sin2x\), \(f''=6\cos2x\). Vì \(|\cos2x|\le1\), suy ra \(|f''(x)|\le6\).</p><p><strong>Kiểm lại:</strong> Cận đạt tại x=0; không chỉ kiểm vài giá trị.</p></div>
 
-#### EX-G11-CHIX-B33-04: Gia tốc từ vị trí
+    ### 3.11. Gia tốc của dao động có pha
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B33-R02-11"><p><strong>Đề bài:</strong> Một vật dao động với tọa độ \(s(t)=5+2\cos(\pi t+\pi/3)\) cm, t≥0. Tính vận tốc, gia tốc và gia tốc lúc t=2/3 s.</p><p><strong>Phân tích:</strong> Góc đo radian; đạo hàm tầng trong là \(\pi\) ở cả hai lượt.</p><p><strong>Lời giải:</strong> \(v=-2\pi\sin(\pi t+\pi/3)\) cm/s; \(a=-2\pi^2\cos(\pi t+\pi/3)\) cm/s². Tại t=2/3 góc bằng \(\pi\), nên \(a=2\pi^2\) cm/s².</p><p><strong>Kiểm lại:</strong> Vận tốc tại thời điểm đó bằng 0 nhưng gia tốc khác 0.</p></div>
 
-**Bài toán:** $s(t)=t^3-2t^2+1$ m; gia tốc t=1.
+=== "Lỗi thường gặp"
 
-**Phân tích, đáp án:** $v=3t^2-4t$ m/s; $a=6t-4$ m/s², $a(1)=2$ m/s².
+    <span data-thpt-help-id="HELP-G11-CHIX-B33-01" hidden></span>
+    
+    ??? tip "4.1. Nhầm đạo hàm cấp hai với bình phương"
+    
+        Với $f=x^2$, $f''=2$ trong khi $(f')^2=4x^2$. [Luyện lại B33-C01](../luyen-tap/?item=THPT-G11-CHIX-B33-C01)
 
-**Vì sao:** Không nhầm vận tốc v(1)=-1 với a(1)=2.
+    <span data-thpt-help-id="HELP-G11-CHIX-B33-02" hidden></span>
+    
+    ??? tip "4.2. Cứ gia tốc âm là chậm dần"
+    
+        Nếu v=−2 và a=−1 thì vật đi chiều âm và tốc độ tăng tại điểm đó; phải xét đồng thời dấu v,a. [Luyện lại B33-P05](../luyen-tap/?item=THPT-G11-CHIX-B33-P05)
 
-#### EX-G11-CHIX-B33-05: Ngược dấu
+    <span data-thpt-help-id="HELP-G11-CHIX-B33-03" hidden></span>
+    
+    ??? tip "4.3. Nhầm đơn vị hoặc miền thời gian"
+    
+        $s(t)=6t-2t^2$ m trên [0,3], a=−4 m/s² trong khoảng mô hình. Không suy diễn quá t=3. [Luyện lại B33-P04](../luyen-tap/?item=THPT-G11-CHIX-B33-P04)
 
-**Bài toán:** Vật có v=-5 m/s, a=-2 m/s² tại t0; đang nhanh hay chậm dần?
+    [Core và Luyện tập Bài 33](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
-**Phân tích, đáp án:** Vì v và a cùng âm, tốc độ |v| đang tăng tại thời điểm đó (nhanh dần theo chiều âm).
-
-**Vì sao:** Gia tốc âm không đồng nghĩa chậm dần.
-
-#### EX-G11-CHIX-B33-06: Mô hình bóng bay
-
-**Bài toán:** $h(t)=8t-2t^2$ m trong 0≤t≤4; tìm h'' và đơn vị.
-
-**Phân tích, đáp án:** $v=8-4t$ m/s, $a=-4$ m/s²; chỉ diễn giải trong khoảng thời gian mô hình đang áp dụng.
-
-**Vì sao:** Đối chiếu h(0)=h(4)=0 trước suy chuyển động. 
-
-
----
-
-## 3. Tự khắc phục lỗi
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B33-01"><summary><strong>Chẩn đoán lỗi:</strong> Nhầm f'' với (f')².</summary><ol><li><strong>Phát hiện lỗi:</strong> Nhầm f'' với (f')².</li><li><strong>Truy lại bản chất + điều kiện:</strong> Đạo hàm cấp hai là đạo hàm tiếp của hàm f', không phải bình phương.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B33, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Với f=x², tính f'' và (f')². <strong>Tự kiểm sau khi thử:</strong> f''=2; (f')²=4x².</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B33-C01</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C01">Quay lại câu canonical THPT-G11-CHIX-B33-C01</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B33-02"><summary><strong>Chẩn đoán lỗi:</strong> Cứ gia tốc âm là chậm dần.</summary><ol><li><strong>Phát hiện lỗi:</strong> Cứ gia tốc âm là chậm dần.</li><li><strong>Truy lại bản chất + điều kiện:</strong> Cần xét dấu v và a cùng lúc, tốc độ là |v|.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B33, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Với v=-2,a=-1, nhanh hay chậm?. <strong>Tự kiểm sau khi thử:</strong> Nhanh dần theo chiều âm.</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B33-P05</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B33-P05">Quay lại câu canonical THPT-G11-CHIX-B33-P05</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B33-03"><summary><strong>Chẩn đoán lỗi:</strong> Nhầm đơn vị v và a hoặc áp mô hình sai thời gian.</summary><ol><li><strong>Phát hiện lỗi:</strong> Nhầm đơn vị v và a hoặc áp mô hình sai thời gian.</li><li><strong>Truy lại bản chất + điều kiện:</strong> s m; t s ⇒ v m/s, a m/s²; luôn kiểm miền thời gian mô hình.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B33, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> s(t)=6t-2t² m, t∈[0,3]; gia tốc?. <strong>Tự kiểm sau khi thử:</strong> -4 m/s² trên khoảng mô hình.</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B33-P04</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B33-P04">Quay lại câu canonical THPT-G11-CHIX-B33-P04</a></p></details>
-
-## 4. Tiếp tục
-
-[Core/Luyện tập Bài 33](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+*Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 33, trang in 95–96.*
