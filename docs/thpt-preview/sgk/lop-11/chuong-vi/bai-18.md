@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Đổi dấu giá trị thay vì lấy nghịch đảo.
 
-        **Tự sửa:** Viết lũy thừa âm thành phân thức trước khi tính. [Làm lại câu B18-C01](../luyen-tap/?item=THPT-G11-CHVI-B18-C01).
+        **Tự sửa:** Viết lũy thừa âm thành phân thức trước khi tính. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C01">Làm lại câu B18-C01</a>.
 
     ### 1.2. Căn bậc n và dấu của số dưới căn
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Viết căn bậc chẵn có hai giá trị.
 
-        **Tự sửa:** Tách yêu cầu tính căn số học và giải phương trình; kiểm số mũ chẵn/lẻ. [Làm lại câu B18-C05](../luyen-tap/?item=THPT-G11-CHVI-B18-C05).
+        **Tự sửa:** Tách yêu cầu tính căn số học và giải phương trình; kiểm số mũ chẵn/lẻ. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C05">Làm lại câu B18-C05</a>.
 
     ### 1.3. Số mũ hữu tỉ là phép lấy căn rồi nâng lũy thừa
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** Đảo tử mẫu của số mũ hoặc coi mũ âm là giá trị âm.
 
-        **Tự sửa:** Đọc mẫu số của số mũ là bậc căn rồi xử lý mũ nguyên ở tử. [Làm lại câu B18-P02](../luyen-tap/?item=THPT-G11-CHVI-B18-P02).
+        **Tự sửa:** Đọc mẫu số của số mũ là bậc căn rồi xử lý mũ nguyên ở tử. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P02">Làm lại câu B18-P02</a>.
 
     ### 1.4. Số mũ vô tỉ được hình thành thế nào?
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Nghĩ chỉ số mũ nguyên mới có nghĩa, hoặc bỏ điều kiện a>0.
 
-        **Tự sửa:** Ôn định nghĩa số mũ hữu tỉ và giới hạn ở mục 2.3; kiểm cơ số trước. [Làm lại câu B18-C04](../luyen-tap/?item=THPT-G11-CHVI-B18-C04).
+        **Tự sửa:** Ôn định nghĩa số mũ hữu tỉ và giới hạn ở mục 2.3; kiểm cơ số trước. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C04">Làm lại câu B18-C04</a>.
 
     ### 1.5. Cùng cơ số thì cộng số mũ khi nhân, không phải khi cộng
 
@@ -106,7 +106,7 @@
 
         **Dấu hiệu:** Cộng số mũ tùy ý hoặc bỏ điều kiện cơ số.
 
-        **Tự sửa:** Viết riêng phép nhân, chia, lũy thừa của lũy thừa; đối chiếu điều kiện. [Làm lại câu B18-P01](../luyen-tap/?item=THPT-G11-CHVI-B18-P01).
+        **Tự sửa:** Viết riêng phép nhân, chia, lũy thừa của lũy thừa; đối chiếu điều kiện. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P01">Làm lại câu B18-P01</a>.
 
     ### 1.6. Lãi kép: nhân theo từng kỳ, không cộng mãi cùng số tiền
 
@@ -126,7 +126,7 @@
 
         **Dấu hiệu:** Tính lãi đơn 200+3·8 rồi gọi là lãi kép.
 
-        **Tự sửa:** Lập lần lượt số dư năm 0,1,2,3; nêu giả định mô hình. [Làm lại câu B18-P05](../luyen-tap/?item=THPT-G11-CHVI-B18-P05).
+        **Tự sửa:** Lập lần lượt số dư năm 0,1,2,3; nêu giả định mô hình. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P05">Làm lại câu B18-P05</a>.
 
 === "Kiến thức SGK"
 
@@ -208,7 +208,7 @@
 
     ### 3.7. Kí hiệu khoa học
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-07"><p><strong>Đề bài:</strong> Viết \(0{,}00000036\) m dưới dạng kí hiệu khoa học.</p><p><strong>Phân tích:</strong> Dịch dấu phẩy bảy vị trí sang phải được 3,6, rồi nhân ngược với \(10^{-7}\).</p><p><strong>Lời giải:</strong> \(0{,}00000036=3{,}6\cdot10^{-7}\) m.</p><p><strong>Kiểm lại:</strong> Hệ số nằm trong [1,10); dịch dấu phẩy ngược bảy vị trí khôi phục giá trị ban đầu.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-07"><p><strong>Đề bài:</strong> Viết \(0{,}00000036\) m dưới dạng kí hiệu khoa học.</p><p><strong>Phân tích:</strong> Dịch dấu phẩy bảy vị trí sang phải được 3,6, rồi nhân ngược với \(10^{-7}\).</p><p><strong>Lời giải:</strong> \(0{,}00000036=3{,}6\cdot10^{-7}\) m.</p><p><strong>Kiểm lại:</strong> Hệ số thuộc \([1,10)\); dịch dấu phẩy ngược bảy vị trí khôi phục giá trị ban đầu.</p></div>
 
     ### 3.8. Tăng trưởng sau các kỳ nhập lãi
 
@@ -222,7 +222,7 @@
 
         **Vì sao sai:** Dấu trừ của số mũ làm lấy nghịch đảo.
 
-        **Tự sửa:** Tính lại bằng 1/a^n, ôn 2.1. [Làm lại câu B18-C01](../luyen-tap/?item=THPT-G11-CHVI-B18-C01).
+        **Tự sửa:** Tính lại bằng 1/a^n, ôn 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C01">Làm lại câu B18-C01</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVI-B18-02" hidden></span>
 
@@ -230,7 +230,7 @@
 
         **Vì sao sai:** Căn chẵn chọn giá trị không âm; định nghĩa căn hữu tỉ cần cơ số dương.
 
-        **Tự sửa:** Ôn 2.2 và ví dụ 3.2. [Làm lại câu B18-C02](../luyen-tap/?item=THPT-G11-CHVI-B18-C02).
+        **Tự sửa:** Ôn 2.2 và ví dụ 3.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C02">Làm lại câu B18-C02</a>.
 
     <span data-thpt-help-id="HELP-G11-B18-03" hidden></span>
 
@@ -238,7 +238,7 @@
 
         **Vì sao sai:** Phép cộng không gộp số mũ.
 
-        **Tự sửa:** Thử 3²+3³=36 khác 3⁵=243; ôn 2.1. [Làm lại câu B18-P06](../luyen-tap/?item=THPT-G11-CHVI-B18-P06).
+        **Tự sửa:** Thử 3²+3³=36 khác 3⁵=243; ôn 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P06">Làm lại câu B18-P06</a>.
 
     <span data-thpt-help-id="HELP-G11-B18-04" hidden></span>
 
@@ -246,8 +246,8 @@
 
         **Vì sao sai:** Lãi mỗi kỳ tính trên số dư đã nhập lãi.
 
-        **Tự sửa:** Lập bảng số dư sau từng kỳ trước khi dùng công thức. [Làm lại câu B18-P05](../luyen-tap/?item=THPT-G11-CHVI-B18-P05).
+        **Tự sửa:** Lập bảng số dư sau từng kỳ trước khi dùng công thức. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P05">Làm lại câu B18-P05</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vi/">Tự luận Chương VI</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 18 (trang in 4–9).</p>
