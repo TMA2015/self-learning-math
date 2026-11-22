@@ -108,6 +108,34 @@
 
         **Tự sửa:** Tính khối nước thực tế, nhân 1000 để đổi m³ sang lít. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C05">Luyện lại câu B27-C05</a>.
 
+    ### 1.6. Tích hợp Chương VII: từ vuông góc, hình chiếu, góc đến thể tích
+
+    Khi chỉ biết cạnh bên của một hình chóp, em **chưa biết chiều cao**. Hãy liên hệ: Bài 23 xác định đường vuông góc mặt đáy, Bài 24 xác định **hình chiếu vuông góc** của cạnh bên để đo góc đường–mặt, Bài 26 tính khoảng cách đỉnh–đáy, và Bài 27 mới dùng chiều cao thật để tính thể tích. Các bước này dựa vào một **tam giác vuông**, không dựa vào việc cạnh xiên nhìn có vẻ thẳng đứng trong hình.
+
+    **Vận dụng — Tự thử tích hợp trước Core.** Cho hình chóp \(S.ABCD\) có đáy \(ABCD\) là **hình vuông cạnh \(6\) cm**. Gọi \(O\) là tâm hình vuông, biết \(SO\perp(ABCD)\) và cạnh bên \(SA=\sqrt{34}\) cm. (a) Giải thích vì sao \(AO\) là hình chiếu vuông góc của \(AS\) lên mặt đáy; xác định góc giữa \(SA\) với \((ABCD)\). (b) Tính khoảng cách từ \(S\) đến mặt phẳng đáy. (c) Tính thể tích khối chóp. (d) Nếu bạn lấy \(SA\) làm chiều cao thì sai ở điều kiện nào? Tự thử trước khi mở Đối chiếu.
+
+    <span data-ped-first-try="6" data-outcome-id="G11-CHVII-INTEGRATED" data-thpt-first-try-id="THPT-G11-B27-TRY06" hidden></span>
+
+    ??? question "Đối chiếu — nối bốn khái niệm"
+
+        **Bước 1 — đọc hình chiếu:** \(A\in(ABCD)\) nên ảnh vuông góc của \(A\) là \(A\); vì \(SO\perp(ABCD)\), ảnh vuông góc của \(S\) là \(O\). Do đó đoạn \(AO\) là hình chiếu vuông góc của \(AS\) lên đáy. Góc đường thẳng \(SA\) với đáy là **\(\angle SAO\)**, vì \(AO\ne0\).
+
+        **Bước 2 — khoảng cách vuông góc:** Đường chéo vuông \(AC=6\sqrt2\) cm, \(AO=3\sqrt2\) cm. Tam giác \(SAO\) vuông tại \(O\); theo Pythagore, \(SO^2=SA^2-AO^2=34-18=16\). Vì \(SO>0\), suy ra **\(SO=4\) cm**, tức \(d(S,(ABCD))=4\) cm. Có thể kiểm \(\tan\angle SAO=SO/AO=4/(3\sqrt2)\).
+
+        **Bước 3 — thể tích:** Diện tích đáy \(6^2=36\) cm², nên \(V_{S.ABCD}=\frac13\cdot36\cdot4=\boxed{48\text{ cm}^3}\).
+
+        **Kiểm điều kiện:** \(SA\) **không vuông góc với đáy** vì hình chiếu \(AO\) có độ dài khác \(0\). Dùng \(SA=\sqrt{34}\) làm chiều cao là sai: công thức thể tích dùng **độ dài đoạn vuông góc \(SO\)**, không phải cạnh bên.
+
+    <span data-thpt-help-id="HELP-G11-B27-TRY06" hidden></span>
+
+    ??? tip "Kiểm lỗi — dùng cạnh xiên, bỏ bước dựng hình chiếu"
+
+        **Dấu hiệu:** Em thay \(h=\sqrt{34}\) hoặc gọi góc giữa \(SA\) và đáy là góc với một cạnh đáy bất kì.
+
+        **Vì sao sai:** Góc đường–mặt phải lấy góc với **hình chiếu vuông góc** của đường lên mặt, còn khoảng cách từ đỉnh đến đáy phải nằm trên đường **vuông góc mặt đáy**.
+
+        **Tự sửa:** Vẽ riêng tam giác vuông \(SAO\), đánh dấu \(SO\perp AO\), tính \(AO\) từ nửa đường chéo của hình vuông, rồi suy \(SO\) bằng Pythagore. Ôn Bài 23–24, Bài 26 và làm câu Core tích hợp `THPT-G11-CHVII-CHVII-C01` trong <a href="../luyen-tap/?item=THPT-G11-CHVII-CHVII-C01">Core Chương VII</a> **sau khi tự giải**.
+
 === "Kiến thức SGK"
 
     ### 2.1. Thể tích các khối lăng trụ, khối hộp, khối chóp và khối chóp cụt đều
@@ -181,6 +209,15 @@
 
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B27-R02-08"><p><strong>Đề bài:</strong> Một phòng dạng hộp chữ nhật dài 6 m, rộng 3,5 m, cao 2,8 m. Tính thể tích; theo giả định yêu cầu công suất lạnh 180 BTU/h cho mỗi m³, ước lượng công suất.</p><p><strong>Phân tích:</strong> Tính thể tích trước; đây chỉ là mô hình hệ số được cho, không là tư vấn chọn thiết bị thực tế.</p><p><strong>Lời giải:</strong> \(V=6\cdot3{,}5\cdot2{,}8=58{,}8\) m³. Công suất theo giả định \(58{,}8\cdot180=10584\) BTU/h.</p><p><strong>Kiểm lại:</strong> Phải phân biệt m³ và BTU/h, kết quả phụ thuộc giả định cách nhiệt và môi trường.</p></div>
 
+    ### 3.9. Bài tích hợp: chọn đúng chiều cao trước khi tính thể tích
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B27-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Một hình chóp có đáy hình chữ nhật \(ABCD\), \(AB=8\) cm, \(AD=6\) cm. Gọi \(O\) là giao hai đường chéo, \(SO\perp(ABCD)\), \(SA=13\) cm. Tính \(SO\), góc giữa \(SA\) và mặt đáy (theo tang của góc) và thể tích chóp.</p>
+    <p><strong>Chọn phương pháp:</strong> Trước hết xác định \(O\) là chân hình chiếu vuông góc của \(S\). Tâm hình chữ nhật cách mỗi đỉnh bằng **nửa đường chéo**; vì \(SA\) là cạnh xiên, phải dùng tam giác vuông \(SAO\) để tìm \(SO\) rồi mới dùng công thức thể tích chóp.</p>
+    <p><strong>Lời giải:</strong> \(AC=\sqrt{8^2+6^2}=10\) cm, \(AO=5\) cm. Tam giác \(SAO\) vuông tại \(O\): \(SO=\sqrt{13^2-5^2}=12\) cm. Hình chiếu vuông góc của \(SA\) trên đáy là \(AO\), góc giữa đường \(SA\) và đáy là \(\angle SAO\) với \(\tan\angle SAO=12/5\). Diện tích đáy là \(8\cdot6=48\) cm²; thể tích \(V=\frac13\cdot48\cdot12=\boxed{192\text{ cm}^3}\).</p>
+    <p><strong>Kiểm lại:</strong> Độ dài \(SO=12\) cm nhỏ hơn cạnh xiên \(SA=13\) cm, \(AO\ne0\) nên góc đường–mặt được xác định rõ. Tính thể tích cho **hình chóp**, không dùng công thức hình lăng trụ \(S_{\mathrm{đáy}}h\). Mọi kích thước ở cùng đơn vị cm.</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G11-CHVII-B27-01" hidden></span>
@@ -214,6 +251,16 @@
         **Vì sao sai:** Một m³ bằng 1000 dm³ hay 1000 lít.
 
         **Tự sửa:** Ghi đơn vị ở từng bước; ôn 3.7. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C05">Luyện lại câu B27-C05</a>.
+
+    <span data-thpt-help-id="HELP-G11-B27-INTEGRATED" hidden></span>
+
+    ??? tip "4.5. Nhầm góc đường–mặt và chiều cao chóp"
+
+        **Dấu hiệu:** Em lấy \(SA\) làm chiều cao vì nó nối đỉnh với đáy, hoặc dùng góc giữa \(SA\) với cạnh \(AB\) thay góc đường–mặt.
+
+        **Vì sao sai:** Cần chân vuông góc \(O\), hình chiếu đường \(SA\) là \(AO\). Chỉ \(SO\perp(ABCD)\) nên \(SO\) mới là khoảng cách từ \(S\) đến đáy.
+
+        **Tự sửa:** Ôn §1.6 và Ví dụ 3.9, dựng đúng tam giác \(SAO\), sau đó luyện `THPT-G11-CHVII-CHVII-C01` tại <a href="../luyen-tap/?item=THPT-G11-CHVII-CHVII-C01">Core Chương VII</a> trước khi xem lời giải.
 
     **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vii/">Tự luận Chương VII</a>.
 
