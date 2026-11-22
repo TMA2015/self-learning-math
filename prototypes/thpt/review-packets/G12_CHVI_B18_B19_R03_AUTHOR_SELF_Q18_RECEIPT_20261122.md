@@ -8,12 +8,23 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 AUTHORING_PASS: CONTENT_READY_SOURCE_ONLY
 SOURCE_PATH: prototypes/thpt/content-drafts/G12_CHVI_B18_B19_R03_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: 14dfe9938beb58f4fa27ef2bacef770c308f7bc7
+SOURCE_BLOB: ef186d5ee73fed12195145b8decc0b5b112418ca
 RELEASE_AUTHORIZATION: NO
 MASTER_ISSUE: 987
 DELTA: R02_DELTA_C_ACADEMIC_MATERIAL; R03_DELTA_B_SOURCE_EQUIVALENT_NAV
 P0_AUTHOR_FOUND: 0
 P1_AUTHOR_FOUND: 0
+
+AUTHOR_SELF_QA_RECEIPT: YES — accountable authored academic+PED source-check only, not NotebookLM review
+S1_RECEIPT: 94b4a620cf71e143d021c06b75491f19af8ab1f1 — original SGK/SBT direct-visual evidence preserved at R02, no new R03 textbook claim
+OUTCOME_AUDIT: 14 outcome IDs; 56 canonical C/P/A/W item IDs in 14 four-role groups, 22 FirstTry source-local, 14 D6 HELPs, seven SHA-locked SVG
+MATH_VERIFICATION: R02 limited 64/64 math groups, R03 direct check ID matrix and unchanged numeric/math source during 96 link conversions; current Q18 exact new source manifest
+PED_VERIFICATION: 27 reasoned EX, 22 FirstTry with voluntarily concealed comparison, 22 local cause-specific D6 and Core/Practice return paths
+CANONICAL_Q15: 56 unique frozen bank IDs, one bank, original 14 END references are placements and 22 genuine source-local TRY IDs
+ASSESSMENT_Q16: public END is CLIENT_SELF_CHECK_NO_MASTERY only; private 14 RD1 outside public repo; no independent chapter readiness or Mastery
+P0: 0
+P1: 0
+AUTHOR_SIGNOFF: AUTHOR_SELF_VERIFIED on source-locked B18/B19 Q01–Q18 scope as evidenced below, not an independent reviewer verdict
 
 ## 1. Source-authority receipt và phạm vi thực sự kiểm
 
