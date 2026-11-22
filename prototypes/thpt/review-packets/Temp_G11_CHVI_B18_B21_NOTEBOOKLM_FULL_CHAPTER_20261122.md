@@ -1,9 +1,9 @@
 # Temp_ · SGK Toán 11 Chương VI B18–B21 · một gói phản biện độc lập Delta-C
 ROLE: REVIEW_COPY_NOT_LEARNER_SOURCE
 BRANCH: authoring/sgk-g11-chvi-b18-b21-r02-20261122
-Q18_RECEIPT_PATH: prototypes/thpt/ux795/G11_CHVI_B18_B21_SGK_AUTHORING_Q18_20261122.md
-Q18_RECEIPT_BLOB: f66f0e366d045166a6d283fcfd4a11b802f7076c
-SCOPE: AUTHORING only; current exact learner candidate blobs; no independent reviewer result yet
+Q18_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHVI_B18_B21_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
+Q18_RECEIPT_BLOB: 015e5a58c1a90a7f1c3bc23c7b6f8a4a98d3696e
+SCOPE: R04 AUTHOR_SELF_VERIFIED CONTENT_READY academic source; REVIEW_COPY_ONLY, no independent verdict or RELEASE
 PRIVATE_RD1: NOT_INCLUDED
 
 ## Prompt review (4 câu)
@@ -14,19 +14,20 @@ PRIVATE_RD1: NOT_INCLUDED
 4. Ghi SOURCE_RECEIPT đúng bốn Git learner blobs và Q18 receipt blob ở đây, phân biệt PASS lịch sử với bản mới, không cấp CONTENT_READY hoặc RELEASE PASS chỉ dựa vào tự kiểm/metadata.
 
 ## Source SHA
+PACKET_ID: Temp_G11_CHVI_B18_B21_R04_INDEPENDENT_REVIEW_20261122
 | Lesson | Canonical path | Exact Git blob |
 | --- | --- | --- |
-| B18 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md | 26618bb80b2a60db5528e74f2889a47b2e872f4d |
-| B19 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md | 60eb65189e9176016b7037591c1859b0c702c311 |
-| B20 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md | 0d2ba970c8d5af3024e38c55a3551524a327aee1 |
-| B21 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md | f88193938f9ee21eb1a0ac1c7e3c40f66b854191 |
+| B18 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md | c2aa5bb21c9a6c7b0ba56eb7376f12ef5da75d4e |
+| B19 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md | 8de2716f1e388f365d7cccc6bf4a421fcf7bfbac |
+| B20 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md | 8f12059944f99c8665c2521418b6d7f07ae33ed6 |
+| B21 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md | 922d5fddc8131f5d999abfbfd610cdfb78a8083a |
 
 Đây là bản sao phục vụ phản biện; chỉ sửa và khóa lại nguồn canonical ở đúng đường dẫn learner khi cần, không tích hợp bản Temp vào website. Nguồn PASS trước đây là bản immutable khác.
 
 
 ---
 
-## REVIEW SOURCE B18 BEGIN · 26618bb80b2a60db5528e74f2889a47b2e872f4d
+## REVIEW SOURCE B18 BEGIN · c2aa5bb21c9a6c7b0ba56eb7376f12ef5da75d4e
 
 # Bài 18. Lũy thừa với số mũ thực
 
@@ -56,7 +57,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Đổi dấu giá trị thay vì lấy nghịch đảo.
 
-        **Tự sửa:** Viết lũy thừa âm thành phân thức trước khi tính. [Làm lại câu B18-C01](../luyen-tap/?item=THPT-G11-CHVI-B18-C01).
+        **Tự sửa:** Viết lũy thừa âm thành phân thức trước khi tính. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C01">Làm lại câu B18-C01</a>.
 
     ### 1.2. Căn bậc n và dấu của số dưới căn
 
@@ -76,7 +77,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Viết căn bậc chẵn có hai giá trị.
 
-        **Tự sửa:** Tách yêu cầu tính căn số học và giải phương trình; kiểm số mũ chẵn/lẻ. [Làm lại câu B18-C05](../luyen-tap/?item=THPT-G11-CHVI-B18-C05).
+        **Tự sửa:** Tách yêu cầu tính căn số học và giải phương trình; kiểm số mũ chẵn/lẻ. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C05">Làm lại câu B18-C05</a>.
 
     ### 1.3. Số mũ hữu tỉ là phép lấy căn rồi nâng lũy thừa
 
@@ -96,7 +97,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Đảo tử mẫu của số mũ hoặc coi mũ âm là giá trị âm.
 
-        **Tự sửa:** Đọc mẫu số của số mũ là bậc căn rồi xử lý mũ nguyên ở tử. [Làm lại câu B18-P02](../luyen-tap/?item=THPT-G11-CHVI-B18-P02).
+        **Tự sửa:** Đọc mẫu số của số mũ là bậc căn rồi xử lý mũ nguyên ở tử. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P02">Làm lại câu B18-P02</a>.
 
     ### 1.4. Số mũ vô tỉ được hình thành thế nào?
 
@@ -116,7 +117,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Nghĩ chỉ số mũ nguyên mới có nghĩa, hoặc bỏ điều kiện a>0.
 
-        **Tự sửa:** Ôn định nghĩa số mũ hữu tỉ và giới hạn ở mục 2.3; kiểm cơ số trước. [Làm lại câu B18-C04](../luyen-tap/?item=THPT-G11-CHVI-B18-C04).
+        **Tự sửa:** Ôn định nghĩa số mũ hữu tỉ và giới hạn ở mục 2.3; kiểm cơ số trước. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C04">Làm lại câu B18-C04</a>.
 
     ### 1.5. Cùng cơ số thì cộng số mũ khi nhân, không phải khi cộng
 
@@ -136,7 +137,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Cộng số mũ tùy ý hoặc bỏ điều kiện cơ số.
 
-        **Tự sửa:** Viết riêng phép nhân, chia, lũy thừa của lũy thừa; đối chiếu điều kiện. [Làm lại câu B18-P01](../luyen-tap/?item=THPT-G11-CHVI-B18-P01).
+        **Tự sửa:** Viết riêng phép nhân, chia, lũy thừa của lũy thừa; đối chiếu điều kiện. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P01">Làm lại câu B18-P01</a>.
 
     ### 1.6. Lãi kép: nhân theo từng kỳ, không cộng mãi cùng số tiền
 
@@ -156,7 +157,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Tính lãi đơn 200+3·8 rồi gọi là lãi kép.
 
-        **Tự sửa:** Lập lần lượt số dư năm 0,1,2,3; nêu giả định mô hình. [Làm lại câu B18-P05](../luyen-tap/?item=THPT-G11-CHVI-B18-P05).
+        **Tự sửa:** Lập lần lượt số dư năm 0,1,2,3; nêu giả định mô hình. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P05">Làm lại câu B18-P05</a>.
 
 === "Kiến thức SGK"
 
@@ -238,7 +239,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
     ### 3.7. Kí hiệu khoa học
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-07"><p><strong>Đề bài:</strong> Viết \(0{,}00000036\) m dưới dạng kí hiệu khoa học.</p><p><strong>Phân tích:</strong> Dịch dấu phẩy bảy vị trí sang phải được 3,6, rồi nhân ngược với \(10^{-7}\).</p><p><strong>Lời giải:</strong> \(0{,}00000036=3{,}6\cdot10^{-7}\) m.</p><p><strong>Kiểm lại:</strong> Hệ số nằm trong [1,10); dịch dấu phẩy ngược bảy vị trí khôi phục giá trị ban đầu.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B18-R02-07"><p><strong>Đề bài:</strong> Viết \(0{,}00000036\) m dưới dạng kí hiệu khoa học.</p><p><strong>Phân tích:</strong> Dịch dấu phẩy bảy vị trí sang phải được 3,6, rồi nhân ngược với \(10^{-7}\).</p><p><strong>Lời giải:</strong> \(0{,}00000036=3{,}6\cdot10^{-7}\) m.</p><p><strong>Kiểm lại:</strong> Hệ số thuộc \([1,10)\); dịch dấu phẩy ngược bảy vị trí khôi phục giá trị ban đầu.</p></div>
 
     ### 3.8. Tăng trưởng sau các kỳ nhập lãi
 
@@ -252,7 +253,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Dấu trừ của số mũ làm lấy nghịch đảo.
 
-        **Tự sửa:** Tính lại bằng 1/a^n, ôn 2.1. [Làm lại câu B18-C01](../luyen-tap/?item=THPT-G11-CHVI-B18-C01).
+        **Tự sửa:** Tính lại bằng 1/a^n, ôn 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C01">Làm lại câu B18-C01</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVI-B18-02" hidden></span>
 
@@ -260,7 +261,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Căn chẵn chọn giá trị không âm; định nghĩa căn hữu tỉ cần cơ số dương.
 
-        **Tự sửa:** Ôn 2.2 và ví dụ 3.2. [Làm lại câu B18-C02](../luyen-tap/?item=THPT-G11-CHVI-B18-C02).
+        **Tự sửa:** Ôn 2.2 và ví dụ 3.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C02">Làm lại câu B18-C02</a>.
 
     <span data-thpt-help-id="HELP-G11-B18-03" hidden></span>
 
@@ -268,7 +269,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Phép cộng không gộp số mũ.
 
-        **Tự sửa:** Thử 3²+3³=36 khác 3⁵=243; ôn 2.1. [Làm lại câu B18-P06](../luyen-tap/?item=THPT-G11-CHVI-B18-P06).
+        **Tự sửa:** Thử 3²+3³=36 khác 3⁵=243; ôn 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P06">Làm lại câu B18-P06</a>.
 
     <span data-thpt-help-id="HELP-G11-B18-04" hidden></span>
 
@@ -276,18 +277,17 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Lãi mỗi kỳ tính trên số dư đã nhập lãi.
 
-        **Tự sửa:** Lập bảng số dư sau từng kỳ trước khi dùng công thức. [Làm lại câu B18-P05](../luyen-tap/?item=THPT-G11-CHVI-B18-P05).
+        **Tự sửa:** Lập bảng số dư sau từng kỳ trước khi dùng công thức. <a href="../luyen-tap/?item=THPT-G11-CHVI-B18-P05">Làm lại câu B18-P05</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vi/">Tự luận Chương VI</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 18 (trang in 4–9).</p>
-
 
 ## REVIEW SOURCE B18 END
 
 ---
 
-## REVIEW SOURCE B19 BEGIN · 60eb65189e9176016b7037591c1859b0c702c311
+## REVIEW SOURCE B19 BEGIN · 8de2716f1e388f365d7cccc6bf4a421fcf7bfbac
 
 # Bài 19. Lôgarit
 
@@ -317,7 +317,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Chia đối số cho cơ số.
 
-        **Tự sửa:** Đổi câu hỏi sang dạng a mũ x bằng M. [Làm lại câu B19-C01](../luyen-tap/?item=THPT-G11-CHVI-B19-C01).
+        **Tự sửa:** Đổi câu hỏi sang dạng a mũ x bằng M. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-C01">Làm lại câu B19-C01</a>.
 
     ### 1.2. Vì sao hai thừa số phải dương riêng rẽ khi tách tích?
 
@@ -337,7 +337,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Tách tích ngay sau khi kiểm tích dương.
 
-        **Tự sửa:** Kiểm từng đối số sau biến đổi; dùng bảng dấu. [Làm lại câu B19-P04](../luyen-tap/?item=THPT-G11-CHVI-B19-P04).
+        **Tự sửa:** Kiểm từng đối số sau biến đổi; dùng bảng dấu. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P04">Làm lại câu B19-P04</a>.
 
     ### 1.3. Nhân, chia và nâng lũy thừa chuyển thành cộng, trừ và nhân số mũ
 
@@ -357,7 +357,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Nhầm dấu trừ hoặc logarit của tổng.
 
-        **Tự sửa:** Viết từng số thành lũy thừa cơ số 5 rồi kiểm lại phép gộp. [Làm lại câu B19-P01](../luyen-tap/?item=THPT-G11-CHVI-B19-P01).
+        **Tự sửa:** Viết từng số thành lũy thừa cơ số 5 rồi kiểm lại phép gộp. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P01">Làm lại câu B19-P01</a>.
 
     ### 1.4. Đổi cơ số để dùng máy tính hoặc lũy thừa dễ nhận biết
 
@@ -377,7 +377,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Đổi cơ số bằng logarit của thương.
 
-        **Tự sửa:** Dùng thương của hai logarit cùng một cơ số, không dùng logarit của thương. [Làm lại câu B19-P05](../luyen-tap/?item=THPT-G11-CHVI-B19-P05).
+        **Tự sửa:** Dùng thương của hai logarit cùng một cơ số, không dùng logarit của thương. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P05">Làm lại câu B19-P05</a>.
 
     ### 1.5. Lôgarit thập phân: đọc số mũ trong thang đo
 
@@ -397,7 +397,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Cho rằng giảm nồng độ làm pH giảm cùng tỷ lệ.
 
-        **Tự sửa:** Đổi nồng độ thành lũy thừa 10; chú ý dấu trừ. [Làm lại câu B19-P06](../luyen-tap/?item=THPT-G11-CHVI-B19-P06).
+        **Tự sửa:** Đổi nồng độ thành lũy thừa 10; chú ý dấu trừ. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P06">Làm lại câu B19-P06</a>.
 
     ### 1.6. Số e, lôgarit tự nhiên và tăng trưởng liên tục
 
@@ -417,7 +417,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Dùng số lần nhân nguyên cho mô hình thời gian liên tục.
 
-        **Tự sửa:** Phân biệt cập nhật theo kỳ với công thức liên tục; ghi đơn vị của t. [Làm lại câu B19-P06](../luyen-tap/?item=THPT-G11-CHVI-B19-P06).
+        **Tự sửa:** Phân biệt cập nhật theo kỳ với công thức liên tục; ghi đơn vị của t. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P06">Làm lại câu B19-P06</a>.
 
 === "Kiến thức SGK"
 
@@ -475,15 +475,15 @@ PRIVATE_RD1: NOT_INCLUDED
 
     ### 3.2. Điều kiện với bình phương
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-02"><p><strong>Đề bài:</strong> Tìm tập xác định của \(\log_4((x-2)^2)\) và viết biểu thức theo logarit của trị tuyệt đối.</p><p><strong>Phân tích:</strong> Đối số phải dương, bình phương bằng 0 đúng khi x=2.</p><p><strong>Lời giải:</strong> Miền \(\mathbb R\setminus\{2\}\). Vì \(|x-2|\gt 0\), \(\log_4((x-2)^2)=2\log_4|x-2|\).</p><p><strong>Kiểm lại:</strong> Với x<2, logarit của x-2 không có nghĩa nhưng logarit của trị tuyệt đối có nghĩa.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-02"><p><strong>Đề bài:</strong> Tìm tập xác định của \(\log_4((x-2)^2)\) và viết biểu thức theo logarit của trị tuyệt đối.</p><p><strong>Phân tích:</strong> Đối số phải dương, bình phương bằng 0 đúng khi x=2.</p><p><strong>Lời giải:</strong> Miền \(\mathbb R\setminus\{2\}\). Vì \(|x-2|\gt 0\), \(\log_4((x-2)^2)=2\log_4|x-2|\).</p><p><strong>Kiểm lại:</strong> Với \(x<2\), lôgarit của \(x-2\) không có nghĩa nhưng lôgarit của \(|x-2|\) có nghĩa.</p></div>
 
     ### 3.3. Gộp thương và tích
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-03"><p><strong>Đề bài:</strong> Tính \(\log_3 54-\log_3 2+\log_3 9\).</p><p><strong>Phân tích:</strong> Các đối số dương cho phép gộp.</p><p><strong>Lời giải:</strong> \(=\log_3(54\cdot9/2)=\log_3 243=5\).</p><p><strong>Kiểm lại:</strong> (3^5=243); đúng chiều tính ngược.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-03"><p><strong>Đề bài:</strong> Tính \(\log_3 54-\log_3 2+\log_3 9\).</p><p><strong>Phân tích:</strong> Các đối số dương cho phép gộp.</p><p><strong>Lời giải:</strong> \(=\log_3(54\cdot9/2)=\log_3 243=5\).</p><p><strong>Kiểm lại:</strong> \(3^5=243\); đúng chiều tính ngược.</p></div>
 
     ### 3.4. Đổi cơ số và tính gần đúng
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-04"><p><strong>Đề bài:</strong> Tính \(\log_7 13\) đến ba chữ số thập phân.</p><p><strong>Phân tích:</strong> 7 và 13 dương, 7 khác 1; dùng cơ số e.</p><p><strong>Lời giải:</strong> \(\log_7 13=\ln13/\ln7\approx1{,}318\).</p><p><strong>Kiểm lại:</strong> Vì 7<13<49, kết quả nằm giữa 1 và 2.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B19-R02-04"><p><strong>Đề bài:</strong> Tính \(\log_7 13\) đến ba chữ số thập phân.</p><p><strong>Phân tích:</strong> 7 và 13 dương, 7 khác 1; dùng cơ số e.</p><p><strong>Lời giải:</strong> \(\log_7 13=\ln13/\ln7\approx1{,}318\).</p><p><strong>Kiểm lại:</strong> Vì \(7<13<49\), kết quả nằm giữa \(1\) và \(2\).</p></div>
 
     ### 3.5. Ứng dụng thang lôgarit thập phân
 
@@ -501,7 +501,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Logarit trả về số mũ trong a^x=M.
 
-        **Tự sửa:** Chuyển về lũy thừa rồi thế ngược. [Làm lại câu B19-C01](../luyen-tap/?item=THPT-G11-CHVI-B19-C01).
+        **Tự sửa:** Chuyển về lũy thừa rồi thế ngược. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-C01">Làm lại câu B19-C01</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVI-B19-02" hidden></span>
 
@@ -509,7 +509,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Tích dương chưa đảm bảo mỗi thừa số dương.
 
-        **Tự sửa:** Lập bảng dấu từng biểu thức ở mục 2.2. [Làm lại câu B19-P04](../luyen-tap/?item=THPT-G11-CHVI-B19-P04).
+        **Tự sửa:** Lập bảng dấu từng biểu thức ở mục 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P04">Làm lại câu B19-P04</a>.
 
     <span data-thpt-help-id="HELP-G11-B19-03" hidden></span>
 
@@ -517,7 +517,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Logarit chỉ biến tích thành cộng, không biến tổng thành cộng.
 
-        **Tự sửa:** Thử M=N=1, so log_a2 với 0. [Làm lại câu B19-P02](../luyen-tap/?item=THPT-G11-CHVI-B19-P02).
+        **Tự sửa:** Thử M=N=1, so log_a2 với 0. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P02">Làm lại câu B19-P02</a>.
 
     <span data-thpt-help-id="HELP-G11-B19-04" hidden></span>
 
@@ -525,18 +525,17 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Mẫu đổi cơ số là logarit của cơ số a; ln cơ số e, lg cơ số 10.
 
-        **Tự sửa:** Viết công thức đổi cơ số trước khi bấm máy. [Làm lại câu B19-P05](../luyen-tap/?item=THPT-G11-CHVI-B19-P05).
+        **Tự sửa:** Viết công thức đổi cơ số trước khi bấm máy. <a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P05">Làm lại câu B19-P05</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vi/">Tự luận Chương VI</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 19 (trang in 10–15).</p>
-
 
 ## REVIEW SOURCE B19 END
 
 ---
 
-## REVIEW SOURCE B20 BEGIN · 0d2ba970c8d5af3024e38c55a3551524a327aee1
+## REVIEW SOURCE B20 BEGIN · 8f12059944f99c8665c2521418b6d7f07ae33ed6
 
 # Bài 20. Hàm số mũ và hàm số lôgarit
 
@@ -566,7 +565,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Tưởng mũ âm làm kết quả âm.
 
-        **Tự sửa:** Tính ba điểm mốc và kiểm miền giá trị ở mục 2.1. [Làm lại câu B20-C01](../luyen-tap/?item=THPT-G11-CHVI-B20-C01).
+        **Tự sửa:** Tính ba điểm mốc và kiểm miền giá trị ở mục 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C01">Làm lại câu B20-C01</a>.
 
     ### 1.2. Hai cơ số ở hai phía của 1 dẫn tới hai chiều biến thiên
 
@@ -586,7 +585,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Chỉ so số mũ rồi giữ chiều bất kể cơ số.
 
-        **Tự sửa:** Xác định a lớn hay nhỏ hơn 1 trước, đối chiếu mục 2.1. [Làm lại câu B20-C02](../luyen-tap/?item=THPT-G11-CHVI-B20-C02).
+        **Tự sửa:** Xác định a lớn hay nhỏ hơn 1 trước, đối chiếu mục 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C02">Làm lại câu B20-C02</a>.
 
     ### 1.3. Logarit chỉ tiếp nhận đầu vào dương
 
@@ -606,7 +605,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Nhầm điều kiện biến x dương với điều kiện đối số dương.
 
-        **Tự sửa:** Viết đúng đối số trên giấy rồi giải bất phương trình của nó. [Làm lại câu B20-C03](../luyen-tap/?item=THPT-G11-CHVI-B20-C03).
+        **Tự sửa:** Viết đúng đối số trên giấy rồi giải bất phương trình của nó. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C03">Làm lại câu B20-C03</a>.
 
     ### 1.4. Chiều biến thiên của hàm lôgarit
 
@@ -626,7 +625,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Tưởng mọi hàm logarit đều đồng biến.
 
-        **Tự sửa:** Kiểm cơ số và miền trước khi so; ôn mục 2.2. [Làm lại câu B20-P03](../luyen-tap/?item=THPT-G11-CHVI-B20-P03).
+        **Tự sửa:** Kiểm cơ số và miền trước khi so; ôn mục 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-P03">Làm lại câu B20-P03</a>.
 
     ### 1.5. Hàm ngược: đổi đầu vào và đầu ra
 
@@ -646,7 +645,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Đổi dấu tọa độ thay vì hoán đổi chúng.
 
-        **Tự sửa:** Viết a^u=v rồi viết log_a v=u, kiểm hai điểm theo thứ tự. [Làm lại câu B20-C04](../luyen-tap/?item=THPT-G11-CHVI-B20-C04).
+        **Tự sửa:** Viết a^u=v rồi viết log_a v=u, kiểm hai điểm theo thứ tự. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C04">Làm lại câu B20-C04</a>.
 
 === "Kiến thức SGK"
 
@@ -684,7 +683,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
     ### 3.1. Phân biệt hàm mũ và lũy thừa của biến
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-01"><p><strong>Đề bài:</strong> Trong \(y=7^x\) và \(y=x^7\), đâu là hàm số mũ? Nêu miền và tập giá trị của hàm mũ.</p><p><strong>Phân tích:</strong> Cơ số cố định, biến ở số mũ mới là hàm mũ.</p><p><strong>Lời giải:</strong> \(y=7^x\) là hàm mũ, xác định trên \(\mathbb R\), nhận mọi giá trị dương; tăng và đi qua (0;1),(1;7). \(x^7\) là hàm lũy thừa của biến.</p><p><strong>Kiểm lại:</strong> x^7 có thể âm, nên không gán tập giá trị dương của hàm mũ cho nó.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-01"><p><strong>Đề bài:</strong> Trong \(y=7^x\) và \(y=x^7\), đâu là hàm số mũ? Nêu miền và tập giá trị của hàm mũ.</p><p><strong>Phân tích:</strong> Cơ số cố định, biến ở số mũ mới là hàm mũ.</p><p><strong>Lời giải:</strong> \(y=7^x\) là hàm mũ, xác định trên \(\mathbb R\), nhận mọi giá trị dương; đồng biến, qua \((0;1)\) và \((1;7)\). \(x^7\) là hàm lũy thừa của biến.</p><p><strong>Kiểm lại:</strong> \(x^7\) có thể âm, nên không gán tập giá trị dương của hàm mũ cho nó.</p></div>
 
     ### 3.2. Lập điểm để vẽ một hàm mũ giảm
 
@@ -714,7 +713,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Cơ số giữa 0 và 1 làm giá trị giảm khi số mũ tăng.
 
-        **Tự sửa:** Ôn bảng ở mục 2.1 và thử hai số mũ khác nhau. [Làm lại câu B20-C02](../luyen-tap/?item=THPT-G11-CHVI-B20-C02).
+        **Tự sửa:** Ôn bảng ở mục 2.1 và thử hai số mũ khác nhau. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C02">Làm lại câu B20-C02</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVI-B20-02" hidden></span>
 
@@ -722,7 +721,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Hàm mũ và logarit hoán đổi đầu vào, đầu ra, không đổi dấu.
 
-        **Tự sửa:** Dùng đẳng thức a^u=v, rồi log_a v=u. [Làm lại câu B20-C04](../luyen-tap/?item=THPT-G11-CHVI-B20-C04).
+        **Tự sửa:** Dùng đẳng thức a^u=v, rồi log_a v=u. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C04">Làm lại câu B20-C04</a>.
 
     <span data-thpt-help-id="HELP-G11-B20-03" hidden></span>
 
@@ -730,7 +729,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Đối số logarit phải dương; logarit có thể âm nhưng không nhận đối số âm.
 
-        **Tự sửa:** Giải điều kiện của đối số, ôn mục 2.2. [Làm lại câu B20-C03](../luyen-tap/?item=THPT-G11-CHVI-B20-C03).
+        **Tự sửa:** Giải điều kiện của đối số, ôn mục 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C03">Làm lại câu B20-C03</a>.
 
     <span data-thpt-help-id="HELP-G11-B20-04" hidden></span>
 
@@ -738,18 +737,17 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Phải dùng điểm mốc đúng và tính đơn điệu theo cơ số.
 
-        **Tự sửa:** Kiểm (0;1) cho hàm mũ, (1;0) cho logarit rồi lập bảng. [Làm lại câu B20-P03](../luyen-tap/?item=THPT-G11-CHVI-B20-P03).
+        **Tự sửa:** Kiểm (0;1) cho hàm mũ, (1;0) cho logarit rồi lập bảng. <a href="../luyen-tap/?item=THPT-G11-CHVI-B20-P03">Làm lại câu B20-P03</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vi/">Tự luận Chương VI</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 20 (trang in 16–19).</p>
-
 
 ## REVIEW SOURCE B20 END
 
 ---
 
-## REVIEW SOURCE B21 BEGIN · f88193938f9ee21eb1a0ac1c7e3c40f66b854191
+## REVIEW SOURCE B21 BEGIN · 922d5fddc8131f5d999abfbfd610cdfb78a8083a
 
 # Bài 21. Phương trình, bất phương trình mũ và lôgarit
 
@@ -779,7 +777,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Chia hai vế như một phương trình bậc nhất hoặc chỉ so hệ số.
 
-        **Tự sửa:** Đưa cùng cơ số, tìm số mũ bằng tính đơn ánh. [Làm lại câu B21-C01](../luyen-tap/?item=THPT-G11-CHVI-B21-C01).
+        **Tự sửa:** Đưa cùng cơ số, tìm số mũ bằng tính đơn ánh. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-C01">Làm lại câu B21-C01</a>.
 
     ### 1.2. Phương trình lôgarit: điều kiện rồi đổi về lũy thừa
 
@@ -799,7 +797,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Bỏ điều kiện hoặc coi số mũ âm là đối số âm.
 
-        **Tự sửa:** Tìm miền, đổi logarit sang lũy thừa rồi kiểm lại. [Làm lại câu B21-C02](../luyen-tap/?item=THPT-G11-CHVI-B21-C02).
+        **Tự sửa:** Tìm miền, đổi logarit sang lũy thừa rồi kiểm lại. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-C02">Làm lại câu B21-C02</a>.
 
     ### 1.3. Bất phương trình mũ và cơ số nhỏ hơn 1
 
@@ -819,7 +817,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Giữ chiều như trường hợp cơ số lớn hơn 1.
 
-        **Tự sửa:** Viết ngay bên cạnh cơ số chữ 'giảm', đảo chiều rồi kiểm điểm biên. [Làm lại câu B21-P03](../luyen-tap/?item=THPT-G11-CHVI-B21-P03).
+        **Tự sửa:** Viết ngay bên cạnh cơ số chữ 'giảm', đảo chiều rồi kiểm điểm biên. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P03">Làm lại câu B21-P03</a>.
 
     ### 1.4. Bất phương trình lôgarit: kết hợp miền và chiều
 
@@ -839,7 +837,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Chỉ giải bất đẳng thức mới mà quên giao miền logarit.
 
-        **Tự sửa:** Viết hai dòng điều kiện và nghiệm đại số, lấy giao sau cùng. [Làm lại câu B21-P04](../luyen-tap/?item=THPT-G11-CHVI-B21-P04).
+        **Tự sửa:** Viết hai dòng điều kiện và nghiệm đại số, lấy giao sau cùng. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P04">Làm lại câu B21-P04</a>.
 
     ### 1.5. Điều kiện giao của nhiều đối số: nghiệm ngoại lai
 
@@ -859,7 +857,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Giải hai đối số bằng nhau kể cả khi không tồn tại miền chung.
 
-        **Tự sửa:** Lập giao điều kiện dương; nếu rỗng, dừng và kết luận vô nghiệm. [Làm lại câu B21-P05](../luyen-tap/?item=THPT-G11-CHVI-B21-P05).
+        **Tự sửa:** Lập giao điều kiện dương; nếu rỗng, dừng và kết luận vô nghiệm. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P05">Làm lại câu B21-P05</a>.
 
     ### 1.6. Vượt ngưỡng khác vừa đạt ngưỡng
 
@@ -879,7 +877,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Dấu hiệu:** Làm tròn ngưỡng 2 thành năm đạt mục tiêu dù hỏi vượt.
 
-        **Tự sửa:** Ghi dấu strict >, n nguyên; kiểm năm ngay trước và năm đã chọn. [Làm lại câu B21-P06](../luyen-tap/?item=THPT-G11-CHVI-B21-P06).
+        **Tự sửa:** Ghi dấu strict >, n nguyên; kiểm năm ngay trước và năm đã chọn. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P06">Làm lại câu B21-P06</a>.
 
 === "Kiến thức SGK"
 
@@ -937,7 +935,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
     ### 3.1. Phương trình mũ không cùng cơ số dễ nhận
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-01"><p><strong>Đề bài:</strong> Giải \(6^{2x-1}=11\).</p><p><strong>Phân tích:</strong> Vế phải dương nhưng không dễ viết thành lũy thừa nguyên của 6; lấy logarit cơ số 6.</p><p><strong>Lời giải:</strong> \(2x-1=\log_6 11\), suy ra \(x=(1+\log_6 11)/2\).</p><p><strong>Kiểm lại:</strong> Thế số mũ bằng log_6 11 cho giá trị 11, nghiệm duy nhất vì hàm mũ đơn ánh.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-01"><p><strong>Đề bài:</strong> Giải \(6^{2x-1}=11\).</p><p><strong>Phân tích:</strong> Vế phải dương nhưng không dễ viết thành lũy thừa nguyên của 6; lấy logarit cơ số 6.</p><p><strong>Lời giải:</strong> \(2x-1=\log_6 11\), suy ra \(x=(1+\log_6 11)/2\).</p><p><strong>Kiểm lại:</strong> Thế số mũ \(\log_6 11\) cho giá trị \(11\); nghiệm duy nhất vì hàm mũ cơ số \(6\) đơn ánh.</p></div>
 
     ### 3.2. Phương trình logarit ghép tích
 
@@ -953,11 +951,11 @@ PRIVATE_RD1: NOT_INCLUDED
 
     ### 3.5. Bất phương trình lôgarit hai đối số
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-05"><p><strong>Đề bài:</strong> Giải \(\log_{1/2}(x+4)\lt \log_{1/2}(2x-1)\).</p><p><strong>Phân tích:</strong> Hai đối số dương cho x>1/2; hàm giảm đảo chiều.</p><p><strong>Lời giải:</strong> \(x+4\gt 2x-1\), tức \(x\lt 5\). Giao miền được \((1/2,5)\).</p><p><strong>Kiểm lại:</strong> Tại x=1/2, logarit thứ hai không xác định; tại x=5 hai giá trị bằng nhau, cả hai biên đều loại.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-05"><p><strong>Đề bài:</strong> Giải \(\log_{1/2}(x+4)\lt \log_{1/2}(2x-1)\).</p><p><strong>Phân tích:</strong> Hai đối số dương cho x>1/2; hàm giảm đảo chiều.</p><p><strong>Lời giải:</strong> \(x+4\gt 2x-1\), tức \(x\lt 5\). Giao miền được \((1/2,5)\).</p><p><strong>Kiểm lại:</strong> Tại \(x=1/2\), lôgarit thứ hai không xác định; tại \(x=5\), hai giá trị bằng nhau. Vì bất phương trình nghiêm ngặt, cả hai biên đều bị loại.</p></div>
 
     ### 3.6. Mô hình suy giảm giá trị
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-06"><p><strong>Đề bài:</strong> Giá trị tài sản theo mô hình cuối năm \(V(n)=240(0{,}8)^n\) triệu đồng, n nguyên không âm. Năm đầu giá trị không quá 100 triệu là năm nào?</p><p><strong>Phân tích:</strong> Vì cơ số nhỏ hơn 1, bất phương trình đảo chiều. Phải kiểm số nguyên.</p><p><strong>Lời giải:</strong> Ta cần \((0{,}8)^n\le5/12\), tương đương \(n\ge \ln(5/12)/\ln(0{,}8)\approx3{,}923\). Năm đầu là n=4.</p><p><strong>Kiểm lại:</strong> (V(3)=122{,}88>100), (V(4)=98{,}304le100); hợp lệ.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-06"><p><strong>Đề bài:</strong> Giá trị tài sản theo mô hình cuối năm \(V(n)=240(0{,}8)^n\) triệu đồng, n nguyên không âm. Năm đầu giá trị không quá 100 triệu là năm nào?</p><p><strong>Phân tích:</strong> Vì cơ số nhỏ hơn 1, bất phương trình đảo chiều. Phải kiểm số nguyên.</p><p><strong>Lời giải:</strong> Ta cần \((0{,}8)^n\le5/12\), tương đương \(n\ge \ln(5/12)/\ln(0{,}8)\approx3{,}923\). Năm đầu là n=4.</p><p><strong>Kiểm lại:</strong> \(V(3)=122{,}88>100\), còn \(V(4)=98{,}304\le100\) (triệu đồng). Vì giá trị giảm theo \(n\), năm \(4\) là năm nguyên đầu tiên đạt mức không quá \(100\) triệu.</p></div>
 
     ### 3.7. Ứng dụng lôgarit tự nhiên cho áp suất
 
@@ -975,7 +973,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Mỗi đối số phải dương trước mọi phép bỏ log hoặc gộp tích.
 
-        **Tự sửa:** Lập miền và giao nghiệm; ôn mục 2.2. [Làm lại câu B21-P05](../luyen-tap/?item=THPT-G11-CHVI-B21-P05).
+        **Tự sửa:** Lập miền và giao nghiệm; ôn mục 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P05">Làm lại câu B21-P05</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVI-B21-02" hidden></span>
 
@@ -983,7 +981,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Hàm mũ và logarit cơ số này đều nghịch biến.
 
-        **Tự sửa:** Quan sát hình và kiểm chiều bằng hai số mũ cụ thể. [Làm lại câu B21-P04](../luyen-tap/?item=THPT-G11-CHVI-B21-P04).
+        **Tự sửa:** Quan sát hình và kiểm chiều bằng hai số mũ cụ thể. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P04">Làm lại câu B21-P04</a>.
 
     <span data-thpt-help-id="HELP-G11-B21-03" hidden></span>
 
@@ -991,7 +989,7 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Giá trị lũy thừa cơ số dương luôn dương; phải phân loại vế phải.
 
-        **Tự sửa:** Ôn mục 2.1, 2.3 và ví dụ 3.3. [Làm lại câu B21-P07](../luyen-tap/?item=THPT-G11-CHVI-B21-P07).
+        **Tự sửa:** Ôn mục 2.1, 2.3 và ví dụ 3.3. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P07">Làm lại câu B21-P07</a>.
 
     <span data-thpt-help-id="HELP-G11-B21-04" hidden></span>
 
@@ -999,103 +997,170 @@ PRIVATE_RD1: NOT_INCLUDED
 
         **Vì sao sai:** Một nghiệm ngưỡng thực không tự cho kỳ đầu vượt.
 
-        **Tự sửa:** Ghi dấu > hoặc ≥; kiểm hai kỳ liền kề. [Làm lại câu B21-P06](../luyen-tap/?item=THPT-G11-CHVI-B21-P06).
+        **Tự sửa:** Ghi dấu > hoặc ≥; kiểm hai kỳ liền kề. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P06">Làm lại câu B21-P06</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vi/">Tự luận Chương VI</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 21 (trang in 20–24).</p>
-
 
 ## REVIEW SOURCE B21 END
 
 ---
 
-## AUTHOR Q18 RECEIPT BEGIN · f66f0e366d045166a6d283fcfd4a11b802f7076c
+## AUTHOR Q18 RECEIPT BEGIN · 015e5a58c1a90a7f1c3bc23c7b6f8a4a98d3696e
 
-# G11 Chương VI · B18–B21 · AUTHORING Q18 source-lock · 22/11/2026
+# G11 SGK Chapter VI B18–B21 R04 · Current author-self Q18 academic/PED receipt
 
-**MASTER:** #987 (single checkpoint); OWNER_SCOPE=G11 B02–33, then G12 B01–19; **ROLE:** AUTHORING only. **STANDARD:** SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18, actual main standard blob `488afe2908e0b471320e1d55f775391578d88bba`, X-C/X-D/X-E/X-F. **Q18_MODE:** Q18_AUTHOR_SELF_VERIFIED; **DISPOSITION:** AUTHORING_SOURCE_CANDIDATE_READY; not new CONTENT_READY_V2, not RELEASE READY. **CHANGE:** DELTA_C_ACADEMIC_MATERIAL (new concept-first, examples, FirstTry, revised academic conditions and depth); scoped presentation changes only in learner Markdown. No release approval.
+PACKET_ID: G11-SGK-CHVI-B18-B21-R04
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+LEARNING_PATH: SGK_CHAPTER
+RELEASE_SCOPE: FULL_LEARNING_PATH
+SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVI_B18_B21_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
+SOURCE_BLOB: be26ddd1e3e93ff250333e6f378cfffff83a8394
+ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_R04
+PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_R04
+INDEPENDENT_NOTEBOOKLM_NEW_R04: NOT_CLAIMED
+HISTORICAL_INDEPENDENT_R01_SOURCE_BLOB: 17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872
+HISTORICAL_INDEPENDENT_R01_REVIEW_BLOB: 1badeeaf12462da1b0e2778213ce8a8dbf92e14b
+P0: 0
+P1: 0
+P2: 0
+PRIVATE_RD1_COUNT: 22
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+MASTERY_ACTIVATION: NO
+RELEASE_AUTHORIZATION: NO
 
-## 1. Exact canonical learner sources
+## Exact canonical source proof and S1
 
-| Lesson | Existing learner source (one per lesson) | Original main blob | Exact new candidate Git blob |
-| --- | --- | --- | --- |
-| B18 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md | fd7d7a33ec276c4e03c95185c5ea49b53643b584 | 26618bb80b2a60db5528e74f2889a47b2e872f4d |
-| B19 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md | f872e9f19e28467e1b6ea11a943e04a2edf3b266 | 60eb65189e9176016b7037591c1859b0c702c311 |
-| B20 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md | 1587f399e7ea9557a9fc490768c589991f25dcb0 | 0d2ba970c8d5af3024e38c55a3551524a327aee1 |
-| B21 | docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md | b7fb59866ce1b250e446cb957d975e7c58d037bb | f88193938f9ee21eb1a0ac1c7e3c40f66b854191 |
+One SHA-lock bundle `be26ddd1e3e93ff250333e6f378cfffff83a8394` enumerates thirteen original current components, no second learner. Learner Git blobs: B18 `c2aa5bb21c9a6c7b0ba56eb7376f12ef5da75d4e`, B19 `8de2716f1e388f365d7cccc6bf4a421fcf7bfbac`, B20 `8f12059944f99c8665c2521418b6d7f07ae33ed6`, B21 `922d5fddc8131f5d999abfbfd610cdfb78a8083a`. Original 41 public formative JS blob `33cf4229baa63ac70b4ca1b640a5be8414ed54c1`, 8 Written/Anchor library blob `dba16473909e60d1dc186f41dfc2e270f06a104e` remain immutable. Historic original SGK Toán 11 KNTT tập hai PDF 114 pages SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`; original SBT 126 pages SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`. Direct page-image source receipt previously signed at `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md`, and historical independently reviewed old R01 original source/reviewer remained SHA-specific. This turn read the original receipt and current four learner articles; public PDF URL returned too-large document, so **no fresh original publisher print-page visual rescan** and no current new NotebookLM review are claimed.
 
-Branch `authoring/sgk-g11-chvi-b18-b21-r02-20261122`. This receipt is the single new chapter Q18 author record. No parallel learner copies for production; any Temp packet is review-only, not a learner URL.
+## Student-facing math, outcome and pedagogy audit
 
-## 2. G0–G2 / Q01–Q02 · actual source evidence and scope
+**B18 (five lesson outcomes):** Integers, even/odd roots, rational/irrational exponents, exponent laws and compound growth are explained concept-first. Six first tries and eight worked examples checked: `(3/7)^(-2)=49/9`, 5th root of -243=-3, `125^(-2/3)=1/25`, `9<3^(√5)<27`, power combine `t^(5/3)`, `200*(1.04)^3=224.9728` million, and scientific `0.00000036=3.6*10^(-7)`. Original even-root sign and a>0 caveats retained. Different-example arithmetic 80*1.03^4=90.0407048 and 32^(3/5)=8 checked.
 
-Author inspected current accessible SGK digital text (Toán 11 KNTT tập hai, third reprint text, https://thuvienhoclieu.com/wp-content/uploads/2026/05/thuvienhoclieu.com-SGK-Toan-11-tu-nam-2026-Tap-2.pdf), TOC, chapter VI headings and formal knowledge paragraphs, including B18 integer/rational/real powers, B19 three main sections, B20 two function sections with domain/range/continuity and graphs, B21 four equation/inequality sections and sign cases. Automated web PDF page-image requests failed (cache miss). Extracted public PDF text has transcription artifacts (e.g. an inconsistent displayed result in the rational-power example); do NOT reproduce those as mathematics or certify them as a publisher erratum. The corrected mathematics was independently derived. This new turn did NOT inspect all physical page images, re-download or hash the owner's original PDFs.
+**B19 (five lesson outcomes):** Logarithm is unique exponent; base a>0,a≠1, positive arguments. `log_5[(x+3)(x-4)]` permits x<-3 or x>4 but split into two real log terms only x>4. Base change `log_8 4=2/3`; pH=-lg c with c numerical mol/L model, c=10^-5 gives pH5, decrease c 100-fold gives pH7. Natural log for continuous model t=ln2/.04≈17.3yr. Six worked with distinct domains and correct log_7 13≈1.318123 and ln3/.08≈13.73265; all 6 first tries hidden and locally correctable.
 
-Historical directly verified owner-source evidence (preserve for the exact prior snapshot):
-- `prototypes/thpt/review-packets/G11_CHVI_B18_B21_V2_COMPOSITE_HISTORIC_REVIEW_AND_OWNER_S1_RECEIPT_20261102.md` blob `1badeeaf12462da1b0e2778213ce8a8dbf92e14b`.
-- Owner SGK KNTT 11 T2 original scan 114 PDF pages, SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`; SBT T2 original scan 126 PDF pages, SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`; historical printed offset PDF1=printed+1, source visual receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md`.
-- SGK printed B18 4–9 / B19 10–15 / B20 16–19 / B21 20–24 / chapter exercises 25–26. SBT printed B18 4–7 / B19 8–10 / B20 11–15 / B21 16–19 / end chapter 20–23; SBT solutions chapter VI pp73–85 (not old erroneous pp117–134). These exact ranges are from the existing owner visual receipt, not newly inferred screenshots.
-- Historical independent Academic/PED PASS on original reviewed R01 blob `f37113dc2a3a002511bc6b53ec53e049537f1947`; effective postpass Delta-B source `17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872` at `prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md`; historical preflight `e3d66bccf5ca9d1da9cc5eb9f0291932d20a444c`. Old reviewer used five v2.0 Permanent Sources. Do not transplant that independent PASS to new Delta-C learner blobs.
+**B20 (five lesson outcomes):** Exponential positive range and all-real domain; log positive-argument domain, monotonicity for bases <1 and >1; five TRY cover reversible coordinates `(-2;1/25) ↔ (1/25;-2)` for base5. Six worked include correct y=(1/4)^x declining table, log_{1/4}x declining table and decay 160*(1/2)^(t/6), Q(12)=40, Q(18)=20. Typography of `x^7` and graph coordinates restored to inline TeX on current learner source.
 
-**Per-lesson SGK headings and outcome coverage** (exact outcome prefix G11-Bnn- followed by names below; 21 lesson-specific, original chapter-level G11-CHVI-INTEGRATED stays in existing Chapter VI bank; total 22 original outcome IDs):
-| Lesson | S1 sections in order | Outcome evidence in new source |
-| --- | --- | --- |
-| B18 | 2.1 Lũy thừa với số mũ nguyên; 2.2 Lũy thừa với số mũ hữu tỉ; 2.3 Lũy thừa với số mũ thực | POWER_INTEGER TRY01; POWER_RATIONAL TRY02–03; POWER_REAL TRY04; POWER_LAWS TRY05; GROWTH_MODEL TRY06; EX-R02-01–08; integer/zero/negative bases; chẵn/lẻ, căn thực và trị tuyệt đối; rule domains, rational power, real limit definition, monotonicity; calculator and compound growth |
-| B19 | 2.1 Khái niệm lôgarit; 2.2 Tính chất của lôgarit; 2.3 Lôgarit thập phân và lôgarit tự nhiên | LOG_DEFINITION TRY01; LOG_DOMAIN TRY02; LOG_LAWS TRY03; LOG_BASE_CHANGE TRY04; LOG_APPLICATION TRY05–06; EX-R02-01–06; individual positive arguments, change base, lg/ln, e limit and continuous compound interest; pH calculation under stated model |
-| B20 | 2.1 Hàm số mũ; 2.2 Hàm số lôgarit | EXP_FUNCTION TRY01; EXP_MONOTONIC TRY02; LOG_FUNCTION TRY03; LOG_MONOTONIC TRY04; INVERSE_GRAPH TRY05; EX-R02-01–06; domains/ranges, continuity, increasing/decreasing, tables and drawing guide, graph symmetry; half-life model |
-| B21 | 2.1 Phương trình mũ; 2.2 Phương trình lôgarit; 2.3 Bất phương trình mũ; 2.4 Bất phương trình lôgarit | EXP_EQUATION TRY01; LOG_EQUATION TRY02; EXP_INEQUALITY TRY03; LOG_INEQUALITY TRY04; DOMAIN_CHECK TRY05; REAL_CONTEXT TRY06; EX-R02-01–08; b<=0 mũ cases, strict/inclusive bounds, mixed reciprocal bases, rejected roots, discrete thresholds and pressure model |
+**B21 (six lesson outcomes; integrated outcome originally B21-P08):** Exponential/log equations preserve positive domains; decreasing base reverses inequalities, no log of nonpositive RHS, strict endpoints retained. `4^(x-2)=32` gives x=9/2; log_5(2x+3)=-1 gives x=-7/5 in x>-3/2; base1/5 example log_{1/5}(3-x)≥log_{1/5}2 gives [1,3); two-log disjoint domains yield no solution. Compound 50*(1.2)^n>72 gives first integer n=3 not 2. Eight worked: original model V(n)=240*(0.8)^n at n=3 is 122.88>100, at n=4 is **98.304≤100**, correctly restoring the previously broken printed operator `98{,}304le100`; continuous pressure model h≥-7ln0.6≈3.575779km and log inverse two-domain solution (-1,0]∪[2,3) checked. No original public question solutions/rubrics changed.
 
-## 3. Q03–Q14 · learner depth, math, graphics and D6
+**QA executed on exact R04 learner Git blobs:** 4/4 four ordered Golden tabs; 23/23 distinct Knowledge FirstTry and 23 opt-in hidden compare (no unindented math), 23 matching local D6, 16 general prior help =39; 28/28 stable distinct worked example IDs (8/6/6/8), 4 original unchanged SVG and read cues; TeX delimiters balanced, no nonexistent Knowledge §2 references, no cloned original item/answers. 51 original Markdown relative links normalized to HTML anchors with href/label preserved, current B21 mathematical threshold corrected. Seven numerical expression spots rechecked in this pass. The 54 checks claimed in older candidate pre-R04 are historical and not silently declared rerun on current R04. This is math/PED/source QA, **not browser AP or independent academic reviewer**.
 
-- Four Golden tabs per lesson, tab 2 starts at 2.1 and uses exact S1 main section names. Definition/rule boxes use existing concept-card/rule-card; necessary conditions attached, no CSS/JS changes. Discovery starts with why, prerequisites and original figure read guidance; each FirstTry has optional comparison and a local error cue with actual return-to-practice item URL. No assessment action in knowledge.
-- B18: six FirstTry, eight separately worked examples; includes real exponent definition via rational approximants, radical multiplication/division/nesting with existence conditions, negative root, rational exponent, comparison and both scientific notation/growth. B19: six FirstTry, six worked examples; logarithm definition with base/argument conditions, derived product law, invalid split of positive product with negative factors, base change, pH, natural log, continuous growth. B20: five FirstTry, six worked examples; restored continuity, value tables for increasing/decreasing exp/log, inverse points, domain and actual model. B21: six FirstTry, eight worked examples; all four basic forms, complete exp b<=0 cases and inequality tables, log domain intersection, exact/boundary checking, reciprocal-base example and discrete/continuous model interpretation.
-- Math audit: 54 source-specific calculation/boundary/consistency assertions (53 from initial complete 23 FirstTry + 27 examples + 3 calculator/threshold checks, plus the final mixed-base EX-R02-08). Initial 52/53 due strict JS equality of 32^(3/5) (7.999999999999999); corrected by exact integer identity 8^5=32^3 and 1e-12 floating tolerance; negative rational result 27 verified. Final mixed-base checks at both accepted endpoints x=0,2, excluded x=-1,3, and interior/exterior sample points agree with (-1,0] union [2,3); full algebra in learner. All 54 checks now pass, supplemented by derivations in learner rather than claiming numeric samples prove theorem/entire curriculum. Specific calculator decimals 2^1.3≈2.4623, log_3 11≈2.1827, log_7 13≈1.318, growth 200*1.04^3=224.9728 and 80*1.03^4=90.0407048, threshold ln(5/12)/ln(.8)≈3.923 with n=4 (V3=122.88, V4=98.304), pressure 60kPa threshold -7ln(.6)≈3.576. No detected mathematical P0/P1 from this scoped author pass; image/render and independent-review gates remain separate.
-- Original four SVGs unchanged, existing alt/caption verified against original title/desc and usage: FIG-G11-CHVI-B18-01_R00.svg `79528bcd2c87eb40b1b54f18c697b0ae3458e642`; B19 `fe2895ac101dcc4cf4046d57428181ad0f448dc8`; B20 `64bcb465bd6d809095a4ca2b910555e314badb69`; B21 `6d43f842d096b974eb70af21e6751f1ec70eea00`; no new graph or runtime claim. B19 figure reading label fixed before final SHA. Math comparison operators use MathJax lt/gt commands inside delimiters; real browser rendering not asserted.
-- 21 checks per exact final learner blob, 84/84 total: Golden tabs, numbering, S1 heading exact match, tab 2 begins 2.1, examples sequential and four steps, versioned EX IDs, Try IDs distinct from bank/Written, complete outcome mapping, opt-in answers, local/global D6, HELP legacy identity, all D6 links correspond to existing item IDs, original figure hash/alt/read cue, one footer, balanced inline/display math, safe comparison markup, no local script/style or admin metadata, actual shared Written URL, unchanged public banks. FirstTry, EX and HELP IDs all unique among these four files. No claim historical all-branch duplicate search, runtime link behavior or mobile/MathJax rendering.
+## ITEM_OUTCOME_ROLE_MATRIX — 72 distinct student teaching questions
 
-## 4. Q15 · item–outcome–role crosswalk, original public bank custody
+Exactly 41 unchanged original public C/P/Application, 8 unchanged original Written/Anchor (shared library) and 23 source-owned unscored Knowledge FirstTry. Each teaching question has exactly one item ID. The 28 worked examples retain distinct source `data-thpt-example-id` identifiers, not treated as duplicate public exam items. `G11-CHVI-INTEGRATED` has original canonical B21-P08 and is not forged by reuse of public selfcheck.
 
-| THPT-G11-B18-TRY01 | G11-B18-POWER_INTEGER | SGK_KNOWLEDGE_FIRST_TRY / B18 |
-| THPT-G11-B18-TRY02 | G11-B18-POWER_RATIONAL | SGK_KNOWLEDGE_FIRST_TRY / B18 |
-| THPT-G11-B18-TRY03 | G11-B18-POWER_RATIONAL | SGK_KNOWLEDGE_FIRST_TRY / B18 |
-| THPT-G11-B18-TRY04 | G11-B18-POWER_REAL | SGK_KNOWLEDGE_FIRST_TRY / B18 |
-| THPT-G11-B18-TRY05 | G11-B18-POWER_LAWS | SGK_KNOWLEDGE_FIRST_TRY / B18 |
-| THPT-G11-B18-TRY06 | G11-B18-GROWTH_MODEL | SGK_KNOWLEDGE_FIRST_TRY / B18 |
-| THPT-G11-B19-TRY01 | G11-B19-LOG_DEFINITION | SGK_KNOWLEDGE_FIRST_TRY / B19 |
-| THPT-G11-B19-TRY02 | G11-B19-LOG_DOMAIN | SGK_KNOWLEDGE_FIRST_TRY / B19 |
-| THPT-G11-B19-TRY03 | G11-B19-LOG_LAWS | SGK_KNOWLEDGE_FIRST_TRY / B19 |
-| THPT-G11-B19-TRY04 | G11-B19-LOG_BASE_CHANGE | SGK_KNOWLEDGE_FIRST_TRY / B19 |
-| THPT-G11-B19-TRY05 | G11-B19-LOG_APPLICATION | SGK_KNOWLEDGE_FIRST_TRY / B19 |
-| THPT-G11-B19-TRY06 | G11-B19-LOG_APPLICATION | SGK_KNOWLEDGE_FIRST_TRY / B19 |
-| THPT-G11-B20-TRY01 | G11-B20-EXP_FUNCTION | SGK_KNOWLEDGE_FIRST_TRY / B20 |
-| THPT-G11-B20-TRY02 | G11-B20-EXP_MONOTONIC | SGK_KNOWLEDGE_FIRST_TRY / B20 |
-| THPT-G11-B20-TRY03 | G11-B20-LOG_FUNCTION | SGK_KNOWLEDGE_FIRST_TRY / B20 |
-| THPT-G11-B20-TRY04 | G11-B20-LOG_MONOTONIC | SGK_KNOWLEDGE_FIRST_TRY / B20 |
-| THPT-G11-B20-TRY05 | G11-B20-INVERSE_GRAPH | SGK_KNOWLEDGE_FIRST_TRY / B20 |
-| THPT-G11-B21-TRY01 | G11-B21-EXP_EQUATION | SGK_KNOWLEDGE_FIRST_TRY / B21 |
-| THPT-G11-B21-TRY02 | G11-B21-LOG_EQUATION | SGK_KNOWLEDGE_FIRST_TRY / B21 |
-| THPT-G11-B21-TRY03 | G11-B21-EXP_INEQUALITY | SGK_KNOWLEDGE_FIRST_TRY / B21 |
-| THPT-G11-B21-TRY04 | G11-B21-LOG_INEQUALITY | SGK_KNOWLEDGE_FIRST_TRY / B21 |
-| THPT-G11-B21-TRY05 | G11-B21-DOMAIN_CHECK | SGK_KNOWLEDGE_FIRST_TRY / B21 |
-| THPT-G11-B21-TRY06 | G11-B21-REAL_CONTEXT | SGK_KNOWLEDGE_FIRST_TRY / B21 |
+| ITEM_ID | OUTCOME_ID | PLACEMENT | ROLE |
+|---|---|---|---|
+| THPT-G11-CHVI-B18-C01 | G11-B18-POWER_INTEGER | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B18-C02 | G11-B18-POWER_RATIONAL | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B18-C03 | G11-B18-POWER_INTEGER | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B18-C04 | G11-B18-POWER_REAL | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B18-C05 | G11-B18-POWER_RATIONAL | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B18-P01 | G11-B18-POWER_LAWS | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B18-P02 | G11-B18-POWER_RATIONAL | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B18-P03 | G11-B18-POWER_RATIONAL | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B18-P04 | G11-B18-POWER_LAWS | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B18-P05 | G11-B18-GROWTH_MODEL | SGK_APPLICATION | SGK_APPLICATION |
+| THPT-G11-CHVI-B18-P06 | G11-B18-POWER_LAWS | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B18-P07 | G11-B18-POWER_INTEGER | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B19-C01 | G11-B19-LOG_DEFINITION | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B19-C02 | G11-B19-LOG_DEFINITION | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B19-C03 | G11-B19-LOG_DOMAIN | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B19-P01 | G11-B19-LOG_LAWS | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B19-P02 | G11-B19-LOG_LAWS | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B19-P03 | G11-B19-LOG_DEFINITION | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B19-P04 | G11-B19-LOG_DOMAIN | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B19-P05 | G11-B19-LOG_BASE_CHANGE | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B19-P06 | G11-B19-LOG_APPLICATION | SGK_APPLICATION | SGK_APPLICATION |
+| THPT-G11-CHVI-B20-C01 | G11-B20-EXP_FUNCTION | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B20-C02 | G11-B20-EXP_MONOTONIC | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B20-C03 | G11-B20-LOG_FUNCTION | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B20-C04 | G11-B20-INVERSE_GRAPH | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B20-P01 | G11-B20-LOG_FUNCTION | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B20-P02 | G11-B20-EXP_MONOTONIC | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B20-P03 | G11-B20-LOG_MONOTONIC | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B20-P04 | G11-B20-INVERSE_GRAPH | SGK_APPLICATION | SGK_APPLICATION |
+| THPT-G11-CHVI-B21-C01 | G11-B21-EXP_EQUATION | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B21-C02 | G11-B21-LOG_EQUATION | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B21-C03 | G11-B21-EXP_INEQUALITY | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B21-C04 | G11-B21-LOG_INEQUALITY | SGK_CORE | SGK_CORE |
+| THPT-G11-CHVI-B21-P01 | G11-B21-EXP_EQUATION | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B21-P02 | G11-B21-LOG_EQUATION | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B21-P03 | G11-B21-EXP_INEQUALITY | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B21-P04 | G11-B21-LOG_INEQUALITY | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B21-P05 | G11-B21-DOMAIN_CHECK | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B21-P06 | G11-B21-REAL_CONTEXT | SGK_APPLICATION | SGK_APPLICATION |
+| THPT-G11-CHVI-B21-P07 | G11-B21-EXP_EQUATION | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B21-P08 | G11-CHVI-INTEGRATED | SGK_PRACTICE | SGK_PRACTICE |
+| THPT-G11-CHVI-B18-W01 | G11-B18-POWER_LAWS | SGK_WRITTEN | WRITTEN |
+| THPT-G11-CHVI-B18-W02-ANCHOR | G11-B18-GROWTH_MODEL | SGK_WRITTEN | ANCHOR_TAG |
+| THPT-G11-CHVI-B19-W01 | G11-B19-LOG_DOMAIN | SGK_WRITTEN | WRITTEN |
+| THPT-G11-CHVI-B19-W02-ANCHOR | G11-B19-LOG_LAWS | SGK_WRITTEN | ANCHOR_TAG |
+| THPT-G11-CHVI-B20-W01 | G11-B20-INVERSE_GRAPH | SGK_WRITTEN | WRITTEN |
+| THPT-G11-CHVI-B20-W02-ANCHOR | G11-B20-INVERSE_GRAPH | SGK_WRITTEN | ANCHOR_TAG |
+| THPT-G11-CHVI-B21-W01 | G11-B21-DOMAIN_CHECK | SGK_WRITTEN | WRITTEN |
+| THPT-G11-CHVI-B21-W02-ANCHOR | G11-B21-REAL_CONTEXT | SGK_WRITTEN | ANCHOR_TAG |
+| THPT-G11-B18-TRY01 | G11-B18-POWER_INTEGER | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B18-TRY02 | G11-B18-POWER_RATIONAL | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B18-TRY03 | G11-B18-POWER_RATIONAL | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B18-TRY04 | G11-B18-POWER_REAL | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B18-TRY05 | G11-B18-POWER_LAWS | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B18-TRY06 | G11-B18-GROWTH_MODEL | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B19-TRY01 | G11-B19-LOG_DEFINITION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B19-TRY02 | G11-B19-LOG_DOMAIN | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B19-TRY03 | G11-B19-LOG_LAWS | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B19-TRY04 | G11-B19-LOG_BASE_CHANGE | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B19-TRY05 | G11-B19-LOG_APPLICATION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B19-TRY06 | G11-B19-LOG_APPLICATION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B20-TRY01 | G11-B20-EXP_FUNCTION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B20-TRY02 | G11-B20-EXP_MONOTONIC | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B20-TRY03 | G11-B20-LOG_FUNCTION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B20-TRY04 | G11-B20-LOG_MONOTONIC | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B20-TRY05 | G11-B20-INVERSE_GRAPH | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B21-TRY01 | G11-B21-EXP_EQUATION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B21-TRY02 | G11-B21-LOG_EQUATION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B21-TRY03 | G11-B21-EXP_INEQUALITY | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B21-TRY04 | G11-B21-LOG_INEQUALITY | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B21-TRY05 | G11-B21-DOMAIN_CHECK | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B21-TRY06 | G11-B21-REAL_CONTEXT | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 
-New FirstTry are voluntary and unscored, with one stem/answer/help in their own learner source. New worked example stems are identified individually as EX-G11-Bnn-R02-xx (not graded-bank items, not an assessment substitute). These replace the *learner presentation* examples on Delta-C candidate; original 19 EX identities/stems/solutions preserved in immutable reviewed snapshot, not relabeled or overwritten in the reviewed bank. Crosswalk for academic comparison, not a second canonical question:
-| Earlier example family | New worked example location (R02) |
-| --- | --- |
-| B18 EX01 negative exponent; EX02 rational; EX03 laws; EX04 model; EX05 odd root; EX06 scientific notation/calculator | 3.1; 3.4; 3.5; 3.8; 3.2–3.3; 3.7 + 2.3; comparison 3.6 new |
-| B19 EX01 definition; EX02 domain; EX03 log laws; EX04 base change | 3.1; 1.2 + 3.2; 3.3; 3.4; 3.5–3.6 new |
-| B20 EX01 exp properties; EX02 inverse; EX03 monotonic; EX04 model | 3.1; 3.5; 3.2 + 3.4; 3.6; 3.3 new |
-| B21 EX01 exp equation; EX02 log equation; EX03 exp inequality; EX04 log inequality; EX05 model | 3.1; 3.2; 3.4; 3.5; 3.6; 3.3, 3.7 and 3.8 new |
+## QUALITY_Q01_Q18_EVIDENCE
 
-Original public formative `docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js` Git blob `33cf4229baa63ac70b4ca1b640a5be8414ed54c1`, **41** canonical records (16 Core, 21 Practice, 4 Application); original shared Written library `docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vi.md` Git blob `dba16473909e60d1dc186f41dfc2e270f06a104e`, **8** canonical Written IDs including four Anchor labels, unchanged. Old public bank/Written stems inspected to distinguish new question data, and all new IDs checked against both libraries; related mathematical families/variants intentionally remain learning tasks, never assessed as independent. Original 8 D6 HELP IDs present, 23 local and 16 general D6 (total 39 unique HELP IDs; old 8 included). No bank solutions/keys/rubrics changed.
+One normative standard `SLM-THPT-QUALITY-ONE v3.2.0` at `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, with D1–D6/PED1–PED6/A1–A7 all as evidence dimensions of the same Q criteria.
 
-## 5. Q16–Q18 · protection, open gates and disposition
+| Criterion | Current author source verdict | Factual evidence / limitation |
+|---|---|---|
+| Q01 | AUTHOR_SELF_VERIFIED | ChVI SGK/SBT KNTT T2 original owner direct PDF page/SHA receipt verified historically: SGK B18 pp4–9 B19 10–15 B20 16–19 B21 20–24 end25–26, SBT B18 4–7 B19 8–10 B20 11–15 B21 16–19 end20–23; no new publisher scan this pass |
+| Q02 | AUTHOR_SELF_VERIFIED | 22 registered outcomes: five B18, five B19, five B20, six B21, one chapter integrated, 72 item/outcome/role mappings |
+| Q03 | AUTHOR_SELF_VERIFIED | Complete D1 for integer/rational/real powers, logarithm base and argument, exponential/log domains and monotonicity, exp/log equations and inequalities with all exceptional cases |
+| Q04 | AUTHOR_SELF_VERIFIED | 28 concept-reasoned examples 8+6+6+8 with mathematical method, solution and sign/domain check, correctly scoped one current learner source per lesson |
+| Q05 | AUTHOR_SELF_VERIFIED | Original 41 canonical immutable public Core/Practice/Application question/answer/solution records, link back from Knowledge, no change in bank blob |
+| Q06 | AUTHOR_SELF_VERIFIED | Eight immutable Written/Anchor questions with /4 rubric and original single shared library, Anchor only tag |
+| Q07 | AUTHOR_SELF_VERIFIED | Four original preserved SVG figures with student-facing caption/read-figure prompts; no browser raster PASS claimed |
+| Q08 | AUTHOR_SELF_VERIFIED | 23 targeted HELP for each FirstTry plus original 16 general HELP; cause→fix→return to original canonical item |
+| Q09 | AUTHOR_SELF_VERIFIED | Motivation through compound interest, logarithmic pH model, inverse exponential/log graphs, decay and real/integer thresholds |
+| Q10 | AUTHOR_SELF_VERIFIED | Prerequisites root parity, exponent laws, limits, function domain, reciprocal, inequalities, graphical increasing/decreasing |
+| Q11 | AUTHOR_SELF_VERIFIED | Conceptual explanation of why extend exponents, log as the unique exponent, inverse functions before equations/formulas |
+| Q12 | AUTHOR_SELF_VERIFIED | Figures decoded before applying geometric comparisons, inverse graph coordinate swap and decreasing-base inequality direction |
+| Q13 | AUTHOR_SELF_VERIFIED | Check a>0 for real powers, positive log arguments/base ≠1, base less than 1 reversal, no log of nonpositive RHS, strict vs non-strict integer threshold |
+| Q14 | AUTHOR_SELF_VERIFIED | 23 source-owned first tries precede original Core and have 23 voluntary hidden answers, none leaked through malformed indentation |
+| Q15 | AUTHOR_SELF_VERIFIED | 41 old C/P/Application+8 old Written+23 new formative TRY =72 unique item IDs; worked examples are not duplicate item IDs |
+| Q16 | AUTHOR_SELF_VERIFIED | 22 original private held-out RD1 owner-held not in public GitHub; 20 exposed end replay not independent readiness and no Mastery |
+| Q17 | AUTHOR_SELF_VERIFIED | Single complete SGK learner journey distinct from self-contained Topic journey, original core/exercises/end and shared Written not replaced by topic links |
+| Q18 | AUTHOR_SELF_VERIFIED | 13 exact component blob inventory, current signed AUTHOR_SELF_VERIFIED Q18 on three? actually four current learners, original frozen historical R01 review and S1 receipt preserved without inherited new independent PASS |
 
-22 original private RD1 kept outside public repository; not inspected/copied in this task; historical protected receipt SHA exists. No official independent assessment, score, Final Submit, learner Mastery, Firebase, authentication, Gemini, site navigation or production changes. Previously verified SGK and Topic paths remain separate; no cross-path verdict or new Topic PASS. No new release claim.
+## Protect Q15/Q16 source/assessment and prior review
 
-**Q18 author signoff (scoped):** 84/84 source checks, 54/54 case/consistency checks, source/current editable text and public bank IDs verified; 21/21 lesson outcome mappings with existing G11-CHVI-INTEGRATED preserved separately; no detected source-mathematics P0/P1 in checked scope. New candidate is *not* final CONTENT_READY because source-matched V2, ready/REGISTER, and unresolved source/assessment/runtime evidence are not attested for these SHA. Historical source receipts remain scoped to old snapshot; fresh original SGK/SBT page-image inspection not completed. Prepare targeted independent review of affected Delta-C if owner requires or self-verification insufficiency persists, using exactly five current THPT Permanent Sources v2.1 + SGK/SBT S1. No fabricated reviewer verdict; previous five v2.0 report remains historical. 
-**Release compatibility note:** actual old integration script `scripts/test-thpt-g11-chvi-release-integration.cjs` blob `93f9f39ac082db0aae68d8fadc4c995f14b0df72` still asserts pre-Golden heading and exactly two D6 per lesson. This is a known pre-existing test-contract mismatch with the authorized new learner structure, not a new math defect or CI PASS. Do not change it in AUTHORING; RELEASE must reconcile against current Golden at its own QA gate. Browser/CI/exact HEAD render AP1–AP5/R1–R5/P1/P2 and any deploy remain out of scope.
-**NEXT after verified Draft PR + single #987 checkpoint:** G11-B22, chapter VII, initial G0 only. No merge or deployment.
+Private RD1: 22 original held-out independent owner-held questions are not on public GitHub, not in this packet and not included in NotebookLM Temp review; no private keys/rubrics/exposure. Original 20 public end replay questions are `CLIENT_SELF_CHECK_NO_MASTERY`, not official held-out `SGK_CHAPTER_READINESS`; student may compare answers only after public selfcheck submit, cannot generate Skill Mastery. Original bank/Written/answers and Golden shared runtime/Auth/Firebase/student records are unchanged. Historic independent Academic/PED v2.0 R01 PASS remains bound to original R01 source and original primary SGK/SBT receipt, not inherited as new R04 independent PASS.
 
+## Signed author on exact source
+
+AUTHOR_SIGNOFF: Q01_Q18_A1_A7_CURRENT_SOURCE_be26ddd1e3e93ff250333e6f378cfffff83a8394_AUTHOR_SELF_VERIFIED
+P0_P1_AUTHORING: 0_0_IN_SCOPE
+SOURCE_STATE: AUTHORING_PASS_ELIGIBLE_FOR_ONE_V2_READY_REGISTER
+RELEASE_STATE: NOT_AUTHORIZED_NOT_DEPLOYED
 
 ## AUTHOR Q18 RECEIPT END
