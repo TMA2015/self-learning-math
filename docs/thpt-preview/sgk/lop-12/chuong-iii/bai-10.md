@@ -22,7 +22,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm trung bình gần 6 hơn 2 vì tần số lớp sau lớn hơn. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b10-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b10-p01). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Trung bình của dữ liệu ghép nhóm phải nhân mỗi trung điểm lớp với tần số rồi chia tổng tần số n; trung bình của các trung điểm không trọng số chỉ đúng khi tần số các lớp bằng nhau.
+
+        **Tự sửa:** Kiểm trung bình gần 6 hơn 2 vì tần số lớp sau lớn hơn. <a href="../luyen-tap/#thpt-g12-b10-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b10-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.2. Vì sao lấy bình phương độ lệch?
     
@@ -40,7 +42,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Bình phương từng độ lệch trước khi cộng, không bình phương tổng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b10-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b10-p03). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Tổng độ lệch có dấu quanh trung bình có thể bằng 0 dù dữ liệu phân tán mạnh; bình phương từng lệch, nhân tần số rồi mới chia n theo công thức SGK.
+
+        **Tự sửa:** Bình phương từng độ lệch trước khi cộng, không bình phương tổng. <a href="../luyen-tap/#thpt-g12-b10-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b10-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.3. Rút gọn bằng tổng bình phương
     
@@ -58,7 +62,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm lại với độ lệch −2,0,2: tổng bình phương có trọng số 16, chia 8. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b10-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b10-p05). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Công thức rút gọn s²=(Σfc²)/n−x̄² phải bình phương từng trung điểm trước khi lấy trung bình; không được trừ x̄ hoặc tự thay mẫu số bằng n−1.
+
+        **Tự sửa:** Kiểm lại với độ lệch −2,0,2: tổng bình phương có trọng số 16, chia 8. <a href="../luyen-tap/#thpt-g12-b10-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b10-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.4. Độ lệch chuẩn và đơn vị
     
@@ -76,7 +82,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Chọn căn không âm và đơn vị g. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b10-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b10-p07). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Độ lệch chuẩn là căn bậc hai không âm của phương sai, nên đơn vị trở về đơn vị số đo; tuyệt đối không báo s với đơn vị bình phương.
+
+        **Tự sửa:** Chọn căn không âm và đơn vị g. <a href="../luyen-tap/#thpt-g12-b10-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b10-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.5. Cùng trung bình, khác mức phân tán
     
@@ -96,7 +104,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        So cùng đơn vị và cùng mục tiêu; trung bình bằng nhau không kéo theo phương sai bằng nhau. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b10-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b10-p09). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Kết luận 'mẫu A ổn định hơn' từ s nhỏ hơn cần cùng thang đo, điều kiện so sánh và trung bình tương thích; không biến một con số phân tán thành kết luận chất lượng toàn diện.
+
+        **Tự sửa:** So cùng đơn vị và cùng mục tiêu; trung bình bằng nhau không kéo theo phương sai bằng nhau. <a href="../luyen-tap/#thpt-g12-b10-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b10-p09">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.6. Đo rủi ro: xem mục tiêu và quy mô
     
@@ -114,7 +124,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không tính CV khi trung bình bằng 0, không dùng máy móc khi âm hoặc thang đo không có gốc 0 ý nghĩa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b10-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b10-p11). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** So sánh độ biến động tương đối khi mức trung bình chênh lớn cần xem tỉ lệ/đơn vị và trung bình khác 0; CV chỉ tham khảo, không là Core bắt buộc hay dự báo chắc chắn rủi ro.
+
+        **Tự sửa:** Không tính CV khi trung bình bằng 0, không dùng máy móc khi âm hoặc thang đo không có gốc 0 ý nghĩa. <a href="../luyen-tap/#thpt-g12-b10-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b10-p11">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.7. Dữ liệu thô → bảng ghép → quyết định
     
@@ -132,7 +144,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Ghi rõ tiêu chí dùng mẫu ghép hay mẫu gốc; đừng thay ngưỡng giữa hai cách. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b10-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b10-p09). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Với quy tắc kiểm máy ở ngưỡng, phải tính s từ dữ liệu được đề yêu cầu (gốc hoặc ghép nhóm), giữ đủ chữ số khi so ngưỡng rồi mới làm tròn để trình bày.
+
+        **Tự sửa:** Ghi rõ tiêu chí dùng mẫu ghép hay mẫu gốc; đừng thay ngưỡng giữa hai cách. <a href="../luyen-tap/#thpt-g12-b10-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b10-p09">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
     ### 1.8. Phân biệt mẫu số n và n−1
     
@@ -150,7 +164,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đọc mục đích và mẫu số đề yêu cầu; n−1 không dùng khi n=1. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b10-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b10-p03). Sau đó tự làm lại Vận dụng không nhìn lời giải.
+        **Vì sao dễ sai:** Mẫu số n thuộc công thức phương sai mô tả nhóm của SGK; n−1 là bài toán ước lượng theo quy ước khác, không thay đáp án Core và không xác định cho n=1.
+
+        **Tự sửa:** Đọc mục đích và mẫu số đề yêu cầu; n−1 không dùng khi n=1. <a href="../luyen-tap/#thpt-g12-b10-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b10-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
 === "Kiến thức SGK"
 
@@ -212,50 +228,50 @@
     
     ??? tip "Cách tự sửa"
     
-        Kiểm trung bình gần 6 hơn 2 vì tần số lớp sau lớn hơn. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b10-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b10-p01).
+        Kiểm trung bình gần 6 hơn 2 vì tần số lớp sau lớn hơn. <a href="../luyen-tap/#thpt-g12-b10-c01">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b10-p01">luyện câu khác rồi quay lại</a>.
 
     ### 4.2. Vì sao lấy bình phương độ lệch?
     
     ??? tip "Cách tự sửa"
     
-        Bình phương từng độ lệch trước khi cộng, không bình phương tổng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b10-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b10-p03).
+        Bình phương từng độ lệch trước khi cộng, không bình phương tổng. <a href="../luyen-tap/#thpt-g12-b10-c02">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b10-p03">luyện câu khác rồi quay lại</a>.
 
     ### 4.3. Rút gọn bằng tổng bình phương
     
     ??? tip "Cách tự sửa"
     
-        Kiểm lại với độ lệch −2,0,2: tổng bình phương có trọng số 16, chia 8. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b10-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b10-p05).
+        Kiểm lại với độ lệch −2,0,2: tổng bình phương có trọng số 16, chia 8. <a href="../luyen-tap/#thpt-g12-b10-c03">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b10-p05">luyện câu khác rồi quay lại</a>.
 
     ### 4.4. Độ lệch chuẩn và đơn vị
     
     ??? tip "Cách tự sửa"
     
-        Chọn căn không âm và đơn vị g. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b10-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b10-p07).
+        Chọn căn không âm và đơn vị g. <a href="../luyen-tap/#thpt-g12-b10-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b10-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.5. Cùng trung bình, khác mức phân tán
     
     ??? tip "Cách tự sửa"
     
-        So cùng đơn vị và cùng mục tiêu; trung bình bằng nhau không kéo theo phương sai bằng nhau. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b10-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b10-p09).
+        So cùng đơn vị và cùng mục tiêu; trung bình bằng nhau không kéo theo phương sai bằng nhau. <a href="../luyen-tap/#thpt-g12-b10-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b10-p09">luyện câu khác rồi quay lại</a>.
 
     ### 4.6. Đo rủi ro: xem mục tiêu và quy mô
     
     ??? tip "Cách tự sửa"
     
-        Không tính CV khi trung bình bằng 0, không dùng máy móc khi âm hoặc thang đo không có gốc 0 ý nghĩa. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b10-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b10-p11).
+        Không tính CV khi trung bình bằng 0, không dùng máy móc khi âm hoặc thang đo không có gốc 0 ý nghĩa. <a href="../luyen-tap/#thpt-g12-b10-c06">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b10-p11">luyện câu khác rồi quay lại</a>.
 
     ### 4.7. Dữ liệu thô → bảng ghép → quyết định
     
     ??? tip "Cách tự sửa"
     
-        Ghi rõ tiêu chí dùng mẫu ghép hay mẫu gốc; đừng thay ngưỡng giữa hai cách. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b10-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b10-p09).
+        Ghi rõ tiêu chí dùng mẫu ghép hay mẫu gốc; đừng thay ngưỡng giữa hai cách. <a href="../luyen-tap/#thpt-g12-b10-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b10-p09">luyện câu khác rồi quay lại</a>.
 
     ### 4.8. Phân biệt mẫu số n và n−1
     
     ??? tip "Cách tự sửa"
     
-        Đọc mục đích và mẫu số đề yêu cầu; n−1 không dùng khi n=1. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b10-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b10-p03).
+        Đọc mục đích và mẫu số đề yêu cầu; n−1 không dùng khi n=1. <a href="../luyen-tap/#thpt-g12-b10-c02">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b10-p03">luyện câu khác rồi quay lại</a>.
 
-    [Core Bài 10](../luyen-tap/#b10-core) · [Luyện tập và Tự luận](../luyen-tap/#b10-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b10-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b10-core">Core Bài 10</a> · <a href="../luyen-tap/#b10-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b10-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 80–84.*
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 10 (trang in 80–84). Biên bản SGK/SBT gốc đã kiểm theo trang in/PDF lịch sử; không xem đây là lần quét lại toàn bộ bản gốc.</p>
