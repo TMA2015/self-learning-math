@@ -10,7 +10,7 @@
 
     ### 1.1. Biến nằm ở số mũ
 
-    So sánh \(3^x\) với \(x^3\): trong biểu thức thứ nhất cơ số không đổi và biến ở số mũ; biểu thức thứ hai là lũy thừa của biến. Với \(a>0,a\ne1\), \(a^x\) xác định cho mọi x thực và luôn dương.
+    So sánh \(3^x\) với \(x^3\): trong biểu thức thứ nhất cơ số không đổi và biến ở số mũ; biểu thức thứ hai là lũy thừa của biến. Với \(a\gt 0,a\ne1\), \(a^x\) xác định cho mọi x thực và luôn dương.
 
     **Vận dụng — Tự thử trước Core.** Hàm \(y=4^x\) có thể nhận giá trị 0 hoặc -1 không? Tính giá trị tại \(x=-1,0,1\).
 
@@ -18,7 +18,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Không, vì \(4^x>0\) với mọi x thực. Ba giá trị lần lượt là \(1/4,1,4\). Cơ số dương cho phép cả mũ âm lẫn mũ không nguyên.
+        **Lời giải:** Không, vì \(4^x\gt 0\) với mọi x thực. Ba giá trị lần lượt là \(1/4,1,4\). Cơ số dương cho phép cả mũ âm lẫn mũ không nguyên.
 
     <span data-thpt-help-id="HELP-G11-B20-TRY01" hidden></span>
 
@@ -30,7 +30,7 @@
 
     ### 1.2. Hai cơ số ở hai phía của 1 dẫn tới hai chiều biến thiên
 
-    Mỗi lần tăng x thêm 1, giá trị \(a^x\) được nhân a. Với \(a>1\), nhân a làm số dương tăng; với \(0<a<1\), nó giảm. Quy tắc so sánh lũy thừa ở Bài 18 mở rộng điều này cho mọi x thực.
+    Mỗi lần tăng x thêm 1, giá trị \(a^x\) được nhân a. Với \(a\gt 1\), nhân a làm số dương tăng; với \(0\lt a\lt 1\), nó giảm. Quy tắc so sánh lũy thừa ở Bài 18 mở rộng điều này cho mọi x thực.
 
     **Vận dụng — Tự thử trước Core.** Không dùng máy tính, so sánh \((2/3)^{\sqrt2}\) và \((2/3)^2\).
 
@@ -38,7 +38,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Vì \(0<2/3<1\), hàm số mũ nghịch biến. \(\sqrt2<2\) nên \((2/3)^{\sqrt2}>(2/3)^2=4/9\).
+        **Lời giải:** Vì \(0\lt 2/3\lt 1\), hàm số mũ nghịch biến. \(\sqrt2\lt 2\) nên \((2/3)^{\sqrt2}\gt (2/3)^2=4/9\).
 
     <span data-thpt-help-id="HELP-G11-B20-TRY02" hidden></span>
 
@@ -58,7 +58,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Cơ số 4 hợp lệ. \(7-2x>0\) tương đương \(x<7/2\). Tập xác định là \((-\infty,7/2)\). Không thêm x>0 vì đối số là 7-2x.
+        **Lời giải:** Cơ số 4 hợp lệ. \(7-2x\gt 0\) tương đương \(x\lt 7/2\). Tập xác định là \((-\infty,7/2)\). Không thêm x>0 vì đối số là 7-2x.
 
     <span data-thpt-help-id="HELP-G11-B20-TRY03" hidden></span>
 
@@ -78,7 +78,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Hai đối số đều dương. Vì \(2<7\) và cơ số \(1/3\) nằm giữa 0 và 1, hàm nghịch biến, nên \(\log_{1/3}2>\log_{1/3}7\).
+        **Lời giải:** Hai đối số đều dương. Vì \(2\lt 7\) và cơ số \(1/3\) nằm giữa 0 và 1, hàm nghịch biến, nên \(\log_{1/3}2\gt \log_{1/3}7\).
 
     <span data-thpt-help-id="HELP-G11-B20-TRY04" hidden></span>
 
@@ -112,11 +112,11 @@
 
     ### 2.1. Hàm số mũ
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(a>0,a\ne1\), hàm số \(y=a^x\) gọi là hàm số mũ cơ số a.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(a\gt 0,a\ne1\), hàm số \(y=a^x\) gọi là hàm số mũ cơ số a.</div>
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Tập xác định \(\mathbb R\), tập giá trị \((0,+\infty)\); liên tục trên \(\mathbb R\); đồng biến khi \(a>1\), nghịch biến khi \(0<a<1\). Đồ thị qua \((0;1),(1;a)\), luôn nằm phía trên trục hoành.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Tập xác định \(\mathbb R\), tập giá trị \((0,+\infty)\); liên tục trên \(\mathbb R\); đồng biến khi \(a\gt 1\), nghịch biến khi \(0\lt a\lt 1\). Đồ thị qua \((0;1),(1;a)\), luôn nằm phía trên trục hoành.</div>
     
-    Để vẽ đồ thị, lập bảng các x như \(-2,-1,0,1,2\), tính a^x rồi biểu diễn điểm và nối thành đường cong theo tính liên tục/biến thiên. Với \(a>1\), đồ thị tiến sát \(y=0\) khi \(x\to-\infty\); với \(0<a<1\), tiến sát khi \(x\to+\infty\). Đồ thị không cắt trục hoành.
+    Để vẽ đồ thị, lập bảng các x như \(-2,-1,0,1,2\), tính a^x rồi biểu diễn điểm và nối thành đường cong theo tính liên tục/biến thiên. Với \(a\gt 1\), đồ thị tiến sát \(y=0\) khi \(x\to-\infty\); với \(0\lt a\lt 1\), tiến sát khi \(x\to+\infty\). Đồ thị không cắt trục hoành.
     
     | \(x\) | -2 | -1 | 0 | 1 | 2 |
     | --- | ---: | ---: | ---: | ---: | ---: |
@@ -127,18 +127,18 @@
 
     ### 2.2. Hàm số lôgarit
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(a>0,a\ne1\), hàm số \(y=\log_a x\) là hàm lôgarit cơ số a.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(a\gt 0,a\ne1\), hàm số \(y=\log_a x\) là hàm lôgarit cơ số a.</div>
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Tập xác định \((0,+\infty)\), tập giá trị \(\mathbb R\); liên tục trên \((0,+\infty)\); đồng biến nếu \(a>1\), nghịch biến nếu \(0<a<1\). Đồ thị qua \((1;0),(a;1)\), luôn nằm bên phải trục tung.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Tập xác định \((0,+\infty)\), tập giá trị \(\mathbb R\); liên tục trên \((0,+\infty)\); đồng biến nếu \(a\gt 1\), nghịch biến nếu \(0\lt a\lt 1\). Đồ thị qua \((1;0),(a;1)\), luôn nằm bên phải trục tung.</div>
     
-    Lập bảng từ \(x=a^k\) với một số k nguyên, giá trị \(y=k\). Khi \(x\to0^+\), đồ thị tiến sát đường thẳng \(x=0\), với \(a>1\) thì y tiến về \(-\infty\), với \(0<a<1\) thì y tiến về \(+\infty\).
+    Lập bảng từ \(x=a^k\) với một số k nguyên, giá trị \(y=k\). Khi \(x\to0^+\), đồ thị tiến sát đường thẳng \(x=0\), với \(a\gt 1\) thì y tiến về \(-\infty\), với \(0\lt a\lt 1\) thì y tiến về \(+\infty\).
     
     | \(x\) | \(1/9\) | \(1/3\) | 1 | 3 | 9 |
     | --- | ---: | ---: | ---: | ---: | ---: |
     | \(\log_3 x\) | -2 | -1 | 0 | 1 | 2 |
     | \(\log_{1/3} x\) | 2 | 1 | 0 | -1 | -2 |
     
-    **Liên hệ hai hàm:** \(y=a^x\) và \(y=\log_a x\) là hai hàm ngược, đối xứng qua \(y=x\). Các tọa độ hoán đổi, miền xác định của hàm này là tập giá trị của hàm kia. Với biểu thức logarit có đối số \(g(x)\), phải kiểm \(g(x)>0\) trước khi áp dụng tính chất.
+    **Liên hệ hai hàm:** \(y=a^x\) và \(y=\log_a x\) là hai hàm ngược, đối xứng qua \(y=x\). Các tọa độ hoán đổi, miền xác định của hàm này là tập giá trị của hàm kia. Với biểu thức logarit có đối số \(g(x)\), phải kiểm \(g(x)\gt 0\) trước khi áp dụng tính chất.
 
 === "Ví dụ"
 
@@ -152,7 +152,7 @@
 
     ### 3.3. Tìm miền xác định có căn và logarit
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tìm miền xác định của \(y=\ln(16-x^2)\).</p><p><strong>Phân tích:</strong> Logarit tự nhiên có cơ số e hợp lệ; đối số phải thật sự dương.</p><p><strong>Lời giải:</strong> \(16-x^2>0\) tương đương \(-4<x<4\), nên \(D=(-4,4)\).</p><p><strong>Kiểm lại:</strong> Không lấy ±4 vì tại đó đối số bằng 0.</p></div>
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tìm miền xác định của \(y=\ln(16-x^2)\).</p><p><strong>Phân tích:</strong> Logarit tự nhiên có cơ số e hợp lệ; đối số phải thật sự dương.</p><p><strong>Lời giải:</strong> \(16-x^2\gt 0\) tương đương \(-4\lt x\lt 4\), nên \(D=(-4,4)\).</p><p><strong>Kiểm lại:</strong> Không lấy ±4 vì tại đó đối số bằng 0.</p></div>
 
     ### 3.4. Lập điểm để vẽ một hàm logarit giảm
 
