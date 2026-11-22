@@ -124,13 +124,13 @@
     
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Mặt phẳng trung trực.</strong> Với đoạn AB có trung điểm I, mặt phẳng qua I và vuông góc AB gọi là mặt phẳng trung trực của AB.</div>
     
-    Mọi M nằm trên mặt trung trực có MA=MB, do hai tam giác vuông MIA,MIB bằng nhau (M=I kiểm trực tiếp). Ngược lại, nếu MA=MB thì hoặc M=I hoặc trung tuyến MI của tam giác MAB cân tại M vuông góc AB. Đường MI nằm trong mặt phẳng trung trực: lấy đường qua I nằm trong mặt đó cùng phương MI (phương vuông góc AB xác định các đường trong mặt). Vì thế tập hợp điểm cách đều A,B chính là mặt phẳng trung trực.
+    Mọi M nằm trên mặt trung trực có MA=MB, do hai tam giác vuông MIA,MIB bằng nhau (M=I kiểm trực tiếp). Ngược lại, nếu MA=MB thì hoặc M=I hoặc trung tuyến MI của tam giác MAB cân tại M vuông góc AB. Nếu MI không nằm trong mặt trung trực, lấy một đường t qua I trong mặt ấy, không trùng MI. Cả MI và t vuông góc AB, nên mặt do MI,t xác định qua I và vuông góc AB. Theo tính duy nhất, mặt đó chính là mặt trung trực, suy MI nằm trong mặt ấy. Vì thế tập hợp điểm cách đều A,B chính là mặt phẳng trung trực.
 
     ### 2.3. Liên hệ giữa quan hệ song song và quan hệ vuông góc của đường thẳng và mặt phẳng
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Liên hệ.</strong> Hai đường song song: đường nào vuông góc (P) thì đường kia cũng vuông góc (P); hai đường phân biệt cùng vuông góc (P) thì song song. Hai mặt song song: đường vuông góc mặt này cũng vuông góc mặt kia; hai mặt phân biệt cùng vuông góc một đường thì song song.</div>
     
-    Nếu \(a\parallel(P)\), \(d\perp(P)\) thì \(a\perp d\) (chọn đường thuộc (P) song song a). Ngược lại, nếu \(a\perp d\), \((P)\perp d\), và a không nằm trong (P), thì \(a\parallel(P)\): nếu a cắt mặt ở O, mặt qua O vuông góc d là duy nhất, a có phương nằm trong mặt ấy, nên a phải nằm trong (P), trái giả thiết.
+    Nếu \(a\parallel(P)\), \(d\perp(P)\) thì \(a\perp d\) (chọn đường thuộc (P) song song a). Ngược lại, nếu \(a\perp d\), \((P)\perp d\), và a không nằm trong (P), thì \(a\parallel(P)\): nếu a cắt mặt ở O, chọn một đường t qua O thuộc (P) không cùng phương a. Cả a và t vuông góc d; do đó mặt (a,t) qua O vuông góc d. Tính duy nhất cho (a,t)=(P), trái giả thiết a không nằm trong mặt. Vậy a không cắt (P), cũng không thuộc (P).
     
     **Phương pháp giải:** Chỉ rõ mặt đích → chọn hai đường cắt nhau trong mặt → chứng minh từng góc vuông hoặc dùng các tính chất song song đủ giả thiết → kết luận. Nếu hai đường cùng vuông góc một mặt, kiểm phân biệt trước khi gọi song song.
 
