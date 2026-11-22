@@ -75,3 +75,8 @@ html:is(.topic01-boot-pending-knowledge,.topic01-boot-pending-practice,.topic01-
 html.topic01-boot-pending-knowledge .md-typeset > p:has(> span[data-topic01-knowledge-start]) ~ *,
 html.topic01-boot-pending-practice .md-typeset > p:has(> span[data-topic01-practice-start]) ~ *,
 html.topic01-boot-pending-selfcheck .md-typeset > p:has(> span[data-topic01-selfcheck-start]) ~ *{display:none!important}
+
+/* A 2px document scroll leak was found on 820px while nested tab rails and
+ * MathJax intentionally scroll inside the CĐ01 knowledge area. Clip only the
+ * outer knowledge canvas; nested rails/formulas keep their own x-scroll. */
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout{overflow-x:clip}
