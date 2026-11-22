@@ -98,6 +98,21 @@
 
         **Tự sửa:** Đặt \(u=2x-\pi/4\), giải \(\tan u=1\), sau đó giải phương trình bậc nhất cho \(x\). Ôn mục 2.4; luyện câu Practice \(\tan(3x)=\sqrt3\) trong <a href="../luyen-tap/">Bài 4 – Luyện tập</a>.
 
+
+    **Tự thử bổ sung — phương trình tan cơ bản.** Trên \([0;2\pi)\), giải \(\tan x=\sqrt3\). Tại sao phương trình tan chỉ có **một họ nghiệm** lặp sau \(\pi\), dù trong khoảng đã cho có hai nghiệm?
+
+    <span data-ped-first-try="8" data-outcome-id="G11-B04-TAN_EQ" data-thpt-first-try-id="THPT-G11-B04-TRY08" hidden></span>
+
+    ??? question "Đối chiếu — nghiệm tan"
+
+        **Lời giải:** Do \(\tan(\pi/3)=\sqrt3\), nghiệm tổng quát là \(x=\pi/3+k\pi\), \(k\in\mathbb Z\). Trên \([0;2\pi)\), lần lượt \(k=0,1\) cho \(x=\pi/3\), \(x=4\pi/3\). Mỗi nhánh tan chỉ lấy một lần giá trị \(\sqrt3\), và các nhánh lặp sau \(\pi\), nên vẫn là **một họ nghiệm**.
+
+    <span data-thpt-help-id="HELP-G11-B04-TRY08" hidden></span>
+
+    ??? tip "Kiểm lỗi — nghiệm tan"
+
+        **Nhận ra lỗi:** Em viết hai họ nghiệm \(x=\pm\pi/3+2k\pi\) như phương trình cos, hoặc chỉ lấy nghiệm máy tính đầu tiên. **Tự sửa:** Nhận ra chu kì \(\pi\) của tan, ghi \(x=\alpha+k\pi\) rồi lọc \(k\) theo miền. **Luyện lại:** Ôn mục 2.4, làm câu Core **C03** về \(\tan x=-1\) và câu Practice **P03** về \(\tan(3x)=\sqrt3\) tại <a href="../luyen-tap/">Core và Luyện tập Chương I</a>; tự đối chiếu sau khi giải.
+
     ### 1.5. Cot cũng có chu kì \(\pi\), nhưng điều kiện khác tan
 
     Với \(\cot x=\cos x/\sin x\), mẫu bằng \(0\) khi \(x=k\pi\), chứ không phải ở \(x=\pi/2+k\pi\). Trong một khoảng \((0;\pi)\), hàm cot giảm từ rất lớn xuống rất nhỏ, nên mỗi giá trị \(m\in\mathbb R\) ứng với đúng một góc đại diện. Đặc biệt, \(\cot x=0\) **có nghiệm**; không được tìm bằng cách chia \(1/0\).
@@ -139,6 +154,21 @@
         **Dấu hiệu:** Em chỉ có một đáp số, hoặc ghi \(17{,}458^\circ\) nhưng tưởng là radian.
 
         **Tự sửa:** Chọn đúng DEG/RAD, giữ đủ chữ số trung gian, rồi tìm nghiệm thứ hai \(\pi-\alpha\). Ôn mục 2.6 và luyện câu Practice về \(\cos(x-\pi/6)\) tại <a href="../luyen-tap/">Core và Luyện tập Bài 4</a> để viết đủ hai họ.
+
+
+    **Tự thử bổ sung — lọc nghiệm đúng miền.** Giải \(\cos x=-\dfrac12\) trên nửa khoảng \([0;2\pi)\). Nếu câu hỏi đổi thành \([0;2\pi]\), nghiệm có thay đổi không? Giải thích dựa trên chính giá trị tại hai đầu.
+
+    <span data-ped-first-try="9" data-outcome-id="G11-B04-INTERVAL" data-thpt-first-try-id="THPT-G11-B04-TRY09" hidden></span>
+
+    ??? question "Đối chiếu — nghiệm trên miền"
+
+        **Lời giải:** Trên \(\mathbb R\), \(x=2\pi/3+2k\pi\) hoặc \(x=4\pi/3+2k\pi\). Trong \([0;2\pi)\), chỉ còn \(x=2\pi/3\) và \(x=4\pi/3\). Nếu dùng \([0;2\pi]\), kết quả **không thay đổi** vì \(\cos0=\cos2\pi=1\ne-1/2\); việc đầu mút mở/đóng chỉ có thể làm thay đổi nghiệm khi chính đầu mút thỏa phương trình.
+
+    <span data-thpt-help-id="HELP-G11-B04-TRY09" hidden></span>
+
+    ??? tip "Kiểm lỗi — nghiệm trên miền"
+
+        **Nhận ra lỗi:** Em liệt kê cả \(2\pi\) chỉ vì đó là đầu mút mới đóng, hoặc quên họ nghiệm thứ hai. **Tự sửa:** Viết đủ hai họ cos trước, dùng điều kiện khoảng để chọn \(k\), **thế cả hai đầu mút** vào phương trình trước khi kết luận. **Luyện lại:** Ôn mục 2.3 và 2.6, làm Practice **P06** (\(\sin x=1/2\) trên \([0;2\pi)\)) rồi **P07** (\(\cos 2x=0\) trên \([0;\pi]\)) tại <a href="../luyen-tap/">Core và Luyện tập Chương I</a>.
 
     ### 1.7. Kết nối thực tiễn: một tỉ lệ, nhiều vị trí
 
