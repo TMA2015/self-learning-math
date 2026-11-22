@@ -59,6 +59,21 @@
 
         **Tự sửa:** Tính cả \(f(-x)\), không suy từ một thừa số. Ôn mục 2.2 và luyện câu Core phân loại chẵn/lẻ của bốn hàm lượng giác trong <a href="../luyen-tap/">Core và Luyện tập Bài 3</a>.
 
+
+    **Tự thử bổ sung — chu kì cơ bản.** Xét \(f(x)=\cos(3x)\). Hãy tìm chu kì dương nhỏ nhất và dùng giá trị tại \(x=0\) để bác bỏ dự đoán \(T=\pi/3\). Vì sao chỉ tìm được một khoảng lặp chưa đủ kết luận là chu kì *cơ bản*?
+
+    <span data-ped-first-try="7" data-outcome-id="G11-B03-PERIOD" data-thpt-first-try-id="THPT-G11-B03-TRY07" hidden></span>
+
+    ??? question "Đối chiếu — chu kì"
+
+        **Lời giải:** Do \(3(x+T)=3x+2\pi\) khi \(T=2\pi/3\), ta có \(f(x+2\pi/3)=f(x)\) với mọi \(x\). Đây là chu kì cơ bản vì hàm cos có chu kì dương nhỏ nhất \(2\pi\) theo đối số. Với \(T=\pi/3\), \(f(0)=1\) nhưng \(f(\pi/3)=\cos\pi=-1\), nên \(\pi/3\) **không** là chu kì.
+
+    <span data-thpt-help-id="HELP-G11-B03-TRY07" hidden></span>
+
+    ??? tip "Kiểm lỗi — chu kì"
+
+        **Nhận ra lỗi:** Em lấy \(T=\pi/3\) do chia nhầm chu kì \(2\pi\), hoặc chỉ thử một điểm rồi kết luận \(T\) là chu kì. **Tự sửa:** Ghi điều kiện \(f(x+T)=f(x)\) cho *mọi* \(x\), biến đổi \(3T=2\pi\), sau đó thử một giá trị \(x\) để bác bỏ ứng viên sai. **Luyện lại:** Ôn mục 2.2 rồi làm Core Bài 3 về chu kì sin/tan (**C03**) và Luyện tập Bài 3 về \(\cos(4x-\pi/3)\) (**P03**) tại <a href="../luyen-tap/">Core và Luyện tập Chương I</a>, trước khi quay lại tự giải.
+
     ### 1.3. Đọc hình sin và cos thay vì thuộc lòng mọi khoảng
 
     Mỗi góc cho một điểm \((x;\sin x)\) trên mặt phẳng; nối các điểm khi \(x\) thay đổi liên tục tạo thành đồ thị sin. Một vòng quay ứng với quãng ngang dài \(2\pi\); đồ thị đi từ \(0\) lên \(1\), trở lại \(0\), xuống \(-1\), rồi lại về \(0\). Hãy **đọc trục hoành là số đo góc theo radian, không phải số giây**, trừ khi bài cho một công thức đổi góc sang thời gian.
@@ -120,6 +135,35 @@
         **Dấu hiệu:** Em loại \(x=k\pi\) như cot cơ bản, quên đối số đã biến đổi; hoặc giải sai do không chia \(3\).
 
         **Tự sửa:** Đặt \(u=3x-\pi/6\), giải riêng điều kiện \(u\ne k\pi\). Ôn mục 2.6; sau đó làm câu Practice tìm tập xác định \(\cot(2x)\) trong <a href="../luyen-tap/">Core và Luyện tập Bài 3</a>.
+
+
+    **Tự thử bổ sung — đọc nhánh tan.** Trên \((-\pi/2;\pi/2)\), khi \(x\) tăng thì \(\tan x\) tăng hay giảm? Tại \(x=\pi/2\) có được nối tiếp đường cong đi qua tiệm cận không?
+
+    <span data-ped-first-try="8" data-outcome-id="G11-B03-TAN_GRAPH" data-thpt-first-try-id="THPT-G11-B03-TRY08" hidden></span>
+
+    ??? question "Đối chiếu — đồ thị tan"
+
+        **Lời giải:** \(\tan x\) **đồng biến** trên \((-\pi/2;\pi/2)\), đi qua \((0;0)\). Tại \(x=\pi/2\), \(\cos x=0\), nên hàm không xác định; nhánh này không thể nối với nhánh bên phải tiệm cận. Mệnh đề "đồng biến trên toàn bộ tập xác định" cũng không đúng theo nghĩa một khoảng liên tục.
+
+    <span data-thpt-help-id="HELP-G11-B03-TRY08" hidden></span>
+
+    ??? tip "Kiểm lỗi — đồ thị tan"
+
+        **Nhận ra lỗi:** Em nối hai nhánh qua \(x=\pi/2\), hoặc nhầm tan giảm như cot. **Tự sửa:** Kiểm \(\cos x\ne0\), khoanh một khoảng giữa hai tiệm cận rồi đọc chiều tăng chỉ trên khoảng ấy. **Luyện lại:** Ôn mục 2.5, làm câu Luyện tập **P06** về hai tiệm cận của tan tại <a href="../luyen-tap/">Core và Luyện tập Chương I</a>, sau đó tự đọc lại nhánh tan.
+
+    **Tự thử bổ sung — đọc nhánh cot.** Xét hai vị trí \(x=\pi/4\) và \(x=3\pi/4\) trên \((0;\pi)\). Tính cot ở hai điểm này để xác định chiều biến thiên; cot có xác định tại \(x=0\) không?
+
+    <span data-ped-first-try="9" data-outcome-id="G11-B03-COT_GRAPH" data-thpt-first-try-id="THPT-G11-B03-TRY09" hidden></span>
+
+    ??? question "Đối chiếu — đồ thị cot"
+
+        **Lời giải:** \(\cot(\pi/4)=1\), \(\cot(3\pi/4)=-1\); đồ thị cot **nghịch biến trên từng nhánh** \((k\pi;(k+1)\pi)\). Tại \(x=0\), \(\sin0=0\), nên \(\cot0\) không xác định và \(x=0\) là tiệm cận đứng, không phải nghiệm.
+
+    <span data-thpt-help-id="HELP-G11-B03-TRY09" hidden></span>
+
+    ??? tip "Kiểm lỗi — đồ thị cot"
+
+        **Nhận ra lỗi:** Em xem cot đồng biến hoặc cho \(\cot0=0\). **Tự sửa:** Xét \(\sin x\ne0\), so sánh \(1\) và \(-1\) tại hai góc đã cho; nhớ cot đi từ \(+\infty\) đến \(-\infty\) trong mỗi khoảng xác định. **Luyện lại:** Ôn mục 2.6, làm câu **P07** về nhánh cot trên \((0;\pi)\) tại <a href="../luyen-tap/">Core và Luyện tập Chương I</a>, rồi làm lại Vận dụng này.
 
     ### 1.5. Từ đồ thị đến nhịp thở
 
