@@ -3021,6 +3021,28 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 #knowledge .tabbed-block details.question>summary{position:relative;list-style:none}
 #knowledge .tabbed-block details.question>summary::-webkit-details-marker{display:none}
 #solutions[hidden]{display:none!important}
+
+/* Owner visual refinements: exact SGK 15px/44px tabs including border-box. */
+.preview-shell #knowledge .tabbed-labels,.preview-shell #knowledge .sub-rail{gap:7px;padding:8px 2px 12px;border-bottom:1px solid #cfdaee}
+.preview-shell #knowledge .tabbed-labels>button,.preview-shell #knowledge .sub-rail>button{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;height:44px;min-height:44px;font-size:15px;line-height:1.45;padding:9px 13px;border-radius:9px;font-weight:700;flex:0 0 auto;white-space:nowrap;max-width:none;letter-spacing:normal}
+.preview-shell #knowledge .tabbed-labels>button.slm-g10-active-tab,.preview-shell #knowledge .sub-rail>button.slm-g10-active-tab{border-color:#284db5;background:#284db5;color:#fff}
+.preview-shell .thpt-sgk-lesson-nav>[hidden],#sc-solution[hidden]{display:none!important}
+.preview-shell .thpt-sgk-lesson-nav{display:flex;gap:.45rem;flex-wrap:wrap}
+.preview-shell .thpt-sgk-lesson-nav>*{background:var(--r4-soft,#f3f6fb);color:var(--r4-accent,#405bc6);border:1px solid var(--md-default-fg-color--lightest)}
+.preview-shell .cd01-practice-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+.preview-shell .cd01-practice-groups .thpt-r4-practice-lesson{display:flex;flex-direction:column}
+.preview-shell .cd01-practice-groups .cd01-single-card{grid-template-columns:minmax(0,1fr);padding:12px;flex:1}
+.preview-shell .cd01-practice-groups .thpt-r4-practice-card{gap:12px;padding:14px}
+.preview-shell .cd01-practice-groups .thpt-r4-practice-card-desc{margin:0!important}
+.preview-shell .cd01-practice-groups .thpt-r4-practice-card>div>p:not(.thpt-r4-practice-card-desc){margin:.5rem 0}
+.preview-shell .cd01-practice-groups .thpt-r4-practice-lesson-header h2{overflow-wrap:anywhere}
+.preview-shell #modal-item .thpt-r4-formative-answer p:first-child{margin:0}
+.preview-shell #modal-item .thpt-r4-formative-actions details>summary::after{display:none}
+.preview-shell #modal-item .thpt-r4-formative-actions details>summary::before{position:static;width:auto;height:auto;mask:none;background:none;transform:none}
+.preview-shell #modal-item .thpt-r4-formative-actions details[open]>summary::before{transform:rotate(90deg)}
+.preview-shell #sc-body .g10sc-rich>p{margin:.6rem 0 1rem}
+.preview-shell #sc-body{padding-bottom:1rem}
+@media(max-width:640px){.preview-shell #knowledge .tabbed-labels>button,.preview-shell #knowledge .sub-rail>button{font-size:14px;padding:8px 10px;height:44px;min-height:44px}.preview-shell .cd01-practice-groups{grid-template-columns:1fr}}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
 <script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},options:{ignoreHtmlClass:'tex2jax_ignore'}};</script>
@@ -3028,8 +3050,7 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
 <header class="preview-banner"><span class="preview-logo">G</span> Self-Learning Math <span class="preview-tag">Bản xem thử · Golden SGK</span></header>
 <main class="preview-shell"><article class="md-content__inner md-typeset thpt-g10-knowledge-ap1 thpt-g10-first-six-golden">
-<nav class="thpt-sgk-lesson-nav" aria-label="Điều hướng chuyên đề">
-<span class="thpt-sgk-nav-unavailable" aria-disabled="true">← Chuyên đề trước</span><a href="#knowledge" data-page="knowledge" class="is-current">Kiến thức</a><a href="#practice" data-page="practice">Luyện tập</a><a href="#selfcheck" data-page="selfcheck">Tự kiểm tra</a><span class="thpt-sgk-nav-unavailable" aria-disabled="true">Chuyên đề sau →</span></nav>
+<nav class="thpt-sgk-lesson-nav thpt-r4-lesson-tabs" aria-label="Điều hướng chuyên đề"><span class="thpt-sgk-nav-unavailable" aria-disabled="true">← Chuyên đề trước</span><span class="thpt-sgk-nav-unavailable" aria-disabled="true">Chuyên đề sau →</span><a href="#knowledge" data-page="knowledge" hidden>Kiến thức</a><a href="#practice" data-page="practice">Luyện tập</a><a href="#selfcheck" data-page="selfcheck">Tự kiểm tra</a></nav>
 <section id="knowledge" class="preview-page">
 <h1 id="chuyen-e-01-menh-e-tap-hop-va-tu-duy-logic-toan-hoc">Chuyên đề 01 · Mệnh đề, tập hợp và tư duy logic toán học</h1>
 <p>Khi học một khái niệm toán, điều quan trọng không chỉ là nhớ ký hiệu mà là biết mình đang khẳng định điều gì, dựa vào đâu để kết luận và có bỏ sót trường hợp nào không. Chuyên đề này đưa em đi từ việc kiểm tra một câu nói đến việc mô tả các nhóm đối tượng bằng tập hợp, rồi dùng chính các tập hợp ấy để giải quyết bài toán đếm.</p>
@@ -3278,23 +3299,9 @@ body{margin:0}.preview-shell{max-width:1040px;margin:0 auto;padding:20px 24px 48
 </blockquote></template>
 <div class="thpt-r4-section-links"><a href="#practice" data-page="practice">Luyện tập →</a><a href="#selfcheck" data-page="selfcheck">Tự kiểm tra →</a></div>
 </section>
-<section id="practice" class="preview-page" hidden><h1>CĐ01 · Luyện tập</h1><p class="thpt-r4-lead">Chọn nhóm bài, tự làm từng bài rồi mở lời giải để đối chiếu.</p><p>Hãy tự làm bài, kiểm điều kiện, thử tìm phản ví dụ và viết lý do chọn phép tính trước khi mở lời giải. Nếu còn nhầm, em có thể quay lại mảng Kiến thức liên quan rồi giải một bài khác.</p><div class="thpt-r4-practice-card-grid"><section class="thpt-r4-practice-card" data-thpt-grade="10"><div><p class="thpt-r4-practice-card-kind">Luyện tập · Nhóm 1</p><strong>Lập luận với mệnh đề</strong><p>11 bài luyện tập</p><small>Tự luyện, đối chiếu lời giải · Không ghi điểm</small></div><button type="button" class="thpt-r4-practice-open" data-group="0">✎ Luyện tập</button></section><section class="thpt-r4-practice-card" data-thpt-grade="10"><div><p class="thpt-r4-practice-card-kind">Luyện tập · Nhóm 2</p><strong>Các phép toán tập hợp</strong><p>8 bài luyện tập</p><small>Tự luyện, đối chiếu lời giải · Không ghi điểm</small></div><button type="button" class="thpt-r4-practice-open" data-group="1">✎ Luyện tập</button></section><section class="thpt-r4-practice-card" data-thpt-grade="10"><div><p class="thpt-r4-practice-card-kind">Luyện tập · Nhóm 3</p><strong>Khoảng và sơ đồ Ven</strong><p>5 bài luyện tập</p><small>Tự luyện, đối chiếu lời giải · Không ghi điểm</small></div><button type="button" class="thpt-r4-practice-open" data-group="2">✎ Luyện tập</button></section></div><div class="thpt-r4-section-links"><a href="#knowledge" data-page="knowledge">← Kiến thức</a><a href="#selfcheck" data-page="selfcheck">Tự kiểm tra →</a></div></section>
-<section id="selfcheck" class="preview-page" hidden><h1>CĐ01 · Tự kiểm tra</h1><div data-g10-chapter-selfcheck="TOP01"><h2 class="g10sc-heading">Đề tự làm · 11 câu</h2><p class="g10sc-notice">Hãy tự làm đủ 11 câu trên giấy trước khi đối chiếu. Đây là các bài công khai đã học; không chấm điểm tự động, không đánh giá năng lực độc lập.</p><div class="g10sc-body"><p><strong>Câu 1.</strong> Xét hai câu: (a) “9 là số chính phương”; (b) “x + 1 = 3”. Câu nào là mệnh đề, và giá trị đúng/sai?</p><p><strong>Câu 2.</strong> Phủ định của P: “15 chia hết cho 4” là gì? Xét giá trị đúng/sai của P và phủ định.</p><p><strong>Câu 3.</strong> Xét mệnh đề với n∈ℤ: “Nếu n chia hết cho 6 thì n chia hết cho 3”. Mệnh đề đúng không? Mệnh đề đảo đúng không?</p><p><strong>Câu 4.</strong> Với n∈ℤ, xét “n chẵn khi và chỉ khi n² chẵn”. Đúng hay sai?</p><p><strong>Câu 5.</strong> Xác định đúng/sai của “Với mọi số thực x, x² + 1 &gt; 0”.</p><p><strong>Câu 6.</strong> Cho A={1,2}, B={1,2,3}. Xác định 2∈A và A⊆B đúng/sai; phân biệt hai ký hiệu.</p><p><strong>Câu 7.</strong> Với A={1,2,3,4}, B={3,4,5}, tìm A∩B và A∪B.</p><p><strong>Câu 8.</strong> Với A={1,2,3,4}, B={3,4,5}, hãy tìm A\B và B\A.</p><p><strong>Câu 9.</strong> Trong tập vũ trụ U={1,2,3,4,5,6}, cho A={2,4,6}. Tìm phần bù U\A.</p><p><strong>Câu 10.</strong> Cho X=(-∞,3], Y=(1,+∞). Tìm X∩Y.</p><p><strong>Câu 11.</strong> Lớp có 40 học sinh, 23 học câu lạc bộ Anh, 25 học câu lạc bộ Toán, 12 học cả hai. Hỏi bao nhiêu học sinh không học câu lạc bộ nào?</p></div><button id="compare" class="g10sc-button g10sc-final" type="button" aria-expanded="false" aria-controls="solutions">Đối chiếu</button><section id="solutions" hidden><h2>Đáp án và lời giải</h2><section class="g10sc-review" data-canonical-ref="THPT-G10-B01-C01"><h3>Câu 1</h3><p>(a) là <strong>mệnh đề đúng</strong>; (b) là <strong>mệnh đề chứa biến</strong>, chưa có giá trị đúng–sai cố định khi chưa gán biến. 9=3²; câu x+1=3 đúng khi x=2 và sai khi x khác 2 nên chưa là một mệnh đề xác định nếu không gán biến.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B01-C02"><h3>Câu 2</h3><p>“15 không chia hết cho 4”; P sai, phủ định đúng.</p>
-<p>15 chia 4 dư 3 nên P sai; phủ định của P đúng.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B01-P03"><h3>Câu 3</h3><p>Nếu n=6k=3(2k) nên chia hết cho 3. Đảo “chia hết cho 3 ⇒ chia hết cho 6” sai vì n=3.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B01-P04"><h3>Câu 4</h3><p>Nếu n=2k thì n²=4k² chẵn; nếu n lẻ, n² lẻ, nên n² chẵn buộc n chẵn.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B01-P01"><h3>Câu 5</h3><p>Với mọi x∈ℝ, x²≥0 nên x²+1≥1&gt;0.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B02-C01"><h3>Câu 6</h3><p><strong>Cả hai phát biểu đều đúng.</strong> 2 là thành viên A; mọi phần tử của A đều trong B nên A⊆B. Không viết A∈B khi B chỉ chứa các số.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B02-C02"><h3>Câu 7</h3><p>A∩B={3,4}; A∪B={1,2,3,4,5}.</p>
-<p>Phần tử chung: 3,4. Phần tử thuộc A hoặc B: 1,2,3,4,5 không lặp.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B02-P01"><h3>Câu 8</h3><p>A\B={1,2}; B\A={5}.</p>
-<p>A\B lấy phần tử chỉ trong A; B\A lấy phần tử chỉ trong B.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B02-P02"><h3>Câu 9</h3><p>Phần bù là \(U\setminus A=\{1,3,5\}\). Loại 2,4,6 khỏi U, còn 1,3,5.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B02-P03"><h3>Câu 10</h3><p>(1,3].</p>
-<p>Hai điều kiện đồng thời x≤3 và x&gt;1 nên 1&amp;lt;x≤3.</p></section>
-<section class="g10sc-review" data-canonical-ref="THPT-G10-B02-P05"><h3>Câu 11</h3><p>n(A∪B)=23+25−12=36; ngoài cả hai =40−36=4.</p></section></section><p class="g10sc-notice">Học liệu được xây dựng dựa trên Chương I SGK Toán 10, Tập Một – Kết nối tri thức với cuộc sống.</p></div><div class="thpt-r4-section-links"><a href="#knowledge" data-page="knowledge">← Kiến thức</a><a href="#practice" data-page="practice">Luyện tập</a></div></section>
-<dialog id="practice-dialog" class="thpt-r4-practice-dialog"><div class="thpt-r4-modal-top"><div class="thpt-r4-modal-heading"><p class="thpt-r4-modal-meta">CĐ01 · LUYỆN TẬP</p><h2 id="modal-title"></h2></div><button type="button" data-thpt-modal-close aria-label="Đóng">Đóng ×</button></div><div class="thpt-r4-modal-main"><p id="modal-progress" class="thpt-r4-modal-progress"></p><div id="modal-nav" class="thpt-r4-modal-question-nav"></div><div id="modal-item" class="thpt-r4-reviewed-formative-card"></div><label class="draft-label">Ghi cách làm của em (bản nháp không lưu)<textarea class="draft-field" rows="3" placeholder="Tự làm trước khi mở Lời giải"></textarea></label><div class="thpt-r4-modal-buttons"><button id="prev" type="button">← Bài trước</button><button id="next" type="button">Bài tiếp →</button></div></div></dialog>
+<section id="practice" class="preview-page" hidden><h1>CĐ01 · Luyện tập</h1><p class="thpt-r4-lead">Chọn nhóm bài, tự làm từng bài rồi mở lời giải để đối chiếu.</p><p>Hãy tự làm bài, kiểm điều kiện, thử tìm phản ví dụ và viết lý do chọn phép tính trước khi mở lời giải. Nếu còn nhầm, em có thể quay lại mảng Kiến thức liên quan rồi giải một bài khác.</p><div class="thpt-r4-practice-sections cd01-practice-groups"><section class="thpt-r4-practice-lesson" data-thpt-grade="10"><div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">1</span><div><p class="thpt-r4-practice-class">Chuyên đề 01 · Nhóm 1</p><h2>Lập luận với mệnh đề</h2></div></div><div class="thpt-r4-practice-card-grid cd01-single-card"><section class="thpt-r4-practice-card" data-thpt-grade="10"><div><p class="thpt-r4-practice-card-desc">Nhận biết mệnh đề, phủ định, kéo theo, tương đương và lượng từ.</p><p>11 bài luyện tập</p></div><button type="button" class="thpt-r4-practice-open" data-group="0">✎ Luyện tập</button></section></div></section><section class="thpt-r4-practice-lesson" data-thpt-grade="10"><div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">2</span><div><p class="thpt-r4-practice-class">Chuyên đề 01 · Nhóm 2</p><h2>Các phép toán tập hợp</h2></div></div><div class="thpt-r4-practice-card-grid cd01-single-card"><section class="thpt-r4-practice-card" data-thpt-grade="10"><div><p class="thpt-r4-practice-card-desc">Xác định phần tử, tập con, giao, hợp, hiệu và phần bù.</p><p>8 bài luyện tập</p></div><button type="button" class="thpt-r4-practice-open" data-group="1">✎ Luyện tập</button></section></div></section><section class="thpt-r4-practice-lesson" data-thpt-grade="10"><div class="thpt-r4-practice-lesson-header"><span class="thpt-r4-lesson-number">3</span><div><p class="thpt-r4-practice-class">Chuyên đề 01 · Nhóm 3</p><h2>Khoảng và sơ đồ Ven</h2></div></div><div class="thpt-r4-practice-card-grid cd01-single-card"><section class="thpt-r4-practice-card" data-thpt-grade="10"><div><p class="thpt-r4-practice-card-desc">Đọc khoảng trên trục số, sử dụng sơ đồ Ven và đếm phần hợp.</p><p>5 bài luyện tập</p></div><button type="button" class="thpt-r4-practice-open" data-group="2">✎ Luyện tập</button></section></div></section></div><div class="thpt-r4-section-links"><a href="#knowledge" data-page="knowledge">← Kiến thức</a><a href="#selfcheck" data-page="selfcheck">Tự kiểm tra →</a></div></section>
+<section id="selfcheck" class="preview-page" hidden><h1>CĐ01 · Tự kiểm tra</h1><div data-g10-chapter-selfcheck="TOP01"><h2 class="g10sc-heading">Tự kiểm tra chuyên đề 01</h2><p class="g10sc-notice">Em tự làm từng câu trên giấy, sau đó mở Đối chiếu. Không chấm điểm tự động, không ghi điểm thành thạo.</p><p id="sc-progress" class="g10sc-progress"></p><div id="sc-jump" class="g10sc-jump" aria-label="Chọn câu hỏi"></div><section id="sc-body" class="g10sc-body"></section><div class="g10sc-controls"><button type="button" id="sc-prev" class="g10sc-button">Câu trước</button><button type="button" id="sc-next" class="g10sc-button">Câu tiếp</button></div><p class="g10sc-notice">Học liệu được xây dựng dựa trên Chương I SGK Toán 10, Tập Một – Kết nối tri thức với cuộc sống.</p></div><div class="thpt-r4-section-links"><a href="#knowledge" data-page="knowledge">← Kiến thức</a><a href="#practice" data-page="practice">Luyện tập</a></div></section>
+<dialog id="practice-dialog" class="thpt-r4-practice-dialog"><div class="thpt-r4-modal-top"><span class="thpt-r4-modal-lesson-badge" id="modal-badge" aria-hidden="true">1</span><div class="thpt-r4-modal-heading"><p class="thpt-r4-modal-meta">CĐ01 · LUYỆN TẬP</p><h2 id="modal-title"></h2></div><button type="button" data-thpt-modal-close aria-label="Đóng">Đóng ×</button></div><div class="thpt-r4-modal-main"><p id="modal-progress" class="thpt-r4-modal-progress"></p><div id="modal-nav" class="thpt-r4-modal-question-nav"></div><div id="modal-item" class="thpt-r4-reviewed-formative-card"></div><div class="thpt-r4-modal-buttons"><button id="prev" type="button">← Bài trước</button><button id="next" type="button">Bài tiếp →</button></div></div></dialog>
 </article></main>
 <script>/* SLM THPT Golden R4 shared interaction runtime v1.
  * RELEASE UI-only. This module never reads/writes learner answers, assessment
@@ -3387,14 +3394,52 @@ const panels=modules.map((m,i)=>{const p=document.createElement("section");m.hea
 tabSet($("#outer-tabs"),$("#outer-panels"),modules.map(m=>m.label),panels,"module");
 $$('#knowledge blockquote').forEach(q=>{const type=q.querySelector('strong')?.textContent||"";const el=document.createElement("div");el.className="thpt-r4-knowledge-conclusion "+(/ĐỊNH NGHĨA|KHÁI NIỆM/.test(type)?"thpt-r4-concept-card":"thpt-r4-rule-card");el.setAttribute("role","note");el.append(...q.childNodes);q.replaceWith(el);});
 $$('#knowledge p').forEach(q=>{if(q.querySelector(':scope>strong')?.textContent.trim()!=="Lời giải.")return;const box=document.createElement("div");box.className="thpt-r4-example-solution";q.before(box);box.append(q);let next=box.nextElementSibling;while(next&& !["H2","H3","DETAILS"].includes(next.tagName)&&!next.classList.contains("thpt-r4-knowledge-conclusion")&&!/^(Vận dụng|Kiểm lại|Ví dụ|Kiểm lỗi|Khám phá kiến thức)/.test(next.textContent.trim())){const move=next;next=next.nextElementSibling;box.append(move)}});
-function route(){if(typeof lifecycle!=="undefined"&&lifecycle.isOpen)lifecycle.close();const page=location.hash.slice(1);const id=["knowledge","practice","selfcheck"].includes(page)?page:"knowledge";$$(".preview-page").forEach(n=>n.hidden=n.id!==id);$$("nav [data-page]").forEach(n=>{n.classList.toggle("is-current",n.dataset.page===id);if(n.dataset.page===id)n.setAttribute("aria-current","page");else n.removeAttribute("aria-current")});window.scrollTo(0,0);typeset(document.getElementById(id));}
+function route(){if(typeof lifecycle!=="undefined"&&lifecycle.isOpen)lifecycle.close();const page=location.hash.slice(1);const id=["knowledge","practice","selfcheck"].includes(page)?page:"knowledge";$$(".preview-page").forEach(n=>n.hidden=n.id!==id);$$("nav [data-page]").forEach(n=>{n.hidden=n.dataset.page===id;n.removeAttribute("aria-current");n.classList.remove("is-current")});window.scrollTo(0,0);typeset(document.getElementById(id));}
 window.addEventListener("hashchange",route);
-const dialog=$("#practice-dialog"),runtime=window.THPT_GOLDEN_RUNTIME;let group=0,at=0,activeTrigger;const ranges=[[0,11],[11,19],[19,24]],drafts=new Map();let pager;
+const dialog=$("#practice-dialog"),runtime=window.THPT_GOLDEN_RUNTIME;let group=0,at=0,activeTrigger;const ranges=[[0,11],[11,19],[19,24]];let pager;
 const getItems=()=>DATA.items.slice(...ranges[group]);
 const lifecycle=runtime.bindDialog({dialog,closeButton:dialog.querySelector("[data-thpt-modal-close]"),getReturnFocus:()=>activeTrigger});
-function render(){const list=getItems(),item=list[at];$("#modal-title").textContent=DATA.groupLabels[group];$("#modal-progress").textContent="Bài "+(at+1)+" / "+list.length+" (Bài "+item.number+" của chuyên đề)";runtime.renderNav({container:$("#modal-nav"),count:list.length,index:at,label:i=>String(i+1),onSelect:i=>{at=i;render()}});$("#modal-item").dataset.thptCanonicalItem=item.id;$("#modal-item").innerHTML="<h3>Bài "+item.number+".</h3>"+item.html;const field=$(".draft-field");field.value=drafts.get(item.id)||"";field.oninput=()=>drafts.set(item.id,field.value);pager?.sync();typeset($("#modal-item"));}
+function canonicalSolution(item){const temp=document.createElement("div");temp.innerHTML=item.html;const details=temp.querySelector("details");if(!details)throw Error("Missing source solution "+item.id);details.querySelector("summary")?.remove();return details.innerHTML.replace(/&amp;lt;/g,"&lt;").replace(/&amp;gt;/g,"&gt;");}
+function render(){
+ const list=getItems(),item=list[at];
+ $("#modal-badge").textContent=String(group+1);
+ $("#modal-title").textContent=DATA.groupLabels[group].replace(/^\d+\.\s*/,"");
+ $("#modal-progress").textContent="Câu "+(at+1)+" / "+list.length;
+ runtime.renderNav({container:$("#modal-nav"),count:list.length,index:at,label:i=>String(i+1),onSelect:i=>{at=i;render()}});
+ const card=$("#modal-item"),src=document.createElement("div");src.innerHTML=item.html;
+ src.querySelector("details")?.remove();
+ card.dataset.thptCanonicalItem=item.id;
+ card.innerHTML="<h3>Bài "+item.number+".</h3>"+src.innerHTML;
+ const form=document.createElement("div");form.className="thpt-r4-formative-answer";
+ const note=document.createElement("p");note.textContent="Em tự làm bài trên giấy trước khi đối chiếu.";
+ const reveal=document.createElement("button");reveal.type="button";reveal.className="thpt-r4-formative-submit";reveal.textContent="Đối chiếu lời giải";
+ const feedback=document.createElement("p");feedback.className="thpt-r4-formative-feedback";feedback.setAttribute("role","status");
+ form.append(note,reveal,feedback);
+ const actions=document.createElement("div");actions.className="thpt-r4-formative-actions";
+ const solution=document.createElement("details"),summary=document.createElement("summary"),content=document.createElement("div");summary.textContent="📖 Đáp án / Lời giải";content.className="thpt-r4-formative-reveal";content.innerHTML=canonicalSolution(item);solution.append(summary,content);
+ const remed=document.createElement("a");remed.className="thpt-r4-remediation-link";remed.href="#knowledge";remed.textContent="↶ Ôn lại kiến thức";remed.onclick=()=>{lifecycle.close();$("#outer-tabs").children[group].click()};
+ actions.append(solution,remed);card.append(form,actions);
+ reveal.onclick=()=>{solution.open=true;feedback.textContent="Em hãy đối chiếu cách làm với lời giải bên dưới.";typeset(content)};
+ solution.addEventListener("toggle",()=>{if(solution.open)typeset(content)});
+ pager?.sync();typeset(card);
+}
 pager=runtime.bindPager({prev:$("#prev"),next:$("#next"),getIndex:()=>at,getCount:()=>getItems().length,go:i=>{at=i;render()}});
 $$("[data-group]").forEach(b=>b.onclick=()=>{group=Number(b.dataset.group);at=0;activeTrigger=b;render();lifecycle.open(b)});
+let scAt=0;
+function renderSelfcheck(){
+ const q=DATA.replay[scAt],item=DATA.items.find(x=>x.id===q.id);
+ $("#sc-progress").textContent="Câu "+(scAt+1)+" / "+DATA.replay.length;
+ const nav=$("#sc-jump");nav.replaceChildren();
+ DATA.replay.forEach((_,j)=>{const b=document.createElement("button");b.type="button";b.className="g10sc-jump-button"+(j===scAt?" is-current":"");b.textContent=String(j+1);b.setAttribute("aria-label","Đến câu "+(j+1));if(j===scAt)b.setAttribute("aria-current","true");b.onclick=()=>{scAt=j;renderSelfcheck()};nav.append(b)});
+ const body=$("#sc-body"),tmp=document.createElement("div");tmp.innerHTML=q.html;tmp.querySelector("strong")?.remove();
+ body.innerHTML="<h3>Câu "+(scAt+1)+"</h3><div class='g10sc-rich'>"+tmp.innerHTML+"</div>";
+ const button=document.createElement("button");button.type="button";button.className="g10sc-button g10sc-final";button.textContent="Đối chiếu";button.setAttribute("aria-expanded","false");button.setAttribute("aria-controls","sc-solution");
+ const solution=document.createElement("section");solution.id="sc-solution";solution.className="g10sc-review";solution.hidden=true;solution.innerHTML=canonicalSolution(item);
+ button.onclick=()=>{solution.hidden=!solution.hidden;button.setAttribute("aria-expanded",String(!solution.hidden));button.textContent=solution.hidden?"Đối chiếu":"Ẩn đối chiếu";if(!solution.hidden)typeset(solution)};
+ body.append(button,solution);$("#sc-prev").disabled=scAt===0;$("#sc-next").disabled=scAt===DATA.replay.length-1;typeset(body);
+}
+$("#sc-prev").onclick=()=>{if(scAt>0){scAt--;renderSelfcheck()}};
+$("#sc-next").onclick=()=>{if(scAt<DATA.replay.length-1){scAt++;renderSelfcheck()}};
+renderSelfcheck();
 route();
-$("#compare").onclick=()=>{const n=$("#solutions");n.hidden=!n.hidden;$("#compare").textContent=n.hidden?"Đối chiếu":"Ẩn đối chiếu";$("#compare").setAttribute("aria-expanded",String(!n.hidden));if(!n.hidden)typeset(n)};
 </script></body></html>
