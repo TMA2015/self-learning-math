@@ -1,215 +1,259 @@
 # Toán 12 · Bài 11. Nguyên hàm
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 4–11</p><p class="thpt-r4-lead">Hiểu bản chất trước công thức, xem ví dụ có suy luận, đọc hình PNG gốc đã review và tự thử trước Core.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../bai-12/">Bài 12 · Học tiếp</a></nav></div>
-
-## 1. Vì sao cần học và kiến thức tiền đề
-
-Từ vị trí lấy đạo hàm để ra vận tốc; muốn khôi phục vị trí từ vận tốc phải đi chiều ngược lại. Nguyên hàm không phải phép chia đạo hàm, và thường có một họ hàm khác nhau bởi hằng số.
-
-**Tiền đề cần tự kiểm:** đạo hàm đa thức, sin/cos, hàm mũ, logarit và ý nghĩa vận tốc; xem lại đạo hàm nếu nhầm chiều biến đổi.
-
-## 2. Hiểu bản chất, công thức và điều kiện
-
-<!-- OUTCOME_ID: G12-CHIV-B11-O01 -->
-
-### 1. Nguyên hàm là phép đảo của đạo hàm
-
-- **Vì sao cần biết:** Từ vận tốc đã biết muốn khôi phục vị trí, ta cần tìm một hàm có đạo hàm bằng tốc độ biến đổi đã cho.
-
-- **Kiến thức tiền đề:** Đạo hàm đa thức, quy tắc đạo hàm tổng và tích với hằng số.
-
-- **Bản chất trước công thức:** Nếu F'(x)=f(x) trên khoảng K thì F là một nguyên hàm của f trên K. Phân biệt kiểm tra đạo hàm của F với việc chỉ đoán công thức.
-
-- **Định nghĩa và công thức:** \(F'(x)=f(x)\quad (x\in K).\)
-
-- **Điều kiện và giới hạn:** Luôn nêu khoảng K; kiểm tra đạo hàm từng hạng tử. Hai hàm trùng đạo hàm trên cùng một khoảng chỉ khác một hằng số.
-
-- **Lý do chọn phương pháp:** Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.
-
-#### Ví dụ có suy luận
-
-**Đề:** Cho F(x)=x^4-3x^2+2. Hãy tìm f(x) sao cho F là nguyên hàm của f.
-
-**Lời giải có suy luận:** Vì F'(x)=4x^3-6x, nên f(x)=4x^3-6x trên R. Cách kiểm: lấy đạo hàm F, không phải tích phân F. Lý do chọn cách giải: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x. Kiểm điều kiện áp dụng: Luôn nêu khoảng K; kiểm tra đạo hàm từng hạng tử. Hai hàm trùng đạo hàm trên cùng một khoảng chỉ khác một hằng số.
-
-**Bẫy cần tự phát hiện:** Đạo hàm nhầm x^3 thành 3x hoặc kiểm thử tại một điểm rồi kết luận mọi x.
-
-<!-- OUTCOME_ID: G12-CHIV-B11-O02 -->
-
-### 2. Họ nguyên hàm và điều kiện đầu
-
-- **Vì sao cần biết:** Một vận tốc có thể tương ứng nhiều vị trí chỉ khác vị trí xuất phát; điều kiện đầu chọn đúng một hàm.
-
-- **Kiến thức tiền đề:** Đạo hàm hằng số bằng 0; nghiệm phương trình tuyến tính đơn giản.
-
-- **Bản chất trước công thức:** Nếu F là nguyên hàm của f trên một khoảng, mọi nguyên hàm có dạng F+C. Một dữ kiện F(x0)=y0 xác định C.
-
-- **Định nghĩa và công thức:** \(\int f(x)\,dx=F(x)+C.\)
-
-- **Điều kiện và giới hạn:** Mệnh đề chỉ được khẳng định trên từng khoảng liên thông; mỗi nhánh tách biệt có thể có hằng số riêng.
-
-- **Lý do chọn phương pháp:** Tích phân được F+C; thay x0 vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu.
-
-#### Ví dụ có suy luận
-
-**Đề:** Cho f(x)=2x và F(2)=7. Tìm nguyên hàm F.
-
-**Lời giải có suy luận:** F(x)=x^2+C. Từ 4+C=7 suy ra C=3; F(x)=x^2+3 và F'=2x. Lý do chọn cách giải: Tích phân được F+C; thay x0 vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu. Kiểm điều kiện áp dụng: Mệnh đề chỉ được khẳng định trên từng khoảng liên thông; mỗi nhánh tách biệt có thể có hằng số riêng.
-
-**Bẫy cần tự phát hiện:** Quên +C hoặc xem mọi nguyên hàm đều bằng đúng F không có độ dịch.
-
-<!-- OUTCOME_ID: G12-CHIV-B11-O03 -->
-
-### 3. Quy tắc lũy thừa và tính tuyến tính
-
-- **Vì sao cần biết:** Để tính tích phân những tốc độ đa thức, ta cần quy tắc lấy ngược đạo hàm và phân phối theo từng hạng tử.
-
-- **Kiến thức tiền đề:** Đạo hàm x^(n+1)=(n+1)x^n, phép biến đổi tổng.
-
-- **Bản chất trước công thức:** Đối với n≠−1, nguyên hàm x^n là x^(n+1)/(n+1), đồng thời có thể tách tổng và hệ số ra ngoài.
-
-- **Định nghĩa và công thức:** \(\int x^n\,dx=\frac{x^{n+1}}{n+1}+C\ (n\ne-1);\quad \int(af+bg)dx=a\int fdx+b\int gdx.\)
-
-- **Điều kiện và giới hạn:** Điều kiện n≠-1; với số mũ không nguyên cần xét miền xác định thực và khoảng làm việc.
-
-- **Lý do chọn phương pháp:** Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm.
-
-#### Ví dụ có suy luận
-
-**Đề:** Tính ∫(3x^2−4x+2)dx.
-
-**Lời giải có suy luận:** Nguyên hàm là x^3−2x^2+2x+C; đạo hàm đúng 3x^2−4x+2. Lý do chọn cách giải: Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm. Kiểm điều kiện áp dụng: Điều kiện n≠-1; với số mũ không nguyên cần xét miền xác định thực và khoảng làm việc.
-
-**Bẫy cần tự phát hiện:** Áp quy tắc lũy thừa n=-1 gây chia 0; quên chia cho số mũ mới.
-
-<!-- OUTCOME_ID: G12-CHIV-B11-O04 -->
-
-### 4. Trường hợp 1/x và logarit giá trị tuyệt đối
-
-- **Vì sao cần biết:** Có những tốc độ tỉ lệ nghịch với biến nên quy tắc lũy thừa không dùng được tại số mũ -1.
-
-- **Kiến thức tiền đề:** Đạo hàm ln|x|=1/x khi x≠0.
-
-- **Bản chất trước công thức:** Nguyên hàm 1/x là ln|x|+C trên từng khoảng (−∞,0) hoặc (0,+∞).
-
-- **Định nghĩa và công thức:** \(\int\frac{1}{x}\,dx=\ln|x|+C\quad(x\ne0).\)
-
-- **Điều kiện và giới hạn:** Không được lấy một hằng số C chung bắt buộc trên hai khoảng tách rời bởi x=0; trên x>0 có thể dùng ln x.
-
-- **Lý do chọn phương pháp:** Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm.
-
-#### Ví dụ có suy luận
-
-**Đề:** Tính ∫(3/x+2x)dx trên K=(0,+∞).
-
-**Lời giải có suy luận:** F=3ln x+x^2+C vì F'=3/x+2x trên K; nếu K âm thay ln x bằng ln|x|. Lý do chọn cách giải: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm. Kiểm điều kiện áp dụng: Không được lấy một hằng số C chung bắt buộc trên hai khoảng tách rời bởi x=0; trên x>0 có thể dùng ln x.
-
-**Bẫy cần tự phát hiện:** Viết ln x cho x âm hoặc áp 1/(n+1) với n=−1.
-
-<!-- OUTCOME_ID: G12-CHIV-B11-O05 -->
-
-### 5. Nguyên hàm hàm mũ
-
-- **Vì sao cần biết:** Tốc độ tăng theo tỉ lệ với lượng hiện có dẫn đến e^x và a^x; nguyên hàm giúp phục hồi tổng lượng.
-
-- **Kiến thức tiền đề:** (e^x)'=e^x, (a^x)'=a^x ln a.
-
-- **Bản chất trước công thức:** Nguyên hàm của e^x là e^x+C; của a^x là a^x/ln a+C.
-
-- **Định nghĩa và công thức:** \(\int e^x dx=e^x+C;\quad\int a^x dx=\frac{a^x}{\ln a}+C.\)
-
-- **Điều kiện và giới hạn:** a>0 và a≠1; ln a khác 0; hàm xác định trên R. Riêng a=1 cho hàm hằng 1, nguyên hàm là x+C chứ không thể chia cho ln1=0.
-
-- **Lý do chọn phương pháp:** Tách hệ số rồi chia ln a nếu cơ số a không phải e.
-
-#### Ví dụ có suy luận
-
-**Đề:** Tính ∫(3e^x+4^x)dx.
-
-**Lời giải có suy luận:** Kết quả 3e^x+4^x/ln4+C; đạo hàm phần 4^x/ln4 bằng 4^x. Lý do chọn cách giải: Tách hệ số rồi chia ln a nếu cơ số a không phải e. Kiểm điều kiện áp dụng: a>0 và a≠1; ln a khác 0; hàm xác định trên R.
-
-**Bẫy cần tự phát hiện:** Nhầm ∫2^x dx=2^x+C (thiếu 1/ln2).
-
-<!-- OUTCOME_ID: G12-CHIV-B11-O06 -->
-
-### 6. Nguyên hàm lượng giác và điều kiện miền
-
-- **Vì sao cần biết:** Các vận tốc dao động tuần hoàn có thể được phục hồi từ sin, cos và các đạo hàm của tan, cot.
-
-- **Kiến thức tiền đề:** (sin x)'=cos x, (cos x)'=−sin x, (tan x)'=1/cos²x.
-
-- **Bản chất trước công thức:** ∫cos x dx=sin x+C; ∫sin x dx=−cos x+C; ∫sec²x dx=tan x+C; ∫csc²x dx=−cot x+C.
-
-- **Định nghĩa và công thức:** \(\int\cos xdx=\sin x+C;\quad\int\sin xdx=-\cos x+C.\)
-
-- **Điều kiện và giới hạn:** Những nguyên hàm tan và cot chỉ tính trên các khoảng liên tục không chứa nghiệm cosx=0 hoặc sinx=0 tương ứng; góc tính bằng radian.
-
-- **Lý do chọn phương pháp:** Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.
-
-#### Ví dụ có suy luận
-
-**Đề:** Tính ∫(2cos x+4sin x)dx.
-
-**Lời giải có suy luận:** 2sin x−4cos x+C; đạo hàm là 2cos x+4sin x. Lý do chọn cách giải: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác. Kiểm điều kiện áp dụng: Những nguyên hàm tan và cot chỉ tính trên các khoảng liên tục không chứa nghiệm cosx=0 hoặc sinx=0 tương ứng; góc tính bằng radian.
-
-**Bẫy cần tự phát hiện:** Quên dấu âm của nguyên hàm sin hoặc viết tan x trên đoạn đi qua cosx=0.
-
-<!-- OUTCOME_ID: G12-CHIV-B11-O07 -->
-
-### 7. Khôi phục hàm theo tốc độ biến đổi
-
-- **Vì sao cần biết:** Khi biết vận tốc, gia tốc hoặc tốc độ tăng sản lượng, cần nguyên hàm và dữ kiện ban đầu để trả về đại lượng thực.
-
-- **Kiến thức tiền đề:** Vận tốc s'=v, gia tốc v'=a, đơn vị thời gian và điều kiện đầu.
-
-- **Bản chất trước công thức:** Từ q'(t)=r(t) tìm q(t)=∫r(t)dt; áp q(t0)=q0 chọn C; nếu cho gia tốc phải tích phân hai lần.
-
-- **Định nghĩa và công thức:** \(q(t)=F(t)+C,\qquad F'(t)=r(t).\)
-
-- **Điều kiện và giới hạn:** Đơn vị q' là đơn vị q trên một đơn vị t; t trong miền thời gian hợp lý; không đổi ý nghĩa của vận tốc với quãng đường.
-
-- **Lý do chọn phương pháp:** Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.
-
-#### Ví dụ có suy luận
-
-**Đề:** Vật có a(t)=6t, v(0)=1 và s(0)=2. Tính v(t), s(t).
-
-**Lời giải có suy luận:** v(t)=3t²+1; s(t)=t³+t+2. Kiểm v'=6t, s'=v và hai điều kiện đầu. Lý do chọn cách giải: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên. Kiểm điều kiện áp dụng: Đơn vị q' là đơn vị q trên một đơn vị t; t trong miền thời gian hợp lý; không đổi ý nghĩa của vận tốc với quãng đường.
-
-**Bẫy cần tự phát hiện:** Dùng gia tốc trực tiếp làm vị trí hoặc quên hai điều kiện đầu khi tích phân hai lần.
-
-## 3. Đọc hình minh họa gốc
-
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHIV-B11-PRIMITIVES-R00.png" alt="Họ nguyên hàm F(x)=x²+C và đạo hàm f(x)=2x; mọi giá trị C cho cùng đạo hàm, đọc sự tịnh tiến theo trục tung. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán." /><figcaption>Họ nguyên hàm F(x)=x²+C và đạo hàm f(x)=2x; mọi giá trị C cho cùng đạo hàm, đọc sự tịnh tiến theo trục tung. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán.</figcaption></figure>
-
-## 4. Tự thử trước Core
-
-Hãy tự giải rồi mới chủ động mở đối chiếu. Không ghi điểm hay Mastery.
-
-<!-- FIRST_TRY_ID: B11-T01 -->
-### Tình huống 1
-
-Một vật có s(t)=t²+3. Hãy tìm tốc độ v(t) và đoán hàm s(t) nếu chỉ biết v(t)=2t.
-
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
-
-v(t)=2t. Có vô số vị trí s(t)=t²+C; vị trí xuất phát chọn C.
-
-</details>
-
-<!-- FIRST_TRY_ID: B11-T02 -->
-### Tình huống 2
-
-Tại x>0, kiểm tra xem F(x)=ln x có đạo hàm 1/x không; vì sao không thay bằng ln x trên x<0?
-
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
-
-Có. (ln x)'=1/x trên x>0; với x<0 hàm ln x không xác định thực, dùng ln|x|.
-
-</details>
-
-## 5. Chuyển sang Core và Luyện tập
-
-Sau khi học kiến thức và tự thử, em luyện đúng Bài 11; hãy tự giải từng câu trước khi nộp để xem lời giải hoặc rubric.
-
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b11-core">✎ Core · Bài 11</a><a href="../luyen-tap/#b11-practice">✎ Luyện tập, Vận dụng và Tự luận</a><a href="../luyen-tap/#b11-help">Khi gặp khó khăn</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 4–11</p><p class="thpt-r4-lead">Hiểu bản chất, đọc hình, tự vận dụng và đối chiếu trước khi luyện tập.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../bai-12/">Bài 12 · Học tiếp</a></nav></div>
+
+=== "Khám phá kiến thức"
+
+    Biết vận tốc, làm sao khôi phục vị trí? Đạo hàm mô tả tốc độ biến đổi; nguyên hàm đi theo chiều ngược lại. Ôn đạo hàm đa thức, hàm mũ, logarit, sin và cos; hằng số có đạo hàm bằng 0.
+
+    ### 1.1. Đảo chiều từ đạo hàm
+    
+    Muốn tìm nguyên hàm của f, tìm F sao cho $F'=f$ tại mọi điểm trên miền xét. Không phải phép chia hay thay thử một điểm.
+    
+    **Vận dụng.** $G(x)=2x^4-3x+1$ có là nguyên hàm của $8x^3-3$ trên R không?
+    
+    <span data-ped-first-try="1" data-outcome-id="G12-CHIV-B11-O01" data-thpt-first-try-id="THPT-G12-B11-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Có, vì $G'=8x^3-3$ trên R.
+    
+    <span data-thpt-help-id="HELP-G12-B11-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Lấy đạo hàm hàm ứng viên, so toàn bộ biểu thức. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p01). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.2. Họ nguyên hàm và điều kiện đầu
+    
+    Đồ thị $x^2+C$ tịnh tiến theo trục tung nhưng độ dốc tại cùng hoành độ không đổi. Nếu hai nguyên hàm có cùng đạo hàm trên một khoảng liên thông, hiệu có đạo hàm 0 nên là hằng số. Điều kiện đầu xác định C.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIV-B11-PRIMITIVES-R02.svg" alt="Ba parabol y=x²−1, y=x², y=x²+1 cùng hình dạng, dịch theo trục tung."/><figcaption>Đọc cùng một x; các tiếp tuyến có cùng độ dốc 2x. Thay C chỉ đổi tung độ.</figcaption></figure>
+    
+    **Vận dụng.** Tìm F khi $F'=6x$, $F(1)=8$.
+    
+    <span data-ped-first-try="2" data-outcome-id="G12-CHIV-B11-O02" data-thpt-first-try-id="THPT-G12-B11-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $F=3x^2+C$; $3+C=8$ nên $F=3x^2+5$. Kiểm $F'=6x$, $F(1)=8$.
+    
+    <span data-thpt-help-id="HELP-G12-B11-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Chỉ xác định C sau khi lấy nguyên hàm; các khoảng tách rời có thể có C khác nhau. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p02). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.3. Lũy thừa và tuyến tính
+    
+    Đạo hàm $x^{m+1}$ cho hệ số m+1, nên phải chia hệ số này khi đảo chiều. Tìm nguyên hàm từng hạng rồi gộp một hằng số.
+    
+    **Vận dụng.** Tính $\int(12x^3-6x+5)\,dx$.
+    
+    <span data-ped-first-try="3" data-outcome-id="G12-CHIV-B11-O03" data-thpt-first-try-id="THPT-G12-B11-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $3x^4-3x^2+5x+C$. Lấy đạo hàm từng hạng thu đúng đề.
+    
+    <span data-thpt-help-id="HELP-G12-B11-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Tăng số mũ một rồi chia; m=−1 là trường hợp khác. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p03). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.4. Khi gặp 1/x
+    
+    Không thể chia cho m+1 khi m=−1. Trên khoảng không chứa 0, đạo hàm $\ln|x|$ bằng $1/x$. Hai nhánh âm và dương không bắt buộc chung C.
+    
+    **Vận dụng.** Tìm $\int(5/x-2)\,dx$ trên $(-\infty,0)$.
+    
+    <span data-ped-first-try="4" data-outcome-id="G12-CHIV-B11-O04" data-thpt-first-try-id="THPT-G12-B11-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $5\ln(-x)-2x+C$ (cũng viết $5\ln|x|-2x+C$ trên miền này).
+    
+    <span data-thpt-help-id="HELP-G12-B11-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không viết ln x trên nhánh âm; không nối qua điểm 0. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p04). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.5. Hàm mũ và hệ số logarit
+    
+    Đạo hàm $a^x$ là $a^x\ln a$, với a>0, a≠1. Muốn đảo chiều, chia cho ln a; trường hợp e có ln e=1.
+    
+    **Vận dụng.** Tính $\int(2e^x+3^x)\,dx$.
+    
+    <span data-ped-first-try="5" data-outcome-id="G12-CHIV-B11-O05" data-thpt-first-try-id="THPT-G12-B11-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $2e^x+3^x/\ln3+C$.
+    
+    <span data-thpt-help-id="HELP-G12-B11-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Đạo hàm số hạng mũ phải triệt đúng ln a; a=1 là hàm hằng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.6. Lượng giác và miền liên tục
+    
+    Đạo hàm sin là cos, đạo hàm cos là −sin. Đạo hàm tan và cot lần lượt là $1/\cos^2 x$ và $-1/\sin^2 x$ tại nơi xác định. Góc tính bằng radian.
+    
+    **Vận dụng.** Tính $\int(3\sin x-5\cos x)\,dx$ và $\int 2/\cos^2x\,dx$ trên $(-\pi/2,\pi/2)$.
+    
+    <span data-ped-first-try="6" data-outcome-id="G12-CHIV-B11-O06" data-thpt-first-try-id="THPT-G12-B11-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $-3\cos x-5\sin x+C_1$; $2\tan x+C_2$.
+    
+    <span data-thpt-help-id="HELP-G12-B11-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm dấu của nguyên hàm sin, và tránh các điểm cos=0 hay sin=0. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p06). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.7. Khôi phục đại lượng từ tốc độ
+    
+    Biết $q'(t)=r(t)$, lấy nguyên hàm rồi dùng q tại thời điểm đầu. Nếu biết gia tốc, phải khôi phục vận tốc trước, sau đó vị trí; mỗi lần dùng một điều kiện đầu.
+    
+    **Vận dụng.** Vật có $a(t)=4$, $v(0)=3$, $s(0)=2$. Tìm v và s.
+    
+    <span data-ped-first-try="7" data-outcome-id="G12-CHIV-B11-O07" data-thpt-first-try-id="THPT-G12-B11-TRY07" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $v=4t+3$, $s=2t^2+3t+2$. Kiểm v'=4, s'=v và hai giá trị tại 0.
+    
+    <span data-thpt-help-id="HELP-G12-B11-TRY07" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không lấy gia tốc làm vị trí; ghi đơn vị và miền thời gian. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.8. Độ cao cực đại từ vận tốc
+    
+    Trong mô hình vật ném thẳng đứng, h'=v. Lấy nguyên hàm để tìm h, sau đó tìm thời điểm v=0 và xét dấu v trên miền vật còn ở trên mặt đất.
+    
+    **Vận dụng.** Vật xuất phát từ mặt đất, $v(t)=30-10t$ (m/s), t tính bằng giây. Tính h(2) và độ cao lớn nhất trước khi chạm đất.
+    
+    <span data-ped-first-try="8" data-outcome-id="G12-CHIV-B11-O07" data-thpt-first-try-id="THPT-G12-B11-TRY08" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $h=30t-5t^2$, h(2)=40 m. Miền bay [0,6]; v dương trước t=3, âm sau. $h(3)=45$ m là độ cao lớn nhất.
+    
+    <span data-thpt-help-id="HELP-G12-B11-TRY08" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm miền vật lý và dấu v, không chỉ giải v=0. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Nguyên hàm của một hàm số
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Nguyên hàm của một hàm số.</strong><p>F là nguyên hàm của f trên khoảng, đoạn hoặc nửa khoảng K nếu \(F'(x)=f(x)\) trên K (ở đầu mút dùng đạo hàm một phía phù hợp). Trên một miền liên thông K, mọi nguyên hàm của f có dạng \(F(x)+C\), C thực. Kí hiệu \(\int f(x)\,dx=F(x)+C\). Hàm liên tục trên K có nguyên hàm trên K.</p></div>
+
+    ### 2.2. Tính chất cơ bản của nguyên hàm
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất cơ bản của nguyên hàm.</strong><p>Nguyên hàm của tổng hoặc hiệu bằng tổng hoặc hiệu các nguyên hàm; \(\int kf(x)\,dx=k\int f(x)\,dx\) với k≠0. Hiểu các đẳng thức theo họ nguyên hàm, gộp thành một hằng số tùy ý. Với k=0, \(\int0\,dx=C\).</p></div>
+
+    ### 2.3. Nguyên hàm các hàm số thường gặp
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Nguyên hàm các hàm số thường gặp.</strong><p>\(\int x^\alpha dx=\frac{x^{\alpha+1}}{\alpha+1}+C\) trên miền lũy thừa khả vi thích hợp, chẳng hạn x&gt;0 với số mũ thực \(\alpha\ne-1\). Với số mũ nguyên, dùng trên các khoảng xác định; \(\int 1/x\,dx=\ln|x|+C\) trên từng khoảng x≠0. \(\int e^x dx=e^x+C\); \(\int a^x dx=a^x/\ln a+C\) (a&gt;0, a≠1). \(\int\cos x dx=\sin x+C\), \(\int\sin x dx=-\cos x+C\), \(\int dx/\cos^2x=\tan x+C\), \(\int dx/\sin^2x=-\cot x+C\) trên các khoảng xác định. Các hàm lượng giác dùng radian.</p></div>
+
+=== "Ví dụ"
+
+    ### 3.1. Kiểm bằng đạo hàm
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-01"><p><strong>Đề bài:</strong> Cho \(F=x^4-3x^2+2\). Tìm f sao cho F là nguyên hàm của f.</p><p><strong>Phân tích:</strong> Đạo hàm trực tiếp từng hạng.</p><p><strong>Lời giải:</strong> \(f=4x^3-6x\) trên R.</p><p><strong>Kiểm lại:</strong> Hằng số 2 biến mất; biểu thức đúng với mọi x.</p></div>
+
+    ### 3.2. Xác định hằng số
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-02"><p><strong>Đề bài:</strong> \(f=2x\), \(F(2)=7\). Tìm F.</p><p><strong>Phân tích:</strong> Viết họ trước, dùng điều kiện sau.</p><p><strong>Lời giải:</strong> \(F=x^2+C\), \(4+C=7\), \(F=x^2+3\).</p><p><strong>Kiểm lại:</strong> F(2)=7 và đạo hàm bằng 2x.</p></div>
+
+    ### 3.3. Tách đa thức
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-03"><p><strong>Đề bài:</strong> Tính \(\int(3x^2-4x+2)dx\).</p><p><strong>Phân tích:</strong> Áp dụng từng lũy thừa.</p><p><strong>Lời giải:</strong> \(x^3-2x^2+2x+C\).</p><p><strong>Kiểm lại:</strong> Đạo hàm cho đúng ba hạng.</p></div>
+
+    ### 3.4. Nhận diện 1/x
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-04"><p><strong>Đề bài:</strong> Tính \(\int(3/x+2x)dx\) trên \((0,+\infty)\).</p><p><strong>Phân tích:</strong> Tách trường hợp log và đa thức.</p><p><strong>Lời giải:</strong> \(3\ln x+x^2+C\).</p><p><strong>Kiểm lại:</strong> Trên nhánh âm phải viết ln|x|.</p></div>
+
+    ### 3.5. Hai hàm mũ
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-05"><p><strong>Đề bài:</strong> Tính \(\int(3e^x+4^x)dx\).</p><p><strong>Phân tích:</strong> Chia đúng ln cơ số.</p><p><strong>Lời giải:</strong> \(3e^x+4^x/\ln4+C\).</p><p><strong>Kiểm lại:</strong> Đạo hàm số hạng thứ hai đúng 4 mũ x.</p></div>
+
+    ### 3.6. Dấu lượng giác
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-06"><p><strong>Đề bài:</strong> Tính \(\int(2\cos x+4\sin x)dx\).</p><p><strong>Phân tích:</strong> Dùng đạo hàm sin và cos.</p><p><strong>Lời giải:</strong> \(2\sin x-4\cos x+C\).</p><p><strong>Kiểm lại:</strong> Đạo hàm của −4cos là +4sin.</p></div>
+
+    ### 3.7. Gia tốc đến vị trí
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-07"><p><strong>Đề bài:</strong> \(a=6t,v(0)=1,s(0)=2\). Tìm v,s.</p><p><strong>Phân tích:</strong> Tích phân hai lần, hai điều kiện đầu.</p><p><strong>Lời giải:</strong> \(v=3t^2+1\), \(s=t^3+t+2\).</p><p><strong>Kiểm lại:</strong> v'=6t, s'=v, cả hai điều kiện đúng.</p></div>
+
+    ### 3.8. Độ cao tối đa với vị trí đầu khác 0
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-R02-08"><p><strong>Đề bài:</strong> \(v(t)=24-8t\) m/s, \(h(0)=4\) m. Tìm h(2) và độ cao cực đại trước khi chạm đất.</p><p><strong>Phân tích:</strong> Nguyên hàm v, rồi xét dấu v quanh nghiệm 3.</p><p><strong>Lời giải:</strong> \(h=4+24t-4t^2\), \(h(2)=36\) m. Nghiệm dương của h=0 là \(3+\sqrt{10}\); v đổi từ dương sang âm tại 3. \(h(3)=40\) m là cực đại trên miền bay.</p><p><strong>Kiểm lại:</strong> h(0)=4, h'=v, thời điểm 3 nằm trong miền bay.</p></div>
+
+    ### 3.9. Doanh thu từ doanh thu biên
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-R02-09"><p><strong>Đề bài:</strong> \(R'(q)=80-q\) (nghìn đồng/sản phẩm), R(0)=0, \(0\le q\le60\). Tìm R(20).</p><p><strong>Phân tích:</strong> Nguyên hàm theo q, không theo thời gian.</p><p><strong>Lời giải:</strong> \(R(q)=80q-q^2/2\), \(R(20)=1400\) nghìn đồng.</p><p><strong>Kiểm lại:</strong> R'=80−q, R(0)=0; mô hình chỉ dùng trong miền đã cho.</p></div>
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Đảo chiều từ đạo hàm
+    
+    ??? tip "Cách tự sửa"
+    
+        Lấy đạo hàm hàm ứng viên, so toàn bộ biểu thức. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p01).
+
+    ### 4.2. Họ nguyên hàm và điều kiện đầu
+    
+    ??? tip "Cách tự sửa"
+    
+        Chỉ xác định C sau khi lấy nguyên hàm; các khoảng tách rời có thể có C khác nhau. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p02).
+
+    ### 4.3. Lũy thừa và tuyến tính
+    
+    ??? tip "Cách tự sửa"
+    
+        Tăng số mũ một rồi chia; m=−1 là trường hợp khác. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p03).
+
+    ### 4.4. Khi gặp 1/x
+    
+    ??? tip "Cách tự sửa"
+    
+        Không viết ln x trên nhánh âm; không nối qua điểm 0. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p04).
+
+    ### 4.5. Hàm mũ và hệ số logarit
+    
+    ??? tip "Cách tự sửa"
+    
+        Đạo hàm số hạng mũ phải triệt đúng ln a; a=1 là hàm hằng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p05).
+
+    ### 4.6. Lượng giác và miền liên tục
+    
+    ??? tip "Cách tự sửa"
+    
+        Kiểm dấu của nguyên hàm sin, và tránh các điểm cos=0 hay sin=0. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p06).
+
+    ### 4.7. Khôi phục đại lượng từ tốc độ
+    
+    ??? tip "Cách tự sửa"
+    
+        Không lấy gia tốc làm vị trí; ghi đơn vị và miền thời gian. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p07).
+
+    ### 4.8. Độ cao cực đại từ vận tốc
+    
+    ??? tip "Cách tự sửa"
+    
+        Kiểm miền vật lý và dấu v, không chỉ giải v=0. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p07).
+
+    [Core Bài 11](../luyen-tap/#b11-core) · [Luyện tập và Tự luận](../luyen-tap/#b11-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b11-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 4–11.*
