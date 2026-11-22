@@ -30,7 +30,7 @@
 
         **Dấu hiệu:** Em đếm 6 trong cả hai nhóm hoặc tự thêm 14 vào nhóm cuối dù đề không cho.
 
-        **Tự sửa:** Viết quy tắc \(a\le x<b\) cạnh mỗi khoảng và kiểm riêng hai đầu. Ôn mục 2.1; luyện Core xét biên bằng 10 và Practice ghép sáu số liệu tại [Bài 8 – Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Viết quy tắc \(a\le x<b\) cạnh mỗi khoảng và kiểm riêng hai đầu. Ôn mục 2.1; luyện Core xét biên bằng 10 và Practice ghép sáu số liệu tại <a href="../luyen-tap/">Bài 8 – Core và Luyện tập</a>.
 
 
     **Tự thử bổ sung — hiểu bản chất của mẫu ghép nhóm.** Một khảo sát ghi số người có tuổi trong hai khoảng \([18;24)\) và \([24;30)\), tương ứng là \(6\) và \(4\). Đây là bảng ghi từng tuổi chính xác hay bảng số liệu ghép nhóm? Có tất cả bao nhiêu người? Có thể khẳng định sáu người đầu đều 20 tuổi không?
@@ -65,7 +65,7 @@
 
         **Dấu hiệu:** Em bỏ số 14 bị lặp, hoặc xếp số 19 sang một khoảng chưa tồn tại.
 
-        **Tự sửa:** Đánh dấu lần lượt từng vị trí dữ liệu, **không xóa số trùng**; sau khi đếm, kiểm tổng bằng cỡ mẫu. Ôn mục 2.2 và luyện Practice ghép mười điểm trong [Core và Luyện tập Bài 8](../luyen-tap/).
+        **Tự sửa:** Đánh dấu lần lượt từng vị trí dữ liệu, **không xóa số trùng**; sau khi đếm, kiểm tổng bằng cỡ mẫu. Ôn mục 2.2 và luyện Practice ghép mười điểm trong <a href="../luyen-tap/">Core và Luyện tập Bài 8</a>.
 
     ### 1.3. Độ rộng nhóm giúp ta hiểu bảng đang so sánh điều gì
 
@@ -85,7 +85,7 @@
 
         **Dấu hiệu:** Em xem ba nhóm đều rộng 3 vì chỉ xét số đầu, hoặc nghĩ mọi bảng ghép nhóm bắt buộc đều rộng.
 
-        **Tự sửa:** Lấy **biên phải trừ biên trái** từng nhóm; ôn mục 2.1, thử Core độ rộng \([12;18)\) và Practice bốn khoảng cùng rộng 4 ở [Bài 8 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Lấy **biên phải trừ biên trái** từng nhóm; ôn mục 2.1, thử Core độ rộng \([12;18)\) và Practice bốn khoảng cùng rộng 4 ở <a href="../luyen-tap/">Bài 8 – Luyện tập</a>.
 
     ### 1.4. Tần số và tần số tương đối trả lời hai câu hỏi khác nhau
 
@@ -105,7 +105,7 @@
 
         **Dấu hiệu:** Em tính \(5/3\) vì có ba nhóm, hoặc nhầm tỉ lệ nhóm với trung điểm.
 
-        **Tự sửa:** Mẫu số phải là **tổng tần số \(n\)**. Ôn mục 2.3 và luyện Practice về tỉ lệ nhóm \([4;8)\) ở [Core và Luyện tập Bài 8](../luyen-tap/).
+        **Tự sửa:** Mẫu số phải là **tổng tần số \(n\)**. Ôn mục 2.3 và luyện Practice về tỉ lệ nhóm \([4;8)\) ở <a href="../luyen-tap/">Core và Luyện tập Bài 8</a>.
 
     ### 1.5. Một bảng ghép nhóm không giữ được tất cả số đo
 
@@ -125,7 +125,7 @@
 
         **Dấu hiệu:** Em khẳng định mọi người của nhóm \([10;20)\) đều bằng \(15\), hoặc kết luận hai trung bình gốc bằng nhau.
 
-        **Tự sửa:** Tách rõ **số gốc** và **giá trị đại diện**. Ôn mục 2.3; luyện Core giải thích mất thông tin và Practice về chiều cao có trung điểm 157,5 cm ở [Bài 8 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Tách rõ **số gốc** và **giá trị đại diện**. Ôn mục 2.3; luyện Core giải thích mất thông tin và Practice về chiều cao có trung điểm 157,5 cm ở <a href="../luyen-tap/">Bài 8 – Luyện tập</a>.
 
     ### 1.6. Ứng dụng: phân nhóm thời gian chờ
 
@@ -145,7 +145,7 @@
 
         **Dấu hiệu:** Em chỉ đếm một trong hai giá trị 10, hoặc tính 10 thuộc \([0;10)\).
 
-        **Tự sửa:** Đọc dữ liệu theo **từng phần tử**, kể cả số lặp, rồi kiểm tổng 8. Ôn mục 2.1–2.2, thử lại Practice ghép sáu điểm có ranh giới tại 10,20 ở [Bài 8 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Đọc dữ liệu theo **từng phần tử**, kể cả số lặp, rồi kiểm tổng 8. Ôn mục 2.1–2.2, thử lại Practice ghép sáu điểm có ranh giới tại 10,20 ở <a href="../luyen-tap/">Bài 8 – Luyện tập</a>.
 
 === "Kiến thức SGK"
 
@@ -238,7 +238,7 @@
 
         **Vì sao sai:** Nhóm nửa kín chỉ nhận đầu trái; muốn ghép hết mẫu phải có hệ nhóm phủ toàn bộ quan sát.
 
-        **Tự sửa:** Vẽ các khoảng và viết \(a\le x<b\); ôn mục 2.1 và Ví dụ 3.1, sau đó luyện Core về ranh giới 10, Practice bảng số 5,10,10,19,20,29 ở [Bài 8 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Vẽ các khoảng và viết \(a\le x<b\); ôn mục 2.1 và Ví dụ 3.1, sau đó luyện Core về ranh giới 10, Practice bảng số 5,10,10,19,20,29 ở <a href="../luyen-tap/">Bài 8 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B08-02" hidden></span>
 
@@ -248,7 +248,7 @@
 
         **Vì sao sai:** Mọi quan sát cần được đếm đúng một lần, kể cả hai số trùng giá trị.
 
-        **Tự sửa:** Đánh dấu từng số vào các nhóm, cộng lại \(n=\sum m_i\). Ôn mục 2.2, Ví dụ 3.2 và 3.6, rồi luyện Core cộng tần số và Practice điền tần số còn thiếu ở [Bài 8 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Đánh dấu từng số vào các nhóm, cộng lại \(n=\sum m_i\). Ôn mục 2.2, Ví dụ 3.2 và 3.6, rồi luyện Core cộng tần số và Practice điền tần số còn thiếu ở <a href="../luyen-tap/">Bài 8 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B08-03" hidden></span>
 
@@ -258,7 +258,7 @@
 
         **Vì sao sai:** Trung điểm chỉ là giá trị đại diện, bảng nhóm đã xóa chi tiết dữ liệu gốc.
 
-        **Tự sửa:** Ôn mục 2.3 và Ví dụ 3.5, luyện Core câu hỏi thông tin đã mất và Practice nhóm chiều cao ở [Bài 8 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.3 và Ví dụ 3.5, luyện Core câu hỏi thông tin đã mất và Practice nhóm chiều cao ở <a href="../luyen-tap/">Bài 8 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B08-04" hidden></span>
 
@@ -268,8 +268,8 @@
 
         **Vì sao sai:** Độ rộng được tính **từng nhóm**; không phải bảng ghép nhóm nào cũng đều rộng.
 
-        **Tự sửa:** Tính \(h_i=b_i-a_i\), ghi cạnh bảng, ôn mục 2.1 và Ví dụ 3.4; luyện Core độ rộng nhóm và Practice kiểm bốn nhóm cùng độ rộng tại [Bài 8 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Tính \(h_i=b_i-a_i\), ghi cạnh bảng, ôn mục 2.1 và Ví dụ 3.4; luyện Core độ rộng nhóm và Practice kiểm bốn nhóm cùng độ rộng tại <a href="../luyen-tap/">Bài 8 – Luyện tập</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương III](../../../../thu-vien/tu-luan-g11-chuong-iii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-iii/">Tự luận Chương III</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 8 (trang in 58–61).</p>
