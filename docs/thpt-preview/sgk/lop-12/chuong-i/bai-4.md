@@ -2,63 +2,296 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 26–32</p>
-<p class="thpt-r4-lead">Học Kiến thức trọn vẹn tại đây: hiểu bản chất, xem hình, ví dụ có suy luận và tự thử; sau đó mở Core, Luyện tập, Vận dụng, Tự luận trên trang riêng của Chương I.</p>
+<p class="thpt-r4-lead">Hiểu bản chất, tự vận dụng, đối chiếu sau khi làm, rồi luyện tập theo từng bài.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-3/">Bài trước</a><a href="../bai-5/">Bài tiếp theo</a></nav></div>
 
-## 1. Vì sao cần học?
+=== "Khám phá kiến thức"
 
-Có thể biết một hàm tăng giảm, có cực trị và có tiệm cận nhưng vẫn chưa hình dung được toàn bộ đồ thị. "Khảo sát" là ghép tất cả chứng cứ thành một bức tranh hợp lý: miền xác định, các hướng đi, đỉnh/đáy, các đường tiến sát, điểm giao trục. Kỹ năng này biến công thức thành dự đoán hình dạng và ngược lại giúp phát hiện sai sót trong phép tính.
+    Khảo sát là ghép miền, đạo hàm, giới hạn và các điểm đặc biệt thành một đồ thị có thể tự kiểm. Ôn dấu đạo hàm, giới hạn một phía, phép chia đa thức, và phép tịnh tiến tọa độ. Không nối nhánh qua điểm loại khỏi miền.
 
-## 2. Kiến thức tiền đề
+    ### 1.1. Trình tự khảo sát
+    
+    Miền xác định trước, rồi tính đạo hàm, giới hạn/tiệm cận, lập bảng biến thiên, giao trục và vẽ. Mỗi bước ràng buộc bước sau.
+    
+    **Vận dụng.** Với $f=(x+3)/(x-4)$, cần loại điểm nào trước?
+    
+    <span data-ped-first-try="1" data-outcome-id="G12-B04-SURVEY_WORKFLOW" data-thpt-first-try-id="THPT-G12-B04-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** x=4; $D=\mathbb R\setminus\{4\}$. Không vẽ điểm có hoành độ 4.
+    
+    <span data-thpt-help-id="HELP-G12-B04-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Viết D trước khi giải giao trục. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c01)
 
-Cần biết lấy đạo hàm, xét dấu trên các khoảng hợp lệ, tính cực trị và giới hạn ở ±∞/hai phía điểm loại khỏi D, phương trình đường thẳng tiệm cận. Từ f'=0 không được tự suy cực trị; từ mẫu 0 không được tự suy tiệm cận đứng. Bài này tự nhắc lại cả hai điểm ngay trong từng ví dụ.
+    ### 1.2. Đồ thị bậc ba
+    
+    Đạo hàm bậc hai có thể có hai nghiệm, một nghiệm kép hoặc không nghiệm; dấu quyết định cực trị. Hệ số bậc ba quyết định hướng hai đuôi.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/G12_B04_FIG02_CUBIC_SURVEY_R00.svg" alt="Bậc ba x³−3x² có đỉnh (0;0), đáy (2;−4), tâm (1;−2)."/><figcaption>Tại x=0 đồ thị tiếp xúc Ox, tại x=3 cắt Ox. Hai đuôi đi theo hệ số bậc ba dương.</figcaption></figure>
+    
+    **Vận dụng.** $y=x^3+3x$ có cực trị không?
+    
+    <span data-ped-first-try="2" data-outcome-id="G12-B04-CUBIC_VARIATION" data-thpt-first-try-id="THPT-G12-B04-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $y'=3x^2+3>0$, tăng trên ℝ, không cực trị; hai đuôi −∞ và +∞.
+    
+    <span data-thpt-help-id="HELP-G12-B04-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không mặc định mọi bậc ba có hai cực trị. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c02)
 
-## 3. Hiểu bản chất trước công thức
+    ### 1.3. Phân thức bậc nhất trên bậc nhất
+    
+    Viết $y=b+k/(x-a)$ với k≠0. Đạo hàm $-k/(x-a)^2$ có dấu không đổi trên từng khoảng; tiệm cận x=a, y=b.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/G12_B04_FIG01_RATIONAL_SURVEY_R00.svg" alt="Phân thức (x+2)/(x−1), tiệm cận x=1, y=1 và tâm (1;1)."/><figcaption>Nhánh trái có giao Ox (−2;0) và Oy (0;−2); hai nhánh đều giảm, không nối qua x=1.</figcaption></figure>
+    
+    **Vận dụng.** $f=3-2/(x+2)$ tăng hay giảm ở từng nhánh?
+    
+    <span data-ped-first-try="3" data-outcome-id="G12-B04-RATIONAL_VARIATION" data-thpt-first-try-id="THPT-G12-B04-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $f'=2/(x+2)^2>0$, tăng trên $(-\infty,-2)$ và $(-2,+\infty)$.
+    
+    <span data-thpt-help-id="HELP-G12-B04-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Dấu ngược với k; tách hai nhánh. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c03)
 
-1. **Miền xác định** trước tất cả, vì đồ thị không được đi qua điểm x bị loại.
-2. **Đạo hàm và dấu** để biết tăng/giảm, điểm tới hạn và cực trị; ghi giá trị tại điểm, không chỉ hoành độ.
-3. **Giới hạn và tiệm cận**, nhất là hai phía điểm loại; các mũi tên ở ±∞ phải khớp với dạng hàm.
-4. **Bảng biến thiên** ghép các miền liên thông, tuyệt đối không nối nhánh qua tiệm cận đứng.
-5. **Giao trục và điểm đặc biệt** để đặt đồ thị đúng tỉ lệ tương đối. Vẽ đường cong dựa trên những chứng cứ đã có; không dùng "hình đẹp" thay cho tính toán.
-6. **Tâm đối xứng**: đồ thị đa thức bậc ba y=ax³+bx²+cx+d (a≠0) có tâm đối xứng tại điểm uốn x0=−b/(3a), y0=f(x0); đồ thị phân thức (ax+b)/(cx+d) với c≠0 và ad−bc≠0 có tâm là giao hai tiệm cận (−d/c,a/c). Đây là tính chất riêng của các dạng nguồn SGK học, không suy rộng mọi đồ thị.
+    ### 1.4. Giao điểm và hướng đuôi
+    
+    Giao Ox giải f(x)=0 trong D; giao Oy cần 0∈D. Giao điểm không cho biết hướng đi nếu chưa có giới hạn và dấu đạo hàm.
+    
+    **Vận dụng.** $f=(2x-6)/(x+1)$ cắt hai trục ở đâu?
+    
+    <span data-ped-first-try="4" data-outcome-id="G12-B04-INTERCEPTS_LIMITS" data-thpt-first-try-id="THPT-G12-B04-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Ox: (3;0); Oy: (0;−6). x=−1 bị loại.
+    
+    <span data-thpt-help-id="HELP-G12-B04-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Thay lại tọa độ vào hàm gốc. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c04)
 
-## 4. Đọc hình và dữ liệu
+    ### 1.5. Tâm và trục đối xứng
+    
+    Tịnh tiến $u=x-a,v=y-b$. Dạng v=k/u bảo toàn khi (u,v)→(−u,−v); còn phản xạ qua v=u hoặc v=−u cũng giữ uv=k. Hai trục là các phân giác hai tiệm cận vuông góc.
+    
+    **Vận dụng.** $y=4+3/(x-2)$ có tâm và trục đối xứng nào?
+    
+    <span data-ped-first-try="5" data-outcome-id="G12-B04-CENTER_SYMMETRY" data-thpt-first-try-id="THPT-G12-B04-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Tâm (2;4), trục $y-4=\pm(x-2)$.
+    
+    <span data-thpt-help-id="HELP-G12-B04-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không nhầm chính các tiệm cận là trục đối xứng. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-p01)
 
-**FIG-G12-B04-01** (G12_B04_FIG01_RATIONAL_SURVEY_R00.svg): đồ thị g=(x+2)/(x−1) có đường x=1, y=1 và hai điểm giao trục, phân biệt nét đứt tiệm cận với nhánh thật. D5 học sinh đọc từng nhánh theo dấu g'<0 trên từng khoảng, kiểm tra g(−2)=0 và g(0)=−2 trước khi xác định nhánh trái.
+    ### 1.6. Đọc bảng trước khi vẽ
+    
+    Hàng x gồm điểm chia; hàng f′ ghi dấu và nghiệm; hàng y ghi giới hạn, cực trị, mũi tên. Mỗi khoảng domain là một đoạn riêng của bảng.
+    
+    **Vận dụng.** Dấu f′ là −,+,− chia tại −2 và 3, f liên tục. Loại cực trị?
+    
+    <span data-ped-first-try="6" data-outcome-id="G12-B04-READ_VARIATION_TABLE" data-thpt-first-try-id="THPT-G12-B04-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Cực tiểu tại −2, cực đại tại 3. Chưa có tung độ nếu thiếu f.
+    
+    <span data-thpt-help-id="HELP-G12-B04-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Đọc dấu từ trái sang phải, không đảo mũi tên. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-p02)
 
-**FIG-G12-B04-02** (G12_B04_FIG02_CUBIC_SURVEY_R00.svg): đồ thị cubic y=x³−3x². Học sinh nhìn cực đại tại (0,0) tiếp xúc Ox, cực tiểu tại (2,−4) và điểm uốn (1,−2), kiểm tra đối xứng tâm chứ không nhầm trục đối xứng. Khi chưa có SVG thì dùng bảng dữ liệu chính xác của EX01, không coi hình vẽ chưa kiểm chứng là chứng cứ toán học.
+    ### 1.7. Nhánh tách ở tiệm cận đứng
+    
+    Nếu $x=a$ bị loại và là tiệm cận đứng, không nối đường qua đó. Hình cần ghi giới hạn từng phía, đặc biệt khi dấu đạo hàm giống nhau.
+    
+    **Vận dụng.** $f=2-1/(x-1)$. Hai giới hạn khi x→1?
+    
+    <span data-ped-first-try="7" data-outcome-id="G12-B04-DOMAIN_NONCONNECT" data-thpt-first-try-id="THPT-G12-B04-TRY07" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Trái +∞, phải −∞; không có điểm nối ở 1.
+    
+    <span data-thpt-help-id="HELP-G12-B04-TRY07" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Dấu 1/(x−1) khác nhau qua 1. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-p03)
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/G12_B04_FIG01_RATIONAL_SURVEY_R00.svg" alt="Hình minh họa 1 Bài 4 · Khảo sát sự biến thiên và vẽ đồ thị của hàm số" /><figcaption>Hình minh họa 1 · Xem hướng dẫn đọc hình ngay phía trên.</figcaption></figure>
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/G12_B04_FIG02_CUBIC_SURVEY_R00.svg" alt="Hình minh họa 2 Bài 4 · Khảo sát sự biến thiên và vẽ đồ thị của hàm số" /><figcaption>Hình minh họa 2 · Xem hướng dẫn đọc hình ngay phía trên.</figcaption></figure>
+    ### 1.8. Phân thức bậc hai trên bậc nhất
+    
+    Chia đa thức thành $y=mx+n+k/(x-a)$, m,k≠0. Đặt $u=x-a$, đạo hàm $m-k/u^2$. Nếu m,k cùng dấu sẽ có hai nghiệm $u=\pm\sqrt{k/m}$; nếu trái dấu không có nghiệm. Vẫn phải xét dấu, giới hạn và giao trục.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/G12_B04_FIG03_QUADRATIC_LINEAR_SURVEY_R02.svg" alt="Phân thức y=x+4/(x−1), hai cực trị (−1;−3),(3;5), đứng x=1 và xiên y=x."/><figcaption>Đọc bảng và đồ thị từ trái sang phải: đỉnh trái (−1;−3), đáy phải (3;5); tâm (1;1). Hai nhánh tiến gần đường xiên ở xa, không nối qua x=1.</figcaption></figure>
+    
+    **Vận dụng.** $f=x+2+9/(x-1)$. Tìm tiệm cận và điểm dừng, loại cực trị.
+    
+    <span data-ped-first-try="8" data-outcome-id="G12-B04-RATIONAL_VARIATION" data-thpt-first-try-id="THPT-G12-B04-TRY08" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Đứng x=1, xiên y=x+2. $f'=1-9/(x-1)^2=0$ tại −2 và 4. Dấu +,− | −,+; cực đại (−2;−3), cực tiểu (4;9).
+    
+    <span data-thpt-help-id="HELP-G12-B04-TRY08" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Chia bảng tại cả x=1; kiểm giá trị gốc. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c03)
 
-## 5. Ví dụ có suy luận và lý do chọn phương pháp
+    ### 1.9. Dựng mô hình từ nồng độ
+    
+    Trộn V lít dung dịch có khối lượng chất tan M gam với x lít dung dịch nồng độ c g/L (giả sử thể tích cộng được). Nồng độ $f(x)=(M+cx)/(V+x)$, x≥0.
+    
+    **Vận dụng.** V=10 L, M=20 g, c=5 g/L. Tìm xu thế khi thêm dung dịch.
+    
+    <span data-ped-first-try="9" data-outcome-id="G12-B04-SURVEY_WORKFLOW" data-thpt-first-try-id="THPT-G12-B04-TRY09" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $f=(20+5x)/(10+x)=5-30/(10+x)$, tăng trên [0,+∞), tiến tới 5 nhưng không đạt. Ban đầu 2 g/L.
+    
+    <span data-thpt-help-id="HELP-G12-B04-TRY09" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không dùng nhánh x<0 trong tình huống thực. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-a01)
 
-### Ví dụ 1 — Đa thức bậc ba có hai cực trị
-Khảo sát f(x)=x³−3x². D=ℝ, f'=3x(x−2). Dấu: + trên (−∞,0), − trên (0,2), + trên (2,+∞). Cực đại (0,0), cực tiểu (2,−4). lim x→−∞ f=−∞, lim x→+∞ f=+∞. Giao Ox: x²(x−3)=0 ⇒ (0,0) là nghiệm kép tiếp xúc Ox, (3,0) là nghiệm đơn cắt Ox; giao Oy (0,0). f''=6x−6, điểm uốn và tâm đối xứng (1,−2). **Lý do**: nếu không phân biệt nghiệm kép, dễ vẽ đồ thị xuyên trục ở x=0 dù f≥/≤ cùng dấu hai phía.
+=== "Kiến thức SGK"
 
-### Ví dụ 2 — Phân thức bậc nhất/bậc nhất
-Khảo sát g(x)=(x+2)/(x−1)=1+3/(x−1). D=ℝ\{1}, g'=−3/(x−1)²<0 trên từng khoảng (−∞,1),(1,+∞). lim x→1−=−∞, lim x→1+=+∞; lim ±∞=1. Tiệm cận đứng x=1, ngang y=1, tâm (1,1). Cắt Ox (−2,0), cắt Oy (0,−2). **Lý do**: kiểm tra các giao điểm sau khi tìm tiệm cận để định vị nhánh; không nối hai nhánh xuyên x=1.
+    ### 2.1. Sơ đồ khảo sát hàm số
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Sơ đồ khảo sát hàm số</strong><p>(1) Tập xác định; (2) sự biến thiên: đạo hàm, giới hạn ở vô hạn và biên miền, tiệm cận nếu có, bảng biến thiên; (3) đồ thị: giao trục, điểm đặc biệt, đối xứng và phác họa. Đọc lại bảng để kiểm đồ thị.</p></div>
 
-### Ví dụ 3 — Đạo hàm bảng biến thiên từ phản chiều
-h(x)=−x³+3x. h'=3(1−x²), âm khi |x|>1, dương khi |x|<1; hàm giảm trên (−∞,−1), tăng trên (−1,1), giảm trên (1,+∞). Cực tiểu (−1,−2), cực đại (1,2). Khi x→−∞ h→+∞, khi x→+∞ h→−∞. **Lý do**: hệ số bậc ba âm làm hướng đuôi hai bên đảo so với hệ số dương; chỉ nhìn hai cực trị chưa đủ.
+    ### 2.2. Khảo sát hàm số bậc ba
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Khảo sát hàm số bậc ba</strong><p>\(y=ax^3+bx^2+cx+d\), a≠0, có D=ℝ; \(y'=3ax^2+2bx+c\). Hai nghiệm phân biệt cho hai cực trị; nghiệm kép không đổi dấu, hoặc không nghiệm, thì không cực trị. Dấu a quyết định giới hạn hai đầu. Tâm đối xứng \(I(x_0,f(x_0))\) với \(x_0=-b/(3a)\): khi đặt u=x−x₀, hiệu \(f(x_0+u)-f(x_0)\) là đa thức lẻ. Không bắt buộc dùng đạo hàm cấp hai để kết luận.</p></div>
 
-### Ví dụ 4 — Đối xứng trung tâm có điều kiện
-k(x)=(2x+5)/(x−3)=2+11/(x−3), D=ℝ\{3}; các tiệm cận x=3, y=2, tâm đối xứng (3,2). Từ việc tịnh tiến biến u=x−3, v=y−2 được v=11/u, hàm nghịch biến từng nhánh. **Lý do**: giao hai đường tiệm cận là tâm cho đồ thị hyperbol chữ nhật loại này, không lấy giao trục làm tâm.
+    ### 2.3. Khảo sát phân thức bậc nhất trên bậc nhất
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Khảo sát phân thức bậc nhất trên bậc nhất</strong><p>Với \(y=(ax+b)/(cx+d)\), c≠0 và ad−bc≠0, D loại \(x=-d/c\). Chia thành \(y=B+k/(x-A)\), k≠0. Tiệm cận x=A, y=B; đạo hàm \(-k/(x-A)^2\); không cực trị. Tâm I(A;B), hai trục đối xứng \(y-B=\pm(x-A)\).</p></div>
 
-### Ví dụ 5 — Vẽ sai nhánh khi quên giới hạn
-r(x)=2+1/(x+1) có x=−1 tiệm cận đứng và y=2 ngang; r'=−1/(x+1)²<0. Với x>−1, r>2 và đi từ +∞ xuống2; x<−1, r<2 và đi từ2 (phía −∞) xuống−∞. **Không** dùng một đường "giảm trên ℝ\{−1}" theo định nghĩa mọi cặp điểm; phải tách hai khoảng.
+    ### 2.3.1. Khảo sát phân thức bậc hai trên bậc nhất
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Khảo sát phân thức bậc hai trên bậc nhất</strong><p>Với mẫu bậc nhất, tử bậc hai, không có nhân tử chung: \(y=mx+n+k/(x-A)\) với m,k≠0. D loại A; đứng x=A, xiên y=mx+n; \(y'=m-k/(x-A)^2\). Nếu k/m&gt;0 thì hai điểm dừng \(A\pm\sqrt{k/m}\), xét dấu quanh từng điểm để phân loại; nếu k/m&lt;0 thì không có điểm dừng. Tâm I(A;mA+n). Hai trục đối xứng là hai đường phân giác của hai tiệm cận: trong tọa độ u=x−A,v=y−(mA+n), phương trình \(u=\pm(v-mu)/\sqrt{1+m^2}\). Vì phép phản xạ qua mỗi phân giác đổi hai khoảng cách có hướng tới các tiệm cận (có thể đồng thời đổi dấu), tích \(u(v-mu)=k\) được bảo toàn. Đây là tính chất theo đúng dạng, không tự suy cho mọi đồ thị.</p></div>
 
-## 6. Tự thử trước Core
+=== "Ví dụ"
 
-A. Nếu y'=−3/(x−1)² với x≠1, liệu có thể vẽ một nét giảm liên tục băng qua x=1?
-B. Nghiệm bội hai x=0 của y=x³−3x² khiến đường cong tiếp xúc hay cắt trục Ox?
-C. Với g=2+11/(x−3), dự đoán tâm đối xứng trước khi xem ví dụ.
-Tự ghi dự đoán rồi kiểm tra lại bằng tính toán, không mở đáp án trước khi tự làm.
+    ### 3.1. Đa thức bậc ba
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B04-R02-01"><p><strong>Đề bài:</strong> Khảo sát \(f=x^3-3x^2\).</p><p><strong>Phân tích:</strong> D=ℝ, đạo hàm phân tích được.</p><p><strong>Lời giải:</strong> \(f'=3x(x-2)\) dấu +,−,+; cực đại (0;0), cực tiểu (2;−4); giới hạn −∞,+∞. Ox tại 0 (tiếp xúc) và 3 (cắt), Oy (0;0), tâm (1;−2). Bảng: −∞ ↗ 0 ↘ −4 ↗ +∞, x: −∞,0,2,+∞.</p><p><strong>Kiểm lại:</strong> Khớp hình; ví dụ này dùng lại ở Practice để ôn, không là câu chưa xem.</p></div>
 
-## 7. Chuyển sang Core và Luyện tập
+    ### 3.2. Phân thức bậc nhất/bậc nhất
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B04-R02-02"><p><strong>Đề bài:</strong> Khảo sát \(g=(x+2)/(x-1)\).</p><p><strong>Phân tích:</strong> Tách phần dư.</p><p><strong>Lời giải:</strong> \(g=1+3/(x-1)\); D loại 1, \(g'&lt;0\). Tiệm cận x=1,y=1. Bảng trái \(1\searrow-\infty\), phải \(+\infty\searrow1\). Giao (−2;0),(0;−2), tâm (1;1), trục \(y-1=\pm(x-1)\).</p><p><strong>Kiểm lại:</strong> Khớp hình; không nối nhánh.</p></div>
 
-Sau khi đọc Kiến thức, Ví dụ và hoàn thành các câu **Tự thử** phía trên, em có thể thực hành tại **trang Core và Luyện tập của Chương I**. Câu hỏi vẫn được chia theo từng bài, không cần tìm trong các bài học khác.
+    ### 3.3. Bậc ba hệ số âm
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B04-R02-03"><p><strong>Đề bài:</strong> \(h=-x^3+12x\).</p><p><strong>Phân tích:</strong> Xét dấu 3(4−x²).</p><p><strong>Lời giải:</strong> Giảm trên \((-\infty,-2)\), tăng \((-2,2)\), giảm \((2,+\infty)\). Cực tiểu (−2;−16), cực đại (2;16); đuôi trái +∞, phải −∞; tâm (0;0). Giao Ox tại \(0,\pm2\sqrt3\).</p><p><strong>Kiểm lại:</strong> Dấu hệ số âm đảo hướng đuôi.</p></div>
 
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b04-core">✎ Core · Bài 4</a><a href="../luyen-tap/#b04-practice">✎ Luyện tập · Vận dụng · Tự luận · Bài 4</a><a href="../luyen-tap/#b04-help">Hướng dẫn khi gặp khó khăn · Bài 4</a></nav></div>
+    ### 3.4. Tâm và hai trục
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B04-R02-04"><p><strong>Đề bài:</strong> \(k=(2x+5)/(x-3)\).</p><p><strong>Phân tích:</strong> Tịnh tiến theo hai tiệm cận.</p><p><strong>Lời giải:</strong> \(k=2+11/(x-3)\). Tâm (3;2), trục \(y-2=\pm(x-3)\). Cả hai nhánh giảm.</p><p><strong>Kiểm lại:</strong> Tích (x−3)(y−2)=11 giữ qua phản xạ.</p></div>
 
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-5/">Bài tiếp theo</a></nav></div>
+    ### 3.5. Phân thức hai nhánh
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B04-R02-05"><p><strong>Đề bài:</strong> \(r=2+1/(x+1)\).</p><p><strong>Phân tích:</strong> Xét giới hạn và dấu phần dư.</p><p><strong>Lời giải:</strong> D loại −1, đứng x=−1, ngang y=2; \(r'&lt;0\). Trái \(2\searrow-\infty\); phải \(+\infty\searrow2\).</p><p><strong>Kiểm lại:</strong> Không gộp miền thành một khoảng.</p></div>
+
+    ### 3.6. Khảo sát đầy đủ bậc hai trên bậc nhất
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B04-R02-06"><p><strong>Đề bài:</strong> \(f=(x^2-x+4)/(x-1)=x+4/(x-1)\).</p><p><strong>Phân tích:</strong> Phải chia đa thức để thấy xiên; xét hai điểm dừng và điểm loại.</p><p><strong>Lời giải:</strong> D loại 1. \(f'=1-4/(x-1)^2=(x+1)(x-3)/(x-1)^2\). Đứng x=1, xiên y=x. \(f(-1)=-3\), \(f(3)=5\). Bảng biến thiên dưới đây. Tử \(x^2-x+4\) có biệt thức −15 nên không giao Ox; giao Oy (0;−4). Tâm (1;1), trục là hai phân giác \(y-1=(1\pm\sqrt2)(x-1)\).</p><p><strong>Kiểm lại:</strong> Kiểm f′ đổi +→− tại −1, −→+ tại 3; nhánh trái nằm dưới y=x, nhánh phải trên.</p></div>
+
+    | x | $-\infty$ | $-1$ | $1^-$ | $1^+$ | $3$ | $+\infty$ |
+    |---|---|---|---|---|---|---|
+    | $f'$ | + | 0 | − | − | 0 | + |
+    | $f$ | $-\infty$ ↗ | −3 | ↘ $-\infty$ | $+\infty$ ↘ | 5 | ↗ $+\infty$ |
+    
+    Các cột $1^-,1^+$ là hai giới hạn, không phải giá trị tại x=1. Trong khoảng (−1,1), đạo hàm âm; trong (1,3) cũng âm.
+
+    ### 3.7. Bậc hai trên bậc nhất không cực trị
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B04-R02-07"><p><strong>Đề bài:</strong> \(g=x-1/(x+2)\).</p><p><strong>Phân tích:</strong> D loại −2, đạo hàm luôn dương.</p><p><strong>Lời giải:</strong> \(g'=1+1/(x+2)^2&gt;0\). Đứng x=−2, xiên y=x; tâm (−2;−2). Tăng từng nhánh, không cực trị. Trái tiến +∞ khi x→−2−; phải tiến −∞ khi x→−2+.</p><p><strong>Kiểm lại:</strong> Không áp đặt luôn hai cực trị.</p></div>
+
+    ### 3.8. Mô hình pha trộn
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B04-R02-08"><p><strong>Đề bài:</strong> Bình có 20 L nước chứa 10 g chất tan; thêm x L dung dịch 2 g/L, thể tích cộng được.</p><p><strong>Phân tích:</strong> Tổng chất tan chia tổng thể tích.</p><p><strong>Lời giải:</strong> \(c=(10+2x)/(20+x)=2-30/(20+x)\), x≥0. \(c'=30/(20+x)^2&gt;0\). Ban đầu 0,5 g/L; tăng và tiến 2 g/L, không đạt ở x hữu hạn.</p><p><strong>Kiểm lại:</strong> Vẽ chỉ nhánh x≥0; tiệm cận x=−20 của biểu thức không là lượng dung dịch hợp lệ.</p></div>
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Trình tự khảo sát
+    
+    ??? tip "Cách tự sửa"
+    
+        Viết D trước khi giải giao trục. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c01).
+
+    ### 4.2. Đồ thị bậc ba
+    
+    ??? tip "Cách tự sửa"
+    
+        Không mặc định mọi bậc ba có hai cực trị. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c02).
+
+    ### 4.3. Phân thức bậc nhất trên bậc nhất
+    
+    ??? tip "Cách tự sửa"
+    
+        Dấu ngược với k; tách hai nhánh. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c03).
+
+    ### 4.4. Giao điểm và hướng đuôi
+    
+    ??? tip "Cách tự sửa"
+    
+        Thay lại tọa độ vào hàm gốc. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c04).
+
+    ### 4.5. Tâm và trục đối xứng
+    
+    ??? tip "Cách tự sửa"
+    
+        Không nhầm chính các tiệm cận là trục đối xứng. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-p01).
+
+    ### 4.6. Đọc bảng trước khi vẽ
+    
+    ??? tip "Cách tự sửa"
+    
+        Đọc dấu từ trái sang phải, không đảo mũi tên. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-p02).
+
+    ### 4.7. Nhánh tách ở tiệm cận đứng
+    
+    ??? tip "Cách tự sửa"
+    
+        Dấu 1/(x−1) khác nhau qua 1. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-p03).
+
+    ### 4.8. Phân thức bậc hai trên bậc nhất
+    
+    ??? tip "Cách tự sửa"
+    
+        Chia bảng tại cả x=1; kiểm giá trị gốc. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c03).
+
+    ### 4.9. Dựng mô hình từ nồng độ
+    
+    ??? tip "Cách tự sửa"
+    
+        Không dùng nhánh x<0 trong tình huống thực. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-a01).
+
+    [Core Bài 4](../luyen-tap/#b04-core) · [Luyện tập, Vận dụng, Tự luận](../luyen-tap/#b04-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b04-help) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 26–32.*
