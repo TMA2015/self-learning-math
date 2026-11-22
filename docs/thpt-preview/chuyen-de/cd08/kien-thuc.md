@@ -47,9 +47,9 @@ Ta xét dãy \(u_n=2+1/n\) với \(n\) nguyên dương. Mọi số hạng đều
 
 
 
-> **ĐỊNH NGHĨA — Giới hạn hữu hạn của dãy số.** Viết \(\lim_{n\to\infty}u_n=L\) khi với **mọi** \(\varepsilon>0\) đều có một chỉ số \(N\) sao cho \(|u_n-L|<\varepsilon\) với **mọi** \(n\ge N\) thuộc miền chỉ số. Không yêu cầu dãy có số hạng bằng \(L\).
+> **ĐỊNH NGHĨA — Giới hạn hữu hạn của dãy số.** Viết \(\lim_{n\to\infty}u_n=L\) khi với **mọi** \(\varepsilon>0\) đều có một chỉ số \(N\) sao cho \(|u_n-L|&lt;\varepsilon\) với **mọi** \(n\ge N\) thuộc miền chỉ số. Không yêu cầu dãy có số hạng bằng \(L\).
 
- Trong ví dụ, chỉ cần chọn \(N>1/\varepsilon\) và \(n\ge N\), ta được \(1/n<\varepsilon\). Việc chứng minh bằng khoảng cách cho thấy công thức giới hạn không chỉ là phép thế \(n=\infty\), mà là một khẳng định về mọi mức sai số.
+ Trong ví dụ, chỉ cần chọn \(N>1/\varepsilon\) và \(n\ge N\), ta được \(1/n&lt;\varepsilon\). Việc chứng minh bằng khoảng cách cho thấy công thức giới hạn không chỉ là phép thế \(n=\infty\), mà là một khẳng định về mọi mức sai số.
 
 ![Các điểm dãy số tiến gần đường giới hạn L](../../../assets/visuals/THPT_TOPIC08_SEQUENCE_LIMIT_R05.svg)
 
@@ -59,7 +59,7 @@ Ta xét dãy \(u_n=2+1/n\) với \(n\) nguyên dương. Mọi số hạng đều
 
 **Đề bài.** Cho dãy \(v_n=4-\dfrac2n\), \(n\ge1\). Chứng minh \(\lim v_n=4\) bằng sai số và xem dãy có nhận giá trị \(4\) không.
 
-**Lời giải.** Khoảng cách \(|v_n-4|=2/n\). Với bất kỳ \(\varepsilon>0\), lấy \(N\) nguyên lớn hơn \(2/\varepsilon\); mọi \(n\ge N\) đều cho \(2/n<\varepsilon\), nên \(v_n\to4\). Không số hạng nào bằng \(4\) vì \(2/n>0\) khi \(n\ge1\).
+**Lời giải.** Khoảng cách \(|v_n-4|=2/n\). Với bất kỳ \(\varepsilon>0\), lấy \(N\) nguyên lớn hơn \(2/\varepsilon\); mọi \(n\ge N\) đều cho \(2/n&lt;\varepsilon\), nên \(v_n\to4\). Không số hạng nào bằng \(4\) vì \(2/n>0\) khi \(n\ge1\).
 
 **Vận dụng** Với \(v_n=1+3/n\), \(n\ge1\), dãy tiến tới số nào? Giải thích bằng khoảng cách.
 
@@ -80,7 +80,7 @@ Nếu em cho rằng giới hạn phải là một số hạng của dãy, đọc
 
 > **ĐỊNH NGHĨA — Dãy tiến vô cực và dãy dao động.** Một dãy không tiến gần số hữu hạn nào có thể tăng ra vô hạn hoặc dao động. Nếu các số hạng không tiến tới một số hữu hạn thì chắc chắn tiến +∞ hoặc −∞? Ta đã biết dấu số, n tăng, dãy chỉ số chẵn/lẻ. Có ba hành vi cần tách: hữu hạn, tiến vô cực có dấu, và không có giới hạn (dao động, có thể không bị chặn). u_n→+∞ nếu cuối cùng vượt mọi ngưỡng M, u_n→−∞ nếu cuối cùng nhỏ hơn −M. Dãy (−1)^n dao động giữa ±1: không có giới hạn hữu hạn nhưng cũng không tiến đến vô cực; xem hai dãy con chẵn/lẻ.
 
-Chẳng hạn, v_n=−n² với n≥1 đi về −∞ vì với mọi M>0, n>√M thì v_n<−M. Còn w_n=(−1)^n có dãy con chẵn=1, lẻ=−1, nên không thể có cùng giới hạn. Chọn kiểm dãy con thay vì dựa trên vài số hạng.
+Chẳng hạn, v_n=−n² với n≥1 đi về −∞ vì với mọi M>0, n>√M thì v_n&lt;−M. Còn w_n=(−1)^n có dãy con chẵn=1, lẻ=−1, nên không thể có cùng giới hạn. Chọn kiểm dãy con thay vì dựa trên vài số hạng.
 
 **Ví dụ**
 
@@ -107,7 +107,7 @@ Nếu em cho rằng mọi dãy không hội tụ hữu hạn đều tiến ra v�
 
 <!-- LESSON_ID: TOP08-M03; OUTCOME_ID: TOP08-O03 -->
 
-> **TÍNH CHẤT — Giới hạn dãy lũy thừa.** Dãy q^n cho thấy điều kiện về trị tuyệt đối q quyết định giới hạn. Số hạng đổi dấu luân phiên có nhất thiết không hội tụ? Ta sử dụng lũy thừa số thực và trị tuyệt đối. Khi |q|<1, |q^n|=|q|^n→0 nên q^n→0, kể cả q âm. Nếu q=1 thì q^n=1; q=−1 dao động; nếu q>1 thì q^n→+∞; q<−1 cho các nhánh dấu luân phiên với độ lớn tăng, không có giới hạn vô cực có dấu. Trường hợp q=0 cho 0^n=0 với n≥1.
+> **TÍNH CHẤT — Giới hạn dãy lũy thừa.** Dãy q^n cho thấy điều kiện về trị tuyệt đối q quyết định giới hạn. Số hạng đổi dấu luân phiên có nhất thiết không hội tụ? Ta sử dụng lũy thừa số thực và trị tuyệt đối. Khi |q|&lt;1, |q^n|=|q|^n→0 nên q^n→0, kể cả q âm. Nếu q=1 thì q^n=1; q=−1 dao động; nếu q>1 thì q^n→+∞; q&lt;−1 cho các nhánh dấu luân phiên với độ lớn tăng, không có giới hạn vô cực có dấu. Trường hợp q=0 cho 0^n=0 với n≥1.
 
 Xét ví dụ: Với q=−1/4, số hạng q^n đổi dấu nhưng có độ lớn 1/4^n→0, nên giới hạn là 0. Chọn trị tuyệt đối để nhìn thấy cơ chế hội tụ trước khi hỏi dấu.
 
@@ -115,7 +115,7 @@ Xét ví dụ: Với q=−1/4, số hạng q^n đổi dấu nhưng có độ l�
 
 **Đề bài.** Tính \(\lim_{n\to\infty}(-3/5)^n\) và so với \((-1)^n\).
 
-**Lời giải.** Vì \(|-3/5|=3/5<1\), độ lớn \((3/5)^n\to0\), nên \((-3/5)^n\to0\) dù luân phiên dấu. Ngược lại \((-1)^n\) có độ lớn luôn bằng \(1\), hai dãy con trái dấu, không hội tụ.
+**Lời giải.** Vì \(|-3/5|=3/5&lt;1\), độ lớn \((3/5)^n\to0\), nên \((-3/5)^n\to0\) dù luân phiên dấu. Ngược lại \((-1)^n\) có độ lớn luôn bằng \(1\), hai dãy con trái dấu, không hội tụ.
 
 **Vận dụng** lim(n→∞)(3/2)^n là gì?
 
@@ -177,7 +177,7 @@ Nếu lấy các hệ số khác bậc hoặc thế máy móc \(n=\infty\), đ�
 
 Tổng vô hạn của cấp số nhân chỉ hữu hạn khi điều kiện hội tụ được thỏa. Vô hạn số hạng có thể cộng thành hữu hạn như thế nào mà không mâu thuẫn? Cần nhớ CĐ07 định nghĩa CSN và tổng S_n hữu hạn, giới hạn q^n. Số S=∑_{k=0}^∞ a q^k được định nghĩa là giới hạn của các tổng riêng S_n, không phải phép cộng xong vô hạn bước. 
 
-> **CÔNG THỨC — Tổng cấp số nhân vô hạn.** Với \(|q|<1\), tổng \(\sum_{k=0}^{\infty}aq^k\) hội tụ và bằng \(\dfrac{a}{1-q}\), vì các tổng hữu hạn \(a(1-q^n)/(1-q)\) tiến đến giá trị ấy. Với \(|q|\ge1\) và \(a\ne0\), số hạng không tiến 0 nên tổng không hội tụ.
+> **CÔNG THỨC — Tổng cấp số nhân vô hạn.** Với \(|q|&lt;1\), tổng \(\sum_{k=0}^{\infty}aq^k\) hội tụ và bằng \(\dfrac{a}{1-q}\), vì các tổng hữu hạn \(a(1-q^n)/(1-q)\) tiến đến giá trị ấy. Với \(|q|\ge1\) và \(a\ne0\), số hạng không tiến 0 nên tổng không hội tụ.
 
  Phần dư R_n=a q^n/(1−q) quyết định sai số.
 
@@ -187,7 +187,7 @@ Chẳng hạn, 10+5+2,5+… có a=10,q=1/2; S_n=20(1−(1/2)^n), phần dư=20/2
 
 **Đề bài.** Tính tổng vô hạn của \(8-4+2-1+\cdots\), và tính phần dư sau hai số hạng đầu.
 
-**Lời giải.** Đây là cấp số nhân với \(a=8,q=-1/2\) và \(|q|<1\). Tổng vô hạn là \(S_\infty=8/(1+1/2)=16/3\). Hai số hạng đầu có tổng \(S_2=8-4=4\); phần dư có dấu \(S_\infty-S_2=4/3\), đúng công thức \(R_2=8(-1/2)^2/(1+1/2)=4/3\).
+**Lời giải.** Đây là cấp số nhân với \(a=8,q=-1/2\) và \(|q|&lt;1\). Tổng vô hạn là \(S_\infty=8/(1+1/2)=16/3\). Hai số hạng đầu có tổng \(S_2=8-4=4\); phần dư có dấu \(S_\infty-S_2=4/3\), đúng công thức \(R_2=8(-1/2)^2/(1+1/2)=4/3\).
 
 **Vận dụng** 6+2+2/3+… có tổng vô hạn bao nhiêu?
 
@@ -245,13 +245,13 @@ Nếu coi dạng \(0/0\) là đáp số hoặc tự gán giá trị của hàm t
 
 <!-- LESSON_ID: TOP08-M07; OUTCOME_ID: TOP08-O07 -->
 
-> **ĐỊNH NGHĨA — Giới hạn trái và phải.** Tiến đến điểm từ trái và phải có thể cho hai kết quả khác nhau. Hàm có thể tiến đến hai giá trị khác nhau khi ta lại gần từ trái và từ phải không? Ta đã biết bất đẳng thức x<a/x>a, hàm xác định từng phần. Giới hạn trái lim(x→a⁻) xét x<a, phải lim(x→a⁺) xét x>a, đều đi trong miền xác định. Giới hạn hai phía hữu hạn tồn tại và bằng L khi và chỉ khi cả hai giới hạn một phía cùng tồn tại và bằng L. f(a) không quyết định hai giới hạn này; đọc điều kiện từng nhánh trước khi thế.
+> **ĐỊNH NGHĨA — Giới hạn trái và phải.** Tiến đến điểm từ trái và phải có thể cho hai kết quả khác nhau. Hàm có thể tiến đến hai giá trị khác nhau khi ta lại gần từ trái và từ phải không? Ta đã biết bất đẳng thức x&lt;a/x>a, hàm xác định từng phần. Giới hạn trái lim(x→a⁻) xét x&lt;a, phải lim(x→a⁺) xét x>a, đều đi trong miền xác định. Giới hạn hai phía hữu hạn tồn tại và bằng L khi và chỉ khi cả hai giới hạn một phía cùng tồn tại và bằng L. f(a) không quyết định hai giới hạn này; đọc điều kiện từng nhánh trước khi thế.
 
-Chẳng hạn, f(x)=x+2 nếu x<0; f(x)=2x+1 nếu x≥0. Khi x→0⁻, f→2; khi x→0⁺, f→1. Hai giá trị khác nên không có giới hạn hai phía, mặc dù f(0)=1. Chọn phương pháp tách nhánh vì hàm từng phần.
+Chẳng hạn, f(x)=x+2 nếu x&lt;0; f(x)=2x+1 nếu x≥0. Khi x→0⁻, f→2; khi x→0⁺, f→1. Hai giá trị khác nên không có giới hạn hai phía, mặc dù f(0)=1. Chọn phương pháp tách nhánh vì hàm từng phần.
 
 **Ví dụ**
 
-**Đề bài.** Cho \(f(x)=x+3\) khi \(x<1\), \(f(x)=x^2+1\) khi \(x\ge1\). Tính hai giới hạn một phía ở \(1\).
+**Đề bài.** Cho \(f(x)=x+3\) khi \(x&lt;1\), \(f(x)=x^2+1\) khi \(x\ge1\). Tính hai giới hạn một phía ở \(1\).
 
 **Lời giải.** Từ trái dùng nhánh \(x+3\), được \(4\); từ phải dùng \(x^2+1\), được \(2\). Hai phía khác nhau nên giới hạn hai phía tại \(1\) không tồn tại, dù \(f(1)=2\) xác định. Hình nhảy ở bài sau có điểm nhảy ở \(0\), không phải ví dụ này.
 
@@ -282,7 +282,7 @@ Xét ví dụ: f(x)=1/(x−5): x→5⁻ thì mẫu âm nhỏ ⇒ f→−∞; x�
 
 **Đề bài.** Xét \(f(x)=\dfrac{x-4}{x-3}\). Nêu giới hạn khi \(x\to3^-\) và \(x\to3^+\).
 
-**Lời giải.** Gần \(3\), tử \(x-4\) âm và gần \(-1\). Từ trái, mẫu \(x-3<0\) rất nhỏ nên \(f(x)\to+\infty\); từ phải, mẫu dương rất nhỏ nên \(f(x)\to-\infty\). Không nhập hai giới hạn khác dấu thành một kết quả hữu hạn.
+**Lời giải.** Gần \(3\), tử \(x-4\) âm và gần \(-1\). Từ trái, mẫu \(x-3&lt;0\) rất nhỏ nên \(f(x)\to+\infty\); từ phải, mẫu dương rất nhỏ nên \(f(x)\to-\infty\). Không nhập hai giới hạn khác dấu thành một kết quả hữu hạn.
 
 **Vận dụng** lim(x→3⁻) 1/(3−x) là gì?
 
@@ -460,7 +460,7 @@ Giới hạn và giá trị tại điểm có thể lệch nhau theo những cá
 
 Chẳng hạn, f=|x|/x (x≠0) có giới hạn trái −1, phải +1 ⇒ gián đoạn nhảy tại 0. g=1/x có hai phía ±∞ ⇒ gián đoạn vô cực tại 0. h=(x²−36)/(x−6) nếu x≠6 rút x+6, lim=12 ⇒ gián đoạn có thể khử ở 6. Chọn so một phía trước khi kết luận.
 
-> **TÍNH CHẤT — Ba kiểu gián đoạn thường gặp.** Xét hàm từng đoạn \(f(x)=x+2\) khi \(x<0\), còn \(f(x)=2x+1\) khi \(x\ge0\), được minh họa bằng hình ngay bên dưới. Khi \(x\to0^-\), nhánh trái tiến tới 2 nhưng **không lấy** \((0,2)\); khi \(x\to0^+\), nhánh phải tiến tới 1 và có điểm đặc \((0,1)\), nên \(f(0)=1\). Vì 2 khác 1, hàm **không có giới hạn hai phía** ở 0 và không liên tục tại 0. Đây cũng là gián đoạn nhảy như \(|x|/x\), nhưng cặp giới hạn một phía của \(|x|/x\) là \((-1,1)\), còn ở hình này là \((2,1)\).
+> **TÍNH CHẤT — Ba kiểu gián đoạn thường gặp.** Xét hàm từng đoạn \(f(x)=x+2\) khi \(x&lt;0\), còn \(f(x)=2x+1\) khi \(x\ge0\), được minh họa bằng hình ngay bên dưới. Khi \(x\to0^-\), nhánh trái tiến tới 2 nhưng **không lấy** \((0,2)\); khi \(x\to0^+\), nhánh phải tiến tới 1 và có điểm đặc \((0,1)\), nên \(f(0)=1\). Vì 2 khác 1, hàm **không có giới hạn hai phía** ở 0 và không liên tục tại 0. Đây cũng là gián đoạn nhảy như \(|x|/x\), nhưng cặp giới hạn một phía của \(|x|/x\) là \((-1,1)\), còn ở hình này là \((2,1)\).
 
 ![Hai phía của điểm nhảy có giới hạn khác nhau](../../../assets/visuals/THPT_TOPIC08_ONE_SIDED_JUMP_R01.svg)
 
@@ -559,7 +559,7 @@ Biết đồ thị không đứt và hai đầu một khoảng có dấu trái n
 
 Làm sao biết một phương trình có nghiệm dù chưa tìm được công thức nghiệm? Ta đã biết liên tục trên đoạn đóng, dấu âm/dương. 
 
-> **ĐỊNH LÝ — Trường hợp đổi dấu của định lý giá trị trung gian.** Nếu \(f\) **liên tục trên đoạn** \([a,b]\), \(a<b\), và \(f(a)f(b)<0\), thì tồn tại **ít nhất một** \(c\in(a,b)\) sao cho \(f(c)=0\). Kết luận tồn tại không tự khẳng định nghiệm duy nhất.
+> **ĐỊNH LÝ — Trường hợp đổi dấu của định lý giá trị trung gian.** Nếu \(f\) **liên tục trên đoạn** \([a,b]\), \(a&lt;b\), và \(f(a)f(b)&lt;0\), thì tồn tại **ít nhất một** \(c\in(a,b)\) sao cho \(f(c)=0\). Kết luận tồn tại không tự khẳng định nghiệm duy nhất.
 
  Định lí cho tồn tại, không tự cho duy nhất; nếu f(a)f(b)>0 cũng không đủ kết luận vô nghiệm. Muốn duy nhất cần lý do độc lập (đơn điệu, v.v.). Không dùng IVT khi có điểm gián đoạn trong đoạn.
 
@@ -569,7 +569,7 @@ Chẳng hạn, g(x)=x³−2 liên tục trên [1,2]; g(1)=−1, g(2)=6, nên t�
 
 **Đề bài.** Dùng định lí giá trị trung gian chứng minh \(x^3-7=0\) có ít nhất một nghiệm trong \((1,2)\).
 
-**Lời giải.** Đặt \(g(x)=x^3-7\), là đa thức liên tục trên \([1,2]\). Vì \(g(1)=-6<0\), \(g(2)=1>0\), IVT đảm bảo có \(c\in(1,2)\) sao cho \(g(c)=0\). Kết luận **ít nhất một**, không tự nhận duy nhất nếu chưa chứng minh thêm.
+**Lời giải.** Đặt \(g(x)=x^3-7\), là đa thức liên tục trên \([1,2]\). Vì \(g(1)=-6&lt;0\), \(g(2)=1>0\), IVT đảm bảo có \(c\in(1,2)\) sao cho \(g(c)=0\). Kết luận **ít nhất một**, không tự nhận duy nhất nếu chưa chứng minh thêm.
 
 **Vận dụng** x²−3 có nghiệm trong (1,2) theo IVT không?
 
@@ -592,7 +592,7 @@ Nếu suy ngay nghiệm **duy nhất** chỉ từ trái dấu ở hai đầu, đ
 
 > **PHƯƠNG PHÁP — Chia đôi khoảng để khoanh nghiệm.** Sau kết luận tồn tại nghiệm, chia đôi giúp khoanh nghiệm bằng phép tính. Sau khi biết có nghiệm, làm thế nào khoanh vùng được nó mà chưa dùng máy tính? Ta sử dụng IVT, giá trị tại trung điểm, dấu trái/phải. Chia đôi đoạn [a,b] có f liên tục và hai đầu trái dấu: tại m=(a+b)/2, nếu f(m)=0 thì tìm xong; nếu không, giữ nửa đoạn có hai giá trị đầu trái dấu. Lặp lại, độ dài đoạn sau k bước bằng (b−a)/2^k. Phải nói rõ mô hình toán có miền t và đơn vị; nghiệm mô hình không tự là kết luận thực nghiệm.
 
-Xét ví dụ: Với g(x)=x²−2 trên [1,2], g(1)=−1,g(2)=2. Bước 1 m=1,5: g=0,25>0 giữ [1,1,5]. Bước 2 m=1,25: g=−0,4375<0 giữ [1,25,1,5]; nghiệm √2 vẫn trong khoảng dài 0,25. Chọn dấu bảo toàn điều kiện IVT sau mỗi bước.
+Xét ví dụ: Với g(x)=x²−2 trên [1,2], g(1)=−1,g(2)=2. Bước 1 m=1,5: g=0,25>0 giữ [1,1,5]. Bước 2 m=1,25: g=−0,4375&lt;0 giữ [1,25,1,5]; nghiệm √2 vẫn trong khoảng dài 0,25. Chọn dấu bảo toàn điều kiện IVT sau mỗi bước.
 
 ![Định lý giá trị trung gian và chia đôi đoạn](../../../assets/visuals/THPT_TOPIC08_IVT_BISECTION_R01.svg)
 
@@ -602,7 +602,7 @@ Xét ví dụ: Với g(x)=x²−2 trên [1,2], g(1)=−1,g(2)=2. Bước 1 m=1,5
 
 **Đề bài.** Dùng hai bước chia đôi để khoanh nghiệm của \(x^2-5=0\) trong \([2,3]\).
 
-**Lời giải.** Vì \(g(2)=-1<0\), \(g(3)=4>0\), bước 1 lấy \(m=2{,}5\) có \(g(m)=1{,}25>0\), giữ \([2,2{,}5]\). Bước 2 có \(m=2{,}25\), \(g(m)=0{,}0625>0\), giữ \([2,2{,}25]\), dài \(0{,}25\). Các đầu đoạn luôn trái dấu; hình phía trên dùng \(x^2-2\), không phải phương trình này.
+**Lời giải.** Vì \(g(2)=-1&lt;0\), \(g(3)=4>0\), bước 1 lấy \(m=2{,}5\) có \(g(m)=1{,}25>0\), giữ \([2,2{,}5]\). Bước 2 có \(m=2{,}25\), \(g(m)=0{,}0625>0\), giữ \([2,2{,}25]\), dài \(0{,}25\). Các đầu đoạn luôn trái dấu; hình phía trên dùng \(x^2-2\), không phải phương trình này.
 
 **Vận dụng** Với x²−3 trên [1,2], sau một bước chia đôi giữ nửa nào?
 
@@ -624,7 +624,7 @@ Nếu chọn nửa khoảng không còn đổi dấu hoặc đếm sai độ dà
 > **Kiến thức cần ghi nhớ**
 >
 > - **Giới hạn:** một dãy có thể tiến đến \(L\) mà không bao giờ bằng \(L\). Khi tính giới hạn hàm tại \(a\), xét \(x\) tiến gần \(a\) trong miền, không tự gán giá trị \(f(a)\).
-> - **Cấp số nhân vô hạn:** chỉ dùng \(S=a/(1-q)\) khi \(|q|<1\); phải hiểu tổng là giới hạn các tổng riêng.
+> - **Cấp số nhân vô hạn:** chỉ dùng \(S=a/(1-q)\) khi \(|q|&lt;1\); phải hiểu tổng là giới hạn các tổng riêng.
 > - **Liên tục:** ở điểm trong miền, cần \(\lim_{x\to a}f(x)=f(a)\); ở đầu mút đoạn chỉ kiểm phía thuộc miền. Một điểm mất hoặc sai giá trị có thể khử gián đoạn nếu giới hạn hữu hạn tồn tại.
 > - **Định lý giá trị trung gian:** phải có liên tục trên **cả đoạn** và đổi dấu hai đầu để khẳng định **tồn tại** nghiệm; không suy nghiệm duy nhất nếu thiếu lập luận thêm.
 

@@ -48,7 +48,7 @@ Hãy tự giải 32 câu sau trước khi đối chiếu lại phần Luyện t�
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P04; NO_RD1; NO_MASTERY -->
 
-**Câu 4.** Cho f(x)=x nếu x<0, f(x)=x² nếu x≥0. Hàm có đạo hàm tại 0 không? Có liên tục không?
+**Câu 4.** Cho f(x)=x nếu x&lt;0, f(x)=x² nếu x≥0. Hàm có đạo hàm tại 0 không? Có liên tục không?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP09-P05; NO_RD1; NO_MASTERY -->
 

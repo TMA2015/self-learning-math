@@ -283,7 +283,7 @@ Em hãy tự giải từng bài, kiểm **điểm tiến tới, hướng tiếp 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP08-W02; SOURCE_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac; OUTCOME: TOP08-O05; NOT_NEW_ID -->
 
-**Bài 19.** CSN có u_1=15,q=−1/4. (a) Viết S_n và điều kiện tính tổng vô hạn. (b) Tính S_∞. (c) Tìm n nguyên dương nhỏ nhất để |S_∞−S_n|<3/64; vì sao n=4 không đủ?
+**Bài 19.** CSN có u_1=15,q=−1/4. (a) Viết S_n và điều kiện tính tổng vô hạn. (b) Tính S_∞. (c) Tìm n nguyên dương nhỏ nhất để |S_∞−S_n|&lt;3/64; vì sao n=4 không đủ?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -362,7 +362,7 @@ Em hãy tự giải từng bài, kiểm **điểm tiến tới, hướng tiếp 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B16-C02; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O07; NOT_NEW_ID -->
 
-**Bài 24.** Cho f(x)=x+2 nếu x<0 và f(x)=3−x nếu x≥0. Giới hạn hai phía tại 0 có tồn tại không?
+**Bài 24.** Cho f(x)=x+2 nếu x&lt;0 và f(x)=3−x nếu x≥0. Giới hạn hai phía tại 0 có tồn tại không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -374,7 +374,7 @@ Em hãy tự giải từng bài, kiểm **điểm tiến tới, hướng tiếp 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP08-P07; SOURCE_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac; OUTCOME: TOP08-O07; NOT_NEW_ID -->
 
-**Bài 25.** Cho f(x)=x+1 nếu x<1, và f(x)=x²+3 nếu x≥1. Tính hai giới hạn một phía tại 1 và quyết định có lim(x→1)f(x) không.
+**Bài 25.** Cho f(x)=x+1 nếu x&lt;1, và f(x)=x²+3 nếu x≥1. Tính hai giới hạn một phía tại 1 và quyết định có lim(x→1)f(x) không.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -388,7 +388,7 @@ Em hãy tự giải từng bài, kiểm **điểm tiến tới, hướng tiếp 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP08-W03; SOURCE_BLOB: 2e93db80384de53e208248eaa0396a7f487302ac; OUTCOME: TOP08-O07; NOT_NEW_ID -->
 
-**Bài 26.** Cho f(x)=(x²−4)/|x−2| với x≠2. (a) Viết f theo hai phía x<2 và x>2. (b) Tính giới hạn trái/phải tại 2. (c) Kết luận giới hạn hai phía, giải thích vì sao dạng 0/0 không cho phép thay bằng 0.
+**Bài 26.** Cho f(x)=(x²−4)/|x−2| với x≠2. (a) Viết f theo hai phía x&lt;2 và x>2. (b) Tính giới hạn trái/phải tại 2. (c) Kết luận giới hạn hai phía, giải thích vì sao dạng 0/0 không cho phép thay bằng 0.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -583,7 +583,7 @@ Em hãy tự giải từng bài, kiểm **điểm tiến tới, hướng tiếp 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B17-P06; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O13; NOT_NEW_ID -->
 
-**Bài 40.** f(x)=x+1 với x<0, f(x)=x²+1 với x≥0. Liên tục tại 0 không?
+**Bài 40.** f(x)=x+1 với x&lt;0, f(x)=x²+1 với x≥0. Liên tục tại 0 không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -595,7 +595,7 @@ Em hãy tự giải từng bài, kiểm **điểm tiến tới, hướng tiếp 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B17-P02; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O13; NOT_NEW_ID -->
 
-**Bài 41.** Cho f(x)=ax+1 nếu x<2, và f(x)=x²−1 nếu x≥2. Tìm a để liên tục tại 2.
+**Bài 41.** Cho f(x)=ax+1 nếu x&lt;2, và f(x)=x²−1 nếu x≥2. Tìm a để liên tục tại 2.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -671,7 +671,7 @@ Em hãy tự giải từng bài, kiểm **điểm tiến tới, hướng tiếp 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B17-W02-ANCHOR; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O15; NOT_NEW_ID -->
 
-**Bài 47.** (a) Xét tính liên tục của f(x)=√(x+1) trên [−1,3], kể cả hai đầu mút. (b) Cho h(x)=x²+1 nếu x<0, và h(x)=3x+1 nếu x≥0. Chứng minh h liên tục tại 0. (c) Nếu đổi nhánh x≥0 thành 3x+2, điều gì thay đổi?
+**Bài 47.** (a) Xét tính liên tục của f(x)=√(x+1) trên [−1,3], kể cả hai đầu mút. (b) Cho h(x)=x²+1 nếu x&lt;0, và h(x)=3x+1 nếu x≥0. Chứng minh h liên tục tại 0. (c) Nếu đổi nhánh x≥0 thành 3x+2, điều gì thay đổi?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -753,7 +753,7 @@ Em hãy tự giải từng bài, kiểm **điểm tiến tới, hướng tiếp 
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHV-B17-W01; SOURCE_BLOB: 7934757ed06de4ae4b63dbc351ef524fc054e0d0; OUTCOME: TOP08-O17; NOT_NEW_ID -->
 
-**Bài 53.** Cho f(x)=2x+k nếu x<1, và f(x)=x²+3 nếu x≥1. (a) Tìm k để f liên tục tại 1. (b) Với g(x)=x³−x−1, chứng minh có ít nhất một nghiệm của g(x)=0 trong (1,2); nói rõ điều gì chưa thể kết luận bằng định lí đổi dấu.
+**Bài 53.** Cho f(x)=2x+k nếu x&lt;1, và f(x)=x²+3 nếu x≥1. (a) Tìm k để f liên tục tại 1. (b) Với g(x)=x³−x−1, chứng minh có ít nhất một nghiệm của g(x)=0 trong (1,2); nói rõ điều gì chưa thể kết luận bằng định lí đổi dấu.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 

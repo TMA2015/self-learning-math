@@ -222,7 +222,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-P04; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O04; NOT_NEW_ID -->
 
-**Bài 13.** Cho f(x)=x nếu x<0, f(x)=x² nếu x≥0. Hàm có đạo hàm tại 0 không? Có liên tục không?
+**Bài 13.** Cho f(x)=x nếu x&lt;0, f(x)=x² nếu x≥0. Hàm có đạo hàm tại 0 không? Có liên tục không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -346,7 +346,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP09-W01; SOURCE_BLOB: f249949be3b254a29c8859301b6c4904e636c505; OUTCOME: TOP09-O06; NOT_NEW_ID -->
 
-**Bài 21.** Cho f(x)=x² với x≥0 và f(x)=x²+c x khi x<0. (a) Chứng minh f liên tục tại0 với mọi c. (b) Tính giới hạn thương sai phân trái và phải ở0. (c) Tìm mọi c để f khả vi tại0; (d) viết tiếp tuyến ở0 trong trường hợp ấy.
+**Bài 21.** Cho f(x)=x² với x≥0 và f(x)=x²+c x khi x&lt;0. (a) Chứng minh f liên tục tại0 với mọi c. (b) Tính giới hạn thương sai phân trái và phải ở0. (c) Tìm mọi c để f khả vi tại0; (d) viết tiếp tuyến ở0 trong trường hợp ấy.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1634,7 +1634,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, góc radian
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G11-CHIX-B33-C05; SOURCE_BLOB: 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0; OUTCOME: TOP09-O30; NOT_NEW_ID -->
 
-**Bài 102.** Nếu v(t0)<0 và a(t0)<0, tốc độ |v| tại t0 tăng hay giảm?
+**Bài 102.** Nếu v(t0)&lt;0 và a(t0)&lt;0, tốc độ |v| tại t0 tăng hay giảm?
 
 <details markdown="1"><summary>Lời giải</summary>
 

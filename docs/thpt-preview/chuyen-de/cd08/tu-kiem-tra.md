@@ -60,7 +60,7 @@ Hãy tự làm đủ 18 câu sau đây trên giấy hoặc phần trả lời ri
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P07; NO_RD1; NO_MASTERY -->
 
-**Câu 7.** Cho f(x)=x+1 nếu x<1, và f(x)=x²+3 nếu x≥1. Tính hai giới hạn một phía tại 1 và quyết định có lim(x→1)f(x) không.
+**Câu 7.** Cho f(x)=x+1 nếu x&lt;1, và f(x)=x²+3 nếu x≥1. Tính hai giới hạn một phía tại 1 và quyết định có lim(x→1)f(x) không.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP08-P08; NO_RD1; NO_MASTERY -->
 

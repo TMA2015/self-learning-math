@@ -183,7 +183,7 @@ Chẳng hạn, Xét |x−1| tại1: f liên tục vì |x−1|→0; đạo hàm t
 
 **Đề bài:** Xét f(x)=|2x+3| tại a=−3/2: có liên tục và khả vi không?
 
-**Lời giải:** Giá trị hàm tại a bằng 0, hàm liên tục. Thương sai phân =−2 khi h<0, +2 khi h>0; hai giới hạn khác nhau nên không khả vi tại a.
+**Lời giải:** Giá trị hàm tại a bằng 0, hàm liên tục. Thương sai phân =−2 khi h&lt;0, +2 khi h>0; hai giới hạn khác nhau nên không khả vi tại a.
 
 **Vận dụng** f(x)=|x| có liên tục tại0 không, đạo hàm tại0 không?
 
@@ -206,11 +206,11 @@ Nếu suy ngược 'liên tục ⇒ khả vi', đọc **Kiến thức 1.5**, là
 
 > **ĐỊNH NGHĨA — Đạo hàm một phía.** Góc nhọn cho thấy hai đạo hàm một phía có thể khác nhau. Một tiếp tuyến duy nhất có độ dốc hữu hạn có hình thành tại điểm gấp khúc? Để xác định điều đó, cần xét hàm trị tuyệt đối và xét dấu h. Để có đạo hàm thông thường tại a, hai giới hạn thương sai phân một phía phải hữu hạn và bằng nhau. Tại góc nhọn |x−a| chúng thường trái dấu. Có thể có đạo hàm một phía nhưng không có đạo hàm hai phía; không gộp hai độ dốc thành 0.
 
-Chẳng hạn, f(x)=|x−3| tại 3: [|h|−0]/h=−1 khi h<0, +1 khi h>0. Chọn xét dấu tuyệt đối trước, nên không có f'(3).
+Chẳng hạn, f(x)=|x−3| tại 3: [|h|−0]/h=−1 khi h&lt;0, +1 khi h>0. Chọn xét dấu tuyệt đối trước, nên không có f'(3).
 
 **Ví dụ**
 
-**Đề bài:** Cho f(x)=3x nếu x<0, f(x)=x² nếu x≥0. Xét tại 0.
+**Đề bài:** Cho f(x)=3x nếu x&lt;0, f(x)=x² nếu x≥0. Xét tại 0.
 
 **Lời giải:** Giới hạn hai phía bằng 0=f(0) nên liên tục. Thương sai phân trái bằng 3, phải tiến 0; đạo hàm hai phía tại 0 không tồn tại.
 
@@ -297,7 +297,7 @@ Nếu viết đường thẳng không đi qua (a,f(a)) hoặc nhầm tung độ 
 
 <!-- LESSON_ID: TOP09-M09; OUTCOME_ID: TOP09-O09 -->
 
-> **CÔNG THỨC — Vận tốc có hướng.** Trong chuyển động trên một trục thẳng, nếu \(s(t)\) là **tọa độ có dấu** của vật đo bằng mét tại thời điểm \(t\) đo bằng giây, thì độ dốc của đồ thị \(s(t)\) cho **vận tốc có hướng** \(v(t)=s'(t)\), đơn vị m/s. Vật có thể có vận tốc \(-2\) m/s mà tốc độ vẫn dương không? Có: **tốc độ** là \(|v(t)|\), luôn không âm; còn \(v(t)<0\) chỉ nói vật đang chuyển động theo chiều âm, không tự khẳng định đang chậm dần.
+> **CÔNG THỨC — Vận tốc có hướng.** Trong chuyển động trên một trục thẳng, nếu \(s(t)\) là **tọa độ có dấu** của vật đo bằng mét tại thời điểm \(t\) đo bằng giây, thì độ dốc của đồ thị \(s(t)\) cho **vận tốc có hướng** \(v(t)=s'(t)\), đơn vị m/s. Vật có thể có vận tốc \(-2\) m/s mà tốc độ vẫn dương không? Có: **tốc độ** là \(|v(t)|\), luôn không âm; còn \(v(t)&lt;0\) chỉ nói vật đang chuyển động theo chiều âm, không tự khẳng định đang chậm dần.
 
 Chẳng hạn, s(t)=t²−6t (m), t≥0: v(t)=2t−6; tại t=2, v=−2 m/s, tốc độ2 m/s. Chọn trị tuyệt đối chỉ sau khi xác định vận tốc có hướng.
 
@@ -677,7 +677,7 @@ Nếu đạo hàm a^x thiếu ln a hoặc đạo hàm e^{u} quên u', đọc **K
 \]
 Từ \(\log_a x=\dfrac{\ln x}{\ln a}\) với \(a>0,\ a\ne1\), ta suy ra hệ số \(1/\ln a\). Các phép biến đổi này chỉ có nghĩa khi đối số lôgarit **dương**.
 
-> **CÔNG THỨC — Logarit và miền.** Hàm logarit còn đòi hỏi xét miền của đối số. Khi lấy đạo hàm ln x, tại sao phải giữ x>0 ngay cả khi 1/x có nghĩa với x<0? Để xác định điều đó, cần xét miền của logarit và đạo hàm 1/x. (ln x)'=1/x với x>0; [log_a x]'=1/(x ln a) với a>0,a≠1 và x>0. Công thức đạo hàm không mở rộng miền logarit gốc sang x<0. Với ln|x| có miền x≠0 và derivative1/x nhưng đó là hàm khác (không tự đồng nhất với ln x).
+> **CÔNG THỨC — Logarit và miền.** Hàm logarit còn đòi hỏi xét miền của đối số. Khi lấy đạo hàm ln x, tại sao phải giữ x>0 ngay cả khi 1/x có nghĩa với x&lt;0? Để xác định điều đó, cần xét miền của logarit và đạo hàm 1/x. (ln x)'=1/x với x>0; [log_a x]'=1/(x ln a) với a>0,a≠1 và x>0. Công thức đạo hàm không mở rộng miền logarit gốc sang x&lt;0. Với ln|x| có miền x≠0 và derivative1/x nhưng đó là hàm khác (không tự đồng nhất với ln x).
 
 Chẳng hạn, f=log₂ x, x>0: f'=1/(x ln2). Đơn vị ln2 là hằng dương, không là biến.
 
@@ -708,7 +708,7 @@ Nếu dùng công thức ln x cho log_a x mà bỏ ln a hoặc nhận x≤0, đ�
 
 > **CÔNG THỨC — Mũ–logarit hợp.** Khi mũ/log chứa biểu thức, quy tắc dây chuyền xuất hiện. Vì sao ln(g(x)) chỉ lấy đạo hàm tại nơi g(x)>0? Ta đã biết dây chuyền và miền ln, cơ số a>0. [ln g]'=g'/g trên g>0; [a^{g}]'=a^{g} ln a ·g' với a>0,a≠1; [log_a g]'=g'/(g ln a) trên g>0. Cần kiểm g khả vi và miền của hàm ngoài. Không dùng công thức ở g≤0 dù biểu thức g'/g có vẻ tồn tại.
 
-Cần phân biệt \(\ln(g(x))\), chỉ có nghĩa khi \(g(x)>0\), với \(\ln|g(x)|\), có nghĩa khi \(g(x)\ne0\). Trên khoảng \(g(x)\ne0\) và \(g\) khả vi, \([\ln|g(x)|]'=\dfrac{g'(x)}{g(x)}\); ví dụ \(g=x-2\), công thức đúng cả khi \(x<2\), dù \(\ln(x-2)\) không xác định tại đó. Không dùng \(\ln|g|\) ở điểm \(g=0\).
+Cần phân biệt \(\ln(g(x))\), chỉ có nghĩa khi \(g(x)>0\), với \(\ln|g(x)|\), có nghĩa khi \(g(x)\ne0\). Trên khoảng \(g(x)\ne0\) và \(g\) khả vi, \([\ln|g(x)|]'=\dfrac{g'(x)}{g(x)}\); ví dụ \(g=x-2\), công thức đúng cả khi \(x&lt;2\), dù \(\ln(x-2)\) không xác định tại đó. Không dùng \(\ln|g|\) ở điểm \(g=0\).
 
 Chẳng hạn, f=ln(x²+1) xác định mọi x, f'=2x/(x²+1). Chọn **quy tắc dây chuyền** vì đối số là x²+1; đối số dương mọi x nên không phải loại điểm.
 
@@ -745,7 +745,7 @@ Xét ví dụ: f=√(x−3)/(x−4) có miền x≥3, x≠4. Công thức deriva
 
 **Đề bài:** Tìm miền và nơi có thể lấy đạo hàm của √(5−x)/(x²−1).
 
-**Lời giải:** Điều kiện x≤5, x≠±1, nên D=(−∞,−1)∪(−1,1)∪(1,5]. Có công thức thương trên nội điểm x<5, x≠±1; ở x=5 không có đạo hàm hữu hạn hai phía.
+**Lời giải:** Điều kiện x≤5, x≠±1, nên D=(−∞,−1)∪(−1,1)∪(1,5]. Có công thức thương trên nội điểm x&lt;5, x≠±1; ở x=5 không có đạo hàm hữu hạn hai phía.
 
 **Vận dụng** [ln x/(x−2)] xác định ở những x nào?
 
@@ -954,7 +954,7 @@ Nếu nhầm gia tốc với vận tốc hoặc đơn vị m/s² thành m/s, đ�
 
 > **TÍNH CHẤT — Dấu vận tốc và gia tốc.** Dấu gia tốc phải đọc cùng dấu vận tốc. Gia tốc âm có nhất thiết khiến vật chậm đi? Cần nhớ tốc độ |v| và dấu của hai hàm v,a. Khi v≠0, đạo hàm tốc độ |v| bằng sign(v)·a: v,a cùng dấu → tốc độ tăng; trái dấu → giảm. Nếu v=0 phải xét riêng; a âm chỉ nói v có hướng đang giảm. Đây là ý nghĩa cơ học, không phải bài tối ưu CĐ10.
 
-Chẳng hạn, s(t)=−t², t>0: v=−2t<0, a=−2<0. Vì cùng dấu, |v|=2t đang tăng dù gia tốc âm. Chọn xét tích v·a để không suy từ dấu gia tốc riêng.
+Chẳng hạn, s(t)=−t², t>0: v=−2t&lt;0, a=−2&lt;0. Vì cùng dấu, |v|=2t đang tăng dù gia tốc âm. Chọn xét tích v·a để không suy từ dấu gia tốc riêng.
 
 **Ví dụ**
 
