@@ -156,14 +156,14 @@ Chẳng hạn, Trên x<0, ∫(3/x)dx=3ln(−x)+C. Lấy đạo hàm 3·(−1)/(�
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-F(x)=ln(−x)+2 trên x<0.
+F(x)=ln(−x)+2 trên x&lt;0.
 
 Không viết ln x ở x âm; sau đó kiểm đạo hàm trước khi kết luận.
 
 
 **Kiểm lỗi**
 
-Nếu em dùng \(\ln x\) cho \(x<0\) hoặc ghép hằng số xuyên qua điểm \(x=0\) bị loại, đọc **Kiến thức 1.4**, làm **Bài 17** và **Bài 21**. Luôn chọn một khoảng xác định không qua 0.
+Nếu em dùng \(\ln x\) cho \(x&lt;0\) hoặc ghép hằng số xuyên qua điểm \(x=0\) bị loại, đọc **Kiến thức 1.4**, làm **Bài 17** và **Bài 21**. Luôn chọn một khoảng xác định không qua 0.
 
 </details>
 

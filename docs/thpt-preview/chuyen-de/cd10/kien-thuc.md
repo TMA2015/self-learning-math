@@ -62,12 +62,12 @@ Xét \(f(x)=-2x+5\) trên \(\mathbb R\). Với bất kỳ \(x_1<x_2\), ta có \(
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-\(f(x_2)-f(x_1)=3(x_2-x_1)>0\), nên hàm đồng biến trên \(\mathbb R\). Nếu em chỉ thế hai giá trị cụ thể, hãy quay lại điều kiện **với mọi** cặp \(x_1<x_2\) trong khoảng.
+\(f(x_2)-f(x_1)=3(x_2-x_1)>0\), nên hàm đồng biến trên \(\mathbb R\). Nếu em chỉ thế hai giá trị cụ thể, hãy quay lại điều kiện **với mọi** cặp \(x_1&lt;x_2\) trong khoảng.
 
 
 **Kiểm lỗi**
 
-Nếu em kết luận chiều biến thiên từ hai điểm mẫu, đọc lại **Kiến thức 1.1** và giải **Bài 1** rồi **Bài 2**. Với mọi \(x_1<x_2\) trong cùng khoảng, phải kiểm dấu hiệu hai giá trị hoặc dấu đạo hàm, không chỉ quan sát hình.
+Nếu em kết luận chiều biến thiên từ hai điểm mẫu, đọc lại **Kiến thức 1.1** và giải **Bài 1** rồi **Bài 2**. Với mọi \(x_1&lt;x_2\) trong cùng khoảng, phải kiểm dấu hiệu hai giá trị hoặc dấu đạo hàm, không chỉ quan sát hình.
 
 </details>
 
@@ -90,7 +90,7 @@ Chẳng hạn, \(f(x)=x^2\) có \(f'(x)=2x\). Ở phía trái 0, đạo hàm âm
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Có. Với \(x_1<x_2\) thì \(x_1^3<x_2^3\); đạo hàm \(3x^2\ge0\) và chỉ bằng 0 tại một điểm, không tạo ra đoạn hằng. Nếu em gán mọi nghiệm \(f'=0\) thành cực trị, hãy lập dấu đạo hàm **hai phía** điểm ấy.
+Có. Với \(x_1&lt;x_2\) thì \(x_1^3&lt;x_2^3\); đạo hàm \(3x^2\ge0\) và chỉ bằng 0 tại một điểm, không tạo ra đoạn hằng. Nếu em gán mọi nghiệm \(f'=0\) thành cực trị, hãy lập dấu đạo hàm **hai phía** điểm ấy.
 
 
 **Kiểm lỗi**
@@ -706,7 +706,7 @@ Ngoài phân thức bậc nhất trên bậc nhất, ta còn khảo sát **phân
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-f'=−5/(x−2)²<0 trên mỗi nhánh; TCD x=2, TCN y=1.
+f'=−5/(x−2)²&lt;0 trên mỗi nhánh; TCD x=2, TCN y=1.
 
 Nếu đọc 'giảm trên toàn ℝ\{2}' theo mọi cặp, lưu ý hai nhánh không tạo một khoảng.
 
@@ -962,7 +962,7 @@ Chẳng hạn, Hình chữ nhật có tổng hai cạnh bằng10 m, x>0 và 10�
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-0<x<4 để cạnh 8−2x>0.
+0&lt;x&lt;4 để cạnh 8−2x>0.
 
 Nếu xét x=5, đáy có cạnh âm, không có hộp.
 
