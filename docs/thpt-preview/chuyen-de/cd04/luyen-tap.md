@@ -250,9 +250,9 @@ So sánh 2^(√2) và 2^(3/2) mà không dùng máy tính; nêu điều kiện c
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2^(√2) < 2^(3/2).
+**Đáp án:** 2^(√2) &lt; 2^(3/2).
 
-√2<3/2 vì 2<9/4, và y=2^x tăng nghiêm ngặt. Cơ số 2>0 nên lũy thừa với số mũ vô tỉ xác định.
+√2&lt;3/2 vì 2&lt;9/4, và y=2^x tăng nghiêm ngặt. Cơ số 2>0 nên lũy thừa với số mũ vô tỉ xác định.
 
 </details>
 
@@ -266,7 +266,7 @@ So sánh (1/2)^(√3) với (1/2)^2, giải thích dấu so sánh.
 
 **Đáp án:** (1/2)^(√3) > (1/2)^2.
 
-√3<2, nhưng cơ số 1/2 nằm giữa 0 và 1 nên hàm lũy thừa theo số mũ giảm: số mũ nhỏ cho giá trị lớn. Không được dùng quy tắc so sánh cơ số >1.
+√3&lt;2, nhưng cơ số 1/2 nằm giữa 0 và 1 nên hàm lũy thừa theo số mũ giảm: số mũ nhỏ cho giá trị lớn. Không được dùng quy tắc so sánh cơ số >1.
 
 </details>
 
@@ -294,7 +294,7 @@ Với a>0, đặt E=a^(3/4)·a^(−5/4)/a^(−1/2). (a) Rút gọn E và giải 
 
 **Đáp án:** E=1 (a>0); 0,0000075=7,5·10^(−6); 75·10^(−7) bằng cùng giá trị nhưng hệ số không thuộc [1,10).
 
-Vì a>0 nên mọi lũy thừa thực và phép chia đều có nghĩa; E=a^(3/4−5/4+1/2)=a^0=1. Số 0,0000075=7,5·10^(−6). Kí hiệu khoa học chuẩn yêu cầu 1≤|k|<10, nên hệ số 75 của 75·10^(−7) là sai **dạng chuẩn**, không sai giá trị.
+Vì a>0 nên mọi lũy thừa thực và phép chia đều có nghĩa; E=a^(3/4−5/4+1/2)=a^0=1. Số 0,0000075=7,5·10^(−6). Kí hiệu khoa học chuẩn yêu cầu 1≤|k|&lt;10, nên hệ số 75 của 75·10^(−7) là sai **dạng chuẩn**, không sai giá trị.
 
 **Rubric tự đối chiếu:**
 
@@ -396,9 +396,9 @@ Tìm điều kiện xác định của log₂((x−1)(x+2)); có luôn tách th�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x<−2 hoặc x>1; không tách được trên toàn miền.
+**Đáp án:** x&lt;−2 hoặc x>1; không tách được trên toàn miền.
 
-Tích dương khi hai thừa số cùng dấu. Trên x<−2, từng thừa số âm nên hai log riêng không có nghĩa.
+Tích dương khi hai thừa số cùng dấu. Trên x&lt;−2, từng thừa số âm nên hai log riêng không có nghĩa.
 
 </details>
 
@@ -443,14 +443,14 @@ Giải phương trình log₂(x−1)+log₂(x+1)=3. Viết rõ miền xác đị
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-(a) A=4−2=2. (b) (x−2)(x+3)>0 ⇔ x<−3 hoặc x>2. Trên x>2 cả hai thừa số dương nên tách hợp lệ. Trên x<−3 cả hai thừa số âm, log riêng không xác định dù log tích có nghĩa.
+(a) A=4−2=2. (b) (x−2)(x+3)>0 ⇔ x&lt;−3 hoặc x>2. Trên x>2 cả hai thừa số dương nên tách hợp lệ. Trên x&lt;−3 cả hai thừa số âm, log riêng không xác định dù log tích có nghĩa.
 
 **Rubric 4 điểm:**
 
 1. Tính đúng A=2 — **1 điểm**.
 2. Giải đúng bất phương trình tích, được hai khoảng — **1 điểm**.
 3. Chỉ ra trên x>2 tách log hợp lệ — **1 điểm**.
-4. Giải thích trên x<−3 không thể tách log vì đối số âm — **1 điểm**.
+4. Giải thích trên x&lt;−3 không thể tách log vì đối số âm — **1 điểm**.
 
 </details>
 
@@ -476,9 +476,9 @@ Tìm miền xác định của log₃[(x−1)(x−4)]. Ở miền nào có thể
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Miền x<1 hoặc x>4; chỉ tách thành tổng log thực khi x>4.
+**Đáp án:** Miền x&lt;1 hoặc x>4; chỉ tách thành tổng log thực khi x>4.
 
-Điều kiện (x−1)(x−4)>0 ⇒ x<1 hoặc x>4. Để tách, **từng** đối số x−1 và x−4 phải dương ⇒ x>4; x<1 cho tích dương nhưng hai thừa số âm.
+Điều kiện (x−1)(x−4)>0 ⇒ x&lt;1 hoặc x>4. Để tách, **từng** đối số x−1 và x−4 phải dương ⇒ x>4; x&lt;1 cho tích dương nhưng hai thừa số âm.
 
 </details>
 
@@ -490,7 +490,7 @@ Tìm miền của log₂(x²−9), rồi xét tính hợp lệ của log₂(x−
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** TXĐ x<−3 hoặc x>3; tách thành tổng log thực chỉ trên x>3.
+**Đáp án:** TXĐ x&lt;−3 hoặc x>3; tách thành tổng log thực chỉ trên x>3.
 
 x²−9=(x−3)(x+3)>0 khi |x|>3. Muốn log của từng thừa số có nghĩa phải có x−3>0 và x+3>0 ⇒ x>3.
 
@@ -534,7 +534,7 @@ Tính log_(1/9)3. Giá trị này dương hay âm?
 
 **Đáp án:** −1/2.
 
-(1/9)^(−1/2)=1/√(1/9)=3; do cơ số 1/9<1, số mũ âm có thể cho giá trị >1. Cơ số vẫn hợp lệ vì >0, ≠1.
+(1/9)^(−1/2)=1/√(1/9)=3; do cơ số 1/9&lt;1, số mũ âm có thể cho giá trị >1. Cơ số vẫn hợp lệ vì >0, ≠1.
 
 </details>
 
@@ -582,7 +582,7 @@ Hàm (1/5)^x đồng biến hay nghịch biến và tại sao?
 
 **Đáp án:** Nghịch biến trên ℝ.
 
-Mỗi khi x tăng 1, giá trị hàm nhân 1/5, tức giảm; 0<1/5<1.
+Mỗi khi x tăng 1, giá trị hàm nhân 1/5, tức giảm; 0&lt;1/5&lt;1.
 
 </details>
 
@@ -636,9 +636,9 @@ So sánh 3^(1/2) và 3^1 mà không dùng máy tính.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 3^(1/2)<3.
+**Đáp án:** 3^(1/2)&lt;3.
 
-Hàm 3^x tăng vì 3>1; số mũ 1/2<1.
+Hàm 3^x tăng vì 3>1; số mũ 1/2&lt;1.
 
 </details>
 
@@ -746,7 +746,7 @@ Sắp xếp theo thứ tự giảm dần các giá trị (1/5)^(−1), (1/5)^0 v
 
 **Đáp án:** 5 > 1 > 1/25, tương ứng các số mũ −1,0,2.
 
-Với 0<a=1/5<1, a^x nghịch biến. Tính trực tiếp: a^(−1)=5, a^0=1, a²=1/25.
+Với 0&lt;a=1/5&lt;1, a^x nghịch biến. Tính trực tiếp: a^(−1)=5, a^0=1, a²=1/25.
 
 </details>
 
@@ -816,7 +816,7 @@ Giải (1/2)^x>(1/2)^2.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x<2.
+**Đáp án:** x&lt;2.
 
 Hàm cơ số 1/2 nghịch biến: đảo chiều khi so sánh số mũ.
 
@@ -874,7 +874,7 @@ Giải (1/3)^(2x−1)≤(1/3)^3.
 
 **Đáp án:** x≥2.
 
-Vì 0<1/3<1, đảo chiều số mũ: 2x−1≥3 ⇒ x≥2.
+Vì 0&lt;1/3&lt;1, đảo chiều số mũ: 2x−1≥3 ⇒ x≥2.
 
 </details>
 
@@ -886,9 +886,9 @@ Giải log_(1/4)(x−1)>log_(1/4)4.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1<x<5.
+**Đáp án:** 1&lt;x&lt;5.
 
-Điều kiện x>1; hàm log cơ số 1/4 giảm, nên 0<x−1<4 ⇒ 1<x<5.
+Điều kiện x>1; hàm log cơ số 1/4 giảm, nên 0&lt;x−1&lt;4 ⇒ 1&lt;x&lt;5.
 
 </details>
 
@@ -944,7 +944,7 @@ Giải (1/3)^(2x−1) ≥ (1/3)^(x+2) trên ℝ.
 
 **Đáp án:** S=(−∞,3].
 
-Vì 0<1/3<1, hàm mũ nghịch biến; bất phương trình tương đương 2x−1≤x+2 ⇒ x≤3. x=3 cho dấu bằng nên lấy mốc.
+Vì 0&lt;1/3&lt;1, hàm mũ nghịch biến; bất phương trình tương đương 2x−1≤x+2 ⇒ x≤3. x=3 cho dấu bằng nên lấy mốc.
 
 </details>
 
@@ -958,7 +958,7 @@ Giải log_(1/2)(x−1) ≤ log_(1/2)(5−x) trong ℝ.
 
 **Đáp án:** S=[3,5).
 
-Điều kiện x−1>0 và 5−x>0 ⇒ 1<x<5. Cơ số 1/2 làm log giảm, nên x−1≥5−x ⇒ x≥3. Lấy giao với miền: [3,5), 5 bị loại vì log 0 vô nghĩa.
+Điều kiện x−1>0 và 5−x>0 ⇒ 1&lt;x&lt;5. Cơ số 1/2 làm log giảm, nên x−1≥5−x ⇒ x≥3. Lấy giao với miền: [3,5), 5 bị loại vì log 0 vô nghĩa.
 
 </details>
 
@@ -972,7 +972,7 @@ Giải trong ℝ: log₂(x−2)+log₂(x+2)=3. Trình bày miền xác định t
 
 **Đáp án:** S={2√3}.
 
-Điều kiện x−2>0 và x+2>0 ⇒ x>2. Gộp log₂[(x−2)(x+2)]=3 ⇔ x²−4=8 ⇔ x²=12, được x=±2√3. Vì 2√3>2 còn −2√3<2, chỉ nhận 2√3. Thử (2√3−2)(2√3+2)=8 ⇒ tổng log=3.
+Điều kiện x−2>0 và x+2>0 ⇒ x>2. Gộp log₂[(x−2)(x+2)]=3 ⇔ x²−4=8 ⇔ x²=12, được x=±2√3. Vì 2√3>2 còn −2√3&lt;2, chỉ nhận 2√3. Thử (2√3−2)(2√3+2)=8 ⇒ tổng log=3.
 
 **Rubric tự đối chiếu:**
 
@@ -1020,7 +1020,7 @@ Giải log₃(x−4)=log₃(2−x) trên ℝ.
 
 **Đáp án:** Vô nghiệm.
 
-Điều kiện x−4>0 tức x>4 và 2−x>0 tức x<2 đồng thời; bất khả. Không giải x−4=2−x rồi nhận x=3.
+Điều kiện x−4>0 tức x>4 và 2−x>0 tức x&lt;2 đồng thời; bất khả. Không giải x−4=2−x rồi nhận x=3.
 
 </details>
 
@@ -1079,14 +1079,14 @@ P(n)=200(1,08)^n triệu; P(3)=200·1,259712=251,9424 triệu. Lãi đơn sau 3 
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-(a) Điều kiện x>1, x<7; x−1=7−x ⇒ x=4 hợp lệ. (b) Điều kiện x+1>0 ⇒ x>−1. Do log cơ số 1/2 nghịch biến, x+1≤4 ⇒ x≤3, kết hợp −1<x≤3.
+(a) Điều kiện x>1, x&lt;7; x−1=7−x ⇒ x=4 hợp lệ. (b) Điều kiện x+1>0 ⇒ x>−1. Do log cơ số 1/2 nghịch biến, x+1≤4 ⇒ x≤3, kết hợp −1&lt;x≤3.
 
 **Rubric 4 điểm:**
 
 1. Viết đủ miền (1,7) ý a, tìm nghiệm x=4 — **1 điểm**.
 2. Kiểm x=4 hợp lệ và giải thích tính đơn ánh — **1 điểm**.
 3. Viết điều kiện x>−1 và lý do đảo chiều ý b — **1 điểm**.
-4. Kết luận −1<x≤3 không lấy x=−1 — **1 điểm**.
+4. Kết luận −1&lt;x≤3 không lấy x=−1 — **1 điểm**.
 
 </details>
 
@@ -1133,7 +1133,7 @@ Giải log₂(x²−1)=log₂(3x+3), bắt buộc ghi miền hai đối số tr�
 
 **Đáp án:** S={4}.
 
-ĐK x²−1>0 (x<−1 hoặc x>1) và 3x+3>0 (x>−1), giao là x>1. Vì log₂ đơn ánh, x²−1=3x+3 ⇒ x²−3x−4=(x−4)(x+1)=0. Chỉ x=4 hợp miền, kiểm log₂15=log₂15.
+ĐK x²−1>0 (x&lt;−1 hoặc x>1) và 3x+3>0 (x>−1), giao là x>1. Vì log₂ đơn ánh, x²−1=3x+3 ⇒ x²−3x−4=(x−4)(x+1)=0. Chỉ x=4 hợp miền, kiểm log₂15=log₂15.
 
 </details>
 
@@ -1147,7 +1147,7 @@ Một khoản vốn giả định 100 triệu đồng tăng 8% mỗi năm, nhậ
 
 **Đáp án:** Năm đầu tiên là n=3; n=2 có 116,64 triệu, n=3 có 125,9712 triệu.
 
-P(n)=100·(1,08)^n triệu. Cần (1,08)^n>1,25 ⇒ n>ln(1,25)/ln(1,08)≈2,8994 vì ln(1,08)>0. Do n nguyên không âm, nhỏ nhất n=3. Kiểm P(2)=100·1,1664=116,64<125, P(3)=100·1,259712=125,9712>125. Mô hình cố định 8%, bỏ qua phí/rủi ro.
+P(n)=100·(1,08)^n triệu. Cần (1,08)^n>1,25 ⇒ n>ln(1,25)/ln(1,08)≈2,8994 vì ln(1,08)>0. Do n nguyên không âm, nhỏ nhất n=3. Kiểm P(2)=100·1,1664=116,64&lt;125, P(3)=100·1,259712=125,9712>125. Mô hình cố định 8%, bỏ qua phí/rủi ro.
 
 **Rubric tự đối chiếu:**
 
