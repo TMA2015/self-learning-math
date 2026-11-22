@@ -110,6 +110,34 @@
 
         **Tự sửa:** Tách **hình gốc** và **hình biểu diễn**, nêu các bất biến đúng điều kiện. Ôn mục 2.3 và Ví dụ 3.5; luyện Practice B14-P04 trong <a href="../luyen-tap/">Luyện tập Bài 14</a>.
 
+    ### 1.6. Từ thiết diện song song đến hình chiếu của thiết diện
+
+    Trong một khối chóp, **thiết diện** được xác định bằng giao của một mặt phẳng với khối (Bài 10); muốn chứng minh mặt phẳng thiết diện song song đáy, ta dùng hai đường **cắt nhau** tương ứng song song (Bài 13). Sau đó mới chọn một **phương chiếu cắt mặt đáy tại một điểm duy nhất** (Bài 14). Đừng nhầm điểm giao của mặt cắt với đáy và ảnh của điểm khi chiếu: một thiết diện ở trên đáy vẫn có thể có ảnh nằm trong đáy.
+
+    **Vận dụng — Tự thử tích hợp Chương IV.** Cho tứ diện \(S.ABC\) (\(S\notin(ABC)\)), \(M,N,P\) lần lượt là trung điểm của \(SA,SB,SC\). (a) Chứng minh \((MNP)\parallel(ABC)\) bằng **hai** đường thẳng cắt nhau. (b) Chiếu song song theo phương \(SC\) xuống \((ABC)\), tìm ảnh \(M',N',P'\). (c) Tính tỉ số \(S_{M'N'P'}/S_{ABC}\). Hãy tự vẽ đường chiếu qua từng điểm trước khi mở Đối chiếu.
+
+    <span data-ped-first-try="6" data-outcome-id="G11-CHIV-INTEGRATED" data-thpt-first-try-id="THPT-G11-B14-TRY06" hidden></span>
+
+    ??? question "Đối chiếu — từ thiết diện đến hình chiếu"
+
+        **Bước 1 — chứng minh song song:** Trong tam giác \(SAB\), \(MN\parallel AB\); trong tam giác \(SAC\), \(MP\parallel AC\) theo định lí đường trung bình. \(MN\) và \(MP\) cắt nhau tại \(M\), trong khi \(AB,AC\) cắt nhau tại \(A\). Do đó \((MNP)\parallel(ABC)\).
+
+        **Bước 2 — tìm đúng ảnh:** Vì \(SC\) cắt \((ABC)\) tại đúng điểm \(C\), đây là phương chiếu hợp lệ. Đường qua \(M\) song song \(SC\) cắt \(AC\) tại **trung điểm** \(M'\) của \(AC\). Tương tự \(N'\) là trung điểm \(BC\). Vì \(P\in SC\), ảnh \(P'\) chính là \(C\), **không phải trung điểm của \(SC\)**.
+
+        **Bước 3 — đối chiếu tỉ số:** Tam giác \(CM'N'\) có \(CM'=CA/2\), \(CN'=CB/2\), \(M'N'\parallel AB\). Vì vậy \(S_{M'N'P'}/S_{ABC}=(1/2)^2=1/4\).
+
+        **Kiểm:** Cả ba đường chiếu song song \(SC\); các ảnh đều thuộc \((ABC)\), tam giác ảnh không suy biến vì \(A,B,C\) không thẳng hàng.
+
+    <span data-thpt-help-id="HELP-G11-B14-TRY06" hidden></span>
+
+    ??? tip "Kiểm lỗi — nhầm thiết diện với ảnh của thiết diện"
+
+        **Dấu hiệu:** Em cho \(M'=A,N'=B,P'=C\) dù chỉ chiếu theo phương \(SC\), hoặc tính tỉ số diện tích \(1/2\) từ tỉ số cạnh \(1/2\).
+
+        **Vì sao sai:** Phương chiếu là **một** phương chung, không phải ba cạnh \(SA,SB,SC\). Diện tích hai tam giác đồng dạng biến đổi theo **bình phương** tỉ số cạnh.
+
+        **Tự sửa:** Vẽ riêng hai tam giác \(SAC,SBC\) để tìm \(M',N'\); đánh dấu \(P'=C\). Ôn Bài 13 về hai mặt phẳng song song và tỉ số diện tích, Bài 14 về ảnh điểm, rồi tự làm lại và chuyển sang <a href="../luyen-tap/">Core B13/B14</a>. Thử thêm bài Written chuyển giao khác ở <a href="../../../../thu-vien/tu-luan-g11-chuong-iv/#thpt-g11-chiv-w-integrated">thư viện Tự luận Chương IV</a>.
+
 === "Kiến thức SGK"
 
     ### 2.1. Khái niệm phép chiếu song song
@@ -169,6 +197,15 @@
     <p><strong>Lời giải:</strong> Ta biết hai đường chéo gốc vuông góc **do định nghĩa/tính chất hình vuông**. Nếu chỉ biết ảnh là một hình bình hành mà không có giả thiết gốc vuông, thì **không thể** suy góc thật từ phép đo trên giấy. Phép chiếu song song không bảo toàn tổng quát góc.</p>
     <p><strong>Kiểm lại:</strong> Phân biệt rõ kết luận suy ra từ **giả thiết hình gốc** và kết luận suy ra từ **hình biểu diễn**.</p></div>
 
+    ### 3.6. Tích hợp lăng trụ, mặt phẳng song song và phép chiếu
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B14-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Trong lăng trụ tam giác \(ABC.A'B'C'\), \(M,N,P\) lần lượt là trung điểm \(AA',BB',CC'\). Chứng minh \((MNP)\parallel(ABC)\), rồi chiếu song song theo phương \(AA'\) lên đáy \((ABC)\) và xác định ảnh của tam giác \(MNP\).</p>
+    <p><strong>Vì sao chọn phương pháp:</strong> Đặc trưng lăng trụ là \(AA'\parallel BB'\parallel CC'\) và hai đáy song song. Mặt cắt qua cùng tỉ lệ trên ba cạnh bên được chứng minh song song đáy; **sau đó** mới dùng hướng cạnh bên làm phương chiếu, vì phương này cắt đáy tại đúng một điểm.</p>
+    <p><strong>Lời giải:</strong> Trong các hình bình hành \(ABB'A'\), \(ACC'A'\), đoạn nối hai trung điểm các cạnh bên tương ứng cho \(MN\parallel AB\) và \(MP\parallel AC\). Vì hai đường \(MN,MP\) cắt nhau tại \(M\) và \(AB,AC\) cắt nhau tại \(A\), suy ra \((MNP)\parallel(ABC)\). Chiếu theo hướng \(AA'\), do ba cạnh bên lăng trụ song song, đường qua \(M,N,P\) lần lượt cắt mặt \((ABC)\) ở \(A,B,C\). Vậy tam giác ảnh là **\(ABC\)**, không co thành điểm; tỉ số diện tích tam giác ảnh so với đáy bằng \(1\).</p>
+    <p><strong>Kiểm lại điều kiện:</strong> Cạnh bên \(AA'\) không nằm trong và không song song với mặt \((ABC)\), vì \(A'\) ngoài đáy. Ba ảnh phân biệt, nên phép chiếu không làm tam giác suy biến. Kết quả khác bài hình chóp: không được áp dụng máy móc tỉ số \(1/4\).</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G11-B14-01" hidden></span>
@@ -210,6 +247,16 @@
         **Vì sao sai:** Ảnh đoạn AA' chỉ là điểm A; không có tỉ số hai độ dài dương trong ảnh để áp dụng.
 
         **Tự sửa:** Kiểm ảnh đoạn **không co** trước; ôn mục 2.2 và Ví dụ 3.3, luyện Core B14-C02.
+
+    <span data-thpt-help-id="HELP-G11-B14-INTEGRATED" hidden></span>
+
+    ??? tip "4.5. Chứng minh thiết diện song song rồi bỏ qua phương chiếu"
+
+        **Dấu hiệu:** Em chứng minh mặt cắt song song đáy và cho rằng ảnh các đỉnh tự động là các đỉnh đáy, hoặc lấy tỉ số cạnh làm tỉ số diện tích.
+
+        **Vì sao sai:** Phương chiếu và vị trí giao của từng đường chiếu mới quyết định điểm ảnh; tỉ số diện tích của tam giác đồng dạng là bình phương tỉ số cạnh, nhưng phép chiếu bất kì không bảo toàn diện tích.
+
+        **Tự sửa:** Đầu tiên chứng minh \(MN\parallel AB\), \(MP\parallel AC\); sau đó dựng **từng** đường chiếu, xác định ba ảnh có phân biệt hay không. Ôn §1.6 và Ví dụ 3.6, luyện Bài 13–14 ở <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-iv/">Tự luận Chương IV</a>.
 
