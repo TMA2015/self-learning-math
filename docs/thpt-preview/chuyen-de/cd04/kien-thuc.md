@@ -13,7 +13,7 @@ hide:
 </nav>
 <p class="topic-w1-back"><a href="../../">← Tổng quan các Chuyên đề</a></p>
 
-<p class="thpt-r4-lead topic-w1-source-intro">Từ một số vốn nhân lên nhiều lần, em học cách biểu diễn **giá trị** bằng lũy thừa rồi đặt câu hỏi ngược: **số mũ nào** cho giá trị đó? Câu hỏi này dẫn tới lôgarit. Khi xét đồ thị và giải phương trình, điều kiện cơ số và đối số giúp biết phép biến đổi nào thực sự hợp lệ. Kết thúc bài, em sẽ tự chọn số kỳ nguyên trong một mô hình tăng hoặc giảm theo tỉ lệ.</p>
+<p class="thpt-r4-lead topic-w1-source-intro">Từ một số vốn nhân lên nhiều lần, em học cách biểu diễn <strong>giá trị</strong> bằng lũy thừa rồi đặt câu hỏi ngược: <strong>số mũ nào</strong> cho giá trị đó? Câu hỏi này dẫn tới lôgarit. Khi xét đồ thị và giải phương trình, điều kiện cơ số và đối số giúp biết phép biến đổi nào thực sự hợp lệ. Kết thúc bài, em sẽ tự chọn số kỳ nguyên trong một mô hình tăng hoặc giảm theo tỉ lệ.</p>
 </div>
 <link rel="stylesheet" href="../../../../assets/stylesheets/thpt-topic-w1-golden-v1.css">
 <script src="../../../../assets/javascripts/thpt-topic-w1-golden-v1.js" defer></script>
