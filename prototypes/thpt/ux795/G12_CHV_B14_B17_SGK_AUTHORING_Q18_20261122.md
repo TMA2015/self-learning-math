@@ -1,5 +1,7 @@
 # G12 SGK KNTT Tập Hai · Chương V B14–B17 · AUTHORING Q18 scoped receipt · 22/11/2026
 
+> **LATEST DELTA CHECKPOINT — 22/11/2026, B17-O06 Q15 AUTHORING:** This document has an immutable preceding R02 baseline (detailed sections below) and the current source-locked addendum appended at the end. **CURRENT authoritative candidate** B17 learner blob `ce6a4ff6458ba1f2d929134935e494214e3b32d5`, 100-item canonical bank blob `622308c8f7293d576e8690db4741ddfe7ad882c8`; old B17 `d486451936944e8653ed566543be14b7264fade7` and bank `bb1a65808a899301475165944380aa3bfa51c26b` remain historical snapshot only. B17-O06 geography/short-great-circle mandatory outcome now has four canonical roles and a same-outcome D6. **NOT CONTENT_READY, NOT RELEASE/INTEGRATION SAFE:** unmodified JS d4fa6a68cebf072aa963141a5d8b78fe48c0cceb still requires 96 items, 24 help, 24 END placements and labels 23 mandatory; new bank is 100/25/25, so runtime is deliberately fail-closed pending RELEASE authorization and exact-head QA. No Mastery, Firebase, RD1 or Final Submit changes.
+
 MASTER_TASK: #987 only
 STANDARD: SLM-THPT-QUALITY-ONE v3.2.0 · 488afe2908e0b471320e1d55f775391578d88bba
 BRANCH: authoring/sgk-g12-chv-b14-b17-r02-20261122
@@ -96,3 +98,24 @@ SGK p45 definition and p46 EX8 explicitly allow perpendicular and skew. /5 total
  
 ## Open gates
 SBT p25 not located; targeted independent Delta C review especially W05 and new O06; dedicated bank/Written depth for new transfer including O06; provenance lock reconciliation; V2/ready/REGISTER not attested. No independent Academic/PED PASS, browser/CI/real-device AP, release, or CONTENT_READY. Next G12 ChVI B18–B19; one MASTER #987.
+
+
+## Latest academic Delta-C addendum — B17-O06 canonical coverage (22/11/2026)
+
+**Scope:** Source-only supplement on the existing #1008 authoring branch. S1: original SGK Toán 12 KNTT Tập Hai, printed p57–58, PDF1 59–60 verified by direct image inspection, custody SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`. SGK p57 sets Oxyz axes and vĩ độ/kinh độ and normalized sphere, p58 computes great-circle short distance using central angle; correctly **no absolute value** for radial dot and θ must be in radians for s=6371θ. No independent reviewer verdict. SBT p25 blocker of earlier ChV remains unresolved and is not misrepresented as closed by this scope.
+
+| Edited canonical resource | Previous R02 blob | Current blob |
+|---|---|---|
+| B17 learner | `d486451936944e8653ed566543be14b7264fade7` | `ce6a4ff6458ba1f2d929134935e494214e3b32d5` |
+| Public Chapter V bank | `bb1a65808a899301475165944380aa3bfa51c26b` | `622308c8f7293d576e8690db4741ddfe7ad882c8` |
+| Chapter V JS *unchanged* | `d4fa6a68cebf072aa963141a5d8b78fe48c0cceb` | `d4fa6a68cebf072aa963141a5d8b78fe48c0cceb` |
+
+**Q15 outcome-role matrix:** exactly one canonical `item_id` each for B17-O06: `THPT-G12-B17-C06` (CORE), `THPT-G12-B17-P06` (SGK_PRACTICE), `THPT-G12-B17-A06` (SGK_APPLICATION), `THPT-G12-B17-W06` (SGK_WRITTEN); 1 five-step D6 `HELP-G12-B17-06` with canonical `return_item=THPT-G12-B17-C06`, `practice_item=THPT-G12-B17-P06`, and public END reference `END-CHV-17-06 → THPT-G12-B17-A06`. All 96 prior item records/answers/solutions/rubrics preserved as parsed JSON, no duplicates. New bank: 100 unique item IDs, 25 each of Core/Practice/Application/Written; 25 five-step HELP, 25 END references, 24 mandatory outcomes +1 original optional after B17, 4 optional item records unchanged. The new item is public formative only; END reuses A06, no independent/held-out readiness.
+
+**Depth:** Core uses Northern latitude and Western longitude signs; Practice uses two non-equatorial positions and avoids mistaking a small-circle latitude path for great-circle distance; Application compares signed obtuse central-angle surface arc and 3D chord, naming the limitation of each; Written combines opposite latitude/longitude signs, unit coordinate proof, exact dot −5/8, arccos negative value and radian conversion with five separately graded points. `HELP-G12-B17-06` includes a distinct antipodal mini-repair with `dot=-1, θ=π` and a return/practice loop. B17 FirstTry 06–07 plus the Lỗi tab now link to **same-outcome** C06/P06 rather than unrelated spherical-equation C01.
+
+**Math QA:** 16/16 independent JS recomputations: C06 (0,−√3/2,1/2); P06 dot=1/2, θ=π/3, 6671.7 km; A06 dot=−√2/2, θ=3π/4, surface 15011.3 km > chord 11772.1 km; W06 P=(√3/4,3/4,1/2), Q=(√3/4,−3/4,−1/2), both norm 1, dot=−5/8, θ≈128.6822°, s≈14308.8 km; D6 antipodes θ=π. Five Written rubric point units counted. 18/18 canonical/link/optional/role/status assertions, no changes to older 96 answers or options. QA is targeted source/math/learner-flow reasoning, not independent NotebookLM, full B14–B17 PED, SVG/browser or CI.
+
+**Hard runtime blocker / RELEASE handoff:** Existing `docs/assets/javascripts/thpt-g12-chv-b14-b17-r01.js` has explicit bank count guards `96/24/24`, four role counts 24 each and public END labels `23 main+1 optional / 24 total`; new academic bank is `100/25/25`, 25 per role, `24 main+1 optional`. The authoring lane **does not touch this JS or published UI**. RELEASE must reconcile guards, source/receipt lock and labels based on the approved final bank **only after academic Q18 and V2/ready/REGISTER handoff**, then perform Q16 Final Submit and AP/CI tests at actual HEAD, subject to owner release permission. Current source bundle intentionally **NOT CONTENT_READY / NOT INTEGRATION_READY**; if the bank were loaded with unchanged JS it would fail closed. This blocker is explicit, not a claimed successful feature.
+
+**Remaining:** SBT printed p25 not located (B14/B15 source coverage); independent review of B15-W05 rubric and B17-O06 academic transfer if owner requests or self-QA insufficient; chapter-wide transfer and rubric depth still requires verification; historical source/receipt locks and V2/ready/REGISTER not yet finalized. Snapshot-level previous 96-item source QA remains historical evidence, not an active 100-item QA claim.
