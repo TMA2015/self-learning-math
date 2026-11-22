@@ -144,27 +144,27 @@
 
     ### 3.1. Phân biệt hàm mũ và lũy thừa của biến
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Trong \(y=7^x\) và \(y=x^7\), đâu là hàm số mũ? Nêu miền và tập giá trị của hàm mũ.</p><p><strong>Phân tích:</strong> Cơ số cố định, biến ở số mũ mới là hàm mũ.</p><p><strong>Lời giải:</strong> \(y=7^x\) là hàm mũ, xác định trên \(\mathbb R\), nhận mọi giá trị dương; tăng và đi qua (0;1),(1;7). \(x^7\) là hàm lũy thừa của biến.</p><p><strong>Kiểm lại:</strong> x^7 có thể âm, nên không gán tập giá trị dương của hàm mũ cho nó.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-01"><p><strong>Đề bài:</strong> Trong \(y=7^x\) và \(y=x^7\), đâu là hàm số mũ? Nêu miền và tập giá trị của hàm mũ.</p><p><strong>Phân tích:</strong> Cơ số cố định, biến ở số mũ mới là hàm mũ.</p><p><strong>Lời giải:</strong> \(y=7^x\) là hàm mũ, xác định trên \(\mathbb R\), nhận mọi giá trị dương; tăng và đi qua (0;1),(1;7). \(x^7\) là hàm lũy thừa của biến.</p><p><strong>Kiểm lại:</strong> x^7 có thể âm, nên không gán tập giá trị dương của hàm mũ cho nó.</p></div>
 
     ### 3.2. Lập điểm để vẽ một hàm mũ giảm
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Phác đồ thị \(y=(1/4)^x\) bằng năm điểm ứng với x=-2,-1,0,1,2.</p><p><strong>Phân tích:</strong> Tính giá trị, xác định chiều trước khi vẽ.</p><p><strong>Lời giải:</strong> Các tung độ là \(16,4,1,1/4,1/16\). Đồ thị đi qua năm điểm đó, là đường liên tục giảm, ở trên trục hoành và tiến sát trục hoành về bên phải.</p><p><strong>Kiểm lại:</strong> Kiểm điểm (0;1) và mỗi bước sang phải chia 4; hai đầu không tự nối thẳng.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-02"><p><strong>Đề bài:</strong> Phác đồ thị \(y=(1/4)^x\) bằng năm điểm ứng với x=-2,-1,0,1,2.</p><p><strong>Phân tích:</strong> Tính giá trị, xác định chiều trước khi vẽ.</p><p><strong>Lời giải:</strong> Các tung độ là \(16,4,1,1/4,1/16\). Đồ thị đi qua năm điểm đó, là đường liên tục giảm, ở trên trục hoành và tiến sát trục hoành về bên phải.</p><p><strong>Kiểm lại:</strong> Kiểm điểm (0;1) và mỗi bước sang phải chia 4; hai đầu không tự nối thẳng.</p></div>
 
     ### 3.3. Tìm miền xác định có căn và logarit
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tìm miền xác định của \(y=\ln(16-x^2)\).</p><p><strong>Phân tích:</strong> Logarit tự nhiên có cơ số e hợp lệ; đối số phải thật sự dương.</p><p><strong>Lời giải:</strong> \(16-x^2\gt 0\) tương đương \(-4\lt x\lt 4\), nên \(D=(-4,4)\).</p><p><strong>Kiểm lại:</strong> Không lấy ±4 vì tại đó đối số bằng 0.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-03"><p><strong>Đề bài:</strong> Tìm miền xác định của \(y=\ln(16-x^2)\).</p><p><strong>Phân tích:</strong> Logarit tự nhiên có cơ số e hợp lệ; đối số phải thật sự dương.</p><p><strong>Lời giải:</strong> \(16-x^2\gt 0\) tương đương \(-4\lt x\lt 4\), nên \(D=(-4,4)\).</p><p><strong>Kiểm lại:</strong> Không lấy ±4 vì tại đó đối số bằng 0.</p></div>
 
     ### 3.4. Lập điểm để vẽ một hàm logarit giảm
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Phác đồ thị \(y=\log_{1/4}x\) từ các đầu vào \(1/16,1/4,1,4,16\).</p><p><strong>Phân tích:</strong> Viết từng đầu vào là lũy thừa của 1/4.</p><p><strong>Lời giải:</strong> Các giá trị lần lượt \(2,1,0,-1,-2\). Đồ thị liên tục giảm trên x>0, qua (1;0),(1/4;1); tiến sát trục tung khi x tiến về 0 từ bên phải.</p><p><strong>Kiểm lại:</strong> Không vẽ điểm ở x=0 hoặc x âm.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-04"><p><strong>Đề bài:</strong> Phác đồ thị \(y=\log_{1/4}x\) từ các đầu vào \(1/16,1/4,1,4,16\).</p><p><strong>Phân tích:</strong> Viết từng đầu vào là lũy thừa của 1/4.</p><p><strong>Lời giải:</strong> Các giá trị lần lượt \(2,1,0,-1,-2\). Đồ thị liên tục giảm trên x>0, qua (1;0),(1/4;1); tiến sát trục tung khi x tiến về 0 từ bên phải.</p><p><strong>Kiểm lại:</strong> Không vẽ điểm ở x=0 hoặc x âm.</p></div>
 
     ### 3.5. Đọc quan hệ ngược
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Đồ thị \(y=4^x\) có điểm \((3/2;8)\). Hãy tìm điểm trên đồ thị \(y=\log_4x\).</p><p><strong>Phân tích:</strong> Hoán đổi hai vai trò, không lấy nghịch đảo tọa độ.</p><p><strong>Lời giải:</strong> \(4^{3/2}=8\) nên \(\log_4 8=3/2\); điểm cần tìm là \((8;3/2)\).</p><p><strong>Kiểm lại:</strong> Hai điểm đối xứng qua y=x.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-05"><p><strong>Đề bài:</strong> Đồ thị \(y=4^x\) có điểm \((3/2;8)\). Hãy tìm điểm trên đồ thị \(y=\log_4x\).</p><p><strong>Phân tích:</strong> Hoán đổi hai vai trò, không lấy nghịch đảo tọa độ.</p><p><strong>Lời giải:</strong> \(4^{3/2}=8\) nên \(\log_4 8=3/2\); điểm cần tìm là \((8;3/2)\).</p><p><strong>Kiểm lại:</strong> Hai điểm đối xứng qua y=x.</p></div>
 
     ### 3.6. Mô hình suy giảm và thời điểm đạt một mức
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Khối lượng một chất theo mô hình \(Q(t)=160(1/2)^{t/6}\) gam, \(t\ge0\) tính bằng giờ. Tính Q(12), rồi tìm t khi Q(t)=20.</p><p><strong>Phân tích:</strong> Số mũ t/6 là số chu kỳ bán rã; dùng mũ để tính lượng và logarit để tìm thời gian.</p><p><strong>Lời giải:</strong> \(Q(12)=160/4=40\) gam. Khi \(Q(t)=20\), \((1/2)^{t/6}=1/8=(1/2)^3\), vậy \(t=18\) giờ.</p><p><strong>Kiểm lại:</strong> Q giảm nghiêm ngặt nên chỉ có một thời điểm này trên miền mô hình.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B20-R02-06"><p><strong>Đề bài:</strong> Khối lượng một chất theo mô hình \(Q(t)=160(1/2)^{t/6}\) gam, \(t\ge0\) tính bằng giờ. Tính Q(12), rồi tìm t khi Q(t)=20.</p><p><strong>Phân tích:</strong> Số mũ t/6 là số chu kỳ bán rã; dùng mũ để tính lượng và logarit để tìm thời gian.</p><p><strong>Lời giải:</strong> \(Q(12)=160/4=40\) gam. Khi \(Q(t)=20\), \((1/2)^{t/6}=1/8=(1/2)^3\), vậy \(t=18\) giờ.</p><p><strong>Kiểm lại:</strong> Q giảm nghiêm ngặt nên chỉ có một thời điểm này trên miền mô hình.</p></div>
 
 === "Lỗi thường gặp"
 
