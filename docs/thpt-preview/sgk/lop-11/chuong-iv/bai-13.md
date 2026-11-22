@@ -28,7 +28,7 @@
 
         **Dấu hiệu:** Em vẫn ghi \((P)\parallel(Q)\) dù đã thấy hai điểm chung.
 
-        **Tự sửa:** Kiểm ngay điều kiện **không có điểm chung**; ôn mục 2.1 và luyện Core B13-C01 trong [Bài 13 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Kiểm ngay điều kiện **không có điểm chung**; ôn mục 2.1 và luyện Core B13-C01 trong <a href="../luyen-tap/">Bài 13 – Luyện tập</a>.
 
     ### 1.2. Vì sao phải dùng hai đường cắt nhau?
 
@@ -48,7 +48,7 @@
 
         **Dấu hiệu:** Em chỉ chứng minh MN∥AB rồi kết luận cả mặt cắt song song đáy.
 
-        **Tự sửa:** Tìm **thêm MK∥AC** và nêu MN,MK cắt nhau tại M. Ôn mục 2.2, luyện Core B13-C02 và Practice B13-P02 tại [Bài 13 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Tìm **thêm MK∥AC** và nêu MN,MK cắt nhau tại M. Ôn mục 2.2, luyện Core B13-C02 và Practice B13-P02 tại <a href="../luyen-tap/">Bài 13 – Luyện tập</a>.
 
     ### 1.3. Hai mặt song song bị một mặt cắt sẽ cho hai giao tuyến song song
 
@@ -68,7 +68,7 @@
 
         **Dấu hiệu:** Em gọi hai giao tuyến chéo nhau dù đã biết cùng thuộc R.
 
-        **Tự sửa:** Đưa cả hai giao tuyến về **mặt phẳng thứ ba R**, rồi xét giao điểm. Ôn mục 2.3 và luyện Practice B13-P01 tại [Luyện tập Bài 13](../luyen-tap/).
+        **Tự sửa:** Đưa cả hai giao tuyến về **mặt phẳng thứ ba R**, rồi xét giao điểm. Ôn mục 2.3 và luyện Practice B13-P01 tại <a href="../luyen-tap/">Luyện tập Bài 13</a>.
 
     ### 1.4. Thalès trong không gian: ba mặt song song chắn tỉ số trên hai cát tuyến
 
@@ -92,7 +92,7 @@
 
         **Dấu hiệu:** Em cho \(B'C'=9\) vì nghĩ ba mặt song song giữ nguyên mọi độ dài.
 
-        **Tự sửa:** Viết **hai tỉ số tương ứng** trước, kiểm thứ tự cát tuyến; ôn mục 2.4 rồi luyện ứng dụng tỉ số với các mặt cắt song song ở [Core và Luyện tập Bài 13](../luyen-tap/).
+        **Tự sửa:** Viết **hai tỉ số tương ứng** trước, kiểm thứ tự cát tuyến; ôn mục 2.4 rồi luyện ứng dụng tỉ số với các mặt cắt song song ở <a href="../luyen-tap/">Core và Luyện tập Bài 13</a>.
 
     ### 1.5. Thiết diện song song đáy của hình chóp có tỉ số đồng dạng
 
@@ -117,7 +117,7 @@
 
         **Dấu hiệu:** Em ghi diện tích cũng bằng \(3/5\) diện tích đáy.
 
-        **Tự sửa:** Với tam giác đồng dạng, **chu vi tỉ lệ \(t\), diện tích tỉ lệ \(t^2\)**. Ôn mục 2.4 và Ví dụ 3.4; luyện Practice B13-P04 trong [Bài 13 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Với tam giác đồng dạng, **chu vi tỉ lệ \(t\), diện tích tỉ lệ \(t^2\)**. Ôn mục 2.4 và Ví dụ 3.4; luyện Practice B13-P04 trong <a href="../luyen-tap/">Bài 13 – Luyện tập</a>.
 
     ### 1.6. Hình lăng trụ, hình hộp và những mặt tương ứng
 
@@ -137,7 +137,7 @@
 
         **Dấu hiệu:** Em chỉ vẽ hai hình tam giác giống nhau rồi khẳng định mọi cạnh nhìn thấy dài bằng nhau.
 
-        **Tự sửa:** Dùng định nghĩa/cấu tạo **đáy song song và cạnh bên cùng hướng**, sau đó nhận diện mặt bên bình hành. Ôn mục 2.5, luyện Practice về lăng trụ/hình hộp ở [Luyện tập Bài 13](../luyen-tap/).
+        **Tự sửa:** Dùng định nghĩa/cấu tạo **đáy song song và cạnh bên cùng hướng**, sau đó nhận diện mặt bên bình hành. Ôn mục 2.5, luyện Practice về lăng trụ/hình hộp ở <a href="../luyen-tap/">Luyện tập Bài 13</a>.
 
 === "Kiến thức SGK"
 
@@ -227,7 +227,7 @@
 
         **Vì sao sai:** Cần **hai đường cắt nhau trong mặt đang xét**, mỗi đường song song mặt kia.
 
-        **Tự sửa:** Ôn mục 2.2 và Ví dụ 3.2, luyện Core B13-C02/Practice B13-P02 tại [Bài 13 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2 và Ví dụ 3.2, luyện Core B13-C02/Practice B13-P02 tại <a href="../luyen-tap/">Bài 13 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B13-02" hidden></span>
 
@@ -247,7 +247,7 @@
 
         **Vì sao sai:** Thalès cho **tỉ số các đoạn tương ứng**, không khẳng định độ dài từng đoạn trên hai cát tuyến bằng nhau.
 
-        **Tự sửa:** Ôn mục 2.3 và Ví dụ 3.3, lập bảng tỉ số; thử lại một bài tỉ số ở [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.3 và Ví dụ 3.3, lập bảng tỉ số; thử lại một bài tỉ số ở <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B13-04" hidden></span>
 
@@ -257,8 +257,8 @@
 
         **Vì sao sai:** Diện tích của tam giác đồng dạng biến đổi theo **bình phương** hệ số cạnh.
 
-        **Tự sửa:** Ôn mục 2.3, Ví dụ 3.4, luyện Practice B13-P04 tại [Bài 13 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.3, Ví dụ 3.4, luyện Practice B13-P04 tại <a href="../luyen-tap/">Bài 13 – Luyện tập</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương IV](../../../../thu-vien/tu-luan-g11-chuong-iv/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-iv/">Tự luận Chương IV</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 13 (trang in 88–94).</p>
