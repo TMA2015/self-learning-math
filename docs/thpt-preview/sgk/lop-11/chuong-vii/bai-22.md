@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Lấy luôn góc tù giữa hai tia.
 
-        **Tự sửa:** Lấy góc nhỏ trong hai góc bù. Ôn mục 2.1. [Luyện lại câu B22-C01](../luyen-tap/?item=THPT-G11-CHVII-B22-C01).
+        **Tự sửa:** Lấy góc nhỏ trong hai góc bù. Ôn mục 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C01">Luyện lại câu B22-C01</a>.
 
     ### 1.2. Vuông góc theo phương không bắt buộc giao nhau
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Đòi hai đường vuông góc phải cắt nhau.
 
-        **Tự sửa:** Dựng đường song song tới một điểm trên AC và dùng góc tại đó. [Luyện lại câu B22-C02](../luyen-tap/?item=THPT-G11-CHVII-B22-C02).
+        **Tự sửa:** Dựng đường song song tới một điểm trên AC và dùng góc tại đó. <a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C02">Luyện lại câu B22-C02</a>.
 
     ### 1.3. Thay một đường bằng đường cùng phương
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** So ngay góc ở hai cạnh khác mặt bằng mắt.
 
-        **Tự sửa:** Tìm cạnh tương ứng cùng phương rồi chỉ rõ tam giác chứa góc. [Luyện lại câu B22-C03](../luyen-tap/?item=THPT-G11-CHVII-B22-C03).
+        **Tự sửa:** Tìm cạnh tương ứng cùng phương rồi chỉ rõ tam giác chứa góc. <a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C03">Luyện lại câu B22-C03</a>.
 
     ### 1.4. Chứng minh thay vì đo hình phối cảnh
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Nhầm cạnh huyền với cạnh góc vuông.
 
-        **Tự sửa:** Chỉ đánh dấu vuông góc đúng đỉnh và dùng đường trung bình đúng tam giác. [Luyện lại câu B22-C04](../luyen-tap/?item=THPT-G11-CHVII-B22-C04).
+        **Tự sửa:** Chỉ đánh dấu vuông góc đúng đỉnh và dùng đường trung bình đúng tam giác. <a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C04">Luyện lại câu B22-C04</a>.
 
 === "Kiến thức SGK"
 
@@ -136,7 +136,7 @@
 
         **Vì sao sai:** Vuông góc là quan hệ góc giữa hai phương; đường chéo nhau vẫn có thể vuông góc.
 
-        **Tự sửa:** Dựng đường cùng phương qua một điểm và dùng định nghĩa 2.2. [Luyện lại câu B22-C02](../luyen-tap/?item=THPT-G11-CHVII-B22-C02).
+        **Tự sửa:** Dựng đường cùng phương qua một điểm và dùng định nghĩa 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C02">Luyện lại câu B22-C02</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVII-B22-02" hidden></span>
 
@@ -144,7 +144,7 @@
 
         **Vì sao sai:** Góc đường là góc không tù giữa hai đường cùng phương.
 
-        **Tự sửa:** Ôn 2.1, thử lấy góc bù của 156°. [Luyện lại câu B22-C01](../luyen-tap/?item=THPT-G11-CHVII-B22-C01).
+        **Tự sửa:** Ôn 2.1, thử lấy góc bù của 156°. <a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C01">Luyện lại câu B22-C01</a>.
 
     <span data-thpt-help-id="HELP-G11-B22-03" hidden></span>
 
@@ -152,7 +152,7 @@
 
         **Vì sao sai:** Hình biểu diễn không bảo toàn tổng quát góc.
 
-        **Tự sửa:** Dùng cạnh song song hoặc định lý hình phẳng, xem 3.1, 3.3. [Luyện lại câu B22-C03](../luyen-tap/?item=THPT-G11-CHVII-B22-C03).
+        **Tự sửa:** Dùng cạnh song song hoặc định lý hình phẳng, xem 3.1, 3.3. <a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C03">Luyện lại câu B22-C03</a>.
 
     <span data-thpt-help-id="HELP-G11-B22-04" hidden></span>
 
@@ -160,8 +160,8 @@
 
         **Vì sao sai:** Không có tính chất này trong không gian.
 
-        **Tự sửa:** Xem phản ví dụ 3.5 và kiểm cùng phương. [Luyện lại câu B22-P03](../luyen-tap/?item=THPT-G11-CHVII-B22-P03).
+        **Tự sửa:** Xem phản ví dụ 3.5 và kiểm cùng phương. <a href="../luyen-tap/?item=THPT-G11-CHVII-B22-P03">Luyện lại câu B22-P03</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VII](../../../../thu-vien/tu-luan-g11-chuong-vii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vii/">Tự luận Chương VII</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 22 (trang in 27–30).</p>
