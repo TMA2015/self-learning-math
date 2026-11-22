@@ -88,7 +88,7 @@
 
         **Dấu hiệu:** Em cho rằng hai mặt giao theo AB dù AB không thuộc mặt \((SCD)\).
 
-        **Tự sửa:** Chỉ rõ S là điểm chung, rồi xây dựng **đường qua S cùng phương** hai cạnh. Ôn mục 2.3, luyện bài giao tuyến liên quan cạnh song song trong <a href="../luyen-tap/">Core và Luyện tập Chương IV</a>.
+        **Tự sửa:** Chỉ rõ S là điểm chung, rồi xây dựng **đường qua S cùng phương** hai cạnh. Ôn mục 2.3, rồi làm câu <a href="../../../../thu-vien/tu-luan-g11-chuong-iv/#thpt-g11-chiv-b11-w03">Written B11-W03 về giao tuyến hai mặt qua điểm chung</a> (đề khác nhưng đúng outcome `G11-B11-INTERSECT_PLANES`). Sau khi tự giải mới mở rubric; có thể quay về <a href="../luyen-tap/">Core và Luyện tập Chương IV</a> để củng cố đường trung bình.
 
     ### 1.5. Đọc hình lăng trụ: song song khác chéo
 
