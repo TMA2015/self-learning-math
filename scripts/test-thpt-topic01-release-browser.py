@@ -39,12 +39,23 @@ with sync_playwright() as pw:
       expect(boxes).to_have_count(count)
       for box in boxes.all():
        assert box.evaluate("(e)=>getComputedStyle(e).backgroundColor")==color,(engine,width,role,box.evaluate("(e)=>getComputedStyle(e).backgroundColor"))
+     # Regression: approved set-difference equation must be genuine MathJax, never raw Markdown escape.
+     formula=p.locator('[data-topic01-callout="concept"]').filter(has_text="Hiệu giữ tập đứng trước")
+     expect(formula).to_have_count(1)
+     assert "[A\\setminus B=" not in formula.inner_text(),(engine,width,"raw set difference formula")
+     assert formula.locator(".arithmatex").count()>=2,(engine,width,"missing MathJax source")
+     # Compare disclosure CSS with the accepted SGK Golden: no default bright green panel.
      for tab in tabs.all():
+
       tab.click()
       active=p.locator("[data-topic01-module-panel]:visible")
       expect(active).to_have_count(1)
       for sub in active.locator("[data-topic01-subtab]").all():
        sub.click()
+       if active.locator("details.question:visible").count():
+        disclosure=active.locator("details.question:visible").first
+        assert disclosure.evaluate("(e)=>getComputedStyle(e).backgroundColor")=="rgb(248, 250, 255)",(engine,width,"SGK disclosure background")
+        assert disclosure.locator("summary").evaluate("(e)=>getComputedStyle(e).color")=="rgb(38, 62, 115)",(engine,width,"SGK disclosure summary")
        assert sub.evaluate("(e)=>getComputedStyle(e).fontSize")==("14px" if width<=640 else "15px")
        assert sub.evaluate("(e)=>e.getBoundingClientRect().height")==44
        assert p.evaluate("document.documentElement.scrollWidth<=innerWidth+1"),(engine,width,"viewport overflow")
@@ -70,10 +81,11 @@ with sync_playwright() as pw:
        buttons.nth(j).click()
        expect(modal.locator("[data-topic01-current-item]")).to_have_attribute("data-topic01-current-item",str(first+j))
        expect(modal.locator("details[open]")).to_have_count(0)
-       reveal=modal.locator(".thpt-r4-formative-submit")
-       expect(reveal).to_have_text("Đối chiếu")
-       reveal.click()
-       expect(modal.locator("details[open] .thpt-r4-formative-reveal")).to_be_visible()
+       expect(modal.locator(".thpt-r4-formative-submit")).to_have_count(0) # no duplicated action
+       detail=modal.locator(".thpt-r4-formative-actions details")
+       expect(detail).to_have_count(1)
+       detail.locator("summary").click()
+       expect(detail.locator(".thpt-r4-formative-reveal")).to_be_visible()
       modal.locator(".topic01-close").click()
       expect(modal).to_be_hidden()
     else:
