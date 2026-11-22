@@ -37,7 +37,7 @@ RELEASE_AUTHORIZATION: NO
 - [x] A1_SOURCE_SNAPSHOT — 13 existing source component original paths and exact Git blob SHA; original 4 Knowledge pages only, no parallel learner
 - [x] A2_SGK_SBT_SCOPE — Original SGK T2 114p and SBT T2 126p owner primary PDF direct page image receipt historic, SGK B18 4–9 B19 10–15 B20 16–19 B21 20–24; no new PDF visual rescan claim
 - [x] A3_NOTEBOOKLM_VERDICT — Legacy gate label: current effective v3.2.0 Q18 AUTHOR_SELF_VERIFIED; old independent PASS only historical old source; no new NotebookLM v2.1 review claim
-- [x] A4_ITEM_OUTCOME_IDS — 22 registered outcomes, 49 original canonical ID (41 C/P/Application +8 Written), 23 uns cored source FirstTry, 72 distinct item/outcome/role mappings
+- [x] A4_ITEM_OUTCOME_IDS — 22 registered outcomes, 49 original canonical ID (41 C/P/Application +8 Written), 23 unscored source FirstTry, 72 distinct item/outcome/role mappings
 - [x] A5_D1_D6_SCOPE — 4 four-tab Golden lessons with concepts before formulas, 28 four-step worked, four original SVG, 23 targeted HELP +16 old general HELP
 - [x] A6_DELTA_RESOLVED — B21 broken <= threshold mathematical TeX restored, 51 equivalent old links converted to semantic anchors, mathematical typography, no original bank answers changed
 - [x] A7_PUBLIC_PRIVATE_BOUNDARY — 22 owner-held private RD1 off GitHub; 20 public chapter-end reused exposure selfcheck cannot write official Readiness or Mastery
