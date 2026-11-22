@@ -65,3 +65,13 @@ body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowl
 body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question {color:#dce6fc;background:#202e48;border-color:#465978}
 body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary,
 body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::before {color:#e2ebff}
+
+/* CĐ01 FOUC guard — apply only during the initial Golden hydration.
+ * Inline bootstrap before the public source sets pending; successful runtime
+ * clears it. On missing/broken JS, DOMContentLoaded removes pending and exposes
+ * the source fallback (including 11 public prompts). No hidden academic data. */
+.topic01-boot-status{display:none;margin:12px 0 18px;padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;background:var(--md-code-bg-color);color:var(--md-default-fg-color);font-size:.8rem;line-height:1.5}
+html:is(.topic01-boot-pending-knowledge,.topic01-boot-pending-practice,.topic01-boot-pending-selfcheck,.topic01-boot-fallback-knowledge,.topic01-boot-fallback-practice,.topic01-boot-fallback-selfcheck) .topic01-boot-status{display:block}
+html.topic01-boot-pending-knowledge .md-typeset > p:has(> span[data-topic01-knowledge-start]) ~ *,
+html.topic01-boot-pending-practice .md-typeset > p:has(> span[data-topic01-practice-start]) ~ *,
+html.topic01-boot-pending-selfcheck .md-typeset > p:has(> span[data-topic01-selfcheck-start]) ~ *{display:none!important}
