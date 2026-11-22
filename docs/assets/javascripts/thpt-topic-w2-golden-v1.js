@@ -290,7 +290,59 @@ const start=article?.querySelector("[data-topic-w1-source-start]"),end=article?.
 if(!article||!start||!end||start.dataset.ready==="1")return;
 const first=start.closest("p")||start,last=end.closest("p")||end;
 const create=(tag,cls,value)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(value!==undefined)x.textContent=String(value);return x};
-const renderMath=node=>{const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
+/* OWNER P2 W2 hotfix: render presentation-only raw mathematical syntax.
+ * Traverse TEXT nodes rather than editing canonical learner content or innerHTML.
+ * Never rewrite already approved .arithmatex, item IDs, answer keys, or rubrics.
+ * This function is idempotent across tab/pager re-renders. */
+const normalizeRenderedMath=node=>{
+ if(!node)return;
+ const texts=[];
+ const walker=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);
+ while(walker.nextNode()){
+  const t=walker.currentNode,p=t.parentElement;
+  if(!p||p.closest(".arithmatex,mjx-container,code,pre,script,style,textarea,svg"))continue;
+  if(t.nodeValue.includes("^")||t.nodeValue.includes("\\operatorname{sđ}")||t.nodeValue.includes("\\lim("))texts.push(t);
+ }
+ // Python-Markdown stripped two verified blockquote display forms: CĐ06 Chasles
+ // and CĐ08 finite-limit theorem. Recover only these original TeX expressions.
+ const fragments=/\[\s*((?:\\operatorname\{sđ\}|\\lim\b)[^\]]+?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
+ for(const t of texts){
+  const v=t.nodeValue,parts=document.createDocumentFragment();let lastIndex=0,hit=false,match;
+  fragments.lastIndex=0;
+  while((match=fragments.exec(v))){
+   hit=true;
+   if(match.index>lastIndex)parts.append(document.createTextNode(v.slice(lastIndex,match.index)));
+   const math=create("span","arithmatex");
+   math.dataset.topicW2DisplayMath=match[1]?"recovered-display":"exponent";
+   math.textContent=match[1]?"\\["+match[1].trim()+"\\]":"\\("+match[0]+"\\)";
+   parts.append(math);lastIndex=fragments.lastIndex;
+  }
+  if(hit){if(lastIndex<v.length)parts.append(document.createTextNode(v.slice(lastIndex)));t.replaceWith(parts)}
+ }
+};
+const renderMath=node=>{normalizeRenderedMath(node);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
+/* Source SVGs remain byte-identical; only the rendered footprint is constrained.
+ * W2-only data attribute avoids changing accepted CĐ01/W1 and SGK images. */
+const capKnowledgeFigures=root=>{
+ const imgs=[...root.querySelectorAll("img[src*='THPT_TOPIC']")];
+ for(const img of imgs){
+  img.dataset.topicW2Figure="1";
+  // Existing MkDocs/Golden selectors can force images to full panel width.
+  // W2-only inline priority is intentional: measured browser size must win.
+  const unitCircle=img.src.includes("UNIT_CIRCLE_QUADRANTS");
+  img.style.setProperty("width",unitCircle?"min(100%,480px)":"min(100%,700px)","important");
+  img.style.setProperty("max-width","100%","important");
+  img.style.setProperty("height","auto","important");
+  img.style.setProperty("max-height",unitCircle?"430px":"450px","important");
+  img.style.setProperty("display","block","important");
+  img.style.setProperty("object-fit","contain","important");
+  img.style.setProperty("margin","1rem auto","important");
+ }
+ if(!imgs.length||document.getElementById("topic-w2-figure-cap"))return;
+ const sheet=create("style");sheet.id="topic-w2-figure-cap";
+ sheet.textContent="body.thpt-r4-topic-knowledge .topic-w1-knowledge .thpt-r4-knowledge-content-panel img[data-topic-w2-figure]{display:block;width:min(100%,700px);max-width:100%;height:auto;max-height:450px;object-fit:contain;margin:1rem auto}\nbody.thpt-r4-topic-knowledge .topic-w1-knowledge .thpt-r4-knowledge-content-panel img[data-topic-w2-figure][src*=\"UNIT_CIRCLE_QUADRANTS\"]{width:min(100%,480px);max-height:430px}\nbody.thpt-r4-topic-knowledge .topic-w1-knowledge .thpt-r4-knowledge-content-panel p:has(>img[data-topic-w2-figure]){margin:1rem auto;text-align:center}";
+ document.head.append(sheet);
+};
 const sourceNodes=()=>{const nodes=[];for(let n=first.nextSibling;n&&n!==last;n=n.nextSibling)nodes.push(n);return nodes};
 const ready=()=>{start.dataset.ready="1";document.documentElement.classList.remove("topic-w1-pending","topic-w1-fallback");document.documentElement.classList.add("topic-w1-ready")};
 const safeFallback=error=>{console.error("TOPIC_W1_GOLDEN_HOLD",topic,part,error);document.documentElement.classList.remove("topic-w1-pending");document.documentElement.classList.add("topic-w1-fallback");let status=document.querySelector(".topic-w1-boot-status");if(status)status.textContent="Giao diện tương tác chưa tải được. Nội dung học liệu gốc vẫn có thể đọc bên dưới."};
@@ -415,7 +467,7 @@ function initKnowledge(){
   }
   bind(subButtons,subPanels);
  }
- normalizeInlineStems(layout,/^Vận dụng$/);styleKnowledge(layout);bind(allButtons,allPanels);
+ normalizeInlineStems(layout,/^Vận dụng$/);styleKnowledge(layout);capKnowledgeFigures(layout);bind(allButtons,allPanels);
  if(layout.querySelectorAll("[data-topic-w1-callout]").length<expected.outcomes)throw Error("Missing formal semantic callouts");
  ready();
 }

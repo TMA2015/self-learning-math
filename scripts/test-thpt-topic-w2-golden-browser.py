@@ -179,6 +179,13 @@ with sync_playwright() as pw:
                                 engine, topic, width, "Golden Knowledge Đối chiếu",
                             )
                             assert d.locator("summary").evaluate("(e)=>getComputedStyle(e).color") == "rgb(38, 62, 115)"
+                        # Every visible W2 SVG must stay a supporting illustration, not a full-width poster.
+                        for fig in active.locator("img[data-topic-w2-figure]").all():
+                            bounds = fig.evaluate("""e => ({w:e.getBoundingClientRect().width,
+                                h:e.getBoundingClientRect().height,src:e.getAttribute('src')})""")
+                            assert 10 < bounds["w"] <= 701 and 10 < bounds["h"] <= 451, (
+                                engine, topic, width, "W2 figure exceeds reading footprint", bounds,
+                            )
                         width_info = page.evaluate("({scroll:document.documentElement.scrollWidth,inner:innerWidth})")
                         assert width_info["scroll"] <= width_info["inner"] + 1, (engine, topic, width, width_info)
                 assert disclosure_found, (engine, topic, "knowledge must include a voluntary solution")
@@ -206,6 +213,54 @@ with sync_playwright() as pw:
                 for img in imgs.all():
                     url = img.evaluate("(e)=>e.src")
                     assert page.request.get(url).ok, (topic, "broken SVG", url)
+                # OWNER P2 HOTFIX: figure footprint and MathJax across actual browser widths.
+                # These assert visible geometry/typesetting, not mere source hashes or counts.
+                assert imgs.count() == imgs.evaluate_all("els => els.filter(e => e.dataset.topicW2Figure === '1').length"), (topic, "W2 figure style marker")
+                if topic == "06":
+                    page.locator('[data-topic-w1-module-tab="1"]').click()
+                    page.locator('[data-topic-w1-subtab="1-1"]').click()
+                    chasles = page.locator('[data-topic-w1-callout="rule"]').filter(has_text="Hệ thức Chasles")
+                    expect(chasles).to_have_count(1)
+                    restored = chasles.locator('[data-topic-w2-display-math="recovered-display"]')
+                    expect(restored).to_have_count(1)
+                    expect(restored.locator("mjx-container").first).to_be_visible(timeout=20000)
+                    assert not chasles.evaluate(r"(e) => e.innerText.includes('\\operatorname')"), (
+                        engine, topic, width, "raw Chasles TeX escaped into visible text",
+                    )
+                    page.locator('[data-topic-w1-subtab="1-2"]').click()
+                    circle = page.locator('img[src*="THPT_TOPIC06_UNIT_CIRCLE_QUADRANTS"]')
+                    measured = circle.evaluate("""e => ({width:e.getBoundingClientRect().width,
+                        height:e.getBoundingClientRect().height})""")
+                    assert 150 < measured["width"] <= 481, (engine, topic, width, "oversized unit circle", measured)
+                    assert 80 < measured["height"] <= 431, (engine, topic, width, "oversized unit-circle height", measured)
+                    if width >= 820:
+                        # SVG 620 viewBox units, largest label 19 units -> ~15px when capped at 480.
+                        label_px = 19 * measured["width"] / 620
+                        assert 12 <= label_px <= 20, (topic, width, "SVG text not comparable to prose", label_px)
+                if topic == "08":
+                    page.locator('[data-topic-w1-module-tab="1"]').click()
+                    page.locator('[data-topic-w1-subtab="1-4"]').click()
+                    limits = page.locator('[data-topic-w1-callout="rule"]').filter(
+                        has_text="Phép toán với giới hạn hữu hạn của dãy số"
+                    )
+                    expect(limits).to_have_count(1)
+                    recovered = limits.locator('[data-topic-w2-display-math="recovered-display"]')
+                    expect(recovered).to_have_count(1)
+                    expect(recovered.locator("mjx-container").first).to_be_visible(timeout=20000)
+                    assert not limits.evaluate(r"(e) => e.innerText.includes('\\lim(')"), (
+                        engine, topic, width, "raw limit TeX escaped into visible text",
+                    )
+                if topic in ("09", "11"):
+                    module, sub = ("4", "4-6") if topic == "09" else ("1", "1-5")
+                    page.locator(f'[data-topic-w1-module-tab="{module}"]').click()
+                    page.locator(f'[data-topic-w1-subtab="{sub}"]').click()
+                    current = page.locator('.thpt-r4-knowledge-content-panel:visible')
+                    exp = current.locator('[data-topic-w2-display-math="exponent"]')
+                    assert exp.count() >= (2 if topic == "09" else 3), (engine, topic, width, "raw superscripts not normalized", exp.count())
+                    expect(exp.first.locator("mjx-container").first).to_be_visible(timeout=20000)
+                    assert not current.evaluate(r"(e) => /(?:e|a|x)\^\{/.test(e.innerText)"), (
+                        engine, topic, width, "visible unrendered superscript syntax",
+                    )
                 # Check dark role readability only on one representative per topic.
                 if width == 820:
                     page.locator("body").evaluate("(e)=>e.setAttribute('data-md-color-scheme','slate')")
