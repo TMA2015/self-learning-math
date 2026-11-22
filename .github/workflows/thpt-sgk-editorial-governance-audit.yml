@@ -1,6 +1,9 @@
 name: THPT SGK 79 Editorial Governance Inventory (no deploy)
 
 on:
+  # SGK-specific inventory only. Shared Q01–Q18 governance is validated by
+  # thpt-unified-content-standard-governance-qa.yml. Do not inventory 79 SGK
+  # lessons for Topic UI-only amendments to the shared standard.
   pull_request:
     paths:
       - "prototypes/thpt/standard-changes/STANDARD_CHANGE_REQUEST_SGK_79_FOUR_TAB_EDITORIAL_V31_20261112.md"
@@ -9,7 +12,6 @@ on:
       - "scripts/audit-thpt-sgk-79-editorial.cjs"
       - "scripts/test-thpt-sgk-four-tab-golden-contract.cjs"
       - "scripts/test-thpt-sgk-editorial-theme-preservation.cjs"
-      - "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md"
       - ".github/workflows/thpt-sgk-editorial-governance-audit.yml"
   workflow_dispatch:
 
