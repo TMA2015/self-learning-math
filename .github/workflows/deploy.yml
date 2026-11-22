@@ -414,7 +414,53 @@ jobs:
           set -euo pipefail
           git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/topic-w3-scope.txt"
           node scripts/test-thpt-release-impact.cjs --self-test
-          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/topic-w3-scope.txt" | grep -q '^impact=SCOPED_TOPIC_W3$'
+          env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/topic-w3-scope.txt" | grep -q '^impact=SCOPED_TOPIC_W3
+          node --check docs/assets/javascripts/thpt-topic-w3-golden-v1.js
+          git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
+          python3 scripts/test-thpt-topic-w3-source-locked.py
+      - name: Strict builds of the SAME THCS+THPT site and THPT preview
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+          node scripts/assemble-thpt-site.cjs
+      - name: Assert assembled public pages, Q18 receipts and source SVG assets
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          manifest=json.loads(Path("prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json").read_text(encoding="utf8"))
+          for n, rec in manifest["topics"].items():
+              for part in ("kien-thuc","luyen-tap","tu-kiem-tra"):
+                  page=Path(f"site/thpt-preview/chuyen-de/cd{n}/{part}/index.html")
+                  assert page.is_file(), f"Missing W3 production route {page}"
+                  data=page.read_text(encoding="utf8")
+                  assert rec["sourceBlob"] in data and rec["q18ReceiptBlob"] in data, f"Q18 mismatch {page}"
+                  assert "thpt-topic-w3-golden-v1.js" in data, f"Missing scoped adapter {page}"
+              for name in rec["svg"]:
+                  root="visuals" if name.startswith("FIG_G11_CHIV_B") else "images/thpt"
+                  assert Path("site/assets",root,name).is_file(), f"Missing original SVG {name}"
+          assert Path("site/assets/javascripts/thpt-topic-w3-golden-v1.js").is_file()
+          print("PASS 12/12 source-locked W3 public routes, Q18 receipts, SVG and adapter")
+          PY
+      - name: Validate W3-only Golden browser, MathJax/SVG/Q16 on Chromium and WebKit
+        run: |
+          python -m playwright install --with-deps chromium webkit
+          python scripts/test-thpt-topic-w3-golden-browser.py
+      - name: Confirm W3 public replay is never official RD1 or Mastery
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for n in ("12","13","14","15"):
+              page=Path(f"site/thpt-preview/chuyen-de/cd{n}/tu-kiem-tra/index.html")
+              html=page.read_text(encoding="utf-8")
+              assert "PUBLIC_REPLAY_ONLY" in html and "NO_MASTERY" in html
+              assert "thpt-topic-w3-golden-v1.js" in html
+          print("PASS four public-only replay modes; private RD1 remains outside W3 public release")
+          PY
+      - name: Publish verified ONE combined site to existing GitHub Pages
+        run: ghp-import -n -p -f site
+
           node --check docs/assets/javascripts/thpt-topic-w3-golden-v1.js
           git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
           python3 scripts/test-thpt-topic-w3-source-locked.py
