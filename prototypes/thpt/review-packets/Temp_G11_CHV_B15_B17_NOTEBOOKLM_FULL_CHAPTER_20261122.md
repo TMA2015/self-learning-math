@@ -4,7 +4,7 @@ PACKET_ID: Temp_G11_CHV_B15_B17_R04_INDEPENDENT_REVIEW_20261122
 ROLE: REVIEW_COPY_ONLY_NOT_LEARNER_CANONICAL
 CANONICAL_BRANCH: authoring/sgk-g11-chv-b15-b17-r02-20261122
 Q18_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHV_B15_B17_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
-Q18_RECEIPT_GIT_BLOB: dabd519988409821fd8752371024bb6b6e815285
+Q18_RECEIPT_GIT_BLOB: f64549651a45423068536dc540d9d15eb495b943
 SOURCE_KIND: NEW_DELTA_C_NOT_INDEPENDENTLY_REVIEWED
 PRIOR_R02_R03_PASS: HISTORICAL_BLOBS_ONLY
 RD1_EXPOSURE: NONE; NEVER INCLUDE PRIVATE_RD1
@@ -13,9 +13,9 @@ REVIEW_PROMPT_SENTENCES: 4
 ## Prompt gửi NotebookLM (4 câu)
 
 1. Chỉ sử dụng đúng **5 Permanent Sources THPT v2.1** hiện hành cùng SGK/SBT KNTT S1 làm chuẩn đối chiếu; không dùng lại Permanent Sources v2.0 hoặc coi file Temp là nguồn học thuật thẩm quyền.
-2. Phản biện **độc lập từng Bài 15, 16, 17 và từng outcome/FirstTry** theo một chuẩn Q01–Q18 (đặc biệt D1–D6, PED1–PED6), kiểm tính đúng đắn và điều kiện giới hạn, dấu tại vô cực, tính liên tục/IVT, cùng độ sâu tự học.
+2. Phản biện **độc lập từng Bài 15, 16, 17, câu Written tích hợp và từng outcome/FirstTry** theo một chuẩn Q01–Q18 (đặc biệt D1–D6, PED1–PED6), kiểm tính đúng đắn và điều kiện giới hạn, dấu tại vô cực, tính liên tục/IVT, cùng độ sâu tự học.
 3. Trả Academic/PED verdict riêng theo bài, nêu P0/P1/P2 bằng **ID, trích đúng đoạn, chứng cứ S1 trang in**, và `MINIMAL_DELTA` có thể sửa mà vẫn bảo toàn ngân hàng gốc.
-4. Ghi `SOURCE_RECEIPT` với **ba Git blob learner chính xác**, phân biệt đây là DELTA_C bản mới với R02/R03 PASS lịch sử và không tự cấp `CONTENT_READY` hay nghiệm thu RELEASE.
+4. Ghi `SOURCE_RECEIPT` với **ba Git blob learner và một blob thư viện Written chính xác**, phân biệt đây là DELTA_C bản mới với R02/R03 PASS lịch sử và không tự cấp `CONTENT_READY` hay nghiệm thu RELEASE.
 
 ## Khóa nguồn và phân định bản học liệu
 
@@ -23,7 +23,8 @@ REVIEW_PROMPT_SENTENCES: 4
 | --- | --- | --- |
 | B15 | `docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md` | `f4065659173d27ef3999f1b0ee42ff2982701267` |
 | B16 | `docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md` | `687bb852f1b8465527902ead7dfeae9858584171` |
-| B17 | `docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md` | `f0e6996f97216742c4b571d92c357485043795e8` |
+| B17 | `docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md` | `c8dcdc741fc0d718acd3474c7b521bcf1193eaf3` |
+| Written | `docs/thpt-preview/thu-vien/tu-luan-g11-chuong-v.md` | `47eaee4780746943042363905d6e90144be3399f` |
 
 **Bản sao bên dưới chỉ phục vụ review; không được tạo learner source thứ hai hoặc sửa trực tiếp trong gói này.** Giữ verdict của snapshot cũ, review lại Delta-C bị ảnh hưởng cho bản SHA mới.
 
@@ -580,7 +581,7 @@ REVIEW_PROMPT_SENTENCES: 4
 
 ---
 
-## REVIEW SOURCE B17 BEGIN · f0e6996f97216742c4b571d92c357485043795e8
+## REVIEW SOURCE B17 BEGIN · c8dcdc741fc0d718acd3474c7b521bcf1193eaf3
 
 # Bài 17. Hàm số liên tục
 
@@ -710,6 +711,41 @@ REVIEW_PROMPT_SENTENCES: 4
 
         **Tự sửa:** Chỉ kết luận **ít nhất một**, sau đó nêu yêu cầu riêng để chứng minh duy nhất. Ôn mục 2.4; làm Practice B17-P03/P07 tại <a href="../luyen-tap/">Luyện tập</a>.
 
+    ### 1.7. Nối giới hạn dãy số, giới hạn hàm số và tính liên tục
+
+    Ở Bài 15, một **dãy số** có thể tiến dần đến \(a\) mà không bao giờ nhận giá trị \(a\). Ở Bài 16, muốn biết giới hạn của \(f(x)\) khi \(x\to a\), ta phải kiểm hành vi khi \(x\) tiến gần \(a\) **từ các phía trong miền xác định**, không được chỉ nhìn \(f(a)\) hoặc thử một dãy đặc biệt. Bài 17 mới trả lời câu tiếp: **giới hạn ấy có bằng giá trị hàm tại \(a\) hay không**? Đó là điều kiện liên tục.
+
+    **Vận dụng — Tự thử tích hợp ba bài.** Cho \(u_n=1+\frac1n\) với \(n\ge1\) và
+    \[
+    F(x)=\begin{cases}
+      \dfrac{x^2-1}{x-1},&x\ne1,\\
+      4,&x=1.
+    \end{cases}
+    \]
+    (a) Tính \(\lim u_n\) và \(\lim F(u_n)\). (b) **Không suy giới hạn hàm chỉ từ một dãy**, hãy biến đổi công thức cho **mọi** \(x\ne1\) gần \(1\) để tính \(\lim_{x\to1}F(x)\). (c) \(F\) có liên tục tại \(1\) không? Phải sửa riêng giá trị \(F(1)\) thành bao nhiêu để liên tục?
+
+    <span data-ped-first-try="7" data-outcome-id="G11-CHV-INTEGRATED" data-thpt-first-try-id="THPT-G11-B17-TRY07" hidden></span>
+
+    ??? question "Đối chiếu — ba khái niệm, ba điều kiện"
+
+        **Bước 1 — giới hạn dãy:** \(u_n=1+1/n\to1\) và \(u_n\ne1\) với mọi \(n\ge1\). Do \(F(u_n)=u_n+1=2+1/n\), nên \(\lim F(u_n)=2\).
+
+        **Bước 2 — giới hạn hàm thực sự:** Với **mọi** \(x\ne1\), \(\dfrac{x^2-1}{x-1}=\dfrac{(x-1)(x+1)}{x-1}=x+1\). Do đó khi \(x\to1\) từ cả hai phía, \(\lim F(x)=2\). Việc thử chỉ một dãy không đủ làm chứng minh giới hạn hai phía cho một hàm bất kì; ở đây ta đã chứng minh được công thức trên cả lân cận thủng.
+
+        **Bước 3 — tính liên tục:** \(F(1)=4\ne2\), vậy **gián đoạn tại \(1\)**. Nếu thay riêng \(F(1)=2\), hàm mới bằng \(x+1\) cả tại \(1\) lẫn ngoài \(1\), nên liên tục ở \(1\).
+
+        **Kiểm:** \(F(1+1/n)\) đi gần \(2\) dù \(F(1)=4\); giá trị tại đúng điểm **không quyết định** giới hạn.
+
+    <span data-thpt-help-id="HELP-G11-B17-TRY07" hidden></span>
+
+    ??? tip "Kiểm lỗi — lấy giá trị hàm hoặc một dãy thay giới hạn hai phía"
+
+        **Dấu hiệu:** Em trả lời \(\lim_{x\to1}F(x)=4\) do \(F(1)=4\), hoặc dùng mỗi \(\lim F(u_n)=2\) để coi như đã chứng minh giới hạn hàm.
+
+        **Vì sao sai:** Giới hạn hàm xét \(x\) gần \(1\) (khác \(1\)) trên **toàn miền phù hợp**. Một dãy thí dụ có thể giúp đoán, nhưng không đủ chứng minh điều kiện mọi cách tiến gần.
+
+        **Tự sửa:** Rút gọn tử bằng hiệu hai bình phương trên miền \(x\ne1\), rồi mới cho \(x\to1\); so sánh riêng \(F(1)\). Ôn Bài 15 giới hạn dãy, Bài 16 khử dạng \(0/0\), Bài 17 liên tục; luyện lại B16-P01 và B17-P01 trong <a href="../luyen-tap/">Core và Luyện tập</a>. Sau đó thử bài Written tích hợp **khác kỹ thuật** ở <a href="../../../../thu-vien/tu-luan-g11-chuong-v/#thpt-g11-chv-w-integrated">thư viện tự luận</a>.
+
 === "Kiến thức SGK"
 
     ### 2.1. Hàm số liên tục tại một điểm
@@ -815,6 +851,15 @@ REVIEW_PROMPT_SENTENCES: 4
     Khi \(x\to0{,}5^-\) và \(x\to0{,}5^+\), hai phía đều tiến tới 10.000 đồng, đúng \(C(0{,}5)\). Tại \(x=30\), hai phía đều tiến tới \(10000+13500\cdot29{,}5=408250\) đồng, đúng \(C(30)\). Vì vậy mô hình liên tục ở <strong>hai điểm ghép</strong>.</p>
     <p><strong>Kiểm lại:</strong> Mỗi nhánh là hàm liên tục trên khoảng của nó. Đây là <strong>mô hình cước lũy tiến giả định</strong> giúp học điều kiện liên tục, không khẳng định biểu phí thực tế hay cơ chế làm tròn từng km của hãng taxi.</p></div>
 
+    ### 3.8. Giới hạn dãy làm tiền đề, tính liên tục cho phép dùng định lí
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B17-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Với \(u_n=1+1/n\), xét hàm \(g(x)=x^2-2\). Tính \(\lim_{n\to\infty}g(u_n)\), rồi chứng minh phương trình \(g(x)=0\) có **ít nhất một nghiệm** trên \((1;2)\) bằng định lí giá trị trung gian.</p>
+    <p><strong>Chọn phương pháp:</strong> Vì \(u_n\to1\) và \(g\) là đa thức liên tục, giá trị \(g(u_n)\) hội tụ về \(g(1)\). Để chứng minh nghiệm thuộc một **khoảng thực**, cần tính liên tục trên đoạn và **hai giá trị trái dấu**; dãy gần \(1\) không tự chứng minh có nghiệm.</p>
+    <p><strong>Lời giải:</strong> \(u_n^2-2=(1+1/n)^2-2=-1+2/n+1/n^2\to-1\). Đa thức \(g\) liên tục trên \([1;2]\); \(g(1)=-1<0\), \(g(2)=2>0\). Theo hệ quả định lí giá trị trung gian, tồn tại \(c\in(1;2)\) sao cho \(g(c)=0\). Đây là kết luận **tồn tại ít nhất một nghiệm**; bản thân định lí không bảo đảm tính duy nhất.</p>
+    <p><strong>Kiểm lại:</strong> Hàm được xác định trên toàn đoạn; hai đầu không phải nghiệm và có dấu đối nhau, nên nghiệm được bảo đảm nằm **bên trong** khoảng. \(\sqrt2\) là một nghiệm kiểm chứng, nhưng không được lấy nghiệm đó thay cho việc nêu giả thiết định lí.</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     Nếu sai Vận dụng, hãy mở Kiểm lỗi tương ứng và giải lại Core/Practice khác số liệu.
@@ -851,6 +896,16 @@ REVIEW_PROMPT_SENTENCES: 4
 
         **Tự sửa:** Thương yêu cầu mẫu khác 0; định lý giá trị trung gian chỉ đảm bảo **ít nhất một nghiệm**; luyện B17-P01/P07.
 
+    <span data-thpt-help-id="HELP-G11-B17-INTEGRATED" hidden></span>
+
+    ??? tip "4.5. Trộn lẫn giới hạn dãy, giới hạn hàm và giá trị tại điểm"
+
+        **Dấu hiệu:** Em dùng một dãy số gần \(a\) để kết luận ngay giới hạn hai phía của hàm, hoặc quên đối chiếu \(f(a)\) khi xét liên tục.
+
+        **Vì sao sai:** Mỗi khái niệm có điều kiện riêng; phép thử dãy không thay thế chứng minh giới hạn hai phía trong mọi trường hợp. Định lí giá trị trung gian còn đòi hỏi liên tục trên đoạn và đổi dấu.
+
+        **Tự sửa:** Ôn §1.7, Ví dụ 3.8, rồi làm bài Written `G11-CHV-W-INTEGRATED` tại <a href="../../../../thu-vien/tu-luan-g11-chuong-v/#thpt-g11-chv-w-integrated">thư viện</a>; xác minh đầy đủ miền xác định, giới hạn và dấu ở hai đầu trước khi mở lời giải.
+
     **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-v/">Tự luận Chương V</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 17 (trang in 119–122).</p>
@@ -860,7 +915,43 @@ REVIEW_PROMPT_SENTENCES: 4
 
 ---
 
-## Q18 AUTHORING SOURCE RECEIPT BEGIN · dabd519988409821fd8752371024bb6b6e815285
+## REVIEW SOURCE SHARED WRITTEN BEGIN · 47eaee4780746943042363905d6e90144be3399f
+
+# Thư viện tự luận Toán 11 · Chương V B15–B17
+
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · WRITTEN/ANCHOR CANONICAL</p><p class="thpt-r4-lead">Sáu câu Written gốc, Anchor chỉ là nhãn. Làm trước khi tự mở lời giải và rubric /4; không chấm tự luận bằng máy hay ghi Mastery.</p><div data-thpt-filter-list="written">
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-written-canonical="THPT-G11-CHV-B15-W01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g11-chv-b15-w01"><p class="thpt-r4-eyebrow">BÀI 15 · WRITTEN</p><h2>THPT-G11-CHV-B15-W01</h2><p>(a) Tính lim(n→∞)(2n²+3n)/(n²+1). (b) Giải thích vì sao dãy vₙ=(−1)ⁿ không có giới hạn hữu hạn. (c) Tính 4+2+1+1/2+… và nêu điều kiện công bội.</p><details><summary>Em đã làm? Mở lời giải và rubric /4</summary><p><strong>Lời giải:</strong> (a) Chia tử mẫu cho n²: (2+3/n)/(1+1/n²)→2. (b) Dãy con ở chỉ số chẵn bằng 1, ở chỉ số lẻ bằng −1, nên không thể tiến về một giá trị chung. (c) a=4, q=1/2 có |q|&lt;1; S=4/(1−1/2)=8.</p><ol><li>Chia tử và mẫu đúng theo bậc n², kết luận giới hạn 2. — 1 điểm.</li><li>Giải thích hai dãy con chẵn/lẻ có giới hạn khác nhau. — 1 điểm.</li><li>Nhận diện a=4, q=1/2, kiểm tra |q|&lt;1. — 1 điểm.</li><li>Tính tổng vô hạn 8, giải thích do qⁿ→0. — 1 điểm.</li></ol><p>Tự đối chiếu, không ghi Mastery.</p></details></section>
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-written-canonical="THPT-G11-CHV-B15-W02-ANCHOR" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g11-chv-b15-w02-anchor"><p class="thpt-r4-eyebrow">BÀI 15 · ANCHOR (nhãn Written)</p><h2>THPT-G11-CHV-B15-W02-ANCHOR</h2><p>Một thiết bị trong lần thử đầu tiêu thụ 1,2 đơn vị năng lượng. Mỗi lần thử tiếp theo tiêu thụ 3/4 lần liền trước. (a) Viết ba mức tiêu thụ đầu. (b) Thiết lập tổng n lần thử. (c) Tính tổng lý thuyết vô hạn. (d) Giải thích vì sao công thức không áp dụng với q=1.</p><details><summary>Em đã làm? Mở lời giải và rubric /4</summary><p><strong>Lời giải:</strong> (a) 1,2; 0,9; 0,675. (b) Sₙ=1,2(1−(3/4)ⁿ)/(1−3/4). (c) Vì |3/4|&lt;1 nên (3/4)ⁿ→0, S=1,2/(1/4)=4,8. (d) Nếu q=1, mỗi số hạng bằng 1,2, tổng n lần là 1,2n tăng không bị chặn; không có tổng hữu hạn.</p><ol><li>Tính đúng ba mức đầu và công bội. — 1 điểm.</li><li>Thiết lập đúng tổng riêng Sₙ, ghi điều kiện. — 1 điểm.</li><li>Lấy giới hạn và kết luận 4,8 đơn vị. — 1 điểm.</li><li>Lí giải đúng q=1 làm tổng không hội tụ hữu hạn. — 1 điểm.</li></ol><p>Tự đối chiếu, không ghi Mastery.</p></details></section>
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-written-canonical="THPT-G11-CHV-B16-W01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g11-chv-b16-w01"><p class="thpt-r4-eyebrow">BÀI 16 · WRITTEN</p><h2>THPT-G11-CHV-B16-W01</h2><p>Cho f(x)=(x²−25)/(x−5) khi x≠5, và f(5)=m. (a) Tìm lim(x→5)f(x). (b) Tìm m để f liên tục tại 5. (c) Tính lim(x→−1⁺)1/(x+1) và lim(x→−1⁻)1/(x+1).</p><details><summary>Em đã làm? Mở lời giải và rubric /4</summary><p><strong>Lời giải:</strong> (a) Với x≠5, (x²−25)/(x−5)=x+5, nên giới hạn bằng 10. (b) Cần f(5)=10, tức m=10. (c) Mẫu tiến đến 0 từ phía dương bên phải −1 nên giới hạn +∞; từ phía âm bên trái nên −∞.</p><ol><li>Phân tích nhân tử và rút gọn đúng với x≠5. — 1 điểm.</li><li>Tính giới hạn bằng 10, không thay x=5 vào phân thức gốc. — 1 điểm.</li><li>Áp điều kiện liên tục, được m=10. — 1 điểm.</li><li>Giải thích dấu mẫu và hai giới hạn một phía đúng. — 1 điểm.</li></ol><p>Tự đối chiếu, không ghi Mastery.</p></details></section>
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-written-canonical="THPT-G11-CHV-B16-W02-ANCHOR" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g11-chv-b16-w02-anchor"><p class="thpt-r4-eyebrow">BÀI 16 · ANCHOR (nhãn Written)</p><h2>THPT-G11-CHV-B16-W02-ANCHOR</h2><p>(a) Tính L=lim(x→0)(√(x+9)−3)/x; chỉ ra vì sao cách thế trực tiếp chưa cho đáp số. (b) Tính M=lim(x→−∞)(√(x²+1)+x). Giải thích dấu của x khi biến đổi.</p><details><summary>Em đã làm? Mở lời giải và rubric /4</summary><p><strong>Lời giải:</strong> (a) Thế trực tiếp cho dạng 0/0 không xác định. Với x≠0, nhân liên hợp: L=lim 1/(√(x+9)+3)=1/6. (b) Nhân liên hợp: √(x²+1)+x = 1/(√(x²+1)−x). Với x→−∞, mẫu = |x|√(1+1/x²)−x = −x(√(1+1/x²)+1)→+∞; do đó M=0 từ phía dương.</p><ol><li>Nêu được 0/0 là dạng chưa kết luận, kiểm tra miền x+9≥0. — 1 điểm.</li><li>Nhân liên hợp và tìm L=1/6 chính xác. — 1 điểm.</li><li>Biến đổi M bằng liên hợp, không nhầm √(x²)=x khi x&lt;0. — 1 điểm.</li><li>Giải thích mẫu →+∞ nên M→0⁺. — 1 điểm.</li></ol><p>Tự đối chiếu, không ghi Mastery.</p></details></section>
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-written-canonical="THPT-G11-CHV-B17-W01" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g11-chv-b17-w01"><p class="thpt-r4-eyebrow">BÀI 17 · WRITTEN</p><h2>THPT-G11-CHV-B17-W01</h2><p>Cho f(x)=2x+k nếu x&lt;1, và f(x)=x²+3 nếu x≥1. (a) Tìm k để f liên tục tại 1. (b) Với g(x)=x³−x−1, chứng minh có ít nhất một nghiệm của g(x)=0 trong (1,2); nói rõ điều gì chưa thể kết luận bằng định lí đổi dấu.</p><details><summary>Em đã làm? Mở lời giải và rubric /4</summary><p><strong>Lời giải:</strong> (a) lim trái tại 1 bằng 2+k; lim phải và f(1) bằng 4, nên 2+k=4→k=2. (b) g liên tục trên [1,2] vì là đa thức; g(1)=−1, g(2)=5 trái dấu, nên tồn tại ít nhất một c∈(1,2) có g(c)=0. Chỉ từ đổi dấu chưa suy nghiệm duy nhất.</p><ol><li>Tìm và so sánh giới hạn trái, phải và f(1). — 1 điểm.</li><li>Giải phương trình điều kiện liên tục k=2. — 1 điểm.</li><li>Kiểm tra tính liên tục của g và dấu tại hai đầu mút. — 1 điểm.</li><li>Kết luận tồn tại nghiệm, không tự suy tính duy nhất. — 1 điểm.</li></ol><p>Tự đối chiếu, không ghi Mastery.</p></details></section>
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="anchor" data-thpt-written-canonical="THPT-G11-CHV-B17-W02-ANCHOR" data-thpt-exposure-role="SGK_WRITTEN" id="thpt-g11-chv-b17-w02-anchor"><p class="thpt-r4-eyebrow">BÀI 17 · ANCHOR (nhãn Written)</p><h2>THPT-G11-CHV-B17-W02-ANCHOR</h2><p>(a) Xét tính liên tục của f(x)=√(x+1) trên [−1,3], kể cả hai đầu mút. (b) Cho h(x)=x²+1 nếu x&lt;0, và h(x)=3x+1 nếu x≥0. Chứng minh h liên tục tại 0. (c) Nếu đổi nhánh x≥0 thành 3x+2, điều gì thay đổi?</p><details><summary>Em đã làm? Mở lời giải và rubric /4</summary><p><strong>Lời giải:</strong> (a) f có miền xác định x≥−1; liên tục trên (−1,3), lim bên phải ở −1 bằng f(−1)=0 và lim bên trái ở 3 bằng f(3)=2, nên liên tục trên [−1,3]. (b) Lim trái h=1, lim phải h=1, h(0)=1, nên liên tục. (c) Lim trái vẫn 1 nhưng lim phải và h(0)=2: hai giới hạn một phía không khớp, nên gián đoạn tại 0.</p><ol><li>Xác định đúng miền và tính liên tục bên trong đoạn. — 1 điểm.</li><li>Kiểm tra giới hạn một phía đúng tại −1 và 3. — 1 điểm.</li><li>So sánh hai giới hạn một phía và giá trị h(0), kết luận liên tục. — 1 điểm.</li><li>Phân tích nhánh thay đổi và lí giải gián đoạn, không chỉ nói 'không'. — 1 điểm.</li></ol><p>Tự đối chiếu, không ghi Mastery.</p></details></section>
+<section class="thpt-r4-written-card" data-thpt-filter-item data-thpt-kind="normal" data-thpt-written-canonical="THPT-G11-CHV-W-INTEGRATED" data-thpt-exposure-role="SGK_WRITTEN" data-outcome-id="G11-CHV-INTEGRATED" id="thpt-g11-chv-w-integrated">
+<p class="thpt-r4-eyebrow">CHƯƠNG V · TỰ LUẬN TỔNG HỢP · KHÔNG CHẤM CHÍNH THỨC</p>
+<h2>Từ tổng hình học hữu hạn đến giới hạn và nghiệm của hàm liên tục</h2>
+<p>Với \(n\ge1\), đặt \(s_n=\frac12+\frac1{2^2}+\cdots+\frac1{2^n}\). Xét đa thức \(g(x)=x^2+x-1\). (a) Tìm biểu thức \(s_n\), \(\lim_{n\to\infty}s_n\), tính riêng \(s_1,s_2\). (b) Dùng tính liên tục của \(g\) tại giới hạn dãy để tính \(\lim_{n\to\infty}g(s_n)\). (c) Tính \(g(s_1)\), \(g(s_2)\), rồi chứng minh tồn tại \(c\in(s_1;s_2)\) sao cho \(g(c)=0\). (d) Từ riêng định lí giá trị trung gian, có được kết luận nghiệm đó là duy nhất không? Giải thích.</p>
+<details><summary>Đã tự giải? Mở lời giải và rubric /4 để đối chiếu</summary>
+<p><strong>Phân tích:</strong> Kết nối ba ý khác nhau: công thức tổng cấp số nhân có \(q=1/2\) (Bài 15), phép tính giới hạn của một hàm tại điểm mà dãy tiến đến (Bài 16), và tính liên tục + hai giá trị trái dấu để áp dụng định lí giá trị trung gian (Bài 17). Dấu của \(g(s_n)\) ở vài số hạng không thay thế phép chứng minh liên tục trên cả đoạn.</p>
+<p><strong>Phần (a):</strong> \(s_n=\frac{\frac12(1-(\frac12)^n)}{1-\frac12}=1-2^{-n}\) với mọi \(n\ge1\), nên \(s_n\to1\) do \(0<1/2<1\). \(s_1=1/2,\ s_2=3/4\).</p>
+<p><strong>Phần (b):</strong> \(g\) là đa thức nên liên tục tại \(1\). Vì \(s_n\to1\), suy ra \(\lim g(s_n)=g(1)=1^2+1-1=1\). Có thể thay công thức \(s_n\) vào và khai triển, kết quả giống nhau.</p>
+<p><strong>Phần (c):</strong> \(g(1/2)=1/4+1/2-1=-1/4<0\) và \(g(3/4)=9/16+12/16-16/16=5/16>0\). Hàm \(g\) liên tục trên đoạn \([1/2;3/4]\). Vì hai đầu có dấu trái nhau, định lí giá trị trung gian bảo đảm **ít nhất một** \(c\in(1/2;3/4)\) thỏa \(g(c)=0\).</p>
+<p><strong>Phần (d):</strong> **Không** thể kết luận duy nhất chỉ nhờ định lí giá trị trung gian; muốn kết luận duy nhất cần lập luận bổ sung, chẳng hạn chứng minh \(g\) tăng nghiêm ngặt trên đoạn. Ở đây đề chỉ yêu cầu tồn tại.</p>
+<p><strong>Rubric tự đối chiếu /4:</strong></p><ol>
+<li>Nhận đúng cấp số nhân \(q=1/2\), suy ra \(s_n=1-2^{-n}\), \(\lim s_n=1\), \(s_1=1/2,s_2=3/4\) (1 điểm).</li>
+<li>Giải thích dùng tính liên tục của đa thức tại \(1\) để có \(\lim g(s_n)=g(1)=1\) (1 điểm).</li>
+<li>Tính chính xác hai dấu \(g(1/2)=-1/4\), \(g(3/4)=5/16\) (1 điểm).</li>
+<li>Kiểm liên tục trên \([1/2;3/4]\), áp dụng đúng IVT cho nghiệm trong khoảng mở và không suy ra duy nhất chỉ từ IVT (1 điểm).</li>
+</ol>
+<p>Đây là đúng **một câu hỏi có một canonical item_id**, không tự động ghi điểm, không phát hành bài kiểm tra độc lập hay ghi Skill Mastery.</p>
+</details>
+</section>
+</div><nav class="thpt-r4-lesson-tabs"><a href="../../sgk/lop-11/chuong-v/">Chương V</a><a href="../../sgk/lop-11/chuong-v/luyen-tap/">Core và Luyện tập</a></nav></div>
+
+## REVIEW SOURCE SHARED WRITTEN END
+
+---
+
+## Q18 AUTHORING SOURCE RECEIPT BEGIN · f64549651a45423068536dc540d9d15eb495b943
 
 # G11 SGK Chương V B15–B17 · R04 academic and pedagogic author self-Q18 · 22/11/2026
 
@@ -872,12 +963,12 @@ RELEASE_SCOPE: FULL_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 AUTHOR_SELF_QA_RECEIPT: YES_CURRENT_G11_CHV_R04_ON_THREE_CANONICAL_LEARNER_BLOBS
 SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHV_B15_B17_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: abe13e1c6cae16ce905adfdf89b1f467ca82e5ae
+SOURCE_BLOB: d548d4dfb1761c4709c370b88fb70093b4343c4c
 S1_RECEIPT: HISTORICAL_SBT_PRIMARY_PDF_SHA256_FB529210_AND_CURRENT_SGK_PDF_TEXT_SCOPE_VERIFIED_FINAL_PRINT_PDF_VISUAL_RESCAN_NOT_CLAIMED
 OUTCOME_AUDIT: 17_REGISTERED_16_PER_LESSON_PLUS_ONE_INTEGRATED
-MATH_VERIFICATION: 19_CURRENT_WORKED_18_FIRSTTRY_30_ORIGINAL_BANK_6_ORIGINAL_WRITTEN_RECHECKED_CONDITIONS
-PED_VERIFICATION: THREE_FOUR_TAB_GOLDEN_18_TRY_18_HIDDEN_COMPARISONS_18_LOCAL_D6_19_WORKED_3_UNCHANGED_SVG
-CANONICAL_Q15: 54_DISTINCT_IDS_30_PUBLIC_CP_APPLICATION_6_WRITTEN_18_SOURCE_TRY
+MATH_VERIFICATION: HISTORIC_19_WORKED_PLUS_CURRENT_ONE_EX_19_TRY_7_WRITTEN_MATH_CHECK_NO_NUMERIC_RERUN
+PED_VERIFICATION: THREE_FOUR_TAB_GOLDEN_19_TRY_19_HIDDEN_COMPARISONS_19_LOCAL_D6_20_WORKED_3_UNCHANGED_SVG
+CANONICAL_Q15: 56_UNIQUE_SOURCE_IDS_37_PUBLIC_CANONICAL_30_CP_APPLICATION_7_WRITTEN_19_SOURCE_TRY
 ASSESSMENT_Q16: PUBLIC_END_13_REUSED_SELF_CHECK_NO_MASTERY_17_RD1_OWNER_HELD_PRIVATE
 AUTHOR_SIGNOFF: AUTHOR_SELF_VERIFIED_ON_CURRENT_R04_EXACT_GIT_SOURCE_Q01_Q18_A1_A7
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -891,7 +982,7 @@ MASTERY_ACTIVATION: NO
 
 ## Current source truth and prior independent review
 
-**Current source Git blob `abe13e1c6cae16ce905adfdf89b1f467ca82e5ae`** is a manifest for 11 original source components including three student Knowledge articles, original unchanged 30-item formative bank, 6-item Written/Anchor library and 3 original SVG. B15 learner SHA `f4065659173d27ef3999f1b0ee42ff2982701267`, B16 `687bb852f1b8465527902ead7dfeae9858584171`, B17 `f0e6996f97216742c4b571d92c357485043795e8`. Historic primary S1 SBT Toán 11 KNTT T1 PDF SHA256 `fb5292103e5b682531ce37b5f30598393bba81b2943da9c1a374fdeb56557229` printed B15 75–78, B16 79–83, B17 84–86 and chapter end 87–90. Original SGK KNTT T1 chapter printed B15 104–110, B16 111–118, B17 119–122, final p123. Current session checked online SGK source PDF text (actual sections B15–B17 and original examples) but web visual screenshot failed and original publisher final-print PDF bytes were not rescanned. **No new printed-image receipt is claimed**.
+**Current source Git blob `d548d4dfb1761c4709c370b88fb70093b4343c4c`** is a manifest for 11 original source components including three student Knowledge articles, original unchanged 30-item formative bank, 6-item Written/Anchor library and 3 original SVG. B15 learner SHA `f4065659173d27ef3999f1b0ee42ff2982701267`, B16 `687bb852f1b8465527902ead7dfeae9858584171`, B17 `c8dcdc741fc0d718acd3474c7b521bcf1193eaf3`. Historic primary S1 SBT Toán 11 KNTT T1 PDF SHA256 `fb5292103e5b682531ce37b5f30598393bba81b2943da9c1a374fdeb56557229` printed B15 75–78, B16 79–83, B17 84–86 and chapter end 87–90. Original SGK KNTT T1 chapter printed B15 104–110, B16 111–118, B17 119–122, final p123. Current session checked online SGK source PDF text (actual sections B15–B17 and original examples) but web visual screenshot failed and original publisher final-print PDF bytes were not rescanned. **No new printed-image receipt is claimed**.
 
 Historical independent Academic/PED source `7934757ed06de4ae4b63dbc351ef524fc054e0d0` and review receipt `2fdc39c755f399b0df81e17a9c8978384612e2f1` are immutable history only. R04 pedagogic rewrites are `DELTA_C_ACADEMIC_MATERIAL` and current signoff is a new Q18 author self-verification **under owner-effective v3.2.0**, not fabricated NotebookLM PASS. Source-scoped prior 100k randomized probes from previous source blobs are historical and **not rerun or claimed as current**.
 
@@ -907,7 +998,7 @@ Historical independent Academic/PED source `7934757ed06de4ae4b63dbc351ef524fc054
 
 **Executed source structural QA:** Three 4-tab ordered Golden; 6+6+6 unique TRY, 18/18 hidden comparisons each with correctly indented answer and 18/18 matching local HELP; 6+6+7 complete worked; 3/3 exact original SVG, balanced inline and display MathJax delimiters, no script injection, no remaining bad B16 section references, no changed bank/Writer blob. Source QA is not browser/MathJax/SVG raster nor official Final Submit validation.
 
-## ITEM_OUTCOME_ROLE_MATRIX — 54 distinct public educational IDs
+## ITEM_OUTCOME_ROLE_MATRIX — 56 distinct source-owned educational IDs
 
 `SGK_KNOWLEDGE_FIRST_TRY_UNSCORED` is formative Knowledge placement and a canonical ID, not official chapter assessment. Original RD1 question stems, keys, rubrics are kept out of GitHub.
 
@@ -949,6 +1040,7 @@ Historical independent Academic/PED source `7934757ed06de4ae4b63dbc351ef524fc054
 | `THPT-G11-CHV-B16-W02-ANCHOR` | `G11-B16-ALGEBRAIC_TECHNIQUES` | SGK_WRITTEN_ANCHOR_LABEL |
 | `THPT-G11-CHV-B17-W01` | `G11-B17-CONTINUITY_POINT` | SGK_WRITTEN |
 | `THPT-G11-CHV-B17-W02-ANCHOR` | `G11-B17-CONTINUITY_INTERVAL` | SGK_WRITTEN_ANCHOR_LABEL |
+| `THPT-G11-CHV-W-INTEGRATED` | `G11-CHV-INTEGRATED` | SGK_WRITTEN |
 | `THPT-G11-B15-TRY01` | `G11-B15-FINITE_SEQUENCE` | SGK_KNOWLEDGE_FIRST_TRY_UNSCORED |
 | `THPT-G11-B15-TRY02` | `G11-B15-FINITE_SEQUENCE` | SGK_KNOWLEDGE_FIRST_TRY_UNSCORED |
 | `THPT-G11-B15-TRY03` | `G11-B15-FINITE_SEQUENCE` | SGK_KNOWLEDGE_FIRST_TRY_UNSCORED |
@@ -967,39 +1059,49 @@ Historical independent Academic/PED source `7934757ed06de4ae4b63dbc351ef524fc054
 | `THPT-G11-B17-TRY04` | `G11-B17-ELEMENTARY_CONTINUITY` | SGK_KNOWLEDGE_FIRST_TRY_UNSCORED |
 | `THPT-G11-B17-TRY05` | `G11-B17-CONTINUITY_OPERATIONS` | SGK_KNOWLEDGE_FIRST_TRY_UNSCORED |
 | `THPT-G11-B17-TRY06` | `G11-B17-ZERO_EXISTENCE` | SGK_KNOWLEDGE_FIRST_TRY_UNSCORED |
+| `THPT-G11-B17-TRY07` | `G11-CHV-INTEGRATED` | SGK_KNOWLEDGE_FIRST_TRY_UNSCORED |
 
-The original `G11-CHV-INTEGRATED` registered outcome has old protected RD1 chapter evidence and self-study B15→B16→B17 conceptual transition; do not invent a new public independent item to fill a mastery ID.
+The previously registered `G11-CHV-INTEGRATED` outcome had no canonical public question nor FirstTry in the original 54-row mapping. The new separate B17 TRY07 and one canonical shared Written `THPT-G11-CHV-W-INTEGRATED` now provide explicit source-scoped self-study evidence; they are **public formative only**, never a new private RD1 or Skill Mastery claim.
 
 ## Q01–Q18 AUTHOR_SELF_QA_EVIDENCE
 
 | Criterion | Scoped verdict | Reasoned evidence on source |
 |---|---|---|
 | Q01 | AUTHOR_SELF_VERIFIED | SGK KNTT T1 ChV B15 pp104–110, B16 pp111–118, B17 pp119–122, end p123; original SBT historical scanned by SHA; this pass checked PDF text but did not verify publisher print-final page images |
-| Q02 | AUTHOR_SELF_VERIFIED | 17 registered outcomes, 16 per-lesson plus one cross-chapter integrated; all backed by concept, examples, public bank or owner-held original RD1; B15 GEOMETRIC no new FirstTry but C03 + formal 2.4 + worked |
+| Q02 | AUTHOR_SELF_VERIFIED | 17/17 outcomes now mapped to real public canonical and teaching item: prior integrated outcome gap fixed by B17 TRY07 and separate one integrated Written /4; 16 previous lesson outcomes preserved. |
 | Q03 | AUTHOR_SELF_VERIFIED | Three complete Golden Knowledge sections; definitions, domain, inequality and limit conditions before formulas |
-| Q04 | AUTHOR_SELF_VERIFIED | 19 worked examples with explicit complete task, selection reason, mathematical proof, check; source-refactored into semantic four-step cards |
-| Q05 | AUTHOR_SELF_VERIFIED | 30 frozen original Core/Practice/Application answer/skill IDs; public attempt is exposure and does not claim independent depth only from raw count |
-| Q06 | AUTHOR_SELF_VERIFIED | 6 frozen shared Written/Anchor with original full solutions and /4 rubric; Anchor only tag |
+| Q04 | AUTHOR_SELF_VERIFIED | 20 complete worked examples (6 B15, 6 B16, 8 B17), new EX3.8 combines sequence limit, polynomial continuity and IVT with precise hypotheses; old example QA historic scope retained. |
+| Q05 | AUTHOR_SELF_VERIFIED | 30 unchanged canonical Core/Practice/Application +7 shared Written including one distinct new integrated transfer; 37 public unique canonical items total. |
+| Q06 | AUTHOR_SELF_VERIFIED | Six original Written/Anchor item texts/rubrics /4 untouched in existing shared library, one newly authored integrated Written /4 with full worked solution and four scored criteria. |
 | Q07 | AUTHOR_SELF_VERIFIED | 3 original SVG unchanged by SHA; each has learner-facing caption and how-to-read instruction; no browser-render PASS claimed |
-| Q08 | AUTHOR_SELF_VERIFIED | 18 local actual Kiểm lỗi/HELP with same lesson revisit, plus four general error groups per lesson; 3 unindented math answer defects fixed |
+| Q08 | AUTHOR_SELF_VERIFIED | 19 opt-in FirstTry with hidden answer and same-concept D6, new B17 TRY07 warns one sampled sequence does not by itself establish a two-sided function limit. |
 | Q09 | AUTHOR_SELF_VERIFIED | Why learn limits, one-sided behavior, continuity, models from finite/infinite processes |
 | Q10 | AUTHOR_SELF_VERIFIED | Prerequisites dãy số, lũy thừa, nhân liên hợp, xác định hàm, căn bậc hai, piecewise and sign tables explained |
 | Q11 | AUTHOR_SELF_VERIFIED | Concept of convergent distance/sequence first; function limits do not require value at point; continuity matches point value to limits |
 | Q12 | AUTHOR_SELF_VERIFIED | SVG reading explains isolated sequence points, removable holes, point-vs-limit mismatch and projection/read limits |
-| Q13 | AUTHOR_SELF_VERIFIED | Method rationale divide leading power, squeeze, conjugate, left/right sign, sqrt(x²)=|x|, IVT existence not uniqueness; math checked per example |
-| Q14 | AUTHOR_SELF_VERIFIED | 18 learner FirstTry prior to any original Core; 18 opt-in hidden question comparisons; four originally leaked display math blocks now nested |
-| Q15 | AUTHOR_SELF_VERIFIED | 54/54 distinct IDs scoped: 30 original C/P/APPLICATION +6 original Written +18 pedagogic TRY, no reused stem copied into another bank |
+| Q13 | AUTHOR_SELF_VERIFIED | Rigorous new math: u_n=1+1/n→1; F(u_n)→2; since F(x)=x+1 for all x≠1 near 1, two-sided limit 2 while F(1)=4; continuity repaired by F(1)=2. EX uses polynomial g and endpoint sign IVT. |
+| Q14 | AUTHOR_SELF_VERIFIED | 19 unique pre-Core FirstTry across 3 lessons; B17 TRY07 on integrated outcome and targeted D6 to B15/B16/B17, not leaked before optional open. |
+| Q15 | AUTHOR_SELF_VERIFIED | 56 distinct source-owned IDs: 30 unchanged C/P +six original Written +one new integrated Written +19 local FirstTry; 37 canonical public and 17/17 outcome item coverage. |
 | Q16 | AUTHOR_SELF_VERIFIED | 13 publicly exposed chapter replay items self-check CLIENT_SELF_CHECK_NO_MASTERY; private 17 RD1 untouched, Final Submit/mastery runtime unchanged |
 | Q17 | AUTHOR_SELF_VERIFIED | SGK Knowledge + existing Core/Practice hub + public end + shared Written is self-contained; Topic remains independent 3-page and no new Topic Core |
-| Q18 | AUTHOR_SELF_VERIFIED | One source bundle immutable exact blob plus author signed receipt; old R03 independent PASS is historical only, not inherited by this Delta C |
+| Q18 | AUTHOR_SELF_VERIFIED | One current SOURCE manifest and this author self-Q18 receipt, no inheritance of prior independent R03 verdict; original Temp_ reviewer copy must match this exact new receipt/SHA. |
 
 ## A1–A7 summary and protected boundary
 
-A1: source `abe13e1c6cae16ce905adfdf89b1f467ca82e5ae` contains 11 original component Git blob locks; A2: direct S1 PDF *text* read with historical original SBT primary scan reference and no new page-image claim; A3: 18-Q author-signed current review on exact SHA, independent NotebookLM not falsely claimed; A4: 17 original outcomes and 54 distinct teaching item roles map 1:1; A5: D1–D6 + PED1–PED6 verified per lesson and exact math, not solely totals; A6: `DELTA_C_ACADEMIC_MATERIAL` corrected in original B15–B17 + `DELTA_A_UI` exact label/href change, no original bank or assessments modified; A7: 17 private RD1 owner-held, public end is `CLIENT_SELF_CHECK_NO_MASTERY`, no student data/Firebase/Auth/Mastery changed.
+A1: source `d548d4dfb1761c4709c370b88fb70093b4343c4c` contains 11 original component Git blob locks; A2: direct S1 PDF *text* read with historical original SBT primary scan reference and no new page-image claim; A3: 18-Q author-signed current review on exact SHA, independent NotebookLM not falsely claimed; A4: 17 registered outcomes and 56 distinct teaching IDs (37 canonical public +19 source-local Try) reconciled; A5: D1–D6 + PED1–PED6 verified per lesson and exact math, not solely totals; A6: `DELTA_C_ACADEMIC_MATERIAL` corrected in original B15–B17 + `DELTA_A_UI` exact label/href change, no original bank or assessments modified; A7: 17 private RD1 owner-held, public end is `CLIENT_SELF_CHECK_NO_MASTERY`, no student data/Firebase/Auth/Mastery changed.
 
-AUTHOR_SIGNOFF: Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_SOURCE_abe13e1c6cae16ce905adfdf89b1f467ca82e5ae
+AUTHOR_SIGNOFF: Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_SOURCE_d548d4dfb1761c4709c370b88fb70093b4343c4c
 P0_P1_AUTHORING: 0_0_IN_SCOPE
 SOURCE_STATE: AUTHORING_PASS_READY_FOR_SINGLE_V2_READY_REGISTER
 RELEASE_STATE: NO_WEBSITE_APPROVAL_OR_DEPLOYMENT
+
+## R04_CROSS_B15_B16_B17_INTEGRATED_OUTCOME_DELTA_C_20261122
+
+Actual missing-content finding: G11-CHV-INTEGRATED is registered as 17th outcome but neither 36 original public C/P/Written nor 18 old learner FirstTry checked it directly. Historic RD1 protected metadata and crosslinks were not accepted as substitutes for independent public learner evidence. Now one new pedagogical FirstTry and one distinct canonical Written cover it in the original sources.
+
+- Original B17 learner Git blob `c8dcdc741fc0d718acd3474c7b521bcf1193eaf3`: one new WHY-first Knowledge §1.7 distinguishes sequence convergence, valid function limit over two-sided punctured neighbourhood, and continuity at point. TRY07 on G11-CHV-INTEGRATED has opt-in reveal, reasoned correct F(x)=(x²−1)/(x−1) for x!=1 versus F(1)=4, local HELP-G11-B17-TRY07, example EX3.8 on polynomial continuity and sign-change IVT, and new general misconception tip.
+- Existing canonical Written library current blob `47eaee4780746943042363905d6e90144be3399f`: one new `THPT-G11-CHV-W-INTEGRATED`, original six Written/Anchor texts unchanged, four new rubric one-point criteria sum /4. Distinct applied math: s_n=sum_{k=1}^n (1/2)^k =1−2^(−n)→1, g(x)=x²+x−1 continuous and g(s_n)→g(1)=1; s1=1/2 and s2=3/4 produce g(s1)=−1/4, g(s2)=5/16, so continuous g has at least one root strictly between s1 and s2; IVT alone does not justify uniqueness.
+- Correct source counts after repair: 3 original Golden learners, 17/17 registered outcomes have canonical teaching evidence, 30 unchanged original C/P, 6 unchanged original Written, one new Written =37 public canonicals, 19 unique local FirstTry =56 source-owned item IDs, 20 reasoned examples and 3 old SVG. Local mathematical checks on this Delta-C independent of old 100k finite tests, which remain historic. No JS bank/keys/rubrics of original 36, no private 17 RD1 uploaded, no official Chapter Readiness or Mastery written.
+- Current Q18 AUTHOR_SELF_VERIFIED only, not a new NotebookLM independent approval; one updated review-only Temp_ source packet should carry the current B17 and receipt before outside review. P0/P1 scoped author issues closed (0/0); original S1 printed pages/reference SHA from previous source custody, no new official final-print PDF image scan claimed. RELEASE AP/R/Final Submit/owner merge/deploy remain separate.
 
 ## Q18 AUTHORING SOURCE RECEIPT END
