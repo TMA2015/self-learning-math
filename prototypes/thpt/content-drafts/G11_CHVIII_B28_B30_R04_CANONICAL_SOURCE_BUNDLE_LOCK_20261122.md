@@ -25,7 +25,7 @@ RELEASE_AUTHORIZATION: NO
 | `docs/thpt-preview/sgk/lop-11/chuong-viii.md` | `852866c070f932c2062dfbc0567ef0e8170443a2` | Chapter overview |
 | `docs/thpt-preview/sgk/lop-11/chuong-viii/bai-28.md` | `34cd865b3ac165b6510911c5a9019101b3473f56` | B28 Golden learner canonical |
 | `docs/thpt-preview/sgk/lop-11/chuong-viii/bai-29.md` | `7f9e8b4725a2b1595c73f14faa6e4f399b90b63d` | B29 Golden learner canonical |
-| `docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md` | `3f9225b353a7100dd42c96b4d5b69bca0977648c` | B30 Golden learner canonical |
+| `docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md` | `971262cc65ea2aee488de6144eefe973cbdb4693` | B30 Golden learner canonical with chapter integrated TRY07 and EX3.8 |
 | `docs/thpt-preview/sgk/lop-11/chuong-viii/luyen-tap.md` | `1264301a50c5860bfa3bb2087cfdeb6eba5ad886` | Original shared Core/Practice hub |
 | `docs/thpt-preview/sgk/lop-11/chuong-viii/tu-kiem-tra-chuong.md` | `4f8d7d90f21cfddc5ebc782c09eb3fe5b5a5d78e` | Original exposed end public replay only |
 | `docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js` | `b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3` | Original 39 C/P bank unmodified |
@@ -114,7 +114,7 @@ Source of authority is original owner-connected KNTT Toán 11 Tập hai SGK, 114
 - THPT-G11-CHVIII-B30-W02-ANCHOR
 - THPT-G11-CHVIII-CHVIII-W01-ANCHOR
 
-## CURRENT_19_UNSCORED_KNOWLEDGE_FIRSTTRY_IDS
+## CURRENT_20_UNSCORED_KNOWLEDGE_FIRSTTRY_IDS
 - THPT-G11-B28-TRY01
 - THPT-G11-B28-TRY02
 - THPT-G11-B28-TRY03
@@ -134,8 +134,9 @@ Source of authority is original owner-connected KNTT Toán 11 Tập hai SGK, 114
 - THPT-G11-B30-TRY04
 - THPT-G11-B30-TRY05
 - THPT-G11-B30-TRY06
+- THPT-G11-B30-TRY07
 
-## CURRENT_20_WORKED_EXAMPLE_IDS
+## CURRENT_21_WORKED_EXAMPLE_IDS
 - EX-G11-CHVIII-B28-01
 - EX-G11-CHVIII-B28-02
 - EX-G11-CHVIII-B28-03
@@ -156,7 +157,16 @@ Source of authority is original owner-connected KNTT Toán 11 Tập hai SGK, 114
 - EX-G11-CHVIII-B30-05
 - EX-G11-CHVIII-B30-06
 - EX-G11-B30-R02-07
+- EX-G11-B30-R04-INTEGRATED
 
+## R04_INTEGRATED_CHVIII_FIRSTTRY_SCOPED_Q14_PED6_DELTA_C
+
+On current source readback, 20/20 registered outcomes already had original public canonical items; the original integrated G11-CHVIII-INTEGRATED has original Practice THPT-G11-CHVIII-CHVIII-P01 and original Written/Anchor THPT-G11-CHVIII-CHVIII-W01-ANCHOR. However all 19 previous source-local FirstTry were distributed only over 19 per-lesson outcomes, so the integrated outcome had **no direct pre-Core self-attempt**. This scoped PED6/Q14 sequencing gap is fixed in the existing original B30 Knowledge lesson, not by fabricating or cloning a new Core/Practice/Written item.
+
+- Active B30 canonical learner Git blob `971262cc65ea2aee488de6144eefe973cbdb4693`: §1.7 WHY/concept explanation connects B28 union/intersection/disjoint-vs-independent, B29 addition/inclusion-exclusion and B30 multiplication only under independence; new source-local `THPT-G11-B30-TRY07` maps to integrated G11-CHVIII-INTEGRATED, concealed opt-in comparison and D6 `HELP-G11-B30-TRY07` route back to original integrated Practice only after learner attempt. Independent solved EX-G11-B30-R04-INTEGRATED and general misconception 4.4 are distinct from new FirstTry and original P01.
+- New FirstTry population data check: random equiprobable one of 1000 with |A|=400, |B|=300, |A∩B|=120; P(A)=.4,P(B)=.3,P(AB)=.12=P(A)P(B) (independent but not disjoint); mutually disjoint four regions only A 280, only B 180, both 120, neither 420; union .58, exactly one .46, none .42, total 1. New independent device example p(A)=3/4, p(B)=2/3, both 1/2, at least one 11/12, exactly one 5/12, neither 1/12, total 1. Both cases source-checked arithmetically with explicit probability/independence hypotheses.
+- New totals: 20 registered outcomes with both direct source-local FirstTry and original public canonical practice; 47 original public canonical unchanged (39 JS C/P and eight original Written/Anchor including old B29-W03 with previously clarified stem) + 20 unique unscored FirstTry = 67 unique source-owned teaching IDs. Current reasoned examples 21 (B28 6/B29 7/B30 8). Original three SVG, protected 20 owner-held private RD1 and exposed 20 public END `CLIENT_SELF_CHECK_NO_MASTERY` unchanged. No new scored item, no skill Mastery.
+- This B30-only `DELTA_C_ACADEMIC_MATERIAL` is current source-self Q18 v3.2.0 scoped author QA, historical independent R00 review remains attached to its old immutable source and v2.0 reviewer bundle, not falsely transferred to current R04. No fresh original final-print PDF rescan, shared JS runtime, student data, website or RELEASE integration.
 ## STUDENT_PRACTICE_AND_Q16_BOUNDARY
 
 Current Golden exactly four ordered tabs per learner (discovery before formal conditions, reasoned examples, error diagnosis). Original 20 RD0 original outcomes (19 individual +1 integrated) retain original canonical metadata/primary skills. The original 20 public end replay questions are `CLIENT_SELF_CHECK_NO_MASTERY`, **not** independent `SGK_CHAPTER_READINESS`. Original 20 held-out confidential official RD1 owner-held outside this public source; no stems, solutions, answer keys or rubrics exposed. This content-drafts manifest only holds IDs and source Git SHA, never a duplicate question corpus. No Topic Core, no private Firebase/Auth/records, no Golden runtime changes, no merge/deploy.
