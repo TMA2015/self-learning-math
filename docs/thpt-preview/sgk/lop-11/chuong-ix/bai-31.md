@@ -194,7 +194,7 @@
     
     Vận dụng kiến thức vào một tình huống mới. Xác định điều kiện và phương pháp trước khi tính.
     
-    **Vận dụng.** Mặt cắt $y=ax^2+bx$ trên [0,10], hai độ dốc đầu–cuối là 0,3 và −0,1. Tìm a,b và $y(10)$.
+    **Vận dụng.** Mặt cắt $y=ax^2+bx$ (x,y tính bằng m) trên [0,10], hai độ dốc đầu–cuối là 0,3 và −0,1. Tìm a,b và $y(10)$.
     
     <span data-ped-first-try="11" data-outcome-id="G11-B31-TANGENT_EQUATION" data-thpt-first-try-id="THPT-G11-B31-TRY11" hidden></span>
     
@@ -233,41 +233,41 @@
     
     \[y-f(a)=f'(a)(x-a).\]
     
-    Nếu tiếp tuyến tạo góc \(\alpha\) với chiều dương trục hoành (góc không phải 90°), \(k=\tan\alpha\). Với đường dốc có góc nghiêng không quá \(\theta\) so với phương ngang, yêu cầu \(|f'(x)|\le\tan\theta\) (\(0\le\theta&lt;90^\circ\)). Có thể tìm tham số của mô hình parabol từ độ dốc tại các điểm; sau đó kiểm lại chiều cao, đơn vị và toàn bộ đoạn đường. SGK dùng dạng cầu parabol và đường nối có độ dốc cho trước; xem các ví dụ mới dưới đây.</p></div>
+    Nếu tiếp tuyến tạo góc \(\alpha\) với chiều dương trục hoành (góc không phải 90°), \(k=\tan\alpha\). Với đường dốc có góc nghiêng không quá \(\theta\) so với phương ngang, yêu cầu \(|f'(x)|\le\tan\theta\) (\(0\le\theta\lt90^\circ\)). Có thể tìm tham số của mô hình parabol từ độ dốc tại các điểm; sau đó kiểm lại chiều cao, đơn vị và toàn bộ đoạn đường. SGK dùng dạng cầu parabol và đường nối có độ dốc cho trước; xem các ví dụ mới dưới đây.</p></div>
 
 === "Ví dụ"
 
     ### 3.1. Định nghĩa tại một điểm
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-01"><p><strong>Đề bài:</strong> \(f(x)=x^2+3x\), tìm \(f'(1)\) từ \(h\).</p><p><strong>Phân tích:</strong> Rút gọn h rồi mới cho h→0; không thay h=0 ngay.</p><p><strong>Lời giải:</strong> \([f(1+h)-f(1)]/h=5+h\to5\), do đó \(f'(1)=5\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-01"><p><strong>Đề bài:</strong> \(f(x)=x^2+3x\), tìm \(f'(1)\) bằng định nghĩa.</p><p><strong>Phân tích:</strong> Rút gọn h rồi mới cho h→0; không thay h=0 ngay.</p><p><strong>Lời giải:</strong> \([f(1+h)-f(1)]/h=5+h\to5\), do đó \(f'(1)=5\).</p><p><strong>Kiểm lại:</strong> Hàm đa thức có thương sai phân xác định với mọi h khác 0; tại 1, giới hạn là 5.</p></div>
 
     ### 3.2. Thương sai phân
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-02"><p><strong>Đề bài:</strong> \(f(x)=2x^2-1\), viết thương tại \(a=3\).</p><p><strong>Phân tích:</strong> Lấy đạo hàm không phải chỉ lấy f(3)=17.</p><p><strong>Lời giải:</strong> \([f(3+h)-f(3)]/h=12+2h\), giới hạn 12.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-02"><p><strong>Đề bài:</strong> \(f(x)=2x^2-1\), viết thương tại \(a=3\).</p><p><strong>Phân tích:</strong> Tính hiệu f(3+h)−f(3), chia h≠0 trước khi lấy giới hạn.</p><p><strong>Lời giải:</strong> \([f(3+h)-f(3)]/h=12+2h\), giới hạn 12.</p><p><strong>Kiểm lại:</strong> Tại h=0 không thay vào thương ban đầu, chỉ lấy giới hạn của biểu thức đã rút gọn.</p></div>
 
     ### 3.3. Tiếp tuyến
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-03"><p><strong>Đề bài:</strong> \(f(x)=x^2-4x+1\) tại \(x=3\).</p><p><strong>Phân tích:</strong> Cần cả điểm (3,-2) và hệ số góc 2.</p><p><strong>Lời giải:</strong> \(f(3)=-2\). Thương sai phân tại 3 là \(2+h\), nên \(f'(3)=2\). Tiếp tuyến \(y+2=2(x-3)\), tức \(y=2x-8\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-03"><p><strong>Đề bài:</strong> Viết phương trình tiếp tuyến của \(f(x)=x^2-4x+1\) tại \(x=3\).</p><p><strong>Phân tích:</strong> Tìm tung độ tiếp điểm và hệ số góc bằng thương sai phân; sau đó viết phương trình đường thẳng.</p><p><strong>Lời giải:</strong> \(f(3)=-2\). Thương sai phân tại 3 là \(2+h\), nên \(f'(3)=2\). Tiếp tuyến \(y+2=2(x-3)\), tức \(y=2x-8\).</p><p><strong>Kiểm lại:</strong> Thay x=3 vào y=2x−8 cho y=−2; hệ số góc 2.</p></div>
 
-    ### 3.4. Góc nhọn |x|
+    ### 3.4. Điểm gấp khúc của hàm trị tuyệt đối
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-04"><p><strong>Đề bài:</strong> Xét đạo hàm \(f(x)=|x-2|\) tại \(2\).</p><p><strong>Phân tích:</strong> Hàm liên tục tại 2 chưa đảm bảo có đạo hàm.</p><p><strong>Lời giải:</strong> Thương tại 2 là \(|h|/h\), hai giới hạn 1 và -1 khác nhau; không có đạo hàm tại 2.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-04"><p><strong>Đề bài:</strong> Xét đạo hàm \(f(x)=|x-2|\) tại \(2\).</p><p><strong>Phân tích:</strong> Hàm liên tục tại 2 chưa đảm bảo có đạo hàm.</p><p><strong>Lời giải:</strong> Thương tại 2 là \(|h|/h\), hai giới hạn 1 và -1 khác nhau; không có đạo hàm tại 2.</p><p><strong>Kiểm lại:</strong> Tại x=2, hàm có giá trị 0 nhưng hai độ dốc một phía khác nhau.</p></div>
 
     ### 3.5. Vận tốc và dấu
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-05"><p><strong>Đề bài:</strong> \(s(t)=10-3t^2\) m, t giây. Tính \(v(1)\).</p><p><strong>Phân tích:</strong> Âm là chiều ngược trục chọn, không phải tốc độ âm.</p><p><strong>Lời giải:</strong> Theo định nghĩa của hàm bậc hai, \(v=s'=-6t\) m/s; \(v(1)=-6\) m/s; tốc độ 6 m/s.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-05"><p><strong>Đề bài:</strong> \(s(t)=10-3t^2\) m, t giây. Tính \(v(1)\).</p><p><strong>Phân tích:</strong> Âm là chiều ngược trục chọn, không phải tốc độ âm.</p><p><strong>Lời giải:</strong> Theo định nghĩa của hàm bậc hai, \(v=s'=-6t\) m/s; \(v(1)=-6\) m/s; tốc độ 6 m/s.</p><p><strong>Kiểm lại:</strong> Vận tốc hướng âm, tốc độ không âm.</p></div>
 
     ### 3.6. Nhiệt độ biến thiên
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-06"><p><strong>Đề bài:</strong> \(T(t)=22+4t-t^2\) °C, t phút. Tính \(T'(2)\).</p><p><strong>Phân tích:</strong> Đơn vị đạo hàm = °C/phút, không phải °C.</p><p><strong>Lời giải:</strong> \(T'=4-2t\), \(T'(2)=0\) °C/phút, nghĩa nhiệt độ tại thời điểm đó đang không tăng/giảm bậc nhất.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-06"><p><strong>Đề bài:</strong> \(T(t)=22+4t-t^2\) °C, t phút. Tính \(T'(2)\).</p><p><strong>Phân tích:</strong> Đơn vị đạo hàm = °C/phút, không phải °C.</p><p><strong>Lời giải:</strong> \(T'=4-2t\), \(T'(2)=0\) °C/phút, nghĩa nhiệt độ tại thời điểm đó đang không tăng/giảm bậc nhất.</p><p><strong>Kiểm lại:</strong> T′(2)=0 là tốc độ biến đổi tại một thời điểm, không chứng minh nhiệt độ không đổi suốt một khoảng.</p></div>
 
     ### 3.7. Đạo hàm trên khoảng
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-07"><p><strong>Đề bài:</strong> Tính đạo hàm \(f(x)=1/x\) và phát biểu khoảng khả vi.</p><p><strong>Phân tích:</strong> Dùng định nghĩa ở B31 thay vì công thức đạo hàm thương ở bài sau.</p><p><strong>Lời giải:</strong> Với \(x\ne0\), và \(h\ne0,x+h\ne0\), thương sai phân \([1/(x+h)-1/x]/h=-1/[x(x+h)]\), tiến tới \(-1/x^2\). Hàm khả vi trên \((-\infty,0)\) và \((0,+\infty)\); không tại 0.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-07"><p><strong>Đề bài:</strong> Tính đạo hàm \(f(x)=1/x\) và phát biểu khoảng khả vi.</p><p><strong>Phân tích:</strong> Dùng định nghĩa ở B31 thay vì công thức đạo hàm thương ở bài sau.</p><p><strong>Lời giải:</strong> Với \(x\ne0\), và \(h\ne0,x+h\ne0\), thương sai phân \([1/(x+h)-1/x]/h=-1/[x(x+h)]\), tiến tới \(-1/x^2\). Hàm khả vi trên \((-\infty,0)\) và \((0,+\infty)\); không tại 0.</p><p><strong>Kiểm lại:</strong> Không lấy x=0 vì hàm gốc không xác định.</p></div>
 
     ### 3.8. Cát tuyến tiến gần
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-08"><p><strong>Đề bài:</strong> \(f(x)=x^2\), P tại x=2, Q tại x=2+h. Hệ số góc? </p><p><strong>Phân tích:</strong> Cát tuyến khác tiếp tuyến khi h≠0; lấy giới hạn.</p><p><strong>Lời giải:</strong> \((4h+h^2)/h=4+h\), tiến tới 4 khi h→0.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-08"><p><strong>Đề bài:</strong> \(f(x)=x^2\), P tại x=2, Q tại x=2+h. Hệ số góc? </p><p><strong>Phân tích:</strong> Cát tuyến khác tiếp tuyến khi h≠0; lấy giới hạn.</p><p><strong>Lời giải:</strong> \((4h+h^2)/h=4+h\), tiến tới 4 khi h→0.</p><p><strong>Kiểm lại:</strong> Khi h=0, P trùng Q, cát tuyến không còn xác định; lấy giới hạn.</p></div>
 
     ### 3.9. Tiếp tuyến ngược từ hai độ dốc
     
