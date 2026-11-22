@@ -135,6 +135,32 @@
 
         **Tự sửa:** Ghi riêng \(u_n\) (một năm) và \(S_n\) (tổng từ năm 1 đến n); đánh dấu **hai khoảng tăng** đến năm thứ ba. Ôn mục 2.2–2.3, luyện Practice mô hình nhân đôi số lượng theo giờ ở <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
+    ### 1.7. So sánh cấp số cộng và cấp số nhân từ quy tắc biến đổi
+
+    Khi một đại lượng tăng **thêm một lượng cố định** sau mỗi bước, ta mô tả bằng cấp số cộng; khi nó được **nhân với một tỉ lệ cố định**, ta dùng cấp số nhân. Để tự nhận diện, hãy tính hiệu hai số liên tiếp cho cấp số cộng, hoặc tỉ số hai số liên tiếp cho cấp số nhân khi mẫu khác \(0\). Không kết luận chỉ từ hai số đầu; phải có quy tắc hoặc đủ dữ kiện để kiểm tra.
+
+    Ví dụ, hai dãy \(2,3,4,5,\ldots\) và \(2,3,4{,}5,6{,}75,\ldots\) có **cùng hai số đầu** nhưng quy luật khác nhau: dãy thứ nhất thêm \(1\), dãy thứ hai nhân \(3/2\). Dãy hằng khác \(0\) là trường hợp đặc biệt có thể vừa là cấp số cộng \(d=0\), vừa là cấp số nhân \(q=1\); hai khái niệm không phải hai nhóm luôn loại trừ nhau.
+
+    **Vận dụng — Tự thử đối chiếu hai quy luật.** Cho \(a_n\) bắt đầu bằng \(3,7,11,15,\ldots\) và \(b_n\) bắt đầu bằng \(3,6,12,24,\ldots\), đều với \(n\ge1\). Xác định loại dãy, lập công thức \(a_n,b_n\), rồi tính số hạng thứ năm của mỗi dãy. Nêu vì sao không nên dùng công sai của \(a_n\) cho \(b_n\).
+
+    <span data-ped-first-try="7" data-outcome-id="G11-CHII-STRUCTURAL-COMPARISON" data-thpt-first-try-id="THPT-G11-B07-TRY07" hidden></span>
+
+    ??? question "Đối chiếu — so sánh hai quy luật"
+
+        **Lời giải:** Hiệu liên tiếp của \(a_n\) luôn là \(4\), nên đây là cấp số cộng với \(a_n=3+4(n-1)\) và \(a_5=19\). Tỉ số liên tiếp của \(b_n\) bằng \(2\), nên đây là cấp số nhân với \(b_n=3\cdot2^{n-1}\) và \(b_5=48\). Hai số đầu bằng nhau không có nghĩa hai dãy cùng quy luật; phải kiểm **hiệu** hoặc **tỉ số** theo bài.
+
+        **Kiểm lại:** \(a_4=15\), \(b_4=24\), đúng hai dãy đã cho; \(a_5-a_4=4\), còn \(b_5/b_4=2\).
+
+    <span data-thpt-help-id="HELP-G11-B07-TRY07" hidden></span>
+
+    ??? tip "Kiểm lỗi — nhầm cộng đều với nhân đều"
+
+        **Dấu hiệu:** Em dùng cùng một công thức số hạng thứ \(n\) cho cả hai dãy, hoặc so tỉ số có mẫu bằng \(0\).
+
+        **Vì sao sai:** CSC giữ **hiệu** không đổi, CSN giữ **tỉ lệ nhân** không đổi, mỗi công thức có điều kiện riêng.
+
+        **Tự sửa:** Viết \(a_2-a_1\), \(a_3-a_2\), rồi \(b_2/b_1\), \(b_3/b_2\); sau đó làm lại bài. Ôn Core nhận diện CSC Bài 6 (**C01**) và Core nhận diện CSN Bài 7 (**C01**) tại <a href="../luyen-tap/">Core và Luyện tập Chương II</a>, rồi thử bài Tự luận tích hợp cùng outcome tại <a href="../../../../thu-vien/tu-luan-g11-chuong-ii/#thpt-g11-chii-w-comp01">thư viện Written</a>.
+
 === "Kiến thức SGK"
 
     ### 2.1. Định nghĩa cấp số nhân và công bội
@@ -247,6 +273,15 @@
     <p><strong>Lời giải:</strong> \(u_4=120(1{,}1)^3=159{,}72\) triệu đồng; \(S_4=\frac{120[1-(1{,}1)^4]}{1-1{,}1}=556{,}92\) triệu đồng.</p>
     <p><strong>Kiểm lại:</strong> \(u_1=120,u_2=132,u_3=145{,}2,u_4=159{,}72\); cộng bốn số được \(556{,}92\). Mô hình không tự dự báo được dữ liệu thực tế nếu tỉ lệ thay đổi.</p></div>
 
+    ### 3.7. Phân biệt một cấp số cộng và một cấp số nhân
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B07-R04-COMP01">
+    <p><strong>Đề bài:</strong> Với \(n\ge1\), cho \(u_n=7+2(n-1)\) và \(v_n=7\left(\frac32\right)^{n-1}\). Xác định dạng dãy và so sánh \(u_4,v_4\).</p>
+    <p><strong>Phân tích:</strong> Một biểu thức tuyến tính theo \(n\) phù hợp quy luật cộng đều; biểu thức lũy thừa phù hợp quy luật nhân đều. So sánh phải dùng cùng chỉ số \(n=4\), không so tổng với một số hạng.</p>
+    <p><strong>Lời giải:</strong> \(u_{n+1}-u_n=2\) nên \((u_n)\) là CSC với \(d=2\). \(v_{n+1}=\frac32v_n\) nên \((v_n)\) là CSN với \(q=3/2\). \(u_4=7+2\cdot3=13\), \(v_4=7(3/2)^3=189/8=23{,}625\); vậy \(v_4>u_4\).</p>
+    <p><strong>Kiểm lại:</strong> Với \(n=1\), cả hai đều bằng \(7\); ở bước tiếp theo \(u_2=9\) còn \(v_2=10{,}5\). Phép kiểm hiệu/tỉ số không dùng chia cho số hạng \(0\).</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     Khi sai một Vận dụng, hãy mở Kiểm lỗi của câu đó. Các lỗi dưới đây liên quan đến nguyên tắc chung và nên được ôn lại trước khi làm Practice.
@@ -300,6 +335,16 @@
         **Vì sao sai:** Công bội có thể âm; một phương trình bình phương chỉ chứng minh điều kiện cần của bộ ba. Với số \(0\), phải kiểm định nghĩa nhân trực tiếp.
 
         **Tự sửa:** Ôn mục 2.2, Ví dụ 3.5 rồi luyện Core ba số dương \(2,x,18\) và Practice \(9,x,1\) có ràng buộc dương ở <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
+
+    <span data-thpt-help-id="HELP-G11-B07-COMP" hidden></span>
+
+    ??? tip "4.6. Nhầm quy luật tăng thêm với nhân theo tỉ lệ"
+
+        **Dấu hiệu:** Em kết luận một dãy là CSC chỉ vì các số hạng tăng, hoặc lấy công sai làm công bội.
+
+        **Vì sao sai:** Tăng dần không đủ phân biệt loại dãy. Cần kiểm **hiệu hai số hạng liên tiếp** hoặc **tỉ số** (khi mẫu khác \(0\)).
+
+        **Tự sửa:** Ôn mục 1.7 và Ví dụ 3.7; tự đối chiếu các dãy \(3,7,11,15,\ldots\) và \(3,6,12,24,\ldots\), rồi giải một câu nhận diện CSC và một câu nhận diện CSN ở <a href="../luyen-tap/">Core và Luyện tập Chương II</a>.
 
     **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-ii/">Tự luận Chương II</a>.
 
