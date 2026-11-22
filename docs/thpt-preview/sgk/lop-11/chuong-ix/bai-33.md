@@ -22,7 +22,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không bình phương đạo hàm; đạo hàm tiếp một lần. [Luyện lại B33-C01](../luyen-tap/?item=THPT-G11-CHIX-B33-C01)
+        **Vì sao dễ sai:** Đạo hàm cấp hai là đạo hàm của hàm f', không phải bình phương giá trị f'.
+
+        **Tự sửa:** Không bình phương đạo hàm; đạo hàm tiếp một lần. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C01">Luyện lại B33-C01</a>
 
     ### 1.2. Hai lần đạo hàm của đa thức
     
@@ -40,7 +42,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tìm cả hàm f″ trước khi thay x=2. [Luyện lại B33-C02](../luyen-tap/?item=THPT-G11-CHIX-B33-C02)
+        **Vì sao dễ sai:** Thay x vào f' trước khi lấy đạo hàm sẽ làm mất thông tin hàm và cho đạo hàm sai.
+
+        **Tự sửa:** Tìm cả hàm f″ trước khi thay x=2. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C02">Luyện lại B33-C02</a>
 
     ### 1.3. Hàm hợp ở cả hai lượt
     
@@ -58,7 +62,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Hai lượt đều nhân đạo hàm hàm trong. [Luyện lại B33-C03](../luyen-tap/?item=THPT-G11-CHIX-B33-C03)
+        **Vì sao dễ sai:** Quy tắc hàm hợp được áp dụng ở cả hai lần đạo hàm, bao gồm hệ số pha và dấu.
+
+        **Tự sửa:** Hai lượt đều nhân đạo hàm hàm trong. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C03">Luyện lại B33-C03</a>
 
     ### 1.4. Đọc vận tốc và gia tốc
     
@@ -78,7 +84,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không thay t vào s′ rồi đạo hàm hằng số đó. [Luyện lại B33-C04](../luyen-tap/?item=THPT-G11-CHIX-B33-C04)
+        **Vì sao dễ sai:** Gia tốc là đạo hàm của hàm vận tốc, không phải đạo hàm của một vận tốc đã thế số.
+
+        **Tự sửa:** Không thay t vào s′ rồi đạo hàm hằng số đó. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C04">Luyện lại B33-C04</a>
 
     ### 1.5. Dấu không đồng nghĩa nhanh hay chậm
     
@@ -96,7 +104,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Gia tốc âm không tự có nghĩa chậm dần. [Luyện lại B33-C05](../luyen-tap/?item=THPT-G11-CHIX-B33-C05)
+        **Vì sao dễ sai:** Gia tốc âm chỉ nói về hướng thay đổi vận tốc; nhanh/chậm dần còn tùy dấu vận tốc.
+
+        **Tự sửa:** Gia tốc âm không tự có nghĩa chậm dần. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C05">Luyện lại B33-C05</a>
 
     ### 1.6. Tìm hệ số ngược
     
@@ -114,7 +124,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Lập riêng hai điều kiện, không sử dụng giá trị f thay cho f′. [Luyện lại B33-C02](../luyen-tap/?item=THPT-G11-CHIX-B33-C02)
+        **Vì sao dễ sai:** Hai ràng buộc f'(a) và f''(a) phải thành hai phương trình đạo hàm khác nhau.
+
+        **Tự sửa:** Lập riêng hai điều kiện, không sử dụng giá trị f thay cho f′. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C02">Luyện lại B33-C02</a>
 
     ### 1.7. Chặn độ lớn đạo hàm cấp hai
     
@@ -132,7 +144,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không kết luận từ việc thử một vài điểm. [Luyện lại B33-C03](../luyen-tap/?item=THPT-G11-CHIX-B33-C03)
+        **Vì sao dễ sai:** Kiểm vài giá trị không chứng minh được một cận cho mọi x; cần bất đẳng thức tổng quát.
+
+        **Tự sửa:** Không kết luận từ việc thử một vài điểm. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C03">Luyện lại B33-C03</a>
 
     ### 1.8. Gia tốc dao động
     
@@ -150,7 +164,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Mỗi lần đạo hàm nhân 2π; không dùng độ đo góc theo độ. [Luyện lại B33-P04](../luyen-tap/?item=THPT-G11-CHIX-B33-P04)
+        **Vì sao dễ sai:** Đạo hàm pha lượng giác tính theo radian; mỗi lần đều nhân đạo hàm của pha.
+
+        **Tự sửa:** Mỗi lần đạo hàm nhân 2π; không dùng độ đo góc theo độ. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-P04">Luyện lại B33-P04</a>
 
 === "Kiến thức SGK"
 
@@ -222,20 +238,20 @@
     
     ??? tip "4.1. Nhầm đạo hàm cấp hai với bình phương"
     
-        Với $f=x^2$, $f''=2$ trong khi $(f')^2=4x^2$. [Luyện lại B33-C01](../luyen-tap/?item=THPT-G11-CHIX-B33-C01)
+        Với $f=x^2$, $f''=2$ trong khi $(f')^2=4x^2$. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-C01">Luyện lại B33-C01</a>
 
     <span data-thpt-help-id="HELP-G11-CHIX-B33-02" hidden></span>
     
     ??? tip "4.2. Cứ gia tốc âm là chậm dần"
     
-        Nếu v=−2 và a=−1 thì vật đi chiều âm và tốc độ tăng tại điểm đó; phải xét đồng thời dấu v,a. [Luyện lại B33-P05](../luyen-tap/?item=THPT-G11-CHIX-B33-P05)
+        Nếu v=−2 và a=−1 thì vật đi chiều âm và tốc độ tăng tại điểm đó; phải xét đồng thời dấu v,a. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-P05">Luyện lại B33-P05</a>
 
     <span data-thpt-help-id="HELP-G11-CHIX-B33-03" hidden></span>
     
     ??? tip "4.3. Nhầm đơn vị hoặc miền thời gian"
     
-        $s(t)=6t-2t^2$ m trên [0,3], a=−4 m/s² trong khoảng mô hình. Không suy diễn quá t=3. [Luyện lại B33-P04](../luyen-tap/?item=THPT-G11-CHIX-B33-P04)
+        $s(t)=6t-2t^2$ m trên [0,3], a=−4 m/s² trong khoảng mô hình. Không suy diễn quá t=3. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-P04">Luyện lại B33-P04</a>
 
-    [Core và Luyện tập Bài 33](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập Bài 33</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-ix/">Tự luận Chương IX</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
 
-*Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 33, trang in 95–96.*
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 33 (trang in 95–96). SBT cùng bộ hỗ trợ luyện tập; SGK S1 quyết định kiến thức chính thức.</p>
