@@ -24,7 +24,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Điểm gốc tại t=0; giữ đúng tọa độ cố định. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p01). Sau đó tự làm lại Vận dụng.
+        Điểm gốc tại t=0; giữ đúng tọa độ cố định. <a href="../luyen-tap/#thpt-g12-b15-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.2. Qua hai điểm: hướng là hiệu tọa độ
     
@@ -42,7 +42,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không áp miền [0,1] nếu đã tùy ý rút gọn hướng mà không đổi thang tham số. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p02). Sau đó tự làm lại Vận dụng.
+        Không áp miền [0,1] nếu đã tùy ý rút gọn hướng mà không đổi thang tham số. <a href="../luyen-tap/#thpt-g12-b15-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.3. Chính tắc và thành phần hướng bằng 0
     
@@ -60,7 +60,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không ghi (y−3)/0; hệ hai phân thức là dạng tương đương, không phải chính tắc đầy đủ SGK. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p03). Sau đó tự làm lại Vận dụng.
+        Không ghi (y−3)/0; hệ hai phân thức là dạng tương đương, không phải chính tắc đầy đủ SGK. <a href="../luyen-tap/#thpt-g12-b15-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.4. Kiểm một điểm với cùng tham số
     
@@ -78,7 +78,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Một tọa độ sai đủ bác bỏ; không chọn t khác nhau. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p04). Sau đó tự làm lại Vận dụng.
+        Một tọa độ sai đủ bác bỏ; không chọn t khác nhau. <a href="../luyen-tap/#thpt-g12-b15-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.5. Vuông góc không đồng nghĩa với cắt nhau
     
@@ -96,7 +96,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tách hai câu hỏi: góc giữa hướng và vị trí tương đối. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p05). Sau đó tự làm lại Vận dụng.
+        Tách hai câu hỏi: góc giữa hướng và vị trí tương đối. <a href="../luyen-tap/#thpt-g12-b15-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.6. Bốn vị trí tương đối
     
@@ -114,7 +114,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không kết luận cắt chỉ khi hai phương trình đầu thỏa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p06). Sau đó tự làm lại Vận dụng.
+        Không kết luận cắt chỉ khi hai phương trình đầu thỏa. <a href="../luyen-tap/#thpt-g12-b15-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.7. Giao đường–mặt và miền tham số
     
@@ -132,7 +132,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Sau khi giải t, kiểm miền thời gian/đoạn theo mô hình. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p07). Sau đó tự làm lại Vận dụng.
+        Sau khi giải t, kiểm miền thời gian/đoạn theo mô hình. <a href="../luyen-tap/#thpt-g12-b15-c07">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.8. Tầm nhìn bị che bởi đĩa tròn
     
@@ -152,7 +152,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c08); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p08). Sau đó tự làm lại Vận dụng.
+        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. <a href="../luyen-tap/#thpt-g12-b15-c08">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p08">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
 === "Kiến thức SGK"
 
@@ -224,50 +224,50 @@
     
     ??? tip "Cách tự sửa"
     
-        Điểm gốc tại t=0; giữ đúng tọa độ cố định. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p01). Sau đó tự làm lại Vận dụng.
+        Điểm gốc tại t=0; giữ đúng tọa độ cố định. <a href="../luyen-tap/#thpt-g12-b15-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.2. Qua hai điểm: hướng là hiệu tọa độ
     
     ??? tip "Cách tự sửa"
     
-        Không áp miền [0,1] nếu đã tùy ý rút gọn hướng mà không đổi thang tham số. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p02). Sau đó tự làm lại Vận dụng.
+        Không áp miền [0,1] nếu đã tùy ý rút gọn hướng mà không đổi thang tham số. <a href="../luyen-tap/#thpt-g12-b15-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.3. Chính tắc và thành phần hướng bằng 0
     
     ??? tip "Cách tự sửa"
     
-        Không ghi (y−3)/0; hệ hai phân thức là dạng tương đương, không phải chính tắc đầy đủ SGK. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p03). Sau đó tự làm lại Vận dụng.
+        Không ghi (y−3)/0; hệ hai phân thức là dạng tương đương, không phải chính tắc đầy đủ SGK. <a href="../luyen-tap/#thpt-g12-b15-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.4. Kiểm một điểm với cùng tham số
     
     ??? tip "Cách tự sửa"
     
-        Một tọa độ sai đủ bác bỏ; không chọn t khác nhau. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p04). Sau đó tự làm lại Vận dụng.
+        Một tọa độ sai đủ bác bỏ; không chọn t khác nhau. <a href="../luyen-tap/#thpt-g12-b15-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.5. Vuông góc không đồng nghĩa với cắt nhau
     
     ??? tip "Cách tự sửa"
     
-        Tách hai câu hỏi: góc giữa hướng và vị trí tương đối. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p05). Sau đó tự làm lại Vận dụng.
+        Tách hai câu hỏi: góc giữa hướng và vị trí tương đối. <a href="../luyen-tap/#thpt-g12-b15-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.6. Bốn vị trí tương đối
     
     ??? tip "Cách tự sửa"
     
-        Không kết luận cắt chỉ khi hai phương trình đầu thỏa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p06). Sau đó tự làm lại Vận dụng.
+        Không kết luận cắt chỉ khi hai phương trình đầu thỏa. <a href="../luyen-tap/#thpt-g12-b15-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.7. Giao đường–mặt và miền tham số
     
     ??? tip "Cách tự sửa"
     
-        Sau khi giải t, kiểm miền thời gian/đoạn theo mô hình. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p07). Sau đó tự làm lại Vận dụng.
+        Sau khi giải t, kiểm miền thời gian/đoạn theo mô hình. <a href="../luyen-tap/#thpt-g12-b15-c07">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.8. Tầm nhìn bị che bởi đĩa tròn
     
     ??? tip "Cách tự sửa"
     
-        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b15-c08); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b15-p08). Sau đó tự làm lại Vận dụng.
+        Kiểm cả t lẫn bình phương khoảng cách đến tâm đĩa. <a href="../luyen-tap/#thpt-g12-b15-c08">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b15-p08">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
-    [Core Bài 15](../luyen-tap/#b15-core) · [Luyện tập và Tự luận](../luyen-tap/#b15-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b15-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b15-core">Core Bài 15</a> · <a href="../luyen-tap/#b15-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b15-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
 *Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 41–49; SBT trang in 26–29. Trang 25 SBT thuộc Bài 14 và thiếu trong bản PDF quét, không phải thiếu trang nguồn của Bài 15.*
