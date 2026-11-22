@@ -1,113 +1,306 @@
-# Toán 11 · Bài 31. Định nghĩa và ý nghĩa của đạo hàm
+# Bài 31. Định nghĩa và ý nghĩa của đạo hàm
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IX · BÀI 31 · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Hiểu nhu cầu → điều kiện → bản chất trước công thức → xem hình minh họa → Tự thử trước Core → ví dụ có suy luận → Core, Luyện tập và tự khắc phục. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IX</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IX · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Từ tốc độ trung bình đến tốc độ tức thời, từ cát tuyến đến tiếp tuyến; biết dùng độ dốc để giải bài toán ngược.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IX</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Kiến thức SGK — hình thành bản chất trước công thức
+=== "Khám phá kiến thức"
 
-### 1.1. Một tốc độ trung bình có thể che giấu sự thay đổi ngay tại một thời điểm
-Giả sử quãng đường chuyển động $s(t)=t^2$ mét, thời gian $t$ giây. Trong khoảng từ $t=2$ đến $t=3$, vật đi từ 4 m đến 9 m, nên vận tốc trung bình bằng $(9-4)/(3-2)=5$ m/s. Nhưng vật có giữ vận tốc 5 m/s **đúng lúc** $t=2$ không? Không: khoảng đo 1 giây quá dài. Ta cần thu hẹp khoảng đo. Đó chính là nhu cầu hình thành đạo hàm, chứ không phải yêu cầu học thuộc ký hiệu $f'(x)$.
+    Một xe đi được 6 m trong một giây không có nghĩa ở mọi thời điểm trong giây đó xe đều chạy 6 m/s. Muốn biết nó đang thay đổi vị trí nhanh thế nào tại một thời điểm, ta thu hẹp khoảng đo quanh thời điểm ấy. Cùng ý tưởng này giúp đo độ dốc của đường cong, cường độ dòng điện và tốc độ thay đổi của một đại lượng.
 
-### 1.2. Từ vận tốc trung bình đến thương sai phân
-Với $y=f(x)$, tại $x=a$ và $x=a+h$ (đều thuộc miền xác định, $h\ne0$), độ tăng đầu vào là $h$, độ tăng đầu ra $\Delta y=f(a+h)-f(a)$. **Tốc độ biến đổi trung bình** là $\Delta y/h$. Nếu khi $h$ tiến về $0$ **từ cả hai phía** biểu thức này tiến đến một số hữu hạn $L$, ta định nghĩa đạo hàm tại $a$ là $f'(a)=L$. Viết đúng $f'(a)=\lim_{h\to0}[f(a+h)-f(a)]/h$. Không được lấy trực tiếp $h=0$ vì biểu thức ban đầu là $0/0$; phải rút gọn hay biến đổi rồi mới lấy giới hạn.
+    ### 1.1. Tốc độ biến đổi trung bình
+    
+    Nếu tọa độ tăng từ $s(t_1)$ đến $s(t_2)$, ta chia phần tăng cho thời gian đã trôi qua, không chia cho $t_2$. Tỉ số mang dấu theo chiều quy ước.
+    
+    **Vận dụng.** Một vật có $s(t)=t^2+2t$ (m). Tính vận tốc trung bình từ $t=1$ đến $t=4$ giây.
+    
+    <span data-ped-first-try="1" data-outcome-id="G11-B31-AVERAGE_RATE" data-thpt-first-try-id="THPT-G11-B31-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $s(1)=3$, $s(4)=24$, nên $v_{\rm tb}=(24-3)/(4-1)=7$ m/s.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Tính riêng hai giá trị và hai hiệu, không lấy 24/4. [Luyện lại B31-C01](../luyen-tap/?item=THPT-G11-CHIX-B31-C01)
 
-**Thực hành trước khi xem công thức:** Với $f(x)=x^2$, hãy viết $f(2+h)-f(2)$; kết quả là $4h+h^2$, nên thương bằng $4+h$, giới hạn $4$. Đạo hàm tại 2 là 4 đơn vị đầu ra trên một đơn vị đầu vào. Nếu $f$ xác định và có đạo hàm tại mỗi điểm trên khoảng, ta nói $f$ có đạo hàm trên khoảng ấy và $f'(x)$ là một **hàm mới**.
+    ### 1.2. Thu hẹp khoảng đo
+    
+    Gọi $h$ là độ tăng đầu vào, có thể dương hoặc âm nhưng khác 0. Thương sai phân là độ tăng đầu ra chia $h$. Muốn biết tốc độ ngay tại điểm, tìm giới hạn của thương khi $h$ tiến về 0.
+    
+    **Vận dụng.** Với $f(x)=3x^2-1$, lập và rút gọn thương sai phân tại $a=2$ (chưa tính giới hạn).
+    
+    <span data-ped-first-try="2" data-outcome-id="G11-B31-LIMIT_QUOTIENT" data-thpt-first-try-id="THPT-G11-B31-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $[3(2+h)^2-1-11]/h=(12h+3h^2)/h=12+3h$ với $h\ne0$.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không thay h=0 trong thương gốc. [Luyện lại B31-C02](../luyen-tap/?item=THPT-G11-CHIX-B31-C02)
 
-### 1.3. Điều kiện toán học và các bẫy
-Đạo hàm thông thường tại điểm trong khoảng cần giới hạn sai phân **hai phía**, hữu hạn và nhất quán. Nếu chỉ có một phía hoặc thương sai phân vô hạn thì chưa có đạo hàm hữu hạn hai phía. **Có đạo hàm ⇒ liên tục** tại điểm ấy, nhưng chiều ngược lại sai: $f(x)=|x|$ liên tục tại 0 mà $[|h|-0]/h=1$ khi $h>0$, bằng $-1$ khi $h<0$ nên **không có đạo hàm ở 0**. Đừng nói mọi đồ thị nối liền đều có tiếp tuyến dốc hữu hạn. Đối với $f(x)=\sqrt{x}$, định nghĩa chỉ nhận $x\ge0$; trên $x>0$ có đạo hàm, còn tại biên 0 không có đạo hàm hai phía theo nghĩa thông thường trên khoảng.
+    ### 1.3. Tìm đạo hàm tại một điểm
+    
+    Sau khi lập thương sai phân, nếu hai phía cùng tiến tới một số hữu hạn, số đó là đạo hàm tại điểm. Đây là tốc độ biến đổi tức thời, không phải giá trị hàm.
+    
+    **Vận dụng.** Dùng định nghĩa tính $f'(2)$ với $f(x)=x^2-2x+5$.
+    
+    <span data-ped-first-try="3" data-outcome-id="G11-B31-DERIVATIVE_AT_POINT" data-thpt-first-try-id="THPT-G11-B31-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $f(2)=5$; tử sai phân $=2h+h^2$. Thương $=2+h$ với $h\ne0$; giới hạn bằng 2.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Tách bước lập thương, rút gọn và lấy giới hạn. [Luyện lại B31-C03](../luyen-tap/?item=THPT-G11-CHIX-B31-C03)
 
-### 1.4. Ý nghĩa hình học — Cát tuyến tiến tới tiếp tuyến
-Hai điểm $P(a,f(a))$, $Q(a+h,f(a+h))$ xác định đường **cát tuyến** với hệ số góc $[f(a+h)-f(a)]/h$. Khi $Q\to P$, nếu giới hạn hữu hạn, hệ số góc tiến tới $f'(a)$: đó là hệ số góc **tiếp tuyến** tại $P$. Phương trình tiếp tuyến là $y-f(a)=f'(a)(x-a)$. **Lưu ý** $f(a)$ là tung độ điểm tiếp xúc; $f'(a)$ là độ dốc; chúng không hoán đổi. **Hình FIG-G11-CHIX-B31-01:** cát tuyến trên $y=x^2$ qua $P(1,1)$ và $Q(1+h,(1+h)^2)$ tiến tới đường tiếp tuyến $y=2x-1$ khi $h\to0$; học sinh so sánh hệ số góc $2+h$ và 2.
+    ### 1.4. Từ một số đến một hàm mới
+    
+    Nếu có đạo hàm tại từng điểm của khoảng thì ta có hàm đạo hàm. Phải giữ miền của hàm gốc, kể cả khi biểu thức sau biến đổi trông đơn giản hơn.
+    
+    **Vận dụng.** Với $f(x)=2/x$, dùng định nghĩa tại $a\ne0$ để tìm $f'(a)$; hàm khả vi trên các khoảng nào?
+    
+    <span data-ped-first-try="4" data-outcome-id="G11-B31-DIFFERENTIABILITY" data-thpt-first-try-id="THPT-G11-B31-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Thương $=-2/[a(a+h)]$ với $h\ne0,a+h\ne0$. Giới hạn $=-2/a^2$; các khoảng $(-\infty,0)$ và $(0,+\infty)$.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không đi qua điểm 0 khi nêu khoảng khả vi. [Luyện lại B31-C04](../luyen-tap/?item=THPT-G11-CHIX-B31-C04)
 
-### 1.5. Ý nghĩa vật lý và thực tế — dấu/đơn vị
-Với tọa độ $s(t)$ mét và $t$ giây, $v(t)=s'(t)$ có đơn vị m/s, **có dấu** (dương theo chiều quy ước, âm ngược chiều). **Tốc độ** là $|v(t)|$, không phải luôn $v(t)$. Trong mô hình nhiệt độ $T(t)$ đo bằng °C, $T'(t)$ có đơn vị °C/phút nếu $t$ là phút, diễn đạt tốc độ nhiệt độ đang thay đổi; không phải nhiệt độ $T$.
+    ### 1.5. Liên tục là điều kiện cần
+    
+    Nếu thương sai phân có giới hạn hữu hạn thì $f(a+h)-f(a)$ bằng $h$ nhân thương, tiến về 0. Do đó có đạo hàm thì liên tục; chưa thể đảo chiều suy luận.
+    
+    **Vận dụng.** Một hàm có $f(0)=3$ nhưng giới hạn $f(x)$ khi $x\to0$ bằng 1. Có thể có đạo hàm tại 0 không?
+    
+    <span data-ped-first-try="5" data-outcome-id="G11-B31-CONTINUITY_NECESSARY" data-thpt-first-try-id="THPT-G11-B31-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Không. Hàm không liên tục tại 0; có đạo hàm tại 0 sẽ kéo theo liên tục tại đó.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm liên tục trước khi thử tính đạo hàm. [Luyện lại B31-C05](../luyen-tap/?item=THPT-G11-CHIX-B31-C05)
 
-### 1.6. Tự thử *trước* Core
-Tính vận tốc tức thời của $s(t)=3t^2+2t$ tại $t=1$ **bằng định nghĩa**. Vì sao phải rút gọn $h$ trước khi lấy giới hạn? Nếu $f(1)=5$ và $f'(1)=8$, phương trình tiếp tuyến là gì?
+    ### 1.6. Điểm gấp khúc
+    
+    Đồ thị chữ V có thể liền mạch, nhưng hai độ dốc khi tiến về đỉnh không trùng nhau. Cần nhìn hai phía, không chỉ vẽ một tiếp tuyến tưởng tượng.
+    
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B31-02_R00.svg" alt="Đồ thị chữ V, hai độ dốc trái và phải khác nhau."/><figcaption>Đọc hình: Đồ thị \(y=|x|\) liên tục tại O. Độ dốc bên trái là −1, bên phải +1; vì vậy không có đạo hàm tại O.</figcaption></figure>
+    
+    **Vận dụng.** Xét đạo hàm của $f(x)=2|x-4|$ tại 4.
+    
+    <span data-ped-first-try="6" data-outcome-id="G11-B31-CORNER_CUSP" data-thpt-first-try-id="THPT-G11-B31-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Thương $2|h|/h$ có giới hạn trái −2, phải 2. Không có đạo hàm tại 4, dù hàm liên tục.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Tính riêng h âm và h dương. [Luyện lại B31-C06](../luyen-tap/?item=THPT-G11-CHIX-B31-C06)
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Đối chiếu sau khi thử:</strong> thương $[s(1+h)-s(1)]/h=8+3h$, cho $v(1)=8$ m/s; chưa được đặt $h=0$ trong thương gốc; tiếp tuyến $y-5=8(x-1)$.</p></details>
+    ### 1.7. Cát tuyến và độ dốc tức thời
+    
+    Độ dốc của đường qua hai điểm là hệ số góc cát tuyến. Khi điểm thứ hai tiến về điểm thứ nhất và hệ số góc có giới hạn hữu hạn, giới hạn cho hệ số góc tiếp tuyến.
+    
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B31-01_R00.svg" alt="Cát tuyến qua P và Q, tiếp tuyến qua P; độ dốc cát tuyến tiến tới 2."/><figcaption>Đọc hình: Parabol \(y=x^2\), P(1;1), Q(1,8;3,24). Cát tuyến PQ có độ dốc 2,8; đường tiếp tuyến tại P có độ dốc 2 và phương trình \(y=2x-1\).</figcaption></figure>
+    
+    **Vận dụng.** Trên $y=x^2$, P có hoành độ −2; Q có hoành độ $-2+h$. Tính hệ số góc cát tuyến và giới hạn.
+    
+    <span data-ped-first-try="7" data-outcome-id="G11-B31-TANGENT_SLOPE" data-thpt-first-try-id="THPT-G11-B31-TRY07" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Thương $=(-4h+h^2)/h=-4+h$; giới hạn −4.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY07" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Dấu của hệ số góc có ý nghĩa: tiếp tuyến đi xuống khi x tăng. [Luyện lại B31-C07](../luyen-tap/?item=THPT-G11-CHIX-B31-C07)
 
-**Liên kết D6:** nếu lấy $f(a)$ làm độ dốc, quay lại `HELP-G11-CHIX-B31-03`; nếu lấy $h=0$ sớm, xem `HELP-G11-CHIX-B31-01`; nếu quên trái/phải của $|x|$, xem `HELP-G11-CHIX-B31-02`.
+    ### 1.8. Một điểm và một độ dốc
+    
+    Biết tiếp điểm $(a,f(a))$ và hệ số góc $k=f'(a)$ thì dùng phương trình đường thẳng qua điểm. Khi thiết kế đường cong, có thể đi ngược từ yêu cầu độ dốc để tìm tham số.
+    
+    **Vận dụng.** Biết $f(-1)=6,f'(-1)=-2$. Viết phương trình tiếp tuyến.
+    
+    <span data-ped-first-try="8" data-outcome-id="G11-B31-TANGENT_EQUATION" data-thpt-first-try-id="THPT-G11-B31-TRY08" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $y-6=-2(x+1)$, hay $y=-2x+4$.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY08" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Thay hoành độ −1 vào kết quả để kiểm tiếp điểm. [Luyện lại B31-C08](../luyen-tap/?item=THPT-G11-CHIX-B31-C08)
 
-### 1.7. Đọc hình để hiểu lập luận
+    ### 1.9. Vận tốc có dấu, tốc độ không âm
+    
+    Với tọa độ $s(t)$, vận tốc tức thời là $s'(t)$. Nghiệm thời điểm chạm mốc phải thuộc khoảng thời gian vật còn chuyển động theo mô hình.
+    
+    **Vận dụng.** $s(t)=15-2t^2$ m, $0<t<2$. Tính vận tốc và tốc độ tại t=1.
+    
+    <span data-ped-first-try="9" data-outcome-id="G11-B31-INSTANT_VELOCITY" data-thpt-first-try-id="THPT-G11-B31-TRY09" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $v(t)=-4t$ m/s; $v(1)=-4$ m/s, tốc độ 4 m/s.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY09" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không gọi −4 là tốc độ. [Luyện lại B31-C09](../luyen-tap/?item=THPT-G11-CHIX-B31-C09)
 
-<figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B31-01_R00.svg" alt="Hình minh họa 1 về lập luận trong Bài 31" /><figcaption>Hình minh họa 1 — đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
+    ### 1.10. Đơn vị và ý nghĩa
+    
+    Đạo hàm mang đơn vị đại lượng đầu ra chia đơn vị đầu vào. Điện lượng $Q(t)$ (C) biến đổi theo thời gian (s) thì cường độ tức thời là $I(t)=Q'(t)$ (A=C/s).
+    
+    **Vận dụng.** Điện lượng qua dây $Q(t)=2t^2+3t$ C. Tính cường độ tại t=2 s.
+    
+    <span data-ped-first-try="10" data-outcome-id="G11-B31-RATE_UNITS" data-thpt-first-try-id="THPT-G11-B31-TRY10" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $I(t)=4t+3$, $I(2)=11$ C/s = 11 A.
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY10" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không nhầm điện lượng tại thời điểm với cường độ. [Luyện lại B31-C10](../luyen-tap/?item=THPT-G11-CHIX-B31-C10)
 
-<figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B31-02_R00.svg" alt="Hình minh họa 2 về lập luận trong Bài 31" /><figcaption>Hình minh họa 2 — đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
+    ### 1.11. Tự thiết kế độ dốc
+    
+    Vận dụng kiến thức vào một tình huống mới. Xác định điều kiện và phương pháp trước khi tính.
+    
+    **Vận dụng.** Mặt cắt $y=ax^2+bx$ trên [0,10], hai độ dốc đầu–cuối là 0,3 và −0,1. Tìm a,b và $y(10)$.
+    
+    <span data-ped-first-try="11" data-outcome-id="G11-B31-TANGENT_EQUATION" data-thpt-first-try-id="THPT-G11-B31-TRY11" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $b=0,3$, $20a+b=-0,1$ nên $a=-0,02$; $y(10)=-2+3=1$ m (nếu x,y tính bằng m).
+    
+    <span data-thpt-help-id="HELP-G11-B31-TRY11" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Lập hai phương trình độ dốc; kiểm hai đầu bằng f′, không phải f. [Luyện lại B31-C08](../luyen-tap/?item=THPT-G11-CHIX-B31-C08)
 
-## 2. Ví dụ có suy luận
+=== "Kiến thức SGK"
 
-#### EX-G11-CHIX-B31-01: Định nghĩa tại một điểm
+    ### 2.1. Một số bài toán dẫn đến khái niệm đạo hàm
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Một số bài toán dẫn đến khái niệm đạo hàm.</strong><p>Tốc độ biến đổi trung bình của \(y=f(x)\) trên hai đầu mút \(a,b\) khác nhau là \(\dfrac{f(b)-f(a)}{b-a}\). Khi \(b\) tiến đến \(a\), giới hạn hữu hạn của tỉ số này diễn tả tốc độ tức thời. Với tọa độ \(s(t)\) (m), vận tốc tức thời \(v(t)=s'(t)\) (m/s) và tốc độ \(|v(t)|\); với điện lượng \(Q(t)\) (C), \(I(t)=Q'(t)\) (A). Dấu phụ thuộc chiều quy ước; chỉ áp dụng trong khoảng mô hình có ý nghĩa.</p></div>
 
-**Bài toán:** $f(x)=x^2+3x$, tìm $f'(1)$ từ $h$.
+    ### 2.2. Đạo hàm của hàm số tại một điểm
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Đạo hàm của hàm số tại một điểm.</strong><p>Cho \(f\) xác định trên khoảng chứa \(a\). Nếu giới hạn sau tồn tại hữu hạn, nó là đạo hàm của \(f\) tại \(a\):
+    
+    \[f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}
+    =\lim_{h\to0}\frac{f(a+h)-f(a)}{h}.\]
+    
+    Tính \(f(a)\) → lập và rút gọn thương với \(h\ne0\) → lấy giới hạn hai phía. Nếu hai phía khác nhau hoặc giới hạn không hữu hạn thì không có đạo hàm hữu hạn thông thường tại điểm ấy. Có đạo hàm suy ra liên tục vì hiệu \(f(a+h)-f(a)=h\) nhân thương sai phân tiến về 0. Chiều ngược lại sai: tại 0, \(|x|\) có hai độ dốc −1 và 1. Ở đầu mút miền xác định không tự khẳng định đạo hàm hai phía.</p></div>
 
-**Phân tích, đáp án:** $[f(1+h)-f(1)]/h=5+h\to5$, do đó $f'(1)=5$.
+    ### 2.3. Đạo hàm của hàm số trên một khoảng
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Đạo hàm của hàm số trên một khoảng.</strong><p>Nếu \(f\) có đạo hàm tại mọi điểm \(x\) của khoảng \(I\), ta gọi \(f\) có đạo hàm trên \(I\) và kí hiệu hàm mới là \(f'(x)\) hoặc \(y'\). Chẳng hạn với hằng số c, thương sai phân của \(c\) bằng 0, của \(x\) bằng 1, của \(cx^2\) bằng \(2cx+ch\). Vì vậy \((c)'=0\), \((x)'=1\), \((cx^2)'=2cx\). Tương tự \((kx+c)'=k\). Xác định khoảng của hàm gốc trước khi phát biểu khả vi.</p></div>
 
-**Vì sao:** Rút gọn h rồi mới cho h→0; không thay h=0 ngay.
+    ### 2.4. Ý nghĩa hình học của đạo hàm
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Ý nghĩa hình học của đạo hàm.</strong><p>Cát tuyến PQ với \(P(a,f(a)),Q(a+h,f(a+h))\) có hệ số góc là thương sai phân. Khi \(h\to0\), nếu hệ số góc có giới hạn hữu hạn, tiếp tuyến tại P có hệ số góc \(k=f'(a)\):
+    
+    \[y-f(a)=f'(a)(x-a).\]
+    
+    Nếu tiếp tuyến tạo góc \(\alpha\) với chiều dương trục hoành (góc không phải 90°), \(k=\tan\alpha\). Với đường dốc có góc nghiêng không quá \(\theta\) so với phương ngang, yêu cầu \(|f'(x)|\le\tan\theta\) (\(0\le\theta&lt;90^\circ\)). Có thể tìm tham số của mô hình parabol từ độ dốc tại các điểm; sau đó kiểm lại chiều cao, đơn vị và toàn bộ đoạn đường. SGK dùng dạng cầu parabol và đường nối có độ dốc cho trước; xem các ví dụ mới dưới đây.</p></div>
 
-#### EX-G11-CHIX-B31-02: Thương sai phân
+=== "Ví dụ"
 
-**Bài toán:** $f(x)=2x^2-1$, viết thương tại $a=3$.
+    ### 3.1. Định nghĩa tại một điểm
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-01"><p><strong>Đề bài:</strong> \(f(x)=x^2+3x\), tìm \(f'(1)\) từ \(h\).</p><p><strong>Phân tích:</strong> Rút gọn h rồi mới cho h→0; không thay h=0 ngay.</p><p><strong>Lời giải:</strong> \([f(1+h)-f(1)]/h=5+h\to5\), do đó \(f'(1)=5\).</p></div>
 
-**Phân tích, đáp án:** $[f(3+h)-f(3)]/h=12+2h$, giới hạn 12.
+    ### 3.2. Thương sai phân
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-02"><p><strong>Đề bài:</strong> \(f(x)=2x^2-1\), viết thương tại \(a=3\).</p><p><strong>Phân tích:</strong> Lấy đạo hàm không phải chỉ lấy f(3)=17.</p><p><strong>Lời giải:</strong> \([f(3+h)-f(3)]/h=12+2h\), giới hạn 12.</p></div>
 
-**Vì sao:** Lấy đạo hàm không phải chỉ lấy f(3)=17.
+    ### 3.3. Tiếp tuyến
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-03"><p><strong>Đề bài:</strong> \(f(x)=x^2-4x+1\) tại \(x=3\).</p><p><strong>Phân tích:</strong> Cần cả điểm (3,-2) và hệ số góc 2.</p><p><strong>Lời giải:</strong> \(f(3)=-2\). Thương sai phân tại 3 là \(2+h\), nên \(f'(3)=2\). Tiếp tuyến \(y+2=2(x-3)\), tức \(y=2x-8\).</p></div>
 
-#### EX-G11-CHIX-B31-03: Tiếp tuyến
+    ### 3.4. Góc nhọn |x|
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-04"><p><strong>Đề bài:</strong> Xét đạo hàm \(f(x)=|x-2|\) tại \(2\).</p><p><strong>Phân tích:</strong> Hàm liên tục tại 2 chưa đảm bảo có đạo hàm.</p><p><strong>Lời giải:</strong> Thương tại 2 là \(|h|/h\), hai giới hạn 1 và -1 khác nhau; không có đạo hàm tại 2.</p></div>
 
-**Bài toán:** $f(x)=x^2-4x+1$ tại $x=3$.
+    ### 3.5. Vận tốc và dấu
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-05"><p><strong>Đề bài:</strong> \(s(t)=10-3t^2\) m, t giây. Tính \(v(1)\).</p><p><strong>Phân tích:</strong> Âm là chiều ngược trục chọn, không phải tốc độ âm.</p><p><strong>Lời giải:</strong> Theo định nghĩa của hàm bậc hai, \(v=s'=-6t\) m/s; \(v(1)=-6\) m/s; tốc độ 6 m/s.</p></div>
 
-**Phân tích, đáp án:** $f(3)=-2$, $f'(3)=2$, tiếp tuyến $y+2=2(x-3)$ tức $y=2x-8$.
+    ### 3.6. Nhiệt độ biến thiên
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-06"><p><strong>Đề bài:</strong> \(T(t)=22+4t-t^2\) °C, t phút. Tính \(T'(2)\).</p><p><strong>Phân tích:</strong> Đơn vị đạo hàm = °C/phút, không phải °C.</p><p><strong>Lời giải:</strong> \(T'=4-2t\), \(T'(2)=0\) °C/phút, nghĩa nhiệt độ tại thời điểm đó đang không tăng/giảm bậc nhất.</p></div>
 
-**Vì sao:** Cần cả điểm (3,-2) và hệ số góc 2.
+    ### 3.7. Đạo hàm trên khoảng
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-07"><p><strong>Đề bài:</strong> Tính đạo hàm \(f(x)=1/x\) và phát biểu khoảng khả vi.</p><p><strong>Phân tích:</strong> Dùng định nghĩa ở B31 thay vì công thức đạo hàm thương ở bài sau.</p><p><strong>Lời giải:</strong> Với \(x\ne0\), và \(h\ne0,x+h\ne0\), thương sai phân \([1/(x+h)-1/x]/h=-1/[x(x+h)]\), tiến tới \(-1/x^2\). Hàm khả vi trên \((-\infty,0)\) và \((0,+\infty)\); không tại 0.</p></div>
 
-#### EX-G11-CHIX-B31-04: Góc nhọn |x|
+    ### 3.8. Cát tuyến tiến gần
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B31-08"><p><strong>Đề bài:</strong> \(f(x)=x^2\), P tại x=2, Q tại x=2+h. Hệ số góc? </p><p><strong>Phân tích:</strong> Cát tuyến khác tiếp tuyến khi h≠0; lấy giới hạn.</p><p><strong>Lời giải:</strong> \((4h+h^2)/h=4+h\), tiến tới 4 khi h→0.</p></div>
 
-**Bài toán:** Xét đạo hàm $f(x)=|x-2|$ tại $2$.
+    ### 3.9. Tiếp tuyến ngược từ hai độ dốc
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B31-R02-09"><p><strong>Đề bài:</strong> Mô hình đường nối \(y=ax^2+bx\) (x,y tính bằng m) trên \(0\le x\le20\). Độ dốc đầu đoạn là 0,2, cuối đoạn là −0,2. Tìm a,b và độ cao tại trung điểm.</p><p><strong>Phân tích:</strong> Với parabol, \(y'=2ax+b\) (từ thương sai phân). Dùng hai độ dốc để lập hệ.</p><p><strong>Lời giải:</strong> \(b=0,2\), \(40a+0,2=-0,2\) nên \(a=-0,01\). \(y(10)=-1+2=1\) m.</p><p><strong>Kiểm lại:</strong> \(y'(0)=0,2\), \(y'(20)=-0,2\); hai đầu có độ cao 0. Độ dốc là tỉ số m/m.</p></div>
 
-**Phân tích, đáp án:** Thương tại 2 là $|h|/h$, hai giới hạn 1 và -1 khác nhau; không có đạo hàm tại 2.
+    ### 3.10. Cầu parabol với giới hạn độ nghiêng
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B31-R02-10"><p><strong>Đề bài:</strong> Một cầu dài theo phương ngang 120 m, có mặt cắt \(y=H(1-x^2/60^2)\), \(-60\le x\le60\), H&gt;0. Yêu cầu góc nghiêng của tiếp tuyến so với phương ngang không quá 8°. Tìm giới hạn trên của H.</p><p><strong>Phân tích:</strong> Độ dốc lớn nhất về trị tuyệt đối của parabol nằm tại hai đầu đoạn; dùng tỉ số độ dốc, không dùng trực tiếp số đo góc.</p><p><strong>Lời giải:</strong> \(y'=-2Hx/3600=-Hx/1800\). Do \(|x|\le60\), \(|y'|\le H/30\), đạt bằng tại hai đầu. Yêu cầu \(H/30\le\tan8^\circ\), tức \(H\le30\tan8^\circ\approx4,22\) m.</p><p><strong>Kiểm lại:</strong> Thay giới hạn vào hai đầu cho góc đúng 8°. Với H nhỏ hơn thì cả đoạn thỏa. Đây là mô hình hình học, không phải chỉ dẫn thiết kế cầu thực tế.</p></div>
 
-**Vì sao:** Hàm liên tục tại 2 chưa đảm bảo có đạo hàm.
+    ### 3.11. Mô hình chạm đất
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B31-R02-11"><p><strong>Đề bài:</strong> Một vật thả từ độ cao 45 m, lấy \(g=10\) m/s² và bỏ qua cản không khí. Quãng rơi theo chiều xuống \(s(t)=5t^2\). Tìm thời điểm chạm đất và tốc độ ngay trước chạm đất.</p><p><strong>Phân tích:</strong> Giải điều kiện \(s(t)=45\) với \(t\ge0\) trước, sau đó tính vận tốc tức thời theo định nghĩa của hàm bậc hai.</p><p><strong>Lời giải:</strong> \(5t^2=45\) cho \(t=3\) s (loại −3). \(v(t)=10t\), nên tốc độ ngay trước chạm đất là 30 m/s.</p><p><strong>Kiểm lại:</strong> Không tiếp tục dùng mô hình rơi tự do sau lúc chạm đất.</p></div>
 
-#### EX-G11-CHIX-B31-05: Vận tốc và dấu
+=== "Lỗi thường gặp"
 
-**Bài toán:** $s(t)=10-3t^2$ m, t giây. Tính $v(1)$.
+    <span data-thpt-help-id="HELP-G11-CHIX-B31-01" hidden></span>
+    
+    ??? tip "4.1. Thay h=0 quá sớm"
+    
+        Với $f(x)=4x^2$ tại 2, thương bằng $16+4h$ khi $h\ne0$; lúc ấy mới lấy giới hạn 16. [Luyện lại B31-C02](../luyen-tap/?item=THPT-G11-CHIX-B31-C02)
 
-**Phân tích, đáp án:** $v=s'=-6t$ m/s, $v(1)=-6$ m/s; tốc độ 6 m/s.
+    <span data-thpt-help-id="HELP-G11-CHIX-B31-02" hidden></span>
+    
+    ??? tip "4.2. Chỉ xét một phía ở điểm gấp"
+    
+        Thử $|x-5|$ tại 5: bên trái −1, bên phải 1; không khả vi. [Luyện lại B31-P06](../luyen-tap/?item=THPT-G11-CHIX-B31-P06)
 
-**Vì sao:** Âm là chiều ngược trục chọn, không phải tốc độ âm.
+    <span data-thpt-help-id="HELP-G11-CHIX-B31-03" hidden></span>
+    
+    ??? tip "4.3. Nhầm tung độ với độ dốc"
+    
+        Nếu $f(3)=7,f'(3)=4$, hãy viết $y-7=4(x-3)$; kiểm cả điểm và độ dốc. [Luyện lại B31-C08](../luyen-tap/?item=THPT-G11-CHIX-B31-C08)
 
-#### EX-G11-CHIX-B31-06: Nhiệt độ biến thiên
+    [Core và Luyện tập Bài 31](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
-**Bài toán:** $T(t)=22+4t-t^2$ °C, t phút. Tính $T'(2)$.
-
-**Phân tích, đáp án:** $T'=4-2t$, $T'(2)=0$ °C/phút, nghĩa nhiệt độ tại thời điểm đó đang không tăng/giảm bậc nhất.
-
-**Vì sao:** Đơn vị đạo hàm = °C/phút, không phải °C.
-
-#### EX-G11-CHIX-B31-07: Đạo hàm trên khoảng
-
-**Bài toán:** Tính đạo hàm $f(x)=1/x$ và phát biểu khoảng khả vi.
-
-**Phân tích, đáp án:** $f'(x)=-1/x^2$ trên $(-\infty,0)$ và $(0,+\infty)$; không tại x=0.
-
-**Vì sao:** Tuy đạo hàm công thức có ở x≠0 nhưng không khẳng định trên ℝ.
-
-#### EX-G11-CHIX-B31-08: Cát tuyến tiến gần
-
-**Bài toán:** $f(x)=x^2$, P tại x=2, Q tại x=2+h. Hệ số góc? 
-
-**Phân tích, đáp án:** $(4h+h^2)/h=4+h$, tiến tới 4 khi h→0.
-
-**Vì sao:** Cát tuyến khác tiếp tuyến khi h≠0; lấy giới hạn.
-
-## 3. Tự khắc phục lỗi
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B31-01"><summary><strong>Chẩn đoán lỗi:</strong> Thế h=0 trước khi khử 0/0.</summary><ol><li><strong>Phát hiện lỗi:</strong> Thế h=0 trước khi khử 0/0.</li><li><strong>Truy lại bản chất + điều kiện:</strong> Tử f(a+h)-f(a) thường có nhân tử h; rút gọn chỉ với h≠0, sau đó mới lấy giới hạn.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B31, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Với f(x)=4x², tại a=2 thương bao nhiêu?. <strong>Tự kiểm sau khi thử:</strong> 16+4h, giới hạn 16.</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B31-C02</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C02">Quay lại câu canonical THPT-G11-CHIX-B31-C02</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B31-02"><summary><strong>Chẩn đoán lỗi:</strong> Bỏ qua giới hạn một phía tại góc nhọn.</summary><ol><li><strong>Phát hiện lỗi:</strong> Bỏ qua giới hạn một phía tại góc nhọn.</li><li><strong>Truy lại bản chất + điều kiện:</strong> Tính hai thương khi h&gt;0 và h&lt;0; khác nhau thì không khả vi.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B31, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Xét |x-5| tại x=5, độ dốc một bên?. <strong>Tự kiểm sau khi thử:</strong> Trái -1, phải +1.</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B31-P06</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B31-P06">Quay lại câu canonical THPT-G11-CHIX-B31-P06</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B31-03"><summary><strong>Chẩn đoán lỗi:</strong> Nhầm tung độ với hệ số góc.</summary><ol><li><strong>Phát hiện lỗi:</strong> Nhầm tung độ với hệ số góc.</li><li><strong>Truy lại bản chất + điều kiện:</strong> Điểm tiếp xúc (a,f(a)) và độ dốc f'(a) là hai thông tin khác nhau.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B31, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Nếu f(3)=7 và f'(3)=4, tiếp tuyến?. <strong>Tự kiểm sau khi thử:</strong> y-7=4(x-3).</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B31-C08</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C08">Quay lại câu canonical THPT-G11-CHIX-B31-C08</a></p></details>
-
-## 4. Tiếp tục
-
-[Core/Luyện tập Bài 31](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+*Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 31, trang in 81–87.*
