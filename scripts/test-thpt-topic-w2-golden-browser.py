@@ -208,7 +208,7 @@ with sync_playwright() as pw:
                     assert page.request.get(url).ok, (topic, "broken SVG", url)
                 # OWNER P2 HOTFIX: figure footprint and MathJax across actual browser widths.
                 # These assert visible geometry/typesetting, not mere source hashes or counts.
-                assert imgs.count() == imgs.locator('[data-topic-w2-figure]').count(), (topic, "W2 figure style marker")
+                assert imgs.count() == imgs.evaluate_all("els => els.filter(e => e.dataset.topicW2Figure === '1').length"), (topic, "W2 figure style marker")
                 if topic == "06":
                     page.locator('[data-topic-w1-module-tab="1"]').click()
                     page.locator('[data-topic-w1-subtab="1-1"]').click()
