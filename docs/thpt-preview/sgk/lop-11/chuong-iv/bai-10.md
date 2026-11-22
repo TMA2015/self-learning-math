@@ -32,7 +32,7 @@
 
         **Dấu hiệu:** Em suy “chỉ A thuộc \((P)\), vậy đường qua A cũng nằm trong \((P)\)” hoặc quên hai điểm phân biệt.
 
-        **Tự sửa:** Gạch dưới **hai điểm phân biệt cùng thuộc mặt** rồi dùng tính chất đường chứa cả hai. Ôn mục 2.2 và luyện Core B10-C01 trong [Core và Luyện tập Bài 10](../luyen-tap/).
+        **Tự sửa:** Gạch dưới **hai điểm phân biệt cùng thuộc mặt** rồi dùng tính chất đường chứa cả hai. Ôn mục 2.2 và luyện Core B10-C01 trong <a href="../luyen-tap/">Core và Luyện tập Bài 10</a>.
 
     ### 1.2. Ba điểm không thẳng hàng mới xác định một mặt phẳng duy nhất
 
@@ -52,7 +52,7 @@
 
         **Dấu hiệu:** Em kết luận cứ ba điểm là xác định mặt phẳng duy nhất, dù tất cả cùng một đường.
 
-        **Tự sửa:** Luôn kiểm **không thẳng hàng**; ôn mục 2.2–2.3 và làm Core B10-C02, Practice B10-P03 tại [Luyện tập Bài 10](../luyen-tap/).
+        **Tự sửa:** Luôn kiểm **không thẳng hàng**; ôn mục 2.2–2.3 và làm Core B10-C02, Practice B10-P03 tại <a href="../luyen-tap/">Luyện tập Bài 10</a>.
 
     ### 1.3. Giao tuyến cần hai điểm chung phân biệt và hai mặt phẳng khác nhau
 
@@ -72,7 +72,7 @@
 
         **Dấu hiệu:** Em tự cho \(M\in(SBC)\) vì M có vẻ gần cạnh BC trong hình.
 
-        **Tự sửa:** Liệt kê điểm thuộc từng mặt theo **các đường đã biết chứa nó**. Ôn mục 2.2–2.3; luyện Practice B10-P01 về hai mặt bên tứ diện trong [Bài 10 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Liệt kê điểm thuộc từng mặt theo **các đường đã biết chứa nó**. Ôn mục 2.2–2.3; luyện Practice B10-P01 về hai mặt bên tứ diện trong <a href="../luyen-tap/">Bài 10 – Luyện tập</a>.
 
     ### 1.4. Tìm giao điểm đường–mặt bằng mặt phẳng phụ
 
@@ -92,7 +92,7 @@
 
         **Dấu hiệu:** Em tìm một giao điểm tùy ý vì nghĩ đường nào kéo dài cũng phải gặp mặt phẳng.
 
-        **Tự sửa:** Dựng \(d=(P)\cap(Q)\) trước, xét đường \(a\) có cắt d không. Ôn mục 2.2, làm Practice B10-P02 về một trường hợp **có** giao điểm tại [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Dựng \(d=(P)\cap(Q)\) trước, xét đường \(a\) có cắt d không. Ôn mục 2.2, làm Practice B10-P02 về một trường hợp **có** giao điểm tại <a href="../luyen-tap/">Core và Luyện tập</a>.
 
     ### 1.5. Thiết diện phải được dựng từ các đoạn giao thuộc khối
 
@@ -112,7 +112,7 @@
 
         **Dấu hiệu:** Em nối M với C hoặc N với A dù chưa chứng minh các điểm đó đều thuộc mặt cắt.
 
-        **Tự sửa:** Xét từng **mặt chứa hai điểm chung**, rồi nối bằng đoạn giao của mặt cắt với mặt khối. Ôn mục 2.4 và luyện Practice B10-P04 tại [Bài 10 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Xét từng **mặt chứa hai điểm chung**, rồi nối bằng đoạn giao của mặt cắt với mặt khối. Ôn mục 2.4 và luyện Practice B10-P04 tại <a href="../luyen-tap/">Bài 10 – Luyện tập</a>.
 
     ### 1.6. Dựng hình trong thực tế: ba chân đỡ và bốn chân đỡ
 
@@ -132,7 +132,7 @@
 
         **Dấu hiệu:** Em nghĩ cứ bốn điểm là có một mặt chung giống như ba điểm không thẳng hàng.
 
-        **Tự sửa:** Dùng ba điểm đầu để xác định một mặt, sau đó **kiểm điểm thứ tư có nằm trong đó**. Ôn mục 2.2 và Ví dụ 3.1; giải lại Core B10-C02 trong [Luyện tập Bài 10](../luyen-tap/).
+        **Tự sửa:** Dùng ba điểm đầu để xác định một mặt, sau đó **kiểm điểm thứ tư có nằm trong đó**. Ôn mục 2.2 và Ví dụ 3.1; giải lại Core B10-C02 trong <a href="../luyen-tap/">Luyện tập Bài 10</a>.
 
 === "Kiến thức SGK"
 
@@ -226,7 +226,7 @@
 
         **Vì sao sai:** Phải có **hai điểm phân biệt** của đường cùng thuộc mặt, hoặc một giả thiết khác xác định đường nằm trong mặt.
 
-        **Tự sửa:** Ôn mục 2.2 và Ví dụ 3.1, luyện Core B10-C01 tại [Bài 10 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2 và Ví dụ 3.1, luyện Core B10-C01 tại <a href="../luyen-tap/">Bài 10 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B10-02" hidden></span>
 
@@ -246,7 +246,7 @@
 
         **Vì sao sai:** Giao tuyến hai mặt phân biệt cần **hai điểm chung phân biệt**; điểm nhìn gần trên giấy chưa chắc thuộc cả hai mặt.
 
-        **Tự sửa:** Lập bảng thuộc mặt cho các điểm; ôn mục 2.2, Ví dụ 3.2 và luyện Practice B10-P01 ở [Luyện tập Bài 10](../luyen-tap/).
+        **Tự sửa:** Lập bảng thuộc mặt cho các điểm; ôn mục 2.2, Ví dụ 3.2 và luyện Practice B10-P01 ở <a href="../luyen-tap/">Luyện tập Bài 10</a>.
 
     <span data-thpt-help-id="HELP-G11-B10-04" hidden></span>
 
@@ -256,8 +256,8 @@
 
         **Vì sao sai:** Cạnh thiết diện phải là phần giao thực sự giữa mặt cắt và từng mặt của khối.
 
-        **Tự sửa:** Xét từng mặt của tứ diện, xác định hai điểm thuộc **cả mặt đó lẫn mặt cắt**. Ôn mục 2.4 và Ví dụ 3.5, luyện Practice B10-P04 trong [Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Xét từng mặt của tứ diện, xác định hai điểm thuộc **cả mặt đó lẫn mặt cắt**. Ôn mục 2.4 và Ví dụ 3.5, luyện Practice B10-P04 trong <a href="../luyen-tap/">Core và Luyện tập</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương IV](../../../../thu-vien/tu-luan-g11-chuong-iv/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-iv/">Tự luận Chương IV</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 10 (trang in 70–77).</p>
