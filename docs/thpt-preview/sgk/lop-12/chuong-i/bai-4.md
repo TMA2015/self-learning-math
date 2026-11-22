@@ -25,7 +25,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Viết D trước khi giải giao trục. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c01)
+        Viết D trước khi giải giao trục. <a href="../luyen-tap/#thpt-g12-chi-b04-c01">Luyện lại câu tương ứng</a>
 
     ### 1.2. Đồ thị bậc ba
     
@@ -45,7 +45,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không mặc định mọi bậc ba có hai cực trị. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c02)
+        Không mặc định mọi bậc ba có hai cực trị. <a href="../luyen-tap/#thpt-g12-chi-b04-c02">Luyện lại câu tương ứng</a>
 
     ### 1.3. Phân thức bậc nhất trên bậc nhất
     
@@ -65,7 +65,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Dấu ngược với k; tách hai nhánh. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c03)
+        Dấu ngược với k; tách hai nhánh. <a href="../luyen-tap/#thpt-g12-chi-b04-c03">Luyện lại câu tương ứng</a>
 
     ### 1.4. Giao điểm và hướng đuôi
     
@@ -83,7 +83,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Thay lại tọa độ vào hàm gốc. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c04)
+        Thay lại tọa độ vào hàm gốc. <a href="../luyen-tap/#thpt-g12-chi-b04-c04">Luyện lại câu tương ứng</a>
 
     ### 1.5. Tâm và trục đối xứng
     
@@ -101,7 +101,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không nhầm chính các tiệm cận là trục đối xứng. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-p01)
+        Không nhầm chính các tiệm cận là trục đối xứng. <a href="../luyen-tap/#thpt-g12-chi-b04-p01">Luyện lại câu tương ứng</a>
 
     ### 1.6. Đọc bảng trước khi vẽ
     
@@ -119,7 +119,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đọc dấu từ trái sang phải, không đảo mũi tên. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-p02)
+        Đọc dấu từ trái sang phải, không đảo mũi tên. <a href="../luyen-tap/#thpt-g12-chi-b04-p02">Luyện lại câu tương ứng</a>
 
     ### 1.7. Nhánh tách ở tiệm cận đứng
     
@@ -137,7 +137,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Dấu 1/(x−1) khác nhau qua 1. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-p03)
+        Dấu 1/(x−1) khác nhau qua 1. <a href="../luyen-tap/#thpt-g12-chi-b04-p03">Luyện lại câu tương ứng</a>
 
     ### 1.8. Phân thức bậc hai trên bậc nhất
     
@@ -157,7 +157,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Chia bảng tại cả x=1; kiểm giá trị gốc. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-c03)
+        Chia bảng tại cả x=1; kiểm giá trị gốc. <a href="../luyen-tap/#thpt-g12-chi-b04-c03">Luyện lại câu tương ứng</a>
 
     ### 1.9. Dựng mô hình từ nồng độ
     
@@ -175,7 +175,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không dùng nhánh x<0 trong tình huống thực. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-a01)
+        Không dùng nhánh x<0 trong tình huống thực. <a href="../luyen-tap/#thpt-g12-chi-b04-a01">Luyện lại câu tương ứng</a>
 
     ### 1.10. Tự khảo sát đủ một phân thức bậc hai trên bậc nhất
 
@@ -193,7 +193,7 @@
 
     ??? tip "Kiểm lỗi"
 
-        Nếu thiếu một giới hạn, hãy viết lại $g$ thành tổng phần xiên và phần dư rồi lập bảng cho từng khoảng. Kiểm giao trục qua phương trình g=0. [Ôn cách đọc bảng biến thiên](../luyen-tap/#thpt-g12-chi-b04-p02).
+        Nếu thiếu một giới hạn, hãy viết lại $g$ thành tổng phần xiên và phần dư rồi lập bảng cho từng khoảng. Kiểm giao trục qua phương trình g=0. <a href="../luyen-tap/#thpt-g12-chi-b04-p02">Ôn cách đọc bảng biến thiên</a>.
 
 === "Kiến thức SGK"
 
@@ -260,62 +260,82 @@
     
     ??? tip "Cách tự sửa"
     
-        Viết D trước khi giải giao trục. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c01).
+        **Vì sao dễ sai:** Khảo sát là chuỗi bước miền → đạo hàm/dấu → giới hạn/tiệm cận → giao trục/bảng biến thiên → hình; bỏ một bước dễ nối sai nhánh.
+
+        **Tự sửa:** Viết D trước khi giải giao trục. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b04-c01">Core/Luyện tập</a>.
 
     ### 4.2. Đồ thị bậc ba
     
     ??? tip "Cách tự sửa"
     
-        Không mặc định mọi bậc ba có hai cực trị. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c02).
+        **Vì sao dễ sai:** Đa thức bậc ba có thể có hai cực trị hoặc không; số nghiệm đạo hàm và dấu quyết định hình, không đoán theo tên dạng hàm.
+
+        **Tự sửa:** Không mặc định mọi bậc ba có hai cực trị. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b04-c02">Core/Luyện tập</a>.
 
     ### 4.3. Phân thức bậc nhất trên bậc nhất
     
     ??? tip "Cách tự sửa"
     
-        Dấu ngược với k; tách hai nhánh. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c03).
+        **Vì sao dễ sai:** Phân thức bậc nhất/bậc nhất phải xét miền bị loại và giới hạn riêng từng nhánh; đường tiệm cận đứng không nối hai khoảng.
+
+        **Tự sửa:** Dấu ngược với k; tách hai nhánh. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b04-c03">Core/Luyện tập</a>.
 
     ### 4.4. Giao điểm và hướng đuôi
     
     ??? tip "Cách tự sửa"
     
-        Thay lại tọa độ vào hàm gốc. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c04).
+        **Vì sao dễ sai:** Giao Oy cần x=0 thuộc miền, giao Ox cần giải tử bằng 0 cùng điều kiện mẫu khác 0; hướng đuôi do giới hạn.
+
+        **Tự sửa:** Thay lại tọa độ vào hàm gốc. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b04-c04">Core/Luyện tập</a>.
 
     ### 4.5. Tâm và trục đối xứng
     
     ??? tip "Cách tự sửa"
     
-        Không nhầm chính các tiệm cận là trục đối xứng. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-p01).
+        **Vì sao dễ sai:** Đối xứng qua tâm/đường phải được chứng minh bằng phép đổi tọa độ hoặc dạng đường cong; không suy hoàn toàn từ mắt nhìn.
+
+        **Tự sửa:** Không nhầm chính các tiệm cận là trục đối xứng. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b04-p01">Core/Luyện tập</a>.
 
     ### 4.6. Đọc bảng trước khi vẽ
     
     ??? tip "Cách tự sửa"
     
-        Đọc dấu từ trái sang phải, không đảo mũi tên. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-p02).
+        **Vì sao dễ sai:** Bảng biến thiên phải gắn từng khoảng dấu đạo hàm và giới hạn biên; dấu không phải độ lớn của giá trị hàm.
+
+        **Tự sửa:** Đọc dấu từ trái sang phải, không đảo mũi tên. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b04-p02">Core/Luyện tập</a>.
 
     ### 4.7. Nhánh tách ở tiệm cận đứng
     
     ??? tip "Cách tự sửa"
     
-        Dấu 1/(x−1) khác nhau qua 1. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-p03).
+        **Vì sao dễ sai:** Ở hai phía điểm tiệm cận đứng, phần dư có thể đổi dấu; nhầm dấu sẽ vẽ hai nhánh cùng phía.
+
+        **Tự sửa:** Dấu 1/(x−1) khác nhau qua 1. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b04-p03">Core/Luyện tập</a>.
 
     ### 4.8. Phân thức bậc hai trên bậc nhất
     
     ??? tip "Cách tự sửa"
     
-        Chia bảng tại cả x=1; kiểm giá trị gốc. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-c03).
+        **Vì sao dễ sai:** Phân thức bậc hai/bậc nhất có thể có tiệm cận xiên và hai cực trị; cần khảo sát đủ đạo hàm, giới hạn hai phía, giao trục và các đoạn dấu.
+
+        **Tự sửa:** Chia bảng tại cả x=1; kiểm giá trị gốc. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b04-c03">Core/Luyện tập</a>.
 
     ### 4.9. Dựng mô hình từ nồng độ
     
     ??? tip "Cách tự sửa"
     
-        Không dùng nhánh x<0 trong tình huống thực. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-a01).
+        **Vì sao dễ sai:** Khi đại lượng là thể tích/nồng độ thực, chỉ dùng miền x hợp lệ của mô hình; phần đồ thị toán học ngoài miền không mô tả tình huống.
+
+        **Tự sửa:** Không dùng nhánh x<0 trong tình huống thực. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b04-a01">Core/Luyện tập</a>.
 
     ### 4.10. Bỏ sót khảo sát một nhánh
 
     ??? tip "Cách tự sửa"
 
-        Trở lại các giới hạn một phía và cả hai điểm dừng. [Luyện đọc bảng biến thiên](../luyen-tap/#thpt-g12-chi-b04-p02).
+        **Vì sao dễ sai:** Khảo sát mới đầy đủ khi không bỏ nhánh hay điểm dừng, kể cả giới hạn một phía và các điểm cắt trục thực sự thuộc miền.
 
-    [Core Bài 4](../luyen-tap/#b04-core) · [Luyện tập, Vận dụng, Tự luận](../luyen-tap/#b04-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b04-help) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+        **Tự sửa:** Trở lại các giới hạn một phía và cả hai điểm dừng. <a href="../luyen-tap/#thpt-g12-chi-b04-p02">Luyện đọc bảng biến thiên</a>.
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 26–32.*
+    **Học tiếp:** <a href="../luyen-tap/#b04-core">Core Bài 4</a> · <a href="../luyen-tap/#b04-practice">Luyện tập, Vận dụng, Tự luận</a> · <a href="../luyen-tap/#b04-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
+
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 4 (trang in 26–32). SBT cùng bộ được đối chiếu ở gói nguồn lịch sử; trang in khác chỉ số trang PDF.</p>
