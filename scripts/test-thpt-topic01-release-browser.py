@@ -40,13 +40,14 @@ with sync_playwright() as pw:
       for box in boxes.all():
        assert box.evaluate("(e)=>getComputedStyle(e).backgroundColor")==color,(engine,width,role,box.evaluate("(e)=>getComputedStyle(e).backgroundColor"))
      # Regression: approved set-difference equation must be genuine MathJax, never raw Markdown escape.
+     tabs.nth(1).click()
+     p.locator('[data-topic01-subtab="2-3"]').click()
      formula=p.locator('[data-topic01-callout="concept"]').filter(has_text="Hiệu giữ tập đứng trước")
      expect(formula).to_have_count(1)
      assert "[A\\setminus B=" not in formula.inner_text(),(engine,width,"raw set difference formula")
      assert formula.locator(".arithmatex").count()>=2,(engine,width,"missing MathJax source")
      # Compare disclosure CSS with the accepted SGK Golden: no default bright green panel.
      for tab in tabs.all():
-
       tab.click()
       active=p.locator("[data-topic01-module-panel]:visible")
       expect(active).to_have_count(1)
