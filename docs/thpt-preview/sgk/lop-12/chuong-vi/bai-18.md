@@ -180,13 +180,13 @@
     
     <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHVI-B18-DOORS-R02.svg" alt="Ba vị trí xe và xác suất quản trò mở cửa 3 theo quy tắc chọn đều giữa cửa hợp lệ."/><figcaption>Xét từng vị trí xe; xe sau cửa 3 làm H không thể xảy ra. Các trọng số 1/6 và 1/3 được chuẩn hóa trong H.</figcaption></figure>
     
-    **Vận dụng.** Giữ nguyên quy tắc trò chơi, nhưng biết quản trò mở cửa 2. Tính xác suất xe ở cửa 1 và cửa 3.
+    **Vận dụng.** Xe vẫn đặt đều, quản trò luôn mở cửa có lừa chưa chọn và cho đổi. Khi có hai cửa hợp lệ, quản trò mở cửa 2 với xác suất 1/4, cửa 3 với 3/4. Biết quản trò mở cửa 2, tính xác suất xe ở cửa 1 và cửa 3.
     
     <span data-ped-first-try="10" data-outcome-id="G12-CHVI-B18-O06" data-thpt-first-try-id="THPT-G12-B18-TRY10" hidden></span>
     
     ??? question "Đối chiếu"
     
-        **Lời giải:** Ba xác suất quản trò mở cửa 2 theo E₁,E₂,E₃ lần lượt 1/2,0,1. Giao là 1/6,0,1/3; tổng 1/2. $P(E_1\mid H_2)=1/3$, $P(E_3\mid H_2)=2/3$; nên đổi cửa.
+        **Lời giải:** Ba xác suất mở cửa 2 theo E₁,E₂,E₃ lần lượt 1/4,0,1. Giao là 1/12,0,1/3; tổng 5/12. $P(E_1\mid H_2)=(1/12)/(5/12)=1/5$, $P(E_3\mid H_2)=(1/3)/(5/12)=4/5$; nên đổi cửa.
     
     <span data-thpt-help-id="HELP-G12-B18-TRY10" hidden></span>
     
@@ -234,7 +234,7 @@
 
     ### 3.3. Hai chiều điều kiện
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B18-O03"><p><strong>Đề bài:</strong> 100 học sinh: 30 CLB nhạc, 40 thể thao, 12 cả hai.</p><p><strong>Phân tích:</strong> Cùng tử 12, hai mẫu.</p><p><strong>Lời giải:</strong> \(P(nhạc\mid thể\ thao)=12/40=3/10\); \(P(thể\ thao\mid nhạc)=12/30=2/5\).</p><p><strong>Kiểm lại:</strong> Không cộng hai xác suất này vì mẫu khác nhau.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B18-O03"><p><strong>Đề bài:</strong> 100 học sinh: 30 CLB nhạc, 40 thể thao, 12 cả hai.</p><p><strong>Phân tích:</strong> Cùng tử 12, hai mẫu.</p><p><strong>Lời giải:</strong> \(P(\text{nhạc}\mid\text{thể thao})=12/40=3/10\); \(P(\text{thể thao}\mid\text{nhạc})=12/30=2/5\).</p><p><strong>Kiểm lại:</strong> Không cộng hai xác suất này vì mẫu khác nhau.</p></div>
 
     ### 3.4. Phép thử độc lập
     
