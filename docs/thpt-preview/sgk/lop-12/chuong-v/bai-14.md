@@ -124,7 +124,7 @@
     
     **Vận dụng.** M(t)=(2cos t+sin t, cos t−sin t, 3cos t). Tìm mặt phẳng cố định chứa quỹ đạo.
     
-    <span data-ped-first-try="7" data-outcome-id="G12-CHV-B14-O03" data-thpt-first-try-id="THPT-G12-B14-TRY07" hidden></span>
+    <span data-ped-first-try="7" data-outcome-id="G12-CHV-B14-O08" data-thpt-first-try-id="THPT-G12-B14-TRY07" hidden></span>
     
     ??? question "Đối chiếu"
     
@@ -134,7 +134,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Thế biểu thức theo t và kiểm đồng nhất, không chỉ thử một giá trị. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p03). Sau đó tự làm lại Vận dụng.
+        Thế biểu thức theo t và kiểm đồng nhất, không chỉ thử một giá trị. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c08); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p08). Sau đó tự làm lại Vận dụng.
 
 === "Kiến thức SGK"
 
@@ -148,7 +148,7 @@
 
     ### 2.3. Lập phương trình tổng quát của mặt phẳng
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Lập phương trình tổng quát của mặt phẳng.</strong><p>Qua \(M_0(x_0,y_0,z_0)\) với n=(A,B,C): \(A(x-x_0)+B(y-y_0)+C(z-z_0)=0\). Nếu biết hai hướng, lấy tích có hướng; qua ba điểm không thẳng hàng dùng AB, AC. Mặt phẳng cắt ba trục tại (a,0,0),(0,b,0),(0,0,c), abc≠0, có phương trình đoạn chắn \(x/a+y/b+z/c=1\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Lập phương trình tổng quát của mặt phẳng.</strong><p>Qua \(M_0(x_0,y_0,z_0)\) với n=(A,B,C): \(A(x-x_0)+B(y-y_0)+C(z-z_0)=0\). Nếu biết hai hướng, lấy tích có hướng; qua ba điểm không thẳng hàng dùng AB, AC. Mặt phẳng cắt ba trục tại (a,0,0),(0,b,0),(0,0,c), abc≠0, có phương trình đoạn chắn \(x/a+y/b+z/c=1\). Với quỹ đạo cho bởi M(t), có thể chứng minh toàn bộ quỹ đạo nằm trong một mặt phẳng khi tìm được A,B,C,D không đồng thời A=B=C=0 sao cho \(Ax(t)+By(t)+Cz(t)+D=0\) với mọi t; nếu kết luận mặt phẳng duy nhất, cần kiểm quỹ đạo có ba điểm không thẳng hàng.</p></div>
 
     ### 2.4. Điều kiện để hai mặt phẳng vuông góc với nhau
     
@@ -254,8 +254,8 @@
     
     ??? tip "Cách tự sửa"
     
-        Thế biểu thức theo t và kiểm đồng nhất, không chỉ thử một giá trị. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p03). Sau đó tự làm lại Vận dụng.
+        Thế biểu thức theo t và kiểm đồng nhất, không chỉ thử một giá trị. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b14-c08); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b14-p08). Sau đó tự làm lại Vận dụng.
 
     [Core Bài 14](../luyen-tap/#b14-core) · [Luyện tập và Tự luận](../luyen-tap/#b14-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b14-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 29–40; SBT trang in 22–24 (đã đọc; trang 25 chưa định vị).*
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 29–40; SBT trang in 21–24 đối chiếu trực tiếp. Trang in 25 SBT bị bỏ trong PDF quét; bài 5.6–5.7 đã đối chiếu họ dạng từ lời giải tham khảo, không xác nhận đã đọc trang gốc.*
