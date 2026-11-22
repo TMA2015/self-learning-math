@@ -78,7 +78,8 @@ with sync_playwright() as pw:
                 page.locator("body").evaluate("(e)=>e.setAttribute('data-md-color-scheme','default')")
                 roles = page.locator("[data-topic-w1-callout]")
                 assert roles.count() >= outcomes, (topic, "missing 3+1 boxes", roles.count())
-                assert roles.evaluate_all("""els=>els.every(el=>[...el.children].filter(p=>/^(ĐỊNH NGHĨA|KHÁI NIỆM|CÔNG THỨC|HỆ THỨC|TÍNH CHẤT|ĐỊNH LÝ|QUY TẮC|PHƯƠNG PHÁP|KIẾN THỨC CẦN GHI NHỚ|GHI NHỚ|LƯU Ý)/.test(p.querySelector(":scope > strong")?.textContent||"")).length===1)"""), (topic,"merged formal cards")
+                bad_semantic = roles.evaluate_all("""els=>els.map(el=>({role:el.dataset.topicW1Callout,labels:[...el.children].map(p=>p.querySelector(':scope > strong')?.textContent||'').filter(s=>/^(ĐỊNH NGHĨA|KHÁI NIỆM|CÔNG THỨC|HỆ THỨC|TÍNH CHẤT|ĐỊNH LÝ|QUY TẮC|PHƯƠNG PHÁP|KIẾN THỨC CẦN GHI NHỚ|GHI NHỚ|LƯU Ý)/.test(s)),html:el.innerHTML.slice(0,250)})).filter(b=>b.labels.length!==1)""")
+                assert not bad_semantic, (topic,"merged or unlabelled formal cards",bad_semantic[:5])
                 for role, color in PALETTE.items():
                     elems = page.locator('[data-topic-w1-callout="' + role + '"]')
                     for e in elems.all():
