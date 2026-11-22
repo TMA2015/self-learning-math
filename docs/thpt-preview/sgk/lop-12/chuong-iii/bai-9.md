@@ -1,130 +1,237 @@
 # Toán 12 · Bài 9. Khoảng biến thiên và khoảng tứ phân vị
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG III · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 75–79</p><p class="thpt-r4-lead">Kiến thức, trực giác, ví dụ có suy luận và Tự thử trước Core. Luyện tập và Tự luận ở trang chung của chương; không trộn câu hỏi luyện tập vào phần học lý thuyết.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương III</a><a href="../bai-10/">Bài 10 · Học tiếp</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG III · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 75–79</p><p class="thpt-r4-lead">Hiểu số liệu, đọc hình, tự làm và đối chiếu trước khi luyện tập.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương III</a><a href="../bai-10/">Bài 10 · Học tiếp</a></nav></div>
 
-## Vì sao cần học khoảng biến thiên và khoảng tứ phân vị?
-Một bảng số liệu có thể có trung bình giống nhau nhưng mức biến động rất khác. Điều quan trọng là hiểu đại lượng đang phản ánh *biên cực trị*, *nửa giữa*, hay *độ lệch quanh trung bình* trước khi tính.
-Nhiệm vụ của người tự học: đọc bảng, nêu giả thiết, tự thử, giải Core, luyện tập nhiều ngữ cảnh và tự đối chiếu. Mọi kết quả từ bảng **ghép nhóm** là ước lượng theo các giả định của cách ghép.
-## Tìm hiểu kiến thức, điều kiện và ví dụ
-**Mạch khái niệm:** Bảng lớp và tần số → nhóm đầu/cuối có dữ liệu → khoảng biến thiên R → vị trí n/4,3n/4 và nội suy Q1/Q3 → khoảng tứ phân vị Δ_Q → chọn thước đo theo câu hỏi.
-<!-- FIRST_TRY_ID: B09-T01 -->
-### Tự thử trước Core — Tình huống 1
-Trên các nhóm [0;5), [5;10), [10;15) có f=(0,3,4), hãy chỉ ra lớp đầu có dữ liệu và R. Hãy thử trước khi mở lời giải.
-<details><summary>Mở đối chiếu tình huống 1 sau khi tự thử</summary>Nhóm đầu có dữ liệu là [5;10), cuối là [10;15); R=15−5=10. Nếu bạn chọn 15, hãy quay lại mục 1/mục 2 để kiểm nhóm rỗng.</details>
-<!-- FIRST_TRY_ID: B09-T02 -->
-### Tự thử trước Core — Tình huống 2
-Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n/4 rơi vào lớp nào?
-<details><summary>Mở đối chiếu tình huống 2 sau khi tự thử</summary>n=40, mốc 10 thuộc lớp 2 và mốc 30 thuộc lớp 3 (cộng dồn 6,20,32,40). Nếu chọn lớp 4, hãy ôn cách lập cộng dồn ở mục 4.</details>
-<!-- FIG_ROLE: D5-01 -->
-### Quan sát hình: đọc đường tứ phân vị
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIII-B09-QUARTILES-R00.svg" alt="Hình minh họa nội suy Q1 và Q3 từ tần số tích lũy" /><figcaption>Quan sát hình và đọc lời hướng dẫn bên dưới.</figcaption></figure>
-**Đọc hình:** So giá trị n/4 và 3n/4 với tần số tích lũy để xác định lớp chứa Q; không đọc độ dài cột tần số như giá trị tứ phân vị. Hình mô phỏng, không cho phép khôi phục mẫu gốc.
-<!-- FIG_ROLE: D5-02 -->
-### Quan sát hình: khoảng biến thiên và IQR
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIII-B09-RANGE-IQR-R00.svg" alt="Hình minh họa vùng nửa giữa và hai đầu" /><figcaption>Quan sát hình và đọc lời hướng dẫn bên dưới.</figcaption></figure>
-**Đọc hình:** thanh từ cận nhỏ nhất đến cận lớn nhất mô tả R; phần giữa Q1–Q3 mô tả IQR. R nhạy với lớp ngoài cùng; Q1/Q3 là xấp xỉ nội suy.
+=== "Khám phá kiến thức"
 
-<!-- OUTCOME_ID: G12-CHIII-B09-O01 -->
-### 1. Đọc bảng ghép nhóm và hiểu giới hạn dữ liệu
-- **Vì sao cần biết:** Bảng đã gộp nhiều quan sát vào một khoảng: ta biết có bao nhiêu giá trị trong mỗi nhóm, nhưng không còn biết chính xác từng giá trị.
-- **Kiến thức cần nhớ:** Tần số; kí hiệu n; khoảng nửa kín [a;b); số liệu gốc và số liệu ghép nhóm.
-- **Bản chất trước công thức:** Bề rộng nhóm h=b−a; tổng tần số n; lớp đầu/lớp cuối có tần số dương mới xác định phần hỗ trợ của dữ liệu.
-- **Kiến thức và điều kiện:** Với các nhóm [aᵢ;aᵢ₊₁) và fᵢ ≥ 0, n=Σfᵢ; không lấy trung điểm lớp làm giá trị gốc thật của mọi quan sát.
-- **Tại sao chọn phương pháp này:** Đọc cột tần số trước, khoanh nhóm không rỗng, rồi mới suy khoảng phủ số liệu.
-- **Không áp dụng máy móc khi:** Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.
-- **Bẫy điển hình:** Đọc một nhóm tần số 0 như nhóm có quan sát.
-- **Liên hệ Tự thử trước Core:** Tự thử tình huống 1: Một bảng gồm 3 nhóm liên tiếp có tần số 0,4,6. Nhóm đầu có dữ liệu là nhóm nào?
-<!-- EX_ID: EX-G12-B09-01 -->
-#### Ví dụ có hướng dẫn
-**Nhận dạng và chọn cách làm:** Đọc cột tần số trước, khoanh nhóm không rỗng, rồi mới suy khoảng phủ số liệu.
-**Ví dụ và suy luận:** Bảng [0;10), [10;20), [20;30) có tần số 0, 5, 7: cỡ mẫu 12 và nhóm chứa dữ liệu sớm nhất là [10;20), không phải [0;10).
-**Tự kiểm:** Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.
+    Hai mẫu có thể cùng trung bình nhưng rất khác về độ trải rộng. Khoảng biến thiên trả lời câu hỏi về hai đầu, khoảng tứ phân vị mô tả nửa giữa. Trước khi tính, ôn cách sắp xếp mẫu thô, trung vị, tần số và khoảng nửa kín [a;b). Chẳng hạn 10 thuộc [10;20), không thuộc [0;10).
 
-<!-- OUTCOME_ID: G12-CHIII-B09-O02 -->
-### 2. Tính và đọc khoảng biến thiên ghép nhóm
-- **Vì sao cần biết:** Muốn ước lượng độ rộng toàn bộ miền quan sát, ta nhìn từ nhóm có dữ liệu đầu tiên tới nhóm cuối cùng.
-- **Kiến thức cần nhớ:** mục 1: lớp đầu và cuối có tần số dương.
-- **Bản chất trước công thức:** Khoảng biến thiên ghép nhóm đo độ trải dài xấp xỉ của miền dữ liệu; không phải khoảng cách giữa 2 trung điểm nhóm.
-- **Kiến thức và điều kiện:** R = cận trên của nhóm có tần số dương cuối − cận dưới của nhóm có tần số dương đầu.
-- **Tại sao chọn phương pháp này:** Xác nhận nhóm rỗng ở hai đầu, rồi trừ hai **cận nhóm**; báo đơn vị của biến.
-- **Không áp dụng máy móc khi:** R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.
-- **Bẫy điển hình:** Lấy cận của nhóm tần số 0 hoặc trừ hai trung điểm.
-- **Liên hệ Tự thử trước Core:** Tự thử tình huống 1: R của các nhóm [0;5),[5;10),[10;15) có f=0,3,4 là bao nhiêu?
-<!-- EX_ID: EX-G12-B09-02 -->
-#### Ví dụ có hướng dẫn
-**Nhận dạng và chọn cách làm:** Xác nhận nhóm rỗng ở hai đầu, rồi trừ hai **cận nhóm**; báo đơn vị của biến.
-**Ví dụ và suy luận:** Các nhóm [0;5), [5;10), [10;15), [15;20) với f=(0,5,10,0): R=15−5=10, không phải 20−0.
-**Tự kiểm:** R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.
+    ### 1.1. Từ số liệu thô đến bảng nhóm
+    
+    Khi nhiều quan sát được gộp vào lớp, ta giữ số lần xuất hiện trong mỗi lớp nhưng mất vị trí chính xác bên trong lớp. Tổng tần số phải bằng cỡ mẫu. Nhóm tần số 0 không chứa dữ liệu.
+    
+    **Vận dụng.** Cho 8 số đo: 11, 16, 19, 20, 22, 27, 28, 31. Lập tần số các nhóm [10;20), [20;30), [30;40).
+    
+    <span data-ped-first-try="1" data-outcome-id="G12-CHIII-B09-O01" data-thpt-first-try-id="THPT-G12-B09-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Tần số lần lượt 3, 4, 1; tổng 8. Số 20 thuộc nhóm thứ hai.
+    
+    <span data-thpt-help-id="HELP-G12-B09-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Gạch từng quan sát đã đếm, kiểm tổng tần số và đầu mút. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p01). Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
-<!-- OUTCOME_ID: G12-CHIII-B09-O03 -->
-### 3. Nhận biết độ nhạy của khoảng biến thiên
-- **Vì sao cần biết:** Một giá trị ở nhóm cực trị có thể đẩy biên của dữ liệu đi xa dù phần lớn quan sát không đổi.
-- **Kiến thức cần nhớ:** mục 2: nhóm đầu/nhóm cuối và R.
-- **Bản chất trước công thức:** R nhạy với giá trị ngoại lệ và với việc mở rộng lớp ở biên; vì vậy R không mô tả đầy đủ nửa giữa phân bố.
-- **Kiến thức và điều kiện:** So sánh hai R chỉ khi cùng đơn vị, phạm vi, cách chia nhóm đủ tương thích; biết R chỉ là một lát cắt sự phân tán.
-- **Tại sao chọn phương pháp này:** Đối chiếu biên trước và sau khi thêm một giá trị thuộc nhóm xa hơn, rồi hỏi các nhóm ở giữa có đổi hay không.
-- **Không áp dụng máy móc khi:** Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.
-- **Bẫy điển hình:** Kết luận mọi giá trị phân tán đều tăng cùng tỷ lệ khi R tăng.
-- **Liên hệ Tự thử trước Core:** Tự thử tình huống 1: Chỉ một quan sát chuyển sang lớp rất xa, R có thể thay đổi mạnh không?
-<!-- EX_ID: EX-G12-B09-03 -->
-#### Ví dụ có hướng dẫn
-**Nhận dạng và chọn cách làm:** Đối chiếu biên trước và sau khi thêm một giá trị thuộc nhóm xa hơn, rồi hỏi các nhóm ở giữa có đổi hay không.
-**Ví dụ và suy luận:** Nếu bảng có nhóm đầu [10;20) và cuối [30;40) thì R=30; thêm một quan sát ở [60;70) làm R thành 60 trong khi phần giữa có thể hầu như không đổi.
-**Tự kiểm:** Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.
+    ### 1.2. Khoảng biến thiên dùng hai cận
+    
+    Với mẫu thô, khoảng biến thiên bằng giá trị lớn nhất trừ nhỏ nhất. Với mẫu nhóm, chỉ biết hai lớp ngoài có dữ liệu: lấy cận trên lớp cuối trừ cận dưới lớp đầu. Cận lớp không nhất thiết là quan sát thật.
+    
+    **Vận dụng.** Các lớp [0;4), [4;8), [8;12), [12;16), [16;20) có tần số 0,3,5,2,0. Tính R nhóm.
+    
+    <span data-ped-first-try="2" data-outcome-id="G12-CHIII-B09-O02" data-thpt-first-try-id="THPT-G12-B09-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Lớp đầu có dữ liệu [4;8), cuối [12;16). $R=16-4=12$ (đơn vị gốc).
+    
+    <span data-thpt-help-id="HELP-G12-B09-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Bỏ lớp rỗng ở hai đầu; không dùng trung điểm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p03). Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
-<!-- OUTCOME_ID: G12-CHIII-B09-O04 -->
-### 4. Tìm nhóm chứa Q₁ và Q₃ theo tần số tích lũy
-- **Vì sao cần biết:** Để biết phần giữa của đám dữ liệu nằm ở đâu, ta cần vị trí 25% và 75% số quan sát thay vì chỉ nhìn hai đầu.
-- **Kiến thức cần nhớ:** Tần số tích lũy; cỡ mẫu n; các lớp có độ rộng dương.
-- **Bản chất trước công thức:** Q₁ và Q₃ là các vị trí phân chia mẫu thành bốn phần theo tỉ lệ; từ bảng ghép nhóm chỉ xác định được lớp và ước lượng nội suy.
-- **Kiến thức và điều kiện:** Dùng vị trí n/4 và 3n/4, cộng dồn tần số đến lớp đầu tiên có cộng dồn ≥ vị trí cần xét (tại biên lớp liên tiếp cho cùng giá trị nội suy).
-- **Tại sao chọn phương pháp này:** Lập cột cộng dồn và gạch vị trí; tuyệt đối không chọn lớp Q theo tần số lớn nhất.
-- **Không áp dụng máy móc khi:** Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.
-- **Bẫy điển hình:** Nhầm 3n/4 thành n/3 hoặc lấy lớp có số người lớn nhất.
-- **Liên hệ Tự thử trước Core:** Tự thử tình huống 2: n=40, f=(6,14,12,8). Mốc 3n/4=30 thuộc lớp số mấy?
-<!-- EX_ID: EX-G12-B09-04 -->
-#### Ví dụ có hướng dẫn
-**Nhận dạng và chọn cách làm:** Lập cột cộng dồn và gạch vị trí; tuyệt đối không chọn lớp Q theo tần số lớn nhất.
-**Ví dụ và suy luận:** f=(6,14,12,8), n=40; vị trí Q₁=10 ở lớp 2, Q₃=30 ở lớp 3 vì cộng dồn 6,20,32,40.
-**Tự kiểm:** Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.
+    ### 1.3. Biên nhạy với một quan sát xa
+    
+    Chỉ một quan sát xa có thể làm R tăng mạnh mà phần giữa gần như không đổi. Cách chia lớp cũng ảnh hưởng R nhóm. Vì vậy R không phản ánh hết mức phân tán của cả mẫu.
+    
+    **Vận dụng.** Ba lớp liên tiếp [10;20),[20;30),[30;40) đều có dữ liệu. Thêm một quan sát ở [70;80). R nhóm thay đổi bao nhiêu?
+    
+    <span data-ped-first-try="3" data-outcome-id="G12-CHIII-B09-O03" data-thpt-first-try-id="THPT-G12-B09-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** R từ 30 thành 70, tăng 40 đơn vị. Không đủ thông tin để kết luận IQR tăng 40.
+    
+    <span data-thpt-help-id="HELP-G12-B09-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        So cận ngoài trước và sau, phân biệt một ngoại lệ với toàn bộ mẫu. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p05). Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
-<!-- OUTCOME_ID: G12-CHIII-B09-O05 -->
-### 5. Nội suy hai tứ phân vị và tính IQR
-- **Vì sao cần biết:** Biết lớp chứa tứ phân vị vẫn chưa đủ: cần ước lượng tứ phân vị nằm ở đâu bên trong nhóm.
-- **Kiến thức cần nhớ:** mục 4: vị trí n/4,3n/4; lớp [L;L+h), tần số f và cộng dồn trước lớp C.
-- **Bản chất trước công thức:** Nội suy tuyến tính giả định quan sát phân bố tương đối đều trong lớp để ước lượng vị trí Qᵣ; IQR = Q₃ − Q₁.
-- **Kiến thức và điều kiện:** Qᵣ≈ L + ((r n/4 − C)/f)h, r∈{1,3}, f>0; Δ_Q=Q₃−Q₁.
-- **Tại sao chọn phương pháp này:** Sau khi xác định lớp, thay từng L,C,f,h vào một công thức; giữ nhiều chữ số trước phép trừ, rồi mới làm tròn.
-- **Không áp dụng máy móc khi:** Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.
-- **Bẫy điển hình:** Dùng nhầm C cộng dồn đến **sau** lớp đang xét, hoặc làm tròn Q₁ sớm.
-- **Liên hệ Tự thử trước Core:** Tự thử tình huống 2: Với n=40, lớp Q₁ [15;20), f=14 và cộng dồn trước lớp C=6, phần nội suy là (10−6)/14 của bề rộng lớp, đúng hay sai?
-<!-- EX_ID: EX-G12-B09-05 -->
-#### Ví dụ có hướng dẫn
-**Nhận dạng và chọn cách làm:** Sau khi xác định lớp, thay từng L,C,f,h vào một công thức; giữ nhiều chữ số trước phép trừ, rồi mới làm tròn.
-**Ví dụ và suy luận:** Với các lớp [10;15),[15;20),[20;25),[25;30) và f=(6,14,12,8), Q₁≈16,43, Q₃≈24,17, IQR≈7,74.
-**Tự kiểm:** Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.
+    ### 1.4. Vị trí tứ phân vị và cộng dồn
+    
+    Nếu xếp các quan sát theo thứ tự không giảm, Q₁ và Q₃ nằm gần vị trí một phần tư và ba phần tư. Với bảng nhóm, mốc $n/4$ và $3n/4$ được đặt trên cột cộng dồn. Tìm lớp có tần số dương đầu tiên mà cộng dồn đạt hoặc vượt mốc.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIII-B09-QUARTILES-R00.svg" alt="Biểu đồ tần số tích lũy bốn nhóm: 6, 20, 32, 40; đường ngang tại 10 và 30."/><figcaption>Đọc trục đứng theo thang 0–40: mốc 10 giữa 6 và 20, mốc 30 giữa 20 và 32. Chọn lớp 2 và lớp 3, sau đó mới nội suy trên độ rộng lớp.</figcaption></figure>
+    
+    **Vận dụng.** Tần số bốn lớp liên tiếp là 4, 8, 12, 8. Tìm n, mốc Q₁, Q₃ và lớp tương ứng.
+    
+    <span data-ped-first-try="4" data-outcome-id="G12-CHIII-B09-O04" data-thpt-first-try-id="THPT-G12-B09-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $n=32$; mốc 8 và 24. Cộng dồn 4,12,24,32. Q₁ ở lớp 2; Q₃ ở cận trên lớp 3 theo quy ước chọn lớp đạt mốc trước.
+    
+    <span data-thpt-help-id="HELP-G12-B09-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không chọn lớp đông nhất; tại đúng biên, không nội suy tùy tiện qua lớp rỗng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p07). Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
-<!-- OUTCOME_ID: G12-CHIII-B09-O06 -->
-### 6. Chọn R/IQR và so sánh hai mẫu có điều kiện
-- **Vì sao cần biết:** Hai lớp có thể có biên khác nhau do một vài giá trị cực trị, nhưng phần lớn dữ liệu ở giữa lại tập trung tương tự nhau.
-- **Kiến thức cần nhớ:** mục 2, mục 3, mục 5; cùng đơn vị và cách chia lớp.
-- **Bản chất trước công thức:** R xem miền ngoài cùng, IQR xem 50% giữa mẫu; dùng kết hợp khi cần kể cả mức nhạy với giá trị bất thường.
-- **Kiến thức và điều kiện:** Nếu nhóm/đơn vị tương thích, so sánh R_A với R_B và IQR_A với IQR_B; nêu rõ đây là phép so sánh **ước lượng** trên dữ liệu ghép nhóm.
-- **Tại sao chọn phương pháp này:** Đề bài hỏi “đầu mút” → R; hỏi “phần điển hình/ít bị cực trị tác động” → IQR; trường hợp nhập nhằng nên xem cả hai.
-- **Không áp dụng máy móc khi:** IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.
-- **Bẫy điển hình:** Dùng R để nhận xét cả nửa giữa hoặc dùng IQR để phủ nhận hoàn toàn tác động biên.
-- **Liên hệ Tự thử trước Core:** Tự thử tình huống 2: Chọn R hay IQR nếu yêu cầu so sánh nửa giữa dữ liệu ít nhạy với ngoại lệ?
-<!-- EX_ID: EX-G12-B09-06 -->
-#### Ví dụ có hướng dẫn
-**Nhận dạng và chọn cách làm:** Đề bài hỏi “đầu mút” → R; hỏi “phần điển hình/ít bị cực trị tác động” → IQR; trường hợp nhập nhằng nên xem cả hai.
-**Ví dụ và suy luận:** Hai bảng có cùng n=32 trên 5 nhóm [0;10)...[40;50): A f=(1,9,12,9,1) có R=50, B f=(0,7,18,7,0) có R=30; IQR_A cũng lớn hơn IQR_B.
-**Tự kiểm:** IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.
+    ### 1.5. Nội suy: phần nào của bề rộng lớp?
+    
+    Giả sử trong lớp chứa tứ phân vị, có f quan sát và C quan sát thuộc các lớp trước. Nếu mốc cần đạt là t thì còn t−C quan sát trong lớp, tức phần $(t-C)/f$ của lớp trong mô hình phân bố đều. Nhân bề rộng h rồi cộng cận dưới L.
+    
+    **Vận dụng.** Với n=24, lớp chứa Q₁ là [12;18), C=2, f=8. Ước lượng Q₁.
+    
+    <span data-ped-first-try="5" data-outcome-id="G12-CHIII-B09-O05" data-thpt-first-try-id="THPT-G12-B09-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $t=6$, phần cần đi $(6-2)/8=1/2$. $Q_1=12+6/2=15$.
+    
+    <span data-thpt-help-id="HELP-G12-B09-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm phần nội suy từ 0 đến 1; không lấy tổng cộng dồn hết lớp làm C. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p09). Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
-## Đối chiếu sau học (không thay thế Tự kiểm tra cuối chương)
-Hãy tự mô tả bằng lời sự khác nhau giữa R, IQR, s² và s; chọn đại lượng tương ứng với câu hỏi và giải thích điều chưa thể biết từ dữ liệu ghép nhóm. Hãy ôn lại phần kiến thức còn yếu bằng hướng dẫn phù hợp, rồi tự làm một bài tương tự chưa xem lời giải.
+    ### 1.6. Chọn đại lượng theo câu hỏi
+    
+    R nhìn hai đầu, khoảng tứ phân vị $\Delta_Q=Q_3-Q_1$ nhìn nửa giữa. Hai mẫu có thể cùng IQR mà R khác nhau hoặc ngược lại. So sánh cùng đơn vị và cách ghép nhóm tương thích.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIII-B09-RANGE-IQR-R00.svg" alt="Miền cận 0–50, Q1≈17,78, Q3≈32,22; khoảng tứ phân vị≈14,44."/><figcaption>Đoạn ngoài thể hiện cận nhóm có dữ liệu, đoạn giữa từ Q₁ tới Q₃. Không nhầm 50 là IQR.</figcaption></figure>
+    
+    **Vận dụng.** Hai bảng cùng đơn vị: A có R=40, IQR≈12; B có R=60, IQR≈10. Mẫu nào trải rộng toàn miền hơn, mẫu nào tập trung ở giữa hơn?
+    
+    <span data-ped-first-try="6" data-outcome-id="G12-CHIII-B09-O06" data-thpt-first-try-id="THPT-G12-B09-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** B có biên rộng hơn (60>40), đồng thời nửa giữa hẹp hơn (10<12). Không có một kết luận duy nhất về mọi khía cạnh độ phân tán.
+    
+    <span data-thpt-help-id="HELP-G12-B09-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Đọc kỹ đề hỏi biên hay phần giữa; nêu cả hai nhận xét nếu cần. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p11). Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
-## Core và Luyện tập theo chương
+    ### 1.7. Thực hành cả hai cách: mẫu thô và ghép nhóm
+    
+    Với 8 quan sát thô đã sắp xếp, Q₁ là trung vị 4 số đầu, Q₃ là trung vị 4 số cuối. Với bảng ghép, phải dùng mốc n/4, 3n/4 và nội suy; hai cách không nhất thiết trùng nhau.
+    
+    **Vận dụng.** Dữ liệu 6,7,8,9,12,13,14,18. Tính R và IQR gốc, rồi ghép theo [5;10),[10;15),[15;20) và tính R, IQR nhóm.
+    
+    <span data-ped-first-try="7" data-outcome-id="G12-CHIII-B09-O05" data-thpt-first-try-id="THPT-G12-B09-TRY07" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Gốc: $R=18-6=12$; $Q_1=(7+8)/2=7{,}5$, $Q_3=(13+14)/2=13{,}5$, IQR=6. Nhóm: f=(4,3,1), cộng dồn 4,7,8; $R=20-5=15$, $Q_1=5+2\cdot5/4=7{,}5$, $Q_3=10+(6-4)\cdot5/3=40/3$, IQR $=35/6\approx5{,}83$. Giá trị trùng ở Q₁ chỉ là tình cờ.
+    
+    <span data-thpt-help-id="HELP-G12-B09-TRY07" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Giữ nguyên mẫu gốc để tính chính xác, không dùng trung điểm lớp thay từng quan sát. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b09-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b09-p09). Sau đó tự làm lại Vận dụng không nhìn lời giải.
 
-Sau khi đọc kiến thức và tự thử, em thực hành trong **trang Core và Luyện tập Chương III**, chọn đúng Bài 9; lời giải chỉ mở sau khi tự nộp từng câu.
+=== "Kiến thức SGK"
 
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b09-core">✎ Core · Bài 9</a><a href="../luyen-tap/#b09-practice">✎ Luyện tập và Tự luận · Bài 9</a><a href="../luyen-tap/#b09-help">Hỗ trợ khi gặp khó khăn · Bài 9</a></nav></div>
+    ### 2.1. Khoảng biến thiên của mẫu số liệu ghép nhóm
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khoảng biến thiên của mẫu số liệu ghép nhóm.</strong><p>Mẫu số liệu ghép nhóm có các lớp nửa kín, hữu hạn, không chồng lấn, tần số \(f_i\ge0\), \(n=\sum_i f_i&gt;0\). Khoảng biến thiên R của mẫu ghép nhóm là cận trên lớp cuối có tần số dương trừ cận dưới lớp đầu có tần số dương. Nó là độ rộng phủ theo các nhóm, không phải khoảng biến thiên chính xác của mẫu gốc. Với mẫu nằm trong các khoảng nửa kín, \(R_{\rm gốc}\le R\).</p></div>
+
+    ### 2.1.1. Ý nghĩa và giới hạn
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Ý nghĩa và giới hạn.</strong><p>R có cùng đơn vị dữ liệu, nhạy với quan sát xa ở hai đầu và cách chia lớp. R không xác định IQR hay phương sai. Chỉ so các mẫu cùng đơn vị, phạm vi và cách ghép đủ tương thích.</p></div>
+
+    ### 2.2. Khoảng tứ phân vị của mẫu số liệu ghép nhóm
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khoảng tứ phân vị của mẫu số liệu ghép nhóm.</strong><p>Khoảng tứ phân vị là \(\Delta_Q=Q_3-Q_1\) (còn gọi IQR), mô tả độ rộng nửa giữa theo các tứ phân vị. Với dữ liệu nhóm, các tứ phân vị được ước lượng bằng nội suy, không nhất thiết bằng tứ phân vị mẫu gốc.</p></div>
+
+    ### 2.2.1. Xác định lớp và nội suy
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Xác định lớp và nội suy.</strong><p>Đặt \(t_r=rn/4\) với r=1 hoặc 3. Chọn lớp có tần số dương đầu tiên chứa mốc theo cộng dồn đạt hoặc vượt t_r. Gọi L là cận dưới, h là bề rộng dương, f&gt;0 là tần số lớp, C là tổng tần số trước lớp. Công thức \(Q_r=L+\frac{t_r-C}{f}h\). Kiểm \(0\le(t_r-C)/f\le1\). Nếu đúng mốc cộng dồn ở biên lớp thì theo quy ước chọn lớp đạt mốc trước; hai lớp kề cùng biên cho cùng giá trị nếu không có khoảng rỗng. Không chia f=0. Giữ số chính xác đến phép trừ cuối; khi so với mẫu thô thì ghi rõ xấp xỉ.</p></div>
+
+=== "Ví dụ"
+
+    ### 3.1. Nhận diện nhóm rỗng
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B09-01"><p><strong>Đề bài:</strong> Bảng [0;10), [10;20), [20;30) có f=(0,5,7). Tìm cỡ mẫu và lớp đầu có dữ liệu.</p><p><strong>Phân tích:</strong> Cộng các tần số, tìm lớp đầu có f dương.</p><p><strong>Lời giải:</strong> n=0+5+7=12; lớp đầu [10;20).</p><p><strong>Kiểm lại:</strong> Tổng đúng 12; không có quan sát trong [0;10).</p></div>
+
+    ### 3.2. Khoảng biến thiên nhóm
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B09-02"><p><strong>Đề bài:</strong> Các nhóm [0;5),[5;10),[10;15),[15;20), f=(0,5,10,0). Tính R.</p><p><strong>Phân tích:</strong> Hai nhóm rỗng ngoài cùng không tham gia xác định cận.</p><p><strong>Lời giải:</strong> \(R=15-5=10\).</p><p><strong>Kiểm lại:</strong> Không lấy 20−0 hay hai trung điểm.</p></div>
+
+    ### 3.3. Tác động ngoại lệ
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B09-03"><p><strong>Đề bài:</strong> Lớp đầu [10;20), lớp cuối [30;40). Thêm quan sát ở [60;70).</p><p><strong>Phân tích:</strong> Chỉ cận trên thay đổi.</p><p><strong>Lời giải:</strong> R từ 40−10=30 thành 70−10=60.</p><p><strong>Kiểm lại:</strong> Tăng 30 nhưng không biết IQR đổi bao nhiêu.</p></div>
+
+    ### 3.4. Định vị Q₁ và Q₃
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B09-04"><p><strong>Đề bài:</strong> Bốn lớp liền nhau có f=(6,14,12,8). Tìm lớp chứa các tứ phân vị.</p><p><strong>Phân tích:</strong> Lập cộng dồn trước khi nội suy.</p><p><strong>Lời giải:</strong> \(n=40\), t₁=10,t₃=30; cộng dồn 6,20,32,40. Mốc 10 ở lớp 2, mốc 30 ở lớp 3.</p><p><strong>Kiểm lại:</strong> Đối chiếu hình; 6&lt;10≤20 và 20&lt;30≤32.</p></div>
+
+    ### 3.5. Nội suy và trừ hai tứ phân vị
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B09-05"><p><strong>Đề bài:</strong> Các lớp [10;15),[15;20),[20;25),[25;30), f=(6,14,12,8). Tính IQR.</p><p><strong>Phân tích:</strong> Dựa vào lớp ở ví dụ trước, dùng từng bộ L,h,C,f.</p><p><strong>Lời giải:</strong> \(Q_1=15+\frac{10-6}{14}5=115/7\approx16{,}43\). \(Q_3=20+\frac{30-20}{12}5=145/6\approx24{,}17\). \(\Delta_Q=325/42\approx7{,}74\).</p><p><strong>Kiểm lại:</strong> Hai Q nằm trong lớp đã chọn; làm tròn sau khi trừ.</p></div>
+
+    ### 3.6. Hai mẫu ghép nhóm
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B09-06"><p><strong>Đề bài:</strong> Năm lớp [0;10),[10;20),[20;30),[30;40),[40;50). A có f=(1,9,12,9,1); B có f=(0,7,18,7,0). So sánh R và IQR.</p><p><strong>Phân tích:</strong> Cả hai n=32; so mốc 8 và 24 theo cộng dồn từng bảng.</p><p><strong>Lời giải:</strong> A: \(R=50\), \(Q_1=10+70/9=160/9\), \(Q_3=30+20/9=290/9\), IQR=130/9≈14,44. B: \(R=30\), \(Q_1=20+10/18=185/9\), \(Q_3=20+170/18=265/9\), IQR=80/9≈8,89. B tập trung hơn theo cả hai thước đo.</p><p><strong>Kiểm lại:</strong> Kiểm lớp rỗng B; kết luận giới hạn ở mẫu và cách ghép này.</p></div>
+
+    ### 3.7. Dữ liệu thô, bảng ghép và sai khác
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B09-R02-07"><p><strong>Đề bài:</strong> 12 thời gian (phút): 21,12,19,13,26,38,17,31,28,16,22,24. Ghép lớp [10;20),[20;30),[30;40), so R và IQR gốc/nhóm.</p><p><strong>Phân tích:</strong> Sắp xếp và tính tứ phân vị gốc trước, rồi đếm lớp và nội suy riêng.</p><p><strong>Lời giải:</strong> Mẫu đã xếp: 12,13,16,17,19,21,22,24,26,28,31,38. Gốc: R=26, \(Q_1=(16+17)/2=16{,}5\), \(Q_3=(26+28)/2=27\), IQR=10,5. Nhóm f=(5,5,2), cộng dồn 5,10,12; R=30. Mốc 3 và 9; \(Q_1=10+3\cdot10/5=16\), \(Q_3=20+(9-5)\cdot10/5=28\), IQR=12 phút.</p><p><strong>Kiểm lại:</strong> Tổng tần số 12; R nhóm lớn hơn R gốc, IQR nhóm lệch 1,5 phút. Không suy rằng sai khác luôn cùng dấu.</p></div>
+
+    ### 3.8. Mốc đúng biên và lớp rỗng
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B09-R02-08"><p><strong>Đề bài:</strong> Các lớp [0;10),[10;20),[20;30),[30;40) có f=(4,0,8,4). Tìm Q₁, Q₃ và IQR.</p><p><strong>Phân tích:</strong> Mốc n/4=4, 3n/4=12 đúng tại hai cộng dồn; chọn lớp đạt mốc trước có tần số dương.</p><p><strong>Lời giải:</strong> \(Q_1=0+4\cdot10/4=10\), \(Q_3=20+(12-4)\cdot10/8=30\); IQR=20.</p><p><strong>Kiểm lại:</strong> Không chia cho tần số lớp rỗng. Đây là quy ước nội suy nhóm, không khẳng định tứ phân vị gốc bằng 10 và 30.</p></div>
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Từ số liệu thô đến bảng nhóm
+    
+    ??? tip "Cách tự sửa"
+    
+        Gạch từng quan sát đã đếm, kiểm tổng tần số và đầu mút. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p01).
+
+    ### 4.2. Khoảng biến thiên dùng hai cận
+    
+    ??? tip "Cách tự sửa"
+    
+        Bỏ lớp rỗng ở hai đầu; không dùng trung điểm. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p03).
+
+    ### 4.3. Biên nhạy với một quan sát xa
+    
+    ??? tip "Cách tự sửa"
+    
+        So cận ngoài trước và sau, phân biệt một ngoại lệ với toàn bộ mẫu. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p05).
+
+    ### 4.4. Vị trí tứ phân vị và cộng dồn
+    
+    ??? tip "Cách tự sửa"
+    
+        Không chọn lớp đông nhất; tại đúng biên, không nội suy tùy tiện qua lớp rỗng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p07).
+
+    ### 4.5. Nội suy: phần nào của bề rộng lớp?
+    
+    ??? tip "Cách tự sửa"
+    
+        Kiểm phần nội suy từ 0 đến 1; không lấy tổng cộng dồn hết lớp làm C. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p09).
+
+    ### 4.6. Chọn đại lượng theo câu hỏi
+    
+    ??? tip "Cách tự sửa"
+    
+        Đọc kỹ đề hỏi biên hay phần giữa; nêu cả hai nhận xét nếu cần. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p11).
+
+    ### 4.7. Thực hành cả hai cách: mẫu thô và ghép nhóm
+    
+    ??? tip "Cách tự sửa"
+    
+        Giữ nguyên mẫu gốc để tính chính xác, không dùng trung điểm lớp thay từng quan sát. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b09-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b09-p09).
+
+    [Core Bài 9](../luyen-tap/#b09-core) · [Luyện tập và Tự luận](../luyen-tap/#b09-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b09-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 75–79.*
