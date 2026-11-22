@@ -115,7 +115,7 @@ with sync_playwright() as pw:
      fallback.route("**/thpt-topic01-release-tabs-v1.js",lambda route:route.abort())
      fallback.goto(BASE+part+"/",wait_until="domcontentloaded")
      expect(fallback.locator(".topic01-boot-status")).to_be_visible()
-     assert fallback.evaluate("document.documentElement.classList.contains('topic01-boot-fallback-'+arguments[0])",marker)
+     assert fallback.evaluate("(part)=>document.documentElement.classList.contains('topic01-boot-fallback-'+part)",marker)
      assert fallback.locator("article.md-typeset > h1").count()>=1
      if part=="tu-kiem-tra":
       assert fallback.locator("article.md-typeset > p > strong").count()>=11
