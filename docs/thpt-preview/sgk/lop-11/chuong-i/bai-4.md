@@ -60,7 +60,7 @@
 
     Ta bắt đầu với \(\sin x=\frac12\). Trên đường tròn lượng giác, sin là **tung độ**, nên đường ngang ở độ cao \(\frac12\) cắt đường tròn tại hai điểm: một góc \(\frac{\pi}{6}\), một góc \(\frac{5\pi}{6}\). Trên đồ thị hình sin, đó cũng là hai giao điểm của đường \(y=\frac12\) với một chu kì đồ thị.
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-01_R01.svg" alt="Đồ thị y bằng sin x, tham khảo các mốc trong một chu kì"><figcaption><strong>Đọc hình:</strong> hình cho đường \(y=\sin x\). Hãy hình dung thêm đường ngang \(y=\frac12\): nó cắt nhánh dương hai lần trong \(0\le x<2\pi\), tại \(\pi/6\) và \(5\pi/6\). Đường ngang không được vẽ sẵn trên SVG này.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_SIN_HALF_AUTHORING_RESET_20261123.svg" alt="Đồ thị sin với đường ngang y bằng một phần hai cắt tại hai hoành độ pi phần sáu và năm pi phần sáu"><figcaption><strong>Đọc hình:</strong> đường ngang \(y=\frac12\) cắt đồ thị \(y=\sin x\) tại \(x=\pi/6\) và \(x=5\pi/6\) trong một vòng \([0;2\pi)\). Sau mỗi \(2\pi\), hai giao điểm lặp lại, nên cần hai họ nghiệm.</figcaption></figure>
 
     Vì sin lặp sau \(2\pi\), ta phải cộng \(2k\pi\) vào **cả hai họ nghiệm**. Với một \(m\) bất kì, việc đầu tiên là kiểm \(|m|\le1\), vì tung độ của điểm trên đường tròn đơn vị không thể vượt ngoài \([-1;1]\). Chọn góc chuẩn \(\alpha\in[-\pi/2;\pi/2]\) sao cho \(\sin\alpha=m\); hai góc cùng tung độ là \(\alpha\) và \(\pi-\alpha\), sau đó cộng \(2k\pi\).
 
@@ -78,7 +78,7 @@
 
     Với cos, vị trí được đọc theo **hoành độ** của điểm trên đường tròn. Ví dụ \(\cos x=-\frac12\) là hai vị trí có cùng hoành độ âm, đối xứng qua trục hoành: \(x=2\pi/3\) và \(x=-2\pi/3\), rồi lặp sau mỗi \(2\pi\). Vì vậy dạng nghiệm của cos dùng cặp góc \(\alpha\) và \(-\alpha\), khác với cặp \(\alpha\) và \(\pi-\alpha\) của sin.
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-02_R01.svg" alt="Đồ thị y bằng cos x, chu kì 2pi"><figcaption><strong>Đọc hình:</strong> tham khảo đường \(y=\cos x\), hình dung đường ngang \(y=-\frac12\) cắt đồ thị ở hai vị trí đối xứng hoành độ \(\pm2\pi/3\) trong khoảng \([-\pi;\pi]\). Đường ngang không được vẽ sẵn.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_COS_MINUS_HALF_AUTHORING_RESET_20261123.svg" alt="Đồ thị cos với đường ngang y bằng âm một phần hai cắt tại hai hoành độ hai pi phần ba và bốn pi phần ba"><figcaption><strong>Đọc hình:</strong> trong \([0;2\pi)\), đường ngang \(y=-\frac12\) cắt đồ thị \(y=\cos x\) tại \(x=2\pi/3\) và \(x=4\pi/3\). Hai góc đối nhau theo modulo \(2\pi\): đó là lý do nghiệm cos có dạng \(x=\pm\alpha+2k\pi\).</figcaption></figure>
 
     Cũng như sin, nếu \(|m|>1\) thì không có nghiệm. Nếu \(|m|\le1\), chọn \(\alpha\in[0;\pi]\) sao cho \(\cos\alpha=m\), rồi lấy \(x=\pm\alpha+2k\pi\). Khi \(m=1\) hoặc \(m=-1\), các biểu thức có thể chỉ hai cách viết của cùng một họ nghiệm.
 
@@ -160,11 +160,15 @@
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức nghiệm — Phương trình sin</strong><p><strong>Điều kiện có nghiệm:</strong> \(|m|\le1\). Nếu \(|m|>1\), phương trình vô nghiệm.</p><p>Khi \(|m|\le1\), lấy duy nhất \(\alpha\in[-\pi/2;\pi/2]\) sao cho \(\sin\alpha=m\). Khi đó</p><p>\(\sin x=m\iff\begin{cases}x=\alpha+2k\pi,\\x=\pi-\alpha+2k\pi,\end{cases}\quad k\in\mathbb Z.\)</p><p><strong>Dạng so hai sin:</strong> \(\sin u=\sin v\iff u=v+2k\pi\) hoặc \(u=\pi-v+2k\pi\), \(k\in\mathbb Z\).</p></div>
 
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_SIN_HALF_AUTHORING_RESET_20261123.svg" alt="Hai giao điểm của y bằng sin x và đường ngang y bằng một phần hai"><figcaption><strong>Tra hình khi đọc công thức:</strong> hai giao điểm trong một vòng minh họa hai họ \(\alpha+2k\pi\) và \(\pi-\alpha+2k\pi\). Hình dùng chung với tab Khám phá; điều kiện \(|m|\le1\) vẫn phải tự kiểm cho giá trị \(m\) khác.</figcaption></figure>
+
     **Chú ý:** \(\sin x=0\iff x=k\pi\); \(\sin x=1\iff x=\pi/2+2k\pi\); \(\sin x=-1\iff x=-\pi/2+2k\pi\). Với đơn vị độ, dùng \(360^\circ\) thay \(2\pi\) và \(180^\circ\) thay \(\pi\). Khi hai họ trùng nhau, không tính hai lần.
 
     ### 2.3. Phương trình \(\cos x=m\)
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức nghiệm — Phương trình cos</strong><p><strong>Điều kiện có nghiệm:</strong> \(|m|\le1\). Nếu \(|m|>1\), phương trình vô nghiệm.</p><p>Khi \(|m|\le1\), lấy duy nhất \(\alpha\in[0;\pi]\) sao cho \(\cos\alpha=m\). Khi đó</p><p>\(\cos x=m\iff x=\pm\alpha+2k\pi,\quad k\in\mathbb Z.\)</p><p><strong>Dạng so hai cos:</strong> \(\cos u=\cos v\iff u=\pm v+2k\pi,\ k\in\mathbb Z\).</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_COS_MINUS_HALF_AUTHORING_RESET_20261123.svg" alt="Hai giao điểm của y bằng cos x và đường ngang y bằng âm một phần hai"><figcaption><strong>Tra hình khi đọc công thức:</strong> hai giao điểm trong một vòng minh họa cặp nghiệm đối nhau theo modulo \(2\pi\), tương ứng \(x=\pm\alpha+2k\pi\). Hình dùng chung với tab Khám phá.</figcaption></figure>
 
     **Chú ý:** \(\cos x=0\iff x=\pi/2+k\pi\); \(\cos x=1\iff x=2k\pi\); \(\cos x=-1\iff x=\pi+2k\pi\). Với đơn vị độ, dùng \(360^\circ\) thay \(2\pi\).
 
@@ -310,4 +314,4 @@
 
     **Cách sửa:** Dùng giá trị máy để xác định \(\alpha\), viết đủ họ tổng quát, rồi xét \(k\in\mathbb Z\) và điều kiện biên trước khi kết luận.
 
-    <p class="thpt-r4-footnote">Nguồn biên soạn: SGK Toán 11, <em>Kết nối tri thức với cuộc sống</em>, tập một, Bài 4 “Phương trình lượng giác cơ bản”, trang in 31–39. Sáu mục chính đối ứng giữa hai tab; hình SVG sin/cos/tan/cot sử dụng chung từ Bài 3. Việc đọc trực tiếp hình in của toàn bộ trang 31–39 chưa được xác nhận ở phiên này.</p>
+    <p class="thpt-r4-footnote">Nguồn biên soạn: SGK Toán 11, <em>Kết nối tri thức với cuộc sống</em>, tập một, Bài 4 “Phương trình lượng giác cơ bản”, trang in 31–39. Sáu mục chính đối ứng giữa hai tab; hai hình giao điểm sin/cos là đồ thị authoring của Bài 4 được dùng chung ở cả hai tab, còn hình tan/cot dùng lại SVG canonical từ Bài 3. Việc đọc trực tiếp hình in của toàn bộ trang 31–39 chưa được xác nhận ở phiên này.</p>
