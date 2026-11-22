@@ -67,3 +67,28 @@ body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-
 }
 body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary,
 body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary::before{color:#e2ebff}
+
+/* SGK/CĐ01 accepted horizontal 44px tab rail; keep identical on all W1 topics. */
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs{
+ display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;max-width:100%;min-width:0;gap:8px;padding:12px 2px
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{
+ flex:0 0 auto;width:auto;max-width:none;white-space:nowrap;box-sizing:border-box;
+ display:inline-flex;align-items:center;justify-content:center;height:44px;min-height:44px;
+ font-size:15px;line-height:1.45;padding:9px 13px;border-radius:9px;font-weight:700;
+ border:1px solid #cdd8ec;background:#edf2fb;color:#2d426f;box-shadow:none
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab.is-active{
+ background:#284db5;color:#fff;border-color:#284db5
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{
+ background:#263753;color:#e6edff;border-color:#455b83
+}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab.is-active{
+ background:#3457bd;color:#fff;border-color:#5976d9
+}
+@media(max-width:640px){
+ body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{
+  font-size:14px;padding:8px 10px
+ }
+}
