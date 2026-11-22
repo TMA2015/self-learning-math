@@ -34,7 +34,7 @@ RELEASE_AUTHORIZATION: NO
 ## AUTHORING A1–A7 — source evidence signed in this pass
 - [x] A1_SOURCE_SNAPSHOT — Bundle `bc90bd1b544a51675ee1d66b4f0c27758d55e1cb` lists 16 exact immutable learner/bank/SVG source path+blob pairs; four canonical lessons, optional after B17 and only one public bank. R01 source/receipt untouched.
 - [x] A2_SGK_SBT_SCOPE — Original SGK 12 KNTT Tập hai printed29–60 directly visual read; SBT original printed B14 21–24, B15 26–29, B16 30–32, B17 32–35. Printed SBT p25 absent, `SBT_REFERENCE_GAP_DOCUMENTED`; secondary 5.6/5.7 corroborated, not counterfeit original SBT custody; no mandatory S1 content missing.
-- [x] A3_Q18_SIGNOFF — `AUTHOR_SELF_VERIFIED` Q18 in receipt `6cc05a5789cf64917afe31a0f0c8e6573bb30741` source-locks R02 and 197/197 limited math cases, 101/101 local structural checks, 18/18 bank global invariants. No invented independent R02 reviewer verdict.
+- [x] A3_NOTEBOOKLM_VERDICT — `AUTHOR_SELF_VERIFIED` Q18 in receipt `6cc05a5789cf64917afe31a0f0c8e6573bb30741` source-locks R02 and 197/197 limited math cases, 101/101 local structural checks, 18/18 bank global invariants. No invented independent R02 reviewer verdict.
 - [x] A4_ITEM_OUTCOME_IDS — 27 outcomes, 108 unique canonical public items 27 x four roles, 27 public END reuse-only references, 27 HELP, optional B14 O07 only after B17; no duplicated question or separate readiness.
 - [x] A5_D1_D6_SCOPE — Four full theory+FirstTry+formal+worked+repair lesson flows, 45 worked examples, ten SVG source locks, 27 five-step D6, 27 Written rubric /5; SGK B14 trigonometric locus O08, B15 finite screen O08 and B17 geography O06 deeply exercised in new roles.
 - [x] A6_DELTA_RESOLVED — Actual Delta-C repairs independently recomputed and audited on affected source, B15 W05 perpendicular/skew, 12 new public questions, source-aligned FirstTry recovery and maths; other original 96 item IDs preserved, R01 PASS untouched.
@@ -52,12 +52,12 @@ RELEASE_AUTHORIZATION: NO
 One standard: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` v3.2.0. The **full 18-row signed** Q01–Q18 table plus 108-item matrix lives in `prototypes/thpt/release-handoffs/G12-SGK-CHV-B14-B17-R02_HANDOFF_V2_20261122.md` and points to `ACADEMIC_SOURCE_BLOB=bc90bd1b544a51675ee1d66b4f0c27758d55e1cb`, `REVIEW_RECEIPT_PATH=prototypes/thpt/review-packets/G12_CHV_R02_AUTHOR_SELF_Q18_S1_MATH_PED_RECEIPT_20261122.md`. AUTHORING has signed its academic/PED Q18 evidence, not RELEASE Q16 interaction or browser AP/R.
 
 ## RELEASE R1–R5 / AP1–AP5 / P1–P2 — outside AUTHORING
-- [ ] R1_INTEGRATED_EXACT_SOURCE — RELEASE imports same original learner Markdown, 10 SVG and 108-item one bank and reconciles source/receipt locks without modifying math.
+- [ ] R1_INTEGRATED_CURRENT_MAIN — RELEASE imports same original learner Markdown, 10 SVG and 108-item one bank and reconciles source/receipt locks without modifying math.
 - [ ] R2_EXACT_HEAD_CI — RELEASE performs exact HEAD validation, all regression/Golden THCS/THPT/Topic checks and final submit safety.
-- [ ] R3_GOLDEN_AP — RELEASE actual visual checks at multiple devices/light/dark, MathJax, SVG and navigation; user has not granted direct production deployment.
+- [ ] R3_CLEAN_STUDENT_UI — RELEASE actual visual checks at multiple devices/light/dark, MathJax, SVG and navigation; user has not granted direct production deployment.
 - [ ] R4_ASSESSMENT_SAFETY — Existing JS guard expects 96 items/24 HELP/24 END, new bank is 108/27/27 and must not be deployed without adapter changes and Q16 browser negative tests; no hints/answers/Tutor pre-Final Submit or Mastery writes.
 - [ ] R5_OWNER_APPROVAL — Explicit owner merge/deploy permission needed separately even when R1–R4 passes.
-- [ ] P1_PRODUCTION_DEPLOY — No deployed website receipt from this authoring task.
-- [ ] P2_REAL_DEVICE — No owner real iPad/iPhone QA claimed.
+- [ ] P1_DEPLOY_RECEIPT — No deployed website receipt from this authoring task.
+- [ ] P2_DEVICE_UAT — No owner real iPad/iPhone QA claimed.
 
 **CONTENT_READY is for academic SOURCE R02 only.** It is not a claim that current JS/rendered website supports the bank or that RD1 is live. The existing R01 archive stays frozen and separate; new delivery requires exact R02 SHA, not mixed source versions.
