@@ -8,9 +8,9 @@ LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHII_B05_B07_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-ACADEMIC_SOURCE_BLOB: e97ebabeea9b7498b9ab2060f85f4166e937d784
+ACADEMIC_SOURCE_BLOB: 8e4babbed468a1fd19f44df1e00cb37d0607c8d0
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHII_B05_B07_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
-REVIEW_RECEIPT_BLOB: 571dc1ebee5d3c5a6fb236ccf3ed2b58abb77cd6
+REVIEW_RECEIPT_BLOB: d612a0d2621aa574bd971e1efabf5c5f9020eddd
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 BLOCKERS: NONE
@@ -95,6 +95,7 @@ One original learner Markdown path each for B05 B06 B07; one canonical JS public
 - THPT-G11-CHII-W06-02-ANCHOR
 - THPT-G11-CHII-W07-01
 - THPT-G11-CHII-W07-02-ANCHOR
+- THPT-G11-CHII-W-COMP01
 
 ## S1_SGK_SBT_SOURCE
 
@@ -102,15 +103,15 @@ Original primary SGK KNTT Toán 11 Tập một B05 printed 42–47 B06 48–51 B
 
 ## D1_D6_EVIDENCE
 
-D1 full B05 discrete finite/infinite sequences and recurrence/monotonic/bounded; B06 difference d and derived nth/sum; B07 ratio q nth/sum with q=0,1 and negative cases. D2 18 worked examples with explicit reasoning and checks. D3 original 36 public C/P canonical items. D4 six unchanged mathematically valid Written rubrics /6 in shared original library, not forcibly normalized to a different scale without rationale. D5 three mathematical SVG with discrete plot interpretation. D6 18 hidden-reveal self-tries with student repair and original practice returns. Current independent 42/42 numerical and math condition checks; historical chapter author source Q18 also documented 57/57 structure checks and 113386 deterministic sampled math cases before this source-equivalent navigation delta.
+D1 full B05 discrete finite/infinite sequences and recurrence/monotonic/bounded; B06 difference d and derived nth/sum; B07 ratio q nth/sum with q=0,1 and negative cases. D2 19 worked examples with explicit reasoning and checks. D3 original 36 public C/P canonical items. D4 six unchanged original Written rubrics /6 plus one newly authored integrated comparison Written /6 in the same existing library, self-checked for exact scoring and math. D5 three mathematical SVG with discrete plot interpretation. D6 18 hidden-reveal self-tries with student repair and original practice returns. Current independent 42/42 numerical and math condition checks; historical chapter author source Q18 also documented 57/57 structure checks and 113386 deterministic sampled math cases before this source-equivalent navigation delta.
 
 ## PED1_PED6_EVIDENCE
 
-PED1 why study sequences through growth models and discrete data; PED2 prior index arithmetic and sums; PED3 concept/meaning before formulas and exceptional q branches; PED4 three SVG with alt/desc and guided axes reading; PED5 chosen method, proof and 18 worked cases; PED6 18 opt-in FirstTry, hidden comparison and original practice/error-repair path. Each B05/B06/B07 five lesson outcome categories covered, plus cross comparison between arithmetic vs geometric sequences. Four semantic Golden tabs per lesson.
+PED1 why study sequences through growth models and discrete data; PED2 prior index arithmetic and sums; PED3 concept/meaning before formulas and exceptional q branches; PED4 three SVG with alt/desc and guided axes reading; PED5 chosen method, proof and 19 worked cases; PED6 19 opt-in FirstTry, hidden comparison and original practice/error-repair path. Each B05/B06/B07 five lesson outcome categories covered, plus cross comparison between arithmetic vs geometric sequences. Four semantic Golden tabs per lesson.
 
 ## DELTA_LEDGER
 
-R03 historical reviewed source 2101e2a248e0cf53ee11847b913b937cebcd0806 and independent composite receipt 09d77f92e6efb266ac15e0d972256319d92a3e1e immutable. Prior R02 G11 ChII B05–B07 author self QA already tested original revised learner content in prototypes/thpt/ux795/G11_CHII_B05_B07_SGK_AUTHORING_Q18_20261121.md. This R04 source-equivalent delta converts only 40 relative clean-url Markdown hyperlinks to HTML anchors, exactly same label and href; B05 13 B06 13 B07 14. No change to math, exercise stems/answers, rubric/score, SVG, RD1, D6, Q15 bank or runtime. Source blob now e97ebabeea9b7498b9ab2060f85f4166e937d784 and one author-self Q18 receipt 571dc1ebee5d3c5a6fb236ccf3ed2b58abb77cd6; do not attribute current material to independently reviewed R03 snapshot.
+R03 historical reviewed source 2101e2a248e0cf53ee11847b913b937cebcd0806 and independent composite receipt 09d77f92e6efb266ac15e0d972256319d92a3e1e immutable. Prior R02 G11 ChII B05–B07 author self QA already tested original revised learner content in prototypes/thpt/ux795/G11_CHII_B05_B07_SGK_AUTHORING_Q18_20261121.md. This R04 source-equivalent delta converts only 40 relative clean-url Markdown hyperlinks to HTML anchors, exactly same label and href; B05 13 B06 13 B07 14. No change to math, exercise stems/answers, rubric/score, SVG, RD1, D6, Q15 bank or runtime. Source blob now 8e4babbed468a1fd19f44df1e00cb37d0607c8d0 and one author-self Q18 receipt d612a0d2621aa574bd971e1efabf5c5f9020eddd; do not attribute current material to independently reviewed R03 snapshot.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 
@@ -164,43 +165,51 @@ Original 19 protected canonical RD1 owner-held off GitHub, SHA256 96d39c5b4a40df
 | THPT-G11-CHII-W06-02-ANCHOR | G11-B06-AP-APPLICATION | WRITTEN/ANCHOR_TAG | Frozen R01 preserved in source-equivalent R03 | VERIFIED_R04 |
 | THPT-G11-CHII-W07-01 | G11-B07-GP-SUM | WRITTEN | Frozen R01 preserved in source-equivalent R03 | VERIFIED_R04 |
 | THPT-G11-CHII-W07-02-ANCHOR | G11-B07-GP-APPLICATION | WRITTEN/ANCHOR_TAG | Frozen R01 preserved in source-equivalent R03 | VERIFIED_R04 |
+| THPT-G11-CHII-W-COMP01 | G11-CHII-STRUCTURAL-COMPARISON | SGK_WRITTEN | New R04 cross-lesson transfer /6 rubric | VERIFIED_R04_AUTHOR_SELF_QA |
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-Sole normative source prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md, effective v3.2.0. This R04 author-signoff Q18 source blob e97ebabeea9b7498b9ab2060f85f4166e937d784 receipt path prototypes/thpt/review-packets/G11_CHII_B05_B07_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md and original source IDs apply same 18-row Q01–Q18 for math and RELEASE AP/R.
+Sole normative source prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md, effective v3.2.0. This R04 author-signoff Q18 source blob 8e4babbed468a1fd19f44df1e00cb37d0607c8d0 receipt path prototypes/thpt/review-packets/G11_CHII_B05_B07_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md and original source IDs apply same 18-row Q01–Q18 for math and RELEASE AP/R.
 
 | Q_ID | lesson and source | author math pedagogy QA | Q18 mode evidence | release mapping |
 
 | --- | --- | --- | --- | --- |
 
-| Q01 | S1 printed B05 42–47 B06 48–51 B07 52–55 and historic SBT primary receipts | AUTHOR_QA_PASS original direct S1 custody from R03 and current math proofs | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q02 | Sixteen RD0 outcomes: fifteen lesson and one cross-comparison | AUTHOR_QA_PASS 42 item IDs and all subject paths verified | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q03 | B05 finite index/recurrence, B06 arithmetic difference, B07 geometric q exceptions | AUTHOR_QA_PASS formulas, assumptions and counterexamples | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q04 | Eighteen reasoned worked examples six per lesson | AUTHOR_QA_PASS independent exact numerical checks | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q05 | Thirty-six unchanged reviewed public Core Practice canonical items | AUTHOR_QA_PASS domain/rule/word transfer depth | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q06 | Six original shared Written and Anchor labels in one library | AUTHOR_QA_PASS six correct self-check rubric six point original unchanged | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q07 | Three original SVG on discrete sequence/AP/GP plots | AUTHOR_QA_PASS title desc axes and reading instructions | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q08 | Eighteen topic-focused FirstTry with misconception-specific corrections | AUTHOR_QA_PASS exact original C/P remedy returns | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q09 | Real growth and indexed models motivate knowledge | AUTHOR_QA_PASS why-learn prior to official formula | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q10 | Index domain and sum prerequisites taught | AUTHOR_QA_PASS prior concepts and unit conditions | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q11 | Meaning of repeated difference/ratio before nth and sum | AUTHOR_QA_PASS intuitive structure before formal rule | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q12 | Discrete plots show points and do not interpolate real line | AUTHOR_QA_PASS learner instructions for SVG source | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q13 | Proof conditions q zero/one and negative differences | AUTHOR_QA_PASS forty-two actual arithmetic scenario checks | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q14 | Eighteen FirstTry hidden self-check + remedial loop | AUTHOR_QA_PASS all fifteen lesson outcome categories covered | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q15 | Forty-two canonical IDs one stored answer each, Anchors labels only | AUTHOR_QA_PASS original source banks unchanged | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q16 | Public END reused 15 selfcheck; 19 protected private original RD1 off GitHub | AUTHOR_QA_PASS self-check no Mastery and no private stems | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q17 | Complete standalone SGK journey B05 B06 B07 with END | AUTHOR_QA_PASS Topic path separate | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
-| Q18 | R04 exact Git SHA source and one source-paired author Q18 receipt | AUTHOR_QA_PASS prior reviewer R03 invariant and current self verification | AUTHOR_SELF_VERIFIED source e97ebabeea9b7 receipt 571dc1ebee5d3 | RELEASE AP/R/Q16 verification |
+| Q01 | S1 printed B05 42–47 B06 48–51 B07 52–55 and historic SBT primary receipts | AUTHOR_QA_PASS original direct S1 custody from R03 and current math proofs | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q02 | Sixteen RD0 outcomes: fifteen lesson and one cross-comparison | AUTHOR_QA_PASS 43 IDs; previously unassessed structural comparison now has distinct integrated Written + FirstTry | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q03 | B05 finite index/recurrence, B06 arithmetic difference, B07 geometric q exceptions | AUTHOR_QA_PASS formulas, assumptions and counterexamples | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q04 | Nineteen reasoned worked examples: six B05, six B06, seven B07 including integrated CSC/CSN comparison | AUTHOR_QA_PASS exact new worked comparison math and prior historical 18 models | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q05 | Thirty-six unchanged public Core/Practice plus seven canonical Written including integrated comparison | AUTHOR_QA_PASS existing 36 C/P unchanged, new integrated transfer Written supplies outcome-specific application depth | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q06 | Six original shared Written/Anchor plus one new comparison Written in SAME library | AUTHOR_QA_PASS six original /6 rubrics untouched and new six-point comparison rubric math checked | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q07 | Three original SVG on discrete sequence/AP/GP plots | AUTHOR_QA_PASS title desc axes and reading instructions | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q08 | Nineteen topic-focused FirstTry including cross AP/GP contrast, all with local D6 | AUTHOR_QA_PASS old remedial links preserved; new B07 TRY07 has local cause-specific recovery | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q09 | Real growth and indexed models motivate knowledge | AUTHOR_QA_PASS why-learn prior to official formula | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q10 | Index domain and sum prerequisites taught | AUTHOR_QA_PASS prior concepts and unit conditions | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q11 | Meaning of repeated difference/ratio before nth and sum | AUTHOR_QA_PASS intuitive structure before formal rule | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q12 | Discrete plots show points and do not interpolate real line | AUTHOR_QA_PASS learner instructions for SVG source | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q13 | Reasoning on negative/zero ratio, AP/GP model selection and earliest strict monthly threshold | AUTHOR_QA_PASS prior finite checks historical; added exact n1/n2/n3 computations and limits | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q14 | Nineteen FirstTry source-local IDs with hidden comparison plus per-skill remediation | AUTHOR_QA_PASS all 16 registered outcomes including cross-lesson now actually taught and first-tried | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q15 | Forty-three canonical item IDs: 36 C/P + six unchanged Written + one new integrated Written | AUTHOR_QA_PASS all IDs unique, one item one canonical, no Anchor duplication or extra question bank | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q16 | Public END reused 15 selfcheck; 19 protected private original RD1 off GitHub | AUTHOR_QA_PASS self-check no Mastery and no private stems | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q17 | Complete standalone SGK journey B05 B06 B07 with END | AUTHOR_QA_PASS Topic path separate | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
+| Q18 | R04 relocked exact source manifest, one signed Q18 receipt with substantive gap closed | AUTHOR_QA_PASS 43 item→outcome map and current source SHA, historic R03 immutable | AUTHOR_SELF_VERIFIED source 8e4babbed468 receipt d612a0d2621a | RELEASE AP/R/Q16 verification |
 
 ## REVIEW_SOURCE_RECEIPT
 
-One AUTHOR_SELF_QA_RECEIPT: prototypes/thpt/review-packets/G11_CHII_B05_B07_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md exact blob 571dc1ebee5d3c5a6fb236ccf3ed2b58abb77cd6 contains SOURCE_BLOB: e97ebabeea9b7498b9ab2060f85f4166e937d784. Previous independently reviewed R03 source and review remain signed only for their old immutable snapshots. This R04 source author verified from original knowledge and exact checked math, no fake independent R04 NotebookLM.
+One AUTHOR_SELF_QA_RECEIPT: prototypes/thpt/review-packets/G11_CHII_B05_B07_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md exact blob d612a0d2621aa574bd971e1efabf5c5f9020eddd contains SOURCE_BLOB: 8e4babbed468a1fd19f44df1e00cb37d0607c8d0. Previous independently reviewed R03 source and review remain signed only for their old immutable snapshots. This R04 source author verified from original knowledge and exact checked math, no fake independent R04 NotebookLM.
 
 ## AUTHOR_SIGNOFF
 
-Verified all current B05 B06 B07 Core knowledge, 16 outcomes, 42 public item IDs, six unchanged original Written /6 and 18 FirstTry/18 worked/3 SVG; Q01–Q18/A1–A7 P0=P1=0 under single standard AUTHOR_SELF_VERIFIED. After one ready+REGISTER row in this completion pass AUTHORING_PASS=CONTENT_READY. No author permission for website integration.
+Verified all current B05 B06 B07 Core knowledge, 16 outcomes with direct integrated comparison coverage, 43 canonical public item IDs (36 unchanged C/P + six unchanged prior Written /6 + one new integrated Written /6) and 19 FirstTry/19 worked/3 SVG; Q01–Q18/A1–A7 P0=P1=0 under single standard AUTHOR_SELF_VERIFIED. After one ready+REGISTER row in this completion pass AUTHORING_PASS=CONTENT_READY. No author permission for website integration.
 
 ## RELEASE_ACCEPTANCE
 
 RELEASE must accept exact source and validate original runtime bank/Golden/MathJax/SVG, independent Final Submit Q16 and no Mastery, exact HEAD CI AP/R and owner merge/deploy permission. Legacy G11 unindented-heading lint may misread indented MkDocs Golden tab titles; this technical RELEASE AP lint is not an academic source blocker. No production changes, Firebase/auth or private data.
 
+
+
+## CURRENT_R04_CROSS_OUTCOME_Q02_Q04_Q05_Q06_Q14_Q15_ENRICHMENT
+
+The previously registered `G11-CHII-STRUCTURAL-COMPARISON` had no actual canonical C/P/W question in the original source; old claims to an "existing comparison item" were rejected by reading all 42 original stems and their outcome matrix. This exact source Delta-C now supplies **one genuinely new canonical Written ID `THPT-G11-CHII-W-COMP01` in the existing one Written/Anchor library**, linked to the integrated outcome and a distinct new B07 `TRY07`. It adds one Knowledge self-try with hidden solution/D6, one worked method-choice example 3.7, and misconception repair 4.6, without changing any of the 42 previously approved items or 19 original private RD1. Actual 16/16 outcome registration now has genuine evidence, and 43/43 item matrix rows are source-anchored.
+
+Math: first-try finite sequences CSC `a_n=3+4(n−1)` yields `a5=19`; CSN `b_n=3·2^(n−1)` yields `b5=48`. Worked `u4=13`, `v4=189/8`. New Written models per-month \(a_n=n+1\), \(b_n=2(3/2)^{n-1}\), with equal n1/n2 amounts and first strict inequality `b3=4.5>a3=4`; six criteria /6. Four-tab source remains intact and new reveal is opt-in; RELEASE must render/QA the 7th Written card and no-Mastery before deployment. Existing 36 C/P JS runtime untouched. Q18 is AUTHOR_SELF_VERIFIED only, not newly independent reviewer PASS.
