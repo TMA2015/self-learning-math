@@ -25,14 +25,14 @@ const topicTabNames={
    [
     "1.1. Đồng biến và nghịch biến",
     "1.2. Dấu đạo hàm",
-    "1.3. Điểm cấm và khoảng biến…",
+    "1.3. Điểm cấm và biến thiên",
     "1.4. Cực trị qua đổi dấu",
     "1.5. Điểm dừng không cực trị",
-    "1.6. Hướng chuyển động so tốc…"
+    "1.6. Chiều chuyển động"
    ],
    [
-    "2.1. Cực trị địa phương và…",
-    "2.2. Tồn tại GTLN/GTNN trên…",
+    "2.1. Cực trị địa phương/toàn cục",
+    "2.2. GTLN, GTNN trên đoạn",
     "2.3. Ứng viên và biên",
     "2.4. Miền mở và khả đạt",
     "2.5. Miền ràng buộc",
@@ -53,7 +53,7 @@ const topicTabNames={
     "4.4. Giao trục",
     "4.5. Tâm đối xứng",
     "4.6. Bảng biến thiên",
-    "4.7. Miền rời và chiều biến…"
+    "4.7. Miền rời và biến thiên"
    ],
    [
     "5.1. Chi phí cận biên",
@@ -81,32 +81,32 @@ const topicTabNames={
   ],
   "subs": [
    [
-    "1.1. Nhận ra nguyên hàm từ…",
-    "1.2. họ nguyên hàm và điều…",
+    "1.1. Nhận ra nguyên hàm",
+    "1.2. Họ nguyên hàm, điều kiện",
     "1.3. Nguyên hàm lũy thừa",
     "1.4. Nguyên hàm 1/x trên khoảng",
     "1.5. Hàm mũ và hệ số bù",
     "1.6. Nguyên hàm lượng giác",
-    "1.7. Từ vận tốc khôi phục vị…"
+    "1.7. Từ vận tốc tìm vị trí"
    ],
    [
-    "2.1. Tích phân xác định và…",
+    "2.1. Tích phân xác định",
     "2.2. Tính tuyến tính tích phân",
     "2.3. Đảo cận và ghép cận",
-    "2.4. Từ tích lũy tới diện…",
-    "2.5. Phân biệt độ dời và…",
+    "2.4. Tích phân và diện tích",
+    "2.5. Độ dời và quãng đường",
     "2.6. Tích phân lượng giác",
-    "2.7. Tích lũy từ tốc độ biến…"
+    "2.7. Tích lũy theo thời gian"
    ],
    [
     "3.1. Diện tích dưới hàm căn",
     "3.2. Diện tích đổi dấu qua trục",
     "3.3. Diện tích giữa hai đường",
     "3.4. Hai đường đổi thứ tự",
-    "3.5. Mô hình diện tích từ…"
+    "3.5. Diện tích ứng dụng"
    ],
    [
-    "4.1. Thể tích từ thiết diện…",
+    "4.1. Tích phân theo thiết diện",
     "4.2. Thể tích từ tiết diện tròn",
     "4.3. Đĩa và vành khăn khối xoay"
    ]
@@ -122,25 +122,25 @@ const topicTabNames={
   "subs": [
    [
     "1.1. Độ và radian góc có hướng",
-    "1.2. Sin/cos từ tọa độ đường…",
-    "1.3. Cung hình học và độ dời…"
+    "1.2. Sin/cos trên đường tròn",
+    "1.3. Độ dài cung và độ dời"
    ],
    [
-    "2.1. Hệ thức lượng giác cùng…",
+    "2.1. Hệ thức lượng giác",
     "2.2. Góc liên quan và đối xứng",
     "2.3. Công thức cộng/trừ góc",
     "2.4. Góc nhân đôi và đổi dạng"
    ],
    [
-    "3.1. Miền xác định biểu thức…",
+    "3.1. Miền xác định lượng giác",
     "3.2. Chu kỳ cơ bản và đối xứng",
     "3.3. Biên độ, pha và trục giữa",
-    "3.4. Nhánh tan/cot và tiệm…"
+    "3.4. Tan/cot và tiệm cận"
    ],
    [
     "4.1. Nghiệm của sin/cos",
     "4.2. Nghiệm của tan/cot",
-    "4.3. Biến đổi không làm mất…",
+    "4.3. Biến đổi giữ nghiệm",
     "4.4. Lọc nghiệm theo khoảng",
     "4.5. Chu kỳ mô hình có giới hạn"
    ]
@@ -156,27 +156,27 @@ const topicTabNames={
   "subs": [
    [
     "1.1. Dãy số và tập chỉ số",
-    "1.2. Công thức tường minh và…",
+    "1.2. Công thức và quy luật",
     "1.3. Hệ thức truy hồi",
     "1.4. Chứng minh tăng, giảm",
     "1.5. Tính bị chặn"
    ],
    [
     "2.1. Nhận diện cấp số cộng",
-    "2.2. Công thức số hạng tổng…",
-    "2.3. Tìm công sai từ hai số…",
+    "2.2. Số hạng tổng quát CSC",
+    "2.3. Tìm công sai",
     "2.4. Tổng các số hạng đầu",
     "2.5. Bài toán tích lũy"
    ],
    [
-    "3.1. Công bội và trường hợp…",
+    "3.1. Công bội đặc biệt",
     "3.2. Số hạng tổng quát",
-    "3.3. Suy công bội từ hai số…",
+    "3.3. Tìm công bội",
     "3.4. Tổng hữu hạn",
     "3.5. Tổng vô hạn và phần dư"
    ],
    [
-    "4.1. Thay đổi tuyệt đối so…",
+    "4.1. Tăng đều và tăng tỉ lệ",
     "4.2. Mô hình lãi kép",
     "4.3. Gửi góp và trả nợ theo kỳ"
    ]
@@ -192,9 +192,9 @@ const topicTabNames={
   "subs": [
    [
     "1.1. Giới hạn dãy số qua sai số",
-    "1.2. Dãy tiến vô cực và dãy…",
+    "1.2. Dãy phân kỳ, dao động",
     "1.3. Giới hạn dãy lũy thừa",
-    "1.4. Tính giới hạn dãy phân…",
+    "1.4. Giới hạn dãy phân thức",
     "1.5. Tổng cấp số nhân vô hạn"
    ],
    [
@@ -204,17 +204,17 @@ const topicTabNames={
     "2.4. Giới hạn khi x tiến vô cực",
     "2.5. Khử dạng 0/0 bằng nhân tử",
     "2.6. Khử dạng 0/0 bằng liên hợp",
-    "2.7. Biến đổi dạng vô cực trừ…"
+    "2.7. Vô cực trừ vô cực"
    ],
    [
     "3.1. Liên tục tại một điểm",
-    "3.2. Ba kiểu gián đoạn thường…",
-    "3.3. Liên tục trên khoảng và…",
-    "3.4. Miền xác định và phép…"
+    "3.2. Ba kiểu gián đoạn",
+    "3.3. Liên tục trên miền",
+    "3.4. Phép toán liên tục"
    ],
    [
     "4.1. Định lí giá trị trung gian",
-    "4.2. Chia đôi khoảng để…"
+    "4.2. Phương pháp chia đôi"
    ]
   ]
  },
@@ -229,7 +229,7 @@ const topicTabNames={
   "subs": [
    [
     "1.1. Vận tốc trung bình",
-    "1.2. Cát tuyến và giới hạn độ…",
+    "1.2. Cát tuyến và độ dốc",
     "1.3. Đạo hàm bằng định nghĩa",
     "1.4. Miền khả vi",
     "1.5. Khả vi kéo theo liên tục",
@@ -237,7 +237,7 @@ const topicTabNames={
    ],
    [
     "2.1. Hệ số góc tiếp tuyến",
-    "2.2. Viết phương trình tiếp…",
+    "2.2. Phương trình tiếp tuyến",
     "2.3. Vận tốc có hướng",
     "2.4. Đơn vị của đạo hàm"
    ],
