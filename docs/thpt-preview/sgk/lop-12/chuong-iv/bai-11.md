@@ -22,7 +22,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Lấy đạo hàm hàm ứng viên, so toàn bộ biểu thức. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p01). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Nguyên hàm được kiểm bằng đạo hàm trên cả khoảng xác định, không thể kết luận chỉ từ việc thay đúng một x; hằng số cộng thêm không ảnh hưởng đạo hàm.
+
+        **Tự sửa:** Lấy đạo hàm hàm ứng viên, so toàn bộ biểu thức. <a href="../luyen-tap/#thpt-g12-b11-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b11-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.2. Họ nguyên hàm và điều kiện đầu
     
@@ -42,7 +44,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Chỉ xác định C sau khi lấy nguyên hàm; các khoảng tách rời có thể có C khác nhau. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p02). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Hai nguyên hàm trên cùng khoảng liên thông chỉ khác hằng số C; điều kiện F(x₀) mới chọn một C cụ thể, không được bỏ hoặc đặt tùy tiện.
+
+        **Tự sửa:** Chỉ xác định C sau khi lấy nguyên hàm; các khoảng tách rời có thể có C khác nhau. <a href="../luyen-tap/#thpt-g12-b11-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b11-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.3. Lũy thừa và tuyến tính
     
@@ -60,7 +64,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tăng số mũ một rồi chia; m=−1 là trường hợp khác. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p03). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Quy tắc tích phân lũy thừa x^n/(n+1) chỉ dùng khi n khác −1 trên miền hợp lệ; tính tuyến tính áp cho tổng, không nguyên hàm bằng cách nhân tùy ý.
+
+        **Tự sửa:** Tăng số mũ một rồi chia; m=−1 là trường hợp khác. <a href="../luyen-tap/#thpt-g12-b11-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b11-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.4. Khi gặp 1/x
     
@@ -78,7 +84,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không viết ln x trên nhánh âm; không nối qua điểm 0. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p04). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Đạo hàm ln|x|=1/x với x≠0; ln x không xác định trên nhánh âm và hằng số nguyên hàm có thể khác nhau giữa các khoảng tách bởi 0.
+
+        **Tự sửa:** Không viết ln x trên nhánh âm; không nối qua điểm 0. <a href="../luyen-tap/#thpt-g12-b11-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b11-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.5. Hàm mũ và hệ số logarit
     
@@ -96,7 +104,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đạo hàm số hạng mũ phải triệt đúng ln a; a=1 là hàm hằng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Nguyên hàm a^x là a^x/ln a khi a>0 và a≠1; không nhầm với e^x hoặc quên hệ số logarit.
+
+        **Tự sửa:** Đạo hàm số hạng mũ phải triệt đúng ln a; a=1 là hàm hằng. <a href="../luyen-tap/#thpt-g12-b11-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b11-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.6. Lượng giác và miền liên tục
     
@@ -114,7 +124,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm dấu của nguyên hàm sin, và tránh các điểm cos=0 hay sin=0. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p06). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Đạo hàm sin x là cos x nhưng đạo hàm cos x là −sin x; phải kiểm dấu và miền liên tục của biểu thức có tan hoặc 1/cos.
+
+        **Tự sửa:** Kiểm dấu của nguyên hàm sin, và tránh các điểm cos=0 hay sin=0. <a href="../luyen-tap/#thpt-g12-b11-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b11-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.7. Khôi phục đại lượng từ tốc độ
     
@@ -132,7 +144,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy gia tốc làm vị trí; ghi đơn vị và miền thời gian. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Từ gia tốc sang vị trí cần nguyên hàm hai lần và dùng lần lượt điều kiện vận tốc, vị trí; làm thiếu một hằng số dễ cho quỹ đạo sai.
+
+        **Tự sửa:** Không lấy gia tốc làm vị trí; ghi đơn vị và miền thời gian. <a href="../luyen-tap/#thpt-g12-b11-c07">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b11-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.8. Độ cao cực đại từ vận tốc
     
@@ -150,7 +164,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm miền vật lý và dấu v, không chỉ giải v=0. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b11-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b11-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Trong bài vật bay, nghiệm v(t)=0 chỉ là ứng viên thời điểm cao nhất; phải kiểm dấu vận tốc hai phía và thời gian vật còn ở miền thực tế.
+
+        **Tự sửa:** Kiểm miền vật lý và dấu v, không chỉ giải v=0. <a href="../luyen-tap/#thpt-g12-b11-c07">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b11-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
 === "Kiến thức SGK"
 
@@ -228,50 +244,50 @@
     
     ??? tip "Cách tự sửa"
     
-        Lấy đạo hàm hàm ứng viên, so toàn bộ biểu thức. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p01).
+        Lấy đạo hàm hàm ứng viên, so toàn bộ biểu thức. <a href="../luyen-tap/#thpt-g12-b11-c01">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b11-p01">luyện câu khác rồi quay lại</a>.
 
     ### 4.2. Họ nguyên hàm và điều kiện đầu
     
     ??? tip "Cách tự sửa"
     
-        Chỉ xác định C sau khi lấy nguyên hàm; các khoảng tách rời có thể có C khác nhau. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p02).
+        Chỉ xác định C sau khi lấy nguyên hàm; các khoảng tách rời có thể có C khác nhau. <a href="../luyen-tap/#thpt-g12-b11-c02">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b11-p02">luyện câu khác rồi quay lại</a>.
 
     ### 4.3. Lũy thừa và tuyến tính
     
     ??? tip "Cách tự sửa"
     
-        Tăng số mũ một rồi chia; m=−1 là trường hợp khác. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p03).
+        Tăng số mũ một rồi chia; m=−1 là trường hợp khác. <a href="../luyen-tap/#thpt-g12-b11-c03">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b11-p03">luyện câu khác rồi quay lại</a>.
 
     ### 4.4. Khi gặp 1/x
     
     ??? tip "Cách tự sửa"
     
-        Không viết ln x trên nhánh âm; không nối qua điểm 0. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p04).
+        Không viết ln x trên nhánh âm; không nối qua điểm 0. <a href="../luyen-tap/#thpt-g12-b11-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b11-p04">luyện câu khác rồi quay lại</a>.
 
     ### 4.5. Hàm mũ và hệ số logarit
     
     ??? tip "Cách tự sửa"
     
-        Đạo hàm số hạng mũ phải triệt đúng ln a; a=1 là hàm hằng. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p05).
+        Đạo hàm số hạng mũ phải triệt đúng ln a; a=1 là hàm hằng. <a href="../luyen-tap/#thpt-g12-b11-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b11-p05">luyện câu khác rồi quay lại</a>.
 
     ### 4.6. Lượng giác và miền liên tục
     
     ??? tip "Cách tự sửa"
     
-        Kiểm dấu của nguyên hàm sin, và tránh các điểm cos=0 hay sin=0. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p06).
+        Kiểm dấu của nguyên hàm sin, và tránh các điểm cos=0 hay sin=0. <a href="../luyen-tap/#thpt-g12-b11-c06">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b11-p06">luyện câu khác rồi quay lại</a>.
 
     ### 4.7. Khôi phục đại lượng từ tốc độ
     
     ??? tip "Cách tự sửa"
     
-        Không lấy gia tốc làm vị trí; ghi đơn vị và miền thời gian. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p07).
+        Không lấy gia tốc làm vị trí; ghi đơn vị và miền thời gian. <a href="../luyen-tap/#thpt-g12-b11-c07">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b11-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.8. Độ cao cực đại từ vận tốc
     
     ??? tip "Cách tự sửa"
     
-        Kiểm miền vật lý và dấu v, không chỉ giải v=0. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b11-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b11-p07).
+        Kiểm miền vật lý và dấu v, không chỉ giải v=0. <a href="../luyen-tap/#thpt-g12-b11-c07">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b11-p07">luyện câu khác rồi quay lại</a>.
 
-    [Core Bài 11](../luyen-tap/#b11-core) · [Luyện tập và Tự luận](../luyen-tap/#b11-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b11-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b11-core">Core Bài 11</a> · <a href="../luyen-tap/#b11-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b11-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 4–11; SBT Tập hai, trang in 3–8.*
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 Kết nối tri thức với cuộc sống, Tập hai, Bài 11, trang in 4–11; SBT cùng bộ, trang in 3–8. Đối chiếu số trang theo biên bản PDF gốc đã kiểm; không đồng nhất chỉ số trang PDF với trang in khi bị đảo.</p>
