@@ -19,11 +19,11 @@ PRIVATE_RD1_STEMS_KEYS_RUBRICS: OFF_PUBLIC_REPOSITORY
 ## EXACT_CANONICAL_COMPONENTS
 | Component path | Git blob SHA | Role |
 |---|---|---|
-| `docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md` | `fae50f37d36d5fb563f79d878583a1bc933b3f99` | SGK lesson canonical |
-| `docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md` | `2fe9f1c95913147aadc3baa4218455b5d9f6a352` | SGK lesson canonical |
-| `docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md` | `2319a691166f5af1d17e2c8c3df517f06191f791` | SGK lesson canonical |
-| `docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md` | `ce6a4ff6458ba1f2d929134935e494214e3b32d5` | SGK lesson canonical |
-| `docs/thpt-preview/sgk/lop-12/chuong-v/mo-rong-sau-bai-17.md` | `4dcaebcb5f042c7bed5b6297d72923d059ff827f` | Optional inter-lesson after B17 |
+| `docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md` | `44bcb11cca539679e542a12b3a55f7b1054daa3e` | SGK lesson canonical |
+| `docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md` | `ede3d2332556742b35ba672fbbc13ecba04bfb62` | SGK lesson canonical |
+| `docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md` | `3ff3255e4b105166b5b58f4ee1130d4774069826` | SGK lesson canonical |
+| `docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md` | `dbe83f18aa575f0da7dbdb993579a3c3a7b0ea58` | SGK lesson canonical |
+| `docs/thpt-preview/sgk/lop-12/chuong-v/mo-rong-sau-bai-17.md` | `2c38d6ce14013931614d8288b6e3bd8f0e926610` | Optional inter-lesson after B17 |
 | `docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json` | `3c01aa6f7154b9194a28223a855757f1871466da` | Single public canonical question bank |
 | `docs/assets/images/thpt/FIG-G12-CHV-B14-NORMAL-R02.svg` | `4e576e52131595fc8e9dcc9d6f8a15976fb50655` | SVG mathematical illustration |
 | `docs/assets/images/thpt/FIG-G12-CHV-B14-DISTANCE-R02.svg` | `8085188b6edb3dc9f10a6aabd3d4477b04bd1c77` | SVG mathematical illustration |
@@ -367,6 +367,10 @@ PRIVATE_RD1_STEMS_KEYS_RUBRICS: OFF_PUBLIC_REPOSITORY
 - All four learner chapters use 4 semantic Golden tabs, reading instructions on SVG before formula, concept formation, closed FirstTry and same-outcome D6, worked examples and errors; canonical placement: 108 unique items, 27 each CORE/SGK_PRACTICE/SGK_APPLICATION/SGK_WRITTEN, 27 HELP x5, 27 END reuse-only placements = **26 mandatory +1 optional**.
 - Source test coverage: B14 25/25 structural +68/68 limited math (includes five parameters per newly authored O08); B15 26/26 structural+52/52 math; B16 25/25 structural+34/34 math; B17 25/25 structural+43/43 math. Whole-bank Q15/rubric 18/18, all 27 Written rubric total exactly /5, no stem/ID duplicate. Tests and direct lesson reasoning do not claim R1–R5 or actual browser layout.
 - B17 O06 owner-supplied independent review content matches exact current four items, P0/P1=0, but its external SOURCE_RECEIPT cites a Topic18 learner/old ChV lock SHA, not this snapshot; author self-QA under v3.2.0 signs current source without fabricating independent source-locked verdict.
+
+## SOURCE_EQUIVALENT_NAVIGATION_MARKUP_DELTA_22_11_2026
+
+All 129 student-facing relative links in four lesson Markdown sources and one optional inter-lesson page were **changed solely from Markdown syntax** `[label](../path/#anchor)` to HTML anchor syntax `<a href="../path/#anchor">label</a>`, preserving exact displayed label, relative URL/fragment, reading order and each underlying Q15 item ID. 32/36/24/35/2 links by source file. This is a source-equivalent markup normalization, **not an academic answer/rubric/FirstTry/teaching-method delta**. MkDocs emits directory-style URLs, whereas `check_roadmap_dependencies.py` on raw Markdown mistakenly interpreted `../luyen-tap/` as a filesystem folder and counted 129 false broken links; HTML anchors are already used by the adjacent navigation shell, and the source textual/href values are unchanged. The release lane still validates rendered navigation, dynamic anchors and responsive UI. No rewriting of canonical bank or optional source math; older B14/B15/B16/B17 source SHA are historical correct academic snapshots, not content revisions.
 
 ## BASELINE_SNAPSHOT_IMMUTABILITY
 - Old reviewed R01 source `11eb2834cfdb4a24685157f84666c2bb0767970a` and receipt `a07070119259bd0133535fc3250d008cd78d8195` are historical source-locked PASS and not overwritten.
