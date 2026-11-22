@@ -1,83 +1,245 @@
 # Bài 18. Lũy thừa với số mũ thực
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VI · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu bản chất → xem hình và ví dụ có suy luận → Tự thử trước Core → Core/Luyện tập/Vận dụng → tự khắc phục. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VI · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Từ phép nhân lặp đến căn bậc n và số mũ thực: hiểu điều kiện cơ số, dùng đúng quy tắc, tính tăng trưởng.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Kiến thức SGK — hiểu bản chất trước công thức
+=== "Khám phá kiến thức"
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B18-01_R00.svg" alt="B18 — trực quan hình thành khái niệm"/><figcaption>Hình minh họa — quan sát trước khi tính: B18 — trực quan hình thành khái niệm</figcaption></figure>
+    Nếu gửi tiết kiệm theo lãi kép, số dư mỗi kỳ là số dư kỳ trước nhân với cùng một hệ số. Lũy thừa giúp ghi ngắn phép nhân lặp. Nhưng số mũ có thể âm, phân số, thậm chí vô tỉ: khi đó cần mở rộng định nghĩa mà vẫn giữ được quy tắc tính. Nhớ kiến thức tiền đề: lũy thừa nguyên dương, nghịch đảo, căn bậc hai, giới hạn dãy số.
 
-**Cách đọc và phát hiện:** Hình B18 giúp em nhìn thấy cùng một quy tắc 2^x từ số mũ âm qua 0 đến số mũ phân số: đọc các điểm trên trục và so sánh chấm màu cam tại x=1/2 (√2). Đừng chỉ chép hình: hãy nêu vì sao 2^(−2)=1/4 vẫn là một số **dương**.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B18-01_R00.svg" alt="Lũy thừa cơ số 2 tại số mũ âm, không và hữu tỉ"><figcaption>Đọc hình: trên cùng hệ trục, \(2^{-2}=1/4\), \(2^0=1\); điểm có hoành độ \(1/2\) biểu diễn \(\sqrt2\). Số mũ âm không làm cơ số dương cho giá trị âm; số mũ phân số không phải “nhân nửa lần”.</figcaption></figure>
 
-### 1.1. Tại sao phải mở rộng số mũ?
+    ### 1.1. Từ số mũ dương đến số mũ 0 và âm
 
-Em đã biết `2³=2·2·2=8`: số mũ 3 đếm ba thừa số 2. Nhưng nếu hỏi **cạnh hình vuông** có diện tích 2 thì cạnh phải dài bao nhiêu? Ta cần một số dương mà **bình phương bằng 2**, tức `√2`. Có thể viết nó là `2^(1/2)` để bảo toàn cách tính `(2^(1/2))²=2`. Không thể giải thích số mũ `1/2` là “nhân số 2 với nhau nửa lần”; đó là một **định nghĩa mở rộng phù hợp các quy tắc đã có**.
+    Với cơ số khác 0, giảm số mũ một đơn vị ứng với chia cho cơ số. Ví dụ \(5^2,5^1,5^0,5^{-1}\) lần lượt là \(25,5,1,1/5\). Số mũ âm nói về nghịch đảo, không đặt dấu trừ trước kết quả.
 
-Lãi kép hay biến đổi liên tục cũng nảy sinh số mũ không nguyên: `P(t)=P₀(1+r)^t` (khi mô hình cho phép thời gian t là số thực). Vì thế toán học cần định nghĩa có nghĩa cho `a^{1/2}, a^{-2}` và `a^{√2}`. Bài này xây dựng các bước mở rộng ấy.
+    **Vận dụng — Tự thử trước Core.** Tính \((3/7)^{-2}\). Vì sao không được định nghĩa \(0^{-3}\) bằng quy tắc ấy?
 
-### 1.2. Từ số mũ nguyên dương đến 0 và âm
+    <span data-ped-first-try="1" data-outcome-id="G11-B18-POWER_INTEGER" data-thpt-first-try-id="THPT-G11-B18-TRY01" hidden></span>
 
-Với n nguyên dương, `a^n` là tích n thừa số a. Nhìn `2³=8, 2²=4, 2¹=2`: giảm số mũ một đơn vị thì chia 2; để giữ quy luật đó, `2⁰=1` và `2^{-1}=1/2`. Tổng quát, **khi a≠0**: `a⁰=1`, `a^{-n}=1/a^n`.
+    ??? question "Đối chiếu"
 
-**Vì sao cấm a=0 khi số mũ âm/0?** `0^{-1}=1/0` không xác định. `0⁰` không được định nghĩa trong khuôn khổ này. Với n nguyên dương, `0^n=0` vẫn có nghĩa. **Sai thường gặp:** `a^{-2}` là `1/a²`, không phải `−a²`.
+        **Lời giải:** \((3/7)^{-2}=(7/3)^2=49/9\). \(0^{-3}\) sẽ đòi chia cho \(0^3=0\), không có nghĩa.
 
-### 1.3. Căn bậc n: vì sao phải phân biệt n chẵn và n lẻ?
+    <span data-thpt-help-id="HELP-G11-B18-TRY01" hidden></span>
 
-**Căn bậc n của số a** là số b thỏa `b^n=a`. Khi `n` lẻ, mỗi số thực a có đúng một căn bậc n thực (ví dụ `∛(−8)=−2` vì `(−2)^3=−8`). Khi `n` chẵn, số dương a có hai căn bậc n thực đối nhau, nhưng ký hiệu `ⁿ√a` **chỉ căn không âm**; `√9=3`, còn phương trình `x²=9` có **hai nghiệm** `x=±3`. Số âm không có căn bậc chẵn thực. Với a=0, căn bậc n là 0.
+    ??? tip "Kiểm lỗi"
 
-**Tự thử trước khi chuyển sang số mũ phân số:** `∛(−27)` bằng bao nhiêu? `√(−9)` có là số thực không? `√(x²)` có luôn bằng `x` không?
+        **Dấu hiệu:** Đổi dấu giá trị thay vì lấy nghịch đảo.
 
-<details class="thpt-r4-pedagogical-note"><summary>Đã thử phần căn bậc n? Mở đối chiếu</summary><p><strong>Đối chiếu:</strong> −3; không; <code>√(x²)=|x|</code> (bằng <code>x</code> khi x≥0). Đừng suy từ việc <code>∛(−27)</code> có nghĩa sang <code>(−27)^t</code> có nghĩa cho mọi t thực.</p></details>
+        **Tự sửa:** Viết lũy thừa âm thành phân thức trước khi tính. [Làm lại câu B18-C01](../luyen-tap/?item=THPT-G11-CHVI-B18-C01).
 
-### 1.4. Số mũ phân số và số mũ vô tỉ
+    ### 1.2. Căn bậc n và dấu của số dưới căn
 
-Với `a>0`, `n≥2` nguyên dương và `m` nguyên, định nghĩa `a^{m/n}=ⁿ√(a^m)`. Đây là số dương có lũy thừa bậc n bằng `a^m`; ví dụ `8^{2/3}=(³√8)²=4`. **Tại sao cơ số phải dương trong quy tắc chung?** Căn bậc chẵn của số âm không là số thực; khi số mũ thay đổi liên tục, định nghĩa thống nhất cho mọi số thực đòi a>0. Một vài biểu thức với cơ số âm và số mũ hữu tỉ cụ thể có nghĩa, nhưng **không** suy ra `a^x` cho mọi x thực khi a<0.
+    Một phương trình \(b^n=a\) có thể có một, hai hoặc không có nghiệm thực tùy tính chẵn/lẻ của \(n\). Ký hiệu căn bậc chẵn chỉ chọn nghiệm không âm.
 
-Muốn tính `2^{√2}`, trước hết xấp xỉ `√2` bằng các số hữu tỉ `1,4; 1,41; 1,414;...`. Các giá trị `2^{1,4};2^{1,41};...` tiến tới một số dương xác định; ta gọi đó là `2^{√2}`. Định nghĩa chính xác dựa vào giới hạn của dãy số hữu tỉ tiến tới số mũ vô tỉ; giới hạn **không phụ thuộc** cách xấp xỉ. Đây là chỗ liên hệ thật với giới hạn Chương V, nhưng học sinh không cần chứng minh giải tích ngoài phạm vi SGK.
+    **Vận dụng — Tự thử trước Core.** Tính \(\sqrt[5]{-243}\), \(\sqrt[4]{81}\) và liệt kê các nghiệm thực của \(z^4=81\).
 
-### 1.5. Các quy tắc và điều kiện
+    <span data-ped-first-try="2" data-outcome-id="G11-B18-POWER_RATIONAL" data-thpt-first-try-id="THPT-G11-B18-TRY02" hidden></span>
 
-Với `a,b>0`, `x,y∈ℝ`:
-- `a^x a^y = a^{x+y}`: cùng cơ số, phép nhân gộp số mũ.
-- `a^x/a^y=a^{x−y}` (mẫu luôn dương).
-- `(a^x)^y=a^{xy}`, `(ab)^x=a^x b^x`, `(a/b)^x=a^x/b^x`.
+    ??? question "Đối chiếu"
 
-**Không có quy tắc** `a^x+a^y=a^{x+y}`! Kiểm nhanh `2²+2³=12`, khác `2⁵=32`. Với số mũ thực bất kỳ, **kiểm tra cơ số dương trước khi biến đổi**.
+        **Lời giải:** \((-3)^5=-243\) nên căn bậc năm bằng \(-3\). \(\sqrt[4]{81}=3\), còn phương trình \(z^4=81\) có hai nghiệm \(-3,3\).
 
-### 1.6. Tự thử trước Core
+    <span data-thpt-help-id="HELP-G11-B18-TRY02" hidden></span>
 
-1. Vì sao `4^{-1}` là `1/4`, không phải `−4`?
-2. `27^{2/3}` bằng bao nhiêu, tại sao?
-3. Trong `P(t)=500(1,06)^t`, yếu tố `1,06` có ý nghĩa gì? Nếu số tiền được cập nhật hằng năm, t nên là số nguyên hay số thực?
+    ??? tip "Kiểm lỗi"
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở đối chiếu</summary><p><strong>Tự đối chiếu sau khi thử:</strong> (1) giảm số mũ một đơn vị tương ứng chia cho 4; (2) <code>(³√27)²=9</code>; (3) hệ số tăng 6% mỗi năm, với cập nhật mỗi năm dùng t nguyên không âm; dùng t thực cần mô hình phù hợp.</p></details>
+        **Dấu hiệu:** Viết căn bậc chẵn có hai giá trị.
 
+        **Tự sửa:** Tách yêu cầu tính căn số học và giải phương trình; kiểm số mũ chẵn/lẻ. [Làm lại câu B18-C05](../luyen-tap/?item=THPT-G11-CHVI-B18-C05).
 
+    ### 1.3. Số mũ hữu tỉ là phép lấy căn rồi nâng lũy thừa
 
-## 2. Ví dụ có suy luận
+    Để giữ \((a^{1/n})^n=a\) khi \(a>0\), ta chọn căn bậc \(n\) dương. Số mũ \(m/n\) kết hợp căn bậc \(n\) với mũ \(m\), kể cả khi \(m\) âm.
 
-### Ví dụ mẫu có giải thích
+    **Vận dụng — Tự thử trước Core.** Tính \(125^{-2/3}\) bằng cách lấy căn trước.
 
-**EX-G11-B18-01 (ý nghĩa số mũ âm).** Tính `(3/2)^{-2}`. **Chọn quy tắc nào?** Số mũ âm nghĩa là lấy nghịch đảo: `(2/3)²=4/9`; dấu trừ không được giữ thành hệ số `−`.
+    <span data-ped-first-try="3" data-outcome-id="G11-B18-POWER_RATIONAL" data-thpt-first-try-id="THPT-G11-B18-TRY03" hidden></span>
 
-**EX-G11-B18-02 (vì sao phân số liên quan căn).** `16^{3/4}=(⁴√16)^3=2³=8`. **Vì sao được đổi?** `a^{m/n}` là căn bậc n của `a^m` khi a>0; không tách một cơ số âm thành lũy thừa thực tùy ý.
+    ??? question "Đối chiếu"
 
-**EX-G11-B18-03 (rút gọn bằng luật, không đoán).** Với a>0, `a^{5/3}·a^{-2/3}/a^{1/2}=a^{5/3−2/3−1/2}=a^{1/2}=√a`. **Điều kiện** a>0 bảo đảm tất cả số mũ thực có nghĩa.
+        **Lời giải:** \(\sqrt[3]{125}=5\), do đó \(125^{-2/3}=5^{-2}=1/25\). Điều kiện cơ số dương thỏa mãn.
 
-**EX-G11-B18-04 (tăng trưởng).** Vốn `100` triệu đồng tăng 5% mỗi năm, lãi gộp cuối năm: `P(n)=100·1,05^n` triệu. Sau 2 năm `P(2)=110,25` triệu. **Vì sao nhân thay vì cộng?** Năm thứ hai lấy 5% của **số tiền sau năm đầu**, không phải 5% của vốn ban đầu. Mô hình giả sử lãi suất cố định, không có phí/thuế.
+    <span data-thpt-help-id="HELP-G11-B18-TRY03" hidden></span>
 
+    ??? tip "Kiểm lỗi"
 
-**EX-G11-B18-05 (căn lẻ của cơ số âm, không suy rộng tùy tiện).** Giải phương trình `x³=−125` trong tập thực. Do hàm `x³` tăng trên ℝ và `(−5)^3=−125`, nghiệm duy nhất là `x=−5`, viết `∛(−125)=−5`. **Giới hạn của kết luận:** điều này không cho phép định nghĩa `(−125)^{√2}` như lũy thừa số mũ thực với cơ số âm.
+        **Dấu hiệu:** Đảo tử mẫu của số mũ hoặc coi mũ âm là giá trị âm.
 
-**EX-G11-B18-06 (kí hiệu khoa học và ý nghĩa số mũ âm).** Một độ dài `0,0000042` mét được viết `4,2×10^{-6}` mét. **Tại sao?** Đưa dấu phẩy sang phải 6 vị trí để được `4,2` thì phải nhân ngược `10^{-6}` để giá trị không đổi. **Điều kiện của kí hiệu khoa học:** phần hệ số có trị tuyệt đối thuộc `[1,10)`, số mũ nguyên. Khi dùng máy tính cầm tay để tính `2^{1,3}`, cần nhập đủ dấu ngoặc/số mũ và đánh dấu kết quả là **gần đúng**, không tráo với giá trị chính xác.
+        **Tự sửa:** Đọc mẫu số của số mũ là bậc căn rồi xử lý mũ nguyên ở tử. [Làm lại câu B18-P02](../luyen-tap/?item=THPT-G11-CHVI-B18-P02).
 
+    ### 1.4. Số mũ vô tỉ được hình thành thế nào?
 
+    Chương V đã cho phép nói về giới hạn. Với cơ số dương, nếu các số hữu tỉ \(r_n\) tiến đến một số vô tỉ \(\alpha\), các giá trị \(a^{r_n}\) tiến đến một giá trị dương xác định, không phụ thuộc cách chọn dãy hữu tỉ. Đó là định nghĩa \(a^\alpha\); không cần hiểu \(\alpha\) là số lần nhân.
 
-## 3. Tự khắc phục và quay lại câu gốc
+    **Vận dụng — Tự thử trước Core.** Vì \(2<\sqrt5<3\), hãy kẹp \(3^{\sqrt5}\) giữa hai lũy thừa nguyên của 3; có thể thay cơ số 3 bằng \(-3\) trong cách định nghĩa chung không?
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVI-B18-01"><summary>Nhầm số mũ âm thành kết quả âm.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Nhầm số mũ âm thành kết quả âm.</li><li><strong>Nhắc bản chất &amp; điều kiện:</strong> a^(−n)=1/a^n khi a≠0; dấu trừ nói về nghịch đảo.</li><li><strong>Tìm lại lý do:</strong> Hãy phát biểu bằng lời vì sao quy tắc hợp lệ, đọc lại D1 tương ứng trước khi thay số hoặc biến đổi.</li><li><strong>Tự thử có dẫn dắt:</strong> Tính (2/3)^(−1) trước rồi so với −(2/3). <strong>Đối chiếu sau khi thử:</strong> 3/2, khác −2/3.</li><li><strong>Quay về bài canonical:</strong> THPT-G11-CHVI-B18-C01; tự giải lại và nêu lý do từng bước, không chỉ ghi đáp số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C01">Quay lại câu THPT-G11-CHVI-B18-C01</a></p></details>
+    <span data-ped-first-try="4" data-outcome-id="G11-B18-POWER_REAL" data-thpt-first-try-id="THPT-G11-B18-TRY04" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVI-B18-02"><summary>Không hiểu tại sao phân số số mũ liên quan căn.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Không hiểu tại sao phân số số mũ liên quan căn.</li><li><strong>Nhắc bản chất &amp; điều kiện:</strong> Với a&gt;0, a^(m/n)=ⁿ√(a^m); trước tiên căn rồi nâng m.</li><li><strong>Tìm lại lý do:</strong> Hãy phát biểu bằng lời vì sao quy tắc hợp lệ, đọc lại D1 tương ứng trước khi thay số hoặc biến đổi.</li><li><strong>Tự thử có dẫn dắt:</strong> Tính 27^(2/3) theo căn bậc ba. <strong>Đối chiếu sau khi thử:</strong> (³√27)²=3²=9.</li><li><strong>Quay về bài canonical:</strong> THPT-G11-CHVI-B18-C02; tự giải lại và nêu lý do từng bước, không chỉ ghi đáp số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVI-B18-C02">Quay lại câu THPT-G11-CHVI-B18-C02</a></p></details>
+    ??? question "Đối chiếu"
 
-## 4. Tiếp tục
+        **Lời giải:** Cơ số \(3>1\) nên \(9=3^2<3^{\sqrt5}<3^3=27\). Không thể dùng định nghĩa lũy thừa số mũ thực chung với cơ số âm, vì nhiều số mũ hữu tỉ không cho giá trị thực.
 
-[Core và Luyện tập Bài 18](luyen-tap.md) · [Tự luận Chương VI](../../../thu-vien/tu-luan-g11-chuong-vi.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    <span data-thpt-help-id="HELP-G11-B18-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Nghĩ chỉ số mũ nguyên mới có nghĩa, hoặc bỏ điều kiện a>0.
+
+        **Tự sửa:** Ôn định nghĩa số mũ hữu tỉ và giới hạn ở mục 2.3; kiểm cơ số trước. [Làm lại câu B18-C04](../luyen-tap/?item=THPT-G11-CHVI-B18-C04).
+
+    ### 1.5. Cùng cơ số thì cộng số mũ khi nhân, không phải khi cộng
+
+    Từ \(a^2a^3=a^5\) vì ghép các thừa số, luật nhân mở rộng sang số mũ thực với cơ số dương. Cộng hai giá trị không phải ghép các thừa số, nên không có luật tương tự cho phép cộng.
+
+    **Vận dụng — Tự thử trước Core.** Với \(t>0\), rút gọn \(\dfrac{t^{3/4}t^{5/4}}{t^{1/3}}\).
+
+    <span data-ped-first-try="5" data-outcome-id="G11-B18-POWER_LAWS" data-thpt-first-try-id="THPT-G11-B18-TRY05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Cùng cơ số \(t>0\): số mũ \(3/4+5/4-1/3=5/3\), vậy biểu thức bằng \(t^{5/3}\). Mẫu khác 0 vì \(t>0\).
+
+    <span data-thpt-help-id="HELP-G11-B18-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Cộng số mũ tùy ý hoặc bỏ điều kiện cơ số.
+
+        **Tự sửa:** Viết riêng phép nhân, chia, lũy thừa của lũy thừa; đối chiếu điều kiện. [Làm lại câu B18-P01](../luyen-tap/?item=THPT-G11-CHVI-B18-P01).
+
+    ### 1.6. Lãi kép: nhân theo từng kỳ, không cộng mãi cùng số tiền
+
+    Với vốn \(P\), lãi suất mỗi kỳ \(r\) không đổi và nhập lãi vào vốn, mỗi kỳ nhân \(1+r\); sau \(n\) kỳ số dư là \(P(1+r)^n\). Nếu cập nhật cuối kỳ, \(n\) là số nguyên không âm.
+
+    **Vận dụng — Tự thử trước Core.** Gửi 200 triệu đồng, lãi kép 4%/năm, không phí và không rút. Sau 3 năm số dư là bao nhiêu?
+
+    <span data-ped-first-try="6" data-outcome-id="G11-B18-GROWTH_MODEL" data-thpt-first-try-id="THPT-G11-B18-TRY06" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** \(200(1{,}04)^3=224{,}9728\) triệu đồng, xấp xỉ \(224{,}97\) triệu đồng. Hệ số \(1{,}04\) được nhân ba lần; tiền lãi năm sau tính trên số dư mới.
+
+    <span data-thpt-help-id="HELP-G11-B18-TRY06" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Tính lãi đơn 200+3·8 rồi gọi là lãi kép.
+
+        **Tự sửa:** Lập lần lượt số dư năm 0,1,2,3; nêu giả định mô hình. [Làm lại câu B18-P05](../luyen-tap/?item=THPT-G11-CHVI-B18-P05).
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Lũy thừa với số mũ nguyên
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(n\) nguyên dương, \(a^n\) là tích \(n\) thừa số \(a\). Nếu \(a\ne0\), \(a^0=1,\ a^{-n}=1/a^n\). Trong \(a^m\), \(a\) là cơ số, \(m\) là số mũ.</div>
+    
+    \(0^n=0\) với \(n>0\); \(0^0\) và \(0^{-n}\) không được định nghĩa ở đây.
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Với \(a,b\ne0\), \(m,n\in\mathbb Z\):
+    \[
+    a^ma^n=a^{m+n},\quad \frac{a^m}{a^n}=a^{m-n},\quad (a^m)^n=a^{mn},
+    \]
+    \[
+    (ab)^m=a^mb^m,\quad \left(\frac ab\right)^m=\frac{a^m}{b^m}.
+    \]
+    </div>
+    
+    Khi \(a>1\), so sánh số mũ giữ chiều; khi \(0<a<1\), so sánh số mũ đảo chiều. Không suy \(a^m+a^n=a^{m+n}\). Kí hiệu khoa học của số dương có dạng \(c\cdot10^k\), \(1\le c<10,\ k\in\mathbb Z\).
+
+    ### 2.2. Lũy thừa với số mũ hữu tỉ
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Căn bậc n.</strong> \(b\) là căn bậc \(n\) của \(a\) nếu \(b^n=a\), \(n\ge1\) nguyên. Khi \(n\) lẻ, mọi \(a\in\mathbb R\) có đúng một căn; khi \(n\) chẵn, \(a>0\) có hai căn đối nhau, \(\sqrt[n]a\) chỉ căn dương; \(a=0\) có căn 0; \(a<0\) không có căn thực bậc chẵn.</div>
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất căn.</strong> Với các biểu thức đều có nghĩa (mẫu khác 0), \(n,k\) nguyên dương, \(m\) nguyên:
+    \[
+    \sqrt[n]a\sqrt[n]b=\sqrt[n]{ab},\quad
+    \frac{\sqrt[n]a}{\sqrt[n]b}=\sqrt[n]{a/b},
+    \]
+    \[
+    (\sqrt[n]a)^m=\sqrt[n]{a^m},\quad
+    \sqrt[n]{\sqrt[k]a}=\sqrt[nk]a.
+    \]
+    Đặc biệt \(\sqrt[n]{a^n}=a\) nếu \(n\) lẻ, bằng \(|a|\) nếu \(n\) chẵn.</div>
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa số mũ hữu tỉ.</strong> Với \(a>0,\ m\in\mathbb Z,\ n\ge1\) nguyên,
+    \[
+    a^{m/n}=\sqrt[n]{a^m}=(\sqrt[n]a)^m.
+    \]
+    </div>
+    
+    Cơ số dương giúp định nghĩa nhất quán, không phụ thuộc cách biểu diễn phân số. Căn bậc lẻ của số âm có nghĩa không có nghĩa lũy thừa số mũ thực chung với cơ số âm luôn xác định.
+
+    ### 2.3. Lũy thừa với số mũ thực
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Cho \(a>0\), \(\alpha\) vô tỉ. Nếu \(r_n\) hữu tỉ và \(r_n\to\alpha\), giới hạn \(a^{r_n}\) tồn tại, dương và không phụ thuộc dãy đã chọn. Đặt \(a^\alpha=\lim_{n\to\infty}a^{r_n}\).</div>
+    
+    Với \(a,b>0\) và số mũ thực, các luật nhân, chia, lũy thừa của lũy thừa và tích/thương ở mục 2.1 vẫn đúng. Nếu \(a>1\) thì \(a^u>a^v\) tương đương \(u>v\); với \(0<a<1\), tương đương \(u<v\). Trường hợp \(a=1\) luôn cho 1.
+    
+    **Máy tính:** nhập cơ số trong ngoặc nếu là phân thức, nhập số mũ đầy đủ (kể cả dấu ngoặc của phân số) rồi đọc kết quả. Ví dụ \(2^{1{,}3}\approx2{,}4623\) (làm tròn bốn chữ số thập phân). Không thay dấu bằng chính xác bằng dấu xấp xỉ.
+    
+    **Ứng dụng lãi kép:** \(A=P(1+r)^N\) với \(P>0,\ 1+r>0\), \(N\) số kỳ nhập lãi; mô hình thực tế phải nói rõ kỳ hạn và lãi suất.
+
+=== "Ví dụ"
+
+    ### 3.1. Số mũ âm
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \((4/9)^{-2}\).</p><p><strong>Phân tích:</strong> Chuyển mũ âm về nghịch đảo của cơ số khác 0.</p><p><strong>Lời giải:</strong> \((4/9)^{-2}=(9/4)^2=81/16\).</p><p><strong>Kiểm lại:</strong> Kết quả dương và lớn hơn 1 vì cơ số ban đầu thuộc (0,1).</p></div>
+
+    ### 3.2. Căn và điều kiện
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\sqrt[3]{-216}\) và \(\sqrt{(-11)^2}\).</p><p><strong>Phân tích:</strong> Căn lẻ giữ dấu; căn chẵn của bình phương cho trị tuyệt đối.</p><p><strong>Lời giải:</strong> \(\sqrt[3]{-216}=-6\), còn \(\sqrt{(-11)^2}=|-11|=11\).</p><p><strong>Kiểm lại:</strong> Nâng -6 lên lũy thừa 3 được -216; căn bậc hai không âm.</p></div>
+
+    ### 3.3. Nhân hai căn cùng bậc lẻ
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\sqrt[3]{-16}\sqrt[3]4\).</p><p><strong>Phân tích:</strong> Hai căn bậc ba có nghĩa trên toàn bộ số thực, nên gộp tích.</p><p><strong>Lời giải:</strong> \(\sqrt[3]{-16\cdot4}=\sqrt[3]{-64}=-4\).</p><p><strong>Kiểm lại:</strong> Lập phương -4 bằng -64; không dùng máy móc cách gộp căn bậc chẵn của số âm.</p></div>
+
+    ### 3.4. Rút gọn số mũ thực
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Với \(a>0\), rút gọn \(a^{\sqrt3+2}a^{1-\sqrt3}/(a^{1/2})^4\).</p><p><strong>Phân tích:</strong> Gộp số mũ ở tử; nhân số mũ ở mẫu.</p><p><strong>Lời giải:</strong> Tử \(a^3\), mẫu \(a^2\), nên bằng \(a\).</p><p><strong>Kiểm lại:</strong> Điều kiện a>0 đảm bảo các lũy thừa đều xác định.</p></div>
+
+    ### 3.5. So sánh cùng cơ số nhỏ hơn 1
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> So sánh \((1/4)^{\sqrt2}\) và \((1/4)^2\).</p><p><strong>Phân tích:</strong> Cơ số nằm giữa 0 và 1 nên thứ tự số mũ đảo khi chuyển thành giá trị.</p><p><strong>Lời giải:</strong> Vì \(\sqrt2<2\), suy ra \((1/4)^{\sqrt2}>(1/4)^2=1/16\).</p><p><strong>Kiểm lại:</strong> Số mũ lớn hơn làm giá trị nhỏ hơn khi cơ số dưới 1.</p></div>
+
+    ### 3.6. Kí hiệu khoa học và tăng trưởng
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Viết \(0{,}00000036\) m dưới dạng kí hiệu khoa học. Một mô hình có lượng ban đầu 80 đơn vị tăng 3% mỗi kỳ, tính lượng sau 4 kỳ.</p><p><strong>Phân tích:</strong> Đếm vị trí dấu phẩy; ở bài tăng trưởng, mỗi kỳ nhân cùng hệ số.</p><p><strong>Lời giải:</strong> \(0{,}00000036=3{,}6\cdot10^{-7}\); \(80(1{,}03)^4\approx90{,}04\) đơn vị.</p><p><strong>Kiểm lại:</strong> Hệ số khoa học trong [1,10); giá trị tăng trưởng vượt 80, dùng dấu xấp xỉ vì làm tròn.</p></div>
+
+=== "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G11-CHVI-B18-01" hidden></span>
+
+    ??? tip "4.1. Nhầm số mũ âm thành số âm"
+
+        **Vì sao sai:** Dấu trừ của số mũ làm lấy nghịch đảo.
+
+        **Tự sửa:** Tính lại bằng 1/a^n, ôn 2.1. [Làm lại câu B18-C01](../luyen-tap/?item=THPT-G11-CHVI-B18-C01).
+
+    <span data-thpt-help-id="HELP-G11-CHVI-B18-02" hidden></span>
+
+    ??? tip "4.2. Không phân biệt căn chẵn và căn lẻ"
+
+        **Vì sao sai:** Căn chẵn chọn giá trị không âm; định nghĩa căn hữu tỉ cần cơ số dương.
+
+        **Tự sửa:** Ôn 2.2 và ví dụ 3.2. [Làm lại câu B18-C02](../luyen-tap/?item=THPT-G11-CHVI-B18-C02).
+
+    <span data-thpt-help-id="HELP-G11-B18-03" hidden></span>
+
+    ??? tip "4.3. Coi luật nhân cũng là luật cộng"
+
+        **Vì sao sai:** Phép cộng không gộp số mũ.
+
+        **Tự sửa:** Thử 3²+3³=36 khác 3⁵=243; ôn 2.1. [Làm lại câu B18-P06](../luyen-tap/?item=THPT-G11-CHVI-B18-P06).
+
+    <span data-thpt-help-id="HELP-G11-B18-04" hidden></span>
+
+    ??? tip "4.4. Nhầm lãi kép với lãi đơn"
+
+        **Vì sao sai:** Lãi mỗi kỳ tính trên số dư đã nhập lãi.
+
+        **Tự sửa:** Lập bảng số dư sau từng kỳ trước khi dùng công thức. [Làm lại câu B18-P05](../luyen-tap/?item=THPT-G11-CHVI-B18-P05).
+
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 18 (trang in 4–9).</p>
