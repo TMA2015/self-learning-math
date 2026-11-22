@@ -71,7 +71,7 @@ function initKnowledge(){
  const headings=elements.filter(x=>x.tagName==="H2"&&/^\d+\.\s/.test(x.textContent));
  if(headings.length!==expected.groups)throw Error("Knowledge group count mismatch");
  const outcomes=elements.filter(x=>x.tagName==="H3"&&/^\d+\.\d+\./.test(x.textContent));
- if(outcomes.length!==expected.outcomes)throw Error("Knowledge outcome count mismatch actual="+outcomes.length+" expected="+expected.outcomes+" directH3="+elements.filter(x=>x.tagName==="H3").map(x=>x.textContent.slice(0,30)).join("|")+" nestedH3="+[...article.querySelectorAll("h3")].filter(x=>/^\\d+\\.\\d+\\./.test(x.textContent)).map(x=>x.textContent.slice(0,12)+":"+x.parentElement?.tagName+":"+x.parentElement?.className).join("|"));
+ if(outcomes.length!==expected.outcomes)throw Error("Knowledge outcome count mismatch actual="+outcomes.length+" expected="+expected.outcomes+" directH3="+elements.filter(x=>x.tagName==="H3").map(x=>x.textContent.slice(0,30)).join("|")+" nestedH3="+[...article.querySelectorAll("h3")].filter(x=>/^\\d+\\.\\d+\\./.test(x.textContent)).map(x=>x.textContent.slice(0,12)+":"+x.parentElement?.tagName+":"+x.parentElement?.className).join("|")+" missing25="+(()=>{let h=article.innerHTML;let i=h.indexOf("2.5. Giải bất phương trình bậc hai");return i<0?"MISSING":h.slice(i-200,i+280)})()+" missing26="+(()=>{let h=article.innerHTML;let i=h.indexOf("2.6. Bất phương trình đúng với mọi x");return i<0?"MISSING":h.slice(i-200,i+250)})());
  article.classList.add("thpt-g10-knowledge-ap1","thpt-g10-first-six-golden","topic01-golden-knowledge","topic-w1-knowledge");
  document.body.classList.add("thpt-r4-topic-knowledge");
  const layout=create("section","topic01-knowledge-layout"),rails=create("nav","thpt-r4-knowledge-tabs thpt-r4-knowledge-modules");
