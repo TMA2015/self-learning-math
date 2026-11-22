@@ -40,7 +40,14 @@ def project_svg(md: str) -> str:
         name = m.group(1).split("/")[-1]
         sub = "images/thpt" if name.startswith(("FIG-G11-", "THPT_G10_")) else "visuals"
         return f"](../../../assets/{sub}/{name})"
-    return re.sub(r"\]\(([^)\n]+\.svg)\)", repl, md)
+    projected = re.sub(r"\]\(([^)\n]+\.svg)\)", repl, md)
+    # DELTA_A_UI display encoding: plain-text '<' inside raw HTML details
+    # must be an HTML entity; otherwise MkDocs raw-HTML parser consumes
+    # subsequent lesson headings (CĐ02 O06/O07 regression). Same mathematics.
+    def escape_details(match: re.Match[str]) -> str:
+        return match.group(1) + match.group(2).replace("<", "&lt;") + match.group(3)
+    return re.sub(r'(<details markdown="1"><summary>[^<]*</summary>)(.*?)(</details>)',
+                  escape_details, projected, flags=re.S)
 
 
 for topic, (head, path, blob, receipt, (outcomes, items, replay, groups)) in CASES.items():
