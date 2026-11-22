@@ -25,7 +25,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không dùng giá trị tại một điểm làm kết luận giới hạn. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b03-c01)
+        Không dùng giá trị tại một điểm làm kết luận giới hạn. <a href="../luyen-tap/#thpt-g12-chi-b03-c01">Luyện lại câu tương ứng</a>
 
     ### 1.2. Tiến tới đường đứng
     
@@ -45,7 +45,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm dấu tử và mẫu từng phía. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b03-c02)
+        Kiểm dấu tử và mẫu từng phía. <a href="../luyen-tap/#thpt-g12-chi-b03-c02">Luyện lại câu tương ứng</a>
 
     ### 1.3. Đường xiên
     
@@ -63,7 +63,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Chia đa thức; không lấy tỉ số hệ số bậc cao làm tiệm cận ngang. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b03-c03)
+        Chia đa thức; không lấy tỉ số hệ số bậc cao làm tiệm cận ngang. <a href="../luyen-tap/#thpt-g12-chi-b03-c03">Luyện lại câu tương ứng</a>
 
     ### 1.4. Điểm khuyết không phải tiệm cận
     
@@ -81,7 +81,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không điền chấm đặc ở điểm bị loại. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b03-c04)
+        Không điền chấm đặc ở điểm bị loại. <a href="../luyen-tap/#thpt-g12-chi-b03-c04">Luyện lại câu tương ứng</a>
 
     ### 1.5. Một phía hợp lệ là đủ
     
@@ -99,7 +99,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm điều kiện căn ở mẫu >0. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b03-p04)
+        Kiểm điều kiện căn ở mẫu >0. <a href="../luyen-tap/#thpt-g12-chi-b03-p04">Luyện lại câu tương ứng</a>
 
     ### 1.6. Vị trí nhánh so với tiệm cận
     
@@ -117,7 +117,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tìm dấu phần dư, không đoán từ chữ 'tiệm cận'. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b03-p06)
+        Tìm dấu phần dư, không đoán từ chữ 'tiệm cận'. <a href="../luyen-tap/#thpt-g12-chi-b03-p06">Luyện lại câu tương ứng</a>
 
 === "Kiến thức SGK"
 
@@ -165,38 +165,50 @@
     
     ??? tip "Cách tự sửa"
     
-        Không dùng giá trị tại một điểm làm kết luận giới hạn. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b03-c01).
+        **Vì sao dễ sai:** Tiệm cận ngang là giới hạn hữu hạn của y khi x tiến vô cực, không phải một đường chỉ vì đồ thị vẽ gần đó ở miền hữu hạn.
+
+        **Tự sửa:** Không dùng giá trị tại một điểm làm kết luận giới hạn. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b03-c01">Core/Luyện tập</a>.
 
     ### 4.2. Tiến tới đường đứng
     
     ??? tip "Cách tự sửa"
     
-        Kiểm dấu tử và mẫu từng phía. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b03-c02).
+        **Vì sao dễ sai:** Tiệm cận đứng phải do giới hạn một phía có độ lớn vô hạn từ phía thuộc miền; mẫu bằng 0 chưa đủ nếu tử triệt tiêu cùng bậc.
+
+        **Tự sửa:** Kiểm dấu tử và mẫu từng phía. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b03-c02">Core/Luyện tập</a>.
 
     ### 4.3. Đường xiên
     
     ??? tip "Cách tự sửa"
     
-        Chia đa thức; không lấy tỉ số hệ số bậc cao làm tiệm cận ngang. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b03-c03).
+        **Vì sao dễ sai:** Đường xiên dựa vào phần sai khác y−(ax+b) tiến về 0; xem chỉ tỉ số hệ số bậc cao dễ nhầm sang tiệm cận ngang.
+
+        **Tự sửa:** Chia đa thức; không lấy tỉ số hệ số bậc cao làm tiệm cận ngang. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b03-c03">Core/Luyện tập</a>.
 
     ### 4.4. Điểm khuyết không phải tiệm cận
     
     ??? tip "Cách tự sửa"
     
-        Không điền chấm đặc ở điểm bị loại. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b03-c04).
+        **Vì sao dễ sai:** Một điểm bị loại có giới hạn hữu hạn là điểm khuyết, không phải tiệm cận đứng; vẫn giữ lỗ vì x đó không thuộc miền.
+
+        **Tự sửa:** Không điền chấm đặc ở điểm bị loại. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b03-c04">Core/Luyện tập</a>.
 
     ### 4.5. Một phía hợp lệ là đủ
     
     ??? tip "Cách tự sửa"
     
-        Kiểm điều kiện căn ở mẫu >0. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b03-p04).
+        **Vì sao dễ sai:** Nếu miền chỉ cho phép tiến từ một phía thì dùng giới hạn phía đó; đòi cả hai phía sẽ bỏ sót tiệm cận hợp lệ.
+
+        **Tự sửa:** Kiểm điều kiện căn ở mẫu >0. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b03-p04">Core/Luyện tập</a>.
 
     ### 4.6. Vị trí nhánh so với tiệm cận
     
     ??? tip "Cách tự sửa"
     
-        Tìm dấu phần dư, không đoán từ chữ 'tiệm cận'. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b03-p06).
+        **Vì sao dễ sai:** Nhánh ở trên hay dưới đường tiệm cận được quyết định bởi dấu phần dư f(x)−đường thẳng; khoảng cách nhỏ không cho biết dấu.
 
-    [Core Bài 3](../luyen-tap/#b03-core) · [Luyện tập, Vận dụng, Tự luận](../luyen-tap/#b03-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b03-help) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+        **Tự sửa:** Tìm dấu phần dư, không đoán từ chữ 'tiệm cận'. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b03-p06">Core/Luyện tập</a>.
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 20–25.*
+    **Học tiếp:** <a href="../luyen-tap/#b03-core">Core Bài 3</a> · <a href="../luyen-tap/#b03-practice">Luyện tập, Vận dụng, Tự luận</a> · <a href="../luyen-tap/#b03-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
+
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 3 (trang in 20–25). SBT cùng bộ được đối chiếu ở gói nguồn lịch sử; trang in khác chỉ số trang PDF.</p>
