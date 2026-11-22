@@ -102,7 +102,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B01-W02; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O03; SINGLE_ITEM_ID -->
 
-**Bài 6.** Xét f(x)=1/(x−2). Chứng minh f nghịch biến trên mỗi thành phần khoảng của miền xác định; nêu một cặp x1<x2 ở hai phía x=2 cho thấy không thể gộp các khoảng vào một phát biểu \"nghịch biến trên D\".
+**Bài 6.** Xét f(x)=1/(x−2). Chứng minh f nghịch biến trên mỗi thành phần khoảng của miền xác định; nêu một cặp x1&lt;x2 ở hai phía x=2 cho thấy không thể gộp các khoảng vào một phát biểu \"nghịch biến trên D\".
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1057,7 +1057,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP10-P24; SOURCE_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da; OUTCOME: TOP10-O24; SINGLE_ITEM_ID -->
 
-**Bài 77.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.
+**Bài 77.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)&lt;0 với x&lt;0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1317,7 +1317,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP10-W05; SOURCE_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da; OUTCOME: TOP10-O30; SINGLE_ITEM_ID -->
 
-**Bài 97.** Tấm bìa hình vuông cạnh 12 cm. Cắt bốn hình vuông cạnh x cm (0<x<6) ở bốn góc và gấp hộp không nắp. (a) Lập V(x) và miền. (b) Tính V'. (c) Tìm x làm thể tích lớn nhất, tính Vmax. (d) Kiểm hai biên x→0⁺,x→6⁻ và giải thích vì sao không nhận các biên.
+**Bài 97.** Tấm bìa hình vuông cạnh 12 cm. Cắt bốn hình vuông cạnh x cm (0&lt;x&lt;6) ở bốn góc và gấp hộp không nắp. (a) Lập V(x) và miền. (b) Tính V'. (c) Tìm x làm thể tích lớn nhất, tính Vmax. (d) Kiểm hai biên x→0⁺,x→6⁻ và giải thích vì sao không nhận các biên.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1600,7 +1600,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-END-A02; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O36; SINGLE_ITEM_ID -->
 
-**Bài 117.** "f=1+2/(x+1), f'<0 mọi x∈D nên f nghịch biến trên cả D." Phản biện bằng hai điểm.
+**Bài 117.** "f=1+2/(x+1), f'&lt;0 mọi x∈D nên f nghịch biến trên cả D." Phản biện bằng hai điểm.
 
 <details markdown="1"><summary>Lời giải</summary>
 

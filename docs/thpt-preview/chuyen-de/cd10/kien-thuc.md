@@ -43,21 +43,21 @@ Vì vậy ta đi từ định nghĩa đồng biến/nghịch biến đến dấu
 
 <!-- LESSON_ID: TOP10-M01; OUTCOME_ID: TOP10-O01 -->
 
-Khi nhìn hai điểm trên đồ thị và thấy điểm phía phải cao hơn, ta mới biết hàm tăng **giữa hai vị trí đó**; chừng ấy chưa đủ để khẳng định hàm tăng trên cả khoảng. Điều cần xét là mọi cặp số \(x_1<x_2\) thuộc cùng một khoảng \(I\). 
+Khi nhìn hai điểm trên đồ thị và thấy điểm phía phải cao hơn, ta mới biết hàm tăng **giữa hai vị trí đó**; chừng ấy chưa đủ để khẳng định hàm tăng trên cả khoảng. Điều cần xét là mọi cặp số \(x_1&lt;x_2\) thuộc cùng một khoảng \(I\). 
 
-> **ĐỊNH NGHĨA — Đồng biến, nghịch biến.** Hàm \(f\) **đồng biến nghiêm ngặt** trên khoảng \(I\) khi với mọi \(x_1,x_2\in I\), \(x_1<x_2\Rightarrow f(x_1)<f(x_2)\); **nghịch biến nghiêm ngặt** khi \(x_1<x_2\Rightarrow f(x_1)>f(x_2)\). Phải xét mọi cặp trong cùng khoảng, không chỉ hai điểm minh họa.
+> **ĐỊNH NGHĨA — Đồng biến, nghịch biến.** Hàm \(f\) **đồng biến nghiêm ngặt** trên khoảng \(I\) khi với mọi \(x_1,x_2\in I\), \(x_1&lt;x_2\Rightarrow f(x_1)&lt;f(x_2)\); **nghịch biến nghiêm ngặt** khi \(x_1&lt;x_2\Rightarrow f(x_1)>f(x_2)\). Phải xét mọi cặp trong cùng khoảng, không chỉ hai điểm minh họa.
 
  Vì vậy miền xác định và việc hai điểm có thuộc cùng một khoảng là điều kiện phải kiểm trước.
 
-Xét \(f(x)=-2x+5\) trên \(\mathbb R\). Với bất kỳ \(x_1<x_2\), ta có \(f(x_2)-f(x_1)=-2(x_2-x_1)<0\). Do đó \(f(x_2)<f(x_1)\) và hàm nghịch biến trên toàn trục số. Ta chọn cách so hiệu hai giá trị để chứng minh trực tiếp định nghĩa, trước khi dùng công cụ đạo hàm.
+Xét \(f(x)=-2x+5\) trên \(\mathbb R\). Với bất kỳ \(x_1&lt;x_2\), ta có \(f(x_2)-f(x_1)=-2(x_2-x_1)&lt;0\). Do đó \(f(x_2)&lt;f(x_1)\) và hàm nghịch biến trên toàn trục số. Ta chọn cách so hiệu hai giá trị để chứng minh trực tiếp định nghĩa, trước khi dùng công cụ đạo hàm.
 
 **Ví dụ**
 
 **Đề bài:** Chứng minh f(x)=−x³ nghịch biến trên ℝ bằng định nghĩa.
 
-**Lời giải:** Với x₁<x₂, x₂³−x₁³=(x₂−x₁)(x₂²+x₁x₂+x₁²)>0. Suy ra f(x₂)−f(x₁)<0 với mọi cặp, nên f nghịch biến. Thử hai số riêng lẻ chưa đủ.
+**Lời giải:** Với x₁&lt;x₂, x₂³−x₁³=(x₂−x₁)(x₂²+x₁x₂+x₁²)>0. Suy ra f(x₂)−f(x₁)&lt;0 với mọi cặp, nên f nghịch biến. Thử hai số riêng lẻ chưa đủ.
 
-**Vận dụng** \(f(x)=3x-1\) đồng biến hay nghịch biến trên \(\mathbb R\)? Hãy giải thích bằng hai giá trị \(x_1<x_2\).
+**Vận dụng** \(f(x)=3x-1\) đồng biến hay nghịch biến trên \(\mathbb R\)? Hãy giải thích bằng hai giá trị \(x_1&lt;x_2\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -74,7 +74,7 @@ Nếu em kết luận chiều biến thiên từ hai điểm mẫu, đọc lại
 
 <!-- LESSON_ID: TOP10-M02; OUTCOME_ID: TOP10-O02 -->
 
-> **TÍNH CHẤT — Dấu đạo hàm.** So hai giá trị đôi khi khó; dấu đạo hàm cho công cụ mạnh hơn khi đủ điều kiện. Cách so trực tiếp \(f(x_2)-f(x_1)\) có thể rất dài với những hàm phức tạp. Khi hàm liên tục trên mỗi đoạn con của khoảng đang xét và khả vi ở các điểm trong khoảng, **đạo hàm** giúp đọc chiều biến thiên hiệu quả hơn. Theo định lý giá trị trung bình, nếu \(f'(x)>0\) khắp khoảng thì hàm tăng nghiêm ngặt; nếu \(f'(x)<0\) thì giảm nghiêm ngặt. Dấu không âm hoặc không dương bảo đảm lần lượt không giảm hoặc không tăng, nhưng muốn nói **nghiêm ngặt** cần loại trường hợp có đoạn hằng.
+> **TÍNH CHẤT — Dấu đạo hàm.** So hai giá trị đôi khi khó; dấu đạo hàm cho công cụ mạnh hơn khi đủ điều kiện. Cách so trực tiếp \(f(x_2)-f(x_1)\) có thể rất dài với những hàm phức tạp. Khi hàm liên tục trên mỗi đoạn con của khoảng đang xét và khả vi ở các điểm trong khoảng, **đạo hàm** giúp đọc chiều biến thiên hiệu quả hơn. Theo định lý giá trị trung bình, nếu \(f'(x)>0\) khắp khoảng thì hàm tăng nghiêm ngặt; nếu \(f'(x)&lt;0\) thì giảm nghiêm ngặt. Dấu không âm hoặc không dương bảo đảm lần lượt không giảm hoặc không tăng, nhưng muốn nói **nghiêm ngặt** cần loại trường hợp có đoạn hằng.
 
 Chẳng hạn, \(f(x)=x^2\) có \(f'(x)=2x\). Ở phía trái 0, đạo hàm âm nên đồ thị đi xuống; ở phía phải 0, đạo hàm dương nên đồ thị đi lên. Việc chia tại \(x=0\) cho ta hai khoảng biến thiên và cực tiểu. Trái lại, hàm \(x^3\) có đạo hàm bằng 0 ở 0 nhưng vẫn tăng khi đi qua điểm này: một nghiệm \(f'(x)=0\) chưa đủ kết luận có cực trị.
 
@@ -82,7 +82,7 @@ Chẳng hạn, \(f(x)=x^2\) có \(f'(x)=2x\). Ở phía trái 0, đạo hàm âm
 
 **Đề bài:** Tìm chiều biến thiên của f=x³−6x.
 
-**Lời giải:** D=ℝ; f′=3(x²−2), bằng 0 ở ±√2, dương khi |x|>√2, âm khi |x|<√2. Hàm tăng ở hai khoảng ngoài và giảm ở khoảng giữa; dùng đạo hàm vì hàm khả vi.
+**Lời giải:** D=ℝ; f′=3(x²−2), bằng 0 ở ±√2, dương khi |x|>√2, âm khi |x|&lt;√2. Hàm tăng ở hai khoảng ngoài và giảm ở khoảng giữa; dùng đạo hàm vì hàm khả vi.
 
 **Vận dụng** \(f(x)=x^3\) có tăng nghiêm ngặt trên \(\mathbb R\) không? Vì sao \(f'(0)=0\) không bác bỏ điều đó?
 
@@ -101,7 +101,7 @@ Nếu em gán mọi nghiệm \(f'=0\) thành cực trị hoặc quên các kho�
 
 <!-- LESSON_ID: TOP10-M03; OUTCOME_ID: TOP10-O03 -->
 
-> **KIẾN THỨC CẦN GHI NHỚ — Điểm cấm và khoảng biến thiên.** Trước bảng dấu, luôn xác định đúng miền. Đạo hàm chỉ giúp đánh giá chiều biến thiên **nơi hàm số được xác định và đủ điều kiện khả vi**. Chẳng hạn, \(f(x)=\dfrac1{x-2}\) có mẫu bằng 0 tại \(x=2\), nên miền là \(\mathbb R\setminus\{2\}\). Đạo hàm \(f'(x)=-\dfrac1{(x-2)^2}<0\) trên miền, nhưng kết luận đúng phải viết: hàm nghịch biến trên **từng khoảng** \(( -\infty,2)\) và \((2,+\infty)\). Hai nhánh không được nối qua một điểm không thuộc miền.
+> **KIẾN THỨC CẦN GHI NHỚ — Điểm cấm và khoảng biến thiên.** Trước bảng dấu, luôn xác định đúng miền. Đạo hàm chỉ giúp đánh giá chiều biến thiên **nơi hàm số được xác định và đủ điều kiện khả vi**. Chẳng hạn, \(f(x)=\dfrac1{x-2}\) có mẫu bằng 0 tại \(x=2\), nên miền là \(\mathbb R\setminus\{2\}\). Đạo hàm \(f'(x)=-\dfrac1{(x-2)^2}&lt;0\) trên miền, nhưng kết luận đúng phải viết: hàm nghịch biến trên **từng khoảng** \(( -\infty,2)\) và \((2,+\infty)\). Hai nhánh không được nối qua một điểm không thuộc miền.
 
 Vì thế, khi khảo sát một hàm số, ta luôn tìm miền trước, rồi mới giải \(f'(x)=0\), xác định điểm đạo hàm không tồn tại trong miền và dựng bảng dấu trên những khoảng hợp lệ. Làm ngược thứ tự dễ dẫn đến ghi một khoảng có chứa điểm cấm hoặc kết luận “nghịch biến trên toàn miền rời” sai theo định nghĩa so mọi cặp.
 
@@ -109,7 +109,7 @@ Vì thế, khi khảo sát một hàm số, ta luôn tìm miền trước, rồi
 
 **Đề bài:** Tìm miền và các khoảng giảm của g=(x+1)/(x−3).
 
-**Lời giải:** D=ℝ\{3}, g′=−4/(x−3)²<0. Hàm giảm trên (−∞,3) và (3,∞) riêng biệt, không nối kết luận qua điểm x=3 không xác định.
+**Lời giải:** D=ℝ\{3}, g′=−4/(x−3)²&lt;0. Hàm giảm trên (−∞,3) và (3,∞) riêng biệt, không nối kết luận qua điểm x=3 không xác định.
 
 **Vận dụng** \(g(x)=\sqrt{x-1}\) có miền xác định nào? Có thể nói hàm tăng trên miền đó không?
 
@@ -130,7 +130,7 @@ Nếu em kết luận nghịch biến trên toàn tập rời nhau hoặc dùng 
 
 > **TÍNH CHẤT — Cực trị qua đổi dấu.** Đổi chiều biến thiên giúp tìm cực trị địa phương. Tại sao đổi dấu đạo hàm quan trọng hơn chỉ giải f'=0? Ta bắt đầu từ dấu f' hai phía, miền và khả vi lân cận. **Điều kiện bắt buộc:** hàm số phải liên tục tại điểm trong (c) và khả vi trên hai khoảng ngay bên trái, bên phải (c). Khi đó, nếu (f') dương trước (c) và âm sau (c), hàm đạt cực đại địa phương tại (c); nếu (f') âm trước và dương sau, hàm đạt cực tiểu. Không thể suy cực trị chỉ từ bảng dấu hai phía nếu giá trị (f(c)) không khớp giới hạn tại (c). Nếu không đổi dấu, f'=0 có thể là điểm dừng không cực trị. Cực đại địa phương khác giá trị lớn nhất toàn cục.
 
-Chẳng hạn, f=x³−3x: f'=3(x−1)(x+1), dương x<−1, âm −1<x<1, dương x>1. Cực đại ở x=−1 giá trị2, cực tiểu ở x=1 giá trị−2.
+Chẳng hạn, f=x³−3x: f'=3(x−1)(x+1), dương x&lt;−1, âm −1&lt;x&lt;1, dương x>1. Cực đại ở x=−1 giá trị2, cực tiểu ở x=1 giá trị−2.
 
 ![Đồ thị bậc ba và bảng dấu đạo hàm](../../../assets/visuals/THPT_TOPIC10_DERIVATIVE_SIGN_VARIATION_R01.svg)
 
@@ -190,15 +190,15 @@ Nếu em nghĩ có \(f'=0\) chắc chắn có cực trị hoặc bỏ điểm kh
 
 <!-- LESSON_ID: TOP10-M06; OUTCOME_ID: TOP10-O06 -->
 
-> **TÍNH CHẤT — Hướng chuyển động so với tốc độ.** Trong chuyển động, dấu đạo hàm cho biết hướng của tọa độ. Vận tốc âm có nghĩa vật đang đi chậm dần không? Để xác định điều đó, cần xét tọa độ s(t), v=s', tốc độ |v|. Dấu v=s'(t) cho biết chiều chuyển động trong trục đã chọn; v>0 tọa độ tăng, v<0 tọa độ giảm. Nói tốc độ |v| tăng/giảm phải xem gia tốc a=s'' và dấu v·a khi v khác0. Bảng biến thiên s không tự tương đương bảng biến thiên tốc độ.
+> **TÍNH CHẤT — Hướng chuyển động so với tốc độ.** Trong chuyển động, dấu đạo hàm cho biết hướng của tọa độ. Vận tốc âm có nghĩa vật đang đi chậm dần không? Để xác định điều đó, cần xét tọa độ s(t), v=s', tốc độ |v|. Dấu v=s'(t) cho biết chiều chuyển động trong trục đã chọn; v>0 tọa độ tăng, v&lt;0 tọa độ giảm. Nói tốc độ |v| tăng/giảm phải xem gia tốc a=s'' và dấu v·a khi v khác0. Bảng biến thiên s không tự tương đương bảng biến thiên tốc độ.
 
-Chẳng hạn, s(t)=t²−4t, t≥0: v=2t−4, âm t<2, 0 tại2, dương t>2; tọa độ giảm rồi tăng. a=2>0 nhưng trong (0,2), v<0 nên tốc độ giảm.
+Chẳng hạn, s(t)=t²−4t, t≥0: v=2t−4, âm t&lt;2, 0 tại2, dương t>2; tọa độ giảm rồi tăng. a=2>0 nhưng trong (0,2), v&lt;0 nên tốc độ giảm.
 
 **Ví dụ**
 
 **Đề bài:** Với s=t³−3t²+1 (m), t>0, trên (0,2) tốc độ tăng giảm thế nào?
 
-**Lời giải:** v=3t(t−2)<0 trên (0,2), a=6t−6. Trên (0,1), v và a cùng âm nên |v| tăng; trên (1,2), chúng trái dấu nên |v| giảm.
+**Lời giải:** v=3t(t−2)&lt;0 trên (0,2), a=6t−6. Trên (0,1), v và a cùng âm nên |v| tăng; trên (1,2), chúng trái dấu nên |v| giảm.
 
 **Vận dụng** s(t)=t², t>0, tọa độ tăng hay giảm?
 
@@ -254,7 +254,7 @@ Nếu em lấy cực đại địa phương làm GTLN trên toàn miền vô h�
 
 Liên tục trên đoạn đóng bảo đảm có cực trị toàn cục. Khi nào chắc chắn có GTLN/GTNN dù chưa tìm được điểm đạt? Ta sử dụng định nghĩa liên tục trên đoạn đóng [a,b]. 
 
-> **ĐỊNH LÝ — Giá trị lớn nhất, nhỏ nhất trên đoạn.** Nếu \(f\) liên tục trên đoạn đóng, hữu hạn \([a,b]\), \(a<b\), thì tồn tại \(x_{\min},x_{\max}\in[a,b]\) sao cho \(f(x_{\min})\le f(x)\le f(x_{\max})\) với mọi \(x\in[a,b]\). Định lý bảo đảm các giá trị **đạt được**, không xác định sẵn điểm đạt.
+> **ĐỊNH LÝ — Giá trị lớn nhất, nhỏ nhất trên đoạn.** Nếu \(f\) liên tục trên đoạn đóng, hữu hạn \([a,b]\), \(a&lt;b\), thì tồn tại \(x_{\min},x_{\max}\in[a,b]\) sao cho \(f(x_{\min})\le f(x)\le f(x_{\max})\) với mọi \(x\in[a,b]\). Định lý bảo đảm các giá trị **đạt được**, không xác định sẵn điểm đạt.
 
  Nếu thiếu 'đóng' hay tính liên tục thì chưa có bảo đảm; vẫn có thể đạt nhưng phải chứng minh riêng. Kết quả chỉ nói tồn tại, chưa cho tọa độ.
 
@@ -357,7 +357,7 @@ Chẳng hạn, Lợi ích P(x)=−(x−4)²+10 với x∈[0,3] không đạt đ�
 
 **Đề bài:** A(x)=x(10−x), chỉ cho phép x∈[7,9]. Tìm diện tích lớn nhất.
 
-**Lời giải:** A′=10−2x<0 trên [7,9], nên A giảm: GTLN A(7)=21, GTNN A(9)=9. Nghiệm không ràng buộc x=5 bị loại vì không thuộc miền.
+**Lời giải:** A′=10−2x&lt;0 trên [7,9], nên A giảm: GTLN A(7)=21, GTNN A(9)=9. Nghiệm không ràng buộc x=5 bị loại vì không thuộc miền.
 
 **Vận dụng** Với f=−(x−5)², x∈[0,2], x tối ưu?
 
@@ -386,7 +386,7 @@ Chẳng hạn, Chu vi hình chữ nhật 20 m, cạnh x∈(0,10), cạnh kia10�
 
 **Đề bài:** Dùng 24 m hàng rào làm ba cạnh hình chữ nhật sát bờ sông, tìm diện tích tối đa.
 
-**Lời giải:** Gọi hai cạnh vuông góc dài x>0, cạnh thứ ba 24−2x>0; 0<x<12. A=x(24−2x)=−2(x−6)²+72≤72 m², đạt khi x=6 m, cạnh còn lại12 m. Phải mô hình đúng ba cạnh.
+**Lời giải:** Gọi hai cạnh vuông góc dài x>0, cạnh thứ ba 24−2x>0; 0&lt;x&lt;12. A=x(24−2x)=−2(x−6)²+72≤72 m², đạt khi x=6 m, cạnh còn lại12 m. Phải mô hình đúng ba cạnh.
 
 **Vận dụng** Hình chữ nhật chu vi 12 m, diện tích lớn nhất khi nào?
 
@@ -599,13 +599,13 @@ Giờ đây, miền xác định cho biết nơi được phép vẽ, đạo hà
 
 > **PHƯƠNG PHÁP — Các bước khảo sát.** Muốn phác đồ thị đúng thì thứ tự nào ngăn bỏ sót nhánh? Ta bắt đầu từ miền, đạo hàm, giới hạn, điểm đặc biệt. Quy trình: (1) tìm D; (2) giải f'=0 và xét dấu trên từng nhánh D; (3) tính cực trị, giới hạn tại biên/±∞, TCD/TCN/TC xiên nếu có; (4) giao trục/điểm hỗ trợ, đối xứng phù hợp; (5) lập bảng biến thiên và vẽ từng nhánh đúng mối liên hệ. Không nối hai nhánh qua điểm bị loại.
 
-Chẳng hạn, f=1/(x−1): D=ℝ\{1}, f'=−1/(x−1)²<0, TCD x=1, TCN y=0; hai nhánh đều giảm nhưng không nối qua x=1. Chọn kiểm miền trước dấu.
+Chẳng hạn, f=1/(x−1): D=ℝ\{1}, f'=−1/(x−1)²&lt;0, TCD x=1, TCN y=0; hai nhánh đều giảm nhưng không nối qua x=1. Chọn kiểm miền trước dấu.
 
 **Ví dụ**
 
 **Đề bài:** Dựng các dữ kiện khảo sát g=(x+1)/(x−2).
 
-**Lời giải:** D=ℝ\{2}, g′=−3/(x−2)²<0: giảm mỗi nhánh; TCD x=2, TCN y=1. Giao Ox (−1,0), Oy (0,−1/2). Vẽ hai nhánh không nối qua x=2.
+**Lời giải:** D=ℝ\{2}, g′=−3/(x−2)²&lt;0: giảm mỗi nhánh; TCD x=2, TCN y=1. Giao Ox (−1,0), Oy (0,−1/2). Vẽ hai nhánh không nối qua x=2.
 
 **Vận dụng** Khảo sát \(f(x)=x^2\) trên \(\mathbb R\): tìm miền, đạo hàm, khoảng tăng giảm, cực trị và mô tả hình dạng đồ thị theo đúng thứ tự.
 
@@ -663,7 +663,7 @@ Nếu em vẽ đồ thị bậc ba luôn tăng hoặc bỏ một điểm đổi 
 
 > **PHƯƠNG PHÁP — Khảo sát phân thức.** Phân thức đòi hỏi xét điểm cấm và tiệm cận. Tại sao bảng biến thiên của phân thức phải có đường phân cách ở x=a? Để xác định điều đó, cần xét quy tắc đạo hàm thương và giới hạn một phía. Đối với f=(ax+b)/(cx+d) với cx+d≠0, f'=(ad−bc)/(cx+d)² (trong miền), nên dấu không đổi trên mỗi khoảng miền. Tiệm cận đứng thường tại nghiệm mẫu khi tử không đồng thời0; ngang tại y=a/c nếu c≠0. Bảng biến thiên ghi riêng các nhánh, không nối qua TCD.
 
-Chẳng hạn, f=(2x+1)/(x−1): D=ℝ\{1}, f'=[2(x−1)−(2x+1)]/(x−1)²=−3/(x−1)²<0; TCD x=1, TCN y=2. Trái gần1→−∞, phải→+∞.
+Chẳng hạn, f=(2x+1)/(x−1): D=ℝ\{1}, f'=[2(x−1)−(2x+1)]/(x−1)²=−3/(x−1)²&lt;0; TCD x=1, TCN y=2. Trái gần1→−∞, phải→+∞.
 
 ![Hai nhánh phân thức và tiệm cận](../../../assets/visuals/THPT_TOPIC10_RATIONAL_ASYMPTOTES_R01.svg)
 
@@ -772,11 +772,11 @@ Chẳng hạn, nếu f' âm trên (−∞,1), dương trên (1,∞) và f(1)=−
 
 **Ví dụ**
 
-**Đề bài:** Giả sử f liên tục trên ℝ, f′<0 khi x<0, f′>0 khi x>0, f(0)=−2. Đọc bảng biến thiên.
+**Đề bài:** Giả sử f liên tục trên ℝ, f′&lt;0 khi x&lt;0, f′>0 khi x>0, f(0)=−2. Đọc bảng biến thiên.
 
 **Lời giải:** Hàm giảm tới0 rồi tăng sau0 nên f(0)=−2 là cực tiểu và GTNN trên ℝ. Chưa đủ dữ kiện để kết luận có GTLN toàn cục.
 
-**Vận dụng** Cho \(f\) liên tục tại \(x=2\), khả vi ở hai phía gần 2, \(f'(x)>0\) khi \(x<2\) và \(f'(x)<0\) khi \(x>2\), \(f(2)=5\). Điểm \((2,5)\) là cực trị nào?
+**Vận dụng** Cho \(f\) liên tục tại \(x=2\), khả vi ở hai phía gần 2, \(f'(x)>0\) khi \(x&lt;2\) và \(f'(x)&lt;0\) khi \(x>2\), \(f(2)=5\). Điểm \((2,5)\) là cực trị nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -795,15 +795,15 @@ Nếu em kết luận cực trị chỉ từ dấu hai phía mà quên tính li�
 
 <!-- LESSON_ID: TOP10-M25; OUTCOME_ID: TOP10-O25 -->
 
-> **TÍNH CHẤT — Miền rời và chiều biến thiên.** Điểm ngoài miền không bao giờ được nối qua các nhánh. Hai nhánh giảm có thể tạo một hàm giảm trên toàn tập miền rời? Cần nhớ khoảng và so cặp trên cùng một tập, điểm cấm. Với miền gồm nhiều khoảng rời, dấu f'<0 trên mỗi thành phần chỉ chứng minh hàm giảm trên từng khoảng, không cho giảm khi so một điểm ở nhánh trái với một điểm nhánh phải. Cách ghi đúng tên các khoảng, giữ tiệm cận/điểm loại trong bảng.
+> **TÍNH CHẤT — Miền rời và chiều biến thiên.** Điểm ngoài miền không bao giờ được nối qua các nhánh. Hai nhánh giảm có thể tạo một hàm giảm trên toàn tập miền rời? Cần nhớ khoảng và so cặp trên cùng một tập, điểm cấm. Với miền gồm nhiều khoảng rời, dấu f'&lt;0 trên mỗi thành phần chỉ chứng minh hàm giảm trên từng khoảng, không cho giảm khi so một điểm ở nhánh trái với một điểm nhánh phải. Cách ghi đúng tên các khoảng, giữ tiệm cận/điểm loại trong bảng.
 
-Chẳng hạn, f=1/x, D=ℝ\{0}, f'=−1/x²<0 trên từng nhánh. Nhưng −1<1 mà f(−1)=−1<f(1)=1, ngược bất đẳng thức nghịch biến, nên không được nói f nghịch biến trên D theo mọi cặp.
+Chẳng hạn, f=1/x, D=ℝ\{0}, f'=−1/x²&lt;0 trên từng nhánh. Nhưng −1&lt;1 mà f(−1)=−1&lt;f(1)=1, ngược bất đẳng thức nghịch biến, nên không được nói f nghịch biến trên D theo mọi cặp.
 
 **Ví dụ**
 
 **Đề bài:** Vì sao 1/(x−4) không giảm trên toàn miền D mặc dù đạo hàm âm?
 
-**Lời giải:** D=ℝ\{4}, f′=−1/(x−4)²<0 trên từng nhánh. Nhưng 3<5 mà f(3)=−1<f(5)=1, ngược điều kiện giảm trên toàn D. Kết luận chỉ từng khoảng.
+**Lời giải:** D=ℝ\{4}, f′=−1/(x−4)²&lt;0 trên từng nhánh. Nhưng 3&lt;5 mà f(3)=−1&lt;f(5)=1, ngược điều kiện giảm trên toàn D. Kết luận chỉ từng khoảng.
 
 **Vận dụng** f=1/(x−1) giảm ở đâu?
 
@@ -861,9 +861,9 @@ Nếu em trả tổng chi phí thay vì chi phí cận biên hoặc bỏ đơn v
 
 <!-- LESSON_ID: TOP10-M27; OUTCOME_ID: TOP10-O27 -->
 
-> **PHƯƠNG PHÁP — Vận tốc và gia tốc.** Vận tốc có hướng và tốc độ khác nhau khi xét dấu. Gia tốc âm có thể đi cùng tốc độ đang tăng không? Từ CĐ09 ta biết v=s' và a=s''; khi v≠0, dấu v·a giúp xét tốc độ. Với tọa độ s(t), vận tốc có hướng v=s', tốc độ |v|, gia tốc a=s''. Khi v·a>0 thì tốc độ đang tăng; khi v·a<0 thì giảm, nếu v=0 phải xét riêng. Tốc độ không âm; gia tốc âm không đủ chứng minh chậm dần.
+> **PHƯƠNG PHÁP — Vận tốc và gia tốc.** Vận tốc có hướng và tốc độ khác nhau khi xét dấu. Gia tốc âm có thể đi cùng tốc độ đang tăng không? Từ CĐ09 ta biết v=s' và a=s''; khi v≠0, dấu v·a giúp xét tốc độ. Với tọa độ s(t), vận tốc có hướng v=s', tốc độ |v|, gia tốc a=s''. Khi v·a>0 thì tốc độ đang tăng; khi v·a&lt;0 thì giảm, nếu v=0 phải xét riêng. Tốc độ không âm; gia tốc âm không đủ chứng minh chậm dần.
 
-Chẳng hạn, s(t)=−t², t>0: v=−2t<0, a=−2<0 cùng dấu nên |v|=2t tăng. Chọn dấu tích v·a thay vì chỉ nhìn a.
+Chẳng hạn, s(t)=−t², t>0: v=−2t&lt;0, a=−2&lt;0 cùng dấu nên |v|=2t tăng. Chọn dấu tích v·a thay vì chỉ nhìn a.
 
 **Ví dụ**
 
@@ -921,13 +921,13 @@ Nếu em cho rằng đạo hàm đúng bằng chênh lệch khi tăng nguyên m�
 
 > **PHƯƠNG PHÁP — Miền khả thi của hộp.** Một mô hình tối ưu phải xác định miền khả thi. Vì sao nghiệm phương trình đạo hàm có thể là kích thước âm vô nghĩa? Ta bắt đầu từ độ dài, thời gian, lượng sản phẩm, ràng buộc tổng. Bài toán thực tế cần miền khả thi từ dữ kiện: kích thước dương, thể tích không âm, thời gian trong giai đoạn khảo sát, lượng người/sản phẩm có thể là số nguyên. Miền phải ghi trước khi tối ưu và dùng để loại ứng viên ngoài miền. Lời giải chỉ có nghĩa trong mô hình và giả thiết cho trước.
 
-Chẳng hạn, Hình chữ nhật có tổng hai cạnh bằng10 m, x>0 và 10−x>0 ⇒ 0<x<10. Diện tích A=x(10−x), điểm x=5 hợp lệ; x=−5 dù có thể nằm trong phép tính đại số bị loại.
+Chẳng hạn, Hình chữ nhật có tổng hai cạnh bằng10 m, x>0 và 10−x>0 ⇒ 0&lt;x&lt;10. Diện tích A=x(10−x), điểm x=5 hợp lệ; x=−5 dù có thể nằm trong phép tính đại số bị loại.
 
 **Ví dụ**
 
 **Đề bài:** Cắt bốn góc tấm giấy 20×20 cm cạnh x làm hộp không nắp: lập V và miền.
 
-**Lời giải:** Chiều cao x, cạnh đáy20−2x (cm), nên V=x(20−2x)² cm³. Kích thước dương đòi hỏi 0<x<10; x=0 hay 10 không tạo hộp hợp lệ.
+**Lời giải:** Chiều cao x, cạnh đáy20−2x (cm), nên V=x(20−2x)² cm³. Kích thước dương đòi hỏi 0&lt;x&lt;10; x=0 hay 10 không tạo hộp hợp lệ.
 
 **Vận dụng** Với hộp xăng theo mô hình V=x(8−2x)², kích thước đáy sau cắt phải dương, x nằm đâu?
 
@@ -950,13 +950,13 @@ Nếu em đạo hàm mô hình hộp trước khi đặt điều kiện chiều 
 
 Đạo hàm giúp tìm ứng viên bên trong miền. Có thể biết hàm đạt cực đại nhờ đạo hàm mà không kiểm giá trị biên? Cần nhớ bảng dấu f', điểm khả thi, mục tiêu. Khi tối ưu f trên miền [a,b] hoặc (a,b), lấy f' trong nội miền để tìm ứng viên; so giá trị ở ứng viên hợp lệ và hai đầu nếu thuộc miền, thêm điểm không khả vi. Với miền mở, kiểm giới hạn biên và việc cận đạt. Không tuyên bố f'=0 luôn cho GTLN.
 
-Chẳng hạn, A(x)=x(12−x) trên 0<x<12, A'=12−2x; đổi dương→âm tại x=6, max A=36 đạt tại6. Đầu miền cho A→0 không đạt nhưng không ảnh hưởng max.
+Chẳng hạn, A(x)=x(12−x) trên 0&lt;x&lt;12, A'=12−2x; đổi dương→âm tại x=6, max A=36 đạt tại6. Đầu miền cho A→0 không đạt nhưng không ảnh hưởng max.
 
-> **PHƯƠNG PHÁP — Tối ưu trên đoạn.** Tình huống đúng như hình: từ tấm bìa vuông cạnh **12 cm**, cắt bốn hình vuông cạnh \(x\) rồi gấp thành hộp không nắp. Muốn còn đáy có hai chiều dương, phải có \(0<x<6\). Thể tích là \(V(x)=x(12-2x)^2\) (cm³); đạo hàm \(V'(x)=12(x-2)(x-6)\). Trên \((0,2)\) đạo hàm dương, trên \((2,6)\) âm nên thể tích **lớn nhất 128 cm³** tại \(x=2\) cm, trong khi hai biên tạo hộp suy biến không được lấy. Đây là bài **thể tích**, khác với ví dụ diện tích \(A=x(12-x)\) vừa nêu.
+> **PHƯƠNG PHÁP — Tối ưu trên đoạn.** Tình huống đúng như hình: từ tấm bìa vuông cạnh **12 cm**, cắt bốn hình vuông cạnh \(x\) rồi gấp thành hộp không nắp. Muốn còn đáy có hai chiều dương, phải có \(0&lt;x&lt;6\). Thể tích là \(V(x)=x(12-2x)^2\) (cm³); đạo hàm \(V'(x)=12(x-2)(x-6)\). Trên \((0,2)\) đạo hàm dương, trên \((2,6)\) âm nên thể tích **lớn nhất 128 cm³** tại \(x=2\) cm, trong khi hai biên tạo hộp suy biến không được lấy. Đây là bài **thể tích**, khác với ví dụ diện tích \(A=x(12-x)\) vừa nêu.
 
 ![Hộp không nắp từ tấm bìa vuông có bốn góc cắt](../../../assets/visuals/THPT_TOPIC10_BOX_VOLUME_OPT_R01.svg)
 
-*Đọc hình:* Chiều cao hộp là \(x\), đáy mỗi cạnh \(12-2x\); miền \(0<x<6\). Tại \(x=2\), đáy 8×8, cao2 nên thể tích128 cm³. Khi \(x\) tiến 0 hoặc 6, hộp suy biến nên không được xem biên là phương án hợp lệ.
+*Đọc hình:* Chiều cao hộp là \(x\), đáy mỗi cạnh \(12-2x\); miền \(0&lt;x&lt;6\). Tại \(x=2\), đáy 8×8, cao2 nên thể tích128 cm³. Khi \(x\) tiến 0 hoặc 6, hộp suy biến nên không được xem biên là phương án hợp lệ.
 
 **Ví dụ**
 
@@ -964,7 +964,7 @@ Chẳng hạn, A(x)=x(12−x) trên 0<x<12, A'=12−2x; đổi dương→âm t�
 
 **Lời giải:** f′=6−2x=0 tại x=3 trong miền; f(1)=0, f(3)=4, f(5)=0. GTLN4 ở3, GTNN0 ở hai đầu; so biên thay vì chỉ giải f′=0.
 
-**Vận dụng** A=x(8−x), 0<x<8: x tối ưu và diện tích?
+**Vận dụng** A=x(8−x), 0&lt;x&lt;8: x tối ưu và diện tích?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -1134,7 +1134,7 @@ Nếu em tối ưu chi phí thay vì lợi nhuận, đọc **Kiến thức 6.3**
 
 > **PHƯƠNG PHÁP — Kiểm lỗi bằng điều kiện.** Tự rà điều kiện, dấu, biên và đơn vị trước kết luận. Khi nhìn một lời giải 'đúng công thức', cần kiểm những sai sót nào? Để xác định điều đó, cần kiểm lại các Bài 1–5: miền xác định, đạo hàm, giới hạn, GTLN/GTNN và mô hình. Kiểm danh sách: D có đủ? bảng dấu bị nối qua điểm cấm không? f'=0 có đổi dấu không? giá trị biên có thuộc D không? TCD đã xét một phía chưa? lỗ khử có gọi nhầm đứng không? mục tiêu tối ưu có đúng/đơn vị? Biện luận rõ sẽ tránh các kết luận hấp dẫn nhưng sai.
 
-Chẳng hạn, với f=1/x trên D=ℝ\{0}, f'<0 ở hai nhánh. Lời giải 'f nghịch biến trên D' là sai theo định nghĩa so mọi cặp: x₁=−1<x₂=1 nhưng f(x₁)=−1<f(x₂)=1. Sửa: nghịch biến trên từng khoảng (−∞,0),(0,∞).
+Chẳng hạn, với f=1/x trên D=ℝ\{0}, f'&lt;0 ở hai nhánh. Lời giải 'f nghịch biến trên D' là sai theo định nghĩa so mọi cặp: x₁=−1&lt;x₂=1 nhưng f(x₁)=−1&lt;f(x₂)=1. Sửa: nghịch biến trên từng khoảng (−∞,0),(0,∞).
 
 **Ví dụ**
 

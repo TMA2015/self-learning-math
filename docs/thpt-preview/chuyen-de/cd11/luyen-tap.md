@@ -321,7 +321,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-C04; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O04; SINGLE_ITEM_ID -->
 
-**Bài 20.** Tính ∫2/x dx trên x<0.
+**Bài 20.** Tính ∫2/x dx trên x&lt;0.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -460,7 +460,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-A06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O06; SINGLE_ITEM_ID -->
 
-**Bài 29.** Vận tốc v(t)=2cos t, 0<=t<=π/2, vị trí s(0)=0. Viết s(t).
+**Bài 29.** Vận tốc v(t)=2cos t, 0&lt;=t&lt;=π/2, vị trí s(0)=0. Viết s(t).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -606,7 +606,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-A01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O08; SINGLE_ITEM_ID -->
 
-**Bài 39.** Vận tốc v(t)=3t² m/s, 0<=t<=2. Tính độ dời.
+**Bài 39.** Vận tốc v(t)=3t² m/s, 0&lt;=t&lt;=2. Tính độ dời.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -678,7 +678,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-A02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O09; SINGLE_ITEM_ID -->
 
-**Bài 44.** Nhu cầu r(t)=4+2t đơn vị/giờ, 0<=t<=1. Lượng tích lũy?
+**Bài 44.** Nhu cầu r(t)=4+2t đơn vị/giờ, 0&lt;=t&lt;=1. Lượng tích lũy?
 
 <details markdown="1"><summary>Lời giải</summary>
 

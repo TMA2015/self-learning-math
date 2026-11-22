@@ -128,7 +128,7 @@ Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P24; NO_RD1; NO_MASTERY -->
 
-**Câu 24.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.
+**Câu 24.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)&lt;0 với x&lt;0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P25; NO_RD1; NO_MASTERY -->
 
