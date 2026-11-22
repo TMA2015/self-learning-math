@@ -216,7 +216,12 @@ with sync_playwright() as pw:
                 page.locator('[data-topic-w1-subtab="1-1"]').click()
                 first_panel = page.locator('.thpt-r4-knowledge-content-panel:visible')
                 expect(first_panel).to_be_visible()
-                assert first_panel.locator("mjx-container").count()>0, (engine,topic,width,"MathJax missing after tab activation")
+                # CĐ15 first lesson is legitimate prose-only; test 4.3 where approved TeX exists.
+                if topic == "15":
+                    page.locator('[data-topic-w1-module-tab="4"]').click()
+                    page.locator('[data-topic-w1-subtab="4-3"]').click()
+                    first_panel = page.locator('.thpt-r4-knowledge-content-panel:visible')
+                assert first_panel.locator("mjx-container").count()>0, (engine,topic,width,"MathJax missing after activating a formula-bearing tab")
                 # Prevent W3 escaped-TeX / caret regressions on learner-visible text.
                 raw = first_panel.evaluate(r"""e => /\\operatorname|\\lim\b|(?:e|a|x)\^\{/.test(e.innerText)""")
                 assert not raw, (engine,topic,width,"unrendered TeX in Knowledge panel")
