@@ -22,7 +22,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy arccos của số âm cho góc đường thẳng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p01). Sau đó tự làm lại Vận dụng.
+        Không lấy arccos của số âm cho góc đường thẳng. <a href="../luyen-tap/#thpt-g12-b16-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.2. Góc đường–mặt là góc với hình chiếu
     
@@ -42,7 +42,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Chọn arcsin cho đường–mặt, không dùng arccos trực tiếp với pháp tuyến. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p02). Sau đó tự làm lại Vận dụng.
+        Chọn arcsin cho đường–mặt, không dùng arccos trực tiếp với pháp tuyến. <a href="../luyen-tap/#thpt-g12-b16-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.3. Góc giữa hai mặt phẳng
     
@@ -62,7 +62,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        D không ảnh hưởng góc; không chọn vectơ nằm tùy ý trong mặt. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p03). Sau đó tự làm lại Vận dụng.
+        D không ảnh hưởng góc; không chọn vectơ nằm tùy ý trong mặt. <a href="../luyen-tap/#thpt-g12-b16-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.4. Các trường hợp 0° và 90°
     
@@ -80,7 +80,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Góc 0° chưa đủ nói d nằm trong P. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p04). Sau đó tự làm lại Vận dụng.
+        Góc 0° chưa đủ nói d nằm trong P. <a href="../luyen-tap/#thpt-g12-b16-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.5. Mái nghiêng: dựng mặt trước
     
@@ -98,7 +98,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm mái không thẳng hàng và điểm đo chung một hệ đơn vị. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p05). Sau đó tự làm lại Vận dụng.
+        Kiểm mái không thẳng hàng và điểm đo chung một hệ đơn vị. <a href="../luyen-tap/#thpt-g12-b16-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
 === "Kiến thức SGK"
 
@@ -158,32 +158,32 @@
     
     ??? tip "Cách tự sửa"
     
-        Không lấy arccos của số âm cho góc đường thẳng. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p01). Sau đó tự làm lại Vận dụng.
+        Không lấy arccos của số âm cho góc đường thẳng. <a href="../luyen-tap/#thpt-g12-b16-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.2. Góc đường–mặt là góc với hình chiếu
     
     ??? tip "Cách tự sửa"
     
-        Chọn arcsin cho đường–mặt, không dùng arccos trực tiếp với pháp tuyến. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p02). Sau đó tự làm lại Vận dụng.
+        Chọn arcsin cho đường–mặt, không dùng arccos trực tiếp với pháp tuyến. <a href="../luyen-tap/#thpt-g12-b16-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.3. Góc giữa hai mặt phẳng
     
     ??? tip "Cách tự sửa"
     
-        D không ảnh hưởng góc; không chọn vectơ nằm tùy ý trong mặt. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p03). Sau đó tự làm lại Vận dụng.
+        D không ảnh hưởng góc; không chọn vectơ nằm tùy ý trong mặt. <a href="../luyen-tap/#thpt-g12-b16-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.4. Các trường hợp 0° và 90°
     
     ??? tip "Cách tự sửa"
     
-        Góc 0° chưa đủ nói d nằm trong P. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p04). Sau đó tự làm lại Vận dụng.
+        Góc 0° chưa đủ nói d nằm trong P. <a href="../luyen-tap/#thpt-g12-b16-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 4.5. Mái nghiêng: dựng mặt trước
     
     ??? tip "Cách tự sửa"
     
-        Kiểm mái không thẳng hàng và điểm đo chung một hệ đơn vị. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b16-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b16-p05). Sau đó tự làm lại Vận dụng.
+        Kiểm mái không thẳng hàng và điểm đo chung một hệ đơn vị. <a href="../luyen-tap/#thpt-g12-b16-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b16-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
-    [Core Bài 16](../luyen-tap/#b16-core) · [Luyện tập và Tự luận](../luyen-tap/#b16-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b16-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b16-core">Core Bài 16</a> · <a href="../luyen-tap/#b16-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b16-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
 *Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 50–53; SBT trang in 30–32.*
