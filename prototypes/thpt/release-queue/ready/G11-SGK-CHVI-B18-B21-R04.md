@@ -15,7 +15,7 @@ CURRENT_PR: Draft #999 AUTHORING OPEN UNMERGED, no release
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVI_B18_B21_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
 ACADEMIC_SOURCE_BLOB: be26ddd1e3e93ff250333e6f378cfffff83a8394
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHVI_B18_B21_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
-REVIEW_RECEIPT_BLOB: 015e5a58c1a90a7f1c3bc23c7b6f8a4a98d3696e
+REVIEW_RECEIPT_BLOB: f33578b87223fa72965ba537a3c1a0457ac202c9
 REVIEW_RECEIPT: prototypes/thpt/review-packets/G11_CHVI_B18_B21_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/G11-SGK-CHVI-B18-B21-R04_HANDOFF_V2_20261122.md
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -51,7 +51,7 @@ RELEASE_AUTHORIZATION: NO
 - [x] PED6_FIRST_TRY_REMEDIATION — 23 unscored FirstTry with opt-in hidden answers plus 23 local HELP, 16 original general repairs preserved
 
 ## QUALITY_Q01_Q18_EVIDENCE
-Only one normative `SLM-THPT-QUALITY-ONE v3.2.0` in `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, 18 detailed current source Q rows and 72 canonical item–outcome–role evidence rows in one V2 handoff `prototypes/thpt/release-handoffs/G11-SGK-CHVI-B18-B21-R04_HANDOFF_V2_20261122.md` blob `1e4558346fe51354c346faa0ae661f3757ac8f0c`. Exact source blob `be26ddd1e3e93ff250333e6f378cfffff83a8394` and signed author Q18 receipt blob `015e5a58c1a90a7f1c3bc23c7b6f8a4a98d3696e` locked on current 13 components.
+Only one normative `SLM-THPT-QUALITY-ONE v3.2.0` in `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`, 18 detailed current source Q rows and 72 canonical item–outcome–role evidence rows in one V2 handoff `prototypes/thpt/release-handoffs/G11-SGK-CHVI-B18-B21-R04_HANDOFF_V2_20261122.md` blob `534a8247966de687b96ed363ebefbb5e14d2bb37`. Exact source blob `be26ddd1e3e93ff250333e6f378cfffff83a8394` and signed author Q18 receipt blob `f33578b87223fa72965ba537a3c1a0457ac202c9` locked on current 13 components.
 
 ## RELEASE R1–R5/AP1–AP5/P1–P2 — untouched
 - [ ] R1_INTEGRATED_CURRENT_MAIN — Draft #999 unmerged, current main not updated; future RELEASE to verify SHA and V2 exact handoff
