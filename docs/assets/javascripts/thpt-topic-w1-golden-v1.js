@@ -46,10 +46,21 @@ const solutionContent=details=>{
  return out;
 };
 function styleKnowledge(root){
+ // A single MkDocs blockquote may contain several formal labels; split at every label.
  for(const quote of root.querySelectorAll("blockquote")){
-  const role=sourceRole(quote.querySelector("strong")?.textContent||"");
-  if(!role)throw Error("Unclassified approved semantic callout "+quote.textContent.slice(0,90));
-  const box=create("div",role[1]);box.dataset.topicW1Callout=role[0];box.setAttribute("role","note");box.append(...quote.childNodes);quote.replaceWith(box);
+  const boxes=[];let box=null;
+  for(const child of [...quote.childNodes]){
+   const label=child.nodeType===1?child.querySelector(":scope > strong")?.textContent||"":"";
+   const role=sourceRole(label);
+   if(role){box=create("div",role[1]);box.dataset.topicW1Callout=role[0];box.setAttribute("role","note");boxes.push(box)}
+   if(!box){
+    if(child.nodeType===3&&!child.textContent.trim())continue;
+    throw Error("Unclassified approved semantic callout "+quote.textContent.slice(0,90));
+   }
+   box.append(child);
+  }
+  if(!boxes.length)throw Error("Missing semantic callout");
+  quote.replaceWith(...boxes);
  }
  for(const details of root.querySelectorAll("details")){
   const summary=details.querySelector("summary");if(!summary)continue;
@@ -57,6 +68,20 @@ function styleKnowledge(root){
   const content=solutionContent(details);
   details.replaceChildren(summary,...content.childNodes);
   details.addEventListener("toggle",()=>{if(details.open)renderMath(details)});
+ }
+ // Form one coherent Vận dụng card with its own voluntary Đối chiếu.
+ for(const p of [...root.querySelectorAll("p")]){
+  if(p.querySelector(":scope > strong")?.textContent.trim().replace(/[.]$/,"")!=="Vận dụng")continue;
+  const frame=create("section","thpt-r4-reviewed-formative-card topic-w1-application");
+  p.before(frame);frame.append(p);
+  let node=frame.nextElementSibling;
+  while(node&&!node.matches("h2,h3,h4,.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula")){
+   const next=node.nextElementSibling;
+   if(node.matches("p")&&/^(Ví dụ|Kiểm lỗi|Kiểm lại|Lời giải)/.test(node.textContent.trim()))break;
+   frame.append(node);
+   if(node.matches("details"))break;
+   node=next;
+  }
  }
  for(const p of root.querySelectorAll("p")){
   if(p.querySelector(":scope > strong")?.textContent.trim()!=="Lời giải.")continue;
@@ -166,6 +191,7 @@ function initPractice(){
   badge.textContent=String(group+1);title.textContent=g.title.replace(/^\d+\.\s*/,"");body.replaceChildren(create("p","thpt-r4-modal-progress","Câu "+(cursor+1)+" / "+g.items.length));
   const nav=create("div","thpt-r4-modal-question-nav");golden.renderNav({container:nav,count:g.items.length,index:cursor,label:i=>String(i+1),onSelect:i=>{cursor=i;render()}});body.append(nav);
   const card=create("article","md-typeset thpt-r4-reviewed-formative-card topic-w1-question-body");card.dataset.topicW1CurrentItem=String(q.number);card.dataset.thptCanonicalItem=q.id;card.append(create("h3","","Bài "+q.number+"."));
+   const stemLabel=create("p","topic-w1-stem-label");stemLabel.append(create("strong","","Đề bài"));card.append(stemLabel);
   for(const n of q.nodes.slice(1))if(n.nodeType===3||n.nodeType===1&&n.tagName!=="DETAILS")card.append(n.cloneNode(true));
   const actions=create("div","thpt-r4-formative-actions"),details=create("details"),solution=solutionContent(source);
   details.append(create("summary","","📖 Đáp án / Lời giải"),solution);
@@ -226,6 +252,7 @@ function initSelfcheck(){
   const q=items[cursor];progress.textContent="Câu "+(cursor+1)+" / "+items.length;nav.replaceChildren();
   items.forEach((_,i)=>{const b=create("button","g10sc-jump-button"+(i===cursor?" is-current":""),i+1);b.type="button";b.setAttribute("aria-label","Đến câu "+(i+1));if(i===cursor)b.setAttribute("aria-current","true");b.onclick=()=>{cursor=i;render()};nav.append(b)});
   body.replaceChildren(create("h3","","Câu "+q.number));
+   const stemLabel=create("p","topic-w1-stem-label");stemLabel.append(create("strong","","Đề bài"));body.append(stemLabel);
   body.dataset.thptCanonicalItem=q.id;
   const rich=create("div","g10sc-rich");rich.append(q.stem.cloneNode(true));body.append(rich);
   const button=create("button","g10sc-button g10sc-final","Đối chiếu"),solution=create("section","g10sc-review");button.type="button";solution.hidden=true;solution.id="topic-w1-solution-"+topic;solution.dataset.topicW1Solution="";

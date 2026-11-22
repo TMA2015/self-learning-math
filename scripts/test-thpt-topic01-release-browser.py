@@ -86,6 +86,7 @@ with sync_playwright() as pw:
       for j in range(count):
        buttons.nth(j).click()
        expect(modal.locator("[data-topic01-current-item]")).to_have_attribute("data-topic01-current-item",str(first+j))
+       expect(modal.locator(".topic01-question-body > .topic01-stem-label strong")).to_have_text("Đề bài")
        expect(modal.locator("details[open]")).to_have_count(0)
        expect(modal.locator(".thpt-r4-formative-submit")).to_have_count(0) # no duplicated action
        detail=modal.locator(".thpt-r4-formative-actions details")
@@ -103,6 +104,7 @@ with sync_playwright() as pw:
       jumps.nth(j).click()
       body=root.locator(".g10sc-body")
       expect(body.locator("h3")).to_have_text("Câu "+str(j+1)) # Câu 11 included
+      expect(body.locator(":scope > .topic01-stem-label strong")).to_have_text("Đề bài")
       solution=body.locator("#topic01-current-solution")
       expect(solution).to_be_hidden()
       expect(body.locator("input,textarea")).to_have_count(0)
