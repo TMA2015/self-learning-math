@@ -56,7 +56,7 @@ const init=()=>{
   button.id="topic01-group-tab-"+id;button.setAttribute("role","tab");
   button.dataset.topic01ModuleTab=id;button.setAttribute("aria-controls","topic01-group-"+id);
   button.textContent=heading.textContent;
-  const panel=document.createElement("section");panel.className="thpt-r4-knowledge-panel thpt-r4-knowledge-module-panel tabbed-block";heading.classList.add("thpt-g10-section-heading");
+  const panel=document.createElement("section");panel.className="thpt-r4-knowledge-panel thpt-r4-knowledge-module-panel";heading.classList.add("thpt-g10-section-heading");
   panel.id="topic01-group-"+id;panel.dataset.topic01ModulePanel=id;
   panel.setAttribute("role","tabpanel");panel.setAttribute("aria-labelledby",button.id);
   let node=heading;
@@ -75,7 +75,7 @@ const init=()=>{
    b.dataset.topic01Subtab=tabId;b.id="topic01-subtab-"+tabId;b.setAttribute("role","tab");
    b.setAttribute("aria-controls","topic01-content-"+tabId);
    b.textContent=header.textContent;
-   const p=document.createElement("section");p.className="thpt-r4-knowledge-panel thpt-r4-knowledge-content-panel tabbed-block";
+   const p=document.createElement("section");p.className="thpt-r4-knowledge-panel thpt-r4-knowledge-content-panel";
    p.id="topic01-content-"+tabId;p.setAttribute("role","tabpanel");p.setAttribute("aria-labelledby",b.id);
    let child=header;while(child&&child!==until){const nextChild=child.nextSibling;p.appendChild(child);child=nextChild;}
    subTabs.appendChild(b);wrapper.appendChild(p);buttons.push(b);panels.push(p);
