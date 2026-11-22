@@ -50,7 +50,7 @@
 
     ### 1.3. Số mũ hữu tỉ là phép lấy căn rồi nâng lũy thừa
 
-    Để giữ \((a^{1/n})^n=a\) khi \(a>0\), ta chọn căn bậc \(n\) dương. Số mũ \(m/n\) kết hợp căn bậc \(n\) với mũ \(m\), kể cả khi \(m\) âm.
+    Để giữ \((a^{1/n})^n=a\) khi \(a\gt 0\), ta chọn căn bậc \(n\) dương. Số mũ \(m/n\) kết hợp căn bậc \(n\) với mũ \(m\), kể cả khi \(m\) âm.
 
     **Vận dụng — Tự thử trước Core.** Tính \(125^{-2/3}\) bằng cách lấy căn trước.
 
@@ -72,13 +72,13 @@
 
     Chương V đã cho phép nói về giới hạn. Với cơ số dương, nếu các số hữu tỉ \(r_n\) tiến đến một số vô tỉ \(\alpha\), các giá trị \(a^{r_n}\) tiến đến một giá trị dương xác định, không phụ thuộc cách chọn dãy hữu tỉ. Đó là định nghĩa \(a^\alpha\); không cần hiểu \(\alpha\) là số lần nhân.
 
-    **Vận dụng — Tự thử trước Core.** Vì \(2<\sqrt5<3\), hãy kẹp \(3^{\sqrt5}\) giữa hai lũy thừa nguyên của 3; có thể thay cơ số 3 bằng \(-3\) trong cách định nghĩa chung không?
+    **Vận dụng — Tự thử trước Core.** Vì \(2\lt \sqrt5\lt 3\), hãy kẹp \(3^{\sqrt5}\) giữa hai lũy thừa nguyên của 3; có thể thay cơ số 3 bằng \(-3\) trong cách định nghĩa chung không?
 
     <span data-ped-first-try="4" data-outcome-id="G11-B18-POWER_REAL" data-thpt-first-try-id="THPT-G11-B18-TRY04" hidden></span>
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Cơ số \(3>1\) nên \(9=3^2<3^{\sqrt5}<3^3=27\). Không thể dùng định nghĩa lũy thừa số mũ thực chung với cơ số âm, vì nhiều số mũ hữu tỉ không cho giá trị thực.
+        **Lời giải:** Cơ số \(3\gt 1\) nên \(9=3^2\lt 3^{\sqrt5}\lt 3^3=27\). Không thể dùng định nghĩa lũy thừa số mũ thực chung với cơ số âm, vì nhiều số mũ hữu tỉ không cho giá trị thực.
 
     <span data-thpt-help-id="HELP-G11-B18-TRY04" hidden></span>
 
@@ -92,13 +92,13 @@
 
     Từ \(a^2a^3=a^5\) vì ghép các thừa số, luật nhân mở rộng sang số mũ thực với cơ số dương. Cộng hai giá trị không phải ghép các thừa số, nên không có luật tương tự cho phép cộng.
 
-    **Vận dụng — Tự thử trước Core.** Với \(t>0\), rút gọn \(\dfrac{t^{3/4}t^{5/4}}{t^{1/3}}\).
+    **Vận dụng — Tự thử trước Core.** Với \(t\gt 0\), rút gọn \(\dfrac{t^{3/4}t^{5/4}}{t^{1/3}}\).
 
     <span data-ped-first-try="5" data-outcome-id="G11-B18-POWER_LAWS" data-thpt-first-try-id="THPT-G11-B18-TRY05" hidden></span>
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Cùng cơ số \(t>0\): số mũ \(3/4+5/4-1/3=5/3\), vậy biểu thức bằng \(t^{5/3}\). Mẫu khác 0 vì \(t>0\).
+        **Lời giải:** Cùng cơ số \(t\gt 0\): số mũ \(3/4+5/4-1/3=5/3\), vậy biểu thức bằng \(t^{5/3}\). Mẫu khác 0 vì \(t\gt 0\).
 
     <span data-thpt-help-id="HELP-G11-B18-TRY05" hidden></span>
 
@@ -134,7 +134,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(n\) nguyên dương, \(a^n\) là tích \(n\) thừa số \(a\). Nếu \(a\ne0\), \(a^0=1,\ a^{-n}=1/a^n\). Trong \(a^m\), \(a\) là cơ số, \(m\) là số mũ.</div>
     
-    \(0^n=0\) với \(n>0\); \(0^0\) và \(0^{-n}\) không được định nghĩa ở đây.
+    \(0^n=0\) với \(n\gt 0\); \(0^0\) và \(0^{-n}\) không được định nghĩa ở đây.
     
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Với \(a,b\ne0\), \(m,n\in\mathbb Z\):
     \[
@@ -145,11 +145,11 @@
     \]
     </div>
     
-    Khi \(a>1\), so sánh số mũ giữ chiều; khi \(0<a<1\), so sánh số mũ đảo chiều. Không suy \(a^m+a^n=a^{m+n}\). Kí hiệu khoa học của số dương có dạng \(c\cdot10^k\), \(1\le c<10,\ k\in\mathbb Z\).
+    Khi \(a\gt 1\), so sánh số mũ giữ chiều; khi \(0\lt a\lt 1\), so sánh số mũ đảo chiều. Không suy \(a^m+a^n=a^{m+n}\). Kí hiệu khoa học của số dương có dạng \(c\cdot10^k\), \(1\le c\lt 10,\ k\in\mathbb Z\).
 
     ### 2.2. Lũy thừa với số mũ hữu tỉ
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Căn bậc n.</strong> \(b\) là căn bậc \(n\) của \(a\) nếu \(b^n=a\), \(n\ge1\) nguyên. Khi \(n\) lẻ, mọi \(a\in\mathbb R\) có đúng một căn; khi \(n\) chẵn, \(a>0\) có hai căn đối nhau, \(\sqrt[n]a\) chỉ căn dương; \(a=0\) có căn 0; \(a<0\) không có căn thực bậc chẵn.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Căn bậc n.</strong> \(b\) là căn bậc \(n\) của \(a\) nếu \(b^n=a\), \(n\ge1\) nguyên. Khi \(n\) lẻ, mọi \(a\in\mathbb R\) có đúng một căn; khi \(n\) chẵn, \(a\gt 0\) có hai căn đối nhau, \(\sqrt[n]a\) chỉ căn dương; \(a=0\) có căn 0; \(a\lt 0\) không có căn thực bậc chẵn.</div>
     
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất căn.</strong> Với các biểu thức đều có nghĩa (mẫu khác 0), \(n,k\) nguyên dương, \(m\) nguyên:
     \[
@@ -162,7 +162,7 @@
     \]
     Đặc biệt \(\sqrt[n]{a^n}=a\) nếu \(n\) lẻ, bằng \(|a|\) nếu \(n\) chẵn.</div>
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa số mũ hữu tỉ.</strong> Với \(a>0,\ m\in\mathbb Z,\ n\ge1\) nguyên,
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa số mũ hữu tỉ.</strong> Với \(a\gt 0,\ m\in\mathbb Z,\ n\ge1\) nguyên,
     \[
     a^{m/n}=\sqrt[n]{a^m}=(\sqrt[n]a)^m.
     \]
@@ -172,13 +172,13 @@
 
     ### 2.3. Lũy thừa với số mũ thực
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Cho \(a>0\), \(\alpha\) vô tỉ. Nếu \(r_n\) hữu tỉ và \(r_n\to\alpha\), giới hạn \(a^{r_n}\) tồn tại, dương và không phụ thuộc dãy đã chọn. Đặt \(a^\alpha=\lim_{n\to\infty}a^{r_n}\).</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Cho \(a\gt 0\), \(\alpha\) vô tỉ. Nếu \(r_n\) hữu tỉ và \(r_n\to\alpha\), giới hạn \(a^{r_n}\) tồn tại, dương và không phụ thuộc dãy đã chọn. Đặt \(a^\alpha=\lim_{n\to\infty}a^{r_n}\).</div>
     
-    Với \(a,b>0\) và số mũ thực, các luật nhân, chia, lũy thừa của lũy thừa và tích/thương ở mục 2.1 vẫn đúng. Nếu \(a>1\) thì \(a^u>a^v\) tương đương \(u>v\); với \(0<a<1\), tương đương \(u<v\). Trường hợp \(a=1\) luôn cho 1.
+    Với \(a,b\gt 0\) và số mũ thực, các luật nhân, chia, lũy thừa của lũy thừa và tích/thương ở mục 2.1 vẫn đúng. Nếu \(a\gt 1\) thì \(a^u\gt a^v\) tương đương \(u\gt v\); với \(0\lt a\lt 1\), tương đương \(u\lt v\). Trường hợp \(a=1\) luôn cho 1.
     
     **Máy tính:** nhập cơ số trong ngoặc nếu là phân thức, nhập số mũ đầy đủ (kể cả dấu ngoặc của phân số) rồi đọc kết quả. Ví dụ \(2^{1{,}3}\approx2{,}4623\) (làm tròn bốn chữ số thập phân). Không thay dấu bằng chính xác bằng dấu xấp xỉ.
     
-    **Ứng dụng lãi kép:** \(A=P(1+r)^N\) với \(P>0,\ 1+r>0\), \(N\) số kỳ nhập lãi; mô hình thực tế phải nói rõ kỳ hạn và lãi suất.
+    **Ứng dụng lãi kép:** \(A=P(1+r)^N\) với \(P\gt 0,\ 1+r\gt 0\), \(N\) số kỳ nhập lãi; mô hình thực tế phải nói rõ kỳ hạn và lãi suất.
 
 === "Ví dụ"
 
@@ -194,17 +194,25 @@
 
     <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\sqrt[3]{-16}\sqrt[3]4\).</p><p><strong>Phân tích:</strong> Hai căn bậc ba có nghĩa trên toàn bộ số thực, nên gộp tích.</p><p><strong>Lời giải:</strong> \(\sqrt[3]{-16\cdot4}=\sqrt[3]{-64}=-4\).</p><p><strong>Kiểm lại:</strong> Lập phương -4 bằng -64; không dùng máy móc cách gộp căn bậc chẵn của số âm.</p></div>
 
-    ### 3.4. Rút gọn số mũ thực
+    ### 3.4. Số mũ hữu tỉ và điều kiện cơ số
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Với \(a>0\), rút gọn \(a^{\sqrt3+2}a^{1-\sqrt3}/(a^{1/2})^4\).</p><p><strong>Phân tích:</strong> Gộp số mũ ở tử; nhân số mũ ở mẫu.</p><p><strong>Lời giải:</strong> Tử \(a^3\), mẫu \(a^2\), nên bằng \(a\).</p><p><strong>Kiểm lại:</strong> Điều kiện a>0 đảm bảo các lũy thừa đều xác định.</p></div>
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(32^{3/5}\) và \((1/81)^{-3/4}\).</p><p><strong>Phân tích:</strong> Hai cơ số dương. Lấy căn theo mẫu số rồi nâng lên mũ nguyên ở tử; với mũ âm dùng nghịch đảo.</p><p><strong>Lời giải:</strong> \(32^{3/5}=(\sqrt[5]{32})^3=2^3=8\). Tương tự, \((1/81)^{-3/4}=(1/3)^{-3}=27\).</p><p><strong>Kiểm lại:</strong> \(8^5=32^3\); căn bậc bốn của \(1/81\) là \(1/3\) và nghịch đảo mũ ba cho 27. Không áp dụng định nghĩa chung nếu cơ số không dương.</p></div>
 
-    ### 3.5. So sánh cùng cơ số nhỏ hơn 1
+    ### 3.5. Rút gọn số mũ thực
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> So sánh \((1/4)^{\sqrt2}\) và \((1/4)^2\).</p><p><strong>Phân tích:</strong> Cơ số nằm giữa 0 và 1 nên thứ tự số mũ đảo khi chuyển thành giá trị.</p><p><strong>Lời giải:</strong> Vì \(\sqrt2<2\), suy ra \((1/4)^{\sqrt2}>(1/4)^2=1/16\).</p><p><strong>Kiểm lại:</strong> Số mũ lớn hơn làm giá trị nhỏ hơn khi cơ số dưới 1.</p></div>
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Với \(a\gt 0\), rút gọn \(a^{\sqrt3+2}a^{1-\sqrt3}/(a^{1/2})^4\).</p><p><strong>Phân tích:</strong> Gộp số mũ ở tử; nhân số mũ ở mẫu.</p><p><strong>Lời giải:</strong> Tử \(a^3\), mẫu \(a^2\), nên bằng \(a\).</p><p><strong>Kiểm lại:</strong> Điều kiện a>0 đảm bảo các lũy thừa đều xác định.</p></div>
 
-    ### 3.6. Kí hiệu khoa học và tăng trưởng
+    ### 3.6. So sánh cùng cơ số nhỏ hơn 1
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Viết \(0{,}00000036\) m dưới dạng kí hiệu khoa học. Một mô hình có lượng ban đầu 80 đơn vị tăng 3% mỗi kỳ, tính lượng sau 4 kỳ.</p><p><strong>Phân tích:</strong> Đếm vị trí dấu phẩy; ở bài tăng trưởng, mỗi kỳ nhân cùng hệ số.</p><p><strong>Lời giải:</strong> \(0{,}00000036=3{,}6\cdot10^{-7}\); \(80(1{,}03)^4\approx90{,}04\) đơn vị.</p><p><strong>Kiểm lại:</strong> Hệ số khoa học trong [1,10); giá trị tăng trưởng vượt 80, dùng dấu xấp xỉ vì làm tròn.</p></div>
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> So sánh \((1/4)^{\sqrt2}\) và \((1/4)^2\).</p><p><strong>Phân tích:</strong> Cơ số nằm giữa 0 và 1 nên thứ tự số mũ đảo khi chuyển thành giá trị.</p><p><strong>Lời giải:</strong> Vì \(\sqrt2\lt 2\), suy ra \((1/4)^{\sqrt2}\gt (1/4)^2=1/16\).</p><p><strong>Kiểm lại:</strong> Số mũ lớn hơn làm giá trị nhỏ hơn khi cơ số dưới 1.</p></div>
+
+    ### 3.7. Kí hiệu khoa học
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Viết \(0{,}00000036\) m dưới dạng kí hiệu khoa học.</p><p><strong>Phân tích:</strong> Dịch dấu phẩy bảy vị trí sang phải được 3,6, rồi nhân ngược với \(10^{-7}\).</p><p><strong>Lời giải:</strong> \(0{,}00000036=3{,}6\cdot10^{-7}\) m.</p><p><strong>Kiểm lại:</strong> Hệ số nằm trong [1,10); dịch dấu phẩy ngược bảy vị trí khôi phục giá trị ban đầu.</p></div>
+
+    ### 3.8. Tăng trưởng sau các kỳ nhập lãi
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Một mô hình có lượng ban đầu 80 đơn vị tăng 3% mỗi kỳ, tính lượng sau 4 kỳ.</p><p><strong>Phân tích:</strong> Sau mỗi kỳ nhân 1,03 với lượng hiện tại; tăng 3% không có nghĩa cộng mãi cùng một lượng.</p><p><strong>Lời giải:</strong> \(80(1{,}03)^4=90{,}0407048\), xấp xỉ 90,04 đơn vị.</p><p><strong>Kiểm lại:</strong> Giá trị lớn hơn 80, phép làm tròn được ghi rõ. Mô hình giả định hệ số tăng không đổi.</p></div>
 
 === "Lỗi thường gặp"
 
