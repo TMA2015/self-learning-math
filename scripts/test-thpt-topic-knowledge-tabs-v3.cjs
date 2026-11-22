@@ -48,15 +48,28 @@ function verifyTopicKnowledge(src,pages,label) {
    assert(names.every(Boolean)&&new Set(names).size===names.length,
      label+": missing or duplicate subtopic label");
  }
- const nav=src.match(/<nav\b[^>]*class="[^"]*thpt-r4-topic-steps[^"]*"[^>]*>[\s\S]*?<\/nav>/);
- assert(nav,label+": missing three-page Topic journey navigation");
- for(const fn of PAGES) {
-   assert(pages[fn],label+": missing outer page "+fn);
-   const href=new RegExp('href="\\.\\./'+fn.replace(/\.md$/,"")+'/"',"g");
-   assert.equal((nav[0].match(href)||[]).length,1,label+": outer nav missing or duplicates "+fn);
+ const isGoldenNavigation=isGoldenDomTabs && src.includes('class="thpt-sgk-lesson-nav"');
+ const nav=src.match(isGoldenNavigation
+   ? /<nav\b[^>]*class="[^"]*thpt-sgk-lesson-nav[^"]*"[^>]*>[\s\S]*?<\/nav>/
+   : /<nav\b[^>]*class="[^"]*thpt-r4-topic-steps[^"]*"[^>]*>[\s\S]*?<\/nav>/);
+ assert(nav,label+": missing Topic journey navigation");
+ for(const fn of PAGES)assert(pages[fn],label+": missing outer page "+fn);
+ if(isGoldenNavigation){
+   assert.equal((nav[0].match(/<a\b/g)||[]).length,2,label+": approved Golden has 2 destination pages, excludes current");
+   assert.equal((nav[0].match(/thpt-sgk-nav-unavailable/g)||[]).length,2,label+": first/last Topic placeholders required");
+   for(const fn of ["luyen-tap.md","tu-kiem-tra.md"]){
+     const href=new RegExp('href="\\.\\./'+fn.replace(/\.md$/,"")+'/"',"g");
+     assert.equal((nav[0].match(href)||[]).length,1,label+": missing other-page link "+fn);
+   }
+   assert(!nav[0].includes('href="../kien-thuc/"'),label+": current Knowledge page must not link to itself");
+ }else{
+   for(const fn of PAGES){
+     const href=new RegExp('href="\\.\\./'+fn.replace(/\.md$/,"")+'/"',"g");
+     assert.equal((nav[0].match(href)||[]).length,1,label+": outer nav missing or duplicates "+fn);
+   }
+   assert.equal((nav[0].match(/<a\b/g)||[]).length,3,
+     label+": historical Topic must have exactly 3 external learning pages, not separate Core");
  }
- assert.equal((nav[0].match(/<a\b/g)||[]).length,3,
-   label+": Topic must have exactly 3 external learning pages, not separate Core");
  assert(!/href="[^"]*\/core\/"/i.test(nav[0]),label+": Topic must not add standalone Core");
  assert(!/^===\s*"(?:PED\d|D\d|SOURCE|REVIEW)/mi.test(src),
    label+": audit labels must not become learner tabs");
