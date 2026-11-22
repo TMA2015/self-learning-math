@@ -59,7 +59,7 @@
 
     ### 1.2. Các cách cho một dãy số
 
-    Có nhiều cách kể về cùng một dãy. Ta có thể **liệt kê** \(5,10,15,20,\ldots\); viết công thức số hạng tổng quát \(u_n=5n\) với \(n\ge1\); **mô tả bằng lời** “số hạng thứ \(n\) là bội dương thứ \(n\) của \(5\)”; hoặc dùng **truy hồi** \(u_1=5,\ u_n=u_{n-1}+5\) với \(n\ge2\). Cả bốn cách đều chỉ cùng những số theo cùng thứ tự, nhưng mỗi cách có ưu thế riêng.
+    Có nhiều cách kể về cùng một dãy. Ta có thể **minh họa vài số đầu** \(5,10,15,20,\ldots\), nhưng chỉ nhìn các số này chưa xác định duy nhất dãy vô hạn; muốn xác định rõ dãy, hãy viết công thức số hạng tổng quát \(u_n=5n\) với \(n\ge1\); **mô tả bằng lời** “số hạng thứ \(n\) là bội dương thứ \(n\) của \(5\)”; hoặc dùng **truy hồi** \(u_1=5,\ u_n=u_{n-1}+5\) với \(n\ge2\). Cả bốn cách đều chỉ cùng những số theo cùng thứ tự, nhưng mỗi cách có ưu thế riêng.
 
     Công thức tổng quát cho phép tính trực tiếp \(u_{100}=500\) mà không phải đi qua \(99\) bước. Ngược lại, truy hồi giải thích **cách dãy phát triển từ bước trước**: muốn biết \(u_3\), phải biết \(u_2\), và trước đó phải biết \(u_1\). Vì thế một hệ thức truy hồi **thiếu số hạng đầu** chưa xác định duy nhất một dãy. Mô tả bằng lời đặc biệt hữu ích khi quy luật có ý nghĩa rõ ràng nhưng khó viết thành một công thức đơn giản, như dãy các số nguyên tố theo thứ tự.
 
@@ -109,7 +109,7 @@
 
     ### 2.2. Các cách cho một dãy số
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-recap-card" role="note"><strong>Kiến thức cần nhớ — Bốn cách cho một dãy số</strong><p><strong>(1) Liệt kê số hạng:</strong> tiện với dãy hữu hạn hoặc ít số hạng.</p><p><strong>(2) Công thức số hạng tổng quát:</strong> \(u_n=f(n)\), tính trực tiếp số hạng theo chỉ số \(n\).</p><p><strong>(3) Phương pháp mô tả:</strong> dùng một tính chất/quy luật bằng lời để xác định từng số hạng.</p><p><strong>(4) Phương pháp truy hồi:</strong> nêu đủ một hay nhiều giá trị đầu và hệ thức tính số hạng sau từ số hạng trước.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-recap-card" role="note"><strong>Kiến thức cần nhớ — Bốn cách cho một dãy số</strong><p><strong>(1) Liệt kê đầy đủ các số hạng:</strong> chỉ thuận tiện cho dãy hữu hạn có ít số hạng; vài số đầu kèm dấu ba chấm <strong>không tự xác định duy nhất</strong> dãy vô hạn.</p><p><strong>(2) Công thức số hạng tổng quát:</strong> \(u_n=f(n)\), tính trực tiếp số hạng theo chỉ số \(n\).</p><p><strong>(3) Phương pháp mô tả:</strong> dùng một tính chất/quy luật bằng lời để xác định từng số hạng.</p><p><strong>(4) Phương pháp truy hồi:</strong> nêu đủ một hay nhiều giá trị đầu và hệ thức tính số hạng sau từ số hạng trước.</p></div>
 
     **Ví dụ cùng một dãy:** \(5,10,15,\ldots\) có thể viết \(u_n=5n\) (\(n\ge1\)), mô tả “các bội nguyên dương của \(5\) theo thứ tự tăng”, hoặc cho bằng \(u_1=5,\ u_n=u_{n-1}+5\) (\(n\ge2\)). Không coi các cách cho này là những dãy khác nhau.
 
@@ -185,9 +185,9 @@
 
     **Phân tích:** Năm 2020 là \(n=0\). Năm 2030 ứng với \(n=10\); ở đây chỉ số mô hình bắt đầu từ \(0\), cần phân biệt với quy ước dãy trong SGK thường đánh chỉ số từ \(1\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(P_{10}=500(1{,}02)^{10}\approx609{,}5\) (nghìn người), tức khoảng \(610\) nghìn người nếu làm tròn tới hàng nghìn.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(P_{10}=500(1{,}02)^{10}\approx609{,}497\) (nghìn người), tức khoảng \(609\) nghìn người nếu làm tròn trực tiếp đến hàng nghìn. Không làm tròn trung gian \(609{,}497\) thành \(609{,}5\) rồi làm tròn lần nữa.</p></div>
 
-    **Kiểm lại:** Giá trị phải lớn hơn \(500\) do tốc độ tăng dương. Đây là **dự báo theo mô hình**, không phải số liệu dân số thực tế năm 2030.
+    **Kiểm lại:** Giá trị phải lớn hơn \(500\) do tốc độ tăng dương; \(1{,}02^{10}\approx1{,}218994\), nhân \(500\) được khoảng \(609{,}497\). Đây là **dự báo theo mô hình**, không phải số liệu dân số thực tế năm 2030.
 
 === "Lỗi thường gặp"
 
