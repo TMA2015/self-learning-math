@@ -325,7 +325,19 @@ const renderMath=node=>{normalizeRenderedMath(node);const m=window.MathJax;if(m?
  * W2-only data attribute avoids changing accepted CĐ01/W1 and SGK images. */
 const capKnowledgeFigures=root=>{
  const imgs=[...root.querySelectorAll("img[src*='THPT_TOPIC']")];
- for(const img of imgs)img.dataset.topicW2Figure="1";
+ for(const img of imgs){
+  img.dataset.topicW2Figure="1";
+  // Existing MkDocs/Golden selectors can force images to full panel width.
+  // W2-only inline priority is intentional: measured browser size must win.
+  const unitCircle=img.src.includes("UNIT_CIRCLE_QUADRANTS");
+  img.style.setProperty("width",unitCircle?"min(100%,480px)":"min(100%,700px)","important");
+  img.style.setProperty("max-width","100%","important");
+  img.style.setProperty("height","auto","important");
+  img.style.setProperty("max-height",unitCircle?"430px":"450px","important");
+  img.style.setProperty("display","block","important");
+  img.style.setProperty("object-fit","contain","important");
+  img.style.setProperty("margin","1rem auto","important");
+ }
  if(!imgs.length||document.getElementById("topic-w2-figure-cap"))return;
  const sheet=create("style");sheet.id="topic-w2-figure-cap";
  sheet.textContent="body.thpt-r4-topic-knowledge .topic-w1-knowledge .thpt-r4-knowledge-content-panel img[data-topic-w2-figure]{display:block;width:min(100%,700px);max-width:100%;height:auto;max-height:450px;object-fit:contain;margin:1rem auto}\nbody.thpt-r4-topic-knowledge .topic-w1-knowledge .thpt-r4-knowledge-content-panel img[data-topic-w2-figure][src*=\"UNIT_CIRCLE_QUADRANTS\"]{width:min(100%,480px);max-height:430px}\nbody.thpt-r4-topic-knowledge .topic-w1-knowledge .thpt-r4-knowledge-content-panel p:has(>img[data-topic-w2-figure]){margin:1rem auto;text-align:center}";
