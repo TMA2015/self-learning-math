@@ -59,8 +59,12 @@ def project_svg(md: str) -> str:
     def escape_details(m: re.Match[str]) -> str:
         body = re.sub(r"<(?!/?summary\b)", "&lt;", m.group(2))
         return m.group(1) + body + m.group(3)
-    return re.sub(r"(<details\b[^>]*>)(.*?)(</details>)",
-                  escape_details, projected, flags=re.S)
+    projected = re.sub(r"(<details\b[^>]*>)(.*?)(</details>)",
+                       escape_details, projected, flags=re.S)
+    # Bare '<' in canonical comparisons (e.g. x<a/x>a) can be misparsed as
+    # an HTML tag and swallow later H2/MathJax. Escape only for HTML projection.
+    # Preserve the sole approved native tags and authoring identity comments.
+    return re.sub(r"<(?!/?(?:details|summary)(?:\s|>)|!--)", "&lt;", projected)
 
 
 for topic, (head, path, blob, receipt, (outcomes, items, replay, groups, p_groups)) in CASES.items():
