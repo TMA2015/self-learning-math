@@ -126,6 +126,41 @@
 
         **Tự sửa:** Chỉ kết luận **ít nhất một**, sau đó nêu yêu cầu riêng để chứng minh duy nhất. Ôn mục 2.4; làm Practice B17-P03/P07 tại <a href="../luyen-tap/">Luyện tập</a>.
 
+    ### 1.7. Nối giới hạn dãy số, giới hạn hàm số và tính liên tục
+
+    Ở Bài 15, một **dãy số** có thể tiến dần đến \(a\) mà không bao giờ nhận giá trị \(a\). Ở Bài 16, muốn biết giới hạn của \(f(x)\) khi \(x\to a\), ta phải kiểm hành vi khi \(x\) tiến gần \(a\) **từ các phía trong miền xác định**, không được chỉ nhìn \(f(a)\) hoặc thử một dãy đặc biệt. Bài 17 mới trả lời câu tiếp: **giới hạn ấy có bằng giá trị hàm tại \(a\) hay không**? Đó là điều kiện liên tục.
+
+    **Vận dụng — Tự thử tích hợp ba bài.** Cho \(u_n=1+\frac1n\) với \(n\ge1\) và
+    \[
+    F(x)=\begin{cases}
+      \dfrac{x^2-1}{x-1},&x\ne1,\\
+      4,&x=1.
+    \end{cases}
+    \]
+    (a) Tính \(\lim u_n\) và \(\lim F(u_n)\). (b) **Không suy giới hạn hàm chỉ từ một dãy**, hãy biến đổi công thức cho **mọi** \(x\ne1\) gần \(1\) để tính \(\lim_{x\to1}F(x)\). (c) \(F\) có liên tục tại \(1\) không? Phải sửa riêng giá trị \(F(1)\) thành bao nhiêu để liên tục?
+
+    <span data-ped-first-try="7" data-outcome-id="G11-CHV-INTEGRATED" data-thpt-first-try-id="THPT-G11-B17-TRY07" hidden></span>
+
+    ??? question "Đối chiếu — ba khái niệm, ba điều kiện"
+
+        **Bước 1 — giới hạn dãy:** \(u_n=1+1/n\to1\) và \(u_n\ne1\) với mọi \(n\ge1\). Do \(F(u_n)=u_n+1=2+1/n\), nên \(\lim F(u_n)=2\).
+
+        **Bước 2 — giới hạn hàm thực sự:** Với **mọi** \(x\ne1\), \(\dfrac{x^2-1}{x-1}=\dfrac{(x-1)(x+1)}{x-1}=x+1\). Do đó khi \(x\to1\) từ cả hai phía, \(\lim F(x)=2\). Việc thử chỉ một dãy không đủ làm chứng minh giới hạn hai phía cho một hàm bất kì; ở đây ta đã chứng minh được công thức trên cả lân cận thủng.
+
+        **Bước 3 — tính liên tục:** \(F(1)=4\ne2\), vậy **gián đoạn tại \(1\)**. Nếu thay riêng \(F(1)=2\), hàm mới bằng \(x+1\) cả tại \(1\) lẫn ngoài \(1\), nên liên tục ở \(1\).
+
+        **Kiểm:** \(F(1+1/n)\) đi gần \(2\) dù \(F(1)=4\); giá trị tại đúng điểm **không quyết định** giới hạn.
+
+    <span data-thpt-help-id="HELP-G11-B17-TRY07" hidden></span>
+
+    ??? tip "Kiểm lỗi — lấy giá trị hàm hoặc một dãy thay giới hạn hai phía"
+
+        **Dấu hiệu:** Em trả lời \(\lim_{x\to1}F(x)=4\) do \(F(1)=4\), hoặc dùng mỗi \(\lim F(u_n)=2\) để coi như đã chứng minh giới hạn hàm.
+
+        **Vì sao sai:** Giới hạn hàm xét \(x\) gần \(1\) (khác \(1\)) trên **toàn miền phù hợp**. Một dãy thí dụ có thể giúp đoán, nhưng không đủ chứng minh điều kiện mọi cách tiến gần.
+
+        **Tự sửa:** Rút gọn tử bằng hiệu hai bình phương trên miền \(x\ne1\), rồi mới cho \(x\to1\); so sánh riêng \(F(1)\). Ôn Bài 15 giới hạn dãy, Bài 16 khử dạng \(0/0\), Bài 17 liên tục; luyện lại B16-P01 và B17-P01 trong <a href="../luyen-tap/">Core và Luyện tập</a>. Sau đó thử bài Written tích hợp **khác kỹ thuật** ở <a href="../../../../thu-vien/tu-luan-g11-chuong-v/#thpt-g11-chv-w-integrated">thư viện tự luận</a>.
+
 === "Kiến thức SGK"
 
     ### 2.1. Hàm số liên tục tại một điểm
@@ -231,6 +266,15 @@
     Khi \(x\to0{,}5^-\) và \(x\to0{,}5^+\), hai phía đều tiến tới 10.000 đồng, đúng \(C(0{,}5)\). Tại \(x=30\), hai phía đều tiến tới \(10000+13500\cdot29{,}5=408250\) đồng, đúng \(C(30)\). Vì vậy mô hình liên tục ở <strong>hai điểm ghép</strong>.</p>
     <p><strong>Kiểm lại:</strong> Mỗi nhánh là hàm liên tục trên khoảng của nó. Đây là <strong>mô hình cước lũy tiến giả định</strong> giúp học điều kiện liên tục, không khẳng định biểu phí thực tế hay cơ chế làm tròn từng km của hãng taxi.</p></div>
 
+    ### 3.8. Giới hạn dãy làm tiền đề, tính liên tục cho phép dùng định lí
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B17-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Với \(u_n=1+1/n\), xét hàm \(g(x)=x^2-2\). Tính \(\lim_{n\to\infty}g(u_n)\), rồi chứng minh phương trình \(g(x)=0\) có **ít nhất một nghiệm** trên \((1;2)\) bằng định lí giá trị trung gian.</p>
+    <p><strong>Chọn phương pháp:</strong> Vì \(u_n\to1\) và \(g\) là đa thức liên tục, giá trị \(g(u_n)\) hội tụ về \(g(1)\). Để chứng minh nghiệm thuộc một **khoảng thực**, cần tính liên tục trên đoạn và **hai giá trị trái dấu**; dãy gần \(1\) không tự chứng minh có nghiệm.</p>
+    <p><strong>Lời giải:</strong> \(u_n^2-2=(1+1/n)^2-2=-1+2/n+1/n^2\to-1\). Đa thức \(g\) liên tục trên \([1;2]\); \(g(1)=-1<0\), \(g(2)=2>0\). Theo hệ quả định lí giá trị trung gian, tồn tại \(c\in(1;2)\) sao cho \(g(c)=0\). Đây là kết luận **tồn tại ít nhất một nghiệm**; bản thân định lí không bảo đảm tính duy nhất.</p>
+    <p><strong>Kiểm lại:</strong> Hàm được xác định trên toàn đoạn; hai đầu không phải nghiệm và có dấu đối nhau, nên nghiệm được bảo đảm nằm **bên trong** khoảng. \(\sqrt2\) là một nghiệm kiểm chứng, nhưng không được lấy nghiệm đó thay cho việc nêu giả thiết định lí.</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     Nếu sai Vận dụng, hãy mở Kiểm lỗi tương ứng và giải lại Core/Practice khác số liệu.
@@ -266,6 +310,16 @@
         **Vì sao sai:** Kết luận chưa đủ điều kiện để áp định nghĩa hoặc định lý.
 
         **Tự sửa:** Thương yêu cầu mẫu khác 0; định lý giá trị trung gian chỉ đảm bảo **ít nhất một nghiệm**; luyện B17-P01/P07.
+
+    <span data-thpt-help-id="HELP-G11-B17-INTEGRATED" hidden></span>
+
+    ??? tip "4.5. Trộn lẫn giới hạn dãy, giới hạn hàm và giá trị tại điểm"
+
+        **Dấu hiệu:** Em dùng một dãy số gần \(a\) để kết luận ngay giới hạn hai phía của hàm, hoặc quên đối chiếu \(f(a)\) khi xét liên tục.
+
+        **Vì sao sai:** Mỗi khái niệm có điều kiện riêng; phép thử dãy không thay thế chứng minh giới hạn hai phía trong mọi trường hợp. Định lí giá trị trung gian còn đòi hỏi liên tục trên đoạn và đổi dấu.
+
+        **Tự sửa:** Ôn §1.7, Ví dụ 3.8, rồi làm bài Written `G11-CHV-W-INTEGRATED` tại <a href="../../../../thu-vien/tu-luan-g11-chuong-v/#thpt-g11-chv-w-integrated">thư viện</a>; xác minh đầy đủ miền xác định, giới hạn và dấu ở hai đầu trước khi mở lời giải.
 
     **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-v/">Tự luận Chương V</a>.
 
