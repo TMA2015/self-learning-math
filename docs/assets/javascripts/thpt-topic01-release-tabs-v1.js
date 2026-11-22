@@ -20,6 +20,16 @@ function knowledgeStyle(root){
   const roles={"ĐỊNH NGHĨA":["concept","thpt-r4-knowledge-conclusion thpt-r4-concept-card"],"TÍNH CHẤT":["rule","thpt-r4-knowledge-conclusion thpt-r4-rule-card"],"CÔNG THỨC":["formula","thpt-r4-key-formula"],"KIẾN THỨC CẦN GHI NHỚ":["recap","thpt-r4-knowledge-conclusion"]};
   if(!roles[label])continue;const [role,cls]=roles[label],box=el("div",cls);box.dataset.topic01Callout=role;box.setAttribute("role","note");box.append(...q.childNodes);q.replaceWith(box)
  }
+ // MkDocs escaped a display-math delimiter in ONE approved CĐ01 blockquote.
+ // Rehydrate the exact same approved equation for MathJax; leave canonical Markdown untouched.
+ const raw=String.raw`[A\setminus B={x\in A:x\notin B}.]`;
+ const correct=String.raw`\(A\setminus B=\{x\in A:x\notin B\}\)`;
+ const callouts=[...root.querySelectorAll('[data-topic01-callout="concept"] p')]
+   .filter(p=>p.firstChild?.nodeType===Node.TEXT_NODE&&p.firstChild.textContent.startsWith(raw));
+ if(callouts.length!==1)throw Error("TOPIC01_APPROVED_FORMULA_PRESENTATION_GATE");
+ const p=callouts[0],original=p.firstChild,display=el("span","arithmatex",correct);
+ original.textContent=original.textContent.slice(raw.length);
+ p.insertBefore(display,original);p.insertBefore(document.createTextNode(". "),original);
  for(const d of root.querySelectorAll("details")){const summary=d.querySelector("summary");if(!summary)continue;const c=solutionContent(d);d.classList.add("question");d.replaceChildren(summary,...c.childNodes);d.addEventListener("toggle",()=>{if(d.open)typeset(d)})}
  for(const p of root.querySelectorAll("p")){if(p.querySelector(":scope > strong")?.textContent.trim()!=="Lời giải.")continue;const box=el("div","thpt-g10-example-solution");p.before(box);box.append(p);let n=box.nextElementSibling;while(n&&!n.matches("h2,h3,h4,details,.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula")&&!/^(Vận dụng|Kiểm lại|Ví dụ|Kiểm lỗi|Khám phá kiến thức)/.test(n.textContent.trim())){const following=n.nextElementSibling;box.append(n);n=following}}
 }
@@ -151,10 +161,10 @@ function initTopic01Practice(){
   const card=el("article","md-typeset thpt-r4-reviewed-formative-card topic01-question-body");card.dataset.topic01CurrentItem=String(q.number);card.dataset.thptCanonicalItem=q.itemId;card.append(el("h3","","Bài "+q.number+"."));
   const source=q.nodes.find(n=>n.nodeType===1&&n.tagName==="DETAILS");if(!source)throw Error("Missing canonical solution "+q.itemId);
   for(const n of q.nodes.slice(1)){if(n.nodeType===1&&n.tagName!=="DETAILS"||n.nodeType===3)card.append(n.cloneNode(true))}
-  const form=el("div","thpt-r4-formative-answer"),reveal=el("button","thpt-r4-formative-submit","Đối chiếu"),feedback=el("p","thpt-r4-formative-feedback");reveal.type="button";feedback.setAttribute("role","status");form.append(el("p","","Em tự làm bài trên giấy trước khi đối chiếu."),reveal,feedback);
+  // One canonical voluntary disclosure: no duplicate "Đối chiếu" action above it.
   const actions=el("div","thpt-r4-formative-actions"),details=el("details",""),solution=solutionContent(source);details.append(el("summary","","📖 Đáp án / Lời giải"),solution);
-  const review=el("a","thpt-r4-remediation-link","↶ Ôn lại kiến thức");review.href="../kien-thuc/";actions.append(details,review);card.append(form,actions);body.append(card);
-  reveal.onclick=()=>{details.open=true;feedback.textContent="Em hãy đối chiếu cách làm với lời giải bên dưới.";typeset(solution)};details.addEventListener("toggle",()=>{if(details.open)typeset(solution)});
+  const review=el("a","thpt-r4-remediation-link","↶ Ôn lại kiến thức");review.href="../kien-thuc/";actions.append(details,review);card.append(actions);body.append(card);
+  details.addEventListener("toggle",()=>{if(details.open)typeset(solution)});
   const paging=el("div","thpt-r4-modal-buttons");paging.append(prev,next);body.append(paging);pager?.sync();typeset(card);
  };
  pager=golden.bindPager({prev,next,getIndex:()=>cursor,getCount:()=>groups[activeGroup].items.length,go:i=>{cursor=i;render()}});

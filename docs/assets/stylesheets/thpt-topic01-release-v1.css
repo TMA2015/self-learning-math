@@ -39,3 +39,29 @@ body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-g
 .topic01-practice-dialog .thpt-r4-formative-actions details>summary::before{position:static;width:auto;height:auto;mask:none;background:none;transform:none}
 .topic01-practice-dialog .thpt-r4-formative-actions details[open]>summary::before{transform:rotate(90deg)}
 @media(max-width:640px){body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{font-size:14px;padding:8px 10px}.topic01-golden-hub .topic01-golden-grid{grid-template-columns:1fr}}
+
+/* Golden SGK B05 formative disclosure, scoped to CĐ01 knowledge subpanels.
+ * Exact values from thpt-g10-knowledge-hybrid-l1-v1.css: native SGK
+ * blue-neutral details.question, not Material's neon-green question default.
+ * Source/render is independent of Material tabbed-block visibility state. */
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question {
+  margin:.7rem 0 1rem;
+  background:#f8faff;border:1px solid #d9e4f4;border-radius:.62rem;
+  box-shadow:none;color:#243753;overflow:hidden;
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary {
+  list-style:none;position:relative;
+  color:#263e73;background:transparent;border-radius:.62rem;border:none;
+  font-weight:700;font-size:.88rem;padding:.7rem .85rem .7rem 2.15rem;line-height:1.45;
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::before {
+  -webkit-mask:none;mask:none;background:none;content:"▶";display:block;
+  color:#263e73;width:.85rem;height:auto;font-size:.72rem;
+  top:.76rem;left:.88rem;transform:none;
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question[open] > summary::before {transform:rotate(90deg)}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::after {display:none}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary:focus-visible {outline:2px solid #6c8adb;outline-offset:-2px}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question {color:#dce6fc;background:#202e48;border-color:#465978}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary,
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::before {color:#e2ebff}
