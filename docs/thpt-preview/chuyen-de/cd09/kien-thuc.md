@@ -128,7 +128,7 @@ Hình minh họa riêng \(f(x)=x^2\) tại \(a=1\): điểm cố định \(P=(1,
 
 [h²−0]/h=h→0, nên f'(0)=0.
 
-Nếu quên 'hai phía', so giới hạn thương khi h>0 và h<0.
+Nếu quên 'hai phía', so giới hạn thương khi h>0 và h&lt;0.
 
 
 **Kiểm lỗi**
@@ -714,7 +714,7 @@ Chẳng hạn, f=log₂ x, x>0: f'=1/(x ln2). Đơn vị ln2 là hằng dương,
 
 (4)/(4x)=1/x; miền x>0.
 
-Nếu tính với x<0, ln(4x) không có nghĩa trong số thực.
+Nếu tính với x&lt;0, ln(4x) không có nghĩa trong số thực.
 
 
 **Kiểm lỗi**
@@ -746,7 +746,7 @@ Chẳng hạn, f=ln(x²+1) xác định mọi x, f'=2x/(x²+1). Chọn **quy t�
 
 3/(3x−2), x>2/3.
 
-Nếu chỉ ghi mẫu≠0 mà cho x<2/3, điều kiện log phải dương bị vi phạm.
+Nếu chỉ ghi mẫu≠0 mà cho x&lt;2/3, điều kiện log phải dương bị vi phạm.
 
 
 **Kiểm lỗi**
@@ -1064,7 +1064,7 @@ Chẳng hạn, f=x²,a=3,dx=0,02: f'(3)=6 nên dy=0,12; Δy=(3,02)²−9=0,1204,
 
 Vì \(f(x)=1/x\) có miền \(x\ne0\), cả đoạn \([2;2{,}2]\) đều thuộc miền. Ta có \(f'(x)=-1/x^2\), nên \(dy=f'(2)\,dx=(-1/4)(1/5)=-1/20=-0{,}05\). Độ tăng thật \(\Delta y=f(2{,}2)-f(2)=5/11-1/2=-1/22\approx-0{,}04545\). Sai số tuyệt đối \(|\Delta y-dy|=|-1/22+1/20|=1/220\approx0{,}00455\). Cả hai độ tăng đều âm, nhưng không bằng nhau khi bước \(dx\) hữu hạn.
 
-Nếu em tính \(dy\) dương, kiểm dấu \(f'(2)<0\); nếu đặt \(dy=\Delta y\), so hai phân số \(-1/20\) và \(-1/22\). Với mô hình xấp xỉ phải kiểm tính khả vi tại a và bước đủ nhỏ trong miền.
+Nếu em tính \(dy\) dương, kiểm dấu \(f'(2)&lt;0\); nếu đặt \(dy=\Delta y\), so hai phân số \(-1/20\) và \(-1/22\). Với mô hình xấp xỉ phải kiểm tính khả vi tại a và bước đủ nhỏ trong miền.
 
 
 **Kiểm lỗi**

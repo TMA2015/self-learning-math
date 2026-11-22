@@ -416,7 +416,7 @@ Chẳng hạn, lim(x→+∞)[√(x²+6x)−x] = lim(6x)/[√(x²+6x)+x]=lim 6/[�
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Với x đủ âm, biểu thức trong căn không âm. Nhân liên hợp: \(\sqrt{x^2+6x}+x=\dfrac{6x}{\sqrt{x^2+6x}-x}\). Do \(x<0\), ta có \(\sqrt{x^2+6x}=(-x)\sqrt{1+6/x}\). Bởi vậy phân thức bằng \(\dfrac{-6}{\sqrt{1+6/x}+1}\to-3\). Nếu thay sai \(\sqrt{x^2}=x\), em sẽ đánh mất dấu khi chia cho x âm. Chỉ dùng công thức trong miền xác định và ở phía x→−∞.
+Với x đủ âm, biểu thức trong căn không âm. Nhân liên hợp: \(\sqrt{x^2+6x}+x=\dfrac{6x}{\sqrt{x^2+6x}-x}\). Do \(x&lt;0\), ta có \(\sqrt{x^2+6x}=(-x)\sqrt{1+6/x}\). Bởi vậy phân thức bằng \(\dfrac{-6}{\sqrt{1+6/x}+1}\to-3\). Nếu thay sai \(\sqrt{x^2}=x\), em sẽ đánh mất dấu khi chia cho x âm. Chỉ dùng công thức trong miền xác định và ở phía x→−∞.
 
 
 **Kiểm lỗi**
@@ -592,7 +592,7 @@ Chẳng hạn, g(x)=x³−2 liên tục trên [1,2]; g(1)=−1, g(2)=6, nên t�
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Có; f(1)=−2<0, f(2)=1>0 và đa thức liên tục.
+Có; f(1)=−2&lt;0, f(2)=1>0 và đa thức liên tục.
 
 Nếu viết 'duy nhất do IVT', thử g(x)=x(x−1)(x+1) trên [−2,2] có nhiều nghiệm mặc dù đổi dấu hai đầu.
 
