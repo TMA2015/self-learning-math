@@ -28,7 +28,7 @@ This is ONLY a Git SHA inventory of **17 existing source components** — origin
 | `docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md` | `74fbd5720f37f110cd2dd04676425f06b2e0c015` | B24 only learner |
 | `docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md` | `f941b4edfc4be2a2047084430244b0d4ec4df5b1` | B25 only learner |
 | `docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md` | `dec9b2f748dfe39b09c4e7cb9d8ef348a29dcd19` | B26 only learner |
-| `docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md` | `ea25f68bf00549c663130e5ea991089db1f144bd` | B27 only learner |
+| `docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md` | `e06bddefac10f1c4b380d624c1143d5635c73aa5` | B27 only learner; integrated Knowledge TRY06, D6 and EX3.9 |
 | `docs/thpt-preview/sgk/lop-11/chuong-vii/luyen-tap.md` | `90c35aca6df0b5a437d6bacb33b9e0474154deae` | Core/Practice hub |
 | `docs/thpt-preview/sgk/lop-11/chuong-vii/tu-kiem-tra-chuong.md` | `1171a047551fb20aeb8edc51a81f7637bb278f4f` | Exposed chapter END replay |
 | `docs/assets/javascripts/thpt-g11-chvii-b22-b27-source-locked-formative-r01.js` | `4d656f2b8d952a2ad0be1c4298d065e0b8c95c88` | Original locked 51 C/P/Application |
@@ -46,7 +46,7 @@ Original owner KNTT Toán 11 Tập hai SGK PDF 114 pages SHA256 `14ec0da7fa3d7c7
 
 ## CURRENT_AUTHORING_CONTENT_AND_Q15_Q16
 
-Six original Knowledge pages have Golden four ordered tabs, every required concept and condition before method, 32 unscored Knowledge FirstTry with voluntary hidden answers and D6, 40 reasoned worked examples with geometry proofs (5+5+6+8+8+8), six original SVG read instructions, 33 original registered outcomes. Original public shared JS bank 51 C/P/Application IDs and original shared Written 12 =63 unchanged canonical original questions; 32 additional source-owned TRY = **95 distinct teaching item IDs**. Original 33 confidential held-out RD1 remain owner-held outside public GitHub. Original 18 public end replay items do not confer independent readiness or mastery (`CLIENT_SELF_CHECK_NO_MASTERY`). 74 original relative Markdown links normalized to HTML anchors with label/href unchanged; B24 method clarified as perpendicular projection, B25 plane-angle bound TeX, B27 frustum horizontal offset TeX. No student assessment keys, rubric, scoring code, Gemini, Firebase, CSS or live production modified.
+Six original Knowledge pages have Golden four ordered tabs, every required concept and condition before method, 33 unscored Knowledge FirstTry with voluntary hidden answers and D6, 41 reasoned worked examples with geometry proofs (5+5+6+8+8+9), six original SVG read instructions, 33 original registered outcomes. Original public shared JS bank 51 C/P/Application IDs and original shared Written 12 =63 unchanged canonical original questions; 33 additional source-owned TRY = **96 distinct teaching item IDs**. Original 33 confidential held-out RD1 remain owner-held outside public GitHub. Original 18 public end replay items do not confer independent readiness or mastery (`CLIENT_SELF_CHECK_NO_MASTERY`). 74 original relative Markdown links normalized to HTML anchors with label/href unchanged; B24 method clarified as perpendicular projection, B25 plane-angle bound TeX, B27 frustum horizontal offset TeX. No student assessment keys, rubric, scoring code, Gemini, Firebase, CSS or live production modified.
 
 ## LESSON_IDS
 - G11-B22
@@ -156,7 +156,7 @@ Six original Knowledge pages have Golden four ordered tabs, every required conce
 - THPT-G11-CHVII-B27-W01
 - THPT-G11-CHVII-B27-W02-ANCHOR
 
-## NEW_32_UNSCORED_KNOWLEDGE_FIRSTTRY_IDS
+## CURRENT_33_UNSCORED_KNOWLEDGE_FIRSTTRY_IDS
 - THPT-G11-B22-TRY01
 - THPT-G11-B22-TRY02
 - THPT-G11-B22-TRY03
@@ -189,8 +189,9 @@ Six original Knowledge pages have Golden four ordered tabs, every required conce
 - THPT-G11-B27-TRY03
 - THPT-G11-B27-TRY04
 - THPT-G11-B27-TRY05
+- THPT-G11-B27-TRY06
 
-## 40_WORKED_EXAMPLE_ANNOTATION_IDS
+## CURRENT_41_WORKED_EXAMPLE_ANNOTATION_IDS
 - EX-G11-B22-R02-01
 - EX-G11-B22-R02-02
 - EX-G11-B22-R02-03
@@ -231,7 +232,16 @@ Six original Knowledge pages have Golden four ordered tabs, every required conce
 - EX-G11-B27-R02-06
 - EX-G11-B27-R02-07
 - EX-G11-B27-R02-08
+- EX-G11-B27-R04-INTEGRATED
 
+## R04_SCOPED_INTEGRATED_PED14_DELTA_C_20261122
+
+Source-level gap established by reading the 95-item matrix: all original 33 registered outcomes have canonical public items, including integrated original `THPT-G11-CHVII-CHVII-C01` in unchanged JS; but **the integrated outcome alone lacked a source-local pre-Core FirstTry**. A student previously received no dedicated voluntary integrated attempt before entering Core. This is a scoped Q05/PED6/Q14 depth repair, **not** a claim that the prior canonical item was absent.
+
+- Active original learner `docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md` exact blob `e06bddefac10f1c4b380d624c1143d5635c73aa5`: new §1.6 from B23 perpendicular to plane, B24 orthogonal projection/angle, B26 shortest point-plane distance to B27 pyramid volume. New unique `THPT-G11-B27-TRY06` on `G11-CHVII-INTEGRATED` has opt-in hidden solution and `HELP-G11-B27-TRY06`, and misconception 4.5 routes to unchanged existing Core `THPT-G11-CHVII-CHVII-C01` only **after** learner self-attempt.
+- Integrated FirstTry: square base side 6 cm, diagonal half `AO=3√2`, `SO⊥(ABCD)`, `SA=√34`; line-plane angle `∠SAO` with `tan=4/(3√2)`, right-triangle height `SO=√(34−18)=4` cm, base area 36 cm², volume `36×4/3=48` cm³. Oblique side SA cannot replace perpendicular height. Distinct worked `EX-G11-B27-R04-INTEGRATED`: 8×6 rectangle base, `AO=5`, oblique SA=13, perpendicular SO=12, angle tan=12/5 and volume `48×12/3=192` cm³. Actual current mathematical value/condition/units verified from these source formulas, not claimed a full numerical stress-rerun.
+- The original 63 canonical public records stay hash-identical in one frozen JS 51 bank and 12 original Written/Anchor library; no new scored/official readiness item created. New total 33 source-local pedagogical FirstTry +63 original canonical =96 unique source-owned teaching item IDs; worked-example annotations 41; original 6 SVG, 33 private owner-held RD1 and 18 public END replay (`CLIENT_SELF_CHECK_NO_MASTERY`) unchanged.
+- Scoped change classified `DELTA_C_ACADEMIC_MATERIAL` to B27 Knowledge and local D6 only, signed under one original Q01–Q18 v3.2.0 `AUTHOR_SELF_VERIFIED` current SHA; historic R01 external Academic/PED source and receipt remain immutable. Original owner S1 primary page-image receipt is historic and has not been newly re-scanned; no RELEASE/merge/deploy/Firebase/Auth/student state update.
 ## PROTECTED_RD1
 
 Original 33 held-out private RD1 items and official Final Submit assessment are outside this public source bundle. Public self-check reuses 18 exposed items and cannot record independent mastery. AUTHORING does not integrate website or alter Golden runtime; RELEASE remains distinct with owner permission.
