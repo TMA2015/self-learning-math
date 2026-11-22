@@ -111,8 +111,8 @@ for topic in CASES:
 for part in PARTS:
     path = ROOT / f"docs/thpt-preview/chuyen-de/cd05/{part}.md"
     text = path.read_text(encoding="utf-8")
-    nav = re.search(r'<nav class="thpt-sgk-lesson-nav"[^>]*>[\\s\\S]*?</nav>', text)
+    nav = re.search(r'<nav class="thpt-sgk-lesson-nav"[^>]*>[\s\S]*?</nav>', text)
     assert nav and nav.group(0).count('href="../../cd06/kien-thuc/"') == 1
-    assert len(re.findall(r'<(?:a|span)\\b', nav.group(0))) == 4
+    assert len(re.findall(r'<(?:a|span)\b', nav.group(0))) == 4
 print("PASS CĐ05 boundary deep links and source fidelity")
 print("PASS W2 source/receipt/Q15/Q16, no private grader/Mastery or unrelated site changes")
