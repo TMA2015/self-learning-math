@@ -92,3 +92,14 @@ body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic-w1-
   font-size:14px;padding:8px 10px
  }
 }
+
+/* Specific W1 token guard against legacy generic thpt-r4-knowledge-conclusion
+ * background override (scoped to attributes created only by this adapter).
+ * Important is intentionally limited to 3+1 semantic tokens, never sitewide. */
+body [data-topic-w1-callout="concept"]{background-color:#e8f7f2!important;border-color:#a9dccc!important;border-left-color:#087d69!important;color:#174137!important}
+body [data-topic-w1-callout="rule"]{background-color:#eaf1fc!important;border-color:#a5bee5!important;border-left-color:#4879c2!important;color:#193d66!important}
+body [data-topic-w1-callout="recap"]{background-color:#fff3d5!important;border-color:#eacb7c!important;border-left-color:#c49a37!important;color:#27344f!important}
+body [data-topic-w1-callout="formula"]{background-color:transparent!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-callout="concept"]{background-color:#193d36!important;border-color:#447e70!important;border-left-color:#76dfc7!important;color:#e9fff7!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-callout="rule"]{background-color:#203551!important;border-color:#45658a!important;border-left-color:#8cb4ed!important;color:#ecf5ff!important}
+body[data-md-color-scheme="slate"] [data-topic-w1-callout="recap"]{background-color:#4a3a25!important;border-color:#9e7d39!important;border-left-color:#d6aa49!important;color:#fff3d5!important}
