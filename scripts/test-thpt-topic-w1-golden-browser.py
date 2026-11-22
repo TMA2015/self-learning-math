@@ -38,11 +38,23 @@ with sync_playwright() as pw:
                 ctx = browser.new_context(viewport={"width": width, "height": 850}, device_scale_factor=1)
                 page = ctx.new_page()
                 errors: list[str] = []
+                notices: list[str] = []
                 page.on("pageerror", lambda err: errors.append(str(err)))
+                page.on("console", lambda msg: notices.append(msg.text) if msg.type == "error" else None)
                 prefix = BASE + "cd" + topic + "/"
                 def load(part: str):
                     res = page.goto(prefix + part + "/", wait_until="domcontentloaded")
                     assert res and res.status == 200, (engine, topic, width, part, "HTTP")
+                    if page.evaluate("document.documentElement.classList.contains('topic-w1-fallback')"):
+                        debug = page.evaluate("""() => ({
+                          current:document.querySelector('[data-topic-w1]')?.outerHTML.slice(0,350),
+                          part:document.querySelector('[data-topic-w1-source-start]')?.outerHTML,
+                          end:document.querySelector('[data-topic-w1-source-end]')?.outerHTML,
+                          golden:!!window.THPT_GOLDEN_RUNTIME,
+                          js:[...document.scripts].filter(s=>s.src.includes('topic-w1')).map(s=>s.src),
+                          headings:[...document.querySelectorAll('article.md-typeset > h2')].map(x=>x.textContent.slice(0,70))
+                        })""")
+                        raise AssertionError((engine,topic,width,part,"W1 hydration fallback",errors,notices[-8:],debug))
                     expect(page.locator(".topic-w1-boot-status")).to_be_hidden(timeout=15000)
                     assert page.evaluate("!document.documentElement.classList.contains('topic-w1-pending')"), (engine, topic, width, part, "hydration")
                     assert page.evaluate("!document.documentElement.classList.contains('topic-w1-fallback')"), (engine, topic, width, part, "fallback activated")
