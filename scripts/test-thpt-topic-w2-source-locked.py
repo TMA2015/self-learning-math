@@ -52,9 +52,9 @@ def project_svg(md: str) -> str:
         return f"](../../../assets/visuals/{filename})"
     projected = re.sub(r"\]\(([^)\n]+\.svg)\)", replace_svg, md)
     def escape_details(m: re.Match[str]) -> str:
-        body = re.sub(r"<(?!/?summary\\b)", "&lt;", m.group(2))
+        body = re.sub(r"<(?!/?summary\b)", "&lt;", m.group(2))
         return m.group(1) + body + m.group(3)
-    return re.sub(r"(<details\\b[^>]*>)(.*?)(</details>)",
+    return re.sub(r"(<details\b[^>]*>)(.*?)(</details>)",
                   escape_details, projected, flags=re.S)
 
 
