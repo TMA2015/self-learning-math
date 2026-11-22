@@ -303,9 +303,9 @@ const normalizeRenderedMath=node=>{
   if(!p||p.closest(".arithmatex,mjx-container,code,pre,script,style,textarea,svg"))continue;
   if(t.nodeValue.includes("^")||t.nodeValue.includes("\\operatorname{sđ}"))texts.push(t);
  }
- // Python-Markdown stripped blockquote \[ ... \] to raw [ \operatorname... ].
- // Recover ONLY this exact Chasles display formula, leaving the mathematics intact.
- const fragments=/\[\s*(\\operatorname\{sđ\}[^\]]+?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
+ // Python-Markdown stripped two verified blockquote display forms: CĐ06 Chasles
+ // and CĐ08 finite-limit theorem. Recover only these original TeX expressions.
+ const fragments=/\[\s*((?:\\operatorname\{sđ\}|\\lim\b)[^\]]+?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
  for(const t of texts){
   const v=t.nodeValue,parts=document.createDocumentFragment();let lastIndex=0,hit=false,match;
   fragments.lastIndex=0;
