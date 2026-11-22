@@ -177,6 +177,24 @@
     
         Không dùng nhánh x<0 trong tình huống thực. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b04-a01)
 
+    ### 1.10. Tự khảo sát đủ một phân thức bậc hai trên bậc nhất
+
+    Phép chia đa thức là bước mở khóa. Với biểu thức đã tách, hãy lần lượt xác định miền, đạo hàm, các giới hạn, bảng biến thiên, giao trục và đối xứng. Dữ liệu chính xác quan trọng hơn hình đẹp.
+
+    **Vận dụng.** Khảo sát $g(x)=2x-1+8/(x+2)$, tự vẽ đồ thị. Nêu cả tâm và hai trục đối xứng.
+
+    <span data-ped-first-try="10" data-outcome-id="G12-B04-RATIONAL_VARIATION" data-thpt-first-try-id="THPT-G12-B04-TRY10" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** $D=\mathbb R\setminus\{-2\}$, $g'=2-8/(x+2)^2$; nghiệm −4 và 0, dấu +,− | −,+. Cực đại (−4;−13), cực tiểu (0;3). Giới hạn tại −∞ là −∞, tại −2 từ trái là −∞, từ phải là +∞, tại +∞ là +∞. Đứng x=−2, xiên y=2x−1. Giao Oy (0;3); phương trình giao Ox là $2x^2+3x+6=0$ vô nghiệm thực. Tâm (−2;−5), hai trục $y+5=(2\pm\sqrt5)(x+2)$. Nhánh trái dưới xiên, nhánh phải trên xiên. Dựa vào dấu, vẽ hai nhánh riêng; không nối qua −2.
+
+    <span data-thpt-help-id="HELP-G12-B04-TRY10" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        Nếu thiếu một giới hạn, hãy viết lại $g$ thành tổng phần xiên và phần dư rồi lập bảng cho từng khoảng. Kiểm giao trục qua phương trình g=0. [Ôn cách đọc bảng biến thiên](../luyen-tap/#thpt-g12-chi-b04-p02).
+
 === "Kiến thức SGK"
 
     ### 2.1. Sơ đồ khảo sát hàm số
@@ -221,10 +239,10 @@
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B04-R02-06"><p><strong>Đề bài:</strong> \(f=(x^2-x+4)/(x-1)=x+4/(x-1)\).</p><p><strong>Phân tích:</strong> Phải chia đa thức để thấy xiên; xét hai điểm dừng và điểm loại.</p><p><strong>Lời giải:</strong> D loại 1. \(f'=1-4/(x-1)^2=(x+1)(x-3)/(x-1)^2\). Đứng x=1, xiên y=x. \(f(-1)=-3\), \(f(3)=5\). Bảng biến thiên dưới đây. Tử \(x^2-x+4\) có biệt thức −15 nên không giao Ox; giao Oy (0;−4). Tâm (1;1), trục là hai phân giác \(y-1=(1\pm\sqrt2)(x-1)\).</p><p><strong>Kiểm lại:</strong> Kiểm f′ đổi +→− tại −1, −→+ tại 3; nhánh trái nằm dưới y=x, nhánh phải trên.</p></div>
 
-    | x | $-\infty$ | $-1$ | $1^-$ | $1^+$ | $3$ | $+\infty$ |
-    |---|---|---|---|---|---|---|
-    | $f'$ | + | 0 | − | − | 0 | + |
-    | $f$ | $-\infty$ ↗ | −3 | ↘ $-\infty$ | $+\infty$ ↘ | 5 | ↗ $+\infty$ |
+    | $x$ | $-\infty$ | $(-\infty,-1)$ | $-1$ | $(-1,1)$ | $1^-$ | $1^+$ | $(1,3)$ | $3$ | $(3,+\infty)$ | $+\infty$ |
+    |---|---|---|---|---|---|---|---|---|---|---|
+    | $f'(x)$ |  | + | 0 | − |  |  | − | 0 | + | |
+    | $f(x)$ | $-\infty$ | ↗ | −3 | ↘ | $-\infty$ | $+\infty$ | ↘ | 5 | ↗ | $+\infty$ |
     
     Các cột $1^-,1^+$ là hai giới hạn, không phải giá trị tại x=1. Trong khoảng (−1,1), đạo hàm âm; trong (1,3) cũng âm.
 
@@ -291,6 +309,12 @@
     ??? tip "Cách tự sửa"
     
         Không dùng nhánh x<0 trong tình huống thực. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b04-a01).
+
+    ### 4.10. Bỏ sót khảo sát một nhánh
+
+    ??? tip "Cách tự sửa"
+
+        Trở lại các giới hạn một phía và cả hai điểm dừng. [Luyện đọc bảng biến thiên](../luyen-tap/#thpt-g12-chi-b04-p02).
 
     [Core Bài 4](../luyen-tap/#b04-core) · [Luyện tập, Vận dụng, Tự luận](../luyen-tap/#b04-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b04-help) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
