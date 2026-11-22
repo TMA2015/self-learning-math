@@ -30,7 +30,7 @@
 
         **Dấu hiệu:** Em lấy \(18-12=6\) làm giá trị đại diện, hoặc coi mọi số trong nhóm bằng 15.
 
-        **Tự sửa:** Độ rộng là **hiệu**, còn đại diện là **trung bình hai biên**. Ôn mục 2.1, luyện Core tìm trung điểm \([20;30)\) trong [Bài 9 – Core và Luyện tập](../luyen-tap/).
+        **Tự sửa:** Độ rộng là **hiệu**, còn đại diện là **trung bình hai biên**. Ôn mục 2.1, luyện Core tìm trung điểm \([20;30)\) trong <a href="../luyen-tap/">Bài 9 – Core và Luyện tập</a>.
 
     ### 1.2. Số trung bình phải có trọng số tần số
 
@@ -50,7 +50,7 @@
 
         **Dấu hiệu:** Em trả lời \(10\) vì lấy trung bình không trọng số, hoặc chia tổng cho số nhóm \(2\).
 
-        **Tự sửa:** Vẽ bảng \(x_i,m_i,m_ix_i\); lấy \(\sum m_ix_i/\sum m_i\). Ôn mục 2.1; làm Core trung bình hai nhóm rồi Practice trung bình Mẫu A ở [Bài 9 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Vẽ bảng \(x_i,m_i,m_ix_i\); lấy \(\sum m_ix_i/\sum m_i\). Ôn mục 2.1; làm Core trung bình hai nhóm rồi Practice trung bình Mẫu A ở <a href="../luyen-tap/">Bài 9 – Luyện tập</a>.
 
     ### 1.3. Tần số tích lũy cho biết vị trí nằm trong nhóm nào
 
@@ -70,7 +70,7 @@
 
         **Dấu hiệu:** Em lấy nhóm tần số lớn nhất làm nhóm chứa mọi phân vị, hoặc không cộng dồn.
 
-        **Tự sửa:** Viết hàng \(C_i\) ngay dưới \(m_i\). Ôn mục 2.2 rồi luyện Core lập tần số tích lũy \(3,5,2,4\) tại [Core và Luyện tập Bài 9](../luyen-tap/).
+        **Tự sửa:** Viết hàng \(C_i\) ngay dưới \(m_i\). Ôn mục 2.2 rồi luyện Core lập tần số tích lũy \(3,5,2,4\) tại <a href="../luyen-tap/">Core và Luyện tập Bài 9</a>.
 
     ### 1.4. Vì sao trung vị phải nội suy trong nhóm?
 
@@ -94,7 +94,7 @@
 
         **Dấu hiệu:** Em lấy \(Me=15\) (trung điểm) hoặc lấy \(C=8\) (tích lũy **sau** nhóm).
 
-        **Tự sửa:** Ghi \(L,C_{\text{trước}},m,h\) theo đúng nhóm đã chọn. Ôn mục 2.3 và giải Practice trung vị mẫu B tại [Bài 9 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ghi \(L,C_{\text{trước}},m,h\) theo đúng nhóm đã chọn. Ôn mục 2.3 và giải Practice trung vị mẫu B tại <a href="../luyen-tap/">Bài 9 – Luyện tập</a>.
 
     ### 1.5. Tứ phân vị chia mẫu thành bốn phần
 
@@ -114,7 +114,7 @@
 
         **Dấu hiệu:** Em lấy \(C=10\) cho cả \(Q_1,Q_3\), hoặc nội suy trên một nhóm duy nhất.
 
-        **Tự sửa:** Với mỗi \(r\), tìm lại vị trí \(rn/4\) và **nhóm chứa vị trí**, rồi mới thế công thức. Ôn mục 2.4; thử Practice tứ phân vị Mẫu A tại [Bài 9 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Với mỗi \(r\), tìm lại vị trí \(rn/4\) và **nhóm chứa vị trí**, rồi mới thế công thức. Ôn mục 2.4; thử Practice tứ phân vị Mẫu A tại <a href="../luyen-tap/">Bài 9 – Luyện tập</a>.
 
     ### 1.6. Mốt nội suy phải kiểm điều kiện trước
 
@@ -140,7 +140,7 @@
 
         **Dấu hiệu:** Em chọn nhóm đầu vì ở biên dễ tính, hoặc thiếu một tần số kề trong mẫu số.
 
-        **Tự sửa:** Xác định nhóm tần số lớn nhất rồi ghi riêng \(m_j,m_{\text{trước}},m_{\text{sau}},L,h\). Ôn mục 2.5, giải Practice mốt Mẫu A tại [Bài 9 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Xác định nhóm tần số lớn nhất rồi ghi riêng \(m_j,m_{\text{trước}},m_{\text{sau}},L,h\). Ôn mục 2.5, giải Practice mốt Mẫu A tại <a href="../luyen-tap/">Bài 9 – Luyện tập</a>.
 
     ### 1.7. Có khi câu trả lời đúng là “không đủ thông tin”
 
@@ -160,7 +160,7 @@
 
         **Dấu hiệu:** Em thay \(h=10\) vì nhóm cuối rộng 10 mà quên hai nhóm đầu.
 
-        **Tự sửa:** Tính tất cả \(h_i=b_i-a_i\) trước khi xét nhóm mốt; ôn mục 2.5 và bài kiểm điều kiện nhóm không đều rộng trong [Core và Luyện tập Bài 9](../luyen-tap/).
+        **Tự sửa:** Tính tất cả \(h_i=b_i-a_i\) trước khi xét nhóm mốt; ôn mục 2.5 và bài kiểm điều kiện nhóm không đều rộng trong <a href="../luyen-tap/">Core và Luyện tập Bài 9</a>.
 
 
     **Tự thử bổ sung — giải thích giới hạn của ước lượng.** Hai nhóm \([0;10)\) và \([10;20)\) có tần số lần lượt \(3,1\). Dùng trung điểm nhóm để tính số trung bình ghép nhóm \(\overline x_g\). Xét hai bộ số liệu gốc \(A=(1,2,3,11)\) và \(B=(8,9,9,19)\): cả hai có cùng bảng ghép nhóm không, và số trung bình chính xác có bằng \(\overline x_g\) không?
@@ -317,7 +317,7 @@
 
         **Vì sao sai:** Mỗi đại diện được dùng **lặp theo tần số**, không phải mỗi nhóm đều một lần.
 
-        **Tự sửa:** Ôn mục 2.1; ghi \(x_i,m_i,m_ix_i\), rồi luyện Core trung bình hai nhóm và Practice Mẫu B có nhóm khác nhau ở [Core và Luyện tập Bài 9](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.1; ghi \(x_i,m_i,m_ix_i\), rồi luyện Core trung bình hai nhóm và Practice Mẫu B có nhóm khác nhau ở <a href="../luyen-tap/">Core và Luyện tập Bài 9</a>.
 
     <span data-thpt-help-id="HELP-G11-B09-02" hidden></span>
 
@@ -327,7 +327,7 @@
 
         **Vì sao sai:** Công thức cần số quan sát **trước nhóm nội suy**, không phải đến hết nhóm ấy.
 
-        **Tự sửa:** Ôn mục 2.2–2.4 và Ví dụ 3.2–3.4; luyện Core tìm nhóm trung vị Mẫu A rồi Practice trung vị Mẫu B ở [Bài 9 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2–2.4 và Ví dụ 3.2–3.4; luyện Core tìm nhóm trung vị Mẫu A rồi Practice trung vị Mẫu B ở <a href="../luyen-tap/">Bài 9 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B09-03" hidden></span>
 
@@ -337,7 +337,7 @@
 
         **Vì sao sai:** Nội suy sử dụng giả định phân bố trong khoảng nhóm đã mất chi tiết.
 
-        **Tự sửa:** Nêu chữ “ước lượng”, giữ đơn vị, ôn Ví dụ 3.7; luyện Practice tìm \(Q_1,Q_3\) của Mẫu A và giải thích sai số ở [Bài 9 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Nêu chữ “ước lượng”, giữ đơn vị, ôn Ví dụ 3.7; luyện Practice tìm \(Q_1,Q_3\) của Mẫu A và giải thích sai số ở <a href="../luyen-tap/">Bài 9 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B09-04" hidden></span>
 
@@ -347,7 +347,7 @@
 
         **Vì sao sai:** Công thức nội suy mốt đang học được xây dựng cho các nhóm **cùng độ rộng**. Điều kiện không đúng thì phép thế không có cơ sở.
 
-        **Tự sửa:** Ôn mục 2.5 và Ví dụ 3.8, kiểm mọi \(h_i\); luyện Core điều kiện mốt và Practice bảng có các tần số bằng nhau ở [Bài 9 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.5 và Ví dụ 3.8, kiểm mọi \(h_i\); luyện Core điều kiện mốt và Practice bảng có các tần số bằng nhau ở <a href="../luyen-tap/">Bài 9 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B09-05" hidden></span>
 
@@ -357,8 +357,8 @@
 
         **Vì sao sai:** Trung bình cân trọng số, trung vị chia đôi vị trí tích lũy, mốt dựa vào nhóm tập trung và các tần số kề. Chúng đo các ý nghĩa **khác nhau** và không nhất thiết bằng nhau.
 
-        **Tự sửa:** Đặt ba cột câu hỏi “mức cân bằng / chia đôi / tập trung” rồi chọn phương pháp; ôn các mục 2.1,2.3,2.5 và luyện cả ba loại ở [Core và Luyện tập Bài 9](../luyen-tap/).
+        **Tự sửa:** Đặt ba cột câu hỏi “mức cân bằng / chia đôi / tập trung” rồi chọn phương pháp; ôn các mục 2.1,2.3,2.5 và luyện cả ba loại ở <a href="../luyen-tap/">Core và Luyện tập Bài 9</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương III](../../../../thu-vien/tu-luan-g11-chuong-iii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-iii/">Tự luận Chương III</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 9 (trang in 62–68).</p>
