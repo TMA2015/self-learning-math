@@ -8,7 +8,7 @@ RELEASE_SCOPE: FULL_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 AUTHOR_SELF_QA_RECEIPT: YES_SOURCE_LOCKED_ONE_CHAPTER
 SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_R02_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: bc90bd1b544a51675ee1d66b4f0c27758d55e1cb
+SOURCE_BLOB: 26cf102bc8aebf274c9791b42772c5edf7154e7c
 S1_RECEIPT: ORIGINAL_OWNER_SGK_SBT_TAP_HAI_SHA256_VERIFIED_PRINTED_PAGINATION_AND_DIRECT_VISUAL_READ
 OUTCOME_AUDIT: 27/27_CANONICAL_OUTCOMES_26_MANDATORY_1_POST_B17_OPTIONAL
 MATH_VERIFICATION: 197/197_FINITE_INDEPENDENT_MATH_CASES_BY_LESSON_PLUS_18/18_GLOBAL_BANK_AUDIT
@@ -26,7 +26,7 @@ MASTERY_ACTIVATION: NO
 
 ## A1–A7 and S1 checked in the same authoring pass
 
-A1: `SOURCE_BLOB=bc90bd1b544a51675ee1d66b4f0c27758d55e1cb` locks a single source bundle referencing four original canonical lesson Markdown paths, one optional page, one existing public JSON bank and ten SVG with each actual Git SHA. Not an alternate editable learner text.
+A1: `SOURCE_BLOB=26cf102bc8aebf274c9791b42772c5edf7154e7c` locks a single source bundle referencing four original canonical lesson Markdown paths, one optional page, one existing public JSON bank and ten SVG with each actual Git SHA. Not an alternate editable learner text.
 A2: owner SGK KNTT Toán 12 Tập hai PDF SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb` (99 PDF pages), SBT Tập hai SHA256 `823b013adeb487639e55493b4a7c09edb9a21daabc058ea53e6fe92f7a0352f1` (117 PDF pages). Original PDF pages rendered and read, printed page vs PDF1 mapped separately; SBT printed p25 omitted in owner scan, specifically B14 exercises 5.6 and 5.7, not a B15 gap. Secondary answer listings confirm equivalent topic/method, **original p25 not personally read**. The core SGK pages are fully available, and official Q01 explicitly permits `SBT_REFERENCE_GAP_DOCUMENTED` where content is independently verified.
 A3: Q18 mode is `AUTHOR_SELF_VERIFIED`, accepted under §X-E v3.2.0. No mandatory repeat NotebookLM. Previously owner-returned reviewer B17-O06 CONTENT Academic/PED PASS P0/P1=0 was checked against C06/P06/A06/W06 and D6, but its report SOURCE_RECEIPT points to Topic18 and prior ChV audit, not exact current learner/bank; **do not** mark independent source-locked PASS. Existing original R01 independent-review PASS applies only to its R01 SHA snapshot; unchanged old content evidence is preserved.
 A4: 108 unique canonical public questions = 27 x four role C/P/A/W, no duplicated ID/stem, 27 HELP with five steps and return/practice links to same outcome, 27 END placement references reusing existing public Application IDs, exactly 26 main +1 optional after B17. Full item→outcome→role in frozen source bundle.
@@ -58,7 +58,11 @@ The 197 finite mathematics QA scenarios are B14 68 (28 original+new canonical ro
 - **Q15:** all 108 IDs and 108 unique stems, all canonical roles and one stored answer/solution/rubric each, old 96 item versions preserved except previously corrected B15-W05, no cloned END questions. Optional post-B17 isolated by flags.
 - **Q16:** client public self-check cannot give independent Readiness or Mastery. Source bank in public JSON has answer/solution, but RELEASE must test closed Final Submit/hints/Tutor before exposing any item; nothing here constitutes browser runtime QA. Old JS 96/24/24 incompatible with 108/27/27 remains **BLOCKED_BY_RELEASE**, not an academic/PED hold.
 - **Q17:** SGK chapter path self-sufficient in knowledge, worked examples and practice. No Chuyên đề Core imported, no new Topic work. Website route/AP remain RELEASE.
-- **Q18:** source bundle `bc90bd1b544a51675ee1d66b4f0c27758d55e1cb`, this single current R02 receipt, author math/PED verification per lesson/outcome and snapshot freeze, immutable R01 preserved. No fabricated independent receipt; no downstream site merge.
+- **Q18:** source bundle `26cf102bc8aebf274c9791b42772c5edf7154e7c`, this single current R02 receipt, author math/PED verification per lesson/outcome and snapshot freeze, immutable R01 preserved. No fabricated independent receipt; no downstream site merge.
+
+## AUTHORING SAME-CONTENT NAVIGATION DELTA AND SOURCE RE-LOCK (22/11/2026)
+
+After original academic self-QA signoff, the exact-HEAD GitHub curriculum-dependency validator flagged 129 directory-style Markdown hrefs as raw-file missing (rather than MkDocs clean URLs) across B14/B15/B16/B17 and optional-after-B17. I compared all **129 labels and URL fragments**: a Markdown link was changed to an equivalent HTML `<a href>` with **identical text and identical link destination**; the existing website nav was already written as HTML anchors using those URLs. No knowledge narrative, exam stems, answer, rubric, image or Q15 ID was changed. New lesson blobs and relocked source bundle Git blob are enumerated in current source bundle; older learner SHA references in historical receipts stay attached to their original snapshots. The post-DELTA source is `SOURCE_BLOB: 26cf102bc8aebf274c9791b42772c5edf7154e7c`. **Classification:** source-equivalent markup/navigation syntax, not DELTA_C_ACADEMIC_MATERIAL and not a reason for another academic review. The actual rendered MkDocs/browser/deep-link behavior still needs RELEASE integration QA.
 
 ## Corrected known issues before signing
 
@@ -70,7 +74,7 @@ The 197 finite mathematics QA scenarios are B14 68 (28 original+new canonical ro
 
 ## GOVERNANCE / SIGNOFF
 
-`AUTHOR_SIGNOFF: PASS_AT_SOURCE_BLOB_bc90bd1b544a51675ee1d66b4f0c27758d55e1cb`
+`AUTHOR_SIGNOFF: PASS_AT_SOURCE_BLOB_26cf102bc8aebf274c9791b42772c5edf7154e7c`
 `Q18_AUTHOR_SELF_VERIFIED: PASS`
 `Q01_Q18_CHECKED: YES_PER_4_LESSONS_27_OUTCOMES`
 `A1_A7_CHECKED: YES`
