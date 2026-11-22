@@ -1,0 +1,91 @@
+name: CĐ01 standalone HTML smoke only
+on:
+  push:
+    branches: [preview/cd01-sgk-golden-ui-20261122]
+    paths:
+      - 'prototypes/thpt/preview/CD01_Golden_SGK_Preview.html'
+      - '.github/workflows/cd01-standalone-preview-smoke.yml'
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Chromium browser runner
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Open only CĐ01 HTML; verify actual browser DOM and computed styles
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          f=Path("prototypes/thpt/preview/CD01_Golden_SGK_Preview.html").resolve()
+          with sync_playwright() as p:
+              browser=p.chromium.launch()
+              for width in [390, 820, 1440]:
+                  page=browser.new_page(viewport={"width":width,"height":850})
+                  errors=[]
+                  page.on("pageerror",lambda e:errors.append(str(e)))
+                  # Isolate local UI from optional remote fonts/MathJax. No website/network UI regression.
+                  page.route("https://**/*",lambda route:route.abort())
+                  page.goto(f.as_uri(),wait_until="load")
+                  page.locator("#outer-tabs button").first.wait_for()
+                  assert page.locator("#outer-tabs button").count()==3
+                  assert page.locator("#knowledge [data-preview-callout]").count()==12
+                  expected={"concept":"rgb(232, 247, 242)","rule":"rgb(234, 241, 252)","recap":"rgb(255, 243, 213)","formula":"rgba(0, 0, 0, 0)"}
+                  for role,color in expected.items():
+                      cards=page.locator('[data-preview-callout="'+role+'"]')
+                      for card in cards.all():
+                          assert card.evaluate("(e)=>getComputedStyle(e).backgroundColor")==color,(role,card.evaluate("(e)=>getComputedStyle(e).backgroundColor"))
+                  assert page.locator("article.md-typeset").evaluate("(e)=>getComputedStyle(e).fontSize")==page.evaluate("getComputedStyle(document.documentElement).fontSize").replace("20px","16px")
+                  # Every knowledge tab opens, no viewport clipping.
+                  for module in page.locator("#outer-tabs button").all():
+                      module.click()
+                      active=page.locator("#outer-panels > [role=tabpanel]:visible")
+                      assert active.count()==1
+                      for sub in active.locator(".sub-rail button").all():
+                          sub.click()
+                          assert active.locator("section[role=tabpanel]:visible").count()==1
+                          assert page.evaluate("document.documentElement.scrollWidth <= innerWidth+1")
+                  nav=page.locator("nav.thpt-sgk-lesson-nav")
+                  assert nav.locator(":scope > :visible").count()==4
+                  nav.locator('[data-page="practice"]').click()
+                  assert page.locator("#practice").is_visible()
+                  assert page.locator(".cd01-practice-groups > section").count()==3
+                  for i,n in enumerate([11,8,5]):
+                      page.locator('[data-group="'+str(i)+'"]').click()
+                      assert page.locator("#practice-dialog").is_visible()
+                      assert page.locator("#modal-nav button").count()==n
+                      for j in range(n):
+                          page.locator("#modal-nav button").nth(j).click()
+                          assert page.locator("#modal-item details:not([open])").count()==1
+                          reveal=page.locator("#modal-item .thpt-r4-formative-submit")
+                          assert reveal.inner_text()=="Đối chiếu"
+                          reveal.click()
+                          assert page.locator("#modal-item details[open] .thpt-r4-formative-reveal").is_visible()
+                      page.locator("[data-thpt-modal-close]").click()
+                      assert not page.locator("#practice-dialog").is_visible()
+                  nav.locator('[data-page="selfcheck"]').click()
+                  assert page.locator("#selfcheck").is_visible()
+                  assert page.locator("#sc-jump button").count()==11
+                  for j in range(11):
+                      page.locator("#sc-jump button").nth(j).click()
+                      assert page.locator("#sc-body h3").inner_text()=="Câu "+str(j+1)
+                      assert not page.locator("#sc-solution").is_visible()
+                      page.locator("#sc-body button").click()
+                      assert page.locator("#sc-solution").is_visible()
+                      assert page.locator("#sc-body textarea,#sc-body input").count()==0
+                  nav.locator('[data-page="knowledge"]').click()
+                  assert page.locator("#knowledge").is_visible()
+                  assert not errors,errors
+                  print(f"PASS {width}px: 12 role colors; 3 modules/11 sub-tabs; 3 practice dialogs/24 items; 11 selfcheck items; no uncaught JS exception")
+                  page.close()
+              browser.close()
+          PY
