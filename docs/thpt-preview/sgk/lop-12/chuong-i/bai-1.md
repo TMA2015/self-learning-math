@@ -147,6 +147,13 @@
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B01-R02-02"><p><strong>Đề bài:</strong> Xét \(f=x^3-12x\).</p><p><strong>Phân tích:</strong> Nghiệm đạo hàm chia ba khoảng.</p><p><strong>Lời giải:</strong> \(f'=3(x-2)(x+2)\); dấu +,−,+. Tăng trên \((-\infty,-2),(2,+\infty)\), giảm \((-2,2)\). Cực đại (−2;16), cực tiểu (2;−16).</p><p><strong>Kiểm lại:</strong> Thế −2,2 vào hàm gốc.</p></div>
 
+    | $x$ | $-\infty$ | $(-\infty,-2)$ | $-2$ | $(-2,2)$ | $2$ | $(2,+\infty)$ | $+\infty$ |
+    |---|---|---|---|---|---|---|---|
+    | $f'(x)$ |  | + | 0 | − | 0 | + | |
+    | $f(x)$ | $-\infty$ | ↗ | 16 | ↘ | −16 | ↗ | $+\infty$ |
+
+    Bảng biến thiên: dấu ở các khoảng trong hàng đạo hàm quyết định mũi tên ở hàng giá trị. Hai đầu vô hạn là giới hạn, không phải giá trị tại một điểm.
+
     ### 3.3. Phân thức tách khoảng
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B01-R02-03"><p><strong>Đề bài:</strong> Xét \(f=1/(x-1)\).</p><p><strong>Phân tích:</strong> Miền loại 1.</p><p><strong>Lời giải:</strong> \(f'=-1/(x-1)^2&lt;0\) trên từng khoảng \((-\infty,1),(1,+\infty)\).</p><p><strong>Kiểm lại:</strong> f(0)=−1&lt;f(2)=1: không gộp.</p></div>
