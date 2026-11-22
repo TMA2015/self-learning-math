@@ -80,7 +80,7 @@ with sync_playwright() as pw:
                     elems = page.locator('[data-topic-w1-callout="' + role + '"]')
                     for e in elems.all():
                         bg = e.evaluate("(node)=>getComputedStyle(node).backgroundColor")
-                        assert bg == color, (engine, topic, width, role, bg)
+                        assert bg == color, (engine, topic, width, role, bg, e.evaluate("""el=>({classes:el.className,body:document.body.className,article:el.closest('.md-content__inner')?.className,scope:el.matches('body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout [data-topic-w1-callout="concept"]'),sheet:[...document.querySelectorAll('link[rel="stylesheet"]')].map(e=>({href:e.href,loaded:!!e.sheet})).filter(x=>x.href.includes('topic-'))})"""))
                 disclosure_found = False
                 for i in range(groups):
                     tabs.nth(i).click()
