@@ -143,3 +143,37 @@ SBT p25 not located; targeted independent Delta C review especially W05 and new 
 **Author-scoped disposition under one standard §X-E:** `Q18_AUTHOR_SELF_VERIFIED_B17_O06=SCOPED_CONTENT_PASS`; `TARGETED_ACADEMIC_CONTENT=PASS`; `TARGETED_PED_CONTENT=PASS`; `P0=0,P1=0` within B17-O06 item/lesson subsection; `MINIMAL_DELTA=NONE`; `NOTEBOOKLM_INDEPENDENT_REVIEW_CONTENT_MATCHED_BUT_RECEIPT_IDENTITY_NOT_LOCKED`. No new NotebookLM cycle needed solely to change the bad header. This is a **narrow outcome-level** Q18 disposition, not full ChV Q01–Q18/A1–A7 signoff, not `CONTENT_READY` chapter, and not RELEASE.
 
 **Unchanged important open scopes:** SBT ChV printed p25 not located, broader B14–B17 lesson/outcome self-QA and bank transfer-depth as applicable, B15-W05 rubric verification and source/receipt guard reconciliation; V2/ready/REGISTER only if this is a new packet, otherwise the existing published-Knowledge enrichment exception is governed by §X-C. Runtime JS still expects 96/24/24 while candidate bank is 100/25/25: RELEASE owns compatibility/assessment/QA without pre-authorization to deploy.
+
+## Q18 SCOPED CLOSURE B15-W05 + SBT printed page 25 gap triage — 22/11/2026
+
+### A. B15-O05 · Academic/PED affected-source verification closed, NO NEW ACADEMIC DELTA
+
+**AUTHOR_SIGNOFF_SCOPED:** `Q18_AUTHOR_SELF_VERIFIED_B15_O05=CONTENT_PASS` / `P0=0,P1=0,P2=0` within this outcome / `MINIMAL_DELTA=NONE` from current candidate source. This is NOT full B15 or ChV Q01–Q18/A1–A7 signoff, and is not an independent NotebookLM verdict.
+
+**Primary source directly read by the author from the original owner-approved PDFs, not reconstructed from third parties:**
+- SGK Toán 12 KNTT Tập Hai **printed p45–46, PDF1 47–48**; original PDF SHA256 `3c642f2e80d86d699ea62bbcabd0c3074fd5118def96e4b3b8ce1f9ead7f97bb`. SGK p45 states `Δ₁ ⟂ Δ₂ ⇔ u₁·u₂=0`; p46 explicitly gives Example 8 of two lines **perpendicular and skew**. Consequently neither the condition nor its solution requires a point of intersection. This is SGK's convention for the angle between two lines in 3D, not a claim that two geometric lines intersect.
+- SBT Toán 12 KNTT Tập Hai **printed p26, PDF1 24**; original PDF SHA256 `823b013adeb487639e55493b4a7c09edb9a21daabc058ea53e6fe92f7a0352f1`. Original SBT review box states the same dot-product condition; printed p25 preceding it is B14's missing PDF page, **not** a missing B15 page.
+
+**Canonical learner and bank locks:** B15 `docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md` blob `246d6ed9cae0c34afc4ab5a4610b2a9c8baa64a4`; bank `docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json` blob `622308c8f7293d576e8690db4741ddfe7ad882c8`. One `G12-CHV-B15-O05` outcome has exactly four unique canonical IDs `THPT-G12-B15-C05`, `P05`, `A05`, `W05` with one matching `HELP-G12-B15-05`. Existing W05 stem and answer unchanged; changed solution/rubric from earlier R02 Delta-C are now verified. Formal theory in tab 2, concept explanation and hidden FirstTry in tab 1, worked example in tab 3 and D6 error correction in tab 4 all agree. Core tests collinearity; Practice and Application test perpendicularity, Written tests both collinearity/perpendicularity and warns that 3D position must not be inferred from direction.
+
+**Numerical and conceptual evidence:**
+- W05 `u=(1,2,−1)`, `v=(2,−1,0)`, `w=(3,6,−3)`: `u·v=1·2+2·(−1)+(−1)·0=0`, `w=3u`, all three vectors nonzero. Rubric `2+1+1+1=5` distinguishes calculations, conclusions, and caveat regarding intersection.
+- Countermodel to “perpendicular implies intersecting”: `d₁:t(1,2,−1)`, `d₂:(0,0,1)+s(2,−1,0)` have orthogonal direction vectors but nonzero triple scalar product `(0,0,1)·(u×v)=−5`; hence skew. Different from the learner's hidden FirstTry `d₁=(t,0,0)`, `d₂=(0,s,3)`, whose two lines have disjoint z-levels.
+- Local QA on exact current source: **23/23 structure, links, first-try/learner-flow/canonical/role tests and 19/19 targeted vector, perpendicular/skew, SBT B14 p25 transfer calculations**. Counts apply ONLY to checked scope (B15-O05, B14 plane/circle SBT p25 scope); NOT full chapter numeric QA. Existing B17-O06 scoped PASS and immutable older results remain unchanged.
+
+**Verdict:** B15-W05 DELTA_C **substantively closed by signed scoped author verification**, no reason to request another NotebookLM session or rewrite the 4 canonical questions. Preserve 4-role bank/answer/rubric as published in this candidate blob. Keep broader B15 lesson-level outcomes and ChV A1–A7 completion checks separate.
+
+### B. Missing SBT printed p25 — content traced, original custody remains open
+
+**Original scan inspection:** owner SBT PDF, 117 pages with SHA256 above, contains printed p24 at PDF1 23 and printed p26 at PDF1 24; **printed p25 is physically skipped** in the supplied PDF. Do not invent mapping or assert the primary original page has been visually verified.
+
+**Secondary textual corroboration from two indexed exercise identifiers (not original SGK/SBT S1 custody):**
+- SBT B14 exercise 5.6 at printed p25 is a spherical coverage source A(1,2,1), radius 2, intersecting the plane Oxy. Independent arithmetic: distance h=1, section disk radius `r=sqrt(4−1)=√3`. Source: https://loigiaihay.com/giai-bai-56-trang-25-sach-bai-tap-toan-12-ket-noi-tri-thuc-a174373.html (consulted 22/11/2026). Its knowledge/transfer role is **already** covered by the canonical after-B17 optional inter-lesson unit `G12-CHV-B14-O07`; no new required B14 Core.
+- SBT B14 exercise 5.7 at printed p25 is a floor `x+2y+2z−1=0` and ceiling `x+2y+2z−3=0`, question whether a unit-height cabinet fits. Norm of common normal (1,2,2) is 3, distance `|−3−(−1)|/3=2/3<1`, so NO. Source: https://loigiaihay.com/giai-bai-57-trang-25-sach-bai-tap-toan-12-ket-noi-tri-thuc-a174374.html (consulted 22/11/2026). Its method is already covered by B14 required `O06` (point/parallel-plane distance), worked example `EX-G12-B14-R02-09`, and canonical C/P/A/W06.
+- Actual B14 canonical learner `2a48f2e0e15d0b6ea54adfc9ae49291984d02546`; existing optional-after-B17 learner `4dcaebcb5f042c7bed5b6297d72923d059ff827f`. 4 old optional item IDs C/P/A/W07 preserved. Crosswalk demonstrates **no newly identified missing mathematical transfer family** from the two third-party listings, and no forced rewrite of published material solely to match their numbers. This is a **secondary reconstruction of scope only**, not original SBT page verification or owner-certified SOURCE_RECEIPT.
+
+**Source disposition:** Replace ambiguous `SBT_P25_SOURCE_UNKNOWN` with precise `B14_SBT_PRINT_P25_SCAN_OMITTED; EXERCISES_5_6_5_7_SECONDARY_CORROBORATED; S1_ORIGINAL_PAGE_CUSTODY_NOT_VERIFIED`. Treat as a **source custody limitation** in B14, not a proven B15 academic content defect. If an unabridged publisher SBT source is later available, verify printed p25 without restarting accepted W05 or O06 academic review. Current candidate is unchanged for B14 and B15; no website/runtime/JS/END or private RD1 data touched.
+
+### C. Gates still not claimed
+
+No full ChV/51-lesson author Q18/A1–A7 academic signoff or `CONTENT_READY` issued here. Current 100-item bank still requires RELEASE-side JS guard/Final Submit compatibility from historical 96/24/24; author does not claim runtime QA or modify deployed assessment. Master #987 remains source of truth, PR #1008 remains DRAFT/UNMERGED and there is no owner merge/deploy authorization.
