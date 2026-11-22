@@ -3,6 +3,16 @@
 (()=>{"use strict";
 
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
+const topic01TabNames={
+ modules:["1. Mệnh đề và lập luận","2. Tập hợp","3. Khoảng và sơ đồ Ven"],
+ subs:[["1.1. Mệnh đề và biến","1.2. Phủ định","1.3. Điều kiện cần, đủ","1.4. Tương đương","1.5. Lượng từ"],
+ ["2.1. Phần tử và tập con","2.2. Giao và hợp","2.3. Hiệu tập hợp","2.4. Phần bù"],
+ ["3.1. Khoảng số","3.2. Đếm phần hợp"]]
+};
+const displayShortTopic01=(button,label,full)=>{
+ if(!label||!full||label.length>=full.length)throw Error("TOP01_SHORT_TAB_SOURCE_HOLD");
+ button.textContent=label;button.title=full;button.setAttribute("aria-label",full);
+};
 const topic01Ready=part=>{document.documentElement.classList.remove("topic01-boot-pending-"+part);document.documentElement.classList.remove("topic01-boot-fallback-"+part);};
 const typeset=n=>{const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([n]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([n])).catch(()=>{})};
 function solutionContent(details){
@@ -66,7 +76,7 @@ const init=()=>{
   button.className="thpt-r4-knowledge-tab thpt-r4-knowledge-module-tab";
   button.id="topic01-group-tab-"+id;button.setAttribute("role","tab");
   button.dataset.topic01ModuleTab=id;button.setAttribute("aria-controls","topic01-group-"+id);
-  button.textContent=heading.textContent;
+  displayShortTopic01(button,topic01TabNames.modules[n],heading.textContent);
   const panel=document.createElement("section");panel.className="thpt-r4-knowledge-panel thpt-r4-knowledge-module-panel";heading.classList.add("thpt-g10-section-heading");
   panel.id="topic01-group-"+id;panel.dataset.topic01ModulePanel=id;
   panel.setAttribute("role","tabpanel");panel.setAttribute("aria-labelledby",button.id);
@@ -85,7 +95,7 @@ const init=()=>{
    const b=document.createElement("button");b.type="button";b.className="thpt-r4-knowledge-tab";
    b.dataset.topic01Subtab=tabId;b.id="topic01-subtab-"+tabId;b.setAttribute("role","tab");
    b.setAttribute("aria-controls","topic01-content-"+tabId);
-   b.textContent=header.textContent;
+   displayShortTopic01(b,topic01TabNames.subs[n]?.[j],header.textContent);
    const p=document.createElement("section");p.className="thpt-r4-knowledge-panel thpt-r4-knowledge-content-panel";
    p.id="topic01-content-"+tabId;p.setAttribute("role","tabpanel");p.setAttribute("aria-labelledby",b.id);
    let child=header;while(child&&child!==until){const nextChild=child.nextSibling;p.appendChild(child);child=nextChild;}

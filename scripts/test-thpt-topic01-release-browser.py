@@ -29,12 +29,20 @@ with sync_playwright() as pw:
     assert not any((link.get_attribute("href") or "") == "../"+part+"/" for link in nav.locator("a").all())
     assert p.locator("[data-thpt-readiness],[data-mastery-credit]").count()==0
     assert not p.evaluate("document.documentElement.className.includes('topic01-boot-pending-')"),(engine,width,part,"hydration never completed")
+    if p.locator(".topic01-boot-status").is_visible():
+     raise AssertionError(("CD01_HYDRATION_ERROR",engine,width,part,errors,p.evaluate("""() => ({html:document.documentElement.className,ready:document.querySelector('[data-topic01-knowledge-start]')?.dataset.ready,console:document.querySelector('.topic01-boot-status')?.textContent})""")))
     expect(p.locator(".topic01-boot-status")).to_be_hidden()
     assert p.locator(".topic01-boot-status").count()==1
     if part=="kien-thuc":
      tabs=p.locator("[data-topic01-module-tab]")
      expect(tabs).to_have_count(3)
      expect(p.locator("[data-topic01-subtab]")).to_have_count(11)
+     for short_tab in p.locator("[data-topic01-module-tab],[data-topic01-subtab]").all():
+      short=short_tab.inner_text().strip()
+      full=short_tab.get_attribute("title")
+      assert full and len(short)<len(full) and len(short)<=32,(engine,width,short,full)
+      assert short_tab.get_attribute("aria-label")==full
+     assert p.locator('[data-topic01-module-tab="1"]').inner_text()=="1. Mệnh đề và lập luận"
      expect(p.locator("[data-topic01-callout]")).to_have_count(12)
      expected={"concept":("rgb(232, 247, 242)",9),"rule":("rgb(234, 241, 252)",1),"recap":("rgb(255, 243, 213)",1),"formula":("rgba(0, 0, 0, 0)",1)}
      p.locator("body").evaluate("(el)=>el.setAttribute('data-md-color-scheme','default')")

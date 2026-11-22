@@ -86,12 +86,57 @@ with sync_playwright() as pw:
                 tabs = page.locator("[data-topic-w1-module-tab]")
                 expect(tabs).to_have_count(groups)
                 expect(page.locator("[data-topic-w1-subtab]")).to_have_count(outcomes)
+                for tab in page.locator("[data-topic-w1-module-tab],[data-topic-w1-subtab]").all():
+                    short=tab.inner_text().strip()
+                    full=tab.get_attribute("title")
+                    assert full and len(short)<len(full) and len(short)<=32,(engine,topic,width,short,full)
+                    assert tab.get_attribute("aria-label")==full
+                assert tabs.first.inner_text() == {
+                    "02":"1. Bất phương trình","03":"1. Biến đổi tương đương",
+                    "04":"1. Lũy thừa","05":"1. Hàm số"
+                }[topic]
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e.parentElement).display") == "flex"
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e).backgroundColor") != "rgba(0, 0, 0, 0)"
                 assert page.locator("article.md-typeset").evaluate(
                     "(e)=>parseFloat(getComputedStyle(e).fontSize)"
                 ) == page.evaluate("parseFloat(getComputedStyle(document.documentElement).fontSize)*.8")
                 page.locator("body").evaluate("(e)=>e.setAttribute('data-md-color-scheme','default')")
+                # Compare actual CSS values with CĐ01 at exactly the same engine and width.
+                # Font/spacing-only smoke was previously too weak to catch screenshot drift.
+                def golden_snapshot(pg):
+                    return pg.evaluate("""() => {
+                      const base=document.querySelector('.topic01-knowledge-layout');
+                      if(!base)throw Error('Missing Golden Knowledge layout');
+                      const label=[...base.querySelectorAll('.thpt-r4-knowledge-content-panel > p')]
+                       .find(p=>p.querySelector(':scope > strong')?.textContent.trim()==='Vận dụng');
+                      if(!label)throw Error('Golden Vận dụng label missing');
+                      const stem=label.nextElementSibling,details=stem?.nextElementSibling;
+                      if(stem?.tagName!=='P'||!details?.matches('details.question'))
+                       throw Error('Golden label → stem → details contract broken');
+                      const tab=base.querySelector('.thpt-r4-knowledge-module-tab');
+                      const sub=base.querySelector('.thpt-r4-knowledge-subtabs .thpt-r4-knowledge-tab');
+                      const css=(e,props)=>Object.fromEntries(props.map(k=>[k,getComputedStyle(e)[k]]));
+                      return {
+                       tab:css(tab,['fontSize','fontWeight','height','paddingTop','paddingLeft','borderRadius','backgroundColor']),
+                       sub:css(sub,['fontSize','fontWeight','height','paddingTop','paddingLeft','borderRadius']),
+                       label:css(label,['fontSize','lineHeight','marginTop','marginBottom']),
+                       strong:css(label.querySelector('strong'),['fontSize','fontWeight']),
+                       stem:css(stem,['fontSize','lineHeight','marginTop','marginBottom']),
+                       disclosure:css(details,['backgroundColor','borderTopWidth','borderRadius','marginTop','marginBottom']),
+                       summary:css(details.querySelector('summary'),['fontSize','fontWeight','lineHeight','paddingTop','paddingLeft','color'])
+                      };
+                    }""")
+                reference=ctx.new_page()
+                response=reference.goto(BASE+"cd01/kien-thuc/",wait_until="domcontentloaded")
+                assert response and response.status==200
+                if reference.locator(".topic01-boot-status").is_visible():
+                    raise AssertionError(("GOLDEN_REFERENCE_HYDRATION_ERROR",engine,topic,width,reference.evaluate("""() => ({html:document.documentElement.className,status:document.querySelector('.topic01-boot-status')?.textContent,ready:document.querySelector('[data-topic01-knowledge-start]')?.dataset.ready})""")))
+                expect(reference.locator(".topic01-boot-status")).to_be_hidden()
+                golden_styles=golden_snapshot(reference)
+                topic_styles=golden_snapshot(page)
+                drift={k:{"CĐ01":golden_styles[k],"W1":topic_styles[k]} for k in golden_styles if golden_styles[k]!=topic_styles[k]}
+                assert not drift,(engine,topic,width,"Golden computed-style drift",drift)
+                reference.close()
                 roles = page.locator("[data-topic-w1-callout]")
                 assert roles.count() >= outcomes, (topic, "missing 3+1 boxes", roles.count())
                 bad_semantic = roles.evaluate_all("""els=>els.map(el=>({role:el.dataset.topicW1Callout,labels:[...el.children].map(p=>p.querySelector(':scope > strong')?.textContent||'').filter(s=>/^(ĐỊNH NGHĨA|KHÁI NIỆM|CÔNG THỨC|HỆ THỨC|TÍNH CHẤT|ĐỊNH LÝ|QUY TẮC|PHƯƠNG PHÁP|KIẾN THỨC CẦN GHI NHỚ|GHI NHỚ|LƯU Ý)/.test(s.toLocaleUpperCase('vi').trim())),html:el.innerHTML.slice(0,250)})).filter(b=>b.labels.length!==1)""")
