@@ -116,7 +116,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn [tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) (tiền đề, không phải câu cùng outcome địa lí). Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
+        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn [Core tọa độ địa lí](../luyen-tap/#thpt-g12-b17-c06) và [Luyện tập khoảng cách mặt cầu](../luyen-tap/#thpt-g12-b17-p06), đều thuộc đúng outcome địa lí. Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
 
     ### 1.7. Khoảng cách ngắn nhất trên bề mặt Trái Đất
     
@@ -136,7 +136,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn [bài toán tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) và [tích vô hướng, Bài 16](../bai-16/). Đây là tiền đề, không phải câu cùng outcome địa lí. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
+        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn [Core địa lí](../luyen-tap/#thpt-g12-b17-c06) và [Luyện tập tính cung](../luyen-tap/#thpt-g12-b17-p06); nếu quên tích vô hướng, xem [Bài 16](../bai-16/). Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
 
 === "Kiến thức SGK"
 
@@ -234,13 +234,13 @@
     
     ??? tip "Cách tự sửa"
     
-        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn [tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) (tiền đề, không phải câu cùng outcome địa lí). Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
+        Nếu nhầm dấu, đọc lại quy ước Nam/Tây; ở cực kinh độ không xác định duy nhất. Ôn [Core tọa độ địa lí](../luyen-tap/#thpt-g12-b17-c06) và [Luyện tập khoảng cách mặt cầu](../luyen-tap/#thpt-g12-b17-p06), đều thuộc đúng outcome địa lí. Tự kiểm: điểm 0° vĩ độ, 90° Tây có tọa độ (0,−1,0); điểm cực Nam là (0,0,−1). Đối chiếu chuẩn 1 và tự làm lại.
 
     ### 4.7. Khoảng cách ngắn nhất trên bề mặt Trái Đất
     
     ??? tip "Cách tự sửa"
     
-        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn [bài toán tọa độ cầu](../luyen-tap/#thpt-g12-b17-c01) và [tích vô hướng, Bài 16](../bai-16/). Đây là tiền đề, không phải câu cùng outcome địa lí. Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
+        Không lấy |dot|, không lấy θ theo độ nhân 6371, không dùng khoảng cách dây cung. Ôn [Core địa lí](../luyen-tap/#thpt-g12-b17-c06) và [Luyện tập tính cung](../luyen-tap/#thpt-g12-b17-p06); nếu quên tích vô hướng, xem [Bài 16](../bai-16/). Tự kiểm mới: hai điểm xích đạo lệch 90° cho dot=0, θ=π/2, s=6371π/2 km; thử lại câu ban đầu khi đã tự giải được phép đổi độ–radian.
 
     [Core Bài 17](../luyen-tap/#b17-core) · [Luyện tập và Tự luận](../luyen-tap/#b17-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b17-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Mở rộng không bắt buộc sau B17](../mo-rong-sau-bai-17/)
 
