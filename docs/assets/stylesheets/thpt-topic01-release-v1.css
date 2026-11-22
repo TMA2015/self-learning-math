@@ -1,38 +1,41 @@
-/* Scope to RELEASE CĐ01 only; reuse Golden R4 typography and adaptive tab tokens. */
+/* DELTA_A_UI: CĐ01 only. Golden reference 20261122.1. SGK components unchanged. */
 .topic01-release-nav{max-width:100%;margin:0 0 18px}
-.topic01-release-nav .thpt-r4-topic-steps{margin-block:10px}
-.topic01-release-nav .topic01-back{font-size:.87rem}
-.topic01-assessment-note,.topic01-legacy-note{padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;background:var(--md-code-bg-color);font-size:.87rem;line-height:1.6}
+.topic01-release-nav .topic01-back{font-size:.8rem}
+.topic01-assessment-note,.topic01-legacy-note{padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;background:var(--md-code-bg-color);font-size:.8rem;line-height:1.6}
 .topic01-end-nav{margin-top:30px;padding-top:14px;border-top:1px solid var(--md-default-fg-color--lightest)}
-.topic01-knowledge-layout{min-width:0}
-.topic01-knowledge-layout .thpt-r4-knowledge-panel[hidden]{display:none!important}
-.topic01-knowledge-layout .thpt-r4-knowledge-module-panel{min-width:0}
-.topic01-knowledge-layout .thpt-r4-knowledge-content-panel{min-width:0;overflow-wrap:anywhere}
-.topic01-knowledge-layout img{max-width:100%;height:auto;display:block;margin:16px auto}
-.topic01-knowledge-layout .topic01-model-note{line-height:1.6}
-.topic01-knowledge-layout .thpt-r4-knowledge-module-panel > h2{line-height:1.45}
-.topic01-knowledge-layout details{max-width:100%}
-@media(max-width:600px){.topic01-knowledge-layout .thpt-r4-knowledge-modules{grid-template-columns:1fr}.topic01-knowledge-layout .thpt-r4-knowledge-subtabs{display:grid;grid-template-columns:1fr}.topic01-knowledge-layout .thpt-r4-knowledge-subtabs button{text-align:left;white-space:normal;overflow-wrap:anywhere}}
-
-/* Golden public Practice: one question in the shared modal, no inline bulk. */
+.md-typeset.topic01-golden-knowledge{font-size:.8rem;line-height:1.6;--slm-g10-line:var(--md-default-fg-color--lightest)}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout,
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-panel{min-width:0;max-width:100%;width:100%;box-sizing:border-box;font-size:inherit}
+.topic01-knowledge-layout .thpt-r4-knowledge-panel[hidden],#topic01-current-solution[hidden],[data-topic01-source-shelf][hidden],[data-topic01-selfcheck-source][hidden]{display:none!important}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs{display:flex;flex-wrap:nowrap;grid-template-columns:none;overflow-x:auto;overflow-y:hidden;min-width:0;max-width:100%;width:100%;box-sizing:border-box;gap:8px;padding:12px 2px;border-bottom:1px solid #cfdaee}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{flex:0 0 auto;width:auto;max-width:none;white-space:nowrap;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;height:44px;min-height:44px;font-size:15px;line-height:1.45;padding:9px 13px;border-radius:9px;font-weight:700;letter-spacing:normal;border:1px solid #cdd8ec;background:#edf2fb;color:#2d426f;box-shadow:none}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab.is-active{border-color:#284db5;background:#284db5;color:#fff;box-shadow:none}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab:focus-visible{outline:3px solid #dfaa3a;outline-offset:2px}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .tabbed-block p,
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .tabbed-block li{font-size:inherit;line-height:1.79;overflow-wrap:break-word}
+.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion{background:#fff3d5;border:1px solid #eacb7c;border-left:4px solid #c49a37;border-radius:8px;padding:13px 16px;color:#27344f;font-size:inherit;line-height:1.7;margin:14px 0;min-width:0;max-width:100%;box-sizing:border-box}
+.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-key-formula{background:transparent;border:1px solid var(--slm-g10-line);border-radius:8px;padding:12px 14px;margin:14px 0;line-height:1.75;font-size:inherit;overflow-x:auto;max-width:100%;box-sizing:border-box}
+.topic01-knowledge-layout :is(.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula)>:first-child{margin-top:0}
+.topic01-knowledge-layout :is(.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula)>:last-child{margin-bottom:0}
+.topic01-knowledge-layout img,.topic01-knowledge-layout figure{max-width:100%;height:auto}
+.topic01-knowledge-layout img{display:block;margin:16px auto}
+.topic01-knowledge-layout :is(table,.arithmatex,mjx-container[display="true"]){max-width:100%;overflow-x:auto}
+[data-md-color-scheme="slate"] .topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion{color:#fff3d5;background:#4a3a25;border-color:#9e7d39;border-left-color:#d6aa49}
+[data-md-color-scheme="slate"] .topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+[data-md-color-scheme="slate"] body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{color:#e6edff;background:#263753;border-color:#455b83}
+[data-md-color-scheme="slate"] body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab.is-active{color:#fff;background:#3457bd;border-color:#5976d9}
 .topic01-golden-hub{margin:22px 0}
-.topic01-golden-lead{font-size:.9rem;line-height:1.65;margin:12px 0 20px}
-.topic01-golden-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.topic01-golden-section-heading{grid-column:1/-1;font-size:1.06rem;margin:17px 0 5px}
-.topic01-golden-card{appearance:none;text-align:left;cursor:pointer;min-height:92px;display:flex;flex-direction:column;gap:9px;border:1px solid var(--md-default-fg-color--lightest);border-radius:12px;background:var(--md-default-bg-color);color:var(--md-default-fg-color);padding:14px 16px;font:inherit}
-.topic01-golden-card:hover,.topic01-golden-card:focus-visible{border-color:var(--md-accent-fg-color);box-shadow:0 4px 18px #203f8f18}
-.topic01-golden-card strong{font-size:1rem}
-.topic01-golden-card span{font-size:.8rem;line-height:1.4;color:var(--md-default-fg-color--light)}
-.topic01-practice-dialog{max-width:min(900px,95vw);width:95vw;max-height:91vh;overflow:auto;padding:22px;border-radius:14px}
-.topic01-practice-dialog .topic01-question-body{max-width:100%;padding:12px 0;line-height:1.65}
-.topic01-practice-dialog .thpt-r4-modal-question-nav{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
-.topic01-practice-dialog .thpt-r4-modal-question-nav button{min-width:39px;min-height:40px;cursor:pointer}
-.topic01-draft-label{display:block;font-size:.86rem;margin:14px 0}
-.topic01-draft-label textarea{display:block;width:100%;font:inherit;min-height:78px;padding:10px;border:1px solid var(--md-default-fg-color--lightest);border-radius:8px}
-.topic01-practice-dialog .thpt-r4-modal-buttons{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
-.topic01-practice-dialog .thpt-r4-modal-buttons button{min-height:44px;cursor:pointer}
-.topic01-practice-dialog .topic01-close{min-height:44px}
-.topic01-practice-dialog details{margin:12px 0}
-.topic01-practice-dialog::backdrop{background:rgba(13,20,42,.55)}
-@media(max-width:660px){.topic01-golden-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.topic01-practice-dialog{padding:12px;width:96vw}}
-@media(max-width:380px){.topic01-golden-grid{grid-template-columns:1fr}}
+.topic01-golden-hub .topic01-golden-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+.topic01-golden-hub .thpt-r4-practice-lesson{display:flex;flex-direction:column;min-width:0}
+.topic01-golden-hub .topic01-single-card{grid-template-columns:minmax(0,1fr);padding:12px;flex:1}
+.topic01-golden-hub .thpt-r4-practice-card{gap:12px;padding:14px}
+.topic01-golden-hub .thpt-r4-practice-card p{margin:.5rem 0}
+.topic01-golden-hub .thpt-r4-practice-lesson-header h2{overflow-wrap:anywhere}
+.topic01-practice-dialog .thpt-r4-formative-answer p:first-child{margin:0}
+.topic01-practice-dialog .thpt-r4-formative-actions details>summary::after{display:none}
+.topic01-practice-dialog .thpt-r4-formative-actions details>summary::before{position:static;width:auto;height:auto;mask:none;background:none;transform:none}
+.topic01-practice-dialog .thpt-r4-formative-actions details[open]>summary::before{transform:rotate(90deg)}
+@media(max-width:640px){body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tab{font-size:14px;padding:8px 10px}.topic01-golden-hub .topic01-golden-grid{grid-template-columns:1fr}}
