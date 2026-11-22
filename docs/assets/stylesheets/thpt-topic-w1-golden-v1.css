@@ -163,3 +163,16 @@ body .topic-w1-knowledge details.question>summary::after{display:none!important}
 body[data-md-color-scheme="slate"] .topic-w1-knowledge details.question>summary::before{color:#e2ebff!important}
 .topic-w1-practice-dialog .topic-w1-stem-label,.topic-w1-selfcheck .topic-w1-stem-label{margin:12px 0 6px;font-size:.9rem;color:#263e73}
 body[data-md-color-scheme="slate"] :is(.topic-w1-practice-dialog,.topic-w1-selfcheck) .topic-w1-stem-label{color:#e2ebff}
+
+/* W1 Golden CĐ01 style parity: same Knowledge prose/summary rhythm.
+   The same computed values are compared with CĐ01 in the new browser gate. */
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge{font-size:.8rem;line-height:1.6}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel :is(p,li){
+ font-size:inherit;line-height:1.79;overflow-wrap:break-word
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question{
+ margin:.7rem 0 1rem
+}
+body.thpt-r4-topic-knowledge .md-typeset.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question>summary{
+ font-size:.88rem;font-weight:700;line-height:1.45;padding:.7rem .85rem .7rem 2.15rem
+}
