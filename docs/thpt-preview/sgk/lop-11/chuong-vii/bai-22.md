@@ -1,77 +1,167 @@
 # Bài 22. Hai đường thẳng vuông góc
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do cần học → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Chuyển hai phương về chung một điểm, đọc góc không tù và chứng minh vuông góc kể cả khi hai đường chéo nhau.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Kiến thức SGK và ví dụ có suy luận
+=== "Khám phá kiến thức"
 
-### 1.1. Vì sao cần học
-Trong căn nhà có nhiều thanh không giao nhau. Muốn biết phương của hai thanh có vuông góc không, không thể đo một góc ngay tại giao điểm không tồn tại. Ta cần cách chuyển phương song song về chung một điểm.
+    Hai thanh của một khung nhà có thể không gặp nhau nhưng phương của chúng vẫn tạo góc vuông. Muốn kiểm tra, ta không kéo dài hai đường đến một giao điểm tưởng tượng: ta chuyển song song các phương về một điểm chung. Ôn quan hệ song song ở Chương IV, góc giữa hai đường trong mặt phẳng và định lí côsin.
 
-### 1.2. Khái niệm thực chất
-Qua O bất kì dựng a′//a và b′//b; góc giữa a,b là góc nhỏ giữa hai đường a′,b′, thuộc [0°,90°]. Nếu bằng 90°, gọi a⊥b; hai đường có thể chéo nhau.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg" alt="Hai đường chéo nhau được chuyển về chung điểm O; dấu vuông ở O là quan hệ giữa hai phương, không phải giao điểm của hai đường gốc."><figcaption>Đọc hình: Hai đường chéo nhau được chuyển về chung điểm O; dấu vuông ở O là quan hệ giữa hai phương, không phải giao điểm của hai đường gốc. Không suy góc hoặc độ dài từ nét phối cảnh.</figcaption></figure>
 
-### 1.3. Hình thành và lập luận
-Phép tịnh tiến giữ phương; góc không đổi khi chọn O khác. Hai đường giao nhau là trường hợp đặc biệt. Nếu a//a₁ thì (a,b)=(a₁,b), nên có thể thay bằng cạnh song song trong hình hộp.
+    ### 1.1. Góc giữa hai phương không phụ thuộc vị trí
 
-### 1.4. Điều kiện, giới hạn, lỗi thường gặp
-Không lấy góc tù 120° làm góc giữa **đường thẳng**: lấy 60°. Hai đường song song có góc 0°, chéo nhau có thể vuông góc. Hai đường cùng vuông góc với đường thứ ba không nhất thiết song song trong không gian.
+    Qua O, dựng hai đường cùng phương với a,b. Hai tia đã chọn có thể tạo góc tù; đảo một tia cho góc bù. Góc giữa **đường thẳng** lấy góc không tù.
 
-### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK
-**Cách dựng thực sự:** Nếu a và b chéo nhau, lấy O bất kì, vẽ đường a₀ đi qua O song song với a và b₀ đi qua O song song với b. Trong bốn góc do hai đường a₀,b₀ tạo nên, hai góc nhọn bằng nhau và hai góc tù bù với chúng. Góc giữa a,b được chọn là góc nhọn hoặc vuông, không phụ thuộc O. **Trường hợp hai đường trùng phương hoặc song song:** góc 0°. **Trường hợp hai đường cắt nhau:** dùng trực tiếp góc nhỏ tại giao điểm.
+    **Vận dụng — Tự thử trước Core.** Hai tia biểu diễn phương của hai đường chéo nhau tạo góc \(162^\circ\). Tính góc giữa hai đường và nêu cách chọn lại tia.
 
-**Một chứng minh mẫu về phương:** Trong hình hộp chữ nhật, các cạnh đứng AA′,BB′,CC′,DD′ cùng vuông góc mặt đáy và song song nhau. Nếu AB nằm trong đáy, AB⊥AA′, từ CC′//AA′ suy AB⊥CC′ dù chúng không cắt. Phép suy luận này là tính chất *góc giữa hai đường thẳng* chứ không phải một tuyên bố sai rằng chúng giao nhau.
+    <span data-ped-first-try="1" data-outcome-id="G11-B22-ANGLE_LINES" data-thpt-first-try-id="THPT-G11-B22-TRY01" hidden></span>
 
-**Điểm tự chẩn đoán:** Nếu không dựng được đường song song qua O hoặc đang lấy góc >90°, hãy quay lại định nghĩa trước khi giải. **Sai lầm ngược:** a⊥c, b⊥c **không suy a//b** trong không gian; có vô số hướng nằm trong mặt phẳng vuông góc một phương c.
+    ??? question "Đối chiếu"
 
-### 1.6. Hình minh họa và cách đọc
+        **Lời giải:** Góc giữa hai đường là \(180^\circ-162^\circ=18^\circ\). Đổi hướng một tia sẽ cho góc 18°, nhưng đường chứa tia không đổi.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg" alt="Hình B22: Hai đường chéo nhau vẫn có thể vuông góc theo phương; tịnh tiến một đường tới chung điểm O."/><figcaption>Hình B22: Hai đường chéo nhau vẫn có thể vuông góc theo phương; tịnh tiến một đường tới chung điểm O.</figcaption></figure>
+    <span data-thpt-help-id="HELP-G11-B22-TRY01" hidden></span>
 
-**Hướng dẫn đọc hình:** Hai đường chéo nhau vẫn có thể vuông góc theo phương; tịnh tiến một đường tới chung điểm O. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
+    ??? tip "Kiểm lỗi"
 
-### 1.7. Tự thử trước bài luyện tập
-Hình hộp chữ nhật có cạnh AB theo phương ngang và CC′ theo phương thẳng đứng. Chúng không cắt nhau; vì CC′//AA′ và AB⊥AA′, suy ra (AB,CC′)=90°. Vì sao không cần AB gặp CC′?
+        **Dấu hiệu:** Lấy luôn góc tù giữa hai tia.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
+        **Tự sửa:** Lấy góc nhỏ trong hai góc bù. Ôn mục 2.1. [Luyện lại câu B22-C01](../luyen-tap/?item=THPT-G11-CHVII-B22-C01).
 
-### 1.8. Ví dụ có hướng dẫn (vì sao chọn phương pháp)
+    ### 1.2. Vuông góc theo phương không bắt buộc giao nhau
 
+    Trong lập phương \(ABCD.A'B'C'D'\), đường chéo đáy AC và cạnh bên \(BB'\) không đồng phẳng. Ta có thể chuyển \(BB'\) về \(AA'\) cùng phương rồi xét góc tại A.
 
-#### EX-G11-CHVII-B22-01 — Góc hai đường trong hình hộp
+    **Vận dụng — Tự thử trước Core.** Trong lập phương, xác định quan hệ giữa \(AC\) và \(BB'\), giải thích tại sao không cần giao điểm.
 
-**Nhiệm vụ:** Hộp chữ nhật ABCD.A′B′C′D′: AB⊥CC′ mặc dù không cắt nhau.
+    <span data-ped-first-try="2" data-outcome-id="G11-B22-PERP_SKEW" data-thpt-first-try-id="THPT-G11-B22-TRY02" hidden></span>
 
-**Lập luận để tự đối chiếu sau khi thử:** CC′//AA′, AB⊥AA′ (cạnh đứng vuông góc đáy) nên góc giữa AB và CC′ là 90°. Đưa về chung điểm theo song song, không đo theo nét vẽ.
+    ??? question "Đối chiếu"
 
+        **Lời giải:** \(BB'\parallel AA'\). Mặt \(AA'CC'\) là hình chữ nhật (do các cạnh đứng vuông góc đáy), nên \(AC\perp AA'\); suy ra \((AC,BB')=90^\circ\). Hai đường gốc chéo nhau vẫn vuông góc theo định nghĩa.
 
-#### EX-G11-CHVII-B22-02 — Góc nhọn giữa hai phương
+    <span data-thpt-help-id="HELP-G11-B22-TRY02" hidden></span>
 
-**Nhiệm vụ:** Hai đường trong hai mặt phẳng khác nhau có phương tạo góc 120° theo hai tia đã chọn. Góc giữa hai đường là bao nhiêu?
+    ??? tip "Kiểm lỗi"
 
-**Lập luận để tự đối chiếu sau khi thử:** 60° vì góc giữa đường lấy góc không tù, min(120°,180°−120°)=60°.
+        **Dấu hiệu:** Đòi hai đường vuông góc phải cắt nhau.
 
+        **Tự sửa:** Dựng đường song song tới một điểm trên AC và dùng góc tại đó. [Luyện lại câu B22-C02](../luyen-tap/?item=THPT-G11-CHVII-B22-C02).
 
-#### EX-G11-CHVII-B22-03 — Đường chéo hình vuông và cạnh đáy
+    ### 1.3. Thay một đường bằng đường cùng phương
 
-**Nhiệm vụ:** Hình hộp có đáy ABCD là hình vuông; tính góc giữa AC và AB.
+    Trong hình hộp, cạnh song song có cùng phương. Góc giữa hai đường không đổi nếu thay một đường bằng đường song song hoặc trùng với nó. Đây là công cụ biến bài toán không gian thành tam giác phẳng.
 
-**Lập luận để tự đối chiếu sau khi thử:** 45° do tam giác ABC vuông cân tại B/đường chéo hình vuông phân giác góc tại A.
+    **Vận dụng — Tự thử trước Core.** Trong lập phương \(ABCD.A'B'C'D'\), tính góc giữa \(A'C'\) và \(CD\).
 
+    <span data-ped-first-try="3" data-outcome-id="G11-B22-PARALLEL_DIRECTION" data-thpt-first-try-id="THPT-G11-B22-TRY03" hidden></span>
 
-#### EX-G11-CHVII-B22-04 — Không suy vuông góc dây thứ ba
+    ??? question "Đối chiếu"
 
-**Nhiệm vụ:** Hai đường a,b cùng vuông góc c trong không gian. Có suy a//b?
+        **Lời giải:** \(A'C'\parallel AC\), \(CD\parallel AB\). Vậy góc cần tìm bằng góc giữa AC và AB. Vì ABCD là hình vuông, \(\angle CAB=45^\circ\).
 
-**Lập luận để tự đối chiếu sau khi thử:** Không. Chẳng hạn hai trục Ox,Oy cùng vuông góc Oz nhưng Ox⊥Oy. Cần thêm điều kiện cùng nằm trong mặt phẳng vuông góc c hoặc định hướng phù hợp.
+    <span data-thpt-help-id="HELP-G11-B22-TRY03" hidden></span>
 
+    ??? tip "Kiểm lỗi"
 
+        **Dấu hiệu:** So ngay góc ở hai cạnh khác mặt bằng mắt.
 
-## 2. Tự khắc phục lỗi
+        **Tự sửa:** Tìm cạnh tương ứng cùng phương rồi chỉ rõ tam giác chứa góc. [Luyện lại câu B22-C03](../luyen-tap/?item=THPT-G11-CHVII-B22-C03).
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B22-01"><summary><strong>Nhận diện lỗ hổng:</strong> Tưởng hai đường vuông góc phải cắt nhau.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Tưởng hai đường vuông góc phải cắt nhau.</li><li><strong>Nhắc đúng bản chất:</strong> Hãy dựng hai đường qua một điểm song song hai phương ban đầu.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B22, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Hộp chữ nhật: một đường nằm ngang và cạnh bên đứng ở đỉnh khác có góc bao nhiêu? <strong>Sau khi tự làm mới đối chiếu:</strong> 90°, dù chúng không cắt nhau.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B22-C02</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C02">Quay lại câu canonical THPT-G11-CHVII-B22-C02</a></p></details>
+    ### 1.4. Chứng minh thay vì đo hình phối cảnh
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B22-02"><summary><strong>Nhận diện lỗ hổng:</strong> Lấy góc tù giữa hai tia thay cho góc giữa hai đường.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Lấy góc tù giữa hai tia thay cho góc giữa hai đường.</li><li><strong>Nhắc đúng bản chất:</strong> Góc hai đường trong [0°,90°], góc bù có thể là cách đọc khác của tia.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B22, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Góc tia 154° thì góc đường là? <strong>Sau khi tự làm mới đối chiếu:</strong> 26°.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B22-C01</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B22-C01">Quay lại câu canonical THPT-G11-CHVII-B22-C01</a></p></details>
+    Ở hình chiếu song song Chương IV, góc và độ dài có thể biến dạng. Muốn chứng minh vuông góc, cần giả thiết hình học: tam giác vuông, hình chữ nhật, đường trung bình hoặc định lý đã học.
 
-## 3. Tiếp tục
+    **Vận dụng — Tự thử trước Core.** Tứ diện ABCD có tam giác ABC vuông tại A. M,N là trung điểm BD,CD. Biết \(AB\perp BC\) có suy \(AB\perp MN\) được không? Hãy kiểm dữ kiện: giả thiết vuông tại A có thật cho \(AB\perp BC\) không?
 
-[Core và Luyện tập Bài 22](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    <span data-ped-first-try="4" data-outcome-id="G11-B22-PROOF_CONTEXT" data-thpt-first-try-id="THPT-G11-B22-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Trong tam giác BCD, \(MN\parallel BC\). Nếu có thêm \(AB\perp BC\) thì suy được \(AB\perp MN\). Nhưng tam giác ABC vuông tại A chỉ cho \(AB\perp AC\), không cho \(AB\perp BC\). Với tam giác không suy biến, AB và BC không thể vuông góc thêm tại B. Vì thế không được kết luận từ giả thiết đã cho.
+
+    <span data-thpt-help-id="HELP-G11-B22-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Nhầm cạnh huyền với cạnh góc vuông.
+
+        **Tự sửa:** Chỉ đánh dấu vuông góc đúng đỉnh và dùng đường trung bình đúng tam giác. [Luyện lại câu B22-C04](../luyen-tap/?item=THPT-G11-CHVII-B22-C04).
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Góc giữa hai đường thẳng
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm.</strong> Cho hai đường thẳng a,b trong không gian. Qua điểm O bất kì kẻ a',b' lần lượt song song hoặc trùng với a,b. Góc giữa a,b, kí hiệu \((a,b)\), là góc không tù giữa a',b'. Nếu hai đường cùng phương, góc bằng 0°.</div>
+    
+    Góc luôn thỏa \(0^\circ\le(a,b)\le90^\circ\). Tịnh tiến cả hai phương từ O đến O' không đổi góc: có thể chọn các đoạn cùng hướng và cùng độ dài trên hai cặp đường song song; tam giác tạo bởi hai đoạn và đoạn nối đầu mút có ba cạnh tương ứng bằng nhau (phép tịnh tiến), nên góc không đổi.
+    
+    **Cách dựng:** Nếu a,b cắt nhau thì lấy góc nhỏ tại giao điểm. Nếu chéo nhau, chọn một điểm trên a, dựng đường b' qua đó cùng phương b rồi tính góc trong mặt phẳng chứa a và b'. Nếu hai tia tạo góc \(\alpha\), góc đường là \(\min(\alpha,180^\circ-\alpha)\). Dùng giả thiết hình phẳng, định lí côsin hoặc tam giác vuông, không đo hình phối cảnh.
+
+    ### 2.2. Hai đường thẳng vuông góc
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Hai đường thẳng a,b vuông góc, kí hiệu \(a\perp b\), khi \((a,b)=90^\circ\).</div>
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Nếu a' song song hoặc trùng a, b' song song hoặc trùng b thì \((a,b)=(a',b')\). Đặc biệt \(a\perp b\) và a' cùng phương a suy ra \(a'\perp b\).</div>
+    
+    Hai đường vuông góc có thể cắt nhau hoặc chéo nhau. Hai đường cùng vuông góc với một đường thứ ba không nhất thiết song song: ngay trong một mặt phẳng ngang, hai hướng vuông góc với phương đứng có thể vuông góc nhau. Phải có chứng cứ cùng phương mới kết luận song song.
+
+=== "Ví dụ"
+
+    ### 3.1. Đưa đường chéo nhau về tam giác phẳng
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B22-R02-01"><p><strong>Đề bài:</strong> Trong hình lập phương \(ABCD.A'B'C'D'\), tính \((AB',DC)\).</p><p><strong>Phân tích:</strong> Dùng DC cùng phương AB. Tam giác ABB' vuông cân tại B.</p><p><strong>Lời giải:</strong> \(DC\parallel AB\), nên \((AB',DC)=(AB',AB)=\angle B'AB\). Vì \(AB=BB'\) và \(AB\perp BB'\), góc bằng \(45^\circ\).</p><p><strong>Kiểm lại:</strong> AB' và DC không cần cắt nhau; ta đã dựng được góc đúng phương.</p></div>
+
+    ### 3.2. Góc giữa hai tia và hai đường
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B22-R02-02"><p><strong>Đề bài:</strong> Hai phương được biểu diễn bằng hai tia tạo góc \(107^\circ\). Tính góc giữa đường.</p><p><strong>Phân tích:</strong> Góc đường không vượt 90°.</p><p><strong>Lời giải:</strong> \(180^\circ-107^\circ=73^\circ\).</p><p><strong>Kiểm lại:</strong> 73° nằm trong đoạn [0°,90°].</p></div>
+
+    ### 3.3. Đường trung bình trong tứ diện
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B22-R02-03"><p><strong>Đề bài:</strong> Tứ diện đều ABCD, E,F là trung điểm AB,AC. Tính góc EF với CD.</p><p><strong>Phân tích:</strong> Trong ABC, EF là đường trung bình; đưa góc về mặt BCD.</p><p><strong>Lời giải:</strong> \(EF\parallel BC\), nên \((EF,CD)=(BC,CD)=60^\circ\) vì BCD đều.</p><p><strong>Kiểm lại:</strong> Tứ diện đều bảo đảm tất cả các tam giác mặt đều; không dùng giả thiết đó cho tứ diện tùy ý.</p></div>
+
+    ### 3.4. Hai đường chéo mặt ở các mặt song song
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B22-R02-04"><p><strong>Đề bài:</strong> Trong lập phương, chứng minh \(AC\perp B'D'\).</p><p><strong>Phân tích:</strong> Chuyển đường chéo mặt trên về đường chéo mặt dưới.</p><p><strong>Lời giải:</strong> \(B'D'\parallel BD\). Hai đường chéo AC,BD của đáy hình vuông vuông góc, nên \(AC\perp B'D'\).</p><p><strong>Kiểm lại:</strong> Hai đường ở hai mặt song song khác nhau, không giao nhau, nhưng quan hệ theo phương đúng.</p></div>
+
+    ### 3.5. Phản ví dụ về đường thứ ba
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B22-R02-05"><p><strong>Đề bài:</strong> Trong lập phương, AB và AD cùng vuông góc AA'. Chúng có song song không?</p><p><strong>Phân tích:</strong> Kiểm chính đáy hình vuông.</p><p><strong>Lời giải:</strong> \(AB\perp AA'\), \(AD\perp AA'\); tuy nhiên \(AB\perp AD\) và cắt nhau tại A, không song song.</p><p><strong>Kiểm lại:</strong> Đây là phản ví dụ ngay cả khi hai đường cùng nằm trong một mặt vuông góc phương đứng.</p></div>
+
+=== "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G11-CHVII-B22-01" hidden></span>
+
+    ??? tip "4.1. Cho rằng vuông góc phải cắt nhau"
+
+        **Vì sao sai:** Vuông góc là quan hệ góc giữa hai phương; đường chéo nhau vẫn có thể vuông góc.
+
+        **Tự sửa:** Dựng đường cùng phương qua một điểm và dùng định nghĩa 2.2. [Luyện lại câu B22-C02](../luyen-tap/?item=THPT-G11-CHVII-B22-C02).
+
+    <span data-thpt-help-id="HELP-G11-CHVII-B22-02" hidden></span>
+
+    ??? tip "4.2. Lấy góc tù"
+
+        **Vì sao sai:** Góc đường là góc không tù giữa hai đường cùng phương.
+
+        **Tự sửa:** Ôn 2.1, thử lấy góc bù của 156°. [Luyện lại câu B22-C01](../luyen-tap/?item=THPT-G11-CHVII-B22-C01).
+
+    <span data-thpt-help-id="HELP-G11-B22-03" hidden></span>
+
+    ??? tip "4.3. Tin nét vẽ phối cảnh"
+
+        **Vì sao sai:** Hình biểu diễn không bảo toàn tổng quát góc.
+
+        **Tự sửa:** Dùng cạnh song song hoặc định lý hình phẳng, xem 3.1, 3.3. [Luyện lại câu B22-C03](../luyen-tap/?item=THPT-G11-CHVII-B22-C03).
+
+    <span data-thpt-help-id="HELP-G11-B22-04" hidden></span>
+
+    ??? tip "4.4. Hai đường cùng vuông góc đường thứ ba rồi suy song song"
+
+        **Vì sao sai:** Không có tính chất này trong không gian.
+
+        **Tự sửa:** Xem phản ví dụ 3.5 và kiểm cùng phương. [Luyện lại câu B22-P03](../luyen-tap/?item=THPT-G11-CHVII-B22-P03).
+
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VII](../../../../thu-vien/tu-luan-g11-chuong-vii/).
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 22 (trang in 27–30).</p>
