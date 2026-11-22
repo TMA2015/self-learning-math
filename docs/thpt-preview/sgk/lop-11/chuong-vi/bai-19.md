@@ -1,60 +1,241 @@
 # Bài 19. Lôgarit
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VI · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu bản chất → xem hình và ví dụ có suy luận → Tự thử trước Core → Core/Luyện tập/Vận dụng → tự khắc phục. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VI · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Tìm số mũ bằng lôgarit; hiểu điều kiện, công thức đổi cơ số, lôgarit thập phân và tự nhiên trong mô hình.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Kiến thức SGK — hiểu bản chất trước công thức
+=== "Khám phá kiến thức"
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg" alt="B19 — trực quan hình thành khái niệm"/><figcaption>Hình minh họa — quan sát trước khi tính: B19 — trực quan hình thành khái niệm</figcaption></figure>
+    Bài 18 trả lời câu hỏi “nâng cơ số lên số mũ đã biết thì được bao nhiêu?”. Bây giờ, biết kết quả mà chưa biết số mũ, chẳng hạn muốn biết một khoản đầu tư cần bao nhiêu kỳ để tăng gấp ba, ta cần phép tính ngược. Lôgarit giải quyết đúng câu hỏi đó. Kiến thức tiền đề: lũy thừa số mũ thực, tính dương và quy tắc nhân lũy thừa.
 
-**Cách đọc và phát hiện:** Hình B19 không phải bảng công thức: hãy đọc từ trái qua phải để tính 2³=8, rồi đọc ngược để thấy log₂8=3 trả lời câu hỏi “số mũ nào?”. Kiểm điều kiện cơ số, đối số ngay dưới sơ đồ.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg" alt="Sơ đồ hai chiều giữa lũy thừa và lôgarit cơ số 2"><figcaption>Đọc hình từ trái sang phải: \(2^3=8\). Đọc ngược: \(\log_2 8=3\). Mũ là kết quả của phép lôgarit, không phải thương hai số. Kiểm cơ số dương khác 1 và đối số dương trước khi đọc.</figcaption></figure>
 
-### 1.1. Vấn đề dẫn đến lôgarit: ta muốn tìm **số mũ**
+    ### 1.1. Lôgarit trả về số mũ
 
-Nhân 2 liên tiếp: `2¹=2, 2²=4, 2³=8`. Nếu đã biết kết quả 8, hỏi **cần bao nhiêu lần nhân đôi để được 8?**, câu trả lời là 3. Với 10 hoặc 7, câu hỏi khó hơn: `2^x=10` thì x bằng bao nhiêu? Không thể chỉ thử số nguyên. Để trả lời loại câu hỏi “số mũ nào tạo ra số này?”, ta đặt ra **lôgarit**.
+    Nếu \(4^2=16\), phép ngược hỏi số mũ nào biến cơ số 4 thành 16. Vì hàm lũy thừa với cơ số dương khác 1 tăng hoặc giảm nghiêm ngặt, đáp án số mũ là duy nhất.
 
-### 1.2. Lôgarit là gì, trước khi học quy tắc
+    **Vận dụng — Tự thử trước Core.** Tính \(\log_7(1/49)\) và kiểm lại bằng một đẳng thức lũy thừa.
 
-Với `a>0, a≠1, b>0`, **`log_a b` là số thực x duy nhất sao cho `a^x=b`**. Viết tương đương `log_a b=x ⇔ a^x=b`. `a` là **cơ số**, `b` là **đối số**; chúng giữ vai trò khác nhau. Ví dụ `log₂8=3` vì `2³=8`; `log₃(1/9)=−2` vì `3^{-2}=1/9`. Logarit **không phải** phép chia b/a.
+    <span data-ped-first-try="1" data-outcome-id="G11-B19-LOG_DEFINITION" data-thpt-first-try-id="THPT-G11-B19-TRY01" hidden></span>
 
-**Vì sao những điều kiện?** `a=1` cho `1^x=1` với mọi x nên không thể tìm số mũ duy nhất; `a≤0` không tạo ra một hàm lũy thừa thực xác định tốt với mọi x; `a^x` với a>0 luôn dương, nên không thể có `b≤0`.
+    ??? question "Đối chiếu"
 
-### 1.3. Hình thành quy tắc từ ý nghĩa “số mũ”
+        **Lời giải:** \(\log_7(1/49)=-2\) vì \(7^{-2}=1/49\). Logarit có thể âm dù đối số bắt buộc dương.
 
-`log_a 1=0` do `a⁰=1`; `log_a a=1`; `a^{log_a b}=b` (b>0); `log_a(a^x)=x`.
+    <span data-thpt-help-id="HELP-G11-B19-TRY01" hidden></span>
 
-Đặt `u=log_a M`, `v=log_a N` với M,N>0. Vì `a^u=M` và `a^v=N`, `MN=a^{u+v}`, suy ra **`log_a(MN)=log_a M+log_a N`**. Tương tự `log_a(M/N)=log_a M−log_a N` (N>0), `log_a(M^r)=r·log_a M` (M>0, r thực). **Không** có quy tắc `log_a(M+N)=log_a M+log_a N` (phản ví dụ M=N=1: trái `log_a2`, phải 0).
+    ??? tip "Kiểm lỗi"
 
-### 1.4. Đổi cơ số và máy tính
+        **Dấu hiệu:** Chia đối số cho cơ số.
 
-Đặt `x=log_a b` nên `a^x=b`. Lấy `log_c` hai vế với `c>0,c≠1`: `x log_c a=log_c b`, suy ra `log_a b=log_c b/log_c a`. Điều kiện `a≠1` làm mẫu khác 0. `lg x=log₁₀x`, `ln x=log_e x` (e là hằng số dương đặc biệt, xấp xỉ 2,71828). Máy tính có thể cho giá trị gần đúng, **không thay thế điều kiện đối số dương**.
+        **Tự sửa:** Đổi câu hỏi sang dạng a mũ x bằng M. [Làm lại câu B19-C01](../luyen-tap/?item=THPT-G11-CHVI-B19-C01).
 
-### 1.5. Tự thử
+    ### 1.2. Vì sao hai thừa số phải dương riêng rẽ khi tách tích?
 
-Nếu `log₅125=3`, em phát biểu lại một đẳng thức lũy thừa. Giải thích vì sao `log₄0` vô nghĩa và vì sao `log₂(4+4)` không bằng `log₂4+log₂4` (kiểm `log₂8=3`, vế sau 4).
+    Cơ số phải dương khác 1; đối số phải dương. Tích hai số âm có thể dương, nhưng logarit riêng của từng số âm không xác định. Vì thế miền xác định của một tích trong logarit và miền của tổng hai logarit không nhất thiết giống nhau.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở cách tự kiểm tra</summary><p>Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery.</p></details>
+    **Vận dụng — Tự thử trước Core.** Cho \(F(x)=\log_5((x+3)(x-4))\). Tìm tập xác định và cho biết có được tách thành hai logarit trên toàn tập đó không.
 
+    <span data-ped-first-try="2" data-outcome-id="G11-B19-LOG_DOMAIN" data-thpt-first-try-id="THPT-G11-B19-TRY02" hidden></span>
 
+    ??? question "Đối chiếu"
 
-## 2. Ví dụ có suy luận
+        **Lời giải:** Điều kiện \((x+3)(x-4)>0\) cho \(x<-3\) hoặc \(x>4\). Chỉ khi \(x>4\) cả \(x+3\) và \(x-4\) đều dương mới viết được \(\log_5(x+3)+\log_5(x-4)\).
 
-### Ví dụ mẫu có giải thích
+    <span data-thpt-help-id="HELP-G11-B19-TRY02" hidden></span>
 
-**EX-G11-B19-01 (đọc đúng ý nghĩa).** `log₄(1/16)=−2` vì `4^{-2}=1/16`. **Không lấy** `1/16÷4`.
+    ??? tip "Kiểm lỗi"
 
-**EX-G11-B19-02 (điều kiện trước khi rút gọn).** `log₃((x−1)(x+2))` xác định khi `(x−1)(x+2)>0`, tức `x<−2` hoặc `x>1`. **Không tách thành `log₃(x−1)+log₃(x+2)` trên toàn miền này**, vì khi x<−2 hai thừa số đều âm và log riêng không xác định. Quy tắc tách tích đòi **mỗi thừa số dương**; đây là bẫy học thuật quan trọng.
+        **Dấu hiệu:** Tách tích ngay sau khi kiểm tích dương.
 
-**EX-G11-B19-03 (quy tắc có giải thích).** `log₂(32/4)=log₂32−log₂4=5−2=3`; điều kiện hai đối số 32,4 dương. Có thể đối chiếu `log₂8=3`.
+        **Tự sửa:** Kiểm từng đối số sau biến đổi; dùng bảng dấu. [Làm lại câu B19-P04](../luyen-tap/?item=THPT-G11-CHVI-B19-P04).
 
-**EX-G11-B19-04 (đổi cơ số).** `log₃7=(ln7)/(ln3)`, kiểm `3>0,3≠1,7>0`, cho xấp xỉ 1,771; **không** phải `ln(7/3)`.
+    ### 1.3. Nhân, chia và nâng lũy thừa chuyển thành cộng, trừ và nhân số mũ
 
+    Nếu \(M=a^u,N=a^v\) với \(M,N>0\), thì \(MN=a^{u+v}\). Bởi logarit đọc ra số mũ, logarit của tích bằng tổng logarit. Tương tự với thương và lũy thừa. Không có công thức cộng cho logarit của một tổng.
 
-## 3. Tự khắc phục và quay lại câu gốc
+    **Vận dụng — Tự thử trước Core.** Tính \(\log_5 125+\log_5(1/25)-\log_5 5\).
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVI-B19-01"><summary>Nhầm logarit với phép chia hoặc căn.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Nhầm logarit với phép chia hoặc căn.</li><li><strong>Nhắc bản chất &amp; điều kiện:</strong> log_a b là số mũ x cần nâng a lên để được b, không phải phép chia.</li><li><strong>Tìm lại lý do:</strong> Hãy phát biểu bằng lời vì sao quy tắc hợp lệ, đọc lại D1 tương ứng trước khi thay số hoặc biến đổi.</li><li><strong>Tự thử có dẫn dắt:</strong> Số mũ m nào thoả 3^m=81?. <strong>Đối chiếu sau khi thử:</strong> m=4 ⇒ log₃81=4.</li><li><strong>Quay về bài canonical:</strong> THPT-G11-CHVI-B19-C01; tự giải lại và nêu lý do từng bước, không chỉ ghi đáp số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVI-B19-C01">Quay lại câu THPT-G11-CHVI-B19-C01</a></p></details>
+    <span data-ped-first-try="3" data-outcome-id="G11-B19-LOG_LAWS" data-thpt-first-try-id="THPT-G11-B19-TRY03" hidden></span>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVI-B19-02"><summary>Tách log của tích hai số âm thành hai log riêng.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Tách log của tích hai số âm thành hai log riêng.</li><li><strong>Nhắc bản chất &amp; điều kiện:</strong> log_a(MN) có nghĩa khi MN&gt;0; công thức tách cần M&gt;0 và N&gt;0 riêng.</li><li><strong>Tìm lại lý do:</strong> Hãy phát biểu bằng lời vì sao quy tắc hợp lệ, đọc lại D1 tương ứng trước khi thay số hoặc biến đổi.</li><li><strong>Tự thử có dẫn dắt:</strong> Có thể tách log₂((-3)(-4)) không?. <strong>Đối chiếu sau khi thử:</strong> Không: log₂12 xác định, nhưng log₂(−3), log₂(−4) không xác định.</li><li><strong>Quay về bài canonical:</strong> THPT-G11-CHVI-B19-P04; tự giải lại và nêu lý do từng bước, không chỉ ghi đáp số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVI-B19-P04">Quay lại câu THPT-G11-CHVI-B19-P04</a></p></details>
+    ??? question "Đối chiếu"
 
-## 4. Tiếp tục
+        **Lời giải:** Các đối số đều dương. Giá trị là \(3+(-2)-1=0\). Kiểm bằng gộp thành \(\log_5(125/(25\cdot5))=\log_5 1=0\).
 
-[Core và Luyện tập Bài 19](luyen-tap.md) · [Tự luận Chương VI](../../../thu-vien/tu-luan-g11-chuong-vi.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    <span data-thpt-help-id="HELP-G11-B19-TRY03" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Nhầm dấu trừ hoặc logarit của tổng.
+
+        **Tự sửa:** Viết từng số thành lũy thừa cơ số 5 rồi kiểm lại phép gộp. [Làm lại câu B19-P01](../luyen-tap/?item=THPT-G11-CHVI-B19-P01).
+
+    ### 1.4. Đổi cơ số để dùng máy tính hoặc lũy thừa dễ nhận biết
+
+    Đặt \(x=\log_a M\), tức \(a^x=M\). Lấy logarit cơ số \(c\) hợp lệ hai vế, ta được \(x\log_c a=\log_c M\). Vì \(a\ne1\), \(\log_c a\ne0\); chia được để tìm x.
+
+    **Vận dụng — Tự thử trước Core.** Viết \(\log_8 4\) bằng logarit cơ số 2, rồi tính chính xác.
+
+    <span data-ped-first-try="4" data-outcome-id="G11-B19-LOG_BASE_CHANGE" data-thpt-first-try-id="THPT-G11-B19-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** \(\log_8 4=\log_2 4/\log_2 8=2/3\). Kiểm \(8^{2/3}=4\).
+
+    <span data-thpt-help-id="HELP-G11-B19-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Đổi cơ số bằng logarit của thương.
+
+        **Tự sửa:** Dùng thương của hai logarit cùng một cơ số, không dùng logarit của thương. [Làm lại câu B19-P05](../luyen-tap/?item=THPT-G11-CHVI-B19-P05).
+
+    ### 1.5. Lôgarit thập phân: đọc số mũ trong thang đo
+
+    Lôgarit thập phân \(\lg M=\log_{10}M\) biến nhân 10 thành tăng 1 đơn vị lôgarit. Trong mô hình hóa học thường dùng \(\mathrm{pH}=-\lg c\) với \(c>0\) là giá trị số của nồng độ ion hydrogen theo mol/L; dấu trừ làm nồng độ nhỏ tương ứng pH lớn hơn.
+
+    **Vận dụng — Tự thử trước Core.** Theo mô hình trên, nếu \(c=10^{-5}\) mol/L, tính pH. Nếu nồng độ giảm 100 lần, pH thay đổi bao nhiêu?
+
+    <span data-ped-first-try="5" data-outcome-id="G11-B19-LOG_APPLICATION" data-thpt-first-try-id="THPT-G11-B19-TRY05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** \(\mathrm{pH}=-(-5)=5\). Sau giảm 100 lần, \(c'=10^{-7}\) và pH mới là 7, tăng 2 đơn vị. Đây là tính toán theo mô hình đã cho.
+
+    <span data-thpt-help-id="HELP-G11-B19-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Cho rằng giảm nồng độ làm pH giảm cùng tỷ lệ.
+
+        **Tự sửa:** Đổi nồng độ thành lũy thừa 10; chú ý dấu trừ. [Làm lại câu B19-P06](../luyen-tap/?item=THPT-G11-CHVI-B19-P06).
+
+    ### 1.6. Số e, lôgarit tự nhiên và tăng trưởng liên tục
+
+    Nếu chia mỗi năm thành \(m\) kỳ nhập lãi, mô hình số tiền sau \(t\) năm là \(P(1+r/m)^{mt}\). Khi số kỳ chia tăng không giới hạn, số tiền tiến đến \(Pe^{rt}\). Đây là một mô hình **lãi kép liên tục**, khác cập nhật cuối từng kỳ. Lấy lôgarit tự nhiên \(\ln\) giúp tìm \(t\).
+
+    **Vận dụng — Tự thử trước Core.** Mô hình liên tục \(A(t)=300e^{0{,}04t}\) (triệu đồng, t tính bằng năm). Viết thời gian đạt 600 triệu dưới dạng chính xác và gần đúng đến một chữ số thập phân.
+
+    <span data-ped-first-try="6" data-outcome-id="G11-B19-LOG_APPLICATION" data-thpt-first-try-id="THPT-G11-B19-TRY06" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** \(e^{0{,}04t}=2\), nên \(t=\ln 2/0{,}04\approx17{,}3\) năm. Vì cho phép thời gian thực trong mô hình, không tự làm tròn lên số năm nguyên.
+
+    <span data-thpt-help-id="HELP-G11-B19-TRY06" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Dùng số lần nhân nguyên cho mô hình thời gian liên tục.
+
+        **Tự sửa:** Phân biệt cập nhật theo kỳ với công thức liên tục; ghi đơn vị của t. [Làm lại câu B19-P06](../luyen-tap/?item=THPT-G11-CHVI-B19-P06).
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Khái niệm lôgarit
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(a>0,\ a\ne1,\ M>0\), lôgarit cơ số a của M là số thực \(\alpha\) duy nhất thỏa
+    \[
+    \alpha=\log_a M\Longleftrightarrow a^\alpha=M.
+    \]
+    </div>
+    
+    Nếu \(a=1\), mọi số mũ cho 1 nên không tìm được số mũ duy nhất; cơ số không dương không cho định nghĩa mũ thực chung; đối số không dương không là giá trị của lũy thừa cơ số dương.
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất trực tiếp.</strong> Với cơ số và đối số hợp lệ:
+    \[
+    \log_a1=0,\quad\log_a a=1,\quad a^{\log_a M}=M,\quad \log_a(a^u)=u\ (u\in\mathbb R).
+    \]
+    </div>
+
+    ### 2.2. Tính chất của lôgarit
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc tính.</strong> Với \(a>0,a\ne1,M,N>0,\ r\in\mathbb R\):
+    \[
+    \log_a(MN)=\log_a M+\log_a N,\quad
+    \log_a(M/N)=\log_a M-\log_a N,
+    \]
+    \[
+    \log_a(M^r)=r\log_a M.
+    \]
+    </div>
+    
+    Đặt \(M=a^u,N=a^v\) để suy các quy tắc từ luật số mũ. Muốn tách logarit của tích hay thương, phải kiểm từng thừa số/đối số dương; nếu chứa \(\log_a(x^2)\) với \(x\ne0\), có thể viết \(2\log_a|x|\), không viết \(2\log_a x\) khi x âm. Không có luật \(\log_a(M+N)=\log_a M+\log_a N\).
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Đổi cơ số.</strong> Với \(a,c>0,\ a,c\ne1,\ M>0\):
+    \[
+    \log_a M=\frac{\log_c M}{\log_c a}.
+    \]
+    </div>
+    
+    Hệ quả: \(\log_a c=1/\log_c a\); với \(r\ne0\), \(\log_{a^r} M=(1/r)\log_a M\).
+
+    ### 2.3. Lôgarit thập phân và lôgarit tự nhiên
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Hai cơ số thường dùng.</strong> \(\lg M=\log_{10}M\) (cũng viết \(\log M\) theo quy ước thập phân); \(\ln M=\log_e M\), \(M>0\), trong đó \(e=\lim_{x\to+\infty}(1+1/x)^x\approx2{,}71828\).</div>
+    
+    **Lãi kép liên tục:** chia năm thành \(m\) kỳ với lãi suất năm \(r>0\), \(P(1+r/m)^{mt}\to Pe^{rt}\) khi \(m\to+\infty\) (mô hình cho \(t\ge0\)). Khi biết mức \(A>P\), có thể tìm \(t=\ln(A/P)/r\). Công thức này không đồng nhất với lãi kép cuối từng năm.
+    
+    **Máy tính:** tính \(\log_a M\) bằng đổi cơ số \(\ln M/\ln a\) hoặc phím log cơ số tùy máy. Nhập đầy đủ ngoặc, kiểm miền, làm tròn ở bước cuối. Ví dụ \(\log_3 11\approx2{,}1827\).
+
+=== "Ví dụ"
+
+    ### 3.1. Đọc số mũ âm
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\log_6(1/216)\).</p><p><strong>Phân tích:</strong> Nhận ra đối số là lũy thừa nguyên của 6.</p><p><strong>Lời giải:</strong> \(216=6^3\), nên \(1/216=6^{-3}\) và logarit bằng \(-3\).</p><p><strong>Kiểm lại:</strong> Lấy 6 nâng lên -3 đúng bằng đối số.</p></div>
+
+    ### 3.2. Điều kiện với bình phương
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tìm tập xác định của \(\log_4((x-2)^2)\) và viết biểu thức theo logarit của trị tuyệt đối.</p><p><strong>Phân tích:</strong> Đối số phải dương, bình phương bằng 0 đúng khi x=2.</p><p><strong>Lời giải:</strong> Miền \(\mathbb R\setminus\{2\}\). Vì \(|x-2|>0\), \(\log_4((x-2)^2)=2\log_4|x-2|\).</p><p><strong>Kiểm lại:</strong> Với x<2, logarit của x-2 không có nghĩa nhưng logarit của trị tuyệt đối có nghĩa.</p></div>
+
+    ### 3.3. Gộp thương và tích
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\log_3 54-\log_3 2+\log_3 9\).</p><p><strong>Phân tích:</strong> Các đối số dương cho phép gộp.</p><p><strong>Lời giải:</strong> \(=\log_3(54\cdot9/2)=\log_3 243=5\).</p><p><strong>Kiểm lại:</strong> (3^5=243); đúng chiều tính ngược.</p></div>
+
+    ### 3.4. Đổi cơ số và tính gần đúng
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tính \(\log_7 13\) đến ba chữ số thập phân.</p><p><strong>Phân tích:</strong> 7 và 13 dương, 7 khác 1; dùng cơ số e.</p><p><strong>Lời giải:</strong> \(\log_7 13=\ln13/\ln7\approx1{,}318\).</p><p><strong>Kiểm lại:</strong> Vì 7<13<49, kết quả nằm giữa 1 và 2.</p></div>
+
+    ### 3.5. Ứng dụng thang lôgarit thập phân
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Theo \(\mathrm{pH}=-\lg c\), một mẫu có pH=4,5. Viết giá trị nồng độ \(c\) dưới dạng lũy thừa của 10.</p><p><strong>Phân tích:</strong> Đưa logarit về số mũ; c phải dương.</p><p><strong>Lời giải:</strong> \(\lg c=-4{,}5\), nên \(c=10^{-4{,}5}\) mol/L.</p><p><strong>Kiểm lại:</strong> Thế ngược vào công thức pH cho 4,5.</p></div>
+
+    ### 3.6. Thời gian trong mô hình liên tục
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Một mô hình lượng chất tăng \(Q(t)=60e^{0{,}08t}\), t tính bằng giờ. Khi nào đạt 180 đơn vị?</p><p><strong>Phân tích:</strong> Chia theo mức đầu và lấy ln vì cơ số e.</p><p><strong>Lời giải:</strong> \(e^{0{,}08t}=3\) nên \(t=\ln3/0{,}08\approx13{,}73\) giờ.</p><p><strong>Kiểm lại:</strong> Thế giá trị chính xác cho Q(t)=180; không kết luận đây là số giờ nguyên.</p></div>
+
+=== "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G11-CHVI-B19-01" hidden></span>
+
+    ??? tip "4.1. Nhầm lôgarit với phép chia hoặc căn"
+
+        **Vì sao sai:** Logarit trả về số mũ trong a^x=M.
+
+        **Tự sửa:** Chuyển về lũy thừa rồi thế ngược. [Làm lại câu B19-C01](../luyen-tap/?item=THPT-G11-CHVI-B19-C01).
+
+    <span data-thpt-help-id="HELP-G11-CHVI-B19-02" hidden></span>
+
+    ??? tip "4.2. Tách logarit khi các đối số riêng âm"
+
+        **Vì sao sai:** Tích dương chưa đảm bảo mỗi thừa số dương.
+
+        **Tự sửa:** Lập bảng dấu từng biểu thức ở mục 2.2. [Làm lại câu B19-P04](../luyen-tap/?item=THPT-G11-CHVI-B19-P04).
+
+    <span data-thpt-help-id="HELP-G11-B19-03" hidden></span>
+
+    ??? tip "4.3. Dùng công thức tích cho tổng"
+
+        **Vì sao sai:** Logarit chỉ biến tích thành cộng, không biến tổng thành cộng.
+
+        **Tự sửa:** Thử M=N=1, so log_a2 với 0. [Làm lại câu B19-P02](../luyen-tap/?item=THPT-G11-CHVI-B19-P02).
+
+    <span data-thpt-help-id="HELP-G11-B19-04" hidden></span>
+
+    ??? tip "4.4. Đổi sai cơ số hoặc lẫn ln với lg"
+
+        **Vì sao sai:** Mẫu đổi cơ số là logarit của cơ số a; ln cơ số e, lg cơ số 10.
+
+        **Tự sửa:** Viết công thức đổi cơ số trước khi bấm máy. [Làm lại câu B19-P05](../luyen-tap/?item=THPT-G11-CHVI-B19-P05).
+
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 19 (trang in 10–15).</p>
