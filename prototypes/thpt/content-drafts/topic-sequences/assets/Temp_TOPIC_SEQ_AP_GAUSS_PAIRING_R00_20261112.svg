@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 310" role="img" aria-labelledby="title desc">
+<title id="title">Ghép cặp đầu cuối để tính tổng cấp số cộng</title>
+<desc id="desc">Dãy 1,2,3,4,5,6,7,8 có bốn cặp đối xứng: (1,8),(2,7),(3,6),(4,5). Mỗi cặp có tổng 9 nên cả dãy có tổng 36. Với n số hạng cấp số cộng, Sn=n(u1+un)/2.</desc>
+<rect width="740" height="310" fill="#fff" stroke="#94a3b8"/>
+<g font-family="Arial,sans-serif" font-size="26" fill="#0f172a" text-anchor="middle"><text x="82" y="70">1</text><text x="166" y="70">2</text><text x="250" y="70">3</text><text x="334" y="70">4</text><text x="418" y="70">5</text><text x="502" y="70">6</text><text x="586" y="70">7</text><text x="670" y="70">8</text></g>
+<g fill="none" stroke-width="3"><path d="M82 82 Q376 244 670 82" stroke="#0369a1"/><path d="M166 82 Q376 207 586 82" stroke="#be123c"/><path d="M250 82 Q376 171 502 82" stroke="#15803d"/><path d="M334 82 Q376 128 418 82" stroke="#7c3aed"/></g>
+<g font-family="Arial,sans-serif" font-size="17" fill="#0f172a" text-anchor="middle"><text x="370" y="228">4 cặp, mỗi cặp 9 ⇒ S₈=4×9=36</text><text x="370" y="274">Sₙ=n(u₁+uₙ)/2</text></g>
+</svg>
