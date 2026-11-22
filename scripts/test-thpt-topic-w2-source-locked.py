@@ -51,6 +51,11 @@ def project_svg(md: str) -> str:
         filename = m.group(1).split("/")[-1]
         return f"](../../../assets/visuals/{filename})"
     projected = re.sub(r"\]\(([^)\n]+\.svg)\)", replace_svg, md)
+    # Use the same native Golden details syntax as approved CĐ01–05.
+    # Only removes a legacy CSS class and merges the summary tag line.
+    projected = re.sub(
+        r'<details class="slm-topic-first-try" markdown="1">\s*<summary>([^<]*)</summary>',
+        r'<details markdown="1"><summary>\1</summary>', projected)
     def escape_details(m: re.Match[str]) -> str:
         body = re.sub(r"<(?!/?summary\b)", "&lt;", m.group(2))
         return m.group(1) + body + m.group(3)
