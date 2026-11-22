@@ -84,7 +84,7 @@
     
     Trong mô hình xét nghiệm giả định, độ nhạy s=P(+|A), độ đặc hiệu c=P(−|không A), giả dương f=1−c. Nhóm có đặc điểm hiếm có thể cho ít dương thật hơn dương giả trong nhóm đông. Đây là mô hình xác suất, không phải chẩn đoán cá nhân.
     
-    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHVI-B19-BAYES-R02.svg" alt="10.000 bản ghi giả định: 90 dương thật,495 dương giả,10 âm giả,9405 âm thật."/><figcaption>Mẫu dương 585; mẫu âm 9415. Khi biết dương hoặc âm, chọn đúng cột tương ứng.</figcaption></figure>
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHVI-B19-BAYES-R02.svg" alt="10.000 bản ghi giả định: 170 dương thật,490 dương giả,30 âm giả,9310 âm thật."/><figcaption>Mẫu dương 660; mẫu âm 9340. Khi biết dương hoặc âm, chọn đúng cột tương ứng.</figcaption></figure>
     
     **Vận dụng.** Trong 1000 phép thử giả định: 5% có đặc điểm, độ nhạy 80%, đặc hiệu 90%. Tính P(có đặc điểm|dương).
     
@@ -240,7 +240,7 @@
 
     ### 3.5. Dương thật và dương giả
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B19-O05"><p><strong>Đề bài:</strong> Giả định 10.000 phép thử, tỷ lệ nền 1%, nhạy 90%, đặc hiệu 95%. Tính hậu nghiệm khi dương.</p><p><strong>Phân tích:</strong> Trong nhóm 100 có đặc điểm, 90 dương; trong 9900 không, 495 dương.</p><p><strong>Lời giải:</strong> \(90/(90+495)=2/13\).</p><p><strong>Kiểm lại:</strong> Kết quả ≈15,38%, không phải 90%. Bài minh họa tỷ lệ nền, không phải đánh giá y khoa; khi gặp câu tương tự trong ngân hàng hãy tự giải lại.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B19-O05"><p><strong>Đề bài:</strong> Giả định 10.000 phép thử, tỷ lệ nền 2%, nhạy 85%, đặc hiệu 95%. Tính hậu nghiệm khi dương.</p><p><strong>Phân tích:</strong> Trong nhóm 200 có đặc điểm, 170 dương; trong 9800 không, 490 dương.</p><p><strong>Lời giải:</strong> \(170/(170+490)=17/66\).</p><p><strong>Kiểm lại:</strong> Kết quả ≈25,76%, không phải 85%. Đây chỉ là mô hình xác suất, không phải đánh giá y khoa.</p></div>
 
     ### 3.6. Ba nguồn
     
