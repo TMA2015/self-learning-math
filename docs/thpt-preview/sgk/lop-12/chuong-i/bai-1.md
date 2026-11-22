@@ -25,7 +25,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        So sánh hai đầu vào theo thứ tự, không nhìn dấu của f. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b01-c01)
+        So sánh hai đầu vào theo thứ tự, không nhìn dấu của f. <a href="../luyen-tap/#thpt-g12-chi-b01-c01">Luyện lại câu tương ứng</a>
 
     ### 1.2. Đọc dấu đạo hàm
     
@@ -43,7 +43,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Chọn một giá trị thử ở mỗi khoảng, không chỉ giải phương trình. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b01-p02)
+        Chọn một giá trị thử ở mỗi khoảng, không chỉ giải phương trình. <a href="../luyen-tap/#thpt-g12-chi-b01-p02">Luyện lại câu tương ứng</a>
 
     ### 1.3. Không nối qua điểm loại
     
@@ -61,7 +61,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không gộp hai khoảng; thử x=2,4 để phát hiện sai. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b01-p01)
+        Không gộp hai khoảng; thử x=2,4 để phát hiện sai. <a href="../luyen-tap/#thpt-g12-chi-b01-p01">Luyện lại câu tương ứng</a>
 
     ### 1.4. Đỉnh và đáy
     
@@ -81,7 +81,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đọc dấu theo chiều x tăng. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b01-c03)
+        Đọc dấu theo chiều x tăng. <a href="../luyen-tap/#thpt-g12-chi-b01-c03">Luyện lại câu tương ứng</a>
 
     ### 1.5. Điểm dừng chưa chắc cực trị
     
@@ -99,7 +99,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không kết luận chỉ từ f′=0; kiểm hai phía. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b01-c04)
+        Không kết luận chỉ từ f′=0; kiểm hai phía. <a href="../luyen-tap/#thpt-g12-chi-b01-c04">Luyện lại câu tương ứng</a>
 
     ### 1.6. Từ dấu vận tốc đến chiều đi
     
@@ -117,7 +117,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Giới hạn t≥0, không nhầm vị trí với vận tốc. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b01-a01)
+        Giới hạn t≥0, không nhầm vị trí với vận tốc. <a href="../luyen-tap/#thpt-g12-chi-b01-a01">Luyện lại câu tương ứng</a>
 
 === "Kiến thức SGK"
 
@@ -172,38 +172,50 @@
     
     ??? tip "Cách tự sửa"
     
-        So sánh hai đầu vào theo thứ tự, không nhìn dấu của f. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b01-c01).
+        **Vì sao dễ sai:** Khi x tăng, kết luận tăng/giảm phải dựa vào cách thay đổi giá trị f(x), không dựa vào dấu của chính f(x); một hàm âm vẫn có thể tăng.
+
+        **Tự sửa:** So sánh hai đầu vào theo thứ tự, không nhìn dấu của f. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b01-c01">Core/Luyện tập</a>.
 
     ### 4.2. Đọc dấu đạo hàm
     
     ??? tip "Cách tự sửa"
     
-        Chọn một giá trị thử ở mỗi khoảng, không chỉ giải phương trình. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b01-p02).
+        **Vì sao dễ sai:** Dấu của f' cho chiều biến thiên trên mỗi khoảng; xem duy nhất nghiệm f'=0 mà không lập dấu hai phía không xác định được hướng.
+
+        **Tự sửa:** Chọn một giá trị thử ở mỗi khoảng, không chỉ giải phương trình. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b01-p02">Core/Luyện tập</a>.
 
     ### 4.3. Không nối qua điểm loại
     
     ??? tip "Cách tự sửa"
     
-        Không gộp hai khoảng; thử x=2,4 để phát hiện sai. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b01-p01).
+        **Vì sao dễ sai:** Định lí dấu đạo hàm dùng trên khoảng nằm trong miền xác định; đi xuyên qua điểm loại bỏ có thể làm kết luận sai khi chọn hai giá trị từ hai nhánh.
+
+        **Tự sửa:** Không gộp hai khoảng; thử x=2,4 để phát hiện sai. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b01-p01">Core/Luyện tập</a>.
 
     ### 4.4. Đỉnh và đáy
     
     ??? tip "Cách tự sửa"
     
-        Đọc dấu theo chiều x tăng. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b01-c03).
+        **Vì sao dễ sai:** Cực đại địa phương xảy ra khi hàm tăng rồi giảm; cực tiểu khi giảm rồi tăng, không chỉ vì có một giá trị lớn trên hình.
+
+        **Tự sửa:** Đọc dấu theo chiều x tăng. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b01-c03">Core/Luyện tập</a>.
 
     ### 4.5. Điểm dừng chưa chắc cực trị
     
     ??? tip "Cách tự sửa"
     
-        Không kết luận chỉ từ f′=0; kiểm hai phía. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b01-c04).
+        **Vì sao dễ sai:** f'(x0)=0 mới là ứng viên cực trị cho hàm khả vi; với x³ đạo hàm không đổi dấu nên không hề có cực trị tại 0.
+
+        **Tự sửa:** Không kết luận chỉ từ f′=0; kiểm hai phía. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b01-c04">Core/Luyện tập</a>.
 
     ### 4.6. Từ dấu vận tốc đến chiều đi
     
     ??? tip "Cách tự sửa"
     
-        Giới hạn t≥0, không nhầm vị trí với vận tốc. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b01-a01).
+        **Vì sao dễ sai:** Vận tốc s'(t) có dấu mô tả chiều đi trong miền thời gian hợp lệ; vị trí s(t) có thể dương khi vật đang chuyển động theo chiều âm.
 
-    [Core Bài 1](../luyen-tap/#b01-core) · [Luyện tập, Vận dụng, Tự luận](../luyen-tap/#b01-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b01-help) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+        **Tự sửa:** Giới hạn t≥0, không nhầm vị trí với vận tốc. Sau khi kiểm lại lý do, tự giải một câu khác trong <a href="../luyen-tap/#thpt-g12-chi-b01-a01">Core/Luyện tập</a>.
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 5–14.*
+    **Học tiếp:** <a href="../luyen-tap/#b01-core">Core Bài 1</a> · <a href="../luyen-tap/#b01-practice">Luyện tập, Vận dụng, Tự luận</a> · <a href="../luyen-tap/#b01-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
+
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 1 (trang in 5–14). SBT cùng bộ được đối chiếu ở gói nguồn lịch sử; trang in khác chỉ số trang PDF.</p>
