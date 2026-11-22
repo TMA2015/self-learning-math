@@ -52,7 +52,11 @@ assert(js.includes("golden.bindDialog")&&js.includes("golden.renderNav")&&js.inc
 assert(read(paths[1]).includes("data-topic01-practice-start")&&read(paths[1]).includes("data-topic01-practice-end"),"Missing public Practice source shelf markers");
 assert(js.includes("data-topic01-module-layout")&&js.includes("aria-selected"),"Missing accessible adaptive knowledge tabs");
 assert(js.includes("math-lab/models/slm-top01-truth-01/"),"Missing optional existing Math Lab link");
-assert(!/localStorage|sessionStorage|indexedDB|\bfetch\s*\(|XMLHttpRequest|WebSocket/.test(js),"Topic UI unexpectedly writes user data");
+assert(!/localStorage|sessionStorage|indexedDB|XMLHttpRequest|WebSocket/.test(js),"Topic UI unexpectedly writes user data");
+assert.equal((js.match(/\bfetch\s*\(/g)||[]).length,1,"Only one same-origin read of existing public practice source");
+assert(js.includes('new URL("../luyen-tap/",location.href)')&&js.includes('url.origin!==location.origin')&&js.includes('url.pathname.endsWith("/chuyen-de/cd01/luyen-tap/")')&&js.includes('fetch(url,{method:"GET",credentials:"omit",redirect:"error"})'),"Q16 public-only source read must remain exact and credential-free");
+assert(js.includes('PUBLIC_REPLAY_ONLY:')&&js.includes("bank.size!==24")&&js.includes('dataset.thptCanonicalSolution=q.id'),"Selfcheck answer must resolve only current approved canonical ID");
+assert(read(paths[2]).includes("data-topic01-selfcheck-start")&&read(paths[2]).includes("data-topic01-selfcheck-end"),"Public replay source delimiters missing");
 if(process.argv.includes("--built")){
  let count=0;
  for(const site of ["site","site-thpt-preview"]){

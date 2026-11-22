@@ -5,10 +5,11 @@ hide:
 
 <div class="thpt-r4-screen topic01-release-nav" data-thpt-r4>
   <p class="thpt-r4-eyebrow">HỌC THEO CHUYÊN ĐỀ · CĐ01 · TOÁN THPT</p>
-  <nav class="thpt-r4-topic-steps" aria-label="Ba phần học của Chuyên đề 01">
-    <a href="../kien-thuc/">01 · Kiến thức</a>
-    <a href="../luyen-tap/" aria-current="page">02 · Luyện tập</a>
-    <a href="../tu-kiem-tra/">03 · Tự kiểm tra</a>
+  <nav class="thpt-sgk-lesson-nav" aria-label="Ba phần học của Chuyên đề 01">
+    <span class="thpt-sgk-nav-unavailable" aria-disabled="true">← Chuyên đề trước</span>
+    <span class="thpt-sgk-nav-unavailable" aria-disabled="true">Chuyên đề sau →</span>
+    <a href="../kien-thuc/">Kiến thức</a>
+    <a href="../tu-kiem-tra/">Tự kiểm tra</a>
   </nav>
   <p class="topic01-back"><a href="../../">← Tổng quan các Chuyên đề</a></p>
   
