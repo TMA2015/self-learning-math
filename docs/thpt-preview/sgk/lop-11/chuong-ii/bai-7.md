@@ -28,7 +28,7 @@
 
         **Dấu hiệu:** Em ghi \(q=3\) vì chỉ nhìn giá trị tuyệt đối, hoặc thấy \(|u_n|\) lớn dần rồi kết luận \(u_n\) tăng.
 
-        **Tự sửa:** Kiểm \(u_{n+1}=qu_n\) **cả dấu** trước khi kết luận. Ôn mục 2.1; luyện Core dãy \(5,15,45,135,\ldots\) và Practice \(u_n=7(-2)^{n-1}\) tại [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Kiểm \(u_{n+1}=qu_n\) **cả dấu** trước khi kết luận. Ôn mục 2.1; luyện Core dãy \(5,15,45,135,\ldots\) và Practice \(u_n=7(-2)^{n-1}\) tại <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
     ### 1.2. Vì sao số mũ ở vị trí thứ \(n\) là \(n-1\)?
 
@@ -48,7 +48,7 @@
 
         **Dấu hiệu:** Em tính \(5\cdot2^5=160\) hoặc dùng dạng \(u_1+(n-1)d\) của cấp số cộng.
 
-        **Tự sửa:** Đếm số mũ từ \(n=1\) bằng \(0\); ôn mục 2.2, luyện Core \(u_1=4,q=2\) tìm \(u_6\) và Practice tìm \(q,u_1\) từ hai vị trí của cấp số nhân tại [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Đếm số mũ từ \(n=1\) bằng \(0\); ôn mục 2.2, luyện Core \(u_1=4,q=2\) tìm \(u_6\) và Practice tìm \(q,u_1\) từ hai vị trí của cấp số nhân tại <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
     ### 1.3. Ba số hạng liên tiếp và điều kiện về dấu
 
@@ -68,7 +68,7 @@
 
         **Dấu hiệu:** Em lấy ngay căn dương \(x=6\) hoặc quên điều kiện công bội \(q>0\).
 
-        **Tự sửa:** Tìm hai khả năng từ \(x^2=ac\), rồi **thử tỉ số liên tiếp với dấu**. Ôn mục 2.2; luyện Core ba số hạng dương \(2,x,18\) và Practice \(9,x,1\) có điều kiện dương ở [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Tìm hai khả năng từ \(x^2=ac\), rồi **thử tỉ số liên tiếp với dấu**. Ôn mục 2.2; luyện Core ba số hạng dương \(2,x,18\) và Practice \(9,x,1\) có điều kiện dương ở <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
     ### 1.4. Trừ hai tổng để thấy công thức tổng cấp số nhân
 
@@ -88,7 +88,7 @@
 
         **Dấu hiệu:** Em bỏ dấu âm trong \((-2)^4\), hoặc mặc định tổng của cấp số nhân phải dương.
 
-        **Tự sửa:** Liệt kê ít nhất hai số đầu để giữ đúng dấu; ôn mục 2.3, luyện Core tổng \(u_1=3,q=2\) và Practice tổng với \(q=-2\) ở [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Liệt kê ít nhất hai số đầu để giữ đúng dấu; ôn mục 2.3, luyện Core tổng \(u_1=3,q=2\) và Practice tổng với \(q=-2\) ở <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
     ### 1.5. Không được chia cho \(1-q\) khi \(q=1\)
 
@@ -108,7 +108,7 @@
 
         **Dấu hiệu:** Em kết luận tổng vô nghiệm, hoặc bấm \(0/0\) khi \(q=1\).
 
-        **Tự sửa:** Đặt riêng trường hợp \(q=1\), dùng \(S_n=nu_1\). Ôn mục 2.3 và luyện Practice cấp số nhân \(u_1=8,q=1\) tính \(S_9\) tại [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Đặt riêng trường hợp \(q=1\), dùng \(S_n=nu_1\). Ôn mục 2.3 và luyện Practice cấp số nhân \(u_1=8,q=1\) tính \(S_9\) tại <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
     ### 1.6. Ứng dụng: tổng của nhiều kỳ tăng trưởng
 
@@ -133,7 +133,7 @@
 
         **Dấu hiệu:** Em trả lời \(162{,}24\) cho cả tổng ba năm, hoặc dùng số mũ \(3\) cho năm thứ ba.
 
-        **Tự sửa:** Ghi riêng \(u_n\) (một năm) và \(S_n\) (tổng từ năm 1 đến n); đánh dấu **hai khoảng tăng** đến năm thứ ba. Ôn mục 2.2–2.3, luyện Practice mô hình nhân đôi số lượng theo giờ ở [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ghi riêng \(u_n\) (một năm) và \(S_n\) (tổng từ năm 1 đến n); đánh dấu **hai khoảng tăng** đến năm thứ ba. Ôn mục 2.2–2.3, luyện Practice mô hình nhân đôi số lượng theo giờ ở <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
 === "Kiến thức SGK"
 
@@ -259,7 +259,7 @@
 
         **Vì sao sai:** Cấp số nhân có phép nhân không đổi. Công bội âm làm đổi dấu số hạng và có thể khiến dãy không đơn điệu.
 
-        **Tự sửa:** Ôn mục 2.1, kiểm \(u_{n+1}=qu_n\) với dấu nguyên vẹn; luyện Core \(5,15,45,135\) rồi Practice \(7(-2)^{n-1}\) ở [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.1, kiểm \(u_{n+1}=qu_n\) với dấu nguyên vẹn; luyện Core \(5,15,45,135\) rồi Practice \(7(-2)^{n-1}\) ở <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B07-02" hidden></span>
 
@@ -269,7 +269,7 @@
 
         **Vì sao sai:** Định nghĩa gốc là **nhân** \(u_{n+1}=qu_n\), không phải chia bắt buộc. Công bội \(q=0\) vẫn hợp lệ.
 
-        **Tự sửa:** Ôn mục 2.1, dùng \(u_{n+1}=0u_n\) và giải lại Practice dãy \(3,0,0,\ldots\) ở [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.1, dùng \(u_{n+1}=0u_n\) và giải lại Practice dãy \(3,0,0,\ldots\) ở <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B07-03" hidden></span>
 
@@ -279,7 +279,7 @@
 
         **Vì sao sai:** Trong cấp số nhân, mỗi kỳ nhân với **giá trị kỳ trước**; từ vị trí \(1\) đến \(n\) có \(n-1\) phép nhân.
 
-        **Tự sửa:** Ôn mục 2.2, liệt kê ba bước đầu và giải Core \(u_1=4,q=2\) tìm \(u_6\) ở [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2, liệt kê ba bước đầu và giải Core \(u_1=4,q=2\) tìm \(u_6\) ở <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
     <span data-thpt-help-id="HELP-G11-B07-04" hidden></span>
 
@@ -289,7 +289,7 @@
 
         **Vì sao sai:** Công thức thương chỉ được dùng khi \(q\ne1\). Với \(q=1\), mọi số hạng bằng \(u_1\), tổng bằng \(nu_1\).
 
-        **Tự sửa:** Ôn mục 2.3 và Ví dụ 3.3–3.4; luyện Practice \(u_1=8,q=1\) tính \(S_9\) rồi \(u_1=2,q=-2\) tính \(S_5\) ở [Luyện tập Bài 7](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.3 và Ví dụ 3.3–3.4; luyện Practice \(u_1=8,q=1\) tính \(S_9\) rồi \(u_1=2,q=-2\) tính \(S_5\) ở <a href="../luyen-tap/">Luyện tập Bài 7</a>.
 
     <span data-thpt-help-id="HELP-G11-B07-05" hidden></span>
 
@@ -299,8 +299,8 @@
 
         **Vì sao sai:** Công bội có thể âm; một phương trình bình phương chỉ chứng minh điều kiện cần của bộ ba. Với số \(0\), phải kiểm định nghĩa nhân trực tiếp.
 
-        **Tự sửa:** Ôn mục 2.2, Ví dụ 3.5 rồi luyện Core ba số dương \(2,x,18\) và Practice \(9,x,1\) có ràng buộc dương ở [Bài 7 – Luyện tập](../luyen-tap/).
+        **Tự sửa:** Ôn mục 2.2, Ví dụ 3.5 rồi luyện Core ba số dương \(2,x,18\) và Practice \(9,x,1\) có ràng buộc dương ở <a href="../luyen-tap/">Bài 7 – Luyện tập</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương II](../../../../thu-vien/tu-luan-g11-chuong-ii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-ii/">Tự luận Chương II</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 7 (trang in 52–55).</p>
