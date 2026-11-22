@@ -1,0 +1,58 @@
+# G11 SGK Chương I B01–B04 · R04 · AUTHOR_SELF_QA_RECEIPT · 22/11/2026
+
+PACKET_ID: G11-SGK-CHI-B01-B04-R04
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+LEARNING_PATH: SGK_CHAPTER
+RELEASE_SCOPE: FULL_LEARNING_PATH
+AUTHOR_SELF_QA_RECEIPT: YES_COMPLETE_CHANGED_SCOPE
+SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHI_B01_B04_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
+SOURCE_BLOB: 1458d77706cea3d61602e8961e86fd187c2d0331
+S1_RECEIPT: HISTORICAL_G11_CHI_R03_DIRECT_OWNER_S1_SOURCE_LOCK_PRESERVED_PLUS_CURRENT_B02_B04_SGK_PAGE_TEXT_RECONCILIATION_NOT_NEW_DIRECT_G11_PDF_SCAN
+OUTCOME_AUDIT: 26_REGISTERED_RD0_OUTCOMES_4_LESSONS_B01_IMMUTABLE_R03_B02_B04_CHANGED_SELF_QA
+MATH_VERIFICATION: 47_OF_47_RECOMPUTED_B02_B04_EXAMPLES_FIRSTTRIES_AND_WRITTEN_PLUS_5_OF_5_NEW_FIRST_TRIES
+PED_VERIFICATION: 28_OF_28_BASELINE_SOURCE_ASSERTIONS_PLUS_19_OF_19_FINAL_REGISTER_ASSERTIONS_29_UNSCORED_FIRSTTRIES_FOUR_GOLDEN_TABS_EACH
+CANONICAL_Q15: 46_PUBLIC_UNIQUE_IDS_42_REVIEWED_CORE_PRACTICE_UNCHANGED_4_SHARED_WRITTEN_ONE_ID_ONE_ANSWER_26_OUTCOMES
+ASSESSMENT_Q16: CLIENT_SELF_CHECK_NO_MASTERY_PUBLIC_SELF_CHECK_NO_PRIVATE_RD1_EXPOSURE_NO_AUTO_MASTERY
+AUTHOR_SIGNOFF: AUTHOR_SELF_VERIFIED_ALL_CHANGED_R04_G11_CHI_MATH_PED_Q01_Q18_A1_A7_ON_EXACT_SOURCE
+P0: 0
+P1: 0
+P2: 0
+INDEPENDENT_REVIEW_CURRENT_R04: NOT_CLAIMED
+BLOCKERS: NONE_AUTHORING_SCOPE
+RELEASE_AUTHORIZATION: NO
+MASTERY_ACTIVATION: NO
+
+## S1 authority and scope confidence (A1, A2, Q01, Q02)
+
+Official academic authority **SGK Toán 11 Kết nối tri thức Tập một** Chương I printed B01 p5–16, B02 p17–21, B03 p22–30, B04 p31–39, end p40–41; **SBT Tập một** B01 p4–7, B02 p8–10, B03 p11–18, B04 p19–24, end p25–30. These printed page ranges and direct-original-PDF content custody belong to immutable earlier author/reviewer R01–R03 source receipts and handoff (original review source blob `256ceb5edc5e02aec320e83e99c8e08e035654f3`, composite independent receipt blob `4a7831cea1738a0d57f3e60bf6791f995aa693d8`). **Owner original grade-11 PDF bytes were not provided or rescreened this round**. R04 changed B02–B04 has independently verified mathematics, and checked printed-page outlines/exercise families against accessible SGK searchable source texts; that is additional *secondary S1 text reconciliation*, not a claim to inspect publisher's source pages anew. Historical original S1 custody is unchanged, no mandatory Core family newly invented. If a future primary edition conflicts, targeted affected outcome returns for Q01 Delta review; this receipt does not counterfeit printed-page custody or the original reviewer.
+
+## Math, conditions and actual learner FirstTry/repairs (Q03–Q08/PED1–PED6)
+
+- **B01 original preserved** learner Git `0603fbb2b61374fcd49eff3c119197cff3fa77e4`: original independently reviewed 6 FirstTry and six RD0 outcomes, unit-circle prerequisites, angle/radian/coterminal and arc-length; no R04 correction, no unnecessary review/re-sign as new independent.
+- **B02 R04 source** `56eb6c1596c8759d692abc0aedd682ccac347c92`: SGK p17–21 sum/difference, double angle including `tan` conditions, product→sum, sum→product; five FirstTry all after concept setup/before formal, five local remediation and two global misconceptions, six worked examples. Independently verified phone key 4 `770 Hz+1209 Hz` formula `y(t)=sin(1540πt)+sin(2418πt)=2sin(1979πt)cos(439πt)`; two harmonic cos waves (A=3√2, phase π/12). One original SVG answer-bearing use placed inside learner-controlled answer reveal; original second use is a normal formal illustration.
+- **B03 R04 source** `21bf7eb3f31d2ac03a0bb7dd326b0e42bbb849de`: full formal domain/range, parity, period (definition requires equality for all x), sin/cos/tan/cot graphs, asymptotes and monotonic branch restrictions, breathing/temperature models. Six worked D2. Five previous conceptual FirstTry and one original modeling, plus **three new** source-owned canonical FirstTry `THPT-G11-B03-TRY07` PERIOD, TRY08 TAN_GRAPH, TRY09 COT_GRAPH with hidden correct comparisons and exact P03/P06/P07 practice help; **nine unique TRY IDs cover eight outcomes**. The new period example `cos(3x)` has T=2π/3, and T=π/3 fails at x=0; tan increases only between asymptotes, cot decreases only on each valid branch.
+- **B04 R04 source** `ab85fe8e35d6edfffe2039c28d1d82a5e625713c`: equivalence/validity, sin/cos/tan/cot general solutions with intervals/parameter limits and DEG/RAD, plus practical projected angle/time examples. Nine worked D2. Seven prior TRY records, plus **two new** exact source-owned `THPT-G11-B04-TRY08` TAN_EQ and TRY09 INTERVAL, every new case with opt-in comparison and actual P03/P06/P07 corrective route, **nine unique TRY IDs cover eight outcomes**. Test `tan x=√3` has x=π/3,4π/3 on [0,2π); test `cos x=−1/2` has 2π/3,4π/3 in [0,2π) and the results do not change if endpoint 2π is included.
+- **D1** formula conditions nonzero tan/cot denominators, both solutions sin/cos and only one generalized tan/cot family, period exclusions, open vs closed interval. **D2** B02/B03/B04 6/6/9 worked examples, B01 old reviewed source preserved; each changed example explains choice, works, checks results. **D3** original C/P bank = 42 distinct records with unique IDs from two unchanged reviewed JS files (blobs `0997ea27178ef59a29ef33018224fc98b2afc6ae`, `9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0`). **D4** four unique shared Written canonical IDs, two Anchor merely label; four 7-step historical scoring guides have been compressed/rebalanced to five 1-point evaluable steps **without changing question/stem/key/solution/hint**. Exact source Written blob `7b1d42e16314509144be9227fa2abd76789738af`, rubric sums `W01=5,W02=5,W03=5,W04=5`. This is a **material scoring rubric Delta-C** signed via author self-QA, not claimed unchanged historical independent PASS.
+- **D5** exact six original SVG source blobs and reader alt/captions/titles/desc: B01 unit circle, B02 30/60/90°, B03 sin/cos/tan/cot plots; figure helps students read position, asymptotes and correct angles. **D6** student-specific mistakes: formula sign, quadrant, periodic angle, forbidden tan/cot poles, separating infinite equation from interval, false extra roots; new 5 local repair loops to existing C/P cards. There are 29 distinct concept-first FirstTry ids across chapter (B01/B02/B03/B04=6/5/9/9), all self-revealed rather than scored mastery.
+- **PED1 motivation:** SGK digital delay sound, breathing/temperature, periodicity, projectile or Moon illuminated fraction; **PED2 prerequisites:** angle, unit circle, amplitude, graph and simple equation; **PED3 meaning before formula:** geometric rotation, periodic graphs, intersections as equation roots; **PED4** correctly guided SVG reading; **PED5** reasoned method/condition and check after work; **PED6** attempt before correction, local cue and actual recovery path. No new mandatory Topic Core; independent SGK self-learning path preserved.
+
+## Q15 one canonical and Q16 safety
+
+46 original public IDs from registered R03 handoff (42 C/P +4 Written/Anchor), all identifiers appear once in one original question source. New 5 FirstTry IDs live exactly once as **public unscored self-attempt prompts in the existing learner**, with one response/solution/help under its original ID, not copied into practice/END. No private RD1 source uploaded. Historical 20 private held-out items owner-held SHA256 `b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107` remain off public GitHub. Existing public end-of-chapter copy is a voluntary client self-check even if derived from historical seeds and must not be described as still independently held-out. `CLIENT_SELF_CHECK_NO_MASTERY`, no official learner skill evidence. All JS/runtime, deployment and Final Submit/no-before-submit leak testing is RELEASE duty; author Q16 signoff is on exposure metadata and absence of private content, not browser QA.
+
+## Reproducible finite QA and Delta ledger
+
+- Baseline older B02/B03/B04 draft source receipts `PR#989/#991/#992` each contained scoped author academic/PED QA. Current **one consolidated ChI branch PR #989** imports the exact canonical B03/B04 prose from original R02 PR heads, changing only link Markdown syntax to equivalent HTML anchors (B02 8, B03 13, B04 14) and adding five missing-outcome FirstTry/repair chains. Per-file exact syntax equivalent verified on old source blobs for existing link labels and hrefs. Main Markdown dependency check treats MkDocs clean URLs as absent filesystem folders, so source-equivalent HTML link syntax is required for CI without editing website JS or link target.
+- Independent finite mathematical test cases conducted in current work: **47/47 baseline math scenarios** across B02–B04 and four Written, plus **5/5 new FirstTry targeted math** (period, tan/cot branches, tan equation, cos interval), 19/19 global canonical/structure tests, 28/28 original learner static source checks. Numeric and hand algebra checks include sin/cos addition, double angle, identities, phone/harmonics, graph domain/monotonic, tangential root branches, interval completeness, and all W solutions. Source signoff is based on actual reasoning/readability in addition to assertions; finite counts are not a replacement for mathematical/PED evidence.
+- **Scope material Delta-C:** B02 4-tab enrichment, five FirstTry and explanation, phone and harmonic; B03 6 complete formal sections and 3 targeted new FirstTry; B04 6 formal sections and 2 targeted new FirstTry; **four shared Written rubric allocations** (all current W /5). No original C/P or image bytes changed; B01 lesson no R04 material delta. **Scope source-equivalent Delta-B:** 35 existing MkDocs clean-URL Markdown links replaced by equal-display equal-href HTML anchors across B02–04 (8+13+14), no academic content changed by this markup alone. Historical R03 reviewer source `256ceb5edc5e02aec320e83e99c8e08e035654f3` and receipt `4a7831cea1738a0d57f3e60bf6791f995aa693d8` remain immutable; current R04 **self-verification** applies to exact current SHA bundle only.
+- P0/P1 for author-changed source have been closed by these fixes and checks; no unresolved mathematics, condition, item, rubric, source known in the R04 audited scope. `AUTHOR_SIGNOFF=PASS`, `ACADEMIC_CONTENT_QA=AUTHOR_SELF_VERIFIED`, `PED_CONTENT_QA=AUTHOR_SELF_VERIFIED`, `MINIMAL_DELTA=NONE_AFTER_SOURCE_CHECK`. No claim that old R03 independent reviewer re-reviewed or certified new R04 source.
+
+## A1–A7, Q01–Q18, release separation
+
+A1 one current source SHA `1458d77706cea3d61602e8961e86fd187c2d0331` metadata for 15 exact original source paths. A2 original historical S1 PDF source receipt + current SGK text/outcome check with explicit lack of new PDF scan. A3 current R04 SOURCE self-verified academic and PED Q18 under same official v3.2.0, historical R03 independent reviewer unchanged. A4 26 outcome/46 public item register and 29 non-assessment FirstTry. A5 genuine D1–D6 and PED1–PED6 verified across affected chapters. A6 affected material rubric/TRY corrections closed before signoff, immutable baseline preserved. A7 protected owner-held original 20 RD1, public END client-only and no mastery.
+Every Q01–Q18 must map to exact source/receipt on the author V2 handoff; no invented extra quality standard.
+
+**AUTHOR_SIGNOFF: CONTENT_PASS_CURRENT_R04_SNAPSHOT; SOURCE_BLOB=1458d77706cea3d61602e8961e86fd187c2d0331; A1–A7=SIGNED; Q01–Q18=AUTHOR_SELF_VERIFIED; P0=0;P1=0.**
+**RELEASE_AUTHORIZATION: NO.** Old release PR #697 and existing R03 history remain separate; R04 cannot be deployed using mismatched source/receipt/runtime guards without owner-approved RELEASE AP/R/CI and Q16 browser. No merge/deploy.
