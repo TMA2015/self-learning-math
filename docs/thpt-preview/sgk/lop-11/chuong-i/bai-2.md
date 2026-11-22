@@ -1,6 +1,18 @@
 # Bài 2. Công thức lượng giác
 
-<div class="thpt-r4-screen" data-thpt-r4>
+<style>
+/* Scoped to the current B02 learner; neutral KEY_FORMULA per Golden semantic 3+1. */
+.md-typeset:has([data-g11-b02-authoring]) .thpt-r4-key-formula {
+  background: transparent; color: inherit; border: 1px solid #8c9ab0;
+  border-left: 4px solid #64748b; border-radius: 10px;
+  padding: .75rem 1rem; margin: .65rem 0 1rem; line-height: 1.65;
+}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b02-authoring]) .thpt-r4-key-formula {
+  background: transparent; color: inherit; border-color: #8c9ab0; border-left-color: #bdc8d8;
+}
+</style>
+
+<div class="thpt-r4-screen" data-thpt-r4 data-g11-b02-authoring>
 <p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG I · KẾT NỐI TRI THỨC</p>
 <p class="thpt-r4-lead">Từ hai góc đã biết đến góc tổng, góc hiệu; hiểu cách các công thức lượng giác được hình thành và dùng chúng để tính toán, biến đổi, mô tả tín hiệu tuần hoàn.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
@@ -190,23 +202,23 @@
 
     Cho \(a,b\) là hai góc thực. Mọi công thức dưới đây của sin và cos đều có nghĩa, không cần thêm điều kiện:
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Công thức cộng và trừ</strong><p>\(\cos(a-b)=\cos a\cos b+\sin a\sin b\)</p><p>\(\cos(a+b)=\cos a\cos b-\sin a\sin b\)</p><p>\(\sin(a+b)=\sin a\cos b+\cos a\sin b\)</p><p>\(\sin(a-b)=\sin a\cos b-\cos a\sin b\)</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức cộng</strong><p>\(\cos(a-b)=\cos a\cos b+\sin a\sin b\)</p><p>\(\cos(a+b)=\cos a\cos b-\sin a\sin b\)</p><p>\(\sin(a-b)=\sin a\cos b-\cos a\sin b\)</p><p>\(\sin(a+b)=\sin a\cos b+\cos a\sin b\)</p><p>\(\tan(a-b)=\dfrac{\tan a-\tan b}{1+\tan a\tan b}\)</p><p>\(\tan(a+b)=\dfrac{\tan a+\tan b}{1-\tan a\tan b}\)</p><p><strong>Điều kiện:</strong> hai công thức tan dạng phân số chỉ áp dụng khi \(\cos a\ne0\), \(\cos b\ne0\) và mẫu \(1\pm\tan a\tan b\) của từng công thức khác \(0\). Các công thức sin/cos đúng với mọi góc thực.</p></div>
 
-    Khi biểu thức có tan, ta viết \(\tan(a+b)=\dfrac{\tan a+\tan b}{1-\tan a\tan b}\) và \(\tan(a-b)=\dfrac{\tan a-\tan b}{1+\tan a\tan b}\) **chỉ khi** \(\cos a\ne0,\cos b\ne0\) và mẫu số tương ứng khác \(0\). Công thức tan ở dạng phân số không được áp dụng nếu một trong những điều kiện ấy bị vi phạm.
+    Hai công thức tan là thương của các công thức sin/cos tương ứng. Chính vì có phép chia, **phải kiểm điều kiện xác định trước khi thay số**; không thể suy rằng công thức tan đúng tại mọi góc như các công thức sin/cos.
 
     **Ghi nhớ cách nhận diện:** Góc được viết như \(75^\circ=45^\circ+30^\circ\) hoặc \(15^\circ=45^\circ-30^\circ\) thường gợi ý công thức cộng/trừ.
 
-    ### 2.2. Công thức nhân đôi và hạ bậc
+    ### 2.2. Công thức nhân đôi
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Công thức nhân đôi</strong><p>\(\sin2a=2\sin a\cos a\)</p><p>\(\cos2a=\cos^2a-\sin^2a=2\cos^2a-1=1-2\sin^2a\)</p><p>\(\tan2a=\dfrac{2\tan a}{1-\tan^2a}\), khi \(\cos a\ne0\) và \(1-\tan^2a\ne0\).</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức nhân đôi</strong><p>\(\sin2a=2\sin a\cos a\)</p><p>\(\cos2a=\cos^2a-\sin^2a=2\cos^2a-1=1-2\sin^2a\)</p><p>\(\tan2a=\dfrac{2\tan a}{1-\tan^2a}\), khi \(\cos a\ne0\) và \(1-\tan^2a\ne0\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Công thức hạ bậc</strong><p>\(\cos^2a=\dfrac{1+\cos2a}{2},\qquad \sin^2a=\dfrac{1-\cos2a}{2}\).</p><p>Các công thức hạ bậc là cách viết lại \(\cos2a=2\cos^2a-1=1-2\sin^2a\), không phải một nhóm công thức tách rời.</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức hạ bậc (suy từ nhân đôi)</strong><p>\(\cos^2a=\dfrac{1+\cos2a}{2},\qquad \sin^2a=\dfrac{1-\cos2a}{2}\).</p><p>Hai đẳng thức đúng với mọi \(a\in\mathbb R\), được suy trực tiếp từ \(\cos2a=2\cos^2a-1=1-2\sin^2a\).</p></div>
 
     **Chọn cách:** Biết \(\sin a\) thì dạng \(1-2\sin^2a\) thuận tiện để tính \(\cos2a\); biết \(\cos a\) thì dùng \(2\cos^2a-1\). Muốn tính \(\sin2a\), phải xác định đúng dấu của cả \(\sin a\) và \(\cos a\).
 
     ### 2.3. Công thức biến đổi tích thành tổng
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tích thành tổng</strong><p>\(2\cos a\cos b=\cos(a-b)+\cos(a+b)\)</p><p>\(2\sin a\sin b=\cos(a-b)-\cos(a+b)\)</p><p>\(2\sin a\cos b=\sin(a+b)+\sin(a-b)\)</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức biến đổi tích thành tổng</strong><p>\(2\cos a\cos b=\cos(a-b)+\cos(a+b)\)</p><p>\(2\sin a\sin b=\cos(a-b)-\cos(a+b)\)</p><p>\(2\sin a\cos b=\sin(a+b)+\sin(a-b)\)</p><p>Đúng với mọi góc thực \(a,b\); nếu cần dạng hệ số \(\tfrac12\), chia cả hai vế cho \(2\).</p></div>
 
     Tương đương, \(\cos a\cos b=\dfrac{\cos(a-b)+\cos(a+b)}2\), và tương tự cho hai công thức còn lại. Các đẳng thức đúng với mọi \(a,b\in\mathbb R\).
 
@@ -214,7 +226,7 @@
 
     ### 2.4. Công thức biến đổi tổng thành tích
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tổng thành tích</strong><p>\(\cos u+\cos v=2\cos\dfrac{u+v}{2}\cos\dfrac{u-v}{2}\)</p><p>\(\cos u-\cos v=-2\sin\dfrac{u+v}{2}\sin\dfrac{u-v}{2}\)</p><p>\(\sin u+\sin v=2\sin\dfrac{u+v}{2}\cos\dfrac{u-v}{2}\)</p><p>\(\sin u-\sin v=2\cos\dfrac{u+v}{2}\sin\dfrac{u-v}{2}\)</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức biến đổi tổng thành tích</strong><p>\(\cos u+\cos v=2\cos\dfrac{u+v}{2}\cos\dfrac{u-v}{2}\)</p><p>\(\cos u-\cos v=-2\sin\dfrac{u+v}{2}\sin\dfrac{u-v}{2}\)</p><p>\(\sin u+\sin v=2\sin\dfrac{u+v}{2}\cos\dfrac{u-v}{2}\)</p><p>\(\sin u-\sin v=2\cos\dfrac{u+v}{2}\sin\dfrac{u-v}{2}\)</p><p>Đúng với mọi góc thực \(u,v\).</p></div>
 
     Cả bốn công thức đúng với mọi \(u,v\in\mathbb R\). Hãy tính **nửa tổng và nửa hiệu** trước khi thay. Với cos, hiệu hai góc có thể âm nhưng \(\cos(-x)=\cos x\); với sin, dấu âm có thể làm đổi kết quả.
 
