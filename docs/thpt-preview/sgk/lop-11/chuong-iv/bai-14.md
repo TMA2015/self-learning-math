@@ -12,7 +12,7 @@
 
     ### 1.1. Mỗi điểm có một ảnh khi phương chiếu cắt mặt chiếu
 
-    Chọn một mặt phẳng \((P)\) và **phương chiếu** \(\Delta\) không song song \((P)\). Qua mỗi điểm M dựng đường thẳng theo phương \(\Delta\); đường ấy cắt P tại điểm duy nhất M', gọi là **hình chiếu song song** của M. Nếu M đã nằm trên P, ảnh của M chính là M. Không được chọn phương chiếu nằm song song với mặt: khi đó có những đường chiếu không gặp P.
+    Chọn mặt phẳng \((P)\) và đường chỉ phương \(\Delta\) **cắt \((P)\) tại đúng một điểm** (không nằm trong hay song song với mặt). Qua mỗi điểm \(M\) dựng đường thẳng cùng phương \(\Delta\); vì phương này không nằm trong phương của mặt phẳng nên đường đó cắt \((P)\) tại đúng một điểm \(M'\), gọi là **hình chiếu song song** của \(M\). Nếu \(M\in(P)\) thì \(M'=M\). Nếu phương chiếu song song với mặt, một đường chiếu qua điểm ngoài mặt không gặp mặt; nếu đường chỉ phương nằm ngay trong mặt, các đường chiếu của điểm ở mặt nằm trọn trong mặt nên không có giao điểm duy nhất. **Vì thế cần điều kiện cắt tại một điểm**, không chỉ nhìn hình mà đoán.
 
     **Vận dụng.** Nếu điểm A đã thuộc mặt chiếu \((P)\), khi chiếu theo phương không song song P, ảnh A' có thể khác A không? Giải thích.
 
@@ -20,7 +20,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** **Không.** Đường qua A theo phương chiếu cắt P ngay tại A; vì phương chiếu không song song P, giao điểm là duy nhất. Do đó **A'=A**: các điểm có sẵn trên mặt chiếu đều bất biến.
+        **Lời giải:** **Không.** Vì phương chiếu có phương cắt mặt chiếu tại đúng một điểm, đường chiếu qua A chỉ gặp \((P)\) ở A. Do đó **A'=A**: điểm đã nằm trên mặt chiếu bất biến. Nếu chọn một phương **nằm trong mặt**, đường chiếu qua A sẽ nằm trọn trong mặt và không xác định được một ảnh duy nhất.
 
     <span data-thpt-help-id="HELP-G11-B14-TRY01" hidden></span>
 
@@ -114,7 +114,7 @@
 
     ### 2.1. Khái niệm phép chiếu song song
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa:</strong> Cho mặt chiếu \((P)\) và phương chiếu \(\Delta\) **không song song \((P)\)**. Ảnh M' của M là giao điểm duy nhất của \((P)\) và đường thẳng đi qua M song song với phương \(\Delta\). Tập hợp các ảnh của các điểm một hình là hình chiếu song song của hình đó.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa:</strong> Cho mặt chiếu \((P)\) và đường chỉ phương \(\Delta\) **cắt \((P)\) tại một điểm duy nhất**. Với mỗi M, lấy đường thẳng qua M **cùng phương** \(\Delta\); đường này cắt \((P)\) tại một điểm duy nhất M'. Đó là hình chiếu song song của M. Điều kiện loại cả phương song song mặt lẫn đường chỉ phương nằm trong mặt; hai trường hợp ấy không định nghĩa được phép chiếu duy nhất cho mọi điểm.</div>
 
     **Điểm bất biến:** Nếu M đã thuộc P, M'=M. Các đường chiếu **cùng phương** nhưng không nhất thiết vuông góc mặt đích; vì vậy phép chiếu song song không đồng nghĩa phép chiếu vuông góc.
 
