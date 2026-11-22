@@ -6,9 +6,9 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED_SOURCE_ONLY
 SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVIII_B28_B30_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: bd887525eed15630916c877516b8d5fb751c91e4
+SOURCE_BLOB: 0dee68f712886dfdbd496834a29174a33e6934df
 Q18_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHVIII_B28_B30_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
-Q18_RECEIPT_BLOB: c5da4f4cb695509715071a84d86c81cfff1e8d95
+Q18_RECEIPT_BLOB: 2b12e8b2a650a1ab3250f175fff245aa4ce44575
 WRITTEN_W03_SHARED_LIBRARY_BLOB: e3d2bb89c88cb0a0a0932f42a32db8e9c8a7ab26
 PRIVATE_RD1: NOT_INCLUDED
 INDEPENDENT_NOTEBOOKLM_R04_VERDICT: NOT_RECEIVED
@@ -17,7 +17,7 @@ NO_DEPLOY: TRUE
 ## Prompt review (4 câu)
 
 1. Hãy phản biện độc lập học liệu **DELTA_C** Toán 11 SGK KNTT Tập hai Chương VIII B28–B30 và câu Written W03 đổi cách diễn đạt, dùng **đúng năm Permanent Sources THPT v2.1** (không chọn thêm bộ v2.0) cùng SGK/SBT S1 bản gốc, bám một chuẩn `SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18`, đối chiếu từng mục SGK theo **số trang in** và mỗi outcome.
-2. Kiểm độc lập tất cả 19 `FirstTry`, 20 worked examples, 39 câu Core/Practice ngân hàng gốc bất biến, 8 Written gốc, đặc biệt giả thiết đồng khả năng, hợp/giao/bù, xung khắc khác độc lập, đếm tổ hợp, giới hạn phần giao, sơ đồ cây nhân độc lập, bảng hai chiều không suy nhân quả, và **W03 bốn miền có tổng đúng 36**; ghi ID và phản ví dụ nếu phát hiện sai.
+2. Kiểm độc lập tất cả 20 `FirstTry`, 21 worked examples, 39 câu Core/Practice ngân hàng gốc bất biến, 8 Written gốc, đặc biệt giả thiết đồng khả năng, hợp/giao/bù, xung khắc khác độc lập, đếm tổ hợp, giới hạn phần giao, sơ đồ cây nhân độc lập, bảng hai chiều không suy nhân quả, và **W03 bốn miền có tổng đúng 36**; ghi ID và phản ví dụ nếu phát hiện sai.
 3. Trả Academic verdict và PED verdict theo từng bài/outcome/item kèm `SOURCE_RECEIPT` đối chiếu đúng ba Git learner blob SHA, riêng Written W03 shared-library blob và current author Q18 receipt blob dưới đây; nêu P0/P1/P2, nguyên nhân, `MINIMAL_DELTA` và đường khắc phục, tuyệt đối không tự coi phản biện nguồn R00 cũ là PASS của R04 mới.
 4. Giữ 20 RD1 chính thức kín ngoài nguồn công khai; xem 20 câu cuối chương đã lộ chỉ là `CLIENT_SELF_CHECK_NO_MASTERY` không phải `SGK_CHAPTER_READINESS`, không đưa kết quả tự kiểm thành quyền merge/deploy, không tạo chuẩn Q mới hoặc sao chép bản Temp thành học liệu canonical.
 
@@ -27,9 +27,9 @@ NO_DEPLOY: TRUE
 |---|---|---|
 | B28 | `docs/thpt-preview/sgk/lop-11/chuong-viii/bai-28.md` | `34cd865b3ac165b6510911c5a9019101b3473f56` |
 | B29 | `docs/thpt-preview/sgk/lop-11/chuong-viii/bai-29.md` | `7f9e8b4725a2b1595c73f14faa6e4f399b90b63d` |
-| B30 | `docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md` | `3f9225b353a7100dd42c96b4d5b69bca0977648c` |
+| B30 | `docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md` | `971262cc65ea2aee488de6144eefe973cbdb4693` |
 | Shared original Written W03 only | `docs/thpt-preview/thu-vien/tu-luan-g11-chuong-viii.md` | `e3d2bb89c88cb0a0a0932f42a32db8e9c8a7ab26` |
-| Author Q18 self-receipt | `prototypes/thpt/review-packets/G11_CHVIII_B28_B30_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md` | `c5da4f4cb695509715071a84d86c81cfff1e8d95` |
+| Author Q18 self-receipt | `prototypes/thpt/review-packets/G11_CHVIII_B28_B30_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md` | `2b12e8b2a650a1ab3250f175fff245aa4ce44575` |
 
 Đây là bản sao review phục vụ phản biện phần DELTA_C, không phải nguồn học sinh thứ hai. Các câu/đáp án/solution gốc vẫn thuộc đúng ngân hàng canonical trong học liệu hiện hành và hồ sơ source SHA; nội dung RD1 độc lập giữ ở chỗ chủ dự án nắm giữ, không có trong bản này.
 
@@ -477,7 +477,7 @@ NO_DEPLOY: TRUE
 
 ---
 
-## REVIEW SOURCE B30 BEGIN · 3f9225b353a7100dd42c96b4d5b69bca0977648c
+## REVIEW SOURCE B30 BEGIN · 971262cc65ea2aee488de6144eefe973cbdb4693
 
 # Bài 30. Công thức nhân xác suất cho hai biến cố độc lập
 
@@ -609,6 +609,34 @@ NO_DEPLOY: TRUE
 
         **Tự sửa:** Không suy rộng ra toàn dân nếu mẫu không đại diện. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C06">Luyện lại câu B30-C06</a>
 
+    ### 1.7. Tích hợp Chương VIII: giao, hợp, độc lập và biến cố đối
+
+    Bài 28 phân biệt **giao** (cùng xảy ra), **hợp** (ít nhất một), xung khắc và độc lập. Bài 29 cho thấy xác suất hợp phải **trừ phần giao** để không đếm hai lần. Chỉ khi Bài 30 có giả thiết hoặc chứng cứ **độc lập** mới được nhân \(P(A)P(B)\) để tìm giao. Khi đề đã cho số liệu phần giao, hãy dùng chúng để *kiểm độc lập* chứ không tự giả định.
+
+    **Vận dụng — Tự thử tích hợp trước Core.** Chọn ngẫu nhiên một trong **1 000 người** được khảo sát, tất cả có khả năng được chọn như nhau. Có 400 người thuộc nhóm \(A\), 300 người thuộc nhóm \(B\), và 120 người thuộc **cả hai**. (a) Tính \(P(A)\), \(P(B)\), \(P(A\cap B)\). (b) Kiểm tra \(A\) và \(B\) có độc lập không. (c) Tính xác suất thuộc **ít nhất một** nhóm, **đúng một** nhóm và **không thuộc nhóm nào**. Tự lập bảng bốn miền trước khi mở Đối chiếu.
+
+    <span data-ped-first-try="7" data-outcome-id="G11-CHVIII-INTEGRATED" data-thpt-first-try-id="THPT-G11-B30-TRY07" hidden></span>
+
+    ??? question "Đối chiếu — bốn miền và kiểm độc lập"
+
+        **Đếm giao trước:** \(P(A)=400/1000=0{,}4\), \(P(B)=300/1000=0{,}3\), \(P(A\cap B)=120/1000=0{,}12\).
+
+        **Kiểm điều kiện nhân:** \(P(A)P(B)=0{,}4\cdot0{,}3=0{,}12=P(A\cap B)\). Do đó \(A,B\) độc lập trong mô hình này, **nhưng không xung khắc** vì phần giao \(0{,}12>0\).
+
+        **Bốn miền:** Chỉ \(A\): \(400-120=280\); chỉ \(B\): \(300-120=180\); cả hai: \(120\); không nhóm nào: \(1000-280-180-120=420\). Vì vậy \(P(A\cup B)=(400+300-120)/1000=0{,}58\), \(P(\text{đúng một})=(280+180)/1000=0{,}46\), \(P(\overline{A\cup B})=420/1000=0{,}42\).
+
+        **Kiểm tổng:** \(280+180+120+420=1000\); xác suất hợp và xác suất đối cộng thành \(0{,}58+0{,}42=1\).
+
+    <span data-thpt-help-id="HELP-G11-B30-TRY07" hidden></span>
+
+    ??? tip "Kiểm lỗi — tự giả độc lập hay quên trừ phần giao"
+
+        **Dấu hiệu:** Em lấy \(0{,}4\cdot0{,}3\) làm dữ liệu phần giao trước khi xem 120 người, hoặc cộng \(0{,}4+0{,}3\) thành xác suất hợp.
+
+        **Vì sao sai:** Độc lập là điều cần **kiểm** từ giao và hai xác suất đã cho; công thức cộng hợp luôn trừ phần bị đếm hai lần.
+
+        **Tự sửa:** Vẽ bốn miền *chỉ A / chỉ B / cả hai / không nhóm nào*, kiểm tổng 1 000; so sánh giao thực tế với tích để xác định độc lập. Ôn Bài 28–30 rồi tự giải câu Practice tích hợp `THPT-G11-CHVIII-CHVIII-P01` tại <a href="../luyen-tap/?item=THPT-G11-CHVIII-CHVIII-P01">Core và Luyện tập</a> sau khi thử.
+
 === "Kiến thức SGK"
 
     ### 2.1. Công thức nhân xác suất cho hai biến cố độc lập
@@ -661,6 +689,15 @@ NO_DEPLOY: TRUE
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B30-R02-07"><p><strong>Đề bài:</strong> Khảo sát 200 người: trong 80 người dùng xe buýt có 24 người mang ô; trong 120 người không dùng xe buýt có 56 người mang ô. Chọn đều một người. Hai biến cố dùng xe buýt và mang ô có độc lập không?</p><p><strong>Phân tích:</strong> Lập bảng hai chiều. Mỗi ô trong thân bảng đếm đúng một nhóm; đọc giao ở ô 24, xác suất biên từ hàng/cột tổng.</p><table><thead><tr><th scope="col">Phương tiện</th><th scope="col">Mang ô</th><th scope="col">Không mang ô</th><th scope="col">Tổng</th></tr></thead><tbody><tr><th scope="row">Xe buýt</th><td>24</td><td>56</td><td>80</td></tr><tr><th scope="row">Không đi xe buýt</th><td>56</td><td>64</td><td>120</td></tr><tr><th scope="row">Tổng</th><td>80</td><td>120</td><td>200</td></tr></tbody></table><p><strong>Lời giải:</strong> P(A)=80/200=0,4; P(B)=80/200=0,4; P(AB)=24/200=0,12 ≠ 0,16. Không độc lập trong phân bố khảo sát.</p><p><strong>Kiểm lại:</strong> Hàng tổng 80,120; cột tổng 80,120; tổng 200. Không kết luận xe buýt gây ảnh hưởng đến việc mang ô.</p></div>
 
+    ### 3.8. Tích hợp hai phép thử độc lập, giao và đúng một
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B30-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Hai thiết bị hoạt động độc lập. Xác suất thiết bị thứ nhất tốt là \(3/4\), thứ hai tốt là \(2/3\). Tính xác suất cả hai tốt, ít nhất một tốt và đúng một tốt.</p>
+    <p><strong>Chọn phương pháp:</strong> Giả thiết xác nhận độc lập, nên có thể nhân để tính giao. “Ít nhất một” dùng biến cố đối cả hai hỏng; “đúng một” chia thành hai trường hợp xung khắc.</p>
+    <p><strong>Lời giải:</strong> Gọi \(A,B\) lần lượt là hai thiết bị tốt. \(P(A\cap B)=\frac34\frac23=\frac12\). Vì hai biến cố đối cũng độc lập, \(P(A\cup B)=1-P(\overline A\cap\overline B)=1-\frac14\frac13=\frac{11}{12}\). Xác suất đúng một tốt là \(P(A\cap\overline B)+P(\overline A\cap B)=\frac34\frac13+\frac14\frac23=\frac14+\frac16=\frac5{12}\).</p>
+    <p><strong>Kiểm lại:</strong> Cả hai tốt \(6/12\), đúng một tốt \(5/12\), cả hai hỏng \(1/12\), tổng \(12/12=1\). Hai biến cố tốt **không xung khắc**: xác suất cả hai tốt là \(1/2\) khác 0.</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G11-CHVIII-B30-01" hidden></span>
@@ -681,6 +718,16 @@ NO_DEPLOY: TRUE
     
         Tính ba xác suất rồi so tích, xem 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-P02">Luyện lại câu B30-P02</a>
 
+    <span data-thpt-help-id="HELP-G11-B30-INTEGRATED" hidden></span>
+
+    ??? tip "4.4. Lẫn lộn độc lập, xung khắc và biến cố đối"
+
+        **Dấu hiệu:** Em gọi hai biến cố độc lập là không thể xảy ra cùng lúc hoặc bỏ phần giao khi cộng hợp.
+
+        **Vì sao sai:** Độc lập liên quan điều kiện \(P(A\cap B)=P(A)P(B)\); xung khắc đòi \(P(A\cap B)=0\). Hai khái niệm khác nhau.
+
+        **Tự sửa:** Ôn §1.7 và Ví dụ 3.8, đếm bốn miền rồi quay về <a href="../luyen-tap/?item=THPT-G11-CHVIII-CHVIII-P01">Practice tích hợp gốc</a> trước khi mở lời giải.
+
     [Core và Luyện tập Bài 30](luyen-tap.md) · <a href="../../../thu-vien/tu-luan-g11-chuong-viii.md">Tự luận Chương VIII</a> · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
 *Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 30, trang in 76–78.*
@@ -699,7 +746,7 @@ NO_DEPLOY: TRUE
 
 ---
 
-## AUTHOR Q18 RECEIPT BEGIN · c5da4f4cb695509715071a84d86c81cfff1e8d95
+## AUTHOR Q18 RECEIPT BEGIN · 2b12e8b2a650a1ab3250f175fff245aa4ce44575
 
 # G11 SGK Chapter VIII B28–B30 · R04 current-source Q18 self-academic/PED author receipt
 
@@ -711,12 +758,12 @@ AUTHOR_SELF_QA_RECEIPT: SIGNED_ON_CURRENT_G11_CHVIII_B28_B30_R04_LEARNER_AND_WRI
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVIII_B28_B30_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: bd887525eed15630916c877516b8d5fb751c91e4
+SOURCE_BLOB: 0dee68f712886dfdbd496834a29174a33e6934df
 S1_RECEIPT: HISTORICAL_OWNER_ORIGINAL_TOAN_11_T2_SGK_SBT_SHA256_PRINTED_PAGES_DIRECT_PDF_IMAGES_NO_FRESH_FULL_SCAN
-OUTCOME_AUDIT: 20_EXISTING_RD0_OUTCOMES_19_LESSON_PLUS_1_INTEGRATED_AND_66_UNIQUE_PUBLIC_TEACHING_IDS
+OUTCOME_AUDIT: 20_EXISTING_RD0_OUTCOMES_19_LESSON_PLUS_1_INTEGRATED_AND_67_UNIQUE_SOURCE_TEACHING_IDS
 MATH_VERIFICATION: SOURCE_B28_B29_B30_SET_INTERSECTION_UNION_PROBABILITY_BOUNDS_INCLUSION_EXCLUSION_INDEPENDENCE_BRANCH_TREE_W03_THIRTY_SIX_PERSONS_ARITHMETIC_VERIFIED
-PED_VERIFICATION: THREE_ORDERED_GOLDEN_LEARNERS_19_HIDDEN_FIRSTTRY_19_CAUSE_SPECIFIC_D6_EIGHT_OLD_HELP_THREE_ORIGINAL_SVG
-CANONICAL_Q15: 66_UNIQUE_39_ORIGINAL_CP_8_ORIGINAL_WRITTEN_19_KNOWLEDGE_TRY_ONE_W03_STEM_CLARIFIED_SAME_KEY_RUBRIC
+PED_VERIFICATION: THREE_ORDERED_GOLDEN_LEARNERS_20_HIDDEN_FIRSTTRY_20_CAUSE_SPECIFIC_D6_EIGHT_OLD_HELP_THREE_ORIGINAL_SVG
+CANONICAL_Q15: 67_UNIQUE_39_ORIGINAL_CP_8_ORIGINAL_WRITTEN_20_KNOWLEDGE_TRY_ONE_W03_STEM_CLARIFIED_SAME_KEY_RUBRIC
 ASSESSMENT_Q16: 20_PRIVATE_RD1_OWNER_HELD_20_PUBLIC_END_REPLAY_CLIENT_SELF_CHECK_NO_MASTERY
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -733,7 +780,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## Exact current canonical sources and S1 receipt
 
-One current source Git blob `bd887525eed15630916c877516b8d5fb751c91e4` inventories 11 original repository paths: three original Golden learner lesson sources B28 `34cd865b3ac165b6510911c5a9019101b3473f56`, B29 `7f9e8b4725a2b1595c73f14faa6e4f399b90b63d`, B30 `3f9225b353a7100dd42c96b4d5b69bca0977648c`, original shared Core/Practice JS `b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3`, and original Written/Anchor library **current W03 clarified stem** `e3d2bb89c88cb0a0a0932f42a32db8e9c8a7ab26`; chapter navigation/practice, end public selfcheck and three original SVG also SHA-locked. No second active learner, original question bank or private RD1 published. Historical original SGK/SBT source PDF page-image scan author receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md` Git blob `c63ca380fe0416b4ed4214f5192197c7e95d20a6`: SGK original 114 PDF pages SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, B28 printed66–71, B29 72–75, B30 76–78, end79–80; SBT original 126 pages SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`, B28 44–46 B29 47–48 B30 49–50 end51–53 answers103–110. Previous independent R00 Academic/PED only attest original `fde4f8...` source and historical five v2.0 permanent sources; does not independently sign this Delta-C. Current new original publisher book page-image full scan was **not performed in this turn** and should not be described as newly verified.
+One current source Git blob `0dee68f712886dfdbd496834a29174a33e6934df` inventories 11 original repository paths: three original Golden learner lesson sources B28 `34cd865b3ac165b6510911c5a9019101b3473f56`, B29 `7f9e8b4725a2b1595c73f14faa6e4f399b90b63d`, B30 `971262cc65ea2aee488de6144eefe973cbdb4693`, original shared Core/Practice JS `b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3`, and original Written/Anchor library **current W03 clarified stem** `e3d2bb89c88cb0a0a0932f42a32db8e9c8a7ab26`; chapter navigation/practice, end public selfcheck and three original SVG also SHA-locked. No second active learner, original question bank or private RD1 published. Historical original SGK/SBT source PDF page-image scan author receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md` Git blob `c63ca380fe0416b4ed4214f5192197c7e95d20a6`: SGK original 114 PDF pages SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, B28 printed66–71, B29 72–75, B30 76–78, end79–80; SBT original 126 pages SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`, B28 44–46 B29 47–48 B30 49–50 end51–53 answers103–110. Previous independent R00 Academic/PED only attest original `fde4f8...` source and historical five v2.0 permanent sources; does not independently sign this Delta-C. Current new original publisher book page-image full scan was **not performed in this turn** and should not be described as newly verified.
 
 ## Actual author math source spot-check and outcome reasoning
 
@@ -747,9 +794,9 @@ One current source Git blob `bd887525eed15630916c877516b8d5fb751c91e4` inventori
 
 **Current direct source checks:** exactly three four-tab Golden student sources; 19 source-registered unique Knowledge FirstTry matching 19/19 lesson outcomes, 19 correctly indented voluntary hidden comparisons, 19 immediate differentiated D6 with `Vì sao dễ sai` cause and linked original Core reattempt, eight original general HELP, total27; 20 distinct fully labeled worked examples 6/7/7, original three SVG and reading prompts, three original printed SGK footers. Thirty Markdown relative links normalized to equivalent semantic HTML links preserving label/href (11+9+10). All inline/markup display MathJax delimiter counts balanced. No new raw unindented source answers leaked; no fictional Knowledge 2.x references. Earlier Draft PR candidate 54 structural &39 scenario tests apply to its older learner SHA, not re-certified as fresh identical tests against current final SHA. RELEASE browser AP/R and physical Safari/device not executed.
 
-## ITEM_OUTCOME_ROLE_MATRIX — 66 unique canonical student learning questions
+## ITEM_OUTCOME_ROLE_MATRIX — 67 unique source-owned teaching questions
 
-47 original public core/canonical IDs (39 C/P plus 8 Written/Anchor) mapped to 20 registered outcomes, plus 19 new Knowledge source-owned `THPT-G11-Bxx-TRYnn` questions with own item IDs and primary outcome links. Exactly **66 distinct education item IDs**, no dual question stems/keys. 20 worked example IDs are instructional example annotations, not extra original practice or exam records. One original integrated outcome `G11-CHVIII-INTEGRATED` maps to unchanged `THPT-G11-CHVIII-CHVIII-P01` and original Written chapter Anchor, not a new cloned exam item.
+Forty-seven unchanged public canonical IDs (39 C/P +8 original Written/Anchor, including unchanged W03 after earlier clarification) cover all 20 registered outcomes; 20 source-local Knowledge unscored FirstTry now cover all 20 separately, including new integrated TRY07. Exactly **67 unique educational source-owned item IDs**; 21 worked annotations are instructional examples, not duplicate test-bank questions. Original integrated Practice P01 and Written/Anchor W01 untouched.
 
 | ITEM_ID | OUTCOME_ID | PLACEMENT | ROLE |
 |---|---|---|---|
@@ -819,6 +866,7 @@ One current source Git blob `bd887525eed15630916c877516b8d5fb751c91e4` inventori
 | THPT-G11-B30-TRY04 | G11-B30-AT_LEAST_ONE | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 | THPT-G11-B30-TRY05 | G11-B30-INDEPENDENT_VS_DISJOINT | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 | THPT-G11-B30-TRY06 | G11-B30-REAL_CONTEXT | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B30-TRY07 | G11-CHVIII-INTEGRATED | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
@@ -827,31 +875,40 @@ Only one normative `SLM-THPT-QUALITY-ONE v3.2.0` at `prototypes/thpt/THPT_UNIFIE
 | Q ID | CURRENT R04 author academic/PED verdict | Concrete evidence or limitation |
 |---|---|---|
 | Q01 | AUTHOR_SELF_VERIFIED | Exact KNTT 11 T2 historical owner SGK/SBT actual scanned printed pages & SHA. B28 66–71 B29 72–75 B30 76–78, SBT B28 44–46 B29 47–48 B30 49–50, answers 103–110. No new full PDF scan in this revision |
-| Q02 | AUTHOR_SELF_VERIFIED | 20 original outcomes: B28 seven, B29 six, B30 six, one integrated; each lesson outcome has one new unscored FirstTry; original integrated skill mapped to original chapter P01 and W01-ANCHOR |
+| Q02 | AUTHOR_SELF_VERIFIED | 20 registered outcomes, all 20 already have original public canonical practice; B30 new integrated TRY07 now ensures actual voluntary pre-Core Try on the sole previously missing integrated outcome, 67 source-owned teaching IDs. |
 | Q03 | AUTHOR_SELF_VERIFIED | Original B28 event sets, Ω, union/intersection/complement, mutually exclusive vs independent; B29 addition/complement/count Venn/probability feasibility; B30 independence/product, repeated trials, complement and two-way tables |
-| Q04 | AUTHOR_SELF_VERIFIED | 20 distinct method-reasoned worked examples (6+7+7) in actual three student Golden tab 3 sources, each shows problem, analysis, full calculation/proof and check |
-| Q05 | AUTHOR_SELF_VERIFIED | 39 original public canonical Core/Practice records (19 Core,20 Practice), original Git blob b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3 unchanged including keys/solutions/skills |
+| Q04 | AUTHOR_SELF_VERIFIED | 21 fully method-reasoned worked examples (B28 six/B29 seven/B30 eight) with new EX3.8 independent two-device union/complement/exactly-one derivation and numerical validation. |
+| Q05 | AUTHOR_SELF_VERIFIED | 39 original Core/Practice JS immutable, eight canonical Written/Anchor unchanged from locked current W03 revision, one additional B30 integrated source-only FirstTry rather than an original-bank item. |
 | Q06 | AUTHOR_SELF_VERIFIED | 8 original canonical Written/Anchor in the shared library; W03 ambiguity removed by specifying four disjoint requested cases with same W03 ID, mathematically same rubric and answer; other Written unchanged |
 | Q07 | AUTHOR_SELF_VERIFIED | 3 original preserved SVG plots include four-area Venn, 40-student inclusion-exclusion Venn and two-branch independence tree, with learner reading instructions not a decorative only picture |
-| Q08 | AUTHOR_SELF_VERIFIED | 19 new cause-specific local D6 reasons and reattempt links plus 8 old general misconception HELP =27 total. Each error diagnosis refers back to a real source Core item |
+| Q08 | AUTHOR_SELF_VERIFIED | 20 first-try D6 local routes with opt-in hidden answers, eight older general HELP unaffected; new B30 TRY07 explicitly checks independence before multiplication and counts four disjoint cases. |
 | Q09 | AUTHOR_SELF_VERIFIED | Real motivation through inclusive-or school survey, overlapping group counts, manufacturing/censor independent events and why branch multiplication needs model conditions |
 | Q10 | AUTHOR_SELF_VERIFIED | Prerequisites set union/intersection/empty, sample space, equally likely outcomes, complement, combinatorics choosing unordered pairs and branches, studied before formulas |
 | Q11 | AUTHOR_SELF_VERIFIED | Event set and disjoint cases explained before formal union/intersection or inclusion-exclusion; B30 conditional branch ratio motivates product only when independence |
 | Q12 | AUTHOR_SELF_VERIFIED | Original D5 Venn/independence tree interpreted with four mutually exclusive regions, labels and exact branch multiplication; nonuniform SVG area explicitly not treated as probability |
-| Q13 | AUTHOR_SELF_VERIFIED | Conditions for equiprobability, non-replacement dependence, independent vs disjoint with P>0, feasibility lower bound P(AB)≥max(0,P(A)+P(B)-1), pairwise vs joint independence and no causal inference |
-| Q14 | AUTHOR_SELF_VERIFIED | 19 unscored per-outcome FirstTry preceding the Core, all 19 mathematical comparisons opt-in hidden and correctly indented plus 19 corresponding voluntary local Kiểm lỗi; no end-independent test leak |
-| Q15 | AUTHOR_SELF_VERIFIED | One original source bank 39 C/P and one shared Written eight canonical IDs (W03 same ID, only clarified semantic stem); 19 separate unscored Knowledge TRY =>66 unique teaching item IDs with one outcome/role each |
+| Q13 | AUTHOR_SELF_VERIFIED | Independence verification in 1000-person sample: P(A)=.4, P(B)=.3, P(AB)=.12=.4×.3, union=.58, exactly-one=.46, neither=.42; independent but not mutually exclusive. Separate independent devices 3/4,2/3 yield both=1/2, union=11/12, exactly-one=5/12. |
+| Q14 | AUTHOR_SELF_VERIFIED | 20 unique pre-Core source-owned FirstTry on 20/20 original outcomes with hidden voluntary answer and distinct D6, including new integrated B30 TRY07; original public P01/W01 remain separate. |
+| Q15 | AUTHOR_SELF_VERIFIED | 67 distinct source-owned IDs, 47 original canonical public (39 C/P+8 Written) and 20 source-local optional Knowledge FirstTry; original stems/keys/rubrics unchanged, no original item duplicated. |
 | Q16 | AUTHOR_SELF_VERIFIED | 20 original owner-held private RD1 never imported, original 20 exposed chapter-end public replay is CLIENT_SELF_CHECK_NO_MASTERY, cannot grant SGK_CHAPTER_READINESS or Skill Mastery |
 | Q17 | AUTHOR_SELF_VERIFIED | Complete independent SGK chapter path three Knowledge Golden lessons to original Core/Practice to Written to public chapter-end selfcheck; separate Topic path not substituted or Core duplicated |
-| Q18 | AUTHOR_SELF_VERIFIED | One 11-component current source blob inventory, 3 full learner exact Git blobs, original bank/W03 canonical and current signed self Q18; historical independent R00 review source SHA preserved only for R00 |
+| Q18 | AUTHOR_SELF_VERIFIED | 11 exact original component Git blobs, current only B30 learner updated for integrated source scope; signed author Q18 receipt/SHA and V2/ready/register must agree. Old R00 independent verdict remains on its immutable source. |
 
 ## Protected RD1 and signed source scope
 
 Original confidential 20 independent RD1 items held off public GitHub; this receipt contains only their count/assessment-mode/custody metadata, not the stems, keys, full solution or rubric. 20 exposed public chapter-end practice replay items remain `CLIENT_SELF_CHECK_NO_MASTERY`: public, thus not official `SGK_CHAPTER_READINESS`, and never generate Mastery. No Topic Core or Topic Readiness created, no changes to original 39 Core/Practice solutions, JS quiz runtime, Final Submit, Firebase, Auth, student records, or production release.
 
-AUTHOR_SIGNOFF: Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_bd887525eed15630916c877516b8d5fb751c91e4
+AUTHOR_SIGNOFF: Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_0dee68f712886dfdbd496834a29174a33e6934df
 P0_P1_AUTHORING: 0_0_IN_SCOPE
 SOURCE_STATE: AUTHORING_PASS_ELIGIBLE_FOR_SINGLE_V2_READY_REGISTER
 RELEASE_STATE: NOT_AUTHORIZED_OR_DEPLOYED
+
+## SCOPED_G11_CHVIII_INTEGRATED_PED6_PRECORE_DELTA_C_20261122
+
+Author-source readback: original registered G11-CHVIII-INTEGRATED already had P01 in the frozen 39-item JS and W01-ANCHOR in the single original 8-item Written library; however it alone among 20 outcomes lacked an individual Knowledge FirstTry before Core (old 19 tries). One new B30 source-local FirstTry repairs that Q14/PED6 transfer gap without creating a second original canonical P/Written/exam item.
+
+- Original canonical B30 learner blob `971262cc65ea2aee488de6144eefe973cbdb4693`: §1.7 explains B28 intersection/union/disjoint vs independence, B29 inclusion-exclusion, B30 multiplication with proof of independence; unique source-owned `THPT-G11-B30-TRY07` on G11-CHVIII-INTEGRATED, hidden user-opened comparison, HELP-G11-B30-TRY07, independent worked EX-G11-B30-R04-INTEGRATED and specific common-error 4.4.
+- Current math independent spot-check: equiprobable one of 1000 people with |A|=400, |B|=300, |A∩B|=120. Four exclusive bins: only A=280, only B=180, both=120, neither=420 (sum=1000), P(A)P(B)=.4×.3=.12=P(A∩B), union=.58, exactly one=.46, neither=.42. Two independent device successes p(A)=3/4,p(B)=2/3 give both=.5, union=11/12, exactly one=5/12, neither=1/12, sum 1. Independence not falsely conflated with disjointness.
+- 47 original canonical public questions byte-preserved in locked current original JS 39 and Written 8 (previous B29-W03 stem clarification already source-scoped and unchanged now); twenty voluntary FirstTry in original three student sources, 67 distinct source-owned question IDs and 21 worked; original three SVG untouched, 20 original RD1 held private OFF GitHub; public 20 END replay CLIENT_SELF_CHECK_NO_MASTERY only.
+- This is B30-only DELTA_C_ACADEMIC_MATERIAL under ONE normative Q01–Q18 v3.2.0 current AUTHOR_SELF_VERIFIED source scope; prior independent R00 Academic/PED verdict remains frozen on old R00 snapshot. Original SGK/SBT primary PDFs historically verified by owner receipt; no new actual page-image scan asserted. No RELEASE/FinalSubmit/Mastery/production/Firebase/Auth/student data modified.
 
 ## AUTHOR Q18 RECEIPT END
