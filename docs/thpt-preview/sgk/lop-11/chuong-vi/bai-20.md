@@ -1,58 +1,205 @@
 # Bài 20. Hàm số mũ và hàm số lôgarit
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VI · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu bản chất → xem hình và ví dụ có suy luận → Tự thử trước Core → Core/Luyện tập/Vận dụng → tự khắc phục. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VI · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Đọc đồ thị để hiểu miền xác định, tập giá trị, tính liên tục và chiều biến thiên của hai hàm ngược nhau.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Kiến thức SGK — hiểu bản chất trước công thức
+=== "Khám phá kiến thức"
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B20-01_R00.svg" alt="B20 — trực quan hình thành khái niệm"/><figcaption>Hình minh họa — quan sát trước khi tính: B20 — trực quan hình thành khái niệm</figcaption></figure>
+    Đã biết lũy thừa và lôgarit ở Bài 18–19. Khi thời gian thay đổi, đại lượng tăng theo hệ số cố định có thể được mô tả bằng hàm số mũ. Nếu biết đại lượng muốn đạt và muốn tìm thời gian, ta dùng hàm số lôgarit. Vì thế cần biết toàn bộ quan hệ giữa đầu vào và đầu ra, chứ không chỉ tính một giá trị.
 
-**Cách đọc và phát hiện:** Hình B20 đặt hai hàm trên **cùng hệ trục và cùng tỉ lệ**, để thấy điểm (0,1) của y=2^x tương ứng (1,0) của y=log₂x. Hãy tìm thêm cặp (1,2) ↔ (2,1); đường nét đứt y=x biểu diễn trục đối xứng, không phải một hàm cần giải.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B20-01_R00.svg" alt="Đồ thị hàm mũ cơ số 2 và logarit cơ số 2 đối xứng qua y=x"><figcaption>Đọc hình: đường mũ \(y=2^x\) có điểm \((0;1)\), đường logarit \(y=\log_2x\) có điểm \((1;0)\). Hoán đổi tọa độ từng điểm để chuyển qua hàm ngược; đường nét đứt \(y=x\) là trục đối xứng. Đường mũ luôn ở phía trên trục hoành, đường logarit ở bên phải trục tung.</figcaption></figure>
 
-### 1.1. Tại sao phải học đồ thị và hàm chứ không chỉ một giá trị?
+    ### 1.1. Biến nằm ở số mũ
 
-Lũy thừa `2³` trả lời cho một mốc; nhưng lượng vi khuẩn sau **mọi** khoảng thời gian t cần một quy tắc `N(t)=N₀·2^t`. Khi t thay đổi, kết quả thay đổi ra sao? Ta xét **hàm số mũ**. Nếu biết số lượng vi khuẩn và muốn suy thời gian, ta cần đi ngược lại bằng lôgarit — **hàm số lôgarit**.
+    So sánh \(3^x\) với \(x^3\): trong biểu thức thứ nhất cơ số không đổi và biến ở số mũ; biểu thức thứ hai là lũy thừa của biến. Với \(a>0,a\ne1\), \(a^x\) xác định cho mọi x thực và luôn dương.
 
-### 1.2. Hàm số mũ là gì, đồ thị nói điều gì
+    **Vận dụng — Tự thử trước Core.** Hàm \(y=4^x\) có thể nhận giá trị 0 hoặc -1 không? Tính giá trị tại \(x=-1,0,1\).
 
-Với `a>0, a≠1`, hàm `f(x)=a^x` là hàm số mũ: **biến x nằm ở số mũ**, không giống `x²` với biến ở cơ số. Mọi x thực đều được nhận (**TXĐ `ℝ`**), `f(x)>0` (**tập giá trị `(0,+∞)`**), đồ thị qua `(0,1)` và `(1,a)`.
+    <span data-ped-first-try="1" data-outcome-id="G11-B20-EXP_FUNCTION" data-thpt-first-try-id="THPT-G11-B20-TRY01" hidden></span>
 
-Quan sát `2^{-2}=1/4;2^{-1}=1/2;2⁰=1;2¹=2;2²=4`. Đi sang phải một đơn vị thì gấp đôi; hàm tăng **khi a>1**. Với `a=1/2`, mỗi bước sang phải chia đôi → **giảm**. Cả hai đường không cắt trục hoành vì `a^x>0`, và tiến sát trục `y=0` ở phía x→−∞ nếu a>1 (hoặc x→+∞ nếu 0<a<1). Đó là **tiệm cận ngang y=0** — một đường đồ thị tiến sát, không nhất thiết chạm.
+    ??? question "Đối chiếu"
 
-### 1.3. Hàm logarit là gì, vì sao điều kiện x>0?
+        **Lời giải:** Không, vì \(4^x>0\) với mọi x thực. Ba giá trị lần lượt là \(1/4,1,4\). Cơ số dương cho phép cả mũ âm lẫn mũ không nguyên.
 
-`g(x)=log_a x`, với a>0,a≠1. Vì `a^y=x>0`, **TXĐ g: (0,+∞)**; mọi số thực y có thể là logarit của một x dương, nên **tập giá trị ℝ**. Đồ thị qua `(1,0)` và `(a,1)`. Nếu a>1 nó tăng; nếu 0<a<1 nó giảm. Khi x→0⁺, đồ thị tiến sát đường thẳng `x=0` (**tiệm cận đứng**), nhưng không chạm do x>0.
+    <span data-thpt-help-id="HELP-G11-B20-TRY01" hidden></span>
 
-### 1.4. Hai hàm là “làm” và “làm ngược”
+    ??? tip "Kiểm lỗi"
 
-Nếu `y=2^x` thì `x=log₂y`. Trên đồ thị, mỗi điểm `(x,y)` của hàm mũ ứng với `(y,x)` của logarit; hai đồ thị đối xứng qua đường `y=x`. **Vì sao quan trọng?** Khi bài toán cho thời gian, dùng hàm mũ; khi cho mức đã đạt và cần tìm thời gian, dùng logarit.
+        **Dấu hiệu:** Tưởng mũ âm làm kết quả âm.
 
-### 1.5. Tự thử
+        **Tự sửa:** Tính ba điểm mốc và kiểm miền giá trị ở mục 2.1. [Làm lại câu B20-C01](../luyen-tap/?item=THPT-G11-CHVI-B20-C01).
 
-Vì sao `y=3^x` không thể bằng −5? Nếu `log₂8=3`, hãy tìm hai điểm tương ứng trên hai đồ thị. Vì sao `log_{1/2}x` nghịch biến?
+    ### 1.2. Hai cơ số ở hai phía của 1 dẫn tới hai chiều biến thiên
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở cách tự kiểm tra</summary><p>Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery.</p></details>
+    Mỗi lần tăng x thêm 1, giá trị \(a^x\) được nhân a. Với \(a>1\), nhân a làm số dương tăng; với \(0<a<1\), nó giảm. Quy tắc so sánh lũy thừa ở Bài 18 mở rộng điều này cho mọi x thực.
 
+    **Vận dụng — Tự thử trước Core.** Không dùng máy tính, so sánh \((2/3)^{\sqrt2}\) và \((2/3)^2\).
 
+    <span data-ped-first-try="2" data-outcome-id="G11-B20-EXP_MONOTONIC" data-thpt-first-try-id="THPT-G11-B20-TRY02" hidden></span>
 
-## 2. Ví dụ có suy luận
+    ??? question "Đối chiếu"
 
-### Ví dụ mẫu có giải thích
+        **Lời giải:** Vì \(0<2/3<1\), hàm số mũ nghịch biến. \(\sqrt2<2\) nên \((2/3)^{\sqrt2}>(2/3)^2=4/9\).
 
-**EX-G11-B20-01 (phân biệt hai loại hàm).** `f(x)=3^x` có TXĐ ℝ, tập giá trị (0,+∞), qua (0,1),(1,3) và tăng. `h(x)=x³` **không** là hàm mũ vì biến ở cơ số; không áp dụng máy móc tập giá trị (0,+∞) cho `x³`.
+    <span data-thpt-help-id="HELP-G11-B20-TRY02" hidden></span>
 
-**EX-G11-B20-02 (đồ thị ngược).** Nếu `y=2^x` qua (2,4), thì `y=log₂x` qua (4,2). Đó là đổi vai trò đầu vào/đầu ra, không phải phép đảo dấu một tọa độ.
+    ??? tip "Kiểm lỗi"
 
-**EX-G11-B20-03 (giải thích cơ số <1).** `g(x)=(1/3)^x`: từ x=0 đến x=1 giá trị giảm 1→1/3. Vì `0<1/3<1`, g giảm trên ℝ. `log_{1/3}x` cũng giảm trên (0,+∞).
+        **Dấu hiệu:** Chỉ so số mũ rồi giữ chiều bất kể cơ số.
 
-**EX-G11-B20-04 (mô hình gấp đôi).** `N(t)=50·2^t`, t tính bằng kỳ. `N(0)=50`, `N(3)=400`. **Tại sao** giá trị tăng x8? Qua 3 kỳ mỗi kỳ nhân đôi nên nhân `2³`. Nếu hỏi N=400 xảy ra ở kỳ nào, cần `t=log₂(400/50)=3`.
+        **Tự sửa:** Xác định a lớn hay nhỏ hơn 1 trước, đối chiếu mục 2.1. [Làm lại câu B20-C02](../luyen-tap/?item=THPT-G11-CHVI-B20-C02).
 
+    ### 1.3. Logarit chỉ tiếp nhận đầu vào dương
 
-## 3. Tự khắc phục và quay lại câu gốc
+    Với \(y=\log_a x\), ta hiểu \(a^y=x\). Mọi \(a^y\) dương, nên không nhận x bằng 0 hoặc âm. Nếu đầu vào logarit là một biểu thức, phải tìm nơi biểu thức đó dương chứ không luôn yêu cầu x>0.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVI-B20-01"><summary>Nói mọi hàm mũ đều tăng.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Nói mọi hàm mũ đều tăng.</li><li><strong>Nhắc bản chất &amp; điều kiện:</strong> a^x tăng khi a&gt;1, giảm khi 0&lt;a&lt;1; tại x=0 luôn bằng 1.</li><li><strong>Tìm lại lý do:</strong> Hãy phát biểu bằng lời vì sao quy tắc hợp lệ, đọc lại D1 tương ứng trước khi thay số hoặc biến đổi.</li><li><strong>Tự thử có dẫn dắt:</strong> So sánh (1/2)^1 và (1/2)^2. <strong>Đối chiếu sau khi thử:</strong> 1/2&gt;1/4, nên giảm khi x tăng.</li><li><strong>Quay về bài canonical:</strong> THPT-G11-CHVI-B20-C02; tự giải lại và nêu lý do từng bước, không chỉ ghi đáp số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C02">Quay lại câu THPT-G11-CHVI-B20-C02</a></p></details>
+    **Vận dụng — Tự thử trước Core.** Tìm tập xác định của \(f(x)=\log_4(7-2x)\).
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVI-B20-02"><summary>Đọc đồ thị hàm ngược như đổi dấu.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Đọc đồ thị hàm ngược như đổi dấu.</li><li><strong>Nhắc bản chất &amp; điều kiện:</strong> Hàm ngược hoán đổi đầu vào và đầu ra: (u,v) ↔ (v,u).</li><li><strong>Tìm lại lý do:</strong> Hãy phát biểu bằng lời vì sao quy tắc hợp lệ, đọc lại D1 tương ứng trước khi thay số hoặc biến đổi.</li><li><strong>Tự thử có dẫn dắt:</strong> Nếu 2³=8, điểm nào nằm trên y=log₂x?. <strong>Đối chiếu sau khi thử:</strong> (8,3), không phải (−3,−8).</li><li><strong>Quay về bài canonical:</strong> THPT-G11-CHVI-B20-C04; tự giải lại và nêu lý do từng bước, không chỉ ghi đáp số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVI-B20-C04">Quay lại câu THPT-G11-CHVI-B20-C04</a></p></details>
+    <span data-ped-first-try="3" data-outcome-id="G11-B20-LOG_FUNCTION" data-thpt-first-try-id="THPT-G11-B20-TRY03" hidden></span>
 
-## 4. Tiếp tục
+    ??? question "Đối chiếu"
 
-[Core và Luyện tập Bài 20](luyen-tap.md) · [Tự luận Chương VI](../../../thu-vien/tu-luan-g11-chuong-vi.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+        **Lời giải:** Cơ số 4 hợp lệ. \(7-2x>0\) tương đương \(x<7/2\). Tập xác định là \((-\infty,7/2)\). Không thêm x>0 vì đối số là 7-2x.
+
+    <span data-thpt-help-id="HELP-G11-B20-TRY03" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Nhầm điều kiện biến x dương với điều kiện đối số dương.
+
+        **Tự sửa:** Viết đúng đối số trên giấy rồi giải bất phương trình của nó. [Làm lại câu B20-C03](../luyen-tap/?item=THPT-G11-CHVI-B20-C03).
+
+    ### 1.4. Chiều biến thiên của hàm lôgarit
+
+    Hàm lôgarit đi ngược hàm mũ; nếu cơ số lớn hơn 1, đầu vào lớn hơn ứng với số mũ lớn hơn. Nếu cơ số giữa 0 và 1, đầu vào lớn hơn lại ứng với số mũ nhỏ hơn.
+
+    **Vận dụng — Tự thử trước Core.** So sánh \(\log_{1/3} 2\) và \(\log_{1/3} 7\), không tính gần đúng.
+
+    <span data-ped-first-try="4" data-outcome-id="G11-B20-LOG_MONOTONIC" data-thpt-first-try-id="THPT-G11-B20-TRY04" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Hai đối số đều dương. Vì \(2<7\) và cơ số \(1/3\) nằm giữa 0 và 1, hàm nghịch biến, nên \(\log_{1/3}2>\log_{1/3}7\).
+
+    <span data-thpt-help-id="HELP-G11-B20-TRY04" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Tưởng mọi hàm logarit đều đồng biến.
+
+        **Tự sửa:** Kiểm cơ số và miền trước khi so; ôn mục 2.2. [Làm lại câu B20-P03](../luyen-tap/?item=THPT-G11-CHVI-B20-P03).
+
+    ### 1.5. Hàm ngược: đổi đầu vào và đầu ra
+
+    Từ \(a^u=v\) suy ra \(\log_a v=u\). Vì vậy điểm \((u;v)\) của đồ thị mũ ứng với \((v;u)\) trên đồ thị logarit. Đây là phép hoán đổi, không phải đổi dấu hai tọa độ.
+
+    **Vận dụng — Tự thử trước Core.** Đồ thị \(y=5^x\) chứa điểm \((-2;1/25)\). Hãy chỉ ra điểm tương ứng trên đồ thị \(y=\log_5x\), rồi kiểm bằng định nghĩa.
+
+    <span data-ped-first-try="5" data-outcome-id="G11-B20-INVERSE_GRAPH" data-thpt-first-try-id="THPT-G11-B20-TRY05" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Điểm tương ứng là \((1/25;-2)\). Vì \(5^{-2}=1/25\), \(\log_5(1/25)=-2\). Đầu vào logarit dương đúng điều kiện.
+
+    <span data-thpt-help-id="HELP-G11-B20-TRY05" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        **Dấu hiệu:** Đổi dấu tọa độ thay vì hoán đổi chúng.
+
+        **Tự sửa:** Viết a^u=v rồi viết log_a v=u, kiểm hai điểm theo thứ tự. [Làm lại câu B20-C04](../luyen-tap/?item=THPT-G11-CHVI-B20-C04).
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Hàm số mũ
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(a>0,a\ne1\), hàm số \(y=a^x\) gọi là hàm số mũ cơ số a.</div>
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Tập xác định \(\mathbb R\), tập giá trị \((0,+\infty)\); liên tục trên \(\mathbb R\); đồng biến khi \(a>1\), nghịch biến khi \(0<a<1\). Đồ thị qua \((0;1),(1;a)\), luôn nằm phía trên trục hoành.</div>
+    
+    Để vẽ đồ thị, lập bảng các x như \(-2,-1,0,1,2\), tính a^x rồi biểu diễn điểm và nối thành đường cong theo tính liên tục/biến thiên. Với \(a>1\), đồ thị tiến sát \(y=0\) khi \(x\to-\infty\); với \(0<a<1\), tiến sát khi \(x\to+\infty\). Đồ thị không cắt trục hoành.
+    
+    | \(x\) | -2 | -1 | 0 | 1 | 2 |
+    | --- | ---: | ---: | ---: | ---: | ---: |
+    | \(3^x\) | \(1/9\) | \(1/3\) | 1 | 3 | 9 |
+    | \((1/3)^x\) | 9 | 3 | 1 | \(1/3\) | \(1/9\) |
+    
+    Đọc bảng từ trái sang phải để thấy mẫu tăng/giảm. Không nối các điểm bằng đoạn thẳng và gọi đó là đồ thị chính xác.
+
+    ### 2.2. Hàm số lôgarit
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa.</strong> Với \(a>0,a\ne1\), hàm số \(y=\log_a x\) là hàm lôgarit cơ số a.</div>
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Tập xác định \((0,+\infty)\), tập giá trị \(\mathbb R\); liên tục trên \((0,+\infty)\); đồng biến nếu \(a>1\), nghịch biến nếu \(0<a<1\). Đồ thị qua \((1;0),(a;1)\), luôn nằm bên phải trục tung.</div>
+    
+    Lập bảng từ \(x=a^k\) với một số k nguyên, giá trị \(y=k\). Khi \(x\to0^+\), đồ thị tiến sát đường thẳng \(x=0\), với \(a>1\) thì y tiến về \(-\infty\), với \(0<a<1\) thì y tiến về \(+\infty\).
+    
+    | \(x\) | \(1/9\) | \(1/3\) | 1 | 3 | 9 |
+    | --- | ---: | ---: | ---: | ---: | ---: |
+    | \(\log_3 x\) | -2 | -1 | 0 | 1 | 2 |
+    | \(\log_{1/3} x\) | 2 | 1 | 0 | -1 | -2 |
+    
+    **Liên hệ hai hàm:** \(y=a^x\) và \(y=\log_a x\) là hai hàm ngược, đối xứng qua \(y=x\). Các tọa độ hoán đổi, miền xác định của hàm này là tập giá trị của hàm kia. Với biểu thức logarit có đối số \(g(x)\), phải kiểm \(g(x)>0\) trước khi áp dụng tính chất.
+
+=== "Ví dụ"
+
+    ### 3.1. Phân biệt hàm mũ và lũy thừa của biến
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Trong \(y=7^x\) và \(y=x^7\), đâu là hàm số mũ? Nêu miền và tập giá trị của hàm mũ.</p><p><strong>Phân tích:</strong> Cơ số cố định, biến ở số mũ mới là hàm mũ.</p><p><strong>Lời giải:</strong> \(y=7^x\) là hàm mũ, xác định trên \(\mathbb R\), nhận mọi giá trị dương; tăng và đi qua (0;1),(1;7). \(x^7\) là hàm lũy thừa của biến.</p><p><strong>Kiểm lại:</strong> x^7 có thể âm, nên không gán tập giá trị dương của hàm mũ cho nó.</p></div>
+
+    ### 3.2. Lập điểm để vẽ một hàm mũ giảm
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Phác đồ thị \(y=(1/4)^x\) bằng năm điểm ứng với x=-2,-1,0,1,2.</p><p><strong>Phân tích:</strong> Tính giá trị, xác định chiều trước khi vẽ.</p><p><strong>Lời giải:</strong> Các tung độ là \(16,4,1,1/4,1/16\). Đồ thị đi qua năm điểm đó, là đường liên tục giảm, ở trên trục hoành và tiến sát trục hoành về bên phải.</p><p><strong>Kiểm lại:</strong> Kiểm điểm (0;1) và mỗi bước sang phải chia 4; hai đầu không tự nối thẳng.</p></div>
+
+    ### 3.3. Tìm miền xác định có căn và logarit
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Tìm miền xác định của \(y=\ln(16-x^2)\).</p><p><strong>Phân tích:</strong> Logarit tự nhiên có cơ số e hợp lệ; đối số phải thật sự dương.</p><p><strong>Lời giải:</strong> \(16-x^2>0\) tương đương \(-4<x<4\), nên \(D=(-4,4)\).</p><p><strong>Kiểm lại:</strong> Không lấy ±4 vì tại đó đối số bằng 0.</p></div>
+
+    ### 3.4. Lập điểm để vẽ một hàm logarit giảm
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Phác đồ thị \(y=\log_{1/4}x\) từ các đầu vào \(1/16,1/4,1,4,16\).</p><p><strong>Phân tích:</strong> Viết từng đầu vào là lũy thừa của 1/4.</p><p><strong>Lời giải:</strong> Các giá trị lần lượt \(2,1,0,-1,-2\). Đồ thị liên tục giảm trên x>0, qua (1;0),(1/4;1); tiến sát trục tung khi x tiến về 0 từ bên phải.</p><p><strong>Kiểm lại:</strong> Không vẽ điểm ở x=0 hoặc x âm.</p></div>
+
+    ### 3.5. Đọc quan hệ ngược
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Đồ thị \(y=4^x\) có điểm \((3/2;8)\). Hãy tìm điểm trên đồ thị \(y=\log_4x\).</p><p><strong>Phân tích:</strong> Hoán đổi hai vai trò, không lấy nghịch đảo tọa độ.</p><p><strong>Lời giải:</strong> \(4^{3/2}=8\) nên \(\log_4 8=3/2\); điểm cần tìm là \((8;3/2)\).</p><p><strong>Kiểm lại:</strong> Hai điểm đối xứng qua y=x.</p></div>
+
+    ### 3.6. Mô hình suy giảm và thời điểm đạt một mức
+
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Khối lượng một chất theo mô hình \(Q(t)=160(1/2)^{t/6}\) gam, \(t\ge0\) tính bằng giờ. Tính Q(12), rồi tìm t khi Q(t)=20.</p><p><strong>Phân tích:</strong> Số mũ t/6 là số chu kỳ bán rã; dùng mũ để tính lượng và logarit để tìm thời gian.</p><p><strong>Lời giải:</strong> \(Q(12)=160/4=40\) gam. Khi \(Q(t)=20\), \((1/2)^{t/6}=1/8=(1/2)^3\), vậy \(t=18\) giờ.</p><p><strong>Kiểm lại:</strong> Q giảm nghiêm ngặt nên chỉ có một thời điểm này trên miền mô hình.</p></div>
+
+=== "Lỗi thường gặp"
+
+    <span data-thpt-help-id="HELP-G11-CHVI-B20-01" hidden></span>
+
+    ??? tip "4.1. Cho rằng mọi hàm mũ đều tăng"
+
+        **Vì sao sai:** Cơ số giữa 0 và 1 làm giá trị giảm khi số mũ tăng.
+
+        **Tự sửa:** Ôn bảng ở mục 2.1 và thử hai số mũ khác nhau. [Làm lại câu B20-C02](../luyen-tap/?item=THPT-G11-CHVI-B20-C02).
+
+    <span data-thpt-help-id="HELP-G11-CHVI-B20-02" hidden></span>
+
+    ??? tip "4.2. Đọc đồ thị hàm ngược thành đổi dấu"
+
+        **Vì sao sai:** Hàm mũ và logarit hoán đổi đầu vào, đầu ra, không đổi dấu.
+
+        **Tự sửa:** Dùng đẳng thức a^u=v, rồi log_a v=u. [Làm lại câu B20-C04](../luyen-tap/?item=THPT-G11-CHVI-B20-C04).
+
+    <span data-thpt-help-id="HELP-G11-B20-03" hidden></span>
+
+    ??? tip "4.3. Cho rằng logarit nhận mọi x thực"
+
+        **Vì sao sai:** Đối số logarit phải dương; logarit có thể âm nhưng không nhận đối số âm.
+
+        **Tự sửa:** Giải điều kiện của đối số, ôn mục 2.2. [Làm lại câu B20-C03](../luyen-tap/?item=THPT-G11-CHVI-B20-C03).
+
+    <span data-thpt-help-id="HELP-G11-B20-04" hidden></span>
+
+    ??? tip "4.4. Đoán điểm và chiều của đồ thị"
+
+        **Vì sao sai:** Phải dùng điểm mốc đúng và tính đơn điệu theo cơ số.
+
+        **Tự sửa:** Kiểm (0;1) cho hàm mũ, (1;0) cho logarit rồi lập bảng. [Làm lại câu B20-P03](../luyen-tap/?item=THPT-G11-CHVI-B20-P03).
+
+    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 20 (trang in 16–19).</p>
