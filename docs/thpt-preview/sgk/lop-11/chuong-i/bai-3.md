@@ -1,97 +1,308 @@
 # Bài 3. Hàm số lượng giác
 
-<div class="thpt-r4-screen" data-thpt-r4>
-<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC</p>
-<p class="thpt-r4-lead">Học kiến thức, xem ví dụ suy luận, đọc đồ thị và tự khắc phục lỗi. Luyện tập theo đúng bài ở phần tiếp theo.</p>
+<style>
+/* Chỉ định kiểu khung 3+1 trong riêng trang học B03; không sửa CSS dùng chung. */
+.md-typeset:has([data-g11-b03-authoring]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137;
+}
+.md-typeset:has([data-g11-b03-authoring]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {
+  background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66;
+}
+.md-typeset:has([data-g11-b03-authoring]) .thpt-r4-knowledge-conclusion.thpt-r4-recap-card {
+  background:#fff3d5;border-color:#eacb7c;border-left-color:#c49a37;color:#27344f;
+}
+.md-typeset:has([data-g11-b03-authoring]) .thpt-r4-key-formula {
+  background:transparent;color:inherit;border:1px solid #8c9ab0;border-left:4px solid #64748b;
+  border-radius:10px;padding:.75rem 1rem;margin:.65rem 0 1rem;line-height:1.65;
+}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b03-authoring]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {
+  background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7;
+}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b03-authoring]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {
+  background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff;
+}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b03-authoring]) .thpt-r4-knowledge-conclusion.thpt-r4-recap-card {
+  background:#453919;border-color:#856b37;border-left-color:#d4b05f;color:#fff2d5;
+}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b03-authoring]) .thpt-r4-key-formula {
+  background:transparent;color:inherit;border-color:#8c9ab0;border-left-color:#bdc8d8;
+}
+</style>
+
+<div class="thpt-r4-screen" data-thpt-r4 data-g11-b03-authoring>
+<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG I · KẾT NỐI TRI THỨC</p>
+<p class="thpt-r4-lead">Từ một điểm quay trên đường tròn đến bốn hàm số: hiểu định nghĩa, tính chẵn lẻ, tính tuần hoàn và đọc đúng từng đồ thị.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
 </div>
 
-## Trước khi học: Vì sao cần kiến thức này?
+=== "Khám phá kiến thức"
 
-**Tình huống:** Ở Bài 1, điểm M quay quanh đường tròn đơn vị theo một góc x (radian); tọa độ của M là `(cos x, sin x)`. Bài 2 đã cho công cụ biến đổi các giá trị lượng giác khi cộng hoặc trừ góc. Khi M tiếp tục quay, làm thế nào mô tả sự thay đổi của **tung độ và hoành độ** theo x thay vì chỉ tính một vị trí? Ta xem x như đầu vào biến thiên, nhận `sin x` và `cos x` làm đầu ra — đó chính là các hàm số lượng giác.
+    Một điểm \(M\) chuyển động trên đường tròn đơn vị. Ở Bài 1, ta tìm được tọa độ của điểm theo góc quay \(x\): \(M(\cos x;\sin x)\). Nếu để \(x\) thay đổi liên tục thay vì chọn một góc cụ thể, hoành độ và tung độ của \(M\) cũng thay đổi theo. Từ đó xuất hiện một câu hỏi mới: **có thể xem mỗi tọa độ là đầu ra của một hàm số nhận góc \(x\) làm đầu vào không?** Bài 3 đi từ định nghĩa các hàm ấy đến cách đọc đồ thị của chúng. Các đồ thị còn giúp mô tả những hiện tượng lặp lại, chẳng hạn luồng khí trong quá trình hô hấp.
 
-**Hãy quan sát một vòng quay** trước khi học quy tắc:
+    ### 1.1. Định nghĩa hàm số lượng giác
 
-| Góc x (radian) | 0 | π/2 | π | 3π/2 | 2π |
-|---|---:|---:|---:|---:|---:|
-| Tung độ M = sin x | 0 | 1 | 0 | −1 | 0 |
-| Hoành độ M = cos x | 1 | 0 | −1 | 0 | 1 |
+    Hãy hình dung \(M\) quay từ góc \(0\) đến \(\pi/2\), rồi tới \(\pi\). Tung độ của \(M\) lần lượt là \(0,1,0\), trong khi hoành độ lần lượt là \(1,0,-1\). Với **mỗi** góc thực \(x\), ta có đúng một vị trí cuối trên đường tròn, nên có đúng một giá trị \(\sin x\) và một giá trị \(\cos x\). Đây là hai hàm số xác định cho mọi \(x\in\mathbb R\), chứ không phải hai con số cố định.
 
-Sau đúng một vòng `2π`, M trở lại vị trí cũ nên cả sin và cos lặp giá trị: vì thế mới cần khái niệm **chu kỳ** (chu kỳ dương nhỏ nhất của sin/cos là `2π`). Góc x có thể âm hoặc lớn hơn một vòng; sin/cos vẫn nhận được mọi x thực, còn tọa độ của điểm trên đường tròn đơn vị luôn thuộc `[-1,1]`. `tan x = sin x/cos x` đòi `cos x ≠ 0`, `cot x = cos x/sin x` đòi `sin x ≠ 0`: phải hiểu vì sao có các chỗ không xác định trước khi học thuộc tiệm cận. Chu kỳ là sự **lặp lại giá trị hàm**, không phải biên độ; trong bài toán thực tế phải kiểm tra đơn vị của biến và miền áp dụng.
+    Tang và côtang xuất hiện từ hai tỉ số \(\tan x=\sin x/\cos x\) và \(\cot x=\cos x/\sin x\). Vì là phép chia, chúng không xác định tại các góc làm mẫu số bằng \(0\). Chẳng hạn ở \(x=\pi/2\), điểm \(M=(0,1)\); \(\sin x\) vẫn bằng \(1\) nhưng \(\tan x\) **không có giá trị**. Ở \(x=0\), \(\cot x\) lại không xác định. Sự khác biệt này sẽ quyết định hình dạng hai đồ thị ở mục 5, 6.
 
-## Tự thử trước khi luyện tập
+    **Vận dụng.** Tại \(x=0\) và \(x=\pi/2\), hãy xác định những hàm nào trong sin, cos, tan, cot có giá trị; nếu có thì giá trị bằng bao nhiêu?
 
-Khi M quay thêm 2π quanh đường tròn đơn vị, sin(x+2π) thay đổi hay giữ nguyên? Hãy giải thích bằng tung độ của M.
+    ??? question "Đối chiếu"
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="3"><summary>Đã thử xong? Mở hướng dẫn đối chiếu</summary>
+        **Lời giải:** Với \(x=0\): \(\sin0=0,\ \cos0=1,\ \tan0=0\), còn \(\cot0\) không xác định vì mẫu \(\sin0=0\). Với \(x=\pi/2\): \(\sin(\pi/2)=1,\ \cos(\pi/2)=0,\ \cot(\pi/2)=0\), còn \(\tan(\pi/2)\) không xác định vì mẫu \(\cos(\pi/2)=0\).
 
-Cùng điểm cuối ⇒ cùng tung độ ⇒ sin(x+2π)=sin x. Nếu chưa giải thích được, quay lại bảng mốc góc và đồ thị sin, rồi làm câu Core đầu tiên của bài.
+    ??? tip "Kiểm lỗi"
 
-</details>
+        Nếu viết \(\tan(\pi/2)=0\), hãy đọc lại: \(\tan x\) dùng **cos ở mẫu**, không phải sin. Giá trị của tử số không cứu được một phân số có mẫu bằng \(0\).
 
-## 1. Kiến thức SGK
+    ### 1.2. Hàm số chẵn, hàm số lẻ, hàm số tuần hoàn
 
-### 1.1. Hàm sin và cos
+    Trên đồ thị \(y=x^2\), hai đầu vào \(x\) và \(-x\) có cùng đầu ra; đồ thị phản chiếu qua trục tung. Nhưng với \(y=x^3\), đổi \(x\) thành \(-x\) sẽ đổi dấu đầu ra, nên đồ thị đối xứng qua gốc \(O\). Đó là trực giác về **hàm chẵn** và **hàm lẻ**. Trước khi so \(f(-x)\), phải kiểm xem miền xác định có chứa đồng thời cả \(x\) và \(-x\) hay không.
 
-`y=sin x`, `y=cos x` xác định với mọi `x∈ℝ`, giá trị trong `[-1,1]`. `sin(-x)=-sin x` (lẻ), `cos(-x)=cos x` (chẵn). Chu kỳ dương nhỏ nhất `2π`.
-### 1.2. Đồ thị sin
+    Trở lại đường tròn: quay thêm \(2\pi\) thì điểm \(M\) về đúng vị trí cũ. Vì thế \(\sin(x+2\pi)=\sin x\), \(\cos(x+2\pi)=\cos x\). Tang và côtang lặp giá trị chỉ sau \(\pi\), do tử và mẫu đồng thời đổi dấu. Một hàm như thế được gọi là **tuần hoàn**. Điều quan trọng không phải chỉ tìm được một số làm hàm lặp lại, mà còn xem số dương nhỏ nhất ấy có tồn tại không: với hàm hằng trên \(\mathbb R\), mọi \(T>0\) đều là chu kì, nhưng không có **chu kì dương nhỏ nhất**.
 
-qua `(0,0)`, `(π/2,1)`, `(π,0)`, `(3π/2,-1)`, `(2π,0)`; tăng trên `[-π/2+2kπ,π/2+2kπ]`, giảm trên `[π/2+2kπ,3π/2+2kπ]`. Không nói sin tăng trên toàn ℝ.
-### 1.3. Đồ thị cos
+    Để biểu diễn nhịp lặp lại, ta dùng tính tuần hoàn của đối số: nếu \(y=\sin(3x)\), muốn đối số tăng thêm \(2\pi\), chỉ cần \(x\) tăng \(2\pi/3\). Đó là lý do hệ số trong đối số làm thay đổi chu kì theo **chiều ngược lại**.
 
-qua `(0,1)`, `(π/2,0)`, `(π,-1)`, `(3π/2,0)`, `(2π,1)`; giảm trên `[2kπ,(2k+1)π]`, tăng trên `[(2k-1)π,2kπ]` với `k∈ℤ`.
-### 1.4. Hàm tan
+    **Vận dụng.** Xét \(f(x)=x\sin x\) trên \(\mathbb R\): hàm chẵn hay lẻ? Hàm hằng \(g(x)=2\) trên \(\mathbb R\) có chu kì dương nhỏ nhất không?
 
-`tan x=sin x/cos x`; TXĐ `ℝ\{π/2+kπ:k∈ℤ}`, TGT ℝ, hàm lẻ, chu kỳ cơ bản π, đồng biến trên mỗi khoảng `(-π/2+kπ,π/2+kπ)`. Tiệm cận đứng tại `x=π/2+kπ`. Không nối đồ thị qua tiệm cận.
-### 1.5. Hàm cot
+    ??? question "Đối chiếu"
 
-`cot x=cos x/sin x`; TXĐ `ℝ\{kπ:k∈ℤ}`, TGT ℝ, hàm lẻ, chu kỳ π, nghịch biến trên mỗi `(kπ,(k+1)π)`, tiệm cận đứng tại `x=kπ`. Không tính `cot 0`.
-### 1.6. Hàm biến đổi và mô hình
+        **Lời giải:** \(f(-x)=(-x)\sin(-x)=x\sin x=f(x)\), nên \(f\) chẵn. Với \(g(x)=2\), mọi \(T>0\) đều thỏa \(g(x+T)=g(x)\), vì thế không có số dương nhỏ nhất làm chu kì.
 
-`f(x)=A sin(ωx+φ)+c` (`Aω≠0`) có biên độ `|A|`, TGT `[c-|A|,c+|A|]`, chu kỳ `2π/|ω|` (nếu miền thời gian đủ để thể hiện chu kỳ); với tan/cot `tan(ωx+φ)` có chu kỳ `π/|ω|`. `y=A sin(ωx+φ)+c` khi `A=0` là hằng, không được tuyên bố có chu kỳ *cơ bản*.
-### 1.7. Sử dụng đồ thị
+    ??? tip "Kiểm lỗi"
 
-Hoành độ là radian; xét miền xác định trước, đọc điểm, cực trị và tiệm cận từ hình. Cần phân biệt tập giá trị và tập xác định, chu kỳ biểu thức và thời gian thực tế; trả lời số chu kỳ trong một phút phải đổi đơn vị nhất quán.
+        Không kết luận hàm lẻ chỉ vì biểu thức có \(\sin x\). Tích của hai hàm lẻ \(x\) và \(\sin x\) lại là hàm chẵn. Cũng không đánh đồng “tuần hoàn” với “luôn có chu kì cơ bản”.
 
-## 2. Ví dụ giải thích bản chất
+    ### 1.3. Đồ thị và tính chất của hàm số \(y=\sin x\)
 
-- **EX-G11-B03-01 (TXĐ/TGT).** `f(x)=tan(2x)` yêu cầu `cos(2x)≠0`, nên `x≠π/4+kπ/2` với `k∈ℤ`; giá trị vẫn là ℝ. Không viết x≠π/2+kπ vì quên hệ số 2.
-- **EX-G11-B03-02 (chẵn/lẻ).** `f(x)=sin x+cos x` không chẵn, không lẻ vì `f(-x)=-sin x+cos x` khác cả `f(x)` lẫn `-f(x)`; trái lại `sin x` lẻ và `cos x` chẵn.
-- **EX-G11-B03-03 (chu kỳ).** `y=2 sin(3x-π/4)` có chu kỳ cơ bản `T=2π/3`, TGT `[-2,2]`; `3x` khiến chu kỳ *ngắn hơn*, không dài hơn 3 lần.
-- **EX-G11-B03-04 (đọc đồ thị).** `y=cos x` trên `[0,2π]` cắt Ox tại `π/2` và `3π/2`; vì vậy không kết luận đồ thị luôn dương.
-- **EX-G11-B03-05 (ứng dụng).** Nhiệt độ `T(t)=24+3cos(πt/6)` (t tính giờ) có đường trung bình 24°C, biên độ 3°C, chu kỳ 12 giờ; T lớn nhất 27°C tại `t=12k`, nhỏ nhất 21°C tại `t=6+12k`.
+    Khi \(M\) đi quanh đường tròn, hãy theo dõi **tung độ** thay vì vị trí của cả điểm. Từ \(x=0\), tung độ tăng đến \(1\) tại \(x=\pi/2\), giảm về \(0\) tại \(\pi\), xuống \(-1\) tại \(3\pi/2\), rồi trở về \(0\) tại \(2\pi\). Đặt những giá trị ấy lên hệ trục và nối bằng đường cong liên tục, ta có một nhịp của đồ thị sin. Nhịp đó lặp sang trái và phải sau mỗi \(2\pi\).
 
-## Hướng suy luận trong các ví dụ
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-01_R01.svg" alt="Đồ thị sin với các mốc 0, pi trên 2, pi, 3pi trên 2 và 2pi"><figcaption><strong>Đọc hình sin:</strong> đi từ giao điểm trục hoành tại \(0\), tới đỉnh \(1\) ở \(\pi/2\), xuống đáy \(-1\) ở \(3\pi/2\), rồi lặp. Độ cao giới hạn trong \([-1;1]\); phần bên trái là ảnh đối xứng qua gốc \(O\).</figcaption></figure>
 
-- **Ví dụ 01:** **Vì sao phải kiểm miền xác định trước?** `tan(2x)` là thương có mẫu `cos(2x)`; giải `cos(2x)=0` để loại x, rồi mới kết luận về tập giá trị.
-- **Ví dụ 02:** **Vì sao thay −x?** Trên miền đối xứng, so `f(-x)` với cả `f(x)` và `-f(x)`; tổng một phần chẵn và một phần lẻ không tự động là chẵn hay lẻ.
-- **Ví dụ 03:** **Vì sao chu kỳ bị chia 3?** Đối số `3x−π/4` cần tăng `2π`, do đó x chỉ tăng `2π/3`; biên độ 2 không làm đổi chu kỳ.
-- **Ví dụ 04:** **Vì sao đọc mốc đồ thị thay vì đoán?** `cos x=0` tại hai mốc `π/2`, `3π/2` trong một vòng; chú ý miền được yêu cầu trước khi liệt kê điểm cắt.
-- **Ví dụ 05:** **Vì sao đọc đường giữa trước?** Với `24+3cos(πt/6)`, 24 là mức trung bình, 3 là độ lệch cực đại, chu kỳ theo giờ là 12; mọi kết luận thời gian chỉ xét trên miền mô hình đang sử dụng.
+    Từ đường cong, ta đọc được khoảng **tăng** từ đáy đến đỉnh và khoảng **giảm** từ đỉnh tới đáy. Nếu chỉ nhìn đoạn \((0,\pi/2)\) mà nói “sin luôn tăng” thì sai, vì ở đoạn \((\pi/2,3\pi/2)\) nó giảm.
 
-## 3. Hình minh họa
+    **Vận dụng.** Trên một vòng \(0\le x\le2\pi\), hàm \(\sin x\) dương khi nào? Đạt giá trị lớn nhất và nhỏ nhất ở đâu?
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/FIG-G11-B03-01_R01.svg" loading="lazy" alt="Đồ thị lượng giác hình 1, đọc cùng mô tả trong kiến thức"><figcaption>Hình 1. Đọc trục, miền xác định, điểm mốc và nhánh đồ thị theo phần kiến thức.</figcaption></figure>
+    ??? question "Đối chiếu"
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/FIG-G11-B03-02_R01.svg" loading="lazy" alt="Đồ thị lượng giác hình 2, đọc cùng mô tả trong kiến thức"><figcaption>Hình 2. Đọc trục, miền xác định, điểm mốc và nhánh đồ thị theo phần kiến thức.</figcaption></figure>
+        **Lời giải:** \(\sin x>0\) khi \(x\in(0;\pi)\). Giá trị lớn nhất \(1\) tại \(x=\pi/2\), nhỏ nhất \(-1\) tại \(x=3\pi/2\).
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/FIG-G11-B03-03_R01.svg" loading="lazy" alt="Đồ thị lượng giác hình 3, đọc cùng mô tả trong kiến thức"><figcaption>Hình 3. Đọc trục, miền xác định, điểm mốc và nhánh đồ thị theo phần kiến thức.</figcaption></figure>
+    ??? tip "Kiểm lỗi"
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/FIG-G11-B03-04_R01.svg" loading="lazy" alt="Đồ thị lượng giác hình 4, đọc cùng mô tả trong kiến thức"><figcaption>Hình 4. Đọc trục, miền xác định, điểm mốc và nhánh đồ thị theo phần kiến thức.</figcaption></figure>
+        Với bất đẳng thức nghiêm \(>0\), không lấy hai đầu \(0,\pi\), vì tại đó sin bằng \(0\). Đọc dấu theo vị trí đồ thị so với trục hoành.
 
-### Hướng dẫn đọc hình, đồ thị
+    ### 1.4. Đồ thị và tính chất của hàm số \(y=\cos x\)
 
-- **Hình 1** (sin): đọc dãy `(0,0)`, `(π/2,1)`, `(π,0)`, `(3π/2,−1)`, `(2π,0)`; đồ thị đi lên rồi xuống, không phải sin luôn tăng.
-- **Hình 2** (cos): bắt đầu ở 1 tại x=0, đạt −1 tại x=π, trở lại 1 tại `2π`; cùng chu kỳ với sin nhưng điểm xuất phát trên trục tung khác.
-- **Hình 3** (tan): nét đứt tại `x=±π/2` là các vị trí `cos x=0` không thuộc miền xác định; các nhánh không thể nối qua đường nét đứt.
-- **Hình 4** (cot): đường nét đứt tại các bội nguyên của π là nơi `sin x=0`; trên từng khoảng xác định, đồ thị giảm, không đánh dấu `cot 0=0`.
+    Lần này hãy quan sát **hoành độ** của cùng điểm \(M\). Ở góc \(0\), hoành độ là \(1\); tới \(\pi/2\) bằng \(0\), tới \(\pi\) bằng \(-1\), rồi quay lại \(1\) ở \(2\pi\). Khác với sin khởi đầu ở \(0\), cos khởi đầu tại đỉnh. Cũng vì \(\cos(-x)=\cos x\), nửa đồ thị bên trái là ảnh gương qua trục tung của nửa bên phải.
 
-## 4. Tự khắc phục lỗi thường gặp
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-02_R01.svg" alt="Đồ thị cos từ âm 2pi đến 2pi với điểm đỉnh tại x bằng 0"><figcaption><strong>Đọc hình cos:</strong> tại \(x=0\) bắt đầu bằng \(1\), đạt \(-1\) ở \(\pi\), rồi trở lại \(1\) ở \(2\pi\). Đồ thị đối xứng qua trục tung và lặp sau \(2\pi\).</figcaption></figure>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B03-01"><summary>Miền xác định và tập giá trị của tan/cot</summary><ol><li>Nhận diện lỗi: cố tính tan ở nơi cos=0 hoặc cot nơi sin=0.</li><li>Kiểm tra đầu vào: xác định đối số u(x) của tan/cot.</li><li>Sửa nguyên tắc: tan u cần cosu≠0; cot u cần sinu≠0.</li><li>Tự giải ví dụ nhỏ: tan(2x) loại x=π/4+kπ/2; cot(2x) loại x=kπ/2.</li><li>Học lại: làm lại câu Core xác định miền, rồi Practice với hệ số trong đối số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-B03-C01">Quay lại câu luyện tập phù hợp</a></p></details>
+    Khi \(x\) chạy từ \(0\) tới \(\pi\), cos **giảm**; từ \(\pi\) tới \(2\pi\), cos **tăng**. Các khoảng như vậy cứ tịnh tiến thêm \(2k\pi\) với \(k\in\mathbb Z\). Đó là cách đọc tính đơn điệu từ một chu kì thay vì học thuộc một danh sách dài.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-B03-02"><summary>Chu kỳ khi đối số có hệ số</summary><ol><li>Nhận diện lỗi: nhân chu kỳ với hệ số của x.</li><li>Gợi nhớ: sin/cos có chu kỳ 2π theo đối số, tan/cot có chu kỳ π.</li><li>Sửa: đặt ωT bằng chu kỳ đối số, T=2π/|ω| hoặc π/|ω|, ω≠0.</li><li>Thử ngay: cos(4x-π/3) có T=π/2.</li><li>Trở về luyện tập: B03-P03, phân biệt chu kỳ cơ bản và chu kỳ bất kỳ.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-B03-P01">Quay lại câu luyện tập phù hợp</a></p></details>
+    **Vận dụng.** Trên \([0;2\pi]\), tìm các \(x\) sao cho \(\cos x<0\).
 
-## 5. Tiếp tục
+    ??? question "Đối chiếu"
 
-[Core và Luyện tập](luyen-tap.md) · [Tự luận chung Chương I](../../../thu-vien/tu-luan-g11-chuong-i-b01-b02.md)
+        **Lời giải:** Đồ thị cos nằm dưới trục hoành đúng khi \(x\in(\pi/2;3\pi/2)\).
+
+    ??? tip "Kiểm lỗi"
+
+        Không gồm hai mốc \(\pi/2,3\pi/2\), nơi cos bằng \(0\). Cũng không nhầm tính chẵn của cos với việc “cos luôn dương”.
+
+    ### 1.5. Đồ thị và tính chất của hàm số \(y=\tan x\)
+
+    Tang là tỉ số **tung độ chia hoành độ** của điểm \(M\). Khi góc tới gần \(\pi/2\) từ bên trái, hoành độ dương tiến sát \(0\), còn tung độ gần \(1\), nên tang tăng rất lớn. Nhưng **ngay tại** \(\pi/2\), phép chia không thực hiện được; đồ thị không có điểm ở đó. Qua phía bên phải, cos đổi dấu và tang mang giá trị âm rất lớn về độ lớn. Vì thế đồ thị có những nhánh bị chia tách bởi các đường thẳng đứng \(x=\pi/2+k\pi\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-03_R01.svg" alt="Các nhánh đồ thị tan với tiệm cận đứng tại pi trên 2 cộng kpi"><figcaption><strong>Đọc hình tan:</strong> mỗi nhánh tăng từ âm vô cùng lên dương vô cùng giữa hai đường đứt \(x=-\pi/2+k\pi\) và \(x=\pi/2+k\pi\). Đường đứt là **tiệm cận, không phải đồ thị**.</figcaption></figure>
+
+    Vì \(\tan(x+\pi)=\tan x\), hình dạng nhánh lặp sau \(\pi\). Chú ý: tăng trên **từng khoảng xác định** không có nghĩa được so sánh xuyên qua một tiệm cận.
+
+    **Vận dụng.** Trên \((-\pi/2;\pi/2)\), tìm tập nghiệm \(\tan x\ge0\).
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Nhánh đi qua \(O\), nằm dưới trục hoành khi \(x<0\) và trên trục hoành khi \(x>0\). Vậy \(x\in[0;\pi/2)\). Không lấy \(\pi/2\) vì hàm không xác định.
+
+    ??? tip "Kiểm lỗi"
+
+        Nếu nối hai nhánh qua tiệm cận, ta đã tự thêm những giá trị tan không tồn tại. Luôn xác định miền trước khi nối các điểm đồ thị.
+
+    ### 1.6. Đồ thị và tính chất của hàm số \(y=\cot x\)
+
+    Côtang đảo chiều phép chia: \(\cot x=\cos x/\sin x\). Ở \(x=0\) và \(x=\pi\), sin bằng \(0\), vì thế cot không có giá trị; còn tại \(\pi/2\), cos bằng \(0\) và cot bằng \(0\). Trên khoảng \((0;\pi)\), cot **giảm** từ giá trị rất lớn xuống giá trị rất âm. Tương tự tan, nhánh cot lặp lại sau \(\pi\) và có tiệm cận đứng tại các bội nguyên của \(\pi\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-04_R01.svg" alt="Đồ thị cot giảm giữa các tiệm cận x bằng kpi"><figcaption><strong>Đọc hình cot:</strong> giữa \(x=0\) và \(x=\pi\), nhánh đi từ trên xuống dưới và cắt trục hoành ở \(\pi/2\); các đường \(x=k\pi\) chỉ vị trí không xác định.</figcaption></figure>
+
+    Hai hàm tan và cot đều lẻ, có chu kì \(\pi\), nhưng ngược nhau ở **chiều biến thiên trên mỗi khoảng**. Chỉ cần nắm cơ chế của mẫu số và dấu tỉ số, em sẽ phân biệt được chúng mà không phải học vẹt hình.
+
+    **Vận dụng.** Trên \((0;\pi)\), khi nào \(\cot x<0\)?
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Trên \((0;\pi/2)\), \(\sin x,\cos x\) đều dương, nên cot dương. Trên \((\pi/2;\pi)\), sin dương, cos âm, nên cot âm. Tập cần tìm là \((\pi/2;\pi)\).
+
+    ??? tip "Kiểm lỗi"
+
+        Không viết \(\cot0=0\): tại \(0\), mẫu \(\sin0=0\). Muốn tìm điểm cắt trục hoành, giải \(\cos x=0\) **đồng thời** kiểm \(\sin x\ne0\).
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Định nghĩa hàm số lượng giác
+
+    Mỗi góc thực \(x\) xác định duy nhất một điểm trên đường tròn lượng giác \(M(\cos x;\sin x)\). Các giá trị tương ứng là đầu ra của bốn hàm số dưới đây.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Bốn hàm số lượng giác</strong><p><strong>Hàm số sin:</strong> \(y=\sin x\), xác định với mọi \(x\in\mathbb R\).</p><p><strong>Hàm số côsin:</strong> \(y=\cos x\), xác định với mọi \(x\in\mathbb R\).</p><p><strong>Hàm số tang:</strong> \(y=\tan x=\dfrac{\sin x}{\cos x}\), xác định khi \(x\ne\dfrac{\pi}{2}+k\pi\), \(k\in\mathbb Z\).</p><p><strong>Hàm số côtang:</strong> \(y=\cot x=\dfrac{\cos x}{\sin x}\), xác định khi \(x\ne k\pi\), \(k\in\mathbb Z\).</p></div>
+
+    **Đọc điều kiện:** sin, cos là tọa độ điểm trên đường tròn nên luôn xác định; tan, cot là các thương nên không được thay số tại điểm mẫu bằng \(0\). Tập giá trị của sin và cos là \([-1;1]\); của tan và cot là \(\mathbb R\).
+
+    ### 2.2. Hàm số chẵn, hàm số lẻ, hàm số tuần hoàn
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hàm số chẵn, hàm số lẻ</strong><p>Cho hàm số \(y=f(x)\) có tập xác định \(D\). Hàm số <strong>chẵn</strong> nếu với mọi \(x\in D\), ta có \(-x\in D\) và \(f(-x)=f(x)\). Hàm số <strong>lẻ</strong> nếu với mọi \(x\in D\), ta có \(-x\in D\) và \(f(-x)=-f(x)\).</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Đối xứng đồ thị</strong><p>Đồ thị hàm chẵn đối xứng qua <strong>trục tung</strong>; đồ thị hàm lẻ đối xứng qua <strong>gốc tọa độ</strong>. Phải kiểm miền xác định có đối xứng qua \(0\) trước khi áp dụng các đẳng thức \(f(-x)\).</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hàm số tuần hoàn và chu kì</strong><p>Hàm \(f\) trên tập \(D\) là <strong>tuần hoàn</strong> nếu tồn tại \(T\ne0\) sao cho với mọi \(x\in D\), cả \(x+T\) và \(x-T\) thuộc \(D\), đồng thời \(f(x+T)=f(x)\). Một \(T>0\) có tính chất này được gọi là một chu kì. <strong>Chu kì cơ bản</strong> là số \(T>0\) nhỏ nhất trong các chu kì, <em>nếu có</em>.</p></div>
+
+    **Ghi nhớ:** sin và cos tuần hoàn với chu kì cơ bản \(2\pi\); tan và cot tuần hoàn với chu kì cơ bản \(\pi\). Với hàm hằng trên \(\mathbb R\), không tồn tại chu kì cơ bản dù hàm tuần hoàn.
+
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức chu kì đối số tuyến tính</strong><p>\(y=A\sin(\omega x+\varphi)\) hoặc \(y=A\cos(\omega x+\varphi)\) có chu kì cơ bản \(T=\dfrac{2\pi}{|\omega|}\) khi \(A\ne0,\ \omega\ne0\).</p><p>Đối với \(y=\tan(\omega x+\varphi)\), \(y=\cot(\omega x+\varphi)\), chu kì cơ bản là \(T=\dfrac{\pi}{|\omega|}\) khi \(\omega\ne0\) và xét đúng miền xác định.</p></div>
+
+    ### 2.3. Đồ thị và tính chất hàm số \(y=\sin x\)
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Hàm số sin</strong><p><strong>Tập xác định:</strong> \(\mathbb R\). <strong>Tập giá trị:</strong> \([-1;1]\). Hàm <strong>lẻ</strong>, chu kì cơ bản \(2\pi\), đồ thị đối xứng qua gốc tọa độ.</p><p><strong>Đồng biến</strong> trên mỗi khoảng \(\big(-\dfrac{\pi}{2}+2k\pi;\dfrac{\pi}{2}+2k\pi\big)\); <strong>nghịch biến</strong> trên mỗi khoảng \(\big(\dfrac{\pi}{2}+2k\pi;\dfrac{3\pi}{2}+2k\pi\big)\), \(k\in\mathbb Z\).</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-01_R01.svg" alt="Đồ thị sin có chu kì 2pi và đối xứng qua gốc"><figcaption><strong>Cách đọc:</strong> từ \(0\) lên \(1\) tại \(\pi/2\), qua \(0\) tại \(\pi\), xuống \(-1\) tại \(3\pi/2\); đó là một chu kì. Tiếp tục tịnh tiến thêm \(2k\pi\).</figcaption></figure>
+
+    ### 2.4. Đồ thị và tính chất hàm số \(y=\cos x\)
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Hàm số côsin</strong><p><strong>Tập xác định:</strong> \(\mathbb R\). <strong>Tập giá trị:</strong> \([-1;1]\). Hàm <strong>chẵn</strong>, chu kì cơ bản \(2\pi\), đồ thị đối xứng qua trục tung.</p><p><strong>Đồng biến</strong> trên mỗi khoảng \((-\pi+2k\pi;2k\pi)\); <strong>nghịch biến</strong> trên mỗi khoảng \((2k\pi;\pi+2k\pi)\), \(k\in\mathbb Z\).</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-02_R01.svg" alt="Đồ thị cos đối xứng trục tung và chu kì 2pi"><figcaption><strong>Cách đọc:</strong> \(y=1\) ở \(x=0\), giảm đến \(-1\) tại \(\pi\), tăng lại đến \(1\) tại \(2\pi\). Nửa trái phản chiếu nửa phải qua trục tung.</figcaption></figure>
+
+    ### 2.5. Đồ thị và tính chất hàm số \(y=\tan x\)
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Hàm số tang</strong><p><strong>Tập xác định:</strong> \(\mathbb R\setminus\{\dfrac{\pi}{2}+k\pi\mid k\in\mathbb Z\}\). <strong>Tập giá trị:</strong> \(\mathbb R\). Hàm <strong>lẻ</strong>, chu kì cơ bản \(\pi\).</p><p><strong>Đồng biến</strong> trên mỗi khoảng \(\big(-\dfrac{\pi}{2}+k\pi;\dfrac{\pi}{2}+k\pi\big)\), \(k\in\mathbb Z\). Đồ thị đối xứng qua gốc và có các tiệm cận đứng \(x=\dfrac{\pi}{2}+k\pi\).</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-03_R01.svg" alt="Đồ thị tang gồm các nhánh tăng cách nhau bởi tiệm cận"><figcaption><strong>Cách đọc:</strong> mỗi nhánh tăng giữa hai đường thẳng đứt; tại đường đứt, cos bằng \(0\), nên tan không có giá trị và hai nhánh không nối liền.</figcaption></figure>
+
+    ### 2.6. Đồ thị và tính chất hàm số \(y=\cot x\)
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Hàm số côtang</strong><p><strong>Tập xác định:</strong> \(\mathbb R\setminus\{k\pi\mid k\in\mathbb Z\}\). <strong>Tập giá trị:</strong> \(\mathbb R\). Hàm <strong>lẻ</strong>, chu kì cơ bản \(\pi\).</p><p><strong>Nghịch biến</strong> trên mỗi khoảng \((k\pi;(k+1)\pi)\), \(k\in\mathbb Z\). Đồ thị đối xứng qua gốc và có các tiệm cận đứng \(x=k\pi\).</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-04_R01.svg" alt="Đồ thị côtang gồm các nhánh giảm giữa các tiệm cận"><figcaption><strong>Cách đọc:</strong> từ \(0\) đến \(\pi\), nhánh giảm, đi qua \((\pi/2;0)\); không có điểm nào tại \(x=0\) hay \(x=\pi\).</figcaption></figure>
+
+    **Tự tra cứu:** Trước một bài toán đồ thị, hãy hỏi theo thứ tự: (1) đầu vào nào có nghĩa? (2) đồ thị cắt hoặc nằm trên/dưới trục hoành ở đâu? (3) dùng tính đối xứng/chu kì nào? Không suy diễn dấu hoặc biến thiên xuyên qua tiệm cận.
+
+=== "Ví dụ"
+
+    ### 3.1. Kiểm miền xác định trước khi thay số
+
+    **Đề bài.** Tìm tập xác định của \(f(x)=\tan(2x)\).
+
+    **Phân tích:** Tang có nghĩa nếu cos của **toàn bộ đối số** khác \(0\); loại những \(x\) làm \(2x=\pi/2+k\pi\), không áp thẳng tập loại của \(\tan x\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(f(x)\) có nghĩa khi \(\cos(2x)\ne0\), tức \(2x\ne\dfrac{\pi}{2}+k\pi\), hay \(x\ne\dfrac{\pi}{4}+\dfrac{k\pi}{2}\), \(k\in\mathbb Z\). Do đó \(D=\mathbb R\setminus\{\dfrac{\pi}{4}+\dfrac{k\pi}{2}\mid k\in\mathbb Z\}\).</p></div>
+
+    **Kiểm lại:** Thay \(x=\pi/4\) vào đối số cho \(\tan(\pi/2)\), không xác định; còn \(x=0\) cho \(0\), có nghĩa.
+
+    ### 3.2. Phân biệt chẵn và lẻ bằng phép thế
+
+    **Đề bài.** Xét tính chẵn, lẻ của \(f(x)=x\sin x\).
+
+    **Phân tích:** Miền xác định là \(\mathbb R\), đối xứng qua \(0\). Phép thế \(-x\) cho thấy cả \(x\) và \(\sin x\) đổi dấu.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Với mọi \(x\in\mathbb R\), \(f(-x)=(-x)\sin(-x)=(-x)(-\sin x)=x\sin x=f(x)\). Vậy \(f\) là hàm chẵn.</p></div>
+
+    **Kiểm lại:** \(f(1)=\sin1=f(-1)\). Một cặp giá trị chỉ để đối chiếu, còn phép biến đổi với mọi \(x\) mới là chứng minh.
+
+    ### 3.3. Đọc chu kì từ hệ số đối số
+
+    **Đề bài.** Tìm chu kì cơ bản và tập giá trị của \(g(x)=2\sin(3x-\pi/4)\).
+
+    **Phân tích:** Nhân biên độ \(2\) thay đổi độ cao nhưng không đổi thời gian lặp; đối số tăng \(2\pi\) khi \(x\) tăng \(2\pi/3\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(T=\dfrac{2\pi}{|3|}=\dfrac{2\pi}{3}\). Vì \(-1\le\sin u\le1\) và đối số \(3x-\pi/4\) chạy qua mọi số thực, \(-2\le g(x)\le2\). Tập giá trị là \([-2;2]\).</p></div>
+
+    **Kiểm lại:** \(g(x+2\pi/3)=2\sin(3x-\pi/4+2\pi)=g(x)\); hệ số đối số là \(3\), không phải hệ số biên độ.
+
+    ### 3.4. Đọc nghiệm sin trên một chu kì
+
+    **Đề bài.** Trên \([0;2\pi]\), tìm mọi \(x\) sao cho \(\sin x=\dfrac12\).
+
+    **Phân tích:** Mức \(y=1/2\) cắt phần dương của đường sin tại hai điểm, một trước đỉnh \(\pi/2\) và một sau đỉnh.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Trên \([0;2\pi]\), \(\sin x=\dfrac12\) khi \(x=\dfrac{\pi}{6}\) hoặc \(x=\dfrac{5\pi}{6}\).</p></div>
+
+    **Kiểm lại:** Hai góc đều thuộc \((0;\pi)\), nơi sin dương, và \(\sin(\pi-\pi/6)=\sin(\pi/6)\). Không thêm \(2k\pi\) vì bài chỉ hỏi một đoạn.
+
+    ### 3.5. Tìm lúc nhiệt độ nhỏ nhất trong một mô hình cos
+
+    **Đề bài.** Giả sử \(H(t)=24+3\cos(\pi t/6)\) là nhiệt độ (°C), \(t\) tính theo giờ và \(0\le t\le24\). Xác định khoảng giá trị, các thời điểm thấp nhất và chu kì của mô hình.
+
+    **Phân tích:** Đường trung bình là \(24\); biên độ \(3\); cos đạt \(-1\) khi đối số bằng \(\pi+2k\pi\). Cần lọc nghiệm theo miền thời gian được cho.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Vì \(-1\le\cos u\le1\), nhiệt độ nằm trong \([21;27]\) °C. Thấp nhất khi \(\pi t/6=\pi+2k\pi\), suy ra \(t=6+12k\); trên \([0;24]\), các thời điểm là \(t=6\) giờ và \(t=18\) giờ. Chu kì là \(T=2\pi/(\pi/6)=12\) giờ.</p></div>
+
+    **Kiểm lại:** \(H(6)=H(18)=21\) °C, \(H(0)=H(12)=27\) °C. Đây là mô hình giả định; không suy ra nhiệt độ thực tế luôn dao động như vậy.
+
+    ### 3.6. Đọc dấu từ hai đồ thị có tiệm cận
+
+    **Đề bài.** Tìm nghiệm của \(\tan x>0\) trên \((-\pi/2;\pi/2)\) và \(\cot x<0\) trên \((0;\pi)\).
+
+    **Phân tích:** Trên từng khoảng liên tục, đọc đồ thị nằm trên hay dưới trục hoành. Dùng tỉ số sin/cos để kiểm dấu và không lấy điểm làm mẫu số bằng \(0\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Trên \((-\pi/2;\pi/2)\), tang dương khi \(x\in(0;\pi/2)\). Trên \((0;\pi)\), cot âm khi \(x\in(\pi/2;\pi)\).</p></div>
+
+    **Kiểm lại:** Hai điểm \(x=\pi/2\) không được lấy trong các trường hợp nêu: với tang, hàm không xác định; với cot, hàm bằng \(0\), không thỏa \(<0\).
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Lấy nhầm giá trị của hàm tại điểm không xác định
+
+    **Dấu hiệu:** Viết \(\tan(\pi/2)=0\) hoặc \(\cot0=0\) vì “trên hình gần trục tung”.
+
+    **Vì sao sai:** Tang là thương có mẫu \(\cos x\); cot là thương có mẫu \(\sin x\). Tại các điểm ấy, mẫu bằng \(0\), nên không có giá trị.
+
+    **Cách sửa:** Trước mọi bài tập hoặc hình, xác định tập xác định. Kiểm điểm nghi ngờ bằng cách thay vào mẫu của tỉ số.
+
+    ### 4.2. Xét chẵn lẻ mà không kiểm miền xác định
+
+    **Dấu hiệu:** Chỉ tính \(f(-x)\) tại vài giá trị rồi gọi hàm chẵn/lẻ, hoặc bỏ qua việc \(-x\) phải thuộc \(D\).
+
+    **Vì sao sai:** Định nghĩa chẵn/lẻ đòi điều kiện **mọi** \(x\in D\) thì \(-x\in D\) và đồng nhất thức đúng trên toàn miền.
+
+    **Cách sửa:** Kiểm miền \(D\) đối xứng trước; sau đó biến đổi \(f(-x)\) cho mọi \(x\in D\) để so với \(f(x),-f(x)\).
+
+    ### 4.3. Nhầm tính tuần hoàn với chu kì cơ bản
+
+    **Dấu hiệu:** Nói hàm hằng có chu kì cơ bản bằng \(1\), hoặc cho \(T=3\cdot2\pi\) là chu kì cơ bản của sin.
+
+    **Vì sao sai:** Một số dương bất kỳ khiến hàm lặp lại không nhất thiết là số dương **nhỏ nhất**; hàm hằng trên \(\mathbb R\) không có chu kì cơ bản.
+
+    **Cách sửa:** Phân biệt “một chu kì” với “chu kì cơ bản nếu có”; kiểm đối số và miền xác định, không chỉ thử một giá trị của \(T\).
+
+    ### 4.4. Nhầm khoảng đồng biến và nghịch biến trên hình sin/cos
+
+    **Dấu hiệu:** Thấy sin tăng từ \(0\) tới \(\pi/2\) rồi suy ra luôn tăng, hoặc gọi cos là hàm lẻ vì có điểm cắt trục hoành.
+
+    **Vì sao sai:** Mỗi đồ thị đổi chiều sau đỉnh/đáy; sin lẻ, cos chẵn theo quan hệ đối xứng của toàn đồ thị.
+
+    **Cách sửa:** Đọc một chu kì đủ các mốc \(0,\pi/2,\pi,3\pi/2,2\pi\); đối chiếu tính chẵn/lẻ bằng \(f(-x)\).
+
+    ### 4.5. Nối các nhánh của tan/cot qua tiệm cận
+
+    **Dấu hiệu:** Vẽ đường nối xuyên qua \(x=\pi/2+k\pi\) của tan hoặc \(x=k\pi\) của cot.
+
+    **Vì sao sai:** Các đường đó nằm ngoài miền xác định. Mỗi nhánh chỉ liên tục trên một khoảng giữa hai đường cấm.
+
+    **Cách sửa:** Đánh dấu tiệm cận **trước khi** đặt điểm, vẽ các nhánh tách biệt; kiểm chiều tăng (tan) hoặc giảm (cot) trên từng khoảng.
+
+    ### 4.6. Quên đơn vị và miền thời gian trong ứng dụng
+
+    **Dấu hiệu:** Mô hình có \(t\) tính bằng giây nhưng kết luận chu kì bằng số giờ, hoặc liệt kê cả thời điểm âm dù bài chỉ cho \(t\ge0\).
+
+    **Vì sao sai:** Chu kì của công thức tính theo đúng đơn vị của đầu vào; nghiệm toán học ngoài miền mô hình không là thời điểm được chấp nhận.
+
+    **Cách sửa:** Ghi rõ đơn vị biến, giải công thức chu kì, sau đó giao với miền thời gian yêu cầu và kiểm lại trong ngữ cảnh.
+
+    <p class="thpt-r4-footnote">Nguồn đối chiếu: SGK Toán 11, Kết nối tri thức với cuộc sống, tập một, Bài 3 “Hàm số lượng giác”, trang in 22–30. Bốn hình SVG đồ thị tái sử dụng canonical assets hiện hữu; không tạo nguồn hình song song.</p>
