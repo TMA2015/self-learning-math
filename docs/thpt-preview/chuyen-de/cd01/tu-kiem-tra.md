@@ -15,6 +15,24 @@ hide:
   <p class="topic01-assessment-note">11 câu hỏi công khai để em tự thử trước khi mở Đối chiếu. Không phải bài đánh giá năng lực độc lập và không ghi điểm thành thạo.</p>
 </div>
 
+<div class="topic01-boot-status" role="status" aria-live="polite">Đang chuẩn bị câu hỏi tự kiểm tra…</div>
+<script>
+/* Start before MkDocs renders source: never flash raw Markdown while Golden initializes. */
+(function(){
+  var html=document.documentElement,part="selfcheck",pending="topic01-boot-pending-"+part;
+  html.classList.add(pending);
+  document.addEventListener("DOMContentLoaded",function(){
+    setTimeout(function(){
+      if(!html.classList.contains(pending))return;
+      html.classList.remove(pending);
+      html.classList.add("topic01-boot-fallback-"+part);
+      var status=document.querySelector(".topic01-boot-status");
+      if(status)status.textContent="Giao diện tương tác chưa tải được. Nội dung gốc được giữ lại bên dưới; em có thể tải lại trang.";
+    },0);
+  },{once:true});
+})();
+</script>
+
 <span data-topic01-selfcheck-start hidden></span>
 
 <!-- TOPIC01_APPROVED_SOURCE_START -->
