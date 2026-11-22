@@ -3431,6 +3431,14 @@ tabSet($("#outer-tabs"),$("#outer-panels"),modules.map(m=>m.label),panels,"modul
 document.querySelectorAll('#knowledge p').forEach(q=>{if(q.querySelector(':scope>strong')?.textContent.trim()!=="Lời giải.")return;const box=document.createElement("div");box.className="thpt-g10-example-solution";q.before(box);box.append(q);let next=box.nextElementSibling;while(next&& !["H2","H3","DETAILS"].includes(next.tagName)&&!next.matches(".thpt-r4-knowledge-conclusion,.thpt-r4-key-formula")&&!/^(Vận dụng|Kiểm lại|Ví dụ|Kiểm lỗi|Khám phá kiến thức)/.test(next.textContent.trim())){const move=next;next=next.nextElementSibling;box.append(move)}});
 function route(){if(typeof lifecycle!=="undefined"&&lifecycle.isOpen)lifecycle.close();const page=location.hash.slice(1);const id=["knowledge","practice","selfcheck"].includes(page)?page:"knowledge";$$(".preview-page").forEach(n=>n.hidden=n.id!==id);$$("nav [data-page]").forEach(n=>{n.hidden=n.dataset.page===id;n.removeAttribute("aria-current");n.classList.remove("is-current")});window.scrollTo(0,0);typeset(document.getElementById(id));}
 window.addEventListener("hashchange",route);
+document.querySelectorAll("a[data-page]").forEach(link=>link.addEventListener("click",event=>{
+ if(event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+ event.preventDefault();
+ const target=link.dataset.page;
+ if(location.hash!=="#"+target)history.pushState(null,"","#"+target);
+ route();
+}));
+window.addEventListener("popstate",route);
 const dialog=$("#practice-dialog"),runtime=window.THPT_GOLDEN_RUNTIME;let group=0,at=0,activeTrigger;const ranges=[[0,11],[11,19],[19,24]];let pager;
 const getItems=()=>DATA.items.slice(...ranges[group]);
 const lifecycle=runtime.bindDialog({dialog,closeButton:dialog.querySelector("[data-thpt-modal-close]"),getReturnFocus:()=>activeTrigger});
