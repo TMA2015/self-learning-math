@@ -22,7 +22,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tính riêng hai giá trị và hai hiệu, không lấy 24/4. [Luyện lại B31-C01](../luyen-tap/?item=THPT-G11-CHIX-B31-C01)
+        **Vì sao dễ sai:** Vận tốc trung bình lấy hiệu vị trí chia hiệu thời gian; lấy vị trí cuối chia thời điểm cuối làm mất số liệu ban đầu.
+
+        **Tự sửa:** Tính riêng hai giá trị và hai hiệu, không lấy 24/4. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C01">Luyện lại B31-C01</a>
 
     ### 1.2. Thu hẹp khoảng đo
     
@@ -40,7 +42,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không thay h=0 trong thương gốc. [Luyện lại B31-C02](../luyen-tap/?item=THPT-G11-CHIX-B31-C02)
+        **Vì sao dễ sai:** Thương sai phân ban đầu chỉ có nghĩa với h khác 0; đạo hàm là giới hạn khi h tiến về 0.
+
+        **Tự sửa:** Không thay h=0 trong thương gốc. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C02">Luyện lại B31-C02</a>
 
     ### 1.3. Tìm đạo hàm tại một điểm
     
@@ -58,7 +62,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tách bước lập thương, rút gọn và lấy giới hạn. [Luyện lại B31-C03](../luyen-tap/?item=THPT-G11-CHIX-B31-C03)
+        **Vì sao dễ sai:** Thế h=0 khi tử và mẫu còn cùng bằng 0 chưa phải tính giới hạn; cần rút gọn rồi mới lấy giới hạn.
+
+        **Tự sửa:** Tách bước lập thương, rút gọn và lấy giới hạn. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C03">Luyện lại B31-C03</a>
 
     ### 1.4. Từ một số đến một hàm mới
     
@@ -76,7 +82,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không đi qua điểm 0 khi nêu khoảng khả vi. [Luyện lại B31-C04](../luyen-tap/?item=THPT-G11-CHIX-B31-C04)
+        **Vì sao dễ sai:** Đạo hàm trên một khoảng không tự bao gồm điểm hàm không xác định nằm giữa hai khoảng.
+
+        **Tự sửa:** Không đi qua điểm 0 khi nêu khoảng khả vi. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C04">Luyện lại B31-C04</a>
 
     ### 1.5. Liên tục là điều kiện cần
     
@@ -94,7 +102,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm liên tục trước khi thử tính đạo hàm. [Luyện lại B31-C05](../luyen-tap/?item=THPT-G11-CHIX-B31-C05)
+        **Vì sao dễ sai:** Khả vi kéo theo liên tục, nên bước kiểm liên tục có thể bác bỏ đạo hàm trước khi thử các giới hạn.
+
+        **Tự sửa:** Kiểm liên tục trước khi thử tính đạo hàm. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C05">Luyện lại B31-C05</a>
 
     ### 1.6. Điểm gấp khúc
     
@@ -114,7 +124,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tính riêng h âm và h dương. [Luyện lại B31-C06](../luyen-tap/?item=THPT-G11-CHIX-B31-C06)
+        **Vì sao dễ sai:** Ở điểm gấp, giới hạn sai phân bên trái và bên phải có thể khác nhau dù đồ thị liên tục.
+
+        **Tự sửa:** Tính riêng h âm và h dương. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C06">Luyện lại B31-C06</a>
 
     ### 1.7. Cát tuyến và độ dốc tức thời
     
@@ -134,7 +146,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Dấu của hệ số góc có ý nghĩa: tiếp tuyến đi xuống khi x tăng. [Luyện lại B31-C07](../luyen-tap/?item=THPT-G11-CHIX-B31-C07)
+        **Vì sao dễ sai:** Độ dốc tiếp tuyến là hệ số góc có dấu, khác với tung độ và khác độ lớn độ dốc.
+
+        **Tự sửa:** Dấu của hệ số góc có ý nghĩa: tiếp tuyến đi xuống khi x tăng. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C07">Luyện lại B31-C07</a>
 
     ### 1.8. Một điểm và một độ dốc
     
@@ -152,7 +166,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Thay hoành độ −1 vào kết quả để kiểm tiếp điểm. [Luyện lại B31-C08](../luyen-tap/?item=THPT-G11-CHIX-B31-C08)
+        **Vì sao dễ sai:** Tiếp tuyến phải đi qua đúng điểm tiếp xúc và có đúng hệ số góc; hai điều kiện cần kiểm riêng.
+
+        **Tự sửa:** Thay hoành độ −1 vào kết quả để kiểm tiếp điểm. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C08">Luyện lại B31-C08</a>
 
     ### 1.9. Vận tốc có dấu, tốc độ không âm
     
@@ -170,7 +186,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không gọi −4 là tốc độ. [Luyện lại B31-C09](../luyen-tap/?item=THPT-G11-CHIX-B31-C09)
+        **Vì sao dễ sai:** Vận tốc là đạo hàm tọa độ có dấu, còn tốc độ lấy trị tuyệt đối và không thể âm.
+
+        **Tự sửa:** Không gọi −4 là tốc độ. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C09">Luyện lại B31-C09</a>
 
     ### 1.10. Đơn vị và ý nghĩa
     
@@ -188,7 +206,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không nhầm điện lượng tại thời điểm với cường độ. [Luyện lại B31-C10](../luyen-tap/?item=THPT-G11-CHIX-B31-C10)
+        **Vì sao dễ sai:** Đạo hàm của điện lượng theo thời gian có đơn vị dòng điện, khác điện lượng tích lũy tại thời điểm.
+
+        **Tự sửa:** Không nhầm điện lượng tại thời điểm với cường độ. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C10">Luyện lại B31-C10</a>
 
     ### 1.11. Tự thiết kế độ dốc
     
@@ -206,7 +226,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Lập hai phương trình độ dốc; kiểm hai đầu bằng f′, không phải f. [Luyện lại B31-C08](../luyen-tap/?item=THPT-G11-CHIX-B31-C08)
+        **Vì sao dễ sai:** Ràng buộc độ dốc cho điều kiện f', không phải điều kiện f; phải giải hệ rồi thay lại hai đầu.
+
+        **Tự sửa:** Lập hai phương trình độ dốc; kiểm hai đầu bằng f′, không phải f. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C08">Luyện lại B31-C08</a>
 
 === "Kiến thức SGK"
 
@@ -297,20 +319,20 @@
     
     ??? tip "4.1. Thay h=0 quá sớm"
     
-        Với $f(x)=4x^2$ tại 2, thương bằng $16+4h$ khi $h\ne0$; lúc ấy mới lấy giới hạn 16. [Luyện lại B31-C02](../luyen-tap/?item=THPT-G11-CHIX-B31-C02)
+        Với $f(x)=4x^2$ tại 2, thương bằng $16+4h$ khi $h\ne0$; lúc ấy mới lấy giới hạn 16. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C02">Luyện lại B31-C02</a>
 
     <span data-thpt-help-id="HELP-G11-CHIX-B31-02" hidden></span>
     
     ??? tip "4.2. Chỉ xét một phía ở điểm gấp"
     
-        Thử $|x-5|$ tại 5: bên trái −1, bên phải 1; không khả vi. [Luyện lại B31-P06](../luyen-tap/?item=THPT-G11-CHIX-B31-P06)
+        Thử $|x-5|$ tại 5: bên trái −1, bên phải 1; không khả vi. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-P06">Luyện lại B31-P06</a>
 
     <span data-thpt-help-id="HELP-G11-CHIX-B31-03" hidden></span>
     
     ??? tip "4.3. Nhầm tung độ với độ dốc"
     
-        Nếu $f(3)=7,f'(3)=4$, hãy viết $y-7=4(x-3)$; kiểm cả điểm và độ dốc. [Luyện lại B31-C08](../luyen-tap/?item=THPT-G11-CHIX-B31-C08)
+        Nếu $f(3)=7,f'(3)=4$, hãy viết $y-7=4(x-3)$; kiểm cả điểm và độ dốc. <a href="../luyen-tap/?item=THPT-G11-CHIX-B31-C08">Luyện lại B31-C08</a>
 
-    [Core và Luyện tập Bài 31](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập Bài 31</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-ix/">Tự luận Chương IX</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
 
-*Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 31, trang in 81–87.*
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 31 (trang in 81–87). SBT cùng bộ hỗ trợ luyện tập; SGK S1 quyết định kiến thức chính thức.</p>
