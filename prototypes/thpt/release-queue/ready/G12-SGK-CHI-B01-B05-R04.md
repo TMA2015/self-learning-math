@@ -36,18 +36,18 @@ One complete source-only author Q18 custody packet on five original Golden learn
 ## A1_A7_AUTHORING
 - [x] A1_SOURCE_SNAPSHOT — Exactly 18 original path/blob sources, five original canonical learners, existing 78 immutable bank item JSON, original JS/CSS/7 SVG SHA locked
 - [x] A2_SGK_SBT_SCOPE — Historic original owner SGK/SBT KNTT 12 T1 PDF SHA and printed B01 5–14 B02 15–19 B03 20–25 B04 26–32 B05 33–41/end42–44; no new full scanned PDF pass claimed
-- [x] A3_SOURCE_Q18_AUTHOR_REVIEW — Current owner-effective v3.2.0 Q18 author self-verified academic/PED on exact new five learner blobs; historic independent R00 and targeted B01 W01/W02 R01 reviewer scoped to prior source, not new R04 independent NotebookLM PASS
-- [x] A4_Q15_CANONICAL_COVERAGE — 36 original outcomes (32 lesson+4 integrated); immutable 78 original JSON canonical (66 lesson/hub+12 END) plus36 unscored Knowledge FirstTry =>114 unique item–outcome–role mapped
-- [x] A5_D1_D6_MATHEMATICS — Five fully source-nested Golden, 32 worked reasoned EX (5+6+6+8+7), 7 instructional SVG including B04 (2/1) rational, 36 local cause-based D6+36 legacy JSON help
-- [x] A6_DELTA_QA — All 36 FirstTry opt-in concealed and local repair, no MathJax imbalance; 72 equivalent learner links converted and five bad end links corrected; SGK printed-page footers; no author-detected P0/P1
-- [x] A7_SOURCE_PRIVATE_BOUNDARY — Original official owner-held private RD1 never copied; 12 exposed public END selfcheck only CLIENT_SELF_CHECK_NO_MASTERY; no Q16 runtime or Mastery changes
+- [x] A3_NOTEBOOKLM_VERDICT — Current owner-effective v3.2.0 Q18 author self-verified academic/PED on exact new five learner blobs; historic independent R00 and targeted B01 W01/W02 R01 reviewer scoped to prior source, not new R04 independent NotebookLM PASS
+- [x] A4_ITEM_OUTCOME_IDS — 36 original outcomes (32 lesson+4 integrated); immutable 78 original JSON canonical (66 lesson/hub+12 END) plus36 unscored Knowledge FirstTry =>114 unique item–outcome–role mapped
+- [x] A5_D1_D6_SCOPE — Five fully source-nested Golden, 32 worked reasoned EX (5+6+6+8+7), 7 instructional SVG including B04 (2/1) rational, 36 local cause-based D6+36 legacy JSON help
+- [x] A6_DELTA_RESOLVED — All 36 FirstTry opt-in concealed and local repair, no MathJax imbalance; 72 equivalent learner links converted and five bad end links corrected; SGK printed-page footers; no author-detected P0/P1
+- [x] A7_PUBLIC_PRIVATE_BOUNDARY — Original official owner-held private RD1 never copied; 12 exposed public END selfcheck only CLIENT_SELF_CHECK_NO_MASTERY; no Q16 runtime or Mastery changes
 
 ## PED1_PED6
 - [x] PED1_MOTIVATION — Study derivative sign, global extrema, asymptotes, complete graph and engineering/economic feasible optimization because applied decisions need these
 - [x] PED2_PREREQUISITES — Explicit G11 limits/derivative, connected domain, closed endpoints, coordinate axes, dimension units
 - [x] PED3_MEANING_FIRST — Monotonic comparison before theorem, attained maximum vs bound, distance/limit before asymptote and constraint/dimension before minimization
-- [x] PED4_VISUAL_READING — Seven read-cued author SVG including B04 complete quadratic-over-linear graph and correct branch points
-- [x] PED5_METHOD_LIMITATIONS — 32 checked worked examples including stationary not necessarily extrema, removable hole, full (2/1) variation, nonattainment in open intervals, closed vs no-top cylinder optimization
+- [x] PED4_EXPLAINED_VISUAL — Seven read-cued author SVG including B04 complete quadratic-over-linear graph and correct branch points
+- [x] PED5_REASONED_EXAMPLES — 32 checked worked examples including stationary not necessarily extrema, removable hole, full (2/1) variation, nonattainment in open intervals, closed vs no-top cylinder optimization
 - [x] PED6_FIRST_TRY_REMEDIATION — 36 source-specific Knowledge TRY with opt-in answers and specific why-error and correct same-outcome Core retry, plus original 36 JSON HELP
 
 ## QUALITY_Q01_Q18_EVIDENCE
@@ -56,10 +56,10 @@ The only normative source `SLM-THPT-QUALITY-ONE v3.2.0` at `prototypes/thpt/THPT
 ## RELEASE_R1_R5_AP1_AP5_P1_P2_NOT_AUTHORING
 - [ ] R1_INTEGRATED_CURRENT_MAIN — Draft #1003 source has not been merged or integrated by RELEASE
 - [ ] R2_EXACT_HEAD_CI — Actual final-HEAD CI of release integration and V2/Golden needs separate RELEASE authorization and QA
-- [ ] R3_STUDENT_UI_AP1_AP5 — Actual screen visual Golden/MathJax/SVG, keyboard, 390/820/1440 responsiveness and link focus not author-certified
-- [ ] R4_PROTECTED_FINAL_SUBMIT — Existing public END client selfcheck and official private RD1 Final Submit privacy/score must be runtime-verified by RELEASE
+- [ ] R3_CLEAN_STUDENT_UI — Actual screen visual Golden/MathJax/SVG, keyboard, 390/820/1440 responsiveness and link focus not author-certified
+- [ ] R4_ASSESSMENT_SAFETY — Existing public END client selfcheck and official private RD1 Final Submit privacy/score must be runtime-verified by RELEASE
 - [ ] R5_OWNER_APPROVAL — No owner approval for merge/deploy of this R04
-- [ ] P1_SITE_PUBLISH — No production site SHA parity, build/deploy, or LIVE status claimed
+- [ ] P1_DEPLOY_RECEIPT — No production site SHA parity, build/deploy, or LIVE status claimed
 - [ ] P2_DEVICE_UAT — No owner physical device mobile/iPad/Safari acceptance claimed
 
 Original private official RD1 owner-held outside GitHub and no answers/rubrics included. Existing 12 exposed public END items only `CLIENT_SELF_CHECK_NO_MASTERY` after Final Submit and not qualified as independent `SGK_CHAPTER_READINESS`. No original JSON/JS/CSS bank change, no Firebase/Auth/records/scoring/Topic or production changes.
