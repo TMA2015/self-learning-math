@@ -138,7 +138,7 @@
 
     ### 1.8. Một điểm và một độ dốc
     
-    Biết tiếp điểm $(a,f(a))$ và hệ số góc $k=f'(a)$ thì dùng phương trình đường thẳng qua điểm. Khi thiết kế đường cong, có thể đi ngược từ yêu cầu độ dốc để tìm tham số.
+    Biết tiếp điểm $(a,f(a))$ và hệ số góc $k=f'(a)$ thì dùng phương trình đường thẳng qua điểm: $y-f(a)=k(x-a)$. Tỉ số mức tăng tung độ trên mức tăng hoành độ chính là k. Khi thiết kế đường cong, có thể đi ngược từ yêu cầu độ dốc để tìm tham số.
     
     **Vận dụng.** Biết $f(-1)=6,f'(-1)=-2$. Viết phương trình tiếp tuyến.
     
@@ -212,7 +212,7 @@
 
     ### 2.1. Một số bài toán dẫn đến khái niệm đạo hàm
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Một số bài toán dẫn đến khái niệm đạo hàm.</strong><p>Tốc độ biến đổi trung bình của \(y=f(x)\) trên hai đầu mút \(a,b\) khác nhau là \(\dfrac{f(b)-f(a)}{b-a}\). Khi \(b\) tiến đến \(a\), giới hạn hữu hạn của tỉ số này diễn tả tốc độ tức thời. Với tọa độ \(s(t)\) (m), vận tốc tức thời \(v(t)=s'(t)\) (m/s) và tốc độ \(|v(t)|\); với điện lượng \(Q(t)\) (C), \(I(t)=Q'(t)\) (A). Dấu phụ thuộc chiều quy ước; chỉ áp dụng trong khoảng mô hình có ý nghĩa.</p></div>
+    <p>Tốc độ biến đổi trung bình của \(y=f(x)\) trên hai đầu mút \(a,b\) khác nhau là \(\dfrac{f(b)-f(a)}{b-a}\). Khi \(b\) tiến đến \(a\), giới hạn hữu hạn của tỉ số này diễn tả tốc độ tức thời. Với tọa độ \(s(t)\) (m), vận tốc tức thời \(v(t)=s'(t)\) (m/s) và tốc độ \(|v(t)|\); với điện lượng \(Q(t)\) (C), \(I(t)=Q'(t)\) (A). Dấu phụ thuộc chiều quy ước; chỉ áp dụng trong khoảng mô hình có ý nghĩa.</p>
 
     ### 2.2. Đạo hàm của hàm số tại một điểm
     
@@ -221,19 +221,29 @@
     \[f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}
     =\lim_{h\to0}\frac{f(a+h)-f(a)}{h}.\]
     
-    Tính \(f(a)\) → lập và rút gọn thương với \(h\ne0\) → lấy giới hạn hai phía. Nếu hai phía khác nhau hoặc giới hạn không hữu hạn thì không có đạo hàm hữu hạn thông thường tại điểm ấy. Có đạo hàm suy ra liên tục vì hiệu \(f(a+h)-f(a)=h\) nhân thương sai phân tiến về 0. Chiều ngược lại sai: tại 0, \(|x|\) có hai độ dốc −1 và 1. Ở đầu mút miền xác định không tự khẳng định đạo hàm hai phía.</p></div>
+    </p></div>
+
+    **Cách tính:** Tính $f(a)$, lập và rút gọn thương với $h\ne0$, rồi lấy giới hạn hai phía. Nếu hai phía khác nhau hoặc giới hạn không hữu hạn thì không có đạo hàm hữu hạn thông thường tại điểm ấy. **Tính chất:** Có đạo hàm suy ra liên tục vì hiệu $f(a+h)-f(a)$ bằng $h$ nhân thương sai phân hữu hạn, nên tiến về 0. Chiều ngược lại sai: tại 0, $|x|$ có hai độ dốc −1 và 1. Ở đầu mút miền xác định không tự khẳng định đạo hàm hai phía.
 
     ### 2.3. Đạo hàm của hàm số trên một khoảng
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Đạo hàm của hàm số trên một khoảng.</strong><p>Nếu \(f\) có đạo hàm tại mọi điểm \(x\) của khoảng \(I\), ta gọi \(f\) có đạo hàm trên \(I\) và kí hiệu hàm mới là \(f'(x)\) hoặc \(y'\). Chẳng hạn với hằng số c, thương sai phân của \(c\) bằng 0, của \(x\) bằng 1, của \(cx^2\) bằng \(2cx+ch\). Vì vậy \((c)'=0\), \((x)'=1\), \((cx^2)'=2cx\). Tương tự \((kx+c)'=k\). Xác định khoảng của hàm gốc trước khi phát biểu khả vi.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Đạo hàm của hàm số trên một khoảng.</strong><p>Nếu \(f\) có đạo hàm tại mọi điểm \(x\) của khoảng \(I\), ta gọi \(f\) có đạo hàm trên \(I\) và kí hiệu hàm mới là \(f'(x)\) hoặc \(y'\).</p></div>
+
+    Chẳng hạn với hằng số c, thương sai phân của c bằng 0, của x bằng 1, của $cx^2$ bằng $2cx+ch$.
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Các công thức suy từ định nghĩa.</strong><p>\((c)'=0\), \((x)'=1\), \((cx^2)'=2cx\), \((kx+c)'=k\).</p></div>
+
+    Xác định khoảng của hàm gốc trước khi phát biểu khả vi.
 
     ### 2.4. Ý nghĩa hình học của đạo hàm
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Ý nghĩa hình học của đạo hàm.</strong><p>Cát tuyến PQ với \(P(a,f(a)),Q(a+h,f(a+h))\) có hệ số góc là thương sai phân. Khi \(h\to0\), nếu hệ số góc có giới hạn hữu hạn, tiếp tuyến tại P có hệ số góc \(k=f'(a)\):
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Ý nghĩa hình học của đạo hàm.</strong><p>Cát tuyến PQ với \(P(a,f(a)),Q(a+h,f(a+h))\) có hệ số góc là thương sai phân. Khi \(h\to0\), nếu hệ số góc có giới hạn hữu hạn, tiếp tuyến tại P có hệ số góc \(k=f'(a)\).</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Phương trình tiếp tuyến.</strong><p>
     
-    \[y-f(a)=f'(a)(x-a).\]
-    
-    Nếu tiếp tuyến tạo góc \(\alpha\) với chiều dương trục hoành (góc không phải 90°), \(k=\tan\alpha\). Với đường dốc có góc nghiêng không quá \(\theta\) so với phương ngang, yêu cầu \(|f'(x)|\le\tan\theta\) (\(0\le\theta\lt90^\circ\)). Có thể tìm tham số của mô hình parabol từ độ dốc tại các điểm; sau đó kiểm lại chiều cao, đơn vị và toàn bộ đoạn đường. SGK dùng dạng cầu parabol và đường nối có độ dốc cho trước; xem các ví dụ mới dưới đây.</p></div>
+    \[y-f(a)=f'(a)(x-a).\]</p></div>
+
+    Nếu tiếp tuyến tạo góc \(\alpha\) với chiều dương trục hoành (góc không phải 90°), \(k=\tan\alpha\). Với đường dốc có góc nghiêng không quá \(\theta\) so với phương ngang, yêu cầu \(|f'(x)|\le\tan\theta\) (\(0\le\theta\lt90^\circ\)). Có thể tìm tham số của mô hình parabol từ độ dốc tại các điểm; sau đó kiểm lại chiều cao, đơn vị và toàn bộ đoạn đường. Xem ví dụ cầu parabol và đường nối có độ dốc cho trước ở tab Ví dụ.
 
 === "Ví dụ"
 
