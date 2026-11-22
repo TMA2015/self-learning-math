@@ -56,7 +56,7 @@ const init=()=>{
   button.id="topic01-group-tab-"+id;button.setAttribute("role","tab");
   button.dataset.topic01ModuleTab=id;button.setAttribute("aria-controls","topic01-group-"+id);
   button.textContent=heading.textContent;
-  const panel=document.createElement("section");panel.className="thpt-r4-knowledge-panel thpt-r4-knowledge-module-panel";
+  const panel=document.createElement("section");panel.className="thpt-r4-knowledge-panel thpt-r4-knowledge-module-panel tabbed-block";heading.classList.add("thpt-g10-section-heading");
   panel.id="topic01-group-"+id;panel.dataset.topic01ModulePanel=id;
   panel.setAttribute("role","tabpanel");panel.setAttribute("aria-labelledby",button.id);
   let node=heading;
@@ -75,7 +75,7 @@ const init=()=>{
    b.dataset.topic01Subtab=tabId;b.id="topic01-subtab-"+tabId;b.setAttribute("role","tab");
    b.setAttribute("aria-controls","topic01-content-"+tabId);
    b.textContent=header.textContent;
-   const p=document.createElement("section");p.className="thpt-r4-knowledge-panel thpt-r4-knowledge-content-panel";
+   const p=document.createElement("section");p.className="thpt-r4-knowledge-panel thpt-r4-knowledge-content-panel tabbed-block";
    p.id="topic01-content-"+tabId;p.setAttribute("role","tabpanel");p.setAttribute("aria-labelledby",b.id);
    let child=header;while(child&&child!==until){const nextChild=child.nextSibling;p.appendChild(child);child=nextChild;}
    subTabs.appendChild(b);wrapper.appendChild(p);buttons.push(b);panels.push(p);
@@ -166,7 +166,7 @@ function initTopic01Selfcheck(){
  const items=[];
  for(const n of nodes){if(n.nodeType!==8)continue;const id=n.textContent.match(/PUBLIC_REPLAY_ONLY:\s*([A-Z0-9-]+)/)?.[1];if(!id)continue;let p=n.nextSibling;while(p&&p.nodeType!==1)p=p.nextSibling;const num=Number(p?.querySelector(":scope > strong")?.textContent.match(/^Câu (\d+)\./)?.[1]);if(p?.tagName!=="P"||!num)throw Error("Invalid public replay");const stem=p.cloneNode(true);stem.querySelector(":scope > strong").remove();items.push({id,num,stem})}
  if(items.length!==11||items.some((q,i)=>q.num!==i+1)||new Set(items.map(q=>q.id)).size!==11)return;
- const root=el("div","");root.dataset.g10ChapterSelfcheck="TOP01";root.dataset.topic01PublicSelfcheck="1";
+ const root=el("div","");root.dataset.g10ChapterSelfcheck="TOP01";root.dataset.g10scBound="topic-public-replay";root.dataset.topic01PublicSelfcheck="1";
  root.append(el("h2","g10sc-heading","Tự kiểm tra chuyên đề 01"),el("p","g10sc-notice","Em tự làm từng câu trên giấy, sau đó mở Đối chiếu. Không chấm điểm tự động, không ghi điểm thành thạo."));
  const progress=el("p","g10sc-progress"),nav=el("div","g10sc-jump"),body=el("section","g10sc-body"),controls=el("div","g10sc-controls"),prev=el("button","g10sc-button","Câu trước"),next=el("button","g10sc-button","Câu tiếp");prev.type=next.type="button";controls.append(prev,next);root.append(progress,nav,body,controls,el("p","g10sc-notice","Học liệu được xây dựng dựa trên Chương I SGK Toán 10, Tập Một – Kết nối tri thức với cuộc sống."));
  const shelf=el("div","");shelf.hidden=true;shelf.dataset.topic01SelfcheckSource="1";marker.after(root,shelf);nodes.forEach(n=>shelf.append(n));marker.dataset.ready="1";
