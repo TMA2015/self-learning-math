@@ -1,217 +1,259 @@
 # Toán 12 · Bài 12. Tích phân
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 12–18</p><p class="thpt-r4-lead">Hiểu bản chất trước công thức, xem ví dụ có suy luận, đọc hình PNG gốc đã review và tự thử trước Core.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../bai-11/">Bài 11 · Ôn lại</a><a href="../bai-13/">Bài 13 · Học tiếp</a></nav></div>
-
-## 1. Vì sao cần học và kiến thức tiền đề
-
-Một lượng biến thiên liên tục phải cộng dồn qua thời gian/khoảng; định lí Newton–Leibniz giúp chuyển bài toán cộng dồn thành hiệu hai giá trị nguyên hàm. Dấu âm có ý nghĩa phương hướng, không làm diện tích âm.
-
-**Tiền đề cần tự kiểm:** nguyên hàm, số có dấu, hàm liên tục trên đoạn, giá trị tại cận; xem lại B11 nếu sai +C.
-
-## 2. Hiểu bản chất, công thức và điều kiện
-
-<!-- OUTCOME_ID: G12-CHIV-B12-O01 -->
-
-### 1. Tích phân xác định: lấy giá trị nguyên hàm ở hai cận
-
-- **Vì sao cần biết:** Cộng dồn biến đổi liên tục trên một khoảng thay vì cộng nhiều bước rời rạc.
-
-- **Kiến thức tiền đề:** Hàm liên tục trên đoạn và nguyên hàm F trên đoạn.
-
-- **Bản chất trước công thức:** Tích phân xác định là một số phụ thuộc f và hai cận; nếu F'=f thì lấy F(b)−F(a), không kèm +C.
-
-- **Định nghĩa và công thức:** \(\int_a^b f(x)dx=F(b)-F(a).\)
-
-- **Điều kiện và giới hạn:** f liên tục trên [a,b] trong mức SGK; kiểm cận trên/dưới và đơn vị khi có ngữ cảnh.
-
-- **Lý do chọn phương pháp:** Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.
-
-#### Ví dụ có suy luận
-
-**Đề:** Tính ∫_0^3 2x dx.
-
-**Lời giải có suy luận:** F=x²; F(3)−F(0)=9. Không viết +C vào kết quả tích phân xác định. Lý do chọn cách giải: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu. Kiểm điều kiện áp dụng: f liên tục trên [a,b] trong mức SGK; kiểm cận trên/dưới và đơn vị khi có ngữ cảnh.
-
-**Bẫy cần tự phát hiện:** Tính F(a)−F(b) (đảo dấu) hoặc giữ +C ở kết quả xác định.
-
-<!-- OUTCOME_ID: G12-CHIV-B12-O02 -->
-
-### 2. Tính tuyến tính của tích phân xác định
-
-- **Vì sao cần biết:** Một tốc độ tổng hợp bởi nhiều thành phần có lượng tích lũy bằng tổng phần tích lũy.
-
-- **Kiến thức tiền đề:** Tính tuyến tính nguyên hàm và Newton–Leibniz.
-
-- **Bản chất trước công thức:** Có thể đưa hằng số ra ngoài và tách tổng/hiệu dưới dấu tích phân cùng hai cận.
-
-- **Định nghĩa và công thức:** \(\int_a^b(\alpha f+\beta g)dx=\alpha\int_a^b fdx+\beta\int_a^b gdx.\)
-
-- **Điều kiện và giới hạn:** Điều kiện các hàm khả tích/liên tục ở mức bài và cùng khoảng tích phân; nếu đổi cận phải đổi dấu.
-
-- **Lý do chọn phương pháp:** Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.
-
-#### Ví dụ có suy luận
-
-**Đề:** Tính ∫_0^1 (4x+2)dx.
-
-**Lời giải có suy luận:** F=2x²+2x, kết quả F(1)−F(0)=4. Lý do chọn cách giải: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F. Kiểm điều kiện áp dụng: Điều kiện các hàm khả tích/liên tục ở mức bài và cùng khoảng tích phân; nếu đổi cận phải đổi dấu.
-
-**Bẫy cần tự phát hiện:** Tách ∫(f+g) rồi quên một hệ số hoặc dùng hai cận khác nhau.
-
-<!-- OUTCOME_ID: G12-CHIV-B12-O03 -->
-
-### 3. Cận đảo chiều, đoạn ghép và đoạn có độ dài 0
-
-- **Vì sao cần biết:** Đại lượng tích lũy khi đi ngược hướng đổi dấu, còn ghép hai chặng phải bằng tổng các chặng.
-
-- **Kiến thức tiền đề:** Số có dấu, cộng đại số, định nghĩa tích phân xác định.
-
-- **Bản chất trước công thức:** ∫_a^a f=0, ∫_b^a f=−∫_a^b f và ∫_a^c f+∫_c^b f=∫_a^b f.
-
-- **Định nghĩa và công thức:** \(\int_a^b fdx=-\int_b^a fdx;\quad\int_a^b fdx=\int_a^c fdx+\int_c^b fdx.\)
-
-- **Điều kiện và giới hạn:** f liên tục trên khoảng chứa các cận; a,b,c có thể hoán vị, đẳng thức luôn theo dấu.
-
-- **Lý do chọn phương pháp:** Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.
-
-#### Ví dụ có suy luận
-
-**Đề:** Biết ∫_0^2 f=4, ∫_2^5 f=−1. Tìm ∫_5^0 f.
-
-**Lời giải có suy luận:** ∫_0^5 f=4+(−1)=3, nên ∫_5^0 f=−3. Lý do chọn cách giải: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu. Kiểm điều kiện áp dụng: f liên tục trên khoảng chứa các cận; a,b,c có thể hoán vị, đẳng thức luôn theo dấu.
-
-**Bẫy cần tự phát hiện:** Xem tích phân như độ dài tuyệt đối nên luôn dương; khi đảo cận quên dấu trừ.
-
-<!-- OUTCOME_ID: G12-CHIV-B12-O04 -->
-
-### 4. Diện tích dưới đồ thị không âm
-
-- **Vì sao cần biết:** Một diện tích liên tục không thể tính bằng tổng hình chữ nhật nhỏ chính xác hữu hạn, nhưng giới hạn của tổng cho tích phân.
-
-- **Kiến thức tiền đề:** Hình thang cong với f liên tục không âm, trục Ox và hai đường x=a,b.
-
-- **Bản chất trước công thức:** Nếu f(x)≥0 trên [a,b], diện tích hình giới hạn bằng ∫_a^b f(x)dx.
-
-- **Định nghĩa và công thức:** \(S=\int_a^b f(x)dx\quad\text{khi }f(x)\ge0.\)
-
-- **Điều kiện và giới hạn:** Phải chứng minh hoặc nhận diện f≥0 trên đoạn, đơn vị diện tích là đơn vị x nhân đơn vị y.
-
-- **Lý do chọn phương pháp:** Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.
-
-#### Ví dụ có suy luận
-
-**Đề:** Tính diện tích dưới y=3x trên [0,2].
-
-**Lời giải có suy luận:** Vì 3x≥0 trên [0,2], S=∫_0^2 3x dx=[3x²/2]_0²=6 đơn vị². Lý do chọn cách giải: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng. Kiểm điều kiện áp dụng: Phải chứng minh hoặc nhận diện f≥0 trên đoạn, đơn vị diện tích là đơn vị x nhân đơn vị y.
-
-**Bẫy cần tự phát hiện:** Tự động gắn S=∫ f cho f âm hoặc qua chỗ cắt trục.
-
-<!-- OUTCOME_ID: G12-CHIV-B12-O05 -->
-
-### 5. Tích phân có dấu khác diện tích và quãng đường
-
-- **Vì sao cần biết:** Khi vật quay đầu hoặc đồ thị đi dưới trục, phần âm làm độ dời triệt tiêu nhưng quãng đường/diện tích vẫn có.
-
-- **Kiến thức tiền đề:** Giải phương trình f(x)=0 và chia đoạn theo dấu.
-
-- **Bản chất trước công thức:** ∫f là tích lũy có dấu; diện tích là ∫|f|, vận tốc đổi dấu cho độ dời ∫v nhưng quãng đường ∫|v|.
-
-- **Định nghĩa và công thức:** \(S=\int_a^b|f(x)|dx\quad\text{(diện tích giữa đồ thị và trục)}.\)
-
-- **Điều kiện và giới hạn:** Chia tại mọi nghiệm/điểm đổi dấu trong đoạn; không lấy trị tuyệt đối kết quả tích phân tổng (|∫f| có thể nhỏ hơn ∫|f|).
-
-- **Lý do chọn phương pháp:** Lập bảng dấu, chia cận, đổi dấu trên vùng âm, cộng phần diện tích dương.
-
-#### Ví dụ có suy luận
-
-**Đề:** Với f(x)=x trên [−1,1], so sánh ∫f và ∫|f|.
-
-**Lời giải có suy luận:** ∫_{−1}^1 xdx=0 (phần âm triệt dương), nhưng ∫|x|=∫_{−1}^0(−x)+∫_0^1 x=1. Lý do chọn cách giải: Lập bảng dấu, chia cận, đổi dấu trên vùng âm, cộng phần diện tích dương. Kiểm điều kiện áp dụng: Chia tại mọi nghiệm/điểm đổi dấu trong đoạn; không lấy trị tuyệt đối kết quả tích phân tổng (|∫f| có thể nhỏ hơn ∫|f|).
-
-**Bẫy cần tự phát hiện:** Lấy |∫f| thay cho ∫|f| hoặc nghĩ đồ thị âm tạo “diện tích âm”.
-
-<!-- OUTCOME_ID: G12-CHIV-B12-O06 -->
-
-### 6. Tích phân xác định của lượng giác, hàm mũ
-
-- **Vì sao cần biết:** Lượng tích lũy của biến thiên tuần hoàn hoặc hàm mũ được tính chính xác bằng nguyên hàm đã học.
-
-- **Kiến thức tiền đề:** Nguyên hàm e^x, sin, cos; π và ln là giá trị chính xác.
-
-- **Bản chất trước công thức:** Dùng F(b)−F(a); ∫cos=sin, ∫sin=−cos, ∫e^x=e^x.
-
-- **Định nghĩa và công thức:** \(\int_0^\pi\sin xdx=[-\cos x]_0^\pi=2.\)
-
-- **Điều kiện và giới hạn:** Bài trig dùng radian; dấu và giá trị đặc biệt ở các cận phải chính xác, ln2 là số dương.
-
-- **Lý do chọn phương pháp:** Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
-
-#### Ví dụ có suy luận
-
-**Đề:** Tính ∫_0^{π/2}(sin x+cos x)dx.
-
-**Lời giải có suy luận:** F=−cos x+sin x; F(π/2)=1, F(0)=−1; tích phân=2. Lý do chọn cách giải: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ. Kiểm điều kiện áp dụng: Bài trig dùng radian; dấu và giá trị đặc biệt ở các cận phải chính xác, ln2 là số dương.
-
-**Bẫy cần tự phát hiện:** Nhầm sinπ=1 hoặc quên dấu khi ∫sinx dx=−cosx.
-
-<!-- OUTCOME_ID: G12-CHIV-B12-O07 -->
-
-### 7. Tích phân tốc độ để tính lượng tích lũy
-
-- **Vì sao cần biết:** Vận tốc, lưu lượng và mức tiêu thụ biến thiên theo thời gian; tích phân tạo biến đổi tổng.
-
-- **Kiến thức tiền đề:** Đơn vị rate × thời gian; phân biệt độ dời và quãng đường khi rate có dấu.
-
-- **Bản chất trước công thức:** ΔQ=∫_a^b Q'(t)dt; nếu Q'≥0 thì đây là lượng tăng thực, nếu âm có suy giảm.
-
-- **Định nghĩa và công thức:** \(Q(b)-Q(a)=\int_a^b Q'(t)dt.\)
-
-- **Điều kiện và giới hạn:** Giữ cùng đơn vị thời gian, đổi giây sang giờ nếu đầu bài cần; không giả định độ dời là quãng đường khi v có thể âm.
-
-- **Lý do chọn phương pháp:** Lập tích phân từ đầu đến cuối, tính và kiểm thứ nguyên/kịch bản sign.
-
-#### Ví dụ có suy luận
-
-**Đề:** Dòng chảy q(t)=5+2t (lít/phút) trong 0≤t≤3. Tính nước đã chảy.
-
-**Lời giải có suy luận:** ∫_0³(5+2t)dt=[5t+t²]_0³=15+9=24 lít; q≥0. Lý do chọn cách giải: Lập tích phân từ đầu đến cuối, tính và kiểm thứ nguyên/kịch bản sign. Kiểm điều kiện áp dụng: Giữ cùng đơn vị thời gian, đổi giây sang giờ nếu đầu bài cần; không giả định độ dời là quãng đường khi v có thể âm.
-
-**Bẫy cần tự phát hiện:** Đổi vận tốc âm thành dương trước khi tính độ dời hoặc bỏ qua đơn vị phút/giờ.
-
-## 3. Đọc hình minh họa gốc
-
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHIV-B12-SIGNED-AREA-R00.png" alt="Đồ thị y=x trên [-2,2], vùng âm và dương triệt tiêu khi lấy tích phân có dấu nhưng cùng đóng góp dương vào diện tích. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán." /><figcaption>Đồ thị y=x trên [-2,2], vùng âm và dương triệt tiêu khi lấy tích phân có dấu nhưng cùng đóng góp dương vào diện tích. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán.</figcaption></figure>
-
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHIV-B12-NEWTON-LEIBNIZ-R00.png" alt="Vùng hình thang cong dưới y=2x, 0 đến 2, được tính từ F(2)−F(0). Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán." /><figcaption>Vùng hình thang cong dưới y=2x, 0 đến 2, được tính từ F(2)−F(0). Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán.</figcaption></figure>
-
-## 4. Tự thử trước Core
-
-Hãy tự giải rồi mới chủ động mở đối chiếu. Không ghi điểm hay Mastery.
-
-<!-- FIRST_TRY_ID: B12-T01 -->
-### Tình huống 1
-
-Nếu f(x)=x từ −1 đến1, tổng tích phân có dấu có bằng diện tích hình học không?
-
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
-
-Không: ∫_{−1}¹x dx=0, nhưng S=∫|x|dx=1.
-
-</details>
-
-<!-- FIRST_TRY_ID: B12-T02 -->
-### Tình huống 2
-
-Cho ∫_0²f=3 và ∫_2⁵f=−4. Không tìm f, hãy tính ∫_5⁰f.
-
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
-
-∫_0⁵f=−1 nên ∫_5⁰f=1.
-
-</details>
-
-## 5. Chuyển sang Core và Luyện tập
-
-Sau khi học kiến thức và tự thử, em luyện đúng Bài 12; hãy tự giải từng câu trước khi nộp để xem lời giải hoặc rubric.
-
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b12-core">✎ Core · Bài 12</a><a href="../luyen-tap/#b12-practice">✎ Luyện tập, Vận dụng và Tự luận</a><a href="../luyen-tap/#b12-help">Khi gặp khó khăn</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 12–18</p><p class="thpt-r4-lead">Hiểu bản chất, đọc hình, tự vận dụng và đối chiếu trước khi luyện tập.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../bai-11/">Bài 11 · Ôn lại</a><a href="../bai-13/">Bài 13 · Học tiếp</a></nav></div>
+
+=== "Khám phá kiến thức"
+
+    Một tốc độ không đổi nhân thời gian cho lượng tích lũy. Khi tốc độ thay đổi, chia khoảng thành lát nhỏ, mỗi lát gần như tốc độ nhân độ dài, rồi cộng. Tích phân là kết quả chính xác của phép cộng dồn ấy. Ôn nguyên hàm, hàm liên tục và dấu.
+
+    ### 1.1. Từ diện tích tích lũy đến nguyên hàm
+    
+    Với f liên tục và không âm, gọi S(t) là diện tích dưới f từ a tới t. Khi tăng t một lượng nhỏ h, diện tích tăng gần $f(t)h$; chia h rồi lấy giới hạn cho $S'(t)=f(t)$. Vì S(a)=0, nếu F'=f thì S(t)=F(t)-F(a). Đây là cầu nối tới Newton–Leibniz.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIV-B12-NEWTON-R02.svg" alt="Đường y=x+2 với vùng từ 0 tới t và lát tăng thêm [t,t+h]."/><figcaption>Chiều cao lát gần f(t). Khi h nhỏ, phần diện tích tăng chia h tiến tới f(t); không đọc diện tích từ một điểm.</figcaption></figure>
+    
+    **Vận dụng.** Với $f(x)=x+2$ trên [0,4], viết S(t) từ 0 đến t bằng diện tích hình thang, kiểm S'(t).
+    
+    <span data-ped-first-try="1" data-outcome-id="G12-CHIV-B12-O01" data-thpt-first-try-id="THPT-G12-B12-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $S(t)=t(2+t+2)/2=t^2/2+2t$. $S'=t+2=f(t)$. $S(4)=16$.
+    
+    <span data-thpt-help-id="HELP-G12-B12-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Phân biệt biến t trong hàm diện tích và cận cố định a. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p01). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.2. Tuyến tính của lượng tích lũy
+    
+    Mỗi lát của tổng hai tốc độ bằng tổng hai lát; hệ số hằng đưa ra ngoài. Cùng cận và cùng miền liên tục.
+    
+    **Vận dụng.** Tính $\int_0^2(3x+4)dx$.
+    
+    <span data-ped-first-try="2" data-outcome-id="G12-CHIV-B12-O02" data-thpt-first-try-id="THPT-G12-B12-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $[3x^2/2+4x]_0^2=6+8=14$.
+    
+    <span data-thpt-help-id="HELP-G12-B12-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Giữ hệ số và dùng cận trên trừ cận dưới. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p02). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.3. Ghép cận và đổi chiều
+    
+    Đi từ a tới c rồi c tới b cho cùng độ biến thiên có dấu như a tới b. Đổi hướng toàn hành trình làm đổi dấu; từ a tới a bằng 0.
+    
+    **Vận dụng.** Biết $\int_1^4 f=7$, $\int_4^6 f=-3$. Tính $\int_6^1 f$ và $\int_4^4 f$.
+    
+    <span data-ped-first-try="3" data-outcome-id="G12-CHIV-B12-O03" data-thpt-first-try-id="THPT-G12-B12-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $\int_1^6 f=4$, nên $\int_6^1 f=-4$; tích phân từ 4 tới 4 bằng 0.
+    
+    <span data-thpt-help-id="HELP-G12-B12-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Vẽ trục cận và mũi tên chiều đi. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p03). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.4. Diện tích dưới hàm không âm
+    
+    Chiều cao f(x) không âm thì tổng lát mỏng bằng diện tích hình phẳng. Kiểm dấu và cận trước khi dùng tích phân.
+    
+    **Vận dụng.** Tính diện tích dưới $y=2x+1$ trên [1,3].
+    
+    <span data-ped-first-try="4" data-outcome-id="G12-CHIV-B12-O04" data-thpt-first-try-id="THPT-G12-B12-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $f>0$; $\int_1^3(2x+1)dx=[x^2+x]_1^3=12-2=10$.
+    
+    <span data-thpt-help-id="HELP-G12-B12-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm bằng hình thang rộng 2, hai cạnh 3 và 7. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p04). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.5. Tích phân có dấu và diện tích thật
+    
+    Lát nằm dưới trục hoành góp âm vào tích phân, nhưng diện tích vẫn dương. Khi hàm đổi dấu, chia ở điểm đổi dấu hoặc lấy tích phân trị tuyệt đối.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/FIG-G12-CHIV-B12-SIGNED-R02.svg" alt="Đồ thị y=x−1 cắt Ox tại 1; phần âm trên [0,1] và phần dương trên [1,4]."/><figcaption>Đọc từng vùng theo dấu; diện tích là tổng hai độ lớn, tích phân là hiệu phần dương và phần âm.</figcaption></figure>
+    
+    **Vận dụng.** Với $f(x)=x-1$ trên [0,4], tính tích phân và diện tích giới hạn với Ox.
+    
+    <span data-ped-first-try="5" data-outcome-id="G12-CHIV-B12-O05" data-thpt-first-try-id="THPT-G12-B12-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Tích phân $[x^2/2-x]_0^4=4$. Hai tam giác có diện tích 1/2 và 9/2, tổng 5. Không lấy |4| làm diện tích.
+    
+    <span data-thpt-help-id="HELP-G12-B12-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Tìm nghiệm x=1; vẽ vùng âm và dương. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.6. Tích phân hàm mũ và lượng giác
+    
+    Dùng bảng nguyên hàm B11, thế cận chính xác rồi trừ. Hàm phải liên tục trên cả đoạn, không chỉ tại hai đầu.
+    
+    **Vận dụng.** Tính $\int_0^\pi 2\sin x\,dx$ và giải thích vì sao không tính $\int_{-1}^1 dx/x$ theo Newton–Leibniz.
+    
+    <span data-ped-first-try="6" data-outcome-id="G12-CHIV-B12-O06" data-thpt-first-try-id="THPT-G12-B12-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $[-2\cos x]_0^\pi=4$. Hàm 1/x không xác định tại 0, không liên tục trên [−1,1]; không dùng công thức SGK trên đoạn này.
+    
+    <span data-thpt-help-id="HELP-G12-B12-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không lấy ln|1|−ln|−1| qua điểm gián đoạn. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p06). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.7. Lượng tích lũy và vận tốc có dấu
+    
+    Độ dời là tích phân vận tốc; quãng đường là tích phân tốc độ |v|. Lưu lượng không âm nhân thời gian cho lượng thực nhận.
+    
+    **Vận dụng.** $v(t)=6-4t$ m/s trên [0,3]. Tính độ dời và quãng đường.
+    
+    <span data-ped-first-try="7" data-outcome-id="G12-CHIV-B12-O07" data-thpt-first-try-id="THPT-G12-B12-TRY07" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** v đổi dấu tại 1,5. Độ dời $[6t-2t^2]_0^3=0$; quãng đường là hai phần 4,5+4,5=9 m.
+    
+    <span data-thpt-help-id="HELP-G12-B12-TRY07" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Giữ dấu cho độ dời, đổi dấu vùng âm cho quãng đường. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+    ### 1.8. Giá trị trung bình của hàm
+    
+    Muốn một mức hằng tạo cùng tổng lượng trên [a,b], lấy tổng chia b−a. Giá trị trung bình của f liên tục là $\frac{1}{b-a}\int_a^b f(x)dx$, với a<b.
+    
+    **Vận dụng.** Nhiệt độ $T(t)=18+2t$ °C, t là số giờ từ 0 đến 4. Tìm nhiệt độ trung bình.
+    
+    <span data-ped-first-try="8" data-outcome-id="G12-CHIV-B12-O07" data-thpt-first-try-id="THPT-G12-B12-TRY08" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $\int_0^4 T(t)dt=72+16=88$ °C·giờ. Chia 4 giờ được 22°C.
+    
+    <span data-thpt-help-id="HELP-G12-B12-TRY08" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Đừng nhầm tích phân với trung bình; kiểm kết quả giữa min và max. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b12-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b12-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Tích phân của một hàm số liên tục
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Tích phân của một hàm số liên tục.</strong><p>Cho f liên tục trên đoạn [a,b], a&lt;b. Với nguyên hàm F của f, \(\int_a^b f(x)\,dx=F(b)-F(a)=[F(x)]_a^b\). Tích phân là một số, không phụ thuộc chọn hằng số C của F. Khi f không âm, tích phân bằng diện tích dưới đồ thị trên [a,b].</p></div>
+
+    ### 2.2. Tính chất của tích phân
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất của tích phân.</strong><p>\(\int_a^a fdx=0;\ \int_a^b fdx=-\int_b^a fdx;\ \int_a^b fdx=\int_a^c fdx+\int_c^b fdx\) khi f liên tục trên khoảng chứa các cận. \(\int_a^b(\alpha f+\beta g)dx=\alpha\int_a^b fdx+\beta\int_a^b gdx\) với f,g liên tục trên đoạn xét. Khi a&lt;b, f≤g thì tích phân f≤ tích phân g.</p></div>
+
+    **Vận dụng:** Độ biến thiên của đại lượng $Q$ khả vi với đạo hàm liên tục là $Q(b)-Q(a)=\int_a^b Q'(t)dt$. Giá trị trung bình của f liên tục trên [a,b] là $\bar f=\frac1{b-a}\int_a^b f(x)dx$ với a<b. Khi tính quãng đường trên [a,b], dùng $\int_a^b|v(t)|dt$, không dùng trị tuyệt đối của độ dời nếu đổi chiều.
+
+=== "Ví dụ"
+
+    ### 3.1. Hai cận
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-01"><p><strong>Đề bài:</strong> Tính \(\int_0^3 2x\,dx\).</p><p><strong>Phân tích:</strong> Tìm nguyên hàm x².</p><p><strong>Lời giải:</strong> \([x^2]_0^3=9\).</p><p><strong>Kiểm lại:</strong> Kết quả không có +C.</p></div>
+
+    ### 3.2. Tuyến tính
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-02"><p><strong>Đề bài:</strong> Tính \(\int_0^1(4x+2)dx\).</p><p><strong>Phân tích:</strong> Nguyên hàm từng hạng.</p><p><strong>Lời giải:</strong> \([2x^2+2x]_0^1=4\).</p><p><strong>Kiểm lại:</strong> Hàm dương, kết quả dương.</p></div>
+
+    ### 3.3. Ghép và đảo cận
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-03"><p><strong>Đề bài:</strong> \(\int_0^2 f=4,\int_2^5 f=-1\). Tìm \(\int_5^0 f\).</p><p><strong>Phân tích:</strong> Ghép theo chiều tăng trước.</p><p><strong>Lời giải:</strong> \(\int_0^5f=3\), nên \(\int_5^0f=-3\).</p><p><strong>Kiểm lại:</strong> Đảo chiều đúng một dấu trừ.</p></div>
+
+    ### 3.4. Diện tích tam giác
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-04"><p><strong>Đề bài:</strong> Tính diện tích dưới y=3x trên [0,2].</p><p><strong>Phân tích:</strong> Hàm không âm.</p><p><strong>Lời giải:</strong> \([3x^2/2]_0^2=6\).</p><p><strong>Kiểm lại:</strong> Tam giác đáy 2 cao 6 cho 6.</p></div>
+
+    ### 3.5. Hai phần trái dấu
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-05"><p><strong>Đề bài:</strong> Tính \(\int_{-1}^1 xdx\) và \(\int_{-1}^1|x|dx\).</p><p><strong>Phân tích:</strong> Phân hai phía của 0.</p><p><strong>Lời giải:</strong> Tích phân có dấu bằng 0; diện tích là 1/2+1/2=1.</p><p><strong>Kiểm lại:</strong> Không lấy |0| thay diện tích.</p></div>
+
+    ### 3.6. Cận lượng giác
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-06"><p><strong>Đề bài:</strong> Tính \(\int_0^{\pi/2}(\sin x+\cos x)dx\).</p><p><strong>Phân tích:</strong> Nguyên hàm −cos+sin.</p><p><strong>Lời giải:</strong> \([-\cos x+\sin x]_0^{\pi/2}=1-(-1)=2\).</p><p><strong>Kiểm lại:</strong> Đúng giá trị đặc biệt ở cận.</p></div>
+
+    ### 3.7. Dòng chảy
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-07"><p><strong>Đề bài:</strong> \(q(t)=5+2t\) lít/phút, trong [0,3]. Tính lượng nước.</p><p><strong>Phân tích:</strong> Lưu lượng dương, tích phân theo phút.</p><p><strong>Lời giải:</strong> \([5t+t^2]_0^3=24\) lít.</p><p><strong>Kiểm lại:</strong> Đơn vị lít/phút nhân phút.</p></div>
+
+    ### 3.8. Giá trị trung bình nhiệt độ
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-R02-08"><p><strong>Đề bài:</strong> \(T(t)=20+t^2/2\) °C, t là số giờ kể từ 6h. Tìm trung bình 6h–10h.</p><p><strong>Phân tích:</strong> Cận [0,4], chia độ dài khoảng.</p><p><strong>Lời giải:</strong> \(\bar T=\frac14[20t+t^3/6]_0^4=68/3\) °C (≈22,67).</p><p><strong>Kiểm lại:</strong> Nằm giữa 20 và 28°C.</p></div>
+
+    ### 3.9. Quãng đường hãm đến lúc dừng
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B12-R02-09"><p><strong>Đề bài:</strong> Xe đang chạy với \(v(t)=18-6t\) m/s đến khi dừng. Tìm thời gian và quãng đường hãm.</p><p><strong>Phân tích:</strong> Tìm lúc v=0, chỉ tích phân trong miền hãm.</p><p><strong>Lời giải:</strong> t=3 s; \(\int_0^3(18-6t)dt=[18t-3t^2]_0^3=27\) m.</p><p><strong>Kiểm lại:</strong> Tam giác đáy 3 cao 18 có diện tích 27; không kéo dài v sang âm.</p></div>
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Từ diện tích tích lũy đến nguyên hàm
+    
+    ??? tip "Cách tự sửa"
+    
+        Phân biệt biến t trong hàm diện tích và cận cố định a. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p01).
+
+    ### 4.2. Tuyến tính của lượng tích lũy
+    
+    ??? tip "Cách tự sửa"
+    
+        Giữ hệ số và dùng cận trên trừ cận dưới. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p02).
+
+    ### 4.3. Ghép cận và đổi chiều
+    
+    ??? tip "Cách tự sửa"
+    
+        Vẽ trục cận và mũi tên chiều đi. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p03).
+
+    ### 4.4. Diện tích dưới hàm không âm
+    
+    ??? tip "Cách tự sửa"
+    
+        Kiểm bằng hình thang rộng 2, hai cạnh 3 và 7. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p04).
+
+    ### 4.5. Tích phân có dấu và diện tích thật
+    
+    ??? tip "Cách tự sửa"
+    
+        Tìm nghiệm x=1; vẽ vùng âm và dương. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p05).
+
+    ### 4.6. Tích phân hàm mũ và lượng giác
+    
+    ??? tip "Cách tự sửa"
+    
+        Không lấy ln|1|−ln|−1| qua điểm gián đoạn. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p06).
+
+    ### 4.7. Lượng tích lũy và vận tốc có dấu
+    
+    ??? tip "Cách tự sửa"
+    
+        Giữ dấu cho độ dời, đổi dấu vùng âm cho quãng đường. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p07).
+
+    ### 4.8. Giá trị trung bình của hàm
+    
+    ??? tip "Cách tự sửa"
+    
+        Đừng nhầm tích phân với trung bình; kiểm kết quả giữa min và max. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b12-c07); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b12-p07).
+
+    [Core Bài 12](../luyen-tap/#b12-core) · [Luyện tập và Tự luận](../luyen-tap/#b12-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b12-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 12–18.*
