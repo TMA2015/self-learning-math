@@ -14,8 +14,8 @@ body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowl
 body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .tabbed-block p,
 body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .tabbed-block li{font-size:inherit;line-height:1.79;overflow-wrap:break-word}
 .topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion{background:#fff3d5;border:1px solid #eacb7c;border-left:4px solid #c49a37;border-radius:8px;padding:13px 16px;color:#27344f;font-size:inherit;line-height:1.7;margin:14px 0;min-width:0;max-width:100%;box-sizing:border-box}
-.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
-.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
 .topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-key-formula{background:transparent;border:1px solid var(--slm-g10-line);border-radius:8px;padding:12px 14px;margin:14px 0;line-height:1.75;font-size:inherit;overflow-x:auto;max-width:100%;box-sizing:border-box}
 .topic01-knowledge-layout :is(.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula)>:first-child{margin-top:0}
 .topic01-knowledge-layout :is(.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula)>:last-child{margin-bottom:0}
