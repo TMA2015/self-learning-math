@@ -37,7 +37,7 @@
 
         **Dấu hiệu:** Em cộng \(\cos60^\circ+\cos30^\circ\) để tìm cos của góc tổng.
 
-        **Tự sửa:** Chỉ góc tổng trên hình rồi áp dụng công thức cộng với hai tích \(\cos u\cos v\) và \(\sin u\sin v\). Dùng \(\cos90^\circ=0\) làm phép kiểm lại. **Luyện lại:** [Core và Luyện tập Bài 2](../luyen-tap/) — thẻ *Bài 2 · Vận dụng*, câu tính \(\cos75^\circ\); em phải viết đủ hai tích trước khi cộng/trừ.
+        **Tự sửa:** Chỉ góc tổng trên hình rồi áp dụng công thức cộng với hai tích \(\cos u\cos v\) và \(\sin u\sin v\). Dùng \(\cos90^\circ=0\) làm phép kiểm lại. **Luyện lại:** <a href="../luyen-tap/">Core và Luyện tập Bài 2</a> — thẻ *Bài 2 · Vận dụng*, câu tính \(\cos75^\circ\); em phải viết đủ hai tích trước khi cộng/trừ.
 
     ### 1.2. Vì sao có công thức góc nhân đôi?
 
@@ -59,7 +59,7 @@
 
         **Dấu hiệu:** Em lấy \(\cos u=+\frac45\) dù \(u\) thuộc góc phần tư II, hoặc nhầm \(\sin2u=2\sin u\).
 
-        **Tự sửa:** Xác định \(\cos u<0\) trước khi lấy căn từ hệ thức cơ bản; sau đó thay vào \(\sin2u=2\sin u\cos u\) và \(\cos2u=\cos^2u-\sin^2u\). **Ôn mục 2.2**, rồi mở [Core và Luyện tập Bài 2](../luyen-tap/): thẻ *Bài 2 · Kiến thức cơ bản*, câu tính \(\cos(2\pi/3)\), sau đó thẻ *Bài 2 · Vận dụng*, câu tính \(\sin2\alpha,\cos2\alpha\). Trước khi làm phải ghi dấu sin/cos của góc ban đầu.
+        **Tự sửa:** Xác định \(\cos u<0\) trước khi lấy căn từ hệ thức cơ bản; sau đó thay vào \(\sin2u=2\sin u\cos u\) và \(\cos2u=\cos^2u-\sin^2u\). **Ôn mục 2.2**, rồi mở <a href="../luyen-tap/">Core và Luyện tập Bài 2</a>: thẻ *Bài 2 · Kiến thức cơ bản*, câu tính \(\cos(2\pi/3)\), sau đó thẻ *Bài 2 · Vận dụng*, câu tính \(\sin2\alpha,\cos2\alpha\). Trước khi làm phải ghi dấu sin/cos của góc ban đầu.
 
     ### 1.3. Khi biểu thức là tích, vì sao nên đổi thành tổng?
 
@@ -81,7 +81,7 @@
 
         **Dấu hiệu:** Em viết \(\cos(u+v)-\cos(u-v)\), khiến kết quả bị đổi dấu.
 
-        **Tự sửa:** Viết lại theo thứ tự **cos hiệu trừ cos tổng**, rồi thử \(u=v\) để thấy kết quả không được âm vì \(2\sin^2u\ge0\). **Ôn mục 2.3**, sau đó vào [Core và Luyện tập Bài 2](../luyen-tap/), thẻ *Bài 2 · Vận dụng*, câu tính \(2\sin75^\circ\sin15^\circ\). Đây là đề khác Vận dụng vừa làm nhưng cùng cách biến đổi.
+        **Tự sửa:** Viết lại theo thứ tự **cos hiệu trừ cos tổng**, rồi thử \(u=v\) để thấy kết quả không được âm vì \(2\sin^2u\ge0\). **Ôn mục 2.3**, sau đó vào <a href="../luyen-tap/">Core và Luyện tập Bài 2</a>, thẻ *Bài 2 · Vận dụng*, câu tính \(2\sin75^\circ\sin15^\circ\). Đây là đề khác Vận dụng vừa làm nhưng cùng cách biến đổi.
 
     ### 1.4. Khi biểu thức là tổng, vì sao xuất hiện nửa tổng và nửa hiệu?
 
@@ -103,7 +103,7 @@
 
         **Dấu hiệu:** Em thay \(75^\circ+15^\circ=90^\circ\) và \(75^\circ-15^\circ=60^\circ\) trực tiếp, quên chia hai.
 
-        **Tự sửa:** Lập hai ô \((u+v)/2\), \((u-v)/2\), tự nhân trở lại để kiểm góc ban đầu. **Ôn mục 2.4**, rồi vào [Core và Luyện tập Bài 2](../luyen-tap/), thẻ *Bài 2 · Vận dụng*, câu tính \(\sin75^\circ+\sin15^\circ\). Cần ghi rõ nửa tổng và nửa hiệu.
+        **Tự sửa:** Lập hai ô \((u+v)/2\), \((u-v)/2\), tự nhân trở lại để kiểm góc ban đầu. **Ôn mục 2.4**, rồi vào <a href="../luyen-tap/">Core và Luyện tập Bài 2</a>, thẻ *Bài 2 · Vận dụng*, câu tính \(\sin75^\circ+\sin15^\circ\). Cần ghi rõ nửa tổng và nửa hiệu.
 
     **Ứng dụng thực tế: từ tổng hai âm đến tín hiệu của một phím điện thoại.**
 
@@ -139,7 +139,7 @@
 
         **Dấu hiệu:** Em đổi tổng hai sin thành sin nhân sin, hoặc lấy \(770+1209=1979\) làm tần số mới mà bỏ qua hệ số \(2\pi\).
 
-        **Tự sửa:** Viết đúng \(\sin u+\sin v=2\sin\frac{u+v}{2}\cos\frac{u-v}{2}\), ghi cả hai góc \(u,v\) rồi mới chia hai. Kiểm \(\cos(-z)=\cos z\). **Ôn mục 2.4**, rồi thử [Core và Luyện tập Bài 2](../luyen-tap/), thẻ *Bài 2 · Vận dụng*, câu \(\sin75^\circ+\sin15^\circ\), trước khi quay lại tính tín hiệu phím 4.
+        **Tự sửa:** Viết đúng \(\sin u+\sin v=2\sin\frac{u+v}{2}\cos\frac{u-v}{2}\), ghi cả hai góc \(u,v\) rồi mới chia hai. Kiểm \(\cos(-z)=\cos z\). **Ôn mục 2.4**, rồi thử <a href="../luyen-tap/">Core và Luyện tập Bài 2</a>, thẻ *Bài 2 · Vận dụng*, câu \(\sin75^\circ+\sin15^\circ\), trước khi quay lại tính tín hiệu phím 4.
 
 
 === "Kiến thức SGK"
@@ -341,6 +341,6 @@
 
         **Ôn và luyện:** Mục 2.3–2.4, Ví dụ 3.3–3.4, Core/Luyện tập Bài 2.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương I](../../../../thu-vien/tu-luan-g11-chuong-i-b01-b02/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-i-b01-b02/">Tự luận Chương I</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập một, Bài 2 (trang in 17–21).</p>
