@@ -55,8 +55,12 @@ function verifyTopicKnowledge(src,pages,label) {
  assert(nav,label+": missing Topic journey navigation");
  for(const fn of PAGES)assert(pages[fn],label+": missing outer page "+fn);
  if(isGoldenNavigation){
-   assert.equal((nav[0].match(/<a\b/g)||[]).length,2,label+": approved Golden has 2 destination pages, excludes current");
-   assert.equal((nav[0].match(/thpt-sgk-nav-unavailable/g)||[]).length,2,label+": first/last Topic placeholders required");
+   // Four owner-approved navigation controls: previous/next Topic (link or unavailable)
+   // + the TWO other Topic pages. The number of links changes as W1 ships.
+   assert.equal((nav[0].match(/<(?:a|span)\b/g)||[]).length,4,label+": Golden requires exactly 4 navigation controls");
+   const neighborControls=(nav[0].match(/(?:← Chuyên đề trước|Chuyên đề sau →)/g)||[]);
+   assert.equal(neighborControls.length,2,label+": previous/next Topic controls required");
+   assert.equal((nav[0].match(/<a\b/g)||[]).length+(nav[0].match(/thpt-sgk-nav-unavailable/g)||[]).length,4,label+": only four safe links/disabled controls");
    for(const fn of ["luyen-tap.md","tu-kiem-tra.md"]){
      const href=new RegExp('href="\\.\\./'+fn.replace(/\.md$/,"")+'/"',"g");
      assert.equal((nav[0].match(href)||[]).length,1,label+": missing other-page link "+fn);
