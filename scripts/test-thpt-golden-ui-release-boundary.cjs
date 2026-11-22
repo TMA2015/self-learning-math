@@ -101,20 +101,26 @@ const topicRegistration={cd01:{
  browser:"scripts/test-thpt-topic01-release-browser.py",
  sha:"scripts/test-thpt-topic01-release-intake.cjs"
 }};
-const w1Sources={
- cd02:"d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5",
- cd03:"38f41f013e75b42605d7a88f9205c20af6315a41",
- cd04:"4e8238e188204eefc060f18c88ef7a0a3c51a60e",
- cd05:"909f873c57e543b8f6d3c383d0b88df6900e334a"
+const publishedTopicSources={
+  "cd02": "d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5",
+  "cd03": "38f41f013e75b42605d7a88f9205c20af6315a41",
+  "cd04": "4e8238e188204eefc060f18c88ef7a0a3c51a60e",
+  "cd05": "909f873c57e543b8f6d3c383d0b88df6900e334a",
+  "cd10": "7954f917b89c64527b166d02aac1844da08ed806",
+  "cd11": "9c27c384af7fad186047aed555ef1a9877c6a30a",
+  "cd06": "edfecb3edd165e87bcb615ec4cbb66833ad52675",
+  "cd07": "7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba",
+  "cd08": "0853a6de4be055d63a767b58dab20fa113e11098",
+  "cd09": "5681dd894755165e799b4a20d9741f43115778d9"
 };
-for(const name of Object.keys(w1Sources)){
+for(const name of Object.keys(publishedTopicSources)){
  topicRegistration[name]={
   source:"docs/thpt-preview/chuyen-de/"+name+"/kien-thuc.md",
   practice:"docs/thpt-preview/chuyen-de/"+name+"/luyen-tap.md",
   self:"docs/thpt-preview/chuyen-de/"+name+"/tu-kiem-tra.md",
-  ui:"docs/assets/javascripts/thpt-topic-w1-golden-v1.js",
-  browser:"scripts/test-thpt-topic-w1-golden-browser.py",
-  sha:"scripts/test-thpt-topic-w1-source-locked.py"
+  ui:Number(name.slice(2))>=6?"docs/assets/javascripts/thpt-topic-w2-golden-v1.js":"docs/assets/javascripts/thpt-topic-w1-golden-v1.js",
+  browser:Number(name.slice(2))>=6?"scripts/test-thpt-topic-w2-golden-browser.py":"scripts/test-thpt-topic-w1-golden-browser.py",
+  sha:Number(name.slice(2))>=6?"scripts/test-thpt-topic-w2-source-locked.py":"scripts/test-thpt-topic-w1-source-locked.py"
  };
 }
 assert.deepEqual(futureTopics.filter(x=>!topicRegistration[x]),[],
@@ -122,11 +128,11 @@ assert.deepEqual(futureTopics.filter(x=>!topicRegistration[x]),[],
 for(const name of futureTopics){
  const spec=topicRegistration[name],knowledge=read(spec.source),practice=read(spec.practice),
   self=read(spec.self),ui=read(spec.ui),browser=read(spec.browser),sha=read(spec.sha);
- if(w1Sources[name]){
+ if(publishedTopicSources[name]){
   const id=name.slice(2);
   for(const [value,file] of [[knowledge,"Kiến thức"],[practice,"Luyện tập"],[self,"Tự kiểm tra"]]){
    assert(value.includes("TOPIC"+id+"_APPROVED_SOURCE_START")&&
-    value.includes(w1Sources[name]),name+" "+file+": approved exact Q18 learner snapshot required");
+    value.includes(publishedTopicSources[name]),name+" "+file+": approved exact Q18 learner snapshot required");
   }
   for(const contract of ["THPT_GOLDEN_RUNTIME","golden.publicOnly()","golden.bindDialog","golden.renderNav","golden.bindPager",
    "thpt-r4-practice-dialog","thpt-r4-modal-question-nav","dataset.thptCanonicalItem"]){
@@ -139,7 +145,7 @@ for(const name of futureTopics){
   assert(browser.includes("data-topic-w1-selfcheck")&&
    browser.includes("data-topic-w1-practice-card")&&
    browser.includes("data-thpt-canonical-solution")&&
-   sha.includes(w1Sources[name]),name+": scoped browser Q15/Q16/source receipt gate missing");
+   sha.includes(publishedTopicSources[name]),name+": scoped browser Q15/Q16/source receipt gate missing");
   assert(!/localStorage|sessionStorage|indexedDB|firebase\.|recordMastery|setDoc\(/.test(ui),
    name+": W1 public read-only Golden must not write student/assessment state");
   assert(!/<form\b|data-thpt-readiness|data-mastery-credit/i.test(self),

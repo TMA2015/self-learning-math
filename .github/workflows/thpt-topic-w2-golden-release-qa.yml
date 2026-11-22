@@ -1,0 +1,68 @@
+name: THPT Topic W2 CĐ06–11 Golden Release QA (NO DEPLOY)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+
+
+
+
+      - 'docs/thpt-preview/chuyen-de/cd05/**'
+      - 'docs/thpt-preview/chuyen-de/cd06/**'
+      - 'docs/thpt-preview/chuyen-de/cd07/**'
+      - 'docs/thpt-preview/chuyen-de/cd08/**'
+      - 'docs/thpt-preview/chuyen-de/cd09/**'
+      - 'docs/thpt-preview/chuyen-de/cd10/**'
+      - 'docs/thpt-preview/chuyen-de/cd11/**'
+      - 'docs/thpt-preview/chuyen-de/index.md'
+
+
+
+
+      - 'docs/assets/stylesheets/thpt-topic-w1-golden-v1.css'
+      - 'docs/assets/visuals/THPT_TOPIC06_*.svg'
+      - 'docs/assets/visuals/THPT_TOPIC07_*.svg'
+      - 'docs/assets/visuals/THPT_TOPIC08_*.svg'
+      - 'docs/assets/visuals/THPT_TOPIC09_*.svg'
+      - 'docs/assets/visuals/THPT_TOPIC10_*.svg'
+      - 'docs/assets/visuals/THPT_TOPIC11_*.svg'
+      - 'docs/assets/javascripts/thpt-topic-w2-golden-v1.js'
+      - 'mkdocs.yml'
+      - 'mkdocs.thpt-preview.yml'
+      - 'scripts/test-thpt-topic-w2-source-locked.py'
+      - 'scripts/test-thpt-topic-w2-golden-browser.py'
+      - '.github/workflows/thpt-topic-w2-golden-release-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-browser:
+    name: CĐ06–11 Q18/Q15/Q16 receipts and Golden parity browser (NO DEPLOY)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify W2 runtime JS, signed AUTHORING source/Q18 chain and public Q15/Q16
+        shell: bash
+        run: |
+          node --check docs/assets/javascripts/thpt-topic-w2-golden-v1.js
+          git fetch --no-tags origin 7ccecad8e357319f6f432b0765630fd50625b56f a7d3d7756535cfee29f04bde86af6ab58b0a9d30 28bd2103731eef4b4a6960cd5fc33d49c0680017 a1d0c5ae4c37ca0def035939fcbeef0109be3e1b c78cbbeefc92d14060a5bd81a1e2036ea2f6afeb c644ae7a75dc1d02c4e2ac0d0e7ee0856df62f07
+          python3 scripts/test-thpt-topic-w2-source-locked.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare MkDocs and Chromium/WebKit scoped test runner
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Build current site (no full-site test) + THPT dedicated nav
+        run: |
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+      - name: Exercise W2 CĐ06–11 Golden parity and Q15/Q16
+        run: python scripts/test-thpt-topic-w2-golden-browser.py

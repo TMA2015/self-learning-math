@@ -1,0 +1,125 @@
+{
+  "wave": "W2",
+  "standard": "SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18",
+  "golden": "CĐ01 20261122.1",
+  "assessment": "CLIENT_SELF_CHECK_NO_MASTERY",
+  "topics": {
+    "10": {
+      "title": "Ứng dụng đạo hàm: Khảo sát hàm số và tối ưu hóa",
+      "authorHead": "7ccecad8e357319f6f432b0765630fd50625b56f",
+      "authorPR": 886,
+      "sourcePath": "prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md",
+      "sourceBlob": "7954f917b89c64527b166d02aac1844da08ed806",
+      "q18ReceiptBlob": "4cf2638f752b93fd87aa5446a1d89b66665afede",
+      "groupsKnowledge": 6,
+      "groupsPractice": 6,
+      "outcomes": 36,
+      "items": 120,
+      "replay": 36,
+      "svg": [
+        "THPT_TOPIC10_DERIVATIVE_SIGN_VARIATION_R01.svg",
+        "THPT_TOPIC10_CLOSED_INTERVAL_EXTREMA_R01.svg",
+        "THPT_TOPIC10_RATIONAL_ASYMPTOTES_R01.svg",
+        "THPT_TOPIC10_BOX_VOLUME_OPT_R01.svg"
+      ],
+      "model": "slm-top10-box-01"
+    },
+    "11": {
+      "title": "Nguyên hàm, tích phân và ứng dụng hình học",
+      "authorHead": "a7d3d7756535cfee29f04bde86af6ab58b0a9d30",
+      "authorPR": 887,
+      "sourcePath": "prototypes/thpt/content-drafts/topic11-integrals/Temp_TOPIC11_R06_NUMBERING_CONSISTENT_20261116.md",
+      "sourceBlob": "9c27c384af7fad186047aed555ef1a9877c6a30a",
+      "q18ReceiptBlob": "a6c64c4d9280fbde9752598190206ff1a8e82fca",
+      "groupsKnowledge": 4,
+      "groupsPractice": 4,
+      "outcomes": 22,
+      "items": 116,
+      "replay": 22,
+      "svg": [
+        "THPT_TOPIC11_SIGNED_INTEGRAL_R01.svg",
+        "THPT_TOPIC11_TWO_CURVES_SPLIT_R01.svg",
+        "THPT_TOPIC11_CROSS_SECTION_SQUARE_CIRCLE_R01.svg",
+        "THPT_TOPIC11_WASHER_REVOLUTION_R01.svg"
+      ],
+      "model": "slm-top11-riemann-01"
+    },
+    "06": {
+      "title": "Lượng giác và phương trình lượng giác",
+      "authorHead": "28bd2103731eef4b4a6960cd5fc33d49c0680017",
+      "authorPR": 891,
+      "sourcePath": "prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md",
+      "sourceBlob": "edfecb3edd165e87bcb615ec4cbb66833ad52675",
+      "q18ReceiptBlob": "ef1e607675b82fcbf7c7aa6005c0c1005a836d1f",
+      "groupsKnowledge": 4,
+      "groupsPractice": 4,
+      "outcomes": 16,
+      "items": 66,
+      "replay": 16,
+      "svg": [
+        "THPT_TOPIC06_UNIT_CIRCLE_QUADRANTS_R01.svg",
+        "THPT_TOPIC06_SINE_PERIOD_R01.svg",
+        "THPT_TOPIC06_TAN_ASYMPTOTES_R01.svg"
+      ],
+      "model": "slm-top06-unit-circle-01"
+    },
+    "07": {
+      "title": "Dãy số, cấp số cộng và cấp số nhân",
+      "authorHead": "a1d0c5ae4c37ca0def035939fcbeef0109be3e1b",
+      "authorPR": 828,
+      "sourcePath": "prototypes/thpt/content-drafts/topic07-sequences/Temp_TOPIC07_R07_NUMBERING_CONSISTENT_20261116.md",
+      "sourceBlob": "7ce02dd8894f8d270ad39c66ca81abaa3b3eb0ba",
+      "q18ReceiptBlob": "737f3c09766f4c15b50ee05ce93bcf0bb375d861",
+      "groupsKnowledge": 4,
+      "groupsPractice": 4,
+      "outcomes": 18,
+      "items": 69,
+      "replay": 18,
+      "svg": [
+        "THPT_TOPIC07_SEQUENCE_DISCRETE_VS_CONTINUOUS_R01.svg",
+        "THPT_TOPIC07_AP_VS_GP_GROWTH_R01.svg",
+        "THPT_TOPIC07_END_PERIOD_CASHFLOW_R01.svg"
+      ],
+      "model": "slm-top07-sequence-01"
+    },
+    "08": {
+      "title": "Giới hạn và tính liên tục",
+      "authorHead": "c78cbbeefc92d14060a5bd81a1e2036ea2f6afeb",
+      "authorPR": 829,
+      "sourcePath": "prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md",
+      "sourceBlob": "0853a6de4be055d63a767b58dab20fa113e11098",
+      "q18ReceiptBlob": "9e80780f05096269b7cd1942c7006138d72d7ec9",
+      "groupsKnowledge": 4,
+      "groupsPractice": 4,
+      "outcomes": 18,
+      "items": 58,
+      "replay": 18,
+      "svg": [
+        "THPT_TOPIC08_SEQUENCE_LIMIT_R05.svg",
+        "THPT_TOPIC08_ONE_SIDED_JUMP_R01.svg",
+        "THPT_TOPIC08_IVT_BISECTION_R01.svg"
+      ],
+      "model": "slm-top08-limit-01"
+    },
+    "09": {
+      "title": "Đạo hàm và ý nghĩa vi phân",
+      "authorHead": "c644ae7a75dc1d02c4e2ac0d0e7ee0856df62f07",
+      "authorPR": 831,
+      "sourcePath": "prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md",
+      "sourceBlob": "5681dd894755165e799b4a20d9741f43115778d9",
+      "q18ReceiptBlob": "b0e17ea8fbd00075c5de7dcaeb178985743645f8",
+      "groupsKnowledge": 5,
+      "groupsPractice": 4,
+      "outcomes": 32,
+      "items": 108,
+      "replay": 32,
+      "svg": [
+        "THPT_TOPIC09_SECANT_TANGENT_R01.svg",
+        "THPT_TOPIC09_PRODUCT_RULE_AREA_R01.svg",
+        "THPT_TOPIC09_VELOCITY_ACCELERATION_R01.svg",
+        "THPT_TOPIC09_LINEAR_DIFFERENTIAL_R01.svg"
+      ],
+      "model": "slm-top09-tangent-01"
+    }
+  }
+}

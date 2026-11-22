@@ -7,7 +7,7 @@ hide:
 <p class="thpt-r4-eyebrow">HỌC THEO CHUYÊN ĐỀ · CĐ05 · TOÁN THPT</p>
 <nav class="thpt-sgk-lesson-nav" aria-label="Điều hướng Chuyên đề 05">
 <a href="../../cd04/kien-thuc/">← Chuyên đề trước</a>
-<span class="thpt-sgk-nav-unavailable" aria-disabled="true">Chuyên đề sau →</span>
+<a href="../../cd06/kien-thuc/">Chuyên đề sau →</a>
 <a href="../luyen-tap/">Luyện tập</a>
 <a href="../tu-kiem-tra/">Tự kiểm tra</a>
 </nav>
