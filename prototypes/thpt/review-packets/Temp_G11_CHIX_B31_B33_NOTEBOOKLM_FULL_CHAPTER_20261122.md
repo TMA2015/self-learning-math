@@ -6,14 +6,14 @@ STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED_AUTHOR_SOURCE_ONLY
 SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIX_B31_B33_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: 8d25c13cd3c181ab2efd66fab21248d5f943d337
+SOURCE_BLOB: 9f05c6e8ae0dafc61c6cb01bcd671aea76bb903a
 Q18_AUTHOR_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHIX_B31_B33_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
-Q18_AUTHOR_RECEIPT_BLOB: 77093bf23b90a310c0d837b8c4f4abc529ca1da3
+Q18_AUTHOR_RECEIPT_BLOB: 8c51018a0a66c72a8e3dd45d142ad59d1ba8767b
 PUBLIC_ORIGINAL_CORE_PRACTICE_COUNT: 62
 PUBLIC_ORIGINAL_WRITTEN_COUNT: 9
-KNOWLEDGE_UNSCORED_FIRST_TRY: 36
-WORKED_REASONED_EXAMPLES: 44
-PUBLIC_ITEM_IDS_DISTINCT: 107
+KNOWLEDGE_UNSCORED_FIRST_TRY: 37
+WORKED_REASONED_EXAMPLES: 45
+PUBLIC_ITEM_IDS_DISTINCT: 108
 PRIVATE_OFFICIAL_RD1_COUNT: 31
 PRIVATE_RD1_CONTENT: NOT_INCLUDED
 INDEPENDENT_NOTEBOOKLM_R04_VERDICT: NOT_RECEIVED
@@ -22,7 +22,7 @@ RELEASE_AUTHORIZATION: NO
 ## Prompt phản biện độc lập (4 câu)
 
 1. Hãy phản biện trọn học liệu SGK KNTT Toán 11 Tập hai Chương IX B31–B33 DELTA_C từ bản sao chính xác ba nguồn học sinh, 62 câu Core/Practice, 9 Written và năm SVG dưới đây; sử dụng **đúng năm Permanent Sources THPT v2.1**, SGK/SBT **S1 bản gốc** và chỉ `SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18` (không đồng thời chọn bộ v2.0 hay thêm nguồn Permanent thứ sáu), đối chiếu **số trang in** thay vì phỏng đoán chỉ số PDF.
-2. Kiểm từng B31–B33/outcome/item và cả 36 `FirstTry` +44 EX theo D1–D6, PED1–PED6: giới hạn thương sai phân hai phía, liên tục và điểm gấp, hệ số góc tiếp tuyến, điều kiện hợp/tích/thương, lượng giác radian, `ln|u|`, hợp mũ/log, miếng đồ thị SVG, vận tốc có dấu, đạo hàm cấp hai và tính hợp lệ miền thời gian; tự chứng minh và tính lại mọi biểu thức nghi ngờ, không lấy đủ số lượng thay độ sâu.
+2. Kiểm từng B31–B33/outcome/item và cả 37 `FirstTry` +45 EX theo D1–D6, PED1–PED6: giới hạn thương sai phân hai phía, liên tục và điểm gấp, hệ số góc tiếp tuyến, điều kiện hợp/tích/thương, lượng giác radian, `ln|u|`, hợp mũ/log, miếng đồ thị SVG, vận tốc có dấu, đạo hàm cấp hai và tính hợp lệ miền thời gian; tự chứng minh và tính lại mọi biểu thức nghi ngờ, không lấy đủ số lượng thay độ sâu.
 3. Hãy ghi `SOURCE_RECEIPT` trỏ đúng ba Git learner blobs, nguyên trạng original C/P/Written source blobs, năm SVG cùng current author Q18 receipt dưới đây; trả riêng Academic/PED verdict theo bài/outcome/item, P0/P1/P2 và `MINIMAL_DELTA` sửa từng phần bị ảnh hưởng, không cấp độc lập PASS mới chỉ vì bản R00 lịch sử được duyệt.
 4. Bảo mật tuyệt đối **31 câu RD1 chủ dự án giữ kín** (không có trong tài liệu này): 31 câu cuối chương đã công khai chỉ là `CLIENT_SELF_CHECK_NO_MASTERY`, không là `SGK_CHAPTER_READINESS`; bản Temp chỉ là nguồn phản biện, không là canonical thứ hai, không chấm/mastery, không tạo quyền RELEASE/merge/deploy và không thêm một chuẩn Q mới.
 
@@ -32,7 +32,7 @@ RELEASE_AUTHORIZATION: NO
 |---|---|---|
 | B31 original learner | `docs/thpt-preview/sgk/lop-11/chuong-ix/bai-31.md` | `01760e83599ef74c57153c085aa7a1f61e1cdd2f` |
 | B32 original learner | `docs/thpt-preview/sgk/lop-11/chuong-ix/bai-32.md` | `5547e7c4269999c069d50e2ba2709ebde9332e9a` |
-| B33 original learner | `docs/thpt-preview/sgk/lop-11/chuong-ix/bai-33.md` | `cf72585cbb66de78ce302312f361dcf7be088ade` |
+| B33 original learner | `docs/thpt-preview/sgk/lop-11/chuong-ix/bai-33.md` | `e42600243925ef8798f8ff728355df137cb0810f` |
 | Original frozen 62-item public C/P bank | `docs/assets/javascripts/thpt-g11-chix-b31-b33-source-locked-formative-r00.js` | `eda6fdf74345d93cd23e77008d2dcc9a9f6c7111` |
 | Original nine Written/Anchor library | `docs/thpt-preview/thu-vien/tu-luan-g11-chuong-ix.md` | `4d2eb7580e1f04360422134d96ba6712a1293d0e` |
 | Original B31 SVG | `docs/assets/images/thpt/FIG-G11-CHIX-B31-02_R00.svg` | `2d4a8ca9fc2107f47afbda28995f673ef5562c3b` |
@@ -40,7 +40,7 @@ RELEASE_AUTHORIZATION: NO
 | Original B32 SVG | `docs/assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg` | `924eb7a338b73d2b764ffee4e166a13bff42430a` |
 | Original B32 SVG | `docs/assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg` | `c406f5eec6e0cefa5dd8179f537cb27fe697d560` |
 | Original B33 SVG | `docs/assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg` | `74bd77cacb34f13520276ac053c213ea65c5f275` |
-| Current signed AUTHOR_SELF_VERIFIED Q18 receipt | `prototypes/thpt/review-packets/G11_CHIX_B31_B33_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md` | `77093bf23b90a310c0d837b8c4f4abc529ca1da3` |
+| Current signed AUTHOR_SELF_VERIFIED Q18 receipt | `prototypes/thpt/review-packets/G11_CHIX_B31_B33_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md` | `8c51018a0a66c72a8e3dd45d142ad59d1ba8767b` |
 
 All exact original public learner and original public question sources below are provided as a **single review-only** snapshot; they do not replace any student's canonical Markdown path. Private original RD1 not included. Old independent R00 reviewer verdict SHA remains historically locked to older source only.
 
@@ -913,7 +913,7 @@ All exact original public learner and original public question sources below are
 
 ---
 
-## REVIEW SOURCE B33 BEGIN · cf72585cbb66de78ce302312f361dcf7be088ade
+## REVIEW SOURCE B33 BEGIN · e42600243925ef8798f8ff728355df137cb0810f
 
 # Bài 33. Đạo hàm cấp hai
 
@@ -1085,6 +1085,34 @@ All exact original public learner and original public question sources below are
 
         **Tự sửa:** Mỗi lần đạo hàm nhân 2π; không dùng độ đo góc theo độ. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-P04">Luyện lại B33-P04</a>
 
+    ### 1.9. Tích hợp Chương IX: tiếp tuyến, hàm hợp và đạo hàm cấp hai
+
+    Bài 31 diễn giải \(f'(a)\) là **hệ số góc tiếp tuyến** nếu hàm khả vi tại \(a\). Bài 32 hướng dẫn quy tắc **hàm hợp** (và tổng, tích, thương khi đủ điều kiện). Bài 33 lấy đạo hàm thêm một lần để thấy **hệ số góc thay đổi** ra sao. Muốn dùng đủ cả ba, hãy tìm **hàm, miền và điểm đang xét** trước khi áp dụng các công thức, không lấy \(f''(a)\) thay cho hệ số góc tiếp tuyến.
+
+    **Vận dụng — Tự thử tích hợp trước Core.** Cho \(f(x)=(x^2+1)^2\) trên \(\mathbb R\). (a) Dùng quy tắc hàm hợp tính \(f'(x)\), giải thích đạo hàm của biểu thức bên trong. (b) Viết phương trình tiếp tuyến của đồ thị tại điểm có hoành độ \(x=1\). (c) Tính \(f''(x)\) và \(f''(1)\). (d) Phân biệt ý nghĩa của \(f'(1)\) và \(f''(1)\). Tự làm trước khi mở lời giải.
+
+    <span data-ped-first-try="9" data-outcome-id="G11-CHIX-INTEGRATED" data-thpt-first-try-id="THPT-G11-B33-TRY09" hidden></span>
+
+    ??? question "Đối chiếu — ba bước giải có lý do"
+
+        **Bước 1 — đạo hàm hàm hợp:** Đặt \(u=x^2+1>0\), \(f=u^2\). Do \(u'=2x\), theo quy tắc hàm hợp \(f'=2u\cdot u'=4x(x^2+1)=4x^3+4x\). Không được bỏ đạo hàm \(2x\) của biểu thức trong.
+
+        **Bước 2 — tiếp tuyến:** \(f(1)=(1+1)^2=4\), \(f'(1)=8\). Vì \(f\) là đa thức nên khả vi tại \(1\), tiếp tuyến là \(y-4=8(x-1)\), không dùng \(f''(1)\) làm hệ số góc.
+
+        **Bước 3 — đạo hàm cấp hai:** \(f''=(4x^3+4x)'=12x^2+4\), \(f''(1)=16\).
+
+        **Kiểm ý nghĩa:** \(f'(1)=8\) đo độ dốc đồ thị \(f\) tại \(1\); \(f''(1)=16\) đo tốc độ thay đổi của \(f'\) theo \(x\) tại đó. Với một hàm số toán học bất kỳ, **không tự gọi** \(f''\) là gia tốc; chỉ khi \(f\) biểu diễn vị trí theo thời gian và có đơn vị phù hợp mới được diễn giải như vậy. Có thể khai triển \(f=x^4+2x^2+1\) để kiểm độc lập.
+
+    <span data-thpt-help-id="HELP-G11-B33-TRY09" hidden></span>
+
+    ??? tip "Kiểm lỗi — lẫn quy tắc dây chuyền với đạo hàm hai lần"
+
+        **Dấu hiệu:** Em viết \(f'=2(x^2+1)\) mà quên nhân \(2x\), hoặc lấy \(16\) làm hệ số góc tiếp tuyến tại \(1\).
+
+        **Vì sao sai:** Đạo hàm hàm hợp luôn nhân đạo hàm biểu thức trong; tiếp tuyến dùng **\(f'(1)\)**, còn \(f''(1)\) là đạo hàm của \(f'\).
+
+        **Tự sửa:** Đánh dấu \(u=x^2+1\), \(u'=2x\), lần lượt tính \(f\to f'\to f''\). Ôn Bài 31 tiếp tuyến, Bài 32 quy tắc hàm hợp, Bài 33 đạo hàm cấp hai; sau đó tự làm Practice tích hợp `THPT-G11-CHIX-CHIX-P01` tại <a href="../luyen-tap/?item=THPT-G11-CHIX-CHIX-P01">Core/Luyện tập</a> và chỉ mở lời giải sau khi thử.
+
 === "Kiến thức SGK"
 
     ### 2.1. Khái niệm đạo hàm cấp hai
@@ -1149,6 +1177,15 @@ All exact original public learner and original public question sources below are
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B33-R02-11"><p><strong>Đề bài:</strong> Một vật dao động với tọa độ \(s(t)=5+2\cos(\pi t+\pi/3)\) cm, t≥0. Tính vận tốc, gia tốc và gia tốc lúc t=2/3 s.</p><p><strong>Phân tích:</strong> Góc đo radian; đạo hàm tầng trong là \(\pi\) ở cả hai lượt.</p><p><strong>Lời giải:</strong> \(v=-2\pi\sin(\pi t+\pi/3)\) cm/s; \(a=-2\pi^2\cos(\pi t+\pi/3)\) cm/s². Tại t=2/3 góc bằng \(\pi\), nên \(a=2\pi^2\) cm/s².</p><p><strong>Kiểm lại:</strong> Vận tốc tại thời điểm đó bằng 0 nhưng gia tốc khác 0.</p></div>
 
+    ### 3.12. Tích hợp tích, tiếp tuyến và đạo hàm cấp hai
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B33-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Với \(g(x)=xe^x\), viết tiếp tuyến tại \(x=1\) và tính \(g''(1)\). Giải thích vì sao không lấy \(g''(1)\) làm độ dốc tiếp tuyến.</p>
+    <p><strong>Chọn phương pháp:</strong> Đây là **tích**, không phải đạo hàm của \(x\) riêng rồi bỏ \(e^x\); trước tiên dùng quy tắc tích để tìm \(g'\), lấy \(g(1),g'(1)\) viết tiếp tuyến, sau đó đạo hàm lần hai để tìm \(g''\).</p>
+    <p><strong>Lời giải:</strong> \(g'=1\cdot e^x+x e^x=e^x(x+1)\), do đó \(g(1)=e\), \(g'(1)=2e\), tiếp tuyến \(y-e=2e(x-1)\). Đạo hàm tiếp \(g''=e^x(x+1)+e^x=e^x(x+2)\), suy ra \(g''(1)=3e\).</p>
+    <p><strong>Kiểm lại:</strong> \(g\) khả vi trên \(\mathbb R\), đạo hàm cấp hai tồn tại. Hệ số góc là \(2e\) còn \(3e\) đo tốc độ biến thiên của hệ số góc, **không** phải hệ số góc của chính \(g\).</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G11-CHIX-B33-01" hidden></span>
@@ -1168,6 +1205,16 @@ All exact original public learner and original public question sources below are
     ??? tip "4.3. Nhầm đơn vị hoặc miền thời gian"
     
         $s(t)=6t-2t^2$ m trên [0,3], a=−4 m/s² trong khoảng mô hình. Không suy diễn quá t=3. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-P04">Luyện lại B33-P04</a>
+
+    <span data-thpt-help-id="HELP-G11-B33-INTEGRATED" hidden></span>
+
+    ??? tip "4.4. Nhầm đạo hàm cấp hai với hệ số góc"
+
+        **Dấu hiệu:** Em dùng \(f''(a)\) trong phương trình tiếp tuyến hoặc bỏ đạo hàm tầng trong của hàm hợp.
+
+        **Vì sao sai:** Tiếp tuyến tại điểm khả vi dùng \(f'(a)\); đạo hàm cấp hai là đạo hàm của \(f'\), không thay vai trò của đạo hàm cấp một.
+
+        **Tự sửa:** Ôn §1.9 và Ví dụ 3.12, viết \(f(a)\), \(f'(a)\), \(f''(a)\) thành ba dòng riêng, rồi làm <a href="../luyen-tap/?item=THPT-G11-CHIX-CHIX-P01">Practice tích hợp</a>.
 
     **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập Bài 33</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-ix/">Tự luận Chương IX</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
 
@@ -2010,7 +2057,7 @@ All exact original public learner and original public question sources below are
 
 ---
 
-## REVIEW CURRENT_R04_AUTHOR_Q18_RECEIPT BEGIN · 77093bf23b90a310c0d837b8c4f4abc529ca1da3
+## REVIEW CURRENT_R04_AUTHOR_Q18_RECEIPT BEGIN · 8c51018a0a66c72a8e3dd45d142ad59d1ba8767b
 
 # G11 SGK ChIX B31–B33 · R04 current-source AUTHOR_SELF_VERIFIED Q18 academic/PED receipt
 
@@ -2022,12 +2069,12 @@ AUTHOR_SELF_QA_RECEIPT: SIGNED_ON_G11_CHIX_B31_B33_R04_EXACT_CURRENT_LEARNER_AND
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIX_B31_B33_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: 8d25c13cd3c181ab2efd66fab21248d5f943d337
+SOURCE_BLOB: 9f05c6e8ae0dafc61c6cb01bcd671aea76bb903a
 S1_RECEIPT: OWNER_ORIGINAL_KNTT_G11_SGK_SBT_T2_HISTORICAL_DIRECT_PDF_PAGE_IMAGES_20261102_NO_NEW_COMPLETE_SCAN
-OUTCOME_AUDIT: 31_EXISTING_OUTCOMES_30_LESSON_PLUS_1_INTEGRATED_107_DISTINCT_EDUCATIONAL_ITEM_IDS
-MATH_VERIFICATION: 44_CURRENT_WORKED_EXAMPLES_INDIVIDUALLY_INSPECTED_DERIVATIVE_AT_POINT_FUNCTION_PRODUCT_QUOTIENT_CHAIN_TRIG_EXP_LOG_SECOND_DERIVATIVE_AND_MOTION_DOMAIN
-PED_VERIFICATION: THREE_ORDERED_GOLDEN_LEARNERS_36_UNSCORED_FIRSTTRY_36_HIDDEN_COMPARISONS_36_CAUSE_SPECIFIC_HELP_11_ORIGINAL_HELP_FIVE_SVG
-CANONICAL_Q15: 107_UNIQUE_62_ORIGINAL_CP_9_ORIGINAL_WRITTEN_36_SOURCE_FIRSTTRY_NO_DUPLICATED_STEM_KEY
+OUTCOME_AUDIT: 31_REGISTERED_OUTCOMES_ALL_CANONICAL_AND_PRECORE_TRY_108_DISTINCT_SOURCE_QUESTION_IDS
+MATH_VERIFICATION: 44_HISTORIC_CURRENT_EX_PLUS_NEW_EX45_INTEGRATED_CHAIN_TANGENT_SECOND_DERIVATIVE_SCOPED_ALGEBRA_VERIFIED
+PED_VERIFICATION: THREE_ORDERED_GOLDEN_LEARNERS_37_UNSCORED_FIRSTTRY_37_HIDDEN_COMPARISONS_37_CAUSE_SPECIFIC_HELP_11_ORIGINAL_HELP_FIVE_SVG
+CANONICAL_Q15: 108_UNIQUE_62_ORIGINAL_CP_9_ORIGINAL_WRITTEN_37_SOURCE_FIRSTTRY_NO_DUPLICATED_STEM_KEY
 ASSESSMENT_Q16: 31_CONFIDENTIAL_PRIVATE_RD1_OWNER_HELD_31_EXPOSED_PUBLIC_END_SELF_CHECK_NO_OFFICIAL_READINESS_OR_MASTERY
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -2044,7 +2091,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## Exact source and S1 original owner receipts
 
-One current source inventory Git blob `8d25c13cd3c181ab2efd66fab21248d5f943d337` enumerates 13 original source components, no parallel student learner: B31 current `01760e83599ef74c57153c085aa7a1f61e1cdd2f`, B32 `5547e7c4269999c069d50e2ba2709ebde9332e9a`, B33 `cf72585cbb66de78ce302312f361dcf7be088ade`; unchanged original 62 public Core/Practice JS blob `eda6fdf74345d93cd23e77008d2dcc9a9f6c7111`, original nine Written `4d2eb7580e1f04360422134d96ba6712a1293d0e`, five original SVG/landing/practice/end. Original owner SGK KNTT Toán 11 T2 114 pages SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, printed B31 81–87 B32 88–94 B33 95–96, end97–98; SBT original 126 pages SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`, B31 54–57 B32 58–60 B33 61–62 end63–65, original solution p111–116. Original owner actual image/page-index receipt in `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md` blob `c63ca380fe0416b4ed4214f5192197c7e95d20a6` was previously verified directly from owner PDF. This R04 pass read source/Q18/notes and all three actual Git learner texts; **no fresh full book image rescan**. Historic R00 independent source blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` and old reviewer `4280a1741ccde038bbd5ae22af5def0d8683c7e8` remain immutable source-scoped past PASS, not a current independent Delta-C NotebookLM v2.1 review.
+One current source inventory Git blob `9f05c6e8ae0dafc61c6cb01bcd671aea76bb903a` enumerates 13 original source components, no parallel student learner: B31 current `01760e83599ef74c57153c085aa7a1f61e1cdd2f`, B32 `5547e7c4269999c069d50e2ba2709ebde9332e9a`, B33 `e42600243925ef8798f8ff728355df137cb0810f`; unchanged original 62 public Core/Practice JS blob `eda6fdf74345d93cd23e77008d2dcc9a9f6c7111`, original nine Written `4d2eb7580e1f04360422134d96ba6712a1293d0e`, five original SVG/landing/practice/end. Original owner SGK KNTT Toán 11 T2 114 pages SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, printed B31 81–87 B32 88–94 B33 95–96, end97–98; SBT original 126 pages SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`, B31 54–57 B32 58–60 B33 61–62 end63–65, original solution p111–116. Original owner actual image/page-index receipt in `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md` blob `c63ca380fe0416b4ed4214f5192197c7e95d20a6` was previously verified directly from owner PDF. This R04 pass read source/Q18/notes and all three actual Git learner texts; **no fresh full book image rescan**. Historic R00 independent source blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` and old reviewer `4280a1741ccde038bbd5ae22af5def0d8683c7e8` remain immutable source-scoped past PASS, not a current independent Delta-C NotebookLM v2.1 review.
 
 ## Mathematical and pedagogical per-lesson proof audit
 
@@ -2056,9 +2103,9 @@ One current source inventory Git blob `8d25c13cd3c181ab2efd66fab21248d5f943d337`
 
 **R04 source-only QA executed:** 3/3 four Golden tab ordered, 36 distinct Knowledge TRY IDs (11/17/8) with 36 opt-in indented concealment and matching causes/D6 (11/17/8), 47 total source HELP with 11 original, 44 distinct `data-thpt-example-id` (11+22+11), five original asset SVG read references, 3 current original SGK footnotes with correct printed pages, 3 fixed canonical "Học tiếp" link families to true Core/Practice, Written and chapter-end routes; 47 original relative Markdown links normalized to equivalent HTML href/label and the three erroneous "Học tiếp" families corrected (B31 14/B32 22/B33 11). Balanced MathJax inline/display delimiters, no unindented hidden answer leak, no original C/P/Written item stem/key/rubric edits, source SHA re-fetched. Prior Draft #1002 66 structure /80 arithmetic /81 plotting proofs were on **older candidate pre-R04** and are not falsely reissued as newly rerun tests on exact revised learner blobs. This is SOURCE academic+PED author QA only; browser, rendering, exact HEAD R/P and user-device signoff remains RELEASE's exclusive work.
 
-## ITEM_OUTCOME_ROLE_MATRIX — 107 original and formative teaching question IDs
+## ITEM_OUTCOME_ROLE_MATRIX — 108 original and formative teaching question IDs
 
-Exactly 71 frozen original public canonical IDs (62 C/P and nine original Written/Anchor), plus 36 new source-owned unscored FIRST_TRY =107 unique educational question IDs; original 31 outcomes (30 lesson +one integrated). Original integrated CHIX-C01/P01 stay original quiz IDs. All canonical original identifiers mapped to primary outcome and placement/role from the historic R00 source-verified signed handoff, new TRY mapped directly from current actual `data-outcome-id`; no duplicate old question or exposed private RD1. The 44 worked example annotation IDs explain mathematical methods, not additional independent exam item IDs.
+Exactly 71 frozen original public canonical IDs (62 C/P and nine original Written/Anchor), plus 37 source-owned unscored FIRST_TRY =108 unique educational question IDs; original 31 outcomes (30 lesson +one integrated). Original integrated CHIX-C01/P01 stay original quiz IDs. All canonical original identifiers mapped to primary outcome and placement/role from the historic R00 source-verified signed handoff, new TRY mapped directly from current actual `data-outcome-id`; no duplicate old question or exposed private RD1. The 45 worked example annotation IDs explain mathematical methods, not additional independent exam item IDs.
 
 | ITEM_ID | OUTCOME_ID | PLACEMENT | ROLE |
 |---|---|---|---|
@@ -2169,6 +2216,7 @@ Exactly 71 frozen original public canonical IDs (62 C/P and nine original Writte
 | THPT-G11-B33-TRY06 | G11-B33-POLYNOMIAL | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 | THPT-G11-B33-TRY07 | G11-B33-TRIG_EXP | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 | THPT-G11-B33-TRY08 | G11-B33-ACCELERATION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B33-TRY09 | G11-CHIX-INTEGRATED | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
@@ -2177,31 +2225,40 @@ One effective normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_ST
 | Q_ID | CURRENT R04 signed author verdict | Concrete source evidence / limitation |
 |---|---|---|
 | Q01 | AUTHOR_SELF_VERIFIED | Original KNTT SGK/SBT Toán 11 Tập hai old owner direct PDF rendered printed-source visual receipt; B31 81–87 B32 88–94 B33 95–96, SBT B31 54–57 B32 58–60 B33 61–62 solutions111–116. This current pass did not re-render all publisher original PDF images |
-| Q02 | AUTHOR_SELF_VERIFIED | 31 original RD0 outcomes: B31 10, B32 15, B33 5, plus one integrated; 36 source-owned Knowledge FirstTry map to original lesson outcomes and 107 unique total teaching item rows |
+| Q02 | AUTHOR_SELF_VERIFIED | 31 original outcomes (30 lesson +1 integrated) all retain real original public canonical item; integrated CHIX-C01/P01 unchanged plus new B33 TRY09. Now all 31 have own pre-Core FirstTry among 37 unscored TRY, 108 unique source-owned teaching IDs. |
 | Q03 | AUTHOR_SELF_VERIFIED | Full calculus conditions: B31 derivative as finite two-sided difference quotient and differentiability→continuity with counterexample; B32 product/quotient/chain, trigonometric radian, exponent/log domain; B33 derivative twice and acceleration units/sign |
-| Q04 | AUTHOR_SELF_VERIFIED | 44 actual source-owned worked examples all have explicit problem/method/full calculation/check, 11 B31,22 B32,11 B33, including 12 new advanced applied examples; old 32 annotation IDs unchanged |
-| Q05 | AUTHOR_SELF_VERIFIED | Original 62 source-locked public Core/Practice questions with key/solution/role/skill untouched; C/P 31+31 and two original chapter-integration IDs unchanged |
+| Q04 | AUTHOR_SELF_VERIFIED | 45 method-reasoned worked examples (B31 11/B32 22/B33 12); new EX3.12 independently computes g(x)=x e^x, slope 2e, second derivative 3e, with explicit domain and differentiation reasoning. |
+| Q05 | AUTHOR_SELF_VERIFIED | 62 immutable Core/Practice JS and nine immutable Written/Anchor original /4 rubrics unchanged, new integrated pre-Core TRY09 trains tangent+chain+second derivative before original integrated Core and Practice. |
 | Q06 | AUTHOR_SELF_VERIFIED | Nine source-locked Written/Anchor items with original shared library and /4 rubric unmodified, Anchor not cloned question or official machine-scored attempt |
 | Q07 | AUTHOR_SELF_VERIFIED | Five original immutable SVGs in original B31 two, B32 two, B33 one with figure-reading cues about secant/tangent, function changes and derivatives; no browser raster PASS claimed |
-| Q08 | AUTHOR_SELF_VERIFIED | 36 targeted local WHY-error/remediation fields each with exact original public Core link, plus original 11 general HELP =47 source HELP IDs, not a new assessment |
+| Q08 | AUTHOR_SELF_VERIFIED | 37 cause-specific local D6 with voluntary concealed comparisons and 11 original HELP, including new B33 TRY09 directing students back to original integrated P01 after independent attempt. |
 | Q09 | AUTHOR_SELF_VERIFIED | Why learn derivatives for instantaneous speed/temperature slope, machine change, bridge gradient, pH sensitivity, periodic velocity/acceleration; motivation precedes calculus formula |
 | Q10 | AUTHOR_SELF_VERIFIED | Prerequisites average rate, algebraic factorization, limits, function domain, trigonometric radian and exponent/log conditions explicitly recalled before rule use |
 | Q11 | AUTHOR_SELF_VERIFIED | Difference quotient finite two-sided limit as mathematical concept before derivative notation; chain/product reasoning and second derivative explained as iterated change, not a square |
 | Q12 | AUTHOR_SELF_VERIFIED | Five SVGs are referenced with actual figure-reading prompts and correct graph behavior; perspective or plotted point alone not treated as derivative proof |
-| Q13 | AUTHOR_SELF_VERIFIED | Method and limitations: no substitution h=0 in 0/0, x≠0 or x>-2/3 for log/rational cases, ln|2x−6| derivative on both sides excluding3, radian chain, cot/tan domains, real motion model time interval and negative velocity vs speed |
-| Q14 | AUTHOR_SELF_VERIFIED | 36 unscored FirstTry preceding public Core have 36 opt-in hidden full mathematical comparisons and exactly matching 36 cause-specific local D6 after source scoped inspection (no unindented answer leak) |
-| Q15 | AUTHOR_SELF_VERIFIED | 107 distinct teaching IDs=62 immutable public Core/Practice +9 immutable Written/Anchor +36 new unscored Knowledge FirstTry, one canonical stem/key per old item and one outcome/placement/role mapping; 44 teaching EX identifiers not counted as cloned questions |
+| Q13 | AUTHOR_SELF_VERIFIED | New B33 math verified: f=(x²+1)², f'(1)=8, tangent y−4=8(x−1), f''(1)=16; g=x e^x yields tangent y−e=2e(x−1) and g''(1)=3e. First derivative slope distinguished from second derivative/slope change and from motion acceleration. |
+| Q14 | AUTHOR_SELF_VERIFIED | 37 unique Knowledge first tries with opt-in hidden math answers and local D6; 31/31 original outcomes now include an integrated CHIX TRY09 rather than only lesson-specific TRY. |
+| Q15 | AUTHOR_SELF_VERIFIED | 108 unique source-owned learning item IDs (62 preserved Core/Practice, nine preserved Written/Anchor, 37 original-source FirstTry), with 31/31 outcome coverage; separate 45 instructional worked example IDs excluded from counted items. |
 | Q16 | AUTHOR_SELF_VERIFIED | 31 original independent private owner-held RD1 not copied to GitHub, 31 exposed public final-chapter replay selfcheck CLIENT_SELF_CHECK_NO_MASTERY not independently eligible for SGK_CHAPTER_READINESS, no Mastery |
 | Q17 | AUTHOR_SELF_VERIFIED | One self-contained SGK learning journey 3 Golden chapters Knowledge→original Core/Practice→Written→selfcheck; Topic another journey and no new Topic Core |
-| Q18 | AUTHOR_SELF_VERIFIED | 13 exact current original component path/blob SHA source inventory, current author-signed self Q18 exact learner and original bank source, one V2+ready+REGISTER required, historical R00 independent PASS remains bound to old source only |
+| Q18 | AUTHOR_SELF_VERIFIED | Current source manifest updated B33 original learner blob and new DELTA_C Q14/PED6 proof, signed this author Q18 receipt and one V2/ready/register chain. Original independent R00 Academic/PED PASS immutable and not attributed to new snapshot. |
 
 ## Q16 private RD1 and current source author signoff
 
 Original 31 owner-held official independent RD1 stems/answers/rubrics are private off GitHub, not included here or Temp. Exposed 31 public end replay items use `CLIENT_SELF_CHECK_NO_MASTERY`, do not qualify for official independent `SGK_CHAPTER_READINESS`, and may not write mastery. Original public 62 quiz bank and nine Written remain one source each, no question answer changes, no scoring/Final Submit/Firebase/Auth/Gemini/student record modifications. Independent new v2.1 review NOT supplied; this is `AUTHOR_SELF_VERIFIED` only as current effective v3.2.0 permits.
 
-AUTHOR_SIGNOFF: Q01_Q18_A1_A7_SIGNED_AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_8d25c13cd3c181ab2efd66fab21248d5f943d337
+AUTHOR_SIGNOFF: Q01_Q18_A1_A7_SIGNED_AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_9f05c6e8ae0dafc61c6cb01bcd671aea76bb903a
 P0_P1_AUTHORING: 0_0_IN_CHECKED_SCOPE
 SOURCE_STATE: AUTHORING_PASS_ELIGIBLE_FOR_ONE_V2_READY_REGISTER
 RELEASE_STATE: NOT_AUTHORIZED_OR_DEPLOYED
+
+## CURRENT_B33_INTEGRATED_PRECORE_DELTA_C_AUTHOR_PROOF_20261122
+
+Real Q14/PED6 per-outcome finding: original G11-CHIX-INTEGRATED has frozen original public Core THPT-G11-CHIX-CHIX-C01 and Practice THPT-G11-CHIX-CHIX-P01 but none of the former 36 Knowledge FirstTry linked to this chapter-wide transfer skill. This does NOT make old original canonical review invalid. One new genuine source-owned FirstTry repairs its pre-Core independently teachable path without cloning old bank IDs.
+
+- Original single B33 student source blob `e42600243925ef8798f8ff728355df137cb0810f`: concept formation §1.9 bridges B31 instantaneous derivative/tangent, B32 composition/product, and B33 derivative twice; new unique `THPT-G11-B33-TRY09` with exact G11-CHIX-INTEGRATED outcome, voluntary concealed `Đối chiếu` and `HELP-G11-B33-TRY09`, independent worked `EX-G11-B33-R04-INTEGRATED`, common-error 4.4.
+- Math source verification: f(x)=(x²+1)², f'=4x(x²+1), f(1)=4, slope f'(1)=8 and tangent y−4=8(x−1); f''=12x²+4, f''(1)=16. Independent worked g(x)=xe^x gives g'=e^x(x+1), g(1)=e, tangent slope 2e and g''=e^x(x+2), g''(1)=3e. Distinguishes derivative 1 vs 2 and notes f'' denotes physical acceleration only when dependent variable is position vs time with units.
+- Exact current scope: original 71 public canonical (62 JS C/P +9 Written/Anchor) unchanged; 37 optional source-local FirstTry =108 unique Q15 question IDs, 45 source-owned explained examples; 31 registered outcomes with public canonical and FirstTry, five SVG intact. 31 confidential independent RD1 remain owner-held OFF GitHub; original public 31 END replay CLIENT_SELF_CHECK_NO_MASTERY only.
+- Delta_C academic/pedagogic on B33 only, Q18 AUTHOR_SELF_VERIFIED current source snapshot under sole v3.2.0 standard; old R00 independent source/receipt remains historical immutable. Previous 80 older numeric probes not claimed rerun, original S1 SGK/SBT printed page image ownership historically verified not freshly re-scanned. No RELEASE, Firebase/Auth, Final Submit, Mastery or website changes.
 
 ## REVIEW CURRENT_R04_AUTHOR_Q18_RECEIPT END
