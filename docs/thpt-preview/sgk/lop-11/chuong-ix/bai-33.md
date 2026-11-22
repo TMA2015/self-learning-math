@@ -168,6 +168,34 @@
 
         **Tự sửa:** Mỗi lần đạo hàm nhân 2π; không dùng độ đo góc theo độ. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-P04">Luyện lại B33-P04</a>
 
+    ### 1.9. Tích hợp Chương IX: tiếp tuyến, hàm hợp và đạo hàm cấp hai
+
+    Bài 31 diễn giải \(f'(a)\) là **hệ số góc tiếp tuyến** nếu hàm khả vi tại \(a\). Bài 32 hướng dẫn quy tắc **hàm hợp** (và tổng, tích, thương khi đủ điều kiện). Bài 33 lấy đạo hàm thêm một lần để thấy **hệ số góc thay đổi** ra sao. Muốn dùng đủ cả ba, hãy tìm **hàm, miền và điểm đang xét** trước khi áp dụng các công thức, không lấy \(f''(a)\) thay cho hệ số góc tiếp tuyến.
+
+    **Vận dụng — Tự thử tích hợp trước Core.** Cho \(f(x)=(x^2+1)^2\) trên \(\mathbb R\). (a) Dùng quy tắc hàm hợp tính \(f'(x)\), giải thích đạo hàm của biểu thức bên trong. (b) Viết phương trình tiếp tuyến của đồ thị tại điểm có hoành độ \(x=1\). (c) Tính \(f''(x)\) và \(f''(1)\). (d) Phân biệt ý nghĩa của \(f'(1)\) và \(f''(1)\). Tự làm trước khi mở lời giải.
+
+    <span data-ped-first-try="9" data-outcome-id="G11-CHIX-INTEGRATED" data-thpt-first-try-id="THPT-G11-B33-TRY09" hidden></span>
+
+    ??? question "Đối chiếu — ba bước giải có lý do"
+
+        **Bước 1 — đạo hàm hàm hợp:** Đặt \(u=x^2+1>0\), \(f=u^2\). Do \(u'=2x\), theo quy tắc hàm hợp \(f'=2u\cdot u'=4x(x^2+1)=4x^3+4x\). Không được bỏ đạo hàm \(2x\) của biểu thức trong.
+
+        **Bước 2 — tiếp tuyến:** \(f(1)=(1+1)^2=4\), \(f'(1)=8\). Vì \(f\) là đa thức nên khả vi tại \(1\), tiếp tuyến là \(y-4=8(x-1)\), không dùng \(f''(1)\) làm hệ số góc.
+
+        **Bước 3 — đạo hàm cấp hai:** \(f''=(4x^3+4x)'=12x^2+4\), \(f''(1)=16\).
+
+        **Kiểm ý nghĩa:** \(f'(1)=8\) đo độ dốc đồ thị \(f\) tại \(1\); \(f''(1)=16\) đo tốc độ thay đổi của \(f'\) theo \(x\) tại đó. Với một hàm số toán học bất kỳ, **không tự gọi** \(f''\) là gia tốc; chỉ khi \(f\) biểu diễn vị trí theo thời gian và có đơn vị phù hợp mới được diễn giải như vậy. Có thể khai triển \(f=x^4+2x^2+1\) để kiểm độc lập.
+
+    <span data-thpt-help-id="HELP-G11-B33-TRY09" hidden></span>
+
+    ??? tip "Kiểm lỗi — lẫn quy tắc dây chuyền với đạo hàm hai lần"
+
+        **Dấu hiệu:** Em viết \(f'=2(x^2+1)\) mà quên nhân \(2x\), hoặc lấy \(16\) làm hệ số góc tiếp tuyến tại \(1\).
+
+        **Vì sao sai:** Đạo hàm hàm hợp luôn nhân đạo hàm biểu thức trong; tiếp tuyến dùng **\(f'(1)\)**, còn \(f''(1)\) là đạo hàm của \(f'\).
+
+        **Tự sửa:** Đánh dấu \(u=x^2+1\), \(u'=2x\), lần lượt tính \(f\to f'\to f''\). Ôn Bài 31 tiếp tuyến, Bài 32 quy tắc hàm hợp, Bài 33 đạo hàm cấp hai; sau đó tự làm Practice tích hợp `THPT-G11-CHIX-CHIX-P01` tại <a href="../luyen-tap/?item=THPT-G11-CHIX-CHIX-P01">Core/Luyện tập</a> và chỉ mở lời giải sau khi thử.
+
 === "Kiến thức SGK"
 
     ### 2.1. Khái niệm đạo hàm cấp hai
@@ -232,6 +260,15 @@
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B33-R02-11"><p><strong>Đề bài:</strong> Một vật dao động với tọa độ \(s(t)=5+2\cos(\pi t+\pi/3)\) cm, t≥0. Tính vận tốc, gia tốc và gia tốc lúc t=2/3 s.</p><p><strong>Phân tích:</strong> Góc đo radian; đạo hàm tầng trong là \(\pi\) ở cả hai lượt.</p><p><strong>Lời giải:</strong> \(v=-2\pi\sin(\pi t+\pi/3)\) cm/s; \(a=-2\pi^2\cos(\pi t+\pi/3)\) cm/s². Tại t=2/3 góc bằng \(\pi\), nên \(a=2\pi^2\) cm/s².</p><p><strong>Kiểm lại:</strong> Vận tốc tại thời điểm đó bằng 0 nhưng gia tốc khác 0.</p></div>
 
+    ### 3.12. Tích hợp tích, tiếp tuyến và đạo hàm cấp hai
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B33-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Với \(g(x)=xe^x\), viết tiếp tuyến tại \(x=1\) và tính \(g''(1)\). Giải thích vì sao không lấy \(g''(1)\) làm độ dốc tiếp tuyến.</p>
+    <p><strong>Chọn phương pháp:</strong> Đây là **tích**, không phải đạo hàm của \(x\) riêng rồi bỏ \(e^x\); trước tiên dùng quy tắc tích để tìm \(g'\), lấy \(g(1),g'(1)\) viết tiếp tuyến, sau đó đạo hàm lần hai để tìm \(g''\).</p>
+    <p><strong>Lời giải:</strong> \(g'=1\cdot e^x+x e^x=e^x(x+1)\), do đó \(g(1)=e\), \(g'(1)=2e\), tiếp tuyến \(y-e=2e(x-1)\). Đạo hàm tiếp \(g''=e^x(x+1)+e^x=e^x(x+2)\), suy ra \(g''(1)=3e\).</p>
+    <p><strong>Kiểm lại:</strong> \(g\) khả vi trên \(\mathbb R\), đạo hàm cấp hai tồn tại. Hệ số góc là \(2e\) còn \(3e\) đo tốc độ biến thiên của hệ số góc, **không** phải hệ số góc của chính \(g\).</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G11-CHIX-B33-01" hidden></span>
@@ -251,6 +288,16 @@
     ??? tip "4.3. Nhầm đơn vị hoặc miền thời gian"
     
         $s(t)=6t-2t^2$ m trên [0,3], a=−4 m/s² trong khoảng mô hình. Không suy diễn quá t=3. <a href="../luyen-tap/?item=THPT-G11-CHIX-B33-P04">Luyện lại B33-P04</a>
+
+    <span data-thpt-help-id="HELP-G11-B33-INTEGRATED" hidden></span>
+
+    ??? tip "4.4. Nhầm đạo hàm cấp hai với hệ số góc"
+
+        **Dấu hiệu:** Em dùng \(f''(a)\) trong phương trình tiếp tuyến hoặc bỏ đạo hàm tầng trong của hàm hợp.
+
+        **Vì sao sai:** Tiếp tuyến tại điểm khả vi dùng \(f'(a)\); đạo hàm cấp hai là đạo hàm của \(f'\), không thay vai trò của đạo hàm cấp một.
+
+        **Tự sửa:** Ôn §1.9 và Ví dụ 3.12, viết \(f(a)\), \(f'(a)\), \(f''(a)\) thành ba dòng riêng, rồi làm <a href="../luyen-tap/?item=THPT-G11-CHIX-CHIX-P01">Practice tích hợp</a>.
 
     **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập Bài 33</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-ix/">Tự luận Chương IX</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
 
