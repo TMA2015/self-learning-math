@@ -154,12 +154,12 @@ function isSignedW3Recovery(files){
  if(!isExactW3TopicWave([...W3_EXACT_SCOPE_FILES]))return false;
  const path="docs/assets/javascripts/thpt-topic-w3-golden-v1.js";
  if(!fs.existsSync(path))return false;
- const marker="/* W3_RELEASE_DEPLOY_RECOVERY_20261122: comment-only scoped asset touch; UI/math/source unchanged. */\\n";
+ const marker="/* W3_RELEASE_DEPLOY_RECOVERY_20261122: comment-only scoped asset touch; UI/math/source unchanged. */\n";
  const js=fs.readFileSync(path,"utf8");
  if(!js.startsWith(marker))return false;
  const original=Buffer.from(js.slice(marker.length));
  const crypto=require("node:crypto");
- const sha=crypto.createHash("sha1").update("blob "+original.length+"\\0").update(original).digest("hex");
+ const sha=crypto.createHash("sha1").update("blob "+original.length+"\0").update(original).digest("hex");
  if(sha!=="f673f2eceec558d89584e0b7f5991feb8613ac9b")return false;
  const manifest=JSON.parse(fs.readFileSync("prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json","utf8"));
  return Object.entries(manifest.topics).every(([n,rec])=>
