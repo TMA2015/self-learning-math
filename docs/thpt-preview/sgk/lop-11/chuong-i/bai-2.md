@@ -290,7 +290,7 @@
 
     **Vì sao sai:** Sin, cos không phân phối qua dấu cộng. Chẳng hạn \(\sin(30^\circ+60^\circ)=1\), trong khi \(\sin30^\circ+\sin60^\circ=(1+\sqrt3)/2\ne1\).
 
-    **Cách sửa:** Nhìn dấu cộng/trừ **nằm trong đối số**, rồi viết đủ hai tích theo công thức cộng. Có thể tự thử \(a=b\) để kiểm công thức dự định dùng.
+    **Cách sửa:** Nhìn dấu cộng/trừ **nằm trong đối số**, rồi viết đủ hai tích theo công thức cộng. Có thể kiểm bằng cách chọn \(a=b\) trước khi dùng công thức.
 
     ### 4.2. Nhớ nhầm dấu, quên điều kiện của tan
 
@@ -324,4 +324,4 @@
 
     **Cách sửa:** Kiểm hai đối số có cùng hệ số của \(t\) hay không. Nếu khác, chỉ kết luận được **đồng nhất thức tổng thành tích**, không tự gọi đó là một sóng sin thuần có biên độ không đổi.
 
-<p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 11, <em>Kết nối tri thức với cuộc sống</em>, tập một, Bài 2 “Công thức lượng giác”, trang in 17–21. Bài giảng, ví dụ và câu Vận dụng được tự biên soạn theo mẫu Golden của Toán 10 đã nghiệm thu.</p>
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 11, <em>Kết nối tri thức với cuộc sống</em>, tập một, Bài 2 “Công thức lượng giác”, trang in 17–21.</p>
