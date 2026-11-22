@@ -162,9 +162,11 @@
     
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất cơ bản của nguyên hàm.</strong><p>Nguyên hàm của tổng hoặc hiệu bằng tổng hoặc hiệu các nguyên hàm; \(\int kf(x)\,dx=k\int f(x)\,dx\) với k≠0. Hiểu các đẳng thức theo họ nguyên hàm, gộp thành một hằng số tùy ý. Với k=0, \(\int0\,dx=C\).</p></div>
 
-    ### 2.3. Nguyên hàm các hàm số thường gặp
+    ### 2.3. Nguyên hàm của một số hàm số thường gặp
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Nguyên hàm các hàm số thường gặp.</strong><p>\(\int x^\alpha dx=\frac{x^{\alpha+1}}{\alpha+1}+C\) trên miền lũy thừa khả vi thích hợp, chẳng hạn x&gt;0 với số mũ thực \(\alpha\ne-1\). Với số mũ nguyên, dùng trên các khoảng xác định; \(\int 1/x\,dx=\ln|x|+C\) trên từng khoảng x≠0. \(\int e^x dx=e^x+C\); \(\int a^x dx=a^x/\ln a+C\) (a&gt;0, a≠1). \(\int\cos x dx=\sin x+C\), \(\int\sin x dx=-\cos x+C\), \(\int dx/\cos^2x=\tan x+C\), \(\int dx/\sin^2x=-\cot x+C\) trên các khoảng xác định. Các hàm lượng giác dùng radian.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Nguyên hàm của một số hàm số thường gặp.</strong><p>\(\int x^\alpha dx=\frac{x^{\alpha+1}}{\alpha+1}+C\) trên miền lũy thừa khả vi thích hợp, chẳng hạn x&gt;0 với số mũ thực \(\alpha\ne-1\). Theo quy ước sách: số mũ nguyên dương có miền R; số mũ nguyên âm hoặc bằng 0 có miền R bỏ 0; số mũ không nguyên dùng x&gt;0. Với hàm hằng, \(\int0\,dx=C,\ \int1\,dx=x+C\) trên R; \(\int 1/x\,dx=\ln|x|+C\) trên từng khoảng x≠0. \(\int e^x dx=e^x+C\); \(\int a^x dx=a^x/\ln a+C\) (a&gt;0, a≠1). \(\int\cos x dx=\sin x+C\), \(\int\sin x dx=-\cos x+C\), \(\int dx/\cos^2x=\tan x+C\), \(\int dx/\sin^2x=-\cot x+C\) trên các khoảng xác định. Các hàm lượng giác dùng radian.</p></div>
+
+    **Chú ý:** Nếu F là một nguyên hàm của f thì vi phân $dF(x)=F'(x)dx=f(x)dx$. Khi đề không ghi miền, xét tập xác định và các khoảng liên thông thích hợp. Có thể biến đổi căn, tích, phân thức hoặc đồng nhất thức lượng giác thành tổng các hàm trong bảng; kiểm lại bằng đạo hàm.
 
 === "Ví dụ"
 
@@ -203,6 +205,22 @@
     ### 3.9. Doanh thu từ doanh thu biên
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-R02-09"><p><strong>Đề bài:</strong> \(R'(q)=80-q\) (nghìn đồng/sản phẩm), R(0)=0, \(0\le q\le60\). Tìm R(20).</p><p><strong>Phân tích:</strong> Nguyên hàm theo q, không theo thời gian.</p><p><strong>Lời giải:</strong> \(R(q)=80q-q^2/2\), \(R(20)=1400\) nghìn đồng.</p><p><strong>Kiểm lại:</strong> R'=80−q, R(0)=0; mô hình chỉ dùng trong miền đã cho.</p></div>
+
+    ### 3.10. Đưa căn và phân thức về lũy thừa
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-R02-10"><p><strong>Đề bài:</strong> Tính \(\int(4\sqrt{x}-2/x^3)\,dx\) với x&gt;0.</p><p><strong>Phân tích:</strong> Viết \(\sqrt{x}=x^{1/2}\), \(1/x^3=x^{-3}\) rồi dùng bảng.</p><p><strong>Lời giải:</strong> \(\frac83x^{3/2}+x^{-2}+C\).</p><p><strong>Kiểm lại:</strong> Đạo hàm cho \(4x^{1/2}-2x^{-3}\); miền dương phù hợp với căn.</p></div>
+
+    ### 3.11. Nhận dạng đạo hàm hàm hợp (SBT)
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-R02-11"><p><strong>Đề bài:</strong> Tính \(\int 3(3x+2)^4dx\) trên R.</p><p><strong>Phân tích:</strong> Nếu \(F'=f\) và u khả vi với u(x) thuộc miền của F, thì \((F(u(x)))'=f(u(x))u'(x)\). Nhìn thấy u'=3.</p><p><strong>Lời giải:</strong> \(\int3(3x+2)^4dx=(3x+2)^5/5+C\).</p><p><strong>Kiểm lại:</strong> Đạo hàm kết quả đúng \(3(3x+2)^4\). Đây là vận dụng quy tắc hàm hợp, không nhân/chia tùy ý khi u' không hằng.</p></div>
+
+    ### 3.12. Biến đổi lượng giác trước khi tính (SBT)
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-R02-12"><p><strong>Đề bài:</strong> Tính \(\int(2\tan^2 x+1)dx\) trên \((-\pi/2,\pi/2)\).</p><p><strong>Phân tích:</strong> Dùng \(\tan^2x=1/\cos^2x-1\).</p><p><strong>Lời giải:</strong> \(\int(2/\cos^2x-1)dx=2\tan x-x+C\).</p><p><strong>Kiểm lại:</strong> Đạo hàm bằng \(2/\cos^2x-1=2\tan^2x+1\).</p></div>
+
+    ### 3.13. Mũ có hệ số và mô hình bán rã (SBT)
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B11-R02-13"><p><strong>Đề bài:</strong> Một lượng chất có \(N'(t)=-0{,}2N_0e^{-0{,}2t}\), \(N(0)=N_0&gt;0\). Tìm thời điểm N còn một nửa.</p><p><strong>Phân tích:</strong> Dùng \(\int e^{kt}dt=e^{kt}/k+C\) với k≠0 do quy tắc hàm hợp.</p><p><strong>Lời giải:</strong> \(N(t)=N_0e^{-0{,}2t}+C\), từ điều kiện đầu C=0. \(e^{-0{,}2t}=1/2\) cho \(t=5\ln2\) (đơn vị thời gian).</p><p><strong>Kiểm lại:</strong> Đạo hàm N đúng tốc độ giảm; t&gt;0 và \(N(5\ln2)=N_0/2\).</p></div>
 
 === "Lỗi thường gặp"
 
@@ -256,4 +274,4 @@
 
     [Core Bài 11](../luyen-tap/#b11-core) · [Luyện tập và Tự luận](../luyen-tap/#b11-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b11-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 4–11.*
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 4–11; SBT Tập hai, trang in 3–8.*
