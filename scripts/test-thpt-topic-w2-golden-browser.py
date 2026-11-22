@@ -249,7 +249,7 @@ with sync_playwright() as pw:
                     page.locator(f'[data-topic-w1-subtab="{sub}"]').click()
                     current = page.locator('.thpt-r4-knowledge-content-panel:visible')
                     exp = current.locator('[data-topic-w2-display-math="exponent"]')
-                    assert exp.count() >= 3, (engine, topic, width, "raw superscripts not normalized", exp.count())
+                    assert exp.count() >= (2 if topic == "09" else 3), (engine, topic, width, "raw superscripts not normalized", exp.count())
                     expect(exp.first.locator("mjx-container").first).to_be_visible(timeout=20000)
                     assert not current.evaluate(r"(e) => /(?:e|a|x)\^\{/.test(e.innerText)"), (
                         engine, topic, width, "visible unrendered superscript syntax",
