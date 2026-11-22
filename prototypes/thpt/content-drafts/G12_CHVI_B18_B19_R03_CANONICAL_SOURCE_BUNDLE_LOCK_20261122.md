@@ -37,6 +37,88 @@ R02 biên tập nội dung `DELTA_C_ACADEMIC_MATERIAL` đã kiểm 14 outcome, 2
 
 R03 thay **96 liên kết điều hướng tương đối** (48 mỗi bài) từ cú pháp Markdown sang thẻ `<a>`, **giữ nguyên từng nhãn, href và fragment**, không thay toán/outcome/stem/key/rubric. B18 R02 blob `f18236ba76a3f7b6041982377e3e39cc80a731e2` → R03 `132460dc79f161e2fe5c782fe832d6ae38268cdd`; B19 `d38167249f8364787627dda056508e32d4916e60` → `da3e29a44c9f538305145c6be7e55bdd415d2d23`. Source R03 read-back verified 96/96 converted links and 0 remaining from this relative-Markdown pattern; mathematical characters/answers not edited. Old R02 structural/math/SVG receipt remains explicitly **source-scoped historic evidence**, not falsely assigned to a different blob.
 
+## SOURCE_LOCKED_ID_REGISTER
+
+Đây là các định danh trên **cùng 10 original canonical paths/blob**; không sao chép item hay answer. Metadata khóa đúng dữ liệu đã kiểm và phục vụ V2 source-lock.
+
+### LESSON_IDS
+- G12-CHVI-B18
+- G12-CHVI-B19
+
+### OUTCOME_IDS
+- G12-CHVI-B18-O01
+- G12-CHVI-B18-O02
+- G12-CHVI-B18-O03
+- G12-CHVI-B18-O04
+- G12-CHVI-B18-O05
+- G12-CHVI-B18-O06
+- G12-CHVI-B18-O07
+- G12-CHVI-B19-O01
+- G12-CHVI-B19-O02
+- G12-CHVI-B19-O03
+- G12-CHVI-B19-O04
+- G12-CHVI-B19-O05
+- G12-CHVI-B19-O06
+- G12-CHVI-B19-O07
+
+### PUBLIC_ITEM_IDS
+- THPT-G12-B18-C01
+- THPT-G12-B18-P01
+- THPT-G12-B18-A01
+- THPT-G12-B18-W01
+- THPT-G12-B18-C02
+- THPT-G12-B18-P02
+- THPT-G12-B18-A02
+- THPT-G12-B18-W02
+- THPT-G12-B18-C03
+- THPT-G12-B18-P03
+- THPT-G12-B18-A03
+- THPT-G12-B18-W03
+- THPT-G12-B18-C04
+- THPT-G12-B18-P04
+- THPT-G12-B18-A04
+- THPT-G12-B18-W04
+- THPT-G12-B18-C05
+- THPT-G12-B18-P05
+- THPT-G12-B18-A05
+- THPT-G12-B18-W05
+- THPT-G12-B18-C06
+- THPT-G12-B18-P06
+- THPT-G12-B18-A06
+- THPT-G12-B18-W06
+- THPT-G12-B18-C07
+- THPT-G12-B18-P07
+- THPT-G12-B18-A07
+- THPT-G12-B18-W07
+- THPT-G12-B19-C01
+- THPT-G12-B19-P01
+- THPT-G12-B19-A01
+- THPT-G12-B19-W01
+- THPT-G12-B19-C02
+- THPT-G12-B19-P02
+- THPT-G12-B19-A02
+- THPT-G12-B19-W02
+- THPT-G12-B19-C03
+- THPT-G12-B19-P03
+- THPT-G12-B19-A03
+- THPT-G12-B19-W03
+- THPT-G12-B19-C04
+- THPT-G12-B19-P04
+- THPT-G12-B19-A04
+- THPT-G12-B19-W04
+- THPT-G12-B19-C05
+- THPT-G12-B19-P05
+- THPT-G12-B19-A05
+- THPT-G12-B19-W05
+- THPT-G12-B19-C06
+- THPT-G12-B19-P06
+- THPT-G12-B19-A06
+- THPT-G12-B19-W06
+- THPT-G12-B19-C07
+- THPT-G12-B19-P07
+- THPT-G12-B19-A07
+- THPT-G12-B19-W07
+
 ## 4. Cổng bảo vệ
 
 - 56 canonical public items (14 x Core/Practice/Application/Written), 14 HELP và 14 END là *placement* của Application đã xem; 22 FirstTry riêng với nhãn `SGK_KNOWLEDGE_FIRST_TRY`, không nhân bản câu trong bank.
