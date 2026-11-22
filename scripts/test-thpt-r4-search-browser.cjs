@@ -175,12 +175,12 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    await query("tập hợp",1);
    await query("tap hop",1);
    await query("logic",1);
-   // W2 catalog: 11 published full learning paths, no false unpublished expectations.
-   assert.equal(await page.locator("[data-thpt-filter-item][data-thpt-topic]").count(),11);
+   // W3 catalog: 15 published full learning paths, no false unpublished expectations.
+   assert.equal(await page.locator("[data-thpt-filter-item][data-thpt-topic]").count(),15);
    await query("hàm số",2);
    await query("ham so",2);
    assert.equal(await page.locator('.topic01-legacy-note a[href*="ham-so/kien-thuc/"]').count(),1,"Preserve technical sample deep link");
-   for(const n of [2,3,4,5,6,7,8,9,10,11]){
+   for(const n of [2,3,4,5,6,7,8,9,10,11,12,13,14,15]){
     const hits=await query("chuyên đề "+String(n).padStart(2,"0"),1);
     assert((await hits.first().getAttribute("href")).endsWith("cd"+String(n).padStart(2,"0")+"/kien-thuc/"),"CĐ"+n+" discovery");
    }
