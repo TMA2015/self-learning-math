@@ -1,0 +1,25 @@
+/* CĐ02–05 W1 · owner-approved CĐ01/SGK Golden. Visual styles from
+ * thpt-topic01-release-v1.css + SGK R4 (already loaded by MkDocs).
+ * This stylesheet is strictly a scoped first-paint/boot and layout adapter,
+ * NOT an alternative palette, typography or standard. */
+.topic-w1-release-nav{max-width:100%;margin:0 0 18px}
+.topic-w1-release-nav .topic-w1-back{font-size:.8rem}
+.topic-w1-release-nav .topic-w1-assessment-note{padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:10px;background:var(--md-code-bg-color);font-size:.8rem;line-height:1.6}
+.topic-w1-source-intro{margin:.7rem 0}
+.topic-w1-end-nav{margin-top:30px;padding-top:14px;border-top:1px solid var(--md-default-fg-color--lightest)}
+.topic-w1-boot-status{display:none;margin:12px 0 18px;padding:12px 16px;border:1px solid var(--md-default-fg-color--lightest);border-radius:9px;background:var(--md-code-bg-color);color:var(--md-default-fg-color);font-size:.8rem;line-height:1.5}
+html:is(.topic-w1-pending,.topic-w1-fallback) .topic-w1-boot-status{display:block}
+html.topic-w1-pending .md-content__inner > p:has(> span[data-topic-w1-source-start]) ~ *{display:none!important}
+.topic-w1-source-shelf[hidden],.topic-w1-selfcheck-source-shelf[hidden],[data-topic-w1-solution][hidden]{display:none!important}
+.topic-w1-knowledge .topic01-knowledge-layout{max-width:100%;width:100%;min-width:0;overflow-x:clip}
+.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs{max-width:100%;min-width:0;overflow-x:auto;overflow-y:hidden}
+.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-panel{max-width:100%;min-width:0}
+.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel :is(mjx-container[display="true"],table,.arithmatex){max-width:100%;overflow-x:auto}
+.topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel :is(p,li){overflow-wrap:break-word}
+.topic-w1-practice-hub .topic01-golden-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+.topic-w1-practice-hub .topic01-single-card{grid-template-columns:minmax(0,1fr)}
+.topic-w1-practice-dialog .thpt-r4-formative-actions details{max-width:100%}
+.topic-w1-practice-dialog .thpt-r4-formative-reveal{white-space:pre-wrap;overflow-wrap:anywhere}
+.topic-w1-selfcheck .g10sc-body{max-width:100%;overflow-wrap:break-word}
+.topic-w1-selfcheck .g10sc-body mjx-container{max-width:100%;overflow-x:auto}
+@media(max-width:640px){.topic-w1-practice-hub .topic01-golden-grid{grid-template-columns:1fr}}
