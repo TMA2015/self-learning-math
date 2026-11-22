@@ -184,31 +184,35 @@
 
     ### 3.1. Phương trình mũ không cùng cơ số dễ nhận
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(6^{2x-1}=11\).</p><p><strong>Phân tích:</strong> Vế phải dương nhưng không dễ viết thành lũy thừa nguyên của 6; lấy logarit cơ số 6.</p><p><strong>Lời giải:</strong> \(2x-1=\log_6 11\), suy ra \(x=(1+\log_6 11)/2\).</p><p><strong>Kiểm lại:</strong> Thế số mũ bằng log_6 11 cho giá trị 11, nghiệm duy nhất vì hàm mũ đơn ánh.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-01"><p><strong>Đề bài:</strong> Giải \(6^{2x-1}=11\).</p><p><strong>Phân tích:</strong> Vế phải dương nhưng không dễ viết thành lũy thừa nguyên của 6; lấy logarit cơ số 6.</p><p><strong>Lời giải:</strong> \(2x-1=\log_6 11\), suy ra \(x=(1+\log_6 11)/2\).</p><p><strong>Kiểm lại:</strong> Thế số mũ bằng log_6 11 cho giá trị 11, nghiệm duy nhất vì hàm mũ đơn ánh.</p></div>
 
     ### 3.2. Phương trình logarit ghép tích
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(\log_2(x-2)+\log_2(x+1)=2\).</p><p><strong>Phân tích:</strong> Tìm giao điều kiện rồi gộp tích.</p><p><strong>Lời giải:</strong> Điều kiện \(x\gt 2\). Khi đó \((x-2)(x+1)=4\), tức \(x^2-x-6=0\), có \(x=3,-2\). Chỉ \(x=3\) thỏa miền. Tập nghiệm \(\{3\}\).</p><p><strong>Kiểm lại:</strong> Tại 3, đối số 1 và 4 đều dương, tổng logarit bằng 0+2=2.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-02"><p><strong>Đề bài:</strong> Giải \(\log_2(x-2)+\log_2(x+1)=2\).</p><p><strong>Phân tích:</strong> Tìm giao điều kiện rồi gộp tích.</p><p><strong>Lời giải:</strong> Điều kiện \(x\gt 2\). Khi đó \((x-2)(x+1)=4\), tức \(x^2-x-6=0\), có \(x=3,-2\). Chỉ \(x=3\) thỏa miền. Tập nghiệm \(\{3\}\).</p><p><strong>Kiểm lại:</strong> Tại 3, đối số 1 và 4 đều dương, tổng logarit bằng 0+2=2.</p></div>
 
     ### 3.3. Bất phương trình mũ với vế phải không dương
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(3^{2x+1}\le-2\) và \(3^{2x+1}\gt -2\).</p><p><strong>Phân tích:</strong> Dùng trực tiếp tính dương; không lấy logarit số âm.</p><p><strong>Lời giải:</strong> Vì \(3^{2x+1}\gt 0\) với mọi x thực, bất phương trình thứ nhất vô nghiệm; bất phương trình thứ hai có tập nghiệm \(\mathbb R\).</p><p><strong>Kiểm lại:</strong> Mọi giá trị đều dương nên luôn lớn hơn -2.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-03"><p><strong>Đề bài:</strong> Giải \(3^{2x+1}\le-2\) và \(3^{2x+1}\gt -2\).</p><p><strong>Phân tích:</strong> Dùng trực tiếp tính dương; không lấy logarit số âm.</p><p><strong>Lời giải:</strong> Vì \(3^{2x+1}\gt 0\) với mọi x thực, bất phương trình thứ nhất vô nghiệm; bất phương trình thứ hai có tập nghiệm \(\mathbb R\).</p><p><strong>Kiểm lại:</strong> Mọi giá trị đều dương nên luôn lớn hơn -2.</p></div>
 
     ### 3.4. Bất phương trình mũ giảm, có biên
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \((1/4)^{2x-3}\lt (1/4)^{-1}\).</p><p><strong>Phân tích:</strong> Cơ số trong (0,1) nên đảo chiều khi so số mũ.</p><p><strong>Lời giải:</strong> \(2x-3\gt -1\) tương đương \(x\gt 1\). Tập nghiệm \((1,+\infty)\).</p><p><strong>Kiểm lại:</strong> Tại x=1 hai vế bằng nhau nên không lấy điểm biên.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-04"><p><strong>Đề bài:</strong> Giải \((1/4)^{2x-3}\lt (1/4)^{-1}\).</p><p><strong>Phân tích:</strong> Cơ số trong (0,1) nên đảo chiều khi so số mũ.</p><p><strong>Lời giải:</strong> \(2x-3\gt -1\) tương đương \(x\gt 1\). Tập nghiệm \((1,+\infty)\).</p><p><strong>Kiểm lại:</strong> Tại x=1 hai vế bằng nhau nên không lấy điểm biên.</p></div>
 
     ### 3.5. Bất phương trình lôgarit hai đối số
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(\log_{1/2}(x+4)\lt \log_{1/2}(2x-1)\).</p><p><strong>Phân tích:</strong> Hai đối số dương cho x>1/2; hàm giảm đảo chiều.</p><p><strong>Lời giải:</strong> \(x+4\gt 2x-1\), tức \(x\lt 5\). Giao miền được \((1/2,5)\).</p><p><strong>Kiểm lại:</strong> Tại x=1/2, logarit thứ hai không xác định; tại x=5 hai giá trị bằng nhau, cả hai biên đều loại.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-05"><p><strong>Đề bài:</strong> Giải \(\log_{1/2}(x+4)\lt \log_{1/2}(2x-1)\).</p><p><strong>Phân tích:</strong> Hai đối số dương cho x>1/2; hàm giảm đảo chiều.</p><p><strong>Lời giải:</strong> \(x+4\gt 2x-1\), tức \(x\lt 5\). Giao miền được \((1/2,5)\).</p><p><strong>Kiểm lại:</strong> Tại x=1/2, logarit thứ hai không xác định; tại x=5 hai giá trị bằng nhau, cả hai biên đều loại.</p></div>
 
     ### 3.6. Mô hình suy giảm giá trị
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giá trị tài sản theo mô hình cuối năm \(V(n)=240(0{,}8)^n\) triệu đồng, n nguyên không âm. Năm đầu giá trị không quá 100 triệu là năm nào?</p><p><strong>Phân tích:</strong> Vì cơ số nhỏ hơn 1, bất phương trình đảo chiều. Phải kiểm số nguyên.</p><p><strong>Lời giải:</strong> Ta cần \((0{,}8)^n\le5/12\), tương đương \(n\ge \ln(5/12)/\ln(0{,}8)\approx3{,}923\). Năm đầu là n=4.</p><p><strong>Kiểm lại:</strong> (V(3)=122{,}88>100), (V(4)=98{,}304le100); hợp lệ.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-06"><p><strong>Đề bài:</strong> Giá trị tài sản theo mô hình cuối năm \(V(n)=240(0{,}8)^n\) triệu đồng, n nguyên không âm. Năm đầu giá trị không quá 100 triệu là năm nào?</p><p><strong>Phân tích:</strong> Vì cơ số nhỏ hơn 1, bất phương trình đảo chiều. Phải kiểm số nguyên.</p><p><strong>Lời giải:</strong> Ta cần \((0{,}8)^n\le5/12\), tương đương \(n\ge \ln(5/12)/\ln(0{,}8)\approx3{,}923\). Năm đầu là n=4.</p><p><strong>Kiểm lại:</strong> (V(3)=122{,}88>100), (V(4)=98{,}304le100); hợp lệ.</p></div>
 
     ### 3.7. Ứng dụng lôgarit tự nhiên cho áp suất
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Một mô hình \(p(h)=100e^{-h/7}\) kPa, \(h\ge0\) tính bằng km. Tìm độ cao để áp suất không quá 60 kPa.</p><p><strong>Phân tích:</strong> Chuyển tỷ số về mũ hoặc logarit; thời gian/độ cao cho phép nhận số thực.</p><p><strong>Lời giải:</strong> \(e^{-h/7}\le0{,}6\), lấy ln tăng được \(-h/7\le\ln0{,}6\). Nhân với -7 đảo dấu: \(h\ge-7\ln0{,}6\approx3{,}576\) km.</p><p><strong>Kiểm lại:</strong> Thế ngưỡng chính xác cho 60 kPa; số gần đúng chỉ để diễn giải, không đổi tập nghiệm chính xác.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-07"><p><strong>Đề bài:</strong> Một mô hình \(p(h)=100e^{-h/7}\) kPa, \(h\ge0\) tính bằng km. Tìm độ cao để áp suất không quá 60 kPa.</p><p><strong>Phân tích:</strong> Chuyển tỷ số về mũ hoặc logarit; thời gian/độ cao cho phép nhận số thực.</p><p><strong>Lời giải:</strong> \(e^{-h/7}\le0{,}6\), lấy ln tăng được \(-h/7\le\ln0{,}6\). Nhân với -7 đảo dấu: \(h\ge-7\ln0{,}6\approx3{,}576\) km.</p><p><strong>Kiểm lại:</strong> Thế ngưỡng chính xác cho 60 kPa; số gần đúng chỉ để diễn giải, không đổi tập nghiệm chính xác.</p></div>
+
+    ### 3.8. Đưa hai cơ số nghịch đảo về cùng cơ số
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-08"><p><strong>Đề bài:</strong> Giải \(\log_{1/2}(x+1)\ge\log_2(3-x)-\log_2 3\).</p><p><strong>Phân tích:</strong> Tìm giao điều kiện dương của hai đối số chứa biến. Dùng đổi cơ số ở Bài 19: \(\log_{1/2}u=-\log_2 u\) khi \(u\gt0\); quy về logarit cùng cơ số 2 để so sánh.</p><p><strong>Lời giải:</strong> Điều kiện \(-1\lt x\lt3\). Bất phương trình tương đương \(\log_2(x+1)+\log_2(3-x)\le\log_2 3\), rồi \((x+1)(3-x)\le3\) vì cơ số 2 lớn hơn 1. Khai triển được \(-x^2+2x+3\le3\), tức \(x(x-2)\ge0\). Nghiệm đại số là \(x\le0\) hoặc \(x\ge2\). Giao điều kiện, tập nghiệm là \((-1,0]\cup[2,3)\).</p><p><strong>Kiểm lại:</strong> Tại x=0 và x=2, tích hai đối số bằng 3 nên nhận dấu bằng. x=-1 và x=3 làm một đối số bằng 0, phải loại.</p></div>
 
 === "Lỗi thường gặp"
 
