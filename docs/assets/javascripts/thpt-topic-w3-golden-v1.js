@@ -425,7 +425,7 @@ function readReplay(){
   if(p?.tagName!=="P")throw Error("Public replay no paragraph "+id);
   const m=p.querySelector(":scope > strong")?.textContent?.match(/^Câu (\d+)\./),number=Number(m?.[1]);
   if(!number)throw Error("Public replay missing number "+id);
-  const stem=p.cloneNode(true);stem.querySelector(":scope > strong")?.remove();items.push({id,number,stem});
+  const stem=create("div","topic-w3-question-stem"),question=p.cloneNode(true);question.querySelector(":scope > strong")?.remove();stem.append(question);const options=p.nextElementSibling;if(options?.tagName==="P"&&/^Lựa chọn[:.]?$/.test(options.querySelector(":scope > strong")?.textContent.trim()||""))stem.append(options.cloneNode(true));items.push({id,number,stem});
  }
  if(items.length!==expected.replay||items.some((x,i)=>x.number!==i+1)||new Set(items.map(x=>x.id)).size!==expected.replay)throw Error("Public replay Q15/Q16 count/ID mismatch");
  return{items,nodes};
