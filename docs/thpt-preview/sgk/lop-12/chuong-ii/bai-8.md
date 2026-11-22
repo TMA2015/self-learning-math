@@ -26,7 +26,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Viết 2a trước rồi trừ theo ba cột. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b08-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b08-p01). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Cộng và trừ vectơ trong Oxyz được thực hiện theo từng tọa độ đồng vị trí; trừ âm có thể làm đổi dấu, cần kiểm bằng phép tính ngược.
+
+        **Tự sửa:** Viết 2a trước rồi trừ theo ba cột. <a href="../luyen-tap/#thpt-g12-b08-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b08-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.2. Cùng phương và cùng hướng
     
@@ -44,7 +46,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lập tỉ số 0/0, kiểm cùng một hệ số cho ba thành phần. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b08-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b08-p03). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Cùng phương cần một hệ số k chung cho toàn bộ các thành phần; với hai vectơ khác không, dấu k mới quyết định cùng/ngược hướng, vectơ-không dùng quy ước riêng SGK.
+
+        **Tự sửa:** Không lập tỉ số 0/0, kiểm cùng một hệ số cho ba thành phần. <a href="../luyen-tap/#thpt-g12-b08-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b08-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.3. Trung điểm và trọng tâm
     
@@ -62,7 +66,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tính riêng x,y,z; mẫu 2 cho M, 3 cho G. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b08-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b08-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Trung điểm/trọng tâm là trung bình của tọa độ vị trí từng đỉnh, không phải trung bình độ dài các vectơ từ gốc.
+
+        **Tự sửa:** Tính riêng x,y,z; mẫu 2 cho M, 3 cho G. <a href="../luyen-tap/#thpt-g12-b08-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b08-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.4. Tích vô hướng và góc
     
@@ -80,7 +86,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm độ dài khác 0; tích 0 của vectơ-không không cho góc duy nhất. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b08-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b08-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Góc giữa hai vectơ khác không xác định bằng tích vô hướng chia tích độ dài; không được suy vuông góc chỉ vì một vectơ là vectơ-không.
+
+        **Tự sửa:** Kiểm độ dài khác 0; tích 0 của vectơ-không không cho góc duy nhất. <a href="../luyen-tap/#thpt-g12-b08-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b08-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.5. Độ dài và khoảng cách
     
@@ -100,7 +108,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không quên căn bậc hai hoặc nhầm dấu khi tính hiệu. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b08-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b08-p09). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Khoảng cách Euclid là căn tổng bình phương các chênh tọa độ, khác tổng giá trị tuyệt đối ba chênh lệch đo một hành trình theo các trục.
+
+        **Tự sửa:** Không quên căn bậc hai hoặc nhầm dấu khi tính hiệu. <a href="../luyen-tap/#thpt-g12-b08-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b08-p09">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.6. Độ dời và quãng đường
     
@@ -118,7 +128,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Chỉ đồng nhất hai số nếu hành trình thẳng không đổi chiều. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b08-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b08-p11). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Độ dời chỉ phụ thuộc đầu và cuối, trong khi quãng đường đi theo cả lộ trình; nếu rẽ góc thì độ lớn vận tốc trung bình thường nhỏ hơn tốc độ trung bình.
+
+        **Tự sửa:** Chỉ đồng nhất hai số nếu hành trình thẳng không đổi chiều. <a href="../luyen-tap/#thpt-g12-b08-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b08-p11">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.7. Dự báo vị trí khi giữ nguyên vận tốc
 
@@ -136,7 +148,9 @@
 
     ??? tip "Kiểm lỗi"
 
-        Viết độ dời mới theo tỉ lệ thời gian; cộng vào điểm B. Kiểm BC có cùng hướng AB và độ dài bằng một nửa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b08-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b08-p11).
+        **Vì sao dễ sai:** Khi giữ nguyên vectơ vận tốc, độ dời ở khoảng kế tiếp tỷ lệ với thời gian và phải cộng vào điểm B vừa đến, không cộng lại vào điểm A ban đầu.
+
+        **Tự sửa:** Viết độ dời mới theo tỉ lệ thời gian; cộng vào điểm B. Kiểm BC có cùng hướng AB và độ dài bằng một nửa. <a href="../luyen-tap/#thpt-g12-b08-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b08-p11">thử câu luyện tập khác</a>.
 
 === "Kiến thức SGK"
 
@@ -204,44 +218,44 @@
     
     ??? tip "Cách tự sửa"
     
-        Viết 2a trước rồi trừ theo ba cột. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b08-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b08-p01).
+        Viết 2a trước rồi trừ theo ba cột. <a href="../luyen-tap/#thpt-g12-b08-c01">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b08-p01">luyện câu khác rồi quay lại</a>.
 
     ### 4.2. Cùng phương và cùng hướng
     
     ??? tip "Cách tự sửa"
     
-        Không lập tỉ số 0/0, kiểm cùng một hệ số cho ba thành phần. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b08-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b08-p03).
+        Không lập tỉ số 0/0, kiểm cùng một hệ số cho ba thành phần. <a href="../luyen-tap/#thpt-g12-b08-c02">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b08-p03">luyện câu khác rồi quay lại</a>.
 
     ### 4.3. Trung điểm và trọng tâm
     
     ??? tip "Cách tự sửa"
     
-        Tính riêng x,y,z; mẫu 2 cho M, 3 cho G. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b08-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b08-p05).
+        Tính riêng x,y,z; mẫu 2 cho M, 3 cho G. <a href="../luyen-tap/#thpt-g12-b08-c03">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b08-p05">luyện câu khác rồi quay lại</a>.
 
     ### 4.4. Tích vô hướng và góc
     
     ??? tip "Cách tự sửa"
     
-        Kiểm độ dài khác 0; tích 0 của vectơ-không không cho góc duy nhất. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b08-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b08-p07).
+        Kiểm độ dài khác 0; tích 0 của vectơ-không không cho góc duy nhất. <a href="../luyen-tap/#thpt-g12-b08-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b08-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.5. Độ dài và khoảng cách
     
     ??? tip "Cách tự sửa"
     
-        Không quên căn bậc hai hoặc nhầm dấu khi tính hiệu. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b08-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b08-p09).
+        Không quên căn bậc hai hoặc nhầm dấu khi tính hiệu. <a href="../luyen-tap/#thpt-g12-b08-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b08-p09">luyện câu khác rồi quay lại</a>.
 
     ### 4.6. Độ dời và quãng đường
     
     ??? tip "Cách tự sửa"
     
-        Chỉ đồng nhất hai số nếu hành trình thẳng không đổi chiều. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b08-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b08-p11).
+        Chỉ đồng nhất hai số nếu hành trình thẳng không đổi chiều. <a href="../luyen-tap/#thpt-g12-b08-c06">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b08-p11">luyện câu khác rồi quay lại</a>.
 
     ### 4.7. Cộng độ dời mới vào sai điểm
 
     ??? tip "Cách tự sửa"
 
-        Đánh dấu ba điểm A, B, C theo thời gian. Đoạn tiếp theo bắt đầu tại B; dùng tỉ lệ thời gian để xác định BC rồi cộng vào B. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b08-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b08-p11).
+        Đánh dấu ba điểm A, B, C theo thời gian. Đoạn tiếp theo bắt đầu tại B; dùng tỉ lệ thời gian để xác định BC rồi cộng vào B. <a href="../luyen-tap/#thpt-g12-b08-c06">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b08-p11">luyện câu khác rồi quay lại</a>.
 
-    [Core Bài 8](../luyen-tap/#b08-core) · [Luyện tập và Tự luận](../luyen-tap/#b08-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b08-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b08-core">Core Bài 8</a> · <a href="../luyen-tap/#b08-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b08-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 67–72.*
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 8 (trang in 67–72). SBT cùng bộ được kiểm qua biên bản nguồn lịch sử; trang in không đồng nhất chỉ số PDF.</p>
