@@ -112,7 +112,7 @@ Xét dấu f(x)=x²−2x+5 trên ℝ mà không cần tìm nghiệm.
 
 **Đáp án:** f(x)>0 với mọi x∈ℝ.
 
-Hoàn phương f(x)=(x−1)²+4>0; tương đương a=1>0, Δ=4−20=−16<0, luôn cùng dấu a.
+Hoàn phương f(x)=(x−1)²+4>0; tương đương a=1>0, Δ=4−20=−16&lt;0, luôn cùng dấu a.
 
 </details>
 
@@ -124,9 +124,9 @@ Chứng minh g(x)=−2x²+4x−5 âm với mọi x∈ℝ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** g(x)<0 với mọi x∈ℝ.
+**Đáp án:** g(x)&lt;0 với mọi x∈ℝ.
 
-g(x)=−2(x−1)²−3 ≤−3<0. Hệ số đầu âm và Δ<0 nên không đổi dấu.
+g(x)=−2(x−1)²−3 ≤−3&lt;0. Hệ số đầu âm và Δ&lt;0 nên không đổi dấu.
 
 </details>
 
@@ -166,7 +166,7 @@ Lập bảng dấu của f(x)=x²−4x+3.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Nghiệm 1,3; f>0 trên (−∞,1)∪(3,+∞), f<0 trên (1,3), f=0 ở 1,3.
+**Đáp án:** Nghiệm 1,3; f>0 trên (−∞,1)∪(3,+∞), f&lt;0 trên (1,3), f=0 ở 1,3.
 
 f(x)=(x−1)(x−3), hệ số đầu dương. Ngoài hai nghiệm hai thừa số cùng dấu nên tích dương; trong hai nghiệm trái dấu nên tích âm.
 
@@ -196,7 +196,7 @@ Giải x²−7x+12<0, ghi tập nghiệm bằng khoảng.
 
 **Đáp án:** (3,4).
 
-x²−7x+12=(x−3)(x−4). Tích âm khi 3<x<4. Dấu < nghiêm ngặt nên bỏ hai đầu mút.
+x²−7x+12=(x−3)(x−4). Tích âm khi 3&lt;x&lt;4. Dấu &lt; nghiêm ngặt nên bỏ hai đầu mút.
 
 </details>
 
@@ -222,9 +222,9 @@ Tìm các tham số thực m để x²−2mx+9>0 với mọi x∈ℝ.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −3<m<3.
+**Đáp án:** −3&lt;m&lt;3.
 
-a=1>0 cố định; điều kiện dương nghiêm ngặt trên ℝ là Δ<0. Δ=(−2m)²−36=4(m²−9)<0 ⇔ m²<9 ⇔ −3<m<3. Ở |m|=3 đồ thị chạm 0 nên không thỏa >.
+a=1>0 cố định; điều kiện dương nghiêm ngặt trên ℝ là Δ&lt;0. Δ=(−2m)²−36=4(m²−9)&lt;0 ⇔ m²&lt;9 ⇔ −3&lt;m&lt;3. Ở |m|=3 đồ thị chạm 0 nên không thỏa >.
 
 </details>
 
@@ -252,7 +252,7 @@ Một khu vườn hình chữ nhật có hai cạnh dài x và 12−x mét, 0<x<
 
 **Đáp án:** x∈[5,7] mét.
 
-S=x(12−x)≥35 ⇔ −x²+12x−35≥0 ⇔ (x−5)(x−7)≤0. Suy ra 5≤x≤7, đều nằm trong miền độ dài 0<x<12.
+S=x(12−x)≥35 ⇔ −x²+12x−35≥0 ⇔ (x−5)(x−7)≤0. Suy ra 5≤x≤7, đều nằm trong miền độ dài 0&lt;x&lt;12.
 
 </details>
 
@@ -278,11 +278,11 @@ Mô hình độ cao (mét) theo thời gian t≥0 (giây): h(t)=−5t²+20t+1. T
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** (a) [1,3]. (b) −2<m<2. (c) m=2 cho (x−2)² và bằng 0 tại x=2 nên sai dấu >0.
+**Đáp án:** (a) [1,3]. (b) −2&lt;m&lt;2. (c) m=2 cho (x−2)² và bằng 0 tại x=2 nên sai dấu >0.
 
-(a) (x−1)(x−3)≤0 nên [1,3]. (b) a=1>0 cố định, cần Δ=(−2m)²−16=4(m²−4)<0 ⇒ |m|<2. (c) Khi m=2, f(2)=0. Điều kiện Δ≤0 chỉ đủ cho ≥0 toàn miền, không phải >0 toàn miền.
+(a) (x−1)(x−3)≤0 nên [1,3]. (b) a=1>0 cố định, cần Δ=(−2m)²−16=4(m²−4)&lt;0 ⇒ |m|&lt;2. (c) Khi m=2, f(2)=0. Điều kiện Δ≤0 chỉ đủ cho ≥0 toàn miền, không phải >0 toàn miền.
 
-**Rubric tự đối chiếu:** 7 điểm: xác định hai nghiệm và bảng dấu đúng (2đ); thiết lập a>0, Δ<0 và biến đổi m (3đ); kiểm tra trường hợp m=2 kèm giải thích dấu nghiêm (2đ).
+**Rubric tự đối chiếu:** 7 điểm: xác định hai nghiệm và bảng dấu đúng (2đ); thiết lập a>0, Δ&lt;0 và biến đổi m (3đ); kiểm tra trường hợp m=2 kèm giải thích dấu nghiêm (2đ).
 
 </details>
 
@@ -348,7 +348,7 @@ Miền nghiệm của 3x−y<2 nằm ở đâu so với y=3x−2?
 
 **Đáp án:** `A`
 
-3x−y<2 ⇔ −y<2−3x ⇔ y>3x−2. Nằm phía trên đường biên nét đứt, không lấy biên.
+3x−y&lt;2 ⇔ −y&lt;2−3x ⇔ y>3x−2. Nằm phía trên đường biên nét đứt, không lấy biên.
 
 </details>
 
@@ -428,7 +428,7 @@ Cặp nào thỏa đồng thời x≥0, y≥0 và x+y≤5?
 
 **Đáp án:** `A`
 
-(2,3) không âm và có tổng 5≤5; B/D tổng 6>5; C có x<0.
+(2,3) không âm và có tổng 5≤5; B/D tổng 6>5; C có x&lt;0.
 
 </details>
 
@@ -504,7 +504,7 @@ Một nhóm gây quỹ bán x phần ăn A giá 40 nghìn đồng và y phần �
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-x,y∈Z≥0; x+y≤55; 40x+65y≥2600. (30,25): 30+25=55, thu 1200+1625=2825≥2600 nên khả thi. (40,10): 50 phần, thu 1600+650=2250<2600 nên không khả thi. (0,0) thu 0<2600.
+x,y∈Z≥0; x+y≤55; 40x+65y≥2600. (30,25): 30+25=55, thu 1200+1625=2825≥2600 nên khả thi. (40,10): 50 phần, thu 1600+650=2250&lt;2600 nên không khả thi. (0,0) thu 0&lt;2600.
 
 **Rubric tự đối chiếu:** 7 điểm: (1) không âm+nguyên 1đ; (2) số phần ≤55 1đ; (3) mục tiêu doanh thu đúng đơn vị 2đ; (4) phương án (30,25) 1đ; (5) phương án (40,10) 1đ; (6) giải thích (0,0) 1đ.
 
