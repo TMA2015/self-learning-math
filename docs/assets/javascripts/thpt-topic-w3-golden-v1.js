@@ -1,3 +1,4 @@
+/* W3_RELEASE_DEPLOY_RECOVERY_20261122: comment-only scoped asset touch; UI/math/source unchanged. */
 /* W3 RELEASE · CĐ12–15 · SGK/CĐ01 Golden 20261122.1.
  * Display-only DOM adapter. Source text stays in approved Markdown projections;
  * no extra question/answer bank, no mastery/grading, no account/data writes.

@@ -139,6 +139,38 @@ function isExactW3TopicWave(files){
  }catch{return false}
 }
 
+// One-time post-merge W3 workflow-quote repair: only the original signed
+// W3 bundle, exact three-file recovery diff and a comment-only UI touch.
+// Shared/SGK/THCS/runtime changes remain FULL, no generic path wildcard.
+const W3_RECOVERY_FILES=new Set([
+ ".github/workflows/deploy.yml",
+ "scripts/test-thpt-release-impact.cjs",
+ "docs/assets/javascripts/thpt-topic-w3-golden-v1.js"
+]);
+function isSignedW3Recovery(files){
+ if(files.length!==W3_RECOVERY_FILES.size||
+    new Set(files).size!==files.length||
+    !files.every(x=>W3_RECOVERY_FILES.has(x)))return false;
+ if(!isExactW3TopicWave([...W3_EXACT_SCOPE_FILES]))return false;
+ const path="docs/assets/javascripts/thpt-topic-w3-golden-v1.js";
+ if(!fs.existsSync(path))return false;
+ const marker="/* W3_RELEASE_DEPLOY_RECOVERY_20261122: comment-only scoped asset touch; UI/math/source unchanged. */\n";
+ const js=fs.readFileSync(path,"utf8");
+ if(!js.startsWith(marker))return false;
+ const original=Buffer.from(js.slice(marker.length));
+ const crypto=require("node:crypto");
+ const sha=crypto.createHash("sha1").update("blob "+original.length+"\0").update(original).digest("hex");
+ if(sha!=="f673f2eceec558d89584e0b7f5991feb8613ac9b")return false;
+ const manifest=JSON.parse(fs.readFileSync("prototypes/thpt/release-queue/W3_CD12_15_SOURCE_INTAKE_20261122.json","utf8"));
+ return Object.entries(manifest.topics).every(([n,rec])=>
+  ["kien-thuc","luyen-tap","tu-kiem-tra"].every(part=>{
+   const page="docs/thpt-preview/chuyen-de/cd"+n+"/"+part+".md";
+   if(!fs.existsSync(page))return false;
+   const html=fs.readFileSync(page,"utf8");
+   return html.includes(rec.sourceBlob)&&html.includes(rec.q18ReceiptBlob);
+  }));
+}
+
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
@@ -146,6 +178,7 @@ function classify(paths,{manual=false}={}){
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(isExactW3TopicWave(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_12_PAGES_240_Q15_59_Q16_GOLDEN_BROWSER_INDEPENDENT"};
+ if(isSignedW3Recovery(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_POSTMERGE_WORKFLOW_QUOTE_RECOVERY_COMMENT_ONLY"};
  if(files.every(x=>CI_ROUTING_ONLY.has(x)))
   return {impact:"CI_ROUTING_ONLY",full_suite:"false",changed_lessons:"",reason:"ONLY_EXACT_CI_ROUTING_PATHS"};
  if(files.includes(B16_LESSON)&&files.every(x=>B16_ALLOWED.has(x))&&
@@ -278,7 +311,12 @@ function selfTest(){
   "scripts/thpt-q18-g10-source-receipt.cjs",
   "prototypes/thpt/ux795/G10_CHV_B14_DELTA_A.md"
  ];
- const w3=[...W3_EXACT_SCOPE_FILES];
+ const recovery=[...W3_RECOVERY_FILES];
+ assert.equal(classify(recovery).impact,"SCOPED_TOPIC_W3","Source-locked W3 postmerge workflow recovery");
+ assert.equal(classify(recovery.slice(1)).full_suite,"true","Incomplete recovery cannot publish");
+ assert.equal(classify([...recovery,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared Golden runtime changes are FULL");
+ assert.equal(classify([...recovery,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"]).full_suite,"true","SGK changes are FULL");
+  const w3=[...W3_EXACT_SCOPE_FILES];
  assert.equal(classify(w3).impact,"SCOPED_TOPIC_W3","Exact signed CĐ12–15 changes run W3 scoped QA");
  assert.equal(classify(w3.filter(x=>!x.endsWith("cd15/tu-kiem-tra.md"))).full_suite,"true","Incomplete W3 must fail closed");
  assert.equal(classify([...w3,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared Golden change is full site");
