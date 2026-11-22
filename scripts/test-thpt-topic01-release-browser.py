@@ -62,7 +62,8 @@ with sync_playwright() as pw:
         assert disclosure.locator("summary").evaluate("(e)=>getComputedStyle(e).color")=="rgb(38, 62, 115)",(engine,width,"SGK disclosure summary")
        assert sub.evaluate("(e)=>getComputedStyle(e).fontSize")==("14px" if width<=640 else "15px")
        assert sub.evaluate("(e)=>e.getBoundingClientRect().height")==44
-       assert p.evaluate("document.documentElement.scrollWidth<=innerWidth+1"),(engine,width,"viewport overflow")
+       overflow=p.evaluate("""() => ({scroll:document.documentElement.scrollWidth,viewport:innerWidth, elements:[...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect(),style=getComputedStyle(e);return r.right>innerWidth+2&&style.display!=='none'&&style.visibility!=='hidden'&&r.width>0}).slice(0,14).map(e=>({tag:e.tagName,class:e.className?.toString().slice(0,100),right:Math.round(e.getBoundingClientRect().right),width:Math.round(e.getBoundingClientRect().width),text:e.textContent.slice(0,48)}))})""")
+       assert overflow["scroll"]<=overflow["viewport"]+1,(engine,width,"viewport overflow",overflow)
      assert p.locator("article.md-typeset").evaluate("(e)=>parseFloat(getComputedStyle(e).fontSize)")==p.evaluate("parseFloat(getComputedStyle(document.documentElement).fontSize)*.8")
      for name in ("THPT_G10_B01_IMPLICATION_DIVISIBILITY_D5_R01.svg","THPT_G10_B02_VENN_TWO_CLUBS_D5_R01.svg"):
       img=p.locator("img[src*='"+name+"']")
