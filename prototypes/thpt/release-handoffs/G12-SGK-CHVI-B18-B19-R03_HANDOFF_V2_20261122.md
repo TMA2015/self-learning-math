@@ -112,23 +112,23 @@ Normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_2
 
 | Q | LESSON_ID | OUTCOME_ID | ITEM_ID / figure | Evidence | Author verdict |
 |---|---|---|---|---|---|
-| Q01 | B18+B19 | O01–O07 each | 56 canonical + 22 FirstTry | SGK p64–78/SBT p40–45 verified R02 | PASS |
-| Q02 | B18+B19 | 14 outcomes | 56 items 4 roles | outcome matrix / 27 EX | PASS |
-| Q03 | B18+B19 | theory | C01–C07 each | 2 formal cards per lesson | PASS |
-| Q04 | B18+B19 | 14 outcomes | 27 EX IDs | reasoned examples in original lesson files | PASS |
-| Q05 | B18+B19 | 14 outcomes | 14 C/14 P/14 A | no 3 clones substituted for depth | PASS |
-| Q06 | B18+B19 | 14 outcomes | 14 Written | single bank /5 rubric | PASS |
-| Q07 | B18+B19 | 7 figures | 7 SVG exact source blobs | figure/alt/reading captions | PASS |
-| Q08 | B18+B19 | 14 outcomes | 22 local D6 + 14 HELP | recovery Core/Practice links | PASS |
-| Q09 | B18+B19 | why learn | 22 FirstTry | concept-driven opening | PASS |
-| Q10 | B18+B19 | prerequisites | O01–O07 each | event/intersection/positive denominator | PASS |
-| Q11 | B18+B19 | concept-first | formal 2.x | meaning of conditional group/partition | PASS |
-| Q12 | B18+B19 | read SVG | 7 SVG | scope/context/branch labels | PASS |
-| Q13 | B18+B19 | method selection | 27 EX | conditions for mult./total/Bayes | PASS |
-| Q14 | B18+B19 | first-try | 22 TRY IDs | closed comparison + cause-specific D6 | PASS |
-| Q15 | B18+B19 | 14 outcomes | 56 bank + 22 TRY, 14 END placements | one canonical public bank | PASS |
+| Q01 | B18+B19 | O01–O07 each | 56 canonical + 22 FirstTry | SGK p64–78/SBT p40–45 verified R02 | AUTHOR_SELF_VERIFIED |
+| Q02 | B18+B19 | 14 outcomes | 56 items 4 roles | outcome matrix / 27 EX | AUTHOR_SELF_VERIFIED |
+| Q03 | B18+B19 | theory | C01–C07 each | 2 formal cards per lesson | AUTHOR_SELF_VERIFIED |
+| Q04 | B18+B19 | 14 outcomes | 27 EX IDs | reasoned examples in original lesson files | AUTHOR_SELF_VERIFIED |
+| Q05 | B18+B19 | 14 outcomes | 14 C/14 P/14 A | no 3 clones substituted for depth | AUTHOR_SELF_VERIFIED |
+| Q06 | B18+B19 | 14 outcomes | 14 Written | single bank /5 rubric | AUTHOR_SELF_VERIFIED |
+| Q07 | B18+B19 | 7 figures | 7 SVG exact source blobs | figure/alt/reading captions | AUTHOR_SELF_VERIFIED |
+| Q08 | B18+B19 | 14 outcomes | 22 local D6 + 14 HELP | recovery Core/Practice links | AUTHOR_SELF_VERIFIED |
+| Q09 | B18+B19 | why learn | 22 FirstTry | concept-driven opening | AUTHOR_SELF_VERIFIED |
+| Q10 | B18+B19 | prerequisites | O01–O07 each | event/intersection/positive denominator | AUTHOR_SELF_VERIFIED |
+| Q11 | B18+B19 | concept-first | formal 2.x | meaning of conditional group/partition | AUTHOR_SELF_VERIFIED |
+| Q12 | B18+B19 | read SVG | 7 SVG | scope/context/branch labels | AUTHOR_SELF_VERIFIED |
+| Q13 | B18+B19 | method selection | 27 EX | conditions for mult./total/Bayes | AUTHOR_SELF_VERIFIED |
+| Q14 | B18+B19 | first-try | 22 TRY IDs | closed comparison + cause-specific D6 | AUTHOR_SELF_VERIFIED |
+| Q15 | B18+B19 | 14 outcomes | 56 bank + 22 TRY, 14 END placements | one canonical public bank | AUTHOR_SELF_VERIFIED |
 | Q16 | B18+B19 | public vs private | 14 END reuse | CLIENT_SELF_CHECK_NO_MASTERY; RD1 private | AUTHOR_SCOPE_PASS |
-| Q17 | B18+B19 | SGK dual path | 2 complete lessons | Topic independent; no duplicated Core | PASS |
+| Q17 | B18+B19 | SGK dual path | 2 complete lessons | Topic independent; no duplicated Core | AUTHOR_SELF_VERIFIED |
 | Q18 | B18+B19 | source lock | 10 active files | SOURCE_BLOB + signed Q18 + V2/ready chain | AUTHOR_SELF_VERIFIED |
 
 ## ITEM_OUTCOME_MATRIX
