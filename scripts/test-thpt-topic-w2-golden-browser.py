@@ -217,7 +217,7 @@ with sync_playwright() as pw:
                     restored = chasles.locator('[data-topic-w2-display-math="recovered-display"]')
                     expect(restored).to_have_count(1)
                     expect(restored.locator("mjx-container").first).to_be_visible(timeout=20000)
-                    assert not chasles.evaluate(r"(e) => e.innerText.includes('\operatorname')"), (
+                    assert not chasles.evaluate(r"(e) => e.innerText.includes('\\operatorname')"), (
                         engine, topic, width, "raw Chasles TeX escaped into visible text",
                     )
                     page.locator('[data-topic-w1-subtab="1-2"]').click()
@@ -240,7 +240,7 @@ with sync_playwright() as pw:
                     recovered = limits.locator('[data-topic-w2-display-math="recovered-display"]')
                     expect(recovered).to_have_count(1)
                     expect(recovered.locator("mjx-container").first).to_be_visible(timeout=20000)
-                    assert not limits.evaluate(r"(e) => e.innerText.includes('\lim(')"), (
+                    assert not limits.evaluate(r"(e) => e.innerText.includes('\\lim(')"), (
                         engine, topic, width, "raw limit TeX escaped into visible text",
                     )
                 if topic in ("09", "11"):
