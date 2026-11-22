@@ -68,7 +68,7 @@
 
     **Vận dụng.** Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Nêu góc quay theo radian và độ dài cung đã đi.
 
-    <span data-ped-first-try="1" data-outcome-id="G11-B01-SIGNED_ROTATION" data-thpt-first-try-id="THPT-G11-CHI-TRY01" hidden></span>
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-DEG_RAD" data-thpt-first-try-id="THPT-G11-CHI-TRY01" hidden></span>
 
     ??? question "Đối chiếu"
 
@@ -91,7 +91,7 @@
 
     **Vận dụng.** Hai góc \(-150^\circ\) và \(210^\circ\) có cùng tia đầu Ox. Chúng có cùng tia cuối không? Viết các số đo cùng tia cuối với \(210^\circ\).
 
-    <span data-ped-first-try="1" data-outcome-id="G11-B01-COTERMINAL" data-thpt-first-try-id="THPT-G11-CHI-TRY02" hidden></span>
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-PERIODIC_REDUCTION" data-thpt-first-try-id="THPT-G11-CHI-TRY02" hidden></span>
 
     ??? question "Đối chiếu"
 
@@ -143,7 +143,7 @@
 
     **Vận dụng.** Tính \(\sin(7\pi/6)\), \(\cos(7\pi/6)\) và \(\tan(7\pi/6)\).
 
-    <span data-ped-first-try="1" data-outcome-id="G11-B01-UNIT_CIRCLE" data-thpt-first-try-id="THPT-G11-CHI-TRY04" hidden></span>
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-TRIG_UNIT_CIRCLE" data-thpt-first-try-id="THPT-G11-CHI-TRY04" hidden></span>
 
     ??? question "Đối chiếu"
 
@@ -166,7 +166,7 @@
 
     **Vận dụng.** Với \(\alpha=3\pi/2\), xác định \(\sin\alpha,\cos\alpha\); xét sự tồn tại của \(\tan\alpha,\cot\alpha\).
 
-    <span data-ped-first-try="1" data-outcome-id="G11-B01-TRIG_DOMAIN" data-thpt-first-try-id="THPT-G11-CHI-TRY05" hidden></span>
+    <span data-ped-first-try="1" data-outcome-id="G11-B01-TRIG_IDENTITIES" data-thpt-first-try-id="THPT-G11-CHI-TRY05" hidden></span>
 
     ??? question "Đối chiếu"
 
