@@ -32,15 +32,27 @@ jobs:
           assert(/BEFORE_SHA:\s*\$\{\{\s*github\.event\.before\s*\}\}/.test(w),'Full main push base required');
           assert(/HEAD_SHA:\s*\$\{\{\s*github\.sha\s*\}\}/.test(w),'Full main push head required');
           const expr="$"+"{{";
-          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' }}";
+          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' }}";
           const scopedIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_LESSON' && needs.release-scope.outputs.changed_lessons != '' }}";
           assert(w.includes(fullIf),'Original FULL release cannot execute on a scoped lesson');
           assert(w.includes(scopedIf),'Scoped release needs explicit single-lesson classified impact');
+          const topicIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_W3' }}";
+          assert(w.includes(topicIf),"W3 release must run only for exact signed Topic impact");
           assert(w.includes('impact: '+expr+' steps.scope.outputs.impact }}')&&
             w.includes('changed_lessons: '+expr+' steps.scope.outputs.changed_lessons }}'),
             'Scope classifier outputs required before any deploy branch');
           const scoped=w.split('\n  deploy-scoped-lesson:\n')[1];
           assert(scoped,'Dedicated scoped publish job must exist');
+          const topic=w.split('\n  deploy-scoped-topic-w3:\n')[1];
+          assert(topic,'Dedicated owner-authorized W3 publish job must exist');
+          for(const required of ['scripts/test-thpt-topic-w3-source-locked.py',
+            'scripts/test-thpt-topic-w3-golden-browser.py',
+            'SCOPED_TOPIC_W3','mkdocs build --strict',
+            'mkdocs build -f mkdocs.thpt-preview.yml --strict',
+            'node scripts/assemble-thpt-site.cjs',
+            'PUBLIC_REPLAY_ONLY','ghp-import -n -p -f site']) {
+            assert(topic.includes(required),'W3 source/Q16/Golden publish gate removed: '+required);
+          }
           const full=w.split('\n  deploy:\n')[1]?.split('\n  deploy-scoped-lesson:\n')[0];
           assert(full,'Original full deploy gate must remain available for shared changes');
           for(const required of ['scripts/test-thpt-scoped-deploy-proof.cjs',
@@ -69,7 +81,7 @@ jobs:
           assert(w.slice(v2Step,classificationStep).includes('node scripts/test-thpt-handoff-gate-v2.cjs'),'New V2 READY receipt SHA cannot be skipped');
 
           assert(!w.includes('continue-on-error:'),'No failures may be ignored');
-          console.log('PASS deploy safety: two mutually exclusive FULL vs SCOPED lanes, source/receipt + Q16/built-site guards, unchanged FULL regression signatures.');
+          console.log('PASS deploy safety: three mutually exclusive FULL, SGK-scoped and W3-scoped lanes, source/receipt + Q16/built-site guards, unchanged FULL regression signatures.');
           NODE
       - name: Evidence boundary
         run: |
