@@ -110,7 +110,8 @@ with sync_playwright() as pw:
                         width_info = page.evaluate("({scroll:document.documentElement.scrollWidth,inner:innerWidth})")
                         assert width_info["scroll"] <= width_info["inner"] + 1, (engine, topic, width, width_info)
                 assert disclosure_found, (engine, topic, "knowledge must include a voluntary solution")
-                assert knowledge.locator(".topic-w1-application").count() > 0
+                assert knowledge.locator(".topic-w1-application").count() == outcomes, (topic,"Vận dụng frames not 1:1 to outcomes")
+                assert knowledge.locator(".topic-w1-application").evaluate_all("els=>els.every(el=>el.querySelectorAll('details.question').length===1)"), (topic,"Vận dụng must own one Đối chiếu")
                 # All original SVG source figures must be available in generated THPT site.
                 imgs = page.locator("[data-topic-w1-knowledge] img")
                 expect(imgs).to_have_count(svg_count)
