@@ -730,7 +730,7 @@
       "help_id": "THPT-G12-B08-HELP01",
       "outcome_id": "G12-CHII-B08-O01",
       "lesson_id": "B08",
-      "review_path": "cách viết từng thành phần theo cột: nhân trước rồi cộng/trừ đúng trục. Tự kiểm: 2(1;0;−2)−(0;1;1)=(2;−1;−5). Xem Khám phá mục 1.1",
+      "review_path": "cách viết từng thành phần theo cột: nhân trước rồi cộng/trừ đúng trục, giữ dấu âm. Nếu sai, ghi riêng ba phép tính và cộng lại vectơ vừa trừ để kiểm. Tự kiểm: 2(1;0;−2)−(0;1;1)=(2;−1;−5). Xem Khám phá mục 1.1",
       "return_item": "THPT-G12-B08-C01",
       "practice_item": "THPT-G12-B08-P01"
     },
@@ -762,7 +762,7 @@
       "help_id": "THPT-G12-B08-HELP05",
       "outcome_id": "G12-CHII-B08-O05",
       "lesson_id": "B08",
-      "review_path": "cách tính khoảng cách: lập vectơ cuối trừ đầu rồi căn tổng bình phương ba thành phần. Tự kiểm: (1;2;2) dài 3, không phải 5. Xem Khám phá mục 1.5",
+      "review_path": "cách tính khoảng cách: lập vectơ cuối trừ đầu rồi căn tổng bình phương ba thành phần; nếu cộng ba độ chênh thì đã tính một hành trình dọc các trục, không phải đoạn thẳng trực tiếp. Tự kiểm: (1;2;2) dài 3, không phải 5. Xem Khám phá mục 1.5",
       "return_item": "THPT-G12-B08-C05",
       "practice_item": "THPT-G12-B08-P09"
     },
