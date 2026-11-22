@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Lấy đoạn nối bất kì làm khoảng cách.
 
-        **Tự sửa:** Kiểm chân H thuộc a và MH vuông góc a. [Luyện lại câu B26-C01](../luyen-tap/?item=THPT-G11-CHVII-B26-C01).
+        **Tự sửa:** Kiểm chân H thuộc a và MH vuông góc a. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C01">Luyện lại câu B26-C01</a>.
 
     ### 1.2. Khoảng cách điểm–mặt
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Đo từ C đến một đỉnh khác dù C nằm trên mặt.
 
-        **Tự sửa:** Kiểm điểm đã thuộc đối tượng trước khi dựng chân. [Luyện lại câu B26-C02](../luyen-tap/?item=THPT-G11-CHVII-B26-C02).
+        **Tự sửa:** Kiểm điểm đã thuộc đối tượng trước khi dựng chân. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C02">Luyện lại câu B26-C02</a>.
 
     ### 1.3. Đường thẳng song song mặt
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** Coi đường song song mặt phải nằm trong mặt.
 
-        **Tự sửa:** Kiểm không có điểm chung; chọn một điểm bất kì trên đường. [Luyện lại câu B26-C03](../luyen-tap/?item=THPT-G11-CHVII-B26-C03).
+        **Tự sửa:** Kiểm không có điểm chung; chọn một điểm bất kì trên đường. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C03">Luyện lại câu B26-C03</a>.
 
     ### 1.4. Hai mặt song song: chiều cao đo theo pháp tuyến
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Dùng cạnh bên xiên như đường cao.
 
-        **Tự sửa:** Dựng hình chiếu rồi dùng sin góc đường–mặt. [Luyện lại câu B26-C04](../luyen-tap/?item=THPT-G11-CHVII-B26-C04).
+        **Tự sửa:** Dựng hình chiếu rồi dùng sin góc đường–mặt. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C04">Luyện lại câu B26-C04</a>.
 
     ### 1.5. Đoạn vuông góc chung của hai đường chéo nhau
 
@@ -106,7 +106,7 @@
 
         **Dấu hiệu:** Lấy AC hoặc cạnh đứng làm khoảng cách giữa AB và CC'.
 
-        **Tự sửa:** Kiểm hai đầu và hai quan hệ vuông góc. [Luyện lại câu B26-C05](../luyen-tap/?item=THPT-G11-CHVII-B26-C05).
+        **Tự sửa:** Kiểm hai đầu và hai quan hệ vuông góc. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C05">Luyện lại câu B26-C05</a>.
 
     ### 1.6. Chiều cao hình chóp và chân nằm trong mặt đáy
 
@@ -126,7 +126,7 @@
 
         **Dấu hiệu:** Cho rằng cạnh bên luôn là chiều cao hoặc chân phải thuộc đa giác.
 
-        **Tự sửa:** Kiểm chân thuộc mặt phẳng chứa đáy và dùng Pythagore. [Luyện lại câu B26-C06](../luyen-tap/?item=THPT-G11-CHVII-B26-C06).
+        **Tự sửa:** Kiểm chân thuộc mặt phẳng chứa đáy và dùng Pythagore. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C06">Luyện lại câu B26-C06</a>.
 
 === "Kiến thức SGK"
 
@@ -198,7 +198,7 @@
 
         **Vì sao sai:** Chiều cao là khoảng cách vuông góc tới mặt đáy.
 
-        **Tự sửa:** Dựng chân H và dùng 2.1. [Luyện lại câu B26-C06](../luyen-tap/?item=THPT-G11-CHVII-B26-C06).
+        **Tự sửa:** Dựng chân H và dùng 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C06">Luyện lại câu B26-C06</a>.
 
     <span data-thpt-help-id="HELP-G11-B26-02" hidden></span>
 
@@ -206,7 +206,7 @@
 
         **Vì sao sai:** Đoạn vuông góc chung phải nối đúng hai đường và vuông góc cả hai.
 
-        **Tự sửa:** Xem cách dựng trong 2.3 và kiểm hai đầu. [Luyện lại câu B26-C05](../luyen-tap/?item=THPT-G11-CHVII-B26-C05).
+        **Tự sửa:** Xem cách dựng trong 2.3 và kiểm hai đầu. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C05">Luyện lại câu B26-C05</a>.
 
     <span data-thpt-help-id="HELP-G11-B26-03" hidden></span>
 
@@ -214,7 +214,7 @@
 
         **Vì sao sai:** Chỉ điểm thuộc đường song song mặt mới cho khoảng cách ấy.
 
-        **Tự sửa:** Ôn định nghĩa 2.2. [Luyện lại câu B26-C03](../luyen-tap/?item=THPT-G11-CHVII-B26-C03).
+        **Tự sửa:** Ôn định nghĩa 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C03">Luyện lại câu B26-C03</a>.
 
     <span data-thpt-help-id="HELP-G11-B26-04" hidden></span>
 
@@ -222,8 +222,8 @@
 
         **Vì sao sai:** Mỗi vị trí tương đối có phương pháp khác nhau; hai đường chéo nhau có khoảng cách dương.
 
-        **Tự sửa:** Phân loại trước khi dựng như 3.5–3.7. [Luyện lại câu B26-P03](../luyen-tap/?item=THPT-G11-CHVII-B26-P03).
+        **Tự sửa:** Phân loại trước khi dựng như 3.5–3.7. <a href="../luyen-tap/?item=THPT-G11-CHVII-B26-P03">Luyện lại câu B26-P03</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VII](../../../../thu-vien/tu-luan-g11-chuong-vii/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vii/">Tự luận Chương VII</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 26 (trang in 54–60).</p>
