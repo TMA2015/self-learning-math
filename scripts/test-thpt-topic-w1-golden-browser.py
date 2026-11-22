@@ -67,6 +67,22 @@ with sync_playwright() as pw:
                 load("kien-thuc")
                 knowledge = page.locator("[data-topic-w1-knowledge]")
                 expect(knowledge).to_be_visible()
+                topic_heading=page.locator("article.md-typeset > h1.topic-w1-topic-heading")
+                expect(topic_heading).to_have_text({
+                    "02":"Chuyên đề 02 · Bất đẳng thức, dấu tam thức bậc hai và miền nghiệm",
+                    "03":"Chuyên đề 03 · Phương trình đại số và kỹ thuật chuyển đổi dạng",
+                    "04":"Chuyên đề 04 · Lũy thừa, hàm mũ và lôgarit",
+                    "05":"Chuyên đề 05 · Hàm số, đồ thị và phép biến đổi",
+                }[topic])
+                assert page.evaluate("""() => {
+                    const title=document.querySelector('article.md-typeset > h1.topic-w1-topic-heading');
+                    const intro=document.querySelector('article.md-typeset > p.topic-w1-source-intro');
+                    const knowledge=document.querySelector('article.md-typeset > h1:not(.topic-w1-topic-heading)');
+                    if(!title||!intro||!knowledge)return false;
+                    return !!(title.compareDocumentPosition(intro)&Node.DOCUMENT_POSITION_FOLLOWING)
+                        &&!!(intro.compareDocumentPosition(knowledge)&Node.DOCUMENT_POSITION_FOLLOWING);
+                }"""), (topic,"Title → lead → Kiến thức order")
+                assert page.locator("article.md-typeset > h1.topic-w1-topic-heading").count()==1
                 tabs = page.locator("[data-topic-w1-module-tab]")
                 expect(tabs).to_have_count(groups)
                 expect(page.locator("[data-topic-w1-subtab]")).to_have_count(outcomes)
@@ -111,8 +127,24 @@ with sync_playwright() as pw:
                         width_info = page.evaluate("({scroll:document.documentElement.scrollWidth,inner:innerWidth})")
                         assert width_info["scroll"] <= width_info["inner"] + 1, (engine, topic, width, width_info)
                 assert disclosure_found, (engine, topic, "knowledge must include a voluntary solution")
-                assert knowledge.locator(".topic-w1-application").count() == outcomes, (topic,"Vận dụng frames not 1:1 to outcomes")
-                assert knowledge.locator(".topic-w1-application").evaluate_all("els=>els.every(el=>el.querySelectorAll('details.question').length===1)"), (topic,"Vận dụng must own one Đối chiếu")
+                # Owner Golden CĐ01: original Vận dụng label, stem, disclosure must
+                # be siblings on the white panel, never combined in a framed card.
+                assert knowledge.locator(".topic-w1-application").count() == 0, (topic,"unapproved Vận dụng outer card")
+                labels = knowledge.locator(".thpt-r4-knowledge-content-panel > p").filter(
+                    has=page.locator(":scope > strong", has_text="Vận dụng")
+                )
+                assert labels.count() == outcomes, (topic, "Vận dụng coverage", labels.count(), outcomes)
+                application_issues = knowledge.evaluate("""root=>[...root.querySelectorAll('.thpt-r4-knowledge-content-panel')]
+                  .flatMap(panel=>[...panel.children].filter(e=>e.tagName==='P'&&e.querySelector(':scope > strong')?.textContent.trim()==='Vận dụng')
+                    .map(label=>{let n=label.nextElementSibling,stem=0,details=0;
+                      while(n&&n.tagName!=='H3'&&!n.matches('.thpt-r4-knowledge-conclusion,.thpt-r4-key-formula')){
+                        if(n.matches('p'))stem++;
+                        if(n.matches('details.question')){details++;break}
+                        n=n.nextElementSibling
+                      }
+                      return {stem,details,wrapped:!!label.closest('.topic-w1-application')}
+                    })).filter(x=>x.stem<1||x.details!==1||x.wrapped)""")
+                assert not application_issues, (topic,"Golden application layout",application_issues[:5])
                 # All original SVG source figures must be available in generated THPT site.
                 imgs = page.locator("[data-topic-w1-knowledge] img")
                 expect(imgs).to_have_count(svg_count)
