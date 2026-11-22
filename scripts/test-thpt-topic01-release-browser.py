@@ -27,6 +27,9 @@ with sync_playwright() as pw:
     expect(nav.locator("a")).to_have_count(2)
     assert not any(("/"+part+"/") in (link.get_attribute("href") or "") for link in nav.locator("a").all())
     assert p.locator("[data-thpt-readiness],[data-mastery-credit]").count()==0
+    assert not p.evaluate("document.documentElement.className.includes('topic01-boot-pending-')"),(engine,width,part,"hydration never completed")
+    expect(p.locator(".topic01-boot-status")).to_be_hidden()
+    assert p.locator(".topic01-boot-status").count()==1
     if part=="kien-thuc":
      tabs=p.locator("[data-topic01-module-tab]")
      expect(tabs).to_have_count(3)
@@ -105,6 +108,18 @@ with sync_playwright() as pw:
       expect(solution).to_be_visible()
       expect(solution).to_have_attribute("data-thpt-canonical-solution",body.get_attribute("data-thpt-canonical-item"))
       expect(solution.locator(".g10sc-error")).to_have_count(0)
+   if width==390:
+    # Simulate a blocked Topic JS: raw source must recover instead of a blank page.
+    for part,marker in (("kien-thuc","knowledge"),("luyen-tap","practice"),("tu-kiem-tra","selfcheck")):
+     fallback=ctx.new_page()
+     fallback.route("**/thpt-topic01-release-tabs-v1.js",lambda route:route.abort())
+     fallback.goto(BASE+part+"/",wait_until="domcontentloaded")
+     expect(fallback.locator(".topic01-boot-status")).to_be_visible()
+     assert fallback.evaluate("document.documentElement.classList.contains('topic01-boot-fallback-'+arguments[0])",marker)
+     assert fallback.locator("article.md-typeset > h1").count()>=1
+     if part=="tu-kiem-tra":
+      assert fallback.locator("article.md-typeset > p > strong").count()>=11
+     fallback.close()
    assert not errors,(engine,width,errors)
    print(f"PASS CĐ01 {engine} {width}: 12 colors, SGK typography, 3 groups/24 items, 11 replay solutions, Golden modal")
    ctx.close()
