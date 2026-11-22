@@ -160,7 +160,7 @@ So sánh (1/3)^(√3) với (1/3)^2.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-√3<2; cơ số 1/3 làm hàm nghịch biến nên (1/3)^(√3)>(1/3)^2.
+√3&lt;2; cơ số 1/3 làm hàm nghịch biến nên (1/3)^(√3)>(1/3)^2.
 
 Nếu đảo dấu sai, dùng x=0 và x=1 để quan sát 1 và cơ số a; xem lại mục Kiến thức 1.3 về chiều tăng/giảm của lũy thừa khi cơ số lớn hơn 1 hoặc nằm giữa 0 và 1.
 
@@ -271,7 +271,7 @@ Tìm miền của log₂(x²−9); tách log₂(x−3)+log₂(x+3) trên mọi m
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Miền x<−3 hoặc x>3, nhưng hai log riêng cùng có nghĩa chỉ khi x>3.
+Miền x&lt;−3 hoặc x>3, nhưng hai log riêng cùng có nghĩa chỉ khi x>3.
 
 Nếu mắc lỗi ‘log của tích’ trên toàn miền, lấy x=−4 làm phản ví dụ; làm lại Bài 30, Bài 31 (điều kiện tách lôgarit) và Bài 28 (tự luận về miền xác định) trong phần Luyện tập.
 
@@ -420,7 +420,7 @@ Nếu luôn giữ dấu so sánh khi bỏ mũ, vẽ hai điểm 0,1 trên đồ 
 
 **Kiểm lỗi**
 
-Nếu so sánh hai lũy thừa cơ số 0<a<1 mà không đảo chiều, đọc **Kiến thức 3.2**, thực hiện **Bài 37** và **Bài 41** với điểm thử 0,1.
+Nếu so sánh hai lũy thừa cơ số 0&lt;a&lt;1 mà không đảo chiều, đọc **Kiến thức 3.2**, thực hiện **Bài 37** và **Bài 41** với điểm thử 0,1.
 
 </details>
 
@@ -622,14 +622,14 @@ Giải log_(1/3)(x+1)>log_(1/3)4.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Miền x>−1; log giảm nên x+1<4 ⇒ x<3; S=(−1,3).
+Miền x>−1; log giảm nên x+1&lt;4 ⇒ x&lt;3; S=(−1,3).
 
 Nếu em nhận đầu mút \(x=-2\) hoặc \(x=6\) trong **Ví dụ**, một đối số bằng 0 nên lôgarit không xác định; xét lại điều kiện trước khi so sánh. Với câu Vận dụng, hai đầu mút phải loại là \(x=-1\) và \(x=3\) (đầu thứ hai là biên bất phương trình nghiêm, không phải biên miền).
 
 
 **Kiểm lỗi**
 
-Nếu quên giao miền đối số dương hoặc không đảo dấu khi cơ số 0<a<1, đọc **Kiến thức 4.4**, làm **Bài 54** và **Bài 58**; kiểm riêng từng điểm biên.
+Nếu quên giao miền đối số dương hoặc không đảo dấu khi cơ số 0&lt;a&lt;1, đọc **Kiến thức 4.4**, làm **Bài 54** và **Bài 58**; kiểm riêng từng điểm biên.
 
 </details>
 
@@ -690,7 +690,7 @@ Giải \(\log_3(x-1)=1+\log_3(5-x)\). Hãy nêu miền trước khi dùng quy t�
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Điều kiện \(x-1>0\), \(5-x>0\), tức \(1<x<5\). Vì \(1=\log_3 3\), ta có \(\log_3(x-1)=\log_3[3(5-x)]\). Hai đối số dương và cơ số 3 hợp lệ nên \(x-1=15-3x\), suy ra \(x=4\). Thử: \(\log_3 3=1+\log_3 1=1\). Nếu em bỏ điều kiện và nhận nghiệm ngoài (1,5), quay lại bước xác định miền trước khi giải.
+Điều kiện \(x-1>0\), \(5-x>0\), tức \(1&lt;x&lt;5\). Vì \(1=\log_3 3\), ta có \(\log_3(x-1)=\log_3[3(5-x)]\). Hai đối số dương và cơ số 3 hợp lệ nên \(x-1=15-3x\), suy ra \(x=4\). Thử: \(\log_3 3=1+\log_3 1=1\). Nếu em bỏ điều kiện và nhận nghiệm ngoài (1,5), quay lại bước xác định miền trước khi giải.
 
 
 **Kiểm lỗi**
