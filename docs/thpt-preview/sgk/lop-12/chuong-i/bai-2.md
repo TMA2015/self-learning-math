@@ -2,61 +2,197 @@
 
 <div class="thpt-r4-screen" data-thpt-r4>
 <p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG I · SGK KẾT NỐI TRI THỨC · TẬP MỘT · TRANG 15–19</p>
-<p class="thpt-r4-lead">Học Kiến thức trọn vẹn tại đây: hiểu bản chất, xem hình, ví dụ có suy luận và tự thử; sau đó mở Core, Luyện tập, Vận dụng, Tự luận trên trang riêng của Chương I.</p>
+<p class="thpt-r4-lead">Hiểu bản chất, tự vận dụng, đối chiếu sau khi làm, rồi luyện tập theo từng bài.</p>
 <nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-1/">Bài trước</a><a href="../bai-3/">Bài tiếp theo</a></nav></div>
 
-## 1. Vì sao cần học?
+=== "Khám phá kiến thức"
 
-Một xưởng phải chọn kích thước thùng để thể tích lớn nhất, nhưng mô hình chỉ cho phép x thuộc một đoạn vật lý. Điểm cực đại cục bộ (gần đó hàm nhỏ hơn) **không nhất thiết** có giá trị lớn nhất trên cả miền. Khi cần quyết định thực tế, ta phải so sánh tất cả ứng viên và điểm biên được phép, chứ không chỉ giải f'(x)=0. Bài học này đi từ định nghĩa đến thuật toán tìm GTLN/GTNN có điều kiện và mô hình hóa.
+    Khi tối ưu một đại lượng, cần phân biệt đỉnh gần một điểm với giá trị lớn nhất trên toàn miền. Điều kiện đạt được tại một đầu vào hợp lệ mới tạo nên GTLN/GTNN. Ôn miền xác định, liên tục, đạo hàm và điểm biên.
 
-## 2. Kiến thức tiền đề
+    ### 1.1. So sánh trên toàn miền
+    
+    Cực đại chỉ so gần điểm, GTLN so với mọi giá trị trên miền. Với $f=x$ trên (0,1), 1 là cận trên nhưng không đạt.
+    
+    **Vận dụng.** $f(x)=x^2$ trên [−1,3]. Giá trị tại 0 có là GTNN? Giá trị 1 tại −1 có là GTLN?
+    
+    <span data-ped-first-try="1" data-outcome-id="G12-B02-EXTREMA_GLOBAL_MEANING" data-thpt-first-try-id="THPT-G12-B02-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** GTNN=0; 1 không là GTLN vì f(3)=9.
+    
+    <span data-thpt-help-id="HELP-G12-B02-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Tìm điểm làm phản ví dụ cho giá trị dự đoán. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-c01)
 
-Miền xác định D; liên tục trên [a,b]; bảng dấu f' và điểm tới hạn; đọc giá trị f(x) trên đồ thị; điều kiện vật lý (độ dài không âm, điểm biên có hay không). Nếu quên vì sao f'=0 mới chỉ là ứng viên, xem ví dụ phản chứng x³ ở Bài 1 (giải thích dưới đây vẫn đầy đủ độc lập).
+    ### 1.2. Vai trò của đoạn đóng
+    
+    Liên tục trên đoạn hữu hạn [a,b] bảo đảm đạt hai giá trị cực trị toàn cục. Điều kiện liên tục và đủ hai đầu mút rất quan trọng.
+    
+    **Vận dụng.** $f=1/x$ trên [0,2] có thỏa giả thiết định lý không?
+    
+    <span data-ped-first-try="2" data-outcome-id="G12-B02-CLOSED_INTERVAL_EXISTENCE" data-thpt-first-try-id="THPT-G12-B02-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Không: hàm không xác định tại 0, nên không liên tục trên toàn đoạn.
+    
+    <span data-thpt-help-id="HELP-G12-B02-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm miền trước khi viện dẫn định lý. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-c02)
 
-## 3. Hiểu bản chất trước công thức
+    ### 1.3. Ứng viên phải được so sánh
+    
+    Trên đoạn đóng, nếu hàm liên tục, xét hai biên và các điểm nội có f′=0 hoặc không tồn tại. Khi danh sách hữu hạn, so giá trị hàm tại tất cả ứng viên.
+    
+    <figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg" alt="Parabol trên [0;5] với f(0)=1, f(2)=−3, f(5)=6."/><figcaption>So ba chấm đặc gồm hai đầu mút và đỉnh. Max 6 ở biên, min −3 ở đỉnh; nếu bỏ biên, phải xét lại khả năng đạt.</figcaption></figure>
+    
+    **Vận dụng.** Tìm GTLN, GTNN của $f=x^2-4x+2$ trên [1,5].
+    
+    <span data-ped-first-try="3" data-outcome-id="G12-B02-CRITICAL_END_POINTS" data-thpt-first-try-id="THPT-G12-B02-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $f'=2x-4$; ứng viên 1,2,5 có giá trị −1,−2,7. GTNN −2 tại 2, GTLN 7 tại 5.
+    
+    <span data-thpt-help-id="HELP-G12-B02-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không bỏ điểm biên. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-c03)
 
-Số M là **giá trị lớn nhất** của f trên D nếu (i) có x0 thuộc D với f(x0)=M và (ii) với mọi x thuộc D, f(x)≤M. Tương tự m là **giá trị nhỏ nhất** khi f(x0)=m và f(x)≥m với mọi x thuộc D. Điều kiện **đạt được** tại một x0 trong D là bắt buộc: f(x)=x trên (0,1) có cận trên đúng 1, cận dưới đúng 0 nhưng **không đạt GTLN/GTNN** vì 0,1 không thuộc D. Phân biệt "giá trị cực đại" địa phương với GTLN toàn cục.
+    ### 1.4. Giới hạn không phải giá trị đạt
+    
+    Trên miền mở, giá trị có thể tiến sát một số nhưng không chạm tới. Chỉ được gọi là min/max nếu đạt trong miền.
+    
+    **Vận dụng.** $g=x(4-x)$ trên (0,4). Có GTLN/GTNN không?
+    
+    <span data-ped-first-try="4" data-outcome-id="G12-B02-OPEN_DOMAIN_NONATTAINMENT" data-thpt-first-try-id="THPT-G12-B02-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $g=4-(x-2)^2$, max=4 tại 2; luôn dương, tiến về 0 ở biên bị loại nên không có min.
+    
+    <span data-thpt-help-id="HELP-G12-B02-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Phân biệt 0 là cận dưới và giá trị đạt. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-c04)
 
-Hàm **liên tục trên đoạn đóng, hữu hạn** [a,b] luôn đạt cả GTLN lẫn GTNN. Để tìm chúng khi f khả vi trong (a,b), ta so sánh f(a), f(b) với f(c) tại mọi c thuộc (a,b) mà f'(c)=0 hoặc f' không tồn tại. Với đoạn nửa mở, khoảng mở hoặc miền vô hạn, không áp dụng máy móc định lý đoạn; cần xét giới hạn ở biên và khả năng **không đạt**.
+    ### 1.5. Miền nửa khoảng và vô hạn
+    
+    Khi x≥0, cần xét biên 0, điểm nội và giới hạn khi x→∞; giới hạn không là ứng viên đạt nếu không có điểm thật tương ứng.
+    
+    **Vận dụng.** Tìm GTLN/GTNN của $q=2x/(x^2+1)$ trên [0,+∞).
+    
+    <span data-ped-first-try="5" data-outcome-id="G12-B02-CONSTRAINED_DOMAIN" data-thpt-first-try-id="THPT-G12-B02-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $q'=2(1-x^2)/(x^2+1)^2$, tăng đến 1 rồi giảm; max=1 tại 1, min=0 tại 0.
+    
+    <span data-thpt-help-id="HELP-G12-B02-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Kiểm q≥0 và giới hạn 0 không tự tạo điểm ở vô hạn. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-p03)
 
-### PED4: Cách đọc bảng biến thiên
+    ### 1.6. Đặt biến từ hình học
+    
+    Hộp không nắp gấp từ tấm vuông cạnh L, cắt bốn góc cạnh x: đáy cạnh L−2x, cao x, $V=x(L-2x)^2$, $0<x<L/2$.
+    
+    **Vận dụng.** Tấm vuông cạnh 24 cm. Tìm x làm thể tích lớn nhất.
+    
+    <span data-ped-first-try="6" data-outcome-id="G12-B02-OPTIMIZATION_MODEL" data-thpt-first-try-id="THPT-G12-B02-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** $V'= (24-2x)(24-6x)$; trên (0,12) dấu + rồi − quanh x=4. $V(4)=1024$ cm³.
+    
+    <span data-thpt-help-id="HELP-G12-B02-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Loại nghiệm 12 vì hộp suy biến. [Luyện lại câu tương ứng](../luyen-tap/#thpt-g12-chi-b02-a01)
 
-Đọc hàng x và đánh dấu *các biên được lấy* bằng ngoặc vuông hoặc chấm đặc, dấu tròn rỗng nếu bị loại; đọc hàng f' để xác định đỉnh/đáy; đọc hàng f và đối chiếu **giá trị tại điểm biên**. Chỉ có bảng dấu và cực trị cục bộ chưa đủ nếu không so các biên. Hình tự vẽ khi cần: đường parabol y=−(x−3)²+8 trên [0,4] đạt GTLN ở 3; GTNN là f(0)=−1 chứ không ở một cực tiểu nội.
+=== "Kiến thức SGK"
 
-## 4. Đọc hình và dữ liệu
+    ### 2.1. Khái niệm giá trị lớn nhất, giá trị nhỏ nhất
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm giá trị lớn nhất, giá trị nhỏ nhất</strong><p>M là GTLN trên D khi tồn tại \(x_0\in D\) sao cho \(f(x_0)=M\) và \(f(x)\le M\) với mọi x∈D. m là GTNN nếu đạt tại một điểm và \(f(x)\ge m\) với mọi x∈D. Viết \(\max_D f\), \(\min_D f\) khi tồn tại.</p></div>
 
-FIG-G12-B02-01 (G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg): đồ thị chính xác của f=x²−4x+1 chỉ trên [0,5], đánh dấu cả ba ứng viên x=0,2,5 bằng chấm đặc. Bước đọc: (1) nhận diện 0,5 là biên được lấy; (2) xác định đỉnh x=2, f=−3; (3) so f(0)=1, f(2)=−3, f(5)=6 để thấy GTLN ở biên x=5; (4) thay đoạn mở (0,5) thì không thể kết luận vẫn có max6 ở biên. Nét đồ thị ngoài đoạn không phải phần miền đang xét.
+    ### 2.2. Tìm giá trị lớn nhất và giá trị nhỏ nhất bằng đạo hàm
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tìm giá trị lớn nhất và giá trị nhỏ nhất bằng đạo hàm</strong><p>Hàm liên tục trên đoạn [a,b] luôn đạt GTLN/GTNN. Khi tập điểm tới hạn nội hữu hạn, tính f ở a,b và tại mọi điểm nội nơi f′=0 hoặc không khả vi, rồi so giá trị. Nếu f không đổi trên một khoảng thì ghi giá trị chung; nếu không có danh sách hữu hạn, dùng tính đơn điệu hoặc lập luận toàn miền. Với khoảng mở/vô hạn, kết hợp dấu đạo hàm, giới hạn và kiểm tra đạt được. Không dùng định lý đoạn nếu thiếu liên tục hoặc đầu mút.</p></div>
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg" alt="Hình minh họa 1 Bài 2 · Giá trị lớn nhất và giá trị nhỏ nhất của hàm số" /><figcaption>Hình minh họa 1 · Xem hướng dẫn đọc hình ngay phía trên.</figcaption></figure>
+=== "Ví dụ"
 
-## 5. Ví dụ có suy luận và lý do chọn phương pháp
+    ### 3.1. So sánh trên đoạn
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B02-R02-01"><p><strong>Đề bài:</strong> \(f=x^2-4x+1\) trên [0,5].</p><p><strong>Phân tích:</strong> Liên tục trên đoạn, xét biên và nghiệm đạo hàm.</p><p><strong>Lời giải:</strong> \(f'=2x-4=0\) tại 2. Ba giá trị 1,−3,6. Max 6 tại 5, min −3 tại 2.</p><p><strong>Kiểm lại:</strong> Khớp ba điểm trên hình.</p></div>
 
-### Ví dụ 1
-Trên [0,5], f(x)=x²−4x+1. **Vì sao chọn so các điểm?** f liên tục trên đoạn và khả vi bên trong. f'=2x−4=0 tại x=2. Tính f(0)=1, f(2)=−3, f(5)=6. Vậy GTNN =−3 tại x=2, GTLN=6 tại x=5. Nếu chỉ tìm f'=0 sẽ bỏ sót **GTLN ở biên**.
+    ### 3.2. Khoảng mở
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B02-R02-02"><p><strong>Đề bài:</strong> \(f=2x\) trên (0,1).</p><p><strong>Phân tích:</strong> Hàm tăng nhưng hai biên bị loại.</p><p><strong>Lời giải:</strong> Không max/min; tiến về 0 và 2 nhưng không đạt.</p><p><strong>Kiểm lại:</strong> Với mỗi x trong miền có điểm nhỏ/lớn hơn.</p></div>
 
-### Ví dụ 2
-Trên (0,1), g(x)=x. g tăng và tiến tới 0,1 ở hai đầu nhưng hai đầu không thuộc miền. Không có x nào trong (0,1) đạt giá trị 1 hay 0; **không có GTLN/GTNN**. Không được nhầm sup=1 với max=1.
+    ### 3.3. Parabol quay xuống
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B02-R02-03"><p><strong>Đề bài:</strong> \(h=-x^2+6x-1\) trên [0,4].</p><p><strong>Phân tích:</strong> Xét x=3 và hai biên.</p><p><strong>Lời giải:</strong> \(h'=-2x+6\). Các giá trị −1,8,7. Max 8 tại 3, min −1 tại 0.</p><p><strong>Kiểm lại:</strong> Giá trị biên 4 không nhỏ nhất.</p></div>
 
-### Ví dụ 3
-Trên [0,4], h(x)=−x²+6x−1. h'=−2x+6; h' đổi +→− ở x=3. Các ứng viên 0,3,4 cho h(0)=−1, h(3)=8, h(4)=7. GTLN=8 tại 3; GTNN=−1 tại 0. Lưu ý đỉnh cho GTLN còn GTNN nằm ở biên.
+    ### 3.4. Miền vô hạn
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B02-R02-04"><p><strong>Đề bài:</strong> \(f=x/(x^2+4)\) trên [0,+∞).</p><p><strong>Phân tích:</strong> Xét dấu đạo hàm và giá trị biên.</p><p><strong>Lời giải:</strong> \(f'=(4-x^2)/(x^2+4)^2\), tăng đến x=2 rồi giảm; max=1/4 tại 2, min=0 tại 0.</p><p><strong>Kiểm lại:</strong> f không âm, giới hạn 0 ở vô hạn.</p></div>
 
-### Ví dụ 4
-Trên [0,+∞), q(x)=x/(x²+1). q'=(1−x²)/(x²+1)²; tăng (0,1), giảm (1,+∞). q(0)=0, q(1)=1/2, lim∞q=0, và q(x)≥0. Do đó GTLN=1/2 tại x=1, GTNN=0 tại x=0. **Giới hạn 0 khi x→∞ không phải một điểm đạt được**, nhưng lần này 0 được đạt tại x=0.
+    ### 3.5. Vườn chữ nhật
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B02-R02-05"><p><strong>Đề bài:</strong> Chu vi 32 m, hai cạnh dương.</p><p><strong>Phân tích:</strong> Đặt chiều rộng x, chiều dài 16−x.</p><p><strong>Lời giải:</strong> \(A=x(16-x)\) trên (0,16); \(A'=16-2x\). Max 64 m² tại x=8. Không min vì A&gt;0, tiến 0 ở biên.</p><p><strong>Kiểm lại:</strong> Hai cạnh 8 m, chu vi 32 m.</p></div>
 
-### Ví dụ 5
-Một khu vườn hình chữ nhật có chu vi 24 m. Đặt chiều rộng x m, chiều dài 12−x m; điều kiện 0<x<12. A(x)=x(12−x), A'=12−2x, dấu +→− tại x=6. Diện tích lớn nhất 36 m² khi hình vuông 6×6 m. Diện tích tiến gần 0 ở hai biên không hợp lệ, nên **không có GTNN** trên miền hình chữ nhật không suy biến (0,12); phải nói rõ điều kiện mô hình.
+    ### 3.6. Gấp hộp vuông
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B02-R02-06"><p><strong>Đề bài:</strong> Tấm vuông 36 cm, cắt góc cạnh x để gấp hộp không nắp.</p><p><strong>Phân tích:</strong> Từ hình tạo miền và hàm mục tiêu.</p><p><strong>Lời giải:</strong> \(V=x(36-2x)^2\), \(0&lt;x&lt;18\); \(V'=(36-2x)(36-6x)\) đổi + sang − ở 6. \(V(6)=3456\) cm³ là max.</p><p><strong>Kiểm lại:</strong> Nghiệm 18 bị loại, thể tích tiến 0 ở hai biên.</p></div>
 
-## 6. Tự thử trước Core
+=== "Lỗi thường gặp"
 
-A. Hàm có cực đại tại x=2 nhưng liên tục trên [0,5], giá trị ở x=5 cao hơn: GTLN ở đâu? Nêu lý do.
-B. Hàm f(x)=x, 0<x<1, "gần 1" khác "đạt 1" như thế nào?
-C. Khi tối ưu một chiều dài x, vì sao cần ghi 0<x<12 trước khi đạo hàm?
-Tự ghi dự đoán, chỉ sau đó mở từng Core. Nếu sai: đi tới đúng thẻ D6, thử lại mục khác rồi mới trở về câu gốc.
+    ### 4.1. So sánh trên toàn miền
+    
+    ??? tip "Cách tự sửa"
+    
+        Tìm điểm làm phản ví dụ cho giá trị dự đoán. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-c01).
 
-## 7. Chuyển sang Core và Luyện tập
+    ### 4.2. Vai trò của đoạn đóng
+    
+    ??? tip "Cách tự sửa"
+    
+        Kiểm miền trước khi viện dẫn định lý. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-c02).
 
-Sau khi đọc Kiến thức, Ví dụ và hoàn thành các câu **Tự thử** phía trên, em có thể thực hành tại **trang Core và Luyện tập của Chương I**. Câu hỏi vẫn được chia theo từng bài, không cần tìm trong các bài học khác.
+    ### 4.3. Ứng viên phải được so sánh
+    
+    ??? tip "Cách tự sửa"
+    
+        Không bỏ điểm biên. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-c03).
 
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b02-core">✎ Core · Bài 2</a><a href="../luyen-tap/#b02-practice">✎ Luyện tập · Vận dụng · Tự luận · Bài 2</a><a href="../luyen-tap/#b02-help">Hướng dẫn khi gặp khó khăn · Bài 2</a></nav></div>
+    ### 4.4. Giới hạn không phải giá trị đạt
+    
+    ??? tip "Cách tự sửa"
+    
+        Phân biệt 0 là cận dưới và giá trị đạt. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-c04).
 
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../">Chương I</a><a href="../bai-3/">Bài tiếp theo</a></nav></div>
+    ### 4.5. Miền nửa khoảng và vô hạn
+    
+    ??? tip "Cách tự sửa"
+    
+        Kiểm q≥0 và giới hạn 0 không tự tạo điểm ở vô hạn. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-p03).
+
+    ### 4.6. Đặt biến từ hình học
+    
+    ??? tip "Cách tự sửa"
+    
+        Loại nghiệm 12 vì hộp suy biến. Sau khi kiểm lại lý do, tự giải một câu khác trong [Core/Luyện tập](../luyen-tap/#thpt-g12-chi-b02-a01).
+
+    [Core Bài 2](../luyen-tap/#b02-core) · [Luyện tập, Vận dụng, Tự luận](../luyen-tap/#b02-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b02-help) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 15–19.*
