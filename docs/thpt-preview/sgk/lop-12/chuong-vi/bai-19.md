@@ -22,7 +22,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm các nhóm không giao nhau và tổng tỉ trọng bằng 1. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p01). Sau đó tự làm lại Vận dụng.
+        Kiểm các nhóm không giao nhau và tổng tỉ trọng bằng 1. <a href="../luyen-tap/#thpt-g12-b19-c01">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.2. Toàn phần là trung bình theo trọng số
     
@@ -40,7 +40,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm kết quả giữa 0,6 và 0,9. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p02). Sau đó tự làm lại Vận dụng.
+        Kiểm kết quả giữa 0,6 và 0,9. <a href="../luyen-tap/#thpt-g12-b19-c02">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.3. Đọc sơ đồ cây đúng loại xác suất
     
@@ -60,7 +60,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Ghi cả nhánh đối ở mỗi nút; chỉ cộng hai lá E. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p03). Sau đó tự làm lại Vận dụng.
+        Ghi cả nhánh đối ở mỗi nút; chỉ cộng hai lá E. <a href="../luyen-tap/#thpt-g12-b19-c03">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.4. Bayes: chọn phần trong các lá được quan sát
     
@@ -78,7 +78,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Cần tỉ trọng ban đầu, hai xác suất điều kiện và mẫu dương. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p04). Sau đó tự làm lại Vận dụng.
+        Cần tỉ trọng ban đầu, hai xác suất điều kiện và mẫu dương. <a href="../luyen-tap/#thpt-g12-b19-c04">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p04">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.5. Dương tính và tỷ lệ nền
     
@@ -98,7 +98,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không đọc thẳng 80%; mẫu là mọi phép thử dương. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p05). Sau đó tự làm lại Vận dụng.
+        Không đọc thẳng 80%; mẫu là mọi phép thử dương. <a href="../luyen-tap/#thpt-g12-b19-c05">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.6. Âm tính: dùng đúng các nhánh đối
     
@@ -116,7 +116,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không dùng độ nhạy làm xác suất đã biết âm; dùng đúng nhánh bổ sung. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p05). Sau đó tự làm lại Vận dụng.
+        Không dùng độ nhạy làm xác suất đã biết âm; dùng đúng nhánh bổ sung. <a href="../luyen-tap/#thpt-g12-b19-c05">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.7. Nhiều nguồn: mở rộng phân hoạch
     
@@ -134,7 +134,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tổng tỷ trọng bằng 1; nếu nhóm xác suất 0, bỏ giao bằng 0 thay vì tính điều kiện. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p06). Sau đó tự làm lại Vận dụng.
+        Tổng tỷ trọng bằng 1; nếu nhóm xác suất 0, bỏ giao bằng 0 thay vì tính điều kiện. <a href="../luyen-tap/#thpt-g12-b19-c06">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p06">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.8. Lời giải tổng hợp có kiểm tra
     
@@ -152,7 +152,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Nêu rõ tử giao, mẫu toàn phần và kiểm 0≤kết quả≤1. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p07). Sau đó tự làm lại Vận dụng.
+        Nêu rõ tử giao, mẫu toàn phần và kiểm 0≤kết quả≤1. <a href="../luyen-tap/#thpt-g12-b19-c07">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.9. Chuyển trạng thái qua hai ngày
     
@@ -172,7 +172,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Phân nhánh theo ngày ở giữa; không lặp một xác suất hai lần khi điều kiện thay đổi. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p03). Sau đó tự làm lại Vận dụng.
+        Phân nhánh theo ngày ở giữa; không lặp một xác suất hai lần khi điều kiện thay đổi. <a href="../luyen-tap/#thpt-g12-b19-c03">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.10. Di truyền: toàn phần trước, nhân độc lập sau
     
@@ -190,7 +190,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm tổng ba kiểu gene bằng 1; không nhân tỷ lệ cây bb trực tiếp. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p02). Sau đó tự làm lại Vận dụng.
+        Kiểm tổng ba kiểu gene bằng 1; không nhân tỷ lệ cây bb trực tiếp. <a href="../luyen-tap/#thpt-g12-b19-c02">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p02">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
     ### 1.11. Chuyển vật giữa hai túi
     
@@ -208,7 +208,7 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tổng vật túi II tăng 1 ở mọi nhánh; số xanh tùy vật được chuyển. [Ôn phương pháp nền tảng](../luyen-tap/#thpt-g12-b19-c07); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b19-p07). Sau đó tự làm lại Vận dụng.
+        Tổng vật túi II tăng 1 ở mọi nhánh; số xanh tùy vật được chuyển. <a href="../luyen-tap/#thpt-g12-b19-c07">Ôn phương pháp nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b19-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng.
 
 === "Kiến thức SGK"
 
@@ -284,68 +284,68 @@
     
     ??? tip "Cách tự sửa"
     
-        Kiểm các nhóm không giao nhau và tổng tỉ trọng bằng 1. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c01); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p01).
+        Kiểm các nhóm không giao nhau và tổng tỉ trọng bằng 1. <a href="../luyen-tap/#thpt-g12-b19-c01">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p01">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.2. Toàn phần là trung bình theo trọng số
     
     ??? tip "Cách tự sửa"
     
-        Kiểm kết quả giữa 0,6 và 0,9. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c02); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p02).
+        Kiểm kết quả giữa 0,6 và 0,9. <a href="../luyen-tap/#thpt-g12-b19-c02">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p02">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.3. Đọc sơ đồ cây đúng loại xác suất
     
     ??? tip "Cách tự sửa"
     
-        Ghi cả nhánh đối ở mỗi nút; chỉ cộng hai lá E. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c03); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p03).
+        Ghi cả nhánh đối ở mỗi nút; chỉ cộng hai lá E. <a href="../luyen-tap/#thpt-g12-b19-c03">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p03">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.4. Bayes: chọn phần trong các lá được quan sát
     
     ??? tip "Cách tự sửa"
     
-        Cần tỉ trọng ban đầu, hai xác suất điều kiện và mẫu dương. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c04); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p04).
+        Cần tỉ trọng ban đầu, hai xác suất điều kiện và mẫu dương. <a href="../luyen-tap/#thpt-g12-b19-c04">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p04">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.5. Dương tính và tỷ lệ nền
     
     ??? tip "Cách tự sửa"
     
-        Không đọc thẳng 80%; mẫu là mọi phép thử dương. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c05); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p05).
+        Không đọc thẳng 80%; mẫu là mọi phép thử dương. <a href="../luyen-tap/#thpt-g12-b19-c05">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p05">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.6. Âm tính: dùng đúng các nhánh đối
     
     ??? tip "Cách tự sửa"
     
-        Không dùng độ nhạy làm xác suất đã biết âm; dùng đúng nhánh bổ sung. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c05); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p05).
+        Không dùng độ nhạy làm xác suất đã biết âm; dùng đúng nhánh bổ sung. <a href="../luyen-tap/#thpt-g12-b19-c05">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p05">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.7. Nhiều nguồn: mở rộng phân hoạch
     
     ??? tip "Cách tự sửa"
     
-        Tổng tỷ trọng bằng 1; nếu nhóm xác suất 0, bỏ giao bằng 0 thay vì tính điều kiện. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c06); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p06).
+        Tổng tỷ trọng bằng 1; nếu nhóm xác suất 0, bỏ giao bằng 0 thay vì tính điều kiện. <a href="../luyen-tap/#thpt-g12-b19-c06">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p06">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.8. Lời giải tổng hợp có kiểm tra
     
     ??? tip "Cách tự sửa"
     
-        Nêu rõ tử giao, mẫu toàn phần và kiểm 0≤kết quả≤1. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c07); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p07).
+        Nêu rõ tử giao, mẫu toàn phần và kiểm 0≤kết quả≤1. <a href="../luyen-tap/#thpt-g12-b19-c07">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p07">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.9. Chuyển trạng thái qua hai ngày
     
     ??? tip "Cách tự sửa"
     
-        Phân nhánh theo ngày ở giữa; không lặp một xác suất hai lần khi điều kiện thay đổi. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c03); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p03).
+        Phân nhánh theo ngày ở giữa; không lặp một xác suất hai lần khi điều kiện thay đổi. <a href="../luyen-tap/#thpt-g12-b19-c03">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p03">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.10. Di truyền: toàn phần trước, nhân độc lập sau
     
     ??? tip "Cách tự sửa"
     
-        Kiểm tổng ba kiểu gene bằng 1; không nhân tỷ lệ cây bb trực tiếp. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c02); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p02).
+        Kiểm tổng ba kiểu gene bằng 1; không nhân tỷ lệ cây bb trực tiếp. <a href="../luyen-tap/#thpt-g12-b19-c02">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p02">làm câu luyện tập rồi quay lại</a>.
 
     ### 4.11. Chuyển vật giữa hai túi
     
     ??? tip "Cách tự sửa"
     
-        Tổng vật túi II tăng 1 ở mọi nhánh; số xanh tùy vật được chuyển. [Ôn câu Core](../luyen-tap/#thpt-g12-b19-c07); [làm câu luyện tập rồi quay lại](../luyen-tap/#thpt-g12-b19-p07).
+        Tổng vật túi II tăng 1 ở mọi nhánh; số xanh tùy vật được chuyển. <a href="../luyen-tap/#thpt-g12-b19-c07">Ôn câu Core</a>; <a href="../luyen-tap/#thpt-g12-b19-p07">làm câu luyện tập rồi quay lại</a>.
 
-    [Core Bài 19](../luyen-tap/#b19-core) · [Luyện tập và Tự luận](../luyen-tap/#b19-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b19-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b19-core">Core Bài 19</a> · <a href="../luyen-tap/#b19-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b19-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
 *Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 72–78; SBT trang in 43–45.*
