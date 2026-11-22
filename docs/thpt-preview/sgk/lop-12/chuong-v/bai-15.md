@@ -270,4 +270,4 @@
 
     [Core Bài 15](../luyen-tap/#b15-core) · [Luyện tập và Tự luận](../luyen-tap/#b15-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b15-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 41–49; SBT trang in 26–29 (đã đọc; trang 25 chưa định vị).*
+*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập hai, trang in 41–49; SBT trang in 26–29. Trang 25 SBT thuộc Bài 14 và thiếu trong bản PDF quét, không phải thiếu trang nguồn của Bài 15.*
