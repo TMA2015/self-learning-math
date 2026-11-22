@@ -1,3 +1,12 @@
+<!-- OWNER_SGK_G11_G12_AUTHORING_RESET_20261122 -->
+## ƯU TIÊN CAO NHẤT CHO AUTHORING SGK TOÁN 11–12 — CHỦ DỰ ÁN CHỐT 22/11/2026
+**Đợt nâng cấp 51 bài Toán 11 B02–B33, Toán 12 B01–B19 trước đây ĐÃ HỦY.** 15 Draft PR của đợt đó đóng `unmerged`; Master #987 lưu lịch sử và đóng `not_planned`. **Không kế thừa các bản thảo cũ, biên nhận Q18 cũ, ma trận outcome hoặc chữ ký CONTENT_READY cũ làm căn cứ viết hay duyệt 51 bài.**
+**TÀI LIỆU BIÊN SOẠN DUY NHẤT:** [CHECKLIST SGK 11–12 owner reset 22/11/2026](prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_OWNER_RESET_20261122.md). Quy trình viết: **đọc SGK KNTT → đọc các bài Golden Toán 10 đã nghiệm thu → viết/đọc lại đầy đủ bốn tab theo checklist → tác giả tự chịu trách nhiệm**. Không dùng Qxx/PED/D/FirstTry, test, thống kê/CI hay checklist/ledger cũ để thiết kế bố cục, đặt nhãn hoặc ký chất lượng học liệu.
+**Trạng thái:** AUTHORING SGK 11–12 đã hủy lần nâng cấp trước và CHƯA BẮT ĐẦU LẠI. Chỉ biên soạn khi được chủ dự án giao tiếp; bắt đầu từ Toán 11 Bài 2. Không tự merge/deploy.
+**Giới hạn:** Chỉ dẫn này thay thế mọi hướng dẫn **biên soạn SGK 11–12** cũ bên dưới khi mâu thuẫn; không cho phép tắt/bỏ kiểm soát đánh giá kín, dữ liệu học sinh, quyền phát hành hoặc bảo vệ website vốn thuộc phạm vi RELEASE/kỹ thuật. Chuyên đề và THCS không thuộc đợt reset này.
+
+---
+
 <!-- RELEASE_SCOPE_LOCK_20261122 -->
 ## RELEASE CĐ01–22 — KHÓA PHẠM VI QA XUYÊN PHIÊN (OWNER 22/11/2026)
 **Luôn đọc [RELEASE MASTER #995](https://github.com/TMA2015/self-learning-math/issues/995) trước mọi cuộc trò chuyện/nhiệm vụ phát hành mới**. Chỉ QA chuyên đề đang phát hành + đúng component chung thực sự đổi + source/receipt/Q15/Q16/AP/R có liên quan. **Không tự chạy lại bộ test 79 SGK, 25 THCS, toàn website, Math Lab, so SHA lịch sử SGK không thay đổi.** Workflow tự kích hoạt sai do path filter quá rộng = `OUT_OF_SCOPE_LEGACY_CI`, không phải lỗi của chuyên đề; chỉnh trigger có căn cứ, giữ nguyên các gate an toàn thật. Mở rộng QA chỉ khi diff chứng minh tác động shared runtime/build/auth/routing/Firebase; nêu lý do. Không sử dụng lỗi SHA lịch sử SGK không đổi để HOLD RELEASE chuyên đề. Khóa này áp dụng toàn bộ CĐ01–22 cùng Golden R4, Q01–Q18, không lập chuẩn học thuật thứ hai.
