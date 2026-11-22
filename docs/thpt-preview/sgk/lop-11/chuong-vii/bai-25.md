@@ -206,7 +206,7 @@
 
     ### 3.3. Giao tuyến của hai mặt cùng vuông góc mặt thứ ba
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B25-R02-03"><p><strong>Đề bài:</strong> Hộp chữ nhật ABCD.A'B'C'D'. Chứng minh giao tuyến của (ABB'A') và (BCC'B') vuông góc đáy theo tính chất hai mặt.</p><p><strong>Phân tích:</strong> Mỗi mặt bên chứa một cạnh đứng; xác định giao tuyến thật.</p><p><strong>Lời giải:</strong> Hai mặt đều chứa BB' vuông góc (ABCD), nên cùng vuông góc đáy. Chúng cắt nhau theo BB'. Tính chất 2 cho \(BB'\perp(ABCD)\).</p><p><strong>Kiểm lại:</strong> Tính chất yêu cầu hai mặt cắt nhau; không dùng cho hai mặt bên đối diện.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B25-R02-03"><p><strong>Đề bài:</strong> Hai tấm vách phẳng (P),(Q) ghép theo một đường m. Vách (P) chứa thanh a dựng vuông góc sàn phẳng (R), vách (Q) chứa một thanh b khác cũng vuông góc sàn. Không biết trước phương của đường ghép m. Chứng minh m vuông góc sàn.</p><p><strong>Phân tích:</strong> Dùng dấu hiệu đường thuộc một mặt và vuông góc mặt kia để kiểm từng vách; sau đó dùng tính chất giao tuyến của hai mặt cùng vuông góc mặt thứ ba.</p><p><strong>Lời giải:</strong> Vì \(a\subset(P)\) và \(a\perp(R)\), suy \((P)\perp(R)\). Tương tự \(b\subset(Q)\) và \(b\perp(R)\) cho \((Q)\perp(R)\). Hai mặt (P),(Q) cắt nhau theo m, nên \(m\perp(R)\).</p><p><strong>Kiểm lại:</strong> Không cần giả thiết a hay b nằm trên đường ghép. Điều kiện hai vách cắt nhau là thiết yếu; không nói tới giao tuyến của hai vách song song.</p></div>
 
     ### 3.4. Góc phẳng nhị diện của hình chóp đều
 
