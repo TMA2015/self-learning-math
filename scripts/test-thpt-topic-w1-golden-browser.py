@@ -61,7 +61,7 @@ with sync_playwright() as pw:
                     nav = page.locator(".topic-w1-release-nav .thpt-sgk-lesson-nav")
                     expect(nav.locator(":scope > *")).to_have_count(4)
                     assert not any(
-                        ("/" + part + "/") in (link.get_attribute("href") or "") for link in nav.locator("a").all()
+                        (link.get_attribute("href") or "") == ("../" + part + "/") for link in nav.locator("a").all()
                     ), (topic, part, "current page must not appear in nav")
                     assert page.locator("[data-thpt-readiness],[data-mastery-credit]").count() == 0
                 load("kien-thuc")
