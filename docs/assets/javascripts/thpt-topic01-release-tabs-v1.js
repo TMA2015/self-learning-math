@@ -3,6 +3,7 @@
 (()=>{"use strict";
 
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
+const topic01Ready=part=>{document.documentElement.classList.remove("topic01-boot-pending-"+part);document.documentElement.classList.remove("topic01-boot-fallback-"+part);};
 const typeset=n=>{const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([n]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([n])).catch(()=>{})};
 function solutionContent(details){
  const out=el("div","thpt-r4-formative-reveal"),clone=details.cloneNode(true);clone.querySelector("summary")?.remove();
@@ -101,6 +102,7 @@ const init=()=>{
  if(firstSub)outerPanels[0].insertBefore(note,firstSub);
  knowledgeStyle(root);
  bind(outerButtons,outerPanels);
+ topic01Ready("knowledge");
 };
 
 /* CĐ01 public Practice ONLY. The existing approved Markdown body remains
@@ -169,6 +171,7 @@ function initTopic01Practice(){
  };
  pager=golden.bindPager({prev,next,getIndex:()=>cursor,getCount:()=>groups[activeGroup].items.length,go:i=>{cursor=i;render()}});
  cards.forEach((button,i)=>button.addEventListener("click",()=>{activeGroup=i;cursor=0;render();lifecycle.open(button)}));
+ topic01Ready("practice");
 }
 function initTopic01Selfcheck(){
  const marker=document.querySelector("[data-topic01-selfcheck-start]"),end=document.querySelector("[data-topic01-selfcheck-end]");if(!marker||!end||marker.dataset.ready==="1")return;
@@ -199,7 +202,7 @@ function initTopic01Selfcheck(){
   button.onclick=async()=>{if(!solution.hidden){solution.hidden=true;button.textContent="Đối chiếu";button.setAttribute("aria-expanded","false");return}button.disabled=true;try{const original=await existingPublicSolution(q.id);if(!solution.isConnected)return;solution.replaceChildren(...original.childNodes);solution.dataset.thptCanonicalSolution=q.id;solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true");typeset(solution)}catch(error){if(solution.isConnected){solution.replaceChildren(el("p","g10sc-error","Chưa tải được lời giải. Em bấm Đối chiếu để thử lại."));solution.hidden=false;button.textContent="Ẩn đối chiếu";button.setAttribute("aria-expanded","true")}}finally{button.disabled=false}};
   prev.disabled=cursor===0;next.disabled=cursor===items.length-1;typeset(body)
  }
- prev.onclick=()=>{if(cursor>0){cursor--;render()}};next.onclick=()=>{if(cursor<items.length-1){cursor++;render()}};render()
+ prev.onclick=()=>{if(cursor>0){cursor--;render()}};next.onclick=()=>{if(cursor<items.length-1){cursor++;render()}};render();topic01Ready("selfcheck");
 }
 
 const launch=()=>{initTopic01Selfcheck();initTopic01Practice();init();};

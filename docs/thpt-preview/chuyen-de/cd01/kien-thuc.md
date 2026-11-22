@@ -14,6 +14,24 @@ hide:
   <p class="topic01-back"><a href="../../">← Tổng quan các Chuyên đề</a></p>
   
 </div>
+<div class="topic01-boot-status" role="status" aria-live="polite">Đang chuẩn bị nội dung kiến thức…</div>
+<script>
+/* Start before MkDocs renders source: never flash raw Markdown while Golden initializes. */
+(function(){
+  var html=document.documentElement,part="knowledge",pending="topic01-boot-pending-"+part;
+  html.classList.add(pending);
+  document.addEventListener("DOMContentLoaded",function(){
+    setTimeout(function(){
+      if(!html.classList.contains(pending))return;
+      html.classList.remove(pending);
+      html.classList.add("topic01-boot-fallback-"+part);
+      var status=document.querySelector(".topic01-boot-status");
+      if(status)status.textContent="Giao diện tương tác chưa tải được. Nội dung gốc được giữ lại bên dưới; em có thể tải lại trang.";
+    },0);
+  },{once:true});
+})();
+</script>
+
 <span data-topic01-knowledge-start hidden></span>
 
 <!-- TOPIC01_APPROVED_SOURCE_START -->
