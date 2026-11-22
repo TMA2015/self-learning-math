@@ -10,7 +10,7 @@
     
     Trước tiên coi f′ là một hàm mới. Nếu chính f′ có đạo hàm tại điểm đang xét thì đó là f″. Có f′ không đủ để suy f″ tồn tại.
     
-    **Vận dụng.** Với $f(x)=x^2+3x$, tính f′, f″ và $(f')^2$.
+    **Vận dụng.** Với $f(x)=x^2+3x$, tính $f'$, $f''$ và $(f')^2$.
     
     <span data-ped-first-try="1" data-outcome-id="G11-B33-SECOND_DEF" data-thpt-first-try-id="THPT-G11-B33-TRY01" hidden></span>
     
@@ -174,27 +174,27 @@
 
     ### 3.1. Hai lần đa thức
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-01"><p><strong>Đề bài:</strong> \(f(x)=2x^4-3x^2+6\); tìm f''.</p><p><strong>Phân tích:</strong> Lấy đạo hàm hai lần, không bình phương f'.</p><p><strong>Lời giải:</strong> \(f'=8x^3-6x\), \(f''=24x^2-6\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-01"><p><strong>Đề bài:</strong> \(f(x)=2x^4-3x^2+6\); tìm f''.</p><p><strong>Phân tích:</strong> Lấy đạo hàm hai lần, không bình phương f'.</p><p><strong>Lời giải:</strong> \(f'=8x^3-6x\), \(f''=24x^2-6\).</p><p><strong>Kiểm lại:</strong> Lấy đạo hàm từng hệ số; đạo hàm cấp hai không phải bình phương.</p></div>
 
     ### 3.2. Hàm sin bậc hai
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-02"><p><strong>Đề bài:</strong> \(f(x)=\sin(2x)\); tìm f''.</p><p><strong>Phân tích:</strong> Chain được nhân cả hai lượt; dấu cos'=-sin.</p><p><strong>Lời giải:</strong> \(f'=2\cos(2x)\), \(f''=-4\sin(2x)\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-02"><p><strong>Đề bài:</strong> \(f(x)=\sin(2x)\); tìm f''.</p><p><strong>Phân tích:</strong> Quy tắc hàm hợp áp dụng ở cả hai lượt; đạo hàm cos mang dấu âm.</p><p><strong>Lời giải:</strong> \(f'=2\cos(2x)\), \(f''=-4\sin(2x)\).</p><p><strong>Kiểm lại:</strong> Hệ số 2 xuất hiện ở cả hai lượt, dấu âm đến từ cos.</p></div>
 
     ### 3.3. Mũ bậc hai
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-03"><p><strong>Đề bài:</strong> \(f(x)=e^{3x}\); tìm f''.</p><p><strong>Phân tích:</strong> Nhân 3 ở mỗi lần lấy đạo hàm.</p><p><strong>Lời giải:</strong> \(f'=3e^{3x}\), \(f''=9e^{3x}\).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-03"><p><strong>Đề bài:</strong> \(f(x)=e^{3x}\); tìm f''.</p><p><strong>Phân tích:</strong> Nhân 3 ở mỗi lần lấy đạo hàm.</p><p><strong>Lời giải:</strong> \(f'=3e^{3x}\), \(f''=9e^{3x}\).</p><p><strong>Kiểm lại:</strong> Hai lượt đều nhân 3.</p></div>
 
     ### 3.4. Gia tốc từ vị trí
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-04"><p><strong>Đề bài:</strong> \(s(t)=t^3-2t^2+1\) m; gia tốc t=1.</p><p><strong>Phân tích:</strong> Không nhầm vận tốc v(1)=-1 với a(1)=2.</p><p><strong>Lời giải:</strong> \(v=3t^2-4t\) m/s; \(a=6t-4\) m/s², \(a(1)=2\) m/s².</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-04"><p><strong>Đề bài:</strong> \(s(t)=t^3-2t^2+1\) m; gia tốc t=1.</p><p><strong>Phân tích:</strong> Không nhầm vận tốc v(1)=-1 với a(1)=2.</p><p><strong>Lời giải:</strong> \(v=3t^2-4t\) m/s; \(a=6t-4\) m/s², \(a(1)=2\) m/s².</p><p><strong>Kiểm lại:</strong> v(1)=−1 m/s, a(1)=2 m/s²; tốc độ đang giảm.</p></div>
 
-    ### 3.5. Ngược dấu
+    ### 3.5. Vận tốc và gia tốc cùng dấu
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-05"><p><strong>Đề bài:</strong> Vật có v=-5 m/s, a=-2 m/s² tại t0; đang nhanh hay chậm dần?</p><p><strong>Phân tích:</strong> Gia tốc âm không đồng nghĩa chậm dần.</p><p><strong>Lời giải:</strong> Vì v và a cùng âm, tốc độ |v| đang tăng tại thời điểm đó (nhanh dần theo chiều âm).</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-05"><p><strong>Đề bài:</strong> Vật có v=-5 m/s, a=-2 m/s² tại t0; đang nhanh hay chậm dần?</p><p><strong>Phân tích:</strong> Gia tốc âm không đồng nghĩa chậm dần.</p><p><strong>Lời giải:</strong> Vì v và a cùng âm, tốc độ |v| đang tăng tại thời điểm đó (nhanh dần theo chiều âm).</p><p><strong>Kiểm lại:</strong> Vật đang đi chiều âm; vận tốc và gia tốc cùng dấu.</p></div>
 
     ### 3.6. Mô hình bóng bay
     
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-06"><p><strong>Đề bài:</strong> \(h(t)=8t-2t^2\) m trong 0≤t≤4; tìm h'' và đơn vị.</p><p><strong>Phân tích:</strong> Đối chiếu h(0)=h(4)=0 trước suy chuyển động.</p><p><strong>Lời giải:</strong> \(v=8-4t\) m/s, \(a=-4\) m/s²; chỉ diễn giải trong khoảng thời gian mô hình đang áp dụng.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHIX-B33-06"><p><strong>Đề bài:</strong> \(h(t)=8t-2t^2\) m trong 0≤t≤4; tìm h'' và đơn vị.</p><p><strong>Phân tích:</strong> Đối chiếu h(0)=h(4)=0 trước suy chuyển động.</p><p><strong>Lời giải:</strong> \(v=8-4t\) m/s, \(a=-4\) m/s²; chỉ diễn giải trong khoảng thời gian mô hình đang áp dụng.</p><p><strong>Kiểm lại:</strong> Tại t=2, v=0 nhưng a=−4; không suy mô hình ngoài khoảng.</p></div>
 
     ### 3.7. Đạo hàm cấp hai của tích với hàm mũ
     
