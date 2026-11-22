@@ -3,7 +3,7 @@
 ROLE: REVIEW_COPY_NOT_LEARNER_SOURCE
 BRANCH: authoring/sgk-g11-chvii-b22-b27-r02-20261122
 Q18_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHVII_B22_B27_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
-Q18_RECEIPT_BLOB: bece92ae1a42dced551c1f420d5dff5803985f4a
+Q18_RECEIPT_BLOB: 027a6f782a57694144f9cb62511ba01c6165ad04
 PRIVATE_RD1: NOT_INCLUDED
 MODE: R04 CURRENT AUTHOR_SELF_VERIFIED CONTENT_READY SOURCE / REVIEW_COPY_ONLY, independent NotebookLM verdict not yet received
 
@@ -24,7 +24,7 @@ PACKET_ID: Temp_G11_CHVII_B22_B27_R04_INDEPENDENT_REVIEW_20261122
 | B24 | docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md | 74fbd5720f37f110cd2dd04676425f06b2e0c015 |
 | B25 | docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md | f941b4edfc4be2a2047084430244b0d4ec4df5b1 |
 | B26 | docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md | dec9b2f748dfe39b09c4e7cb9d8ef348a29dcd19 |
-| B27 | docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md | ea25f68bf00549c663130e5ea991089db1f144bd |
+| B27 | docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md | e06bddefac10f1c4b380d624c1143d5635c73aa5 |
 
 Bản Temp này chỉ là bản sao cho NotebookLM. Sửa học liệu tại đúng canonical path rồi khóa SHA/receipt khi có MINIMAL_DELTA; không đưa bản Temp lên website.
 
@@ -1125,7 +1125,7 @@ Bản Temp này chỉ là bản sao cho NotebookLM. Sửa học liệu tại đ�
 
 ---
 
-## REVIEW SOURCE B27 BEGIN · ea25f68bf00549c663130e5ea991089db1f144bd
+## REVIEW SOURCE B27 BEGIN · e06bddefac10f1c4b380d624c1143d5635c73aa5
 
 # Bài 27. Thể tích
 
@@ -1237,6 +1237,34 @@ Bản Temp này chỉ là bản sao cho NotebookLM. Sửa học liệu tại đ�
 
         **Tự sửa:** Tính khối nước thực tế, nhân 1000 để đổi m³ sang lít. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C05">Luyện lại câu B27-C05</a>.
 
+    ### 1.6. Tích hợp Chương VII: từ vuông góc, hình chiếu, góc đến thể tích
+
+    Khi chỉ biết cạnh bên của một hình chóp, em **chưa biết chiều cao**. Hãy liên hệ: Bài 23 xác định đường vuông góc mặt đáy, Bài 24 xác định **hình chiếu vuông góc** của cạnh bên để đo góc đường–mặt, Bài 26 tính khoảng cách đỉnh–đáy, và Bài 27 mới dùng chiều cao thật để tính thể tích. Các bước này dựa vào một **tam giác vuông**, không dựa vào việc cạnh xiên nhìn có vẻ thẳng đứng trong hình.
+
+    **Vận dụng — Tự thử tích hợp trước Core.** Cho hình chóp \(S.ABCD\) có đáy \(ABCD\) là **hình vuông cạnh \(6\) cm**. Gọi \(O\) là tâm hình vuông, biết \(SO\perp(ABCD)\) và cạnh bên \(SA=\sqrt{34}\) cm. (a) Giải thích vì sao \(AO\) là hình chiếu vuông góc của \(AS\) lên mặt đáy; xác định góc giữa \(SA\) với \((ABCD)\). (b) Tính khoảng cách từ \(S\) đến mặt phẳng đáy. (c) Tính thể tích khối chóp. (d) Nếu bạn lấy \(SA\) làm chiều cao thì sai ở điều kiện nào? Tự thử trước khi mở Đối chiếu.
+
+    <span data-ped-first-try="6" data-outcome-id="G11-CHVII-INTEGRATED" data-thpt-first-try-id="THPT-G11-B27-TRY06" hidden></span>
+
+    ??? question "Đối chiếu — nối bốn khái niệm"
+
+        **Bước 1 — đọc hình chiếu:** \(A\in(ABCD)\) nên ảnh vuông góc của \(A\) là \(A\); vì \(SO\perp(ABCD)\), ảnh vuông góc của \(S\) là \(O\). Do đó đoạn \(AO\) là hình chiếu vuông góc của \(AS\) lên đáy. Góc đường thẳng \(SA\) với đáy là **\(\angle SAO\)**, vì \(AO\ne0\).
+
+        **Bước 2 — khoảng cách vuông góc:** Đường chéo vuông \(AC=6\sqrt2\) cm, \(AO=3\sqrt2\) cm. Tam giác \(SAO\) vuông tại \(O\); theo Pythagore, \(SO^2=SA^2-AO^2=34-18=16\). Vì \(SO>0\), suy ra **\(SO=4\) cm**, tức \(d(S,(ABCD))=4\) cm. Có thể kiểm \(\tan\angle SAO=SO/AO=4/(3\sqrt2)\).
+
+        **Bước 3 — thể tích:** Diện tích đáy \(6^2=36\) cm², nên \(V_{S.ABCD}=\frac13\cdot36\cdot4=\boxed{48\text{ cm}^3}\).
+
+        **Kiểm điều kiện:** \(SA\) **không vuông góc với đáy** vì hình chiếu \(AO\) có độ dài khác \(0\). Dùng \(SA=\sqrt{34}\) làm chiều cao là sai: công thức thể tích dùng **độ dài đoạn vuông góc \(SO\)**, không phải cạnh bên.
+
+    <span data-thpt-help-id="HELP-G11-B27-TRY06" hidden></span>
+
+    ??? tip "Kiểm lỗi — dùng cạnh xiên, bỏ bước dựng hình chiếu"
+
+        **Dấu hiệu:** Em thay \(h=\sqrt{34}\) hoặc gọi góc giữa \(SA\) và đáy là góc với một cạnh đáy bất kì.
+
+        **Vì sao sai:** Góc đường–mặt phải lấy góc với **hình chiếu vuông góc** của đường lên mặt, còn khoảng cách từ đỉnh đến đáy phải nằm trên đường **vuông góc mặt đáy**.
+
+        **Tự sửa:** Vẽ riêng tam giác vuông \(SAO\), đánh dấu \(SO\perp AO\), tính \(AO\) từ nửa đường chéo của hình vuông, rồi suy \(SO\) bằng Pythagore. Ôn Bài 23–24, Bài 26 và làm câu Core tích hợp `THPT-G11-CHVII-CHVII-C01` trong <a href="../luyen-tap/?item=THPT-G11-CHVII-CHVII-C01">Core Chương VII</a> **sau khi tự giải**.
+
 === "Kiến thức SGK"
 
     ### 2.1. Thể tích các khối lăng trụ, khối hộp, khối chóp và khối chóp cụt đều
@@ -1310,6 +1338,15 @@ Bản Temp này chỉ là bản sao cho NotebookLM. Sửa học liệu tại đ�
 
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B27-R02-08"><p><strong>Đề bài:</strong> Một phòng dạng hộp chữ nhật dài 6 m, rộng 3,5 m, cao 2,8 m. Tính thể tích; theo giả định yêu cầu công suất lạnh 180 BTU/h cho mỗi m³, ước lượng công suất.</p><p><strong>Phân tích:</strong> Tính thể tích trước; đây chỉ là mô hình hệ số được cho, không là tư vấn chọn thiết bị thực tế.</p><p><strong>Lời giải:</strong> \(V=6\cdot3{,}5\cdot2{,}8=58{,}8\) m³. Công suất theo giả định \(58{,}8\cdot180=10584\) BTU/h.</p><p><strong>Kiểm lại:</strong> Phải phân biệt m³ và BTU/h, kết quả phụ thuộc giả định cách nhiệt và môi trường.</p></div>
 
+    ### 3.9. Bài tích hợp: chọn đúng chiều cao trước khi tính thể tích
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B27-R04-INTEGRATED">
+    <p><strong>Đề bài:</strong> Một hình chóp có đáy hình chữ nhật \(ABCD\), \(AB=8\) cm, \(AD=6\) cm. Gọi \(O\) là giao hai đường chéo, \(SO\perp(ABCD)\), \(SA=13\) cm. Tính \(SO\), góc giữa \(SA\) và mặt đáy (theo tang của góc) và thể tích chóp.</p>
+    <p><strong>Chọn phương pháp:</strong> Trước hết xác định \(O\) là chân hình chiếu vuông góc của \(S\). Tâm hình chữ nhật cách mỗi đỉnh bằng **nửa đường chéo**; vì \(SA\) là cạnh xiên, phải dùng tam giác vuông \(SAO\) để tìm \(SO\) rồi mới dùng công thức thể tích chóp.</p>
+    <p><strong>Lời giải:</strong> \(AC=\sqrt{8^2+6^2}=10\) cm, \(AO=5\) cm. Tam giác \(SAO\) vuông tại \(O\): \(SO=\sqrt{13^2-5^2}=12\) cm. Hình chiếu vuông góc của \(SA\) trên đáy là \(AO\), góc giữa đường \(SA\) và đáy là \(\angle SAO\) với \(\tan\angle SAO=12/5\). Diện tích đáy là \(8\cdot6=48\) cm²; thể tích \(V=\frac13\cdot48\cdot12=\boxed{192\text{ cm}^3}\).</p>
+    <p><strong>Kiểm lại:</strong> Độ dài \(SO=12\) cm nhỏ hơn cạnh xiên \(SA=13\) cm, \(AO\ne0\) nên góc đường–mặt được xác định rõ. Tính thể tích cho **hình chóp**, không dùng công thức hình lăng trụ \(S_{\mathrm{đáy}}h\). Mọi kích thước ở cùng đơn vị cm.</p>
+    </div>
+
 === "Lỗi thường gặp"
 
     <span data-thpt-help-id="HELP-G11-CHVII-B27-01" hidden></span>
@@ -1344,6 +1381,16 @@ Bản Temp này chỉ là bản sao cho NotebookLM. Sửa học liệu tại đ�
 
         **Tự sửa:** Ghi đơn vị ở từng bước; ôn 3.7. <a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C05">Luyện lại câu B27-C05</a>.
 
+    <span data-thpt-help-id="HELP-G11-B27-INTEGRATED" hidden></span>
+
+    ??? tip "4.5. Nhầm góc đường–mặt và chiều cao chóp"
+
+        **Dấu hiệu:** Em lấy \(SA\) làm chiều cao vì nó nối đỉnh với đáy, hoặc dùng góc giữa \(SA\) với cạnh \(AB\) thay góc đường–mặt.
+
+        **Vì sao sai:** Cần chân vuông góc \(O\), hình chiếu đường \(SA\) là \(AO\). Chỉ \(SO\perp(ABCD)\) nên \(SO\) mới là khoảng cách từ \(S\) đến đáy.
+
+        **Tự sửa:** Ôn §1.6 và Ví dụ 3.9, dựng đúng tam giác \(SAO\), sau đó luyện `THPT-G11-CHVII-CHVII-C01` tại <a href="../luyen-tap/?item=THPT-G11-CHVII-CHVII-C01">Core Chương VII</a> trước khi xem lời giải.
+
     **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vii/">Tự luận Chương VII</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 27 (trang in 61–63).</p>
@@ -1352,7 +1399,7 @@ Bản Temp này chỉ là bản sao cho NotebookLM. Sửa học liệu tại đ�
 
 ---
 
-## AUTHOR Q18 RECEIPT BEGIN · bece92ae1a42dced551c1f420d5dff5803985f4a
+## AUTHOR Q18 RECEIPT BEGIN · 027a6f782a57694144f9cb62511ba01c6165ad04
 
 # G11 SGK Chapter VII B22–B27 · R04 signed current Q18 academic/PED author receipt
 
@@ -1364,12 +1411,12 @@ AUTHOR_SELF_QA_RECEIPT: SIGNED_ON_CURRENT_G11_CHVII_B22_B27_R04_SOURCE_SHA
 LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHVII_B22_B27_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-SOURCE_BLOB: 6e13b237c2c31c79e5d9ed18170fe7b3783a38d7
+SOURCE_BLOB: c3b4ccabd2701999fe3a59350214bc1b2d668e07
 S1_RECEIPT: OWNER_ORIGINAL_SGK_SBT_TOAN11_T2_HISTORICAL_DIRECT_IMAGE_20261102_NO_NEW_FRESH_PDF_PAGE_SCAN
-OUTCOME_AUDIT: 33_REGISTERED_32_LESSON_PLUS_ONE_INTEGRATED_95_UNIQUE_TEACHING_IDS
-MATH_VERIFICATION: 40_CURRENT_REASONED_WORKED_GEOMETRY_EXAMPLES_SGKSCOPE_REAL_CONDITIONS_AND_EXISTING_72_HISTORICAL_PRE_R04_NUMERIC_PROBES_NOT_REISSUED
-PED_VERIFICATION: 6_ORDERED_GOLDEN_LESSONS_32_FIRST_TRY_32_HIDDEN_COMPARISONS_32_LOCAL_D6_6_ORIGINAL_SVG
-CANONICAL_Q15: 95_UNIQUE_51_ORIGINAL_CP_APPLICATION_12_ORIGINAL_WRITTEN_32_UNSCORED_FIRST_TRY
+OUTCOME_AUDIT: 33_REGISTERED_32_LESSON_PLUS_ONE_INTEGRATED_96_UNIQUE_TEACHING_IDS
+MATH_VERIFICATION: 41_REASONED_WORKED_GEOMETRY_EXAMPLES_PLUS_CURRENT_B27_SQUARE_RECTANGLE_DISTANCE_ANGLE_VOLUME_CHECK_PRIOR_72_PROBES_HISTORICAL_ONLY
+PED_VERIFICATION: 6_ORDERED_GOLDEN_LESSONS_33_FIRST_TRY_33_HIDDEN_COMPARISONS_33_LOCAL_D6_6_ORIGINAL_SVG
+CANONICAL_Q15: 96_UNIQUE_51_ORIGINAL_CP_APPLICATION_12_ORIGINAL_WRITTEN_33_UNSCORED_FIRST_TRY
 ASSESSMENT_Q16: 33_PRIVATE_RD1_OWNER_HELD_18_PUBLIC_REPLAY_NOT_OFFICIAL_READINESS_NO_MASTERY
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
@@ -1386,7 +1433,7 @@ RELEASE_AUTHORIZATION: NO
 
 ## S1 original source and exact latest student SHA
 
-One canonical source bundle `6e13b237c2c31c79e5d9ed18170fe7b3783a38d7` inventories 17 existing components, including original B22–B27 six learner Git blobs `bb0944b4fa0070cd0ba44416e88fccdec56693c3`, `49cf644456389157373f885e018d16cd21a72342`, `74fbd5720f37f110cd2dd04676425f06b2e0c015`, `f941b4edfc4be2a2047084430244b0d4ec4df5b1`, `dec9b2f748dfe39b09c4e7cb9d8ef348a29dcd19`, `ea25f68bf00549c663130e5ea991089db1f144bd`, original 51 C/P/Application frozen JS `4d656f2b8d952a2ad0be1c4298d065e0b8c95c88`, original 12 Written with /4 rubric `ef20f074dcd3972877f852c2bb075f6aa5362b9a`, six original SVG and chapter hub/end. Historical original SGK KNTT Toán 11 T2 114 pages SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, printed B22 27–30/B23 31–37/B24 38–43/B25 44–53/B26 54–60/B27 61–63; original SBT 126 pages SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`, printed B22 24–25/B23 26–28/B24 29–30/B25 31–34/B26 35–37/B27 38–40, solutions 86–102. Historical owner direct original PDF screenshot receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md`; no new original publisher final-print image scan on R04. Old R01 independent Academic/PED PASS uses historical v2.0 permanent sources and original `afc8ec03...` source, not current Delta-C R04. No false current NotebookLM independent PASS.
+One canonical source bundle `c3b4ccabd2701999fe3a59350214bc1b2d668e07` inventories 17 existing components, including original B22–B27 six learner Git blobs `bb0944b4fa0070cd0ba44416e88fccdec56693c3`, `49cf644456389157373f885e018d16cd21a72342`, `74fbd5720f37f110cd2dd04676425f06b2e0c015`, `f941b4edfc4be2a2047084430244b0d4ec4df5b1`, `dec9b2f748dfe39b09c4e7cb9d8ef348a29dcd19`, `e06bddefac10f1c4b380d624c1143d5635c73aa5`, original 51 C/P/Application frozen JS `4d656f2b8d952a2ad0be1c4298d065e0b8c95c88`, original 12 Written with /4 rubric `ef20f074dcd3972877f852c2bb075f6aa5362b9a`, six original SVG and chapter hub/end. Historical original SGK KNTT Toán 11 T2 114 pages SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, printed B22 27–30/B23 31–37/B24 38–43/B25 44–53/B26 54–60/B27 61–63; original SBT 126 pages SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`, printed B22 24–25/B23 26–28/B24 29–30/B25 31–34/B26 35–37/B27 38–40, solutions 86–102. Historical owner direct original PDF screenshot receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md`; no new original publisher final-print image scan on R04. Old R01 independent Academic/PED PASS uses historical v2.0 permanent sources and original `afc8ec03...` source, not current Delta-C R04. No false current NotebookLM independent PASS.
 
 ## Per-lesson current mathematical pedagogical and self-check audit
 
@@ -1404,9 +1451,9 @@ One canonical source bundle `6e13b237c2c31c79e5d9ed18170fe7b3783a38d7` inventori
 
 **Executed current-source QA** 6/6 Golden four-tab lessons, 32 unique FirstTry, 32 hidden comparisons each indented within `??? question`, 32 local targeted HELP and 24 original general HELP (56 total source HELP markers), 40 distinct worked IDs, six original figure references, one SGK footer each, balanced MathJax delimiters, no raw exposed display math, no false local Knowledge sections, 74 identical-link/target relative Markdown anchors rewritten to semantic HTML (11+12+12+14+13+12). Prior candidate 126 structural and 72 numeric checks applied to previous candidate SHA and are not claimed rerun after these narrowly scoped R04 presentation/math-method clarity changes. No browser AP, actual MathJax raster or independent official readiness simulated.
 
-## ITEM_OUTCOME_ROLE_MATRIX — exact 95 unique student teaching items
+## ITEM_OUTCOME_ROLE_MATRIX — exact 96 unique student teaching items
 
-Original 63 `PUBLIC_ITEM_IDS` frozen: 51 original C/P/Application in original JS plus 12 Written/Anchor in original shared library. Added 32 author Knowledge unscored TRY IDs; total **95 unique canonical teaching question IDs**, one source stem and answer each. All map to 33 original outcomes. 40 worked example annotation IDs are distinct instructional examples, not multiplied as Q15 public assessment items.
+Original 63 `PUBLIC_ITEM_IDS` frozen: 51 original C/P/Application in original JS plus 12 Written/Anchor in original shared library. Added 33 author Knowledge unscored TRY IDs; total **96 unique source-owned pedagogical teaching IDs**, one source stem and answer each. All map to 33 original outcomes. 40 worked example annotation IDs are distinct instructional examples, not multiplied as Q15 public assessment items.
 
 | ITEM_ID | OUTCOME_ID | PLACEMENT | ROLE |
 |---|---|---|---|
@@ -1505,6 +1552,7 @@ Original 63 `PUBLIC_ITEM_IDS` frozen: 51 original C/P/Application in original JS
 | THPT-G11-B27-TRY03 | G11-B27-BOX_VOLUME | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 | THPT-G11-B27-TRY04 | G11-B27-FRUSTUM_VOLUME | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 | THPT-G11-B27-TRY05 | G11-B27-VOLUME_APPLICATION | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
+| THPT-G11-B27-TRY06 | G11-CHVII-INTEGRATED | SGK_KNOWLEDGE | UNSCORED_FIRST_TRY |
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
@@ -1513,31 +1561,40 @@ One normative standard `SLM-THPT-QUALITY-ONE v3.2.0` in `prototypes/thpt/THPT_UN
 | Criterion | Current author academic and PED source verdict | Actual evidence / known limitation |
 |---|---|---|
 | Q01 | AUTHOR_SELF_VERIFIED | Correct KNTT Toán 11 Tập Hai chapter VII B22–B27 original owner historical SGK/SBT printed page-image scans and SHA. Primary content from historic source, current final print-image not rescanned this turn |
-| Q02 | AUTHOR_SELF_VERIFIED | 33 original outcomes; B22 4, B23 5, B24 5, B25 7, B26 6, B27 5 plus one integrated, covered by conceptual Knowledge, 95 mapped teaching IDs and full original frozen bank |
+| Q02 | AUTHOR_SELF_VERIFIED | 33 original registered outcomes have canonical original public coverage and 96 distinct teaching items; integrated original C01 preserved and new B27 TRY06 provides a true independent pre-Core skill-transfer attempt for that outcome. |
 | Q03 | AUTHOR_SELF_VERIFIED | Geometry definitions and necessary/sufficient conditions stated: angle between skew lines, 2 intersecting plane lines, perpendicular projection, plane/dihedral angles, skew distances, volume formulas |
-| Q04 | AUTHOR_SELF_VERIFIED | 40 current worked examples individually marked with task, chosen geometry method, proof/solution and check; source learning example counts 5+5+6+8+8+8 |
-| Q05 | AUTHOR_SELF_VERIFIED | 51 original source-locked Core/Practice/Application items in single frozen original JS; no changed stem/answer/solution, practice/application outcomes actually mapped |
+| Q04 | AUTHOR_SELF_VERIFIED | 41 source-owned reasoned worked examples (B22 5/B23 5/B24 6/B25 8/B26 8/B27 9), including new B27 EX3.9 solving orthogonal projection, point-plane distance, line-plane angle and pyramid volume. |
+| Q05 | AUTHOR_SELF_VERIFIED | 51 unchanged original C/P/Application +12 unchanged Written; one new concept-first B27 integrated FirstTry supports old integrated Core with real cross-concept practice, not one relabelled canonical item. |
 | Q06 | AUTHOR_SELF_VERIFIED | 12 original shared Written/Anchor questions with explicit /4 rubric, one original library unmodified and Anchor only a role label |
 | Q07 | AUTHOR_SELF_VERIFIED | 6 original SHA-locked SVGs show angle/skew, planes, projections, dihedral, shortest distances and volume; each original lesson adds reading cue rather than only decorative figure |
-| Q08 | AUTHOR_SELF_VERIFIED | 32 local cause-specific FirstTry Kiểm lỗi and original 24? general HELP counted 56 total; D6 returns to original bank rather than fabricating scoring or replacing explanation |
+| Q08 | AUTHOR_SELF_VERIFIED | 33 local FirstTry with exact hidden answers and targeted cause-specific D6 plus original 24 general HELP; B27 TRY06 links to original integrated C01 only after self-attempt. |
 | Q09 | AUTHOR_SELF_VERIFIED | Every lesson explains why geometry needs directional angles, perpendicular proofs, projection, wall planes, minimum distance and volume before formulas |
 | Q10 | AUTHOR_SELF_VERIFIED | Each outcome recalls plane geometry (Pythagoras, sine/cosine) and previous parallel lines/planes, distinguishing assumed versus proven perpendicular conditions |
 | Q11 | AUTHOR_SELF_VERIFIED | Geometric construction proof precedes static formula: common direction to measure skew angle, two intersecting lines for perpendicular plane, orthogonal projection and 1/3 pyramid volume |
 | Q12 | AUTHOR_SELF_VERIFIED | SVG figure captions teach what points/angles/planes signify, warn against interpreting perspective drawings as proofs and distinguish projection degeneration |
-| Q13 | AUTHOR_SELF_VERIFIED | Method selection checks noncollinear/truly intersecting lines, exact perpendicularity hypotheses, zero projection case, near/far distance and true perpendicular height not oblique side |
-| Q14 | AUTHOR_SELF_VERIFIED | 32 FirstTry before frozen Core with 32 voluntary hidden comparisons and matching 32 cause-specific D6 repairs; no revealed answer in source indentation audit |
-| Q15 | AUTHOR_SELF_VERIFIED | 95 unique teaching item IDs = 51 original Core/Practice/Application + 12 original Written +32 new source-owned unscored FirstTry, no duplicated original stem/answer |
+| Q13 | AUTHOR_SELF_VERIFIED | New B27 integrated example conditions: SA oblique is not true height; SO perpendicular plane, AO orthogonal projection of SA. Square a=6, OA=3√2, SA=√34 => SO=4, V=48 cm³; rectangular 8×6, OA=5, SA=13=>SO=12, V=192 cm³. Both tan angle ratios checked. |
+| Q14 | AUTHOR_SELF_VERIFIED | 33 separate Knowledge FirstTry preceding Core, all voluntary opt-in hidden comparison and cause-specific D6; integrated 33rd outcome now also has own pre-Core TRY06, not only original Core C01. |
+| Q15 | AUTHOR_SELF_VERIFIED | 96 unique source-owned teaching IDs: unchanged 51 original C/P/Application and 12 Written, plus 33 distinct unscored FirstTry including original-learner-only B27 TRY06. 33 original outcomes mapped, one question/one item_id. |
 | Q16 | AUTHOR_SELF_VERIFIED | 33 original owner-held private RD1 off public GitHub; 18 publicly exposed chapter replay only CLIENT_SELF_CHECK_NO_MASTERY and not independent Readiness |
 | Q17 | AUTHOR_SELF_VERIFIED | Complete independent SGK journey six Knowledge lessons plus original Core/Written/public final replay; Topic is a separate complete journey and no new Topic Core introduced |
-| Q18 | AUTHOR_SELF_VERIFIED | 17 exact component path/Git blob inventory, fresh author-signed current Q18 and one V2 SHA receipt, historical R01 independent PASS remains tied to old SHA, no new independent reviewer claim |
+| Q18 | AUTHOR_SELF_VERIFIED | Seventeen current original component paths/blob locks updated solely for B27 learner Delta C, source manifest and signed author Q18 current SHA; historic independent R01 snapshot remains immutable. |
 
 ## Q16 private RD1 and exact author source signature
 
 Original 33 private held-out RD1 items, answers and rubrics owner-held OFF GitHub, never in any Temp_ review copy. Original 18 public end replay items exposed prior to independent chapter readiness, hence `CLIENT_SELF_CHECK_NO_MASTERY`, no Mastery or official Readiness attribution. No original 51 public question keys, 12 original Written/rubrics, shared Golden runtime, Auth/Firebase/student data touched.
 
-AUTHOR_SIGNOFF: Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_CURRENT_BLOB_6e13b237c2c31c79e5d9ed18170fe7b3783a38d7
+AUTHOR_SIGNOFF: Q01_Q18_A1_A7_AUTHOR_SELF_VERIFIED_CURRENT_BLOB_c3b4ccabd2701999fe3a59350214bc1b2d668e07
 P0_P1_AUTHORING: 0_0_IN_SCOPE
 SOURCE_STATE: AUTHORING_PASS_ELIGIBLE_FOR_SINGLE_V2_READY_REGISTER
 RELEASE_STATE: NOT_AUTHORIZED_NOT_DEPLOYED
+
+## SCOPED_33RD_OUTCOME_INTEGRATED_FIRSTTRY_DELTA_C_20261122
+
+The integrated outcome `G11-CHVII-INTEGRATED` already had one genuine original public Core item `THPT-G11-CHVII-CHVII-C01` (height-vs-slant error); **no source-local voluntary FirstTry on this outcome appeared in the previous 95-item matrix**. Per-outcome Q14/PED6 depth is strengthened without creating or modifying another public Core/Written/question bank. The new Knowledge item is distinct and more demanding than old Core.
+
+- Current B27 one original canonical student source `docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md` Git blob `e06bddefac10f1c4b380d624c1143d5635c73aa5` contains 6 Knowledge first tries (including new `THPT-G11-B27-TRY06` → `G11-CHVII-INTEGRATED`) each with opt-in `Đối chiếu` and local D6. New integrated WHY §1.6 and HELP B27-TRY06 use B23 perpendicular to plane, B24 line-plane angle via orthogonal projection, B26 point-plane distance and B27 pyramid volume. Original B27 five try stems/keys untouched.
+- Independent rigorous current math: square ABCD side 6, O centre, SO perpendicular base, SA=√34, OA=3√2, SO=√(34−18)=4, angle(SA,base)=angle SAO with tan 4/(3√2), base 36 cm², pyramid V=48 cm³. Distinct new worked EX-G11-B27-R04-INTEGRATED uses rectangular 8×6, OA=5, SA=13, SO=12, tan angle=12/5 and V=(8×6)×12/3=192 cm³. Nonzero orthogonal projection AO condition, true perpendicular height and cm/cm²/cm³ consistent.
+- Source counts: 6 Golden four-tab learners, 33/33 outcomes with public canonical and 33/33 outcomes now also covered by own pre-Core FirstTry; 51 JS original C/P/Application and 12 original Written/Anchor unchanged (63 canonical public), one distinct new unscored TRY added (33 total), hence 96 source-owned unique item IDs/placements; original 40 worked annotations untouched plus new 41st. Six old SVG unchanged; 33 owner-private RD1 OFF public GitHub, original 18-item exposed END CLIENT_SELF_CHECK_NO_MASTERY only.
+- This is scoped DELTA_C_ACADEMIC_MATERIAL to current B27 learner only, current author self-Q18 v3.2.0 signoff. Independent reviewer R01 source/receipt unchanged; historical 72 numeric probes belong old source snapshot, no new generalized stress-run or current PDF primary visual rescan claimed. RELEASE AP/R/Final Submit/Q16 browser, owner permission not passed.
 
 ## AUTHOR Q18 RECEIPT END
