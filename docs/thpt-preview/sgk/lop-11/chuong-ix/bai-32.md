@@ -22,7 +22,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không quên hệ số 4. [Luyện lại B32-C01](../luyen-tap/?item=THPT-G11-CHIX-B32-C01)
+        **Vì sao dễ sai:** Đạo hàm lũy thừa cần nhân số mũ cũ trước khi giảm số mũ.
+
+        **Tự sửa:** Không quên hệ số 4. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C01">Luyện lại B32-C01</a>
 
     ### 1.2. Căn bậc hai
     
@@ -40,7 +42,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Miền có đạo hàm khác miền xác định. [Luyện lại B32-C02](../luyen-tap/?item=THPT-G11-CHIX-B32-C02)
+        **Vì sao dễ sai:** Hàm căn xác định cả ở điểm biên nhưng đạo hàm hữu hạn hai phía không nhất thiết tồn tại ở điểm đó.
+
+        **Tự sửa:** Miền có đạo hàm khác miền xác định. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C02">Luyện lại B32-C02</a>
 
     ### 1.3. Tổng, hiệu và nhân hằng số
     
@@ -58,7 +62,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đạo hàm của −5 bằng 0. [Luyện lại B32-C03](../luyen-tap/?item=THPT-G11-CHIX-B32-C03)
+        **Vì sao dễ sai:** Hằng số không biến thiên khi x đổi nên đạo hàm của nó bằng 0.
+
+        **Tự sửa:** Đạo hàm của −5 bằng 0. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C03">Luyện lại B32-C03</a>
 
     ### 1.4. Tích của hai hàm
     
@@ -78,7 +84,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Nếu chỉ nhân hai đạo hàm sẽ bỏ mất hai phần biến thiên. [Luyện lại B32-C04](../luyen-tap/?item=THPT-G11-CHIX-B32-C04)
+        **Vì sao dễ sai:** Quy tắc tích có hai số hạng vì cả hai thừa số đều biến đổi, không phải tích hai đạo hàm.
+
+        **Tự sửa:** Nếu chỉ nhân hai đạo hàm sẽ bỏ mất hai phần biến thiên. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C04">Luyện lại B32-C04</a>
 
     ### 1.5. Thương và mẫu số
     
@@ -96,7 +104,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Giữ điều kiện mẫu khác 0 từ biểu thức gốc. [Luyện lại B32-C05](../luyen-tap/?item=THPT-G11-CHIX-B32-C05)
+        **Vì sao dễ sai:** Quy tắc thương có mẫu bình phương, trừ đúng thứ tự và loại điểm mẫu gốc bằng 0.
+
+        **Tự sửa:** Giữ điều kiện mẫu khác 0 từ biểu thức gốc. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C05">Luyện lại B32-C05</a>
 
     ### 1.6. Hàm hợp
     
@@ -116,7 +126,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Viết u′ trước khi thay vào công thức. [Luyện lại B32-C06](../luyen-tap/?item=THPT-G11-CHIX-B32-C06)
+        **Vì sao dễ sai:** Hàm hợp đòi nhân đạo hàm của biểu thức bên trong; thiếu nhân tử đó là sai tốc độ biến thiên.
+
+        **Tự sửa:** Viết u′ trước khi thay vào công thức. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C06">Luyện lại B32-C06</a>
 
     ### 1.7. Sin và cos
     
@@ -134,7 +146,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm dấu trừ ở cos. [Luyện lại B32-C07](../luyen-tap/?item=THPT-G11-CHIX-B32-C07)
+        **Vì sao dễ sai:** Đạo hàm của cos mang dấu âm, không thể dùng cùng quy tắc dấu như sin.
+
+        **Tự sửa:** Kiểm dấu trừ ở cos. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C07">Luyện lại B32-C07</a>
 
     ### 1.8. Tan và cot
     
@@ -152,7 +166,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không dùng tại các điểm mẫu gốc bằng 0. [Luyện lại B32-C08](../luyen-tap/?item=THPT-G11-CHIX-B32-C08)
+        **Vì sao dễ sai:** Tan hoặc cot không xác định tại nghiệm mẫu cos hoặc sin bằng 0; không kéo dài miền đạo hàm.
+
+        **Tự sửa:** Không dùng tại các điểm mẫu gốc bằng 0. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C08">Luyện lại B32-C08</a>
 
     ### 1.9. Lượng giác hợp
     
@@ -170,7 +186,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không bỏ hệ số 7. [Luyện lại B32-C09](../luyen-tap/?item=THPT-G11-CHIX-B32-C09)
+        **Vì sao dễ sai:** Biểu thức lượng giác hợp cần nhân đạo hàm đối số trong, không chỉ đạo hàm sin/cos ngoài.
+
+        **Tự sửa:** Không bỏ hệ số 7. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C09">Luyện lại B32-C09</a>
 
     ### 1.10. Hàm mũ
     
@@ -188,7 +206,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Giữ ln7, không chỉ viết $7^{x-1}$. [Luyện lại B32-C10](../luyen-tap/?item=THPT-G11-CHIX-B32-C10)
+        **Vì sao dễ sai:** Với a^u phải có cả ln(a) và u'; chỉ cơ số e mới có ln(e)=1.
+
+        **Tự sửa:** Giữ ln7, không chỉ viết $7^{x-1}$. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C10">Luyện lại B32-C10</a>
 
     ### 1.11. Logarit và trị tuyệt đối
     
@@ -206,7 +226,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không đồng nhất miền ln x và ln|x|. [Luyện lại B32-C11](../luyen-tap/?item=THPT-G11-CHIX-B32-C11)
+        **Vì sao dễ sai:** ln|u| cho phép u âm nhưng luôn phải loại u=0, khác hẳn ln u.
+
+        **Tự sửa:** Không đồng nhất miền ln x và ln|x|. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C11">Luyện lại B32-C11</a>
 
     ### 1.12. Mũ và logarit hợp
     
@@ -224,7 +246,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Mỗi thành phần có đạo hàm hàm trong riêng. [Luyện lại B32-C12](../luyen-tap/?item=THPT-G11-CHIX-B32-C12)
+        **Vì sao dễ sai:** Mỗi lớp mũ và logarit hợp có một đạo hàm bên trong riêng, không bỏ hệ số chuỗi.
+
+        **Tự sửa:** Mỗi thành phần có đạo hàm hàm trong riêng. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C12">Luyện lại B32-C12</a>
 
     ### 1.13. Kiểm miền của đạo hàm
     
@@ -242,7 +266,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm dấu của biểu thức dưới căn, không chỉ khác 0. [Luyện lại B32-C13](../luyen-tap/?item=THPT-G11-CHIX-B32-C13)
+        **Vì sao dễ sai:** Đạo hàm tại biên căn có thể không hữu hạn; miền khả vi cần chặt hơn miền xác định.
+
+        **Tự sửa:** Kiểm dấu của biểu thức dưới căn, không chỉ khác 0. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C13">Luyện lại B32-C13</a>
 
     ### 1.14. Chọn phép toán ngoài cùng
     
@@ -260,7 +286,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Hai số hạng của tích, cos hợp có dấu âm. [Luyện lại B32-C14](../luyen-tap/?item=THPT-G11-CHIX-B32-C14)
+        **Vì sao dễ sai:** Chọn phép toán ngoài cùng trước rồi đạo hàm từng thành phần theo tích/thương/hợp.
+
+        **Tự sửa:** Hai số hạng của tích, cos hợp có dấu âm. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C14">Luyện lại B32-C14</a>
 
     ### 1.15. Vận tốc và giới hạn mô hình
     
@@ -278,7 +306,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Phân biệt vận tốc v và tốc độ |v|; góc tính radian. [Luyện lại B32-C15](../luyen-tap/?item=THPT-G11-CHIX-B32-C15)
+        **Vì sao dễ sai:** Tốc độ là |v|, vận tốc v có dấu; công thức đạo hàm lượng giác dùng radian.
+
+        **Tự sửa:** Phân biệt vận tốc v và tốc độ |v|; góc tính radian. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C15">Luyện lại B32-C15</a>
 
     ### 1.16. Áp dụng logarit trong mô hình pH
     
@@ -296,7 +326,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Giữ dấu âm và hệ số ln10; phân biệt độ nhạy với giá trị pH. [Luyện lại B32-P11](../luyen-tap/?item=THPT-G11-CHIX-B32-P11)
+        **Vì sao dễ sai:** Độ nhạy của mô hình pH là đạo hàm theo nồng độ, có dấu âm và ln 10 ở mẫu, không phải giá trị pH.
+
+        **Tự sửa:** Giữ dấu âm và hệ số ln10; phân biệt độ nhạy với giá trị pH. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P11">Luyện lại B32-P11</a>
 
     ### 1.17. Tìm thời điểm từ mô hình
     
@@ -314,7 +346,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Chọn nghiệm khác 0 và không dùng thời gian ngoài khoảng mô hình. [Luyện lại B32-C15](../luyen-tap/?item=THPT-G11-CHIX-B32-C15)
+        **Vì sao dễ sai:** Phải tìm thời điểm thuộc khoảng chuyển động trước khi tính vận tốc; không dùng nghiệm âm hay thời gian sau va chạm.
+
+        **Tự sửa:** Chọn nghiệm khác 0 và không dùng thời gian ngoài khoảng mô hình. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-C15">Luyện lại B32-C15</a>
 
 === "Kiến thức SGK"
 
@@ -450,32 +484,32 @@
     
     ??? tip "4.1. Nhân hai đạo hàm thay cho đạo hàm tích"
     
-        Với $x\cdot x^3$, tính theo tích được $x^3+3x^3=4x^3$; khai triển $x^4$ để kiểm. [Luyện lại B32-P04](../luyen-tap/?item=THPT-G11-CHIX-B32-P04)
+        Với $x\cdot x^3$, tính theo tích được $x^3+3x^3=4x^3$; khai triển $x^4$ để kiểm. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P04">Luyện lại B32-P04</a>
 
     <span data-thpt-help-id="HELP-G11-CHIX-B32-02" hidden></span>
     
     ??? tip "4.2. Quên đạo hàm hàm trong"
     
-        Đặt $u=5x+1$; $(u^3)'=3u^2u'=15(5x+1)^2$. [Luyện lại B32-P06](../luyen-tap/?item=THPT-G11-CHIX-B32-P06)
+        Đặt $u=5x+1$; $(u^3)'=3u^2u'=15(5x+1)^2$. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P06">Luyện lại B32-P06</a>
 
     <span data-thpt-help-id="HELP-G11-CHIX-B32-03" hidden></span>
     
     ??? tip "4.3. Quên miền logarit hoặc căn"
     
-        $\ln(x-4)$ chỉ tồn tại khi x>4; ở x=1 không thể đạo hàm hàm này. [Luyện lại B32-P13](../luyen-tap/?item=THPT-G11-CHIX-B32-P13)
+        $\ln(x-4)$ chỉ tồn tại khi x>4; ở x=1 không thể đạo hàm hàm này. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P13">Luyện lại B32-P13</a>
 
     <span data-thpt-help-id="HELP-G11-CHIX-B32-04" hidden></span>
     
     ??? tip "4.4. Bỏ dấu trừ cos hoặc cot"
     
-        $(\cos2x)'=-2\sin2x$; viết quy tắc cơ bản trước khi nhân hàm trong. [Luyện lại B32-P09](../luyen-tap/?item=THPT-G11-CHIX-B32-P09)
+        $(\cos2x)'=-2\sin2x$; viết quy tắc cơ bản trước khi nhân hàm trong. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P09">Luyện lại B32-P09</a>
 
     <span data-thpt-help-id="HELP-G11-CHIX-B32-05" hidden></span>
     
     ??? tip "4.5. Đảo tử quy tắc thương"
     
-        $(x/(x+3))'=3/(x+3)^2$ với x≠−3; giữ ngoặc khi trừ. [Luyện lại B32-P05](../luyen-tap/?item=THPT-G11-CHIX-B32-P05)
+        $(x/(x+3))'=3/(x+3)^2$ với x≠−3; giữ ngoặc khi trừ. <a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P05">Luyện lại B32-P05</a>
 
-    [Core và Luyện tập Bài 32](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập Bài 32</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-ix/">Tự luận Chương IX</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>.
 
-*Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 32, trang in 88–94.*
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 32 (trang in 88–94). SBT cùng bộ hỗ trợ luyện tập; SGK S1 quyết định kiến thức chính thức.</p>
