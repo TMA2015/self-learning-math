@@ -18,7 +18,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Đưa về cơ số 2: \(2^{2x-4}=2^5\). Vì \(2>1\), hai số mũ bằng nhau: \(2x-4=5\), suy ra \(x=9/2\). Thế lại \(4^{5/2}=32\).
+        **Lời giải:** Đưa về cơ số 2: \(2^{2x-4}=2^5\). Vì \(2\gt 1\), hai số mũ bằng nhau: \(2x-4=5\), suy ra \(x=9/2\). Thế lại \(4^{5/2}=32\).
 
     <span data-thpt-help-id="HELP-G11-B21-TRY01" hidden></span>
 
@@ -30,7 +30,7 @@
 
     ### 1.2. Phương trình lôgarit: điều kiện rồi đổi về lũy thừa
 
-    \(\log_a U(x)=b\) có nghĩa khi \(a>0,a\ne1,U(x)>0\). Từ định nghĩa, điều đó tương đương \(U(x)=a^b\); giá trị a^b dương, nhưng vẫn phải kiểm miền của mọi biểu thức ban đầu.
+    \(\log_a U(x)=b\) có nghĩa khi \(a\gt 0,a\ne1,U(x)\gt 0\). Từ định nghĩa, điều đó tương đương \(U(x)=a^b\); giá trị a^b dương, nhưng vẫn phải kiểm miền của mọi biểu thức ban đầu.
 
     **Vận dụng — Tự thử trước Core.** Giải \(\log_5(2x+3)=-1\), kèm điều kiện xác định.
 
@@ -38,7 +38,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Điều kiện \(x>-3/2\). Đổi về lũy thừa: \(2x+3=1/5\), suy ra \(2x=-14/5\), \(x=-7/5\). Nghiệm thỏa điều kiện vì \(2x+3=1/5>0\).
+        **Lời giải:** Điều kiện \(x\gt -3/2\). Đổi về lũy thừa: \(2x+3=1/5\), suy ra \(2x=-14/5\), \(x=-7/5\). Nghiệm thỏa điều kiện vì \(2x+3=1/5\gt 0\).
 
     <span data-thpt-help-id="HELP-G11-B21-TRY02" hidden></span>
 
@@ -70,7 +70,7 @@
 
     ### 1.4. Bất phương trình lôgarit: kết hợp miền và chiều
 
-    Với cơ số \(0<a<1\), \(\log_a U>\log_a V\) khi \(0<U<V\). Việc đảo chiều chỉ do hàm nghịch biến; tính dương của cả hai đối số vẫn là điều kiện bắt buộc.
+    Với cơ số \(0\lt a\lt 1\), \(\log_a U\gt \log_a V\) khi \(0\lt U\lt V\). Việc đảo chiều chỉ do hàm nghịch biến; tính dương của cả hai đối số vẫn là điều kiện bắt buộc.
 
     **Vận dụng — Tự thử trước Core.** Giải \(\log_{1/5}(3-x)\ge\log_{1/5}2\).
 
@@ -78,7 +78,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Điều kiện \(x<3\). Cơ số \(1/5<1\) nên \(3-x\le2\), tương đương \(x\ge1\). Giao điều kiện: \(x\in[1,3)\). Tại x=3, đối số bằng 0 nên bị loại.
+        **Lời giải:** Điều kiện \(x\lt 3\). Cơ số \(1/5\lt 1\) nên \(3-x\le2\), tương đương \(x\ge1\). Giao điều kiện: \(x\in[1,3)\). Tại x=3, đối số bằng 0 nên bị loại.
 
     <span data-thpt-help-id="HELP-G11-B21-TRY04" hidden></span>
 
@@ -98,7 +98,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Trường hợp đầu: \(1<x<5\), phương trình tương đương \(x-1=5-x\) nên \(x=3\), hợp lệ. Trường hợp sau cần \(x>1\) đồng thời \(x<1\), không có x, nên vô nghiệm trước khi biến đổi đại số.
+        **Lời giải:** Trường hợp đầu: \(1\lt x\lt 5\), phương trình tương đương \(x-1=5-x\) nên \(x=3\), hợp lệ. Trường hợp sau cần \(x\gt 1\) đồng thời \(x\lt 1\), không có x, nên vô nghiệm trước khi biến đổi đại số.
 
     <span data-thpt-help-id="HELP-G11-B21-TRY05" hidden></span>
 
@@ -118,7 +118,7 @@
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** \(50(1{,}2)^n>72\) tương đương \(1{,}2^n>1{,}44=(1{,}2)^2\). Vì cơ số lớn hơn 1, \(n>2\); n nguyên không âm nên năm đầu vượt là \(n=3\). Sau 2 năm chỉ bằng 72 triệu.
+        **Lời giải:** \(50(1{,}2)^n\gt 72\) tương đương \(1{,}2^n\gt 1{,}44=(1{,}2)^2\). Vì cơ số lớn hơn 1, \(n\gt 2\); n nguyên không âm nên năm đầu vượt là \(n=3\). Sau 2 năm chỉ bằng 72 triệu.
 
     <span data-thpt-help-id="HELP-G11-B21-TRY06" hidden></span>
 
@@ -132,9 +132,9 @@
 
     ### 2.1. Phương trình mũ
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Phương trình cơ bản.</strong> \(a^x=b\) với \(a>0,a\ne1\). Nếu \(b>0\), có nghiệm duy nhất \(x=\log_a b\); nếu \(b\le0\), vô nghiệm.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Phương trình cơ bản.</strong> \(a^x=b\) với \(a\gt 0,a\ne1\). Nếu \(b\gt 0\), có nghiệm duy nhất \(x=\log_a b\); nếu \(b\le0\), vô nghiệm.</div>
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Phương pháp đưa về cùng cơ số.</strong> Với \(a>0,a\ne1\),
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Phương pháp đưa về cùng cơ số.</strong> Với \(a\gt 0,a\ne1\),
     \[
     a^{u(x)}=a^{v(x)}\Longleftrightarrow u(x)=v(x)
     \]
@@ -144,39 +144,39 @@
 
     ### 2.2. Phương trình lôgarit
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Phương trình cơ bản.</strong> \(\log_a x=b\), \(a>0,a\ne1,\ b\in\mathbb R\), có nghiệm duy nhất \(x=a^b\), luôn dương.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Phương trình cơ bản.</strong> \(\log_a x=b\), \(a\gt 0,a\ne1,\ b\in\mathbb R\), có nghiệm duy nhất \(x=a^b\), luôn dương.</div>
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Đưa về cùng cơ số.</strong> Với \(u,v>0,\ a>0,a\ne1\), \(\log_a u=\log_a v\) tương đương \(u=v\).</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Đưa về cùng cơ số.</strong> Với \(u,v\gt 0,\ a\gt 0,a\ne1\), \(\log_a u=\log_a v\) tương đương \(u=v\).</div>
     
-    **Quy trình:** tìm miền dương của từng đối số, sau đó biến đổi về dạng cơ bản bằng quy tắc logarit có điều kiện. Giải đại số và giao với miền gốc; thế lại nếu biến đổi có thể sinh nghiệm ngoại lai. Với \(\log_a u+\log_a v\), chỉ gộp thành logarit của tích trên miền \(u>0,v>0\).
+    **Quy trình:** tìm miền dương của từng đối số, sau đó biến đổi về dạng cơ bản bằng quy tắc logarit có điều kiện. Giải đại số và giao với miền gốc; thế lại nếu biến đổi có thể sinh nghiệm ngoại lai. Với \(\log_a u+\log_a v\), chỉ gộp thành logarit của tích trên miền \(u\gt 0,v\gt 0\).
 
     ### 2.3. Bất phương trình mũ
 
-    Với \(a>0,a\ne1\), các bất phương trình cơ bản có dạng \(a^x>b,\ a^x\ge b,\ a^x<b,\ a^x\le b\).
+    Với \(a\gt 0,a\ne1\), các bất phương trình cơ bản có dạng \(a^x\gt b,\ a^x\ge b,\ a^x\lt b,\ a^x\le b\).
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất so sánh.</strong> Nếu \(a>1\), \(a^u>a^v\Longleftrightarrow u>v\). Nếu \(0<a<1\), \(a^u>a^v\Longleftrightarrow u<v\). Các dấu \(\ge,<,\le\) được xử lý theo cùng nguyên lý.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất so sánh.</strong> Nếu \(a\gt 1\), \(a^u\gt a^v\Longleftrightarrow u\gt v\). Nếu \(0\lt a\lt 1\), \(a^u\gt a^v\Longleftrightarrow u\lt v\). Các dấu \(\ge,\lt ,\le\) được xử lý theo cùng nguyên lý.</div>
     
-    Nếu \(b>0\), đặt \(k=\log_a b\). Tập nghiệm của bốn dạng cơ bản:
+    Nếu \(b\gt 0\), đặt \(k=\log_a b\). Tập nghiệm của bốn dạng cơ bản:
     
-    | Điều kiện | \(a^x>b\) | \(a^x\ge b\) | \(a^x<b\) | \(a^x\le b\) |
+    | Điều kiện | \(a^x\gt b\) | \(a^x\ge b\) | \(a^x\lt b\) | \(a^x\le b\) |
     | --- | --- | --- | --- | --- |
-    | \(a>1\) | \(x>k\) | \(x\ge k\) | \(x<k\) | \(x\le k\) |
-    | \(0<a<1\) | \(x<k\) | \(x\le k\) | \(x>k\) | \(x\ge k\) |
+    | \(a\gt 1\) | \(x\gt k\) | \(x\ge k\) | \(x\lt k\) | \(x\le k\) |
+    | \(0\lt a\lt 1\) | \(x\lt k\) | \(x\le k\) | \(x\gt k\) | \(x\ge k\) |
     
-    Nếu \(b\le0\), \(a^x>0\) nên hai dạng \(>,\ge\) có nghiệm mọi x thực; hai dạng \(<,\le\) vô nghiệm. Không lấy \(\log_a b\) trong trường hợp này. Với số mũ u(x), tiếp tục xét miền xác định của u.
+    Nếu \(b\le0\), \(a^x\gt 0\) nên hai dạng \(\gt ,\ge\) có nghiệm mọi x thực; hai dạng \(\lt ,\le\) vô nghiệm. Không lấy \(\log_a b\) trong trường hợp này. Với số mũ u(x), tiếp tục xét miền xác định của u.
 
     ### 2.4. Bất phương trình lôgarit
 
-    Mọi bất phương trình \(\log_a x>b,\ge b,<b,\le b\) đều yêu cầu \(a>0,a\ne1,x>0\).
+    Mọi bất phương trình \(\log_a x\gt b,\ge b,\lt b,\le b\) đều yêu cầu \(a\gt 0,a\ne1,x\gt 0\).
     
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Với \(u,v>0\), nếu \(a>1\) thì \(\log_a u>\log_a v\Longleftrightarrow u>v\); nếu \(0<a<1\) thì \(\log_a u>\log_a v\Longleftrightarrow u<v\). Đảo hoặc giữ chiều đồng thời bảo toàn điều kiện dương của các đối số.</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất.</strong> Với \(u,v\gt 0\), nếu \(a\gt 1\) thì \(\log_a u\gt \log_a v\Longleftrightarrow u\gt v\); nếu \(0\lt a\lt 1\) thì \(\log_a u\gt \log_a v\Longleftrightarrow u\lt v\). Đảo hoặc giữ chiều đồng thời bảo toàn điều kiện dương của các đối số.</div>
     
-    Đặt \(k=a^b>0\), ta có:
+    Đặt \(k=a^b\gt 0\), ta có:
     
-    | Điều kiện | \(\log_a x>b\) | \(\log_a x\ge b\) | \(\log_a x<b\) | \(\log_a x\le b\) |
+    | Điều kiện | \(\log_a x\gt b\) | \(\log_a x\ge b\) | \(\log_a x\lt b\) | \(\log_a x\le b\) |
     | --- | --- | --- | --- | --- |
-    | \(a>1\) | \(x>k\) | \(x\ge k\) | \(0<x<k\) | \(0<x\le k\) |
-    | \(0<a<1\) | \(0<x<k\) | \(0<x\le k\) | \(x>k\) | \(x\ge k\) |
+    | \(a\gt 1\) | \(x\gt k\) | \(x\ge k\) | \(0\lt x\lt k\) | \(0\lt x\le k\) |
+    | \(0\lt a\lt 1\) | \(0\lt x\lt k\) | \(0\lt x\le k\) | \(x\gt k\) | \(x\ge k\) |
     
     Với đối số chứa biến, thay x bằng biểu thức và giải cùng điều kiện miền gốc. Với mô hình thực tiễn, thêm điều kiện thời gian, đơn vị, dấu ngưỡng nghiêm ngặt và việc biến thời gian là thực hay nguyên. Không biến kết quả gần đúng thành kết luận nguyên mà chưa kiểm kỳ liền trước.
 
@@ -188,19 +188,19 @@
 
     ### 3.2. Phương trình logarit ghép tích
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(\log_2(x-2)+\log_2(x+1)=2\).</p><p><strong>Phân tích:</strong> Tìm giao điều kiện rồi gộp tích.</p><p><strong>Lời giải:</strong> Điều kiện \(x>2\). Khi đó \((x-2)(x+1)=4\), tức \(x^2-x-6=0\), có \(x=3,-2\). Chỉ \(x=3\) thỏa miền. Tập nghiệm \(\{3\}\).</p><p><strong>Kiểm lại:</strong> Tại 3, đối số 1 và 4 đều dương, tổng logarit bằng 0+2=2.</p></div>
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(\log_2(x-2)+\log_2(x+1)=2\).</p><p><strong>Phân tích:</strong> Tìm giao điều kiện rồi gộp tích.</p><p><strong>Lời giải:</strong> Điều kiện \(x\gt 2\). Khi đó \((x-2)(x+1)=4\), tức \(x^2-x-6=0\), có \(x=3,-2\). Chỉ \(x=3\) thỏa miền. Tập nghiệm \(\{3\}\).</p><p><strong>Kiểm lại:</strong> Tại 3, đối số 1 và 4 đều dương, tổng logarit bằng 0+2=2.</p></div>
 
     ### 3.3. Bất phương trình mũ với vế phải không dương
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(3^{2x+1}\le-2\) và \(3^{2x+1}>-2\).</p><p><strong>Phân tích:</strong> Dùng trực tiếp tính dương; không lấy logarit số âm.</p><p><strong>Lời giải:</strong> Vì \(3^{2x+1}>0\) với mọi x thực, bất phương trình thứ nhất vô nghiệm; bất phương trình thứ hai có tập nghiệm \(\mathbb R\).</p><p><strong>Kiểm lại:</strong> Mọi giá trị đều dương nên luôn lớn hơn -2.</p></div>
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(3^{2x+1}\le-2\) và \(3^{2x+1}\gt -2\).</p><p><strong>Phân tích:</strong> Dùng trực tiếp tính dương; không lấy logarit số âm.</p><p><strong>Lời giải:</strong> Vì \(3^{2x+1}\gt 0\) với mọi x thực, bất phương trình thứ nhất vô nghiệm; bất phương trình thứ hai có tập nghiệm \(\mathbb R\).</p><p><strong>Kiểm lại:</strong> Mọi giá trị đều dương nên luôn lớn hơn -2.</p></div>
 
     ### 3.4. Bất phương trình mũ giảm, có biên
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \((1/4)^{2x-3}<(1/4)^{-1}\).</p><p><strong>Phân tích:</strong> Cơ số trong (0,1) nên đảo chiều khi so số mũ.</p><p><strong>Lời giải:</strong> \(2x-3>-1\) tương đương \(x>1\). Tập nghiệm \((1,+\infty)\).</p><p><strong>Kiểm lại:</strong> Tại x=1 hai vế bằng nhau nên không lấy điểm biên.</p></div>
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \((1/4)^{2x-3}\lt (1/4)^{-1}\).</p><p><strong>Phân tích:</strong> Cơ số trong (0,1) nên đảo chiều khi so số mũ.</p><p><strong>Lời giải:</strong> \(2x-3\gt -1\) tương đương \(x\gt 1\). Tập nghiệm \((1,+\infty)\).</p><p><strong>Kiểm lại:</strong> Tại x=1 hai vế bằng nhau nên không lấy điểm biên.</p></div>
 
     ### 3.5. Bất phương trình lôgarit hai đối số
 
-    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(\log_{1/2}(x+4)<\log_{1/2}(2x-1)\).</p><p><strong>Phân tích:</strong> Hai đối số dương cho x>1/2; hàm giảm đảo chiều.</p><p><strong>Lời giải:</strong> \(x+4>2x-1\), tức \(x<5\). Giao miền được \((1/2,5)\).</p><p><strong>Kiểm lại:</strong> Tại x=1/2, logarit thứ hai không xác định; tại x=5 hai giá trị bằng nhau, cả hai biên đều loại.</p></div>
+    <div class="thpt-g10-example-solution"><p><strong>Đề bài:</strong> Giải \(\log_{1/2}(x+4)\lt \log_{1/2}(2x-1)\).</p><p><strong>Phân tích:</strong> Hai đối số dương cho x>1/2; hàm giảm đảo chiều.</p><p><strong>Lời giải:</strong> \(x+4\gt 2x-1\), tức \(x\lt 5\). Giao miền được \((1/2,5)\).</p><p><strong>Kiểm lại:</strong> Tại x=1/2, logarit thứ hai không xác định; tại x=5 hai giá trị bằng nhau, cả hai biên đều loại.</p></div>
 
     ### 3.6. Mô hình suy giảm giá trị
 
