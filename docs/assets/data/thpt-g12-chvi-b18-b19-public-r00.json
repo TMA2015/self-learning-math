@@ -268,9 +268,9 @@
       "role": "SGK_APPLICATION",
       "source_role": "ORIGINAL_AUTHORED",
       "level": 3,
-      "stem": "Tỉ lệ chuyến tàu đúng giờ là 80%. Trong các chuyến đúng giờ, 90% hành khách kết nối chuyến tiếp theo thành công. Tính xác suất một hành khách rơi vào cả hai tình huống.",
+      "stem": "Chọn ngẫu nhiên một hành khách có hành trình nối hai chuyến tàu. Xác suất chuyến đầu của hành khách đó đúng giờ là 80%; biết chuyến đầu đúng giờ, xác suất hành khách nối chuyến thành công là 90%. Tính xác suất cả hai tình huống xảy ra đối với hành khách được chọn.",
       "answer": "`18/25`.",
-      "solution": "P(đúng giờ∩kết nối)=0,8×0,9=0,72. Xác suất 90% là có điều kiện, không phải tổng thể."
+      "solution": "Cùng một không gian mẫu là hành khách có hành trình nối chuyến. Gọi A là chuyến đầu của người được chọn đúng giờ, B là nối chuyến thành công. P(A∩B)=P(A)P(B|A)=0,8×0,9=0,72=18/25."
     },
     {
       "item_id": "THPT-G12-B18-W06",
@@ -672,8 +672,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Thông tin mới làm thay đổi tập kết quả có thể xảy ra.",
         "(2) Rà tiền đề: Biến cố là tập con của không gian mẫu; mỗi kết quả đồng khả năng có cùng xác suất.",
         "(3) Nhận diện bẫy: Không dùng toàn bộ Ω sau khi đã biết B.",
-        "(4) Xem lại `EX-G12-B18-O01` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B18-C01` trước, sau đó `THPT-G12-B18-P01`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: chọn đều số 1–9, biết số lẻ; lớn hơn 5 có 7,9 trên nhóm 1,3,5,7,9, nên 2/5. Tự làm lại với điều kiện số chẵn: lớn hơn 5 có 6,8 trên 2,4,6,8; đối chiếu 1/2.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B18-C01",
       "practice_item": "THPT-G12-B18-P01"
@@ -686,8 +686,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Đếm thô không còn đủ khi xác suất các kết quả khác nhau.",
         "(2) Rà tiền đề: P(A∩B) là xác suất hai biến cố đồng thời xảy ra; xác suất biến cố >0.",
         "(3) Nhận diện bẫy: Không dùng P(A) làm mẫu số cho P(A|B).",
-        "(4) Xem lại `EX-G12-B18-O02` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B18-C02` trước, sau đó `THPT-G12-B18-P02`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: P(B)=0,4, P(A∩B)=0,1; P(A|B)=1/4. Tự thử nếu giao bằng 0,3: đối chiếu 3/4; kiểm giao ≤ B.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B18-C02",
       "practice_item": "THPT-G12-B18-P02"
@@ -700,8 +700,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Đổi hướng câu hỏi làm thay đổi mẫu số và thường thay đổi đáp án.",
         "(2) Rà tiền đề: Định nghĩa xác suất có điều kiện, bảng giao hai nhóm.",
         "(3) Nhận diện bẫy: P(A|B) không bằng P(B|A) chỉ vì giao là cùng một biến cố.",
-        "(4) Xem lại `EX-G12-B18-O03` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B18-C03` trước, sau đó `THPT-G12-B18-P03`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: 10 người thích X, 16 thích Y, 4 thích cả hai. P(X|Y)=4/16=1/4. Tự tính chiều ngược; đối chiếu 4/10=2/5.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B18-C03",
       "practice_item": "THPT-G12-B18-P03"
@@ -714,8 +714,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Muốn biết thông tin B có làm thay đổi cơ hội xảy ra A hay không.",
         "(2) Rà tiền đề: Độc lập nghĩa là P(A∩B)=P(A)P(B).",
         "(3) Nhận diện bẫy: Xung khắc khác độc lập; không áp dụng P(A|B)=P(A) khi chưa có chứng cứ.",
-        "(4) Xem lại `EX-G12-B18-O04` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B18-C04` trước, sau đó `THPT-G12-B18-P04`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: P(A)=0,2, P(B)=0,5, giao 0,1, nên độc lập. Tự xét nếu giao bằng 0,05: không độc lập vì 0,05 khác tích 0,1.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B18-C04",
       "practice_item": "THPT-G12-B18-P04"
@@ -728,8 +728,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Dữ liệu thống kê thường báo kết quả theo từng nhóm khác kích thước.",
         "(2) Rà tiền đề: Đọc tổng hàng, tổng cột, ô giao trên bảng.",
         "(3) Nhận diện bẫy: Đổi P(Kết quả|Nhóm) thành P(Nhóm|Kết quả) khi đọc bảng 2×2.",
-        "(4) Xem lại `EX-G12-B18-O05` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B18-C05` trước, sau đó `THPT-G12-B18-P05`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: nhóm X có 5 đạt, 5 chưa; nhóm Y có 3 đạt, 7 chưa. P(đạt|X)=5/10. Tự tính P(X|đạt); đối chiếu 5/8.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B18-C05",
       "practice_item": "THPT-G12-B18-P05"
@@ -742,8 +742,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Hai điều kiện xảy ra liên tiếp thường phải nhân xác suất của từng bước.",
         "(2) Rà tiền đề: Công thức xác suất có điều kiện với mẫu số dương.",
         "(3) Nhận diện bẫy: Công thức nhân xác suất có điều kiện không yêu cầu A,B độc lập.",
-        "(4) Xem lại `EX-G12-B18-O06` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B18-C06` trước, sau đó `THPT-G12-B18-P06`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: P(A)=0,5, P(B|A)=0,4, giao 0,2. Tự thử P(A)=0,7, P(B|A)=0,2; đối chiếu giao 0,14.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B18-C06",
       "practice_item": "THPT-G12-B18-P06"
@@ -756,8 +756,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Kết quả lượt đầu làm thay đổi cơ hội của lượt sau.",
         "(2) Rà tiền đề: Tính xác suất theo số lượng và công thức nhân; phân biệt hoàn lại/không hoàn lại.",
         "(3) Nhận diện bẫy: Sau rút không hoàn lại, mẫu số lượt sau giảm 1; không bỏ sót thứ tự khác.",
-        "(4) Xem lại `EX-G12-B18-O07` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B18-C07` trước, sau đó `THPT-G12-B18-P07`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: 2 đỏ, 4 xanh, rút không hoàn lại; P(đỏ rồi xanh)=(2/6)(4/5)=4/15. Tự tính xanh rồi đỏ, cũng 4/15; khác màu 8/15.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B18-C07",
       "practice_item": "THPT-G12-B18-P07"
@@ -770,8 +770,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Khi không biết trước A xảy ra hay không, cần xét đủ mọi đường dẫn đến kết quả.",
         "(2) Rà tiền đề: Biến cố đối; P(Ā)=1−P(A); hợp của biến cố xung khắc.",
         "(3) Nhận diện bẫy: B có thể xảy ra theo hai nguyên nhân khác nhau; không thể chọn chỉ một nhánh.",
-        "(4) Xem lại `EX-G12-B19-O01` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B19-C01` trước, sau đó `THPT-G12-B19-P01`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: P(A)=1/4 thì P(không A)=3/4. Tự thử P(A)=0,15: nhánh đối 0,85; kiểm tổng 1.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B19-C01",
       "practice_item": "THPT-G12-B19-P01"
@@ -784,8 +784,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Kết quả tổng thể được tạo từ nhiều nhóm có tỷ lệ và xác suất riêng.",
         "(2) Rà tiền đề: Biến cố đối và công thức nhân xác suất.",
         "(3) Nhận diện bẫy: Không lấy trung bình cộng hai tỷ lệ khi tỷ lệ nguồn khác nhau.",
-        "(4) Xem lại `EX-G12-B19-O02` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B19-C02` trước, sau đó `THPT-G12-B19-P02`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: A chiếm 1/3 thành công 1/2, còn lại thành công 1/4, tổng (1/3)(1/2)+(2/3)(1/4)=1/3. Tự thử hai nhóm tỷ trọng 1/2 mỗi nhóm giữ các mức thành công đó: đối chiếu 3/8.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B19-C02",
       "practice_item": "THPT-G12-B19-P02"
@@ -798,8 +798,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Hình cây làm rõ nhân trên nhánh và cộng giữa các đường không trùng.",
         "(2) Rà tiền đề: Công thức nhân và biến cố đối.",
         "(3) Nhận diện bẫy: Nhân theo đường, cộng các lá phù hợp; các xác suất tại cùng một nút có tổng 1.",
-        "(4) Xem lại `EX-G12-B19-O03` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B19-C03` trước, sau đó `THPT-G12-B19-P03`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: A 0,5, P(E|A)=0,2, P(E|không A)=0,6; lá E 0,1 và 0,3. Tự tính hai lá không E: 0,4 và 0,2; tổng bốn lá 1.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B19-C03",
       "practice_item": "THPT-G12-B19-P03"
@@ -810,10 +810,10 @@
       "outcome_id": "G12-CHVI-B19-O04",
       "steps": [
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Khi thấy kết quả B cần suy xác suất nguyên nhân A, không thể dùng P(B|A) làm đáp án.",
-        "(2) Rà tiền đề: Công thức xác suất toàn phần và P(B)>0.",
+        "(2) Rà tiền đề: Công thức nhân, toàn phần và P(B)>0 để đảo điều kiện.",
         "(3) Nhận diện bẫy: P(A|B) không bằng P(B|A); dữ kiện nhánh còn lại là cần thiết.",
-        "(4) Xem lại `EX-G12-B19-O04` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B19-C04` trước, sau đó `THPT-G12-B19-P04`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: A chiếm 0,2, P(E|A)=0,5, P(E|không A)=0,25. Mẫu 0,1+0,2=0,3; P(A|E)=1/3. Tự tính P(không A|E): 2/3.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B19-C04",
       "practice_item": "THPT-G12-B19-P04"
@@ -826,8 +826,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Một phép thử tốt vẫn có thể tạo nhiều kết quả dương tính giả nếu hiện tượng hiếm.",
         "(2) Rà tiền đề: Tỉ lệ nền, độ nhạy, độ đặc hiệu, xác suất dương tính giả.",
         "(3) Nhận diện bẫy: Độ nhạy cao không có nghĩa P(có đặc điểm|dương) cao nếu tỷ lệ nền thấp.",
-        "(4) Xem lại `EX-G12-B19-O05` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B19-C05` trước, sau đó `THPT-G12-B19-P05`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: trong 100 bản ghi có 10 đặc điểm, 8 dương thật; 90 không đặc điểm, 9 dương giả. P(có đặc điểm|dương)=8/17. Tự tính P(không đặc điểm|âm): 81/(81+2)=81/83 trong mô hình nhị phân.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B19-C05",
       "practice_item": "THPT-G12-B19-P05"
@@ -840,8 +840,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Các lớp nguồn có thể khác kích thước và mức rủi ro.",
         "(2) Rà tiền đề: Hai nhánh toàn phần, nhân trên nhánh và cộng.",
         "(3) Nhận diện bẫy: Tỉ lệ chung phải theo trọng số; kiểm tổng tỉ lệ nguồn và diễn giải phần trăm.",
-        "(4) Xem lại `EX-G12-B19-O06` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B19-C06` trước, sau đó `THPT-G12-B19-P06`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: tỷ trọng 1/2,1/4,1/4; thành công 1/2,1/2,1; xác suất chung 1/4+1/8+1/4=5/8. Tự tính xác suất thuộc nhóm ba nếu thành công: (1/4)/(5/8)=2/5.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B19-C06",
       "practice_item": "THPT-G12-B19-P06"
@@ -854,8 +854,8 @@
         "(1) Trở lại câu hỏi “vì sao cần kiến thức này?”: Đề thi tự luận thường đảo điều kiện sau khi đã tính xác suất tổng thể.",
         "(2) Rà tiền đề: Sơ đồ cây, xác suất giao, toàn phần, Bayes.",
         "(3) Nhận diện bẫy: Không dừng ở P(B), phải chia Bayes khi yêu cầu “biết đã xảy ra B”.",
-        "(4) Xem lại `EX-G12-B19-O07` nhưng che bước kết quả, tự làm ra giấy.",
-        "(5) Thử lại item `THPT-G12-B19-C07` trước, sau đó `THPT-G12-B19-P07`; chỉ mở đáp án khi đã thử, không ghi Mastery."
+        "(4) Chữa nhanh: nhóm A 0,5 đạt 0,6; nhóm khác 0,5 đạt 0,4. P(đạt)=0,5; P(A|đạt)=0,3/0,5=0,6. Tự tính P(A|không đạt): 0,2/0,5=0,4.",
+        "(5) Tự làm câu Core được liên kết rồi câu Luyện tập được liên kết bên dưới; chỉ mở lời giải sau khi đã thử. Không đánh giá năng lực chỉ từ xem lời giải."
       ],
       "return_item": "THPT-G12-B19-C07",
       "practice_item": "THPT-G12-B19-P07"
