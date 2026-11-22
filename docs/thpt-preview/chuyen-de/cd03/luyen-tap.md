@@ -152,7 +152,7 @@ Tìm tập nghiệm thực của x²+2x+5=0; giải thích vì sao vô nghiệm.
 
 **Đáp án:** S=∅ trên ℝ.
 
-Δ=2²−4·1·5=−16<0, nên không có nghiệm thực; hoặc (x+1)²+4=0 là bất khả thi vì vế trái ≥4.
+Δ=2²−4·1·5=−16&lt;0, nên không có nghiệm thực; hoặc (x+1)²+4=0 là bất khả thi vì vế trái ≥4.
 
 </details>
 
@@ -210,7 +210,7 @@ Giải |x−2|=x.
 
 **Đáp án:** S={1}.
 
-Vế trái ≥0 nên x≥0. Nếu x≥2 thì |x−2|=x−2, không thể bằng x; nếu 0≤x<2 thì |x−2|=2−x=x ⇒ x=1 hợp miền. Thử |−1|=1.
+Vế trái ≥0 nên x≥0. Nếu x≥2 thì |x−2|=x−2, không thể bằng x; nếu 0≤x&lt;2 thì |x−2|=2−x=x ⇒ x=1 hợp miền. Thử |−1|=1.
 
 </details>
 
@@ -284,8 +284,8 @@ Giải trong ℝ phương trình √(x²+4x+4)=√(2x+4). Nêu điều kiện v�
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-<p>Điều kiện x≥−2. Bình phương (x+2)²=2x+4 ⇔ x²+2x=0 ⇔ x(x+2)=0; ứng viên x=0 và x=−2 đều đạt điều kiện và thay lại lần lượt được 2=2 và 0=0. S={−2;0}.</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Điều kiện xác định</td><td>1</td></tr><tr><td>Bình phương đúng</td><td>1</td></tr><tr><td>Tìm nghiệm ứng viên</td><td>1</td></tr><tr><td>Thử lại hai nghiệm</td><td>1</td></tr><tr><td>Tập nghiệm và kết luận</td><td>1</td></tr></tbody></table>
+&lt;p>Điều kiện x≥−2. Bình phương (x+2)²=2x+4 ⇔ x²+2x=0 ⇔ x(x+2)=0; ứng viên x=0 và x=−2 đều đạt điều kiện và thay lại lần lượt được 2=2 và 0=0. S={−2;0}.&lt;/p>
+&lt;table>&lt;thead>&lt;tr>&lt;th>Tiêu chí&lt;/th>&lt;th>Điểm&lt;/th>&lt;/tr>&lt;/thead>&lt;tbody>&lt;tr>&lt;td>Điều kiện xác định&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Bình phương đúng&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Tìm nghiệm ứng viên&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Thử lại hai nghiệm&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Tập nghiệm và kết luận&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
 </details>
 
@@ -355,7 +355,7 @@ Giải √(x+4)=√(x²+5x+2) trong ℝ và xác định nghiệm ứng viên kh
 
 **Đáp án:** S={−2+√6}; −2−√6 bị loại.
 
-Điều kiện x+4≥0 và x²+5x+2≥0. Bình phương x+4=x²+5x+2 ⇔ x²+4x−2=0 ⇒ x=−2±√6. Với −2−√6<−4, x+4<0, không có căn thực. Với −2+√6>−4, hai radicand cùng bằng x+4=2+√6>0 nên nhận.
+Điều kiện x+4≥0 và x²+5x+2≥0. Bình phương x+4=x²+5x+2 ⇔ x²+4x−2=0 ⇒ x=−2±√6. Với −2−√6&lt;−4, x+4&lt;0, không có căn thực. Với −2+√6>−4, hai radicand cùng bằng x+4=2+√6>0 nên nhận.
 
 </details>
 
@@ -383,7 +383,7 @@ So sánh tập nghiệm thực của (A) √(x+7)=x−1 và (B) √(x+7)=|x−1|
 
 **Đáp án:** Đặt r₋=(3−√33)/2, r₊=(3+√33)/2. S_A={r₊}; S_B={r₋,r₊}.
 
-Hai phương trình đều cần x+7≥0. (A) còn cần x−1≥0 ⇒ x≥1; (B) có vế phải |x−1|≥0 tự động. Bình phương cho x+7=(x−1)² ⇔ x²−3x−6=0 ⇒ r₋,r₊. Vì √33>5 nên r₋=(3−√33)/2<−1<1, nhưng r₋>−7 (do √33<17) nên chỉ (B) nhận r₋; r₊>1 nhận cả hai. Tại mỗi nghiệm, x+7=(x−1)²≥0 nên √(x+7)=|x−1|. Với (A) r₋ sai vì x−1 âm; r₊ đúng.
+Hai phương trình đều cần x+7≥0. (A) còn cần x−1≥0 ⇒ x≥1; (B) có vế phải |x−1|≥0 tự động. Bình phương cho x+7=(x−1)² ⇔ x²−3x−6=0 ⇒ r₋,r₊. Vì √33>5 nên r₋=(3−√33)/2&lt;−1&lt;1, nhưng r₋>−7 (do √33&lt;17) nên chỉ (B) nhận r₋; r₊>1 nhận cả hai. Tại mỗi nghiệm, x+7=(x−1)²≥0 nên √(x+7)=|x−1|. Với (A) r₋ sai vì x−1 âm; r₊ đúng.
 
 **Rubric tự đối chiếu:** 7 điểm: miền x≥−7 và điều kiện x≥1 riêng (A) (2đ); bình phương và nghiệm r₋,r₊ đúng (2đ); S_A có đúng một nghiệm với lập luận dấu (1đ); S_B có hai nghiệm, kiểm (B) (1đ); giải thích phép bình phương không tương đương nếu bỏ điều kiện dấu (1đ).
 
@@ -411,8 +411,8 @@ Tam giác vuông có hai cạnh góc vuông x&gt;0 m và 5 m, cạnh huyền x+1
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-<p>√(x²+25)=x+1. Bình phương được x²+25=x²+2x+1 ⇒ x=12. Thử lại √169=13=12+1. Ba cạnh là 12 m, 5 m, 13 m.</p>
-<table><thead><tr><th>Tiêu chí</th><th>Điểm</th></tr></thead><tbody><tr><td>Dựng điều kiện và đại lượng</td><td>1</td></tr><tr><td>Lập phương trình</td><td>2</td></tr><tr><td>Giải x</td><td>1</td></tr><tr><td>Thử nghiệm</td><td>1</td></tr><tr><td>Kết luận 3 cạnh, đơn vị</td><td>1</td></tr></tbody></table>
+&lt;p>√(x²+25)=x+1. Bình phương được x²+25=x²+2x+1 ⇒ x=12. Thử lại √169=13=12+1. Ba cạnh là 12 m, 5 m, 13 m.&lt;/p>
+&lt;table>&lt;thead>&lt;tr>&lt;th>Tiêu chí&lt;/th>&lt;th>Điểm&lt;/th>&lt;/tr>&lt;/thead>&lt;tbody>&lt;tr>&lt;td>Dựng điều kiện và đại lượng&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Lập phương trình&lt;/td>&lt;td>2&lt;/td>&lt;/tr>&lt;tr>&lt;td>Giải x&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Thử nghiệm&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;tr>&lt;td>Kết luận 3 cạnh, đơn vị&lt;/td>&lt;td>1&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>
 
 </details>
 
