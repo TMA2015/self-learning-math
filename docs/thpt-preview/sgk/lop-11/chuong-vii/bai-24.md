@@ -140,7 +140,7 @@
 
     ### 3.1. Hình chiếu một tam giác không suy biến
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B24-R02-01"><p><strong>Đề bài:</strong> Cho lăng trụ đứng \(ABC.A'B'C'\). Tìm hình chiếu của tam giác \(A'BC'\) xuống đáy (ABC).</p><p><strong>Phân tích:</strong> Chiếu từng đỉnh theo các cạnh bên vuông góc đáy.</p><p><strong>Lời giải:</strong> A' chiếu về A, C' về C và B giữ nguyên. Phép chiếu song song đưa các đoạn nối và phần tam giác về tam giác ABC (ba ảnh không thẳng hàng).</p><p><strong>Kiểm lại:</strong> Không nhầm A'B với cạnh bên; ảnh của A'B là AB.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B24-R02-01"><p><strong>Đề bài:</strong> Cho lăng trụ \(ABC.A'B'C'\) với \(AA'\perp(ABC)\). Tìm hình chiếu của tam giác \(A'BC'\) xuống đáy (ABC).</p><p><strong>Phân tích:</strong> Các cạnh bên song song AA', nên đều vuông góc đáy. Chiếu từng đỉnh theo các phương ấy.</p><p><strong>Lời giải:</strong> A' chiếu về A, C' về C và B giữ nguyên. Phép chiếu song song đưa các đoạn nối và phần tam giác về tam giác ABC (ba ảnh không thẳng hàng).</p><p><strong>Kiểm lại:</strong> Không nhầm A'B với cạnh bên; ảnh của A'B là AB.</p></div>
 
     ### 3.2. Chứng minh ba đường vuông góc
 
