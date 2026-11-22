@@ -115,3 +115,13 @@ body .topic-w1-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-tabs .thpt
   font-size:14px!important;height:44px!important;min-height:44px!important
  }
 }
+
+/* Strict SGK tab metrics on W1's unique attributes; inherited Material
+ * accordion/tab sizing may otherwise override the old class-only adapter. */
+body :is([data-topic-w1-module-tab],[data-topic-w1-subtab]){
+ font-size:15px!important;height:44px!important;min-height:44px!important;
+ box-sizing:border-box!important;line-height:1.45!important;padding:9px 13px!important
+}
+@media(max-width:640px){
+ body :is([data-topic-w1-module-tab],[data-topic-w1-subtab]){font-size:14px!important;padding:8px 10px!important}
+}
