@@ -29,6 +29,8 @@ with sync_playwright() as pw:
     assert not any((link.get_attribute("href") or "") == "../"+part+"/" for link in nav.locator("a").all())
     assert p.locator("[data-thpt-readiness],[data-mastery-credit]").count()==0
     assert not p.evaluate("document.documentElement.className.includes('topic01-boot-pending-')"),(engine,width,part,"hydration never completed")
+    if p.locator(".topic01-boot-status").is_visible():
+     raise AssertionError(("CD01_HYDRATION_ERROR",engine,width,part,errors,p.evaluate("""() => ({html:document.documentElement.className,ready:document.querySelector('[data-topic01-knowledge-start]')?.dataset.ready,console:document.querySelector('.topic01-boot-status')?.textContent})""")))
     expect(p.locator(".topic01-boot-status")).to_be_hidden()
     assert p.locator(".topic01-boot-status").count()==1
     if part=="kien-thuc":
