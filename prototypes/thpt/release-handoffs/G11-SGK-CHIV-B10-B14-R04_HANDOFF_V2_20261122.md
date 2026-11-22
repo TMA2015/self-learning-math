@@ -9,9 +9,9 @@ LEARNING_PATH: SGK_CHAPTER
 RELEASE_SCOPE: FULL_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/G11_CHIV_B10_B14_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md
-ACADEMIC_SOURCE_BLOB: 04d058549fc7c248b213a3c62929b2feecc05bb9
+ACADEMIC_SOURCE_BLOB: 8133e3e9bf08ac39309c26f3d817c9b0b1974db9
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G11_CHIV_B10_B14_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md
-REVIEW_RECEIPT_BLOB: 7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69
+REVIEW_RECEIPT_BLOB: 8e4ea2f5eead381b4231a33256c0cb6159b6a2f9
 ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 AUTHORING_STATUS: AUTHORING_PASS_CONTENT_READY
@@ -122,98 +122,98 @@ All **67 distinct** teaching items have **one canonical item ID** each: 30 publi
 
 | ITEM_ID | OUTCOME_ID | placement/role |
 |---|---|---|
-| `THPT-G11-CHIV-B10-C01` | `G11-B10-INCIDENCE` | SGK_CORE |
-| `THPT-G11-CHIV-B10-C02` | `G11-B10-PLANE` | SGK_CORE |
-| `THPT-G11-CHIV-B10-P01` | `G11-B10-PLANE_INTERSECTION` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B10-P02` | `G11-B10-LINE_PLANE` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B10-P03` | `G11-B10-PLANE` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B10-P04` | `G11-B10-SECTION` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B11-C01` | `G11-B11-RELATIVE` | SGK_CORE |
-| `THPT-G11-CHIV-B11-C02` | `G11-B11-COPLANAR` | SGK_CORE |
-| `THPT-G11-CHIV-B11-P01` | `G11-B11-RELATIVE` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B11-P02` | `G11-B11-PARALLEL_PROOF` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B11-P03` | `G11-B11-RELATIVE` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B11-P04` | `G11-B11-PARALLEL_PROOF` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B12-C01` | `G11-B12-POSITIONS` | SGK_CORE |
-| `THPT-G11-CHIV-B12-C02` | `G11-B12-PARALLEL_TEST` | SGK_CORE |
-| `THPT-G11-CHIV-B12-P01` | `G11-B12-PARALLEL_TEST` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B12-P02` | `G11-B12-POSITIONS` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B12-P03` | `G11-B12-PLANE_INTERSECTION` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B12-P04` | `G11-B12-CONSTRUCTION` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B13-C01` | `G11-B13-PLANE_POSITIONS` | SGK_CORE |
-| `THPT-G11-CHIV-B13-C02` | `G11-B13-PLANE_TEST` | SGK_CORE |
-| `THPT-G11-CHIV-B13-P01` | `G11-B13-TRANSVERSAL` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B13-P02` | `G11-B13-PLANE_TEST` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B13-P03` | `G11-B13-PRISM_RATIO` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B13-P04` | `G11-B13-PRISM_RATIO` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B14-C01` | `G11-B14-PROJECTION_DEF` | SGK_CORE |
-| `THPT-G11-CHIV-B14-C02` | `G11-B14-AFFINE_INVARIANTS` | SGK_CORE |
-| `THPT-G11-CHIV-B14-P01` | `G11-B14-PROJECTION_DEF` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B14-P02` | `G11-B14-AFFINE_INVARIANTS` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B14-P03` | `G11-B14-DEGENERACY` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B14-P04` | `G11-B14-PARALLEL_AND_SHAPES` | SGK_PRACTICE |
-| `THPT-G11-CHIV-B10-W01` | `G11-B10-PLANE_INTERSECTION` | SGK_WRITTEN |
-| `THPT-G11-CHIV-B10-W02-ANCHOR` | `G11-B10-SECTION` | SGK_WRITTEN_ANCHOR_LABEL |
-| `THPT-G11-CHIV-B11-W01` | `G11-B11-RELATIVE` | SGK_WRITTEN |
-| `THPT-G11-CHIV-B11-W02-ANCHOR` | `G11-B11-PARALLEL_PROOF` | SGK_WRITTEN_ANCHOR_LABEL |
-| `THPT-G11-CHIV-B12-W01` | `G11-B12-PARALLEL_TEST` | SGK_WRITTEN |
-| `THPT-G11-CHIV-B12-W02-ANCHOR` | `G11-B12-PARALLEL_TEST` | SGK_WRITTEN_ANCHOR_LABEL |
-| `THPT-G11-CHIV-B13-W01` | `G11-B13-PLANE_TEST` | SGK_WRITTEN |
-| `THPT-G11-CHIV-B13-W02-ANCHOR` | `G11-B13-PRISM_RATIO` | SGK_WRITTEN_ANCHOR_LABEL |
-| `THPT-G11-CHIV-B14-W01` | `G11-B14-AFFINE_INVARIANTS` | SGK_WRITTEN |
-| `THPT-G11-CHIV-B14-W02-ANCHOR` | `G11-B14-AFFINE_INVARIANTS` | SGK_WRITTEN_ANCHOR_LABEL |
-| `THPT-G11-B10-TRY01` | `G11-B10-INCIDENCE` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B10-TRY02` | `G11-B10-PLANE` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B10-TRY03` | `G11-B10-PLANE_INTERSECTION` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B10-TRY04` | `G11-B10-LINE_PLANE` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B10-TRY05` | `G11-B10-SECTION` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B10-TRY06` | `G11-B10-PLANE` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B11-TRY01` | `G11-B11-RELATIVE` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B11-TRY02` | `G11-B11-PARALLEL_PROOF` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B11-TRY03` | `G11-B11-PARALLEL_PROOF` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B11-TRY04` | `G11-B11-INTERSECT_PLANES` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B11-TRY05` | `G11-B11-COPLANAR` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B12-TRY01` | `G11-B12-POSITIONS` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B12-TRY02` | `G11-B12-PARALLEL_TEST` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B12-TRY03` | `G11-B12-PARALLEL_TEST` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B12-TRY04` | `G11-B12-PLANE_INTERSECTION` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B12-TRY05` | `G11-B12-CONSTRUCTION` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B13-TRY01` | `G11-B13-PLANE_POSITIONS` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B13-TRY02` | `G11-B13-PLANE_TEST` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B13-TRY03` | `G11-B13-TRANSVERSAL` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B13-TRY04` | `G11-B13-PRISM_RATIO` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B13-TRY05` | `G11-B13-PRISM_RATIO` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B13-TRY06` | `G11-B13-PRISM_RATIO` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B14-TRY01` | `G11-B14-PROJECTION_DEF` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B14-TRY02` | `G11-B14-DEGENERACY` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B14-TRY03` | `G11-B14-AFFINE_INVARIANTS` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B14-TRY04` | `G11-B14-PARALLEL_AND_SHAPES` | SGK_KNOWLEDGE_FIRST_TRY |
-| `THPT-G11-B14-TRY05` | `G11-B14-PARALLEL_AND_SHAPES` | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-CHIV-B10-C01 | G11-B10-INCIDENCE | SGK_CORE |
+| THPT-G11-CHIV-B10-C02 | G11-B10-PLANE | SGK_CORE |
+| THPT-G11-CHIV-B10-P01 | G11-B10-PLANE_INTERSECTION | SGK_PRACTICE |
+| THPT-G11-CHIV-B10-P02 | G11-B10-LINE_PLANE | SGK_PRACTICE |
+| THPT-G11-CHIV-B10-P03 | G11-B10-PLANE | SGK_PRACTICE |
+| THPT-G11-CHIV-B10-P04 | G11-B10-SECTION | SGK_PRACTICE |
+| THPT-G11-CHIV-B11-C01 | G11-B11-RELATIVE | SGK_CORE |
+| THPT-G11-CHIV-B11-C02 | G11-B11-COPLANAR | SGK_CORE |
+| THPT-G11-CHIV-B11-P01 | G11-B11-RELATIVE | SGK_PRACTICE |
+| THPT-G11-CHIV-B11-P02 | G11-B11-PARALLEL_PROOF | SGK_PRACTICE |
+| THPT-G11-CHIV-B11-P03 | G11-B11-RELATIVE | SGK_PRACTICE |
+| THPT-G11-CHIV-B11-P04 | G11-B11-PARALLEL_PROOF | SGK_PRACTICE |
+| THPT-G11-CHIV-B12-C01 | G11-B12-POSITIONS | SGK_CORE |
+| THPT-G11-CHIV-B12-C02 | G11-B12-PARALLEL_TEST | SGK_CORE |
+| THPT-G11-CHIV-B12-P01 | G11-B12-PARALLEL_TEST | SGK_PRACTICE |
+| THPT-G11-CHIV-B12-P02 | G11-B12-POSITIONS | SGK_PRACTICE |
+| THPT-G11-CHIV-B12-P03 | G11-B12-PLANE_INTERSECTION | SGK_PRACTICE |
+| THPT-G11-CHIV-B12-P04 | G11-B12-CONSTRUCTION | SGK_PRACTICE |
+| THPT-G11-CHIV-B13-C01 | G11-B13-PLANE_POSITIONS | SGK_CORE |
+| THPT-G11-CHIV-B13-C02 | G11-B13-PLANE_TEST | SGK_CORE |
+| THPT-G11-CHIV-B13-P01 | G11-B13-TRANSVERSAL | SGK_PRACTICE |
+| THPT-G11-CHIV-B13-P02 | G11-B13-PLANE_TEST | SGK_PRACTICE |
+| THPT-G11-CHIV-B13-P03 | G11-B13-PRISM_RATIO | SGK_PRACTICE |
+| THPT-G11-CHIV-B13-P04 | G11-B13-PRISM_RATIO | SGK_PRACTICE |
+| THPT-G11-CHIV-B14-C01 | G11-B14-PROJECTION_DEF | SGK_CORE |
+| THPT-G11-CHIV-B14-C02 | G11-B14-AFFINE_INVARIANTS | SGK_CORE |
+| THPT-G11-CHIV-B14-P01 | G11-B14-PROJECTION_DEF | SGK_PRACTICE |
+| THPT-G11-CHIV-B14-P02 | G11-B14-AFFINE_INVARIANTS | SGK_PRACTICE |
+| THPT-G11-CHIV-B14-P03 | G11-B14-DEGENERACY | SGK_PRACTICE |
+| THPT-G11-CHIV-B14-P04 | G11-B14-PARALLEL_AND_SHAPES | SGK_PRACTICE |
+| THPT-G11-CHIV-B10-W01 | G11-B10-PLANE_INTERSECTION | SGK_WRITTEN |
+| THPT-G11-CHIV-B10-W02-ANCHOR | G11-B10-SECTION | SGK_WRITTEN_ANCHOR_LABEL |
+| THPT-G11-CHIV-B11-W01 | G11-B11-RELATIVE | SGK_WRITTEN |
+| THPT-G11-CHIV-B11-W02-ANCHOR | G11-B11-PARALLEL_PROOF | SGK_WRITTEN_ANCHOR_LABEL |
+| THPT-G11-CHIV-B12-W01 | G11-B12-PARALLEL_TEST | SGK_WRITTEN |
+| THPT-G11-CHIV-B12-W02-ANCHOR | G11-B12-PARALLEL_TEST | SGK_WRITTEN_ANCHOR_LABEL |
+| THPT-G11-CHIV-B13-W01 | G11-B13-PLANE_TEST | SGK_WRITTEN |
+| THPT-G11-CHIV-B13-W02-ANCHOR | G11-B13-PRISM_RATIO | SGK_WRITTEN_ANCHOR_LABEL |
+| THPT-G11-CHIV-B14-W01 | G11-B14-AFFINE_INVARIANTS | SGK_WRITTEN |
+| THPT-G11-CHIV-B14-W02-ANCHOR | G11-B14-AFFINE_INVARIANTS | SGK_WRITTEN_ANCHOR_LABEL |
+| THPT-G11-B10-TRY01 | G11-B10-INCIDENCE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B10-TRY02 | G11-B10-PLANE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B10-TRY03 | G11-B10-PLANE_INTERSECTION | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B10-TRY04 | G11-B10-LINE_PLANE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B10-TRY05 | G11-B10-SECTION | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B10-TRY06 | G11-B10-PLANE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B11-TRY01 | G11-B11-RELATIVE | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B11-TRY02 | G11-B11-PARALLEL_PROOF | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B11-TRY03 | G11-B11-PARALLEL_PROOF | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B11-TRY04 | G11-B11-INTERSECT_PLANES | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B11-TRY05 | G11-B11-COPLANAR | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B12-TRY01 | G11-B12-POSITIONS | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B12-TRY02 | G11-B12-PARALLEL_TEST | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B12-TRY03 | G11-B12-PARALLEL_TEST | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B12-TRY04 | G11-B12-PLANE_INTERSECTION | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B12-TRY05 | G11-B12-CONSTRUCTION | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B13-TRY01 | G11-B13-PLANE_POSITIONS | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B13-TRY02 | G11-B13-PLANE_TEST | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B13-TRY03 | G11-B13-TRANSVERSAL | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B13-TRY04 | G11-B13-PRISM_RATIO | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B13-TRY05 | G11-B13-PRISM_RATIO | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B13-TRY06 | G11-B13-PRISM_RATIO | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B14-TRY01 | G11-B14-PROJECTION_DEF | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B14-TRY02 | G11-B14-DEGENERACY | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B14-TRY03 | G11-B14-AFFINE_INVARIANTS | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B14-TRY04 | G11-B14-PARALLEL_AND_SHAPES | SGK_KNOWLEDGE_FIRST_TRY |
+| THPT-G11-B14-TRY05 | G11-B14-PARALLEL_AND_SHAPES | SGK_KNOWLEDGE_FIRST_TRY |
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-The only academic standard is `SLM-THPT-QUALITY-ONE v3.2.0`. All Q18 current-source evidences are directly tied to source bundle `04d058549fc7c248b213a3c62929b2feecc05bb9` and one author receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69`; release AP/R/Q16 is a separate responsibility, not a second academic standard.
+The only academic standard is `SLM-THPT-QUALITY-ONE v3.2.0` on GitHub at `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. All Q18 current-source evidences are directly tied to source bundle `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` and one author receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9`; release AP/R/Q16 is a separate responsibility, not a second academic standard.
 
 | Q_ID | lesson/outcome and S1 reason | author actual checked evidence | Q18 current source/receipt signoff | release evidence still owed |
 |---|---|---|---|---|
-| Q01 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | S1 SGK 11 T1 printed 70–101 and historical original SBT printed 53–71; B14 direction clarified using exact one-point intersection condition | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q02 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 22 registered outcomes (21 per lesson, 1 integrated); 27 first tries, 27 worked, 30 original Core/Practice, 10 Written; no invented B11 INTERSECT_PLANES bank item | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q03 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 5 four-tab concept-first lessons; exact hypotheses and incidence before theorems | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q04 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 27 full worked method notes and complete self-check reasoning; original 10 Written proofs/rubrics unchanged | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q05 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 30 original public C/P structurally varied, actual application models in five lessons | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q06 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 10 unchanged Written/Anchor shared library, 4-point rubrics preserved | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q07 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 5 original SVG assets hash-verified, learner figure reading guides; browser rendering not attested | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q08 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 27 local help after voluntary tries plus general misconception and recovery routes | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q09 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Five WHY motivations before formal Knowledge | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q10 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Plane/incidence, triangle midsegment, 3D positions and ratio prerequisites revisited | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q11 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Meaning before formulas across Golden Knowledge tabs | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q12 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 5 SVG guidance cues distinguish actual geometry from 2D projected figures | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q13 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Two-intersecting-line plane criterion, line outside plane, exact projection direction and Thalès limitations | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q14 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 27 self attempts with opt-in hidden Đối chiếu and local Kiểm lỗi | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q15 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 67 unique public pedagogic IDs (30 C/P +10 W +27 source-owned FirstTry); original keys/rubrics immutable | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q16 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Public 17-item reused END = CLIENT_SELF_CHECK_NO_MASTERY; 22 private RD1 remain owner-held; no official mastery claims | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q17 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | SGK journey self-contained; no Topic duplicate Core or new third path | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
-| Q18 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Exact 15 component source SHA, signed author QA, V2/ready/register once packaged; historical independent R03 review not reattached | AUTHOR_SELF_VERIFIED SHA `04d058549fc7c248b213a3c62929b2feecc05bb9` · receipt `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q01 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | S1 SGK 11 T1 printed 70–101 and historical original SBT printed 53–71; B14 direction clarified using exact one-point intersection condition | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q02 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 22 registered outcomes (21 per lesson, 1 integrated); 27 first tries, 27 worked, 30 original Core/Practice, 10 Written; no invented B11 INTERSECT_PLANES bank item | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q03 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 5 four-tab concept-first lessons; exact hypotheses and incidence before theorems | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q04 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 27 full worked method notes and complete self-check reasoning; original 10 Written proofs/rubrics unchanged | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q05 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 30 original public C/P structurally varied, actual application models in five lessons | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q06 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 10 unchanged Written/Anchor shared library, 4-point rubrics preserved | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q07 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 5 original SVG assets hash-verified, learner figure reading guides; browser rendering not attested | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q08 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 27 local help after voluntary tries plus general misconception and recovery routes | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q09 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Five WHY motivations before formal Knowledge | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q10 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Plane/incidence, triangle midsegment, 3D positions and ratio prerequisites revisited | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q11 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Meaning before formulas across Golden Knowledge tabs | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q12 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 5 SVG guidance cues distinguish actual geometry from 2D projected figures | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q13 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Two-intersecting-line plane criterion, line outside plane, exact projection direction and Thalès limitations | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q14 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 27 self attempts with opt-in hidden Đối chiếu and local Kiểm lỗi | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q15 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | 67 unique public pedagogic IDs (30 C/P +10 W +27 source-owned FirstTry); original keys/rubrics immutable | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q16 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Public 17-item reused END = CLIENT_SELF_CHECK_NO_MASTERY; 22 private RD1 remain owner-held; no official mastery claims | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q17 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | SGK journey self-contained; no Topic duplicate Core or new third path | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
+| Q18 | G11 ChIV B10–B14 · 22 outcomes · S1 KNTT | Exact 15 component source SHA, signed author QA, V2/ready/register once packaged; historical independent R03 review not reattached | AUTHOR_SELF_VERIFIED SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9` · receipt `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9` | AP/R/Q16 browser, exact HEAD, owner permission (RELEASE) |
 
 ## PRIVATE_RD1_CUSTODY_METADATA
 
@@ -225,7 +225,7 @@ The only academic standard is `SLM-THPT-QUALITY-ONE v3.2.0`. All Q18 current-sou
 
 ## REVIEW_SOURCE_RECEIPT
 
-R04 `AUTHOR_SELF_VERIFIED`: source `prototypes/thpt/content-drafts/G11_CHIV_B10_B14_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md` SHA `04d058549fc7c248b213a3c62929b2feecc05bb9`; receipt `prototypes/thpt/review-packets/G11_CHIV_B10_B14_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md` SHA `7244f4dfb82cc98a58fa5ef12f3e1c9068af2c69`. Five original learner blobs and all 15 original component blobs in source. P0=0/P1=0 within current academic source audit. Historical independent R03 source/receipt preserved, no new independent NotebookLM verdict asserted.
+R04 `AUTHOR_SELF_VERIFIED`: source `prototypes/thpt/content-drafts/G11_CHIV_B10_B14_R04_CANONICAL_SOURCE_BUNDLE_LOCK_20261122.md` SHA `8133e3e9bf08ac39309c26f3d817c9b0b1974db9`; receipt `prototypes/thpt/review-packets/G11_CHIV_B10_B14_R04_AUTHOR_SELF_Q18_RECEIPT_20261122.md` SHA `8e4ea2f5eead381b4231a33256c0cb6159b6a2f9`. Five original learner blobs and all 15 original component blobs in source. P0=0/P1=0 within current academic source audit. Historical independent R03 source/receipt preserved, no new independent NotebookLM verdict asserted.
 
 ## AUTHOR_SIGNOFF
 
