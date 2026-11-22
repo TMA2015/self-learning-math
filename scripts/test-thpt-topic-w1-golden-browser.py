@@ -129,6 +129,8 @@ with sync_playwright() as pw:
                 reference=ctx.new_page()
                 response=reference.goto(BASE+"cd01/kien-thuc/",wait_until="domcontentloaded")
                 assert response and response.status==200
+                if reference.locator(".topic01-boot-status").is_visible():
+                    raise AssertionError(("GOLDEN_REFERENCE_HYDRATION_ERROR",engine,topic,width,reference.evaluate("""() => ({html:document.documentElement.className,status:document.querySelector('.topic01-boot-status')?.textContent,ready:document.querySelector('[data-topic01-knowledge-start]')?.dataset.ready})""")))
                 expect(reference.locator(".topic01-boot-status")).to_be_hidden()
                 golden_styles=golden_snapshot(reference)
                 topic_styles=golden_snapshot(page)
