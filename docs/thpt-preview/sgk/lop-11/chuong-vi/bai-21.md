@@ -26,7 +26,7 @@
 
         **Dấu hiệu:** Chia hai vế như một phương trình bậc nhất hoặc chỉ so hệ số.
 
-        **Tự sửa:** Đưa cùng cơ số, tìm số mũ bằng tính đơn ánh. [Làm lại câu B21-C01](../luyen-tap/?item=THPT-G11-CHVI-B21-C01).
+        **Tự sửa:** Đưa cùng cơ số, tìm số mũ bằng tính đơn ánh. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-C01">Làm lại câu B21-C01</a>.
 
     ### 1.2. Phương trình lôgarit: điều kiện rồi đổi về lũy thừa
 
@@ -46,7 +46,7 @@
 
         **Dấu hiệu:** Bỏ điều kiện hoặc coi số mũ âm là đối số âm.
 
-        **Tự sửa:** Tìm miền, đổi logarit sang lũy thừa rồi kiểm lại. [Làm lại câu B21-C02](../luyen-tap/?item=THPT-G11-CHVI-B21-C02).
+        **Tự sửa:** Tìm miền, đổi logarit sang lũy thừa rồi kiểm lại. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-C02">Làm lại câu B21-C02</a>.
 
     ### 1.3. Bất phương trình mũ và cơ số nhỏ hơn 1
 
@@ -66,7 +66,7 @@
 
         **Dấu hiệu:** Giữ chiều như trường hợp cơ số lớn hơn 1.
 
-        **Tự sửa:** Viết ngay bên cạnh cơ số chữ 'giảm', đảo chiều rồi kiểm điểm biên. [Làm lại câu B21-P03](../luyen-tap/?item=THPT-G11-CHVI-B21-P03).
+        **Tự sửa:** Viết ngay bên cạnh cơ số chữ 'giảm', đảo chiều rồi kiểm điểm biên. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P03">Làm lại câu B21-P03</a>.
 
     ### 1.4. Bất phương trình lôgarit: kết hợp miền và chiều
 
@@ -86,7 +86,7 @@
 
         **Dấu hiệu:** Chỉ giải bất đẳng thức mới mà quên giao miền logarit.
 
-        **Tự sửa:** Viết hai dòng điều kiện và nghiệm đại số, lấy giao sau cùng. [Làm lại câu B21-P04](../luyen-tap/?item=THPT-G11-CHVI-B21-P04).
+        **Tự sửa:** Viết hai dòng điều kiện và nghiệm đại số, lấy giao sau cùng. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P04">Làm lại câu B21-P04</a>.
 
     ### 1.5. Điều kiện giao của nhiều đối số: nghiệm ngoại lai
 
@@ -106,7 +106,7 @@
 
         **Dấu hiệu:** Giải hai đối số bằng nhau kể cả khi không tồn tại miền chung.
 
-        **Tự sửa:** Lập giao điều kiện dương; nếu rỗng, dừng và kết luận vô nghiệm. [Làm lại câu B21-P05](../luyen-tap/?item=THPT-G11-CHVI-B21-P05).
+        **Tự sửa:** Lập giao điều kiện dương; nếu rỗng, dừng và kết luận vô nghiệm. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P05">Làm lại câu B21-P05</a>.
 
     ### 1.6. Vượt ngưỡng khác vừa đạt ngưỡng
 
@@ -126,7 +126,7 @@
 
         **Dấu hiệu:** Làm tròn ngưỡng 2 thành năm đạt mục tiêu dù hỏi vượt.
 
-        **Tự sửa:** Ghi dấu strict >, n nguyên; kiểm năm ngay trước và năm đã chọn. [Làm lại câu B21-P06](../luyen-tap/?item=THPT-G11-CHVI-B21-P06).
+        **Tự sửa:** Ghi dấu strict >, n nguyên; kiểm năm ngay trước và năm đã chọn. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P06">Làm lại câu B21-P06</a>.
 
 === "Kiến thức SGK"
 
@@ -184,7 +184,7 @@
 
     ### 3.1. Phương trình mũ không cùng cơ số dễ nhận
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-01"><p><strong>Đề bài:</strong> Giải \(6^{2x-1}=11\).</p><p><strong>Phân tích:</strong> Vế phải dương nhưng không dễ viết thành lũy thừa nguyên của 6; lấy logarit cơ số 6.</p><p><strong>Lời giải:</strong> \(2x-1=\log_6 11\), suy ra \(x=(1+\log_6 11)/2\).</p><p><strong>Kiểm lại:</strong> Thế số mũ bằng log_6 11 cho giá trị 11, nghiệm duy nhất vì hàm mũ đơn ánh.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-01"><p><strong>Đề bài:</strong> Giải \(6^{2x-1}=11\).</p><p><strong>Phân tích:</strong> Vế phải dương nhưng không dễ viết thành lũy thừa nguyên của 6; lấy logarit cơ số 6.</p><p><strong>Lời giải:</strong> \(2x-1=\log_6 11\), suy ra \(x=(1+\log_6 11)/2\).</p><p><strong>Kiểm lại:</strong> Thế số mũ \(\log_6 11\) cho giá trị \(11\); nghiệm duy nhất vì hàm mũ cơ số \(6\) đơn ánh.</p></div>
 
     ### 3.2. Phương trình logarit ghép tích
 
@@ -200,11 +200,11 @@
 
     ### 3.5. Bất phương trình lôgarit hai đối số
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-05"><p><strong>Đề bài:</strong> Giải \(\log_{1/2}(x+4)\lt \log_{1/2}(2x-1)\).</p><p><strong>Phân tích:</strong> Hai đối số dương cho x>1/2; hàm giảm đảo chiều.</p><p><strong>Lời giải:</strong> \(x+4\gt 2x-1\), tức \(x\lt 5\). Giao miền được \((1/2,5)\).</p><p><strong>Kiểm lại:</strong> Tại x=1/2, logarit thứ hai không xác định; tại x=5 hai giá trị bằng nhau, cả hai biên đều loại.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-05"><p><strong>Đề bài:</strong> Giải \(\log_{1/2}(x+4)\lt \log_{1/2}(2x-1)\).</p><p><strong>Phân tích:</strong> Hai đối số dương cho x>1/2; hàm giảm đảo chiều.</p><p><strong>Lời giải:</strong> \(x+4\gt 2x-1\), tức \(x\lt 5\). Giao miền được \((1/2,5)\).</p><p><strong>Kiểm lại:</strong> Tại \(x=1/2\), lôgarit thứ hai không xác định; tại \(x=5\), hai giá trị bằng nhau. Vì bất phương trình nghiêm ngặt, cả hai biên đều bị loại.</p></div>
 
     ### 3.6. Mô hình suy giảm giá trị
 
-    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-06"><p><strong>Đề bài:</strong> Giá trị tài sản theo mô hình cuối năm \(V(n)=240(0{,}8)^n\) triệu đồng, n nguyên không âm. Năm đầu giá trị không quá 100 triệu là năm nào?</p><p><strong>Phân tích:</strong> Vì cơ số nhỏ hơn 1, bất phương trình đảo chiều. Phải kiểm số nguyên.</p><p><strong>Lời giải:</strong> Ta cần \((0{,}8)^n\le5/12\), tương đương \(n\ge \ln(5/12)/\ln(0{,}8)\approx3{,}923\). Năm đầu là n=4.</p><p><strong>Kiểm lại:</strong> (V(3)=122{,}88>100), (V(4)=98{,}304le100); hợp lệ.</p></div>
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B21-R02-06"><p><strong>Đề bài:</strong> Giá trị tài sản theo mô hình cuối năm \(V(n)=240(0{,}8)^n\) triệu đồng, n nguyên không âm. Năm đầu giá trị không quá 100 triệu là năm nào?</p><p><strong>Phân tích:</strong> Vì cơ số nhỏ hơn 1, bất phương trình đảo chiều. Phải kiểm số nguyên.</p><p><strong>Lời giải:</strong> Ta cần \((0{,}8)^n\le5/12\), tương đương \(n\ge \ln(5/12)/\ln(0{,}8)\approx3{,}923\). Năm đầu là n=4.</p><p><strong>Kiểm lại:</strong> \(V(3)=122{,}88>100\), còn \(V(4)=98{,}304\le100\) (triệu đồng). Vì giá trị giảm theo \(n\), năm \(4\) là năm nguyên đầu tiên đạt mức không quá \(100\) triệu.</p></div>
 
     ### 3.7. Ứng dụng lôgarit tự nhiên cho áp suất
 
@@ -222,7 +222,7 @@
 
         **Vì sao sai:** Mỗi đối số phải dương trước mọi phép bỏ log hoặc gộp tích.
 
-        **Tự sửa:** Lập miền và giao nghiệm; ôn mục 2.2. [Làm lại câu B21-P05](../luyen-tap/?item=THPT-G11-CHVI-B21-P05).
+        **Tự sửa:** Lập miền và giao nghiệm; ôn mục 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P05">Làm lại câu B21-P05</a>.
 
     <span data-thpt-help-id="HELP-G11-CHVI-B21-02" hidden></span>
 
@@ -230,7 +230,7 @@
 
         **Vì sao sai:** Hàm mũ và logarit cơ số này đều nghịch biến.
 
-        **Tự sửa:** Quan sát hình và kiểm chiều bằng hai số mũ cụ thể. [Làm lại câu B21-P04](../luyen-tap/?item=THPT-G11-CHVI-B21-P04).
+        **Tự sửa:** Quan sát hình và kiểm chiều bằng hai số mũ cụ thể. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P04">Làm lại câu B21-P04</a>.
 
     <span data-thpt-help-id="HELP-G11-B21-03" hidden></span>
 
@@ -238,7 +238,7 @@
 
         **Vì sao sai:** Giá trị lũy thừa cơ số dương luôn dương; phải phân loại vế phải.
 
-        **Tự sửa:** Ôn mục 2.1, 2.3 và ví dụ 3.3. [Làm lại câu B21-P07](../luyen-tap/?item=THPT-G11-CHVI-B21-P07).
+        **Tự sửa:** Ôn mục 2.1, 2.3 và ví dụ 3.3. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P07">Làm lại câu B21-P07</a>.
 
     <span data-thpt-help-id="HELP-G11-B21-04" hidden></span>
 
@@ -246,8 +246,8 @@
 
         **Vì sao sai:** Một nghiệm ngưỡng thực không tự cho kỳ đầu vượt.
 
-        **Tự sửa:** Ghi dấu > hoặc ≥; kiểm hai kỳ liền kề. [Làm lại câu B21-P06](../luyen-tap/?item=THPT-G11-CHVI-B21-P06).
+        **Tự sửa:** Ghi dấu > hoặc ≥; kiểm hai kỳ liền kề. <a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P06">Làm lại câu B21-P06</a>.
 
-    **Học tiếp:** [Core và Luyện tập](../luyen-tap/) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/) · [Tự luận Chương VI](../../../../thu-vien/tu-luan-g11-chuong-vi/).
+    **Học tiếp:** <a href="../luyen-tap/">Core và Luyện tập</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a> · <a href="../../../../thu-vien/tu-luan-g11-chuong-vi/">Tự luận Chương VI</a>.
 
     <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 21 (trang in 20–24).</p>
