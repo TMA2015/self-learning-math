@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 370" role="img" aria-labelledby="t d">
+<title id="t">Tam giác vuông 3 4 5 và hệ thức lượng tam giác</title>
+<desc id="d">Tam giác ABC vuông tại A; AB=c bằng 3 đơn vị, AC=b bằng 4 đơn vị, BC=a bằng 5 đơn vị. Góc A bằng 90 độ nên hệ thức côsin tại A rút về định lý Pythagoras: 5 bình phương bằng 4 bình phương cộng 3 bình phương. Diện tích bằng 6 đơn vị vuông.</desc>
+<rect width="600" height="370" rx="12" fill="white" stroke="#94a3b8"/>
+<polygon points="110,295 290,295 110,55" fill="#e0f2fe" stroke="#075985" stroke-width="3"/>
+<path d="M110 275 L130 275 L130 295" fill="none" stroke="#be123c" stroke-width="3"/>
+<g font-family="Arial,sans-serif" font-size="18" fill="#0f172a"><text x="91" y="321">A=90°</text><text x="296" y="310">B</text><text x="91" y="47">C</text><text x="184" y="324">c=3</text><text x="41" y="190">b=4</text><text x="219" y="156">a=5</text><text x="339" y="94">a²=b²+c²−2bc cos A</text><text x="339" y="139">25=16+9−0</text><text x="339" y="183">S=½·3·4·sin90°=6</text></g>
+</svg>
