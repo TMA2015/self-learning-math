@@ -175,11 +175,16 @@ const base="http://127.0.0.1:8765/thpt-preview/";
    await query("tập hợp",1);
    await query("tap hop",1);
    await query("logic",1);
-   await query("hàm số",0); // legacy technical sample is not a published topic
-   await query("ham so",0);
+   // W2 catalog: 11 published full learning paths, no false unpublished expectations.
+   assert.equal(await page.locator("[data-thpt-filter-item][data-thpt-topic]").count(),11);
+   await query("hàm số",1);
+   await query("ham so",1);
    assert.equal(await page.locator('.topic01-legacy-note a[href*="ham-so/kien-thuc/"]').count(),1,"Preserve technical sample deep link");
-   await query("chuyên đề 2",0);
-   await query("đạo hàm",0); // Not published: placeholder must not imply otherwise
+   for(const n of [2,3,4,5,6,7,8,9,10,11]){
+    const hits=await query("chuyên đề "+n,1);
+    assert((await hits.first().getAttribute("href")).endsWith("cd"+String(n).padStart(2,"0")+"/kien-thuc/"),"CĐ"+n+" discovery");
+   }
+   await query("đạo hàm",2);
    assert.equal(await page.locator("[data-thpt-filter-input]").count(),1);
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);
    assert(overflow<=20,"Search UI overflow at "+viewport.width);
