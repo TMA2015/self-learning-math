@@ -1,92 +1,193 @@
 # Bài 30. Công thức nhân xác suất cho hai biến cố độc lập
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VIII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do → điều kiện → đọc hình D5 → Tự thử trước Core → xem D2 giải có suy luận → Core, Luyện tập, Tự khắc phục D6. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VIII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VIII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Tính giao khi độc lập, đọc cây xác suất và chọn đúng cách tính ít nhất một.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VIII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav></div>
 
-## 1. Kiến thức SGK — hình thành bản chất trước quy tắc
+=== "Khám phá kiến thức"
 
-### 1.1. Cần biết cơ hội "cả hai" thay vì "ít nhất một"
-Hai khâu sản xuất được kiểm tra riêng: nếu xác suất sản phẩm qua khâu 1 là 3/4 và qua khâu 2 là 2/3, em muốn biết **qua cả hai khâu**. Đây là **giao** chứ không phải **hợp**. Trong mô hình hai khâu độc lập, cơ hội thành công cả hai bằng 3/4 × 2/3=1/2. Không thể cộng 3/4+2/3 (>1): con số đó không thể là xác suất.
+    Hai cảm biến có thể cùng phát hiện một vật hoặc chỉ một cảm biến phát hiện. Muốn tính cơ hội cả hai cùng thành công, phải biết cơ hội của cảm biến thứ hai có thay đổi khi cảm biến thứ nhất thành công hay không. Khi độc lập, tỉ lệ thành công thứ hai giữ nguyên trong từng nhánh; lúc ấy mới được nhân hai xác suất riêng.
 
-### 1.2. Vì sao được nhân **khi độc lập**?
-Nếu A và B độc lập, phần B xảy ra trong các trường hợp A xảy ra có **cùng tỉ lệ** P(B) như tổng thể (ý nghĩa không thay đổi khả năng). Vì vậy phần giao có tỉ lệ P(A)×P(B): **P(A∩B)=P(A)P(B)**. Đây chính là công thức nhân cho hai biến cố độc lập. **Không được nhân hai xác suất khi chưa có giả thiết độc lập**. Chẳng hạn nếu rút hai thẻ liên tiếp **không hoàn lại**, xác suất màu của lần hai thay đổi theo lần một; quy tắc đơn giản không áp dụng một cách tự động. Công thức này khác với quy tắc cộng, vốn áp dụng cho mọi cặp biến cố.
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVIII-B30-01_R00.svg" alt="Cây hai bước độc lập: nhánh đầu 3/4 và 1/4, mỗi nút bước hai có nhánh 2/3 và 1/3; bốn lá 1/2, 1/4, 1/6, 1/12."><figcaption>Đọc hình: Cây hai bước độc lập: nhánh đầu 3/4 và 1/4, mỗi nút bước hai có nhánh 2/3 và 1/3; bốn lá 1/2, 1/4, 1/6, 1/12. Không nhân xác suất biên trên cây phụ thuộc.</figcaption></figure>
 
-### 1.3. Kiểm tra độc lập và phân biệt xung khắc
-Nếu đã biết P(A), P(B), P(A∩B), ta kiểm độc lập bằng đẳng thức P(A∩B)=P(A)P(B). Nếu hai biến cố xung khắc và **cả hai có xác suất dương**, thì P(A∩B)=0 còn P(A)P(B)>0, suy ra chúng **không độc lập**. Ngoại lệ P=0 cần tách riêng, vì khi đó có thể vừa xung khắc vừa độc lập. Đừng kết luận "độc lập = không xảy ra cùng lúc" — đó là nhầm khái niệm.
+    ### 1.1. Nhân cho giao
+    
+    Nếu A xảy ra ở 3/4 trường hợp, và B có tỉ lệ 2/3 ngay trong nhóm ấy, phần chung là 3/4 của 2/3.
+    
+    **Vận dụng.** Hai máy độc lập, cơ hội đạt 5/6 và 3/5. Tính cả hai đạt.
+    
+    <span data-ped-first-try="1" data-outcome-id="G11-B30-MULTIPLY_INDEPENDENT" data-thpt-first-try-id="THPT-G11-B30-TRY01" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** 5/6·3/5=1/2.
+    
+    <span data-thpt-help-id="HELP-G11-B30-TRY01" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Chỉ nhân vì đã nêu độc lập. [Luyện lại câu B30-C01](../luyen-tap/?item=THPT-G11-CHVIII-B30-C01)
 
-### 1.4. "Ít nhất một" dùng bù và nhân
-Với hai biến cố **độc lập** có P(A)=a, P(B)=b, xác suất *không xảy ra cái nào* là (1−a)(1−b). Do đó **P(ít nhất một)=1−(1−a)(1−b)**. Đây là quy tắc bù áp dụng cho giao của hai biến cố đối; chỉ nhân khi giả thiết độc lập hợp lệ. Với hai phép thử độc lập cùng cơ hội thành công p, xác suất hai lần đều thành công là p²; ít nhất một thành công là 1−(1−p)². Không mở rộng tùy tiện thành mô hình các phép thử phụ thuộc.
+    ### 1.2. Kiểm tra bằng số liệu
+    
+    So xác suất giao thực tế với tích biên. Nếu khác nhau, không độc lập.
+    
+    **Vận dụng.** P(A)=0,4, P(B)=0,5, P(AB)=0,25. Độc lập không?
+    
+    <span data-ped-first-try="2" data-outcome-id="G11-B30-VERIFY_INDEPENDENCE" data-thpt-first-try-id="THPT-G11-B30-TRY02" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Không; tích=0,2 khác 0,25.
+    
+    <span data-thpt-help-id="HELP-G11-B30-TRY02" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không suy luận từ tên A,B. [Luyện lại câu B30-C02](../luyen-tap/?item=THPT-G11-CHVIII-B30-C02)
 
-### 1.5. Đọc cây biến cố
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVIII-B30-01_R00.svg" alt="FIG-G11-CHVIII-B30-01"/><figcaption>Hình D5 — FIG-G11-CHVIII-B30-01. Đọc hình cùng các chỉ dẫn trong bài trước khi dùng quy tắc.</figcaption></figure>
-Tại mỗi nút, xác suất của hai nhánh cộng bằng 1. Nhánh thành công phép 2 có 2/3 **ở cả hai nhánh của phép 1** vì đã giả thiết độc lập. Xác suất của một lá là tích các xác suất trên đường đi; bốn lá 1/2+1/4+1/6+1/12=1. Đó là phép kiểm tổng xác suất rất hữu ích.
+    ### 1.3. Cây và các lần thử
+    
+    Trong cây hai phép thử độc lập, các nhánh bước hai có cùng xác suất dù bước một thế nào.
+    
+    **Vận dụng.** Hai lần độc lập, mỗi lần thành công 2/3. Tính xác suất cả hai thành công và cả hai thất bại.
+    
+    <span data-ped-first-try="3" data-outcome-id="G11-B30-REPEATED_TRIALS" data-thpt-first-try-id="THPT-G11-B30-TRY03" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** 4/9 và 1/9; hai trường hợp còn lại mỗi 2/9.
+    
+    <span data-thpt-help-id="HELP-G11-B30-TRY03" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Bốn lá phải cộng bằng 1. [Luyện lại câu B30-C03](../luyen-tap/?item=THPT-G11-CHVIII-B30-C03)
 
-### 1.6. Tự thử
-Hai cảm biến **hoạt động độc lập**, có xác suất phát hiện lần lượt 4/5 và 3/4. Tính (i) cùng phát hiện, (ii) ít nhất một phát hiện. 
+    ### 1.4. Dùng bù
+    
+    Ít nhất một thành công gồm cả hai thành công và chỉ một. Bù là cả hai thất bại.
+    
+    **Vận dụng.** Hai thiết bị độc lập, xác suất đạt 3/5 và 4/5. Tính ít nhất một đạt.
+    
+    <span data-ped-first-try="4" data-outcome-id="G11-B30-AT_LEAST_ONE" data-thpt-first-try-id="THPT-G11-B30-TRY04" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** 1−(2/5)(1/5)=23/25.
+    
+    <span data-thpt-help-id="HELP-G11-B30-TRY04" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không nhầm với đúng một hay cả hai. [Luyện lại câu B30-C04](../luyen-tap/?item=THPT-G11-CHVIII-B30-C04)
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Đối chiếu sau thử:</strong> (i) 3/5, (ii) 1−(1/5)(1/4)=19/20. Hãy giải thích vì sao phải dùng tích ở (i), bù ở (ii).</p></details>
+    ### 1.5. Độc lập và xung khắc
+    
+    Nếu hai biến cố dương mà xung khắc, giao bằng 0 nhưng tích dương.
+    
+    **Vận dụng.** P(A)=1/4, P(B)=1/3, A,B xung khắc. Chúng độc lập không?
+    
+    <span data-ped-first-try="5" data-outcome-id="G11-B30-INDEPENDENT_VS_DISJOINT" data-thpt-first-try-id="THPT-G11-B30-TRY05" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** Không; P(AB)=0 ≠ 1/12.
+    
+    <span data-thpt-help-id="HELP-G11-B30-TRY05" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Trường hợp xác suất 0 cần xét riêng bằng đẳng thức. [Luyện lại câu B30-C05](../luyen-tap/?item=THPT-G11-CHVIII-B30-C05)
 
+    ### 1.6. Bảng số liệu hai chiều
+    
+    Chọn đều một người từ bảng. Tính ba tỉ lệ có cùng mẫu số; kiểm giao với tích biên. Không suy ra quan hệ nhân quả.
+    
+    **Vận dụng.** Trong 100 người, 30 chọn A, 40 chọn B, 12 chọn cả hai. Kiểm tra độc lập trong mô hình chọn người từ bảng.
+    
+    <span data-ped-first-try="6" data-outcome-id="G11-B30-REAL_CONTEXT" data-thpt-first-try-id="THPT-G11-B30-TRY06" hidden></span>
+    
+    ??? question "Đối chiếu"
+    
+        **Lời giải:** P(A)=0,3; P(B)=0,4; P(AB)=0,12=0,3·0,4; độc lập trong mô hình này.
+    
+    <span data-thpt-help-id="HELP-G11-B30-TRY06" hidden></span>
+    
+    ??? tip "Kiểm lỗi"
+    
+        Không suy rộng ra toàn dân nếu mẫu không đại diện. [Luyện lại câu B30-C06](../luyen-tap/?item=THPT-G11-CHVIII-B30-C06)
 
-## 2. Ví dụ có suy luận
+=== "Kiến thức SGK"
 
-#### EX-G11-CHVIII-B30-01: Nhân hai xác suất độc lập
+    ### 2.1. Công thức nhân xác suất cho hai biến cố độc lập
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Công thức nhân xác suất cho hai biến cố độc lập.</strong>
+    
+    Nếu A, B độc lập thì tỉ lệ B trong nhóm A không đổi so với toàn thể. Vì vậy phần chung bằng tỉ lệ nhóm A nhân tỉ lệ B.
+    \[
+    P(AB)=P(A)P(B).
+    \]
+    Trong mô hình hữu hạn, đẳng thức này cũng là tiêu chí kiểm tra độc lập, kể cả các trường hợp xác suất 0 hoặc 1. Khi \(P(AB)\ne P(A)P(B)\), hai biến cố không độc lập. Với hai biến cố xung khắc có xác suất dương, giao bằng 0 trong khi tích lớn hơn 0. Nếu một xác suất bằng 0, không được dùng kết luận 'xung khắc thì không độc lập'. Không nhân hai xác suất biên chỉ vì đề nói 'và'; rút không hoàn lại có thể làm thay đổi tỉ lệ.
+    
+    </div>
 
-**Nhiệm vụ:** Hai thiết bị hoạt động độc lập, tỉ lệ không lỗi lần lượt 4/5 và 7/10. Tính cả hai không lỗi.
+    ### 2.2. Vận dụng
+    
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Vận dụng.</strong>
+    
+    Nhờ tính độc lập của các cặp biến cố đối ở B28, nếu \(P(A)=a,P(B)=b\) và A,B độc lập, ta có \(P(\overline A\,\overline B)=(1-a)(1-b)\). Do đó \(P(A\cup B)=1-(1-a)(1-b)\). Đúng một bằng \(a(1-b)+(1-a)b\); lúc tính hợp cũng có thể dùng a+b−ab. Cây độc lập có hai nhánh tại mỗi nút cộng bằng 1; nhân dọc một đường, cộng các lá rời nhau ứng với câu hỏi. Với nhiều phép thử, nhân toàn bộ chỉ khi độc lập đồng thời, không suy từ độc lập từng cặp. Trong bảng hai chiều, chia tổng hàng, tổng cột và ô giao cho cùng tổng N, so sánh tích biên với giao; kết luận chỉ cho phân bố được mô tả, không khẳng định quan hệ nhân quả.
+    
+    </div>
 
-**Đáp án và lời giải:** (4/5)(7/10)=14/25.
+=== "Ví dụ"
 
-**Tại sao cách làm đúng:** Nhân vì giả thiết độc lập; sự kiện "cả hai" là giao.
+    ### 3.1. Nhân hai xác suất
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B30-01"><p><strong>Đề bài:</strong> Hai máy hoạt động độc lập, xác suất tốt 7/8 và 4/7. Tính cả hai tốt.</p><p><strong>Phân tích:</strong> Giao, có giả thiết độc lập.</p><p><strong>Lời giải:</strong> 7/8·4/7=1/2.</p><p><strong>Kiểm lại:</strong> Không lớn hơn mỗi xác suất riêng.</p></div>
 
-#### EX-G11-CHVIII-B30-02: Độc lập có thể giao khác rỗng
+    ### 3.2. Xác nhận độc lập
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B30-02"><p><strong>Đề bài:</strong> P(A)=3/5, P(B)=1/3, P(AB)=1/5. Kiểm tra.</p><p><strong>Phân tích:</strong> So tích biên với giao.</p><p><strong>Lời giải:</strong> 3/5·1/3=1/5, bằng giao nên độc lập.</p><p><strong>Kiểm lại:</strong> Giao dương không mâu thuẫn độc lập.</p></div>
 
-**Nhiệm vụ:** Biết P(A)=2/5, P(B)=1/2 và P(A∩B)=1/5. Hai biến cố độc lập không?
+    ### 3.3. Phát hiện phụ thuộc
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B30-03"><p><strong>Đề bài:</strong> P(A)=1/2, P(B)=2/3, P(AB)=1/4. Kiểm tra.</p><p><strong>Phân tích:</strong> Giao phải bằng tích nếu độc lập.</p><p><strong>Lời giải:</strong> Tích=1/3 khác 1/4 nên không độc lập.</p><p><strong>Kiểm lại:</strong> Dữ kiện vẫn hợp lệ: hợp=11/12.</p></div>
 
-**Đáp án và lời giải:** Có, vì 2/5·1/2=1/5.
+    ### 3.4. Ít nhất một
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B30-04"><p><strong>Đề bài:</strong> Hai lần thử độc lập, mỗi lần đạt 3/5. Tính ít nhất một đạt.</p><p><strong>Phân tích:</strong> Lấy bù cả hai trượt.</p><p><strong>Lời giải:</strong> 1−(2/5)^2=21/25.</p><p><strong>Kiểm lại:</strong> Cách khác: 3/5+3/5−9/25=21/25.</p></div>
 
-**Tại sao cách làm đúng:** Giao dương không ngăn độc lập; phân biệt với xung khắc.
+    ### 3.5. Ba lần thử độc lập đồng thời
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B30-05"><p><strong>Đề bài:</strong> Ba phép thử độc lập đồng thời, xác suất đạt 1/3, 3/4, 4/5. Tính cả ba đạt.</p><p><strong>Phân tích:</strong> Mở rộng tích cho mô hình độc lập đồng thời.</p><p><strong>Lời giải:</strong> 1/3·3/4·4/5=1/5.</p><p><strong>Kiểm lại:</strong> Không dùng kết quả này chỉ từ độc lập từng cặp.</p></div>
 
-#### EX-G11-CHVIII-B30-03: Không độc lập dù cùng tỉ lệ biên
+    ### 3.6. Không hoàn lại
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-CHVIII-B30-06"><p><strong>Đề bài:</strong> Hộp 4 đỏ, 3 xanh. Rút đều 2 bi liên tiếp không hoàn lại. A: đầu xanh, B: sau xanh. Hai biến cố độc lập không?</p><p><strong>Phân tích:</strong> Khi đầu xanh, còn 2 xanh/6; khi đầu đỏ, còn 3 xanh/6.</p><p><strong>Lời giải:</strong> 1/3 khác 1/2 nên phụ thuộc; không nhân (3/7)^2.</p><p><strong>Kiểm lại:</strong> Không cần công thức xác suất có điều kiện tổng quát.</p></div>
 
-**Nhiệm vụ:** Biết P(A)=1/2, P(B)=1/3 nhưng P(A∩B)=1/12. Độc lập?
+    ### 3.7. Kiểm tra độc lập bằng bảng
+    
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G11-B30-R02-07"><p><strong>Đề bài:</strong> Khảo sát 200 người: trong 80 người dùng xe buýt có 24 người mang ô; trong 120 người không dùng xe buýt có 56 người mang ô. Chọn đều một người. Hai biến cố dùng xe buýt và mang ô có độc lập không?</p><p><strong>Phân tích:</strong> Bảng 2×2: xe buýt có ô 24, không ô 56; không xe buýt có ô 56, không ô 64. Tổng mang ô 80.</p><p><strong>Lời giải:</strong> P(A)=80/200=0,4; P(B)=80/200=0,4; P(AB)=24/200=0,12 ≠ 0,16. Không độc lập trong phân bố khảo sát.</p><p><strong>Kiểm lại:</strong> Hàng tổng 80,120; cột tổng 80,120; tổng 200. Không kết luận xe buýt gây ảnh hưởng đến việc mang ô.</p></div>
 
-**Đáp án và lời giải:** Không; tích biên phải là 1/6, khác 1/12.
+=== "Lỗi thường gặp"
 
-**Tại sao cách làm đúng:** Độc lập phải chứng minh bằng giả thiết hoặc đẳng thức, không dựa vào tên.
+    <span data-thpt-help-id="HELP-G11-CHVIII-B30-01" hidden></span>
+    
+    ??? tip "4.1. Nhân khi chưa biết độc lập"
+    
+        Kiểm tiêu chí tích bằng giao hoặc giả thiết, xem 2.1. [Luyện lại câu B30-C01](../luyen-tap/?item=THPT-G11-CHVIII-B30-C01)
 
-#### EX-G11-CHVIII-B30-04: Ít nhất một qua bù
+    <span data-thpt-help-id="HELP-G11-CHVIII-B30-02" hidden></span>
+    
+    ??? tip "4.2. Lấy giao thay cho ít nhất một"
+    
+        Dùng bù cả hai thất bại, xem 2.2. [Luyện lại câu B30-C04](../luyen-tap/?item=THPT-G11-CHVIII-B30-C04)
 
-**Nhiệm vụ:** Hai lần kiểm độc lập, mỗi lần tỉ lệ đạt 3/5. Tính xác suất ít nhất một lần đạt.
+    <span data-thpt-help-id="HELP-G11-CHVIII-B30-03" hidden></span>
+    
+    ??? tip "4.3. Suy độc lập từ tên biến cố"
+    
+        Tính ba xác suất rồi so tích, xem 2.1. [Luyện lại câu B30-P02](../luyen-tap/?item=THPT-G11-CHVIII-B30-P02)
 
-**Đáp án và lời giải:** 1−(2/5)^2=21/25.
+    [Core và Luyện tập Bài 30](luyen-tap.md) · [Tự luận Chương VIII](../../../thu-vien/tu-luan-g11-chuong-viii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
-**Tại sao cách làm đúng:** Tính bù là hai lần đều trượt: 2/5·2/5.
-
-#### EX-G11-CHVIII-B30-05: Ba phép thử độc lập
-
-**Nhiệm vụ:** Ba công đoạn độc lập có xác suất hoàn thành 1/2, 3/4, 4/5. Cả ba hoàn thành?
-
-**Đáp án và lời giải:** (1/2)(3/4)(4/5)=3/10.
-
-**Tại sao cách làm đúng:** Nhân theo điều kiện độc lập của cả ba; nói rõ cần độc lập đồng thời, không chỉ từng cặp.
-
-#### EX-G11-CHVIII-B30-06: Vì sao không dùng phép nhân khi phụ thuộc
-
-**Nhiệm vụ:** Hộp có 3 thẻ xanh và 2 đỏ; rút hai thẻ không hoàn lại. Hai biến cố "lần đầu xanh" và "lần hai xanh" có độc lập?
-
-**Đáp án và lời giải:** Không. Nếu lần đầu xanh, P(lần hai xanh)=2/4=1/2; ban đầu P(lần hai xanh)=3/5.
-
-**Tại sao cách làm đúng:** Lấy đi thẻ làm thay đổi thành phần hộp. Ví dụ đối chứng chỉ yêu cầu nhận biết không độc lập; công thức tổng quát phụ thuộc không thuộc Core B30.
-
-
----
-
-## 3. Tự khắc phục lỗi
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVIII-B30-01"><summary><strong>Chẩn đoán lỗi:</strong> Nhân dù không có giả thiết độc lập.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Nhân dù không có giả thiết độc lập.</li><li><strong>Nhắc khái niệm/điều kiện:</strong> Tích P(A)P(B) chỉ khi đã biết độc lập.</li><li><strong>Giải thích vì sao:</strong> Đọc lại phần D1 của B30, vẽ tập hợp/nhánh xác suất tương ứng, rồi nói lại bằng lời trước khi thay số.</li><li><strong>Tự thử có dẫn:</strong> P(A)=1/2,P(B)=1/3 nhưng giao=1/9; độc lập? <strong>Đối chiếu sau thử:</strong> Không, tích đúng phải là 1/6.</li><li><strong>Quay về câu nguồn:</strong> Tự làm lại <code>THPT-G11-CHVIII-B30-C01</code> từ đầu, ghi lý do chọn công thức. Không tính lời giải đã xem là bằng chứng Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C01">Quay lại câu gốc THPT-G11-CHVIII-B30-C01</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVIII-B30-02"><summary><strong>Chẩn đoán lỗi:</strong> Tính ít nhất một bằng tích xác suất thành công.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Tính ít nhất một bằng tích xác suất thành công.</li><li><strong>Nhắc khái niệm/điều kiện:</strong> Lấy bù cả hai thất bại; nhân xác suất thất bại khi độc lập.</li><li><strong>Giải thích vì sao:</strong> Đọc lại phần D1 của B30, vẽ tập hợp/nhánh xác suất tương ứng, rồi nói lại bằng lời trước khi thay số.</li><li><strong>Tự thử có dẫn:</strong> Hai máy độc lập cùng tỉ lệ lỗi 1/4: ít nhất một thành công? <strong>Đối chiếu sau thử:</strong> 1−1/16=15/16.</li><li><strong>Quay về câu nguồn:</strong> Tự làm lại <code>THPT-G11-CHVIII-B30-C04</code> từ đầu, ghi lý do chọn công thức. Không tính lời giải đã xem là bằng chứng Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-C04">Quay lại câu gốc THPT-G11-CHVIII-B30-C04</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVIII-B30-03"><summary><strong>Chẩn đoán lỗi:</strong> Dựa tên gọi mà đoán độc lập.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Dựa tên gọi mà đoán độc lập.</li><li><strong>Nhắc khái niệm/điều kiện:</strong> Đối chiếu đúng P(giao) với tích hai xác suất riêng.</li><li><strong>Giải thích vì sao:</strong> Đọc lại phần D1 của B30, vẽ tập hợp/nhánh xác suất tương ứng, rồi nói lại bằng lời trước khi thay số.</li><li><strong>Tự thử có dẫn:</strong> Nếu 0,5 và 0,4 mà giao 0,2 thì? <strong>Đối chiếu sau thử:</strong> Độc lập vì 0,5·0,4=0,2.</li><li><strong>Quay về câu nguồn:</strong> Tự làm lại <code>THPT-G11-CHVIII-B30-P02</code> từ đầu, ghi lý do chọn công thức. Không tính lời giải đã xem là bằng chứng Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVIII-B30-P02">Quay lại câu gốc THPT-G11-CHVIII-B30-P02</a></p></details>
-
-## 4. Tiếp tục
-
-[Core/Luyện tập Bài 30](luyen-tap.md) · [Tự luận Chương VIII](../../../thu-vien/tu-luan-g11-chuong-viii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+*Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 30, trang in 76–78.*
