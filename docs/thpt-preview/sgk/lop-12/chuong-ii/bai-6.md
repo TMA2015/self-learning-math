@@ -26,7 +26,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Phân biệt quãng đường với độ dời; dùng ba cạnh vuông góc thật. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b06-c01); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b06-p01). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Độ dài vectơ là độ dài đoạn nối hai đầu trong không gian; ba kích thước phải ghép bằng Pythagore, còn hành trình quay về điểm đầu có độ dời vectơ-không dù quãng đường không bằng 0.
+
+        **Tự sửa:** Phân biệt quãng đường với độ dời; dùng ba cạnh vuông góc thật. <a href="../luyen-tap/#thpt-g12-b06-c01">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b06-p01">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.2. Bằng nhau không chỉ song song
     
@@ -44,7 +46,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        So chiều mũi tên trước khi so độ dài. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b06-c02); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b06-p03). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Hai vectơ song song có thể ngược chiều hoặc khác độ dài, nên không đủ căn cứ kết luận bằng nhau; phải kiểm cả chiều lẫn độ dài.
+
+        **Tự sửa:** So chiều mũi tên trước khi so độ dài. <a href="../luyen-tap/#thpt-g12-b06-c02">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b06-p03">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.3. Ghép hành trình và tìm hiệu
     
@@ -64,7 +68,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Dùng các vectơ cạnh bằng nhau để nối; không cộng tên điểm. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b06-c03); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b06-p05). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Quy tắc cộng vectơ đòi nối đầu–đuôi hoặc chuyển vectơ bằng nhau về các cạnh thích hợp; trừ vectơ tương đương cộng vectơ đối, không phải lấy tổng độ dài.
+
+        **Tự sửa:** Dùng các vectơ cạnh bằng nhau để nối; không cộng tên điểm. <a href="../luyen-tap/#thpt-g12-b06-c03">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b06-p05">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.4. Nhân một số với vectơ
     
@@ -82,7 +88,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tách dấu k và trị tuyệt đối của k. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b06-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b06-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Độ dài của k a nhân |k|, nhưng chiều phụ thuộc dấu k; hệ số 0 cho vectơ-không, không nên nói nó có một hướng hình học xác định.
+
+        **Tự sửa:** Tách dấu k và trị tuyệt đối của k. <a href="../luyen-tap/#thpt-g12-b06-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b06-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.5. Trung điểm, trọng tâm và tứ diện
     
@@ -102,7 +110,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không lấy 3/4 chiều cao tính từ đáy; I gần G hơn A. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b06-c04); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b06-p07). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Trọng tâm tứ diện nằm trên trung tuyến từ đỉnh đến trọng tâm tam giác đáy theo tỉ lệ AI/AG=3/4; khoảng cách đến đáy không bằng đoạn IG nếu AG không vuông góc đáy.
+
+        **Tự sửa:** Không lấy 3/4 chiều cao tính từ đáy; I gần G hơn A. <a href="../luyen-tap/#thpt-g12-b06-c04">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b06-p07">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.6. Góc và tích vô hướng
     
@@ -120,7 +130,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không đổi góc tù thành góc nhọn; không chia cho độ dài 0. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b06-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b06-p09). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Góc giữa hai vectơ khác không lấy từ 0° đến 180°, không rút về góc nhọn như góc giữa hai đường thẳng; tích với vectơ-không bằng 0 không đòi một góc duy nhất.
+
+        **Tự sửa:** Không đổi góc tù thành góc nhọn; không chia cho độ dài 0. <a href="../luyen-tap/#thpt-g12-b06-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b06-p09">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.7. Tính góc từ hình khối
     
@@ -138,7 +150,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Xác định tam giác thật, không đo góc chiếu trên trang. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b06-c05); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b06-p09). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Đường chéo mặt và cạnh hình vuông tạo góc 45°; chọn nhầm đường chéo không gian hoặc góc bù sẽ đổi giá trị tích vô hướng.
+
+        **Tự sửa:** Xác định tam giác thật, không đo góc chiếu trên trang. <a href="../luyen-tap/#thpt-g12-b06-c05">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b06-p09">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
     ### 1.8. Công của lực và mô hình
     
@@ -156,7 +170,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Đọc đúng hướng lực và độ dời; không áp dụng máy móc cho lực biến thiên. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b06-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b06-p11). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
+        **Vì sao dễ sai:** Công của lực không đổi bằng tích vô hướng lực với độ dời, không phải với quãng đường vô hướng; góc và đơn vị N·m=J đều phải phù hợp mô hình.
+
+        **Tự sửa:** Đọc đúng hướng lực và độ dời; không áp dụng máy móc cho lực biến thiên. <a href="../luyen-tap/#thpt-g12-b06-c06">Ôn câu nền tảng</a>; <a href="../luyen-tap/#thpt-g12-b06-p11">thử câu luyện tập khác</a>. Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
 === "Kiến thức SGK"
 
@@ -232,50 +248,50 @@
     
     ??? tip "Cách tự sửa"
     
-        Phân biệt quãng đường với độ dời; dùng ba cạnh vuông góc thật. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b06-c01); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b06-p01).
+        Phân biệt quãng đường với độ dời; dùng ba cạnh vuông góc thật. <a href="../luyen-tap/#thpt-g12-b06-c01">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b06-p01">luyện câu khác rồi quay lại</a>.
 
     ### 4.2. Bằng nhau không chỉ song song
     
     ??? tip "Cách tự sửa"
     
-        So chiều mũi tên trước khi so độ dài. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b06-c02); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b06-p03).
+        So chiều mũi tên trước khi so độ dài. <a href="../luyen-tap/#thpt-g12-b06-c02">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b06-p03">luyện câu khác rồi quay lại</a>.
 
     ### 4.3. Ghép hành trình và tìm hiệu
     
     ??? tip "Cách tự sửa"
     
-        Dùng các vectơ cạnh bằng nhau để nối; không cộng tên điểm. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b06-c03); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b06-p05).
+        Dùng các vectơ cạnh bằng nhau để nối; không cộng tên điểm. <a href="../luyen-tap/#thpt-g12-b06-c03">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b06-p05">luyện câu khác rồi quay lại</a>.
 
     ### 4.4. Nhân một số với vectơ
     
     ??? tip "Cách tự sửa"
     
-        Tách dấu k và trị tuyệt đối của k. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b06-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b06-p07).
+        Tách dấu k và trị tuyệt đối của k. <a href="../luyen-tap/#thpt-g12-b06-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b06-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.5. Trung điểm, trọng tâm và tứ diện
     
     ??? tip "Cách tự sửa"
     
-        Không lấy 3/4 chiều cao tính từ đáy; I gần G hơn A. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b06-c04); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b06-p07).
+        Không lấy 3/4 chiều cao tính từ đáy; I gần G hơn A. <a href="../luyen-tap/#thpt-g12-b06-c04">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b06-p07">luyện câu khác rồi quay lại</a>.
 
     ### 4.6. Góc và tích vô hướng
     
     ??? tip "Cách tự sửa"
     
-        Không đổi góc tù thành góc nhọn; không chia cho độ dài 0. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b06-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b06-p09).
+        Không đổi góc tù thành góc nhọn; không chia cho độ dài 0. <a href="../luyen-tap/#thpt-g12-b06-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b06-p09">luyện câu khác rồi quay lại</a>.
 
     ### 4.7. Tính góc từ hình khối
     
     ??? tip "Cách tự sửa"
     
-        Xác định tam giác thật, không đo góc chiếu trên trang. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b06-c05); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b06-p09).
+        Xác định tam giác thật, không đo góc chiếu trên trang. <a href="../luyen-tap/#thpt-g12-b06-c05">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b06-p09">luyện câu khác rồi quay lại</a>.
 
     ### 4.8. Công của lực và mô hình
     
     ??? tip "Cách tự sửa"
     
-        Đọc đúng hướng lực và độ dời; không áp dụng máy móc cho lực biến thiên. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b06-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b06-p11).
+        Đọc đúng hướng lực và độ dời; không áp dụng máy móc cho lực biến thiên. <a href="../luyen-tap/#thpt-g12-b06-c06">Ôn lại câu Core</a>; <a href="../luyen-tap/#thpt-g12-b06-p11">luyện câu khác rồi quay lại</a>.
 
-    [Core Bài 6](../luyen-tap/#b06-core) · [Luyện tập và Tự luận](../luyen-tap/#b06-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b06-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
+    <a href="../luyen-tap/#b06-core">Core Bài 6</a> · <a href="../luyen-tap/#b06-practice">Luyện tập và Tự luận</a> · <a href="../luyen-tap/#b06-help">Hỗ trợ khi gặp khó khăn</a> · <a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a>
 
-*Nguồn đối chiếu: SGK Toán 12 Kết nối tri thức, Tập một, trang in 45–59.*
+    <p class="thpt-r4-footnote">Nguồn học thuật S1: SGK Toán 12 – Kết nối tri thức với cuộc sống, tập một, Bài 6 (trang in 45–59). SBT cùng bộ được kiểm qua biên bản nguồn lịch sử; trang in không đồng nhất chỉ số PDF.</p>
