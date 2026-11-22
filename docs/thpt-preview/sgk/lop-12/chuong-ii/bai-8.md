@@ -120,6 +120,24 @@
     
         Chỉ đồng nhất hai số nếu hành trình thẳng không đổi chiều. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b08-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b08-p11). Sau đó tự làm lại Vận dụng mà không nhìn lời giải.
 
+    ### 1.7. Dự báo vị trí khi giữ nguyên vận tốc
+
+    Nếu thiết bị đi thẳng đều, vectơ dịch chuyển tỉ lệ với thời gian. Biết vị trí A, B sau khoảng thời gian t, nếu tiếp tục cùng vectơ vận tốc trong h giây thì độ dời tiếp theo là $(h/t)\overrightarrow{AB}$, với t>0. Cộng độ dời vào B, không cộng vào A.
+
+    **Vận dụng.** Robot đi từ A(1;2;0) đến B(5;0;2) m trong 4 s. Sau 2 s tiếp theo, nếu giữ nguyên vectơ vận tốc, tìm vị trí C.
+
+    <span data-ped-first-try="7" data-outcome-id="G12-CHII-B08-O06" data-thpt-first-try-id="THPT-G12-B08-TRY07" hidden></span>
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** $\overrightarrow{AB}=(4;-2;2)$; $\overrightarrow{BC}=\frac24\overrightarrow{AB}=(2;-1;1)$. C(7;−1;3) m. Chỉ áp dụng khi giữ nguyên cả hướng và độ lớn của vectơ vận tốc.
+
+    <span data-thpt-help-id="HELP-G12-B08-TRY07" hidden></span>
+
+    ??? tip "Kiểm lỗi"
+
+        Viết độ dời mới theo tỉ lệ thời gian; cộng vào điểm B. Kiểm BC có cùng hướng AB và độ dài bằng một nửa. [Ôn câu nền tảng](../luyen-tap/#thpt-g12-b08-c06); [thử câu luyện tập khác](../luyen-tap/#thpt-g12-b08-p11).
+
 === "Kiến thức SGK"
 
     ### 2.1. Biểu thức tọa độ của tổng, hiệu và tích với một số
@@ -172,6 +190,14 @@
     
     <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B08-R02-09"><p><strong>Đề bài:</strong> A(0;0;0), B(4;0;0), C(0;8;0), D(0;0;12). Tìm I thỏa tổng bốn vectơ từ I tới các đỉnh bằng 0.</p><p><strong>Phân tích:</strong> Cộng các vectơ vị trí bằng cách chuyển tổng về gốc O.</p><p><strong>Lời giải:</strong> Từ hệ thức ở B06, \(4\overrightarrow{OI}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}+\overrightarrow{OD}\). Lấy trung bình từng tọa độ cho I(1;2;3).</p><p><strong>Kiểm lại:</strong> Trung bình từng tọa độ: (4/4;8/4;12/4)=(1;2;3); tổng bốn vectơ bằng 0.</p></div>
 
+    ### 3.10. Góc giữa hai vectơ trong hình chóp
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B08-R02-10"><p><strong>Đề bài:</strong> Hình chóp S.ABCD có đáy chữ nhật AB=4, AD=3, SA=6, SA vuông góc đáy; đơn vị cm. Tính BD, SC và góc giữa hai vectơ \(\overrightarrow{BD},\overrightarrow{SC}\).</p><p><strong>Phân tích:</strong> Chọn O=A, trục x theo AB, y theo AD, z theo AS. Đổi bài toán hình học thành hai bộ tọa độ để tính độ dài và góc.</p><p><strong>Lời giải:</strong> A(0;0;0), B(4;0;0), D(0;3;0), C(4;3;0), S(0;0;6). \(\overrightarrow{BD}=(-4;3;0)\), \(\overrightarrow{SC}=(4;3;-6)\). BD=5 cm, SC=\(\sqrt{61}\) cm. Tích vô hướng bằng −16+9=−7; cos góc bằng \(-7/(5\sqrt{61})\), nên góc tù, khoảng 100,3°.</p><p><strong>Kiểm lại:</strong> BD là đường chéo đáy; SC có bình phương độ dài 16+9+36=61. Dấu âm của tích phù hợp góc tù; hai vectơ đều khác không.</p></div>
+
+    ### 3.11. Dự báo vị trí trong không gian
+
+    <div class="thpt-g10-example-solution" data-thpt-example-id="EX-G12-B08-R02-11"><p><strong>Đề bài:</strong> Thiết bị bay từ A(20;10;5) km đến B(50;22;8) km trong 6 phút với vectơ vận tốc không đổi. Tìm vị trí sau 4 phút tiếp theo.</p><p><strong>Phân tích:</strong> Độ dời tỉ lệ với thời gian khi hướng và tốc độ đều không đổi. Dùng tỉ số 4/6 vì hai thời gian cùng đơn vị.</p><p><strong>Lời giải:</strong> \(\overrightarrow{AB}=(30;12;3)\). Độ dời tiếp theo \(\overrightarrow{BC}=\frac23\overrightarrow{AB}=(20;8;2)\), do đó C(70;30;10) km.</p><p><strong>Kiểm lại:</strong> BC cùng hướng AB, độ dài bằng 2/3; kết quả chỉ là dự báo theo giả thiết, không ngoại suy đường bay nếu vận tốc thay đổi.</p></div>
+
 === "Lỗi thường gặp"
 
     ### 4.1. Cộng, trừ, nhân số theo từng trục
@@ -209,6 +235,12 @@
     ??? tip "Cách tự sửa"
     
         Chỉ đồng nhất hai số nếu hành trình thẳng không đổi chiều. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b08-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b08-p11).
+
+    ### 4.7. Cộng độ dời mới vào sai điểm
+
+    ??? tip "Cách tự sửa"
+
+        Đánh dấu ba điểm A, B, C theo thời gian. Đoạn tiếp theo bắt đầu tại B; dùng tỉ lệ thời gian để xác định BC rồi cộng vào B. [Ôn lại câu Core](../luyen-tap/#thpt-g12-b08-c06); [luyện câu khác rồi quay lại](../luyen-tap/#thpt-g12-b08-p11).
 
     [Core Bài 8](../luyen-tap/#b08-core) · [Luyện tập và Tự luận](../luyen-tap/#b08-practice) · [Hỗ trợ khi gặp khó khăn](../luyen-tap/#b08-help) · [Tự kiểm tra cuối chương](../tu-kiem-tra-chuong/)
 
