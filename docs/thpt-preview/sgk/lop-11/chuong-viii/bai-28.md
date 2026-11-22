@@ -24,7 +24,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Không thêm các cặp vì chỉ chọn một thẻ. [Luyện lại câu B28-C01](../luyen-tap/?item=THPT-G11-CHVIII-B28-C01)
+        **Vì sao dễ sai:** Đếm các cặp là đổi phép thử một lần rút thành hai lần rút; không gian mẫu phải mô tả đúng một kết quả của thí nghiệm.
+
+        **Tự sửa:** Không thêm các cặp vì chỉ chọn một thẻ. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C01">Luyện lại câu B28-C01</a>
 
     ### 1.2. Mô tả biến cố
     
@@ -42,7 +44,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Số 1 không nguyên tố; kiểm điều kiện đồng khả năng. [Luyện lại câu B28-C02](../luyen-tap/?item=THPT-G11-CHVIII-B28-C02)
+        **Vì sao dễ sai:** Tập biến cố phải lọc kết quả đúng điều kiện; quy tắc chia số lượng chỉ hợp lệ khi các kết quả đồng khả năng.
+
+        **Tự sửa:** Số 1 không nguyên tố; kiểm điều kiện đồng khả năng. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C02">Luyện lại câu B28-C02</a>
 
     ### 1.3. Hoặc: kể cả hai
     
@@ -60,7 +64,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Nếu bỏ 3, em đang hiểu hoặc theo nghĩa loại trừ. [Luyện lại câu B28-C03](../luyen-tap/?item=THPT-G11-CHVIII-B28-C03)
+        **Vì sao dễ sai:** Trong xác suất, 'A hoặc B' là hoặc bao hàm; vùng chung nằm trong hợp đúng một lần.
+
+        **Tự sửa:** Nếu bỏ 3, em đang hiểu hoặc theo nghĩa loại trừ. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C03">Luyện lại câu B28-C03</a>
 
     ### 1.4. Và: đồng thời
     
@@ -78,7 +84,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Kiểm từng số phải chia hết cho cả 2 và 3. [Luyện lại câu B28-C04](../luyen-tap/?item=THPT-G11-CHVIII-B28-C04)
+        **Vì sao dễ sai:** Giao đòi đồng thời cả hai điều kiện; bội chung của 2 và 3 phải là bội của 6.
+
+        **Tự sửa:** Kiểm từng số phải chia hết cho cả 2 và 3. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C04">Luyện lại câu B28-C04</a>
 
     ### 1.5. Chỉ một và không có cái nào
     
@@ -96,7 +104,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Tránh hiểu 'không có cả hai' mơ hồ; viết rõ không A và không B. [Luyện lại câu B28-C05](../luyen-tap/?item=THPT-G11-CHVIII-B28-C05)
+        **Vì sao dễ sai:** Biến cố đối ̅A là mọi kết quả không thuộc A; 'chỉ một' là hai miền riêng, khác với ngoài cả hai.
+
+        **Tự sửa:** Tránh hiểu 'không có cả hai' mơ hồ; viết rõ không A và không B. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C05">Luyện lại câu B28-C05</a>
 
     ### 1.6. Xung khắc không phải độc lập
     
@@ -114,7 +124,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Hai biến cố xung khắc có xác suất dương không độc lập. [Luyện lại câu B28-C06](../luyen-tap/?item=THPT-G11-CHVIII-B28-C06)
+        **Vì sao dễ sai:** Xung khắc là giao rỗng; khi cả hai xác suất dương thì tích riêng dương, nên không thể độc lập.
+
+        **Tự sửa:** Hai biến cố xung khắc có xác suất dương không độc lập. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C06">Luyện lại câu B28-C06</a>
 
     ### 1.7. Hoàn lại hay không hoàn lại
     
@@ -132,7 +144,9 @@
     
     ??? tip "Kiểm lỗi"
     
-        Phải xét lại số bi còn trong hộp, không giữ mẫu số 5. [Luyện lại câu B28-C07](../luyen-tap/?item=THPT-G11-CHVIII-B28-C07)
+        **Vì sao dễ sai:** Không hoàn lại làm thành phần hộp thay đổi theo lượt trước, nên không dùng cơ hội cố định ở lượt sau.
+
+        **Tự sửa:** Phải xét lại số bi còn trong hộp, không giữ mẫu số 5. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C07">Luyện lại câu B28-C07</a>
 
 === "Kiến thức SGK"
 
@@ -192,20 +206,22 @@
     
     ??? tip "4.1. Hiểu hoặc là chỉ một"
     
-        Hợp vẫn gồm miền giao; xem mục 2.1. [Luyện lại câu B28-C03](../luyen-tap/?item=THPT-G11-CHVIII-B28-C03)
+        Hợp vẫn gồm miền giao; xem mục 2.1. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C03">Luyện lại câu B28-C03</a>
 
     <span data-thpt-help-id="HELP-G11-CHVIII-B28-02" hidden></span>
     
     ??? tip "4.2. Nhầm giao với hợp"
     
-        Giao đòi thỏa cả hai điều kiện; xem mục 2.2. [Luyện lại câu B28-C04](../luyen-tap/?item=THPT-G11-CHVIII-B28-C04)
+        Giao đòi thỏa cả hai điều kiện; xem mục 2.2. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-C04">Luyện lại câu B28-C04</a>
 
     <span data-thpt-help-id="HELP-G11-CHVIII-B28-03" hidden></span>
     
     ??? tip "4.3. Nhầm xung khắc với độc lập"
     
-        Giao rỗng và xác suất hai biến cố dương làm thay đổi cơ hội; xem mục 2.3. [Luyện lại câu B28-P04](../luyen-tap/?item=THPT-G11-CHVIII-B28-P04)
+        Giao rỗng và xác suất hai biến cố dương làm thay đổi cơ hội; xem mục 2.3. <a href="../luyen-tap/?item=THPT-G11-CHVIII-B28-P04">Luyện lại câu B28-P04</a>
 
-    [Core và Luyện tập Bài 28](luyen-tap.md) · [Tự luận Chương VIII](../../../thu-vien/tu-luan-g11-chuong-viii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    [Core và Luyện tập Bài 28](luyen-tap.md) · <a href="../../../thu-vien/tu-luan-g11-chuong-viii.md">Tự luận Chương VIII</a> · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
 
 *Nguồn đối chiếu: SGK Toán 11 Kết nối tri thức với cuộc sống, Tập hai, Bài 28, trang in 66–71.*
+
+    <p class="thpt-r4-footnote">Nguồn tham khảo: SGK Toán 11 – Kết nối tri thức với cuộc sống, tập hai, Bài 28 (trang in 66–71); đối chiếu SBT cùng bộ (tài liệu tham khảo luyện tập).</p>
