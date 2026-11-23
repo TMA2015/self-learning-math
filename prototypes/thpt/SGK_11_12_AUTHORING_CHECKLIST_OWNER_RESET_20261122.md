@@ -27,6 +27,18 @@
 
 **Nguyên tắc:** Hoàn thiện trang Kiến thức từng bài → tự kiểm → phản biện đúng phần thay đổi → sửa đúng phần chịu ảnh hưởng → khóa source scoped → tiếp tục bài kế tiếp. **Không đặt Core/Tự kiểm tra đã nghiệm thu thành công việc còn thiếu của đợt nâng cấp này.**
 
+## Quy tắc vận hành AUTHORING: phân công phản biện và trao đổi với chủ dự án — owner 23/11/2026
+
+**Đây là quy tắc làm việc của AUTHORING trong checklist hiện hành, không phải chuẩn học thuật thứ hai hoặc cổng nghiệm thu mới.** Áp dụng xuyên các cuộc trò chuyện, không để mỗi phiên lại thương lượng và nhắc lại cam kết tương tự.
+
+- **ChatGPT/tác giả tự chịu trách nhiệm nguồn S1 và học liệu:** đọc trực tiếp SGK/SBT; kiểm nội dung, cấu trúc, số trang nếu cần, điều kiện toán, ví dụ, hình; biên soạn, tự giải, tự đọc như học sinh, sửa và quản lý source/SHA/receipt/handoff. Các chi tiết trang in, offset PDF, tên file, SVG inventory, Git SHA là **kiểm soát nguồn nội bộ của tác giả**, không phải nội dung mặc định giao NotebookLM phản biện.
+- **NotebookLM là phản biện học thuật/sư phạm độc lập:** tập trung phát hiện **công thức/định lý/điều kiện/lời giải sai**, diễn giải thiếu bản chất hoặc khó hiểu, mạch kiến thức/đồ thị/hình/ví dụ thiếu thuyết phục, và khả năng **tự học độc lập**; nêu **vị trí + bằng chứng + mức ảnh hưởng + MINIMAL_DELTA** cụ thể. Không yêu cầu NotebookLM chứng minh mọi metadata/đếm hình/trang PDF, trừ khi sai lệch đó **thực sự** có nguy cơ dùng sai SGK, sai kiến thức hoặc sai snapshot.
+- **Bảo toàn verdict và review đúng Delta:** Academic/PED PASS gắn với source đã review; metadata/câu chữ không đổi toán có chứng cứ tương đương thì tự đối soát/log, không đưa lại NotebookLM toàn bài/chương. Chỉ phản biện lại **đúng phần nội dung học thuật/sư phạm chịu ảnh hưởng** khi có thay đổi đáng kể hoặc lỗi có bằng chứng. Không tranh luận nhiều vòng về sai khác hành chính không ảnh hưởng chất lượng học tập.
+- **Giao tiếp với chủ dự án chỉ khi có giá trị quyết định:** ưu tiên **sản phẩm đã sửa / kết quả kiểm chứng / blocker thực chất cần giải quyết / lựa chọn cần phê duyệt**, kèm link PR/Issue/commit và bước tiếp theo ngắn gọn khi hữu ích. Không dùng cuộc trò chuyện để lặp lời hứa `“từ nay tôi sẽ...”`, tự giải thích lại quy trình hoặc viết các báo cáo/trạng thái dài không tạo tiến độ.
+- **Thực thi quy tắc bằng hành động, không bằng cam kết:** khi nhận góp ý về quy trình, cập nhật ngay **đúng checklist/quy tắc canonical hiện hữu** (nếu được phép), nêu file và commit đã đổi; không tạo checklist/chuẩn song song. Nếu chưa thể cập nhật, báo thẳng blocker một lần và đưa bản sửa chính xác. **Không tự merge/deploy.**
+
+**Ngoại lệ:** thiếu/sai nguồn S1 thực chất, mâu thuẫn chuẩn có ảnh hưởng, bảo mật RD1 hoặc nguồn QA không khớp là blocker cần xử lý đúng cổng; không bỏ kiểm soát Q01–Q18/Q18 hay ghi PASS không bằng chứng. Trọng tâm công việc và trao đổi vẫn là **chất lượng học liệu để học sinh có thể tự học được**.
+
 ## Bốn điểm duy nhất quyết định công việc biên soạn
 
 1. **SGK Kết nối tri thức** — nguồn kiến thức, thứ tự, tính đúng đắn, điều kiện và phạm vi.
