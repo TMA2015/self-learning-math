@@ -213,7 +213,7 @@ function isExactW4TopicWave(files){
  try{
   const m=JSON.parse(fs.readFileSync(manifest,"utf8"));
   if(m.wave!=="W4"||m.standard!=="SLM-THPT-QUALITY-ONE v3.2.0 Q01-Q18"||
-     m.assessmentMode!=="PUBLIC_REPLAY_ONLY / CLIENT_SELF_CHECK_NO_MASTERY"||
+     m.assessmentMode!=="PUBLIC_REPLAY_ONLY / CLIENT_SELF_CHECK_NO_MASTERY; independent TOPIC_READINESS not included"||
      Object.keys(m.topics||{}).sort().join(",")!=="16,17,18")return false;
   const total=Object.values(m.topics);
   if(total.reduce((n,t)=>n+t.outcomes,0)!==73||
