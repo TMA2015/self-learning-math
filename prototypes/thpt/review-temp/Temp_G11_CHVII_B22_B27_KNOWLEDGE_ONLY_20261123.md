@@ -2371,3 +2371,242 @@ ASSET_SOURCE_PR_HEAD|`f2a35940864abd6a8e76da5d5b6bfded89f44b6f`
 </svg>
 ~~~
 
+
+## SVG PACKET PART 2 — B25
+
+### B25 SVG `FIG-G11-CHVII-B25-01_R00.svg`
+
+ASSET_REF|`docs/assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg`
+
+ASSET_BLOB|`3f6112a7b12f1829ee2249b979d45f1f5370fc66`
+
+ASSET_SOURCE_PR_HEAD|`4b0e5f754e62d5a1178500f0ad53fa592cca9370`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc" width="900" height="500">
+<title id="title">FIG-G11-CHVII-B25-01: Góc nhị diện: đo ở tiết diện vuông góc giao tuyến</title><desc id="desc">Hai nửa mặt chung đường giao tuyến Delta; tiết diện vuông góc Delta cho hai tia OU và OV; góc UOV là góc phẳng nhị diện; góc hai mặt là góc không tù.</desc>
+<rect width="900" height="500" fill="#f8fafc" rx="18"/>
+<text x="450" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">Góc nhị diện: đo ở tiết diện vuông góc giao tuyến</text>
+<path d="M160 360 H770" stroke="#111827" stroke-width="6"/><text x="785" y="367" font-size="21">Δ</text><polygon points="220,360 710,360 610,140 305,140" fill="#bae6fd" fill-opacity="0.7" stroke="#0369a1" stroke-width="2"/><polygon points="220,360 710,360 620,455 315,455" fill="#fed7aa" fill-opacity="0.7" stroke="#c2410c" stroke-width="2"/><circle cx="463" cy="360" r="7" fill="#111827"/><path d="M463 360 L410 185" stroke="#0369a1" stroke-width="6"/><path d="M463 360 L595 421" stroke="#c2410c" stroke-width="6"/><text x="472" y="351" font-size="21">O</text><text x="402" y="178" font-size="22">U</text><text x="600" y="437" font-size="22">V</text><text x="90" y="95" font-size="18">OU, OV vuông góc Δ</text><text x="90" y="125" font-size="18">Góc UOV: góc phẳng nhị diện</text>
+<text x="450" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#475569">Sơ đồ phương và quan hệ; không suy độ dài/góc từ phối cảnh.</text>
+</svg>
+~~~
+
+### B25 SVG `G11_B25_PERPENDICULAR_PLANES_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B25_PERPENDICULAR_PLANES_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`1f2e7a6f93fc5981def01d39e7ab41b13717ef57`
+
+ASSET_SOURCE_PR_HEAD|`4b0e5f754e62d5a1178500f0ad53fa592cca9370`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewBox="0 0 1000 450" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Điều kiện và tính chất của hai mặt phẳng vuông góc</title><desc id="desc">Khung trái: mặt phẳng P nằm ngang và mặt phẳng Q thẳng đứng chung giao tuyến delta; đường a nằm trong P, vuông góc giao tuyến delta nên là phương pháp tuyến của Q. Khung phải: hai mặt phẳng đứng P và Q cùng vuông góc với mặt phẳng nền R, cắt nhau theo đường d thẳng đứng; d vuông góc R. Các hình là sơ đồ điều kiện, không dùng độ nghiêng phối cảnh để đo góc.</desc>
+<rect width="1000" height="450" rx="18" fill="#fff"/>
+<text x="500" y="36" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#203d56">Vuông góc giữa các mặt: chứng minh bằng đường và giao tuyến</text>
+<g font-family="Arial,sans-serif" fill="#24415c" font-size="19">
+<rect x="17" y="56" width="464" height="324" rx="13" fill="#f6fafc" stroke="#dbe5eb"/>
+<text x="249" y="84" text-anchor="middle" font-size="18" font-weight="700">1. Mặt (P) ⟂ mặt (Q)</text>
+<polygon points="125,270 372,270 454,343 210,343" fill="#ddedf9" stroke="#3a779f" stroke-width="3"/>
+<polygon points="125,119 372,119 372,270 125,270" fill="#e0f2ea" stroke="#38866d" stroke-width="3"/>
+<line x1="125" y1="270" x2="372" y2="270" stroke="#334d68" stroke-width="6"/>
+<line x1="251" y1="270" x2="289" y2="331" stroke="#c55536" stroke-width="6" stroke-linecap="round"/>
+<circle cx="251" cy="270" r="5" fill="#334d68"/>
+<text x="235" y="262">O</text><text x="381" y="267">Δ</text><text x="295" y="334" fill="#c55536">a</text>
+<text x="394" y="162" fill="#328163">(Q)</text><text x="395" y="357" fill="#3879a4">(P)</text>
+<text x="249" y="368" text-anchor="middle" font-size="15">a ⊂ (P), a ⟂ Δ ⇒ a ⟂ (Q)</text>
+<rect x="505" y="56" width="477" height="324" rx="13" fill="#f6fafc" stroke="#dbe5eb"/>
+<text x="743" y="84" text-anchor="middle" font-size="18" font-weight="700">2. Hai mặt cùng ⟂ mặt (R)</text>
+<polygon points="565,307 852,307 927,374 645,374" fill="#e9f0fa" stroke="#3a779f" stroke-width="3"/>
+<polygon points="652,144 741,103 741,327 652,361" fill="#f2e4d8" fill-opacity=".86" stroke="#b47f4c" stroke-width="3"/>
+<polygon points="741,103 869,153 869,361 741,327" fill="#d9f2e9" fill-opacity=".65" stroke="#409477" stroke-width="3"/>
+<line x1="741" y1="103" x2="741" y2="327" stroke="#c55536" stroke-width="6"/>
+<text x="754" y="121" fill="#c55536">d</text><text x="630" y="174">(P)</text><text x="855" y="251">(Q)</text><text x="897" y="372">(R)</text>
+<text x="741" y="363" text-anchor="middle" font-size="15">d = (P) ∩ (Q), d ⟂ (R)</text>
+<text x="500" y="421" text-anchor="middle" font-size="16" fill="#546778">Luôn xác minh giả thiết: (P) ⟂ (Q) hoặc từng mặt vuông góc (R).</text>
+</g></svg>
+~~~
+
+### B25 SVG `G11_B25_DIHEDRAL_CHAIR_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B25_DIHEDRAL_CHAIR_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`e2d84db3d7fe0dc03bb33a4afba5e3b31bbba362`
+
+ASSET_SOURCE_PR_HEAD|`4b0e5f754e62d5a1178500f0ad53fa592cca9370`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" role="img" aria-labelledby="t d">
+<title id="t">Góc nhị diện lưng ghế và góc không tù giữa hai mặt</title><desc id="d">Tiết diện vuông góc giao tuyến mặt ghế và lưng ghế cho tia Ox nằm ngang về phải và tia Oy nghiêng lên về trái. Góc phẳng nhị diện của hai nửa mặt ghế đã chọn bằng 105 độ, góc nhỏ giữa hai đường thẳng chứa các tia bằng 75 độ, là góc không định hướng giữa hai mặt phẳng. Hình sơ đồ tiết diện chứ không phải mô phỏng ghế với kích thước thật.</desc>
+<rect width="880" height="420" fill="#fff" rx="18"/>
+<text x="440" y="38" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#203954">Góc nhị diện có thể tù; góc giữa hai mặt không tù</text>
+<g font-family="Arial,sans-serif" font-size="21" fill="#264157">
+<line x1="133" y1="312" x2="444" y2="312" stroke="#2b74a4" stroke-width="8" stroke-linecap="round"/>
+<line x1="289" y1="312" x2="217" y2="49" stroke="#c35d3b" stroke-width="8" stroke-linecap="round"/>
+<line x1="133" y1="312" x2="289" y2="312" stroke="#aab5c3" stroke-width="2.3" stroke-dasharray="7 6"/>
+<path d="M360 312 A71 71 0 0 0 270 244" stroke="#ad4838" stroke-width="4" fill="none"/>
+<path d="M197 312 A92 92 0 0 1 265 223" stroke="#327c72" stroke-width="3.5" fill="none"/>
+<circle cx="289" cy="312" r="6" fill="#34495f"/>
+<text x="278" y="338">O</text><text x="450" y="320" fill="#2b74a4">x</text><text x="192" y="50" fill="#c35d3b">y</text>
+<text x="330" y="231" fill="#ad4838" font-weight="700">105°</text>
+<text x="145" y="222" fill="#327c72" font-weight="700">75°</text>
+<rect x="504" y="91" width="338" height="224" rx="12" fill="#f5f8fa" stroke="#dfe8ef"/>
+<text x="525" y="127" font-weight="700" font-size="18">Chọn hai nửa mặt:</text>
+<text x="525" y="165" font-size="18">∠xOy = 105° (góc nhị diện)</text>
+<text x="525" y="205" font-size="18">Đường chứa Ox, Oy tạo</text>
+<text x="525" y="236" font-size="18">góc nhỏ = 180° − 105°</text>
+<text x="525" y="277" font-weight="700" fill="#26735e">= 75° (góc hai mặt)</text>
+<text x="440" y="386" text-anchor="middle" font-size="16" fill="#66788a">Khi SGK nói lưng ghế 100°–105°, góc hai mặt tương ứng là 80°–75°.</text>
+</g></svg>
+~~~
+
+### B25 SVG `G11_B25_RHOMBUS_PYRAMID_DIHEDRAL_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B25_RHOMBUS_PYRAMID_DIHEDRAL_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`6ef7828be37ca6906e7fd06aa3642a3085aee99f`
+
+ASSET_SOURCE_PR_HEAD|`4b0e5f754e62d5a1178500f0ad53fa592cca9370`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="470" viewBox="0 0 1040 470" role="img" aria-labelledby="title desc">
+<title id="title">Góc nhị diện 120 độ, 45 độ và 135 độ trong chóp đáy hình thoi</title>
+<desc id="desc">Khung trái mô hình hình chóp S.ABCD với SA vuông góc đáy, đáy ABCD hình thoi cạnh a có đường chéo AC bằng a, O là giao hai đường chéo. Trên hình ABC và ACD là hai tam giác đều; góc BAD bằng 120 độ. Khung phải tiết diện tam giác vuông SAO có SA bằng AO bằng a chia 2, nên góc AOS bằng 45 độ. Do hai tia OA, OC đối nhau, góc COS bằng 135 độ. Số đo góc nhị diện phải chọn đúng hai nửa mặt.</desc>
+<rect width="1040" height="470" rx="18" fill="#fff"/>
+<text x="520" y="36" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#193d56">Chọn đúng nửa mặt: 120° · 45° · 135°</text>
+<g font-family="Arial,sans-serif" font-size="19" fill="#23415d" stroke-linejoin="round">
+<rect x="20" y="56" width="533" height="356" rx="13" fill="#f8fafc" stroke="#dce6eb"/>
+<polygon points="140,288 210,167 280,288 210,409" fill="#e4f0fa" stroke="#4b83ad" stroke-width="3"/>
+<path d="M140 97 L140 288 M140 97 L210 167 M140 97 L280 288 M140 97 L210 409" fill="none" stroke="#7e8e9c" stroke-width="3.3"/>
+<path d="M140 97 L140 288" fill="none" stroke="#c15a38" stroke-width="6"/>
+<path d="M140 288 L280 288 M210 167 L210 409" stroke="#458877" stroke-dasharray="9 6" fill="none" stroke-width="2.7"/>
+<circle cx="210" cy="288" r="5" fill="#458877" stroke="none"/>
+<path d="M177 226 A74 74 0 0 1 177 350" fill="none" stroke="#c15a38" stroke-width="2.5"/>
+<g stroke="none">
+<text x="121" y="89">S</text><text x="116" y="309">A</text><text x="205" y="158">B</text><text x="285" y="307">C</text><text x="206" y="436">D</text><text x="222" y="290">O</text>
+<text x="160" y="204" fill="#c15a38">SA ⟂ đáy</text>
+<text x="345" y="190">AB = BC = CD = DA = a</text><text x="345" y="225">AC = a</text><text x="345" y="266" fill="#ad513c">∠BAD = 120°</text>
+<text x="345" y="320">AO = SA = a/2</text>
+</g>
+<rect x="576" y="56" width="446" height="356" rx="13" fill="#f8fafc" stroke="#dce6eb" />
+<text x="799" y="87" text-anchor="middle" font-weight="700" stroke="none">Tiết diện qua S, A, O, C</text>
+<path d="M676 159 L676 352 L869 352 Z" fill="#ebf5ef" stroke="#4f8b77" stroke-width="3.2"/>
+<line x1="676" y1="159" x2="869" y2="352" stroke="#c15a38" stroke-width="4.5"/>
+<line x1="869" y1="352" x2="950" y2="352" stroke="#4f8b77" stroke-width="3.3" stroke-dasharray="7 6"/>
+<path d="M676 334 L694 334 L694 352" fill="none" stroke="#4f8b77" stroke-width="2.5"/>
+<path d="M838 352 A31 31 0 0 1 848 331" fill="none" stroke="#c15a38" stroke-width="2.5"/>
+<g stroke="none">
+<text x="655" y="151">S</text><text x="652" y="375">A</text><text x="869" y="378">O</text><text x="955" y="358">C</text>
+<text x="592" y="264">SA=a/2</text><text x="729" y="376">AO=a/2</text>
+<text x="797" y="317" fill="#c15a38">45°</text>
+<text x="771" y="396" fill="#2f735d">∠COS = 135°</text>
+</g>
+</g>
+<text x="520" y="450" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#64788a">Sơ đồ hình học: không đo kích thước từ phối cảnh; góc nhị diện phụ thuộc đúng phía nửa mặt.</text>
+</svg>
+~~~
+
+### B25 SVG `G11_B25_SPECIAL_PRISMS_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B25_SPECIAL_PRISMS_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`139874b20f72f567c66a311141642cc2b441e079`
+
+ASSET_SOURCE_PR_HEAD|`4b0e5f754e62d5a1178500f0ad53fa592cca9370`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="450" viewBox="0 0 1050 450" role="img" aria-labelledby="t d">
+<title id="t">Phân biệt lăng trụ đứng, lăng trụ đều và hình lập phương</title><desc id="d">Ba khung minh họa lăng trụ đứng với đáy tam giác không đều, lăng trụ đều với đáy tam giác đều, và hình lập phương là hình hộp chữ nhật có tất cả cạnh bằng nhau. Cạnh bên của cả ba vuông góc đáy, nhưng lăng trụ đứng không nhất thiết có đáy đa giác đều.</desc>
+<rect width="1050" height="450" rx="18" fill="#fff"/>
+<text x="525" y="34" text-anchor="middle" font-size="22" font-family="Arial,sans-serif" font-weight="700" fill="#213d5b">Nhận dạng khối bằng điều kiện, không chỉ nhìn hình</text>
+<g font-family="Arial,sans-serif" font-size="18" fill="#274159" stroke-linejoin="round">
+<rect x="15" y="55" width="326" height="347" rx="13" fill="#f7fafc" stroke="#dde6ec"/>
+<text x="178" y="86" text-anchor="middle" font-weight="700">Lăng trụ đứng</text>
+<path d="M89 310 L286 310 L232 235 Z" fill="#dbeefa" stroke="#397ba4" stroke-width="3"/>
+<path d="M89 176 L286 176 L232 101 Z" fill="#e0f5eb" stroke="#38866d" stroke-width="3"/>
+<path d="M89 176 L89 310 M286 176 L286 310 M232 101 L232 235" fill="none" stroke="#536b82" stroke-width="3.5"/>
+<text x="177" y="347" text-anchor="middle">Đáy không nhất thiết đều</text><text x="177" y="375" text-anchor="middle">Cạnh bên ⟂ đáy</text>
+<rect x="361" y="55" width="326" height="347" rx="13" fill="#f7fafc" stroke="#dde6ec"/>
+<text x="524" y="86" text-anchor="middle" font-weight="700">Lăng trụ đều</text>
+<path d="M408 308 L642 308 L525 174 Z" fill="#dbeefa" stroke="#397ba4" stroke-width="3"/>
+<path d="M408 175 L642 175 L525 41 Z" transform="translate(0,65)" fill="#e0f5eb" stroke="#38866d" stroke-width="3"/>
+<path d="M408 240 L408 308 M642 240 L642 308 M525 106 L525 174" fill="none" stroke="#536b82" stroke-width="3"/>
+<text x="524" y="347" text-anchor="middle">Lăng trụ đứng + đáy đều</text><text x="524" y="375" text-anchor="middle">Mặt bên chữ nhật bằng nhau</text>
+<rect x="707" y="55" width="326" height="347" rx="13" fill="#f7fafc" stroke="#dde6ec"/>
+<text x="870" y="86" text-anchor="middle" font-weight="700">Hình lập phương</text>
+<path d="M773 187 L917 187 L965 140 L821 140 Z" fill="#e0f5eb" stroke="#38866d" stroke-width="3"/>
+<path d="M773 187 L917 187 L917 328 L773 328 Z" fill="#dbeefa" stroke="#397ba4" stroke-width="3"/>
+<path d="M917 187 L965 140 L965 280 L917 328 Z" fill="#d3e4f3" stroke="#397ba4" stroke-width="3"/>
+<text x="870" y="347" text-anchor="middle">Hộp chữ nhật, mọi cạnh bằng</text><text x="870" y="375" text-anchor="middle">Sáu mặt hình vuông</text>
+</g><text x="525" y="434" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#62778a">Sơ đồ phân loại; các dấu vuông góc và cạnh bằng nhau là giả thiết/định nghĩa, không đo từ ảnh.</text>
+</svg>
+~~~
+
+### B25 SVG `G11_B25_CUBE_EQUILATERAL_DIAGONALS_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B25_CUBE_EQUILATERAL_DIAGONALS_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`40e1fa9e9d922d4bb433a6ee36e2477bf66afbca`
+
+ASSET_SOURCE_PR_HEAD|`4b0e5f754e62d5a1178500f0ad53fa592cca9370`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="470" viewBox="0 0 950 470" role="img" aria-labelledby="t d">
+<title id="t">Tam giác A phẩy B D đều trong hình lập phương</title><desc id="d">Hình lập phương ABCD.A phẩy B phẩy C phẩy D phẩy. Nổi bật ba đoạn A phẩy B màu cam, A phẩy D màu lục và BD màu xanh. Mỗi đoạn là đường chéo của một mặt hình vuông cạnh a nên đều dài a căn hai. Tam giác A phẩy B D có ba cạnh bằng nhau nên đều; không lấy độ dài từ phối cảnh.</desc>
+<rect width="950" height="470" rx="18" fill="#fff"/>
+<text x="475" y="37" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#1e405d">Ba đường chéo mặt tạo tam giác đều A′BD</text>
+<g stroke="#71849a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M160 354 L410 354 L545 269 L293 269 Z"/>
+<path d="M160 130 L410 130 L545 45 L293 45 Z"/>
+<path d="M160 130 L160 354 M410 130 L410 354 M545 45 L545 269 M293 45 L293 269"/>
+</g>
+<g stroke-width="7" fill="none" stroke-linecap="round">
+<path d="M160 130 L410 354" stroke="#c45b38"/>
+<path d="M160 130 L293 269" stroke="#30836a"/>
+<path d="M410 354 L293 269" stroke="#2672a6"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="19" fill="#23405b">
+<text x="139" y="377">A</text><text x="419" y="380">B</text><text x="553" y="282">C</text><text x="274" y="293">D</text>
+<text x="139" y="123">A′</text><text x="414" y="120">B′</text><text x="552" y="44">C′</text><text x="272" y="44">D′</text>
+<text x="240" y="238" fill="#bd5638">A′B</text><text x="201" y="191" fill="#267861">A′D</text><text x="342" y="329" fill="#266d9e">BD</text>
+<rect x="633" y="97" width="281" height="250" rx="12" fill="#f2f7fb" stroke="#dfe6ed"/>
+<text x="657" y="139" font-weight="700">Cạnh hình lập phương: a</text>
+<text x="657" y="182">A′B = a√2</text>
+<text x="657" y="223">A′D = a√2</text>
+<text x="657" y="264">BD = a√2</text>
+<text x="657" y="315" font-weight="700" fill="#27745c">⇒ ΔA′BD đều</text>
+<text x="475" y="435" text-anchor="middle" font-size="16" fill="#5f7488">Ba cạnh là đường chéo ba mặt vuông, không phải ba cạnh khối.</text>
+</g></svg>
+~~~
+
+### B25 SVG `G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`8efdd9fd9528f064da32202edb8f155941186b9f`
+
+ASSET_SOURCE_PR_HEAD|`4b0e5f754e62d5a1178500f0ad53fa592cca9370`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-labelledby="t d">
+<title id="t">Hình chóp đều và hình chóp cụt đều với đường cao qua tâm đáy</title><desc id="d">Khung trái chóp đều S.ABCD đáy vuông, chân đường cao SO tại tâm O của đáy, các cạnh bên được giả thiết bằng nhau. Khung phải chóp cụt đều ABCD.A phẩy B phẩy C phẩy D phẩy có hai đáy vuông song song và đồng tâm theo phương vuông góc, tâm H dưới và K trên; HK là đường cao, mặt bên là hình thang cân. Không nhầm đường cao với cạnh bên nghiêng.</desc>
+<rect width="1000" height="480" rx="18" fill="#fff"/><text x="500" y="37" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#193b55">Đường cao của hình chóp và hình chóp cụt đều</text>
+<g font-family="Arial,sans-serif" font-size="19" fill="#274158" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<rect x="16" y="55" width="470" height="371" rx="13" fill="#f7fafc" stroke="#dce5eb" stroke-width="1"/>
+<text x="250" y="86" text-anchor="middle" font-weight="700" stroke="none">Chóp đều S.ABCD</text>
+<polygon points="82,335 327,335 423,253 178,253" fill="#e2f1fc" stroke="#4380a5"/>
+<path d="M251 104 L82 335 M251 104 L327 335 M251 104 L423 253 M251 104 L178 253" stroke="#687f90" fill="none"/>
+<line x1="251" y1="104" x2="253" y2="294" stroke="#c75836" stroke-width="5" stroke-dasharray="10 7"/>
+<circle cx="253" cy="294" r="5" fill="#c75836" stroke="none"/>
+<g stroke="none"><text x="241" y="101">S</text><text x="60" y="352">A</text><text x="330" y="356">B</text><text x="426" y="250">C</text><text x="162" y="248">D</text><text x="267" y="296">O</text><text x="269" y="197" fill="#c75836">SO ⟂ đáy</text><text x="250" y="385" text-anchor="middle">Đáy đều, cạnh bên bằng nhau</text></g>
+<rect x="513" y="55" width="471" height="371" rx="13" fill="#f7fafc" stroke="#dce5eb" stroke-width="1"/>
+<text x="748" y="86" text-anchor="middle" font-weight="700" stroke="none">Chóp cụt đều</text>
+<polygon points="558,335 818,335 934,257 670,257" fill="#e2f1fc" stroke="#4380a5"/>
+<polygon points="644,195 791,195 858,145 709,145" fill="#e2f7ed" stroke="#3d866d"/>
+<path d="M558 335 L644 195 M818 335 L791 195 M934 257 L858 145 M670 257 L709 145" stroke="#6a7e90" fill="none"/>
+<line x1="746" y1="293" x2="751" y2="170" stroke="#c75836" stroke-width="5" stroke-dasharray="9 7"/>
+<g stroke="none"><text x="535" y="350">A</text><text x="821" y="351">B</text><text x="942" y="252">C</text><text x="656" y="252">D</text><text x="628" y="185">A′</text><text x="791" y="186">B′</text><text x="864" y="138">C′</text><text x="696" y="138">D′</text><text x="761" y="298">H</text><text x="765" y="169">K</text><text x="768" y="232" fill="#c75836">HK ⟂ hai đáy</text><text x="748" y="385" text-anchor="middle">Hai đáy đều và song song</text></g>
+</g><text x="500" y="453" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#68798b">Cạnh bên xiên không phải là đường cao; đọc giả thiết và dùng vuông góc từ tâm đáy.</text></svg>
+~~~
+
