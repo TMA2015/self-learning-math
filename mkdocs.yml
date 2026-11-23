@@ -337,6 +337,7 @@ plugins:
 hooks:
   - hooks/topic_markdown_fixes.py
   - hooks/sgk_golden_first_paint.py
+  - hooks/math_lab_full_page.py
 
 extra_css:
   - assets/stylesheets/site-design-system.css

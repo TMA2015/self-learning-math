@@ -26,12 +26,15 @@ assert.equal([...ids].filter(x=>x.startsWith("SLM-TOP")).length,22,"Wrong Topic 
 assert.equal([...ids].filter(x=>x.startsWith("SLM-SGK")).length,3,"Wrong SGK model count");
 const catalog=read("docs/thpt-preview/math-lab/index.md"),home=read("docs/thpt-preview/home.md");
 const main=read("mkdocs.yml"),thpt=read("mkdocs.thpt-preview.yml");
-for(const id of ids)assert(catalog.includes('href="../../assets/math-lab/models/'+id+'.html"'),"Direct full-page model link missing "+id);
+for(const id of ids)assert(catalog.includes('href="models/'+id.toLowerCase()+'/"'),"Restored full-page model route missing "+id);
 assert.equal((catalog.match(/data-ml-card\b/g)||[]).length,25,"Expected 25 cards");
-assert.equal((catalog.match(/href="\.\.\/\.\.\/assets\/math-lab\/models\/SLM-[A-Z0-9-]+\.html"/g)||[]).length,25,"All 25 must open full-page assets");
+assert.equal((catalog.match(/href="models\/slm-[a-z0-9-]+\/"/g)||[]).length,25,"All 25 must open original contextual viewer routes");
 const libraryJS=read("docs/assets/javascripts/math-lab-library-v1.js");
 const launcherJS=read("docs/assets/javascripts/thpt-r4-preview.js");
-assert(libraryJS.includes("location.replace(expected.href)")&&libraryJS.includes('sandbox="allow-scripts"'),"Safe legacy viewer redirects missing");
+const hook=read("hooks/math_lab_full_page.py");
+assert(hook.includes("def on_post_page(")&&hook.includes("data-ml-restored-full-page")&&hook.includes("Math Lab source SHA mismatch"),"Source-locked full-page compositor missing");
+assert(main.includes("hooks/math_lab_full_page.py")&&thpt.includes("INHERIT: mkdocs.yml"),"Both MkDocs configs must compose restored Math Lab viewer");
+assert(!libraryJS.includes("location.replace(expected.href)"),"Redirect must not strip model-page metadata/back links");
 assert(libraryJS.includes("requestAnimationFrame(mountMathLabShortcut)")&&libraryJS.includes('a.dataset.thptMathLabShortcut="1"'),"Isolated 5+1 Math Lab auxiliary shortcut missing");
 assert(launcherJS.includes('btn.dataset.thptR4Launcher="1"')&&launcherJS.includes('["Danh mục 22 Chuyên đề đã phát hành","chuyen-de/"]'),"Golden shared THPT launcher changed");
 
@@ -48,7 +51,7 @@ if(process.argv.includes("--built")){
   const out=path.join(root,dir),landing=path.join(out,"thpt-preview/math-lab/index.html");
   assert(fs.existsSync(landing),"Catalog HTML not built "+dir);
   assert(fs.readFileSync(landing,"utf8").includes("data-math-lab-catalog"),"Catalog controls not in build "+dir);
-  assert(fs.readFileSync(landing,"utf8").includes("../../assets/math-lab/models/SLM-TOP01-TRUTH-01.html"),"Built catalog link should go to full page");
+  assert(fs.readFileSync(landing,"utf8").includes('href="models/slm-top01-truth-01/"'),"Built catalog link must return to contextual full page");
 
   for(const [id,sha,src,asset,page] of rows){
    const model=path.join(out,asset.replace(/^docs\//,""));
@@ -56,7 +59,14 @@ if(process.argv.includes("--built")){
    assert(fs.existsSync(model),"Built model missing "+id+" "+dir);
    assert(fs.existsSync(view),"Built viewer missing "+id+" "+dir);
    assert.equal(blob(fs.readFileSync(model,"utf8")),sha,"Built bytes don't match authoring SHA: "+id);
-   assert(fs.readFileSync(view,"utf8").includes('sandbox="allow-scripts"'),"Frame sandbox lost "+id);
+   const full=fs.readFileSync(view,"utf8");
+   assert(full.includes('data-ml-restored-full-page="true"'),"Restored full-page header missing "+id);
+   assert(full.includes('data-math-lab-model="'+id+'"'),"Model identity lost "+id);
+   assert(!full.includes("<iframe"),"Nested frame still rendered "+id);
+   assert(full.includes("← Về tổng quan Math Lab")&&full.includes("← Trở về danh sách 25 mô hình"),"Both back links missing "+id);
+   assert(full.includes("Khám phá bằng cách điều chỉnh mô hình."),"Original teaching guidance lost "+id);
+   assert(full.includes('href="../../"'),"Return href changed "+id);
+   assert((full.match(/<script\b/g)||[]).length>0,"Original model JS missing "+id);
   }
   console.log("PASS BUILT "+dir+" 25/25 models/viewers");
  }
