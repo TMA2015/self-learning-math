@@ -49,7 +49,7 @@ Trong hội chợ của lớp, ban tổ chức cần chọn câu lạc bộ tham
 
 **Đọc hình:** Khung “hoặc” gồm 4 nhóm nghệ thuật, 3 thể thao không trùng nên 4+3=7; khung “và” yêu cầu một mục ở **mỗi** nhóm, nên 4×3=12 cặp. Hình mang màu nền trắng; phép đếm không phụ thuộc màu. Chỉ dùng quy tắc cộng đơn giản khi hai danh sách không giao nhau.
 
-[Mở mô hình tương tác công khai: “Hoặc / Và”](../../../math-lab/models/slm-top19-combinatorics-pascal-r00/) — kéo hai số lượng, chuyển chế độ và so liệt kê trước khi áp dụng quy tắc. Mô hình không chấm điểm.
+<a href="../../../math-lab/models/slm-top19-combinatorics-pascal-r00/">Mở mô hình tương tác công khai: “Hoặc / Và”</a> — kéo hai số lượng, chuyển chế độ và so liệt kê trước khi áp dụng quy tắc. Mô hình không chấm điểm.
 
 ### 1.1. Đếm đúng một lựa chọn: khi nào cộng?
 
@@ -220,7 +220,7 @@ Từ đếm từng số hợp lệ, ta chuyển sang đếm các cách sắp ng�
 
 **Đọc hình:** Từ A, B, C, khi có hai **vai khác nhau**: AB,BA là hai kết quả; khi chỉ chọn nhóm hai người, AB và BA trùng nhau. Đếm trực tiếp n=3,k=2 là 6 và 3. Điều kiện là các thành viên phân biệt và không chọn lặp.
 
-[Mở mô hình tương tác công khai: “Chọn nhóm / Phân vai”](../../../math-lab/models/slm-top19-combinatorics-pascal-r00/) — thử n=4,k=2 và n=5,k=3. Cần so **cả danh sách kết quả** để thấy vì sao phải chia k!, không chỉ so hai con số.
+<a href="../../../math-lab/models/slm-top19-combinatorics-pascal-r00/">Mở mô hình tương tác công khai: “Chọn nhóm / Phân vai”</a> — thử n=4,k=2 và n=5,k=3. Cần so **cả danh sách kết quả** để thấy vì sao phải chia k!, không chỉ so hai con số.
 
 ### 2.1. Hoán vị: xếp tất cả đối tượng
 
@@ -422,7 +422,7 @@ Các số `C(n,k)` trên máy không phải một loại hệ số bí ẩn: ch�
 
 **Đọc hình:** Hàng thứ tư 1,4,6,4,1 giải thích hệ số của (a+b)⁴. Số 6 ở giữa nhận từ 3+3 của hàng trên, đồng thời bằng C(4,2) là số cách lấy hai vị trí b. Đây là kết nối **tổ hợp → hệ số**, không phải công thức cần nhớ rời nhau.
 
-[Mở mô hình tương tác công khai: “Hệ số Newton n=4,5”](../../../math-lab/models/slm-top19-combinatorics-pascal-r00/) — đổi k và đọc hạng tử, không dùng ngoài phạm vi n=4,5 khi chưa học mở rộng.
+<a href="../../../math-lab/models/slm-top19-combinatorics-pascal-r00/">Mở mô hình tương tác công khai: “Hệ số Newton n=4,5”</a> — đổi k và đọc hạng tử, không dùng ngoài phạm vi n=4,5 khi chưa học mở rộng.
 
 ### 3.1. Nhị thức Newton: hệ số là số cách chọn vị trí
 
