@@ -100,7 +100,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Mặt phẳng trung trực của đoạn thẳng</strong><p>Cho đoạn \(AB\) với trung điểm \(I\). Mặt phẳng \((\alpha)\) đi qua \(I\) và vuông góc đường \(AB\) là <strong>mặt phẳng trung trực</strong> của đoạn \(AB\). Nó chính là <strong>tập hợp các điểm \(M\)</strong> thỏa \(MA=MB\). Hình chiếu vuông góc từ một điểm xuống một mặt phẳng cũng duy nhất.</p></div>
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B23_PERPENDICULAR_BISECTOR_PLANE_AUTHORING_20261123.svg" alt="Mặt phẳng trung trực alpha của AB vuông góc tại trung điểm I, các điểm M thuộc mặt phẳng đều cách đều A và B"><figcaption><strong>Tra hình:</strong> \(I\) là trung điểm \(AB\); \(MI\) nằm trong mặt phẳng vuông góc \(AB\). Các tam giác vuông \(MIA\) và \(MIB\) có hai cạnh góc vuông tương ứng bằng nhau, nên \(MA=MB\). Chiều ngược cũng đúng.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B23_PERPENDICULAR_BISECTOR_PLANE_AUTHORING_20261123.svg" alt="Mặt phẳng trung trực alpha của AB vuông góc tại trung điểm I, các điểm M thuộc mặt phẳng đều cách đều A và B"><figcaption><strong>Tra hình:</strong> \(I\) là trung điểm \(AB\). Với \(M\ne I\), đoạn \(MI\) nằm trong mặt phẳng vuông góc \(AB\), nên hai tam giác vuông \(MIA,MIB\) có \(MI\) chung, \(IA=IB\) và suy ra \(MA=MB\). Nếu \(M=I\), đẳng thức hiển nhiên \(MA=MB\). Chiều ngược cũng đúng.</figcaption></figure>
 
     **Cách tìm chân \(H\):** Từ \(A\) dựng đường duy nhất vuông góc \((P)\); giao điểm với \((P)\) là \(H\). Không có chân vuông góc thứ hai vì đường vuông góc qua \(A\) là duy nhất.
 
