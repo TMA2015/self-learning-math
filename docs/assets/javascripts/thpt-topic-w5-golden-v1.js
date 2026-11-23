@@ -11,30 +11,30 @@ const sizes={"19":{"outcomes":14,"items":42,"replay":7,"groups":3,"practiceGroup
 const topicTabNames={
   "19": {
     "modules": [
-      "1. Quy tắc đếm và chia trường hợp",
-      "2. Hoán vị, chỉnh hợp, tổ hợp và công cụ",
-      "3. Nhị thức Newton và các vận dụng"
+      "1. Quy tắc đếm và chia trường",
+      "2. Hoán vị, chỉnh hợp, tổ hợp",
+      "3. Nhị thức Newton và các vận"
     ],
     "subs": [
       [
-        "1.1. Đếm đúng một lựa chọn: khi nào cộng?",
-        "1.2. Một kết quả gồm nhiều bước: khi nào",
-        "1.3. Đếm các số: chữ số đầu và điều kiện lặp",
-        "1.4. Chia trường hợp khi đếm số chẵn"
+        "1.1. Đếm đúng một lựa chọn: khi",
+        "1.2. Một kết quả gồm nhiều",
+        "1.3. Đếm các số: chữ số đầu và",
+        "1.4. Chia trường hợp khi đếm số"
       ],
       [
-        "2.1. Hoán vị: xếp tất cả đối tượng",
-        "2.2. Chỉnh hợp: chọn một số rồi phân vai",
-        "2.3. Tổ hợp: chỉ chọn nhóm, không phân vai",
-        "2.4. Chọn nhóm có điều kiện và phân vai sau",
-        "2.5. Máy tính cầm tay hỗ trợ tính n!, chỉnh"
+        "2.1. Hoán vị: xếp tất cả đối",
+        "2.2. Chỉnh hợp: chọn một số rồi",
+        "2.3. Tổ hợp: chỉ chọn nhóm,",
+        "2.4. Chọn nhóm có điều kiện và",
+        "2.5. Máy tính cầm tay hỗ trợ"
       ],
       [
-        "3.1. Nhị thức Newton: hệ số là số cách chọn",
-        "3.2. Khai triển có dấu âm: dấu đến từ số",
-        "3.3. Nhị thức Newton để ước lượng tăng",
-        "3.4. Số hạng không chứa x: từ đa thức đến",
-        "3.5. Tổng hệ số và tam giác Pascal (vận"
+        "3.1. Nhị thức Newton: hệ số là",
+        "3.2. Khai triển có dấu âm: dấu",
+        "3.3. Nhị thức Newton để ước",
+        "3.4. Số hạng không chứa x: từ",
+        "3.5. Tổng hệ số và tam giác"
       ]
     ]
   },
@@ -45,68 +45,68 @@ const topicTabNames={
     ],
     "subs": [
       [
-        "1.1. Phép thử, không gian mẫu và biến cố",
-        "1.2. Đồng khả năng và cách tính xác suất",
+        "1.1. Phép thử, không gian mẫu",
+        "1.2. Đồng khả năng và cách tính",
         "1.3. Biến cố đối và xác suất bé",
-        "1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây",
-        "1.5. Chọn đúng mô hình trước khi tính"
+        "1.4. Đếm kết quả bằng tổ hợp và",
+        "1.5. Chọn đúng mô hình trước"
       ],
       [
         "2.1. Hợp, giao và xung khắc",
-        "2.2. Độc lập không phải xung khắc",
+        "2.2. Độc lập không phải xung",
         "2.3. Quy tắc cộng xác suất",
-        "2.4. Quy tắc nhân độc lập và biến cố đối"
+        "2.4. Quy tắc nhân độc lập và"
       ]
     ]
   },
   "21": {
     "modules": [
-      "1. Biết thêm thông tin và xác suất có điều",
-      "2. Xác suất toàn phần và công thức Bayes",
-      "3. Sơ đồ cây và diễn giải xác suất"
+      "1. Biết thêm thông tin và xác",
+      "2. Xác suất toàn phần và công",
+      "3. Sơ đồ cây và diễn giải xác"
     ],
     "subs": [
       [
-        "1.1. Biết thêm thông tin là đổi nhóm đang",
-        "1.2. Từ vùng giao đến công thức xác suất có",
-        "1.3. Quy tắc nhân tổng quát cho các lượt",
-        "1.4. Khi nào xác suất có điều kiện không"
+        "1.1. Biết thêm thông tin là đổi",
+        "1.2. Từ vùng giao đến công thức",
+        "1.3. Quy tắc nhân tổng quát cho",
+        "1.4. Khi nào xác suất có điều"
       ],
       [
-        "2.1. Xác suất toàn phần: cộng các đường đi",
-        "2.2. Bayes: đi từ kết quả quan sát ngược về"
+        "2.1. Xác suất toàn phần: cộng",
+        "2.2. Bayes: đi từ kết quả quan"
       ],
       [
-        "3.1. Đọc sơ đồ cây: nhân trên đường, cộng",
-        "3.2. Tỉ lệ nền và bẫy kết luận từ một dấu"
+        "3.1. Đọc sơ đồ cây: nhân trên",
+        "3.2. Tỉ lệ nền và bẫy kết luận"
       ]
     ]
   },
   "22": {
     "modules": [
-      "1. Dữ liệu thô, độ chính xác và các số đặc",
-      "2. Dữ liệu ghép nhóm và các ước lượng vị trí",
-      "3. Độ phân tán ghép nhóm và phân tích số"
+      "1. Dữ liệu thô, độ chính xác và",
+      "2. Dữ liệu ghép nhóm và các ước",
+      "3. Độ phân tán ghép nhóm và"
     ],
     "subs": [
       [
         "1.1. Dữ liệu đo và sai số",
         "1.2. Số trung bình và mốt",
         "1.3. Trung vị và tứ phân vị",
-        "1.4. Khoảng biến thiên, IQR và ngoại lệ",
+        "1.4. Khoảng biến thiên, IQR và",
         "1.5. Phương sai và độ lệch chuẩn"
       ],
       [
-        "2.1. Ghép nhóm: biên, độ rộng, tần số",
-        "2.2. Đại diện, trung bình nhóm và tích lũy",
-        "2.3. Nội suy trung vị và tứ phân vị ghép",
-        "2.4. Mốt ghép nhóm và giới hạn áp dụng"
+        "2.1. Ghép nhóm: biên, độ rộng,",
+        "2.2. Đại diện, trung bình nhóm",
+        "2.3. Nội suy trung vị và tứ",
+        "2.4. Mốt ghép nhóm và giới hạn"
       ],
       [
         "3.1. Khoảng biến thiên ghép nhóm",
         "3.2. IQR ghép nhóm và so sánh",
-        "3.3. Phương sai và độ lệch chuẩn ghép nhóm",
-        "3.4. So sánh phân phối và giới hạn suy luận"
+        "3.3. Phương sai và độ lệch",
+        "3.4. So sánh phân phối và giới"
       ]
     ]
   }
