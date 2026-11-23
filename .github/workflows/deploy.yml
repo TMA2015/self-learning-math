@@ -700,7 +700,6 @@ jobs:
           BEFORE_SHA: ${{ github.event.before }}
           HEAD_SHA: ${{ github.sha }}
           BASE_SHA: ${{ github.event.before }}
-          HEAD_SHA: ${{ github.sha }}
         run: |
           set -euo pipefail
           git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/math-lab-fullpage-scope.txt"
