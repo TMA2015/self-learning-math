@@ -2092,7 +2092,7 @@ MASTERY_ACTIVATION|NO
 
 ## PHỤ LỤC SVG XML
 
-Phụ lục sẽ được chèn dưới đây với nguồn SVG đúng HEAD mỗi PR. Nếu phụ lục thiếu, reviewer đánh dấu SVG_SOURCE_HOLD chứ không tự kết luận đúng hình.
+Phụ lục dưới đây đã bao gồm nguyên văn **32 SVG theo từng bài** với SHA Git blob và HEAD nguồn. Đây là kiểm tra **mã nguồn SVG**, không đồng nghĩa kiểm pixel/render trên trình duyệt, vẫn giữ `VISUAL_SVG_RENDER_HOLD`.
 
 ## SVG PACKET PART 1 — B22–B24
 
@@ -2919,5 +2919,181 @@ ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
 <text x="615" y="363" font-weight="700" fill="#be5637">d(BD,SC)=OH=a/2</text>
 <text x="515" y="444" text-anchor="middle" font-size="16" fill="#66798a">Màu đỏ chỉ đoạn cần chứng minh vuông góc với cả hai đường, không đo bằng phối cảnh.</text>
 </g></svg>
+~~~
+
+
+## SVG PACKET PART 4 — B27
+
+### B27 SVG `FIG-G11-CHVII-B27-01_R00.svg`
+
+ASSET_REF|`docs/assets/images/thpt/FIG-G11-CHVII-B27-01_R00.svg`
+
+ASSET_BLOB|`a7bec7a20295d09ca6f32aae0e8910cef7bed9dc`
+
+ASSET_SOURCE_PR_HEAD|`0a6aad2abda914b4afb2135d0e79f09ca0572045`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc" width="900" height="500">
+<title id="title">FIG-G11-CHVII-B27-01: Cùng đáy/cao: lăng trụ, chóp, chóp cụt</title><desc id="desc">Ba hình có cùng cách đo chiều cao vuông góc, công thức tương ứng V=Sh, V=Sh/3 và V=h(S+S′+sqrt(S S′))/3.</desc>
+<rect width="900" height="500" fill="#f8fafc" rx="18"/>
+<text x="450" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">Cùng đáy/cao: lăng trụ, chóp, chóp cụt</text>
+<polygon points="90,250 190,225 260,265 160,290" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="3"/><polygon points="90,110 190,85 260,125 160,150" fill="#bfdbfe" fill-opacity="0.8" stroke="#1d4ed8" stroke-width="3"/><path d="M90 110 V250 M190 85 V225 M260 125 V265 M160 150 V290" stroke="#1d4ed8" stroke-width="3"/><text x="162" y="328" font-size="21">Lăng trụ</text><text x="151" y="360" font-size="22">V = S·h</text><polygon points="345,275 450,245 540,290 435,318" fill="#bbf7d0" stroke="#047857" stroke-width="3"/><path d="M445 90 L345 275 M445 90 L450 245 M445 90 L540 290 M445 90 L435 318" stroke="#047857" stroke-width="3"/><path d="M445 90 V282" stroke="#dc2626" stroke-width="3" stroke-dasharray="7 5"/><text x="414" y="343" font-size="21">Hình chóp</text><text x="398" y="377" font-size="22">V = S·h/3</text><polygon points="630,280 731,255 825,292 716,324" fill="#fde68a" stroke="#a16207" stroke-width="3"/><polygon points="666,160 720,145 774,166 716,184" fill="#fde68a" stroke="#a16207" stroke-width="3"/><path d="M630 280 L666 160 M731 255 L720 145 M825 292 L774 166 M716 324 L716 184" stroke="#a16207" stroke-width="3"/><text x="697" y="351" font-size="21">Chóp cụt đều</text><text x="636" y="388" font-size="16">V=h(S+S′+sqrt(S·S′))/3</text>
+<text x="450" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#475569">Sơ đồ phương và quan hệ; không suy độ dài/góc từ phối cảnh.</text>
+</svg>
+~~~
+
+### B27 SVG `G11_B27_TETRAHEDRON_ORTHOGONAL_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B27_TETRAHEDRON_ORTHOGONAL_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`2669181a54e561532ecbfb032348f92f43d2dc42`
+
+ASSET_SOURCE_PR_HEAD|`0a6aad2abda914b4afb2135d0e79f09ca0572045`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 440" width="950" height="440" role="img" aria-labelledby="t d">
+<title id="t">Thể tích tứ diện có ba cạnh đôi một vuông góc</title><desc id="d">Tứ diện OABC có ba cạnh OA, OB, OC đôi một vuông góc tại O, OA dài a, OB dài b, OC dài c. Chọn tam giác OBC làm đáy diện tích bc chia 2 và OA là đường cao vuông góc mặt OBC. Thể tích bằng abc chia 6, không phải abc chia 3.</desc>
+<rect width="950" height="440" rx="16" fill="#fff"/>
+<text x="475" y="38" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#193e59">Tứ diện vuông tại O: chọn đúng đáy và chiều cao</text>
+<polygon points="161,332 450,340 350,205" fill="#e8f2fa" stroke="#4684aa" stroke-width="3"/>
+<path d="M161 332 L161 80" stroke="#be5b3c" stroke-width="6"/>
+<path d="M161 80 L450 340 M161 80 L350 205" stroke="#8194a6" stroke-width="3.4" fill="none"/>
+<path d="M161 332 L177 331 L177 316" stroke="#b65736" fill="none" stroke-width="2.5"/>
+<g font-family="Arial" font-size="21" fill="#27465d">
+<text x="136" y="77">A</text><text x="134" y="355">O</text><text x="457" y="352">B</text><text x="359" y="198">C</text>
+<text x="126" y="210" fill="#b85739">OA=a</text><text x="281" y="359">OB=b</text><text x="237" y="254">OC=c</text>
+<rect x="544" y="86" width="366" height="267" rx="14" fill="#f5f9fc" stroke="#dce7ed"/>
+<text x="565" y="126" font-weight="700">OA ⟂ OB, OA ⟂ OC</text>
+<text x="565" y="172">⇒ OA ⟂ (OBC)</text>
+<text x="565" y="218">S(OBC) = bc/2</text>
+<text x="565" y="265">h = OA = a</text>
+<text x="565" y="318" font-weight="700" fill="#b65335">V = (bc/2)·a/3 = abc/6</text>
+<text x="475" y="411" text-anchor="middle" font-size="17" fill="#61798a">Đường cao phải vuông góc với cả hai đường cắt nhau OB và OC của mặt đáy.</text>
+</g></svg>
+~~~
+
+### B27 SVG `G11_B27_FRUSTUM_SIMILARITY_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B27_FRUSTUM_SIMILARITY_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`10ccc89345ab469eb7feb136a933da546c8234f0`
+
+ASSET_SOURCE_PR_HEAD|`0a6aad2abda914b4afb2135d0e79f09ca0572045`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 480" width="1010" height="480" role="img" aria-labelledby="t d">
+<title id="t">Công thức thể tích chóp cụt đều qua hiệu hai chóp đồng dạng</title><desc id="d">Một chóp lớn đỉnh T có đáy dưới diện tích S và chiều cao toàn phần H. Mặt phẳng song song đáy cắt chóp, tạo chóp nhỏ ở trên có đáy diện tích S phẩy và chiều cao kH, k bằng căn S phẩy chia S. Phần giữa hai đáy là chóp cụt đều cao h bằng (1-k)H. Hiệu thể tích hai chóp dẫn đến h nhân (S cộng S phẩy cộng căn SS phẩy) chia ba.</desc>
+<rect width="1010" height="480" rx="18" fill="#fff"/>
+<text x="505" y="35" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a3f5a">Vì sao công thức chóp cụt có √(SS′)?</text>
+<polygon points="95,360 490,360 598,283 205,283" fill="#e3f0fa" stroke="#5186aa" stroke-width="3"/>
+<polygon points="210,236 375,236 425,204 261,204" fill="#e6f6ed" stroke="#469474" stroke-width="3"/>
+<path d="M305 66 L95 360 M305 66 L490 360 M305 66 L598 283 M305 66 L205 283" stroke="#788b9a" stroke-width="3.6" fill="none"/>
+<path d="M210 236 L95 360 M375 236 L490 360 M425 204 L598 283 M261 204 L205 283" stroke="#6586a1" stroke-width="2.4"/>
+<line x1="305" y1="66" x2="305" y2="322" stroke="#c05b3b" stroke-width="5" stroke-dasharray="8 6"/>
+<path d="M305 222 L305 324" stroke="#287f69" stroke-width="7"/>
+<g font-family="Arial" font-size="19" fill="#27445e">
+<text x="315" y="60">T</text><text x="326" y="170">kH</text><text x="326" y="283" fill="#277f66">h</text>
+<text x="505" y="370">S</text><text x="432" y="205">S′</text>
+<rect x="618" y="85" width="364" height="297" rx="13" fill="#f5f9fc" stroke="#dfe8ed"/>
+<text x="643" y="125" font-weight="700">k=√(S′/S), 0&lt;k&lt;1</text>
+<text x="643" y="167">h=(1−k)H</text>
+<text x="643" y="219">V=(SH−S′kH)/3</text>
+<text x="643" y="273">V=h(S+S′+√(SS′))/3</text>
+<text x="643" y="333" font-weight="700" fill="#2f826b">Không lấy (S+S′)h/2</text>
+<text x="505" y="443" text-anchor="middle" font-size="16" fill="#65798b">Chỉ áp dụng khi hai đáy tương ứng đồng dạng, song song và phần khối là chóp cụt.</text></g></svg>
+~~~
+
+### B27 SVG `G11_B27_PRISM_INCLINED_HEIGHT_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B27_PRISM_INCLINED_HEIGHT_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`f62240aa34d6fe3711193b1f742cd2ed286c0518`
+
+ASSET_SOURCE_PR_HEAD|`0a6aad2abda914b4afb2135d0e79f09ca0572045`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 475" width="1050" height="475" role="img" aria-labelledby="t d">
+<title id="t">Ví dụ 2 SGK, chiều cao của lăng trụ xiên từ mặt bên vuông góc đáy</title><desc id="d">Khối lăng trụ ABC.A phẩy B phẩy C phẩy có hai đáy tam giác đều cạnh a. Mặt bên ACC phẩy A phẩy vuông góc đáy ABC. Trong tam giác A phẩy AC cân tại A phẩy, A phẩy A bằng A phẩy C bằng b, H là trung điểm AC, A phẩy H vuông góc AC và do hai mặt vuông góc A phẩy H vuông góc đáy. AH bằng a chia 2, chiều cao bằng căn của b bình phương trừ a bình phương chia bốn.</desc>
+<rect width="1050" height="475" rx="18" fill="#fff"/><text x="525" y="37" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1b405b">Lăng trụ xiên: chiều cao A′H không phải cạnh bên AA′</text>
+<polygon points="157,355 455,355 313,189" fill="#e8f4fa" stroke="#5a89a8" stroke-width="3"/>
+<polygon points="135,178 433,178 291,12" fill="#e2f5ed" stroke="#458b74" stroke-width="3"/>
+<path d="M157 355 L135 178 M455 355 L433 178 M313 189 L291 12" stroke="#77899a" stroke-width="3.5" fill="none"/>
+<polygon points="157,355 313,189 291,12 135,178" fill="#e9d7f8" fill-opacity=".4" stroke="#7e6b9b" stroke-width="3"/>
+<path d="M135 178 L235 272" stroke="#c65b3c" stroke-width="6" stroke-dasharray="9 6"/>
+<path d="M157 355 L313 189" stroke="#348674" stroke-width="4"/>
+<path d="M220 263 L230 253 L240 263" stroke="#c65b3c" stroke-width="2.4" fill="none"/>
+<g font-family="Arial" font-size="19" fill="#23405a">
+<text x="138" y="377">A</text><text x="465" y="377">B</text><text x="305" y="181">C</text>
+<text x="115" y="173">A′</text><text x="438" y="171">B′</text><text x="296" y="9">C′</text><text x="238" y="295">H</text>
+<text x="126" y="264">AA′=b</text><text x="208" y="334">AH=a/2</text><text x="246" y="236" fill="#ba5637">A′H⊥đáy</text>
+<rect x="605" y="80" width="418" height="305" rx="13" fill="#f6fafc" stroke="#dce8ed"/>
+<text x="627" y="124" font-weight="700">Mặt (ACC′A′) ⟂ đáy</text>
+<text x="627" y="171">A′H ⟂ AC, H trung điểm AC</text>
+<text x="627" y="218">⇒ A′H ⟂ (ABC)</text>
+<text x="627" y="270">A′H=√(b²−a²/4)</text>
+<text x="627" y="333" font-weight="700" fill="#bb5636">V= (a²√3/4)·A′H</text>
+<text x="525" y="445" text-anchor="middle" font-size="16" fill="#62778a">Sơ đồ phương vuông góc; không suy chiều cao từ cạnh xiên theo phối cảnh.</text></g></svg>
+~~~
+
+### B27 SVG `G11_B27_PARALLELEPIPED_OBLIQUE_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B27_PARALLELEPIPED_OBLIQUE_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`4f495702bc69960025b454acd6c967a17a83f760`
+
+ASSET_SOURCE_PR_HEAD|`0a6aad2abda914b4afb2135d0e79f09ca0572045`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 455" width="1030" height="455" role="img" aria-labelledby="t d">
+<title id="t">Ví dụ 3 SGK, thể tích hình hộp xiên từ diện tích hình bình hành và độ cao</title><desc id="d">Hình hộp ABCD.A phẩy B phẩy C phẩy D phẩy có AB bằng 8 cm, AD bằng 5 cm, góc BAD bằng 30 độ, cạnh bên AA phẩy bằng 6 cm và góc giữa AA phẩy với mặt đáy bằng 45 độ. Gọi H là hình chiếu của A phẩy xuống đáy; chiều cao A phẩy H bằng 6 sin 45 độ bằng 3 căn hai. Diện tích đáy bằng 8 nhân 5 nhân sin30 bằng 20 cm vuông; thể tích bằng 60 căn hai cm khối.</desc>
+<rect width="1030" height="455" rx="18" fill="#fff"/>
+<text x="515" y="38" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#193c57">Khối hộp xiên: diện tích đáy × chiều cao vuông góc</text>
+<polygon points="128,340 446,340 539,241 219,241" fill="#e4eff8" stroke="#5b86a5" stroke-width="3"/>
+<polygon points="224,161 542,161 635,62 315,62" fill="#dff4ea" stroke="#4a9279" stroke-width="3"/>
+<path d="M128 340 L224 161 M446 340 L542 161 M539 241 L635 62 M219 241 L315 62" fill="none" stroke="#7b8c9d" stroke-width="3.2"/>
+<path d="M224 161 L224 340" stroke="#c05a38" stroke-width="6" stroke-dasharray="9 6"/>
+<path d="M224 161 L128 340" stroke="#2e78a9" stroke-width="6"/>
+<path d="M224 321 H243 V340" stroke="#c05a38" stroke-width="2.5" fill="none"/>
+<g font-family="Arial" font-size="19" fill="#24415a">
+<text x="107" y="364">A</text><text x="450" y="363">B</text><text x="546" y="247">C</text><text x="205" y="234">D</text>
+<text x="210" y="153">A′</text><text x="547" y="153">B′</text><text x="641" y="56">C′</text><text x="305" y="54">D′</text><text x="232" y="357">H</text>
+<text x="235" y="252" fill="#bc5434">A′H = 3√2</text><text x="164" y="285">AA′ = 6</text><text x="300" y="362">AB = 8</text><text x="170" y="331">AD=5</text>
+<rect x="662" y="83" width="345" height="301" rx="12" fill="#f5f9fc" stroke="#dfe8ef"/>
+<text x="683" y="128" font-weight="700">Góc BAD = 30°</text><text x="683" y="177">S đáy = 8·5·sin30°</text><text x="683" y="213">= 20 cm²</text>
+<text x="683" y="260">A′H = 6·sin45°</text><text x="683" y="297">= 3√2 cm</text>
+<text x="683" y="343" font-weight="700" fill="#bf5638">V = 60√2 cm³</text>
+<text x="515" y="425" text-anchor="middle" font-size="16" fill="#657c8c">Ảnh phối cảnh minh họa đối tượng, các góc và độ dài lấy từ giả thiết SGK.</text></g></svg>
+~~~
+
+### B27 SVG `G11_B27_FRUSTUM_BASKET_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B27_FRUSTUM_BASKET_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`56ac666836da322f1dd9fb63dca588046ce62759`
+
+ASSET_SOURCE_PR_HEAD|`0a6aad2abda914b4afb2135d0e79f09ca0572045`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 475" width="1050" height="475" role="img" aria-labelledby="t d">
+<title id="t">Sọt hình chóp cụt đều có miệng vuông 60 cm, đáy 30 cm, cạnh bên 50 cm</title><desc id="d">Khối chóp cụt đều vuông có đáy nhỏ cạnh 30 centimet và miệng lớn cạnh 60 centimet, cạnh bên 50 centimet. Hai tâm đáy O và O phẩy thẳng hàng theo phương vuông góc; độ lệch ngang hai đỉnh tương ứng là một nửa chênh đường chéo hai hình vuông, tức 15 căn hai centimet. Đường cao h bằng căn của 50 bình phương trừ (15 căn hai) bình phương, tức căn 2050 centimet. Thể tích trong hình học là h chia ba nhân (3600 cộng 900 cộng 1800) centimet khối.</desc>
+<rect width="1050" height="475" rx="18" fill="#fff"/>
+<text x="525" y="36" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#173e5a">Vận dụng SGK: sọt chóp cụt đều, không lấy cạnh bên làm cao</text>
+<polygon points="161,368 376,368 499,284 285,284" fill="#e6f2fb" stroke="#4c87a7" stroke-width="3"/>
+<polygon points="91,189 480,189 599,107 211,107" fill="#e6f6ed" stroke="#478f76" stroke-width="3"/>
+<path d="M161 368 L91 189 M376 368 L480 189 M499 284 L599 107 M285 284 L211 107" stroke="#7a8b9b" stroke-width="3.3" fill="none"/>
+<line x1="329" y1="303" x2="345" y2="150" stroke="#c45c38" stroke-width="5" stroke-dasharray="10 6"/>
+<path d="M376 368 L480 189" stroke="#2976a3" stroke-width="6"/>
+<g font-family="Arial" font-size="19" fill="#23425c">
+<text x="214" y="392">Đáy nhỏ: 30 cm</text>
+<text x="212" y="89">Miệng: 60 cm</text><text x="488" y="262" fill="#2877a7">Cạnh bên 50 cm</text>
+<text x="353" y="229" fill="#b95737">h</text>
+<rect x="652" y="78" width="365" height="320" rx="12" fill="#f5f9fc" stroke="#dce8ef"/>
+<text x="676" y="123" font-weight="700">S=60²=3600 cm²</text>
+<text x="676" y="170">S′=30²=900 cm²</text>
+<text x="676" y="219">Độ lệch ngang =15√2</text>
+<text x="676" y="266">h=√(50²−(15√2)²)</text>
+<text x="676" y="309">=√2050 cm</text>
+<text x="676" y="355" font-weight="700" fill="#b75536">V=2100√2050 cm³</text>
+<text x="525" y="447" text-anchor="middle" font-size="16" fill="#65798b">Thể tích hình học chưa trừ bề dày sọt; hai đáy có kích thước khác nhau và song song.</text></g></svg>
 ~~~
 
