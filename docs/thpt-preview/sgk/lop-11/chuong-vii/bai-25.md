@@ -99,3 +99,53 @@
     ??? tip "Kiểm lỗi"
 
         Không thay ngay \(102^\circ\) bằng \(78^\circ\) khi đề hỏi **góc nhị diện**. Ngược lại, không lấy góc tù làm **góc giữa hai mặt**.
+
+    ### 1.5. Một số hình lăng trụ đặc biệt
+
+    **Thứ tự nhận biết phải rõ:** Hình **lăng trụ đứng** là lăng trụ có **các cạnh bên vuông góc với mặt đáy**. Do đó các mặt bên là **hình chữ nhật** và các cạnh bên đúng bằng **chiều cao**. Hình **lăng trụ đều** là lăng trụ đứng có **đáy là đa giác đều**. Vì mọi cạnh của đa giác đều bằng nhau, các mặt bên của lăng trụ đều là các hình chữ nhật **cùng kích thước**. Một lăng trụ đứng đáy tam giác \(3,4,5\) **không** phải lăng trụ đều.
+
+    **Trong họ hình hộp:** Hình hộp đứng có đáy là **hình bình hành** và cạnh bên vuông góc mặt đáy. Khi đáy thành hình chữ nhật, đó là **hình hộp chữ nhật**, có sáu mặt chữ nhật. Nếu mọi cạnh hình hộp chữ nhật **bằng nhau**, ta được **hình lập phương** với sáu mặt vuông. Hình hộp đứng có thể có đáy hình bình hành không vuông, nên không phải toàn bộ sáu mặt đều chữ nhật.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_SPECIAL_PRISMS_AUTHORING_20261123.svg" alt="Ba hình minh họa: lăng trụ đứng đáy không đều, lăng trụ đều đáy tam giác đều, hình lập phương"><figcaption><strong>Hướng dẫn đọc trái sang phải:</strong> khối thứ nhất chỉ cần **cạnh bên vuông góc đáy**; khối thứ hai còn có **đáy đa giác đều**; khối thứ ba là **hộp chữ nhật mọi cạnh bằng nhau**. Hình dùng minh họa kiểu khối, không cho phép kết luận các đoạn bằng nhau chỉ bằng tỉ lệ ảnh.</figcaption></figure>
+
+    **Đọc theo HĐ6–HĐ10 SGK:** Lăng trụ đứng có mặt bên chữ nhật và vuông góc đáy vì chứa cạnh bên vuông góc đáy. Lăng trụ đều có các mặt bên chữ nhật bằng nhau. Hình hộp đứng có **ít nhất bốn mặt bên** là chữ nhật; hình hộp chữ nhật có cả sáu mặt chữ nhật, hình lập phương có sáu mặt vuông. Đối với hình hộp chữ nhật, bốn đường chéo không gian bằng nhau và gặp nhau ở trung điểm chung. Không nhầm **đường chéo mặt** với **đường chéo không gian**.
+
+    **Ví dụ 6 SGK:** Trong hình lập phương cạnh \(a>0\), tam giác \(A'BD\) có ba cạnh \(A'B,A'D,BD\) đều là đường chéo của các hình vuông cạnh \(a\), nên đều bằng \(a\sqrt2\). Do đó **tam giác \(A'BD\) đều**. Điều này cần chứng minh bằng độ dài, không dựa vào hình khối có vẻ đối xứng.
+
+    **Vận dụng.** Một lăng trụ có các cạnh bên vuông góc đáy, dài \(6\) cm, đáy là tam giác có cạnh \(3,4,5\) cm. Đây có phải lăng trụ đều không? Tính diện tích mặt bên dựa trên cạnh đáy dài \(3\) cm.
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Đây là **lăng trụ đứng** nhưng không phải lăng trụ đều vì tam giác đáy \(3,4,5\) không đều. Mặt bên ứng với cạnh đáy \(3\) cm là hình chữ nhật cao \(6\) cm, diện tích \(3\cdot6=18\) cm².
+
+    ??? tip "Kiểm lỗi"
+
+        Không dùng từ “đều” chỉ vì lăng trụ **đứng**; cần thêm điều kiện đáy là **đa giác đều**.
+
+    ### 1.6. Hình chóp đều và hình chóp cụt đều
+
+    **Từ tháp kính Louvre đến định nghĩa:** Hình chóp đều là hình chóp có **đáy là đa giác đều** và **các cạnh bên bằng nhau**. Gọi \(O\) là chân đường vuông góc từ đỉnh \(S\) xuống đáy. Khi các cạnh bên bằng nhau, với \(SO\) chung, những tam giác vuông \(SOA_i\) cho \(OA_1=\dots=OA_n\), nên \(O\) là **tâm đa giác đáy đều**. Ngược lại, nếu đáy đều và \(O\) là tâm đáy thì các cạnh bên \(SA_i\) bằng nhau theo Pythagore. Vì vậy SGK có tiêu chuẩn tương đương: **đáy đều và chân đường cao ở tâm đáy**.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg" alt="Hình chóp đều có đường cao SO tới tâm O của đáy; hình chóp cụt đều hai đáy song song có đường cao HK"><figcaption><strong>Hướng dẫn đọc hình trái:</strong> \(ABCD\) là hình vuông, \(O\) là tâm đáy; đoạn đỏ nét đứt \(SO\perp(ABCD)\) là **đường cao**, còn cạnh nghiêng \(SA\) là **cạnh bên**, không phải chiều cao. Hình phải là phần chóp cụt được giải thích ngay dưới đây.</figcaption></figure>
+
+    **Tính ví dụ thực tế theo dữ kiện SGK:** Tháp kính Louvre được mô tả bằng chóp đáy vuông cạnh \(34\) m, cạnh bên khoảng \(32{,}3\) m. Tâm \(O\) đáy cách mỗi đỉnh \(A\) một đoạn \(OA=17\sqrt2\) m. Trong tam giác vuông \(SOA\), chiều cao mô hình \(SO=\sqrt{32{,}3^2-(17\sqrt2)^2}\approx21{,}57\) m. Đây là tính theo mô hình hình chóp đều với số liệu **xấp xỉ**, không phải khẳng định chiều cao đo thực tế chính xác.
+
+    **Cắt chóp đều bằng mặt song song với đáy:** Mặt cắt không qua đỉnh tạo chóp đều nhỏ hơn, đồng dạng với chóp ban đầu. Phần nằm **giữa hai mặt đáy** gọi là **hình chóp cụt đều**, có hai đáy là đa giác đều song song, đồng dạng; các mặt bên là hình **thang cân**. Đường thẳng qua **hai tâm đáy** vuông góc với mỗi đáy; đoạn nối hai tâm \(HK\) là **đường cao** và độ dài \(HK\) là **chiều cao**. Cạnh bên nghiêng dài hơn đường cao nếu hai đáy khác cỡ.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg" alt="Hình chóp cụt đều với hai đáy vuông song song, đoạn HK nối tâm hai đáy là đường cao"><figcaption><strong>Hướng dẫn đọc khung phải:</strong> đáy dưới \(ABCD\) lớn, đáy trên \(A'B'C'D'\) nhỏ, cả hai song song và có tâm \(H,K\). Đoạn đỏ nét đứt \(HK\) vuông góc cả hai đáy là **đường cao**; đoạn \(AA'\) là **cạnh bên xiên**, không thay được chiều cao.</figcaption></figure>
+
+    **Ví dụ 8 SGK — cạnh bên chóp cụt tam giác đều:** Hai đáy tam giác đều có cạnh \(a>a'>0\), khoảng cách hai mặt đáy \(h>0\). Khoảng cách từ tâm đáy đến đỉnh tương ứng của hai tam giác lần lượt là \(a/\sqrt3\), \(a'/\sqrt3\). Độ lệch theo mặt đáy của hai đỉnh tương ứng là \((a-a')/\sqrt3\). Bởi vậy độ dài **cạnh bên** bằng
+    \[
+    \ell=\sqrt{h^2+\frac{(a-a')^2}{3}}.
+    \]
+    Lỗi thường gặp là dùng \(a-a'\) thay trực tiếp cho độ lệch ngang, quên rằng bán kính ngoại tiếp **tam giác đều** bằng cạnh chia \(\sqrt3\).
+
+    **Vận dụng.** Chóp tứ giác đều \(S.ABCD\) có cạnh đáy \(6\) cm, đường cao \(SO=4\) cm. Tính cạnh bên \(SA\); nếu cắt chóp theo một mặt phẳng song song đáy, đâu là đường cao của phần chóp cụt?
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Tâm hình vuông có \(OA=6\sqrt2/2=3\sqrt2\) cm. Tam giác \(SOA\) vuông tại \(O\), suy \(SA=\sqrt{SO^2+OA^2}=\sqrt{16+18}=\sqrt{34}\) cm. Với chóp cụt đều, đường cao là đoạn nối **hai tâm đáy**, vuông góc hai mặt đáy, không phải cạnh bên xiên.
+
+    ??? tip "Kiểm lỗi"
+
+        Không trả \(SA=SO=4\) cm; cạnh bên là **cạnh huyền** của tam giác \(SOA\). Cũng đừng định nghĩa chóp đều là hình chóp mà “mọi cạnh bên vuông góc đáy”.
