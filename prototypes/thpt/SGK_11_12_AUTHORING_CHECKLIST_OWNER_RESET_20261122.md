@@ -57,6 +57,13 @@
 
 **Quy tắc tái sử dụng trước, bổ sung sau:** Tác giả **không tự vẽ lại toàn bộ hình của bài**. Trước khi biên soạn/nâng cấp từng mục SGK và từng phần Ví dụ/Vận dụng cần hình, **phải rà hình/bảng/đồ thị hiện có** trong trang bài cũ và thư viện asset canonical của repo, **mở/đọc nội dung hình** để đối chiếu đúng đối tượng, ký hiệu, tính chất, điều kiện và ý cần giảng. Hình đã có **đúng và đủ** thì **dùng lại đúng file**, không tạo bản sao hoặc thay chỉ vì muốn đồng bộ phong cách. Hình hiện có sai, thiếu hoặc không giúp người học hiểu điểm bắt buộc mới được **bổ sung hoặc đề xuất sửa trong đúng phạm vi trang Kiến thức**, và phải nêu lý do học thuật cụ thể.
 
+**Phạm vi ưu tiên theo tab (chủ dự án xác nhận 23/11/2026):**
+- **Tab Khám phá kiến thức:** Đây là nơi **ưu tiên** hình, bảng, đồ thị để quan sát và hình thành kiến thức; kiểm nhu cầu minh họa theo từng mục SGK, dùng lại hình phù hợp đã có.
+- **Tab Kiến thức SGK:** Đây cũng là nơi **ưu tiên** hình, bảng, đồ thị để minh họa định nghĩa/tính chất/công thức và hướng dẫn đọc; có thể dùng chung **đúng một asset canonical** với Khám phá khi phù hợp.
+- **Tab Ví dụ:** **Không bắt buộc có hình hoặc bảng**; chỉ thêm khi thực sự cần cho đề bài, phân tích, lời giải, bước dựng hay để tránh học sinh hiểu sai. Ví dụ giải thích đầy đủ bằng chữ và phép toán thì **không thêm hình để trang trí**.
+- **Tab Lỗi thường gặp:** **Không bắt buộc có hình hoặc bảng**; chỉ thêm khi so sánh đúng–sai, phát hiện ngộ nhận từ hình hoặc sửa lỗi trực quan **giúp hiểu rõ hơn**. Không tạo hình cho đủ tab.
+- **Cả bốn tab:** kiểm khi có hình/bảng/đồ thị và mọi lời dẫn tham chiếu hình; **không đặt quota số hình theo tab hay theo bài**. Tab Ví dụ/Lỗi thường gặp không có hình vẫn **đạt** nếu đã tự kiểm thấy không cần và không có lời dẫn tới hình vắng mặt. Nếu một đoạn giảng ở bất kỳ tab nào **cần hình để hiểu** thì phải có hình đúng tại chỗ đó.
+
 **Tự kiểm bắt buộc theo từng mục/ý giảng, không chỉ đếm số hình:**
 
 - [ ] **Chỗ nào cần hình?** Đọc SGK S1 và bốn tab như học sinh lần đầu; đánh dấu các điểm cần quan sát để hiểu đối tượng, vị trí, sự biến thiên, cấu trúc, bước dựng, điều kiện hay cách giải. Không để lời giảng đòi quan sát một hình mà không thể nhìn thấy hình đó.
