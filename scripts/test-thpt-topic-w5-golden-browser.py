@@ -283,7 +283,8 @@ with sync_playwright() as pw:
                     recovered = current_panel.locator('[data-topic-w3-display-math="recovered-display"]')
                     assert recovered.count() >= 1, (engine, topic, width, subtab_id,
                                                      "DISPLAY_MATH_WRAPPER_MISSING", literal)
-                    expect(recovered.first.locator("mjx-container")).to_be_visible(timeout=12000)
+                    expect(recovered.first.locator("mjx-container")).to_have_count(1, timeout=12000)
+                    expect(recovered.first.locator("mjx-container").first).to_be_visible(timeout=12000)
                 load("luyen-tap")
                 cards = page.locator("[data-topic-w1-practice-card]")
                 expect(cards).to_have_count(practice_groups)
