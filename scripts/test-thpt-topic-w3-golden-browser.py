@@ -83,6 +83,8 @@ with sync_playwright() as pw:
                         &&!!(intro.compareDocumentPosition(knowledge)&Node.DOCUMENT_POSITION_FOLLOWING);
                 }"""), (topic,"Title → lead → Kiến thức order")
                 assert page.locator("article.md-typeset > h1.topic-w1-topic-heading").count()==1
+                assert page.locator("article.md-typeset > p.topic-w1-source-intro").is_hidden(), (topic, "redundant lead should be hidden")
+                assert not page.locator("article.md-typeset > p.topic-w1-source-intro").inner_text().strip(), (topic, "redundant lead survived")
                 tabs = page.locator("[data-topic-w1-module-tab]")
                 expect(tabs).to_have_count(groups)
                 expect(page.locator("[data-topic-w1-subtab]")).to_have_count(outcomes)
@@ -162,6 +164,8 @@ with sync_playwright() as pw:
                         subtabs.nth(j).click()
                         active = panel.locator(".thpt-r4-knowledge-content-panel:visible")
                         expect(active).to_have_count(1)
+                        raw_display = active.evaluate(r"""e => /\[\s*(?:\\vec|\(\\vec|\\sin|\\cos|\\tan|\\frac|\\sqrt|\\lim|\\operatorname)/.test(e.innerText)""")
+                        assert not raw_display, (engine, topic, width, i, j, "visible unrendered display TeX")
                         current = subtabs.nth(j)
                         assert current.evaluate("(e)=>getComputedStyle(e).fontSize") == ("14px" if width <= 640 else "15px")
                         assert current.evaluate("(e)=>Math.round(e.getBoundingClientRect().height)") == 44
