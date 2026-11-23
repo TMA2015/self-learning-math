@@ -24,6 +24,8 @@ jobs:
           node scripts/test-thpt-push-deploy-scope.cjs --self-test
           node --check scripts/test-thpt-scoped-deploy-proof.cjs
           node scripts/test-thpt-scoped-deploy-proof.cjs --self-test
+          node --check scripts/test-thpt-release-impact.cjs
+          node scripts/test-thpt-release-impact.cjs --self-test
       - name: Preserve full original deploy gate signatures
         run: |
           node - <<'NODE'
@@ -32,7 +34,7 @@ jobs:
           assert(/BEFORE_SHA:\s*\$\{\{\s*github\.event\.before\s*\}\}/.test(w),'Full main push base required');
           assert(/HEAD_SHA:\s*\$\{\{\s*github\.sha\s*\}\}/.test(w),'Full main push head required');
           const expr="$"+"{{";
-          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' }}";
+          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' }}";
           const scopedIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_LESSON' && needs.release-scope.outputs.changed_lessons != '' }}";
           assert(w.includes(fullIf),'Original FULL release cannot execute on a scoped lesson');
           assert(w.includes(scopedIf),'Scoped release needs explicit single-lesson classified impact');
@@ -48,6 +50,17 @@ jobs:
              'mkdocs build --strict','mkdocs build -f mkdocs.thpt-preview.yml --strict',
              'node scripts/assemble-thpt-site.cjs','ghp-import -n -p -f site'])
             assert(w4.includes(req),'W4 source/Q18/browser/production guard missing '+req);
+          const w5If="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_W5' }}";
+          assert(w.includes(w5If),"W5 exact 4-Topic main-push scoped lane missing");
+          const w5=w.split('\\n  deploy-scoped-topic-w5:\\n')[1];
+          assert(w5,'Dedicated W5 publish job missing');
+          for(const req of ['SCOPED_TOPIC_W5','scripts/test-thpt-topic-w5-source-intake.py',
+             'scripts/test-thpt-topic-w5-source-locked.py',
+             'scripts/test-thpt-topic-w5-golden-browser.py',
+             'W5_CD19_22_SOURCE_INTAKE_20261123.json','PUBLIC_REPLAY_ONLY',
+             'mkdocs build --strict','mkdocs build -f mkdocs.thpt-preview.yml --strict',
+             'node scripts/assemble-thpt-site.cjs','ghp-import -n -p -f site'])
+            assert(w5.includes(req),'W5 source/Q18/Q15/Q16/browser/production guard missing '+req);
           const hotfixIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_HOTFIX_W2_W3' }}";
           assert(w.includes(hotfixIf),'Exact CĐ06–15 hotfix must use separate protected deploy lane');
           const hotfix=w.split('\n  deploy-scoped-topic-w2w3-hotfix:\n')[1];
@@ -104,7 +117,7 @@ jobs:
           assert(w.slice(v2Step,classificationStep).includes('node scripts/test-thpt-handoff-gate-v2.cjs'),'New V2 READY receipt SHA cannot be skipped');
 
           assert(!w.includes('continue-on-error:'),'No failures may be ignored');
-          console.log('PASS deploy safety: five mutually exclusive FULL, SGK-scoped, W3, W4 and W2+W3 maintenance lanes, source/receipt + Q16/built-site guards, unchanged FULL regression signatures.');
+          console.log('PASS deploy safety: six mutually exclusive FULL, SGK-scoped, W3, W4, W5 and W2+W3 maintenance lanes, source/receipt + Q16/built-site guards, unchanged FULL regression signatures.');
           NODE
       - name: Evidence boundary
         run: |
