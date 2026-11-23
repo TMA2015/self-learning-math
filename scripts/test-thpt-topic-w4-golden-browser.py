@@ -206,7 +206,19 @@ with sync_playwright() as pw:
                 labels = knowledge.locator(".thpt-r4-knowledge-content-panel > p").filter(
                     has=page.locator(":scope > strong", has_text="Vận dụng")
                 )
-                assert labels.count() == outcomes, (topic, "Vận dụng coverage", labels.count(), outcomes)
+                # CĐ17's signed Q18 explicitly includes one additional voluntary
+                # 2.4 frustum k=0/1/2/1 exploration with its own Đối chiếu.
+                # It is source-authored discovery, not a new Q15 canonical item.
+                app_expected = outcomes + (1 if topic == "17" else 0)
+                assert labels.count() == app_expected, (topic, "Vận dụng coverage", labels.count(), app_expected)
+                if topic == "17":
+                    extra = page.locator("#w1-17-content-2-4")
+                    assert extra.evaluate("""panel => {
+                      const ps=[...panel.children].filter(p=>p.tagName==='P'&&
+                        (p.querySelector(':scope > strong')?.textContent||'').trim()==='Vận dụng');
+                      return ps.length===2 &&
+                        [...panel.querySelectorAll(':scope > details.question')].length===2;
+                    }"""), (topic, "signed O10 extra exploratory Vận dụng + two voluntary comparisons")
                 application_issues = knowledge.evaluate("""root=>[...root.querySelectorAll('.thpt-r4-knowledge-content-panel')]
                   .flatMap(panel=>[...panel.children].filter(e=>e.tagName==='P'&&/^Vận dụng[:.]?$/.test(e.querySelector(':scope > strong')?.textContent.trim()||''))
                     .map(label=>{let n=label.nextElementSibling,stem=0,details=0;
