@@ -265,6 +265,42 @@ const W5_P1_FILES=new Set([
  "scripts/test-thpt-release-impact.cjs",
  "scripts/test-thpt-topic-w5-golden-browser.py"
 ]);
+/* Owner screenshot follow-up: exactly W5 display-only adapter and its
+ * exhaustive Golden browser audit plus this classifier. Do not widen to SGK,
+ * THCS, shared Golden, Firebase/Auth or authoring source/receipts. */
+const W5_INLINE_AUDIT_FILES=new Set([
+ "docs/assets/javascripts/thpt-topic-w5-golden-v1.js",
+ "scripts/test-thpt-topic-w5-golden-browser.py",
+ "scripts/test-thpt-release-impact.cjs"
+]);
+function isExactW5InlineAudit(files){
+ if(files.length!==W5_INLINE_AUDIT_FILES.size||
+   new Set(files).size!==files.length||
+   !files.every(f=>W5_INLINE_AUDIT_FILES.has(f))||
+   !b16RuntimeIsIsolated())return false;
+ try{
+  const js=fs.readFileSync("docs/assets/javascripts/thpt-topic-w5-golden-v1.js","utf8");
+  const qa=fs.readFileSync("scripts/test-thpt-topic-w5-golden-browser.py","utf8");
+  if(!js.includes("const inlineTex=match[0].replace(")||
+     !js.includes("const fragments=")||
+     !js.includes("PUBLIC_REPLAY_ONLY")||
+     !js.includes('credentials:"omit"')||
+     /localStorage|sessionStorage|setDoc\(|sendBeacon|WebSocket\(/.test(js)||
+     !qa.includes("def audit_visible_math(")||
+     !qa.includes("W5_COMPLETE_VISIBLE_MATH_AUDIT")||
+     !qa.includes("audit_visible_math(card,")||
+     !qa.includes("audit_visible_math(solution,"))return false;
+  const manifest=JSON.parse(fs.readFileSync("prototypes/thpt/release-queue/W5_CD19_22_SOURCE_INTAKE_20261123.json","utf8"));
+  if(Object.keys(manifest.topics||{}).sort().join(",")!=="19,20,21,22")return false;
+  for(const [n,t]of Object.entries(manifest.topics)){
+   for(const part of ["kien-thuc","luyen-tap","tu-kiem-tra"]){
+    const src=fs.readFileSync("docs/thpt-preview/chuyen-de/cd"+n+"/"+part+".md","utf8");
+    if(!src.includes(t.sourceBlob)||!src.includes(t.q18ReceiptBlob))return false;
+   }
+  }
+  return true;
+ }catch{return false}
+}
 function isExactW5P1(files){
  if(files.length!==W5_P1_FILES.size||new Set(files).size!==files.length||
     !files.every(p=>W5_P1_FILES.has(p))||!b16RuntimeIsIsolated())return false;
@@ -403,6 +439,7 @@ function classify(paths,{manual=false}={}){
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(isScopedTopicW2W3Hotfix(files))return {impact:"SCOPED_TOPIC_HOTFIX_W2_W3",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTPUBLISH_CĐ06_15_TEXT_MATH_SCOPED_BROWSER"};
+ if(isExactW5InlineAudit(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"OWNER_W5_COMPLETE_VISIBLE_MATH_AUDIT_EXACT_THREE_FILES"};
  if(isExactW5P1(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"EXACT_OWNER_P1_W5_MATH_PILOT_LAUNCHER_BROWSER"};
  if(isExactW5TopicWave(files))return {impact:"SCOPED_TOPIC_W5",full_suite:"false",changed_lessons:"",reason:"SIGNED_W5_12_PAGES_239_Q15_35_PUBLIC_Q16_GOLDEN_BROWSER"};
  if(isExactW4TopicWave(files))return {impact:"SCOPED_TOPIC_W4",full_suite:"false",changed_lessons:"",reason:"SIGNED_W4_9_PAGES_309_Q15_28_PUBLIC_Q16_GOLDEN_BROWSER"};
@@ -533,6 +570,14 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const inline=[...W5_INLINE_AUDIT_FILES];
+ assert.equal(classify(inline).impact,"SCOPED_TOPIC_W5_P1_HOTFIX","W5 inline audit exact 3-file scope");
+ assert.equal(classify(inline.slice(1)).impact,"FULL","Partial W5 inline audit must fail closed");
+ assert.equal(classify([...inline,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,"FULL","Shared Golden edits require FULL");
+ assert.equal(classify([...inline,"docs/thpt-preview/sgk/chuong-vii/bai-19.md"]).impact,"FULL","SGK canonical changes require FULL");
+ assert.equal(classify([...inline,"docs/assets/data/assessment/private.json"]).impact,"FULL","RD1 cannot enter W5 P1 audit");
+ assert.equal(classify(inline,{manual:true}).impact,"FULL","Manual FULL still available");
+
  const p1=[...W5_P1_FILES];
  assert.equal(classify(p1).impact,"SCOPED_TOPIC_W5_P1_HOTFIX","Exact owner hotfix only");
  assert.equal(classify(p1.slice(1)).impact,"FULL","Incomplete owner hotfix stays FULL");
