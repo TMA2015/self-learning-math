@@ -165,6 +165,82 @@ function isExactW3TopicWave(files){
  }catch{return false}
 }
 
+/* W4 CĐ16–18: exact 30-path owner-instructed scoped integration.
+ * Any unknown/mixed source/runtime/Auth/Firebase/SGK/THCS change fails CLOSED
+ * to FULL; this exception never grants Academic/PED PASS or T5 approval. */
+const W4_EXACT_SCOPE_FILES=new Set([
+ ".github/workflows/deploy.yml",
+ ".github/workflows/thpt-deploy-scope-safety-qa.yml",
+ ".github/workflows/thpt-topic-w4-golden-release-qa.yml",
+ "docs/assets/images/thpt/FIG-TOP18-B14-NORMAL-WHITE-R00.svg",
+ "docs/assets/images/thpt/FIG-TOP18-B15-LINE-WHITE-R00.svg",
+ "docs/assets/images/thpt/FIG-TOP18-B15-SKEW-WHITE-R00.svg",
+ "docs/assets/images/thpt/FIG-TOP18-B16-LINE-PLANE-ANGLE-WHITE-R00.svg",
+ "docs/assets/images/thpt/FIG-TOP18-B16-TWO-PLANES-WHITE-R00.svg",
+ "docs/assets/images/thpt/FIG-TOP18-B17-SPHERE-SECTION-WHITE-R00.svg",
+ "docs/assets/images/thpt/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg",
+ "docs/assets/javascripts/thpt-topic-w4-golden-v1.js",
+ "docs/thpt-preview/chuyen-de/cd15/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd15/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd15/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd16/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd16/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd17/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd17/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd17/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd18/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd18/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd18/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/index.md",
+ "mkdocs.thpt-preview.yml",
+ "mkdocs.yml",
+ "prototypes/thpt/release-queue/W4_CD16_18_SOURCE_INTAKE_20261123.json",
+ "scripts/test-thpt-release-impact.cjs",
+ "scripts/test-thpt-topic-w4-golden-browser.py",
+ "scripts/test-thpt-topic-w4-source-locked.py"
+]);
+const W4_SOURCE_HEADS={
+ "16":"1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+ "17":"0ef0ad696e97d2549f29c5a22ba675970572a089",
+ "18":"d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960"
+};
+function isExactW4TopicWave(files){
+ if(files.length!==W4_EXACT_SCOPE_FILES.size||
+    new Set(files).size!==files.length||
+    !files.every(p=>W4_EXACT_SCOPE_FILES.has(p)))return false;
+ const manifest="prototypes/thpt/release-queue/W4_CD16_18_SOURCE_INTAKE_20261123.json";
+ try{
+  const m=JSON.parse(fs.readFileSync(manifest,"utf8"));
+  if(m.wave!=="W4"||m.standard!=="SLM-THPT-QUALITY-ONE v3.2.0 Q01-Q18"||
+     m.assessmentMode!=="PUBLIC_REPLAY_ONLY / CLIENT_SELF_CHECK_NO_MASTERY; independent TOPIC_READINESS not included"||
+     Object.keys(m.topics||{}).sort().join(",")!=="16,17,18")return false;
+  const total=Object.values(m.topics);
+  if(total.reduce((n,t)=>n+t.outcomes,0)!==73||
+     total.reduce((n,t)=>n+t.items,0)!==309||
+     total.reduce((n,t)=>n+t.replay,0)!==28)return false;
+  const js=fs.readFileSync("docs/assets/javascripts/thpt-topic-w4-golden-v1.js","utf8");
+  if(!js.includes("PUBLIC_REPLAY_ONLY")||!js.includes('credentials:"omit"')||
+     /localStorage|sessionStorage|setDoc\(|sendBeacon|WebSocket\(/.test(js))return false;
+  for(const [n,sha] of Object.entries(W4_SOURCE_HEADS)){
+    const t=m.topics[n];
+    if(!t||t.sourceBlob!==sha||!/^[a-f0-9]{40}$/.test(t.q18ReceiptBlob)||
+       !/^[a-f0-9]{40}$/.test(t.authorHead)||
+       !Array.isArray(t.svg)||!t.svg.length)return false;
+    for(const part of ["kien-thuc","luyen-tap","tu-kiem-tra"]){
+      const page=fs.readFileSync("docs/thpt-preview/chuyen-de/cd"+n+"/"+part+".md","utf8");
+      if(!page.includes("SOURCE_LEARNER_BLOB "+sha)||
+         !page.includes("Q18_RECEIPT_BLOB "+t.q18ReceiptBlob)||
+         !page.includes("thpt-topic-w4-golden-v1.js"))return false;
+      if(part==="tu-kiem-tra"&&(!page.includes("PUBLIC_REPLAY_ONLY")||
+         !page.includes("NO_MASTERY")))return false;
+    }
+    for(const name of t.svg)if(!fs.existsSync("docs/assets/images/thpt/"+name))return false;
+  }
+  return true;
+ }catch{return false}
+}
+
 // One-time post-merge W3 workflow-quote repair: only the original signed
 // W3 bundle, exact three-file recovery diff and a comment-only UI touch.
 // Shared/SGK/THCS/runtime changes remain FULL, no generic path wildcard.
@@ -204,6 +280,7 @@ function classify(paths,{manual=false}={}){
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(isScopedTopicW2W3Hotfix(files))return {impact:"SCOPED_TOPIC_HOTFIX_W2_W3",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTPUBLISH_CĐ06_15_TEXT_MATH_SCOPED_BROWSER"};
+ if(isExactW4TopicWave(files))return {impact:"SCOPED_TOPIC_W4",full_suite:"false",changed_lessons:"",reason:"SIGNED_W4_9_PAGES_309_Q15_28_PUBLIC_Q16_GOLDEN_BROWSER"};
  if(isExactW3TopicWave(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_12_PAGES_240_Q15_59_Q16_GOLDEN_BROWSER_INDEPENDENT"};
  if(isSignedW3Recovery(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_POSTMERGE_WORKFLOW_QUOTE_RECOVERY_COMMENT_ONLY"};
  if(files.every(x=>CI_ROUTING_ONLY.has(x)))
@@ -336,6 +413,13 @@ function selfTest(){
  assert.equal(classify(hotfix.slice(1)).full_suite,"true","Missing hotfix file must fail closed");
  assert.equal(classify([...hotfix,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared runtime is not Topic-only");
  assert.equal(classify([...hotfix,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).full_suite,"true","SGK mixed change fails closed");
+ const w4=[...W4_EXACT_SCOPE_FILES];
+ assert.equal(classify(w4).impact,"SCOPED_TOPIC_W4","W4 signed 30-path wave uses only W4 scoped QA");
+ assert.equal(classify(w4.filter(p=>!p.endsWith("cd18/tu-kiem-tra.md"))).impact,"FULL","Missing CĐ18 question-only page must fail closed");
+ assert.equal(classify([...w4,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,"FULL","Shared runtime change must use FULL");
+ assert.equal(classify([...w4,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).impact,"FULL","Mixed SGK scope must use FULL");
+ assert.equal(classify([...w4,"docs/assets/stylesheets/thpt-topic-w1-golden-v1.css"]).impact,"FULL","Golden shared stylesheet change must use FULL");
+ assert.equal(classify(w4,{manual:true}).impact,"FULL","Manual FULL cannot be narrowed");
  const fixture="docs/thpt-preview/sgk/chuong-v/bai-14.md";
  const another="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md";
  const authoring=[

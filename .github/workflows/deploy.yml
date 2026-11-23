@@ -56,7 +56,7 @@ jobs:
   deploy:
     needs: release-scope
     # The large inherited site-wide regression lane is for shared/unknown changes only.
-    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' }}
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -527,3 +527,78 @@ jobs:
           node --check docs/assets/javascripts/thpt-topic-w3-golden-v1.js
           git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
           python3 scripts/test-thpt-topic-w3-source-locked.py
+
+  deploy-scoped-topic-w4:
+    name: Publish signed W4 CĐ16–18 after exact-head source + Chromium/WebKit QA
+    needs: release-scope
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_W4' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reclassify exact main push and prove three immutable AUTHORING/Q18 receipts
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/topic-w4-scope.txt"
+          node scripts/test-thpt-release-impact.cjs --self-test
+          env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/topic-w4-scope.txt" > "$RUNNER_TEMP/topic-w4-classified.txt"
+          grep -Fxq "impact=SCOPED_TOPIC_W4" "$RUNNER_TEMP/topic-w4-classified.txt"
+          node --check docs/assets/javascripts/thpt-topic-w4-golden-v1.js
+          git fetch --no-tags origin 805feb8080396f7f39ee3b04e3230c5a2bbd135b 97458512ce9343077a4fa350247e3152a6833ce2 25f892c43ad03ed002d61bdb1d5f274cf81c1227
+          python3 scripts/test-thpt-topic-w4-source-locked.py
+      - name: Strict builds of the SAME THCS+THPT site and THPT preview
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+          node scripts/assemble-thpt-site.cjs
+      - name: Assert assembled public pages, Q18 receipts and source SVG assets
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          manifest=json.loads(Path("prototypes/thpt/release-queue/W4_CD16_18_SOURCE_INTAKE_20261123.json").read_text(encoding="utf8"))
+          for n, rec in manifest["topics"].items():
+              for part in ("kien-thuc","luyen-tap","tu-kiem-tra"):
+                  page=Path(f"site/thpt-preview/chuyen-de/cd{n}/{part}/index.html")
+                  assert page.is_file(), f"Missing W4 production route {page}"
+                  data=page.read_text(encoding="utf8")
+                  assert rec["sourceBlob"] in data and rec["q18ReceiptBlob"] in data, f"Q18 mismatch {page}"
+                  assert "thpt-topic-w4-golden-v1.js" in data, f"Missing scoped adapter {page}"
+              for name in rec["svg"]:
+                  root="images/thpt"
+                  assert Path("site/assets",root,name).is_file(), f"Missing original SVG {name}"
+          assert Path("site/assets/javascripts/thpt-topic-w4-golden-v1.js").is_file()
+          assert sum(len(t["svg"]) for t in manifest["topics"].values())==16
+          for t in manifest["topics"].values():
+              assert Path("site/thpt-preview/math-lab/models",t["model"],"index.html").is_file(), "Missing optional model"
+          print("PASS 9/9 source-locked W4 routes, Q18, 16 SVG, 3 optional models")
+          PY
+      - name: Validate W4-only Golden browser, MathJax/SVG/Q16 on Chromium and WebKit
+        run: |
+          python -m playwright install --with-deps chromium webkit
+          python scripts/test-thpt-topic-w4-golden-browser.py
+      - name: Confirm W4 public replay is never official RD1 or Mastery
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for n in ("16","17","18"):
+              page=Path(f"site/thpt-preview/chuyen-de/cd{n}/tu-kiem-tra/index.html")
+              html=page.read_text(encoding="utf-8")
+              assert "PUBLIC_REPLAY_ONLY" in html and "NO_MASTERY" in html
+              assert "thpt-topic-w4-golden-v1.js" in html
+          print("PASS three public-only replay modes; private RD1 remains outside W4 public release")
+          PY
+      - name: Publish verified ONE combined site to existing GitHub Pages
+        run: ghp-import -n -p -f site
