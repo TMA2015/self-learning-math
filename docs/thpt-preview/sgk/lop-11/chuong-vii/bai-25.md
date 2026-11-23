@@ -289,3 +289,65 @@
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Theo định lí, hai mặt phẳng cắt nhau và cùng vuông góc với mặt phẳng thứ ba thì giao tuyến của chúng vuông góc với mặt đó. Vậy \(d\perp(R)\). Nếu \((P)\parallel(Q)\), hai mặt không cắt nhau nên **không tồn tại giao tuyến \(d\)** để áp dụng.</p></div>
 
     **Kiểm lại:** Không được bỏ từ “cắt nhau”; tính chất không xác định giao tuyến của hai mặt song song.
+
+    ### 3.7. Lưng ghế: góc nhị diện khác góc hai mặt
+
+    **Đề bài.** Hai nửa mặt chứa mặt ghế và lưng ghế tạo góc phẳng nhị diện \(105^\circ\) về phía người ngồi. Tính góc giữa hai mặt phẳng chứa hai phần ghế.
+
+    **Phân tích:** Cần phân biệt **hai phía đã chọn** của góc nhị diện và **hai mặt không định hướng**. Góc nhị diện có thể tù, góc hai mặt bắt buộc không tù.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Theo đề, góc phẳng nhị diện là \(105^\circ\). Hai đường chứa hai tia tạo thêm góc kề bù \(180^\circ-105^\circ=75^\circ\); đây là góc không tù. Vì thế góc giữa hai mặt phẳng bằng \(75^\circ\).</p></div>
+
+    **Kiểm lại:** \(105^\circ\) đúng cho **góc nhị diện**, \(75^\circ\) đúng cho **góc hai mặt**; hai câu hỏi không có cùng đáp số.
+
+    ### 3.8. Ví dụ 4 SGK — Ba góc nhị diện của chóp đáy thoi
+
+    **Đề bài.** Cho hình chóp \(S.ABCD\) có \(SA\perp(ABCD)\), đáy \(ABCD\) là hình thoi cạnh \(a>0\), \(AC=a\), \(SA=a/2\). Gọi \(O\) là giao điểm hai đường chéo. Tìm các góc nhị diện \([B,SA,D]\), \([S,BD,A]\), \([S,BD,C]\).
+
+    **Phân tích:** Phải chọn **góc phẳng nhị diện theo hai nửa mặt được nêu trong kí hiệu**. Với cạnh \(SA\), lấy các tia \(AB,AD\perp SA\). Với cạnh \(BD\), vì \(BD\perp(SAC)\), chọn các tia \(OS,OA,OC\) trong mặt \((SAC)\), cùng vuông góc \(BD\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_RHOMBUS_PYRAMID_DIHEDRAL_AUTHORING_20261123.svg" alt="Hình chóp SABCD có đáy hình thoi và tiết diện vuông SAO với góc AOS 45 độ, COS 135 độ"><figcaption><strong>Đọc trước lời giải:</strong> khung trái \(ABCD\) là hình thoi có \(AC=a\), các tam giác \(ABC,ACD\) đều; góc ở \(A\) giữa \(AB,AD\) là \(120^\circ\). Khung phải \(SA\perp AO\), \(SA=AO=a/2\), nên \(\angle AOS=45^\circ\). Hai tia \(OA,OC\) đối nhau, do đó \(\angle COS=135^\circ\).</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Vì đáy là hình thoi cạnh \(a\) và \(AC=a\), các tam giác \(ABC,ACD\) đều, nên \(\angle BAD=120^\circ\). Do \(SA\perp(ABCD)\), hai tia \(AB,AD\) cùng vuông góc \(SA\); vậy \([B,SA,D]=120^\circ\). Hai đường chéo hình thoi vuông góc và \(SA\perp BD\), suy \(BD\perp(SAC)\). Vì \(AO=AC/2=a/2=SA\), tam giác \(SAO\) vuông cân tại \(A\), nên \(\angle AOS=45^\circ\). Do \(OA,OC\) là hai tia đối, \(\angle COS=135^\circ\). Vậy \([S,BD,A]=45^\circ\) và \([S,BD,C]=135^\circ\).</p></div>
+
+    **Kiểm lại:** \(45^\circ+135^\circ=180^\circ\), đúng hai nhị diện kề nhau có chung cạnh \(BD\) nhưng chọn hai phía đáy khác nhau. Không thay cả hai bằng góc \(45^\circ\) chỉ vì góc hai mặt không tù.
+
+    ### 3.9. Nhận diện lăng trụ đứng nhưng không đều
+
+    **Đề bài.** Lăng trụ \(ABC.A'B'C'\) có cạnh bên vuông góc mặt đáy, cao \(6\) cm; đáy \(ABC\) có độ dài ba cạnh \(3,4,5\) cm. Phân loại khối và tính diện tích mặt bên dựa trên cạnh đáy dài \(3\) cm.
+
+    **Phân tích:** Đứng/đều là hai yêu cầu **khác nhau**. Chỉ khi đáy là đa giác đều mới được nói lăng trụ đều.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> Cạnh bên vuông góc đáy nên đây là <strong>lăng trụ đứng</strong>. Tam giác đáy có các cạnh \(3,4,5\) không bằng nhau nên <strong>không phải lăng trụ đều</strong>. Mặt bên tương ứng với cạnh đáy \(3\) cm là hình chữ nhật có chiều cao \(6\) cm, diện tích \(3\cdot6=18\text{ cm}^2\).</p></div>
+
+    **Kiểm lại:** Lăng trụ đứng có mặt bên chữ nhật; lăng trụ đều cần thêm đa giác đáy đều, không suy bằng quan sát bề ngoài.
+
+    ### 3.10. Tam giác đều ẩn trong hình lập phương
+
+    **Đề bài.** Trong hình lập phương \(ABCD.A'B'C'D'\) cạnh \(a>0\), chứng minh tam giác \(A'BD\) đều.
+
+    **Phân tích:** Ba đoạn \(A'B,A'D,BD\) không phải là **cạnh của khối**, mà là **đường chéo của ba mặt vuông**; cần tính ba độ dài bằng Pythagore trước khi kết luận tam giác đều.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> Mỗi mặt hình lập phương là hình vuông cạnh \(a\). Trong các tam giác vuông \(A'AB,A'AD,ABD\), ta được \(A'B=\sqrt{AA'^2+AB^2}=a\sqrt2\), \(A'D=a\sqrt2\), \(BD=\sqrt{AB^2+AD^2}=a\sqrt2\). Ba cạnh tam giác \(A'BD\) bằng nhau nên tam giác <strong>đều</strong>.</p></div>
+
+    **Kiểm lại:** \(A'B, A'D, BD\) cùng dài \(a\sqrt2\), không phải dài \(a\). Suy luận dựa trên ba mặt vuông của hình lập phương, không dựa vào ba nét trông bằng nhau.
+
+    ### 3.11. Hình chóp đều và chiều cao của mô hình tháp Louvre
+
+    **Đề bài.** Mô hình chóp tứ giác đều có cạnh đáy \(34\) m, cạnh bên \(32{,}3\) m. Tính gần đúng chiều cao từ đỉnh \(S\) tới tâm \(O\) đáy.
+
+    **Phân tích:** Vì là chóp đều, chân đường cao ở **tâm hình vuông**. Bán kính từ tâm đến đỉnh đáy là **nửa đường chéo**, không phải nửa cạnh đáy.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.11"><p><strong>Lời giải.</strong> Với cạnh đáy \(34\) m, đường chéo hình vuông \(34\sqrt2\), suy \(OA=17\sqrt2\) m. Tam giác \(SOA\) vuông tại \(O\), nên \(SO=\sqrt{SA^2-OA^2}=\sqrt{32{,}3^2-(17\sqrt2)^2}=\sqrt{465{,}29}\approx21{,}57\) m. Đây là chiều cao <strong>theo mô hình và số liệu gần đúng</strong>.</p></div>
+
+    **Kiểm lại:** \(SO<SA=32{,}3\) m vì \(SA\) là cạnh huyền. Không dùng \(OA=17\) m vì đó là nửa **cạnh** chứ không phải nửa **đường chéo** đáy.
+
+    ### 3.12. Độ dài cạnh bên chóp cụt tam giác đều
+
+    **Đề bài.** Một chóp cụt tam giác đều có chiều cao \(h=4\) cm, cạnh đáy lớn \(a=6\) cm và đáy nhỏ \(a'=3\) cm. Tính độ dài mỗi cạnh bên.
+
+    **Phân tích:** Hai đáy đều là tam giác đều, tâm hai đáy nối bởi đường **vuông góc chung**. Độ lệch ngang của hai đỉnh tương ứng là hiệu bán kính ngoại tiếp, bằng \((a-a')/\sqrt3\), không bằng \(a-a'\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.12"><p><strong>Lời giải.</strong> Bán kính ngoại tiếp hai đáy là \(6/\sqrt3\) và \(3/\sqrt3\); độ lệch ngang bằng \(3/\sqrt3=\sqrt3\) cm. Áp Pythagore cho một cạnh bên: \(\ell=\sqrt{h^2+(\sqrt3)^2}=\sqrt{16+3}=\sqrt{19}\approx4{,}36\) cm. Các cạnh bên bằng nhau vì đây là chóp cụt đều.</p></div>
+
+    **Kiểm lại:** Cạnh bên \(\ell>h=4\) cm là hợp lí vì xiên. Dùng \(\sqrt{16+9}=5\) cm sẽ sai do đã lấy chênh **cạnh đáy** thay cho độ lệch ngang.
