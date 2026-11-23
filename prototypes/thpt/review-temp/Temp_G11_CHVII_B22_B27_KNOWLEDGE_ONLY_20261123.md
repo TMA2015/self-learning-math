@@ -2093,3 +2093,281 @@ MASTERY_ACTIVATION|NO
 ## PHỤ LỤC SVG XML
 
 Phụ lục sẽ được chèn dưới đây với nguồn SVG đúng HEAD mỗi PR. Nếu phụ lục thiếu, reviewer đánh dấu SVG_SOURCE_HOLD chứ không tự kết luận đúng hình.
+
+## SVG PACKET PART 1 — B22–B24
+
+### B22 SVG `FIG-G11-CHVII-B22-01_R00.svg`
+
+ASSET_REF|`docs/assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg`
+
+ASSET_BLOB|`5f2d23adb6f947064312d04d67ce5a5bb2d1ff48`
+
+ASSET_SOURCE_PR_HEAD|`5b40c5c8d03ad4e6fe02fbca2df4729bec51be9a`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc" width="900" height="500">
+<title id="title">FIG-G11-CHVII-B22-01: Góc hai đường chéo nhau: dời song song</title><desc id="desc">Hai đường a và b không cắt nhau được biểu diễn cùng phương trên các cặp song song; tại O hai phương vuông góc, dù đường thật chéo nhau.</desc>
+<rect width="900" height="500" fill="#f8fafc" rx="18"/>
+<text x="450" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">Góc hai đường chéo nhau: dời song song</text>
+<path d="M155 325 L465 325" stroke="#1d4ed8" stroke-width="7" stroke-linecap="round"/><text x="170" y="305" font-size="22" fill="#1d4ed8">a</text><path d="M590 145 L590 390" stroke="#ea580c" stroke-width="7" stroke-linecap="round"/><text x="612" y="181" font-size="22" fill="#9a3412">b</text><path d="M375 150 L375 335 L705 335" stroke="#059669" stroke-width="4" fill="none" stroke-dasharray="10 6"/><text x="338" y="139" font-size="19">b′</text><text x="703" y="356" font-size="19">a′</text><rect x="375" y="312" width="22" height="23" fill="none" stroke="#059669" stroke-width="3"/><circle cx="375" cy="335" r="5" fill="#059669"/><text x="330" y="352" font-size="19">O</text><text x="450" y="414" font-size="19">a′ // a; b′ // b; góc(a,b) = 90°</text>
+<text x="450" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#475569">Sơ đồ phương và quan hệ; không suy độ dài/góc từ phối cảnh.</text>
+</svg>
+~~~
+
+### B22 SVG `G11_B22_SKEW_PERP_RECTANGULAR_BOX_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B22_SKEW_PERP_RECTANGULAR_BOX_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`95c942955c6a4499378b90260eb37a3116791854`
+
+ASSET_SOURCE_PR_HEAD|`5b40c5c8d03ad4e6fe02fbca2df4729bec51be9a`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="470" viewBox="0 0 920 470" role="img" aria-labelledby="title desc">
+<title id="title">Hai cạnh AB và CC phẩy của hình hộp chữ nhật vuông góc dù chéo nhau</title>
+<desc id="desc">Hình hộp chữ nhật ABCD.A phẩy B phẩy C phẩy D phẩy. Cạnh AB màu xanh nằm ở đáy trước; cạnh CC phẩy màu cam đứng ở phía sau; cạnh AA phẩy màu lục song song CC phẩy và vuông góc AB tại A. Suy ra góc giữa AB và CC phẩy bằng góc AB và AA phẩy, bằng 90 độ, dù AB không giao CC phẩy.</desc>
+<rect width="920" height="470" rx="18" fill="#fff"/>
+<text x="460" y="35" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#193954">Vuông góc theo phương không đòi hai đường cắt nhau</text>
+<g stroke="#697b8e" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M160 348 L455 348 L580 250 L285 250 Z" />
+<path d="M160 142 L455 142 L580 44 L285 44 Z" />
+<path d="M160 142 L160 348 M455 142 L455 348 M580 44 L580 250 M285 44 L285 250"/>
+</g>
+<g stroke-linecap="round" stroke-width="7.5" fill="none">
+<path d="M160 348 L455 348" stroke="#2369a1"/>
+<path d="M160 348 L160 142" stroke="#228266"/>
+<path d="M580 250 L580 44" stroke="#c65b36"/>
+</g>
+<path d="M180 348 L180 328 L160 328" fill="none" stroke="#2369a1" stroke-width="3.2"/>
+<g font-family="Arial,sans-serif" font-size="21" fill="#253a55">
+<text x="138" y="370">A</text><text x="463" y="371">B</text><text x="591" y="267">C</text><text x="271" y="278">D</text>
+<text x="131" y="136">A′</text><text x="463" y="137">B′</text><text x="593" y="43">C′</text><text x="271" y="43">D′</text>
+</g>
+<rect x="638" y="93" width="243" height="236" rx="13" fill="#f8fafc" stroke="#d9e1e9"/>
+<g font-family="Arial,sans-serif" font-size="18" fill="#27425d">
+<text x="661" y="130" font-weight="700">Đọc theo ba bước</text>
+<line x1="664" y1="156" x2="700" y2="156" stroke="#2369a1" stroke-width="6" stroke-linecap="round"/>
+<text x="711" y="162">AB (đáy trước)</text>
+<line x1="664" y1="191" x2="700" y2="191" stroke="#c65b36" stroke-width="6" stroke-linecap="round"/>
+<text x="711" y="197">CC′ (phía sau)</text>
+<line x1="664" y1="225" x2="700" y2="225" stroke="#228266" stroke-width="6" stroke-linecap="round"/>
+<text x="711" y="231">AA′ ∥ CC′</text>
+<text x="661" y="272">AB ⟂ AA′ tại A</text>
+<text x="661" y="301" font-weight="700">⇒ AB ⟂ CC′</text>
+</g>
+<text x="460" y="416" font-family="Arial,sans-serif" text-anchor="middle" fill="#475569" font-size="17">Hình hộp chữ nhật: AB và CC′ chéo nhau, nhưng có góc giữa hai phương bằng 90°.</text>
+<text x="460" y="443" font-family="Arial,sans-serif" text-anchor="middle" fill="#64748b" font-size="15">Không suy góc từ độ nghiêng phối cảnh; kết luận dựa trên cạnh song song và tính vuông góc ở hình hộp.</text>
+</svg>
+~~~
+
+### B22 SVG `G11_B22_KHEOPS_ANGLE_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B22_KHEOPS_ANGLE_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`9e3820f228b9c0733378736e4cd24636572b5c83`
+
+ASSET_SOURCE_PR_HEAD|`5b40c5c8d03ad4e6fe02fbca2df4729bec51be9a`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+<title id="title">Tính góc cạnh bên với cạnh đáy của mô hình kim tự tháp đáy vuông</title>
+<desc id="desc">Hình chóp S.ABCD đáy ABCD vuông, AB song song CD. Hai cạnh bên SC và SD dài 219 mét, cạnh đáy CD 230 mét. Để tính góc giữa SC và AB, thay AB bằng CD song song rồi xét góc SCD của tam giác cân SCD; cos góc SCD bằng 230 chia cho 438, góc xấp xỉ 58,3 độ.</desc>
+<rect width="1000" height="470" rx="18" fill="#fff"/>
+<text x="500" y="35" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#193954">Tính góc (SC, AB): chuyển AB ∥ CD</text>
+<g stroke="#687b8e" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M130 335 L420 335 L545 248 L255 248 Z" />
+<path d="M345 76 L130 335 M345 76 L420 335 M345 76 L545 248 M345 76 L255 248"/>
+</g>
+<g stroke-width="7" fill="none" stroke-linecap="round">
+<path d="M130 335 L420 335" stroke="#246da7"/>
+<path d="M255 248 L545 248" stroke="#246da7" stroke-dasharray="11 7"/>
+<path d="M345 76 L545 248" stroke="#c65a36"/>
+<path d="M345 76 L255 248" stroke="#41826b"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="20" fill="#263d58">
+<text x="106" y="359">A</text><text x="426" y="359">B</text><text x="553" y="257">C</text><text x="238" y="272">D</text><text x="338" y="68">S</text>
+<text x="270" y="369" font-size="17" fill="#246da7">230 m</text>
+<text x="470" y="160" fill="#b64a2c" font-size="18">219 m</text>
+<text x="270" y="163" fill="#27755f" font-size="18">219 m</text>
+<text x="350" y="239" fill="#246da7" font-size="16">CD ∥ AB</text>
+</g>
+<rect x="620" y="81" width="353" height="282" rx="14" fill="#f7fafc" stroke="#d6e3ed"/>
+<text x="796" y="113" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#244a67">Tam giác cân SCD</text>
+<path d="M794 139 L674 294 L920 294 Z" fill="#e9f4f1" stroke="#427e74" stroke-width="2.8"/>
+<path d="M794 139 L920 294" stroke="#c65a36" stroke-width="5"/>
+<path d="M674 294 L920 294" stroke="#246da7" stroke-width="5"/>
+<path d="M904 294 Q906 272 892 259" fill="none" stroke="#c65a36" stroke-width="2.3"/>
+<g font-family="Arial,sans-serif" font-size="17" fill="#253f58">
+<text x="790" y="132">S</text><text x="655" y="312">D</text><text x="929" y="312">C</text>
+<text x="701" y="220">219</text><text x="869" y="210">219</text><text x="788" y="319" text-anchor="middle">230</text>
+<text x="873" y="285" fill="#b54c35" font-weight="700">α</text>
+<text x="796" y="345" text-anchor="middle">cos α = CD/(2·SC)</text>
+</g>
+<text x="500" y="403" font-family="Arial,sans-serif" text-anchor="middle" font-size="19" fill="#2a4057">cos α = 230/(2·219) ⇒ α ≈ 58,3°</text>
+<text x="500" y="442" font-family="Arial,sans-serif" text-anchor="middle" font-size="15" fill="#627184">Hình sơ đồ minh họa theo dữ kiện SGK; độ dài và góc được tính, không đo từ hình phối cảnh.</text>
+</svg>
+~~~
+
+### B23 SVG `FIG-G11-CHVII-B23-01_R00.svg`
+
+ASSET_REF|`docs/assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg`
+
+ASSET_BLOB|`b53b65704f9830e1c97b533bac0e79a0b56761b6`
+
+ASSET_SOURCE_PR_HEAD|`fa5b96f9ae0eab840065033d4c0ce9e5d0059994`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc" width="900" height="500">
+<title id="title">FIG-G11-CHVII-B23-01: Hai đường cắt nhau đủ xác định pháp tuyến</title><desc id="desc">Cột AH vuông góc hai đường AB và AD cắt nhau ở A trong mặt P, nên AH vuông góc cả mặt P.</desc>
+<rect width="900" height="500" fill="#f8fafc" rx="18"/>
+<text x="450" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">Hai đường cắt nhau đủ xác định pháp tuyến</text>
+<polygon points="210,355 590,355 710,225 330,225" fill="#dbeafe" fill-opacity="0.75" stroke="#64748b" stroke-width="3"/><text x="650" y="340" font-family="Arial" font-size="24" fill="#1d4ed8">(P)</text><path d="M335 275 L335 88" stroke="#dc2626" stroke-width="7"/><circle cx="335" cy="275" r="6" fill="#111827"/><text x="319" y="82" font-size="21">H</text><text x="310" y="302" font-size="21">A</text><path d="M335 275 L572 275" stroke="#1d4ed8" stroke-width="6"/><path d="M335 275 L255 344" stroke="#059669" stroke-width="6"/><text x="578" y="282" font-size="19">B</text><text x="236" y="360" font-size="19">D</text><path d="M350 276 V259 H335" fill="none" stroke="#dc2626" stroke-width="3"/><text x="82" y="406" font-size="19">AH ⟂ AB và AH ⟂ AD</text>
+<text x="450" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#475569">Sơ đồ phương và quan hệ; không suy độ dài/góc từ phối cảnh.</text>
+</svg>
+~~~
+
+### B23 SVG `G11_B23_PERPENDICULAR_BISECTOR_PLANE_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B23_PERPENDICULAR_BISECTOR_PLANE_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`bca2dd8689c5edb1a19bb1e6fe11eeb24d40df52`
+
+ASSET_SOURCE_PR_HEAD|`fa5b96f9ae0eab840065033d4c0ce9e5d0059994`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" width="920" height="450" role="img" aria-labelledby="t d">
+<title id="t">Mặt phẳng trung trực của đoạn thẳng AB</title>
+<desc id="d">Đoạn AB màu xanh cắt mặt phẳng alpha tại trung điểm I. Mặt phẳng alpha vuông góc đường AB tại I. Mọi điểm M của mặt phẳng alpha đều cách đều A và B, minh họa bằng hai đoạn MA và MB bằng nhau; chiều ngược lại cũng đúng.</desc>
+<rect width="920" height="450" rx="18" fill="#fff"/><text x="460" y="34" text-anchor="middle" font-family="Arial" font-weight="700" font-size="24" fill="#1f3f5a">M thuộc mặt phẳng trung trực ⇔ MA = MB</text>
+<path d="M325 350 L490 275 L490 74 L325 149 Z" stroke="#327c76" fill="#dcf3ee" fill-opacity=".83" stroke-width="3.5"/>
+<line x1="132" y1="277" x2="680" y2="277" stroke="#276ca6" stroke-width="6" stroke-linecap="round"/>
+<line x1="406" y1="277" x2="413" y2="100" stroke="#24785c" stroke-width="2.8" stroke-dasharray="8 5"/>
+<line x1="132" y1="277" x2="413" y2="100" stroke="#bd5940" stroke-width="3.8"/><line x1="680" y1="277" x2="413" y2="100" stroke="#bd5940" stroke-width="3.8"/>
+<circle cx="132" cy="277" r="6" fill="#276ca6"/><circle cx="680" cy="277" r="6" fill="#276ca6"/><circle cx="406" cy="277" r="7" fill="#24785c"/><circle cx="413" cy="100" r="7" fill="#24785c"/>
+<path d="M406 254 L430 254 L430 277" stroke="#24785c" stroke-width="2.6" fill="none"/>
+<g font-family="Arial,sans-serif" font-size="21" fill="#263c56">
+<text x="109" y="305">A</text><text x="684" y="304">B</text><text x="387" y="309">I</text><text x="418" y="94">M</text>
+<text x="500" y="161" fill="#24785c">(α)</text>
+<text x="232" y="168" fill="#aa4b37">MA</text><text x="570" y="168" fill="#aa4b37">MB</text>
+<text x="460" y="393" text-anchor="middle">I là trung điểm AB · AB ⟂ (α)</text>
+<text x="460" y="422" text-anchor="middle" font-size="17">AI = IB; MI ⟂ AB ⇒ MA² = MI²+AI² = MB²</text>
+</g></svg>
+~~~
+
+### B23 SVG `G11_B23_PARALLEL_PLANES_NORMAL_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B23_PARALLEL_PLANES_NORMAL_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`d8264650f25a1dc885cab77a6ba9900829fb2ee1`
+
+ASSET_SOURCE_PR_HEAD|`fa5b96f9ae0eab840065033d4c0ce9e5d0059994`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" width="920" height="470" role="img" aria-labelledby="t d">
+<title id="t">Một đường thẳng vuông góc hai mặt phẳng song song</title>
+<desc id="d">Hai mặt phẳng P và Q song song, biểu diễn bằng hai hình bình hành cùng hướng tại hai độ cao khác nhau. Đường thẳng delta màu đỏ đi qua cả hai và vuông góc với P, do đó cũng vuông góc Q. Hai mặt phẳng khác nhau cùng vuông góc delta thì song song nhau.</desc>
+<rect width="920" height="470" rx="18" fill="#fff"/>
+<text x="460" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="23" fill="#193954">Mặt phẳng song song giữ cùng phương pháp tuyến</text>
+<path d="M135 326 L567 326 L720 243 L288 243 Z" fill="#e3f0fa" stroke="#437ba4" stroke-width="3"/>
+<path d="M135 192 L567 192 L720 109 L288 109 Z" fill="#dff3ec" fill-opacity=".9" stroke="#399073" stroke-width="3"/>
+<line x1="424" y1="407" x2="424" y2="64" stroke="#c95637" stroke-width="7" stroke-linecap="round"/>
+<rect x="424" y="181" width="19" height="17" fill="none" stroke="#c95637" stroke-width="3"/>
+<rect x="424" y="315" width="19" height="17" fill="none" stroke="#c95637" stroke-width="3"/>
+<g font-family="Arial,sans-serif" font-size="21" fill="#213f57">
+<text x="741" y="137" fill="#236a52">(Q)</text><text x="742" y="280" fill="#296b9c">(P)</text>
+<text x="443" y="84" fill="#b54c30">Δ</text>
+<text x="460" y="443" text-anchor="middle">Nếu (P) ∥ (Q) và Δ ⟂ (P) thì Δ ⟂ (Q)</text>
+</g></svg>
+~~~
+
+### B24 SVG `FIG-G11-CHVII-B24-01_R00.svg`
+
+ASSET_REF|`docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg`
+
+ASSET_BLOB|`c98d7df30b87c339336636e00322816a4099681b`
+
+ASSET_SOURCE_PR_HEAD|`f2a35940864abd6a8e76da5d5b6bfded89f44b6f`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc" width="900" height="500">
+<title id="title">FIG-G11-CHVII-B24-01: Chiếu đoạn dốc: AH cao, MH ngang</title><desc id="desc">A ở cao, H là chân vuông góc trên mặt P, M nằm trên mặt P; góc AMH là góc đường AM với mặt P, tam giác AHM vuông tại H.</desc>
+<rect width="900" height="500" fill="#f8fafc" rx="18"/>
+<text x="450" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">Chiếu đoạn dốc: AH cao, MH ngang</text>
+<polygon points="210,355 590,355 710,225 330,225" fill="#dbeafe" fill-opacity="0.75" stroke="#64748b" stroke-width="3"/><text x="650" y="340" font-family="Arial" font-size="24" fill="#1d4ed8">(P)</text><path d="M337 265 L337 112" stroke="#dc2626" stroke-width="6"/><path d="M337 265 L577 265" stroke="#059669" stroke-width="6"/><path d="M337 112 L577 265" stroke="#1d4ed8" stroke-width="6"/><path d="M337 246 H356 V265" fill="none" stroke="#dc2626" stroke-width="3"/><text x="316" y="103" font-size="21">A</text><text x="310" y="288" font-size="21">H</text><text x="586" y="278" font-size="21">M</text><text x="365" y="181" font-size="18" fill="#dc2626">h</text><text x="452" y="291" font-size="18" fill="#059669">hình chiếu</text><text x="505" y="178" font-size="18" fill="#1d4ed8">đoạn xiên</text><text x="110" y="421" font-size="20">sin(góc AMH) = AH / AM</text>
+<text x="450" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#475569">Sơ đồ phương và quan hệ; không suy độ dài/góc từ phối cảnh.</text>
+</svg>
+~~~
+
+### B24 SVG `G11_B24_THREE_PERPENDICULAR_LINES_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B24_THREE_PERPENDICULAR_LINES_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`ccfeff10568475186750ae735dfc8edc4bca7658`
+
+ASSET_SOURCE_PR_HEAD|`f2a35940864abd6a8e76da5d5b6bfded89f44b6f`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" width="1000" height="460" role="img" aria-labelledby="t d">
+<title id="t">Định lí ba đường vuông góc qua hình chiếu của đường xiên</title>
+<desc id="d">Mặt phẳng P có đường b và hình chiếu a phẩy của đường xiên a, vuông góc tại T. Hai điểm M, N trên đường a được chiếu theo phương vuông góc xuống M phẩy, N phẩy trên mặt P. Nếu b vuông góc a phẩy, thì b cũng vuông góc a, và ngược lại. Đường xiên a không vuông góc mặt phẳng P, nên hình chiếu là đường chứ không phải điểm.</desc>
+<rect width="1000" height="460" rx="18" fill="#fff"/>
+<text x="500" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#193954">Định lí ba đường vuông góc: kiểm đường xiên qua hình chiếu</text>
+<polygon points="126,286 696,286 808,410 236,410" fill="#e9f4fa" stroke="#7c98ae" stroke-width="3"/>
+<path d="M270 345 L600 345" stroke="#276e9e" stroke-width="6" stroke-linecap="round"/>
+<path d="M435 303 L435 388" stroke="#238568" stroke-width="6" stroke-linecap="round"/>
+<path d="M274 345 L274 160 M597 345 L597 196" stroke="#ce6b47" stroke-width="2.8" stroke-dasharray="9 6" fill="none"/>
+<path d="M274 160 L597 196" stroke="#c65c38" stroke-width="6" stroke-linecap="round"/>
+<path d="M435 345 L435 325 L454 325" stroke="#238568" stroke-width="2.8" fill="none"/>
+<g font-family="Arial,sans-serif" fill="#1f3a57" font-size="19">
+<text x="256" y="151">M</text><text x="604" y="190">N</text><text x="250" y="370">M′</text><text x="596" y="370">N′</text>
+<text x="445" y="369">T</text><text x="619" y="343" fill="#276e9e">a′</text><text x="446" y="308" fill="#238568">b</text>
+<text x="516" y="155" fill="#b84f2f">a</text><text x="739" y="342">(P)</text>
+</g>
+<rect x="95" y="420" width="810" height="30" rx="8" fill="#f1f7f3"/>
+<text x="500" y="440" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#215d4c">b nằm trong (P); a′ là hình chiếu của a; b ⟂ a′ ⇔ b ⟂ a</text>
+</svg>
+~~~
+
+### B24 SVG `G11_B24_SABC_PROJECTION_EXAMPLE_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B24_SABC_PROJECTION_EXAMPLE_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`f05beae8d637098a296c4e52e2a6ff4913d145f7`
+
+ASSET_SOURCE_PR_HEAD|`f2a35940864abd6a8e76da5d5b6bfded89f44b6f`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 480" width="1020" height="480" role="img" aria-labelledby="t d">
+<title id="t">Ví dụ SGK góc giữa SC và mặt phẳng SAB bằng 60 độ</title>
+<desc id="d">Hình chóp S.ABC có SA vuông góc đáy ABC, SA bằng a, AB bằng 2a, CA và CB bằng a căn bảy. M là trung điểm AB, CM vuông góc AB và SA, suy CM vuông góc mặt phẳng SAB. Hình chiếu của SC lên SAB là SM. Tam giác SMC vuông tại M, có SM bằng a căn hai và SC bằng a căn tám, nên góc CSM bằng 60 độ.</desc>
+<rect width="1020" height="480" rx="18" fill="#fff"/>
+<text x="510" y="36" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#173a55">Góc giữa SC và (SAB): xác định đúng hình chiếu SM</text>
+<polygon points="110,344 450,344 286,229" fill="#e7f1fa" stroke="#7394ac" stroke-width="3"/>
+<path d="M110 344 L110 95 L450 344 L286 229 L110 95" stroke="#687e91" stroke-width="3.3" fill="none" stroke-linejoin="round"/>
+<path d="M110 95 L286 229" stroke="#ba5937" stroke-width="6" stroke-linecap="round"/>
+<path d="M286 229 L280 344" stroke="#267f62" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M110 95 L280 344" stroke="#246c9f" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M280 344 L280 328 L296 328" stroke="#267f62" fill="none" stroke-width="2.5"/>
+<path d="M110 344 L127 344 L127 327" stroke="#ba5937" fill="none" stroke-width="2.5"/>
+<g font-family="Arial,sans-serif" font-size="19" fill="#203954">
+<text x="90" y="92">S</text><text x="92" y="367">A</text><text x="457" y="366">B</text><text x="292" y="221">C</text><text x="280" y="367">M</text>
+<text x="74" y="231">SA = a</text><text x="169" y="380">AM = a</text><text x="348" y="380">MB = a</text>
+<text x="317" y="281" fill="#267f62">CM ⟂ (SAB)</text><text x="158" y="202" fill="#246c9f">SM</text>
+</g>
+<rect x="540" y="70" width="445" height="345" rx="15" fill="#f7fafc" stroke="#dde6ef"/>
+<text x="763" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#1e567b">Tam giác vuông SMC (vuông tại M)</text>
+<path d="M635 139 L635 346 L934 346 Z" stroke="#3e6c85" stroke-width="3.5" fill="#eef8f2"/>
+<path d="M635 139 L934 346" stroke="#ba5937" stroke-width="5.2"/>
+<path d="M635 139 L635 346" stroke="#246c9f" stroke-width="5.2"/>
+<path d="M635 346 L635 327 L654 327" stroke="#267f62" stroke-width="2.5" fill="none"/>
+<path d="M635 172 Q659 169 661 159" stroke="#ba5937" stroke-width="2.4" fill="none"/>
+<g font-family="Arial,sans-serif" font-size="19" fill="#254057">
+<text x="620" y="132">S</text><text x="617" y="368">M</text><text x="938" y="368">C</text>
+<text x="568" y="238">SM = a√2</text><text x="836" y="198">SC = a√8</text>
+<text x="676" y="315">CM = a√6</text><text x="662" y="185" fill="#ad4a32">60°</text>
+<text x="766" y="399" text-anchor="middle">cos ∠CSM = SM/SC = 1/2</text>
+</g>
+<text x="510" y="453" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#536a7c">Hình minh họa quan hệ; dùng số liệu SGK và vuông góc, không đo từ phối cảnh.</text>
+</svg>
+~~~
+
