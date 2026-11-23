@@ -652,7 +652,7 @@ jobs:
                   html=path.read_text(encoding="utf-8")
                   assert t["sourceBlob"] in html and t["q18ReceiptBlob"] in html and "thpt-topic-w5-golden-v1.js" in html,path
               assert Path("site/thpt-preview/math-lab/models",t["optionalModel"],"index.html").is_file(),n
-          names=("FIG-TOP19-","FIG-TOP20-","FIG-TOP21-","Temp_STATISTICS_")
+          names=("FIG-TOP19-","FIG-TOP20-","FIG-TOP21_","Temp_STATISTICS_")
           assets=[p for p in Path("site/assets/images/thpt").glob("*.svg") if p.name.startswith(names)]
           assert len(assets)==10,(len(assets),assets)
           assert Path("site/assets/javascripts/thpt-topic-w5-golden-v1.js").is_file()
