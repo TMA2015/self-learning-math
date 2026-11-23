@@ -40,7 +40,7 @@ jobs:
           assert(w.includes(topicIf),"W3 release must run only for exact signed Topic impact");
           const w4If="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_W4' }}";
           assert(w.includes(w4If),"W4 exact 3-Topic main-push scoped release lane missing");
-          const w4=w.split('\\n  deploy-scoped-topic-w4:\\n')[1];
+          const w4=w.split('\n  deploy-scoped-topic-w4:\n')[1];
           assert(w4,'Dedicated W4 publish job missing');
           for(const req of ['SCOPED_TOPIC_W4','scripts/test-thpt-topic-w4-source-locked.py',
              'scripts/test-thpt-topic-w4-golden-browser.py',
