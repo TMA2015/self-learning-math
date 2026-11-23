@@ -67,6 +67,11 @@ if(process.argv.includes("--built")){
    assert(full.includes("Khám phá bằng cách điều chỉnh mô hình."),"Original teaching guidance lost "+id);
    assert(full.includes('href="../../"'),"Return href changed "+id);
    assert((full.match(/<script\b/g)||[]).length>0,"Original model JS missing "+id);
+   if(id==="SLM-TOP04-EXPLOG-01"){
+    assert(full.includes("Vẽ y=aˣ và y=logₐ(x)"),"CĐ04 composed student intro must raise exponent");
+    assert(!full.includes("Vẽ y=a^x và y=logₐ(x)"),"CĐ04 typo remains in built viewer");
+    assert(fs.readFileSync(model,"utf8").includes("Vẽ y=a^x và y=logₐ(x)"),"Original signed authoring source must remain byte-exact");
+   }
   }
   console.log("PASS BUILT "+dir+" 25/25 models/viewers");
  }

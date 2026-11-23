@@ -522,6 +522,32 @@ function isMathLabRestorePage(files){
  }catch{return false}
 }
 
+/* 25-model Math Lab learner-visible exponent TYPOGRAPHY fix: only a
+ * composed CĐ04 label, never model source blobs, assessment or Golden UI.
+ * Require exact four-path patch and all existing 200 browser/source QA. */
+const MATHLAB_EXPONENT_DISPLAY_FILES=new Set([
+ "hooks/math_lab_full_page.py",
+ "scripts/test-math-lab-25-browser.py",
+ "scripts/test-math-lab-25-release-intake.cjs",
+ "scripts/test-thpt-release-impact.cjs"
+]);
+function isMathLabExponentDisplay(files){
+ if(files.length!==MATHLAB_EXPONENT_DISPLAY_FILES.size ||
+    new Set(files).size!==files.length ||
+    !files.every(p=>MATHLAB_EXPONENT_DISPLAY_FILES.has(p)))return false;
+ try{
+  const hook=fs.readFileSync("hooks/math_lab_full_page.py","utf8");
+  const browser=fs.readFileSync("scripts/test-math-lab-25-browser.py","utf8");
+  const intake=fs.readFileSync("scripts/test-math-lab-25-release-intake.cjs","utf8");
+  return hook.includes('if slug == "slm-top04-explog-01":') &&
+    hook.includes('bad = "Vẽ y=a^x và y=logₐ(x)"') &&
+    hook.includes('good = "Vẽ y=aˣ và y=logₐ(x)"') &&
+    hook.includes('model = model.replace(bad, good, 1)') &&
+    browser.includes('"CĐ04 exponent visually not raised"') &&
+    intake.includes('"CĐ04 composed student intro must raise exponent"');
+ }catch{return false}
+}
+
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
@@ -531,6 +557,7 @@ function classify(paths,{manual=false}={}){
  if(isExactMathLabFullPage(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_25_MODELS_DIRECT_FULL_PAGE_WITH_200_BROWSER_GATES"};
  if(isMathLabDeployRecovery(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTMERGE_V2_HEAD_SHA_DEPLOY_RECOVERY_25_MODEL_200_BROWSER_PROOF"};
  if(isMathLabRestorePage(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_RESTORE_25_ORIGINAL_MODEL_PAGE_GUIDANCE_BACK_NAV_WITHOUT_IFRAMES"};
+ if(isMathLabExponentDisplay(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_MATHLAB_CĐ04_DISPLAY_SUPERSCRIPT_SIGNED_SOURCE_UNCHANGED_200_BROWSER_QA"};
  if(isScopedTopicW2W3Hotfix(files))return {impact:"SCOPED_TOPIC_HOTFIX_W2_W3",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTPUBLISH_CĐ06_15_TEXT_MATH_SCOPED_BROWSER"};
  if(isExactW5InlineAudit(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"OWNER_W5_COMPLETE_VISIBLE_MATH_AUDIT_EXACT_THREE_FILES"};
  if(isExactW5P1(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"EXACT_OWNER_P1_W5_MATH_PILOT_LAUNCHER_BROWSER"};
@@ -692,6 +719,14 @@ function selfTest(){
  assert.equal(classify(hotfix.slice(1)).full_suite,"true","Missing hotfix file must fail closed");
  assert.equal(classify([...hotfix,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared runtime is not Topic-only");
  assert.equal(classify([...hotfix,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).full_suite,"true","SGK mixed change fails closed");
+ const exponent=[...MATHLAB_EXPONENT_DISPLAY_FILES];
+ assert.equal(classify(exponent).impact,"SCOPED_MATH_LAB_FULLPAGE","Exact display-only Math Lab exponent fix uses protected 200-case lane");
+ assert.equal(classify(exponent.slice(1)).impact,"FULL","Incomplete display patch fails closed");
+ assert.equal(classify([...exponent,"docs/assets/math-lab/models/SLM-TOP04-EXPLOG-01.html"]).impact,"FULL","Source change cannot join display-only fix");
+ assert.equal(classify([...exponent,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL","Golden shared runtime cannot join display-only fix");
+ assert.equal(classify([...exponent,"docs/assets/data/assessment/readiness.json"]).impact,"FULL","Assessment cannot join display-only fix");
+ assert.equal(classify([...exponent,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).impact,"FULL","SGK academic change cannot join display-only fix");
+ assert.equal(classify(exponent,{manual:true}).impact,"FULL","Manual FULL cannot be narrowed");
  const labRestore=[...MATHLAB_RESTORE_PAGE_FILES];
  assert.equal(classify(labRestore).impact,"SCOPED_MATH_LAB_FULLPAGE","Exact restore of 25 contextual model pages is scoped by 200 browser checks");
  assert.equal(classify(labRestore.slice(1)).impact,"FULL","Missing page-restore path fails closed");
