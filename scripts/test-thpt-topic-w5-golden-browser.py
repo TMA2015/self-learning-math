@@ -241,6 +241,30 @@ with sync_playwright() as pw:
                     dark = page.locator('[data-topic-w1-callout="concept"]').first
                     if dark.count():
                         assert dark.evaluate("(e)=>getComputedStyle(e).backgroundColor") != PALETTE["concept"]
+                # Owner screenshot regression: MkDocs eats display \\[ and \\] in
+                # signed Knowledge blockquotes. Check *actual visible* formula
+                # cards on each affected Topic, not merely any MathJax on page.
+                reported_display_formulas = {
+                    "19": [("3", "3-2", "[(a-b)^n="), ("3", "3-3", "[(1+r)^5=")],
+                    "20": [("2", "2-3", "[P(A\\\\cup B)=")],
+                    "21": [("2", "2-1", "[P(L)=")],
+                    "22": [("3", "3-1", "[R_g="), ("3", "3-2", "[IQR_g=")],
+                }
+                for module_id, subtab_id, literal in reported_display_formulas[topic]:
+                    page.locator('[data-topic-w1-module-tab="' + module_id + '"]').click()
+                    page.locator('[data-topic-w1-subtab="' + subtab_id + '"]').click()
+                    current_panel = page.locator(".thpt-r4-knowledge-content-panel:visible")
+                    expect(current_panel).to_have_count(1)
+                    orphan_literals = current_panel.evaluate("""(root, raw) => [...root.querySelectorAll('p')]
+                      .flatMap(p => [...p.childNodes])
+                      .filter(n => n.nodeType === Node.TEXT_NODE && n.nodeValue.includes(raw))
+                      .map(n => n.nodeValue.slice(0, 220))""", literal)
+                    assert not orphan_literals, (engine, topic, width, subtab_id,
+                                                 "OWNER_P1_RAW_DISPLAY_MATH", orphan_literals)
+                    recovered = current_panel.locator('[data-topic-w3-display-math="recovered-display"]')
+                    assert recovered.count() >= 1, (engine, topic, width, subtab_id,
+                                                     "DISPLAY_MATH_WRAPPER_MISSING", literal)
+                    expect(current_panel.locator("mjx-container").first).to_be_visible(timeout=12000)
                 load("luyen-tap")
                 cards = page.locator("[data-topic-w1-practice-card]")
                 expect(cards).to_have_count(practice_groups)
