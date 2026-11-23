@@ -33,6 +33,8 @@ hide:
 
 # Kiến thức
 
+<!-- CURRENT_R11_ONE_LEARNER_AUTHORING_TARGETED_DELTA_20261121; PREVIOUS_R09_SOURCE_BLOB: 2b46a2c92004f2c030d030e2b2021a34157bc95d; CURRENT_Q18_EVIDENCE_EXTERNAL_SOURCE_LOCK; PREVIOUS_R08_SOURCE_BLOB: 989c648e2218096aa63696e1852562d79f40949c; G10_SGK_SHARED_CANONICAL_JS_BLOB: 2ae62fada28913ec336b3507684408a1e05a3232; EXACT_25_SOURCE_DISPLAYS; PUBLIC_SELF_CHECK_ONLY; NO_RD1; NO_RELEASE -->
+
 Trong hội chợ của lớp, ban tổ chức cần chọn câu lạc bộ tham gia, ghép áo với huy hiệu thành bộ quà, lập mã thẻ và phân vai cho một nhóm học sinh. Mỗi việc có một cách đếm khác nhau: chọn một phương án, ghép các lựa chọn qua nhiều bước, xếp theo thứ tự hoặc chọn nhóm không xét thứ tự. Ta sẽ lần lượt tìm hiểu các cách đếm ấy rồi dùng chúng để giải thích vì sao khai triển \((a+b)^4\) có các hệ số \(1,4,6,4,1\). Điểm xuất phát luôn là câu hỏi: **một kết quả gồm những gì và khi nào hai kết quả được coi là khác nhau?**
 
 **Cần biết trước (được ôn ngay tại đây):** phép nhân/cộng số tự nhiên, tập hợp rời nhau, đếm ô trống, lũy thừa của biểu thức, biến và hệ số đa thức. Không bắt người học mở SGK hoặc Topic khác mới hiểu khái niệm bắt buộc.
