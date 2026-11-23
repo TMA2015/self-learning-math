@@ -1,86 +1,59 @@
 # Bài 25. Hai mặt phẳng vuông góc
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do cần học → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<style>
+/* Chỉ trang B25; không sửa Golden CSS/JS dùng chung. */
+.md-typeset:has([data-g11-b25-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border:1px solid #a9dccc;border-left:4px solid #087d69;color:#174137}
+.md-typeset:has([data-g11-b25-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border:1px solid #a5bee5;border-left:4px solid #4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b25-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b25-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
 
-## 1. Kiến thức SGK và ví dụ có suy luận
+<div class="thpt-r4-screen" data-thpt-r4 data-g11-b25-knowledge-only>
+<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · KẾT NỐI TRI THỨC · TẬP HAI</p>
+<p class="thpt-r4-lead">Hiểu góc giữa hai mặt phẳng, góc nhị diện, điều kiện vuông góc, rồi nhận dạng đúng các lăng trụ, chóp đều và chóp cụt đều.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-### 1.1. Vì sao cần học
-Cánh cửa với tường, hai mái nhà và mặt đáy của chóp tạo ra góc giữa **hai mặt**, không thể đo bằng cách lấy tùy tiện hai cạnh trên mặt.
+=== "Khám phá kiến thức"
 
-### 1.2. Khái niệm thực chất
-Góc giữa hai mặt phẳng là góc nhọn/vuông giữa hai đường pháp tuyến, thuộc [0°,90°]. Hai mặt phẳng vuông góc nếu góc bằng 90°. Góc nhị diện đo theo hai nửa mặt phẳng, có thể là góc tù; góc phẳng nhị diện tạo bởi hai tia cùng vuông góc giao tuyến tại một điểm.
+    **Vì sao học?** Mặt ghế và lưng ghế, hai mái nhà hoặc cánh cửa và sàn đều tạo thành các góc trong không gian. Đo một góc nhìn thấy trên ảnh chưa đủ: cần biết góc của **hai mặt phẳng không định hướng** hay của **hai nửa mặt phẳng đã chọn**. Dùng kiến thức Bài 22–24 về góc hai đường, pháp tuyến và hình chiếu, ta sẽ hiểu các định nghĩa trước rồi mới tính toán.
 
-### 1.3. Hình thành và lập luận
-Để đo góc phẳng nhị diện, cắt bởi một mặt phẳng vuông góc với giao tuyến, thu được hai tia thuộc hai nửa mặt. Nếu (P) chứa đường a vuông góc (Q), thì (P)⊥(Q). Nếu (P)⊥(Q) theo giao tuyến Δ và a∈(P) vuông góc Δ, thì a⊥(Q).
+    ### 1.1. Góc giữa hai mặt phẳng, hai mặt phẳng vuông góc
 
-### 1.4. Điều kiện, giới hạn, lỗi thường gặp
-Không suy hai mặt phẳng vuông góc chỉ từ hai đường bất kì vuông góc, mỗi đường thuộc một mặt. Với hình chóp đều: đáy là đa giác đều, chân đường cao ở tâm đáy; lăng trụ đứng: cạnh bên vuông góc đáy; lăng trụ đều = lăng trụ đứng có đáy đa giác đều; chóp cụt đều có hai đáy đa giác đều song song, đồng dạng và mặt bên là hình thang cân.
+    **Bắt đầu từ phương pháp tuyến.** Với hai mặt \((P),(Q)\), chọn các đường \(a\perp(P)\) và \(b\perp(Q)\). Góc **không tù** giữa \(a,b\) gọi là góc giữa hai mặt. Vì mọi đường vuông góc với cùng một mặt đều cùng phương, việc thay vị trí \(a,b\) không làm thay đổi góc. Giá trị nằm trong \([0^\circ,90^\circ]\): hai mặt song song hoặc trùng nhau có góc \(0^\circ\), hai mặt được gọi là **vuông góc** nếu góc bằng \(90^\circ\).
 
-### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK
-**Hai đối tượng góc cần tách bạch:** Hai *mặt phẳng* không có phía được chọn nên góc giữa chúng nằm trong [0°,90°], xác định bằng góc không tù giữa hai đường vuông góc tương ứng với hai mặt. Một *góc nhị diện* là hình tạo bởi **hai nửa mặt phẳng** cùng bờ Δ; chúng xác định một phần không gian nên **góc phẳng** đo được có thể lớn hơn 90°. Để dựng góc phẳng, chọn O∈Δ, trong mỗi nửa mặt lấy tia Ox, Oy cùng vuông góc Δ và đi ra phía đã chọn; ∠xOy chính là góc phẳng nhị diện. Nếu góc này tù 115°, thì góc giữa hai mặt phẳng chứa chúng là 65°.
+    **Đo bằng giao tuyến:** Khi hai mặt cắt nhau theo \(\Delta\), chọn \(O\in\Delta\); trong \((P)\) lấy đường \(m\) qua \(O\) vuông góc \(\Delta\), trong \((Q)\) lấy đường \(n\) qua \(O\) vuông góc \(\Delta\). Góc giữa hai mặt là góc **không tù** giữa \(m,n\). Hai điều kiện \(m\perp\Delta,n\perp\Delta\) rất quan trọng: lấy tùy tiện hai đường thuộc hai mặt sẽ đo sai góc.
 
-**Điều kiện chứng minh mặt vuông góc:** Nếu đường a nằm trong (P) và a⊥(Q), suy (P)⊥(Q). Khi (P)⊥(Q) cắt nhau theo Δ, nếu a⊂(P) và a⊥Δ thì a⊥(Q). Đừng thay a bởi đường bất kì thuộc (P) chưa chứng minh vuông góc giao tuyến; không phải *mọi* đường của một mặt đều vuông góc mặt kia.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg" alt="Giao tuyến Delta của hai nửa mặt và hai tia OU OV trong tiết diện vuông góc Delta"><figcaption><strong>Hướng dẫn đọc:</strong> đường đậm \(\Delta\) là giao tuyến; \(OU,OV\) cùng xuất phát ở \(O\) và nằm theo hai hướng vuông góc \(\Delta\). Hình giải thích **tiết diện vuông góc giao tuyến**. Góc nhị diện giữ hai tia đã chọn, còn góc giữa hai mặt phải chọn **góc không tù giữa các đường chứa chúng**.</figcaption></figure>
 
-**Các hình đứng/đều — học từng định nghĩa:** Lăng trụ đứng là lăng trụ có **cạnh bên vuông góc mặt đáy**; chiều cao bằng độ dài cạnh bên. Lăng trụ đều là lăng trụ đứng có đáy là **đa giác đều**. Hình hộp đứng có cạnh bên vuông góc đáy là hình bình hành; hộp chữ nhật là trường hợp đáy hình chữ nhật; lập phương là hộp chữ nhật có mọi cạnh bằng nhau. Hình chóp đều có đáy đa giác đều và **chân đường cao tại tâm đáy**, kéo theo các cạnh bên bằng nhau; chiều cao không phải cạnh bên. Cắt hình chóp đều bởi mặt phẳng song song đáy được hình chóp cụt đều: hai đáy đồng dạng, song song; các mặt bên hình thang cân và có khoảng cách vuông góc hai đáy xác định.
+    **Luyện tập 1 SGK — điều kiện đáy là hình vuông:** Chóp \(S.ABCD\) có đáy **hình chữ nhật**, hai đường chéo cắt tại \(O\), \(SO\perp(ABCD)\). Hai mặt \((SAC),(SBD)\) gặp nhau theo \(SO\). Vì \(AC,BD\) đều nằm trong đáy nên cùng vuông góc \(SO\); do đó góc giữa hai mặt bằng \((AC,BD)\). Trong hình chữ nhật, hai đường chéo vuông góc **khi và chỉ khi** hình chữ nhật là hình vuông. Không suy vuông góc từ hình chữ nhật nói chung.
 
-**Đường suy luận khi giải bài:** Nhận diện hình nào, xác định tâm đáy/đường cao, dùng tam giác vuông để tìm cạnh hoặc góc; không gắn nhãn “đều” chỉ vì hình vẽ trông cân đối. Với lăng trụ đứng có đáy không đều, nó **không phải** lăng trụ đều.
+    **Vận dụng.** Hai đường \(m,n\) thuộc hai mặt phẳng cắt theo \(d\), cùng qua \(O\in d\) và vuông góc \(d\). Hai tia được chọn trên \(m,n\) tạo góc \(125^\circ\). Tính góc giữa hai mặt.
 
-### 1.6. Hình minh họa và cách đọc
+    ??? question "Đối chiếu"
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg" alt="Hình B25: Góc giữa hai mặt phải đo trong một tiết diện vuông góc giao tuyến; đánh dấu 90° của hai mặt bằng điều kiện vuông góc đường–mặt."/><figcaption>Hình B25: Góc giữa hai mặt phải đo trong một tiết diện vuông góc giao tuyến; đánh dấu 90° của hai mặt bằng điều kiện vuông góc đường–mặt.</figcaption></figure>
+        **Lời giải:** Hai đường \(m,n\) có góc không tù \(180^\circ-125^\circ=55^\circ\). Vì đều vuông góc giao tuyến tại \(O\), góc giữa hai mặt cũng bằng \(55^\circ\).
 
-**Hướng dẫn đọc hình:** Góc giữa hai mặt phải đo trong một tiết diện vuông góc giao tuyến; đánh dấu 90° của hai mặt bằng điều kiện vuông góc đường–mặt. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
+    ??? tip "Kiểm lỗi"
 
-### 1.7. Tự thử trước bài luyện tập
-Hình chóp S.ABCD có SA⊥(ABCD). Vì SA⊂(SAB), hai mặt (SAB) và (ABCD) vuông góc. Nhưng không suy mọi mặt bên của hình chóp đều đều vuông góc đáy.
+        Không trả \(125^\circ\) cho góc **hai mặt**. Phải kiểm hai phương đều vuông góc giao tuyến và chọn góc không tù.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
+    ### 1.2. Điều kiện để hai mặt phẳng vuông góc
 
-### 1.8. Ví dụ có hướng dẫn (vì sao chọn phương pháp)
+    **Chứng minh không cần đo góc:** Nếu mặt \((P)\) chứa một đường \(a\) vuông góc với mặt \((Q)\), suy ngay \((P)\perp(Q)\). Điều kiện mạnh ở đây là **\(a\perp(Q)\)**, nghĩa là \(a\) vuông góc **mọi đường trong \((Q)\)**, không chỉ một đường \(b\subset(Q)\). Khi chưa biết \(a\perp(Q)\), có thể chứng minh bằng **hai đường cắt nhau trong \((Q)\)** theo Bài 23.
 
+    **Ví dụ 2 SGK:** Tứ diện \(OABC\) có \(OA\perp OB\) và \(OA\perp OC\). Do \(OB,OC\subset(OBC)\) cắt tại \(O\), suy \(OA\perp(OBC)\). Cả \((OAB)\) lẫn \((OAC)\) đều chứa \(OA\); vậy \((OAB)\perp(OBC)\) và \((OAC)\perp(OBC)\). Không tự kết luận \((OAB)\perp(OAC)\): góc giữa chúng còn phụ thuộc \(\angle BOC\).
 
-#### EX-G11-CHVII-B25-01 — Tiết diện đo góc hai mặt
+    **Cánh cửa và sàn:** Trục bản lề của cánh cửa vuông góc mặt sàn. Mặt phẳng cánh cửa ở mọi vị trí đóng–mở đều chứa trục bản lề, nên **luôn vuông góc với sàn**, cho dù góc giữa cánh cửa và mặt tường thay đổi.
 
-**Nhiệm vụ:** Hai mặt (P),(Q) cắt nhau theo Δ. Một tiết diện vuông góc Δ tạo các tia m⊂(P), n⊂(Q) cùng gốc; góc giữa hai mặt lấy thế nào?
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_PERPENDICULAR_PLANES_AUTHORING_20261123.svg" alt="Hai mô hình minh họa mặt phẳng vuông góc và giao tuyến thẳng đứng của hai mặt vuông góc nền"><figcaption><strong>Hướng dẫn đọc khung trái:</strong> hai mặt \((P),(Q)\) có giao tuyến \(\Delta\), đường \(a\subset(P)\) vuông góc \(\Delta\). **Khi đã có** \((P)\perp(Q)\), suy \(a\perp(Q)\); chiều chứng minh ngược lại phải chứng minh \(a\perp(Q)\) trước. Khung phải minh họa một tính chất ở mục 1.3, không dùng góc phối cảnh để kết luận.</figcaption></figure>
 
-**Lập luận để tự đối chiếu sau khi thử:** Lấy góc nhỏ giữa hai đường m,n, thuộc [0°,90°]. Với hai nửa mặt định hướng, góc nhị diện có thể là góc lớn hơn 90°.
+    **Vận dụng.** Cho \(SA\perp(ABCD)\) trong hình chóp \(S.ABCD\). Chứng minh \((SAB)\perp(ABCD)\). Có suy được mọi mặt bên đều vuông góc đáy không?
 
+    ??? question "Đối chiếu"
 
-#### EX-G11-CHVII-B25-02 — Một đường vuông góc mặt đủ
+        **Lời giải:** Vì \(SA\subset(SAB)\), \(SA\perp(ABCD)\) nên \((SAB)\perp(ABCD)\). Không có căn cứ để suy mọi mặt bên, chẳng hạn \((SBC)\), đều chứa đường vuông góc đáy.
 
-**Nhiệm vụ:** a⊂(P), a⊥(Q). Kết luận (P) và (Q)?
+    ??? tip "Kiểm lỗi"
 
-**Lập luận để tự đối chiếu sau khi thử:** (P)⊥(Q). Đây là tiêu chí đường nằm trong một mặt và vuông góc mặt kia.
-
-
-#### EX-G11-CHVII-B25-03 — Góc nhị diện khác góc hai mặt
-
-**Nhiệm vụ:** Hai nửa mặt phẳng tạo góc phẳng nhị diện 120°. Góc giữa hai mặt phẳng chứa chúng là bao nhiêu?
-
-**Lập luận để tự đối chiếu sau khi thử:** 60°. Góc không định hướng giữa mặt lấy góc nhọn/ vuông của hai mặt, min(120°,60°).
-
-
-#### EX-G11-CHVII-B25-04 — Hình lăng trụ đều
-
-**Nhiệm vụ:** Một lăng trụ đứng có đáy tam giác đều cạnh 4 và chiều cao 6. Diện tích đáy?
-
-**Lập luận để tự đối chiếu sau khi thử:** S=4²√3/4=4√3. Nó là lăng trụ đều vì đứng và đáy đều; cạnh bên là chiều cao 6.
-
-
-#### EX-G11-CHVII-B25-05 — Đỉnh chóp đều và chân cao
-
-**Nhiệm vụ:** Hình chóp đều S.ABCD đáy hình vuông tâm O, cạnh đáy 6; đường cao SO=4. Tính cạnh bên SA.
-
-**Lập luận để tự đối chiếu sau khi thử:** OA=3√2, SA=√(SO²+OA²)=√34. Vì chân chiều cao của chóp đều là tâm O, tam giác SOA vuông tại O.
-
-
-
-## 2. Tự khắc phục lỗi
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B25-01"><summary><strong>Nhận diện lỗ hổng:</strong> Nhầm góc nhị diện với góc hai mặt.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Nhầm góc nhị diện với góc hai mặt.</li><li><strong>Nhắc đúng bản chất:</strong> Góc nhị diện có thể tù, góc không định hướng giữa hai mặt ≤90°.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B25, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Góc phẳng nhị diện 116°, góc giữa hai mặt? <strong>Sau khi tự làm mới đối chiếu:</strong> 64°.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B25-C02</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C02">Quay lại câu canonical THPT-G11-CHVII-B25-C02</a></p></details>
-
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B25-02"><summary><strong>Nhận diện lỗ hổng:</strong> Dùng cạnh bên làm đường cao chóp đều.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Dùng cạnh bên làm đường cao chóp đều.</li><li><strong>Nhắc đúng bản chất:</strong> Chân đường cao ở tâm đa giác đáy.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B25, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Chóp đều đáy vuông: đường cao hạ từ S đến đâu? <strong>Sau khi tự làm mới đối chiếu:</strong> Tâm O đáy.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B25-C06</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B25-C06">Quay lại câu canonical THPT-G11-CHVII-B25-C06</a></p></details>
-
-## 3. Tiếp tục
-
-[Core và Luyện tập Bài 25](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+        Không chuyển kết luận đúng cho mặt \((SAB)\) thành kết luận cho **mọi** mặt bên. Đường dùng để chứng minh phải **nằm trong chính mặt đang xét**.
