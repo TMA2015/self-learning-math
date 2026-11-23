@@ -225,3 +225,67 @@
     \sqrt{h^2+\frac{(a-a')^2}{3}}.
     \]
     Công thức này đến từ tam giác vuông với độ lệch ngang \((a-a')/\sqrt3\), không phải lấy chênh hai cạnh đáy làm độ lệch trực tiếp.
+
+=== "Ví dụ"
+
+    ### 3.1. Khi hai tia tạo góc tù, góc hai mặt bằng bao nhiêu?
+
+    **Đề bài.** Hai mặt \((P),(Q)\) cắt nhau theo \(d\). Qua \(O\in d\), các đường \(m\subset(P)\), \(n\subset(Q)\) cùng vuông góc \(d\). Hai tia đã chọn trên \(m,n\) tạo góc \(125^\circ\). Tính góc giữa hai mặt.
+
+    **Phân tích:** Chúng ta đã có **tiết diện đúng phương**, nên không cần dựng pháp tuyến. Nhưng hai mặt không có phía chọn, góc cần lấy là góc **không tù giữa hai đường**.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Vì \(m,n\) cùng qua \(O\) và vuông góc giao tuyến \(d\), góc giữa \((P),(Q)\) bằng góc không tù giữa \(m,n\). Hai tia đã cho tạo \(125^\circ\), nên góc hai đường là \(180^\circ-125^\circ=55^\circ\). Vậy góc hai mặt bằng \(55^\circ\).</p></div>
+
+    **Kiểm lại:** \(55^\circ\in[0^\circ,90^\circ]\), đúng phạm vi góc hai mặt; \(125^\circ\) có thể là góc phẳng nhị diện nhưng không phải góc hai mặt.
+
+    ### 3.2. Hai mặt của hình chóp vuông góc khi nào?
+
+    **Đề bài.** Cho chóp \(S.ABCD\) có đáy hình chữ nhật \(ABCD\), tâm \(O\) và \(SO\perp(ABCD)\). Chứng minh \((SAC)\perp(SBD)\) khi và chỉ khi hình chữ nhật \(ABCD\) là hình vuông.
+
+    **Phân tích:** Hai mặt \((SAC),(SBD)\) cùng chứa \(S,O\), nên giao tuyến là \(SO\). Cả hai đường chéo đáy \(AC,BD\) đều vuông góc \(SO\), vì thế có thể dùng chúng để tính góc hai mặt.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Vì \(AC\subset(SAC)\), \(BD\subset(SBD)\) cùng đi qua \(O\) và \(SO\perp(ABCD)\), ta có \(((SAC),(SBD))=(AC,BD)\). Do đó \((SAC)\perp(SBD)\iff AC\perp BD\). Với hình chữ nhật, hai đường chéo vuông góc khi và chỉ khi nó cũng là hình thoi, tức khi và chỉ khi <strong>nó là hình vuông</strong>.</p></div>
+
+    **Kiểm lại:** Hình chữ nhật bất kì không nhất thiết có hai đường chéo vuông góc; điều kiện “hình vuông” không được bỏ.
+
+    ### 3.3. Một đường vuông góc một mặt chứng minh hai mặt vuông góc
+
+    **Đề bài.** Trong tứ diện \(OABC\), \(OA\perp OB\), \(OA\perp OC\). Chứng minh \((OAB)\perp(OBC)\), \((OAC)\perp(OBC)\). Có suy ngay \((OAB)\perp(OAC)\) không?
+
+    **Phân tích:** Cần chứng minh \(OA\perp(OBC)\) bằng **hai đường cắt nhau** rồi dùng mặt chứa đường \(OA\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(OB,OC\subset(OBC)\) cắt tại \(O\); vì \(OA\perp OB\), \(OA\perp OC\), theo tiêu chuẩn suy \(OA\perp(OBC)\). Cả \((OAB)\), \((OAC)\) chứa \(OA\), nên đều vuông góc \((OBC)\). <strong>Không đủ</strong> để suy \((OAB)\perp(OAC)\): góc giữa hai mặt này phụ thuộc vào góc giữa \(OB,OC\).</p></div>
+
+    **Kiểm lại:** Hai mặt cùng vuông góc **một mặt thứ ba** không nhất thiết vuông góc với nhau; khác với mệnh đề giao tuyến của hai mặt cắt nhau cùng vuông góc mặt thứ ba.
+
+    ### 3.4. Vì sao cửa quay mà vẫn vuông góc sàn?
+
+    **Đề bài.** Trục bản lề \(d\) của một cánh cửa luôn vuông góc sàn \((P)\). Khi cửa mở một góc bất kì, hãy giải thích vì sao mặt phẳng cánh cửa \((Q)\) vẫn vuông góc \((P)\).
+
+    **Phân tích:** Không phải xét góc giữa **cánh cửa và tường**, vì góc đó đổi theo quá trình quay. Tính chất duy nhất cần là mặt cánh cửa luôn **chứa trục bản lề**.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Mỗi vị trí mặt cánh cửa \((Q)\) đều chứa \(d\), còn \(d\perp(P)\) không đổi. Áp tiêu chuẩn “một mặt chứa đường vuông góc mặt kia” suy \((Q)\perp(P)\) ở mọi vị trí của cánh cửa.</p></div>
+
+    **Kiểm lại:** Kết luận không phụ thuộc cửa đang mở bao nhiêu độ so với tường; mặt sàn là đối tượng phải giữ cố định.
+
+    ### 3.5. Từ hai mặt vuông góc sang đường vuông góc mặt
+
+    **Đề bài.** Hai mặt \((P)\perp(Q)\) cắt nhau theo \(\Delta\). Một đường \(a\subset(P)\) qua \(O\in\Delta\) và \(a\perp\Delta\). Chứng minh \(a\perp(Q)\).
+
+    **Phân tích:** Chỉ biết \(a\perp\Delta\) chưa đủ cho \(a\perp(Q)\); điều kiện then chốt là \((P)\perp(Q)\). Dựng thêm một đường \(b\subset(Q)\) qua \(O\), \(b\perp\Delta\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_PERPENDICULAR_PLANES_AUTHORING_20261123.svg" alt="Hai mặt P Q vuông góc theo Delta, đường a trong P vuông góc Delta và vuông góc cả mặt Q"><figcaption><strong>Đọc khung trái trước lời giải:</strong> \(\Delta\) là giao tuyến, \(a\subset(P)\) vuông góc \(\Delta\) tại \(O\). Vì **đã biết** hai mặt vuông góc, đường \(a\) là pháp tuyến của \((Q)\), chứ không chỉ vuông góc một đường trên \((Q)\).</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Trong \((Q)\), kẻ \(b\) qua \(O\) với \(b\perp\Delta\). Vì \((P)\perp(Q)\), góc giữa \(a,b\) bằng \(90^\circ\), nên \(a\perp b\). Ta cũng có \(a\perp\Delta\); hai đường \(b,\Delta\) cắt nhau trong \((Q)\), do đó \(a\perp(Q)\).</p></div>
+
+    **Kiểm lại:** Đã nêu đủ hai đường \(b,\Delta\subset(Q)\) cắt nhau. Không tráo giả thiết “hai mặt vuông góc” thành điều chỉ thấy trên hình.
+
+    ### 3.6. Giao tuyến của hai mặt cùng vuông góc mặt nền
+
+    **Đề bài.** Hai mặt phẳng \((P),(Q)\) khác nhau, cắt nhau theo \(d\), và cả hai đều vuông góc \((R)\). Chứng minh \(d\perp(R)\). Nếu \((P)\parallel(Q)\), điều gì thay đổi?
+
+    **Phân tích:** Ta cần tính chất SGK về **hai mặt cắt nhau**. Với hai mặt song song, không có \(d\), nên đừng phát biểu một kết luận về đường không tồn tại.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Theo định lí, hai mặt phẳng cắt nhau và cùng vuông góc với mặt phẳng thứ ba thì giao tuyến của chúng vuông góc với mặt đó. Vậy \(d\perp(R)\). Nếu \((P)\parallel(Q)\), hai mặt không cắt nhau nên **không tồn tại giao tuyến \(d\)** để áp dụng.</p></div>
+
+    **Kiểm lại:** Không được bỏ từ “cắt nhau”; tính chất không xác định giao tuyến của hai mặt song song.
