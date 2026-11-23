@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 455" width="1030" height="455" role="img" aria-labelledby="t d">
+<title id="t">Ví dụ 3 SGK, thể tích hình hộp xiên từ diện tích hình bình hành và độ cao</title><desc id="d">Hình hộp ABCD.A phẩy B phẩy C phẩy D phẩy có AB bằng 8 cm, AD bằng 5 cm, góc BAD bằng 30 độ, cạnh bên AA phẩy bằng 6 cm và góc giữa AA phẩy với mặt đáy bằng 45 độ. Gọi H là hình chiếu của A phẩy xuống đáy; chiều cao A phẩy H bằng 6 sin 45 độ bằng 3 căn hai. Diện tích đáy bằng 8 nhân 5 nhân sin30 bằng 20 cm vuông; thể tích bằng 60 căn hai cm khối.</desc>
+<rect width="1030" height="455" rx="18" fill="#fff"/>
+<text x="515" y="38" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#193c57">Khối hộp xiên: diện tích đáy × chiều cao vuông góc</text>
+<polygon points="128,340 446,340 539,241 219,241" fill="#e4eff8" stroke="#5b86a5" stroke-width="3"/>
+<polygon points="224,161 542,161 635,62 315,62" fill="#dff4ea" stroke="#4a9279" stroke-width="3"/>
+<path d="M128 340 L224 161 M446 340 L542 161 M539 241 L635 62 M219 241 L315 62" fill="none" stroke="#7b8c9d" stroke-width="3.2"/>
+<path d="M224 161 L224 340" stroke="#c05a38" stroke-width="6" stroke-dasharray="9 6"/>
+<path d="M224 161 L128 340" stroke="#2e78a9" stroke-width="6"/>
+<path d="M224 321 H243 V340" stroke="#c05a38" stroke-width="2.5" fill="none"/>
+<g font-family="Arial" font-size="19" fill="#24415a">
+<text x="107" y="364">A</text><text x="450" y="363">B</text><text x="546" y="247">C</text><text x="205" y="234">D</text>
+<text x="210" y="153">A′</text><text x="547" y="153">B′</text><text x="641" y="56">C′</text><text x="305" y="54">D′</text><text x="232" y="357">H</text>
+<text x="235" y="252" fill="#bc5434">A′H = 3√2</text><text x="164" y="285">AA′ = 6</text><text x="300" y="362">AB = 8</text><text x="170" y="331">AD=5</text>
+<rect x="662" y="83" width="345" height="301" rx="12" fill="#f5f9fc" stroke="#dfe8ef"/>
+<text x="683" y="128" font-weight="700">Góc BAD = 30°</text><text x="683" y="177">S đáy = 8·5·sin30°</text><text x="683" y="213">= 20 cm²</text>
+<text x="683" y="260">A′H = 6·sin45°</text><text x="683" y="297">= 3√2 cm</text>
+<text x="683" y="343" font-weight="700" fill="#bf5638">V = 60√2 cm³</text>
+<text x="515" y="425" text-anchor="middle" font-size="16" fill="#657c8c">Ảnh phối cảnh minh họa đối tượng, các góc và độ dài lấy từ giả thiết SGK.</text></g></svg>
