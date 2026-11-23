@@ -66,7 +66,7 @@ if(process.argv.includes("--built")){
    assert(full.includes("← Về tổng quan Math Lab")&&full.includes("← Trở về danh sách 25 mô hình"),"Both back links missing "+id);
    assert(full.includes("Khám phá bằng cách điều chỉnh mô hình."),"Original teaching guidance lost "+id);
    assert(full.includes('href="../../"'),"Return href changed "+id);
-   assert((full.match(/<script\\b/g)||[]).length>0,"Original model JS missing "+id);
+   assert((full.match(/<script\b/g)||[]).length>0,"Original model JS missing "+id);
   }
   console.log("PASS BUILT "+dir+" 25/25 models/viewers");
  }
