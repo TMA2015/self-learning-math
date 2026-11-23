@@ -1,64 +1,148 @@
 # Bài 21. Phương trình, bất phương trình mũ và lôgarit
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VI · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu bản chất → xem hình và ví dụ có suy luận → Tự thử trước Core → Core/Luyện tập/Vận dụng → tự khắc phục. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<style>
+/* Scoped B21 Golden semantic 3+1; giữ nguyên UI/CSS/JS chung. */
+.md-typeset:has([data-g11-b21-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#e8f7f2;border:1px solid #a9dccc;border-left:4px solid #087d69;color:#174137}
+.md-typeset:has([data-g11-b21-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#eaf1fc;border:1px solid #a5bee5;border-left:4px solid #4879c2;color:#193d66}
+.md-typeset:has([data-g11-b21-knowledge-only]) .thpt-r4-key-formula {background:transparent;border:1px solid #8c9ab0;border-left:4px solid #64748b;border-radius:10px;padding:.75rem 1rem}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b21-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card {background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b21-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card {background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b21-knowledge-only]) .thpt-r4-key-formula {background:transparent;color:inherit;border-color:#8c9ab0;border-left-color:#bdc8d8}
+</style>
 
-## 1. Kiến thức SGK — hiểu bản chất trước công thức
+<div class="thpt-r4-screen" data-thpt-r4 data-g11-b21-knowledge-only>
+<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VI · KẾT NỐI TRI THỨC · TẬP HAI</p>
+<p class="thpt-r4-lead">Bốn dạng: phương trình mũ, phương trình lôgarit, bất phương trình mũ, bất phương trình lôgarit. Hiểu cơ số, dấu, miền xác định trước khi giải.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B21-01_R00.svg" alt="B21 — trực quan hình thành khái niệm"/><figcaption>Hình minh họa — quan sát trước khi tính: B21 — trực quan hình thành khái niệm</figcaption></figure>
+=== "Khám phá kiến thức"
 
-**Cách đọc và phát hiện:** Hình B21 giải thích bản chất “đảo chiều”: cùng tăng x, đường y=2^x đi lên nhưng y=(1/2)^x đi xuống. Hãy dùng điều này để tự nói vì sao (1/2)^u>(1/2)^v thì u<v, trước khi học quy trình giải bất phương trình.
+    Em đã biết \(2^3=8\), \(\log_2 8=3\), và hai hàm mũ–lôgarit có thể tăng hoặc giảm theo cơ số. Khi câu hỏi đổi thành “\(2^x\) bằng bao nhiêu?” hoặc “\(2^x\) lớn hơn mức nào?”, ta phải tìm **nghiệm** của phương trình hay **tập nghiệm** của bất phương trình. Điểm cốt lõi: hàm mũ chỉ cho giá trị dương; lôgarit chỉ nhận đối số dương; bất đẳng thức đảo chiều chỉ vì **cơ số làm hàm nghịch biến**.
 
-### 1.1. Vì sao phải giải loại phương trình này?
+    ### 1.1. Phương trình mũ
 
-Các phương trình `x²=9` tìm **cơ số** x. Nhưng `2^x=16` lại tìm **số mũ** x; đây là dạng khác, cần hiểu hàm mũ đơn ánh và logarit là phép ngược. Bất phương trình như `2^x>10` hỏi phải tăng qua bao nhiêu kỳ để vượt một ngưỡng. Trước khi viết công thức, ta cần biết hàm **tăng hay giảm**, vì đó là lý do dấu bất đẳng thức được giữ hay đảo.
+    Xét \(2^{x+1}=\frac14\). Ta có \(\frac14=2^{-2}\), nên hai vế cùng cơ số 2 và \(x+1=-2\), vậy \(x=-3\). **Vì sao được so số mũ?** Với cơ số \(a>0,a\ne1\), hàm \(a^t\) đơn điệu nghiêm ngặt nên hai số mũ khác nhau không thể cho một kết quả giống nhau. Quy tắc này hoạt động cả khi \(0<a<1\), vì hàm tuy giảm nhưng vẫn nhận mỗi giá trị dương đúng một lần.
 
-### 1.2. Phương trình mũ cơ bản
+    Phương trình \(a^x=b\) chỉ có nghiệm thực nếu **\(b>0\)**, vì \(a^x\) luôn dương. Khi \(b>0\), nghiệm duy nhất \(x=\log_a b\). Chẳng hạn \(10^{x-1}=2022\) không cần tìm cách viết 2022 thành lũy thừa nguyên của 10: lấy log được \(x=1+\log2022\), là biểu thức chính xác; số thập phân bấm máy chỉ gần đúng.
 
-Với `a>0,a≠1`: `a^{u(x)}=a^{v(x)} ⇔ u(x)=v(x)` vì hàm mũ đơn ánh (hai số mũ khác nhau không thể cho cùng một giá trị). `a^{u(x)}=b`: nếu b>0 thì `u(x)=log_a b`; nếu b≤0 thì vô nghiệm thực vì `a^{u(x)}>0`. Đừng “lấy log” của số âm.
+    **Vận dụng.** Giải \(3^{2x-1}=27\); giải thích vì sao \(2^x=-5\) không có nghiệm thực.
 
-### 1.3. Phương trình logarit cơ bản và điều kiện
+    ??? question "Đối chiếu"
 
-`log_a f(x)=c` tương đương `f(x)=a^c`, **với** `f(x)>0`. `log_a f(x)=log_a g(x)` ⇔ `f(x)=g(x)` **và** `f(x)>0,g(x)>0`. **Lý do:** logarit chỉ nhận đối số dương; bỏ điều kiện có thể tạo nghiệm ngoại lai.
+        **Lời giải:** \(27=3^3\), nên \(2x-1=3\), suy \(x=2\). Còn \(2^x>0\) với mọi số thực \(x\), không thể bằng \(-5\). Không được viết \(\log_2(-5)\) trong số thực.
 
-### 1.4. Bất phương trình: quan sát chiều biến thiên trước
+    ??? tip "Kiểm lỗi"
 
-- Nếu `a>1`: `a^{u(x)}>a^{v(x)} ⇔ u(x)>v(x)`; `log_a f(x)>log_a g(x) ⇔ f(x)>g(x)>0`.
-- Nếu `0<a<1`: `a^{u(x)}>a^{v(x)} ⇔ u(x)<v(x)`; `log_a f(x)>log_a g(x) ⇔ 0<f(x)<g(x)`.
-- Với dấu `≥,≤`, áp dụng tương tự nhưng luôn đảm bảo điều kiện logarit. **Không đổi chiều vì “có log”**; đổi chiều vì **hàm theo cơ số 0<a<1 nghịch biến**.
+        Trước khi lấy log của vế phải, phải kiểm nó dương. Nếu hai vế cùng cơ số, hãy so **số mũ** chứ không chia cơ số như các số hạng bình thường.
 
-### 1.5. Quy trình và giới hạn phương pháp
+    ### 1.2. Phương trình lôgarit
 
-Bước 1: xác định cơ số, miền đầu vào và điều kiện xác định của mọi logarit. Bước 2: nhận biết hàm tăng/giảm. Bước 3: biến đổi tương đương sang phương trình/bất phương trình quen thuộc. Bước 4: đối chiếu nghiệm với điều kiện và bài toán thực tế. **Chỉ dùng các dạng cơ bản theo SGK**; bài nâng cao đa thức lôgarit/mẹo đặt ẩn phụ tùy S1 phạm vi, không tự đẩy Core.
+    Giải \(2\log_2 x=-3\): trước hết \(x>0\); chia hai vế cho 2 thì \(\log_2x=-\frac32\), nên \(x=2^{-3/2}>0\). Chính điều kiện đối số **dương** cho phép phép biến đổi sang mũ thực. Nếu bài có nhiều lôgarit, luôn kiểm tất cả các đối số của biểu thức ban đầu, không chỉ biểu thức sau khi rút gọn.
 
-### 1.6. Tự thử
+    Ví dụ \(\log_3(x+1)=\log_3(x^2-1)\). Điều kiện \(x+1>0,\ x^2-1>0\) cho **\(x>1\)**. So sánh hai đối số được \(x+1=x^2-1\); nghiệm đại số \(-1\) và \(2\), nhưng chỉ \(2\) thỏa điều kiện. Nghiệm \(-1\) là **ngoại lai**, dù thỏa phương trình sau khi bỏ log.
 
-Giải thích vì sao `(1/2)^x> (1/2)^3` cho `x<3`, không phải x>3. Nếu `log₂(x−1)=3`, vì sao trước tiên cần x>1?
+    Bản chất của \(\log_a f(x)=b\) là “cơ số \(a\) phải nâng lên mũ \(b\) để tạo \(f(x)\)”, nên \(f(x)=a^b\). Giá trị \(a^b>0\) làm điều kiện đối số tự được thỏa nếu phép tương đương giữ nguyên các biểu thức; việc ghi điều kiện vẫn đặc biệt cần khi có phép rút gọn hoặc hai log ở hai vế.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở cách tự kiểm tra</summary><p>Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery.</p></details>
+    **Vận dụng.** Giải \(4+\log_2(x-1)=6\). Có thể bỏ qua điều kiện \(x>1\) không?
 
+    ??? question "Đối chiếu"
 
+        **Lời giải:** Điều kiện \(x-1>0\), tức \(x>1\). Chuyển vế \(\log_2(x-1)=2\), nên \(x-1=4\), \(x=5>1\). Thử \(4+\log_2 4=6\).
 
-## 2. Ví dụ có suy luận
+    ??? tip "Kiểm lỗi"
 
-### Ví dụ mẫu có giải thích
+        Không tự mở rộng miền xác định sau biến đổi. Với hai log, bắt buộc **cả hai đối số dương** trước khi dùng tính đơn ánh.
 
-**EX-G11-B21-01 (mũ, dùng đơn ánh).** `3^{2x−1}=27=3³` ⇒ `2x−1=3` ⇒ x=2. Lý do: hàm `3^t` tăng và mỗi đầu ra dương chỉ có một số mũ.
+    ### 1.3. Bất phương trình mũ
 
-**EX-G11-B21-02 (log, điều kiện bắt buộc).** `log₂(x−1)=3`. Trước hết `x−1>0` tức x>1. Đổi sang `x−1=2³=8`, x=9 thỏa. Không ghi nghiệm chưa kiểm điều kiện.
+    So sánh \(2^u\) và \(2^v\) khác so sánh \((1/2)^u\) và \((1/2)^v\). Vì \(2^x\) **tăng**, \(2^u>2^v\) khi và chỉ khi \(u>v\). Vì \((1/2)^x\) **giảm**, \((1/2)^u>(1/2)^v\) khi và chỉ khi \(u<v\). Điều đó giải thích **chiều của dấu**, thay vì học thuộc quy tắc đảo dấu một cách máy móc.
 
-**EX-G11-B21-03 (cơ số 1/2 làm đổi chiều).** `(1/2)^{x+1}≥(1/2)^3`. Hàm giảm vì cơ số 0,5<1, nên `x+1≤3`, tức x≤2. **Sai thường gặp:** x≥2.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B21-01_R00.svg" alt="Đồ thị hai mũ x tăng và đồ thị một phần hai mũ x giảm đều đi qua điểm không một"><figcaption><strong>Hướng dẫn đọc:</strong> đường xanh \(2^x\) đi lên từ trái sang phải; đường đỏ \((1/2)^x\) đi xuống; cả hai qua \((0,1)\). Nếu muốn giá trị lũy thừa lớn hơn, với đường xanh phải đi **sang phải**, với đường đỏ phải đi **sang trái**.</figcaption></figure>
 
-**EX-G11-B21-04 (log giảm và miền).** `log_{1/3}(x−1)<log_{1/3}4`. Điều kiện x>1. Vì log cơ số 1/3 giảm, bất phương trình tương đương `x−1>4` ⇒ x>5; kiểm tự động thỏa x>1.
+    Bất phương trình \(a^x>b\) có cơ số \(a>0,a\ne1\). Nếu **\(b\le0\)** thì mọi \(x\) đều thỏa vì \(a^x>0\). Khi \(b>0\), ta so \(a^x\) và \(a^{\log_a b}\): với \(a>1\), \(x>\log_ab\); với \(0<a<1\), \(x<\log_ab\). Các dấu \(\ge,<,\le\) xử lí tương tự theo dấu của \(b\).
 
-**EX-G11-B21-05 (mô hình ngưỡng).** `P(n)=100(1,1)^n` triệu, n nguyên không âm, khi nào **vượt** 133,1 triệu? `(1,1)^n>1,331=(1,1)^3` ⇒ n>3 ⇒ kỳ đầu vượt là **n=4**. **Bẫy:** tại n=3 chỉ **bằng** 133,1; điều kiện “vượt” là dấu >, và n phải nguyên trong cập nhật cuối kỳ.
+    SGK minh họa \(2^x>4\) bằng đường ngang \(y=4\): đồ thị \(2^x\) cắt đường ngang tại \((2,4)\), và nằm phía trên nó khi **\(x>2\)**. Hình dưới thêm cách nhìn tương tự cho lôgarit ở mục kế tiếp.
 
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg" alt="Đồ thị ngưỡng hai mũ x lớn hơn bốn khi x lớn hơn hai và logarit hai của x lớn hơn hai khi x lớn hơn bốn"><figcaption><strong>Hướng dẫn đọc khung trái:</strong> đường cong \(y=2^x\) giao với ngưỡng \(y=4\) tại \(x=2\). Nghiệm \(2^x>4\) là **\(x>2\)**, chỉ gồm phần đường cong ở phía trên đường ngưỡng; khung phải dùng cho bài lôgarit.</figcaption></figure>
 
-## 3. Tự khắc phục và quay lại câu gốc
+    **Ứng dụng ô tô:** Với mô hình trong SGK \(V(t)=780(0{,}905)^t\) triệu đồng, hỏi khi nào giá trị không quá 300 triệu. Ta giải \((0{,}905)^t\le5/13\); vì cơ số **nhỏ hơn 1**, suy \(t\ge\log_{0{,}905}(5/13)\approx9{,}6\). Nếu chỉ ghi **năm trọn vẹn**, mốc đầu tiên là **10 năm**, không phải 9 năm.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVI-B21-01"><summary>Giải đại số xong mới quên điều kiện log.</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Giải đại số xong mới quên điều kiện log.</li><li><strong>Nhắc bản chất &amp; điều kiện:</strong> Phải bảo đảm từng đối số logarit dương trước biến đổi, kể cả khi log hai vế bằng nhau.</li><li><strong>Tìm lại lý do:</strong> Hãy phát biểu bằng lời vì sao quy tắc hợp lệ, đọc lại D1 tương ứng trước khi thay số hoặc biến đổi.</li><li><strong>Tự thử có dẫn dắt:</strong> Xét điều kiện log₂(x−5)=log₂(1−x). <strong>Đối chiếu sau khi thử:</strong> Không có x đồng thời &gt;5 và &lt;1, nên vô nghiệm.</li><li><strong>Quay về bài canonical:</strong> THPT-G11-CHVI-B21-P05; tự giải lại và nêu lý do từng bước, không chỉ ghi đáp số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P05">Quay lại câu THPT-G11-CHVI-B21-P05</a></p></details>
+    **Vận dụng.** Giải \((1/2)^{2x-1}\ge(1/2)^3\) và \(3^x>-2\).
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVI-B21-02"><summary>Quên đảo dấu khi cơ số trong (0,1).</summary><ol><li><strong>Chẩn đoán lỗi:</strong> Quên đảo dấu khi cơ số trong (0,1).</li><li><strong>Nhắc bản chất &amp; điều kiện:</strong> log_a x nghịch biến khi 0&lt;a&lt;1; vẫn giữ miền x&gt;0.</li><li><strong>Tìm lại lý do:</strong> Hãy phát biểu bằng lời vì sao quy tắc hợp lệ, đọc lại D1 tương ứng trước khi thay số hoặc biến đổi.</li><li><strong>Tự thử có dẫn dắt:</strong> Giải log_(1/2)x ≥ log_(1/2)8. <strong>Đối chiếu sau khi thử:</strong> 0&lt;x≤8.</li><li><strong>Quay về bài canonical:</strong> THPT-G11-CHVI-B21-P04; tự giải lại và nêu lý do từng bước, không chỉ ghi đáp số.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVI-B21-P04">Quay lại câu THPT-G11-CHVI-B21-P04</a></p></details>
+    ??? question "Đối chiếu"
 
-## 4. Tiếp tục
+        **Lời giải:** Cơ số \(1/2\) nhỏ hơn 1, nên \(2x-1\le3\Rightarrow x\le2\). Còn \(3^x>0>-2\) với mọi \(x\), nên bất phương trình thứ hai có tập nghiệm \(\mathbb R\).
 
-[Core và Luyện tập Bài 21](luyen-tap.md) · [Tự luận Chương VI](../../../thu-vien/tu-luan-g11-chuong-vi.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    ??? tip "Kiểm lỗi"
+
+        Đừng lấy \(\log_3(-2)\), vì số âm không phải đối số log hợp lệ. Với hai vế cùng cơ số, chọn đúng chiều tăng/giảm trước khi so mũ.
+
+    ### 1.4. Bất phương trình lôgarit
+
+    Với \(\log_a x>b\), điều kiện đầu tiên là **\(x>0\)**. Nếu \(a>1\), lôgarit tăng và \(\log_a x>b\) tương đương \(x>a^b\); nếu \(0<a<1\), lôgarit giảm và nghiệm là **\(0<x<a^b\)**. Không thể bỏ \(x>0\) dù kết quả đại số đã được biến đổi.
+
+    Đọc **khung phải** của hình ngưỡng dưới đây. Đường \(y=\log_2x\) cắt đường ngang \(y=2\) tại \((4,2)\). Bên phải \(x=4\), đường cong cao hơn ngưỡng; nên \(\log_2x>2\) có nghiệm **\(x>4\)**. Đừng nhầm với bất phương trình mũ \(2^x>4\), có nghiệm \(x>2\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg" alt="Đồ thị lôgarit cơ số hai của x vượt đường ngang y hai khi x lớn hơn bốn"><figcaption><strong>Hướng dẫn đọc khung phải:</strong> giao điểm \((4,2)\) xác định ngưỡng \(x=4\); phần đường cong \(y=\log_2x\) nằm cao hơn \(y=2\) khi \(x>4\). Hình không có điểm đồ thị log ở \(x\le0\).</figcaption></figure>
+
+    Với cơ số nhỏ hơn 1, thử bất phương trình \(\log_{0{,}3}(x+1)\le\log_{0{,}3}(2x-1)\). Điều kiện \(x+1>0,\ 2x-1>0\) cho \(x>\frac12\). Vì hàm log cơ số \(0{,}3\) **giảm**, bất phương trình đổi thành \(x+1\ge2x-1\), hay \(x\le2\). Kết hợp được \(\frac12<x\le2\). Đây là minh họa điển hình cần **cả đảo chiều lẫn giữ miền gốc**.
+
+    **Ứng dụng áp suất:** Trong SGK, \(\ln(p/100)=-h/7\), với \(p>0\) (kPa), \(h\) (km). Tương đương \(p=100e^{-h/7}\); độ cao tăng thì áp suất giảm. Với một câu hỏi ngưỡng, cần giải phương trình/bất phương trình bằng \(\ln\) hoặc hàm mũ, vẫn kiểm \(p>0\).
+
+    **Vận dụng.** Giải \(\log_{1/3}(x-1)<\log_{1/3}4\). Vì sao không được quên \(x>1\)?
+
+    ??? question "Đối chiếu"
+
+        **Lời giải:** Điều kiện \(x-1>0\), tức \(x>1\). Cơ số \(1/3\) nằm giữa 0 và 1, nên log giảm: \(x-1>4\), suy \(x>5\). Tập nghiệm \(x>5\) thỏa điều kiện.
+
+    ??? tip "Kiểm lỗi"
+
+        Nếu được \(x<5\), em đã không đảo chiều. Đừng chỉ lấy giao điểm đồ thị mà bỏ miền xác định của log.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Phương trình mũ
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Phương trình mũ cơ bản</strong><p>Phương trình mũ cơ bản có dạng \(a^x=b\) với \(a>0,\ a\ne1\), trong đó ẩn nằm ở số mũ. Với cơ số hợp lệ, \(a^x\) luôn dương và hàm mũ đơn điệu nghiêm ngặt.</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Nghiệm của phương trình mũ</strong><p>Với \(a>0,\ a\ne1\): nếu \(b>0\) thì \(a^x=b\) có <strong>nghiệm duy nhất</strong> \(x=\log_ab\). Nếu \(b\le0\), phương trình <strong>vô nghiệm thực</strong>. Khi biểu thức được xác định, \(a^{u(x)}=a^{v(x)}\Leftrightarrow u(x)=v(x)\).</p></div>
+
+    **Chọn phương pháp:** Nhận thấy cùng cơ số thì so mũ; nếu vế phải dương nhưng khó viết bằng lũy thừa cùng cơ số, dùng lôgarit để tìm số mũ. Ví dụ \(10^{x-1}=2022\) cho \(x=1+\log2022\).
+
+    ### 2.2. Phương trình lôgarit
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Phương trình lôgarit cơ bản</strong><p>Phương trình \(\log_ax=b\) với \(a>0,\ a\ne1,\ x>0\), \(b\in\mathbb R\), là phương trình lôgarit cơ bản. Đối số \(x\) phải dương để lôgarit có nghĩa thực.</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Nghiệm của phương trình lôgarit</strong><p>Với cơ số hợp lệ, \(\log_ax=b\) có nghiệm duy nhất \(x=a^b>0\). Với \(\log_af(x)=\log_ag(x)\), chỉ khi <strong>\(f(x)>0,\ g(x)>0\)</strong> mới được chuyển thành \(f(x)=g(x)\). Phải lọc nghiệm với điều kiện ban đầu.</p></div>
+
+    **Ví dụ điều kiện:** \(\log_3(x+1)=\log_3(x^2-1)\) đòi \(x>1\). Phương trình đại số cho \(-1,2\); nghiệm log chỉ là **\(x=2\)**.
+
+    ### 2.3. Bất phương trình mũ
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Bất phương trình mũ cơ bản</strong><p>Bất phương trình \(a^x>b\) hoặc với các dấu \(\ge,<,\le\), trong đó \(a>0,\ a\ne1\), gọi là bất phương trình mũ cơ bản. Hàm \(a^x>0\) với mọi \(x\in\mathbb R\).</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Giải dạng \(a^x>b\)</strong><p>Nếu \(b\le0\), tập nghiệm là toàn \(\mathbb R\). Nếu \(b>0\), với \(a>1\) tập nghiệm \(x>\log_ab\); với \(0<a<1\) tập nghiệm <strong>\(x<\log_ab\)</strong>. Với dấu khác phải xét dấu của \(b\) và tính đơn điệu tương tự.</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — So sánh hai lũy thừa cùng cơ số</strong><p>Nếu \(a>1\), \(a^u>a^v\Leftrightarrow u>v\). Nếu \(0<a<1\), \(a^u>a^v\Leftrightarrow u<v\). Dấu thay đổi theo tính đồng biến hoặc nghịch biến, không phải vì biểu thức có chữ mũ.</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B21-01_R00.svg" alt="Đồ thị hai hàm mũ có cơ số hai và một phần hai minh họa hai chiều biến thiên"><figcaption><strong>Tra hình biến thiên:</strong> \(2^x\) tăng, \((1/2)^x\) giảm; cả hai đi qua \((0,1)\). Đây là chứng cứ trực quan của việc giữ/đảo chiều khi so số mũ.</figcaption></figure>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg" alt="Hai mũ x cắt đường ngang bốn tại x hai và vượt đường ngưỡng khi x lớn hơn hai"><figcaption><strong>Tra hình ngưỡng mũ:</strong> dùng khung trái: \(2^x=4\) tại \(x=2\), \(2^x>4\) khi \(x>2\). Phần khung phải dành để đọc bất phương trình log.</figcaption></figure>
+
+    ### 2.4. Bất phương trình lôgarit
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Bất phương trình lôgarit cơ bản</strong><p>Với \(a>0,\ a\ne1\), dạng cơ bản \(\log_ax>b\) hoặc \(\ge,<,\le\) có điều kiện <strong>\(x>0\)</strong>. Với đối số \(f(x)\), phải giải <strong>\(f(x)>0\)</strong> trước khi biến đổi.</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Giải dạng \(\log_ax>b\)</strong><p>Với \(a>1\), nghiệm \(x>a^b\). Với \(0<a<1\), nghiệm <strong>\(0<x<a^b\)</strong>. Không bỏ điều kiện \(x>0\) khi đổi chiều theo hàm nghịch biến.</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — So sánh hai lôgarit cùng cơ số</strong><p>Với \(a>1\), \(\log_au>\log_av\Leftrightarrow u>v>0\); với \(0<a<1\), \(\log_au>\log_av\Leftrightarrow0<u<v\). Các đối số phải <strong>đều dương</strong> trước khi so sánh.</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg" alt="Lôgarit hai của x lớn hơn hai khi x vượt ngưỡng bốn"><figcaption><strong>Tra hình ngưỡng log:</strong> khung phải, \(\log_2x\) cắt \(y=2\) tại \((4,2)\); phần trên đường ngưỡng tương ứng \(x>4\), vẫn thuộc miền \(x>0\).</figcaption></figure>
+
+    | Dạng | \(a>1\) | \(0<a<1\) |
+    | :-- | :-- | :-- |
+    | \(a^x>b,\ b>0\) | \(x>\log_ab\) | \(x<\log_ab\) |
+    | \(\log_ax>b\) | \(x>a^b\) | \(0<x<a^b\) |
+
+    **Hạn chế và khắc phục:** Với mũ, \(b\le0\) cần xử lí riêng vì \(a^x>0\). Với log, đối số phải dương trước khi dùng bảng. Khi mô hình có thời gian/năm nguyên, chỉ nhận giá trị thuộc tập thời gian cho phép, không làm tròn thông thường nếu bài hỏi mốc đầu tiên thỏa ngưỡng.
