@@ -32,7 +32,8 @@ assert.equal((catalog.match(/href="\.\.\/\.\.\/assets\/math-lab\/models\/SLM-[A-
 const libraryJS=read("docs/assets/javascripts/math-lab-library-v1.js");
 const launcherJS=read("docs/assets/javascripts/thpt-r4-preview.js");
 assert(libraryJS.includes("location.replace(expected.href)")&&libraryJS.includes('sandbox="allow-scripts"'),"Safe legacy viewer redirects missing");
-assert(launcherJS.includes('labLink.href=base+"math-lab/"')&&launcherJS.includes('labLink.dataset.thptMathLabShortcut="1"'),"5+1 Math Lab auxiliary shortcut missing");
+assert(libraryJS.includes("requestAnimationFrame(mountMathLabShortcut)")&&libraryJS.includes('a.dataset.thptMathLabShortcut="1"'),"Isolated 5+1 Math Lab auxiliary shortcut missing");
+assert(launcherJS.includes('btn.dataset.thptR4Launcher="1"')&&launcherJS.includes('["Danh mục 22 Chuyên đề đã phát hành","chuyen-de/"]'),"Golden shared THPT launcher changed");
 
 assert.equal((home.match(/href="\.\.\/math-lab\/"/g)||[]).length,1,"Home missing ONE Math Lab card");
 assert(home.indexOf('href="../thu-vien/"')<home.indexOf('href="../math-lab/"')&&home.indexOf('href="../math-lab/"')<home.indexOf('href="../tien-do/"'),"Home card order must be Library / Math Lab / Progress");
