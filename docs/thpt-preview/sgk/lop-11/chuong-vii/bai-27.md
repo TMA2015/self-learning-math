@@ -186,3 +186,137 @@
     | Hộp chữ nhật | \(xyz\) | Ba kích thước vuông góc |
 
     **Đơn vị và mô hình thực tế:** Nếu \(S\) tính theo \(\text{cm}^2\), \(h\) theo cm thì \(V\) theo \(\text{cm}^3\). \(1\text{ dm}^3=1\) lít, \(1000\text{ cm}^3=1\) lít, \(1\text{ m}^3=1000\) lít. Khi đề cho kích thước **ngoài** của bình, không được tự coi đó là dung tích bên trong nếu có độ dày thành.
+
+=== "Ví dụ"
+
+    ### 3.1. HĐ1 SGK — Công suất điều hòa từ thể tích phòng
+
+    **Đề bài.** Phòng hình hộp chữ nhật dài \(5\) m, rộng \(4\) m, cao \(3\) m. Trong mô hình đề bài, mỗi \(1\text{ m}^3\) cần công suất \(200\) BTU. Tính công suất dự kiến.
+
+    **Phân tích:** Muốn tính theo BTU cho một **mét khối**, phải tính **thể tích phòng** trước, không dùng diện tích sàn \(5\cdot4\) m².
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Thể tích phòng \(V=5\cdot4\cdot3=60\text{ m}^3\). Theo hệ số trong đề, công suất \(P=60\cdot200=12\,000\) BTU.</p></div>
+
+    **Kiểm lại:** Phép tính đúng **mô hình của SGK**; không coi 200 BTU/m³ là định mức tư vấn máy điều hòa thật vì còn nhiều điều kiện thực tế.
+
+    ### 3.2. Chóp và lăng trụ cùng đáy, cùng cao
+
+    **Đề bài.** Hai khối có diện tích đáy \(24\text{ cm}^2\) và chiều cao \(9\text{ cm}\), một khối lăng trụ, một khối chóp. Tính mỗi thể tích và tỉ số.
+
+    **Phân tích:** Cần **nhận dạng khối** trước: lăng trụ giữ diện tích lát cắt, chóp thu dần về đỉnh; cùng \(S,h\) không có nghĩa cùng thể tích.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B27-01_R00.svg" alt="So sánh chóp và lăng trụ có cùng diện tích đáy và chiều cao nhưng thể tích khác hệ số một phần ba"><figcaption><strong>Đọc trước khi tính:</strong> lăng trụ bên trái có \(V=Sh\), chóp ở giữa có \(V=Sh/3\). Chiều cao phải đo vuông góc mặt đáy ở cả hai hình, không lấy nét xiên.</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Lăng trụ: \(V_1=24\cdot9=216\text{ cm}^3\). Chóp: \(V_2=\frac13\cdot24\cdot9=72\text{ cm}^3\). Tỉ số \(V_2/V_1=1/3\).</p></div>
+
+    **Kiểm lại:** Đơn vị **cm³** vì \(S\) cm² và \(h\) cm. Chóp nhỏ hơn lăng trụ đúng hệ số 3, không phải chỉ “nhỏ hơn vì hình trông nhỏ”.
+
+    ### 3.3. Ví dụ 1 SGK — Tứ diện có ba cạnh vuông góc đôi một
+
+    **Đề bài.** Tứ diện \(OABC\) có \(OA=a\), \(OB=b\), \(OC=c\) đôi một vuông góc (\(a,b,c>0\)). Tính thể tích.
+
+    **Phân tích:** Chọn mặt \(OBC\) làm đáy có \(OB\perp OC\); chứng minh \(OA\perp(OBC)\) nhờ **hai đường cắt nhau \(OB,OC\)**, không chỉ một.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_TETRAHEDRON_ORTHOGONAL_AUTHORING_20261123.svg" alt="Tứ diện vuông OABC có đáy OBC vuông tại O và chiều cao OA vuông góc mặt OBC"><figcaption><strong>Đọc hình:</strong> tam giác đáy \(OBC\) có diện tích \(bc/2\); cạnh đỏ \(OA\) vuông góc cả \(OB,OC\), nên chính là chiều cao từ \(A\) tới mặt \(OBC\). Tính diện tích đáy trước khi lấy một phần ba.</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(S_{OBC}=\frac12OB\cdot OC=bc/2\). Vì \(OA\perp OB\), \(OA\perp OC\) và hai đường \(OB,OC\) cắt nhau tại \(O\) trong \((OBC)\), suy \(OA\perp(OBC)\). Vậy \(V=\frac13S_{OBC}\cdot OA=\frac13\cdot\frac{bc}{2}\cdot a=\frac{abc}{6}\).</p></div>
+
+    **Kiểm lại:** Nếu \(a=3,b=4,c=5\), \(V=3\cdot4\cdot5/6=10\) đơn vị³. Không quên hệ số **1/2 diện tích tam giác** lẫn **1/3 thể tích chóp**.
+
+    ### 3.4. Luyện tập 1 SGK — Chóp tứ giác đều cho cạnh bên
+
+    **Đề bài.** Chóp tứ giác đều \(S.ABCD\) có đáy vuông cạnh \(a>0\), cạnh bên \(b>a/\sqrt2\). Tính thể tích. Áp dụng \(a=6\) cm, \(b=5\) cm.
+
+    **Phân tích:** Chân đường cao là **tâm \(O\) đáy vuông**, \(OA=a/\sqrt2\). Phải tính \(SO\) bằng Pythagore rồi mới dùng công thức chóp \(Sh/3\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Vì \(O\) là tâm hình vuông cạnh \(a\), \(OA=a\sqrt2/2=a/\sqrt2\). Tam giác \(SOA\) vuông tại \(O\) có \(SA=b\), nên \(SO=\sqrt{b^2-a^2/2}\). Thể tích \(V=\frac13a^2\sqrt{b^2-a^2/2}\). Với \(a=6,b=5\), \(SO=\sqrt{25-18}=\sqrt7\) cm, \(V=36\sqrt7/3=12\sqrt7\text{ cm}^3\).</p></div>
+
+    **Kiểm lại:** \(b>a/\sqrt2\) bảo đảm chiều cao dương. Không lấy \(b\) là chiều cao; mặt đáy là **hình vuông**, diện tích \(a^2\).
+
+    ### 3.5. Chóp cụt đều không dùng trung bình diện tích hai đáy
+
+    **Đề bài.** Chóp cụt đều có \(S=36\text{ cm}^2\), \(S'=9\text{ cm}^2\), chiều cao \(h=4\) cm. Tính thể tích, đối chiếu cách lấy trung bình hai diện tích đáy nhân cao.
+
+    **Phân tích:** Vì hai đáy đồng dạng song song của một chóp cụt đều, chọn công thức \(h(S+S'+\sqrt{SS'})/3\), không dùng công thức diện tích **hình thang phẳng**.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_FRUSTUM_SIMILARITY_AUTHORING_20261123.svg" alt="Chóp cụt đều là hiệu chóp lớn và chóp nhỏ đồng dạng nên công thức có căn tích diện tích hai đáy"><figcaption><strong>Đọc trước lời giải:</strong> chóp nhỏ và chóp lớn có các đáy đồng dạng, tỉ số diện tích \(S'/S\) bằng bình phương tỉ số độ dài. Từ đó chóp cụt có hạng \(\sqrt{SS'}\), không chỉ \(S+S'\).</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(\sqrt{SS'}=\sqrt{36\cdot9}=18\). Vì vậy \(V=\frac43(36+9+18)=84\text{ cm}^3\). Nếu lấy trung bình diện tích đáy, được \(4(36+9)/2=90\text{ cm}^3\), không đúng.</p></div>
+
+    **Kiểm lại:** \(V\) nằm giữa thể tích chóp \(\frac13Sh=48\) và lăng trụ \(Sh=144\) với cùng \(S,h\), hợp lí. Chênh \(90-84=6\text{ cm}^3\) minh họa lỗi phương pháp.
+
+    ### 3.6. Luyện tập 2 SGK — Chóp cụt tam giác đều và lăng trụ bên trong
+
+    **Đề bài.** Chóp cụt đều \(ABC.A'B'C'\) có cạnh đáy lớn \(2a\), đáy nhỏ \(a\), đường cao \(h\) (\(a,h>0\)). a) Tính \(V_{\text{cụt}}\). b) Gọi \(B_1,C_1\) là trung điểm \(AB,AC\); chứng minh \(AB_1C_1.A'B'C'\) là lăng trụ và tính thể tích.
+
+    **Phân tích:** a) Dùng diện tích tam giác đều của hai đáy. b) Vì chóp cụt xuất phát từ chóp lớn bằng phép vị tự tâm đỉnh, các đoạn nối **đỉnh tương ứng** từ tam giác \(AB_1C_1\) đến \(A'B'C'\) song song, bằng nhau. Không chỉ nhìn ảnh mà kết luận là lăng trụ.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> a) Hai diện tích \(S=\sqrt3a^2\), \(S'=\sqrt3a^2/4\), \(\sqrt{SS'}=\sqrt3a^2/2\). Do đó \(V_{\text{cụt}}=\frac h3\bigl(\sqrt3a^2+\sqrt3a^2/4+\sqrt3a^2/2\bigr)=7\sqrt3a^2h/12\). b) Gọi \(T\) là đỉnh chóp lớn, \(A'=(T+A)/2\), \(B'=(T+B)/2\), \(C'=(T+C)/2\) theo quan hệ chia đôi trên các cạnh bên (hiểu các điểm như vectơ vị trí). Vì \(B_1=(A+B)/2\), \(C_1=(A+C)/2\), nên \(\overrightarrow{AA'}=\overrightarrow{B_1B'}=\overrightarrow{C_1C'}=(\overrightarrow{AT})/2\). Hai tam giác \(AB_1C_1\) và \(A'B'C'\) bằng nhau và song song; do đó đó là lăng trụ cao \(h\) với đáy đều cạnh \(a\), thể tích \(V_{\text{lăng trụ}}=a^2\sqrt3h/4\).</p></div>
+
+    **Kiểm lại:** \(V_{\text{cụt}}/V_{\text{lăng trụ}}=(7/12)/(1/4)=7/3\). Đáy \(AB_1C_1\) có cạnh **\(a\)**, không phải \(2a\). Các đoạn nối đỉnh tương ứng song song **và bằng nhau** mới đủ nhận dạng lăng trụ.
+
+    ### 3.7. Ví dụ 2 SGK — Lăng trụ xiên có mặt bên vuông góc đáy
+
+    **Đề bài.** Lăng trụ \(ABC.A'B'C'\) có đáy tam giác đều cạnh \(a>0\), mặt \((ACC'A')\perp(ABC)\), tam giác \(A'AC\) cân tại \(A'\) với \(AA'=A'C=b\) và \(a<2b\). Tính thể tích.
+
+    **Phân tích:** Không có giả thiết lăng trụ đứng; phải **dựng đường cao**. Tam giác cân có đường cao \(A'H\) tới trung điểm \(H\) của \(AC\); tính chất hai mặt vuông góc sẽ biến \(A'H\) thành đường vuông góc mặt đáy.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_PRISM_INCLINED_HEIGHT_AUTHORING_20261123.svg" alt="Lăng trụ xiên có mặt ACC phẩy A phẩy vuông góc đáy, đường cao A phẩy H tới trung điểm H của AC"><figcaption><strong>Đọc hình trước lời giải:</strong> mặt bên \((ACC'A')\) được cho vuông góc đáy, \(A'H\perp AC\) từ tam giác cân; vì \(H\in AC\), tính chất hai mặt vuông góc cho \(A'H\perp(ABC)\). Đây là chiều cao, **không** phải cạnh \(AA'=b\).</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(H\) là trung điểm \(AC\), \(AH=a/2\). Tam giác \(A'AC\) cân tại \(A'\), nên \(A'H\perp AC\). Vì \(A'H\subset(ACC'A')\) và \((ACC'A')\perp(ABC)\) theo giao tuyến \(AC\), suy \(A'H\perp(ABC)\). Từ tam giác vuông \(A'HA\), \(A'H=\sqrt{b^2-a^2/4}\). Diện tích đáy \(S_{ABC}=a^2\sqrt3/4\). Do đó \(V=\frac{a^2\sqrt3}{4}\sqrt{b^2-a^2/4}=\frac{a^2\sqrt{3(4b^2-a^2)}}8\).</p></div>
+
+    **Kiểm lại:** Điều kiện \(a<2b\) tương đương \(b>a/2\), bảo đảm chiều cao thực và dương. Không gọi **lăng trụ đứng** khi SGK chỉ cho **mặt bên vuông góc đáy**.
+
+    ### 3.8. Ví dụ 3 SGK — Khối hộp xiên có hai góc khác vai trò
+
+    **Đề bài.** Hình hộp \(ABCD.A'B'C'D'\) có \(AB=8\) cm, \(AD=5\) cm, \(AA'=6\) cm, \(\angle BAD=30^\circ\), góc cạnh \(AA'\) với đáy \((ABCD)\) là \(45^\circ\). Tính thể tích.
+
+    **Phân tích:** Đáy **hình bình hành** nên \(S=AB\cdot AD\sin30^\circ\). Cạnh \(AA'\) **xiên với đáy** nên đường cao là \(AA'\sin45^\circ\). Không lấy \(8\cdot5\cdot6\) như hình hộp chữ nhật.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_PARALLELEPIPED_OBLIQUE_AUTHORING_20261123.svg" alt="Hộp xiên có góc BAD 30 độ ở đáy, cạnh AA phẩy tạo góc 45 độ với đáy, chiều cao A phẩy H"><figcaption><strong>Đọc trước lời giải:</strong> \(30^\circ\) ở **đáy** dùng để tìm diện tích hình bình hành; \(45^\circ\) giữa **cạnh bên với đáy** dùng để tìm hình chiếu vuông góc \(A'H\). Phải làm hai phép chiếu khác nhau.</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \(S_{ABCD}=AB\cdot AD\sin30^\circ=8\cdot5\cdot(1/2)=20\text{ cm}^2\). Gọi \(H\) là chân hình chiếu \(A'\) lên đáy, \(AA'\) tạo góc \(45^\circ\) với đáy nên \(A'H=AA'\sin45^\circ=6\cdot\sqrt2/2=3\sqrt2\) cm. Vậy \(V=S_{ABCD}\cdot A'H=20\cdot3\sqrt2=60\sqrt2\text{ cm}^3\).</p></div>
+
+    **Kiểm lại:** \(60\sqrt2\approx84{,}85\text{ cm}^3\), nhỏ hơn \(20\cdot6=120\text{ cm}^3\) vì cạnh bên nghiêng. Không dùng \(30^\circ\) để tính cao hoặc \(45^\circ\) để tính diện tích đáy.
+
+    ### 3.9. Vận dụng SGK — Sọt vuông cụt đều có cạnh bên 50 cm
+
+    **Đề bài.** Một sọt có dạng chóp cụt đều, đáy vuông cạnh \(30\) cm, miệng vuông cạnh \(60\) cm, cạnh bên dài \(50\) cm. Tính gần đúng thể tích chứa hình học theo lít.
+
+    **Phân tích:** Chưa có \(h\); lấy **hiệu bán kính tâm–đỉnh** hai hình vuông để tìm độ lệch ngang \((60-30)/\sqrt2=15\sqrt2\) cm, dùng cạnh bên 50 làm cạnh huyền, rồi mới áp công thức chóp cụt.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_FRUSTUM_BASKET_AUTHORING_20261123.svg" alt="Sọt chóp cụt đều có hai đáy vuông cạnh 30 và 60, cạnh xiên 50 và đường cao h nối tâm hai đáy"><figcaption><strong>Đọc hình:</strong> miệng **60 cm** lớn hơn đáy **30 cm**, nên chênh tâm–đỉnh là \(30\sqrt2-15\sqrt2=15\sqrt2\) cm. Hạ đường vuông góc tâm hai đáy để lấy \(h\), không thay trực tiếp 50 cm vào công thức.</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> Độ lệch ngang hai đỉnh tương ứng \(d=(60-30)/\sqrt2=15\sqrt2\) cm. Chiều cao \(h=\sqrt{50^2-d^2}=\sqrt{2500-450}=\sqrt{2050}\) cm. Diện tích đáy lớn \(S=60^2=3600\text{ cm}^2\), đáy nhỏ \(S'=30^2=900\text{ cm}^2\). \(\sqrt{SS'}=1800\text{ cm}^2\). Vậy \(V=\frac{\sqrt{2050}}3(3600+900+1800)=2100\sqrt{2050}\text{ cm}^3\approx95\,082\text{ cm}^3\approx95{,}1\) lít.</p></div>
+
+    **Kiểm lại:** \(h\approx45{,}28\text{ cm}<50\) cm (cạnh huyền). Dung tích là **mô hình rỗng không độ dày thành**; nếu sọt có lớp lót/thành dày, lượng chứa thực tế nhỏ hơn.
+
+    ### 3.10. Bài 7.29 SGK — Lăng trụ đứng với góc đáy 150°
+
+    **Đề bài.** Lăng trụ đứng \(ABC.A'B'C'\) có \(AA'=5\) cm, \(AB=6\) cm, \(BC=2\) cm, \(\angle ABC=150^\circ\). Tính thể tích.
+
+    **Phân tích:** Đáy là tam giác **không vuông** nên diện tích \(S=\frac12AB\cdot BC\sin150^\circ\), không lấy \(6\cdot2/2\) nếu không xét góc. Lăng trụ đứng nên cạnh bên \(AA'\) là chiều cao.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> \(S_{ABC}=\frac12AB\cdot BC\sin150^\circ=\frac12\cdot6\cdot2\cdot\frac12=3\text{ cm}^2\). Vì lăng trụ đứng, \(h=AA'=5\) cm. Vậy \(V=S_{ABC}\cdot h=3\cdot5=15\text{ cm}^3\).</p></div>
+
+    **Kiểm lại:** \(\sin150^\circ=\sin30^\circ=1/2\), diện tích đáy phải bằng \(3\), không bằng \(6\).
+
+    ### 3.11. Bài 7.28 SGK — Thể tích tứ diện đều cạnh a
+
+    **Đề bài.** Khối tứ diện đều có tất cả cạnh bằng \(a>0\). Tính thể tích theo \(a\) bằng việc tìm chiều cao của chóp tam giác đều.
+
+    **Phân tích:** Đáy là tam giác đều cạnh \(a\), chân từ đỉnh còn lại tại **tâm đáy**, cách mỗi đỉnh đáy \(a/\sqrt3\); cạnh bên cũng bằng \(a\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.11"><p><strong>Lời giải.</strong> Diện tích tam giác đều đáy \(S=a^2\sqrt3/4\). Tâm đáy \(O\) cách đỉnh đáy \(A\) một đoạn \(AO=a/\sqrt3\). Với đỉnh \(S\) của tứ diện, tam giác \(SAO\) vuông tại \(O\) có \(SA=a\), nên \(SO=\sqrt{a^2-a^2/3}=a\sqrt{2/3}\). Suy \(V=\frac13\cdot(a^2\sqrt3/4)\cdot a\sqrt{2/3}=a^3\sqrt2/12\).</p></div>
+
+    **Kiểm lại:** Lũy thừa \(a^3\) đúng đơn vị thể tích, hệ số \(\sqrt2/12>0\). Không nhầm chiều cao tứ diện đều với chính cạnh \(a\).
+
+    ### 3.12. Bài 7.30 SGK — Cùng đáy vuông nhưng góc cạnh bên và góc mặt bên khác nhau
+
+    **Đề bài.** Chóp tứ giác đều \(S.ABCD\) có cạnh đáy \(6\) cm. a) Cạnh bên tạo góc \(60^\circ\) với đáy. b) Mặt bên tạo góc \(45^\circ\) với đáy. Tính thể tích mỗi trường hợp.
+
+    **Phân tích:** Hai góc khác nhau nên phải dựng **hai tam giác vuông khác nhau**. a) Dùng \(O\) tâm đáy và \(OA=3\sqrt2\) để tính \(SO=OA\tan60^\circ\). b) Gọi \(M\) trung điểm cạnh đáy \(AB\), \(OM=3\), dựng tiết diện \((SOM)\) vuông góc \(AB\); góc mặt bên–đáy là \(\angle SMO=45^\circ\), nên \(SO=OM\tan45^\circ\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.12"><p><strong>Lời giải.</strong> Cả hai trường hợp \(S_{\text{đáy}}=6^2=36\text{ cm}^2\), nên \(V=36\,SO/3=12\,SO\). a) \(OA=6\sqrt2/2=3\sqrt2\) cm. Vì cạnh \(SA\) tạo góc \(60^\circ\) với đáy, \(\angle SAO=60^\circ\); \(SO=OA\tan60^\circ=3\sqrt2\cdot\sqrt3=3\sqrt6\). Suy \(V_a=36\sqrt6\text{ cm}^3\). b) Với \(M\) trung điểm \(AB\), \(OM=3\) cm, \(SM\perp AB\) trong mặt bên do tam giác \(SAB\) cân, còn \(OM\perp AB\) trong đáy, nên góc mặt bên–đáy là \(\angle SMO=45^\circ\). \(SO=OM\tan45^\circ=3\) cm; \(V_b=12\cdot3=36\text{ cm}^3\).</p></div>
+
+    **Kiểm lại:** a) \(V_a=36\sqrt6\) và b) \(V_b=36\) khác nhau vì **góc cạnh bên–đáy** không phải **góc mặt bên–đáy**. Cả hai chiều cao đều dương và vuông góc đáy.
