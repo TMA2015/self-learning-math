@@ -8,6 +8,8 @@ const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-t
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
 const sizes={"19":{"outcomes":14,"items":42,"replay":7,"groups":3,"practiceGroups":3},"20":{"outcomes":9,"items":20,"replay":11,"groups":2,"practiceGroups":3},"21":{"outcomes":8,"items":11,"replay":8,"groups":3,"practiceGroups":3},"22":{"outcomes":13,"items":114,"replay":9,"groups":3,"practiceGroups":3}};
+const expected=sizes[topic];
+/* A missing expected causes W5 hydration fallback before any tab mounts. */
 const topicTabNames={
   "19": {
     "modules": [
