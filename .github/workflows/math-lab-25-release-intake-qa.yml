@@ -10,6 +10,7 @@ on:
       - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/thpt-preview/home.md'
       - 'mkdocs.yml'
+      - 'hooks/math_lab_full_page.py'
       - 'mkdocs.thpt-preview.yml'
       - 'scripts/math-lab-25-release-manifest.tsv'
       - 'scripts/test-math-lab-25-release-intake.cjs'
