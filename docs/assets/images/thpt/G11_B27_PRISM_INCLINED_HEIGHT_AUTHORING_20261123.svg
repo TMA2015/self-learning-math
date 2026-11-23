@@ -2,16 +2,16 @@
 <title id="t">Ví dụ 2 SGK, chiều cao của lăng trụ xiên từ mặt bên vuông góc đáy</title><desc id="d">Khối lăng trụ ABC.A phẩy B phẩy C phẩy có hai đáy tam giác đều cạnh a. Mặt bên ACC phẩy A phẩy vuông góc đáy ABC. Trong tam giác A phẩy AC cân tại A phẩy, A phẩy A bằng A phẩy C bằng b, H là trung điểm AC, A phẩy H vuông góc AC và do hai mặt vuông góc A phẩy H vuông góc đáy. AH bằng a chia 2, chiều cao bằng căn của b bình phương trừ a bình phương chia bốn.</desc>
 <rect width="1050" height="475" rx="18" fill="#fff"/><text x="525" y="37" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1b405b">Lăng trụ xiên: chiều cao A′H không phải cạnh bên AA′</text>
 <polygon points="157,355 455,355 313,189" fill="#e8f4fa" stroke="#5a89a8" stroke-width="3"/>
-<polygon points="251,191 549,191 407,25" fill="#e2f5ed" stroke="#458b74" stroke-width="3"/>
-<path d="M157 355 L251 191 M455 355 L549 191 M313 189 L407 25" stroke="#77899a" stroke-width="3.5" fill="none"/>
-<polygon points="157,355 313,189 407,25 251,191" fill="#e9d7f8" fill-opacity=".4" stroke="#7e6b9b" stroke-width="3"/>
-<path d="M251 191 L235 272" stroke="#c65b3c" stroke-width="6" stroke-dasharray="9 6"/>
+<polygon points="135,178 433,178 291,12" fill="#e2f5ed" stroke="#458b74" stroke-width="3"/>
+<path d="M157 355 L135 178 M455 355 L433 178 M313 189 L291 12" stroke="#77899a" stroke-width="3.5" fill="none"/>
+<polygon points="157,355 313,189 291,12 135,178" fill="#e9d7f8" fill-opacity=".4" stroke="#7e6b9b" stroke-width="3"/>
+<path d="M135 178 L235 272" stroke="#c65b3c" stroke-width="6" stroke-dasharray="9 6"/>
 <path d="M157 355 L313 189" stroke="#348674" stroke-width="4"/>
-<path d="M235 272 L251 279 L243 295" stroke="#c65b3c" stroke-width="2.4" fill="none"/>
+<path d="M220 263 L230 253 L240 263" stroke="#c65b3c" stroke-width="2.4" fill="none"/>
 <g font-family="Arial" font-size="19" fill="#23405a">
 <text x="138" y="377">A</text><text x="465" y="377">B</text><text x="305" y="181">C</text>
-<text x="240" y="184">A′</text><text x="554" y="188">B′</text><text x="408" y="18">C′</text><text x="238" y="295">H</text>
-<text x="173" y="255">AA′=b</text><text x="208" y="334">AH=a/2</text><text x="271" y="247" fill="#ba5637">A′H⊥đáy</text>
+<text x="115" y="173">A′</text><text x="438" y="171">B′</text><text x="296" y="9">C′</text><text x="238" y="295">H</text>
+<text x="126" y="264">AA′=b</text><text x="208" y="334">AH=a/2</text><text x="246" y="236" fill="#ba5637">A′H⊥đáy</text>
 <rect x="605" y="80" width="418" height="305" rx="13" fill="#f6fafc" stroke="#dce8ed"/>
 <text x="627" y="124" font-weight="700">Mặt (ACC′A′) ⟂ đáy</text>
 <text x="627" y="171">A′H ⟂ AC, H trung điểm AC</text>
