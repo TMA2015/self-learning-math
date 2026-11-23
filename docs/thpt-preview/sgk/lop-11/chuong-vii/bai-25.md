@@ -90,6 +90,9 @@
 
     **Ví dụ 4 SGK — Chọn đúng nửa mặt:** Cho chóp \(S.ABCD\), \(SA\perp(ABCD)\), đáy hình thoi cạnh \(a\) có \(AC=a\) và \(SA=a/2\). Hai tam giác \(ABC,ACD\) đều nên \(\angle BAD=120^\circ\); đó là góc nhị diện \([B,SA,D]\). Gọi \(O\) là giao hai đường chéo; \(AO=a/2=SA\), \(SOA\) vuông tại \(A\), nên \([S,BD,A]\) có góc phẳng \(45^\circ\), còn \([S,BD,C]\) có góc phẳng \(135^\circ\). Cả hai nhị diện cùng chung giao tuyến \(BD\) nhưng có **hai nửa đáy khác phía**, không được cho cùng số đo.
 
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_RHOMBUS_PYRAMID_DIHEDRAL_AUTHORING_20261123.svg" alt="Chóp đáy hình thoi với tam giác SAO vuông, các góc BAD 120 độ AOS 45 độ COS 135 độ"><figcaption><strong>Hướng dẫn đọc:</strong> Trái: đáy \(ABCD\) có \(AC=a\), nên \(\angle BAD=120^\circ\). Phải: \(SA=AO=a/2\), tam giác \(SAO\) vuông tại \(A\), nên \(\angle AOS=45^\circ\), và hai tia \(OA,OC\) đối nhau cho \(\angle COS=135^\circ\).</figcaption></figure>
+
+
     **Vận dụng.** Tiết diện vuông góc bản lề ghế có góc giữa hai tia mặt ghế và lưng ghế (phía người ngồi) bằng \(102^\circ\). Tính góc nhị diện và góc giữa hai mặt phẳng chứa hai phần ghế.
 
     ??? question "Đối chiếu"
@@ -111,6 +114,9 @@
     **Đọc theo HĐ6–HĐ10 SGK:** Lăng trụ đứng có mặt bên chữ nhật và vuông góc đáy vì chứa cạnh bên vuông góc đáy. Lăng trụ đều có các mặt bên chữ nhật bằng nhau. Hình hộp đứng có **ít nhất bốn mặt bên** là chữ nhật; hình hộp chữ nhật có cả sáu mặt chữ nhật, hình lập phương có sáu mặt vuông. Đối với hình hộp chữ nhật, bốn đường chéo không gian bằng nhau và gặp nhau ở trung điểm chung. Không nhầm **đường chéo mặt** với **đường chéo không gian**.
 
     **Ví dụ 6 SGK:** Trong hình lập phương cạnh \(a>0\), tam giác \(A'BD\) có ba cạnh \(A'B,A'D,BD\) đều là đường chéo của các hình vuông cạnh \(a\), nên đều bằng \(a\sqrt2\). Do đó **tam giác \(A'BD\) đều**. Điều này cần chứng minh bằng độ dài, không dựa vào hình khối có vẻ đối xứng.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_CUBE_EQUILATERAL_DIAGONALS_AUTHORING_20261123.svg" alt="Tam giác A phẩy BD trong hình lập phương được tạo bởi ba đường chéo mặt A phẩy B, A phẩy D, BD"><figcaption><strong>Hướng dẫn đọc:</strong> Ba đường tô màu \(A'B,A'D,BD\) là đường chéo của các mặt vuông cạnh \(a\), nên mỗi đoạn dài \(a\sqrt2\). Tam giác \(A'BD\) đều vì ba cạnh bằng nhau.</figcaption></figure>
+
 
     **Vận dụng.** Một lăng trụ có các cạnh bên vuông góc đáy, dài \(6\) cm, đáy là tam giác có cạnh \(3,4,5\) cm. Đây có phải lăng trụ đều không? Tính diện tích mặt bên dựa trên cạnh đáy dài \(3\) cm.
 
@@ -194,6 +200,9 @@
 
     **Ví dụ 4 SGK:** Trong chóp có đáy hình thoi cạnh \(a\), \(AC=a\), \(SA=a/2\perp(ABCD)\), các nhị diện \([B,SA,D]\), \([S,BD,A]\), \([S,BD,C]\) lần lượt bằng \(120^\circ,45^\circ,135^\circ\). Các góc được tính qua những tia **vuông góc với cạnh nhị diện** ở đúng hai nửa mặt tương ứng.
 
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_RHOMBUS_PYRAMID_DIHEDRAL_AUTHORING_20261123.svg" alt="Chóp đáy hình thoi với tam giác SAO vuông, các góc BAD 120 độ AOS 45 độ COS 135 độ"><figcaption><strong>Hướng dẫn đọc:</strong> Trái: đáy \(ABCD\) có \(AC=a\), nên \(\angle BAD=120^\circ\). Phải: \(SA=AO=a/2\), tam giác \(SAO\) vuông tại \(A\), nên \(\angle AOS=45^\circ\), và hai tia \(OA,OC\) đối nhau cho \(\angle COS=135^\circ\).</figcaption></figure>
+
+
     ### 2.5. Một số hình lăng trụ đặc biệt
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Lăng trụ đứng và lăng trụ đều</strong><p><strong>Lăng trụ đứng:</strong> các cạnh bên vuông góc với mặt đáy; mặt bên là hình chữ nhật và cạnh bên bằng chiều cao. <strong>Lăng trụ đều:</strong> lăng trụ đứng có đáy là đa giác đều; các mặt bên là những hình chữ nhật cùng kích thước.</p></div>
@@ -211,6 +220,9 @@
     | Hình lập phương | Hộp chữ nhật, mọi cạnh bằng | 6 mặt vuông |
 
     **Ví dụ 6 SGK:** Trong hình lập phương cạnh \(a\), tam giác \(A'BD\) đều vì \(A'B=A'D=BD=a\sqrt2\); ba cạnh này lần lượt là các đường chéo của những mặt vuông.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_CUBE_EQUILATERAL_DIAGONALS_AUTHORING_20261123.svg" alt="Tam giác A phẩy BD trong hình lập phương được tạo bởi ba đường chéo mặt A phẩy B, A phẩy D, BD"><figcaption><strong>Hướng dẫn đọc:</strong> Ba đường tô màu \(A'B,A'D,BD\) là đường chéo của các mặt vuông cạnh \(a\), nên mỗi đoạn dài \(a\sqrt2\). Tam giác \(A'BD\) đều vì ba cạnh bằng nhau.</figcaption></figure>
+
 
     ### 2.6. Hình chóp đều và hình chóp cụt đều
 
@@ -296,6 +308,9 @@
 
     **Phân tích:** Cần phân biệt **hai phía đã chọn** của góc nhị diện và **hai mặt không định hướng**. Góc nhị diện có thể tù, góc hai mặt bắt buộc không tù.
 
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_DIHEDRAL_CHAIR_AUTHORING_20261123.svg" alt="Tiết diện ghế cho góc nhị diện 105 độ và góc hai mặt 75 độ"><figcaption><strong>Hướng dẫn đọc:</strong> Tia theo mặt ghế và tia theo lưng ghế tạo \(105^\circ\) ở phía được chọn; góc nhỏ giữa hai đường chứa các tia là \(75^\circ\).</figcaption></figure>
+
+
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Theo đề, góc phẳng nhị diện là \(105^\circ\). Hai đường chứa hai tia tạo thêm góc kề bù \(180^\circ-105^\circ=75^\circ\); đây là góc không tù. Vì thế góc giữa hai mặt phẳng bằng \(75^\circ\).</p></div>
 
     **Kiểm lại:** \(105^\circ\) đúng cho **góc nhị diện**, \(75^\circ\) đúng cho **góc hai mặt**; hai câu hỏi không có cùng đáp số.
@@ -318,6 +333,9 @@
 
     **Phân tích:** Đứng/đều là hai yêu cầu **khác nhau**. Chỉ khi đáy là đa giác đều mới được nói lăng trụ đều.
 
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_SPECIAL_PRISMS_AUTHORING_20261123.svg" alt="Phân biệt lăng trụ đứng, đều và lập phương trong sơ đồ ba khối"><figcaption><strong>Hướng dẫn đọc:</strong> Khung trái cho thấy lăng trụ **đứng** không yêu cầu đáy đều; khung giữa cần thêm đa giác đáy đều, khung phải là hình lập phương.</figcaption></figure>
+
+
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> Cạnh bên vuông góc đáy nên đây là <strong>lăng trụ đứng</strong>. Tam giác đáy có các cạnh \(3,4,5\) không bằng nhau nên <strong>không phải lăng trụ đều</strong>. Mặt bên tương ứng với cạnh đáy \(3\) cm là hình chữ nhật có chiều cao \(6\) cm, diện tích \(3\cdot6=18\text{ cm}^2\).</p></div>
 
     **Kiểm lại:** Lăng trụ đứng có mặt bên chữ nhật; lăng trụ đều cần thêm đa giác đáy đều, không suy bằng quan sát bề ngoài.
@@ -327,6 +345,9 @@
     **Đề bài.** Trong hình lập phương \(ABCD.A'B'C'D'\) cạnh \(a>0\), chứng minh tam giác \(A'BD\) đều.
 
     **Phân tích:** Ba đoạn \(A'B,A'D,BD\) không phải là **cạnh của khối**, mà là **đường chéo của ba mặt vuông**; cần tính ba độ dài bằng Pythagore trước khi kết luận tam giác đều.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_CUBE_EQUILATERAL_DIAGONALS_AUTHORING_20261123.svg" alt="Ba đường chéo mặt A phẩy B A phẩy D BD tạo tam giác đều"><figcaption><strong>Hướng dẫn đọc:</strong> Ba đoạn \(A'B,A'D,BD\) là đường chéo của **ba mặt vuông**, đều dài \(a\sqrt2\), tạo tam giác đều.</figcaption></figure>
+
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> Mỗi mặt hình lập phương là hình vuông cạnh \(a\). Trong các tam giác vuông \(A'AB,A'AD,ABD\), ta được \(A'B=\sqrt{AA'^2+AB^2}=a\sqrt2\), \(A'D=a\sqrt2\), \(BD=\sqrt{AB^2+AD^2}=a\sqrt2\). Ba cạnh tam giác \(A'BD\) bằng nhau nên tam giác <strong>đều</strong>.</p></div>
 
@@ -338,6 +359,9 @@
 
     **Phân tích:** Vì là chóp đều, chân đường cao ở **tâm hình vuông**. Bán kính từ tâm đến đỉnh đáy là **nửa đường chéo**, không phải nửa cạnh đáy.
 
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg" alt="Chóp đều có SO là đường cao và SA là cạnh bên để tính chiều cao tháp Louvre"><figcaption><strong>Hướng dẫn đọc:</strong> Khung trái: \(O\) là tâm đáy vuông, \(SO\perp(ABCD)\); tam giác \(SOA\) vuông tại \(O\), có cạnh huyền \(SA=32{,}3\) m và \(OA=17\sqrt2\) m.</figcaption></figure>
+
+
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.11"><p><strong>Lời giải.</strong> Với cạnh đáy \(34\) m, đường chéo hình vuông \(34\sqrt2\), suy \(OA=17\sqrt2\) m. Tam giác \(SOA\) vuông tại \(O\), nên \(SO=\sqrt{SA^2-OA^2}=\sqrt{32{,}3^2-(17\sqrt2)^2}=\sqrt{465{,}29}\approx21{,}57\) m. Đây là chiều cao <strong>theo mô hình và số liệu gần đúng</strong>.</p></div>
 
     **Kiểm lại:** \(SO<SA=32{,}3\) m vì \(SA\) là cạnh huyền. Không dùng \(OA=17\) m vì đó là nửa **cạnh** chứ không phải nửa **đường chéo** đáy.
@@ -347,6 +371,9 @@
     **Đề bài.** Một chóp cụt tam giác đều có chiều cao \(h=4\) cm, cạnh đáy lớn \(a=6\) cm và đáy nhỏ \(a'=3\) cm. Tính độ dài mỗi cạnh bên.
 
     **Phân tích:** Hai đáy đều là tam giác đều, tâm hai đáy nối bởi đường **vuông góc chung**. Độ lệch ngang của hai đỉnh tương ứng là hiệu bán kính ngoại tiếp, bằng \((a-a')/\sqrt3\), không bằng \(a-a'\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg" alt="Chóp cụt đều có chiều cao HK nối hai tâm và cạnh bên xiên AA phẩy"><figcaption><strong>Hướng dẫn đọc:</strong> Khung phải: \(HK=h\) là đường cao nối tâm hai đáy; với **hai đáy tam giác đều**, độ lệch ngang đỉnh tương ứng bằng \((a-a')/\sqrt3\), không phải \(a-a'\).</figcaption></figure>
+
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.12"><p><strong>Lời giải.</strong> Bán kính ngoại tiếp hai đáy là \(6/\sqrt3\) và \(3/\sqrt3\); độ lệch ngang bằng \(3/\sqrt3=\sqrt3\) cm. Áp Pythagore cho một cạnh bên: \(\ell=\sqrt{h^2+(\sqrt3)^2}=\sqrt{16+3}=\sqrt{19}\approx4{,}36\) cm. Các cạnh bên bằng nhau vì đây là chóp cụt đều.</p></div>
 
