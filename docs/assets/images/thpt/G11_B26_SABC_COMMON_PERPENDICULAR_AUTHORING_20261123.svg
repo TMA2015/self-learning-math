@@ -2,15 +2,16 @@
 <title id="t">Đoạn AH là đường vuông góc chung của SA và BC</title><desc id="d">Hình chóp S.ABC với SA vuông góc mặt đáy ABC. Góc ABC bằng 60 độ, AB bằng a. H là chân đường vuông góc từ A xuống đường BC, thuộc tia BC, nên AH vuông góc BC. Vì AH nằm trong đáy nên AH vuông góc SA, vậy AH là đoạn vuông góc chung của SA và BC. Trong tam giác ABH vuông tại H, AH bằng a căn ba chia hai.</desc>
 <rect width="980" height="450" rx="18" fill="#fff"/>
 <text x="490" y="36" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a3d56">Ví dụ 3 SGK: AH ⟂ SA và AH ⟂ BC</text>
-<polygon points="185,335 451,335 590,217" fill="#e4f1fb" stroke="#5b87a5" stroke-width="3"/>
-<path d="M185 335 L185 89 M185 89 L451 335 M185 89 L590 217" stroke="#71899e" stroke-width="3.5" fill="none"/>
-<path d="M185 335 L451 335" stroke="#517996" stroke-width="3" />
-<path d="M185 335 L520 276" stroke="#c65b37" stroke-width="6"/>
-<path d="M520 276 L590 217" stroke="#428779" stroke-width="3.3"/>
-<circle cx="520" cy="276" r="6" fill="#c65b37"/>
+<polygon points="210,340 480,340 380,166" fill="#e4f1fb" stroke="#5b87a5" stroke-width="3"/>
+<path d="M210 340 L210 95 M210 95 L480 340 M210 95 L380 166" stroke="#71899e" stroke-width="3.5" fill="none"/>
+<path d="M210 340 L480 340" stroke="#517996" stroke-width="3" />
+<path d="M210 340 L413 223" stroke="#c65b37" stroke-width="6"/>
+<path d="M413 223 L380 166" stroke="#428779" stroke-width="3.3"/>
+<circle cx="413" cy="223" r="6" fill="#c65b37"/>
+<path d="M399 231 L407 245 L421 237" stroke="#c65b37" stroke-width="2.6" fill="none"/>
 <g font-family="Arial" font-size="20" fill="#24425e">
-<text x="164" y="80">S</text><text x="163" y="355">A</text><text x="444" y="357">B</text><text x="596" y="217">C</text><text x="526" y="275">H</text>
-<text x="135" y="209">SA ⟂ đáy</text><text x="273" y="357">AB=a</text><text x="454" y="312">60°</text><text x="273" y="290" fill="#bf5433">AH</text>
+<text x="194" y="84">S</text><text x="192" y="365">A</text><text x="483" y="367">B</text><text x="381" y="158">C</text><text x="422" y="218">H</text>
+<text x="150" y="215">SA ⟂ đáy</text><text x="315" y="364">AB=a</text><text x="434" y="322">60°</text><text x="296" y="274" fill="#bf5433">AH</text>
 <rect x="644" y="86" width="306" height="290" rx="12" fill="#f6fafc" stroke="#dde7ef"/>
 <text x="667" y="130" font-weight="700">H∈BC, AH⊥BC</text>
 <text x="667" y="176">AH⊂(ABC), SA⊥đáy</text>
