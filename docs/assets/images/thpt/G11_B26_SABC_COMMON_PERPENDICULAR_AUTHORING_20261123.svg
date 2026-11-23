@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 450" width="980" height="450" role="img" aria-labelledby="t d">
+<title id="t">Đoạn AH là đường vuông góc chung của SA và BC</title><desc id="d">Hình chóp S.ABC với SA vuông góc mặt đáy ABC. Góc ABC bằng 60 độ, AB bằng a. H là chân đường vuông góc từ A xuống đường BC, thuộc tia BC, nên AH vuông góc BC. Vì AH nằm trong đáy nên AH vuông góc SA, vậy AH là đoạn vuông góc chung của SA và BC. Trong tam giác ABH vuông tại H, AH bằng a căn ba chia hai.</desc>
+<rect width="980" height="450" rx="18" fill="#fff"/>
+<text x="490" y="36" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a3d56">Ví dụ 3 SGK: AH ⟂ SA và AH ⟂ BC</text>
+<polygon points="185,335 451,335 590,217" fill="#e4f1fb" stroke="#5b87a5" stroke-width="3"/>
+<path d="M185 335 L185 89 M185 89 L451 335 M185 89 L590 217" stroke="#71899e" stroke-width="3.5" fill="none"/>
+<path d="M185 335 L451 335" stroke="#517996" stroke-width="3" />
+<path d="M185 335 L520 276" stroke="#c65b37" stroke-width="6"/>
+<path d="M520 276 L590 217" stroke="#428779" stroke-width="3.3"/>
+<circle cx="520" cy="276" r="6" fill="#c65b37"/>
+<g font-family="Arial" font-size="20" fill="#24425e">
+<text x="164" y="80">S</text><text x="163" y="355">A</text><text x="444" y="357">B</text><text x="596" y="217">C</text><text x="526" y="275">H</text>
+<text x="135" y="209">SA ⟂ đáy</text><text x="273" y="357">AB=a</text><text x="454" y="312">60°</text><text x="273" y="290" fill="#bf5433">AH</text>
+<rect x="644" y="86" width="306" height="290" rx="12" fill="#f6fafc" stroke="#dde7ef"/>
+<text x="667" y="130" font-weight="700">H∈BC, AH⊥BC</text>
+<text x="667" y="176">AH⊂(ABC), SA⊥đáy</text>
+<text x="667" y="221">⇒ AH⊥SA</text>
+<text x="667" y="270">AH=a·sin60°</text>
+<text x="667" y="319" font-weight="700" fill="#b64f31">d(SA,BC)=a√3/2</text>
+<text x="490" y="420" text-anchor="middle" font-size="16" fill="#65798b">Quan hệ vuông góc xuất phát từ dựng chân H và giả thiết, không đo từ hình.</text>
+</g></svg>
