@@ -78,13 +78,13 @@
 
     Nhờ vậy, nếu một vật chuyển động có tọa độ \(s(t)\) mét theo thời gian \(t\) giây, thì \(s'(t)\) cho **vận tốc tức thời** (m/s) khi đạo hàm tồn tại. Vận tốc có thể **âm** nếu vật đi ngược chiều dương đã chọn; khi hỏi **tốc độ** (độ lớn vận tốc), lấy \(|s'(t)|\). Với điện lượng \(Q(t)\) đo bằng C, \(Q'(t)\) là cường độ dòng điện tức thời đo bằng A. Đơn vị của đạo hàm nói lên **đại lượng đầu ra thay đổi bao nhiêu trên một đơn vị đầu vào**.
 
-    **Vận dụng.** Giả sử \(s(t)=5t^2-2t\) (m), \(t\ge0\) (s), với chiều dương đã chọn. Dùng kết quả đạo hàm của \(cx^2\) và \(x\), tìm \(v(t)\), rồi tính vận tốc và tốc độ tại \(t=0\) và \(t=1\).
+    **Vận dụng.** Giả sử \(s(t)=5t^2-2t\) (m), \(t\ge0\) (s), với chiều dương đã chọn. Dùng kết quả đạo hàm của \(cx^2\) và \(x\), tìm \(v(t)\), rồi tính **vận tốc và tốc độ** tại \(t=0{,}1\) và \(t=1\) giây.
 
     ??? question "Đối chiếu"
 
-        **Lời giải.** Trên khoảng \(t>0\), \(v(t)=s'(t)=10t-2\) (m/s). Công thức cũng cho đạo hàm **bên phải** tại thời điểm bắt đầu \(t=0\): \(v(0^+)=-2\) m/s; tốc độ tại đó là \(2\) m/s. Tại \(t=1\), \(v(1)=8\) m/s và tốc độ bằng \(8\) m/s.
+        **Lời giải.** Trên khoảng \(t>0\), \(v(t)=s'(t)=10t-2\) (m/s). Tại \(t=0{,}1\), \(v(0{,}1)=10\cdot0{,}1-2=-1\) m/s, nên tốc độ là \(1\) m/s. Tại \(t=1\), \(v(1)=8\) m/s và tốc độ bằng \(8\) m/s.
 
-        **Kiểm lại:** Vì mô hình chỉ cho \(t\ge0\), ở \(t=0\) ta xét biến thiên theo **thời gian không âm**, không khẳng định có giới hạn đạo hàm hai phía tại biên của miền thời gian. Dấu âm ở \(t=0\) chỉ chiều chuyển động.
+        **Kiểm lại:** Cả hai thời điểm đều nằm trong khoảng \(t>0\) đang xét. Vận tốc ở thời điểm đầu âm nghĩa vật đi **ngược** chiều dương; tốc độ vẫn không âm.
 
     ### 1.4. Ý nghĩa hình học của đạo hàm
 
