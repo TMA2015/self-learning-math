@@ -56,28 +56,34 @@ with sync_playwright() as pw:
       assert page.locator('[data-ml-mode="grade"]').get_attribute("aria-pressed")=="true"
       page.locator("[data-ml-search]").fill("Bayes")
       assert page.locator("[data-ml-card]").count()==1,(browser_name,width,"search")
-      # The old deep link now upgrades into a FULL browser document,
-      # not an iframe with a separately scrolling viewport.
-      page.goto(base+"/thpt-preview/math-lab/models/slm-top21-bayes-tree-r01/",wait_until="domcontentloaded")
-      page.wait_for_url(base+"/assets/math-lab/models/SLM-TOP21-BAYES-TREE-R01.html",timeout=15000)
-      assert page.locator("iframe").count()==0,(browser_name,width,"legacy URL still embeds frame")
+      # Old model-page bookmarks now render their ORIGINAL page context
+      # around the actual standalone interaction, as one TOP document.
+      legacy=base+"/thpt-preview/math-lab/models/slm-top21-bayes-tree-r01/"
+      page.goto(legacy,wait_until="domcontentloaded")
+      assert page.url==legacy,(browser_name,width,"old model page incorrectly redirected")
+      assert page.locator("[data-ml-restored-full-page]").count()==1
+      assert page.locator("#ml-restored-top a[href='../../']").count()==1
+      assert page.locator("#ml-restored-bottom a[href='../../']").count()==1
+      assert page.locator("iframe").count()==0,(browser_name,width,"frame still present")
       page.goto(base+"/thpt-preview/math-lab/",wait_until="domcontentloaded")
       assert page.locator('[data-ml-mode="grade"]').get_attribute("aria-pressed")=="true",(browser_name,width,"view preserved")
       assert page.locator("[data-ml-search]").input_value()=="Bayes",(browser_name,width,"search preserved")
       page.locator("[data-ml-search]").fill("")
-      # Every library card must be a direct link to the signed, full-page asset.
+      # Every card opens the restored original model PAGE (not a bare asset).
       for row in rows:
         model_id=row[0]
         slug=model_id.lower()
-        expected="../../assets/math-lab/models/"+model_id+".html"
+        expected="models/"+slug+"/"
         card=page.locator('[data-ml-card][href="'+expected+'"]')
-        assert card.count()==1,(browser_name,width,model_id,"full-page card missing")
-      # Navigation from the catalog is one click; browser Back returns to it.
-      page.locator('[data-ml-card][href="../../assets/math-lab/models/SLM-TOP21-BAYES-TREE-R01.html"]').click()
-      page.wait_for_url(base+"/assets/math-lab/models/SLM-TOP21-BAYES-TREE-R01.html",timeout=15000)
+        assert card.count()==1,(browser_name,width,model_id,"restored-page card missing")
+      page.locator('[data-ml-card][href="models/slm-top21-bayes-tree-r01/"]').click()
+      page.wait_for_url(base+"/thpt-preview/math-lab/models/slm-top21-bayes-tree-r01/",timeout=15000)
       assert len(page.frames)==1,(browser_name,width,"catalog link inserted iframe")
-      page.go_back(wait_until="domcontentloaded")
-      assert page.locator("[data-ml-card]").count()==25,(browser_name,width,"Back to catalog broken")
+      assert page.locator("#ml-restored-top .ml-heading").inner_text()=="Bayes và sơ đồ cây"
+      # Actual visible top BACK link, not the browser navigation button.
+      page.locator("#ml-restored-top a").click()
+      page.wait_for_url(base+"/thpt-preview/math-lab/",timeout=15000)
+      assert page.locator("[data-ml-card]").count()==25,(browser_name,width,"Math Lab back link broken")
       if browser_name=="chromium" and width in (390,820,1440):
         page.goto(base+"/thpt-preview/home/",wait_until="domcontentloaded")
         launcher=page.locator("[data-thpt-r4-launcher]")
@@ -90,12 +96,18 @@ with sync_playwright() as pw:
         assert dialog.locator('[data-thpt-math-lab-shortcut="1"]').get_attribute("href").endswith("/thpt-preview/math-lab/"),(browser_name,width,"Math Lab shortcut wrong URL")
       for row in rows:
         model_id=row[0]
-        # Open approved standalone asset in the TOP browser document:
-        # no nested frame/window, no arbitrary iframe height cap.
-        page.goto(base+"/assets/math-lab/models/"+model_id+".html",wait_until="domcontentloaded")
-        page.locator("body").wait_for()
+        # Original Markdown page context + unchanged signed interactive body.
+        # No nested scrolling iframe. Verify BOTH originally authored back links.
+        page.goto(base+"/thpt-preview/math-lab/models/"+model_id.lower()+"/",wait_until="domcontentloaded")
+        page.locator("[data-ml-restored-full-page]").wait_for()
         assert len(page.frames)==1,(browser_name,width,model_id,"nested frame found")
-        assert page.locator("button,input,select").count()>0,(browser_name,width,model_id,"no controls")
+        assert page.locator("iframe").count()==0,(browser_name,width,model_id,"frame still present")
+        assert page.locator("#ml-restored-top a[href='../../']").count()==1,(browser_name,width,model_id,"top Math Lab back missing")
+        assert page.locator("#ml-restored-bottom a[href='../../']").count()==1,(browser_name,width,model_id,"bottom Math Lab back missing")
+        assert "Khám phá bằng cách điều chỉnh mô hình." in page.locator("#ml-restored-bottom").inner_text(),(browser_name,width,model_id,"teaching note missing")
+        assert page.locator("#ml-restored-top .ml-kicker").inner_text().startswith("MATH LAB"),(browser_name,width,model_id,"page label missing")
+        assert page.locator("#ml-restored-top .ml-description").inner_text().strip(),(browser_name,width,model_id,"page description missing")
+        assert page.locator("button,input,select").count()>0,(browser_name,width,model_id,"original model controls missing")
         box=page.evaluate("""() => {
           const d=document.documentElement, max=Math.max(0,d.scrollHeight-innerHeight);
           scrollTo(0,max);
@@ -108,9 +120,9 @@ with sync_playwright() as pw:
           page.screenshot(path=str(SHOTS/f"model-fullpage-{model_id.lower()}-{width}.png"),animations="disabled",full_page=True)
       if errors:
         failures.append((browser_name,width,errors[:6]))
-      print(f"PASS {browser_name} {width}px 25 standalone full-page assets, legacy redirects, one-scroll and Golden 5+1")
+      print(f"PASS {browser_name} {width}px 25 model pages: restored context, both back links, no iframe, controls, one-scroll, Golden 5+1")
       context.close()
     browser.close()
 server.shutdown()
 assert not failures, "Unexpected JS exceptions: "+repr(failures)
-print("PASS Math Lab browser 2 engines x 4 widths x 25 models = 200 full-page checks")
+print("PASS Math Lab browser 2 engines x 4 widths x 25 models = 200 contextual, frameless full-page checks")
