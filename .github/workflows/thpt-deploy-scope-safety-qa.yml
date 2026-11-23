@@ -52,7 +52,7 @@ jobs:
             assert(w4.includes(req),'W4 source/Q18/browser/production guard missing '+req);
           const w5If="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_W5' }}";
           assert(w.includes(w5If),"W5 exact 4-Topic main-push scoped lane missing");
-          const w5=w.split('\\n  deploy-scoped-topic-w5:\\n')[1];
+          const w5=w.split('\n  deploy-scoped-topic-w5:\n')[1];
           assert(w5,'Dedicated W5 publish job missing');
           for(const req of ['SCOPED_TOPIC_W5','scripts/test-thpt-topic-w5-source-intake.py',
              'scripts/test-thpt-topic-w5-source-locked.py',
