@@ -2610,3 +2610,314 @@ ASSET_SOURCE_PR_HEAD|`4b0e5f754e62d5a1178500f0ad53fa592cca9370`
 </g><text x="500" y="453" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#68798b">Cạnh bên xiên không phải là đường cao; đọc giả thiết và dùng vuông góc từ tâm đáy.</text></svg>
 ~~~
 
+
+## SVG PACKET PART 3 — B26
+
+### B26 SVG `FIG-G11-CHVII-B26-01_R00.svg`
+
+ASSET_REF|`docs/assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg`
+
+ASSET_BLOB|`26fb51f3af65ba7d86a2907f0eaff808d2d87532`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc" width="900" height="500">
+<title id="title">FIG-G11-CHVII-B26-01: Khoảng cách: đường vuông góc ngắn nhất</title><desc id="desc">Điểm M bên ngoài mặt phẳng P, H chân vuông góc và K điểm khác trong P; MH vuông góc mặt, MK xiên dài hơn MH.</desc>
+<rect width="900" height="500" fill="#f8fafc" rx="18"/>
+<text x="450" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#0f172a">Khoảng cách: đường vuông góc ngắn nhất</text>
+<polygon points="210,355 590,355 710,225 330,225" fill="#dbeafe" fill-opacity="0.75" stroke="#64748b" stroke-width="3"/><text x="650" y="340" font-family="Arial" font-size="24" fill="#1d4ed8">(P)</text><path d="M330 260 L330 95" stroke="#dc2626" stroke-width="7"/><path d="M330 260 L570 300" stroke="#059669" stroke-width="5"/><path d="M330 95 L570 300" stroke="#1d4ed8" stroke-width="6"/><path d="M330 243 L350 246 L350 265" fill="none" stroke="#dc2626" stroke-width="3"/><text x="304" y="88" font-size="23">M</text><text x="297" y="285" font-size="23">H</text><text x="578" y="308" font-size="23">K</text><text x="355" y="188" font-size="20" fill="#dc2626">MH</text><text x="477" y="174" font-size="20" fill="#1d4ed8">MK</text><text x="100" y="418" font-size="20">MK² = MH² + HK²; d(M,P) = MH</text>
+<text x="450" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#475569">Sơ đồ phương và quan hệ; không suy độ dài/góc từ phối cảnh.</text>
+</svg>
+~~~
+
+### B26 SVG `G10_B20_POINT_LINE_DISTANCE_R02.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G10_B20_POINT_LINE_DISTANCE_R02.svg`
+
+ASSET_BLOB|`ef30404a12bbb1a9241e7efc3c5f8a4fa1a8e9ff`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-labelledby="t d"><title id="t">Khoảng cách từ M(0,0) đến đường 2x+y−6=0</title><desc id="d">Đường 2x+y=6 qua (0,6) và (3,0). Hình chiếu vuông góc của M(0,0) lên đường là H(12/5,6/5). Đoạn MH vuông góc với đường và có độ dài 6 chia căn 5.</desc><rect width="760" height="440" fill="#f8fbff" rx="20"/><text x="22" y="38" font-size="23" font-weight="700" font-family="Arial,sans-serif" fill="#1c3f6b">Khoảng cách là đoạn vuông góc ngắn nhất</text><line x1="105" y1="330" x2="700" y2="330" stroke="#7d8ca1" stroke-width="2"/><line x1="180" y1="399" x2="180" y2="54" stroke="#7d8ca1" stroke-width="2"/><line x1="180" y1="60" x2="315" y2="330" stroke="#245da1" stroke-width="4"/><line x1="180" y1="330" x2="288" y2="276" stroke="#b86b1d" stroke-width="3.5" stroke-dasharray="10 7"/><path d="M276 282 L283 296 L297 289" fill="none" stroke="#b86b1d" stroke-width="3"/>
+<circle cx="180" cy="330" r="6" fill="#274a7e"/><circle cx="288" cy="276" r="6" fill="#b86b1d"/>
+<g font-family="Arial,sans-serif" font-size="18" fill="#1d3658"><text x="147" y="357">M(0;0)</text><text x="303" y="266">H(12/5;6/5)</text><text x="332" y="333">2x+y=6</text><text x="365" y="390">MH=6/√5</text></g>
+<text x="22" y="424" font-family="Arial,sans-serif" font-size="17" fill="#48607c">Để tính khoảng cách, lấy trị tuyệt đối của biểu thức đường thẳng tại M rồi chia độ dài pháp tuyến.</text></svg>
+~~~
+
+### B26 SVG `G11_B26_PYRAMID_HEIGHT_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B26_PYRAMID_HEIGHT_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`57867c20712b82d1d117621124936d5a7b797657`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 460" width="970" height="460" role="img" aria-labelledby="t d">
+<title id="t">Chiều cao hình chóp tam giác đều bằng khoảng cách đỉnh đến đáy</title><desc id="d">Chóp tam giác đều S.ABC đáy tam giác đều cạnh a; O là tâm tam giác ABC, SO vuông góc đáy. OA bằng a chia căn ba và SA bằng b, nên chiều cao SO bằng căn của b bình phương trừ a bình phương chia ba. Điều kiện b lớn hơn a chia căn ba để chóp không suy biến.</desc>
+<rect width="970" height="460" rx="18" fill="#fff"/>
+<text x="485" y="36" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1c3e59">Chóp đều: chiều cao là SO, không phải cạnh bên SA</text>
+<polygon points="165,347 425,347 295,196" fill="#e3effa" stroke="#5a88a7" stroke-width="3"/>
+<path d="M295 85 L165 347 M295 85 L425 347 M295 85 L295 196" stroke="#748798" stroke-width="3.5" fill="none"/>
+<path d="M295 85 L295 296" stroke="#c65d3a" stroke-width="6" stroke-dasharray="10 7"/>
+<path d="M295 296 L165 347" stroke="#34896c" stroke-width="4" stroke-dasharray="8 5"/>
+<circle cx="295" cy="296" r="6" fill="#c65d3a"/>
+<g font-family="Arial" font-size="20" fill="#26435c">
+<text x="280" y="73">S</text><text x="148" y="368">A</text><text x="431" y="370">B</text><text x="295" y="184">C</text><text x="308" y="313">O</text>
+<text x="185" y="220">SA=b</text><text x="315" y="174" fill="#ba5937">SO ⟂ (ABC)</text><text x="204" y="342" fill="#328269">OA=a/√3</text>
+<rect x="565" y="98" width="365" height="258" rx="13" fill="#f3f8fb" stroke="#dee7ee"/>
+<text x="589" y="145" font-weight="700">Đáy tam giác đều cạnh a</text>
+<text x="589" y="187">Tâm O: OA=a/√3</text>
+<text x="589" y="231">SA=b là cạnh bên</text>
+<text x="589" y="277">SO²=b²−a²/3</text>
+<text x="589" y="326" font-weight="700" fill="#bd5737">SO=√(b²−a²/3)</text>
+<text x="485" y="432" text-anchor="middle" font-size="16" fill="#66798a">Chóp không suy biến cần b&gt;a/√3; số đo không lấy theo phối cảnh.</text>
+</g></svg>
+~~~
+
+### B26 SVG `G11_B26_PARALLEL_DISTANCES_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B26_PARALLEL_DISTANCES_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`8d235dac67e15cc18514585fd95b0ddf01506f60`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 430" width="1080" height="430" role="img" aria-labelledby="t d">
+<title id="t">Khoảng cách giữa các đối tượng song song</title><desc id="d">Ba khung: đường a song song mặt phẳng P, hai điểm M N trên a có chân A B trên P tạo chữ nhật ABNM nên cùng độ cao; hai mặt phẳng P Q song song có đoạn vuông góc chung dài h; hai đường m n song song trong mặt phẳng có đoạn vuông góc chung dài k. Cách đo khoảng cách là đoạn vuông góc, không đo đoạn xiên.</desc>
+<rect width="1080" height="430" rx="18" fill="#fff"/><text x="540" y="37" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a405a">Cùng phương song song ⇒ khoảng cách vuông góc không đổi</text>
+<g font-family="Arial" font-size="18" fill="#244056">
+<rect x="15" y="65" width="341" height="303" rx="12" fill="#f5f9fc" stroke="#d9e4ec"/>
+<text x="185" y="92" text-anchor="middle" font-weight="700">1. Đường // mặt</text>
+<polygon points="52,287 279,287 330,341 101,341" fill="#e2eef7" stroke="#6594af" stroke-width="2.5"/>
+<path d="M100 162 L284 162" stroke="#2b73a4" stroke-width="5"/><path d="M132 162 L132 299 M248 162 L248 299" stroke="#bf5b38" stroke-width="3.7" stroke-dasharray="8 6"/>
+<path d="M132 299 L248 299" stroke="#38866e" stroke-width="4"/>
+<text x="121" y="151">M</text><text x="246" y="151">N</text><text x="123" y="322">A</text><text x="252" y="322">B</text><text x="288" y="152">a</text><text x="306" y="302">(P)</text>
+<text x="186" y="360" text-anchor="middle" font-size="15">MA = NB = d(a,(P))</text>
+<rect x="371" y="65" width="341" height="303" rx="12" fill="#f5f9fc" stroke="#d9e4ec"/>
+<text x="542" y="92" text-anchor="middle" font-weight="700">2. Hai mặt song song</text>
+<polygon points="407,171 626,171 671,217 452,217" fill="#dff4ec" stroke="#529078" stroke-width="2.5"/>
+<polygon points="407,276 626,276 671,322 452,322" fill="#e2eef7" stroke="#6594af" stroke-width="2.5"/>
+<path d="M510 191 L510 295" stroke="#bf5b38" stroke-width="5"/>
+<text x="524" y="187">M</text><text x="523" y="313">H</text><text x="633" y="166">(Q)</text><text x="635" y="271">(P)</text>
+<text x="542" y="360" text-anchor="middle" font-size="15">MH = d((P),(Q))</text>
+<rect x="727" y="65" width="338" height="303" rx="12" fill="#f5f9fc" stroke="#d9e4ec"/>
+<text x="896" y="92" text-anchor="middle" font-weight="700">3. Hai đường song song</text>
+<path d="M776 162 L1021 162" stroke="#2b73a4" stroke-width="5"/>
+<path d="M776 278 L1021 278" stroke="#33846e" stroke-width="5"/>
+<path d="M881 162 L881 278" stroke="#bf5b38" stroke-width="5"/>
+<path d="M881 263 H898 V278" stroke="#bf5b38" stroke-width="2" fill="none"/>
+<text x="1023" y="151">m</text><text x="1023" y="269">n</text><text x="864" y="152">M</text><text x="865" y="303">H</text>
+<text x="896" y="360" text-anchor="middle" font-size="15">MH = d(m,n)</text>
+<text x="540" y="408" text-anchor="middle" font-size="16" fill="#64788a">Sơ đồ các đoạn đo; quan hệ song song và vuông góc phải được xác minh từ giả thiết.</text>
+</g></svg>
+~~~
+
+### B26 SVG `G11_B26_RHOMBUS_PRISM_DISTANCES_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B26_RHOMBUS_PRISM_DISTANCES_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`c6a0b4379711c13fa429f22ec47b9b1f41641437`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 480" width="980" height="480" role="img" aria-labelledby="t d">
+<title id="t">Khoảng cách trong hình hộp đứng đáy thoi</title><desc id="d">Hình hộp đứng ABCD.A phẩy B phẩy C phẩy D phẩy, đáy ABCD hình thoi cạnh a góc BAD bằng 120 độ, các cạnh bên dài h và vuông góc đáy. O giao hai đường chéo đáy, đoạn AO vuông góc mặt bên BDD phẩy B phẩy và AO bằng a chia 2. Khoảng cách từ A phẩy C phẩy tới đáy bằng h. Hình chiếu phối cảnh không thể dùng đo góc.</desc>
+<rect width="980" height="480" rx="18" fill="#fff"/>
+<text x="490" y="36" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#183b54">Hình hộp đứng đáy thoi: hai khoảng cách khác nhau</text>
+<polygon points="130,337 378,342 540,225 292,220" fill="#e7f1fc" stroke="#4e7fa5" stroke-width="3"/>
+<polygon points="130,194 378,199 540,82 292,77" fill="#e2f5ed" stroke="#43866f" stroke-width="3"/>
+<path d="M130 337 L130 194 M378 342 L378 199 M540 225 L540 82 M292 220 L292 77" stroke="#708397" stroke-width="3.3" fill="none"/>
+<path d="M378 342 L292 220 L292 77 L378 199 Z" fill="#f8e5d4" fill-opacity=".45" stroke="#b68153" stroke-width="2.4"/>
+<path d="M130 337 L540 225" stroke="#91a5b8" stroke-width="2.5" stroke-dasharray="8 6"/>
+<path d="M378 342 L292 220" stroke="#437f91" stroke-width="2.5" stroke-dasharray="8 6"/>
+<path d="M130 337 L335 281" stroke="#c55436" stroke-width="6" stroke-linecap="round"/>
+<path d="M130 337 L130 194" stroke="#c55436" stroke-width="5"/>
+<circle cx="335" cy="281" r="6" fill="#c55436"/>
+<g font-family="Arial" font-size="19" fill="#24435c">
+<text x="108" y="358">A</text><text x="382" y="365">B</text><text x="545" y="235">C</text><text x="285" y="214">D</text>
+<text x="106" y="190">A′</text><text x="383" y="195">B′</text><text x="546" y="78">C′</text><text x="287" y="68">D′</text><text x="345" y="294">O</text>
+<text x="144" y="265" fill="#bd5336">AA′ = h</text>
+<text x="210" y="295" fill="#bd5336">AO = a/2</text>
+<rect x="592" y="88" width="356" height="296" rx="13" fill="#f5f9fc" stroke="#dce7ef"/>
+<text x="612" y="128" font-weight="700">AB = AD = a</text><text x="612" y="171">∠BAD = 120°</text>
+<text x="612" y="211">AC ⟂ BD tại O</text>
+<text x="612" y="251">AO ⟂ (BDD′B′)</text>
+<text x="612" y="297">d(A′C′, đáy) = h</text>
+<text x="612" y="339">d(AA′, (BDD′B′)) = a/2</text>
+<text x="490" y="446" text-anchor="middle" font-size="16" fill="#68798b">Phải chứng minh AO vuông góc cả BD và BB′, không dựa vào góc vẽ.</text>
+</g></svg>
+~~~
+
+### B26 SVG `G11_B26_SLOPE_CLEARANCE_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B26_SLOPE_CLEARANCE_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`799feadf45ad7a3e57fb42167bac21b9faafea89`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 440" width="980" height="440" role="img" aria-labelledby="t d">
+<title id="t">Khoảng cách vuông góc từ thanh ngang tới đường dốc nghiêng</title><desc id="d">Mặt cắt dọc một đường dốc nghiêng 15 độ so với phương ngang. Cột thẳng đứng từ chân F trên mặt dốc tới đầu T dài 2,28 mét. Đoạn vuông góc từ T tới đường dốc tại H nhỏ hơn chiều dài cột, bằng 2,28 nhân cos 15 độ, xấp xỉ 2,20 mét, nhỏ hơn chiều cao xe 2,21 mét trong mô hình bài toán SGK.</desc>
+<rect width="980" height="440" rx="18" fill="#fff"/>
+<text x="490" y="37" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1b3f59">Khoảng cách tới dốc ≠ chiều dài cột thẳng đứng</text>
+<path d="M120 369 L546 261" stroke="#4d8b78" stroke-width="8" stroke-linecap="round"/>
+<path d="M123 369 L556 369" stroke="#8fa1ae" stroke-width="3" stroke-dasharray="9 7"/>
+<path d="M330 316 L330 116" stroke="#2d75a9" stroke-width="7" stroke-linecap="round"/>
+<path d="M330 116 L379 303" stroke="#c45a37" stroke-width="6" stroke-linecap="round"/>
+<path d="M330 303 L379 303" stroke="#9aafbb" stroke-width="2.5" stroke-dasharray="7 5"/>
+<circle cx="330" cy="116" r="6" fill="#2d75a9"/>
+<circle cx="330" cy="316" r="6" fill="#2d75a9"/>
+<circle cx="379" cy="303" r="6" fill="#c45a37"/>
+<path d="M358 299 L364 287 L375 292" fill="none" stroke="#c45a37" stroke-width="2.6"/>
+<path d="M184 369 A64 64 0 0 0 181 353" stroke="#3a9276" fill="none" stroke-width="2.5"/>
+<g font-family="Arial" font-size="20" fill="#27445e">
+<text x="308" y="105">T</text><text x="308" y="341">F</text><text x="385" y="321">H</text>
+<text x="205" y="217" fill="#2d75a9">TF = 2,28 m</text>
+<text x="390" y="201" fill="#b84f30">TH ⟂ dốc</text><text x="140" y="345" fill="#39836f">15°</text>
+<rect x="585" y="91" width="361" height="267" rx="13" fill="#f4f9fc" stroke="#dbe5eb"/>
+<text x="609" y="137" font-weight="700">Độ cao cột (đứng): 2,28 m</text>
+<text x="609" y="179">Góc dốc: 15°</text>
+<text x="609" y="222" font-weight="700">Khoảng cách: 2,28 cos15°</text>
+<text x="609" y="267" fill="#bb5638">≈ 2,20 m &lt; 2,21 m</text>
+<text x="609" y="312">→ xe cao 2,21 m không lọt</text>
+<text x="490" y="410" text-anchor="middle" font-size="16" fill="#64798a">Minh họa mặt cắt, không đo góc 15° từ tỉ lệ pixel.</text>
+</g></svg>
+~~~
+
+### B26 SVG `G11_B26_SKEW_COMMON_PERPENDICULAR_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B26_SKEW_COMMON_PERPENDICULAR_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`53e2dd16ebaa406149586ccaa2ae64d70546ffa6`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 475" width="1000" height="475" role="img" aria-labelledby="t d">
+<title id="t">Đường vuông góc chung của hai đường thẳng chéo nhau</title><desc id="d">Đường a nằm trên mặt phẳng Q chứa b. Hình chiếu a phẩy của a xuống Q cắt b tại N. Trên a có M nằm phía trên N theo phương vuông góc Q, nên MN vuông góc đồng thời a và b, đoạn MN là khoảng cách hai đường chéo nhau. Sơ đồ nhấn mạnh hai đầu thuộc đúng đường và đủ hai góc vuông.</desc>
+<rect width="1000" height="475" rx="18" fill="#fff"/>
+<text x="500" y="37" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1b405c">Hai đường chéo nhau: tìm đoạn vuông góc chung</text>
+<polygon points="115,247 747,247 849,420 242,420" fill="#e5f0fa" stroke="#6491ad" stroke-width="3"/>
+<path d="M160 128 L620 128" stroke="#2d75ab" stroke-width="6" stroke-linecap="round"/>
+<path d="M160 313 L620 313" stroke="#2d75ab" stroke-width="3.2" stroke-dasharray="10 6"/>
+<path d="M260 359 L580 263" stroke="#358975" stroke-width="6" stroke-linecap="round"/>
+<path d="M413 128 L413 313" stroke="#c45b38" stroke-width="7" stroke-linecap="round"/>
+<path d="M413 296 H433 V313" fill="none" stroke="#c45b38" stroke-width="3"/>
+<circle cx="413" cy="128" r="7" fill="#c45b38"/><circle cx="413" cy="313" r="7" fill="#c45b38"/>
+<g font-family="Arial" font-size="21" fill="#25445d">
+<text x="626" y="122" fill="#2d75ab">a</text><text x="626" y="314" fill="#2d75ab">a′</text><text x="585" y="257" fill="#358975">b</text>
+<text x="429" y="119">M</text><text x="429" y="333">N</text><text x="432" y="225" fill="#be5635">MN ⟂ (Q)</text><text x="754" y="307">(Q)</text>
+<text x="500" y="450" text-anchor="middle" font-size="18">M∈a, N∈b, MN⊥a và MN⊥b ⇒ d(a,b)=MN</text>
+</g></svg>
+~~~
+
+### B26 SVG `G11_B26_SABC_COMMON_PERPENDICULAR_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B26_SABC_COMMON_PERPENDICULAR_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`fbaa2a728fbd178866cd7b3425b9265ba21af06b`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 450" width="980" height="450" role="img" aria-labelledby="t d">
+<title id="t">Đoạn AH là đường vuông góc chung của SA và BC</title><desc id="d">Hình chóp S.ABC với SA vuông góc mặt đáy ABC. Góc ABC bằng 60 độ, AB bằng a. H là chân đường vuông góc từ A xuống đường BC, thuộc tia BC, nên AH vuông góc BC. Vì AH nằm trong đáy nên AH vuông góc SA, vậy AH là đoạn vuông góc chung của SA và BC. Trong tam giác ABH vuông tại H, AH bằng a căn ba chia hai.</desc>
+<rect width="980" height="450" rx="18" fill="#fff"/>
+<text x="490" y="36" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a3d56">Ví dụ 3 SGK: AH ⟂ SA và AH ⟂ BC</text>
+<polygon points="210,340 480,340 380,166" fill="#e4f1fb" stroke="#5b87a5" stroke-width="3"/>
+<path d="M210 340 L210 95 M210 95 L480 340 M210 95 L380 166" stroke="#71899e" stroke-width="3.5" fill="none"/>
+<path d="M210 340 L480 340" stroke="#517996" stroke-width="3" />
+<path d="M210 340 L413 223" stroke="#c65b37" stroke-width="6"/>
+<path d="M413 223 L380 166" stroke="#428779" stroke-width="3.3"/>
+<circle cx="413" cy="223" r="6" fill="#c65b37"/>
+<path d="M399 231 L407 245 L421 237" stroke="#c65b37" stroke-width="2.6" fill="none"/>
+<g font-family="Arial" font-size="20" fill="#24425e">
+<text x="194" y="84">S</text><text x="192" y="365">A</text><text x="483" y="367">B</text><text x="381" y="158">C</text><text x="422" y="218">H</text>
+<text x="150" y="215">SA ⟂ đáy</text><text x="315" y="364">AB=a</text><text x="434" y="322">60°</text><text x="296" y="274" fill="#bf5433">AH</text>
+<rect x="644" y="86" width="306" height="290" rx="12" fill="#f6fafc" stroke="#dde7ef"/>
+<text x="667" y="130" font-weight="700">H∈BC, AH⊥BC</text>
+<text x="667" y="176">AH⊂(ABC), SA⊥đáy</text>
+<text x="667" y="221">⇒ AH⊥SA</text>
+<text x="667" y="270">AH=a·sin60°</text>
+<text x="667" y="319" font-weight="700" fill="#b64f31">d(SA,BC)=a√3/2</text>
+<text x="490" y="420" text-anchor="middle" font-size="16" fill="#65798b">Quan hệ vuông góc xuất phát từ dựng chân H và giả thiết, không đo từ hình.</text>
+</g></svg>
+~~~
+
+### B26 SVG `G11_B26_RIGHT_TRIANGULAR_PRISM_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B26_RIGHT_TRIANGULAR_PRISM_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`ed51c2603dcf3f4bb6d5135fbf76b3f559678fb7`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 485" width="1010" height="485" role="img" aria-labelledby="t d">
+<title id="t">Luyện tập 1 SGK: khoảng cách từ A tới mặt BCC phẩy B phẩy và đường BC phẩy</title>
+<desc id="d">Lăng trụ đứng ABC.A phẩy B phẩy C phẩy có tam giác đáy vuông cân tại A, AB bằng AC bằng a và cạnh đứng dài h. Mặt bên BCC phẩy B phẩy tô xanh, đường chéo BC phẩy tô đỏ. H là chân từ A xuống BC trong mặt đáy; AH vuông góc cả BC và BB phẩy nên d từ A đến mặt bên bằng AH bằng a chia căn hai. Tam giác ABC phẩy vuông tại A, đường cao từ A xuống BC phẩy có độ dài a nhân căn a bình phương cộng h bình phương chia căn hai a bình phương cộng h bình phương.</desc>
+<rect width="1010" height="485" rx="18" fill="#fff"/>
+<text x="505" y="35" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a405a">Hai đối tượng khác nhau ⇒ hai khoảng cách khác nhau</text>
+<polygon points="105,349 383,349 268,207" fill="#e8f3fc" stroke="#5789a9" stroke-width="3"/>
+<polygon points="105,155 383,155 268,13" transform="translate(0,54)" fill="#e3f7ed" stroke="#4d9379" stroke-width="3"/>
+<path d="M105 349 L105 209 M383 349 L383 209 M268 207 L268 67" fill="none" stroke="#697f93" stroke-width="3"/>
+<polygon points="383,349 268,207 268,67 383,209" fill="#d8edf7" fill-opacity=".65" stroke="#397ca4" stroke-width="3"/>
+<path d="M383 349 L268 67" stroke="#c65a36" stroke-width="6"/>
+<path d="M105 349 L321 272" stroke="#32866c" stroke-width="5" stroke-linecap="round"/>
+<circle cx="321" cy="272" r="6" fill="#32866c"/>
+<g font-family="Arial" font-size="19" fill="#25445f">
+<text x="80" y="365">A</text><text x="389" y="363">B</text><text x="272" y="202">C</text>
+<text x="80" y="201">A′</text><text x="388" y="203">B′</text><text x="272" y="62">C′</text><text x="326" y="287">H</text>
+<text x="174" y="347">AB=a</text><text x="126" y="281">AC=a</text><text x="82" y="264">h</text>
+<text x="355" y="148" fill="#bb5331">BC′</text><text x="196" y="294" fill="#2e836a">AH</text>
+<rect x="520" y="81" width="455" height="307" rx="12" fill="#f5f9fc" stroke="#dce6ed"/>
+<text x="543" y="126" font-weight="700">Khoảng cách đến mặt (BCC′B′)</text>
+<text x="543" y="168">AH ⟂ BC, AH ⟂ BB′</text>
+<text x="543" y="210">⇒ d(A, mặt bên) = a/√2</text>
+<text x="543" y="265" font-weight="700">Khoảng cách đến đường BC′</text>
+<text x="543" y="307">ΔABC′ vuông tại A:</text>
+<text x="543" y="348">d(A,BC′) = a√(a²+h²)/√(2a²+h²)</text>
+<text x="505" y="454" text-anchor="middle" font-size="16" fill="#66798a">H là chân trên BC, không tự coi H cũng nằm trên BC′; hình chỉ là phối cảnh.</text>
+</g></svg>
+~~~
+
+### B26 SVG `G11_B26_SQUARE_PYRAMID_SKEW_DISTANCE_AUTHORING_20261123.svg`
+
+ASSET_REF|`docs/assets/images/thpt/G11_B26_SQUARE_PYRAMID_SKEW_DISTANCE_AUTHORING_20261123.svg`
+
+ASSET_BLOB|`e86bfcbfb9d7414afec530db780122947bfb9e5c`
+
+ASSET_SOURCE_PR_HEAD|`771e01b2896d400b14ecdfaff44e8f76f54d4e13`
+
+~~~xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 475" width="1030" height="475" role="img" aria-labelledby="t d">
+<title id="t">Khoảng cách giữa BD và SC trong hình chóp đáy vuông</title><desc id="d">Hình chóp S.ABCD đáy hình vuông cạnh a, SA vuông góc đáy và bằng a căn hai. Đường chéo BD vuông góc cả SA và AC, nên vuông góc mặt phẳng SAC. O là giao hai đường chéo đáy và thuộc BD. H là chân vuông góc từ O xuống SC trong mặt SAC; OH vuông góc SC và BD, do đó khoảng cách giữa BD và SC bằng OH. Tam giác SOC có diện tích a bình phương chia hai, SC bằng 2a nên OH bằng a chia hai.</desc>
+<rect width="1030" height="475" rx="18" fill="#fff"/>
+<text x="515" y="37" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a3e58">Bài tập SGK: BD ⟂ (SAC), đoạn OH là vuông góc chung</text>
+<polygon points="136,355 382,355 532,225 286,225" fill="#e8f3fc" stroke="#5a8aab" stroke-width="3"/>
+<path d="M136 355 L136 77 M136 77 L382 355 M136 77 L532 225 M136 77 L286 225" stroke="#74879b" stroke-width="3.5" fill="none"/>
+<path d="M382 355 L286 225" stroke="#2f82a4" stroke-width="5.5"/>
+<path d="M136 355 L532 225" stroke="#79a9bc" stroke-width="2.6" stroke-dasharray="8 6"/>
+<path d="M136 77 L532 225" stroke="#3d8a72" stroke-width="6"/>
+<path d="M334 290 L377 167" stroke="#c85d37" stroke-width="6"/>
+<circle cx="334" cy="290" r="6" fill="#c85d37"/><circle cx="377" cy="167" r="6" fill="#c85d37"/>
+<g font-family="Arial" font-size="19" fill="#24445e">
+<text x="117" y="65">S</text><text x="116" y="375">A</text><text x="386" y="378">B</text><text x="536" y="222">C</text><text x="275" y="215">D</text><text x="340" y="311">O</text><text x="390" y="164">H</text>
+<text x="388" y="326" fill="#2f82a4">BD</text><text x="397" y="136" fill="#3c866e">SC</text><text x="385" y="268" fill="#bd5637">OH</text>
+<rect x="592" y="81" width="403" height="317" rx="12" fill="#f5f9fc" stroke="#dce5ed"/>
+<text x="615" y="122" font-weight="700">SA=a√2, AC=a√2</text>
+<text x="615" y="168">BD⊥SA và BD⊥AC</text>
+<text x="615" y="214">⇒ BD⊥(SAC)</text>
+<text x="615" y="260">SC=2a, diện tích ΔSOC=a²/2</text>
+<text x="615" y="314">OH=2S(ΔSOC)/SC</text>
+<text x="615" y="363" font-weight="700" fill="#be5637">d(BD,SC)=OH=a/2</text>
+<text x="515" y="444" text-anchor="middle" font-size="16" fill="#66798a">Màu đỏ chỉ đoạn cần chứng minh vuông góc với cả hai đường, không đo bằng phối cảnh.</text>
+</g></svg>
+~~~
+
