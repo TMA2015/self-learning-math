@@ -1,5 +1,28 @@
 /* Math Lab catalog UI only. No assessment, auth, network or learner progress. */
 (()=>{"use strict";
+ // Add one auxiliary Math Lab link when the existing Golden 5+1
+ // dialog opens. Do NOT change the signed shared THPT launcher module,
+ // its five groups, or its one official Topic catalog shortcut.
+ function mountMathLabShortcut(){
+  const dialog=document.querySelector("[data-thpt-r4-shortcut-dialog]");
+  const section=dialog?.querySelector("details.roadmap-main-quick");
+  if(!section||section.querySelector("[data-thpt-math-lab-shortcut]"))return;
+  const match=location.pathname.match(/^(.*?\/)(thpt-preview|thpt)\//);
+  if(!match)return;
+  const nav=document.createElement("nav");
+  nav.className="roadmap-main-quick__links";
+  nav.setAttribute("aria-label","Lối tắt bổ sung tới thư viện Math Lab");
+  const a=document.createElement("a");
+  a.href=match[1]+match[2]+"/math-lab/";
+  a.textContent="Math Lab · 25 mô hình tương tác";
+  a.dataset.thptMathLabShortcut="1";
+  nav.append(a);section.append(nav);
+ }
+ document.addEventListener("click",event=>{
+  if(event.target?.closest?.("[data-thpt-r4-launcher]"))
+   requestAnimationFrame(mountMathLabShortcut);
+ },true);
+
  // Compatibility for all 25 previously published /models/<slug>/ links.
  // The approved standalone asset already contains its full viewport layout.
  // Leave the restricted iframe in the old Markdown as JS-off fallback only.
