@@ -135,3 +135,139 @@
     **Máy tính:** Với \(a>0,\ a\ne1,\ M>0\), tính \(\log_a M\) bằng \(\ln M/\ln a\) hoặc \(\log M/\log a\); ghi \(\approx\) khi làm tròn. Dùng \(\log\) trong công thức pH, \(\ln\) trong công thức giải số mũ có cơ số \(e\). Kí hiệu gần đúng không thay thế một kết quả chính xác khi rút gọn được.
 
     **Ứng dụng có điều kiện:** \(\mathrm{pH}=-\log[\mathrm H^+]\) với \([\mathrm H^+]>0\) tính theo mol/lít trong mô hình SGK. Không đưa nồng độ âm hoặc 0 vào log.
+
+=== "Ví dụ"
+
+    ### 3.1. Tìm số mũ từ định nghĩa lôgarit
+
+    **Đề bài.** Tính \(\log_2\frac18\) và \(\log_{\sqrt3}9\). Nói rõ cách tự kiểm.
+
+    **Phân tích:** Đọc mỗi lôgarit thành câu hỏi “nâng **cơ số** lên số mũ nào để ra **đối số**?”. Không cần máy tính vì đối số có thể đưa về lũy thừa của cơ số.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(\frac18=2^{-3}\), nên \(\log_2\frac18=-3\). Vì \((\sqrt3)^4=3^2=9\), nên \(\log_{\sqrt3}9=4\). Hai cơ số \(2,\sqrt3\) đều dương và khác 1, hai đối số đều dương.</p></div>
+
+    **Kiểm lại:** Nâng \(2\) lên \(-3\) được \(1/8\); nâng \(\sqrt3\) lên \(4\) được \(9\).
+
+    ### 3.2. Cơ số nhỏ hơn 1 và số mũ âm
+
+    **Đề bài.** Tính \(A=\log_{\frac12}32\), \(B=\log_3(3\sqrt3)\). Vì sao \(A\) âm còn \(B\) dương?
+
+    **Phân tích:** \((\frac12)^x\) giảm khi \(x\) tăng và lớn hơn 1 nếu \(x<0\). Ngược lại \(3\sqrt3=3^{3/2}\) nên tìm số mũ dương.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Vì \((\frac12)^{-5}=2^5=32\), nên \(A=-5\). Vì \(3\sqrt3=3^1\cdot3^{1/2}=3^{3/2}\), nên \(B=3/2\).</p></div>
+
+    **Kiểm lại:** Cơ số \(1/2\) hợp lệ dù nhỏ hơn 1; \((1/2)^{-5}=32\). Lôgarit không phải lúc nào cũng dương.
+
+    ### 3.3. Gộp tổng và hiệu các lôgarit
+
+    **Đề bài.** Tính \(A=\log_4 2+\log_4 32\) và \(B=\log_2 80-\log_2 5\).
+
+    **Phân tích:** Tổng lôgarit **cùng cơ số** là log của **tích đối số**; hiệu lôgarit cùng cơ số là log của **thương đối số**. Các số 2, 32, 80, 5 đều dương.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(A=\log_4(2\cdot32)=\log_4 64=3\), vì \(4^3=64\). \(B=\log_2(80/5)=\log_2 16=4\), vì \(2^4=16\).</p></div>
+
+    **Kiểm lại:** Nếu nhầm thành \(\log_4(2+32)\) thì được \(\log_4 34\ne3\). Phải xác định **phép toán ngoài log** trước.
+
+    ### 3.4. Rút gọn nhưng không bỏ miền xác định
+
+    **Đề bài.** Rút gọn \(T=\log_2(x^2-1)-\log_2(x-1)\) trên tập số thực và xác định miền của biểu thức ban đầu.
+
+    **Phân tích:** Cả hai **đối số ban đầu** phải dương. Giải điều kiện rồi mới áp dụng quy tắc hiệu thành log của thương.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Điều kiện \(x^2-1>0\) và \(x-1>0\) tương đương \(x>1\). Trên miền ấy, \(T=\log_2\left(\frac{(x-1)(x+1)}{x-1}\right)=\log_2(x+1)\). Kết quả chỉ tương đương biểu thức gốc khi **\(x>1\)**.</p></div>
+
+    **Kiểm lại:** Nếu chỉ viết \(\log_2(x+1)\), em có thể cho phép \(x=0\), nhưng ở đó \(\log_2(x^2-1)\) gốc không có nghĩa. Phải giữ điều kiện sau khi rút gọn.
+
+    ### 3.5. Đổi cơ số bằng lôgarit quen thuộc
+
+    **Đề bài.** Tính \(\log_4 8\) và \(\log_9\frac1{27}\) không dùng máy tính.
+
+    **Phân tích:** Cơ số 4, 8, 9, 27 đều là lũy thừa của 2 hoặc 3. Chọn **cơ số chung** phù hợp trong công thức đổi cơ số.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(\log_4 8=\frac{\log_2 8}{\log_2 4}=\frac32\). Tương tự \(\log_9\frac1{27}=\frac{\log_3(3^{-3})}{\log_3(3^2)}=\frac{-3}{2}\).</p></div>
+
+    **Kiểm lại:** \(4^{3/2}=8\) và \(9^{-3/2}=1/27\). Trong phép đổi cơ số, mẫu \(\log_2 4=2\), \(\log_3 9=2\), đều khác 0.
+
+    ### 3.6. Lôgarit thập phân trong mô hình pH
+
+    **Đề bài.** Trong mô hình \(\mathrm{pH}=-\log[\mathrm H^+]\) với nồng độ dương tính theo mol/lít, tìm pH khi \([\mathrm H^+]=10^{-4}\). Nếu pH bằng \(7{,}4\), biểu diễn nồng độ bằng lũy thừa của 10.
+
+    **Phân tích:** \(\log\) không ghi cơ số là **cơ số 10**, không phải \(\ln\). Đưa dấu âm của công thức pH qua phép chuyển vế trước khi lấy lũy thừa.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Nếu \([\mathrm H^+]=10^{-4}\), \(\mathrm{pH}=-\log10^{-4}=-(-4)=4\). Nếu \(\mathrm{pH}=7{,}4\), \(\log[\mathrm H^+]=-7{,}4\), nên \([\mathrm H^+]=10^{-7{,}4}\) mol/lít.</p></div>
+
+    **Kiểm lại:** Đối số nồng độ luôn dương. Giá trị \(10^{-7{,}4}\) là dạng chính xác theo mô hình, có thể bấm máy để lấy gần đúng nếu được yêu cầu.
+
+    ### 3.7. Lôgarit tự nhiên và thời gian nhân đôi
+
+    **Đề bài.** Với mô hình lãi kép liên tục \(A=Pe^{0{,}06t}\), \(P>0\), tìm \(t\) để tiền tăng gấp đôi, làm tròn đến một chữ số thập phân.
+
+    **Phân tích:** Chia hai vế cho \(P>0\), sau đó lấy \(\ln\) vì cơ số là \(e\). Đây là bài toán **tìm số mũ \(t\)**, không phải tính \(A\) khi đã cho \(t\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(2P=Pe^{0{,}06t}\Leftrightarrow e^{0{,}06t}=2\). Lấy \(\ln\): \(0{,}06t=\ln2\), nên \(t=\frac{\ln2}{0{,}06}\approx11{,}6\) năm.</p></div>
+
+    **Kiểm lại:** Thế \(t\approx11{,}6\) vào mô hình được số tiền gần \(2P\). Dấu \(\approx\) chỉ làm tròn thời gian; công thức \(t=\ln2/0{,}06\) là chính xác trong mô hình.
+
+    ### 3.8. Số năm nguyên đầu tiên đạt mục tiêu lãi kép
+
+    **Đề bài.** Gửi 100 triệu đồng với lãi ghép cuối mỗi năm, lãi suất cố định \(6\%\) một năm. Hỏi **ít nhất bao nhiêu năm trọn vẹn** để tổng số tiền không dưới 150 triệu đồng?
+
+    **Phân tích:** Sau \(n\) năm trọn vẹn, \(A=100(1{,}06)^n\). Giải bất đẳng thức theo \(n\) bằng lôgarit, rồi chọn **số nguyên nhỏ nhất đủ điều kiện**, không làm tròn số năm về gần nhất.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \(100(1{,}06)^n\ge150\Leftrightarrow(1{,}06)^n\ge1{,}5\). Vì \(1{,}06>1\), \(n\ge\log_{1{,}06}1{,}5=\frac{\ln1{,}5}{\ln1{,}06}\approx6{,}96\). Với \(n\in\mathbb N\), giá trị nhỏ nhất là \(n=7\) năm.</p></div>
+
+    **Kiểm lại:** \(100(1{,}06)^6\approx141{,}85<150\), trong khi \(100(1{,}06)^7\approx150{,}36\ge150\). Đây là kì hạn theo năm, không phải mô hình ghép lãi liên tục.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Không kiểm cơ số và đối số lôgarit
+
+    **Dấu hiệu:** Tính \(\log_1 8\) hoặc \(\log_2(-4)\) như số thực.
+
+    **Vì sao sai:** Lôgarit cơ số \(a\) chỉ định nghĩa với \(a>0,\ a\ne1\) và **đối số \(M>0\)**. Cơ số 1 không cho số mũ duy nhất, lũy thừa cơ số dương không nhận giá trị âm.
+
+    **Cách sửa:** Viết điều kiện đủ **ba phần** trước: cơ số dương, cơ số khác 1, đối số dương; với biến phải giải điều kiện đồng thời.
+
+    ### 4.2. Nhầm lôgarit trả về kết quả lũy thừa
+
+    **Dấu hiệu:** Đọc \(\log_2 8\) thành 8 hoặc 16, thay vì số mũ 3.
+
+    **Vì sao sai:** \(\log_aM\) là **số mũ cần tìm** để \(a^\alpha=M\), không phải phép nhân/chia các số \(a,M\).
+
+    **Cách sửa:** Chuyển về \(a^\alpha=M\) rồi kiểm lại. Nếu \(\alpha=3\) thì \(2^3=8\), nên \(\log_2 8=3\).
+
+    ### 4.3. Biến log của tổng thành tổng các log
+
+    **Dấu hiệu:** Viết \(\log_a(M+N)=\log_aM+\log_aN\).
+
+    **Vì sao sai:** Quy tắc cộng lôgarit đến từ **phép nhân các lũy thừa**, nên vế tương ứng là \(\log_a(MN)\), không phải \(\log_a(M+N)\).
+
+    **Cách sửa:** Kiểm ví dụ \(M=N=2,\ a=2\): \(\log_2(2+2)=2\) nhưng \(\log_22+\log_22=1+1=2\) **trùng hợp ở số này**; dùng \(M=2,N=4\): \(\log_2(2+4)=\log_2 6\ne3\), trong khi \(\log_22+\log_24=3\). Quy tắc đúng là \(\log_a(MN)=\log_aM+\log_aN\).
+
+    ### 4.4. Rút gọn log rồi quên miền xác định ban đầu
+
+    **Dấu hiệu:** Từ \(\log_2(x^2-1)-\log_2(x-1)\) biến thành \(\log_2(x+1)\) và cho mọi \(x>-1\).
+
+    **Vì sao sai:** Biểu thức gốc đòi cả \(x^2-1>0\) và \(x-1>0\), tức **\(x>1\)**. Rút gọn không mở rộng miền xác định của bài toán.
+
+    **Cách sửa:** Ghi các điều kiện của **mọi đối số gốc** trước; sau biến đổi, luôn mang theo miền \(x>1\).
+
+    ### 4.5. Đảo sai công thức đổi cơ số hoặc quên mẫu khác 0
+
+    **Dấu hiệu:** Tính \(\log_4 8=\frac{\log_2 4}{\log_2 8}=\frac23\).
+
+    **Vì sao sai:** Công thức là \(\log_aM=\frac{\log_bM}{\log_ba}\): đối số ở **tử**, cơ số gốc ở **mẫu**. Mẫu \(\log_ba\) chỉ khác 0 nếu \(a\ne1\).
+
+    **Cách sửa:** Tự đọc \(\log_4 8\) là số mũ cho \(4^x=8\), nên \(x=3/2\) và dùng giá trị ấy để kiểm đổi cơ số.
+
+    ### 4.6. Nhầm log thập phân với ln hoặc làm tròn số năm sai
+
+    **Dấu hiệu:** Dùng \(\ln\) thay \(\log\) trong công thức pH; hoặc giải \(\log_{1{,}06}1{,}5\approx6{,}96\) rồi cho chỉ cần 6 năm trọn vẹn.
+
+    **Vì sao sai:** \(\log\) không ghi cơ số là **cơ số 10** trong SGK, còn \(\ln\) là cơ số \(e\). Mục tiêu “không dưới 150 triệu” yêu cầu **số năm nguyên đầu tiên thỏa bất đẳng thức**, nên phải lấy trần, không làm tròn thông thường.
+
+    **Cách sửa:** Kiểm ký hiệu log/ln và đơn vị; thử lại \(n=6\) và \(n=7\) bằng công thức gốc trước khi kết luận.
+
+    **Học tiếp:** [Core và Luyện tập Bài 19](luyen-tap.md) · [Tự luận Chương VI](../../../thu-vien/tu-luan-g11-chuong-vi.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn đối chiếu văn bản: SGK Toán 11 Kết nối tri thức với cuộc sống, tập hai, Bài 19 “Lôgarit”, trang in 10–15. Ba mục SGK chính: Khái niệm lôgarit; Tính chất của lôgarit; Lôgarit thập phân và lôgarit tự nhiên. Văn bản PDF số hóa đã đối chiếu, chưa có ảnh render từng trang PDF để xác nhận offset trang in. SVG hiện hữu minh họa \(2^3=8\) và \(\log_2 8=3\) được dùng lại đúng nguồn ở hai tab có hình, không vẽ mới; bảng log/lg/ln đặt tại mục cần tra cứu. Không sửa Core/Luyện tập, Tự kiểm tra hoặc ngân hàng đánh giá.</p>
