@@ -156,17 +156,15 @@ const normalizeRenderedMath=node=>{
    // only the rendered copy, keeping canonical math and answer text untouched.
    const inlineTex=match[0].replace(/\^\(([^()\n]{1,55})\)/g,"^{$1}");
    math.textContent=match[1]?"\\["+match[1].trim()+"\\]":"\\("+inlineTex+"\\)";
-   // This wrapper is created from exactly ONE approved TeX display block.
-   // Concurrent MathJax startup + tab activation can emit multiple containers;
-   // preserve the first, discard duplicate output DOM only (never source TeX).
-   if(match[1]){
-    const collapse=()=>{
-     const views=[...math.querySelectorAll("mjx-container")];
-     if(views.length>1)views.slice(1).forEach(x=>x.remove());
-    };
-    const observer=new MutationObserver(collapse);
-    observer.observe(math,{childList:true,subtree:true});
-   }
+   // Each transient wrapper represents exactly ONE canonical formula token.
+   // Global MathJax startup can race tab typesetting on inline powers too:
+   // keep one rendered output for BOTH exponent and recovered-display wrappers.
+   const collapse=()=>{
+    const views=[...math.querySelectorAll("mjx-container")];
+    if(views.length>1)views.slice(1).forEach(x=>x.remove());
+   };
+   const observer=new MutationObserver(collapse);
+   observer.observe(math,{childList:true,subtree:true});
    parts.append(math);lastIndex=fragments.lastIndex;
   }
   if(hit){if(lastIndex<v.length)parts.append(document.createTextNode(v.slice(lastIndex)));t.replaceWith(parts)}
