@@ -169,3 +169,121 @@
     | Điểm – đường/mặt | Đoạn từ điểm đến chân chiếu | Vuông góc đường/mặt |
     | Hai đối tượng song song | Đoạn vuông góc giữa hai đối tượng | Xác minh **song song** |
     | Hai đường chéo nhau | Đoạn vuông góc chung | Hai đầu thuộc đúng đường, vuông góc cả hai |
+
+=== "Ví dụ"
+
+    ### 3.1. Chứng minh đoạn vuông góc là đoạn ngắn nhất
+
+    **Đề bài.** Cho \(M\notin(P)\), \(MH\perp(P)\), \(MH=3\) cm. Một điểm \(K\in(P)\) thỏa \(HK=4\) cm. Tính \(MK\); chứng minh mọi đoạn nối \(M\) với \((P)\) đều dài ít nhất \(3\) cm.
+
+    **Phân tích:** Muốn so sánh mọi đoạn, dùng hình chiếu \(H\) và Pythagore trong tam giác \(MHK\); điều kiện \(MH\perp(P)\) mạnh hơn chỉ vuông góc một đường vẽ trong mặt.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Vì \(MH\perp(P)\) và \(HK\subset(P)\), \(MH\perp HK\), nên \(MK=\sqrt{3^2+4^2}=5\) cm. Với điểm \(X\in(P)\) bất kì, \(MX^2=MH^2+HX^2\ge MH^2=9\). Do các độ dài không âm, \(MX\ge3\) cm; đẳng thức khi \(X=H\). Vậy \(d(M,(P))=MH=3\) cm.</p></div>
+
+    **Kiểm lại:** \(5\ge3\) đúng; 3 cm là **cực tiểu**, không phải chiều dài của mọi đoạn xiên.
+
+    ### 3.2. Từ điểm đến đường thẳng — xác định được cả chân
+
+    **Đề bài.** Trong mặt phẳng tọa độ, với \(M(0;0)\) và đường \(a:2x+y-6=0\), chứng minh \(H(12/5;6/5)\) là hình chiếu của \(M\) lên \(a\), rồi tính \(d(M,a)\).
+
+    **Phân tích:** Muốn được dùng \(MH\) làm khoảng cách, phải kiểm **\(H\in a\)** và **\(MH\perp a\)**, chứ không chỉ thay số vào một công thức thuộc lòng.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G10_B20_POINT_LINE_DISTANCE_R02.svg" alt="Điểm M không không và chân H mười hai phần năm sáu phần năm trên đường 2x cộng y bằng 6"><figcaption><strong>Đọc hình trước lời giải:</strong> \(M\) là gốc tọa độ, \(H(12/5;6/5)\) ở trên đường xanh \(2x+y=6\). Đoạn \(MH\) cùng phương pháp tuyến \((2;1)\), nên vuông góc đường; khoảng cách chính là độ dài \(MH\).</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Thế tọa độ \(H\) vào \(a\): \(2(12/5)+6/5-6=0\), nên \(H\in a\). Vectơ \(\overrightarrow{MH}=(12/5;6/5)=(6/5)(2;1)\) cùng phương vectơ pháp tuyến của \(a\), suy \(MH\perp a\). Do đó \(d(M,a)=MH=\sqrt{(12/5)^2+(6/5)^2}=\sqrt{180}/5=6/\sqrt5\).</p></div>
+
+    **Kiểm lại:** \(d(M,a)>0\) vì \(M\notin a\). Kết quả cũng bằng \(|2\cdot0+0-6|/\sqrt{2^2+1^2}=6/\sqrt5\), nhưng kiểm chân mới làm rõ bản chất.
+
+    ### 3.3. Ví dụ 1 SGK — Chiều cao hình chóp đều tam giác
+
+    **Đề bài.** Chóp tam giác đều \(S.ABC\) có cạnh đáy \(a>0\), cạnh bên \(b\), với \(b>a/\sqrt3\). Tính chiều cao. Áp dụng khi \(a=6\) cm, \(b=5\) cm.
+
+    **Phân tích:** Chóp đều có chân cao \(O\) ở **tâm tam giác đều**. Đáy cạnh \(a\) cho \(AO=a/\sqrt3\), nên tam giác \(SAO\) vuông tại \(O\) là đủ; không nhầm \(SA=b\) với chiều cao.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_PYRAMID_HEIGHT_AUTHORING_20261123.svg" alt="Chóp đều SABC, SO là chiều cao tới tâm O của tam giác đều, SA là cạnh bên b"><figcaption><strong>Đọc trước lời giải:</strong> \(O\) là tâm đáy đều và là chân \(SO\perp(ABC)\); \(SO\) đỏ là đoạn ngắn nhất từ \(S\) đến đáy, còn \(SA=b\) là cạnh huyền tam giác vuông \(SOA\). Từ \(AO=a/\sqrt3\) mới dùng Pythagore.</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Vì \(O\) là tâm tam giác đều \(ABC\), \(AO=a/\sqrt3\). Trong tam giác vuông \(SOA\), \(SO^2=SA^2-OA^2=b^2-a^2/3\), nên \(SO=\sqrt{b^2-a^2/3}\). Với \(a=6,b=5\): \(SO=\sqrt{25-12}=\sqrt{13}\) cm.</p></div>
+
+    **Kiểm lại:** Điều kiện \(b>a/\sqrt3\) bảo đảm căn có giá trị dương và chóp không suy biến. Với số đã cho, \(\sqrt{13}<5=b\), phù hợp chiều cao ngắn hơn cạnh bên.
+
+    ### 3.4. Luyện tập 1 SGK — Hai khoảng cách khác nhau trong lăng trụ đứng
+
+    **Đề bài.** Lăng trụ đứng \(ABC.A'B'C'\) có tam giác \(ABC\) vuông cân tại \(A\), \(AB=AC=a>0\), cạnh bên \(AA'=h>0\). a) Tính \(d(A,(BCC'B'))\). b) Chứng minh \(ABC'\) vuông ở \(A\) và tính \(d(A,BC')\).
+
+    **Phân tích:** **Khoảng cách điểm–mặt** cần hạ \(AH\) vuông góc mặt bên. **Khoảng cách điểm–đường \(BC'\)** cần đường cao của **tam giác \(ABC'\)**. Hai chân chiếu này không nhất thiết trùng; nhầm chúng sẽ cho hai kết quả sai giống nhau.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_RIGHT_TRIANGULAR_PRISM_AUTHORING_20261123.svg" alt="Lăng trụ đứng tam giác vuông cân ABC có mặt bên BCC phẩy B phẩy và đường chéo BC phẩy nổi bật"><figcaption><strong>Đọc hình trước khi tính:</strong> mặt xanh \((BCC'B')\) chứa đường \(BC\) và cạnh đứng \(BB'\); chân \(H\) từ \(A\) xuống \(BC\) làm \(AH\perp\) mặt bên. Đường đỏ \(BC'\) là **một đường nằm trong mặt**, nhưng \(H\) không nằm trên \(BC'\); muốn đo tới \(BC'\) phải dựng chân khác trong tam giác \(ABC'\).</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> a) Gọi \(H\) là chân từ \(A\) xuống \(BC\). Vì \(ABC\) vuông cân tại \(A\), \(BC=a\sqrt2\) và đường cao \(AH=AB\cdot AC/BC=a/\sqrt2\). Lại \(AH\subset(ABC)\) và \(BB'\perp(ABC)\), nên \(AH\perp BB'\). Vì \(AH\perp BC\) và \(BC,BB'\) cắt nhau trong \((BCC'B')\), \(AH\perp(BCC'B')\), do đó \(d(A,(BCC'B'))=a/\sqrt2\). b) Do \(AB\perp AC\) và \(AB\perp AA'\), suy \(AB\perp(ACC'A')\), nên \(AB\perp AC'\): tam giác \(ABC'\) vuông tại \(A\). \(AC'=\sqrt{a^2+h^2}\), \(BC'=\sqrt{2a^2+h^2}\), vì vậy độ dài đường cao từ \(A\) xuống \(BC'\) là \(AB\cdot AC'/BC'=a\sqrt{a^2+h^2}/\sqrt{2a^2+h^2}\).</p></div>
+
+    **Kiểm lại:** Khoảng cách đến **đường \(BC'\)** không nhỏ hơn khoảng cách đến **mặt chứa đường ấy**: \(a\sqrt{a^2+h^2}/\sqrt{2a^2+h^2}\ge a/\sqrt2\) vì \(2(a^2+h^2)\ge2a^2+h^2\). Với \(h>0\), bất đẳng thức nghiêm.
+
+    ### 3.5. Ví dụ 2 SGK — Hình hộp đứng đáy thoi
+
+    **Đề bài.** Hình hộp đứng \(ABCD.A'B'C'D'\) có đáy hình thoi cạnh \(a>0\), \(\angle BAD=120^\circ\), \(AA'=h>0\). Tính \(d(A'C',(ABCD))\) và \(d(AA',(BDD'B'))\).
+
+    **Phân tích:** Câu thứ nhất dùng **hai đáy song song** và đoạn đứng. Câu thứ hai cần **một đoạn trong đáy vuông góc mặt bên**, nên chọn \(O\) là giao hai đường chéo hình thoi.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_RHOMBUS_PRISM_DISTANCES_AUTHORING_20261123.svg" alt="Hình hộp đứng đáy thoi, AA phẩy đo h tới mặt đáy, AO đo a chia hai tới mặt bên BDD phẩy B phẩy"><figcaption><strong>Đọc hình trước lời giải:</strong> đường \(A'C'\) ở mặt trên song song mặt đáy nên khoảng cách bằng cạnh đứng \(h\). Đường \(AA'\) song song mặt bên \((BDD'B')\); đoạn \(AO\) màu đỏ vuông góc với \(BD\) và cạnh đứng \(BB'\), là pháp tuyến mặt ấy.</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Vì \(A'C'\subset(A'B'C'D')\parallel(ABCD)\) và \(AA'\perp(ABCD)\), \(d(A'C',(ABCD))=AA'=h\). Gọi \(O\) là giao hai đường chéo đáy. Hình thoi cho \(AO\perp BD\); hình hộp đứng cho \(AO\perp BB'\). Do \(BD,BB'\) cắt nhau trong \((BDD'B')\), \(AO\perp(BDD'B')\), suy \(d(AA',(BDD'B'))=AO\). Tam giác \(BAD\) cân tại \(A\), có \(\angle BAD=120^\circ\) nên \(\angle ABO=30^\circ\); tam giác \(ABO\) vuông tại \(O\) cho \(AO=AB\sin30^\circ=a/2\).</p></div>
+
+    **Kiểm lại:** Hai khoảng cách \(h\) và \(a/2\) đo theo hai **phương khác nhau**; không mặc định chúng bằng nhau. Đã kiểm \(AO\perp\) cả hai đường cắt nhau của mặt bên.
+
+    ### 3.6. Đường nằm trong một trong hai mặt phẳng song song
+
+    **Đề bài.** Hai mặt phẳng \((P),(Q)\) song song và cách nhau \(6\) cm. Đường \(a\subset(P)\) song song với \((Q)\). Tính \(d(a,(Q))\) và giải thích vì sao kết quả không phụ thuộc điểm chọn trên \(a\).
+
+    **Phân tích:** Không cần xác định chân đặc biệt trên \(a\). Đường \(a\) nằm trong mặt \((P)\) song song với \((Q)\), nên mọi điểm của \((P)\) có cùng khoảng cách tới \((Q)\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Lấy \(M\in a\subset(P)\). Vì \((P)\parallel(Q)\), \(d(M,(Q))=d((P),(Q))=6\) cm; do \(a\parallel(Q)\), \(d(a,(Q))=d(M,(Q))=6\) cm. Với mọi \(N\in a\), \(d(N,(Q))\) cũng bằng khoảng cách hai mặt song song nên không đổi.</p></div>
+
+    **Kiểm lại:** Cần \((P)\parallel(Q)\) **và** \(a\subset(P)\); không áp kết luận cho hai mặt cắt nhau.
+
+    ### 3.7. Vận dụng SGK — Khung hạn chế chiều cao trên dốc
+
+    **Đề bài.** Một khung có hai cột đứng dài \(2{,}28\) m và thanh ngang nối đỉnh cột. Mặt đường nghiêng \(15^\circ\) so với phương ngang, phương thanh ngang song song mặt dốc. Tính khoảng cách từ thanh ngang đến mặt đường, làm tròn \(0{,}01\) m. Xe cao \(2{,}21\) m có đi qua được theo mô hình này không?
+
+    **Phân tích:** Khoảng cách tới mặt nghiêng phải đo theo **pháp tuyến của mặt dốc**, không theo chiều thẳng đứng của cột. Trong mặt cắt dọc dốc, phương đứng và pháp tuyến tạo góc \(15^\circ\), nên hình chiếu của đoạn đứng lên pháp tuyến là **cạnh kề** \(2{,}28\cos15^\circ\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_SLOPE_CLEARANCE_AUTHORING_20261123.svg" alt="Cột đứng 2,28 mét trên mặt dốc 15 độ và khoảng cách vuông góc đường dốc khoảng 2,20 mét"><figcaption><strong>Đọc mặt cắt:</strong> \(TF\) xanh là cột **đứng** \(2{,}28\) m, \(TH\) đỏ là đoạn **vuông góc đường dốc**. Góc dốc \(15^\circ\) bằng góc giữa cột đứng và pháp tuyến dốc; dùng \(TH=TF\cos15^\circ\), không thay bằng \(TF\).</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Trong tiết diện vuông góc thanh ngang, gọi \(d\) là khoảng cách từ thanh tới mặt dốc. Theo hình chiếu lên pháp tuyến \(d=2{,}28\cos15^\circ\approx2{,}2023\) m, làm tròn \(d\approx2{,}20\) m. Vì \(2{,}21>2{,}2023\), trong mô hình hình học xe cao \(2{,}21\) m <strong>không</strong> lọt khoảng không tại khung.</p></div>
+
+    **Kiểm lại:** \(d<2{,}28\) m đúng vì khoảng cách pháp tuyến ngắn hơn đoạn đứng. Bài không xét khoảng dự phòng, hệ thống treo xe, sai số đo hoặc các yếu tố giao thông thực tế.
+
+    ### 3.8. Ví dụ 3 SGK — Dựng đoạn vuông góc chung SA và BC
+
+    **Đề bài.** Hình chóp \(S.ABC\) có \(SA\perp(ABC)\), \(AB=a>0\), \(\angle ABC=60^\circ\). Dựng đoạn vuông góc chung của \(SA\) và \(BC\), rồi tính khoảng cách.
+
+    **Phân tích:** Vì \(SA\perp(ABC)\) tại \(A\), mọi đường trong đáy qua \(A\) đều vuông góc \(SA\). Chỉ cần dựng thêm đường qua \(A\) vuông góc \(BC\) để được **đoạn vuông góc chung**.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_SABC_COMMON_PERPENDICULAR_AUTHORING_20261123.svg" alt="Hình chóp SA vuông góc đáy, H chân từ A xuống BC, đoạn AH vuông góc chung SA BC"><figcaption><strong>Đọc hình trước lời giải:</strong> kiểm đủ \(A\in SA\), \(H\in BC\), \(AH\perp BC\) từ cách dựng và \(AH\perp SA\) vì \(SA\perp(ABC)\). Chỉ khi đủ bốn điều kiện mới gọi \(AH\) là đoạn vuông góc chung.</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Gọi \(H\) là hình chiếu của \(A\) trên đường \(BC\). Khi đó \(H\in BC\), \(AH\perp BC\). Mặt khác \(AH\subset(ABC)\) nên \(AH\perp SA\). Vì \(A\in SA\), đoạn \(AH\) cắt đúng hai đường và vuông góc cả hai, nên \(d(SA,BC)=AH\). Trong tam giác \(ABH\) vuông tại \(H\), \(\angle ABH=\angle ABC=60^\circ\), do đó \(AH=AB\sin60^\circ=a\sqrt3/2\).</p></div>
+
+    **Kiểm lại:** \(AH<a=AB\), hợp lí. Kết quả dùng góc ở \(B\) và độ dài \(AB\), không cần biết \(SA\); nếu chọn đoạn \(SB\), không đủ hai vuông góc.
+
+    ### 3.9. Luyện tập 3 SGK — Khoảng cách BD đến SC trong chóp đáy vuông
+
+    **Đề bài.** Hình chóp \(S.ABCD\) có đáy hình vuông cạnh \(a>0\), \(SA\perp(ABCD)\), \(SA=a\sqrt2\). a) Tính \(d(A,SC)\). b) Chứng minh \(BD\perp(SAC)\). c) Tính \(d(BD,SC)\) và dựng đoạn vuông góc chung.
+
+    **Phân tích:** a) Trong tam giác \(SAC\), \(SA\perp AC\), nên \(d(A,SC)\) là đường cao từ góc vuông xuống cạnh huyền. b) Dùng **hai đường cắt nhau \(SA,AC\)** để chứng minh vuông góc mặt. c) Giao \(O=BD\cap AC\) nằm trong mặt \((SAC)\), dựng chân \(H\) từ \(O\) xuống \(SC\); khi đó \(OH\perp BD\) nhờ \(BD\perp(SAC)\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_SQUARE_PYRAMID_SKEW_DISTANCE_AUTHORING_20261123.svg" alt="Chóp đáy vuông, đường BD vuông góc mặt SAC tại O, OH tới SC là đoạn vuông góc chung dài a trên hai"><figcaption><strong>Đọc hình trước lời giải:</strong> \(O\) là giao \(BD,AC\); đường \(BD\) xanh vuông góc cả \(SA,AC\), nên vuông góc mặt \((SAC)\). Đoạn đỏ \(OH\) nằm trong \((SAC)\), đi từ \(O\in BD\) tới \(H\in SC\) và được dựng vuông góc \(SC\). Vì \(BD\perp(SAC)\), \(OH\perp BD\) nữa.</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> a) Vì \(SA\perp(ABCD)\), \(SA\perp AC\). Đáy hình vuông cho \(AC=a\sqrt2\), nên tam giác \(SAC\) vuông cân tại \(A\), \(SC=\sqrt{SA^2+AC^2}=2a\). Đường cao từ \(A\) xuống \(SC\) có độ dài \(SA\cdot AC/SC=a\), vậy \(d(A,SC)=a\). b) Hình vuông có \(BD\perp AC\); đồng thời \(BD\perp SA\) vì \(SA\perp(ABCD)\). Hai đường \(SA,AC\) cắt tại \(A\) trong \((SAC)\), suy \(BD\perp(SAC)\). c) Gọi \(O=AC\cap BD\), \(H\) là chân từ \(O\) xuống \(SC\). Khi đó \(OH\perp SC\), và \(OH\subset(SAC)\) nên \(OH\perp BD\). Vậy \(OH\) là đoạn vuông góc chung. Diện tích tam giác \(SOC\) theo đáy \(OC=AC/2=a/\sqrt2\) và đường cao \(SA=a\sqrt2\) bằng \(a^2/2\). Mặt khác \(S_{SOC}=SC\cdot OH/2\), nên \(OH=a^2/(2a)=a/2\). Do đó \(d(BD,SC)=a/2\).</p></div>
+
+    **Kiểm lại:** \(d(BD,SC)=a/2\le d(A,SC)=a\) là hợp lí vì \(A\) là một điểm khác \(O\) trên mặt \((SAC)\), không phải điểm thuộc \(BD\). Đã kiểm \(OH\) có **cả hai đầu thuộc đúng đường**, và vuông góc cả hai đường.
+
+    ### 3.10. Dựng khoảng cách hai đường chéo nhau qua mặt phẳng phụ
+
+    **Đề bài.** Hai đường \(a,b\) chéo nhau. Dựng mặt \((Q)\) chứa \(b\), song song \(a\); gọi \(a'\) là hình chiếu vuông góc của \(a\) trên \((Q)\). Giả sử \(N=a'\cap b\), \(M\) là điểm thuộc \(a\) chiếu xuống \(N\). Chứng minh đoạn \(MN\) là đoạn vuông góc chung và \(d(a,b)=d(a,(Q))\).
+
+    **Phân tích:** Mục tiêu là chuyển khoảng cách **hai đường** về đoạn vuông góc **đường–mặt**. Mặt phẳng phụ phải chứa đúng \(b\), song song đúng \(a\); điểm \(N\) phải nằm trên cả \(a'\) và \(b\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_SKEW_COMMON_PERPENDICULAR_AUTHORING_20261123.svg" alt="M nằm trên đường a và N trên b ở mặt Q, MN vuông góc chung nhờ hình chiếu a phẩy"><figcaption><strong>Đọc trước lời giải:</strong> đường \(a'\) nét đứt là hình chiếu của \(a\) trên \((Q)\), giao \(b\) tại \(N\). Đường đỏ qua \(N\) **vuông góc mặt \((Q)\)** gặp \(a\) tại \(M\). Đây là cách dựng thỏa đồng thời hai điều kiện vuông góc, không phải đoạn nối ngẫu nhiên.</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> Theo cách dựng, \(N\in b\subset(Q)\), \(M\in a\), và \(MN\perp(Q)\). Do \(b\subset(Q)\), \(MN\perp b\). Vì \(a\parallel(Q)\), phương của \(a\) song song một phương thuộc \((Q)\), nên \(MN\perp a\). Vì vậy đường \(MN\) cắt cả \(a,b\) tại \(M,N\) và vuông góc cả hai: đó là đường vuông góc chung. Độ dài \(MN\) chính là khoảng cách \(a\) tới \((Q)\) và là \(d(a,b)\).</p></div>
+
+    **Kiểm lại:** Nếu mặt \((Q)\) không chứa \(b\) hoặc không song song \(a\), phép chuyển chưa hợp lệ. Nếu hai đường không chéo nhau thì phải xét trường hợp song song/cắt nhau riêng.
