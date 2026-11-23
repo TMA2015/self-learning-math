@@ -182,7 +182,7 @@ const normalizeRenderedMath=node=>{
  }
  // Python-Markdown stripped two verified blockquote display forms: CĐ06 Chasles
  // and CĐ08 finite-limit theorem. Recover only these original TeX expressions.
- const fragments=/\[\s*([^\[\]\n]{2,620}?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
+ const fragments=/\[\s*([^\[\]]{2,1200}?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
  for(const t of texts){
   const v=t.nodeValue,parts=document.createDocumentFragment();let lastIndex=0,hit=false,match;
   fragments.lastIndex=0;
