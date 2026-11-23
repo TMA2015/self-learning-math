@@ -33,6 +33,8 @@ hide:
 
 # Kiến thức
 
+<!-- TOP20_R11_LEARNER_EDITORIAL; SOURCE_BASE_R10_BLOB: 63f2891f38be02530bdfe359aae1963603415c89; Q18_TECHNICAL_SOURCE_PARITY; NO_LEGACY_34_IMPORT; NO_PUBLIC_RD1; NO_RELEASE -->
+
 Một lượt quay số tại hội chợ có những kết quả nào? Nếu kết quả nằm trong hai nhóm thưởng, có bị tính trùng không? Hai lượt chơi có thực sự độc lập? Em sẽ học cách mô tả đúng không gian mẫu và biến cố trước, rồi mới chọn phép đếm, quy tắc cộng hoặc nhân. Kiến thức về tập hợp, phân số và đếm theo bước được nhắc lại tại chỗ; không phải hoàn thành một chuyên đề khác mới học được.
 
 **Cách học:** Em hãy tự làm từng câu Vận dụng trước, sau đó chủ động mở phần Đối chiếu để hiểu cách giải và nhận ra lỗi sai. Những bài đã xem lời giải giúp em ôn luyện; phần Tự kiểm tra công khai ở cuối chuyên đề cũng dùng lại câu đã học, nên không phải bài đánh giá độc lập.
