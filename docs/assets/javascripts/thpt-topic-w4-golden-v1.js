@@ -238,6 +238,17 @@ const solutionContent=details=>{
    out.append(p);
   }
  }
+ // The signed CĐ18 Bài 202 answer holds an original source-only Markdown
+ // radar figure inside <details markdown="1">. MkDocs may leave that inner
+ // image as literal text. Rehydrate ONLY this known same-origin reviewed SVG
+ // inside the voluntary answer disclosure, never in the question stem.
+ for(const p of out.querySelectorAll("p")){
+  const raw=p.textContent.trim();
+  const image=/^!\\[([^\\]\\n]+)\\]\\((?:\\.\\.\\/){3,4}assets\\/images\\/thpt\\/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00\\.svg\\)$/.exec(raw);
+  if(!image)continue;
+  const img=create("img");img.alt=image[1];img.src="../../../../assets/images/thpt/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg";img.loading="lazy";img.decoding="async";
+  p.replaceChildren(img);
+ }
  return out;
 };
 function normalizeInlineStems(scope,rx){
