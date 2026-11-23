@@ -108,6 +108,10 @@ with sync_playwright() as pw:
         assert page.locator("#ml-restored-top .ml-kicker").inner_text().startswith("MATH LAB"),(browser_name,width,model_id,"page label missing")
         assert page.locator("#ml-restored-top .ml-description").inner_text().strip(),(browser_name,width,model_id,"page description missing")
         assert page.locator("button,input,select").count()>0,(browser_name,width,model_id,"original model controls missing")
+        if model_id=="SLM-TOP04-EXPLOG-01":
+          intro=page.locator("#intro").inner_text()
+          assert "y=aˣ" in intro and "y=a^x" not in intro,(browser_name,width,"CĐ04 exponent visually not raised",intro)
+          assert "y=aˣ" in page.locator(".legend").inner_text(),(browser_name,width,"CĐ04 model legend changed")
         box=page.evaluate("""() => {
           const d=document.documentElement, max=Math.max(0,d.scrollHeight-innerHeight);
           scrollTo(0,max);
