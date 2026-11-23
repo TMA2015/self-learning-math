@@ -73,3 +73,8 @@ jobs:
           assert len(original)==10,(len(original),original)
           print('PASS W5 12 routes source/Q18, 10 signed SVGs and 4 optional models')
           PY
+      - name: Chromium and WebKit scoped W5 Golden browser (390/820/1440)
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+          python3 scripts/test-thpt-topic-w5-golden-browser.py
