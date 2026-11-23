@@ -324,6 +324,8 @@ function practiceBank(){
  const items=[];let group="",pending="",current=null;
  for(const n of nodes){
   if(n.nodeType===1&&n.tagName==="H2"){group=n.textContent.trim();current=null;pending="";continue}
+  // A new subsection heading is not part of the previous question's modal.
+  if(n.nodeType===1&&(n.tagName==="H3"||n.tagName==="H4")){current=null;continue}
   if(n.nodeType===8){
    const match=n.textContent.match(idPattern);
    if(match){if(current&&!current.id)current.id=match[1];else pending=match[1];}
