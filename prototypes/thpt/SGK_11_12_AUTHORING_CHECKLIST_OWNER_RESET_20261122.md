@@ -3,6 +3,30 @@
 **Quyết định của chủ dự án: 22/11/2026.**  
 **Phạm vi:** Bài 2–33 Toán 11 và Bài 1–19 Toán 12. **Trạng thái:** Đang biên soạn lại tuần tự từ Toán 11 Bài 2 theo chỉ đạo chủ dự án ngày 23/11/2026: **tác giả tự viết và tự kiểm, không dừng chờ chủ dự án xem từng bài**. Các bản thảo của đợt nâng cấp vừa hủy không được sử dụng làm nguồn hay mẫu viết bài mới.
 
+## KHÓA PHẠM VI NHIỆM VỤ — QUYẾT ĐỊNH CHỦ DỰ ÁN 23/11/2026 (ƯU TIÊN CAO NHẤT)
+
+> **MỤC TIÊU DUY NHẤT CỦA ĐỢT NÂNG CẤP HIỆN TẠI:** Nâng cấp **TRANG KIẾN THỨC SGK** Toán 11–12 để học sinh có thể tự học độc lập. Đây là khóa phạm vi công việc AUTHORING, **không phải một chuẩn chất lượng mới**; áp dụng trong cùng checklist/SLM-THPT-QUALITY-ONE hiện hành. Khi chỉ đạo trước đây về dứt điểm chương hoặc hoàn thiện hành trình SGK có thể bị hiểu là làm lại Core/đánh giá, quyết định cụ thể mới này **giới hạn đợt nâng cấp** vào trang Kiến thức.
+
+### ĐƯỢC PHÉP LÀM — chỉ nằm trong trang bài học Kiến thức
+
+- Biên soạn/nâng cấp **bốn tab của trang Kiến thức SGK**: **Khám phá kiến thức, Kiến thức SGK, Ví dụ, Lỗi thường gặp**; thêm **Vận dụng → Đối chiếu → Kiểm lỗi** *ngay trong trang Kiến thức*, khi phục vụ học bài.
+- Kiểm đúng SGK/SBT S1, mục chính 1:1 ở hai tab đầu, điều kiện/toán và phát biểu; mẫu Golden Toán 10; 3+1 nhãn/khung; hình/SVG phục vụ trực tiếp bài giảng, có thể dùng một nguồn hình canonical ở hai tab.
+- Tự giải lại Ví dụ và Vận dụng **của trang Kiến thức**, tự kiểm 4 tab, sửa lỗi học thuật/sư phạm của **đúng phần Kiến thức**; NotebookLM phản biện **chỉ phạm vi source đã đổi** và trả verdict riêng từng bài. Ghi SHA/receipt/handoff scoped khi cần; **không suy ra PASS/CONTENT_READY của cả hành trình hay chương từ việc nâng cấp trang Kiến thức**.
+- Đường dẫn sửa dự kiến: learner `docs/thpt-preview/sgk/lop-11/chuong-*/bai-*.md` hoặc `lop-12/chuong-*/bai-*.md`, cùng SVG **của bài đó** nếu thực sự cần. Chỉ sửa tài liệu kiểm toán/handoff đúng phạm vi, không đổi giao diện/nền tảng dùng chung.
+
+### KHÔNG THUỘC NHIỆM VỤ — BẢO TOÀN NGHIỆM THU HIỆN CÓ
+
+- **KHÔNG biên soạn lại, chỉnh sửa, bổ sung hoặc chuyển vị trí** các trang **Core & Luyện tập**, **Tự kiểm tra cuối chương**, ngân hàng câu hỏi, Written/Anchor, đáp án, lời giải, rubric, RD1, canonical item IDs và cơ chế đánh giá/Mastery. Đây là các phần đã có và đã qua NotebookLM review trước đó theo xác nhận của chủ dự án; **không review lại mặc định** chỉ vì trang Kiến thức nâng cấp.
+- Không tạo Core mới, không chạm `luyen-tap.md`, `tu-kiem-tra-chuong.md`, dữ liệu assessment/Ready/RD1, Firebase/Auth/học sinh, không sửa CSS/JS/architecture chung, không chuyển công việc sang RELEASE, không tự merge/deploy.
+- Chỉ khi **phát hiện sai sót thực chất có bằng chứng** liên quan tới phần đã nghiệm thu: ghi rõ `AUTHORING_DEFECT / STANDARD_CONFLICT_HOLD` (nếu phù hợp), chỉ ra **file + bài/outcome/item + bằng chứng + ảnh hưởng**, và **xin quyết định mới của chủ dự án trước khi mở rộng sửa đổi**. Không âm thầm “tiện tay” sửa Core/Tự kiểm tra; nếu điều kiện chỉ là metadata/UI tương đương thì dùng phân loại Delta hiện hành, không phát động review học thuật lại toàn bộ.
+- Từng lượt kiểm **file diff trong PR**: chỉ learner trang Kiến thức, SVG liên quan, và chứng cứ review scoped. Có thay đổi ngoài ranh giới này thì **HOLD và loại khỏi PR**, không tính là hoàn thành nhiệm vụ.
+
+### Dấu xác nhận phạm vi mỗi checkpoint
+
+`SCOPE=G11_G12_SGK_KNOWLEDGE_PAGES_ONLY`; `CORE_PRACTICE=FROZEN`; `CHAPTER_SELF_CHECK=FROZEN`; `EXISTING_NOTEBOOKLM_VERDICTS=PRESERVED`; `BRANCH=AUTHORING_ONLY`; `MERGE_DEPLOY=NOT_AUTHORIZED`.
+
+**Nguyên tắc:** Hoàn thiện trang Kiến thức từng bài → tự kiểm → phản biện đúng phần thay đổi → sửa đúng phần chịu ảnh hưởng → khóa source scoped → tiếp tục bài kế tiếp. **Không đặt Core/Tự kiểm tra đã nghiệm thu thành công việc còn thiếu của đợt nâng cấp này.**
+
 ## Bốn điểm duy nhất quyết định công việc biên soạn
 
 1. **SGK Kết nối tri thức** — nguồn kiến thức, thứ tự, tính đúng đắn, điều kiện và phạm vi.
