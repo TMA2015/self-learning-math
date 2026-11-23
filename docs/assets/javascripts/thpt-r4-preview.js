@@ -124,7 +124,17 @@
     for(const [label,url]of groups){
      const a=document.createElement("a");a.href=base+url;a.textContent=label;nav.append(a);
     }
-    section.append(summary,nav);
+    // Optional library shortcut within the existing 5-group section.
+    // Does NOT create a sixth group or a second "+1" Topic catalog entry.
+    const labNav=document.createElement("nav");
+    labNav.className="roadmap-main-quick__links";
+    labNav.setAttribute("aria-label","Truy cập nhanh thư viện mô hình Math Lab");
+    const labLink=document.createElement("a");
+    labLink.href=base+"math-lab/";
+    labLink.textContent="Math Lab · 25 mô hình tương tác";
+    labLink.dataset.thptMathLabShortcut="1";
+    labNav.append(labLink);
+    section.append(summary,nav,labNav);
     // The programme cover is above all THPT learning groups.
     // It is not a sixth group and does not change Golden 5+1.
     const coverNav=document.createElement("nav");
