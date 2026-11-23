@@ -100,7 +100,7 @@
 
     ### 2.1. Khái niệm mở đầu
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Mặt phẳng, điểm thuộc mặt phẳng</strong><p>Mặt phẳng là đối tượng hình học **không có bề dày và không có giới hạn**. Kí hiệu \((P)\), \((\alpha)\). Khi \(A\) thuộc \((P)\) viết \(A\in(P)\); khi \(B\) không thuộc viết \(B\notin(P)\). Khi mọi điểm trên đường \(d\) đều thuộc mặt phẳng, viết \(d\subset(P)\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Mặt phẳng, điểm thuộc mặt phẳng</strong><p>Mặt phẳng là đối tượng hình học <strong>không có bề dày và không có giới hạn</strong>. Kí hiệu \((P)\), \((\alpha)\). Khi \(A\) thuộc \((P)\) viết \(A\in(P)\); khi \(B\) không thuộc viết \(B\notin(P)\). Khi mọi điểm trên đường \(d\) đều thuộc mặt phẳng, viết \(d\subset(P)\).</p></div>
 
     **Chú ý — Hình biểu diễn:** Mặt phẳng được biểu diễn bằng một hình bình hành hoặc một góc, không phải mặt phẳng chỉ có chừng ấy diện tích. Hình biểu diễn đường thẳng, đoạn thẳng vẫn là đường/đoạn; giữ quan hệ liên thuộc, song song/cắt nhau của đường; cạnh khuất vẽ nét đứt, cạnh nhìn thấy vẽ nét liền. Không suy ra kích thước/góc thật từ một hình chiếu.
 
@@ -120,7 +120,7 @@
 
     ### 2.3. Cách xác định một mặt phẳng
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Cách xác định — Ba cách của SGK</strong><p><strong>1.</strong> Ba điểm \(A,B,C\) **không thẳng hàng** xác định mặt phẳng \((ABC)\).</p><p><strong>2.</strong> Điểm \(A\) **không nằm trên** đường \(d\) xác định duy nhất mặt phẳng chứa \(A,d\), kí hiệu \(\operatorname{mp}(A,d)\).</p><p><strong>3.</strong> Hai đường thẳng **cắt nhau** \(a,b\) xác định duy nhất mặt phẳng chứa chúng, kí hiệu \(\operatorname{mp}(a,b)\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Cách xác định — Ba cách của SGK</strong><p><strong>1.</strong> Ba điểm \(A,B,C\) <strong>không thẳng hàng</strong> xác định mặt phẳng \((ABC)\).</p><p><strong>2.</strong> Điểm \(A\) <strong>không nằm trên</strong> đường \(d\) xác định duy nhất mặt phẳng chứa \(A,d\), kí hiệu \(\operatorname{mp}(A,d)\).</p><p><strong>3.</strong> Hai đường thẳng <strong>cắt nhau</strong> \(a,b\) xác định duy nhất mặt phẳng chứa chúng, kí hiệu \(\operatorname{mp}(a,b)\).</p></div>
 
     **Lập luận:** Với một điểm ngoài đường, lấy hai điểm khác nhau trên đường để được ba điểm không thẳng hàng. Với hai đường cắt nhau tại \(M\), lấy \(A,B\) lần lượt trên hai đường và khác \(M\), thì \(A,M,B\) không thẳng hàng.
 
@@ -130,11 +130,11 @@
 
     ### 2.4. Hình chóp và hình tứ diện
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình chóp</strong><p>Cho đa giác lồi \(A_1A_2\ldots A_n\) và điểm \(S\) **ngoài mặt phẳng đáy**. Hình gồm đa giác ấy và các tam giác \(SA_1A_2,\ldots,SA_nA_1\) gọi là **hình chóp** \(S.A_1A_2\ldots A_n\). \(S\) là đỉnh, đa giác là mặt đáy, các tam giác là mặt bên; \(SA_i\) là cạnh bên, các cạnh đa giác là cạnh đáy.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình chóp</strong><p>Cho đa giác lồi \(A_1A_2\ldots A_n\) và điểm \(S\) <strong>ngoài mặt phẳng đáy</strong>. Hình gồm đa giác ấy và các tam giác \(SA_1A_2,\ldots,SA_nA_1\) gọi là <strong>hình chóp</strong> \(S.A_1A_2\ldots A_n\). \(S\) là đỉnh, đa giác là mặt đáy, các tam giác là mặt bên; \(SA_i\) là cạnh bên, các cạnh đa giác là cạnh đáy.</p></div>
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B10_QUADRILATERAL_PYRAMID_AUTHORING_20261123.svg" alt="Hình chóp tứ giác có đỉnh S, đáy ABCD"><figcaption><strong>Tra hình:</strong> \(S.ABCD\) có 5 đỉnh, 8 cạnh, 5 mặt. Mặt bên \(SAB,SBC,SCD,SDA\); đáy \(ABCD\).</figcaption></figure>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình tứ diện và tứ diện đều</strong><p>Với bốn điểm \(A,B,C,D\) **không đồng phẳng**, hình gồm bốn tam giác \(ABC,ABD,ACD,BCD\) gọi là **tứ diện** \(ABCD\): 4 đỉnh, 6 cạnh, 4 mặt. Hai cạnh không chung đỉnh gọi là **cạnh đối diện**; đỉnh không nằm trên một mặt tam giác được gọi là **đỉnh đối diện với mặt đó**. Tứ diện có **bốn mặt đều là tam giác đều** gọi là **tứ diện đều**.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình tứ diện và tứ diện đều</strong><p>Với bốn điểm \(A,B,C,D\) <strong>không đồng phẳng</strong>, hình gồm bốn tam giác \(ABC,ABD,ACD,BCD\) gọi là <strong>tứ diện</strong> \(ABCD\): 4 đỉnh, 6 cạnh, 4 mặt. Hai cạnh không chung đỉnh gọi là <strong>cạnh đối diện</strong>; đỉnh không nằm trên một mặt tam giác được gọi là <strong>đỉnh đối diện với mặt đó</strong>. Tứ diện có <strong>bốn mặt đều là tam giác đều</strong> gọi là <strong>tứ diện đều</strong>.</p></div>
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B10-01_R01.svg" alt="Tứ diện S.ABC gồm bốn mặt tam giác"><figcaption><strong>Tra hình:</strong> tứ diện \(S.ABC\) có thể coi bất kì mặt tam giác nào làm đáy. Cặp cạnh đối diện trong \(ABCD\): \(AB,CD\); \(AC,BD\); \(AD,BC\).</figcaption></figure>
 
