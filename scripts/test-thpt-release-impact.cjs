@@ -76,7 +76,9 @@ function b16RuntimeIsIsolated(){
  ];
  for(const [from,to] of edits){if(s.split(from).length!==2)return false;s=s.replace(from,to)}
  const bytes=Buffer.from(s),sha=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
- return sha==="fb6650428bc148b536cb1d26ef34d5d521ddf715";
+ // Owner-approved retired-topic launcher now links only to 22 canonical Topics;
+ // hash recomputed after stripping the entire B16 adapter and normalizing its legacy link.
+ return sha==="d847e412bbc1bc10e62620965312ae0d327a0907";
 }
 /* W3 CĐ12–15 is an owner-authorized, separately QA-gated Topic-only wave.
  * Explicit original-file allowlist includes ONLY new Topic pages/assets and
