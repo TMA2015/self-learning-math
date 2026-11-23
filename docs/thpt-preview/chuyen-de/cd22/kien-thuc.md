@@ -33,6 +33,8 @@ hide:
 
 # Kiến thức
 
+<!-- TOP22_R09_SOURCE_EQUIVALENT_EDITORIAL; R07_BASE_BLOB: e31771e0fb9347c8c242ec8ca9e8a91a1ab74ff6; ITEM_COUNT: 114; ID_CANONICAL_SGK_SOURCE_UNCHANGED; PUBLIC_SELF_CHECK_NO_MASTERY; AUTHORING_ONLY -->
+
 Thống kê giúp ta mô tả mức điển hình và mức dao động của một tập dữ liệu. Nhưng kết quả đo có thể gần đúng và số tính từ bảng ghép nhóm chỉ là ước lượng. Chúng ta sẽ đi từ dữ liệu thô tới dữ liệu theo khoảng, tìm hiểu lúc nào nên dùng mỗi thước đo và kết luận nào không thể rút ra.
 
 Để bắt đầu, em chỉ cần biết các phép tính cơ bản, căn bậc hai, sắp xếp số và đọc bảng. Những kiến thức nền khác sẽ được nhắc ngay ở đoạn cần dùng.
