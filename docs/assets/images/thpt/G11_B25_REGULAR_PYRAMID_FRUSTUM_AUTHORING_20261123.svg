@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-labelledby="t d">
+<title id="t">Hình chóp đều và hình chóp cụt đều với đường cao qua tâm đáy</title><desc id="d">Khung trái chóp đều S.ABCD đáy vuông, chân đường cao SO tại tâm O của đáy, các cạnh bên được giả thiết bằng nhau. Khung phải chóp cụt đều ABCD.A phẩy B phẩy C phẩy D phẩy có hai đáy vuông song song và đồng tâm theo phương vuông góc, tâm H dưới và K trên; HK là đường cao, mặt bên là hình thang cân. Không nhầm đường cao với cạnh bên nghiêng.</desc>
+<rect width="1000" height="480" rx="18" fill="#fff"/><text x="500" y="37" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#193b55">Đường cao của hình chóp và hình chóp cụt đều</text>
+<g font-family="Arial,sans-serif" font-size="19" fill="#274158" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<rect x="16" y="55" width="470" height="371" rx="13" fill="#f7fafc" stroke="#dce5eb" stroke-width="1"/>
+<text x="250" y="86" text-anchor="middle" font-weight="700" stroke="none">Chóp đều S.ABCD</text>
+<polygon points="82,335 327,335 423,253 178,253" fill="#e2f1fc" stroke="#4380a5"/>
+<path d="M251 104 L82 335 M251 104 L327 335 M251 104 L423 253 M251 104 L178 253" stroke="#687f90" fill="none"/>
+<line x1="251" y1="104" x2="253" y2="294" stroke="#c75836" stroke-width="5" stroke-dasharray="10 7"/>
+<circle cx="253" cy="294" r="5" fill="#c75836" stroke="none"/>
+<g stroke="none"><text x="241" y="101">S</text><text x="60" y="352">A</text><text x="330" y="356">B</text><text x="426" y="250">C</text><text x="162" y="248">D</text><text x="267" y="296">O</text><text x="269" y="197" fill="#c75836">SO ⟂ đáy</text><text x="250" y="385" text-anchor="middle">Đáy đều, cạnh bên bằng nhau</text></g>
+<rect x="513" y="55" width="471" height="371" rx="13" fill="#f7fafc" stroke="#dce5eb" stroke-width="1"/>
+<text x="748" y="86" text-anchor="middle" font-weight="700" stroke="none">Chóp cụt đều</text>
+<polygon points="558,335 818,335 934,257 670,257" fill="#e2f1fc" stroke="#4380a5"/>
+<polygon points="644,195 791,195 858,145 709,145" fill="#e2f7ed" stroke="#3d866d"/>
+<path d="M558 335 L644 195 M818 335 L791 195 M934 257 L858 145 M670 257 L709 145" stroke="#6a7e90" fill="none"/>
+<line x1="746" y1="293" x2="751" y2="170" stroke="#c75836" stroke-width="5" stroke-dasharray="9 7"/>
+<g stroke="none"><text x="535" y="350">A</text><text x="821" y="351">B</text><text x="942" y="252">C</text><text x="656" y="252">D</text><text x="628" y="185">A′</text><text x="791" y="186">B′</text><text x="864" y="138">C′</text><text x="696" y="138">D′</text><text x="761" y="298">H</text><text x="765" y="169">K</text><text x="768" y="232" fill="#c75836">HK ⟂ hai đáy</text><text x="748" y="385" text-anchor="middle">Hai đáy đều và song song</text></g>
+</g><text x="500" y="453" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#68798b">Cạnh bên xiên không phải là đường cao; đọc giả thiết và dùng vuông góc từ tâm đáy.</text></svg>
