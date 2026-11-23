@@ -166,6 +166,9 @@ with sync_playwright() as pw:
                         expect(active).to_have_count(1)
                         raw_display = active.evaluate(r"""e => /\[\s*(?:\\vec|\(\\vec|\\sin|\\cos|\\tan|\\frac|\\sqrt|\\lim|\\operatorname)/.test(e.innerText)""")
                         assert not raw_display, (engine, topic, width, i, j, "visible unrendered display TeX")
+                        if topic=="13" and i==0 and j==2:
+                            expect(active.locator("mjx-container").first).to_be_visible()
+                            assert active.locator("mjx-container").count()>=3, (engine, width, "CĐ13 1.3 vector identities not typeset")
                         current = subtabs.nth(j)
                         assert current.evaluate("(e)=>getComputedStyle(e).fontSize") == ("14px" if width <= 640 else "15px")
                         assert current.evaluate("(e)=>Math.round(e.getBoundingClientRect().height)") == 44
