@@ -242,7 +242,7 @@
 
     **Vì sao sai:** Quy tắc cộng lôgarit đến từ **phép nhân các lũy thừa**, nên vế tương ứng là \(\log_a(MN)\), không phải \(\log_a(M+N)\).
 
-    **Cách sửa:** Kiểm ví dụ \(M=N=2,\ a=2\): \(\log_2(2+2)=2\) nhưng \(\log_22+\log_22=1+1=2\) **trùng hợp ở số này**; dùng \(M=2,N=4\): \(\log_2(2+4)=\log_2 6\ne3\), trong khi \(\log_22+\log_24=3\). Quy tắc đúng là \(\log_a(MN)=\log_aM+\log_aN\).
+    **Cách sửa:** Chọn phản ví dụ có kết quả thật sự khác nhau: với \(a=2,M=2,N=4\), \(\log_2(M+N)=\log_2 6\ne3\), trong khi \(\log_2M+\log_2N=1+2=3\). Hãy nhớ quy tắc đúng là \(\log_a(MN)=\log_aM+\log_aN\).
 
     ### 4.4. Rút gọn log rồi quên miền xác định ban đầu
 
