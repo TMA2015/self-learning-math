@@ -91,13 +91,13 @@ with sync_playwright() as pw:
                 for tab in page.locator("[data-topic-w1-module-tab],[data-topic-w1-subtab]").all():
                     short=tab.inner_text().strip()
                     full=tab.get_attribute("title")
-                    assert full and len(short)<=len(full) and len(short)<=44,(engine,topic,width,short,full)
+                    assert full and len(short)<=len(full) and len(short)<=32,(engine,topic,width,short,full)
                     assert tab.get_attribute("aria-label")==full
                 assert tabs.first.inner_text() == {
-  "19": "1. Quy tắc đếm và chia trường hợp",
+  "19": "1. Quy tắc đếm và chia trường",
   "20": "1. Mô hình ngẫu nhiên",
-  "21": "1. Biết thêm thông tin và xác suất có điều",
-  "22": "1. Dữ liệu thô, độ chính xác và các số đặc"
+  "21": "1. Biết thêm thông tin và xác",
+  "22": "1. Dữ liệu thô, độ chính xác và"
 }[topic]
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e.parentElement).display") == "flex"
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e).backgroundColor") != "rgba(0, 0, 0, 0)"
