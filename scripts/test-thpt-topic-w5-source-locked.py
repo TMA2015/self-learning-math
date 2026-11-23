@@ -90,7 +90,7 @@ for n,t in M["topics"].items():
         assert f'href="../{part}/"' not in nav.group(),(n,part,"self-navigation")
         assert "data-thpt-readiness" not in page,(n,part,"official readiness forbidden")
         if part=="tu-kiem-tra":
-            assert "NO_MASTERY" in page and "CLIENT_SELF_CHECK_NO_MASTERY" in published
+            assert "NO_MASTERY" in page and ("CLIENT_SELF_CHECK_NO_MASTERY" in published or (n=="22" and "REUSE_PUBLIC:" in published)),(n,"original public-only Q16")
             assert not re.search(r"Final Submit|Skill Mastery",re.sub(r"<!--.*?-->","",published,flags=re.S),re.I)
     refs=set(re.findall(r"(?:FIG-[A-Za-z0-9_.-]+|Temp_STATISTICS_[A-Za-z0-9_.-]+)\.svg",k))
     assert len(refs)==t["sourceSVGCount"],(n,"original SVG refs",refs)
