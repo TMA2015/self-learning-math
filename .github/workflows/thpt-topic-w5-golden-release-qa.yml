@@ -40,6 +40,7 @@ jobs:
       - name: Verify W5 signed AUTHORING and source-only 12 public pages
         run: |
           node --check docs/assets/javascripts/thpt-topic-w5-golden-v1.js
+          python3 -m py_compile scripts/test-thpt-topic-w5-golden-browser.py scripts/test-thpt-topic-w5-source-locked.py
           git fetch --no-tags origin \
             1bffa9555e5c549dbac11e47a3d24799d90d7e64 \
             b576b7f542f04cb7d600e1ce0ceed3d31fcd49e2 \
