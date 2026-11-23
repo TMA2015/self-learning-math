@@ -104,7 +104,7 @@ for n,t in M["topics"].items():
     print(f"PASS W5 CĐ{n}: source/Q18/ready exact + 3 projections + {len(h3)} tabs, {len(ids)} Q15 Practice, {len(replay)} same-ID Q16, {len(refs)} original SVG")
 
 js=(ROOT/"docs/assets/javascripts/thpt-topic-w5-golden-v1.js").read_text(encoding="utf-8")
-for token in ('credentials:"omit"','method:"GET"','target.origin!==location.origin','THPT_GOLDEN_RUNTIME','golden.bindPager','golden.bindDialog','REUSE_PUBLIC','CANONICAL_ITEM_ID'):
+for token in ('const expected=sizes[topic];','credentials:"omit"','method:"GET"','target.origin!==location.origin','THPT_GOLDEN_RUNTIME','golden.bindPager','golden.bindDialog','REUSE_PUBLIC','CANONICAL_ITEM_ID'):
     assert token in js,("W5 adapter missing safeguard",token)
 assert js.count("fetch(")==1 and js.count("new URL(")==1, "W5 public same-origin answer lookup count changed"
 for bad in ("localStorage","sessionStorage","indexedDB","firebase.firestore","setDoc(","sendBeacon","WebSocket(","FINAL_SUBMIT"):
