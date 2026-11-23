@@ -1,0 +1,52 @@
+name: THPT Topic W4 CĐ16–18 Golden Release QA (NO DEPLOY)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/thpt-preview/chuyen-de/cd15/**'
+      - 'docs/thpt-preview/chuyen-de/cd16/**'
+      - 'docs/thpt-preview/chuyen-de/cd17/**'
+      - 'docs/thpt-preview/chuyen-de/cd18/**'
+      - 'docs/thpt-preview/chuyen-de/index.md'
+      - 'docs/assets/javascripts/thpt-topic-w4-golden-v1.js'
+      - 'docs/assets/images/thpt/FIG-TOP18-*.svg'
+      - 'scripts/test-thpt-topic-w4-source-locked.py'
+      - 'scripts/test-thpt-topic-w4-golden-browser.py'
+      - 'prototypes/thpt/release-queue/W4_CD16_18_SOURCE_INTAKE_20261123.json'
+      - 'mkdocs.yml'
+      - 'mkdocs.thpt-preview.yml'
+      - '.github/workflows/thpt-topic-w4-golden-release-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-browser:
+    name: CĐ16–18 exact Q18/Q15/Q16 and CĐ01 Golden Chromium/WebKit (NO DEPLOY)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact signed AUTHORING source/Q18 and public projection
+        shell: bash
+        run: |
+          node --check docs/assets/javascripts/thpt-topic-w4-golden-v1.js
+          git fetch --no-tags origin 805feb8080396f7f39ee3b04e3230c5a2bbd135b 97458512ce9343077a4fa350247e3152a6833ce2 25f892c43ad03ed002d61bdb1d5f274cf81c1227
+          python3 scripts/test-thpt-topic-w4-source-locked.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install MkDocs and scoped browser engines
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Build both navigations strictly (no global test)
+        run: |
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+      - name: Verify Golden CĐ01 computed styles, 9 W4 pages, SVG/MathJax and public Q16
+        run: python scripts/test-thpt-topic-w4-golden-browser.py
