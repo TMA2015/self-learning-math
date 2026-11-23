@@ -143,18 +143,18 @@
 
     ### 3.5. Bảng số liệu và sự phụ thuộc thống kê
 
-    **Đề bài.** Một khảo sát \(5\,000\) người được phân thành bốn nhóm theo hai tiêu chí: có hút thuốc lá thường xuyên hay không và có viêm phổi hay không. Kết quả:
+    **Đề bài.** Một khảo sát \(5\,000\) người đàn ông được phân thành bốn nhóm theo hai tiêu chí: có nghiện thuốc lá hay không và có viêm phổi hay không. Kết quả:
 
     | Nhóm | Viêm phổi | Không viêm phổi |
     | :-- | --: | --: |
-    | Hút thuốc thường xuyên | \(752\) | \(1\,236\) |
-    | Không hút thuốc thường xuyên | \(575\) | \(2\,437\) |
+    | Nghiện thuốc lá | \(752\) | \(1\,236\) |
+    | Không nghiện thuốc lá | \(575\) | \(2\,437\) |
 
-    Chọn đều một người trong nhóm khảo sát. Kiểm tra hai biến cố “hút thuốc thường xuyên” (\(S\)) và “bị viêm phổi” (\(V\)) có độc lập theo số liệu không. Có thể từ kết quả ấy tự kết luận một biến cố gây ra biến cố kia không?
+    Chọn đều một người trong nhóm khảo sát. Kiểm tra hai biến cố “nghiện thuốc lá” (\(S\)) và “bị viêm phổi” (\(V\)) có độc lập theo số liệu không. Có thể từ kết quả ấy tự kết luận một biến cố gây ra biến cố kia không?
 
     **Phân tích:** Tính \(P(S)\) bằng **tổng hàng**, \(P(V)\) bằng **tổng cột**, \(P(SV)\) bằng **ô giao**. So sánh \(P(SV)\) với \(P(S)P(V)\). Câu hỏi về nguyên nhân đòi thông tin khác ngoài bảng.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Có \(752+1236=1988\) người hút thuốc thường xuyên và \(752+575=1327\) người viêm phổi. Do đó \(P(S)=1988/5000=0{,}3976\), \(P(V)=1327/5000=0{,}2654\), \(P(SV)=752/5000=0{,}1504\). Nếu độc lập thì tích phải là \(0{,}3976\cdot0{,}2654=0{,}10552304\), khác \(0{,}1504\). Vậy hai biến cố <strong>không độc lập trong mô hình số liệu khảo sát</strong>. Chưa thể chỉ từ bảng này khẳng định một biến cố là <strong>nguyên nhân</strong> của biến cố kia.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Có \(752+1236=1988\) người nghiện thuốc lá và \(752+575=1327\) người viêm phổi. Do đó \(P(S)=1988/5000=0{,}3976\), \(P(V)=1327/5000=0{,}2654\), \(P(SV)=752/5000=0{,}1504\). Nếu độc lập thì tích phải là \(0{,}3976\cdot0{,}2654=0{,}10552304\), khác \(0{,}1504\). Vậy hai biến cố <strong>không độc lập trong mô hình số liệu khảo sát</strong>. Chưa thể chỉ từ bảng này khẳng định một biến cố là <strong>nguyên nhân</strong> của biến cố kia.</p></div>
 
     **Kiểm lại:** \(752+1236+575+2437=5000\). Phần giao có xác suất \(0{,}1504\), nhỏ hơn từng xác suất biên \(0{,}3976\) và \(0{,}2654\), đúng tính chất tập con.
 
