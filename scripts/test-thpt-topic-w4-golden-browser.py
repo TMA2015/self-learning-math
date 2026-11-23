@@ -20,7 +20,7 @@ BASE = f"http://127.0.0.1:{server.server_address[1]}/thpt-preview/chuyen-de/"
 SIZES = {
     "16": (4, 4, 21, 65, 8, 4),
     "17": (2, 3, 12, 37, 8, 2),
-    "18": (8, 8, 40, 207, 12, 10),
+    "18": (8, 8, 40, 207, 12, 9),  # 9 Knowledge SVG; Bài 202 radar SVG is in Practice solution
 }
 PALETTE = {
     "concept": "rgb(232, 247, 242)",
@@ -287,6 +287,12 @@ with sync_playwright() as pw:
                         expect(details.locator("summary")).to_have_text("📖 Đáp án / Lời giải")
                         details.locator("summary").click()
                         expect(details.locator(".thpt-r4-formative-reveal")).to_be_visible()
+                        # Signed CĐ18 SVG manifest has 10 originals in TWO pages:
+                        # 9 Knowledge figures + radar timeline only in Written Bài 202.
+                        if topic == "18" and engine == "chromium" and width == 820 and card.get_attribute("data-thpt-canonical-item") == "THPT-TOP18-W07":
+                            radar = details.locator('img[src*="FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg"]')
+                            expect(radar).to_have_count(1)
+                            assert page.request.get(radar.first.evaluate("(e)=>e.src")).ok, (topic, "Bài 202 radar SVG failed to load")
                     total_seen += group_count
                     modal.locator(".topic-w1-close").click()
                     expect(modal).to_be_hidden()
