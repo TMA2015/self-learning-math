@@ -156,7 +156,31 @@ const normalizeRenderedMath=node=>{
   if(hit){if(lastIndex<v.length)parts.append(document.createTextNode(v.slice(lastIndex)));t.replaceWith(parts)}
  }
 };
-const renderMath=node=>{normalizeRenderedMath(node);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
+/* Typeset each recovered/original TeX span at most once. W5 subtabs call
+ * renderMath on both a subgroup and its parent; a whole-panel re-typeset
+ * otherwise inserts duplicate mjx-container nodes for the same formula. */
+const renderMath=node=>{
+ normalizeRenderedMath(node);
+ const spans=[...node.querySelectorAll(".arithmatex")].filter(el=>
+  !el.querySelector("mjx-container")&&el.dataset.topicW5TypesetQueued!=="1");
+ if(!spans.length)return;
+ spans.forEach(el=>{el.dataset.topicW5TypesetQueued="1"});
+ const run=()=>{
+  const lib=window.MathJax;
+  if(!lib?.typesetPromise){spans.forEach(el=>delete el.dataset.topicW5TypesetQueued);return}
+  const pending=spans.filter(el=>el.isConnected&&!el.querySelector("mjx-container"));
+  if(!pending.length)return;
+  return lib.typesetPromise(pending).catch(()=>{
+   pending.forEach(el=>delete el.dataset.topicW5TypesetQueued);
+  });
+ };
+ const m=window.MathJax;
+ if(m?.typesetPromise)run();
+ else if(m?.startup?.promise)m.startup.promise.then(run).catch(()=>{
+  spans.forEach(el=>delete el.dataset.topicW5TypesetQueued);
+ });
+ else spans.forEach(el=>delete el.dataset.topicW5TypesetQueued);
+};
 /* Source SVGs remain byte-identical; only the rendered footprint is constrained.
  * W3-only data attribute avoids changing accepted CĐ01/W1/W3 and SGK images. */
 const capKnowledgeFigures=root=>{
