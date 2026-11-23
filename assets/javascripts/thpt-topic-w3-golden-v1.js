@@ -178,15 +178,16 @@ const normalizeRenderedMath=node=>{
  while(walker.nextNode()){
   const t=walker.currentNode,p=t.parentElement;
   if(!p||p.closest(".arithmatex,mjx-container,code,pre,script,style,textarea,svg"))continue;
-  if(t.nodeValue.includes("^")||t.nodeValue.includes("\\operatorname{sđ}")||t.nodeValue.includes("\\lim("))texts.push(t);
+  if(t.nodeValue.includes("^")||t.nodeValue.includes("\\operatorname")||t.nodeValue.includes("\\lim")||(t.nodeValue.includes("[")&&t.nodeValue.includes("\\")))texts.push(t);
  }
  // Python-Markdown stripped two verified blockquote display forms: CĐ06 Chasles
  // and CĐ08 finite-limit theorem. Recover only these original TeX expressions.
- const fragments=/\[\s*((?:\\operatorname\{sđ\}|\\lim\b)[^\]]+?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
+ const fragments=/\[\s*([^\[\]]{2,1200}?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
  for(const t of texts){
   const v=t.nodeValue,parts=document.createDocumentFragment();let lastIndex=0,hit=false,match;
   fragments.lastIndex=0;
   while((match=fragments.exec(v))){
+   if(match[1]&&!/\\(?:operatorname|lim|vec|overrightarrow|sin|cos|tan|cot|frac|sqrt|ldots|cdot|theta|alpha|beta|gamma|pi|to|le|ge|mathbb|log|ln|sum|int|begin|end|text|quad|qquad|widehat)\b/.test(match[1]))continue;
    hit=true;
    if(match.index>lastIndex)parts.append(document.createTextNode(v.slice(lastIndex,match.index)));
    const math=create("span","arithmatex");
