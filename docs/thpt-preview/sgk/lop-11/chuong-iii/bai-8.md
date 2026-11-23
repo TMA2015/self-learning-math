@@ -228,4 +228,4 @@
 
     **Học tiếp:** [Core và Luyện tập Bài 8](luyen-tap.md) · [Tự luận Chương III](../../../thu-vien/tu-luan-g11-chuong-iii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
-    <p class="thpt-r4-footnote">Đối chiếu văn bản SGK Toán 11 Kết nối tri thức, tập một, Bài 8 trang in 58–61 qua bản chép theo trang in trên SGKVN. Hai mục SGK: Giới thiệu về mẫu số liệu ghép nhóm; Ghép nhóm mẫu số liệu. Hình SVG tần số B08 có sẵn trên main, được dùng chung ở hai tab. Chưa nhận đã kiểm hình in từng trang của SGK gốc.</p>
+    <p class="thpt-r4-footnote">Đối chiếu văn bản SGK Toán 11 Kết nối tri thức, tập một, Bài 8 trang in 58–61 qua bản PDF SGK gốc được tra cứu (cùng bản chép theo trang in trên SGKVN). Hai mục SGK: Giới thiệu về mẫu số liệu ghép nhóm; Ghép nhóm mẫu số liệu. Hình SVG tần số B08 có sẵn trên main, được dùng chung ở hai tab. Chưa nhận đã kiểm hình in từng trang của SGK gốc.</p>
