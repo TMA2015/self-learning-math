@@ -22,11 +22,11 @@
 
     ### 1.1. Phép chiếu song song
 
-    Giả sử sàn nhà là mặt phẳng \((P)\), còn phương nắng được xác định bởi đường thẳng \(\Delta\) **không song song với \((P)\)**. Qua điểm \(M\) trên khung cửa, vẽ một đường thẳng cùng phương \(\Delta\). Đường này cắt \((P)\) tại duy nhất một điểm \(M'\): đó là **hình chiếu song song** của \(M\). Nếu \(M\) đã nằm trên \((P)\), điểm ảnh chính là \(M\). Vì mọi điểm đều được chiếu theo **một phương cố định**, ta nhận được hình chiếu của cả khung cửa bằng tập hợp các hình chiếu từng điểm.
+    Giả sử sàn nhà là mặt phẳng \((P)\), còn phương nắng được xác định bởi đường thẳng \(\Delta\) **cắt \((P)\) tại đúng một điểm**. Qua điểm \(M\) trên khung cửa, vẽ một đường thẳng cùng phương \(\Delta\). Đường này cắt \((P)\) tại duy nhất một điểm \(M'\): đó là **hình chiếu song song** của \(M\). Nếu \(M\) đã nằm trên \((P)\), điểm ảnh chính là \(M\). Vì mọi điểm đều được chiếu theo **một phương cố định**, ta nhận được hình chiếu của cả khung cửa bằng tập hợp các hình chiếu từng điểm.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B14-01_R01.svg" alt="Hình ABCD và ảnh A phẩy B phẩy C phẩy D phẩy nối bởi các đường chiếu cùng phương"><figcaption><strong>Đọc hình:</strong> đường \(AA'\), \(BB'\), \(CC'\), \(DD'\) đều có cùng phương chiếu. Hình dưới là **ảnh** của hình trên, không phải hình giống hệt theo mọi độ dài/góc. Chọn một điểm \(M\) bất kì, ảnh \(M'\) được dựng bằng đường qua \(M\) cùng phương ấy tới mặt chiếu.</figcaption></figure>
 
-    **Vì sao phải hạn chế phương chiếu?** Nếu \(\Delta\) song song với \((P)\), đường chiếu qua một điểm ngoài \((P)\) có thể không gặp mặt chiếu, nên không xác định được ảnh như mong muốn. Vì thế trong phần học này SGK chọn phương chiếu **không song song với mặt phẳng chiếu**. Đây là điều kiện để ảnh của **mỗi điểm** có thể xác định.
+    **Vì sao phải hạn chế phương chiếu?** Nếu \(\Delta\) song song với \((P)\), đường chiếu qua một điểm ngoài \((P)\) có thể không gặp mặt chiếu, nên không xác định được ảnh như mong muốn. Vì thế trong phần học này SGK chọn đường chỉ phương \(\Delta\) **cắt mặt phẳng chiếu tại đúng một điểm** (không nằm trong mặt phẳng chiếu và không song song với mặt phẳng chiếu). Đây là điều kiện để ảnh của **mỗi điểm** có thể xác định.
 
     **Vận dụng.** Mặt chiếu là \((P)\), phương chiếu \(\Delta\) cắt \((P)\). Điểm \(A\in(P)\); điểm \(B\notin(P)\). Ảnh của \(A\) là gì, và cần dựng thế nào để được ảnh \(B'\) của \(B\)?
 
@@ -84,11 +84,11 @@
 
     ### 2.1. Phép chiếu song song
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Phép chiếu song song</strong><p>Cho mặt phẳng \((P)\) và một đường thẳng \(\Delta\) **không song song với \((P)\)** xác định phương chiếu. Với mỗi điểm \(M\), gọi \(M'\) là giao điểm của \((P)\) với đường đi qua \(M\) song song \(\Delta\) (nếu \(M\in\Delta\), lấy chính \(\Delta\)). Ánh xạ \(M\mapsto M'\) là **phép chiếu song song** lên \((P)\) theo phương \(\Delta\); \(M'\) là **hình chiếu song song** của \(M\), \((P)\) là **mặt phẳng chiếu**.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Phép chiếu song song</strong><p>Cho mặt phẳng \((P)\) và một đường thẳng \(\Delta\) **cắt \((P)\) tại đúng một điểm** xác định phương chiếu. Với mỗi điểm \(M\), gọi \(M'\) là giao điểm của \((P)\) với đường đi qua \(M\) song song \(\Delta\) (nếu \(M\in\Delta\), lấy chính \(\Delta\)). Ánh xạ \(M\mapsto M'\) là **phép chiếu song song** lên \((P)\) theo phương \(\Delta\); \(M'\) là **hình chiếu song song** của \(M\), \((P)\) là **mặt phẳng chiếu**.</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hình chiếu của một hình</strong><p>Hình chiếu của hình \(H\) qua phép chiếu song song là tập hợp tất cả hình chiếu \(M'\) của các điểm \(M\in H\). Nếu \(M\in(P)\) thì \(M'=M\). Mỗi điểm được chiếu theo **cùng một phương** cố định.</p></div>
 
-    **Điều kiện bắt buộc:** SGK xét phương chiếu \(\Delta\not\parallel(P)\) để đường qua điểm bất kì theo phương chiếu có giao điểm **duy nhất** với mặt chiếu. Nếu phương chiếu song song với mặt chiếu, phép dựng ảnh điểm ngoài mặt có thể không thực hiện được.
+    **Điều kiện bắt buộc:** SGK xét đường chỉ phương \(\Delta\) **cắt \((P)\) tại đúng một điểm** để đường qua điểm bất kì cùng phương \(\Delta\) có giao điểm **duy nhất** với mặt chiếu. Nếu phương chiếu song song với mặt chiếu, phép dựng ảnh điểm ngoài mặt có thể không thực hiện được.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B14-01_R01.svg" alt="Các điểm tương ứng được nối theo cùng một phương chiếu tới mặt chiếu"><figcaption><strong>Tra hình:</strong> mỗi đường nối \(A\) với \(A'\), \(B\) với \(B'\), ... có cùng phương; ảnh của cả hình lấy từ ảnh của từng điểm. Không kết luận bảo toàn chiều dài cạnh.</figcaption></figure>
 
