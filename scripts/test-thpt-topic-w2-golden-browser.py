@@ -87,6 +87,8 @@ with sync_playwright() as pw:
                         &&!!(intro.compareDocumentPosition(knowledge)&Node.DOCUMENT_POSITION_FOLLOWING);
                 }"""), (topic,"Title → lead → Kiến thức order")
                 assert page.locator("article.md-typeset > h1.topic-w1-topic-heading").count()==1
+                assert page.locator("article.md-typeset > p.topic-w1-source-intro").is_hidden(), (topic, "redundant lead should be hidden")
+                assert not page.locator("article.md-typeset > p.topic-w1-source-intro").inner_text().strip(), (topic, "redundant lead survived")
                 tabs = page.locator("[data-topic-w1-module-tab]")
                 expect(tabs).to_have_count(groups)
                 expect(page.locator("[data-topic-w1-subtab]")).to_have_count(outcomes)
