@@ -1,82 +1,123 @@
 # Bài 27. Thể tích
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do cần học → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<style>
+/* B27 Knowledge-only; do not alter shared Golden CSS/JS or Core. */
+.md-typeset:has([data-g11-b27-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border:1px solid #a9dccc;border-left:4px solid #087d69;color:#174137}
+.md-typeset:has([data-g11-b27-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border:1px solid #a5bee5;border-left:4px solid #4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b27-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b27-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
 
-## 1. Kiến thức SGK và ví dụ có suy luận
+<div class="thpt-r4-screen" data-thpt-r4 data-g11-b27-knowledge-only>
+<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · KẾT NỐI TRI THỨC · TẬP HAI</p>
+<p class="thpt-r4-lead">Vì sao cùng diện tích đáy và chiều cao mà thể tích chóp khác lăng trụ? Cách tìm chiều cao thực, công thức chóp cụt và chọn đúng dữ kiện trong các mô hình thực tế.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-### 1.1. Vì sao cần học
-Hai thùng có cùng diện tích đáy và cùng độ cao nhưng hình dạng khác nhau có thể chứa lượng khác nhau. Thể tích cần phân biệt lăng trụ và chóp, và dùng đúng chiều cao vuông góc.
+=== "Khám phá kiến thức"
 
-### 1.2. Khái niệm thực chất
-V lăng trụ = S_đáy·h; V hộp chữ nhật = dài·rộng·cao; V chóp = S_đáy·h/3. Chóp cụt đều với diện tích hai đáy S, S′ và chiều cao h: V=h(S+S′+√(SS′))/3.
+    **Vì sao cần học?** Không thể chọn máy điều hòa chỉ bằng diện tích sàn: phòng có trần cao hơn chứa nhiều không khí hơn. Tương tự, đáy chóp và đáy lăng trụ có thể giống nhau nhưng thể tích lại khác. Bài học cần kiến thức tiền đề từ Bài 23 về đường vuông góc mặt phẳng, Bài 25 về chóp đều/chóp cụt đều và Bài 26 về **chiều cao là khoảng cách vuông góc**. SGK Bài 27 **không chia thành các mục chính đánh số**; dưới đây là **ba nhóm học tập do tác giả sắp xếp** theo các công thức và hoạt động SGK, không phải tên mục chính thức trong sách.
 
-### 1.3. Hình thành và lập luận
-Lăng trụ có các thiết diện song song đáy cùng diện tích nên thể tích là diện tích đáy nhân chiều cao. Chóp cùng S,h chỉ chiếm 1/3 thể tích lăng trụ tương ứng (ghép/cắt); chóp cụt là hiệu hai chóp đồng dạng, từ đó xuất hiện căn √(SS′). Nếu S′=0, công thức về chóp; nếu S′=S, về lăng trụ.
+    ### 1.1. Khối hình, thể tích khối chóp và vai trò của chiều cao
 
-### 1.4. Điều kiện, giới hạn, lỗi thường gặp
-Chiều cao **vuông góc** hai đáy, không tự dùng cạnh xiên. Đơn vị thể tích m³, cm³; 1m³=1000L. Chóp cụt đều đòi hai mặt đáy đồng dạng song song trong một hình chóp đều, không áp cho hai hình tùy ý.
+    **HĐ1 SGK — Chọn công suất điều hòa:** Phòng hình hộp chữ nhật rộng \(4\) m, dài \(5\) m, cao \(3\) m có thể tích \(4\cdot5\cdot3=60\text{ m}^3\). Giả sử mỗi mét khối cần khoảng **200 BTU** theo hướng dẫn của bài toán, tổng công suất ước tính \(60\cdot200=12\,000\) BTU. Đây là bài toán **mô hình**; lựa chọn thiết bị thực tế còn phụ thuộc nhiệt độ, diện tích kính, cách nhiệt, số người và nhiều yếu tố. SGK dùng tình huống để cho thấy thể tích đo **phần không gian chiếm chỗ**, không phải chỉ diện tích bề mặt.
 
-### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK
-**Chiều cao và đơn vị:** Khi nói S_đáy và h, h phải là **khoảng cách vuông góc giữa các mặt đáy** của lăng trụ hoặc từ đỉnh chóp tới mặt đáy. Không thay bằng cạnh bên xiên hay chu vi. Nếu tính S theo cm² và h theo cm thì V theo cm³; đổi sang lít phải thông qua 1m³=1000L hoặc 1000cm³=1L.
+    **Nhận dạng phần không gian cần tính:** Hình chóp, hình lăng trụ, hình hộp là các **hình bao bởi mặt và cạnh**. Phần không gian được chúng giới hạn lần lượt gọi là **khối chóp, khối lăng trụ, khối hộp**. Với đáy diện tích \(S>0\) và chiều cao vuông góc \(h>0\), lăng trụ có thể tích \(Sh\), nhưng chóp cùng đáy và cùng chiều cao có thể tích **\(Sh/3\)**. Tại sao xuất hiện một phần ba? Các thiết diện song song đáy của chóp **thu nhỏ về đỉnh**, khác với lăng trụ có các thiết diện song song đáy bằng nhau. Có thể chia/ghép những chóp phù hợp thành một lăng trụ hoặc dùng nguyên lí chia lát để chứng minh tỉ số \(1/3\); đây là hệ số hình học, không phải chọn tùy ý.
 
-**Vì sao có hệ số một phần ba:** Một chóp và lăng trụ có cùng diện tích đáy S và cùng chiều cao h không có cùng thể tích. Có thể ghép các chóp tam giác phù hợp để suy thể tích chóp bằng 1/3 lăng trụ có cùng S,h; vì thế V_chóp=S h/3. Đây là đặc trưng của chóp, không phải chiết khấu hay quy tắc chọn tùy ý.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B27-01_R00.svg" alt="Ba khối lăng trụ, hình chóp, chóp cụt với công thức thể tích và cách đo chiều cao vuông góc"><figcaption><strong>Hướng dẫn đọc:</strong> hình trái lăng trụ có hai đáy bằng nhau, nên \(V=Sh\); hình giữa chóp thu về **một đỉnh**, nên \(V=Sh/3\); hình phải chóp cụt có **hai đáy khác diện tích**, công thức riêng. Các đoạn cao phải vuông góc đáy; không so thể tích bằng bề rộng biểu kiến trên hình.</figcaption></figure>
 
-**Chóp cụt đều từ hai chóp đồng dạng:** Đặt đáy lớn diện tích S, đáy nhỏ S′, h là khoảng cách hai đáy; tỉ số đồng dạng của các đáy k=√(S′/S) khi 0<k<1. Chóp lớn cao H, chóp nhỏ phía trên cao kH, nên h=(1−k)H. Trừ thể tích hai chóp: V=(S H−S′ kH)/3 = h(S+√(SS′)+S′)/3. Đây là lý do có **căn của tích diện tích hai đáy**, không phải trung bình cộng hai diện tích. Nếu đáy bé co về 0, công thức trở về chóp; nếu S′=S thì về lăng trụ (trường hợp giới hạn). Chỉ áp dụng cho chóp cụt đều (hoặc hình chóp cụt đồng dạng thích hợp), không cho mọi khối có hai mặt diện tích tùy ý.
+    **Ví dụ 1 SGK — Tứ diện vuông tại O:** Nếu \(OA=a\), \(OB=b\), \(OC=c\) đôi một vuông góc (\(a,b,c>0\)), lấy **tam giác \(OBC\)** làm đáy: \(S_{OBC}=bc/2\); đường \(OA\) vuông góc **cả \(OB\) và \(OC\)** nên vuông góc mặt \((OBC)\). Do đó
+    \[
+    V_{OABC}=\frac13\cdot\frac{bc}{2}\cdot a=\frac{abc}{6}.
+    \]
+    Không dùng \(abc/3\), vì còn phải tính **nửa tích hai cạnh** cho diện tích tam giác đáy.
 
-**Cách tự kiểm:** Với diện tích đáy 36cm² và 9cm², cao 4cm, V=4(36+9+18)/3=84cm³. Nếu em tính (36+9)/2×4=90cm³, em đã dùng công thức hình thang phẳng cho thể tích không gian — sai bản chất.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_TETRAHEDRON_ORTHOGONAL_AUTHORING_20261123.svg" alt="Tứ diện OABC có OA OB OC đôi một vuông góc, mặt đáy OBC diện tích bc trên 2 và chiều cao OA bằng a"><figcaption><strong>Hướng dẫn đọc:</strong> chọn vùng xanh tam giác \(OBC\), hai cạnh \(OB,OC\) vuông góc cho diện tích \(bc/2\); đoạn đỏ \(OA\) vuông góc **mặt \((OBC)\)**, dùng làm chiều cao. Hệ số thể tích chóp \(1/3\) đi sau việc tính diện tích đáy.</figcaption></figure>
 
-### 1.6. Hình minh họa và cách đọc
+    **Luyện tập 1 SGK — Chóp tứ giác đều:** Chóp \(S.ABCD\) có đáy vuông cạnh \(a>0\), cạnh bên \(b>a/\sqrt2\). Chân chiều cao là tâm \(O\), \(AO=a/\sqrt2\). Trong tam giác vuông \(SOA\), \(SO=\sqrt{b^2-a^2/2}\); vì \(S_{ABCD}=a^2\), thể tích
+    \[
+    V=\frac{a^2}{3}\sqrt{b^2-\frac{a^2}{2}}.
+    \]
+    Điều kiện \(b>a/\sqrt2\) bảo đảm hình chóp không suy biến. Không dùng \(b\) trực tiếp thay cho chiều cao.
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B27-01_R00.svg" alt="Hình B27: Ba khối có cùng diện tích đáy và chiều cao; phân biệt hình chóp, lăng trụ và chóp cụt đều."/><figcaption>Hình B27: Ba khối có cùng diện tích đáy và chiều cao; phân biệt hình chóp, lăng trụ và chóp cụt đều.</figcaption></figure>
+    **Vận dụng.** Hai khối có cùng diện tích đáy \(S=24\text{ cm}^2\), chiều cao \(h=9\text{ cm}\): một lăng trụ, một chóp. Tính thể tích và giải thích vì sao khác nhau.
 
-**Hướng dẫn đọc hình:** Ba khối có cùng diện tích đáy và chiều cao; phân biệt hình chóp, lăng trụ và chóp cụt đều. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
+    ??? question "Đối chiếu"
 
-### 1.7. Tự thử trước bài luyện tập
-Đáy 18cm², cao 5cm: lăng trụ V=90cm³, chóp V=30cm³. Chóp cụt đáy 16cm² và 4cm², cao 3cm: V=28cm³.
+        **Lời giải:** Lăng trụ: \(V_1=24\cdot9=216\text{ cm}^3\). Chóp: \(V_2=\frac13\cdot24\cdot9=72\text{ cm}^3\). Các tiết diện lăng trụ song song đáy có diện tích không đổi, còn chóp thu dần về đỉnh; nên dù cùng \(S,h\), chóp chỉ bằng một phần ba thể tích lăng trụ.
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
+    ??? tip "Kiểm lỗi"
 
-### 1.8. Ví dụ có hướng dẫn (vì sao chọn phương pháp)
+        Đừng dùng \(V=Sh\) cho mọi khối; phải **nhận dạng hình** trước, rồi xác minh \(h\) là đoạn vuông góc đáy.
 
+    ### 1.2. Khối chóp cụt đều: vì sao có căn của tích diện tích hai đáy?
 
-#### EX-G11-CHVII-B27-01 — Cùng đáy cùng cao khác thể tích
+    **Khám phá nguồn gốc công thức:** Chóp cụt đều được tạo khi cắt một chóp đều bởi mặt phẳng **song song đáy**, bỏ phần chóp nhỏ phía đỉnh. Gọi diện tích đáy lớn \(S>0\), đáy nhỏ \(0<S'<S\), chiều cao của phần cụt \(h>0\). Nếu chóp ban đầu cao \(H\), chóp nhỏ phía đỉnh cao \(kH\), hai đáy đồng dạng với **tỉ số độ dài \(k\)**, nên tỉ số diện tích \(S'/S=k^2\). Vì vậy \(k=\sqrt{S'/S}\) và \(h=(1-k)H\).
 
-**Nhiệm vụ:** Hai khối cùng S=24 cm², h=9 cm, một là lăng trụ, một là chóp. Tính mỗi thể tích.
+    **Trừ hai thể tích chóp:** 
+    \[
+    V=\frac{SH-S'(kH)}{3}
+    =\frac{SH(1-k^3)}{3}
+    =\frac{hS(1+k+k^2)}3
+    =\frac h3\left(S+S'+\sqrt{SS'}\right).
+    \]
+    Hệ số \(\sqrt{SS'}\) là do **đồng dạng bình phương diện tích**; không phải “lấy trung bình diện tích” như hình thang phẳng. Hai biên kiểm lý thuyết: nếu \(S'\to0\) công thức về chóp \(Sh/3\); nếu \(S'\to S\) (giới hạn) công thức về lăng trụ \(Sh\). Các phép giới hạn này giải thích công thức nhưng **không thay định nghĩa chóp cụt đều** cần hai đáy phân biệt.
 
-**Lập luận để tự đối chiếu sau khi thử:** V_lăng trụ=216cm³; V_chóp=72cm³. Hệ số 1/3 do chóp thu nhỏ tiết diện về đỉnh.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_FRUSTUM_SIMILARITY_AUTHORING_20261123.svg" alt="Chóp cụt đều từ chóp lớn cao H trừ chóp nhỏ cao kH, hai đáy diện tích S và S phẩy, phần còn lại cao h"><figcaption><strong>Hướng dẫn đọc:</strong> đỉnh \(T\) phía trên phần chóp nhỏ; cắt theo mặt **song song đáy** được đáy nhỏ \(S'\) và đáy lớn \(S\). Đường cao tổng \(H\) gồm \(kH\) của chóp trên và \(h\) của chóp cụt. Từ \(S'/S=k^2\), trừ hai thể tích để xuất hiện \(\sqrt{SS'}\).</figcaption></figure>
 
+    **Luyện tập 2 SGK — Hai đáy tam giác đều \(2a,a\):** Với \(a,h>0\), đáy lớn diện tích \(S=\frac{\sqrt3}{4}(2a)^2=\sqrt3a^2\), đáy nhỏ \(S'=\frac{\sqrt3}{4}a^2\), nên
+    \[
+    V_{\text{cụt}}=\frac h3\left(\sqrt3a^2+\frac{\sqrt3a^2}{4}+\frac{\sqrt3a^2}{2}\right)
+    =\frac{7\sqrt3}{12}a^2h.
+    \]
+    Gọi \(B_1,C_1\) là trung điểm \(AB,AC\); ba đoạn \(AA'\), \(B_1B'\), \(C_1C'\) song song và bằng nhau vì mặt cắt tạo bởi phép vị tự từ đỉnh chóp lớn. Do đó \(AB_1C_1.A'B'C'\) là lăng trụ có đáy tam giác đều cạnh \(a\), cao \(h\), thể tích \(V_{\text{lăng trụ}}=\frac{\sqrt3}{4}a^2h\). Tỉ số hai thể tích bằng \(7/3\), khác hẳn một hình chóp thường.
 
-#### EX-G11-CHVII-B27-02 — Tứ diện vuông ba cạnh
+    **Vận dụng.** Chóp cụt đều có \(S=36\text{ cm}^2\), \(S'=9\text{ cm}^2\) và \(h=4\text{ cm}\). Tính \(V\), so với phép tính sai lấy trung bình hai diện tích đáy rồi nhân chiều cao.
 
-**Nhiệm vụ:** Tứ diện OABC có OA=3,OB=4,OC=5 đôi một vuông góc. Tính V.
+    ??? question "Đối chiếu"
 
-**Lập luận để tự đối chiếu sau khi thử:** V=(3·4·5)/6=10 đơn vị³: đáy OBC có diện tích 4·5/2, chiều cao OA=3.
+        **Lời giải:** \(V=\frac43(36+9+\sqrt{36\cdot9})=\frac43(36+9+18)=84\text{ cm}^3\). Lấy trung bình hai diện tích cho \(V_{\text{sai}}=4(36+9)/2=90\text{ cm}^3\) là sai vì chóp cụt là khối **ba chiều** có tiết diện biến thiên theo bình phương tỉ lệ độ dài.
 
+    ??? tip "Kiểm lỗi"
 
-#### EX-G11-CHVII-B27-03 — Chóp cụt đều
+        Không áp công thức chóp cụt cho hai đáy tùy ý không đồng dạng/sóng song; cũng không bỏ \(\sqrt{SS'}\) khi đã đủ điều kiện của chóp cụt đều.
 
-**Nhiệm vụ:** Chóp cụt đều có diện tích đáy lớn 36cm², đáy bé 9cm², h=4cm. Tính V.
+    ### 1.3. Khối lăng trụ, khối hộp: diện tích đáy nhân chiều cao thật
 
-**Lập luận để tự đối chiếu sau khi thử:** V=4(36+9+√324)/3=4(45+18)/3=84cm³. Không lấy trung bình cộng diện tích hai đáy rồi nhân h.
+    **Hình thành thể tích khối lăng trụ:** Các thiết diện song song đáy của lăng trụ bằng nhau, nên sau khi tịnh tiến/cắt ghép giữ diện tích và chiều cao, thể tích bằng
+    \[
+    V_{\text{lăng trụ}}=S_{\text{đáy}}h.
+    \]
+    Với hình hộp chữ nhật có ba kích thước vuông góc \(x,y,z>0\), \(V=xyz\). Nhưng **hình hộp xiên** chỉ có \(V=S_{\text{đáy}}h\); không mặc định cạnh bên là \(h\). Hình bình hành đáy cạnh \(u,v\), góc xen giữa \(\theta\in(0^\circ,180^\circ)\) có \(S_{\text{đáy}}=uv\sin\theta\).
 
+    **Ví dụ 2 SGK — Lăng trụ không mặc định đứng:** Lăng trụ \(ABC.A'B'C'\) có đáy tam giác đều cạnh \(a\), mặt \((ACC'A')\perp(ABC)\), và tam giác \(A'AC\) cân tại \(A'\), \(AA'=A'C=b\), \(a<2b\). Gọi \(H\) là trung điểm \(AC\). Vì tam giác cân \(A'AC\), \(A'H\perp AC\); kết hợp hai mặt **vuông góc** theo Bài 25 và \(A'H\subset(ACC'A')\) cho \(A'H\perp(ABC)\). Đây mới là **chiều cao thật**:
+    \[
+    A'H=\sqrt{b^2-\frac{a^2}{4}},\qquad
+    V=\frac{a^2\sqrt3}{4}\sqrt{b^2-\frac{a^2}{4}}
+    =\frac{a^2\sqrt{3(4b^2-a^2)}}8.
+    \]
+    Nếu lấy \(AA'=b\) làm chiều cao sẽ sai, trừ trường hợp riêng cạnh bên vốn vuông góc đáy.
 
-#### EX-G11-CHVII-B27-04 — Đổi đơn vị
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_PRISM_INCLINED_HEIGHT_AUTHORING_20261123.svg" alt="Lăng trụ xiên có mặt bên ACC phẩy A phẩy vuông góc đáy, A phẩy H là chiều cao tới trung điểm H của AC"><figcaption><strong>Hướng dẫn đọc Hình 7.95:</strong> mặt bên màu tím chứa tam giác \(A'AC\). Điểm \(H\) là trung điểm **\(AC\)**, nên \(A'H\perp AC\). Vì hai mặt \((ACC'A')\) và đáy vuông góc, \(A'H\perp\) đáy; đoạn đỏ là chiều cao, không phải \(AA'=b\) xiên.</figcaption></figure>
 
-**Nhiệm vụ:** Bồn dạng hộp chữ nhật 1,2m × 0,8m × 0,5m. Tính lít nước tối đa nếu không có phần rỗng khác.
+    **Ví dụ 3 SGK — Hình hộp đáy bình hành xiên:** \(AB=8\) cm, \(AD=5\) cm, \(AA'=6\) cm, \(\angle BAD=30^\circ\), cạnh \(AA'\) tạo góc \(45^\circ\) với đáy. Đáy có diện tích \(S=8\cdot5\sin30^\circ=20\text{ cm}^2\). Chiều cao là hình chiếu **vuông góc** của \(AA'\) theo pháp tuyến đáy, \(h=6\sin45^\circ=3\sqrt2\) cm. Vậy \(V=20\cdot3\sqrt2=60\sqrt2\text{ cm}^3\). Chọn sin chứ không dùng cos vì góc \(45^\circ\) là góc **đường–mặt**.
 
-**Lập luận để tự đối chiếu sau khi thử:** V=0,48m³=480L. Ghi rõ giả thiết hộp kín đáy và không trừ thành bồn.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_PARALLELEPIPED_OBLIQUE_AUTHORING_20261123.svg" alt="Hình hộp xiên có đáy hình bình hành AB 8 AD 5 góc BAD 30 độ, cạnh bên AA phẩy 6 tạo góc 45 độ với đáy"><figcaption><strong>Hướng dẫn đọc Hình 7.97:</strong> diện tích đáy dùng **góc giữa hai cạnh đáy \(30^\circ\)**, còn đường cao \(A'H\) đỏ nét đứt dùng **góc cạnh bên với mặt đáy \(45^\circ\)**. Hai góc khác vai trò; chỉ nhân \(S\cdot A'H\), không nhân \(S\cdot AA'\).</figcaption></figure>
 
+    **Vận dụng SGK — Sọt chóp cụt đều:** Sọt có miệng vuông cạnh \(60\) cm, đáy vuông cạnh \(30\) cm, cạnh bên \(50\) cm. Bán kính tâm–đỉnh hai hình vuông lần lượt \(30\sqrt2\) và \(15\sqrt2\) cm, nên độ lệch ngang hai đỉnh tương ứng \(15\sqrt2\) cm. Tam giác vuông chứa cạnh bên cho
+    \[
+    h=\sqrt{50^2-(15\sqrt2)^2}=\sqrt{2050}\text{ cm}.
+    \]
+    \(S=3600\text{ cm}^2\), \(S'=900\text{ cm}^2\), nên \(V=\frac{\sqrt{2050}}3(3600+900+1800)=2100\sqrt{2050}\text{ cm}^3\). Vì \(1000\text{ cm}^3=1\) lít, \(V\approx95{,}1\) lít (mô hình không tính độ dày thành sọt và phần trống). Đây là ví dụ **phải tìm chiều cao trước công thức**, không dùng \(50\) cm là \(h\).
 
-#### EX-G11-CHVII-B27-05 — Hộp đáy vuông
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_FRUSTUM_BASKET_AUTHORING_20261123.svg" alt="Sọt chóp cụt đều đáy nhỏ cạnh 30, miệng cạnh 60, cạnh bên 50, độ cao h tính từ lệch ngang 15 căn hai"><figcaption><strong>Hướng dẫn đọc Hình 7.98:</strong> miệng xanh lục là hình vuông cạnh **60 cm**, đáy dưới xanh nhạt cạnh **30 cm**; cạnh bên màu xanh đậm dài 50 cm là **cạnh xiên**. Đường cao \(h\) nối tâm hai đáy, vuông góc cả hai. Độ lệch ngang của hai đỉnh cùng phía là **\(15\sqrt2\)**, không phải \(60-30\).</figcaption></figure>
 
-**Nhiệm vụ:** Hộp đáy vuông cạnh 5cm cao 8cm. Tính thể tích và so với chóp cùng đáy, cùng chiều cao.
+    **Vận dụng.** Một bể hình hộp chữ nhật dài \(1{,}2\) m, rộng \(0{,}8\) m và cao \(0{,}5\) m. Tính thể tích tính theo mét khối và lít; giải thích điều kiện để coi đó là lượng nước tối đa.
 
-**Lập luận để tự đối chiếu sau khi thử:** V_hộp=25·8=200cm³; V_chóp=200/3cm³, không phải 200cm³.
+    ??? question "Đối chiếu"
 
-## 2. Tự khắc phục lỗi
+        **Lời giải:** \(V=1{,}2\cdot0{,}8\cdot0{,}5=0{,}48\text{ m}^3=480\) lít. Kết quả là **dung tích hình học bên trong** nếu ba số là kích thước lòng bể, chưa trừ vật bên trong và giả định bể chứa tới độ cao \(0{,}5\) m.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B27-01"><summary><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Lấy trung bình cộng diện tích đáy rồi nhân h cho chóp cụt.</li><li><strong>Nhắc đúng bản chất:</strong> Phải có thêm √SS′ trong công thức chóp cụt đều.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B27, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> S=16,S′=4,h=3, V? <strong>Sau khi tự làm mới đối chiếu:</strong> 28.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B27-C04</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B27-C04">Quay lại câu canonical THPT-G11-CHVII-B27-C04</a></p></details>
+    ??? tip "Kiểm lỗi"
 
-## 3. Tiếp tục
-
-[Core và Luyện tập Bài 27](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+        Không đổi \(0{,}48\text{ m}^3\) thành \(48\) lít; \(1\text{ m}^3=1000\) lít. Nếu là kích thước ngoài, còn phải trừ độ dày thành bể trước khi gọi là dung tích.
