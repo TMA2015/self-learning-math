@@ -140,7 +140,9 @@ const normalizeRenderedMath=node=>{
  // MkDocs strips backslashes from TeX display brackets inside blockquotes.
  // Rehydrate only mathematical [..] with a TeX command, equality or exponent.
  // This includes source-locked W5 \cup/\mid and R_g/IQR_g formula cards.
- const fragments=/\[\s*([^\[\]]{2,1200}?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
+ // W5 P1 audit: cover grouped bases and original prose ^(n−k) exponents,
+ // as well as display brackets, without changing source-locked Markdown.
+ const fragments=/\[\s*([^\[\]]{2,1200}?)\s*\]|(?:\([^()\n]{1,70}\)|[A-Za-z0-9][A-Za-z0-9_]{0,20})\^(?:\{[^{}\n]{1,55}\}|\([^()\n]{1,55}\)|[A-Za-z0-9]+)/g;
  for(const t of texts){
   const v=t.nodeValue,parts=document.createDocumentFragment();let lastIndex=0,hit=false,match;
   fragments.lastIndex=0;
@@ -150,7 +152,10 @@ const normalizeRenderedMath=node=>{
    if(match.index>lastIndex)parts.append(document.createTextNode(v.slice(lastIndex,match.index)));
    const math=create("span","arithmatex");
    math.dataset.topicW3DisplayMath=match[1]?"recovered-display":"exponent";
-   math.textContent=match[1]?"\\["+match[1].trim()+"\\]":"\\("+match[0]+"\\)";
+   // a^(n−k) is written without TeX braces in approved prose; repair
+   // only the rendered copy, keeping canonical math and answer text untouched.
+   const inlineTex=match[0].replace(/\^\(([^()\n]{1,55})\)/g,"^{$1}");
+   math.textContent=match[1]?"\\["+match[1].trim()+"\\]":"\\("+inlineTex+"\\)";
    // This wrapper is created from exactly ONE approved TeX display block.
    // Concurrent MathJax startup + tab activation can emit multiple containers;
    // preserve the first, discard duplicate output DOM only (never source TeX).
