@@ -20,13 +20,20 @@ for(const [id,sha,src,asset,page,grade,group] of rows){
  assert(/name=["']viewport/.test(html),"Source viewport missing "+id);
  assert(!/\beval\s*\(|new Function\s*\(|XMLHttpRequest|WebSocket|sendBeacon/.test(html),"Prohibited source API "+id);
  assert(!/src=["']https?:|href=["']https?:/i.test(html),"External HTTP asset "+id);
+ assert(!/\b(?:localStorage|sessionStorage|indexedDB|document\.cookie|window\.parent|window\.top|postMessage|XMLHttpRequest|WebSocket|sendBeacon|navigator\.serviceWorker)\b|\bfetch\s*\(/.test(html),"Standalone model may not access shared site data/network: "+id);
 }
 assert.equal([...ids].filter(x=>x.startsWith("SLM-TOP")).length,22,"Wrong Topic model count");
 assert.equal([...ids].filter(x=>x.startsWith("SLM-SGK")).length,3,"Wrong SGK model count");
 const catalog=read("docs/thpt-preview/math-lab/index.md"),home=read("docs/thpt-preview/home.md");
 const main=read("mkdocs.yml"),thpt=read("mkdocs.thpt-preview.yml");
-for(const id of ids)assert(catalog.includes("models/"+id.toLowerCase()+"/"),"Catalog card missing "+id);
+for(const id of ids)assert(catalog.includes('href="../../assets/math-lab/models/'+id+'.html"'),"Direct full-page model link missing "+id);
 assert.equal((catalog.match(/data-ml-card\b/g)||[]).length,25,"Expected 25 cards");
+assert.equal((catalog.match(/href="\.\.\/\.\.\/assets\/math-lab\/models\/SLM-[A-Z0-9-]+\.html"/g)||[]).length,25,"All 25 must open full-page assets");
+const libraryJS=read("docs/assets/javascripts/math-lab-library-v1.js");
+const launcherJS=read("docs/assets/javascripts/thpt-r4-preview.js");
+assert(libraryJS.includes("location.replace(expected.href)")&&libraryJS.includes('sandbox="allow-scripts"'),"Safe legacy viewer redirects missing");
+assert(launcherJS.includes('labLink.href=base+"math-lab/"')&&launcherJS.includes('labLink.dataset.thptMathLabShortcut="1"'),"5+1 Math Lab auxiliary shortcut missing");
+
 assert.equal((home.match(/href="\.\.\/math-lab\/"/g)||[]).length,1,"Home missing ONE Math Lab card");
 assert(home.indexOf('href="../thu-vien/"')<home.indexOf('href="../math-lab/"')&&home.indexOf('href="../math-lab/"')<home.indexOf('href="../tien-do/"'),"Home card order must be Library / Math Lab / Progress");
 for(const c of [main,thpt]){
@@ -40,6 +47,8 @@ if(process.argv.includes("--built")){
   const out=path.join(root,dir),landing=path.join(out,"thpt-preview/math-lab/index.html");
   assert(fs.existsSync(landing),"Catalog HTML not built "+dir);
   assert(fs.readFileSync(landing,"utf8").includes("data-math-lab-catalog"),"Catalog controls not in build "+dir);
+  assert(fs.readFileSync(landing,"utf8").includes("../../assets/math-lab/models/SLM-TOP01-TRUTH-01.html"),"Built catalog link should go to full page");
+
   for(const [id,sha,src,asset,page] of rows){
    const model=path.join(out,asset.replace(/^docs\//,""));
    const view=path.join(out,page.replace(/^docs\//,"").replace(/\.md$/,"/index.html"));
