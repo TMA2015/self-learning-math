@@ -114,7 +114,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Mặt phẳng song song duy nhất qua điểm ngoài mặt</strong><p>Qua điểm \(A\notin(P)\), có **một và chỉ một** mặt phẳng đi qua \(A\) và song song với \((P)\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Song song với mặt phẳng thứ ba</strong><p>Hai mặt phẳng **phân biệt** cùng song song với mặt phẳng thứ ba thì **song song với nhau**. Nếu chúng có điểm chung, theo tính duy nhất chúng sẽ **trùng nhau**, trái giả thiết phân biệt.</p></div>
+    **Nhận xét suy ra từ tính duy nhất:** Nếu hai mặt phẳng **phân biệt** cùng song song với một mặt phẳng thứ ba, thì chúng song song nhau. Đây là câu hỏi/hệ quả của SGK, không được đóng nhãn thành một “Tính chất” riêng mới. Nếu hai mặt có điểm chung, tính duy nhất buộc chúng trùng nhau.
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Giao tuyến với mặt phẳng thứ ba</strong><p>Nếu \((P)\parallel(Q)\) và mặt \((R)\) cắt \((P)\) theo \(a\), thì \((R)\) cũng cắt \((Q)\) theo \(b\), với \(a\parallel b\). Các đường \(a,b\) nằm trong cùng mặt \((R)\).</p></div>
 
