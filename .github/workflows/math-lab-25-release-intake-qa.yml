@@ -7,6 +7,7 @@ on:
       - 'docs/thpt-preview/math-lab/**'
       - 'docs/assets/stylesheets/math-lab-library-v1.css'
       - 'docs/assets/javascripts/math-lab-library-v1.js'
+      - 'docs/assets/javascripts/thpt-r4-preview.js'
       - 'docs/thpt-preview/home.md'
       - 'mkdocs.yml'
       - 'mkdocs.thpt-preview.yml'
@@ -45,5 +46,5 @@ jobs:
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: Exact bytes preserved in built site
         run: node scripts/test-math-lab-25-release-intake.cjs --built
-      - name: Browser, accessibility and frame isolation
+      - name: Browser full-page scroll, model deep links and 5+1 shortcut
         run: python scripts/test-math-lab-25-browser.py
