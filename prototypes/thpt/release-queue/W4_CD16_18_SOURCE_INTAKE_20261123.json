@@ -1,13 +1,13 @@
 {
   "wave": "W4",
-  "phase": "SOURCE_INTAKE_VERIFIED_ONLY",
+  "phase": "W4_RELEASE_INTEGRATION_DRAFT_QA_PENDING",
   "standard": "SLM-THPT-QUALITY-ONE v3.2.0 Q01-Q18",
   "golden": "TOPIC_GOLDEN_UI_REV=20261122.1",
   "ownerDecision": "2026-11-23 OWNER_W3_CD12_15_P2_PASS; next W4 CĐ16–18 instructed; no implicit T5 production authorization",
   "sourceOfAuthority": "RELEASE MASTER #995 and exact authoring PR branch files",
   "assessmentMode": "PUBLIC_REPLAY_ONLY / CLIENT_SELF_CHECK_NO_MASTERY; independent TOPIC_READINESS not included",
-  "qaStatus": "NOT_RUN_FOR_W4",
-  "siteIntegration": "NOT_STARTED",
+  "qaStatus": "W4_SCOPED_CI_PENDING",
+  "siteIntegration": "NINE_PAGES_STAGED_ONLY_NO_PRODUCTION",
   "mergeDeploy": "NO_MERGE_NO_DEPLOY",
   "topics": {
     "16": {
@@ -29,7 +29,15 @@
         "FIG-G11-CHVII-B24-01_R00.svg",
         "FIG-G11-CHVII-B25-01_R00.svg"
       ],
-      "model": "slm-top16-ramp-angle-r00"
+      "model": "slm-top16-ramp-angle-r00",
+      "svg": [
+        "FIG-G11-CHVII-B22-01_R00.svg",
+        "FIG-G11-CHVII-B23-01_R00.svg",
+        "FIG-G11-CHVII-B24-01_R00.svg",
+        "FIG-G11-CHVII-B25-01_R00.svg"
+      ],
+      "groupsKnowledge": 4,
+      "groupsPractice": 4
     },
     "17": {
       "title": "Khoảng cách và thể tích khối đa diện",
@@ -48,7 +56,13 @@
         "FIG-G11-CHVII-B26-01_R00.svg",
         "FIG-G11-CHVII-B27-01_R00.svg"
       ],
-      "model": "slm-top17-frustum-volume-r00"
+      "model": "slm-top17-frustum-volume-r00",
+      "svg": [
+        "FIG-G11-CHVII-B26-01_R00.svg",
+        "FIG-G11-CHVII-B27-01_R00.svg"
+      ],
+      "groupsKnowledge": 2,
+      "groupsPractice": 3
     },
     "18": {
       "title": "Phương pháp tọa độ trong không gian Oxyz",
@@ -75,7 +89,21 @@
         "FIG-TOP18-B17-SPHERE-SECTION-WHITE-R00.svg",
         "FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg"
       ],
-      "model": "slm-top18-oxyz-geometry-r00"
+      "model": "slm-top18-oxyz-geometry-r00",
+      "svg": [
+        "FIG-G12-CHII-B06-R00.svg",
+        "FIG-G12-CHII-B07-R00.svg",
+        "FIG-G12-CHII-B08-R00.svg",
+        "FIG-TOP18-B14-NORMAL-WHITE-R00.svg",
+        "FIG-TOP18-B15-LINE-WHITE-R00.svg",
+        "FIG-TOP18-B15-SKEW-WHITE-R00.svg",
+        "FIG-TOP18-B16-LINE-PLANE-ANGLE-WHITE-R00.svg",
+        "FIG-TOP18-B16-TWO-PLANES-WHITE-R00.svg",
+        "FIG-TOP18-B17-SPHERE-SECTION-WHITE-R00.svg",
+        "FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg"
+      ],
+      "groupsKnowledge": 8,
+      "groupsPractice": 8
     }
   },
   "verifiedSourceReceiptPairs": 6,
