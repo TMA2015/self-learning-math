@@ -485,6 +485,43 @@ function isMathLabDeployRecovery(files){
  }catch{return false}
 }
 
+/* Owner P1 correction to earlier no-frame release: retain ALL authored page
+ * guidance/back links at each of 25 contextual top-level model routes.
+ * Only exact Math Lab viewer/catalog/hook/QA changes get dedicated 200-case
+ * source-locked deploy; any extra/missing/shared path remains FULL. */
+const MATHLAB_RESTORE_PAGE_FILES=new Set([
+ "hooks/math_lab_full_page.py",
+ "mkdocs.yml",
+ "docs/thpt-preview/math-lab/index.md",
+ "docs/assets/javascripts/math-lab-library-v1.js",
+ "scripts/test-math-lab-25-release-intake.cjs",
+ "scripts/test-math-lab-25-browser.py",
+ ".github/workflows/math-lab-25-release-intake-qa.yml",
+ "scripts/test-thpt-release-impact.cjs"
+]);
+function isMathLabRestorePage(files){
+ if(files.length!==MATHLAB_RESTORE_PAGE_FILES.size ||
+    new Set(files).size!==files.length ||
+    !files.every(p=>MATHLAB_RESTORE_PAGE_FILES.has(p)))return false;
+ try{
+  const catalog=fs.readFileSync("docs/thpt-preview/math-lab/index.md","utf8");
+  const hook=fs.readFileSync("hooks/math_lab_full_page.py","utf8");
+  const cfg=fs.readFileSync("mkdocs.yml","utf8");
+  const js=fs.readFileSync("docs/assets/javascripts/math-lab-library-v1.js","utf8");
+  return (catalog.match(/data-ml-card\b/g)||[]).length===25 &&
+    (catalog.match(/href="models\/slm-[a-z0-9-]+\/"/g)||[]).length===25 &&
+    catalog.includes('href="models/slm-top01-truth-01/"') &&
+    catalog.includes('href="models/slm-sgk-g11-b04-trigeq/"') &&
+    cfg.includes("hooks/math_lab_full_page.py") &&
+    hook.includes("def on_post_page(") &&
+    hook.includes("Math Lab source SHA mismatch") &&
+    hook.includes("data-ml-restored-full-page") &&
+    hook.includes("#ml-restored-bottom") &&
+    !js.includes("location.replace(expected.href)") &&
+    js.includes("mountMathLabShortcut");
+ }catch{return false}
+}
+
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
@@ -493,6 +530,7 @@ function classify(paths,{manual=false}={}){
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(isExactMathLabFullPage(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_25_MODELS_DIRECT_FULL_PAGE_WITH_200_BROWSER_GATES"};
  if(isMathLabDeployRecovery(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTMERGE_V2_HEAD_SHA_DEPLOY_RECOVERY_25_MODEL_200_BROWSER_PROOF"};
+ if(isMathLabRestorePage(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_RESTORE_25_ORIGINAL_MODEL_PAGE_GUIDANCE_BACK_NAV_WITHOUT_IFRAMES"};
  if(isScopedTopicW2W3Hotfix(files))return {impact:"SCOPED_TOPIC_HOTFIX_W2_W3",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTPUBLISH_CĐ06_15_TEXT_MATH_SCOPED_BROWSER"};
  if(isExactW5InlineAudit(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"OWNER_W5_COMPLETE_VISIBLE_MATH_AUDIT_EXACT_THREE_FILES"};
  if(isExactW5P1(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"EXACT_OWNER_P1_W5_MATH_PILOT_LAUNCHER_BROWSER"};
@@ -654,8 +692,16 @@ function selfTest(){
  assert.equal(classify(hotfix.slice(1)).full_suite,"true","Missing hotfix file must fail closed");
  assert.equal(classify([...hotfix,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared runtime is not Topic-only");
  assert.equal(classify([...hotfix,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).full_suite,"true","SGK mixed change fails closed");
+ const labRestore=[...MATHLAB_RESTORE_PAGE_FILES];
+ assert.equal(classify(labRestore).impact,"SCOPED_MATH_LAB_FULLPAGE","Exact restore of 25 contextual model pages is scoped by 200 browser checks");
+ assert.equal(classify(labRestore.slice(1)).impact,"FULL","Missing page-restore path fails closed");
+ assert.equal(classify([...labRestore,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).impact,"FULL","Mixed SGK restore fails closed");
+ assert.equal(classify([...labRestore,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL","Golden runtime cannot join restore");
+ assert.equal(classify([...labRestore,"docs/assets/data/assessment/readiness.json"]).impact,"FULL","Assessment path cannot join restore");
+ assert.equal(classify([...labRestore,"docs/assets/math-lab/models/SLM-TOP01-TRUTH-01.html"]).impact,"FULL","Model math asset change cannot join restore");
+ assert.equal(classify(labRestore,{manual:true}).impact,"FULL","Manual full release cannot be scoped");
  const labRecovery=[...MATHLAB_DEPLOY_RECOVERY_FILES];
- assert.equal(classify(labRecovery).impact,"SCOPED_MATH_LAB_FULLPAGE","Exact Math Lab recovery uses full 25-model browser gate");
+ assert.equal(classify(labRecovery).impact,"FULL","Historical bare-asset recovery no longer matches restored viewer contract");
  assert.equal(classify(labRecovery.slice(1)).impact,"FULL","Incomplete Math Lab recovery must fail closed");
  assert.equal(classify([...labRecovery,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL","Shared runtime cannot use recovery");
  assert.equal(classify([...labRecovery,"docs/thpt-preview/chuyen-de/cd16/kien-thuc.md"]).impact,"FULL","Topic academic change cannot use recovery");
@@ -663,7 +709,7 @@ function selfTest(){
  assert.equal(classify([...labRecovery,"docs/assets/javascripts/math-lab-library-v1.js"]).impact,"FULL","Additional Math Lab runtime change cannot use recovery");
  assert.equal(classify(labRecovery,{manual:true}).impact,"FULL","Requested full review always remains full");
  const lab=[...MATHLAB_FULLPAGE_RELEASE_FILES];
- assert.equal(classify(lab).impact,"SCOPED_MATH_LAB_FULLPAGE","Exact 25-model scoped deploy must classify");
+ assert.equal(classify(lab).impact,"FULL","Historical bare-asset release no longer matches restored viewer contract");
  assert.equal(classify(lab.slice(1)).impact,"FULL","Missing Math Lab release file fails closed");
  for(const extra of ["docs/assets/javascripts/thpt-r4-preview.js",
    "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md","mkdocs.yml",
