@@ -105,7 +105,7 @@
 
     ### 2.2. Số hạng tổng quát
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Số hạng tổng quát của cấp số cộng</strong><p>Với cấp số cộng có số hạng đầu \(u_1\), công sai \(d\), số hạng thứ \(n\) là</p><p>\[u_n=u_1+(n-1)d,\qquad n\ge1.\]</p><p>Sở dĩ là \(n-1\) vì có đúng \(n-1\) khoảng từ vị trí \(1\) đến \(n\).</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Số hạng tổng quát của cấp số cộng</strong><p>Với cấp số cộng có số hạng đầu \(u_1\), công sai \(d\), số hạng thứ \(n\) là</p><p>\(u_n=u_1+(n-1)d,\qquad n\ge1.\)</p><p>Sở dĩ là \(n-1\) vì có đúng \(n-1\) khoảng từ vị trí \(1\) đến \(n\).</p></div>
 
     **Tìm ngược khi biết hai vị trí:** Nếu \(p\ne q\) và hai số hạng \(u_p,u_q\) đều tồn tại, suy ra \(d=(u_q-u_p)/(q-p)\); tiếp theo \(u_1=u_p-(p-1)d\). Đây là phép biến đổi từ công thức chính, không phải một định nghĩa thứ hai.
 
@@ -113,7 +113,7 @@
 
     ### 2.3. Tổng \(n\) số hạng đầu của một cấp số cộng
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tổng \(n\) số hạng đầu của cấp số cộng</strong><p>Với \(n\in\mathbb N^*\), đặt \(S_n=u_1+u_2+\cdots+u_n\). Khi đó</p><p>\[S_n=\frac n2[2u_1+(n-1)d]=\frac{n(u_1+u_n)}2.\]</p><p>Dùng dạng có \(u_n\) khi biết số cuối, dùng dạng có \(d\) khi chỉ biết số đầu và công sai. Hai công thức tương đương vì \(u_n=u_1+(n-1)d\).</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tổng \(n\) số hạng đầu của cấp số cộng</strong><p>Với \(n\in\mathbb N^*\), đặt \(S_n=u_1+u_2+\cdots+u_n\). Khi đó</p><p>\(S_n=\dfrac n2[2u_1+(n-1)d]=\dfrac{n(u_1+u_n)}2.\)</p><p>Dùng dạng có \(u_n\) khi biết số cuối, dùng dạng có \(d\) khi chỉ biết số đầu và công sai. Hai công thức tương đương vì \(u_n=u_1+(n-1)d\).</p></div>
 
     **Giải thích ngắn:** Viết tổng xuôi và ngược rồi cộng từng cặp cho \(2S_n=n(u_1+u_n)\); cách này đúng cả khi \(d=0\) hoặc \(d<0\).
 
