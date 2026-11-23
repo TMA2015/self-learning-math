@@ -123,3 +123,139 @@
     | \((P)\parallel(Q)\), \(\Delta\perp(P)\) | \(\Delta\perp(Q)\) |
     | \((P)\ne(Q)\), cả hai vuông góc \(\Delta\) | \((P)\parallel(Q)\) |
     | \(a\perp\Delta\), \((P)\perp\Delta\) | \(a\subset(P)\) **hoặc** \(a\parallel(P)\) |
+
+=== "Ví dụ"
+
+    ### 3.1. Hai lần áp dụng tiêu chuẩn hai đường cắt nhau
+
+    **Đề bài.** Hình chóp \(S.ABC\) có đáy \(ABC\) vuông tại \(B\), \(SA\perp AB\) và \(SA\perp AC\). Chứng minh \(BC\perp(SAB)\).
+
+    **Phân tích:** Không thể suy ngay \(BC\perp(SAB)\) từ \(BC\perp BA\). Đầu tiên chứng minh \(SA\perp(ABC)\) bằng **hai đường \(AB,AC\) cắt tại \(A\)**; từ đó mới có vuông góc thứ hai cần thiết.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Vì \(SA\perp AB\), \(SA\perp AC\) và \(AB,AC\subset(ABC)\) cắt tại \(A\), nên \(SA\perp(ABC)\). Suy ra \(SA\perp BC\). Tam giác \(ABC\) vuông tại \(B\), nên \(BC\perp BA\). Vì \(SA,BA\subset(SAB)\) cắt tại \(A\), ta có \(BC\perp(SAB)\).</p></div>
+
+    **Kiểm lại:** Hai lần áp tiêu chuẩn đều nêu rõ **hai đường trong mặt phẳng và giao điểm**; không đổi “cắt nhau” thành “song song”.
+
+    ### 3.2. Cột treo đồ có chân đế chữ thập
+
+    **Đề bài.** Hai thanh chân đế \(a,b\) cắt nhau tại \(O\) và nằm trong mặt sàn \((P)\). Một cột \(d\) thỏa \(d\perp a\), \(d\perp b\). Chứng minh cột vuông góc sàn và nêu giả thiết thiết yếu.
+
+    **Phân tích:** Một cột thẳng đứng không được xác định bằng việc vuông góc duy nhất một thanh. Cần **hai phương khác nhau** của mặt sàn.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Vì \(a,b\) cùng nằm trong \((P)\) và cắt nhau tại \(O\), đồng thời \(d\perp a\), \(d\perp b\), theo tiêu chuẩn hai đường cắt nhau, \(d\perp(P)\). Điều kiện thiết yếu là \(a,b\) cắt nhau, không chỉ song song.</p></div>
+
+    **Kiểm lại:** Nếu \(a\parallel b\), một đường có thể vuông góc cả hai nhưng **không** vuông góc với mọi phương khác trên sàn.
+
+    ### 3.3. Khoảng cách bằng nhau và mặt phẳng trung trực
+
+    **Đề bài.** Cho \(AB=10\) cm, \(I\) trung điểm. Điểm \(M\) thuộc mặt phẳng trung trực của \(AB\), \(MI=12\) cm. Tính \(MA,MB\) và giải thích tính bằng nhau.
+
+    **Phân tích:** \(AB\perp(\alpha)\) tại \(I\) nên \(MI\perp AB\). Sử dụng Pythagore trong hai tam giác vuông \(MIA,MIB\) có \(IA=IB=5\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(IA=IB=5\) cm. Vì \(M,I\in(\alpha)\) và \(AB\perp(\alpha)\), \(MI\perp AB\). Suy ra \(MA^2=MI^2+IA^2=12^2+5^2=169\), \(MB^2=MI^2+IB^2=169\). Do đó \(MA=MB=13\) cm.</p></div>
+
+    **Kiểm lại:** \(MI=12>0\) nên \(M\ne I\), tam giác Pythagore ở đây không suy biến. Mặt phẳng trung trực có **vô số điểm** như \(M\), không chỉ điểm giữa \(I\).
+
+    ### 3.4. Vì sao chân vuông góc xuống mặt phẳng là duy nhất?
+
+    **Đề bài.** Cho điểm \(A\notin(P)\). Chứng minh không thể tồn tại hai điểm \(H,K\) khác nhau trong \((P)\) sao cho \(AH\perp(P)\) và \(AK\perp(P)\).
+
+    **Phân tích:** SGK có tính duy nhất đường vuông góc với mặt phẳng qua một điểm. Nếu có hai chân, hai đường cùng qua \(A\) đều là pháp tuyến của \((P)\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Giả sử \(H\ne K\) thỏa điều kiện. Khi đó \(AH,AK\) là hai đường phân biệt cùng đi qua \(A\), và đều vuông góc \((P)\), trái với tính duy nhất đường vuông góc \((P)\) qua \(A\). Do đó chỉ có một điểm \(H\) như vậy, là giao điểm của đường duy nhất qua \(A\) vuông góc \((P)\) với mặt phẳng.</p></div>
+
+    **Kiểm lại:** Sự tồn tại của chân là nhờ có duy nhất pháp tuyến qua \(A\) **và pháp tuyến cắt \((P)\)**; không phải suy chỉ từ “ít nhất một điểm ở gần nhất”.
+
+    ### 3.5. Chứng minh đường nối hai trọng tâm vuông góc mặt phẳng
+
+    **Đề bài.** Tứ diện \(OABC\) có \(OA,OB,OC\) đôi một vuông góc. \(M,N\) là trọng tâm của tam giác \(ABC\), \(OBC\). Chứng minh \(MN\perp(OBC)\).
+
+    **Phân tích:** \(OA\perp OB\), \(OA\perp OC\); hai đường \(OB,OC\) cắt tại \(O\) thuộc \((OBC)\), nên \(OA\perp(OBC)\). Cần chứng minh **\(MN\parallel OA\)** bằng tính chất trọng tâm trước khi thay pháp tuyến.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Lấy \(D\) là trung điểm \(BC\). Hai trọng tâm \(M\in AD\), \(N\in OD\) thỏa \(DM/DA=DN/DO=1/3\). Trong tam giác \(DAO\), theo định lí Ta-lét đảo, \(MN\parallel AO\). Vì \(OA\perp OB\), \(OA\perp OC\) và \(OB,OC\) cắt trong \((OBC)\), \(OA\perp(OBC)\). Do \(MN\parallel OA\), suy \(MN\perp(OBC)\).</p></div>
+
+    **Kiểm lại:** Tỉ lệ trọng tâm tính từ **điểm \(D\)** là \(1/3\), không phải \(2/3\); nếu lấy từ đỉnh \(A,O\) mới là \(2/3\).
+
+    ### 3.6. Pháp tuyến của hai mặt phẳng song song
+
+    **Đề bài.** Cho \((P)\parallel(Q)\) và \(\Delta\perp(P)\). Chứng minh \(\Delta\perp(Q)\). Nêu kết luận ngược khi hai mặt phẳng phân biệt cùng vuông góc \(\Delta\).
+
+    **Phân tích:** Mọi phương trong \((Q)\) đều song song với một phương tương ứng trong \((P)\). Góc giữa đường và mặt phẳng có thể kiểm qua **mọi đường trong mặt phẳng**, không đo từ hai hình bình hành vẽ trên giấy.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Lấy \(b\subset(Q)\) bất kì. Vì \((P)\parallel(Q)\), tồn tại \(a\subset(P)\) với \(a\parallel b\). Từ \(\Delta\perp(P)\) suy \(\Delta\perp a\); vì \(a\parallel b\), \(\Delta\perp b\). Do \(b\) tùy ý, \(\Delta\perp(Q)\). Ngược lại, hai mặt phẳng **phân biệt** cùng vuông góc một đường thì song song.</p></div>
+
+    **Kiểm lại:** Điều kiện \((P)\ne(Q)\) cần khi phát biểu kết luận hai mặt phẳng song song theo nghĩa phân biệt; không coi một mặt phẳng song song với chính nó trong phát biểu SGK.
+
+    ### 3.7. Đường thẳng và mặt phẳng cùng vuông góc đường thứ ba
+
+    **Đề bài.** Cho \(\Delta\perp(P)\) và đường \(a\perp\Delta\). Chứng minh \(a\) không nhất thiết song song với \((P)\), đồng thời cho biết đầy đủ các trường hợp có thể.
+
+    **Phân tích:** \(a\) có phương song song với các phương thuộc \((P)\), nhưng vị trí của \(a\) có thể ngay **trong mặt phẳng** hoặc ở ngoài mặt phẳng.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Vì \(a\perp\Delta\) và \((P)\perp\Delta\), đường \(a\) có phương nằm trong \((P)\). Nếu \(a\) có một điểm thuộc \((P)\), toàn bộ \(a\subset(P)\). Nếu \(a\) không có điểm chung với \((P)\), \(a\parallel(P)\). Do đó kết luận đúng là \(a\subset(P)\) **hoặc** \(a\parallel(P)\), không chỉ một vế.</p></div>
+
+    **Kiểm lại:** Một đường trong mặt phẳng cũng vuông góc với pháp tuyến của mặt phẳng, nên là phản ví dụ cho khẳng định chỉ “song song”.
+
+    ### 3.8. Bài toán SGK: trung điểm trong hình chóp đáy vuông
+
+    **Đề bài.** Cho hình chóp \(S.ABCD\) có đáy là hình vuông, \(SA\perp(ABCD)\). Gọi \(M\) trung điểm \(SB\), \(N\) trung điểm \(BC\). Chứng minh \(BD\perp MN\).
+
+    **Phân tích:** Vì \(M,N\) là trung điểm hai cạnh của tam giác \(SBC\), \(MN\parallel SC\). Để chứng minh \(BD\perp SC\), tìm mặt phẳng chứa \(SC\) mà \(BD\) vuông góc.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Từ \(SA\perp(ABCD)\) suy \(SA\perp BD\). Đáy hình vuông có hai đường chéo \(AC\perp BD\), với \(SA,AC\subset(SAC)\) cắt tại \(A\). Vì vậy \(BD\perp(SAC)\), nên \(BD\perp SC\). Trong tam giác \(SBC\), \(M,N\) là trung điểm \(SB,BC\), suy \(MN\parallel SC\). Do đó \(BD\perp MN\).</p></div>
+
+    **Kiểm lại:** \(BD\) không nằm trong \((SAC)\) nhưng vuông góc với **hai đường cắt nhau** \(SA,AC\) của mặt phẳng ấy; kết luận được phép dùng. \(MN\parallel SC\) do đường trung bình, không phải vì nét vẽ.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Vuông góc một đường trên mặt phẳng là vuông góc cả mặt phẳng
+
+    **Dấu hiệu:** Chỉ từ \(d\perp a\) với \(a\subset(P)\), kết luận \(d\perp(P)\).
+
+    **Vì sao sai:** Mặt phẳng có nhiều phương; một điều kiện vuông góc chỉ kiểm một phương, chưa đủ định hướng pháp tuyến.
+
+    **Cách sửa:** Cần thêm \(d\perp b\) với **\(a,b\) cắt nhau và cùng nằm trong \((P)\)**, hoặc một căn cứ tương đương mạnh hơn.
+
+    ### 4.2. Kiểm hai đường song song rồi áp tiêu chuẩn
+
+    **Dấu hiệu:** Có \(d\perp a\), \(d\perp b\), nhưng \(a\parallel b\) trong \((P)\), vẫn kết luận \(d\perp(P)\).
+
+    **Vì sao sai:** Hai đường song song chỉ biểu thị một phương của mặt phẳng, không thỏa giả thiết **hai đường cắt nhau**.
+
+    **Cách sửa:** Dựng thêm một đường thứ hai thuộc \((P)\) cắt đường thứ nhất, rồi chứng minh vuông góc đường ấy.
+
+    ### 4.3. Nhầm vuông góc cùng đường và cùng mặt phẳng
+
+    **Dấu hiệu:** Nghĩ hai đường cùng vuông góc một **đường thứ ba** thì chắc chắn song song, như hai đường cùng vuông góc một **mặt phẳng**.
+
+    **Vì sao sai:** Trong không gian, \(Ox,Oy\) đều vuông góc \(Oz\) nhưng không song song; còn các pháp tuyến cùng một mặt phẳng phải cùng phương.
+
+    **Cách sửa:** Đọc đúng đối tượng: \(a\perp(P),b\perp(P)\Rightarrow a\parallel b\) nếu \(a\ne b\); \(a\perp c,b\perp c\) không đủ để suy song song.
+
+    ### 4.4. Mặt phẳng trung trực chỉ gồm trung điểm
+
+    **Dấu hiệu:** Cho rằng chỉ điểm \(I\) cách đều hai đầu \(A,B\) nên “mặt phẳng trung trực” là điểm \(I\).
+
+    **Vì sao sai:** Mọi điểm trên mặt phẳng qua \(I\) vuông góc \(AB\) đều có cùng khoảng cách tới \(A,B\).
+
+    **Cách sửa:** Dùng \(AI=BI\), \(MI\perp AB\) để thấy \(MA^2=MI^2+AI^2=MI^2+BI^2=MB^2\) khi \(M\ne I\); \(M=I\) trực tiếp thỏa.
+
+    ### 4.5. Quên chữ duy nhất hoặc đổi đối tượng của định lí
+
+    **Dấu hiệu:** Nói qua một điểm có nhiều đường vuông góc cùng một mặt phẳng, hoặc lẫn với “qua một điểm có một mặt phẳng vuông góc một đường”.
+
+    **Vì sao sai:** Cả hai là kết quả duy nhất nhưng **đối tượng được dựng khác nhau** (đường hoặc mặt phẳng).
+
+    **Cách sửa:** Viết đầy đủ “điểm O + mặt phẳng P → duy nhất đường d⊥P” và “điểm O + đường Δ → duy nhất mặt phẳng α⊥Δ”.
+
+    ### 4.6. Bỏ một trường hợp khi đường và mặt phẳng cùng vuông góc một đường
+
+    **Dấu hiệu:** Từ \(a\perp\Delta\), \((P)\perp\Delta\) chỉ kết luận \(a\parallel(P)\).
+
+    **Vì sao sai:** \(a\) cũng có thể **nằm trong \((P)\)**; cả hai cùng có phương vuông góc với pháp tuyến \(\Delta\).
+
+    **Cách sửa:** Ghi đầy đủ **\(a\subset(P)\) hoặc \(a\parallel(P)\)**. Khi muốn chọn một kết luận, cần thêm điều kiện \(a\) có/không có điểm chung với \((P)\).
+
+    **Học tiếp:** [Core/Luyện tập Bài 23](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn S1: SGK Toán 11 Kết nối tri thức, tập hai, Bài 23 “Đường thẳng vuông góc với mặt phẳng”, trang in 31–37. Ba mục SGK: “Đường thẳng vuông góc với mặt phẳng”; “Tính chất”; “Liên hệ giữa quan hệ song song và quan hệ vuông góc của đường thẳng và mặt phẳng”. Đối chiếu nội dung văn bản PDF số hóa về HĐ1–HĐ10, ví dụ và tính chất, nhưng PDF screenshot trang in↔index chưa kiểm được (SOURCE_VISUAL_HOLD). Hình kiểm hai đường cắt nhau dùng lại từ thư viện gốc; bổ sung hình mặt phẳng trung trực và hai mặt phẳng song song với cùng pháp tuyến tại đúng đoạn giảng thiếu hình. Không sửa Core/Luyện tập, Tự kiểm tra hoặc ngân hàng đánh giá.</p>
