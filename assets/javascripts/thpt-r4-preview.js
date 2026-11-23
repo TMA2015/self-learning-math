@@ -90,7 +90,7 @@
   if(document.querySelector("[data-thpt-r4-launcher]"))return;
   const header=document.querySelector(".md-header__inner");
   if(!header)return;
-  const topics=[["Hàm số và đồ thị · MẪU","chuyen-de/ham-so/kien-thuc/"]];
+  const topics=[["Danh mục 22 Chuyên đề đã phát hành","chuyen-de/"]];
   const groups=[
    ["Trang chủ THPT","home/"],["Học theo SGK","sgk/"],
    ["Chuyên đề","chuyen-de/"],["Thư viện bài tập","thu-vien/"],
@@ -100,10 +100,10 @@
   btn.type="button";btn.className="roadmap-topic-launcher thpt-r4-launcher";
   btn.dataset.thptR4Launcher="1";
   btn.setAttribute("aria-haspopup","dialog");
-  btn.setAttribute("aria-label","Mở 5 nhóm THPT và "+topics.length+" chuyên đề mẫu, chưa phát hành");
+  btn.setAttribute("aria-label","Mở 5 nhóm THPT và danh mục 22 Chuyên đề chính thức");
   const mark=document.createElement("span");mark.className="roadmap-topic-launcher__mark";mark.textContent="▤";
   const count=document.createElement("span");count.className="roadmap-topic-launcher__count";count.textContent="5 + "+topics.length;
-  const name=document.createElement("span");name.className="roadmap-topic-launcher__name";name.textContent="mẫu";
+  const name=document.createElement("span");name.className="roadmap-topic-launcher__name";name.textContent="danh mục";
   btn.append(mark,count,name);
   btn.addEventListener("click",()=>{
    let dlg=document.querySelector("[data-thpt-r4-shortcut-dialog]");
@@ -112,11 +112,11 @@
     dlg.className="roadmap-topic-dialog";dlg.dataset.thptR4ShortcutDialog="1";
     dlg.setAttribute("aria-label","Điều hướng nhanh Toán THPT");
     const heading=document.createElement("div");heading.className="roadmap-topic-dialog__heading";
-    const title=document.createElement("h2");title.textContent="Toán THPT · 5 nhóm + "+topics.length+" chuyên đề mẫu";
+    const title=document.createElement("h2");title.textContent="Toán THPT · 5 nhóm + danh mục 22 Chuyên đề";
     const close=document.createElement("button");close.type="button";close.className="roadmap-topic-dialog__close";close.textContent="Đóng ✕";
     close.addEventListener("click",()=>dlg.close());heading.append(title,close);
     const hint=document.createElement("p");hint.className="roadmap-topic-dialog__hint";
-    hint.textContent="Đây là các trang minh họa chưa phát hành, không phải danh mục chuyên đề đã nghiệm thu.";
+    hint.textContent="Chọn danh mục 22 Chuyên đề chính thức hoặc một trong năm nhóm học THPT.";
     const section=document.createElement("details");section.className="roadmap-main-quick";section.open=true;
     const summary=document.createElement("summary");summary.textContent="5 nhóm THPT · mở/thu gọn";
     const nav=document.createElement("nav");nav.className="roadmap-main-quick__links";
@@ -136,7 +136,7 @@
     coverLink.dataset.mathProgramCoverLink="1";
     coverNav.appendChild(coverLink);
     const topicNav=document.createElement("nav");topicNav.className="roadmap-topic-dialog__list";
-    topicNav.setAttribute("aria-label","Các chuyên đề mẫu THPT");
+    topicNav.setAttribute("aria-label","Danh mục 22 Chuyên đề Toán THPT");
     for(const [label,url]of topics){
      const a=document.createElement("a");a.href=base+url;a.textContent=label;topicNav.append(a);
     }
