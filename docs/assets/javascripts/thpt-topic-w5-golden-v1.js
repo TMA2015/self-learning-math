@@ -151,19 +151,16 @@ const normalizeRenderedMath=node=>{
    const math=create("span","arithmatex");
    math.dataset.topicW3DisplayMath=match[1]?"recovered-display":"exponent";
    math.textContent=match[1]?"\\["+match[1].trim()+"\\]":"\\("+match[0]+"\\)";
-   // A second MathJax pass (including its global startup) can race our
-   // scoped typesetPromise. One recovered display span is ONE formula: prune
-   // only identical sibling outputs, never content/answers or distinct math.
+   // This wrapper is created from exactly ONE approved TeX display block.
+   // Concurrent MathJax startup + tab activation can emit multiple containers;
+   // preserve the first, discard duplicate output DOM only (never source TeX).
    if(match[1]){
     const collapse=()=>{
-     const views=[...math.querySelectorAll(":scope > mjx-container")];
-     if(views.length<2)return;
-     const first=views[0].textContent;
-     if(!first||views.some(x=>x.textContent!==first))return;
-     views.slice(1).forEach(x=>x.remove());
+     const views=[...math.querySelectorAll("mjx-container")];
+     if(views.length>1)views.slice(1).forEach(x=>x.remove());
     };
     const observer=new MutationObserver(collapse);
-    observer.observe(math,{childList:true});
+    observer.observe(math,{childList:true,subtree:true});
    }
    parts.append(math);lastIndex=fragments.lastIndex;
   }
