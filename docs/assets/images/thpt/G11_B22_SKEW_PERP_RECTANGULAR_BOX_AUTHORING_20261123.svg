@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="470" viewBox="0 0 920 470" role="img" aria-labelledby="title desc">
+<title id="title">Hai cạnh AB và CC phẩy của hình hộp chữ nhật vuông góc dù chéo nhau</title>
+<desc id="desc">Hình hộp chữ nhật ABCD.A phẩy B phẩy C phẩy D phẩy. Cạnh AB màu xanh nằm ở đáy trước; cạnh CC phẩy màu cam đứng ở phía sau; cạnh AA phẩy màu lục song song CC phẩy và vuông góc AB tại A. Suy ra góc giữa AB và CC phẩy bằng góc AB và AA phẩy, bằng 90 độ, dù AB không giao CC phẩy.</desc>
+<rect width="920" height="470" rx="18" fill="#fff"/>
+<text x="460" y="35" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#193954">Vuông góc theo phương không đòi hai đường cắt nhau</text>
+<g stroke="#697b8e" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M160 348 L455 348 L580 250 L285 250 Z" />
+<path d="M160 142 L455 142 L580 44 L285 44 Z" />
+<path d="M160 142 L160 348 M455 142 L455 348 M580 44 L580 250 M285 44 L285 250"/>
+</g>
+<g stroke-linecap="round" stroke-width="7.5" fill="none">
+<path d="M160 348 L455 348" stroke="#2369a1"/>
+<path d="M160 348 L160 142" stroke="#228266"/>
+<path d="M580 250 L580 44" stroke="#c65b36"/>
+</g>
+<path d="M180 348 L180 328 L160 328" fill="none" stroke="#2369a1" stroke-width="3.2"/>
+<g font-family="Arial,sans-serif" font-size="21" fill="#253a55">
+<text x="138" y="370">A</text><text x="463" y="371">B</text><text x="591" y="267">C</text><text x="271" y="278">D</text>
+<text x="131" y="136">A′</text><text x="463" y="137">B′</text><text x="593" y="43">C′</text><text x="271" y="43">D′</text>
+</g>
+<rect x="638" y="93" width="243" height="236" rx="13" fill="#f8fafc" stroke="#d9e1e9"/>
+<g font-family="Arial,sans-serif" font-size="18" fill="#27425d">
+<text x="661" y="130" font-weight="700">Đọc theo ba bước</text>
+<line x1="664" y1="156" x2="700" y2="156" stroke="#2369a1" stroke-width="6" stroke-linecap="round"/>
+<text x="711" y="162">AB (đáy trước)</text>
+<line x1="664" y1="191" x2="700" y2="191" stroke="#c65b36" stroke-width="6" stroke-linecap="round"/>
+<text x="711" y="197">CC′ (phía sau)</text>
+<line x1="664" y1="225" x2="700" y2="225" stroke="#228266" stroke-width="6" stroke-linecap="round"/>
+<text x="711" y="231">AA′ ∥ CC′</text>
+<text x="661" y="272">AB ⟂ AA′ tại A</text>
+<text x="661" y="301" font-weight="700">⇒ AB ⟂ CC′</text>
+</g>
+<text x="460" y="416" font-family="Arial,sans-serif" text-anchor="middle" fill="#475569" font-size="17">Hình hộp chữ nhật: AB và CC′ chéo nhau, nhưng có góc giữa hai phương bằng 90°.</text>
+<text x="460" y="443" font-family="Arial,sans-serif" text-anchor="middle" fill="#64748b" font-size="15">Không suy góc từ độ nghiêng phối cảnh; kết luận dựa trên cạnh song song và tính vuông góc ở hình hộp.</text>
+</svg>
