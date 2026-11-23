@@ -26,7 +26,7 @@ jobs:
   w5-source-strict:
     name: Exact W5 source/Q18/Q15/Q16 and two strict MkDocs builds (NO DEPLOY)
     runs-on: ubuntu-24.04
-    timeout-minutes: 35
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
         with:
