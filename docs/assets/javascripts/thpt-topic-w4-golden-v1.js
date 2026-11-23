@@ -244,7 +244,7 @@ const solutionContent=details=>{
  // inside the voluntary answer disclosure, never in the question stem.
  for(const p of out.querySelectorAll("p")){
   const raw=p.textContent.trim();
-  const image=/^!\\[([^\\]\\n]+)\\]\\((?:\\.\\.\\/){3,4}assets\\/images\\/thpt\\/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00\\.svg\\)$/.exec(raw);
+  const image=/^!\[([^\n]+?)\]\((?:\.\.\/){3,4}assets\/images\/thpt\/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00\.svg\)$/.exec(raw);
   if(!image)continue;
   const img=create("img");img.alt=image[1];img.src="../../../../assets/images/thpt/FIG-TOP18-RADAR-TRAJECTORY-OXYZ-R00.svg";img.loading="lazy";img.decoding="async";
   p.replaceChildren(img);
