@@ -67,6 +67,18 @@ jobs:
           git diff --name-only "$BASE_SHA...$HEAD_SHA" > "$RUNNER_TEMP/r4-changed-files.txt"
           node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/r4-changed-files.txt" >> "$GITHUB_OUTPUT"
 
+      # OWNER P1 W5: shared THPT launcher/nav changed, but 79 SGK/THCS/unchanged
+      # CĐ16 Knowledge do not. Require real W5 Chromium/WebKit screenshot test;
+      # fail-closed exact 13-path classifier allows skipping unrelated legacy QA.
+      - name: Prove targeted owner P1 browser regression is present
+        if: ${{ steps.impact.outputs.impact == 'SCOPED_TOPIC_W5_P1_HOTFIX' }}
+        run: |
+          node --check docs/assets/javascripts/thpt-r4-preview.js
+          node --check docs/assets/javascripts/thpt-topic-w5-golden-v1.js
+          python3 -m py_compile scripts/test-thpt-topic-w5-golden-browser.py
+          grep -Fq 'reported_display_formulas = {' scripts/test-thpt-topic-w5-golden-browser.py
+          grep -Fq 'legacy.wait_for_url' scripts/test-thpt-topic-w5-golden-browser.py
+
   preview-only:
     name: Build R4 preview without deployment
     needs: scope
