@@ -12,7 +12,7 @@ hide:
 <a href="../tu-kiem-tra/">Tự kiểm tra</a>
 </nav>
 <p class="topic-w1-back"><a href="../../">← Tổng quan các Chuyên đề</a></p>
-<p class="thpt-r4-lead topic-w1-source-intro">Học theo từng mảng kiến thức CĐ12; tự làm Vận dụng trước khi mở Đối chiếu.</p>
+<p class="thpt-r4-lead topic-w1-source-intro" hidden aria-hidden="true"></p>
 <p class="thpt-r4-knowledge-note topic-w3-model-link">Khám phá thêm: <a href="../../../math-lab/models/slm-top12-ssa-01/">Mô hình trực quan Chuyên đề 12</a> (tùy chọn).</p>
 </div>
 <link rel="stylesheet" href="../../../../assets/stylesheets/thpt-topic-w1-golden-v1.css">

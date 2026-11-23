@@ -118,6 +118,32 @@ const W3_EXACT_SCOPE_FILES=new Set([
  ".github/workflows/deploy.yml",
  ".github/workflows/thpt-deploy-scope-safety-qa.yml"
 ]);
+/* OWNER CĐ06–15 postpublish maintenance: strictly fixed UI/MathJax scope. */
+const TOPIC_W2_W3_HOTFIX_FILES=new Set([
+ ...["06","07","08","09","10","11","12","13","14","15"].map(n=>"docs/thpt-preview/chuyen-de/cd"+n+"/kien-thuc.md"),
+ "docs/assets/javascripts/thpt-topic-w3-golden-v1.js",
+ "scripts/test-thpt-topic-w2-golden-browser.py",
+ "scripts/test-thpt-topic-w3-golden-browser.py",
+ "scripts/test-thpt-release-impact.cjs",
+ ".github/workflows/deploy.yml",
+ ".github/workflows/thpt-deploy-scope-safety-qa.yml"
+]);
+function isScopedTopicW2W3Hotfix(files){
+ if(files.length!==TOPIC_W2_W3_HOTFIX_FILES.size||
+    new Set(files).size!==files.length||
+    !files.every(p=>TOPIC_W2_W3_HOTFIX_FILES.has(p)))return false;
+ try{
+  for(const n of ["06","07","08","09","10","11","12","13","14","15"]){
+   const s=fs.readFileSync("docs/thpt-preview/chuyen-de/cd"+n+"/kien-thuc.md","utf8");
+   if(!s.includes('topic-w1-source-intro" hidden aria-hidden="true"')||
+      s.includes("tự làm Vận dụng trước khi mở Đối chiếu")||
+      s.includes("tự thử trước khi mở Đối chiếu"))return false;
+  }
+  const js=fs.readFileSync("docs/assets/javascripts/thpt-topic-w3-golden-v1.js","utf8");
+  return js.includes("recovered-display")&&js.includes("const normalizeRenderedMath");
+ }catch{return false}
+}
+
 const W3_SOURCE_HEADS={
  "12":"f773f2622c88bd3e3a1e0137613846a83b3e6629",
  "13":"7bd211326e4f644a94e1dfad7868c03e1c415adb",
@@ -177,6 +203,7 @@ function classify(paths,{manual=false}={}){
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isScopedTopicW2W3Hotfix(files))return {impact:"SCOPED_TOPIC_HOTFIX_W2_W3",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTPUBLISH_CĐ06_15_TEXT_MATH_SCOPED_BROWSER"};
  if(isExactW3TopicWave(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_12_PAGES_240_Q15_59_Q16_GOLDEN_BROWSER_INDEPENDENT"};
  if(isSignedW3Recovery(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_POSTMERGE_WORKFLOW_QUOTE_RECOVERY_COMMENT_ONLY"};
  if(files.every(x=>CI_ROUTING_ONLY.has(x)))
@@ -304,6 +331,11 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const hotfix=[...TOPIC_W2_W3_HOTFIX_FILES];
+ assert.equal(classify(hotfix).impact,"SCOPED_TOPIC_HOTFIX_W2_W3","Exact ten-topic maintenance only");
+ assert.equal(classify(hotfix.slice(1)).full_suite,"true","Missing hotfix file must fail closed");
+ assert.equal(classify([...hotfix,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared runtime is not Topic-only");
+ assert.equal(classify([...hotfix,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).full_suite,"true","SGK mixed change fails closed");
  const fixture="docs/thpt-preview/sgk/chuong-v/bai-14.md";
  const another="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md";
  const authoring=[
@@ -312,7 +344,7 @@ function selfTest(){
   "prototypes/thpt/ux795/G10_CHV_B14_DELTA_A.md"
  ];
  const recovery=[...W3_RECOVERY_FILES];
- assert.equal(classify(recovery).impact,"SCOPED_TOPIC_W3","Source-locked W3 postmerge workflow recovery");
+ assert.equal(classify(recovery).impact,isSignedW3Recovery(recovery)?"SCOPED_TOPIC_W3":"FULL","Historic W3 recovery invalid if runtime differs");
  assert.equal(classify(recovery.slice(1)).full_suite,"true","Incomplete recovery cannot publish");
  assert.equal(classify([...recovery,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared Golden runtime changes are FULL");
  assert.equal(classify([...recovery,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md"]).full_suite,"true","SGK changes are FULL");

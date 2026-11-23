@@ -13,7 +13,7 @@ hide:
 </nav>
 <p class="topic-w1-back"><a href="../../">← Tổng quan các Chuyên đề</a></p>
 
-<p class="thpt-r4-lead topic-w1-source-intro">Học lượng giác và phương trình lượng giác qua các mảng kiến thức bên dưới; tự thử trước khi mở Đối chiếu.</p>
+<p class="thpt-r4-lead topic-w1-source-intro" hidden aria-hidden="true"></p>
 <p class="thpt-r4-knowledge-note topic-w2-model-link">Khám phá thêm: <a href="../../../math-lab/models/slm-top06-unit-circle-01/">Mô hình trực quan Chuyên đề 06</a> (tùy chọn).</p>
 </div>
 <link rel="stylesheet" href="../../../../assets/stylesheets/thpt-topic-w1-golden-v1.css">

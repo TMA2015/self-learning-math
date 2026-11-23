@@ -56,7 +56,7 @@ jobs:
   deploy:
     needs: release-scope
     # The large inherited site-wide regression lane is for shared/unknown changes only.
-    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' }}
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -388,6 +388,68 @@ jobs:
           node scripts/test-thpt-chvi-math-block-render.cjs --built
           node scripts/guard-w9-candidate-publication-r1.js --deploy
       - name: Publish proven assembled site to existing GitHub Pages branch
+        run: ghp-import -n -p -f site
+
+
+  deploy-scoped-topic-w2w3-hotfix:
+    name: Publish CĐ06–15 text/math hotfix after source/Q16/Chromium/WebKit QA
+    needs: release-scope
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_HOTFIX_W2_W3' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Exact-HEAD topic-only scope and immutable AUTHORING/Q18 Q15/Q16 receipts
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/topic-hotfix-scope.txt"
+          node scripts/test-thpt-release-impact.cjs --self-test
+          env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/topic-hotfix-scope.txt" > "$RUNNER_TEMP/topic-hotfix-classified.txt"
+          grep -Fxq "impact=SCOPED_TOPIC_HOTFIX_W2_W3" "$RUNNER_TEMP/topic-hotfix-classified.txt"
+          node --check docs/assets/javascripts/thpt-topic-w2-golden-v1.js
+          node --check docs/assets/javascripts/thpt-topic-w3-golden-v1.js
+          git fetch --no-tags origin 7ccecad8e357319f6f432b0765630fd50625b56f a7d3d7756535cfee29f04bde86af6ab58b0a9d30 28bd2103731eef4b4a6960cd5fc33d49c0680017 a1d0c5ae4c37ca0def035939fcbeef0109be3e1b c78cbbeefc92d14060a5bd81a1e2036ea2f6afeb c644ae7a75dc1d02c4e2ac0d0e7ee0856df62f07
+          git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
+          python3 scripts/test-thpt-topic-w2-source-locked.py
+          python3 scripts/test-thpt-topic-w3-source-locked.py
+      - name: Build strict THCS+THPT combined site and THPT navigation
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+          node scripts/assemble-thpt-site.cjs
+      - name: Verify 30 public routes and no Q16 Mastery/Final Submit exposure
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for n in range(6,16):
+              for part in ("kien-thuc","luyen-tap","tu-kiem-tra"):
+                  page=Path(f"site/thpt-preview/chuyen-de/cd{n:02d}/{part}/index.html")
+                  assert page.is_file(), f"Missing Topic hotfix route {page}"
+                  html=page.read_text(encoding="utf8")
+                  assert "tự làm Vận dụng trước khi mở Đối chiếu" not in html
+                  assert "tự thử trước khi mở Đối chiếu" not in html
+                  if part=="tu-kiem-tra":
+                      assert "PUBLIC_REPLAY_ONLY" in html and "NO_MASTERY" in html, f"Q16 replay regression {page}"
+          print("PASS 30 CĐ06–15 source-locked public routes + Q16")
+          PY
+      - name: Real Chromium and WebKit Golden/MathJax/SVG/Q16 browser on affected 10 topics
+        run: |
+          python -m playwright install --with-deps chromium webkit
+          python scripts/test-thpt-topic-w2-golden-browser.py
+          python scripts/test-thpt-topic-w3-golden-browser.py
+      - name: Publish the SAME verified combined site to existing GitHub Pages
         run: ghp-import -n -p -f site
 
   deploy-scoped-topic-w3:
