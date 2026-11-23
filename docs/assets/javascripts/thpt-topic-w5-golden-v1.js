@@ -135,33 +135,38 @@ const normalizeRenderedMath=node=>{
  while(walker.nextNode()){
   const t=walker.currentNode,p=t.parentElement;
   if(!p||p.closest(".arithmatex,mjx-container,code,pre,script,style,textarea,svg"))continue;
-  if(t.nodeValue.includes("^")||t.nodeValue.includes("[")||t.nodeValue.includes("\\operatorname")||t.nodeValue.includes("\\lim"))texts.push(t);
+  if(t.nodeValue.includes("^")||t.nodeValue.includes("[")||t.nodeValue.includes("\\(")||t.nodeValue.includes("\\operatorname")||t.nodeValue.includes("\\lim"))texts.push(t);
  }
  // MkDocs strips backslashes from TeX display brackets inside blockquotes.
  // Rehydrate only mathematical [..] with a TeX command, equality or exponent.
  // This includes source-locked W5 \cup/\mid and R_g/IQR_g formula cards.
- const fragments=/\[\s*([^\[\]]{2,1200}?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
+ // W5 P1 audit: cover grouped bases and original prose ^(n−k) exponents,
+ // as well as display brackets, without changing source-locked Markdown.
+ // Explicit \( ... \) in opt-in solutions MUST be matched first, before
+ // the caret lexer can split one verified TeX expression into text fragments.
+ const fragments=/\\\(([\s\S]{1,1200}?)\\\)|\\\[([\s\S]{1,1200}?)\\\]|\[\s*([^\[\]]{2,1200}?)\s*\]|(?:\([^()\n]{1,70}\)|[A-Za-z0-9][A-Za-z0-9_]{0,20})\^(?:\{[^{}\n]{1,55}\}|\([^()\n]{1,55}\)|[A-Za-z0-9]+)/g;
  for(const t of texts){
   const v=t.nodeValue,parts=document.createDocumentFragment();let lastIndex=0,hit=false,match;
   fragments.lastIndex=0;
   while((match=fragments.exec(v))){
-   if(match[1]&&!(/\\[A-Za-z]+/.test(match[1])||/[=^]/.test(match[1])))continue;
+   if(match[3]&&!(/\\[A-Za-z]+/.test(match[3])||/[=^]/.test(match[3])))continue;
    hit=true;
    if(match.index>lastIndex)parts.append(document.createTextNode(v.slice(lastIndex,match.index)));
    const math=create("span","arithmatex");
-   math.dataset.topicW3DisplayMath=match[1]?"recovered-display":"exponent";
-   math.textContent=match[1]?"\\["+match[1].trim()+"\\]":"\\("+match[0]+"\\)";
-   // This wrapper is created from exactly ONE approved TeX display block.
-   // Concurrent MathJax startup + tab activation can emit multiple containers;
-   // preserve the first, discard duplicate output DOM only (never source TeX).
-   if(match[1]){
-    const collapse=()=>{
-     const views=[...math.querySelectorAll("mjx-container")];
-     if(views.length>1)views.slice(1).forEach(x=>x.remove());
-    };
-    const observer=new MutationObserver(collapse);
-    observer.observe(math,{childList:true,subtree:true});
-   }
+   math.dataset.topicW3DisplayMath=match[1]?"raw-inline":match[2]?"raw-display":match[3]?"recovered-display":"exponent";
+   // a^(n−k) is written without TeX braces in approved prose; repair
+   // only the rendered copy, keeping canonical math and answer text untouched.
+   const inlineTex=match[0].replace(/\^\(([^()\n]{1,55})\)/g,"^{$1}");
+   math.textContent=match[1]?"\\("+match[1].trim()+"\\)":match[2]?"\\["+match[2].trim()+"\\]":match[3]?"\\["+match[3].trim()+"\\]":"\\("+inlineTex+"\\)";
+   // Each transient wrapper represents exactly ONE canonical formula token.
+   // Global MathJax startup can race tab typesetting on inline powers too:
+   // keep one rendered output for BOTH exponent and recovered-display wrappers.
+   const collapse=()=>{
+    const views=[...math.querySelectorAll("mjx-container")];
+    if(views.length>1)views.slice(1).forEach(x=>x.remove());
+   };
+   const observer=new MutationObserver(collapse);
+   observer.observe(math,{childList:true,subtree:true});
    parts.append(math);lastIndex=fragments.lastIndex;
   }
   if(hit){if(lastIndex<v.length)parts.append(document.createTextNode(v.slice(lastIndex)));t.replaceWith(parts)}
