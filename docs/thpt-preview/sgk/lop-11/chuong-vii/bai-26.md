@@ -1,82 +1,117 @@
 # Bài 26. Khoảng cách
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP 2</p><p class="thpt-r4-lead">Hiểu lý do cần học → khái niệm và lý do → hình minh họa có hướng dẫn đọc → Tự thử trước Core → ví dụ suy luận → tự thực hành và khắc phục. Không ghi Skill Mastery.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<style>
+/* Scope CSS to B26 only; do not alter Golden UI/shared runtime. */
+.md-typeset:has([data-g11-b26-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border:1px solid #a9dccc;border-left:4px solid #087d69;color:#174137}
+.md-typeset:has([data-g11-b26-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border:1px solid #a5bee5;border-left:4px solid #4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b26-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b26-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
 
-## 1. Kiến thức SGK và ví dụ có suy luận
+<div class="thpt-r4-screen" data-thpt-r4 data-g11-b26-knowledge-only>
+<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KẾT NỐI TRI THỨC · TẬP HAI</p>
+<p class="thpt-r4-lead">Khoảng cách là độ dài ngắn nhất: biết khi nào hạ chân vuông góc, khi nào đo giữa các đối tượng song song, và khi nào phải dựng đường vuông góc chung giữa hai đường chéo nhau.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương VII</a><a href="../luyen-tap/">Core và Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-### 1.1. Vì sao cần học
-Đo khoảng cách từ đèn treo tới sàn phải đo theo phương ngắn nhất, không đo theo dây xiên. Giữa hai thanh chéo nhau, phải tìm đoạn nối vừa chạm hai đường vừa vuông góc cả hai.
+=== "Khám phá kiến thức"
 
-### 1.2. Khái niệm thực chất
-d(M,a)=MH với H là hình chiếu M lên a; d(M,(P))=MH với MH⊥(P). Nếu a//(P) thì d(a,(P))=d(M,(P)) với M∈a. Nếu hai mặt song song, dùng khoảng cách từ một điểm mặt này đến mặt kia. Với hai đường chéo nhau, khoảng cách là độ dài đoạn vuông góc chung.
+    **Vì sao cần học?** Đầu phun chữa cháy phải đặt cách trần một khoảng an toàn, chiều cao xe phải đủ thấp để đi qua khung trên dốc, và các thanh kết cấu không gian có thể chéo nhau dù trên hình nhìn như cắt. Khoảng cách không phải một đoạn nối tùy ý: ta muốn **độ dài ngắn nhất** giữa các đối tượng. Trước khi học, em cần biết hình chiếu vuông góc (Bài 24), đường vuông góc mặt phẳng (Bài 23) và quan hệ đường chéo nhau (Bài 22).
 
-### 1.3. Hình thành và lập luận
-Trong tam giác vuông MHK với H là chân đường vuông góc và K nằm trên đường/mặt: MK²=MH²+HK²≥MH². Đó là lý do “ngắn nhất”. Muốn tìm đoạn vuông góc chung phải kiểm cả hai đầu thuộc đúng hai đường và vuông góc **cả hai**, không phải chỉ một.
+    ### 1.1. Khoảng cách từ một điểm đến một đường thẳng, đến một mặt phẳng
 
-### 1.4. Điều kiện, giới hạn, lỗi thường gặp
-Nếu điểm đã thuộc mặt thì khoảng cách bằng 0. Nếu hai đường song song, dùng đoạn nối vuông góc giữa chúng; khái niệm chéo nhau yêu cầu không đồng phẳng và không cắt nhau. Chiều cao hình chóp là khoảng cách đỉnh–mặt đáy, không phải cạnh bên.
+    **Khám phá HĐ1 — vì sao chân vuông góc ngắn nhất?** Cho điểm \(M\) ngoài đường thẳng \(a\), gọi \(H\) là hình chiếu vuông góc của \(M\) lên \(a\). Với mọi \(K\in a\) khác \(H\), tam giác \(MHK\) vuông tại \(H\), nên
+    \[
+    MK^2=MH^2+HK^2>MH^2\quad\Rightarrow\quad MK>MH.
+    \]
+    Tương tự, nếu \(H\) là chân vuông góc của \(M\) xuống mặt \((P)\), thì \(MH\perp HK\) với mọi \(K\in(P)\). Bởi vậy đoạn \(MH\) là **đoạn ngắn nhất** từ \(M\) tới đường hoặc mặt. Khi \(K=H\), độ dài bằng đúng \(MH\).
 
-### 1.5. Làm rõ các định lí, điều kiện và cấu trúc SGK
-**Vì sao khoảng cách là ngắn nhất:** Với M ngoài mặt (P), H là chân MH⊥(P), mọi K∈(P) tạo tam giác MHK vuông tại H. Do đó MK²=MH²+HK²≥MH², suy MK≥MH, đẳng thức chỉ khi K=H. Với đường a, lập luận tương tự với K∈a và chân H trên a. Khoảng cách là **độ dài**, không thể âm; bằng 0 khi M nằm trên đường hoặc mặt.
+    **Định nghĩa theo hình chiếu:** Khoảng cách \(d(M,a)=MH\) khi \(H\in a\), \(MH\perp a\); khoảng cách \(d(M,(P))=MH\) khi \(H\in(P)\), \(MH\perp(P)\). Khoảng cách **không âm** và bằng \(0\) khi \(M\) đã nằm trên đối tượng. Ta không gọi một đoạn xiên dài hơn là “khoảng cách”. Nếu đề cho nhiều đường trong mặt phẳng mà chưa chứng minh pháp tuyến, phải dùng tiêu chuẩn **hai đường cắt nhau** của Bài 23.
 
-**Các cặp đối tượng — xác định đúng:** Nếu a//(P), d(a,(P)) lấy từ **bất kì** điểm A∈a xuống (P). Nếu (P)//(Q), d((P),(Q)) là khoảng cách từ một điểm A∈(P) tới (Q); nó không đổi theo A. Nếu hai đường a,b *chéo nhau*, một đoạn AB có A∈a, B∈b và AB⊥a, AB⊥b được gọi là đoạn **vuông góc chung**; d(a,b)=AB. Chỉ tìm đoạn vuông góc một đường chưa đủ. Nếu hai đường cắt nhau, khoảng cách bằng 0; không nhầm trường hợp này với chéo nhau.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg" alt="Điểm M ngoài mặt P, H chân vuông góc và K là điểm khác trên P, đoạn MH là khoảng cách ngắn nhất so với đoạn xiên MK"><figcaption><strong>Hướng dẫn đọc:</strong> từ \(M\), đoạn đỏ \(MH\) tới chân \(H\) vuông góc **cả mặt \((P)\)**; đoạn xanh \(MK\) tới điểm \(K\) khác \(H\) là đoạn xiên. So sánh bằng \(MK^2=MH^2+HK^2\), không đo từ hình vẽ phối cảnh. Với đường \(a\), thay \((P)\) bằng \(a\) và giữ lập luận tương tự.</figcaption></figure>
 
-**Quy trình xây dựng:** (1) Gọi đối tượng cần đo và xác định điểm/cặp đường. (2) Nêu điều kiện vuông góc của đoạn cần tìm. (3) Dựng chân bằng quan hệ vuông góc đã học B23–B25. (4) Dùng tam giác vuông, hình chiếu hoặc quan hệ song song tính độ dài. (5) Đối chiếu đơn vị. Độ dài SA của một cạnh bên hình chóp **không phải** chiều cao nếu S chiếu lên H khác A.
+    **Một phép thử cụ thể cho khoảng cách điểm–đường:** Trong mặt tọa độ, chọn \(M(0;0)\) và \(a:2x+y-6=0\). Chân \(H\) trên \(a\) là \((12/5;6/5)\), vì \(2(12/5)+6/5-6=0\) và \(\overrightarrow{MH}=(12/5;6/5)\) cùng phương với pháp tuyến \((2;1)\) của đường. Vậy \(d(M,a)=MH=\sqrt{(12/5)^2+(6/5)^2}=6/\sqrt5\). Đây là cách kiểm được **chân H**, chứ không cần ước lượng bằng mắt.
 
-### 1.6. Hình minh họa và cách đọc
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G10_B20_POINT_LINE_DISTANCE_R02.svg" alt="M gốc tọa độ và đường 2x cộng y bằng 6, chân H bằng 12 phần 5 và 6 phần 5, khoảng cách MH bằng 6 chia căn 5"><figcaption><strong>Hướng dẫn đọc hình Toán 10 dùng lại:</strong> đường \(2x+y=6\) cắt hai trục, \(M(0,0)\) nằm ngoài đường và \(H(12/5,6/5)\) nằm trên đường. Đoạn \(MH\) vuông góc \(a\) do cùng phương vectơ pháp tuyến; đây là **minh họa có tọa độ cụ thể**, không phải công thức chung cần học thuộc ở Bài 26.</figcaption></figure>
 
-<figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg" alt="Hình B26: Dựng MH⊥(P) và đoạn MK xiên: so sánh chiều dài; đoạn vuông góc chung giữa hai đường chéo nhau."/><figcaption>Hình B26: Dựng MH⊥(P) và đoạn MK xiên: so sánh chiều dài; đoạn vuông góc chung giữa hai đường chéo nhau.</figcaption></figure>
+    **Chiều cao hình chóp từ khái niệm khoảng cách:** Hình chóp có đỉnh \(S\), đáy thuộc \((P)\). Chiều cao là \(d(S,(P))\), tức chiều dài đường \(SH\perp(P)\). Cạnh bên \(SA\) thường là đường **xiên**, dài hơn đường cao. Với hình chóp đều \(S.ABC\), đáy tam giác đều cạnh \(a>0\), cạnh bên \(b>0\), chân cao \(O\) là tâm đáy và \(AO=a/\sqrt3\). Suy ra
+    \[
+    SO=\sqrt{b^2-\frac{a^2}{3}},\qquad b>\frac{a}{\sqrt3}
+    \]
+    đối với chóp không suy biến. Điều kiện dưới căn phản ánh chiều cao phải thực và dương.
 
-**Hướng dẫn đọc hình:** Dựng MH⊥(P) và đoạn MK xiên: so sánh chiều dài; đoạn vuông góc chung giữa hai đường chéo nhau. Hình là sơ đồ giải thích phương pháp, **không được suy góc hay độ dài từ nét vẽ phối cảnh**. Điều kiện vuông góc phải có chứng minh.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_PYRAMID_HEIGHT_AUTHORING_20261123.svg" alt="Chóp đều SABC có SO vuông góc đáy tại tâm O, SA cạnh bên b và OA bằng a chia căn ba"><figcaption><strong>Hướng dẫn đọc Ví dụ 1 SGK:</strong> \(O\) là tâm **tam giác đều** \(ABC\), không phải một đỉnh đáy; \(SO\) đỏ nét đứt là đường cao, \(SA=b\) là cạnh huyền của tam giác vuông \(SOA\), \(OA=a/\sqrt3\). Chỉ dùng Pythagore khi đã xác minh \(SO\perp(ABC)\).</figcaption></figure>
 
-### 1.7. Tự thử trước bài luyện tập
-Chóp có SA=5, hình chiếu S trên đáy là H, AH=4: SH=3. Tại sao chiều cao là 3 chứ không phải 5?
+    **Vận dụng.** Chóp tam giác đều có cạnh đáy \(a=6\) cm và cạnh bên \(b=5\) cm. Tính chiều cao. Vì sao không lấy \(5\) cm làm chiều cao?
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Đã tự thử? Mở hướng dẫn tự đối chiếu</summary><p>Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery.</p></details>
+    ??? question "Đối chiếu"
 
-### 1.8. Ví dụ có hướng dẫn (vì sao chọn phương pháp)
+        **Lời giải:** Tâm đáy có \(AO=a/\sqrt3=2\sqrt3\) cm. \(SO=\sqrt{SA^2-AO^2}=\sqrt{25-12}=\sqrt{13}\) cm. Cạnh \(SA=5\) cm là **cạnh bên xiên** (cạnh huyền), không phải đoạn vuông góc xuống đáy.
 
+    ??? tip "Kiểm lỗi"
 
-#### EX-G11-CHVII-B26-01 — Đường vuông góc là đường ngắn nhất
+        Chỉ lấy cạnh bên làm chiều cao nếu chính nó vuông góc mặt đáy. Trong chóp đều, chân đường cao nằm ở **tâm** đáy, không tự đồng nhất với đỉnh \(A\).
 
-**Nhiệm vụ:** Từ M tới mặt (P) có MH=3 là đoạn vuông góc; điểm K∈(P) có HK=4. Tính MK và xác định d(M,(P)).
+    ### 1.2. Khoảng cách giữa các đường thẳng và mặt phẳng song song, giữa hai mặt phẳng song song
 
-**Lập luận để tự đối chiếu sau khi thử:** MK=5, d(M,(P))=3. Pythagore cho MK²=MH²+HK² nên MK≥MH.
+    **Một ý chung cho các trường hợp song song:** Nếu đường \(a\parallel(P)\), lấy hai điểm \(M,N\in a\), hình chiếu \(A,B\) xuống \((P)\). Vì \(MA\parallel NB\), \(MN\parallel AB\) và các đoạn chiếu vuông góc mặt phẳng, \(ABNM\) là hình chữ nhật; do đó \(MA=NB\). Điều này chứng minh **khoảng cách từ mọi điểm của \(a\) đến \((P)\) bằng nhau**. Vì thế được phép chọn **một điểm thuận lợi** trên \(a\), không phải tìm một điểm “đặc biệt” rồi giả định khoảng cách luôn bằng nhau.
 
+    **Ba loại khoảng cách:** Nếu \(a\parallel(P)\), \(d(a,(P))=d(M,(P))\) với bất kì \(M\in a\). Với \((P)\parallel(Q)\), \(d((P),(Q))=d(M,(Q))\) với bất kì \(M\in(P)\). Với hai đường \(m\parallel n\), \(d(m,n)=d(M,n)\) với \(M\in m\). Cả ba dùng đoạn **vuông góc**. Nếu đường nằm **ngay trên** mặt, hoặc hai mặt **trùng nhau**, khoảng cách bằng \(0\); không áp máy móc trường hợp “song song phân biệt” có khoảng cách dương.
 
-#### EX-G11-CHVII-B26-02 — Chóp và chiều cao
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_PARALLEL_DISTANCES_AUTHORING_20261123.svg" alt="Ba trường hợp khoảng cách không đổi: đường a song song mặt P, hai mặt P Q song song và hai đường m n song song"><figcaption><strong>Hướng dẫn đọc từ trái sang phải:</strong> hai chân \(A,B\) từ \(M,N\in a\) tạo các đoạn vuông góc **bằng nhau**; hai mặt song song được đo bởi đoạn vuông góc nối hai mặt; hai đường song song đo theo đoạn vuông góc giữa chúng. Không dùng đoạn chéo dù trông ngắn trên hình.</figcaption></figure>
 
-**Nhiệm vụ:** SA=13, H là hình chiếu S lên đáy, AH=12. Tính chiều cao SH.
+    **Ví dụ 2 SGK — Hình hộp đứng đáy thoi:** Cho \(ABCD.A'B'C'D'\) là hình hộp đứng, đáy hình thoi cạnh \(a\), \(\angle BAD=120^\circ\), cạnh đứng \(AA'=h\). Muốn tính \(d(A'C',(ABCD))\), vì \(A'C'\) nằm trong mặt trên song song đáy, chỉ cần đo \(AA'=h\). Với \(d(AA',(BDD'B'))\), ta cần một đoạn vuông góc mặt \((BDD'B')\). Gọi \(O\) là giao hai đường chéo của hình thoi: \(AO\perp BD\), đồng thời \(AO\perp BB'\) vì \(BB'\perp(ABCD)\). Hai đường \(BD,BB'\) cắt nhau trong mặt \((BDD'B')\), nên \(AO\perp(BDD'B')\). Từ hình thoi có góc \(A=120^\circ\), \(AO=a/2\). Kết quả là **\(h\)** và **\(a/2\)** tương ứng, không được đánh tráo hai khoảng cách.
 
-**Lập luận để tự đối chiếu sau khi thử:** SH=√(13²−12²)=5. Cạnh bên 13 không phải chiều cao.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_RHOMBUS_PRISM_DISTANCES_AUTHORING_20261123.svg" alt="Hình hộp đứng đáy thoi ABCD, hai khoảng cách cần đo là AA phẩy bằng h và AO bằng a chia hai vuông góc mặt BDD phẩy B phẩy"><figcaption><strong>Hướng dẫn đọc:</strong> khối có cạnh đứng \(AA'=h\perp\) đáy, nên cho khoảng cách của **đường \(A'C'\) tới đáy**. Đoạn \(AO\) màu đỏ từ đỉnh \(A\) tới tâm hình thoi \(O\) vuông góc cả \(BD\) và \(BB'\), nên đo khoảng cách từ **đường \(AA'\)** tới mặt bên \((BDD'B')\). Góc \(120^\circ\) là giả thiết, không đo từ phối cảnh.</figcaption></figure>
 
+    **Chiều cao lăng trụ:** Hai mặt đáy lăng trụ song song; khoảng cách giữa chúng là **chiều cao**. Chỉ với lăng trụ **đứng** mới được lấy độ dài cạnh bên làm chiều cao. Lăng trụ xiên có cạnh bên khác chiều cao vì cạnh bên không vuông góc đáy.
 
-#### EX-G11-CHVII-B26-03 — Khoảng cách đường song song mặt
+    **Vận dụng SGK – Khung khống chế chiều cao trên đường dốc:** Hai cột thẳng đứng cao \(2{,}28\) m giữ thanh ngang; mặt đường nghiêng \(15^\circ\) so với mặt nằm ngang. Ta cần độ dài **pháp tuyến từ thanh ngang đến mặt đường**, không lấy \(2{,}28\) m là khoảng cách tới mặt đường. Trong tiết diện dọc dốc, góc giữa phương đứng và pháp tuyến mặt đường là \(15^\circ\), nên
+    \[
+    d(\text{thanh ngang},\text{mặt dốc})=2{,}28\cos15^\circ\approx2{,}20\text{ m}.
+    \]
+    Vì \(2{,}21>2{,}20\), mô hình không cho phép xe cao \(2{,}21\) m qua khung. Cần nhớ đây là tính trong **mô hình hình học**, chưa xét các sai số lắp đặt và biên an toàn thực tế.
 
-**Nhiệm vụ:** Đường a//(P). Hai điểm M,N∈a có d(M,(P))=4. Tính d(N,(P)) và d(a,(P)).
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_SLOPE_CLEARANCE_AUTHORING_20261123.svg" alt="Tiết diện đường dốc nghiêng 15 độ, cột đứng TF cao 2,28 mét, đoạn TH vuông góc dốc ngắn hơn và gần 2,20 mét"><figcaption><strong>Hướng dẫn đọc ứng dụng:</strong> \(TF\) là chiều dài cột **thẳng đứng** \(2{,}28\) m; \(TH\) màu đỏ là khoảng cách **vuông góc dốc**. Góc giữa pháp tuyến dốc và phương đứng bằng góc dốc \(15^\circ\), nên \(TH=TF\cos15^\circ\). Không lấy \(2{,}28\) để so với \(2{,}21\) mà bỏ độ nghiêng.</figcaption></figure>
 
-**Lập luận để tự đối chiếu sau khi thử:** Cả hai bằng 4 do khoảng cách từ mọi điểm của đường song song tới mặt đều như nhau.
+    **Vận dụng.** Trong hình hộp đứng đáy thoi cạnh \(a=8\) cm, \(\angle BAD=120^\circ\), chiều cao \(h=6\) cm, tính \(d(A'C',(ABCD))\) và \(d(AA',(BDD'B'))\).
 
+    ??? question "Đối chiếu"
 
-#### EX-G11-CHVII-B26-04 — Hai đường chéo nhau
+        **Lời giải:** Vì hai đáy song song và \(AA'\perp(ABCD)\), \(d(A'C',(ABCD))=h=6\) cm. Gọi \(O\) là tâm hình thoi. Từ \(AO\perp BD\) và \(AO\perp BB'\) suy \(AO\perp(BDD'B')\); do đó \(d(AA',(BDD'B'))=AO=a/2=4\) cm.
 
-**Nhiệm vụ:** Trong hệ trục minh họa, a={(t,0,0)}, b={(2,s,3)}. Nêu đoạn vuông góc chung và khoảng cách giữa a,b.
+    ??? tip "Kiểm lỗi"
 
-**Lập luận để tự đối chiếu sau khi thử:** Đoạn từ A=(2,0,0)∈a đến B=(2,0,3)∈b có phương Oz vuông góc phương Ox và Oy, dài 3; d(a,b)=3.
+        Không lấy \(h\) cho khoảng cách từ \(AA'\) đến mặt bên. Đường \(AA'\) nằm **song song** mặt bên, khoảng cách được đo theo **\(AO\)** trong mặt đáy.
 
+    ### 1.3. Khoảng cách giữa hai đường thẳng chéo nhau
 
-#### EX-G11-CHVII-B26-05 — Hai mặt phẳng song song
+    **Khó khăn mới:** Hai đường chéo nhau không song song cũng không gặp nhau, nên không thể lấy tùy tiện một đầu trên mỗi đường rồi gọi đoạn nối là “khoảng cách”. Đường \(\Delta\) được gọi là **đường vuông góc chung** của \(a,b\) nếu \(\Delta\) **cắt cả hai** và **vuông góc với cả hai**. Nếu \(\Delta\cap a=\{M\}\), \(\Delta\cap b=\{N\}\), thì \(d(a,b)=MN\). Phải kiểm đủ **bốn điều kiện**: \(M\in a\), \(N\in b\), \(MN\perp a\), \(MN\perp b\).
 
-**Nhiệm vụ:** Hai sàn phẳng song song (P),(Q) cách nhau 2,7m; điểm M bất kì trên (P). Tính d(M,(Q)).
+    **Vì sao HĐ4 SGK dùng mặt phẳng song song?** Chọn \((Q)\) chứa \(b\) và **song song đường \(a\)**. Chiếu vuông góc \(a\) xuống \((Q)\) thành đường \(a'\), rồi tìm \(N=a'\cap b\). Dựng đoạn pháp tuyến từ \(N\) lên \(a\), được \(M\). Vì \(a\parallel(Q)\), đường \(MN\) vuông góc \((Q)\), nên đồng thời vuông góc \(b\subset(Q)\) và \(a\parallel a'\subset(Q)\). Do đó \(MN\) là đoạn vuông góc chung. Phương pháp này chuyển **bài toán hai đường chéo nhau** về **khoảng cách đường–mặt song song**:
+    \[
+    d(a,b)=d(a,(Q))=MN.
+    \]
+    Cũng có thể chọn hai mặt **song song tương ứng chứa** \(a,b\), rồi tính khoảng cách giữa hai mặt.
 
-**Lập luận để tự đối chiếu sau khi thử:** 2,7m vì đoạn vuông góc nối hai mặt song song có độ dài không phụ thuộc vị trí M.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_SKEW_COMMON_PERPENDICULAR_AUTHORING_20261123.svg" alt="Đường a ở trên mặt Q chứa b, hình chiếu a phẩy cắt b ở N; MN đi từ a đến b vuông góc chung"><figcaption><strong>Hướng dẫn đọc HĐ4:</strong> đường xanh trên \(a\) được chiếu xuống đường nét đứt \(a'\) trong \((Q)\), cắt đường lục \(b\) tại **\(N\)**. Đi theo đường đỏ \(MN\) **vuông góc mặt \((Q)\)** từ \(N\) đến **\(M\in a\)**. Vì \(a,b\) cùng có phương nằm trong \((Q)\), đoạn đỏ vuông góc cả hai. Phải xác minh \(a\parallel(Q)\) trước khi dùng.</figcaption></figure>
 
+    **Ví dụ 3 SGK — Chóp có cạnh đứng:** Trong chóp \(S.ABC\), \(SA\perp(ABC)\), \(AB=a\) và \(\angle ABC=60^\circ\). Dựng \(H\) là chân vuông góc từ \(A\) xuống \(BC\). Khi đó \(AH\perp BC\), lại \(AH\subset(ABC)\) nên \(AH\perp SA\). Vì \(A\in SA\), \(H\in BC\), đoạn \(AH\) chính là **đoạn vuông góc chung**, và
+    \[
+    d(SA,BC)=AH=AB\sin60^\circ=\frac{a\sqrt3}{2}.
+    \]
+    Điểm mạnh của cách dựng này là không cần tạo mặt phẳng phụ khi đã có **một đường vuông góc mặt đáy**.
 
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_SABC_COMMON_PERPENDICULAR_AUTHORING_20261123.svg" alt="Chóp SABC có SA vuông góc mặt đáy, H chân từ A tới BC, AH vuông góc cả SA và BC"><figcaption><strong>Hướng dẫn đọc Ví dụ 3:</strong> \(A\) thuộc đường \(SA\), \(H\) thuộc \(BC\); \(AH\) đỏ **vuông góc \(BC\)** do dựng chân, đồng thời vuông góc **\(SA\)** vì \(SA\perp(ABC)\). Lúc ấy mới tính \(AH\) bằng tam giác \(ABH\) vuông tại \(H\) với góc \(60^\circ\) ở \(B\).</figcaption></figure>
 
-## 2. Tự khắc phục lỗi
+    **Vì sao là khoảng cách nhỏ nhất?** Với mọi \(X\in a\), \(Y\in b\), phép dời các điểm dọc theo hai đường không thể làm đoạn nối ngắn hơn **đoạn vuông góc chung**; phần độ dài nằm theo các phương \(a,b\) sẽ làm tăng bình phương độ dài theo định lí Pythagore trong hệ phương thích hợp. Trong phạm vi những đối tượng SGK đang xét, khoảng cách chính là độ dài ngắn nhất giữa hai điểm thuộc hai hình.
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHVII-B26-01"><summary><strong>Nhận diện lỗ hổng:</strong> Nhầm độ dài cạnh xiên với chiều cao ngắn nhất.</summary><ol><li><strong>Nhận diện lỗ hổng:</strong> Nhầm độ dài cạnh xiên với chiều cao ngắn nhất.</li><li><strong>Nhắc đúng bản chất:</strong> Chiều cao chóp là đoạn từ đỉnh vuông góc mặt đáy.</li><li><strong>Nhìn lại kiến thức và hình:</strong> Đọc lại phần vì sao cần học, khái niệm và cách lập luận của B26, tự phát biểu điều kiện bằng lời và kiểm tra đúng hình SVG của bài, không suy luận từ phối cảnh.</li><li><strong>Tự luyện có hướng dẫn:</strong> Cạnh bên 5, hình chiếu dài 4, chiều cao? <strong>Sau khi tự làm mới đối chiếu:</strong> 3.</li><li><strong>Quay về câu gốc:</strong> <code>THPT-G11-CHVII-B26-C06</code>; giải lại và giải thích mỗi bước. HELP chỉ hiện sau nộp câu *luyện tập*, tuyệt đối không hiện trong RD1 trước Final Submit.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHVII-B26-C06">Quay lại câu canonical THPT-G11-CHVII-B26-C06</a></p></details>
+    **Vận dụng.** Với chóp \(S.ABC\), \(SA\perp(ABC)\), \(AB=8\) cm và \(\angle ABC=60^\circ\). Dựng \(H\) là chân từ \(A\) xuống \(BC\). Tính \(d(SA,BC)\) và nêu đủ điều kiện của đoạn vuông góc chung.
 
-## 3. Tiếp tục
+    ??? question "Đối chiếu"
 
-[Core và Luyện tập Bài 26](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+        **Lời giải:** \(A\in SA\), \(H\in BC\); \(AH\perp BC\) theo cách dựng, \(AH\perp SA\) vì \(AH\subset(ABC)\) và \(SA\perp(ABC)\). Vậy \(AH\) là đoạn vuông góc chung, \(d(SA,BC)=AH=8\sin60^\circ=4\sqrt3\) cm.
+
+    ??? tip "Kiểm lỗi"
+
+        Không chọn \(SB\) hay \(SC\) làm khoảng cách giữa \(SA\) và \(BC\): chúng không phải đoạn vuông góc **đồng thời** với cả hai đường. Kiểm rõ hai đầu và hai góc vuông trước khi tính.
