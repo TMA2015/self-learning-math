@@ -109,3 +109,139 @@
     **Quy trình chứng minh tồn tại nghiệm:** (1) Đặt hàm \(f\) với phương trình \(f(x)=0\); (2) chứng minh liên tục trên toàn \([a,b]\); (3) tính chính xác \(f(a),f(b)\) và kiểm tích âm; (4) kết luận **có ít nhất một nghiệm** trong \((a,b)\).
 
     **Lưu ý vận dụng thực tế:** Một đại lượng liên tục đi từ dưới ngưỡng lên trên ngưỡng thì phải đạt ngưỡng ở một thời điểm trung gian. Khi mô hình thời gian, nhiệt độ hoặc vận tốc, phải có căn cứ **đại lượng biến đổi liên tục**; không lấy hình vẽ hay số liệu trung bình thay chứng cứ liên tục.
+
+=== "Ví dụ"
+
+    ### 3.1. Liên tục tại một điểm có mẫu khác 0
+
+    **Đề bài.** Xét tính liên tục của \(f(x)=\frac{x+1}{x-1}\) tại \(a=2\).
+
+    **Phân tích:** Trước hết kiểm **\(a\) thuộc tập xác định**, rồi tính giới hạn của thương khi mẫu tiến về giá trị khác 0.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Vì \(2-1\ne0\), \(f(2)=(2+1)/(2-1)=3\). Do tử/mẫu đều liên tục tại 2, mẫu khác 0, \(\lim_{x\to2}f(x)=3=f(2)\). Vậy \(f\) liên tục tại \(x=2\).</p></div>
+
+    **Kiểm lại:** Cần ghi cả \(f(2)\) và giới hạn, không chỉ thay x vào biểu thức rồi gọi là chứng minh.
+
+    ### 3.2. Chọn giá trị tại điểm thủng để liên tục
+
+    **Đề bài.** Cho \(f(x)=\frac{x^2-1}{x-1}\) khi \(x\ne1\) và \(f(1)=m\). Tìm \(m\) để \(f\) liên tục tại 1.
+
+    **Phân tích:** Với \(x\ne1\), phân tích tử \(x^2-1=(x-1)(x+1)\). Liên tục yêu cầu giới hạn ở gần 1 bằng **giá trị được gán tại 1**.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(\lim_{x\to1}f(x)=\lim_{x\to1}(x+1)=2\), còn \(f(1)=m\). Hàm liên tục tại 1 khi và chỉ khi \(m=2\).</p></div>
+
+    **Kiểm lại:** Rút gọn chỉ đúng \(x\ne1\); khi \(m=2\), đồ thị được lấp đúng “lỗ”, không phải vì phân thức gốc bỗng có nghĩa tại 1.
+
+    ### 3.3. Không có giá trị tại điểm nào sửa được bước nhảy
+
+    **Đề bài.** Cho \(g(x)=x\) với \(x<0\), \(g(0)=m\), và \(g(x)=x+1\) với \(x>0\). Có chọn được \(m\) để hàm liên tục tại 0 không?
+
+    **Phân tích:** Nếu hai giới hạn một phía **khác nhau**, thay một điểm \(g(0)\) không thể làm giới hạn hai phía xuất hiện.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(\lim_{x\to0^-}g(x)=\lim_{x\to0^-}x=0\), còn \(\lim_{x\to0^+}g(x)=\lim_{x\to0^+}(x+1)=1\). Hai giới hạn khác nhau nên không có giới hạn hữu hạn hai phía. Vì vậy **không có giá trị \(m\)** nào làm \(g\) liên tục tại 0.</p></div>
+
+    **Kiểm lại:** Đây là gián đoạn kiểu bước nhảy, khác với ví dụ 3.2 (chỉ thủng một điểm). Không tự chọn \(m=(0+1)/2\).
+
+    ### 3.4. Liên tục trên đoạn có hai đầu mút
+
+    **Đề bài.** Chứng minh \(f(x)=\sqrt{x}\) liên tục trên \([0,9]\).
+
+    **Phân tích:** Trên \((0,9)\), căn là hàm liên tục; hai đầu mút cần giới hạn **đúng phía**, không kiểm phía ngoài miền xác định.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Với \(x\in(0,9)\), hàm căn liên tục. Tại 0, \(\lim_{x\to0^+}\sqrt{x}=0=f(0)\). Tại 9, \(\lim_{x\to9^-}\sqrt{x}=3=f(9)\). Vì vậy \(f\) liên tục trên \([0,9]\).</p></div>
+
+    **Kiểm lại:** Không có \(\sqrt{x}\) thực khi \(x<0\), nên không cần/không được đòi giới hạn trái tại 0 để xét liên tục trên đoạn này.
+
+    ### 3.5. Khoảng liên tục của phân thức
+
+    **Đề bài.** Tìm các khoảng liên tục của \(f(x)=\frac{x+1}{x-2}\).
+
+    **Phân tích:** Hàm phân thức hữu tỉ liên tục trên miền xác định; giải **điều kiện mẫu khác 0** rồi ghi thành các khoảng.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(x-2\ne0\) khi \(x\ne2\), nên miền xác định là \((-\infty,2)\cup(2,+\infty)\). Tử và mẫu là đa thức liên tục, mẫu không bằng 0 trên từng khoảng; do đó \(f\) liên tục trên từng khoảng \((-\infty,2)\) và \((2,+\infty)\).</p></div>
+
+    **Kiểm lại:** Tại \(x=2\), hàm không xác định nên không gọi liên tục tại đó. Không tự ghi “liên tục trên \(\mathbb R\)”.
+
+    ### 3.6. Quy tắc tổng, thương của các hàm liên tục
+
+    **Đề bài.** Cho \(h(x)=\frac{x^2+1}{x+1}\). Chứng minh liên tục tại \(x=1\) và giải thích vì sao không áp dụng ngay quy tắc thương tại \(x=-1\).
+
+    **Phân tích:** Tử và mẫu là đa thức liên tục. Quy tắc thương yêu cầu **mẫu tại điểm xét khác 0**.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Tại 1, mẫu \(1+1=2\ne0\), nên \(h\) liên tục tại 1, và \(h(1)=(1^2+1)/(1+1)=1\). Tại \(-1\), mẫu bằng 0 nên hàm gốc không xác định; không thể áp quy tắc thương để kết luận liên tục tại \(-1\).</p></div>
+
+    **Kiểm lại:** Việc tử vẫn hữu hạn không khắc phục được mẫu bằng 0; điều kiện tồn tại hàm tại điểm là bắt buộc.
+
+    ### 3.7. Chứng minh tồn tại nghiệm bằng tính đổi dấu
+
+    **Đề bài.** Chứng minh phương trình \(x^3+x-1=0\) có ít nhất một nghiệm trong \((0,1)\).
+
+    **Phân tích:** Chọn \(p(x)=x^3+x-1\), xác nhận là đa thức liên tục trên **toàn đoạn** rồi tính dấu hai đầu.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(p\) là đa thức nên liên tục trên \([0,1]\). \(p(0)=-1<0\) và \(p(1)=1>0\), nên \(p(0)p(1)<0\). Theo nhận xét về đổi dấu của hàm liên tục trên đoạn, tồn tại \(c\in(0,1)\) sao cho \(p(c)=0\).</p></div>
+
+    **Kiểm lại:** Điều kiện kết luận chỉ là **ít nhất một nghiệm**. Muốn kết luận nghiệm duy nhất cần một lập luận khác (chẳng hạn đơn điệu), không tự thêm vào định lí đổi dấu.
+
+    ### 3.8. Ứng dụng thực tế: nhiệt độ đi qua một ngưỡng
+
+    **Đề bài.** Giả sử nhiệt độ một phòng \(T(t)\) thay đổi **liên tục** từ \(18^\circ\mathrm C\) lúc 8 giờ đến \(24^\circ\mathrm C\) lúc 10 giờ. Chứng minh có ít nhất một thời điểm trong khoảng đó nhiệt độ bằng \(20^\circ\mathrm C\).
+
+    **Phân tích:** Xét \(f(t)=T(t)-20\). Nếu \(T\) liên tục, \(f\) liên tục; hai đầu khoảng có dấu trái nhau. Đây là mô hình ứng dụng đúng phạm vi định lí, không dựa chỉ vào một đồ thị phỏng đoán.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \(f(8)=18-20=-2<0\); \(f(10)=24-20=4>0\). Vì \(T\) liên tục trên \([8,10]\), nên \(f\) cũng liên tục trên đoạn ấy. Theo nhận xét đổi dấu, tồn tại \(t_*\in(8,10)\) sao cho \(f(t_*)=0\), tức \(T(t_*)=20^\circ\mathrm C\).</p></div>
+
+    **Kiểm lại:** Ta chỉ biết có **ít nhất một** thời điểm, không xác định giờ phút chính xác và không suy chỉ một lần đi qua 20 độ. Nếu dữ liệu có bước nhảy, cần kiểm giả thiết liên tục.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Giới hạn tồn tại nên kết luận hàm liên tục
+
+    **Dấu hiệu:** \(\lim_{x\to a}f(x)=L\) tồn tại nhưng \(f(a)\ne L\), vẫn gọi liên tục.
+
+    **Vì sao sai:** Liên tục tại a cần \(f(a)\) xác định và bằng giới hạn hữu hạn.
+
+    **Cách sửa:** Viết ba dòng kiểm: \(f(a)\); giới hạn hai phía; so sánh dấu bằng. Nếu thiếu một điều kiện thì giữ trạng thái gián đoạn.
+
+    ### 4.2. Không so hai phía ở điểm rẽ nhánh
+
+    **Dấu hiệu:** Chỉ tính giới hạn trái, đặt một giá trị ở điểm nối rồi coi đã khép bước nhảy.
+
+    **Vì sao sai:** Hai phía khác nhau thì không có giới hạn hai phía; thay riêng \(f(a)\) không đổi được các giá trị ở gần.
+
+    **Cách sửa:** Tính \(\lim_{x\to a^-}f(x)\) và \(\lim_{x\to a^+}f(x)\); khi bằng nhau mới so tiếp với \(f(a)\).
+
+    ### 4.3. Bỏ điều kiện một phía tại đầu mút đoạn
+
+    **Dấu hiệu:** Đòi tính \(\lim_{x\to0^-}\sqrt{x}\) để chứng minh liên tục trên \([0,9]\), hoặc chỉ kiểm mọi điểm trong \((0,9)\) rồi bỏ hai đầu mút.
+
+    **Vì sao sai:** Tại đầu mút trong đoạn chỉ cần giới hạn **từ phía nằm trong đoạn** và bằng giá trị tại đầu mút.
+
+    **Cách sửa:** Tại \(a\) kiểm từ phải; tại \(b\) kiểm từ trái. Kiểm đủ cả hai đầu mút của đoạn đóng.
+
+    ### 4.4. Gọi hàm phân thức liên tục cả ở nghiệm mẫu
+
+    **Dấu hiệu:** Hàm \((x+1)/(x-2)\) được gọi liên tục trên \(\mathbb R\).
+
+    **Vì sao sai:** Tại \(x=2\), biểu thức không xác định. Tính liên tục chỉ xét tại điểm thuộc miền xác định của hàm.
+
+    **Cách sửa:** Giải điều kiện mẫu khác 0, tách các khoảng thuộc miền xác định rồi mới áp dụng tính liên tục của đa thức/phân thức.
+
+    ### 4.5. Áp dụng tính chất thương dù \(g(a)=0\)
+
+    **Dấu hiệu:** \(f,g\) liên tục tại \(a\), vội cho \(f/g\) liên tục mà không xem mẫu.
+
+    **Vì sao sai:** Tính chất thương đòi **\(g(a)\ne0\)**; bỏ điều kiện dẫn đến phép chia không xác định.
+
+    **Cách sửa:** Ghi \(g(a)\) và kiểm khác 0 trước; nếu bằng 0, phải phân tích miền và biểu thức theo bài, không suy từ định lí thương.
+
+    ### 4.6. Đổi dấu mà không kiểm liên tục, hoặc suy ra nghiệm duy nhất
+
+    **Dấu hiệu:** Chỉ thấy \(f(a)<0<f(b)\) liền kết luận nghiệm tồn tại, thậm chí duy nhất, dù chưa biết f liên tục trên đoạn.
+
+    **Vì sao sai:** Kết quả SGK yêu cầu **liên tục trên \([a,b]\)**. Kết luận là **ít nhất một nghiệm**, không phải duy nhất; hàm có bước nhảy có thể đổi dấu mà không có nghiệm.
+
+    **Cách sửa:** Kiểm liên tục trên trọn đoạn, tính đúng dấu hai đầu, kết luận “có ít nhất một nghiệm”; muốn duy nhất cần chứng cứ khác.
+
+    **Học tiếp:** [Core và Luyện tập Bài 17](luyen-tap.md) · [Tự luận Chương V](../../../thu-vien/tu-luan-g11-chuong-v.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn đối chiếu văn bản: SGK Toán 11 Kết nối tri thức với cuộc sống, tập một, Bài 17 “Hàm số liên tục”, trang in 119–122, theo bản SGK số hóa SGKVN. Ba mục gốc: Hàm số liên tục tại một điểm; Hàm số liên tục trên một khoảng; Một số tính chất cơ bản. Hình điểm gián đoạn B17 trên main và SVG mới minh họa đổi dấu đều được dùng chung ở hai tab. Chưa kiểm trực quan đầy đủ từng trang bản in và chưa có NotebookLM review theo snapshot này. Chỉ nâng cấp trang Kiến thức; Core/Tự kiểm tra giữ nguyên.</p>
