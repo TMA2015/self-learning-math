@@ -7,7 +7,7 @@ hide:
 <p class="thpt-r4-eyebrow">HỌC THEO CHUYÊN ĐỀ · CĐ18 · TOÁN THPT</p>
 <nav class="thpt-sgk-lesson-nav" aria-label="Điều hướng Chuyên đề 18">
 <a href="../../cd17/kien-thuc/">← Chuyên đề trước</a>
-<span class="thpt-sgk-nav-unavailable" aria-disabled="true">Chuyên đề sau →</span>
+<a href="../../cd19/kien-thuc/">Chuyên đề sau →</a>
 <a href="../kien-thuc/">Kiến thức</a>
 <a href="../tu-kiem-tra/">Tự kiểm tra</a>
 </nav>
