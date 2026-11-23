@@ -76,7 +76,9 @@ function b16RuntimeIsIsolated(){
  ];
  for(const [from,to] of edits){if(s.split(from).length!==2)return false;s=s.replace(from,to)}
  const bytes=Buffer.from(s),sha=crypto.createHash("sha1").update("blob "+bytes.length+"\0").update(bytes).digest("hex");
- return sha==="fb6650428bc148b536cb1d26ef34d5d521ddf715";
+ // Owner-approved retired-topic launcher now links only to 22 canonical Topics;
+ // hash recomputed after stripping the entire B16 adapter and normalizing its legacy link.
+ return sha==="d847e412bbc1bc10e62620965312ae0d327a0907";
 }
 /* W3 CĐ12–15 is an owner-authorized, separately QA-gated Topic-only wave.
  * Explicit original-file allowlist includes ONLY new Topic pages/assets and
@@ -246,6 +248,46 @@ function isExactW5TopicWave(files){
  }catch{return false}
 }
 
+/* Exact owner-approved W5 visual formula + retired-pilot + launcher patch.
+ * Any missing/extra source, shared Golden, Auth or RD1 path fails FULL. */
+const W5_P1_FILES=new Set([
+ ".github/workflows/deploy.yml",
+ ".github/workflows/thpt-deploy-scope-safety-qa.yml",
+ ".github/workflows/thpt-r4-preview-quality.yml",
+ "docs/assets/javascripts/thpt-r4-preview.js",
+ "docs/assets/javascripts/thpt-topic-w5-golden-v1.js",
+ "docs/thpt-preview/chuyen-de/ham-so/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/ham-so/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/ham-so/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/index.md",
+ "mkdocs.thpt-preview.yml",
+ "mkdocs.yml",
+ "scripts/test-thpt-release-impact.cjs",
+ "scripts/test-thpt-topic-w5-golden-browser.py"
+]);
+function isExactW5P1(files){
+ if(files.length!==W5_P1_FILES.size||new Set(files).size!==files.length||
+    !files.every(p=>W5_P1_FILES.has(p))||!b16RuntimeIsIsolated())return false;
+ try{
+  const js=fs.readFileSync("docs/assets/javascripts/thpt-topic-w5-golden-v1.js","utf8");
+  const launcher=fs.readFileSync("docs/assets/javascripts/thpt-r4-preview.js","utf8");
+  if(!js.includes('if(t.nodeValue.includes("^")||t.nodeValue.includes("[")')||
+     !js.includes("recovered-display")||!js.includes('credentials:"omit"')||
+     /localStorage|sessionStorage|setDoc\(|sendBeacon/.test(js)||
+     !launcher.includes('["Danh mục 22 Chuyên đề đã phát hành","chuyen-de/"]')||
+     launcher.includes("Hàm số và đồ thị · MẪU"))return false;
+  for(const part of ["kien-thuc","luyen-tap","tu-kiem-tra"]){
+   const page=fs.readFileSync("docs/thpt-preview/chuyen-de/ham-so/"+part+".md","utf8");
+   if(!page.includes('window.location.replace("../../")')||
+      page.includes("data-thpt-practice")||page.includes("data-thpt-readiness"))return false;
+  }
+  if(fs.readFileSync("docs/thpt-preview/chuyen-de/index.md","utf8").includes('href="ham-so/kien-thuc/"'))return false;
+  for(const y of ["mkdocs.yml","mkdocs.thpt-preview.yml"])
+   if(fs.readFileSync(y,"utf8").includes("thpt-preview/chuyen-de/ham-so/"))return false;
+  return true;
+ }catch{return false}
+}
+
 /* W4 CĐ16–18: exact 30-path owner-instructed scoped integration.
  * Any unknown/mixed source/runtime/Auth/Firebase/SGK/THCS change fails CLOSED
  * to FULL; this exception never grants Academic/PED PASS or T5 approval. */
@@ -361,6 +403,7 @@ function classify(paths,{manual=false}={}){
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(isScopedTopicW2W3Hotfix(files))return {impact:"SCOPED_TOPIC_HOTFIX_W2_W3",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTPUBLISH_CĐ06_15_TEXT_MATH_SCOPED_BROWSER"};
+ if(isExactW5P1(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"EXACT_OWNER_P1_W5_MATH_PILOT_LAUNCHER_BROWSER"};
  if(isExactW5TopicWave(files))return {impact:"SCOPED_TOPIC_W5",full_suite:"false",changed_lessons:"",reason:"SIGNED_W5_12_PAGES_239_Q15_35_PUBLIC_Q16_GOLDEN_BROWSER"};
  if(isExactW4TopicWave(files))return {impact:"SCOPED_TOPIC_W4",full_suite:"false",changed_lessons:"",reason:"SIGNED_W4_9_PAGES_309_Q15_28_PUBLIC_Q16_GOLDEN_BROWSER"};
  if(isExactW3TopicWave(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_12_PAGES_240_Q15_59_Q16_GOLDEN_BROWSER_INDEPENDENT"};
@@ -490,6 +533,14 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const p1=[...W5_P1_FILES];
+ assert.equal(classify(p1).impact,"SCOPED_TOPIC_W5_P1_HOTFIX","Exact owner hotfix only");
+ assert.equal(classify(p1.slice(1)).impact,"FULL","Incomplete owner hotfix stays FULL");
+ assert.equal(classify([...p1,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,"FULL","Golden runtime modification not allowed");
+ assert.equal(classify([...p1,"docs/thpt-preview/sgk/chuong-vii/bai-19.md"]).impact,"FULL","SGK source modification not allowed");
+ assert.equal(classify([...p1,"docs/assets/data/assessment/private.json"]).impact,"FULL","RD1 scope not allowed");
+ assert.equal(classify(p1,{manual:true}).impact,"FULL","Manual FULL remains available");
+
  const w5=[...W5_EXACT_SCOPE_FILES];
  assert.equal(classify(w5).impact,"SCOPED_TOPIC_W5","W5 exact signed 38-file scope only");
  assert.equal(classify(w5.filter(x=>!x.endsWith("cd22/tu-kiem-tra.md"))).impact,"FULL","W5 missing Q16 must fail closed");

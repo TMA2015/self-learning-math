@@ -56,7 +56,7 @@ jobs:
   deploy:
     needs: release-scope
     # The large inherited site-wide regression lane is for shared/unknown changes only.
-    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' }}
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -606,7 +606,7 @@ jobs:
   deploy-scoped-topic-w5:
     name: Publish signed W5 CĐ19–22 after exact HEAD Q18/Q15/Q16 + Chromium/WebKit
     needs: release-scope
-    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_W5' }}
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && (needs.release-scope.outputs.impact == 'SCOPED_TOPIC_W5' || needs.release-scope.outputs.impact == 'SCOPED_TOPIC_W5_P1_HOTFIX') }}
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     steps:
@@ -628,8 +628,10 @@ jobs:
           git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/topic-w5-scope.txt"
           node scripts/test-thpt-release-impact.cjs --self-test
           env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/topic-w5-scope.txt" > "$RUNNER_TEMP/topic-w5-classified.txt"
-          grep -Fxq "impact=SCOPED_TOPIC_W5" "$RUNNER_TEMP/topic-w5-classified.txt"
+          grep -Eq "^impact=(SCOPED_TOPIC_W5|SCOPED_TOPIC_W5_P1_HOTFIX)$" "$RUNNER_TEMP/topic-w5-classified.txt"
           node --check docs/assets/javascripts/thpt-topic-w5-golden-v1.js
+          node --check docs/assets/javascripts/thpt-r4-preview.js
+          node scripts/test-thpt-release-impact.cjs --self-test
           python3 -m py_compile scripts/test-thpt-topic-w5-golden-browser.py scripts/test-thpt-topic-w5-source-locked.py
           git fetch --no-tags origin 1bffa9555e5c549dbac11e47a3d24799d90d7e64 b576b7f542f04cb7d600e1ce0ceed3d31fcd49e2 17182ddb33ee9ad2103e9d00c7b1ac644cbbf336 5ac65e9e4a2fa6290f73b15fa73a9e08ca0216d7
           python3 scripts/test-thpt-topic-w5-source-intake.py

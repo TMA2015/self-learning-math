@@ -135,27 +135,63 @@ const normalizeRenderedMath=node=>{
  while(walker.nextNode()){
   const t=walker.currentNode,p=t.parentElement;
   if(!p||p.closest(".arithmatex,mjx-container,code,pre,script,style,textarea,svg"))continue;
-  if(t.nodeValue.includes("^")||t.nodeValue.includes("\\operatorname")||t.nodeValue.includes("\\lim")||(t.nodeValue.includes("[")&&t.nodeValue.includes("\\")))texts.push(t);
+  if(t.nodeValue.includes("^")||t.nodeValue.includes("[")||t.nodeValue.includes("\\operatorname")||t.nodeValue.includes("\\lim"))texts.push(t);
  }
- // Python-Markdown stripped two verified blockquote display forms: CĐ06 Chasles
- // and CĐ08 finite-limit theorem. Recover only these original TeX expressions.
+ // MkDocs strips backslashes from TeX display brackets inside blockquotes.
+ // Rehydrate only mathematical [..] with a TeX command, equality or exponent.
+ // This includes source-locked W5 \cup/\mid and R_g/IQR_g formula cards.
  const fragments=/\[\s*([^\[\]]{2,1200}?)\s*\]|(?:[A-Za-z]|\d+)\^(?:\{[^{}\n]{1,40}\}|[A-Za-z0-9]+)/g;
  for(const t of texts){
   const v=t.nodeValue,parts=document.createDocumentFragment();let lastIndex=0,hit=false,match;
   fragments.lastIndex=0;
   while((match=fragments.exec(v))){
-   if(match[1]&&!/\\(?:operatorname|lim|vec|overrightarrow|sin|cos|tan|cot|frac|sqrt|ldots|cdot|theta|alpha|beta|gamma|pi|to|le|ge|mathbb|log|ln|sum|int|begin|end|text|quad|qquad|widehat)\b/.test(match[1]))continue;
+   if(match[1]&&!(/\\[A-Za-z]+/.test(match[1])||/[=^]/.test(match[1])))continue;
    hit=true;
    if(match.index>lastIndex)parts.append(document.createTextNode(v.slice(lastIndex,match.index)));
    const math=create("span","arithmatex");
    math.dataset.topicW3DisplayMath=match[1]?"recovered-display":"exponent";
    math.textContent=match[1]?"\\["+match[1].trim()+"\\]":"\\("+match[0]+"\\)";
+   // This wrapper is created from exactly ONE approved TeX display block.
+   // Concurrent MathJax startup + tab activation can emit multiple containers;
+   // preserve the first, discard duplicate output DOM only (never source TeX).
+   if(match[1]){
+    const collapse=()=>{
+     const views=[...math.querySelectorAll("mjx-container")];
+     if(views.length>1)views.slice(1).forEach(x=>x.remove());
+    };
+    const observer=new MutationObserver(collapse);
+    observer.observe(math,{childList:true,subtree:true});
+   }
    parts.append(math);lastIndex=fragments.lastIndex;
   }
   if(hit){if(lastIndex<v.length)parts.append(document.createTextNode(v.slice(lastIndex)));t.replaceWith(parts)}
  }
 };
-const renderMath=node=>{normalizeRenderedMath(node);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
+/* Typeset each recovered/original TeX span at most once. W5 subtabs call
+ * renderMath on both a subgroup and its parent; a whole-panel re-typeset
+ * otherwise inserts duplicate mjx-container nodes for the same formula. */
+const renderMath=node=>{
+ normalizeRenderedMath(node);
+ const spans=[...node.querySelectorAll(".arithmatex")].filter(el=>
+  !el.querySelector("mjx-container")&&el.dataset.topicW5TypesetQueued!=="1");
+ if(!spans.length)return;
+ spans.forEach(el=>{el.dataset.topicW5TypesetQueued="1"});
+ const run=()=>{
+  const lib=window.MathJax;
+  if(!lib?.typesetPromise){spans.forEach(el=>delete el.dataset.topicW5TypesetQueued);return}
+  const pending=spans.filter(el=>el.isConnected&&!el.querySelector("mjx-container"));
+  if(!pending.length)return;
+  return lib.typesetPromise(pending).catch(()=>{
+   pending.forEach(el=>delete el.dataset.topicW5TypesetQueued);
+  });
+ };
+ const m=window.MathJax;
+ if(m?.typesetPromise)run();
+ else if(m?.startup?.promise)m.startup.promise.then(run).catch(()=>{
+  spans.forEach(el=>delete el.dataset.topicW5TypesetQueued);
+ });
+ else spans.forEach(el=>delete el.dataset.topicW5TypesetQueued);
+};
 /* Source SVGs remain byte-identical; only the rendered footprint is constrained.
  * W3-only data attribute avoids changing accepted CĐ01/W1/W3 and SGK images. */
 const capKnowledgeFigures=root=>{

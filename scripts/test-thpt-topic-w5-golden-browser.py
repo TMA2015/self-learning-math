@@ -66,6 +66,25 @@ with sync_playwright() as pw:
                     ), (topic, part, "current page must not appear in nav")
                     assert page.locator("[data-thpt-readiness],[data-mastery-credit]").count() == 0
                 load("kien-thuc")
+                if engine == "chromium" and topic == "19" and width == 820:
+                    # Screenshot #7: 5+1 now points to the official catalog, not
+                    # a demo with no canonical Topic/assessment source.
+                    launch = page.locator("[data-thpt-r4-launcher]")
+                    expect(launch).to_be_visible()
+                    assert launch.locator(".roadmap-topic-launcher__name").inner_text() == "danh mục"
+                    launch.click()
+                    chooser = page.locator("[data-thpt-r4-shortcut-dialog]")
+                    expect(chooser).to_be_visible()
+                    actual = chooser.locator('a[href$="/thpt-preview/chuyen-de/"]')
+                    assert actual.count() >= 1
+                    assert chooser.locator('a[href*="/chuyen-de/ham-so/"]').count() == 0
+                    page.keyboard.press("Escape")
+                    legacy = ctx.new_page()
+                    for old_part in ("kien-thuc", "luyen-tap", "tu-kiem-tra"):
+                        legacy.goto(BASE + "ham-so/" + old_part + "/", wait_until="domcontentloaded")
+                        legacy.wait_for_url(re.compile(r"/thpt-preview/chuyen-de/$"), timeout=10000)
+                    assert legacy.locator(".topic01-legacy-note").count() == 0
+                    legacy.close()
                 knowledge = page.locator("[data-topic-w1-knowledge]")
                 expect(knowledge).to_be_visible()
                 topic_heading=page.locator("article.md-typeset > h1.topic-w1-topic-heading")
@@ -241,6 +260,31 @@ with sync_playwright() as pw:
                     dark = page.locator('[data-topic-w1-callout="concept"]').first
                     if dark.count():
                         assert dark.evaluate("(e)=>getComputedStyle(e).backgroundColor") != PALETTE["concept"]
+                # Owner screenshot regression: MkDocs eats display \\[ and \\] in
+                # signed Knowledge blockquotes. Check *actual visible* formula
+                # cards on each affected Topic, not merely any MathJax on page.
+                reported_display_formulas = {
+                    "19": [("3", "3-2", "[(a-b)^n="), ("3", "3-3", "[(1+r)^5=")],
+                    "20": [("2", "2-3", "[P(A\\\\cup B)=")],
+                    "21": [("2", "2-1", "[P(L)=")],
+                    "22": [("3", "3-1", "[R_g="), ("3", "3-2", "[IQR_g=")],
+                }
+                for module_id, subtab_id, literal in reported_display_formulas[topic]:
+                    page.locator('[data-topic-w1-module-tab="' + module_id + '"]').click()
+                    page.locator('[data-topic-w1-subtab="' + subtab_id + '"]').click()
+                    current_panel = page.locator(".thpt-r4-knowledge-content-panel:visible")
+                    expect(current_panel).to_have_count(1)
+                    orphan_literals = current_panel.evaluate("""(root, raw) => [...root.querySelectorAll('p')]
+                      .flatMap(p => [...p.childNodes])
+                      .filter(n => n.nodeType === Node.TEXT_NODE && n.nodeValue.includes(raw))
+                      .map(n => n.nodeValue.slice(0, 220))""", literal)
+                    assert not orphan_literals, (engine, topic, width, subtab_id,
+                                                 "OWNER_P1_RAW_DISPLAY_MATH", orphan_literals)
+                    recovered = current_panel.locator('[data-topic-w3-display-math="recovered-display"]')
+                    assert recovered.count() >= 1, (engine, topic, width, subtab_id,
+                                                     "DISPLAY_MATH_WRAPPER_MISSING", literal)
+                    expect(recovered.first.locator("mjx-container")).to_have_count(1, timeout=12000)
+                    expect(recovered.first.locator("mjx-container").first).to_be_visible(timeout=12000)
                 load("luyen-tap")
                 cards = page.locator("[data-topic-w1-practice-card]")
                 expect(cards).to_have_count(practice_groups)
