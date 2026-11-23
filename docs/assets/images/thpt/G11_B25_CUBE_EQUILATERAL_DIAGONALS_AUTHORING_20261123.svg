@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="470" viewBox="0 0 950 470" role="img" aria-labelledby="t d">
+<title id="t">Tam giác A phẩy B D đều trong hình lập phương</title><desc id="d">Hình lập phương ABCD.A phẩy B phẩy C phẩy D phẩy. Nổi bật ba đoạn A phẩy B màu cam, A phẩy D màu lục và BD màu xanh. Mỗi đoạn là đường chéo của một mặt hình vuông cạnh a nên đều dài a căn hai. Tam giác A phẩy B D có ba cạnh bằng nhau nên đều; không lấy độ dài từ phối cảnh.</desc>
+<rect width="950" height="470" rx="18" fill="#fff"/>
+<text x="475" y="37" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#1e405d">Ba đường chéo mặt tạo tam giác đều A′BD</text>
+<g stroke="#71849a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M160 354 L410 354 L545 269 L293 269 Z"/>
+<path d="M160 130 L410 130 L545 45 L293 45 Z"/>
+<path d="M160 130 L160 354 M410 130 L410 354 M545 45 L545 269 M293 45 L293 269"/>
+</g>
+<g stroke-width="7" fill="none" stroke-linecap="round">
+<path d="M160 130 L410 354" stroke="#c45b38"/>
+<path d="M160 130 L293 269" stroke="#30836a"/>
+<path d="M410 354 L293 269" stroke="#2672a6"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="19" fill="#23405b">
+<text x="139" y="377">A</text><text x="419" y="380">B</text><text x="553" y="282">C</text><text x="274" y="293">D</text>
+<text x="139" y="123">A′</text><text x="414" y="120">B′</text><text x="552" y="44">C′</text><text x="272" y="44">D′</text>
+<text x="240" y="238" fill="#bd5638">A′B</text><text x="201" y="191" fill="#267861">A′D</text><text x="342" y="329" fill="#266d9e">BD</text>
+<rect x="633" y="97" width="281" height="250" rx="12" fill="#f2f7fb" stroke="#dfe6ed"/>
+<text x="657" y="139" font-weight="700">Cạnh hình lập phương: a</text>
+<text x="657" y="182">A′B = a√2</text>
+<text x="657" y="223">A′D = a√2</text>
+<text x="657" y="264">BD = a√2</text>
+<text x="657" y="315" font-weight="700" fill="#27745c">⇒ ΔA′BD đều</text>
+<text x="475" y="435" text-anchor="middle" font-size="16" fill="#5f7488">Ba cạnh là đường chéo ba mặt vuông, không phải ba cạnh khối.</text>
+</g></svg>
