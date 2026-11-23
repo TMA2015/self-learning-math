@@ -68,7 +68,7 @@ jobs:
               assert Path('site/thpt-preview/math-lab/models',t['optionalModel'],'index.html').is_file(), n
           original=(list(Path('site/assets/images/thpt').glob('FIG-TOP19-*.svg'))+
                     list(Path('site/assets/images/thpt').glob('FIG-TOP20-*.svg'))+
-                    list(Path('site/assets/images/thpt').glob('FIG-TOP21-*.svg'))+
+                    list(Path('site/assets/images/thpt').glob('FIG-TOP21_*.svg'))+
                     list(Path('site/assets/images/thpt').glob('Temp_STATISTICS_*.svg')))
           assert len(original)==10,(len(original),original)
           print('PASS W5 12 routes source/Q18, 10 signed SVGs and 4 optional models')
