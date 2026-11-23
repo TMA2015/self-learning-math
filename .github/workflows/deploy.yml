@@ -630,6 +630,7 @@ jobs:
           env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/topic-w5-scope.txt" > "$RUNNER_TEMP/topic-w5-classified.txt"
           grep -Fxq "impact=SCOPED_TOPIC_W5" "$RUNNER_TEMP/topic-w5-classified.txt"
           node --check docs/assets/javascripts/thpt-topic-w5-golden-v1.js
+          python3 -m py_compile scripts/test-thpt-topic-w5-golden-browser.py scripts/test-thpt-topic-w5-source-locked.py
           git fetch --no-tags origin 1bffa9555e5c549dbac11e47a3d24799d90d7e64 b576b7f542f04cb7d600e1ce0ceed3d31fcd49e2 17182ddb33ee9ad2103e9d00c7b1ac644cbbf336 5ac65e9e4a2fa6290f73b15fa73a9e08ca0216d7
           python3 scripts/test-thpt-topic-w5-source-intake.py
           python3 scripts/test-thpt-topic-w5-source-locked.py
