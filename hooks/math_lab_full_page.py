@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "scripts" / "math-lab-25-release-manifest.tsv"
-_ROUTE = re.compile(r"^thpt-preview/math-lab/models/(slm-(?:top|sgk)-[a-z0-9-]+)\.md$")
+_ROUTE = re.compile(r"^thpt-preview/math-lab/models/(slm-(?:top[0-9]{2}|sgk-g11-b0[34])-[a-z0-9-]+)\.md$")
 _STYLE = """
 <style id="ml-restored-viewer-css">
 #ml-restored-top, #ml-restored-bottom {
@@ -84,12 +84,10 @@ def on_post_page(output: str, page, config, **kwargs) -> str:
     wrapper = wrapper_path.read_text(encoding="utf-8")
     if wrapper.count('<iframe') != 1 or wrapper.count('href="../../"') != 2:
         raise RuntimeError("Legacy Math Lab wrapper context changed: " + slug)
-    model_id = _field(wrapper, "ml-model-page", "div") if False else None
     marker = re.search(r'data-math-lab-model="([^"]+)"', wrapper)
     if marker is None or marker.group(1) != slug.upper():
         raise RuntimeError("Math Lab wrapper model ID mismatch: " + slug)
     label = _field(wrapper, "ml-overline")
-    title = _field(wrapper, "", "h1") if False else None
     title_match = re.search(r"<h1>([^<]+)</h1>", wrapper)
     desc = _field(wrapper, "ml-model-desc")
     note = _field(wrapper, "ml-note")
