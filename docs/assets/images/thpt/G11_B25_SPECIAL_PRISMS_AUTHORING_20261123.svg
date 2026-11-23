@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="450" viewBox="0 0 1050 450" role="img" aria-labelledby="t d">
+<title id="t">Phân biệt lăng trụ đứng, lăng trụ đều và hình lập phương</title><desc id="d">Ba khung minh họa lăng trụ đứng với đáy tam giác không đều, lăng trụ đều với đáy tam giác đều, và hình lập phương là hình hộp chữ nhật có tất cả cạnh bằng nhau. Cạnh bên của cả ba vuông góc đáy, nhưng lăng trụ đứng không nhất thiết có đáy đa giác đều.</desc>
+<rect width="1050" height="450" rx="18" fill="#fff"/>
+<text x="525" y="34" text-anchor="middle" font-size="22" font-family="Arial,sans-serif" font-weight="700" fill="#213d5b">Nhận dạng khối bằng điều kiện, không chỉ nhìn hình</text>
+<g font-family="Arial,sans-serif" font-size="18" fill="#274159" stroke-linejoin="round">
+<rect x="15" y="55" width="326" height="347" rx="13" fill="#f7fafc" stroke="#dde6ec"/>
+<text x="178" y="86" text-anchor="middle" font-weight="700">Lăng trụ đứng</text>
+<path d="M89 310 L286 310 L232 235 Z" fill="#dbeefa" stroke="#397ba4" stroke-width="3"/>
+<path d="M89 176 L286 176 L232 101 Z" fill="#e0f5eb" stroke="#38866d" stroke-width="3"/>
+<path d="M89 176 L89 310 M286 176 L286 310 M232 101 L232 235" fill="none" stroke="#536b82" stroke-width="3.5"/>
+<text x="177" y="347" text-anchor="middle">Đáy không nhất thiết đều</text><text x="177" y="375" text-anchor="middle">Cạnh bên ⟂ đáy</text>
+<rect x="361" y="55" width="326" height="347" rx="13" fill="#f7fafc" stroke="#dde6ec"/>
+<text x="524" y="86" text-anchor="middle" font-weight="700">Lăng trụ đều</text>
+<path d="M408 308 L642 308 L525 174 Z" fill="#dbeefa" stroke="#397ba4" stroke-width="3"/>
+<path d="M408 175 L642 175 L525 41 Z" transform="translate(0,65)" fill="#e0f5eb" stroke="#38866d" stroke-width="3"/>
+<path d="M408 240 L408 308 M642 240 L642 308 M525 106 L525 174" fill="none" stroke="#536b82" stroke-width="3"/>
+<text x="524" y="347" text-anchor="middle">Lăng trụ đứng + đáy đều</text><text x="524" y="375" text-anchor="middle">Mặt bên chữ nhật bằng nhau</text>
+<rect x="707" y="55" width="326" height="347" rx="13" fill="#f7fafc" stroke="#dde6ec"/>
+<text x="870" y="86" text-anchor="middle" font-weight="700">Hình lập phương</text>
+<path d="M773 187 L917 187 L965 140 L821 140 Z" fill="#e0f5eb" stroke="#38866d" stroke-width="3"/>
+<path d="M773 187 L917 187 L917 328 L773 328 Z" fill="#dbeefa" stroke="#397ba4" stroke-width="3"/>
+<path d="M917 187 L965 140 L965 280 L917 328 Z" fill="#d3e4f3" stroke="#397ba4" stroke-width="3"/>
+<text x="870" y="347" text-anchor="middle">Hộp chữ nhật, mọi cạnh bằng</text><text x="870" y="375" text-anchor="middle">Sáu mặt hình vuông</text>
+</g><text x="525" y="434" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#62778a">Sơ đồ phân loại; các dấu vuông góc và cạnh bằng nhau là giả thiết/định nghĩa, không đo từ ảnh.</text>
+</svg>
