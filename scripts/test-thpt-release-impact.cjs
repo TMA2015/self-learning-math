@@ -165,6 +165,87 @@ function isExactW3TopicWave(files){
  }catch{return false}
 }
 
+/* W5 CĐ19–22: only the exact 38-file source-locked, browser-verified
+ * owner-scoped release may use the W5 deploy lane. Unknown/shared/mixed
+ * changes fail closed to FULL; no waiver of Q15/Q16/GIT/QA or owner authority. */
+const W5_EXACT_SCOPE_FILES=new Set([
+ ".github/workflows/deploy.yml",
+ ".github/workflows/thpt-deploy-scope-safety-qa.yml",
+ ".github/workflows/thpt-topic-w5-golden-release-qa.yml",
+ ".github/workflows/thpt-topic-w5-source-intake-qa.yml",
+ "docs/assets/images/thpt/FIG-TOP19-B23-ADD-MULTIPLY-WHITE-R00.svg",
+ "docs/assets/images/thpt/FIG-TOP19-B23-TWO_STAGE_TREE_WHITE_R00.svg",
+ "docs/assets/images/thpt/FIG-TOP19-B24-ORDER-GROUP-WHITE-R00.svg",
+ "docs/assets/images/thpt/FIG-TOP19-B25-PASCAL-WHITE-R00.svg",
+ "docs/assets/images/thpt/FIG-TOP20-G10-B27_TWO_TOSSES_TREE_WHITE_R00.svg",
+ "docs/assets/images/thpt/FIG-TOP20-G11-B28-B29_VENN_WHITE_R00.svg",
+ "docs/assets/images/thpt/FIG-TOP21_ROUTE_TREE_3_5_2_5_R01.svg",
+ "docs/assets/images/thpt/FIG-TOP21_TOTAL_PROBABILITY_30_70_TREE_WHITE_R01.svg",
+ "docs/assets/images/thpt/Temp_STATISTICS_BOX_OUTLIER_R00_20261111.svg",
+ "docs/assets/images/thpt/Temp_STATISTICS_GROUPED_FREQ_R00_20261111.svg",
+ "docs/assets/javascripts/thpt-topic-w5-golden-v1.js",
+ "docs/thpt-preview/chuyen-de/cd18/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd18/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd18/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd19/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd19/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd19/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd20/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd20/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd20/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd21/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd21/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd21/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/cd22/kien-thuc.md",
+ "docs/thpt-preview/chuyen-de/cd22/luyen-tap.md",
+ "docs/thpt-preview/chuyen-de/cd22/tu-kiem-tra.md",
+ "docs/thpt-preview/chuyen-de/index.md",
+ "mkdocs.thpt-preview.yml",
+ "mkdocs.yml",
+ "prototypes/thpt/release-queue/W5_CD19_22_SOURCE_INTAKE_20261123.json",
+ "scripts/test-thpt-release-impact.cjs",
+ "scripts/test-thpt-topic-w5-golden-browser.py",
+ "scripts/test-thpt-topic-w5-source-intake.py",
+ "scripts/test-thpt-topic-w5-source-locked.py"
+]);
+const W5_SOURCE_HEADS={"19":"2faa5d797eb16020d21673c572c443f1cb7acb41","20":"b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9","21":"e526468f2452221e08070fc96e3a64d42ad5c8f9","22":"7ac79e5ed705a5ce482c3d9c42a4451e659e1109"};
+function isExactW5TopicWave(files){
+ if(files.length!==W5_EXACT_SCOPE_FILES.size||new Set(files).size!==files.length||
+    !files.every(p=>W5_EXACT_SCOPE_FILES.has(p)))return false;
+ try{
+  const m=JSON.parse(fs.readFileSync("prototypes/thpt/release-queue/W5_CD19_22_SOURCE_INTAKE_20261123.json","utf8"));
+  if(m.wave!=="W5"||m.standard!=="SLM-THPT-QUALITY-ONE v3.2.0 Q01–Q18"||
+     m.assessment!=="PUBLIC_REPLAY_ONLY / CLIENT_SELF_CHECK_NO_MASTERY; not independent TOPIC_READINESS"||
+     Object.keys(m.topics||{}).sort().join(",")!=="19,20,21,22"||
+     m.totals?.outcomes!==78||m.totals?.practice!==187||
+     m.totals?.q15Canonical!==239||m.totals?.replay!==35||
+     m.totals?.sourceSVGCount!==10||m.totals?.plannedPages!==12)return false;
+  const js=fs.readFileSync("docs/assets/javascripts/thpt-topic-w5-golden-v1.js","utf8");
+  if(!js.includes("PUBLIC_REPLAY_ONLY")||!js.includes('credentials:"omit"')||
+     /localStorage|sessionStorage|setDoc\(|sendBeacon|WebSocket\(/.test(js))return false;
+  let totalSVG=0;
+  for(const [n,source] of Object.entries(W5_SOURCE_HEADS)){
+   const t=m.topics[n];if(!t||t.sourceBlob!==source||
+      !/^[a-f0-9]{40}$/.test(t.q18ReceiptBlob)||
+      !/^[a-f0-9]{40}$/.test(t.readyBlob)||
+      !/^[a-f0-9]{40}$/.test(t.authorHead))return false;
+   for(const part of ["kien-thuc","luyen-tap","tu-kiem-tra"]){
+    const page=fs.readFileSync("docs/thpt-preview/chuyen-de/cd"+n+"/"+part+".md","utf8");
+    if(!page.includes("SOURCE_LEARNER_BLOB "+source)||
+       !page.includes("Q18_RECEIPT_BLOB "+t.q18ReceiptBlob)||
+       !page.includes("thpt-topic-w5-golden-v1.js"))return false;
+    if(part==="tu-kiem-tra"&&
+       (!page.includes("NO_MASTERY")||!page.includes("Đối chiếu")))return false;
+   }
+   totalSVG+=t.sourceSVGCount;
+  }
+  if(totalSVG!==10)return false;
+  for(const name of W5_EXACT_SCOPE_FILES)
+   if(name.startsWith("docs/assets/images/thpt/")&&!fs.existsSync(name))return false;
+  return true;
+ }catch{return false}
+}
+
 /* W4 CĐ16–18: exact 30-path owner-instructed scoped integration.
  * Any unknown/mixed source/runtime/Auth/Firebase/SGK/THCS change fails CLOSED
  * to FULL; this exception never grants Academic/PED PASS or T5 approval. */
@@ -280,6 +361,7 @@ function classify(paths,{manual=false}={}){
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(isScopedTopicW2W3Hotfix(files))return {impact:"SCOPED_TOPIC_HOTFIX_W2_W3",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTPUBLISH_CĐ06_15_TEXT_MATH_SCOPED_BROWSER"};
+ if(isExactW5TopicWave(files))return {impact:"SCOPED_TOPIC_W5",full_suite:"false",changed_lessons:"",reason:"SIGNED_W5_12_PAGES_239_Q15_35_PUBLIC_Q16_GOLDEN_BROWSER"};
  if(isExactW4TopicWave(files))return {impact:"SCOPED_TOPIC_W4",full_suite:"false",changed_lessons:"",reason:"SIGNED_W4_9_PAGES_309_Q15_28_PUBLIC_Q16_GOLDEN_BROWSER"};
  if(isExactW3TopicWave(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_12_PAGES_240_Q15_59_Q16_GOLDEN_BROWSER_INDEPENDENT"};
  if(isSignedW3Recovery(files))return {impact:"SCOPED_TOPIC_W3",full_suite:"false",changed_lessons:"",reason:"SIGNED_W3_POSTMERGE_WORKFLOW_QUOTE_RECOVERY_COMMENT_ONLY"};
@@ -408,6 +490,14 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const w5=[...W5_EXACT_SCOPE_FILES];
+ assert.equal(classify(w5).impact,"SCOPED_TOPIC_W5","W5 exact signed 38-file scope only");
+ assert.equal(classify(w5.filter(x=>!x.endsWith("cd22/tu-kiem-tra.md"))).impact,"FULL","W5 missing Q16 must fail closed");
+ assert.equal(classify([...w5,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).impact,"FULL","W5 shared Golden runtime must stay FULL");
+ assert.equal(classify([...w5,"docs/thpt-preview/sgk/chuong-vii/bai-19.md"]).impact,"FULL","W5 + SGK mixed must stay FULL");
+ assert.equal(classify([...w5,"docs/assets/data/assessment/private.json"]).impact,"FULL","W5 + RD1 private must stay FULL");
+ assert.equal(classify(w5,{manual:true}).impact,"FULL","manual FULL request must stay FULL");
+
  const hotfix=[...TOPIC_W2_W3_HOTFIX_FILES];
  assert.equal(classify(hotfix).impact,"SCOPED_TOPIC_HOTFIX_W2_W3","Exact ten-topic maintenance only");
  assert.equal(classify(hotfix.slice(1)).full_suite,"true","Missing hotfix file must fail closed");
