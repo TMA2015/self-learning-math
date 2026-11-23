@@ -58,17 +58,21 @@ for n, t in M["topics"].items():
     assert set(replays).issubset(set(identities)), f"CĐ{n} replay not canonical Practice"
     assert len(re.findall(r"(?m)^\*\*Câu\s*\d+\.", check)) == t["replay"]
     assert "NO_MASTERY" in check or "không phải điểm" in check.lower()
-    svgs = set(re.findall(r"FIG-[A-Za-z0-9_][A-Za-z0-9_.-]*\.svg", content))
-    assert len(svgs) == t["sourceSVGCount"], f"CĐ{n} original SVG references: {svgs}"
-    for name in svgs:
-        path = "docs/assets/images/thpt/" + name
+    svgnames = set(re.findall(r"(?:FIG-[A-Za-z0-9_.-]+|Temp_STATISTICS_[A-Za-z0-9_.-]+)\.svg", content))
+    assert len(svgnames) == t["sourceSVGCount"], f"CĐ{n} original SVG references: {svgnames}"
+    for name in svgnames:
+        if n == "22":
+            path = "prototypes/thpt/content-drafts/topic-statistics/assets/" + name
+            assert path in t["sourceSVGPaths"], f"CĐ22 unreviewed SVG path: {name}"
+        else:
+            path = "docs/assets/images/thpt/" + name
         blob = source_blob(path)
         assert re.fullmatch(r"[0-9a-f]{40}", blob), f"CĐ{n} original SVG unavailable: {name}"
     for key in totals:
         totals[key] += 1 if key == "topics" else t[key]
     print(f"PASS W5 CĐ{n}: original learner/Q18/ready exact SHA; {len(ktabs)} tabs;"
           f" {len(fts)} first tries + {len(identities)} Practice Q15;"
-          f" {len(replays)} Q16 public same-ID replays; {len(svgs)} SVG")
+          f" {len(replays)} Q16 public same-ID replays; {len(svgnames)} SVG")
 
 for key, actual in totals.items():
     assert M["totals"][key] == actual, (key, M["totals"][key], actual)
