@@ -362,7 +362,7 @@ Hãy xét một lần gieo xúc xắc, với A là biến cố ra số chẵn v�
 
 **Hướng dẫn đọc hình:** Khung \(\Omega\) biểu diễn sáu kết quả của phép gieo xúc xắc. Quan sát riêng phần giao chứa 4, 6; phần chỉ thuộc A chứa 2; phần chỉ thuộc B chứa 5. Kết quả 1 và 3 nằm ngoài cả hai biến cố. Các vòng tròn giúp nhìn quan hệ tập hợp, **không** có nghĩa là diện tích các vùng tỉ lệ với xác suất.
 
-**Tương tác khám phá:** [Thay đổi các kết quả thuộc A và B trên mô hình](../../../math-lab/models/slm-top20-prob-events-r00/) để tự kiểm tra sự khác nhau giữa “hoặc”, “và” và “không xảy ra cùng nhau”.
+**Tương tác khám phá:** <a href="../../../math-lab/models/slm-top20-prob-events-r00/">Thay đổi các kết quả thuộc A và B trên mô hình</a> để tự kiểm tra sự khác nhau giữa “hoặc”, “và” và “không xảy ra cùng nhau”.
 
 > **ĐỊNH NGHĨA — Hợp, giao, xung khắc**
 >
