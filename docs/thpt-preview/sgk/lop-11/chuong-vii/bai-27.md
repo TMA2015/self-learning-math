@@ -16,7 +16,7 @@
 
 === "Khám phá kiến thức"
 
-    **Vì sao cần học?** Không thể chọn máy điều hòa chỉ bằng diện tích sàn: phòng có trần cao hơn chứa nhiều không khí hơn. Tương tự, đáy chóp và đáy lăng trụ có thể giống nhau nhưng thể tích lại khác. Bài học cần kiến thức tiền đề từ Bài 23 về đường vuông góc mặt phẳng, Bài 25 về chóp đều/chóp cụt đều và Bài 26 về **chiều cao là khoảng cách vuông góc**. SGK Bài 27 **không chia thành các mục chính đánh số**; dưới đây là **ba nhóm học tập do tác giả sắp xếp** theo các công thức và hoạt động SGK, không phải tên mục chính thức trong sách.
+    **Vì sao cần học?** Không thể chọn máy điều hòa chỉ bằng diện tích sàn: phòng có trần cao hơn chứa nhiều không khí hơn. Tương tự, đáy chóp và đáy lăng trụ có thể giống nhau nhưng thể tích lại khác. Bài học cần kiến thức tiền đề từ Bài 23 về đường vuông góc mặt phẳng, Bài 25 về chóp đều/chóp cụt đều và Bài 26 về **chiều cao là khoảng cách vuông góc**. Bài này sẽ lần lượt tìm hiểu **khối chóp, khối chóp cụt đều, khối lăng trụ và khối hộp**. Trong từng trường hợp, em cần nhận ra **diện tích đáy** và **chiều cao vuông góc** trước khi tính thể tích.
 
     ### 1.1. Khối hình, thể tích khối chóp và vai trò của chiều cao
 
@@ -124,7 +124,7 @@
 
 === "Kiến thức SGK"
 
-    **Lưu ý cấu trúc S1:** Bài 27 trên trang in 61–63 trình bày **khái niệm khối hình, ba công thức thể tích và các ví dụ liền mạch**, không đánh số ba mục lớn. Ba tiểu mục 2.1–2.3 dưới đây là **nhóm học tập tương ứng 1.1–1.3**, không phải tiêu đề tự nhận là nguyên văn SGK.
+    Để tra cứu nhanh, em hãy phân biệt **khối chóp**, **khối chóp cụt đều** và **khối lăng trụ/khối hộp**; với mỗi loại, xác định đúng **đáy** và **chiều cao vuông góc** trước khi sử dụng công thức.
 
     ### 2.1. Khối hình, thể tích khối chóp và vai trò của chiều cao
 
