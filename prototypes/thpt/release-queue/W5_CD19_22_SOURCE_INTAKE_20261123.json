@@ -80,10 +80,15 @@
       "practice": 114,
       "q15Canonical": 127,
       "replay": 9,
-      "sourceSVGCount": 0,
+      "sourceSVGCount": 2,
       "optionalModel": "slm-top22-distribution-r01",
       "knowledgeGroups": 3,
-      "practiceGroups": 3
+      "practiceGroups": 3,
+      "sourceSVGPaths": [
+        "prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_BOX_OUTLIER_R00_20261111.svg",
+        "prototypes/thpt/content-drafts/topic-statistics/assets/Temp_STATISTICS_GROUPED_FREQ_R00_20261111.svg"
+      ],
+      "presentationNote": "39 outcomes map to 13 Knowledge H3 tabs; original 114 SGK-owned Q15 Practice IDs and 9 same-ID replays. Two learner SVGs are under canonical topic-statistics/assets; project both unchanged to public assets. Original PDF page-index provenance P2 remains nonblocking."
     }
   },
   "totals": {
@@ -94,7 +99,7 @@
     "practice": 187,
     "q15Canonical": 239,
     "replay": 35,
-    "sourceSVGCount": 8,
+    "sourceSVGCount": 10,
     "optionalModels": 4
   },
   "sourceCustody": "AUTHOR_SELF_VERIFIED signed receipts only, not independent NotebookLM verdict",
@@ -113,5 +118,6 @@
     "Chromium + WebKit 390/820/1440 scoped actual browser on W5",
     "Mutually exclusive fail-closed scoped W5 deploy lane, preserving full site and prior waves",
     "final merged HEAD/P1 Pages actual HTML+assets readback, separate owner P2"
-  ]
+  ],
+  "sourceImagesClarification": "10 original source learner SVG assets: CĐ19 4, CĐ20 2, CĐ21 2, CĐ22 2. CĐ22 original paths are assets/Temp_STATISTICS_* and are not FIG-* filenames."
 }
