@@ -34,11 +34,11 @@ def projection(payload:str,topic:str)->str:
         payload=re.sub(r"\]\(assets/(Temp_STATISTICS_[A-Za-z0-9_-]+\.svg)\)",
                        r"](../../../assets/images/thpt/\1)",payload)
     if topic=="19":
-        payload=payload.replace("](Temp_THPT_TOPIC19_COUNT_CHOOSE_PASCAL_R00_20261114.html)",
-                                "](../../../math-lab/models/slm-top19-combinatorics-pascal-r00/)")
+        payload=re.sub(r"\[([^\]\n]+)\]\(Temp_THPT_TOPIC19_COUNT_CHOOSE_PASCAL_R00_20261114\.html\)",
+                       r'<a href="../../../math-lab/models/slm-top19-combinatorics-pascal-r00/">\1</a>',payload)
     if topic=="20":
-        payload=payload.replace("](Temp_PLAN22_20_EVENTS_INTERACTIVE_WHITE_R00_20261114.html)",
-                                "](../../../math-lab/models/slm-top20-prob-events-r00/)")
+        payload=re.sub(r"\[([^\]\n]+)\]\(Temp_PLAN22_20_EVENTS_INTERACTIVE_WHITE_R00_20261114\.html\)",
+                       r'<a href="../../../math-lab/models/slm-top20-prob-events-r00/">\1</a>',payload)
     return payload.strip()
 
 def bank_ids(part:str)->list[str]:
