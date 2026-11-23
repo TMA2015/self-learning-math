@@ -459,6 +459,32 @@ function isExactMathLabFullPage(files){
  }catch{return false}
 }
 
+/* Exact Math Lab postmerge recovery after V2 main-push HEAD_SHA
+ * omission: only protected workflow, scope test, and invisible catalog
+ * rebuild marker. Unknown/mixed/shared changes still require FULL. */
+const MATHLAB_DEPLOY_RECOVERY_FILES=new Set([
+ ".github/workflows/deploy.yml",
+ "docs/thpt-preview/math-lab/index.md",
+ "scripts/test-thpt-release-impact.cjs"
+]);
+function isMathLabDeployRecovery(files){
+ if(files.length!==MATHLAB_DEPLOY_RECOVERY_FILES.size ||
+    new Set(files).size!==files.length ||
+    !files.every(p=>MATHLAB_DEPLOY_RECOVERY_FILES.has(p)))return false;
+ try{
+  const catalog=fs.readFileSync("docs/thpt-preview/math-lab/index.md","utf8");
+  const workflow=fs.readFileSync(".github/workflows/deploy.yml","utf8");
+  const required="      - name: Enforce V2 source/receipt SHA of any new READY packet even when no site deployment\n"+
+    "        env:\n"+
+    "          BASE_SHA: ${{ github.event.before }}\n"+
+    "          HEAD_SHA: ${{ github.sha }}\n"+
+    "        run: node scripts/test-thpt-handoff-gate-v2.cjs";
+  return catalog.includes("MATHLAB_25_POSTMERGE_DEPLOY_RECOVERY_20261123") &&
+    workflow.includes(required) &&
+    isExactMathLabFullPage([...MATHLAB_FULLPAGE_RELEASE_FILES]);
+ }catch{return false}
+}
+
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
@@ -466,6 +492,7 @@ function classify(paths,{manual=false}={}){
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(isExactMathLabFullPage(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_25_MODELS_DIRECT_FULL_PAGE_WITH_200_BROWSER_GATES"};
+ if(isMathLabDeployRecovery(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTMERGE_V2_HEAD_SHA_DEPLOY_RECOVERY_25_MODEL_200_BROWSER_PROOF"};
  if(isScopedTopicW2W3Hotfix(files))return {impact:"SCOPED_TOPIC_HOTFIX_W2_W3",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTPUBLISH_CĐ06_15_TEXT_MATH_SCOPED_BROWSER"};
  if(isExactW5InlineAudit(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"OWNER_W5_COMPLETE_VISIBLE_MATH_AUDIT_EXACT_THREE_FILES"};
  if(isExactW5P1(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"EXACT_OWNER_P1_W5_MATH_PILOT_LAUNCHER_BROWSER"};
@@ -627,6 +654,14 @@ function selfTest(){
  assert.equal(classify(hotfix.slice(1)).full_suite,"true","Missing hotfix file must fail closed");
  assert.equal(classify([...hotfix,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared runtime is not Topic-only");
  assert.equal(classify([...hotfix,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).full_suite,"true","SGK mixed change fails closed");
+ const labRecovery=[...MATHLAB_DEPLOY_RECOVERY_FILES];
+ assert.equal(classify(labRecovery).impact,"SCOPED_MATH_LAB_FULLPAGE","Exact Math Lab recovery uses full 25-model browser gate");
+ assert.equal(classify(labRecovery.slice(1)).impact,"FULL","Incomplete Math Lab recovery must fail closed");
+ assert.equal(classify([...labRecovery,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL","Shared runtime cannot use recovery");
+ assert.equal(classify([...labRecovery,"docs/thpt-preview/chuyen-de/cd16/kien-thuc.md"]).impact,"FULL","Topic academic change cannot use recovery");
+ assert.equal(classify([...labRecovery,"docs/assets/data/assessment/readiness.json"]).impact,"FULL","Q16 cannot use recovery");
+ assert.equal(classify([...labRecovery,"docs/assets/javascripts/math-lab-library-v1.js"]).impact,"FULL","Additional Math Lab runtime change cannot use recovery");
+ assert.equal(classify(labRecovery,{manual:true}).impact,"FULL","Requested full review always remains full");
  const lab=[...MATHLAB_FULLPAGE_RELEASE_FILES];
  assert.equal(classify(lab).impact,"SCOPED_MATH_LAB_FULLPAGE","Exact 25-model scoped deploy must classify");
  assert.equal(classify(lab.slice(1)).impact,"FULL","Missing Math Lab release file fails closed");

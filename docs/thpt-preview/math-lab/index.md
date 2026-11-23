@@ -3,6 +3,7 @@ hide:
   - toc
 ---
 
+<!-- MATHLAB_25_POSTMERGE_DEPLOY_RECOVERY_20261123: no learner UI change; publish full-page link update after scoped source checks -->
 <div class="ml-catalog" data-math-lab-catalog>
 <p class="ml-overline">SELF-LEARNING MATH · KHÁM PHÁ TƯƠNG TÁC</p>
 <h1>Math Lab</h1>
