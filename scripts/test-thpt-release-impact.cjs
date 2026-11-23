@@ -432,12 +432,40 @@ function isSignedW3Recovery(files){
   }));
 }
 
+/* Full-page Math Lab 25: exactly five UX/QA paths and three deploy-guard paths.
+ * Unknown/mixed/shared-runtime/assessment changes fall back to FULL. */
+const MATHLAB_FULLPAGE_RELEASE_FILES=new Set([
+ ".github/workflows/math-lab-25-release-intake-qa.yml",
+ "docs/assets/javascripts/math-lab-library-v1.js",
+ "docs/thpt-preview/math-lab/index.md",
+ "scripts/test-math-lab-25-browser.py",
+ "scripts/test-math-lab-25-release-intake.cjs",
+ ".github/workflows/deploy.yml",
+ ".github/workflows/thpt-deploy-scope-safety-qa.yml",
+ "scripts/test-thpt-release-impact.cjs"
+]);
+function isExactMathLabFullPage(files){
+ if(files.length!==MATHLAB_FULLPAGE_RELEASE_FILES.size ||
+    new Set(files).size!==files.length ||
+    !files.every(p=>MATHLAB_FULLPAGE_RELEASE_FILES.has(p)))return false;
+ try{
+  const page=fs.readFileSync("docs/thpt-preview/math-lab/index.md","utf8");
+  const js=fs.readFileSync("docs/assets/javascripts/math-lab-library-v1.js","utf8");
+  return (page.match(/data-ml-card\b/g)||[]).length===25 &&
+    page.includes('href="../../assets/math-lab/models/SLM-TOP01-TRUTH-01.html"') &&
+    page.includes('href="../../assets/math-lab/models/SLM-SGK-G11-B04-TRIGEQ.html"') &&
+    js.includes("location.replace(expected.href)") &&
+    js.includes("mountMathLabShortcut");
+ }catch{return false}
+}
+
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isExactMathLabFullPage(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_25_MODELS_DIRECT_FULL_PAGE_WITH_200_BROWSER_GATES"};
  if(isScopedTopicW2W3Hotfix(files))return {impact:"SCOPED_TOPIC_HOTFIX_W2_W3",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTPUBLISH_CĐ06_15_TEXT_MATH_SCOPED_BROWSER"};
  if(isExactW5InlineAudit(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"OWNER_W5_COMPLETE_VISIBLE_MATH_AUDIT_EXACT_THREE_FILES"};
  if(isExactW5P1(files))return {impact:"SCOPED_TOPIC_W5_P1_HOTFIX",full_suite:"false",changed_lessons:"",reason:"EXACT_OWNER_P1_W5_MATH_PILOT_LAUNCHER_BROWSER"};
@@ -599,6 +627,14 @@ function selfTest(){
  assert.equal(classify(hotfix.slice(1)).full_suite,"true","Missing hotfix file must fail closed");
  assert.equal(classify([...hotfix,"docs/assets/javascripts/thpt-golden-runtime-v1.js"]).full_suite,"true","Shared runtime is not Topic-only");
  assert.equal(classify([...hotfix,"docs/thpt-preview/sgk/chuong-v/bai-14.md"]).full_suite,"true","SGK mixed change fails closed");
+ const lab=[...MATHLAB_FULLPAGE_RELEASE_FILES];
+ assert.equal(classify(lab).impact,"SCOPED_MATH_LAB_FULLPAGE","Exact 25-model scoped deploy must classify");
+ assert.equal(classify(lab.slice(1)).impact,"FULL","Missing Math Lab release file fails closed");
+ for(const extra of ["docs/assets/javascripts/thpt-r4-preview.js",
+   "docs/thpt-preview/chuyen-de/cd16/kien-thuc.md","mkdocs.yml",
+   "docs/assets/data/assessment/readiness.json"])
+   assert.equal(classify([...lab,extra]).impact,"FULL","Shared or assessment change must be FULL: "+extra);
+ assert.equal(classify(lab,{manual:true}).impact,"FULL","Manual FULL cannot be suppressed");
  const w4=[...W4_EXACT_SCOPE_FILES];
  assert.equal(classify(w4).impact,"SCOPED_TOPIC_W4","W4 signed 30-path wave uses only W4 scoped QA");
  assert.equal(classify(w4.filter(p=>!p.endsWith("cd18/tu-kiem-tra.md"))).impact,"FULL","Missing CĐ18 question-only page must fail closed");
