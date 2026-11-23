@@ -168,13 +168,13 @@
 
     ### 3.7. Một đường song song mặt phẳng không song song mọi đường trong mặt
 
-    **Đề bài.** Trong hệ tọa độ không gian, cho \((P):z=0\), \(a\) gồm các điểm \((t,0,1)\) với \(t\in\mathbb R\), và \(b\) gồm các điểm \((0,t,0)\) với \(t\in\mathbb R\). Chứng minh \(a\parallel(P)\) nhưng \(a\) không song song \(b\).
+    **Đề bài.** Trong tứ diện \(S.ABC\), \(M,N\) lần lượt là trung điểm \(SA,SB\). Biết \(MN\parallel(ABC)\). Có được kết luận \(MN\parallel BC\) không? Hãy tìm vị trí tương đối thực sự của \(MN\) và \(BC\).
 
-    **Phân tích:** Có thể dùng mô hình tọa độ để minh họa chính xác lỗi tổng quát hóa: đường \(a\) có độ cao không đổi \(1\), \(b\) nằm trên mặt \(z=0\), hai đường có phương khác nhau.
+    **Phân tích:** Hai đường \(MN\) và \(BC\) không thể cắt nhau vì \(MN\parallel(ABC)\), \(BC\subset(ABC)\). Muốn gọi song song, còn phải chứng minh **đồng phẳng**. Dùng mặt \((SAB)\) đang chứa \(MN\) và điểm \(B\) để kiểm điều đó.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Mọi điểm của \(a\) có \(z=1\ne0\), nên \(a\cap(P)=\varnothing\), tức \(a\parallel(P)\). Mọi điểm của \(b\) có \(z=0\), nên \(b\subset(P)\). Nhưng \(a\) có phương theo trục \(x\), \(b\) có phương theo trục \(y\); chúng không đồng phẳng và không song song với nhau. Vì vậy \(a\parallel(P)\) không suy ra \(a\parallel b\) với mọi \(b\subset(P)\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(MN\parallel(ABC)\) nên \(MN\cap BC=\varnothing\). Giả sử \(MN\) và \(BC\) đồng phẳng trong \((Q)\). Vì \(B\in BC\subset(Q)\), \((Q)\) chứa đường \(MN\) và điểm \(B\notin MN\), nên \((Q)=(SAB)\). Khi đó \(C\in BC\subset(Q)=(SAB)\), mâu thuẫn bốn đỉnh tứ diện \(S,A,B,C\) không đồng phẳng. Vậy \(MN\) và \(BC\) **chéo nhau**, không song song.</p></div>
 
-    **Kiểm lại:** Nếu \(a,b\) đồng phẳng và không cắt nhau thì mới song song; ở đây hai hướng khác nhau, không có mặt phẳng nào chứa cả hai.
+    **Kiểm lại:** \(MN\parallel AB\) nhưng \(MN\) **chéo** \(BC\), dù cả \(AB\) và \(BC\) đều nằm trong \((ABC)\). Không đồng nhất quan hệ đường–mặt với quan hệ đường–đường.
 
     ### 3.8. Mô hình dây căng trên hàng gạch
 
