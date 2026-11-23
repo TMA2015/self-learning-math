@@ -170,7 +170,7 @@ with sync_playwright() as pw:
                         expect(active).to_have_count(1)
                         raw_display = active.evaluate(r"""e => /\[\s*(?:\\vec|\(\\vec|\\sin|\\cos|\\tan|\\frac|\\sqrt|\\lim|\\operatorname)/.test(e.innerText)""")
                         assert not raw_display, (engine, topic, width, i, j, "visible unrendered display TeX", active.evaluate(r"""e => e.innerText.match(/\[.{0,500}?\\(?:vec|sin|frac|sqrt|lim|operatorname)[\s\S]{0,400}/s)?.[0] || e.innerText.slice(0,220)"""))
-                                current = subtabs.nth(j)
+                        current = subtabs.nth(j)
                         assert current.evaluate("(e)=>getComputedStyle(e).fontSize") == ("14px" if width <= 640 else "15px")
                         assert current.evaluate("(e)=>Math.round(e.getBoundingClientRect().height)") == 44
                         details = active.locator("details.question")
