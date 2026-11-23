@@ -7,7 +7,7 @@
 <line x1="289" y1="312" x2="217" y2="49" stroke="#c35d3b" stroke-width="8" stroke-linecap="round"/>
 <line x1="133" y1="312" x2="289" y2="312" stroke="#aab5c3" stroke-width="2.3" stroke-dasharray="7 6"/>
 <path d="M360 312 A71 71 0 0 0 270 244" stroke="#ad4838" stroke-width="4" fill="none"/>
-<path d="M223 224 A92 92 0 0 1 200 312" stroke="#327c72" stroke-width="3.5" fill="none"/>
+<path d="M197 312 A92 92 0 0 1 265 223" stroke="#327c72" stroke-width="3.5" fill="none"/>
 <circle cx="289" cy="312" r="6" fill="#34495f"/>
 <text x="278" y="338">O</text><text x="450" y="320" fill="#2b74a4">x</text><text x="192" y="50" fill="#c35d3b">y</text>
 <text x="330" y="231" fill="#ad4838" font-weight="700">105°</text>
