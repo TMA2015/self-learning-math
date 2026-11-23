@@ -121,3 +121,139 @@
     **Tìm dấu và xác định phía:** \(1/(x-1)^2\to+\infty\) khi \(x\to1\) do mẫu dương ở cả hai bên. Ngược lại, \(1/(x-1)\to-\infty\) khi \(x\to1^-\), \(+\infty\) khi \(x\to1^+\). Trước khi kết luận hãy xét **miền xác định, phía tiếp cận và dấu**.
 
     **Chú ý về giới hạn vô cực tại vô cực:** Những kí hiệu như \(\lim_{x\to+\infty}x^2=+\infty\) được hiểu tương tự bằng quy tắc mọi dãy \(x_n\to+\infty\), giá trị hàm tiến \(+\infty\). Không đánh đồng “đầu vào ra vô hạn” với “đầu ra cũng phải ra vô hạn”; ví dụ \(1/x\to0\) khi \(x\to+\infty\).
+
+=== "Ví dụ"
+
+    ### 3.1. Giới hạn tại một lỗ của đồ thị
+
+    **Đề bài.** Tính \(\lim_{x\to2}\frac{x^2-4}{x-2}\), đồng thời cho biết biểu thức có xác định tại \(x=2\) không.
+
+    **Phân tích:** Thế trực tiếp cho \(0/0\), chưa phải giới hạn. Khi \(x\ne2\), phân tích hiệu hai bình phương, rút gọn trước khi lấy giới hạn.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Với \(x\ne2\): \(\dfrac{x^2-4}{x-2}=\dfrac{(x-2)(x+2)}{x-2}=x+2\). Do đó \(\lim_{x\to2}\frac{x^2-4}{x-2}=4\). Tuy nhiên biểu thức gốc không xác định tại \(x=2\).</p></div>
+
+    **Kiểm lại:** Thử \(x=1{,}99\) được \(3{,}99\); \(x=2{,}01\) được \(4{,}01\). Hai phía đều tiến gần 4; không viết \(f(2)=4\).
+
+    ### 3.2. Nhân liên hợp khi gặp dạng 0/0 chứa căn
+
+    **Đề bài.** Tính \(\lim_{x\to0}\frac{\sqrt{4+x}-2}{x}\).
+
+    **Phân tích:** Tại \(x=0\) tử và mẫu đều 0. Nhân với biểu thức liên hợp \(\sqrt{4+x}+2\) giúp dùng hiệu hai bình phương, hợp lệ khi \(x\ne0\) và \(4+x\ge0\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Với \(x\ne0\), \(x\) đủ gần 0 và \(4+x\ge0\): \(\dfrac{\sqrt{4+x}-2}{x}=\dfrac{(\sqrt{4+x}-2)(\sqrt{4+x}+2)}{x(\sqrt{4+x}+2)}=\dfrac1{\sqrt{4+x}+2}\). Vì mẫu mới tiến đến \(2+2=4\ne0\), giới hạn bằng \(1/4\).</p></div>
+
+    **Kiểm lại:** Mẫu liên hợp dương ở gần \(x=0\); rút gọn chỉ dùng cho \(x\ne0\). Giới hạn không có nghĩa phân thức gốc xác định tại 0.
+
+    ### 3.3. Giới hạn trái và phải không bằng nhau
+
+    **Đề bài.** Cho \(g(x)=1\) nếu \(x<0\), \(g(x)=3\) nếu \(x\ge0\). Tính hai giới hạn một phía tại 0 và xét giới hạn hữu hạn hai phía.
+
+    **Phân tích:** Mỗi phía gần 0 nằm trong một nhánh có giá trị không đổi, không phụ thuộc cách gán \(g(0)\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Khi \(x\to0^-\), \(g(x)=1\) nên giới hạn trái bằng 1. Khi \(x\to0^+\), \(g(x)=3\) nên giới hạn phải bằng 3. Vì \(1\ne3\), không tồn tại giới hạn hữu hạn hai phía tại 0, mặc dù \(g(0)=3\).</p></div>
+
+    **Kiểm lại:** Không lấy trung bình \((1+3)/2=2\), không kết luận giới hạn bằng giá trị \(g(0)\).
+
+    ### 3.4. Giới hạn hữu hạn tại vô cực của phân thức
+
+    **Đề bài.** Tính \(\lim_{x\to+\infty}\frac{3x^2+1}{x^2+2}\) và \(\lim_{x\to-\infty}\frac{3x^2+1}{x^2+2}\).
+
+    **Phân tích:** Tử và mẫu cùng bậc hai nên chia cả hai cho \(x^2\) (với \(x\ne0\)). Khi \(x\) tiến vô cực cả hai phía, \(1/x^2\to0\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(\dfrac{3x^2+1}{x^2+2}=\dfrac{3+1/x^2}{1+2/x^2}\). Cả khi \(x\to+\infty\) và \(x\to-\infty\), tử tiến đến 3, mẫu đến 1 khác 0; do đó cả hai giới hạn đều bằng 3.</p></div>
+
+    **Kiểm lại:** Hai giới hạn này bằng nhau vì các phần biến đổi còn lại phụ thuộc \(x^2\). Không suy điều đó cho mọi hàm số.
+
+    ### 3.5. Lấy nhân tử khỏi căn khi \(x\to-\infty\)
+
+    **Đề bài.** Tính hai giới hạn của \(h(x)=\sqrt{x^2+1}/x\) khi \(x\to+\infty\) và \(x\to-\infty\).
+
+    **Phân tích:** Vì \(\sqrt{x^2}=|x|\), chỉ ở phía \(x>0\) mới được thay \(|x|/x\) bằng 1; phía \(x<0\) bằng \(-1\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Với \(x\ne0\), \(h(x)=\dfrac{|x|}{x}\sqrt{1+1/x^2}\). Khi \(x\to+\infty\), \(|x|/x=1\) nên giới hạn là 1. Khi \(x\to-\infty\), \(|x|/x=-1\) nên giới hạn là \(-1\).</p></div>
+
+    **Kiểm lại:** \(h(x)\) âm khi \(x<0\) và dương khi \(x>0\); giá trị giới hạn phù hợp dấu. Không ghi cả hai giới hạn là 1.
+
+    ### 3.6. Hai phía đều đi tới dương vô cực
+
+    **Đề bài.** Tính \(\lim_{x\to1}\frac1{(x-1)^2}\). Vì sao trường hợp này khác \(1/(x-1)\)?
+
+    **Phân tích:** Mẫu tiến về 0 và **dương ở cả hai phía**. Với mọi ngưỡng \(M>0\), muốn thương vượt \(M\) chỉ cần \(0<|x-1|<1/\sqrt M\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Với \(x\ne1\), \((x-1)^2>0\). Khi \(x\to1\), \((x-1)^2\to0^+\) từ hai phía, nên \(\dfrac1{(x-1)^2}\to+\infty\). Điều này đúng theo định nghĩa vì giá trị thương cuối cùng vượt bất kì ngưỡng dương nào.</p></div>
+
+    **Kiểm lại:** Tại \(x=0{,}9\) và \(x=1{,}1\), giá trị đều là 100. Nếu bỏ bình phương, dấu ở hai phía sẽ khác.
+
+    ### 3.7. Hai phía đi tới hai vô cực trái dấu
+
+    **Đề bài.** Tính \(\lim_{x\to1^-}\frac1{x-1}\) và \(\lim_{x\to1^+}\frac1{x-1}\). Có giới hạn vô cực hai phía tại 1 không?
+
+    **Phân tích:** Cùng có mẫu tiến về 0, nhưng phải tách dấu **âm ở trái** và **dương ở phải**.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Khi \(x\to1^-\), \(x-1\to0^-\), nên \(1/(x-1)\to-\infty\). Khi \(x\to1^+\), \(x-1\to0^+\), nên \(1/(x-1)\to+\infty\). Vì hai phía có chiều vô cực khác nhau, không có giới hạn hai phía bằng \(+\infty\), \(-\infty\) hay một số thực.</p></div>
+
+    **Kiểm lại:** Với \(x=0{,}99\), kết quả \(-100\); với \(x=1{,}01\), kết quả \(100\). Không viết \(\frac10\) như một phép chia hợp lệ.
+
+    ### 3.8. Mô hình khối lượng và giới hạn một phía
+
+    **Đề bài.** Trong mô hình ở SGK, \(m(v)=\frac{m_0}{\sqrt{1-v^2/c^2}}\), với \(m_0>0,c>0,0\le v<c\). Tìm giới hạn \(m(v)\) khi \(v\to c^-\) và giải thích vì sao phải xét từ phía nhỏ hơn \(c\).
+
+    **Phân tích:** Cần kiểm miền xác định và dấu của mẫu. Khi \(v<c\), \(1-v^2/c^2>0\); khi \(v\to c^-\), biểu thức trong căn dương nhưng tiến về 0.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Với \(0\le v<c\), \(\sqrt{1-v^2/c^2}>0\). Khi \(v\to c^-\), \(v^2/c^2\to1\), nên mẫu \(\to0^+\) trong khi tử \(m_0>0\) không đổi. Theo quy tắc giới hạn của thương, \(m(v)\to+\infty\). Không xét \(v>c\) trong miền thực của mô hình này.</p></div>
+
+    **Kiểm lại:** \(v=c\) không thuộc miền vì mẫu 0. Kết luận mô tả xu hướng **trong mô hình**, không phải phép tính \(m(c)\).
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Nhầm giới hạn với giá trị hàm tại điểm
+
+    **Dấu hiệu:** Từ \(\lim_{x\to2}\frac{x^2-4}{x-2}=4\), nói \(f(2)=4\).
+
+    **Vì sao sai:** Hàm gốc không xác định tại 2; giới hạn chỉ xét x khác 2 và tiến gần 2.
+
+    **Cách sửa:** Ghi miền xác định trước, rút gọn khi \(x\ne2\), rồi mới lấy giới hạn.
+
+    ### 4.2. Kết luận từ dạng 0/0 mà không biến đổi
+
+    **Dấu hiệu:** Thế \(x=x_0\) được \(0/0\) rồi coi giới hạn bằng 0 hoặc không tồn tại.
+
+    **Vì sao sai:** \(0/0\) chưa cho biết giới hạn; các nhân tử có thể triệt tiêu trên miền đã loại điểm.
+
+    **Cách sửa:** Phân tích nhân tử, quy đồng hoặc nhân liên hợp **ở những điểm biểu thức xác định**, sau đó kiểm giới hạn của biểu thức tương đương.
+
+    ### 4.3. Bỏ giới hạn một phía
+
+    **Dấu hiệu:** Chỉ tính từ bên phải hoặc lấy \(f(x_0)\) để đoán giới hạn hai phía.
+
+    **Vì sao sai:** Hàm bước nhảy có giới hạn trái và phải khác nhau, nên không có giới hạn hữu hạn hai phía.
+
+    **Cách sửa:** Khi miền xác định cho phép tiến từ cả hai phía, tính cả \(\lim_{x\to x_0^-}\) và \(\lim_{x\to x_0^+}\), kiểm chúng bằng nhau rồi mới kết luận.
+
+    ### 4.4. Thay \(\sqrt{x^2}\) bằng \(x\) ở phía âm vô cực
+
+    **Dấu hiệu:** Tính \(\lim_{x\to-\infty}\sqrt{x^2+1}/x=1\).
+
+    **Vì sao sai:** \(\sqrt{x^2}=|x|=-x\) khi \(x<0\).
+
+    **Cách sửa:** Viết \(\sqrt{x^2+1}=|x|\sqrt{1+1/x^2}\) và xét dấu \(|x|/x\) ở từng phía.
+
+    ### 4.5. Bỏ dấu của mẫu khi nó tiến về 0
+
+    **Dấu hiệu:** Từ \(x-1\to0\) kết luận \(1/(x-1)\to+\infty\) ở cả hai phía.
+
+    **Vì sao sai:** Mẫu âm bên trái và dương bên phải; giới hạn vô cực vì thế trái dấu.
+
+    **Cách sửa:** Lập bảng dấu tối thiểu theo \(x<x_0\) và \(x>x_0\); chỉ kết luận \(+\infty\), \(-\infty\) sau khi đã xác nhận dấu.
+
+    ### 4.6. Dùng quy tắc giới hạn hữu hạn cho dạng vô cực
+
+    **Dấu hiệu:** Viết \(\infty/\infty=1\), \(1/0=+\infty\) mà không phân tích miền/dấu, hoặc tưởng \(x\to\infty\) luôn kéo \(f(x)\to\infty\).
+
+    **Vì sao sai:** Vô cực không phải số thực, và giới hạn thương còn phụ thuộc bậc, dấu, cách tiến gần. Ví dụ \(1/x\to0\) khi \(x\to+\infty\).
+
+    **Cách sửa:** Xác định rõ **đầu vào** tiến về đâu, **giá trị hàm** đang được hỏi, kiểm dấu và biến đổi tương đương trước khi dùng quy tắc thích hợp.
+
+    **Học tiếp:** [Core và Luyện tập Bài 16](luyen-tap.md) · [Tự luận Chương V](../../../thu-vien/tu-luan-g11-chuong-v.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn văn bản SGK Toán 11 Kết nối tri thức với cuộc sống, tập một, Bài 16 “Giới hạn của hàm số”, trang in 111–118, đối chiếu bản đọc số hóa SGKVN và phát biểu bài học. Ba mục gốc: Giới hạn hữu hạn của hàm số tại một điểm; Giới hạn hữu hạn của hàm số tại vô cực; Giới hạn vô cực của hàm số tại một điểm. Hình lỗ tại \((2,4)\) là SVG canonical đã có, hình bước nhảy một phía là SVG AUTHORING mới; hai nguồn hình được sử dụng ở cả hai tab. Chưa kiểm trực quan đủ trang SGK in, chưa nhận NotebookLM review cho snapshot này. Chỉ nâng cấp trang Kiến thức, không thay Core/Tự kiểm tra.</p>
