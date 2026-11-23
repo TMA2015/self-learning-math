@@ -146,8 +146,17 @@ with sync_playwright() as pw:
                 assert page.request.get(model_url).ok, (topic, "Math Lab model URL broken", model_url)
                 roles = page.locator("[data-topic-w1-callout]")
                 assert roles.count() >= outcomes, (topic, "missing 3+1 boxes", roles.count())
-                bad_semantic = roles.evaluate_all("""els=>els.map(el=>({role:el.dataset.topicW1Callout,labels:[...el.children].map(p=>p.querySelector(':scope > strong')?.textContent||'').filter(s=>/^(ĐỊNH NGHĨA|KHÁI NIỆM|CÔNG THỨC|HỆ THỨC|TÍNH CHẤT|ĐỊNH LÝ|ĐỊNH LÍ|QUY TẮC|PHƯƠNG PHÁP|KIẾN THỨC CẦN GHI NHỚ|GHI NHỚ|LƯU Ý)/.test(s.toLocaleUpperCase('vi').trim())),html:el.innerHTML.slice(0,250)})).filter(b=>b.labels.length!==1)""")
+                bad_semantic = roles.evaluate_all("""els=>els.map(el=>({role:el.dataset.topicW1Callout,labels:[...el.children].map(p=>p.querySelector(':scope > strong')?.textContent||'').filter(s=>/^(ĐỊNH NGHĨA|KHÁI NIỆM|CÔNG THỨC|HỆ THỨC|TÍNH CHẤT|ĐỊNH LÝ|ĐỊNH LÍ|QUY TẮC|PHƯƠNG PHÁP|KIẾN THỨC CẦN GHI NHỚ|GHI NHỚ|LƯU Ý|CHÚ Ý)/.test(s.toLocaleUpperCase('vi').trim())),html:el.innerHTML.slice(0,250)})).filter(b=>b.labels.length!==1)""")
                 assert not bad_semantic, (topic,"merged or unlabelled formal cards",bad_semantic[:5])
+                # CĐ17 learner-owned CHÚ Ý warning is a mandatory recap (not a
+                # fifth callout style); preserve original source and exact label.
+                if topic == "17":
+                    notices = page.locator('[data-topic-w1-callout="recap"]')
+                    note_roles = notices.evaluate_all("""els => els.filter(el =>
+                        [...el.querySelectorAll(':scope > p > strong')]
+                            .some(s => s.textContent.trim().toLocaleUpperCase().startsWith('CHÚ Ý'))
+                    ).length""")
+                    assert note_roles == 1, (topic, "CHÚ Ý must use SGK Golden recap", note_roles)
                 for role, color in PALETTE.items():
                     elems = page.locator('[data-topic-w1-callout="' + role + '"]')
                     for e in elems.all():
