@@ -141,3 +141,139 @@
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B13-01_R01.svg" alt="Hình hộp có hai đáy tương ứng song song và các cạnh bên"><figcaption><strong>Tra hình:</strong> \(ABCD\) và \(A'B'C'D'\) là hai đáy; \(AA',BB',CC',DD'\) là cạnh bên, các mặt bên là hình bình hành. Không suy góc vuông từ hình vẽ.</figcaption></figure>
 
     **Số lượng:** Lăng trụ đáy \(n\)-giác có \(2n\) đỉnh, \(3n\) cạnh, \(n+2\) mặt. Lăng trụ tam giác: 6 đỉnh, 9 cạnh, 5 mặt; hình hộp: 8 đỉnh, 12 cạnh, 6 mặt.
+
+=== "Ví dụ"
+
+    ### 3.1. Khi nào hai mặt phẳng song song?
+
+    **Đề bài.** Hai mặt phẳng phân biệt \((P),(Q)\) có điểm chung \(A\). Chúng có thể song song không?
+
+    **Phân tích:** Kiểm ngay **định nghĩa không có điểm chung**. Nếu có điểm chung, hai mặt phân biệt cắt nhau theo giao tuyến.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Không. \(A\in(P)\cap(Q)\), nên hai mặt không song song; chúng giao nhau theo **một đường thẳng** qua \(A\).</p></div>
+
+    **Kiểm lại:** Hai mặt phân biệt không thể chỉ có đúng một điểm chung.
+
+    ### 3.2. Dấu hiệu hai đường cắt nhau trong một mặt phẳng
+
+    **Đề bài.** Cho bốn điểm \(A,B,C,D\) không đồng phẳng. Qua \(A\) dựng \(m\parallel BC\) và \(n\parallel BD\). Chứng minh \(\operatorname{mp}(m,n)\parallel(BCD)\).
+
+    **Phân tích:** \(BC,BD\) cắt nhau ở \(B\), nên hai đường \(m,n\) qua \(A\) có hai phương khác nhau và cũng cắt nhau tại \(A\). Kiểm mỗi đường không nằm trong mặt \((BCD)\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(A\notin(BCD)\), do đó \(m,n\not\subset(BCD)\). Vì \(m\parallel BC\subset(BCD)\), \(n\parallel BD\subset(BCD)\), suy ra \(m\parallel(BCD)\), \(n\parallel(BCD)\). Hai đường \(m,n\) cắt nhau tại \(A\), nên mặt \(\operatorname{mp}(m,n)\parallel(BCD)\).</p></div>
+
+    **Kiểm lại:** Điều kiện bốn đỉnh không đồng phẳng bảo đảm \(A\notin(BCD)\); điều kiện \(m\ne n\) theo hai hướng \(BC,BD\) khác nhau.
+
+    ### 3.3. Phản ví dụ: Một đường song song chưa đủ
+
+    **Đề bài.** Hai mặt phẳng \((P),(Q)\) cắt nhau theo đường \(c\). Chọn \(a\subset(P)\), \(a\ne c\) và \(a\parallel c\). Chứng minh \(a\parallel(Q)\) nhưng \((P)\) không song song \((Q)\).
+
+    **Phân tích:** \(a\) không gặp \(c\), mà mọi điểm chung của \((P),(Q)\) thuộc \(c\). Vậy \(a\) không gặp \((Q)\), dù hai mặt đang giao nhau.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Nếu \(a\) có điểm chung \(M\) với \((Q)\), do \(a\subset(P)\), \(M\in(P)\cap(Q)=c\), mâu thuẫn \(a\parallel c\). Do đó \(a\parallel(Q)\). Nhưng \((P)\cap(Q)=c\ne\varnothing\), nên \((P)\) và \((Q)\) **không song song**.</p></div>
+
+    **Kiểm lại:** Hai đường cùng hướng và cùng song song một mặt cũng không đủ để suy **cả mặt** song song: cần hai đường **cắt nhau**.
+
+    ### 3.4. Trung điểm bốn cạnh của hình chóp
+
+    **Đề bài.** Cho hình chóp \(S.ABCD\), \(M,N,P,Q\) là trung điểm \(SA,SB,SC,SD\). Chứng minh \(M,N,P,Q\) đồng phẳng và \((MNP)\parallel(ABCD)\).
+
+    **Phân tích:** Tìm hai đường trung bình cắt nhau trong \((MNP)\) để dùng dấu hiệu; sau đó dùng tính duy nhất mặt song song qua điểm \(N\) hoặc \(P\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(MN\parallel AB\), \(NP\parallel BC\). Hai đường \(MN,NP\) cắt nhau tại \(N\), đều song song \((ABCD)\), nên \((MNP)\parallel(ABCD)\). Tương tự \(NP\parallel BC\), \(PQ\parallel CD\) và \(NP,PQ\) cắt ở \(P\), nên \((NPQ)\parallel(ABCD)\). Hai mặt \((MNP)\), \((NPQ)\) cùng chứa \(P,N\) và cùng song song đáy, bởi tính duy nhất chúng trùng nhau. Do đó \(Q\in(MNP)\), tức bốn điểm đồng phẳng.</p></div>
+
+    **Kiểm lại:** \(MN,NP\) là hai đường phân biệt cắt nhau; các điểm trung điểm không thuộc đáy, nên các đường trung bình song song đáy chứ không nằm trong đáy.
+
+    ### 3.5. Giao tuyến của mặt thứ ba
+
+    **Đề bài.** Cho \((P)\parallel(Q)\). Một mặt phẳng \((R)\) cắt \((P)\) theo đường \(a\). Xác định vị trí \((R)\) với \((Q)\), và hai giao tuyến.
+
+    **Phân tích:** Dùng tính chất **một mặt cắt hai mặt song song**, không suy từ hình vẽ.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \((R)\) cũng cắt \((Q)\) theo một giao tuyến \(b\). Hai đường \(a,b\) cùng nằm trong \((R)\), thuộc hai mặt phẳng song song nên không có điểm chung, suy ra \(a\parallel b\).</p></div>
+
+    **Kiểm lại:** \((R)\) phải **cắt** \((P)\) chứ không trùng \((P)\); khi đó mới có giao tuyến \(a\) xác định.
+
+    ### 3.6. Thalès: Tìm đoạn tương ứng thứ hai
+
+    **Đề bài.** Ba mặt phẳng đôi một song song cắt hai cát tuyến theo thứ tự \(A,B,C\) và \(A',B',C'\). Biết \(AB=4\) cm, \(BC=6\) cm, \(A'B'=10\) cm. Tính \(B'C'\).
+
+    **Phân tích:** Hai tử số là đoạn giữa **cùng hai mặt đầu**, hai mẫu là đoạn giữa **cùng hai mặt sau**.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(\frac{AB}{BC}=\frac{A'B'}{B'C'}\Rightarrow\frac4{6}=\frac{10}{B'C'}\). Suy ra \(B'C'=15\) cm.</p></div>
+
+    **Kiểm lại:** \(4/6=10/15=2/3\); kết quả là một **độ dài** nên có đơn vị cm.
+
+    ### 3.7. Cắt các cạnh bên tứ diện theo cùng tỉ phần
+
+    **Đề bài.** Tứ diện \(S.ABC\), \((MNK)\parallel(ABC)\) cắt \(SA,SB,SC\) tại \(M,N,K\). Biết \(SM/SA=1/3\), \(SB=15\) cm, \(SC=18\) cm. Tìm \(SN,SK\).
+
+    **Phân tích:** Vì hai mặt song song, các đường thẳng \(SA,SB,SC\) cắt chúng theo **tỉ số tương ứng**; có thể nhìn qua định lí Thalès phẳng trong các mặt tam giác.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(\frac{SM}{SA}=\frac{SN}{SB}=\frac{SK}{SC}=\frac13\), nên \(SN=15/3=5\) cm và \(SK=18/3=6\) cm.</p></div>
+
+    **Kiểm lại:** Các kết quả nhỏ hơn cạnh chứa chúng; không nhầm \(SN/NB\) với \(SN/SB\).
+
+    ### 3.8. Đếm đỉnh, cạnh và mặt của lăng trụ
+
+    **Đề bài.** Lăng trụ tam giác \(ABC.A'B'C'\) có bao nhiêu đỉnh, cạnh, mặt? Hình hộp \(ABCD.A'B'C'D'\) có các mặt thuộc loại hình gì?
+
+    **Phân tích:** Đếm hai đáy và các mặt bên; không bỏ sót cạnh khuất trong hình chiếu.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Lăng trụ tam giác có \(6\) đỉnh, \(9\) cạnh và \(5\) mặt (2 tam giác, 3 hình bình hành). Hình hộp có \(8\) đỉnh, \(12\) cạnh, \(6\) mặt; **cả sáu mặt** là hình bình hành.</p></div>
+
+    **Kiểm lại:** Hình hộp tổng quát không nhất thiết là hình hộp chữ nhật: không tự suy các góc vuông từ hình vẽ.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Nhìn hai mặt hữu hạn không chạm rồi gọi song song
+
+    **Dấu hiệu:** Hai hình bình hành tách nhau trên giấy nên kết luận hai mặt phẳng song song.
+
+    **Vì sao sai:** Các mặt phẳng vô hạn có thể kéo dài và cắt nhau theo một đường.
+
+    **Cách sửa:** Dùng định nghĩa **không có điểm chung** hoặc chứng minh bằng dấu hiệu toán học.
+
+    ### 4.2. Chỉ có một đường song song mặt phẳng thứ hai
+
+    **Dấu hiệu:** \(a\subset(P),a\parallel(Q)\) nên nói \((P)\parallel(Q)\).
+
+    **Vì sao sai:** \((P)\) vẫn có thể cắt \((Q)\) theo \(c\parallel a\).
+
+    **Cách sửa:** Tìm **hai đường cắt nhau** trong \((P)\), từng đường song song \((Q)\).
+
+    ### 4.3. Quên điều kiện “phân biệt” ở tính chất cùng song song mặt thứ ba
+
+    **Dấu hiệu:** Hai mặt cùng song song \((R)\) nên gọi chúng song song dù có thể trùng nhau.
+
+    **Vì sao sai:** Mặt phẳng song song qua một điểm ngoài \((R)\) là duy nhất; hai mặt cùng qua điểm ấy có thể là một.
+
+    **Cách sửa:** Kiểm hai mặt **phân biệt**; nếu có điểm chung thì kết luận trùng, nếu phân biệt thì song song.
+
+    ### 4.4. Ghép sai cặp đoạn trong Thalès không gian
+
+    **Dấu hiệu:** Biết các độ dài 4, 6, 10 rồi tính \(B'C'=4\cdot10/6\).
+
+    **Vì sao sai:** Tráo các khoảng giữa hai cặp mặt khác nhau.
+
+    **Cách sửa:** Viết đúng \(\frac{AB}{BC}=\frac{A'B'}{B'C'}\) và kiểm thứ tự các mặt trước khi thay số.
+
+    ### 4.5. Gọi mọi hình lăng trụ là hình lăng trụ đứng
+
+    **Dấu hiệu:** Cho các cạnh bên phải vuông góc đáy mới được gọi lăng trụ.
+
+    **Vì sao sai:** Lăng trụ tổng quát chỉ yêu cầu hai đáy song song và các cạnh bên tương ứng song song, bằng nhau.
+
+    **Cách sửa:** Phân biệt **lăng trụ** với **lăng trụ đứng**; hình hộp tổng quát không bắt buộc là hình hộp chữ nhật.
+
+    ### 4.6. Mặt thứ ba cắt mặt đầu nhưng lại cho song song mặt cuối
+
+    **Dấu hiệu:** \((P)\parallel(Q)\), \((R)\) cắt \((P)\) nhưng \((R)\parallel(Q)\).
+
+    **Vì sao sai:** Tính chất cho \((R)\) cũng cắt \((Q)\), hai giao tuyến song song nhau.
+
+    **Cách sửa:** Gọi \(a=(R)\cap(P)\), \(b=(R)\cap(Q)\), rồi dùng \(a\parallel b\).
+
+    **Học tiếp:** [Core và Luyện tập Bài 13](luyen-tap.md) · [Tự luận Chương IV](../../../thu-vien/tu-luan-g11-chuong-iv.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn: SGK Toán 11 Kết nối tri thức, tập một, Bài 13 trang in 88–94. Bốn mục gốc: Hai mặt phẳng song song; Điều kiện và tính chất; Định lí Thalès trong không gian; Hình lăng trụ và hình hộp. Đã đối chiếu phần văn bản SGK số hóa; ảnh render đầy đủ trang PDF chưa có bằng chứng. Hình hộp dùng SVG canonical B13 từ main, hình Thalès là SVG mới của AUTHORING. Hai tab cùng dùng nguồn hình, chú giải theo mục đích.</p>
