@@ -219,7 +219,7 @@ const sourceRole=label=>{
  if(upper.startsWith("ĐỊNH NGHĨA")||upper.startsWith("KHÁI NIỆM"))return["concept","thpt-r4-knowledge-conclusion thpt-r4-concept-card"];
  if(upper.startsWith("TÍNH CHẤT")||upper.startsWith("ĐỊNH LÝ")||upper.startsWith("ĐỊNH LÍ")||upper.startsWith("QUY TẮC")||upper.startsWith("PHƯƠNG PHÁP"))return["rule","thpt-r4-knowledge-conclusion thpt-r4-rule-card"];
  if(upper.startsWith("CÔNG THỨC")||upper.startsWith("HỆ THỨC"))return["formula","thpt-r4-key-formula"];
- if(upper.startsWith("KIẾN THỨC CẦN GHI NHỚ")||upper.startsWith("GHI NHỚ")||upper.startsWith("LƯU Ý"))return["recap","thpt-r4-knowledge-conclusion"];
+ if(upper.startsWith("KIẾN THỨC CẦN GHI NHỚ")||upper.startsWith("GHI NHỚ")||upper.startsWith("LƯU Ý")||upper.startsWith("CHÚ Ý"))return["recap","thpt-r4-knowledge-conclusion"];
  return null;
 };
 const solutionContent=details=>{
