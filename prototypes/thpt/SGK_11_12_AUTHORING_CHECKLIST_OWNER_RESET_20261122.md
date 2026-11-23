@@ -9,7 +9,7 @@
 
 | Phần | Học sinh cần nhận được |
 |---|---|
-| **Tab 1 — Khám phá kiến thức** | Khởi đầu tự nhiên; từng ý chính SGK được dẫn từ trực giác/tiền đề/quan sát tới hiểu bản chất, cách dùng và giới hạn. Có thể dùng văn xuôi, tình huống, ví dụ minh họa, hình/bảng/đồ thị thật. |
+| **Tab 1 — Khám phá kiến thức** | Lời giảng liền mạch, dễ hiểu, giúp học sinh làm quen với kiến thức, hiểu bản chất và biết cách vận dụng. Tùy nội dung mà dùng văn xuôi, ví dụ, câu hỏi, hình/bảng/đồ thị hoặc kết hợp; **không biến các cách dẫn dắt thành một loạt đầu mục nhỏ**. |
 | **Tab 2 — Kiến thức SGK** | Sổ tay kiến thức tự đủ: đủ các Định nghĩa, Khái niệm, Định lý, Tính chất, Quy tắc, Công thức, điều kiện và ghi nhớ quan trọng; nhãn/khung đúng ngữ nghĩa 3+1. |
 | **Tab 3 — Ví dụ** | Bài mẫu tự đủ đề, phân tích (khi cần), lời giải có suy luận và kiểm lại (khi hữu ích), trọng tâm kỹ thuật giải toán và ứng dụng nhiều dạng. |
 | **Tab 4 — Lỗi thường gặp** | Ngộ nhận/sai lầm toán thật, chỉ rõ nguyên nhân và cách khắc phục; không lặp các ô Kiểm lỗi chỉ để đủ số mục. |
@@ -22,7 +22,7 @@
 ## 2. Trình tự làm việc cho một bài
 
 1. **Đọc thực sự SGK KNTT đúng lớp/tập/bài**: danh sách ý chính, phát biểu chính thức, ký hiệu, điều kiện, ví dụ, hình, câu hỏi. Phân biệt phần SGK bắt buộc với dạng tham khảo SBT/đề thi. Đọc một bài Golden Toán 10 phù hợp để kế thừa văn phong và UI; không sao chép máy móc.
-2. **Viết Khám phá kiến thức trước:** với mỗi ý chính, học sinh hiểu *đây là gì, xuất hiện vì sao, hình thành thế nào, khi nào dùng*. Viết **mạch văn tự nhiên, câu đủ nghĩa, từ dễ hiểu**, nhắc đúng tiền đề; minh họa bằng tình huống/quan sát/hình nếu có giá trị. Không buộc hiển thị các heading `PED1–PED6` hoặc “Vì sao học?/Bản chất/Phương pháp”; không đẩy toàn bộ giải thích sang Tab 2.
+2. **Viết Khám phá kiến thức như một bài giảng liền mạch:** chọn cách giải thích phù hợp để học sinh hiểu *đây là gì, vì sao cần, khi nào dùng*; các câu hỏi này **chỉ để tác giả tự kiểm, không phải các bước hoặc tiêu đề bắt buộc**. Viết câu đủ nghĩa, dễ hiểu; đặt ví dụ/hình minh họa nơi thực sự giúp hiểu. **Chỉ chia mục khi chuyển sang một nội dung toán học chính có ý nghĩa**, dựa vào mạch SGK; không chia nhỏ theo trình tự trực giác → tiền đề → quan sát → bản chất hoặc các nhãn PED. Không đẩy toàn bộ giải thích sang Tab 2.
 3. **Viết Kiến thức SGK:** ghi đúng và đủ các phát biểu chính thức, điều kiện/ngoại lệ; phân loại nhãn **Định nghĩa/Khái niệm**, **Tính chất/Định lý/Quy tắc**, **Kiến thức cần nhớ** (khi thật cần), **Công thức**. Cùng 4 loại khung Golden 3+1; không tạo hộp rỗng hoặc nhân đôi công thức.
 4. **Viết hai chức năng Ví dụ:** (a) ví dụ minh họa trực tiếp kiến thức, có thể đặt ngay trong Khám phá, thường nối một **Vận dụng → Đối chiếu** cùng ý; (b) Ví dụ trong Tab 3 dạy cách phân tích đề, nhận dạng và chọn hướng giải cho các dạng bài thường gặp/thi. Mọi Ví dụ toán có đề tự đủ, lời giải đúng, rõ lý do; **Phân tích/Kiểm lại/Lưu ý** khi hữu ích, không phải công thức cố định áp mọi tình huống.
 5. **Bổ sung Lỗi thường gặp và khả năng sửa sai:** ví dụ về nhầm khái niệm, quên điều kiện, chọn sai dữ kiện, dùng sai công thức; nêu hậu quả và cách kiểm. Vận dụng phải cho học sinh **tự làm trước khi xem đáp án**, không đặt số/đáp án đã hiện trong hình hoặc ví dụ ngay trước.
