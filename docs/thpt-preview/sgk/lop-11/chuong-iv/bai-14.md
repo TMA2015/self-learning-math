@@ -84,9 +84,9 @@
 
     ### 2.1. Phép chiếu song song
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Phép chiếu song song</strong><p>Cho mặt phẳng \((P)\) và một đường thẳng \(\Delta\) **cắt \((P)\) tại đúng một điểm** xác định phương chiếu. Với mỗi điểm \(M\), gọi \(M'\) là giao điểm của \((P)\) với đường đi qua \(M\) song song \(\Delta\) (nếu \(M\in\Delta\), lấy chính \(\Delta\)). Ánh xạ \(M\mapsto M'\) là **phép chiếu song song** lên \((P)\) theo phương \(\Delta\); \(M'\) là **hình chiếu song song** của \(M\), \((P)\) là **mặt phẳng chiếu**.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Phép chiếu song song</strong><p>Cho mặt phẳng \((P)\) và một đường thẳng \(\Delta\) <strong>cắt \((P)\) tại đúng một điểm</strong> xác định phương chiếu. Với mỗi điểm \(M\), gọi \(M'\) là giao điểm của \((P)\) với đường đi qua \(M\) song song \(\Delta\) (nếu \(M\in\Delta\), lấy chính \(\Delta\)). Ánh xạ \(M\mapsto M'\) là <strong>phép chiếu song song</strong> lên \((P)\) theo phương \(\Delta\); \(M'\) là <strong>hình chiếu song song</strong> của \(M\), \((P)\) là <strong>mặt phẳng chiếu</strong>.</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hình chiếu của một hình</strong><p>Hình chiếu của hình \(H\) qua phép chiếu song song là tập hợp tất cả hình chiếu \(M'\) của các điểm \(M\in H\). Nếu \(M\in(P)\) thì \(M'=M\). Mỗi điểm được chiếu theo **cùng một phương** cố định.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hình chiếu của một hình</strong><p>Hình chiếu của hình \(H\) qua phép chiếu song song là tập hợp tất cả hình chiếu \(M'\) của các điểm \(M\in H\). Nếu \(M\in(P)\) thì \(M'=M\). Mỗi điểm được chiếu theo <strong>cùng một phương</strong> cố định.</p></div>
 
     **Điều kiện bắt buộc:** SGK xét đường chỉ phương \(\Delta\) **cắt \((P)\) tại đúng một điểm** để đường qua điểm bất kì cùng phương \(\Delta\) có giao điểm **duy nhất** với mặt chiếu. Nếu phương chiếu song song với mặt chiếu, phép dựng ảnh điểm ngoài mặt có thể không thực hiện được.
 
@@ -98,7 +98,7 @@
 
     **Cảnh báo suy biến:** Nếu một đường **cùng phương chiếu**, toàn bộ đường có thể chiếu thành **một điểm**. Trong trường hợp đó, các câu “ảnh là một đường” và “tỉ số độ dài được giữ” không áp dụng theo nghĩa không suy biến. Cần phân biệt điều kiện để **phép chiếu điểm tồn tại** với điều kiện để **ảnh của đường không co lại**.
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tỉ số đoạn thẳng tương ứng</strong><p>Với \(A,M,B\) thẳng hàng theo thứ tự, \(M\) nằm giữa \(A,B\), và hình chiếu \(A',M',B'\) **không suy biến**, ta có \(\dfrac{A'M'}{M'B'}=\dfrac{AM}{MB}\). Nếu \(AM=MB\), thì \(A'M'=M'B'\): ảnh của trung điểm là trung điểm đoạn ảnh.</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tỉ số đoạn thẳng tương ứng</strong><p>Với \(A,M,B\) thẳng hàng theo thứ tự, \(M\) nằm giữa \(A,B\), và hình chiếu \(A',M',B'\) <strong>không suy biến</strong>, ta có \(\dfrac{A'M'}{M'B'}=\dfrac{AM}{MB}\). Nếu \(AM=MB\), thì \(A'M'=M'B'\): ảnh của trung điểm là trung điểm đoạn ảnh.</p></div>
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B14_PROJECTION_DEGENERACY_AUTHORING_20261123.svg" alt="So sánh một đường cho ảnh là đường với một đường cùng phương chiếu co thành một điểm"><figcaption><strong>Tra hình:</strong> trái ảnh \(A'B'\) vẫn là một đoạn; phải \(M'=N'=K\), không còn đoạn ảnh có độ dài dương để tính tỉ số. Kiểm trường hợp này trước khi áp dụng công thức.</figcaption></figure>
 
@@ -106,9 +106,9 @@
 
     ### 2.3. Hình biểu diễn của một hình không gian
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hình biểu diễn của hình không gian</strong><p>Hình biểu diễn của một hình trong không gian là **hình chiếu song song của hình đó trên một mặt phẳng theo một phương nào đó hoặc hình đồng dạng với hình chiếu ấy**. Hình biểu diễn phục vụ việc đọc cấu trúc, không phải bản vẽ bảo toàn mọi góc và độ dài.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hình biểu diễn của hình không gian</strong><p>Hình biểu diễn của một hình trong không gian là <strong>hình chiếu song song của hình đó trên một mặt phẳng theo một phương nào đó hoặc hình đồng dạng với hình chiếu ấy</strong>. Hình biểu diễn phục vụ việc đọc cấu trúc, không phải bản vẽ bảo toàn mọi góc và độ dài.</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Hình biểu diễn của các hình phẳng không suy biến</strong><p>Khi mặt phẳng chứa hình **không song song với phương chiếu**, hình biểu diễn của <strong>tam giác</strong> là tam giác; của <strong>hình vuông, chữ nhật, thoi, bình hành</strong> là hình bình hành; của <strong>hình thang</strong> là hình thang với hai đáy tương ứng song song, giữ **tỉ số hai đáy**; của <strong>hình tròn</strong> là hình elip (có thể là hình tròn ở trường hợp đặc biệt).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Hình biểu diễn của các hình phẳng không suy biến</strong><p>Khi mặt phẳng chứa hình <strong>không song song với phương chiếu</strong>, hình biểu diễn của <strong>tam giác</strong> là tam giác; của <strong>hình vuông, chữ nhật, thoi, bình hành</strong> là hình bình hành; của <strong>hình thang</strong> là hình thang với hai đáy tương ứng song song, giữ <strong>tỉ số hai đáy</strong>; của <strong>hình tròn</strong> là hình elip (có thể là hình tròn ở trường hợp đặc biệt).</p></div>
 
     **Cách đọc:** Dùng cạnh và đỉnh tương ứng, quan hệ thẳng hàng, song song và tỉ số hợp lệ để dựng/kiểm hình. Với khối chóp/lăng trụ, các cạnh thấy được thường vẽ nét liền, cạnh khuất nét đứt. Một hình bình hành trên giấy **có thể biểu diễn hình vuông**, nên không suy luận góc thật bằng góc đo của bản vẽ.
 
