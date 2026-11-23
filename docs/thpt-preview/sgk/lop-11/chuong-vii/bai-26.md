@@ -287,3 +287,73 @@
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> Theo cách dựng, \(N\in b\subset(Q)\), \(M\in a\), và \(MN\perp(Q)\). Do \(b\subset(Q)\), \(MN\perp b\). Vì \(a\parallel(Q)\), phương của \(a\) song song một phương thuộc \((Q)\), nên \(MN\perp a\). Vì vậy đường \(MN\) cắt cả \(a,b\) tại \(M,N\) và vuông góc cả hai: đó là đường vuông góc chung. Độ dài \(MN\) chính là khoảng cách \(a\) tới \((Q)\) và là \(d(a,b)\).</p></div>
 
     **Kiểm lại:** Nếu mặt \((Q)\) không chứa \(b\) hoặc không song song \(a\), phép chuyển chưa hợp lệ. Nếu hai đường không chéo nhau thì phải xét trường hợp song song/cắt nhau riêng.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Lấy một đoạn xiên làm khoảng cách
+
+    **Dấu hiệu:** Từ \(M\) tới \((P)\), chọn điểm \(K\in(P)\) tùy ý rồi nói \(d(M,(P))=MK\).
+
+    **Vì sao sai:** Khoảng cách là **đoạn ngắn nhất**, đi theo đường vuông góc tại chân \(H\), còn \(MK^2=MH^2+HK^2\ge MH^2\).
+
+    **Cách sửa:** Dựng và chứng minh \(MH\perp(P)\), sau đó viết \(d(M,(P))=MH\); nếu \(M\in(P)\), khoảng cách bằng \(0\).
+
+    ### 4.2. Chứng minh vuông góc một đường nhưng kết luận vuông góc cả mặt
+
+    **Dấu hiệu:** Muốn dùng \(AH=d(A,(Q))\), em chỉ có \(AH\perp b\) với \(b\subset(Q)\), chưa kiểm phương còn lại.
+
+    **Vì sao sai:** Vuông góc **một đường** trong mặt không đủ để vuông góc **toàn mặt**; đây là thiếu giả thiết của định lí ở Bài 23.
+
+    **Cách sửa:** Chỉ rõ hai đường \(b,c\subset(Q)\) **cắt nhau**, cùng vuông góc với \(AH\). Trong hình hộp đáy thoi, cần kiểm \(AO\perp BD\) **và** \(AO\perp BB'\).
+
+    ### 4.3. Dùng cạnh bên làm chiều cao hình chóp
+
+    **Dấu hiệu:** Chóp đều có \(SA=b\) thì ghi luôn chiều cao bằng \(b\).
+
+    **Vì sao sai:** Chóp đều có chân cao tại **tâm \(O\)** đáy. Cạnh bên \(SA\) là cạnh **xiên** và thường dài hơn \(SO\).
+
+    **Cách sửa:** Dùng tam giác \(SOA\) vuông tại \(O\): \(SO=\sqrt{b^2-a^2/3}\) nếu đáy tam giác đều cạnh \(a\). Kiểm điều kiện \(b>a/\sqrt3\).
+
+    ### 4.4. Áp công thức khoảng cách song song khi chưa chứng minh song song
+
+    **Dấu hiệu:** Từ hai đối tượng bất kì trong không gian, lấy một điểm của đối tượng thứ nhất và giả định khoảng cách đến đối tượng kia không đổi.
+
+    **Vì sao sai:** Tính độc lập với điểm chọn đúng khi **hai đường song song**, **hai mặt song song**, hoặc **đường song song mặt**. Với đường xiên cắt mặt, khoảng cách tại các điểm có thể khác nhau.
+
+    **Cách sửa:** Trước khi dùng \(d(a,(P))=d(M,(P))\), phải xác minh \(a\parallel(P)\); trước khi lấy khoảng cách từ một mặt đến mặt kia, xác minh hai mặt song song.
+
+    ### 4.5. Đồng nhất khoảng cách tới mặt với khoảng cách tới một đường trong mặt
+
+    **Dấu hiệu:** Trong lăng trụ \(ABC.A'B'C'\), lấy chân \(H\) từ \(A\) xuống \(BC\), rồi dùng ngay \(AH\) làm \(d(A,BC')\).
+
+    **Vì sao sai:** \(H\) thuộc \(BC\) và mặt bên \((BCC'B')\), nhưng không nhất thiết thuộc **đường \(BC'\)**. Khoảng cách tới mặt \(\le\) khoảng cách tới một đường nằm trong mặt.
+
+    **Cách sửa:** Dùng \(AH\) khi đo tới **mặt** nếu đã chứng minh vuông góc mặt; khi đo tới **đường \(BC'\)**, dựng đường cao từ \(A\) của tam giác \(ABC'\).
+
+    ### 4.6. Đánh tráo khoảng cách h và a/2 trong hình hộp đáy thoi
+
+    **Dấu hiệu:** Trong Ví dụ 2 SGK, trả \(d(AA',(BDD'B'))=h\) vì \(AA'\) là cạnh đứng.
+
+    **Vì sao sai:** \(AA'\) song song mặt bên \((BDD'B')\); đoạn đứng **không** vuông góc mặt ấy. Khoảng cách đúng là đoạn \(AO\) trong đáy và bằng \(a/2\).
+
+    **Cách sửa:** Vẽ \(O=AC\cap BD\), chứng minh \(AO\perp BD\) và \(AO\perp BB'\), rồi suy \(AO\perp(BDD'B')\). Cạnh \(AA'=h\) chỉ đo khoảng cách từ **đường ở mặt trên xuống đáy**.
+
+    ### 4.7. Chọn một đoạn nối hai đường chéo nhau nhưng thiếu vuông góc
+
+    **Dấu hiệu:** Chọn đoạn \(XY\) với \(X\in a,Y\in b\) và nói \(d(a,b)=XY\) dù chỉ biết \(XY\perp a\), không biết \(XY\perp b\).
+
+    **Vì sao sai:** Đường vuông góc chung phải **cắt cả hai đường** và **vuông góc cả hai**. Một đoạn nối xiên vẫn có thể dài hơn khoảng cách.
+
+    **Cách sửa:** Kiểm lần lượt \(X\in a\), \(Y\in b\), \(XY\perp a\), \(XY\perp b\). Trong chóp \(SA\perp(ABC)\), lấy \(AH\perp BC\) với \(H\in BC\) để chứng minh \(AH\) là đoạn chung của \(SA,BC\).
+
+    ### 4.8. Lấy chiều dài cột đứng làm khoảng cách vuông góc tới mặt dốc
+
+    **Dấu hiệu:** Cột cao \(2{,}28\) m, dốc nghiêng \(15^\circ\), em so trực tiếp \(2{,}28\) với chiều cao xe \(2{,}21\) và kết luận xe qua được.
+
+    **Vì sao sai:** Khoảng cách tới **mặt dốc** đo theo pháp tuyến của mặt, không phải phương đứng. Khi dốc nghiêng, đoạn pháp tuyến ngắn hơn đoạn đứng.
+
+    **Cách sửa:** Chiếu độ dài cột lên pháp tuyến: \(d=2{,}28\cos15^\circ\approx2{,}20\) m. So đúng \(2{,}20<2{,}21\), xe không đủ khoảng trống trong mô hình bài toán.
+
+    **Học tiếp:** [Core và Luyện tập Bài 26](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn S1: SGK Toán 11 Kết nối tri thức với cuộc sống, tập hai, Bài 26 “Khoảng cách”, trang in 54–58; gồm ba mục “Khoảng cách từ một điểm đến một đường thẳng, đến một mặt phẳng”, “Khoảng cách giữa các đường thẳng và mặt phẳng song song, giữa hai mặt phẳng song song”, “Khoảng cách giữa hai đường thẳng chéo nhau”. Đã đối chiếu văn bản S1 số hóa về HĐ1–4, Ví dụ 1–3, Luyện tập 1–3 và Vận dụng về khung khống chế chiều cao; ảnh trang PDF gốc và offset trang in↔chỉ số PDF chưa xác minh được (SOURCE_VISUAL_OFFSET_HOLD). Tái sử dụng nguyên SVG điểm–mặt của B26 và SVG điểm–đường Toán 10; bổ sung các hình đúng chỗ còn thiếu. Không sửa Core/Luyện tập, Tự kiểm tra, ngân hàng câu hỏi và hệ thống đánh giá.</p>
