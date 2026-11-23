@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 460" width="970" height="460" role="img" aria-labelledby="t d">
+<title id="t">Chiều cao hình chóp tam giác đều bằng khoảng cách đỉnh đến đáy</title><desc id="d">Chóp tam giác đều S.ABC đáy tam giác đều cạnh a; O là tâm tam giác ABC, SO vuông góc đáy. OA bằng a chia căn ba và SA bằng b, nên chiều cao SO bằng căn của b bình phương trừ a bình phương chia ba. Điều kiện b lớn hơn a chia căn ba để chóp không suy biến.</desc>
+<rect width="970" height="460" rx="18" fill="#fff"/>
+<text x="485" y="36" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1c3e59">Chóp đều: chiều cao là SO, không phải cạnh bên SA</text>
+<polygon points="165,347 425,347 295,196" fill="#e3effa" stroke="#5a88a7" stroke-width="3"/>
+<path d="M295 85 L165 347 M295 85 L425 347 M295 85 L295 196" stroke="#748798" stroke-width="3.5" fill="none"/>
+<path d="M295 85 L295 296" stroke="#c65d3a" stroke-width="6" stroke-dasharray="10 7"/>
+<path d="M295 296 L165 347" stroke="#34896c" stroke-width="4" stroke-dasharray="8 5"/>
+<circle cx="295" cy="296" r="6" fill="#c65d3a"/>
+<g font-family="Arial" font-size="20" fill="#26435c">
+<text x="280" y="73">S</text><text x="148" y="368">A</text><text x="431" y="370">B</text><text x="295" y="184">C</text><text x="308" y="313">O</text>
+<text x="185" y="220">SA=b</text><text x="315" y="174" fill="#ba5937">SO ⟂ (ABC)</text><text x="204" y="342" fill="#328269">OA=a/√3</text>
+<rect x="565" y="98" width="365" height="258" rx="13" fill="#f3f8fb" stroke="#dee7ee"/>
+<text x="589" y="145" font-weight="700">Đáy tam giác đều cạnh a</text>
+<text x="589" y="187">Tâm O: OA=a/√3</text>
+<text x="589" y="231">SA=b là cạnh bên</text>
+<text x="589" y="277">SO²=b²−a²/3</text>
+<text x="589" y="326" font-weight="700" fill="#bd5737">SO=√(b²−a²/3)</text>
+<text x="485" y="432" text-anchor="middle" font-size="16" fill="#66798a">Chóp không suy biến cần b&gt;a/√3; số đo không lấy theo phối cảnh.</text>
+</g></svg>
