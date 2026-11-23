@@ -124,3 +124,141 @@
     | \(a\perp(P)\) | Một điểm | \(90^\circ\) |
 
     **Áp dụng đúng giới hạn:** Nếu máy bay bay thẳng, tốc độ không đổi, quãng bay xiên \(s\) và góc cất cánh \(\alpha\) không đổi so với mặt đất phẳng, độ cao mô hình là \(h=s\sin\alpha\). Nếu thiếu góc (hoặc một dữ kiện tương đương), biết tốc độ không đủ để tính độ cao.
+
+=== "Ví dụ"
+
+    ### 3.1. Chiếu điểm và đường vuông góc mặt phẳng
+
+    **Đề bài.** Điểm \(A\notin(P)\), \(H\) là chân đường vuông góc từ \(A\) xuống \((P)\), \(M\in(P)\) và \(M\ne H\). Xác định hình chiếu của điểm \(A\), đoạn \(AH\) và đoạn \(AM\) lên \((P)\).
+
+    **Phân tích:** Hình chiếu của **một điểm** là chân pháp tuyến; hình chiếu **đoạn** có hai đầu mút là hai điểm ảnh, nhưng có thể **co thành một điểm** khi hai đầu mút trùng ảnh.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Vì \(AH\perp(P)\), hình chiếu của \(A\) là \(H\). Điểm \(H\in(P)\) tự chiếu thành \(H\), nên hình chiếu đoạn \(AH\) chỉ là điểm \(H\). Điểm \(M\in(P)\) tự chiếu thành \(M\), nên đoạn \(AM\) chiếu thành đoạn \(HM\).</p></div>
+
+    **Kiểm lại:** Không gọi điểm \(H\) là **một đường thẳng**. Điều kiện \(M\ne H\) làm đoạn chiếu \(HM\) không suy biến.
+
+    ### 3.2. Bóng nắng và phép chiếu vuông góc
+
+    **Đề bài.** Một cột đứng \(AH\perp(P)\) trên sân. Bóng của cột dưới các tia sáng xiên được tạo bởi phép chiếu song song theo phương tia sáng. Có thể gọi đó là phép chiếu vuông góc không? Nếu nắng chiếu theo phương vuông góc sân thì bóng hình học của cột có dạng gì?
+
+    **Phân tích:** Phép chiếu vuông góc là **phép chiếu song song có phương chiếu vuông góc mặt sân**. Hướng các tia sáng, không phải sự đứng thẳng của cột, quyết định tên phép chiếu.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Khi tia sáng xiên, phương chiếu không vuông góc \((P)\), nên bóng cột là hình chiếu song song **không phải hình chiếu vuông góc**. Nếu các tia sáng vuông góc sân, cột \(AH\) cũng song song phương chiếu và toàn bộ cột chiếu về chân \(H\); bóng hình học chỉ còn **một điểm \(H\)**.</p></div>
+
+    **Kiểm lại:** Không suy “cột vuông góc sân thì mọi cái bóng đều là hình chiếu vuông góc”. Phải kiểm **phương chiếu**.
+
+    ### 3.3. Dùng định lí ba đường vuông góc
+
+    **Đề bài.** Trên mặt sân \((P)\), bốn cột \(AM,BN,CP,DQ\) vuông góc sân tại \(A,B,C,D\). Chứng minh nếu \(BD\perp AC\) thì \(BD\perp MP\), với \(M,P\) là đỉnh của hai cột tại \(A,C\).
+
+    **Phân tích:** Xác định **hình chiếu của đường xiên \(MP\)**: hai đầu mút \(M,P\) chiếu về \(A,C\), nên hình chiếu là \(AC\) (với \(A\ne C\)). Sau đó dùng một đường **nằm trong sân** là \(BD\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Vì các cột \(AM,CP\) vuông góc \((P)\), \(M\mapsto A\), \(P\mapsto C\); do đó hình chiếu của \(MP\) lên \((P)\) là \(AC\). Đường \(BD\subset(P)\) và \(BD\perp AC\). Theo định lí ba đường vuông góc, \(BD\perp MP\).</p></div>
+
+    **Kiểm lại:** Nếu \(MP\perp(P)\) thì hình chiếu sẽ là **một điểm**; ở đây \(A\ne C\) nên hình chiếu đúng là đường \(AC\). Không nhầm \(BD\perp MP\) với “BD cắt MP”.
+
+    ### 3.4. Hình chiếu tam giác có thể suy biến
+
+    **Đề bài.** Trong chóp \(S.ABC\), \(SA\perp(ABC)\). Xác định hình chiếu của các tam giác \(SBC,SCA,SAB\) lên mặt đáy.
+
+    **Phân tích:** Chiếu **từng đỉnh** rồi nối các điểm ảnh; vì \(S\mapsto A\), một số hình ban đầu có hai đỉnh trùng nhau sau chiếu.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Trên \((ABC)\), các điểm \(A,B,C\) tự chiếu thành chính chúng và \(S\mapsto A\). Do đó \(SBC\mapsto ABC\) (tam giác), \(SCA\mapsto AC\) (đoạn thẳng), \(SAB\mapsto AB\) (đoạn thẳng).</p></div>
+
+    **Kiểm lại:** Hình \(SCA\) không thành một tam giác khác, vì \(S\) và \(A\) có **cùng hình chiếu \(A\)**. Sự suy biến này đúng với phép chiếu song song nói chung.
+
+    ### 3.5. Đọc góc đường–mặt từ tam giác 6–8–10
+
+    **Đề bài.** Một đoạn dốc dài 10 m, cao hơn nền 6 m. Tính độ dài hình chiếu trên nền và \(\sin\alpha,\tan\alpha\), với \(\alpha\) là góc giữa đoạn dốc và mặt nền.
+
+    **Phân tích:** Độ dài 10 là **cạnh huyền**, 6 là **độ cao vuông góc**; hình chiếu là cạnh ngang chưa biết. Dùng Pythagore trước, tỉ số lượng giác sau.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Đoạn chiếu \(d=\sqrt{10^2-6^2}=8\) m. Vì góc đường–mặt là góc ở đầu đoạn dốc trên nền, \(\sin\alpha=6/10=3/5\), \(\tan\alpha=6/8=3/4\). Góc \(\alpha=\arcsin(3/5)\approx36{,}9^\circ\).</p></div>
+
+    **Kiểm lại:** \(\tan\alpha=3/4\), **không** phải \(6/10\); vì mẫu số của tang là đoạn **chiếu ngang** 8 m.
+
+    ### 3.6. Ví dụ 2 SGK — Hai góc với hai mặt phẳng khác nhau
+
+    **Đề bài.** Cho chóp \(S.ABC\) với \(SA\perp(ABC)\), \(SA=a\), \(CA=CB=a\sqrt7\), \(AB=2a\) (\(a>0\)). a) Tính tang góc giữa \(SB\) và \((ABC)\). b) Tính góc giữa \(SC\) và \((SAB)\).
+
+    **Phân tích:** Phần a, hình chiếu \(SB\) xuống đáy là \(AB\). Phần b, mặt phẳng yêu cầu **đổi thành \((SAB)\)**, nên phải tìm hình chiếu của \(C\) lên mặt này. Lấy trung điểm \(M\) của \(AB\) để chứng minh \(CM\perp(SAB)\).
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B24_SABC_PROJECTION_EXAMPLE_AUTHORING_20261123.svg" alt="Hình chóp SABC theo dữ kiện SGK, trung điểm M của AB và CM vuông góc SAB để SC chiếu thành SM"><figcaption><strong>Đọc hình trước lời giải:</strong> \(SA\) vuông góc **đáy** tại \(A\). Với phần b phải tìm hình chiếu lên mặt \((SAB)\): đường \(CM\) vuông góc **hai đường cắt nhau** \(AB,SA\) trong mặt ấy; kết luận \(SM\) là hình chiếu \(SC\) trên \((SAB)\). Góc cuối cùng nằm ở \(S\) trong tam giác vuông \(SMC\).</figcaption></figure>
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> a) \(SB\) chiếu xuống \((ABC)\) thành \(AB\); góc cần tìm là \(\angle SBA\). Vì tam giác \(SAB\) vuông tại \(A\), \(\tan\angle SBA=SA/AB=a/(2a)=1/2\). b) Lấy \(M\) là trung điểm \(AB\). Tam giác \(ABC\) cân tại \(C\) nên \(CM\perp AB\); vì \(SA\perp(ABC)\), \(CM\perp SA\). Hai đường \(AB,SA\subset(SAB)\) cắt nhau, nên \(CM\perp(SAB)\). Hình chiếu \(SC\) lên \((SAB)\) là \(SM\). \(SM=\sqrt{SA^2+AM^2}=a\sqrt2\); \(SC=\sqrt{SA^2+AC^2}=a\sqrt8\), nên \(\cos\angle CSM=SM/SC=1/2\); góc cần tìm bằng \(60^\circ\).</p></div>
+
+    **Kiểm lại:** \(a>0\) nên được rút gọn \(a\) trong tỉ số. Hai phần xét **hai mặt phẳng khác nhau**; không dùng \(\angle SBA\) cho phần b.
+
+    ### 3.7. Máy bay: quãng đường bay và độ cao
+
+    **Đề bài.** Máy bay bay thẳng với tốc độ không đổi \(240\) km/h, góc cất cánh \(30^\circ\) so với nền ngang. Tính quãng đường và độ cao sau đúng một phút.
+
+    **Phân tích:** Đổi \(1\) phút \(=1/60\) giờ. Quãng bay là cạnh xiên; độ cao là cạnh đối của góc cất cánh, nên phải nhân với \(\sin30^\circ\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Quãng bay thẳng \(s=240\cdot1/60=4\) km. Theo mô hình tam giác vuông, độ cao \(h=s\sin30^\circ=4\cdot1/2=2\) km. Quãng chiếu trên mặt đất bằng \(4\cos30^\circ=2\sqrt3\) km.</p></div>
+
+    **Kiểm lại:** Nếu không có góc \(30^\circ\), dữ kiện tốc độ chỉ đủ tính **4 km quãng đường**, chưa đủ tính độ cao. Mô hình không tính giai đoạn thay đổi góc/tốc độ.
+
+    ### 3.8. Góc đường chéo của hình lập phương với mặt đáy
+
+    **Đề bài.** Cho hình lập phương \(ABCD.A'B'C'D'\) cạnh \(a>0\). Xác định góc giữa \(A'C\) và đáy \((ABCD)\); tính \(\tan\alpha\) và số đo gần đúng của góc.
+
+    **Phân tích:** \(A'\) chiếu xuống mặt đáy tại \(A\), \(C\) nằm trong đáy. Vậy hình chiếu \(A'C\) là đường \(AC\); góc cần tìm ở **\(C\)** giữa \(CA'\) và \(CA\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Tam giác \(A'AC\) vuông tại \(A\). Vì \(A'A=a\), \(AC=a\sqrt2\), \(\tan\alpha=A'A/AC=1/\sqrt2=\sqrt2/2\). Do đó \(\alpha=\arctan(1/\sqrt2)\approx35{,}3^\circ\).</p></div>
+
+    **Kiểm lại:** Góc giữa đường với đáy không phải \(90^\circ\): \(A'C\) là đường **xiên**, không vuông góc đáy. Độ dài \(AC=a\sqrt2\) là đường chéo đáy, không phải cạnh \(a\).
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Gọi mọi cái bóng là phép chiếu vuông góc
+
+    **Dấu hiệu:** Cột vuông góc sân nên cho rằng bóng dưới tia nắng xiên là hình chiếu vuông góc.
+
+    **Vì sao sai:** Tên phép chiếu phụ thuộc **phương chiếu**, không phụ thuộc riêng phương của vật. Tia nắng xiên cho phép chiếu song song nhưng không theo pháp tuyến sân.
+
+    **Cách sửa:** Kiểm \(\Delta\perp(P)\). Chỉ khi phương chiếu vuông góc mặt phẳng mới gọi là phép chiếu vuông góc.
+
+    ### 4.2. Chiếu đường vuông góc thành một đường
+
+    **Dấu hiệu:** Với \(a\perp(P)\), vẽ hình chiếu \(a'\) như một đường trên \((P)\).
+
+    **Vì sao sai:** Mọi điểm trên \(a\) nằm cùng một phương chiếu và cùng cho **một chân** trên \((P)\).
+
+    **Cách sửa:** Hình chiếu của \(a\perp(P)\) chỉ là **một điểm**; không áp định lí ba đường vuông góc với hình chiếu suy biến.
+
+    ### 4.3. Đổi vai của ba đường trong định lí
+
+    **Dấu hiệu:** Có \(b\subset(P)\), đường xiên \(a\), nhưng lấy hình chiếu của \(b\) rồi suy vuông góc tùy ý.
+
+    **Vì sao sai:** Định lí yêu cầu đường xiên \(a\not\perp(P)\) và **hình chiếu của chính nó** là \(a'\), còn \(b\) nằm sẵn trong mặt.
+
+    **Cách sửa:** Xác định đúng bốn vai: mặt \((P)\), đường xiên \(a\), đường chiếu \(a'\), đường \(b\subset(P)\). Dùng \(b\perp a\iff b\perp a'\).
+
+    ### 4.4. Chiếu xuống sai mặt phẳng rồi lấy nhầm góc
+
+    **Dấu hiệu:** Bài hỏi góc \(SC\) với \((SAB)\), nhưng dùng \(AC\) là hình chiếu trên \((ABC)\).
+
+    **Vì sao sai:** Một đường có thể có **hình chiếu khác nhau lên các mặt phẳng khác nhau**. \(AC\) chỉ là hình chiếu \(SC\) lên đáy khi \(SA\perp(ABC)\).
+
+    **Cách sửa:** Chứng minh \(CM\perp(SAB)\) trong Ví dụ 3.6, xác định \(SM\) là hình chiếu cần dùng và đọc góc \(\angle CSM\).
+
+    ### 4.5. Đánh tráo sin, cos, tan hoặc góc với phương đứng
+
+    **Dấu hiệu:** Dốc 10 m và cao 6 m mà cho \(\tan\alpha=6/10\), hoặc lấy góc tại đỉnh trên của dây.
+
+    **Vì sao sai:** Tang dùng **cao/ngang**, sin dùng **cao/xiên**. Góc giữa đường xiên và phương đứng là góc **phụ** với góc đường–mặt.
+
+    **Cách sửa:** Vẽ tam giác vuông, đánh dấu góc ở đầu đường xiên thuộc nền, tìm đoạn chiếu bằng Pythagore rồi mới chọn tỉ số.
+
+    ### 4.6. Lấy quãng bay làm độ cao, quên điều kiện mô hình
+
+    **Dấu hiệu:** Bay \(240\) km/h trong một phút nên kết luận độ cao bằng 4 km hoặc tính \(\tan30^\circ\) nhân quãng bay xiên.
+
+    **Vì sao sai:** Quãng bay xiên \(s=4\) km, độ cao \(h=s\sin\alpha\) chỉ xác định khi đã biết góc và mô hình bay thẳng thích hợp.
+
+    **Cách sửa:** Đổi phút sang giờ, xác định đúng cạnh xiên và cạnh cao; lấy \(h=4\sin30^\circ=2\) km. Nếu đề thiếu góc, nói rõ **không đủ dữ kiện**.
+
+    **Học tiếp:** [Core và Luyện tập Bài 24](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn S1: SGK Toán 11 Kết nối tri thức với cuộc sống, tập hai, Bài 24 trang in 38–43. Hai mục SGK: “Phép chiếu vuông góc”; “Góc giữa đường thẳng và mặt phẳng”. HĐ1, HĐ2, HĐ3, Ví dụ 1–2 và các trường hợp suy biến đã được đối chiếu với văn bản bản số hóa của SGK. Trang PDF screenshot và offset trang in↔chỉ số PDF chưa xác minh được do lỗi truy xuất ảnh, giữ SOURCE_VISUAL_OFFSET_HOLD. SVG tam giác dốc gốc được tái dùng nguyên file; bổ sung hai SVG cho định lí ba đường vuông góc và ví dụ hình chóp với mặt phẳng chiếu đổi. Mọi hình có ALT và hướng dẫn đọc tại chỗ. Chỉ sửa trang Kiến thức; Core/Luyện tập, Tự kiểm tra, ngân hàng và đánh giá giữ nguyên.</p>
