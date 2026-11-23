@@ -151,8 +151,8 @@ with sync_playwright() as pw:
                 # CĐ17 learner-owned CHÚ Ý warning is a mandatory recap (not a
                 # fifth callout style); preserve original source and exact label.
                 if topic == "17":
-                    notices = page.locator('[data-topic-w1-callout="recap"]')
-                    note_roles = notices.evaluate_all("""els => els.filter(el =>
+                    recap_cards = page.locator('[data-topic-w1-callout="recap"]')
+                    note_roles = recap_cards.evaluate_all("""els => els.filter(el =>
                         [...el.querySelectorAll(':scope > p > strong')]
                             .some(s => s.textContent.trim().toLocaleUpperCase().startsWith('CHÚ Ý'))
                     ).length""")
