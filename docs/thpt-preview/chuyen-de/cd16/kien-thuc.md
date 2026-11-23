@@ -379,7 +379,7 @@ Tìm **A** ở cao, **H** là chân AH⊥(P), **M** ở nền. Đường xiên *
 
 
 
-**Khám phá tương tác — Đường dốc, hình chiếu và góc:** [Mở mô hình thao tác tại nguồn học liệu](Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html). Hãy dự đoán góc và độ dài trước khi điều chỉnh độ cao/khoảng ngang, rồi kiểm bằng Pitago và sin/tan. Mô hình minh họa không thay chứng minh định lí ba đường vuông góc.
+**Khám phá tương tác — Đường dốc, hình chiếu và góc:** <a href="../../../math-lab/models/slm-top16-ramp-angle-r00/">Mở mô hình thao tác tại nguồn học liệu</a>. Hãy dự đoán góc và độ dài trước khi điều chỉnh độ cao/khoảng ngang, rồi kiểm bằng Pitago và sin/tan. Mô hình minh họa không thay chứng minh định lí ba đường vuông góc.
 
 <!-- AUTHOR_ONLY_MODEL_REFERENCE: SLM-TOP16-RAMP-ANGLE-R00; FILE: Temp_THPT_TOPIC16_RAMP_ANGLE_R01_SCOPE_CORRECTED_20261113.html; PUBLIC_DISCOVERY_NO_MASTERY -->
 
