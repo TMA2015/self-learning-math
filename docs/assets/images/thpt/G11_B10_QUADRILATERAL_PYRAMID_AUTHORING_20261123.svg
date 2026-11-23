@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 450" width="820" height="450" role="img" aria-labelledby="title desc">
+<title id="title">Hình chóp tứ giác S.ABCD với đỉnh và mặt đáy</title>
+<desc id="desc">S là đỉnh nằm ngoài mặt phẳng đáy ABCD. Đáy ABCD là tứ giác; bốn mặt bên là tam giác SAB, SBC, SCD, SDA; cạnh khuất AD được biểu diễn nét đứt. Hình chóp có năm đỉnh, tám cạnh, năm mặt.</desc>
+<rect width="820" height="450" rx="18" fill="#fff"/>
+<text x="410" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#172b4d">Hình chóp tứ giác S.ABCD</text>
+<polygon points="170,316 532,352 656,249 341,218" fill="#dff4ec" fill-opacity=".88" stroke="#32686a" stroke-width="2"/>
+<polygon points="359,82 170,316 532,352" fill="#d9eaf9" fill-opacity=".5" stroke="none"/>
+<polygon points="359,82 532,352 656,249" fill="#b9ddf5" fill-opacity=".45" stroke="none"/>
+<line x1="359" y1="82" x2="170" y2="316" stroke="#1d426a" stroke-width="3"/>
+<line x1="359" y1="82" x2="532" y2="352" stroke="#1d426a" stroke-width="3"/>
+<line x1="359" y1="82" x2="656" y2="249" stroke="#1d426a" stroke-width="3"/>
+<line x1="359" y1="82" x2="341" y2="218" stroke="#1d426a" stroke-width="2.5" stroke-dasharray="8 7"/>
+<line x1="170" y1="316" x2="532" y2="352" stroke="#1d426a" stroke-width="3"/>
+<line x1="532" y1="352" x2="656" y2="249" stroke="#1d426a" stroke-width="3"/>
+<line x1="656" y1="249" x2="341" y2="218" stroke="#1d426a" stroke-width="3"/>
+<line x1="341" y1="218" x2="170" y2="316" stroke="#1d426a" stroke-width="2.5" stroke-dasharray="8 7"/>
+<g font-family="Arial,sans-serif" font-size="22" fill="#132f50" font-weight="700">
+<text x="348" y="66">S</text><text x="146" y="333">A</text><text x="532" y="381">B</text><text x="674" y="254">C</text><text x="329" y="206">D</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="17" fill="#3d5a6a">
+<text x="338" y="411" text-anchor="middle">Mặt đáy ABCD; bốn mặt bên là các tam giác mang đỉnh S.</text>
+</g>
+</svg>
