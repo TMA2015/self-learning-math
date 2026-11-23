@@ -1,0 +1,75 @@
+name: THPT Topic W5 CĐ19–22 Golden Integration QA (NO DEPLOY)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/thpt-preview/chuyen-de/cd18/**'
+      - 'docs/thpt-preview/chuyen-de/cd19/**'
+      - 'docs/thpt-preview/chuyen-de/cd20/**'
+      - 'docs/thpt-preview/chuyen-de/cd21/**'
+      - 'docs/thpt-preview/chuyen-de/cd22/**'
+      - 'docs/thpt-preview/chuyen-de/index.md'
+      - 'docs/assets/javascripts/thpt-topic-w5-golden-v1.js'
+      - 'docs/assets/images/thpt/FIG-TOP19-*.svg'
+      - 'docs/assets/images/thpt/FIG-TOP20-*.svg'
+      - 'docs/assets/images/thpt/FIG-TOP21-*.svg'
+      - 'docs/assets/images/thpt/Temp_STATISTICS_*.svg'
+      - 'scripts/test-thpt-topic-w5-source-locked.py'
+      - 'scripts/test-thpt-topic-w5-golden-browser.py'
+      - 'mkdocs.yml'
+      - 'mkdocs.thpt-preview.yml'
+      - '.github/workflows/thpt-topic-w5-golden-release-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  w5-source-strict:
+    name: Exact W5 source/Q18/Q15/Q16 and two strict MkDocs builds (NO DEPLOY)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify W5 signed AUTHORING and source-only 12 public pages
+        run: |
+          node --check docs/assets/javascripts/thpt-topic-w5-golden-v1.js
+          git fetch --no-tags origin \
+            1bffa9555e5c549dbac11e47a3d24799d90d7e64 \
+            b576b7f542f04cb7d600e1ce0ceed3d31fcd49e2 \
+            17182ddb33ee9ad2103e9d00c7b1ac644cbbf336 \
+            5ac65e9e4a2fa6290f73b15fa73a9e08ca0216d7
+          python3 scripts/test-thpt-topic-w5-source-intake.py
+          python3 scripts/test-thpt-topic-w5-source-locked.py
+      - name: Strict build the same THCS+THPT site and THPT preview
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+          node scripts/assemble-thpt-site.cjs
+      - name: Verify all 12 W5 route files, source SHA, 10 images, 4 optional models
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path('prototypes/thpt/release-queue/W5_CD19_22_SOURCE_INTAKE_20261123.json').read_text(encoding='utf8'))
+          for n,t in m['topics'].items():
+              for part in ('kien-thuc','luyen-tap','tu-kiem-tra'):
+                  path=Path(f'site/thpt-preview/chuyen-de/cd{n}/{part}/index.html')
+                  assert path.is_file(), path
+                  s=path.read_text(encoding='utf8')
+                  assert t['sourceBlob'] in s and t['q18ReceiptBlob'] in s and 'thpt-topic-w5-golden-v1.js' in s, path
+              assert Path('site/thpt-preview/math-lab/models',t['optionalModel'],'index.html').is_file(), n
+          original=(list(Path('site/assets/images/thpt').glob('FIG-TOP19-*.svg'))+
+                    list(Path('site/assets/images/thpt').glob('FIG-TOP20-*.svg'))+
+                    list(Path('site/assets/images/thpt').glob('FIG-TOP21-*.svg'))+
+                    list(Path('site/assets/images/thpt').glob('Temp_STATISTICS_*.svg')))
+          assert len(original)==10,(len(original),original)
+          print('PASS W5 12 routes source/Q18, 10 signed SVGs and 4 optional models')
+          PY
