@@ -31,6 +31,33 @@ PALETTE = {
     "formula": "rgba(0, 0, 0, 0)",
 }
 
+
+def audit_visible_math(root, case: str) -> None:
+    """Check actual text nodes, excluding MathJax, code and closed solutions.
+
+    This covers ALL W5 Knowledge outcomes, canonical Practice items and public
+    SelfCheck replays (Chromium/820), not only six previously reported cards.
+    Intervals such as [0,10) are not mistaken for TeX display math.
+    """
+    leaking = root.evaluate(r"""node => {
+      const found = [], walk = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+      const caret = /(?:\([^()\n]{1,70}\)|[A-Za-z0-9][A-Za-z0-9_]{0,20})\^(?:\{|\(|[A-Za-z0-9])/;
+      const cmd = /\\(?:frac|sum|binom|sqrt|lim|operatorname|mathbb|cup|cap|mid|bar|overrightarrow)\b/;
+      const bracket = /\[[^\]\n]{0,350}(?:\\[A-Za-z]{2,}|[A-Za-z][A-Za-z0-9_]{0,20}\s*=)/;
+      while (walk.nextNode()) {
+        const t = walk.currentNode, p = t.parentElement;
+        if (!p || p.closest('.arithmatex,mjx-container,code,pre,script,style,textarea,svg,details:not([open]),[hidden]')) continue;
+        const raw = t.nodeValue || '';
+        if (caret.test(raw) || cmd.test(raw) || bracket.test(raw)) {
+          found.push(raw.trim().slice(0,210));
+          if (found.length >= 6) break;
+        }
+      }
+      return found;
+    }""")
+    assert not leaking, ("W5_COMPLETE_VISIBLE_MATH_AUDIT", case, leaking)
+
+
 with sync_playwright() as pw:
     for engine in ("chromium", "webkit"):
         browser = getattr(pw, engine).launch(headless=True)
@@ -188,6 +215,12 @@ with sync_playwright() as pw:
                         subtabs.nth(j).click()
                         active = panel.locator(".thpt-r4-knowledge-content-panel:visible")
                         expect(active).to_have_count(1)
+                        if width == 820 and engine == "chromium":
+                            audit_visible_math(active, f"CĐ{topic} Knowledge {i+1}.{j+1}")
+                            if topic == "19" and i == 2 and j in (0, 1):
+                                repaired = active.locator('.arithmatex[data-topic-w3-display-math="exponent"]')
+                                assert repaired.count() >= 3, ("CĐ19_SIGNED_NEWTON_INLINE_TEX", i, j)
+                                expect(repaired.first.locator("mjx-container")).to_have_count(1, timeout=15000)
                         raw_display = active.evaluate(r"""e => /\[\s*(?:\\vec|\(\\vec|\\sin|\\cos|\\tan|\\frac|\\sqrt|\\lim|\\operatorname)/.test(e.innerText)""")
                         assert not raw_display, (engine, topic, width, i, j, "visible unrendered display TeX", active.evaluate(r"""e => e.innerText.match(/\[.{0,500}?\\(?:vec|sin|frac|sqrt|lim|operatorname)[\s\S]{0,400}/s)?.[0] || e.innerText.slice(0,220)"""))
                         current = subtabs.nth(j)
@@ -305,6 +338,8 @@ with sync_playwright() as pw:
                         card = modal.locator("[data-thpt-canonical-item]")
                         assert card.get_attribute("data-thpt-canonical-item"), (topic,i,j,"item_id missing")
                         expect(card.locator(":scope > .topic-w1-stem-label strong")).to_have_text("Đề bài")
+                        if width == 820 and engine == "chromium":
+                            audit_visible_math(card, f"CĐ{topic} Practice item {j+1}")
                         assert modal.locator(".thpt-r4-formative-submit").count() == 0, "duplicate answer action"
                         details = modal.locator(".thpt-r4-formative-actions details")
                         expect(details).to_have_count(1)
@@ -312,6 +347,8 @@ with sync_playwright() as pw:
                         expect(details.locator("summary")).to_have_text("📖 Đáp án / Lời giải")
                         details.locator("summary").click()
                         expect(details.locator(".thpt-r4-formative-reveal")).to_be_visible()
+                        if width == 820 and engine == "chromium":
+                            audit_visible_math(details, f"CĐ{topic} Practice solution {j+1}")
                     total_seen += group_count
                     modal.locator(".topic-w1-close").click()
                     expect(modal).to_be_hidden()
@@ -326,6 +363,8 @@ with sync_playwright() as pw:
                     jump.nth(j).click()
                     body = selfcheck.locator(".g10sc-body")
                     expect(body.locator("h3")).to_have_text("Câu "+str(j+1))
+                    if width == 820 and engine == "chromium":
+                        audit_visible_math(body, f"CĐ{topic} SelfCheck item {j+1}")
                     assert body.locator("input,textarea").count() == 0
                     expect(body.locator(":scope > .topic-w1-stem-label strong")).to_have_text("Đề bài")
                     solution = body.locator("[data-topic-w1-solution]")
@@ -334,6 +373,8 @@ with sync_playwright() as pw:
                     expect(solution).to_be_visible()
                     assert solution.get_attribute("data-thpt-canonical-solution") == body.get_attribute("data-thpt-canonical-item"), (topic,j,"wrong canonical answer")
                     assert solution.locator(".g10sc-error").count()==0, (topic,j,"public solution retrieval failed")
+                    if width == 820 and engine == "chromium":
+                        audit_visible_math(solution, f"CĐ{topic} SelfCheck solution {j+1}")
                 assert not errors, (engine,topic,width,"uncaught JS",errors)
                 print(f"PASS {engine} CĐ{topic} {width}px: {outcomes} outcomes, {groups} groups/{item_count} items, {replays} replay, 3+1 + MathJax/SVG/Golden hydration")
                 ctx.close()
