@@ -17,7 +17,7 @@
 <text x="743" y="84" text-anchor="middle" font-size="18" font-weight="700">2. Hai mặt cùng ⟂ mặt (R)</text>
 <polygon points="565,307 852,307 927,374 645,374" fill="#e9f0fa" stroke="#3a779f" stroke-width="3"/>
 <polygon points="652,144 741,103 741,327 652,361" fill="#f2e4d8" fill-opacity=".86" stroke="#b47f4c" stroke-width="3"/>
-<polygon points="614,153 773,153 869,332 709,332" fill="#d9f2e9" fill-opacity=".65" stroke="#409477" stroke-width="3"/>
+<polygon points="741,103 869,153 869,361 741,327" fill="#d9f2e9" fill-opacity=".65" stroke="#409477" stroke-width="3"/>
 <line x1="741" y1="103" x2="741" y2="327" stroke="#c55536" stroke-width="6"/>
 <text x="754" y="121" fill="#c55536">d</text><text x="630" y="174">(P)</text><text x="855" y="251">(Q)</text><text x="897" y="372">(R)</text>
 <text x="741" y="363" text-anchor="middle" font-size="15">d = (P) ∩ (Q), d ⟂ (R)</text>
