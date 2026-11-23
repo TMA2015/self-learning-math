@@ -151,3 +151,139 @@
     **Lí do chọn phương pháp:** Với \(u_n=\frac{n^2}{2n+1}=\frac n{2+1/n}\), mẫu chuẩn hóa dương và tiến về 2, nên \(u_n\to+\infty\). Cũng có thể kẹp: với \(n\ge1\), \(n/3\le u_n<n/2\). Việc thấy bậc tử lớn hơn bậc mẫu chỉ là dự đoán; cần kiểm cả **dấu của mẫu**.
 
     **Không nhầm:** \((-1)^n n\) có độ lớn tăng vô hạn nhưng **không** có giới hạn \(+\infty\) hay \(-\infty\) vì dấu đổi qua lại. Không lấy \(\infty\) như số để thay vào biểu thức.
+
+=== "Ví dụ"
+
+    ### 3.1. Chứng minh giới hạn 0, rồi chuyển sang giới hạn hữu hạn
+
+    **Đề bài.** Xét \(u_n=1/n^2\) và \(v_n=5+2/n^2\) với \(n\ge1\). Hãy tìm giới hạn của hai dãy, giải thích vì sao dãy thứ hai có giới hạn 5.
+
+    **Phân tích:** Không cần tìm “số hạng cuối”. Với \(u_n\), khoảng cách đến 0 là \(1/n^2\). Với \(v_n\), xét hiệu \(v_n-5\) để dùng định nghĩa giới hạn hữu hạn.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Vì \(n^2\) tăng không bị chặn, \(1/n^2\to0\). Nếu cần độ chính xác \(\varepsilon>0\), chọn \(N>1/\sqrt\varepsilon\); khi \(n\ge N\), \(1/n^2<\varepsilon\). Mặt khác \(|v_n-5|=2/n^2\to0\), nên \(v_n\to5\).</p></div>
+
+    **Kiểm lại:** \(u_n>0\) với mọi \(n\); \(v_n>5\) với mọi \(n\). Cả hai vẫn có giới hạn dù không hề bằng giá trị giới hạn ở một số hạng hữu hạn.
+
+    ### 3.2. Đổi dấu nhưng vẫn có thể có giới hạn
+
+    **Đề bài.** So sánh hai dãy \(a_n=(-1)^n/n\) và \(b_n=(-1)^n\). Dãy nào có giới hạn hữu hạn?
+
+    **Phân tích:** Khi có dấu luân phiên, kiểm độ lớn. Đừng đồng nhất “thay đổi dấu” với “không có giới hạn”.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(|a_n|=1/n\to0\), do đó \(a_n\to0\). Trong khi đó \(b_{2k}=1\), \(b_{2k+1}=-1\) với mọi \(k\) tự nhiên, nên hai nhóm số hạng chẵn và lẻ không tiến đến một giá trị chung; \(b_n\) không có giới hạn hữu hạn.</p></div>
+
+    **Kiểm lại:** Mỗi dãy đều đổi dấu. Chỉ dãy \(a_n\) có độ lớn tiến về 0, bảo đảm mọi số hạng về sau nằm gần 0.
+
+    ### 3.3. Chọn cùng bậc để chia phân thức
+
+    **Đề bài.** Tính \(\lim\limits_{n\to+\infty}\dfrac{5n^2+3n}{2n^2-1}\).
+
+    **Phân tích:** Tử và mẫu cùng bậc 2, nên chia cả hai cho \(n^2\). Phải kiểm **giới hạn mẫu sau chia khác 0** rồi mới dùng định lí thương.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(\dfrac{5n^2+3n}{2n^2-1}=\dfrac{5+3/n}{2-1/n^2}\). Khi \(n\to+\infty\), tử tiến đến 5, mẫu tiến đến 2 khác 0. Vậy giới hạn là \(5/2\).</p></div>
+
+    **Kiểm lại:** Mẫu gốc \(2n^2-1>0\) khi \(n\ge1\), nên biểu thức xác định. Không thế \(n=\infty\) để nhận \(\infty/\infty\).
+
+    ### 3.4. Giới hạn của căn bậc hai
+
+    **Đề bài.** Tính \(\lim\limits_{n\to+\infty}\sqrt{\dfrac{n+1}{4n+5}}\).
+
+    **Phân tích:** Trước khi lấy căn giới hạn, kiểm biểu thức dưới căn không âm. Chia cả tử/mẫu bên trong cho \(n\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Với \(n\ge1\), \((n+1)/(4n+5)>0\). Ta có \(\dfrac{n+1}{4n+5}=\dfrac{1+1/n}{4+5/n}\to1/4\). Theo định lí giới hạn căn bậc hai của dãy không âm, \(\sqrt{\dfrac{n+1}{4n+5}}\to\sqrt{1/4}=1/2\).</p></div>
+
+    **Kiểm lại:** Dãy dưới căn dương và giới hạn \(1/4\ge0\); căn kết quả là \(1/2>0\), không lấy giá trị âm.
+
+    ### 3.5. Tổng cấp số nhân lùi vô hạn với công bội dương
+
+    **Đề bài.** Tính \(T=8+4+2+1+\cdots\); viết tổng \(n\) số hạng đầu và giải thích vì sao tổng vô hạn tồn tại.
+
+    **Phân tích:** Xác định \(u_1=8\), \(q=1/2\), kiểm \(|q|<1\), rồi lấy giới hạn **dãy tổng riêng**.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Đây là cấp số nhân lùi vô hạn vì \(|q|=1/2<1\). Tổng \(n\) số hạng đầu là \(S_n=8(1-(1/2)^n)/(1-1/2)=16(1-2^{-n})\). Do \(2^{-n}\to0\), nên \(T=\lim S_n=16\).</p></div>
+
+    **Kiểm lại:** Với \(n=3\), tổng \(8+4+2=14\), khớp \(16(1-1/8)=14\). Tổng riêng luôn nhỏ hơn 16 và tiến dần đến 16.
+
+    ### 3.6. Công bội âm vẫn có thể hội tụ
+
+    **Đề bài.** Tính \(T=6-3+\dfrac32-\dfrac34+\cdots\). Các tổng riêng có luôn tăng không?
+
+    **Phân tích:** Công bội \(q=-1/2\) có giá trị tuyệt đối nhỏ hơn 1, nên **công thức tổng vô hạn vẫn dùng được**, nhưng dấu các số hạng luân phiên làm tổng riêng không đơn điệu.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(u_1=6\), \(q=-1/2\), \(|q|<1\), nên \(T=6/(1-(-1/2))=6/(3/2)=4\). Ba tổng riêng đầu là \(S_1=6\), \(S_2=3\), \(S_3=9/2=4{,}5\), lần lượt nằm trên, dưới, trên 4. Chúng không tăng đơn điệu nhưng tiến đến 4.</p></div>
+
+    **Kiểm lại:** Không nhầm \(q=-1/2\) với \(q=+1/2\); nếu thay nhầm dấu sẽ ra 12 thay vì 4.
+
+    ### 3.7. Chứng minh giới hạn dương vô cực bằng chặn dưới
+
+    **Đề bài.** Chứng minh \(\lim\limits_{n\to+\infty}\dfrac{n^2}{2n+1}=+\infty\).
+
+    **Phân tích:** Chia tử, mẫu cho \(n\) để thấy phần tăng theo \(n\); sau đó dùng một chặn dưới tăng không bị chặn nhằm giải thích đúng định nghĩa \(+\infty\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Với \(n\ge1\), \(\dfrac{n^2}{2n+1}=\dfrac{n}{2+1/n}\ge\dfrac n3\). Với mỗi \(M>0\), chọn \(N>3M\); mọi \(n\ge N\) đều có \(\dfrac{n^2}{2n+1}\ge n/3>M\). Vì vậy giới hạn bằng \(+\infty\).</p></div>
+
+    **Kiểm lại:** Mẫu \(2n+1>0\), nên phép so sánh đúng hướng. Kí hiệu \(+\infty\) không phải số để làm phép chia.
+
+    ### 3.8. Tăng trưởng và giới hạn vô cực của mô hình vi khuẩn
+
+    **Đề bài.** Một quần thể ban đầu có 50 vi khuẩn, cứ sau 4 giờ số lượng gấp đôi. Giả sử quy luật kéo dài, sau bao nhiêu chu kì số lượng lần đầu vượt 10 000? Dãy số lượng có giới hạn nào khi số chu kì tăng không bị chặn?
+
+    **Phân tích:** Sau \(n\) chu kì, \(u_n=50\cdot2^n\) (với \(n=0\) là ban đầu). Kiểm hai chu kì liên tiếp để tìm thời điểm **đầu tiên** vượt ngưỡng, rồi phân biệt mô hình với thực tế.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Điều kiện \(50\cdot2^n>10\,000\) tương đương \(2^n>200\). \(2^7=128<200\), \(2^8=256>200\), nên lần đầu vượt 10 000 ở **chu kì thứ 8**, tức sau 32 giờ. Vì \(2>1\), \(50\cdot2^n\to+\infty\) trong mô hình lí tưởng.</p></div>
+
+    **Kiểm lại:** Sau 7 chu kì có 6 400; sau 8 chu kì có 12 800. Mô hình thực có thể thiếu dinh dưỡng và không nhân đôi vô hạn — đây là giới hạn **của giả thiết toán học**.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Đồng nhất giới hạn với số hạng cuối cùng
+
+    **Dấu hiệu:** Nói \(1/n\) không thể có giới hạn 0 vì không có số hạng nào bằng 0.
+
+    **Vì sao sai:** Giới hạn mô tả mọi số hạng đủ muộn tiến gần 0 tùy ý, không yêu cầu dãy có số hạng cuối.
+
+    **Cách sửa:** Kiểm \(|u_n-a|\) so với một sai số dương tùy nhỏ và xác nhận **tất cả** số hạng sau mốc đều thỏa.
+
+    ### 4.2. Thấy dãy đổi dấu thì kết luận không có giới hạn
+
+    **Dấu hiệu:** Đánh đồng \((-1)^n\) với \((-1)^n/n\).
+
+    **Vì sao sai:** Dãy thứ nhất dao động ở \(\pm1\); dãy thứ hai có độ lớn \(1/n\to0\).
+
+    **Cách sửa:** Xét giá trị tuyệt đối hoặc hai nhóm chỉ số chẵn/lẻ để phân biệt dãy hội tụ và dao động không hội tụ.
+
+    ### 4.3. Chia hai giới hạn khi giới hạn mẫu bằng 0
+
+    **Dấu hiệu:** Thay trực tiếp \(n\to\infty\) vào phân thức rồi thao tác với \(0/0\) hoặc \(\infty/\infty\).
+
+    **Vì sao sai:** Định lí thương của hai giới hạn hữu hạn yêu cầu giới hạn mẫu khác 0. Hai dạng trên **không xác định** bằng phép thay số.
+
+    **Cách sửa:** Chia đúng lũy thừa \(n\), quy đồng, nhân liên hợp hoặc tìm chặn tùy dạng; sau biến đổi mới kiểm mẫu giới hạn khác 0.
+
+    ### 4.4. Dùng tổng cấp số nhân vô hạn mà quên \(|q|<1\)
+
+    **Dấu hiệu:** Với \(2+2+2+\cdots\) hoặc \(1+2+4+\cdots\), vẫn dùng \(u_1/(1-q)\).
+
+    **Vì sao sai:** Khi \(q=1\) hoặc \(q=2\), \(q^n\) không tiến về 0; tổng riêng không hội tụ hữu hạn.
+
+    **Cách sửa:** Ghi \(u_1,q,|q|\) trước, chỉ dùng công thức nếu \(|q|<1\). Phân biệt **số hạng tiến về 0** và **tổng riêng tiến về một tổng hữu hạn**.
+
+    ### 4.5. Quên dấu âm của công bội
+
+    **Dấu hiệu:** Dùng \(q=1/2\) cho tổng \(6-3+\frac32-\frac34+\cdots\) và tính thành 12.
+
+    **Vì sao sai:** Công bội thật bằng \(-1/2\), nên \(1-q=3/2\), tổng là 4.
+
+    **Cách sửa:** Tính \(q=u_2/u_1\) có dấu rồi dùng \(S=u_1/(1-q)\); kiểm ba tổng riêng đầu với kết quả dự đoán.
+
+    ### 4.6. Coi vô cực là một số hoặc bỏ điều kiện dấu
+
+    **Dấu hiệu:** Viết \(\infty/\infty=1\), hoặc từ \(|u_n|\to+\infty\) tự kết luận \(u_n\to+\infty\).
+
+    **Vì sao sai:** \(+\infty,-\infty\) là cách mô tả vượt mọi ngưỡng, không phải số thực. Dãy \((-1)^nn\) đổi dấu nên không tiến về một trong hai phía.
+
+    **Cách sửa:** Dùng bất đẳng thức, so sánh hoặc chuẩn hóa phân thức, kiểm **dấu từ một chỉ số đủ lớn**, rồi mới kết luận chiều của giới hạn.
+
+    **Học tiếp:** [Core và Luyện tập Bài 15](luyen-tap.md) · [Tự luận Chương V](../../../thu-vien/tu-luan-g11-chuong-v.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn đối chiếu văn bản: SGK Toán 11 Kết nối tri thức với cuộc sống, tập một, Bài 15 “Giới hạn của dãy số”, trang in 104–110, tham chiếu bản đọc số hóa SGKVN và mục tiêu nội dung SGK. Bốn mục gốc: Giới hạn hữu hạn của dãy số; Định lí về giới hạn hữu hạn của dãy số; Tổng của cấp số nhân lùi vô hạn; Giới hạn vô cực của dãy số. Hình \(1/n\) dùng SVG canonical đã có; hình tổng riêng cấp số nhân là SVG bổ sung của AUTHORING, cả hai dùng chung giữa hai tab. Chưa kiểm trực quan đầy đủ các trang SGK in và chưa có verdict NotebookLM cho snapshot này.</p>
