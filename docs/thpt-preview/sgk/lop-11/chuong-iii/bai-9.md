@@ -262,4 +262,4 @@
 
     **Học tiếp:** [Core và Luyện tập Bài 9](luyen-tap.md) · [Tự luận Chương III](../../../thu-vien/tu-luan-g11-chuong-iii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 
-    <p class="thpt-r4-footnote">Nguồn SGK Kết nối tri thức Toán 11 tập một, Bài 9 trang in 62–67, đối chiếu văn bản PDF gốc theo mục: Số trung bình; Trung vị; Tứ phân vị; Mốt. Hình tích lũy và phân vị SVG dùng chung ở hai tab. Chưa xác nhận đã kiểm trực quan đủ mọi trang in do screenshot web không tải được.</p>
+    <p class="thpt-r4-footnote">Nguồn SGK Kết nối tri thức Toán 11 tập một, Bài 9 trang in 62–67, đối chiếu văn bản bản PDF số hóa nội dung SGK theo mục: Số trung bình; Trung vị; Tứ phân vị; Mốt. Hình tích lũy và phân vị SVG dùng chung ở hai tab. Chưa xác nhận đã kiểm trực quan đủ mọi trang in do screenshot web không tải được.</p>
