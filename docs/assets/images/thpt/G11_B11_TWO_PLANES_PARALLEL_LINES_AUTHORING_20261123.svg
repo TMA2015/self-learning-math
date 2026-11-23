@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440" role="img" aria-labelledby="title desc">
+<title id="title">Hai mặt phẳng có giao tuyến song song với hai đường thẳng lần lượt nằm trên mỗi mặt</title>
+<desc id="desc">Hai mặt phẳng P và Q phân biệt cắt nhau theo đường thẳng c đứng ở giữa. Đường thẳng a nằm trong mặt P bên trái; đường thẳng b nằm trong mặt Q bên phải. Cả a và b cùng song song với c. Không thể suy kết quả nếu các mặt không cắt nhau.</desc>
+<rect width="820" height="440" rx="18" fill="#fff"/>
+<text x="410" y="37" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#193353">Hai mặt phẳng giao nhau theo đường c song song với a, b</text>
+<polygon points="100,105 401,83 401,349 100,318" fill="#d9f4ea" stroke="#429078" stroke-width="2.3"/>
+<polygon points="401,83 700,137 700,320 401,349" fill="#dfedfc" stroke="#5f8dbc" stroke-width="2.3"/>
+<line x1="401" y1="74" x2="401" y2="364" stroke="#6e4799" stroke-width="4"/>
+<line x1="253" y1="114" x2="253" y2="305" stroke="#207b54" stroke-width="3.5"/>
+<line x1="550" y1="127" x2="550" y2="327" stroke="#2b67a5" stroke-width="3.5"/>
+<g font-family="Arial,sans-serif" font-weight="700" font-size="25">
+<text x="265" y="215" fill="#207b54">a</text>
+<text x="562" y="220" fill="#2b67a5">b</text>
+<text x="416" y="210" fill="#6e4799">c</text>
+<text x="144" y="289" fill="#23674f">(P)</text>
+<text x="633" y="284" fill="#315b88">(Q)</text>
+</g>
+<text x="410" y="402" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#425670">a ⊂ (P), b ⊂ (Q), c = (P) ∩ (Q); các đường a, b, c song song.</text>
+</svg>
