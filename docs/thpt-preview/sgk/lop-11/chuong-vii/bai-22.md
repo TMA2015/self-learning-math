@@ -102,3 +102,139 @@
     | Chéo nhau | Góc của hai phương dời qua một điểm | Có, nếu \(90^\circ\) |
 
     **Quy trình tự kiểm:** Tìm quan hệ song song thật, thay bằng đường qua điểm thuận lợi, tính góc qua tam giác hoặc hình đặc biệt, rồi so với \(90^\circ\). Không khẳng định vuông góc vì trông vuông trên giấy.
+
+=== "Ví dụ"
+
+    ### 3.1. Phân biệt góc của hai tia và hai đường
+
+    **Đề bài.** Hai tia có chung gốc tạo góc \(125^\circ\). Tính góc giữa hai đường thẳng chứa hai tia đó và giải thích tại sao không lấy \(125^\circ\).
+
+    **Phân tích:** Góc giữa các **đường** là góc không tù; một đường không có chiều, nên có thể thay một tia bằng tia đối và lấy góc bù.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Hai góc kề bù là \(125^\circ\) và \(180^\circ-125^\circ=55^\circ\). Góc giữa hai đường thẳng phải thuộc \([0^\circ,90^\circ]\), vì vậy kết quả là \(55^\circ\).</p></div>
+
+    **Kiểm lại:** \(55^\circ\) không tù; nếu hai tia tạo góc \(90^\circ\) thì góc hai đường vẫn là \(90^\circ\).
+
+    ### 3.2. Cạnh đứng và cạnh đáy của hình lập phương
+
+    **Đề bài.** Trong hình lập phương \(ABCD.A'B'C'D'\), tính góc \((AA',CD)\).
+
+    **Phân tích:** Hai đường không gặp nhau. Đáy là hình vuông nên \(CD\parallel AB\); cạnh đứng \(AA'\) vuông góc với \(AB\). Đây là đường thay thế hợp lệ qua \(A\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Vì \(CD\parallel AB\), \((AA',CD)=(AA',AB)\). Hai cạnh \(AA'\) và \(AB\) của hình lập phương gặp nhau tại \(A\) và vuông góc, nên \((AA',CD)=90^\circ\).</p></div>
+
+    **Kiểm lại:** Kết luận từ hai **phương song song và cạnh vuông góc**, không phải từ việc hai nét trông vuông trên bản vẽ.
+
+    ### 3.3. Hai đường chéo mặt khác nhau của hình lập phương
+
+    **Đề bài.** Trong hình lập phương \(ABCD.A'B'C'D'\), tính \((A'C',BD)\).
+
+    **Phân tích:** \(A'C'\) là đường chéo mặt trên, song song đường chéo \(AC\) tương ứng của mặt đáy. Đáy hình vuông có hai đường chéo \(AC,BD\) vuông góc.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Do hai mặt đáy song song và tương ứng, \(A'C'\parallel AC\). Vì \(ABCD\) là hình vuông nên \(AC\perp BD\). Suy ra \((A'C',BD)=(AC,BD)=90^\circ\).</p></div>
+
+    **Kiểm lại:** \(A'C'\) và \(BD\) thuộc hai mặt phẳng song song nên không cắt nhau; vẫn vuông góc theo góc giữa hai phương.
+
+    ### 3.4. Góc 60 độ trong hình lập phương
+
+    **Đề bài.** Với hình lập phương \(ABCD.A'B'C'D'\) cạnh \(a>0\), tính góc giữa \(AC\) và \(DC'\).
+
+    **Phân tích:** \(DC'\parallel AB'\) vì các đoạn này cùng có hướng theo một cạnh đáy và một cạnh đứng. Do đó bài toán đưa về \((AC,AB')\). Chọn tam giác \(AB'C\) để tính góc tại \(A\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Trong hình lập phương, \(DC'\parallel AB'\). Ba cạnh \(AC,AB',B'C\) đều là đường chéo của các hình vuông cạnh \(a\), nên cùng dài \(a\sqrt2\). Tam giác \(AB'C\) đều, vì vậy \(\angle CAB'=60^\circ\). Suy ra \((AC,DC')=(AC,AB')=60^\circ\).</p></div>
+
+    **Kiểm lại:** Ba đoạn cùng dài \(a\sqrt2\) là **cạnh của tam giác trong không gian**; không phải cứ thấy ba đoạn vẽ tương đương mới được kết luận đều. Dấu góc không vượt \(90^\circ\).
+
+    ### 3.5. Vuông góc nhưng hai đường chéo nhau
+
+    **Đề bài.** Hình hộp chữ nhật \(ABCD.A'B'C'D'\): chứng minh \(AB\perp CC'\), xác định vị trí tương đối của hai đường.
+
+    **Phân tích:** \(AB\) là cạnh nằm trong đáy, \(CC'\) là cạnh đứng khác đỉnh; thay \(CC'\) bằng \(AA'\parallel CC'\) để có hai đường chung điểm \(A\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Vì hình hộp chữ nhật, \(AB\perp AA'\) và \(CC'\parallel AA'\). Do đó \((AB,CC')=(AB,AA')=90^\circ\), tức \(AB\perp CC'\). Hai đường \(AB,CC'\) không song song, không cắt nhau, nên <strong>chéo nhau</strong>.</p></div>
+
+    **Kiểm lại:** Không được nói “hai đường vuông góc nên chúng cắt tại một điểm”: trong không gian, quan hệ vuông góc là quan hệ giữa hai phương.
+
+    ### 3.6. Khi nào hai đường chéo ở hai mặt song song vuông góc?
+
+    **Đề bài.** Cho hình hộp \(ABCD.A'B'C'D'\) có đáy \(ABCD\) là hình bình hành không suy biến. Chứng minh \(AC\perp B'D'\) khi và chỉ khi đáy là hình thoi.
+
+    **Phân tích:** \(B'D'\parallel BD\); do đó cần chứng minh điều kiện vuông góc của hai đường chéo \(AC,BD\) của **hình bình hành**. Với hình bình hành, hai đường chéo cắt nhau tại trung điểm \(O\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Vì \(B'D'\parallel BD\), \(AC\perp B'D'\iff AC\perp BD\). Nếu đáy là hình thoi thì hai đường chéo vuông góc. Ngược lại, nếu \(AC\perp BD\), giao điểm \(O\) là trung điểm cả hai đường chéo, nên trong hai tam giác vuông \(AOB,AOD\) ta có \(OA\) chung và \(OB=OD\); do đó \(AB=AD\). Hình bình hành có hai cạnh kề bằng nhau là hình thoi. Vậy điều kiện là cần và đủ.</p></div>
+
+    **Kiểm lại:** Không nhầm **hình bình hành** với **hình thoi**. Nếu đáy chỉ là hình chữ nhật không vuông, hai đường chéo thường không vuông góc.
+
+    ### 3.7. Hai cạnh tương ứng của lăng trụ tam giác đều
+
+    **Đề bài.** Lăng trụ \(ABC.A'B'C'\) có hai đáy là tam giác đều. Tính \((AB,B'C')\).
+
+    **Phân tích:** Chọn một cạnh tại đáy song song \(B'C'\): theo tính chất lăng trụ, \(B'C'\parallel BC\). Khi đó góc giữa hai đường được tính trên tam giác đều \(ABC\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \((AB,B'C')=(AB,BC)\). Vì \(ABC\) là tam giác đều, góc giữa hai **đường thẳng** \(AB,BC\) bằng góc nhọn \(\angle ABC=60^\circ\). Vậy kết quả \(60^\circ\).</p></div>
+
+    **Kiểm lại:** Nếu xét vectơ \(\overrightarrow{AB}\) và \(\overrightarrow{BC}\) có thể gặp góc \(120^\circ\); góc **hai đường** được lấy \(60^\circ\).
+
+    ### 3.8. Góc cạnh bên kim tự tháp Kheops (SGK)
+
+    **Đề bài.** Mô hình kim tự tháp \(S.ABCD\) có đáy vuông cạnh \(230\) m và các cạnh bên \(219\) m. Tính gần đúng góc giữa đường \(SC\) và đường \(AB\), làm tròn đến \(0{,}1^\circ\).
+
+    **Phân tích:** Hai đường ban đầu không nhất thiết cắt. Thay \(AB\) bằng \(CD\parallel AB\), rồi xét tam giác cân \(SCD\) biết ba cạnh. Sử dụng định lí côsin cho góc ở \(C\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \((SC,AB)=(SC,CD)=\angle SCD\). Theo định lí côsin trong tam giác \(SCD\), \(\cos\angle SCD=\dfrac{SC^2+CD^2-SD^2}{2SC\cdot CD}=\dfrac{230}{2\cdot219}=\dfrac{115}{219}\). Do đó \((SC,AB)=\arccos(115/219)\approx58{,}3^\circ\).</p></div>
+
+    **Kiểm lại:** \(115/219\) nằm trong \((0,1)\), phù hợp góc nhọn. Dùng \(230/219>1\) làm cos sẽ vô lí; luôn kiểm công thức và các cạnh trong định lí côsin.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Cứ vuông góc thì phải cắt nhau
+
+    **Dấu hiệu:** Không chấp nhận \(AB\perp CC'\) trong hình hộp vì hai cạnh không gặp nhau.
+
+    **Vì sao sai:** Góc hai đường trong không gian xác định từ **hai phương song song được đưa về một điểm**, nên hai đường vuông góc có thể chéo nhau.
+
+    **Cách sửa:** Thay \(CC'\) bằng \(AA'\parallel CC'\), rồi kiểm \(AB\perp AA'\). Phân biệt “vuông góc” và “cắt nhau”.
+
+    ### 4.2. Lấy góc tù giữa các tia thay cho góc hai đường
+
+    **Dấu hiệu:** Trả \(125^\circ\) là góc giữa hai đường thẳng.
+
+    **Vì sao sai:** Góc giữa đường được quy ước không tù: từ \(0^\circ\) đến \(90^\circ\).
+
+    **Cách sửa:** Nếu góc từ hai tia đã chọn là \(125^\circ\), lấy góc bù \(55^\circ\); kiểm kết quả không vượt \(90^\circ\).
+
+    ### 4.3. Thấy hai đoạn song song trên giấy là đủ để suy góc
+
+    **Dấu hiệu:** Đo đường trên hình phối cảnh, dùng kết quả như góc thật của khối.
+
+    **Vì sao sai:** Hình chiếu làm thay đổi độ dài/góc; chỉ các quan hệ song song/vuông góc có căn cứ hình học mới cho phép chuyển phương.
+
+    **Cách sửa:** Ghi rõ \(CD\parallel AB\), \(CC'\parallel AA'\) hoặc định lí hình hộp, rồi tính trên tam giác có độ dài đã biết.
+
+    ### 4.4. Hai đường cùng vuông góc đường thứ ba thì song song
+
+    **Dấu hiệu:** Từ \(a\perp c,b\perp c\), kết luận \(a\parallel b\) trong không gian.
+
+    **Vì sao sai:** Ví dụ trục \(Ox\perp Oz,Oy\perp Oz\), nhưng \(Ox\perp Oy\). Các đường cùng vuông góc một phương có thể có nhiều hướng.
+
+    **Cách sửa:** Muốn kết luận song song phải có quan hệ riêng đủ chứng minh; không áp máy móc tính chất hình học phẳng khi thiếu giả thiết.
+
+    ### 4.5. Hình bình hành nào cũng có đường chéo vuông góc
+
+    **Dấu hiệu:** Với đáy hình bình hành bất kì, kết luận ngay \(AC\perp B'D'\).
+
+    **Vì sao sai:** \(B'D'\parallel BD\), nên điều kiện cần là \(AC\perp BD\); với hình bình hành, điều này đúng **khi và chỉ khi** đáy là hình thoi.
+
+    **Cách sửa:** Kiểm cạnh kề bằng nhau hoặc chứng minh trực tiếp hai đường chéo đáy vuông góc, rồi mới chuyển qua \(B'D'\).
+
+    ### 4.6. Dùng sai tam giác hoặc mẫu số trong định lí côsin
+
+    **Dấu hiệu:** Tính góc kim tự tháp bằng \(230/219\) như cos góc cạnh bên–cạnh đáy.
+
+    **Vì sao sai:** \(230/219>1\) không thể là cos một góc. Chỉ biết hai cạnh là chưa đủ nếu bỏ cạnh thứ ba và không dựng đúng tam giác \(SCD\).
+
+    **Cách sửa:** Viết \((SC,AB)=(SC,CD)=\angle SCD\), xác định \(SC=SD=219,CD=230\), dùng \(\cos\angle SCD=(SC^2+CD^2-SD^2)/(2SC\cdot CD)=230/438\).
+
+    **Học tiếp:** [Core/Luyện tập Bài 22](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn S1: SGK Toán 11 Kết nối tri thức với cuộc sống, tập hai, Bài 22 “Hai đường thẳng vuông góc”, trang in 27–30, đúng hai mục chính: “Góc giữa hai đường thẳng” và “Hai đường thẳng vuông góc”; bản PDF số hóa có văn bản về HĐ1/HĐ2, Ví dụ 1–2, vận dụng Kheops. Đã đọc SGK số hóa, nhưng kiểm screenshot ảnh trang PDF và offset trang in↔chỉ số PDF vẫn SOURCE_VISUAL_HOLD. Hình dời phương cũ đã được tái sử dụng nguyên vẹn; bổ sung hình hộp và mô hình kim tự tháp khi thiếu minh họa cụ thể, đặt sát hướng dẫn đọc hình ở hai tab đầu. Không sửa Core/Luyện tập, Tự kiểm tra hoặc dữ liệu đánh giá.</p>
