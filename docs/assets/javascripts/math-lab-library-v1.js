@@ -1,4 +1,22 @@
 /* Math Lab catalog UI only. No assessment, auth, network or learner progress. */
-(()=>{"use strict";const root=document.querySelector("[data-math-lab-catalog]");if(!root)return;const grid=root.querySelector("[data-ml-grid]"),search=root.querySelector("[data-ml-search]"),counter=root.querySelector("[data-ml-count]"),buttons=[...root.querySelectorAll("[data-ml-mode]")],cards=[...root.querySelectorAll("[data-ml-card]")],subjects={algebra:"Đại số và hàm số",calculus:"Lượng giác và giải tích",geometry:"Hình học và vectơ",probability:"Tổ hợp, xác suất và thống kê"},idx={algebra:0,calculus:1,geometry:2,probability:3};let state={mode:"topic",q:""};try{const old=JSON.parse(sessionStorage.getItem("slm-mathlab-ui")||"null");if(old&&(old.mode==="topic"||old.mode==="grade")&&typeof old.q==="string"){state=old;state.q=state.q.slice(0,100);}}catch(_e){}search.value=state.q;
+(()=>{"use strict";
+ // Compatibility for all 25 previously published /models/<slug>/ links.
+ // The approved standalone asset already contains its full viewport layout.
+ // Leave the restricted iframe in the old Markdown as JS-off fallback only.
+ // Never lift its sandbox to allow-same-origin just to measure height.
+ const legacy=document.querySelector("[data-math-lab-model]");
+ if(legacy){
+  const id=legacy.getAttribute("data-math-lab-model")||"";
+  const frame=legacy.querySelector('.ml-frame iframe[sandbox="allow-scripts"]');
+  if(/^SLM-(?:TOP[0-9]{2}|SGK-G11-B0[34])-[A-Z0-9-]+$/.test(id)&&frame){
+   const expected=new URL("../../../../assets/math-lab/models/"+id+".html",location.href);
+   const actual=new URL(frame.getAttribute("src")||"",location.href);
+   if(expected.href===actual.href&&expected.origin===location.origin){
+    location.replace(expected.href);return;
+   }
+  }
+  return;
+ }
+ const root=document.querySelector("[data-math-lab-catalog]");if(!root)return;const grid=root.querySelector("[data-ml-grid]"),search=root.querySelector("[data-ml-search]"),counter=root.querySelector("[data-ml-count]"),buttons=[...root.querySelectorAll("[data-ml-mode]")],cards=[...root.querySelectorAll("[data-ml-card]")],subjects={algebra:"Đại số và hàm số",calculus:"Lượng giác và giải tích",geometry:"Hình học và vectơ",probability:"Tổ hợp, xác suất và thống kê"},idx={algebra:0,calculus:1,geometry:2,probability:3};let state={mode:"topic",q:""};try{const old=JSON.parse(sessionStorage.getItem("slm-mathlab-ui")||"null");if(old&&(old.mode==="topic"||old.mode==="grade")&&typeof old.q==="string"){state=old;state.q=state.q.slice(0,100);}}catch(_e){}search.value=state.q;
 function render(){const q=state.q.trim().toLocaleLowerCase("vi");const visible=cards.filter(c=>!q||c.textContent.toLocaleLowerCase("vi").includes(q)||c.dataset.grade===q||subjects[c.dataset.group].toLocaleLowerCase("vi").includes(q));visible.sort((a,b)=>state.mode==="topic"?(idx[a.dataset.group]-idx[b.dataset.group]||Number(a.dataset.grade)-Number(b.dataset.grade)||Number(a.dataset.order)-Number(b.dataset.order)):(Number(a.dataset.grade)-Number(b.dataset.grade)||Number(a.dataset.order)-Number(b.dataset.order)));grid.replaceChildren();let prev="";for(const card of visible){const k=state.mode==="topic"?card.dataset.group:card.dataset.grade;if(k!==prev){const h=document.createElement("h2");h.className="ml-section-head";h.textContent=state.mode==="topic"?subjects[k]:"Lớp "+k+" · Gợi ý nội dung";grid.appendChild(h);prev=k;}grid.appendChild(card);}if(!visible.length){const p=document.createElement("p");p.textContent="Không tìm thấy mô hình. Hãy thử từ khóa khác.";grid.appendChild(p);}counter.textContent=visible.length+" / 25 mô hình";buttons.forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mlMode===state.mode)));try{sessionStorage.setItem("slm-mathlab-ui",JSON.stringify(state));}catch(_e){}}buttons.forEach(b=>b.addEventListener("click",()=>{state.mode=b.dataset.mlMode;render();}));search.addEventListener("input",()=>{state.q=search.value;render();});render();
 })();
