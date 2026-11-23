@@ -33,6 +33,10 @@ hide:
 
 # Kiến thức
 
+<!-- TOPIC_AUTHORING: PLAN22-21; CANDIDATE_R04; LEARNING_PATH: TOPIC; CONTENT_READY: AUTHORING_PREFLIGHT; RUNTIME_TOPIC_ID: OWNER_UNASSIGNED -->
+
+<!-- TOP21_R05_EDITORIAL_SOURCE_EQUIVALENT; ORIGINAL_R04_BLOB: 2fa6557286aba05dd0eea972d4c4ac68371842d7; OWNER_HELD_RD1_NOT_PUBLIC; NO_NEW_CANONICAL_ID; AUTHORING_ONLY -->
+
 Khi biết thêm thông tin, xác suất của một biến cố có thể thay đổi. Từ việc chỉ xét những kết quả còn phù hợp, em sẽ hiểu xác suất có điều kiện, cách nhân xác suất trên một đường đi, cách cộng các nguồn rời nhau và cách suy ngược thông tin bằng Bayes. Mỗi kiến thức được hình thành từ một tình huống cụ thể, sau đó có ví dụ đầy đủ và bài Vận dụng.
 
 Những kiến thức cần thiết về không gian mẫu, biến cố, giao của hai biến cố, tính đồng khả năng và quy tắc nhân độc lập được nhắc lại ngay trong bài; không phải học xong Chuyên đề 20 mới có thể bắt đầu.
