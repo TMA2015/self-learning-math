@@ -56,36 +56,61 @@ with sync_playwright() as pw:
       assert page.locator('[data-ml-mode="grade"]').get_attribute("aria-pressed")=="true"
       page.locator("[data-ml-search]").fill("Bayes")
       assert page.locator("[data-ml-card]").count()==1,(browser_name,width,"search")
+      # The old deep link now upgrades into a FULL browser document,
+      # not an iframe with a separately scrolling viewport.
       page.goto(base+"/thpt-preview/math-lab/models/slm-top21-bayes-tree-r01/",wait_until="domcontentloaded")
-      assert page.locator("[data-math-lab-model]").count()==1
-      page.locator(".ml-frame iframe").wait_for()
-      assert page.locator(".ml-frame iframe").get_attribute("sandbox")=="allow-scripts"
+      page.wait_for_url(base+"/assets/math-lab/models/SLM-TOP21-BAYES-TREE-R01.html",timeout=15000)
+      assert page.locator("iframe").count()==0,(browser_name,width,"legacy URL still embeds frame")
       page.goto(base+"/thpt-preview/math-lab/",wait_until="domcontentloaded")
       assert page.locator('[data-ml-mode="grade"]').get_attribute("aria-pressed")=="true",(browser_name,width,"view preserved")
       assert page.locator("[data-ml-search]").input_value()=="Bayes",(browser_name,width,"search preserved")
       page.locator("[data-ml-search]").fill("")
+      # Every library card must be a direct link to the signed, full-page asset.
       for row in rows:
         model_id=row[0]
         slug=model_id.lower()
-        page.goto(base+"/thpt-preview/math-lab/models/"+slug+"/",wait_until="domcontentloaded")
-        frame=page.locator(".ml-frame iframe")
-        frame.wait_for()
-        assert frame.get_attribute("sandbox")=="allow-scripts",(browser_name,width,model_id,"sandbox")
-        model_frame=next((fr for fr in page.frames if fr.url.endswith(model_id+".html")),None)
-        assert model_frame is not None,(browser_name,width,model_id,"iframe asset not loaded")
-        model_frame.locator("body").wait_for()
-        assert model_frame.locator("button,input,select").count()>0,(browser_name,width,model_id,"no controls")
-        is_isolated=model_frame.evaluate("() => { try { return !Boolean(window.parent.document.body); } catch(e) { return true; } }")
-        assert is_isolated,(browser_name,width,model_id,"parent DOM accessible")
-        assert page.locator(".ml-back").count()==2,(browser_name,width,model_id,"back links")
-        assert page.locator(".ml-frame iframe").evaluate("(e) => e.getBoundingClientRect().width <= document.documentElement.clientWidth + 1"),(browser_name,width,model_id,"frame overflow")
+        expected="../../assets/math-lab/models/"+model_id+".html"
+        card=page.locator('[data-ml-card][href="'+expected+'"]')
+        assert card.count()==1,(browser_name,width,model_id,"full-page card missing")
+      # Navigation from the catalog is one click; browser Back returns to it.
+      page.locator('[data-ml-card][href="../../assets/math-lab/models/SLM-TOP21-BAYES-TREE-R01.html"]').click()
+      page.wait_for_url(base+"/assets/math-lab/models/SLM-TOP21-BAYES-TREE-R01.html",timeout=15000)
+      assert len(page.frames)==1,(browser_name,width,"catalog link inserted iframe")
+      page.go_back(wait_until="domcontentloaded")
+      assert page.locator("[data-ml-card]").count()==25,(browser_name,width,"Back to catalog broken")
+      if browser_name=="chromium" and width in (390,820,1440):
+        page.goto(base+"/thpt-preview/home/",wait_until="domcontentloaded")
+        launcher=page.locator("[data-thpt-r4-launcher]")
+        launcher.wait_for()
+        assert "5 + 1" in launcher.inner_text(),(browser_name,width,"Golden 5+1 changed")
+        launcher.click()
+        dialog=page.locator("[data-thpt-r4-shortcut-dialog]")
+        assert dialog.locator('[data-thpt-math-lab-shortcut="1"]').count()==1,(browser_name,width,"Math Lab shortcut missing")
+        assert dialog.locator('nav[aria-label="Năm lối tắt chính Toán THPT"] a').count()==5,(browser_name,width,"Five main groups changed")
+        assert dialog.locator('[data-thpt-math-lab-shortcut="1"]').get_attribute("href").endswith("/thpt-preview/math-lab/"),(browser_name,width,"Math Lab shortcut wrong URL")
+      for row in rows:
+        model_id=row[0]
+        # Open approved standalone asset in the TOP browser document:
+        # no nested frame/window, no arbitrary iframe height cap.
+        page.goto(base+"/assets/math-lab/models/"+model_id+".html",wait_until="domcontentloaded")
+        page.locator("body").wait_for()
+        assert len(page.frames)==1,(browser_name,width,model_id,"nested frame found")
+        assert page.locator("button,input,select").count()>0,(browser_name,width,model_id,"no controls")
+        box=page.evaluate("""() => {
+          const d=document.documentElement, max=Math.max(0,d.scrollHeight-innerHeight);
+          scrollTo(0,max);
+          return {viewport:innerWidth,scrollWidth:d.scrollWidth,max,y:scrollY,top:window===window.top};
+        }""")
+        assert box["top"],(browser_name,width,model_id,"not top-level")
+        assert box["scrollWidth"]<=box["viewport"]+3,(browser_name,width,model_id,"horizontal document overflow",box)
+        assert box["max"]<5 or box["y"]>=box["max"]-5,(browser_name,width,model_id,"cannot reach model bottom",box)
         if browser_name=="chromium" and model_id in ("SLM-TOP21-BAYES-TREE-R01","SLM-TOP06-UNIT-CIRCLE-01") and width in (390,1440):
-          page.screenshot(path=str(SHOTS/f"model-{model_id.lower()}-{width}.png"),animations="disabled")
+          page.screenshot(path=str(SHOTS/f"model-fullpage-{model_id.lower()}-{width}.png"),animations="disabled",full_page=True)
       if errors:
         failures.append((browser_name,width,errors[:6]))
-      print(f"PASS {browser_name} {width}px catalog filters + 25 frame pages / isolation")
+      print(f"PASS {browser_name} {width}px 25 standalone full-page assets, legacy redirects, one-scroll and Golden 5+1")
       context.close()
     browser.close()
 server.shutdown()
 assert not failures, "Unexpected JS exceptions: "+repr(failures)
-print("PASS Math Lab browser 2 engines x 4 widths x 25 models = 200 frame checks")
+print("PASS Math Lab browser 2 engines x 4 widths x 25 models = 200 full-page checks")

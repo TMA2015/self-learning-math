@@ -25,7 +25,6 @@ jobs:
       - name: Enforce V2 source/receipt SHA of any new READY packet even when no site deployment
         env:
           BASE_SHA: ${{ github.event.before }}
-          HEAD_SHA: ${{ github.sha }}
         run: node scripts/test-thpt-handoff-gate-v2.cjs
       - name: Assert safe push-scope classifier and classify FULL main push
         id: scope
@@ -56,7 +55,7 @@ jobs:
   deploy:
     needs: release-scope
     # The large inherited site-wide regression lane is for shared/unknown changes only.
-    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' }}
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' && needs.release-scope.outputs.impact != 'SCOPED_MATH_LAB_FULLPAGE' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -678,4 +677,51 @@ jobs:
           print("PASS W5 public-only 35 same-ID replays, no official assessment or Mastery")
           PY
       - name: Publish verified ONE combined site to existing GitHub Pages
+        run: ghp-import -n -p -f site
+
+  deploy-scoped-math-lab-fullpage:
+    name: Publish 25 unframed Math Lab documents after source and 200 browser checks
+    needs: release-scope
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_MATH_LAB_FULLPAGE' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reclassify exact owner-scoped production diff and protect source and assessment
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+          BASE_SHA: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/math-lab-fullpage-scope.txt"
+          node scripts/test-thpt-release-impact.cjs --self-test
+          env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/math-lab-fullpage-scope.txt" > "$RUNNER_TEMP/math-lab-fullpage-classified.txt"
+          grep -Fxq "impact=SCOPED_MATH_LAB_FULLPAGE" "$RUNNER_TEMP/math-lab-fullpage-classified.txt"
+          node scripts/test-thpt-release-queue.cjs
+          node scripts/test-thpt-handoff-gate-v2.cjs
+          node scripts/test-thpt-push-deploy-scope.cjs --self-test
+          node --check docs/assets/javascripts/math-lab-library-v1.js
+          node scripts/test-math-lab-25-release-intake.cjs
+      - name: Strict builds and 25 source-exact model assets in BOTH existing site variants
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+          node scripts/test-math-lab-25-release-intake.cjs --built
+          node scripts/assemble-thpt-site.cjs
+      - name: Actual full-page Chromium and WebKit at 320/390/820/1440 and Golden 5+1
+        run: python scripts/test-math-lab-25-browser.py
+      - name: Keep unrelated candidate publication boundary
+        run: node scripts/guard-w9-candidate-publication-r1.js --deploy
+      - name: Publish exact verified single website to existing GitHub Pages
         run: ghp-import -n -p -f site
