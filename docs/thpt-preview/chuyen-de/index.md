@@ -44,5 +44,4 @@
 <a class="library-topic-tile" data-thpt-filter-item data-thpt-topic="22" data-thpt-filter-text="chuyên đề 22 thống kê dữ liệu trung bình phương sai độ lệch chuẩn" href="cd22/kien-thuc/"><span class="library-topic-number">22</span><span class="library-topic-name">Thống kê mô tả và phân tích số liệu</span><span class="library-topic-link">↗</span></a>
 </div></details>
 </div>
-<p class="topic01-legacy-note"Trang <a href="ham-so/kien-thuc/">Hàm số và đồ thị (mẫu kỹ thuật cũ)</a> được giữ để không làm hỏng liên kết đã có. Mẫu này <strong>không</strong> được tính là một trong 22 Chuyên đề học liệu chính thức.</p>
 </div>
