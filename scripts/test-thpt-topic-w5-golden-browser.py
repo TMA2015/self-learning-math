@@ -43,7 +43,9 @@ def audit_visible_math(root, case: str) -> None:
       const found = [], walk = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
       const caret = /(?:\([^()\n]{1,70}\)|[A-Za-z0-9][A-Za-z0-9_]{0,20})\^(?:\{|\(|[A-Za-z0-9])/;
       const cmd = /\\(?:frac|sum|binom|sqrt|lim|operatorname|mathbb|cup|cap|mid|bar|overrightarrow)\b/;
-      const bracket = /\[[^\]\n]{0,350}(?:\\[A-Za-z]{2,}|[A-Za-z][A-Za-z0-9_]{0,20}\s*=)/;
+      // A statistical interval [10;20) followed by prose n=20 is NOT TeX.
+      // Require both an expression-like start and the matching closing ].
+      const bracket = /\[\s*(?:\\[A-Za-z]{2,}|[A-Za-z][A-Za-z0-9_]{0,20}\s*=|\([^()\n]{1,70}\)\^|P\()[^\]\n]{0,350}\]/;
       while (walk.nextNode()) {
         const t = walk.currentNode, p = t.parentElement;
         if (!p || p.closest('.arithmatex,mjx-container,code,pre,script,style,textarea,svg,details:not([open]),[hidden]')) continue;
