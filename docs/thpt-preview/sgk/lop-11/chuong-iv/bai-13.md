@@ -102,7 +102,7 @@
 
     ### 2.1. Hai mặt phẳng song song
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hai mặt phẳng song song</strong><p>Hai mặt phẳng \((P),(Q)\) gọi là <strong>song song</strong> nếu chúng **không có điểm chung**. Viết \((P)\parallel(Q)\). Hai mặt phẳng phân biệt có điểm chung thì cắt nhau theo **một đường thẳng**; hai mặt trùng nhau không gọi song song.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hai mặt phẳng song song</strong><p>Hai mặt phẳng \((P),(Q)\) gọi là <strong>song song</strong> nếu chúng <strong>không có điểm chung</strong>. Viết \((P)\parallel(Q)\). Hai mặt phẳng phân biệt có điểm chung thì cắt nhau theo <strong>một đường thẳng</strong>; hai mặt trùng nhau không gọi song song.</p></div>
 
     **Nhận biết:** Ba vị trí là **trùng nhau**, **cắt nhau**, **song song**. Không dùng hình bình hành hữu hạn được vẽ để đoán quan hệ của hai mặt phẳng vô hạn.
 
@@ -110,9 +110,9 @@
 
     ### 2.2. Điều kiện và tính chất của hai mặt phẳng song song
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện — Dấu hiệu hai mặt phẳng song song</strong><p>Nếu mặt phẳng \((P)\) chứa **hai đường thẳng cắt nhau** \(a,b\) và \(a\parallel(Q)\), \(b\parallel(Q)\), thì \((P)\parallel(Q)\). Một đường song song \((Q)\), hoặc hai đường song song nhau, **không đủ** thay cho hai đường cắt nhau.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện — Dấu hiệu hai mặt phẳng song song</strong><p>Nếu mặt phẳng \((P)\) chứa <strong>hai đường thẳng cắt nhau</strong> \(a,b\) và \(a\parallel(Q)\), \(b\parallel(Q)\), thì \((P)\parallel(Q)\). Một đường song song \((Q)\), hoặc hai đường song song nhau, <strong>không đủ</strong> thay cho hai đường cắt nhau.</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Mặt phẳng song song duy nhất qua điểm ngoài mặt</strong><p>Qua điểm \(A\notin(P)\), có **một và chỉ một** mặt phẳng đi qua \(A\) và song song với \((P)\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Mặt phẳng song song duy nhất qua điểm ngoài mặt</strong><p>Qua điểm \(A\notin(P)\), có <strong>một và chỉ một</strong> mặt phẳng đi qua \(A\) và song song với \((P)\).</p></div>
 
     **Nhận xét suy ra từ tính duy nhất:** Nếu hai mặt phẳng **phân biệt** cùng song song với một mặt phẳng thứ ba, thì chúng song song nhau. Đây là câu hỏi/hệ quả của SGK, không được đóng nhãn thành một “Tính chất” riêng mới. Nếu hai mặt có điểm chung, tính duy nhất buộc chúng trùng nhau.
 
@@ -122,9 +122,9 @@
 
     ### 2.3. Định lí Thalès trong không gian
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lí — Thalès trong không gian</strong><p>Ba mặt phẳng **đôi một song song** chắn trên hai cát tuyến những đoạn thẳng tương ứng **tỉ lệ**. Nếu chúng cắt hai đường lần lượt tại \(A,B,C\) và \(A',B',C'\), với \(B,B'\) nằm trên mặt phẳng ở giữa, thì \(AB/BC=A'B'/B'C'\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lí — Thalès trong không gian</strong><p>Ba mặt phẳng <strong>đôi một song song</strong> chắn trên hai cát tuyến những đoạn thẳng tương ứng <strong>tỉ lệ</strong>. Nếu chúng cắt hai đường lần lượt tại \(A,B,C\) và \(A',B',C'\), với \(B,B'\) nằm trên mặt phẳng ở giữa, thì \(AB/BC=A'B'/B'C'\).</p></div>
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tỉ số các đoạn tương ứng</strong><p>Với các điểm cắt phân biệt và \(B\) nằm giữa \(A,C\), \(B'\) nằm giữa \(A',C'\): \(\displaystyle\frac{AB}{BC}=\frac{A'B'}{B'C'}\) và \(\displaystyle\frac{AB}{AC}=\frac{A'B'}{A'C'}\).</p><p>Phải giữ **đúng cặp mặt phẳng** của từng đoạn; không tráo vị trí mốc trung gian.</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tỉ số các đoạn tương ứng</strong><p>Với các điểm cắt phân biệt và \(B\) nằm giữa \(A,C\), \(B'\) nằm giữa \(A',C'\): \(\displaystyle\frac{AB}{BC}=\frac{A'B'}{B'C'}\) và \(\displaystyle\frac{AB}{AC}=\frac{A'B'}{A'C'}\).</p><p>Phải giữ <strong>đúng cặp mặt phẳng</strong> của từng đoạn; không tráo vị trí mốc trung gian.</p></div>
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B13_THALES_THREE_PLANES_AUTHORING_20261123.svg" alt="Ba mặt song song và hai cát tuyến với các đoạn tương ứng AB, BC, A phẩy B phẩy, B phẩy C phẩy"><figcaption><strong>Tra hình:</strong> \(AB\) ứng với \(A'B'\), \(BC\) ứng với \(B'C'\). Định lí không yêu cầu hai cát tuyến song song nhau.</figcaption></figure>
 
@@ -132,11 +132,11 @@
 
     ### 2.4. Hình lăng trụ và hình hộp
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình lăng trụ</strong><p>Hình lăng trụ có hai đa giác đáy tương ứng nằm trên **hai mặt phẳng song song**, các cạnh bên nối đỉnh tương ứng **đôi một song song**, các mặt bên là **hình bình hành**. Hai đa giác là mặt đáy; các đoạn nối đỉnh tương ứng là cạnh bên.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình lăng trụ</strong><p>Hình lăng trụ có hai đa giác đáy tương ứng nằm trên <strong>hai mặt phẳng song song</strong>, các cạnh bên nối đỉnh tương ứng <strong>đôi một song song</strong>, các mặt bên là <strong>hình bình hành</strong>. Hai đa giác là mặt đáy; các đoạn nối đỉnh tương ứng là cạnh bên.</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Hình lăng trụ</strong><p>Các cạnh bên **song song và bằng nhau**; các mặt bên là hình bình hành; hai đa giác đáy **song song và bằng nhau**. Không bắt buộc các cạnh bên vuông góc đáy.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Hình lăng trụ</strong><p>Các cạnh bên <strong>song song và bằng nhau</strong>; các mặt bên là hình bình hành; hai đa giác đáy <strong>song song và bằng nhau</strong>. Không bắt buộc các cạnh bên vuông góc đáy.</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình hộp</strong><p>Hình lăng trụ có đáy là **hình bình hành** gọi là **hình hộp**. Hình hộp có 6 mặt hình bình hành, 8 đỉnh, 12 cạnh; các cặp mặt đối diện **song song**.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình hộp</strong><p>Hình lăng trụ có đáy là <strong>hình bình hành</strong> gọi là <strong>hình hộp</strong>. Hình hộp có 6 mặt hình bình hành, 8 đỉnh, 12 cạnh; các cặp mặt đối diện <strong>song song</strong>.</p></div>
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B13-01_R01.svg" alt="Hình hộp có hai đáy tương ứng song song và các cạnh bên"><figcaption><strong>Tra hình:</strong> \(ABCD\) và \(A'B'C'D'\) là hai đáy; \(AA',BB',CC',DD'\) là cạnh bên, các mặt bên là hình bình hành. Không suy góc vuông từ hình vẽ.</figcaption></figure>
 
