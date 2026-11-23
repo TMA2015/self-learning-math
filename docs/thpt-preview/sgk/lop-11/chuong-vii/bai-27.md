@@ -320,3 +320,73 @@
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.12"><p><strong>Lời giải.</strong> Cả hai trường hợp \(S_{\text{đáy}}=6^2=36\text{ cm}^2\), nên \(V=36\,SO/3=12\,SO\). a) \(OA=6\sqrt2/2=3\sqrt2\) cm. Vì cạnh \(SA\) tạo góc \(60^\circ\) với đáy, \(\angle SAO=60^\circ\); \(SO=OA\tan60^\circ=3\sqrt2\cdot\sqrt3=3\sqrt6\). Suy \(V_a=36\sqrt6\text{ cm}^3\). b) Với \(M\) trung điểm \(AB\), \(OM=3\) cm, \(SM\perp AB\) trong mặt bên do tam giác \(SAB\) cân, còn \(OM\perp AB\) trong đáy, nên góc mặt bên–đáy là \(\angle SMO=45^\circ\). \(SO=OM\tan45^\circ=3\) cm; \(V_b=12\cdot3=36\text{ cm}^3\).</p></div>
 
     **Kiểm lại:** a) \(V_a=36\sqrt6\) và b) \(V_b=36\) khác nhau vì **góc cạnh bên–đáy** không phải **góc mặt bên–đáy**. Cả hai chiều cao đều dương và vuông góc đáy.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Nhầm vật thể chứa không gian với mặt bao ngoài
+
+    **Dấu hiệu:** Tính “thể tích” bằng cách cộng diện tích các mặt bao quanh rồi ghi đơn vị \(\text{cm}^2\).
+
+    **Vì sao sai:** Thể tích đo **không gian ba chiều** của khối, không phải diện tích toàn phần của các mặt. Đại lượng và đơn vị khác nhau.
+
+    **Cách sửa:** Nêu rõ “khối chóp / khối hộp / khối lăng trụ / khối chóp cụt”, chọn công thức thể tích và ghi đơn vị \(\text{cm}^3\), \(\text{m}^3\) hoặc lít sau đổi.
+
+    ### 4.2. Dùng V = Sh cho mọi khối, quên hệ số một phần ba
+
+    **Dấu hiệu:** Chóp cùng diện tích đáy \(24\text{ cm}^2\), cao \(9\) cm mà tính \(216\text{ cm}^3\).
+
+    **Vì sao sai:** \(V=Sh\) dùng cho **lăng trụ/hộp**; chóp thu dần các thiết diện về đỉnh nên chỉ bằng **\(Sh/3\)**.
+
+    **Cách sửa:** Phân loại trước: lăng trụ \(216\text{ cm}^3\), chóp \(\frac13\cdot216=72\text{ cm}^3\).
+
+    ### 4.3. Quên 1/2 diện tích đáy tam giác hoặc dùng cạnh bên làm cao
+
+    **Dấu hiệu:** Tứ diện có \(OA=a,OB=b,OC=c\) vuông góc đôi một mà ghi \(V=abc/3\).
+
+    **Vì sao sai:** Diện tích đáy tam giác vuông \(OBC\) phải là \(bc/2\), còn chiều cao vuông góc mặt \(OBC\) mới là \(OA=a\).
+
+    **Cách sửa:** Viết rõ \(S_{OBC}=bc/2\), \(OA\perp(OBC)\) do vuông góc **hai đường cắt nhau**, rồi \(V=(bc/2)\cdot a/3=abc/6\).
+
+    ### 4.4. Dùng trung bình cộng diện tích hai đáy cho chóp cụt đều
+
+    **Dấu hiệu:** \(S=36,S'=9,h=4\) mà tính \(V=h(S+S')/2=90\).
+
+    **Vì sao sai:** Đây là cách ngoại suy sai từ **hình thang phẳng**; diện tích lát cắt của chóp cụt biến đổi theo **bình phương tỉ số độ dài**.
+
+    **Cách sửa:** Chỉ với chóp cụt đều đủ điều kiện, dùng \(V=h(S+S'+\sqrt{SS'})/3=84\), có hạng \(\sqrt{SS'}=18\).
+
+    ### 4.5. Bỏ điều kiện đồng dạng và song song khi dùng công thức chóp cụt
+
+    **Dấu hiệu:** Hai mặt bất kì có diện tích \(S,S'\) và “khoảng cách \(h\)” là áp ngay \(h(S+S'+\sqrt{SS'})/3\).
+
+    **Vì sao sai:** Công thức được suy từ **hai chóp đồng dạng** do mặt cắt song song đáy; không áp dụng cho hai mặt tùy ý hoặc một khối không phải chóp cụt thích hợp.
+
+    **Cách sửa:** Kiểm khối là **chóp cụt đều**, hai đáy đồng dạng song song, đường cao vuông góc cả hai đáy trước khi dùng công thức.
+
+    ### 4.6. Coi cạnh bên xiên là chiều cao lăng trụ hoặc hình hộp
+
+    **Dấu hiệu:** Lăng trụ SGK có \(AA'=b\) mà thay luôn \(h=b\) dù chỉ biết mặt \((ACC'A')\perp(ABC)\).
+
+    **Vì sao sai:** Điều kiện **một mặt bên vuông góc đáy** chưa có nghĩa **mọi cạnh bên vuông góc đáy**; cần dựng \(A'H\perp AC\) trong mặt ấy để có \(A'H\perp(ABC)\).
+
+    **Cách sửa:** Trong Ví dụ 2 SGK, \(H\) trung điểm \(AC\) và \(A'H=\sqrt{b^2-a^2/4}\) mới là chiều cao. Với hình hộp xiên Ví dụ 3, \(h=AA'\sin45^\circ\), không phải \(AA'\).
+
+    ### 4.7. Đổi nhầm góc khi tính diện tích đáy và đường cao
+
+    **Dấu hiệu:** Với hình hộp xiên SGK, dùng \(30^\circ\) tính chiều cao hoặc lấy \(45^\circ\) làm góc kẹp của hai cạnh đáy.
+
+    **Vì sao sai:** \(\angle BAD=30^\circ\) là góc **trong mặt đáy** để tìm diện tích hình bình hành; góc \(AA'\) với đáy \(45^\circ\) mới dùng để chiếu độ dài cạnh bên lên phương pháp tuyến.
+
+    **Cách sửa:** Tách hai bước: \(S_{\text{đáy}}=8\cdot5\sin30^\circ=20\text{ cm}^2\), \(h=6\sin45^\circ=3\sqrt2\) cm, \(V=60\sqrt2\text{ cm}^3\).
+
+    ### 4.8. Lấy cạnh bên của sọt chóp cụt làm cao hoặc đổi sai lít
+
+    **Dấu hiệu:** Sọt có cạnh bên \(50\) cm, đáy vuông \(30\) cm, miệng vuông \(60\) cm, em tính \(h=50\) cm và dùng kết quả \(\text{cm}^3\) như lít.
+
+    **Vì sao sai:** Đoạn 50 cm là **cạnh xiên**; hai đỉnh tương ứng lệch ngang \(15\sqrt2\) cm. Ngoài ra \(1000\text{ cm}^3=1\) lít, không phải \(1\text{ cm}^3=1\) lít.
+
+    **Cách sửa:** Dùng \(h=\sqrt{50^2-(15\sqrt2)^2}=\sqrt{2050}\) cm, rồi \(V=2100\sqrt{2050}\text{ cm}^3\approx95{,}1\) lít theo mô hình, chưa xét độ dày thành sọt.
+
+    **Học tiếp:** [Core và Luyện tập Bài 27](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn S1: SGK Toán 11 Kết nối tri thức với cuộc sống, tập hai, Bài 27 “Thể tích”, trang in **61–63**, hoạt động HĐ1 về phòng 4×5×3 m và 200 BTU/m³, khối đa diện, các công thức thể tích, SGK Ví dụ 1–3, Luyện tập 1–2, Vận dụng sọt chóp cụt đều và Bài 7.28–7.32. SGK trình bày liền mạch, không đánh số ba mục lớn: các nhóm 1.1–1.3/2.1–2.3 trong học liệu là phân nhóm sư phạm, không giả làm tiêu đề SGK. Đã đối chiếu nội dung văn bản S1 PDF trực tiếp; chưa xác minh ảnh trang in và offset chỉ số trang PDF vì screenshot nguồn bị cache miss, giữ SOURCE_VISUAL_OFFSET_HOLD. Giữ nguyên canonical FIG-G11-CHVII-B27-01_R00.svg, thêm năm hình giảng giải chuyên biệt. Không thay Core/Luyện tập, Tự kiểm tra cuối chương, item bank/RD1/rubric, Mastery hay runtime chung.</p>
