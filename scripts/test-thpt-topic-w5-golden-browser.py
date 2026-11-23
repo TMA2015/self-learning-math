@@ -66,6 +66,25 @@ with sync_playwright() as pw:
                     ), (topic, part, "current page must not appear in nav")
                     assert page.locator("[data-thpt-readiness],[data-mastery-credit]").count() == 0
                 load("kien-thuc")
+                if engine == "chromium" and topic == "19" and width == 820:
+                    # Screenshot #7: 5+1 now points to the official catalog, not
+                    # a demo with no canonical Topic/assessment source.
+                    launch = page.locator("[data-thpt-r4-launcher]")
+                    expect(launch).to_be_visible()
+                    assert launch.locator(".roadmap-topic-launcher__name").inner_text() == "danh mục"
+                    launch.click()
+                    chooser = page.locator("[data-thpt-r4-shortcut-dialog]")
+                    expect(chooser).to_be_visible()
+                    actual = chooser.locator('a[href$="/thpt-preview/chuyen-de/"]')
+                    assert actual.count() >= 1
+                    assert chooser.locator('a[href*="/chuyen-de/ham-so/"]').count() == 0
+                    page.keyboard.press("Escape")
+                    legacy = ctx.new_page()
+                    for old_part in ("kien-thuc", "luyen-tap", "tu-kiem-tra"):
+                        legacy.goto(BASE + "ham-so/" + old_part + "/", wait_until="domcontentloaded")
+                        legacy.wait_for_url(re.compile(r"/thpt-preview/chuyen-de/$"), timeout=10000)
+                    assert legacy.locator(".topic01-legacy-note").count() == 0
+                    legacy.close()
                 knowledge = page.locator("[data-topic-w1-knowledge]")
                 expect(knowledge).to_be_visible()
                 topic_heading=page.locator("article.md-typeset > h1.topic-w1-topic-heading")
