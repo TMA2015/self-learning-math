@@ -4,6 +4,7 @@ from __future__ import annotations
 import functools
 import http.server
 import pathlib
+import re
 import threading
 
 from playwright.sync_api import sync_playwright, expect
@@ -194,8 +195,10 @@ with sync_playwright() as pw:
                 # Owner Golden CĐ01: original Vận dụng label, stem, disclosure must
                 # be siblings on the white panel, never combined in a framed card.
                 assert knowledge.locator(".topic-w1-application").count() == 0, (topic,"unapproved Vận dụng outer card")
+                # Only match the canonical bold label. Substring matching counts
+                # approved bold advice containing "Vận dụng" as an extra question.
                 labels = knowledge.locator(".thpt-r4-knowledge-content-panel > p").filter(
-                    has=page.locator(":scope > strong", has_text="Vận dụng")
+                    has=page.locator(":scope > strong", has_text=re.compile(r"^\s*Vận dụng\s*[:.]?\s*$"))
                 )
                 # CĐ17's signed Q18 explicitly includes one additional voluntary
                 # 2.4 frustum k=0/1/2/1 exploration with its own Đối chiếu.
