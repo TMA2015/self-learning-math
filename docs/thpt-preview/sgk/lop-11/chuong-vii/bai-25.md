@@ -351,3 +351,73 @@
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.12"><p><strong>Lời giải.</strong> Bán kính ngoại tiếp hai đáy là \(6/\sqrt3\) và \(3/\sqrt3\); độ lệch ngang bằng \(3/\sqrt3=\sqrt3\) cm. Áp Pythagore cho một cạnh bên: \(\ell=\sqrt{h^2+(\sqrt3)^2}=\sqrt{16+3}=\sqrt{19}\approx4{,}36\) cm. Các cạnh bên bằng nhau vì đây là chóp cụt đều.</p></div>
 
     **Kiểm lại:** Cạnh bên \(\ell>h=4\) cm là hợp lí vì xiên. Dùng \(\sqrt{16+9}=5\) cm sẽ sai do đã lấy chênh **cạnh đáy** thay cho độ lệch ngang.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Dùng góc nhị diện để trả lời góc giữa hai mặt
+
+    **Dấu hiệu:** Hai tia ở hai nửa mặt tạo \(105^\circ\), em kết luận góc giữa hai **mặt phẳng** bằng \(105^\circ\).
+
+    **Vì sao sai:** Góc giữa hai mặt phẳng là góc **không tù** của hai phương pháp tuyến; góc nhị diện có hai nửa mặt xác định nên có thể tù.
+
+    **Cách sửa:** Phân biệt đề hỏi **góc nhị diện** hay **góc hai mặt**. Ví dụ góc nhị diện \(105^\circ\) ứng với góc hai mặt \(75^\circ\), không thay thế đáp số của hai câu hỏi cho nhau.
+
+    ### 4.2. Đo hai đường bất kì trên hai mặt thay vì dựng tiết diện chuẩn
+
+    **Dấu hiệu:** Chọn hai cạnh bất kì có vẻ cắt nhau trên giấy rồi coi góc ấy là góc hai mặt.
+
+    **Vì sao sai:** Góc giữa hai mặt cắt nhau phải đo qua hai phương **cùng vuông góc giao tuyến** tại một điểm, hoặc qua hai pháp tuyến của hai mặt.
+
+    **Cách sửa:** Xác định giao tuyến \(d\), chọn \(O\in d\), dựng \(m\subset(P)\), \(n\subset(Q)\) cùng qua \(O\), \(m\perp d,n\perp d\), rồi chọn góc không tù.
+
+    ### 4.3. Từ một cặp đường vuông góc kết luận hai mặt vuông góc
+
+    **Dấu hiệu:** Có \(a\subset(P)\), \(b\subset(Q)\), \(a\perp b\) nên ghi ngay \((P)\perp(Q)\).
+
+    **Vì sao sai:** Vuông góc của **hai đường** không chứng minh rằng một đường là pháp tuyến của **cả mặt** bên kia.
+
+    **Cách sửa:** Chứng minh tồn tại \(a\subset(P)\) với \(a\perp(Q)\), thường bằng tiêu chuẩn vuông góc **hai đường cắt nhau** trong \((Q)\), rồi mới suy \((P)\perp(Q)\).
+
+    ### 4.4. Bỏ điều kiện vuông góc giao tuyến trong tính chất hai mặt
+
+    **Dấu hiệu:** Từ \((P)\perp(Q)\), cho rằng mọi đường \(a\subset(P)\) đều vuông góc \((Q)\).
+
+    **Vì sao sai:** Giao tuyến \(d=(P)\cap(Q)\) nằm trong cả hai mặt, nhưng không phải đường vuông góc \((Q)\). Tính chất chỉ áp dụng với \(a\perp d\).
+
+    **Cách sửa:** Ghi đủ \((P)\perp(Q)\), \(a\subset(P)\), **\(a\perp d\)** trước khi kết luận \(a\perp(Q)\).
+
+    ### 4.5. Suy giao tuyến khi hai mặt không cắt nhau
+
+    **Dấu hiệu:** Hai mặt đều vuông góc mặt nền \((R)\), chưa xác định vị trí của chúng đã nói “giao tuyến của chúng vuông góc \((R)\)”.
+
+    **Vì sao sai:** Hai mặt cùng vuông góc \((R)\) có thể **song song**; trong trường hợp đó không có giao tuyến.
+
+    **Cách sửa:** Chỉ áp định lí nếu \((P)\) và \((Q)\) **cắt nhau** theo đường \(d\); lúc đó mới kết luận \(d\perp(R)\).
+
+    ### 4.6. Đồng nhất lăng trụ đứng với lăng trụ đều
+
+    **Dấu hiệu:** Gọi một lăng trụ đứng đáy tam giác \(3,4,5\) là lăng trụ đều.
+
+    **Vì sao sai:** Lăng trụ đều là lăng trụ **đứng và có đáy là đa giác đều**. Chỉ có cạnh bên vuông góc đáy chưa chứng minh đáy đều.
+
+    **Cách sửa:** Kiểm **hai điều kiện** theo thứ tự: cạnh bên vuông góc đáy và đáy là đa giác đều. Phân biệt thêm hình hộp đứng, hộp chữ nhật và lập phương.
+
+    ### 4.7. Lấy cạnh bên làm chiều cao của chóp đều
+
+    **Dấu hiệu:** Chóp đều có \(SO=4\) cm, \(SA=\sqrt{34}\) cm mà ghi chiều cao bằng \(\sqrt{34}\) cm.
+
+    **Vì sao sai:** Đường cao của chóp đều là đoạn **từ đỉnh vuông góc đáy tại tâm**, không phải cạnh bên xiên.
+
+    **Cách sửa:** Xác định đúng tâm đáy \(O\) và kiểm \(SO\perp\) đáy; dùng tam giác vuông \(SOA\) để tính cạnh bên nếu cần, không đổi vai hai đoạn.
+
+    ### 4.8. Dùng chênh cạnh đáy làm độ lệch ngang của chóp cụt
+
+    **Dấu hiệu:** Chóp cụt tam giác đều có \(a=6,a'=3,h=4\) mà tính cạnh bên \(\sqrt{4^2+(6-3)^2}=5\).
+
+    **Vì sao sai:** Độ lệch ngang giữa hai đỉnh tương ứng là hiệu **bán kính ngoại tiếp** hai tam giác đều: \((a-a')/\sqrt3\), không phải \(a-a'\).
+
+    **Cách sửa:** Với chóp cụt tam giác đều, dùng \(\ell=\sqrt{h^2+(a-a')^2/3}\). Với dữ kiện trên, \(\ell=\sqrt{19}\approx4{,}36\), không phải 5.
+
+    **Học tiếp:** [Core và Luyện tập Bài 25](luyen-tap.md) · [Tự luận Chương VII](../../../thu-vien/tu-luan-g11-chuong-vii.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
+
+    <p class="thpt-r4-footnote">Nguồn S1: SGK Toán 11 Kết nối tri thức với cuộc sống, tập hai, Bài 25 “Hai mặt phẳng vuông góc”, trang in 44–53. Sáu mục SGK: 1. Góc giữa hai mặt phẳng, hai mặt phẳng vuông góc; 2. Điều kiện để hai mặt phẳng vuông góc; 3. Tính chất của hai mặt phẳng vuông góc; 4. Góc nhị diện; 5. Một số hình lăng trụ đặc biệt; 6. Hình chóp đều và hình chóp cụt đều. Đã đối chiếu văn bản SGK số hóa, thuật ngữ, HĐ1–HĐ13 và các ví dụ liên quan, chưa xác minh trực quan ảnh trang in và offset PDF nên SOURCE_VISUAL_OFFSET_HOLD. Hình nhị diện canonical dùng lại nguyên file; các hình mới chỉ phục vụ nội dung cần minh họa và đặt cạnh lời giảng/đọc hình. Core/Luyện tập, Tự kiểm tra và đánh giá không thay đổi.</p>
