@@ -81,6 +81,16 @@ def on_post_page(output: str, page, config, **kwargs) -> str:
     if _source_sha(raw) != sha:
         raise RuntimeError("Math Lab source SHA mismatch: " + slug)
     model = raw.decode("utf-8")
+    # RELEASE-only typography correction in the composed STUDENT viewer:
+    # the signed CĐ04 model has the literal "y=a^x" in its intro, although
+    # its legend and readout already use the correctly raised "y=aˣ".
+    # Keep all 25 authoring HTML source blobs byte-for-byte untouched.
+    if slug == "slm-top04-explog-01":
+        bad = "Vẽ y=a^x và y=logₐ(x)"
+        good = "Vẽ y=aˣ và y=logₐ(x)"
+        if model.count(bad) != 1 or model.count(good) != 0:
+            raise RuntimeError("Unexpected CĐ04 exponent label; review source before rendering")
+        model = model.replace(bad, good, 1)
     wrapper = wrapper_path.read_text(encoding="utf-8")
     if wrapper.count('<iframe') != 1 or wrapper.count('href="../../"') != 2:
         raise RuntimeError("Legacy Math Lab wrapper context changed: " + slug)
