@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 480" width="1020" height="480" role="img" aria-labelledby="t d">
+<title id="t">Ví dụ SGK góc giữa SC và mặt phẳng SAB bằng 60 độ</title>
+<desc id="d">Hình chóp S.ABC có SA vuông góc đáy ABC, SA bằng a, AB bằng 2a, CA và CB bằng a căn bảy. M là trung điểm AB, CM vuông góc AB và SA, suy CM vuông góc mặt phẳng SAB. Hình chiếu của SC lên SAB là SM. Tam giác SMC vuông tại M, có SM bằng a căn hai và SC bằng a căn tám, nên góc CSM bằng 60 độ.</desc>
+<rect width="1020" height="480" rx="18" fill="#fff"/>
+<text x="510" y="36" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#173a55">Góc giữa SC và (SAB): xác định đúng hình chiếu SM</text>
+<polygon points="110,344 450,344 286,229" fill="#e7f1fa" stroke="#7394ac" stroke-width="3"/>
+<path d="M110 344 L110 95 L450 344 L286 229 L110 95" stroke="#687e91" stroke-width="3.3" fill="none" stroke-linejoin="round"/>
+<path d="M110 95 L286 229" stroke="#ba5937" stroke-width="6" stroke-linecap="round"/>
+<path d="M286 229 L280 344" stroke="#267f62" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M110 95 L280 344" stroke="#246c9f" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M280 344 L280 328 L296 328" stroke="#267f62" fill="none" stroke-width="2.5"/>
+<path d="M110 344 L127 344 L127 327" stroke="#ba5937" fill="none" stroke-width="2.5"/>
+<g font-family="Arial,sans-serif" font-size="19" fill="#203954">
+<text x="90" y="92">S</text><text x="92" y="367">A</text><text x="457" y="366">B</text><text x="292" y="221">C</text><text x="280" y="367">M</text>
+<text x="74" y="231">SA = a</text><text x="169" y="380">AM = a</text><text x="348" y="380">MB = a</text>
+<text x="317" y="281" fill="#267f62">CM ⟂ (SAB)</text><text x="158" y="202" fill="#246c9f">SM</text>
+</g>
+<rect x="540" y="70" width="445" height="345" rx="15" fill="#f7fafc" stroke="#dde6ef"/>
+<text x="763" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#1e567b">Tam giác vuông SMC (vuông tại M)</text>
+<path d="M635 139 L635 346 L934 346 Z" stroke="#3e6c85" stroke-width="3.5" fill="#eef8f2"/>
+<path d="M635 139 L934 346" stroke="#ba5937" stroke-width="5.2"/>
+<path d="M635 139 L635 346" stroke="#246c9f" stroke-width="5.2"/>
+<path d="M635 346 L635 327 L654 327" stroke="#267f62" stroke-width="2.5" fill="none"/>
+<path d="M635 172 Q659 169 661 159" stroke="#ba5937" stroke-width="2.4" fill="none"/>
+<g font-family="Arial,sans-serif" font-size="19" fill="#254057">
+<text x="620" y="132">S</text><text x="617" y="368">M</text><text x="938" y="368">C</text>
+<text x="568" y="238">SM = a√2</text><text x="836" y="198">SC = a√8</text>
+<text x="676" y="315">CM = a√6</text><text x="662" y="185" fill="#ad4a32">60°</text>
+<text x="766" y="399" text-anchor="middle">cos ∠CSM = SM/SC = 1/2</text>
+</g>
+<text x="510" y="453" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#536a7c">Hình minh họa quan hệ; dùng số liệu SGK và vuông góc, không đo từ phối cảnh.</text>
+</svg>
