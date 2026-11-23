@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" role="img" aria-labelledby="t d">
+<title id="t">Góc nhị diện lưng ghế và góc không tù giữa hai mặt</title><desc id="d">Tiết diện vuông góc giao tuyến mặt ghế và lưng ghế cho tia Ox nằm ngang về phải và tia Oy nghiêng lên về trái. Góc phẳng nhị diện của hai nửa mặt ghế đã chọn bằng 105 độ, góc nhỏ giữa hai đường thẳng chứa các tia bằng 75 độ, là góc không định hướng giữa hai mặt phẳng. Hình sơ đồ tiết diện chứ không phải mô phỏng ghế với kích thước thật.</desc>
+<rect width="880" height="420" fill="#fff" rx="18"/>
+<text x="440" y="38" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#203954">Góc nhị diện có thể tù; góc giữa hai mặt không tù</text>
+<g font-family="Arial,sans-serif" font-size="21" fill="#264157">
+<line x1="133" y1="312" x2="444" y2="312" stroke="#2b74a4" stroke-width="8" stroke-linecap="round"/>
+<line x1="289" y1="312" x2="217" y2="49" stroke="#c35d3b" stroke-width="8" stroke-linecap="round"/>
+<line x1="133" y1="312" x2="289" y2="312" stroke="#aab5c3" stroke-width="2.3" stroke-dasharray="7 6"/>
+<path d="M360 312 A71 71 0 0 0 270 244" stroke="#ad4838" stroke-width="4" fill="none"/>
+<path d="M223 224 A92 92 0 0 1 200 312" stroke="#327c72" stroke-width="3.5" fill="none"/>
+<circle cx="289" cy="312" r="6" fill="#34495f"/>
+<text x="278" y="338">O</text><text x="450" y="320" fill="#2b74a4">x</text><text x="192" y="50" fill="#c35d3b">y</text>
+<text x="330" y="231" fill="#ad4838" font-weight="700">105°</text>
+<text x="145" y="222" fill="#327c72" font-weight="700">75°</text>
+<rect x="504" y="91" width="338" height="224" rx="12" fill="#f5f8fa" stroke="#dfe8ef"/>
+<text x="525" y="127" font-weight="700" font-size="18">Chọn hai nửa mặt:</text>
+<text x="525" y="165" font-size="18">∠xOy = 105° (góc nhị diện)</text>
+<text x="525" y="205" font-size="18">Đường chứa Ox, Oy tạo</text>
+<text x="525" y="236" font-size="18">góc nhỏ = 180° − 105°</text>
+<text x="525" y="277" font-weight="700" fill="#26735e">= 75° (góc hai mặt)</text>
+<text x="440" y="386" text-anchor="middle" font-size="16" fill="#66788a">Khi SGK nói lưng ghế 100°–105°, góc hai mặt tương ứng là 80°–75°.</text>
+</g></svg>
