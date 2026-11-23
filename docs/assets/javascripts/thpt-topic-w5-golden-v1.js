@@ -151,6 +151,20 @@ const normalizeRenderedMath=node=>{
    const math=create("span","arithmatex");
    math.dataset.topicW3DisplayMath=match[1]?"recovered-display":"exponent";
    math.textContent=match[1]?"\\["+match[1].trim()+"\\]":"\\("+match[0]+"\\)";
+   // A second MathJax pass (including its global startup) can race our
+   // scoped typesetPromise. One recovered display span is ONE formula: prune
+   // only identical sibling outputs, never content/answers or distinct math.
+   if(match[1]){
+    const collapse=()=>{
+     const views=[...math.querySelectorAll(":scope > mjx-container")];
+     if(views.length<2)return;
+     const first=views[0].textContent;
+     if(!first||views.some(x=>x.textContent!==first))return;
+     views.slice(1).forEach(x=>x.remove());
+    };
+    const observer=new MutationObserver(collapse);
+    observer.observe(math,{childList:true});
+   }
    parts.append(math);lastIndex=fragments.lastIndex;
   }
   if(hit){if(lastIndex<v.length)parts.append(document.createTextNode(v.slice(lastIndex)));t.replaceWith(parts)}
