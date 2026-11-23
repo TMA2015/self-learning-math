@@ -20,7 +20,7 @@ BASE = f"http://127.0.0.1:{server.server_address[1]}/thpt-preview/chuyen-de/"
 SIZES = {
     "16": (4, 4, 21, 65, 8, 4),
     "17": (2, 3, 12, 37, 8, 2),
-    "18": (8, 8, 40, 207, 12, 9),
+    "18": (8, 8, 40, 207, 12, 10),
 }
 PALETTE = {
     "concept": "rgb(232, 247, 242)",
