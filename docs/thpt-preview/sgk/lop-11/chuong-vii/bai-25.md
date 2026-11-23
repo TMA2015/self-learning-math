@@ -149,3 +149,79 @@
     ??? tip "Kiểm lỗi"
 
         Không trả \(SA=SO=4\) cm; cạnh bên là **cạnh huyền** của tam giác \(SOA\). Cũng đừng định nghĩa chóp đều là hình chóp mà “mọi cạnh bên vuông góc đáy”.
+
+=== "Kiến thức SGK"
+
+    ### 2.1. Góc giữa hai mặt phẳng, hai mặt phẳng vuông góc
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Góc giữa hai mặt phẳng</strong><p>Cho hai mặt phẳng \((P),(Q)\). Lấy các đường \(a\perp(P)\), \(b\perp(Q)\); <strong>góc giữa hai mặt phẳng</strong> được định nghĩa là góc không tù giữa \(a,b\), không phụ thuộc cách chọn hai pháp tuyến. Góc \(\varphi\) thỏa \(0^\circ\le\varphi\le90^\circ\). Hai mặt gọi là <strong>vuông góc</strong> khi \(\varphi=90^\circ\).</p></div>
+
+    **Đo bằng tiết diện qua giao tuyến:** Nếu \((P)\cap(Q)=d\), lấy \(O\in d\), các đường \(m\subset(P)\), \(n\subset(Q)\) cùng qua \(O\), \(m\perp d,n\perp d\), thì \(((P),(Q))=(m,n)\), lấy góc không tù. Không áp công thức cho hai đường bất kì trên hai mặt.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg" alt="Mặt phẳng cắt theo Delta, hai tia OU OV vuông góc Delta để đọc tiết diện"><figcaption><strong>Tra hình:</strong> từ giao tuyến \(\Delta\) và điểm \(O\), dựng hai phương đều vuông góc \(\Delta\). Hình cho **góc phẳng của hai nửa mặt đã chọn**; khi tìm góc **hai mặt phẳng**, lấy góc không tù giữa hai đường chứa \(OU,OV\).</figcaption></figure>
+
+    **Ví dụ SGK:** Với chóp \(S.ABCD\), đáy hình chữ nhật, \(SO\perp(ABCD)\) tại giao điểm đường chéo \(O\): \(((SAC),(SBD))=(AC,BD)\). Hai mặt vuông góc khi và chỉ khi đáy hình chữ nhật là hình vuông.
+
+    ### 2.2. Điều kiện để hai mặt phẳng vuông góc
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lí — Tiêu chuẩn mặt phẳng vuông góc</strong><p>Nếu mặt phẳng \((P)\) <strong>chứa một đường \(a\)</strong> vuông góc mặt phẳng \((Q)\), thì <strong>\((P)\perp(Q)\)</strong>. Muốn chứng minh \(a\perp(Q)\), có thể chứng minh \(a\perp b\) và \(a\perp c\) với \(b,c\) là <strong>hai đường cắt nhau nằm trong \((Q)\)</strong>.</p></div>
+
+    **Chọn đúng đối tượng:** Không đủ để chứng minh \(a\subset(P),b\subset(Q)\) và chỉ có \(a\perp b\); điều đó mới là vuông góc của **hai đường**, chưa xác định góc hai mặt.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_PERPENDICULAR_PLANES_AUTHORING_20261123.svg" alt="Hai mặt P Q vuông góc và một đường a trong P vuông góc mặt Q"><figcaption><strong>Tra khung trái:</strong> phải có **đường \(a\subset(P)\) vuông góc cả \((Q)\)** để kết luận \((P)\perp(Q)\). Dấu \(\Delta\) giúp xác định giao tuyến; không kết luận chỉ từ nét vẽ \(a\perp\Delta\) khi chưa có giả thiết hai mặt vuông góc.</figcaption></figure>
+
+    **Ví dụ 2 SGK:** \(OA\perp OB\), \(OA\perp OC\), \(OB\cap OC=\{O\}\) nên \(OA\perp(OBC)\). Mỗi mặt \((OAB),(OAC)\) chứa \(OA\) và vì vậy đều vuông góc \((OBC)\).
+
+    ### 2.3. Tính chất của hai mặt phẳng vuông góc
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Đường nằm trong một mặt vuông góc</strong><p>Nếu \((P)\perp(Q)\) và \(d=(P)\cap(Q)\), mọi đường \(a\subset(P)\) <strong>vuông góc \(d\)</strong> đều <strong>vuông góc \((Q)\)</strong>. Phải có đủ hai điều kiện \(a\subset(P)\) và \(a\perp d\).</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Giao tuyến của hai mặt cùng vuông góc mặt thứ ba</strong><p>Nếu hai mặt phẳng <strong>cắt nhau</strong> theo \(d\) và cùng vuông góc \((R)\), thì <strong>\(d\perp(R)\)</strong>. Nếu hai mặt song song thì không tồn tại giao tuyến \(d\), nên không dùng được kết luận này.</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_PERPENDICULAR_PLANES_AUTHORING_20261123.svg" alt="Điều kiện đường a vuông góc giao tuyến Delta, hai mặt đứng P Q cắt theo d vuông góc sàn R"><figcaption><strong>Tra hai khung:</strong> trái, đường \(a\) nằm trong mặt này và vuông góc **giao tuyến** khi hai mặt đã vuông góc; phải, \((P),(Q)\) **cắt nhau** cùng vuông góc \((R)\), suy đường đỏ \(d\perp(R)\). Không bỏ giả thiết cắt nhau.</figcaption></figure>
+
+    **Ví dụ 3 SGK:** Nếu đáy \(ABCD\) hình chữ nhật và \(SA\perp(ABCD)\), thì \(BC\perp(SAB)\) vì \(BC\perp AB,BC\perp SA\); từ \(BC\subset(SBC)\) suy \((SBC)\perp(SAB)\). Với \(B'\) chân từ \(A\) trên \(SB\), \(AB'\perp SB\) và \(AB'\subset(SAB)\), nên \(AB'\perp(SBC)\), từ đó \(AB'\perp SC\). Không quên kiểm vị trí đường \(AB'\) và giao tuyến \(SB\).
+
+    ### 2.4. Góc nhị diện
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Góc nhị diện</strong><p>Hai <strong>nửa mặt phẳng có chung bờ \(d\)</strong> tạo một góc nhị diện, kí hiệu \([P,d,Q]\); \(d\) là cạnh nhị diện. Qua \(O\in d\), lấy hai tia \(Ox,Oy\) thuộc hai nửa mặt tương ứng và <strong>cùng vuông góc \(d\)</strong>. Khi đó \(\angle xOy\) là một <strong>góc phẳng nhị diện</strong>; số đo nhị diện thuộc \([0^\circ,180^\circ]\) và không phụ thuộc chọn \(O\).</p></div>
+
+    **Khác biệt không thể bỏ:** Góc nhị diện giữ đúng **hai phía được chỉ định** nên có thể tù. Góc hai mặt phẳng lấy góc **không tù** giữa các đường và không vượt \(90^\circ\). Hai mặt phẳng cắt nhau tạo bốn góc nhị diện; góc đối đỉnh bằng nhau, góc kề bù nhau.
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg" alt="Hai nửa mặt có cạnh Delta và góc phẳng giữa các tia OU OV vuông góc cạnh"><figcaption><strong>Tra hình nhị diện:</strong> để đo, chọn \(O\) trên cạnh \(\Delta\), kẻ hai tia nằm **trong nửa mặt đề cho**, cùng vuông góc \(\Delta\), rồi đo \(\angle UOV\). Không thay tia bằng tia đối khi đề hỏi nhị diện cụ thể.</figcaption></figure>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_DIHEDRAL_CHAIR_AUTHORING_20261123.svg" alt="Góc nhị diện 105 độ ở mặt ghế và lưng ghế ứng với góc giữa hai mặt 75 độ"><figcaption><strong>Tra HĐ5 SGK:</strong> \(\angle xOy=105^\circ\) của hai nửa mặt đã chọn là góc **nhị diện**, còn góc không tù giữa hai mặt chứa chúng bằng \(75^\circ\). Với khoảng \(100^\circ\)–\(105^\circ\), góc hai mặt tương ứng \(80^\circ\)–\(75^\circ\).</figcaption></figure>
+
+    **Ví dụ 4 SGK:** Trong chóp có đáy hình thoi cạnh \(a\), \(AC=a\), \(SA=a/2\perp(ABCD)\), các nhị diện \([B,SA,D]\), \([S,BD,A]\), \([S,BD,C]\) lần lượt bằng \(120^\circ,45^\circ,135^\circ\). Các góc được tính qua những tia **vuông góc với cạnh nhị diện** ở đúng hai nửa mặt tương ứng.
+
+    ### 2.5. Một số hình lăng trụ đặc biệt
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Lăng trụ đứng và lăng trụ đều</strong><p><strong>Lăng trụ đứng:</strong> các cạnh bên vuông góc với mặt đáy; mặt bên là hình chữ nhật và cạnh bên bằng chiều cao. <strong>Lăng trụ đều:</strong> lăng trụ đứng có đáy là đa giác đều; các mặt bên là những hình chữ nhật cùng kích thước.</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Họ hình hộp</strong><p><strong>Hình hộp đứng:</strong> lăng trụ đứng có đáy hình bình hành. <strong>Hình hộp chữ nhật:</strong> hình hộp đứng đáy chữ nhật, cả sáu mặt là chữ nhật. <strong>Hình lập phương:</strong> hình hộp chữ nhật có tất cả cạnh bằng nhau, cả sáu mặt là hình vuông.</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_SPECIAL_PRISMS_AUTHORING_20261123.svg" alt="Ba khối minh họa lăng trụ đứng, lăng trụ đều và hình lập phương"><figcaption><strong>Tra hình:</strong> trái chỉ có điều kiện cạnh bên vuông góc đáy; giữa thêm điều kiện đáy đa giác đều; phải là hộp chữ nhật có tất cả cạnh bằng nhau. Hình không thay cho kiểm giả thiết cạnh và góc.</figcaption></figure>
+
+    | Khối | Điều kiện nhận dạng | Điều cần nhớ |
+    | :-- | :-- | :-- |
+    | Lăng trụ đứng | Cạnh bên \(\perp\) đáy | Mặt bên hình chữ nhật |
+    | Lăng trụ đều | Lăng trụ đứng, đáy đa giác đều | Mặt bên hình chữ nhật bằng nhau |
+    | Hình hộp đứng | Lăng trụ đứng, đáy hình bình hành | Ít nhất 4 mặt bên chữ nhật |
+    | Hình hộp chữ nhật | Hộp đứng, đáy hình chữ nhật | 6 mặt chữ nhật |
+    | Hình lập phương | Hộp chữ nhật, mọi cạnh bằng | 6 mặt vuông |
+
+    **Ví dụ 6 SGK:** Trong hình lập phương cạnh \(a\), tam giác \(A'BD\) đều vì \(A'B=A'D=BD=a\sqrt2\); ba cạnh này lần lượt là các đường chéo của những mặt vuông.
+
+    ### 2.6. Hình chóp đều và hình chóp cụt đều
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình chóp đều</strong><p>Hình chóp có <strong>đáy là đa giác đều</strong> và <strong>các cạnh bên bằng nhau</strong> gọi là hình chóp đều. Tương đương: đáy là đa giác đều và <strong>hình chiếu vuông góc của đỉnh nằm đúng tại tâm đáy</strong>. Đường nối đỉnh với tâm đáy là đường cao, không phải cạnh bên nghiêng.</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình chóp cụt đều</strong><p>Cắt hình chóp đều bằng một mặt phẳng <strong>song song đáy, không qua đỉnh</strong>, phần nằm giữa hai mặt phẳng đáy là hình chóp cụt đều. Hai đáy là đa giác đều song song, đồng dạng; các mặt bên là <strong>hình thang cân</strong>. Đường cao là đoạn <strong>nối hai tâm đáy</strong> vuông góc hai đáy.</p></div>
+
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg" alt="Hình chóp đều có SO là đường cao qua tâm đáy, chóp cụt đều có HK là đường cao nối hai tâm đáy"><figcaption><strong>Tra hình:</strong> trái \(SO\perp(ABCD)\) tại tâm \(O\), còn \(SA\) là cạnh bên xiên; phải \(HK\) nối tâm hai đáy song song và là chiều cao chóp cụt, còn \(AA'\) là cạnh bên. Không dùng cạnh bên thay chiều cao.</figcaption></figure>
+
+    **Ứng dụng SGK:** Tháp Louvre là mô hình chóp tứ giác đều; chân đường cao là tâm hình vuông đáy. Với chóp cụt tam giác đều, chiều cao \(h\), cạnh đáy \(a>a'\), độ dài các cạnh bên bằng
+    \[
+    \sqrt{h^2+\frac{(a-a')^2}{3}}.
+    \]
+    Công thức này đến từ tam giác vuông với độ lệch ngang \((a-a')/\sqrt3\), không phải lấy chênh hai cạnh đáy làm độ lệch trực tiếp.
