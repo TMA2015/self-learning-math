@@ -80,7 +80,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B10_QUADRILATERAL_PYRAMID_AUTHORING_20261123.svg" alt="Hình chóp tứ giác S.ABCD với mặt đáy ABCD và các mặt bên"><figcaption><strong>Hướng dẫn đọc:</strong> \(S\) là đỉnh chóp, \(ABCD\) là đáy. Chóp có 5 đỉnh, 8 cạnh, 5 mặt; các cạnh khuất vẽ nét đứt vẫn được đếm.</figcaption></figure>
 
-    Nếu đáy là **tam giác**, hình chóp là một **tứ diện**. Cho bốn điểm \(A,B,C,D\) không đồng phẳng, tứ diện \(ABCD\) gồm bốn mặt tam giác \(ABC,ABD,ACD,BCD\). Nó có 4 đỉnh, 6 cạnh, 4 mặt; cạnh \(AB\) và \(CD\) là một cặp cạnh **đối diện** vì không chung đỉnh. Tứ diện có cả bốn mặt đều là **tam giác đều** gọi là tứ diện đều. Một tứ diện bất kì không nhất thiết đều.
+    Nếu đáy là **tam giác**, hình chóp là một **tứ diện**. Cho bốn điểm \(A,B,C,D\) không đồng phẳng, tứ diện \(ABCD\) gồm bốn mặt tam giác \(ABC,ABD,ACD,BCD\). Nó có 4 đỉnh, 6 cạnh, 4 mặt; cạnh \(AB\) và \(CD\) là một cặp cạnh **đối diện** vì không chung đỉnh. Tứ diện có cả bốn mặt đều là **tam giác đều** gọi là tứ diện đều. Một tứ diện bất kì không nhất thiết đều. Mỗi đỉnh còn có **mặt đối diện** là mặt tam giác không chứa đỉnh ấy: chẳng hạn đỉnh \(A\) đối diện mặt \(BCD\).
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B10-01_R01.svg" alt="Tứ diện S.ABC với bốn mặt tam giác"><figcaption><strong>Hướng dẫn đọc:</strong> tứ diện \(S.ABC\) có thể chọn \(ABC\) làm đáy hoặc chọn bất kì mặt tam giác khác làm đáy. Đây là nhận xét của SGK, không phải phép đổi số đỉnh hay số mặt.</figcaption></figure>
 
@@ -134,7 +134,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B10_QUADRILATERAL_PYRAMID_AUTHORING_20261123.svg" alt="Hình chóp tứ giác có đỉnh S, đáy ABCD"><figcaption><strong>Tra hình:</strong> \(S.ABCD\) có 5 đỉnh, 8 cạnh, 5 mặt. Mặt bên \(SAB,SBC,SCD,SDA\); đáy \(ABCD\).</figcaption></figure>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình tứ diện và tứ diện đều</strong><p>Với bốn điểm \(A,B,C,D\) **không đồng phẳng**, hình gồm bốn tam giác \(ABC,ABD,ACD,BCD\) gọi là **tứ diện** \(ABCD\): 4 đỉnh, 6 cạnh, 4 mặt. Hai cạnh không chung đỉnh gọi là **cạnh đối diện**; đỉnh không thuộc một mặt là **đỉnh đối diện** mặt đó. Tứ diện có **bốn mặt đều là tam giác đều** gọi là **tứ diện đều**.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Hình tứ diện và tứ diện đều</strong><p>Với bốn điểm \(A,B,C,D\) **không đồng phẳng**, hình gồm bốn tam giác \(ABC,ABD,ACD,BCD\) gọi là **tứ diện** \(ABCD\): 4 đỉnh, 6 cạnh, 4 mặt. Hai cạnh không chung đỉnh gọi là **cạnh đối diện**; đỉnh không nằm trên một mặt tam giác được gọi là **đỉnh đối diện với mặt đó**. Tứ diện có **bốn mặt đều là tam giác đều** gọi là **tứ diện đều**.</p></div>
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B10-01_R01.svg" alt="Tứ diện S.ABC gồm bốn mặt tam giác"><figcaption><strong>Tra hình:</strong> tứ diện \(S.ABC\) có thể coi bất kì mặt tam giác nào làm đáy. Cặp cạnh đối diện trong \(ABCD\): \(AB,CD\); \(AC,BD\); \(AD,BC\).</figcaption></figure>
 
