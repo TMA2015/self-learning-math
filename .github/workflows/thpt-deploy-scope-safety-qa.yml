@@ -34,7 +34,17 @@ jobs:
           assert(/BEFORE_SHA:\s*\$\{\{\s*github\.event\.before\s*\}\}/.test(w),'Full main push base required');
           assert(/HEAD_SHA:\s*\$\{\{\s*github\.sha\s*\}\}/.test(w),'Full main push head required');
           const expr="$"+"{{";
-          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' }}";
+          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' && needs.release-scope.outputs.impact != 'SCOPED_MATH_LAB_FULLPAGE' }}";
+          const labIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_MATH_LAB_FULLPAGE' }}";
+          assert(w.includes(labIf),"Math Lab 25 must have an exact-diff production lane");
+          const lab=w.split('\n  deploy-scoped-math-lab-fullpage:\n')[1];
+          assert(lab,"Math Lab 25 protected production job missing");
+          for(const req of ['SCOPED_MATH_LAB_FULLPAGE','scripts/test-math-lab-25-release-intake.cjs',
+            'scripts/test-math-lab-25-browser.py','node scripts/test-thpt-handoff-gate-v2.cjs',
+            'node scripts/test-thpt-release-queue.cjs','mkdocs build --strict',
+            'mkdocs build -f mkdocs.thpt-preview.yml --strict',
+            'node scripts/assemble-thpt-site.cjs','ghp-import -n -p -f site'])
+            assert(lab.includes(req),"Math Lab source/browser/assessment/build guard missing: "+req);
           const scopedIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_LESSON' && needs.release-scope.outputs.changed_lessons != '' }}";
           assert(w.includes(fullIf),'Original FULL release cannot execute on a scoped lesson');
           assert(w.includes(scopedIf),'Scoped release needs explicit single-lesson classified impact');
