@@ -1,12 +1,14 @@
 [
   {
     "item_id": "THPT-TOP15-P06",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho A,B phân biệt thuộc (P), M∈AB, C nằm ngoài (P). Hỏi M∈(P) không và AC⊂(P) có đúng không?",
-    "answer_key": null,
+    "answer_key": "M∈(P); AC không nằm trong (P).",
     "worked_solution": "M∈(P) vì AB⊂(P). AC không nằm trọn (P), do C nằm ngoài (P).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B10-INCIDENCE"
+    ],
     "original_outcome_ids": [
       "TOP15-O01"
     ],
@@ -23,16 +25,18 @@
       "heading_id": "THPT-TOP15-P06",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P07",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Xét ba điểm A(0,0,0),B(1,0,0),C(2,0,0). Chúng có xác định duy nhất một mặt phẳng không? Thêm D(0,1,0) thì (ABD) có duy nhất không?",
-    "answer_key": null,
+    "answer_key": "A,B,C không xác định duy nhất một mặt phẳng; A,B,D xác định duy nhất mặt phẳng z=0.",
     "worked_solution": "A,B,C thẳng hàng theo Ox nên không xác định một mặt duy nhất. A,B,D không thẳng hàng nên (ABD) duy nhất, là z=0.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B10-PLANE"
+    ],
     "original_outcome_ids": [
       "TOP15-O02"
     ],
@@ -49,16 +53,18 @@
       "heading_id": "THPT-TOP15-P07",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P08",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong tứ diện S.ABC, tìm (SAC)∩(SBC). Chỉ ra hai điểm chung hợp lệ.",
-    "answer_key": null,
+    "answer_key": "Giao tuyến SC; hai điểm chung S,C.",
     "worked_solution": "Hai mặt có S,C chung và phân biệt; giao tuyến là SC.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B10-PLANE_INTERSECTION"
+    ],
     "original_outcome_ids": [
       "TOP15-O03"
     ],
@@ -75,16 +81,18 @@
       "heading_id": "THPT-TOP15-P08",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P09",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho d:(x,y,z)=(2+t,1,4−2t), (P):z=0. Tìm d∩(P); đường e:(t,1,4) có cắt (P) không?",
-    "answer_key": null,
+    "answer_key": "d cắt (P) tại (4;1;0); e∥(P), không cắt.",
     "worked_solution": "Với d: 4−2t=0 ⇒ t=2, giao tại (4,1,0). e có z=4 với mọi t nên song song (P), không cắt.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B10-LINE_PLANE"
+    ],
     "original_outcome_ids": [
       "TOP15-O04"
     ],
@@ -101,16 +109,18 @@
       "heading_id": "THPT-TOP15-P09",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P10",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong tứ diện S.ABC, P∈AB và Q∈AC là các điểm trong cạnh. Mặt (SPQ) có thiết diện gì? Nêu các đoạn giao.",
-    "answer_key": null,
+    "answer_key": "Thiết diện tam giác SPQ; các đoạn SP, SQ, PQ.",
     "worked_solution": "Thiết diện tam giác SPQ: các đoạn SP trên (SAB), SQ trên (SAC), PQ trên (ABC). Giả thiết P,Q ở bên trong cạnh bảo đảm ba đoạn nằm trong khối.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B10-SECTION"
+    ],
     "original_outcome_ids": [
       "TOP15-O05"
     ],
@@ -127,16 +137,18 @@
       "heading_id": "THPT-TOP15-P10",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P02",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
-    "stem": "Không giao hay chéo?. a=(t,0,0), b=(0,2,1)+u(1,0,0), c=(0,2,1)+u(0,1,0), t,u∈ℝ. Phân loại từng cặp a,b; a,c; b,c.",
-    "answer_key": null,
-    "worked_solution": "a∥b; a,c chéo vì hai hướng khác nhau và z=0 so với z=1; b,c cắt nhau tại (0,2,1). Đặt từng phương trình tham số thay vì tin nét vẽ.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho ba đường thẳng a: (x,y,z)=(t,0,0), b: (x,y,z)=(0,2,1)+u(1,0,0), c: (x,y,z)=(0,2,1)+v(0,1,0), t,u,v∈ℝ. Phân loại vị trí tương đối từng cặp a,b; a,c; b,c.",
+    "answer_key": "a∥b (phân biệt); a và c chéo nhau; b,c cắt tại (0;2;1).",
+    "worked_solution": "a,b có cùng vectơ chỉ phương (1;0;0), nhưng a có z=0 còn b có z=1, nên song song phân biệt. a,c không cùng phương và không gặp nhau vì z khác nhau; do đó chéo nhau. b,c đều đi qua (0;2;1) và có hai phương khác nhau nên cắt nhau tại điểm đó.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B11-RELATIVE"
+    ],
     "original_outcome_ids": [
       "TOP15-O06"
     ],
@@ -153,16 +165,19 @@
       "heading_id": "THPT-TOP15-P02",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P11",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong tứ diện S.ABC, giải thích vì sao SA và BC chéo nhau; nhưng SA và SB không chéo nhau.",
-    "answer_key": null,
+    "answer_key": "SA và BC chéo nhau; SA và SB cắt nhau tại S.",
     "worked_solution": "Nếu SA và BC đồng phẳng thì S,A,B,C đồng phẳng, vô lý. SA và SB có S chung nên cắt nhau, đồng phẳng trong (SAB).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B11-COPLANAR",
+      "G11-B11-RELATIVE"
+    ],
     "original_outcome_ids": [
       "TOP15-O07"
     ],
@@ -179,16 +194,18 @@
       "heading_id": "THPT-TOP15-P11",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P12",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong tam giác SAB, M∈SA, N∈SB với SM:MA=2:3 và SN:NB=2:3. Chứng minh MN∥AB.",
-    "answer_key": null,
+    "answer_key": "MN∥AB.",
     "worked_solution": "SM/SA=2/5 và SN/SB=2/5; hai điểm trên hai cạnh có cùng tỉ số tính từ S, nên MN∥AB theo Thales đảo.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B11-PARALLEL_PROOF"
+    ],
     "original_outcome_ids": [
       "TOP15-O08"
     ],
@@ -205,16 +222,19 @@
       "heading_id": "THPT-TOP15-P12",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P13",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hình chóp S.ABCD có đáy hình bình hành. Xác định giao tuyến (SAB)∩(SCD) bằng điểm và phương. Có được kết luận giao tuyến là AB không?",
-    "answer_key": null,
-    "worked_solution": "Giao tuyến đi qua S và song song AB∥CD. Không thể là AB vì S ngoài mặt đáy và S∉AB.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Đường thẳng qua S, song song AB và CD; không phải AB.",
+    "worked_solution": "Hai mặt phẳng phân biệt cùng chứa S, chứa lần lượt hai đường AB,CD song song nhau. Theo định lí giao tuyến của hai mặt phẳng chứa hai đường thẳng song song, giao tuyến qua S và song song AB,CD. Không thể là AB vì S không thuộc mặt đáy.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B10-PLANE_INTERSECTION",
+      "G11-B11-PARALLEL_PROOF"
+    ],
     "original_outcome_ids": [
       "TOP15-O09"
     ],
@@ -231,16 +251,18 @@
       "heading_id": "THPT-TOP15-P13",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P03",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
-    "stem": "Đường và mặt. d=(1+t,2,3+2t); (P): z=0. Xác định d∩(P). Đường e=(1+t,2,3) và f=(1+t,2,0) thuộc loại nào so với (P)?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho các đường d: (x,y,z)=(1+t,2,3+2t), e: (x,y,z)=(1+t,2,3), f: (x,y,z)=(1+t,2,0), t∈ℝ và mặt phẳng (P): z=0. Tìm giao của d với (P); phân loại vị trí tương đối của e,f với (P).",
+    "answer_key": "d cắt (P) tại (−1/2;2;0); e∥(P); f⊂(P).",
     "worked_solution": "d cắt (P) khi t=−3/2, tại (−1/2,2,0). e∥(P) vì z=3 không đổi; f⊂(P) vì z=0 với mọi t. Ba trường hợp phải phân biệt.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B12-POSITIONS"
+    ],
     "original_outcome_ids": [
       "TOP15-O10"
     ],
@@ -257,16 +279,18 @@
       "heading_id": "THPT-TOP15-P03",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P14",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong tứ diện S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC) và nêu vì sao không thể bỏ điều kiện MN nằm ngoài mặt đáy.",
-    "answer_key": null,
-    "worked_solution": "MN∥AB⊂(ABC) theo đường trung bình; M,N nằm ngoài đáy, MN⊄(ABC), nên MN∥(ABC). Nếu MN nằm trong đáy thì không gọi song song mặt vì nó có vô số điểm chung.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "MN∥(ABC); nếu MN nằm trong (ABC) thì không song song với mặt phẳng đó.",
+    "worked_solution": "MN∥AB theo định lí đường trung bình trong tam giác SAB. M nằm trong cạnh SA, khác A,S, nên M không thuộc (ABC) (SA chỉ cắt đáy tại A). Vì MN không nằm trong (ABC) và song song với AB nằm trong (ABC), theo dấu hiệu nhận biết, MN∥(ABC). Nếu MN nằm trong đáy thì có vô số điểm chung với đáy, không thỏa định nghĩa song song.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B12-PARALLEL_TEST"
+    ],
     "original_outcome_ids": [
       "TOP15-O11"
     ],
@@ -283,16 +307,18 @@
       "heading_id": "THPT-TOP15-P14",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P15",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
-    "stem": "Trong tứ diện S.ABC, với M,N∈SA,SB, M,N khác S và đáy, MN∥AB. Biết (SAB)∩(ABC)=AB. Hãy giải thích vì sao MN∥g với g là giao tuyến hai mặt.",
-    "answer_key": null,
-    "worked_solution": "Giao tuyến g=AB; MN và AB cùng nằm trong (SAB), phân biệt và không gặp, suy MN∥g. Không nhầm g với một đường bất kỳ trong đáy.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong tứ diện S.ABC, M,N lần lượt nằm trong các cạnh SA,SB và MN∥(ABC). Biết (SAB)∩(ABC)=g=AB. Chứng minh MN∥g bằng quan hệ giữa đường thẳng và mặt phẳng.",
+    "answer_key": "g=AB và MN∥g.",
+    "worked_solution": "Vì M,N nằm trong các cạnh SA,SB nên MN⊂(SAB). Hai mặt (SAB),(ABC) cắt nhau theo g=AB. Nếu MN cắt g thì điểm chung thuộc (ABC), trái giả thiết MN∥(ABC). Do MN và g đồng phẳng trong (SAB), không có điểm chung, chúng song song.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B12-PLANE_INTERSECTION"
+    ],
     "original_outcome_ids": [
       "TOP15-O12"
     ],
@@ -309,16 +335,19 @@
       "heading_id": "THPT-TOP15-P15",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P16",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong tứ diện S.ABC, chọn M∈SA sao cho SM/SA=1/4. Dựng N∈SB, K∈SC để mặt MNK song song đáy; xác định ba tỉ số và dạng thiết diện.",
-    "answer_key": null,
+    "answer_key": "SM/SA=SN/SB=SK/SC=1/4; thiết diện tam giác MNK.",
     "worked_solution": "Chọn SN/SB=SK/SC=1/4; khi đó MN∥AB, MK∥AC nên (MNK)∥(ABC), thiết diện tam giác MNK.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B13-PRISM_RATIO",
+      "G11-B13-PLANE_TEST"
+    ],
     "original_outcome_ids": [
       "TOP15-O13"
     ],
@@ -335,16 +364,18 @@
       "heading_id": "THPT-TOP15-P16",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P01",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Thiết diện có điều kiện. Trong tứ diện S.ABC, M∈SA, N∈SB, K∈SC, biết SM/SA=SN/SB=2/5 nhưng SK/SC=3/5. Có (MNK)∥(ABC) không? Nếu thay SK/SC thành 2/5 và diện tích ABC là 100 cm², tính diện tích MNK.",
-    "answer_key": null,
-    "worked_solution": "Ban đầu không song song vì ba tỉ số không cùng bằng 2/5. Khi cùng t=2/5 thì (MNK)∥(ABC), diện tích MNK=(2/5)²·100=16 cm². Lỗi thường gặp là nhân diện tích với t thay vì t².",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Không song song; khi ba tỉ số cùng bằng 2/5 thì diện tích MNK bằng 16 cm².",
+    "worked_solution": "Nếu (MNK) song song (ABC), giao tuyến MN và AB trong (SAB), MK và AC trong (SAC) phải song song tương ứng. Theo Thales, SM/SA=SN/SB=SK/SC, trái với 2/5≠3/5. Khi ba tỉ số cùng bằng 2/5, MN∥AB và MK∥AC, hai đường MN,MK cắt nhau nên hai mặt phẳng song song. Tam giác MNK đồng dạng ABC với tỉ số cạnh 2/5; diện tích bằng (2/5)²·100=16 cm². Không nhân diện tích với 2/5.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B13-PRISM_RATIO"
+    ],
     "original_outcome_ids": [
       "TOP15-O17"
     ],
@@ -361,16 +392,18 @@
       "heading_id": "THPT-TOP15-P01",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P04",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
-    "stem": "Mặt cắt và tỉ số. Tứ diện S.ABC, (MNK)∥(ABC); tỉ số SM/SA=3/5. Nếu chu vi ABC là 30 cm và diện tích ABC là 75 cm², hãy tính chu vi và diện tích MNK. Giải thích vì sao hai phép tính dùng lũy thừa khác nhau.",
-    "answer_key": null,
-    "worked_solution": "Chu vi tỉ lệ t, bằng 18 cm; diện tích tỉ lệ t², bằng 27 cm². Đồng dạng biến mỗi cạnh nhân t, còn diện tích là tích hai chiều nên nhân t².",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong tứ diện S.ABC, M,N,K lần lượt thuộc phần trong các cạnh SA,SB,SC và (MNK)∥(ABC). Biết SM/SA=3/5, chu vi ABC là 30 cm và diện tích ABC là 75 cm². Tính chu vi và diện tích MNK. Giải thích vì sao hai phép tính dùng lũy thừa khác nhau.",
+    "answer_key": "Chu vi 18 cm; diện tích 27 cm².",
+    "worked_solution": "Vì hai mặt phẳng song song, các giao tuyến tương ứng MN∥AB, NK∥BC, MK∥AC. Tam giác MNK đồng dạng ABC với tỉ số cạnh t=3/5. Chu vi là tổng các độ dài nên bằng (3/5)·30=18 cm. Diện tích tỉ lệ với bình phương tỉ số đồng dạng, bằng (3/5)²·75=27 cm².",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B13-PRISM_RATIO"
+    ],
     "original_outcome_ids": [
       "TOP15-O17"
     ],
@@ -387,16 +420,18 @@
       "heading_id": "THPT-TOP15-P04",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P17",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Phân loại: (P):z=0, (Q):z=−3, (R):x=0, (T):3z=0; xét (P) với từng mặt còn lại.",
-    "answer_key": null,
+    "answer_key": "(P)∥(Q) phân biệt; (P)∩(R) là trục Oy (x=z=0); (P) trùng (T).",
     "worked_solution": "(P) song song phân biệt (Q); cắt (R) theo đường x=z=0; trùng (T). Khác biểu thức chưa chắc khác mặt.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B13-PLANE_POSITIONS"
+    ],
     "original_outcome_ids": [
       "TOP15-O14"
     ],
@@ -413,16 +448,18 @@
       "heading_id": "THPT-TOP15-P17",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P18",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong (P), a và b cắt nhau tại M; cả a,b song song (Q). Kết luận quan hệ (P),(Q). Nếu thay b song song a, kết luận còn chắc chắn không?",
-    "answer_key": null,
-    "worked_solution": "Vì hai đường cắt nhau trong (P) đều song song (Q), suy (P)∥(Q). Nếu a∥b, một mặt chứa chúng vẫn có thể cắt (Q), nên chưa đủ.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "(P)∥(Q); nếu a∥b thì chưa đủ.",
+    "worked_solution": "Theo dấu hiệu nhận biết, hai đường cắt nhau a,b trong (P) cùng song song (Q) thì (P)∥(Q). Nếu a∥b, xét (P): z=0 và (Q): y=0, a: (t;1;0), b: (t;2;0), t∈ℝ. Hai đường nằm trong (P), song song nhau và song song (Q), nhưng hai mặt phẳng cắt nhau theo Ox. Vậy điều kiện cắt nhau là thiết yếu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B13-PLANE_TEST"
+    ],
     "original_outcome_ids": [
       "TOP15-O15"
     ],
@@ -439,16 +476,18 @@
       "heading_id": "THPT-TOP15-P18",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P19",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho (P):z=0, (Q):z=4, (R):y=1. Viết phương trình tham số hai giao tuyến và chứng minh chúng song song.",
-    "answer_key": null,
+    "answer_key": "g=(P)∩(R): (t;1;0); h=(Q)∩(R): (u;1;4), t,u∈ℝ; g∥h.",
     "worked_solution": "g=(t,1,0), h=(t,1,4), cùng vectơ (1,0,0), phân biệt, cùng thuộc (R); g∥h.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B13-TRANSVERSAL"
+    ],
     "original_outcome_ids": [
       "TOP15-O16"
     ],
@@ -465,16 +504,18 @@
       "heading_id": "THPT-TOP15-P19",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P05",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Ảnh suy biến. Cho T(x,y,z)=(x−z,y,0). Tìm ảnh của U(1,2,3) và V(3,2,5); xác định ảnh của cả đoạn UV; nêu điều kiện phương làm đoạn co thành điểm.",
-    "answer_key": null,
-    "worked_solution": "T(U)=T(V)=(-2,2,0); mọi điểm U+λ(V−U) có ảnh giống U. Đoạn co thành điểm vì UV∥(1,0,1), đúng phương chiếu.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "T(U)=T(V)=(−2;2;0); ảnh đoạn UV là một điểm (−2;2;0); đoạn khác 0 co thành điểm khi phương UV song song phương chiếu (1;0;1).",
+    "worked_solution": "T(U)=(1−3;2;0)=(−2;2;0), T(V)=(3−5;2;0)=(−2;2;0). Điểm bất kỳ trên UV có dạng (1+2λ;2;3+2λ), 0≤λ≤1, nên ảnh luôn là (−2;2;0). Vì UV⃗=(2;0;2)=2(1;0;1), đoạn UV song song phương chiếu. Tổng quát, hai điểm phân biệt có cùng ảnh khi và chỉ khi vectơ nối chúng cùng phương với (1;0;1).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B14-DEGENERACY"
+    ],
     "original_outcome_ids": [
       "TOP15-O19"
     ],
@@ -491,16 +532,18 @@
       "heading_id": "THPT-TOP15-P05",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P20",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chiếu song song theo (1,0,2) lên (P):z=0. Tìm ảnh M(3,1,4) và giải thích vì sao không dùng T(x,y,z)=(x−z,y,0).",
-    "answer_key": null,
-    "worked_solution": "Chuyển điểm theo λ(1,0,2), λ=−z/2=−2: M′=(1,1,0). Công thức T cũ dành cho phương (1,0,1), không được dùng sai phương.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "M′(1;1;0); không dùng T(x,y,z)=(x−z,y,0) vì khác phương chiếu.",
+    "worked_solution": "Đường chiếu qua M có dạng (3+λ;1;4+2λ). Giao với z=0 khi λ=−2, được M′(1;1;0). Phép chiếu theo phương (1;0;2) có công thức (x−z/2;y;0), khác T(x,y,z)=(x−z;y;0) ứng với phương (1;0;1).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B14-PROJECTION_DEF"
+    ],
     "original_outcome_ids": [
       "TOP15-O18"
     ],
@@ -517,16 +560,18 @@
       "heading_id": "THPT-TOP15-P20",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P21",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Qua phép chiếu T(x,y,z)=(x−z,y,0), ảnh đường d:(x,y,z)=(2+t,5,−1+t) là đường hay điểm?",
-    "answer_key": null,
+    "answer_key": "Ảnh là điểm (3;5;0).",
     "worked_solution": "T(d(t))=(2+t−(−1+t),5,0)=(3,5,0), là một điểm vì vectơ chỉ phương d=(1,0,1) trùng hướng chiếu.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B14-DEGENERACY"
+    ],
     "original_outcome_ids": [
       "TOP15-O19"
     ],
@@ -543,16 +588,18 @@
       "heading_id": "THPT-TOP15-P21",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-P22",
-    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho A(1,0,1),B(5,2,1),M=(A+B)/2. Dưới T(x,y,z)=(x−z,y,0), tính A′, B′, M′ và kiểm tính trung điểm.",
-    "answer_key": null,
+    "answer_key": "A′(0;0;0), B′(4;2;0), M′(2;1;0); M′ là trung điểm A′B′.",
     "worked_solution": "A′=(0,0,0), B′=(4,2,0), M=(3,1,1) nên M′=(2,1,0), đúng trung điểm A′B′.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B14-AFFINE_INVARIANTS"
+    ],
     "original_outcome_ids": [
       "TOP15-O20"
     ],
@@ -569,6 +616,6 @@
       "heading_id": "THPT-TOP15-P22",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
