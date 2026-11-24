@@ -38,7 +38,7 @@
 
     ### 1.2. Các tính chất thừa nhận
 
-    Qua hai điểm phân biệt chỉ có một đường thẳng; qua ba điểm **không thẳng hàng** chỉ có một mặt phẳng. Điều đó giải thích vì sao một giá ba chân có thể đặt ổn định lên mặt bàn, còn một đường thẳng đi qua ba điểm thẳng hàng vẫn có thể nằm trong vô số mặt phẳng khác nhau. SGK còn thừa nhận có thể chọn bốn điểm không đồng phẳng: không gian không chỉ là một mặt phẳng duy nhất.
+    Qua hai điểm phân biệt chỉ có một đường thẳng; qua ba điểm **không thẳng hàng** chỉ có một mặt phẳng. Chẳng hạn, ba điểm tiếp xúc không thẳng hàng của một giá ba chân xác định một mặt phẳng; độ ổn định của giá còn phụ thuộc trọng tâm và cách đặt, còn một đường thẳng đi qua ba điểm thẳng hàng vẫn có thể nằm trong vô số mặt phẳng khác nhau. SGK còn thừa nhận có thể chọn bốn điểm không đồng phẳng: không gian không chỉ là một mặt phẳng duy nhất.
 
     Ta cần ghi nhớ **sáu tính chất thừa nhận**, với đúng điều kiện của chúng: (1) duy nhất đường thẳng qua hai điểm phân biệt; (2) duy nhất mặt phẳng qua ba điểm không thẳng hàng; (3) tồn tại bốn điểm không đồng phẳng; (4) nếu một đường có hai điểm phân biệt thuộc mặt thì cả đường thuộc mặt; (5) hai mặt phẳng phân biệt có điểm chung thì giao nhau theo đường thẳng đi qua điểm chung; (6) trong mỗi mặt phẳng, những kết quả của hình học phẳng vẫn đúng.
 
@@ -84,7 +84,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B10-01_R01.svg" alt="Tứ diện S.ABC với bốn mặt tam giác"><figcaption><strong>Hướng dẫn đọc:</strong> tứ diện \(S.ABC\) có thể chọn \(ABC\) làm đáy hoặc chọn bất kì mặt tam giác khác làm đáy. Đây là nhận xét của SGK, không phải phép đổi số đỉnh hay số mặt.</figcaption></figure>
 
-    Một bài quan trọng của mục này là **tìm giao điểm đường thẳng với mặt phẳng**. Cho tứ diện \(ABCD\), \(E\) nằm trong tam giác \(BCD\), \(F\) nằm giữa \(A,E\). Tia \(BE\) cắt cạnh \(CD\) tại \(M\). Do \(E\in BM\), hai đường \(AE,BF\) cùng thuộc \((ABM)\). Mặt phẳng \((ABM)\) và \((ACD)\) cùng chứa \(A,M\), nên giao tuyến là \(AM\). Khi đó tìm \(N=BF\cap AM\); ta được \(N=BF\cap(ACD)\). Cách làm đúng dựa trên **mặt phẳng phụ chứa đường thẳng cần tìm giao**, không đoán từ hình.
+    Một bài quan trọng của mục này là **tìm giao điểm đường thẳng với mặt phẳng**. Cho tứ diện \(ABCD\), \(E\) nằm trong tam giác \(BCD\), \(F\) nằm giữa \(A,E\). Tia \(BE\) cắt cạnh \(CD\) tại \(M\). Do \(E\in BM\), hai đường \(AE,BF\) cùng thuộc \((ABM)\). Mặt phẳng \((ABM)\) và \((ACD)\) cùng chứa \(A,M\), nên giao tuyến là \(AM\). Vì \(E\) nằm giữa \(B,M\) và \(F\) nằm giữa \(A,E\), \(F\) nằm trong tam giác \(ABM\). Tia \(BF\) gặp cạnh \(AM\) tại một điểm \(N\) nằm giữa \(A,M\). Khi đó ta được \(N=BF\cap(ACD)\). Cách làm đúng dựa trên **mặt phẳng phụ chứa đường thẳng cần tìm giao**, không đoán từ hình.
 
     **Vận dụng.** Đếm số đỉnh, số cạnh, số mặt của hình chóp \(S.ABCD\) và tứ diện \(ABCD\). Cạnh nào đối diện với \(AB\) trong tứ diện?
 
@@ -102,7 +102,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Mặt phẳng, điểm thuộc mặt phẳng</strong><p>Mặt phẳng là đối tượng hình học <strong>không có bề dày và không có giới hạn</strong>. Kí hiệu \((P)\), \((\alpha)\). Khi \(A\) thuộc \((P)\) viết \(A\in(P)\); khi \(B\) không thuộc viết \(B\notin(P)\). Khi mọi điểm trên đường \(d\) đều thuộc mặt phẳng, viết \(d\subset(P)\).</p></div>
 
-    **Chú ý — Hình biểu diễn:** Mặt phẳng được biểu diễn bằng một hình bình hành hoặc một góc, không phải mặt phẳng chỉ có chừng ấy diện tích. Hình biểu diễn đường thẳng, đoạn thẳng vẫn là đường/đoạn; giữ quan hệ liên thuộc, song song/cắt nhau của đường; cạnh khuất vẽ nét đứt, cạnh nhìn thấy vẽ nét liền. Không suy ra kích thước/góc thật từ một hình chiếu.
+    **Chú ý — Hình biểu diễn:** Mặt phẳng được biểu diễn bằng một hình bình hành hoặc một góc, không phải mặt phẳng chỉ có chừng ấy diện tích. Với phép chiếu song song, đường thẳng hoặc đoạn thẳng không cùng phương chiếu được biểu diễn bằng đường hoặc đoạn tương ứng; đường cùng phương chiếu có thể thu thành một điểm. Quan hệ liên thuộc được bảo toàn; hai đường song song có hình chiếu song song hoặc trùng nhau nếu không suy biến. Không suy ngược rằng hai đường cắt nhau trên hình biểu diễn thì cắt nhau trong không gian; cạnh khuất vẽ nét đứt, cạnh nhìn thấy vẽ nét liền. Không suy ra kích thước/góc thật từ một hình chiếu.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B10_PLANE_MEMBERSHIP_AUTHORING_20261123.svg" alt="Kí hiệu điểm thuộc mặt và đường nằm trong mặt"><figcaption><strong>Tra hình:</strong> \(A,B\in(P)\), đường \(AB\subset(P)\) và \(C\notin(P)\); chú ý phân biệt kí hiệu **điểm thuộc** với **đường nằm trong**.</figcaption></figure>
 
