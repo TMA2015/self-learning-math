@@ -18,7 +18,7 @@
 
 === "Khám phá kiến thức"
 
-    Người thợ xây có thể căng dây theo phương của các hàng gạch, phía trên mặt đất. Dây không chạm đất và hướng theo một đường nằm trên mặt đất, nên gợi lên quan hệ **đường thẳng song song với mặt phẳng**. Nhưng một thanh cột dọc khung thành lại chạm mặt đất, còn cạnh khung nằm sát đất thuộc luôn mặt phẳng đất. Bằng cách phân biệt ba tình huống đó, ta biết khi nào được nói song song và khi nào phải kiểm thêm điều kiện.
+    Người thợ xây có thể căng dây nằm ngang ở một độ cao cố định trên mặt đất phẳng nằm ngang. Đường thẳng chứa dây kéo dài theo phương song song với mặt đất và không có điểm chung với mặt đất, nên gợi lên quan hệ **đường thẳng song song với mặt phẳng**. Nhưng đường thẳng chứa một cột khung thành dựng thẳng đứng lại cắt mặt đất tại chân cột, còn cạnh khung nằm sát đất thuộc luôn mặt phẳng đất. Bằng cách phân biệt ba tình huống đó, ta biết khi nào được nói song song và khi nào phải kiểm thêm điều kiện.
 
     ### 1.1. Đường thẳng song song với mặt phẳng
 
