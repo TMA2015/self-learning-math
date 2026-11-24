@@ -801,6 +801,50 @@ function verifyG11W7(previous,current,changed,expected){
  console.log("PASS #1039 W7 six source locks, eight reused SVG, frozen W1–W6, assessment boundary, exact hook");
 }
 
+const G12_W8_ROWS=[[1,"64f6a142a88e8c4dd63dff3f7d2220787fcdec5c","28f6b83ab28731f51667164fe5f239cb868b948c",7,"docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md"],[2,"d6e517a980ec9259345285964f4c42767faa6122","b40ce4dad554e94a6cb88c5b5d20274f91e8c336",7,"docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md"],[3,"02f4b8a446e89d824b7b08c833fc306ca9db02c6","be100bd245a9caaa511c98f88b5d76280d9f503f",7,"docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md"],[4,"a9a9a8f823ee85fe53014150b5cda31201867a4d","d3949a0120e7fd19a690a2ac6f7eddd25cc922f4",7,"docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md"],[5,"54c9c90323f7b1d9077270d90627864f5a468c03","6f9a867a541530c2c44ca03f016eb59348977306",8,"docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md"]];
+const G12_W8_NEW=[["docs/assets/images/thpt/G12_B01_FIG02_READ_DERIVATIVE_AUTHORING_20261124.svg","4720ec1c26e8ecc6ff5707281b9aba3465d31df5"],["docs/assets/images/thpt/G12_B03_FIG02_OBLIQUE_AUTHORING_20261124.svg","62d2cf3e7604d331ea26ac7b49f863ae8793d97a"],["docs/assets/images/thpt/G12_B04_FIG03_QUADRATIC_AUTHORING_20261124.svg","432f122215bf6ea897f5d13b3eab7327cf14e9b9"],["docs/assets/images/thpt/G12_B04_FIG04_CUBIC_MONOTONE_AUTHORING_20261124.svg","a338c274f85e030033a524810639510e099989bf"],["docs/assets/images/thpt/G12_B04_FIG05_OBLIQUE_EXTREMA_AUTHORING_20261124.svg","9f800741b8d016e3039e6cff35721b22a6dc0a81"],["docs/assets/images/thpt/G12_B04_FIG06_OBLIQUE_MONOTONE_AUTHORING_20261124.svg","1f34ef45faeeaeaa38f5c1d6823ba713e7cc3b4c"],["docs/assets/images/thpt/G12_B04_FIG07_CHECK_QUADRATIC_20261124.svg","585b277a399a8961ea6617ec0851e2235ed06faa"],["docs/assets/images/thpt/G12_B04_FIG08_CHECK_CUBIC_20261124.svg","878b6f0ed35799daeef7f1db33781129277776cd"],["docs/assets/images/thpt/G12_B04_FIG09_CHECK_RATIONAL_20261124.svg","e846dbbc0cb8374a825179f8e4a43e6149f1efdb"],["docs/assets/images/thpt/G12_B04_FIG10_CHECK_OBLIQUE_20261124.svg","64ba475d59101e1dc0311f5fab8b9922162c019b"],["docs/assets/images/thpt/G12_B05_FIG02_BOX_NET_AUTHORING_20261124.svg","abc066d14e33a6e1fcec829aae34e47d4f0a273e"],["docs/assets/images/thpt/G12_B05_FIG03_TRAVEL_AUTHORING_20261124.svg","8303761922a9fa53e41b5dad2482ac9bb9b6950a"],["docs/assets/images/thpt/G12_B05_FIG04_POLLUTION_COST_AUTHORING_20261124.svg","fa76ba8469c7fb27e2fe3f83f8b8b3b8bf04a497"],["docs/assets/images/thpt/G12_B05_FIG05_PROFIT_AUTHORING_20261124.svg","340dc2bea3ce34ca1cc06c608c50c16deb19f1d4"]];
+const G12_W8_UPDATED=[["docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg","057991020c0f9349f160047cd87ae35ce03a87ef","cd8c5bea9b17bb89aa0edcd40f49dd317d834c86"]];
+const G12_W8_EXISTING=[["docs/assets/images/thpt/G12_B01_FIG01_DERIVATIVE_SIGN_R00.svg","e2696224533994826104e6c505d9dab26fc0a2e2"],["docs/assets/images/thpt/G12_B03_FIG01_ASYMPTOTES_R00.svg","802f01f5b8dce392e3a064a54efe33ae1aea44fc"],["docs/assets/images/thpt/G12_B04_FIG01_RATIONAL_SURVEY_R00.svg","529b05d33fb0347dab70587c84c8ec08789c5c98"],["docs/assets/images/thpt/G12_B04_FIG02_CUBIC_SURVEY_R00.svg","8e4cf830e5aa1cac3fe37b9b3c3d93d9b34c006b"],["docs/assets/images/thpt/G12_B05_FIG01_BOX_VOLUME_R00.svg","eacd5ba60f25d87c102917a55d314fb16d6f8341"]];
+const G12_W8_LESSONS=["docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md"];
+const G12_W8_FILES=["docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md","docs/assets/images/thpt/G12_B01_FIG02_READ_DERIVATIVE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B03_FIG02_OBLIQUE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG03_QUADRATIC_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG04_CUBIC_MONOTONE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG05_OBLIQUE_EXTREMA_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG06_OBLIQUE_MONOTONE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG07_CHECK_QUADRATIC_20261124.svg","docs/assets/images/thpt/G12_B04_FIG08_CHECK_CUBIC_20261124.svg","docs/assets/images/thpt/G12_B04_FIG09_CHECK_RATIONAL_20261124.svg","docs/assets/images/thpt/G12_B04_FIG10_CHECK_OBLIQUE_20261124.svg","docs/assets/images/thpt/G12_B05_FIG02_BOX_NET_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B05_FIG03_TRAVEL_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B05_FIG04_POLLUTION_COST_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B05_FIG05_PROFIT_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
+function verifyG12W8(previous,current,changed,expected){
+ assert.equal(previous,"11acdb75e861442744c207537935e01ad7747a07","W8 exact published W7 main");
+ assert.deepEqual(changed.slice().sort(),G12_W8_FILES.slice().sort());
+ assert.deepEqual(expected.slice().sort(),G12_W8_LESSONS.slice().sort());
+ const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
+ const receipt=read(current,G11_W1_HANDOFF);
+ assert.equal(blob(read(previous,G11_W1_HANDOFF)),"ddf34e9a408a675e16812680505f50738c83a475");
+ assert.equal(blob(receipt),"b8b7c2f06bcaa0ca22a1cfe995483cce38896089");
+ assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
+ const hook="hooks/sgk_golden_first_paint.py";
+ const oldHook=read(previous,hook).toString("utf8"),nowHook=read(current,hook).toString("utf8");
+ assert.equal(blob(read(current,hook)),"462147b1936a9f16fb4a6031915be516445874f2");
+ const start=nowHook.indexOf("# #1039 W8 exact G12 ChI routes;");
+ const end=nowHook.indexOf("def on_post_page(output, page, config):");
+ assert(start>0&&end>start);
+ assert.equal((nowHook.slice(0,start)+nowHook.slice(end)).replace("    if uri in _W8_ROUTES:\n        return _render_w8(output, uri)\n",""),oldHook,"prior routes unchanged");
+ for(const file of ["docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",...G11_W7_LESSONS,...G11_W6_LESSONS,...G11_W5_LESSONS,...G11_W4_LESSONS,...G11_W3_LESSONS,...G11_W2_LESSONS,...G11_W1_LESSONS])assert.equal(blob(read(previous,file)),blob(read(current,file)));
+ for(const [n,oldSha,newSha,count,file] of G12_W8_ROWS){
+  assert.equal(blob(read(previous,file)),oldSha);
+  const source=read(current,file),content=source.toString("utf8");
+  assert.equal(blob(source),newSha);assert.equal(blob(fs.readFileSync(path.join(root,file))),newSha);
+  assert.deepEqual(content.split("\n").filter(l=>l.startsWith('=== "')),['=== "Khám phá kiến thức"','=== "Kiến thức SGK"','=== "Ví dụ"','=== "Lỗi thường gặp"']);
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final|g12-chi-selfcheck|g12-chapter-selfcheck)/i.test(content));
+  const recovery=content.split('=== "Lỗi thường gặp"')[1];
+  assert.equal(recovery.split("\n").filter(l=>/^    ### 4\.\d+\./.test(l)).length,count);
+  assert.equal(recovery.split("\n").filter(l=>l.startsWith("    **Sai ở đâu:**")).length,count);
+  assert(recovery.includes("**Học tiếp:**")&&recovery.includes('class="thpt-r4-footnote"'));
+  assert(receipt.toString("utf8").includes(oldSha)&&receipt.toString("utf8").includes(newSha));
+  console.log("SCOPED_G12_W8_SOURCE_PASS "+file+" "+newSha);
+ }
+ for(const [file,h] of [...G12_W8_EXISTING,...G11_W7_ASSETS,...G11_W6_NEW_ASSETS,...G11_W6_EXISTING_ASSETS,...G11_W5_NEW_ASSETS,...G11_W5_EXISTING_ASSETS,...G11_W4_NEW_ASSETS,...G11_W4_EXISTING_ASSETS,...G11_W3_NEW_ASSETS,...G11_W3_EXISTING_ASSETS,...G11_W2_ASSETS,...G11_W1_ASSETS]){
+  assert.equal(blob(read(previous,file)),h);assert.equal(blob(read(current,file)),h);
+ }
+ for(const [file,h] of G12_W8_NEW){assert.throws(()=>read(previous,file),"new SVG cannot replace existing path");assert.equal(blob(read(current,file)),h);assert.equal(blob(fs.readFileSync(path.join(root,file))),h);}
+ for(const [file,oldSha,h] of G12_W8_UPDATED){assert.equal(blob(read(previous,file)),oldSha);assert.equal(blob(read(current,file)),h);assert.equal(blob(fs.readFileSync(path.join(root,file))),h);}
+ console.log("PASS #1039 W8 five source locks, 14 new/1 updated/5 reused SVG, frozen G11 and assessment boundary, exact hook");
+}
+
 function main(){
  const previous=process.env.BEFORE_SHA,current=process.env.HEAD_SHA;
  assert(sha(previous)&&sha(current),"Full nonzero main push before/head commits required");
@@ -808,6 +852,9 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.length===G12_W8_FILES.length&&changed.every(x=>G12_W8_FILES.includes(x))){
+  verifyG12W8(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
+ }
  if(changed.length===G11_W7_FILES.length&&changed.every(x=>G11_W7_FILES.includes(x))){
   verifyG11W7(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
  }

@@ -580,6 +580,9 @@ const G11_W5_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/t
 const G11_W5_FILES=new Set(["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md","docs/assets/images/thpt/G11_B20_DECREASING_EXP_LOG_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG11W5(files){return files.length===G11_W5_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W5_FILES.has(p));}
 
+const G12_W8_LESSONS=["docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md"];
+const G12_W8_FILES=new Set(["docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md","docs/assets/images/thpt/G12_B01_FIG02_READ_DERIVATIVE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B03_FIG02_OBLIQUE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG03_QUADRATIC_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG04_CUBIC_MONOTONE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG05_OBLIQUE_EXTREMA_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG06_OBLIQUE_MONOTONE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG07_CHECK_QUADRATIC_20261124.svg","docs/assets/images/thpt/G12_B04_FIG08_CHECK_CUBIC_20261124.svg","docs/assets/images/thpt/G12_B04_FIG09_CHECK_RATIONAL_20261124.svg","docs/assets/images/thpt/G12_B04_FIG10_CHECK_OBLIQUE_20261124.svg","docs/assets/images/thpt/G12_B05_FIG02_BOX_NET_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B05_FIG03_TRAVEL_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B05_FIG04_POLLUTION_COST_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B05_FIG05_PROFIT_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
+function isG12W8(files){return files.length===G12_W8_FILES.size&&new Set(files).size===files.length&&files.every(p=>G12_W8_FILES.has(p));}
 const G11_W7_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-viii/bai-28.md","docs/thpt-preview/sgk/lop-11/chuong-viii/bai-29.md","docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md","docs/thpt-preview/sgk/lop-11/chuong-ix/bai-31.md","docs/thpt-preview/sgk/lop-11/chuong-ix/bai-32.md","docs/thpt-preview/sgk/lop-11/chuong-ix/bai-33.md"];
 const G11_W7_FILES=new Set(["docs/thpt-preview/sgk/lop-11/chuong-viii/bai-28.md","docs/thpt-preview/sgk/lop-11/chuong-viii/bai-29.md","docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md","docs/thpt-preview/sgk/lop-11/chuong-ix/bai-31.md","docs/thpt-preview/sgk/lop-11/chuong-ix/bai-32.md","docs/thpt-preview/sgk/lop-11/chuong-ix/bai-33.md","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG11W7(files){return files.length===G11_W7_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W7_FILES.has(p));}
@@ -593,6 +596,7 @@ function classify(paths,{manual=false}={}){
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isG12W8(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W8_LESSONS.join(","),reason:"OWNER_1039_W8_EXACT_SOURCE_AND_BROWSER"};
  if(isG11W7(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G11_W7_LESSONS.join(","),reason:"OWNER_1039_W7_EXACT_SOURCE_AND_BROWSER"};
  if(isG11W6(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G11_W6_LESSONS.join(","),reason:"OWNER_1039_W6_EXACT_SOURCE_AND_BROWSER"};
  if(isG11W5(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G11_W5_LESSONS.join(","),reason:"OWNER_1039_W5_EXACT_SOURCE_AND_BROWSER"};
@@ -738,6 +742,13 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const g12W8=[...G12_W8_FILES];
+ assert.equal(classify(g12W8).impact,"SCOPED_LESSON");
+ assert.equal(classify(g12W8).changed_lessons,G12_W8_LESSONS.join(","));
+ assert.equal(classify(g12W8.slice(1)).impact,"FULL");
+ assert.equal(classify([...g12W8,"docs/thpt-preview/sgk/lop-12/chuong-i/luyen-tap.md"]).impact,"FULL");
+ assert.equal(classify([...g12W8,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
+ assert.equal(classify(g12W8,{manual:true}).impact,"FULL");
  const g11W7=[...G11_W7_FILES];
  assert.equal(classify(g11W7).impact,"SCOPED_LESSON");
  assert.equal(classify(g11W7).changed_lessons,G11_W7_LESSONS.join(","));
