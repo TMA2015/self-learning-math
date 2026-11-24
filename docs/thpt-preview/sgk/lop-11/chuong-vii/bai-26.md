@@ -24,9 +24,9 @@
     \[
     MK^2=MH^2+HK^2>MH^2\quad\Rightarrow\quad MK>MH.
     \]
-    Tương tự, nếu \(H\) là chân vuông góc của \(M\) xuống mặt \((P)\), thì \(MH\perp HK\) với mọi \(K\in(P)\). Bởi vậy đoạn \(MH\) là **đoạn ngắn nhất** từ \(M\) tới đường hoặc mặt. Khi \(K=H\), độ dài bằng đúng \(MH\).
+    Tương tự, nếu \(M\notin(P)\) và \(H\) là chân vuông góc của \(M\) xuống mặt \((P)\), thì \(MH\perp HK\) với mọi \(K\in(P)\), \(K\ne H\). Nếu \(M\in(P)\), khoảng cách bằng 0. Bởi vậy đoạn \(MH\) là **đoạn ngắn nhất** từ \(M\) tới đường hoặc mặt. Khi \(K=H\), độ dài bằng đúng \(MH\).
 
-    **Định nghĩa theo hình chiếu:** Khoảng cách \(d(M,a)=MH\) khi \(H\in a\), \(MH\perp a\); khoảng cách \(d(M,(P))=MH\) khi \(H\in(P)\), \(MH\perp(P)\). Khoảng cách **không âm** và bằng \(0\) khi \(M\) đã nằm trên đối tượng. Ta không gọi một đoạn xiên dài hơn là “khoảng cách”. Nếu đề cho nhiều đường trong mặt phẳng mà chưa chứng minh pháp tuyến, phải dùng tiêu chuẩn **hai đường cắt nhau** của Bài 23.
+    **Định nghĩa theo hình chiếu:** Khoảng cách \(d(M,a)=MH\) với \(H\) là hình chiếu vuông góc của \(M\) trên \(a\); tương tự \(d(M,(P))=MH\) với \(H\) là hình chiếu vuông góc của \(M\) trên \((P)\). Khi \(M\) thuộc đối tượng thì \(H=M\); nếu không, đường \(MH\) vuông góc với đối tượng. Khoảng cách **không âm** và bằng \(0\) khi \(M\) đã nằm trên đối tượng. Ta không gọi một đoạn xiên dài hơn là “khoảng cách”. Nếu đề cho nhiều đường trong mặt phẳng mà chưa chứng minh pháp tuyến, phải dùng tiêu chuẩn **hai đường cắt nhau** của Bài 23.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg" alt="Điểm M ngoài mặt P, H chân vuông góc và K là điểm khác trên P, đoạn MH là khoảng cách ngắn nhất so với đoạn xiên MK"><figcaption><strong>Hướng dẫn đọc:</strong> từ \(M\), đoạn đỏ \(MH\) tới chân \(H\) vuông góc **cả mặt \((P)\)**; đoạn xanh \(MK\) tới điểm \(K\) khác \(H\) là đoạn xiên. So sánh bằng \(MK^2=MH^2+HK^2\), không đo từ hình vẽ phối cảnh. Với đường \(a\), thay \((P)\) bằng \(a\) và giữ lập luận tương tự.</figcaption></figure>
 
@@ -82,13 +82,13 @@
 
     ??? tip "Kiểm lỗi"
 
-        Không lấy \(h\) cho khoảng cách từ \(AA'\) đến mặt bên. Đường \(AA'\) nằm **song song** mặt bên, khoảng cách được đo theo **\(AO\)** trong mặt đáy.
+        Không lấy \(h\) cho khoảng cách từ \(AA'\) đến mặt phẳng chéo \((BDD'B')\). Đường \(AA'\) nằm **song song** mặt phẳng này, khoảng cách được đo theo **\(AO\)** trong mặt đáy.
 
     ### 1.3. Khoảng cách giữa hai đường thẳng chéo nhau
 
     **Khó khăn mới:** Hai đường chéo nhau không song song cũng không gặp nhau, nên không thể lấy tùy tiện một đầu trên mỗi đường rồi gọi đoạn nối là “khoảng cách”. Đường \(\Delta\) được gọi là **đường vuông góc chung** của \(a,b\) nếu \(\Delta\) **cắt cả hai** và **vuông góc với cả hai**. Nếu \(\Delta\cap a=\{M\}\), \(\Delta\cap b=\{N\}\), thì \(d(a,b)=MN\). Phải kiểm đủ **bốn điều kiện**: \(M\in a\), \(N\in b\), \(MN\perp a\), \(MN\perp b\).
 
-    **Vì sao HĐ4 SGK dùng mặt phẳng song song?** Chọn \((Q)\) chứa \(b\) và **song song đường \(a\)**. Chiếu vuông góc \(a\) xuống \((Q)\) thành đường \(a'\), rồi tìm \(N=a'\cap b\). Dựng đoạn pháp tuyến từ \(N\) lên \(a\), được \(M\). Vì \(a\parallel(Q)\), đường \(MN\) vuông góc \((Q)\), nên đồng thời vuông góc \(b\subset(Q)\) và \(a\parallel a'\subset(Q)\). Do đó \(MN\) là đoạn vuông góc chung. Phương pháp này chuyển **bài toán hai đường chéo nhau** về **khoảng cách đường–mặt song song**:
+    **Vì sao HĐ4 SGK dùng mặt phẳng song song?** Qua một điểm \(N_0\in b\), dựng đường \(c\parallel a\). Hai đường \(b,c\) cắt nhau và khác phương nên xác định mặt phẳng \((Q)\). Vì \(a,b\) chéo nhau, \(a\) không nằm trong \((Q)\); do \(a\parallel c\subset(Q)\), suy ra \(a\parallel(Q)\). Chiếu vuông góc \(a\) xuống \((Q)\) được \(a'\parallel a\), khác phương với \(b\), nên \(a',b\) cắt nhau tại duy nhất \(N\). Đường qua \(N\) vuông góc \((Q)\) gặp \(a\) tại điểm \(M\) có hình chiếu là \(N\). Vì \(a\parallel(Q)\), đường \(MN\) vuông góc \((Q)\), nên đồng thời vuông góc \(b\subset(Q)\) và \(a\parallel a'\subset(Q)\). Do đó \(MN\) là đoạn vuông góc chung. Phương pháp này chuyển **bài toán hai đường chéo nhau** về **khoảng cách đường–mặt song song**:
     \[
     d(a,b)=d(a,(Q))=MN.
     \]
@@ -104,7 +104,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_SABC_COMMON_PERPENDICULAR_AUTHORING_20261123.svg" alt="Chóp SABC có SA vuông góc mặt đáy, H chân từ A tới BC, AH vuông góc cả SA và BC"><figcaption><strong>Hướng dẫn đọc Ví dụ 3:</strong> \(A\) thuộc đường \(SA\), \(H\) thuộc \(BC\); \(AH\) đỏ **vuông góc \(BC\)** do dựng chân, đồng thời vuông góc **\(SA\)** vì \(SA\perp(ABC)\). Lúc ấy mới tính \(AH\) bằng tam giác \(ABH\) vuông tại \(H\) với góc \(60^\circ\) ở \(B\).</figcaption></figure>
 
-    **Vì sao là khoảng cách nhỏ nhất?** Với mọi \(X\in a\), \(Y\in b\), phép dời các điểm dọc theo hai đường không thể làm đoạn nối ngắn hơn **đoạn vuông góc chung**; phần độ dài nằm theo các phương \(a,b\) sẽ làm tăng bình phương độ dài theo định lí Pythagore trong hệ phương thích hợp. Trong phạm vi những đối tượng SGK đang xét, khoảng cách chính là độ dài ngắn nhất giữa hai điểm thuộc hai hình.
+    **Vì sao là khoảng cách nhỏ nhất?** Với mọi \(X\in a\), \(Y\in b\), gọi \(X'\) là hình chiếu vuông góc của \(X\) lên \((Q)\). Vì \(a\parallel(Q)\), \(XX'=MN\). Nếu \(Y\ne X'\), tam giác \(XX'Y\) vuông tại \(X'\), nên \(XY^2=XX'^2+X'Y^2>MN^2\). Nếu \(Y=X'\), ta có \(XY=MN\). Đẳng thức chỉ xảy ra khi \(X'=Y=N\), tức \(X=M\). Vậy đoạn vuông góc chung tồn tại duy nhất và là đoạn ngắn nhất. Trong phạm vi những đối tượng SGK đang xét, khoảng cách chính là độ dài ngắn nhất giữa hai điểm thuộc hai hình.
 
     **Vận dụng.** Với chóp \(S.ABC\), \(SA\perp(ABC)\), \(AB=8\) cm và \(\angle ABC=60^\circ\). Dựng \(H\) là chân từ \(A\) xuống \(BC\). Tính \(d(SA,BC)\) và nêu đủ điều kiện của đoạn vuông góc chung.
 
@@ -122,9 +122,9 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Khoảng cách từ điểm đến đường thẳng</strong><p>Với điểm \(M\) và đường \(a\), gọi \(H\) là hình chiếu vuông góc của \(M\) trên \(a\). <strong>\(d(M,a)=MH\)</strong>. Nếu \(M\in a\) thì \(H=M\) và \(d(M,a)=0\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Khoảng cách từ điểm đến mặt phẳng</strong><p>Với điểm \(M\) và mặt phẳng \((P)\), gọi \(H\) là chân đường vuông góc từ \(M\) xuống \((P)\). <strong>\(d(M,(P))=MH\)</strong>. Khoảng cách bằng \(0\) khi và chỉ khi \(M\in(P)\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Khoảng cách từ điểm đến mặt phẳng</strong><p>Với điểm \(M\) và mặt phẳng \((P)\), gọi \(H\) là hình chiếu vuông góc của \(M\) lên \((P)\); nếu \(M\in(P)\) thì \(H=M\). <strong>\(d(M,(P))=MH\)</strong>. Khoảng cách bằng \(0\) khi và chỉ khi \(M\in(P)\).</p></div>
 
-    **Vì sao là đoạn ngắn nhất?** Với \(K\) thuộc đường hoặc mặt tương ứng, \(MK^2=MH^2+HK^2\ge MH^2\), nên \(MK\ge MH\), đẳng thức chỉ tại \(K=H\). Khi hình chiếu là \(M\) (điểm thuộc đối tượng), độ dài bằng \(0\). Không lấy chiều dài đoạn xiên tùy ý.
+    **Vì sao là đoạn ngắn nhất?** Nếu \(M\) nằm ngoài đường hoặc mặt và \(K\ne H\) thuộc đối tượng tương ứng, tam giác \(MHK\) vuông tại \(H\), nên \(MK^2=MH^2+HK^2>MH^2\). Với \(K=H\) có đẳng thức. Nếu \(M\) thuộc đối tượng, khoảng cách bằng 0 tại \(H=M\). Không lấy chiều dài đoạn xiên tùy ý.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg" alt="Đoạn MH vuông góc mặt P ngắn hơn đoạn xiên MK theo định lí Pythagore"><figcaption><strong>Tra hình:</strong> \(H\) là chân của \(M\) trên mặt \((P)\), \(K\) là một điểm khác trong \((P)\). \(MH\perp HK\) nên \(MK\ge MH\). Tương tự nếu \((P)\) được thay bởi một đường \(a\), với \(H,K\in a\).</figcaption></figure>
 
@@ -142,7 +142,7 @@
 
     **Chiều cao lăng trụ:** Khoảng cách giữa hai mặt phẳng đáy song song là chiều cao lăng trụ. Nếu lăng trụ đứng, chiều cao bằng cạnh bên; với lăng trụ xiên, hai độ dài này khác nhau.
 
-    **Ví dụ 2 SGK:** Hình hộp đứng đáy thoi cạnh \(a\), \(\angle BAD=120^\circ\), cạnh bên \(h\). Đường \(A'C'\parallel(ABCD)\), suy \(d(A'C',(ABCD))=AA'=h\). Đường \(AA'\parallel(BDD'B')\). Gọi \(O=AC\cap BD\): \(AO\perp BD\) do đáy là hình thoi, \(AO\perp BB'\) vì \(BB'\perp(ABCD)\); vậy \(AO\perp(BDD'B')\). Tam giác \(ABO\) vuông tại \(O\) có \(\angle ABO=30^\circ\), suy \(AO=a/2\). Vì thế \(d(AA',(BDD'B'))=a/2\).
+    **Ví dụ 2 SGK:** Hình hộp đứng đáy thoi cạnh \(a\), \(\angle BAD=120^\circ\), cạnh bên \(h\). Đường \(A'C'\parallel(ABCD)\), suy \(d(A'C',(ABCD))=AA'=h\). Đường \(AA'\parallel BB'\), với \(BB'\subset(BDD'B')\); \(A\notin(BDD'B')\) vì giao của mặt này với đáy là \(BD\). Do đó \(AA'\parallel(BDD'B')\). Gọi \(O=AC\cap BD\): \(AO\perp BD\) do đáy là hình thoi, \(AO\perp BB'\) vì \(BB'\perp(ABCD)\); vậy \(AO\perp(BDD'B')\). Tam giác \(ABO\) vuông tại \(O\) có \(\angle ABO=30^\circ\), suy \(AO=a/2\). Vì thế \(d(AA',(BDD'B'))=a/2\).
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_RHOMBUS_PRISM_DISTANCES_AUTHORING_20261123.svg" alt="Đọc hình hộp đáy thoi có AA phẩy vuông góc đáy bằng h, AO vuông góc mặt BDD phẩy B phẩy bằng a trên hai"><figcaption><strong>Tra ví dụ:</strong> cạnh đứng \(AA'=h\) đo từ mặt trên xuống đáy; đoạn \(AO\) nằm trong đáy, vuông góc **hai đường cắt nhau \(BD,BB'\)** của mặt bên và có độ dài \(a/2\). Không dùng \(AA'\) để đo khoảng cách **đường–mặt bên**.</figcaption></figure>
 
@@ -152,7 +152,7 @@
 
     ### 2.3. Khoảng cách giữa hai đường thẳng chéo nhau
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Đường vuông góc chung và khoảng cách</strong><p>Cho hai đường thẳng \(a,b\) <strong>chéo nhau</strong>. Một đường \(\Delta\) <strong>cắt cả \(a,b\) và vuông góc với cả hai</strong> gọi là đường vuông góc chung. Nếu \(\Delta\cap a=\{M\}\), \(\Delta\cap b=\{N\}\), thì <strong>\(d(a,b)=MN\)</strong>. Phải kiểm \(M\in a\), \(N\in b\), \(MN\perp a\) và \(MN\perp b\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Đường vuông góc chung và khoảng cách</strong><p>Cho hai đường thẳng \(a,b\) <strong>chéo nhau</strong>. Một đường \(\Delta\) <strong>cắt cả \(a,b\) và vuông góc với cả hai</strong> gọi là đường vuông góc chung. Nếu \(\Delta\cap a=\{M\}\), \(\Delta\cap b=\{N\}\), thì <strong>\(d(a,b)=MN\)</strong>. Phải kiểm \(M\in a\), \(N\in b\), \(MN\perp a\) và \(MN\perp b\). Hai đường chéo nhau có duy nhất một đường vuông góc chung. Độ dài \(MN\) là nhỏ nhất trong mọi độ dài đoạn nối một điểm trên \(a\) với một điểm trên \(b\).</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Nhận xét — Chuyển về khoảng cách song song</strong><p>Với hai đường \(a,b\) chéo nhau, chọn \((Q)\) <strong>chứa \(b\) và song song \(a\)</strong>. Khi đó <strong>\(d(a,b)=d(a,(Q))\)</strong>. Cũng có thể chọn hai mặt phẳng song song lần lượt chứa \(a\) và \(b\), rồi đo khoảng cách giữa hai mặt ấy.</p></div>
 
