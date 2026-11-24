@@ -4634,5 +4634,101 @@
     "item_id": "THPT-G12-B05-KFT04",
     "source_locator": "Tự thử D",
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHII:B06:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G12-B06-T01",
+    "source_locator": "B06-T01",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHII:B07:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G12-B07-T01",
+    "source_locator": "B07-T01",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHII:B08:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G12-B08-T01",
+    "source_locator": "B08-T01",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHIII:B09:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G12-B09-T01",
+    "source_locator": "B09-T01",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHIII:B09:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G12-B09-T02",
+    "source_locator": "B09-T02",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHIII:B10:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G12-B10-T01",
+    "source_locator": "B10-T01",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G12-B11-T01",
+    "source_locator": "B11-T01",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G12-B11-T02",
+    "source_locator": "B11-T02",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G12-B12-T01",
+    "source_locator": "B12-T01",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G12-B12-T02",
+    "source_locator": "B12-T02",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G12-B13-T01",
+    "source_locator": "B13-T01",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G12-B13-T02",
+    "source_locator": "B13-T02",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
   }
 ]
