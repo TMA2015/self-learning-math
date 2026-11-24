@@ -20,7 +20,7 @@
 
     ### 1.1. Biến cố hợp
 
-    Giả sử có sáu tấm thẻ như nhau, ghi các số từ \(1\) đến \(6\); ta rút ngẫu nhiên một thẻ. Gọi \(A\) là biến cố “rút được số chẵn” và \(B\) là biến cố “rút được số lớn hơn \(3\)”. Khi liệt kê kết quả, ta có \(A=\{2;4;6\}\) và \(B=\{4;5;6\}\).
+    Giả sử có sáu tấm thẻ như nhau, ghi các số từ \(1\) đến \(6\); ta rút ngẫu nhiên một thẻ, mỗi thẻ có cơ hội như nhau. Không gian mẫu là \(\Omega=\{1;2;3;4;5;6\}\). Gọi \(A\) là biến cố “rút được số chẵn” và \(B\) là biến cố “rút được số lớn hơn \(3\)”. Khi liệt kê kết quả, ta có \(A=\{2;4;6\}\) và \(B=\{4;5;6\}\).
 
     Nếu đề hỏi “số chẵn **hoặc** lớn hơn \(3\)”, thẻ số \(4\) và thẻ số \(6\) vẫn được chấp nhận: chúng thỏa **cả hai** điều kiện, nên chắc chắn thỏa điều kiện “hoặc”. Tập kết quả cần tìm là \(\{2;4;5;6\}\), tức \(A\cup B\). Ta viết mỗi kết quả **một lần**, không phải hai lần vì số \(4\) nằm trong cả \(A\) và \(B\).
 
@@ -42,11 +42,11 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVIII-B28-01_R00.svg" alt="Sơ đồ Venn trong đó vùng A giao B nằm giữa hai hình tròn A và B"><figcaption><strong>Đọc hình:</strong> lần này chỉ quan sát miền ghi \(A\cap B\). Điểm ở miền “chỉ \(A\)” hoặc “chỉ \(B\)” không thỏa yêu cầu đồng thời hai điều kiện.</figcaption></figure>
 
-    Cách đọc này cũng giúp diễn đạt những câu dài. Nếu \(M\) là “gia đình có ti vi” và \(N\) là “gia đình có máy vi tính”, thì “có **cả hai**” là \(M\cap N\). Còn “có **đúng một trong hai**” gồm hai khả năng **không thể xảy ra đồng thời**: có ti vi nhưng không có máy vi tính, hoặc ngược lại. Ta cần phép hợp của hai trường hợp ấy, chứ không phải phép giao \(M\cap N\).
+    Cách đọc này cũng giúp diễn đạt những câu dài. Nếu \(M\) là “gia đình có ti vi” và \(N\) là “gia đình có máy vi tính”, thì “có **cả hai**” là \(M\cap N\). Còn “có **đúng một trong hai**” gồm hai khả năng **không thể xảy ra đồng thời**: có ti vi nhưng không có máy vi tính, hoặc ngược lại. Ta cần phép hợp \((M\cap\overline N)\cup(\overline M\cap N)\), chứ không phải phép giao \(M\cap N\). Còn “không có cả ti vi lẫn máy vi tính” (không có loại nào) là \(\overline{M\cup N}=\overline M\cap\overline N\).
 
     Nhắc lại biến cố đối: \(\overline A\) là biến cố “\(A\) không xảy ra”. Vì vậy “chỉ \(A\), không \(B\)” được viết \(A\cap\overline B\), còn “không điều kiện nào xảy ra” là \(\overline A\cap\overline B\). Những kí hiệu này chỉ viết gọn một câu nói; muốn dùng đúng, trước hết hãy đọc rõ **mỗi kết quả phải thỏa điều kiện nào**.
 
-    **Vận dụng.** Rút đều một thẻ đánh số từ \(1\) đến \(12\). Gọi \(E\): “số chia hết cho \(2\)” và \(F\): “số chia hết cho \(3\)”. Hãy tìm \(E\cap F\) và liệt kê các số thỏa **chỉ một trong hai** biến cố.
+    **Vận dụng.** Rút ngẫu nhiên một thẻ (các thẻ có cơ hội như nhau) đánh số từ \(1\) đến \(12\). Gọi \(E\): “số chia hết cho \(2\)” và \(F\): “số chia hết cho \(3\)”. Hãy tìm \(E\cap F\) và liệt kê các số thỏa **chỉ một trong hai** biến cố.
 
     ??? question "Đối chiếu"
 
@@ -56,16 +56,16 @@
 
     ### 1.3. Biến cố độc lập
 
-    Hợp và giao nói **những kết quả nào** thuộc một biến cố. Độc lập trả lời câu hỏi khác: **biết biến cố này đã xảy ra có làm thay đổi cơ hội xảy ra của biến cố kia không?** Chẳng hạn, hai bạn mỗi người gieo một con xúc xắc cân đối. Biết bạn thứ nhất gieo ra số chẵn không giúp đoán kết quả trên con xúc xắc của bạn thứ hai. Hai phép gieo không ảnh hưởng lẫn nhau nên các biến cố được chọn theo từng con xúc xắc là độc lập.
+    Hợp và giao nói **những kết quả nào** thuộc một biến cố. Độc lập trả lời câu hỏi khác: **biết biến cố này đã xảy ra có làm thay đổi cơ hội xảy ra của biến cố kia không?** Chẳng hạn, hai bạn mỗi người gieo một con xúc xắc cân đối. Biết bạn thứ nhất gieo ra số chẵn không giúp đoán kết quả trên con xúc xắc của bạn thứ hai. Giả sử hai bạn gieo độc lập, không ảnh hưởng tới nhau, khi đó các biến cố được chọn theo từng con xúc xắc là độc lập.
 
-    Nhưng khi hai bạn lần lượt lấy bi **từ cùng một hộp**, kết luận có thể khác. Giả sử hộp có \(4\) bi đỏ và \(5\) bi xanh, các bi giống nhau về kích thước. Bạn thứ nhất lấy một bi, bạn thứ hai lấy một bi. Ta quan tâm \(A\): “lần đầu lấy bi đỏ” và \(B\): “lần hai lấy bi xanh”.
+    Nhưng khi hai bạn lần lượt lấy bi **từ cùng một hộp**, kết luận có thể khác. Giả sử hộp có \(4\) bi đỏ và \(5\) bi xanh, các bi giống nhau về kích thước. Mỗi bạn lấy ngẫu nhiên một bi với các bi có cơ hội như nhau; nếu hoàn lại, trả bi thứ nhất vào hộp và trộn đều trước lượt hai. Ta quan tâm \(A\): “lần đầu lấy bi đỏ” và \(B\): “lần hai lấy bi xanh”.
 
     | Cách lấy | Nếu lần đầu lấy **đỏ**, cơ hội lần hai **xanh** | Nếu lần đầu lấy **xanh**, cơ hội lần hai **xanh** |
     | :-- | :-- | :-- |
     | **Trả bi lại** trước lượt hai | \(5/9\) | \(5/9\) |
     | **Không trả lại** | \(5/8\) | \(4/8\) |
 
-    Ở hàng thứ nhất, dù lần đầu lấy màu gì thì hộp của lần hai vẫn có \(4\) đỏ, \(5\) xanh. Việc \(A\) xảy ra hay không **không làm thay đổi** cơ hội của \(B\): hai biến cố độc lập. Ở hàng thứ hai, thành phần hộp thay đổi theo lần đầu; từ \(5/8\) xuống \(4/8\) là hai cơ hội khác nhau. Vậy **không độc lập**. Ta không thể nhìn hai lần rút tách nhau về thời gian rồi tự kết luận chúng độc lập.
+    Ở hàng thứ nhất, dù lần đầu lấy màu gì thì hộp của lần hai vẫn có \(4\) đỏ, \(5\) xanh. Việc \(A\) xảy ra hay không **không làm thay đổi** cơ hội của \(B\): hai biến cố độc lập. Ở hàng thứ hai, thành phần hộp thay đổi theo lần đầu; hai xác suất \(5/8\) (lượt đầu đỏ) và \(4/8\) (lượt đầu xanh) khác nhau. Vậy **không độc lập**. Ta không thể nhìn hai lần rút tách nhau về thời gian rồi tự kết luận chúng độc lập.
 
     Cũng cần phân biệt **xung khắc** với **độc lập**. Với *một* lần gieo xúc xắc, “ra \(2\)” và “ra \(5\)” không thể cùng xảy ra (xung khắc), nhưng biết đã ra \(2\) khiến cơ hội “ra \(5\)” trở thành \(0\); như vậy chúng **không độc lập**. Ngược lại, hai con xúc xắc độc lập vẫn có thể đồng thời cho kết quả chẵn. Độc lập không có nghĩa “không bao giờ cùng xảy ra”.
 
@@ -103,7 +103,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hai biến cố độc lập</strong><p>Hai biến cố \(A,B\) được gọi là <strong>độc lập</strong> nếu việc xảy ra <strong>hoặc không xảy ra</strong> của biến cố này <strong>không làm thay đổi xác suất</strong> xảy ra của biến cố kia.</p></div>
 
-    **Nhận biết trong mô hình:** Nếu hai kết quả do hai phép thử không ảnh hưởng lẫn nhau tạo ra, chẳng hạn mỗi bạn gieo một con xúc xắc riêng, tính độc lập thường được bảo đảm bởi mô tả phép thử. Trong các lần rút từ cùng một hộp, phải xem **có hoàn lại hay không** và vật được lấy có làm thay đổi thành phần hộp. Không dựa vào cảm giác “hai việc khác nhau” để kết luận.
+    **Nhận biết trong mô hình:** Nếu hai kết quả do hai phép thử không ảnh hưởng lẫn nhau tạo ra, chẳng hạn mỗi bạn gieo một con xúc xắc riêng, tính độc lập được bảo đảm khi mô hình thực sự giả thiết hai phép thử độc lập. Trong các lần rút từ cùng một hộp, phải xem **có hoàn lại hay không** và vật được lấy có làm thay đổi thành phần hộp. Không dựa vào cảm giác “hai việc khác nhau” để kết luận.
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất</strong><p>Nếu \(A,B\) độc lập thì các cặp \(A,\overline B\); \(\overline A,B\); và \(\overline A,\overline B\) cũng độc lập. Tính độc lập <strong>không đồng nghĩa</strong> với xung khắc.</p></div>
 
