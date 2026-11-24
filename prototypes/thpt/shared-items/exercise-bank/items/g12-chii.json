@@ -1345,12 +1345,15 @@
   },
   {
     "item_id": "THPT-G12-B06-T01",
-    "content_version": "SOURCE_BLOB_8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+    "content_version": "SOURCE_BLOB_8991c8a30487fdf1db65cf31a19b0ed68ef52518_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong hình hộp $ABCD.A'B'C'D'$, hãy viết $\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA'}$ thành một vectơ; giải thích bằng hành trình từ $A$. Sau đó, nếu $\\vec a$ và $\\vec b$ lần lượt dài 2 và 5 với góc $60^\\circ$, dự đoán dấu và giá trị $\\vec a\\cdot\\vec b$.",
-    "answer_key": null,
-    "worked_solution": "Lần lượt theo ba cạnh của hình hộp, điểm kết thúc là $C'$, nên tổng bằng $\\overrightarrow{AC'}$. Tích vô hướng bằng $2\\cdot5\\cdot\\cos60^\\circ=5>0$; góc nhọn nên dấu dương. Nếu sai vectơ đường chéo, hãy vẽ đường đi đầu–đuôi trước khi áp dụng công thức.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "AC′⃗; tích vô hướng bằng 5, dương.",
+    "worked_solution": "Đi từ A đến B, rồi từ B đến C (BC⃗=AD⃗), rồi từ C đến C′ (CC′⃗=AA′⃗). Theo quy tắc ba điểm, tổng bằng AC′⃗. Hai vectơ có góc 60° là góc nhọn nên tích vô hướng dương: 2·5·cos60°=5. Nếu nhầm đường chéo, hãy vẽ từng vectơ nối đầu–đuôi.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B06-O03",
+      "G12-CHII-B06-O05"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1379,16 +1382,19 @@
       "distinct_task_reason": "Vector sum exact subtask only; second dot product uses lengths 2,5, not candidate 2,3."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B07-T01",
-    "content_version": "SOURCE_BLOB_4bfbed222d552f3ccb9c965616245015930ab1cd",
+    "content_version": "SOURCE_BLOB_4bfbed222d552f3ccb9c965616245015930ab1cd_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho $A(2;-1;3)$ và $B(5;2;1)$. Không học thuộc công thức, hãy giải thích bằng thay đổi từng chiều vì sao $\\overrightarrow{AB}$ có tọa độ $(3;3;-2)$. Nếu điểm $N$ thuộc mặt phẳng $(Oyz)$ thì tọa độ nào của $N$ phải bằng 0?",
-    "answer_key": null,
+    "answer_key": "AB⃗=(3;3;−2); x_N=0.",
     "worked_solution": "Từ $A$ tới $B$, theo $x$ tăng $5-2=3$, theo $y$ tăng $2-(-1)=3$, theo $z$ giảm $1-3=-2$. Điểm nằm trên $(Oyz)$ có $x=0$. Nếu làm sai dấu $y$, hãy đặt hai số vào trục số và tính “cuối trừ đầu” một lần nữa.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B07-O04",
+      "G12-CHII-B07-O01"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1412,16 +1418,19 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B08-T01",
-    "content_version": "SOURCE_BLOB_c85922428c85ddeb48cec5e2bd5953faa44207c8",
+    "content_version": "SOURCE_BLOB_c85922428c85ddeb48cec5e2bd5953faa44207c8_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho $\\vec u=(2;-1;3)$ và $\\vec v=(1;4;-2)$. Trước khi tính, hãy dự đoán dấu của $\\vec u\\cdot\\vec v$ từ dấu từng tích; rồi tính $2\\vec u-\\vec v$. Nêu khác biệt giữa việc trừ hai vectơ và trừ độ dài của chúng.",
-    "answer_key": null,
-    "worked_solution": "$\\vec u\\cdot\\vec v=2-4-6=-8<0$, nên góc giữa chúng là góc tù (cả hai khác không). $2\\vec u-\\vec v=(4;-2;6)-(1;4;-2)=(3;-6;8)$. Trừ vectơ phải trừ từng tọa độ và giữ hướng, không phải lấy hiệu hai số độ dài.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Tích vô hướng −8, âm; 2u⃗−v⃗=(3;−6;8). Hiệu vectơ là vectơ, hiệu độ dài là số.",
+    "worked_solution": "Ba tích thành phần là 2, −4, −6; phần âm có tổng độ lớn 10 lớn hơn 2 nên tích vô hướng bằng −8, âm. Vì hai vectơ khác 0, góc giữa chúng là góc tù. Nhân từng tọa độ của u⃗ với 2 rồi trừ từng tọa độ tương ứng của v⃗: (4;−2;6)−(1;4;−2)=(3;−6;8). Hiệu hai vectơ vẫn là vectơ, có tọa độ xác định; hiệu hai độ dài chỉ là một số, không biểu diễn hướng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B08-O04",
+      "G12-CHII-B08-O01"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1445,6 +1454,6 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]

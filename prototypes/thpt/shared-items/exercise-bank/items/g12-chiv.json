@@ -1849,12 +1849,15 @@
   },
   {
     "item_id": "THPT-G12-B11-T01",
-    "content_version": "SOURCE_BLOB_f3fc0f654a21af7ec72de657643ef97488413dcb",
-    "stem": "Một vật có s(t)=t²+3. Hãy tìm tốc độ v(t) và đoán hàm s(t) nếu chỉ biết v(t)=2t.",
-    "answer_key": null,
-    "worked_solution": "v(t)=2t. Có vô số vị trí s(t)=t²+C; vị trí xuất phát chọn C.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_f3fc0f654a21af7ec72de657643ef97488413dcb_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một vật chuyển động thẳng có tọa độ s(t)=t²+3 với t≥0. Hãy tìm vận tốc v(t) và tìm họ hàm tọa độ s(t) nếu chỉ biết v(t)=2t.",
+    "answer_key": "v(t)=2t; họ tọa độ s(t)=t²+C, C∈ℝ.",
+    "worked_solution": "Vận tốc là đạo hàm của tọa độ theo thời gian: v(t)=s′(t)=2t. Ngược lại, mọi nguyên hàm của 2t trên một khoảng đều có dạng t²+C, vì (t²+C)′=2t. Nếu biết s(0)=3 thì C=3; nếu chỉ biết vận tốc thì chưa xác định được C.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHIV-B11-O01",
+      "G12-CHIV-B11-O02"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1883,16 +1886,18 @@
       "distinct_task_reason": "Derivative 2t and family t²+C differ from fixed initial condition or cubic velocity; source calls signed velocity speed, domain missing."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B11-T02",
-    "content_version": "SOURCE_BLOB_f3fc0f654a21af7ec72de657643ef97488413dcb",
+    "content_version": "SOURCE_BLOB_f3fc0f654a21af7ec72de657643ef97488413dcb_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tại x>0, kiểm tra xem F(x)=ln x có đạo hàm 1/x không; vì sao không thay bằng ln x trên x<0?",
-    "answer_key": null,
-    "worked_solution": "Có. (ln x)'=1/x trên x>0; với x<0 hàm ln x không xác định thực, dùng ln|x|.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Có; trên x<0 dùng ln|x|=ln(−x).",
+    "worked_solution": "Trên x>0, (ln x)′=1/x. Khi x<0, ln x không xác định trong ℝ, nhưng −x>0 nên ln|x|=ln(−x) xác định; đạo hàm theo quy tắc hàm hợp là (−1)/(−x)=1/x. Xét nguyên hàm trên từng khoảng không chứa 0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHIV-B11-O04"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1921,16 +1926,18 @@
       "distinct_task_reason": "Source asks verification on x>0 and why ln x invalid on x<0; existing derivative only or integral of 2/x."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B12-T01",
-    "content_version": "SOURCE_BLOB_2ea14427518e58acb03e85d64dcc6b18d55f8798",
-    "stem": "Nếu f(x)=x từ −1 đến1, tổng tích phân có dấu có bằng diện tích hình học không?",
-    "answer_key": null,
-    "worked_solution": "Không: ∫_{−1}¹x dx=0, nhưng S=∫|x|dx=1.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_2ea14427518e58acb03e85d64dcc6b18d55f8798_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho f(x)=x trên đoạn [−1;1]. Tích phân có dấu của f trên đoạn này có bằng diện tích hình phẳng giới hạn bởi đồ thị, trục Ox và hai đường x=−1, x=1 không?",
+    "answer_key": "Không; tích phân bằng 0, diện tích bằng 1.",
+    "worked_solution": "Tích phân từ −1 đến 0 của x bằng −1/2; từ 0 đến 1 bằng 1/2. Tổng có dấu bằng 0 vì hai phần triệt tiêu. Diện tích hình học cộng hai phần dương: 1/2+1/2=1.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHIV-B12-O05"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1954,16 +1961,18 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B12-T02",
-    "content_version": "SOURCE_BLOB_2ea14427518e58acb03e85d64dcc6b18d55f8798",
-    "stem": "Cho ∫_0²f=3 và ∫_2⁵f=−4. Không tìm f, hãy tính ∫_5⁰f.",
-    "answer_key": null,
-    "worked_solution": "∫_0⁵f=−1 nên ∫_5⁰f=1.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_2ea14427518e58acb03e85d64dcc6b18d55f8798_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho ∫₀² f(x) dx=3 và ∫₂⁵ f(x) dx=−4. Không tìm f, hãy tính ∫₅⁰ f(x) dx.",
+    "answer_key": "∫₅⁰ f(x) dx=1.",
+    "worked_solution": "Theo tính chất cộng khoảng, ∫₀⁵ f(x) dx=∫₀² f(x) dx+∫₂⁵ f(x) dx=3−4=−1. Đổi cận làm đổi dấu, nên ∫₅⁰ f(x) dx=1.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHIV-B12-O03"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1987,16 +1996,18 @@
       "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B13-T01",
-    "content_version": "SOURCE_BLOB_51b5cf8243b4793e159db862379a21df60ff75bd",
+    "content_version": "SOURCE_BLOB_51b5cf8243b4793e159db862379a21df60ff75bd_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hai đồ thị y=x² và y=x trên [0,1]: đồ thị nào ở trên và cần lấy hiệu theo chiều nào?",
-    "answer_key": null,
-    "worked_solution": "Trên [0,1], x≥x² nên lấy x−x². Diện tích =1/6.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "y=x ở trên y=x² trên (0;1); lấy x−x², bằng 0 tại hai đầu mút.",
+    "worked_solution": "Với 0≤x≤1, x−x²=x(1−x)≥0, nên y=x nằm trên hoặc trùng y=x². Để tính diện tích, lấy hàm trên trừ hàm dưới: x−x². Nếu tính tiếp, ∫₀¹(x−x²)dx=1/2−1/3=1/6.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHIV-B13-O04"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -2024,16 +2035,18 @@
       "distinct_task_reason": "Same curves/interval, source asks upper curve and integrand order; canonical asks area, solution includes integrand. Do not collapse different required output."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B13-T02",
-    "content_version": "SOURCE_BLOB_51b5cf8243b4793e159db862379a21df60ff75bd",
-    "stem": "Khi quay miền dưới y=x (0≤x≤2) quanh Ox, lát cắt tại x có bán kính và diện tích bao nhiêu?",
-    "answer_key": null,
-    "worked_solution": "Bán kính r=x, diện tích đĩa S=πx²; thể tích =π∫_0²x²dx=8π/3.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_51b5cf8243b4793e159db862379a21df60ff75bd_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Quay miền phẳng giới hạn bởi y=x, trục Ox và x=2 (0≤x≤2) quanh Ox. Lát cắt vuông góc với Ox tại hoành độ x có bán kính và diện tích bao nhiêu?",
+    "answer_key": "Bán kính r=x; diện tích lát cắt S(x)=πx².",
+    "worked_solution": "Khi quay đoạn thẳng đứng từ (x;0) đến (x;x) quanh Ox, nó tạo thành đĩa tròn bán kính x (x≥0). Diện tích đĩa là πx². Nếu tính tiếp thể tích, V=∫₀²πx²dx=8π/3.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHIV-B13-O08"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -2061,6 +2074,6 @@
       "distinct_task_reason": "Same solid, source asks slice radius and area; canonical asks full volume."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]

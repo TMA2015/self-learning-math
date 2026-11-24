@@ -1177,12 +1177,14 @@
   },
   {
     "item_id": "THPT-G12-B18-KFT01",
-    "content_version": "SOURCE_BLOB_c5e96be714ed2b3d440c37c5507ddc79314bf087",
-    "stem": "Chọn đều số 1–10. Biết số được chọn là số chẵn, xác suất số lớn hơn 6? **Tự thử trước:** ghi tập điều kiện rồi đếm.",
-    "answer_key": null,
-    "worked_solution": "trong `{2,4,6,8,10}`, thuận lợi `{8,10}` nên `2/5`. Sai thì quay lại `B18-O01`, xem hình `FIG-CHVI-B18-SET` và thử tiếp `C01`.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_c5e96be714ed2b3d440c37c5507ddc79314bf087_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chọn ngẫu nhiên đều một số nguyên từ 1 đến 10. Biết số được chọn là số chẵn, tính xác suất số đó lớn hơn 6.",
+    "answer_key": "2/5.",
+    "worked_solution": "Khi biết số được chọn chẵn, không gian điều kiện là {2,4,6,8,10}, gồm 5 số đồng khả năng. Trong đó {8,10} lớn hơn 6, có 2 số, nên xác suất là 2/5. Nếu lấy mẫu số 10, hãy xem lại việc thu hẹp không gian mẫu (B18-O01), rồi thử C01.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O01"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1206,16 +1208,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B18-KFT02",
-    "content_version": "SOURCE_BLOB_c5e96be714ed2b3d440c37c5507ddc79314bf087",
-    "stem": "Hai lần rút **không hoàn lại**, túi có 3 đỏ 2 xanh. Biết lần đầu đỏ, xác suất lần hai đỏ? **Tự thử trước:** cập nhật số bi.",
-    "answer_key": null,
-    "worked_solution": "còn 2 đỏ trên 4 bi, nên `1/2`. Sai thì xem D6 `B18-O07` và sơ đồ `FIG-CHVI-B18-TREE`.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_c5e96be714ed2b3d440c37c5507ddc79314bf087_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một túi có 3 bi đỏ và 2 bi xanh. Rút ngẫu nhiên từng bi hai lần, không hoàn lại. Biết lần đầu rút được bi đỏ, tính xác suất lần hai rút được bi đỏ.",
+    "answer_key": "1/2.",
+    "worked_solution": "Biết lần đầu đã rút bi đỏ, túi còn 2 bi đỏ và 2 bi xanh. Lần thứ hai chọn ngẫu nhiên đều trong 4 bi còn lại nên xác suất đỏ là 2/4=1/2. Không dùng 3/5 vì không hoàn lại. Nếu nhầm, xem lại B18-O07 và sơ đồ cây.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O07"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1243,16 +1247,18 @@
       "distinct_task_reason": "Same 3 red/2 green without replacement, canonical asks different colors rather than conditional second red."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B19-KFT01",
-    "content_version": "SOURCE_BLOB_e9588ca5fcdb107aa62990dc2e36635ef01085c0",
-    "stem": "Xưởng A chiếm 25%, lỗi 4%; xưởng còn lại 75%, lỗi 2%. Hỏi xác suất lỗi chung.",
-    "answer_key": null,
-    "worked_solution": "`0,25×0,04+0,75×0,02=0,025=1/40`. Nếu lấy trung bình cộng, quay lại hình cây `FIG-CHVI-B19-TOTAL` và D6 O02.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_e9588ca5fcdb107aa62990dc2e36635ef01085c0_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Xưởng A sản xuất 25% số sản phẩm, tỉ lệ lỗi 4%; xưởng B sản xuất 75%, tỉ lệ lỗi 2%. Chọn ngẫu nhiên một sản phẩm từ toàn bộ sản phẩm của hai xưởng. Tính xác suất sản phẩm bị lỗi.",
+    "answer_key": "0,025=1/40=2,5%.",
+    "worked_solution": "Gọi D là biến cố sản phẩm được chọn bị lỗi. Hai nguồn A và B rời nhau và bao hết sản phẩm, nên P(D)=P(A)P(D|A)+P(B)P(D|B)=0,25·0,04+0,75·0,02=0,025. Không lấy trung bình cộng hai tỉ lệ lỗi vì sản lượng hai xưởng khác nhau.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O02"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1276,16 +1282,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-B19-KFT02",
-    "content_version": "SOURCE_BLOB_e9588ca5fcdb107aa62990dc2e36635ef01085c0",
-    "stem": "Với dữ kiện T01, nếu biết sản phẩm lỗi, xác suất do A sản xuất?",
-    "answer_key": null,
-    "worked_solution": "tử `0,25×0,04=0,01`; mẫu `0,025`; do đó `0,4=2/5`. Không nhầm 4% với 40%; sai thì xem D6 O04/O05 và hình `FIG-CHVI-B19-BAYES`.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_e9588ca5fcdb107aa62990dc2e36635ef01085c0_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Xưởng A sản xuất 25% số sản phẩm, tỉ lệ lỗi 4%; xưởng B sản xuất 75%, tỉ lệ lỗi 2%. Chọn ngẫu nhiên một sản phẩm từ toàn bộ sản phẩm của hai xưởng. Biết sản phẩm bị lỗi, tính xác suất nó do xưởng A sản xuất.",
+    "answer_key": "0,4=2/5=40%.",
+    "worked_solution": "Gọi D là biến cố sản phẩm bị lỗi. P(A∩D)=0,25·0,04=0,01. Theo công thức xác suất toàn phần, P(D)=0,01+0,75·0,02=0,025>0. Theo Bayes, P(A|D)=0,01/0,025=0,4. Không nhầm P(D|A)=4% với P(A|D)=40%.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O04"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1312,6 +1320,6 @@
       "THPT-G12-B19-KFT01"
     ],
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
