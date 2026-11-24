@@ -1,12 +1,14 @@
 [
   {
     "item_id": "THPT-TOP16-P01",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Trong hình hộp chữ nhật, góc giữa AD và B′C′ bằng bao nhiêu?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, góc giữa AD và B′C′ bằng bao nhiêu?",
+    "answer_key": "0°.",
     "worked_solution": "0°: AD và B′C′ song song, nên cùng phương. Không lấy khoảng cách giữa hai cạnh để xác định góc.\n\n**D6 nếu sai:** Đừng dùng góc tù hoặc kết luận không có góc chỉ vì hai đường không gặp nhau. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B22-ANGLE_LINES"
+    ],
     "original_outcome_ids": [
       "TOP16-O01"
     ],
@@ -23,16 +25,18 @@
       "heading_id": "THPT-TOP16-P01",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P02",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Trong hình hộp chữ nhật, chứng minh BC vuông góc AA′.",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, chứng minh BC vuông góc AA′.",
+    "answer_key": "BC⊥AA′.",
     "worked_solution": "Vì AA′⊥(ABCD) nên AA′ vuông góc mọi đường của đáy, trong đó có BC; hoặc BB′∥AA′ và BC⊥BB′.\n\n**D6 nếu sai:** Phân biệt “vuông góc theo phương” với “hai đường cắt nhau tại góc vuông”. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B22-PERP_SKEW"
+    ],
     "original_outcome_ids": [
       "TOP16-O02"
     ],
@@ -49,16 +53,18 @@
       "heading_id": "THPT-TOP16-P02",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P03",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Trong hình hộp, từ BC⊥BB′ và DD′∥BB′ chứng minh BC⊥DD′.",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong hình hộp ABCD.A′B′C′D′, biết BC⊥BB′ và DD′∥BB′. Chứng minh BC⊥DD′.",
+    "answer_key": "BC⊥DD′.",
     "worked_solution": "Thay DD′ bằng BB′ cùng phương. Vì BC⊥BB′ nên BC⊥DD′; không yêu cầu BC gặp DD′.\n\n**D6 nếu sai:** Không suy hai đường cùng vuông góc một đường thứ ba thì chúng song song trong không gian. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B22-PARALLEL_DIRECTION"
+    ],
     "original_outcome_ids": [
       "TOP16-O03"
     ],
@@ -75,16 +81,18 @@
       "heading_id": "THPT-TOP16-P03",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P04",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Nêu một chứng cứ chắc chắn để kết luận AB⊥CC′ trong hộp chữ nhật.",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong hình hộp chữ nhật ABCD.A′B′C′D′, nêu một chứng cứ chắc chắn để kết luận AB⊥CC′.",
+    "answer_key": "AB⊥CC′ vì CC′⊥(ABCD) và AB⊂(ABCD).",
     "worked_solution": "Từ AB thuộc đáy và CC′ vuông góc mặt đáy, CC′⊥AB; kết luận không dựa nét vẽ.\n\n**D6 nếu sai:** Khi lời giải viết “nhìn hình thấy”, hãy thay bằng quan hệ song song/vuông góc có giả thiết. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B22-PROOF_CONTEXT"
+    ],
     "original_outcome_ids": [
       "TOP16-O04"
     ],
@@ -101,16 +109,18 @@
       "heading_id": "THPT-TOP16-P04",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P05",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Một đường d vuông góc hai đường cắt nhau a,b của (P); kết luận và lí do?",
-    "answer_key": null,
+    "answer_key": "d⊥(P).",
     "worked_solution": "d⊥(P) theo dấu hiệu hai phương cắt nhau trong cùng mặt phẳng; a,b cho đủ hai hướng độc lập.\n\n**D6 nếu sai:** Một đường không đại diện cho tất cả các phương trong một mặt phẳng. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B23-PERP_PLANE_DEF"
+    ],
     "original_outcome_ids": [
       "TOP16-O05"
     ],
@@ -127,16 +137,18 @@
       "heading_id": "THPT-TOP16-P05",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P06",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong mặt phẳng (P), a,b cắt tại O. Biết d⊥a và d⊥b. Chứng minh d⊥(P).",
-    "answer_key": null,
+    "answer_key": "d⊥(P).",
     "worked_solution": "Áp dụng định lí đường thẳng vuông góc hai đường cắt nhau của một mặt phẳng, suy d⊥(P).\n\n**D6 nếu sai:** Dừng lại khi hai đường kiểm tra song song, trùng nhau hoặc không cùng mặt phẳng. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B23-TWO_INTERSECT"
+    ],
     "original_outcome_ids": [
       "TOP16-O06"
     ],
@@ -153,16 +165,18 @@
       "heading_id": "THPT-TOP16-P06",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P07",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Đường a⊥(P), hai mặt phẳng (P)∥(Q). Quan hệ a và (Q)?",
-    "answer_key": null,
-    "worked_solution": "a⊥(Q) vì hai mặt phẳng song song có cùng phương pháp tuyến; kiểm tra (P),(Q) thực sự song song.\n\n**D6 nếu sai:** Không lấy việc hai mặt phẳng nhìn cùng hướng trên giấy làm chứng cứ song song. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "a⊥(Q).",
+    "worked_solution": "Trong (Q), chọn hai đường cắt nhau b,c. Vì (P)∥(Q), qua một điểm của (P) có thể dựng hai đường lần lượt song song b,c và nằm trong (P). Do a⊥(P), a vuông góc cả hai đường đó, nên a⊥b và a⊥c. Theo dấu hiệu nhận biết, a⊥(Q).\n\n**D6 nếu sai:** Không lấy việc hai mặt phẳng nhìn cùng hướng trên giấy làm chứng cứ song song. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B23-PARALLEL_TRANSFER"
+    ],
     "original_outcome_ids": [
       "TOP16-O07"
     ],
@@ -179,16 +193,18 @@
       "heading_id": "THPT-TOP16-P07",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P08",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "d⊥(P), e⊥(P) và d≠e. Chứng minh d∥e.",
-    "answer_key": null,
-    "worked_solution": "Cả d và e cùng hướng pháp tuyến của (P); hai đường phân biệt cùng phương nên song song.\n\n**D6 nếu sai:** Không lẫn tính duy nhất theo phương pháp tuyến với tính duy nhất mọi đường qua M. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "d∥e.",
+    "worked_solution": "Qua mỗi điểm có duy nhất một đường thẳng vuông góc (P), và mọi đường vuông góc (P) đều cùng phương. Vì d,e phân biệt, chúng song song.\n\n**D6 nếu sai:** Không lẫn tính duy nhất theo phương pháp tuyến với tính duy nhất mọi đường qua M. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B23-PLANE_PROPERTY"
+    ],
     "original_outcome_ids": [
       "TOP16-O08"
     ],
@@ -205,16 +221,18 @@
       "heading_id": "THPT-TOP16-P08",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P09",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Trong nền chữ nhật, kiểm tra cột d⊥AB và d⊥AD với AB cắt AD. Kết luận?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Nền phẳng hình chữ nhật ABCD có cột thẳng d vuông góc AB và AD. Chứng minh d vuông góc mặt phẳng nền.",
+    "answer_key": "d⊥(ABCD).",
     "worked_solution": "d⊥(ABCD) theo dấu hiệu vuông góc hai đường cắt nhau; mô tả rõ các đường thuộc nền.\n\n**D6 nếu sai:** Không bỏ điều kiện hai phương kiểm tra phải độc lập. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B23-PRACTICAL_POST"
+    ],
     "original_outcome_ids": [
       "TOP16-O09"
     ],
@@ -231,16 +249,18 @@
       "heading_id": "THPT-TOP16-P09",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P10",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Cho AH⊥(P), AH=7 cm; tìm hình chiếu của A và khoảng cách từ A đến (P).",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho H∈(P), AH⊥(P) tại H và AH=7 cm. Tìm hình chiếu vuông góc của A và khoảng cách từ A đến (P).",
+    "answer_key": "H là hình chiếu; d(A,(P))=7 cm.",
     "worked_solution": "H là hình chiếu; d(A,(P))=AH=7 cm. Không dùng độ dài một đoạn xiên khác.\n\n**D6 nếu sai:** Không lấy điểm gần nhất theo hình phối cảnh thay cho chân vuông góc. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B24-POINT_PROJECTION"
+    ],
     "original_outcome_ids": [
       "TOP16-O10"
     ],
@@ -257,16 +277,18 @@
       "heading_id": "THPT-TOP16-P10",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P11",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Trong lăng trụ đứng ABC.A′B′C′, ảnh của đoạn B′C′ lên (ABC)?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong lăng trụ đứng ABC.A′B′C′, hình chiếu vuông góc của đoạn B′C′ lên (ABC) là gì?",
+    "answer_key": "Đoạn BC.",
     "worked_solution": "Đoạn BC vì B′ và C′ lần lượt chiếu thành B,C, khác nhau; ảnh không suy biến.\n\n**D6 nếu sai:** Luôn xét xem hai đầu mút có chiếu trùng nhau không trước khi nối ảnh. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B24-LINE_PROJECTION"
+    ],
     "original_outcome_ids": [
       "TOP16-O11"
     ],
@@ -283,16 +305,18 @@
       "heading_id": "THPT-TOP16-P11",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P12",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "AH⊥(P), B,H∈(P), B≠H, c⊂(P) và c⊥AB. Hỏi c⊥BH không?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho A∉(P), H∈(P), AH⊥(P), B∈(P), B≠H và c⊂(P), c⊥AB. Hỏi c⊥BH không?",
+    "answer_key": "Có, c⊥BH.",
     "worked_solution": "Có. Vì AH⊥(P) nên c⊥AH. Mặt khác, theo giả thiết c⊥AB. Hình chiếu của đường xiên AB lên (P) là đường BH **không suy biến vì B≠H**; theo định lí ba đường vuông góc suy c⊥BH. Nếu bỏ điều kiện B≠H, BH chỉ là một điểm nên không thể viết c⊥BH.\n\n**D6 nếu sai:** Trước khi dùng định lí, xác định chân H và đảm bảo BH thật sự là hình chiếu AB. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B24-THREE_PERP"
+    ],
     "original_outcome_ids": [
       "TOP16-O12"
     ],
@@ -309,16 +333,18 @@
       "heading_id": "THPT-TOP16-P12",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P13",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "AH⊥(P), AH=5 m, BH=12 m. Tính sin góc của AB với (P).",
-    "answer_key": null,
-    "worked_solution": "AB=√(5²+12²)=13 m; sinθ=AH/AB=5/13. Góc là giữa đường AB và hình chiếu BH.\n\n**D6 nếu sai:** Không lấy góc giữa đường xiên và pháp tuyến làm góc đường–mặt; đó là góc phụ. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho H,B∈(P), AH⊥(P) tại H, AH=5 m, BH=12 m. Tính sin góc giữa AB và (P).",
+    "answer_key": "sin θ=5/13.",
+    "worked_solution": "H là chân vuông góc từ A lên (P). Vì B,H∈(P), BH là hình chiếu của AB và tam giác ABH vuông tại H. Tính AB=√(5²+12²)=13 m. Góc θ giữa AB và (P) là góc ABH; sin θ=AH/AB=5/13.\n\n**D6 nếu sai:** Không lấy góc giữa đường xiên và pháp tuyến làm góc đường–mặt; đó là góc phụ. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B24-LINE_PLANE_ANGLE"
+    ],
     "original_outcome_ids": [
       "TOP16-O13"
     ],
@@ -335,16 +361,18 @@
       "heading_id": "THPT-TOP16-P13",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P14",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Đoạn đường dốc cao 5 m và chạy ngang 12 m. Tính độ dài và tan góc dốc.",
-    "answer_key": null,
-    "worked_solution": "Độ dài 13 m; tanθ=5/12. Kiểm tra các số đều là độ dài cùng đơn vị.\n\n**D6 nếu sai:** Chỉ áp dụng tỉ số lượng giác cho tam giác vuông sau khi dựng hình chiếu đúng. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một đoạn đường dốc thẳng có độ chênh cao 5 m và hình chiếu ngang dài 12 m. Tính độ dài đoạn dốc và tan góc dốc với phương ngang.",
+    "answer_key": "Độ dài 13 m; tan θ=5/12.",
+    "worked_solution": "Đoạn dốc thẳng, độ cao và hình chiếu ngang tạo tam giác vuông. Độ dài dốc là √(5²+12²)=13 m; nếu θ là góc với phương ngang, tan θ=5/12.\n\n**D6 nếu sai:** Chỉ áp dụng tỉ số lượng giác cho tam giác vuông sau khi dựng hình chiếu đúng. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B24-ANGLE_APPLICATION"
+    ],
     "original_outcome_ids": [
       "TOP16-O14"
     ],
@@ -361,16 +389,18 @@
       "heading_id": "THPT-TOP16-P14",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P15",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hai mặt phẳng cắt nhau theo d; trong mỗi mặt chọn một đường vuông góc d và góc giữa chúng là 70°. Góc hai mặt?",
-    "answer_key": null,
+    "answer_key": "70°.",
     "worked_solution": "70°. Nếu có góc bù 110° trên thiết diện, góc giữa hai mặt không định hướng vẫn là 70°.\n\n**D6 nếu sai:** Không đồng nhất góc giữa hai mặt với bất kì góc của hai đường tùy chọn ở hai mặt. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B25-PLANE_ANGLE"
+    ],
     "original_outcome_ids": [
       "TOP16-O15"
     ],
@@ -387,16 +417,18 @@
       "heading_id": "THPT-TOP16-P15",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P16",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Góc phẳng của nhị diện 135°. Tìm góc giữa hai mặt phẳng chứa hai nửa mặt phẳng.",
-    "answer_key": null,
+    "answer_key": "45°.",
     "worked_solution": "45° = min(135°, 180°−135°). Góc nhị diện vẫn 135° theo hai nửa mặt được chọn.\n\n**D6 nếu sai:** Phải nêu đang nói nhị diện hay góc giữa hai mặt phẳng; khác nhau ở định hướng. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B25-DIHEDRAL"
+    ],
     "original_outcome_ids": [
       "TOP16-O16"
     ],
@@ -413,16 +445,18 @@
       "heading_id": "THPT-TOP16-P16",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P17",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Một mặt đứng (P) chứa cột d vuông góc sàn (Q). Chứng minh (P)⊥(Q).",
-    "answer_key": null,
+    "answer_key": "(P)⊥(Q).",
     "worked_solution": "Vì d⊂(P) và d⊥(Q), áp dụng dấu hiệu hai mặt phẳng vuông góc.\n\n**D6 nếu sai:** Chỉ “có hai đường vuông góc” chưa đủ nếu không có đường vuông góc toàn bộ mặt. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B25-PERP_PLANES"
+    ],
     "original_outcome_ids": [
       "TOP16-O17"
     ],
@@ -439,16 +473,18 @@
       "heading_id": "THPT-TOP16-P17",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P18",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Trong tường vuông góc nền, đường xiên a trong tường không vuông góc chân tường d. Có kết luận a⊥nền được không?",
-    "answer_key": null,
-    "worked_solution": "Không; thiếu điều kiện a⊥d. Đổi thành đường trong tường vuông góc d mới suy được.\n\n**D6 nếu sai:** Nhớ cả điều kiện a nằm trong mặt và a vuông góc giao tuyến. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai mặt phẳng tường và nền vuông góc, giao tuyến là chân tường d. Đường thẳng a nằm trong tường và không vuông góc d. a có vuông góc nền không?",
+    "answer_key": "Không; a không vuông góc nền.",
+    "worked_solution": "Nếu a vuông góc nền, nó phải vuông góc mọi đường trong nền, bao gồm chân tường d. Điều này trái giả thiết a không vuông góc d. Trong tường vuông góc nền, đường nằm trong tường và vuông góc giao tuyến d mới vuông góc nền.\n\n**D6 nếu sai:** Nhớ cả điều kiện a nằm trong mặt và a vuông góc giao tuyến. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B25-PERP_PLANE_RULE"
+    ],
     "original_outcome_ids": [
       "TOP16-O18"
     ],
@@ -465,16 +501,18 @@
       "heading_id": "THPT-TOP16-P18",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P19",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Một lăng trụ đứng có đáy là hình thang không cân. Nó có phải lăng trụ đều không? Hãy giải thích vì sao cạnh bên của nó vẫn vuông góc với đáy.",
-    "answer_key": null,
+    "answer_key": "Không; đáy không đều, nhưng cạnh bên vuông góc đáy.",
     "worked_solution": "Không phải lăng trụ đều vì đáy không phải đa giác đều. Tuy nhiên, lăng trụ đứng luôn có cạnh bên vuông góc hai đáy; đó là dấu hiệu hình học xác định đường cao, không cần tính thể tích.\n\n**D6 nếu sai:** Không dùng chiều dài cạnh bên của lăng trụ xiên làm chiều cao. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B25-RIGHT_PRISM"
+    ],
     "original_outcome_ids": [
       "TOP16-O19"
     ],
@@ -491,16 +529,18 @@
       "heading_id": "THPT-TOP16-P19",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P20",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chóp đều đáy vuông cạnh 8, chiều cao 3. Tính đường cao của mặt bên.",
-    "answer_key": null,
-    "worked_solution": "√(3²+4²)=5, vì khoảng cách từ tâm đáy tới trung điểm cạnh là 4.\n\n**D6 nếu sai:** Không lấy cạnh bên hay đường cao mặt bên làm chiều cao vuông góc của chóp. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "5.",
+    "worked_solution": "Gọi S là đỉnh, O là tâm đáy và M là trung điểm một cạnh đáy. Chóp đều có SO vuông góc đáy và SM là đường cao mặt bên. OM=8/2=4, SO=3. Tam giác SOM vuông tại O, nên SM=√(3²+4²)=5.\n\n**D6 nếu sai:** Không lấy cạnh bên hay đường cao mặt bên làm chiều cao vuông góc của chóp. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B25-REGULAR_PYRAMID"
+    ],
     "original_outcome_ids": [
       "TOP16-O20"
     ],
@@ -517,16 +557,18 @@
       "heading_id": "THPT-TOP16-P20",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP16-P21",
-    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "stem": "Chóp cụt đều có hai đáy là tam giác đều cạnh 8 và 4. Tỉ số diện tích hai đáy?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chóp cụt đều có hai đáy là tam giác đều cạnh 8 và 4. Tính tỉ số diện tích đáy lớn : đáy nhỏ.",
+    "answer_key": "4:1 (đáy lớn : đáy nhỏ).",
     "worked_solution": "16:4=4:1 vì diện tích các hình đồng dạng tỉ lệ bình phương độ dài tương ứng.\n\n**D6 nếu sai:** Không nhân tỉ số cạnh trực tiếp để suy tỉ số diện tích. Quay lại định nghĩa và giả thiết, tự chỉ rõ lý do chọn phép suy luận này trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B25-REGULAR_FRUSTUM"
+    ],
     "original_outcome_ids": [
       "TOP16-O21"
     ],
@@ -543,6 +585,6 @@
       "heading_id": "THPT-TOP16-P21",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]

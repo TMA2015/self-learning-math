@@ -1,12 +1,14 @@
 [
   {
     "item_id": "THPT-TOP17-P01",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
     "stem": "H,X∈d, AH⊥d tại H, AH=5, HX=12. Tính AX và d(A,d).",
-    "answer_key": null,
+    "answer_key": "AX=13; d(A,d)=5.",
     "worked_solution": "AX=13 theo Pitago, còn d(A,d)=AH=5. Không nhầm đoạn xiên AX với khoảng cách.\n\n**D6 nếu sai:** Muốn chứng minh ngắn nhất phải xác định chân vuông góc. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B26-POINT_LINE"
+    ],
     "original_outcome_ids": [
       "TOP17-O01"
     ],
@@ -23,16 +25,18 @@
       "heading_id": "THPT-TOP17-P01",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P02",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
     "stem": "H∈(P) là chân vuông góc, AH⊥(P), AH=8 cm. Một đoạn xiên AM=10 cm (M∈(P)). Tính khoảng cách từ A đến (P).",
-    "answer_key": null,
+    "answer_key": "8 cm.",
     "worked_solution": "8 cm, vì AH là đoạn vuông góc ngắn nhất. Độ dài AM=10 cm không phải khoảng cách.\n\n**D6 nếu sai:** Không coi cạnh chéo là khoảng cách vuông góc. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B26-POINT_PLANE"
+    ],
     "original_outcome_ids": [
       "TOP17-O02"
     ],
@@ -49,16 +53,18 @@
       "heading_id": "THPT-TOP17-P02",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P03",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
-    "stem": "Đường d∥nền (P), A∈d có hình chiếu AH=7 cm. Tìm d(d,(P)).",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Đường thẳng d song song mặt phẳng nền (P). A∈d, H∈(P), AH⊥(P) và AH=7 cm. Tìm khoảng cách từ d đến (P).",
+    "answer_key": "7 cm.",
     "worked_solution": "7 cm = d(A,(P)). Nếu d cắt hoặc nằm trong mặt, phải xét trường hợp riêng, không áp dụng máy móc.\n\n**D6 nếu sai:** Điều kiện d song song mặt phẳng phải được kiểm tra trước khi lấy một điểm đại diện. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B26-PARALLEL_LINE_PLANE"
+    ],
     "original_outcome_ids": [
       "TOP17-O03"
     ],
@@ -75,16 +81,18 @@
       "heading_id": "THPT-TOP17-P03",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P04",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
     "stem": "(P)∥(Q), A∈(P), H∈(Q), AH⊥(Q) tại H, AH=6 cm. Tính d((P),(Q)).",
-    "answer_key": null,
+    "answer_key": "6 cm.",
     "worked_solution": "6 cm; nhờ hai mặt song song, mọi điểm của (P) có cùng khoảng cách đến (Q).\n\n**D6 nếu sai:** Không lấy đoạn nối hai điểm bất kì giữa các mặt làm khoảng cách. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B26-PARALLEL_PLANES"
+    ],
     "original_outcome_ids": [
       "TOP17-O04"
     ],
@@ -101,16 +109,18 @@
       "heading_id": "THPT-TOP17-P04",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P05",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
-    "stem": "Lập phương cạnh 7, hai đường AB và CC′ chéo nhau. Chọn đoạn vuông góc chung và tính khoảng cách.",
-    "answer_key": null,
-    "worked_solution": "BC nối B∈AB tới C∈CC′, vuông góc AB và CC′; độ dài BC=7. Không dùng AC là đường xiên.\n\n**D6 nếu sai:** Kiểm tra cả hai đầu mút thuộc hai đường và vuông góc cả hai phương. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong hình lập phương ABCD.A′B′C′D′ cạnh 7, hai đường AB và CC′ chéo nhau. Chọn đoạn vuông góc chung và tính khoảng cách.",
+    "answer_key": "BC là đoạn vuông góc chung; khoảng cách bằng 7.",
+    "worked_solution": "B∈AB, C∈CC′. BC⊥AB vì đáy ABCD là hình vuông; BC⊥CC′ vì CC′ vuông góc mặt đáy. Do đó BC là đoạn vuông góc chung, khoảng cách bằng BC=7.\n\n**D6 nếu sai:** Kiểm tra cả hai đầu mút thuộc hai đường và vuông góc cả hai phương. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B26-SKEW_COMMON_PERP"
+    ],
     "original_outcome_ids": [
       "TOP17-O05"
     ],
@@ -127,16 +137,18 @@
       "heading_id": "THPT-TOP17-P05",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P06",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chóp đều đáy vuông cạnh 6 có đường cao mặt bên 5. Tìm chiều cao chóp.",
-    "answer_key": null,
-    "worked_solution": "Từ tâm O đến trung điểm cạnh đáy dài 3; h=√(5²−3²)=4. Điều kiện đường cao mặt bên đi qua trung điểm cạnh trong chóp đều.\n\n**D6 nếu sai:** Đừng dùng đường cao mặt bên thay cho đường cao vuông góc với đáy. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "4.",
+    "worked_solution": "Gọi S là đỉnh, O là tâm đáy, M là trung điểm cạnh đáy. SO là chiều cao, SM là đường cao mặt bên. OM=6/2=3, SM=5. Tam giác SOM vuông tại O, nên SO=√(5²−3²)=4.\n\n**D6 nếu sai:** Đừng dùng đường cao mặt bên thay cho đường cao vuông góc với đáy. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B26-HEIGHT_APPLICATION"
+    ],
     "original_outcome_ids": [
       "TOP17-O06"
     ],
@@ -153,16 +165,18 @@
       "heading_id": "THPT-TOP17-P06",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P07",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
     "stem": "Lăng trụ có đáy hình tam giác diện tích 18 m², khoảng cách hai mặt đáy 4 m. Tính V.",
-    "answer_key": null,
+    "answer_key": "72 m³.",
     "worked_solution": "72 m³ =18×4. Khoảng cách vuông góc hai đáy là chiều cao, không nhất thiết cạnh bên.\n\n**D6 nếu sai:** Đơn vị thể tích phải là đơn vị khối, và h phải vuông góc đáy. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B27-PRISM_VOLUME"
+    ],
     "original_outcome_ids": [
       "TOP17-O07"
     ],
@@ -179,16 +193,18 @@
       "heading_id": "THPT-TOP17-P07",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P08",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chóp tứ giác đáy vuông cạnh 6 cm và cao 4 cm. Tính thể tích.",
-    "answer_key": null,
+    "answer_key": "48 cm³.",
     "worked_solution": "Sđáy=36 cm², V=36×4/3=48 cm³. Không dùng độ dài đường cao mặt bên.\n\n**D6 nếu sai:** Phân biệt dạng chóp với lăng trụ trước khi chọn công thức. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B27-PYRAMID_VOLUME"
+    ],
     "original_outcome_ids": [
       "TOP17-O08"
     ],
@@ -205,16 +221,18 @@
       "heading_id": "THPT-TOP17-P08",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P09",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
     "stem": "Lập phương cạnh 5 cm. Tính thể tích và đơn vị.",
-    "answer_key": null,
+    "answer_key": "125 cm³.",
     "worked_solution": "5³=125 cm³; thể tích dùng ba chiều.\n\n**D6 nếu sai:** Không nhầm diện tích toàn phần với thể tích và không bỏ đơn vị khối. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B27-BOX_VOLUME"
+    ],
     "original_outcome_ids": [
       "TOP17-O09"
     ],
@@ -231,16 +249,18 @@
       "heading_id": "THPT-TOP17-P09",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P10",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chóp cụt đều hai đáy vuông cạnh 6 và 3, chiều cao 4. Tính V.",
-    "answer_key": null,
-    "worked_solution": "S=36,S′=9, √(SS′)=18, V=(4/3)(36+9+18)=84 đơn vị khối.\n\n**D6 nếu sai:** Nếu hai đáy bằng nhau thì công thức trở về lăng trụ V=Sh; nếu đáy nhỏ thu về 0 thì về chóp V=Sh/3. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "84 đơn vị khối.",
+    "worked_solution": "Hai diện tích đáy là S=6²=36 và S′=3²=9. Chiều cao vuông góc h=4. Áp dụng V=h(S+S′+√(SS′))/3: √(36·9)=18, nên V=4(36+9+18)/3=84 đơn vị khối.\n\n**D6 nếu sai:** Nếu hai đáy bằng nhau thì công thức trở về lăng trụ V=Sh; nếu đáy nhỏ thu về 0 thì về chóp V=Sh/3. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B27-FRUSTUM_VOLUME"
+    ],
     "original_outcome_ids": [
       "TOP17-O10"
     ],
@@ -257,16 +277,18 @@
       "heading_id": "THPT-TOP17-P10",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P11",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
-    "stem": "Một khối lăng trụ tam giác vuông có cạnh góc vuông đáy 6 cm và 8 cm, chiều cao khối 7 cm. Tính V.",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một khối lăng trụ có đáy là tam giác vuông với hai cạnh góc vuông dài 6 cm và 8 cm, chiều cao khối 7 cm. Tính thể tích.",
+    "answer_key": "168 cm³.",
     "worked_solution": "Sđáy=(1/2)×6×8=24 cm², V=24×7=168 cm³.\n\n**D6 nếu sai:** Không dùng cạnh xiên hoặc quên nhân hệ số 1/2 cho diện tích tam giác vuông. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B27-VOLUME_APPLICATION"
+    ],
     "original_outcome_ids": [
       "TOP17-O11"
     ],
@@ -283,16 +305,18 @@
       "heading_id": "THPT-TOP17-P11",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP17-P12",
-    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chóp đều đáy vuông cạnh 8 và đường cao mặt bên 5. Tính thể tích.",
-    "answer_key": null,
-    "worked_solution": "Hình chiếu đỉnh là tâm đáy, nửa cạnh=4; h=√(25−16)=3; Sđáy=64; V=64×3/3=64 đơn vị khối.\n\n**D6 nếu sai:** Khi kết quả sai, dò ngược: loại khối → đáy → đường vuông góc → h → công thức → đơn vị. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "64 đơn vị khối.",
+    "worked_solution": "Gọi O là tâm đáy và M là trung điểm một cạnh đáy. Với đỉnh S, SO⊥(đáy), OM=4, SM=5. Tam giác SOM vuông tại O cho SO=√(25−16)=3. Diện tích đáy 8²=64; thể tích V=64·3/3=64 đơn vị khối.\n\n**D6 nếu sai:** Khi kết quả sai, dò ngược: loại khối → đáy → đường vuông góc → h → công thức → đơn vị. Quay lại hình và chỉ rõ vì sao đoạn đo là vuông góc; kiểm tra dạng khối/đơn vị trước khi làm biến thể.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-CHVII-INTEGRATED"
+    ],
     "original_outcome_ids": [
       "TOP17-O12"
     ],
@@ -309,6 +333,6 @@
       "heading_id": "THPT-TOP17-P12",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
