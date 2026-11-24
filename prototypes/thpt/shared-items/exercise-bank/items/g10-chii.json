@@ -593,12 +593,14 @@
   },
   {
     "item_id": "THPT-G10-CHII-TRY01",
-    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3",
+    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong ba biểu thức (a) \\(2x-3y<6\\); (b) \\(xy\\le6\\); (c) \\(0x+0y\\le4\\), biểu thức nào là bất phương trình bậc nhất hai ẩn? Giải thích.",
-    "answer_key": null,
+    "answer_key": "Chỉ (a).",
     "worked_solution": "**Chỉ (a)** đúng dạng vì các biến ở bậc nhất và hai hệ số \\(2,-3\\) không đồng thời bằng 0. (b) chứa tích \\(xy\\); (c) có cả hai hệ số bằng 0. Nếu nhầm, quay lại điều kiện trong khung “Kiến thức cần nhớ”.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B03-LINEAR_INEQUALITY"
+    ],
     "original_outcome_ids": [
       "G10-B03-LINEAR_INEQUALITY"
     ],
@@ -621,16 +623,19 @@
       "help_ref": "HELP-G10-B03-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHII-TRY02",
-    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3",
+    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với \\(x+2y\\le6\\), trong \\(A(2,2)\\), \\(B(3,2)\\), \\(C(0,0)\\), những điểm nào là nghiệm? Điểm nào nằm đúng trên đường biên?",
-    "answer_key": null,
+    "answer_key": "A và C là nghiệm; A nằm trên biên.",
     "worked_solution": "**A và C** là nghiệm. A nằm trên biên vì \\(2+2\\cdot2=6\\); B không là nghiệm vì \\(3+2\\cdot2=7>6\\). C nằm trong miền vì \\(0\\le6\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B03-POINT_TEST",
+      "G10-B03-BOUNDARY"
+    ],
     "original_outcome_ids": [
       "G10-B03-POINT_TEST"
     ],
@@ -653,16 +658,18 @@
       "help_ref": "HELP-G10-B03-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHII-TRY03",
-    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3",
+    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với \\(3x+y<6\\), đường biên là gì, vẽ nét liền hay nét đứt? Điểm \\((2,0)\\) có thuộc miền nghiệm không?",
-    "answer_key": null,
+    "answer_key": "Biên 3x+y=6, nét đứt; (2,0) không thuộc miền nghiệm.",
     "worked_solution": "Đường biên là \\(3x+y=6\\), phải vẽ **nét đứt**. \\((2,0)\\) cho \\(3\\cdot2+0=6\\), không thỏa \\(<6\\); đó là điểm trên đường biên **không được lấy**.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B03-BOUNDARY"
+    ],
     "original_outcome_ids": [
       "G10-B03-BOUNDARY"
     ],
@@ -685,16 +692,19 @@
       "help_ref": "HELP-G10-B03-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHII-TRY04",
-    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3",
+    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3_AUTHOR_KEY_REVIEW_R01",
     "stem": "Biến đổi \\(3x-y<3\\) về điều kiện theo \\(y\\). Biên có được lấy không? Gốc \\(O(0,0)\\) có thuộc miền nghiệm không?",
-    "answer_key": null,
+    "answer_key": "y>3x−3; không lấy biên; O là nghiệm.",
     "worked_solution": "\\(3x-y<3\\iff -y<3-3x\\iff y>3x-3\\). **Không lấy biên** vì dấu nghiêm ngặt. Tại \\(O\\): \\(0<3\\) đúng, nên \\(O\\) là nghiệm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B03-HALFPLANE",
+      "G10-B03-POINT_TEST"
+    ],
     "original_outcome_ids": [
       "G10-B03-HALFPLANE"
     ],
@@ -717,16 +727,18 @@
       "help_ref": "HELP-G10-B03-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHII-TRY05",
-    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3",
+    "content_version": "SOURCE_BLOB_03cf894ec9e4fb55b86201ab43dab21c48337ef3_AUTHOR_KEY_REVIEW_R01",
     "stem": "Công việc A cần 4 phút/sản phẩm, B cần 6 phút/sản phẩm, tổng thời gian không quá 120 phút. Viết điều kiện cho số sản phẩm \\(x,y\\) rồi kiểm \\((10,10)\\).",
-    "answer_key": null,
+    "answer_key": "4x+6y≤120; x,y nguyên không âm; (10,10) hợp lệ.",
     "worked_solution": "Điều kiện là \\(4x+6y\\le120\\), \\(x,y\\in\\mathbb Z_{\\ge0}\\) nếu đếm sản phẩm rời rạc. Thay \\(x=y=10\\) được \\(4\\cdot10+6\\cdot10=100\\le120\\), nên phương án hợp lệ.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B03-MODELING"
+    ],
     "original_outcome_ids": [
       "G10-B03-MODELING"
     ],
@@ -749,16 +761,18 @@
       "help_ref": "HELP-G10-B03-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHII-TRY06",
-    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618",
+    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618_AUTHOR_KEY_REVIEW_R01",
     "stem": "Xét hệ \\(x\\ge1,\\ y\\ge0,\\ x+y\\le5\\). Hai cặp \\((2,3)\\) và \\((0,4)\\) có là nghiệm hệ không? Vì sao?",
-    "answer_key": null,
+    "answer_key": "(2,3) là nghiệm; (0,4) không là nghiệm.",
     "worked_solution": "\\((2,3)\\) **là nghiệm** vì \\(2\\ge1,\\ 3\\ge0,\\ 2+3=5\\le5\\). \\((0,4)\\) **không là nghiệm** vì \\(0\\not\\ge1\\), dù hai điều kiện còn lại đúng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B04-SYSTEM"
+    ],
     "original_outcome_ids": [
       "G10-B04-SYSTEM"
     ],
@@ -781,16 +795,18 @@
       "help_ref": "HELP-G10-B04-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHII-TRY07",
-    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618",
+    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hệ \\(x\\ge0,\\ y\\ge0,\\ x+2y\\le6\\) có những đỉnh nào? Các cạnh có được lấy không? Đây là **hệ ba điều kiện khác với tứ giác trong hình**.",
-    "answer_key": null,
+    "answer_key": "Các đỉnh (0,0), (6,0), (0,3); cả ba cạnh được lấy.",
     "worked_solution": "Các đỉnh là \\((0,0)\\), \\((6,0)\\), \\((0,3)\\). Ba đường biên tạo thành một **tam giác**, **không phải** tứ giác ở hình trên. Cả ba cạnh đều thuộc miền vì các dấu \\(\\ge,\\le\\) đều có bằng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B04-REGION_INTERSECTION"
+    ],
     "original_outcome_ids": [
       "G10-B04-REGION_INTERSECTION"
     ],
@@ -813,16 +829,18 @@
       "help_ref": "HELP-G10-B04-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHII-TRY08",
-    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618",
+    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618_AUTHOR_KEY_REVIEW_R01",
     "stem": "Xét hệ \\(x\\ge3,\\ y\\ge0,\\ x+y\\le2\\). Hệ có nghiệm không? Giải thích bằng bất đẳng thức.",
-    "answer_key": null,
+    "answer_key": "Hệ vô nghiệm.",
     "worked_solution": "**Không có nghiệm.** Từ \\(x\\ge3,\\ y\\ge0\\) suy ra \\(x+y\\ge3\\), trái với điều kiện \\(x+y\\le2\\). Không thể tối ưu trên một miền nghiệm rỗng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B04-FEASIBILITY"
+    ],
     "original_outcome_ids": [
       "G10-B04-FEASIBILITY"
     ],
@@ -845,16 +863,18 @@
       "help_ref": "HELP-G10-B04-01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHII-TRY09",
-    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618",
+    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tam giác nghiệm của \\(x\\ge0,\\ y\\ge0,\\ 2x+y\\le6\\) có các đỉnh \\((0,0),(3,0),(0,6)\\). Tính \\(F=x+2y\\) ở các đỉnh và xác định \\(F_{\\max}\\). Đây **không** phải hàm và hệ trong hình tứ giác ở mục §2.2.",
-    "answer_key": null,
+    "answer_key": "F(0,0)=0; F(3,0)=3; F(0,6)=12; GTLN 12 tại (0,6).",
     "worked_solution": "\\(F(0,0)=0\\), \\(F(3,0)=3\\), \\(F(0,6)=12\\). Vậy \\(F_{\\max}=12\\) tại \\((0,6)\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B04-LINEAR_OBJECTIVE"
+    ],
     "original_outcome_ids": [
       "G10-B04-LINEAR_OBJECTIVE"
     ],
@@ -877,16 +897,18 @@
       "help_ref": "HELP-G10-B04-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHII-TRY10",
-    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618",
+    "content_version": "SOURCE_BLOB_4c8bfa2bd9af3ac5a31da945abdc990ceaee4618_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với \\(x+2y\\le7,\\ 2x+y\\le7,\\ x,y\\in\\mathbb Z_{\\ge0}\\), xét \\(F=3x+2y\\). Điểm \\((7/3,7/3)\\) có hợp lệ không? So \\(F\\) tại hai điểm \\((2,2)\\) và \\((3,1)\\). **Chỉ so hai điểm, chưa kết luận tối ưu toàn cục.**",
-    "answer_key": null,
+    "answer_key": "(7/3,7/3) không hợp lệ; F(2,2)=10; F(3,1)=11; (3,1) tốt hơn trong hai điểm.",
     "worked_solution": "\\((7/3,7/3)\\) thỏa hai bất phương trình nhưng **không phải phương án nguyên**. \\((2,2)\\) có \\(2+4=6\\le7,\\ 4+2=6\\le7\\), cho \\(F=10\\). \\((3,1)\\) có \\(3+2=5\\le7,\\ 6+1=7\\le7\\), cho \\(F=11\\). Trong **hai điểm được so**, \\((3,1)\\) tốt hơn; bài chưa yêu cầu chứng minh đó là tối ưu toàn cục.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B04-INTEGER_MODELS"
+    ],
     "original_outcome_ids": [
       "G10-B04-INTEGER_MODELS"
     ],
@@ -909,6 +931,6 @@
       "help_ref": "HELP-G10-B04-02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
