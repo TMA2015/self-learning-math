@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 48/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B16, còn B17–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: **51/51 bài đã bàn giao (100% phạm vi AUTHORING)**; Toán 12 B01–B19 hoàn thành 19/19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B16 CONTENT_READY; B17–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- **Toán 12 B01–B19: 19/19 CONTENT_READY, đã bàn giao đủ 19 nguồn canonical cho RELEASE.** Không còn bài nào trong phạm vi nâng cấp trang Kiến thức chưa bàn giao. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -61,7 +61,9 @@
 | 12 | B14 | [#1083](https://github.com/TMA2015/self-learning-math/pull/1083) | CONTENT_READY — đã bàn giao |
 | 12 | B15 | [#1084](https://github.com/TMA2015/self-learning-math/pull/1084) | CONTENT_READY — đã bàn giao |
 | 12 | B16 | [#1085](https://github.com/TMA2015/self-learning-math/pull/1085) | CONTENT_READY — đã bàn giao |
-| 12 | B17–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B17 | [#1086](https://github.com/TMA2015/self-learning-math/pull/1086) | CONTENT_READY — đã bàn giao |
+| 12 | B18 | [#1087](https://github.com/TMA2015/self-learning-math/pull/1087) | CONTENT_READY — đã bàn giao |
+| 12 | B19 | [#1088](https://github.com/TMA2015/self-learning-math/pull/1088) | CONTENT_READY — đã bàn giao |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -318,6 +320,36 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B15_FIG01_PARAMETER_AUTHORING
 | [#1085](https://github.com/TMA2015/self-learning-math/pull/1085) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md` | `f25a04145d3101793fae97e858581337034deaff` | `b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d` | `8e9b245d157498244e5408bd96c7b34fde170978` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B16_FIG01_LINE_ANGLE_AUTHORING_20261124.svg` (`27b811c2e6d4293178539f91821354e011be4636`); `G12_B16_FIG02_LINE_PLANE_AUTHORING_20261124.svg` (`621bba914692f6b0787b11ac57934c8df7eabb27`); `G12_B16_FIG03_PLANE_ANGLE_AUTHORING_20261124.svg` (`6b0674ed7c66f9822d162dcf04f0f9671b8039b1`).
+
+### Toán 12 B17 — Phương trình mặt cầu (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đối chiếu văn bản [SGK KNTT Toán 12 tập 2, trang in 54–60](https://intracomuni.edu.vn/wp-content/uploads/2026/11/sach-giao-khoa-toan-12-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf); ảnh PDF không truy xuất được (cache miss), không xác nhận kiểm ảnh gốc. Bốn tab Golden. Đối ứng hai mục phương trình mặt cầu và ứng dụng thực tiễn. Từ khoảng cách đến phương trình, hoàn thành bình phương, R² dương, trong/trên/ngoài, đường kính và thiết diện; bổ sung tọa độ địa cầu từ vĩ/kinh độ, cung tròn lớn khác dây cung, góc ở tâm giữ dấu tích vô hướng; mô hình GPS/định vị từ khoảng cách và kiểm nghiệm. 6 ví dụ, 4 Vận dụng có Đối chiếu/Kiểm lỗi, 6 lỗi thực chất, 2 SVG. Đối chiếu Golden G10 B21. 26 nhóm tự kiểm: 25 đạt trước delta, kiểm cú pháp báo mẫu ngắt dòng trùng token mở MathJax; đã tách hàng hệ phương trình, readback xác nhận delta chỉ định dạng và kiểm cú pháp đạt. Bảo toàn OUTCOME_ID/FIRST_TRY_ID. Giữ nguyên PNG cũ trong kho; nhãn và khung công thức theo 3+1. Diff chỉ canonical và SVG riêng bài.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1086](https://github.com/TMA2015/self-learning-math/pull/1086) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md` | `1da03f8a43514fafef66586fe3556581607d4e1e` | `29b609be3195efcd341aea39cb604a930dba8468` | `d8abd992794ec7c903923fcc1cffda11506d91e7` |
+
+Asset delta tại `docs/assets/images/thpt/`: `G12_B17_SECTION_AUTHORING_20261124.svg` (`0c641f4ccf95d9e93b9693999984e64bea08c52d`); `G12_B17_GREAT_CIRCLE_AUTHORING_20261124.svg` (`d684c8c4670945d89c5f7a96e485c9b96df880da`).
+
+### Toán 12 B18 — Xác suất có điều kiện (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đối chiếu văn bản [SGK KNTT Toán 12 tập 2, trang in 64–71](https://intracomuni.edu.vn/wp-content/uploads/2026/11/sach-giao-khoa-toan-12-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf); ảnh PDF không truy xuất được (cache miss), không xác nhận kiểm ảnh gốc. Bốn tab Golden. Đối ứng hai mục xác suất có điều kiện và công thức nhân xác suất. Thu hẹp không gian mẫu, mô hình không đồng khả năng, mẫu số dương, xác suất giao bằng 0 khi điều kiện xác suất 0, biến cố đối/độc lập, bảng 2×2, sơ đồ cây và phép thử không hoàn lại, trò chơi ba cửa với quy tắc người dẫn rõ. 6 ví dụ, 3 Vận dụng có Đối chiếu/Kiểm lỗi, 6 lỗi thực chất, 1 SVG. Đối chiếu Golden G10 B26. 26 nhóm tự kiểm đạt trên source cuối, gồm xác suất, tổng bảng và lá cây, cấu trúc và bảo toàn đủ 7 mã EX-G12-B18-O01–O07. Giữ nguyên PNG cũ trong kho; nhãn và khung công thức theo 3+1. Diff chỉ canonical và SVG riêng bài.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1087](https://github.com/TMA2015/self-learning-math/pull/1087) | `docs/thpt-preview/sgk/lop-12/chuong-vi/bai-18.md` | `0c620d85d17b97f494068cb897275f441753b60a` | `c5e96be714ed2b3d440c37c5507ddc79314bf087` | `cd3e05addf67a5fccb30ad28f1f8fb8e5d9b917b` |
+
+Asset delta tại `docs/assets/images/thpt/`: `G12_B18_TREE_AUTHORING_20261124.svg` (`45568ffd5307a1f8292a0c84ddba4e045fd27d6e`).
+
+### Toán 12 B19 — Công thức xác suất toàn phần và công thức Bayes (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đối chiếu văn bản [SGK KNTT Toán 12 tập 2, trang in 72–78](https://intracomuni.edu.vn/wp-content/uploads/2026/11/sach-giao-khoa-toan-12-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf); ảnh PDF không truy xuất được (cache miss), không xác nhận kiểm ảnh gốc. Bốn tab Golden. Đối ứng hai mục công thức xác suất toàn phần và Bayes. Suy ra từ phân hoạch và nhân xác suất; cùng bảng/cây cho toàn phần rồi Bayes, mẫu số dương và nhóm xác suất 0, tỉ lệ nền, tín hiệu dương/âm, mở rộng nhiều nhóm và mô hình di truyền độc lập. 6 ví dụ, 3 Vận dụng có Đối chiếu/Kiểm lỗi, 6 lỗi thực chất, 1 SVG. Đối chiếu Golden G10 B26. 25 nhóm tự kiểm đạt trên source cuối, gồm tần số, xác suất lá, Bayes, tỉ lệ nền, làm tròn, cấu trúc và bảo toàn đủ 7 mã EX-G12-B19-O01–O07. Giữ nguyên PNG cũ trong kho; nhãn và khung công thức theo 3+1. Diff chỉ canonical và SVG riêng bài.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1088](https://github.com/TMA2015/self-learning-math/pull/1088) | `docs/thpt-preview/sgk/lop-12/chuong-vi/bai-19.md` | `d97137df82d16489ca32f6f7a5bbe0483593dedd` | `e9588ca5fcdb107aa62990dc2e36635ef01085c0` | `818ef075105baf65f95fb376956abeeea8ff8294` |
+
+Asset delta tại `docs/assets/images/thpt/`: `G12_B19_TREE_AUTHORING_20261124.svg` (`a9fcde9ea6c6e23062fb973e708d98a553ea6ebe`).
 
 ## Cách cập nhật
 
