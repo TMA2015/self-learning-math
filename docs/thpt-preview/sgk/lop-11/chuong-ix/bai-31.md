@@ -20,7 +20,7 @@
 
     Khi nhìn đồng hồ đo tốc độ của một chiếc xe, ta muốn biết xe đang chạy nhanh đến đâu **ngay lúc đó**. Nhưng phép tính quen thuộc \(\text{quãng đường}/\text{thời gian}\) lại cho tốc độ **trung bình trong một khoảng thời gian**. Hai điều này khác nhau nếu xe đang tăng tốc hoặc giảm tốc.
 
-    Hãy xét một vật chuyển động theo chiều dương với tọa độ \(s(t)=t^2\) mét, trong đó \(t\) tính bằng giây. Từ \(t=2\) đến \(t=3\), vận tốc trung bình là \((9-4)/(3-2)=5\) m/s. Nếu chỉ xét từ \(t=2\) đến \(t=2{,}1\), ta được \((2{,}1^2-2^2)/0{,}1=4{,}1\) m/s; còn từ \(t=2\) đến \(t=2{,}01\) thì được \(4{,}01\) m/s. Khoảng đo càng thu hẹp về \(t=2\), các giá trị càng tiến gần **\(4\) m/s**. Đó là vận tốc tức thời tại \(t=2\).
+    Hãy xét một vật chuyển động theo chiều dương với tọa độ \(s(t)=t^2\) mét, trong đó \(t\) tính bằng giây. Từ \(t=2\) đến \(t=3\), vận tốc trung bình là \((9-4)/(3-2)=5\) m/s. Nếu chỉ xét từ \(t=2\) đến \(t=2{,}1\), ta được \((2{,}1^2-2^2)/0{,}1=4{,}1\) m/s; còn từ \(t=2\) đến \(t=2{,}01\) thì được \(4{,}01\) m/s. Để xác nhận bằng giới hạn, đặt \(t=2+h\), \(h\ne0\). Khi đó \(\frac{(2+h)^2-4}{h}=4+h\to4\) khi \(h\to0\) từ cả hai phía. Vậy vận tốc tức thời tại \(t=2\) là **\(4\) m/s**.
 
     Một tình huống khác có cùng bản chất: điện lượng \(Q(t)\), tính bằng culông (C), đã đi qua tiết diện dây dẫn từ thời điểm bắt đầu đến thời điểm \(t\). Trong một khoảng thời gian, cường độ dòng điện trung bình bằng **lượng điện tích tăng thêm chia cho thời gian**; khi khoảng đo co lại về một thời điểm, giới hạn ấy cho **cường độ dòng điện tức thời** (A = C/s).
 
@@ -28,7 +28,7 @@
 
     ### 1.2. Đạo hàm của hàm số tại một điểm
 
-    Giả sử \(y=f(x)\) và ta cần xem giá trị hàm biến đổi nhanh thế nào quanh \(x_0\). Khi đầu vào tăng thêm một lượng \(h\ne0\), đầu ra tăng thêm \(f(x_0+h)-f(x_0)\). Thương
+    Giả sử \(y=f(x)\) và ta cần xem giá trị hàm biến đổi nhanh thế nào quanh \(x_0\). Khi đầu vào thay đổi một lượng \(h\ne0\) (có thể dương hoặc âm), đầu ra thay đổi một lượng \(f(x_0+h)-f(x_0)\). Thương sai phân (mức thay đổi của đầu ra chia cho mức thay đổi của đầu vào)
 
     \[
     \frac{f(x_0+h)-f(x_0)}h
@@ -78,11 +78,11 @@
 
     Nhờ vậy, nếu một vật chuyển động có tọa độ \(s(t)\) mét theo thời gian \(t\) giây, thì \(s'(t)\) cho **vận tốc tức thời** (m/s) khi đạo hàm tồn tại. Vận tốc có thể **âm** nếu vật đi ngược chiều dương đã chọn; khi hỏi **tốc độ** (độ lớn vận tốc), lấy \(|s'(t)|\). Với điện lượng \(Q(t)\) đo bằng C, \(Q'(t)\) là cường độ dòng điện tức thời đo bằng A. Đơn vị của đạo hàm nói lên **đại lượng đầu ra thay đổi bao nhiêu trên một đơn vị đầu vào**.
 
-    **Vận dụng.** Giả sử \(s(t)=5t^2-2t\) (m), \(t\ge0\) (s), với chiều dương đã chọn. Dùng kết quả đạo hàm của \(cx^2\) và \(x\), tìm \(v(t)\), rồi tính **vận tốc và tốc độ** tại \(t=0{,}1\) và \(t=1\) giây.
+    **Vận dụng.** Giả sử \(s(t)=5t^2-2t\) (m), \(t\ge0\) (s), với chiều dương đã chọn. Dùng định nghĩa đạo hàm, tìm \(v(t)\), rồi tính **vận tốc và tốc độ** tại \(t=0{,}1\) và \(t=1\) giây.
 
     ??? question "Đối chiếu"
 
-        **Lời giải.** Trên khoảng \(t>0\), \(v(t)=s'(t)=10t-2\) (m/s). Tại \(t=0{,}1\), \(v(0{,}1)=10\cdot0{,}1-2=-1\) m/s, nên tốc độ là \(1\) m/s. Tại \(t=1\), \(v(1)=8\) m/s và tốc độ bằng \(8\) m/s.
+        **Lời giải.** Với \(t>0\), \(h\ne0\) đủ nhỏ, \(\frac{s(t+h)-s(t)}h=\frac{10th+5h^2-2h}{h}=10t+5h-2\). Cho \(h\to0\), ta được \(v(t)=s'(t)=10t-2\) (m/s). Tại \(t=0{,}1\), \(v(0{,}1)=10\cdot0{,}1-2=-1\) m/s, nên tốc độ là \(1\) m/s. Tại \(t=1\), \(v(1)=8\) m/s và tốc độ bằng \(8\) m/s.
 
         **Kiểm lại:** Cả hai thời điểm đều nằm trong khoảng \(t>0\) đang xét. Vận tốc ở thời điểm đầu âm nghĩa vật đi **ngược** chiều dương; tốc độ vẫn không âm.
 
@@ -106,19 +106,19 @@
 
     Đây là phương trình đường thẳng qua một điểm có hệ số góc cho trước. Em cần phân biệt \(f(x_0)\), tức **tung độ của tiếp điểm**, với \(f'(x_0)\), tức **độ dốc**. Hai giá trị này thường không bằng nhau.
 
-    **Vận dụng.** Với \(f(x)=x^2\), viết phương trình tiếp tuyến của đồ thị tại điểm có hoành độ \(x_0=2\). Tự kiểm xem điểm \((2;4)\) có nằm trên tiếp tuyến không.
+    **Vận dụng.** Với \(f(x)=x^2\), viết phương trình tiếp tuyến của đồ thị tại điểm có hoành độ \(x_0=3\). Tự kiểm xem điểm \((3;9)\) có nằm trên tiếp tuyến không.
 
     ??? question "Đối chiếu"
 
-        **Lời giải.** \(f(2)=4\), \(f'(2)=2\cdot2=4\). Phương trình tiếp tuyến là
+        **Lời giải.** \(f(3)=9\), \(f'(3)=2\cdot3=6\). Phương trình tiếp tuyến là
 
         \[
-        y-4=4(x-2)\quad\Longleftrightarrow\quad y=4x-4.
+        y-9=6(x-3)\quad\Longleftrightarrow\quad y=6x-9.
         \]
 
-        **Kiểm lại:** Thay \(x=2\) vào \(y=4x-4\) cho \(y=4\), đúng tung độ tiếp điểm. Hệ số góc là \(4\).
+        **Kiểm lại:** Thay \(x=3\) vào \(y=6x-9\) cho \(y=9\), đúng tung độ tiếp điểm. Hệ số góc là \(6\), khác tung độ \(9\).
 
-        **Kiểm lỗi:** Nếu viết \(y=4x+4\), em đã thay đúng hệ số góc nhưng chưa buộc đường thẳng **đi qua tiếp điểm**. Hãy dùng dạng \(y-y_0=k(x-x_0)\) rồi mới rút gọn.
+        **Kiểm lỗi:** Nếu viết \(y=6x+9\), em đã thay đúng hệ số góc nhưng chưa buộc đường thẳng **đi qua tiếp điểm**. Hãy dùng dạng \(y-y_0=k(x-x_0)\) rồi mới rút gọn.
 
 === "Kiến thức SGK"
 
