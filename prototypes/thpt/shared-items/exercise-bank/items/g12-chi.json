@@ -1622,5 +1622,482 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B01-KFT01",
+    "content_version": "SOURCE_BLOB_64f6a142a88e8c4dd63dff3f7d2220787fcdec5c_AUTHORING_ANSWER_DRAFT",
+    "stem": "Với f′(x) dương trước x0 và âm sau x0, hàm sẽ chuyển hướng như thế nào? Trả lời bằng lời trước khi đọc phần Core; không có điểm chính thức.",
+    "answer_key": "Tăng trước x₀, giảm sau x₀; nếu liên tục tại x₀ thì đạt cực đại tại đó.",
+    "worked_solution": "Dấu f′ dương cho biết f tăng trên khoảng bên trái, dấu âm cho biết f giảm trên khoảng bên phải. Nếu x₀ thuộc miền xác định và f liên tục tại đó, f(x₀) lớn hơn các giá trị đủ gần ở hai bên, nên là giá trị cực đại. Chỉ dấu đạo hàm hai phía mà thiếu điều kiện tại x₀ chưa đủ kết luận cực trị.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md",
+        "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 72,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B01-C03",
+        "THPT-G12-CHI-B04-P02"
+      ],
+      "distinct_task_reason": "General sign change at x0 versus two fixed critical points and explicit continuity assumptions."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B01-KFT03",
+    "content_version": "SOURCE_BLOB_64f6a142a88e8c4dd63dff3f7d2220787fcdec5c_AUTHORING_ANSWER_DRAFT",
+    "stem": "Một hàm phân thức không xác định tại x=1 có thể được kết luận nghịch biến trên cả hai miền hợp lại chỉ từ f′<0 hay không? Hãy thử x=0 và x=2.",
+    "answer_key": "Không; chỉ nghịch biến trên từng khoảng.",
+    "worked_solution": "Ví dụ ngay trong bài: f(x)=1/(x−1), f′(x)=−1/(x−1)²<0 với x≠1. Nhưng 0<2 và f(0)=−1<f(2)=1. Do đó không thể kết luận nghịch biến trên cả miền hợp; chỉ trên mỗi khoảng (−∞;1), (1;+∞).",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md",
+        "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 76,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B01-P01"
+      ],
+      "distinct_task_reason": "Same disconnected-domain principle, existing pole x=2; source pole x=1 and no specific formula to evaluate at 0 and 2."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B02-KFT01",
+    "content_version": "SOURCE_BLOB_d6e517a980ec9259345285964f4c42767faa6122_AUTHORING_ANSWER_DRAFT",
+    "stem": "Hàm có cực đại tại x=2 nhưng liên tục trên [0,5], giá trị ở x=5 cao hơn: GTLN ở đâu? Nêu lý do.",
+    "answer_key": "Chưa đủ dữ kiện xác định nơi đạt GTLN.",
+    "worked_solution": "Liên tục trên [0;5] bảo đảm có GTLN. Vì f(5)>f(2), x=2 không thể đạt GTLN. Tuy nhiên có thể còn một điểm khác có giá trị lớn hơn f(5); cần so sánh các điểm biên và mọi điểm có thể đạt cực trị.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
+        "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 51,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B02-KFT03",
+    "content_version": "SOURCE_BLOB_d6e517a980ec9259345285964f4c42767faa6122_AUTHORING_ANSWER_DRAFT",
+    "stem": "Khi tối ưu một chiều dài x, vì sao cần ghi 0<x<12 trước khi đạo hàm?",
+    "answer_key": "Để giới hạn bài toán trong miền kích thước có nghĩa.",
+    "worked_solution": "Trong ví dụ vườn chu vi 24 m, hai cạnh là x và 12−x; cả hai phải dương, nên 0<x<12. Chỉ xét nghiệm đạo hàm và giới hạn biên trên miền này; x=0 hoặc x=12 tạo hình suy biến.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
+        "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 53,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B02-A01"
+      ],
+      "distinct_task_reason": "Same possible positive lengths for perimeter 24, existing asks optimization rather than why domain is necessary."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B03-KFT01",
+    "content_version": "SOURCE_BLOB_02f4b8a446e89d824b7b08c833fc306ca9db02c6_AUTHORING_ANSWER_DRAFT",
+    "stem": "Với f=2+1/(x−4), đoán đường nào là tiệm cận đứng/ngang, vì sao phải nói giới hạn?",
+    "answer_key": "Tiệm cận đứng x=4; tiệm cận ngang y=2.",
+    "worked_solution": "Khi x→4⁻, 1/(x−4)→−∞; khi x→4⁺, 1/(x−4)→+∞, nên x=4 là tiệm cận đứng. Khi x→±∞, 1/(x−4)→0, nên f(x)→2 và y=2 là tiệm cận ngang. Giới hạn là căn cứ xác định, không chỉ nhìn mẫu bằng 0.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
+        "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 49,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B03-KFT03",
+    "content_version": "SOURCE_BLOB_02f4b8a446e89d824b7b08c833fc306ca9db02c6_AUTHORING_ANSWER_DRAFT",
+    "stem": "Nếu f(x)−(2x+3)→0 khi x→∞, dạng tiệm cận nào phù hợp?",
+    "answer_key": "Tiệm cận xiên y=2x+3 khi x→+∞.",
+    "worked_solution": "Hiệu f(x)−(2x+3)→0 khi x→+∞, đúng định nghĩa tiệm cận xiên; hệ số góc 2 khác 0.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
+        "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 51,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B03-C03"
+      ],
+      "distinct_task_reason": "Source gives limiting difference to 2x+3, asks type; existing computes a specific different oblique asymptote."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B04-KFT01",
+    "content_version": "SOURCE_BLOB_a9a9a8f823ee85fe53014150b5cda31201867a4d_AUTHORING_ANSWER_DRAFT",
+    "stem": "Nếu y'=−3/(x−1)² với x≠1, liệu có thể vẽ một nét giảm liên tục băng qua x=1?",
+    "answer_key": "Không thể nối liên tục qua x=1.",
+    "worked_solution": "Trong ví dụ g(x)=(x+2)/(x−1)=1+3/(x−1), đạo hàm g′=−3/(x−1)²<0 với x≠1. Hai nhánh giảm riêng rẽ, nhưng g→−∞ khi x→1⁻ và g→+∞ khi x→1⁺; x=1 không thuộc miền xác định. Không vẽ nét nối qua tiệm cận đứng.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
+        "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 53,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B04-C03",
+        "THPT-G12-CHI-B04-P03"
+      ],
+      "distinct_task_reason": "Similar separate branches but existing formula/pole or requested task differs."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B04-KFT02",
+    "content_version": "SOURCE_BLOB_a9a9a8f823ee85fe53014150b5cda31201867a4d_AUTHORING_ANSWER_DRAFT",
+    "stem": "Nghiệm bội hai x=0 của y=x³−3x² khiến đường cong tiếp xúc hay cắt trục Ox?",
+    "answer_key": "Tiếp xúc trục Ox tại (0;0), không cắt xuyên qua.",
+    "worked_solution": "y=x²(x−3). Gần x=0, x−3<0 và x²>0 khi x≠0, nên y âm ở cả hai phía; y(0)=0 và y′(0)=0. Đồ thị chạm trục hoành nhưng không đổi dấu qua nghiệm bội hai.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+      "heading_id": "Tự thử B",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
+        "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử B",
+      "line": 54,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B04-P05"
+      ],
+      "distinct_task_reason": "Same cubic, existing additionally asks at x=3; source only x=0, do not conflate."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B04-KFT03",
+    "content_version": "SOURCE_BLOB_a9a9a8f823ee85fe53014150b5cda31201867a4d_AUTHORING_ANSWER_DRAFT",
+    "stem": "Với g=2+11/(x−3), dự đoán tâm đối xứng trước khi xem ví dụ.",
+    "answer_key": "I(3;2).",
+    "worked_solution": "Viết g(x)=2+11/(x−3). Hai đường tiệm cận là x=3 và y=2. Với h≠0, g(3+h)−2=11/h và g(3−h)−2=−11/h; hai điểm tương ứng đối xứng qua I(3;2).",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
+        "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 55,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B05-KFT01",
+    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT",
+    "stem": "s(t)=5−2t có vị trí dương lúc t=1, vật đi theo chiều nào? Tốc độ bao nhiêu?",
+    "answer_key": "Đi theo chiều âm; tốc độ bằng 2 đơn vị độ dài trên đơn vị thời gian.",
+    "worked_solution": "s(1)=3>0 chỉ cho biết vị trí. v(t)=s′(t)=−2 nên vật đi theo chiều âm; tốc độ |v|=2. Nếu s đo bằng m, t bằng s thì tốc độ là 2 m/s.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+      "heading_id": "Tự thử A",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+        "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử A",
+      "line": 51,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B05-KFT02",
+    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT",
+    "stem": "Chi phí C(q) có đơn vị triệu đồng, q sản phẩm. Đơn vị C'(q) là gì?",
+    "answer_key": "Triệu đồng/sản phẩm.",
+    "worked_solution": "Đạo hàm C′(q) là tốc độ biến đổi của chi phí theo sản lượng. Lấy đơn vị triệu đồng chia cho đơn vị sản phẩm.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+      "heading_id": "Tự thử B",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+        "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử B",
+      "line": 52,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B05-KFT03",
+    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT",
+    "stem": "Bốn cạnh hay ba cạnh hàng rào sẽ làm thay đổi điều kiện x+y hay 2x+y?",
+    "answer_key": "Bốn cạnh: 2x+2y=L; ba cạnh sát tường: 2x+y=L.",
+    "worked_solution": "Với x là chiều vuông góc tường, y là chiều song song tường, bốn cạnh hình chữ nhật dài tổng cộng 2x+2y, tương đương x+y=L/2. Nếu một cạnh y sát tường không cần rào, chỉ dùng hai cạnh x và một cạnh y, nên 2x+y=L. Phải chọn ràng buộc đúng số cạnh trước khi tối ưu.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+      "heading_id": "Tự thử C",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+        "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử C",
+      "line": 53,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B05-A01"
+      ],
+      "distinct_task_reason": "Source compares fencing constraint for four versus three sides; existing optimizes three-sided fence only. Requires context."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B05-KFT04",
+    "content_version": "SOURCE_BLOB_54c9c90323f7b1d9077270d90627864f5a468c03_AUTHORING_ANSWER_DRAFT",
+    "stem": "Khi x cắt vuông ở góc hộp 30×20, tại sao x=12 cm không hợp lệ?",
+    "answer_key": "Không hợp lệ vì 20−2·12=−4<0.",
+    "worked_solution": "Cắt bốn hình vuông cạnh x từ tấm bìa 30×20 tạo đáy có kích thước 30−2x và 20−2x. Hộp không suy biến đòi hỏi x>0 và cả hai kích thước dương, tức 0<x<10. x=12 vi phạm.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+      "heading_id": "Tự thử D",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+        "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Tự thử D",
+      "line": 54,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NO_DIRECT_SOURCE_REVEAL",
+      "related_item_ids": [
+        "THPT-G12-CHI-B05-C04",
+        "THPT-G12-CHI-B05-P05"
+      ],
+      "distinct_task_reason": "Same cardboard dimensions but source asks why x=12 invalid; existing asks full domain or degenerate x=10."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
