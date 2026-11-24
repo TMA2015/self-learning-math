@@ -1587,7 +1587,10 @@
     "answer_key": "Vì góc giữa hai đường thẳng trong không gian được xác định theo phương, không đòi hỏi chúng cắt nhau.",
     "worked_solution": "Qua A dựng đường song song với CC′, chính là AA′. Góc giữa AB và CC′ bằng góc giữa AB và AA′, tức 90° trong hình hộp chữ nhật. Hai đường có thể chéo nhau mà vẫn vuông góc theo định nghĩa góc giữa hai đường.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B22-ANGLE_LINES",
+      "G11-B22-PERP_SKEW"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1619,7 +1622,7 @@
       "legacy_reveal": "Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B26-KFT01",
@@ -1628,7 +1631,10 @@
     "answer_key": "SH=3, vì chiều cao là đoạn vuông góc với đáy.",
     "worked_solution": "H là hình chiếu vuông góc của S trên đáy nên SH⊥AH. Tam giác SAH vuông tại H, SH=√(SA²−AH²)=√(25−16)=3. SA=5 là cạnh xiên, không phải khoảng cách vuông góc từ S tới đáy.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B26-HEIGHT_APPLICATION",
+      "G11-B26-POINT_PLANE"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1654,6 +1660,6 @@
       "legacy_reveal": "Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
