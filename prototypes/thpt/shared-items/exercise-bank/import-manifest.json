@@ -1308,7 +1308,7 @@
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
   },
-  "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported; G11 33 Knowledge pages scanned, 32 pages with unkeyed blocks remain mapping pending; G12 19 Knowledge pages scanned; all 79 SGK pages inventoried, source mapping not complete; G11 B02–B07 16 unkeyed source tasks imported with canonical KFT IDs, partial matches deferred; G11/G12 first-try backlog fully dispositioned, global integrity and academic audit pending",
+  "scope": "CĐ01–22; all 24 SGK chapters G10–G12; public G11/G12 supplements; Topic and SGK knowledge first-try sources inventoried; 79/79 SGK knowledge pages scanned and all 86 G11/G12 reviewed source blocks dispositioned. Structural whole-bank reconciliation complete on checkpoint 22 snapshot. Source/field equivalence and academic/pedagogical review remain pending.",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -2829,7 +2829,7 @@
         "public_blob": "bde0820d157a5169d3cf365c846cf11169d40035"
       }
     ],
-    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_ALL_SOURCE_BLOCKS_DISPOSITIONED_GLOBAL_RECONCILIATION_PENDING",
+    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_ALL_SOURCE_BLOCKS_DISPOSITIONED_STRUCTURAL_RECONCILIATION_PASS",
     "sgk_pages": [
       {
         "grade": 10,
@@ -5417,5 +5417,72 @@
       "new_canonical_imported": 35
     },
     "unkeyed_id_assignment_note": "Canonical KFT IDs are scoped by grade, lesson and original source block order; G12 existing local IDs namespaced THPT-G12-Bxx-Txx. No existing global ID changed. Distinct demands preserved, partial overlaps recorded; 18 answer drafts explicitly identified as authoring rather than source. Three G11 worked examples classified, not exercises. Global reconciliation and academic audit pending."
+  },
+  "global_reconciliation": {
+    "status": "STRUCTURAL_INTEGRITY_PASS_SOURCE_EQUIVALENCE_AND_ACADEMIC_AUDIT_PENDING",
+    "checked_snapshot": "1460f06f9fac9355f9168d34099d5ec51392704c",
+    "scope": "All 61 item shards, 26 placement files, written references, schema and manifest; complete candidate inventory at exact commit. Written source references checked for ID presence, not rubric correctness. No private RD1 retrieval.",
+    "actual_counts": {
+      "formative_items": 1814,
+      "public_selfcheck_only_items": 173,
+      "written_references": 325,
+      "total_ids": 2312,
+      "unique_ids": 2312,
+      "placements": 3921,
+      "collections": 417,
+      "legacy_combined_answer_items": 709,
+      "authoring_answer_draft_items": 18
+    },
+    "file_coverage": {
+      "item_shards": 61,
+      "placement_files": 26,
+      "written_reference_files": 1,
+      "manifest_files": 1,
+      "schema_files": 1,
+      "all_bank_diff_files": 91
+    },
+    "checks": {
+      "duplicate_ids": 0,
+      "duplicate_collection_order": 0,
+      "missing_placement_targets": 0,
+      "orphan_item_or_written_ids": 0,
+      "broken_related_or_context_ids": 0,
+      "required_field_or_initial_interaction_errors": 0,
+      "count_mismatches": 0,
+      "missing_flag_targets": 0,
+      "missing_bank_shards": 0,
+      "written_reference_ids_verified": 325,
+      "written_library_projection_ids_verified": 244,
+      "written_topic_canonical_source_ids_verified": 81,
+      "written_public_selfcheck_reuse_placements": 20
+    },
+    "written_note": "81 Topic-owned Written references intentionally use original source blob + ID with existing_library_projection=null; all 81 IDs found in 20 original PUBLIC canonical source blobs. Remaining 244 IDs found in 28 recorded library/public projection files with exact blob at baseline. 20 Written placements in public self-check/replay collections use PUBLIC_REPLAY_ONLY (2) or CLIENT_SELF_CHECK_NO_MASTERY (18), not new Written records or graded mastery. No change to existing references or roles.",
+    "role_counts": {
+      "TOPIC_PRACTICE": 1237,
+      "TOPIC_WRITTEN": 242,
+      "PUBLIC_REPLAY_ONLY": 338,
+      "SGK_CORE": 351,
+      "SGK_PRACTICE": 522,
+      "SGK_WRITTEN": 242,
+      "CLIENT_SELF_CHECK_NO_MASTERY": 472,
+      "SGK_APPLICATION": 115,
+      "SGK_OPTIONAL_SPECIALIZED": 2,
+      "SGK_PRE_CORE_FIRST_TRY": 25,
+      "SGK_SUPPORT_EXTENSION": 2,
+      "SGK_FIRST_TRY": 203,
+      "TOPIC_FIRST_TRY": 170
+    },
+    "remaining": {
+      "projection_field_differences": 54,
+      "unstructured_projection_review": 12,
+      "format_equivalence_review": 12,
+      "written_projection_review": 2,
+      "legacy_combined_answer_items": 709,
+      "authoring_answer_drafts": 18,
+      "source_field_equivalence": "Not fully revalidated in this structural checkpoint; review exact source/projection flags and academic correctness, semantic task identity and skill/outcome coverage.",
+      "academic_ped": "PENDING",
+      "interaction_conversion": "PENDING",
+      "release": "NOT_AUTHORIZED"
+    }
   }
 }
