@@ -53,6 +53,11 @@ async function goldenW1Parity(page,browser,width,rel){
   }
   const tabs=page.locator("article .tabbed-labels > label");
   for(const scheme of ["default","slate"]){
+   // W2: independent palette samples; do not reuse mutated MathJax/disclosure DOM from the previous interaction pass.
+   if(w2&&scheme==="slate"){
+    assert((await page.reload({waitUntil:"load",timeout:60000}))?.ok(),rel+" slate reload");
+    await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,null,{timeout:30000});
+   }
    for(const p of [reference,ref14,refB1,page]){
     await p.evaluate(s=>document.body.setAttribute("data-md-color-scheme",s),scheme);
     await p.waitForTimeout(150);
@@ -113,7 +118,12 @@ async function goldenW1Parity(page,browser,width,rel){
     const item=tips.nth(k),summary=item.locator(":scope > summary");
     if(w2&&expected[k].includes("\\(")){
      const count=(expected[k].match(/\\\(/g)||[]).length;
-     await page.waitForFunction(({k,count})=>document.querySelectorAll("article .tabbed-block")[3].querySelectorAll(":scope > details.tip > summary")[k].querySelectorAll("mjx-container").length===count,{k,count});
+     try{
+      await page.waitForFunction(({k,count})=>document.querySelectorAll("article .tabbed-block")[3].querySelectorAll(":scope > details.tip > summary")[k].querySelectorAll("mjx-container").length===count,{k,count});
+     }catch(error){
+      console.error("W2_MATH_HEADING_DIAGNOSTIC "+JSON.stringify({rel,width,scheme,k,count,html:await summary.innerHTML()}));
+      throw error;
+     }
     }else assert.equal((await summary.innerText()).trim(),expected[k],rel+" exact recovery title");
     assert.equal(await item.evaluate(x=>x.open),false,rel+" accordion initially closed");
     assert.deepEqual(await item.evaluate(styles),gold,rel+" B01 tab4 Golden computed parity");
