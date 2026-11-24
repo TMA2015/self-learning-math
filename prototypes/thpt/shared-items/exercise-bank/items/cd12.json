@@ -1,0 +1,302 @@
+[
+  {
+    "item_id": "THPT-TOP12-P01",
+    "content_version": 1,
+    "stem": "Góc tù α có `cosα=−5/13`. Tính sinα và tanα; giải thích việc chọn dấu.",
+    "answer_key": null,
+    "worked_solution": "`sin²α=144/169`; vì góc tù nên sin dương, sin=12/13 và tan=−12/5. Nhớ xét dấu trước khi lấy căn. Nếu sai: mục 1,3,4 → bài luyện về dấu của sin và cosin.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P01 · TOP12-O04"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P02",
+    "content_version": 1,
+    "stem": "Tính chính xác `sin150°+cos120°` và giải thích quy luật được dùng.",
+    "answer_key": null,
+    "worked_solution": "Sin giữ nguyên, cos đổi dấu khi chuyển về góc bù: `1/2−1/2=0`. Nếu sai: mục 2 → bài luyện về góc bù.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P02 · TOP12-O02"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P03",
+    "content_version": 1,
+    "stem": "Trong tam giác ABC có `b=4, c=7, A=120°`. Tính a.",
+    "answer_key": null,
+    "worked_solution": "`a²=16+49−2·4·7·(−1/2)=93`, nên `a=√93`. Góc tù khiến cạnh a lớn hơn cả b và c. Nếu sai: mục 5 → bài luyện về định lí cosin.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P03 · TOP12-O05"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P04",
+    "content_version": 1,
+    "stem": "Trong tam giác ABC có `A=30°, B=75°, a=6`. Tính b,c.",
+    "answer_key": null,
+    "worked_solution": "`C=75°`, nên `b=c=6 sin75°/sin30°=12 sin75°=3(√6+√2)`. Nếu sai: mục 6–7 → bài luyện về hai góc và một cạnh.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P04 · TOP12-O06"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P05",
+    "content_version": 1,
+    "stem": "Ba cạnh 6,8,10 tạo thành tam giác ABC. Xác định góc đối diện cạnh 10, diện tích S, r và R.",
+    "answer_key": null,
+    "worked_solution": "Vì `6²+8²=10²`, góc đối diện 10 là 90°. `S=24`, `p=12`, `r=24/12=2`, `R=6·8·10/(4·24)=5`. Nếu sai: mục 7,9–10 → bài luyện về Heron.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P05 · TOP12-O07"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P06",
+    "content_version": 1,
+    "stem": "Biết `A=30°, a=6, b=10`. Có bao nhiêu tam giác khác nhau thỏa dữ kiện? Nêu hai giá trị khả dĩ của B theo biểu thức arcsin.",
+    "answer_key": null,
+    "worked_solution": "`sinB=(10 sin30°)/6=5/6`. Hai giá trị `B=arcsin(5/6)` và `B=180°−arcsin(5/6)` đều cho A+B<180° (vì arcsin(5/6)>30°); **hai tam giác**. Nếu chỉ lấy B nhọn: mục 8 → bài luyện về dữ kiện vô nghiệm.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P06 · TOP12-O08"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P07",
+    "content_version": 1,
+    "stem": "`A=30°, a=3, b=7`. Hãy kiểm chứng có tồn tại tam giác ABC hay không.",
+    "answer_key": null,
+    "worked_solution": "`sinB=7·sin30°/3=7/6>1`, vô lý. **Không tồn tại tam giác**. Nếu bấm arcsin trực tiếp và bị lỗi: mục 8 kiểm điều kiện trước.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P07 · TOP12-O08"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P08",
+    "content_version": 1,
+    "stem": "`b=6, c=10, A=150°`. Tính diện tích S, nêu vì sao S dương.",
+    "answer_key": null,
+    "worked_solution": "`S=(1/2)·6·10·sin150°=15`. Góc tù trong tam giác vẫn có sin dương; độ cao đến phần kéo dài của đáy vẫn là độ dài dương. Nếu sai: mục 9 → bài luyện cùng dạng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P08 · TOP12-O09"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P09",
+    "content_version": 1,
+    "stem": "Tam giác có cạnh 7,8,9. Tìm S,r,R.",
+    "answer_key": null,
+    "worked_solution": "`p=12`, `S=√(12·5·4·3)=12√5`, `r=S/p=√5`, `R=7·8·9/(4·12√5)=21√5/10`. Nếu nhầm r/R: mục 10 → bài luyện về diện tích từ ba cạnh.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P09 · TOP12-O10"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P10",
+    "content_version": 1,
+    "stem": "Hai điểm A,B cách nhau 80 m; cùng nhìn C sao cho `A=30°,B=45°` là các góc **trong** của tam giác ABC. Tìm BC và AC dưới dạng căn thức chính xác.",
+    "answer_key": null,
+    "worked_solution": "`C=105°`; `sin105°=(√6+√2)/4`. Vì AB=c=80, `BC=a=80 sin30°/sin105°=40(√6−√2) m`; `AC=b=80 sin45°/sin105°=80(√3−1) m`. Nếu sai: mục 6,11 → bài luyện về đo đạc.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P10 · TOP12-O11"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P11",
+    "content_version": 1,
+    "stem": "Ba thanh dài 2 cm, 3 cm, 6 cm có ghép thành tam giác không? Giải thích vì sao chưa được dùng Heron.",
+    "answer_key": null,
+    "worked_solution": "Không, vì `2+3=5<6`. Heron chỉ được áp dụng cho tam giác không suy biến; mục 12 → xem lại điều kiện đầu mục 5.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P11 · TOP12-O12"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP12-P12",
+    "content_version": 1,
+    "stem": "Một người đặt `A=0°, b=5, c=7` và gọi đó là tam giác ABC không suy biến. Chỉ ra sự mâu thuẫn với điều kiện áp dụng định lí sin/côsin trong tam giác.",
+    "answer_key": null,
+    "worked_solution": "Mọi góc trong tam giác không suy biến phải thuộc `(0°,180°)`; A=0° tạo cấu hình suy biến, dù có thể tính đại số `a=|7−5|=2` bằng biểu thức côsin. Không có tam giác không suy biến để dùng định lí sin hoặc Heron. Nếu sai: mục 5,6,12.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP12-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+      "heading": "## THPT-TOP12-P12 · TOP12-O12"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]
