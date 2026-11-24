@@ -16104,6 +16104,163 @@
         "Seven Written calculations correct; G10 library correct path tu-luan-chuong-v-b13-b14.md; four CD05 Written lack library projection pointer. No Written edits. No new IDs/placements; historical source and interaction/exposure unchanged. Fresh SGK PDF/SBT, full PED/D6/browser QA, content version policy unresolved. No new PASS."
       ],
       "next": "G10 ChVI remaining items B15–17 (B18 CP50 preserved), CD06 actual scope; check overlap before delta."
+    },
+    "formative_scoped_audit_cp53": {
+      "checkpoint": 53,
+      "baseline": "e980034ba52865270f1ae2480170e98787d10e67",
+      "scope": "G10 ChVI B15–17 (B18 preserved CP50), CĐ06 trigonometry and shared G11 ChI B01–04",
+      "source_evidence": {
+        "B15": "ee38fdfeddc78a22a527a6a7449347f86eeee422",
+        "B16": "190f351516932caf0b8a417132f15e7915f79993",
+        "B17": "bbfc3fdb1e2a5e153bfe20f933fbf8844263552a",
+        "g10_formative": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "g11_formative": [
+          "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+          "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0"
+        ],
+        "cd06_knowledge": "fa0d00438c3f95f403570f8eee9a0058284c8831",
+        "cd06_practice": "26ea2049b76442cfd55575b053973519c3ac00b0"
+      },
+      "files": [
+        {
+          "path": "items/g10-chvi.json",
+          "before": "d3e8a48e5ead3ef53e32e46ef722c0b49a705e06",
+          "after": "814e7b82c5ed9e126ce16fbb948c480c234e0c8b",
+          "changed": 23,
+          "unchanged": 25
+        },
+        {
+          "path": "items/g11-chi.json",
+          "before": "e6359986eb843c3c836db6afec680d0ac15b8306",
+          "after": "00f7ceb8b80db391274dcb6ad5b6d65682bb76ab",
+          "changed": 42,
+          "unchanged": 23
+        },
+        {
+          "path": "items/cd06.json",
+          "before": "81b696524be1ea5d2d1bb1cc79e82653b9f75e35",
+          "after": "1afd80b091ef67554a45e4e18eaae59e2c562c18",
+          "changed": 16
+        }
+      ],
+      "reviewed": {
+        "formative_changed": 81,
+        "topic_outcomes": 16,
+        "topic_practice_placements": 66,
+        "topic_replay_placements": 16,
+        "written_cd06_read_only": 8,
+        "g11_source_math_parity_before_edit": 42,
+        "remediation_ids_resolve": 81,
+        "cd06_skill_mappings_verified": 16
+      },
+      "matrix": {
+        "TOP06-O01": [
+          "THPT-G11-B01-C01",
+          "THPT-TOP06-P01"
+        ],
+        "TOP06-O02": [
+          "THPT-G11-B01-C02",
+          "THPT-TOP06-P02",
+          "THPT-TOP06-W01"
+        ],
+        "TOP06-O03": [
+          "THPT-G11-B01-P02",
+          "THPT-G11-B01-P03",
+          "THPT-G11-CHI-W01",
+          "THPT-TOP06-P03"
+        ],
+        "TOP06-O04": [
+          "THPT-G11-B01-P01",
+          "THPT-G11-B01-P04",
+          "THPT-TOP06-P04"
+        ],
+        "TOP06-O06": [
+          "THPT-G11-B02-C01",
+          "THPT-G11-B02-P01",
+          "THPT-G11-B02-P02",
+          "THPT-G11-B02-P03",
+          "THPT-G11-B02-P07",
+          "THPT-TOP06-P06"
+        ],
+        "TOP06-O07": [
+          "THPT-G11-B02-C02",
+          "THPT-G11-B02-P04",
+          "THPT-G11-B02-P05",
+          "THPT-G11-B02-P06",
+          "THPT-G11-CHI-W02-ANCHOR",
+          "THPT-TOP06-P07",
+          "THPT-TOP06-W02"
+        ],
+        "TOP06-O05": [
+          "THPT-G11-B01-P05",
+          "THPT-TOP06-P05"
+        ],
+        "TOP06-O08": [
+          "THPT-G11-B03-C01",
+          "THPT-G11-B03-P01",
+          "THPT-TOP06-P08"
+        ],
+        "TOP06-O09": [
+          "THPT-G11-B03-C02",
+          "THPT-G11-B03-C03",
+          "THPT-G11-B03-P03",
+          "THPT-TOP06-P09"
+        ],
+        "TOP06-O10": [
+          "THPT-G11-B03-C04",
+          "THPT-G11-B03-P02",
+          "THPT-G11-B03-P04",
+          "THPT-G11-B03-P05",
+          "THPT-TOP06-P10"
+        ],
+        "TOP06-O11": [
+          "THPT-G11-B03-P06",
+          "THPT-G11-B03-P07",
+          "THPT-TOP06-P11"
+        ],
+        "TOP06-O16": [
+          "THPT-G11-B03-P08",
+          "THPT-G11-B04-P09",
+          "THPT-G11-CHI-W03",
+          "THPT-TOP06-P16",
+          "THPT-TOP06-W04"
+        ],
+        "TOP06-O12": [
+          "THPT-G11-B04-C01",
+          "THPT-G11-B04-C02",
+          "THPT-G11-B04-P10",
+          "THPT-TOP06-P12"
+        ],
+        "TOP06-O13": [
+          "THPT-G11-B04-C03",
+          "THPT-G11-B04-C04",
+          "THPT-TOP06-P13"
+        ],
+        "TOP06-O14": [
+          "THPT-G11-B04-P01",
+          "THPT-G11-B04-P02",
+          "THPT-G11-B04-P03",
+          "THPT-G11-B04-P04",
+          "THPT-G11-B04-P05",
+          "THPT-G11-B04-P08",
+          "THPT-G11-CHI-W04-ANCHOR",
+          "THPT-TOP06-P14",
+          "THPT-TOP06-W03"
+        ],
+        "TOP06-O15": [
+          "THPT-G11-B04-P06",
+          "THPT-G11-B04-P07",
+          "THPT-TOP06-P15"
+        ]
+      },
+      "findings": [
+        "B15-P02 noncoincident tiered fee at boundary; B16-P03 independent symmetric points (−3;−5),(1;−5), not reuse axis intercept; B17-C02 strict vs nonstrict at double root. 23 D6 additions. B18 CP50, first tries and other records unchanged.",
+        "CĐ06 P01 signed revolutions, P03 actual arc traveled versus congruent angle, P09 rigorous minimum period proof via f(x)−f(x+π/2)=2sin2x, P12 divide entire solution family, explicit integer parameter and units. 16 hints/D6 and existing skill mappings.",
+        "G11 B02-P02 cos105° checks negative sign, P07 tangent sum undefined when product=1; B03-P02 establishes full range, P08 model restricted to [2;10] with maxima 25.5 at both endpoints; B04-P06 checks interval endpoints. 42 targeted hints/D6. 42/42 old G11 source stem/key/solution matched. G10 B15/B17 exact text parity 3/12 only due existing candidate revisions/formatting; not claiming full original-source parity; preserve baseline and source. B16 core markdown parity not verified.",
+        "66/66 CD06 source markers match; 58 formative +8 Written, 16 replay resolve, all remediation target IDs resolve. 22 topic placement shards scanned; matches only CD06. Eight Written calculations checked; TOP06-W03 duplicates G11-CHI-W04-ANCHOR, flag canonical review; four TOP06 Written lack library projection pointer. G10 ChVI Written B15–17 not audited in this checkpoint.",
+        "No new IDs/placements, source, exposure, interaction and prior snapshots retained. Fresh SGK PDF/SBT, full PED/D6/browser, item version cutover policy pending; no Academic/PED PASS."
+      ],
+      "next": "G10 ChVII B19–22 and CĐ07 actual scope; maintain shared-placement checks."
     }
   }
 }
