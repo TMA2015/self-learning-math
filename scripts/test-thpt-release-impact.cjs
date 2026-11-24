@@ -559,7 +559,7 @@ function isG11W1Tab4Hotfix(files){
  return files.length===G11_W1_TAB4_HOTFIX_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W1_TAB4_HOTFIX_FILES.has(p));
 }
 
-const G11_W1_REVIEW_DELTA_FILES=new Set(["docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs"]);
+const G11_W1_REVIEW_DELTA_FILES=new Set([".github/workflows/sgk-golden-first-paint-qa.yml","docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs"]);
 function isG11W1ReviewDelta(files){
  return files.length===G11_W1_REVIEW_DELTA_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W1_REVIEW_DELTA_FILES.has(p));
 }
