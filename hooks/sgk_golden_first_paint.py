@@ -548,6 +548,18 @@ def _render_w8(output: str, uri: str) -> str:
     if rendered == output or 'data-sgk-golden-first-paint="true"' not in rendered or len(_H2.findall(rendered)) != 4 or rendered.count('data-sgk-lesson-nav="') != 1:
         raise RuntimeError("W8 Golden first-paint build contract failed: " + uri)
     rendered = _w8_mistake_disclosures(rendered, number, count)
+    # B05 contains two concept-figure captions, whose legacy .81rem/1.65
+    # rule differs from the approved Golden plot .77rem/1.5 typography.
+    # Normalize only those captions on this route; keep frame/image/caption
+    # content and all other routes byte-for-byte unchanged.
+    if number == 5:
+        rendered = rendered.replace(
+            '</article>',
+            """<style id="sgk-g12-w8-b05-caption-parity">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint]:has([data-g12-b05-knowledge]) figure.thpt-r4-concept-figure figcaption {
+  font-size: .77rem; line-height: 1.5;
+}
+</style></article>""", 1)
     # Reuse the existing W1 Golden values, no shared CSS/JS mutations.
     return rendered.replace(
         '</article>',

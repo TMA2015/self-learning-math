@@ -814,11 +814,11 @@ function verifyG12W8(previous,current,changed,expected){
  const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
  const receipt=read(current,G11_W1_HANDOFF);
  assert.equal(blob(read(previous,G11_W1_HANDOFF)),"ddf34e9a408a675e16812680505f50738c83a475");
- assert.equal(blob(receipt),"35231a5cb8e036dc9eef8397abda99758736e7df");
+ assert.equal(blob(receipt),"9571d99d63a0432a6c113d5125eb91db3774e824");
  assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
  const hook="hooks/sgk_golden_first_paint.py";
  const oldHook=read(previous,hook).toString("utf8"),nowHook=read(current,hook).toString("utf8");
- assert.equal(blob(read(current,hook)),"462147b1936a9f16fb4a6031915be516445874f2");
+ assert.equal(blob(read(current,hook)),"9e731c94180134ac252be4c8e5b1f949c058fb2e");
  const start=nowHook.indexOf("# #1039 W8 exact G12 ChI routes;");
  const end=nowHook.indexOf("def on_post_page(output, page, config):");
  assert(start>0&&end>start);
