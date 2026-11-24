@@ -483,6 +483,49 @@ function verifyW1Tab4Hotfix(previous,current,changed,expected){
  console.log("PASS SGK_REL_006: signed learner/asset/receipt blobs unchanged; exact tab4 render delta only");
 }
 
+// #1039 W1 review delta: exact path and blob locks, preserve published tab4 and all frozen sources.
+const G11_W1_REVIEW_DELTA_FILES=["docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs"];
+const G11_W1_REVIEW_ROWS=[[2,"d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6","573e2d8fc84e89112c6b061b39e6a53465659472"],[3,"9177a10ade8788712c6b9fbf39789822df2a417a","6a88cfa1fc03f8ed6f642fc448bea286dfd9f55c"],[4,"0714c5b72389d29dbc8993c2ce9828fc98cf7a92","515ad705f86b2448b262026f2f2fb8d3ec2e5bdc"]];
+function verifyW1ReviewDelta(previous,current,changed,expected){
+ assert.deepEqual(changed.slice().sort(),G11_W1_REVIEW_DELTA_FILES.slice().sort(),"W1 review delta exact diff");
+ assert.equal(previous,"a8f2d63e52335c1c686a567334b4f26d43bac0d3","W1 review delta must be based on owner-accepted publication");
+ assert.deepEqual(expected.slice().sort(),G11_W1_LESSONS.slice().sort());
+ const git=(args)=>cp.execFileSync("git",args,{cwd:root});
+ const read=(ref,file)=>git(["show",ref+":"+file]);
+ const handoff=read(current,G11_W1_HANDOFF);
+ assert.equal(blob(read(previous,G11_W1_HANDOFF)),G11_W1_HANDOFF_SHA);
+ assert.equal(blob(handoff),"f3ecefca29faab6939e4a3b3ee9678b2a8db76b4","W1 delta handoff blob");
+ assert(handoff.toString("utf8").includes("DELTA_C_ACADEMIC_MATERIAL"));
+ const prefix=s=>s.slice(0,s.indexOf('=== "Khám phá kiến thức"'));
+ const suffix=s=>s.slice(s.indexOf('=== "Ví dụ"'));
+ const markers=(s,re)=>[...s.matchAll(re)].map(m=>m[0]);
+ const b1="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md";
+ assert.equal(blob(read(previous,b1)),"0603fbb2b61374fcd49eff3c119197cff3fa77e4");
+ assert.equal(blob(read(current,b1)),blob(read(previous,b1)));
+ for(const [n,oldSha,newSha] of G11_W1_REVIEW_ROWS){
+  const file="docs/thpt-preview/sgk/lop-11/chuong-i/bai-"+n+".md";
+  const before=read(previous,file),now=read(current,file);
+  assert.equal(blob(before),oldSha);assert.equal(blob(now),newSha);
+  assert.equal(blob(fs.readFileSync(path.join(root,file))),newSha);
+  assert(handoff.toString("utf8").includes(oldSha)&&handoff.toString("utf8").includes(newSha));
+  const a=before.toString("utf8"),b=now.toString("utf8");
+  assert(a.includes('=== "Khám phá kiến thức"')&&a.includes('=== "Ví dụ"'));
+  assert.equal(prefix(a),prefix(b));assert.equal(suffix(a),suffix(b),"Frozen example/mistake tabs");
+  for(const re of [/^=== .+$/gm,/^\s+### .+$/gm,/src="[^"]+"/g,/data-[\w-]+="[^"]+"/g,/^\s+\?\?\? (?:question|tip) .+$/gm]){
+   assert.deepEqual(markers(a,re),markers(b),"W1 structure/asset/identity changed "+file);
+  }
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final|g11-chapter-selfcheck)/i.test(b));
+  console.log("SCOPED_G11_W1_REVIEW_DELTA_SOURCE_PASS "+file+" "+newSha);
+ }
+ for(const [file,sha] of G11_W1_ASSETS){
+  assert.equal(blob(read(previous,file)),sha);
+  assert.equal(blob(read(current,file)),sha);
+ }
+ const hook="hooks/sgk_golden_first_paint.py";
+ assert.equal(blob(read(current,hook)),blob(read(previous,hook)));
+ console.log("PASS W1 review delta source and frozen boundary only; no Academic/PED or browser verdict");
+}
+
 function main(){
  const previous=process.env.BEFORE_SHA,current=process.env.HEAD_SHA;
  assert(sha(previous)&&sha(current),"Full nonzero main push before/head commits required");
@@ -490,6 +533,9 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.length===G11_W1_REVIEW_DELTA_FILES.length&&changed.every(x=>G11_W1_REVIEW_DELTA_FILES.includes(x))){
+  verifyW1ReviewDelta(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
+ }
  if(changed.length===G11_W1_TAB4_HOTFIX_FILES.length&&changed.every(x=>G11_W1_TAB4_HOTFIX_FILES.includes(x))){
   verifyW1Tab4Hotfix(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
  }
