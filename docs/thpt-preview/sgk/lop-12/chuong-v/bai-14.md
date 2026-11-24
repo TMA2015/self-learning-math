@@ -163,7 +163,7 @@
     \]
     Tử số đo giá trị vế trái tại \(M\), nhưng chưa phải khoảng cách. Chia cho độ dài pháp tuyến để kết quả không phụ thuộc cách nhân phương trình; lấy trị tuyệt đối để khoảng cách không âm.
 
-    Với ví dụ trên, \(L=2-2+6-4=2,\ |\vec n|=3\), nên khoảng cách \(2/3\). Hình chiếu là \(\overrightarrow{OH}=\overrightarrow{OM}-\frac29\vec n=(5/9;20/9;23/9)\). Thế \(H\) vào phương trình được 0, còn \(\overrightarrow{MH}=-(2/9)\vec n\), đúng phương vuông góc.
+    Với ví dụ trên, \(L=2-2+6-4=2,\ |\vec n|=3\), nên khoảng cách \(2/3\). Từ \(\overrightarrow{OH}=\overrightarrow{OM}-\frac29\vec n=(5/9;20/9;23/9)\), suy ra hình chiếu là điểm \(H(5/9;20/9;23/9)\). Thế \(H\) vào phương trình được 0, còn \(\overrightarrow{MH}=-(2/9)\vec n\), đúng phương vuông góc.
 
     Nếu hai mặt phẳng song song có cùng pháp tuyến, viết \((P):Ax+By+Cz+D_1=0\), \((Q):Ax+By+Cz+D_2=0\). Với mọi \(M\) trên \((P)\), \(Ax_0+By_0+Cz_0=-D_1\). Thế vào công thức khoảng cách tới \((Q)\), nhận \(|D_2-D_1|/|\vec n|\). Công thức không phụ thuộc chọn điểm nào trên \((P)\). Nếu pháp tuyến ban đầu chỉ tỉ lệ, cần nhân hoặc chia toàn bộ một phương trình để có cùng ba hệ số đầu trước.
 
