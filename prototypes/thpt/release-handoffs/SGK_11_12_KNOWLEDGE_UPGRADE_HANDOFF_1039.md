@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 40/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B08, còn B09–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 41/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B09, còn B10–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B08 CONTENT_READY; B09–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B09 CONTENT_READY; B10–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -53,7 +53,8 @@
 | 12 | B06 | [#1075](https://github.com/TMA2015/self-learning-math/pull/1075) | CONTENT_READY — đã bàn giao |
 | 12 | B07 | [#1076](https://github.com/TMA2015/self-learning-math/pull/1076) | CONTENT_READY — đã bàn giao |
 | 12 | B08 | [#1077](https://github.com/TMA2015/self-learning-math/pull/1077) | CONTENT_READY — đã bàn giao |
-| 12 | B09–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B09 | [#1078](https://github.com/TMA2015/self-learning-math/pull/1078) | CONTENT_READY — đã bàn giao |
+| 12 | B10–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -230,6 +231,16 @@ Asset delta tại `docs/assets/images/thpt/`: sửa `FIG-G12-CHII-B07-R00.svg` t
 | [#1077](https://github.com/TMA2015/self-learning-math/pull/1077) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md` | `8bf074d3c0f0e52887b6938d9c051f5a32b2ffd0` | `c85922428c85ddeb48cec5e2bd5953faa44207c8` | `0fac910828d7dbc8e2122eb85b04fa14e1ab49c6` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B08_FIG02_PYRAMID_AUTHORING_20261124.svg` (`0d8e4b4fd4bbdc1c896143a74307b3ea5ff25367`); `G12_B08_FIG03_ROOF_AUTHORING_20261124.svg` (`7a9920c100572366b38937eda4ee22d769441aa5`). Giữ nguyên `FIG-G12-CHII-B08-R00.svg` (`13445da079245a556a08e7a57069d9987097a0be`).
+
+### Toán 12 B09 — Khoảng biến thiên và khoảng tứ phân vị (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đọc văn bản [SGK KNTT Toán 12 tập 1 trang in 75–79](https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-12-Tap-1-Chuong-trinh-moi.pdf), HĐ1–2, Ví dụ 1–2, Luyện tập 1–2, Vận dụng và bài tập 3.1–3.3; screenshot PDF cache miss, không tuyên bố đã kiểm hình gốc. Đọc toàn văn mẫu Golden G10 B14. Bốn tab, hai mục đối ứng: khoảng biến thiên và khoảng tứ phân vị. Từ bảng có nhóm rỗng, giải thích vì sao R ghép nhóm lớn hơn R gốc với nhóm nửa kín; dẫn dắt nội suy từ tần số tích lũy, giữ mốc không nguyên và độ rộng từng nhóm; làm rõ biên chung, nhóm rỗng, sự khác nhau của R và IQR, giới hạn khi sàng lọc ngoại lệ. 6 ví dụ, 3 Vận dụng độc lập có Đối chiếu/Kiểm lỗi, 7 lỗi thực chất. Hai SVG cũ chỉnh thang đo và gắn cùng bảng n=40, Q1=115/7, Q3=145/6, IQR=325/42. 27 nhóm tự kiểm đạt: 15 bảng ghép nhóm, mẫu gốc, ngưỡng ngoại lệ, tọa độ SVG, cấu trúc; tập mã OUTCOME_ID/EX_ID/FIRST_TRY_ID/FIG_ROLE bảo toàn. Diff chỉ canonical và hai SVG riêng B09.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1078](https://github.com/TMA2015/self-learning-math/pull/1078) | `docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md` | `d42c02b13312fd3e3ec179388b36c4688842ef8e` | `4571bac678c36c4fb06d6a7fde45b86703f8ebce` | `56836232f4656c0cd3418cee0677280f150d3a69` |
+
+Asset delta tại `docs/assets/images/thpt/`: `FIG-G12-CHIII-B09-QUARTILES-R00.svg` từ `51fd46bc69ee7c4279e5024aa29dc0e83651a1a7` sang `e847496c567b7121d2121134401e36ead2040e1a`; `FIG-G12-CHIII-B09-RANGE-IQR-R00.svg` từ `b0cdf1b1f00c5d70525dc8c889da48211aeb8cac` sang `1a3cb6397d8ed8ca634724e2084c909747dee836`.
 
 ## Cách cập nhật
 
