@@ -67,8 +67,9 @@ jobs:
           node scripts/test-thpt-q18-release-test-router.cjs --self-test
           node scripts/test-thpt-q18-release-test-router.cjs
 
-      - name: Verify #1039 W1 on exact integration HEAD
-        if: ${{ steps.impact.outputs.reason == 'EXACT_OWNER_1039_G11_W1_HANDOFF_SOURCE_AND_BROWSER' || (steps.impact.outputs.changed_lessons == 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md') }}
+      # Historical gate marker: Verify #1039 W1 on exact integration HEAD
+      - name: Verify #1039 W1/W2 on exact integration HEAD
+        if: ${{ steps.impact.outputs.reason == 'OWNER_1039_W2_EXACT_SOURCE_AND_BROWSER' || steps.impact.outputs.reason == 'EXACT_OWNER_1039_G11_W1_HANDOFF_SOURCE_AND_BROWSER' || (steps.impact.outputs.changed_lessons == 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md') }}
         env:
           BEFORE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.sha }}
