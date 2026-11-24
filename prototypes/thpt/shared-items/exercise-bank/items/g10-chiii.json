@@ -527,5 +527,327 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY01",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6",
+    "stem": "Trên nửa đường tròn đơn vị, với \\(\\alpha=180^\\circ\\), điểm \\(M\\) có tọa độ gì? Từ đó tìm \\(\\sin180^\\circ\\) và \\(\\cos180^\\circ\\).",
+    "answer_key": null,
+    "worked_solution": "\\(M=(-1,0)\\) nên \\(\\sin180^\\circ=0\\), \\(\\cos180^\\circ=-1\\). Điểm nằm trên trục \\(Ox\\) âm: tung độ bằng 0, hoành độ bằng \\(-1\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY02",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6",
+    "stem": "Không dùng máy tính, tính \\(\\sin135^\\circ,\\cos135^\\circ\\). So với \\(45^\\circ\\), giá trị nào giữ nguyên, giá trị nào đổi dấu?",
+    "answer_key": null,
+    "worked_solution": "\\(\\sin135^\\circ=\\frac{\\sqrt2}{2}\\), \\(\\cos135^\\circ=-\\frac{\\sqrt2}{2}\\). Sin giữ nguyên, cos đổi dấu do hai điểm trên nửa đường tròn đối xứng qua trục \\(Oy\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY03",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6",
+    "stem": "Trong bốn giá trị \\(\\tan0^\\circ,\\cot0^\\circ,\\tan90^\\circ,\\cot90^\\circ\\), giá trị nào bằng 0 và giá trị nào không xác định? Giải thích bằng mẫu số.",
+    "answer_key": null,
+    "worked_solution": "\\(\\tan0^\\circ=0\\), \\(\\cot90^\\circ=0\\). \\(\\cot0^\\circ\\) và \\(\\tan90^\\circ\\) **không xác định** vì mẫu số bằng 0.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY03",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY04",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6",
+    "stem": "Hai góc \\(40^\\circ\\) và \\(140^\\circ\\) có quan hệ nào giữa sin, cos, tan và cot? Có phải dùng máy tính tìm số thập phân không?",
+    "answer_key": null,
+    "worked_solution": "\\(\\sin140^\\circ=\\sin40^\\circ\\), \\(\\cos140^\\circ=-\\cos40^\\circ\\), \\(\\tan140^\\circ=-\\tan40^\\circ\\), \\(\\cot140^\\circ=-\\cot40^\\circ\\). Cả tan và cot đều xác định ở 40° và 140°, không cần tính số thập phân.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY04",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY05",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6",
+    "stem": "Góc tù \\(\\alpha\\) có \\(\\cos\\alpha=-\\frac5{13}\\). Tìm \\(\\sin\\alpha\\), \\(\\tan\\alpha\\) và giải thích cách chọn dấu.",
+    "answer_key": null,
+    "worked_solution": "\\(\\sin^2\\alpha=1-\\frac{25}{169}=\\frac{144}{169}\\). Vì \\(\\alpha\\) tù, \\(\\sin\\alpha>0\\), nên \\(\\sin\\alpha=\\frac{12}{13}\\). Do đó \\(\\tan\\alpha=(12/13)/(-5/13)=-\\frac{12}{5}\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY05",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY11",
+    "content_version": "SOURCE_BLOB_79f8101d34430bc0d672558115191a95875014a6",
+    "stem": "Dùng máy ở DEG: (a) tính \\(\\cos127^\\circ\\), làm tròn đến bốn chữ số thập phân; (b) tìm **tất cả** góc \\(\\alpha\\in[0^\\circ,180^\\circ]\\) thỏa \\(\\sin\\alpha=0{,}4\\), làm tròn đến \\(0{,}1^\\circ\\). Vì sao \\(\\sin^{-1}\\) chỉ hiển thị một góc?",
+    "answer_key": null,
+    "worked_solution": "(a) \\(\\cos127^\\circ\\approx-0{,}6018\\); dấu âm đúng vì góc tù. (b) \\(\\sin^{-1}(0{,}4)\\approx23{,}5782^\\circ\\), nên \\(\\alpha\\approx23{,}6^\\circ\\) hoặc \\(180^\\circ-23{,}5782^\\circ\\approx156{,}4^\\circ\\). Cả hai góc trong đoạn và có sin bằng \\(0{,}4\\). Máy chỉ hiện **góc chính**, còn góc bù phải xét bằng đối xứng. Nếu kết quả khác, kiểm lại DEG/RAD và quy tắc làm tròn.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G10-B05-CALCULATOR_ANGLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "79f8101d34430bc0d672558115191a95875014a6",
+      "heading_id": "THPT-G10-CHIII-TRY11",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-5.md",
+        "blob": "79f8101d34430bc0d672558115191a95875014a6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G10-B05-03"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY06",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+    "stem": "Với \\(b=c=5\\) và \\(A=120^\\circ\\), hãy tính \\(a\\). Vì sao \\(a\\) dài hơn từng cạnh kề?",
+    "answer_key": null,
+    "worked_solution": "\\(a^2=5^2+5^2-2\\cdot5\\cdot5\\cos120^\\circ=50+25=75\\), nên \\(a=5\\sqrt3\\). Vì \\(\\cos120^\\circ=-\\frac12<0\\), phần điều chỉnh được cộng thêm vào tổng hai bình phương, cho cạnh đối diện lớn hơn 5.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY06",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY07",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+    "stem": "Cho \\(A=30^\\circ\\), \\(a=5\\). Tìm bán kính ngoại tiếp \\(R\\). Chỉ từ hai dữ kiện này, có biết duy nhất \\(B,C\\) không?",
+    "answer_key": null,
+    "worked_solution": "\\(\\frac{a}{\\sin A}=2R=\\frac5{1/2}=10\\), nên \\(R=5\\). **Không xác định duy nhất** \\(B,C\\), vì mới biết \\(B+C=150^\\circ\\), vẫn có nhiều cách chọn hai góc dương có tổng này.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY07",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY10",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+    "stem": "Với \\(AB=20\\sqrt2\\) m, hai góc tại \\(A,B\\) đều \\(45^\\circ\\), hãy tính \\(AC,BC\\) và khoảng cách vuông góc \\(CH\\) từ \\(C\\) đến đường thẳng \\(AB\\).",
+    "answer_key": null,
+    "worked_solution": "\\(C=180^\\circ-45^\\circ-45^\\circ=90^\\circ\\), nên tam giác vuông cân tại C. \\(AC=BC=\\frac{AB}{\\sqrt2}=20\\) m. Diện tích \\(S=\\frac12\\cdot20\\cdot20=200\\) m², mặt khác \\(S=\\frac12 AB\\cdot CH\\). Vì vậy \\(CH=\\frac{400}{20\\sqrt2}=10\\sqrt2\\) m.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY10",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY08",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+    "stem": "Hai tam giác có cùng hai cạnh kề \\(b=6,c=8\\), nhưng góc xen giữa lần lượt \\(A=30^\\circ\\) và \\(A=150^\\circ\\). Tính diện tích của mỗi tam giác, giải thích vì sao bằng nhau.",
+    "answer_key": null,
+    "worked_solution": "Mỗi tam giác có diện tích \\(S=\\frac12\\cdot6\\cdot8\\cdot\\sin30^\\circ=12\\), vì \\(\\sin150^\\circ=\\sin30^\\circ=\\frac12\\). Hai tam giác không nhất thiết có cùng cạnh thứ ba.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY08",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHIII-TRY09",
+    "content_version": "SOURCE_BLOB_2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+    "stem": "Với ba cạnh \\((3,4,5)\\), hãy tính \\(S,r\\). Bộ ba \\((2,3,6)\\) có dùng Heron như một tam giác được không?",
+    "answer_key": null,
+    "worked_solution": "Với \\(3,4,5\\): \\(p=6\\), \\(S=\\sqrt{6\\cdot3\\cdot2\\cdot1}=6\\), \\(r=S/p=1\\). Bộ ba \\(2,3,6\\) **không tạo tam giác** vì \\(2+3\\le6\\), nên không dùng như một bài toán diện tích tam giác thực.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+      "heading_id": "THPT-G10-CHIII-TRY09",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-iii/bai-6.md",
+        "blob": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
