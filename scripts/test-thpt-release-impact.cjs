@@ -583,6 +583,9 @@ function isG11W5(files){return files.length===G11_W5_FILES.size&&new Set(files).
 const G12_MATH_HOTFIX_LESSONS=["docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md","docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md","docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md","docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md"];
 const G12_MATH_HOTFIX_FILES=new Set(["docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md","docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md","docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md","docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG12MathHotfix(files){return files.length===G12_MATH_HOTFIX_FILES.size&&new Set(files).size===files.length&&files.every(p=>G12_MATH_HOTFIX_FILES.has(p));}
+const G12_W13_LESSONS=["docs/thpt-preview/sgk/lop-12/chuong-vi/bai-18.md","docs/thpt-preview/sgk/lop-12/chuong-vi/bai-19.md"];
+const G12_W13_FILES=new Set(["docs/thpt-preview/sgk/lop-12/chuong-vi/bai-18.md","docs/thpt-preview/sgk/lop-12/chuong-vi/bai-19.md","docs/assets/images/thpt/G12_B18_TREE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B19_TREE_AUTHORING_20261124.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
+function isG12W13(files){return files.length===G12_W13_FILES.size&&new Set(files).size===files.length&&files.every(p=>G12_W13_FILES.has(p));}
 const G12_W12_LESSONS=["docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md"];
 const G12_W12_FILES=new Set(["docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md","docs/assets/images/thpt/G12_B14_FIG01_NORMAL_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B14_FIG02_DISTANCE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B15_FIG01_PARAMETER_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B15_FIG02_SKEW_PERP_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B16_FIG01_LINE_ANGLE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B16_FIG02_LINE_PLANE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B16_FIG03_PLANE_ANGLE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B17_SECTION_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B17_GREAT_CIRCLE_AUTHORING_20261124.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG12W12(files){return files.length===G12_W12_FILES.size&&new Set(files).size===files.length&&files.every(p=>G12_W12_FILES.has(p));}
@@ -612,6 +615,7 @@ function classify(paths,{manual=false}={}){
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(isG12MathHotfix(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_MATH_HOTFIX_LESSONS.join(","),reason:"OWNER_1039_G12_MATH_HOTFIX"};
+ if(isG12W13(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W13_LESSONS.join(","),reason:"OWNER_1039_W13_EXACT_SOURCE_AND_BROWSER"};
  if(isG12W12(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W12_LESSONS.join(","),reason:"OWNER_1039_W12_EXACT_SOURCE_AND_BROWSER"};
  if(isG12W11(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W11_LESSONS.join(","),reason:"OWNER_1039_W11_EXACT_SOURCE_AND_BROWSER"};
  if(isG12W10(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W10_LESSONS.join(","),reason:"OWNER_1039_W10_EXACT_SOURCE_AND_BROWSER"};
@@ -768,6 +772,13 @@ function selfTest(){
  assert.equal(classify(hot.slice(1)).impact,"FULL");
  assert.equal(classify([...hot,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
  assert.equal(classify(hot,{manual:true}).impact,"FULL");
+ const g12W13=[...G12_W13_FILES];
+ assert.equal(classify(g12W13).impact,"SCOPED_LESSON");
+ assert.equal(classify(g12W13).changed_lessons,G12_W13_LESSONS.join(","));
+ assert.equal(classify(g12W13.slice(1)).impact,"FULL");
+ assert.equal(classify([...g12W13,"docs/thpt-preview/sgk/lop-12/chuong-vi/luyen-tap.md"]).impact,"FULL");
+ assert.equal(classify([...g12W13,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
+ assert.equal(classify(g12W13,{manual:true}).impact,"FULL");
  const g12W12=[...G12_W12_FILES];
  assert.equal(classify(g12W12).impact,"SCOPED_LESSON");
  assert.equal(classify(g12W12).changed_lessons,G12_W12_LESSONS.join(","));
