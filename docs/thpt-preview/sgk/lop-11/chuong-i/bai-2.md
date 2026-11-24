@@ -33,7 +33,7 @@
       =\cos a\cos b+\sin a\sin b.
     \]
 
-    Mặt khác, tính theo **góc giữa hai vectơ** cho \(\overrightarrow{OA}\cdot\overrightarrow{OB}=\cos(a-b)\). Hai cách tính cùng một đại lượng phải bằng nhau, nên
+    Mặt khác, gọi \(\theta\in[0;\pi]\) là góc không định hướng giữa hai vectơ. Hai tia có góc quay lần lượt là \(a,b\), nên \(\cos\theta=\cos(a-b)\) (đổi dấu hoặc cộng một bội của \(2\pi\) không đổi cos). Vì hai vectơ đều dài \(1\), tích vô hướng cũng bằng \(\cos\theta=\cos(a-b)\). Hai cách tính cùng một đại lượng phải bằng nhau, nên
 
     \[
     \boxed{\cos(a-b)=\cos a\cos b+\sin a\sin b.}
@@ -41,7 +41,7 @@
 
     Đây là điểm xuất phát quan trọng: công thức của góc hiệu xuất hiện từ hình học, không phải quy tắc tùy ý cần học thuộc.
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B02_UNIT_CIRCLE_AUTHORING_RESET_20261122.svg" alt="Trên đường tròn đơn vị, hai vectơ OA và OB tạo các góc a bằng 60 độ và b bằng 30 độ với trục Ox; góc giữa hai vectơ bằng a trừ b."><figcaption><strong>Đọc hình:</strong> xác định hai tia \(OA,OB\), đọc góc \(a,b\) từ trục \(Ox\), rồi nhìn góc giữa hai tia là \(a-b\). Hình minh họa trường hợp \(a=60^\circ,b=30^\circ\); lập luận bằng tích vô hướng ở trên mới giải thích công thức cho mọi góc thực.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B02_UNIT_CIRCLE_AUTHORING_RESET_20261122.svg" alt="Trên đường tròn đơn vị, hai vectơ OA và OB tạo các góc a bằng 60 độ và b bằng 30 độ với trục Ox; góc giữa hai vectơ bằng a trừ b."><figcaption><strong>Đọc hình:</strong> xác định hai tia \(OA,OB\), đọc góc \(a,b\) từ trục \(Ox\), rồi nhìn góc giữa hai tia trong hình này là \(a-b=30^\circ\). Hình minh họa trường hợp \(a=60^\circ,b=30^\circ\); lập luận bằng tích vô hướng ở trên mới giải thích công thức cho mọi góc thực.</figcaption></figure>
 
     Vậy còn góc **tổng** thì sao? Thay \(b\) bởi \(-b\) trong công thức vừa tìm được. Vì \(\cos(-b)=\cos b\) và \(\sin(-b)=-\sin b\), ta nhận được
 
@@ -49,7 +49,7 @@
     \cos(a+b)=\cos a\cos b-\sin a\sin b.
     \]
 
-    Với sin, ta dùng \(\sin x=\cos\left(\dfrac{\pi}{2}-x\right)\). Thay các góc phù hợp vào công thức cos sẽ cho
+    Với sin, ta dùng \(\sin x=\cos\left(\dfrac{\pi}{2}-x\right)\). Chẳng hạn, \(\sin(a+b)=\cos((\pi/2-a)-b)=\cos(\pi/2-a)\cos b+\sin(\pi/2-a)\sin b=\sin a\cos b+\cos a\sin b\). Thay \(b\) bằng \(-b\) cho công thức hiệu. Ta có
 
     \[
     \sin(a+b)=\sin a\cos b+\cos a\sin b,\qquad
@@ -115,7 +115,7 @@
     2\sin a\sin b=\cos(a-b)-\cos(a+b).
     \]
 
-    Tương tự, cộng và trừ hai công thức sin của tổng/hiệu sẽ cho cách biến \(\sin a\cos b\) thành tổng. Phép biến đổi này đặc biệt tiện khi hai góc \(a-b\) hoặc \(a+b\) là góc quen thuộc, dù bản thân \(a,b\) không dễ tính.
+    Cộng hai công thức sin của tổng và hiệu, các số hạng \(\cos a\sin b\) trái dấu triệt tiêu, nên \(2\sin a\cos b=\sin(a+b)+\sin(a-b)\). Phép biến đổi này đặc biệt tiện khi hai góc \(a-b\) hoặc \(a+b\) là góc quen thuộc, dù bản thân \(a,b\) không dễ tính.
 
     **Vận dụng.** Không dùng máy tính, tính \(2\cos75^\circ\cos45^\circ\).
 
@@ -150,7 +150,7 @@
     =2\cos\frac{u+v}{2}\cos\frac{u-v}{2}.
     \]
 
-    Vì vậy, **nửa tổng và nửa hiệu** không phải hai con số tự xuất hiện trong công thức; đó là cách tìm hai góc \(a,b\) sao cho \(a+b=u\), \(a-b=v\). Hai công thức cho hiệu hai sin và hiệu hai cos cũng được suy ra bằng cách tương tự.
+    Vì vậy, **nửa tổng và nửa hiệu** không phải hai con số tự xuất hiện trong công thức; đó là cách tìm hai góc \(a,b\) sao cho \(a+b=u\), \(a-b=v\). Lấy hiệu thay vì tổng, ta cũng được \(\sin u-\sin v=2\cos\dfrac{u+v}{2}\sin\dfrac{u-v}{2}\) và \(\cos u-\cos v=-2\sin\dfrac{u+v}{2}\sin\dfrac{u-v}{2}\). Dấu trừ ở công thức cos xuất phát từ \(\cos(a+b)-\cos(a-b)=-2\sin a\sin b\).
 
     **Vận dụng.** Không dùng máy tính, tính \(\sin75^\circ-\sin15^\circ\).
 
@@ -204,7 +204,7 @@
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức cộng</strong><p>\(\cos(a-b)=\cos a\cos b+\sin a\sin b\)</p><p>\(\cos(a+b)=\cos a\cos b-\sin a\sin b\)</p><p>\(\sin(a-b)=\sin a\cos b-\cos a\sin b\)</p><p>\(\sin(a+b)=\sin a\cos b+\cos a\sin b\)</p><p>\(\tan(a-b)=\dfrac{\tan a-\tan b}{1+\tan a\tan b}\)</p><p>\(\tan(a+b)=\dfrac{\tan a+\tan b}{1-\tan a\tan b}\)</p><p><strong>Điều kiện:</strong> hai công thức tan dạng phân số chỉ áp dụng khi \(\cos a\ne0\), \(\cos b\ne0\) và mẫu \(1\pm\tan a\tan b\) của từng công thức khác \(0\). Các công thức sin/cos đúng với mọi góc thực.</p></div>
 
-    Hai công thức tan là thương của các công thức sin/cos tương ứng. Chính vì có phép chia, **phải kiểm điều kiện xác định trước khi thay số**; không thể suy rằng công thức tan đúng tại mọi góc như các công thức sin/cos.
+    Hai công thức tan được suy từ \(\tan(a\pm b)=\dfrac{\sin(a\pm b)}{\cos(a\pm b)}\). Thay công thức cộng/hiệu của sin và cos, rồi chia cả tử và mẫu cho \(\cos a\cos b\ne0\), ta được hai phân thức tan ở trên; mẫu của từng phân thức phải khác \(0\). Chính vì có phép chia, **phải kiểm điều kiện xác định trước khi thay số**; không thể suy rằng công thức tan đúng tại mọi góc như các công thức sin/cos.
 
     **Ghi nhớ cách nhận diện:** Góc được viết như \(75^\circ=45^\circ+30^\circ\) hoặc \(15^\circ=45^\circ-30^\circ\) thường gợi ý công thức cộng/trừ.
 
