@@ -66,7 +66,7 @@
 
     Ví dụ, với \(u=x\), \(v=x^2+1\), quy tắc tích cho \(\bigl[x(x^2+1)\bigr]'=(x^2+1)+x(2x)=3x^2+1\). Nếu em nhân hai đạo hàm, chỉ được \(2x\), rõ ràng sai: khai triển hàm gốc là \(x^3+x\), đạo hàm phải bằng \(3x^2+1\).
 
-    Với **thương** \(u/v\), điều đầu tiên phải hỏi là **\(v\) có bằng \(0\) không?**. Từ quy tắc tích áp dụng cho \(u\cdot(1/v)\), ta được
+    Với **thương** \(u/v\), điều đầu tiên phải hỏi là **\(v\) có bằng \(0\) không?**. Để hiểu công thức, đặt \(w=u/v\), tức \(wv=u\). Với các hàm có đạo hàm và \(v\ne0\), quy tắc tích cho \(w'v+wv'=u'\). Thay \(w=u/v\) rồi giải theo \(w'\), ta được
 
     \[
     \left(\frac uv\right)'=\frac{u'v-uv'}{v^2}\quad(v\ne0).
@@ -209,7 +209,7 @@
 
     ### 2.1. Đạo hàm của một số hàm số thường gặp
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Các công thức đạo hàm cơ bản</strong><p>Với \(c\) là hằng số và \(n\in\mathbb N^*\): \((c)'=0\), \((x^n)'=nx^{n-1}\) trên \(\mathbb R\); \(\displaystyle (\sqrt{x})'=\frac{1}{2\sqrt{x}}\) khi \(x>0\). Hàm \(\sqrt{x}\) xác định tại \(x=0\) nhưng <strong>không có đạo hàm hữu hạn</strong> tại điểm biên đó theo giới hạn từ phải.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Các công thức đạo hàm cơ bản</strong><p>Với \(c\) là hằng số: \((c)'=0\), \((x)'=1\) trên \(\mathbb R\). Với số nguyên \(n\ge2\), \((x^n)'=nx^{n-1}\) trên \(\mathbb R\); \(\displaystyle (\sqrt{x})'=\frac{1}{2\sqrt{x}}\) khi \(x>0\). Hàm \(\sqrt{x}\) xác định tại \(x=0\) nhưng <strong>không có đạo hàm hữu hạn</strong> tại điểm biên đó theo giới hạn từ phải.</p></div>
 
     **Đọc công thức:** Bậc \(n\) trở thành hệ số, số mũ giảm \(1\). Với căn thức, phải kiểm \(x>0\) trước khi thay vào công thức. Khi gặp biểu thức được tạo từ nhiều hàm, cần kết hợp các quy tắc ở những mục tiếp theo.
 
