@@ -626,6 +626,51 @@ function verifyG11W3(previous,current,changed,expected){
  console.log("PASS #1039 W3 five source locks, six new and five reused SVG, frozen W1/W2 and assessment boundary, exact hook");
 }
 
+const G11_W4_ROWS=[[15,"95bbe5ecdd73b92f88176ae0245e11b1098d8e6e","5c1a81633b877074aa64a21e2cfd128de2f7db2a"],[16,"a2242eeb50ae0f02643182bf10c315c41ce05c3b","7d58a11f2ad82c11d277287c81f8b5c085f31cf2"],[17,"36a7c21f3ae2474318c1e857acbcb640680e1326","989f397ebb88ed7a49ba9895c949bd85a3059585"]];
+const G11_W4_NEW_ASSETS=[["docs/assets/images/thpt/G11_B15_GEOMETRIC_PARTIAL_SUMS_AUTHORING_20261123.svg","fa7db1642d772acaef27c1b1f4654df867cc2aba"],["docs/assets/images/thpt/G11_B16_ONE_SIDED_JUMP_AUTHORING_20261123.svg","62c7f1a3c9d5b7455b3223c347ba7aa48adb5526"],["docs/assets/images/thpt/G11_B17_IVT_SIGN_CHANGE_AUTHORING_20261123.svg","612883b518746c9d535fbcd151e226da562cfa1c"]];
+const G11_W4_EXISTING_ASSETS=[["docs/assets/images/thpt/FIG-G11-B15-01_R01.svg","632bef51196757f9c71f54c53bb3c7639ce158e0"],["docs/assets/images/thpt/FIG-G11-B16-01_R01.svg","d623e8a96c6d5f9723aafb9c62bffe57bdc9aa73"],["docs/assets/images/thpt/FIG-G11-B17-01_R01.svg","0cc06960b371bca72ee78da414a04aa56f5e5fbe"]];
+const G11_W4_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md","docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md","docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md"];
+const G11_W4_FILES=["docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md","docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md","docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md","docs/assets/images/thpt/G11_B15_GEOMETRIC_PARTIAL_SUMS_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B16_ONE_SIDED_JUMP_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B17_IVT_SIGN_CHANGE_AUTHORING_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
+function verifyG11W4(previous,current,changed,expected){
+ assert.equal(previous,"c6882ee3cfec3304841505e600187b1d7fe83d31","W4 must start from exact published W3 main");
+ assert.deepEqual(changed.slice().sort(),G11_W4_FILES.slice().sort());
+ assert.deepEqual(expected.slice().sort(),G11_W4_LESSONS.slice().sort());
+ const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
+ const receipt=read(current,G11_W1_HANDOFF);
+ assert.equal(blob(read(previous,G11_W1_HANDOFF)),"eca03dc4ce7a2452fb2815534a23fcf6bf168e36");
+ assert.equal(blob(receipt),"4ca5e678146021533871669d7cf6cfed0069f91c");
+ assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
+ const hook="hooks/sgk_golden_first_paint.py";
+ const oldHook=read(previous,hook).toString("utf8"),nowHook=read(current,hook).toString("utf8");
+ assert.equal(blob(read(current,hook)),"b89d84d79ceb186abf00c9bbbef94722a8c836a7");
+ const start=nowHook.indexOf("# #1039 W4 exact route scope;");
+ const end=nowHook.indexOf("def on_post_page(output, page, config):");
+ assert(start>0&&end>start);
+ assert.equal((nowHook.slice(0,start)+nowHook.slice(end)).replace("    if uri in _W4_ROUTES:\n        return _render_w4(output, uri)\n",""),oldHook,"W1/W2/W3 and other routes unchanged");
+ for(const file of ["docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",...G11_W3_LESSONS,...G11_W2_LESSONS,...G11_W1_LESSONS])assert.equal(blob(read(previous,file)),blob(read(current,file)));
+ for(const [n,oldSha,newSha] of G11_W4_ROWS){
+  const file="docs/thpt-preview/sgk/lop-11/chuong-v/bai-"+n+".md";
+  assert.equal(blob(read(previous,file)),oldSha);
+  const source=read(current,file),content=source.toString("utf8");
+  assert.equal(blob(source),newSha);assert.equal(blob(fs.readFileSync(path.join(root,file))),newSha);
+  assert.deepEqual(content.split("\n").filter(l=>l.startsWith('=== "')),['=== "Khám phá kiến thức"','=== "Kiến thức SGK"','=== "Ví dụ"','=== "Lỗi thường gặp"']);
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final|g11-chapter-selfcheck)/i.test(content));
+  const recovery=content.split('=== "Lỗi thường gặp"')[1];
+  assert.equal(recovery.split("\n").filter(l=>/^    ### 4\.\d+\./.test(l)).length,6);
+  assert(recovery.includes("**Học tiếp:**"));
+  assert(receipt.toString("utf8").includes(oldSha)&&receipt.toString("utf8").includes(newSha));
+  console.log("SCOPED_G11_W4_SOURCE_PASS "+file+" "+newSha);
+ }
+ for(const [file,h] of [...G11_W4_EXISTING_ASSETS,...G11_W3_NEW_ASSETS,...G11_W3_EXISTING_ASSETS,...G11_W2_ASSETS,...G11_W1_ASSETS]){
+  assert.equal(blob(read(previous,file)),h);assert.equal(blob(read(current,file)),h);
+ }
+ for(const [file,h] of G11_W4_NEW_ASSETS){
+  assert.throws(()=>read(previous,file),"New SVG must not exist in baseline");
+  assert.equal(blob(read(current,file)),h);assert.equal(blob(fs.readFileSync(path.join(root,file))),h);
+ }
+ console.log("PASS #1039 W4 three source locks, three new and three reused SVG, frozen W1/W2/W3 and assessment boundary, exact hook");
+}
+
 function main(){
  const previous=process.env.BEFORE_SHA,current=process.env.HEAD_SHA;
  assert(sha(previous)&&sha(current),"Full nonzero main push before/head commits required");
@@ -633,6 +678,9 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.length===G11_W4_FILES.length&&changed.every(x=>G11_W4_FILES.includes(x))){
+  verifyG11W4(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
+ }
  if(changed.length===G11_W3_FILES.length&&changed.every(x=>G11_W3_FILES.includes(x))){
   verifyG11W3(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
  }
