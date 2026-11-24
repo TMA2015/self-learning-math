@@ -156,7 +156,7 @@
     Nếu đổi dấu phần dư thành \(y=x-1/x\), đạo hàm trở thành \(1+1/x^2>0\). Hàm luôn tăng trên từng khoảng xác định và không có cực trị. Tiệm cận vẫn là \(x=0\) và \(y=x\), nhưng các giới hạn tại \(0\) đổi dấu.
 
     | \(x\) | \(-\infty\) | | \(0^-\) | \(x=0\) | \(0^+\) | | \(+\infty\) |
-    | :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+    | :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
     | \(y'\) | | \(+\) | | ‖ | | \(+\) | |
     | \(y\) | \(-\infty\) | ↗ | \(+\infty\) | ‖ | \(-\infty\) | ↗ | \(+\infty\) |
 
@@ -164,7 +164,7 @@
 
     Với dạng tổng quát \(y=mx+n+k/(x-h)\), đặt \(u=x-h\), \(v=y-(mh+n)\). Khi ấy \(v=mu+k/u\) là hàm lẻ theo \(u\), nên giao điểm \(I(h;mh+n)\) của tiệm cận đứng và xiên là tâm đối xứng. Hai trục đối xứng là hai đường phân giác của các góc tạo bởi hai tiệm cận. Khác trường hợp tiệm cận ngang, các đường phân giác này không nhất thiết có hệ số góc \(\pm1\).
 
-    Có thể hiểu tính chất đó từ phương trình \(u(v-mu)=k\): tích khoảng cách có dấu tới hai tiệm cận (sau khi chia cho hệ số chuẩn hóa không đổi) là một hằng số. Phản xạ qua một đường phân giác đổi vai trò hai khoảng cách, hoặc đồng thời đổi dấu cả hai, nên tích không đổi. Vì vậy cả hai phép đối xứng đều bảo toàn đồ thị.
+    Để hình dung hai trục đối xứng, hãy vẽ hai tiệm cận rồi vẽ hai đường phân giác của các góc chúng tạo thành. Hai nhánh của hyperbol đối xứng qua mỗi đường phân giác ấy: khi gấp hình theo một đường phân giác, các điểm của đồ thị được ghép với các điểm tương ứng của đồ thị. Khi phác hình, dùng tính đối xứng này để kiểm tra vị trí các nhánh.
 
     **Vận dụng.** Khảo sát \(y=(x^2-x-1)/(x-2)\) và phác đồ thị.
 
