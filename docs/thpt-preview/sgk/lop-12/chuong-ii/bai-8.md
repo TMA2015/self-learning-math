@@ -62,7 +62,7 @@
 
     ### 1.2. Biểu thức tọa độ của tích vô hướng
 
-    Phép cộng, trừ, nhân với số đều cho kết quả là một vectơ. Tích vô hướng thì khác: kết quả là một số thực, giúp ta đo sự tương hợp về hướng, từ đó tính góc và độ dài.
+    Phép cộng, trừ, nhân với số đều cho kết quả là một vectơ. Tích vô hướng thì khác: kết quả là một số thực, giúp ta nhận biết hai vectơ tạo góc nhọn, vuông hay tù, từ đó tính góc và độ dài.
 
     Trong hệ \(Oxyz\), ba vectơ đơn vị có độ dài \(1\), đôi một vuông góc. Vì vậy \(\vec i\cdot\vec i=\vec j\cdot\vec j=\vec k\cdot\vec k=1\), còn các tích vô hướng giữa hai vectơ đơn vị khác nhau đều bằng \(0\).
 
@@ -124,7 +124,7 @@
 
     Từ \(\overrightarrow{OA}=(240;0;0)\), \(\overrightarrow{AA'}=(0;360;0)\), ta đọc được chiều rộng \(240\) cm, chiều dài \(360\) cm. Cao độ của \(B\) bằng \(180\), nên nhà cao \(180\) cm. Cạnh mái \(AB\) có vectơ \((-120;0;180)\), dài \(\sqrt{120^2+180^2}=60\sqrt{13}\) cm. Hai cạnh mái trước có cùng độ dài vì đỉnh \(B\) nằm trên đường thẳng vuông góc với \(OA\) qua trung điểm \(M\).
 
-    Góc nghiêng của mái so với mặt đất có thể tính bằng góc giữa \(AB\) và hình chiếu của nó xuống mặt đất, tức góc giữa \(\overrightarrow{AB}\) và \(\overrightarrow{AM}=(-120;0;0)\). Cosin bằng \(2/\sqrt{13}\), nên góc xấp xỉ \(56{,}3^\circ\). Góc này khác với góc ở đỉnh mái.
+    Mặt mái \(ABB'A'\) gặp mặt đất theo đường \(AA'\). Vì lăng trụ đứng, \(AA'\) vuông góc với mặt trước \((OAB)\); do đó cả \(AB\) và hình chiếu \(AM\) đều vuông góc với giao tuyến \(AA'\). Góc nghiêng của mái so với mặt đất vì thế là góc giữa \(\overrightarrow{AB}\) và \(\overrightarrow{AM}=(-120;0;0)\). Cosin bằng \(2/\sqrt{13}\), nên góc xấp xỉ \(56{,}3^\circ\). Góc này khác với góc ở đỉnh mái.
 
     Cách làm trong bài toán chuyển động cũng tương tự: chọn hệ tọa độ và đơn vị, viết vectơ độ dời rồi tính. Nếu một vật có vectơ vận tốc không đổi \(\vec v\) trong thời gian \(t\), độ dời là \(t\vec v\). Chẳng hạn thiết bị bay từ \(A(2;1;4)\) đến \(B(8;5;6)\) trong \(2\) giây, tính theo mét, vận tốc không đổi. Khi đó \(\overrightarrow{AB}=(6;4;2)\), \(\vec v=(3;2;1)\) m/s. Sau \(3\) giây tiếp theo, độ dời là \(3\vec v=(9;6;3)\); vị trí mới \(C(17;11;9)\). Tốc độ không đổi là \(\sqrt{14}\) m/s. Nếu đề không bảo đảm vận tốc không đổi, không thể dự đoán vị trí tiếp theo chỉ từ hai điểm đã biết.
 
@@ -148,7 +148,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Các phép toán theo tọa độ</strong><p>Trong hệ \(Oxyz\), với \(\vec a=(x;y;z),\vec b=(x';y';z')\) và \(k\in\mathbb R\):</p><div class="arithmatex">\(\displaystyle\vec a+\vec b=(x+x';y+y';z+z')\)</div><div class="arithmatex">\(\displaystyle\vec a-\vec b=(x-x';y-y';z-z')\)</div><div class="arithmatex">\(\displaystyle k\vec a=(kx;ky;kz).\)</div><p>Đặc biệt, \(-\vec a=(-x;-y;-z)\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện cùng phương</strong><p>Với \(\vec b=(x';y';z')\ne\vec0\), vectơ \(\vec a=(x;y;z)\) cùng phương với \(\vec b\) khi và chỉ khi tồn tại \(k\in\mathbb R\) thỏa \(x=kx',y=ky',z=kz'\).</p><p>Nếu cả hai khác không, \(k&gt;0\) cho cùng hướng, \(k&lt;0\) cho ngược hướng. Với \(k=0\), \(\vec a=\vec0\), xét theo quy ước vectơ-không đã học ở Bài 6. Không dùng tỉ số có mẫu bằng \(0\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Điều kiện cùng phương</strong><p>Với \(\vec b=(x';y';z')\ne\vec0\), vectơ \(\vec a=(x;y;z)\) cùng phương với \(\vec b\) khi và chỉ khi tồn tại \(k\in\mathbb R\) thỏa \(x=kx',y=ky',z=kz'\).</p><p>Nếu cả hai khác không, \(k\gt 0\) cho cùng hướng, \(k\lt 0\) cho ngược hướng. Với \(k=0\), \(\vec a=\vec0\), xét theo quy ước vectơ-không đã học ở Bài 6. Không dùng tỉ số có mẫu bằng \(0\).</p></div>
 
     Với ba điểm phân biệt \(A,B,C\), điều kiện thẳng hàng là \(\overrightarrow{AB}\) và \(\overrightarrow{AC}\) cùng phương.
 
