@@ -257,4 +257,4 @@
 
     **Học tiếp:** [Core và Luyện tập Bài 17](../luyen-tap/#b17-core) · [Mở rộng sau Bài 17](../mo-rong-sau-bai-17/).
 
-    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK KNTT Toán 12 tập 2, trang in 54–59; hình minh họa và phần lớn ví dụ do SLM biên soạn riêng.</p>
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK KNTT Toán 12 tập 2, trang in 54–60; hình minh họa và phần lớn ví dụ do SLM biên soạn riêng.</p>
