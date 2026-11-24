@@ -193,6 +193,8 @@
     | :-- | :--: | :--: | :--: | :--: | :--: |
     | \(C(x)\) (triệu đồng) | \(0\) | \(40\) | \(360\) | \(3960\) | \(+\infty\) (giới hạn) |
 
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B05_FIG04_POLLUTION_COST_AUTHORING_20261124.svg" alt="Đồ thị chi phí tăng từ gốc tọa độ, qua (50;40) và (90;360), tiến sát tiệm cận đứng x=100"><figcaption>Ở gần 100%, đường cong tăng rất nhanh. Khung hình chỉ hiển thị đến 600 triệu đồng, không có nghĩa chi phí bị chặn ở 600.</figcaption></figure>
+
     **Kiểm lại:** \(C(99)>C(90)\); đây là kết luận của mô hình giả định, không phải khẳng định mọi công nghệ thực tế đều có cùng giới hạn.
 
     ### 3.6. Quây vườn sát tường
@@ -244,6 +246,8 @@
     **Phân tích:** Hoà vốn nghĩa là \(P=0\), có lãi là \(P>0\); tối đa lợi nhuận là một bài toán khác, cần xét \(P'\).
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> \(P'=-0{,}9(q-100)(q+20)\). Trên miền, hàm tăng tới \(100\) rồi giảm. \(P(0)=-48000,\ P(20)=0,\ P(100)=192000\). Vì hàm tăng nghiêm ngặt trên \([0;100]\), mọi \(q&lt;20\) cho lợi nhuận âm; lượng ít nhất để hoà vốn hoặc có lãi là \(20\). Lợi nhuận lớn nhất \(192\) triệu đồng tại \(100\) sản phẩm. Chẳng hạn \(P(200)=-648000\) nghìn đồng nên sản xuất \(200\) theo mô hình không có lợi.</p></div>
+
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B05_FIG05_PROFIT_AUTHORING_20261124.svg" alt="Đồ thị lợi nhuận theo sản lượng, trục dọc tính bằng triệu đồng; hòa vốn lần đầu tại 20, đạt đỉnh 192 tại 100"><figcaption>Đọc giao điểm đầu tiên với trục hoành để tìm lượng hòa vốn; đọc điểm cao nhất để tìm lợi nhuận tối đa. Trục dọc đã đổi từ nghìn đồng sang triệu đồng.</figcaption></figure>
 
     **Kiểm lại:** \(100\) là số nguyên; \(P'\) đổi dấu đúng chiều. Không dùng phương trình \(P'=0\) để tìm điểm hoà vốn.
 
