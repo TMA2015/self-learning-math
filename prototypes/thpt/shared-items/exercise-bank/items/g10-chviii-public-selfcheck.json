@@ -10,7 +10,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "Trắc nghiệm chọn B; bằng chứng logic: nhận ra hai nhánh rời nhau và nhân trong mỗi nhánh.",
+    "rubric": "Chọn B. Tự đối chiếu: hai nhánh rời nhau, dùng quy tắc nhân trong mỗi nhánh.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
@@ -170,7 +170,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "Chọn C; kiểm tra đã cố định hai vị trí đầu/cuối và nhân 2!×4!.",
+    "rubric": "Chọn C. Tự đối chiếu: cố định hai vị trí đầu/cuối và nhân 2!×4!.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
@@ -250,7 +250,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "Chọn B; có lý do cố định một đỉnh và chọn không thứ tự 2 đỉnh còn lại.",
+    "rubric": "Chọn B. Tự đối chiếu: cố định một đỉnh và chọn hai đỉnh còn lại không xét thứ tự.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
@@ -410,7 +410,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "Chọn B; kiểm tra cách giải ngược từ hệ số về tham số.",
+    "rubric": "Chọn B. Tự đối chiếu: từ hệ số đã biết lập phương trình tìm tham số.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
