@@ -32,7 +32,7 @@
 
     Cần phân biệt “xung khắc” với “độc lập” đã học ở Bài 28. Trong một lần gieo, biết \(A\) xảy ra thì \(B\) chắc chắn không xảy ra; hai biến cố trên **không độc lập**. Xung khắc nói rằng **không cùng xảy ra**, chứ không có nghĩa là chúng “không ảnh hưởng tới nhau”.
 
-    **Vận dụng.** Một hộp có mười thẻ ghi các số từ \(1\) đến \(10\), rút đều một thẻ. Gọi \(C\): “rút số nhỏ hơn \(4\)”, \(D\): “rút số lớn hơn \(8\)”. Hai biến cố có xung khắc không? Tính \(P(C\cup D)\) và giải thích vì sao được cộng thẳng.
+    **Vận dụng.** Một hộp có mười thẻ ghi các số từ \(1\) đến \(10\), rút ngẫu nhiên một thẻ, mỗi thẻ có cơ hội như nhau. Gọi \(C\): “rút số nhỏ hơn \(4\)”, \(D\): “rút số lớn hơn \(8\)”. Hai biến cố có xung khắc không? Tính \(P(C\cup D)\) và giải thích vì sao được cộng thẳng.
 
     ??? question "Đối chiếu"
 
@@ -82,7 +82,7 @@
     P\bigl(\overline{A\cup B}\bigr)=1-P(A\cup B).
     \]
 
-    **Vận dụng.** Trong một câu lạc bộ có \(30\) thành viên, \(14\) bạn thích nhạc, \(13\) bạn thích mỹ thuật, \(5\) bạn thích cả hai. Chọn đều một thành viên. Tính xác suất bạn đó thích **ít nhất một** môn và xác suất bạn đó **không thích môn nào** trong hai môn.
+    **Vận dụng.** Trong một câu lạc bộ có \(30\) thành viên, \(14\) bạn thích nhạc, \(13\) bạn thích mỹ thuật, \(5\) bạn thích cả hai. Chọn ngẫu nhiên một thành viên, mỗi người có cơ hội như nhau. Tính xác suất bạn đó thích **ít nhất một** môn và xác suất bạn đó **không thích môn nào** trong hai môn.
 
     ??? question "Đối chiếu"
 
@@ -144,10 +144,10 @@
     **Tự kiểm kết quả:** Vì \(A\subseteq A\cup B\) và \(B\subseteq A\cup B\) nên
 
     \[
-    \max\{P(A),P(B)\}\leq P(A\cup B)\leq 1.
+    \max\{P(A),P(B)\}\leq P(A\cup B)\leq \min\{1,P(A)+P(B)\}.
     \]
 
-    Đồng thời \(A\cap B\subseteq A,B\), nên \(0\leq P(AB)\leq\min\{P(A),P(B)\}\). Nếu số cho hoặc đáp số vượt các giới hạn ấy, dữ kiện hay phép tính có sai sót. Đây là kiểm tra tính hợp lí, không thay chứng minh của công thức cộng.
+    Đồng thời, vì giao nằm trong mỗi biến cố và xác suất hợp không vượt quá 1, ta có \(\max\{0,P(A)+P(B)-1\}\leq P(AB)\leq\min\{P(A),P(B)\}\). Ví dụ \(P(A)=0{,}8,\ P(B)=0{,}7,\ P(AB)=0{,}1\) là dữ kiện bất khả thi: công thức cộng cho xác suất hợp bằng \(1{,}4>1\). Nếu số cho hoặc đáp số vượt các giới hạn ấy, dữ kiện hay phép tính có sai sót. Đây là kiểm tra tính hợp lí, không thay chứng minh của công thức cộng.
 
 === "Ví dụ"
 
