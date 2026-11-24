@@ -4595,5 +4595,47 @@
     "order": 11,
     "item_id": "THPT-G11-YR-INT-P01",
     "skill_id": "G11-YR_CROSS_CHAPTER_REMEDIATION"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-CHI-TRY01",
+    "outcome_id": "G11-B01-SIGNED_ROTATION"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G11-CHI-TRY02",
+    "outcome_id": "G11-B01-COTERMINAL"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G11-CHI-TRY03",
+    "outcome_id": "G11-B01-ARC_LENGTH"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G11-CHI-TRY04",
+    "outcome_id": "G11-B01-UNIT_CIRCLE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G11-CHI-TRY05",
+    "outcome_id": "G11-B01-TRIG_DOMAIN"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-G11-CHI-TRY06",
+    "outcome_id": "G11-B01-RELATED_ANGLES"
   }
 ]
