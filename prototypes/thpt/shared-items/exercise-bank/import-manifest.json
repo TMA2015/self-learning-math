@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 263,
+    "legacy_combined_answer_items": 183,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_446_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_526_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 446 manually verified and key separated at checkpoints 29–41; 263 remain combined, answer_key=null. Remaining: 171 Topic (79 cd18–21 practice + 92 topic knowledge first try) and 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 526 manually verified and key separated at checkpoints 29–42; 183 remain combined, answer_key=null. Remaining: 91 Topic (39 cd19–21 practice + 52 topic knowledge first try) and 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 263,
+      "remaining_combined_answer_items": 183,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 446,
-        "remaining_count": 263,
+        "reviewed_count": 526,
+        "remaining_count": 183,
         "batches": [
           {
             "checkpoint": 29,
@@ -11638,6 +11638,1197 @@
               "33 first-try imported original_outcome_ids had trailing ' --' from HTML comments; normalized to exact source PRIMARY_OUTCOME marker, no reassignment. Before values recorded per item. Other topics untouched.",
               "CĐ16 add explicit box names, foot H and B membership, straight ramp and horizontal floor; prove parallel-plane perpendicular transfer, correct P18 necessity by contradiction, add counterexample T06 and clarify skew perpendicular; show right triangle for slant height.",
               "CĐ17 distinguish perpendicular distance and oblique segment, prove common perpendicular, derive pyramid height and frustum volume, clarify rectangular box and triangular base. Numeric results unchanged. All D6/remediation preserved; 137 shared first-try records outside scope unchanged. Full PDF, outcome coverage, PED/D6/reveal, independent review and interaction conversion pending."
+            ]
+          },
+          {
+            "checkpoint": 42,
+            "baseline": "49d7ebf9a52a63c8641879c2a94c296539c31ec3",
+            "reviewed_candidate": "c78655fd83e3ba269e48887f2ca03c01e2a772ef",
+            "scope": "CĐ18: 80 items (40 practice +40 first try). ID-scoped stem/solution and PRIMARY_OUTCOME checks 80/80 in canonical d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960 and public projections de3db595b945156d80a8d777a64b190cb86fd338 / 97350084db7e5d979d7f1d4c92c2810bf7116b9f after whitespace and HTML entity normalization. Re-solved, separated keys; 29 stem/solution improvements.",
+            "shards": [
+              {
+                "shard": "cd18",
+                "before": "c6d3df096f37ad0abacd03d0b31b0a2b0b9d8125",
+                "after": "255bd0ba2cac6a0932562d31de682e04a7cede95",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP18-P01",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "PR=5 cm; khi P=Q thì PQ⃗=0⃗, không phải vectơ đơn vị.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O01"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P02",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Hai vectơ độ dời đối nhau.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O02"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P03",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Vectơ-không.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O03"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P04",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "|ku⃗|=10 cm; ku⃗ ngược hướng u⃗.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P05",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "6.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P06",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "W=10 J.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O06"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O06"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P07",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Có, vì x=0.",
+                    "skill_ids": [
+                      "G12-CHII-B07-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O07"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P08",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "u⃗=(−2;3;1), N(−2;3;1).",
+                    "skill_ids": [
+                      "G12-CHII-B07-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O08"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P09",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Tăng 4 m theo chiều dương Oy (về Bắc).",
+                    "skill_ids": [
+                      "G12-CHII-B07-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O09"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P10",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "CD⃗=(3;0;−4), DC⃗=(−3;0;4); hai vectơ đối nhau.",
+                    "skill_ids": [
+                      "G12-CHII-B07-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O10"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P11",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "(−5;6;7).",
+                    "skill_ids": [
+                      "G12-CHII-B08-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O11"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P12",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Không cùng phương.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O12"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P13",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "G(1;2;1).",
+                    "skill_ids": [
+                      "G12-CHII-B08-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O13"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P14",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "cos θ=1/√2 (θ=45°).",
+                    "skill_ids": [
+                      "G12-CHII-B08-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O14"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P15",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "7 đơn vị độ dài.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O15"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P16",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "M(2)=(4;3;2) km.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O06"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O16"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P17",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Một vectơ pháp tuyến là n⃗=(1;−1;1).",
+                    "skill_ids": [
+                      "G12-CHV-B14-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O17"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P18",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x+2y−z−3=0.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O18"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P19",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "−x−y+z=0 (hay z=x+y).",
+                    "skill_ids": [
+                      "G12-CHV-B14-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O19"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P20",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x+2z=0.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O20"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P21",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Có, hai mặt phẳng vuông góc.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O21"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P22",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "1 đơn vị độ dài.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O06"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O22"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P24",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x=−1, y=2+3t, z=−2t (t∈ℝ).",
+                    "skill_ids": [
+                      "G12-CHV-B15-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O24"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P25",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x=1, y=−1+2t, z=4t (t∈ℝ).",
+                    "skill_ids": [
+                      "G12-CHV-B15-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O25"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P26",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x=2 và (y+1)/3=(z−5)/(−1).",
+                    "skill_ids": [
+                      "G12-CHV-B15-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O26"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P27",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Không thuộc d.",
+                    "skill_ids": [
+                      "G12-CHV-B15-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O27"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P28",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Hai đường trùng nhau.",
+                    "skill_ids": [
+                      "G12-CHV-B15-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O28"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P29",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Hai đường chéo nhau.",
+                    "skill_ids": [
+                      "G12-CHV-B15-O06"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O29"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P30",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Giao điểm (3;−1;1).",
+                    "skill_ids": [
+                      "G12-CHV-B15-O07"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O30"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P31",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "90°.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O31"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P32",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "0°.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O32"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P33",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "90°.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O33"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P34",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Đường thẳng song song phân biệt với mặt phẳng.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O34"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P35",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "sin θ=3/5; độ dài cáp 10 m.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O35"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P36",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "(x+1)²+(y−2)²+z²=9.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O36"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P37",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Tâm (−1;2;0), R=1.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O37"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P38",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "P nằm trên mặt cầu; Q nằm trong khối cầu, không thuộc mặt cầu.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O38"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P39",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Tâm C(0;2;3), R=3; x²+(y−2)²+(z−3)²=9.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O39"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P40",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Bán kính đường tròn giao tuyến bằng 4.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O40"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-P23",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "8 đơn vị độ dài.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O07"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O23"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 0
+              },
+              {
+                "shard": "topic-knowledge-first-try",
+                "before": "e827ae8252abf893410bb35c11171acec2314698",
+                "after": "711e4e00201870ff17615317ff550eca06172ccd",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP18-T01",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "AB⃗=0⃗, độ dài 0, không có hướng hình học riêng.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O01",
+                      "G10-B07-ZERO"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O01"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O01 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T02",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Không; AB⃗ và CD⃗ đối nhau, AB⃗=DC⃗.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O02"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O02 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T03",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "PR⃗.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O03"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O03 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T04",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "0u⃗=0⃗; độ dài 0, không có hướng hình học riêng; theo quy ước cùng hướng với u⃗.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O04",
+                      "G10-B07-ZERO"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O04"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O04 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T05",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "0.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O05"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O05 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T06",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "10 N.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O06"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O06 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T07",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "M thuộc Oxy.",
+                    "skill_ids": [
+                      "G12-CHII-B07-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O07"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O07 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T08",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "OM⃗=(1;2;3).",
+                    "skill_ids": [
+                      "G12-CHII-B07-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O08"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O08 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T09",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "4 m về Tây, 3 m về Bắc, cao 2 m so với O.",
+                    "skill_ids": [
+                      "G12-CHII-B07-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O09"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O09 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T10",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "AB⃗=(3;−2;4).",
+                    "skill_ids": [
+                      "G12-CHII-B07-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O10"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O10 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T11",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "(3;−2;2).",
+                    "skill_ids": [
+                      "G12-CHII-B08-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O11"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O11 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T12",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Có, u⃗=3v⃗.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O12"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O12 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T13",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "M(1;2;1).",
+                    "skill_ids": [
+                      "G12-CHII-B08-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O13"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O13 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T14",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "90°.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O14"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O14 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T15",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "3.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O15"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O15 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T16",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "M(2)=(1;6;0).",
+                    "skill_ids": [
+                      "G12-CHII-B08-O06"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O16"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O16 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T17",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Một pháp tuyến là (0;0;1).",
+                    "skill_ids": [
+                      "G12-CHV-B14-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O17"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O17 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T18",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "z=2.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O18"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O18 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T19",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x+y+z=2.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O19"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O19 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T20",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x−y=0.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O20"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O20 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T21",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Hai mặt phẳng trùng nhau.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O21"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O21 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T22",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "5 đơn vị độ dài.",
+                    "skill_ids": [
+                      "G12-CHV-B14-O06"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O22"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O22 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T24",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x=t, y=0, z=2t (t∈ℝ).",
+                    "skill_ids": [
+                      "G12-CHV-B15-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O24"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O24 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T25",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x=t, y=2t, z=3t (t∈ℝ).",
+                    "skill_ids": [
+                      "G12-CHV-B15-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O25"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O25 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T26",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "(x−2)/1=(z−3)/2, y=−1.",
+                    "skill_ids": [
+                      "G12-CHV-B15-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O26"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O26 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T27",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Có, ứng với t=0.",
+                    "skill_ids": [
+                      "G12-CHV-B15-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O27"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O27 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T28",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Hai đường song song phân biệt.",
+                    "skill_ids": [
+                      "G12-CHV-B15-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O28"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O28 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T29",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "O(0;0;0).",
+                    "skill_ids": [
+                      "G12-CHV-B15-O06"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O29"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O29 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T30",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "d nằm trong (P).",
+                    "skill_ids": [
+                      "G12-CHV-B15-O07"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O30"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O30 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T31",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "0°.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O31"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O31 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T32",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "90°.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O32"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O32 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T33",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "90°.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O33"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O33 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T34",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "d nằm trong mặt phẳng z=0.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O34"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O34 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T35",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "sin θ=3/5.",
+                    "skill_ids": [
+                      "G12-CHV-B16-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O35"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O35 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T36",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x²+y²+z²=25.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O36"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O36 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T37",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Tâm (2;0;0), R=2.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O02"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O37"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O37 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T38",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Điểm ở ngoài khối cầu.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O03"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O38"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O38 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T39",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "x²+y²+z²=4.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O39"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O39 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T40",
+                    "source_blob": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
+                    "answer_key": "Không có điểm chung.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O40"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O40 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP18-T23",
+                    "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+                    "answer_key": "Tiếp xúc tại một điểm (0;0;4).",
+                    "skill_ids": [
+                      "G12-CHV-B14-O07"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP18-O23"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP18-O23 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  }
+                ],
+                "unchanged_count": 130
+              }
+            ],
+            "notes": [
+              "T04 corrected legacy categorical 'Không' to distinguish geometric direction from KNTT zero-vector same-direction convention, supported by existing G10-B07-ZERO item THPT-G10-B07-P04 (source blob 18c29d7f60448a0a52d5b9f5aa5002e0f331defd); T01 aligned. T03 clarifies three-point rule for arbitrary points. Numeric results retained.",
+              "P39 explicitly requires AB as diameter, otherwise two points cannot determine a unique sphere. P09 defines positive Oy as North; P16 states constant velocity; P38 distinguishes point on sphere surface from interior of solid ball; P01 separates inconsistent alternative conditions; P06/T06 specify constant force/concurrent forces; P17/T17 identify the plane; T16 explicit trajectory formula. P23/T23 keep OPTIONAL_AFTER_B17 scope in frozen source and existing remediation (not mandatory B14 core). T06 maps existing vector addition skill G12-CHII-B06-O03 rather than treating resultant as work skill; original Topic outcome retained.",
+              "40 first-try outcome codes normalized from trailing ' --' HTML import artifact to source PRIMARY_OUTCOME. Before values recorded per item. 130 first-try records outside CĐ18 unchanged. All original remediation, ID, provenance, interaction preserved. Original SGK PDF reread, full academic/PED/reveal/D6 links, optional-scope integration enforcement, independent review and interaction conversion pending. No runtime or release."
             ]
           }
         ]
