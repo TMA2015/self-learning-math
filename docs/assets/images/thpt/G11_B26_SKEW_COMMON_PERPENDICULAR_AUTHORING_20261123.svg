@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 475" width="1000" height="475" role="img" aria-labelledby="t d">
+<title id="t">Đường vuông góc chung của hai đường thẳng chéo nhau</title><desc id="d">Đường a nằm trên mặt phẳng Q chứa b. Hình chiếu a phẩy của a xuống Q cắt b tại N. Trên a có M nằm phía trên N theo phương vuông góc Q, nên MN vuông góc đồng thời a và b, đoạn MN là khoảng cách hai đường chéo nhau. Sơ đồ nhấn mạnh hai đầu thuộc đúng đường và đủ hai góc vuông.</desc>
+<rect width="1000" height="475" rx="18" fill="#fff"/>
+<text x="500" y="37" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1b405c">Hai đường chéo nhau: tìm đoạn vuông góc chung</text>
+<polygon points="115,247 747,247 849,420 242,420" fill="#e5f0fa" stroke="#6491ad" stroke-width="3"/>
+<path d="M160 128 L620 128" stroke="#2d75ab" stroke-width="6" stroke-linecap="round"/>
+<path d="M160 313 L620 313" stroke="#2d75ab" stroke-width="3.2" stroke-dasharray="10 6"/>
+<path d="M260 359 L580 263" stroke="#358975" stroke-width="6" stroke-linecap="round"/>
+<path d="M413 128 L413 313" stroke="#c45b38" stroke-width="7" stroke-linecap="round"/>
+<path d="M413 296 H433 V313" fill="none" stroke="#c45b38" stroke-width="3"/>
+<circle cx="413" cy="128" r="7" fill="#c45b38"/><circle cx="413" cy="313" r="7" fill="#c45b38"/>
+<g font-family="Arial" font-size="21" fill="#25445d">
+<text x="626" y="122" fill="#2d75ab">a</text><text x="626" y="314" fill="#2d75ab">a′</text><text x="585" y="257" fill="#358975">b</text>
+<text x="429" y="119">M</text><text x="429" y="333">N</text><text x="432" y="225" fill="#be5635">MN ⟂ (Q)</text><text x="754" y="307">(Q)</text>
+<text x="500" y="450" text-anchor="middle" font-size="18">M∈a, N∈b, MN⊥a và MN⊥b ⇒ d(a,b)=MN</text>
+</g></svg>
