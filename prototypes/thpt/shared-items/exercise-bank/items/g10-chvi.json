@@ -28,7 +28,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ đếm số cặp, nhóm theo từng x và kiểm đúng một y cho mỗi x. Ôn Bài 15 mục 2.1; luyện THPT-G10-CHVI-TRY01."
   },
   {
     "item_id": "THPT-G10-B15-C02",
@@ -59,7 +60,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu loại dấu bằng, thay x=3/2 vào căn và kiểm √0=0. Ôn Bài 15 mục 2.1; luyện THPT-G10-CHVI-TRY02."
   },
   {
     "item_id": "THPT-G10-B15-P01",
@@ -90,14 +92,15 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ loại 3, phân tích x²−9 thành hai nhân tử và loại cả −3. Ôn Bài 15 mục 2.1; luyện THPT-G10-CHVI-TRY02."
   },
   {
     "item_id": "THPT-G10-B15-P02",
     "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Phí giao hàng giả định (nghìn đồng): C(x)=8x với 0≤x≤2; C(x)=16+6(x−2) khi x>2; x tính bằng km. Tính C(2) và C(3).",
-    "answer_key": "C(2)=16, C(3)=22 nghìn đồng.",
-    "worked_solution": "C(2)=16 và C(3)=22 (nghìn đồng). x=2 dùng nhánh thứ nhất; x=3 dùng nhánh thứ hai: 16+6=22.",
+    "stem": "Một dịch vụ giao hàng thu 18 nghìn đồng cho 0≤x≤3 km, và 18+5(x−3) nghìn đồng nếu x>3. Tính C(3), C(5), viết miền và giải thích vì sao không dùng 5x cho nhánh thứ hai.",
+    "answer_key": "D=[0;+∞); C(3)=18, C(5)=28 nghìn đồng. Phí thêm chỉ tính phần vượt 3 km.",
+    "worked_solution": "Miền quãng đường x≥0. Tại x=3, dùng nhánh đầu: C(3)=18. Tại x=5>3, C(5)=18+5·(5−3)=28. Phí nền là 18 nghìn đồng; chỉ phần vượt 3 km mới nhân 5. Nếu dùng 5x, C(5) sẽ bằng 25, sai mô hình.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "FUNCTION_PIECEWISE"
@@ -105,7 +108,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Chọn nhánh theo điều kiện của x; công thức này đã xuất hiện trong bài giảng."
+      "Xác định nhánh chứa mốc x=3; với x>3 chỉ tính thêm phần x−3."
     ],
     "rubric": null,
     "interaction": {
@@ -121,7 +124,8 @@
       }
     },
     "exposure": "EXPOSED_IN_KNOWLEDGE",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu áp dụng nhánh thứ hai ngay tại mốc, đọc dấu ≤ và chỉ tính phần vượt ngưỡng. Ôn Bài 15 mục 1.2.4; luyện THPT-G10-CHVI-TRY05."
   },
   {
     "item_id": "THPT-G10-B15-P03",
@@ -152,7 +156,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho hàm luôn tăng, tách |x+2| ở x=−2 và so hệ số của hai nhánh. Ôn Bài 15 mục 2.3; luyện THPT-G10-CHVI-TRY04."
   },
   {
     "item_id": "THPT-G10-B15-P04",
@@ -183,7 +188,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu bỏ phí nền hoặc lấy toàn bộ x nhân phí thêm, viết từng nhánh, giải rồi giao miền. Ôn Bài 15 mục 3.3; luyện THPT-G10-CHVI-TRY05."
   },
   {
     "item_id": "THPT-G10-B17-C01",
@@ -214,14 +220,15 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho Δ<0 là f<0, xét thêm dấu a hoặc hoàn thành bình phương. Ôn Bài 17 mục 2.1; luyện THPT-G10-CHVI-TRY11."
   },
   {
     "item_id": "THPT-G10-B17-C02",
     "content_version": "THPT-G10-CHVI-REVIEWED-20261028_AUTHOR_KEY_REVIEW_R01",
-    "stem": "g(x)=−3(x−2)². Khi nào g(x)=0? Có x nào làm g(x)>0 không?",
-    "answer_key": "g(x)=0 khi x=2; không có x để g(x)>0.",
-    "worked_solution": "g(x)=0 chỉ khi x=2; không có x làm g(x)>0. Bình phương không âm, nhân −3 được biểu thức không dương.",
+    "stem": "Cho g(x)=−2(x+1)². Tìm tập nghiệm của g(x)<0 và g(x)≤0; giải thích sự khác nhau.",
+    "answer_key": "g(x)<0: ℝ∖{−1}; g(x)≤0: ℝ.",
+    "worked_solution": "Bình phương không âm, nhân −2 luôn không dương. g(x)=0 khi và chỉ khi x=−1. Vì vậy g(x)<0 với mọi x≠−1; g(x)≤0 với mọi x thực. Dấu nghiêm loại nghiệm kép, dấu không nghiêm nhận nghiệm kép.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "QUAD_DOUBLE_ROOT_SIGN"
@@ -229,7 +236,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Xét dấu của (x−2)²."
+      "Xét khi bình phương bằng 0, rồi kiểm dấu nghiêm và không nghiêm."
     ],
     "rubric": null,
     "interaction": {
@@ -245,7 +252,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhận nghiệm kép trong bất đẳng thức nghiêm, kiểm giá trị bằng 0 tại nghiệm kép. Ôn Bài 17 mục 2.1; luyện THPT-G10-CHVI-TRY12."
   },
   {
     "item_id": "THPT-G10-B17-P01",
@@ -276,7 +284,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu loại hai đầu mút, thế x=2,3 và kiểm dấu ≤. Ôn Bài 17 mục 2.2; luyện THPT-G10-CHVI-TRY13."
   },
   {
     "item_id": "THPT-G10-B17-P02",
@@ -307,7 +316,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chọn miền ngoài hai nghiệm, thử x=0 và kiểm dấu hệ số a âm. Ôn Bài 17 mục 2.2; luyện THPT-G10-CHVI-TRY13."
   },
   {
     "item_id": "THPT-G10-B17-P03",
@@ -338,7 +348,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhận m=1, tìm nghiệm kép x=m+1 tại Δ=0, trái với >0. Ôn Bài 17 mục ví dụ mở rộng tham số; luyện THPT-G10-CHVI-TRY14."
   },
   {
     "item_id": "THPT-G10-B17-P04",
@@ -369,7 +380,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu quên chiều dài dương, viết 0<x<15 trước khi giải bất phương trình diện tích. Ôn Bài 17 mục ví dụ rào vườn; luyện THPT-G10-CHVI-TRY15."
   },
   {
     "item_id": "THPT-G10-B18-C01",
@@ -636,7 +648,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu coi mọi m đều bậc hai, xét riêng hệ số x² bằng 0. Ôn Bài 16 mục 2.1; luyện THPT-G10-CHVI-TRY06."
   },
   {
     "item_id": "THPT-G10-B16-C02",
@@ -666,7 +679,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy x=−3 làm trục, hoàn thành bình phương và so khoảng cách đến trục. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY07."
   },
   {
     "item_id": "THPT-G10-B16-C03",
@@ -696,7 +710,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ nêu GTNN mà chưa chứng minh tập giá trị, tìm x ứng với mỗi y≥−3. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY09."
   },
   {
     "item_id": "THPT-G10-B16-C04",
@@ -726,14 +741,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng đỉnh ngoài thời gian được phép, kiểm miền t rồi so hai đầu mút. Ôn Bài 16 mục 3.1; luyện THPT-G10-CHVI-TRY10."
   },
   {
     "item_id": "THPT-G10-B16-C05",
     "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
     "stem": "Xét \\(y=x^2+6x+5\\). Hoàn thành bình phương và cho biết đỉnh, trục đối xứng, hướng mở.",
     "answer_key": "y=(x+3)²−4; I(−3;−4); trục x=−3; mở lên.",
-    "worked_solution": "\\(y=(x+3)^2-4\\), nên đỉnh \\(I(-3;-4)\\), trục \\(x=-3\\), parabol mở lên vì \\(a=1&gt;0\\).",
+    "worked_solution": "\\(y=(x+3)^2-4\\), nên đỉnh \\(I(-3;-4)\\), trục \\(x=-3\\), parabol mở lên vì \\(a=1>0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_02"
@@ -756,7 +772,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đổi dấu sai khi hoàn thành bình phương, khai triển (x+3)² để kiểm. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY07."
   },
   {
     "item_id": "THPT-G10-B16-P00",
@@ -801,7 +818,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm giao Ox với Oy, đặt y=0 rồi kiểm từng nghiệm. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY08."
   },
   {
     "item_id": "THPT-G10-B16-P01",
@@ -831,7 +849,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu loại k=−1 khỏi tập xác định, phân biệt điều kiện bậc hai với miền của đa thức. Ôn Bài 16 mục 2.1; luyện THPT-G10-CHVI-TRY06."
   },
   {
     "item_id": "THPT-G10-B16-P02",
@@ -861,14 +880,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm tung độ đỉnh với hoành độ, viết dạng bình phương và giải y=0 riêng. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY08."
   },
   {
     "item_id": "THPT-G10-B16-P03",
     "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
     "stem": "Xét \\(f(x)=x^2+2x-8\\). Tìm đỉnh, trục đối xứng, ba giao điểm với các trục; lấy thêm một cặp điểm đối xứng để phác parabol.",
-    "answer_key": "I(−1;−9); trục x=−1; giao Ox (−4;0),(2;0), giao Oy (0;−8); cặp đối xứng (0;−8),(−2;−8).",
-    "worked_solution": "Đỉnh \\(I(-1;-9)\\) vì \\(f(x)=(x+1)^2-9\\). Trục \\(x=-1\\), parabol mở lên. \\(f(x)=(x+4)(x-2)\\) nên giao \\(Ox\\): \\((-4;0)\\), \\((2;0)\\); giao \\(Oy\\): \\((0;-8)\\). Điểm đối xứng với \\((0;-8)\\) qua \\(x=-1\\) là \\((-2;-8)\\). Khi phác hình, đánh dấu đỉnh và các điểm vừa tìm, vẽ hai nhánh mở lên đối xứng qua trục \\(x=-1\\); không nối các điểm bằng đoạn thẳng.",
+    "answer_key": "I(−1;−9); trục x=−1; giao Ox (−4;0),(2;0), giao Oy (0;−8); cặp bổ sung (−3;−5),(1;−5).",
+    "worked_solution": "Đỉnh I(−1;−9) vì f(x)=(x+1)²−9. Trục x=−1, parabol mở lên. f(x)=(x+4)(x−2) nên giao Ox: (−4;0),(2;0); giao Oy: (0;−8). Chọn thêm x=−3 và x=1, cùng cách trục 2 đơn vị; f(−3)=f(1)=−5. Cặp (−3;−5),(1;−5) đều khác các giao điểm đã tìm. Phác đường cong trơn đối xứng qua x=−1, không nối bằng đoạn thẳng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_03"
@@ -891,7 +911,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng lại điểm giao trục làm cặp điểm bổ sung, chọn hai hoành độ khác đối xứng qua x=−1. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY08."
   },
   {
     "item_id": "THPT-G10-B16-P04",
@@ -921,14 +942,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy 7 làm GTLN, kiểm x=2 không thuộc đoạn rồi tính giá trị tại hai đầu. Ôn Bài 16 mục 2.2; luyện THPT-G10-CHVI-TRY09."
   },
   {
     "item_id": "THPT-G10-B16-P05",
     "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
     "stem": "Có 36 m hàng rào để rào ba cạnh hình chữ nhật dựa vào một bức tường thẳng. Gọi \\(x\\) (m) là chiều rộng vuông góc tường. Tìm miền của \\(x\\), diện tích lớn nhất và kích thước tương ứng.",
     "answer_key": "0<x<18 m; Smax=162 m²; kích thước 9 m × 18 m.",
-    "worked_solution": "\\(S(x)=x(36-2x)=-2(x-9)^2+162\\), với \\(0&lt;x&lt;18\\). Vì \\(-2(x-9)^2\\le0\\) và \\(9\\) thuộc miền, diện tích lớn nhất là \\(162\\,\\mathrm{m}^2\\) khi chiều rộng \\(x=9\\) m, cạnh còn lại \\(18\\) m.",
+    "worked_solution": "\\(S(x)=x(36-2x)=-2(x-9)^2+162\\), với \\(0<x<18\\). Vì \\(-2(x-9)^2\\le0\\) và \\(9\\) thuộc miền, diện tích lớn nhất là \\(162\\,\\mathrm{m}^2\\) khi chiều rộng \\(x=9\\) m, cạnh còn lại \\(18\\) m.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_05"
@@ -951,7 +973,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy cả hai cạnh bằng 18, lập 2x+y=36 và giữ x,y>0 trước khi tối ưu. Ôn Bài 16 mục mở rộng mô hình thực tế; luyện THPT-G10-CHVI-TRY10."
   },
   {
     "item_id": "THPT-G10-CHVI-TRY01",
