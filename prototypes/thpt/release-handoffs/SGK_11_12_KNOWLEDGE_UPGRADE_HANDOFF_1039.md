@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 41/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B09, còn B10–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 42/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B10, còn B11–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B09 CONTENT_READY; B10–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B10 CONTENT_READY; B11–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -54,7 +54,8 @@
 | 12 | B07 | [#1076](https://github.com/TMA2015/self-learning-math/pull/1076) | CONTENT_READY — đã bàn giao |
 | 12 | B08 | [#1077](https://github.com/TMA2015/self-learning-math/pull/1077) | CONTENT_READY — đã bàn giao |
 | 12 | B09 | [#1078](https://github.com/TMA2015/self-learning-math/pull/1078) | CONTENT_READY — đã bàn giao |
-| 12 | B10–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B10 | [#1079](https://github.com/TMA2015/self-learning-math/pull/1079) | CONTENT_READY — đã bàn giao |
+| 12 | B11–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -241,6 +242,16 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B08_FIG02_PYRAMID_AUTHORING_2
 | [#1078](https://github.com/TMA2015/self-learning-math/pull/1078) | `docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md` | `d42c02b13312fd3e3ec179388b36c4688842ef8e` | `4571bac678c36c4fb06d6a7fde45b86703f8ebce` | `56836232f4656c0cd3418cee0677280f150d3a69` |
 
 Asset delta tại `docs/assets/images/thpt/`: `FIG-G12-CHIII-B09-QUARTILES-R00.svg` từ `51fd46bc69ee7c4279e5024aa29dc0e83651a1a7` sang `e847496c567b7121d2121134401e36ead2040e1a`; `FIG-G12-CHIII-B09-RANGE-IQR-R00.svg` từ `b0cdf1b1f00c5d70525dc8c889da48211aeb8cac` sang `1a3cb6397d8ed8ca634724e2084c909747dee836`.
+
+### Toán 12 B10 — Phương sai và độ lệch chuẩn (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đọc văn bản [SGK KNTT Toán 12 tập 1 trang in 80–84](https://sqhx-hanoi.mediacdn.vn/91579363132710912/2025/11/18/1-toan-12-tap-1-kntt-17634587393041073129419.pdf), HĐ1, Ví dụ 1–3, Luyện tập 1, Vận dụng, chú ý mẫu số n−1, Em có biết CV và bài tập 3.4–3.8. Screenshot PDF cache miss, không tuyên bố đã kiểm ảnh gốc. Đọc mẫu Golden G10 B14. Bốn tab, hai mục đối ứng: phương sai và độ lệch chuẩn; sử dụng chúng đo độ rủi ro. Giải thích trung điểm đại diện, trung bình có trọng số, triệt tiêu độ lệch có dấu, bình phương và căn, chứng minh công thức rút gọn; mẫu số n và n−1, đơn vị, trường hợp s=0, so sánh mẫu gốc/ghép nhóm theo hai chiều sai lệch; so độ ổn định và rủi ro với cùng quy mô hoặc quy mô chênh lệch; CV đọc thêm đúng điều kiện. 6 ví dụ, 3 Vận dụng độc lập có Đối chiếu/Kiểm lỗi, 7 lỗi thường gặp. Sửa hình cũ theo thang tần số chung, giá trị đại diện và độ lệch chuẩn đúng bảng (A≈9,26; B≈16,04). 31 nhóm tự kiểm đạt, gồm 19 trường hợp tính độc lập bằng hai công thức, điều kiện, làm tròn, CV, mẫu số có dấu mũ, tọa độ SVG, cấu trúc; bảo toàn tập mã OUTCOME_ID/EX_ID/FIRST_TRY_ID/FIG_ROLE. Diff đúng canonical và một SVG riêng B10.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1079](https://github.com/TMA2015/self-learning-math/pull/1079) | `docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md` | `4ddf957c7fd1ebe3531c00b64074baecced0acb9` | `32f4eda1cfd151592eef5a35921ad872c1f644c4` | `12371f18f44610853ddca68a40908dee690a91ec` |
+
+Asset delta: `docs/assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg` từ `ddff354dca86b0cfa1a223a8245b87044a6e93b1` sang `120a1a0e7b360c8cde1742459174d747bca87de0`.
 
 ## Cách cập nhật
 
