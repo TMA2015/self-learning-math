@@ -164,7 +164,7 @@
 
     Với dạng tổng quát \(y=mx+n+k/(x-h)\), đặt \(u=x-h\), \(v=y-(mh+n)\). Khi ấy \(v=mu+k/u\) là hàm lẻ theo \(u\), nên giao điểm \(I(h;mh+n)\) của tiệm cận đứng và xiên là tâm đối xứng. Hai trục đối xứng là hai đường phân giác của các góc tạo bởi hai tiệm cận. Khác trường hợp tiệm cận ngang, các đường phân giác này không nhất thiết có hệ số góc \(\pm1\).
 
-    Để hình dung hai trục đối xứng, hãy vẽ hai tiệm cận rồi vẽ hai đường phân giác của các góc chúng tạo thành. Hai nhánh của hyperbol đối xứng qua mỗi đường phân giác ấy: khi gấp hình theo một đường phân giác, các điểm của đồ thị được ghép với các điểm tương ứng của đồ thị. Khi phác hình, dùng tính đối xứng này để kiểm tra vị trí các nhánh.
+    Để hình dung hai trục đối xứng, hãy vẽ hai tiệm cận rồi vẽ hai đường phân giác của các góc chúng tạo thành. Khi phản chiếu một điểm qua một đường phân giác, hai khoảng cách đến hai tiệm cận đổi chỗ cho nhau. Hai khoảng cách có dấu cũng đổi chỗ, có thể đồng thời đổi dấu. Tích của chúng không đổi; mà phương trình \(u(v-mu)=k\) chính là điều kiện tích hai khoảng cách có dấu bằng một hằng số (sau khi chia cho \(\sqrt{1+m^2}\)). Vì vậy điểm sau phản chiếu vẫn nằm trên đồ thị. Khi phác hình, dùng tính đối xứng này để kiểm tra vị trí các nhánh.
 
     **Vận dụng.** Khảo sát \(y=(x^2-x-1)/(x-2)\) và phác đồ thị.
 
