@@ -20,11 +20,12 @@ for(const n of [22,23,24,25,26,27])rows.push({n,grade:11,rel:"thpt-preview/sgk/l
 for(const n of [28,29,30,31,32,33])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-"+(n<=30?"viii":"ix")+"/bai-"+n});
 for(const n of [1,2,3,4,5])rows.push({n,grade:12,rel:"thpt-preview/sgk/lop-12/chuong-i/bai-"+n});
 for(const n of [6,7,8])rows.push({n,grade:12,rel:"thpt-preview/sgk/lop-12/chuong-ii/bai-"+n});
+for(const n of [9,10])rows.push({n,grade:12,rel:"thpt-preview/sgk/lop-12/chuong-iii/bai-"+n});
 const mode=process.env.SGK_FIRST_PAINT_MODE||"FULL";
-assert(["FULL","G11_W1","G11_W2","G11_W3","G11_W4","G11_W5","G11_W6","G11_W7","G12_W8","G12_W9"].includes(mode),"Unknown First Paint QA mode");
-const scoped=mode!=="FULL",w2=mode==="G11_W2",w3=mode==="G11_W3",w4=mode==="G11_W4",w5=mode==="G11_W5",w6=mode==="G11_W6",w7=mode==="G11_W7",w8=mode==="G12_W8",w9=mode==="G12_W9";
-const selected=w9?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=5):scoped?rows.filter(x=>x.grade===10&&x.n===10||w8&&x.grade===12&&x.n<=5||x.grade===11&&(w8?x.n===33:w7?x.n>=27:w6?x.n>=21&&x.n<=27:w5?x.n>=17&&x.n<=21:w4?x.n>=14&&x.n<=17:w3?x.n>=9&&x.n<=14:w2?x.n>=4&&x.n<=9:x.n<=4)):rows;
-const smoke=row=>row.grade===10||w9&&row.grade===12&&row.n===5||row.grade===11&&row.n===(w8?33:w7?27:w6?21:w5?17:w4?14:w3?9:w2?4:1);
+assert(["FULL","G11_W1","G11_W2","G11_W3","G11_W4","G11_W5","G11_W6","G11_W7","G12_W8","G12_W9","G12_W10"].includes(mode),"Unknown First Paint QA mode");
+const scoped=mode!=="FULL",w2=mode==="G11_W2",w3=mode==="G11_W3",w4=mode==="G11_W4",w5=mode==="G11_W5",w6=mode==="G11_W6",w7=mode==="G11_W7",w8=mode==="G12_W8",w9=mode==="G12_W9",w10=mode==="G12_W10";
+const selected=w10?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=8):w9?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=5&&x.n<=8):scoped?rows.filter(x=>x.grade===10&&x.n===10||w8&&x.grade===12&&x.n<=5||x.grade===11&&(w8?x.n===33:w7?x.n>=27:w6?x.n>=21&&x.n<=27:w5?x.n>=17&&x.n<=21:w4?x.n>=14&&x.n<=17:w3?x.n>=9&&x.n<=14:w2?x.n>=4&&x.n<=9:x.n<=4)):rows;
+const smoke=row=>row.grade===10||w10&&row.grade===12&&row.n===8||w9&&row.grade===12&&row.n===5||row.grade===11&&row.n===(w8?33:w7?27:w6?21:w5?17:w4?14:w3?9:w2?4:1);
 const chapterFor=n=>n<=4?"i":n<=7?"ii":n<=9?"iii":n<=14?"iv":n<=17?"v":n<=21?"vi":n<=27?"vii":n<=30?"viii":"ix";
 const headings=["1. Khám phá kiến thức","2. Kiến thức SGK",
  "3. Ví dụ","4. Lỗi thường gặp và cách tự khắc phục"];
@@ -60,11 +61,11 @@ for(const row of selected){
  for(const k of ["data-thpt-first-try-id","data-thpt-help-id"])
   assert.deepEqual(attr(html,k),attr(source,k),row.rel+" Q15 source-to-DOM "+k);
 }
-for(const rel of ["thpt-preview/sgk/lop-12/chuong-iii/bai-9"])
+for(const rel of ["thpt-preview/sgk/lop-12/chuong-iv/bai-11"])
  assert(!read("site-thpt-preview/"+rel+"/index.html").includes('data-sgk-golden-first-paint="true"'),
   rel+" excluded route modified");
-assert.equal(selected.length,scoped?(w9?5:w8?7:w7?8:w6?8:w5?6:w4?5:w2||w3?7:5):68);
-console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four headings, IDs, excluded G12 B09");
+assert.equal(selected.length,scoped?(w10?4:w9?5:w8?7:w7?8:w6?8:w5?6:w4?5:w2||w3?7:5):70);
+console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four headings, IDs, excluded G12 B11");
 
 (async()=>{
  for(const [engine,driver] of (scoped?[["Chromium",chromium]]:[["Chromium",chromium],["WebKit",webkit]])){
@@ -154,7 +155,7 @@ console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four hea
         assert(await t.nth(3).evaluate(el=>el.classList.contains("slm-g10-active-tab")),k+" active tab synchronization");
         const nav=page.locator("article nav[data-sgk-lesson-nav]");
         const chapter="/thpt-preview/sgk/lop-"+row.grade+"/chuong-";
-        const ch=n=>row.grade===12?(n<=5?"i":n<=8?"ii":"iii"):chapterFor(n);
+        const ch=n=>row.grade===12?(n<=5?"i":n<=8?"ii":n<=10?"iii":"iv"):chapterFor(n);
         const expected={"previous":chapter+ch(row.n-1)+"/bai-"+(row.n-1)+"/","next":chapter+ch(row.n+1)+"/bai-"+(row.n+1)+"/","practice":chapter+ch(row.n)+"/luyen-tap/","selfcheck":chapter+ch(row.n)+"/tu-kiem-tra-chuong/"};
         if(row.grade===12&&row.n===1){delete expected.previous;assert.equal(await nav.locator("span[aria-disabled=true]").count(),1,k+" first lesson disabled previous");}
         if(row.grade===11&&row.n===33){delete expected.next;assert.equal(await nav.locator("span[aria-disabled=true]").count(),1,k+" final lesson disabled next");}
@@ -170,7 +171,7 @@ console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four hea
    }
   }
  }finally{await browser.close()}
- assert.equal(checks,scoped?(w9?22:w8?34:w7?40:w6?40:w5?28:w4?22:w2||w3?34:22):reps.length*3*2);
+ assert.equal(checks,scoped?(w10?16:w9?22:w8?34:w7?40:w6?40:w5?28:w4?22:w2||w3?34:22):reps.length*3*2);
  console.log("PASS GOLDEN FIRST PAINT "+engine+": "+checks+
   " JS/no-JS modes/viewports; max top-of-page geometric delta "+
   maxGeometryDelta.toFixed(2)+"px");
