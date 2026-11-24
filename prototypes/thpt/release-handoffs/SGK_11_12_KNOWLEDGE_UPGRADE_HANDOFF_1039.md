@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 43/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B11, còn B12–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 44/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B12, còn B13–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B11 CONTENT_READY; B12–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B12 CONTENT_READY; B13–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -56,7 +56,8 @@
 | 12 | B09 | [#1078](https://github.com/TMA2015/self-learning-math/pull/1078) | CONTENT_READY — đã bàn giao |
 | 12 | B10 | [#1079](https://github.com/TMA2015/self-learning-math/pull/1079) | CONTENT_READY — đã bàn giao |
 | 12 | B11 | [#1080](https://github.com/TMA2015/self-learning-math/pull/1080) | CONTENT_READY — đã bàn giao |
-| 12 | B12–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B12 | [#1081](https://github.com/TMA2015/self-learning-math/pull/1081) | CONTENT_READY — đã bàn giao |
+| 12 | B13–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -263,6 +264,16 @@ Asset delta: `docs/assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg` từ `dd
 | [#1080](https://github.com/TMA2015/self-learning-math/pull/1080) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md` | `8a8236025b63b633261c482210f017d12ab04cee` | `f3fc0f654a21af7ec72de657643ef97488413dcb` | `136e34f376b8281eb1023d1583d18efaf0baa96f` |
 
 Asset delta: thêm `docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261124.svg` (blob `cb98c0d7e33eab90f1b1fd4e09e6dba925539e25`). Không chỉnh sửa PNG cũ.
+
+### Toán 12 B12 — Tích phân (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đọc văn bản [SGK KNTT Toán 12 tập 2, trang in 12–18](https://sqhx-hanoi.mediacdn.vn/91579363132710912/2025/11/18/2-toan-12-tap-2-kntt-17634587393353827478.pdf), HĐ1–4, Ví dụ 1–6, Luyện tập 1–4, Vận dụng 1–2, bài tập 4.8–4.13; screenshot PDF cache miss, không tuyên bố đã kiểm ảnh nguồn. Đối chiếu mẫu Golden G10 B16 và B19. Bốn tab, hai mục đối ứng: Khái niệm tích phân; Tính chất của tích phân. Dẫn dắt từ diện tích hình thang và hàm diện tích dưới parabol, kẹp bằng hai hình chữ nhật với h dương/âm; định nghĩa hiệu nguyên hàm không phụ thuộc C, biến giả, điều kiện liên tục, quy ước cận và ý nghĩa hình học; tuyến tính, ghép đoạn, trị tuyệt đối, độ dịch chuyển/quãng đường, lợi nhuận biên, lưu lượng thực, giá trị trung bình (phân biệt trung bình theo bán kính và theo mặt cắt). 10 ví dụ, 6 Vận dụng có Đối chiếu/Kiểm lỗi, 7 lỗi thực chất. 37 nhóm tự kiểm đạt, gồm tính lại nguyên hàm và kiểm độc lập tích phân số Simpson, các giới hạn kẹp, kết quả, cấu trúc, tọa độ hình và bảo toàn tập OUTCOME_ID/FIRST_TRY_ID. Hai SVG mới minh họa đạo hàm hàm diện tích và tích phân có dấu; PNG cũ giữ nguyên trong kho. Diff chỉ canonical và hai SVG riêng B12.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1081](https://github.com/TMA2015/self-learning-math/pull/1081) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md` | `7faaacd5b9e7379ed273053e87fffc0705c80a6f` | `2ea14427518e58acb03e85d64dcc6b18d55f8798` | `3203313ad151cb44fb6264dcbe896e01b6f30fe0` |
+
+Asset delta tại `docs/assets/images/thpt/`: `G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg` (`299037dee91e0c91db3e5c911982bbebbb514ae0`); `G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg` (`b04dafd5b4ff5f56be0893d3a52bba5121b64808`).
 
 ## Cách cập nhật
 
