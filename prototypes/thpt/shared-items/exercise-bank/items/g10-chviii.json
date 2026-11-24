@@ -338,7 +338,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng 4⁴, mỗi chữ chỉ được dùng một lần; số lựa chọn giảm sau mỗi bước. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY05."
+    "remediation": "Nếu dùng 4⁴ hoặc quên điều kiện T không đứng đầu, đếm hoán vị rồi trừ các dãy có T đứng đầu; mỗi chữ chỉ xuất hiện một lần. Ôn Bài 24 §2.1; luyện THPT-G10-CHVIII-TRY05."
   },
   {
     "item_id": "THPT-G10-B24-P04",
@@ -498,16 +498,16 @@
   {
     "item_id": "THPT-G10-B25-P03",
     "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
-    "stem": "Tìm hệ số của x² trong (1+3x)⁴−(1−3x)⁴. Giải thích vì sao không cần khai triển hết.",
-    "answer_key": "0.",
-    "worked_solution": "Hệ số x² của hai nhị thức lần lượt là C(4,2)·3²=54 và C(4,2)·(−3)²=54. Khi trừ, chúng triệt tiêu: 54−54=0. Chỉ cần tính hệ số của đúng bậc cần tìm.",
+    "stem": "Tìm hệ số của x³ trong (1+3x)⁴−(1−3x)⁴. Giải thích dấu của từng hệ số trước khi trừ.",
+    "answer_key": "216.",
+    "worked_solution": "Hệ số x³ trong (1+3x)⁴ là C(4,3)·3³=108; trong (1−3x)⁴ là C(4,3)·(−3)³=−108. Khi trừ hai nhị thức, hệ số cần tìm là 108−(−108)=216. Chỉ tính hệ số bậc 3, không cần khai triển hết.",
     "skill_ids": [
       "BINOMIAL_COMPOSITE_COEFF"
     ],
     "problem_type_id": null,
     "difficulty": "BASE",
     "hints": [
-      "Tính hệ số x² ở từng nhị thức; lưu ý (−3)²=3²."
+      "Tính hệ số x³ ở mỗi nhị thức; giữ dấu của (−3)³."
     ],
     "rubric": null,
     "interaction": {
@@ -524,7 +524,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ 3², mỗi lần chọn 3x đóng góp cả hệ số 3. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY09."
+    "remediation": "Nếu hai hệ số triệt tiêu, kiểm số mũ 3 lẻ nên (−3)³ âm; trừ số âm thành cộng. Ôn Bài 25 §2.4; luyện THPT-G10-CHVIII-TRY10."
   },
   {
     "item_id": "THPT-G10-B25-P04",
