@@ -83,7 +83,7 @@
         \(x^2=x\) cho \(x=0,1\). Trong \((0;1)\), \(x>x^2\); trong \((1;2)\), \(x^2>x\). Vì thế
         \[
         S=\int_0^1(x-x^2)\,dx+\int_1^2(x^2-x)\,dx
-        =\frac16+\frac56=\frac76.
+        =\frac16+\frac56=1.
         \]
 
     ??? tip "Kiểm lỗi"
