@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 47/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B15, còn B16–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 48/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B16, còn B17–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B15 CONTENT_READY; B16–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B16 CONTENT_READY; B17–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -60,7 +60,8 @@
 | 12 | B13 | [#1082](https://github.com/TMA2015/self-learning-math/pull/1082) | CONTENT_READY — đã bàn giao |
 | 12 | B14 | [#1083](https://github.com/TMA2015/self-learning-math/pull/1083) | CONTENT_READY — đã bàn giao |
 | 12 | B15 | [#1084](https://github.com/TMA2015/self-learning-math/pull/1084) | CONTENT_READY — đã bàn giao |
-| 12 | B16–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B16 | [#1085](https://github.com/TMA2015/self-learning-math/pull/1085) | CONTENT_READY — đã bàn giao |
+| 12 | B17–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -307,6 +308,16 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B14_FIG01_NORMAL_AUTHORING_20
 | [#1084](https://github.com/TMA2015/self-learning-math/pull/1084) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md` | `abbf7070d12277e0ce66f5ba30fc6b80739268d9` | `05a81b707824146d6829ef385091dd4046bbe8fe` | `c5039e541a4b345cfdb9dd236ffcfd8f3179d0ec` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B15_FIG01_PARAMETER_AUTHORING_20261124.svg` (`2d785967971d3412c23a4e4b408cb942bf4129aa`); `G12_B15_FIG02_SKEW_PERP_AUTHORING_20261124.svg` (`a9ef2806c8a28050570ed78bd3c8eb87d8944335`).
+
+### Toán 12 B16 — Công thức tính góc trong không gian (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đọc văn bản [SGK KNTT Toán 12 tập 2 trang in 50–53](https://sqhx-hanoi.mediacdn.vn/91579363132710912/2025/11/18/2-toan-12-tap-2-kntt-17634587393353827478.pdf), HĐ1–3, Ví dụ 1–4, Luyện tập 1–3, Vận dụng và bài tập 5.20–5.24. Screenshot PDF cache miss; không tuyên bố kiểm ảnh gốc. Đối chiếu Golden G10 B19. Bốn tab, ba mục đúng SGK: công thức tính góc giữa hai đường thẳng, giữa đường và mặt phẳng, giữa hai mặt phẳng. Giải thích trị tuyệt đối khi đảo chiều vectơ; hình chiếu và góc phụ để hiểu sin; thiết diện vuông góc giao tuyến để hiểu cos pháp tuyến; điều kiện vectơ khác không, góc 0/90 độ, phân biệt góc và vị trí, độ dốc phần trăm, tham số hai nghiệm, mái và tấm nghiêng. Quy ước DEG và làm tròn đến một chữ số thập phân. 7 ví dụ, 3 Vận dụng có Đối chiếu/Kiểm lỗi, 7 lỗi thường gặp. Ba công thức khung KEY_FORMULA trung tính, một recap canonical. Ba SVG riêng B16 dựng từ góc/tọa độ chính xác; hai PNG cũ giữ nguyên, connector không giải mã được nên không tuyên bố đã quan sát nội dung. 34 nhóm tự kiểm đạt: kết quả góc, tích vô hướng/tích có hướng, trường hợp biên, đổi chiều/nhân vectơ, nghiệm tham số, hình học SVG, mã và cấu trúc. Bảo toàn OUTCOME_ID/FIRST_TRY_ID. Diff chỉ canonical và ba SVG của B16.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1085](https://github.com/TMA2015/self-learning-math/pull/1085) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md` | `f25a04145d3101793fae97e858581337034deaff` | `b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d` | `8e9b245d157498244e5408bd96c7b34fde170978` |
+
+Asset delta tại `docs/assets/images/thpt/`: `G12_B16_FIG01_LINE_ANGLE_AUTHORING_20261124.svg` (`27b811c2e6d4293178539f91821354e011be4636`); `G12_B16_FIG02_LINE_PLANE_AUTHORING_20261124.svg` (`621bba914692f6b0787b11ac57934c8df7eabb27`); `G12_B16_FIG03_PLANE_ANGLE_AUTHORING_20261124.svg` (`6b0674ed7c66f9822d162dcf04f0f9671b8039b1`).
 
 ## Cách cập nhật
 
