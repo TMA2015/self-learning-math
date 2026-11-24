@@ -36,6 +36,8 @@
 
     Nếu hàm số \(f\) có đạo hàm trên một khoảng và **hàm \(f'\) cũng có đạo hàm** tại điểm đang xét, thì \(f''\) tồn tại tại điểm đó. Việc \(f'\) tồn tại chưa tự bảo đảm \(f''\) tồn tại; để lấy đạo hàm lần hai, phải kiểm rằng **lần một còn khả vi** ở điểm ấy.
 
+    Chẳng hạn, hàm \(f(x)=x|x|\) có \(f'(x)=2|x|\) với mọi \(x\) (tại \(0\), thương sai phân là \(|h|\to0\)). Nhưng \(f'\) có góc nhọn tại \(0\): độ dốc bên trái là \(-2\), bên phải là \(2\). Vì vậy \(f''(0)\) không tồn tại, dù \(f'(0)=0\).
+
     Ta cũng có thể lặp lại thao tác với hàm lượng giác hoặc hàm mũ. Ví dụ \(y=\sin(2x+\pi/4)\) có
 
     \[
@@ -45,28 +47,28 @@
 
     Mỗi lần lấy đạo hàm của hàm hợp đều phải nhân đạo hàm của **hàm bên trong**, ở đây là \(2\). Vì thế hệ số ở đạo hàm cấp hai là \(4\), và dấu âm xuất hiện khi đạo hàm của cos.
 
-    **Vận dụng.** Tính đạo hàm cấp hai của \(f(x)=xe^{2x}\). Em cần dùng quy tắc gì ở mỗi lần và vì sao kết quả không chỉ là \(2e^{2x}\)?
+    **Vận dụng.** Tính đạo hàm cấp hai của \(f(x)=xe^{3x}\). Em cần dùng quy tắc gì ở mỗi lần?
 
     ??? question "Đối chiếu"
 
-        **Phân tích.** \(f\) là tích của \(x\) và \(e^{2x}\). Sau khi lấy đạo hàm lần một, kết quả vẫn là tích của hai hàm; do đó phải dùng **quy tắc tích** ở lần hai, cùng với quy tắc hàm hợp của \(e^{2x}\).
+        **Phân tích.** \(f\) là tích của \(x\) và \(e^{3x}\). Sau lần một, kết quả vẫn có thể viết dưới dạng tích, nên phải dùng tiếp quy tắc tích và quy tắc hàm hợp.
 
         **Lời giải.** Lần một:
 
         \[
-        f'(x)=e^{2x}+2xe^{2x}=(1+2x)e^{2x}.
+        f'(x)=e^{3x}+3xe^{3x}=(1+3x)e^{3x}.
         \]
 
         Lần hai:
 
         \[
-        f''(x)=2e^{2x}+2e^{2x}+4xe^{2x}
-        =(4+4x)e^{2x}.
+        f''(x)=3e^{3x}+3(1+3x)e^{3x}
+        =(6+9x)e^{3x}.
         \]
 
-        **Kiểm lại:** \(f'(0)=1\), \(f''(0)=4\). Thay \(x=0\) vào kết quả cuối cho đúng \(4\).
+        **Kiểm lại:** Tính theo dạng tổng \(f'=e^{3x}+3xe^{3x}\) cũng cho \(f''=3e^{3x}+3e^{3x}+9xe^{3x}\).
 
-        **Kiểm lỗi:** Nếu chỉ viết \(f''=2e^{2x}\), em đã đạo hàm **một** số hạng của \(f'\) nhưng bỏ quên số hạng \(2xe^{2x}\).
+        **Kiểm lỗi:** Nếu chỉ viết \(f''=3e^{3x}\), em đã bỏ qua đạo hàm của số hạng \(3xe^{3x}\).
 
     ### 1.2. Ý nghĩa cơ học của đạo hàm cấp hai
 
@@ -85,25 +87,16 @@
 
     Vì vậy, đạo hàm hai lần có một cách hiểu rất cụ thể: **tọa độ → vận tốc → gia tốc**. Nếu tọa độ tính bằng mét (m) và thời gian tính bằng giây (s), thì vận tốc đo bằng m/s và gia tốc đo bằng m/s². Đơn vị thứ hai xuất hiện vì ta lấy **đạo hàm của vận tốc theo thời gian**.
 
-    Chẳng hạn, với \(s(t)=2t^2+\frac12t^4\) (m), ta có \(v(t)=4t+2t^3\) (m/s) và \(a(t)=4+6t^2\) (m/s²). Tại \(t=4\), gia tốc \(a(4)=4+6\cdot16=100\) m/s². Không được lấy chính \(s(4)\) hoặc \(v(4)\) làm gia tốc vì đó là các đại lượng khác nhau.
+    Chẳng hạn, với \(s(t)=3t^2+t^3\) (m), ta có \(v(t)=6t+3t^2\) (m/s) và \(a(t)=6+6t\) (m/s²). Tại \(t=2\), gia tốc \(a(2)=18\) m/s². Không được lấy chính \(s(2)\) hoặc \(v(2)\) làm gia tốc vì đó là các đại lượng khác nhau.
 
-    Một chuyển động dao động cũng có gia tốc dù tại một số thời điểm vận tốc bằng \(0\). Ví dụ con lắc lò xo có tọa độ
-
-    \[
-    x(t)=4\cos(2\pi t+\pi/3)\quad(\text{cm}),
-    \]
-
-    với \(t\) đo bằng giây. Lấy đạo hàm hai lần:
+    Một chuyển động dao động cũng có gia tốc dù tại một số thời điểm vận tốc bằng \(0\). Ví dụ vật dao động có tọa độ \(x(t)=3\cos(2\pi t)\) (cm), với \(t\) tính bằng giây. Khi ấy
 
     \[
-    v(t)=-8\pi\sin(2\pi t+\pi/3)\quad(\text{cm/s}),
+    v(t)=-6\pi\sin(2\pi t),\qquad
+    a(t)=-12\pi^2\cos(2\pi t).
     \]
 
-    \[
-    a(t)=-16\pi^2\cos(2\pi t+\pi/3)\quad(\text{cm/s}^2).
-    \]
-
-    Tại \(t=5\), \(\cos(10\pi+\pi/3)=1/2\), nên \(a(5)=-8\pi^2\approx-79\) cm/s². Dấu âm chỉ gia tốc hướng **ngược chiều dương đã chọn**; nó **không tự nói rằng vật chậm dần**.
+    Tại \(t=1\), vật có \(v(1)=0\) cm/s nhưng \(a(1)=-12\pi^2\) cm/s². Vật đang ở vị trí biên, vận tốc bằng \(0\) trong chốc lát rồi đổi chiều. Gia tốc âm chỉ hướng ngược chiều dương đã chọn; nó **không tự nói rằng vật chậm dần**.
 
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg" alt="Hai ô đồ thị riêng biệt: bên trái vận tốc v(t)=3t²−6t+2 có dạng parabol, bên phải gia tốc a(t)=6t−6 có dạng đường thẳng"><figcaption><strong>Đọc hình:</strong> hình bên trái mô tả \(v(t)=3t^2-6t+2\), hình bên phải mô tả \(a(t)=6t-6\). Khi vận tốc đạt giá trị nhỏ nhất tại \(t=1\), gia tốc bằng \(0\) vì độ dốc đồ thị \(v\) lúc ấy bằng \(0\). <strong>Hai ô có trục dọc và đơn vị khác nhau</strong>, nên không so sánh độ cao hai đường; hãy so dấu của từng đại lượng và quan hệ \(a=v'\).</figcaption></figure>
 
@@ -137,13 +130,7 @@
 
     **Cách tính:** Lấy đạo hàm lần thứ nhất để được \(f'\). Sau đó tiếp tục lấy đạo hàm của **toàn bộ \(f'\)**, không bình phương kết quả. Nếu hàm số có đạo hàm lần thứ nhất nhưng \(f'\) không khả vi tại điểm cần xét, thì không thể nói \(f''\) tồn tại tại điểm ấy.
 
-    **Ví dụ minh họa.** Với \(f(x)=x^2+e^{2x-1}\), ta có \(f'(x)=2x+2e^{2x-1}\); lấy đạo hàm lần nữa được
-
-    \[
-    f''(x)=2+4e^{2x-1}.
-    \]
-
-    Do đó \(f''(0)=2+4/e\). Chú ý **hệ số \(2\)** của hàm trong \(2x-1\) phải được nhân ở cả hai lần lấy đạo hàm phần mũ.
+    **Ví dụ minh họa.** Với \(f(x)=x^3+e^x\), ta có \(f'(x)=3x^2+e^x\), rồi \(f''(x)=6x+e^x\). Do đó \(f''(0)=1\).
 
     ### 2.2. Ý nghĩa cơ học của đạo hàm cấp hai
 
@@ -155,7 +142,7 @@
 
     **Điều kiện và cách đọc kết quả:** Nếu gia tốc âm, vật không nhất thiết đang chậm dần; phải xem vận tốc đang hướng nào. Với \(v\ne0\), hai dấu \(v,a\) **cùng nhau** thì tốc độ đang tăng tại thời điểm đó, **trái nhau** thì tốc độ đang giảm. Khi vận tốc bằng \(0\), không dùng quy tắc dấu này một cách máy móc; cần xét chuyển động gần thời điểm ấy. Khi mô hình chỉ đúng trong một khoảng thời gian, chỉ giải thích các kết quả trong khoảng có ý nghĩa đó.
 
-    **Ví dụ minh họa.** Với \(s(t)=2t^2+\tfrac12t^4\) (m), ta có \(v(t)=4t+2t^3\) (m/s), \(a(t)=4+6t^2\) (m/s²), nên \(a(4)=100\) m/s².
+    **Ví dụ minh họa.** Với \(s(t)=5t^2+2t\) (m), ta có \(v(t)=10t+2\) (m/s) và \(a(t)=10\) m/s² tại mọi thời điểm nằm trong khoảng áp dụng của mô hình.
 
 === "Ví dụ"
 
