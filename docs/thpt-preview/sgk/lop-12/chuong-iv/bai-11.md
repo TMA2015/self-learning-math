@@ -15,7 +15,7 @@
     <!-- OUTCOME_ID: G12-CHIV-B11-O01 -->
     Hãy nhớ \((t^2)'=2t\). Vì vậy \(s(t)=t^2\) là một đáp án. Nhưng \(s(t)=t^2+3\) cũng có đạo hàm \(2t\), bởi đạo hàm của 3 bằng 0. Trong toán học, một hàm \(F\) có đạo hàm bằng \(f\) tại mọi điểm thuộc khoảng đang xét được gọi là một nguyên hàm của \(f\) trên khoảng ấy.
 
-    Muốn kiểm một hàm có phải nguyên hàm hay không, chỉ cần lấy đạo hàm. Ví dụ \(F(x)=x^3/3-2x\) có đạo hàm \(x^2-2\), nên là một nguyên hàm của \(f(x)=x^2-2\) trên \(\mathbb R\). Còn \(G(x)=x^3/3+2x\) có đạo hàm \(x^2+2\), không đúng. Việc hai hàm đạo hàm bằng nhau tại một điểm riêng lẻ chưa đủ chứng minh chúng bằng nhau trên cả khoảng.
+    Muốn kiểm một hàm có phải nguyên hàm hay không, chỉ cần lấy đạo hàm. Ví dụ \(F(x)=x^3/3-2x\) có đạo hàm \(x^2-2\), nên là một nguyên hàm của \(f(x)=x^2-2\) trên \(\mathbb R\). Còn \(G(x)=x^3/3+2x\) có đạo hàm \(x^2+2\), không đúng. Muốn chứng minh \(F\) là nguyên hàm của \(f\), phải kiểm tra \(F'(x)=f(x)\) tại mọi điểm của khoảng đang xét. Hai biểu thức trùng nhau tại một điểm riêng lẻ chưa đủ.
 
     <!-- OUTCOME_ID: G12-CHIV-B11-O02 -->
     Thực ra mọi hàm \(F(x)=x^2+C\), với \(C\) là hằng số thực, đều có đạo hàm bằng \(2x\). Quan sát đồ thị ba trường hợp:
@@ -182,7 +182,7 @@
     | \(0\) | \(0\) | \(\mathbb R\) |
     | \(1\) | \(x\) | \(\mathbb R\) |
     | \(x^\alpha\) | \(\dfrac{x^{\alpha+1}}{\alpha+1}\) | \(\alpha\ne-1,\ x>0\); mở rộng theo miền với số mũ nguyên |
-    | \(\dfrac1x\) | \(\ln|x|\) | Từng khoảng không chứa 0 |
+    | \(\dfrac1x\) | \(\ln\lvert x\rvert\) | Từng khoảng không chứa 0 |
     | \(\cos x\) | \(\sin x\) | \(\mathbb R\) |
     | \(\sin x\) | \(-\cos x\) | \(\mathbb R\) |
     | \(\dfrac1{\cos^2x}\) | \(\tan x\) | Khoảng không chứa \(\pi/2+k\pi,\ k\in\mathbb Z\) |
