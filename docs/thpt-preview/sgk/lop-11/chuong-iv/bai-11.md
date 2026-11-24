@@ -20,7 +20,7 @@
 
     ### 1.1. Vị trí tương đối của hai đường thẳng
 
-    Hãy tưởng tượng hai chiếc thước cùng nằm trên một bàn phẳng: chúng có thể **trùng**, **cắt** hoặc **song song**. Nếu nhấc một thước ra khỏi mặt bàn và nghiêng ở độ cao khác, xuất hiện khả năng thứ tư: hai đường thẳng **chéo nhau**, nghĩa là không có mặt phẳng nào chứa cả hai. Đó là sự khác biệt căn bản giữa hình học phẳng và hình học không gian.
+    Hãy tưởng tượng hai chiếc thước cùng nằm trên một bàn phẳng: chúng có thể **trùng**, **cắt** hoặc **song song**. Nếu đặt thước thứ hai nằm ngang ở độ cao khác, hướng không song song với thước thứ nhất, thì hai đường chứa hai thước không gặp nhau và không song song. Đó là khả năng thứ tư: hai đường thẳng **chéo nhau**, nghĩa là không có mặt phẳng nào chứa cả hai. Đó là sự khác biệt căn bản giữa hình học phẳng và hình học không gian.
 
     Hai đường thẳng \(a,b\) gọi là **đồng phẳng** nếu có một mặt phẳng chứa cả hai. Hai đường **phân biệt và đồng phẳng, không có điểm chung** thì song song, viết \(a\parallel b\). Hai đường **không đồng phẳng** thì chéo nhau. Vì vậy, để khẳng định \(a\parallel b\) từ việc chúng không cắt nhau, ta còn phải có căn cứ chúng **cùng nằm trong một mặt phẳng**. Nếu chúng **trùng nhau**, không được gọi là song song theo định nghĩa hai đường phân biệt.
 
@@ -46,7 +46,7 @@
 
     Nếu \(a\parallel c\) và \(b\parallel c\), với \(a,b\) **phân biệt**, chúng có cùng hướng và theo tính chất SGK thì \(a\parallel b\). Không được bỏ chữ “phân biệt”: hai đường \(a,b\) có thể trùng nhau và cùng song song với \(c\); khi đó \(a=b\), không phải \(a\parallel b\).
 
-    Tiếp tục nhìn vào **ba mặt phẳng** \((P),(Q),(R)\) đôi một cắt nhau theo ba đường **phân biệt** \(a,b,c\). Nếu hai trong ba giao tuyến gặp tại \(M\), thì \(M\) thuộc cả ba mặt, nên cũng thuộc giao tuyến thứ ba; ba đường **đồng quy**. Còn nếu không có điểm chung như vậy, cả ba đường phải **đôi một song song**. Kết luận đó được SGK gọi rõ là **Định lí về ba đường giao tuyến**.
+    Tiếp tục nhìn vào **ba mặt phẳng** \((P),(Q),(R)\) đôi một cắt nhau theo ba đường **phân biệt** \(a,b,c\). Nếu hai trong ba giao tuyến gặp tại \(M\), thì \(M\) thuộc cả ba mặt, nên cũng thuộc giao tuyến thứ ba; ba đường **đồng quy**. Mỗi cặp giao tuyến cùng nằm trong một trong ba mặt phẳng đã cho. Nếu không có điểm chung như vậy, từng cặp đường phân biệt không cắt nhau trong cùng mặt phẳng, nên cả ba đường phải **đôi một song song**. Kết luận đó được SGK gọi rõ là **Định lí về ba đường giao tuyến**.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B11_TWO_PLANES_PARALLEL_LINES_AUTHORING_20261123.svg" alt="Hai mặt phẳng P và Q giao nhau theo đường c song song với đường a trên P và đường b trên Q"><figcaption><strong>Đọc hình:</strong> hình riêng minh họa **hệ quả** của định lí: \((P)\cap(Q)=c\), đường \(a\subset(P)\) song song với \(b\subset(Q)\), thì giao tuyến \(c\) khi có sẽ song song với cả hai hoặc trùng một trong hai đường. Trong hình minh họa này, ba đường phân biệt và song song.</figcaption></figure>
 
@@ -84,7 +84,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lí — Ba đường giao tuyến</strong><p>Nếu <strong>ba mặt phẳng đôi một cắt nhau theo ba giao tuyến phân biệt</strong>, thì ba giao tuyến ấy <strong>đồng quy</strong> hoặc <strong>đôi một song song</strong> với nhau.</p></div>
 
-    **Chú ý SGK — Hệ quả về giao tuyến:** Nếu hai mặt phẳng chứa hai đường thẳng **song song** với nhau, thì giao tuyến của hai mặt phẳng ấy (**nếu có**) song song với hai đường thẳng đó **hoặc trùng với một trong hai đường**. Không xóa điều kiện “nếu có”, không ép mọi trường hợp phải có ba đường phân biệt.
+    **Chú ý SGK — Hệ quả về giao tuyến:** Nếu hai mặt phẳng phân biệt lần lượt chứa hai đường thẳng **song song** với nhau, thì giao tuyến của hai mặt phẳng ấy (**nếu có**) song song với hai đường thẳng đó **hoặc trùng với một trong hai đường**. Không xóa điều kiện “nếu có”, không ép mọi trường hợp phải có ba đường phân biệt.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B11_TWO_PLANES_PARALLEL_LINES_AUTHORING_20261123.svg" alt="Hai mặt phẳng chứa hai đường song song và giao nhau theo đường thứ ba cùng phương"><figcaption><strong>Tra hình:</strong> \(a\subset(P)\), \(b\subset(Q)\), \(a\parallel b\), \((P)\cap(Q)=c\). Trong hình cả ba đường khác nhau và \(c\parallel a\parallel b\), minh họa nhánh “song song” của hệ quả.</figcaption></figure>
 
