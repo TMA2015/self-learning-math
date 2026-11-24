@@ -1294,19 +1294,19 @@
     }
   ],
   "counts": {
-    "formative_items": 1779,
+    "formative_items": 1792,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3886,
+    "placements": 3899,
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
     "legacy_combined_answer_items": 687,
     "topic_knowledge_first_try": 170,
-    "sgk_knowledge_first_try": 160,
-    "authoring_answer_draft_items": 5
+    "sgk_knowledge_first_try": 173,
+    "authoring_answer_draft_items": 18
   },
   "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported; G11 33 Knowledge pages scanned, 32 pages with unkeyed blocks remain mapping pending; G12 19 Knowledge pages scanned; all 79 SGK pages inventoried, source mapping not complete; G11 B02–B07 16 unkeyed source tasks imported with canonical KFT IDs, partial matches deferred",
   "projection_field_differences": [
@@ -4260,25 +4260,28 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md",
         "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
         "markers": 0,
-        "imported": 0,
+        "imported": 2,
         "reused": 1,
         "local_source_ids": [],
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 3,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "Tự thử A",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B01-C03",
               "THPT-G12-CHI-B04-P02"
             ],
             "reason": "General sign change at x0 versus two fixed critical points and explicit continuity assumptions.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B01-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           },
           {
             "order": 2,
@@ -4295,13 +4298,16 @@
           {
             "order": 3,
             "locator": "Tự thử C",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B01-P01"
             ],
             "reason": "Same disconnected-domain principle, existing pole x=2; source pole x=1 and no specific formula to evaluate at 0 and 2.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B01-KFT03",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -4312,24 +4318,27 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
         "blob": "d6e517a980ec9259345285964f4c42767faa6122",
         "markers": 0,
-        "imported": 0,
+        "imported": 2,
         "reused": 1,
         "local_source_ids": [],
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 3,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "Tự thử A",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B02-P01"
             ],
             "reason": "Source says endpoint value exceeds one local maximum, but no evidence it is global maximum; missing sufficient hypotheses.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B02-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           },
           {
             "order": 2,
@@ -4346,13 +4355,16 @@
           {
             "order": 3,
             "locator": "Tự thử C",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B02-A01"
             ],
             "reason": "Same possible positive lengths for perimeter 24, existing asks optimization rather than why domain is necessary.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B02-KFT03",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -4363,25 +4375,28 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
         "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
         "markers": 0,
-        "imported": 0,
+        "imported": 2,
         "reused": 1,
         "local_source_ids": [],
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 3,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "Tự thử A",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B03-C01",
               "THPT-G12-CHI-B03-C02"
             ],
             "reason": "Source asks both asymptotes for 2+1/(x−4), candidate data and asks differ.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B03-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           },
           {
             "order": 2,
@@ -4398,13 +4413,16 @@
           {
             "order": 3,
             "locator": "Tự thử C",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B03-C03"
             ],
             "reason": "Source gives limiting difference to 2x+3, asks type; existing computes a specific different oblique asymptote.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B03-KFT03",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -4415,47 +4433,56 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
         "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
         "markers": 0,
-        "imported": 0,
+        "imported": 3,
         "reused": 0,
         "local_source_ids": [],
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 3,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "Tự thử A",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B04-C03",
               "THPT-G12-CHI-B04-P03"
             ],
             "reason": "Similar separate branches but existing formula/pole or requested task differs.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B04-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           },
           {
             "order": 2,
             "locator": "Tự thử B",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B04-P05"
             ],
             "reason": "Same cubic, existing additionally asks at x=3; source only x=0, do not conflate.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B04-KFT02",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           },
           {
             "order": 3,
             "locator": "Tự thử C",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B04-P01"
             ],
             "reason": "Different reciprocal function and center.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B04-KFT03",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -4466,60 +4493,72 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
         "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
         "markers": 0,
-        "imported": 0,
+        "imported": 4,
         "reused": 0,
         "local_source_ids": [],
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 4,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "Tự thử A",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B05-C02",
               "THPT-TOP09-P09"
             ],
             "reason": "Different motion function and evaluation.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B05-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           },
           {
             "order": 2,
             "locator": "Tự thử B",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B05-C03",
               "THPT-G11-CHIX-B31-P10"
             ],
             "reason": "Source asks unit million đồng per product, existing different units and numerical derivatives.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B05-KFT02",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           },
           {
             "order": 3,
             "locator": "Tự thử C",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B05-A01"
             ],
             "reason": "Source compares fencing constraint for four versus three sides; existing optimizes three-sided fence only. Requires context.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B05-KFT03",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           },
           {
             "order": 4,
             "locator": "Tự thử D",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-CHI-B05-C04",
               "THPT-G12-CHI-B05-P05"
             ],
             "reason": "Same cardboard dimensions but source asks why x=12 invalid; existing asks full domain or degenerate x=10.",
             "source_answer_present": false,
-            "source_answer_mode": "NO_DIRECT_REVEAL"
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B05-KFT04",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -5209,7 +5248,7 @@
     "g12_local_id_blocks": 20,
     "unkeyed_activity_blocks_g12": 20,
     "g12_local_id_reused": 2,
-    "g12_pending_mapping_blocks": 35,
+    "g12_pending_mapping_blocks": 22,
     "g12_partial_task_matches": [
       {
         "source_id": "B06-T01",
@@ -5243,12 +5282,13 @@
     "g12_mapping_review": {
       "reviewed_blocks": 40,
       "reused": 5,
-      "partial_matches": 16,
-      "no_exact_match_in_reviewed_shards": 19,
+      "partial_matches": 8,
+      "no_exact_match_in_reviewed_shards": 14,
       "unreviewed_blocks": 0,
-      "pending_mapping_blocks": 35,
+      "pending_mapping_blocks": 22,
       "scope": "G12 B01–B19; six same-grade chapter shards, relevant Topic candidates/first-try and ChI public selfcheck. Global exhaustiveness not claimed.",
-      "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+      "new_canonical_imported": 13
     },
     "unkeyed_id_assignment_note": "New canonical KFT IDs are scoped by grade, lesson and original source block order, assigned only to preexisting unkeyed tasks after source-task comparison. Existing original IDs are not changed. Candidate global uniqueness/semantic reconciliation and academic audit remain pending. No new math questions or solutions authored in this import."
   }
