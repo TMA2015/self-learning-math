@@ -9,7 +9,7 @@
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
 - **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: **51/51 bài đã bàn giao (100% phạm vi AUTHORING)**; Toán 12 B01–B19 hoàn thành 19/19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- **Toán 12 B01–B19: 19/19 CONTENT_READY, đã bàn giao đủ 19 nguồn canonical cho RELEASE.** Không còn bài nào trong phạm vi nâng cấp trang Kiến thức chưa bàn giao. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- **Toán 12 B01–B19: 19/19 CONTENT_READY, đã bàn giao đủ 19 nguồn canonical cho RELEASE.** Đã hoàn tất lượt hiệu chỉnh cuối theo rà soát owner 24/11; các commit/blob ở bảng nguồn từng bài là phiên bản sau hiệu chỉnh, thay thế snapshot trước lượt sửa. Không còn bài nào trong phạm vi nâng cấp trang Kiến thức chưa bàn giao. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -173,7 +173,7 @@ Kế thừa Academic/PED PASS của nhóm B10–B14 theo checkpoint review tại
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên | Asset delta |
 |---|---|---|---|---|---|
-| [#1069](https://github.com/TMA2015/self-learning-math/pull/1069) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md` | `05bf9eb5596654216972ef140d551ab4131fc121` | `64f6a142a88e8c4dd63dff3f7d2220787fcdec5c` | `bed6da8643ee1def36fd72e8ae20308a39ea0c1a` | Thêm `docs/assets/images/thpt/G12_B01_FIG02_READ_DERIVATIVE_AUTHORING_20261124.svg`, blob `4720ec1c26e8ecc6ff5707281b9aba3465d31df5`; hình cũ `e2696224533994826104e6c505d9dab26fc0a2e2` giữ nguyên. |
+| [#1069](https://github.com/TMA2015/self-learning-math/pull/1069) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md` | `a7a34538d94fa789a22ff1ab369b02131cfb3397` | `64f6a142a88e8c4dd63dff3f7d2220787fcdec5c` | `28f6b83ab28731f51667164fe5f239cb868b948c` | Thêm `docs/assets/images/thpt/G12_B01_FIG02_READ_DERIVATIVE_AUTHORING_20261124.svg`, blob `4720ec1c26e8ecc6ff5707281b9aba3465d31df5`; hình cũ `e2696224533994826104e6c505d9dab26fc0a2e2` giữ nguyên. |
 
 ### Toán 12 B02 — Giá trị lớn nhất và giá trị nhỏ nhất của hàm số (24/11/2026)
 
@@ -181,7 +181,7 @@ Kế thừa Academic/PED PASS của nhóm B10–B14 theo checkpoint review tại
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên | Asset delta |
 |---|---|---|---|---|---|
-| [#1070](https://github.com/TMA2015/self-learning-math/pull/1070) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md` | `52fc9557ea52d85afef734a43889e5ae1e21cc68` | `d6e517a980ec9259345285964f4c42767faa6122` | `fc8dd27dc1eddb605edfd62fc62a8a5c8ba84d54` | `docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg` từ `057991020c0f9349f160047cd87ae35ce03a87ef` sang `cd8c5bea9b17bb89aa0edcd40f49dd317d834c86`. |
+| [#1070](https://github.com/TMA2015/self-learning-math/pull/1070) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md` | `9cb7612bb99a0ae615e76288b366bfbec3b2499b` | `d6e517a980ec9259345285964f4c42767faa6122` | `b40ce4dad554e94a6cb88c5b5d20274f91e8c336` | `docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg` từ `057991020c0f9349f160047cd87ae35ce03a87ef` sang `cd8c5bea9b17bb89aa0edcd40f49dd317d834c86`. |
 
 ### Toán 12 B03 — Đường tiệm cận của đồ thị hàm số (24/11/2026)
 
@@ -189,7 +189,7 @@ Kế thừa Academic/PED PASS của nhóm B10–B14 theo checkpoint review tại
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên | Asset delta |
 |---|---|---|---|---|---|
-| [#1071](https://github.com/TMA2015/self-learning-math/pull/1071) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md` | `11ecbc31551892186edde669bb3092d1843ea754` | `02f4b8a446e89d824b7b08c833fc306ca9db02c6` | `e05c5c287381f018d5262f17ad23b890d1b40e6e` | Thêm `docs/assets/images/thpt/G12_B03_FIG02_OBLIQUE_AUTHORING_20261124.svg`, blob `62d2cf3e7604d331ea26ac7b49f863ae8793d97a`; SVG ngang/đứng giữ blob `802f01f5b8dce392e3a064a54efe33ae1aea44fc`. |
+| [#1071](https://github.com/TMA2015/self-learning-math/pull/1071) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md` | `4a41d97b09bae29d44ceb8ca7f35a873131fe0c8` | `02f4b8a446e89d824b7b08c833fc306ca9db02c6` | `be100bd245a9caaa511c98f88b5d76280d9f503f` | Thêm `docs/assets/images/thpt/G12_B03_FIG02_OBLIQUE_AUTHORING_20261124.svg`, blob `62d2cf3e7604d331ea26ac7b49f863ae8793d97a`; SVG ngang/đứng giữ blob `802f01f5b8dce392e3a064a54efe33ae1aea44fc`. |
 
 ### Toán 12 B04 — Khảo sát sự biến thiên và vẽ đồ thị của hàm số (24/11/2026)
 
@@ -197,7 +197,7 @@ Kế thừa Academic/PED PASS của nhóm B10–B14 theo checkpoint review tại
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1073](https://github.com/TMA2015/self-learning-math/pull/1073) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md` | `a44a9de86926411a21623e2ea10dc8dba1c02a7d` | `a9a9a8f823ee85fe53014150b5cda31201867a4d` | `bc7c1c97780e221a6ee4856f244f2d0548cc9a90` |
+| [#1073](https://github.com/TMA2015/self-learning-math/pull/1073) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md` | `d4740d45f44459acd95d3f92c6816274374c9695` | `a9a9a8f823ee85fe53014150b5cda31201867a4d` | `d3949a0120e7fd19a690a2ac6f7eddd25cc922f4` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B04_FIG03_QUADRATIC_AUTHORING_20261124.svg` (`432f122215bf6ea897f5d13b3eab7327cf14e9b9`); `G12_B04_FIG04_CUBIC_MONOTONE_AUTHORING_20261124.svg` (`a338c274f85e030033a524810639510e099989bf`); `G12_B04_FIG05_OBLIQUE_EXTREMA_AUTHORING_20261124.svg` (`9f800741b8d016e3039e6cff35721b22a6dc0a81`); `G12_B04_FIG06_OBLIQUE_MONOTONE_AUTHORING_20261124.svg` (`1f34ef45faeeaeaa38f5c1d6823ba713e7cc3b4c`); `G12_B04_FIG07_CHECK_QUADRATIC_20261124.svg` (`585b277a399a8961ea6617ec0851e2235ed06faa`); `G12_B04_FIG08_CHECK_CUBIC_20261124.svg` (`878b6f0ed35799daeef7f1db33781129277776cd`); `G12_B04_FIG09_CHECK_RATIONAL_20261124.svg` (`e846dbbc0cb8374a825179f8e4a43e6149f1efdb`); `G12_B04_FIG10_CHECK_OBLIQUE_20261124.svg` (`64ba475d59101e1dc0311f5fab8b9922162c019b`). Giữ nguyên FIG01 rational (`529b05d33fb0347dab70587c84c8ec08789c5c98`) và FIG02 cubic (`8e4cf830e5aa1cac3fe37b9b3c3d93d9b34c006b`).
 
@@ -207,7 +207,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B04_FIG03_QUADRATIC_AUTHORING
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1074](https://github.com/TMA2015/self-learning-math/pull/1074) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md` | `77b1efcec397b2cc412cbb3b9969ccbbb2f5b3de` | `54c9c90323f7b1d9077270d90627864f5a468c03` | `7019a282f97e0eca987a596a188030bd9d1e7076` |
+| [#1074](https://github.com/TMA2015/self-learning-math/pull/1074) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md` | `4122185df4d4a730e8a38828cf493f0ffe960bcf` | `54c9c90323f7b1d9077270d90627864f5a468c03` | `6f9a867a541530c2c44ca03f016eb59348977306` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B05_FIG02_BOX_NET_AUTHORING_20261124.svg` (`abc066d14e33a6e1fcec829aae34e47d4f0a273e`); `G12_B05_FIG03_TRAVEL_AUTHORING_20261124.svg` (`8303761922a9fa53e41b5dad2482ac9bb9b6950a`); `G12_B05_FIG04_POLLUTION_COST_AUTHORING_20261124.svg` (`fa76ba8469c7fb27e2fe3f83f8b8b3b8bf04a497`); `G12_B05_FIG05_PROFIT_AUTHORING_20261124.svg` (`340dc2bea3ce34ca1cc06c608c50c16deb19f1d4`). Giữ nguyên `G12_B05_FIG01_BOX_VOLUME_R00.svg` (`eacd5ba60f25d87c102917a55d314fb16d6f8341`).
 
@@ -217,7 +217,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B05_FIG02_BOX_NET_AUTHORING_2
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1075](https://github.com/TMA2015/self-learning-math/pull/1075) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md` | `0aac0cec595611aa68c7817c0af78095338d83d4` | `8991c8a30487fdf1db65cf31a19b0ed68ef52518` | `b7eb1d0d5120de61065ba002760f1e56f6337063` |
+| [#1075](https://github.com/TMA2015/self-learning-math/pull/1075) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md` | `7dc84b13841d815051e5f721633891813a8b14aa` | `8991c8a30487fdf1db65cf31a19b0ed68ef52518` | `e3091a022ce73d2a355aaf8dd1acc292e7bafce3` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B06_FIG02_TETRA_CENTROID_AUTHORING_20261124.svg` (`ec871f9e8285f1f6ad203214b975a76783c7174b`); `G12_B06_FIG03_VECTOR_ANGLE_AUTHORING_20261124.svg` (`a3133220a16675ca3c719deea35b9d7e6476dc85`). Giữ nguyên `FIG-G12-CHII-B06-R00.svg` (`26e388d873521aa5b0bae945343e69357490ec16`).
 
@@ -227,7 +227,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B06_FIG02_TETRA_CENTROID_AUTH
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1076](https://github.com/TMA2015/self-learning-math/pull/1076) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md` | `51f6eb713b27ecae933d9e46496c11b2c26fc74f` | `4bfbed222d552f3ccb9c965616245015930ab1cd` | `97f27ec66f7a7582b2dabe5fd2915d634dd9bfe8` |
+| [#1076](https://github.com/TMA2015/self-learning-math/pull/1076) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md` | `b06689d3cc7fef0732ad897e255c5e2d60c3139c` | `4bfbed222d552f3ccb9c965616245015930ab1cd` | `c87cefbfe3dfe2bdcce4976a40aa1596f8fca31c` |
 
 Asset delta tại `docs/assets/images/thpt/`: sửa `FIG-G12-CHII-B07-R00.svg` từ blob `979ca912e99fdadfc4e91ae0edad5db34fc13928` sang `053c483242c92f11097b5d577aeb4ad5f832497a`; thêm `G12_B07_FIG02_DISPLACEMENT_AUTHORING_20261124.svg` (`498a7f687a493dc3cf4b03d4423eba5025559d8b`).
 
@@ -237,7 +237,7 @@ Asset delta tại `docs/assets/images/thpt/`: sửa `FIG-G12-CHII-B07-R00.svg` t
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1077](https://github.com/TMA2015/self-learning-math/pull/1077) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md` | `8bf074d3c0f0e52887b6938d9c051f5a32b2ffd0` | `c85922428c85ddeb48cec5e2bd5953faa44207c8` | `0fac910828d7dbc8e2122eb85b04fa14e1ab49c6` |
+| [#1077](https://github.com/TMA2015/self-learning-math/pull/1077) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md` | `72c56071d36f466a68e295111f23798c641733d9` | `c85922428c85ddeb48cec5e2bd5953faa44207c8` | `757b85da3ebdc143be51b7816b142dbde13b11da` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B08_FIG02_PYRAMID_AUTHORING_20261124.svg` (`0d8e4b4fd4bbdc1c896143a74307b3ea5ff25367`); `G12_B08_FIG03_ROOF_AUTHORING_20261124.svg` (`7a9920c100572366b38937eda4ee22d769441aa5`). Giữ nguyên `FIG-G12-CHII-B08-R00.svg` (`13445da079245a556a08e7a57069d9987097a0be`).
 
@@ -247,7 +247,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B08_FIG02_PYRAMID_AUTHORING_2
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1078](https://github.com/TMA2015/self-learning-math/pull/1078) | `docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md` | `d42c02b13312fd3e3ec179388b36c4688842ef8e` | `4571bac678c36c4fb06d6a7fde45b86703f8ebce` | `56836232f4656c0cd3418cee0677280f150d3a69` |
+| [#1078](https://github.com/TMA2015/self-learning-math/pull/1078) | `docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md` | `795e8bc946180242e1e4a2b30e350ba27bed5bd4` | `4571bac678c36c4fb06d6a7fde45b86703f8ebce` | `0ae1063568ddf02dec12f61ecc7733b643d1245a` |
 
 Asset delta tại `docs/assets/images/thpt/`: `FIG-G12-CHIII-B09-QUARTILES-R00.svg` từ `51fd46bc69ee7c4279e5024aa29dc0e83651a1a7` sang `e847496c567b7121d2121134401e36ead2040e1a`; `FIG-G12-CHIII-B09-RANGE-IQR-R00.svg` từ `b0cdf1b1f00c5d70525dc8c889da48211aeb8cac` sang `1a3cb6397d8ed8ca634724e2084c909747dee836`.
 
@@ -257,7 +257,7 @@ Asset delta tại `docs/assets/images/thpt/`: `FIG-G12-CHIII-B09-QUARTILES-R00.s
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1079](https://github.com/TMA2015/self-learning-math/pull/1079) | `docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md` | `4ddf957c7fd1ebe3531c00b64074baecced0acb9` | `32f4eda1cfd151592eef5a35921ad872c1f644c4` | `12371f18f44610853ddca68a40908dee690a91ec` |
+| [#1079](https://github.com/TMA2015/self-learning-math/pull/1079) | `docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md` | `d98974cdacd84c118a5387275b8ad5da088ed126` | `32f4eda1cfd151592eef5a35921ad872c1f644c4` | `adfe3511b1335aed52047f00c11ecb3ad830d287` |
 
 Asset delta: `docs/assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg` từ `ddff354dca86b0cfa1a223a8245b87044a6e93b1` sang `120a1a0e7b360c8cde1742459174d747bca87de0`.
 
@@ -267,7 +267,7 @@ Asset delta: `docs/assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg` từ `dd
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1080](https://github.com/TMA2015/self-learning-math/pull/1080) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md` | `8a8236025b63b633261c482210f017d12ab04cee` | `f3fc0f654a21af7ec72de657643ef97488413dcb` | `136e34f376b8281eb1023d1583d18efaf0baa96f` |
+| [#1080](https://github.com/TMA2015/self-learning-math/pull/1080) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md` | `045ca4ab52a4d307e7842ad9a4d5f130eef115db` | `f3fc0f654a21af7ec72de657643ef97488413dcb` | `88dda34ee093c97e0cc3b844b6857168ee630506` |
 
 Asset delta: thêm `docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261124.svg` (blob `cb98c0d7e33eab90f1b1fd4e09e6dba925539e25`). Không chỉnh sửa PNG cũ.
 
@@ -277,7 +277,7 @@ Asset delta: thêm `docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1081](https://github.com/TMA2015/self-learning-math/pull/1081) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md` | `7faaacd5b9e7379ed273053e87fffc0705c80a6f` | `2ea14427518e58acb03e85d64dcc6b18d55f8798` | `3203313ad151cb44fb6264dcbe896e01b6f30fe0` |
+| [#1081](https://github.com/TMA2015/self-learning-math/pull/1081) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md` | `795812459a8f9c638b108a8ba1546c263d19df77` | `2ea14427518e58acb03e85d64dcc6b18d55f8798` | `e0ffd6f8389218585baa7e47b2558b3c83248034` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg` (`299037dee91e0c91db3e5c911982bbebbb514ae0`); `G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg` (`b04dafd5b4ff5f56be0893d3a52bba5121b64808`).
 
@@ -287,7 +287,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B12_FIG01_AREA_DERIVATIVE_AUT
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1082](https://github.com/TMA2015/self-learning-math/pull/1082) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md` | `546fdbeaa1080b169876592d9ee945b9434a51be` | `51b5cf8243b4793e159db862379a21df60ff75bd` | `6b782fbfdba8fed2eed5ce8423b6f9d1da451246` |
+| [#1082](https://github.com/TMA2015/self-learning-math/pull/1082) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md` | `144e9d386b27208ae73ae745169680b474b4208f` | `51b5cf8243b4793e159db862379a21df60ff75bd` | `8007752c3027a88281aa3192ef30ba557d0df648` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg` (`af5e42bcb3b150c706d472a92be96399b480e02c`); `G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg` (`9fb3c7377877eaea2b5de466659c85437e95a7b7`); `G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg` (`01143627de4f6c90e3a74f6945c284c76f256c4a`).
 
@@ -297,7 +297,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B13_FIG01_TWO_CURVES_AUTHORIN
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1083](https://github.com/TMA2015/self-learning-math/pull/1083) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md` | `b0604cb989182eaf8bea58c5787e9032bfb83b94` | `265381a3bcef201aefff38185753a35f706237c1` | `953ea63b73f6d2abb1cdb46230f2bebbe5d767d2` |
+| [#1083](https://github.com/TMA2015/self-learning-math/pull/1083) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md` | `6fb2f0f08209ca72602aca4cefdbb11909d9a623` | `265381a3bcef201aefff38185753a35f706237c1` | `b5ef9b4cf9678077fcd60e27578a9b9845945bba` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B14_FIG01_NORMAL_AUTHORING_20261124.svg` (`7a847024e9a36e7c483365b2f42965493743e2d6`); `G12_B14_FIG02_DISTANCE_AUTHORING_20261124.svg` (`c144223eac2eb53227f0e734354e8dd3023f2eb0`).
 
@@ -307,7 +307,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B14_FIG01_NORMAL_AUTHORING_20
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1084](https://github.com/TMA2015/self-learning-math/pull/1084) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md` | `abbf7070d12277e0ce66f5ba30fc6b80739268d9` | `05a81b707824146d6829ef385091dd4046bbe8fe` | `c5039e541a4b345cfdb9dd236ffcfd8f3179d0ec` |
+| [#1084](https://github.com/TMA2015/self-learning-math/pull/1084) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md` | `a0663d0a29f79f1215bcd0d8fd557aceccc7d864` | `05a81b707824146d6829ef385091dd4046bbe8fe` | `380a410321b1e299fda1dfcb448f2e3314aeb0dc` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B15_FIG01_PARAMETER_AUTHORING_20261124.svg` (`2d785967971d3412c23a4e4b408cb942bf4129aa`); `G12_B15_FIG02_SKEW_PERP_AUTHORING_20261124.svg` (`a9ef2806c8a28050570ed78bd3c8eb87d8944335`).
 
@@ -317,7 +317,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B15_FIG01_PARAMETER_AUTHORING
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1085](https://github.com/TMA2015/self-learning-math/pull/1085) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md` | `f25a04145d3101793fae97e858581337034deaff` | `b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d` | `8e9b245d157498244e5408bd96c7b34fde170978` |
+| [#1085](https://github.com/TMA2015/self-learning-math/pull/1085) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md` | `9cb6a80c46f21ef29a46eaa1318ec2b1ae79ec6a` | `b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d` | `e200b5b332f8d6e82a2a6983d46c0d7a18db92dd` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B16_FIG01_LINE_ANGLE_AUTHORING_20261124.svg` (`27b811c2e6d4293178539f91821354e011be4636`); `G12_B16_FIG02_LINE_PLANE_AUTHORING_20261124.svg` (`621bba914692f6b0787b11ac57934c8df7eabb27`); `G12_B16_FIG03_PLANE_ANGLE_AUTHORING_20261124.svg` (`6b0674ed7c66f9822d162dcf04f0f9671b8039b1`).
 
@@ -327,7 +327,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B16_FIG01_LINE_ANGLE_AUTHORIN
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1086](https://github.com/TMA2015/self-learning-math/pull/1086) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md` | `1da03f8a43514fafef66586fe3556581607d4e1e` | `29b609be3195efcd341aea39cb604a930dba8468` | `d8abd992794ec7c903923fcc1cffda11506d91e7` |
+| [#1086](https://github.com/TMA2015/self-learning-math/pull/1086) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md` | `4cc54d27d686ea70b7d04bec1094ab0bfe5e1a23` | `29b609be3195efcd341aea39cb604a930dba8468` | `0c4c1790a11631fd6cbcd0894acbcaeac7f52871` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B17_SECTION_AUTHORING_20261124.svg` (`0c641f4ccf95d9e93b9693999984e64bea08c52d`); `G12_B17_GREAT_CIRCLE_AUTHORING_20261124.svg` (`d684c8c4670945d89c5f7a96e485c9b96df880da`).
 
@@ -337,7 +337,7 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B17_SECTION_AUTHORING_2026112
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1087](https://github.com/TMA2015/self-learning-math/pull/1087) | `docs/thpt-preview/sgk/lop-12/chuong-vi/bai-18.md` | `0c620d85d17b97f494068cb897275f441753b60a` | `c5e96be714ed2b3d440c37c5507ddc79314bf087` | `cd3e05addf67a5fccb30ad28f1f8fb8e5d9b917b` |
+| [#1087](https://github.com/TMA2015/self-learning-math/pull/1087) | `docs/thpt-preview/sgk/lop-12/chuong-vi/bai-18.md` | `e96cc74d0bcaa06fbf811157e06ddb6814be9753` | `c5e96be714ed2b3d440c37c5507ddc79314bf087` | `4af5c2737acfdfd6027f360a68fc3eaa586a3f4c` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B18_TREE_AUTHORING_20261124.svg` (`45568ffd5307a1f8292a0c84ddba4e045fd27d6e`).
 
@@ -347,9 +347,37 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B18_TREE_AUTHORING_20261124.s
 
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
 |---|---|---|---|---|
-| [#1088](https://github.com/TMA2015/self-learning-math/pull/1088) | `docs/thpt-preview/sgk/lop-12/chuong-vi/bai-19.md` | `d97137df82d16489ca32f6f7a5bbe0483593dedd` | `e9588ca5fcdb107aa62990dc2e36635ef01085c0` | `818ef075105baf65f95fb376956abeeea8ff8294` |
+| [#1088](https://github.com/TMA2015/self-learning-math/pull/1088) | `docs/thpt-preview/sgk/lop-12/chuong-vi/bai-19.md` | `9b4a07e1ed5be43d72ca8f6a36792ba8834bc99f` | `e9588ca5fcdb107aa62990dc2e36635ef01085c0` | `0d0b8bb1ea0f9bb57e9c91f532591163dad9c22d` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B19_TREE_AUTHORING_20261124.svg` (`a9fcde9ea6c6e23062fb973e708d98a553ea6ebe`).
+
+## Hiệu chỉnh cuối Toán 12 — 24/11/2026
+
+Owner duyệt sửa nhanh theo [rà soát 19 bài](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7124899417). Giữ nguyên 19 PR và 32 nguồn Toán 11. Snapshot trước hiệu chỉnh: [biên bản đã khóa trước lượt sửa](https://github.com/TMA2015/self-learning-math/blob/ae8bc6b0329852a660ad703aad1fa51610703717/prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md) (blob `a2cf7490c9456a11ec4e43b9fc0f6e1dd1ebb604`); các kết quả kiểm trước đây gắn snapshot đó, chỉ kiểm lại delta thực tế.
+
+| Bài | Delta đã sửa và đọc kiểm lại |
+|---|---|
+| B01 | Xét đơn điệu từng khoảng; chuẩn hóa dấu bất đẳng thức. |
+| B02 | Điều kiện đạo hàm tại điểm trong miền đạt GTLN/GTNN. |
+| B03 | Chỉ rõ hướng hai giới hạn xác định tiệm cận xiên. |
+| B04 | Giải thích trục đối xứng, sửa hàng phân cách bảng biến thiên. |
+| B05 | Giá theo lượng bán; tối ưu hình trụ đúng nhãn ứng dụng và giả thiết. |
+| B06 | Cạnh bên, dời vectơ và cùng gốc; ý nghĩa công âm. |
+| B07 | Ví dụ camera có tọa độ cụ thể; điều kiện thuộc trục/mặt phẳng. |
+| B08 | Giải thích tích vô hướng và hai đường vuông góc giao tuyến mái. |
+| B09 | Nội suy từ cộng dồn tuyến tính; tách lưu ý nhóm rỗng. |
+| B10 | Giải thích thông tin bảng nhóm và mốc 0 trong hệ số biến thiên. |
+| B11 | Điều kiện nguyên hàm tại mọi điểm; sửa bảng logarit trị tuyệt đối. |
+| B12 | Giới hạn tổng diện tích, câu hỏi lượng nước, bảng quãng đường. |
+| B13 | Phạm vi chóp cụt, dấu của hiệu, liên hệ ví dụ chỏm cầu. |
+| B14 | Điều kiện tích có hướng khác không; hình chiếu bằng vectơ vị trí. |
+| B15 | Diễn giải dịch chuyển theo tham số, đường thẳng cùng phương. |
+| B16 | Làm rõ pháp tuyến và thiết diện dùng tính góc. |
+| B17 | Mô tả trục địa cầu độc lập; tính ngược vĩ độ/kinh độ, hai cực. |
+| B18 | Giải thích nhóm điều kiện; tách bài ba cửa thành ba bước. |
+| B19 | Điều kiện xác suất dương và xử lý nhóm xác suất 0. |
+
+**Tự kiểm delta — Q18 AUTHOR_SELF_VERIFIED:** đối chiếu 19/19 commit HEAD và candidate blob, PR vẫn draft/open; nội dung trước tab Khám phá và từ tab Ví dụ trở đi byte-identical 19/19; thứ tự và tên mục chính/phụ, comment metadata, đường dẫn hình giữ nguyên 19/19 (50 mục chính mỗi tab); cả ba bảng lỗi cột B04/B11/B12 đã sửa, kiểm cấu trúc cột trên toàn bộ hai tab không còn lỗi phát hiện; không còn entity `&lt;`/`&gt;` trong hai tab kiểm. Chỉ cập nhật các file canonical, không tạo PR hoặc asset mới, không thay dữ liệu ngoài scope. Kiểm ngữ nghĩa delta bằng định nghĩa, phép tính và điều kiện đã nêu; không tuyên bố browser/render PASS hoặc independent review mới. Giữ CONTENT_READY 51/51; RELEASE_INTAKE=PENDING_RELEASE, tiếp nhận đúng commit/blob mới trong các bảng từng bài. Kết thúc đợt AUTHORING, không merge/deploy.
 
 ## Cách cập nhật
 
