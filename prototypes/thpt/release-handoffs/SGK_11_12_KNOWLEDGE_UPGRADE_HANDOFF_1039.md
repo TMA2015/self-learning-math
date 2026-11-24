@@ -167,3 +167,18 @@ Owner yêu cầu tiếp tục cập nhật và phát hành B01–B04. B01 đã n
 | B04 | `0714c5b72389d29dbc8993c2ce9828fc98cf7a92` | `515ad705f86b2448b262026f2f2fb8d3ec2e5bdc` | sin m=±1 hai họ trùng, cos đối góc; cot 0 tại π/2, cot m≠0 dùng arctan(1/m) và cộng π nếu âm; RAD/DEG đúng, asin(0.58)=0.6187286907 rad=35.45054264°; 0.6187 và 35.45° làm tròn đúng, nghiệm tổng quát vẫn hai họ. |
 
 Bảo toàn byte-identical phần trước Khám phá và từ Ví dụ trở đi, headings, asset references, data attributes, danh sách Đối chiếu/Kiểm lỗi và tab 4; không chỉnh Core/Luyện tập/Tự kiểm tra/RD1/Mastery/Firebase, CSS/JS/hook. B01 giữ nguyên. Candidate chờ exact-head scoped QA, build, Golden computed CSS/MathJax/accordion/light-slate/390-820-1440 và deploy verification. Không nhận đã publish. W2 vẫn HOLD.
+
+
+## RELEASE — W2 G11 B05–B09 · 24/11/2026
+
+Owner đã kiểm tra B01–B04 và cho phép W2. [#1039](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7127520607). W1 #1092 merged main `745e9c0843c984d23cdaa2ccba0eae9661cf1e81`, 7/7 workflow PASS. W2 staging từ đúng main này; yêu cầu xác minh production W1 trước khi merge/deploy W2. Nguồn AUTHORING hiện hành [biên bản chung](https://github.com/TMA2015/self-learning-math/blob/120b22640fd2de12cdbe074a4067e92c004bcc27/prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md), blob `0f5d497250a9b97be0f7d829bc0098af9729d36f`. Đối chiếu 5 PR exact HEAD, 5/5 learner blob baseline và candidate; 6 SVG dùng sẵn, không đổi asset. Không thay nội dung ký khóa hoặc nhận independent Academic/PED PASS.
+
+| Bài | PR AUTHORING | Commit | Baseline blob | Exact candidate blob |
+|---|---|---|---|---|
+| B05 | [#1027](https://github.com/TMA2015/self-learning-math/pull/1027) | `47873721c89760e2c5b9b6c14c68122d318457a9` | `8634196e27b5bac8cb3089f433779b592809d955` | `6adf77092611788f301eb3e3dd0b52a4ddbd8a66` |
+| B06 | [#1028](https://github.com/TMA2015/self-learning-math/pull/1028) | `7104a657751fe4c11f91656ca8f05847f99cee9a` | `43b285b679941e0748ad78f377ab9bbdd73ec3d3` | `15832bd010a1a965be901c1ed13bc9702366644e` |
+| B07 | [#1029](https://github.com/TMA2015/self-learning-math/pull/1029) | `15e7cd43e13ecc021d840223cec5c36fa8831cc5` | `3d0886889e383cd76963e1fa3a5eef175a389080` | `28dbd57c0c08d5887ff829c1f706cfcc25d0fa9b` |
+| B08 | [#1030](https://github.com/TMA2015/self-learning-math/pull/1030) | `cebdf9a1590afbadc4f80c365e2263d54ed48ce7` | `4f3d1af635dd548700ad3514aff283ebe29aa9a2` | `b3c9f4973bec363ddfd1cc8ea9a156c030dd5bc2` |
+| B09 | [#1031](https://github.com/TMA2015/self-learning-math/pull/1031) | `0e0ade82eac40b046c3bf12d6601da231159c177` | `46aa17f758783330c2b396f9ed36a25ab77a4094` | `c8869d0413370af29b0e069036d8aab7e4b7b5f6` |
+
+DELTA_A_UI adapter chỉ 5 route G11 chII B05–07/chIII B08–09; tab4 5+6+6+6+6 accordion, giữ heading inline math, ID, nội dung 3 đoạn, liên kết Học tiếp (B06–09) và footnote. Hook ngoài W2 giữ nguyên. QA scoped First Paint JS/no-JS, Golden 3+1/typography, accordion/Đối chiếu, MathJax/SVG, 390/820/1440 default/slate, source/Q15/Q16. Không đổi W1, Core, Luyện tập, Tự kiểm tra, RD1, Final Submit, Mastery, Firebase, shared runtime/theme. Chưa nhận RELEASE PASS hay PUBLISHED. Không mở W3.
