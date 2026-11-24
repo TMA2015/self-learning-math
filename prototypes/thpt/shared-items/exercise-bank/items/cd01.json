@@ -4,15 +4,20 @@
     "content_version": "R01",
     "stem": "Cho m∈ℤ. Phát biểu (a) “m+2=7”; (b) “∀m∈ℤ, m+2=7”; (c) “∃m∈ℤ, m+2=7”. Phân loại và xét giá trị chân lý khi xác định.",
     "answer_key": "(a) Mệnh đề chứa biến, chưa có chân lý khi chưa gán m; (b) mệnh đề sai vì m=0 thì 2≠7; (c) mệnh đề đúng vì m=5.",
-    "worked_solution": "(a) Chưa gán m nên chưa thể gán đúng/sai; thử m=5 và m=0. (b) Phủ định bằng một phản ví dụ m=0. (c) Một chứng cứ m=5 đủ xác nhận tồn tại.",
-    "skill_ids": [],
+    "worked_solution": "(a) m=5 cho đẳng thức đúng, m=0 cho đẳng thức sai; khi chưa gán m, đây là mệnh đề chứa biến. (b) Mệnh đề “mọi” sai vì phản ví dụ m=0. (c) Mệnh đề “tồn tại” đúng vì m=5 thỏa đẳng thức.",
+    "skill_ids": [
+      "G10-B01-PROPOSITION",
+      "G10-B01-QUANTIFIERS"
+    ],
     "original_outcome_ids": [
       "TOP01-O01"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
-    "hints": [],
-    "remediation": "Nhầm mệnh đề chứa biến với mệnh đề; quay lại TOP01-M01 và THPT-G10-B01-C01.",
+    "hints": [
+      "Phân biệt thử một giá trị để bác bỏ “mọi” và để chứng minh “tồn tại”."
+    ],
+    "remediation": "Nếu gán đúng/sai cho câu chưa gán m, thử m=0 và m=5; phân biệt phản ví dụ với phủ định của mệnh đề. Ôn TOP01-M01, TOP01-M05; luyện THPT-G10-B01-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -31,14 +36,18 @@
     "stem": "Với n∈ℤ, phát biểu “n chia hết cho 4 ⇔ n² chia hết cho 4” đúng hay sai? Xác định chiều đúng và nêu phản ví dụ cho chiều sai.",
     "answer_key": "Sai. n chia hết cho 4 ⇒ n² chia hết cho 4 đúng; chiều n² chia hết cho 4 ⇒ n chia hết cho 4 sai khi n=2.",
     "worked_solution": "Nếu n=4k thì n²=16k² chia hết cho 4. Lấy n=2: n²=4 chia hết cho 4 nhưng 2 không chia hết cho 4, do đó không có tương đương.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B01-EQUIVALENCE"
+    ],
     "original_outcome_ids": [
       "TOP01-O04"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
-    "hints": [],
-    "remediation": "Quên chứng minh hai chiều; quay lại TOP01-M04 và THPT-G10-B01-P04.",
+    "hints": [
+      "Viết riêng hai chiều; thử n=2 cho chiều đảo."
+    ],
+    "remediation": "Nếu kết luận tương đương chỉ vì một chiều đúng, viết hai mũi tên riêng; tìm số mà n² chia hết 4 nhưng n không chia hết 4. Ôn TOP01-M04; luyện THPT-G10-B01-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -57,14 +66,18 @@
     "stem": "Đặt A={1,2,3,4,5}, B={1,3,5,7}. Tìm A∩B và A∪B; giải thích vì sao phần tử 1 chỉ viết một lần trong hợp.",
     "answer_key": "A∩B={1,3,5}; A∪B={1,2,3,4,5,7}.",
     "worked_solution": "Phần chung 1,3,5 đi vào giao. Hợp chứa mọi phần tử xuất hiện ở ít nhất một tập và theo định nghĩa tập hợp mỗi phần tử chỉ viết một lần.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-UNION_INTERSECTION"
+    ],
     "original_outcome_ids": [
       "TOP01-O07"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
-    "hints": [],
-    "remediation": "Nhầm 'và' với 'hoặc'; quay lại TOP01-M07 và THPT-G10-B02-C02.",
+    "hints": [
+      "Đánh dấu các phần tử chung, rồi viết mỗi phần tử trong hợp một lần."
+    ],
+    "remediation": "Nếu loại phần chung khỏi hợp, kiểm xem phần tử 1 có thuộc ít nhất một tập không. Ôn TOP01-M07; luyện THPT-G10-B02-C02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -80,17 +93,21 @@
   {
     "item_id": "THPT-TOP01-ADD04",
     "content_version": "R01",
-    "stem": "Cho A={1,2,4,6}, B={2,3,6,8}. Tính A\\\\B và B\\\\A. Có thể kết luận hai hiệu luôn bằng nhau không?",
-    "answer_key": "A\\\\B={1,4}; B\\\\A={3,8}; không.",
-    "worked_solution": "Giữ phần tử nằm trong A nhưng không ở B cho A\\\\B; đổi vai A,B cho B\\\\A. Hai kết quả khác nhau là phản ví dụ cho tính giao hoán.",
-    "skill_ids": [],
+    "stem": "Cho A={1,2,4,6}, B={2,3,6,8}. Tính A∖B và B∖A. Có thể kết luận hai hiệu luôn bằng nhau không?",
+    "answer_key": "A∖B={1,4}; B∖A={3,8}; không.",
+    "worked_solution": "Giữ phần tử thuộc A nhưng không thuộc B được A∖B={1,4}; đổi vai A,B được B∖A={3,8}. Hai kết quả khác nhau là phản ví dụ cho tính giao hoán.",
+    "skill_ids": [
+      "G10-B02-DIFFERENCE"
+    ],
     "original_outcome_ids": [
       "TOP01-O08"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
-    "hints": [],
-    "remediation": "Nhầm hiệu với hợp/giao; quay lại TOP01-M08 và THPT-G10-B02-P01.",
+    "hints": [
+      "Gạch phần tử chung của hai tập; giữ các phần tử còn lại theo thứ tự phép hiệu."
+    ],
+    "remediation": "Nếu đổi thứ tự hai hiệu, kiểm từng phần tử có thuộc tập đứng trước không. Ôn TOP01-M08; luyện THPT-G10-B02-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -106,17 +123,21 @@
   {
     "item_id": "THPT-TOP01-ADD05",
     "content_version": "R01",
-    "stem": "Cho U={−3,−2,−1,0,1,2,3}, A={x∈U | x²≤1}. Xác định U\\\\A.",
-    "answer_key": "A={−1,0,1}; U\\\\A={−3,−2,2,3}.",
+    "stem": "Cho U={−3,−2,−1,0,1,2,3}, A={x∈U | x²≤1}. Xác định U∖A.",
+    "answer_key": "A={−1,0,1}; U∖A={−3,−2,2,3}.",
     "worked_solution": "Do x²≤1 trên các số nguyên của U đúng khi x∈{−1,0,1}. Loại chính các phần tử ấy ra khỏi U, giữ bốn số còn lại.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-COMPLEMENT"
+    ],
     "original_outcome_ids": [
       "TOP01-O09"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
-    "hints": [],
-    "remediation": "Không xác định U và nhầm A với U\\\\A; quay lại TOP01-M09 và THPT-G10-B02-P02.",
+    "hints": [
+      "Liệt kê A từ các số trong U, rồi loại A khỏi U."
+    ],
+    "remediation": "Nếu lấy cả số ngoài U hoặc giữ nhầm phần tử của A, liệt kê U và gạch đúng các số có bình phương không vượt 1. Ôn TOP01-M09; luyện THPT-G10-B02-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -135,14 +156,18 @@
     "stem": "Trong 50 học sinh, 31 tham gia CLB Hát, 27 tham gia CLB Robot, 12 tham gia cả hai. Hỏi chỉ Hát, chỉ Robot, ít nhất một CLB, và không tham gia CLB nào.",
     "answer_key": "Chỉ Hát 19; chỉ Robot 15; ít nhất một 46; không tham gia 4.",
     "worked_solution": "Giao 12. Chỉ Hát=31−12=19; chỉ Robot=27−12=15; hợp=19+12+15=46 (=31+27−12); ngoài=50−46=4. Kiểm 19+12+15+4=50.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G10-B02-VENN_MODEL"
+    ],
     "original_outcome_ids": [
       "TOP01-O11"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
-    "hints": [],
-    "remediation": "Cộng trùng phần giao hoặc quên miền ngoài; quay lại TOP01-M11 và THPT-G10-B02-P05.",
+    "hints": [
+      "Điền giao trước, tính hai vùng riêng, cuối cùng tính phần ngoài."
+    ],
+    "remediation": "Nếu cộng trùng giao hoặc quên miền ngoài, điền bốn miền và kiểm tổng bằng 50. Ôn TOP01-M11; luyện THPT-G10-B02-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
