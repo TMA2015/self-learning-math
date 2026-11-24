@@ -16585,6 +16585,235 @@
         "Preserve 2312 IDs/3921 placements, source, interaction, exposure, prior snapshots. No fresh SGK PDF/SBT, full Academic/PED/D6/browser QA or version cutover decision. No new PASS."
       ],
       "next": "G10 ChIX and CD09 actual scope; preserve prior audited records."
+    },
+    "formative_scoped_audit_cp56": {
+      "checkpoint": 56,
+      "baseline": "6b53604b99196b329b2e2dfd2b77e3b6da31cfa5",
+      "scope": "G10 ChIX B26–27 and CĐ09 derivatives, shared G11 ChIX B31–33 and integrated items",
+      "source_evidence": {
+        "B26": "6b695c41cff31490630b380522752636fc57f8b7",
+        "B27": "209de8ae01c8654e55e07648c76b7d98396f7393",
+        "g10_formative": "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
+        "g11_formative": "eda6fdf74345d93cd23e77008d2dcc9a9f6c7111",
+        "cd09_knowledge": "a983faa17f30f0f93216c4217097ce6218fe43d5",
+        "cd09_practice": "09c9a9f220c076add7512d0cc0a2316217bf9aa9"
+      },
+      "files": [
+        {
+          "path": "items/g10-chix.json",
+          "before": "78fd5980536800d2989b9dea615d2e4783df4e95",
+          "after": "e4e96c5211657be1d5b115c7f845339dbe4b9d5a",
+          "changed": 14,
+          "unchanged": 10
+        },
+        {
+          "path": "items/g11-chix.json",
+          "before": "fb8ff39a91f1077aea16b216f830689f84d5ad96",
+          "after": "ca76fc484433be7ff34e9a6b9454955081d319d2",
+          "changed": 62,
+          "unchanged": 3
+        },
+        {
+          "path": "items/cd09.json",
+          "before": "5083a48378b3b9731c0c95bcfbcba7025d2fa4d1",
+          "after": "152dcb9c24d9ffd655896fdef77fb5055903efa7",
+          "changed": 32
+        }
+      ],
+      "reviewed": {
+        "formative_changed": 108,
+        "topic_outcomes": 32,
+        "topic_practice_placements": 108,
+        "topic_replay_placements": 32,
+        "written_cd09_read_only": 14,
+        "sgk_source_math_parity_before_edit": 76,
+        "remediation_ids_resolve": 108,
+        "cd09_skill_mappings_verified": 31,
+        "cd09_skill_mappings_unverified": 1
+      },
+      "matrix": {
+        "TOP09-O01": [
+          "THPT-G11-CHIX-B31-P01",
+          "THPT-G11-CHIX-B31-C01",
+          "THPT-TOP09-P01"
+        ],
+        "TOP09-O02": [
+          "THPT-G11-CHIX-B31-P02",
+          "THPT-G11-CHIX-B31-C02",
+          "THPT-TOP09-P02"
+        ],
+        "TOP09-O03": [
+          "THPT-G11-CHIX-B31-W01",
+          "THPT-G11-CHIX-B31-P03",
+          "THPT-G11-CHIX-B31-C03",
+          "THPT-TOP09-P03"
+        ],
+        "TOP09-O04": [
+          "THPT-G11-CHIX-B31-P04",
+          "THPT-G11-CHIX-B31-C04",
+          "THPT-TOP09-P04"
+        ],
+        "TOP09-O05": [
+          "THPT-G11-CHIX-B31-P05",
+          "THPT-G11-CHIX-B31-C05",
+          "THPT-TOP09-P05"
+        ],
+        "TOP09-O06": [
+          "THPT-G11-CHIX-B31-W02",
+          "THPT-G11-CHIX-B31-P06",
+          "THPT-G11-CHIX-B31-C06",
+          "THPT-TOP09-P06",
+          "THPT-TOP09-W01"
+        ],
+        "TOP09-O07": [
+          "THPT-G11-CHIX-B31-P07",
+          "THPT-G11-CHIX-B31-C07",
+          "THPT-TOP09-P07"
+        ],
+        "TOP09-O08": [
+          "THPT-G11-CHIX-B31-P08",
+          "THPT-G11-CHIX-B31-C08",
+          "THPT-TOP09-P08"
+        ],
+        "TOP09-O09": [
+          "THPT-G11-CHIX-B31-W03",
+          "THPT-G11-CHIX-B31-P09",
+          "THPT-G11-CHIX-B31-C09",
+          "THPT-TOP09-P09",
+          "THPT-TOP09-W02"
+        ],
+        "TOP09-O10": [
+          "THPT-G11-CHIX-B31-P10",
+          "THPT-G11-CHIX-B31-C10",
+          "THPT-TOP09-P10"
+        ],
+        "TOP09-O11": [
+          "THPT-G11-CHIX-B32-P01",
+          "THPT-G11-CHIX-B32-C01",
+          "THPT-TOP09-P11"
+        ],
+        "TOP09-O12": [
+          "THPT-G11-CHIX-B32-P02",
+          "THPT-G11-CHIX-B32-C02",
+          "THPT-TOP09-P12"
+        ],
+        "TOP09-O13": [
+          "THPT-G11-CHIX-B32-P03",
+          "THPT-G11-CHIX-B32-C03",
+          "THPT-TOP09-P13"
+        ],
+        "TOP09-O14": [
+          "THPT-G11-CHIX-B32-W01",
+          "THPT-G11-CHIX-B32-P04",
+          "THPT-G11-CHIX-B32-C04",
+          "THPT-TOP09-P14"
+        ],
+        "TOP09-O15": [
+          "THPT-G11-CHIX-B32-W03",
+          "THPT-G11-CHIX-B32-P05",
+          "THPT-G11-CHIX-B32-C05",
+          "THPT-TOP09-P15",
+          "THPT-TOP09-W03"
+        ],
+        "TOP09-O16": [
+          "THPT-G11-CHIX-B32-P06",
+          "THPT-G11-CHIX-B32-C06",
+          "THPT-TOP09-P16"
+        ],
+        "TOP09-O17": [
+          "THPT-G11-CHIX-B32-P07",
+          "THPT-G11-CHIX-B32-C07",
+          "THPT-TOP09-P17"
+        ],
+        "TOP09-O18": [
+          "THPT-G11-CHIX-B32-P08",
+          "THPT-G11-CHIX-B32-C08",
+          "THPT-TOP09-P18"
+        ],
+        "TOP09-O19": [
+          "THPT-G11-CHIX-B32-P09",
+          "THPT-G11-CHIX-B32-C09",
+          "THPT-TOP09-P19"
+        ],
+        "TOP09-O20": [
+          "THPT-G11-CHIX-B32-P10",
+          "THPT-G11-CHIX-B32-C10",
+          "THPT-TOP09-P20"
+        ],
+        "TOP09-O21": [
+          "THPT-G11-CHIX-B32-P11",
+          "THPT-G11-CHIX-B32-C11",
+          "THPT-TOP09-P21"
+        ],
+        "TOP09-O22": [
+          "THPT-G11-CHIX-B32-P12",
+          "THPT-G11-CHIX-B32-C12",
+          "THPT-TOP09-P22",
+          "THPT-TOP09-W04"
+        ],
+        "TOP09-O23": [
+          "THPT-G11-CHIX-B32-W02",
+          "THPT-G11-CHIX-B32-P13",
+          "THPT-G11-CHIX-B32-C13",
+          "THPT-TOP09-P23"
+        ],
+        "TOP09-O24": [
+          "THPT-G11-CHIX-B32-P14",
+          "THPT-G11-CHIX-B32-C14",
+          "THPT-TOP09-P24"
+        ],
+        "TOP09-O25": [
+          "THPT-G11-CHIX-B32-P15",
+          "THPT-G11-CHIX-B32-C15",
+          "THPT-TOP09-P25"
+        ],
+        "TOP09-O26": [
+          "THPT-G11-CHIX-B33-P01",
+          "THPT-G11-CHIX-B33-C01",
+          "THPT-TOP09-P26"
+        ],
+        "TOP09-O27": [
+          "THPT-G11-CHIX-B33-P02",
+          "THPT-G11-CHIX-B33-C02",
+          "THPT-TOP09-P27"
+        ],
+        "TOP09-O28": [
+          "THPT-G11-CHIX-B33-W02",
+          "THPT-G11-CHIX-B33-P03",
+          "THPT-G11-CHIX-B33-C03",
+          "THPT-TOP09-P28"
+        ],
+        "TOP09-O29": [
+          "THPT-G11-CHIX-B33-W03",
+          "THPT-G11-CHIX-B33-P04",
+          "THPT-G11-CHIX-B33-C04",
+          "THPT-TOP09-P29"
+        ],
+        "TOP09-O30": [
+          "THPT-G11-CHIX-B33-W01",
+          "THPT-G11-CHIX-B33-P05",
+          "THPT-G11-CHIX-B33-C05",
+          "THPT-TOP09-P30",
+          "THPT-TOP09-W05"
+        ],
+        "TOP09-O31": [
+          "THPT-G11-CHIX-CHIX-P01",
+          "THPT-G11-CHIX-CHIX-C01",
+          "THPT-TOP09-P31"
+        ],
+        "TOP09-O32": [
+          "THPT-TOP09-P32"
+        ]
+      },
+      "findings": [
+        "G10 B26-C01 and B27-P05 specify independent trials; B27-C01 gives complete textual two-tier tree; B27-P03 contrasts sampling with/without replacement, 6/25 and 3/10. 14 D6 entries with exact lesson section and first-try IDs.",
+        "CĐ09 P01 zero average velocity does not imply stationary; P06 unequal one-sided slopes 2,−3; P17 alternate signed trig derivative avoids exact G11 repetition; P25 direction and speed at two times; P23 exact one-sided difference quotient, Vietnamese terminology replaces English fragments. 32 hints/D6, 31 existing skills; P32 vi phân no verified existing skill, retains outcome O32.",
+        "G11 62 targeted hints/D6. B31-C01 opposite signs average rates on equal-length intervals; P06 translated absolute value plus linear term, slopes 1 and 3; B32-P13 rigorous endpoint quotient →−∞; B33-P03 chain twice, positive second derivative; time units clarified. 76/76 historical source stems/keys/solutions/skills match before delta, normalized math delimiters.",
+        "108/108 CD09 source markers match 32 outcomes: 94 formative +14 Written placements, 32 replay resolve; all remediation target IDs resolve. All 22 topic shards scanned: only CD09 matched scoped IDs. Preserve 13 first tries, no placement changes.",
+        "14 Written calculations checked. B31-W01 exemplar too terse for explicit geometric limit rubric; B33-W03 remediation uses m,m/s,m/s² despite cm context; five TOP09 Written missing existing library projection pointer. G10 ChIX Written not reviewed. G11 SGK knowledge pages not separately audited this checkpoint.",
+        "Preserve source, interaction/exposure, 2312 IDs/3921 placements. No fresh PDF SGK/SBT, complete Academic/PED/browser QA or cutover version decision. No new PASS."
+      ],
+      "next": "G10 chapter formative sweep complete in scope; continue CĐ10 and corresponding shared G12/G11 items, avoid already reviewed deltas; Written gaps remain separate."
     }
   }
 }
