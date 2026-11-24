@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 677,
+    "legacy_combined_answer_items": 635,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_32_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_74_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 32 manually verified and key separated at checkpoint 29; 677 remain combined, answer_key=null. Original worked_solution retained verbatim; self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 74 manually verified and key separated at checkpoints 29–30; 635 remain combined, answer_key=null. Source and solution preserved except explicit scoped author clarifications; self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 677,
+      "remaining_combined_answer_items": 635,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 32,
-        "remaining_count": 677,
+        "reviewed_count": 74,
+        "remaining_count": 635,
         "batches": [
           {
             "checkpoint": 29,
@@ -6636,6 +6636,380 @@
               "G10 CHIII TRY11: recalculated cos127°=-0.601815023..., arcsin(0.4)=23.578178478...°, supplementary 156.421821522...°. Source outcome G10-B05-CALCULATOR_ANGLE preserved; existing supplementary skill mapped; dedicated calculator skill mapping still pending if existing registry supports it.",
               "G10 CHII TRY10 compares only two feasible integer points, not global optimum. G10 CHI TRY11 and CHII TRY07/09 refer to historical figures only to distinguish tasks, no data dependency; preserve source wording at cutover.",
               "Full Q01/S1, Q02 outcome coverage and Q14 reveal/D6 remain pending; no independent review claimed."
+            ]
+          },
+          {
+            "checkpoint": 30,
+            "baseline": "6d2cb47a0a164ee40b61119c6a0feeaea6db22dc",
+            "reviewed_candidate": "7f4d5cd8f5f49e997af37c7d9d9099e222a70c20",
+            "scope": "G10 SGK B07–B14: 26 vector first-try records, 15 statistics/approximation first-try records and one formative calculator practice item. 41 stems/solutions matched in eight exact lesson source blobs (whitespace normalization only), B12-P07 exact match after JSON decoding JS record. Independent math check, skill mapping to existing chapter skills, complete concise key, source/order/exposure/self-compare preserved. Four targeted clarifications documented.",
+            "shards": [
+              {
+                "shard": "g10-chiv",
+                "before": "1025cef049312671f735cf9dd87dbe386f8bf615",
+                "after": "e69532125ec352ca8b040ec437b9902d30283acc",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY01",
+                    "source_blob": "e76a0ae4f9628ffd1d183b44eaae1c35e454bf13",
+                    "answer_key": "Không bằng nhau; AB⃗=−BA⃗; cả hai có độ dài AB.",
+                    "skill_ids": [
+                      "G10-B07-DEFINITION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY02",
+                    "source_blob": "e76a0ae4f9628ffd1d183b44eaae1c35e454bf13",
+                    "answer_key": "Cả hai dài 3 m; không bằng nhau vì ngược hướng.",
+                    "skill_ids": [
+                      "G10-B07-LENGTH"
+                    ],
+                    "content_clarification": "Clarify opposite directions even on distinct parallel lines."
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY03",
+                    "source_blob": "e76a0ae4f9628ffd1d183b44eaae1c35e454bf13",
+                    "answer_key": "Cùng phương, ngược hướng, không cùng hướng.",
+                    "skill_ids": [
+                      "G10-B07-DIRECTION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY04",
+                    "source_blob": "e76a0ae4f9628ffd1d183b44eaae1c35e454bf13",
+                    "answer_key": "AB⃗=DC⃗; AB⃗≠CD⃗.",
+                    "skill_ids": [
+                      "G10-B07-EQUALITY"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY05",
+                    "source_blob": "e76a0ae4f9628ffd1d183b44eaae1c35e454bf13",
+                    "answer_key": "AA⃗=0⃗, độ dài 0; không bằng quãng đường hai chặng nếu có di chuyển.",
+                    "skill_ids": [
+                      "G10-B07-ZERO"
+                    ],
+                    "content_clarification": "Compare magnitude of displacement to distance, not vector to scalar."
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY06",
+                    "source_blob": "9e5c9227417484e3bbea4f0ba085ff844100f321",
+                    "answer_key": "AC⃗; độ dài 5 m, không phải 7 m.",
+                    "skill_ids": [
+                      "G10-B08-TRIANGLE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY07",
+                    "source_blob": "9e5c9227417484e3bbea4f0ba085ff844100f321",
+                    "answer_key": "Hợp lực 5 N, theo đường chéo hình bình hành.",
+                    "skill_ids": [
+                      "G10-B08-PARALLELOGRAM"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY08",
+                    "source_blob": "9e5c9227417484e3bbea4f0ba085ff844100f321",
+                    "answer_key": "CB⃗.",
+                    "skill_ids": [
+                      "G10-B08-OPPOSITE-SUBTRACTION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY09",
+                    "source_blob": "9e5c9227417484e3bbea4f0ba085ff844100f321",
+                    "answer_key": "MA⃗=−4e⃗; MB⃗=4e⃗; tổng bằng 0⃗.",
+                    "skill_ids": [
+                      "G10-B08-MIDPOINT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY10",
+                    "source_blob": "9e5c9227417484e3bbea4f0ba085ff844100f321",
+                    "answer_key": "GA⃗=−2GM⃗; GA⃗+GB⃗+GC⃗=0⃗.",
+                    "skill_ids": [
+                      "G10-B08-CENTROID"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY11",
+                    "source_blob": "f589e9a61841b12dfbf427c1a92dd5105612d584",
+                    "answer_key": "0u⃗=0⃗; độ dài 0.",
+                    "skill_ids": [
+                      "G10-B09-SCALAR_DEFINITION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY12",
+                    "source_blob": "f589e9a61841b12dfbf427c1a92dd5105612d584",
+                    "answer_key": "6 m, hướng Tây.",
+                    "skill_ids": [
+                      "G10-B09-LENGTH_DIRECTION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY13",
+                    "source_blob": "f589e9a61841b12dfbf427c1a92dd5105612d584",
+                    "answer_key": "Cả hai vectơ có thành phần 4 đơn vị về Đông và 2 đơn vị về Bắc.",
+                    "skill_ids": [
+                      "G10-B09-DISTRIBUTION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY14",
+                    "source_blob": "f589e9a61841b12dfbf427c1a92dd5105612d584",
+                    "answer_key": "Cùng phương, ngược hướng; |v⃗|/|u⃗|=3.",
+                    "skill_ids": [
+                      "G10-B09-COLLINEAR"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY15",
+                    "source_blob": "f589e9a61841b12dfbf427c1a92dd5105612d584",
+                    "answer_key": "AG=6 cm; AG⃗=(2/3)AM⃗.",
+                    "skill_ids": [
+                      "G10-B09-MIDPOINT_CENTROID"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY16",
+                    "source_blob": "7b0428899b64a9986689dc5723d119b4356eb06b",
+                    "answer_key": "AB⃗=(5;−3), BA⃗=(−5;3).",
+                    "skill_ids": [
+                      "G10-B10-VECTOR_COORDS"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY17",
+                    "source_blob": "7b0428899b64a9986689dc5723d119b4356eb06b",
+                    "answer_key": "2u⃗−v⃗=(5;−5).",
+                    "skill_ids": [
+                      "G10-B10-OPERATIONS"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY18",
+                    "source_blob": "7b0428899b64a9986689dc5723d119b4356eb06b",
+                    "answer_key": "5 đơn vị.",
+                    "skill_ids": [
+                      "G10-B10-NORM_DISTANCE"
+                    ],
+                    "content_clarification": "Correct vector notation versus scalar length."
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY19",
+                    "source_blob": "7b0428899b64a9986689dc5723d119b4356eb06b",
+                    "answer_key": "Chỉ v⃗ cùng phương với u⃗ (v⃗=3u⃗).",
+                    "skill_ids": [
+                      "G10-B10-COLLINEAR_COORDS"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY20",
+                    "source_blob": "7b0428899b64a9986689dc5723d119b4356eb06b",
+                    "answer_key": "M(1;2), G(1;3).",
+                    "skill_ids": [
+                      "G10-B10-MIDPOINT_CENTROID"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY-RIVER-TR01",
+                    "source_blob": "7b0428899b64a9986689dc5723d119b4356eb06b",
+                    "answer_key": "Trôi 36 m về Đông (thời gian qua sông 12 s).",
+                    "skill_ids": [
+                      "G10-B10-OPERATIONS"
+                    ],
+                    "content_clarification": "State bank orientation and north-south width explicitly, as already implied by source lesson and solution."
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY21",
+                    "source_blob": "313a27573cd679234c62f5041587ea86de684733",
+                    "answer_key": "u⃗·v⃗=−3, tích âm.",
+                    "skill_ids": [
+                      "G10-B11-GEOMETRIC_DOT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY22",
+                    "source_blob": "313a27573cd679234c62f5041587ea86de684733",
+                    "answer_key": "u⃗·v⃗=2.",
+                    "skill_ids": [
+                      "G10-B11-COORDINATE_DOT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY23",
+                    "source_blob": "313a27573cd679234c62f5041587ea86de684733",
+                    "answer_key": "Có; tích vô hướng bằng 0 và cả hai vectơ khác 0.",
+                    "skill_ids": [
+                      "G10-B11-PERPENDICULAR"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY24",
+                    "source_blob": "313a27573cd679234c62f5041587ea86de684733",
+                    "answer_key": "Công −30 J khi ngược hướng; 0 J khi vuông góc.",
+                    "skill_ids": [
+                      "G10-B11-APPLICATION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIV-TRY-FORCE-TR01",
+                    "source_blob": "313a27573cd679234c62f5041587ea86de684733",
+                    "answer_key": "Lực thứ ba có độ lớn 4√3 N, ngược hướng hợp lực F₁+F₂.",
+                    "skill_ids": [
+                      "G10-B11-GEOMETRIC_DOT"
+                    ]
+                  }
+                ],
+                "unchanged_count": 41
+              },
+              {
+                "shard": "g10-chv",
+                "before": "1aa067fd8a4d4b7e2e31ce8d57dee8c889028430",
+                "after": "c0c94a52c01a197a4b25e0f2bd372a8ff29c07e1",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G10-B12-P07",
+                    "source_blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+                    "answer_key": "∛7≈1,913; sai số khoảng 0,00006882<0,0005. Nhập căn bậc ba hoặc 7^(1/3), không chia 7 cho 3.",
+                    "skill_ids": [
+                      "G10-B12-CALCULATOR_APPROX"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY01",
+                    "source_blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+                    "answer_key": "0,33≈1/3; không bằng nhau.",
+                    "skill_ids": [
+                      "G10-B12-APPROX_CONCEPT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY02",
+                    "source_blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+                    "answer_key": "Số đúng thuộc [8,1;8,7] cm; Δₐ≤0,3 cm, không chắc bằng 0,3 cm.",
+                    "skill_ids": [
+                      "G10-B12-ABS_ERROR"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY03",
+                    "source_blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+                    "answer_key": "δₐ≤2%; không chắc bằng 2%.",
+                    "skill_ids": [
+                      "G10-B12-REL_ERROR"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY04",
+                    "source_blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+                    "answer_key": "7,35; sai số tuyệt đối 0,004.",
+                    "skill_ids": [
+                      "G10-B12-ROUNDING",
+                      "G10-B12-ABS_ERROR"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY-CALC-R01",
+                    "source_blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+                    "answer_key": "∛11≈2,224; sai số khoảng 0,00001991<0,0005. Nhập căn bậc ba hoặc 11^(1/3), không chia 11 cho 3.",
+                    "skill_ids": [
+                      "G10-B12-CALCULATOR_APPROX"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY05",
+                    "source_blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+                    "answer_key": "Trung bình cộng 5.",
+                    "skill_ids": [
+                      "G10-B13-MEAN"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY06",
+                    "source_blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+                    "answer_key": "Dãy 2,5,9,12; Q₂=7.",
+                    "skill_ids": [
+                      "G10-B13-MEDIAN"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY07",
+                    "source_blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+                    "answer_key": "Q₁=2, Q₂=4, Q₃=6.",
+                    "skill_ids": [
+                      "G10-B13-QUARTILES"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY08",
+                    "source_blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+                    "answer_key": "Hai mốt: 2 và 3, cùng tần số 2.",
+                    "skill_ids": [
+                      "G10-B13-MODE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY09",
+                    "source_blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+                    "answer_key": "Trung bình 10, trung vị 6; trung vị ít bị 28 chi phối hơn.",
+                    "skill_ids": [
+                      "G10-B13-INTERPRETATION",
+                      "G10-B13-MEAN",
+                      "G10-B13-MEDIAN"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY10",
+                    "source_blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+                    "answer_key": "R=8; ΔQ=6 (Q₁=3, Q₃=9).",
+                    "skill_ids": [
+                      "G10-B14-RANGE_IQR"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY11",
+                    "source_blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+                    "answer_key": "Trung bình 4; s²=8/3.",
+                    "skill_ids": [
+                      "G10-B14-VARIANCE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY12",
+                    "source_blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+                    "answer_key": "Trung bình 4 cm; s²=4 cm²; s=2 cm.",
+                    "skill_ids": [
+                      "G10-B14-VARIANCE",
+                      "G10-B14-STDDEV"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY13",
+                    "source_blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+                    "answer_key": "Q₁=2, Q₂=4, Q₃=6; hàng rào −4 và 12; chỉ 20 bất thường.",
+                    "skill_ids": [
+                      "G10-B14-OUTLIERS"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHV-TRY14",
+                    "source_blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+                    "answer_key": "Cả hai trung bình 4; s_A²=8/3, s_B²=32/3; B phân tán hơn.",
+                    "skill_ids": [
+                      "G10-B14-COMPARISON",
+                      "G10-B14-VARIANCE"
+                    ]
+                  }
+                ],
+                "unchanged_count": 24
+              }
+            ],
+            "notes": [
+              "B12-P07 cube root 7≈1.91293118277, abs error 0.00006881723; TRY-CALC-R01 cube root 11≈2.22398009057, abs error 0.00001990943. Both <0.0005; preserve actual calculator-operation requirement and no independent Mastery from answer reveal.",
+              "B12-P07 historical review_state RUNTIME_CANDIDATE_DELTA_C_REVIEW_PENDING preserved; this audit does not close that review gate.",
+              "Relative error uses source convention Δₐ/|a|; quartile convention excludes central value for odd n; no independent S1/PED signoff."
             ]
           }
         ]
