@@ -1342,5 +1342,109 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-T01",
+    "content_version": "SOURCE_BLOB_8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+    "stem": "Trong hình hộp $ABCD.A'B'C'D'$, hãy viết $\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA'}$ thành một vectơ; giải thích bằng hành trình từ $A$. Sau đó, nếu $\\vec a$ và $\\vec b$ lần lượt dài 2 và 5 với góc $60^\\circ$, dự đoán dấu và giá trị $\\vec a\\cdot\\vec b$.",
+    "answer_key": null,
+    "worked_solution": "Lần lượt theo ba cạnh của hình hộp, điểm kết thúc là $C'$, nên tổng bằng $\\overrightarrow{AC'}$. Tích vô hướng bằng $2\\cdot5\\cdot\\cos60^\\circ=5>0$; góc nhọn nên dấu dương. Nếu sai vectơ đường chéo, hãy vẽ đường đi đầu–đuôi trước khi áp dụng công thức.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+      "heading_id": "B06-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md",
+        "blob": "8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B06-T01",
+      "line": 96,
+      "original_local_id": "B06-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID",
+      "related_item_ids": [
+        "THPT-G12-B06-P06",
+        "THPT-G12-B06-C05"
+      ],
+      "distinct_task_reason": "Vector sum exact subtask only; second dot product uses lengths 2,5, not candidate 2,3."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-T01",
+    "content_version": "SOURCE_BLOB_4bfbed222d552f3ccb9c965616245015930ab1cd",
+    "stem": "Cho $A(2;-1;3)$ và $B(5;2;1)$. Không học thuộc công thức, hãy giải thích bằng thay đổi từng chiều vì sao $\\overrightarrow{AB}$ có tọa độ $(3;3;-2)$. Nếu điểm $N$ thuộc mặt phẳng $(Oyz)$ thì tọa độ nào của $N$ phải bằng 0?",
+    "answer_key": null,
+    "worked_solution": "Từ $A$ tới $B$, theo $x$ tăng $5-2=3$, theo $y$ tăng $2-(-1)=3$, theo $z$ giảm $1-3=-2$. Điểm nằm trên $(Oyz)$ có $x=0$. Nếu làm sai dấu $y$, hãy đặt hai số vào trục số và tính “cuối trừ đầu” một lần nữa.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4bfbed222d552f3ccb9c965616245015930ab1cd",
+      "heading_id": "B07-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md",
+        "blob": "4bfbed222d552f3ccb9c965616245015930ab1cd",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B07-T01",
+      "line": 74,
+      "original_local_id": "B07-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-T01",
+    "content_version": "SOURCE_BLOB_c85922428c85ddeb48cec5e2bd5953faa44207c8",
+    "stem": "Cho $\\vec u=(2;-1;3)$ và $\\vec v=(1;4;-2)$. Trước khi tính, hãy dự đoán dấu của $\\vec u\\cdot\\vec v$ từ dấu từng tích; rồi tính $2\\vec u-\\vec v$. Nêu khác biệt giữa việc trừ hai vectơ và trừ độ dài của chúng.",
+    "answer_key": null,
+    "worked_solution": "$\\vec u\\cdot\\vec v=2-4-6=-8<0$, nên góc giữa chúng là góc tù (cả hai khác không). $2\\vec u-\\vec v=(4;-2;6)-(1;4;-2)=(3;-6;8)$. Trừ vectơ phải trừ từng tọa độ và giữ hướng, không phải lấy hiệu hai số độ dài.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "c85922428c85ddeb48cec5e2bd5953faa44207c8",
+      "heading_id": "B08-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md",
+        "blob": "c85922428c85ddeb48cec5e2bd5953faa44207c8",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B08-T01",
+      "line": 106,
+      "original_local_id": "B08-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
