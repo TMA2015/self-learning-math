@@ -1258,5 +1258,197 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-TRY01",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "stem": "Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Nêu góc quay theo radian và độ dài cung đã đi.",
+    "answer_key": null,
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Góc quay \\(+2\\pi\\) rad. Một vòng dài \\(2\\pi R\\), nên với \\(R=2\\) cm, độ dài cung là \\(4\\pi\\) cm. Tia cuối trùng tia đầu không có nghĩa là bánh xe đứng yên.</p>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G11-B01-SIGNED_ROTATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+      "heading_id": "THPT-G11-CHI-TRY01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+        "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G11-CHI-TRY01"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-TRY02",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "stem": "Hai góc \\(-150^\\circ\\) và \\(210^\\circ\\) có cùng tia đầu Ox. Chúng có cùng tia cuối không? Viết các số đo cùng tia cuối với \\(210^\\circ\\).",
+    "answer_key": null,
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Có, vì \\(210^\\circ-(-150^\\circ)=360^\\circ\\). Các góc cùng tia cuối có số đo \\(210^\\circ+k\\cdot360^\\circ\\), \\(k\\in\\mathbb Z\\).</p>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G11-B01-COTERMINAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+      "heading_id": "THPT-G11-CHI-TRY02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+        "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G11-CHI-TRY02"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-TRY03",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "stem": "Cho quỹ đạo tròn bán kính 6800 km. Tính độ dài cung chắn góc \\(45^\\circ\\), làm tròn đến kilômét.",
+    "answer_key": null,
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Đổi \\(45^\\circ=\\pi/4\\) rad. Khi đó \\(s=6800\\cdot\\pi/4=1700\\pi\\approx5341\\) km. Đây là độ dài cung, không phải dây cung.</p>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G11-B01-ARC_LENGTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+      "heading_id": "THPT-G11-CHI-TRY03",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+        "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G11-CHI-TRY03"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-TRY04",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "stem": "Tính \\(\\sin(7\\pi/6)\\), \\(\\cos(7\\pi/6)\\) và \\(\\tan(7\\pi/6)\\).",
+    "answer_key": null,
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Góc \\(7\\pi/6\\) thuộc góc phần tư III, có góc tham chiếu \\(\\pi/6\\). Do đó \\(\\sin(7\\pi/6)=-1/2\\), \\(\\cos(7\\pi/6)=-\\sqrt3/2\\), \\(\\tan(7\\pi/6)=\\sqrt3/3\\).</p>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G11-B01-UNIT_CIRCLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+      "heading_id": "THPT-G11-CHI-TRY04",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+        "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G11-CHI-TRY04"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-TRY05",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "stem": "Với \\(\\alpha=3\\pi/2\\), xác định \\(\\sin\\alpha,\\cos\\alpha\\); xét sự tồn tại của \\(\\tan\\alpha,\\cot\\alpha\\).",
+    "answer_key": null,
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Điểm cuối \\((0;-1)\\) nên \\(\\sin\\alpha=-1\\), \\(\\cos\\alpha=0\\). Tang không xác định vì mẫu cos bằng 0; côtang bằng \\(0/(-1)=0\\).</p>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G11-B01-TRIG_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+      "heading_id": "THPT-G11-CHI-TRY05",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+        "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G11-CHI-TRY05"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-TRY06",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "stem": "Tính \\(\\sin(-\\pi/6)\\) và \\(\\cos(\\pi-\\pi/6)\\) dựa vào góc chuẩn \\(\\pi/6\\).",
+    "answer_key": null,
+    "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Với góc đối: \\(\\sin(-\\pi/6)=-\\sin(\\pi/6)=-1/2\\). Với góc bù: \\(\\cos(\\pi-\\pi/6)=-\\cos(\\pi/6)=-\\sqrt3/2\\).</p>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G11-B01-RELATED_ANGLES"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+      "heading_id": "THPT-G11-CHI-TRY06",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+        "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G11-CHI-TRY06"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
