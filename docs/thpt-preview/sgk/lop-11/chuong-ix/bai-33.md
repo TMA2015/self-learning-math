@@ -26,7 +26,7 @@
     f'(x)=3x^2-6x+2.
     \]
 
-    Kết quả \(f'(x)\) **không còn là một số cố định** mà là một hàm mới. Nếu muốn biết giá trị \(f'(x)\) đang biến đổi nhanh đến đâu quanh một điểm, ta lại lấy đạo hàm của **chính hàm mới này**:
+    Khi xét đạo hàm tại mọi điểm của một khoảng, ta có hàm mới \(f'\). Hàm này có thể biến đổi hoặc là hàm hằng; tại một điểm cụ thể, \(f'(x_0)\) là một số. Nếu muốn biết giá trị \(f'(x)\) đang biến đổi nhanh đến đâu quanh một điểm, ta lại lấy đạo hàm của **chính hàm mới này**:
 
     \[
     f''(x)=(f'(x))'=6x-6.
@@ -34,9 +34,9 @@
 
     Hai dấu phẩy trong \(f''\) có nghĩa **lấy đạo hàm hai lần liên tiếp**, hoàn toàn không phải bình phương. Chẳng hạn, ở \(x=1\), ta có \(f'(1)=-1\), \(f''(1)=0\); còn \((f'(1))^2=1\). Chúng là hai đại lượng khác nhau.
 
-    Nếu hàm số \(f\) có đạo hàm trên một khoảng và **hàm \(f'\) cũng có đạo hàm** tại điểm đang xét, thì \(f''\) tồn tại tại điểm đó. Việc \(f'\) tồn tại chưa tự bảo đảm \(f''\) tồn tại; để lấy đạo hàm lần hai, phải kiểm rằng **lần một còn khả vi** ở điểm ấy.
+    Nếu hàm số \(f\) có đạo hàm trên một khoảng và **hàm \(f'\) cũng có đạo hàm** tại điểm đang xét, thì \(f''\) tồn tại tại điểm đó. Việc \(f'\) tồn tại chưa tự bảo đảm \(f''\) tồn tại; để lấy đạo hàm lần hai, phải kiểm rằng **hàm đạo hàm còn có đạo hàm** ở điểm ấy.
 
-    Chẳng hạn, hàm \(f(x)=x|x|\) có \(f'(x)=2|x|\) với mọi \(x\) (tại \(0\), thương sai phân là \(|h|\to0\)). Nhưng \(f'\) có góc nhọn tại \(0\): độ dốc bên trái là \(-2\), bên phải là \(2\). Vì vậy \(f''(0)\) không tồn tại, dù \(f'(0)=0\).
+    Chẳng hạn, hàm \(f(x)=x|x|\) bằng \(x^2\) khi \(x\ge0\) và bằng \(-x^2\) khi \(x<0\). Với \(x\ne0\), đạo hàm của hai nhánh cho \(f'(x)=2|x|\); tại \(0\), thương sai phân là \(\frac{h|h|-0}{h}=|h|\to0\), nên công thức cũng đúng tại \(0\). Nhưng đồ thị \(f'\) có điểm gấp khúc tại \(0\): độ dốc bên trái là \(-2\), bên phải là \(2\). Vì vậy \(f''(0)\) không tồn tại, dù \(f'(0)=0\).
 
     Ta cũng có thể lặp lại thao tác với hàm lượng giác hoặc hàm mũ. Ví dụ \(y=\sin(2x+\pi/4)\) có
 
@@ -100,7 +100,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B33-01_R00.svg" alt="Hai ô đồ thị riêng biệt: bên trái vận tốc v(t)=3t²−6t+2 có dạng parabol, bên phải gia tốc a(t)=6t−6 có dạng đường thẳng"><figcaption><strong>Đọc hình:</strong> hình bên trái mô tả \(v(t)=3t^2-6t+2\), hình bên phải mô tả \(a(t)=6t-6\). Khi vận tốc đạt giá trị nhỏ nhất tại \(t=1\), gia tốc bằng \(0\) vì độ dốc đồ thị \(v\) lúc ấy bằng \(0\). <strong>Hai ô có trục dọc và đơn vị khác nhau</strong>, nên không so sánh độ cao hai đường; hãy so dấu của từng đại lượng và quan hệ \(a=v'\).</figcaption></figure>
 
-    Cũng cần phân biệt **gia tốc âm** với **chậm dần**. Giả sử tại một thời điểm \(v=-3\) m/s và \(a=-2\) m/s². Vật đang đi theo chiều âm, đồng thời vận tốc trở nên âm hơn trong một khoảng ngắn: **tốc độ \(|v|\) tăng**. Nếu \(v=-3\) nhưng \(a=+2\), gia tốc hướng ngược vận tốc nên tốc độ đang giảm, miễn là chưa đổi chiều. Vì thế, khi nhận xét nhanh dần hay chậm dần, phải xem **cả dấu của \(v\) lẫn dấu của \(a\)**.
+    Cũng cần phân biệt **gia tốc âm** với **chậm dần**. Giả sử tại một thời điểm \(v=-3\) m/s và \(a=-2\) m/s². Vật đang đi theo chiều âm, đồng thời vận tốc trở nên âm hơn trong một khoảng ngắn: **tốc độ \(|v|\) tăng**. Nếu \(v=-3\) nhưng \(a=+2\), gia tốc hướng ngược vận tốc nên tốc độ đang giảm, miễn là chưa đổi chiều. Vì thế, tại thời điểm \(v\ne0\), nếu \(v,a\) cùng dấu thì tốc độ đang tăng; nếu trái dấu thì tốc độ đang giảm. Khi \(a=0\) tại một thời điểm, chưa thể kết luận chuyển động đều trên cả khoảng; khi \(v=0\), cần xét thêm chuyển động lân cận thời điểm ấy.
 
     **Vận dụng.** Một vật chuyển động theo \(s(t)=t^3-3t^2+2t\) (m), với \(t\) tính bằng giây trong một khoảng chứa \(0{,}5\) và \(1{,}5\). Tính \(v\) và \(a\) tại hai thời điểm đó. Ở mỗi thời điểm, vật đang nhanh dần hay chậm dần?
 
