@@ -24,8 +24,10 @@
   "auto_grade_initial": false,
   "nullable_unverified_fields": [
     "problem_type_id",
-    "rubric"
+    "rubric",
+    "answer_key"
   ],
   "private_rd1_allowed": false,
-  "public_selfcheck_mastery": false
+  "public_selfcheck_mastery": false,
+  "answer_key_null_rule": "Allowed only for a legacy source with combined answer and solution; answer_representation=COMBINED_ANSWER_AND_SOLUTION, nonempty worked_solution, auto_grade=false. Split only during academic audit."
 }
