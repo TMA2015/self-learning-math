@@ -991,8 +991,8 @@ if(require.main===module){
   ].includes(x));
   if(process.env.GITHUB_OUTPUT)fs.appendFileSync(process.env.GITHUB_OUTPUT,
    "impact="+out.impact+"\nfull_suite="+out.full_suite+"\nchanged_lessons="+out.changed_lessons+
-   "\nqa_smoke="+qaSmoke+"\n");
-  else process.stdout.write("impact="+out.impact+"\nfull_suite="+out.full_suite+"\nchanged_lessons="+out.changed_lessons+"\n");
+   "\nreason="+out.reason+"\nqa_smoke="+qaSmoke+"\n");
+  else process.stdout.write("impact="+out.impact+"\nfull_suite="+out.full_suite+"\nchanged_lessons="+out.changed_lessons+"\nreason="+out.reason+"\n");
   console.error("RELEASE_CI_IMPACT "+JSON.stringify(out));
  }
 }
