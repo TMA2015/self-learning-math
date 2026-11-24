@@ -59,7 +59,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Classify exact #1039 W1/W2/W3/W4/W5/W6/W7/W8/W9/W10 or retain full regression
+      - name: Classify exact #1039 W1/W2/W3/W4/W5/W6/W7/W8/W9/W10/W11 or retain full regression
         id: delta
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
@@ -102,6 +102,9 @@ jobs:
             elif grep -Fxq "impact=SCOPED_LESSON" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "reason=OWNER_1039_W10_EXACT_SOURCE_AND_BROWSER" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "changed_lessons=docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md,docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md" "$RUNNER_TEMP/first-paint-impact.txt"; then
               BEFORE_SHA="$BASE_SHA" SCOPED_LESSONS="docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md,docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md" node scripts/test-thpt-scoped-deploy-proof.cjs
               mode=G12_W10
+            elif grep -Fxq "impact=SCOPED_LESSON" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "reason=OWNER_1039_W11_EXACT_SOURCE_AND_BROWSER" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "changed_lessons=docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md,docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md,docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md" "$RUNNER_TEMP/first-paint-impact.txt"; then
+              BEFORE_SHA="$BASE_SHA" SCOPED_LESSONS="docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md,docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md,docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md" node scripts/test-thpt-scoped-deploy-proof.cjs
+              mode=G12_W11
             fi
           fi
           echo "mode=$mode" >> "$GITHUB_OUTPUT"
@@ -120,7 +123,7 @@ jobs:
           python -m pip install --disable-pip-version-check 'mkdocs-material>=9,<10'
           mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
       - name: Install Chromium for affected routes only
-        if: steps.delta.outputs.mode == 'G11_W1' || steps.delta.outputs.mode == 'G11_W2' || steps.delta.outputs.mode == 'G11_W3' || steps.delta.outputs.mode == 'G11_W4' || steps.delta.outputs.mode == 'G11_W5' || steps.delta.outputs.mode == 'G11_W6' || steps.delta.outputs.mode == 'G11_W7' || steps.delta.outputs.mode == 'G12_W8' || steps.delta.outputs.mode == 'G12_W9' || steps.delta.outputs.mode == 'G12_W10'
+        if: steps.delta.outputs.mode == 'G11_W1' || steps.delta.outputs.mode == 'G11_W2' || steps.delta.outputs.mode == 'G11_W3' || steps.delta.outputs.mode == 'G11_W4' || steps.delta.outputs.mode == 'G11_W5' || steps.delta.outputs.mode == 'G11_W6' || steps.delta.outputs.mode == 'G11_W7' || steps.delta.outputs.mode == 'G12_W8' || steps.delta.outputs.mode == 'G12_W9' || steps.delta.outputs.mode == 'G12_W10' || steps.delta.outputs.mode == 'G12_W11'
         run: |
           npm install --no-save playwright@1.56.1
           npx playwright install chromium

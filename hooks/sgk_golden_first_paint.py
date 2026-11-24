@@ -738,8 +738,85 @@ def _render_w10(output: str, uri: str) -> str:
 })();
 </script></article>""", 1)
 
+# #1039 W11 exact G12 ChIV routes; additive only.
+_W11_ROUTES = {f"thpt-preview/sgk/lop-12/chuong-iv/bai-{n}.md": (n, 7) for n in range(11, 14)}
+
+def _w11_hero_first_paint(html: str, number: int) -> str:
+    # Same public nav contract as the existing grade 12 runtime; B01 edge,
+    # B05 crosses to ChII. No changes to G10/G11 or later G12 routes.
+    matches = list(_HERO.finditer(html))
+    if len(matches) != 1 or 'data-sgk-lesson-nav=' in html:
+        return html
+    hero = matches[0]
+    body = hero.group(2)
+    if '<div' in body or len(_OLD_NAV.findall(body)) > 1:
+        return html
+    def choice(label, kind, dest):
+        if dest is None:
+            return '<span class="thpt-sgk-nav-unavailable" aria-disabled="true">' + label + '</span>'
+        return '<a href="' + dest + '" data-sgk-lesson-link="' + kind + '">' + label + '</a>'
+    previous = "../../chuong-iii/bai-10/" if number == 11 else "../bai-" + str(number - 1) + "/"
+    following = "../bai-" + str(number + 1) + "/" if number < 13 else "../../chuong-v/bai-14/"
+    nav = ('<nav class="thpt-r4-lesson-tabs thpt-sgk-lesson-nav" data-sgk-lesson-nav="12-B' +
+           str(number) + '" aria-label="Điều hướng bài học theo SGK">' +
+           choice("← Bài trước", "previous", previous) +
+           choice("Bài sau →", "next", following) +
+           choice("Core và Luyện tập", "practice", "../luyen-tap/") +
+           choice("Tự kiểm tra", "selfcheck", "../tu-kiem-tra-chuong/") + '</nav>')
+    new_hero = hero.group(1) + _OLD_NAV.sub('', body) + '\n' + nav + '\n' + hero.group(3)
+    return html[:hero.start()] + new_hero + html[hero.end():]
+
+def _render_w11(output: str, uri: str) -> str:
+    number, count = _W11_ROUTES[uri]
+    rendered = _render_first_paint(output, ("thpt-g10-knowledge-ap1", "thpt-g10-chiv-golden"))
+    if rendered != output:
+        rendered = _w11_hero_first_paint(rendered, number)
+    if rendered == output or 'data-sgk-golden-first-paint="true"' not in rendered or len(_H2.findall(rendered)) != 4 or rendered.count('data-sgk-lesson-nav="') != 1:
+        raise RuntimeError("W11 Golden first-paint build contract failed: " + uri)
+    rendered = _w8_mistake_disclosures(rendered, number, count)
+    # B11/B12 lack a source palette; B13 already has exact Golden colors.
+    if number in (11, 12):
+        rendered = rendered.replace('</article>', """<style id="sgk-g12-w11-semantic">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style></article>""", 1)
+    # Reuse the existing W1 Golden values, no shared CSS/JS mutations.
+    return rendered.replace(
+        '</article>',
+        """<style id="sgk-g12-w11-golden-formula">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border: 1px solid var(--slm-g10-line);
+  border-radius: 8px; padding: 12px 14px; margin: 14px 0;
+  line-height: 1.75; overflow-x: auto; max-width: 100%;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border-color: #58677f; color: #eef4ff;
+}
+</style><script id="sgk-g12-w11-golden-tabs">
+(() => {
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/lop-12\/chuong-iv\/bai-1[1-3]\/?$/.test(location.pathname))return;
+  const a=document.querySelector("article[data-sgk-golden-first-paint]");
+  const t=a?.querySelector(":scope > .tabbed-set");
+  if(!t||t.dataset.g12W11Golden==="true")return;
+  const labels=[...t.querySelectorAll(":scope > .tabbed-labels > label")];
+  const radios=[...t.querySelectorAll(':scope > input[type="radio"]')];
+  if(labels.length!==4||radios.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+  const sync=()=>labels.forEach((l,i)=>l.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  t.addEventListener("change",sync);sync();t.dataset.g12W11Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script></article>""", 1)
+
 def on_post_page(output, page, config):
     uri = page.file.src_uri
+    if uri in _W11_ROUTES:
+        return _render_w11(output, uri)
     if uri in _W10_ROUTES:
         return _render_w10(output, uri)
     if uri in _W9_ROUTES:

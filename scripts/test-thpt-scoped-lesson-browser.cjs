@@ -27,7 +27,8 @@ async function goldenW1Parity(page,browser,width,rel){
  const w8=/\/lop-12\/chuong-i\/bai-[1-5]\.md$/.test(rel);
  const w9=/\/lop-12\/chuong-ii\/bai-[6-8]\.md$/.test(rel);
  const w10=/\/lop-12\/chuong-iii\/bai-(?:9|10)\.md$/.test(rel);
- if(!w1&&!w2&&!w3&&!w4&&!w5&&!w6&&!w7&&!w8&&!w9&&!w10)return;
+ const w11=/\/lop-12\/chuong-iv\/bai-1[1-3]\.md$/.test(rel);
+ if(!w1&&!w2&&!w3&&!w4&&!w5&&!w6&&!w7&&!w8&&!w9&&!w10&&!w11)return;
  const cases={
   article:["article.md-content__inner",["fontFamily","fontSize","fontWeight","lineHeight"]],
   tabs:["article .tabbed-labels",["gap","paddingTop","paddingBottom","borderBottomWidth"]],
@@ -62,7 +63,7 @@ async function goldenW1Parity(page,browser,width,rel){
   const tabs=page.locator("article .tabbed-labels > label");
   for(const scheme of ["default","slate"]){
    // W2: independent palette samples; do not reuse mutated MathJax/disclosure DOM from the previous interaction pass.
-   if((w2||w3||w4||w5||w6||w7||w8||w9||w10)&&scheme==="slate"){
+   if((w2||w3||w4||w5||w6||w7||w8||w9||w10||w11)&&scheme==="slate"){
     assert((await page.reload({waitUntil:"load",timeout:60000}))?.ok(),rel+" slate reload");
     await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,null,{timeout:30000});
    }
@@ -107,15 +108,15 @@ async function goldenW1Parity(page,browser,width,rel){
    const source=fs.readFileSync(path.join(root,rel),"utf8");
    const expected=[...source.split('=== "Lỗi thường gặp"')[1].matchAll(/^    ### (4\.\d+\..+)$/gm)].map(x=>x[1]);
    assert(expected.length>0,rel+" expected recovery headings");
-   if(w2||w3||w4||w5||w6||w7||w8||w9||w10){
-    assert.equal(expected.length,w10?7:w9?(rel.endsWith("/bai-7.md")?7:8):w8?(rel.endsWith("/bai-5.md")?8:7):w7?({28:6,29:6,30:7,31:8,32:10,33:8})[Number(rel.match(/bai-(\d+)\.md$/)[1])]:rel.endsWith("/bai-5.md")?5:w6&&/bai-2[5-7]\.md$/.test(rel)?8:6);
+   if(w2||w3||w4||w5||w6||w7||w8||w9||w10||w11){
+    assert.equal(expected.length,w11?7:w10?7:w9?(rel.endsWith("/bai-7.md")?7:8):w8?(rel.endsWith("/bai-5.md")?8:7):w7?({28:6,29:6,30:7,31:8,32:10,33:8})[Number(rel.match(/bai-(\d+)\.md$/)[1])]:rel.endsWith("/bai-5.md")?5:w6&&/bai-2[5-7]\.md$/.test(rel)?8:6);
     const raw=await page.evaluate(async()=>{
      const doc=new DOMParser().parseFromString(await (await fetch(location.href)).text(),"text/html");
      const panel=doc.querySelectorAll("article .tabbed-block")[3];
      return {titles:[...panel.querySelectorAll(":scope > details.tip > summary")].map(s=>s.textContent.trim()),links:[...panel.querySelectorAll(":scope > p")].filter(p=>p.querySelector("strong")?.textContent==="Học tiếp:").flatMap(p=>[...p.querySelectorAll("a")].map(a=>a.getAttribute("href")))};
     });
     assert.deepEqual(raw.titles,expected,rel+" source-to-static DOM recovery titles including math");
-    assert.equal(raw.links.length,w8||w9||w10?2:w7?0:rel.endsWith("/bai-5.md")?0:rel.endsWith("/bai-6.md")||rel.endsWith("/bai-7.md")?2:3,rel+" Học tiếp links preserved");
+    assert.equal(raw.links.length,w8||w9||w10||w11?2:w7?0:rel.endsWith("/bai-5.md")?0:rel.endsWith("/bai-6.md")||rel.endsWith("/bai-7.md")?2:3,rel+" Học tiếp links preserved");
    }
    assert.equal(await panel.locator(":scope > h3").count(),0,rel+" exposed tab4 headings");
    assert.equal(await tips.count(),expected.length,rel+" one accordion per recovery");
@@ -124,7 +125,7 @@ async function goldenW1Parity(page,browser,width,rel){
    const gold=await referenceTip.evaluate(styles);
    for(let k=0;k<expected.length;k++){
     const item=tips.nth(k),summary=item.locator(":scope > summary");
-    if((w2||w3||w4||w5||w6||w7||w8||w9||w10)&&expected[k].includes("\\(")){
+    if((w2||w3||w4||w5||w6||w7||w8||w9||w10||w11)&&expected[k].includes("\\(")){
      const count=(expected[k].match(/\\\(/g)||[]).length;
      try{
       await page.waitForFunction(({k,count})=>document.querySelectorAll("article .tabbed-block")[3].querySelectorAll(":scope > details.tip > summary")[k].querySelectorAll("mjx-container").length===count,{k,count});
@@ -135,7 +136,7 @@ async function goldenW1Parity(page,browser,width,rel){
     }else assert.equal((await summary.innerText()).trim(),expected[k],rel+" exact recovery title");
     assert.equal(await item.evaluate(x=>x.open),false,rel+" accordion initially closed");
     assert.deepEqual(await item.evaluate(styles),gold,rel+" B01 tab4 Golden computed parity");
-    assert.deepEqual(await item.locator(":scope > p > strong:first-child").allTextContents(),[w7||w8||w9||w10?"Sai ở đâu:":"Dấu hiệu:","Vì sao sai:","Cách sửa:"],rel+" original recovery paragraphs");
+    assert.deepEqual(await item.locator(":scope > p > strong:first-child").allTextContents(),[w7||w8||w9||w10||w11?"Sai ở đâu:":"Dấu hiệu:","Vì sao sai:","Cách sửa:"],rel+" original recovery paragraphs");
     assert(!(await item.locator(":scope > p").first().isVisible()),rel+" closed body must be hidden");
     await summary.click();
     assert(await item.evaluate(x=>x.open),rel+" disclosure opens");

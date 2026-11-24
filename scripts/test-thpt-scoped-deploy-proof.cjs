@@ -801,6 +801,37 @@ function verifyG11W7(previous,current,changed,expected){
  console.log("PASS #1039 W7 six source locks, eight reused SVG, frozen W1–W6, assessment boundary, exact hook");
 }
 
+const G12_W11_ROWS=[[11,"f3fc0f654a21af7ec72de657643ef97488413dcb","88dda34ee093c97e0cc3b844b6857168ee630506",7,"docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md"],[12,"2ea14427518e58acb03e85d64dcc6b18d55f8798","e0ffd6f8389218585baa7e47b2558b3c83248034",7,"docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md"],[13,"51b5cf8243b4793e159db862379a21df60ff75bd","8007752c3027a88281aa3192ef30ba557d0df648",7,"docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md"]],G12_W11_NEW=[["docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261124.svg","cb98c0d7e33eab90f1b1fd4e09e6dba925539e25"],["docs/assets/images/thpt/G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg","299037dee91e0c91db3e5c911982bbebbb514ae0"],["docs/assets/images/thpt/G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg","b04dafd5b4ff5f56be0893d3a52bba5121b64808"],["docs/assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg","af5e42bcb3b150c706d472a92be96399b480e02c"],["docs/assets/images/thpt/G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg","9fb3c7377877eaea2b5de466659c85437e95a7b7"],["docs/assets/images/thpt/G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg","01143627de4f6c90e3a74f6945c284c76f256c4a"]],G12_W11_UPDATED=[],G12_W11_EXISTING=[],G12_W11_FILES=["docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md","docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
+function verifyG12W11(previous,current,changed,expected){
+ assert.equal(previous,"cfd2f3e5494bbf0d48a9f2838dcc4104d3586ecc");
+ assert.deepEqual(changed.slice().sort(),G12_W11_FILES.slice().sort());
+ assert.deepEqual(expected.slice().sort(),G12_W11_ROWS.map(x=>x[4]).sort());
+ const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
+ const receipt=read(current,G11_W1_HANDOFF);
+ assert.equal(blob(read(previous,G11_W1_HANDOFF)),"07a9d19fa60117f99130788f4bc8c58752d1834f");assert.equal(blob(receipt),"f9ea6b18f934d29f6a9549272fc42ac467d88da8");assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
+ const hook="hooks/sgk_golden_first_paint.py",old=read(previous,hook).toString("utf8"),now=read(current,hook).toString("utf8");
+ assert.equal(blob(read(current,hook)),"f984730b64fc19502a91603706c93e4c29c2d35c");
+ const a=now.indexOf("# #1039 W11 exact G12 ChIV routes;"),b=now.indexOf("def on_post_page(output, page, config):");assert(a>0&&b>a);
+ assert.equal((now.slice(0,a)+now.slice(b)).replace("    if uri in _W11_ROUTES:\n        return _render_w11(output, uri)\n",""),old,"prior route hook unchanged");
+ for(const [n,oldSha,newSha,count,file] of G12_W11_ROWS){
+  assert.equal(blob(read(previous,file)),oldSha);
+  const source=read(current,file),content=source.toString("utf8");
+  assert.equal(blob(source),newSha);assert.equal(blob(fs.readFileSync(path.join(root,file))),newSha);
+  assert.deepEqual(content.split("\n").filter(l=>l.startsWith('=== "')),['=== "Khám phá kiến thức"','=== "Kiến thức SGK"','=== "Ví dụ"','=== "Lỗi thường gặp"']);
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final|g12-chi-selfcheck|g12-chapter-selfcheck)/i.test(content));
+  const recovery=content.split('=== "Lỗi thường gặp"')[1];
+  assert.equal(recovery.split("\n").filter(l=>/^    ### 4\.\d+\./.test(l)).length,count);
+  assert.equal(recovery.split("\n").filter(l=>l.startsWith("    **Sai ở đâu:**")).length,count);
+  assert(recovery.includes("**Học tiếp:**")&&recovery.includes('class="thpt-r4-footnote"'));
+  assert(receipt.toString("utf8").includes(oldSha)&&receipt.toString("utf8").includes(newSha));
+  console.log("SCOPED_G12_W11_SOURCE_PASS "+file+" "+newSha);
+ }
+ for(const [file,h] of G12_W11_NEW){assert.throws(()=>read(previous,file));assert.equal(blob(read(current,file)),h);assert.equal(blob(fs.readFileSync(path.join(root,file))),h);}
+ for(const [file,o,h] of G12_W11_UPDATED){assert.equal(blob(read(previous,file)),o);assert.equal(blob(read(current,file)),h);assert.equal(blob(fs.readFileSync(path.join(root,file))),h);}
+ for(const [file,h] of G12_W11_EXISTING){assert.equal(blob(read(previous,file)),h);assert.equal(blob(read(current,file)),h);}
+ for(const [file] of [...G12_W11_NEW,...G12_W11_UPDATED,...G12_W11_EXISTING])cp.execFileSync("python3",["-c","import sys, xml.etree.ElementTree as ET; root=ET.fromstring(sys.stdin.buffer.read()); assert root.tag=='{http://www.w3.org/2000/svg}svg'"],{cwd:root,input:read(current,file)});
+ console.log("PASS #1039 W11 3 source locks, 6/6 valid SVG, exact hook and frozen W1-W10 diff");
+}
 const G12_W10_ROWS=[[9,"4571bac678c36c4fb06d6a7fde45b86703f8ebce","0ae1063568ddf02dec12f61ecc7733b643d1245a",7,"docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md"],[10,"32f4eda1cfd151592eef5a35921ad872c1f644c4","adfe3511b1335aed52047f00c11ecb3ad830d287",7,"docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md"]],G12_W10_NEW=[],G12_W10_UPDATED=[["docs/assets/images/thpt/FIG-G12-CHIII-B09-QUARTILES-R00.svg","51fd46bc69ee7c4279e5024aa29dc0e83651a1a7","e847496c567b7121d2121134401e36ead2040e1a"],["docs/assets/images/thpt/FIG-G12-CHIII-B09-RANGE-IQR-R00.svg","b0cdf1b1f00c5d70525dc8c889da48211aeb8cac","1a3cb6397d8ed8ca634724e2084c909747dee836"],["docs/assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg","ddff354dca86b0cfa1a223a8245b87044a6e93b1","120a1a0e7b360c8cde1742459174d747bca87de0"]],G12_W10_EXISTING=[],G12_W10_FILES=["docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md","docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md","docs/assets/images/thpt/FIG-G12-CHIII-B09-QUARTILES-R00.svg","docs/assets/images/thpt/FIG-G12-CHIII-B09-RANGE-IQR-R00.svg","docs/assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
 function verifyG12W10(previous,current,changed,expected){
  assert.equal(previous,"c35c2c01cea98a26dcdd071041a6c98da720bc53");
@@ -925,6 +956,7 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.length===G12_W11_FILES.length&&changed.every(x=>G12_W11_FILES.includes(x))){verifyG12W11(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;}
  if(changed.length===G12_W10_FILES.length&&changed.every(x=>G12_W10_FILES.includes(x))){verifyG12W10(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;}
  if(changed.length===G12_W9_FILES.length&&changed.every(x=>G12_W9_FILES.includes(x))){verifyG12W9(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;}
  if(changed.length===G12_W8_FILES.length&&changed.every(x=>G12_W8_FILES.includes(x))){
