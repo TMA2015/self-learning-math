@@ -901,12 +901,14 @@
   },
   {
     "item_id": "THPT-G11-B15-KFT01",
-    "content_version": "SOURCE_BLOB_95bbe5ecdd73b92f88176ae0245e11b1098d8e6e",
+    "content_version": "SOURCE_BLOB_95bbe5ecdd73b92f88176ae0245e11b1098d8e6e_AUTHOR_KEY_REVIEW_R01",
     "stem": "Dãy 2+1/n tiến gần số nào? Tại sao không cần có số hạng nào đúng bằng số đó?",
-    "answer_key": null,
-    "worked_solution": "tiến gần 2 vì 1/n→0. Đây là formative tự học, không ghi Skill Mastery.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Giới hạn bằng 2; mỗi số hạng lớn hơn 2 nhưng khoảng cách 1/n tiến về 0.",
+    "worked_solution": "Khi n là số nguyên dương và n tăng không giới hạn, 1/n→0. Vì vậy 2+1/n→2. Mọi số hạng đều lớn hơn 2 vì 1/n>0, nhưng khoảng cách từ số hạng đến 2 là 1/n, có thể nhỏ tùy ý khi n đủ lớn. Giới hạn mô tả giá trị mà dãy tiến gần, không bắt buộc một số hạng phải bằng giá trị đó. Đây là formative tự học, không ghi Skill Mastery.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B15-FINITE_SEQUENCE"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -930,16 +932,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B17-KFT01",
-    "content_version": "SOURCE_BLOB_36a7c21f3ae2474318c1e857acbcb640680e1326",
+    "content_version": "SOURCE_BLOB_36a7c21f3ae2474318c1e857acbcb640680e1326_AUTHOR_KEY_REVIEW_R01",
     "stem": "Giả sử f có giới hạn tại a bằng 3 nhưng f(a)=5. Hàm có liên tục tại a không? Vì sao? Sau đó chuyển sang Core/Practice để luyện độc lập, không tính điểm mastery từ câu tự thử.",
-    "answer_key": null,
-    "worked_solution": "không, vì giá trị tại a khác giới hạn.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Không liên tục tại a vì lim f(x)=3≠f(a)=5 khi x→a.",
+    "worked_solution": "Không. Hàm liên tục tại a khi có giá trị f(a), có giới hạn khi x→a và giới hạn đó bằng f(a). Ở đây hai giá trị tồn tại nhưng lim f(x)=3 khi x→a, trong khi f(a)=5. Vì 3≠5 nên điều kiện liên tục không thỏa.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -963,6 +967,6 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
