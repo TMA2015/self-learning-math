@@ -59,9 +59,11 @@
 
     Đó là lí do \(\sqrt{x^2}=|x|\), không luôn bằng \(x\). Ví dụ \(x=-5\) thì \(\sqrt{(-5)^2}=\sqrt{25}=5\ne-5\). Với căn bậc lẻ, \(\sqrt[3]{x^3}=x\) cho cả \(x<0\).
 
-    **Một hình có sẵn giúp đọc liên hệ:** Quan sát đồ thị \(2^x\) ở dưới. Điểm có hoành độ \(x=\frac12\) ứng với tung độ \(\sqrt2\): vì \((2^{1/2})^2=2\). Các điểm \(x=-1,0,1\) lần lượt ứng với \(\frac12,1,2\). Hình diễn tả cùng quy luật khi ta mở rộng tập hợp các số mũ, chứ không chứng minh được mọi công thức chỉ bằng đo hình.
+    **Liên hệ với đồ thị:** Quan sát đồ thị \(2^x\) ở dưới. Điểm có hoành độ \(x=\frac12\) ứng với tung độ \(\sqrt2\): vì \((2^{1/2})^2=2\). Các điểm \(x=-1,0,1\) lần lượt ứng với \(\frac12,1,2\). Hình diễn tả cùng quy luật khi ta mở rộng tập hợp các số mũ, chứ không chứng minh được mọi công thức chỉ bằng đo hình.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B18-01_R00.svg" alt="Đồ thị lũy thừa 2 mũ x có các điểm âm, không, một phần hai và dương đúng giá trị"><figcaption><strong>Hướng dẫn đọc:</strong> xem điểm màu cam tại \(x=\frac12\) có tung độ \(\sqrt2\); xem các mốc \((-2,\frac14)\), \((-1,\frac12)\), \((0,1)\), \((1,2)\), \((2,4)\). Cơ số 2 dương và lớn hơn 1, nên giá trị tăng khi số mũ tăng.</figcaption></figure>
+
+    Hai phép biến đổi căn nữa rất hữu ích. Khi các biểu thức đều xác định, \((\sqrt[n]{a})^m=\sqrt[n]{a^m}\) và \(\sqrt[n]{\sqrt[k]{a}}=\sqrt[nk]{a}\), với \(n,k\) nguyên dương, \(m\) nguyên. Chẳng hạn, \(\sqrt[3]{\sqrt{64}}=\sqrt[3]{8}=2=\sqrt[6]{64}\): căn bậc hai rồi căn bậc ba tương ứng với lũy thừa bậc sáu ngược lại. Khi có căn bậc chẵn phải kiểm dấu dưới căn; khi \(m<0\), không được dùng cơ số bằng 0.
 
     **Giới hạn áp dụng quan trọng:** SGK định nghĩa lũy thừa số mũ hữu tỉ tổng quát trong bài này với **cơ số \(a>0\)**. Căn bậc lẻ của số âm vẫn có nghĩa, ví dụ \(\sqrt[3]{-8}=-2\); nhưng không được từ trường hợp căn bậc lẻ suy ra một **cơ số âm** có lũy thừa với **mọi** số mũ thực. Nếu bỏ điều kiện \(a>0\), các phép biến đổi nâng lũy thừa thành lũy thừa khác có thể sai hoặc vô nghĩa.
 
@@ -83,15 +85,15 @@
 
     **So sánh cần để ý cơ số:** Nếu \(a>1\), từ \(x<y\) suy \(a^x<a^y\). Nếu \(0<a<1\), từ \(x<y\) lại suy \(a^x>a^y\). Khi so sánh \(8^{\sqrt3}\) và \(4^{2\sqrt3}\), đưa cả hai về cơ số \(2>1\): \(8^{\sqrt3}=2^{3\sqrt3}\), \(4^{2\sqrt3}=2^{4\sqrt3}\), nên biểu thức đầu nhỏ hơn biểu thức sau. Không so sánh riêng hai cơ số khi hai số mũ khác nhau.
 
-    **Máy tính cho giá trị gần đúng**, ví dụ \(2^{\sqrt2}\) không thể ghi bằng một số thập phân hữu hạn chính xác. Ta nhập đầy đủ số mũ có dấu ngoặc (hoặc phím lũy thừa tùy máy), rồi làm tròn theo yêu cầu. Hãy phân biệt kí hiệu \(=\) với \(\approx\): \(8^{2/3}=4\) chính xác, còn \(2^{\sqrt2}\approx2{,}6651\) khi làm tròn bốn chữ số thập phân.
+    **Máy tính cho giá trị gần đúng**, ví dụ khi tính \(2^{\sqrt2}\), máy hiển thị giá trị gần đúng. Ta nhập đầy đủ số mũ có dấu ngoặc (hoặc phím lũy thừa tùy máy), rồi làm tròn theo yêu cầu. Hãy phân biệt kí hiệu \(=\) với \(\approx\): \(8^{2/3}=4\) chính xác, còn \(2^{\sqrt2}\approx2{,}6651\) khi làm tròn bốn chữ số thập phân.
 
-    **Mô hình lãi kép:** Gửi \(P\) triệu đồng, lãi suất \(r\) mỗi kì, sau \(N\) kì nếu lãi nhập gốc ta có \(A=P(1+r)^N\). Nếu chỉ cập nhật sau từng kì trọn vẹn, \(N\) là số nguyên không âm; dùng \(N\) thực cần một **giả thiết mô hình bổ sung**, không tự coi mọi khoản gửi thực tế được tính theo số mũ không nguyên. Chính cách lũy thừa mô tả tăng trưởng theo tỉ lệ giúp môn học có ứng dụng.
+    **Mô hình lãi kép:** Gửi \(P\) triệu đồng, lãi suất \(r\) mỗi kì (viết dưới dạng số thập phân, chẳng hạn \(6\%=0{,}06\)), sau \(N\) kì nếu lãi nhập gốc ta có \(A=P(1+r)^N\). Nếu chỉ cập nhật sau từng kì trọn vẹn, \(N\) là số nguyên không âm; dùng \(N\) thực cần một **giả thiết mô hình bổ sung**, không tự coi mọi khoản gửi thực tế được tính theo số mũ không nguyên. Chính cách lũy thừa mô tả tăng trưởng theo tỉ lệ giúp môn học có ứng dụng.
 
-    **Vận dụng.** Không dùng máy tính, so sánh \(8^{\sqrt3}\) và \(4^{2\sqrt3}\). Với máy tính, ước lượng \(2^{\sqrt2}\) đến bốn chữ số sau dấu phẩy; phần nào là chính xác, phần nào gần đúng?
+    **Vận dụng.** Không dùng máy tính, so sánh \(9^{\sqrt2}\) và \(27^{\sqrt2}\). Với máy tính, ước lượng \(3^{\sqrt2}\) đến bốn chữ số sau dấu phẩy; phần nào là chính xác, phần nào gần đúng?
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** \(8^{\sqrt3}=2^{3\sqrt3}\), \(4^{2\sqrt3}=2^{4\sqrt3}\). Vì \(3\sqrt3<4\sqrt3\) và \(2>1\), nên \(8^{\sqrt3}<4^{2\sqrt3}\) là kết luận **chính xác**. Máy tính cho \(2^{\sqrt2}\approx2{,}6651\): kết quả thập phân là **gần đúng** sau làm tròn.
+        **Lời giải:** \(9^{\sqrt2}=3^{2\sqrt2}\), \(27^{\sqrt2}=3^{3\sqrt2}\). Vì \(2\sqrt2<3\sqrt2\) và \(3>1\), nên \(9^{\sqrt2}<27^{\sqrt2}\) là kết luận **chính xác**. Máy tính cho \(3^{\sqrt2}\approx4{,}7288\): kết quả thập phân là **gần đúng** sau làm tròn.
 
     ??? tip "Kiểm lỗi"
 
@@ -115,7 +117,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Căn bậc \(n\) của một số thực</strong><p>Cho \(a\in\mathbb R\), \(n\in\mathbb N^*\). Số thực \(b\) là <strong>căn bậc \(n\)</strong> của \(a\) nếu \(b^n=a\). Khi \(n\) lẻ, mỗi \(a\) có một căn bậc \(n\) thực. Khi \(n\) chẵn, \(a>0\) có hai căn đối nhau; \(\sqrt[n]a\) chỉ <strong>căn số học không âm</strong>. Nếu \(a<0\), không có căn bậc chẵn thực; căn bậc \(n\) của 0 là 0.</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Căn bậc \(n\) (khi các biểu thức có nghĩa)</strong><p>Với cùng bậc \(n\), \(\sqrt[n]a\sqrt[n]b=\sqrt[n]{ab}\); \(\dfrac{\sqrt[n]a}{\sqrt[n]b}=\sqrt[n]{a/b}\) khi mẫu khác 0 và mọi căn xác định. Với lũy thừa, \(\sqrt[n]{a^n}=a\) nếu \(n\) lẻ, còn \(\sqrt[n]{a^n}=|a|\) nếu \(n\) chẵn. Không bỏ điều kiện dấu ở căn bậc chẵn.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Căn bậc \(n\) (khi các biểu thức có nghĩa)</strong><p>Với cùng bậc \(n\), \(\sqrt[n]a\sqrt[n]b=\sqrt[n]{ab}\); \(\dfrac{\sqrt[n]a}{\sqrt[n]b}=\sqrt[n]{a/b}\) khi mẫu khác 0 và mọi căn xác định. Với lũy thừa, \(\sqrt[n]{a^n}=a\) nếu \(n\) lẻ, còn \(\sqrt[n]{a^n}=|a|\) nếu \(n\) chẵn. Ngoài ra, \((\sqrt[n]{a})^m=\sqrt[n]{a^m}\) và \(\sqrt[n]{\sqrt[k]{a}}=\sqrt[nk]{a}\) với \(n,k\) nguyên dương, \(m\) nguyên, khi mọi biểu thức đều có nghĩa. Không bỏ điều kiện dấu ở căn bậc chẵn và điều kiện khác 0 khi số mũ âm.</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Lũy thừa với số mũ hữu tỉ</strong><p>Với <strong>\(a>0\)</strong>, số hữu tỉ \(r=\dfrac mn\), \(m\in\mathbb Z\), \(n\in\mathbb N^*\), đặt \(a^r=a^{m/n}=\sqrt[n]{a^m}=(\sqrt[n]a)^m\). Giá trị không phụ thuộc cách biểu diễn cùng một số hữu tỉ \(r\). Các tính chất lũy thừa mũ nguyên mở rộng cho trường hợp này khi cơ số dương.</p></div>
 
