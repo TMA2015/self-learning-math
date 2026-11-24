@@ -1,0 +1,2090 @@
+[
+  {
+    "item_id": "THPT-G12-B14-C01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Mặt phẳng x−2y+3z−4=0 có pháp tuyến nào?",
+    "answer_key": "(1,-2,3)",
+    "worked_solution": "Đọc hệ số x,y,z; (1,-2,3) khác 0.",
+    "skill_ids": [
+      "G12-CHV-B14-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-C01 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-P01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Tìm một n vuông góc với u=(1,2,0),v=(0,1,2).",
+    "answer_key": "(4,-2,1)",
+    "worked_solution": "u×v=(4,-2,1); hai tích vô hướng lần lượt 4-4 và -2+2 đều 0.",
+    "skill_ids": [
+      "G12-CHV-B14-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-P01 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-A01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Hai mép mái có hướng (1,0,1) và (0,2,1). Tìm hướng vuông góc mái.",
+    "answer_key": "(-2,-1,2)",
+    "worked_solution": "Tích có hướng (-2,-1,2), kiểm trực giao với cả hai mép.",
+    "skill_ids": [
+      "G12-CHV-B14-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-A01 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-C02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Qua M(0,1,-1), n=(1,2,3) viết mặt phẳng.",
+    "answer_key": "x+2y+3z+1=0",
+    "worked_solution": "x+2(y−1)+3(z+1)=0 ⇒ x+2y+3z+1=0.",
+    "skill_ids": [
+      "G12-CHV-B14-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-C02 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-P02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Qua M(2,0,1), n=(1,-2,2), viết (P).",
+    "answer_key": "x−2y+2z−4=0",
+    "worked_solution": "(x−2)−2y+2(z−1)=0 ⇒ x−2y+2z−4=0.",
+    "skill_ids": [
+      "G12-CHV-B14-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-P02 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-A02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Mặt sàn ngang qua điểm A(1,2,4). Viết phương trình của sàn.",
+    "answer_key": "z=4",
+    "worked_solution": "Mặt ngang có pháp tuyến (0,0,1); đi qua z=4 nên z−4=0.",
+    "skill_ids": [
+      "G12-CHV-B14-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-A02 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-C03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "A(1,0,0),B(1,1,0),C(1,0,1). Viết (ABC).",
+    "answer_key": "x=1",
+    "worked_solution": "AB=(0,1,0),AC=(0,0,1) ⇒ n=(1,0,0); qua A ⇒ x−1=0.",
+    "skill_ids": [
+      "G12-CHV-B14-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-C03 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-P03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "A(0,0,0),B(1,1,0),C(0,0,1). Tìm mặt phẳng.",
+    "answer_key": "x−y=0",
+    "worked_solution": "AB=(1,1,0), AC=(0,0,1), n=(1,-1,0) theo hệ số khác 0; qua O ⇒ x−y=0.",
+    "skill_ids": [
+      "G12-CHV-B14-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-P03 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-A03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Ba đỉnh tường (4,0,0),(0,4,0),(4,0,2). Viết mặt phẳng tường.",
+    "answer_key": "x+y−4=0",
+    "worked_solution": "Hai vectơ trong tường (-4,4,0),(0,0,2) có pháp tuyến cùng phương (1,1,0); qua (4,0,0).",
+    "skill_ids": [
+      "G12-CHV-B14-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-A03 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-C04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Qua (2,1,0) song song Ox và Oz. Viết mặt phẳng.",
+    "answer_key": "y=1",
+    "worked_solution": "Có 2 hướng (1,0,0),(0,0,1), pháp tuyến (0,1,0); qua điểm cho trước ⇒ y=1.",
+    "skill_ids": [
+      "G12-CHV-B14-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-C04 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-P04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Mặt phẳng chứa trục Oy và điểm (1,0,2). Viết phương trình.",
+    "answer_key": "2x−z=0",
+    "worked_solution": "Hai hướng Oy=(0,1,0) và (1,0,2), n=(2,0,-1); qua O.",
+    "skill_ids": [
+      "G12-CHV-B14-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-P04 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-A04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Mái qua P(0,0,2), song song hai hướng (1,1,0),(0,1,1). Viết mặt mái.",
+    "answer_key": "x−y+z−2=0",
+    "worked_solution": "n=(1,-1,1); qua P ⇒ x−y+z−2=0.",
+    "skill_ids": [
+      "G12-CHV-B14-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-A04 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-C05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "x−2y+z=1 và 2x−4y+2z=5 có vị trí gì?",
+    "answer_key": "Song song phân biệt",
+    "worked_solution": "Hai pháp tuyến tỉ lệ 2, nhưng nếu nhân cả phương trình đầu với 2 có vế phải 2 khác 5.",
+    "skill_ids": [
+      "G12-CHV-B14-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-C05 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-P05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Hai mặt 2x+y−z=0 và x−2y=0 có vuông góc?",
+    "answer_key": "Có",
+    "worked_solution": "n1=(2,1,-1), n2=(1,-2,0), dot=2−2+0=0.",
+    "skill_ids": [
+      "G12-CHV-B14-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-P05 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-A05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Mặt sàn z=0 và tường x=0 có vuông góc?",
+    "answer_key": "Có",
+    "worked_solution": "Pháp tuyến (0,0,1) và (1,0,0) có dot=0.",
+    "skill_ids": [
+      "G12-CHV-B14-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-A05 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-C06",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Khoảng cách O tới x+2y+2z−3=0?",
+    "answer_key": "1",
+    "worked_solution": "Tử |−3|=3, mẫu √9=3.",
+    "skill_ids": [
+      "G12-CHV-B14-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-C06 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-P06",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "M(2,-1,1), P:2x+y+2z−1=0. Tính d.",
+    "answer_key": "4/3",
+    "worked_solution": "Tử |4−1+2−1|=4, mẫu 3.",
+    "skill_ids": [
+      "G12-CHV-B14-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-P06 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-A06",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Hai mặt sàn z=0 và trần z=3 có khoảng cách bao nhiêu mét nếu tọa độ mét?",
+    "answer_key": "3m",
+    "worked_solution": "Chọn điểm O thuộc sàn, d(O,z−3=0)=3m.",
+    "skill_ids": [
+      "G12-CHV-B14-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-A06 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-C07",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "C(0,0,2),R=3; sàn z=0. Bán kính giao?",
+    "answer_key": "√5",
+    "worked_solution": "r=√(3²−2²)=√5.",
+    "skill_ids": [
+      "G12-CHV-B14-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-C07 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-P07",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "C(1,2,1),R=2; sàn z=0. Bán kính giao?",
+    "answer_key": "√3",
+    "worked_solution": "h=1, r=√(4−1)=√3.",
+    "skill_ids": [
+      "G12-CHV-B14-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-P07 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-A07",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Bóng phủ của nguồn cầu đặt cao 6m, bán kính 10m trên nền ngang có bán kính?",
+    "answer_key": "8m",
+    "worked_solution": "h=6<R=10 nên r=√(100−36)=8m.",
+    "skill_ids": [
+      "G12-CHV-B14-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B14-A07 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-C01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Đường thẳng qua O hướng (1,0,2)?",
+    "answer_key": "(t,0,2t)",
+    "worked_solution": "M=(0,0,0)+t(1,0,2).",
+    "skill_ids": [
+      "G12-CHV-B15-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-C01 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-P01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Qua (-1,0,4), hướng (3,2,-1), viết tham số.",
+    "answer_key": "(-1+3t,2t,4−t)",
+    "worked_solution": "Cùng một t nhân từng thành phần của u.",
+    "skill_ids": [
+      "G12-CHV-B15-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-P01 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-A01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Drone xuất phát (0,2,1), bay thẳng theo tốc độ (1,-1,2) m/s. Vị trí sau t giây?",
+    "answer_key": "(t,2−t,1+2t)",
+    "worked_solution": "Vị trí=điểm đầu+t·v, điều kiện vật lý t≥0; đường thẳng hình học có t∈R.",
+    "skill_ids": [
+      "G12-CHV-B15-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-A01 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-C02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Qua A(0,0,0), B(2,0,1).",
+    "answer_key": "(2t,0,t)",
+    "worked_solution": "AB=(2,0,1), t=0→A,t=1→B.",
+    "skill_ids": [
+      "G12-CHV-B15-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-C02 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-P02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Qua A(1,2,0),B(1,5,3).",
+    "answer_key": "(1,2+3t,3t)",
+    "worked_solution": "AB=(0,3,3) không phải vectơ 0.",
+    "skill_ids": [
+      "G12-CHV-B15-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-P02 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-A02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Cáp căng từ (0,0,4) tới (4,2,0). Viết quỹ đạo cáp.",
+    "answer_key": "(4t,2t,4−4t)",
+    "worked_solution": "AB=(4,2,-4), đoạn vật lý 0≤t≤1; đường thẳng kéo dài t∈R.",
+    "skill_ids": [
+      "G12-CHV-B15-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-A02 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-C03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Qua O, hướng (1,2,3). Viết chính tắc.",
+    "answer_key": "x/1=y/2=z/3",
+    "worked_solution": "Khử tham số từ (t,2t,3t).",
+    "skill_ids": [
+      "G12-CHV-B15-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-C03 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-P03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Qua (1,2,0), hướng (0,1,-2). Viết dạng không chia cho 0.",
+    "answer_key": "x=1; y−2=z/(−2)",
+    "worked_solution": "x là hằng, chỉ khử tham số từ y=2+t và z=−2t.",
+    "skill_ids": [
+      "G12-CHV-B15-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-P03 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-A03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Đường trục thẳng đứng qua (2,3,0) theo hướng Oz có phương trình?",
+    "answer_key": "x=2, y=3, z=t",
+    "worked_solution": "Hướng (0,0,1); không tạo x/0 hoặc y/0.",
+    "skill_ids": [
+      "G12-CHV-B15-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-A03 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-C04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "d=(t,2t,3). Điểm M(2,4,3) thuộc d?",
+    "answer_key": "Có",
+    "worked_solution": "t=2 thỏa x=2,y=4,z cố định 3.",
+    "skill_ids": [
+      "G12-CHV-B15-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-C04 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-P04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "d=(1+2t,3−t,0). M(5,1,0) thuộc d?",
+    "answer_key": "Có",
+    "worked_solution": "t=2 thỏa x=5,y=1,z=0.",
+    "skill_ids": [
+      "G12-CHV-B15-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-P04 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-A04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Vị trí p(t)=(1+t,2+t,3−t). Tại t=3 drone ở đâu?",
+    "answer_key": "(4,5,0)",
+    "worked_solution": "Thay cùng t=3 cho ba tọa độ.",
+    "skill_ids": [
+      "G12-CHV-B15-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-A04 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-C05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "u=(1,2,0),v=(2,4,0). Hai hướng?",
+    "answer_key": "Cùng phương",
+    "worked_solution": "v=2u.",
+    "skill_ids": [
+      "G12-CHV-B15-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-C05 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-P05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "u=(1,0,1),v=(1,0,-1). Hai hướng?",
+    "answer_key": "Vuông góc",
+    "worked_solution": "u·v=1−1=0.",
+    "skill_ids": [
+      "G12-CHV-B15-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-P05 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-A05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Hai hành lang có hướng (2,1,0),(-1,2,0). Các hướng vuông góc?",
+    "answer_key": "Có",
+    "worked_solution": "Tích vô hướng −2+2=0.",
+    "skill_ids": [
+      "G12-CHV-B15-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-A05 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-C06",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "d1=(t,0,0), d2=(0,s,0). Có giao?",
+    "answer_key": "Cắt tại O",
+    "worked_solution": "x,y buộc t=s=0, z đều 0; hai hướng không cùng phương.",
+    "skill_ids": [
+      "G12-CHV-B15-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-C06 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-P06",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "d1=(t,1,0), d2=(0,s,1). Quan hệ?",
+    "answer_key": "Chéo nhau",
+    "worked_solution": "Không thể giao vì z luôn là 0 và 1; hai hướng độc lập.",
+    "skill_ids": [
+      "G12-CHV-B15-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-P06 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-A06",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Hai cáp d1=(t,0,2),d2=(0,s,2). Chúng giao đâu?",
+    "answer_key": "(0,0,2)",
+    "worked_solution": "Từ x=y=0 t=s=0; cùng cao độ z=2.",
+    "skill_ids": [
+      "G12-CHV-B15-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-A06 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-C07",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "d=(1+t,0,1), P:x=3. Tìm giao.",
+    "answer_key": "(3,0,1)",
+    "worked_solution": "1+t=3 ⇒ t=2.",
+    "skill_ids": [
+      "G12-CHV-B15-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-C07 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-P07",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "d=(1+2t,t,3−t), P:x+y+z=8. Tìm giao.",
+    "answer_key": "(5,2,1)",
+    "worked_solution": "Tổng 4+2t=8 ⇒ t=2; điểm (5,2,1).",
+    "skill_ids": [
+      "G12-CHV-B15-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-P07 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-A07",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Quỹ đạo drone (2t,0,5−t), t≥0, chạm mặt đất z=0 ở đâu?",
+    "answer_key": "(10,0,0) khi t=5",
+    "worked_solution": "Giải 5−t=0 ⇒ t=5; tọa độ (10,0,0).",
+    "skill_ids": [
+      "G12-CHV-B15-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B15-A07 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-C01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "u=(1,0,0),v=(0,1,0). Góc?",
+    "answer_key": "90°",
+    "worked_solution": "Dot=0 nên cosθ=0.",
+    "skill_ids": [
+      "G12-CHV-B16-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-C01 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-P01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "u=(1,1,0),v=(1,-1,0). Góc?",
+    "answer_key": "90°",
+    "worked_solution": "Dot=1−1=0.",
+    "skill_ids": [
+      "G12-CHV-B16-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-P01 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-A01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Hai hướng (1,0,0) và (1,1,0) tạo góc mấy độ?",
+    "answer_key": "45°",
+    "worked_solution": "Cosθ=1/√2, góc45°.",
+    "skill_ids": [
+      "G12-CHV-B16-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-A01 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-C02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "u=(1,0,0) và mặt z=0 tạo góc?",
+    "answer_key": "0°",
+    "worked_solution": "u·n=0 nên sinθ=0.",
+    "skill_ids": [
+      "G12-CHV-B16-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-C02 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-P02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "u=(0,0,1) và mặt z=0 tạo góc?",
+    "answer_key": "90°",
+    "worked_solution": "|u·n|/(|u||n|)=1.",
+    "skill_ids": [
+      "G12-CHV-B16-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-P02 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-A02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Đường dốc hướng (3,0,4) so với nền z=0 có góc?",
+    "answer_key": "arcsin(4/5) ≈53.13°",
+    "worked_solution": "Độ tăng theo pháp tuyến z là4 trên quãng dài5, sinθ=4/5.",
+    "skill_ids": [
+      "G12-CHV-B16-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-A02 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-C03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Hai mặt z=0 và x=0 tạo góc?",
+    "answer_key": "90°",
+    "worked_solution": "Pháp tuyến vuông góc.",
+    "skill_ids": [
+      "G12-CHV-B16-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-C03 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-P03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Hai mặt x+y=0 và x−y=0 tạo góc?",
+    "answer_key": "90°",
+    "worked_solution": "n1·n2=1−1=0.",
+    "skill_ids": [
+      "G12-CHV-B16-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-P03 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-A03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Mái z=x và nền z=0 tạo góc?",
+    "answer_key": "45°",
+    "worked_solution": "n_mái=(-1,0,1),n_nền=(0,0,1), cos=1/√2.",
+    "skill_ids": [
+      "G12-CHV-B16-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-A03 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-C04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "u=(0,0,1), mặt z=0. Quan hệ hướng?",
+    "answer_key": "Đường vuông góc mặt",
+    "worked_solution": "u cùng phương n=(0,0,1), góc90°.",
+    "skill_ids": [
+      "G12-CHV-B16-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-C04 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-P04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "u=(1,0,0), mặt z=0. Góc?",
+    "answer_key": "0°",
+    "worked_solution": "u·n=0, hướng song song mặt.",
+    "skill_ids": [
+      "G12-CHV-B16-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-P04 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-A04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Thang máy đi theo hướng Oz; sàn nằm z=2. Góc đường với sàn?",
+    "answer_key": "90°",
+    "worked_solution": "Oz cùng phương pháp tuyến mặt sàn.",
+    "skill_ids": [
+      "G12-CHV-B16-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-A04 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-C05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Đường có hướng (1,0,1) so với nền ngang?",
+    "answer_key": "45°",
+    "worked_solution": "Độ cao1 trên độ dài√2.",
+    "skill_ids": [
+      "G12-CHV-B16-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-C05 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-P05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Pháp tuyến mái n=(0,3,4); mặt đất n0=(0,0,1). Góc hai mặt?",
+    "answer_key": "arccos(4/5) ≈36.87°",
+    "worked_solution": "Cos góc giữa pháp tuyến =4/5.",
+    "skill_ids": [
+      "G12-CHV-B16-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-P05 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-A05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Một mái có n=(0,3,4) và nền z=0; độ nghiêng?",
+    "answer_key": "≈36.87°",
+    "worked_solution": "Lấy arccos(|n·n0|/(|n||n0|))=arccos(4/5).",
+    "skill_ids": [
+      "G12-CHV-B16-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B16-A05 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-C01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Tâm O, bán kính2, phương trình?",
+    "answer_key": "x²+y²+z²=4",
+    "worked_solution": "M cách O đúng2 nên OM²=4.",
+    "skill_ids": [
+      "G12-CHV-B17-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-C01 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-P01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "C(2,0,-1),R=3. Viết phương trình.",
+    "answer_key": "(x−2)²+y²+(z+1)²=9",
+    "worked_solution": "Trừ đúng tọa độ tâm, R²=9.",
+    "skill_ids": [
+      "G12-CHV-B17-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-P01 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-A01",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Bộ phát sóng tâm (0,0,5), bán kính 10m. Biên phủ 3D?",
+    "answer_key": "x²+y²+(z−5)²=100",
+    "worked_solution": "Mặt cầu bán kính10m quanh tâm; vùng phủ là bất đẳng thức ≤100 chứ không phải phương trình bề mặt.",
+    "skill_ids": [
+      "G12-CHV-B17-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-A01 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-C02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "x²+y²+z²−2x=0 có tâm và bán kính?",
+    "answer_key": "C(1,0,0), R=1",
+    "worked_solution": "(x−1)²+y²+z²=1.",
+    "skill_ids": [
+      "G12-CHV-B17-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-C02 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-P02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "x²+y²+z²+2x−4y+6z+5=0 có tâm, R?",
+    "answer_key": "C(-1,2,-3), R=3",
+    "worked_solution": "Hoàn chỉnh: (x+1)²+(y−2)²+(z+3)²=1+4+9−5=9.",
+    "skill_ids": [
+      "G12-CHV-B17-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-P02 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-A02",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "x²+y²+z²+4=0 có là mặt cầu thực?",
+    "answer_key": "Không",
+    "worked_solution": "Tổng ba bình phương ≥0 nên không thể bằng −4; R²<0.",
+    "skill_ids": [
+      "G12-CHV-B17-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-A02 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-C03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "C=O,R=3,P(1,1,1). Vị trí?",
+    "answer_key": "Trong khối cầu",
+    "worked_solution": "OP²=3<9.",
+    "skill_ids": [
+      "G12-CHV-B17-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-C03 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-P03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "C(1,0,0),R=2,P(4,0,0). Vị trí?",
+    "answer_key": "Ngoài khối cầu",
+    "worked_solution": "CP²=(4−1)²=9>4.",
+    "skill_ids": [
+      "G12-CHV-B17-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-P03 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-A03",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Mặt cầu tâm (0,0,3), R=5 cắt nền z=0 theo vòng tròn bán kính?",
+    "answer_key": "4m",
+    "worked_solution": "Khoảng cách tâm-nền3; r²=25−9=16 nên r=4.",
+    "skill_ids": [
+      "G12-CHV-B17-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-A03 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-C04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "A=(0,0,0),B=(2,0,0). Mặt cầu?",
+    "answer_key": "(x−1)²+y²+z²=1",
+    "worked_solution": "Tâm (1,0,0), R=1.",
+    "skill_ids": [
+      "G12-CHV-B17-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-C04 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-P04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "A(1,1,1), B(3,1,1). Mặt cầu?",
+    "answer_key": "(x−2)²+(y−1)²+(z−1)²=1",
+    "worked_solution": "Trung điểm(2,1,1), R=1.",
+    "skill_ids": [
+      "G12-CHV-B17-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-P04 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-A04",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Cáp đối diện A(0,0,0),B(0,6,8). Tâm và bán kính mặt cầu đường kính AB?",
+    "answer_key": "C(0,3,4), R=5",
+    "worked_solution": "AB=10, trung điểm (0,3,4), R=5.",
+    "skill_ids": [
+      "G12-CHV-B17-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-A04 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-C05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "C=O, R=3, mặt z=3 phân loại?",
+    "answer_key": "Tiếp xúc",
+    "worked_solution": "h=3=R.",
+    "skill_ids": [
+      "G12-CHV-B17-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-C05 — SGK_CORE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-P05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "C(0,0,1),R=5, mặt z=0 cắt theo vòng tròn bán kính?",
+    "answer_key": "2√6",
+    "worked_solution": "h=1<5, r=√(25−1)=√24=2√6.",
+    "skill_ids": [
+      "G12-CHV-B17-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-P05 — SGK_PRACTICE",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-A05",
+    "content_version": "G12-SGK-CHV-B14-B17-R01",
+    "stem": "Vùng phát sóng tâm (0,0,10),R=6m có chạm nền z=0 không?",
+    "answer_key": "Không",
+    "worked_solution": "h=10>R=6, không có điểm chung.",
+    "skill_ids": [
+      "G12-CHV-B17-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+      "heading": "#### THPT-G12-B17-A05 — SGK_APPLICATION",
+      "topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+        "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

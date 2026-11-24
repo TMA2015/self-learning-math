@@ -40,7 +40,10 @@
     "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
     "5646241f4bb72f12419aaf585ee1fbea6f4185d0",
     "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
-    "0ef0ad696e97d2549f29c5a22ba675970572a089"
+    "0ef0ad696e97d2549f29c5a22ba675970572a089",
+    "11eb2834cfdb4a24685157f84666c2bb0767970a",
+    "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
+    "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960"
   ],
   "projection_sources": [
     {
@@ -517,21 +520,36 @@
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
       "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd18/luyen-tap.md",
+      "blob": "de3db595b945156d80a8d777a64b190cb86fd338",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd18/tu-kiem-tra.md",
+      "blob": "cd3a3a626fe15e49f7c226caaf5b55b1c5d9d70d",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
+      "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 985,
-    "written_references": 197,
-    "topic_practice": 1085,
-    "topic_replay": 291,
-    "sgk_public_selfcheck": 289,
-    "placements": 2432,
-    "projection_field_differences": 3,
+    "formative_items": 1097,
+    "written_references": 228,
+    "topic_practice": 1292,
+    "topic_replay": 303,
+    "sgk_public_selfcheck": 313,
+    "placements": 2771,
+    "projection_field_differences": 4,
     "public_selfcheck_only_items": 135,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 200
+    "legacy_combined_answer_items": 240
   },
-  "scope": "CD01–17 + G10 ChI/ChII/ChIII/ChIV/ChVI/ChVII + G11 ChI/ChII/ChIV/ChV/ChVI/ChVII/ChIX + G12 ChI/ChII/ChIV public formative, public self-check and written references",
+  "scope": "CD01–18 + G10 ChI/ChII/ChIII/ChIV/ChVI/ChVII + G11 ChI/ChII/ChIV/ChV/ChVI/ChVII/ChIX + G12 ChI/ChII/ChIV/ChV public formative, public self-check and written references",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -556,6 +574,13 @@
       "projection": "CD15_PUBLIC_REPLAY",
       "fields": [
         "stem"
+      ]
+    },
+    {
+      "item_id": "THPT-TOP18-W07",
+      "projection": "CD18_PRACTICE",
+      "fields": [
+        "combined_answer_solution"
       ]
     }
   ],
@@ -948,6 +973,30 @@
           "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
         }
       ]
+    },
+    {
+      "topic": "CD18",
+      "new_formative": 40,
+      "new_written": 7,
+      "shared_sgk_formative": 120,
+      "shared_written": 40,
+      "practice": 207,
+      "replay": 12,
+      "placements": 219,
+      "answer_table_rows_checked": 12,
+      "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+      "projection_sources": [
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd18/luyen-tap.md",
+          "blob": "de3db595b945156d80a8d777a64b190cb86fd338",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        },
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd18/tu-kiem-tra.md",
+          "blob": "cd3a3a626fe15e49f7c226caaf5b55b1c5d9d70d",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        }
+      ]
     }
   ],
   "unstructured_projection_review": [
@@ -1037,7 +1086,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "125 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "200 records retain combined answer/solution (previous 167 +33 CĐ16/17), answer_key=null; manual review pending.",
+  "legacy_combined_answer_note": "240 records retain combined answer/solution (previous 200 +40 CĐ18), answer_key=null; manual review pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -1170,6 +1219,10 @@
     {
       "scope": "CD15–17",
       "note": "Original SGK markers have no topic outcome tag; omitted pending audit. G11 ChVII uses active SGK runtime source afc8ec... and retains historic topic source 564624... for equivalence review; never duplicate ID."
+    },
+    {
+      "scope": "CD18",
+      "note": "Reuse all 64 G12 ChII IDs, 96 G12 ChV IDs imported once from current packet source, retain historical topic source. 4 optional_after_b17 items kept optional; 40 own outcomes but 12 replay; coverage pending audit. No invented outcome tags for shared items."
     }
   ]
 }
