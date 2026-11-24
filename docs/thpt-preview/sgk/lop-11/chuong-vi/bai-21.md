@@ -18,13 +18,13 @@
 
 === "Khám phá kiến thức"
 
-    Em đã biết \(2^3=8\), \(\log_2 8=3\), và hai hàm mũ–lôgarit có thể tăng hoặc giảm theo cơ số. Khi câu hỏi đổi thành “\(2^x\) bằng bao nhiêu?” hoặc “\(2^x\) lớn hơn mức nào?”, ta phải tìm **nghiệm** của phương trình hay **tập nghiệm** của bất phương trình. Điểm cốt lõi: hàm mũ chỉ cho giá trị dương; lôgarit chỉ nhận đối số dương; bất đẳng thức đảo chiều chỉ vì **cơ số làm hàm nghịch biến**.
+    Em đã biết \(2^3=8\), \(\log_2 8=3\), và hai hàm mũ–lôgarit có thể tăng hoặc giảm theo cơ số. Khi câu hỏi đổi thành “Tìm \(x\) để \(2^x=8\)” hoặc “Tìm \(x\) để \(2^x>8\)”, ta phải tìm **nghiệm** của phương trình hay **tập nghiệm** của bất phương trình. Điểm cốt lõi: hàm mũ chỉ cho giá trị dương; lôgarit chỉ nhận đối số dương; bất đẳng thức đảo chiều chỉ vì **cơ số làm hàm nghịch biến**.
 
     ### 1.1. Phương trình mũ
 
     Xét \(2^{x+1}=\frac14\). Ta có \(\frac14=2^{-2}\), nên hai vế cùng cơ số 2 và \(x+1=-2\), vậy \(x=-3\). **Vì sao được so số mũ?** Với cơ số \(a>0,a\ne1\), hàm \(a^t\) đơn điệu nghiêm ngặt nên hai số mũ khác nhau không thể cho một kết quả giống nhau. Quy tắc này hoạt động cả khi \(0<a<1\), vì hàm tuy giảm nhưng vẫn nhận mỗi giá trị dương đúng một lần.
 
-    Phương trình \(a^x=b\) chỉ có nghiệm thực nếu **\(b>0\)**, vì \(a^x\) luôn dương. Khi \(b>0\), nghiệm duy nhất \(x=\log_a b\). Chẳng hạn \(10^{x-1}=2022\) không cần tìm cách viết 2022 thành lũy thừa nguyên của 10: lấy log được \(x=1+\log2022\), là biểu thức chính xác; số thập phân bấm máy chỉ gần đúng.
+    Với \(a>0,\ a\ne1\), phương trình \(a^x=b\) chỉ có nghiệm thực nếu **\(b>0\)**, vì \(a^x\) luôn dương. Khi \(b>0\), nghiệm duy nhất \(x=\log_a b\). Chẳng hạn \(10^{x-1}=2022\) không cần tìm cách viết 2022 thành lũy thừa nguyên của 10: lấy log được \(x=1+\log2022\), là biểu thức chính xác; số thập phân bấm máy chỉ gần đúng.
 
     **Vận dụng.** Giải \(3^{2x-1}=27\); giải thích vì sao \(2^x=-5\) không có nghiệm thực.
 
@@ -38,7 +38,7 @@
 
     ### 1.2. Phương trình lôgarit
 
-    Giải \(2\log_2 x=-3\): trước hết \(x>0\); chia hai vế cho 2 thì \(\log_2x=-\frac32\), nên \(x=2^{-3/2}>0\). Chính điều kiện đối số **dương** cho phép phép biến đổi sang mũ thực. Nếu bài có nhiều lôgarit, luôn kiểm tất cả các đối số của biểu thức ban đầu, không chỉ biểu thức sau khi rút gọn.
+    Giải \(2\log_2 x=-3\): trước hết \(x>0\); chia hai vế cho 2 thì \(\log_2x=-\frac32\), nên \(x=2^{-3/2}>0\). Chính điều kiện đối số **dương** cho phép biến đổi sang mũ thực. Nếu bài có nhiều lôgarit, luôn kiểm tất cả các đối số của biểu thức ban đầu, không chỉ biểu thức sau khi rút gọn.
 
     Ví dụ \(\log_3(x+1)=\log_3(x^2-1)\). Điều kiện \(x+1>0,\ x^2-1>0\) cho **\(x>1\)**. So sánh hai đối số được \(x+1=x^2-1\); nghiệm đại số \(-1\) và \(2\), nhưng chỉ \(2\) thỏa điều kiện. Nghiệm \(-1\) là **ngoại lai**, dù thỏa phương trình sau khi bỏ log.
 
@@ -122,7 +122,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Bất phương trình mũ cơ bản</strong><p>Bất phương trình \(a^x>b\) hoặc với các dấu \(\ge,<,\le\), trong đó \(a>0,\ a\ne1\), gọi là bất phương trình mũ cơ bản. Hàm \(a^x>0\) với mọi \(x\in\mathbb R\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Giải dạng \(a^x>b\)</strong><p>Nếu \(b\le0\), tập nghiệm là toàn \(\mathbb R\). Nếu \(b>0\), với \(a>1\) tập nghiệm \(x>\log_ab\); với \(0<a<1\) tập nghiệm <strong>\(x<\log_ab\)</strong>. Với dấu khác phải xét dấu của \(b\) và tính đơn điệu tương tự.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Giải dạng \(a^x>b\)</strong><p>Nếu \(b\le0\), tập nghiệm là toàn \(\mathbb R\). Nếu \(b>0\), với \(a>1\) tập nghiệm \(x>\log_ab\); với \(0<a<1\) tập nghiệm <strong>\(x<\log_ab\)</strong>. Với \(a^x\ge b\), thay dấu nghiêm bằng dấu có bằng. Với \(b\le0\), cả \(a^x<b\) và \(a^x\le b\) đều vô nghiệm. Với \(b>0\), \(a^x<b\) cho \(x<\log_a b\) nếu \(a>1\), và \(x>\log_a b\) nếu \(0<a<1\); dấu \(\le\) xử lí tương tự, lấy cả điểm bằng.</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — So sánh hai lũy thừa cùng cơ số</strong><p>Nếu \(a>1\), \(a^u>a^v\Leftrightarrow u>v\). Nếu \(0<a<1\), \(a^u>a^v\Leftrightarrow u<v\). Dấu thay đổi theo tính đồng biến hoặc nghịch biến, không phải vì biểu thức có chữ mũ.</p></div>
 
@@ -134,7 +134,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Bất phương trình lôgarit cơ bản</strong><p>Với \(a>0,\ a\ne1\), dạng cơ bản \(\log_ax>b\) hoặc \(\ge,<,\le\) có điều kiện <strong>\(x>0\)</strong>. Với đối số \(f(x)\), phải giải <strong>\(f(x)>0\)</strong> trước khi biến đổi.</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Giải dạng \(\log_ax>b\)</strong><p>Với \(a>1\), nghiệm \(x>a^b\). Với \(0<a<1\), nghiệm <strong>\(0<x<a^b\)</strong>. Không bỏ điều kiện \(x>0\) khi đổi chiều theo hàm nghịch biến.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Giải dạng \(\log_ax>b\)</strong><p>Với \(a>1\), nghiệm \(x>a^b\). Với \(0<a<1\), nghiệm <strong>\(0<x<a^b\)</strong>. Với dấu \(\ge\), lấy thêm điểm \(x=a^b\). Với \(\log_a x<b\), nghiệm là \(0<x<a^b\) khi \(a>1\), và \(x>a^b\) khi \(0<a<1\); dấu \(\le\) lấy thêm điểm bằng. Luôn giữ điều kiện \(x>0\).</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — So sánh hai lôgarit cùng cơ số</strong><p>Với \(a>1\), \(\log_au>\log_av\Leftrightarrow u>v>0\); với \(0<a<1\), \(\log_au>\log_av\Leftrightarrow0<u<v\). Các đối số phải <strong>đều dương</strong> trước khi so sánh.</p></div>
 
