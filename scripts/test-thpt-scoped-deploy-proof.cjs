@@ -801,6 +801,37 @@ function verifyG11W7(previous,current,changed,expected){
  console.log("PASS #1039 W7 six source locks, eight reused SVG, frozen W1–W6, assessment boundary, exact hook");
 }
 
+const G12_W10_ROWS=[[9,"4571bac678c36c4fb06d6a7fde45b86703f8ebce","0ae1063568ddf02dec12f61ecc7733b643d1245a",7,"docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md"],[10,"32f4eda1cfd151592eef5a35921ad872c1f644c4","adfe3511b1335aed52047f00c11ecb3ad830d287",7,"docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md"]],G12_W10_NEW=[],G12_W10_UPDATED=[["docs/assets/images/thpt/FIG-G12-CHIII-B09-QUARTILES-R00.svg","51fd46bc69ee7c4279e5024aa29dc0e83651a1a7","e847496c567b7121d2121134401e36ead2040e1a"],["docs/assets/images/thpt/FIG-G12-CHIII-B09-RANGE-IQR-R00.svg","b0cdf1b1f00c5d70525dc8c889da48211aeb8cac","1a3cb6397d8ed8ca634724e2084c909747dee836"],["docs/assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg","ddff354dca86b0cfa1a223a8245b87044a6e93b1","120a1a0e7b360c8cde1742459174d747bca87de0"]],G12_W10_EXISTING=[],G12_W10_FILES=["docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md","docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md","docs/assets/images/thpt/FIG-G12-CHIII-B09-QUARTILES-R00.svg","docs/assets/images/thpt/FIG-G12-CHIII-B09-RANGE-IQR-R00.svg","docs/assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
+function verifyG12W10(previous,current,changed,expected){
+ assert.equal(previous,"c35c2c01cea98a26dcdd071041a6c98da720bc53");
+ assert.deepEqual(changed.slice().sort(),G12_W10_FILES.slice().sort());
+ assert.deepEqual(expected.slice().sort(),G12_W10_ROWS.map(x=>x[4]).sort());
+ const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
+ const receipt=read(current,G11_W1_HANDOFF);
+ assert.equal(blob(read(previous,G11_W1_HANDOFF)),"07a9d19fa60117f99130788f4bc8c58752d1834f");assert.equal(blob(receipt),"e1dc88b8262862bafb88d51d0c0cf377823a48a9");assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
+ const hook="hooks/sgk_golden_first_paint.py",old=read(previous,hook).toString("utf8"),now=read(current,hook).toString("utf8");
+ assert.equal(blob(read(current,hook)),"75ec11492a16789608dd23b51ebcbf896d578846");
+ const a=now.indexOf("# #1039 W10 exact G12 ChIII routes;"),b=now.indexOf("def on_post_page(output, page, config):");assert(a>0&&b>a);
+ assert.equal((now.slice(0,a)+now.slice(b)).replace("    if uri in _W10_ROUTES:\n        return _render_w10(output, uri)\n",""),old,"prior route hook unchanged");
+ for(const [n,oldSha,newSha,count,file] of G12_W10_ROWS){
+  assert.equal(blob(read(previous,file)),oldSha);
+  const source=read(current,file),content=source.toString("utf8");
+  assert.equal(blob(source),newSha);assert.equal(blob(fs.readFileSync(path.join(root,file))),newSha);
+  assert.deepEqual(content.split("\n").filter(l=>l.startsWith('=== "')),['=== "Khám phá kiến thức"','=== "Kiến thức SGK"','=== "Ví dụ"','=== "Lỗi thường gặp"']);
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final|g12-chi-selfcheck|g12-chapter-selfcheck)/i.test(content));
+  const recovery=content.split('=== "Lỗi thường gặp"')[1];
+  assert.equal(recovery.split("\n").filter(l=>/^    ### 4\.\d+\./.test(l)).length,count);
+  assert.equal(recovery.split("\n").filter(l=>l.startsWith("    **Sai ở đâu:**")).length,count);
+  assert(recovery.includes("**Học tiếp:**")&&recovery.includes('class="thpt-r4-footnote"'));
+  assert(receipt.toString("utf8").includes(oldSha)&&receipt.toString("utf8").includes(newSha));
+  console.log("SCOPED_G12_W10_SOURCE_PASS "+file+" "+newSha);
+ }
+ for(const [file,h] of G12_W10_NEW){assert.throws(()=>read(previous,file));assert.equal(blob(read(current,file)),h);assert.equal(blob(fs.readFileSync(path.join(root,file))),h);}
+ for(const [file,o,h] of G12_W10_UPDATED){assert.equal(blob(read(previous,file)),o);assert.equal(blob(read(current,file)),h);assert.equal(blob(fs.readFileSync(path.join(root,file))),h);}
+ for(const [file,h] of G12_W10_EXISTING){assert.equal(blob(read(previous,file)),h);assert.equal(blob(read(current,file)),h);}
+ for(const [file] of [...G12_W10_NEW,...G12_W10_UPDATED,...G12_W10_EXISTING])cp.execFileSync("python3",["-c","import sys, xml.etree.ElementTree as ET; root=ET.fromstring(sys.stdin.buffer.read()); assert root.tag=='{http://www.w3.org/2000/svg}svg'"],{cwd:root,input:read(current,file)});
+ console.log("PASS #1039 W10 2 source locks, 3/3 valid SVG, exact hook and frozen W1-W9 diff");
+}
 const G12_W9_ROWS=[[6,"8991c8a30487fdf1db65cf31a19b0ed68ef52518","e3091a022ce73d2a355aaf8dd1acc292e7bafce3",8,"docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md"],[7,"4bfbed222d552f3ccb9c965616245015930ab1cd","c87cefbfe3dfe2bdcce4976a40aa1596f8fca31c",7,"docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md"],[8,"c85922428c85ddeb48cec5e2bd5953faa44207c8","757b85da3ebdc143be51b7816b142dbde13b11da",8,"docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md"]],G12_W9_NEW=[["docs/assets/images/thpt/G12_B06_FIG02_TETRA_CENTROID_AUTHORING_20261124.svg","ec871f9e8285f1f6ad203214b975a76783c7174b"],["docs/assets/images/thpt/G12_B06_FIG03_VECTOR_ANGLE_AUTHORING_20261124.svg","a3133220a16675ca3c719deea35b9d7e6476dc85"],["docs/assets/images/thpt/G12_B07_FIG02_DISPLACEMENT_AUTHORING_20261124.svg","498a7f687a493dc3cf4b03d4423eba5025559d8b"],["docs/assets/images/thpt/G12_B08_FIG02_PYRAMID_AUTHORING_20261124.svg","0d8e4b4fd4bbdc1c896143a74307b3ea5ff25367"],["docs/assets/images/thpt/G12_B08_FIG03_ROOF_AUTHORING_20261124.svg","7a9920c100572366b38937eda4ee22d769441aa5"]],G12_W9_UPDATED=[["docs/assets/images/thpt/FIG-G12-CHII-B07-R00.svg","979ca912e99fdadfc4e91ae0edad5db34fc13928","053c483242c92f11097b5d577aeb4ad5f832497a"]],G12_W9_EXISTING=[["docs/assets/images/thpt/FIG-G12-CHII-B06-R00.svg","26e388d873521aa5b0bae945343e69357490ec16"],["docs/assets/images/thpt/FIG-G12-CHII-B08-R00.svg","13445da079245a556a08e7a57069d9987097a0be"]],G12_W9_FILES=["docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md","docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md","docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md","docs/assets/images/thpt/G12_B06_FIG02_TETRA_CENTROID_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B06_FIG03_VECTOR_ANGLE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B07_FIG02_DISPLACEMENT_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B08_FIG02_PYRAMID_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B08_FIG03_ROOF_AUTHORING_20261124.svg","docs/assets/images/thpt/FIG-G12-CHII-B07-R00.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
 function verifyG12W9(previous,current,changed,expected){
  assert.equal(previous,"9dfb840e8967abcd0b5e6788d435447899524bbd");
@@ -894,6 +925,7 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.length===G12_W10_FILES.length&&changed.every(x=>G12_W10_FILES.includes(x))){verifyG12W10(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;}
  if(changed.length===G12_W9_FILES.length&&changed.every(x=>G12_W9_FILES.includes(x))){verifyG12W9(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;}
  if(changed.length===G12_W8_FILES.length&&changed.every(x=>G12_W8_FILES.includes(x))){
   verifyG12W8(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
