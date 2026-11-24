@@ -28,6 +28,8 @@
 
     Đây là điểm cốt lõi: **giới hạn xét ở gần \(x_0\)** chứ không bắt buộc biết hàm số **ngay tại \(x_0\)**. SGK định nghĩa qua dãy: nếu mọi dãy \((x_n)\) trong miền xác định, \(x_n\ne x_0\), \(x_n\to x_0\) đều cho \(f(x_n)\to L\) thì \(f(x)\to L\) khi \(x\to x_0\). Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.
 
+    Khi biết các giới hạn hữu hạn của hai biểu thức, ta có thể cộng, trừ, nhân chúng; phép chia chỉ áp dụng khi giới hạn mẫu khác 0. Chẳng hạn, với phân thức trên, ta phải khử nhân tử chung \(x-2\) khi \(x\ne2\) rồi mới thay \(x=2\), vì mẫu ban đầu tiến về 0.
+
     **Hai phía có thể không giống nhau.** Hãy xét một quy tắc tính phí: \(g(x)=1\) khi \(x<0\), \(g(x)=3\) khi \(x\ge0\). Khi tiến về 0 từ bên trái, mọi giá trị hàm bằng 1; từ bên phải bằng 3. Vậy giới hạn trái là 1, giới hạn phải là 3; **không có giới hạn hai phía** ở 0, dù \(g(0)=3\) hoàn toàn được định nghĩa.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B16_ONE_SIDED_JUMP_AUTHORING_20261123.svg" alt="Hàm số bằng một bên trái của 0 và bằng ba bên phải của 0 nên giới hạn hai phía khác nhau"><figcaption><strong>Hướng dẫn đọc:</strong> vòng tròn **rỗng** ở \((0,1)\) là phía trái không lấy giá trị tại 0; chấm **đặc** ở \((0,3)\) cho giá trị \(g(0)=3\). Hai nhánh tiến về hai độ cao khác nhau, nên không thể có một giới hạn hữu hạn hai phía.</figcaption></figure>
@@ -46,13 +48,15 @@
 
     ### 1.2. Giới hạn hữu hạn của hàm số tại vô cực
 
-    Tại điểm \(x_0\), ta thu nhỏ khoảng cách \(|x-x_0|\). Nhưng khi \(x\to+\infty\), ta không tới gần một số thực nào cả: \(x\) lớn hơn mọi mốc cho trước. Tương tự \(x\to-\infty\), \(x\) nhỏ hơn mọi mốc âm. Câu hỏi về **giới hạn hữu hạn** vẫn có nghĩa: chẳng hạn \(f(x)=2+\frac1x\) tiến gần 2 cả khi \(x\) rất lớn dương lẫn rất lớn âm.
+    Tại điểm \(x_0\), ta thu nhỏ khoảng cách \(|x-x_0|\). Nhưng khi \(x\to+\infty\), ta không tới gần một số thực nào cả: \(x\) lớn hơn mọi mốc cho trước. Tương tự \(x\to-\infty\), \(x\) nhỏ hơn mọi mốc âm. Để xét giới hạn tại \(+\infty\), hàm số cần xác định trên một khoảng dạng \((a;+\infty)\); với \(-\infty\), cần một khoảng dạng \((-\infty;b)\). Câu hỏi về **giới hạn hữu hạn** vẫn có nghĩa: chẳng hạn \(f(x)=2+\frac1x\) tiến gần 2 cả khi \(x\) rất lớn dương lẫn rất lớn âm.
 
     Với phân thức \(f(x)=\frac{3x^2+1}{x^2+2}\), cả tử và mẫu đều bậc hai. Chia cả hai cho \(x^2\) (với \(x\ne0\)) để được
     \[
     f(x)=\frac{3+1/x^2}{1+2/x^2}\longrightarrow3
     \]
     khi \(x\to+\infty\) **hoặc** \(x\to-\infty\). Mẫu chuẩn hóa tiến đến 1 khác 0; đây là lí do dùng được phép chia giới hạn hữu hạn.
+
+    Với số nguyên dương \(k\), \(x^k\to+\infty\) khi \(x\to+\infty\). Khi \(x\to-\infty\), \(x^k\to+\infty\) nếu \(k\) chẵn và \(x^k\to-\infty\) nếu \(k\) lẻ. Trong cả hai hướng, \(1/x^k\to0\).
 
     **Dấu của căn là điểm khó nhất khi \(x\to-\infty\).** Với \(\sqrt{x^2+1}/x\), ta phải viết \(\sqrt{x^2+1}=|x|\sqrt{1+1/x^2}\). Khi \(x\to+\infty\), \(|x|=x\) nên thương tiến đến \(1\). Khi \(x\to-\infty\), \(|x|=-x\) nên thương tiến đến \(-1\). Hai giới hạn **khác nhau**, dù biểu thức có cùng \(x^2\) trong căn.
 
@@ -72,7 +76,7 @@
 
     Với \(g(x)=1/(x-1)\), mẫu tiến đến 0 nhưng **dấu khác nhau**. Khi \(x\to1^+\), \(x-1>0\) và nhỏ, nên \(g(x)\to+\infty\); khi \(x\to1^-\), \(x-1<0\), nên \(g(x)\to-\infty\). Chỉ đọc “mẫu bằng 0” chưa cho biết là \(+\infty\) hay \(-\infty\). Trong trường hợp này không thể nói giới hạn hai phía là \(+\infty\) hay \(-\infty\).
 
-    Khi \(f(x)\to L\) hữu hạn khác 0 và \(g(x)\to0\), giới hạn thương \(f(x)/g(x)\) phụ thuộc **dấu của tử và mẫu ở gần điểm đang xét**. Nếu tử dương và mẫu tiến về \(0^+\), thương có thể tiến \(+\infty\); nếu mẫu tiến về \(0^-\), thương tiến \(-\infty\). Nếu cả tử và mẫu đều về 0, đó là dạng \(0/0\) chưa kết luận: hãy phân tích nhân tử, nhân liên hợp hoặc biến đổi hợp lệ trước.
+    Khi \(f(x)\to L\) hữu hạn khác 0 và \(g(x)\to0\), giới hạn thương \(f(x)/g(x)\) phụ thuộc **dấu của tử và mẫu ở gần điểm đang xét**. Nếu tử tiến tới \(L>0\) và mẫu dương tiến về 0, thương tiến tới \(+\infty\); nếu mẫu âm tiến về 0, thương tiến tới \(-\infty\). Nếu \(L<0\), dấu của giới hạn thương đảo lại. Nếu cả tử và mẫu đều về 0, đó là dạng \(0/0\) chưa kết luận: hãy phân tích nhân tử, nhân liên hợp hoặc biến đổi hợp lệ trước.
 
     **Một tình huống thực tiễn từ SGK:** Theo mô hình thuyết tương đối, khối lượng phụ thuộc vận tốc \(v\) của vật theo \(m(v)=\frac{m_0}{\sqrt{1-v^2/c^2}}\) với \(m_0>0\), \(c>0\), \(0\le v<c\). Khi \(v\to c^-\), mẫu dương và tiến về \(0^+\); vì vậy \(m(v)\to+\infty\) **trong mô hình này**. Không xét \(v>c\) vì không thuộc miền xác định thực của công thức.
 
@@ -104,19 +108,28 @@
 
     ### 2.2. Giới hạn hữu hạn của hàm số tại vô cực
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Giới hạn hữu hạn tại \(+\infty\) và \(-\infty\)</strong><p>Ta nói \(\lim_{x\to+\infty}f(x)=L\) khi với <strong>mọi</strong> dãy \(x_n\to+\infty\) thuộc miền xác định đủ xa, đều có \(f(x_n)\to L\). Tương tự, \(\lim_{x\to-\infty}f(x)=L\) khi điều ấy đúng với mọi dãy \(x_n\to-\infty\) thuộc miền xác định đủ xa về phía âm. \(L\) là số thực, còn \(x\) đang tiến ra vô hạn.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Giới hạn hữu hạn tại \(+\infty\) và \(-\infty\)</strong><p>Giả sử \(f\) xác định trên một khoảng \((a;+\infty)\). Ta nói \(\lim_{x\to+\infty}f(x)=L\) nếu với <strong>mọi</strong> dãy \(x_n\) trong khoảng này có \(x_n\to+\infty\), ta có \(f(x_n)\to L\). Tương tự, với \(f\) xác định trên một khoảng \((-\infty;b)\), \(\lim_{x\to-\infty}f(x)=L\) nếu điều ấy đúng với mọi dãy trong khoảng này có \(x_n\to-\infty\). \(L\) là số thực, còn \(x\) đang tiến ra vô hạn.</p></div>
 
-    **Giới hạn cơ bản:** \(1/x^k\to0\) khi \(x\to+\infty\) hoặc \(-\infty\) với \(k\) nguyên dương. Dùng các phép toán giới hạn hữu hạn khi giới hạn mẫu khác 0. Với căn bậc hai cần nhớ \(\sqrt{x^2}=|x|\): \(|x|=x\) khi \(x>0\), và \(|x|=-x\) khi \(x<0\).
+    **Giới hạn cơ bản:** Với \(k\) nguyên dương, \(x^k\to+\infty\) khi \(x\to+\infty\); khi \(x\to-\infty\), giới hạn là \(+\infty\) nếu \(k\) chẵn và \(-\infty\) nếu \(k\) lẻ. \(1/x^k\to0\) khi \(x\to+\infty\) hoặc \(-\infty\) với \(k\) nguyên dương. Dùng các phép toán giới hạn hữu hạn khi giới hạn mẫu khác 0. Với căn bậc hai cần nhớ \(\sqrt{x^2}=|x|\): \(|x|=x\) khi \(x>0\), và \(|x|=-x\) khi \(x<0\).
 
     **Ví dụ:** \(\lim_{x\to\pm\infty}\frac{3x^2+1}{x^2+2}=3\); nhưng \(\lim_{x\to+\infty}\frac{\sqrt{x^2+1}}x=1\) và \(\lim_{x\to-\infty}\frac{\sqrt{x^2+1}}x=-1\).
 
     ### 2.3. Giới hạn vô cực của hàm số tại một điểm
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Giới hạn vô cực tại \(x_0\)</strong><p>\(\lim_{x\to x_0}f(x)=+\infty\) nếu với mọi dãy \(x_n\to x_0\), \(x_n\ne x_0\), trong miền xác định, ta có \(f(x_n)\to+\infty\). Giới hạn \(-\infty\) được định nghĩa tương tự khi mọi dãy giá trị hàm tiến tới \(-\infty\). <strong>Không phải</strong> giới hạn hữu hạn là một số thực.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Giới hạn vô cực tại \(x_0\)</strong><p>\(\lim_{x\to x_0}f(x)=+\infty\) nếu với mọi dãy \(x_n\to x_0\), \(x_n\ne x_0\), trong miền xác định, ta có \(f(x_n)\to+\infty\). Giới hạn \(-\infty\) được định nghĩa tương tự khi mọi dãy giá trị hàm tiến tới \(-\infty\). Đây là giới hạn vô cực, không phải giới hạn hữu hạn; các kí hiệu vô cực không phải số thực.</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Giới hạn vô cực một phía</strong><p>Kí hiệu \(\lim_{x\to x_0^+}f(x)=\pm\infty\) khi \(x\) chỉ tiến tới \(x_0\) từ <strong>phía lớn hơn</strong> và giá trị hàm tiến vô cực có dấu tương ứng. Tương tự, \(\lim_{x\to x_0^-}f(x)=\pm\infty\) xét <strong>phía nhỏ hơn</strong>. Cần kiểm hai phía riêng; nếu hai giới hạn một phía không cùng chiều vô cực, không kết luận có giới hạn vô cực hai phía.</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Tích và thương khi có giới hạn vô cực</strong><p>Nếu \(f(x)\to L\ne0\) hữu hạn, \(g(x)\to+\infty\) hay \(-\infty\), thì \(f(x)g(x)\) tiến đến vô cực với dấu bằng tích dấu của \(L\) và \(g(x)\). Nếu \(f(x)\to L\ne0\), \(g(x)\to0\) với <strong>dấu xác định ở phía đang xét</strong>, thì \(f(x)/g(x)\) có giới hạn vô cực với dấu theo tử và mẫu. Nếu \(f(x)\to L\) hữu hạn, \(g(x)\to\pm\infty\), thì \(f(x)/g(x)\to0\) khi thương xác định. Không dùng trực tiếp các quy tắc này cho dạng \(0/0\), \(0\cdot\infty\) hoặc \(\infty/\infty\).</p></div>
+
+    Bảng dấu cho tích (một giới hạn hữu hạn khác 0, một giới hạn vô cực) và thương (tử tiến tới số thực khác 0, mẫu tiến về 0 với dấu cố định):
+
+    | Dấu của giới hạn hữu hạn/tử | Dấu của thừa số vô cực/mẫu | Giới hạn |
+    | :--: | :--: | :--: |
+    | Dương | Dương | \(+\infty\) |
+    | Dương | Âm | \(-\infty\) |
+    | Âm | Dương | \(-\infty\) |
+    | Âm | Âm | \(+\infty\) |
 
     **Tìm dấu và xác định phía:** \(1/(x-1)^2\to+\infty\) khi \(x\to1\) do mẫu dương ở cả hai bên. Ngược lại, \(1/(x-1)\to-\infty\) khi \(x\to1^-\), \(+\infty\) khi \(x\to1^+\). Trước khi kết luận hãy xét **miền xác định, phía tiếp cận và dấu**.
 
