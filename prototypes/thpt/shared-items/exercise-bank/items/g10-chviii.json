@@ -1,0 +1,752 @@
+[
+  {
+    "item_id": "THPT-G10-B23-C01",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Một cửa hàng có 4 loại bút mực và 3 loại bút chì khác nhau. Chọn đúng một cây bút. Có bao nhiêu cách chọn?",
+    "answer_key": "7 cách",
+    "worked_solution": "Hai loại lựa chọn loại trừ nhau nên áp dụng quy tắc cộng: 4+3=7.",
+    "skill_ids": [
+      "COUNT_ADDITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Chọn một trong hai nhóm, không chọn cả hai."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B23-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B23-C02",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Có 3 áo khác màu và 2 quần khác màu. Mỗi bộ gồm đúng một áo và một quần. Có bao nhiêu bộ?",
+    "answer_key": "6 bộ",
+    "worked_solution": "Mỗi lựa chọn áo kết hợp được với 2 quần: 3×2=6.",
+    "skill_ids": [
+      "COUNT_MULTIPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Hai bước lựa chọn diễn ra liên tiếp."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B23-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B23-P01",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Mã gồm hai chữ cái lấy từ {A,B,C}, được lặp, tiếp theo một chữ số từ 0 đến 9. Có bao nhiêu mã?",
+    "answer_key": "90 mã",
+    "worked_solution": "Có 3×3×10=90 mã; mỗi vị trí là một bước độc lập, có lặp chữ cái.",
+    "skill_ids": [
+      "COUNT_REPETITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Chú ý điều kiện được lặp."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B23-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B23-P02",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Từ A đến B có 3 tuyến đường, từ B đến C có 4 tuyến. Mọi hành trình A→C bắt buộc qua B và chọn một tuyến ở mỗi đoạn. Có bao nhiêu hành trình?",
+    "answer_key": "12 hành trình",
+    "worked_solution": "Quy tắc nhân cho hai chặng: 3×4=12.",
+    "skill_ids": [
+      "COUNT_PRODUCT_PATH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Mỗi tuyến đoạn đầu ghép được với tất cả tuyến đoạn sau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B23-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B23-P03",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Học sinh chọn tham gia đúng một câu lạc bộ: 5 CLB khoa học hoặc 4 CLB thể thao, danh sách hai nhóm không trùng nhau. Có bao nhiêu cách?",
+    "answer_key": "9 cách",
+    "worked_solution": "Hai nhóm lựa chọn rời nhau, cộng 5+4=9.",
+    "skill_ids": [
+      "COUNT_DISJOINT_OPTIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Không nhân vì chỉ tham gia một CLB."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B23-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B23-P04",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Một thực đơn có 2 món khai vị, 3 món chính, 2 món tráng miệng. Suất ăn gồm đúng một món mỗi nhóm. Có bao nhiêu thực đơn khác nhau?",
+    "answer_key": "12 thực đơn",
+    "worked_solution": "Quy tắc nhân ba bước: 2×3×2=12.",
+    "skill_ids": [
+      "COUNT_MENU"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Xác định rõ mỗi bước là chọn một món thuộc một nhóm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B23-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B24-C01",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Có 5 người khác nhau đứng thành một hàng. Có bao nhiêu thứ tự xếp?",
+    "answer_key": "120 cách",
+    "worked_solution": "Số hoán vị \\(5!=120\\).",
+    "skill_ids": [
+      "PERMUTATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Sắp xếp tất cả phần tử, xét thứ tự."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B24-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B24-C02",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Từ 7 học sinh khác nhau, chọn 3 người vào ba vị trí có tên A, B, C. Có bao nhiêu cách?",
+    "answer_key": "210 cách",
+    "worked_solution": "Chỉnh hợp chập 3 của 7: \\(A_7^3=7\\cdot6\\cdot5=210\\).",
+    "skill_ids": [
+      "ARRANGEMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Vai trò A/B/C khác nhau nên thứ tự quan trọng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B24-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B24-P01",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Chọn một nhóm gồm 3 học sinh từ 8 học sinh khác nhau, không phân vai. Có bao nhiêu nhóm?",
+    "answer_key": "56 nhóm",
+    "worked_solution": "\\(\\binom83=\\frac{8\\cdot7\\cdot6}{3\\cdot2\\cdot1}=56\\).",
+    "skill_ids": [
+      "COMBINATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Nhóm không phân biệt thứ tự."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B24-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B24-P02",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Một lớp có 6 ứng viên, chọn một lớp trưởng và một lớp phó (hai người khác nhau). Có bao nhiêu cách?",
+    "answer_key": "30 cách",
+    "worked_solution": "Có 6 lựa chọn lớp trưởng, sau đó 5 lựa chọn lớp phó: 6×5=30.",
+    "skill_ids": [
+      "ARRANGEMENT_WITH_ROLES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Hai chức danh phân biệt nên không dùng tổ hợp."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B24-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B24-P03",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Các chữ T, O, A, N khác nhau được sắp thành một dãy 4 chữ. Có bao nhiêu dãy?",
+    "answer_key": "24 dãy",
+    "worked_solution": "Hoán vị của 4 chữ khác nhau: \\(4!=24\\).",
+    "skill_ids": [
+      "PERMUTATION_LETTERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Không có chữ nào trùng nhau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B24-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B24-P04",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Chọn đội gồm 2 bạn nữ từ 5 nữ và 3 bạn nam từ 7 nam, không phân vai. Có bao nhiêu đội?",
+    "answer_key": "350 đội",
+    "worked_solution": "\\(\\binom52\\binom73=10\\cdot35=350\\).",
+    "skill_ids": [
+      "COMBINATION_TWO_GROUPS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Trong mỗi nhóm chọn không thứ tự; giữa hai nhóm dùng nhân."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B24-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B25-C01",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Hệ số của \\(a^2b^2\\) trong \\((a+b)^4\\) là bao nhiêu?",
+    "answer_key": "6",
+    "worked_solution": "Trong khai triển Newton, hệ số là \\(\\binom42=6\\).",
+    "skill_ids": [
+      "BINOMIAL_COEFFICIENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Xác định số lần chọn b bằng 2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B25-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B25-C02",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Hệ số của \\(x^2\\) trong \\((1+x)^5\\) bằng bao nhiêu?",
+    "answer_key": "10",
+    "worked_solution": "\\(\\binom52=10\\).",
+    "skill_ids": [
+      "BINOMIAL_X_POWER"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Dùng hệ số ở số hạng bậc hai."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B25-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B25-P01",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Tìm hệ số của \\(x^3\\) trong \\((2x-1)^4\\).",
+    "answer_key": "-32",
+    "worked_solution": "Chọn 3 lần \\(2x\\), một lần \\(-1\\): \\(\\binom43(2)^3(-1)=-32\\).",
+    "skill_ids": [
+      "BINOMIAL_NEGATIVE_COEFF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Giữ dấu trừ của số hạng không chứa x."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B25-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B25-P02",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Tìm số hạng không chứa \\(x\\) trong \\((x+1/x)^6\\) với \\(x\\ne0\\).",
+    "answer_key": "20",
+    "worked_solution": "Số hạng thứ \\(k+1\\) có lũy thừa \\(x^{6-2k}\\). Bằng \\(x^0\\) khi \\(k=3\\), hệ số \\(\\binom63=20\\).",
+    "skill_ids": [
+      "BINOMIAL_CONSTANT_TERM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Chọn k để số mũ x bằng 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B25-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B25-P03",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Tìm hệ số của \\(x^2\\) trong \\((1+3x)^4\\).",
+    "answer_key": "54",
+    "worked_solution": "\\(\\binom42(3)^2=6\\cdot9=54\\).",
+    "skill_ids": [
+      "BINOMIAL_COMPOSITE_COEFF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Nhân thêm hệ số 3 tương ứng số mũ 2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B25-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B25-P04",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Tìm hệ số của \\(x^4\\) trong \\((x-2)^5\\).",
+    "answer_key": "-10",
+    "worked_solution": "Lấy 4 thừa số x và 1 thừa số \\(-2\\): \\(\\binom51(-2)=-10\\).",
+    "skill_ids": [
+      "BINOMIAL_SECOND_HIGHEST"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASE",
+    "hints": [
+      "Bậc 4 chỉ thiếu một thừa số x."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B25-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B23-P05",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Từ các chữ số \\(0,1,2,3,4\\), lập số tự nhiên có ba chữ số khác nhau và là số chẵn. Có bao nhiêu số?",
+    "answer_key": "\\(30\\) số.",
+    "worked_solution": "Chia hai trường hợp rời nhau. (i) Hàng đơn vị bằng 0: hàng trăm có 4 lựa chọn, hàng chục còn 3, được \\(4\\cdot3=12\\). (ii) Hàng đơn vị là 2 hoặc 4: có 2 lựa chọn; hàng trăm chọn trong ba chữ số khác 0 và khác chữ số đơn vị; hàng chục còn 3 lựa chọn (có thể là 0). Được \\(2\\cdot3\\cdot3=18\\). Tổng \\(12+18=30\\).",
+    "skill_ids": [
+      "COUNT_CASES_NO_REPEAT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Tách trường hợp chữ số hàng đơn vị bằng 0 và khác 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B23-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B23-P06",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Một khách có thể chọn đúng một cách đi lại: 3 tuyến xe đạp khác nhau hoặc 2 tuyến xe buýt khác nhau. Nếu đi xe buýt, mỗi tuyến có 2 loại vé. Nếu đi xe đạp thì không chọn vé. Có bao nhiêu phương án hoàn chỉnh?",
+    "answer_key": "\\(7\\) phương án.",
+    "worked_solution": "Phương án xe đạp: 3. Phương án xe buýt: \\(2\\) tuyến nhân \\(2\\) loại vé bằng \\(4\\). Hai nhóm lựa chọn loại trừ nhau, tổng \\(3+4=7\\).",
+    "skill_ids": [
+      "COUNT_MIXED_SUM_PRODUCT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Nhân trong từng nhánh nhiều bước, cộng giữa các nhánh loại trừ nhau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B23-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B24-P05",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Chọn nhóm 3 người từ 6 người khác nhau, trong đó có hai người được chỉ định A và B. Có bao nhiêu nhóm chứa ít nhất một trong hai người A, B?",
+    "answer_key": "\\(16\\) nhóm.",
+    "worked_solution": "Tổng số nhóm \\(\\binom63=20\\). Nhóm không có A lẫn B chỉ chọn 3 trong 4 người còn lại: \\(\\binom43=4\\). Vậy \\(20-4=16\\).",
+    "skill_ids": [
+      "COMBINATION_AT_LEAST_ONE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Dùng biến cố đối: tất cả nhóm trừ nhóm không chứa cả A lẫn B."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B24-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B24-P06",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Xếp 5 học sinh khác nhau thành một hàng, biết hai bạn A và B phải đứng cạnh nhau. Có bao nhiêu cách?",
+    "answer_key": "\\(48\\) cách.",
+    "worked_solution": "Gộp A và B thành một khối, cùng 3 học sinh còn lại là 4 đối tượng phân biệt, có \\(4!=24\\) cách. Trong khối A/B có 2 thứ tự, tổng \\(24\\cdot2=48\\).",
+    "skill_ids": [
+      "PERMUTATION_ADJACENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Gộp cặp phải đứng cạnh nhau thành một khối, rồi tính thứ tự trong khối."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B24-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B25-P05",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Tìm hệ số của \\(x^3\\) trong \\((2-x)^6\\).",
+    "answer_key": "\\(-160\\).",
+    "worked_solution": "Chọn 3 thừa số \\((-x)\\) và 3 thừa số \\(2\\): hệ số \\(\\binom63(-1)^3 2^3=20\\cdot(-1)\\cdot8=-160\\).",
+    "skill_ids": [
+      "BINOMIAL_COEFF_NEGATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Dấu của ((-x)^3) là âm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B25-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B25-P06",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Tính tổng các hệ số của những số hạng có số mũ lẻ của \\(x\\) trong khai triển \\((1+x)^7\\).",
+    "answer_key": "\\(64\\).",
+    "worked_solution": "Đặt \\(f(x)=(1+x)^7\\). Tổng hệ số bậc chẵn trừ tổng hệ số bậc lẻ là \\(f(-1)=0\\); tổng tất cả hệ số là \\(f(1)=2^7=128\\). Vậy tổng hệ số bậc lẻ bằng \\((128-0)/2=64\\).",
+    "skill_ids": [
+      "BINOMIAL_ODD_COEFF_SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Thử thay x=1 và x=-1 để tách hệ số bậc chẵn/lẻ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B25-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B25-P07",
+    "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
+    "stem": "Trong khai triển nhị thức \\((4x-3)^5\\), hãy tìm số hạng không chứa \\(x\\) mà không cần khai triển toàn bộ. Giải thích vì sao chỉ có đúng một số hạng như vậy.",
+    "answer_key": "\\(-243\\), tức số hạng tự do bằng \\(-243\\) (không phải số mũ hoặc hệ số đi kèm \\(x\\)).",
+    "worked_solution": "Theo nhị thức Newton, số hạng tương ứng với chọn \\(k\\) thừa số \\(4x\\) là\n\\[\nT_k=\\binom{5}{k}(4x)^k(-3)^{5-k},\\qquad k=0,1,2,3,4,5.\n\\]\nSố mũ của \\(x\\) bằng \\(k\\); vì \\(k\\geq 0\\), điều kiện số hạng không chứa \\(x\\) là \\(k=0\\), và đây là giá trị duy nhất. Số hạng tự do:\n\\[\nT_0=\\binom50 (4x)^0 (-3)^5=\\boxed{-243}.\n\\]",
+    "skill_ids": [
+      "G10-B25-CONSTANT_TERM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_LEVEL",
+    "hints": [
+      "Trong \\((4x-3)^5\\), số hạng không có \\(x\\) xuất hiện khi không chọn thừa số nào chứa \\(x\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "heading_id": "THPT-G10-B25-P07",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+        "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

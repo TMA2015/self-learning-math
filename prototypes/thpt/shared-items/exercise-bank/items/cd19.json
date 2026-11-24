@@ -1,0 +1,366 @@
+[
+  {
+    "item_id": "THPT-TOP19-P01",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Trong quầy có 6 loại nước trà và 4 loại nước trái cây khác nhau, các loại không trùng nhau. Khách chọn đúng một loại. Có bao nhiêu cách?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Một kết quả là **một** loại nước uống. Sáu loại trà và bốn loại nước trái cây không trùng nhau, nên đây là hai trường hợp **rời nhau**. Áp dụng quy tắc cộng, có \\(6+4=10\\) cách. Không dùng phép nhân vì khách không chọn đồng thời một loại ở mỗi nhóm.\n\n**Khi làm sai:** Nếu cộng hai danh sách vẫn bị trùng một sản phẩm, phải tách/loại giao trước. Bài này đã nêu rõ không trùng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P01",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P02",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Một suất ăn gồm đúng một món khai vị từ 2 món, một món chính từ 3 món và một đồ uống từ 4 món. Có bao nhiêu suất ăn?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Một suất ăn phải gồm **đủ ba phần**: khai vị, món chính và nước uống. Mỗi khai vị ghép được với 3 món chính; mỗi cặp đó ghép được với 4 đồ uống. Theo quy tắc nhân, có \\(2\\cdot3\\cdot4=24\\) suất. Không bỏ sót bước nước uống.\n\n**Khi làm sai:** Nếu chỉ nhân 2×3, em quên bước đồ uống. Viết rõ ba vị trí của một suất trước khi đếm.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P02",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P03",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Từ {0,1,2,3,4} lập số tự nhiên ba chữ số đôi một khác nhau. Có bao nhiêu số?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Hàng trăm của **số có ba chữ số** không thể là 0, nên có 4 cách chọn từ \\(\\{1,2,3,4\\}\\). Hàng chục có thể là 0 nhưng không được lặp hàng trăm: còn 4 cách. Hàng đơn vị khác cả hai chữ số trước: còn 3 cách. Vậy \\(4\\cdot4\\cdot3=48\\) số. Không tính các chuỗi bắt đầu bằng 0.\n\n**Khi làm sai:** Vẽ các ô hàng trăm/chục/đơn vị; chỉ ô đầu cấm 0. Sau mỗi lựa chọn xóa chữ số đã dùng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P03",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P04",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Từ {0,1,2,3,4,5} lập số chẵn có ba chữ số khác nhau. Có bao nhiêu số?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Số chẵn phải có hàng đơn vị là 0, 2 hoặc 4. Vì số 0 bị cấm ở đầu số, chia hai trường hợp **rời nhau**. **Cuối 0:** chọn hàng trăm trong 5 chữ số khác 0, hàng chục còn 4; được \\(5\\cdot4=20\\). **Cuối 2 hoặc 4:** có 2 cách chọn cuối; hàng trăm có 4 lựa chọn khác 0 và chữ số cuối, hàng chục còn 4, được \\(2\\cdot4\\cdot4=32\\). Tổng \\(20+32=52\\) số.\n\n**Khi làm sai:** Không gộp các chữ số cuối thành một nhánh trước khi xét 0. Kiểm 20+32=52, tránh thiếu điều kiện khác nhau.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P04",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P05",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Có 6 quyển sách phân biệt xếp vào 6 vị trí liên tiếp. Có bao nhiêu cách?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Vì xếp **tất cả** sáu quyển sách phân biệt và mỗi thứ tự là một kết quả khác, đây là hoán vị. Các vị trí lần lượt có 6, 5, 4, 3, 2, 1 cách chọn, nên \\(6!=6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=720\\). Không dùng tổ hợp vì tổ hợp không phân biệt thứ tự.\n\n**Khi làm sai:** Kiểm từng ô nhận lần lượt 6,5,4,3,2,1 lựa chọn. Không cộng 6+5+…+1.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P05",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P06",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Có 7 vận động viên phân biệt, trao huy chương vàng, bạc, đồng cho 3 người khác nhau. Có bao nhiêu kết quả?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Vàng, bạc, đồng là **ba vị trí phân biệt**; một người không nhận hai huy chương. Chọn người nhận vàng có 7 cách, bạc còn 6, đồng còn 5. Do đó chỉnh hợp \\(A_7^3=7\\cdot6\\cdot5=210\\) kết quả. Đổi người giữa vàng và bạc làm kết quả thay đổi nên không dùng \\(C_7^3\\).\n\n**Khi làm sai:** Chọn 3 người chưa xong vì còn phân vai vàng/bạc/đồng. Kiểm vai nào được chọn đầu tiên.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P06",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P07",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Chọn nhóm 4 người từ 7 người khác nhau, không phân vai. Có bao nhiêu nhóm?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Nhóm bốn người **không phân vai**, nên đổi thứ tự ghi tên không tạo nhóm mới. Chọn bốn từ bảy bằng tổ hợp \\(C_7^4=\\frac{7!}{4!3!}=\\frac{7\\cdot6\\cdot5}{3\\cdot2\\cdot1}=35\\). Kiểm bằng việc chọn ba người không có mặt: \\(C_7^3=35\\), cho cùng kết quả.\n\n**Khi làm sai:** Không dùng 7×6×5×4 vì thứ tự của thành viên không quan trọng; mỗi nhóm bị lặp 4! lần.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P07",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P08",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Một lớp có 6 bạn nam và 5 bạn nữ. Chọn nhóm 4 người gồm đúng 2 nam, 2 nữ, không phân vai. Có bao nhiêu nhóm?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Cần chọn **đúng hai nam, hai nữ**, không có vai. Chọn hai trong sáu nam: \\(C_6^2=15\\); chọn hai trong năm nữ: \\(C_5^2=10\\). Mỗi nhóm hợp lệ cần cả hai lựa chọn, nên nhân \\(15\\cdot10=150\\) nhóm. Không nhân thêm \\(4!\\) vì đề không có thứ tự hay vị trí.\n\n**Khi làm sai:** Nếu nhân thêm 4! khi chưa phân vai, em sẽ đếm lặp mỗi nhóm. Không thêm điều kiện mà đề không nêu.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P08",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P14",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Từ 9 người khác nhau: (a) chỉ chọn nhóm 3 người không phân vai, (b) chọn 3 người giữ ba chức danh phân biệt. Hãy nêu phép tính trên máy (nCr hay nPr), cho đáp án và kiểm quan hệ giữa hai kết quả mà không cần máy.",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** (a) Chỉ chọn **nhóm** ba người nên dùng nCr: \\(C_9^3=\\frac{9\\cdot8\\cdot7}{3\\cdot2\\cdot1}=84\\) nhóm. (b) Chọn **ba chức danh khác nhau** nên dùng nPr: \\(A_9^3=9\\cdot8\\cdot7=504\\). Kiểm tay: một nhóm ba người có \\(3!=6\\) cách phân vai, \\(84\\cdot6=504\\). Phải quyết định phép tính trước khi bấm máy.\n\n**Khi làm sai:** Nếu dùng nPr ở câu (a), hãy đổi chỗ ba người mà không phân vai: đó vẫn là cùng một nhóm. Nếu cả hai câu cùng ra 84, hãy nêu ba chức danh và nhân 3! số cách phân vai. Kiểm cặp (n,k)=(9,3) nhập đúng thứ tự, không dùng nCr khi cần nPr.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O14"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P14",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P09",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Hãy khai triển đầy đủ (x+2)^4 và cho biết hệ số x².",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Trong \\((x+2)^4\\), chọn số \\(2\\) trong \\(k\\) vị trí trong bốn thừa số. Với \\(k=0,1,2,3,4\\), hệ số tổ hợp là \\(1,4,6,4,1\\). Vậy \\((x+2)^4=x^4+4\\cdot2x^3+6\\cdot2^2x^2+4\\cdot2^3x+2^4=x^4+8x^3+24x^2+32x+16\\). Hệ số \\(x^2\\) là \\(6\\cdot2^2=24\\), không chỉ là 6.\n\n**Khi làm sai:** Nếu viết hệ số x² chỉ là 6, em quên chọn hạng tử 2 ở hai vị trí, nên còn nhân 2².",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O09"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P09",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P10",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Tìm hệ số của x⁴ trong (3x−2)^5.",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Trong \\((3x-2)^5\\), để nhận \\(x^4\\) phải chọn \\(3x\\) ở **bốn** vị trí và \\(-2\\) ở vị trí còn lại. Có \\(C_5^1=5\\) cách chọn vị trí của \\(-2\\). Mỗi tích có hệ số \\(3^4(-2)=81(-2)\\), nên hệ số cần tìm là \\(5\\cdot81\\cdot(-2)=-810\\). Dấu âm do chọn \\(-2\\) **một lần**.\n\n**Khi làm sai:** Nếu ra +810, hãy viết riêng thừa số −2 trước khi nhân; số lần chọn nó là k=1 lẻ.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O10"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P10",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P13",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Một kho ban đầu có 2 000 sản phẩm. Số sản phẩm tăng theo hệ số 2% mỗi năm trong 5 năm. **(a)** Dùng hai số hạng đầu của (1+0,02)^5 để ước lượng số sản phẩm. **(b)** Tính giá trị mô hình chính xác bằng máy (làm tròn đến 2 chữ số thập phân) và nhận xét ước lượng cao hay thấp.",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Đổi \\(2\\%\\) thành \\(r=0{,}02\\). Sau năm năm có \\(2000(1+r)^5\\). (a) Lấy **hai số hạng đầu** \\((1+r)^5\\approx1+5r\\), được \\(2000(1+5\\cdot0{,}02)=2200\\) sản phẩm. (b) Tính đầy đủ \\(2000(1{,}02)^5=2208{,}1616064\\approx2208{,}16\\), lớn hơn ước lượng khoảng \\(8{,}16\\). Các số hạng bỏ qua \\(10r^2+10r^3+5r^4+r^5>0\\), nên ước lượng **không chính xác tuyệt đối**.\n\n**Khi làm sai:** Nếu ra 2040, em chỉ tính 1 năm, cần hệ số 5r cho 5 năm. Nếu trừ 8,16 ra số khác, hãy xác định rõ “ước lượng thấp hơn” nghĩa là 2 200 nhỏ hơn 2 208,16.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O13"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P13",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P11",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "**Tự chọn mở rộng SBT (sau phần đa thức):** Tìm số hạng không chứa x trong (2x+1/x)^4, x≠0.",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Phải có \\(x\\ne0\\) để \\(1/x\\) xác định. Chọn \\(1/x\\) ở \\(k\\) vị trí trong bốn thừa số của \\((2x+1/x)^4\\), còn \\(4-k\\) vị trí chọn \\(2x\\). Số mũ của \\(x\\) là \\(4-2k\\). Số hạng không chứa \\(x\\) cần \\(4-2k=0\\), tức \\(k=2\\). Hệ số bằng \\(C_4^2\\cdot2^{4-2}=6\\cdot4=24\\). Đây là bài mở rộng, không phải kiến thức bắt buộc của SGK B25.\n\n**Khi làm sai:** Dù chọn phần 1/x hai lần, còn hai phần 2x nên phải nhân 2²; đừng bỏ hệ số 2.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O11"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P11",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP19-P12",
+    "content_version": "SOURCE_BLOB_2faa5d797eb16020d21673c572c443f1cb7acb41",
+    "stem": "Tổng hệ số của đa thức (2x+1)^4 bằng bao nhiêu?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Nếu \\(P(x)=a_0+a_1x+\\cdots+a_nx^n\\) là đa thức, thay \\(x=1\\) được \\(P(1)=a_0+a_1+\\cdots+a_n\\), tức **tổng hệ số**. Với \\(P(x)=(2x+1)^4\\), \\(P(1)=(2\\cdot1+1)^4=3^4=81\\). Không cần khai triển đầy đủ; không áp dụng máy móc cho biểu thức có lũy thừa âm của \\(x\\).\n\n**Khi làm sai:** Nếu ra 16, em đã bỏ hạng tử +1. Thay toàn bộ nhị thức tại x=1 trước khi nâng lũy thừa.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP19-O12"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "heading_id": "THPT-TOP19-P12",
+      "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

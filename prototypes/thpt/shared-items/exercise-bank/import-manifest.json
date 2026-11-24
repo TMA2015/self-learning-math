@@ -43,7 +43,9 @@
     "0ef0ad696e97d2549f29c5a22ba675970572a089",
     "11eb2834cfdb4a24685157f84666c2bb0767970a",
     "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-    "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960"
+    "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "2ae62fada28913ec336b3507684408a1e05a3232",
+    "2faa5d797eb16020d21673c572c443f1cb7acb41"
   ],
   "projection_sources": [
     {
@@ -535,21 +537,56 @@
       "path": "docs/assets/data/thpt-g12-chv-b14-b17-public-r01.json",
       "blob": "04478b7f379efb21377216b3543de656e2ace1f0",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd19/luyen-tap.md",
+      "blob": "37cfd4178da9a30bf8de9dbe60e6399f02e85137",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd19/tu-kiem-tra.md",
+      "blob": "b0fc1d6d82cf2c8d4aee11cc7df0f66d75a6f211",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-chviii-reviewed-formative-v1.js",
+      "blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-viii.md",
+      "blob": "e78c43ab7b2f6d3ab1b135d1ad09c7030df2c44e",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g10-readiness/CHVIII.json",
+      "blob": "c3a1e108c1ff8a03f28d986c23bd8febe85f29d0",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-viii/tu-kiem-tra-chuong.md",
+      "blob": "36ccb4af5e012190c0e3bde716f11b4388dfd0f9",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+      "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 1097,
-    "written_references": 228,
-    "topic_practice": 1292,
-    "topic_replay": 303,
-    "sgk_public_selfcheck": 313,
-    "placements": 2771,
-    "projection_field_differences": 4,
-    "public_selfcheck_only_items": 135,
+    "formative_items": 1136,
+    "written_references": 234,
+    "topic_practice": 1334,
+    "topic_replay": 310,
+    "sgk_public_selfcheck": 327,
+    "placements": 2862,
+    "projection_field_differences": 7,
+    "public_selfcheck_only_items": 149,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 240
+    "legacy_combined_answer_items": 254
   },
-  "scope": "CD01–18 + G10 ChI/ChII/ChIII/ChIV/ChVI/ChVII + G11 ChI/ChII/ChIV/ChV/ChVI/ChVII/ChIX + G12 ChI/ChII/ChIV/ChV public formative, public self-check and written references",
+  "scope": "CD01–19 + G10 ChI/ChII/ChIII/ChIV/ChVI/ChVII/ChVIII + G11 ChI/ChII/ChIV/ChV/ChVI/ChVII/ChIX + G12 ChI/ChII/ChIV/ChV public formative, public self-check and written references",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -581,6 +618,27 @@
       "projection": "CD18_PRACTICE",
       "fields": [
         "combined_answer_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G10-B25-P05",
+      "projection": "CD19_PRACTICE",
+      "fields": [
+        "stem"
+      ]
+    },
+    {
+      "item_id": "THPT-G10-B25-P02",
+      "projection": "CD19_PRACTICE",
+      "fields": [
+        "stem"
+      ]
+    },
+    {
+      "item_id": "THPT-G10-B25-P06",
+      "projection": "CD19_PRACTICE",
+      "fields": [
+        "stem"
       ]
     }
   ],
@@ -997,6 +1055,30 @@
           "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
         }
       ]
+    },
+    {
+      "topic": "CD19",
+      "new_formative": 14,
+      "new_written": 3,
+      "shared_sgk_formative": 25,
+      "shared_written": 0,
+      "practice": 42,
+      "replay": 7,
+      "placements": 49,
+      "answer_table_rows_checked": 7,
+      "source_blob": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+      "projection_sources": [
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd19/luyen-tap.md",
+          "blob": "37cfd4178da9a30bf8de9dbe60e6399f02e85137",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        },
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd19/tu-kiem-tra.md",
+          "blob": "b0fc1d6d82cf2c8d4aee11cc7df0f66d75a6f211",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        }
+      ]
     }
   ],
   "unstructured_projection_review": [
@@ -1085,8 +1167,8 @@
       "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
     }
   ],
-  "public_legacy_selfcheck_note": "125 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "240 records retain combined answer/solution (previous 200 +40 CĐ18), answer_key=null; manual review pending.",
+  "public_legacy_selfcheck_note": "139 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
+  "legacy_combined_answer_note": "254 records retain combined answer/solution (previous 240 +14 CĐ19), answer_key=null; manual review pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",

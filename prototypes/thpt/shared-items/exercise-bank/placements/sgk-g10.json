@@ -2226,5 +2226,313 @@
     "item_id": "THPT-G10-CHVII-RD1-22",
     "original_type": "MCQ_SINGLE",
     "optional": true
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B23-C01",
+    "skill_id": "COUNT_ADDITION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B23-C02",
+    "skill_id": "COUNT_MULTIPLICATION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B23-P01",
+    "skill_id": "COUNT_REPETITION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B23-P02",
+    "skill_id": "COUNT_PRODUCT_PATH"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B23-P03",
+    "skill_id": "COUNT_DISJOINT_OPTIONS"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G10-B23-P04",
+    "skill_id": "COUNT_MENU"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B24-C01",
+    "skill_id": "PERMUTATION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B24-C02",
+    "skill_id": "ARRANGEMENT"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B24-P01",
+    "skill_id": "COMBINATION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B24-P02",
+    "skill_id": "ARRANGEMENT_WITH_ROLES"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B24-P03",
+    "skill_id": "PERMUTATION_LETTERS"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G10-B24-P04",
+    "skill_id": "COMBINATION_TWO_GROUPS"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B25-C01",
+    "skill_id": "BINOMIAL_COEFFICIENT"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B25-C02",
+    "skill_id": "BINOMIAL_X_POWER"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B25-P01",
+    "skill_id": "BINOMIAL_NEGATIVE_COEFF"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:PRACTICE",
+    "role": "SGK_SUPPORT_EXTENSION",
+    "order": 2,
+    "item_id": "THPT-G10-B25-P02",
+    "skill_id": "BINOMIAL_CONSTANT_TERM",
+    "optional": true
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B25-P03",
+    "skill_id": "BINOMIAL_COMPOSITE_COEFF"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G10-B25-P04",
+    "skill_id": "BINOMIAL_SECOND_HIGHEST"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B23-P05",
+    "skill_id": "COUNT_CASES_NO_REPEAT"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B23-P06",
+    "skill_id": "COUNT_MIXED_SUM_PRODUCT"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B24-P05",
+    "skill_id": "COMBINATION_AT_LEAST_ONE"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B24-P06",
+    "skill_id": "PERMUTATION_ADJACENT"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:PRACTICE",
+    "role": "SGK_SUPPORT_EXTENSION",
+    "order": 4,
+    "item_id": "THPT-G10-B25-P05",
+    "skill_id": "BINOMIAL_COEFF_NEGATIVE",
+    "optional": true
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:PRACTICE",
+    "role": "SGK_OPTIONAL_SPECIALIZED",
+    "order": 5,
+    "item_id": "THPT-G10-B25-P06",
+    "skill_id": "BINOMIAL_ODD_COEFF_SUM",
+    "optional": true
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B25-P07",
+    "skill_id": "G10-B25-CONSTANT_TERM"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G10-CHVIII-W23-01"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G10-CHVIII-W24-ANCHOR-01"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G10-CHVIII-W25-01"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVIII-RD1-01",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVIII-RD1-02",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVIII-RD1-03",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVIII-RD1-04",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G10-CHVIII-RD1-05",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G10-CHVIII-RD1-06",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G10-CHVIII-RD1-07",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G10-CHVIII-RD1-08",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G10-CHVIII-RD1-09",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G10-CHVIII-RD1-10",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G10-CHVIII-RD1-11",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G10-CHVIII-RD1-12",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G10-CHVIII-RD1-13",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G10-CHVIII-RD1-14",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": true
   }
 ]
