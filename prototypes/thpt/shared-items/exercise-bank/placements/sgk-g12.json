@@ -4486,5 +4486,23 @@
     "order": 31,
     "item_id": "THPT-G12-YE-W16",
     "skill_id": "G12-SGK-YE-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIII:B10:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G12-B10-C04",
+    "skill_id": "G12-CHIII-B10-O04",
+    "source_locator": "B10-T02",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHV:B16:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G12-B16-A02",
+    "skill_id": "G12-CHV-B16-O02",
+    "source_locator": "B16-T02",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
   }
 ]
