@@ -1,0 +1,1850 @@
+[
+  {
+    "item_id": "THPT-G12-B11-C01",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "F(x)=2x^3-5x+7 có là nguyên hàm của f(x)=6x^2-5 trên R không?",
+    "answer_key": "Có.",
+    "worked_solution": "F'(x)=6x^2-5=f(x) trên R. Giải thích chọn cách: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.",
+    "skill_ids": [
+      "G12-CHIV-B11-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-C01 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-P01",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Kiểm tra G(x)=x^3/3+x có phải nguyên hàm của g(x)=x^2+1.",
+    "answer_key": "Có.",
+    "worked_solution": "G'(x)=x^2+1 trên R. Giải thích chọn cách: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.",
+    "skill_ids": [
+      "G12-CHIV-B11-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-P01 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-A01",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Mô hình vị trí s(t)=t^3+2t (m) với t>=0. Viết vận tốc v(t).",
+    "answer_key": "v(t)=3t^2+2 (m/s).",
+    "worked_solution": "Lấy đạo hàm vị trí theo thời gian; v(t)=s'(t)=3t^2+2, t>=0.",
+    "skill_ids": [
+      "G12-CHIV-B11-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-A01 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-C02",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Viết họ nguyên hàm của 4x trên R.",
+    "answer_key": "2x^2+C.",
+    "worked_solution": "Vì (2x^2)'=4x nên họ là 2x^2+C.",
+    "skill_ids": [
+      "G12-CHIV-B11-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-C02 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-P02",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "F'(x)=2x, F(2)=9. Tìm F.",
+    "answer_key": "F(x)=x^2+5.",
+    "worked_solution": "F=x^2+C; 4+C=9 nên C=5. Giải thích chọn cách: Tích phân được F+C; thay x0 vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu.",
+    "skill_ids": [
+      "G12-CHIV-B11-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-P02 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-A02",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Một vật có v(t)=4t (m/s), s(0)=6m. Viết vị trí s(t) cho t>=0.",
+    "answer_key": "s(t)=2t^2+6.",
+    "worked_solution": "Từ s'=4t có s=2t^2+C; điều kiện s(0)=6 cho C=6.",
+    "skill_ids": [
+      "G12-CHIV-B11-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-A02 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-C03",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫6x^2 dx.",
+    "answer_key": "2x^3+C.",
+    "worked_solution": "Dùng n=2: 6·x^3/3=2x^3. Giải thích chọn cách: Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm.",
+    "skill_ids": [
+      "G12-CHIV-B11-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-C03 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-P03",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫(5x^4−4x+3)dx.",
+    "answer_key": "x^5−2x^2+3x+C.",
+    "worked_solution": "Tách ba hạng tử, áp công thức lũy thừa và tuyến tính.",
+    "skill_ids": [
+      "G12-CHIV-B11-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-P03 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-A03",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Một đại lượng có q'(t)=3t^2+2, q(0)=4. Viết q(t).",
+    "answer_key": "q(t)=t^3+2t+4.",
+    "worked_solution": "Nguyên hàm t^3+2t+C, từ q(0)=4 được C=4.",
+    "skill_ids": [
+      "G12-CHIV-B11-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-A03 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-C04",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫2/x dx trên x<0.",
+    "answer_key": "2ln|x|+C.",
+    "worked_solution": "Dùng nguyên hàm ln|x| hợp lệ trên (−∞,0).",
+    "skill_ids": [
+      "G12-CHIV-B11-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-C04 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-P04",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫(1/x+2x)dx trên x>0.",
+    "answer_key": "ln x+x^2+C.",
+    "worked_solution": "Tính từng phần và ghi x>0. Giải thích chọn cách: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm.",
+    "skill_ids": [
+      "G12-CHIV-B11-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-P04 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-A04",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Biết F'(x)=3/x trên x>0, F(1)=2. Tính F(x).",
+    "answer_key": "3ln x+2.",
+    "worked_solution": "F=3ln x+C; ln1=0 => C=2. Giải thích chọn cách: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm.",
+    "skill_ids": [
+      "G12-CHIV-B11-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-A04 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-C05",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫e^x dx.",
+    "answer_key": "e^x+C.",
+    "worked_solution": "Vì đạo hàm e^x là e^x. Giải thích chọn cách: Tách hệ số rồi chia ln a nếu cơ số a không phải e.",
+    "skill_ids": [
+      "G12-CHIV-B11-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-C05 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-P05",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫2^x dx.",
+    "answer_key": "2^x/ln2+C.",
+    "worked_solution": "(2^x)'=2^x ln2, vì vậy chia ln2.",
+    "skill_ids": [
+      "G12-CHIV-B11-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-P05 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-A05",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Lượng chất có q'(t)=3e^t và q(0)=5. Viết q(t).",
+    "answer_key": "q(t)=3e^t+2.",
+    "worked_solution": "q=3e^t+C; 3+C=5 => C=2. Giải thích chọn cách: Tách hệ số rồi chia ln a nếu cơ số a không phải e.",
+    "skill_ids": [
+      "G12-CHIV-B11-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-A05 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-C06",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫2cos x dx.",
+    "answer_key": "2sin x+C.",
+    "worked_solution": "(2sin x)'=2cos x. Giải thích chọn cách: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.",
+    "skill_ids": [
+      "G12-CHIV-B11-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-C06 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-P06",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫(3sin x−2cos x)dx.",
+    "answer_key": "−3cos x−2sin x+C.",
+    "worked_solution": "Từng hạng tử; đạo hàm của −3cos x là +3sin x.",
+    "skill_ids": [
+      "G12-CHIV-B11-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-P06 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-A06",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Vận tốc v(t)=2cos t, 0<=t<=π/2, vị trí s(0)=0. Viết s(t).",
+    "answer_key": "s(t)=2sin t.",
+    "worked_solution": "s=2sin t+C; s(0)=0=>C=0. Giải thích chọn cách: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.",
+    "skill_ids": [
+      "G12-CHIV-B11-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-A06 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-C07",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Cho s'(t)=6t và s(0)=3, tìm s(t).",
+    "answer_key": "s(t)=3t²+3.",
+    "worked_solution": "Nguyên hàm 6t là 3t²+C, C=3. Giải thích chọn cách: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.",
+    "skill_ids": [
+      "G12-CHIV-B11-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-C07 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-P07",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Cho v(t)=4t³ và s(1)=5. Tìm s(t).",
+    "answer_key": "s(t)=t⁴+4.",
+    "worked_solution": "s=t⁴+C; 1+C=5 => C=4. Giải thích chọn cách: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.",
+    "skill_ids": [
+      "G12-CHIV-B11-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-P07 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-A07",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Một vật có a(t)=6t, v(0)=2, s(0)=1. Viết v(t), s(t).",
+    "answer_key": "v(t)=3t²+2; s(t)=t³+2t+1.",
+    "worked_solution": "Hai lần nguyên hàm; mỗi lần dùng điều kiện đầu riêng.",
+    "skill_ids": [
+      "G12-CHIV-B11-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B11-A07 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-C01",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫_0^2 2x dx.",
+    "answer_key": "4.",
+    "worked_solution": "F=x²; F(2)−F(0)=4. Giải thích chọn cách: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.",
+    "skill_ids": [
+      "G12-CHIV-B12-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-C01 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-P01",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫_1^3 x² dx.",
+    "answer_key": "26/3.",
+    "worked_solution": "F=x³/3; F(3)−F(1)=9−1/3=26/3. Giải thích chọn cách: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.",
+    "skill_ids": [
+      "G12-CHIV-B12-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-P01 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-A01",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Vận tốc v(t)=3t² m/s, 0<=t<=2. Tính độ dời.",
+    "answer_key": "8 m.",
+    "worked_solution": "∫_0^2 3t²dt=[t³]_0²=8 m; vận tốc không âm nên bằng quãng đường.",
+    "skill_ids": [
+      "G12-CHIV-B12-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-A01 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-C02",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫_0^1 (2x+3)dx.",
+    "answer_key": "4.",
+    "worked_solution": "F=x²+3x; F(1)−F(0)=4. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.",
+    "skill_ids": [
+      "G12-CHIV-B12-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-C02 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-P02",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫_0^2 (3x²−2)dx.",
+    "answer_key": "4.",
+    "worked_solution": "F=x³−2x; tại 2 cho 8−4=4. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.",
+    "skill_ids": [
+      "G12-CHIV-B12-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-P02 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-A02",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Nhu cầu r(t)=4+2t đơn vị/giờ, 0<=t<=1. Lượng tích lũy?",
+    "answer_key": "5 đơn vị.",
+    "worked_solution": "∫_0^1 (4+2t)dt=[4t+t²]_0^1=5. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.",
+    "skill_ids": [
+      "G12-CHIV-B12-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-A02 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-C03",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Biết ∫_1^3 f=5 và ∫_3^5 f=−2. Tính ∫_1^5 f.",
+    "answer_key": "3.",
+    "worked_solution": "Ghép đoạn: 5+(−2)=3. Giải thích chọn cách: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.",
+    "skill_ids": [
+      "G12-CHIV-B12-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-C03 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-P03",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Biết ∫_0^2 f=7 và ∫_0^5 f=9. Tính ∫_2^5 f.",
+    "answer_key": "2.",
+    "worked_solution": "∫_2^5=∫_0^5−∫_0^2=9−7=2. Giải thích chọn cách: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.",
+    "skill_ids": [
+      "G12-CHIV-B12-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-P03 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-A03",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Độ dời 0–2 s là 4 m, 2–4 s là −6 m. Tính độ dời tổng và ý nghĩa dấu.",
+    "answer_key": "−2 m.",
+    "worked_solution": "Cộng đại số 4−6=−2: vị trí cuối lùi 2m so với đầu.",
+    "skill_ids": [
+      "G12-CHIV-B12-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-A03 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-C04",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Diện tích dưới y=x trên [0,2] là bao nhiêu?",
+    "answer_key": "2 đơn vị².",
+    "worked_solution": "Hàm không âm; S=∫_0^2 xdx=[x²/2]_0²=2.",
+    "skill_ids": [
+      "G12-CHIV-B12-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-C04 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-P04",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính diện tích dưới y=2−x trên [0,2].",
+    "answer_key": "2 đơn vị².",
+    "worked_solution": "2−x≥0, S=[2x−x²/2]_0²=4−2=2. Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.",
+    "skill_ids": [
+      "G12-CHIV-B12-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-P04 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-A04",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Độ cao y=1+x (m) và bề rộng biến x∈[0,2] (m). Tính diện tích phần dưới đồ thị.",
+    "answer_key": "4 m².",
+    "worked_solution": "S=∫_0²(1+x)dx=[x+x²/2]_0²=4. Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.",
+    "skill_ids": [
+      "G12-CHIV-B12-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-A04 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-C05",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính diện tích giữa y=x và trục Ox trên [−2,2].",
+    "answer_key": "4 đơn vị².",
+    "worked_solution": "Chia tại x=0: ∫_{−2}^0(−x)dx+∫_0^2 xdx=2+2=4.",
+    "skill_ids": [
+      "G12-CHIV-B12-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-C05 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-P05",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Diện tích giữa y=x−1 và Ox trên [0,2]?",
+    "answer_key": "1 đơn vị².",
+    "worked_solution": "Chia tại x=1: hai tam giác mỗi diện tích 1/2, tổng 1.",
+    "skill_ids": [
+      "G12-CHIV-B12-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-P05 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-A05",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Vật có v(t)=t−2 m/s, t∈[0,4]. Tính độ dời và quãng đường.",
+    "answer_key": "Độ dời 0 m; quãng đường 4 m.",
+    "worked_solution": "∫_0⁴(t−2)dt=0; chia tại t=2, ∫|t−2|=2+2=4.",
+    "skill_ids": [
+      "G12-CHIV-B12-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-A05 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-C06",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫_0^{ln 2} e^x dx.",
+    "answer_key": "1.",
+    "worked_solution": "[e^x]_0^{ln2}=2−1=1. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.",
+    "skill_ids": [
+      "G12-CHIV-B12-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-C06 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-P06",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính ∫_0^π cos x dx.",
+    "answer_key": "0.",
+    "worked_solution": "[sin x]_0^π=0. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.",
+    "skill_ids": [
+      "G12-CHIV-B12-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-P06 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-A06",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tốc độ r(t)=2e^t đơn vị/giờ trên [0,ln2]. Lượng tăng?",
+    "answer_key": "2 đơn vị.",
+    "worked_solution": "∫_0^{ln2}2e^tdt=2(2−1)=2. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.",
+    "skill_ids": [
+      "G12-CHIV-B12-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-A06 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-C07",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Vận tốc v(t)=2t+1 m/s trong 0≤t≤3. Tính độ dời.",
+    "answer_key": "12 m.",
+    "worked_solution": "∫_0³(2t+1)dt=[t²+t]_0³=9+3=12.",
+    "skill_ids": [
+      "G12-CHIV-B12-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-C07 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-P07",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Vận tốc v=t² trên [1,2] s. Tính quãng đường.",
+    "answer_key": "7/3 m (nếu v đo m/s).",
+    "worked_solution": "v≥0 nên ∫_1² t²dt=(8−1)/3=7/3.",
+    "skill_ids": [
+      "G12-CHIV-B12-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-P07 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-A07",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Sản lượng tăng với q'(t)=4+3t² (sản phẩm/giờ), t=0..2 giờ. Lượng tăng?",
+    "answer_key": "16 sản phẩm.",
+    "worked_solution": "∫_0²(4+3t²)dt=[4t+t³]_0²=8+8=16.",
+    "skill_ids": [
+      "G12-CHIV-B12-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B12-A07 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-C01",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Diện tích dưới y=x² trên [0,2]?",
+    "answer_key": "8/3 đơn vị².",
+    "worked_solution": "S=∫_0²x²dx=8/3. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.",
+    "skill_ids": [
+      "G12-CHIV-B13-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-C01 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-P01",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Diện tích dưới y=3x trên [0,2]?",
+    "answer_key": "6 đơn vị².",
+    "worked_solution": "S=[3x²/2]_0²=6. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.",
+    "skill_ids": [
+      "G12-CHIV-B13-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-P01 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-A01",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Một mép đất có chiều cao y=2+x (m) trên x từ 0 tới 3 (m). Diện tích dưới mép?",
+    "answer_key": "21/2 m².",
+    "worked_solution": "∫_0³(2+x)dx=6+9/2=21/2. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.",
+    "skill_ids": [
+      "G12-CHIV-B13-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-A01 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-C02",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính diện tích giữa y=x và Ox trên [−2,2].",
+    "answer_key": "4 đơn vị².",
+    "worked_solution": "Hai tam giác hai bên mỗi diện tích2; tổng4.",
+    "skill_ids": [
+      "G12-CHIV-B13-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-C02 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-P02",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính diện tích giữa y=x−2 và Ox trên [0,4].",
+    "answer_key": "4 đơn vị².",
+    "worked_solution": "Chia tại x=2, mỗi tam giác có diện tích2.",
+    "skill_ids": [
+      "G12-CHIV-B13-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-P02 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-A02",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Diện tích giữa y=2x−2 và Ox trên [0,2]?",
+    "answer_key": "2 đơn vị².",
+    "worked_solution": "Chia tại x=1: hai tam giác mỗi1.",
+    "skill_ids": [
+      "G12-CHIV-B13-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-A02 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-C03",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Diện tích giữa y=2x và y=x trên [0,2]?",
+    "answer_key": "2 đơn vị².",
+    "worked_solution": "Lấy trên−dưới=x; ∫_0²x dx=2. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.",
+    "skill_ids": [
+      "G12-CHIV-B13-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-C03 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-P03",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Diện tích giữa y=4 và y=x² trên [−2,2]?",
+    "answer_key": "32/3 đơn vị².",
+    "worked_solution": "4≥x², S=∫_{−2}²(4−x²)dx=16−16/3=32/3.",
+    "skill_ids": [
+      "G12-CHIV-B13-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-P03 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-A03",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Hai biên y=3x+1 và y=x+1, x từ0 đến3. Tính diện tích giữa chúng.",
+    "answer_key": "9 đơn vị².",
+    "worked_solution": "Hiệu 2x≥0; ∫_0³2x dx=9. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.",
+    "skill_ids": [
+      "G12-CHIV-B13-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-A03 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-C04",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Diện tích giữa y=x và y=x² trên [0,1]?",
+    "answer_key": "1/6 đơn vị².",
+    "worked_solution": "S=∫_0¹(x−x²)dx=1/6. Giải thích chọn cách: Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương.",
+    "skill_ids": [
+      "G12-CHIV-B13-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-C04 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-P04",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Diện tích giữa y=2x và y=x² trên [0,2]?",
+    "answer_key": "4/3 đơn vị².",
+    "worked_solution": "2x≥x²; ∫_0²(2x−x²)dx=4−8/3=4/3.",
+    "skill_ids": [
+      "G12-CHIV-B13-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-P04 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-A04",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Tính diện tích giữa y=x² và y=2−x² trên [−1,1].",
+    "answer_key": "8/3 đơn vị².",
+    "worked_solution": "Hai đồ thị giao ở ±1, trên là 2−x²; S=∫_{−1}¹(2−2x²)dx=8/3.",
+    "skill_ids": [
+      "G12-CHIV-B13-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-A04 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-C05",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Độ cao y=x+1 cm, 0≤x≤2 cm. Diện tích dưới đồ thị?",
+    "answer_key": "4 cm².",
+    "worked_solution": "S=∫_0²(x+1)dx=4; đơn vị cm². Giải thích chọn cách: Nêu biến x và đơn vị, mô tả hai cận, xét h≥0, rồi tính số và thứ nguyên.",
+    "skill_ids": [
+      "G12-CHIV-B13-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-C05 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-P05",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Một miền có chiều cao y=2x−1 m và x từ0 tới1 m. Tính diện tích hình học (không phải tích phân có dấu).",
+    "answer_key": "1/2 m².",
+    "worked_solution": "Cắt trục ở x=1/2; hai tam giác mỗi có diện tích1/4, tổng1/2.",
+    "skill_ids": [
+      "G12-CHIV-B13-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-P05 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-A05",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Độ cao bờ đất h(x)=100−10x m, 0≤x≤5 m. Diện tích mặt cắt?",
+    "answer_key": "375 m².",
+    "worked_solution": "S=∫_0⁵(100−10x)dx=[100x−5x²]_0⁵=500−125=375m².",
+    "skill_ids": [
+      "G12-CHIV-B13-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-A05 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-C06",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Khối có S(x)=x² cm², x∈[0,3] cm. Tính V.",
+    "answer_key": "9 cm³.",
+    "worked_solution": "V=∫_0³x²dx=[x³/3]_0³=9. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.",
+    "skill_ids": [
+      "G12-CHIV-B13-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-C06 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-P06",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Khối có mặt cắt S(x)=2+x m² từ0 tới2m. Thể tích?",
+    "answer_key": "6 m³.",
+    "worked_solution": "V=∫_0²(2+x)dx=4+2=6. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.",
+    "skill_ids": [
+      "G12-CHIV-B13-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-P06 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-A06",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Vật có mặt cắt S(x)=4−x² cm², 0≤x≤2cm. Tính V.",
+    "answer_key": "16/3 cm³.",
+    "worked_solution": "S≥0; V=∫_0²(4−x²)dx=8−8/3=16/3.",
+    "skill_ids": [
+      "G12-CHIV-B13-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-A06 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-C07",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Lát cắt tròn có r(x)=x (cm) với0≤x≤1. Tính V.",
+    "answer_key": "π/3 cm³.",
+    "worked_solution": "S=πx²; V=π[x³/3]_0¹=π/3. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.",
+    "skill_ids": [
+      "G12-CHIV-B13-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-C07 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-P07",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Lát cắt tròn có r=2x cm trên[0,2]cm. Tính V.",
+    "answer_key": "32π/3 cm³.",
+    "worked_solution": "V=π∫_0²4x²dx=4π·8/3=32π/3. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.",
+    "skill_ids": [
+      "G12-CHIV-B13-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-P07 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-A07",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Khối có r(x)=√x cm, x∈[0,4]cm. Tính thể tích.",
+    "answer_key": "8π cm³.",
+    "worked_solution": "r²=x; V=π∫_0⁴x dx=8π. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.",
+    "skill_ids": [
+      "G12-CHIV-B13-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-A07 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-C08",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Quay miền dưới y=x, x∈[0,2] quanh Ox. Tính V.",
+    "answer_key": "8π/3 đơn vị³.",
+    "worked_solution": "V=π∫_0²x²dx=8π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.",
+    "skill_ids": [
+      "G12-CHIV-B13-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-C08 — CORE sau phần Kiến thức",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-P08",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Quay miền dưới y=√x, x∈[0,4] quanh Ox. Tính V.",
+    "answer_key": "8π đơn vị³.",
+    "worked_solution": "V=π∫_0⁴x dx=8π. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.",
+    "skill_ids": [
+      "G12-CHIV-B13-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-P08 — Luyện tập (Practice)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-A08",
+    "content_version": "G12-SGK-CHIV-B11-B13-R00",
+    "stem": "Miền dưới y=2x trên[0,1] quay quanh Ox. Tính thể tích.",
+    "answer_key": "4π/3 đơn vị³.",
+    "worked_solution": "V=π∫_0¹4x²dx=4π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.",
+    "skill_ids": [
+      "G12-CHIV-B13-O08"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "heading": "#### THPT-G12-B13-A08 — Vận dụng (Application)",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
+        "blob": "8c6a42e7c3e863677ff44f25933b8837c6c58b37",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

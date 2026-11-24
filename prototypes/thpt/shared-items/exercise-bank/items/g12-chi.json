@@ -1,0 +1,1626 @@
+[
+  {
+    "item_id": "THPT-G12-CHI-B01-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Hàm f(x)=x² giảm trên khoảng nào trong (−∞,0), (0,+∞)?",
+    "answer_key": null,
+    "worked_solution": "(−∞,0): khi x tiến về 0 từ bên trái, giá trị x² giảm; trên (0,+∞) hàm tăng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B01-MONOTONICITY_MEANING"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-C01 | skill_id=G12-B01-MONOTONICITY_MEANING | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Cho f(x)=x²−4x+1. Xác định dấu f′ và khoảng tăng/giảm.",
+    "answer_key": null,
+    "worked_solution": "f′=2x−4, âm x<2, dương x>2 ⇒ giảm (−∞,2), tăng (2,+∞).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B01-DERIVATIVE_SIGN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-C02 | skill_id=G12-B01-DERIVATIVE_SIGN | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f′ đổi dấu + sang − tại x=−1 và − sang + tại x=1. Xác định loại cực trị tại mỗi điểm nếu f liên tục và khả vi quanh chúng.",
+    "answer_key": null,
+    "worked_solution": "Cực đại tại −1, cực tiểu tại 1; dấu đổi mới quyết định loại cực trị.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B01-EXTREMA_SIGN_CHANGE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-C03 | skill_id=G12-B01-EXTREMA_SIGN_CHANGE | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f(x)=x³ có f′(0)=0. x=0 có là điểm cực trị không, vì sao?",
+    "answer_key": null,
+    "worked_solution": "Không; f′=3x²>0 ở hai phía (trừ x=0), nên hàm vẫn tăng qua x=0.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-C04 | skill_id=G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Với f(x)=1/(x−2), nêu miền xác định và tất cả khoảng nghịch biến, giải thích tại sao phải tách.",
+    "answer_key": null,
+    "worked_solution": "D=ℝ\\{2}, f′=−1/(x−2)²<0. Giảm trên (−∞,2) và (2,+∞), không nối qua x=2 không thuộc D.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B01-DOMAIN_INTERVALS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-P01 | skill_id=G12-B01-DOMAIN_INTERVALS | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Cho f′(x)=(x+1)(x−2) trên ℝ. Hãy nêu các khoảng tăng/giảm của f.",
+    "answer_key": null,
+    "worked_solution": "f′>0 khi x<−1 hoặc x>2, f′<0 khi −1<x<2 ⇒ tăng, giảm, tăng theo ba khoảng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B01-DERIVATIVE_SIGN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-P02 | skill_id=G12-B01-DERIVATIVE_SIGN | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f(x)=x³−3x. Tìm hoành độ và giá trị của các cực trị.",
+    "answer_key": null,
+    "worked_solution": "f′=3(x+1)(x−1); cực đại tại −1, giá trị 2; cực tiểu tại 1, giá trị −2.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B01-EXTREMA_SIGN_CHANGE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-P03 | skill_id=G12-B01-EXTREMA_SIGN_CHANGE | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Hàm f(x)=|x| có cực tiểu tại 0 không, mặc dù f′(0) không tồn tại?",
+    "answer_key": null,
+    "worked_solution": "Có, f(x)≥f(0)=0; điều kiện f′(0)=0 chỉ là điều kiện cần đối với cực trị nội tại điểm có đạo hàm.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-P04 | skill_id=G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B01-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Vật có vị trí s(t)=t³−6t²+9t m, t≥0 s. Xác định các khoảng thời gian vật chuyển động theo chiều dương và âm.",
+    "answer_key": null,
+    "worked_solution": "v(t)=3(t−1)(t−3). Chiều dương khi 0<t<1 và t>3; chiều âm khi 1<t<3; t=1,3 dừng tức thời.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B01-MOTION_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B01-A01 | skill_id=G12-B01-MOTION_CONTEXT | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f(x)=x trên (0,1) có GTLN bằng 1 không? Giải thích.",
+    "answer_key": null,
+    "worked_solution": "Không; với mọi x<1 tồn tại y=(x+1)/2 trong (x,1), nên f(y)>f(x). 1 chỉ là supremum.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-EXTREMA_GLOBAL_MEANING"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-C01 | skill_id=G12-B02-EXTREMA_GLOBAL_MEANING | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Hàm liên tục trên [−1,3] có chắc đạt GTNN và GTLN không?",
+    "answer_key": null,
+    "worked_solution": "Có, bởi định lý giá trị cực trị trên đoạn đóng hữu hạn; chưa cần biết chúng ở điểm nào.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-C02 | skill_id=G12-B02-CLOSED_INTERVAL_EXISTENCE | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Tìm GTLN/GTNN f(x)=x²−2x trên [0,4].",
+    "answer_key": null,
+    "worked_solution": "f'=2x−2, ứng viên x=0,1,4, lần lượt f=0,−1,8; GTNN=−1, GTLN=8.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-CRITICAL_END_POINTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-C03 | skill_id=G12-B02-CRITICAL_END_POINTS | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Trên miền (0,+∞), f(x)=1/x có giá trị nhỏ nhất bằng 0 không?",
+    "answer_key": null,
+    "worked_solution": "Không; mọi 1/x>0, lim∞=0 không đạt được; cũng không có GTLN vì không bị chặn trên gần 0+.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-C04 | skill_id=G12-B02-OPEN_DOMAIN_NONATTAINMENT | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Tìm max/min g(x)=−x²+4x+2 trên [0,5], ghi cả điểm đạt.",
+    "answer_key": null,
+    "worked_solution": "g'=−2x+4, c=2; g(0)=2, g(2)=6, g(5)=−3. Max=6 tại2, min=−3 tại5.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-CRITICAL_END_POINTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P01 | skill_id=G12-B02-CRITICAL_END_POINTS | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f(x)=x² trên (−1,1) có GTNN? GTLN? Chứng minh.",
+    "answer_key": null,
+    "worked_solution": "min=0 tại x=0; không có max, vì x²<1 với mọi |x|<1 dù sup=1.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P02 | skill_id=G12-B02-OPEN_DOMAIN_NONATTAINMENT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Xét f(x)=x/(x²+1), x≥0. Tìm GTLN, GTNN.",
+    "answer_key": null,
+    "worked_solution": "f'=(1−x²)/(x²+1)²; max 1/2 tại1, min0 tại0. Mệnh đề f→0 khi x∞ không tự chứng minh GTNN nếu quên x=0.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-CONSTRAINED_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P03 | skill_id=G12-B02-CONSTRAINED_DOMAIN | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Trên [−2,2], f(x)=x³ có GTLN, GTNN và cực trị nội không?",
+    "answer_key": null,
+    "worked_solution": "max=8 tại2; min=−8 tại−2; không có cực trị nội dù f'(0)=0.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-EXTREMA_GLOBAL_MEANING"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P04 | skill_id=G12-B02-EXTREMA_GLOBAL_MEANING | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-P05",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Vì sao f(x)=1/x trên [−1,1]\\{0} không được áp dụng định lý liên tục trên đoạn [−1,1]?",
+    "answer_key": null,
+    "worked_solution": "Không xác định tại0, miền xét không phải toàn đoạn đóng [−1,1]; f không bị chặn gần 0 nên cũng không có min/max toàn miền.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-P05 | skill_id=G12-B02-CLOSED_INTERVAL_EXISTENCE | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B02-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Mảnh vườn chữ nhật chu vi 24 m, hai cạnh dương. Diện tích lớn nhất và có GTNN dương không?",
+    "answer_key": null,
+    "worked_solution": "x∈(0,12), A=x(12−x)≤36 m² (dấu bằng x=6); không có GTNN vì A→0+ khi x→0+.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B02-OPTIMIZATION_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B02-A01 | skill_id=G12-B02-OPTIMIZATION_MODEL | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "lim(x→∞)[5+2/(x−1)] và phương trình tiệm cận ngang?",
+    "answer_key": null,
+    "worked_solution": "Giới hạn 5; y=5.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-HORIZONTAL_LIMIT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-C01 | skill_id=G12-B03-HORIZONTAL_LIMIT | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f=1/(x+3). Điểm x=−3 có là tiệm cận đứng? Nêu giới hạn hai phía.",
+    "answer_key": null,
+    "worked_solution": "lim x→−3− f=−∞, lim x→−3+ f=+∞; x=−3 là tiệm cận đứng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-VERTICAL_ONE_SIDED"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-C02 | skill_id=G12-B03-VERTICAL_ONE_SIDED | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "g(x)=x−2+3/(x+1). Tiệm cận xiên khi x→∞?",
+    "answer_key": null,
+    "worked_solution": "y=x−2, vì phần dư →0; g=x−2 không phải y=x+1.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-OBLIQUE_REMAINDER"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-C03 | skill_id=G12-B03-OBLIQUE_REMAINDER | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f=(x²−9)/(x−3) có tiệm cận đứng x=3 không?",
+    "answer_key": null,
+    "worked_solution": "Không; x≠3, f=x+3; lim x→3 f=6, chỉ là lỗ tại (3,6).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-REMOVABLE_DISCONTINUITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-C04 | skill_id=G12-B03-REMOVABLE_DISCONTINUITY | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f=(2x−1)/(x+2). Tìm tiệm cận ngang.",
+    "answer_key": null,
+    "worked_solution": "Chia 2−5/(x+2) nên y=2.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-HORIZONTAL_LIMIT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P01 | skill_id=G12-B03-HORIZONTAL_LIMIT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "g=(x+1)/(x−2). Tính giới hạn một bên khi x→2±.",
+    "answer_key": null,
+    "worked_solution": "Tử gần3>0, mẫu âm/dương nên lim 2−=−∞, 2+=+∞; x=2 tiệm cận đứng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-VERTICAL_ONE_SIDED"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P02 | skill_id=G12-B03-VERTICAL_ONE_SIDED | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "h=(x²+2x+3)/(x+1). Tìm tiệm cận xiên và đứng.",
+    "answer_key": null,
+    "worked_solution": "h=x+1+2/(x+1); xiên y=x+1, đứng x=−1.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-OBLIQUE_REMAINDER"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P03 | skill_id=G12-B03-OBLIQUE_REMAINDER | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f(x)=1/sqrt(x−1), D=(1,+∞). x=1 có là tiệm cận đứng dù không thể xét từ bên trái?",
+    "answer_key": null,
+    "worked_solution": "Có, lim x→1+=+∞ đủ để kết luận; chỉ dùng giới hạn trong D.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-DOMAIN_SIDED_LIMITS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P04 | skill_id=G12-B03-DOMAIN_SIDED_LIMITS | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P05",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "k=(x²−4)/(x−2), x≠2. Vẽ mô tả đồ thị có nên vẽ chấm đặc tại (2,4)?",
+    "answer_key": null,
+    "worked_solution": "Không. k=x+2 chỉ khi x≠2; (2,4) là lỗ, không có tiệm cận đứng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-REMOVABLE_DISCONTINUITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P05 | skill_id=G12-B03-REMOVABLE_DISCONTINUITY | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P06",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Với f=3+7/(x−2), nhánh phải x>2 nằm trên hay dưới y=3? Nhánh trái?",
+    "answer_key": null,
+    "worked_solution": "x>2 ⇒ 7/(x−2)>0 ⇒ trên; x<2 ⇒ dưới. Không cần vẽ thêm đường sai.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-GRAPH_INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P06 | skill_id=G12-B03-GRAPH_INTERPRETATION | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-P07",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f=x/sqrt(x²+1) có bao nhiêu đường tiệm cận ngang? Phía nào?",
+    "answer_key": null,
+    "worked_solution": "Hai: y=1 khi x→+∞, y=−1 khi x→−∞, dùng sqrt(x²)=|x|.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-HORIZONTAL_LIMIT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-P07 | skill_id=G12-B03-HORIZONTAL_LIMIT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B03-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Chi phí trung bình đơn vị C(q)=20+120/q (nghìn đồng/sp), q>0. Phân tích q→+∞ và q→0+, chỉ ra tiệm cận; ý nghĩa mô hình.",
+    "answer_key": null,
+    "worked_solution": "y=20 khi q→∞, q=0 là tiệm cận đứng từ phải (C→∞). q=0 không thể là mức sản lượng có chi phí trung bình xác định.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B03-DOMAIN_SIDED_LIMITS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B03-A01 | skill_id=G12-B03-DOMAIN_SIDED_LIMITS | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Khi khảo sát f=(x+1)/(x−2), cần xác định D trước hay giao Ox trước, vì sao?",
+    "answer_key": null,
+    "worked_solution": "D=ℝ\\{2} trước; điểm không thuộc D không thể vẽ thành điểm trên đồ thị hoặc cực trị.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-SURVEY_WORKFLOW"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-C01 | skill_id=G12-B04-SURVEY_WORKFLOW | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f=x³−3x² có mấy cực trị và ở đâu?",
+    "answer_key": null,
+    "worked_solution": "f'=3x(x−2), cực đại (0,0), cực tiểu (2,−4).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-CUBIC_VARIATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-C02 | skill_id=G12-B04-CUBIC_VARIATION | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "g=(x+2)/(x−1), xác định các khoảng giảm.",
+    "answer_key": null,
+    "worked_solution": "g'=−3/(x−1)²<0; giảm riêng trên (−∞,1) và (1,+∞).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-RATIONAL_VARIATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-C03 | skill_id=G12-B04-RATIONAL_VARIATION | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f=(x+2)/(x−1) cắt trục Ox và Oy ở đâu?",
+    "answer_key": null,
+    "worked_solution": "Ox: x=−2 ⇒ (−2,0); Oy: x=0 ⇒ (0,−2).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-INTERCEPTS_LIMITS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-C04 | skill_id=G12-B04-INTERCEPTS_LIMITS | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Tâm đối xứng của y=2+5/(x−4)?",
+    "answer_key": null,
+    "worked_solution": "(4,2), giao hai tiệm cận x=4, y=2.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-CENTER_SYMMETRY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P01 | skill_id=G12-B04-CENTER_SYMMETRY | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Nếu bảng dấu y' trên ℝ là + trên (−∞,−1), − trên (−1,3), + trên (3,∞), loại cực trị tại −1 và 3?",
+    "answer_key": null,
+    "worked_solution": "Cực đại ở −1; cực tiểu ở3. Muốn biết giá trị phải thay vào hàm.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-READ_VARIATION_TABLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P02 | skill_id=G12-B04-READ_VARIATION_TABLE | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Với y=1+2/(x+1), có nên nối hai nhánh qua x=−1?",
+    "answer_key": null,
+    "worked_solution": "Không; x=−1 bị loại khỏi D và là tiệm cận đứng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-DOMAIN_NONCONNECT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P03 | skill_id=G12-B04-DOMAIN_NONCONNECT | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "h=−x³+3x, tìm các khoảng tăng/giảm và cực trị.",
+    "answer_key": null,
+    "worked_solution": "h'=3(1−x²), tăng (−1,1), giảm (−∞,−1),(1,∞); min (−1,−2), max (1,2) là **cực trị cục bộ**, không GTLN/GTNN toàn ℝ.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-CUBIC_VARIATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P04 | skill_id=G12-B04-CUBIC_VARIATION | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P05",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "y=x³−3x² cắt hay tiếp xúc Ox tại x=0 và tại x=3?",
+    "answer_key": null,
+    "worked_solution": "x=0 nghiệm kép, tiếp xúc Ox tại (0,0); x=3 nghiệm đơn, cắt Ox tại (3,0).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-INTERCEPTS_LIMITS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P05 | skill_id=G12-B04-INTERCEPTS_LIMITS | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-P06",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Tâm đối xứng đồ thị y=x³−3x²?",
+    "answer_key": null,
+    "worked_solution": "(1,−2), vì hoành độ điểm uốn x=−b/(3a)=1 và f(1)=−2; không phải (0,0).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-CENTER_SYMMETRY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-P06 | skill_id=G12-B04-CENTER_SYMMETRY | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Chi phí bình quân f(q)=4+200/(q−10) cho q>10 đơn vị. Tính giới hạn q→10+, q→∞ và nhận định chi phí theo q.",
+    "answer_key": null,
+    "worked_solution": "f→+∞ khi q→10+, f→4 khi q→∞, f'<0; trên (10,∞) chi phí giảm dần và tiệm cận y=4. Không mở rộng sang q≤10 nếu mô hình quy định q>10.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-RATIONAL_VARIATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-A01 | skill_id=G12-B04-RATIONAL_VARIATION | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B04-A02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Người học vẽ y=x³−3x² đi từ +∞ ở x→−∞ và tăng liên tục tới +∞. Chỉ ra hai lỗi từ dữ liệu khảo sát.",
+    "answer_key": null,
+    "worked_solution": "lim x→−∞ =−∞ (không phải +∞); y'<0 trên (0,2) nên không tăng liên tục.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B04-SURVEY_WORKFLOW"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B04-A02 | skill_id=G12-B04-SURVEY_WORKFLOW | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-C01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "f(x)=2x²+3, x là s, f là m. f'(2) và đơn vị?",
+    "answer_key": null,
+    "worked_solution": "f'=4x, f'(2)=8 m/s. Không gọi đây là gia tốc.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-RATE_INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-C01 | skill_id=G12-B05-RATE_INTERPRETATION | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-C02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "s(t)=t²−4t+5 m, t≥0 s. Vận tốc/tốc độ tại t=1?",
+    "answer_key": null,
+    "worked_solution": "v=2t−4, v(1)=−2 m/s; tốc độ 2 m/s, chiều âm.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-MOTION_SPEED_ACCELERATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-C02 | skill_id=G12-B05-MOTION_SPEED_ACCELERATION | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-C03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "C(q)=q²+10q+100 (nghìn đồng). Chi phí cận biên tại q=5?",
+    "answer_key": null,
+    "worked_solution": "C'=2q+10, C'(5)=20 nghìn đồng/sản phẩm; không phải C(5).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-MARGINAL_COST"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-C03 | skill_id=G12-B05-MARGINAL_COST | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-C04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Tấm bìa 30×20, cắt vuông góc x ở bốn góc làm hộp không nắp. Miền x hợp lệ?",
+    "answer_key": null,
+    "worked_solution": "0<x<10 cm, vì 30−2x>0, 20−2x>0 và x>0.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-MODEL_VARIABLE_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-C04 | skill_id=G12-B05-MODEL_VARIABLE_DOMAIN | placement=SGK_CORE | role=SGK_CORE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Từ f(x)=x³ cm với x phút, f'(2) và ý nghĩa x tăng rất nhỏ?",
+    "answer_key": null,
+    "worked_solution": "3x² ⇒ f'(2)=12 cm/phút, thay đổi tức thời của f khi x ở gần2 phút.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-RATE_INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P01 | skill_id=G12-B05-RATE_INTERPRETATION | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Vật có v(t)=t−3 m/s, a=1 m/s². Ở t=2 tốc độ đang tăng hay giảm? Tại t=3 có thể kết luận chỉ bằng dấu a?",
+    "answer_key": null,
+    "worked_solution": "t=2, v=−1 nên v·a<0, tốc độ giảm; tại t=3 v=0, phải xét lân cận, không suy chỉ từ a.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-MOTION_SPEED_ACCELERATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P02 | skill_id=G12-B05-MOTION_SPEED_ACCELERATION | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "C(q)=0.02q²+5q+1200. So C'(100) với C(101)−C(100).",
+    "answer_key": null,
+    "worked_solution": "9 so với 9.02 nghìn đồng; sai phân hữu hạn không luôn bằng đạo hàm.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-MARGINAL_COST"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P03 | skill_id=G12-B05-MARGINAL_COST | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P04",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Tối đa hóa f(x)=−x²+8x−3, 0≤x≤6.",
+    "answer_key": null,
+    "worked_solution": "f'=−2x+8, x=4 cho f=13; f(0)=−3, f(6)=9; max13 tại4.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-OPTIMIZATION_DERIVATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P04 | skill_id=G12-B05-OPTIMIZATION_DERIVATIVE | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P05",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Với V=x(30−2x)(20−2x), tại x=10 có thể gọi V=0 là thể tích nhỏ nhất của một **hộp** tạo được không?",
+    "answer_key": null,
+    "worked_solution": "Không, x=10 làm chiều rộng đáy 0, hộp suy biến; miền (0,10), inf V=0 nhưng không có min.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-BOUNDARY_FEASIBILITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P05 | skill_id=G12-B05-BOUNDARY_FEASIBILITY | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-P06",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Nếu diện tích A(x) đo bằng m² và x bằng m, đơn vị A'(x) là gì? Có được gọi A' là vận tốc không?",
+    "answer_key": null,
+    "worked_solution": "m²/m=m; đó là độ nhạy diện tích theo độ dài, **không** là vận tốc nếu x không phải thời gian.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-UNIT_ASSUMPTION_CHECK"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-P06 | skill_id=G12-B05-UNIT_ASSUMPTION_CHECK | placement=SGK_PRACTICE | role=SGK_PRACTICE",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-A01",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Quây vườn sát tường bằng 40 m hàng rào chỉ cho ba cạnh; hai kích thước tối ưu?",
+    "answer_key": null,
+    "worked_solution": "10 m cạnh vuông góc tường, 20 m song song; Amax=200 m².",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-OPTIMIZATION_DERIVATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-A01 | skill_id=G12-B05-OPTIMIZATION_DERIVATIVE | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-A02",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Mô hình giá p(q)=30−0.1q, q≥0 và không cho giá âm. Miền q nào hợp lệ?",
+    "answer_key": null,
+    "worked_solution": "0≤q≤300, đơn vị sản phẩm theo mô hình liên tục; nếu cần q nguyên thì lấy giao với ℤ.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-MODEL_VARIABLE_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-A02 | skill_id=G12-B05-MODEL_VARIABLE_DOMAIN | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-CHI-B05-A03",
+    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "stem": "Lợi nhuận P(q)=20q−0.1q²−400 (nghìn đồng), 0≤q≤300. Nếu tính được q=100, lợi nhuận tối đa là bao nhiêu và với đơn vị nào?",
+    "answer_key": null,
+    "worked_solution": "P(100)=600 nghìn đồng, không phải 600 sản phẩm; q=100 sản phẩm tối ưu trong mô hình.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-B05-UNIT_ASSUMPTION_CHECK"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "heading": "### THPT-G12-CHI-B05-A03 | skill_id=G12-B05-UNIT_ASSUMPTION_CHECK | placement=SGK_APPLICATION | role=SGK_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
+        "blob": "98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

@@ -1,0 +1,1352 @@
+[
+  {
+    "collection": "SGK:G12:CHI:B01:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B01-C01",
+    "skill_id": "G12-B01-MONOTONICITY_MEANING"
+  },
+  {
+    "collection": "SGK:G12:CHI:B01:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B01-C02",
+    "skill_id": "G12-B01-DERIVATIVE_SIGN"
+  },
+  {
+    "collection": "SGK:G12:CHI:B01:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B01-C03",
+    "skill_id": "G12-B01-EXTREMA_SIGN_CHANGE"
+  },
+  {
+    "collection": "SGK:G12:CHI:B01:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B01-C04",
+    "skill_id": "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
+  },
+  {
+    "collection": "SGK:G12:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B01-P01",
+    "skill_id": "G12-B01-DOMAIN_INTERVALS"
+  },
+  {
+    "collection": "SGK:G12:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B01-P02",
+    "skill_id": "G12-B01-DERIVATIVE_SIGN"
+  },
+  {
+    "collection": "SGK:G12:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B01-P03",
+    "skill_id": "G12-B01-EXTREMA_SIGN_CHANGE"
+  },
+  {
+    "collection": "SGK:G12:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B01-P04",
+    "skill_id": "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
+  },
+  {
+    "collection": "SGK:G12:CHI:B01:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B01-A01",
+    "skill_id": "G12-B01-MOTION_CONTEXT"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B01-W01",
+    "skill_id": "G12-B01-EXTREMA_SIGN_CHANGE",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B01-W02",
+    "skill_id": "G12-B01-DOMAIN_INTERVALS",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B02-C01",
+    "skill_id": "G12-B02-EXTREMA_GLOBAL_MEANING"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B02-C02",
+    "skill_id": "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B02-C03",
+    "skill_id": "G12-B02-CRITICAL_END_POINTS"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B02-C04",
+    "skill_id": "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B02-P01",
+    "skill_id": "G12-B02-CRITICAL_END_POINTS"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B02-P02",
+    "skill_id": "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B02-P03",
+    "skill_id": "G12-B02-CONSTRAINED_DOMAIN"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B02-P04",
+    "skill_id": "G12-B02-EXTREMA_GLOBAL_MEANING"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-CHI-B02-P05",
+    "skill_id": "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B02-A01",
+    "skill_id": "G12-B02-OPTIMIZATION_MODEL"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B02-W01",
+    "skill_id": "G12-B02-CRITICAL_END_POINTS",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B02-W02",
+    "skill_id": "G12-B02-OPTIMIZATION_MODEL",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B03-C01",
+    "skill_id": "G12-B03-HORIZONTAL_LIMIT"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B03-C02",
+    "skill_id": "G12-B03-VERTICAL_ONE_SIDED"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B03-C03",
+    "skill_id": "G12-B03-OBLIQUE_REMAINDER"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B03-C04",
+    "skill_id": "G12-B03-REMOVABLE_DISCONTINUITY"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B03-P01",
+    "skill_id": "G12-B03-HORIZONTAL_LIMIT"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B03-P02",
+    "skill_id": "G12-B03-VERTICAL_ONE_SIDED"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B03-P03",
+    "skill_id": "G12-B03-OBLIQUE_REMAINDER"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B03-P04",
+    "skill_id": "G12-B03-DOMAIN_SIDED_LIMITS"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-CHI-B03-P05",
+    "skill_id": "G12-B03-REMOVABLE_DISCONTINUITY"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G12-CHI-B03-P06",
+    "skill_id": "G12-B03-GRAPH_INTERPRETATION"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G12-CHI-B03-P07",
+    "skill_id": "G12-B03-HORIZONTAL_LIMIT"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B03-A01",
+    "skill_id": "G12-B03-DOMAIN_SIDED_LIMITS"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G12-CHI-B03-W01",
+    "skill_id": "G12-B03-GRAPH_INTERPRETATION",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "THPT-G12-CHI-B03-W02",
+    "skill_id": "G12-B03-OBLIQUE_REMAINDER",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B04-C01",
+    "skill_id": "G12-B04-SURVEY_WORKFLOW"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B04-C02",
+    "skill_id": "G12-B04-CUBIC_VARIATION"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B04-C03",
+    "skill_id": "G12-B04-RATIONAL_VARIATION"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B04-C04",
+    "skill_id": "G12-B04-INTERCEPTS_LIMITS"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B04-P01",
+    "skill_id": "G12-B04-CENTER_SYMMETRY"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B04-P02",
+    "skill_id": "G12-B04-READ_VARIATION_TABLE"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B04-P03",
+    "skill_id": "G12-B04-DOMAIN_NONCONNECT"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B04-P04",
+    "skill_id": "G12-B04-CUBIC_VARIATION"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-CHI-B04-P05",
+    "skill_id": "G12-B04-INTERCEPTS_LIMITS"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G12-CHI-B04-P06",
+    "skill_id": "G12-B04-CENTER_SYMMETRY"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B04-A01",
+    "skill_id": "G12-B04-RATIONAL_VARIATION"
+  },
+  {
+    "collection": "SGK:G12:CHI:B04:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B04-A02",
+    "skill_id": "G12-B04-SURVEY_WORKFLOW"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 7,
+    "item_id": "THPT-G12-CHI-B04-W01",
+    "skill_id": "G12-B04-CUBIC_VARIATION",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 8,
+    "item_id": "THPT-G12-CHI-B04-W02",
+    "skill_id": "G12-B04-DOMAIN_NONCONNECT",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B05-C01",
+    "skill_id": "G12-B05-RATE_INTERPRETATION"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B05-C02",
+    "skill_id": "G12-B05-MOTION_SPEED_ACCELERATION"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B05-C03",
+    "skill_id": "G12-B05-MARGINAL_COST"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B05-C04",
+    "skill_id": "G12-B05-MODEL_VARIABLE_DOMAIN"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B05-P01",
+    "skill_id": "G12-B05-RATE_INTERPRETATION"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B05-P02",
+    "skill_id": "G12-B05-MOTION_SPEED_ACCELERATION"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B05-P03",
+    "skill_id": "G12-B05-MARGINAL_COST"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-B05-P04",
+    "skill_id": "G12-B05-OPTIMIZATION_DERIVATIVE"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-CHI-B05-P05",
+    "skill_id": "G12-B05-BOUNDARY_FEASIBILITY"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G12-CHI-B05-P06",
+    "skill_id": "G12-B05-UNIT_ASSUMPTION_CHECK"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-B05-A01",
+    "skill_id": "G12-B05-OPTIMIZATION_DERIVATIVE"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B05-A02",
+    "skill_id": "G12-B05-MODEL_VARIABLE_DOMAIN"
+  },
+  {
+    "collection": "SGK:G12:CHI:B05:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-B05-A03",
+    "skill_id": "G12-B05-UNIT_ASSUMPTION_CHECK"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 9,
+    "item_id": "THPT-G12-CHI-B05-W01",
+    "skill_id": "G12-B05-BOUNDARY_FEASIBILITY",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 10,
+    "item_id": "THPT-G12-CHI-B05-W02",
+    "skill_id": "G12-B05-MARGINAL_COST",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G12-CHI-END-C01",
+    "skill_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-END-C02",
+    "skill_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G12-CHI-END-C03",
+    "skill_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G12-CHI-END-C04",
+    "skill_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G12-CHI-END-P01",
+    "skill_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G12-CHI-END-P02",
+    "skill_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G12-CHI-END-P03",
+    "skill_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G12-CHI-END-P04",
+    "skill_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G12-CHI-END-A01",
+    "skill_id": "G12-CHI-INTEGRATED_VARIATION_EXTREMA"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G12-CHI-END-A02",
+    "skill_id": "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G12-CHI-END-W01",
+    "skill_id": "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH",
+    "original_role": "CLIENT_SELF_CHECK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G12-CHI-END-W02",
+    "skill_id": "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM",
+    "original_role": "CLIENT_SELF_CHECK_WRITTEN_ANCHOR"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-B11-C01",
+    "skill_id": "G12-CHIV-B11-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-B11-P01",
+    "skill_id": "G12-CHIV-B11-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-B11-A01",
+    "skill_id": "G12-CHIV-B11-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G12-B11-W01",
+    "skill_id": "G12-CHIV-B11-O01",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-B11-C02",
+    "skill_id": "G12-CHIV-B11-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-B11-P02",
+    "skill_id": "G12-CHIV-B11-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-B11-A02",
+    "skill_id": "G12-CHIV-B11-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G12-B11-W02",
+    "skill_id": "G12-CHIV-B11-O02",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-B11-C03",
+    "skill_id": "G12-CHIV-B11-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-B11-P03",
+    "skill_id": "G12-CHIV-B11-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 3,
+    "item_id": "THPT-G12-B11-A03",
+    "skill_id": "G12-CHIV-B11-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G12-B11-W03",
+    "skill_id": "G12-CHIV-B11-O03",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-B11-C04",
+    "skill_id": "G12-CHIV-B11-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-B11-P04",
+    "skill_id": "G12-CHIV-B11-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G12-B11-A04",
+    "skill_id": "G12-CHIV-B11-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G12-B11-W04",
+    "skill_id": "G12-CHIV-B11-O04",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G12-B11-C05",
+    "skill_id": "G12-CHIV-B11-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-B11-P05",
+    "skill_id": "G12-CHIV-B11-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 5,
+    "item_id": "THPT-G12-B11-A05",
+    "skill_id": "G12-CHIV-B11-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G12-B11-W05",
+    "skill_id": "G12-CHIV-B11-O05",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G12-B11-C06",
+    "skill_id": "G12-CHIV-B11-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G12-B11-P06",
+    "skill_id": "G12-CHIV-B11-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 6,
+    "item_id": "THPT-G12-B11-A06",
+    "skill_id": "G12-CHIV-B11-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "THPT-G12-B11-W06",
+    "skill_id": "G12-CHIV-B11-O06",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:CORE",
+    "role": "SGK_CORE",
+    "order": 7,
+    "item_id": "THPT-G12-B11-C07",
+    "skill_id": "G12-CHIV-B11-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G12-B11-P07",
+    "skill_id": "G12-CHIV-B11-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B11:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 7,
+    "item_id": "THPT-G12-B11-A07",
+    "skill_id": "G12-CHIV-B11-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 7,
+    "item_id": "THPT-G12-B11-W07",
+    "skill_id": "G12-CHIV-B11-O07",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-B12-C01",
+    "skill_id": "G12-CHIV-B12-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-B12-P01",
+    "skill_id": "G12-CHIV-B12-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-B12-A01",
+    "skill_id": "G12-CHIV-B12-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 8,
+    "item_id": "THPT-G12-B12-W01",
+    "skill_id": "G12-CHIV-B12-O01",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-B12-C02",
+    "skill_id": "G12-CHIV-B12-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-B12-P02",
+    "skill_id": "G12-CHIV-B12-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-B12-A02",
+    "skill_id": "G12-CHIV-B12-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 9,
+    "item_id": "THPT-G12-B12-W02",
+    "skill_id": "G12-CHIV-B12-O02",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-B12-C03",
+    "skill_id": "G12-CHIV-B12-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-B12-P03",
+    "skill_id": "G12-CHIV-B12-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 3,
+    "item_id": "THPT-G12-B12-A03",
+    "skill_id": "G12-CHIV-B12-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 10,
+    "item_id": "THPT-G12-B12-W03",
+    "skill_id": "G12-CHIV-B12-O03",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-B12-C04",
+    "skill_id": "G12-CHIV-B12-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-B12-P04",
+    "skill_id": "G12-CHIV-B12-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G12-B12-A04",
+    "skill_id": "G12-CHIV-B12-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 11,
+    "item_id": "THPT-G12-B12-W04",
+    "skill_id": "G12-CHIV-B12-O04",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G12-B12-C05",
+    "skill_id": "G12-CHIV-B12-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-B12-P05",
+    "skill_id": "G12-CHIV-B12-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 5,
+    "item_id": "THPT-G12-B12-A05",
+    "skill_id": "G12-CHIV-B12-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 12,
+    "item_id": "THPT-G12-B12-W05",
+    "skill_id": "G12-CHIV-B12-O05",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G12-B12-C06",
+    "skill_id": "G12-CHIV-B12-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G12-B12-P06",
+    "skill_id": "G12-CHIV-B12-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 6,
+    "item_id": "THPT-G12-B12-A06",
+    "skill_id": "G12-CHIV-B12-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 13,
+    "item_id": "THPT-G12-B12-W06",
+    "skill_id": "G12-CHIV-B12-O06",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:CORE",
+    "role": "SGK_CORE",
+    "order": 7,
+    "item_id": "THPT-G12-B12-C07",
+    "skill_id": "G12-CHIV-B12-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G12-B12-P07",
+    "skill_id": "G12-CHIV-B12-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B12:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 7,
+    "item_id": "THPT-G12-B12-A07",
+    "skill_id": "G12-CHIV-B12-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 14,
+    "item_id": "THPT-G12-B12-W07",
+    "skill_id": "G12-CHIV-B12-O07",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-B13-C01",
+    "skill_id": "G12-CHIV-B13-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-B13-P01",
+    "skill_id": "G12-CHIV-B13-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-B13-A01",
+    "skill_id": "G12-CHIV-B13-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 15,
+    "item_id": "THPT-G12-B13-W01",
+    "skill_id": "G12-CHIV-B13-O01",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-B13-C02",
+    "skill_id": "G12-CHIV-B13-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-B13-P02",
+    "skill_id": "G12-CHIV-B13-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-B13-A02",
+    "skill_id": "G12-CHIV-B13-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 16,
+    "item_id": "THPT-G12-B13-W02",
+    "skill_id": "G12-CHIV-B13-O02",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-B13-C03",
+    "skill_id": "G12-CHIV-B13-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-B13-P03",
+    "skill_id": "G12-CHIV-B13-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 3,
+    "item_id": "THPT-G12-B13-A03",
+    "skill_id": "G12-CHIV-B13-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 17,
+    "item_id": "THPT-G12-B13-W03",
+    "skill_id": "G12-CHIV-B13-O03",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-B13-C04",
+    "skill_id": "G12-CHIV-B13-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-B13-P04",
+    "skill_id": "G12-CHIV-B13-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G12-B13-A04",
+    "skill_id": "G12-CHIV-B13-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 18,
+    "item_id": "THPT-G12-B13-W04",
+    "skill_id": "G12-CHIV-B13-O04",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G12-B13-C05",
+    "skill_id": "G12-CHIV-B13-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-B13-P05",
+    "skill_id": "G12-CHIV-B13-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 5,
+    "item_id": "THPT-G12-B13-A05",
+    "skill_id": "G12-CHIV-B13-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 19,
+    "item_id": "THPT-G12-B13-W05",
+    "skill_id": "G12-CHIV-B13-O05",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G12-B13-C06",
+    "skill_id": "G12-CHIV-B13-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G12-B13-P06",
+    "skill_id": "G12-CHIV-B13-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 6,
+    "item_id": "THPT-G12-B13-A06",
+    "skill_id": "G12-CHIV-B13-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 20,
+    "item_id": "THPT-G12-B13-W06",
+    "skill_id": "G12-CHIV-B13-O06",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:CORE",
+    "role": "SGK_CORE",
+    "order": 7,
+    "item_id": "THPT-G12-B13-C07",
+    "skill_id": "G12-CHIV-B13-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G12-B13-P07",
+    "skill_id": "G12-CHIV-B13-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 7,
+    "item_id": "THPT-G12-B13-A07",
+    "skill_id": "G12-CHIV-B13-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 21,
+    "item_id": "THPT-G12-B13-W07",
+    "skill_id": "G12-CHIV-B13-O07",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:CORE",
+    "role": "SGK_CORE",
+    "order": 8,
+    "item_id": "THPT-G12-B13-C08",
+    "skill_id": "G12-CHIV-B13-O08"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 8,
+    "item_id": "THPT-G12-B13-P08",
+    "skill_id": "G12-CHIV-B13-O08"
+  },
+  {
+    "collection": "SGK:G12:CHIV:B13:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 8,
+    "item_id": "THPT-G12-B13-A08",
+    "skill_id": "G12-CHIV-B13-O08"
+  },
+  {
+    "collection": "SGK:G12:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 22,
+    "item_id": "THPT-G12-B13-W08",
+    "skill_id": "G12-CHIV-B13-O08",
+    "original_role": "SGK_WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G12-B11-A01",
+    "skill_id": "G12-CHIV-B11-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G12-B11-A02",
+    "skill_id": "G12-CHIV-B11-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G12-B11-A03",
+    "skill_id": "G12-CHIV-B11-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G12-B11-A04",
+    "skill_id": "G12-CHIV-B11-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G12-B11-A05",
+    "skill_id": "G12-CHIV-B11-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G12-B11-A06",
+    "skill_id": "G12-CHIV-B11-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G12-B11-A07",
+    "skill_id": "G12-CHIV-B11-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G12-B12-A01",
+    "skill_id": "G12-CHIV-B12-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G12-B12-A02",
+    "skill_id": "G12-CHIV-B12-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G12-B12-A03",
+    "skill_id": "G12-CHIV-B12-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G12-B12-A04",
+    "skill_id": "G12-CHIV-B12-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G12-B12-A05",
+    "skill_id": "G12-CHIV-B12-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G12-B12-A06",
+    "skill_id": "G12-CHIV-B12-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G12-B12-A07",
+    "skill_id": "G12-CHIV-B12-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 15,
+    "item_id": "THPT-G12-B13-A01",
+    "skill_id": "G12-CHIV-B13-O01"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 16,
+    "item_id": "THPT-G12-B13-A02",
+    "skill_id": "G12-CHIV-B13-O02"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 17,
+    "item_id": "THPT-G12-B13-A03",
+    "skill_id": "G12-CHIV-B13-O03"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 18,
+    "item_id": "THPT-G12-B13-A04",
+    "skill_id": "G12-CHIV-B13-O04"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 19,
+    "item_id": "THPT-G12-B13-A05",
+    "skill_id": "G12-CHIV-B13-O05"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 20,
+    "item_id": "THPT-G12-B13-A06",
+    "skill_id": "G12-CHIV-B13-O06"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 21,
+    "item_id": "THPT-G12-B13-A07",
+    "skill_id": "G12-CHIV-B13-O07"
+  },
+  {
+    "collection": "SGK:G12:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 22,
+    "item_id": "THPT-G12-B13-A08",
+    "skill_id": "G12-CHIV-B13-O08"
+  }
+]

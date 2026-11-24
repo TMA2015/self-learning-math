@@ -1,0 +1,552 @@
+[
+  {
+    "item_id": "THPT-TOP11-P01",
+    "content_version": 2,
+    "stem": "Tìm họ nguyên hàm f(x)=6x−4.",
+    "answer_key": "F(x)=3x²−4x+C trên ℝ.",
+    "worked_solution": "Muốn F'=6x−4, chọn F=3x²−4x+C vì (3x²)'=6x và (−4x)'=−4. Hai nguyên hàm trên khoảng ℝ khác nhau hằng số C; kiểm ngược F'=6x−4.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O01"
+    ],
+    "problem_type_id": "TOP11-PRIMITIVE",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Nếu quên +C, nhớ đạo hàm mọi hằng số đều bằng 0, nên có cả một họ nguyên hàm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P01 · TOP11-O01"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P02",
+    "content_version": 2,
+    "stem": "F'=3x², F(2)=9; tìm F.",
+    "answer_key": "F=x³+C, C=9−8=1; F=x³+1.",
+    "worked_solution": "Từ F'=3x² suy F=x³+C. Điều kiện F(2)=9 cho 8+C=9⇒C=1; vậy F=x³+1. Kiểm F'=3x² và F(2)=9.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O02"
+    ],
+    "problem_type_id": "TOP11-INITIAL",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Thay điều kiện giá trị đầu vào F, không vào F'; C chỉ xuất hiện khi nguyên hàm xong.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P02 · TOP11-O02"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P03",
+    "content_version": 2,
+    "stem": "Tính ∫(3x²+4x−2)dx.",
+    "answer_key": "x³+2x²−2x+C.",
+    "worked_solution": "Lấy nguyên hàm từng hạng: ∫3x²dx=x³, ∫4xdx=2x² và ∫(−2)dx=−2x. Cộng lại được x³+2x²−2x+C; đạo hàm ngược trả đúng3x²+4x−2.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O03"
+    ],
+    "problem_type_id": "TOP11-POWER",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Quy tắc lũy thừa tăng số mũ thêm1 rồi chia hệ số mới; kiểm bằng đạo hàm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P03 · TOP11-O03"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P04",
+    "content_version": 2,
+    "stem": "Tìm nguyên hàm 2/x trên (−∞,0) biết F(−1)=3.",
+    "answer_key": "F=2ln(−x)+3 trên x<0.",
+    "worked_solution": "Trên x<0, ln|x|=ln(−x) hợp lệ. Họ nguyên hàm F=2ln(−x)+C, và F(−1)=2ln1+C=C=3. Vậy F=2ln(−x)+3. Kiểm F'=2/x trên nhánh âm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O04"
+    ],
+    "problem_type_id": "TOP11-LOG_ABS",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Không dùng ln x cho x âm; phép đổi ln|x| thành ln(−x) chỉ hợp lệ trên x<0.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P04 · TOP11-O04"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P05",
+    "content_version": 2,
+    "stem": "Tính ∫(2e^{2x}+3^x)dx.",
+    "answer_key": "e^{2x}+3^x/ln3+C.",
+    "worked_solution": "∫2e^{2x}dx=e^{2x} vì đạo hàm e^{2x} là2e^{2x}. ∫3^xdx=3^x/ln3 vì đạo hàm 3^x=3^x ln3. Cộng được F=e^{2x}+3^x/ln3+C.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O05"
+    ],
+    "problem_type_id": "TOP11-EXP",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Không áp quy tắc nguyên hàm x^n cho hàm có x ở số mũ; dùng đạo hàm mũ ngược.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P05 · TOP11-O05"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P06",
+    "content_version": 2,
+    "stem": "Tính ∫(2cos x−3sin x)dx.",
+    "answer_key": "2sin x+3cos x+C (x radian).",
+    "worked_solution": "Với x đo radian, ∫2cos x dx=2sin x; ∫−3sin x dx=+3cos x do (cos x)'=−sin x. Họ nguyên hàm là 2sin x+3cos x+C; kiểm ngược cả hai dấu.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O06"
+    ],
+    "problem_type_id": "TOP11-TRIG",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Quên dấu âm của đạo hàm cos dễ gây sai nguyên hàm sin; luôn đạo hàm kết quả để kiểm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P06 · TOP11-O06"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P07",
+    "content_version": 2,
+    "stem": "Với v(t)=6t−4, s(0)=3, tìm s(2).",
+    "answer_key": "s(2)=12−8+3=7m.",
+    "worked_solution": "Vì s'=v=6t−4, tích phân được s=3t²−4t+C. Dùng s(0)=3⇒C=3; thế t=2 cho s(2)=12−8+3=7 m. Đây là vị trí, không phải quãng đường.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O07"
+    ],
+    "problem_type_id": "TOP11-RECOVERY",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Nếu chỉ tích phân v trên [0,2], bạn tính độ dời rồi còn phải cộng vị trí đầu để tìm s(2).",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P07 · TOP11-O07"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P08",
+    "content_version": 2,
+    "stem": "Tính ∫₀²(3x²+1)dx.",
+    "answer_key": "[x³+x]₀²=8+2=10.",
+    "worked_solution": "Lấy F=x³+x vì F'=3x²+1. Theo Newton–Leibniz, ∫₀²(3x²+1)dx=F(2)−F(0)=(8+2)−0=10. Tích phân xác định là số, không cộng +C.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O08"
+    ],
+    "problem_type_id": "TOP11-FTC",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [],
+    "remediation": "Ghi hai cận rõ ràng và luôn trừ giá trị tại cận dưới.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P08 · TOP11-O08"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P09",
+    "content_version": 2,
+    "stem": "Tính ∫₁³(2x+1)dx−∫₁³x dx.",
+    "answer_key": "∫₁³(x+1)dx=[x²/2+x]₁³=(9/2+3)−(1/2+1)=6.",
+    "worked_solution": "Hai tích phân cùng cận, nên gộp ∫₁³[(2x+1)−x]dx=∫₁³(x+1)dx. Nguyên hàm F=x²/2+x, hiệu F(3)−F(1)=(9/2+3)−(1/2+1)=6.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O09"
+    ],
+    "problem_type_id": "TOP11-LINEAR",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [],
+    "remediation": "Nếu cận khác nhau, không gộp trực tiếp. Kiểm dấu của dấu trừ trước khi cộng hạng.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P09 · TOP11-O09"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P10",
+    "content_version": 2,
+    "stem": "Tính ∫₃¹ x²dx.",
+    "answer_key": "−26/3.",
+    "worked_solution": "Dùng đảo cận: ∫₃¹x²dx=−∫₁³x²dx=−[x³/3]₁³=−(27−1)/3=−26/3. Giá trị âm do chiều lấy tích phân, không phải diện tích âm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O10"
+    ],
+    "problem_type_id": "TOP11-ORIENTED",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [],
+    "remediation": "Khi cận trên nhỏ hơn cận dưới, đổi chỗ và đặt dấu trừ một lần.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P10 · TOP11-O10"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P11",
+    "content_version": 2,
+    "stem": "Tính diện tích dưới y=x² trên [0,2].",
+    "answer_key": "S=8/3 đơn vị diện tích.",
+    "worked_solution": "Vì x²≥0 liên tục trên [0,2], diện tích đúng bằng tích phân ∫₀²x²dx=[x³/3]₀²=8/3 đơn vị². Nếu f đổi dấu, công thức diện tích phải dùng |f|.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O11"
+    ],
+    "problem_type_id": "TOP11-POS_AREA",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [],
+    "remediation": "Đừng quên xác nhận f≥0 trên đoạn trước khi gọi tích phân là diện tích hình học.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P11 · TOP11-O11"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P12",
+    "content_version": 2,
+    "stem": "Với f=x trên [−2,1], tính tích phân có dấu và diện tích.",
+    "answer_key": "∫−₂¹x dx=(1−4)/2=−3/2; diện tích 2+1/2=5/2.",
+    "worked_solution": "Tích phân có dấu I=∫_{−2}^{1}x dx=[x²/2]_{−2}^{1}=1/2−2=−3/2. Để tính diện tích, chia tại x=0: S=∫_{−2}⁰(−x)dx+∫₀¹x dx=2+1/2=5/2 đơn vị². |I|=3/2 khác S.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O12"
+    ],
+    "problem_type_id": "TOP11-SIGNED",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [],
+    "remediation": "Tìm nghiệm làm f đổi dấu rồi lấy trị tuyệt đối từng phần; không lấy |∫f| thay ∫|f|.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P12 · TOP11-O12"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P13",
+    "content_version": 2,
+    "stem": "Tính ∫₀^π2sin x dx.",
+    "answer_key": "[−2cos x]₀^π=2−(−2)=4.",
+    "worked_solution": "Góc đo radian; F=−2cos x vì F'=2sin x. Thế cận: ∫₀^π2sin x dx=−2cosπ−(−2cos0)=2−(−2)=4. Vì sin≥0 trên [0,π], giá trị này cũng là diện tích dưới đồ thị.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O13"
+    ],
+    "problem_type_id": "TOP11-TRIG_EXP_DEFINITE",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [],
+    "remediation": "Nếu ra 0, kiểm lại cosπ=−1 và dấu trừ trước F(0).",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P13 · TOP11-O13"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P14",
+    "content_version": 2,
+    "stem": "Với v=3t², s(0)=5, tính s(2).",
+    "answer_key": "s(2)=5+8=13m.",
+    "worked_solution": "Vì v(t)=s'(t)=3t², độ dời từ0 tới2 là ∫₀²3t²dt=[t³]₀²=8. Vị trí cuối s(2)=s(0)+8=5+8=13 m. Không dùng v(2)×2 vì vận tốc không hằng.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O14"
+    ],
+    "problem_type_id": "TOP11-ACCUMULATE",
+    "difficulty": "UNDERSTAND_TO_APPLY",
+    "hints": [],
+    "remediation": "Phân biệt độ dời và vị trí cuối: vị trí cuối bằng vị trí đầu cộng độ dời.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P14 · TOP11-O14"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P15",
+    "content_version": 2,
+    "stem": "Tính diện tích dưới y=√x trên [0,4].",
+    "answer_key": "16/3 đơn vị².",
+    "worked_solution": "√x=x^{1/2} liên tục, không âm trên [0,4]; S=∫₀⁴x^{1/2}dx=[(2/3)x^{3/2}]₀⁴=(2/3)·8=16/3 đơn vị².",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O15"
+    ],
+    "problem_type_id": "TOP11-CURVE_AREA",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [],
+    "remediation": "Nếu tính nhầm ∫√x, hãy tăng số mũ từ1/2 thành3/2 rồi chia3/2.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P15 · TOP11-O15"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P16",
+    "content_version": 2,
+    "stem": "Tính S giữa y=|x| và Ox trên [−1,2].",
+    "answer_key": "S=1/2+2=5/2.",
+    "worked_solution": "y=|x| không âm. Trên [−1,0], |x|=−x cho S₁=∫_{−1}⁰(−x)dx=1/2; trên [0,2], |x|=x cho S₂=∫₀²x dx=2. Tổng S=5/2 đơn vị².",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O16"
+    ],
+    "problem_type_id": "TOP11-SPLIT_AXIS",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [],
+    "remediation": "Trị tuyệt đối đổi công thức tại x=0; chia đoạn để tích phân thành biểu thức đại số đơn giản.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P16 · TOP11-O16"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P17",
+    "content_version": 2,
+    "stem": "Tính diện tích giữa y=x+2 và y=x² trên [0,2].",
+    "answer_key": "Vì x+2−x²=(2−x)(x+1)≥0, S=∫₀²(x+2−x²)dx=10/3.",
+    "worked_solution": "Trên [0,2], f−g=(x+2)−x²=(2−x)(x+1)≥0 nên đường y=x+2 ở trên y=x². Diện tích S=∫₀²(x+2−x²)dx=[x²/2+2x−x³/3]₀²=2+4−8/3=10/3 đơn vị².",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O17"
+    ],
+    "problem_type_id": "TOP11-BETWEEN_UNCROSSED",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [],
+    "remediation": "Trước khi lấy hiệu, kiểm dấu f−g để xác định đường nào ở trên trên toàn khoảng.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P17 · TOP11-O17"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P18",
+    "content_version": 2,
+    "stem": "Tính S giữa y=x và y=x² trên [0,2].",
+    "answer_key": "1 đơn vị² (giao 0,1 và chia tại1).",
+    "worked_solution": "Hai đường giao khi x=x² ⇔ x=0 hoặc1. Trên (0,1), x−x²>0; trên (1,2), x−x²<0. Diện tích S=∫₀¹(x−x²)dx+∫₁²(x²−x)dx=1/6+5/6=1 đơn vị².",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O18"
+    ],
+    "problem_type_id": "TOP11-BETWEEN_CROSSED",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [],
+    "remediation": "Nếu hai đường đổi thứ tự, phải chia tại giao điểm và cộng phần dương, không để diện tích triệt dấu.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P18 · TOP11-O18"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P19",
+    "content_version": 2,
+    "stem": "Tính S giữa y=2x và y=x² từ hai điểm giao.",
+    "answer_key": "4/3 đơn vị².",
+    "worked_solution": "Giao điểm y=2x và y=x² cho 2x=x²⇔x(x−2)=0, x=0 hoặc2. Trên [0,2], 2x−x²=x(2−x)≥0. Vậy diện tích giới hạn S=∫₀²(2x−x²)dx=[x²−x³/3]₀²=4−8/3=4/3 đơn vị².",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O19"
+    ],
+    "problem_type_id": "TOP11-MODEL_INTERSECTIONS",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [],
+    "remediation": "Cận của hình kín xuất phát từ giao điểm, không đoán trên nét vẽ.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P19 · TOP11-O19"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P20",
+    "content_version": 2,
+    "stem": "Cho thiết diện hình vuông cạnh x+1 trên [0,1], tính V.",
+    "answer_key": "V=7/3 đơn vị³.",
+    "worked_solution": "Tiết diện vuông cạnh x+1 có diện tích A(x)=(x+1)²=x²+2x+1. Thể tích V=∫₀¹A(x)dx=[x³/3+x²+x]₀¹=1/3+1+1=7/3 đơn vị³. Không nhân π vì không có hình tròn.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O20"
+    ],
+    "problem_type_id": "TOP11-SQUARE_SLICES",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [],
+    "remediation": "Phân biệt cạnh dài (đơn vị) và diện tích lát cắt (đơn vị²) trước khi tích phân thành thể tích.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P20 · TOP11-O20"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P21",
+    "content_version": 2,
+    "stem": "Cho r(x)=x trên [0,2], tính V hình tròn cắt vuông góc Ox.",
+    "answer_key": "V=8π/3 đơn vị³.",
+    "worked_solution": "Tiết diện hình tròn bán kính r(x)=x, diện tích A(x)=πx². V=∫₀²πx²dx=π[x³/3]₀²=8π/3 đơn vị³. Điều kiện x≥0 trên [0,2] đảm bảo bán kính hợp lệ.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O21"
+    ],
+    "problem_type_id": "TOP11-CIRCULAR_SLICES",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [],
+    "remediation": "Dùng diện tích đĩa πr², không dùng chu vi 2πr hoặc chỉ bán kính r.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P21 · TOP11-O21"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP11-P22",
+    "content_version": 3,
+    "stem": "Cho miền 0≤x≤2, 0≤y≤√x quay quanh Ox, V?",
+    "answer_key": "2π đơn vị³.",
+    "worked_solution": "Quay vùng 0≤y≤√x, 0≤x≤2 quanh Ox: tiết diện là đĩa bán kính √x. Diện tích A(x)=π(√x)²=πx; V=π∫₀²x dx=π[x²/2]₀²=2π đơn vị³.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP11-O22"
+    ],
+    "problem_type_id": "TOP11-WASHERS",
+    "difficulty": "APPLY_TO_TRANSFER",
+    "hints": [],
+    "remediation": "Nếu được 8π, em hãy kiểm lại cả diện tích lát cắt và bước thế cận: A(x)=π(√x)²=πx, nên V=π[x²/2]₀²=2π. Không dùng cận hay kết quả của ví dụ khác.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+      "heading": "## THPT-TOP11-P22 · TOP11-O22"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

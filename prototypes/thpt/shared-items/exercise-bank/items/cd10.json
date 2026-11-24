@@ -1,0 +1,902 @@
+[
+  {
+    "item_id": "THPT-TOP10-P01",
+    "content_version": 2,
+    "stem": "f(x)=7−3x trên [−2,4], chứng minh hướng biến thiên.",
+    "answer_key": "Nghịch biến vì f(x₂)−f(x₁)=−3(x₂−x₁)<0 với mọi x₁<x₂.",
+    "worked_solution": "Với mọi x₁<x₂ thuộc [−2,4], f(x₂)−f(x₁)=(7−3x₂)−(7−3x₁)=−3(x₂−x₁)<0. Theo định nghĩa, f nghịch biến trên cả đoạn; không cần đạo hàm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O01"
+    ],
+    "problem_type_id": "TOP10-HIEU_ONG_BIEN_NGHICH_BIEN_THEO_THU_TU_AU_V",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Đừng nhầm hệ số góc âm với giá trị hàm âm. Nếu còn lẫn, chọn hai điểm trong đoạn và so f(x₁), f(x₂).",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P01 · TOP10-O01"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P02",
+    "content_version": 2,
+    "stem": "f=x²−4x, tìm khoảng tăng giảm.",
+    "answer_key": "f'=2x−4: giảm (−∞,2), tăng (2,∞).",
+    "worked_solution": "Đa thức xác định trên ℝ. f'(x)=2x−4=2(x−2), âm với x<2, bằng 0 ở 2 và dương với x>2. Vì thế f giảm trên (−∞,2), tăng trên (2,∞), đạt cực tiểu tại x=2.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O02"
+    ],
+    "problem_type_id": "TOP10-LIEN_HE_DAU_AO_HAM_VA_CHIEU_BIEN_THIEN",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Nếu giải f'=0 nhưng bỏ bảng dấu, hãy thử x=1 và x=3 để nhận ra sự đổi chiều.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P02 · TOP10-O02"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P03",
+    "content_version": 2,
+    "stem": "f(x)=1/(x+1): tìm các khoảng nghịch biến.",
+    "answer_key": "(−∞,−1), (−1,+∞), không gộp qua x=−1.",
+    "worked_solution": "Miền xác định D=ℝ\\{−1}. f'(x)=−1/(x+1)²<0 cho mọi x≠−1, nên f nghịch biến riêng trên (−∞,−1) và (−1,+∞). Không thể ghép qua x=−1 vì tại đó không có giá trị hàm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O03"
+    ],
+    "problem_type_id": "TOP10-TIM_UNG_MIEN_VA_CHIA_KHOANG_KHI_KHAO_SAT",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Nếu gọi f giảm trên toàn D, thử x₁=−2 và x₂=0: f(−2)=−1<f(0)=1, trái điều kiện giảm cho hai điểm ở hai nhánh.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P03 · TOP10-O03"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P04",
+    "content_version": 2,
+    "stem": "f=x³−12x, tìm điểm cực trị.",
+    "answer_key": "f'=3x²−12; cực đại tại −2 f=16, cực tiểu tại 2 f=−16.",
+    "worked_solution": "f'=3x²−12=3(x−2)(x+2), bằng 0 tại x=−2,2. Dấu + trên (−∞,−2), − trên (−2,2), + trên (2,∞). Do +→− tại −2, f(−2)=16 là cực đại địa phương; do −→+ tại 2, f(2)=−16 là cực tiểu địa phương.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O04"
+    ],
+    "problem_type_id": "TOP10-CUC_TRI_IA_PHUONG_QUA_OI_DAU",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Nếu chỉ nêu x=±2, hãy thêm bảng dấu f' để phân loại; nhớ kiểm giá trị của chính f tại các điểm đó.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P04 · TOP10-O04"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P05",
+    "content_version": 2,
+    "stem": "f=x⁵ tại 0 có cực trị không?",
+    "answer_key": "Không, f'=5x⁴≥0 và f tăng qua0.",
+    "worked_solution": "f'(x)=5x⁴≥0 trên ℝ và f'(0)=0. Với x₁<x₂ luôn x₁⁵<x₂⁵, hàm tăng nghiêm ngặt trên ℝ; qua x=0 không đổi từ tăng sang giảm hoặc ngược lại. Do đó 0 là điểm dừng nhưng không phải cực trị.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O05"
+    ],
+    "problem_type_id": "TOP10-_IEM_F_0_KHONG_U_TAO_CUC_TRI",
+    "difficulty": "BASIC_TO_APPLY",
+    "hints": [],
+    "remediation": "Trường hợp f'(c)=0 mới là ứng viên. Hãy đối chiếu dấu f' hai phía c hoặc định nghĩa cực trị trong lân cận.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P05 · TOP10-O05"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P06",
+    "content_version": 2,
+    "stem": "s(t)=t²−6t, t≥0, khi nào đổi chiều?",
+    "answer_key": "v=2t−6 đổi dấu tại t=3, từ âm sang dương.",
+    "worked_solution": "Vận tốc có hướng v(t)=s'(t)=2t−6. Trên 0≤t<3 thì v<0 nên vật chuyển động theo chiều âm; tại t=3 thì v=0; với t>3 thì v>0, vật theo chiều dương. Vậy đổi chiều ở t=3, không phụ thuộc dấu s(t).",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O06"
+    ],
+    "problem_type_id": "TOP10-Y_NGHIA_DAU_AO_HAM_TRONG_CHUYEN_ONG",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu dùng dấu tọa độ s để kết luận chiều, hãy nhớ chiều chuyển động do v=s' quyết định.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P06 · TOP10-O06"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P07",
+    "content_version": 2,
+    "stem": "f=x³−3x trên [−2,2] GTLN/GTNN là gì?",
+    "answer_key": "So f(−2)=−2,f(−1)=2,f(1)=−2,f(2)=2; GTLN2, GTNN−2, đạt tại nhiều điểm.",
+    "worked_solution": "Đạo hàm f'=3(x²−1)=0 tại ±1. Vì f liên tục trên [−2,2], liệt kê hai đầu và hai điểm tới hạn: f(−2)=−2, f(−1)=2, f(1)=−2, f(2)=2. Do đó GTLN bằng 2 tại −1 và 2; GTNN bằng −2 tại −2 và 1.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O07"
+    ],
+    "problem_type_id": "TOP10-CUC_TRI_IA_PHUONG_VA_GIA_TRI_LON_NHAT_NHO_",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Cực đại địa phương chưa chắc là max toàn cục. Trên đoạn đóng phải so cả hai đầu mút.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P07 · TOP10-O07"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P08",
+    "content_version": 2,
+    "stem": "f=x²+1 trên [−2,1] tìm GTLN/GTNN.",
+    "answer_key": "GTLN5 tại−2, GTNN1 tại0.",
+    "worked_solution": "f=x²+1 liên tục trên [−2,1], f'=2x=0 tại x=0. Tính f(−2)=5, f(0)=1, f(1)=2; so ba giá trị cho GTLN=5 tại −2 và GTNN=1 tại 0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O08"
+    ],
+    "problem_type_id": "TOP10-LIEN_TUC_TREN_OAN_ONG_VA_TON_TAI_MAX_MIN",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu chỉ xét f'=0, hãy bổ sung ngay hai đầu đoạn [−2,1] vào danh sách ứng viên.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P08 · TOP10-O08"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P09",
+    "content_version": 2,
+    "stem": "f=x²−2x trên [−1,3], so điểm nào?",
+    "answer_key": "x=−1,1,3; f lần lượt3,−1,3 nên max3,min−1.",
+    "worked_solution": "f=x²−2x liên tục trên [−1,3]; f'=2x−2=0 khi x=1 nằm trong đoạn. Cần so f(−1)=3, f(1)=−1 và f(3)=3. GTLN=3 ở x=−1,3; GTNN=−1 ở x=1.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O09"
+    ],
+    "problem_type_id": "TOP10-SO_IEM_TOI_HAN_IEM_KHONG_KHA_VI_VA_HAI_AU_",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Đạo hàm tại đầu đoạn không cần bằng 0 để đầu đoạn đạt max/min.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P09 · TOP10-O09"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P10",
+    "content_version": 2,
+    "stem": "f=x² trên (0,1) có max/min không?",
+    "answer_key": "Không có GTLN (sup1), không có GTNN (inf0), vì cả hai đầu bị loại.",
+    "worked_solution": "Trên (0,1), f=x² tăng vì f'=2x>0. Khi x→1⁻, f→1 nhưng điểm x=1 không thuộc miền, nên không có GTLN. Khi x→0⁺, f→0 nhưng x=0 bị loại, nên không có GTNN. Cận trên đúng nhỏ nhất là 1, cận dưới đúng lớn nhất là 0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O10"
+    ],
+    "problem_type_id": "TOP10-CAN_TREN_TREN_MIEN_MO_KHONG_ONG_NGHIA_GTLN",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Để gọi một số là GTLN/GTNN, phải tìm được x thuộc miền đạt đúng số đó; đừng thay giới hạn bằng giá trị hàm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P10 · TOP10-O10"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P11",
+    "content_version": 2,
+    "stem": "f=−(x−6)²+20, x∈[0,4], GTLN?",
+    "answer_key": "f(4)=16 tại x=4, không lấy 20 ở x=6.",
+    "worked_solution": "Với x∈[0,4], f=20−(x−6)², f'(x)=−2(x−6)>0 vì x<6. Vậy f tăng trên toàn miền khả thi, đạt GTLN ở đầu phải x=4: f(4)=20−4=16. Đỉnh x=6 nằm ngoài miền.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O11"
+    ],
+    "problem_type_id": "TOP10-GIA_TRI_LON_NHAT_TREN_MIEN_CO_RANG_BUOC",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu nghiệm f'=0 ngoài miền, loại nó trước khi so; tối ưu luôn gắn với điều kiện khả thi.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P11 · TOP10-O11"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P12",
+    "content_version": 2,
+    "stem": "Hình chữ nhật tổng hai cạnh 9 m, diện tích tối đa?",
+    "answer_key": "Hai cạnh 4,5 m và4,5 m, diện tích20,25 m².",
+    "worked_solution": "Đặt hai cạnh x và y>0 (m), ràng buộc x+y=9 nên y=9−x và 0<x<9. Diện tích S=x(9−x)=81/4−(x−9/2)²≤81/4; đẳng thức khi x=y=9/2=4,5 m. Vậy diện tích lớn nhất 20,25 m².",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O12"
+    ],
+    "problem_type_id": "TOP10-THIET_LAP_MO_HINH_TOI_UU_TRUOC_KHI_LAY_AO_",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Đừng nhầm 'tổng hai cạnh bằng 9' với 'chu vi 9'; trước tiên viết ràng buộc từ câu chữ.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P12 · TOP10-O12"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P13",
+    "content_version": 2,
+    "stem": "f=(5x+2)/(x−7), TCN?",
+    "answer_key": "y=5.",
+    "worked_solution": "Chia cả tử và mẫu cho x (khi |x| lớn): f(x)=(5+2/x)/(1−7/x)→5 khi x→+∞ hoặc −∞. Bởi vậy tiệm cận ngang là đường y=5. Điểm x=7 loại miền, không ảnh hưởng kết luận ngang.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O13"
+    ],
+    "problem_type_id": "TOP10-TIEM_CAN_NGANG_HANH_VI_KHI_X_",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu lấy 2 hoặc −7 làm tiệm cận ngang, hãy chia đa thức theo bậc lớn nhất ở tử và mẫu.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P13 · TOP10-O13"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P14",
+    "content_version": 2,
+    "stem": "f=−2/(x−3), giới hạn hai phía quanh3?",
+    "answer_key": "Trái +∞, phải−∞; TCD x=3.",
+    "worked_solution": "Khi x→3⁻, mẫu x−3 âm và tiến 0, tử −2 âm nên (−2)/(x−3)→+∞. Khi x→3⁺, mẫu dương rất nhỏ nên phân thức→−∞. Vậy x=3 là tiệm cận đứng với hai nhánh ngược dấu.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O14"
+    ],
+    "problem_type_id": "TOP10-TIEM_CAN_UNG_KIEM_GIOI_HAN_MOT_PHIA",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Kiểm riêng dấu tử và mẫu ở mỗi phía điểm cấm; không viết '∞' không kèm dấu.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P14 · TOP10-O14"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P15",
+    "content_version": 2,
+    "stem": "f=(x²+3x+1)/(x+1), TC xiên?",
+    "answer_key": "Chia được x+2−1/(x+1), nên y=x+2.",
+    "worked_solution": "Chia đa thức: x²+3x+1=(x+1)(x+2)−1, nên f=x+2−1/(x+1), x≠−1. Khi x→±∞, hiệu f−(x+2)=−1/(x+1)→0. Do đó tiệm cận xiên là y=x+2.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O15"
+    ],
+    "problem_type_id": "TOP10-TIEM_CAN_XIEN_TU_PHAN_DU_0",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Tiệm cận xiên không chỉ là thương của phép chia: phải xác nhận phần dư chia mẫu tiến 0.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P15 · TOP10-O15"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P16",
+    "content_version": 2,
+    "stem": "f=(x²−1)/(x−1), x≠1, loại gián đoạn?",
+    "answer_key": "Khử được, lim2; không TCD x=1.",
+    "worked_solution": "D=ℝ\\{1}. Với x≠1, f=(x−1)(x+1)/(x−1)=x+1. Vì lim_{x→1}f=2 hữu hạn, x=1 là điểm khuyết khử được, không phải tiệm cận đứng. Không được tự bổ sung f(1)=2 vào hàm gốc.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O16"
+    ],
+    "problem_type_id": "TOP10-LO_KHU_UOC_KHONG_PHAI_TIEM_CAN_UNG",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu thấy mẫu bằng0, hãy thử phân tích tử thành nhân tử và xét giới hạn sau rút trên miền hợp lệ.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P16 · TOP10-O16"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P17",
+    "content_version": 2,
+    "stem": "f=1/√(x−2), miền và tiệm cận?",
+    "answer_key": "D=(2,∞), TCD x=2 từ bên phải.",
+    "worked_solution": "Biểu thức 1/√(x−2) yêu cầu x−2>0 vì căn nằm ở mẫu, nên D=(2,+∞). Khi x→2⁺, mẫu dương tiến 0 và f→+∞, do đó x=2 là tiệm cận đứng một phía; không có giá trị thực ở x<2.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O17"
+    ],
+    "problem_type_id": "TOP10-MIEN_XAC_INH_QUYET_INH_TU_PHIA_NAO_LAY_GIO",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Căn ở tử cho điều kiện ≥0, nhưng căn ở mẫu phải >0. Không tính giới hạn từ phía ngoài miền.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P17 · TOP10-O17"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P18",
+    "content_version": 2,
+    "stem": "f=x+1/x, có TCN không?",
+    "answer_key": "Không vì f→±∞ theo x; có tiệm cận xiên y=x.",
+    "worked_solution": "Với x≠0, f=x+1/x. Khi x→+∞, f→+∞; khi x→−∞, f→−∞, nên không có tiệm cận ngang hữu hạn. Tuy nhiên f−x=1/x→0 ở cả hai phía vô cực nên y=x là tiệm cận xiên.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O18"
+    ],
+    "problem_type_id": "TOP10-_OC_HINH_VA_PHAN_BIET_TIEM_CAN_NGANG_UNG_X",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Để tìm tiệm cận ngang, xét giới hạn chính f; để tìm xiên, xét hiệu với đường ax+b.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P18 · TOP10-O18"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P19",
+    "content_version": 2,
+    "stem": "f=(x−2)², cực tiểu và giao Oy?",
+    "answer_key": "Min tại x=2 y=0; Oy tại(0,4).",
+    "worked_solution": "f=(x−2)²≥0 và bằng0 khi x=2, nên cực tiểu (cũng là GTNN trên ℝ) tại (2,0). Giao trục Oy lấy x=0: f(0)=4 nên là (0,4). Có thể kiểm f'=2(x−2) đổi dấu âm sang dương tại 2.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O19"
+    ],
+    "problem_type_id": "TOP10-QUY_TRINH_KHAO_SAT_VA_VE_O_THI_CO_KY_LUAT",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Đọc 'giao Oy' nghĩa là x=0, không phải nghiệm f=0 (giao Ox).",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P19 · TOP10-O19"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P20",
+    "content_version": 2,
+    "stem": "Khảo sát hai cực trị của f(x)=x³−3x trên ℝ.",
+    "answer_key": "Cực đại địa phương (−1,2), cực tiểu địa phương (1,−2).",
+    "worked_solution": "Với f(x)=x³−3x, f'=3(x−1)(x+1). Dấu + trên (−∞,−1), − trên (−1,1), + trên (1,+∞); vì vậy cực đại địa phương tại (−1,2), cực tiểu địa phương tại (1,−2). Đường cong bậc ba vẫn không bị chặn trên ℝ.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O20"
+    ],
+    "problem_type_id": "TOP10-KHAO_SAT_A_THUC_BAC_BA_BANG_BANG_DAU",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Giải nghiệm f'=0 không đủ; dùng dấu để xác định +→− là cực đại, −→+ là cực tiểu.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P20 · TOP10-O20"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P21",
+    "content_version": 2,
+    "stem": "f=(3x−2)/(x+1), TCD,TCN?",
+    "answer_key": "x=−1 (tử ở−1 là−5 khác0), y=3.",
+    "worked_solution": "D=ℝ\\{−1}. Với f=(3x−2)/(x+1), tử tại x=−1 bằng −5 khác0 nên x=−1 là tiệm cận đứng (trái +∞, phải −∞). Chia f=3−5/(x+1), phần dư→0 ở ±∞ nên y=3 là tiệm cận ngang.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O21"
+    ],
+    "problem_type_id": "TOP10-KHAO_SAT_PHAN_THUC_HUU_TI_CO_IEM_CAM",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu muốn biết hướng nhánh gần TCD, thay số sát −1 ở từng phía, không chỉ ghi vị trí mẫu bằng0.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P21 · TOP10-O21"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P22",
+    "content_version": 2,
+    "stem": "f=(x²−4)/(x−2), x≠2, giao Ox?",
+    "answer_key": "f=x+2 trên D nên giao tại x=−2; x=2 là lỗ, không giao.",
+    "worked_solution": "f=(x²−4)/(x−2), D=ℝ\\{2}; rút trên D thành f=x+2. Giao Ox giải x+2=0 được x=−2 thuộc D, nên điểm giao là (−2,0). Điểm (2,4) bị khuyết, không phải giao trục hay điểm trên đồ thị.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O22"
+    ],
+    "problem_type_id": "TOP10-GIAO_TRUC_GIOI_HAN_VA_IEM_AC_BIET_CUA_O_TH",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Rút gọn biểu thức không mở rộng miền của hàm; luôn đối chiếu nghiệm với mẫu ban đầu.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P22 · TOP10-O22"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P23",
+    "content_version": 2,
+    "stem": "f=3−2/(x+4), tâm?",
+    "answer_key": "I(−4,3).",
+    "worked_solution": "f=3−2/(x+4) có TCD x=−4 vì mẫu tiến0, TCN y=3 vì phần phân thức→0 khi |x|→∞. Phép tịnh tiến u=x+4,v=y−3 cho v=−2/u đối xứng qua gốc, nên tâm đối xứng của đồ thị gốc là I(−4,3).",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O23"
+    ],
+    "problem_type_id": "TOP10-_OI_XUNG_TAM_CUA_O_THI_PHAN_THUC",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Tâm phân thức dạng b+k/(x−a) là giao hai tiệm cận (a,b), không phải giao trục tọa độ.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P23 · TOP10-O23"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P24",
+    "content_version": 2,
+    "stem": "Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.",
+    "answer_key": "Cực tiểu địa phương tại (0,4).",
+    "worked_solution": "Theo giả thiết f' âm khi x<0 và dương khi x>0; vì f liên tục tại 0 và f(0)=4, hàm giảm tới 0 rồi tăng, nên (0,4) là điểm cực tiểu địa phương. Không đủ dữ kiện khẳng định đây là GTNN của toàn miền nếu còn nhánh khác.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O24"
+    ],
+    "problem_type_id": "TOP10-_OC_BANG_BIEN_THIEN_E_SUY_TINH_CHAT",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Bảng dấu âm→dương nghĩa là đồ thị đi xuống rồi đi lên. Kiểm giả thiết liên tục ở điểm chuyển dấu.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P24 · TOP10-O24"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P25",
+    "content_version": 2,
+    "stem": "f=1/(x+2), có giảm trên D như một tập không?",
+    "answer_key": "Không theo định nghĩa so mọi cặp; chỉ trên hai khoảng tách bởi −2.",
+    "worked_solution": "D=ℝ\\{−2} và f'=−1/(x+2)²<0 trên từng khoảng (−∞,−2), (−2,+∞). Nhưng lấy x₁=−3<x₂=−1 thì f(x₁)=−1<f(x₂)=1, trái điều kiện giảm trên cả tập D theo mọi cặp. Vậy chỉ được nói nghịch biến trên hai khoảng riêng.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O25"
+    ],
+    "problem_type_id": "TOP10-KHONG_NOI_CAC_NHANH_O_THI_QUA_IEM_NGOAI_MI",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Đạo hàm một dấu trên miền rời không cho phép gộp các khoảng; thử hai điểm ở hai phía tiệm cận.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P25 · TOP10-O25"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P26",
+    "content_version": 2,
+    "stem": "C(q)=80+4q+q², C'(2)?",
+    "answer_key": "C'=4+2q⇒8 (đơn vị chi phí/đơn vị sản phẩm).",
+    "worked_solution": "C(q)=80+4q+q², nên C'(q)=4+2q và C'(2)=8. Nếu C đo bằng nghìn đồng và q theo sản phẩm thì kết quả là 8 nghìn đồng trên một sản phẩm, không phải tổng chi phí C(2)=92.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O26"
+    ],
+    "problem_type_id": "TOP10-_AO_HAM_LA_TOC_O_BIEN_OI_CUC_BO_TRONG_UNG_",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu đáp án vẫn chứa q, hãy thế q=2 sau khi đạo hàm; luôn ghi đơn vị của tốc độ cận biên.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P26 · TOP10-O26"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P27",
+    "content_version": 2,
+    "stem": "Cho v=3,a=−2, tốc độ thay đổi?",
+    "answer_key": "Giảm vì v·a<0.",
+    "worked_solution": "Tại thời điểm xét có v=3>0 và a=−2<0. Vì v·a=−6<0, đạo hàm tốc độ |v| bằng a=−2 (khi v>0), nên tốc độ đang giảm. Gia tốc âm không luôn đồng nghĩa chậm dần nếu v cũng âm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O27"
+    ],
+    "problem_type_id": "TOP10-VAN_TOC_CO_HUONG_TOC_O_VA_GIA_TOC",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Để đánh giá tốc độ tăng/giảm, kiểm dấu v và a cùng lúc, không dùng riêng dấu gia tốc.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P27 · TOP10-O27"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P28",
+    "content_version": 2,
+    "stem": "C(q)=2q²+q+5, C'(2)?",
+    "answer_key": "9 (đơn vị chi phí/sản phẩm); C(3)−C(2)=11.",
+    "worked_solution": "C'(q)=4q+1 nên C'(2)=9. Nếu q tính theo sản phẩm, chênh thật một sản phẩm C(3)−C(2)=[18+3+5]−[8+2+5]=26−15=11, khác9. Đạo hàm là tốc độ cận biên tức thời, không phải luôn bằng sai phân hữu hạn bước1.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O28"
+    ],
+    "problem_type_id": "TOP10-CHI_PHI_CAN_BIEN_VA_QUYET_INH_KINH_TE",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Nếu ra 11 thay cho C'(2), bạn đã tính ΔC với Δq=1, không phải đạo hàm tại q=2.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P28 · TOP10-O28"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P29",
+    "content_version": 2,
+    "stem": "Hình chữ nhật chu vi24m, một cạnh x có miền?",
+    "answer_key": "0<x<12; cạnh kia 12−x.",
+    "worked_solution": "Hình chữ nhật chu vi24 m có 2(x+y)=24⇒x+y=12. Với hai cạnh đều dương, y=12−x>0 và x>0 nên miền 0<x<12. Các đầu x=0,12 cho hình suy biến, không hợp lệ.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O29"
+    ],
+    "problem_type_id": "TOP10-XAC_INH_MIEN_CUA_MO_HINH_TOI_UU_THUC_TE",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Nếu cho 0≤x≤24, hãy chia chu vi cho2 và ghi điều kiện cạnh còn lại dương.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P29 · TOP10-O29"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P30",
+    "content_version": 2,
+    "stem": "P(x)=−(x−3)²+7, x∈[0,2], GTLN?",
+    "answer_key": "x=2, P=6; đỉnh3 không hợp lệ.",
+    "worked_solution": "f(x)=7−(x−3)², x∈[0,2]. Vì f'(x)=−2(x−3)>0 trên [0,2), hàm tăng đến x=2 và đạt GTLN f(2)=7−1=6. Đỉnh x=3 cho giá trị7 nhưng nằm ngoài miền, không là phương án.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O30"
+    ],
+    "problem_type_id": "TOP10-_AO_HAM_E_TIM_TOI_UU_TRONG_MIEN",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Khi tối ưu có ràng buộc, hãy xét ứng viên f'=0 có thực sự nằm trong miền hay không.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P30 · TOP10-O30"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P31",
+    "content_version": 2,
+    "stem": "f=x² trên [1,3], min/max?",
+    "answer_key": "Min1 tại1, max9 tại3.",
+    "worked_solution": "Trên [1,3], f=x² liên tục và f'=2x>0; vì thế hàm tăng, GTNN=f(1)=1 và GTLN=f(3)=9. Cả hai đạt tại đầu đoạn, không có điểm nội miền f'=0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O31"
+    ],
+    "problem_type_id": "TOP10-KIEM_AU_MUT_KHA_THI_VA_AT_CUC_TRI",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Không bắt buộc tìm nghiệm f'=0 nếu đạo hàm luôn dương trên đoạn; hai đầu đoạn vẫn quyết định cực trị toàn cục.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P31 · TOP10-O31"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P32",
+    "content_version": 2,
+    "stem": "Chiều dài tối ưu x=2,5m, có phải làm tròn?",
+    "answer_key": "Không nếu chiều dài có thể đo liên tục; làm tròn chỉ khi biến thực tế rời rạc.",
+    "worked_solution": "Nếu chiều dài có thể thay đổi liên tục thì x=2,5 m là giá trị hợp lệ và không cần làm tròn. Nếu mô hình quy định x theo số đoạn/viên gạch nguyên hoặc bội số đo cố định, phải so các giá trị khả thi gần2,5 và nêu sai số do làm tròn. Không thể quyết định chỉ từ kết quả toán mà bỏ loại biến.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O32"
+    ],
+    "problem_type_id": "TOP10-KIEM_ON_VI_GIA_THIET_VA_SAI_SO_CUA_MO_HINH",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Đọc rõ đơn vị và biến liên tục hay rời rạc trước khi làm tròn; không tự làm tròn mọi kết quả.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P32 · TOP10-O32"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P33",
+    "content_version": 2,
+    "stem": "f=−x²+6x, max trên ℝ?",
+    "answer_key": "GTLN9 tại x=3; không có GTNN.",
+    "worked_solution": "f=−x²+6x=9−(x−3)²≤9 với mọi x∈ℝ, bằng9 tại x=3. Vậy GTLN=9. Khi |x|→∞, f→−∞ nên không có GTNN trên toàn ℝ; điều này phù hợp parabol mở xuống.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O33"
+    ],
+    "problem_type_id": "TOP10-TONG_HOP_CHIEU_BIEN_THIEN_VA_CUC_TRI",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Chứng minh GTLN bằng bình phương không âm; để phủ nhận GTNN, chỉ ra hàm không bị chặn dưới.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P33 · TOP10-O33"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P34",
+    "content_version": 2,
+    "stem": "f=(x²−4)/(x−2), TCD ở x=2?",
+    "answer_key": "Không; chỉ lỗ. Nếu x≠2, f=x+2, có đường xiên y=x+2 ở vô cực (thực tế đồ thị trùng đường này trừ một điểm).",
+    "worked_solution": "f=(x²−4)/(x−2) với x≠2 bằng x+2 trên miền D. Giới hạn khi x→2 bằng4 hữu hạn, nên x=2 không là TCD mà chỉ là lỗ (2,4). Vì f(x)−(x+2)=0 với mọi x∈D, đường y=x+2 thỏa định nghĩa tiệm cận xiên ở vô cực (đồ thị trùng đường ấy trừ lỗ).",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O34"
+    ],
+    "problem_type_id": "TOP10-TONG_HOP_TIEM_CAN_VA_OC_O_THI_HUU_TI",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Đừng mặc định mẫu bằng0 là TCD; phân tích nhân tử và tính giới hạn một phía trước.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P34 · TOP10-O34"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P35",
+    "content_version": 2,
+    "stem": "P=−q²+6q−2, q∈[0,4], max ở đâu?",
+    "answer_key": "q=3, P=7; hai biên−2 và6 nhỏ hơn.",
+    "worked_solution": "P(q)=−q²+6q−2=7−(q−3)²≤7 cho q∈[0,4]. Vì q=3 thuộc miền nên GTLN=7 tại q=3. Kiểm hai biên P(0)=−2,P(4)=6 đều thấp hơn. Nếu q là số lượng nguyên thì q=3 cũng hợp lệ.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O35"
+    ],
+    "problem_type_id": "TOP10-KET_HOP_VAN_TOC_CHI_PHI_VA_BAI_TOAN_TOI_UU",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Để kết luận max, phải vừa có chặn trên vừa có điểm đạt trong miền; so các biên để tự kiểm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P35 · TOP10-O35"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP10-P36",
+    "content_version": 2,
+    "stem": "g(x)=1−(x−2)² trên miền (0,3) có đạt GTLN/GTNN không?",
+    "answer_key": "GTLN=1 tại x=2; không có GTNN (infimum −3 không đạt).",
+    "worked_solution": "Trên (0,3), g(x)=1−(x−2)²≤1 và bằng1 tại x=2 thuộc miền, nên GTLN=1 đạt ở x=2. Nhưng khi x→0⁺, g→−3, và mọi x∈(0,3) đều có g(x)>−3, nên không có GTNN (infimum −3). Miền mở vẫn có thể đạt max ở nội miền.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP10-O36"
+    ],
+    "problem_type_id": "TOP10-TU_PHAT_HIEN_BAY_MIEN_DAU_BIEN_GIOI_HAN_VA",
+    "difficulty": "APPLICATION_TRANSFER",
+    "hints": [],
+    "remediation": "Đừng kết luận mọi hàm trên miền mở đều không có GTLN. Kiểm liệu điểm cực trị nội miền có đạt chặn trên hay không.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+      "heading": "## THPT-TOP10-P36 · TOP10-O36"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]
