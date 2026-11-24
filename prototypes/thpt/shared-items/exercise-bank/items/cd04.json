@@ -1,0 +1,574 @@
+[
+  {
+    "item_id": "THPT-TOP04-P01",
+    "content_version": "R01",
+    "stem": "Giải thích tại sao 3^(-2)·9=1 nhưng 0^(-2) không xác định.",
+    "answer_key": "3^(-2)·9=1; 0^(-2) không xác định.",
+    "worked_solution": "3^(-2)=1/9 vì 3≠0; nhân 9 cho 1. Nếu thay cơ số bằng 0 thì số mũ −2 đòi lấy 1/0², là phép chia cho 0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O01"
+    ],
+    "problem_type_id": "TOP04-POWER_NEGATIVE_ZERO",
+    "difficulty": "BASIC",
+    "hints": [],
+    "remediation": "Nếu nghĩ số mũ âm cho kết quả âm, viết thành phân số nghịch đảo trước.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P01 · TOP04-O01",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P02",
+    "content_version": "R01",
+    "stem": "Phân biệt ⁴√16 với nghiệm của x⁴=16; tính thêm ³√(−8).",
+    "answer_key": "⁴√16=2; x⁴=16 có x=±2; ³√(−8)=−2.",
+    "worked_solution": "Căn số học bậc chẵn chỉ nhận giá trị không âm; phương trình bậc chẵn có thể có hai nghiệm đối nhau. Căn bậc lẻ của số âm có nghĩa vì (−2)³=−8.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O02"
+    ],
+    "problem_type_id": "TOP04-EVEN_ODD_ROOTS",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu chỉ chọn x=2 trong phương trình x⁴=16, thử x=−2 để nhận diện hai nghiệm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P02 · TOP04-O02",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P03",
+    "content_version": "R01",
+    "stem": "So sánh 2^(√2) và 2^(3/2) mà không dùng máy tính; nêu điều kiện cơ số.",
+    "answer_key": "2^(√2) < 2^(3/2).",
+    "worked_solution": "√2<3/2 vì 2<9/4, và y=2^x tăng nghiêm ngặt. Cơ số 2>0 nên lũy thừa với số mũ vô tỉ xác định.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O03"
+    ],
+    "problem_type_id": "TOP04-REAL_EXPONENT_ORDER",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu nhầm số mũ vô tỉ vô nghĩa, nhớ cơ số dương và phép giới hạn từ số mũ hữu tỉ.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P03 · TOP04-O03",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P04",
+    "content_version": "R01",
+    "stem": "So sánh (1/2)^(√3) với (1/2)^2, giải thích dấu so sánh.",
+    "answer_key": "(1/2)^(√3) > (1/2)^2.",
+    "worked_solution": "√3<2, nhưng cơ số 1/2 nằm giữa 0 và 1 nên hàm lũy thừa theo số mũ giảm: số mũ nhỏ cho giá trị lớn. Không được dùng quy tắc so sánh cơ số >1.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O03"
+    ],
+    "problem_type_id": "TOP04-REAL_EXPONENT_DECREASE",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu viết dấu <, thử số mũ 0 và 1: (1/2)^0=1>(1/2)^1.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P04 · TOP04-O03",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P05",
+    "content_version": "R01",
+    "stem": "Với a>0, rút gọn E=a^(3/4)·a^(−1/4)/√a. Điều kiện nào bảo đảm phép tính có nghĩa?",
+    "answer_key": "E=1 với a>0.",
+    "worked_solution": "√a=a^(1/2)>0 vì a>0. E=a^(3/4−1/4−1/2)=a^0=1. Với a=0 phép chia cho √a không xác định; với a âm không dùng nhất quán mũ thực theo định nghĩa SGK.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O04"
+    ],
+    "problem_type_id": "TOP04-POWER_LAWS_CONDITION",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu vô tình thay a=0 vào 1, kiểm lại mẫu √a trước khi rút gọn.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P05 · TOP04-O04",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P06",
+    "content_version": "R01",
+    "stem": "Tính log₄(1/8) và giải thích số âm xuất hiện ở đâu.",
+    "answer_key": "log₄(1/8)=−3/2.",
+    "worked_solution": "4^(−3/2)=1/(√4)^3=1/8. Logarit là số mũ cần đặt lên cơ số 4 để nhận 1/8, không phải đối số âm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O05"
+    ],
+    "problem_type_id": "TOP04-LOG_FRACTION_POWER",
+    "difficulty": "BASIC",
+    "hints": [],
+    "remediation": "Nếu viết log₄(−1/8), nhớ đối số log phải >0.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P06 · TOP04-O05",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P07",
+    "content_version": "R01",
+    "stem": "Tìm miền xác định của log₃[(x−1)(x−4)]. Ở miền nào có thể tách thành log₃(x−1)+log₃(x−4)?",
+    "answer_key": "Miền x<1 hoặc x>4; chỉ tách thành tổng log thực khi x>4.",
+    "worked_solution": "Điều kiện (x−1)(x−4)>0 ⇒ x<1 hoặc x>4. Để tách, **từng** đối số x−1 và x−4 phải dương ⇒ x>4; x<1 cho tích dương nhưng hai thừa số âm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O06"
+    ],
+    "problem_type_id": "TOP04-LOG_PRODUCT_DOMAIN",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu tự động tách log tích, thử x=0: log₃(4) có nghĩa còn log₃(−1) vô nghĩa.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P07 · TOP04-O06",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P08",
+    "content_version": "R01",
+    "stem": "Tìm miền của log₂(x²−9), rồi xét tính hợp lệ của log₂(x−3)+log₂(x+3) trên toàn miền đó.",
+    "answer_key": "TXĐ x<−3 hoặc x>3; tách thành tổng log thực chỉ trên x>3.",
+    "worked_solution": "x²−9=(x−3)(x+3)>0 khi |x|>3. Muốn log của từng thừa số có nghĩa phải có x−3>0 và x+3>0 ⇒ x>3.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O06"
+    ],
+    "problem_type_id": "TOP04-LOG_DIFFERENCE_DOMAIN",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu nhận x=−4 là hợp lệ cho hai log riêng, thay −4−3 và −4+3 đều âm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P08 · TOP04-O06",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P09",
+    "content_version": "R01",
+    "stem": "Tính log₂24−log₂3. Vì sao không cần tính riêng hai số thập phân?",
+    "answer_key": "3.",
+    "worked_solution": "Hai đối số 24,3 đều dương. Quy tắc log thương cho log₂(24/3)=log₂8=3 vì 2³=8. Quy tắc chỉ hợp khi cả hai log được xác định.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O07"
+    ],
+    "problem_type_id": "TOP04-LOG_QUOTIENT_LAW",
+    "difficulty": "BASIC",
+    "hints": [],
+    "remediation": "Nếu trừ hai đối số thành log₂21, nhớ log A−log B=log(A/B), không phải log(A−B).",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P09 · TOP04-O07",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P10",
+    "content_version": "R01",
+    "stem": "Tính log₄8 bằng hai cách: tìm số mũ và đổi cơ số log₂.",
+    "answer_key": "3/2.",
+    "worked_solution": "4^(3/2)=(√4)^3=8. Mặt khác log₄8=log₂8/log₂4=3/2, mẫu ≠0 do cơ số 4≠1.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O08"
+    ],
+    "problem_type_id": "TOP04-BASE_CHANGE_NUMERIC",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu nghĩ log₄8=2, thử 4²=16 khác 8.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P10 · TOP04-O08",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P11",
+    "content_version": "R01",
+    "stem": "Tính log_(1/9)3. Giá trị này dương hay âm?",
+    "answer_key": "−1/2.",
+    "worked_solution": "(1/9)^(−1/2)=1/√(1/9)=3; do cơ số 1/9<1, số mũ âm có thể cho giá trị >1. Cơ số vẫn hợp lệ vì >0, ≠1.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O08"
+    ],
+    "problem_type_id": "TOP04-BASE_LESS_ONE",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu cho kết quả +1/2, tính (1/9)^(1/2)=1/3 để kiểm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P11 · TOP04-O08",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P12",
+    "content_version": "R01",
+    "stem": "Cho f(x)=(1/3)^x. Nêu tập xác định, tập giá trị và tính f(0), f(−1).",
+    "answer_key": "D=ℝ, T=(0,+∞), f(0)=1, f(−1)=3.",
+    "worked_solution": "Với cơ số 1/3>0 khác 1, hàm mũ xác định mọi x thực, luôn dương. (1/3)^0=1, (1/3)^(−1)=3; không có nghiệm f(x)=0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O09"
+    ],
+    "problem_type_id": "TOP04-EXP_FUNCTION_DECAY",
+    "difficulty": "BASIC",
+    "hints": [],
+    "remediation": "Nếu viết f(−1)=−3, chuyển số mũ âm thành nghịch đảo.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P12 · TOP04-O09",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P13",
+    "content_version": "R01",
+    "stem": "Hàm y=2^x có thể cắt trục hoành không? Khi x→−∞ thì y tiến về số nào?",
+    "answer_key": "Không cắt Ox; y>0 mọi x và tiến về 0 từ phía dương khi x→−∞.",
+    "worked_solution": "Mọi lũy thừa thực của cơ số 2>0 đều dương, nên không có nghiệm 2^x=0. Nếu x giảm không giới hạn, 2^x=1/2^(−x) tiến về 0 nhưng không bằng 0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O09"
+    ],
+    "problem_type_id": "TOP04-EXP_AXIS_ASYMPTOTE",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu khẳng định f(−100)=0, phân biệt số rất nhỏ với số bằng 0.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P13 · TOP04-O09",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P14",
+    "content_version": "R01",
+    "stem": "Sắp xếp theo thứ tự giảm dần các giá trị (1/5)^(−1), (1/5)^0 và (1/5)^2.",
+    "answer_key": "5 > 1 > 1/25, tương ứng các số mũ −1,0,2.",
+    "worked_solution": "Với 0<a=1/5<1, a^x nghịch biến. Tính trực tiếp: a^(−1)=5, a^0=1, a²=1/25.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O10"
+    ],
+    "problem_type_id": "TOP04-EXP_MONOTONIC_REVERSAL",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu sắp theo số mũ tăng, so các giá trị cụ thể và nhớ cơ số nhỏ hơn 1.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P14 · TOP04-O10",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P15",
+    "content_version": "R01",
+    "stem": "Cho g(x)=log_(1/2)x. Nêu miền, tính g(1/4), g(4) và nhận xét biến thiên.",
+    "answer_key": "D=(0,+∞), g(1/4)=2, g(4)=−2, hàm nghịch biến.",
+    "worked_solution": "(1/2)^2=1/4 và (1/2)^(−2)=4. Cơ số nằm giữa 0 và 1 nên logarit giảm; trục Oy (x=0) là tiệm cận đứng, không có log cho x≤0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O11"
+    ],
+    "problem_type_id": "TOP04-LOG_DECREASING_GRAPH",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu tưởng đối số 0 hợp lệ, đối chiếu không có số mũ nào để (1/2)^y=0.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P15 · TOP04-O11",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P16",
+    "content_version": "R01",
+    "stem": "Với f(x)=2^x, g(x)=log₂x, tìm điểm tương ứng trên g nếu (−1;1/2) nằm trên f; nói rõ miền của g(f(x)) và f(g(x)).",
+    "answer_key": "Điểm (1/2;−1). g(f(x))=x với mọi x∈ℝ; f(g(x))=x chỉ khi x>0.",
+    "worked_solution": "Hai hàm ngược nhau nên tọa độ đổi chỗ qua y=x. f(x)>0 với mọi x nên g(f(x)) có nghĩa; g(x) chỉ tồn tại x>0, do đó f(g(x)) chỉ xét x>0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O12"
+    ],
+    "problem_type_id": "TOP04-EXP_LOG_INVERSE_POINTS",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu cho g(−1), kiểm trục miền: đối số log phải dương.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P16 · TOP04-O12",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P17",
+    "content_version": "R01",
+    "stem": "Giải 9^x−4·3^x+3=0 trong ℝ bằng đặt ẩn t=3^x>0; ghi rõ vì sao không thể nhận t≤0.",
+    "answer_key": "S={0,1}.",
+    "worked_solution": "9^x=(3^x)². Đặt t=3^x>0, phương trình t²−4t+3=(t−1)(t−3)=0. Hai t=1,3 đều dương, tương ứng x=0,1. Đây là kỹ thuật vận dụng mở rộng CĐ04, không mạo nhận là phương pháp đã giải thích trong SGK B21 cũ.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O13"
+    ],
+    "problem_type_id": "TOP04-EXP_QUADRATIC_SUBSTITUTION",
+    "difficulty": "APPLY_EXTENSION",
+    "hints": [],
+    "remediation": "Nếu đặt t nhưng quên t>0, nhớ a^x luôn dương khi a>0.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P17 · TOP04-O13",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P18",
+    "content_version": "R01",
+    "stem": "Giải log₂(x−1)+log₂(x−3)=3, ghi điều kiện và nghiệm bị loại.",
+    "answer_key": "S={5}.",
+    "worked_solution": "ĐK x−1>0 và x−3>0 ⇒ x>3. Gộp log: (x−1)(x−3)=2³=8 ⇒ x²−4x−5=(x−5)(x+1)=0. Ứng viên 5,−1; chỉ 5 hợp miền. Thử log₂4+log₂2=3.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O14"
+    ],
+    "problem_type_id": "TOP04-LOG_EQUATION_FILTER",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu nhận −1, thử x−3=−4 khiến log₂(x−3) vô nghĩa.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P18 · TOP04-O14",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P19",
+    "content_version": "R01",
+    "stem": "Giải (1/3)^(2x−1) ≥ (1/3)^(x+2) trên ℝ.",
+    "answer_key": "S=(−∞,3].",
+    "worked_solution": "Vì 0<1/3<1, hàm mũ nghịch biến; bất phương trình tương đương 2x−1≤x+2 ⇒ x≤3. x=3 cho dấu bằng nên lấy mốc.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O15"
+    ],
+    "problem_type_id": "TOP04-EXP_INEQUALITY_SMALL_BASE",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu giữ ≥ khi so số mũ, thử x=4: (1/3)^7 < (1/3)^6.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P19 · TOP04-O15",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P20",
+    "content_version": "R01",
+    "stem": "Giải log_(1/2)(x−1) ≤ log_(1/2)(5−x) trong ℝ.",
+    "answer_key": "S=[3,5).",
+    "worked_solution": "Điều kiện x−1>0 và 5−x>0 ⇒ 1<x<5. Cơ số 1/2 làm log giảm, nên x−1≥5−x ⇒ x≥3. Lấy giao với miền: [3,5), 5 bị loại vì log 0 vô nghĩa.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O16"
+    ],
+    "problem_type_id": "TOP04-LOG_INEQUALITY_SMALL_BASE",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu ghi [3,5], thay x=5 khiến log_(1/2)(0) không tồn tại; xem sơ đồ miền.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P20 · TOP04-O16",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P21",
+    "content_version": "R01",
+    "stem": "Một quần thể giả định có 500 cá thể và giảm 20% sau mỗi chu kỳ, không có sinh nhập cư. Mô hình N(n)=500·0,8^n. Tính N(3) và diễn giải phạm vi mô hình.",
+    "answer_key": "N(3)=256 cá thể **theo mô hình giảm cố định 20% mỗi chu kỳ**; đây là kết quả của công thức đã cho, không phải một kỳ vọng xác suất. Số lượng ngoài thực tế có thể khác khi các giả thiết của mô hình không còn đúng.",
+    "worked_solution": "Mỗi chu kỳ nhân 1−0,2=0,8; ba chu kỳ 500·(4/5)³=500·64/125=256. Mô hình nhân cố định chỉ là giả thiết, không tính các biến cố ngẫu nhiên.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O17"
+    ],
+    "problem_type_id": "TOP04-EXP_DECAY_DISCRETE",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu lấy 500−3·100=200, đó là giảm tuyến tính theo lượng cố định, không phải giảm 20% của lượng còn lại.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P21 · TOP04-O17",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP04-P22",
+    "content_version": "R01",
+    "stem": "Giải log₂(x²−1)=log₂(3x+3), bắt buộc ghi miền hai đối số trước khi biến đổi.",
+    "answer_key": "S={4}.",
+    "worked_solution": "ĐK x²−1>0 (x<−1 hoặc x>1) và 3x+3>0 (x>−1), giao là x>1. Vì log₂ đơn ánh, x²−1=3x+3 ⇒ x²−3x−4=(x−4)(x+1)=0. Chỉ x=4 hợp miền, kiểm log₂15=log₂15.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP04-O18"
+    ],
+    "problem_type_id": "TOP04-INTEGRATED_LOG_DOMAIN",
+    "difficulty": "SYNTHESIS",
+    "hints": [],
+    "remediation": "Nếu giữ x=−1 vì phương trình đa thức có nghiệm, log₂(0) không tồn tại.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "377de2e2e9fb6771f02270e8d85e950559669895",
+      "heading": "## THPT-TOP04-P22 · TOP04-O18",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

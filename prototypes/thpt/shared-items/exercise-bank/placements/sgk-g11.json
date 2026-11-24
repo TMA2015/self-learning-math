@@ -700,5 +700,460 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 13,
     "item_id": "THPT-G11-CHV-B17-P05"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B18-C01",
+    "skill_id": "G11-B18-POWER_INTEGER"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B18-C02",
+    "skill_id": "G11-B18-POWER_RATIONAL"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B18-C03",
+    "skill_id": "G11-B18-POWER_INTEGER"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVI-B18-C04",
+    "skill_id": "G11-B18-POWER_REAL"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-CHVI-B18-C05",
+    "skill_id": "G11-B18-POWER_RATIONAL"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B18-P01",
+    "skill_id": "G11-B18-POWER_LAWS"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B18-P02",
+    "skill_id": "G11-B18-POWER_RATIONAL"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B18-P03",
+    "skill_id": "G11-B18-POWER_RATIONAL"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVI-B18-P04",
+    "skill_id": "G11-B18-POWER_LAWS"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:APPLICATION",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B18-P05",
+    "skill_id": "G11-B18-GROWTH_MODEL"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-CHVI-B18-P06",
+    "skill_id": "G11-B18-POWER_LAWS"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-CHVI-B18-P07",
+    "skill_id": "G11-B18-POWER_INTEGER"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B19-C01",
+    "skill_id": "G11-B19-LOG_DEFINITION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B19-C02",
+    "skill_id": "G11-B19-LOG_DEFINITION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B19-C03",
+    "skill_id": "G11-B19-LOG_DOMAIN"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B19-P01",
+    "skill_id": "G11-B19-LOG_LAWS"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B19-P02",
+    "skill_id": "G11-B19-LOG_LAWS"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B19-P03",
+    "skill_id": "G11-B19-LOG_DEFINITION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVI-B19-P04",
+    "skill_id": "G11-B19-LOG_DOMAIN"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-CHVI-B19-P05",
+    "skill_id": "G11-B19-LOG_BASE_CHANGE"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:APPLICATION",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B19-P06",
+    "skill_id": "G11-B19-LOG_APPLICATION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B20:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B20-C01",
+    "skill_id": "G11-B20-EXP_FUNCTION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B20:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B20-C02",
+    "skill_id": "G11-B20-EXP_MONOTONIC"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B20:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B20-C03",
+    "skill_id": "G11-B20-LOG_FUNCTION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B20:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVI-B20-C04",
+    "skill_id": "G11-B20-INVERSE_GRAPH"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B20:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B20-P01",
+    "skill_id": "G11-B20-LOG_FUNCTION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B20:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B20-P02",
+    "skill_id": "G11-B20-EXP_MONOTONIC"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B20:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B20-P03",
+    "skill_id": "G11-B20-LOG_MONOTONIC"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B20:APPLICATION",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B20-P04",
+    "skill_id": "G11-B20-INVERSE_GRAPH"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B21-C01",
+    "skill_id": "G11-B21-EXP_EQUATION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B21-C02",
+    "skill_id": "G11-B21-LOG_EQUATION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B21-C03",
+    "skill_id": "G11-B21-EXP_INEQUALITY"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVI-B21-C04",
+    "skill_id": "G11-B21-LOG_INEQUALITY"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B21-P01",
+    "skill_id": "G11-B21-EXP_EQUATION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B21-P02",
+    "skill_id": "G11-B21-LOG_EQUATION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B21-P03",
+    "skill_id": "G11-B21-EXP_INEQUALITY"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVI-B21-P04",
+    "skill_id": "G11-B21-LOG_INEQUALITY"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-CHVI-B21-P05",
+    "skill_id": "G11-B21-DOMAIN_CHECK"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:APPLICATION",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B21-P06",
+    "skill_id": "G11-B21-REAL_CONTEXT"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-CHVI-B21-P07",
+    "skill_id": "G11-B21-EXP_EQUATION"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G11-CHVI-B21-P08",
+    "skill_id": "G11-CHVI-INTEGRATED"
+  },
+  {
+    "collection": "SGK:G11:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B18-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B18-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B19-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G11-CHVI-B19-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G11-CHVI-B20-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "THPT-G11-CHVI-B20-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 7,
+    "item_id": "THPT-G11-CHVI-B21-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 8,
+    "item_id": "THPT-G11-CHVI-B21-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G11-CHVI-B18-P06"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G11-CHVI-B18-P03"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G11-CHVI-B18-P05"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G11-CHVI-B18-P07"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G11-CHVI-B19-P02"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G11-CHVI-B19-P03"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G11-CHVI-B19-P04"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G11-CHVI-B19-P05"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G11-CHVI-B19-P06"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G11-CHVI-B20-P01"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G11-CHVI-B20-P02"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G11-CHVI-B20-P03"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G11-CHVI-B20-P04"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G11-CHVI-B21-P07"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 15,
+    "item_id": "THPT-G11-CHVI-B21-P02"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 16,
+    "item_id": "THPT-G11-CHVI-B21-P03"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 17,
+    "item_id": "THPT-G11-CHVI-B21-P04"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 18,
+    "item_id": "THPT-G11-CHVI-B21-P05"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 19,
+    "item_id": "THPT-G11-CHVI-B21-P06"
+  },
+  {
+    "collection": "SGK:G11:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 20,
+    "item_id": "THPT-G11-CHVI-B21-P08"
   }
 ]

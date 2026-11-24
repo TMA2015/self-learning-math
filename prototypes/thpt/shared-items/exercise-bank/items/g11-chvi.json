@@ -1,0 +1,1232 @@
+[
+  {
+    "item_id": "THPT-G11-CHVI-B18-C01",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Tại sao (2/5)^(-2) không phải số âm? Tính giá trị.",
+    "answer_key": "25/4.",
+    "worked_solution": "Số mũ âm nói lấy nghịch đảo, không phải dấu âm trước lũy thừa: (2/5)^(-2)=(5/2)^2=25/4.",
+    "skill_ids": [
+      "G11-B18-POWER_INTEGER"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-C01 · placement=SGK_CORE · skill_id=G11-B18-POWER_INTEGER",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-C02",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải thích ý nghĩa của 81^(3/4) và tính kết quả.",
+    "answer_key": "27.",
+    "worked_solution": "Cơ số dương, căn bậc 4 của 81 bằng 3; lấy lũy thừa bậc 3 được 27.",
+    "skill_ids": [
+      "G11-B18-POWER_RATIONAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-C02 · placement=SGK_CORE · skill_id=G11-B18-POWER_RATIONAL",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-C03",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "0^(-2) có nghĩa trong tập số thực không? Vì sao?",
+    "answer_key": "Không.",
+    "worked_solution": "Nếu dùng quy tắc số mũ âm sẽ là 1/0², phép chia cho 0 không xác định.",
+    "skill_ids": [
+      "G11-B18-POWER_INTEGER"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-C03 · placement=SGK_CORE · skill_id=G11-B18-POWER_INTEGER",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-C04",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Một bạn nói: “2^(√2) không có nghĩa, vì √2 không thể đếm số lần nhân 2”. Em giải thích bạn đang hiểu sai điều gì và mô tả cách số này được hình thành.",
+    "answer_key": "2^(√2) có nghĩa vì cơ số 2>0; số mũ thực không còn được hiểu là số lần nhân nguyên. Nó được định nghĩa bằng giới hạn của dãy giá trị 2^r khi các số hữu tỉ r tiến đến √2.",
+    "worked_solution": "Các số mũ hữu tỉ gần √2 như 1,4;1,41;1,414,… đã có định nghĩa bằng căn/lũy thừa. Khi các giá trị 2^r tiến đến một số xác định không phụ thuộc dãy xấp xỉ, ta gọi đó là 2^(√2). Đây là mở rộng nhất quán của khái niệm, không phải “nhân số 2 √2 lần”.",
+    "skill_ids": [
+      "G11-B18-POWER_REAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-C04 · placement=SGK_CORE · skill_id=G11-B18-POWER_REAL",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-C05",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Phân biệt hai yêu cầu: tìm `√25` và giải `x²=25`. Nếu chuyển sang `∛(−27)`, kết quả ra sao? Giải thích vai trò của căn bậc chẵn/lẻ.",
+    "answer_key": "`√25=5` là căn không âm; phương trình `x²=25` có hai nghiệm `x=5` và `x=−5`; `∛(−27)=−3`.",
+    "worked_solution": "Ký hiệu căn bậc chẵn lấy giá trị không âm, còn phương trình `x²=25` yêu cầu tìm **mọi** số bình phương bằng 25. Căn bậc lẻ của số âm tồn tại trong ℝ vì `(−3)³=−27`. Không suy rộng cơ số âm sang mọi số mũ thực.",
+    "skill_ids": [
+      "G11-B18-POWER_RATIONAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-C05 · placement=SGK_CORE · skill_id=G11-B18-POWER_RATIONAL",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-P01",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Với a>0, rút gọn a^(-1/2)·a^(3/2).",
+    "answer_key": "a.",
+    "worked_solution": "Cộng các số mũ do cùng cơ số dương: a^((-1/2)+(3/2))=a^1=a.",
+    "skill_ids": [
+      "G11-B18-POWER_LAWS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-P01 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_LAWS",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-P02",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Tính 64^(-1/3).",
+    "answer_key": "1/4.",
+    "worked_solution": "Căn bậc ba của 64 là 4; số mũ âm lấy nghịch đảo.",
+    "skill_ids": [
+      "G11-B18-POWER_RATIONAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-P02 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_RATIONAL",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-P03",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Tính 16^(3/4) theo căn bậc bốn.",
+    "answer_key": "8.",
+    "worked_solution": "Căn bậc 4 của 16 là 2, sau đó lấy 2³=8.",
+    "skill_ids": [
+      "G11-B18-POWER_RATIONAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-P03 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_RATIONAL",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-P04",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Với a>0, rút gọn (a^(2/3))^(3/2).",
+    "answer_key": "a.",
+    "worked_solution": "Nhân số mũ 2/3·3/2=1 với cơ số dương để mọi phép tính hợp lệ.",
+    "skill_ids": [
+      "G11-B18-POWER_LAWS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-P04 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_LAWS",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-P05",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Vốn 400 triệu tăng 5% mỗi năm, lãi nhập gốc. Sau 2 năm có bao nhiêu triệu đồng (bỏ qua phí)?",
+    "answer_key": "441 triệu đồng.",
+    "worked_solution": "400·1,05²=441. Năm thứ hai tính lãi trên số vốn đã tăng sau năm đầu.",
+    "skill_ids": [
+      "G11-B18-GROWTH_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-P05 · placement=SGK_APPLICATION · skill_id=G11-B18-GROWTH_MODEL",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-P06",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Bạn viết 2²+2³=2⁵. Hãy nêu lỗi và kết quả đúng.",
+    "answer_key": "12; quy tắc cộng số mũ không áp dụng cho tổng hai lũy thừa.",
+    "worked_solution": "2²+2³=4+8=12; 2⁵=32 chỉ bằng 2²·2³.",
+    "skill_ids": [
+      "G11-B18-POWER_LAWS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-P06 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_LAWS",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B18-P07",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Viết `0,0000075` dưới dạng kí hiệu khoa học, rồi giải thích dấu của số mũ và vì sao không được viết `75×10^{-7}` làm **dạng chuẩn** dù giá trị bằng nhau.",
+    "answer_key": "`7,5×10^{-6}`. Biểu thức `75×10^{-7}` cũng bằng cùng giá trị nhưng hệ số 75 không thuộc đoạn `[1,10)` nên không phải dạng chuẩn.",
+    "worked_solution": "Số rất nhỏ hơn 1 nên số mũ của 10 âm; chuyển dấu phẩy sáu chữ số để có phần hệ số 7,5, nhân `10^{-6}` để giữ đúng giá trị. Kí hiệu khoa học chuẩn có phần trị tuyệt đối hệ số từ 1 đến dưới 10.",
+    "skill_ids": [
+      "G11-B18-POWER_INTEGER"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B18-P07 · placement=SGK_PRACTICE · skill_id=G11-B18-POWER_INTEGER",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B19-C01",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "log₅125 là số nào và vì sao?",
+    "answer_key": "3.",
+    "worked_solution": "5³=125, logarit là số mũ cần tìm.",
+    "skill_ids": [
+      "G11-B19-LOG_DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B19-C01 · placement=SGK_CORE · skill_id=G11-B19-LOG_DEFINITION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B19-C02",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải thích log₂(1/8)=-3 bằng lũy thừa.",
+    "answer_key": "−3.",
+    "worked_solution": "2^(−3)=1/8. Giá trị logarit có thể âm dù đối số phải dương.",
+    "skill_ids": [
+      "G11-B19-LOG_DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B19-C02 · placement=SGK_CORE · skill_id=G11-B19-LOG_DEFINITION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B19-C03",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "log₂(−4) có nghĩa trong ℝ không?",
+    "answer_key": "Không.",
+    "worked_solution": "Với cơ số 2>0, 2^x luôn dương nên không thể bằng −4.",
+    "skill_ids": [
+      "G11-B19-LOG_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B19-C03 · placement=SGK_CORE · skill_id=G11-B19-LOG_DOMAIN",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B19-P01",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Tính log₃(81/3), chỉ rõ điều kiện dùng quy tắc thương.",
+    "answer_key": "3.",
+    "worked_solution": "81/3=27 và log₃27=3; hoặc log₃81−log₃3=4−1=3, các đối số đều dương.",
+    "skill_ids": [
+      "G11-B19-LOG_LAWS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B19-P01 · placement=SGK_PRACTICE · skill_id=G11-B19-LOG_LAWS",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B19-P02",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Tính log₂8+log₂4 và diễn giải bằng quy tắc tích.",
+    "answer_key": "5.",
+    "worked_solution": "log₂8=3, log₂4=2; tổng là log₂(8·4)=log₂32=5.",
+    "skill_ids": [
+      "G11-B19-LOG_LAWS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B19-P02 · placement=SGK_PRACTICE · skill_id=G11-B19-LOG_LAWS",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B19-P03",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Tính log₄64 và log₄(√4).",
+    "answer_key": "3 và 1/2.",
+    "worked_solution": "4³=64 và 4^(1/2)=√4=2.",
+    "skill_ids": [
+      "G11-B19-LOG_DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B19-P03 · placement=SGK_PRACTICE · skill_id=G11-B19-LOG_DEFINITION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B19-P04",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Tìm điều kiện xác định của log₂((x−1)(x+2)); có luôn tách thành tổng hai log không?",
+    "answer_key": "x<−2 hoặc x>1; không tách được trên toàn miền.",
+    "worked_solution": "Tích dương khi hai thừa số cùng dấu. Trên x<−2, từng thừa số âm nên hai log riêng không có nghĩa.",
+    "skill_ids": [
+      "G11-B19-LOG_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B19-P04 · placement=SGK_PRACTICE · skill_id=G11-B19-LOG_DOMAIN",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B19-P05",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Viết log₂7 theo lôgarit tự nhiên và nêu điều kiện cơ số.",
+    "answer_key": "ln7/ln2.",
+    "worked_solution": "Đổi cơ số: log₂7=(ln7)/(ln2); 2>0,2≠1,7>0 và ln2≠0.",
+    "skill_ids": [
+      "G11-B19-LOG_BASE_CHANGE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B19-P05 · placement=SGK_PRACTICE · skill_id=G11-B19-LOG_BASE_CHANGE",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B19-P06",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "50 đơn vị tăng gấp đôi mỗi kỳ. Sau bao nhiêu kỳ (cho phép thời gian thực) thì đạt 800 đơn vị?",
+    "answer_key": "4 kỳ.",
+    "worked_solution": "50·2^t=800 ⇒ 2^t=16 ⇒ t=log₂16=4; t≥0.",
+    "skill_ids": [
+      "G11-B19-LOG_APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B19-P06 · placement=SGK_APPLICATION · skill_id=G11-B19-LOG_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B20-C01",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Hàm f(x)=5^x có TXĐ, tập giá trị và điểm cắt trục tung là gì?",
+    "answer_key": "TXĐ ℝ; tập giá trị (0,+∞); đi qua (0,1).",
+    "worked_solution": "Số mũ x được nhận mọi số thực; 5^x luôn dương; f(0)=1.",
+    "skill_ids": [
+      "G11-B20-EXP_FUNCTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B20-C01 · placement=SGK_CORE · skill_id=G11-B20-EXP_FUNCTION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B20-C02",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Hàm (1/5)^x đồng biến hay nghịch biến và tại sao?",
+    "answer_key": "Nghịch biến trên ℝ.",
+    "worked_solution": "Mỗi khi x tăng 1, giá trị hàm nhân 1/5, tức giảm; 0<1/5<1.",
+    "skill_ids": [
+      "G11-B20-EXP_MONOTONIC"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B20-C02 · placement=SGK_CORE · skill_id=G11-B20-EXP_MONOTONIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B20-C03",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Hàm g(x)=log₃(x−2) xác định khi nào?",
+    "answer_key": "x>2.",
+    "worked_solution": "Đối số của logarit phải dương: x−2>0.",
+    "skill_ids": [
+      "G11-B20-LOG_FUNCTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B20-C03 · placement=SGK_CORE · skill_id=G11-B20-LOG_FUNCTION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B20-C04",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Nếu y=3^x đi qua (3,27), đồ thị y=log₃x có điểm nào tương ứng?",
+    "answer_key": "(27,3).",
+    "worked_solution": "Hai hàm ngược nhau, hoán đổi tọa độ x và y.",
+    "skill_ids": [
+      "G11-B20-INVERSE_GRAPH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B20-C04 · placement=SGK_CORE · skill_id=G11-B20-INVERSE_GRAPH",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B20-P01",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Tìm x>0 sao cho log₂x=−1.",
+    "answer_key": "x=1/2.",
+    "worked_solution": "Chuyển về lũy thừa x=2^(−1)=1/2 >0.",
+    "skill_ids": [
+      "G11-B20-LOG_FUNCTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B20-P01 · placement=SGK_PRACTICE · skill_id=G11-B20-LOG_FUNCTION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B20-P02",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "So sánh 3^(1/2) và 3^1 mà không dùng máy tính.",
+    "answer_key": "3^(1/2)<3.",
+    "worked_solution": "Hàm 3^x tăng vì 3>1; số mũ 1/2<1.",
+    "skill_ids": [
+      "G11-B20-EXP_MONOTONIC"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B20-P02 · placement=SGK_PRACTICE · skill_id=G11-B20-EXP_MONOTONIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B20-P03",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Tính log_(1/2)2 và giải thích dấu.",
+    "answer_key": "−1.",
+    "worked_solution": "(1/2)^(−1)=2, nên log_(1/2)2=−1. Cơ số thuộc (0,1) hợp lệ.",
+    "skill_ids": [
+      "G11-B20-LOG_MONOTONIC"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B20-P03 · placement=SGK_PRACTICE · skill_id=G11-B20-LOG_MONOTONIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B20-P04",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Mô hình N(t)=20·(3/2)^t, t≥0 (kỳ). Tính N(2) và giải thích tại sao theo t tăng thì N tăng.",
+    "answer_key": "45; N tăng vì cơ số 3/2>1.",
+    "worked_solution": "20·(3/2)²=45; mỗi kỳ lượng tăng theo hệ số 1,5 của kỳ trước (mô hình lý tưởng).",
+    "skill_ids": [
+      "G11-B20-INVERSE_GRAPH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B20-P04 · placement=SGK_APPLICATION · skill_id=G11-B20-INVERSE_GRAPH",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-C01",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải 2^(x+1)=16.",
+    "answer_key": "x=3.",
+    "worked_solution": "16=2⁴, hàm 2^t đơn ánh nên x+1=4.",
+    "skill_ids": [
+      "G11-B21-EXP_EQUATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-C01 · placement=SGK_CORE · skill_id=G11-B21-EXP_EQUATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-C02",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải log₃(x−2)=2 kèm điều kiện xác định.",
+    "answer_key": "x=11.",
+    "worked_solution": "Điều kiện x>2; x−2=3²=9 ⇒ x=11, hợp lệ.",
+    "skill_ids": [
+      "G11-B21-LOG_EQUATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-C02 · placement=SGK_CORE · skill_id=G11-B21-LOG_EQUATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-C03",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải (1/2)^x>(1/2)^2.",
+    "answer_key": "x<2.",
+    "worked_solution": "Hàm cơ số 1/2 nghịch biến: đảo chiều khi so sánh số mũ.",
+    "skill_ids": [
+      "G11-B21-EXP_INEQUALITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-C03 · placement=SGK_CORE · skill_id=G11-B21-EXP_INEQUALITY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-C04",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải log₂(x−1)≥log₂3.",
+    "answer_key": "x≥4.",
+    "worked_solution": "Điều kiện x>1; cơ số 2>1 tăng, suy ra x−1≥3 ⇒ x≥4.",
+    "skill_ids": [
+      "G11-B21-LOG_INEQUALITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-C04 · placement=SGK_CORE · skill_id=G11-B21-LOG_INEQUALITY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-P01",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải 5^(2x−1)=1/25.",
+    "answer_key": "x=−1/2.",
+    "worked_solution": "1/25=5^(−2), nên 2x−1=−2 ⇒ x=−1/2.",
+    "skill_ids": [
+      "G11-B21-EXP_EQUATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-P01 · placement=SGK_PRACTICE · skill_id=G11-B21-EXP_EQUATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-P02",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải log_(1/2)(x+2)=−2.",
+    "answer_key": "x=2.",
+    "worked_solution": "x+2>0; x+2=(1/2)^(−2)=4 ⇒ x=2 hợp lệ.",
+    "skill_ids": [
+      "G11-B21-LOG_EQUATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-P02 · placement=SGK_PRACTICE · skill_id=G11-B21-LOG_EQUATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-P03",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải (1/3)^(2x−1)≤(1/3)^3.",
+    "answer_key": "x≥2.",
+    "worked_solution": "Vì 0<1/3<1, đảo chiều số mũ: 2x−1≥3 ⇒ x≥2.",
+    "skill_ids": [
+      "G11-B21-EXP_INEQUALITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-P03 · placement=SGK_PRACTICE · skill_id=G11-B21-EXP_INEQUALITY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-P04",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải log_(1/4)(x−1)>log_(1/4)4.",
+    "answer_key": "1<x<5.",
+    "worked_solution": "Điều kiện x>1; hàm log cơ số 1/4 giảm, nên 0<x−1<4 ⇒ 1<x<5.",
+    "skill_ids": [
+      "G11-B21-LOG_INEQUALITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-P04 · placement=SGK_PRACTICE · skill_id=G11-B21-LOG_INEQUALITY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-P05",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Giải log₃(x−4)=log₃(2−x) trên ℝ.",
+    "answer_key": "Vô nghiệm.",
+    "worked_solution": "Điều kiện x−4>0 tức x>4 và 2−x>0 tức x<2 đồng thời; bất khả. Không giải x−4=2−x rồi nhận x=3.",
+    "skill_ids": [
+      "G11-B21-DOMAIN_CHECK"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-P05 · placement=SGK_PRACTICE · skill_id=G11-B21-DOMAIN_CHECK",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-P06",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Vốn 100 triệu tăng 10% cuối mỗi năm; n nguyên không âm. Năm đầu tiên vốn **vượt** 121 triệu là năm nào?",
+    "answer_key": "Cuối năm 3.",
+    "worked_solution": "100·1,1²=121 nên năm 2 mới bằng, chưa vượt; n>2 ⇒ n nguyên đầu tiên bằng 3.",
+    "skill_ids": [
+      "G11-B21-REAL_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-P06 · placement=SGK_APPLICATION · skill_id=G11-B21-REAL_CONTEXT",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-P07",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Phương trình 2^x=−1 có nghiệm thực không? Vì sao?",
+    "answer_key": "Không có.",
+    "worked_solution": "2^x>0 với mọi x thực; không thể bằng −1.",
+    "skill_ids": [
+      "G11-B21-EXP_EQUATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-P07 · placement=SGK_PRACTICE · skill_id=G11-B21-EXP_EQUATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVI-B21-P08",
+    "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
+    "stem": "Một bạn phát biểu: “log₂(2^x)=2x và y=log₂x xác định với mọi x thực vì hàm y=2^x có TXĐ ℝ”. Hãy tìm và sửa **hai lỗi khái niệm**, sau đó giải thích hàm nào thực hiện phép ngược của hàm nào.",
+    "answer_key": "log₂(2^x)=x với mọi x thực, không phải 2x. Hàm y=log₂x chỉ xác định với x>0. Hai hàm y=2^x và y=log₂x là hai hàm ngược: đầu ra của hàm mũ là đầu vào hợp lệ của hàm logarit.",
+    "worked_solution": "Logarit trả lại **số mũ** đã tạo ra kết quả, không nhân cơ số với số mũ. Hàm 2^x nhận mọi x thực nhưng **cho ra số dương**; chính tập giá trị (0,+∞) đó trở thành TXĐ của hàm ngược log₂x. Nhầm TXĐ của hàm gốc với TXĐ của hàm ngược là lỗi bản chất.",
+    "skill_ids": [
+      "G11-CHVI-INTEGRATED"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+      "heading": "#### THPT-G11-CHVI-B21-P08 · placement=SGK_PRACTICE · skill_id=G11-CHVI-INTEGRATED",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chvi-b18-b21-source-locked-formative-r01.js",
+        "blob": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]
