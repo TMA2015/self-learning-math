@@ -3576,5 +3576,222 @@
     "role": "SGK_FIRST_TRY",
     "order": 5,
     "item_id": "THPT-G10-CHV-TRY14"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVI-TRY01",
+    "outcome_id": "B15_OUT_01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVI-TRY02",
+    "outcome_id": "B15_OUT_02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVI-TRY03",
+    "outcome_id": "B15_OUT_03"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVI-TRY05",
+    "outcome_id": "B15_OUT_05"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHVI-TRY04",
+    "outcome_id": "B15_OUT_04"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVI-TRY06",
+    "outcome_id": "B16_OUT_01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVI-TRY07",
+    "outcome_id": "B16_OUT_02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVI-TRY09",
+    "outcome_id": "B16_OUT_04"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVI-TRY08",
+    "outcome_id": "B16_OUT_03"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHVI-TRY10",
+    "outcome_id": "B16_OUT_05"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVI-TRY11",
+    "outcome_id": "B17_OUT_01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVI-TRY12",
+    "outcome_id": "B17_OUT_02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVI-TRY13",
+    "outcome_id": "B17_OUT_03"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVI-TRY15",
+    "outcome_id": "B17_OUT_05"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHVI-TRY14",
+    "outcome_id": "B17_OUT_04"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVI-TRY16",
+    "outcome_id": "B18_OUT_01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-B18-C01",
+    "outcome_id": "B18_OUT_02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVI-TRY18",
+    "outcome_id": "B18_OUT_03"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVI-TRY19",
+    "outcome_id": "B18_OUT_04"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVIII-TRY01",
+    "outcome_id": "G10-B23-ADDITION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVIII-TRY02",
+    "outcome_id": "G10-B23-MULTIPLICATION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVIII-TRY03",
+    "outcome_id": "G10-B23-DIGIT_COUNT"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B23:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVIII-TRY04",
+    "outcome_id": "G10-B23-CASE_SPLIT"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVIII-TRY05",
+    "outcome_id": "G10-B24-PERMUTATION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVIII-TRY06",
+    "outcome_id": "G10-B24-ARRANGEMENT"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVIII-TRY07",
+    "outcome_id": "G10-B24-COMBINATION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B24:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVIII-TRY08",
+    "outcome_id": "G10-B24-CONSTRAINTS"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVIII-TRY09",
+    "outcome_id": "G10-B25-NEWTON_EXPANSION"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVIII-TRY10",
+    "outcome_id": "G10-B25-COEFFICIENT_SIGN"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVIII-TRY11",
+    "outcome_id": "G10-B25-CONSTANT_TERM"
+  },
+  {
+    "collection": "SGK:G10:CHVIII:B25:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVIII-TRY12",
+    "outcome_id": "G10-B25-COEFFICIENT_SUM"
   }
 ]
