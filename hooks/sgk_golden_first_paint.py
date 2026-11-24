@@ -491,8 +491,110 @@ def _render_w7(output: str, uri: str) -> str:
 })();
 </script></article>""", 1)
 
+# #1039 W8 exact G12 ChI routes; no change to earlier hooks or shared runtime.
+_W8_ROUTES = {f"thpt-preview/sgk/lop-12/chuong-i/bai-{n}.md": (n, 8 if n == 5 else 7) for n in range(1, 6)}
+
+def _w8_hero_first_paint(html: str, number: int) -> str:
+    # Same public nav contract as the existing grade 12 runtime; B01 edge,
+    # B05 crosses to ChII. No changes to G10/G11 or later G12 routes.
+    matches = list(_HERO.finditer(html))
+    if len(matches) != 1 or 'data-sgk-lesson-nav=' in html:
+        return html
+    hero = matches[0]
+    body = hero.group(2)
+    if '<div' in body or len(_OLD_NAV.findall(body)) > 1:
+        return html
+    def choice(label, kind, dest):
+        if dest is None:
+            return '<span class="thpt-sgk-nav-unavailable" aria-disabled="true">' + label + '</span>'
+        return '<a href="' + dest + '" data-sgk-lesson-link="' + kind + '">' + label + '</a>'
+    previous = "../bai-" + str(number - 1) + "/" if number > 1 else None
+    following = "../bai-" + str(number + 1) + "/" if number < 5 else "../../chuong-ii/bai-6/"
+    nav = ('<nav class="thpt-r4-lesson-tabs thpt-sgk-lesson-nav" data-sgk-lesson-nav="12-B' +
+           str(number) + '" aria-label="Điều hướng bài học theo SGK">' +
+           choice("← Bài trước", "previous", previous) +
+           choice("Bài sau →", "next", following) +
+           choice("Core và Luyện tập", "practice", "../luyen-tap/") +
+           choice("Tự kiểm tra", "selfcheck", "../tu-kiem-tra-chuong/") + '</nav>')
+    new_hero = hero.group(1) + _OLD_NAV.sub('', body) + '\n' + nav + '\n' + hero.group(3)
+    return html[:hero.start()] + new_hero + html[hero.end():]
+
+def _w8_mistake_disclosures(html: str, number: int, count: int) -> str:
+    heading = '<h2 class="thpt-g10-section-heading">' + _HEADINGS[3] + '</h2>'
+    if html.count(heading) != 1:
+        raise RuntimeError("W8 tab4 heading changed")
+    start = html.index(heading) + len(heading)
+    foot = re.search(r'<p>\s*<p class="thpt-r4-footnote">|<p class="thpt-r4-footnote">', html[start:])
+    if foot is None:
+        raise RuntimeError("W8 tab4 source note missing")
+    end = start + foot.start()
+    body = html[start:end]
+    pattern = re.compile(r'<h3 id="([^"]+)">(4\.\d+\.[\s\S]*?)</h3>\s*((?:<p>[\s\S]*?</p>\s*){3})')
+    matches = list(pattern.finditer(body))
+    if len(matches) != count or re.fullmatch(r'\s*<p><strong>Học tiếp:</strong>[\s\S]*?</p>\s*', pattern.sub("", body)) is None:
+        raise RuntimeError("W8 tab4 recovery/tail mismatch: B" + str(number))
+    for i, item in enumerate(matches, 1):
+        if not item[2].startswith(f"4.{i}. ") or re.findall(r'<p><strong>([^<]+)</strong>', item[3])[:3] != ["Sai ở đâu:", "Vì sao sai:", "Cách sửa:"]:
+            raise RuntimeError("W8 tab4 recovery labels mismatch")
+    def disclosure(item):
+        return '<details class="tip" id="' + item[1] + '">\n<summary>' + item[2] + '</summary>\n' + item[3] + '</details>\n'
+    return html[:start] + '\n<p>Mở từng mục để xem sai ở đâu, vì sao sai và cách sửa.</p>\n' + pattern.sub(disclosure, body) + html[end:]
+
+def _render_w8(output: str, uri: str) -> str:
+    number, count = _W8_ROUTES[uri]
+    rendered = _render_first_paint(output, ("thpt-g10-knowledge-ap1", "thpt-g10-chiv-golden"))
+    if rendered != output:
+        rendered = _w8_hero_first_paint(rendered, number)
+    if rendered == output or 'data-sgk-golden-first-paint="true"' not in rendered or len(_H2.findall(rendered)) != 4 or rendered.count('data-sgk-lesson-nav="') != 1:
+        raise RuntimeError("W8 Golden first-paint build contract failed: " + uri)
+    rendered = _w8_mistake_disclosures(rendered, number, count)
+    # B05 contains two concept-figure captions, whose legacy .81rem/1.65
+    # rule differs from the approved Golden plot .77rem/1.5 typography.
+    # Normalize only those captions on this route; keep frame/image/caption
+    # content and all other routes byte-for-byte unchanged.
+    if number == 5:
+        rendered = rendered.replace(
+            '</article>',
+            """<style id="sgk-g12-w8-b05-caption-parity">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint]:has([data-g12-b05-knowledge]) figure.thpt-r4-concept-figure figcaption {
+  font-size: .77rem; line-height: 1.5;
+}
+</style></article>""", 1)
+    # Reuse the existing W1 Golden values, no shared CSS/JS mutations.
+    return rendered.replace(
+        '</article>',
+        """<style id="sgk-g12-w8-golden-formula">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border: 1px solid var(--slm-g10-line);
+  border-radius: 8px; padding: 12px 14px; margin: 14px 0;
+  line-height: 1.75; overflow-x: auto; max-width: 100%;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border-color: #58677f; color: #eef4ff;
+}
+</style><script id="sgk-g12-w8-golden-tabs">
+(() => {
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/lop-12\/chuong-i\/bai-[1-5]\/?$/.test(location.pathname))return;
+  const a=document.querySelector("article[data-sgk-golden-first-paint]");
+  const t=a?.querySelector(":scope > .tabbed-set");
+  if(!t||t.dataset.g12W8Golden==="true")return;
+  const labels=[...t.querySelectorAll(":scope > .tabbed-labels > label")];
+  const radios=[...t.querySelectorAll(':scope > input[type="radio"]')];
+  if(labels.length!==4||radios.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+  const sync=()=>labels.forEach((l,i)=>l.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  t.addEventListener("change",sync);sync();t.dataset.g12W8Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script></article>""", 1)
+
 def on_post_page(output, page, config):
     uri = page.file.src_uri
+    if uri in _W8_ROUTES:
+        return _render_w8(output, uri)
     if uri in _W7_ROUTES:
         return _render_w7(output, uri)
     if uri in _W6_ROUTES:
