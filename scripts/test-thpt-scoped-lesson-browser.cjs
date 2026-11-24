@@ -152,6 +152,43 @@ async function goldenW1Parity(page,browser,width,rel){
  }finally{await reference.close();await ref14.close();await refB1.close();}
 }
 
+// A positive rendered-math count is insufficient: ensure every standalone
+// source display formula survives Markdown, and no literal TeX escapes remain.
+async function verifyG12DisplayMath(page,source,rel,width){
+ if(!re.test(rel))return;
+ const lines=source.split("\n"),expected=[];
+ for(let i=0;i<lines.length;i++){
+  if(lines[i].trim()!=="\\[")continue;
+  let j=i+1;while(j<lines.length&&lines[j].trim()!=="\\]")j++;
+  assert(j<lines.length,rel+" unbalanced standalone block");
+  expected.push(lines.slice(i+1,j).join("\n").replace(/\s+/g," ").trim());i=j;
+ }
+ const result=await page.evaluate(async()=>{
+  const doc=new DOMParser().parseFromString(await (await fetch(location.href)).text(),"text/html");
+  const root=doc.querySelector("article.md-content__inner");
+  const math=[...root.querySelectorAll(".arithmatex")].map(el=>el.textContent.trim());
+  const blocks=math.filter(t=>t.startsWith("\\[")&&t.endsWith("\\]")).map(t=>t.slice(2,-2).replace(/\s+/g," ").trim());
+  const walk=doc.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  const raw=[];while(walk.nextNode()){
+   const n=walk.currentNode;
+   if(n.parentElement.closest(".arithmatex,script,style,code,pre,textarea"))continue;
+   if(/\\(?:int|frac|sqrt|vec|overrightarrow|begin|end|tfrac|dfrac|sum|widehat|overline|quad|sin|cos|lim|alpha|beta|pi|left|right)\b|\\[\[\]]/.test(n.nodeValue))raw.push(n.nodeValue.trim().slice(0,160));
+  }
+  return {blocks,raw};
+ });
+ // A lesson may use only inline or explicit HTML math wrappers.
+ const available=[...result.blocks];
+ for(const formula of expected){
+  const i=available.indexOf(formula);assert(i>=0,rel+" lost source display formula: "+formula);available.splice(i,1);
+ }
+ assert.deepEqual(result.raw,[],rel+" raw LaTeX in static article");
+ await page.waitForFunction(()=>[...document.querySelectorAll("article .arithmatex")].every(el=>el.querySelector("mjx-container")),{},{timeout:30000});
+ const errors=await page.locator("article mjx-merror,article mjx-container[data-mjx-error]").count();
+ assert.equal(errors,0,rel+" MathJax error");
+ console.log("PASS SGK_REL_009_MATH "+rel+" @"+width+" "+expected.length+" standalone source formulas, "+result.blocks.length+" static display wrappers, zero raw TeX and MathJax errors");
+}
+
+
 async function execute(){
  assert(lessons.length>0&&lessons.length<=120,"No canonical SGK page paths or too many scoped targets");
  assert.equal(new Set(lessons).size,lessons.length,"Duplicate lesson target");
@@ -325,6 +362,7 @@ async function execute(){
      assert(!layout.brokenText,rel+" "+width+" replacement glyph/encoding damage");
      if(mathExpected)assert(layout.math>0,rel+" "+width+" MathJax did not typeset");
      assert.equal(layout.unstyled,0,rel+" "+width+" Golden concept/rule cards lack style");
+     await verifyG12DisplayMath(page,source,rel,width);
      await goldenW1Parity(page,browser,width,rel);
      checks++;
      console.log("PASS SCOPED Golden AP "+rel+" @"+width+"px: "+(isLesson?"4 tabs / ":"chapter hub / ")+

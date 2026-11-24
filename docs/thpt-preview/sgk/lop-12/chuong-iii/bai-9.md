@@ -90,6 +90,7 @@
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G12-CHIII-B09-QUARTILES-R00.svg" alt="Đường tần số tích lũy đi qua (10;0), (15;6), (20;20), (25;32), (30;40); mốc 10 và 30 xác định Q1 và Q3"><figcaption>Đọc từ trục đứng: đi ngang từ mốc 10 tới đường nội suy, rồi đi xuống trục giá trị để được \(Q_1\). Làm tương tự từ mốc 30 cho \(Q_3\). Các đoạn thẳng là mô hình xấp xỉ trong từng nhóm, không phải dữ liệu quan sát gốc.</figcaption></figure>
 
     Sau khi có hai tứ phân vị, lấy hiệu (giữ giá trị chính xác đến bước cuối):
+
     \[
     \Delta_Q=\frac{145}{6}-\frac{115}{7}=\frac{325}{42}\approx7{,}74\text{ phút}.
     \]
@@ -114,6 +115,7 @@
         Q_1=4+\frac{8-3}{9}\cdot4=\frac{56}{9},\qquad
         Q_3=8+\frac{24-12}{15}\cdot4=\frac{56}{5}.
         \]
+
         Vậy \(\Delta_Q=\frac{56}{5}-\frac{56}{9}=\frac{224}{45}\approx4{,}98\) phút.
 
     ??? tip "Kiểm lỗi"
@@ -224,10 +226,12 @@
     | Tích lũy | 3 | 7 | 8 |
 
     \(R=25-10=15\) cm. Hai mốc tích lũy là 2 và 6, nên
+
     \[
     Q_1=10+\frac23\cdot5=\frac{40}{3},\qquad
     Q_3=15+\frac{6-3}{4}\cdot5=\frac{75}{4}.
     \]
+
     Vậy \(\Delta_Q=75/4-40/3=65/12\approx5{,}42\) cm.
 
     **Kiểm lại:** 15 cm là kết quả chính xác theo định nghĩa khoảng biến thiên của bảng ghép nhóm, nhưng chỉ xấp xỉ cho 11 cm của mẫu gốc. Tương tự, \(65/12\) là khoảng tứ phân vị tính theo quy tắc nội suy, không bằng \(5{,}5\) của mẫu gốc. Quan sát 15 thuộc nhóm \([15;20)\), không thuộc \([10;15)\).

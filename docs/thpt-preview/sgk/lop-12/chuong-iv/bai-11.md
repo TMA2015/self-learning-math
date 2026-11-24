@@ -25,9 +25,11 @@
     Vì sao không còn nguyên hàm nào ngoài họ \(x^2+C\)? Nếu \(G'(x)=2x\) trên một khoảng \(K\), xét \(H(x)=G(x)-x^2\). Khi đó \(H'(x)=0\) tại mọi điểm trong khoảng. Theo tính chất đã học về đạo hàm, hàm có đạo hàm bằng 0 trên một khoảng là hàm hằng trên khoảng ấy. Do đó \(G(x)-x^2=C\), tức \(G(x)=x^2+C\).
 
     Tổng quát, nếu đã tìm được một nguyên hàm \(F\) của \(f\), toàn bộ họ nguyên hàm trên cùng khoảng là \(F+C\). Ta viết
+
     \[
     \int f(x)\,dx=F(x)+C.
     \]
+
     Dấu \(\int\) ở đây biểu thị việc tìm nguyên hàm, không phải một số đo diện tích. Kết quả là một họ hàm số. \(dx\) cho biết biến đang xét là \(x\); vi phân của \(F\) được viết \(dF(x)=F'(x)\,dx=f(x)\,dx\).
 
     Trở lại chiếc xe: nếu biết \(s(0)=3\) m, từ \(s(t)=t^2+C\) suy ra \(C=3\). Khi đó tọa độ duy nhất là \(s(t)=t^2+3\). Sau 4 giây, xe ở tọa độ 19 m, còn quãng đường đi được từ lúc \(t=0\) là \(19-3=16\) m. Vận tốc không âm trong khoảng này nên quãng đường bằng độ dời. Không nhầm tọa độ với quãng đường.
@@ -55,18 +57,22 @@
     Tương tự, nếu \(F'=f,\ G'=g\) trên cùng khoảng, thì \((F+G)'=f+g\) và \((F-G)'=f-g\). Ta có thể cộng hoặc trừ các nguyên hàm tương ứng rồi gộp các hằng số thành một \(C\) tùy ý.
 
     Ví dụ, muốn tìm \(\int (3x^2-4x+2)\,dx\), hãy nhớ \((x^3)'=3x^2,\ (x^2)'=2x,\ (x)'=1\). Do đó
+
     \[
     \int(3x^2-4x+2)\,dx=x^3-2x^2+2x+C.
     \]
+
     Đạo hàm kết quả trả lại đúng cả ba hạng tử ban đầu. Đó là cách kiểm tin cậy hơn việc chỉ nhìn hình thức đáp án.
 
     Không có quy tắc tổng quát cho phép lấy nguyên hàm từng thừa số rồi nhân lại. Chẳng hạn \(\int x\cdot x\,dx=x^3/3+C\), không phải \((x^2/2)^2+C\). Đối với tích đa thức hoặc bình phương, hãy khai triển trước nếu nhờ đó đưa được về tổng các lũy thừa đơn giản.
 
     <!-- OUTCOME_ID: G12-CHIV-B11-O07 -->
     Trong thực tế, nếu biết tốc độ biến đổi của một đại lượng và giá trị ban đầu, ta có thể khôi phục đại lượng đó. Chẳng hạn một bể đang có 40 lít nước; nước chảy vào với tốc độ \(q'(t)=6+2t\) lít/phút, không có dòng ra. Sau \(t\) phút, lượng nước \(q(t)\) thỏa
+
     \[
     q(t)=6t+t^2+C,\quad q(0)=40.
     \]
+
     Vậy \(q(t)=40+6t+t^2\). Sau 5 phút có 95 lít, nếu quy luật dòng vào còn đúng và bể đủ sức chứa. Đạo hàm cho \(6+2t\) lít/phút, khớp dữ kiện.
 
     **Vận dụng.** Một cơ sở có doanh thu biên \(R'(x)=0{,}08x+12\) nghìn đồng/sản phẩm trong mô hình liên tục, với \(R(0)=0\). Tìm doanh thu khi bán 100 sản phẩm.
@@ -84,18 +90,22 @@
     #### a) Hàm số lũy thừa
 
     Ta đã biết với \(x>0\), \((x^\alpha)'=\alpha x^{\alpha-1}\) cho mọi số mũ thực \(\alpha\). Muốn tìm hàm có đạo hàm bằng \(x^\alpha\), thử tăng số mũ lên một đơn vị. Đạo hàm \(x^{\alpha+1}\) sẽ có hệ số \(\alpha+1\); để hệ số trở về 1, chia cho \(\alpha+1\). Vì thế, với \(\alpha\ne-1\),
+
     \[
     \int x^\alpha\,dx=\frac{x^{\alpha+1}}{\alpha+1}+C.
     \]
+
     Công thức đúng trên \(x>0\); đối với số mũ nguyên, dùng trên các khoảng mà biểu thức ban đầu và nguyên hàm xác định, theo điều kiện cụ thể. Riêng hàm hằng \(1\) có nguyên hàm \(x+C\) trên \(\mathbb R\).
 
     Ví dụ \(\sqrt{x}=x^{1/2}\) khi \(x>0\), nên nguyên hàm là \(\frac23x^{3/2}+C\). Với \(1/x^3=x^{-3}\), tăng số mũ lên \(-2\), chia cho \(-2\), được \(-1/(2x^2)+C\) trên từng khoảng không chứa 0. Đừng nhầm quy tắc nguyên hàm với đạo hàm vốn giảm số mũ.
 
     <!-- OUTCOME_ID: G12-CHIV-B11-O04 -->
     Trường hợp \(\alpha=-1\) là ngoại lệ: công thức trên dẫn đến phép chia cho 0. Thay vào đó, hãy nhớ \((\ln x)'=1/x\) khi \(x>0\). Khi \(x<0\), \(\ln(-x)\) xác định và đạo hàm bằng \((-1)/(-x)=1/x\). Gộp hai biểu thức bằng giá trị tuyệt đối:
+
     \[
     \int\frac1x\,dx=\ln|x|+C.
     \]
+
     Trên \((-\infty;0)\) và \((0;+\infty)\), các hằng số có thể độc lập. Nếu đề chỉ cho một khoảng dương, dùng \(\ln x+C\) là đủ.
 
     <!-- FIRST_TRY_ID: B11-T02 -->
@@ -104,9 +114,11 @@
     ??? question "Đối chiếu"
 
         Tách từng hạng tử. \(2\int x^{-3}dx=-x^{-2}+C_1\); \(3\int dx/x=3\ln x+C_2\); \(-4\int x^{1/2}dx=-\frac83x^{3/2}+C_3\). Gộp lại:
+
         \[
         -\frac1{x^2}+3\ln x-\frac83x^{3/2}+C.
         \]
+
         Đạo hàm lần lượt là \(2/x^3,\ 3/x,\ -4\sqrt{x}\), khớp đề.
 
     ??? tip "Kiểm lỗi"
@@ -136,9 +148,11 @@
 
     <!-- OUTCOME_ID: G12-CHIV-B11-O05 -->
     Hàm \(e^x\) đặc biệt vì đạo hàm bằng chính nó, nên nguyên hàm là \(e^x+C\). Với \(a>0,\ a\ne1\), đạo hàm của \(a^x\) là \(a^x\ln a\). Chia cho \(\ln a\) để loại hệ số dư, được
+
     \[
     \int a^x\,dx=\frac{a^x}{\ln a}+C.
     \]
+
     Nếu \(0<a<1\), \(\ln a\) âm; dấu âm ấy cần giữ. Chẳng hạn \(1/4^x=(1/4)^x\), nên nguyên hàm là \(-1/(4^x\ln4)+C\). Nếu \(a=1\), không chia cho \(\ln1=0\); hàm dưới dấu nguyên hàm là 1.
 
     **Vận dụng.** Tính \(\int(2e^x-3^x+2^{-x})\,dx\).
@@ -146,9 +160,11 @@
     ??? question "Đối chiếu"
 
         Vì \(2^{-x}=(1/2)^x\), \(\ln(1/2)=-\ln2\), kết quả là
+
         \[
         2e^x-\frac{3^x}{\ln3}-\frac{2^{-x}}{\ln2}+C.
         \]
+
         Đạo hàm hạng cuối bằng \(-(-\ln2)2^{-x}/\ln2=2^{-x}\), đúng dấu.
 
     ??? tip "Kiểm lỗi"

@@ -21,9 +21,11 @@
 
     <!-- OUTCOME_ID: G12-CHV-B17-O01 -->
     Với \(I(a;b;c)\) và \(M(x;y;z)\), định lí Pythagoras trong không gian cho \(IM^2=(x-a)^2+(y-b)^2+(z-c)^2\). Điểm \(M\) thuộc mặt cầu khi và chỉ khi \(IM=R\). Vì \(IM\) không âm và \(R>0\), bình phương hai vế được
+
     \[
     (x-a)^2+(y-b)^2+(z-c)^2=R^2.
     \]
+
     Ví dụ tâm \(I(1;-2;3)\), bán kính 4 cho phương trình \((x-1)^2+(y+2)^2+(z-3)^2=16\). Điểm \(A(5;-2;3)\) thỏa phương trình vì chỉ lệch tâm 4 đơn vị theo \(Ox\).
 
     <!-- OUTCOME_ID: G12-CHV-B17-O03 -->
@@ -45,15 +47,19 @@
 
     <!-- OUTCOME_ID: G12-CHV-B17-O02 -->
     Đề có thể cho phương trình đã khai triển. Ví dụ
+
     \[
     x^2+y^2+z^2-2x+4y-6z+5=0.
     \]
+
     Ta hoàn thành bình phương từng biến: \(x^2-2x=(x-1)^2-1\), \(y^2+4y=(y+2)^2-4\), \(z^2-6z=(z-3)^2-9\). Suy ra tổng ba bình phương bằng \(1+4+9-5=9\). Do đó tâm \(I(1;-2;3)\), bán kính 3.
 
     Tổng quát, với dạng \(x^2+y^2+z^2-2ax-2by-2cz+d=0\), hoàn thành bình phương được
+
     \[
     (x-a)^2+(y-b)^2+(z-c)^2=a^2+b^2+c^2-d.
     \]
+
     Vế phải dương mới có mặt cầu bán kính dương; bằng 0 thì chỉ có một điểm; âm thì vô nghiệm thực. Dạng tổng quát không có hạng tử chéo như \(xy\), và ba hệ số bình phương phải bằng nhau, khác 0 trước khi chuẩn hóa. Nếu cả phương trình có hệ số chung khác 0, chia toàn bộ cho hệ số đó rồi xét.
 
     **Vận dụng.** Xét \(2x^2+2y^2+2z^2-8x+4y+10=0\). Có phải phương trình mặt cầu không? Nếu thay 10 bằng 2 thì sao?
@@ -89,9 +95,11 @@
     Trong mô hình Trái Đất hình cầu, chọn gốc \(O\) ở tâm, \(Oz\) hướng về cực Bắc, \(Ox\) hướng tới giao điểm xích đạo và kinh tuyến gốc, \(Oy\) hướng tới điểm xích đạo có kinh độ \(90^\circ E\). SGK lấy bán kính thực \(6371\) km làm một đơn vị dài, nên bề mặt có phương trình \(x^2+y^2+z^2=1\).
 
     Vĩ độ \(\varphi\) là góc nâng của bán kính so với mặt phẳng xích đạo, có dấu dương về Bắc, âm về Nam. Kinh độ \(\lambda\) được lấy dương về Đông, âm về Tây. Hình chiếu ngang của bán kính đơn vị có độ dài \(\cos\varphi\); độ cao là \(\sin\varphi\). Tách hình chiếu ngang thành hai thành phần theo góc kinh độ, ta có
+
     \[
     P(\cos\varphi\cos\lambda;\cos\varphi\sin\lambda;\sin\varphi).
     \]
+
     Kiểm bằng \(\cos^2\varphi(\cos^2\lambda+\sin^2\lambda)+\sin^2\varphi=1\). Ở cực, kinh độ không xác định duy nhất; công thức vẫn cho đúng điểm cực với mọi kinh độ. Ngược lại, nếu biết tọa độ \((x;y;z)\) trên mặt cầu đơn vị, ta tìm vĩ độ bằng \(\varphi=\arcsin z\). Khi không ở cực, hình chiếu xuống mặt phẳng \(Oxy\) có độ dài \(r=\sqrt{x^2+y^2}>0\). Tìm kinh độ \(\lambda\) sao cho \(\cos\lambda=x/r\) và \(\sin\lambda=y/r\); xét cả hai dấu để chọn đúng góc phần tư. Chẳng hạn \((0;1;0)\) có vĩ độ \(0^\circ\), kinh độ \(90^\circ\) Đông.
 
     Để đo khoảng cách ngắn nhất dọc bề mặt cầu, không dùng đoạn thẳng \(PQ\) xuyên vào lòng cầu. Đường tròn lớn đi qua \(P,Q\) có tâm \(O\); độ dài cung nhỏ bằng bán kính nhân góc ở tâm tính theo radian.
@@ -115,6 +123,7 @@
     Khi biết khoảng cách từ một thiết bị đến một mốc có tọa độ xác định, thiết bị nằm trên mặt cầu tâm là mốc, bán kính là khoảng cách đó. Thêm các mốc tạo thêm phương trình mặt cầu. Giao của chúng là các vị trí ứng viên; không mặc định luôn có duy nhất một nghiệm.
 
     Trong mô hình đơn giản, giả sử điểm \(P\) nằm trên mặt cầu đơn vị, cách \(A(2;0;0)\) một khoảng \(\sqrt5\), cách \(B(0;2;0)\) một khoảng \(\sqrt2\). Ta có
+
     \[
     \begin{cases}
     x^2+y^2+z^2=1,\\
@@ -122,6 +131,7 @@
     x^2+(y-2)^2+z^2=2.
     \end{cases}
     \]
+
     Trừ phương trình đầu khỏi phương trình thứ hai, được \(-4x+4=4\), nên \(x=0\). Tương tự \(-4y+4=1\), suy ra \(y=3/4\). Thế lại cho \(z=\pm\sqrt7/4\). Nếu một phép đo bổ sung xác nhận thiết bị ở bán cầu Bắc thì \(z>0\), chọn \(P(0;3/4;\sqrt7/4)\); vĩ độ \(\arcsin(\sqrt7/4)\approx41{,}4096^\circ N\), kinh độ \(90^\circ E\).
 
     Bài toán minh họa nguyên lí định vị bằng khoảng cách trong phần đọc thêm SGK. GPS thực tế còn phải xử lí sai số đồng hồ, quỹ đạo, tín hiệu và thường dùng ít nhất bốn vệ tinh để giải ba tọa độ cùng sai lệch đồng hồ; không đồng nhất mô hình toán học lý tưởng với độ chính xác thực tế.

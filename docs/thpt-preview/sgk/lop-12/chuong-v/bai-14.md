@@ -27,9 +27,11 @@
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B14_FIG01_NORMAL_AUTHORING_20261124.svg" alt="Mặt phẳng z=x+y có hai hướng u=(1;0;1), v=(0;1;1) và pháp tuyến n=(-1;-1;1)"><figcaption>Hai mũi tên xanh nằm dọc mặt phẳng; mũi tên cam vuông góc với cả hai. Không đo góc trên hình phối cảnh. Kiểm bằng hai tích vô hướng bằng 0.</figcaption></figure>
 
     Với hai vectơ bất kì \(\vec u=(a;b;c),\vec v=(a';b';c')\), ta có thể tính một vectơ gọi là tích có hướng. Tích vô hướng của vectơ này với mỗi vectơ ban đầu đều bằng 0; nếu kết quả khác vectơ-không thì nó vuông góc với cả hai:
+
     \[
     [\vec u,\vec v]=(bc'-b'c;\ ca'-c'a;\ ab'-a'b).
     \]
+
     Tính lần lượt theo các cặp tọa độ \(yz,zx,xy\). Vì sao đúng? Tích vô hướng với \(\vec u\) bằng \(a(bc'-b'c)+b(ca'-c'a)+c(ab'-a'b)=0\) do các hạng tử triệt tiêu từng cặp. Tích vô hướng với \(\vec v\) cũng bằng 0. Nếu \(\vec u,\vec v\) không cùng phương, tích có hướng khác không. Nếu chúng cùng phương, kể cả trường hợp có vectơ-không, tích có hướng bằng vectơ-không, nên không xác định được pháp tuyến theo cách này. Khi tích có hướng bằng 0, không nói vectơ-không có một giá vuông góc.
 
     Ví dụ trên cho \([\vec u,\vec v]=(0\cdot1-1\cdot1;\ 1\cdot0-1\cdot1;\ 1\cdot1-0\cdot0)=(-1;-1;1)\), đúng với cách giải hệ. Đảo thứ tự cho vectơ đối \((1;1;-1)\), vẫn là một pháp tuyến hợp lệ.
@@ -78,9 +80,11 @@
 
     <!-- OUTCOME_ID: G12-CHV-B14-O03 -->
     Nếu biết ba điểm không thẳng hàng \(A(1;0;2), B(3;1;2), C(0;2;3)\), hai hướng \(\overrightarrow{AB}=(2;1;0), \overrightarrow{AC}=(-1;2;1)\) cùng nằm trong mặt phẳng. Tích có hướng là \((1;-2;5)\ne\vec0\). Vậy phương trình qua \(A\) là
+
     \[
     (x-1)-2y+5(z-2)=0\Leftrightarrow x-2y+5z-11=0.
     \]
+
     Thế \(B\) cho \(3-2+10-11=0\), thế \(C\) cho \(0-4+15-11=0\). Ba điểm đều thỏa phương trình, và tích có hướng khác 0 chứng minh chúng không thẳng hàng. Nếu tích có hướng bằng 0, ba điểm không đủ xác định duy nhất một mặt phẳng.
 
     <!-- OUTCOME_ID: G12-CHV-B14-O04 -->
@@ -153,14 +157,18 @@
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B14_FIG02_DISTANCE_AUTHORING_20261124.svg" alt="Điểm M ngoài mặt phẳng P, H là hình chiếu vuông góc, T là điểm khác trên P; MH ngắn hơn MT"><figcaption>Đọc đoạn cam \(MH\): đoạn này theo phương pháp tuyến, không nhất thiết theo \(Oz\). Đoạn xiên \(MT\) dài hơn, vì tam giác \(MHT\) vuông tại \(H\).</figcaption></figure>
 
     Tổng quát, đặt \(\vec n=(A;B;C)\ne\vec0\), \(L=Ax_0+By_0+Cz_0+D\) với \(M(x_0;y_0;z_0)\). Vì \(\overrightarrow{MH}\) cùng phương với \(\vec n\) (hoặc bằng \(\vec0\) khi \(M\) đã thuộc mặt phẳng), viết \(\overrightarrow{MH}=k\vec n\). Suy ra \(H(x_0+kA;y_0+kB;z_0+kC)\). Thế tọa độ vào phương trình mặt phẳng:
+
     \[
     L+k(A^2+B^2+C^2)=0
     \Rightarrow k=-\frac L{A^2+B^2+C^2}.
     \]
+
     Vậy \(MH=|k|\sqrt{A^2+B^2+C^2}\), hay
+
     \[
     d(M,(P))=\frac{|Ax_0+By_0+Cz_0+D|}{\sqrt{A^2+B^2+C^2}}.
     \]
+
     Tử số đo giá trị vế trái tại \(M\), nhưng chưa phải khoảng cách. Chia cho độ dài pháp tuyến để kết quả không phụ thuộc cách nhân phương trình; lấy trị tuyệt đối để khoảng cách không âm.
 
     Với ví dụ trên, \(L=2-2+6-4=2,\ |\vec n|=3\), nên khoảng cách \(2/3\). Từ \(\overrightarrow{OH}=\overrightarrow{OM}-\frac29\vec n=(5/9;20/9;23/9)\), suy ra hình chiếu là điểm \(H(5/9;20/9;23/9)\). Thế \(H\) vào phương trình được 0, còn \(\overrightarrow{MH}=-(2/9)\vec n\), đúng phương vuông góc.
@@ -233,17 +241,21 @@
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Khoảng cách điểm đến mặt phẳng.</strong><p>Với \(M(x_0;y_0;z_0)\), \((P):Ax+By+Cz+D=0,\ A^2+B^2+C^2>0\),</p><div class="arithmatex">\(\displaystyle d(M,(P))=\frac{|Ax_0+By_0+Cz_0+D|}{\sqrt{A^2+B^2+C^2}}.\)</div><p>Đây là độ dài đoạn vuông góc từ \(M\) đến hình chiếu \(H\) trên mặt phẳng. Khoảng cách bằng 0 khi và chỉ khi \(M\in(P)\).</p></div>
 
     Đặt \(L=Ax_0+By_0+Cz_0+D\), khi cần tìm hình chiếu, dùng
+
     \[
     \overrightarrow{OH}=\overrightarrow{OM}-\frac{L}{A^2+B^2+C^2}\vec n
     \]
+
     trong đó \(\vec n=(A;B;C)\). Tọa độ của \(H\) là tọa độ của vectơ \(\overrightarrow{OH}\). Kiểm \(H\) thỏa phương trình và \(\overrightarrow{MH}\) là bội của pháp tuyến.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B14_FIG02_DISTANCE_AUTHORING_20261124.svg" alt="Khoảng cách là đoạn vuông góc MH từ M tới mặt phẳng"><figcaption>\(MH\) là khoảng cách ngắn nhất; \(MT^2=MH^2+HT^2\) đối với mọi \(T\) trên mặt phẳng.</figcaption></figure>
 
     Với hai mặt phẳng song song đã viết cùng pháp tuyến \((A;B;C)\) và hệ số tự do \(D_1,D_2\), khoảng cách là
+
     \[
     d=\frac{|D_2-D_1|}{\sqrt{A^2+B^2+C^2}}.
     \]
+
     Nếu mặt phẳng trùng nhau, biểu thức cho 0. Khi hai mặt phẳng cắt nhau, không áp dụng công thức khoảng cách giữa hai mặt phẳng song song. Nếu dùng công thức khoảng cách điểm–mặt phẳng trong mô hình thực tế, cần xác định đúng hệ tọa độ vuông góc và đơn vị độ dài.
 
 === "Ví dụ"

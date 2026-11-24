@@ -25,10 +25,12 @@
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B16_FIG01_LINE_ANGLE_AUTHORING_20261124.svg" alt="Hai đường tạo góc 60 độ; đảo chiều một vectơ chỉ phương làm góc giữa vectơ thành 120 độ nhưng góc hai đường không đổi"><figcaption>Góc giữa hai đường không đổi khi đảo chiều một chỉ phương. Trị tuyệt đối biến \(\cos120^\circ=-1/2\) thành \(\cos60^\circ=1/2\).</figcaption></figure>
 
     Gọi \(\alpha\) là góc giữa hai vectơ chỉ phương khác không. Góc giữa hai đường là \(\theta=\alpha\) nếu \(\alpha\le90^\circ\), và \(\theta=180^\circ-\alpha\) nếu \(\alpha>90^\circ\). Vì \(\cos(180^\circ-\alpha)=-\cos\alpha\), trong cả hai trường hợp
+
     \[
     \cos\theta=|\cos\alpha|
     =\frac{|\vec u\cdot\vec v|}{\|\vec u\|\|\vec v\|}.
     \]
+
     Đây chính là lí do cần trị tuyệt đối. Từ Bài 6 và Bài 15, ta đã biết tính tích vô hướng, độ dài vectơ và đọc chỉ phương từ phương trình đường thẳng.
 
     Ví dụ hai đường có chỉ phương \((1;1;0)\) và \((-1;0;1)\). Tích vô hướng bằng \(-1\), cả hai độ dài bằng \(\sqrt2\). Góc giữa hai vectơ là \(120^\circ\), nhưng góc giữa hai đường là \(60^\circ\), vì \(\cos\theta=1/2\). Vị trí điểm gốc không xuất hiện trong công thức: hai đường cắt hay chéo đều tính theo hướng.
@@ -56,9 +58,11 @@
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B16_FIG02_LINE_PLANE_AUTHORING_20261124.svg" alt="Tam giác vuông OHM cạnh 3,4,5; góc đường với hình chiếu là theta, góc đường với pháp tuyến là alpha; hai góc phụ nhau"><figcaption>Quan sát hai cung góc tại \(O\): góc xanh \(\theta\) đo với mặt phẳng, góc cam \(\alpha\) đo với pháp tuyến. Chúng có tổng \(90^\circ\).</figcaption></figure>
 
     Vì \(\theta+\alpha=90^\circ\), nên \(\sin\theta=\cos\alpha\). Mà \(\alpha\) là góc không tù giữa đường \(OM\) và đường theo phương pháp tuyến, nên với chỉ phương \(\vec u\), pháp tuyến \(\vec n\) khác không:
+
     \[
     \sin\theta=\frac{|\vec u\cdot\vec n|}{\|\vec u\|\|\vec n\|}.
     \]
+
     Với \(\vec u=(3;0;4),\vec n=(0;0;1)\), tỉ số là \(4/5\), vậy \(\theta\approx53{,}1^\circ\). Nếu dùng cosin trực tiếp, ta nhận \(36{,}9^\circ\): đó là góc với pháp tuyến, không phải góc với mặt phẳng.
 
     <!-- OUTCOME_ID: G12-CHV-B16-O04 -->
@@ -88,9 +92,11 @@
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B16_FIG03_PLANE_ANGLE_AUTHORING_20261124.svg" alt="Thiết diện y=0 của hai mặt phẳng z=0 và z=x; hai vết cắt và hai pháp tuyến cùng tạo góc 45 độ"><figcaption>Quay đồng thời hai phương vết cắt một góc \(90^\circ\) ta nhận hai phương pháp tuyến. Góc không tù giữa chúng được bảo toàn.</figcaption></figure>
 
     Do đó góc giữa hai mặt phẳng bằng góc không tù giữa hai đường thẳng lần lượt vuông góc với hai mặt phẳng. Với \(\vec n_1,\vec n_2\ne\vec0\),
+
     \[
     \cos\theta=\frac{|\vec n_1\cdot\vec n_2|}{\|\vec n_1\|\|\vec n_2\|}.
     \]
+
     Nếu hai mặt phẳng song song hoặc trùng nhau thì pháp tuyến cùng phương và góc bằng \(0^\circ\); nếu hai pháp tuyến vuông góc thì góc bằng \(90^\circ\). Hệ số tự do không ảnh hưởng tới góc. Cũng như ở Bài 14, nếu chưa có phương trình mặt phẳng, ta tìm pháp tuyến bằng tích có hướng của hai hướng độc lập nằm trong mặt phẳng.
 
     **Vận dụng — mái nhà.** Ba chân cột đứng trên nền ngang ở \(A(0;0;0)\), \(B(4;0;0)\), \(C(0;4;0)\) (m). Độ cao cột lần lượt là 3 m, 5 m, 4 m. Mái là mặt phẳng qua ba đỉnh cột. Hỏi mái nghiêng với nền một góc bao nhiêu?
@@ -102,6 +108,7 @@
         \[
         \cos\theta=\frac4{\sqrt{21}},\qquad \theta\approx29{,}2^\circ.
         \]
+
         Kiểm phương trình mái \(z=3+x/2+y/4\): thay cả ba đỉnh đều đúng. Mái nghiêng theo cả hai phương ngang, nên không được tự lấy góc dốc của riêng một cạnh làm góc của toàn mái.
 
     ??? tip "Kiểm lỗi"

@@ -33,6 +33,7 @@
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B15_FIG01_PARAMETER_AUTHORING_20261124.svg" alt="Bốn điểm trên đường qua A(1;2;3) hướng (2;-1;1), ứng với tham số -1,0,1,2"><figcaption>Điểm ứng với \(t=0\) là \(A\). Mỗi lần tăng \(t\) thêm 1, ba tọa độ đồng thời thay đổi \(+2,-1,+1\). Hướng mũi tên cam là vectơ chỉ phương.</figcaption></figure>
 
     Tổng quát, \(M\in d\) khi và chỉ khi \(\overrightarrow{AM}=t\vec u\) với \(t\in\mathbb R\). Từ \((x-1;y-2;z-3)=t(2;-1;1)\) suy ra
+
     \[
     d:\begin{cases}
     x=1+2t,\\
@@ -40,6 +41,7 @@
     z=3+t,
     \end{cases}\quad t\in\mathbb R.
     \]
+
     Khi \(t\) nhận mọi giá trị thực, \(M\) chạy qua toàn bộ đường thẳng. Đó là phương trình tham số. Tham số có thể là thời gian trong bài toán chuyển động nếu vectơ được chọn đúng là vận tốc; nói chung nó chỉ là hệ số nhân của vectơ hướng.
 
     <!-- OUTCOME_ID: G12-CHV-B15-O04 -->
@@ -60,9 +62,11 @@
 
     <!-- OUTCOME_ID: G12-CHV-B15-O03 -->
     Từ phương trình của đường qua \(A(1;2;3)\) có chỉ phương \((2;-1;1)\), vì cả ba thành phần đều khác 0, ta chia được
+
     \[
     t=\frac{x-1}{2}=\frac{y-2}{-1}=\frac{z-3}{1}.
     \]
+
     Bỏ tên tham số, ba phân số bằng nhau là phương trình chính tắc của đường thẳng. Ngược lại, đặt giá trị chung bằng \(t\) thì khôi phục phương trình tham số. Hai dạng mô tả cùng tập hợp điểm.
 
     Với đường thẳng \(x=2-t,\ y=1+3t,\ z=4\), ta có thể viết tương đương \(z=4,\ (x-2)/(-1)=(y-1)/3\), nhưng không viết \((z-4)/0\). Theo định nghĩa SGK, đường thẳng có một thành phần chỉ phương bằng 0 không có phương trình chính tắc; dùng phương trình tham số hoặc hệ tương đương trên.
@@ -73,24 +77,30 @@
 
     <!-- OUTCOME_ID: G12-CHV-B15-O02 -->
     Hai điểm phân biệt \(A(2;1;-1), B(5;3;2)\) xác định một đường thẳng. Vectơ \(\overrightarrow{AB}=(3;2;3)\ne\vec0\) chính là một chỉ phương. Vì thế
+
     \[
     AB:\begin{cases}x=2+3t,\\y=1+2t,\\z=-1+3t.\end{cases}
     \]
+
     Tại \(t=0\) được \(A\), tại \(t=1\) được \(B\). Nếu \(0\le t\le1\), chỉ thu được đoạn thẳng \(AB\); cho mọi \(t\in\mathbb R\) mới được toàn bộ đường thẳng. Vì cả ba thành phần hướng khác 0, dạng chính tắc là \((x-2)/3=(y-1)/2=(z+1)/3\).
 
     Nếu đề cho đường thẳng qua một điểm và song song với đường thẳng đã biết, dùng một chỉ phương của đường đã biết; kiểm điểm gốc mới không thuộc đường cũ nếu yêu cầu song song phân biệt. Nếu đường thẳng cần lập vuông góc với một mặt phẳng, dùng pháp tuyến của mặt phẳng làm chỉ phương của đường thẳng.
 
     <!-- OUTCOME_ID: G12-CHV-B15-O07 -->
     **Tìm giao với mặt phẳng để giải bài toán đoạn thẳng.** Một mắt quan sát ở \(M(1;2;-3)\), vật ở \(N(4;-1;6)\); tấm chắn tròn tâm \(O\), bán kính 2 nằm trong \(Oxy\). Đường nhìn có phương trình
+
     \[
     (x;y;z)=(1+3t;2-3t;-3+9t).
     \]
+
     Đường xuyên qua \(Oxy\) khi \(z=0\), tức \(t=1/3\), cho \(D(2;1;0)\). Vì \(0<1/3<1\), \(D\) nằm giữa mắt và vật. Tuy nhiên \(OD=\sqrt5>2\), nên đường nhìn không xuyên qua tấm chắn. Cần kiểm cả hai điều kiện: giao điểm nằm trên đoạn nhìn và thuộc hình tròn hữu hạn.
 
     Tổng quát, với \(d:M=A+t\vec u\) và mặt phẳng \((P):\vec n\cdot\overrightarrow{OM}+D=0\), thay tọa độ \(M\) vào phương trình \((P)\), ta nhận
+
     \[
     (\vec n\cdot\vec u)t+\vec n\cdot\overrightarrow{OA}+D=0.
     \]
+
     Nếu hệ số của \(t\) khác 0, có một giao điểm. Nếu hệ số bằng 0, đường thẳng nằm trong mặt phẳng khi hằng số cũng bằng 0, và song song phân biệt khi hằng số khác 0.
 
     <!-- FIRST_TRY_ID: B15-T02 -->
@@ -137,9 +147,11 @@
     Chẳng hạn \(A=(0;0;0), B=(0;0;1),\vec u=(1;0;0),\vec v=(0;1;0)\) như hình ở mục trước. Tích có hướng bằng \((0;0;1)\); tích với \(\overrightarrow{AB}=(0;0;1)\) bằng 1, xác nhận chéo nhau.
 
     Cách khác là tìm điểm chung. Viết \(A+t\vec u=B+s\vec v\) với hai tham số độc lập \(t,s\), rồi giải hệ ba phương trình tọa độ. Ví dụ
+
     \[
     d_1:(t;2t;1+t),\qquad d_2:(2+s;4-s;3).
     \]
+
     Từ \(1+t=3\) được \(t=2\); từ \(t=2+s\) được \(s=0\). Phương trình tung độ \(2t=4-s\) cũng đúng. Hai hướng \((1;2;1),(1;-1;0)\) không cùng phương, nên hai đường cắt nhau tại \((2;4;3)\).
 
     | Hướng | Hệ tìm điểm chung | Vị trí |

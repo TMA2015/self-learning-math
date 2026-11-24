@@ -32,11 +32,13 @@
     ??? question "Đối chiếu"
 
         Ba cạnh \(BA,BC,BB'\) đôi một vuông góc và có chung đầu \(B\). Vì \(BA=5,\ BC=2,\ BB'=3\), có thể chọn hệ tọa độ với
+
         \[
         \vec i=\tfrac15\overrightarrow{BA},\quad
         \vec j=\tfrac12\overrightarrow{BC},\quad
         \vec k=\tfrac13\overrightarrow{BB'}.
         \]
+
         Mỗi vectơ đều có độ dài \(1\), theo đúng chiều đã chọn.
 
     ??? tip "Kiểm lỗi"
@@ -50,9 +52,11 @@
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G12-CHII-B07-R00.svg" alt="Điểm M(2;1;3), hình chiếu X, Y, Z trên ba trục và H trên Oxy; ba chặng OX, XH, HM biểu diễn 2i, j, 3k"><figcaption>Đọc lần lượt \(O\to X\to H\to M\). Các mũi tên xanh biểu diễn ba thành phần; nét đứt hỗ trợ xác định hình chiếu. Phối cảnh không bảo toàn góc hay độ dài nhìn thấy trên màn hình.</figcaption></figure>
 
     Áp dụng quy tắc cộng vectơ,
+
     \[
     \overrightarrow{OM}=2\vec i+\vec j+3\vec k.
     \]
+
     Ba hệ số chính là tọa độ của điểm \(M\), viết \(M(2;1;3)\). Số đầu là hoành độ, số thứ hai là tung độ, số cuối là cao độ. Trong hệ đã chọn, mỗi điểm có một bộ ba tọa độ duy nhất; ngược lại, mỗi bộ ba số thực xác định một điểm.
 
     Vì sao không có hai bộ ba khác nhau cho cùng một điểm? Ba hướng trục độc lập: phần dịch chuyển theo \(Ox\) không thể được tạo bằng hai dịch chuyển theo \(Oy,Oz\), vì hai hướng sau nằm trong mặt phẳng vuông góc với \(Ox\). Chiếu vuông góc lên từng trục, ta đọc được riêng từng thành phần có dấu. Do đó bộ ba hệ số trong biểu diễn \(\overrightarrow{OM}=x\vec i+y\vec j+z\vec k\) là duy nhất.
@@ -82,6 +86,7 @@
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B07_FIG02_DISPLACEMENT_AUTHORING_20261124.svg" alt="Vectơ từ A(−1;1;2) đến B(2;−1;1); đường gấp khúc lần lượt dịch chuyển +3 theo Ox, −2 theo Oy, −1 theo Oz"><figcaption>Mũi tên liền nối \(A\) đến \(B\); ba mũi tên nét đứt biểu diễn từng độ thay đổi có dấu. Các hướng trục được ghi ở góc hình. Dời cả hai đầu mút cùng một vectơ thì ba độ thay đổi không đổi.</figcaption></figure>
 
     Vì \(\overrightarrow{OA}+\overrightarrow{AB}=\overrightarrow{OB}\), ta có
+
     \[
     \begin{aligned}
     \overrightarrow{AB}
@@ -90,6 +95,7 @@
     &=3\vec i-2\vec j-\vec k.
     \end{aligned}
     \]
+
     Do đó \(\overrightarrow{AB}=(3;-2;-1)\). Đây là nguồn gốc của quy tắc **tọa độ điểm cuối trừ tọa độ điểm đầu**, theo từng thành phần. Nếu đảo chiều thành \(\overrightarrow{BA}\), cả ba dấu đổi ngược. Khi hai điểm trùng nhau, cả ba hiệu bằng \(0\).
 
     Nhờ quy tắc này, ta có thể tìm điểm chưa biết nếu biết điểm xuất phát và vectơ độ dời. Trong một lăng trụ, các vectơ cạnh bên tương ứng bằng nhau. Vì thế chỉ cần biết tọa độ của một cặp đỉnh tương ứng là có thể tìm độ thay đổi chung, rồi xác định các đỉnh còn thiếu. Ví dụ nếu \(A(0;1;2)\) được dời đến \(A'(2;1;5)\), thì vectơ độ dời là \((2;0;3)\). Đỉnh \(B(-1;4;0)\) sẽ được dời tới \(B'(1;4;3)\), vì phải có \(\overrightarrow{BB'}=\overrightarrow{AA'}\).
@@ -151,10 +157,12 @@
     Để tìm một điểm cuối khi biết điểm đầu và vectơ độ dời, lập ba phương trình từ quy tắc trên. Trong hình lăng trụ, hình hộp, dùng các vectơ cạnh tương ứng bằng nhau hoặc quy tắc hình bình hành để tìm đỉnh còn thiếu.
 
     **Liên hệ:** tọa độ Descartes không phải cách duy nhất để xác định vị trí trong không gian. Phần đọc thêm cuối bài SGK giới thiệu tọa độ cầu: khoảng cách \(r=OM\), góc phương vị \(\theta\) của hình chiếu trên \((Oxy)\) và góc cực \(\phi\) giữa \(OM\) với \(Oz\). Khi \(M\) không nằm trên \(Oz\), ba đại lượng liên hệ bởi
+
     \[
     x=r\sin\phi\cos\theta,\quad
     y=r\sin\phi\sin\theta,\quad z=r\cos\phi.
     \]
+
     Trong đó \(r=\sqrt{x^2+y^2+z^2}\), \(\cos\phi=z/r\); nếu \(x\ne0\), \(\tan\theta=y/x\), nhưng phải xét góc phần tư để xác định đúng góc phương vị. Trên trục \(Oz\) không có một góc phương vị duy nhất; tại \(O\) cả hướng đều không xác định. Đây là kiến thức đọc thêm, không phải yêu cầu tính toán chính của Bài 7.
 
 === "Ví dụ"
