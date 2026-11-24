@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 525,
+    "legacy_combined_answer_items": 494,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_184_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_215_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 184 manually verified and key separated at checkpoints 29–34; 525 remain combined, answer_key=null. Preserve source and solution except explicit scoped author clarifications; self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 215 manually verified and key separated at checkpoints 29–35; 494 remain combined, answer_key=null. Preserve source and solution except explicit scoped author clarifications; self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 525,
+      "remaining_combined_answer_items": 494,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 184,
-        "remaining_count": 525,
+        "reviewed_count": 215,
+        "remaining_count": 494,
         "batches": [
           {
             "checkpoint": 29,
@@ -8111,6 +8111,336 @@
               "B29 ambiguous original wording 'không thuộc cả hai' corrected to neither club, consistent with original key 9; 21 in union, 9 outside. Historical audit_note retained as provenance.",
               "B31 restore units and difference quotient derivation; B32 explicit derivative task, domain and rule selection; B33 position coordinate not unsigned distance.",
               "All 14 math results verified and 14 skill mappings grounded in existing shard IDs; no independent Academic/PED or S1 re-read verdict."
+            ]
+          },
+          {
+            "checkpoint": 35,
+            "baseline": "2f86ef18f5310d41393778b30d7dd9b7daa4fef1",
+            "reviewed_candidate": "bd3083f9e05f28ab225035f91b0b31a6b6004783",
+            "scope": "G12 SGK ChI B01–B03: 31 combined-answer records (9,9,13 respectively). Exact canonical source and public projection stem/answer matches; original 31 skill IDs match projection outcome IDs. Independent mathematical check, separated keys, 16 scoped improvements including t=0 endpoint correction.",
+            "shards": [
+              {
+                "shard": "g12-chi",
+                "before": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+                "after": "a74f73f74abbbabb13419450122373a7eb8ddc7a",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G12-CHI-B01-C01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Nghịch biến trên (−∞;0).",
+                    "skill_ids": [
+                      "G12-B01-MONOTONICITY_MEANING"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B01-C02",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "f′(x)=2x−4; f′<0 khi x<2, f′=0 khi x=2, f′>0 khi x>2; nghịch biến (−∞;2), đồng biến (2;+∞).",
+                    "skill_ids": [
+                      "G12-B01-DERIVATIVE_SIGN"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B01-C03",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Cực đại tại x=−1; cực tiểu tại x=1.",
+                    "skill_ids": [
+                      "G12-B01-EXTREMA_SIGN_CHANGE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B01-C04",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Không có cực trị tại x=0.",
+                    "skill_ids": [
+                      "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B01-P01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "D=ℝ\\{2}; nghịch biến trên (−∞;2) và (2;+∞).",
+                    "skill_ids": [
+                      "G12-B01-DOMAIN_INTERVALS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B01-P02",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Đồng biến trên (−∞;−1), (2;+∞); nghịch biến trên (−1;2).",
+                    "skill_ids": [
+                      "G12-B01-DERIVATIVE_SIGN"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B01-P03",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Cực đại tại x=−1, giá trị 2; cực tiểu tại x=1, giá trị −2.",
+                    "skill_ids": [
+                      "G12-B01-EXTREMA_SIGN_CHANGE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B01-P04",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Có cực tiểu tại x=0, giá trị 0.",
+                    "skill_ids": [
+                      "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B01-A01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Chiều dương khi 0≤t<1 hoặc t>3; chiều âm khi 1<t<3; v=0 tại t=1,3.",
+                    "skill_ids": [
+                      "G12-B01-MOTION_CONTEXT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-C01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Không có GTLN trên (0;1); 1 không đạt được.",
+                    "skill_ids": [
+                      "G12-B02-EXTREMA_GLOBAL_MEANING"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-C02",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Có, đạt cả GTLN và GTNN.",
+                    "skill_ids": [
+                      "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-C03",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "GTLN 8 tại x=4; GTNN −1 tại x=1.",
+                    "skill_ids": [
+                      "G12-B02-CRITICAL_END_POINTS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-C04",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Không có GTNN; cũng không có GTLN trên (0;+∞).",
+                    "skill_ids": [
+                      "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-P01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "GTLN 6 tại x=2; GTNN −3 tại x=5.",
+                    "skill_ids": [
+                      "G12-B02-CRITICAL_END_POINTS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-P02",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "GTNN 0 tại x=0; không có GTLN.",
+                    "skill_ids": [
+                      "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-P03",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "GTLN 1/2 tại x=1; GTNN 0 tại x=0.",
+                    "skill_ids": [
+                      "G12-B02-CONSTRAINED_DOMAIN"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-P04",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "GTLN 8 tại x=2; GTNN −8 tại x=−2; không có cực trị trong (−2;2).",
+                    "skill_ids": [
+                      "G12-B02-EXTREMA_GLOBAL_MEANING"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-P05",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Không áp dụng được vì hàm không xác định tại 0, không liên tục trên toàn đoạn [−1;1].",
+                    "skill_ids": [
+                      "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B02-A01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Diện tích lớn nhất 36 m² khi hai cạnh đều dài 6 m; không có GTNN.",
+                    "skill_ids": [
+                      "G12-B02-OPTIMIZATION_MODEL"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-C01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Giới hạn 5; tiệm cận ngang y=5.",
+                    "skill_ids": [
+                      "G12-B03-HORIZONTAL_LIMIT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-C02",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "lim x→−3⁻ f(x)=−∞; lim x→−3⁺ f(x)=+∞; tiệm cận đứng x=−3.",
+                    "skill_ids": [
+                      "G12-B03-VERTICAL_ONE_SIDED"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-C03",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Tiệm cận xiên y=x−2.",
+                    "skill_ids": [
+                      "G12-B03-OBLIQUE_REMAINDER"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-C04",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Không; giới hạn bằng 6, đồ thị thiếu điểm (3;6).",
+                    "skill_ids": [
+                      "G12-B03-REMOVABLE_DISCONTINUITY"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-P01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Tiệm cận ngang y=2.",
+                    "skill_ids": [
+                      "G12-B03-HORIZONTAL_LIMIT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-P02",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "lim x→2⁻ g(x)=−∞; lim x→2⁺ g(x)=+∞.",
+                    "skill_ids": [
+                      "G12-B03-VERTICAL_ONE_SIDED"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-P03",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Tiệm cận xiên y=x+1; tiệm cận đứng x=−1.",
+                    "skill_ids": [
+                      "G12-B03-OBLIQUE_REMAINDER"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-P04",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Có, x=1 là tiệm cận đứng vì giới hạn bên phải bằng +∞.",
+                    "skill_ids": [
+                      "G12-B03-DOMAIN_SIDED_LIMITS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-P05",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Không vẽ chấm đặc; đồ thị là đường y=x+2 bỏ điểm (2;4).",
+                    "skill_ids": [
+                      "G12-B03-REMOVABLE_DISCONTINUITY"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-P06",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Nhánh phải ở trên y=3; nhánh trái ở dưới y=3.",
+                    "skill_ids": [
+                      "G12-B03-GRAPH_INTERPRETATION"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-P07",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Hai tiệm cận ngang: y=1 về phía +∞, y=−1 về phía −∞.",
+                    "skill_ids": [
+                      "G12-B03-HORIZONTAL_LIMIT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-B03-A01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "C(q)→20 khi q→+∞, C(q)→+∞ khi q→0⁺; tiệm cận ngang C=20, đứng q=0; q=0 không có chi phí trung bình xác định.",
+                    "skill_ids": [
+                      "G12-B03-DOMAIN_SIDED_LIMITS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 38
+              }
+            ],
+            "notes": [
+              "B01-A01 source omits t=0 from positive velocity interval despite t≥0; v(0)=9, corrected to 0≤t<1. B02-P02 nonattainment proof uses y=(|x|+1)/2. B02-C01 replace English supremum with learner-facing explanation; B03-P07 use |x| and separate infinities; B03-A01 distinguish continuous extension from positive integer production.",
+              "No PDF SGK original re-read, full coverage/PED/reveal/D6/independent verdict pending; source and placement unchanged."
             ]
           }
         ]
