@@ -61,9 +61,9 @@
 
     Quay lại nhà hát. Từ hàng \(1\) đến hàng \(2\), ta cộng \(2\) đúng **một** lần; đến hàng \(3\), cộng **hai** lần. Vậy để từ \(u_1\) đến \(u_n\), ta chỉ có **\(n-1\) bước**. Bởi thế số ghế hàng thứ \(n\) được tính trực tiếp bằng \(16+(n-1)\cdot2\), không cần viết ra mọi hàng trước đó.
 
-    Lập luận ấy đúng với bất kỳ cấp số cộng: \(u_2=u_1+d\), \(u_3=u_1+2d\), \(u_4=u_1+3d\); do vậy \(u_n=u_1+(n-1)d\). Ở hàng thứ \(25\), ta có \(16+24\cdot2=64\) ghế. Công thức này cũng giúp **đi ngược**: nếu biết hai số hạng ở vị trí \(p\) và \(q\), lấy hiệu \(u_q-u_p=(q-p)d\) để tìm công sai trước, rồi tìm số hạng đầu.
+    Lập luận ấy đúng với bất kỳ cấp số cộng: \(u_2=u_1+d\), \(u_3=u_1+2d\), \(u_4=u_1+3d\); do vậy \(u_n=u_1+(n-1)d\), với \(n\) là chỉ số của một số hạng trong dãy. Ở hàng thứ \(25\), ta có \(16+24\cdot2=64\) ghế. Công thức này cũng giúp **đi ngược**: nếu biết hai số hạng ở vị trí \(p\) và \(q\), lấy hiệu \(u_q-u_p=(q-p)d\) để tìm công sai trước, rồi tìm số hạng đầu.
 
-    Một cách nhìn thú vị: với ba số hạng liên tiếp, số ở giữa bằng trung bình cộng của hai số hai bên, vì số trước kém nó \(d\) và số sau hơn nó \(d\). Đây là **nhận xét suy ra từ định nghĩa**, không phải một mục kiến thức chính mới của SGK.
+    Một cách nhìn thú vị: với ba số hạng liên tiếp, số ở giữa bằng trung bình cộng của hai số hai bên, vì nếu số giữa là \(u_k\), hai số bên lần lượt là \(u_k-d\) và \(u_k+d\); trung bình của chúng bằng \(u_k\), kể cả khi \(d<0\).
 
     **Vận dụng.** Một cấp số cộng có \(u_4=7\) và \(u_9=22\). Hãy tìm \(d,u_1,u_{20}\), và giải thích vì sao hiệu hai chỉ số là \(5\), không phải \(9\).
 
@@ -105,15 +105,15 @@
 
     ### 2.2. Số hạng tổng quát
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Số hạng tổng quát của cấp số cộng</strong><p>Với cấp số cộng có số hạng đầu \(u_1\), công sai \(d\), số hạng thứ \(n\) là</p><p>\(u_n=u_1+(n-1)d,\qquad n\ge1.\)</p><p>Sở dĩ là \(n-1\) vì có đúng \(n-1\) khoảng từ vị trí \(1\) đến \(n\).</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Số hạng tổng quát của cấp số cộng</strong><p>Với cấp số cộng có số hạng đầu \(u_1\), công sai \(d\), số hạng thứ \(n\) là</p><p>\(u_n=u_1+(n-1)d,\qquad n\ge1.\)</p><p>Nếu dãy hữu hạn, \(n\) không vượt quá số số hạng của dãy.</p><p>Sở dĩ là \(n-1\) vì có đúng \(n-1\) khoảng từ vị trí \(1\) đến \(n\).</p></div>
 
-    **Tìm ngược khi biết hai vị trí:** Nếu \(p\ne q\) và hai số hạng \(u_p,u_q\) đều tồn tại, suy ra \(d=(u_q-u_p)/(q-p)\); tiếp theo \(u_1=u_p-(p-1)d\). Đây là phép biến đổi từ công thức chính, không phải một định nghĩa thứ hai.
+    **Tìm ngược khi biết hai vị trí:** Nếu \(p\ne q\) và hai số hạng \(u_p,u_q\) đều tồn tại, suy ra \(d=(u_q-u_p)/(q-p)\); tiếp theo \(u_1=u_p-(p-1)d\).
 
     **Nhận xét:** Khi ba số hạng liên tiếp tồn tại, \(2u_n=u_{n-1}+u_{n+1}\) vì hai số hạng kề lần lượt bằng \(u_n-d\) và \(u_n+d\). Hệ thức này **suy ra** từ định nghĩa cấp số cộng; không thay thế điều kiện hiệu liên tiếp không đổi của **toàn dãy**.
 
     ### 2.3. Tổng \(n\) số hạng đầu của một cấp số cộng
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tổng \(n\) số hạng đầu của cấp số cộng</strong><p>Với \(n\in\mathbb N^*\), đặt \(S_n=u_1+u_2+\cdots+u_n\). Khi đó</p><p>\(S_n=\dfrac n2[2u_1+(n-1)d]=\dfrac{n(u_1+u_n)}2.\)</p><p>Dùng dạng có \(u_n\) khi biết số cuối, dùng dạng có \(d\) khi chỉ biết số đầu và công sai. Hai công thức tương đương vì \(u_n=u_1+(n-1)d\).</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tổng \(n\) số hạng đầu của cấp số cộng</strong><p>Với \(n\in\mathbb N^*\) không vượt quá số số hạng của dãy (nếu dãy hữu hạn), đặt \(S_n=u_1+u_2+\cdots+u_n\). Khi đó</p><p>\(S_n=\dfrac n2[2u_1+(n-1)d]=\dfrac{n(u_1+u_n)}2.\)</p><p>Dùng dạng có \(u_n\) khi biết số cuối, dùng dạng có \(d\) khi chỉ biết số đầu và công sai. Hai công thức tương đương vì \(u_n=u_1+(n-1)d\).</p></div>
 
     **Giải thích ngắn:** Viết tổng xuôi và ngược rồi cộng từng cặp cho \(2S_n=n(u_1+u_n)\); cách này đúng cả khi \(d=0\) hoặc \(d<0\).
 
