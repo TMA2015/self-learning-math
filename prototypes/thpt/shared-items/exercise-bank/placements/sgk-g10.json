@@ -3303,5 +3303,278 @@
     "role": "SGK_FIRST_TRY",
     "order": 5,
     "item_id": "THPT-G10-CHIII-TRY09"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIV-TRY01",
+    "outcome_id": "G10-B07-DEFINITION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIV-TRY02",
+    "outcome_id": "G10-B07-LENGTH"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIV-TRY03",
+    "outcome_id": "G10-B07-DIRECTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIV-TRY04",
+    "outcome_id": "G10-B07-EQUALITY"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIV-TRY05",
+    "outcome_id": "G10-B07-ZERO"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIV-TRY06",
+    "outcome_id": "G10-B08-TRIANGLE"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIV-TRY07",
+    "outcome_id": "G10-B08-PARALLELOGRAM"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIV-TRY08",
+    "outcome_id": "G10-B08-OPPOSITE-SUBTRACTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIV-TRY09",
+    "outcome_id": "G10-B08-MIDPOINT"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIV-TRY10",
+    "outcome_id": "G10-B08-CENTROID"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIV-TRY11",
+    "outcome_id": "G10-B09-SCALAR_DEFINITION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIV-TRY12",
+    "outcome_id": "G10-B09-LENGTH_DIRECTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIV-TRY13",
+    "outcome_id": "G10-B09-DISTRIBUTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIV-TRY14",
+    "outcome_id": "G10-B09-COLLINEAR"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIV-TRY15",
+    "outcome_id": "G10-B09-MIDPOINT_CENTROID"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIV-TRY16",
+    "outcome_id": "G10-B10-VECTOR_COORDS"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIV-TRY17",
+    "outcome_id": "G10-B10-OPERATIONS"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIV-TRY18",
+    "outcome_id": "G10-B10-NORM_DISTANCE"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIV-TRY19",
+    "outcome_id": "G10-B10-COLLINEAR_COORDS"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIV-TRY20",
+    "outcome_id": "G10-B10-MIDPOINT_CENTROID"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-G10-CHIV-TRY-RIVER-TR01",
+    "outcome_id": "G10-B10-OPERATIONS"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIV-TRY21",
+    "outcome_id": "G10-B11-GEOMETRIC_DOT"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIV-TRY22",
+    "outcome_id": "G10-B11-COORDINATE_DOT"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIV-TRY23",
+    "outcome_id": "G10-B11-PERPENDICULAR"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIV-TRY24",
+    "outcome_id": "G10-B11-APPLICATION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIV-TRY-FORCE-TR01",
+    "outcome_id": "G10-B11-GEOMETRIC_DOT"
+  },
+  {
+    "collection": "SGK:G10:CHV:B12:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHV-TRY01"
+  },
+  {
+    "collection": "SGK:G10:CHV:B12:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHV-TRY02"
+  },
+  {
+    "collection": "SGK:G10:CHV:B12:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHV-TRY03"
+  },
+  {
+    "collection": "SGK:G10:CHV:B12:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHV-TRY04"
+  },
+  {
+    "collection": "SGK:G10:CHV:B12:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHV-TRY-CALC-R01",
+    "outcome_id": "G10-B12-CALCULATOR"
+  },
+  {
+    "collection": "SGK:G10:CHV:B13:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHV-TRY05"
+  },
+  {
+    "collection": "SGK:G10:CHV:B13:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHV-TRY06"
+  },
+  {
+    "collection": "SGK:G10:CHV:B13:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHV-TRY07"
+  },
+  {
+    "collection": "SGK:G10:CHV:B13:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHV-TRY08"
+  },
+  {
+    "collection": "SGK:G10:CHV:B13:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHV-TRY09"
+  },
+  {
+    "collection": "SGK:G10:CHV:B14:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHV-TRY10"
+  },
+  {
+    "collection": "SGK:G10:CHV:B14:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHV-TRY11"
+  },
+  {
+    "collection": "SGK:G10:CHV:B14:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHV-TRY12"
+  },
+  {
+    "collection": "SGK:G10:CHV:B14:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHV-TRY13"
+  },
+  {
+    "collection": "SGK:G10:CHV:B14:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHV-TRY14"
   }
 ]
