@@ -28,7 +28,7 @@
 
     #### b) Phương trình tham số của đường thẳng
 
-    Cho đường thẳng \(d\) qua \(A(1;2;3)\) có chỉ phương \(\vec u=(2;-1;1)\). Đi từ \(A\) một lần vectơ \(\vec u\), ta tới \((3;1;4)\); đi hai lần, tới \((5;0;5)\); đi ngược một lần, tới \((-1;3;2)\).
+    Cho đường thẳng \(d\) qua \(A(1;2;3)\) có chỉ phương \(\vec u=(2;-1;1)\). Từ \(A\), dịch chuyển theo vectơ \(\vec u\) tức tăng hoành độ 2, giảm tung độ 1 và tăng cao độ 1, ta tới \((3;1;4)\). Dịch chuyển theo \(2\vec u\) từ \(A\) thì tới \((5;0;5)\); theo \(-\vec u\) thì tới \((-1;3;2)\).
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B15_FIG01_PARAMETER_AUTHORING_20261124.svg" alt="Bốn điểm trên đường qua A(1;2;3) hướng (2;-1;1), ứng với tham số -1,0,1,2"><figcaption>Điểm ứng với \(t=0\) là \(A\). Mỗi lần tăng \(t\) thêm 1, ba tọa độ đồng thời thay đổi \(+2,-1,+1\). Hướng mũi tên cam là vectơ chỉ phương.</figcaption></figure>
 
@@ -130,7 +130,7 @@
     <!-- OUTCOME_ID: G12-CHV-B15-O06 -->
     Hai đường thẳng trong không gian có bốn khả năng về vị trí: trùng, song song phân biệt, cắt và chéo. Bước đầu luôn là xét chỉ phương. Gọi \(A,B\) là điểm gốc của hai đường, \(\vec u,\vec v\ne\vec0\) là chỉ phương.
 
-    Nếu \(\vec u,\vec v\) cùng phương, cả hai đường cùng hướng. Chỉ cần kiểm \(B\) thuộc đường qua \(A\) hay không. Nếu có, chúng trùng nhau; nếu không, chúng song song phân biệt. Dùng \(\overrightarrow{AB}=k\vec u\) (cho phép \(k=0\)) hoặc kiểm bằng tham số, tránh chia cho thành phần bằng 0.
+    Nếu \(\vec u,\vec v\) cùng phương, hai đường có cùng phương, nhưng chưa chắc là hai đường phân biệt. Chỉ cần kiểm \(B\) thuộc đường qua \(A\) hay không. Nếu có, chúng trùng nhau; nếu không, chúng song song phân biệt. Dùng \(\overrightarrow{AB}=k\vec u\) (cho phép \(k=0\)) hoặc kiểm bằng tham số, tránh chia cho thành phần bằng 0.
 
     Nếu hai chỉ phương không cùng phương, có đúng một mặt phẳng qua \(A\) chứa cả hai hướng, nhận \(\vec n=[\vec u,\vec v]\ne\vec0\) làm pháp tuyến. Đường thứ nhất nằm trong mặt phẳng này. Đường thứ hai có hướng vuông góc với \(\vec n\), nên nằm trong mặt phẳng khi \(B\) thuộc mặt phẳng, tức \(\overrightarrow{AB}\cdot\vec n=0\). Khi ấy hai đường đồng phẳng và khác phương nên cắt nhau. Nếu tích này khác 0, đường thứ hai không nằm trong mặt phẳng: hai đường chéo nhau.
 
