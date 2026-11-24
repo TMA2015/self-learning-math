@@ -207,13 +207,14 @@
 
     ### 3.2. Phân biệt chẵn và lẻ bằng phép thế
 
-    **Đề bài.** Xét tính chẵn, lẻ của \(f(x)=x\sin x\).
+    **Đề bài.** Xét tính chẵn, lẻ của \(f(x)=x\cos x\).
 
-    **Phân tích:** Miền xác định là \(\mathbb R\), đối xứng qua \(0\). Phép thế \(-x\) cho thấy cả \(x\) và \(\sin x\) đổi dấu.
+    **Phân tích:** Miền xác định là \(\mathbb R\), đối xứng qua \(0\). Khi thay \(x\) bằng \(-x\), cos giữ nguyên còn thừa số \(x\) đổi dấu.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Với mọi \(x\in\mathbb R\), \(f(-x)=(-x)\sin(-x)=(-x)(-\sin x)=x\sin x=f(x)\). Vậy \(f\) là hàm chẵn.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Với mọi \(x\in\mathbb R\), \(f(-x)=(-x)\cos(-x)=-x\cos x=-f(x)\). Vậy \(f\) là hàm lẻ.</p></div>
 
-    **Kiểm lại:** \(f(1)=\sin1=f(-1)\). Một cặp giá trị chỉ để đối chiếu, còn phép biến đổi với mọi \(x\) mới là chứng minh.
+    **Kiểm lại:** \(f(1)=\cos1\), \(f(-1)=-\cos1\). Một cặp giá trị chỉ để đối chiếu; phép biến đổi với mọi \(x\) mới là chứng minh.
+
 
     ### 3.3. Đọc chu kì từ hệ số đối số
 
@@ -247,13 +248,14 @@
 
     ### 3.6. Đọc dấu từ hai đồ thị có tiệm cận
 
-    **Đề bài.** Tìm nghiệm của \(\tan x>0\) trên \((-\pi/2;\pi/2)\) và \(\cot x<0\) trên \((0;\pi)\).
+    **Đề bài.** Tìm các \(x\) thỏa \(\tan x<0\) trên \((-\pi/2;\pi/2)\) và \(\cot x>0\) trên \((0;\pi)\).
 
-    **Phân tích:** Trên từng khoảng liên tục, đọc đồ thị nằm trên hay dưới trục hoành. Dùng tỉ số sin/cos để kiểm dấu và không lấy điểm làm mẫu số bằng \(0\).
+    **Phân tích:** Trên mỗi khoảng, đọc đồ thị nằm trên hay dưới trục hoành. Dùng tỉ số sin/cos để kiểm dấu và loại điểm làm mẫu số bằng \(0\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Trên \((-\pi/2;\pi/2)\), tang dương khi \(x\in(0;\pi/2)\). Trên \((0;\pi)\), cot âm khi \(x\in(\pi/2;\pi)\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Trên \((-\pi/2;\pi/2)\), tang âm khi \(x\in(-\pi/2;0)\). Trên \((0;\pi)\), cot dương khi \(x\in(0;\pi/2)\).</p></div>
 
-    **Kiểm lại:** Hai điểm \(x=\pi/2\) không được lấy trong các trường hợp nêu: với tang, hàm không xác định; với cot, hàm bằng \(0\), không thỏa \(<0\).
+    **Kiểm lại:** Tại \(x=-\pi/4\), tang bằng \(-1\); tại \(x=\pi/4\), cot bằng \(1\). Hai điểm làm hàm bằng \(0\) không thỏa bất đẳng thức nghiêm ngặt.
+
 
 === "Lỗi thường gặp"
 
