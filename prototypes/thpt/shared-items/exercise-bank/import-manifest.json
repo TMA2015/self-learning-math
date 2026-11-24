@@ -120,7 +120,26 @@
     "7ef2e8be4bca6c64f7ab190ed5d1cde921998373",
     "20f6b47a4f56a1531ee695fde11953edfb9661bb",
     "078a5d9aca09954fd2b451508152147f6a655015",
-    "920752c92ab12a97d8e034780907fd2bcaac1308"
+    "920752c92ab12a97d8e034780907fd2bcaac1308",
+    "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+    "d6e517a980ec9259345285964f4c42767faa6122",
+    "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+    "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+    "54c9c90323f7b1d9077270d90627864f5a468c03",
+    "8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+    "4bfbed222d552f3ccb9c965616245015930ab1cd",
+    "c85922428c85ddeb48cec5e2bd5953faa44207c8",
+    "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+    "32f4eda1cfd151592eef5a35921ad872c1f644c4",
+    "f3fc0f654a21af7ec72de657643ef97488413dcb",
+    "2ea14427518e58acb03e85d64dcc6b18d55f8798",
+    "51b5cf8243b4793e159db862379a21df60ff75bd",
+    "265381a3bcef201aefff38185753a35f706237c1",
+    "05a81b707824146d6829ef385091dd4046bbe8fe",
+    "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+    "29b609be3195efcd341aea39cb604a930dba8468",
+    "c5e96be714ed2b3d440c37c5507ddc79314bf087",
+    "e9588ca5fcdb107aa62990dc2e36635ef01085c0"
   ],
   "projection_sources": [
     {
@@ -1177,6 +1196,101 @@
       "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-33.md",
       "blob": "920752c92ab12a97d8e034780907fd2bcaac1308",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md",
+      "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
+      "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
+      "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
+      "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+      "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md",
+      "blob": "8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md",
+      "blob": "4bfbed222d552f3ccb9c965616245015930ab1cd",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md",
+      "blob": "c85922428c85ddeb48cec5e2bd5953faa44207c8",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md",
+      "blob": "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md",
+      "blob": "32f4eda1cfd151592eef5a35921ad872c1f644c4",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md",
+      "blob": "f3fc0f654a21af7ec72de657643ef97488413dcb",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md",
+      "blob": "2ea14427518e58acb03e85d64dcc6b18d55f8798",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md",
+      "blob": "51b5cf8243b4793e159db862379a21df60ff75bd",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md",
+      "blob": "265381a3bcef201aefff38185753a35f706237c1",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md",
+      "blob": "05a81b707824146d6829ef385091dd4046bbe8fe",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md",
+      "blob": "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md",
+      "blob": "29b609be3195efcd341aea39cb604a930dba8468",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-vi/bai-18.md",
+      "blob": "c5e96be714ed2b3d440c37c5507ddc79314bf087",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/chuong-vi/bai-19.md",
+      "blob": "e9588ca5fcdb107aa62990dc2e36635ef01085c0",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
@@ -1185,15 +1299,15 @@
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3838,
-    "projection_field_differences": 45,
+    "placements": 3840,
+    "projection_field_differences": 47,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
     "legacy_combined_answer_items": 653,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 121
   },
-  "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported; G11 33 Knowledge pages scanned, 32 pages with unkeyed blocks remain mapping pending",
+  "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported; G11 33 Knowledge pages scanned, 32 pages with unkeyed blocks remain mapping pending; G12 19 Knowledge pages scanned; all 79 SGK pages inventoried, source mapping not complete",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -1684,6 +1798,38 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
       "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G12-B10-C04",
+      "projection": "SGK:G12:CHIII:B10:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md",
+        "blob": "32f4eda1cfd151592eef5a35921ad872c1f644c4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+        "local_id": "B10-T02"
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
+      "reason": "Same given variance 9 cm², ask standard deviation, result 3 cm and unit restoration."
+    },
+    {
+      "item_id": "THPT-G12-B16-A02",
+      "projection": "SGK:G12:CHV:B16:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md",
+        "blob": "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+        "local_id": "B16-T02"
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
+      "reason": "Same slope direction (3,0,4), length 5, angle with horizontal plane; same arcsin(4/5), source states implied length explicitly."
     }
   ],
   "academic_audit": "PENDING",
@@ -2566,7 +2712,7 @@
         "public_blob": "bde0820d157a5169d3cf365c846cf11169d40035"
       }
     ],
-    "sgk_inventory": "G10_COMPLETE_G11_ALL_33_SCANNED_32_UNKEYED_PAGES_PENDING_G12_PENDING",
+    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_SOURCE_MAPPING_PENDING",
     "sgk_pages": [
       {
         "grade": 10,
@@ -3247,10 +3393,380 @@
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
         "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "I",
+        "lesson": "B01",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md",
+        "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 3,
+        "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "I",
+        "lesson": "B02",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
+        "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 3,
+        "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "I",
+        "lesson": "B03",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
+        "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 3,
+        "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "I",
+        "lesson": "B04",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md",
+        "blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 3,
+        "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "I",
+        "lesson": "B05",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+        "blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 4,
+        "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "II",
+        "lesson": "B06",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md",
+        "blob": "8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B06-T01"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "Bold TỰ THỬ Bxx-T01",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "II",
+        "lesson": "B07",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md",
+        "blob": "4bfbed222d552f3ccb9c965616245015930ab1cd",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B07-T01"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "Bold TỰ THỬ Bxx-T01",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "II",
+        "lesson": "B08",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md",
+        "blob": "c85922428c85ddeb48cec5e2bd5953faa44207c8",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B08-T01"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "Bold TỰ THỬ Bxx-T01",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "III",
+        "lesson": "B09",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md",
+        "blob": "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B09-T01",
+          "B09-T02"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "FIRST_TRY_ID comments preceding task and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "III",
+        "lesson": "B10",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md",
+        "blob": "32f4eda1cfd151592eef5a35921ad872c1f644c4",
+        "markers": 0,
+        "imported": 0,
+        "reused": 1,
+        "local_source_ids": [
+          "B10-T01",
+          "B10-T02"
+        ],
+        "local_id_mappings": [
+          {
+            "source_id": "B10-T02",
+            "item_id": "THPT-G12-B10-C04"
+          }
+        ],
+        "unkeyed_activity_blocks": 0,
+        "locator": "FIRST_TRY_ID comments preceding task and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "IV",
+        "lesson": "B11",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md",
+        "blob": "f3fc0f654a21af7ec72de657643ef97488413dcb",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B11-T01",
+          "B11-T02"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "FIRST_TRY_ID comments preceding task and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "IV",
+        "lesson": "B12",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md",
+        "blob": "2ea14427518e58acb03e85d64dcc6b18d55f8798",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B12-T01",
+          "B12-T02"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "FIRST_TRY_ID comments preceding task and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "IV",
+        "lesson": "B13",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md",
+        "blob": "51b5cf8243b4793e159db862379a21df60ff75bd",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B13-T01",
+          "B13-T02"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "FIRST_TRY_ID comments preceding task and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "V",
+        "lesson": "B14",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md",
+        "blob": "265381a3bcef201aefff38185753a35f706237c1",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B14-T01"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "FIRST_TRY_ID comments preceding task and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "V",
+        "lesson": "B15",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md",
+        "blob": "05a81b707824146d6829ef385091dd4046bbe8fe",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B15-T01",
+          "B15-T02"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "FIRST_TRY_ID comments preceding task and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "V",
+        "lesson": "B16",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md",
+        "blob": "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+        "markers": 0,
+        "imported": 0,
+        "reused": 1,
+        "local_source_ids": [
+          "B16-T01",
+          "B16-T02"
+        ],
+        "local_id_mappings": [
+          {
+            "source_id": "B16-T02",
+            "item_id": "THPT-G12-B16-A02"
+          }
+        ],
+        "unkeyed_activity_blocks": 0,
+        "locator": "FIRST_TRY_ID comments preceding task and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "V",
+        "lesson": "B17",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md",
+        "blob": "29b609be3195efcd341aea39cb604a930dba8468",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [
+          "B17-T01",
+          "B17-T02"
+        ],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 0,
+        "locator": "FIRST_TRY_ID comments preceding task and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "VI",
+        "lesson": "B18",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-vi/bai-18.md",
+        "blob": "c5e96be714ed2b3d440c37c5507ddc79314bf087",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 2,
+        "locator": "Section Tự thử trước Core; numbered prompts and details",
+        "status": "SOURCE_MAPPING_PENDING"
+      },
+      {
+        "grade": 12,
+        "chapter": "VI",
+        "lesson": "B19",
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-vi/bai-19.md",
+        "blob": "e9588ca5fcdb107aa62990dc2e36635ef01085c0",
+        "markers": 0,
+        "imported": 0,
+        "reused": 0,
+        "local_source_ids": [],
+        "local_id_mappings": [],
+        "unkeyed_activity_blocks": 2,
+        "locator": "Section Tự thử trước Core; numbered prompts and details",
+        "status": "SOURCE_MAPPING_PENDING"
       }
     ],
-    "context_review": [],
-    "unkeyed_source_note": "Unkeyed activity blocks are source inventory, not item IDs or imported records. A block can contain multiple tasks. Resolve against existing canonical records using exact task identity (not linked follow-up IDs alone), then identify genuinely unkeyed tasks before ID assignment and import; no loss or silent omission. G11 B19–B27 generic self-check redirects to examples require separate content-quality review.",
-    "unkeyed_activity_blocks_g11": 46
+    "context_review": [
+      {
+        "grade": 12,
+        "lesson": "B02",
+        "locator": "Tự thử A",
+        "status": "ACADEMIC_REVIEW_PENDING",
+        "reason": "Value at x=5 exceeds a local maximum at x=2; does not alone prove global maximum at x=5."
+      },
+      {
+        "grade": 12,
+        "lesson": "B11",
+        "locator": "B11-T01",
+        "status": "ACADEMIC_REVIEW_PENDING",
+        "reason": "Source calls signed derivative v(t) tốc độ without specifying t domain; distinguish velocity and speed."
+      },
+      {
+        "grade": 12,
+        "lesson": "B14",
+        "locator": "B14-T01",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "Explanation references cross product/non-collinearity instead of showing dot product computation."
+      }
+    ],
+    "unkeyed_source_note": "Unkeyed activity blocks are source inventory, not item IDs or imported records. A block can contain multiple tasks. Resolve against existing canonical records using exact task identity (not linked follow-up IDs alone), then identify genuinely unkeyed tasks before ID assignment and import; no loss or silent omission. G11 B19–B27 generic self-check redirects to examples require separate content-quality review. G12 local IDs Bxx-Txx are preserved as scoped source locators; 2 exact task matches mapped to existing global IDs. Remaining blocks need cross-bank reconciliation and explicit canonical IDs; no new IDs allocated during this checkpoint. B01–B05 16 prompts have no direct answer reveal in their first-try sections.",
+    "unkeyed_activity_blocks_g11": 46,
+    "g12_local_id_blocks": 20,
+    "unkeyed_activity_blocks_g12": 20,
+    "g12_local_id_reused": 2,
+    "g12_pending_mapping_blocks": 38,
+    "g12_partial_task_matches": [
+      {
+        "source_id": "B06-T01",
+        "candidate_item_ids": [
+          "THPT-G12-B06-P06"
+        ],
+        "reason": "Vector sum matches first subtask only; source also requests scalar product, do not conflate whole block."
+      },
+      {
+        "source_id": "B09-T02",
+        "candidate_item_ids": [
+          "THPT-G12-B09-C04",
+          "THPT-G12-B09-P07"
+        ],
+        "reason": "Source asks n plus both quartile positions; existing records each cover only one quartile, preserve combined task pending mapping."
+      }
+    ]
   }
 }
