@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 447,
+    "legacy_combined_answer_items": 419,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_262_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_290_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 262 manually verified and key separated at checkpoints 29–37; 447 remain combined, answer_key=null. Preserve source history; scoped author clarifications in candidate. Self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 290 manually verified and key separated at checkpoints 29–38; 419 remain combined, answer_key=null. Remaining: 327 Topic (157 cd14–21 practice + 170 topic knowledge first try) and 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 447,
+      "remaining_combined_answer_items": 419,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 262,
-        "remaining_count": 447,
+        "reviewed_count": 290,
+        "remaining_count": 419,
         "batches": [
           {
             "checkpoint": 29,
@@ -8989,6 +8989,419 @@
               "B11-T01 correct velocity terminology and explicitly set t≥0; B13-T02 define bounded region; B14-T01 remove irrelevant cross product explanation; B15-T01/T02 give vector/line notation and derive intersection; B17-T02 define sphere and plane, prove tangency.",
               "B14-T01/B16-T01 map existing prerequisite G12-CHII-B08-O04 (dot product) rather than claim full plane/angle outcome. B17-T01 is only radius-squared prerequisite of sphere equation, not proof of full outcome. B19-KFT02 restates data so it is independently solvable; context pointer retained.",
               "B18 and B19 specify uniform random selection and explain conditional probability, total probability and Bayes; B09 distinguishes grouped range from exact raw data range. Full original SGK PDF reread, outcome/PED/reveal/D6/independent review remain pending. No runtime or release authorization."
+            ]
+          },
+          {
+            "checkpoint": 38,
+            "baseline": "9474eba5ddb9e4696700bbfc83eea342769d4d8b",
+            "reviewed_candidate": "1ff5647b876684b0405c46bc6dba07e926d94036",
+            "scope": "CĐ12–13 practice: 28 items, all 28 stems/solutions exact canonical blob match; CĐ13 public projection exact after whitespace normalization; CĐ12 reviewed all 12 projection blocks, math-equivalent LaTeX/HTML formatting. Independently verified all answers, mapped only existing SGK skills, retained original Topic outcome IDs. 12 items with scoped stem/solution improvements. Numeric candidate content_version 1→2; historical source unchanged.",
+            "shards": [
+              {
+                "shard": "cd12",
+                "before": "9dfe6881efb33afdd50123f3b7729989974207f7",
+                "after": "395630ec84263b20255951bb1d4aae2feea0c78f",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP12-P01",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "sin α=12/13; tan α=−12/5.",
+                    "skill_ids": [
+                      "G10-B05-IDENTITIES",
+                      "G10-B05-SIGN_DOMAIN"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P02",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "0.",
+                    "skill_ids": [
+                      "G10-B05-SUPPLEMENTARY",
+                      "G10-B05-SPECIAL_ANGLES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P03",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "a=√93.",
+                    "skill_ids": [
+                      "G10-B06-COSINE_RULE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P04",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "b=c=3(√6+√2).",
+                    "skill_ids": [
+                      "G10-B06-SINE_RULE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O06"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P05",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "Góc đối diện cạnh 10 bằng 90°; S=24; r=2; R=5.",
+                    "skill_ids": [
+                      "G10-B06-COSINE_RULE",
+                      "G10-B06-HERON"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O07"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P06",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "Có hai tam giác (không kể các bản bằng nhau); B=arcsin(5/6) hoặc 180°−arcsin(5/6).",
+                    "skill_ids": [
+                      "G10-B06-SINE_RULE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O08"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P07",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "Không tồn tại tam giác.",
+                    "skill_ids": [
+                      "G10-B06-SINE_RULE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O08"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P08",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "S=15; sin150°>0 nên diện tích dương.",
+                    "skill_ids": [
+                      "G10-B06-AREA_SIN"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O09"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P09",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "S=12√5; r=√5; R=21√5/10.",
+                    "skill_ids": [
+                      "G10-B06-HERON",
+                      "G10-B06-SINE_RULE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O10"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P10",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "BC=40(√6−√2) m; AC=80(√3−1) m.",
+                    "skill_ids": [
+                      "G10-B06-APPLICATION",
+                      "G10-B06-SINE_RULE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O11"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P11",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "Không; 2+3=5<6, nên không tồn tại tam giác.",
+                    "skill_ids": [
+                      "G10-B06-HERON"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O12"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP12-P12",
+                    "source_blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
+                    "answer_key": "Không có tam giác không suy biến vì A=0°; không áp dụng định lí sin/côsin như cho tam giác không suy biến.",
+                    "skill_ids": [
+                      "G10-B06-COSINE_RULE",
+                      "G10-B06-SINE_RULE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP12-O12"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  }
+                ],
+                "unchanged_count": 0
+              },
+              {
+                "shard": "cd13",
+                "before": "f208337b6d4fa0d92f1ecb9b8d99c6e5313f3892",
+                "after": "1854c8f689b1588926a9cd949b55ab135893f209",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP13-P01",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "DC⃗=AB⃗; CD⃗=−AB⃗.",
+                    "skill_ids": [
+                      "G10-B07-EQUALITY",
+                      "G10-B07-DIRECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P02",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "|AA⃗|=0; vectơ-không được quy ước cùng phương (và cùng hướng) với mọi vectơ.",
+                    "skill_ids": [
+                      "G10-B07-ZERO"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P03",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "Quãng đường 17 m; độ lớn độ dời 13 m.",
+                    "skill_ids": [
+                      "G10-B08-TRIANGLE",
+                      "G10-B10-NORM_DISTANCE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O03"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P04",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "AB⃗−AC⃗=(2;5)=CB⃗.",
+                    "skill_ids": [
+                      "G10-B08-OPPOSITE-SUBTRACTION",
+                      "G10-B10-OPERATIONS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P05",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "v⃗=(−8;4), |v⃗|=4√5; ngược hướng với u⃗.",
+                    "skill_ids": [
+                      "G10-B09-LENGTH_DIRECTION",
+                      "G10-B10-OPERATIONS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P06",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "M(3/2;3), G(0;2); AG⃗=(2/3)AM⃗.",
+                    "skill_ids": [
+                      "G10-B10-MIDPOINT_CENTROID",
+                      "G10-B09-MIDPOINT_CENTROID"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O06"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P07",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "AB⃗=(8;−6); |AB⃗|=10.",
+                    "skill_ids": [
+                      "G10-B10-VECTOR_COORDS",
+                      "G10-B10-NORM_DISTANCE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O07"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P08",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "Cùng phương, ngược hướng.",
+                    "skill_ids": [
+                      "G10-B10-COLLINEAR_COORDS",
+                      "G10-B09-COLLINEAR"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O08"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P09",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "−20, âm vì góc tù.",
+                    "skill_ids": [
+                      "G10-B11-GEOMETRIC_DOT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O09"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P10",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "Có, hai vectơ vuông góc.",
+                    "skill_ids": [
+                      "G10-B11-COORDINATE_DOT",
+                      "G10-B11-PERPENDICULAR"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O10"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P11",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "|AC′⃗|=13.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O11"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P12",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "AB⃗=(3;−3;4), BC⃗=(3;4;−6), AC⃗=(6;1;−2); AB⃗+BC⃗=AC⃗.",
+                    "skill_ids": [
+                      "G12-CHII-B07-O04",
+                      "G12-CHII-B06-O03",
+                      "G12-CHII-B08-O01"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O12"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P13",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "u⃗·v⃗=0; góc 90°.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O04"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O13"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P14",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "AB⃗=(6;−4;4); AB=2√17.",
+                    "skill_ids": [
+                      "G12-CHII-B07-O04",
+                      "G12-CHII-B08-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O14"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P15",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "M(2;0;0); AB=2√29.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O03",
+                      "G12-CHII-B08-O05"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O15"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP13-P16",
+                    "source_blob": "c74505ba59d047c19943c2309f5fd7c033ac9563",
+                    "answer_key": "Q(4;2;3) (m); độ dài độ dời √34 m; quãng đường 5+√17 m.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O01",
+                      "G12-CHII-B08-O05",
+                      "G12-CHII-B08-O06"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP13-O16"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 0
+              }
+            ],
+            "notes": [
+              "CĐ12 P01–02 explain sign and supplementary angles; P04 explains exact sin75° via addition formula (not a new mandatory G10 outcome); P05 distinguishes circumradius and inradius; P06 proves both solutions viable and exactly two triangles up to congruence; P09 checks triangle inequality; P10 rationalizes exact distances and checks side ordering.",
+              "CĐ13 P03/P16 specify straight segments before adding traveled distances; P06 derive midpoint and centroid; P11 names the box and applies Pythagoras twice. All numerical answers unchanged.",
+              "Correction to CP37 remaining scope: 447 consisted of 355 Topic + 92 SGK supplemental/public items. Current remainder 419 = 327 Topic + 92 SGK. Earlier 262 verified SGK regular chapter shards, not all SGK supplemental/public items. CĐ01–11 and CĐ22 practice shards have zero combined items; CĐ22 has first-try records in shared topic shard. No direct S1 PDF reread or full outcome/PED/reveal/D6/independent verdict. No runtime/release."
             ]
           }
         ]
