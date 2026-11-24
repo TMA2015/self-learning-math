@@ -61,11 +61,11 @@
 
     Muốn biết lương năm thứ \(10\), không cần tính riêng cả chín năm trước. Từ năm đầu đến năm thứ hai có **một lần nhân** với \(1{,}05\); đến năm thứ ba có **hai lần**, v.v. Vậy đến năm thứ \(n\) ta đã nhân với công bội đúng \(n-1\) lần:
     \[
-      u_n=u_1q^{\,n-1}.
+      u_n=u_1q^{\,n-1},\quad n\ge2.
     \]
     Với dãy lương, năm thứ \(10\) là \(240(1{,}05)^9\) triệu đồng; mũ là \(9\), không phải \(10\), vì năm thứ nhất là **mốc ban đầu**.
 
-    Nếu biết hai số hạng cách xa nhau, lấy \(u_s/u_r=q^{s-r}\) **chỉ khi số hạng ở mẫu khác \(0\)**. Khi \(s-r\) chẵn, phép khai căn có thể cho **hai công bội đối nhau**. Ví dụ \(q^2=4\) chưa đủ để quyết định \(q=2\) hay \(q=-2\). Nếu bài khẳng định **mọi số hạng dương**, ta mới loại trường hợp \(q<0\). Đây là lỗi dễ gặp ở các bài suy ngược.
+    Nếu biết hai số hạng cách xa nhau, lấy \(u_s/u_r=q^{s-r}\) **chỉ khi số hạng ở mẫu khác \(0\)**. Khi \(s-r\) chẵn, phép khai căn có thể cho **hai công bội đối nhau**. Ví dụ \(q^2=4\) chưa đủ để quyết định \(q=2\) hay \(q=-2\). Nếu mọi số hạng đều dương thì \(q>0\), nên loại nghiệm âm. Những giả thiết khác của đề bài cũng có thể giúp xác định dấu của \(q\). Đây là lỗi dễ gặp ở các bài suy ngược.
 
     Với \(q=0\), số hạng đầu có thể khác \(0\), nhưng từ số hạng thứ hai trở đi tất cả bằng \(0\). Do đó nên viết \(u_1\) riêng và dùng công thức \(u_n=u_1q^{n-1}\) từ \(n\ge2\), tránh phải sử dụng \(0^0\) cho \(n=1\) khi chưa có quy ước.
 
