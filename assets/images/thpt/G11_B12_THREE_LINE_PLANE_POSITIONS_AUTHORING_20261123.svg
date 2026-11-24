@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="960" height="360" role="img" aria-labelledby="t d">
+<title id="t">Ba vị trí của đường thẳng đối với mặt phẳng</title>
+<desc id="d">Ba hình độc lập: trái đường a nằm trong mặt phẳng P có vô số điểm chung; giữa đường b xuyên qua mặt phẳng Q tại một điểm M; phải đường c tách khỏi mặt phẳng R, không có điểm chung nên song song mặt phẳng.</desc>
+<rect width="960" height="360" rx="18" fill="#fff"/>
+<text x="480" y="35" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#183454">Ba vị trí đường thẳng và mặt phẳng</text>
+<g font-family="Arial,sans-serif">
+<rect x="22" y="56" width="293" height="270" rx="14" fill="#f5fbfb" stroke="#d0e0e6"/>
+<text x="168" y="84" font-size="19" font-weight="700" text-anchor="middle" fill="#24475e">1. Nằm trong</text>
+<polygon points="48,233 250,233 290,167 88,167" fill="#d9f3e8" stroke="#3f826f" stroke-width="2"/>
+<line x1="82" y1="209" x2="254" y2="209" stroke="#1c65a1" stroke-width="3.5"/>
+<text x="170" y="200" text-anchor="middle" font-size="18" fill="#18568b">a</text>
+<text x="282" y="259" font-size="17" fill="#296350">(P)</text>
+<text x="168" y="295" text-anchor="middle" font-size="16" fill="#304f62">a ⊂ (P)</text>
+
+<rect x="334" y="56" width="293" height="270" rx="14" fill="#f5fbfb" stroke="#d0e0e6"/>
+<text x="480" y="84" font-size="19" font-weight="700" text-anchor="middle" fill="#24475e">2. Cắt tại M</text>
+<polygon points="360,233 562,233 602,167 400,167" fill="#d9f3e8" stroke="#3f826f" stroke-width="2"/>
+<line x1="451" y1="115" x2="526" y2="279" stroke="#bb4c37" stroke-width="3.5"/>
+<circle cx="489" cy="198" r="6.3" fill="#812d25" stroke="#fff" stroke-width="2"/>
+<text x="506" y="192" font-size="19" font-weight="700" fill="#8a3329">M</text>
+<text x="451" y="122" font-size="18" fill="#8a3329">b</text>
+<text x="588" y="260" font-size="17" fill="#296350">(Q)</text>
+<text x="480" y="295" text-anchor="middle" font-size="16" fill="#304f62">b ∩ (Q) = {M}</text>
+
+<rect x="646" y="56" width="293" height="270" rx="14" fill="#f5fbfb" stroke="#d0e0e6"/>
+<text x="792" y="84" font-size="19" font-weight="700" text-anchor="middle" fill="#24475e">3. Song song</text>
+<polygon points="674,246 874,246 916,180 716,180" fill="#d9f3e8" stroke="#3f826f" stroke-width="2"/>
+<line x1="708" y1="124" x2="881" y2="124" stroke="#1c65a1" stroke-width="3.5"/>
+<text x="793" y="115" font-size="18" text-anchor="middle" fill="#18568b">c</text>
+<text x="903" y="271" font-size="17" fill="#296350">(R)</text>
+<text x="792" y="295" text-anchor="middle" font-size="16" fill="#304f62">c ∩ (R) = ∅</text>
+</g></svg>
