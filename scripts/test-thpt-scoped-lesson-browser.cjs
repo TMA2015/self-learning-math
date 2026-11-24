@@ -44,14 +44,15 @@ async function goldenW1Parity(page,browser,width,rel){
  })),cases);
  const reference=await browser.newPage({viewport:page.viewportSize()});
  const ref14=await browser.newPage({viewport:page.viewportSize()});
+ const refB1=await browser.newPage({viewport:page.viewportSize()});
  try{
-  for(const [p,route] of [[reference,"/thpt-preview/sgk/chuong-iv/bai-10/"],[ref14,"/thpt-preview/sgk/chuong-v/bai-14/"]]){
+  for(const [p,route] of [[reference,"/thpt-preview/sgk/chuong-iv/bai-10/"],[ref14,"/thpt-preview/sgk/chuong-v/bai-14/"],[refB1,"/thpt-preview/sgk/lop-11/chuong-i/bai-1/"]]){
    assert((await p.goto(base+route,{waitUntil:"load",timeout:60000}))?.ok(),"Golden reference unavailable");
    await p.waitForFunction(()=>document.querySelector("article.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden"));
   }
   const tabs=page.locator("article .tabbed-labels > label");
   for(const scheme of ["default","slate"]){
-   for(const p of [reference,ref14,page]){
+   for(const p of [reference,ref14,refB1,page]){
     await p.evaluate(s=>document.body.setAttribute("data-md-color-scheme",s),scheme);
     await p.waitForTimeout(150);
    }
@@ -73,9 +74,36 @@ async function goldenW1Parity(page,browser,width,rel){
     await page.waitForFunction(i=>[...document.querySelectorAll("article .tabbed-labels > label")].filter(x=>x.classList.contains("slm-g10-active-tab")).length===1&&document.querySelectorAll("article .tabbed-labels > label")[i].classList.contains("slm-g10-active-tab"),i);
     assert.equal(await tabs.nth(i).evaluate(el=>el.getBoundingClientRect().height),44,rel+" active tab actual height");
    }
+   // SGK-REL-006: no vacuous PASS when tab4 is all exposed h3.
+   const panel=page.locator("article .tabbed-block").nth(3);
+   await refB1.locator("article .tabbed-labels > label").nth(3).click();
+   const referenceTip=refB1.locator("article .tabbed-block").nth(3).locator(":scope > details.tip").first();
+   const tips=panel.locator(":scope > details.tip");
+   const source=fs.readFileSync(path.join(root,rel),"utf8");
+   const expected=[...source.split('=== "Lỗi thường gặp"')[1].matchAll(/^    ### (4\.\d+\..+)$/gm)].map(x=>x[1]);
+   assert(expected.length>0,rel+" expected recovery headings");
+   assert.equal(await panel.locator(":scope > h3").count(),0,rel+" exposed tab4 headings");
+   assert.equal(await tips.count(),expected.length,rel+" one accordion per recovery");
+   assert.equal(await panel.locator(":scope > p > strong").filter({hasText:/^(Dấu hiệu:|Vì sao sai:|Cách sửa:)$/}).count(),0,rel+" exposed recovery body");
+   const styles=el=>{const t=getComputedStyle(el),s=getComputedStyle(el.querySelector("summary"));return [t.backgroundColor,t.color,t.borderColor,t.borderRadius,t.marginTop,t.marginBottom,t.fontSize,t.lineHeight,s.backgroundColor,s.color,s.fontFamily,s.fontSize,s.fontWeight,s.lineHeight,s.padding,s.borderRadius,s.minHeight,getComputedStyle(el.querySelector("summary"),"::before").content];};
+   const gold=await referenceTip.evaluate(styles);
+   for(let k=0;k<expected.length;k++){
+    const item=tips.nth(k),summary=item.locator(":scope > summary");
+    assert.equal((await summary.innerText()).trim(),expected[k],rel+" exact recovery title");
+    assert.equal(await item.evaluate(x=>x.open),false,rel+" accordion initially closed");
+    assert.deepEqual(await item.evaluate(styles),gold,rel+" B01 tab4 Golden computed parity");
+    assert.deepEqual(await item.locator(":scope > p > strong:first-child").allTextContents(),["Dấu hiệu:","Vì sao sai:","Cách sửa:"],rel+" original recovery paragraphs");
+    assert(!(await item.locator(":scope > p").first().isVisible()),rel+" closed body must be hidden");
+    await summary.click();
+    assert(await item.evaluate(x=>x.open),rel+" disclosure opens");
+    assert(await item.locator(":scope > p").first().isVisible(),rel+" expanded body visible");
+    await summary.click();
+    assert(!(await item.evaluate(x=>x.open)),rel+" disclosure closes");
+   }
+   console.log("PASS SGK_REL_006_TAB4 "+rel+" @"+width+" "+scheme+" "+expected.length+" closed/open/close, exact B01 computed CSS");
    console.log("PASS G10_G11_GOLDEN_COMPUTED_PARITY "+rel+" @"+width+" "+scheme+" "+Object.keys(c).filter(k=>c[k].length).join(","));
   }
- }finally{await reference.close();await ref14.close();}
+ }finally{await reference.close();await ref14.close();await refB1.close();}
 }
 
 async function execute(){

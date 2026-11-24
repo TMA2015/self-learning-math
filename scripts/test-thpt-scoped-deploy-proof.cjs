@@ -463,6 +463,26 @@ function verifyG11W1(previous,current,changed,expected){
  console.log("PASS #1039 W1 exact 3 learner + 3 SVG, source and assessment boundaries; no Academic/PED verdict");
 }
 
+const G11_W1_TAB4_HOTFIX_FILES=["hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs"];
+function verifyW1Tab4Hotfix(previous,current,changed,expected){
+ assert.deepEqual(changed.slice().sort(),G11_W1_TAB4_HOTFIX_FILES.slice().sort(),"REL006 exact diff");
+ assert.equal(previous,"f74465e7f2a6fda091c551f800f66ff172eed617","REL006 must be based on published W1");
+ assert.deepEqual(expected.slice().sort(),G11_W1_LESSONS.slice().sort());
+ const git=(args)=>cp.execFileSync("git",args,{cwd:root});
+ for(const [n,pr,commit,oldSha,newSha] of G11_W1_ROWS){
+  const file="docs/thpt-preview/sgk/lop-11/chuong-i/bai-"+n+".md";
+  assert.equal(blob(git(["show",previous+":"+file])),newSha);
+  assert.equal(blob(git(["show",current+":"+file])),newSha);
+ }
+ for(const [file,sha] of G11_W1_ASSETS)assert.equal(blob(git(["show",current+":"+file])),sha);
+ assert.equal(blob(git(["show",current+":"+G11_W1_HANDOFF])),G11_W1_HANDOFF_SHA);
+ const h="hooks/sgk_golden_first_paint.py";
+ const old=git(["show",previous+":"+h]).toString("utf8"),now=git(["show",current+":"+h]).toString("utf8");
+ const expectedHook=old.replace("def on_post_page(output, page, config):","\n# SGK-REL-006: transform only the fourth tab of the three exact W1 pages.\n# Preserve original h3 anchor ID and the complete rendered content bytes.\n_W1_MISTAKE_COUNTS = {2: 5, 3: 6, 4: 6}\ndef _w1_mistake_disclosures(html: str, number: int) -> str:\n    heading = '<h2 class=\"thpt-g10-section-heading\">' + _HEADINGS[3] + '</h2>'\n    if html.count(heading) != 1:\n        raise RuntimeError(\"W1 tab4 heading changed\")\n    start = html.index(heading) + len(heading)\n    foot = re.search(r'<p>\\s*<p class=\"thpt-r4-footnote\">|<p class=\"thpt-r4-footnote\">', html[start:])\n    if foot is None:\n        raise RuntimeError(\"W1 tab4 source note missing\")\n    end = start + foot.start()\n    body = html[start:end]\n    pattern = re.compile(r'<h3 id=\"([^\"]+)\">(4\\.\\d+\\.[^<]+)</h3>\\s*((?:<p>[\\s\\S]*?</p>\\s*){3})')\n    matches = list(pattern.finditer(body))\n    if len(matches) != _W1_MISTAKE_COUNTS[number] or pattern.sub(\"\", body).strip():\n        raise RuntimeError(\"W1 tab4 unexpected source shape: B\" + str(number))\n    for i, item in enumerate(matches, 1):\n        if not item[2].startswith(f\"4.{i}. \") or re.findall(r'<p><strong>([^<]+)</strong>', item[3])[:3] != [\"Dấu hiệu:\", \"Vì sao sai:\", \"Cách sửa:\"]:\n            raise RuntimeError(\"W1 tab4 missing original recovery labels\")\n    def disclosure(item):\n        return '<details class=\"tip\" id=\"' + item[1] + '\">\\n<summary>' + item[2] + '</summary>\\n' + item[3] + '</details>\\n'\n    return html[:start] + '\\n<p>Mở từng mục để xem dấu hiệu, vì sao sai và cách sửa.</p>\\n' + pattern.sub(disclosure, body) + html[end:]\n\n"+"def on_post_page(output, page, config):").replace("        # #1039 W1: only the three exact approved Golden Knowledge routes.","        rendered = _w1_mistake_disclosures(rendered, int(uri.rsplit('-', 1)[1][:-3]))\n        # #1039 W1: only the three exact approved Golden Knowledge routes.");
+ assert.equal(now,expectedHook,"REL006 no changes outside the exact W1 tab4 hook");
+ console.log("PASS SGK_REL_006: signed learner/asset/receipt blobs unchanged; exact tab4 render delta only");
+}
+
 function main(){
  const previous=process.env.BEFORE_SHA,current=process.env.HEAD_SHA;
  assert(sha(previous)&&sha(current),"Full nonzero main push before/head commits required");
@@ -470,6 +490,9 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.length===G11_W1_TAB4_HOTFIX_FILES.length&&changed.every(x=>G11_W1_TAB4_HOTFIX_FILES.includes(x))){
+  verifyW1Tab4Hotfix(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
+ }
  if(changed.includes(G11_W1_HANDOFF)){
   verifyG11W1(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));
   return;
