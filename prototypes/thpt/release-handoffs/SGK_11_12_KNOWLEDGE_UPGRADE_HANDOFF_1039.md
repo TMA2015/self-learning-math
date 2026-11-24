@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 34/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B02, còn B03–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 35/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B03, còn B04–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B02 CONTENT_READY; B03–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B03 CONTENT_READY; B04–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -47,7 +47,8 @@
 | 11 | B33 | [#1068](https://github.com/TMA2015/self-learning-math/pull/1068) | CONTENT_READY — đã bàn giao |
 | 12 | B01 | [#1069](https://github.com/TMA2015/self-learning-math/pull/1069) | CONTENT_READY — đã bàn giao |
 | 12 | B02 | [#1070](https://github.com/TMA2015/self-learning-math/pull/1070) | CONTENT_READY — đã bàn giao |
-| 12 | B03–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B03 | [#1071](https://github.com/TMA2015/self-learning-math/pull/1071) | CONTENT_READY — đã bàn giao |
+| 12 | B04–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -166,6 +167,14 @@ Kế thừa Academic/PED PASS của nhóm B10–B14 theo checkpoint review tại
 | PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên | Asset delta |
 |---|---|---|---|---|---|
 | [#1070](https://github.com/TMA2015/self-learning-math/pull/1070) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md` | `52fc9557ea52d85afef734a43889e5ae1e21cc68` | `d6e517a980ec9259345285964f4c42767faa6122` | `fc8dd27dc1eddb605edfd62fc62a8a5c8ba84d54` | `docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg` từ `057991020c0f9349f160047cd87ae35ce03a87ef` sang `cd8c5bea9b17bb89aa0edcd40f49dd317d834c86`. |
+
+### Toán 12 B03 — Đường tiệm cận của đồ thị hàm số (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đã đọc S1 văn bản [SGK KNTT Toán 12 tập 1 trang in 20–25](https://intracomuni.edu.vn/wp-content/uploads/2026/11/sach-giao-khoa-toan-12-tap-1-ket-noi-tri-thuc-voi-cuoc-song.pdf), 3 mục ngang/đứng/xiên, HĐ1–3, chú ý hệ số a,b, ví dụ và bài tập 1.16–1.20. Screenshot nguồn cache miss, không nhận đã kiểm ảnh gốc. Đối chiếu mẫu G10 B22. Bốn tab Golden, ba mục đối ứng, ba Vận dụng khác ví dụ, Đối chiếu/Kiểm lỗi, 10 ví dụ và 7 lỗi thực chất. Lời giảng giải thích khoảng cách đến đường thẳng, ý nghĩa từng giới hạn, điểm khuyết khác tiệm cận đứng, hai phía có thể khác nhau, hệ số a,b cùng đầu vô cực, đồ thị có thể cắt tiệm cận. 25 nhóm kiểm toán/structure đạt: hai phép chia xiên, dấu giới hạn một phía, căn và trị tuyệt đối, mô hình chi phí/chu vi, giao điểm; SVG cũ đối chiếu tọa độ với hàm, SVG xiên mới kiểm cả hai nhánh và chênh tung độ tại 1,5. Diff 2 file đúng phạm vi. Không còn lỗi thực chất đã phát hiện.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên | Asset delta |
+|---|---|---|---|---|---|
+| [#1071](https://github.com/TMA2015/self-learning-math/pull/1071) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md` | `11ecbc31551892186edde669bb3092d1843ea754` | `02f4b8a446e89d824b7b08c833fc306ca9db02c6` | `e05c5c287381f018d5262f17ad23b890d1b40e6e` | Thêm `docs/assets/images/thpt/G12_B03_FIG02_OBLIQUE_AUTHORING_20261124.svg`, blob `62d2cf3e7604d331ea26ac7b49f863ae8793d97a`; SVG ngang/đứng giữ blob `802f01f5b8dce392e3a064a54efe33ae1aea44fc`. |
 
 ## Cách cập nhật
 
