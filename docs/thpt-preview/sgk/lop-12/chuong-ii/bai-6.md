@@ -59,7 +59,7 @@
 
     Phép cộng có tính giao hoán, kết hợp như trong mặt phẳng. Ta được phép đổi thứ tự các vectơ trong tổng và gom các cặp thích hợp. Cộng vectơ-không không làm thay đổi vectơ. Nếu một vật chịu nhiều lực, tổng các vectơ lực biểu diễn hợp lực; hợp lực bằng \(\vec0\) nghĩa là các lực cân bằng, không phải từng lực đều bằng không.
 
-    Muốn trừ \(\vec b\) khỏi \(\vec a\), ta cộng \(\vec a\) với vectơ đối \(-\vec b\): giữ độ dài của \(\vec b\) nhưng đảo hướng. Chẳng hạn \(-\overrightarrow{AB}=\overrightarrow{BA}\), và hai vectơ đối có tổng \(\vec0\). Nếu \(\overrightarrow{OA}=\vec a,\overrightarrow{OB}=\vec b\), hiệu \(\vec b-\vec a\) là \(\overrightarrow{AB}\), bởi \(\overrightarrow{OA}+\overrightarrow{AB}=\overrightarrow{OB}\). Khi hai mũi tên có chung gốc, **hiệu nối đầu mút của vectơ bị trừ tới đầu mút của vectơ đứng trước dấu trừ**.
+    Muốn trừ \(\vec b\) khỏi \(\vec a\), ta cộng \(\vec a\) với vectơ đối \(-\vec b\): giữ độ dài của \(\vec b\) nhưng đảo hướng. Chẳng hạn \(-\overrightarrow{AB}=\overrightarrow{BA}\), và hai vectơ đối có tổng \(\vec0\). Nếu \(\overrightarrow{OA}=\vec a,\overrightarrow{OB}=\vec b\), hiệu \(\vec b-\vec a\) là \(\overrightarrow{AB}\), bởi \(\overrightarrow{OA}+\overrightarrow{AB}=\overrightarrow{OB}\). Khi hai mũi tên có chung gốc, **hiệu nối đầu mút của vectơ đứng sau dấu trừ tới đầu mút của vectơ đứng trước dấu trừ**.
 
     **Vận dụng.** Trong hình hộp \(ABCD.A'B'C'D'\), rút gọn \(\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BB'}\), và \(\overrightarrow{AC'}-\overrightarrow{AB}\).
 
@@ -87,7 +87,7 @@
 
     Công thức tương tự cho trọng tâm \(G\) của tam giác \(ABC\): \(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}=3\overrightarrow{OG}\). Để thấy vì sao, lấy \(M\) là trung điểm \(BC\). Trên trung tuyến, \(\overrightarrow{AG}=\frac23\overrightarrow{AM}\), nên \(\overrightarrow{GA}=-2\overrightarrow{GM}\); đồng thời \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\). Tổng ba vectơ xuất phát từ \(G\) bằng \(\vec0\). Chèn gốc \(O\) vào mỗi vectơ cho hệ thức đã nêu.
 
-    Trong tứ diện \(ABCD\), gọi \(G\) là trọng tâm mặt \(BCD\). Theo hệ thức trọng tâm tam giác, \(\overrightarrow{AB}+\overrightarrow{AC}+\overrightarrow{AD}=3\overrightarrow{AG}\). Nếu chọn \(I\) trên \(AG\) sao cho \(AI=3IG\), ta có \(\overrightarrow{IA}=-3\overrightarrow{IG}\). Do \(\overrightarrow{IB}+\overrightarrow{IC}+\overrightarrow{ID}=3\overrightarrow{IG}\), suy ra tổng bốn vectơ từ \(I\) đến bốn đỉnh bằng \(\vec0\). Điểm \(I\) được gọi là trọng tâm tứ diện.
+    Trong tứ diện \(ABCD\), gọi \(G\) là trọng tâm mặt \(BCD\). Theo hệ thức trọng tâm tam giác, \(\overrightarrow{AB}+\overrightarrow{AC}+\overrightarrow{AD}=3\overrightarrow{AG}\). Nếu chọn \(I\) trên \(AG\) sao cho \(AI=3IG\), ta có \(\overrightarrow{IA}=-3\overrightarrow{IG}\). Do \(\overrightarrow{IB}+\overrightarrow{IC}+\overrightarrow{ID}=3\overrightarrow{IG}\), suy ra tổng bốn vectơ từ \(I\) đến bốn đỉnh bằng \(\vec0\). Điểm \(I\) được gọi là trọng tâm tứ diện. Hệ thức tổng bằng \(\vec0\) xác định duy nhất điểm này: nếu một điểm \(J\) cũng có tổng bốn vectơ bằng \(\vec0\), chèn \(I\) vào từng vectơ từ \(J\) sẽ cho \(4\overrightarrow{JI}=\vec0\), nên \(J=I\).
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B06_FIG02_TETRA_CENTROID_AUTHORING_20261124.svg" alt="Tứ diện ABCD, G là trọng tâm mặt BCD, I chia AG thành AI bằng ba lần IG"><figcaption>Trước hết tìm trung điểm \(N\) của \(CD\), rồi \(G\) trên trung tuyến \(BN\) với \(BG=2GN\). Sau đó lấy \(I\) trên \(AG\) với \(AI=3IG\). Trọng tâm tam giác chia trung tuyến theo tỉ số \(2:1\); trọng tâm tứ diện chia đoạn nối đỉnh với trọng tâm mặt đối diện theo tỉ số \(3:1\).</figcaption></figure>
 
@@ -306,7 +306,7 @@
 
     **Sai ở đâu:** \(\overrightarrow{OB}-\overrightarrow{OA}=\overrightarrow{BA}\).
 
-    **Vì sao sai:** Hiệu nối từ đầu mút của vectơ bị trừ tới đầu mút của vectơ đứng trước dấu trừ.
+    **Vì sao sai:** Hiệu nối từ đầu mút của vectơ đứng sau dấu trừ tới đầu mút của vectơ đứng trước dấu trừ.
 
     **Cách sửa:** Viết \(\overrightarrow{OA}+\overrightarrow{AB}=\overrightarrow{OB}\) rồi chuyển vế.
 
