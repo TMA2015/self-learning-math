@@ -580,6 +580,9 @@ const G11_W5_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/t
 const G11_W5_FILES=new Set(["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md","docs/assets/images/thpt/G11_B20_DECREASING_EXP_LOG_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG11W5(files){return files.length===G11_W5_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W5_FILES.has(p));}
 
+const G12_W9_LESSONS=["docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md","docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md","docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md"];
+const G12_W9_FILES=new Set(["docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md","docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md","docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md","docs/assets/images/thpt/G12_B06_FIG02_TETRA_CENTROID_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B06_FIG03_VECTOR_ANGLE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B07_FIG02_DISPLACEMENT_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B08_FIG02_PYRAMID_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B08_FIG03_ROOF_AUTHORING_20261124.svg","docs/assets/images/thpt/FIG-G12-CHII-B07-R00.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
+function isG12W9(files){return files.length===G12_W9_FILES.size&&new Set(files).size===files.length&&files.every(p=>G12_W9_FILES.has(p));}
 const G12_W8_LESSONS=["docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md"];
 const G12_W8_FILES=new Set(["docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-4.md","docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md","docs/assets/images/thpt/G12_B01_FIG02_READ_DERIVATIVE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B03_FIG02_OBLIQUE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG03_QUADRATIC_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG04_CUBIC_MONOTONE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG05_OBLIQUE_EXTREMA_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG06_OBLIQUE_MONOTONE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B04_FIG07_CHECK_QUADRATIC_20261124.svg","docs/assets/images/thpt/G12_B04_FIG08_CHECK_CUBIC_20261124.svg","docs/assets/images/thpt/G12_B04_FIG09_CHECK_RATIONAL_20261124.svg","docs/assets/images/thpt/G12_B04_FIG10_CHECK_OBLIQUE_20261124.svg","docs/assets/images/thpt/G12_B05_FIG02_BOX_NET_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B05_FIG03_TRAVEL_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B05_FIG04_POLLUTION_COST_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B05_FIG05_PROFIT_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B02_FIG01_GLOBAL_MIN_MAX_CLOSED_INTERVAL_R00.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG12W8(files){return files.length===G12_W8_FILES.size&&new Set(files).size===files.length&&files.every(p=>G12_W8_FILES.has(p));}
@@ -596,6 +599,7 @@ function classify(paths,{manual=false}={}){
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isG12W9(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W9_LESSONS.join(","),reason:"OWNER_1039_W9_EXACT_SOURCE_AND_BROWSER"};
  if(isG12W8(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W8_LESSONS.join(","),reason:"OWNER_1039_W8_EXACT_SOURCE_AND_BROWSER"};
  if(isG11W7(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G11_W7_LESSONS.join(","),reason:"OWNER_1039_W7_EXACT_SOURCE_AND_BROWSER"};
  if(isG11W6(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G11_W6_LESSONS.join(","),reason:"OWNER_1039_W6_EXACT_SOURCE_AND_BROWSER"};
@@ -742,6 +746,13 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const g12W9=[...G12_W9_FILES];
+ assert.equal(classify(g12W9).impact,"SCOPED_LESSON");
+ assert.equal(classify(g12W9).changed_lessons,G12_W9_LESSONS.join(","));
+ assert.equal(classify(g12W9.slice(1)).impact,"FULL");
+ assert.equal(classify([...g12W9,"docs/thpt-preview/sgk/lop-12/chuong-ii/luyen-tap.md"]).impact,"FULL");
+ assert.equal(classify([...g12W9,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
+ assert.equal(classify(g12W9,{manual:true}).impact,"FULL");
  const g12W8=[...G12_W8_FILES];
  assert.equal(classify(g12W8).impact,"SCOPED_LESSON");
  assert.equal(classify(g12W8).changed_lessons,G12_W8_LESSONS.join(","));
