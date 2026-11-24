@@ -20,9 +20,11 @@
     Với hàm \(f\) liên tục, không âm trên \([a;b]\), miền giới hạn bởi đồ thị \(y=f(x)\), trục hoành và hai đường thẳng \(x=a,x=b\) được gọi là hình thang cong (\(a<b\)). Tên gọi này bao gồm cả trường hợp đường biên phía trên là đoạn thẳng. Nếu \(f\) âm trên một phần đoạn, ta không thể gọi toàn miền ấy là hình thang cong theo định nghĩa này.
 
     Hãy bắt đầu bằng \(f(x)=x+2\) trên \([0;3]\). Với mỗi \(t\in[0;3]\), gọi \(S(t)\) là diện tích từ \(x=0\) đến \(x=t\). Hình thang có hai cạnh song song dài \(2\) và \(t+2\), cách nhau \(t\), nên
+
     \[
     S(t)=\frac{2+(t+2)}2t=2t+\frac{t^2}{2}.
     \]
+
     Thật thú vị: \(S'(t)=2+t=f(t)\). Như vậy hàm diện tích là một nguyên hàm của hàm cho đường biên phía trên. \(S(0)=0\); diện tích cần tìm là \(S(3)=21/2\).
 
     Liệu kết quả này còn đúng khi đường biên thật sự cong? Xét \(f(t)=t^2\) trên \([1;2]\), gọi \(S(x)\) là diện tích từ 1 đến \(x\). Khi dịch cận phải từ \(x\) tới \(x+h\), với \(h>0\), diện tích tăng thêm chính là phần nằm giữa hai cận này.
@@ -30,15 +32,19 @@
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg" alt="Dải diện tích dưới y=t bình phương từ x đến x+h được kẹp giữa hai hình chữ nhật có chiều cao x bình phương và (x+h) bình phương"><figcaption>Phần xanh và cam giữa \(x\) và \(x+h\) là diện tích tăng thêm. Hình chữ nhật thấp nằm dưới đường cong, hình chữ nhật cao bao trùm dải ấy. Trục ngang được cắt bớt để nhìn rõ đoạn từ 1 đến 2.</figcaption></figure>
 
     Vì \(t^2\) tăng trên \([1;2]\), hai hình chữ nhật có cùng chiều rộng \(h\) cho
+
     \[
     hx^2\le S(x+h)-S(x)\le h(x+h)^2.
     \]
+
     Chia cho \(h>0\), ta có \(x^2\le [S(x+h)-S(x)]/h\le (x+h)^2\). Khi \(h\to0^+\), hai biên đều tiến tới \(x^2\). Nếu \(h<0\), xét dải từ \(x+h\) đến \(x\), chia diện tích dải ấy cho \(-h>0\); thương sai phân tương tự nằm giữa \((x+h)^2\) và \(x^2\). Khi \(h\to0^-\), ta cũng nhận \(x^2\).
 
     Do đó \(S'(x)=x^2\), kể cả đạo hàm một phía ở hai đầu. Theo Bài 11,
+
     \[
     S(x)=\frac{x^3}{3}+C.
     \]
+
     Vì \(S(1)=0\), \(C=-1/3\). Diện tích toàn phần bằng \(S(2)=8/3-1/3=7/3\). Nếu chọn một nguyên hàm bất kì \(F(x)=x^3/3+C\), hiệu \(F(2)-F(1)\) vẫn là \(7/3\).
 
     SGK tổng quát hóa kết quả: diện tích hình thang cong dưới hàm liên tục không âm \(f\) bằng \(F(b)-F(a)\), với \(F\) là một nguyên hàm của \(f\). Với hàm liên tục không nhất thiết đồng biến, lập luận kẹp tương tự dùng giá trị nhỏ nhất và lớn nhất trên dải hẹp; khi dải co lại, tính liên tục làm hai giá trị tiến về cùng \(f(x)\).
@@ -59,18 +65,22 @@
 
     <!-- OUTCOME_ID: G12-CHIV-B12-O01 -->
     Với hàm liên tục bất kì trên \([a;b]\), kể cả hàm nhận giá trị âm, ta vẫn có thể tính hiệu \(F(b)-F(a)\). Hiệu ấy được gọi là tích phân từ \(a\) đến \(b\) của \(f\), viết
+
     \[
     \int_a^b f(x)\,dx=F(b)-F(a)=\left.F(x)\right|_a^b.
     \]
+
     Vì hai nguyên hàm \(F,G\) trên cùng đoạn chỉ khác một hằng số, \(G=F+C\), nên \(G(b)-G(a)=F(b)-F(a)\). Tích phân không phụ thuộc vào việc chọn nguyên hàm nào. Đây là lí do kết quả tích phân là **một số**, không có \(+C\).
 
     Trong kí hiệu trên, \(a\) là cận dưới, \(b\) là cận trên, \(f(x)\) là hàm dưới dấu tích phân. \(x\) chỉ là biến lấy tích phân: viết \(t\) thay cho \(x\) đồng thời đổi \(dx\) thành \(dt\) không làm đổi kết quả nếu giữ cùng hàm và cận.
 
     Chẳng hạn,
+
     \[
     \int_1^3 (2x+1)\,dx=\left.(x^2+x)\right|_1^3
     =(9+3)-(1+1)=10.
     \]
+
     Hãy đặt ngoặc quanh giá trị ở cận dưới. Nếu hàm chứa nhiều hạng tử, quên ngoặc thường làm sai dấu.
 
     <!-- OUTCOME_ID: G12-CHIV-B12-O05 -->
@@ -93,11 +103,13 @@
 
     <!-- OUTCOME_ID: G12-CHIV-B12-O06 -->
     Để tính bằng nguyên hàm, trước hết kiểm hàm liên tục trên đoạn lấy tích phân. Sau đó tìm một nguyên hàm bằng bảng ở Bài 11, thay cận trên rồi trừ cận dưới. Ví dụ
+
     \[
     \int_0^{\pi/3}\cos x\,dx=\sin(\pi/3)-\sin0=\sqrt3/2,
     \quad
     \int_0^1 3^x\,dx=\frac{3-1}{\ln3}.
     \]
+
     Với hàm \(1/x\) trên \([-1;1]\), không áp dụng được công thức hiệu nguyên hàm vì hàm không xác định tại 0. Hai cận khác 0 chưa đủ: phải kiểm cả đoạn nằm giữa chúng.
 
     Đôi khi tính bằng hình học nhanh hơn tìm nguyên hàm. Hàm \(y=\sqrt{16-x^2}\) trên \([0;4]\) biểu diễn một phần tư đường tròn bán kính 4 ở góc phần tư thứ nhất, bởi \(x^2+y^2=16,\ y\ge0\). Vậy tích phân bằng diện tích \(16\pi/4=4\pi\). Không cần tìm công thức nguyên hàm mới.
@@ -116,20 +128,24 @@
 
     <!-- OUTCOME_ID: G12-CHIV-B12-O02 -->
     Nếu \(F'=f,\ G'=g\), thì \((kF)'=kf\) và \((F\pm G)'=f\pm g\). Lấy hiệu giá trị ở hai cận, ta thu được các tính chất:
+
     \[
     \int_a^b kf(x)\,dx=k\int_a^b f(x)\,dx,
     \qquad
     \int_a^b(f\pm g)\,dx=\int_a^b f\,dx\pm\int_a^b g\,dx.
     \]
+
     Khác với họ nguyên hàm, công thức đưa hệ số ra ngoài đúng cả khi \(k=0\), vì tích phân là một số. Hai hàm cần được xét trên cùng đoạn; không tách tích hoặc thương thành tích hoặc thương của các tích phân.
 
     Ví dụ, nếu biết \(\int_1^4 f(x)\,dx=6\) và \(\int_1^4g(x)\,dx=-2\), ta tính được \(\int_1^4(3f-2g)\,dx=18+4=22\) mà không cần biết biểu thức của \(f,g\).
 
     <!-- OUTCOME_ID: G12-CHIV-B12-O03 -->
     Khi ghép các chặng liên tiếp, tích phân của toàn đoạn bằng tổng tích phân từng chặng. Thật vậy, nếu \(a<c<b\),
+
     \[
     [F(c)-F(a)]+[F(b)-F(c)]=F(b)-F(a).
     \]
+
     Khi hai cận bằng nhau, hiệu bằng 0; khi đảo cận, hiệu đổi dấu. Ví dụ \(\int_3^1 2x\,dx=1-9=-8\), mặc dù \(2x>0\) trên \([1;3]\). Cận dưới và cận trên là tên vị trí viết trong kí hiệu, không có nghĩa số viết phía dưới luôn nhỏ hơn số viết phía trên.
 
     <!-- FIRST_TRY_ID: B12-T02 -->
@@ -144,6 +160,7 @@
         Nếu kết quả thứ hai là \(-6\), em đã quên đảo cận. Hãy viết \(\int_5^0 f=-\int_0^5 f\) trước khi nhân 2.
 
     Tính chất ghép đoạn đặc biệt hữu ích với giá trị tuyệt đối. Chẳng hạn, để tính \(\int_0^4 |x-1|\,dx\), nhận thấy \(x-1\) đổi dấu tại 1. Do đó
+
     \[
     \begin{aligned}
     \int_0^4|x-1|\,dx
@@ -151,13 +168,16 @@
     &=\frac12+\frac92=5.
     \end{aligned}
     \]
+
     Mỗi tích phân trên đoạn con dùng đúng biểu thức của giá trị tuyệt đối tại đó. Không cần chia đoạn tại nghiệm nằm ngoài cận. Nếu nghiệm nằm đúng cận, không tạo thêm đoạn có độ dài dương.
 
     <!-- OUTCOME_ID: G12-CHIV-B12-O07 -->
     **Lượng biến đổi tích lũy.** Nếu \(Q'(t)=q(t)\) liên tục, thì
+
     \[
     Q(b)-Q(a)=\int_a^b q(t)\,dt.
     \]
+
     Trở lại bài phanh xe: \(v(t)=18-6t\), xe dừng lúc \(t=3\); trên \([0;3]\), \(v(t)\ge0\). Quãng đường bằng \(\int_0^3(18-6t)\,dt=54-27=27\) m, đúng kết quả hình học. Không dùng công thức vận tốc này sau khi xe đã dừng.
 
     Nếu vật chuyển động thẳng và vận tốc đổi dấu, tích phân vận tốc cho độ dịch chuyển có dấu, còn tích phân tốc độ \(|v|\) cho tổng quãng đường. Một vật đi 3 m rồi lùi 3 m có độ dịch chuyển 0 nhưng quãng đường 6 m. Vì vậy khi tính quãng đường phải xác định thời điểm đổi chiều, chia khoảng nếu cần.
@@ -177,9 +197,11 @@
         Không lấy \(|0|=0\) để kết luận lượng nước chưa từng thay đổi. Đọc dấu của \(q\) theo từng giai đoạn và phân biệt lượng thay đổi với giá trị cuối.
 
     **Giá trị trung bình của hàm số.** Nhiệt độ thay đổi liên tục trong ngày, không thể chỉ lấy nhiệt độ đầu và cuối chia đôi nếu quy luật biến đổi không tuyến tính. Nếu một hàm liên tục \(f\) trên \([a;b]\), \(a<b\), giá trị trung bình là
+
     \[
     \overline f=\frac{1}{b-a}\int_a^b f(x)\,dx.
     \]
+
     Có thể hình dung thay đồ thị bởi một đường ngang có chiều cao \(\overline f\) để tích lũy có dấu không đổi trên cùng đoạn. Đơn vị của \(\overline f\) là đơn vị của \(f\), vì đã chia lượng tích lũy cho độ dài đoạn.
 
     **Vận dụng.** Nhiệt độ (°C) sau \(t\) giờ kể từ 6 giờ sáng được mô hình hóa bởi \(T(t)=18+t^2/4\), \(0\le t\le4\). Tính nhiệt độ trung bình từ 6 đến 10 giờ.
@@ -190,6 +212,7 @@
         \overline T=\frac14\left[18t+\frac{t^3}{12}\right]_0^4
         =18+\frac43=\frac{58}{3}\approx19{,}33^\circ\mathrm C.
         \]
+
         Kết quả nằm giữa nhiệt độ nhỏ nhất 18 và lớn nhất 22. Trung bình cộng hai giá trị đầu mút là 20, không phải giá trị trung bình của hàm bậc hai này.
 
     ??? tip "Kiểm lỗi"

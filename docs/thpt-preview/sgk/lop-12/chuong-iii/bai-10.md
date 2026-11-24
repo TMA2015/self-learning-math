@@ -26,9 +26,11 @@
     Ta chọn trung điểm mỗi nhóm làm giá trị đại diện như đã học ở lớp 11. Để ước lượng, xem hai lượt trong nhóm đầu như hai giá trị 5, năm lượt ở nhóm giữa như năm giá trị 15 và ba lượt ở nhóm cuối như ba giá trị 25. Đây là một mẫu thay thế dùng cho tính toán, không phải khôi phục chính xác dữ liệu ban đầu.
 
     Có \(n=2+5+3=10\) lượt. Trung bình ghép nhóm là
+
     \[
     \overline{x}=\frac{2\cdot5+5\cdot15+3\cdot25}{10}=16\text{ phút}.
     \]
+
     Không cộng ba trung điểm rồi chia 3, vì ba nhóm có số lượt khác nhau.
 
     <!-- OUTCOME_ID: G12-CHIII-B10-O02 -->
@@ -43,9 +45,11 @@
     | Tổng | 10 | | | 490 |
 
     Chia tổng 490 cho **10 quan sát**, không phải 3 nhóm:
+
     \[
     s^2=\frac{490}{10}=49\text{ phút}^2.
     \]
+
     Vì mọi bình phương đều không âm, phương sai không âm. Những giá trị ở xa trung bình có bình phương độ lệch lớn; nhóm đông người đóng góp nhiều lần vào tổng này.
 
     <!-- OUTCOME_ID: G12-CHIII-B10-O04 -->
@@ -66,7 +70,9 @@
         \[
         \overline{x}=\frac{3\cdot12+4\cdot16+20}{8}=15.
         \]
+
         Các độ lệch tương ứng là \(-3,1,5\), nên
+
         \[
         s^2=\frac{3\cdot9+4\cdot1+1\cdot25}{8}=7\text{ giây}^2,
         \qquad s=\sqrt7\approx2{,}65\text{ giây}.
@@ -131,6 +137,7 @@
     s_A^2=\frac{1\cdot400+2\cdot100+8\cdot0+2\cdot100+1\cdot400}{14}
     =\frac{1200}{14},
     \]
+
     \[
     s_B^2=\frac{4\cdot400+2\cdot100+2\cdot0+2\cdot100+4\cdot400}{14}
     =\frac{3600}{14}.
@@ -179,10 +186,12 @@
     **Ý nghĩa:** Phương sai và độ lệch chuẩn đo độ phân tán của mẫu quanh số trung bình. Trên cùng thang đo, giá trị càng lớn thì dữ liệu càng phân tán theo thước đo này. Với mẫu ghép nhóm, kết quả là xấp xỉ của số đặc trưng tương ứng của mẫu gốc; không có quy tắc luôn lớn hơn hoặc luôn nhỏ hơn phương sai gốc. Nếu mọi nhóm có dữ liệu cùng một giá trị đại diện thì \(s=0\); điều đó không khẳng định mọi quan sát gốc bằng nhau.
 
     **Chú ý của SGK:** Khi \(n>1\), người ta còn dùng
+
     \[
     \widehat{s}^{\,2}=\frac{\sum_{i=1}^{k}m_i(x_i-\overline{x})^2}{n-1},
     \qquad \widehat{s}=\sqrt{\widehat{s}^{\,2}}.
     \]
+
     Hai đại lượng có dấu mũ khác với \(s^2,s\) theo định nghĩa chính. Khi đề yêu cầu tính phương sai và độ lệch chuẩn theo định nghĩa ở bài này, chia cho \(n\), không tự thay bằng \(n-1\). Công thức có dấu mũ không xác định khi \(n=1\).
 
     ### 2.2. Sử dụng phương sai, độ lệch chuẩn đo độ rủi ro

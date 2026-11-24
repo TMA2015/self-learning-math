@@ -43,9 +43,11 @@
     Ví dụ \(A(-2;1;5),B(4;3;-1)\). Hoành độ trung điểm là \((-2+4)/2=1\), tung độ là \(2\), cao độ là \(2\). Vậy \(M(1;2;2)\). Kiểm lại: \(\overrightarrow{AM}=(3;1;-3)=\overrightarrow{MB}\). Ta không lấy trung bình hai khoảng cách \(OA,OB\), bởi chúng chỉ là hai số đo độ dài, không xác định được vị trí trung điểm.
 
     Với tam giác \(ABC\), trọng tâm \(G\) thỏa \(\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\vec0\). Tương tự,
+
     \[
     3\overrightarrow{OG}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}.
     \]
+
     Vì thế tọa độ trọng tâm là trung bình cộng từng thành phần của ba đỉnh. Công thức cũng dùng theo chiều ngược: nếu biết trọng tâm và hai đỉnh, có thể tìm đỉnh còn lại bằng cách chuyển vế đẳng thức vectơ.
 
     **Vận dụng.** Tam giác \(ABC\) có \(A(1;3;-2),B(5;-1;4)\), trọng tâm \(G(2;2;1)\). Tìm trung điểm \(M\) của \(AB\) và điểm \(C\).
@@ -67,12 +69,15 @@
     Trong hệ \(Oxyz\), ba vectơ đơn vị có độ dài \(1\), đôi một vuông góc. Vì vậy \(\vec i\cdot\vec i=\vec j\cdot\vec j=\vec k\cdot\vec k=1\), còn các tích vô hướng giữa hai vectơ đơn vị khác nhau đều bằng \(0\).
 
     Xét \(\vec a=x\vec i+y\vec j+z\vec k\). Chẳng hạn,
+
     \[
     \vec a\cdot\vec i=x(\vec i\cdot\vec i)+y(\vec j\cdot\vec i)+z(\vec k\cdot\vec i)=x.
     \]
+
     Tương tự \(\vec a\cdot\vec j=y,\ \vec a\cdot\vec k=z\). Như vậy tích với từng vectơ đơn vị giúp lấy đúng thành phần theo trục ấy.
 
     Với \(\vec b=x'\vec i+y'\vec j+z'\vec k\), dùng tính phân phối:
+
     \[
     \begin{aligned}
     \vec a\cdot\vec b
@@ -80,6 +85,7 @@
     &=xx'+yy'+zz'.
     \end{aligned}
     \]
+
     Đây là lý do ta nhân các tọa độ tương ứng rồi cộng ba tích; các tích chéo biến mất do tính vuông góc. Công thức dựa vào hệ trục vuông góc với vectơ đơn vị, không tùy ý dùng cho hệ trục xiên.
 
     Chẳng hạn \(\vec a=(2;1;-2)\), \(\vec b=(1;2;2)\). Ta có \(\vec a\cdot\vec b=2+2-4=0\). Hai vectơ khác không nên chúng vuông góc. Còn \(\vec a\cdot\vec a=4+1+4=9\), tức \(|\vec a|^2=9\), nên \(|\vec a|=3\).
@@ -89,9 +95,11 @@
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G12-CHII-B08-R00.svg" alt="Sơ đồ vectơ AB và ba độ thay đổi theo các trục, minh họa cuối trừ đầu"><figcaption>Ba mũi tên thành phần ghép lại thành vectơ \(\overrightarrow{AB}\). Sơ đồ không dùng để đo chiều dài. Hãy lấy đúng ba hiệu tọa độ rồi mới tính căn tổng bình phương để tìm \(AB\).</figcaption></figure>
 
     Khi cần tìm góc giữa hai vectơ khác không, kết hợp công thức tích vô hướng ở Bài 6 với độ dài vừa tìm:
+
     \[
     \cos(\vec a,\vec b)=\frac{\vec a\cdot\vec b}{|\vec a|\,|\vec b|}.
     \]
+
     Mẫu số dương. Vì vậy dấu tích vô hướng quyết định góc nhọn, vuông hay tù; hai trường hợp biên \(0^\circ,180^\circ\) ứng với hai vectơ cùng hướng, ngược hướng. Muốn tính góc \(\widehat{BAC}\), phải chọn hai vectơ cùng xuất phát tại \(A\): \(\overrightarrow{AB},\overrightarrow{AC}\). Nếu chọn \(\overrightarrow{BA}\) thay \(\overrightarrow{AB}\), em có thể nhận góc bù của góc cần tìm.
 
     Hãy xét hình chóp có đáy \(ABCD\) là hình chữ nhật, \(SA\perp(ABCD)\), \(AB=4,AD=3,SA=3\). Các cạnh \(AB,AD,AS\) cho ba phương vuông góc; chọn \(A=O\), trục dương theo ba cạnh đó. Nhờ cách chọn này, tọa độ các đỉnh được xác định trực tiếp từ độ dài cạnh.
@@ -99,9 +107,11 @@
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B08_FIG02_PYRAMID_AUTHORING_20261124.svg" alt="Hình chóp S.ABCD đáy chữ nhật, AB=4, AD=3, AS=3; trục tọa độ qua A, hai vectơ BD và SC được đánh dấu"><figcaption>Trục \(Ox\) theo \(AB\), \(Oy\) theo \(AD\), \(Oz\) theo \(AS\). Đọc từ \(B\) đến \(D\), từ \(S\) đến \(C\) theo chiều mũi tên. Không đo góc giữa hai mũi tên trên hình phối cảnh.</figcaption></figure>
 
     Ta có \(A(0;0;0),B(4;0;0),D(0;3;0),C(4;3;0),S(0;0;3)\). Vì vậy \(\overrightarrow{BD}=(-4;3;0)\), \(\overrightarrow{SC}=(4;3;-3)\); \(BD=5,\ SC=\sqrt{34}\). Tích vô hướng bằng \(-16+9=-7\), nên góc giữa hai vectơ là góc tù:
+
     \[
     \cos(\overrightarrow{BD},\overrightarrow{SC})=\frac{-7}{5\sqrt{34}}.
     \]
+
     Bài toán hình học không gian đã trở thành phép tính tọa độ. Nếu đề hỏi góc giữa hai đường thẳng \(BD,SC\), theo quy ước góc giữa hai đường thẳng ở lớp 11, phải chọn góc không vượt \(90^\circ\), tức dùng trị tuyệt đối của cosin trên. Hai cách hỏi không đồng nhất.
 
     **Vận dụng.** Cho tam giác \(PQR\) có \(P(1;0;2),Q(3;1;0),R(2;-2;2)\). Tính \(PQ,PR\), chứng minh \(\widehat{QPR}=90^\circ\) và tìm chu vi tam giác.
@@ -169,6 +179,7 @@
     Chọn gốc, chiều dương và đơn vị chung trước khi lập tọa độ. Xác định đại lượng cần tìm là vị trí, độ dời, khoảng cách, góc hay vận tốc.
 
     Với chuyển động có vectơ vận tốc không đổi \(\vec v\), sau thời gian \(t\) vật dịch chuyển một vectơ \(t\vec v\). Nếu đã đi từ \(A\) tới \(B\) trong thời gian \(t_1>0\) và tiếp tục giữ nguyên vectơ vận tốc trong thời gian \(t_2\ge0\), vị trí \(C\) thỏa
+
     \[
     \overrightarrow{BC}=\frac{t_2}{t_1}\overrightarrow{AB}.
     \]

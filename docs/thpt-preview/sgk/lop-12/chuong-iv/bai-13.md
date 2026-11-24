@@ -28,11 +28,13 @@
     Nếu đồ thị ở dưới trục hoành, độ cao của dải không phải là số âm. Ví dụ đường \(y=x-1\) từ \(x=0\) đến \(x=3\) tạo hai tam giác. Tam giác trái có đáy và chiều cao đều bằng 1, diện tích \(1/2\); tam giác phải có đáy và chiều cao đều bằng 2, diện tích 2. Tổng bằng \(5/2\). Nhưng tích phân của \(x-1\) trên \([0;3]\) bằng \(3/2\), bởi nó lấy diện tích phải trừ diện tích trái.
 
     Để cộng cả hai phần, cần dùng độ cao \(|x-1|\):
+
     \[
     S=\int_0^3|x-1|\,dx
     =\int_0^1(1-x)\,dx+\int_1^3(x-1)\,dx
     =\frac12+2=\frac52.
     \]
+
     Kết quả đúng với cách tính hình học. Tổng quát, với hàm liên tục \(f\) trên \([a;b]\), diện tích giới hạn bởi đồ thị, \(Ox\) và hai đường đứng \(x=a,x=b\) bằng \(\int_a^b|f(x)|\,dx\). Khi \(f\) đổi dấu, tìm các nghiệm nằm trong khoảng, xét dấu rồi bỏ giá trị tuyệt đối trên từng đoạn. Nghiệm mà hàm chỉ tiếp xúc trục, không đổi dấu, không buộc phải tách tích phân.
 
     **Vận dụng.** Tính diện tích giới hạn bởi \(y=x^2-1\), trục hoành và hai đường \(x=0,x=2\).
@@ -40,12 +42,14 @@
     ??? question "Đối chiếu"
 
         Hàm liên tục, có nghiệm \(x=1\) trong đoạn. Trên \([0;1]\), \(x^2-1\le0\); trên \([1;2]\), \(x^2-1\ge0\).
+
         \[
         \begin{aligned}
         S&=\int_0^1(1-x^2)\,dx+\int_1^2(x^2-1)\,dx\\
         &=\frac23+\frac43=2.
         \end{aligned}
         \]
+
         Hai diện tích đều không âm. Tích phân có dấu của \(x^2-1\) chỉ bằng \(2/3\), không phải diện tích.
 
     ??? tip "Kiểm lỗi"
@@ -56,9 +60,11 @@
 
     <!-- OUTCOME_ID: G12-CHIV-B13-O03 -->
     Bây giờ đường biên dưới không nhất thiết là \(Ox\). Giả sử trên \([1;2]\), đường \(y=x+2\) nằm trên đường \(y=x^2\) (hai đồ thị gặp nhau ở 2). Tại \(x\), dải đứng dài từ tung độ \(x^2\) tới \(x+2\); chiều cao là \(x+2-x^2\), không phải tổng của hai tung độ. Do đó diện tích là
+
     \[
     S=\int_1^2(x+2-x^2)\,dx=\frac76.
     \]
+
     Hai đồ thị có thể nằm cùng phía hoặc khác phía của trục hoành; điều quyết định chiều cao vẫn là tung độ trên trừ tung độ dưới. Ví dụ nếu đường trên là \(y=-1\), đường dưới là \(y=-3\), chiều cao bằng \((-1)-(-3)=2\), không phải 4.
 
     <!-- OUTCOME_ID: G12-CHIV-B13-O04 -->
@@ -67,12 +73,14 @@
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg" alt="Hai đồ thị y=x và y=x³ trên [-1;1] cắt nhau tại -1, 0, 1; x³ ở trên khi x âm và x ở trên khi x dương"><figcaption>Đọc hai đoạn đứng trong vùng tô màu: ở nửa trái, chiều cao là \(x^3-x\); ở nửa phải, chiều cao là \(x-x^3\). Không dùng cùng thứ tự trừ cho cả hai nửa.</figcaption></figure>
 
     Hiệu \(x-x^3=x(1-x^2)\) âm khi \(-1<x<0\), dương khi \(0<x<1\). Vì vậy
+
     \[
     \begin{aligned}
     S&=\int_{-1}^0(x^3-x)\,dx+\int_0^1(x-x^3)\,dx\\
     &=\frac14+\frac14=\frac12.
     \end{aligned}
     \]
+
     Nếu giữ nguyên \(x-x^3\) trên cả đoạn thì tích phân bằng 0 do hàm lẻ, mặc dù hai miền có diện tích dương. Viết gọn công thức tổng quát \(S=\int_a^b|f(x)-g(x)|\,dx\). Nếu hiệu không đổi dấu, có thể lấy trị tuyệt đối của tích phân hiệu; nếu hiệu đổi dấu, phải tính từng phần trước khi cộng.
 
     <!-- FIRST_TRY_ID: B13-T01 -->
@@ -81,6 +89,7 @@
     ??? question "Đối chiếu"
 
         \(x^2=x\) cho \(x=0,1\). Trong \((0;1)\), \(x>x^2\); trong \((1;2)\), \(x^2>x\). Vì thế
+
         \[
         S=\int_0^1(x-x^2)\,dx+\int_1^2(x^2-x)\,dx
         =\frac16+\frac56=1.
@@ -94,9 +103,11 @@
 
     <!-- OUTCOME_ID: G12-CHIV-B13-O05 -->
     **Ứng dụng thực tế.** Một khu đất dài 6 m được mô hình hóa trong hệ tọa độ (đơn vị mét) với đường biên dưới \(g(x)=1+x/3\), đường biên trên \(f(x)=g(x)+3-x^2/12\), \(0\le x\le6\). Bề rộng theo phương \(Oy\) là \(f-g=3-x^2/12\ge0\); ở đầu phải hai đường gặp nhau. Diện tích khu đất là
+
     \[
     S=\int_0^6(3-x^2/12)\,dx=18-6=12\ \mathrm{m}^2.
     \]
+
     Cả hai tọa độ đều đo bằng mét nên tích phân chiều cao theo chiều rộng có đơn vị mét vuông. Không cần tính diện tích từ từng đường xuống \(Ox\) rồi trừ nếu đã biết chiều cao.
 
     Trong kinh tế, diện tích giữa đồ thị giá và số lượng có ý nghĩa khác diện tích đất. Giả sử giá cầu là \(p=D(x)=18-2x\), giá cung là \(p=P(x)=6+x\) (nghìn đồng/sản phẩm), với số lượng \(x\) được coi là biến liên tục. Điểm cân bằng thỏa \(D(x_0)=P(x_0)\), nên \(x_0=4,p_0=10\). Trên \([0;4]\), cầu nằm trên mức giá 10 còn cung nằm dưới mức ấy. Thặng dư tiêu dùng là diện tích giữa cầu và mức giá cân bằng, bằng \(\int_0^4(8-2x)\,dx=16\) nghìn đồng; thặng dư sản xuất bằng \(\int_0^4(4-x)\,dx=8\) nghìn đồng. Các diện tích phản ánh chênh lệch theo mô hình giá; không đồng nhất với tổng doanh thu hoặc lợi nhuận kế toán.
@@ -117,10 +128,12 @@
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg" alt="Khối chóp đáy vuông cạnh 4, cao 6; mặt cắt vuông góc Ox ở x=3 là hình vuông cạnh 2"><figcaption>Ở nửa chiều cao \(x=3\), cạnh hình vuông chỉ còn một nửa cạnh đáy, nhưng diện tích chỉ còn một phần tư: \(2^2=4\) thay vì \(4^2=16\). Đây là lý do diện tích phụ thuộc vào bình phương \(x\).</figcaption></figure>
 
     Từ đó \(S(x)=(2x/3)^2=4x^2/9\) cm². Thể tích là
+
     \[
     V=\int_0^6\frac{4x^2}{9}\,dx
     =\frac49\cdot\frac{216}{3}=32\ \mathrm{cm}^3.
     \]
+
     Tổng quát với diện tích đáy \(B\), chiều cao \(h\), mặt cắt cách đỉnh \(x\) có tỉ số đồng dạng \(x/h\), nên \(S(x)=B(x/h)^2\). Do đó \(V=Bh/3\). Nhờ tích phân, ta hiểu hệ số \(1/3\) đến từ \(\int_0^h x^2\,dx=h^3/3\), chứ không chỉ ghi nhớ công thức.
 
     **Vận dụng.** Một khối chóp cụt đều có hai đáy là hình vuông cạnh 2 cm và 5 cm, chiều cao 3 cm. Chọn \(x=0\) ở đáy nhỏ, \(x=3\) ở đáy lớn. Tìm diện tích tiết diện và thể tích.
@@ -128,10 +141,12 @@
     ??? question "Đối chiếu"
 
         Do các cạnh bên là đoạn thẳng và các mặt cắt song song đáy, cạnh của hình vuông tăng tuyến tính từ 2 đến 5: \(\ell(x)=2+x\). Vì vậy \(S(x)=(2+x)^2\) cm².
+
         \[
         V=\int_0^3(2+x)^2\,dx
         =[(2+x)^3/3]_0^3=\frac{125-8}{3}=39\ \mathrm{cm}^3.
         \]
+
         Kết quả nằm giữa \(3\cdot4=12\) và \(3\cdot25=75\).
 
     ??? tip "Kiểm lỗi"
@@ -139,13 +154,17 @@
         Không cho diện tích tăng tuyến tính từ 4 tới 25. Cạnh tăng tuyến tính, còn diện tích là bình phương cạnh. Kiểm \(\ell(0)=2,\ell(3)=5\) trước khi bình phương.
 
     Tổng quát, nếu hai đáy của một hình chóp cụt có diện tích \(B_0,B_1\), cao \(h\), các tiết diện đồng dạng. Căn bậc hai của diện tích tỉ lệ với kích thước dài, nên
+
     \[
     S(x)=\left[\sqrt{B_0}+\frac{x}{h}(\sqrt{B_1}-\sqrt{B_0})\right]^2.
     \]
+
     Khai triển và tích phân từ 0 đến \(h\) được
+
     \[
     V=\frac h3(B_0+\sqrt{B_0B_1}+B_1).
     \]
+
     Khi đáy nhỏ co về đỉnh (\(B_0=0\)), công thức trở về \(V=hB_1/3\).
 
     <!-- OUTCOME_ID: G12-CHIV-B13-O07 -->
@@ -159,14 +178,18 @@
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg" alt="Miền tam giác dưới y=x/2 từ 0 đến 4 quay quanh Ox; tại x=3 đoạn đứng 1,5 thành đĩa bán kính 1,5"><figcaption>Ở \(x=3\), bán kính mặt cắt là \(1{,}5\), không phải đường kính 3. Hình elip bên phải biểu diễn mặt tròn trong phối cảnh, không làm thay đổi diện tích thực \(\pi(1{,}5)^2\).</figcaption></figure>
 
     Vậy
+
     \[
     V=\int_0^4\pi(x/2)^2\,dx
     =\frac\pi4\cdot\frac{64}{3}=\frac{16\pi}{3}.
     \]
+
     Kiểm lại bằng công thức khối nón \(V=\pi\cdot 2^2\cdot4/3=16\pi/3\). Từ đó tổng quát hóa: với \(f(x)\) liên tục, không âm trên \([a;b]\), quay miền nằm giữa \(y=f(x)\) và \(Ox\) quanh \(Ox\) cho khối tròn xoay có
+
     \[
     V=\pi\int_a^b [f(x)]^2\,dx.
     \]
+
     Bình phương xuất hiện vì diện tích mặt cắt là diện tích hình tròn, không phải vì bản thân phép tích phân cần bình phương. Với đúng miền giữa đồ thị và \(Ox\), kể cả khi \(f\) âm, bán kính là \(|f(x)|\) và bình phương vẫn là \(f(x)^2\).
 
     <!-- FIRST_TRY_ID: B13-T02 -->
@@ -175,10 +198,12 @@
     ??? question "Đối chiếu"
 
         Bán kính \(r(x)=1+x^2\) nằm trong \([1;2]\), nên
+
         \[
         V=\pi\int_0^1(1+2x^2+x^4)\,dx
         =\pi(1+2/3+1/5)=28\pi/15.
         \]
+
         Hai khối trụ có thể tích lần lượt \(\pi\) và \(4\pi\); kết quả ở giữa, phù hợp với bán kính biến đổi.
 
     ??? tip "Kiểm lỗi"
@@ -186,17 +211,21 @@
         Nếu chỉ lấy \(\pi\int_0^1(1+x^2)\,dx\), em đã tích phân bán kính chứ chưa tính diện tích mặt cắt. Bình phương toàn bộ \(1+x^2\) trước khi tích phân.
 
     Với khối cầu bán kính \(R>0\), lấy nửa hình tròn phía trên \(Ox\) có đường biên \(y=\sqrt{R^2-x^2}\) trên \([-R;R]\). Quay quanh \(Ox\) tạo cả khối cầu. Bình phương bán kính mặt cắt cho \(R^2-x^2\), nên
+
     \[
     V=\pi\int_{-R}^R(R^2-x^2)\,dx
     =\frac43\pi R^3.
     \]
+
     Nếu chỉ lấy từ 0 đến \(R\), ta được nửa khối cầu. Cận lấy theo chiều dài trên trục quay, không theo tung độ lớn nhất.
 
     Khối nón cụt có bán kính hai đáy \(r,R\) và chiều cao \(h\). Bán kính ở giữa tăng hoặc giảm tuyến tính, \(r(x)=r+(R-r)x/h\) với \(0\le x\le h\). Vậy
+
     \[
     V=\pi\int_0^h[r+(R-r)x/h]^2\,dx
     =\frac{\pi h}{3}(r^2+rR+R^2).
     \]
+
     Thử \(r=0\), ta có công thức nón; thử \(r=R\), ta có công thức trụ. Hai trường hợp giúp tự kiểm.
 
     **Lưu ý mở rộng:** Công thức đĩa nói trên dành cho miền có một biên là trục quay. Nếu quay một miền giữa hai đồ thị đều nằm phía trên \(Ox\) mà không chạm trục, tiết diện thường là vành khăn có diện tích \(\pi(R(x)^2-r(x)^2)\), không phải \(\pi(R-r)^2\). Khi miền cắt qua trục quay, phải xác định lại tiết diện thật sự; không trừ máy móc bình phương hai tung độ. Nếu quay quanh trục khác, cũng phải xác định khoảng cách đến đúng trục và phương mặt cắt.
