@@ -50,7 +50,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "4 ý, mỗi ý 1đ; giải thích dấu đổi chiều và nhận biên.",
+    "rubric": "Mỗi ý đúng/sai đúng 1đ (tối đa 4đ). Tự đối chiếu: dấu đổi chiều khi chia số âm và việc lấy đường biên; không tính điểm giải thích riêng.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
@@ -250,7 +250,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "1đ chọn A, nhận diện điều kiện (a,b)≠(0,0).",
+    "rubric": "1đ chọn A. Tự đối chiếu: (a,b)≠(0,0) là điều kiện của bất phương trình bậc nhất hai ẩn; không tính điểm giải thích riêng.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
@@ -290,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "1đ chọn A; minh họa bằng phác miền nghiệm khi giải thích.",
+    "rubric": "1đ chọn A. Tự đối chiếu: có thể phác miền nghiệm để kiểm tra các đỉnh; không tính điểm phác hình riêng.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
