@@ -1081,12 +1081,15 @@
   },
   {
     "item_id": "THPT-G11-B05-KFT01",
-    "content_version": "SOURCE_BLOB_8634196e27b5bac8cb3089f433779b592809d955",
+    "content_version": "SOURCE_BLOB_8634196e27b5bac8cb3089f433779b592809d955_AUTHOR_KEY_REVIEW_R01",
     "stem": "Dãy u_n=2n−1 bắt đầu từ n=1: em dự đoán u_4 và giải thích vì sao n=4, không phải n=0.",
-    "answer_key": null,
-    "worked_solution": "u_4=7; trở về mục chỉ số và VD-G11-B05-01 nếu chưa chắc, sau đó làm `THPT-G11-B05-C01`.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "u₄=7; số hạng thứ tư có chỉ số n=4, dãy bắt đầu n=1.",
+    "worked_solution": "Dãy bắt đầu từ u₁: chỉ số n cho biết vị trí số hạng, không phải số bước kể từ số 0. Bốn số hạng đầu là u₁=1, u₂=3, u₃=5, u₄=7. Thay trực tiếp n=4 vào công thức uₙ=2n−1 được u₄=2·4−1=7; n=0 không thuộc miền chỉ số đã cho. Trở về mục chỉ số và VD-G11-B05-01 nếu chưa chắc, sau đó làm `THPT-G11-B05-C01`.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM",
+      "G11-B05-SEQUENCE-DEFINITION"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1110,16 +1113,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B06-KFT01",
-    "content_version": "SOURCE_BLOB_43b285b679941e0748ad78f377ab9bbdd73ec3d3",
+    "content_version": "SOURCE_BLOB_43b285b679941e0748ad78f377ab9bbdd73ec3d3_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hàng đầu có 12 ghế, mỗi hàng sau thêm 3 ghế. Hàng thứ 4 có mấy ghế?",
-    "answer_key": null,
-    "worked_solution": "12+3·3=21, vì có ba bước; làm `THPT-G11-B06-C01` sau khi giải thích.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "21 ghế.",
+    "worked_solution": "Từ hàng 1 đến hàng 4 có ba lần thêm ghế: 12 → 15 → 18 → 21. Vì thế u₄=12+(4−1)·3=21 ghế. Công sai 3 được cộng ba lần, không phải bốn lần. Làm `THPT-G11-B06-C01` sau khi giải thích.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1143,16 +1148,19 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B07-KFT01",
-    "content_version": "SOURCE_BLOB_3d0886889e383cd76963e1fa3a5eef175a389080",
+    "content_version": "SOURCE_BLOB_3d0886889e383cd76963e1fa3a5eef175a389080_AUTHOR_KEY_REVIEW_R01",
     "stem": "Từ vốn 100, nhân 1,1 mỗi kỳ. Sau 2 kỳ là 120 hay 121?",
-    "answer_key": null,
-    "worked_solution": "100·1,1²=121, vì tăng trên vốn mới; làm `THPT-G11-B07-C01`.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "121.",
+    "worked_solution": "Sau kỳ đầu: 100·1,1=110. Sau kỳ thứ hai: 110·1,1=121. Viết gọn 100·1,1²=121. Số 120 là kết quả nếu mỗi kỳ chỉ cộng 10 trên vốn ban đầu; ở đây vốn kỳ sau được nhân từ vốn mới. Làm `THPT-G11-B07-C01`.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B07-GP-NTH",
+      "G11-B07-GP-APPLICATION"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1176,6 +1184,6 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
