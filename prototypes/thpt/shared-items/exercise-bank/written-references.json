@@ -206,5 +206,85 @@
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
     "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP05-W01",
+    "source": {
+      "blob": "ab878f1a18dea87872449a79c27b75a612d81b39",
+      "heading_id": "THPT-TOP05-W01"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP05-W02",
+    "source": {
+      "blob": "ab878f1a18dea87872449a79c27b75a612d81b39",
+      "heading_id": "THPT-TOP05-W02"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP05-W03",
+    "source": {
+      "blob": "ab878f1a18dea87872449a79c27b75a612d81b39",
+      "heading_id": "THPT-TOP05-W03"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP05-W04",
+    "source": {
+      "blob": "ab878f1a18dea87872449a79c27b75a612d81b39",
+      "heading_id": "THPT-TOP05-W04"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP08-W01",
+    "source": {
+      "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
+      "heading_id": "THPT-TOP08-W01"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP08-W02",
+    "source": {
+      "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
+      "heading_id": "THPT-TOP08-W02"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP08-W03",
+    "source": {
+      "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
+      "heading_id": "THPT-TOP08-W03"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP08-W04",
+    "source": {
+      "blob": "2e93db80384de53e208248eaa0396a7f487302ac",
+      "heading_id": "THPT-TOP08-W04"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
   }
 ]
