@@ -108,7 +108,7 @@ def _classes(src_uri: str):
                 else "thpt-g10-chiv-golden")
     # B01 is published; B02 automatically activates only after its Golden
     # four-tab source is accepted. No other grade-11/12 route is modified.
-    if level == "lop-11" and chapter == "i" and number in (1, 2):
+    if level == "lop-11" and chapter == "i" and number in (1, 2, 3, 4):
         return ("thpt-g10-knowledge-ap1", "thpt-g10-chiv-golden")
     return None
 
@@ -172,7 +172,7 @@ def on_post_page(output, page, config):
     # Make a broken initial-HTML contract fail during MkDocs build, not after
     # deployment; the older G11 B02 is intentionally skipped until upgraded.
     required = uri.startswith("thpt-preview/sgk/chuong-") or (
-        uri == "thpt-preview/sgk/lop-11/chuong-i/bai-1.md"
+        uri in {f"thpt-preview/sgk/lop-11/chuong-i/bai-{n}.md" for n in range(1, 5)}
     )
     if required and (
         rendered == output or
@@ -181,4 +181,38 @@ def on_post_page(output, page, config):
         rendered.count('data-sgk-lesson-nav="') != 1
     ):
         raise RuntimeError("Golden first-paint build contract failed: " + uri)
+    if uri in {f"thpt-preview/sgk/lop-11/chuong-i/bai-{n}.md" for n in (2, 3, 4)}:
+        # #1039 W1: only the three exact approved Golden Knowledge routes.
+        # The existing G10 B10 formula rule is applied unchanged in value.
+        # Its selector is scoped to this built article, overriding the
+        # authoring-only neutral formula dimensions without altering source.
+        rendered = rendered.replace(
+            '</article>',
+            """<style id="sgk-g11-w1-golden-formula">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border: 1px solid var(--slm-g10-line);
+  border-radius: 8px; padding: 12px 14px; margin: 14px 0;
+  line-height: 1.75; overflow-x: auto; max-width: 100%;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border-color: #58677f; color: #eef4ff;
+}
+</style><script id="sgk-g11-w1-golden-tabs">
+(() => {
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/lop-11\/chuong-i\/bai-[234]\/?$/.test(location.pathname))return;
+  const a=document.querySelector("article[data-sgk-golden-first-paint]");
+  const t=a?.querySelector(":scope > .tabbed-set");
+  if(!t||t.dataset.g11W1Golden==="true")return;
+  const labels=[...t.querySelectorAll(":scope > .tabbed-labels > label")];
+  const radios=[...t.querySelectorAll(':scope > input[type="radio"]')];
+  if(labels.length!==4||radios.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+  const sync=()=>labels.forEach((l,i)=>l.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  t.addEventListener("change",sync);sync();t.dataset.g11W1Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script></article>""", 1)
     return rendered

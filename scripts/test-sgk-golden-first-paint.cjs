@@ -11,7 +11,7 @@ const chapters=[["i",1,2],["ii",3,4],["iii",5,6],["iv",7,11],["v",12,14],
 const rows=chapters.flatMap(([c,a,b])=>Array.from({length:b-a+1},(_,i)=>({
  n:a+i,grade:10,rel:"thpt-preview/sgk/chuong-"+c+"/bai-"+(a+i)
 })));
-rows.push({n:1,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-i/bai-1"});
+for(const n of [1,2,3,4])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-i/bai-"+n});
 const headings=["1. Khám phá kiến thức","2. Kiến thức SGK",
  "3. Ví dụ","4. Lỗi thường gặp và cách tự khắc phục"];
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
@@ -46,11 +46,11 @@ for(const row of rows){
  for(const k of ["data-thpt-first-try-id","data-thpt-help-id"])
   assert.deepEqual(attr(html,k),attr(source,k),row.rel+" Q15 source-to-DOM "+k);
 }
-for(const rel of ["thpt-preview/sgk/lop-11/chuong-i/bai-2","thpt-preview/sgk/lop-12/chuong-i/bai-1"])
+for(const rel of ["thpt-preview/sgk/lop-11/chuong-ii/bai-5","thpt-preview/sgk/lop-12/chuong-i/bai-1"])
  assert(!read("site-thpt-preview/"+rel+"/index.html").includes('data-sgk-golden-first-paint="true"'),
   rel+" excluded route modified");
-assert.equal(rows.length,28);
-console.log("PASS STATIC_FIRST_PAINT: 28 accepted pages, all four Golden headings, unchanged IDs; excluded G11 B02/G12");
+assert.equal(rows.length,31);
+console.log("PASS STATIC_FIRST_PAINT: 31 accepted pages, all four Golden headings, unchanged IDs; excluded G11 B05/G12");
 
 (async()=>{
  for(const [engine,driver] of [["Chromium",chromium],["WebKit",webkit]]){

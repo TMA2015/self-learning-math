@@ -13,6 +13,71 @@ const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi t
 const widths=[390,820,1440];
 const re=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\/bai-[1-9]\d*\.md$/;
 const chapter=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?(?:chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\/(?:luyen-tap|tu-kiem-tra-chuong)\.md|chuong-(?:i|ii|iii|iv|v|vi|vii|viii|ix)\.md)$/;
+
+// Compare rendered component styles against the published, owner-accepted
+// G10 B10 (semantic 3+1) and B14 (native example/disclosure). No synthetic CSS.
+async function goldenW1Parity(page,browser,width,rel){
+ const w1=/\/lop-11\/chuong-i\/bai-[234]\.md$/.test(rel);
+ if(!w1)return;
+ const cases={
+  article:["article.md-content__inner",["fontFamily","fontSize","fontWeight","lineHeight"]],
+  tabs:["article .tabbed-labels",["gap","paddingTop","paddingBottom","borderBottomWidth"]],
+  tab:["article .tabbed-labels > label",["height","minHeight","boxSizing","fontFamily","fontSize","fontWeight","lineHeight","paddingTop","paddingLeft","borderTopLeftRadius"]],
+  title:["article h1",["fontFamily","fontSize","fontWeight","lineHeight"]],
+  h2:["article .tabbed-block > h2.thpt-g10-section-heading",["fontSize","fontWeight","lineHeight","paddingTop","paddingLeft","borderLeftWidth","borderTopLeftRadius"]],
+  h3:["article .tabbed-block > h3",["fontSize","fontWeight","lineHeight","paddingTop","paddingLeft","borderLeftWidth","borderTopLeftRadius"]],
+  body:["article .tabbed-block > p",["fontFamily","fontSize","fontWeight","lineHeight"]],
+  concept:["article .thpt-r4-concept-card",["backgroundColor","color","borderLeftColor","borderTopColor","paddingTop","paddingLeft","borderLeftWidth","borderTopLeftRadius","fontSize","lineHeight"]],
+  rule:["article .thpt-r4-rule-card",["backgroundColor","color","borderLeftColor","borderTopColor","paddingTop","paddingLeft","borderLeftWidth","borderTopLeftRadius","fontSize","lineHeight"]],
+  formula:["article .thpt-r4-key-formula",["backgroundColor","color","borderLeftColor","borderTopColor","paddingTop","paddingLeft","borderLeftWidth","borderTopLeftRadius","fontSize","lineHeight"]],
+  example:["article .thpt-g10-example-solution",["backgroundColor","paddingTop","paddingLeft","borderLeftWidth","borderTopLeftRadius","fontSize","lineHeight"]],
+  question:["article details.question",["backgroundColor","color","borderTopColor","borderLeftWidth","borderTopLeftRadius","fontSize","lineHeight"]],
+  summary:["article details.question > summary",["fontSize","fontWeight","lineHeight","paddingTop","paddingLeft","borderTopLeftRadius"]],
+  tip:["article details.tip",["backgroundColor","color","borderTopColor","borderLeftWidth","borderTopLeftRadius","fontSize","lineHeight"]],
+  footnote:["article .thpt-r4-footnote",["fontFamily","fontSize","lineHeight","color"]],
+  caption:["article figure figcaption",["fontFamily","fontSize","lineHeight","color"]]
+ };
+ const collect=async p=>p.evaluate(c=>Object.fromEntries(Object.entries(c).map(([key,[sel,props]])=>{
+  const all=[...document.querySelectorAll(sel)];
+  const values=all.map(e=>{const st=getComputedStyle(e);return Object.fromEntries(props.map(k=>[k,st[k]]));});
+  return [key,values];
+ })),cases);
+ const reference=await browser.newPage({viewport:page.viewportSize()});
+ const ref14=await browser.newPage({viewport:page.viewportSize()});
+ try{
+  for(const [p,route] of [[reference,"/thpt-preview/sgk/chuong-iv/bai-10/"],[ref14,"/thpt-preview/sgk/chuong-v/bai-14/"]]){
+   assert((await p.goto(base+route,{waitUntil:"load",timeout:60000}))?.ok(),"Golden reference unavailable");
+   await p.waitForFunction(()=>document.querySelector("article.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden"));
+  }
+  const tabs=page.locator("article .tabbed-labels > label");
+  for(const scheme of ["default","slate"]){
+   for(const p of [reference,ref14,page]){
+    await p.evaluate(s=>document.body.setAttribute("data-md-color-scheme",s),scheme);
+    await p.waitForTimeout(150);
+   }
+   const a=await collect(reference),b=await collect(ref14),c=await collect(page);
+   const match=(v,refs,key)=>{
+    // Compare the complete tuple, not each value separately. Reference B10
+    // and B14 share the same Golden component rules; body content may vary.
+    assert(refs.some(x=>JSON.stringify(x)===JSON.stringify(v)),
+     rel+" @"+width+" "+scheme+" "+key+" computed CSS differs: "+JSON.stringify({actual:v,reference:refs.slice(0,2)}));
+   };
+   for(const key of Object.keys(c)){
+    if(!c[key].length)continue; // no requirement to invent an absent semantic role
+    const refs=(["formula","concept","rule"].includes(key)?a[key]:[...a[key],...b[key]]);
+    assert(refs.length,rel+" missing reference component "+key);
+    for(const v of c[key])match(v,refs,key);
+   }
+   for(const i of [0,1,2,3]){
+    await tabs.nth(i).click();
+    await page.waitForFunction(i=>[...document.querySelectorAll("article .tabbed-labels > label")].filter(x=>x.classList.contains("slm-g10-active-tab")).length===1&&document.querySelectorAll("article .tabbed-labels > label")[i].classList.contains("slm-g10-active-tab"),i);
+    assert.equal(await tabs.nth(i).evaluate(el=>el.getBoundingClientRect().height),44,rel+" active tab actual height");
+   }
+   console.log("PASS G10_G11_GOLDEN_COMPUTED_PARITY "+rel+" @"+width+" "+scheme+" "+Object.keys(c).filter(k=>c[k].length).join(","));
+  }
+ }finally{await reference.close();await ref14.close();}
+}
+
 async function execute(){
  assert(lessons.length>0&&lessons.length<=120,"No canonical SGK page paths or too many scoped targets");
  assert.equal(new Set(lessons).size,lessons.length,"Duplicate lesson target");
@@ -176,6 +241,7 @@ async function execute(){
      assert(!layout.brokenText,rel+" "+width+" replacement glyph/encoding damage");
      if(mathExpected)assert(layout.math>0,rel+" "+width+" MathJax did not typeset");
      assert.equal(layout.unstyled,0,rel+" "+width+" Golden concept/rule cards lack style");
+     await goldenW1Parity(page,browser,width,rel);
      checks++;
      console.log("PASS SCOPED Golden AP "+rel+" @"+width+"px: "+(isLesson?"4 tabs / ":"chapter hub / ")+
       layout.math+" rendered math, "+expectedTry.length+" First Try, "+expectedHelp.length+" D6, layout/font/SVG/Q16");
