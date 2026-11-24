@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 475" width="1030" height="475" role="img" aria-labelledby="t d">
+<title id="t">Khoảng cách giữa BD và SC trong hình chóp đáy vuông</title><desc id="d">Hình chóp S.ABCD đáy hình vuông cạnh a, SA vuông góc đáy và bằng a căn hai. Đường chéo BD vuông góc cả SA và AC, nên vuông góc mặt phẳng SAC. O là giao hai đường chéo đáy và thuộc BD. H là chân vuông góc từ O xuống SC trong mặt SAC; OH vuông góc SC và BD, do đó khoảng cách giữa BD và SC bằng OH. Tam giác SOC có diện tích a bình phương chia hai, SC bằng 2a nên OH bằng a chia hai.</desc>
+<rect width="1030" height="475" rx="18" fill="#fff"/>
+<text x="515" y="37" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a3e58">Bài tập SGK: BD ⟂ (SAC), đoạn OH là vuông góc chung</text>
+<polygon points="136,355 382,355 532,225 286,225" fill="#e8f3fc" stroke="#5a8aab" stroke-width="3"/>
+<path d="M136 355 L136 77 M136 77 L382 355 M136 77 L532 225 M136 77 L286 225" stroke="#74879b" stroke-width="3.5" fill="none"/>
+<path d="M382 355 L286 225" stroke="#2f82a4" stroke-width="5.5"/>
+<path d="M136 355 L532 225" stroke="#79a9bc" stroke-width="2.6" stroke-dasharray="8 6"/>
+<path d="M136 77 L532 225" stroke="#3d8a72" stroke-width="6"/>
+<path d="M334 290 L377 167" stroke="#c85d37" stroke-width="6"/>
+<circle cx="334" cy="290" r="6" fill="#c85d37"/><circle cx="377" cy="167" r="6" fill="#c85d37"/>
+<g font-family="Arial" font-size="19" fill="#24445e">
+<text x="117" y="65">S</text><text x="116" y="375">A</text><text x="386" y="378">B</text><text x="536" y="222">C</text><text x="275" y="215">D</text><text x="340" y="311">O</text><text x="390" y="164">H</text>
+<text x="388" y="326" fill="#2f82a4">BD</text><text x="397" y="136" fill="#3c866e">SC</text><text x="385" y="268" fill="#bd5637">OH</text>
+<rect x="592" y="81" width="403" height="317" rx="12" fill="#f5f9fc" stroke="#dce5ed"/>
+<text x="615" y="122" font-weight="700">SA=a√2, AC=a√2</text>
+<text x="615" y="168">BD⊥SA và BD⊥AC</text>
+<text x="615" y="214">⇒ BD⊥(SAC)</text>
+<text x="615" y="260">SC=2a, diện tích ΔSOC=a²/2</text>
+<text x="615" y="314">OH=2S(ΔSOC)/SC</text>
+<text x="615" y="363" font-weight="700" fill="#be5637">d(BD,SC)=OH=a/2</text>
+<text x="515" y="444" text-anchor="middle" font-size="16" fill="#66798a">Màu đỏ chỉ đoạn cần chứng minh vuông góc với cả hai đường, không đo bằng phối cảnh.</text>
+</g></svg>

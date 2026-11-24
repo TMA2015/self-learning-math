@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 475" width="1050" height="475" role="img" aria-labelledby="t d">
+<title id="t">Sọt hình chóp cụt đều có miệng vuông 60 cm, đáy 30 cm, cạnh bên 50 cm</title><desc id="d">Khối chóp cụt đều vuông có đáy nhỏ cạnh 30 centimet và miệng lớn cạnh 60 centimet, cạnh bên 50 centimet. Hai tâm đáy O và O phẩy thẳng hàng theo phương vuông góc; độ lệch ngang hai đỉnh tương ứng là một nửa chênh đường chéo hai hình vuông, tức 15 căn hai centimet. Đường cao h bằng căn của 50 bình phương trừ (15 căn hai) bình phương, tức căn 2050 centimet. Thể tích trong hình học là h chia ba nhân (3600 cộng 900 cộng 1800) centimet khối.</desc>
+<rect width="1050" height="475" rx="18" fill="#fff"/>
+<text x="525" y="36" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#173e5a">Vận dụng SGK: sọt chóp cụt đều, không lấy cạnh bên làm cao</text>
+<polygon points="161,368 376,368 499,284 285,284" fill="#e6f2fb" stroke="#4c87a7" stroke-width="3"/>
+<polygon points="91,189 480,189 599,107 211,107" fill="#e6f6ed" stroke="#478f76" stroke-width="3"/>
+<path d="M161 368 L91 189 M376 368 L480 189 M499 284 L599 107 M285 284 L211 107" stroke="#7a8b9b" stroke-width="3.3" fill="none"/>
+<line x1="329" y1="303" x2="345" y2="150" stroke="#c45c38" stroke-width="5" stroke-dasharray="10 6"/>
+<path d="M376 368 L480 189" stroke="#2976a3" stroke-width="6"/>
+<g font-family="Arial" font-size="19" fill="#23425c">
+<text x="214" y="392">Đáy nhỏ: 30 cm</text>
+<text x="212" y="89">Miệng: 60 cm</text><text x="488" y="262" fill="#2877a7">Cạnh bên 50 cm</text>
+<text x="353" y="229" fill="#b95737">h</text>
+<rect x="652" y="78" width="365" height="320" rx="12" fill="#f5f9fc" stroke="#dce8ef"/>
+<text x="676" y="123" font-weight="700">S=60²=3600 cm²</text>
+<text x="676" y="170">S′=30²=900 cm²</text>
+<text x="676" y="219">Độ lệch ngang =15√2</text>
+<text x="676" y="266">h=√(50²−(15√2)²)</text>
+<text x="676" y="309">=√2050 cm</text>
+<text x="676" y="355" font-weight="700" fill="#b75536">V=2100√2050 cm³</text>
+<text x="525" y="447" text-anchor="middle" font-size="16" fill="#65798b">Thể tích hình học chưa trừ bề dày sọt; hai đáy có kích thước khác nhau và song song.</text></g></svg>

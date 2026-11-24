@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 480" width="1010" height="480" role="img" aria-labelledby="t d">
+<title id="t">Công thức thể tích chóp cụt đều qua hiệu hai chóp đồng dạng</title><desc id="d">Một chóp lớn đỉnh T có đáy dưới diện tích S và chiều cao toàn phần H. Mặt phẳng song song đáy cắt chóp, tạo chóp nhỏ ở trên có đáy diện tích S phẩy và chiều cao kH, k bằng căn S phẩy chia S. Phần giữa hai đáy là chóp cụt đều cao h bằng (1-k)H. Hiệu thể tích hai chóp dẫn đến h nhân (S cộng S phẩy cộng căn SS phẩy) chia ba.</desc>
+<rect width="1010" height="480" rx="18" fill="#fff"/>
+<text x="505" y="35" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a3f5a">Vì sao công thức chóp cụt có √(SS′)?</text>
+<polygon points="95,360 490,360 598,283 205,283" fill="#e3f0fa" stroke="#5186aa" stroke-width="3"/>
+<polygon points="210,236 375,236 425,204 261,204" fill="#e6f6ed" stroke="#469474" stroke-width="3"/>
+<path d="M305 66 L95 360 M305 66 L490 360 M305 66 L598 283 M305 66 L205 283" stroke="#788b9a" stroke-width="3.6" fill="none"/>
+<path d="M210 236 L95 360 M375 236 L490 360 M425 204 L598 283 M261 204 L205 283" stroke="#6586a1" stroke-width="2.4"/>
+<line x1="305" y1="66" x2="305" y2="322" stroke="#c05b3b" stroke-width="5" stroke-dasharray="8 6"/>
+<path d="M305 222 L305 324" stroke="#287f69" stroke-width="7"/>
+<g font-family="Arial" font-size="19" fill="#27445e">
+<text x="315" y="60">T</text><text x="326" y="170">kH</text><text x="326" y="283" fill="#277f66">h</text>
+<text x="505" y="370">S</text><text x="432" y="205">S′</text>
+<rect x="618" y="85" width="364" height="297" rx="13" fill="#f5f9fc" stroke="#dfe8ed"/>
+<text x="643" y="125" font-weight="700">k=√(S′/S), 0&lt;k&lt;1</text>
+<text x="643" y="167">h=(1−k)H</text>
+<text x="643" y="219">V=(SH−S′kH)/3</text>
+<text x="643" y="273">V=h(S+S′+√(SS′))/3</text>
+<text x="643" y="333" font-weight="700" fill="#2f826b">Không lấy (S+S′)h/2</text>
+<text x="505" y="443" text-anchor="middle" font-size="16" fill="#65798b">Chỉ áp dụng khi hai đáy tương ứng đồng dạng, song song và phần khối là chóp cụt.</text></g></svg>

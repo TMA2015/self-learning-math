@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" width="1000" height="460" role="img" aria-labelledby="t d">
+<title id="t">Định lí ba đường vuông góc qua hình chiếu của đường xiên</title>
+<desc id="d">Mặt phẳng P có đường b và hình chiếu a phẩy của đường xiên a, vuông góc tại T. Hai điểm M, N trên đường a được chiếu theo phương vuông góc xuống M phẩy, N phẩy trên mặt P. Nếu b vuông góc a phẩy, thì b cũng vuông góc a, và ngược lại. Đường xiên a không vuông góc mặt phẳng P, nên hình chiếu là đường chứ không phải điểm.</desc>
+<rect width="1000" height="460" rx="18" fill="#fff"/>
+<text x="500" y="38" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#193954">Định lí ba đường vuông góc: kiểm đường xiên qua hình chiếu</text>
+<polygon points="126,286 696,286 808,410 236,410" fill="#e9f4fa" stroke="#7c98ae" stroke-width="3"/>
+<path d="M270 345 L600 345" stroke="#276e9e" stroke-width="6" stroke-linecap="round"/>
+<path d="M435 303 L435 388" stroke="#238568" stroke-width="6" stroke-linecap="round"/>
+<path d="M274 345 L274 160 M597 345 L597 196" stroke="#ce6b47" stroke-width="2.8" stroke-dasharray="9 6" fill="none"/>
+<path d="M274 160 L597 196" stroke="#c65c38" stroke-width="6" stroke-linecap="round"/>
+<path d="M435 345 L435 325 L454 325" stroke="#238568" stroke-width="2.8" fill="none"/>
+<g font-family="Arial,sans-serif" fill="#1f3a57" font-size="19">
+<text x="256" y="151">M</text><text x="604" y="190">N</text><text x="250" y="370">M′</text><text x="596" y="370">N′</text>
+<text x="445" y="369">T</text><text x="619" y="343" fill="#276e9e">a′</text><text x="446" y="308" fill="#238568">b</text>
+<text x="516" y="155" fill="#b84f2f">a</text><text x="739" y="342">(P)</text>
+</g>
+<rect x="95" y="420" width="810" height="30" rx="8" fill="#f1f7f3"/>
+<text x="500" y="440" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#215d4c">b nằm trong (P); a′ là hình chiếu của a; b ⟂ a′ ⇔ b ⟂ a</text>
+</svg>

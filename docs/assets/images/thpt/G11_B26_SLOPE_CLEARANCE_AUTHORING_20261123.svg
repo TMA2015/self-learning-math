@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 440" width="980" height="440" role="img" aria-labelledby="t d">
+<title id="t">Khoảng cách vuông góc từ thanh ngang tới đường dốc nghiêng</title><desc id="d">Mặt cắt dọc một đường dốc nghiêng 15 độ so với phương ngang. Cột thẳng đứng từ chân F trên mặt dốc tới đầu T dài 2,28 mét. Đoạn vuông góc từ T tới đường dốc tại H nhỏ hơn chiều dài cột, bằng 2,28 nhân cos 15 độ, xấp xỉ 2,20 mét, nhỏ hơn chiều cao xe 2,21 mét trong mô hình bài toán SGK.</desc>
+<rect width="980" height="440" rx="18" fill="#fff"/>
+<text x="490" y="37" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1b3f59">Khoảng cách tới dốc ≠ chiều dài cột thẳng đứng</text>
+<path d="M120 369 L546 261" stroke="#4d8b78" stroke-width="8" stroke-linecap="round"/>
+<path d="M123 369 L556 369" stroke="#8fa1ae" stroke-width="3" stroke-dasharray="9 7"/>
+<path d="M330 316 L330 116" stroke="#2d75a9" stroke-width="7" stroke-linecap="round"/>
+<path d="M330 116 L379 303" stroke="#c45a37" stroke-width="6" stroke-linecap="round"/>
+<path d="M330 303 L379 303" stroke="#9aafbb" stroke-width="2.5" stroke-dasharray="7 5"/>
+<circle cx="330" cy="116" r="6" fill="#2d75a9"/>
+<circle cx="330" cy="316" r="6" fill="#2d75a9"/>
+<circle cx="379" cy="303" r="6" fill="#c45a37"/>
+<path d="M358 299 L364 287 L375 292" fill="none" stroke="#c45a37" stroke-width="2.6"/>
+<path d="M184 369 A64 64 0 0 0 181 353" stroke="#3a9276" fill="none" stroke-width="2.5"/>
+<g font-family="Arial" font-size="20" fill="#27445e">
+<text x="308" y="105">T</text><text x="308" y="341">F</text><text x="385" y="321">H</text>
+<text x="205" y="217" fill="#2d75a9">TF = 2,28 m</text>
+<text x="390" y="201" fill="#b84f30">TH ⟂ dốc</text><text x="140" y="345" fill="#39836f">15°</text>
+<rect x="585" y="91" width="361" height="267" rx="13" fill="#f4f9fc" stroke="#dbe5eb"/>
+<text x="609" y="137" font-weight="700">Độ cao cột (đứng): 2,28 m</text>
+<text x="609" y="179">Góc dốc: 15°</text>
+<text x="609" y="222" font-weight="700">Khoảng cách: 2,28 cos15°</text>
+<text x="609" y="267" fill="#bb5638">≈ 2,20 m &lt; 2,21 m</text>
+<text x="609" y="312">→ xe cao 2,21 m không lọt</text>
+<text x="490" y="410" text-anchor="middle" font-size="16" fill="#64798a">Minh họa mặt cắt, không đo góc 15° từ tỉ lệ pixel.</text>
+</g></svg>
