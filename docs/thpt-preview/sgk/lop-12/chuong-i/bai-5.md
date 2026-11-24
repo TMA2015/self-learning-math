@@ -91,11 +91,11 @@
 
         Nếu chọn \(x=12\), đáy có cạnh bằng \(0\); đó không phải hộp. Hãy viết đầy đủ miền trước khi chọn nghiệm.
 
-    Một bài toán kinh tế cũng có cách lập mô hình tương tự, nhưng cần phân biệt giá bán, doanh thu, chi phí và lợi nhuận. Giả sử khi bán \(q\) sản phẩm, mỗi sản phẩm có giá \(p(q)=30-0{,}1q\) nghìn đồng, với \(0\le q\le300\). Hàm giá giảm khi số lượng bán tăng. Doanh thu là \(R(q)=qp(q)=30q-0{,}1q^2\), không phải chỉ \(p(q)\). Doanh thu biên \(R'(q)=30-0{,}2q\) là tốc độ thay đổi doanh thu theo số lượng.
+    Một bài toán kinh tế cũng có cách lập mô hình tương tự, nhưng cần phân biệt giá bán, doanh thu, chi phí và lợi nhuận. Giả sử khi bán \(q\) sản phẩm, mỗi sản phẩm có giá \(p(q)=30-0{,}1q\) nghìn đồng, với \(0\le q\le300\). Theo mô hình, nếu bán nhiều sản phẩm hơn thì giá bán mỗi sản phẩm giảm; giá này áp dụng cho toàn bộ số sản phẩm bán được. Doanh thu là \(R(q)=qp(q)=30q-0{,}1q^2\), không phải chỉ \(p(q)\). Doanh thu biên \(R'(q)=30-0{,}2q\) là tốc độ thay đổi doanh thu theo số lượng.
 
     Nếu tổng chi phí \(C(q)=10q+400\), lợi nhuận \(P(q)=R(q)-C(q)=20q-0{,}1q^2-400\). Lợi nhuận biên \(P'=R'-C'=20-0{,}2q\). Đạo hàm bằng \(0\) tại \(q=100\), dương trước \(100\), âm sau \(100\). Trên miền đã cho, \(P(0)=-400,\ P(100)=600,\ P(300)=-3400\) (nghìn đồng), nên lợi nhuận lớn nhất là \(600\) nghìn đồng tại \(100\) sản phẩm. Giá bán lúc đó là \(20\) nghìn đồng/sản phẩm.
 
-    Nếu chỉ tối đa hoá doanh thu, \(R'=0\) lại cho \(q=150\). Hai mục tiêu khác nhau dẫn đến hai lựa chọn khác nhau. Tại điểm tối ưu lợi nhuận khả vi bên trong miền, \(P'=0\) nghĩa là doanh thu biên bằng chi phí biên; nhưng vẫn phải kiểm dấu hoặc so sánh giá trị để biết đó là cực đại toàn miền.
+    Nếu chỉ tối đa hoá doanh thu, \(R'=0\) lại cho \(q=150\). Hai mục tiêu khác nhau dẫn đến hai lựa chọn khác nhau. Tại điểm tối ưu lợi nhuận khả vi bên trong miền, \(P'=0\) nghĩa là doanh thu biên bằng chi phí biên; nhưng vẫn phải kiểm dấu hoặc so sánh giá trị để biết lợi nhuận tại đó có lớn nhất trên toàn miền hay không.
 
     **Vận dụng.** Mô hình bán \(q\) sản phẩm, \(0\le q\le200\), có giá \(p(q)=40-0{,}2q\) nghìn đồng và chi phí \(C(q)=12q+300\) nghìn đồng. Tìm lượng bán và giá bán để lợi nhuận lớn nhất.
 
@@ -113,7 +113,7 @@
 
     ### 2.1. Tốc độ thay đổi của một đại lượng
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tốc độ thay đổi trung bình và tức thời</strong><p>Với \(y=f(x)\), \(x_1&lt;x_2\) thuộc miền xác định, tốc độ thay đổi trung bình của \(y\) theo \(x\) trên đoạn đang xét là \(\displaystyle\frac{f(x_2)-f(x_1)}{x_2-x_1}\). Tốc độ thay đổi tức thời tại \(x=a\) là \(\displaystyle f'(a)=\lim_{h\to0}\frac{f(a+h)-f(a)}h\), nếu đạo hàm tồn tại. Đơn vị: đơn vị của \(y\) trên đơn vị của \(x\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Tốc độ thay đổi trung bình và tức thời</strong><p>Với \(y=f(x)\), \(x_1\lt x_2\) thuộc miền xác định, tốc độ thay đổi trung bình của \(y\) theo \(x\) trên đoạn đang xét là \(\displaystyle\frac{f(x_2)-f(x_1)}{x_2-x_1}\). Tốc độ thay đổi tức thời tại \(x=a\) là \(\displaystyle f'(a)=\lim_{h\to0}\frac{f(a+h)-f(a)}h\), nếu đạo hàm tồn tại. Đơn vị: đơn vị của \(y\) trên đơn vị của \(x\).</p></div>
 
     | Đại lượng | Tốc độ thay đổi | Ý nghĩa |
     | :-- | :-- | :-- |
@@ -135,7 +135,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hàm giá, doanh thu và lợi nhuận</strong><p>\(p(q)\) là giá bán mỗi đơn vị ứng với lượng bán \(q\) (hàm cầu hay hàm giá trong mô hình). \(C(q)\) là tổng chi phí. Tổng doanh thu \(R(q)=qp(q)\), tổng lợi nhuận \(P(q)=R(q)-C(q)\). Các đạo hàm \(R'(q)\), \(P'(q)\) lần lượt là doanh thu biên và lợi nhuận biên; \(P'(q)=R'(q)-C'(q)\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Tối ưu diện tích hình trụ kín</strong><p>Với hình trụ kín có thể tích \(V&gt;0\) cố định, bán kính \(r&gt;0\), chiều cao \(h=V/(\pi r^2)\), diện tích toàn phần \(S=2\pi r^2+2V/r\). Diện tích nhỏ nhất khi \(r=\sqrt[3]{V/(2\pi)}\), tức \(h=2r\). Kết quả áp dụng cho hai đáy và mặt bên có cùng đơn giá vật liệu khi tối ưu chi phí.</p></div>
+    **Ứng dụng — Tối ưu diện tích hình trụ kín.** Với thể tích \(V>0\) cố định, bán kính \(r>0\) và chiều cao \(h=V/(\pi r^2)\), diện tích toàn phần là \(S=2\pi r^2+2V/r\). Diện tích nhỏ nhất khi \(r=\sqrt[3]{V/(2\pi)}\), tức \(h=2r\). Nếu hai đáy và mặt bên có cùng đơn giá vật liệu dương, không tính hao hụt hay chi phí khác, phương án này cũng cho chi phí vật liệu nhỏ nhất.
 
     Công thức trên xuất phát từ \(S'(r)=4\pi r-2V/r^2\) đổi dấu từ âm sang dương tại nghiệm duy nhất. Với hộp không nắp, đơn giá khác nhau, kích thước bị giới hạn hoặc biến rời rạc, phải lập lại mô hình tương ứng.
 
