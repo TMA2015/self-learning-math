@@ -1317,7 +1317,15 @@
         "stem",
         "answer_key",
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+        "projection_blob": "375c6afaebbb0ce14991c65f2abde53c295f325b",
+        "note": "Canonical stem, answer and solution match bank; public TeX replaces inline Unicode/decimal comma notation only.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-CHVI-B18-P07",
@@ -1326,133 +1334,285 @@
         "stem",
         "answer_key",
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
+        "projection_blob": "375c6afaebbb0ce14991c65f2abde53c295f325b",
+        "note": "Canonical stem, answer and solution match bank; public TeX replaces inline Unicode/decimal comma notation only.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-TOP15-P03",
       "projection": "CD15_PUBLIC_REPLAY",
       "fields": [
         "stem"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+        "projection_blob": "2258d3c5a35f87cc50c48b58c19d978d2e1e89f5",
+        "note": "Replay omits introductory label 'Đường và mặt.' only; same three lines and plane, no key in replay stem.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-TOP18-W07",
       "projection": "CD18_PRACTICE",
       "fields": [
         "combined_answer_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+        "projection_blob": "de3db595b945156d80a8d777a64b190cb86fd338",
+        "note": "Written reference: same radar stem, four solution steps, /4 rubric and diagram caption, relative SVG path and HTML less-than escaping differ. No new Written record; no actual SVG render check. PED follow-up: clarify closed-ball coverage t∈[3,9] including boundary vs strict interior (3,9), duration 6h.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-B25-P05",
       "projection": "CD19_PRACTICE",
       "fields": [
         "stem"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "projection_blob": "37cfd4178da9a30bf8de9dbe60e6399f02e85137",
+        "note": "Same stem/key/solution plus placement-specific sentence identifying optional extension. Preserve optional role and learner guidance; no promotion into mandatory Core.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-B25-P02",
       "projection": "CD19_PRACTICE",
       "fields": [
         "stem"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "projection_blob": "37cfd4178da9a30bf8de9dbe60e6399f02e85137",
+        "note": "Same stem/key/solution plus placement-specific sentence identifying optional extension. Preserve optional role and learner guidance; no promotion into mandatory Core.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-B25-P06",
       "projection": "CD19_PRACTICE",
       "fields": [
         "stem"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "projection_blob": "37cfd4178da9a30bf8de9dbe60e6399f02e85137",
+        "note": "Same stem/key/solution plus placement-specific sentence identifying optional extension. Preserve optional role and learner guidance; no promotion into mandatory Core.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-TOP21-W03",
       "projection": "CD21_PRACTICE",
       "fields": [
         "stem"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
+        "projection_blob": "76dfdd8f9544037b64866d7d5d8c35db3faa8ed7",
+        "note": "Stem precedes ITEM_ID marker, identical in source/projection; parser boundary artifact. Key 80 true positives, 495 false positives, 16/115≈13.91%; /4 rubric and D6 intact.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B08-C02",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B08-C04",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B08-P01",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B08-P02",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B08-P03",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B08-P04",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B08-P06",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B09-C03",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B09-P06",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G11-B09-P09",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G12-B10-P04",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G12-B10-C04",
       "projection": "CD22_PRACTICE",
       "fields": [
         "worked_solution"
-      ]
+      ],
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+        "projection_blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "note": "Stem, answer and solution agree with original source and displayed text; extra blank lines after canonical answer label only. Source conditions remain authoritative.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-TOP18-T40",
@@ -1462,7 +1622,15 @@
       ],
       "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
       "public_blob": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
-      "disposition": "PRESERVE_CURRENT_PUBLIC_TEXT_AS_CANDIDATE_REVIEW_CUSTODY_PENDING"
+      "disposition": "PRESERVE_CURRENT_PUBLIC_TEXT_AS_CANDIDATE_REVIEW_CUSTODY_PENDING",
+      "status": "SOURCE_AND_PROJECTION_CONTENT_EQUIVALENT_VERIFIED",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+        "projection_blob": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
+        "note": "Stem and solution text differ only by HTML entity &lt; in d<R; identical conclusion d=6>5 and remediation. Bank preserves public blob. Metadata follow-up: original_outcome_ids contains 'TOP18-O40 --' instead of marker TOP18-O40; fix in scoped metadata audit, not source math.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-B18-C01",
@@ -1490,7 +1658,14 @@
         "blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY02",
@@ -1504,7 +1679,14 @@
         "blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY03",
@@ -1518,7 +1700,14 @@
         "blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY04",
@@ -1532,7 +1721,14 @@
         "blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY05",
@@ -1546,7 +1742,14 @@
         "blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY06",
@@ -1560,7 +1763,14 @@
         "blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY07",
@@ -1574,7 +1784,14 @@
         "blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY08",
@@ -1588,7 +1805,14 @@
         "blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY09",
@@ -1602,7 +1826,14 @@
         "blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY10",
@@ -1616,7 +1847,14 @@
         "blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY11",
@@ -1630,7 +1868,14 @@
         "blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY12",
@@ -1644,7 +1889,14 @@
         "blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY13",
@@ -1658,7 +1910,14 @@
         "blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item. Explicit requested test point is not worked in comparison; during PED audit consider I(-2,1) plus (3,0)=(1,1), verifies 9.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY14",
@@ -1672,7 +1931,14 @@
         "blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY15",
@@ -1686,7 +1952,14 @@
         "blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY16",
@@ -1700,7 +1973,14 @@
         "blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY17",
@@ -1714,7 +1994,14 @@
         "blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY18",
@@ -1728,7 +2015,14 @@
         "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY19",
@@ -1742,7 +2036,14 @@
         "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY20",
@@ -1756,7 +2057,14 @@
         "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY21",
@@ -1770,7 +2078,14 @@
         "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY22",
@@ -1784,7 +2099,14 @@
         "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY23",
@@ -1798,7 +2120,14 @@
         "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "EXISTING_CANONICAL_PUBLIC_PROJECTION_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_KEY_SOLUTION_VERIFIED_PRESERVE_PED_SCAFFOLD_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "canonical_blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+        "projection_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+        "note": "Exact canonical stem/key/solution found in original blob; projection has same mathematical data, exact key and reason, with explicit learner scaffolding/check steps in prompt. Preserve richer approved placement wording when generating projection; do not overwrite with abbreviated stem or create second item.",
+        "scope": "Source and projection content comparison, not new full academic/PED or browser verdict."
+      }
     },
     {
       "item_id": "THPT-G12-B10-C04",
@@ -5674,9 +6003,15 @@
       "cd01_unstructured_verified": 12,
       "cd12_tex_content_verified": 12,
       "written_stale_projection_verified": 2,
-      "unresolved_field_differences": 54,
+      "unresolved_field_differences": 10,
       "scope": "26 flagged rows assessed; two Written projection updates deferred to authorized cutover; math/PED audit of entire bank pending. Historical structural reconciliation and import flag counts unchanged.",
-      "prior_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090#issuecomment-7131604124"
+      "prior_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090#issuecomment-7131604124",
+      "field_review_checkpoint": {
+        "checked_candidate_snapshot": "4896168d177f4d6834339c8eacc944f8dede4dd0",
+        "reviewed_field_flags": 44,
+        "still_unreviewed_field_flags": 10,
+        "notes": "21 Topic flags resolved as content equivalent; 23 SGK G10 ChVII flags classified same math/key/solution, richer learner scaffolding must be preserved at cutover. T40 outcome metadata and W07/TRY13 pedagogical follow-ups remain. No item or placement edit."
+      }
     }
   }
 }
