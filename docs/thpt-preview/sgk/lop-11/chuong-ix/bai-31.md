@@ -124,7 +124,7 @@
 
     ### 2.1. Một số bài toán dẫn đến khái niệm đạo hàm
 
-    **Vận tốc tức thời:** Nếu \(s=s(t)\) mô tả tọa độ hoặc quãng đường theo thời gian, vận tốc trung bình trong khoảng từ \(t_0\) đến \(t\) là \(\dfrac{s(t)-s(t_0)}{t-t_0}\) (với \(t\ne t_0\)). Giới hạn hữu hạn khi \(t\to t_0\) cho **vận tốc tức thời** tại \(t_0\).
+    **Vận tốc tức thời:** Nếu \(s=s(t)\) là tọa độ có dấu của vật chuyển động thẳng theo thời gian, vận tốc trung bình trong khoảng từ \(t_0\) đến \(t\) là \(\dfrac{s(t)-s(t_0)}{t-t_0}\) (với \(t\ne t_0\)). Giới hạn hữu hạn khi \(t\to t_0\) cho **vận tốc tức thời** tại \(t_0\). Nếu \(s(t)\) là quãng đường tích lũy chứ không phải tọa độ, đạo hàm của nó cho tốc độ (khi tồn tại), không cho biết chiều chuyển động.
 
     **Cường độ dòng điện tức thời:** Nếu \(Q=Q(t)\) là điện lượng truyền qua một tiết diện dây dẫn, cường độ trung bình từ \(t_0\) đến \(t\) là \(\dfrac{Q(t)-Q(t_0)}{t-t_0}\). Giới hạn hữu hạn khi \(t\to t_0\) cho **cường độ dòng điện tức thời**. Hai bài toán đều dẫn đến cùng dạng giới hạn của thương sai phân.
 
