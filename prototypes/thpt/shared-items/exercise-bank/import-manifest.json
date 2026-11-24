@@ -76,7 +76,14 @@
     "313a27573cd679234c62f5041587ea86de684733",
     "d552c5415c05f1c354cdb8e01a61f0165296e66c",
     "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
-    "66689cd750d75a0bd37cb6d3841314d18a566ec7"
+    "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+    "ee38fdfeddc78a22a527a6a7449347f86eeee422",
+    "190f351516932caf0b8a417132f15e7915f79993",
+    "bbfc3fdb1e2a5e153bfe20f933fbf8844263552a",
+    "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
+    "a5512d5a206d89808863257d5094e242e28d91c9",
+    "dbf48cdd16811a2581be679bdc86fc6ca15fe311",
+    "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d"
   ],
   "projection_sources": [
     {
@@ -913,23 +920,58 @@
       "path": "docs/thpt-preview/sgk/chuong-v/bai-14.md",
       "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vi/bai-15.md",
+      "blob": "ee38fdfeddc78a22a527a6a7449347f86eeee422",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vi/bai-16.md",
+      "blob": "190f351516932caf0b8a417132f15e7915f79993",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vi/bai-17.md",
+      "blob": "bbfc3fdb1e2a5e153bfe20f933fbf8844263552a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-vi/bai-18.md",
+      "blob": "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-viii/bai-23.md",
+      "blob": "a5512d5a206d89808863257d5094e242e28d91c9",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-viii/bai-24.md",
+      "blob": "dbf48cdd16811a2581be679bdc86fc6ca15fe311",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-viii/bai-25.md",
+      "blob": "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 1702,
+    "formative_items": 1732,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3799,
-    "projection_field_differences": 21,
+    "placements": 3830,
+    "projection_field_differences": 22,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 615,
+    "legacy_combined_answer_items": 645,
     "topic_knowledge_first_try": 170,
-    "sgk_knowledge_first_try": 83
+    "sgk_knowledge_first_try": 113
   },
-  "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported",
+  "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -1084,6 +1126,20 @@
       "source_blob": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
       "public_blob": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
       "disposition": "PRESERVE_CURRENT_PUBLIC_TEXT_AS_CANDIDATE_REVIEW_CUSTODY_PENDING"
+    },
+    {
+      "item_id": "THPT-G10-B18-C01",
+      "projection": "SGK:G10:CHVI:B18:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/chuong-vi/bai-18.md",
+        "blob": "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT"
     }
   ],
   "academic_audit": "PENDING",
@@ -1684,7 +1740,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "615 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
+  "legacy_combined_answer_note": "645 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -1966,7 +2022,7 @@
         "public_blob": "bde0820d157a5169d3cf365c846cf11169d40035"
       }
     ],
-    "sgk_inventory": "PARTIAL_G10_B01_B14_B26_B27",
+    "sgk_inventory": "PARTIAL_G10_B01_B18_B23_B27",
     "sgk_pages": [
       {
         "grade": 10,
@@ -2111,6 +2167,76 @@
         "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
         "markers": 5,
         "imported": 5
+      },
+      {
+        "grade": 10,
+        "chapter": "VI",
+        "lesson": "B15",
+        "path": "docs/thpt-preview/sgk/chuong-vi/bai-15.md",
+        "blob": "ee38fdfeddc78a22a527a6a7449347f86eeee422",
+        "markers": 5,
+        "imported": 5,
+        "reused": 0
+      },
+      {
+        "grade": 10,
+        "chapter": "VI",
+        "lesson": "B16",
+        "path": "docs/thpt-preview/sgk/chuong-vi/bai-16.md",
+        "blob": "190f351516932caf0b8a417132f15e7915f79993",
+        "markers": 5,
+        "imported": 5,
+        "reused": 0
+      },
+      {
+        "grade": 10,
+        "chapter": "VI",
+        "lesson": "B17",
+        "path": "docs/thpt-preview/sgk/chuong-vi/bai-17.md",
+        "blob": "bbfc3fdb1e2a5e153bfe20f933fbf8844263552a",
+        "markers": 5,
+        "imported": 5,
+        "reused": 0
+      },
+      {
+        "grade": 10,
+        "chapter": "VI",
+        "lesson": "B18",
+        "path": "docs/thpt-preview/sgk/chuong-vi/bai-18.md",
+        "blob": "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
+        "markers": 4,
+        "imported": 3,
+        "reused": 1
+      },
+      {
+        "grade": 10,
+        "chapter": "VIII",
+        "lesson": "B23",
+        "path": "docs/thpt-preview/sgk/chuong-viii/bai-23.md",
+        "blob": "a5512d5a206d89808863257d5094e242e28d91c9",
+        "markers": 4,
+        "imported": 4,
+        "reused": 0
+      },
+      {
+        "grade": 10,
+        "chapter": "VIII",
+        "lesson": "B24",
+        "path": "docs/thpt-preview/sgk/chuong-viii/bai-24.md",
+        "blob": "dbf48cdd16811a2581be679bdc86fc6ca15fe311",
+        "markers": 4,
+        "imported": 4,
+        "reused": 0
+      },
+      {
+        "grade": 10,
+        "chapter": "VIII",
+        "lesson": "B25",
+        "path": "docs/thpt-preview/sgk/chuong-viii/bai-25.md",
+        "blob": "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d",
+        "markers": 4,
+        "imported": 4,
+        "reused": 0
       }
     ],
     "context_review": []
