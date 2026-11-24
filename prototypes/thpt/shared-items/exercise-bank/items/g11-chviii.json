@@ -1,0 +1,1172 @@
+[
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một túi chứa các thẻ đánh số 1, 2, 3. Mỗi lần lấy đúng một thẻ. Viết Ω.",
+    "answer_key": "Ω={1,2,3}.",
+    "worked_solution": "Không gian mẫu là mọi kết quả có thể xảy ra, không gồm bộ đôi vì chỉ lấy một thẻ.",
+    "skill_ids": [
+      "G11-B28-SAMPLE_SPACE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Với Ω={1,2,3,4,5}, viết biến cố A=\"chọn được số nguyên tố\".",
+    "answer_key": "A={2,3,5}.",
+    "worked_solution": "Số 1 không phải số nguyên tố; biến cố là tập con của Ω.",
+    "skill_ids": [
+      "G11-B28-EVENT_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ω={1,2,3,4,5}, A={1,3}, B={3,5}. Tìm A∪B.",
+    "answer_key": "{1,3,5}.",
+    "worked_solution": "Hợp chứa mọi kết quả thuộc ít nhất một trong hai tập; số 3 chỉ viết một lần.",
+    "skill_ids": [
+      "G11-B28-UNION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ω={1,2,3,4,5}, A={2,3,4}, B={1,3,5}. Tìm A∩B.",
+    "answer_key": "{3}.",
+    "worked_solution": "Giao là phần tử thuộc cả A lẫn B.",
+    "skill_ids": [
+      "G11-B28-INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ω={0,1,2,3,4}, A={0,2,4}. Tìm Ā.",
+    "answer_key": "{1,3}.",
+    "worked_solution": "Phần bù lấy tất cả phần tử trong Ω không thuộc A.",
+    "skill_ids": [
+      "G11-B28-COMPLEMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một xúc xắc gieo một lần. A=\"ra số nhỏ hơn 3\", B=\"ra số lớn hơn 4\". A,B có xung khắc?",
+    "answer_key": "Có.",
+    "worked_solution": "A={1,2}, B={5,6}; giao rỗng.",
+    "skill_ids": [
+      "G11-B28-DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-C07",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai biến cố có P(A)=1/2, P(B)=1/3 và P(A∩B)=1/6. Có độc lập không?",
+    "answer_key": "Có.",
+    "worked_solution": "Tích xác suất riêng bằng giao: 1/2·1/3=1/6.",
+    "skill_ids": [
+      "G11-B28-INDEPENDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-C07",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Khi chọn đều 1 thẻ từ 1 đến 8, A=\"bội của 2\", B=\"bội của 3\". Viết A∪B.",
+    "answer_key": "{2,3,4,6,8}.",
+    "worked_solution": "A={2,4,6,8}, B={3,6}; hợp không lặp số 6.",
+    "skill_ids": [
+      "G11-B28-UNION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Với cùng 8 thẻ, A=\"số chẵn\", B=\"số lớn hơn 5\". Tìm A∩B.",
+    "answer_key": "{6,8}.",
+    "worked_solution": "B={6,7,8}; cùng chẵn và lớn hơn 5 có hai giá trị.",
+    "skill_ids": [
+      "G11-B28-INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một hộp có 3 thẻ đỏ, 1 thẻ xanh. Vì sao khi chọn đều 1 thẻ không được gộp Ω={đỏ,xanh} rồi kết luận P(đỏ)=1/2?",
+    "answer_key": "Vì hai màu không đồng khả năng; P(đỏ)=3/4.",
+    "worked_solution": "Không gian mẫu màu có thể dùng nếu gán đúng xác suất; không được chia đều cho 2 màu.",
+    "skill_ids": [
+      "G11-B28-EVENT_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A và B xung khắc với P(A)=1/4 và P(B)=2/5. Chúng có thể độc lập không?",
+    "answer_key": "Không.",
+    "worked_solution": "P(A∩B)=0 nhưng P(A)P(B)=1/10>0.",
+    "skill_ids": [
+      "G11-B28-DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Biết P(A)=1/2, P(B)=3/5, P(A∩B)=1/5. Kiểm tra tính độc lập.",
+    "answer_key": "Không độc lập.",
+    "worked_solution": "1/2·3/5=3/10 khác 1/5.",
+    "skill_ids": [
+      "G11-B28-INDEPENDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B28-P06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ω={a,b,c,d,e,f}, A={b,e}. Viết Ā và số phần tử của nó.",
+    "answer_key": "{a,c,d,f}; 4 phần tử.",
+    "worked_solution": "Bù trong Ω, không phải chỉ phần bên ngoài sơ đồ khi chưa rõ Ω.",
+    "skill_ids": [
+      "G11-B28-COMPLEMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B28-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "P(A)=2/5, P(B)=1/2, P(A∩B)=1/5. Tính P(A∪B).",
+    "answer_key": "7/10.",
+    "worked_solution": "2/5+1/2−1/5=7/10; phải trừ phần giao.",
+    "skill_ids": [
+      "G11-B29-ADDITION_OVERLAP"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A,B xung khắc, P(A)=1/8, P(B)=3/8. Tính P(A∪B).",
+    "answer_key": "1/2.",
+    "worked_solution": "Giao rỗng nên cộng trực tiếp 1/8+3/8.",
+    "skill_ids": [
+      "G11-B29-ADDITION_DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "P(K)=9/25. Tính P(K̄).",
+    "answer_key": "16/25.",
+    "worked_solution": "Biến cố và bù tạo thành Ω, nên 1−9/25.",
+    "skill_ids": [
+      "G11-B29-COMPLEMENT_PROB"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một lớp 25 học sinh: chỉ thích trà có 6, thích cả trà và cà phê có 4, chỉ thích cà phê có 5. Chọn đều 1 bạn: P(thích ít nhất một loại)?",
+    "answer_key": "3/5.",
+    "worked_solution": "Có 6+4+5=15 bạn thuộc hợp, xác suất 15/25=3/5.",
+    "skill_ids": [
+      "G11-B29-VENN_COUNTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Nếu P(A)=0,3 mà P(A∩B)=0,4, dữ liệu có thể đúng không?",
+    "answer_key": "Không.",
+    "worked_solution": "Giao là tập con A nên P(A∩B)≤0,3.",
+    "skill_ids": [
+      "G11-B29-PROBABILITY_BOUNDS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-C06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Trong 60 phiếu, 26 chọn kênh A, 24 chọn B, 10 chọn cả hai. Chọn đều một phiếu, P(chọn A hoặc B)?",
+    "answer_key": "2/3.",
+    "worked_solution": "(26+24−10)/60=40/60=2/3.",
+    "skill_ids": [
+      "G11-B29-REAL_APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-C06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "P(A∪B)=3/4, P(A)=1/2 và P(B)=3/5. Tìm P(A∩B).",
+    "answer_key": "7/20.",
+    "worked_solution": "P(A∩B)=1/2+3/5−3/4=10/20+12/20−15/20=7/20.",
+    "skill_ids": [
+      "G11-B29-ADDITION_OVERLAP"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A,B xung khắc có P(A)=0,45, P(B)=0,65. Dữ liệu có hợp lý?",
+    "answer_key": "Không.",
+    "worked_solution": "Xung khắc ⇒ P(A∪B)=1,10>1, trái giới hạn xác suất.",
+    "skill_ids": [
+      "G11-B29-ADDITION_DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một phép thử có xác suất lỗi 1/20. Xác suất không lỗi là bao nhiêu?",
+    "answer_key": "19/20.",
+    "worked_solution": "Hai biến cố lỗi và không lỗi là bù nhau.",
+    "skill_ids": [
+      "G11-B29-COMPLEMENT_PROB"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Trong 100 người, 40 thích A, 35 thích B và 15 thích cả hai. Hỏi bao nhiêu người không thích A lẫn B?",
+    "answer_key": "40 người.",
+    "worked_solution": "Hợp có 40+35−15=60 người; ngoài hợp 100−60=40.",
+    "skill_ids": [
+      "G11-B29-VENN_COUNTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "P(A)=0,4, P(B)=0,5, P(A∩B)=0,2. Tính hợp và kiểm nó không nhỏ hơn xác suất riêng.",
+    "answer_key": "0,7.",
+    "worked_solution": "Hợp=0,4+0,5−0,2=0,7≥0,5 và ≥0,4.",
+    "skill_ids": [
+      "G11-B29-PROBABILITY_BOUNDS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B29-P06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một nhóm 48 bạn có 21 bạn học vẽ, 18 bạn học nhạc, 8 bạn học cả hai. Chọn đều một bạn, xác suất không học môn nào?",
+    "answer_key": "17/48.",
+    "worked_solution": "Hợp=21+18−8=31; không học môn nào=48−31=17.",
+    "skill_ids": [
+      "G11-B29-REAL_APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B29-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A,B độc lập; P(A)=3/10, P(B)=2/5. Tính P(A∩B).",
+    "answer_key": "3/25.",
+    "worked_solution": "Nhân 3/10·2/5=6/50=3/25 do giả thiết độc lập.",
+    "skill_ids": [
+      "G11-B30-MULTIPLY_INDEPENDENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "P(A)=3/4, P(B)=1/3, P(A∩B)=1/4. Độc lập không?",
+    "answer_key": "Có.",
+    "worked_solution": "3/4·1/3=1/4, đúng tiêu chuẩn.",
+    "skill_ids": [
+      "G11-B30-VERIFY_INDEPENDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ba lần thử độc lập, mỗi lần xác suất đạt 1/2. Tính cả ba lần đạt.",
+    "answer_key": "1/8.",
+    "worked_solution": "(1/2)^3=1/8, cần ba lần độc lập, không chỉ có cùng tỉ lệ.",
+    "skill_ids": [
+      "G11-B30-REPEATED_TRIALS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai cảm biến độc lập, mỗi cảm biến có xác suất thất bại 1/5. Tính xác suất ít nhất một cảm biến hoạt động.",
+    "answer_key": "24/25.",
+    "worked_solution": "Bù của ít nhất một hoạt động là cả hai thất bại: 1−(1/5)^2=24/25.",
+    "skill_ids": [
+      "G11-B30-AT_LEAST_ONE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai biến cố xung khắc có P(A)=1/3, P(B)=1/4. Chúng độc lập không?",
+    "answer_key": "Không.",
+    "worked_solution": "P(A∩B)=0 khác (1/3)(1/4)=1/12.",
+    "skill_ids": [
+      "G11-B30-INDEPENDENT_VS_DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-C06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai máy in hoạt động độc lập, cơ hội in thành công lần lượt 4/5 và 5/6. P(cả hai thành công)?",
+    "answer_key": "2/3.",
+    "worked_solution": "4/5·5/6=2/3; độc lập được nêu rõ trong đề.",
+    "skill_ids": [
+      "G11-B30-REAL_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-C06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai sự kiện độc lập, P(A)=7/10, P(B)=3/7. Tính P(A∩B).",
+    "answer_key": "3/10.",
+    "worked_solution": "7/10·3/7=3/10; triệt tiêu 7.",
+    "skill_ids": [
+      "G11-B30-MULTIPLY_INDEPENDENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P02",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "P(A)=0,6, P(B)=0,5 nhưng P(A∩B)=0,2. Độc lập?",
+    "answer_key": "Không.",
+    "worked_solution": "0,6·0,5=0,3 khác 0,2.",
+    "skill_ids": [
+      "G11-B30-VERIFY_INDEPENDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P03",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ba công tắc độc lập, xác suất bật lần lượt 1/2, 2/3, 3/4. Xác suất cả ba bật?",
+    "answer_key": "1/4.",
+    "worked_solution": "Tích 1/2·2/3·3/4=1/4.",
+    "skill_ids": [
+      "G11-B30-REPEATED_TRIALS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P04",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai lời nhắc độc lập có xác suất được nhận lần lượt 3/5 và 1/2. Tính xác suất ít nhất một lời nhắc được nhận.",
+    "answer_key": "4/5.",
+    "worked_solution": "1−(2/5)(1/2)=1−1/5=4/5.",
+    "skill_ids": [
+      "G11-B30-AT_LEAST_ONE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P05",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "A,B độc lập với P(A)=1/2, P(B)=1/2. Có thể A∩B rỗng không?",
+    "answer_key": "Không.",
+    "worked_solution": "Độc lập cho giao có xác suất 1/4>0 nên không thể rỗng.",
+    "skill_ids": [
+      "G11-B30-INDEPENDENT_VS_DISJOINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P06",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Một thiết bị có hai môđun kiểm lỗi độc lập với xác suất phát hiện lần lượt 0,8 và 0,7. Xác suất cả hai cùng phát hiện?",
+    "answer_key": "0,56.",
+    "worked_solution": "0,8×0,7=0,56; xác suất không phải 1,5.",
+    "skill_ids": [
+      "G11-B30-REAL_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-B30-P07",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Ba phép thử độc lập có xác suất lỗi 1/2, 1/3, 1/4. Xác suất ít nhất một lần không lỗi?",
+    "answer_key": "23/24.",
+    "worked_solution": "Bù là cả ba lỗi: 1−(1/2)(1/3)(1/4)=23/24.",
+    "skill_ids": [
+      "G11-B30-AT_LEAST_ONE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-B30-P07",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHVIII-CHVIII-P01",
+    "content_version": "THPT-G11-CHVIII-B28-B30-R00",
+    "stem": "Hai biến cố độc lập có P(A)=2/5, P(B)=1/4. Tính P(A∩B), P(A∪B) và chỉ ra công thức nào dùng trước.",
+    "answer_key": "P(A∩B)=1/10; P(A∪B)=11/20.",
+    "worked_solution": "Dùng nhân cho giao vì độc lập, rồi cộng có trừ giao: 2/5+1/4−1/10=8/20+5/20−2/20=11/20.",
+    "skill_ids": [
+      "G11-CHVIII-INTEGRATED"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
+      "heading_id": "THPT-G11-CHVIII-CHVIII-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chviii-b28-b30-source-locked-formative-r00.js",
+        "blob": "b08cfc5dfb8404820b5827d6dc7e2b173d6e23d3",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

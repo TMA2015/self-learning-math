@@ -2534,5 +2534,163 @@
     "item_id": "THPT-G10-CHVIII-RD1-14",
     "original_type": "WRITTEN_RUBRIC",
     "optional": true
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B26-C01",
+    "skill_id": "G10-B26-EXPERIMENT_SAMPLE_SPACE"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B26-C02",
+    "skill_id": "G10-B26-CLASSICAL_RATIO"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B26-P01",
+    "skill_id": "G10-B26-COMPLEMENT"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B26-P02",
+    "skill_id": "G10-B26-EVENT_SUBSET"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B26-P03",
+    "skill_id": "G10-B26-CLASSICAL_RATIO"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G10-B26-P04",
+    "skill_id": "G10-B26-SCOPE_SMALL_PROBABILITY"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B26-P05",
+    "skill_id": "G10-B26-SCOPE_SMALL_PROBABILITY"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B27-C01",
+    "skill_id": "G10-B27-TREE_SEQUENCE"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B27-C02",
+    "skill_id": "G10-B27-COUNTING_OUTCOMES"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B27-P01",
+    "skill_id": "G10-B27-COUNTING_OUTCOMES"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B27-P02",
+    "skill_id": "G10-B27-COMPLEMENT_PROBABILITY"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B27-P03",
+    "skill_id": "G10-B27-MULTISTEP_CONTEXT"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G10-B27-P04",
+    "skill_id": "G10-B27-TREE_SEQUENCE"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B27-P05",
+    "skill_id": "G10-B27-EQUIPROBABLE_MODELLING"
+  },
+  {
+    "collection": "SGK:G10:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G10-CHIX-W26-01"
+  },
+  {
+    "collection": "SGK:G10:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G10-CHIX-W27-ANCHOR-01"
+  },
+  {
+    "collection": "SGK:G10:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIX-RD01",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIX-RD02",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIX-RD03",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIX-RD04",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIX-RD05",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G10-CHIX-RD06",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
   }
 ]
