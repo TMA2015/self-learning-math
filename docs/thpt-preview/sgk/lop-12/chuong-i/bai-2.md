@@ -56,7 +56,7 @@
 
     Trên một đoạn đóng \([a;b]\), nếu hàm liên tục, đồ thị không bị đứt và có cả hai đầu mút. Một kết quả quan trọng bảo đảm hàm **luôn đạt cả GTLN lẫn GTNN** trên đoạn ấy. Khi đi tìm chúng, ta cần biết những nơi nào có khả năng cao nhất hoặc thấp nhất.
 
-    Nếu một giá trị lớn nhất hoặc nhỏ nhất đạt tại điểm bên trong đoạn mà hàm có đạo hàm, điểm đó cũng là cực trị (hoặc cực trị không nghiêm ngặt), nên đạo hàm tại đó bằng \(0\). Nếu hàm không khả vi tại một điểm trong đoạn, điểm ấy vẫn có thể là nơi đạt GTLN/GTNN, như đỉnh của đồ thị trị tuyệt đối. Ngoài ra, một đầu mút cũng có thể cao nhất hoặc thấp nhất dù đạo hàm không bằng \(0\).
+    Nếu hàm đạt GTLN hoặc GTNN tại một điểm bên trong đoạn và có đạo hàm tại điểm ấy, đạo hàm ở đó bằng \(0\). Điều này vẫn đúng khi nhiều điểm cùng đạt giá trị lớn nhất hoặc nhỏ nhất. Nếu hàm không khả vi tại một điểm trong đoạn, điểm ấy vẫn có thể là nơi đạt GTLN/GTNN, như đỉnh của đồ thị trị tuyệt đối. Ngoài ra, một đầu mút cũng có thể cao nhất hoặc thấp nhất dù đạo hàm không bằng \(0\).
 
     Bởi vậy, với hàm liên tục và chỉ có hữu hạn điểm đạo hàm bằng \(0\) hoặc không tồn tại trong đoạn, ta không nhất thiết lập toàn bộ bảng biến thiên: chỉ cần tính giá trị hàm tại **hai đầu mút và mọi điểm bên trong thuộc hai loại trên**, rồi so sánh.
 
