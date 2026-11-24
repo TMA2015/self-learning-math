@@ -78,9 +78,9 @@ RELEASE_SCOPE: SGK_KNOWLEDGE_ENRICHMENT_ONLY
 LESSON_ID: G11-B33
 SOURCE_PATH: docs/thpt-preview/sgk/lop-11/chuong-ix/bai-33.md
 BASELINE_SOURCE_BLOB: 920752c92ab12a97d8e034780907fd2bcaac1308
-CANDIDATE_SOURCE_BLOB: d32215716790846bf910a20e334fdbf4253880b2
-ACADEMIC_SOURCE_BLOB: d32215716790846bf910a20e334fdbf4253880b2
-SOURCE_COMMIT: fa0aa257b5bbcfd3611b46362951098e627c2c01
+CANDIDATE_SOURCE_BLOB: 1102e28f47fb8946fdafca2f86194abd60637b47
+ACADEMIC_SOURCE_BLOB: 1102e28f47fb8946fdafca2f86194abd60637b47
+SOURCE_COMMIT: b7fe2b10957d574cb96cb6ade5493e25db33db41
 BASELINE_PUBLISHED_HTML_BLOB: 5e7f0bfa4442903ae4bc271a53e6296320710722
 FIG_ASSET_BLOB: 58fcb5ce261fe35d93d8eacd2af584c7b93dc1a9 (existing unchanged)
 AUTHORING_PR: #1068
@@ -379,7 +379,7 @@ Owner duyệt sửa nhanh theo [rà soát 19 bài](https://github.com/TMA2015/se
 
 **Tự kiểm delta — Q18 AUTHOR_SELF_VERIFIED:** đối chiếu 19/19 commit HEAD và candidate blob, PR vẫn draft/open; nội dung trước tab Khám phá và từ tab Ví dụ trở đi byte-identical 19/19; thứ tự và tên mục chính/phụ, comment metadata, đường dẫn hình giữ nguyên 19/19 (50 mục chính mỗi tab); cả ba bảng lỗi cột B04/B11/B12 đã sửa, kiểm cấu trúc cột trên toàn bộ hai tab không còn lỗi phát hiện; không còn entity `&lt;`/`&gt;` trong hai tab kiểm. Chỉ cập nhật các file canonical, không tạo PR hoặc asset mới, không thay dữ liệu ngoài scope. Kiểm ngữ nghĩa delta bằng định nghĩa, phép tính và điều kiện đã nêu; không tuyên bố browser/render PASS hoặc independent review mới. Giữ CONTENT_READY 51/51; RELEASE_INTAKE=PENDING_RELEASE, tiếp nhận đúng commit/blob mới trong các bảng từng bài. Kết thúc đợt AUTHORING, không merge/deploy.
 
-## Hiệu chỉnh nhanh Toán 11 — 24/11/2026 (đang thực hiện)
+## Hiệu chỉnh nhanh Toán 11 — 24/11/2026 (hoàn tất 29 bản thảo chưa phát hành)
 
 Owner đã duyệt sửa nhanh sau [lượt đọc 32/32](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7125565971). Giữ snapshot trước sửa (blob `cd18e6fdcfbce6ca17035b7a20744cbd42ee459b`). Chỉ sửa hai tab Knowledge trên PR draft chưa phát hành; B02–B04 xử lý theo delta phát hành riêng. Các dòng nguồn cập nhật ở bảng nguồn G11 khi đã đọc lại. Các bản chưa sửa giữ nguồn cũ, kết quả cũ gắn snapshot cũ; không mặc định chuyển independent PASS sang nội dung thay đổi.
 
@@ -422,7 +422,9 @@ Owner đã duyệt sửa nhanh sau [lượt đọc 32/32](https://github.com/TMA
 
 | B31 | `6fe6cd336607941d964b8fe10acfc04f5087f83c` / `a0c25691f38ff40955b6316ed8be29880b0ca4a0` | `60628794b578c800a14309a10c28b51f41050987` / `8f3d2b6e144a5d5bee5635b7f5058291cc89c9ac` | Tính chính xác giới hạn vận tốc, giải bằng định nghĩa trước quy tắc B32; phân biệt tung độ tiếp điểm và hệ số góc. |
 
-Đối chiếu 28/28 readback exact, giữ byte-identical trước Khám phá và từ Ví dụ trở đi; headings, figure, metadata comment không đổi, delimiters MathJax/HTML cân bằng. Q18 tự kiểm delta theo toán/điều kiện ở trên; không xác nhận browser PASS. Asset không đổi. RELEASE tiếp nhận đúng khóa mới, không merge/deploy bởi AUTHORING.
+| B33 | `fa0aa257b5bbcfd3611b46362951098e627c2c01` / `d32215716790846bf910a20e334fdbf4253880b2` | `b7fe2b10957d574cb96cb6ade5493e25db33db41` / `1102e28f47fb8946fdafca2f86194abd60637b47` | Phân biệt hàm đạo hàm và giá trị tại điểm; giải phản ví dụ và điều kiện nhanh/chậm dần. Đầu nhánh trước sửa 5e942dea3191047a68a39899a0c77c250fa432a1 có learner blob trùng exact nguồn khóa. |
+
+Đối chiếu 29/29 readback exact, giữ byte-identical trước Khám phá và từ Ví dụ trở đi; headings, figure, metadata comment không đổi, delimiters MathJax/HTML cân bằng. Q18 tự kiểm delta theo toán/điều kiện ở trên; không xác nhận browser PASS. Asset không đổi. RELEASE tiếp nhận đúng khóa mới, không merge/deploy bởi AUTHORING.
 
 
 ## Cách cập nhật
