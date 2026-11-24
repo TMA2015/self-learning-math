@@ -1644,7 +1644,14 @@
         "blob": "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT"
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "projection_blob": "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
+        "note": "Same radical equation, x≥1, candidates 4 and −1, only 4. Preserve richer prompt about RHS sign and rejection of −1; no new ID.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     },
     {
       "item_id": "THPT-G10-CHVII-TRY01",
@@ -2142,8 +2149,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
         "local_id": "B10-T02"
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
-      "reason": "Same given variance 9 cm², ask standard deviation, result 3 cm and unit restoration."
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "reason": "Same given variance 9 cm², ask standard deviation, result 3 cm and unit restoration.",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+        "projection_blob": "32f4eda1cfd151592eef5a35921ad872c1f644c4",
+        "note": "Same variance 9 cm², standard deviation 3 cm; retain explicit unit-remediation reference to section 4.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     },
     {
       "item_id": "THPT-G12-B16-A02",
@@ -2158,8 +2172,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
         "local_id": "B16-T02"
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
-      "reason": "Same slope direction (3,0,4), length 5, angle with horizontal plane; same arcsin(4/5), source states implied length explicitly."
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "reason": "Same slope direction (3,0,4), length 5, angle with horizontal plane; same arcsin(4/5), source states implied length explicitly.",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "11eb2834cfdb4a24685157f84666c2bb0767970a",
+        "projection_blob": "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+        "note": "Same direction (3,0,4) and horizontal plane, length 5 explicitly stated in first try, sinθ=4/5, θ≈53.13°. Preserve 5m context; canonical solution explains ratio.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     },
     {
       "item_id": "THPT-G11-B08-C02",
@@ -2175,8 +2196,15 @@
         "locator": "details[data-ped-first-try] #1",
         "line": 21
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
-      "reason": "Same boundary 10, same adjacent groups, third group does not alter the answer, same reason left endpoint included."
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "reason": "Same boundary 10, same adjacent groups, third group does not alter the answer, same reason left endpoint included.",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "projection_blob": "4f3d1af635dd548700ad3514aff283ebe29aa9a2",
+        "note": "Same boundary 10, groups [0;10), [10;20); third group [20;30) in first try cannot change result. Preserve full list and request to explain convention.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     },
     {
       "item_id": "THPT-G11-CHIV-B11-P01",
@@ -2192,8 +2220,15 @@
         "locator": "details[data-ped-first-try] #1",
         "line": 40
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
-      "reason": "Same tetrahedron and opposite edges SA, BC; existing key and solution establish both nonintersection and noncoplanarity."
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "reason": "Same tetrahedron and opposite edges SA, BC; existing key and solution establish both nonintersection and noncoplanarity.",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+        "projection_blob": "7dccb87d44c1734cf7b5f3c77df209b75db6e63b",
+        "note": "Same opposite edges SA and BC in tetrahedron; first try asks intersection and coplanarity separately. Canonical proof establishes noncoplanarity (otherwise all four vertices coplanar), implies nonintersection. Preserve two subquestions.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     },
     {
       "item_id": "THPT-G11-CHV-B16-C01",
@@ -2209,8 +2244,15 @@
         "locator": "details[data-ped-first-try] #1",
         "line": 50
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
-      "reason": "Identical rational function and punctured domain, limit 6; canonical solution supplies requested rationale. Public reveal gives only 6."
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "reason": "Identical rational function and punctured domain, limit 6; canonical solution supplies requested rationale. Public reveal gives only 6.",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+        "projection_blob": "a2242eeb50ae0f02643182bf10c315c41ce05c3b",
+        "note": "Same punctured rational function, named k instead of f, limit 6. First try asks why cancellation is valid only x≠3; its reveal gives just 6. Use full canonical reasoning after self-attempt, retain prompt. Historical projection deficiency, not new math item.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     },
     {
       "item_id": "THPT-G11-CHVII-B23-P02",
@@ -2226,8 +2268,15 @@
         "locator": "details[data-ped-first-try] #1",
         "line": 37
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
-      "reason": "Same criterion: perpendicular to two parallel lines in plane insufficient; canonical key/rationale matches. Source reveals answer inline, separate PED flag."
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "reason": "Same criterion: perpendicular to two parallel lines in plane insufficient; canonical key/rationale matches. Source reveals answer inline, separate PED flag.",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+        "projection_blob": "ad1ce1335b2c4dcef36edff8f8ad5378b8f63cad",
+        "note": "Same insufficient perpendicular-to-two-parallel-lines criterion, contextualized as column and floor. First try reveals 'Chưa' inline; preserve math task but move conclusion/explanation to after-attempt reveal at authorized cutover. Public formative only; no protected assessment changes.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     },
     {
       "item_id": "THPT-G12-CHI-B01-C04",
@@ -2242,8 +2291,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
         "locator": "Tự thử B"
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
-      "reason": "Same counterexample x³, stationary derivative at 0 is insufficient for extremum; existing solution explains unchanged positive derivative."
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "reason": "Same counterexample x³, stationary derivative at 0 is insufficient for extremum; existing solution explains unchanged positive derivative.",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+        "projection_blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+        "note": "Same stationary derivative is not sufficient, x³ counterexample named in prompt. Legacy first try lacks its own reveal and directs to Core. Use canonical derivative-sign reasoning after attempt and preserve discovery wording.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     },
     {
       "item_id": "THPT-G12-CHI-B02-C01",
@@ -2258,8 +2314,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
         "locator": "Tự thử B"
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
-      "reason": "Same f(x)=x on (0,1), distinction between approaching 1 and attaining maximum; existing solution proves nonattainment."
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "reason": "Same f(x)=x on (0,1), distinction between approaching 1 and attaining maximum; existing solution proves nonattainment.",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+        "projection_blob": "d6e517a980ec9259345285964f4c42767faa6122",
+        "note": "Same f(x)=x, 0<x<1, approaching 1 vs attaining it; proof via y=(x+1)/2 valid for x∈(0,1). Legacy first try lacks own reveal; preserve prompt and use canonical proof after attempt. Explain 'supremum' in ordinary Vietnamese (cận trên đúng) during PED audit.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     },
     {
       "item_id": "THPT-TOP10-P34",
@@ -2274,8 +2337,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
         "locator": "Tự thử B"
       },
-      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
-      "reason": "Same rational function (x²−4)/(x−2), pole candidate 2 versus hole; canonical solution factors and gives finite limit. Existing key also discusses oblique asymptote; flag projection difference."
+      "status": "SAME_MATH_TASK_REUSE_VERIFIED_PRESERVE_CONTEXT_AND_REVEAL_AT_CUTOVER",
+      "reason": "Same rational function (x²−4)/(x−2), pole candidate 2 versus hole; canonical solution factors and gives finite limit. Existing key also discusses oblique asymptote; flag projection difference.",
+      "evidence": {
+        "candidate_commit": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "canonical_blob": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+        "projection_blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+        "note": "Same rational expression and question whether x=2 is vertical asymptote or hole; limit 4 finite, domain excludes 2. Preserve cancellation prompt, keep canonical additional explanation of oblique asymptote as after-attempt extension, not mandatory first-try demand. Legacy first try lacks own reveal.",
+        "scope": "Source and baseline learner prompt comparison; same mathematical task, not new full academic/PED verdict. Existing frozen learner pages not edited."
+      }
     }
   ],
   "academic_audit": "PENDING",
@@ -5933,7 +6003,7 @@
     "unkeyed_id_assignment_note": "Canonical KFT IDs are scoped by grade, lesson and original source block order; G12 existing local IDs namespaced THPT-G12-Bxx-Txx. No existing global ID changed. Distinct demands preserved, partial overlaps recorded; 18 answer drafts explicitly identified as authoring rather than source. Three G11 worked examples classified, not exercises. Global reconciliation and academic audit pending."
   },
   "global_reconciliation": {
-    "status": "STRUCTURAL_INTEGRITY_PASS_SOURCE_EQUIVALENCE_AND_ACADEMIC_AUDIT_PENDING",
+    "status": "STRUCTURAL_INTEGRITY_PASS_ALL_RECORDED_PROJECTION_FLAGS_TRIAGED_ACADEMIC_AUDIT_PENDING",
     "checked_snapshot": "1460f06f9fac9355f9168d34099d5ec51392704c",
     "scope": "All 61 item shards, 26 placement files, written references, schema and manifest; complete candidate inventory at exact commit. Written source references checked for ID presence, not rubric correctness. No private RD1 retrieval.",
     "actual_counts": {
@@ -6003,14 +6073,25 @@
       "cd01_unstructured_verified": 12,
       "cd12_tex_content_verified": 12,
       "written_stale_projection_verified": 2,
-      "unresolved_field_differences": 10,
+      "unresolved_field_differences": 0,
       "scope": "26 flagged rows assessed; two Written projection updates deferred to authorized cutover; math/PED audit of entire bank pending. Historical structural reconciliation and import flag counts unchanged.",
       "prior_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090#issuecomment-7131604124",
       "field_review_checkpoint": {
         "checked_candidate_snapshot": "4896168d177f4d6834339c8eacc944f8dede4dd0",
-        "reviewed_field_flags": 44,
-        "still_unreviewed_field_flags": 10,
-        "notes": "21 Topic flags resolved as content equivalent; 23 SGK G10 ChVII flags classified same math/key/solution, richer learner scaffolding must be preserved at cutover. T40 outcome metadata and W07/TRY13 pedagogical follow-ups remain. No item or placement edit."
+        "reviewed_field_flags": 54,
+        "still_unreviewed_field_flags": 0,
+        "notes": "21 Topic flags resolved as content equivalent; 23 SGK G10 ChVII flags classified same math/key/solution, richer learner scaffolding must be preserved at cutover. T40 outcome metadata and W07/TRY13 pedagogical follow-ups remain. No item or placement edit.",
+        "last_checked_candidate_snapshot": "277b1a7643f95520cfc094c1fda3f497ceab297c",
+        "last_batch_count": 10
+      },
+      "final_flag_disposition": {
+        "status": "ALL_80_RECORDED_FLAGS_TRIAGED_NOT_ALL_CORRECTIONS_COMPLETE",
+        "total_flags": 80,
+        "verified_equivalent_content": 45,
+        "same_task_with_context_or_scaffold_preservation": 33,
+        "verified_stale_written_projection": 2,
+        "unreviewed_flags": 0,
+        "scope": "All recorded migration flags classified; 2 stale Written projections and 33 same-task placements require preserving context/scaffolding/reveal semantics at authorized cutover. No assertion of global source equivalence outside flagged rows or full academic/PED audit. Legacy counts retained."
       }
     }
   }
