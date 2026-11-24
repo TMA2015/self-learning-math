@@ -1261,12 +1261,15 @@
   },
   {
     "item_id": "THPT-G11-CHI-TRY01",
-    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4_AUTHOR_KEY_REVIEW_R01",
     "stem": "Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Nêu góc quay theo radian và độ dài cung đã đi.",
-    "answer_key": null,
+    "answer_key": "+2π rad; độ dài cung 4π cm.",
     "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Góc quay \\(+2\\pi\\) rad. Một vòng dài \\(2\\pi R\\), nên với \\(R=2\\) cm, độ dài cung là \\(4\\pi\\) cm. Tia cuối trùng tia đầu không có nghĩa là bánh xe đứng yên.</p>",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-ARC_LENGTH",
+      "G11-B01-DEG_RAD"
+    ],
     "original_outcome_ids": [
       "G11-B01-SIGNED_ROTATION"
     ],
@@ -1289,16 +1292,18 @@
       "help_ref": "HELP-G11-CHI-TRY01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-CHI-TRY02",
-    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hai góc \\(-150^\\circ\\) và \\(210^\\circ\\) có cùng tia đầu Ox. Chúng có cùng tia cuối không? Viết các số đo cùng tia cuối với \\(210^\\circ\\).",
-    "answer_key": null,
+    "answer_key": "Có; các số đo là 210°+k·360°, k∈ℤ.",
     "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Có, vì \\(210^\\circ-(-150^\\circ)=360^\\circ\\). Các góc cùng tia cuối có số đo \\(210^\\circ+k\\cdot360^\\circ\\), \\(k\\in\\mathbb Z\\).</p>",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-PERIODIC_REDUCTION"
+    ],
     "original_outcome_ids": [
       "G11-B01-COTERMINAL"
     ],
@@ -1321,16 +1326,19 @@
       "help_ref": "HELP-G11-CHI-TRY02"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-CHI-TRY03",
-    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho quỹ đạo tròn bán kính 6800 km. Tính độ dài cung chắn góc \\(45^\\circ\\), làm tròn đến kilômét.",
-    "answer_key": null,
+    "answer_key": "1700π km ≈ 5341 km.",
     "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Đổi \\(45^\\circ=\\pi/4\\) rad. Khi đó \\(s=6800\\cdot\\pi/4=1700\\pi\\approx5341\\) km. Đây là độ dài cung, không phải dây cung.</p>",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-ARC_LENGTH",
+      "G11-B01-DEG_RAD"
+    ],
     "original_outcome_ids": [
       "G11-B01-ARC_LENGTH"
     ],
@@ -1353,16 +1361,18 @@
       "help_ref": "HELP-G11-CHI-TRY03"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-CHI-TRY04",
-    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tính \\(\\sin(7\\pi/6)\\), \\(\\cos(7\\pi/6)\\) và \\(\\tan(7\\pi/6)\\).",
-    "answer_key": null,
+    "answer_key": "sin=−1/2; cos=−√3/2; tan=√3/3.",
     "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Góc \\(7\\pi/6\\) thuộc góc phần tư III, có góc tham chiếu \\(\\pi/6\\). Do đó \\(\\sin(7\\pi/6)=-1/2\\), \\(\\cos(7\\pi/6)=-\\sqrt3/2\\), \\(\\tan(7\\pi/6)=\\sqrt3/3\\).</p>",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-TRIG_UNIT_CIRCLE"
+    ],
     "original_outcome_ids": [
       "G11-B01-UNIT_CIRCLE"
     ],
@@ -1385,16 +1395,18 @@
       "help_ref": "HELP-G11-CHI-TRY04"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-CHI-TRY05",
-    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với \\(\\alpha=3\\pi/2\\), xác định \\(\\sin\\alpha,\\cos\\alpha\\); xét sự tồn tại của \\(\\tan\\alpha,\\cot\\alpha\\).",
-    "answer_key": null,
+    "answer_key": "sinα=−1; cosα=0; tanα không xác định; cotα=0.",
     "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Điểm cuối \\((0;-1)\\) nên \\(\\sin\\alpha=-1\\), \\(\\cos\\alpha=0\\). Tang không xác định vì mẫu cos bằng 0; côtang bằng \\(0/(-1)=0\\).</p>",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-TRIG_UNIT_CIRCLE"
+    ],
     "original_outcome_ids": [
       "G11-B01-TRIG_DOMAIN"
     ],
@@ -1417,16 +1429,18 @@
       "help_ref": "HELP-G11-CHI-TRY05"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-CHI-TRY06",
-    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+    "content_version": "SOURCE_BLOB_0603fbb2b61374fcd49eff3c119197cff3fa77e4_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tính \\(\\sin(-\\pi/6)\\) và \\(\\cos(\\pi-\\pi/6)\\) dựa vào góc chuẩn \\(\\pi/6\\).",
-    "answer_key": null,
+    "answer_key": "sin(−π/6)=−1/2; cos(5π/6)=−√3/2.",
     "worked_solution": "<p><strong>Đáp án và lập luận:</strong> Với góc đối: \\(\\sin(-\\pi/6)=-\\sin(\\pi/6)=-1/2\\). Với góc bù: \\(\\cos(\\pi-\\pi/6)=-\\cos(\\pi/6)=-\\sqrt3/2\\).</p>",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B01-RELATED_ANGLES"
+    ],
     "original_outcome_ids": [
       "G11-B01-RELATED_ANGLES"
     ],
@@ -1449,16 +1463,18 @@
       "help_ref": "HELP-G11-CHI-TRY06"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B02-KFT02",
-    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6_AUTHOR_KEY_REVIEW_R01",
     "stem": "Biết \\(\\cos a=-\\dfrac5{13}\\) và \\(\\dfrac{\\pi}{2}<a<\\pi\\). Tìm \\(\\sin2a\\) và \\(\\cos2a\\).",
-    "answer_key": null,
+    "answer_key": "sin 2a=−120/169; cos 2a=−119/169.",
     "worked_solution": "**Lời giải:** Vì \\(a\\) ở góc phần tư II nên \\(\\sin a>0\\). Từ hệ thức cơ bản, \\(\\sin a=\\sqrt{1-\\frac{25}{169}}=\\frac{12}{13}\\). Do đó\n\n\\[\n\\sin2a=2\\cdot\\frac{12}{13}\\cdot\\left(-\\frac5{13}\\right)=-\\frac{120}{169},\n\\qquad\n\\cos2a=2\\left(-\\frac5{13}\\right)^2-1=-\\frac{119}{169}.\n\\]\n\n**Kiểm lại:** \\(\\dfrac{120^2+119^2}{169^2}=1\\), phù hợp hệ thức \\(\\sin^22a+\\cos^22a=1\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B02-DOUBLE_ANGLE"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1482,16 +1498,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B02-KFT03",
-    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6_AUTHOR_KEY_REVIEW_R01",
     "stem": "Không dùng máy tính, tính \\(2\\cos75^\\circ\\cos45^\\circ\\).",
-    "answer_key": null,
+    "answer_key": "(√3−1)/2.",
     "worked_solution": "**Lời giải:** Từ công thức \\(2\\cos a\\cos b=\\cos(a-b)+\\cos(a+b)\\), ta có\n\n\\[\n2\\cos75^\\circ\\cos45^\\circ\n=\\cos30^\\circ+\\cos120^\\circ\n=\\frac{\\sqrt3}{2}-\\frac12\n=\\frac{\\sqrt3-1}{2}.\n\\]\n\n**Kiểm lại:** Cả \\(\\cos75^\\circ\\) và \\(\\cos45^\\circ\\) đều dương nên tích phải dương, đúng với kết quả.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B02-PRODUCT_TO_SUM"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1515,16 +1533,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B02-KFT04",
-    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6_AUTHOR_KEY_REVIEW_R01",
     "stem": "Không dùng máy tính, tính \\(\\sin75^\\circ-\\sin15^\\circ\\).",
-    "answer_key": null,
+    "answer_key": "√2/2.",
     "worked_solution": "**Lời giải:** Dùng \\(\\sin u-\\sin v=2\\cos\\dfrac{u+v}{2}\\sin\\dfrac{u-v}{2}\\):\n\n\\[\n\\sin75^\\circ-\\sin15^\\circ\n=2\\cos45^\\circ\\sin30^\\circ\n=\\frac{\\sqrt2}{2}.\n\\]\n\n**Kiểm lại:** \\(\\sin75^\\circ>\\sin15^\\circ\\), nên hiệu phải dương. Nửa tổng bằng \\(45^\\circ\\), nửa hiệu bằng \\(30^\\circ\\), không phải \\(90^\\circ\\) và \\(60^\\circ\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B02-SUM_TO_PRODUCT"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1548,16 +1568,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B02-KFT05",
-    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hai tín hiệu được mô tả bởi \\(y_1(t)=\\sin(800\\pi t)\\) và \\(y_2(t)=\\sin(880\\pi t)\\), trong đó \\(t\\) tính bằng giây. Viết \\(y(t)=y_1(t)+y_2(t)\\) thành một tích, rồi cho biết vì sao chưa thể coi đó là một sóng sin duy nhất có biên độ không đổi.",
-    "answer_key": null,
-    "worked_solution": "**Lời giải:** Lấy \\(u=800\\pi t\\), \\(v=880\\pi t\\). Khi đó \\((u+v)/2=840\\pi t\\), \\((u-v)/2=-40\\pi t\\). Vì cos là hàm chẵn,\n\n\\[\ny(t)=2\\sin(840\\pi t)\\cos(40\\pi t).\n\\]\n\nHệ số \\(2\\cos(40\\pi t)\\) **thay đổi theo thời gian**, nên không phải một biên độ cố định. Hai cách viết vẫn mô tả cùng một tín hiệu tổng hợp.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "y(t)=2sin(840πt)cos(40πt); hệ số điều biến thay đổi theo t, không phải biên độ cố định.",
+    "worked_solution": "**Lời giải:** Lấy \\(u=800\\pi t\\), \\(v=880\\pi t\\). Khi đó \\((u+v)/2=840\\pi t\\), \\((u-v)/2=-40\\pi t\\). Vì cos là hàm chẵn,\n\n\\[\ny(t)=2\\sin(840\\pi t)\\cos(40\\pi t).\n\\]\n\nHệ số \\(2\\cos(40\\pi t)\\) thay đổi theo thời gian. Độ lớn của hệ số này, \\(2|\\cos(40\\pi t)|\\), biến thiên từ 0 đến 2: tại \\(t=0\\) bằng 2, tại \\(t=1/80\\) bằng 0. Vì vậy không thể đơn giản coi biểu thức này là một dao động sin ở tần số trung bình với biên độ cố định. Hai cách viết vẫn mô tả cùng tín hiệu tổng hợp.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B02-SUM_TO_PRODUCT"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1581,16 +1603,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B03-KFT01",
-    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tại \\(x=0\\) và \\(x=\\pi/2\\), hãy xác định những hàm nào trong sin, cos, tan, cot có giá trị; nếu có thì giá trị bằng bao nhiêu?",
-    "answer_key": null,
+    "answer_key": "x=0: sin=0, cos=1, tan=0, cot không xác định. x=π/2: sin=1, cos=0, tan không xác định, cot=0.",
     "worked_solution": "**Lời giải:** Với \\(x=0\\): \\(\\sin0=0,\\ \\cos0=1,\\ \\tan0=0\\), còn \\(\\cot0\\) không xác định vì mẫu \\(\\sin0=0\\). Với \\(x=\\pi/2\\): \\(\\sin(\\pi/2)=1,\\ \\cos(\\pi/2)=0,\\ \\cot(\\pi/2)=0\\), còn \\(\\tan(\\pi/2)\\) không xác định vì mẫu \\(\\cos(\\pi/2)=0\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-DOMAIN_RANGE"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1614,16 +1638,19 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B03-KFT02",
-    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a_AUTHOR_KEY_REVIEW_R01",
     "stem": "Xét \\(f(x)=x\\sin x\\) trên \\(\\mathbb R\\): hàm chẵn hay lẻ? Hàm hằng \\(g(x)=2\\) trên \\(\\mathbb R\\) có chu kì dương nhỏ nhất không?",
-    "answer_key": null,
-    "worked_solution": "**Lời giải:** \\(f(-x)=(-x)\\sin(-x)=x\\sin x=f(x)\\), nên \\(f\\) chẵn. Với \\(g(x)=2\\), mọi \\(T>0\\) đều thỏa \\(g(x+T)=g(x)\\), nên hàm tuần hoàn nhưng không có số dương nhỏ nhất thỏa điều kiện; do đó **không có chu kì** theo định nghĩa SGK.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "f chẵn; g tuần hoàn nhưng không có chu kì dương nhỏ nhất.",
+    "worked_solution": "**Lời giải:** \\(f\\) xác định trên \\(\\mathbb R\\), là tập đối xứng qua 0. \\(f(-x)=(-x)\\sin(-x)=x\\sin x=f(x)\\), nên \\(f\\) chẵn. Với \\(g(x)=2\\), mọi \\(T>0\\) đều thỏa \\(g(x+T)=g(x)\\). Nhưng nếu T thỏa thì T/2 cũng thỏa và nhỏ hơn T. Do đó không tồn tại số dương nhỏ nhất; hàm vẫn tuần hoàn nhưng không có chu kì nhỏ nhất theo cách định nghĩa trong bài.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-PARITY",
+      "G11-B03-PERIOD"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1647,16 +1674,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B03-KFT04",
-    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trên \\([0;2\\pi]\\), tìm các \\(x\\) sao cho \\(\\cos x<0\\).",
-    "answer_key": null,
-    "worked_solution": "**Lời giải:** Đồ thị cos nằm dưới trục hoành đúng khi \\(x\\in(\\pi/2;3\\pi/2)\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "x∈(π/2;3π/2).",
+    "worked_solution": "**Lời giải:** Trên đường tròn lượng giác, \\(\\cos x\\) là hoành độ của điểm biểu diễn góc x. Trong một vòng từ 0 đến \\(2\\pi\\), hoành độ âm ở góc phần tư II và III, tương ứng \\(x\\in(\\pi/2;3\\pi/2)\\). Không lấy hai đầu mút vì tại đó cos bằng 0. Trên đồ thị, đây chính là đoạn đường cong nằm dưới trục hoành.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-COS_GRAPH"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1680,16 +1709,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B03-KFT05",
-    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trên \\((-\\pi/2;\\pi/2)\\), tìm tập nghiệm \\(\\tan x\\ge0\\).",
-    "answer_key": null,
+    "answer_key": "x∈[0;π/2).",
     "worked_solution": "**Lời giải:** Nhánh đi qua \\(O\\), nằm dưới trục hoành khi \\(x<0\\) và trên trục hoành khi \\(x>0\\). Vậy \\(x\\in[0;\\pi/2)\\). Không lấy \\(\\pi/2\\) vì hàm không xác định.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-TAN_GRAPH"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1713,16 +1744,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B03-KFT06",
-    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trên \\((0;\\pi)\\), khi nào \\(\\cot x<0\\)?",
-    "answer_key": null,
+    "answer_key": "x∈(π/2;π).",
     "worked_solution": "**Lời giải:** Trên \\((0;\\pi/2)\\), \\(\\sin x,\\cos x\\) đều dương, nên cot dương. Trên \\((\\pi/2;\\pi)\\), sin dương, cos âm, nên cot âm. Tập cần tìm là \\((\\pi/2;\\pi)\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-COT_GRAPH"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1746,15 +1779,15 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B04-KFT01",
-    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hai phương trình \\(x-3=0\\) và \\((x-3)^2=0\\) có tương đương không? Còn hai phương trình \\(\\dfrac{x-1}{x+1}=0\\) và \\(x^2-1=0\\)?",
-    "answer_key": null,
+    "answer_key": "Cặp thứ nhất tương đương, cùng tập nghiệm {3}; cặp thứ hai không tương đương, tập nghiệm {1} và {−1;1}.",
     "worked_solution": "**Lời giải:** Hai phương trình thứ nhất đều có tập nghiệm \\(\\{3\\}\\), nên tương đương. Phương trình phân thức có điều kiện \\(x\\ne-1\\) và nghiệm \\(x=1\\), còn \\(x^2-1=0\\) có nghiệm \\(x=\\pm1\\); hai phương trình sau không tương đương.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [],
     "original_outcome_ids": [],
     "problem_type_id": null,
@@ -1779,16 +1812,19 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_REVIEWED_SKILL_MAPPING_PENDING"
   },
   {
     "item_id": "THPT-G11-B04-KFT04",
-    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92_AUTHOR_KEY_REVIEW_R01",
     "stem": "Giải \\(\\tan(2x)=1\\) trên \\(\\mathbb R\\).",
-    "answer_key": null,
-    "worked_solution": "**Lời giải:** \\(\\tan(2x)=\\tan(\\pi/4)\\), nên \\(2x=\\pi/4+k\\pi\\). Suy ra \\(x=\\pi/8+k\\pi/2\\), \\(k\\in\\mathbb Z\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "x=π/8+kπ/2, k∈ℤ.",
+    "worked_solution": "**Lời giải:** Điều kiện \\(\\cos(2x)\\ne0\\), tức \\(2x\\ne\\pi/2+k\\pi\\), \\(k\\in\\mathbb Z\\). Vì \\(\\tan(2x)=\\tan(\\pi/4)\\), ta có \\(2x=\\pi/4+k\\pi\\). Suy ra \\(x=\\pi/8+k\\pi/2\\), \\(k\\in\\mathbb Z\\). Mọi nghiệm này thỏa điều kiện vì \\(\\cos(\\pi/4+k\\pi)=(-1)^k\\sqrt2/2\\ne0\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-TAN_EQ",
+      "G11-B04-TRANSFORM"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1812,16 +1848,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B04-KFT05",
-    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92_AUTHOR_KEY_REVIEW_R01",
     "stem": "Giải \\(\\cot x=-1\\).",
-    "answer_key": null,
+    "answer_key": "x=3π/4+kπ, k∈ℤ.",
     "worked_solution": "**Lời giải:** Vì \\(\\cot(3\\pi/4)=-1\\), nghiệm là \\(x=3\\pi/4+k\\pi\\), \\(k\\in\\mathbb Z\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-COT_EQ"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1845,16 +1883,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B04-KFT06",
-    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92_AUTHOR_KEY_REVIEW_R01",
     "stem": "Dùng chế độ RAD hoặc phép tính gần đúng, xác định một góc \\(\\alpha\\in[-\\pi/2;\\pi/2]\\) thỏa \\(\\sin\\alpha=0{,}5\\). Nếu đang ở DEG, máy sẽ hiện số gần bằng bao nhiêu?",
-    "answer_key": null,
+    "answer_key": "α=π/6≈0,5236 rad; DEG: 30°.",
     "worked_solution": "**Lời giải:** \\(\\alpha=\\pi/6\\approx0{,}5236\\) rad. Ở chế độ DEG, máy hiển thị \\(30^\\circ\\). Một kết quả khác đơn vị **không phải** một góc khác; \\(\\pi/6\\) rad chính là \\(30^\\circ\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-SIN_EQ"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1878,16 +1918,18 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B02-KFT01",
-    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6_AUTHOR_KEY_REVIEW_R01",
     "stem": "Không dùng máy tính, tính \\(\\cos15^\\circ\\) bằng cách viết \\(15^\\circ=45^\\circ-30^\\circ\\).",
-    "answer_key": null,
+    "answer_key": "(√6+√2)/4.",
     "worked_solution": "**Lời giải:** \\(\\cos15^\\circ=\\cos45^\\circ\\cos30^\\circ+\\sin45^\\circ\\sin30^\\circ=\\dfrac{\\sqrt2}{2}\\cdot\\dfrac{\\sqrt3}{2}+\\dfrac{\\sqrt2}{2}\\cdot\\dfrac12=\\dfrac{\\sqrt6+\\sqrt2}{4}\\).\n\n**Kiểm lại:** \\(15^\\circ\\) thuộc góc phần tư I, nên kết quả phải dương và nhỏ hơn \\(1\\); \\((\\sqrt6+\\sqrt2)/4\\approx0{,}966\\) thỏa điều đó.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B02-SUM_DIFFERENCE"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1915,16 +1957,18 @@
       "distinct_task_reason": "Existing public selfcheck asks both sin15° and cos15°; source asks cos15° by difference formula only. Same answer as sin75° is not same task."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B03-KFT03",
-    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trên một vòng \\(0\\le x\\le2\\pi\\), hàm \\(\\sin x\\) dương khi nào? Đạt giá trị lớn nhất và nhỏ nhất ở đâu?",
-    "answer_key": null,
+    "answer_key": "sin x>0 khi x∈(0;π); GTLN 1 tại π/2; GTNN −1 tại 3π/2.",
     "worked_solution": "**Lời giải:** \\(\\sin x>0\\) khi \\(x\\in(0;\\pi)\\). Giá trị lớn nhất \\(1\\) tại \\(x=\\pi/2\\), nhỏ nhất \\(-1\\) tại \\(x=3\\pi/2\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B03-SIN_GRAPH"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1952,16 +1996,19 @@
       "distinct_task_reason": "Existing asks range and maxima on R; source also asks positive interval and minimum on [0,2π]."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B04-KFT02",
-    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm tất cả \\(x\\in\\mathbb R\\) sao cho \\(\\sin x=-\\frac12\\), rồi tìm các nghiệm trong \\([0;2\\pi)\\).",
-    "answer_key": null,
+    "answer_key": "x=−π/6+2kπ hoặc x=7π/6+2kπ, k∈ℤ; trong [0;2π): 7π/6 và 11π/6.",
     "worked_solution": "**Lời giải:** Chọn \\(\\alpha=-\\pi/6\\). Hai họ là \\(x=-\\pi/6+2k\\pi\\) hoặc \\(x=7\\pi/6+2k\\pi\\), \\(k\\in\\mathbb Z\\). Trong \\([0;2\\pi)\\), hai nghiệm là \\(7\\pi/6\\) và \\(11\\pi/6\\) (từ họ thứ nhất với \\(k=1\\)).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-SIN_EQ",
+      "G11-B04-INTERVAL"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1989,16 +2036,19 @@
       "distinct_task_reason": "Existing solves same sin equation on R only; source additionally lists solutions in [0,2π)."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B04-KFT03",
-    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92_AUTHOR_KEY_REVIEW_R01",
     "stem": "Giải \\(\\cos x=0\\) trên \\(\\mathbb R\\), rồi nêu nghiệm thuộc \\([0;2\\pi)\\).",
-    "answer_key": null,
+    "answer_key": "x=π/2+kπ, k∈ℤ; trong [0;2π): π/2 và 3π/2.",
     "worked_solution": "**Lời giải:** \\(\\cos x=0\\) khi \\(x=\\pi/2+k\\pi\\), \\(k\\in\\mathbb Z\\). Trong \\([0;2\\pi)\\) có \\(x=\\pi/2\\) và \\(x=3\\pi/2\\).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B04-COS_EQ",
+      "G11-B04-INTERVAL"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -2026,6 +2076,6 @@
       "distinct_task_reason": "Existing asks zeros on [0,2π]; source also asks full real solution family."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
