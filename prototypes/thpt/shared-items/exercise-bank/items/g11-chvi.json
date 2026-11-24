@@ -1269,7 +1269,11 @@
     "answer_key": "5³=125; log₄0 không xác định; log₂(4+4)=3≠4.",
     "worked_solution": "Theo định nghĩa logarit, log₅125=3 tương đương 5³=125. Với cơ số 4>0, 4^x>0 với mọi x thực nên không có x để 4^x=0. Vì 4+4=8, log₂8=3; còn log₂4+log₂4=2+2=4. Quy tắc cộng logarit áp dụng cho tích hai đối số dương, không áp dụng cho tổng.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B19-LOG_DEFINITION",
+      "G11-B19-LOG_DOMAIN",
+      "G11-B19-LOG_LAWS"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1300,16 +1304,20 @@
       "legacy_reveal": "Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B20-KFT01",
-    "content_version": "SOURCE_BLOB_1587f399e7ea9557a9fc490768c589991f25dcb0_AUTHORING_ANSWER_DRAFT",
-    "stem": "Vì sao `y=3^x` không thể bằng −5? Nếu `log₂8=3`, hãy tìm hai điểm tương ứng trên hai đồ thị. Vì sao `log_{1/2}x` nghịch biến?",
+    "content_version": "SOURCE_BLOB_1587f399e7ea9557a9fc490768c589991f25dcb0_AUTHORING_ANSWER_DRAFT_AUTHOR_REVIEW_R01",
+    "stem": "Vì sao y=3^x không thể bằng −5? Nếu log₂8=3, hãy tìm hai điểm tương ứng trên đồ thị y=2^x và y=log₂x. Vì sao log_{1/2}x nghịch biến?",
     "answer_key": "3^x>0; (3;8) trên y=2^x và (8;3) trên y=log₂x; log₁/₂x nghịch biến trên (0;+∞).",
-    "worked_solution": "Hàm mũ cơ số 3 luôn dương nên không nhận giá trị −5. Từ log₂8=3 suy ra 2³=8, hai đồ thị hàm ngược đổi chỗ tọa độ. Vì 0<1/2<1, hàm (1/2)^x nghịch biến; hàm ngược log₁/₂x cũng nghịch biến trên miền x>0.",
+    "worked_solution": "Hàm mũ cơ số 3 luôn dương nên không nhận giá trị −5. Từ log₂8=3 suy ra 2³=8, hai đồ thị hàm ngược đổi chỗ tọa độ. Với 0<u<v, đặt a=log_{1/2}u và b=log_{1/2}v. Vì (1/2)^a=u<v=(1/2)^b và hàm mũ cơ số 1/2 nghịch biến, ta có a>b. Vậy log_{1/2}x nghịch biến trên (0;+∞).",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B20-EXP_FUNCTION",
+      "G11-B20-INVERSE_GRAPH",
+      "G11-B20-LOG_MONOTONIC"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1335,7 +1343,7 @@
       "legacy_reveal": "Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B21-KFT01",
@@ -1344,7 +1352,10 @@
     "answer_key": "x<3; điều kiện x>1.",
     "worked_solution": "Hàm (1/2)^x nghịch biến, nên bất đẳng thức giữa hai giá trị đảo chiều khi so sánh số mũ: x<3. Logarit log₂(x−1) có nghĩa khi x−1>0, tức x>1; phải kiểm điều kiện trước khi chuyển sang x−1=2³.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B21-EXP_INEQUALITY",
+      "G11-B21-DOMAIN_CHECK"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1370,6 +1381,6 @@
       "legacy_reveal": "Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
