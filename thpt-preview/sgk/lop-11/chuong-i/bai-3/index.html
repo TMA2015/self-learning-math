@@ -12031,30 +12031,44 @@
 </div>
 <div class="tabbed-block">
 <h2 class="thpt-g10-section-heading">4. Lỗi thường gặp và cách tự khắc phục</h2>
-<h3 id="41-lay-nham-gia-tri-cua-ham-tai-iem-khong-xac-inh">4.1. Lấy nhầm giá trị của hàm tại điểm không xác định</h3>
+<p>Mở từng mục để xem dấu hiệu, vì sao sai và cách sửa.</p>
+
+<details class="tip" id="41-lay-nham-gia-tri-cua-ham-tai-iem-khong-xac-inh">
+<summary>4.1. Lấy nhầm giá trị của hàm tại điểm không xác định</summary>
 <p><strong>Dấu hiệu:</strong> Viết <span class="arithmatex">\(\tan(\pi/2)=0\)</span> hoặc <span class="arithmatex">\(\cot0=0\)</span> vì “trên hình gần trục tung”.</p>
 <p><strong>Vì sao sai:</strong> Tang là thương có mẫu <span class="arithmatex">\(\cos x\)</span>; cot là thương có mẫu <span class="arithmatex">\(\sin x\)</span>. Tại các điểm ấy, mẫu bằng <span class="arithmatex">\(0\)</span>, nên không có giá trị.</p>
 <p><strong>Cách sửa:</strong> Trước mọi bài tập hoặc hình, xác định tập xác định. Kiểm điểm nghi ngờ bằng cách thay vào mẫu của tỉ số.</p>
-<h3 id="42-xet-chan-le-ma-khong-kiem-mien-xac-inh">4.2. Xét chẵn lẻ mà không kiểm miền xác định</h3>
+</details>
+<details class="tip" id="42-xet-chan-le-ma-khong-kiem-mien-xac-inh">
+<summary>4.2. Xét chẵn lẻ mà không kiểm miền xác định</summary>
 <p><strong>Dấu hiệu:</strong> Chỉ tính <span class="arithmatex">\(f(-x)\)</span> tại vài giá trị rồi gọi hàm chẵn/lẻ, hoặc bỏ qua việc <span class="arithmatex">\(-x\)</span> phải thuộc <span class="arithmatex">\(D\)</span>.</p>
 <p><strong>Vì sao sai:</strong> Định nghĩa chẵn/lẻ đòi điều kiện <strong>mọi</strong> <span class="arithmatex">\(x\in D\)</span> thì <span class="arithmatex">\(-x\in D\)</span> và đồng nhất thức đúng trên toàn miền.</p>
 <p><strong>Cách sửa:</strong> Kiểm miền <span class="arithmatex">\(D\)</span> đối xứng trước; sau đó biến đổi <span class="arithmatex">\(f(-x)\)</span> cho mọi <span class="arithmatex">\(x\in D\)</span> để so với <span class="arithmatex">\(f(x),-f(x)\)</span>.</p>
-<h3 id="43-nham-khoang-lap-voi-chu-ki-nho-nhat">4.3. Nhầm khoảng lặp với chu kì nhỏ nhất</h3>
+</details>
+<details class="tip" id="43-nham-khoang-lap-voi-chu-ki-nho-nhat">
+<summary>4.3. Nhầm khoảng lặp với chu kì nhỏ nhất</summary>
 <p><strong>Dấu hiệu:</strong> Nói hàm hằng có chu kì bằng <span class="arithmatex">\(1\)</span>, hoặc cho <span class="arithmatex">\(T=3\cdot2\pi\)</span> là chu kì nhỏ nhất của sin.</p>
 <p><strong>Vì sao sai:</strong> Một số dương làm hàm lặp lại chưa chắc là số dương <strong>nhỏ nhất</strong>; hàm hằng trên <span class="arithmatex">\(\mathbb R\)</span> không có chu kì theo định nghĩa SGK.</p>
 <p><strong>Cách sửa:</strong> Phân biệt <strong>khoảng lặp</strong> bất kì với <strong>chu kì nhỏ nhất nếu có</strong>; kiểm đối số và miền xác định, không chỉ thử một giá trị của <span class="arithmatex">\(T\)</span>.</p>
-<h3 id="44-nham-khoang-ong-bien-va-nghich-bien-tren-hinh-sincos">4.4. Nhầm khoảng đồng biến và nghịch biến trên hình sin/cos</h3>
+</details>
+<details class="tip" id="44-nham-khoang-ong-bien-va-nghich-bien-tren-hinh-sincos">
+<summary>4.4. Nhầm khoảng đồng biến và nghịch biến trên hình sin/cos</summary>
 <p><strong>Dấu hiệu:</strong> Thấy sin tăng từ <span class="arithmatex">\(0\)</span> tới <span class="arithmatex">\(\pi/2\)</span> rồi suy ra luôn tăng, hoặc gọi cos là hàm lẻ vì có điểm cắt trục hoành.</p>
 <p><strong>Vì sao sai:</strong> Mỗi đồ thị đổi chiều sau đỉnh/đáy; sin lẻ, cos chẵn theo quan hệ đối xứng của toàn đồ thị.</p>
 <p><strong>Cách sửa:</strong> Đọc một chu kì đủ các mốc <span class="arithmatex">\(0,\pi/2,\pi,3\pi/2,2\pi\)</span>; đối chiếu tính chẵn/lẻ bằng <span class="arithmatex">\(f(-x)\)</span>.</p>
-<h3 id="45-noi-cac-nhanh-cua-tancot-qua-tiem-can">4.5. Nối các nhánh của tan/cot qua tiệm cận</h3>
+</details>
+<details class="tip" id="45-noi-cac-nhanh-cua-tancot-qua-tiem-can">
+<summary>4.5. Nối các nhánh của tan/cot qua tiệm cận</summary>
 <p><strong>Dấu hiệu:</strong> Vẽ đường nối xuyên qua <span class="arithmatex">\(x=\pi/2+k\pi\)</span> của tan hoặc <span class="arithmatex">\(x=k\pi\)</span> của cot.</p>
 <p><strong>Vì sao sai:</strong> Các đường đó nằm ngoài miền xác định. Mỗi nhánh chỉ liên tục trên một khoảng giữa hai đường cấm.</p>
 <p><strong>Cách sửa:</strong> Đánh dấu tiệm cận <strong>trước khi</strong> đặt điểm, vẽ các nhánh tách biệt; kiểm chiều tăng (tan) hoặc giảm (cot) trên từng khoảng.</p>
-<h3 id="46-quen-on-vi-va-mien-thoi-gian-trong-ung-dung">4.6. Quên đơn vị và miền thời gian trong ứng dụng</h3>
+</details>
+<details class="tip" id="46-quen-on-vi-va-mien-thoi-gian-trong-ung-dung">
+<summary>4.6. Quên đơn vị và miền thời gian trong ứng dụng</summary>
 <p><strong>Dấu hiệu:</strong> Mô hình có <span class="arithmatex">\(t\)</span> tính bằng giây nhưng kết luận chu kì bằng số giờ, hoặc liệt kê cả thời điểm âm dù bài chỉ cho <span class="arithmatex">\(t\ge0\)</span>.</p>
 <p><strong>Vì sao sai:</strong> Chu kì của công thức tính theo đúng đơn vị của đầu vào; nghiệm toán học ngoài miền mô hình không là thời điểm được chấp nhận.</p>
 <p><strong>Cách sửa:</strong> Ghi rõ đơn vị biến, giải công thức chu kì, sau đó giao với miền thời gian yêu cầu và kiểm lại trong ngữ cảnh.</p>
+</details>
 <p><p class="thpt-r4-footnote">Nguồn đối chiếu: SGK Toán 11, Kết nối tri thức với cuộc sống, tập một, Bài 3 “Hàm số lượng giác”, trang in 22–30. Bốn hình SVG đồ thị tái sử dụng canonical assets hiện hữu; không tạo nguồn hình song song.</p></p>
 </div>
 </div>

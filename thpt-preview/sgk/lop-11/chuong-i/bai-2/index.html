@@ -11948,26 +11948,38 @@ y(t)=2\sin(840\pi t)\cos(40\pi t).
 </div>
 <div class="tabbed-block">
 <h2 class="thpt-g10-section-heading">4. Lỗi thường gặp và cách tự khắc phục</h2>
-<h3 id="41-cong-gia-tri-luong-giac-nhu-cong-so-o-goc">4.1. Cộng giá trị lượng giác như cộng số đo góc</h3>
+<p>Mở từng mục để xem dấu hiệu, vì sao sai và cách sửa.</p>
+
+<details class="tip" id="41-cong-gia-tri-luong-giac-nhu-cong-so-o-goc">
+<summary>4.1. Cộng giá trị lượng giác như cộng số đo góc</summary>
 <p><strong>Dấu hiệu:</strong> Viết <span class="arithmatex">\(\sin(a+b)=\sin a+\sin b\)</span>, hoặc <span class="arithmatex">\(\cos(a+b)=\cos a+\cos b\)</span>.</p>
 <p><strong>Vì sao sai:</strong> Sin, cos không phân phối qua dấu cộng. Chẳng hạn <span class="arithmatex">\(\sin(30^\circ+60^\circ)=1\)</span>, trong khi <span class="arithmatex">\(\sin30^\circ+\sin60^\circ=(1+\sqrt3)/2\ne1\)</span>.</p>
 <p><strong>Cách sửa:</strong> Nhìn dấu cộng/trừ <strong>nằm trong đối số</strong>, rồi viết đủ hai tích theo công thức cộng. Có thể kiểm bằng cách chọn <span class="arithmatex">\(a=b\)</span> trước khi dùng công thức.</p>
-<h3 id="42-nho-nham-dau-quen-ieu-kien-cua-tan">4.2. Nhớ nhầm dấu, quên điều kiện của tan</h3>
+</details>
+<details class="tip" id="42-nho-nham-dau-quen-ieu-kien-cua-tan">
+<summary>4.2. Nhớ nhầm dấu, quên điều kiện của tan</summary>
 <p><strong>Dấu hiệu:</strong> Dùng dấu trừ cho <span class="arithmatex">\(\cos(a-b)\)</span>, hoặc tính <span class="arithmatex">\(\tan(a+b)\)</span> khi <span class="arithmatex">\(1-\tan a\tan b=0\)</span>.</p>
 <p><strong>Vì sao sai:</strong> Dấu của công thức cos tổng và cos hiệu đối nhau ở tích sin. Với tan, mẫu số bằng <span class="arithmatex">\(0\)</span> thì tỉ số không xác định; chẳng hạn <span class="arithmatex">\(\tan(\pi/4+\pi/4)=\tan(\pi/2)\)</span> không tồn tại.</p>
 <p><strong>Cách sửa:</strong> Viết lại công thức từ <span class="arithmatex">\(\cos(a-b)\)</span> rồi thay <span class="arithmatex">\(b\to-b\)</span> khi cần. Với tan, kiểm <span class="arithmatex">\(\cos a,\cos b\)</span> và mẫu số trước khi thay số.</p>
-<h3 id="43-lay-can-duong-du-goc-nam-o-goc-phan-tu-co-cos-am">4.3. Lấy căn dương dù góc nằm ở góc phần tư có cos âm</h3>
+</details>
+<details class="tip" id="43-lay-can-duong-du-goc-nam-o-goc-phan-tu-co-cos-am">
+<summary>4.3. Lấy căn dương dù góc nằm ở góc phần tư có cos âm</summary>
 <p><strong>Dấu hiệu:</strong> Từ <span class="arithmatex">\(\sin a=3/5\)</span> và <span class="arithmatex">\(a\in(\pi/2,\pi)\)</span> lại viết <span class="arithmatex">\(\cos a=4/5\)</span>.</p>
 <p><strong>Vì sao sai:</strong> Hệ thức <span class="arithmatex">\(\sin^2a+\cos^2a=1\)</span> chỉ cho bình phương, không tự xác định dấu. Cos ở góc phần tư II phải âm.</p>
 <p><strong>Cách sửa:</strong> Xác định góc phần tư, ghi dấu của sin/cos, rồi mới lấy căn và dùng công thức nhân đôi.</p>
-<h3 id="44-nham-chieu-bien-oi-va-quen-nua-tong-nua-hieu">4.4. Nhầm chiều biến đổi và quên nửa tổng, nửa hiệu</h3>
+</details>
+<details class="tip" id="44-nham-chieu-bien-oi-va-quen-nua-tong-nua-hieu">
+<summary>4.4. Nhầm chiều biến đổi và quên nửa tổng, nửa hiệu</summary>
 <p><strong>Dấu hiệu:</strong> Đổi tích sin–sin thành cos tổng trừ cos hiệu, hoặc thay thẳng <span class="arithmatex">\(u+v,u-v\)</span> vào công thức tổng thành tích mà không chia <span class="arithmatex">\(2\)</span>.</p>
 <p><strong>Vì sao sai:</strong> Các công thức tích thành tổng được tạo bằng cộng/trừ theo đúng thứ tự; các công thức tổng thành tích được tạo qua hai góc mới <span class="arithmatex">\((u+v)/2\)</span> và <span class="arithmatex">\((u-v)/2\)</span>.</p>
 <p><strong>Cách sửa:</strong> Khi quên, tự viết lại hai công thức cộng, thực hiện phép cộng/trừ để suy ra công thức cần dùng. Với tổng thành tích, kiểm <span class="arithmatex">\((u+v)/2+(u-v)/2=u\)</span>.</p>
-<h3 id="45-nham-tin-hieu-cung-tan-so-voi-hai-tin-hieu-khac-tan-so">4.5. Nhầm tín hiệu cùng tần số với hai tín hiệu khác tần số</h3>
+</details>
+<details class="tip" id="45-nham-tin-hieu-cung-tan-so-voi-hai-tin-hieu-khac-tan-so">
+<summary>4.5. Nhầm tín hiệu cùng tần số với hai tín hiệu khác tần số</summary>
 <p><strong>Dấu hiệu:</strong> Thấy tổng hai hàm sin rồi luôn kết luận đó là một hàm sin duy nhất có biên độ cố định.</p>
 <p><strong>Vì sao sai:</strong> <span class="arithmatex">\(5\sin t+5\cos t\)</span> có cùng tần số góc nên có thể gộp với <span class="arithmatex">\(k,\varphi\)</span> không đổi. Nhưng <span class="arithmatex">\(\sin(800\pi t)+\sin(880\pi t)=2\sin(840\pi t)\cos(40\pi t)\)</span> có thừa số biến đổi theo thời gian.</p>
 <p><strong>Cách sửa:</strong> Kiểm hai đối số có cùng hệ số của <span class="arithmatex">\(t\)</span> hay không. Nếu khác, chỉ kết luận được <strong>đồng nhất thức tổng thành tích</strong>, không tự gọi đó là một sóng sin thuần có biên độ không đổi.</p>
+</details>
 <p><p class="thpt-r4-footnote">Nguồn kiến thức: SGK Toán 11, <em>Kết nối tri thức với cuộc sống</em>, tập một, Bài 2 “Công thức lượng giác”, trang in 17–21.</p></p>
 </div>
 </div>
