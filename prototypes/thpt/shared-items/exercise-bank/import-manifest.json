@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 373,
+    "legacy_combined_answer_items": 329,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_336_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_380_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 336 manually verified and key separated at checkpoints 29–39; 373 remain combined, answer_key=null. Remaining: 281 Topic (134 cd15–21 practice + 147 topic knowledge first try) and 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 380 manually verified and key separated at checkpoints 29–40; 329 remain combined, answer_key=null. Remaining: 237 Topic (112 cd16–21 practice + 125 topic knowledge first try) and 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 373,
+      "remaining_combined_answer_items": 329,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 336,
-        "remaining_count": 373,
+        "reviewed_count": 380,
+        "remaining_count": 329,
         "batches": [
           {
             "checkpoint": 29,
@@ -10037,6 +10037,613 @@
               "P23 and T23 explicitly identify parabolic cross-section, vertex O and focus on positive Ox to resolve orientation ambiguity; P23 width 24 cm, T23 y²=12x. P07/T07 specify continuing constant inflow, no outflow and no overflow. T03/T16/T19 state missing line/circle/hyperbola context.",
               "P04/P06/P09/T04/T06/T09 derive line equations and distinguish normal/direction, parallel and perpendicular; P14/T14 show completing squares; P15/T15 derive tangent and check point; P17/T17 justify unique contact; P11/P12/T20/T22 strengthen formula substitution.",
               "46 mathematical results unchanged. 147 first-try records outside CĐ14 unchanged; original provenance, outcome, hints, remediation, ID and interaction preserved. Not a full D6 link audit, full coverage, original SGK PDF re-read, independent verdict or interaction conversion. No release authorization."
+            ]
+          },
+          {
+            "checkpoint": 40,
+            "baseline": "d3d46b608abe85330df387073dc9b4acab62811c",
+            "reviewed_candidate": "fa52a41f4d22b8b808709925615f691b2d803cc4",
+            "scope": "CĐ15 practice and first try: 44 items (22+22); 44/44 stem/solution pairs matched within ID-scoped canonical and public projection blocks after whitespace normalization. Canonical blob c1be91f17044d89474d6399308385b4f1fbc7aeb, public practice 12c0e98af48cae11e1f94196f55b98f7490e1f72, knowledge 4f1a21c9d44dcf6ed814edfba580ab9c60eddec0. Rechecked math, split keys and mapped existing G11 ChIV skills; original Topic outcomes retained. 23 targeted stem/solution changes; source, remediation and interaction preserved.",
+            "shards": [
+              {
+                "shard": "cd15",
+                "before": "bf06f2af9eb080694d3a777f153b9b3eee41af3c",
+                "after": "18d0e53c8f530c8e6548a3e6a3d2f76b804f3a48",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP15-P06",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "M∈(P); AC không nằm trong (P).",
+                    "skill_ids": [
+                      "G11-B10-INCIDENCE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P07",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "A,B,C không xác định duy nhất một mặt phẳng; A,B,D xác định duy nhất mặt phẳng z=0.",
+                    "skill_ids": [
+                      "G11-B10-PLANE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P08",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Giao tuyến SC; hai điểm chung S,C.",
+                    "skill_ids": [
+                      "G11-B10-PLANE_INTERSECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O03"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P09",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "d cắt (P) tại (4;1;0); e∥(P), không cắt.",
+                    "skill_ids": [
+                      "G11-B10-LINE_PLANE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P10",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Thiết diện tam giác SPQ; các đoạn SP, SQ, PQ.",
+                    "skill_ids": [
+                      "G11-B10-SECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P02",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "a∥b (phân biệt); a và c chéo nhau; b,c cắt tại (0;2;1).",
+                    "skill_ids": [
+                      "G11-B11-RELATIVE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O06"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P11",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "SA và BC chéo nhau; SA và SB cắt nhau tại S.",
+                    "skill_ids": [
+                      "G11-B11-COPLANAR",
+                      "G11-B11-RELATIVE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O07"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P12",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "MN∥AB.",
+                    "skill_ids": [
+                      "G11-B11-PARALLEL_PROOF"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O08"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P13",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Đường thẳng qua S, song song AB và CD; không phải AB.",
+                    "skill_ids": [
+                      "G11-B10-PLANE_INTERSECTION",
+                      "G11-B11-PARALLEL_PROOF"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O09"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P03",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "d cắt (P) tại (−1/2;2;0); e∥(P); f⊂(P).",
+                    "skill_ids": [
+                      "G11-B12-POSITIONS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O10"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P14",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "MN∥(ABC); nếu MN nằm trong (ABC) thì không song song với mặt phẳng đó.",
+                    "skill_ids": [
+                      "G11-B12-PARALLEL_TEST"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O11"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P15",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "g=AB và MN∥g.",
+                    "skill_ids": [
+                      "G11-B12-PLANE_INTERSECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O12"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P16",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "SM/SA=SN/SB=SK/SC=1/4; thiết diện tam giác MNK.",
+                    "skill_ids": [
+                      "G11-B13-PRISM_RATIO",
+                      "G11-B13-PLANE_TEST"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O13"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P01",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Không song song; khi ba tỉ số cùng bằng 2/5 thì diện tích MNK bằng 16 cm².",
+                    "skill_ids": [
+                      "G11-B13-PRISM_RATIO"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O17"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P04",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Chu vi 18 cm; diện tích 27 cm².",
+                    "skill_ids": [
+                      "G11-B13-PRISM_RATIO"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O17"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P17",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "(P)∥(Q) phân biệt; (P)∩(R) là trục Oy (x=z=0); (P) trùng (T).",
+                    "skill_ids": [
+                      "G11-B13-PLANE_POSITIONS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O14"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P18",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "(P)∥(Q); nếu a∥b thì chưa đủ.",
+                    "skill_ids": [
+                      "G11-B13-PLANE_TEST"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O15"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P19",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "g=(P)∩(R): (t;1;0); h=(Q)∩(R): (u;1;4), t,u∈ℝ; g∥h.",
+                    "skill_ids": [
+                      "G11-B13-TRANSVERSAL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O16"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P05",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "T(U)=T(V)=(−2;2;0); ảnh đoạn UV là một điểm (−2;2;0); đoạn khác 0 co thành điểm khi phương UV song song phương chiếu (1;0;1).",
+                    "skill_ids": [
+                      "G11-B14-DEGENERACY"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O19"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P20",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "M′(1;1;0); không dùng T(x,y,z)=(x−z,y,0) vì khác phương chiếu.",
+                    "skill_ids": [
+                      "G11-B14-PROJECTION_DEF"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O18"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P21",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Ảnh là điểm (3;5;0).",
+                    "skill_ids": [
+                      "G11-B14-DEGENERACY"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O19"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-P22",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "A′(0;0;0), B′(4;2;0), M′(2;1;0); M′ là trung điểm A′B′.",
+                    "skill_ids": [
+                      "G11-B14-AFFINE_INVARIANTS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O20"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  }
+                ],
+                "unchanged_count": 0
+              },
+              {
+                "shard": "topic-knowledge-first-try",
+                "before": "b4d1f29370379fe819a4a18a4a1f4f3ba72122d8",
+                "after": "4369c8af9e874cd860ad572d9eaca1080155248f",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP15-T01",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Có, M∈(P).",
+                    "skill_ids": [
+                      "G11-B10-INCIDENCE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T02",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Đúng một mặt phẳng.",
+                    "skill_ids": [
+                      "G11-B10-PLANE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T03",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Giao tuyến SB.",
+                    "skill_ids": [
+                      "G11-B10-PLANE_INTERSECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O03"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T04",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "(−2;2;0).",
+                    "skill_ids": [
+                      "G11-B10-LINE_PLANE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T05",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Đáy: CP; mặt SAB: SP; thiết diện tam giác SCP.",
+                    "skill_ids": [
+                      "G11-B10-SECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O05"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T06",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Không; SA và BC chéo nhau.",
+                    "skill_ids": [
+                      "G11-B11-RELATIVE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O06"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T07",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Không, hai đường cắt nhau đồng phẳng.",
+                    "skill_ids": [
+                      "G11-B11-COPLANAR",
+                      "G11-B11-RELATIVE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O07"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T08",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "MN∥AB.",
+                    "skill_ids": [
+                      "G11-B11-PARALLEL_PROOF"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O08"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T09",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Đường qua S, song song AD và BC.",
+                    "skill_ids": [
+                      "G11-B10-PLANE_INTERSECTION",
+                      "G11-B11-PARALLEL_PROOF"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O09"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T10",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "d∥(P), với (P): z=0.",
+                    "skill_ids": [
+                      "G11-B12-POSITIONS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O10"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T11",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Không; d nằm trong (P).",
+                    "skill_ids": [
+                      "G11-B12-PARALLEL_TEST"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O11"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T12",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Không; d∥g.",
+                    "skill_ids": [
+                      "G11-B12-PLANE_INTERSECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O12"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T13",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "SN/SB=SK/SC=2/3.",
+                    "skill_ids": [
+                      "G11-B13-PRISM_RATIO",
+                      "G11-B13-PLANE_TEST"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O13"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T14",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Hai mặt phẳng trùng nhau.",
+                    "skill_ids": [
+                      "G11-B13-PLANE_POSITIONS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O14"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T15",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Chưa đủ.",
+                    "skill_ids": [
+                      "G11-B13-PLANE_TEST"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O15"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T16",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Không; giả thiết mâu thuẫn khi (P)∥(Q).",
+                    "skill_ids": [
+                      "G11-B13-TRANSVERSAL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O16"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T17",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "16 cm².",
+                    "skill_ids": [
+                      "G11-B13-PRISM_RATIO"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O17"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T18",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "N′(1;−1;0).",
+                    "skill_ids": [
+                      "G11-B14-PROJECTION_DEF"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O18"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T19",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Ảnh là điểm (−2;2;0).",
+                    "skill_ids": [
+                      "G11-B14-DEGENERACY"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O19"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T20",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "M′ là trung điểm A′B′.",
+                    "skill_ids": [
+                      "G11-B14-AFFINE_INVARIANTS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O20"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T21",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Không; ảnh không suy biến là hình bình hành, ảnh suy biến không phải hình thang.",
+                    "skill_ids": [
+                      "G11-B14-PARALLEL_AND_SHAPES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O21"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP15-T22",
+                    "source_blob": "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+                    "answer_key": "Tỉ số diện tích bằng 9/25.",
+                    "skill_ids": [
+                      "G11-B13-PRISM_RATIO"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP15-O22"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 148
+              }
+            ],
+            "notes": [
+              "P15 candidate changes premise from MN∥AB (which gives away conclusion g=AB) to MN∥(ABC), so the learner actually applies line-plane intersection theorem; outcome TOP15-O12 and conclusion unchanged. This is an intentional scoped pedagogical revision, not a historical source correction.",
+              "P01/P04 justify parallel section, similarity and squared area ratio; P02 distinguishes parallel/skew/intersecting by coordinates; P05 proves projection degeneracy; P13/P14 justify intersection and line-plane parallelism; P18/T15 provide counterexample; P20 distinguishes projection directions.",
+              "T13/T17/T19/T20/T22 and related items made self-contained; T16 explicitly assumes parallel planes before exposing inconsistent premise; T21 distinguishes nondegenerate parallelogram from collapsed segment. Numeric results unchanged; no automatic grading. 148 first-try records outside CĐ15 byte-equivalent at record level. Full PDF, coverage, PED, D6 links, reveal, independent review and interaction conversion pending."
             ]
           }
         ]
