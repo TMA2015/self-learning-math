@@ -10,7 +10,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "1đ chọn A và xác định mệnh đề đóng.",
+    "rubric": "1đ chọn A. Tự đối chiếu: nhận diện mệnh đề có lượng từ, không tính điểm giải thích riêng.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
@@ -50,7 +50,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "Mỗi ý 1đ; phải giải thích phản ví dụ và kết hợp hai điều kiện.",
+    "rubric": "Mỗi ý đúng/sai đúng 1đ (tối đa 4đ). Tự đối chiếu: phản ví dụ cho (c) và điều kiện kết hợp ở (d); không tính điểm giải thích riêng.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
@@ -250,7 +250,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "Mỗi ý 1đ; nêu điều kiện sai duy nhất của kéo theo.",
+    "rubric": "Mỗi ý đúng/sai đúng 1đ (tối đa 4đ). Tự đối chiếu: phép kéo theo chỉ sai khi tiền đề đúng và kết luận sai; không tính điểm giải thích riêng.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
@@ -290,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [],
-    "rubric": "1đ chọn A và phân biệt tập con với tập bằng nhau.",
+    "rubric": "1đ chọn A. Tự đối chiếu: phân biệt tập con thực sự và hai tập bằng nhau; không tính điểm giải thích riêng.",
     "interaction": {
       "type": "SELF_COMPARE",
       "auto_grade": false,
