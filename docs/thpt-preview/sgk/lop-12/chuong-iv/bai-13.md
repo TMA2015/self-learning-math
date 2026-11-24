@@ -138,7 +138,7 @@
 
         Không cho diện tích tăng tuyến tính từ 4 tới 25. Cạnh tăng tuyến tính, còn diện tích là bình phương cạnh. Kiểm \(\ell(0)=2,\ell(3)=5\) trước khi bình phương.
 
-    Tổng quát, nếu hai đáy của chóp cụt đều có diện tích \(B_0,B_1\), cao \(h\), các tiết diện đồng dạng. Căn bậc hai của diện tích tỉ lệ với kích thước dài, nên
+    Tổng quát, nếu hai đáy của một hình chóp cụt có diện tích \(B_0,B_1\), cao \(h\), các tiết diện đồng dạng. Căn bậc hai của diện tích tỉ lệ với kích thước dài, nên
     \[
     S(x)=\left[\sqrt{B_0}+\frac{x}{h}(\sqrt{B_1}-\sqrt{B_0})\right]^2.
     \]
@@ -207,15 +207,15 @@
 
     #### a) Hình phẳng giới hạn bởi đồ thị, trục hoành và hai đường thẳng
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Diện tích với trục hoành.</strong><p>Cho \(f\) liên tục trên \([a;b]\), \(a&lt;b\). Diện tích hình phẳng giới hạn bởi đồ thị \(y=f(x)\), trục hoành và hai đường thẳng \(x=a,x=b\) bằng</p><div class="arithmatex">\(\displaystyle S=\int_a^b|f(x)|\,dx.\)</div><p>Nếu \(f\) không âm trên đoạn thì bỏ dấu giá trị tuyệt đối; nếu không dương thì tích phân của \(-f\). Khi hàm đổi dấu, tách tại các mốc đổi dấu rồi cộng các diện tích.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Diện tích với trục hoành.</strong><p>Cho \(f\) liên tục trên \([a;b]\), \(a\lt b\). Diện tích hình phẳng giới hạn bởi đồ thị \(y=f(x)\), trục hoành và hai đường thẳng \(x=a,x=b\) bằng</p><div class="arithmatex">\(\displaystyle S=\int_a^b|f(x)|\,dx.\)</div><p>Nếu \(f\) không âm trên đoạn thì bỏ dấu giá trị tuyệt đối; nếu không dương thì tích phân của \(-f\). Khi hàm đổi dấu, tách tại các mốc đổi dấu rồi cộng các diện tích.</p></div>
 
     #### b) Hình phẳng giới hạn bởi hai đồ thị và hai đường thẳng
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Diện tích giữa hai đồ thị.</strong><p>Cho \(f,g\) liên tục trên \([a;b]\), \(a&lt;b\). Diện tích giới hạn bởi \(y=f(x),y=g(x)\) và hai đường thẳng \(x=a,x=b\) là</p><div class="arithmatex">\(\displaystyle S=\int_a^b|f(x)-g(x)|\,dx.\)</div><p>Chiều cao lát đứng bằng tung độ đường trên trừ tung độ đường dưới. Nếu \(f-g\) không đổi dấu trên đoạn thì \(S=\left|\int_a^b(f-g)\,dx\right|\). Nếu đổi dấu, tách tại các mốc đổi dấu.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Diện tích giữa hai đồ thị.</strong><p>Cho \(f,g\) liên tục trên \([a;b]\), \(a\lt b\). Diện tích giới hạn bởi \(y=f(x),y=g(x)\) và hai đường thẳng \(x=a,x=b\) là</p><div class="arithmatex">\(\displaystyle S=\int_a^b|f(x)-g(x)|\,dx.\)</div><p>Chiều cao lát đứng bằng tung độ đường trên trừ tung độ đường dưới. Nếu \(f-g\) không đổi dấu trên đoạn thì \(S=\left|\int_a^b(f-g)\,dx\right|\). Nếu đổi dấu, tách tại các mốc đổi dấu.</p></div>
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg" alt="Hai miền giữa y=x và y=x³ đổi thứ tự trên dưới tại x=0"><figcaption>Ví dụ về việc chia miền: giao điểm ở \(-1,0,1\), hiệu không âm là \(x^3-x\) ở nửa trái và \(x-x^3\) ở nửa phải.</figcaption></figure>
 
-    Cách lập tích phân diện tích: xác định đúng các đường biên và cận; giải phương trình giao điểm (hoặc nghiệm của \(f\) nếu biên còn lại là \(Ox\)); xét dấu hiệu hai hàm trên từng khoảng; viết hiệu không âm rồi tính tổng. Với các bài cơ bản có hữu hạn mốc đổi dấu, lập bảng dấu là cách thuận tiện. Nếu đề chỉ cho các đồ thị, cần xác định các miền kín hữu hạn trước khi chọn cận. Kết quả không âm, có đơn vị diện tích khi hai trục đều mang đơn vị độ dài.
+    Cách lập tích phân diện tích: xác định đúng các đường biên và cận; giải phương trình giao điểm (hoặc nghiệm của \(f\) nếu biên còn lại là \(Ox\)); xét dấu của hiệu hai hàm trên từng khoảng; viết hiệu không âm rồi tính tổng. Với các bài cơ bản có hữu hạn mốc đổi dấu, lập bảng dấu là cách thuận tiện. Nếu đề chỉ cho các đồ thị, cần xác định các miền kín hữu hạn trước khi chọn cận. Kết quả không âm, có đơn vị diện tích khi hai trục đều mang đơn vị độ dài.
 
     **Ứng dụng:** Nếu giá cầu \(D(x)\) và giá cung \(P(x)\) gặp nhau tại \((x_0;p_0)\), và \(D(x)\ge p_0\ge P(x)\) trên \([0;x_0]\), thặng dư tiêu dùng là \(\int_0^{x_0}(D(x)-p_0)\,dx\), thặng dư sản xuất là \(\int_0^{x_0}(p_0-P(x))\,dx\). Trục đứng biểu diễn giá trên mỗi đơn vị sản phẩm, nên tích phân có đơn vị tiền.
 
@@ -223,7 +223,7 @@
 
     #### a) Tính thể tích của vật thể
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Thể tích theo mặt cắt.</strong><p>Vật thể nằm giữa hai mặt phẳng vuông góc với \(Ox\) tại \(x=a,x=b\), \(a&lt;b\). Nếu mặt cắt tại hoành độ \(x\) có diện tích \(S(x)\) là hàm liên tục trên \([a;b]\), thì</p><div class="arithmatex">\(\displaystyle V=\int_a^b S(x)\,dx.\)</div><p>Diện tích mặt cắt không âm. Độ dày lát tính theo phương vuông góc với mặt cắt, nên đơn vị thể tích là đơn vị diện tích nhân đơn vị độ dài.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Thể tích theo mặt cắt.</strong><p>Vật thể nằm giữa hai mặt phẳng vuông góc với \(Ox\) tại \(x=a,x=b\), \(a\lt b\). Nếu mặt cắt tại hoành độ \(x\) có diện tích \(S(x)\) là hàm liên tục trên \([a;b]\), thì</p><div class="arithmatex">\(\displaystyle V=\int_a^b S(x)\,dx.\)</div><p>Diện tích mặt cắt không âm. Độ dày lát tính theo phương vuông góc với mặt cắt, nên đơn vị thể tích là đơn vị diện tích nhân đơn vị độ dài.</p></div>
 
     Chọn trục vuông góc với các mặt cắt thuận tiện; xác định cận; tìm kích thước mặt cắt theo \(x\) bằng hình học, Thalès, đồng dạng hoặc phương trình biên; chuyển kích thước thành diện tích rồi tích phân. Với thiết diện hình vuông cạnh \(\ell\), \(S=\ell^2\); với hình tròn bán kính \(r\), \(S=\pi r^2\); nếu biết đường kính \(d\), \(S=\pi d^2/4\).
 
@@ -231,9 +231,9 @@
     | :-- | :-- | :-- |
     | Lăng trụ đáy diện tích \(B\), cao \(h\) | \(S(x)=B\) | \(Bh\) |
     | Chóp đáy diện tích \(B\), cao \(h\); gốc ở đỉnh | \(B(x/h)^2\) | \(Bh/3\) |
-    | Chóp cụt đều cao \(h\), hai đáy \(B_0,B_1\) | \([\sqrt{B_0}+(\sqrt{B_1}-\sqrt{B_0})x/h]^2\) | \(\frac h3(B_0+\sqrt{B_0B_1}+B_1)\) |
+    | Chóp cụt cao \(h\), hai đáy \(B_0,B_1\) | \([\sqrt{B_0}+(\sqrt{B_1}-\sqrt{B_0})x/h]^2\) | \(\frac h3(B_0+\sqrt{B_0B_1}+B_1)\) |
 
-    Trong bảng, \(0\le x\le h,\ h>0\); mặt cắt song song đáy. Với chóp cụt đều chọn gốc ở mặt đáy có diện tích \(B_0\). Các công thức thể tích đều thu được bằng tích phân diện tích trong cột giữa.
+    Trong bảng, \(0\le x\le h,\ h>0\); mặt cắt song song đáy. Với chóp cụt chọn gốc ở mặt đáy có diện tích \(B_0\). Các công thức thể tích đều thu được bằng tích phân diện tích trong cột giữa. Cách lập diện tích mặt cắt cũng dùng được cho chỏm cầu; xem Ví dụ 3.8 để luyện cách chọn cận và bán kính mặt cắt.
 
     #### b) Tính thể tích khối tròn xoay
 
