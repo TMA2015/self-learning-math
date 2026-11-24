@@ -1,12 +1,14 @@
 [
   {
     "item_id": "THPT-TOP14-T01",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Đường \\(3x+2y-1=0\\) có một vectơ chỉ phương nào?",
-    "answer_key": null,
+    "answer_key": "Một vectơ chỉ phương là (−2;3) (hoặc mọi bội khác 0 của nó).",
     "worked_solution": "Có thể chọn (−2,3), vì (3,2)·(−2,3)=0.\n\n**Nếu làm sai:** Nếu lấy (3,2) làm chỉ phương, bạn đã nhầm với pháp tuyến; kiểm tích vô hướng.\n\n\n**Kiểm lỗi**\n\nNếu em lấy (3,2) làm chỉ phương cho đường 3x+2y−1=0, đọc **Kiến thức 1.1** để tách vai trò pháp tuyến/chỉ phương. Làm **Bài luyện 1** và **Bài luyện 17**, kiểm tích vô hướng bằng 0.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-NORMAL_DIRECTION"
+    ],
     "original_outcome_ids": [
       "TOP14-O01"
     ],
@@ -28,16 +30,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T02",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Qua P(2,3), có pháp tuyến n=(1,−2). Viết phương trình đường thẳng.",
-    "answer_key": null,
+    "answer_key": "x−2y+4=0.",
     "worked_solution": "\\(x-2-2(y-3)=0\\), tức \\(x-2y+4=0\\).\n\n**Nếu làm sai:** Nếu phương trình không đi qua P, thay tọa độ P để tìm sai dấu trước.\n\n\n**Kiểm lỗi**\n\nNếu phương trình không qua P(2,3), đọc **Kiến thức 1.2** về n·PM=0. Làm **Bài luyện 2** rồi **Bài luyện 18**, thay tọa độ điểm vào phương trình để phát hiện sai dấu.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-GENERAL_POINT"
+    ],
     "original_outcome_ids": [
       "TOP14-O02"
     ],
@@ -59,16 +63,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T03",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
-    "stem": "Qua A(1,−1), u=(2,3), tìm tọa độ điểm ứng với t=2.",
-    "answer_key": null,
-    "worked_solution": "M=(5,5). Dùng cùng t=2 ở cả hai tọa độ.\n\n**Nếu làm sai:** Nếu thay t khác nhau cho x và y, bạn đã bỏ mất điều kiện một tham số chung.\n\n\n**Kiểm lỗi**\n\nNếu dùng hai giá trị t khác nhau cho x,y, đọc **Kiến thức 1.3**: một điểm trên đường tương ứng một tham số chung. Làm **Bài luyện 3** và **Bài luyện 19**, thế t vào cả hai tọa độ.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Đường thẳng qua A(1;−1), có vectơ chỉ phương u⃗=(2;3), viết theo tham số M=A+t u⃗. Tìm tọa độ M khi t=2.",
+    "answer_key": "M(5;5).",
+    "worked_solution": "Phương trình tham số của đường qua A(1;−1) có chỉ phương u⃗=(2;3) là x=1+2t, y=−1+3t. Cùng thay t=2 vào cả hai biểu thức, được M(5;5).\n\n**Nếu làm sai:** Nếu thay t khác nhau cho x và y, bạn đã bỏ mất điều kiện một tham số chung.\n\n\n**Kiểm lỗi**\n\nNếu dùng hai giá trị t khác nhau cho x,y, đọc **Kiến thức 1.3**: một điểm trên đường tương ứng một tham số chung. Làm **Bài luyện 3** và **Bài luyện 19**, thế t vào cả hai tọa độ.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-PARAMETRIC"
+    ],
     "original_outcome_ids": [
       "TOP14-O03"
     ],
@@ -90,16 +96,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T04",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Qua A(0,2), B(2,0), viết phương trình đường.",
-    "answer_key": null,
-    "worked_solution": "\\(x+y-2=0\\). Kiểm thế hai điểm đều cho 0.\n\n**Nếu làm sai:** Nếu ra x−y−2=0, bạn chưa kiểm cả hai điểm thuộc đường.\n\n\n**Kiểm lỗi**\n\nNếu đường vừa lập không chứa cả hai điểm, đọc **Kiến thức 1.4** để dùng vectơ AB làm chỉ phương. Làm **Bài luyện 4** và **Bài luyện 20**, kiểm trực tiếp hai điểm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "x+y−2=0.",
+    "worked_solution": "AB⃗=(2;−2) là chỉ phương; chọn pháp tuyến (1;1) vì 2−2=0. Qua A(0;2), phương trình x+y−2=0. Thay A và B đều cho vế trái bằng 0.\n\n**Nếu làm sai:** Nếu ra x−y−2=0, bạn chưa kiểm cả hai điểm thuộc đường.\n\n\n**Kiểm lỗi**\n\nNếu đường vừa lập không chứa cả hai điểm, đọc **Kiến thức 1.4** để dùng vectơ AB làm chỉ phương. Làm **Bài luyện 4** và **Bài luyện 20**, kiểm trực tiếp hai điểm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-TWO_POINTS"
+    ],
     "original_outcome_ids": [
       "TOP14-O04"
     ],
@@ -121,16 +129,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T05",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Điểm (−1,3) có thuộc \\(x+2y-5=0\\) không?",
-    "answer_key": null,
+    "answer_key": "Có, điểm thuộc đường thẳng.",
     "worked_solution": "Có, vì −1+6−5=0.\n\n**Nếu làm sai:** Nếu chỉ nhìn hình hoặc kiểm một tọa độ, hãy viết đầy đủ biểu thức bên trái.\n\n\n**Kiểm lỗi**\n\nNếu chỉ so một tọa độ hoặc nhìn hình để xác định điểm thuộc đường, đọc **Kiến thức 1.5**. Làm **Bài luyện 5** và **Bài luyện 21**, thay đầy đủ x,y vào vế trái.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-MEMBERSHIP"
+    ],
     "original_outcome_ids": [
       "TOP14-O05"
     ],
@@ -152,16 +162,20 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T06",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Qua giao của x+y=6 và x−y=2, song song \\(3x+y-1=0\\). Tìm phương trình.",
-    "answer_key": null,
-    "worked_solution": "Giao là (4,2). Đường có 3x+y+c=0, nên c=−14, thu được \\(3x+y-14=0\\).\n\n**Nếu làm sai:** Nếu thế điểm giao không thỏa, quay lại giải hệ trước khi đặt hằng số.\n\n\n**Kiểm lỗi**\n\nNếu đặt đường qua giao điểm mà không giải hệ trước, đọc **Kiến thức 1.6**. Làm **Bài luyện 8** và **Bài luyện 22**, kiểm nghiệm giao thuộc cả hai đường rồi thế vào đường cần tìm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "3x+y−14=0.",
+    "worked_solution": "Cộng x+y=6 và x−y=2 được 2x=8, nên x=4, y=2. Đường song song với 3x+y−1=0 có dạng 3x+y+c=0. Thay (4;2) được c=−14. Hệ số tự do −14 khác −1 nên hai đường phân biệt.\n\n**Nếu làm sai:** Nếu thế điểm giao không thỏa, quay lại giải hệ trước khi đặt hằng số.\n\n\n**Kiểm lỗi**\n\nNếu đặt đường qua giao điểm mà không giải hệ trước, đọc **Kiến thức 1.6**. Làm **Bài luyện 8** và **Bài luyện 22**, kiểm nghiệm giao thuộc cả hai đường rồi thế vào đường cần tìm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-MULTISTEP",
+      "G10-B20-INTERSECTION",
+      "G10-B20-RELATIVE_POSITION"
+    ],
     "original_outcome_ids": [
       "TOP14-O06"
     ],
@@ -183,16 +197,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T07",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
-    "stem": "Ban đầu bể có 5 lít, sau 3 phút có 11 lít khi đổ đều. Sau 4 phút có mấy lít?",
-    "answer_key": null,
-    "worked_solution": "Mức tăng 2 lít/phút, V(t)=2t+5 nên V(4)=13 lít, nếu chưa tràn bể.\n\n**Nếu làm sai:** Nếu chỉ lấy 11/3, bạn đã nhầm lượng tổng với lượng **tăng thêm**.\n\n\n**Kiểm lỗi**\n\nNếu lấy 11/3 làm lượng tăng mỗi phút, đọc **Kiến thức 1.7**: hệ số góc là hiệu lượng chia hiệu thời gian, có giá trị ban đầu. Làm **Bài luyện 6** và **Bài luyện 23**, chú ý miền thời gian mô hình có ý nghĩa.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Ban đầu bể có 5 lít, sau 3 phút có 11 lít khi đổ nước với lưu lượng không đổi, không có nước chảy ra. Sau 4 phút có bao nhiêu lít nếu vẫn đổ đều và bể chưa tràn?",
+    "answer_key": "13 lít, nếu vẫn đổ đều và chưa tràn.",
+    "worked_solution": "Lượng nước tăng 11−5=6 lít trong 3 phút, nên lưu lượng là 2 lít/phút. V(t)=5+2t, với t tính bằng phút, trong thời gian đổ đều và chưa tràn. V(4)=5+2·4=13 lít.\n\n**Nếu làm sai:** Nếu chỉ lấy 11/3, bạn đã nhầm lượng tổng với lượng **tăng thêm**.\n\n\n**Kiểm lỗi**\n\nNếu lấy 11/3 làm lượng tăng mỗi phút, đọc **Kiến thức 1.7**: hệ số góc là hiệu lượng chia hiệu thời gian, có giá trị ban đầu. Làm **Bài luyện 6** và **Bài luyện 23**, chú ý miền thời gian mô hình có ý nghĩa.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B19-LINEAR_MODEL"
+    ],
     "original_outcome_ids": [
       "TOP14-O07"
     ],
@@ -214,16 +230,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T08",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hai đường x+2y=3 và 2x+4y=6 có trùng không?",
-    "answer_key": null,
+    "answer_key": "Hai đường trùng nhau.",
     "worked_solution": "Trùng nhau: toàn bộ phương trình thứ hai bằng 2 lần thứ nhất.\n\n**Nếu làm sai:** Nếu chỉ xét tỉ số a/b mà bỏ c, bạn sẽ nhầm trùng và song song.\n\n\n**Kiểm lỗi**\n\nNếu chỉ thấy pháp tuyến tỉ lệ mà kết luận hai đường trùng, đọc **Kiến thức 2.1**. Làm **Bài luyện 25** và **Bài luyện 39**: kiểm cả hệ số tự do để phân biệt trùng với song song phân biệt.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-RELATIVE_POSITION"
+    ],
     "original_outcome_ids": [
       "TOP14-O08"
     ],
@@ -245,16 +263,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T09",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Qua P(1,2), vuông góc \\(x-3y+1=0\\). Viết đường thẳng.",
-    "answer_key": null,
-    "worked_solution": "Phương trình \\(3x+y-5=0\\), vì có pháp tuyến (3,1) vuông góc với (1,−3) của d.\n\n**Nếu làm sai:** Nếu chỉ sao chép a,b của đường cũ, bạn đang dựng đường song song chứ không phải vuông góc.\n\n\n**Kiểm lỗi**\n\nNếu dùng lại pháp tuyến của đường cũ khi dựng đường vuông góc, đọc **Kiến thức 2.2**. Làm **Bài luyện 30** và **Bài luyện 40**, kiểm tích vô hướng hai hướng và điểm đã cho.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "3x+y−5=0.",
+    "worked_solution": "Đường đã cho có pháp tuyến (1;−3); đường vuông góc nhận vectơ này làm chỉ phương. Chọn pháp tuyến (3;1) vì 3·1+1·(−3)=0. Qua P(1;2), ta có 3(x−1)+(y−2)=0, tức 3x+y−5=0.\n\n**Nếu làm sai:** Nếu chỉ sao chép a,b của đường cũ, bạn đang dựng đường song song chứ không phải vuông góc.\n\n\n**Kiểm lỗi**\n\nNếu dùng lại pháp tuyến của đường cũ khi dựng đường vuông góc, đọc **Kiến thức 2.2**. Làm **Bài luyện 30** và **Bài luyện 40**, kiểm tích vô hướng hai hướng và điểm đã cho.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-PERPENDICULAR",
+      "G10-B19-GENERAL_POINT"
+    ],
     "original_outcome_ids": [
       "TOP14-O09"
     ],
@@ -276,16 +297,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T10",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm giao của x+2y=7 và x−y=1.",
-    "answer_key": null,
+    "answer_key": "Giao điểm (3;2).",
     "worked_solution": "Từ x=y+1, thế được 3y=6, y=2,x=3. Giao (3,2).\n\n**Nếu làm sai:** Nếu chỉ thế được một đường, hãy kiểm điều kiện thứ hai.\n\n\n**Kiểm lỗi**\n\nNếu nghiệm chỉ thỏa một đường, đọc **Kiến thức 2.3** rồi làm **Bài luyện 27** và **Bài luyện 41**. Giải cùng một hệ và thay nghiệm vào cả hai phương trình.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-INTERSECTION"
+    ],
     "original_outcome_ids": [
       "TOP14-O10"
     ],
@@ -307,16 +330,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T11",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "P(2,1), d:3x+4y−20=0. Tính khoảng cách.",
-    "answer_key": null,
+    "answer_key": "2 đơn vị độ dài.",
     "worked_solution": "|6+4−20|/5=2 đơn vị.\n\n**Nếu làm sai:** Nếu ra −2, bạn quên trị tuyệt đối; nếu ra 10, bạn quên chia độ dài pháp tuyến.\n\n\n**Kiểm lỗi**\n\nNếu khoảng cách có dấu âm hay quên chia độ dài pháp tuyến, đọc **Kiến thức 2.4**. Làm **Bài luyện 28** và **Bài luyện 42**, kiểm trị tuyệt đối và mẫu √(a²+b²).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-DISTANCE"
+    ],
     "original_outcome_ids": [
       "TOP14-O11"
     ],
@@ -338,16 +363,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T12",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Góc nhỏ giữa trục Oy (x=0) và đường y=x là bao nhiêu?",
-    "answer_key": null,
+    "answer_key": "45°.",
     "worked_solution": "45°, vì pháp tuyến (1,0) và (1,−1) có cos góc nhỏ 1/√2.\n\n**Nếu làm sai:** Nếu dùng góc 135° do đổi chiều vectơ, hãy nhớ đường thẳng không có chiều cố định.\n\n\n**Kiểm lỗi**\n\nNếu góc nhọn ra 135° vì chọn hướng pháp tuyến khác, đọc **Kiến thức 2.5**. Làm **Bài luyện 29** và **Bài luyện 43**, dùng trị tuyệt đối trong công thức cos góc nhỏ giữa hai đường.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B20-ANGLE"
+    ],
     "original_outcome_ids": [
       "TOP14-O12"
     ],
@@ -369,16 +396,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T13",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Viết đường tròn tâm (−1,3), bán kính 2.",
-    "answer_key": null,
+    "answer_key": "(x+1)²+(y−3)²=4.",
     "worked_solution": "\\((x+1)^2+(y-3)^2=4\\).\n\n**Nếu làm sai:** Nếu dấu trước hoành độ tâm nhầm, thay trực tiếp điểm cách tâm đúng R vào phương trình.\n\n\n**Kiểm lỗi**\n\nNếu khai triển sai dấu của tâm I(−1,3), đọc **Kiến thức 3.1**. Làm **Bài luyện 45** và **Bài luyện 59**, thế điểm cách tâm đúng R để kiểm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-CIRCLE_STANDARD"
+    ],
     "original_outcome_ids": [
       "TOP14-O13"
     ],
@@ -400,16 +429,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T14",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "x²+y²+2x−4y+1=0 là đường tròn tâm nào, bán kính bao nhiêu?",
-    "answer_key": null,
-    "worked_solution": "(x+1)²+(y−2)²=4, tâm (−1,2), R=2.\n\n**Nếu làm sai:** Nếu đọc R=4, bạn đã nhầm bán kính với **bình phương** bán kính.\n\n\n**Kiểm lỗi**\n\nNếu đọc R=4 khi hoàn thành bình phương cho R²=4, đọc **Kiến thức 3.2**. Làm **Bài luyện 46** và **Bài luyện 60**, kiểm R>0 và tâm đúng dấu.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Tâm I(−1;2), R=2.",
+    "worked_solution": "Viết x²+2x=(x+1)²−1 và y²−4y=(y−2)²−4. Thế vào phương trình, được (x+1)²+(y−2)²=4. Tâm I(−1;2) và bán kính R=√4=2.\n\n**Nếu làm sai:** Nếu đọc R=4, bạn đã nhầm bán kính với **bình phương** bán kính.\n\n\n**Kiểm lỗi**\n\nNếu đọc R=4 khi hoàn thành bình phương cho R²=4, đọc **Kiến thức 3.2**. Làm **Bài luyện 46** và **Bài luyện 60**, kiểm R>0 và tâm đúng dấu.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-CIRCLE_GENERAL"
+    ],
     "original_outcome_ids": [
       "TOP14-O14"
     ],
@@ -431,16 +462,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T15",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Đường tròn tâm O, R=5, P(3,4). Viết tiếp tuyến tại P.",
-    "answer_key": null,
-    "worked_solution": "\\(3x+4y=25\\), vì OP=(3,4) là pháp tuyến.\n\n**Nếu làm sai:** Nếu dùng vectơ tiếp tuyến làm pháp tuyến, hãy vẽ IP vuông góc với tiếp tuyến rồi kiểm P thực sự thuộc đường tròn.\n\n\n**Kiểm lỗi**\n\nNếu chọn vectơ tiếp tuyến làm pháp tuyến hoặc chưa kiểm P nằm trên đường tròn, đọc **Kiến thức 3.3**. Làm **Bài luyện 48** và **Bài luyện 61**, dùng bán kính IP vuông góc tiếp tuyến.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "3x+4y=25.",
+    "worked_solution": "Kiểm OP=√(3²+4²)=5=R nên P thuộc đường tròn. Tiếp tuyến tại P vuông góc với bán kính OP, nên nhận OP⃗=(3;4) làm pháp tuyến. Phương trình 3(x−3)+4(y−4)=0, hay 3x+4y=25.\n\n**Nếu làm sai:** Nếu dùng vectơ tiếp tuyến làm pháp tuyến, hãy vẽ IP vuông góc với tiếp tuyến rồi kiểm P thực sự thuộc đường tròn.\n\n\n**Kiểm lỗi**\n\nNếu chọn vectơ tiếp tuyến làm pháp tuyến hoặc chưa kiểm P nằm trên đường tròn, đọc **Kiến thức 3.3**. Làm **Bài luyện 48** và **Bài luyện 61**, dùng bán kính IP vuông góc tiếp tuyến.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-CIRCLE_TANGENT"
+    ],
     "original_outcome_ids": [
       "TOP14-O15"
     ],
@@ -462,16 +495,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T16",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
-    "stem": "Qua A(0,0),B(6,0),C(0,8), tìm tâm và bán kính.",
-    "answer_key": null,
-    "worked_solution": "Tâm trung điểm cạnh huyền BC=(3,4), R=5.\n\n**Nếu làm sai:** Nếu một điểm không cách tâm đúng R, kiểm lại dấu ở tọa độ trung điểm.\n\n\n**Kiểm lỗi**\n\nNếu tâm tìm được không cách đều A,B,C, đọc **Kiến thức 3.4**. Làm **Bài luyện 50** và **Bài luyện 62**, kiểm ba bán kính bằng nhau; ba điểm không thẳng hàng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tìm tâm và bán kính đường tròn đi qua ba điểm A(0;0), B(6;0), C(0;8).",
+    "answer_key": "Tâm I(3;4), R=5.",
+    "worked_solution": "A,B,C tạo thành tam giác vuông tại A vì AB nằm trên Ox và AC nằm trên Oy. Tâm đường tròn ngoại tiếp là trung điểm BC: I(3;4). R=IA=√(3²+4²)=5.\n\n**Nếu làm sai:** Nếu một điểm không cách tâm đúng R, kiểm lại dấu ở tọa độ trung điểm.\n\n\n**Kiểm lỗi**\n\nNếu tâm tìm được không cách đều A,B,C, đọc **Kiến thức 3.4**. Làm **Bài luyện 50** và **Bài luyện 62**, kiểm ba bán kính bằng nhau; ba điểm không thẳng hàng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-CIRCLE_THROUGH_POINTS"
+    ],
     "original_outcome_ids": [
       "TOP14-O16"
     ],
@@ -493,16 +528,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T17",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Đường tròn x²+y²=25 và x=5 có mấy điểm chung? Điểm nào?",
-    "answer_key": null,
-    "worked_solution": "δ=5=R, tiếp xúc tại (5,0).\n\n**Nếu làm sai:** Nếu đếm hai nghiệm bằng nhau là hai tiếp điểm, nhớ nghiệm bội chỉ cho **một** điểm.\n\n\n**Kiểm lỗi**\n\nNếu tính hai giao điểm khi đường chỉ tiếp xúc, đọc **Kiến thức 3.5**. Làm **Bài luyện 49** và **Bài luyện 63**, so d(I,đường) với R; tiếp xúc chỉ có một điểm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Một điểm chung (5;0), tiếp xúc.",
+    "worked_solution": "Thế x=5 vào x²+y²=25, được y²=0 nên y=0. Có đúng một điểm chung (5;0). Đường thẳng x=5 tiếp xúc với đường tròn vì khoảng cách từ tâm O đến đường thẳng bằng bán kính 5.\n\n**Nếu làm sai:** Nếu đếm hai nghiệm bằng nhau là hai tiếp điểm, nhớ nghiệm bội chỉ cho **một** điểm.\n\n\n**Kiểm lỗi**\n\nNếu tính hai giao điểm khi đường chỉ tiếp xúc, đọc **Kiến thức 3.5**. Làm **Bài luyện 49** và **Bài luyện 63**, so d(I,đường) với R; tiếp xúc chỉ có một điểm.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B21-LINE_CIRCLE_POSITION"
+    ],
     "original_outcome_ids": [
       "TOP14-O17"
     ],
@@ -524,16 +561,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T18",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với elip x²/25+y²/16=1, tìm hai tiêu điểm.",
-    "answer_key": null,
+    "answer_key": "F₁(−3;0), F₂(3;0).",
     "worked_solution": "c²=25−16=9⇒c=3, F₁(−3,0),F₂(3,0).\n\n**Nếu làm sai:** Nếu lấy c²=a²+b², bạn đang dùng công thức của **hypebol** chứ không phải elip.\n\n\n**Kiểm lỗi**\n\nNếu dùng c²=a²+b² cho elip, đọc **Kiến thức 4.1**. Làm **Bài luyện 65** và **Bài luyện 80**: trên elip chính tắc a²>b²>0, c²=a²−b².",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-ELLIPSE_PARAMETERS"
+    ],
     "original_outcome_ids": [
       "TOP14-O18"
     ],
@@ -555,16 +594,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T19",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
-    "stem": "Với x²/16−y²/9=1, hai tiêu điểm ở đâu?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Với hypebol x²/16−y²/9=1, hai tiêu điểm ở đâu?",
+    "answer_key": "F₁(−5;0), F₂(5;0).",
     "worked_solution": "c²=16+9=25, c=5, tiêu điểm (−5,0),(5,0).\n\n**Nếu làm sai:** Nếu tính c=√7, bạn đã dùng nhầm phép trừ của elip.\n\n\n**Kiểm lỗi**\n\nNếu lấy c²=a²−b² cho hypebol, đọc **Kiến thức 4.2**. Làm **Bài luyện 66** và **Bài luyện 81**, kiểm dấu trừ trong phương trình và c²=a²+b².",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_PARAMETERS"
+    ],
     "original_outcome_ids": [
       "TOP14-O19"
     ],
@@ -586,16 +627,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T20",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với x²/25−y²/9=1, viết phương trình hai tiệm cận.",
-    "answer_key": null,
-    "worked_solution": "\\(y=\\pm\\frac35 x\\).\n\n**Nếu làm sai:** Nếu ra x=±5, bạn đã nhầm tọa độ đỉnh với tiệm cận.\n\n\n**Kiểm lỗi**\n\nNếu nhầm tọa độ đỉnh (±a,0) với hai tiệm cận, đọc **Kiến thức 4.3**. Làm **Bài luyện 75** và **Bài luyện 82**; đường tiệm cận qua tâm có hệ số góc ±b/a.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "y=(3/5)x và y=−(3/5)x.",
+    "worked_solution": "Với hypebol x²/a²−y²/b²=1, hai tiệm cận có phương trình y=±(b/a)x. Ở đây a=5, b=3, nên y=±(3/5)x.\n\n**Nếu làm sai:** Nếu ra x=±5, bạn đã nhầm tọa độ đỉnh với tiệm cận.\n\n\n**Kiểm lỗi**\n\nNếu nhầm tọa độ đỉnh (±a,0) với hai tiệm cận, đọc **Kiến thức 4.3**. Làm **Bài luyện 75** và **Bài luyện 82**; đường tiệm cận qua tâm có hệ số góc ±b/a.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_ASYMPTOTES"
+    ],
     "original_outcome_ids": [
       "TOP14-O20"
     ],
@@ -617,16 +660,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T21",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "y²=6x có tiêu điểm và đường chuẩn nào?",
-    "answer_key": null,
+    "answer_key": "F(3/2;0); đường chuẩn x=−3/2.",
     "worked_solution": "p=3, F(3/2,0), đường chuẩn x=−3/2.\n\n**Nếu làm sai:** Nếu lấy F(3,0), bạn đã nhầm p với p/2.\n\n\n**Kiểm lỗi**\n\nNếu đồng nhất p với hoành độ tiêu điểm, đọc **Kiến thức 4.4**. Làm **Bài luyện 69** và **Bài luyện 83**, xác định F(p/2,0), đường chuẩn x=−p/2 trong y²=2px.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-PARABOLA_FOCUS"
+    ],
     "original_outcome_ids": [
       "TOP14-O21"
     ],
@@ -648,16 +693,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T22",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
     "stem": "Parabol y²=4x và đường x=1 có bao nhiêu giao điểm?",
-    "answer_key": null,
-    "worked_solution": "Có hai giao (1,2),(1,−2).\n\n**Nếu làm sai:** Nếu chỉ lấy \\(y=2\\), em đã bỏ nghiệm âm khi giải \\(y^2=4\\). Thay \\(x=1\\) vào parabol \\(y^2=4x\\), ta được \\(y=\\pm2\\); cả \\((1,2)\\) và \\((1,-2)\\) đều thuộc parabol và đối xứng qua trục \\(Ox\\).\n\n\n**Kiểm lỗi**\n\nNếu chỉ giữ nghiệm y dương khi giao parabol với đường thẳng hoặc nhầm parabol và elip, đọc **Kiến thức 4.5**. Làm **Bài luyện 84** (cắt elip) và **Bài luyện 87** (cắt parabol), thế nghiệm trở lại cả hai phương trình.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Hai giao điểm (1;2) và (1;−2).",
+    "worked_solution": "Thay x=1 vào y²=4x được y²=4, nên y=2 hoặc y=−2. Cả hai điểm đều thỏa mãn hai phương trình.\n\n**Nếu làm sai:** Nếu chỉ lấy \\(y=2\\), em đã bỏ nghiệm âm khi giải \\(y^2=4\\). Thay \\(x=1\\) vào parabol \\(y^2=4x\\), ta được \\(y=\\pm2\\); cả \\((1,2)\\) và \\((1,-2)\\) đều thuộc parabol và đối xứng qua trục \\(Ox\\).\n\n\n**Kiểm lỗi**\n\nNếu chỉ giữ nghiệm y dương khi giao parabol với đường thẳng hoặc nhầm parabol và elip, đọc **Kiến thức 4.5**. Làm **Bài luyện 84** (cắt elip) và **Bài luyện 87** (cắt parabol), thế nghiệm trở lại cả hai phương trình.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-CONIC_INTERSECTION"
+    ],
     "original_outcome_ids": [
       "TOP14-O22"
     ],
@@ -679,16 +726,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP14-T23",
-    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363",
-    "stem": "Nguồn thu ở tiêu điểm cách đỉnh 3 cm; với trục Ox và đơn vị cm, phương trình mặt cắt?",
-    "answer_key": null,
-    "worked_solution": "f=3 ⇒ y²=4fx=12x (cùng đơn vị cm); đường chuẩn x=−3 cm.\n\n**Nếu làm sai:** Nếu viết y²=6x, bạn đã quên rằng f=p/2.\n\n\n**Kiểm lỗi**\n\nNếu viết y²=2fx thay cho y²=4fx khi f là khoảng cách từ đỉnh đến tiêu điểm, đọc **Kiến thức 4.6**. Làm **Bài luyện 78** và **Bài luyện 85**; độ rộng mặt cắt bằng hai lần |y| tại cùng x.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d3c54d3867e6e831d6968a81d9c24d9d6b219363_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Mặt cắt có dạng parabol với đỉnh O, trục Ox và nguồn thu đặt tại tiêu điểm F trên nửa trục Ox dương, cách đỉnh 3 cm. Viết phương trình mặt cắt với tọa độ tính bằng cm.",
+    "answer_key": "y²=12x, tọa độ tính bằng cm.",
+    "worked_solution": "Mặt cắt là parabol đỉnh O, tiêu điểm F(3;0), nên f=3 cm và y²=4fx=12x, với tọa độ tính bằng cm. Đường chuẩn là x=−3. So với y²=2px, ta có p=6, không phải 3.\n\n**Nếu làm sai:** Nếu viết y²=6x, bạn đã quên rằng f=p/2.\n\n\n**Kiểm lỗi**\n\nNếu viết y²=2fx thay cho y²=4fx khi f là khoảng cách từ đỉnh đến tiêu điểm, đọc **Kiến thức 4.6**. Làm **Bài luyện 78** và **Bài luyện 85**; độ rộng mặt cắt bằng hai lần |y| tại cùng x.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-PARABOLA_FOCUS",
+      "G10-B22-CONIC_MODEL"
+    ],
     "original_outcome_ids": [
       "TOP14-O23"
     ],
@@ -710,7 +760,7 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP15-T01",
