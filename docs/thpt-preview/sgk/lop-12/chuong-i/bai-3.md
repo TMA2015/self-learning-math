@@ -37,7 +37,7 @@
 
     ??? question "Đối chiếu"
 
-        Với \(x\ne-1/2\), \(f(x)=\dfrac{5-3/x}{2+1/x}\) khi \(x\ne0\). Vì \(1/x\to0\) ở cả hai đầu vô cực nên cả hai giới hạn đều bằng \(5/2\). Đồ thị có một tiệm cận ngang \(y=5/2\).
+        Khi \(x\ne0,-1/2\), \(f(x)=\dfrac{5-3/x}{2+1/x}\). Vì \(1/x\to0\) ở cả hai đầu vô cực nên cả hai giới hạn đều bằng \(5/2\). Đồ thị có một tiệm cận ngang \(y=5/2\).
 
     ??? tip "Kiểm lỗi"
 
@@ -177,11 +177,11 @@
 
     ### 3.4. Miền xác định chỉ có một phía
 
-    **Đề bài.** Tìm tất cả tiệm cận của đồ thị \(y=\ln(x-2)\).
+    **Đề bài.** Tìm tiệm cận ngang và đứng của đồ thị \(y=\ln(x-2)\).
 
     **Phân tích:** Miền là \(x>2\); chỉ xét giới hạn bên phải của \(2\) và khi \(x\to+\infty\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Khi \(x\to2^+\), \(\ln(x-2)\to-\infty\), nên có tiệm cận đứng \(x=2\). Khi \(x\to+\infty\), hàm tiến tới \(+\infty\), không có tiệm cận ngang. Hơn nữa \(\lim_{x\to+\infty}\ln(x-2)/x=0\), nên không thể có tiệm cận xiên với hệ số góc khác \(0\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Khi \(x\to2^+\), \(\ln(x-2)\to-\infty\), nên có tiệm cận đứng \(x=2\). Khi \(x\to+\infty\), hàm tiến tới \(+\infty\), không có tiệm cận ngang.</p></div>
 
     **Kiểm lại:** Không yêu cầu giới hạn bên trái ở \(2\); phía đó không thuộc miền xác định.
 
@@ -215,7 +215,7 @@
 
     **Kiểm lại:** \(f(0)=2\) và \(0+2=2\). Sự tồn tại giao điểm không làm thay đổi giới hạn ở vô cực.
 
-    ### 3.8. Đọc đồ thị có nhiều tiệm cận đứng
+    ### 3.8. Phân tích ba nhánh đồ thị có hai tiệm cận đứng
 
     **Đề bài.** Cho \(f(x)=2x^2/(x^2-1)\). Xác định các tiệm cận và chiều tiến sát của từng nhánh tại hai mốc \(x=\pm1\).
 
