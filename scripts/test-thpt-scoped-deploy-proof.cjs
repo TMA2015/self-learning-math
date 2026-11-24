@@ -801,6 +801,42 @@ function verifyG11W7(previous,current,changed,expected){
  console.log("PASS #1039 W7 six source locks, eight reused SVG, frozen W1–W6, assessment boundary, exact hook");
 }
 
+const G12_MATH_HOTFIX_ROWS=[["docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md","c87cefbfe3dfe2bdcce4976a40aa1596f8fca31c","eb93bf6a1ac1fd07347bf01d872aae26957ebc78",5,4,8],["docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md","757b85da3ebdc143be51b7816b142dbde13b11da","40b60e3419e71738bbfa61dcb4ff45c58c5342f2",7,6,11],["docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md","0ae1063568ddf02dec12f61ecc7733b643d1245a","2d143590b7bfb1bb2d807c69f4040f62a7700968",6,3,4],["docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md","adfe3511b1335aed52047f00c11ecb3ad830d287","ac62a6cfb481327fa98f330b64b72f1684c9b267",8,7,9],["docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md","88dda34ee093c97e0cc3b844b6857168ee630506","8ce272ea3bd2425c943b4ed9c642e229a659ffa0",8,8,16],["docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md","e0ffd6f8389218585baa7e47b2558b3c83248034","ad7f4379832984d2ce30db269a59d8e0990b7e64",12,12,23],["docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md","8007752c3027a88281aa3192ef30ba557d0df648","fb7d4173e0ed6376aa71bfaf53f70803a6bade5e",15,15,29]],G12_MATH_HOTFIX_FILES=["docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md","docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md","docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md","docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
+
+function normalizeG12DisplayBlocks(content){
+ const lines=content.split("\n"),before=new Set();let total=0,affected=0;
+ for(let i=0;i<lines.length;i++){
+  if(lines[i].trim()!=="\\[")continue;
+  let j=i+1;while(j<lines.length&&lines[j].trim()!=="\\]")j++;
+  assert(j<lines.length,"unbalanced display block");
+  total++;
+  if(lines[i-1]?.trim()||lines[j+1]?.trim())affected++;
+  if(lines[i-1]?.trim())before.add(i);
+  if(lines[j+1]?.trim())before.add(j+1);
+  i=j;
+ }
+ return {text:lines.flatMap((l,i)=>before.has(i)?["",l]:[l]).join("\n"),total,affected,inserted:before.size};
+}
+function verifyG12MathHotfix(previous,current,changed,expected){
+ assert.equal(previous,"d7253020057be0464034b6168a513267c08ec127");
+ assert.deepEqual(changed.slice().sort(),G12_MATH_HOTFIX_FILES.slice().sort());
+ assert.deepEqual(expected.slice().sort(),G12_MATH_HOTFIX_ROWS.map(r=>r[0]).sort());
+ const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
+ const receipt=read(current,G11_W1_HANDOFF);
+ assert.equal(blob(read(previous,G11_W1_HANDOFF)),"f9ea6b18f934d29f6a9549272fc42ac467d88da8");
+ assert.equal(blob(receipt),"64438297709b8b71ea1a478e0f3908f539f0d132");
+ assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
+ for(const [file,oldSha,newSha,total,affected,inserted] of G12_MATH_HOTFIX_ROWS){
+  const old=read(previous,file),now=read(current,file),fix=normalizeG12DisplayBlocks(old.toString("utf8"));
+  assert.equal(blob(old),oldSha);assert.equal(blob(now),newSha);assert.equal(blob(fs.readFileSync(path.join(root,file))),newSha);
+  assert.equal(fix.total,total);assert.equal(fix.affected,affected);assert.equal(fix.inserted,inserted);
+  assert.equal(now.toString("utf8"),fix.text,"Only empty lines around display delimiters may change");
+  assert.deepEqual(old.toString("utf8").split("\n").filter(l=>l.trim()),now.toString("utf8").split("\n").filter(l=>l.trim()));
+  console.log("SGK_REL_009_EXACT_SOURCE_PASS "+file+" standalone blocks "+total+" inserted "+inserted);
+ }
+ console.log("PASS SGK-REL-009 seven canonical sources, 61 display blocks, 100 inserted separators; no nonblank line changes");
+}
+
 const G12_W11_ROWS=[[11,"f3fc0f654a21af7ec72de657643ef97488413dcb","88dda34ee093c97e0cc3b844b6857168ee630506",7,"docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md"],[12,"2ea14427518e58acb03e85d64dcc6b18d55f8798","e0ffd6f8389218585baa7e47b2558b3c83248034",7,"docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md"],[13,"51b5cf8243b4793e159db862379a21df60ff75bd","8007752c3027a88281aa3192ef30ba557d0df648",7,"docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md"]],G12_W11_NEW=[["docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261124.svg","cb98c0d7e33eab90f1b1fd4e09e6dba925539e25"],["docs/assets/images/thpt/G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg","299037dee91e0c91db3e5c911982bbebbb514ae0"],["docs/assets/images/thpt/G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg","b04dafd5b4ff5f56be0893d3a52bba5121b64808"],["docs/assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg","af5e42bcb3b150c706d472a92be96399b480e02c"],["docs/assets/images/thpt/G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg","9fb3c7377877eaea2b5de466659c85437e95a7b7"],["docs/assets/images/thpt/G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg","01143627de4f6c90e3a74f6945c284c76f256c4a"]],G12_W11_UPDATED=[],G12_W11_EXISTING=[],G12_W11_FILES=["docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md","docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
 function verifyG12W11(previous,current,changed,expected){
  assert.equal(previous,"cfd2f3e5494bbf0d48a9f2838dcc4104d3586ecc");
@@ -956,6 +992,7 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.length===G12_MATH_HOTFIX_FILES.length&&changed.every(x=>G12_MATH_HOTFIX_FILES.includes(x))){verifyG12MathHotfix(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;}
  if(changed.length===G12_W11_FILES.length&&changed.every(x=>G12_W11_FILES.includes(x))){verifyG12W11(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;}
  if(changed.length===G12_W10_FILES.length&&changed.every(x=>G12_W10_FILES.includes(x))){verifyG12W10(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;}
  if(changed.length===G12_W9_FILES.length&&changed.every(x=>G12_W9_FILES.includes(x))){verifyG12W9(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;}
