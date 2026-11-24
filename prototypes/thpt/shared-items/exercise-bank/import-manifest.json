@@ -1294,20 +1294,20 @@
     }
   ],
   "counts": {
-    "formative_items": 1740,
+    "formative_items": 1756,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3847,
+    "placements": 3863,
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 653,
+    "legacy_combined_answer_items": 669,
     "topic_knowledge_first_try": 170,
-    "sgk_knowledge_first_try": 121
+    "sgk_knowledge_first_try": 137
   },
-  "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported; G11 33 Knowledge pages scanned, 32 pages with unkeyed blocks remain mapping pending; G12 19 Knowledge pages scanned; all 79 SGK pages inventoried, source mapping not complete",
+  "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported; G11 33 Knowledge pages scanned, 32 pages with unkeyed blocks remain mapping pending; G12 19 Knowledge pages scanned; all 79 SGK pages inventoried, source mapping not complete; G11 B02–B07 16 unkeyed source tasks imported with canonical KFT IDs, partial matches deferred",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -2546,7 +2546,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "653 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
+  "legacy_combined_answer_note": "669 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -2828,7 +2828,7 @@
         "public_blob": "bde0820d157a5169d3cf365c846cf11169d40035"
       }
     ],
-    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_BLOCK_REVIEW_COMPLETE_CANONICAL_MAPPING_PENDING",
+    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_CANONICAL_MAPPING_IMPORT_IN_PROGRESS",
     "sgk_pages": [
       {
         "grade": 10,
@@ -3101,7 +3101,7 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md",
         "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
         "markers": 0,
-        "imported": 0,
+        "imported": 4,
         "reused": 0,
         "unkeyed_activity_blocks": 5,
         "locator": "Markdown bold Vận dụng labels in source order",
@@ -3122,44 +3122,60 @@
             "order": 2,
             "locator": "Vận dụng #2",
             "line": 88,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B02-P06",
               "THPT-G11-CHI-RD1-07"
             ],
             "reason": "Different angle data/signs, not same task.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B02-KFT02",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 3,
             "locator": "Vận dụng #3",
             "line": 120,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B02-P04"
             ],
             "reason": "Existing uses different product and angles.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B02-KFT03",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 4,
             "locator": "Vận dụng #4",
             "line": 155,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B02-P05"
             ],
             "reason": "Source asks difference, existing asks sum.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B02-KFT04",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 5,
             "locator": "Vận dụng #5",
             "line": 183,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [],
             "reason": "Two-signal sum/product and varying envelope not found.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B02-KFT05",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           }
         ]
       },
@@ -3170,7 +3186,7 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md",
         "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
         "markers": 0,
-        "imported": 0,
+        "imported": 5,
         "reused": 0,
         "unkeyed_activity_blocks": 6,
         "locator": "Markdown bold Vận dụng labels in source order",
@@ -3180,25 +3196,33 @@
             "order": 1,
             "locator": "Vận dụng #1",
             "line": 48,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B03-C01",
               "THPT-G11-B01-C02"
             ],
             "reason": "Source asks four functions at 0 and π/2, including undefined values; existing tasks differ.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B03-KFT01",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 2,
             "locator": "Vận dụng #2",
             "line": 66,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHI-RD1-11",
               "THPT-G11-B03-C02"
             ],
             "reason": "Different function and constant-function minimum-positive-period question.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B03-KFT02",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 3,
@@ -3215,32 +3239,44 @@
             "order": 4,
             "locator": "Vận dụng #4",
             "line": 102,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B03-P05"
             ],
             "reason": "Existing asks zeros, source asks strict negative interval.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B03-KFT04",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 5,
             "locator": "Vận dụng #5",
             "line": 120,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [],
             "reason": "Source asks tan x ≥0 on one open branch.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B03-KFT05",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 6,
             "locator": "Vận dụng #6",
             "line": 138,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B03-P07"
             ],
             "reason": "Existing asks monotonicity, not negative interval.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B03-KFT06",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           }
         ]
       },
@@ -3251,7 +3287,7 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
         "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
         "markers": 0,
-        "imported": 0,
+        "imported": 4,
         "reused": 0,
         "unkeyed_activity_blocks": 6,
         "locator": "Markdown bold Vận dụng labels in source order",
@@ -3261,10 +3297,14 @@
             "order": 1,
             "locator": "Vận dụng #1",
             "line": 49,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [],
             "reason": "Two pairs of equivalent/non-equivalent equations, not found.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B04-KFT01",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 2,
@@ -3292,32 +3332,44 @@
             "order": 4,
             "locator": "Vận dụng #4",
             "line": 103,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHI-RD1-19"
             ],
             "reason": "Same solution family for a different equation does not establish same task.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B04-KFT04",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 5,
             "locator": "Vận dụng #5",
             "line": 121,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B04-C04"
             ],
             "reason": "Existing cot x=1, source cot x=−1.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B04-KFT05",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           },
           {
             "order": 6,
             "locator": "Vận dụng #6",
             "line": 137,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [],
             "reason": "Principal arcsine angle and RAD/DEG comparison, not found.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B04-KFT06",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           }
         ]
       },
@@ -3328,22 +3380,26 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-5.md",
         "blob": "8634196e27b5bac8cb3089f433779b592809d955",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 19,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B05-C01"
             ],
             "reason": "Linked follow-up C01 is a different task; source u_n=2n−1, u4=7.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B05-KFT01",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           }
         ]
       },
@@ -3354,23 +3410,27 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-6.md",
         "blob": "43b285b679941e0748ad78f377ab9bbdd73ec3d3",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 19,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B06-C01",
               "THPT-TOP07-P10"
             ],
             "reason": "Follow-up C01 different; topic P10 asks total 10 rows, source asks fourth row, 21 seats.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B06-KFT01",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           }
         ]
       },
@@ -3381,23 +3441,27 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md",
         "blob": "3d0886889e383cd76963e1fa3a5eef175a389080",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 19,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-B07-C01",
               "THPT-G11-B07-P08"
             ],
             "reason": "Source 100×1.1²; linked C01 different sequence and P08 different investment data.",
-            "source_answer_present": true
+            "source_answer_present": true,
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B07-KFT01",
+            "id_assignment": "NEW_ID_FOR_EXISTING_UNKEYED_SOURCE_TASK",
+            "audit_status": "PENDING_ACADEMIC_AUDIT"
           }
         ]
       },
@@ -5109,12 +5173,13 @@
       "reviewed_blocks": 46,
       "reused": 4,
       "partial_matches": 10,
-      "no_exact_match_in_reviewed_shards": 29,
+      "no_exact_match_in_reviewed_shards": 13,
       "worked_example_scope_pending": 3,
       "unreviewed_blocks": 0,
-      "pending_mapping_blocks": 42,
+      "pending_mapping_blocks": 26,
       "scope": "G11 B02–B33; same-chapter records and relevant Topic candidate shards/first-try, public ChI selfcheck, G10 ChIII trig sources; not global exhaustiveness.",
-      "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+      "new_canonical_imported": 16
     },
     "g12_mapping_review": {
       "reviewed_blocks": 40,
@@ -5125,6 +5190,7 @@
       "pending_mapping_blocks": 35,
       "scope": "G12 B01–B19; six same-grade chapter shards, relevant Topic candidates/first-try and ChI public selfcheck. Global exhaustiveness not claimed.",
       "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
-    }
+    },
+    "unkeyed_id_assignment_note": "New canonical KFT IDs are scoped by grade, lesson and original source block order, assigned only to preexisting unkeyed tasks after source-task comparison. Existing original IDs are not changed. Candidate global uniqueness/semantic reconciliation and academic audit remain pending. No new math questions or solutions authored in this import."
   }
 }
