@@ -798,5 +798,443 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY01",
+    "content_version": "SOURCE_BLOB_d552c5415c05f1c354cdb8e01a61f0165296e66c",
+    "stem": "Cho số đúng \\(\\bar a=1/3\\), dùng số gần đúng \\(a=0{,}33\\). Em viết quan hệ bằng kí hiệu nào, và vì sao không viết dấu bằng?",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> \\(a=0{,}33\\) là số gần đúng; \\(\\bar a=1/3\\) là số đúng; viết \\(0{,}33\\approx1/3\\), không viết bằng.</p>\n<p><strong>Giải thích vì sao:</strong> \\(0{,}33=33/100\\ne1/3\\). Việc cắt độ chính xác biểu diễn tạo ra số gần đúng dù cách tính là hợp lệ.</p>\n<p><strong>Nếu chưa làm được:</strong> Đọc lại giải thích số đúng và số gần đúng trong §1.2, rồi <a href=\"../luyen-tap/?item=THPT-G10-B12-P04\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+      "heading_id": "THPT-G10-CHV-TRY01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-12.md",
+        "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY02",
+    "content_version": "SOURCE_BLOB_d552c5415c05f1c354cdb8e01a61f0165296e66c",
+    "stem": "Máy báo \\(a=8{,}4\\,\\mathrm{cm}\\), độ chính xác \\(d=0{,}3\\,\\mathrm{cm}\\). Số đúng \\(\\bar a\\) thuộc khoảng nào? Có chắc \\(\\Delta_a=0{,}3\\,\\mathrm{cm}\\) không?",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> \\(\\bar a\\in[8{,}1;8{,}7]\\,\\mathrm{cm}\\). Chỉ chắc \\(\\Delta_a\\le0{,}3\\,\\mathrm{cm}\\), không chắc bằng.</p>\n<p><strong>Giải thích vì sao:</strong> Lấy 8,4 trừ/cộng 0,3. Sai số có thể 0 nếu giá trị đúng đúng bằng 8,4; độ chính xác chỉ giới hạn trên.</p>\n<p><strong>Nếu chưa làm được:</strong> Xem hình khoảng giá trị đúng tại §1.2 và công thức §2.2, rồi <a href=\"../luyen-tap/?item=THPT-G10-B12-C02\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+      "heading_id": "THPT-G10-CHV-TRY02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-12.md",
+        "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY03",
+    "content_version": "SOURCE_BLOB_d552c5415c05f1c354cdb8e01a61f0165296e66c",
+    "stem": "Đo quãng đường \\(a=150\\,\\mathrm m\\), sai số tuyệt đối không vượt quá \\(d=3\\,\\mathrm m\\). Hãy tính cận trên của sai số tương đối và phân biệt dấu \\(=\\) với \\(\\le\\).",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> \\(\\delta_a\\le3/150=0{,}02=2\\%\\), không thể kết luận \\(\\delta_a=2\\%\\).</p>\n<p><strong>Giải thích vì sao:</strong> Ta đang so giới hạn sai số 3 m với số gần đúng 150 m. Sai số thực có thể nhỏ hơn 3 m; cần giữ dấu \\(\\le\\).</p>\n<p><strong>Nếu chưa làm được:</strong> Đọc lại điều kiện mẫu số và cận sai số tương đối trong §2.2, rồi <a href=\"../luyen-tap/?item=THPT-G10-B12-P06\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+      "heading_id": "THPT-G10-CHV-TRY03",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-12.md",
+        "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY04",
+    "content_version": "SOURCE_BLOB_d552c5415c05f1c354cdb8e01a61f0165296e66c",
+    "stem": "Làm tròn số đúng \\(7{,}346\\) tới hàng phần trăm. Tìm số quy tròn và sai số tuyệt đối của phép làm tròn.",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> Số quy tròn là \\(7{,}35\\); sai số là \\(|7{,}35-7{,}346|=0{,}004\\).</p>\n<p><strong>Giải thích vì sao:</strong> Giữ hai chữ số thập phân, chữ số kế tiếp 6 làm tăng hàng phần trăm. Sai số 0,004 nhỏ hơn 0,005 (nửa đơn vị hàng phần trăm).</p>\n<p><strong>Nếu chưa làm được:</strong> Ôn quy tắc hàng quy tròn tại §2.3, rồi <a href=\"../luyen-tap/?item=THPT-G10-B12-P02\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+      "heading_id": "THPT-G10-CHV-TRY04",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-12.md",
+        "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY-CALC-R01",
+    "content_version": "SOURCE_BLOB_d552c5415c05f1c354cdb8e01a61f0165296e66c",
+    "stem": "Tính \\(\\sqrt[3]{11}\\) và ghi số gần đúng đến hàng phần nghìn sao cho sai số không vượt quá \\(0{,}0005\\). Hãy mô tả cách nhập và vì sao không dùng \\(11/3\\).",
+    "answer_key": null,
+    "worked_solution": "**Kết quả:** \\(\\sqrt[3]{11}\\approx2{,}223980090\\ldots\\), làm tròn được \\(2{,}224\\). Sai số khoảng \\(0{,}00001991<0{,}0005\\); có thể chứng minh bằng \\(2{,}2235^3<11<2{,}2245^3\\).\n\n**Vì sao:** Căn bậc ba là lũy thừa mũ \\(1/3\\), không phải phép chia cho 3. Chỉ có thể ghi đã thực hành máy khi đã thật sự nhập, đọc và quy tròn.\n\n**Nếu nhầm:** Tự mở khung Kiểm lỗi ngay bên dưới, rồi chọn bộ số mới trong Luyện tập; không dùng kết quả vừa xem làm chứng cứ độc lập.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G10-B12-CALCULATOR"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+      "heading_id": "THPT-G10-CHV-TRY-CALC-R01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-12.md",
+        "blob": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G10-B12-CALC-01"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY05",
+    "content_version": "SOURCE_BLOB_f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+    "stem": "Mẫu số liệu \\(2,4,4,10\\) gồm bốn quan sát. Tính số trung bình cộng, không bỏ giá trị lớn nhất.",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> \\(\\bar x=(2+4+4+10)/4=5\\).</p>\n<p><strong>Giải thích vì sao:</strong> Có bốn quan sát, tổng 20. Chia đều tổng cho bốn lần ghi cho 5; không bỏ giá trị 10 chỉ vì cao.</p>\n<p><strong>Nếu chưa làm được:</strong> Đọc §1.2.1 và §2.1 về phép chia đều, đếm đủ bốn quan sát, rồi <a href=\"../luyen-tap/?item=THPT-G10-B13-C01\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+      "heading_id": "THPT-G10-CHV-TRY05",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-13.md",
+        "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY06",
+    "content_version": "SOURCE_BLOB_f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+    "stem": "Mẫu chưa sắp xếp \\(9,2,12,5\\). Hãy sắp xếp rồi tìm trung vị \\(Q_2\\).",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> Sắp thành \\(2,5,9,12\\). Trung vị \\(Q_2=(5+9)/2=7\\).</p>\n<p><strong>Giải thích vì sao:</strong> Với bốn giá trị, hai phần tử ở giữa là 5 và 9 sau sắp xếp. Không lấy 2 và 9 theo thứ tự ghi ban đầu.</p>\n<p><strong>Nếu chưa làm được:</strong> Đọc §1.2.2 và §2.1 để sắp dãy và tìm hai vị trí giữa, rồi <a href=\"../luyen-tap/?item=THPT-G10-B13-C02\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+      "heading_id": "THPT-G10-CHV-TRY06",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-13.md",
+        "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY07",
+    "content_version": "SOURCE_BLOB_f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+    "stem": "Cho mẫu đã sắp \\(1,2,3,4,5,6,7\\). Tìm \\(Q_1,Q_2,Q_3\\) theo quy ước KNTT.",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> \\(Q_2=4\\), nửa dưới \\(1,2,3\\) cho \\(Q_1=2\\), nửa trên \\(5,6,7\\) cho \\(Q_3=6\\).</p>\n<p><strong>Giải thích vì sao:</strong> Có bảy phần tử, bỏ chính 4 khi tìm Q1/Q3. Không lấy trung bình các vị trí 3 và 4 hay đưa 4 vào hai nửa.</p>\n<p><strong>Nếu chưa làm được:</strong> Đọc cách đọc hình §1.2.3 và quy tắc chia nửa §2.2, rồi <a href=\"../luyen-tap/?item=THPT-G10-B13-P02\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+      "heading_id": "THPT-G10-CHV-TRY07",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-13.md",
+        "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY08",
+    "content_version": "SOURCE_BLOB_f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+    "stem": "Trong mẫu \\(2,2,3,3,5\\), giá trị nào là mốt? Có thể có hơn một mốt không?",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> Có hai mốt là 2 và 3, mỗi số xuất hiện hai lần.</p>\n<p><strong>Giải thích vì sao:</strong> Cùng tần số cao nhất 2 nên cả hai đều là mốt; 3 lớn hơn 2 không làm nó 'mốt hơn'.</p>\n<p><strong>Nếu chưa làm được:</strong> Đọc §1.2.4 và định nghĩa mốt ở §2.3, kiểm tần số lớn nhất, rồi <a href=\"../luyen-tap/?item=THPT-G10-B13-P03\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+      "heading_id": "THPT-G10-CHV-TRY08",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-13.md",
+        "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY09",
+    "content_version": "SOURCE_BLOB_f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+    "stem": "Mẫu \\(4,5,6,7,28\\). Tính trung bình và trung vị; chỉ ra đại lượng nào ít bị số 28 chi phối hơn.",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> Trung bình \\((4+5+6+7+28)/5=50/5=10\\); trung vị 6; trung vị ít bị 28 chi phối hơn.</p>\n<p><strong>Giải thích vì sao:</strong> Vị trí giữa không đổi nếu 28 còn lớn nhất, còn tổng và trung bình tăng khi cực trị tăng.</p>\n<p><strong>Nếu chưa làm được:</strong> So sánh ý nghĩa trung bình/trung vị ở §1.2.5 và §2.1, rồi <a href=\"../luyen-tap/?item=THPT-G10-B13-P06\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+      "heading_id": "THPT-G10-CHV-TRY09",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-13.md",
+        "blob": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY10",
+    "content_version": "SOURCE_BLOB_66689cd750d75a0bd37cb6d3841314d18a566ec7",
+    "stem": "Với mẫu đã sắp \\(2,3,4,6,8,9,10\\), tìm khoảng biến thiên R và khoảng tứ phân vị \\(\\Delta_Q\\) theo KNTT.",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> \\(R=10-2=8\\); \\(Q_2=6\\), \\(Q_1=3\\), \\(Q_3=9\\) nên \\(\\Delta_Q=9-3=6\\).</p>\n<p><strong>Giải thích vì sao:</strong> Với n=7 bỏ số giữa 6, nửa dưới 2,3,4 cho Q1=3 và nửa trên 8,9,10 cho Q3=9. R dùng min/max, IQR dùng Q1/Q3.</p>\n<p><strong>Nếu chưa làm được:</strong> Xem lại Khám phá §1.2.1 và Kiến thức SGK §2.1, tự tính lại từ dữ kiện của câu hỏi, rồi <a href=\"../luyen-tap/?item=THPT-G10-B14-P01\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+      "heading_id": "THPT-G10-CHV-TRY10",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-14.md",
+        "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY11",
+    "content_version": "SOURCE_BLOB_66689cd750d75a0bd37cb6d3841314d18a566ec7",
+    "stem": "Với mẫu \\(2,4,6\\), tính số trung bình và phương sai \\(s^2\\) theo mẫu số \\(n=3\\).",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> \\(\\bar x=4\\); \\(s^2=[(2-4)^2+(4-4)^2+(6-4)^2]/3=8/3\\).</p>\n<p><strong>Giải thích vì sao:</strong> Hai độ lệch −2 và +2 có tổng 0 nhưng bình phương đều 4; tổng bình phương 8 chia 3 phần tử.</p>\n<p><strong>Nếu chưa làm được:</strong> Xem lại Khám phá §1.2.2 và Kiến thức SGK §2.2, tự tính lại từ dữ kiện của câu hỏi, rồi <a href=\"../luyen-tap/?item=THPT-G10-B14-C02\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+      "heading_id": "THPT-G10-CHV-TRY11",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-14.md",
+        "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY12",
+    "content_version": "SOURCE_BLOB_66689cd750d75a0bd37cb6d3841314d18a566ec7",
+    "stem": "Bốn độ dài đo được (đơn vị cm) là \\(2,2,6,6\\). Tính số trung bình, phương sai và độ lệch chuẩn, ghi đúng đơn vị.",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> Trung bình 4 cm; \\(s^2=[4+4+4+4]/4=4\\,\\mathrm{cm}^2\\), \\(s=2\\,\\mathrm{cm}\\).</p>\n<p><strong>Giải thích vì sao:</strong> Mỗi độ lệch với 4 là ±2 cm, bình phương 4 cm²; căn 4 cm² cho 2 cm.</p>\n<p><strong>Nếu chưa làm được:</strong> Xem lại Khám phá §1.2.3 và Kiến thức SGK §2.2, tự tính lại từ dữ kiện của câu hỏi, rồi <a href=\"../luyen-tap/?item=THPT-G10-B14-P05\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+      "heading_id": "THPT-G10-CHV-TRY12",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-14.md",
+        "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY13",
+    "content_version": "SOURCE_BLOB_66689cd750d75a0bd37cb6d3841314d18a566ec7",
+    "stem": "Xét mẫu đã sắp \\(1,2,3,4,5,6,20\\). Tìm \\(Q_1,Q_2,Q_3\\), hai hàng rào và giá trị bất thường.",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> \\(Q_2=4\\), \\(Q_1=2\\), \\(Q_3=6\\), \\(\\Delta_Q=4\\); hàng rào dưới −4, hàng rào trên 12. Chỉ giá trị 20 là bất thường.</p>\n<p><strong>Giải thích vì sao:</strong> Với n=7, bỏ số giữa 4. Hai hàng rào =2−1,5·4=−4 và 6+1,5·4=12; 20&gt;12, các giá trị 1..6 trong khoảng.</p>\n<p><strong>Nếu chưa làm được:</strong> Xem lại Khám phá §1.2.4 và Kiến thức SGK §2.3, tự tính lại từ dữ kiện của câu hỏi, rồi <a href=\"../luyen-tap/?item=THPT-G10-B14-P03\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+      "heading_id": "THPT-G10-CHV-TRY13",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-14.md",
+        "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHV-TRY14",
+    "content_version": "SOURCE_BLOB_66689cd750d75a0bd37cb6d3841314d18a566ec7",
+    "stem": "Nhóm A có \\(2,4,6\\), nhóm B có \\(0,4,8\\). Trung bình của hai nhóm và phương sai mô tả từng nhóm bằng bao nhiêu? Nhóm nào phân tán hơn?",
+    "answer_key": null,
+    "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> Cả hai trung bình 4; \\(s_A^2=8/3\\), \\(s_B^2=32/3\\), nên B phân tán hơn.</p>\n<p><strong>Giải thích vì sao:</strong> A lệch −2,0,2; B lệch −4,0,4. Bình phương độ lệch nhóm B gấp bốn lần nên phương sai B lớn hơn.</p>\n<p><strong>Nếu chưa làm được:</strong> Xem lại Khám phá §1.2.5 và Kiến thức SGK §2.2, tự tính lại từ dữ kiện của câu hỏi, rồi <a href=\"../luyen-tap/?item=THPT-G10-B14-P04\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+      "heading_id": "THPT-G10-CHV-TRY14",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-v/bai-14.md",
+        "blob": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
