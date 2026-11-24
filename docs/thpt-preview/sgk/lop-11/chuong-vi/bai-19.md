@@ -26,7 +26,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg" alt="Sơ đồ hai chiều từ hai mũ ba bằng tám sang lôgarit cơ số hai của tám bằng ba"><figcaption><strong>Hướng dẫn đọc:</strong> ô trái cho \(2^3=8\): biết cơ số 2 và mũ 3, tính được 8. Đi theo mũi tên ngược về ô phải để đọc \(\log_2 8=3\): biết cơ số 2 và kết quả 8, tìm lại số mũ 3. Bên dưới hình ghi rõ điều kiện \(a>0,\ a\ne1,\ b>0\).</figcaption></figure>
 
-    **Định nghĩa có điều kiện:** Với \(a>0,\ a\ne1\) và \(M>0\), \(\log_a M\) là **số thực duy nhất \(\alpha\)** sao cho \(a^\alpha=M\). Vì \(a=1\) sẽ cho \(1^\alpha=1\) với **mọi \(\alpha\)**, không xác định được một số mũ duy nhất; còn cơ số không dương không có phép lũy thừa với mọi mũ thực như đã học. Đối số phải dương vì \(a^\alpha>0\) nếu \(a>0\).
+    **Định nghĩa có điều kiện:** Với \(a>0,\ a\ne1\) và \(M>0\), \(\log_a M\) là **số thực duy nhất \(\alpha\)** sao cho \(a^\alpha=M\). Hàm \(a^x\) với cơ số hợp lệ nhận mọi giá trị dương và đơn điệu nghiêm ngặt (sẽ khảo sát ở Bài 20), nên với mỗi \(M>0\) có đúng một số mũ như vậy. Nếu \(a=1\), \(1^\alpha=1\) với **mọi \(\alpha\)** khi \(M=1\), còn khi \(M\ne1\) thì không có số mũ nào thỏa mãn; còn cơ số không dương không có phép lũy thừa với mọi mũ thực như đã học. Đối số phải dương vì \(a^\alpha>0\) nếu \(a>0\).
 
     Lấy \(M=1\) thì số mũ bằng 0, nên \(\log_a1=0\). Lấy \(M=a\) thì số mũ bằng 1, nên \(\log_a a=1\). Hai phép tính “đi rồi quay lại” cũng đúng: \(a^{\log_a M}=M\) nếu \(M>0\), và \(\log_a(a^t)=t\) nếu \(t\in\mathbb R\). Các công thức ấy chỉ hợp lệ khi **cơ số lôgarit hợp lệ**.
 
@@ -48,7 +48,7 @@
     \]
     Đây là suy luận **từ phép nhân lũy thừa**, không phải một quy tắc được nhớ theo dáng chữ.
 
-    Tương tự, \(M/N=a^{u-v}\) nên \(\log_a(M/N)=\log_aM-\log_aN\), và \(M^t=a^{ut}\) nên \(\log_a(M^t)=t\log_aM\). Trong cả ba công thức, **\(M,N>0\)**. Nếu trong một bài toán biểu thức như \(x-1\) có thể âm, em phải xét miền xác định **trước** khi tách lôgarit, không được biến đổi tùy ý.
+    Tương tự, \(M/N=a^{u-v}\) nên \(\log_a(M/N)=\log_aM-\log_aN\), và \(M^t=a^{ut}\) nên \(\log_a(M^t)=t\log_aM\). Công thức tích và thương cần **\(M,N>0\)**; công thức lũy thừa chỉ cần \(M>0,\ t\in\mathbb R\). Cả ba đều cần cơ số \(a>0,\ a\ne1\). Nếu trong một bài toán biểu thức như \(x-1\) có thể âm, em phải xét miền xác định **trước** khi tách lôgarit, không được biến đổi tùy ý.
 
     **Đổi cơ số có mục đích gì?** Máy tính thường có phím \(\log\) cơ số 10 và \(\ln\) cơ số \(e\), nhưng SGK có thể hỏi \(\log_4 8\). Đặt \(u=\log_a M\), nghĩa là \(M=a^u\). Lấy lôgarit cơ số \(b>0,b\ne1\) hai vế: \(\log_bM=u\log_ba\), nên
     \[
@@ -78,7 +78,7 @@
     \]
     Số \(e\) là số dương lớn hơn 1, nên hoàn toàn có thể làm **cơ số lôgarit**. Ta gọi \(\log_e M\) là **lôgarit tự nhiên**, viết \(\ln M\). Từ đó \(\ln e=1\), \(\ln1=0\), \(\ln(e^2)=2\). Những kết quả này đều theo định nghĩa lôgarit, không phải do phím bấm máy tính đặt ra.
 
-    **Vì sao dùng ln cho lãi liên tục?** Gửi vốn \(P\), lãi suất năm \(r\), lãi ghép \(m\) kì/năm trong \(t\) năm cho mô hình \(P(1+r/m)^{mt}\). Khi tăng số kì ghép không giới hạn, giới hạn dẫn tới \(A=Pe^{rt}\). Muốn biết thời gian \(t\) để số tiền **gấp đôi**, giải \(2P=Pe^{rt}\) thành \(e^{rt}=2\), rồi lấy \(\ln\) hai vế: \(rt=\ln2\), nên \(t=\frac{\ln2}{r}\) (với \(r>0\)). Lôgarit lúc này chính là phép đảo **tìm thời gian trong số mũ**.
+    **Vì sao dùng ln cho lãi liên tục?** Gửi vốn \(P\), lãi suất năm \(r\) viết dưới dạng số thập phân (chẳng hạn \(5\%=0{,}05\)), lãi ghép \(m\) kì/năm, \(m\) nguyên dương, trong \(t\ge0\) năm cho mô hình \(P(1+r/m)^{mt}\). Khi tăng số kì ghép không giới hạn, giới hạn dẫn tới \(A=Pe^{rt}\). Muốn biết thời gian \(t\) để số tiền **gấp đôi**, giải \(2P=Pe^{rt}\) thành \(e^{rt}=2\), rồi lấy \(\ln\) hai vế: \(rt=\ln2\), nên \(t=\frac{\ln2}{r}\) (với \(r>0\)). Lôgarit lúc này chính là phép đảo **tìm thời gian trong số mũ**.
 
     **Về máy tính:** Phím \(\log\) và \(\ln\) cho kết quả **gần đúng** khi giá trị không biểu diễn bằng số thập phân hữu hạn; lôgarit cơ số khác tính qua \(\log_aM=\ln M/\ln a\). Ví dụ \(\log_4 8=\frac32\) là chính xác, còn \(\ln2\approx0{,}6931\) là làm tròn. Dù bấm máy, vẫn phải kiểm đối số dương và cơ số hợp lệ.
 
