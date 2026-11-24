@@ -1,0 +1,402 @@
+[
+  {
+    "item_id": "THPT-TOP06-P01",
+    "content_version": 1,
+    "stem": "Một góc quay −450°. Đổi sang radian, xác định tọa độ tia cuối.",
+    "answer_key": "−5π/2; (0,−1).",
+    "worked_solution": "−450×π/180=−5π/2; cộng 2π được −π/2, tia cuối tại (0,−1). Không thay góc quay ban đầu bằng góc đại diện nếu bài hỏi số vòng.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O01"
+    ],
+    "problem_type_id": "TOP06-DIRECTION_TURNS",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Giữ dấu và phân biệt chiều quay với tia cuối.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P01 · TOP06-O01"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P02",
+    "content_version": 1,
+    "stem": "Sinα=4/5, α thuộc góc phần tư II. Tìm cosα, tanα.",
+    "answer_key": "−3/5; −4/3.",
+    "worked_solution": "cos²α=1−16/25=9/25; cos âm ở góc II nên cos=−3/5; tan=sin/cos=−4/3 vì cos khác 0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O02"
+    ],
+    "problem_type_id": "TOP06-SIGN_QUADRANT",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Lấy dấu theo góc phần tư trước khi lấy căn.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P02 · TOP06-O02"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P03",
+    "content_version": 1,
+    "stem": "Bánh xe bán kính 7 cm quay −120°. Độ dời cung có hướng và quãng đường trên vành bánh?",
+    "answer_key": "−14π/3 cm; 14π/3 cm.",
+    "worked_solution": "−120°=−2π/3 rad. rθ=−14π/3, r|θ|=14π/3. Độ dài quãng đường không âm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O03"
+    ],
+    "problem_type_id": "TOP06-SIGNED_ARC",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Đổi radian trước, quãng đường là giá trị tuyệt đối.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P03 · TOP06-O03"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P04",
+    "content_version": 1,
+    "stem": "F(x)=sinx/(1+cosx). Tìm miền ban đầu và biểu thức rút gọn.",
+    "answer_key": "x≠(2k+1)π; F=tan(x/2) trên miền đó.",
+    "worked_solution": "Dùng sinx=2sin(x/2)cos(x/2), 1+cosx=2cos²(x/2), rút gọn chỉ khi cos(x/2) khác 0. Miền ban đầu loại x=(2k+1)π.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O04"
+    ],
+    "problem_type_id": "TOP06-DOMAIN_SIMPLIFICATION",
+    "difficulty": "TRANSFER",
+    "hints": [],
+    "remediation": "Không được thêm điểm loại sau rút gọn.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P04 · TOP06-O04"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P05",
+    "content_version": 1,
+    "stem": "α=π/3. Tìm sin(π−α), cos(π−α) và giải thích dấu.",
+    "answer_key": "√3/2; −1/2.",
+    "worked_solution": "π−α=2π/3; đối xứng qua Oy giữ tung độ, đổi dấu hoành độ: sin=√3/2, cos=−1/2.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O05"
+    ],
+    "problem_type_id": "TOP06-RELATED_ANGLES",
+    "difficulty": "BASIC",
+    "hints": [],
+    "remediation": "Nhớ góc phần tư II cos âm, sin dương.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P05 · TOP06-O05"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P06",
+    "content_version": 1,
+    "stem": "Chứng minh sin(u+v)−sin(u−v)=2cosu sinv.",
+    "answer_key": "2cosu sinv.",
+    "worked_solution": "Khai triển cả hai công thức cộng/trừ: sinucosv+cosusinv −(sinucosv−cosusinv)=2cosusinv.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O06"
+    ],
+    "problem_type_id": "TOP06-ADDITION_PROOF",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Dấu trừ cả ngoặc quyết định đáp án.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P06 · TOP06-O06"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P07",
+    "content_version": 1,
+    "stem": "Đưa cos(5x)−cos(x) về tích.",
+    "answer_key": "−2sin3x sin2x.",
+    "worked_solution": "cosA−cosB=−2sin((A+B)/2)sin((A−B)/2); dùng A=5x,B=x cho nửa tổng 3x, nửa hiệu 2x.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O07"
+    ],
+    "problem_type_id": "TOP06-SUM_TO_PRODUCT",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Không bỏ dấu âm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P07 · TOP06-O07"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P08",
+    "content_version": 1,
+    "stem": "Tìm miền của y=1/(1−2sinx).",
+    "answer_key": "ℝ trừ các điểm π/6+2kπ và 5π/6+2kπ.",
+    "worked_solution": "Mẫu khác 0 ⇔ sinx≠1/2. Hai họ nghiệm sinx=1/2 bị loại; mọi giá trị khác hợp lệ.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O08"
+    ],
+    "problem_type_id": "TOP06-COMPOSITE_DOMAIN",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Đừng nhầm điều kiện mẫu với điều kiện căn.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P08 · TOP06-O08"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P09",
+    "content_version": 1,
+    "stem": "Tìm chu kỳ dương cơ bản của f(x)=sin2x+sin4x.",
+    "answer_key": "π.",
+    "worked_solution": "Tăng x thêm π khiến hai thành phần có góc tăng 2π,4π. Đặt y=2x: siny+sin2y có tần số 1 không triệt tiêu nên chu kỳ cơ bản theo y là 2π, theo x là π.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O09"
+    ],
+    "problem_type_id": "TOP06-PERIOD_HARMONICS",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Một vài điểm trùng nhau không đủ kết luận chu kỳ.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P09 · TOP06-O09"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P10",
+    "content_version": 1,
+    "stem": "h(t)=3−2cos(πt/4). Tìm chu kỳ, tập giá trị, h(0),h(4).",
+    "answer_key": "8; [1,5]; 1; 5.",
+    "worked_solution": "ω=π/4 nên T=8. Vì cos∈[−1,1], h∈[1,5]. Thế t=0: h=1; t=4: cosπ=−1 nên h=5.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O10"
+    ],
+    "problem_type_id": "TOP06-PARAMETER_GRAPH",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Hệ số âm phản xạ đỉnh/đáy, biên độ vẫn là 2.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P10 · TOP06-O10"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P11",
+    "content_version": 1,
+    "stem": "y=tan(3x): miền xác định và chu kỳ cơ bản?",
+    "answer_key": "x≠π/6+kπ/3; T=π/3.",
+    "worked_solution": "Không xác định khi cos3x=0 ⇒ 3x=π/2+kπ. Chu kỳ theo đối số là π nên theo x là π/3.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O11"
+    ],
+    "problem_type_id": "TOP06-TAN_DOMAIN",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Các tiệm cận đứng không phải điểm thuộc đồ thị.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P11 · TOP06-O11"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P12",
+    "content_version": 1,
+    "stem": "Giải cos(3x)=−1/2 trên ℝ.",
+    "answer_key": "x=±2π/9+2kπ/3.",
+    "worked_solution": "3x=±2π/3+2kπ ⇒ chia 3 cả hai vế và kπ để được hai họ nghiệm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O12"
+    ],
+    "problem_type_id": "TOP06-COS_EQUATION",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nghiệm cos thường có hai nhánh đối xứng.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P12 · TOP06-O12"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P13",
+    "content_version": 1,
+    "stem": "Giải cot(2x)=1 và kiểm điều kiện.",
+    "answer_key": "x=π/8+kπ/2.",
+    "worked_solution": "Cotθ=1 ⇔ θ=π/4+kπ, nên x=π/8+kπ/2. Tại nghiệm sin2x=±√2/2 khác 0, cot xác định.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O13"
+    ],
+    "problem_type_id": "TOP06-COT_EQUATION",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Không nhận điểm sin2x=0.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P13 · TOP06-O13"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P14",
+    "content_version": 1,
+    "stem": "Giải sinx/(1−cosx)=0 trên ℝ.",
+    "answer_key": "x=(2k+1)π.",
+    "worked_solution": "Miền x≠2kπ vì mẫu bằng 0 ở đó. Tử sinx=0 tại kπ; giao miền chỉ còn các k lẻ.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O14"
+    ],
+    "problem_type_id": "TOP06-LOST_DOMAIN",
+    "difficulty": "TRANSFER",
+    "hints": [],
+    "remediation": "Điều kiện ban đầu phải được giữ khi nhân chéo.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P14 · TOP06-O14"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P15",
+    "content_version": 1,
+    "stem": "Giải cosx=−1/2 trên [−π,π).",
+    "answer_key": "−2π/3; 2π/3.",
+    "worked_solution": "Trong một vòng cosx=−1/2 tại ±2π/3; cả hai thuộc khoảng. ±π không thỏa.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O15"
+    ],
+    "problem_type_id": "TOP06-INTERVAL_SOLUTIONS",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Lọc nghiệm theo khoảng đóng–mở.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P15 · TOP06-O15"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP06-P16",
+    "content_version": 1,
+    "stem": "Mô hình h(t)=20+6sin(πt/12) với 0≤t≤24. Tìm chu kỳ, max/min và khoảng h>20.",
+    "answer_key": "T=24; max26 tại t=6; min14 tại t=18; h>20 khi 0<t<12.",
+    "worked_solution": "ω=π/12 ⇒ T=24. Pha đạt π/2 ở t=6, 3π/2 ở t=18. Sin dương trên (0,π) tương ứng t∈(0,12).",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP06-O16"
+    ],
+    "problem_type_id": "TOP06-WINDOW_MODEL",
+    "difficulty": "TRANSFER",
+    "hints": [],
+    "remediation": "Không suy dự báo thực tế ngoài miền giả định.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading": "## THPT-TOP06-P16 · TOP06-O16"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

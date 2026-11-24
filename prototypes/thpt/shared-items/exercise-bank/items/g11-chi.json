@@ -1,0 +1,1262 @@
+[
+  {
+    "item_id": "THPT-G11-B01-C01",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Đổi góc 135° sang radian và xác định góc nằm ở góc phần tư nào trong [0,2π).",
+    "answer_key": "3π/4 rad; góc phần tư II.",
+    "worked_solution": "135°×π/180°=3π/4. Vì π/2<3π/4<π nên góc ở góc phần tư II.",
+    "skill_ids": [
+      "G11-B01-DEG_RAD"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Lấy 135×π/180, rồi so với π/2 và π."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B01-C01 — SGK_CORE · G11-B01-DEG_RAD · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B01-C02",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Tính sin(5π/6), cos(5π/6), tan(5π/6) và cot(5π/6).",
+    "answer_key": "1/2; −√3/2; −√3/3; −√3.",
+    "worked_solution": "sin(5π/6)=1/2, cos(5π/6)=−√3/2. Vì cos và sin đều khác 0, tan=(1/2)/(−√3/2)=−√3/3; cot=−√3.",
+    "skill_ids": [
+      "G11-B01-TRIG_UNIT_CIRCLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "5π/6 nằm ở góc phần tư II; góc tham chiếu π/6."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B01-C02 — SGK_CORE · G11-B01-TRIG_UNIT_CIRCLE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B01-P01",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Biết sin α=3/5 và π/2<α<π. Tính cos α và tan α.",
+    "answer_key": "cos α=−4/5; tan α=−3/4.",
+    "worked_solution": "cos²α=1−9/25=16/25. α ở góc phần tư II nên cos α=−4/5. tan α=sin α/cos α=−3/4.",
+    "skill_ids": [
+      "G11-B01-TRIG_IDENTITIES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "cos²α=1−sin²α; dấu cos âm ở góc phần tư II."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B01-P01 — SGK_PRACTICE · G11-B01-TRIG_IDENTITIES · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B01-P02",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Rút gọn góc 765° về góc cùng phương trong [0°,360°), rồi tính sin 765°.",
+    "answer_key": "45°; sin 765°=√2/2.",
+    "worked_solution": "765°−2×360°=45°. sin(765°)=sin(45°)=√2/2 do chu kì 360°.",
+    "skill_ids": [
+      "G11-B01-PERIODIC_REDUCTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Trừ các bội nguyên của 360°, sau đó tính tại góc cơ bản."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B01-P02 — SGK_PRACTICE · G11-B01-PERIODIC_REDUCTION · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B01-P03",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Một cung của đường tròn có bán kính 12 cm chắn góc ở tâm 5π/6 rad. Tính độ dài cung.",
+    "answer_key": "10π cm.",
+    "worked_solution": "s=12×5π/6=10π cm. Góc theo radian nên không cần nhân thêm π/180.",
+    "skill_ids": [
+      "G11-B01-ARC_LENGTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Độ dài cung s=R|α| nếu α tính bằng radian và xét độ dài không âm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B01-P03 — SGK_PRACTICE · G11-B01-ARC_LENGTH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B01-P04",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Biết tan α=−2 và cos α>0. Tính sin α, cos α và cot α.",
+    "answer_key": "sin α=−2√5/5; cos α=√5/5; cot α=−1/2.",
+    "worked_solution": "1+tan²α=5 ⇒ cos²α=1/5. cos α=1/√5, sin α=tan α·cos α=−2/√5, cot α=1/tan α=−1/2.",
+    "skill_ids": [
+      "G11-B01-TRIG_IDENTITIES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "cos²α=1/(1+tan²α). Dấu cos dương và tan âm nên sin âm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B01-P04 — SGK_PRACTICE · G11-B01-TRIG_IDENTITIES · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-C01",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Dùng công thức hiệu để tính sin(π/3−π/6).",
+    "answer_key": "1/2.",
+    "worked_solution": "sin(π/3−π/6)= (√3/2)(√3/2)−(1/2)(1/2)=3/4−1/4=1/2.",
+    "skill_ids": [
+      "G11-B02-SUM_DIFFERENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "sin(u−v)=sin u cos v−cos u sin v."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B02-C01 — SGK_CORE · G11-B02-SUM_DIFFERENCE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-C02",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Dùng công thức góc nhân đôi để tính cos(2π/3) từ cos(π/3).",
+    "answer_key": "−1/2.",
+    "worked_solution": "cos(2π/3)=2(1/2)²−1=−1/2.",
+    "skill_ids": [
+      "G11-B02-DOUBLE_ANGLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "cos(2u)=2cos²u−1."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B02-C02 — SGK_CORE · G11-B02-DOUBLE_ANGLE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-P01",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Tính chính xác sin 75° mà không dùng máy tính.",
+    "answer_key": "(√6+√2)/4.",
+    "worked_solution": "sin75°=sin45°cos30°+cos45°sin30°=√2/2·√3/2+√2/2·1/2=(√6+√2)/4.",
+    "skill_ids": [
+      "G11-B02-SUM_DIFFERENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Tách 75°=45°+30°."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B02-P01 — SGK_PRACTICE · G11-B02-SUM_DIFFERENCE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-P02",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Tính chính xác cos 75° bằng công thức cộng.",
+    "answer_key": "(√6−√2)/4.",
+    "worked_solution": "cos75°=√2/2·√3/2−√2/2·1/2=(√6−√2)/4.",
+    "skill_ids": [
+      "G11-B02-SUM_DIFFERENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "cos(45°+30°)=cos45°cos30°−sin45°sin30°."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B02-P02 — SGK_PRACTICE · G11-B02-SUM_DIFFERENCE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-P03",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Không tính riêng các góc, rút gọn E=sin20°cos40°+cos20°sin40°.",
+    "answer_key": "√3/2.",
+    "worked_solution": "E=sin(20°+40°)=sin60°=√3/2.",
+    "skill_ids": [
+      "G11-B02-SUM_DIFFERENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Nhận dạng sin(u+v)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B02-P03 — SGK_PRACTICE · G11-B02-SUM_DIFFERENCE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-P04",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Dùng công thức biến đổi tích thành tổng để tính 2sin75°sin15°.",
+    "answer_key": "1/2.",
+    "worked_solution": "2sin75°sin15°=cos60°−cos90°=1/2−0=1/2.",
+    "skill_ids": [
+      "G11-B02-PRODUCT_TO_SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "2sin u sin v=cos(u−v)−cos(u+v)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B02-P04 — SGK_PRACTICE · G11-B02-PRODUCT_TO_SUM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-P05",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Dùng công thức biến đổi tổng thành tích để tính sin75°+sin15°.",
+    "answer_key": "√6/2.",
+    "worked_solution": "sin75°+sin15°=2sin45°cos30°=2·√2/2·√3/2=√6/2.",
+    "skill_ids": [
+      "G11-B02-SUM_TO_PRODUCT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "sin u+sin v=2sin((u+v)/2)cos((u−v)/2)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B02-P05 — SGK_PRACTICE · G11-B02-SUM_TO_PRODUCT · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-P06",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Cho góc α có sin α=3/5 và cos α=4/5. Tính sin2α và cos2α.",
+    "answer_key": "sin2α=24/25; cos2α=7/25.",
+    "worked_solution": "sin2α=2·3/5·4/5=24/25; cos2α=16/25−9/25=7/25.",
+    "skill_ids": [
+      "G11-B02-DOUBLE_ANGLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "sin2α=2sinαcosα; cos2α=cos²α−sin²α."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B02-P06 — SGK_PRACTICE · G11-B02-DOUBLE_ANGLE · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B01-P05",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Cho góc θ ở góc phần tư II có sin θ=4/5 và cos θ=−3/5. Không tìm θ, hãy tính sin(π−θ), cos(π+θ), sin(−θ).",
+    "answer_key": "4/5; 3/5; −4/5.",
+    "worked_solution": "sin(π−θ)=sin θ=4/5; cos(π+θ)=−cos θ=3/5; sin(−θ)=−sin θ=−4/5.",
+    "skill_ids": [
+      "G11-B01-RELATED_ANGLES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Sử dụng hệ thức góc bù, hơn kém π và góc đối; kiểm dấu của kết quả."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B01-P05 — SGK_PRACTICE · G11-B01-RELATED_ANGLES · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-P07",
+    "content_version": "THPT-G11-CHI-B01-B02-R01",
+    "stem": "Biết tan u=1/2 và tan v=1/3, trong đó tan u và tan v đều xác định. Tính tan(u+v) nếu biểu thức xác định.",
+    "answer_key": "1.",
+    "worked_solution": "1−(1/2)(1/3)=5/6≠0 nên tan(u+v) xác định. tan(u+v)=(1/2+1/3)/(1−1/6)=(5/6)/(5/6)=1.",
+    "skill_ids": [
+      "G11-B02-SUM_DIFFERENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Kiểm 1−tan u·tan v≠0, sau đó mới áp dụng công thức cộng tan."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B02-P07 — SGK_PRACTICE · G11-B02-SUM_DIFFERENCE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+        "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-C01",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "TXĐ của y=tan x là gì?",
+    "answer_key": "ℝ \\ {π/2+kπ:k∈ℤ}.",
+    "worked_solution": "tan x chỉ xác định khi cos x≠0; cos x=0 tại π/2+kπ.",
+    "skill_ids": [
+      "G11-B03-DOMAIN_RANGE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-C01 — SGK_CORE · G11-B03-DOMAIN_RANGE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-C02",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Cho bốn hàm sin x, cos x, tan x, cot x. Hàm nào chẵn, hàm nào lẻ trên TXĐ?",
+    "answer_key": "cos x chẵn; sin x, tan x, cot x lẻ.",
+    "worked_solution": "Dùng sin(-x)=-sinx, cos(-x)=cosx, tan(-x)=-tanx, cot(-x)=-cotx; các TXĐ đối xứng qua 0.",
+    "skill_ids": [
+      "G11-B03-PARITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-C02 — SGK_CORE · G11-B03-PARITY · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-C03",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Chu kỳ cơ bản của y=sin x và y=tan x là bao nhiêu?",
+    "answer_key": "sin: 2π; tan: π.",
+    "worked_solution": "sin(x+2π)=sinx; tan(x+π)=tanx và hai số lần lượt là chu kỳ dương nhỏ nhất.",
+    "skill_ids": [
+      "G11-B03-PERIOD"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-C03 — SGK_CORE · G11-B03-PERIOD · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-C04",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Tìm tập giá trị và các điểm cực đại của y=sin x.",
+    "answer_key": "TGT [-1,1]; max 1 tại x=π/2+2kπ, k∈ℤ.",
+    "worked_solution": "Đọc đồ thị sin và tính tuần hoàn: sin x≤1, bằng 1 tại π/2+2kπ.",
+    "skill_ids": [
+      "G11-B03-SIN_GRAPH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-C04 — SGK_CORE · G11-B03-SIN_GRAPH · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-P01",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Tìm TXĐ của y=cot(2x).",
+    "answer_key": "ℝ \\ {kπ/2:k∈ℤ}.",
+    "worked_solution": "cot(2x) chỉ xác định nếu sin(2x)≠0, nên 2x≠kπ.",
+    "skill_ids": [
+      "G11-B03-DOMAIN_RANGE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-P01 — SGK_PRACTICE · G11-B03-DOMAIN_RANGE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-P02",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Tìm tập giá trị của f(x)=1+2sin x.",
+    "answer_key": "[-1,3].",
+    "worked_solution": "-1≤sinx≤1; nhân 2 cộng 1 cho -1≤f≤3. Hai cận đều đạt.",
+    "skill_ids": [
+      "G11-B03-SIN_GRAPH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-P02 — SGK_PRACTICE · G11-B03-SIN_GRAPH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-P03",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Tìm chu kỳ cơ bản của f(x)=3cos(4x-π/3).",
+    "answer_key": "π/2.",
+    "worked_solution": "Hàm cos theo đối số có chu kỳ 2π; 4T=2π nên T=π/2.",
+    "skill_ids": [
+      "G11-B03-PERIOD"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-P03 — SGK_PRACTICE · G11-B03-PERIOD · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-P04",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "y=sinx đồng biến trên đoạn nào: [-π/2,π/2] hay [0,π]?",
+    "answer_key": "[-π/2,π/2].",
+    "worked_solution": "sin tăng trên [-π/2,π/2]; trên [0,π] tăng rồi giảm.",
+    "skill_ids": [
+      "G11-B03-SIN_GRAPH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-P04 — SGK_PRACTICE · G11-B03-SIN_GRAPH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-P05",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Trên [0,2π], nghiệm cos x=0 gồm những hoành độ nào?",
+    "answer_key": "π/2 và 3π/2.",
+    "worked_solution": "Đồ thị cos cắt trục Ox tại π/2+kπ; chỉ giữ k=0,1.",
+    "skill_ids": [
+      "G11-B03-COS_GRAPH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-P05 — SGK_PRACTICE · G11-B03-COS_GRAPH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-P06",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Nêu hai tiệm cận đứng của y=tanx kề trục tung.",
+    "answer_key": "x=-π/2 và x=π/2.",
+    "worked_solution": "Tại cosx=0, tan không xác định và giá trị một phía không bị chặn.",
+    "skill_ids": [
+      "G11-B03-TAN_GRAPH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-P06 — SGK_PRACTICE · G11-B03-TAN_GRAPH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-P07",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Trên (0,π), y=cot x đồng biến hay nghịch biến?",
+    "answer_key": "Nghịch biến.",
+    "worked_solution": "Trên (0,π), đồ thị cot đi liên tục từ +∞ xuống -∞; tương tự trên (kπ,(k+1)π). Không cần dùng đạo hàm (học ở chương sau).",
+    "skill_ids": [
+      "G11-B03-COT_GRAPH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-P07 — SGK_PRACTICE · G11-B03-COT_GRAPH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-P08",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "T(t)=24+3cos(πt/6) (°C, t giờ). Chu kỳ, cao nhất và thấp nhất?",
+    "answer_key": "T=12 giờ; max 27°C; min 21°C.",
+    "worked_solution": "ω=π/6 nên T=2π/(π/6)=12; vì cos∈[-1,1], T(t)∈[21,27].",
+    "skill_ids": [
+      "G11-B03-MODELING"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B03-P08 — SGK_PRACTICE · G11-B03-MODELING · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-C01",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải sin x=-1/2 trên ℝ.",
+    "answer_key": "x=-π/6+2kπ hoặc x=7π/6+2kπ, k∈ℤ.",
+    "worked_solution": "sin(-π/6)=-1/2, sin(7π/6)=-1/2; đó là hai nhánh trong một vòng.",
+    "skill_ids": [
+      "G11-B04-SIN_EQ"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-C01 — SGK_CORE · G11-B04-SIN_EQ · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-C02",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải cos x=1/2 trên ℝ.",
+    "answer_key": "x=±π/3+2kπ, k∈ℤ.",
+    "worked_solution": "cos(±π/3)=1/2, chu kỳ 2π.",
+    "skill_ids": [
+      "G11-B04-COS_EQ"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-C02 — SGK_CORE · G11-B04-COS_EQ · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-C03",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải tan x=-1 trên ℝ.",
+    "answer_key": "x=-π/4+kπ, k∈ℤ.",
+    "worked_solution": "tan(-π/4)=-1; tan có chu kỳ π, mọi nghiệm hợp lệ.",
+    "skill_ids": [
+      "G11-B04-TAN_EQ"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-C03 — SGK_CORE · G11-B04-TAN_EQ · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-C04",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải cot x=1 trên ℝ.",
+    "answer_key": "x=π/4+kπ, k∈ℤ.",
+    "worked_solution": "cot(π/4)=1; chu kỳ π và sin khác 0 tại các nghiệm.",
+    "skill_ids": [
+      "G11-B04-COT_EQ"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-C04 — SGK_CORE · G11-B04-COT_EQ · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P01",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải sin(2x)=1/2 trên ℝ.",
+    "answer_key": "x=π/12+kπ hoặc x=5π/12+kπ, k∈ℤ.",
+    "worked_solution": "Đặt t=2x: t=π/6+2kπ hoặc 5π/6+2kπ. Chia cả hai họ cho 2.",
+    "skill_ids": [
+      "G11-B04-TRANSFORM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P01 — SGK_PRACTICE · G11-B04-TRANSFORM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P02",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải 2cos(x-π/6)=√3 trên ℝ.",
+    "answer_key": "x=2kπ hoặc x=π/3+2kπ, k∈ℤ.",
+    "worked_solution": "cos(x-π/6)=√3/2 nên x-π/6=±π/6+2kπ.",
+    "skill_ids": [
+      "G11-B04-TRANSFORM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P02 — SGK_PRACTICE · G11-B04-TRANSFORM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P03",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải tan(3x)=√3 trên ℝ.",
+    "answer_key": "x=π/9+kπ/3, k∈ℤ.",
+    "worked_solution": "3x=π/3+kπ, sau đó chia 3.",
+    "skill_ids": [
+      "G11-B04-TRANSFORM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P03 — SGK_PRACTICE · G11-B04-TRANSFORM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P04",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải cos(2x)=cosx trên ℝ.",
+    "answer_key": "x=2kπ/3, k∈ℤ.",
+    "worked_solution": "2cos²x-cosx-1=(2cosx+1)(cosx-1)=0; x=2kπ hoặc ±2π/3+2kπ; hợp hai tập bằng 2kπ/3.",
+    "skill_ids": [
+      "G11-B04-TRANSFORM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P04 — SGK_PRACTICE · G11-B04-TRANSFORM · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P05",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải sinx=sin(3x) trên ℝ.",
+    "answer_key": "x=kπ hoặc x=π/4+kπ/2, k∈ℤ.",
+    "worked_solution": "sin A=sin B khi A=B+2kπ hoặc A=π-B+2kπ. Nhánh x=3x+2kπ cho x=-kπ, tức mọi kπ. Nhánh x=π-3x+2kπ cho 4x=π+2kπ, tức x=π/4+kπ/2. Không chia hai vế cho sinx.",
+    "skill_ids": [
+      "G11-B04-TRANSFORM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P05 — SGK_PRACTICE · G11-B04-TRANSFORM · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P06",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải sinx=1/2 trên [0,2π).",
+    "answer_key": "{π/6,5π/6}.",
+    "worked_solution": "Nghiệm tổng quát π/6+2kπ hoặc 5π/6+2kπ; chỉ k=0 cho nghiệm thuộc khoảng yêu cầu, 2π bị loại.",
+    "skill_ids": [
+      "G11-B04-INTERVAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P06 — SGK_PRACTICE · G11-B04-INTERVAL · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P07",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải cos(2x)=0 trên [0,π].",
+    "answer_key": "{π/4,3π/4}.",
+    "worked_solution": "2x=π/2+kπ, nên x=π/4+kπ/2; k=0,1 thỏa đoạn đóng [0,π].",
+    "skill_ids": [
+      "G11-B04-INTERVAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P07 — SGK_PRACTICE · G11-B04-INTERVAL · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P08",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Giải tanx=tan(2x) trên ℝ, ghi rõ TXĐ.",
+    "answer_key": "x=kπ, k∈ℤ.",
+    "worked_solution": "Phải có cosx≠0 và cos2x≠0. Khi đó tanA=tanB ⇔ A=B+kπ; x=2x+kπ ⇔ x=-kπ. Các x=kπ đều thuộc TXĐ và thế lại hai vế cùng bằng 0.",
+    "skill_ids": [
+      "G11-B04-EXTRANEOUS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P08 — SGK_PRACTICE · G11-B04-EXTRANEOUS · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P09",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Mực nước H(t)=10+2sin(πt/6), với 0≤t<12 (giờ), bằng 11 lúc mấy giờ?",
+    "answer_key": "t=1 và t=5 (giờ).",
+    "worked_solution": "sin(πt/6)=1/2; đối số trong [0,2π). Hai nghiệm πt/6=π/6 hoặc 5π/6, nên t=1 hoặc 5.",
+    "skill_ids": [
+      "G11-B04-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P09 — SGK_PRACTICE · G11-B04-APPLICATION · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-P10",
+    "content_version": "THPT-G11-CHI-B03-B04-R01",
+    "stem": "Với m∈ℝ, điều kiện nào để sinx=m có nghiệm thực?",
+    "answer_key": "-1≤m≤1.",
+    "worked_solution": "Giá trị sinx thuộc [-1,1] nên điều kiện cần |m|≤1; ngược lại mọi m trong đoạn đều đạt được trên đường tròn lượng giác.",
+    "skill_ids": [
+      "G11-B04-SIN_EQ"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading": "### THPT-G11-B04-P10 — SGK_PRACTICE · G11-B04-SIN_EQ · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+        "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

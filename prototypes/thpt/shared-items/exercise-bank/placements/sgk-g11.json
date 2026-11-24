@@ -1155,5 +1155,483 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 20,
     "item_id": "THPT-G11-CHVI-B21-P08"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-B01-C01",
+    "skill_id": "G11-B01-DEG_RAD"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-B01-C02",
+    "skill_id": "G11-B01-TRIG_UNIT_CIRCLE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-B01-P01",
+    "skill_id": "G11-B01-TRIG_IDENTITIES"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-B01-P02",
+    "skill_id": "G11-B01-PERIODIC_REDUCTION"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-B01-P03",
+    "skill_id": "G11-B01-ARC_LENGTH"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-B01-P04",
+    "skill_id": "G11-B01-TRIG_IDENTITIES"
+  },
+  {
+    "collection": "SGK:G11:CHI:B02:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-B02-C01",
+    "skill_id": "G11-B02-SUM_DIFFERENCE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B02:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-B02-C02",
+    "skill_id": "G11-B02-DOUBLE_ANGLE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-B02-P01",
+    "skill_id": "G11-B02-SUM_DIFFERENCE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-B02-P02",
+    "skill_id": "G11-B02-SUM_DIFFERENCE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-B02-P03",
+    "skill_id": "G11-B02-SUM_DIFFERENCE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-B02-P04",
+    "skill_id": "G11-B02-PRODUCT_TO_SUM"
+  },
+  {
+    "collection": "SGK:G11:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-B02-P05",
+    "skill_id": "G11-B02-SUM_TO_PRODUCT"
+  },
+  {
+    "collection": "SGK:G11:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-B02-P06",
+    "skill_id": "G11-B02-DOUBLE_ANGLE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-B01-P05",
+    "skill_id": "G11-B01-RELATED_ANGLES"
+  },
+  {
+    "collection": "SGK:G11:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G11-B02-P07",
+    "skill_id": "G11-B02-SUM_DIFFERENCE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-B03-C01",
+    "skill_id": "G11-B03-DOMAIN_RANGE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-B03-C02",
+    "skill_id": "G11-B03-PARITY"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-B03-C03",
+    "skill_id": "G11-B03-PERIOD"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-B03-C04",
+    "skill_id": "G11-B03-SIN_GRAPH"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-B03-P01",
+    "skill_id": "G11-B03-DOMAIN_RANGE"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-B03-P02",
+    "skill_id": "G11-B03-SIN_GRAPH"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-B03-P03",
+    "skill_id": "G11-B03-PERIOD"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-B03-P04",
+    "skill_id": "G11-B03-SIN_GRAPH"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-B03-P05",
+    "skill_id": "G11-B03-COS_GRAPH"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-B03-P06",
+    "skill_id": "G11-B03-TAN_GRAPH"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G11-B03-P07",
+    "skill_id": "G11-B03-COT_GRAPH"
+  },
+  {
+    "collection": "SGK:G11:CHI:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 8,
+    "item_id": "THPT-G11-B03-P08",
+    "skill_id": "G11-B03-MODELING"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-B04-C01",
+    "skill_id": "G11-B04-SIN_EQ"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-B04-C02",
+    "skill_id": "G11-B04-COS_EQ"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-B04-C03",
+    "skill_id": "G11-B04-TAN_EQ"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-B04-C04",
+    "skill_id": "G11-B04-COT_EQ"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-B04-P01",
+    "skill_id": "G11-B04-TRANSFORM"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-B04-P02",
+    "skill_id": "G11-B04-TRANSFORM"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-B04-P03",
+    "skill_id": "G11-B04-TRANSFORM"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-B04-P04",
+    "skill_id": "G11-B04-TRANSFORM"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-B04-P05",
+    "skill_id": "G11-B04-TRANSFORM"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-B04-P06",
+    "skill_id": "G11-B04-INTERVAL"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G11-B04-P07",
+    "skill_id": "G11-B04-INTERVAL"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 8,
+    "item_id": "THPT-G11-B04-P08",
+    "skill_id": "G11-B04-EXTRANEOUS"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 9,
+    "item_id": "THPT-G11-B04-P09",
+    "skill_id": "G11-B04-APPLICATION"
+  },
+  {
+    "collection": "SGK:G11:CHI:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 10,
+    "item_id": "THPT-G11-B04-P10",
+    "skill_id": "G11-B04-SIN_EQ"
+  },
+  {
+    "collection": "SGK:G11:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-CHI-W01"
+  },
+  {
+    "collection": "SGK:G11:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G11-CHI-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G11-CHI-W03"
+  },
+  {
+    "collection": "SGK:G11:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G11-CHI-W04-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G11-CHI-RD1-01",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G11-CHI-RD1-02",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G11-CHI-RD1-03",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G11-CHI-RD1-04",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G11-CHI-RD1-05",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G11-CHI-RD1-06",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G11-CHI-RD1-07",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G11-CHI-RD1-08",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G11-CHI-RD1-09",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G11-CHI-RD1-10",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G11-CHI-RD1-11",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G11-CHI-RD1-12",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G11-CHI-RD1-13",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G11-CHI-RD1-14",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 15,
+    "item_id": "THPT-G11-CHI-RD1-15",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 16,
+    "item_id": "THPT-G11-CHI-RD1-16",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 17,
+    "item_id": "THPT-G11-CHI-RD1-17",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 18,
+    "item_id": "THPT-G11-CHI-RD1-18",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 19,
+    "item_id": "THPT-G11-CHI-RD1-19",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 20,
+    "item_id": "THPT-G11-CHI-RD1-20",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
   }
 ]

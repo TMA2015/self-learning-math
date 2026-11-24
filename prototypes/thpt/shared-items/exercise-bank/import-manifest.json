@@ -14,7 +14,9 @@
     "17d6fe73d8f3ac0e378dabf53c3e5d2e69e71872",
     "377de2e2e9fb6771f02270e8d85e950559669895",
     "fd85d7056f3b934f4599727f8c6da173cf05cd65",
-    "4da918f36d30c9b7110099e81fc88943e5b7705b"
+    "4da918f36d30c9b7110099e81fc88943e5b7705b",
+    "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+    "f83b285ff0c8f4e45b724cf06248935e5d618b65"
   ],
   "projection_sources": [
     {
@@ -211,20 +213,60 @@
       "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
       "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd06/luyen-tap.md",
+      "blob": "26ea2049b76442cfd55575b053973519c3ac00b0",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd06/tu-kiem-tra.md",
+      "blob": "6e0fbf796f90c6690f69f3a8c34b342a3e4eec42",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g11-chi-reviewed-formative-v1.js",
+      "blob": "0997ea27178ef59a29ef33018224fc98b2afc6ae",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g11-chi-b03-b04-reviewed-formative-r01.js",
+      "blob": "9a8f0c1f65acb0cb9ab2fb8efaa9115f785aa8a0",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md",
+      "blob": "61ccb1d3c6242bd96c8db1948d100906b90d5afc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+      "blob": "34575f73809c3db51ff991765824416cda4c982f",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+      "blob": "295cc4109943b35d289e816678998568fe7dde74",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 306,
-    "written_references": 52,
-    "topic_practice": 333,
-    "topic_replay": 110,
-    "sgk_public_selfcheck": 96,
-    "placements": 740,
+    "formative_items": 364,
+    "written_references": 60,
+    "topic_practice": 399,
+    "topic_replay": 126,
+    "sgk_public_selfcheck": 116,
+    "placements": 888,
     "projection_field_differences": 2,
-    "public_selfcheck_only_items": 48,
+    "public_selfcheck_only_items": 68,
     "unstructured_projection_review": 12
   },
-  "scope": "CD01/02/03/04/05/07/08 + G10 ChI/ChII/ChVI + G11 ChII/ChV/ChVI public formative, public self-check and written references",
+  "scope": "CD01–08 + G10 ChI/ChII/ChVI + G11 ChI/ChII/ChV/ChVI public formative, public self-check and written references",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -392,6 +434,30 @@
           "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
         }
       ]
+    },
+    {
+      "topic": "CD06",
+      "new_formative": 16,
+      "new_written": 4,
+      "shared_sgk_formative": 42,
+      "shared_written": 4,
+      "practice": 66,
+      "replay": 16,
+      "placements": 82,
+      "answer_table_rows_checked": 16,
+      "source_blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "projection_sources": [
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd06/luyen-tap.md",
+          "blob": "26ea2049b76442cfd55575b053973519c3ac00b0",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        },
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd06/tu-kiem-tra.md",
+          "blob": "6e0fbf796f90c6690f69f3a8c34b342a3e4eec42",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        }
+      ]
     }
   ],
   "unstructured_projection_review": [
@@ -480,6 +546,6 @@
       "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
     }
   ],
-  "public_legacy_selfcheck_note": "48 already-public client items, exact historical IDs retained, actual runtime/pages and owner #662 checked; no private RD1, independent credit or Mastery.",
+  "public_legacy_selfcheck_note": "68 already-public client items, exact historical IDs retained, actual runtime/pages and owner #662 checked; no private RD1, independent credit or Mastery.",
   "legacy_combined_answer_note": "28 G10 ChVI formative items have combined answer and worked solution, answer_key=null, manual review pending. 2 existing MCQ retain explicit key. Original HPT written IDs retained."
 }

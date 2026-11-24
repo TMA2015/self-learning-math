@@ -1,0 +1,802 @@
+[
+  {
+    "item_id": "THPT-G11-CHI-RD1-01",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Góc -225° đổi ra radian và quy về [0,2π) cho tia cuối; xác định góc phần tư của tia cuối.",
+    "answer_key": "-5π/4; 3π/4; góc phần tư II.",
+    "worked_solution": "-225°×π/180°=-5π/4. Cộng 2π được 3π/4 trong [0,2π); π/2<3π/4<π nên ở góc phần tư II.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B01-DEG_RAD",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Đổi -225° thành -5π/4 đúng (1đ).\n- Hiểu tia cuối giữ nguyên khi cộng 2kπ (1đ).\n- Rút gọn về 3π/4 (1đ).\n- Xác định đúng góc phần tư II (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-02",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Biết sinα=-5/13 và 3π/2<α<2π. Tính cosα và tanα.",
+    "answer_key": "cosα=12/13; tanα=-5/12.",
+    "worked_solution": "cos²α=1−25/169=144/169. Góc phần tư IV nên cosα>0, bằng 12/13. tanα=(-5/13)/(12/13)=-5/12.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B01-TRIG_IDENTITIES",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Dùng sin²+cos²=1 đúng (1đ).\n- Tính cos²=144/169 (1đ).\n- Chọn dấu cos dương do góc IV (1đ).\n- Tính tan=-5/12 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-03",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Một bánh xe bán kính 9 cm quay góc có hướng 7π/3 rad. Tính quãng đường điểm trên vành đi được và vị trí tia cuối theo góc trong [0,2π).",
+    "answer_key": "Quãng đường 21π cm, góc tia cuối π/3.",
+    "worked_solution": "Góc quay thực 7π/3 rad có độ lớn 7π/3, nên s=9·7π/3=21π cm. Tia cuối tương đương 7π/3−2π=π/3. Không lấy góc quy về để tính quãng đường.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B01-ARC_LENGTH",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Dùng góc quay thực và công thức s=R|α| (1đ).\n- Thế bán kính 9 cm (1đ).\n- Tính s=21π cm với đơn vị (1đ).\n- Phân biệt tia cuối π/3 với góc quay 7π/3 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-04",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Cho β=-7π/6. Tính sinβ, cosβ và chứng minh β có cùng tia cuối với 5π/6.",
+    "answer_key": "sinβ=1/2, cosβ=-√3/2; β+2π=5π/6.",
+    "worked_solution": "-7π/6+12π/6=5π/6. Tại góc phần tư II, sin=1/2 và cos=-√3/2.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B01-RELATED_ANGLES",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Quy đổi β+2π=5π/6 (1đ).\n- Nhận diện góc phần tư II (1đ).\n- Tính sinβ=1/2 (1đ).\n- Tính cosβ=-√3/2 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-05",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Dùng công thức lượng giác tính chính xác sin15° và cos15°.",
+    "answer_key": "sin15°=(√6−√2)/4; cos15°=(√6+√2)/4.",
+    "worked_solution": "15°=45°−30°. sin15°=sin45°cos30°−cos45°sin30°=(√6−√2)/4. cos15°=cos45°cos30°+sin45°sin30°=(√6+√2)/4.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B02-SUM_DIFFERENCE",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Tách 15°=45°−30° (1đ).\n- Dùng công thức sin hiệu đúng dấu (1đ).\n- Tính sin15° chính xác (1đ).\n- Dùng cos hiệu và tính cos15° đúng (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-06",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Biết tanα=2 và tanβ=-1/3, cả hai xác định. Tính tan(α+β), kiểm tra mẫu của công thức.",
+    "answer_key": "tan(α+β)=1.",
+    "worked_solution": "Mẫu 1−tanα tanβ=1−2(−1/3)=5/3≠0. Tử 2−1/3=5/3; thương bằng 1.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B02-SUM_DIFFERENCE",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Nêu điều kiện tanα và tanβ xác định (1đ).\n- Viết công thức tan tổng đúng dấu (1đ).\n- Tính mẫu 5/3 khác 0 (1đ).\n- Kết luận tan tổng=1 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-07",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Nếu sinu=5/13 và cosu=12/13, tính sin2u và cos2u; tự kiểm tổng bình phương.",
+    "answer_key": "sin2u=120/169; cos2u=119/169.",
+    "worked_solution": "sin2u=2·5·12/169=120/169; cos2u=(144−25)/169=119/169. 120²+119²=28561=169², kiểm tra sin²2u+cos²2u=1.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B02-DOUBLE_ANGLE",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Nêu hai công thức nhân đôi (1đ).\n- Tính sin2u=120/169 (1đ).\n- Tính cos2u=119/169 (1đ).\n- Kiểm tra tổng bình phương bằng 1 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-08",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Rút gọn chính xác A=cos105°+cos15° bằng tổng thành tích.",
+    "answer_key": "A=√2/2.",
+    "worked_solution": "cosu+cosv=2cos((u+v)/2)cos((u−v)/2). A=2cos60°cos45°=2·1/2·√2/2=√2/2.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B02-SUM_TO_PRODUCT",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Viết công thức tổng thành tích đúng (1đ).\n- Tính nửa tổng 60° (1đ).\n- Tính nửa hiệu 45° (1đ).\n- Kết luận √2/2 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-09",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Tìm tập xác định và chu kỳ cơ bản của f(x)=tan(3x+π/6).",
+    "answer_key": "D=ℝ\\{π/9+kπ/3:k∈ℤ}; T=π/3.",
+    "worked_solution": "cos(3x+π/6)≠0 ⇒ 3x+π/6≠π/2+kπ ⇒ x≠π/9+kπ/3. Tan theo đối số có chu kỳ π nên T=π/3.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B03-DOMAIN_RANGE",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Nhận diện điều kiện cos đối số khác 0 (1đ).\n- Giải x loại π/9+kπ/3 (1đ).\n- Nhận diện chu kỳ tan là π (1đ).\n- Kết luận T=π/3 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-10",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Với f(x)=1−4cos(2x), tìm TGT, chu kỳ cơ bản và tất cả x đạt GTLN.",
+    "answer_key": "TGT [-3,5], chu kỳ π; GTLN 5 tại x=π/2+kπ.",
+    "worked_solution": "cos2x∈[-1,1] ⇒ 1−4cos2x∈[-3,5]. Chu kỳ π. Max khi cos2x=-1 ⇒ 2x=π+2kπ ⇒ x=π/2+kπ.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B03-SIN_GRAPH",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Tính TGT đúng [-3,5] (1đ).\n- Xác định chu kỳ π (1đ).\n- Đặt điều kiện cos2x=-1 (1đ).\n- Giải tất cả x=π/2+kπ (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-11",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Xét tính chẵn/lẻ và chu kỳ cơ bản của g(x)=sinx·cosx.",
+    "answer_key": "g lẻ, chu kỳ cơ bản π.",
+    "worked_solution": "g(-x)=(-sinx)cosx=-g(x). Vì g=1/2 sin(2x), chu kỳ cơ bản π.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B03-PARITY",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Kiểm tra miền xác định đối xứng (1đ).\n- Tính g(-x)=-g(x) (1đ).\n- Dùng nhân đôi g=sin2x/2 (1đ).\n- Chỉ ra chu kỳ cơ bản π (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-12",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Tìm tập xác định, chu kỳ và tính đơn điệu trên từng nhánh của y=cot(3x−π/6).",
+    "answer_key": "D=ℝ\\{π/18+kπ/3:k∈ℤ}; T=π/3; nghịch biến trên từng khoảng giữa hai tiệm cận liên tiếp.",
+    "worked_solution": "sin(3x−π/6)≠0 ⇒ 3x−π/6≠kπ ⇒ x≠π/18+kπ/3. Cot có chu kỳ π nên T=π/3; cot giảm khi đối số tăng và hệ số 3>0.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B03-COT_GRAPH",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Nêu điều kiện sin đối số≠0 (1đ).\n- Giải x loại π/18+kπ/3 (1đ).\n- Tính chu kỳ π/3 (1đ).\n- Mô tả đúng nghịch biến từng nhánh (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-13",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Cho M(t)=25+2sin(πt/4), 0≤t≤8, đơn vị °C/giờ. Tính chu kỳ, thời điểm cao/thấp nhất và các giá trị tương ứng trên miền.",
+    "answer_key": "Chu kỳ 8 giờ; max 27°C lúc t=2; min 23°C lúc t=6.",
+    "worked_solution": "ω=π/4 nên T=8 giờ. Sin=1 tại πt/4=π/2 ⇒ t=2; sin=-1 tại 3π/2 ⇒ t=6.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B03-MODELING",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Xác định biên độ 2 và đường giữa 25 (1đ).\n- Tính chu kỳ 8 giờ (1đ).\n- Tính max 27 tại t=2 (1đ).\n- Tính min 23 tại t=6 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-14",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Trên đoạn [-π,π], đồ thị y=cosx cắt Ox tại đâu, đạt max/min ở đâu?",
+    "answer_key": "Cắt Ox x=±π/2; max1 tại x=0; min-1 tại x=±π.",
+    "worked_solution": "cosx=0 ⇔ x=π/2+kπ ⇒ ±π/2 trên đoạn. Cosx=1 tại 0 và cosx=-1 tại ±π.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B03-COS_GRAPH",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Giải đúng hai giao điểm Ox (1đ).\n- Nêu max=1 (1đ).\n- Nêu vị trí max x=0 (1đ).\n- Nêu min=-1 tại hai đầu ±π (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-15",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Giải sin(2x−π/3)=-√3/2 trên ℝ.",
+    "answer_key": "x=kπ hoặc x=5π/6+kπ, k∈ℤ.",
+    "worked_solution": "Đặt t=2x−π/3. Sin t=-√3/2 ⇒ t=-π/3+2kπ hoặc t=4π/3+2kπ. Giải ra x=kπ hoặc x=5π/6+kπ.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B04-SIN_EQ",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Giải hai họ nghiệm của sin t (1đ).\n- Viết t=2x−π/3 (1đ).\n- Giải đúng x=kπ (1đ).\n- Giải đúng x=5π/6+kπ (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-16",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Giải cos(x+π/4)=0 trên ℝ.",
+    "answer_key": "x=π/4+kπ, k∈ℤ.",
+    "worked_solution": "Cos t=0 ⇔ t=π/2+kπ. x+π/4=π/2+kπ ⇒ x=π/4+kπ.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B04-COS_EQ",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Nhận dạng cos t=0 (1đ).\n- Viết họ t=π/2+kπ (1đ).\n- Trừ π/4 đúng (1đ).\n- Kết luận đầy đủ k∈ℤ (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-17",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Giải tan(2x)=1/√3 trên ℝ.",
+    "answer_key": "x=π/12+kπ/2, k∈ℤ.",
+    "worked_solution": "tan t=1/√3 ⇔ t=π/6+kπ; 2x=π/6+kπ ⇒ x=π/12+kπ/2. Các nghiệm đều thuộc TXĐ tan(2x).",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B04-TAN_EQ",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Nêu TXĐ tan(2x) (1đ).\n- Lấy nghiệm tan t=π/6+kπ (1đ).\n- Chia đôi đối số đúng (1đ).\n- Kết luận họ nghiệm hợp lệ (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-18",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Giải cot(3x)=0 trên ℝ.",
+    "answer_key": "x=π/6+kπ/3, k∈ℤ.",
+    "worked_solution": "cot t=0 khi cos t=0 và sin t≠0, tức t=π/2+kπ. Với t=3x được x=π/6+kπ/3.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B04-COT_EQ",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Giải thích cot t=0 (1đ).\n- Đảm bảo sin t≠0 (1đ).\n- Dùng 3x=π/2+kπ (1đ).\n- Kết luận x=π/6+kπ/3 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-19",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Giải cos(2x)=sin(2x) trên ℝ; giải thích vì sao có thể chia cos(2x).",
+    "answer_key": "x=π/8+kπ/2, k∈ℤ.",
+    "worked_solution": "Nếu cos2x=0 thì sin2x=±1 nên không là nghiệm. Do đó chia cho cos2x được tan2x=1 ⇒ 2x=π/4+kπ ⇒ x=π/8+kπ/2.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B04-EXTRANEOUS",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Xét trường hợp cos2x=0 (1đ).\n- Biến đổi hợp lệ sang tan2x=1 (1đ).\n- Giải 2x=π/4+kπ (1đ).\n- Kết luận x=π/8+kπ/2 (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHI-RD1-20",
+    "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
+    "stem": "Phân loại số nghiệm phân biệt của sinx=m trên [0,2π) theo m∈ℝ.",
+    "answer_key": "0 nếu |m|>1; 1 nếu m=±1; 2 nếu -1<m<1 (kể cả m=0).",
+    "worked_solution": "Đồ thị sin chạy trọn một chu kỳ trên [0,2π); cắt đường ngang y=m tại hai điểm nếu |m|<1 (với m=0: x=0,π); tiếp xúc tại một cực trị khi m=±1; không cắt khi |m|>1.",
+    "skill_ids": [],
+    "original_outcome_text": "G11-B04-INTERVAL",
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": "- Xét |m|>1 vô nghiệm (1đ).\n- Xét |m|=1 một nghiệm (1đ).\n- Xét -1<m<1 hai nghiệm (1đ).\n- Giải thích riêng m=0 không đếm x=2π (1đ).",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "WRITTEN_RUBRIC"
+    },
+    "source": {
+      "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g11-selfcheck/CHI.json",
+        "blob": "caa441e3ff9f4bdbd2e8624cb1ad579e3213d082",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "public_page": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/tu-kiem-tra-chuong.md",
+        "blob": "34575f73809c3db51ff991765824416cda4c982f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "runtime": {
+        "path": "docs/assets/javascripts/thpt-g11-reviewed-selfcheck-v1.js",
+        "blob": "295cc4109943b35d289e816678998568fe7dde74",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "owner_public_policy": 662,
+      "legacy_scope_label": "SGK_CHAPTER_SELF_CHECK"
+    },
+    "exposure": "PUBLIC_CLIENT_SELF_CHECK_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

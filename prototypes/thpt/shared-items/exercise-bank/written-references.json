@@ -646,5 +646,101 @@
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
     "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHI-W01",
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading_id": "THPT-G11-CHI-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md",
+      "blob": "61ccb1d3c6242bd96c8db1948d100906b90d5afc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHI-W02-ANCHOR",
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading_id": "THPT-G11-CHI-W02-ANCHOR"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md",
+      "blob": "61ccb1d3c6242bd96c8db1948d100906b90d5afc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHI-W03",
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading_id": "THPT-G11-CHI-W03"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md",
+      "blob": "61ccb1d3c6242bd96c8db1948d100906b90d5afc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHI-W04-ANCHOR",
+    "source": {
+      "blob": "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+      "heading_id": "THPT-G11-CHI-W04-ANCHOR"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-i-b01-b02.md",
+      "blob": "61ccb1d3c6242bd96c8db1948d100906b90d5afc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP06-W01",
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading_id": "THPT-TOP06-W01"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP06-W02",
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading_id": "THPT-TOP06-W02"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP06-W03",
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading_id": "THPT-TOP06-W03"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP06-W04",
+    "source": {
+      "blob": "f83b285ff0c8f4e45b724cf06248935e5d618b65",
+      "heading_id": "THPT-TOP06-W04"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
   }
 ]
