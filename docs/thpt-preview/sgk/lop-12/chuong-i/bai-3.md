@@ -131,7 +131,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa</strong><p>Đường \(y=ax+b\), với \(a,b\in\mathbb R,\ a\ne0\), là tiệm cận xiên của đồ thị \(y=f(x)\) nếu \(\displaystyle\lim_{x\to+\infty}[f(x)-(ax+b)]=0\) hoặc \(\displaystyle\lim_{x\to-\infty}[f(x)-(ax+b)]=0\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Cách tìm hệ số của tiệm cận</strong><p>Ở một đầu vô cực, tính \(\displaystyle a=\lim\frac{f(x)}x\). Nếu \(a\) hữu hạn, tính tiếp \(\displaystyle b=\lim[f(x)-ax]\) ở chính đầu đó. Nếu \(b\) hữu hạn và \(a\ne0\), đường \(y=ax+b\) là tiệm cận xiên ở đầu đang xét. Nếu \(a=0\) và \(b\) hữu hạn, đường \(y=b\) là tiệm cận ngang. Khi cần tìm tất cả tiệm cận, xét riêng hai đầu vô cực có nghĩa.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Cách tìm hệ số của tiệm cận</strong><p>Xét riêng từng đầu vô cực. Chẳng hạn, ở đầu \(+\infty\), tính \(\displaystyle a=\lim_{x\to+\infty}\frac{f(x)}x\); nếu \(a\) hữu hạn, tính tiếp \(\displaystyle b=\lim_{x\to+\infty}[f(x)-ax]\). Ở đầu \(-\infty\), thay cả hai hướng giới hạn bằng \(x\to-\infty\). Nếu \(b\) hữu hạn và \(a\ne0\), đường \(y=ax+b\) là tiệm cận xiên ở đầu đang xét. Nếu \(a=0\) và \(b\) hữu hạn, đường \(y=b\) là tiệm cận ngang. Khi cần tìm tất cả tiệm cận, xét riêng hai đầu vô cực mà hàm xác định.</p></div>
 
     Với phân thức có bậc tử hơn bậc mẫu đúng \(1\), chia đa thức: \(f(x)=ax+b+R(x)/Q(x)\) với bậc của dư \(R\) nhỏ hơn bậc mẫu \(Q\) (hoặc dư bằng \(0\)). Khi ấy hiệu \(f(x)-(ax+b)\) tiến về \(0\) ở hai đầu vô cực. Giữ nguyên miền xác định ban đầu.
 
