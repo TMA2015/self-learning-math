@@ -51,7 +51,7 @@
     Một đoạn đường dốc tạo góc bao nhiêu với mặt sàn? Nếu đo với phương thẳng đứng thì sẽ nhận một góc khác. Để tránh nhầm, trước hết hãy xác định chính xác góc đề yêu cầu.
 
     <!-- OUTCOME_ID: G12-CHV-B16-O02 -->
-    Xét đường \(OM\) đi qua \(O(0;0;0)\), \(M(3;0;4)\), và mặt phẳng ngang \((P):z=0\). Hình chiếu của \(M\) lên \((P)\) là \(H(3;0;0)\). Góc đường–mặt là \(\theta=\widehat{MOH}\), còn đường pháp tuyến qua \(O\) theo phương \(Oz\) tạo với \(OM\) góc \(\alpha\). Trong tam giác vuông, \(OH=3,\ MH=4,\ OM=5\).
+    Xét đường \(OM\) đi qua \(O(0;0;0)\), \(M(3;0;4)\), và mặt phẳng ngang \((P):z=0\). Hình chiếu của \(M\) lên \((P)\) là \(H(3;0;0)\). Góc đường–mặt là \(\theta=\widehat{MOH}\), còn trục \(Oz\), vuông góc với mặt phẳng \((P)\), tạo với \(OM\) góc \(\alpha\). Trong tam giác vuông, \(OH=3,\ MH=4,\ OM=5\).
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B16_FIG02_LINE_PLANE_AUTHORING_20261124.svg" alt="Tam giác vuông OHM cạnh 3,4,5; góc đường với hình chiếu là theta, góc đường với pháp tuyến là alpha; hai góc phụ nhau"><figcaption>Quan sát hai cung góc tại \(O\): góc xanh \(\theta\) đo với mặt phẳng, góc cam \(\alpha\) đo với pháp tuyến. Chúng có tổng \(90^\circ\).</figcaption></figure>
 
@@ -83,11 +83,11 @@
     <!-- OUTCOME_ID: G12-CHV-B16-O03 -->
     Một mái nghiêng và sàn ngang tạo với nhau một góc. Để nhìn góc thật giữa hai mặt phẳng cắt nhau, hãy chọn một mặt phẳng phụ vuông góc với giao tuyến của chúng. Trong mặt phẳng phụ ấy, mỗi mặt phẳng ban đầu để lại một đường thẳng. Góc không tù giữa hai đường này chính là góc giữa hai mặt phẳng.
 
-    Xét \((P):z=0\) và \((Q):z=x\), giao tuyến là \(Oy\). Cắt bằng mặt phẳng \(y=0\) vuông góc \(Oy\), ta được đường ngang và đường nghiêng \(45^\circ\). Cả hai pháp tuyến \(\vec n_1=(0;0;1)\), \(\vec n_2=(-1;0;1)\) đều nằm theo phương của thiết diện. Mỗi pháp tuyến vuông góc với đường vết cắt tương ứng.
+    Xét \((P):z=0\) và \((Q):z=x\), giao tuyến là \(Oy\). Cắt bằng mặt phẳng \(y=0\) vuông góc \(Oy\), ta được đường ngang và đường nghiêng \(45^\circ\). Cả hai pháp tuyến \(\vec n_1=(0;0;1)\), \(\vec n_2=(-1;0;1)\) đều nằm theo phương của thiết diện. Mỗi pháp tuyến vuông góc với đường thẳng thu được khi cắt mặt phẳng tương ứng bởi mặt phẳng phụ.
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B16_FIG03_PLANE_ANGLE_AUTHORING_20261124.svg" alt="Thiết diện y=0 của hai mặt phẳng z=0 và z=x; hai vết cắt và hai pháp tuyến cùng tạo góc 45 độ"><figcaption>Quay đồng thời hai phương vết cắt một góc \(90^\circ\) ta nhận hai phương pháp tuyến. Góc không tù giữa chúng được bảo toàn.</figcaption></figure>
 
-    Do đó góc giữa hai mặt phẳng bằng góc không tù giữa hai đường pháp tuyến. Với \(\vec n_1,\vec n_2\ne\vec0\),
+    Do đó góc giữa hai mặt phẳng bằng góc không tù giữa hai đường thẳng lần lượt vuông góc với hai mặt phẳng. Với \(\vec n_1,\vec n_2\ne\vec0\),
     \[
     \cos\theta=\frac{|\vec n_1\cdot\vec n_2|}{\|\vec n_1\|\|\vec n_2\|}.
     \]
