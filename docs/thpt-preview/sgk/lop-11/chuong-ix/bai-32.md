@@ -1,204 +1,478 @@
-# Toán 11 · Bài 32. Các quy tắc tính đạo hàm
+# Bài 32. Các quy tắc tính đạo hàm
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IX · BÀI 32 · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Hiểu nhu cầu → điều kiện → bản chất trước công thức → xem hình minh họa → Tự thử trước Core → ví dụ có suy luận → Core, Luyện tập và tự khắc phục. Không ghi Mastery từ hoạt động tự học.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IX</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra tự đối chiếu</a></nav></div>
+<style>
+/* Scoped B32 Knowledge cards only; shared Golden UI is not modified. */
+.md-typeset:has([data-g11-b32-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border:1px solid #a9dccc;border-left:4px solid #087d69;color:#174137}
+.md-typeset:has([data-g11-b32-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border:1px solid #a5bee5;border-left:4px solid #4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b32-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g11-b32-knowledge-only]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
 
-## 1. Kiến thức SGK — hình thành bản chất trước công thức
+<div class="thpt-r4-screen" data-thpt-r4 data-g11-b32-knowledge-only>
+<p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG IX · KẾT NỐI TRI THỨC · TẬP HAI</p>
+<p class="thpt-r4-lead">Định nghĩa cho biết đạo hàm là gì; các quy tắc giúp tìm đạo hàm của những hàm số phức tạp mà không phải tính lại giới hạn từ đầu.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương IX</a><a href="../luyen-tap/">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-### 1.1. Không thể giải mọi bài bằng giới hạn từ đầu
-Định nghĩa giới hạn giúp ta **hiểu** đạo hàm, nhưng với $f(x)=(x^2+1)\sin(3x)$, khai triển $f(x+h)$ rất dài. Cần các quy tắc bảo toàn ý nghĩa **tốc độ biến đổi** khi cộng, nhân, chia và lồng các hàm. Quy tắc là hệ quả của định nghĩa, không phải mẹo đại số.
+=== "Khám phá kiến thức"
 
-### 1.2. Đạo hàm hàm sơ cấp và kiểm điều kiện
-- $(c)'=0$, $(x)'=1$; với $n$ nguyên dương $(x^n)'=nx^{n-1}$. Ví dụ $(x^3)'=3x^2$. Không nhầm $(x^n)'$ với $x^{n-1}$ (thiếu hệ số n).
-- Với $x>0$, $(\sqrt{x})'=1/(2\sqrt{x})$, vì $[\sqrt{x+h}-\sqrt{x}]/h=1/[\sqrt{x+h}+\sqrt{x}]$. **Tại x=0** có giá trị căn nhưng công thức đạo hàm không xác định; không dùng nó tại 0.
-- Đạo hàm $\sin x$ là $\cos x$, đạo hàm $\cos x$ là $-\sin x$ khi góc $x$ đo **radian**. $(\tan x)'=1/\cos^2x$ với $\cos x\ne0$; $(\cot x)'=-1/\sin^2x$ với $\sin x\ne0$. Giải thích: tan=sin/cos nên dấu và mẫu của quy tắc thương quyết định kết quả.
-- $(e^x)'=e^x$, $(a^x)'=a^x\ln a$ với $a>0,a\ne1$; $(\ln x)'=1/x$ khi $x>0$; $(\log_a x)'=1/(x\ln a)$ khi $a>0,a\ne1$, $x>0$. Cơ số $a$ ở đây là **hằng số**, không phải biến.
+    Ở bài trước, em đã tính đạo hàm bằng giới hạn của thương sai phân. Cách ấy rất quan trọng vì giải thích **đạo hàm đo điều gì**. Nhưng nếu một hàm số là tổng, tích hoặc gồm nhiều lớp như \(y=\sqrt{x^2+1}\), việc khai triển từ định nghĩa mỗi lần sẽ rất dài. Những quy tắc trong bài này cho phép tận dụng đạo hàm của các phần nhỏ để tìm đạo hàm của cả hàm số. Ta sẽ tìm hiểu từng quy tắc qua **cách hàm số được tạo thành**.
 
-### 1.3. Vì sao đạo hàm của tích không chỉ là tích đạo hàm?
-Khi cả $u$ lẫn $v$ thay đổi, $(u+\Delta u)(v+\Delta v)-uv=v\Delta u+u\Delta v+\Delta u\Delta v$. Chia $\Delta x$ rồi lấy giới hạn, số hạng tích hai độ tăng nhỏ không đóng góp vào đạo hàm: **$(uv)'=u'v+uv'$**. Hình FIG-G11-CHIX-B32-01 cho thấy hình chữ nhật rộng $u$, cao $v$ xuất hiện hai dải diện tích chính khi cả hai cạnh tăng, giải thích vì sao phải cộng **hai** tích. Ví dụ $(x(x^2+1))'=(x^2+1)+x(2x)=3x^2+1$, không phải $1\cdot2x$.
+    ### 1.1. Đạo hàm của một số hàm số thường gặp
 
-### 1.4. Tổng, hiệu, thương — và điều kiện mẫu
-$(u\pm v)'=u'\pm v'$, $(cu)'=cu'$. Với $v(x)\ne0$ và u,v khả vi, $(u/v)'=[u'v-uv']/v^2$. Dấu trừ và mẫu bình phương là bắt buộc; tại nghiệm của v, hàm ban đầu không có nghĩa, dù một biểu thức đạo hàm sau rút gọn có vẻ hữu hạn. Ví dụ $f(x)=(x+2)/(x-1)$ với $x\ne1$: $f'(x)=[(x-1)-(x+2)]/(x-1)^2=-3/(x-1)^2$.
+    Trước hết xét \(y=x^3\). Tại một điểm \(x\) bất kì, thương sai phân là
 
-### 1.5. Hàm số hợp và quy tắc dây chuyền
-Trong $y=f(g(x))$, x thay đổi làm $u=g(x)$ thay đổi, sau đó y=f(u) thay đổi. Vì $\Delta y/\Delta x=(\Delta y/\Delta u)(\Delta u/\Delta x)$ khi các thương có nghĩa, sau lấy giới hạn nhận được **$(f\circ g)'(x)=f'(g(x))\,g'(x)$**. Với $y=(3x-2)^5$, bước trong $u=3x-2$ có $u'=3$, bước ngoài $u^5$ có đạo hàm $5u^4$, kết quả $15(3x-2)^4$. **Không** được bỏ nhân 3. Hình FIG-G11-CHIX-B32-02 vẽ hai tầng đầu vào và nhân các tốc độ biến đổi.
+    \[
+    \frac{(x+h)^3-x^3}{h}
+    =3x^2+3xh+h^2\quad(h\ne0).
+    \]
 
-### 1.6. Hàm lượng giác hợp, mũ hợp, logarit hợp
-Với $u=u(x)$ khả vi và biểu thức xác định: $(\sin u)'=u'\cos u$, $(\cos u)'=-u'\sin u$, $(\tan u)'=u'/\cos^2 u$ (cos u≠0), $(\cot u)'=-u'/\sin^2 u$ (sin u≠0); $(e^u)'=u'e^u$, $(a^u)'=u'a^u\ln a$ (a>0,a≠1); $(\ln u)'=u'/u$ **khi $u>0$**; $(\log_a u)'=u'/(u\ln a)$ khi u>0. Ví dụ $\ln(4-x^2)$ chỉ có nghĩa khi $-2<x<2$, đạo hàm $-2x/(4-x^2)$ trên **chính** miền đó.
+    Khi \(h\to0\), hai số hạng chứa \(h\) tiến về \(0\), còn lại \(3x^2\). Như vậy \((x^3)'=3x^2\). Cùng cách lập luận ấy cho các lũy thừa nguyên dương, ta thu được \((x^n)'=nx^{n-1}\). Con số \(n\) không xuất hiện tùy tiện: nó đến từ **hệ số của phần biến thiên bậc nhất** khi khai triển \((x+h)^n\).
 
-### 1.7. Quy trình lựa chọn phương pháp, không học bảng thuộc lòng
-**(i)** Xác định miền xác định trước; **(ii)** tách các lớp ngoài–trong: tổng, tích, thương, hàm hợp; **(iii)** dùng quy tắc; **(iv)** rút gọn vừa đủ; **(v)** kiểm đơn vị, dấu và miền. Với $f(x)=x^2 e^{3x}$: dùng tích ở ngoài, chain ở thành phần mũ → $f'=2xe^{3x}+3x^2e^{3x}=e^{3x}(2x+3x^2)$. Chỉ $(x^2)'(e^{3x})'$ cho kết quả sai.
+    Còn với \(y=\sqrt{x}\), việc khai triển không thuận tiện. Ta nhân tử và mẫu của thương sai phân với biểu thức liên hợp:
 
-### 1.8. Tự thử *trước* Core
-Tự giải $y=(x+1)\cos(2x)$; $z=\ln(5-x)$; $w=e^{x^2}$. Hãy nêu **mỗi biểu thức dùng quy tắc ngoài nào và vì sao**.
+    \[
+    \frac{\sqrt{x+h}-\sqrt{x}}{h}
+    =\frac{1}{\sqrt{x+h}+\sqrt{x}}\quad(h\ne0).
+    \]
 
-<details class="thpt-r4-pedagogical-note" data-ped-first-try="1"><summary>Em đã tự thử? Mở lời giải đối chiếu</summary><p><strong>Đối chiếu sau khi thử:</strong> $y'=\cos2x-2(x+1)\sin2x$ (tích+dây chuyền); $z'=-1/(5-x)$, chỉ $x&lt;5$ (log+dây chuyền); $w'=2xe^{x^2}$ (hàm mũ hợp). Cần biết mũ, log, lượng giác trong cùng một chương, không chỉ đa thức.</p></details>
+    Nếu \(x>0\), cho \(h\to0\) nhận được \(1/(2\sqrt{x})\). Tại \(x=0\), hàm vẫn có giá trị nhưng công thức này không cho một đạo hàm hữu hạn trên một khoảng chứa \(0\). **Có giá trị tại một điểm không có nghĩa là có đạo hàm tại điểm ấy.**
 
-**Liên kết D6:** `HELP-G11-CHIX-B32-01` (quy tắc tích), `...-02` (chain), `...-03` (miền log/căn), `...-04` (sin/cos/tan/cot), `...-05` (thương).
+    Hai cách tính trên cho thấy các công thức đạo hàm không tách rời định nghĩa. Chúng chỉ giúp ta **ghi nhớ kết quả đã có lí do** và chú ý đúng nơi có thể áp dụng.
 
-### 1.9. Đọc hình để hiểu lập luận
+    **Vận dụng.** Từ công thức lũy thừa và căn bậc hai, tìm đạo hàm của \(f(x)=x^5\) trên \(\mathbb R\), và tính đạo hàm của \(g(x)=\sqrt{x}\) tại \(x=9\).
 
-<figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg" alt="Hình minh họa 1 về lập luận trong Bài 32" /><figcaption>Hình minh họa 1 — đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
+    ??? question "Đối chiếu"
 
-<figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg" alt="Hình minh họa 2 về lập luận trong Bài 32" /><figcaption>Hình minh họa 2 — đọc hình theo lời giải thích trong phần Kiến thức ở trên.</figcaption></figure>
+        **Lời giải.** \(f'(x)=5x^4\) với mọi \(x\in\mathbb R\). Với \(x>0\), \(g'(x)=1/(2\sqrt{x})\), vì vậy \(g'(9)=1/(2\cdot3)=1/6\).
 
-## 2. Ví dụ có suy luận
+        **Kiểm lại:** Tại \(x=9\), căn bậc hai xác định và \(x>0\). Không lấy \(g'(0)\) bằng cách thay \(0\) vào công thức có mẫu \(2\sqrt{x}\).
 
-#### EX-G11-CHIX-B32-01: Quy tắc lũy thừa
+        **Kiểm lỗi:** Nếu viết \((x^5)'=x^4\), em đã thiếu hệ số \(5\) được tạo ra khi khai triển thương sai phân.
 
-**Bài toán:** $f(x)=4x^5-3x^2+7$; tìm $f'$.
+    ### 1.2. Đạo hàm của tổng, hiệu, tích, thương
 
-**Phân tích, đáp án:** $f'=20x^4-6x$; số hằng 7 có đạo hàm 0.
+    Nếu \(u(x)\), \(v(x)\) đều thay đổi theo \(x\), thì tổng của chúng thay đổi một lượng \(\Delta u+\Delta v\); vì thế đạo hàm của tổng bằng \(u'+v'\), của hiệu bằng \(u'-v'\). Nhân cả hàm số với một số không đổi \(k\) thì tốc độ biến đổi cũng được nhân với \(k\). Nhờ đó, ta tính được đạo hàm của đa thức mà không cần khai triển \(f(x+h)\) mỗi lần.
 
-**Vì sao:** Dùng hệ số n; không chuyển thành 4x^4.
+    Đối với **tích** \(uv\), không thể chỉ nhân \(u'\) với \(v'\). Hãy hình dung một hình chữ nhật có chiều dài \(u\), chiều rộng \(v\), diện tích \(uv\). Khi chiều dài tăng thêm \(\Delta u\) và chiều rộng tăng thêm \(\Delta v\), diện tích mới tăng gồm **dải do chiều dài tăng**, **dải do chiều rộng tăng** và **góc nhỏ** có diện tích \(\Delta u\,\Delta v\):
 
-#### EX-G11-CHIX-B32-02: Căn và miền
+    \[
+    \Delta(uv)=v\,\Delta u+u\,\Delta v+\Delta u\,\Delta v.
+    \]
 
-**Bài toán:** $f(x)=2\sqrt{x}+x$; đạo hàm ở x>0.
+    Chia cho \(\Delta x\) rồi lấy giới hạn, nếu \(u,v\) có đạo hàm thì phần góc nhỏ không còn đóng góp bậc nhất. Vì thế \((uv)'=u'v+uv'\): **hai thành phần cùng biến đổi nên có hai số hạng**.
 
-**Phân tích, đáp án:** $f'(x)=1/\sqrt{x}+1$ với x>0; f xác định ở 0 nhưng công thức đạo hàm không có ở đó.
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg" alt="Hình chữ nhật ban đầu diện tích uv, hai dải tăng diện tích v nhân du và u nhân dv, một góc nhỏ diện tích du nhân dv"><figcaption><strong>Đọc hình:</strong> miền giữa là diện tích ban đầu \(uv\), hai dải bên trên và bên phải biểu diễn \(u\,\Delta v\) và \(v\,\Delta u\); góc nhỏ là \(\Delta u\,\Delta v\). Hình minh họa khi hai kích thước tăng; công thức đạo hàm của tích vẫn đúng khi các hàm biến thiên theo chiều ngược lại.</figcaption></figure>
 
-**Vì sao:** Áp dụng $(\sqrt{x})'=1/(2\sqrt{x})$ và nhân 2.
+    Ví dụ, với \(u=x\), \(v=x^2+1\), quy tắc tích cho \(\bigl[x(x^2+1)\bigr]'=(x^2+1)+x(2x)=3x^2+1\). Nếu em nhân hai đạo hàm, chỉ được \(2x\), rõ ràng sai: khai triển hàm gốc là \(x^3+x\), đạo hàm phải bằng \(3x^2+1\).
 
-#### EX-G11-CHIX-B32-03: Tích
+    Với **thương** \(u/v\), điều đầu tiên phải hỏi là **\(v\) có bằng \(0\) không?**. Từ quy tắc tích áp dụng cho \(u\cdot(1/v)\), ta được
 
-**Bài toán:** $f(x)=(x^2+2)(x-3)$; đạo hàm chưa khai triển.
+    \[
+    \left(\frac uv\right)'=\frac{u'v-uv'}{v^2}\quad(v\ne0).
+    \]
 
-**Phân tích, đáp án:** $f'=2x(x-3)+(x^2+2)$, hay $3x^2-6x+2$.
+    Dấu trừ ở tử số và mẫu bình phương là phần không được bỏ. Chẳng hạn, với \(y=(2x+1)/(x-1)\), điều kiện là \(x\ne1\), còn đạo hàm bằng \([2(x-1)-(2x+1)]/(x-1)^2=-3/(x-1)^2\).
 
-**Vì sao:** Hai cạnh cùng thay đổi; không chỉ lấy hai đạo hàm nhân nhau.
+    **Vận dụng.** Tính đạo hàm của \(f(x)=x^2(x+1)\) theo quy tắc tích rồi kiểm lại bằng cách khai triển. Tính đạo hàm của \(g(x)=(x+2)/(x-1)\) và nêu điều kiện.
 
-#### EX-G11-CHIX-B32-04: Thương
+    ??? question "Đối chiếu"
 
-**Bài toán:** $f(x)=(2x-1)/(x+2)$; tính f' và TXĐ.
+        **Lời giải.** \(f'(x)=2x(x+1)+x^2=3x^2+2x\). Nếu khai triển \(f=x^3+x^2\), ta cũng được \(3x^2+2x\).
 
-**Phân tích, đáp án:** $f'=5/(x+2)^2$, x≠-2.
+        Với \(x\ne1\),
 
-**Vì sao:** Tử số 2(x+2)-(2x-1)=5; mẫu bình phương.
+        \[
+        g'(x)=\frac{(x-1)-(x+2)}{(x-1)^2}
+        =-\frac3{(x-1)^2}.
+        \]
 
-#### EX-G11-CHIX-B32-05: Hàm hợp lũy thừa
+        **Kiểm lỗi:** Nếu đảo thành \(uv'-u'v\), kết quả sẽ đổi dấu. Hãy giữ rõ thứ tự **đạo hàm tử × mẫu trừ tử × đạo hàm mẫu**.
 
-**Bài toán:** $f(x)=(x^2+3x)^4$; tính f'.
+    ### 1.3. Đạo hàm của hàm số hợp
 
-**Phân tích, đáp án:** $f'=4(x^2+3x)^3(2x+3)$.
+    Không phải hàm số nào cũng được tạo bởi phép cộng hoặc nhân hai biểu thức. Xét diện tích chiếc đĩa tròn \(S=\pi r^2\). Nếu bán kính \(r\) thay đổi theo nhiệt độ \(t\), diện tích cũng thay đổi theo nhiệt độ, nhưng **qua hai bước**: nhiệt độ \(t\) làm thay đổi bán kính \(r(t)\); bán kính lại quyết định diện tích \(S(r)\).
 
-**Vì sao:** Đạo hàm ngoài 4u³, nhân u'=2x+3.
+    Cách ghép ấy gọi là **hàm số hợp**. Với \(u=g(x)\), \(y=f(u)\), ta được \(y=f(g(x))\). Để tính tốc độ thay đổi của \(y\) theo \(x\), ta nhân tốc độ thay đổi **từ \(x\) sang \(u\)** với tốc độ thay đổi **từ \(u\) sang \(y\)**:
 
-#### EX-G11-CHIX-B32-06: Tích và hợp
+    \[
+    \frac{dy}{dx}=\frac{dy}{du}\cdot\frac{du}{dx},
+    \]
 
-**Bài toán:** $f(x)=x\sin(2x)$; tính f'.
+    khi các đạo hàm tương ứng tồn tại. Đó chính là **quy tắc dây chuyền**, viết \(y'=f'(g(x))\,g'(x)\).
 
-**Phân tích, đáp án:** $f'=\sin(2x)+2x\cos(2x)$.
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg" alt="Sơ đồ hai tầng của hàm hợp: từ x qua u bằng g của x, rồi qua y bằng f của u; hai tốc độ biến đổi được nhân lại"><figcaption><strong>Đọc hình:</strong> theo mũi tên từ \(x\) sang \(u=g(x)\), sau đó sang \(y=f(u)\). Hệ số \(g'(x)\) thuộc bước thứ nhất, \(f'(u)\) thuộc bước thứ hai. Đạo hàm theo \(x\) bằng **tích** hai hệ số, không phải chỉ đạo hàm lớp ngoài.</figcaption></figure>
 
-**Vì sao:** Áp tích; sin(2x) cần chain nhân 2.
+    Ví dụ \(y=(2x+1)^3\) là hàm hợp của \(y=u^3\) với \(u=2x+1\). Đạo hàm theo \(u\) bằng \(3u^2\), còn \(u'(x)=2\), nên
 
-#### EX-G11-CHIX-B32-07: Cos hợp
+    \[
+    y'=3(2x+1)^2\cdot2=6(2x+1)^2.
+    \]
 
-**Bài toán:** $f(x)=3\cos(4x)$; tính f'.
+    Hệ số \(2\) xuất hiện vì một thay đổi nhỏ của \(x\) làm \(u\) thay đổi **gấp đôi**. Tương tự, với \(y=\sqrt{x^2+1}\), ta có \(u=x^2+1>0\), nên \(y'=(1/(2\sqrt u))\cdot2x=x/\sqrt{x^2+1}\). Điều kiện của lớp ngoài vẫn phải được giữ.
 
-**Phân tích, đáp án:** $f'=-12\sin(4x)$.
+    **Vận dụng.** Tìm đạo hàm của \(y=(3x-2)^5\) và \(z=\sqrt{1-x^2}\). Hãy chỉ rõ “hàm trong” và khoảng mà công thức đạo hàm của \(z\) áp dụng.
 
-**Vì sao:** Đạo hàm cos có dấu âm và hàm trong 4x có đạo hàm 4.
+    ??? question "Đối chiếu"
 
-#### EX-G11-CHIX-B32-08: Tan với miền
+        **Lời giải.** Với \(u=3x-2\), ta có \(u'=3\), do đó \(y'=5(3x-2)^4\cdot3=15(3x-2)^4\).
 
-**Bài toán:** $f(x)=\tan(2x)$; đạo hàm và điều kiện.
+        Với \(v=1-x^2\), đạo hàm của \(\sqrt v\) có nghĩa khi \(v>0\), tức \(-1<x<1\). Vì \(v'=-2x\),
 
-**Phân tích, đáp án:** $f'=2/\cos^2(2x)$ tại cos(2x)≠0 (x≠π/4+kπ/2).
+        \[
+        z'=\frac{-2x}{2\sqrt{1-x^2}}=-\frac{x}{\sqrt{1-x^2}}\quad(-1<x<1).
+        \]
 
-**Vì sao:** Không áp dụng ở tiệm cận tan.
+        **Kiểm lỗi:** Hàm \(z\) có giá trị tại \(x=\pm1\), nhưng công thức đạo hàm có mẫu bằng \(0\) ở đó. Không ghi \(z'\) trên đoạn đóng \([-1;1]\).
 
-#### EX-G11-CHIX-B32-09: Cot với dấu
+    ### 1.4. Đạo hàm của hàm số lượng giác
 
-**Bài toán:** $f(x)=\cot(3x)$; đạo hàm.
+    Ở bài về lượng giác, em đã quen \(y=\sin x\) và \(y=\cos x\). Với đạo hàm, **\(x\) được đo bằng rađian**. Để tìm \((\sin x)'\) bằng định nghĩa, biến đổi hiệu \(\sin(x+h)-\sin x\) thành
 
-**Phân tích, đáp án:** $f'=-3/\sin^2(3x)$ với sin(3x)≠0.
+    \[
+    2\cos\left(x+\frac h2\right)\sin\frac h2.
+    \]
 
-**Vì sao:** Cot âm và chain nhân 3.
+    Chia cho \(h\), ta có \(\cos(x+h/2)\cdot\frac{\sin(h/2)}{h/2}\). Khi \(h\to0\), thừa số thứ hai tiến đến \(1\), thừa số thứ nhất tiến đến \(\cos x\). Vì vậy **\((\sin x)'=\cos x\)**.
 
-#### EX-G11-CHIX-B32-10: Mũ e hợp
+    Còn \(\cos x=\sin(\pi/2-x)\). Áp dụng quy tắc dây chuyền vừa học, \((\cos x)'=\cos(\pi/2-x)\cdot(-1)=-\sin x\). Dấu trừ giải thích vì sao gần \(x=0\), khi \(x\) dương tăng một chút thì giá trị \(\cos x\) bắt đầu giảm.
 
-**Bài toán:** $f(x)=e^{x^2+1}$; tính f'.
+    Từ \(\tan x=\sin x/\cos x\), dùng quy tắc thương:
 
-**Phân tích, đáp án:** $f'=2xe^{x^2+1}$.
+    \[
+    (\tan x)'=\frac{\cos^2x+\sin^2x}{\cos^2x}
+    =\frac{1}{\cos^2x}\quad(\cos x\ne0).
+    \]
 
-**Vì sao:** e^u đạo hàm bằng chính e^u nhân u'.
+    Tương tự, \((\cot x)'=-1/\sin^2x\) tại những điểm \(\sin x\ne0\). Không được bỏ điều kiện: \(\tan x\) không có nghĩa khi \(\cos x=0\), còn \(\cot x\) không có nghĩa khi \(\sin x=0\).
 
-#### EX-G11-CHIX-B32-11: Mũ cơ số 3
+    Khi góc không phải \(x\) mà là \(u(x)\), **nhớ nhân \(u'(x)\)**. Chẳng hạn \(y=\sin(2x+\pi/8)\) có đạo hàm \(2\cos(2x+\pi/8)\), còn \(y=\cos(4x-\pi/3)\) có đạo hàm \(-4\sin(4x-\pi/3)\). Sự khác nhau nằm ở **dấu** của cos và **hệ số** của hàm trong.
 
-**Bài toán:** $f(x)=3^{2x}$; tính f'.
+    **Vận dụng.** Tính đạo hàm của \(y=2\cos(\pi/4-2x)\) và \(z=\tan(2x)\). Với \(z\), nêu điều kiện xác định.
 
-**Phân tích, đáp án:** $f'=2\ln(3)\,3^{2x}$ với x∈ℝ.
+    ??? question "Đối chiếu"
 
-**Vì sao:** Cơ số 3 đưa ln 3; chain nhân 2.
+        **Lời giải.** Đặt \(u=\pi/4-2x\), \(u'=-2\). Khi đó \(y'=2[-\sin(u)](-2)=4\sin(\pi/4-2x)\).
 
-#### EX-G11-CHIX-B32-12: Log tự nhiên
+        Với \(z=\tan(2x)\), theo dây chuyền:
 
-**Bài toán:** $f(x)=\ln(4-x)$; f' trên miền.
+        \[
+        z'=\frac{2}{\cos^2(2x)}.
+        \]
 
-**Phân tích, đáp án:** $f'=-1/(4-x)$ trên x<4.
+        Công thức áp dụng khi \(\cos(2x)\ne0\), hay \(x\ne\pi/4+k\pi/2\) với \(k\in\mathbb Z\).
 
-**Vì sao:** Miền đối số 4-x>0; không bỏ dấu âm.
+        **Kiểm lỗi:** Nếu đạo hàm \(y\) mang dấu âm, em đã quên đạo hàm của hàm trong \(\pi/4-2x\) là \(-2\).
 
-#### EX-G11-CHIX-B32-13: Log cơ số 2
+    ### 1.5. Đạo hàm của hàm số mũ và hàm số lôgarit
 
-**Bài toán:** $f(x)=\log_2(3x+1)$; f' trên miền.
+    Với hàm mũ \(e^x\), một giới hạn cơ bản là \(\lim_{h\to0}(e^h-1)/h=1\). Vì \(e^{x+h}-e^x=e^x(e^h-1)\), thương sai phân trở thành
 
-**Phân tích, đáp án:** $f'=3/[(3x+1)\ln2]$ với x>-1/3.
+    \[
+    \frac{e^{x+h}-e^x}{h}
+    =e^x\frac{e^h-1}{h}\longrightarrow e^x.
+    \]
 
-**Vì sao:** Nhân đạo hàm đối số 3 và giữ ln2.
+    Đó là nét đặc biệt của cơ số \(e\): **đạo hàm của \(e^x\) chính là \(e^x\)**. Với cơ số \(a>0\), \(a\ne1\), dùng \(a^x=e^{x\ln a}\) và quy tắc dây chuyền được \((a^x)'=a^x\ln a\). Hệ số \(\ln a\) là điều không được quên khi cơ số khác \(e\).
 
-#### EX-G11-CHIX-B32-14: Quy tắc tích lẫn mũ
+    Với hàm lôgarit tự nhiên, từ \(\ln(x+h)-\ln x=\ln(1+h/x)\) và \(\lim_{t\to0}\ln(1+t)/t=1\), suy ra
 
-**Bài toán:** $f(x)=(x+1)e^{-x}$; tính f'.
+    \[
+    (\ln x)'=\frac1x\qquad(x>0).
+    \]
 
-**Phân tích, đáp án:** $f'=e^{-x}-(x+1)e^{-x}=-xe^{-x}$.
+    Vì \(\log_a x=\ln x/\ln a\), đạo hàm là \(1/(x\ln a)\) khi \(x>0\), \(a>0\), \(a\ne1\). Nếu thay \(x\) bằng một biểu thức \(u(x)\), ta lại dùng **quy tắc dây chuyền**. Ví dụ, \(y=\ln(x^2+1)\) có đạo hàm \(2x/(x^2+1)\) trên \(\mathbb R\), vì đối số \(x^2+1\) luôn dương.
 
-**Vì sao:** Đạo hàm của e^{-x} mang dấu âm; rồi áp tích.
+    Điều kiện của lôgarit rất quan trọng. \(y=\ln(4-x^2)\) chỉ xác định khi \(-2<x<2\), và công thức \(y'=-2x/(4-x^2)\) cũng chỉ được dùng trong khoảng ấy. Với \(\ln|x|\), ta xét hai trường hợp \(x>0\) và \(x<0\); cả hai cho đạo hàm \(1/x\), nhưng tại \(x=0\) hàm **không xác định**.
 
-#### EX-G11-CHIX-B32-15: Thương của hai hàm
+    Một ứng dụng quen thuộc là độ pH của dung dịch: \(\mathrm{pH}=-\log_{10}c\), với \(c=[H^+]>0\) đo bằng mol/lít theo mô hình đã cho. Khi nồng độ \(c\) biến đổi, đạo hàm theo \(c\) là \(-1/(c\ln10)\). Dấu âm nói rằng **nồng độ ion hiđrô tăng thì pH giảm**. Nếu nồng độ tăng lên **10 lần**, pH giảm đúng **1 đơn vị** trong mô hình này.
 
-**Bài toán:** $f(x)=\sin x/(x^2+1)$; tính f'.
+    **Vận dụng.** Tính đạo hàm của \(f(x)=3^{\sin x}\) và \(g(x)=\ln(5-x^2)\); với \(g\), nêu miền xác định của hàm và của công thức đạo hàm.
 
-**Phân tích, đáp án:** $f'=[(x^2+1)\cos x-2x\sin x]/(x^2+1)^2$ với mọi x.
+    ??? question "Đối chiếu"
 
-**Vì sao:** Mẫu luôn >0, trừ tử hai tích đúng thứ tự.
+        **Lời giải.** Với \(f\), hàm trong \(u=\sin x\) có \(u'=\cos x\), nên
 
-#### EX-G11-CHIX-B32-16: Điều kiện log hợp
+        \[
+        f'(x)=3^{\sin x}\ln3\cdot\cos x.
+        \]
 
-**Bài toán:** $f(x)=\ln(x^2-4)$, tìm miền và f'.
+        Với \(g\), điều kiện \(5-x^2>0\) tương đương \(-\sqrt5<x<\sqrt5\). Trên khoảng ấy:
 
-**Phân tích, đáp án:** Miền x<-2 hoặc x>2; f'=2x/(x^2-4) chỉ trên miền đó.
+        \[
+        g'(x)=\frac{-2x}{5-x^2}.
+        \]
 
-**Vì sao:** x²−4 dương ngoài [-2,2], không dùng ở -2<x<2.
+        **Kiểm lỗi:** Nếu ghi \(g'\) với mọi \(x\in\mathbb R\), em đã quên hàm lôgarit **không tồn tại** khi đối số không dương.
 
-#### EX-G11-CHIX-B32-17: Hàm hợp căn
+=== "Kiến thức SGK"
 
-**Bài toán:** $f(x)=\sqrt{5x+1}$; f' trên miền thích hợp.
+    ### 2.1. Đạo hàm của một số hàm số thường gặp
 
-**Phân tích, đáp án:** $f'=5/[2\sqrt{5x+1}]$ tại x>-1/5.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Các công thức đạo hàm cơ bản</strong><p>Với \(c\) là hằng số và \(n\in\mathbb N^*\): \((c)'=0\), \((x^n)'=nx^{n-1}\) trên \(\mathbb R\); \(\displaystyle (\sqrt{x})'=\frac{1}{2\sqrt{x}}\) khi \(x>0\). Hàm \(\sqrt{x}\) xác định tại \(x=0\) nhưng <strong>không có đạo hàm hữu hạn</strong> tại điểm biên đó theo giới hạn từ phải.</p></div>
 
-**Vì sao:** f có giá trị ở x=-1/5 nhưng không có đạo hàm hữu hạn hai phía.
+    **Đọc công thức:** Bậc \(n\) trở thành hệ số, số mũ giảm \(1\). Với căn thức, phải kiểm \(x>0\) trước khi thay vào công thức. Khi gặp biểu thức được tạo từ nhiều hàm, cần kết hợp các quy tắc ở những mục tiếp theo.
 
-#### EX-G11-CHIX-B32-18: Trộn tan và cot
+    ### 2.2. Đạo hàm của tổng, hiệu, tích, thương
 
-**Bài toán:** $f(x)=\tan x-\cot x$; tính đạo hàm và miền.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Các quy tắc tính đạo hàm</strong><p>Cho \(u=u(x),v=v(x)\) có đạo hàm trên khoảng đang xét. Khi đó \((u+v)'=u'+v'\), \((u-v)'=u'-v'\), \((uv)'=u'v+uv'\), và \(\displaystyle\left(\frac uv\right)'=\frac{u'v-uv'}{v^2}\) <strong>tại các điểm \(v\ne0\)</strong>.</p></div>
 
-**Phân tích, đáp án:** $f'=1/\cos^2x+1/\sin^2x$ tại sin x≠0 và cos x≠0.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Hệ quả cần nhớ</strong><p>Với hằng số \(k\), \((ku)'=ku'\). Với \(v\ne0\), \(\displaystyle\left(\frac1v\right)'=-\frac{v'}{v^2}\). Riêng \(\displaystyle\left(\frac1x\right)'=-\frac1{x^2}\) khi \(x\ne0\).</p></div>
 
-**Vì sao:** Trừ cot làm hai dấu âm thành dấu cộng.
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg" alt="Quy tắc tích minh họa qua hai dải diện tích u nhân dv và v nhân du"><figcaption><strong>Tra hình:</strong> khi \(u\) và \(v\) cùng biến đổi, tích có hai phần biến thiên bậc nhất, nên đạo hàm có **hai số hạng** \(u'v\) và \(uv'\), không phải \(u'v'\).</figcaption></figure>
 
-## 3. Tự khắc phục lỗi
+    **Ví dụ minh họa:** Với \(u=x\), \(v=x^2+1\), ta được \((uv)'=(x^2+1)+2x^2=3x^2+1\). Với \((2x+1)/(x-1)\), phải giữ \(x\ne1\) và được \(-3/(x-1)^2\).
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B32-01"><summary><strong>Chẩn đoán lỗi:</strong> Lấy u'v' thay cho u'v+uv'.</summary><ol><li><strong>Phát hiện lỗi:</strong> Lấy u'v' thay cho u'v+uv'.</li><li><strong>Truy lại bản chất + điều kiện:</strong> Tích hai hàm tăng/giảm tạo hai phần biến thiên tương ứng.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B32, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Tính (x·x³)' theo hai cách. <strong>Tự kiểm sau khi thử:</strong> x³+3x³=4x³.</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B32-P04</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P04">Quay lại câu canonical THPT-G11-CHIX-B32-P04</a></p></details>
+    ### 2.3. Đạo hàm của hàm số hợp
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B32-02"><summary><strong>Chẩn đoán lỗi:</strong> Quên đạo hàm hàm trong.</summary><ol><li><strong>Phát hiện lỗi:</strong> Quên đạo hàm hàm trong.</li><li><strong>Truy lại bản chất + điều kiện:</strong> Xác định lớp ngoài u^n và lớp trong u(x); viết u' rồi nhân.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B32, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Tính [(5x+1)³]'. <strong>Tự kiểm sau khi thử:</strong> 15(5x+1)².</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B32-P06</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P06">Quay lại câu canonical THPT-G11-CHIX-B32-P06</a></p></details>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hàm số hợp</strong><p>Với \(u=g(x)\) và \(y=f(u)\), nếu giá trị của \(g(x)\) thuộc miền xác định của \(f\), ta có hàm số hợp \(y=f(g(x))\): biến \(x\) tác động đến \(y\) <strong>thông qua</strong> \(u\).</p></div>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B32-03"><summary><strong>Chẩn đoán lỗi:</strong> Dùng đạo hàm của log/căn ở điểm hàm không tồn tại.</summary><ol><li><strong>Phát hiện lỗi:</strong> Dùng đạo hàm của log/căn ở điểm hàm không tồn tại.</li><li><strong>Truy lại bản chất + điều kiện:</strong> ĐKXĐ của hàm gốc phải kiểm trước khi đạo hàm, đặc biệt ln u cần u&gt;0.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B32, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> ln(x-4) có nghĩa ở x=1?. <strong>Tự kiểm sau khi thử:</strong> Không, chỉ x&gt;4.</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B32-P13</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P13">Quay lại câu canonical THPT-G11-CHIX-B32-P13</a></p></details>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc dây chuyền</strong><p>Nếu \(g\) có đạo hàm tại \(x\) và \(f\) có đạo hàm tại \(u=g(x)\), thì \(\displaystyle(f(g(x)))'=f'(g(x))\cdot g'(x)\). Đặc biệt, nếu \(u=u(x)\): \((u^n)'=nu^{n-1}u'\) với \(n\in\mathbb N^*\); \(\displaystyle(\sqrt u)'=\frac{u'}{2\sqrt u}\) khi \(u>0\).</p></div>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B32-04"><summary><strong>Chẩn đoán lỗi:</strong> Bỏ dấu trừ cos hoặc cot.</summary><ol><li><strong>Phát hiện lỗi:</strong> Bỏ dấu trừ cos hoặc cot.</li><li><strong>Truy lại bản chất + điều kiện:</strong> Nhớ cos'=-sin, cot'=-1/sin², rồi nhân u'.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B32, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Tính [cos(2x)]'. <strong>Tự kiểm sau khi thử:</strong> -2sin(2x).</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B32-P09</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P09">Quay lại câu canonical THPT-G11-CHIX-B32-P09</a></p></details>
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg" alt="Sơ đồ hàm hợp x qua hàm trong u bằng g của x rồi qua hàm ngoài y bằng f của u"><figcaption><strong>Tra hình:</strong> từ \(x\) sang \(u\) có tốc độ \(g'(x)\); từ \(u\) sang \(y\) có tốc độ \(f'(u)\). Nhân **hai tốc độ** để được đạo hàm theo \(x\).</figcaption></figure>
 
-<details class="thpt-r4-pedagogical-note" data-thpt-help-id="HELP-G11-CHIX-B32-05"><summary><strong>Chẩn đoán lỗi:</strong> Đổi nhầm thứ tự tử quy tắc thương.</summary><ol><li><strong>Phát hiện lỗi:</strong> Đổi nhầm thứ tự tử quy tắc thương.</li><li><strong>Truy lại bản chất + điều kiện:</strong> (u/v)'=(u'v-uv')/v², v≠0; giữ ngoặc.</li><li><strong>Xem lại vì sao (WHY/HOW):</strong> Mở D1 B32, so sánh mệnh đề định nghĩa với ví dụ D2; giải thích bằng lời trước khi biến đổi ký hiệu.</li><li><strong>Tự luyện câu khác có dẫn dắt:</strong> Tính [x/(x+3)]'. <strong>Tự kiểm sau khi thử:</strong> 3/(x+3)², x≠-3.</li><li><strong>Trở về câu canonical:</strong> <code>THPT-G11-CHIX-B32-P05</code> và giải lại, tự giải thích lí do từng bước; không lấy xem lời giải làm chứng cứ độc lập cho Mastery.</li></ol><p><a href="../luyen-tap/?item=THPT-G11-CHIX-B32-P05">Quay lại câu canonical THPT-G11-CHIX-B32-P05</a></p></details>
+    **Ví dụ minh họa:** \(y=\sqrt{x^2+1}\) có \(u=x^2+1>0\) nên \(y'=2x/(2\sqrt{x^2+1})=x/\sqrt{x^2+1}\) trên \(\mathbb R\).
 
-## 4. Tiếp tục
+    ### 2.4. Đạo hàm của hàm số lượng giác
 
-[Core/Luyện tập Bài 32](luyen-tap.md) · [Tự luận Chương IX](../../../thu-vien/tu-luan-g11-chuong-ix.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md)
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Bảng đạo hàm lượng giác</strong><p>Với góc đo bằng <strong>rađian</strong>: \((\sin x)'=\cos x\), \((\cos x)'=-\sin x\) trên \(\mathbb R\); \(\displaystyle(\tan x)'=\frac1{\cos^2x}\) khi \(\cos x\ne0\), \(\displaystyle(\cot x)'=-\frac1{\sin^2x}\) khi \(\sin x\ne0\).</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Lượng giác của hàm số hợp</strong><p>Với \(u=u(x)\) có đạo hàm: \((\sin u)'=u'\cos u\), \((\cos u)'=-u'\sin u\), \(\displaystyle(\tan u)'=\frac{u'}{\cos^2u}\) khi \(\cos u\ne0\); \(\displaystyle(\cot u)'=-\frac{u'}{\sin^2u}\) khi \(\sin u\ne0\).</p></div>
+
+    **Giải thích dấu:** \(\cos x=\sin(\pi/2-x)\) nên đạo hàm cos có dấu âm; đạo hàm cot cũng có dấu âm. Khi đối số là \(u(x)\), phải xét đạo hàm **lớp trong**, không chỉ đạo hàm hàm lượng giác ngoài.
+
+    ### 2.5. Đạo hàm của hàm số mũ và hàm số lôgarit
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Hàm số mũ và hàm hợp</strong><p>\((e^x)'=e^x\); nếu \(a>0,\ a\ne1\), \((a^x)'=a^x\ln a\). Với \(u=u(x)\) có đạo hàm, \((e^u)'=u'e^u\), \((a^u)'=u'a^u\ln a\).</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Hàm số lôgarit và hàm hợp</strong><p>Khi \(x>0\), \(\displaystyle(\ln x)'=\frac1x\), \(\displaystyle(\log_a x)'=\frac1{x\ln a}\) với \(a>0,\ a\ne1\). Với \(u=u(x)>0\), \(\displaystyle(\ln u)'=\frac{u'}{u}\), \(\displaystyle(\log_a u)'=\frac{u'}{u\ln a}\).</p></div>
+
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Ghi nhớ — Trường hợp giá trị tuyệt đối</strong><p>Với \(x\ne0\), \(\displaystyle(\ln|x|)'=\frac1x\). Hàm không xác định tại \(x=0\). Nói chung, nếu \(u(x)\ne0\) và có đạo hàm thì \((\ln|u|)'=u'/u\) ở những điểm tương ứng.</p></div>
+
+    **Các giới hạn liên quan trong SGK:** \(\displaystyle\lim_{h\to0}\frac{e^h-1}{h}=1\), \(\displaystyle\lim_{h\to0}\frac{\ln(1+h)}h=1\), và \(\displaystyle\lim_{h\to0}(1+h)^{1/h}=e\). Chúng là cơ sở để hiểu vì sao công thức mũ và lôgarit xuất hiện, không phải ba mẹo tính riêng.
+
+    **Kiểm điều kiện trước khi làm:** Mũ \(e^{u(x)}\) có nghĩa với mọi \(u(x)\) thực xác định; lôgarit \(\ln u\) hoặc \(\log_a u\) đòi \(u>0\). Ví dụ \(\ln(4-x^2)\) chỉ dùng khi \(-2<x<2\), còn \(\ln(x^2+1)\) có nghĩa với mọi \(x\).
+
+=== "Ví dụ"
+
+    ### 3.1. Đạo hàm của lũy thừa và căn thức
+
+    **Đề bài.** Tính đạo hàm của \(f(x)=4x^5-3x^2+7\) trên \(\mathbb R\), và tính đạo hàm của \(g(x)=\sqrt{x}\) tại \(x=4\) và \(x=1/4\).
+
+    **Phân tích:** Lũy thừa dùng công thức \(nx^{n-1}\), hằng số có đạo hàm \(0\). Với căn bậc hai, chỉ thay số sau khi kiểm \(x>0\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(f'(x)=4\cdot5x^4-3\cdot2x=20x^4-6x\). Với \(x>0\), \(g'(x)=1/(2\sqrt{x})\), nên \(g'(4)=1/4\), \(g'(1/4)=1\).</p></div>
+
+    **Kiểm lại:** Các điểm \(4\), \(1/4\) đều thuộc khoảng \(x>0\); không áp công thức \(g'\) tại \(0\).
+
+    ### 3.2. Quy tắc tích với căn thức
+
+    **Đề bài.** Tính đạo hàm của \(y=(2x^3+1)(\sqrt{x}-3)\) trên khoảng đạo hàm tồn tại.
+
+    **Phân tích:** Đây là **tích của hai hàm**; mỗi thừa số đều biến đổi. Hàm chứa \(\sqrt{x}\) nên công thức đạo hàm sử dụng trên \(x>0\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Đặt \(u=2x^3+1\), \(v=\sqrt{x}-3\), ta có \(u'=6x^2\), \(v'=1/(2\sqrt{x})\). Do đó \(\displaystyle y'=u'v+uv'=6x^2(\sqrt{x}-3)+\frac{2x^3+1}{2\sqrt{x}}\) với \(x>0\).</p></div>
+
+    **Kiểm lại:** Hàm gốc xác định khi \(x\ge0\), nhưng công thức đạo hàm này chỉ áp dụng tại \(x>0\). Tại \(x=0\), thương sai phân chứa thành phần bậc \(\sqrt h/h\) không cho đạo hàm hữu hạn.
+
+    ### 3.3. Quy tắc thương và dấu trừ
+
+    **Đề bài.** Tính đạo hàm của \(y=(2x+1)/(x-1)\), nêu miền xác định.
+
+    **Phân tích:** Mẫu \(x-1\) không được bằng \(0\). Quy tắc thương có tử số \(u'v-uv'\), không phải \(u'v+uv'\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Miền xác định là \(x\ne1\). Lấy \(u=2x+1\), \(v=x-1\), nên \(u'=2\), \(v'=1\). Khi ấy \(\displaystyle y'=\frac{2(x-1)-(2x+1)}{(x-1)^2}=-\frac3{(x-1)^2}\), với \(x\ne1\).</p></div>
+
+    **Kiểm lại:** Viết \(y=2+3/(x-1)\) cũng được \(y'=-3/(x-1)^2\); hai cách khớp nhau.
+
+    ### 3.4. Vật phóng thẳng đứng — vận tốc khi lên cao và khi chạm đất
+
+    **Đề bài.** Một vật được phóng thẳng đứng từ mặt đất với vận tốc ban đầu \(20\) m/s, bỏ qua lực cản không khí. Độ cao \(h(t)=20t-4{,}9t^2\) (m), \(t\ge0\) (s). Tính vận tốc khi vật đạt độ cao cực đại và khi chạm lại mặt đất.
+
+    **Phân tích:** Vận tốc là đạo hàm \(h'(t)\). Thời điểm đạt đỉnh được xác định khi \(v(t)=0\). Để tìm lúc chạm đất **lần sau**, giải \(h(t)=0\) rồi loại nghiệm \(t=0\) lúc bắt đầu.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(v(t)=h'(t)=20-9{,}8t\) (m/s). Tại đỉnh quỹ đạo, \(v(t_1)=0\), nên \(t_1=20/9{,}8\) s và vận tốc khi đó bằng \(0\). Khi vật chạm đất, \(20t-4{,}9t^2=0\), tức \(t(20-4{,}9t)=0\). Nghiệm \(t=0\) là lúc phóng; nghiệm tiếp theo \(t_2=20/4{,}9=40/9{,}8\) s. Thay vào \(v(t)\), được \(v(t_2)=20-9{,}8(40/9{,}8)=-20\) m/s.</p></div>
+
+    **Kiểm lại:** Dấu âm cho biết lúc chạm đất vật đi **xuống**, ngược chiều dương hướng lên. **Tốc độ** khi đó là \(20\) m/s, không phải \(-20\) m/s.
+
+    ### 3.5. Lũy thừa của hàm hợp
+
+    **Đề bài.** Tính đạo hàm của \(y=(2x-3)^{10}\).
+
+    **Phân tích:** Đặt \(u=2x-3\) rồi xem \(y=u^{10}\). Đạo hàm lớp ngoài phải **nhân** đạo hàm của \(u\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Vì \(u'=2\), \(\displaystyle y'=10u^9u'=10(2x-3)^9\cdot2=20(2x-3)^9\).</p></div>
+
+    **Kiểm lại:** Nếu khai triển đa thức rồi tính đạo hàm (rất dài), vẫn phải được cùng kết quả; việc thiếu hệ số \(2\) là sai quy tắc dây chuyền.
+
+    ### 3.6. Căn thức của hàm hợp
+
+    **Đề bài.** Tính đạo hàm của \(y=\sqrt{x^2+1}\).
+
+    **Phân tích:** Hàm trong \(u=x^2+1\) luôn lớn hơn \(0\); hàm ngoài là \(\sqrt u\). Dùng quy tắc dây chuyền với đạo hàm căn.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(u'=2x\), \(\displaystyle y'=\frac{u'}{2\sqrt u}=\frac{2x}{2\sqrt{x^2+1}}=\frac{x}{\sqrt{x^2+1}}\) với mọi \(x\in\mathbb R\).</p></div>
+
+    **Kiểm lại:** Ở \(x=0\), hàm đạt giá trị \(1\) và \(y'(0)=0\), phù hợp tính đối xứng của \(y=\sqrt{x^2+1}\).
+
+    ### 3.7. Đạo hàm của sin và cos hợp
+
+    **Đề bài.** Tính đạo hàm của (a) \(y=\sin(2x+\pi/8)\); (b) \(z=\cos(4x-\pi/3)\).
+
+    **Phân tích:** Ở (a), đạo hàm \(\sin u\) bằng \(u'\cos u\). Ở (b), đạo hàm \(\cos u\) có dấu âm, sau đó nhân đạo hàm hàm trong.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> (a) Đặt \(u=2x+\pi/8\), \(u'=2\), nên \(y'=2\cos(2x+\pi/8)\). (b) Đặt \(v=4x-\pi/3\), \(v'=4\), nên \(z'=-4\sin(4x-\pi/3)\). Hai hàm đều có đạo hàm trên \(\mathbb R\).</p></div>
+
+    **Kiểm lại:** Bỏ dấu trừ ở (b) hoặc hệ số \(2\) ở (a) đều là lỗi dây chuyền; góc đo theo rađian.
+
+    ### 3.8. Tan, cot và điều kiện xác định
+
+    **Đề bài.** Tìm đạo hàm của \(y=\tan(2x+\pi/4)\) và \(z=\cot(3x)\); nêu điều kiện.
+
+    **Phân tích:** Tan là sin chia cos, chỉ xác định khi cos của đối số khác \(0\). Cot chỉ xác định khi sin của đối số khác \(0\). Không được chỉ tính công thức rồi bỏ miền.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Với \(\cos(2x+\pi/4)\ne0\), \(\displaystyle y'=\frac2{\cos^2(2x+\pi/4)}\). Với \(\sin(3x)\ne0\), \(\displaystyle z'=-\frac3{\sin^2(3x)}\). Tương đương \(x\ne\pi/8+k\pi/2\) cho \(y\), và \(x\ne k\pi/3\) cho \(z\), \(k\in\mathbb Z\).</p></div>
+
+    **Kiểm lại:** Khi \(x=0\), \(y\) có nghĩa nhưng \(z=\cot0\) không có nghĩa; không được lấy đạo hàm của \(z\) tại \(0\).
+
+    ### 3.9. Hàm mũ có cơ số khác e
+
+    **Đề bài.** Tính đạo hàm của \(y=2^{x^2-x}\).
+
+    **Phân tích:** Hàm ngoài là \(2^u\), có đạo hàm \(2^u\ln2\). Hàm trong \(u=x^2-x\) có đạo hàm \(2x-1\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(\displaystyle y'=2^{x^2-x}\ln2\cdot(2x-1)\), với mọi \(x\in\mathbb R\).</p></div>
+
+    **Kiểm lại:** Nếu \(x=1/2\), hàm trong có đạo hàm \(0\), nên \(y'(1/2)=0\). Điều này phù hợp công thức.
+
+    ### 3.10. Hàm mũ trong một tích
+
+    **Đề bài.** Tính đạo hàm của \(y=(x+1)e^{-x}\) với mọi \(x\in\mathbb R\).
+
+    **Phân tích:** Hàm là tích \(u=x+1\), \(v=e^{-x}\). Với \(v\), lớp trong \(-x\) có đạo hàm \(-1\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> \(u'=1\), \(v'=-e^{-x}\). Theo quy tắc tích, \(\displaystyle y'=u'v+uv'=e^{-x}-(x+1)e^{-x}=-xe^{-x}\).</p></div>
+
+    **Kiểm lại:** \(y'(0)=0\); nếu bỏ dấu âm của \((-x)'\), sẽ cho đáp án sai \(e^{-x}(x+2)\).
+
+    ### 3.11. Hàm lôgarit có đối số là đa thức
+
+    **Đề bài.** Tính đạo hàm của \(y=\ln(x^2+1)\) và \(z=\ln(4-x^2)\), nêu miền áp dụng.
+
+    **Phân tích:** Cả hai là hàm \(\ln u\), đạo hàm \(u'/u\), nhưng **điều kiện \(u>0\)** khác nhau.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.11"><p><strong>Lời giải.</strong> Vì \(x^2+1>0\) với mọi \(x\), \(\displaystyle y'=\frac{2x}{x^2+1}\) trên \(\mathbb R\). Với \(z\), \(4-x^2>0\Leftrightarrow-2<x<2\); trên khoảng ấy, \(\displaystyle z'=\frac{-2x}{4-x^2}\).</p></div>
+
+    **Kiểm lại:** Tại \(x=2\), \(\ln(4-4)=\ln0\) không xác định; không được nói đạo hàm \(z'\) có nghĩa tại đó.
+
+    ### 3.12. Lôgarit cơ số 2
+
+    **Đề bài.** Tính đạo hàm của \(y=\log_2(2x-1)\), chỉ rõ tập xác định.
+
+    **Phân tích:** Điều kiện là \(2x-1>0\); đạo hàm của \(\log_a u\) có mẫu \(u\ln a\) và cần nhân \(u'\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.12"><p><strong>Lời giải.</strong> Tập xác định là \((1/2;+\infty)\). Trên khoảng ấy, \(\displaystyle y'=\frac{(2x-1)'}{(2x-1)\ln2}=\frac2{(2x-1)\ln2}\).</p></div>
+
+    **Kiểm lại:** Nếu lấy \(\ln2=1\) hoặc quên đạo hàm \(2x-1\) bằng \(2\), công thức sẽ sai.
+
+    ### 3.13. Vận dụng: tốc độ biến thiên của pH
+
+    **Đề bài.** Theo mô hình \(\mathrm{pH}=-\log_{10}c\), với \(c>0\) là nồng độ ion hiđrô tính bằng mol/lít, hãy tìm tốc độ biến thiên của pH theo \(c\), và cho biết điều gì xảy ra với pH nếu \(c\) tăng lên \(10\) lần.
+
+    **Phân tích:** Dùng đạo hàm của \(\log_a x\), chú ý dấu trừ và điều kiện \(c>0\). Khi nồng độ tăng lên \(10\) lần, sử dụng tính chất \(\log_{10}(10c)=1+\log_{10}c\) để đối chiếu.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.13"><p><strong>Lời giải.</strong> \(\displaystyle\frac{d\,\mathrm{pH}}{dc}=-\frac1{c\ln10}\) với \(c>0\). Vì \(c\ln10>0\), đạo hàm âm: nồng độ tăng làm pH giảm. Hơn nữa, \(\mathrm{pH}(10c)=-\log_{10}(10c)=-1-\log_{10}c=\mathrm{pH}(c)-1\). Vậy nếu nồng độ tăng gấp mười, pH giảm đúng \(1\) đơn vị theo mô hình.</p></div>
+
+    **Kiểm lại:** Đạo hàm âm phù hợp với kết luận pH giảm. Dùng cơ số \(10\) nên mẫu có \(\ln10\), không phải chỉ có \(c\).
+
+    ### 3.14. Vận dụng: vận tốc của chuyển động lượng giác
+
+    **Đề bài.** Một vật chuyển động có phương trình \(s(t)=4\cos(2\pi t-\pi/8)\) (m), \(t\) tính bằng giây. Tính vận tốc tại \(t=5\) giây, làm tròn đến \(0{,}1\) m/s.
+
+    **Phân tích:** Vận tốc \(v(t)=s'(t)\) là đạo hàm theo \(t\). Đây là hàm hợp \(4\cos u(t)\), \(u(t)=2\pi t-\pi/8\), nên cần nhân \(u'(t)=2\pi\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.14"><p><strong>Lời giải.</strong> \(\displaystyle v(t)=-8\pi\sin(2\pi t-\pi/8)\) m/s. Tại \(t=5\), \(\sin(10\pi-\pi/8)=-\sin(\pi/8)\), nên \(\displaystyle v(5)=8\pi\sin(\pi/8)\approx9{,}6\) m/s.</p></div>
+
+    **Kiểm lại:** Dấu dương cho biết tại thời điểm đó vật đi theo chiều dương đã chọn; tốc độ là \(9{,}6\) m/s. Góc tính theo rađian.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Thiếu hệ số của công thức lũy thừa
+
+    **Sai ở đâu:** Lấy \((x^5)'=x^4\) thay vì \(5x^4\).
+
+    **Vì sao sai:** Số mũ tạo ra **hệ số \(5\)** khi lấy giới hạn thương sai phân.
+
+    **Cách sửa:** Ghi công thức \((x^n)'=nx^{n-1}\), rồi thử với \(x^3\): rút từ định nghĩa cho \(3x^2\).
+
+    ### 4.2. Lấy tích hai đạo hàm
+
+    **Sai ở đâu:** Viết \((uv)'=u'v'\).
+
+    **Vì sao sai:** Hai thừa số cùng thay đổi tạo hai phần biến thiên chính. Với \(u=x\), \(v=x^2+1\), tích đúng cho \(3x^2+1\), không phải \(2x\).
+
+    **Cách sửa:** Nhìn hai dải diện tích trong hình và viết **đạo hàm phần thứ nhất × phần thứ hai + phần thứ nhất × đạo hàm phần thứ hai**.
+
+    ### 4.3. Đổi nhầm thứ tự của quy tắc thương
+
+    **Sai ở đâu:** Dùng \((uv'-u'v)/v^2\), hoặc quên bình phương mẫu.
+
+    **Vì sao sai:** Quy tắc đúng là \((u'v-uv')/v^2\), chỉ áp dụng tại \(v\ne0\).
+
+    **Cách sửa:** Viết riêng \(u,u',v,v'\), giữ đủ ngoặc trong tử rồi rút gọn. Tự kiểm bằng ví dụ \((1/x)'=-1/x^2\).
+
+    ### 4.4. Bỏ quên đạo hàm của hàm trong
+
+    **Sai ở đâu:** Viết \(\bigl((3x-2)^5\bigr)'=5(3x-2)^4\).
+
+    **Vì sao sai:** Đạo hàm của lớp trong \(3x-2\) bằng \(3\), không phải \(1\).
+
+    **Cách sửa:** Đặt \(u=3x-2\), tính riêng \(u'=3\), rồi nhân: \(15(3x-2)^4\).
+
+    ### 4.5. Không kiểm miền của căn và lôgarit
+
+    **Sai ở đâu:** Viết \(\bigl(\sqrt{1-x^2}\bigr)'=-x/\sqrt{1-x^2}\) cho mọi số thực.
+
+    **Vì sao sai:** Hàm gốc chỉ có nghĩa khi \(|x|\le1\), còn công thức đạo hàm hữu hạn ở các điểm \(-1<x<1\).
+
+    **Cách sửa:** Tìm miền xác định **trước**; riêng \(\ln u\) phải có \(u>0\) mới áp dụng \(u'/u\).
+
+    ### 4.6. Nhầm dấu đạo hàm cos và cot
+
+    **Sai ở đâu:** Lấy \((\cos u)'=u'\sin u\), hoặc \((\cot u)'=u'/\sin^2u\).
+
+    **Vì sao sai:** Cả đạo hàm cos và cot đều mang **dấu âm** theo công thức SGK.
+
+    **Cách sửa:** Giữ dấu âm ở lớp ngoài rồi nhân \(u'\). Nếu \(u'\) cũng âm, hai dấu âm có thể triệt tiêu, nhưng phải chỉ rõ cả hai.
+
+    ### 4.7. Quên điều kiện của tan và cot
+
+    **Sai ở đâu:** Tính đạo hàm \(\tan(2x)\) tại \(x=\pi/4\).
+
+    **Vì sao sai:** Khi \(x=\pi/4\), \(\cos(2x)=0\), nên **hàm gốc không có nghĩa**.
+
+    **Cách sửa:** Ghi \(\cos u\ne0\) với tan và \(\sin u\ne0\) với cot, rồi mới lấy đạo hàm.
+
+    ### 4.8. Dùng sai công thức cho hàm mũ và lôgarit
+
+    **Sai ở đâu:** Viết \((3^{2x})'=3^{2x}\) hoặc \((\log_2x)'=1/x\).
+
+    **Vì sao sai:** Cơ số khác \(e\) tạo thêm \(\ln a\). Với \(3^{2x}\) còn có đạo hàm hàm trong bằng \(2\).
+
+    **Cách sửa:** \((3^{2x})'=2\ln3\,3^{2x}\); \((\log_2x)'=1/(x\ln2)\) khi \(x>0\).
+
+    ### 4.9. Quên kiểm giá trị và đơn vị trong bài toán thực tế
+
+    **Sai ở đâu:** Lấy \(h(t)\) (m) làm vận tốc (m/s), hoặc nghĩ vận tốc chạm đất \(-20\) m/s nghĩa vật đi lên.
+
+    **Vì sao sai:** Vận tốc là **đạo hàm của độ cao theo thời gian**; dấu phụ thuộc chiều dương đã chọn.
+
+    **Cách sửa:** Viết \(v(t)=h'(t)\), ghi đơn vị m/s và diễn giải dấu theo trục thẳng đứng hướng lên hay xuống.
+
+    ### 4.10. Coi đạo hàm pH âm là nồng độ không thể tăng
+
+    **Sai ở đâu:** Thấy \(\mathrm{pH}'(c)<0\), kết luận nồng độ ion hiđrô đang giảm.
+
+    **Vì sao sai:** Đạo hàm này đo **pH biến đổi theo nồng độ**, không phải đạo hàm của nồng độ theo thời gian. Nó nói rằng **nếu** nồng độ tăng, pH giảm.
+
+    **Cách sửa:** Đọc đúng biến lấy đạo hàm trong \(\mathrm{pH}'(c)=-1/(c\ln10)\); phân biệt “pH thay đổi theo nồng độ” với “nồng độ thay đổi theo thời gian”.
