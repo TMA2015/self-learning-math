@@ -92,7 +92,7 @@
     \[
     P(\cos\varphi\cos\lambda;\cos\varphi\sin\lambda;\sin\varphi).
     \]
-    Kiểm bằng \(\cos^2\varphi(\cos^2\lambda+\sin^2\lambda)+\sin^2\varphi=1\). Ở cực, kinh độ không xác định duy nhất; công thức vẫn cho đúng điểm cực với mọi kinh độ.
+    Kiểm bằng \(\cos^2\varphi(\cos^2\lambda+\sin^2\lambda)+\sin^2\varphi=1\). Ở cực, kinh độ không xác định duy nhất; công thức vẫn cho đúng điểm cực với mọi kinh độ. Ngược lại, nếu biết tọa độ \((x;y;z)\) trên mặt cầu đơn vị, ta tìm vĩ độ bằng \(\varphi=\arcsin z\). Khi không ở cực, hình chiếu xuống mặt phẳng \(Oxy\) có độ dài \(r=\sqrt{x^2+y^2}>0\). Tìm kinh độ \(\lambda\) sao cho \(\cos\lambda=x/r\) và \(\sin\lambda=y/r\); xét cả hai dấu để chọn đúng góc phần tư. Chẳng hạn \((0;1;0)\) có vĩ độ \(0^\circ\), kinh độ \(90^\circ\) Đông.
 
     Để đo khoảng cách ngắn nhất dọc bề mặt cầu, không dùng đoạn thẳng \(PQ\) xuyên vào lòng cầu. Đường tròn lớn đi qua \(P,Q\) có tâm \(O\); độ dài cung nhỏ bằng bán kính nhân góc ở tâm tính theo radian.
 
@@ -149,7 +149,7 @@
 
     ### 2.2. Một số ứng dụng của phương trình mặt cầu trong thực tiễn
 
-    **Mô hình địa cầu:** Chọn hệ trục như phần Khám phá, đơn vị dài tương ứng 6371 km; mặt cầu đơn vị có phương trình \(x^2+y^2+z^2=1\). Vĩ độ có dấu \(\varphi\in[-90^\circ;90^\circ]\) (Bắc dương, Nam âm), kinh độ có dấu \(\lambda\in[-180^\circ;180^\circ]\) (Đông dương, Tây âm).
+    **Mô hình địa cầu:** Chọn gốc \(O\) tại tâm Trái Đất, trục \(Oz\) hướng về cực Bắc, \(Ox\) hướng tới giao điểm xích đạo và kinh tuyến gốc, \(Oy\) hướng tới điểm xích đạo ở kinh độ \(90^\circ\) Đông. Lấy 6371 km làm một đơn vị dài; mặt cầu đơn vị có phương trình \(x^2+y^2+z^2=1\). Vĩ độ có dấu \(\varphi\in[-90^\circ;90^\circ]\) (Bắc dương, Nam âm), kinh độ có dấu \(\lambda\in[-180^\circ;180^\circ]\) (Đông dương, Tây âm).
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tọa độ và độ dài cung.</strong><div class="arithmatex">\(\displaystyle P=(\cos\varphi\cos\lambda;\cos\varphi\sin\lambda;\sin\varphi).\)</div><p>Với \(P,Q\) trên mặt cầu đơn vị, đặt \(\gamma=\arccos(\overrightarrow{OP}\cdot\overrightarrow{OQ})\in[0;\pi]\) (radian). Khoảng cách theo cung nhỏ của đường tròn lớn bằng \(6371\gamma\) km. Nếu tính \(\gamma\) bằng độ, dùng \(6371\pi\gamma/180\).</p></div>
 
