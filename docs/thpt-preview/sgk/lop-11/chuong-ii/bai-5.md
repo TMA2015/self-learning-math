@@ -37,7 +37,7 @@
 
 === "Khám phá kiến thức"
 
-    Giả sử số dân của một thành phố vào năm 2020 là khoảng \(500\) nghìn người và mỗi năm tăng khoảng \(2\%\). Nếu quy luật này tiếp tục, con số năm tiếp theo phụ thuộc năm trước: \(500,\ 500\cdot1{,}02,\ 500\cdot1{,}02^2,\ldots\). Ta không chỉ quan tâm đến giá trị riêng của mỗi năm, mà còn quan tâm **vị trí theo thời gian** và **quy luật nối các giá trị**. Đó là lí do học dãy số: dãy vừa ghi lại một chuỗi số có thứ tự, vừa giúp dự đoán và kiểm tra xu hướng.
+    Giả sử số dân của một thành phố vào năm 2020 là khoảng \(500\) nghìn người và mỗi năm tăng khoảng \(2\%\). Nếu quy luật này tiếp tục, con số năm tiếp theo phụ thuộc năm trước: \(500,\ 500\cdot1{,}02,\ 500\cdot1{,}02^2,\ldots\). Nếu gọi \(u_1=500\) là dân số năm 2020 (đơn vị nghìn người), thì \(u_n=500\cdot1{,}02^{n-1}\) là dân số dự kiến năm \(2020+n-1\). Ta không chỉ quan tâm đến giá trị riêng của mỗi năm, mà còn quan tâm **vị trí theo thời gian** và **quy luật nối các giá trị**. Đó là lí do học dãy số: dãy vừa ghi lại một chuỗi số có thứ tự, vừa giúp dự đoán và kiểm tra xu hướng.
 
     ### 1.1. Định nghĩa dãy số
 
@@ -59,7 +59,7 @@
 
     ### 1.2. Các cách cho một dãy số
 
-    Có nhiều cách kể về cùng một dãy. Ta có thể **minh họa vài số đầu** \(5,10,15,20,\ldots\), nhưng chỉ nhìn các số này chưa xác định duy nhất dãy vô hạn; muốn xác định rõ dãy, hãy viết công thức số hạng tổng quát \(u_n=5n\) với \(n\ge1\); **mô tả bằng lời** “số hạng thứ \(n\) là bội dương thứ \(n\) của \(5\)”; hoặc dùng **truy hồi** \(u_1=5,\ u_n=u_{n-1}+5\) với \(n\ge2\). Cả bốn cách đều chỉ cùng những số theo cùng thứ tự, nhưng mỗi cách có ưu thế riêng.
+    Có nhiều cách kể về cùng một dãy. Ta có thể **minh họa vài số đầu** \(5,10,15,20,\ldots\), nhưng chỉ nhìn các số này chưa xác định duy nhất dãy vô hạn; muốn xác định rõ dãy, hãy viết công thức số hạng tổng quát \(u_n=5n\) với \(n\ge1\); **mô tả bằng lời** “số hạng thứ \(n\) là bội dương thứ \(n\) của \(5\)”; hoặc dùng **truy hồi** \(u_1=5,\ u_n=u_{n-1}+5\) với \(n\ge2\). Ba cách sau xác định chính xác cùng một dãy vô hạn; liệt kê một số hạng đầu chỉ giúp hình dung quy luật. Với dãy hữu hạn, liệt kê đầy đủ các số hạng theo thứ tự cũng xác định được dãy.
 
     Công thức tổng quát cho phép tính trực tiếp \(u_{100}=500\) mà không phải đi qua \(99\) bước. Ngược lại, truy hồi giải thích **cách dãy phát triển từ bước trước**: muốn biết \(u_3\), phải biết \(u_2\), và trước đó phải biết \(u_1\). Vì thế một hệ thức truy hồi **thiếu số hạng đầu** chưa xác định duy nhất một dãy. Mô tả bằng lời đặc biệt hữu ích khi quy luật có ý nghĩa rõ ràng nhưng khó viết thành một công thức đơn giản, như dãy các số nguyên tố theo thứ tự.
 
