@@ -1633,5 +1633,679 @@
     "item_id": "THPT-G11-CHI-RD1-20",
     "original_type": "WRITTEN_RUBRIC",
     "optional": false
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHIX-B31-C01",
+    "skill_id": "G11-B31-AVERAGE_RATE"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHIX-B31-P01",
+    "skill_id": "G11-B31-AVERAGE_RATE"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHIX-B31-C02",
+    "skill_id": "G11-B31-LIMIT_QUOTIENT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHIX-B31-P02",
+    "skill_id": "G11-B31-LIMIT_QUOTIENT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHIX-B31-C03",
+    "skill_id": "G11-B31-DERIVATIVE_AT_POINT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHIX-B31-P03",
+    "skill_id": "G11-B31-DERIVATIVE_AT_POINT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHIX-B31-C04",
+    "skill_id": "G11-B31-DIFFERENTIABILITY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-CHIX-B31-P04",
+    "skill_id": "G11-B31-DIFFERENTIABILITY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-CHIX-B31-C05",
+    "skill_id": "G11-B31-CONTINUITY_NECESSARY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-CHIX-B31-P05",
+    "skill_id": "G11-B31-CONTINUITY_NECESSARY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G11-CHIX-B31-C06",
+    "skill_id": "G11-B31-CORNER_CUSP"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-CHIX-B31-P06",
+    "skill_id": "G11-B31-CORNER_CUSP"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 7,
+    "item_id": "THPT-G11-CHIX-B31-C07",
+    "skill_id": "G11-B31-TANGENT_SLOPE"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G11-CHIX-B31-P07",
+    "skill_id": "G11-B31-TANGENT_SLOPE"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 8,
+    "item_id": "THPT-G11-CHIX-B31-C08",
+    "skill_id": "G11-B31-TANGENT_EQUATION"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 8,
+    "item_id": "THPT-G11-CHIX-B31-P08",
+    "skill_id": "G11-B31-TANGENT_EQUATION"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 9,
+    "item_id": "THPT-G11-CHIX-B31-C09",
+    "skill_id": "G11-B31-INSTANT_VELOCITY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 9,
+    "item_id": "THPT-G11-CHIX-B31-P09",
+    "skill_id": "G11-B31-INSTANT_VELOCITY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:CORE",
+    "role": "SGK_CORE",
+    "order": 10,
+    "item_id": "THPT-G11-CHIX-B31-C10",
+    "skill_id": "G11-B31-RATE_UNITS"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 10,
+    "item_id": "THPT-G11-CHIX-B31-P10",
+    "skill_id": "G11-B31-RATE_UNITS"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHIX-B32-C01",
+    "skill_id": "G11-B32-POWER_INTEGER"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHIX-B32-P01",
+    "skill_id": "G11-B32-POWER_INTEGER"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHIX-B32-C02",
+    "skill_id": "G11-B32-SQRT_DOMAIN"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHIX-B32-P02",
+    "skill_id": "G11-B32-SQRT_DOMAIN"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHIX-B32-C03",
+    "skill_id": "G11-B32-CONSTANT_SUM"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHIX-B32-P03",
+    "skill_id": "G11-B32-CONSTANT_SUM"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHIX-B32-C04",
+    "skill_id": "G11-B32-PRODUCT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-CHIX-B32-P04",
+    "skill_id": "G11-B32-PRODUCT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-CHIX-B32-C05",
+    "skill_id": "G11-B32-QUOTIENT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-CHIX-B32-P05",
+    "skill_id": "G11-B32-QUOTIENT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G11-CHIX-B32-C06",
+    "skill_id": "G11-B32-COMPOSITION_CHAIN"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-CHIX-B32-P06",
+    "skill_id": "G11-B32-COMPOSITION_CHAIN"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 7,
+    "item_id": "THPT-G11-CHIX-B32-C07",
+    "skill_id": "G11-B32-TRIG_SIN_COS"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G11-CHIX-B32-P07",
+    "skill_id": "G11-B32-TRIG_SIN_COS"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 8,
+    "item_id": "THPT-G11-CHIX-B32-C08",
+    "skill_id": "G11-B32-TRIG_TAN_COT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 8,
+    "item_id": "THPT-G11-CHIX-B32-P08",
+    "skill_id": "G11-B32-TRIG_TAN_COT"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 9,
+    "item_id": "THPT-G11-CHIX-B32-C09",
+    "skill_id": "G11-B32-TRIG_CHAIN"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 9,
+    "item_id": "THPT-G11-CHIX-B32-P09",
+    "skill_id": "G11-B32-TRIG_CHAIN"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 10,
+    "item_id": "THPT-G11-CHIX-B32-C10",
+    "skill_id": "G11-B32-EXP_DERIV"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 10,
+    "item_id": "THPT-G11-CHIX-B32-P10",
+    "skill_id": "G11-B32-EXP_DERIV"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 11,
+    "item_id": "THPT-G11-CHIX-B32-C11",
+    "skill_id": "G11-B32-LOG_DERIV"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 11,
+    "item_id": "THPT-G11-CHIX-B32-P11",
+    "skill_id": "G11-B32-LOG_DERIV"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 12,
+    "item_id": "THPT-G11-CHIX-B32-C12",
+    "skill_id": "G11-B32-EXP_LOG_CHAIN"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 12,
+    "item_id": "THPT-G11-CHIX-B32-P12",
+    "skill_id": "G11-B32-EXP_LOG_CHAIN"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 13,
+    "item_id": "THPT-G11-CHIX-B32-C13",
+    "skill_id": "G11-B32-DOMAIN_VALIDATION"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 13,
+    "item_id": "THPT-G11-CHIX-B32-P13",
+    "skill_id": "G11-B32-DOMAIN_VALIDATION"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 14,
+    "item_id": "THPT-G11-CHIX-B32-C14",
+    "skill_id": "G11-B32-RULE_SELECTION"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 14,
+    "item_id": "THPT-G11-CHIX-B32-P14",
+    "skill_id": "G11-B32-RULE_SELECTION"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:CORE",
+    "role": "SGK_CORE",
+    "order": 15,
+    "item_id": "THPT-G11-CHIX-B32-C15",
+    "skill_id": "G11-B32-APPLIED_VELOCITY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 15,
+    "item_id": "THPT-G11-CHIX-B32-P15",
+    "skill_id": "G11-B32-APPLIED_VELOCITY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHIX-B33-C01",
+    "skill_id": "G11-B33-SECOND_DEF"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHIX-B33-P01",
+    "skill_id": "G11-B33-SECOND_DEF"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHIX-B33-C02",
+    "skill_id": "G11-B33-POLYNOMIAL"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHIX-B33-P02",
+    "skill_id": "G11-B33-POLYNOMIAL"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHIX-B33-C03",
+    "skill_id": "G11-B33-TRIG_EXP"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHIX-B33-P03",
+    "skill_id": "G11-B33-TRIG_EXP"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHIX-B33-C04",
+    "skill_id": "G11-B33-ACCELERATION"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-CHIX-B33-P04",
+    "skill_id": "G11-B33-ACCELERATION"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-CHIX-B33-C05",
+    "skill_id": "G11-B33-SIGN_INTERPRET"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-CHIX-B33-P05",
+    "skill_id": "G11-B33-SIGN_INTERPRET"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G11-CHIX-CHIX-C01",
+    "skill_id": "G11-CHIX-INTEGRATED"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-CHIX-CHIX-P01",
+    "skill_id": "G11-CHIX-INTEGRATED"
+  },
+  {
+    "collection": "SGK:G11:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-CHIX-B31-W01"
+  },
+  {
+    "collection": "SGK:G11:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G11-CHIX-B31-W02"
+  },
+  {
+    "collection": "SGK:G11:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G11-CHIX-B31-W03"
+  },
+  {
+    "collection": "SGK:G11:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G11-CHIX-B32-W01"
+  },
+  {
+    "collection": "SGK:G11:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G11-CHIX-B32-W02"
+  },
+  {
+    "collection": "SGK:G11:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "THPT-G11-CHIX-B32-W03"
+  },
+  {
+    "collection": "SGK:G11:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 7,
+    "item_id": "THPT-G11-CHIX-B33-W01"
+  },
+  {
+    "collection": "SGK:G11:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 8,
+    "item_id": "THPT-G11-CHIX-B33-W02"
+  },
+  {
+    "collection": "SGK:G11:CHIX:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 9,
+    "item_id": "THPT-G11-CHIX-B33-W03"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G11-CHIX-B31-P01"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G11-CHIX-B31-P02"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G11-CHIX-B31-P03"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G11-CHIX-B31-P04"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G11-CHIX-B31-P05"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G11-CHIX-B31-P06"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G11-CHIX-B31-P07"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G11-CHIX-B31-P08"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G11-CHIX-B31-P09"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G11-CHIX-B31-P10"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G11-CHIX-B32-P01"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G11-CHIX-B32-P02"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G11-CHIX-B32-P03"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G11-CHIX-B32-P04"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 15,
+    "item_id": "THPT-G11-CHIX-B32-P05"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 16,
+    "item_id": "THPT-G11-CHIX-B32-P06"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 17,
+    "item_id": "THPT-G11-CHIX-B32-P07"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 18,
+    "item_id": "THPT-G11-CHIX-B32-P08"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 19,
+    "item_id": "THPT-G11-CHIX-B32-P09"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 20,
+    "item_id": "THPT-G11-CHIX-B32-P10"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 21,
+    "item_id": "THPT-G11-CHIX-B32-P11"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 22,
+    "item_id": "THPT-G11-CHIX-B32-P12"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 23,
+    "item_id": "THPT-G11-CHIX-B32-P13"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 24,
+    "item_id": "THPT-G11-CHIX-B32-P14"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 25,
+    "item_id": "THPT-G11-CHIX-B32-P15"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 26,
+    "item_id": "THPT-G11-CHIX-B33-P01"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 27,
+    "item_id": "THPT-G11-CHIX-B33-P02"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 28,
+    "item_id": "THPT-G11-CHIX-B33-P03"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 29,
+    "item_id": "THPT-G11-CHIX-B33-P04"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 30,
+    "item_id": "THPT-G11-CHIX-B33-P05"
+  },
+  {
+    "collection": "SGK:G11:CHIX:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 31,
+    "item_id": "THPT-G11-CHIX-CHIX-P01"
   }
 ]
