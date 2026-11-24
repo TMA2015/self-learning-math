@@ -38,7 +38,7 @@
 
 === "Khám phá kiến thức"
 
-    Ở Bài 3, khi cho một góc \(x\), ta đọc được giá trị của \(\sin x,\cos x,\tan x,\cot x\) và hình dạng các đồ thị. Bây giờ ta làm việc **ngược lại**: biết trước một giá trị, có thể tìm mọi góc sinh ra giá trị ấy hay không? Trên đường hình sin, một đường ngang \(y=\frac12\) thường cắt đường cong ở hai chỗ trong một vòng; sang vòng tiếp theo, hai giao điểm lại xuất hiện. Vì thế một phương trình lượng giác không chỉ đòi tìm **một góc đúng**, mà phải tìm **tất cả các họ góc đúng**.
+    Ở Bài 3, khi cho một góc \(x\), ta đọc được giá trị của \(\sin x,\cos x,\tan x,\cot x\) và hình dạng các đồ thị. Bây giờ ta làm việc **ngược lại**: biết trước một giá trị, có thể tìm mọi góc sinh ra giá trị ấy hay không? Trên đồ thị hàm sin, một đường ngang \(y=\frac12\) thường cắt đường cong ở hai chỗ trong một vòng; sang vòng tiếp theo, hai giao điểm lại xuất hiện. Vì thế một phương trình lượng giác không chỉ đòi tìm **một góc đúng**, mà phải tìm **tất cả các họ góc đúng**.
 
     ### 1.1. Khái niệm phương trình tương đương
 
@@ -58,11 +58,11 @@
 
     ### 1.2. Phương trình \(\sin x=m\)
 
-    Ta bắt đầu với \(\sin x=\frac12\). Trên đường tròn lượng giác, sin là **tung độ**, nên đường ngang ở độ cao \(\frac12\) cắt đường tròn tại hai điểm: một góc \(\frac{\pi}{6}\), một góc \(\frac{5\pi}{6}\). Trên đồ thị hình sin, đó cũng là hai giao điểm của đường \(y=\frac12\) với một chu kì đồ thị.
+    Ta bắt đầu với \(\sin x=\frac12\). Trên đường tròn lượng giác, sin là **tung độ**, nên đường ngang ở độ cao \(\frac12\) cắt đường tròn tại hai điểm: một góc \(\frac{\pi}{6}\), một góc \(\frac{5\pi}{6}\). Trên đồ thị hàm sin, đó cũng là hai giao điểm của đường \(y=\frac12\) với một chu kì đồ thị.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_SIN_HALF_AUTHORING_RESET_20261123.svg" alt="Đồ thị sin với đường ngang y bằng một phần hai cắt tại hai hoành độ pi phần sáu và năm pi phần sáu"><figcaption><strong>Đọc hình:</strong> đường ngang \(y=\frac12\) cắt đồ thị \(y=\sin x\) tại \(x=\pi/6\) và \(x=5\pi/6\) trong một vòng \([0;2\pi)\). Sau mỗi \(2\pi\), hai giao điểm lặp lại, nên cần hai họ nghiệm.</figcaption></figure>
 
-    Vì sin lặp sau \(2\pi\), ta phải cộng \(2k\pi\) vào **cả hai họ nghiệm**. Với một \(m\) bất kì, việc đầu tiên là kiểm \(|m|\le1\), vì tung độ của điểm trên đường tròn đơn vị không thể vượt ngoài \([-1;1]\). Chọn góc chuẩn \(\alpha\in[-\pi/2;\pi/2]\) sao cho \(\sin\alpha=m\); hai góc cùng tung độ là \(\alpha\) và \(\pi-\alpha\), sau đó cộng \(2k\pi\).
+    Vì sin lặp sau \(2\pi\), ta phải cộng \(2k\pi\) vào **cả hai họ nghiệm**. Với một \(m\) bất kì, việc đầu tiên là kiểm \(|m|\le1\), vì tung độ của điểm trên đường tròn đơn vị không thể vượt ngoài \([-1;1]\). Chọn góc chuẩn \(\alpha\in[-\pi/2;\pi/2]\) sao cho \(\sin\alpha=m\); hai góc cùng tung độ là \(\alpha\) và \(\pi-\alpha\), sau đó cộng \(2k\pi\), \(k\in\mathbb Z\). Nếu \(m=1\) hoặc \(m=-1\), hai góc này ứng với cùng một điểm trên đường tròn, nên hai họ nghiệm trùng nhau.
 
     **Vận dụng.** Tìm tất cả \(x\in\mathbb R\) sao cho \(\sin x=-\frac12\), rồi tìm các nghiệm trong \([0;2\pi)\).
 
@@ -78,7 +78,7 @@
 
     Với cos, vị trí được đọc theo **hoành độ** của điểm trên đường tròn. Ví dụ \(\cos x=-\frac12\) là hai vị trí có cùng hoành độ âm, đối xứng qua trục hoành: \(x=2\pi/3\) và \(x=-2\pi/3\), rồi lặp sau mỗi \(2\pi\). Vì vậy dạng nghiệm của cos dùng cặp góc \(\alpha\) và \(-\alpha\), khác với cặp \(\alpha\) và \(\pi-\alpha\) của sin.
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_COS_MINUS_HALF_AUTHORING_RESET_20261123.svg" alt="Đồ thị cos với đường ngang y bằng âm một phần hai cắt tại hai hoành độ hai pi phần ba và bốn pi phần ba"><figcaption><strong>Đọc hình:</strong> trong \([0;2\pi)\), đường ngang \(y=-\frac12\) cắt đồ thị \(y=\cos x\) tại \(x=2\pi/3\) và \(x=4\pi/3\). Hai góc đối nhau theo modulo \(2\pi\): đó là lý do nghiệm cos có dạng \(x=\pm\alpha+2k\pi\).</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_COS_MINUS_HALF_AUTHORING_RESET_20261123.svg" alt="Đồ thị cos với đường ngang y bằng âm một phần hai cắt tại hai hoành độ hai pi phần ba và bốn pi phần ba"><figcaption><strong>Đọc hình:</strong> trong \([0;2\pi)\), đường ngang \(y=-\frac12\) cắt đồ thị \(y=\cos x\) tại \(x=2\pi/3\) và \(x=4\pi/3\). Hai góc \(\alpha\) và \(-\alpha\) có cùng cos; cộng các bội nguyên của \(2\pi\) để liệt kê mọi nghiệm: đó là lý do nghiệm cos có dạng \(x=\pm\alpha+2k\pi\).</figcaption></figure>
 
     Cũng như sin, nếu \(|m|>1\) thì không có nghiệm. Nếu \(|m|\le1\), chọn \(\alpha\in[0;\pi]\) sao cho \(\cos\alpha=m\), rồi lấy \(x=\pm\alpha+2k\pi\). Khi \(m=1\) hoặc \(m=-1\), các biểu thức có thể chỉ hai cách viết của cùng một họ nghiệm.
 
@@ -96,7 +96,7 @@
 
     Với tan, trên mỗi khoảng \((-\pi/2+k\pi;\pi/2+k\pi)\), đồ thị liên tục và **tăng** từ âm vô cùng đến dương vô cùng. Vì vậy bất kì đường ngang \(y=m\) nào cũng cắt **mỗi nhánh đúng một lần**. Khác sin và cos, \(m\) được phép là mọi số thực; và do tan lặp sau \(\pi\), chỉ cần **một họ nghiệm**.
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-03_R01.svg" alt="Đồ thị tan có các nhánh tăng và tiệm cận đứng"><figcaption><strong>Đọc hình:</strong> đường ngang \(y=m\) (tự hình dung, không có trên SVG) cắt mỗi nhánh tăng một lần. Các đường thẳng đứng đứt nét là nơi tan không xác định, không phải nghiệm.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-03_R01.svg" alt="Đồ thị tan có các nhánh tăng và tiệm cận đứng"><figcaption><strong>Đọc hình:</strong> hãy hình dung một đường ngang \(y=m\); đường này cắt mỗi nhánh tăng một lần. Các đường thẳng đứng đứt nét là nơi tan không xác định, không phải nghiệm.</figcaption></figure>
 
     Chọn \(\alpha\in(-\pi/2;\pi/2)\) thỏa \(\tan\alpha=m\); khi đó mọi nghiệm là \(x=\alpha+k\pi\). Nếu đối số là \(2x+\pi/6\), ta giải cho **toàn bộ đối số** trước, rồi mới chuyển về \(x\).
 
@@ -132,17 +132,17 @@
 
     Không phải lúc nào \(m\) cũng là số quen thuộc như \(\frac12\) hay \(\frac{\sqrt2}{2}\). Khi \(\sin\alpha=0{,}58\), ta dùng chức năng \(\sin^{-1}\) trên máy tính để tìm **một góc đại diện**. Trước khi bấm, phải chọn đơn vị DEG (độ) hoặc RAD (radian). Máy tính trả về một góc, **không tự liệt kê tất cả các nghiệm của phương trình**.
 
-    Với cos và tan, dùng \(\cos^{-1}\) hoặc \(\tan^{-1}\). Đừng nhầm kí hiệu \(\sin^{-1}\) trên phím với \(1/\sin x\): đây là thao tác **tìm góc** từ sin, không phải lấy nghịch đảo số học. Nếu biết \(\cot\alpha=m\), máy thông dụng không có phím cot riêng; có thể chuyển về \(\tan\alpha=1/m\) khi \(m\ne0\), rồi chọn góc phù hợp trong \((0;\pi)\).
+    Với cos và tan, dùng \(\cos^{-1}\) hoặc \(\tan^{-1}\). Đừng nhầm kí hiệu \(\sin^{-1}\) trên phím với \(1/\sin x\): đây là thao tác **tìm góc** từ sin, không phải lấy nghịch đảo số học. Nếu biết \(\cot\alpha=m\), máy thông dụng không có phím cot riêng; nếu \(m=0\), lấy \(\alpha=\pi/2\). Nếu \(m\ne0\), tính \(\beta=\tan^{-1}(1/m)\). Khi \(\beta>0\) lấy \(\alpha=\beta\); khi \(\beta<0\) lấy \(\alpha=\beta+\pi\). Trong chế độ DEG, thay \(\pi/2,\pi\) lần lượt bằng \(90^\circ,180^\circ\).
 
-    **Vận dụng.** Dùng chế độ RAD hoặc phép tính gần đúng, xác định một góc \(\alpha\in[-\pi/2;\pi/2]\) thỏa \(\sin\alpha=0{,}5\). Nếu đang ở DEG, máy sẽ hiện số gần bằng bao nhiêu?
+    **Vận dụng.** Dùng chức năng \(\sin^{-1}\) (thường là SHIFT rồi sin), chọn RAD để tìm góc \(\alpha\in[-\pi/2;\pi/2]\) thỏa \(\sin\alpha=0{,}58\). Làm tròn đến bốn chữ số thập phân; đổi sang DEG và làm tròn đến hai chữ số thập phân.
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** \(\alpha=\pi/6\approx0{,}5236\) rad. Ở chế độ DEG, máy hiển thị \(30^\circ\). Một kết quả khác đơn vị **không phải** một góc khác; \(\pi/6\) rad chính là \(30^\circ\).
+        **Lời giải:** \(\alpha=\sin^{-1}(0{,}58)\approx0{,}6187\) rad. Ở chế độ DEG, \(\alpha\approx35{,}45^\circ\). Hai kết quả gần đúng mô tả cùng một góc; giữ thêm chữ số trong phép tính trung gian và chỉ làm tròn ở cuối.
 
     ??? tip "Kiểm lỗi"
 
-        Nếu máy báo \(30\) nhưng em lại viết \(30\) rad, nguyên nhân là quên chế độ đo. Nếu bài hỏi **mọi** nghiệm \(\sin x=0{,}5\), vẫn phải viết hai họ \(\pi/6+2k\pi\) và \(5\pi/6+2k\pi\).
+        Nếu máy báo gần \(35{,}45\) nhưng em lại viết rad, nguyên nhân là quên chế độ đo. Nếu bài hỏi **mọi** nghiệm \(\sin x=0{,}58\), vẫn phải viết hai họ \(\alpha+2k\pi\) và \(\pi-\alpha+2k\pi\), \(k\in\mathbb Z\), với \(\alpha=\sin^{-1}(0{,}58)\) trong RAD.
 
 === "Kiến thức SGK"
 
@@ -168,7 +168,7 @@
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức nghiệm — Phương trình cos</strong><p><strong>Điều kiện có nghiệm:</strong> \(|m|\le1\). Nếu \(|m|>1\), phương trình vô nghiệm.</p><p>Khi \(|m|\le1\), lấy duy nhất \(\alpha\in[0;\pi]\) sao cho \(\cos\alpha=m\). Khi đó</p><p>\(\cos x=m\iff x=\pm\alpha+2k\pi,\quad k\in\mathbb Z.\)</p><p><strong>Dạng so hai cos:</strong> \(\cos u=\cos v\iff u=\pm v+2k\pi,\ k\in\mathbb Z\).</p></div>
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_COS_MINUS_HALF_AUTHORING_RESET_20261123.svg" alt="Hai giao điểm của y bằng cos x và đường ngang y bằng âm một phần hai"><figcaption><strong>Tra hình khi đọc công thức:</strong> hai giao điểm trong một vòng minh họa cặp nghiệm đối nhau theo modulo \(2\pi\), tương ứng \(x=\pm\alpha+2k\pi\). Hình dùng chung với tab Khám phá.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_COS_MINUS_HALF_AUTHORING_RESET_20261123.svg" alt="Hai giao điểm của y bằng cos x và đường ngang y bằng âm một phần hai"><figcaption><strong>Tra hình khi đọc công thức:</strong> hai giao điểm trong một vòng minh họa hai góc đối nhau \(\alpha,-\alpha\) sau khi cộng bội nguyên của \(2\pi\), tương ứng \(x=\pm\alpha+2k\pi\). Hình dùng chung với tab Khám phá.</figcaption></figure>
 
     **Chú ý:** \(\cos x=0\iff x=\pi/2+k\pi\); \(\cos x=1\iff x=2k\pi\); \(\cos x=-1\iff x=\pi+2k\pi\). Với đơn vị độ, dùng \(360^\circ\) thay \(2\pi\).
 
@@ -188,7 +188,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Sử dụng máy tính cầm tay</strong><p><strong>Bước 1:</strong> chọn đúng DEG hoặc RAD theo yêu cầu.</p><p><strong>Bước 2:</strong> với \(m\in[-1;1]\) chọn \(\sin^{-1}(m)\) hoặc \(\cos^{-1}(m)\); với \(m\in\mathbb R\) chọn \(\tan^{-1}(m)\). Chỉ lấy kết quả trong nhánh giá trị góc đại diện của từng phím.</p><p><strong>Bước 3:</strong> nếu cần nghiệm phương trình, dùng công thức nghiệm của mục 2.2–2.5 để viết <strong>đầy đủ các họ nghiệm</strong>, rồi lọc theo đoạn nếu có.</p></div>
 
-    **Miền góc đại diện:** \(\sin^{-1}(m)\in[-\pi/2;\pi/2]\), \(\cos^{-1}(m)\in[0;\pi]\), \(\tan^{-1}(m)\in(-\pi/2;\pi/2)\) trong chế độ RAD. Với cot, dùng tỉ số \(\cos/\sin\) và chọn \(\alpha\in(0;\pi)\), không mặc định bấm \(\tan^{-1}(1/m)\) là đã có góc chuẩn đúng cho mọi dấu.
+    **Miền góc đại diện:** \(\sin^{-1}(m)\in[-\pi/2;\pi/2]\), \(\cos^{-1}(m)\in[0;\pi]\), \(\tan^{-1}(m)\in(-\pi/2;\pi/2)\) trong chế độ RAD. Với cot, khi \(m=0\) lấy \(\alpha=\pi/2\); khi \(m\ne0\) bấm \(\beta=\tan^{-1}(1/m)\), lấy \(\alpha=\beta\) nếu \(\beta>0\), hoặc \(\alpha=\beta+\pi\) nếu \(\beta<0\). Trong DEG, dùng \(90^\circ\) và \(180^\circ\) thay cho \(\pi/2\) và \(\pi\).
 
     **Ghi nhớ khi tự học:** Một số trên màn hình là <strong>một góc đại diện</strong>, không phải toàn bộ tập nghiệm. Phải kiểm miền giá trị của sin/cos, điều kiện tan/cot, chế độ DEG/RAD và số nguyên \(k\).
 
