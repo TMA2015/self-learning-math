@@ -1228,5 +1228,148 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B18-KFT01",
+    "content_version": "SOURCE_BLOB_fd7d7a33ec276c4e03c95185c5ea49b53643b584",
+    "stem": "1. Vì sao `4^{-1}` là `1/4`, không phải `−4`?\n2. `27^{2/3}` bằng bao nhiêu, tại sao?\n3. Trong `P(t)=500(1,06)^t`, yếu tố `1,06` có ý nghĩa gì? Nếu số tiền được cập nhật hằng năm, t nên là số nguyên hay số thực?",
+    "answer_key": null,
+    "worked_solution": "<strong>Tự đối chiếu sau khi thử:</strong> (1) giảm số mũ một đơn vị tương ứng chia cho 4; (2) <code>(³√27)²=9</code>; (3) hệ số tăng 6% mỗi năm, với cập nhật mỗi năm dùng t nguyên không âm; dùng t thực cần mô hình phù hợp.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd7d7a33ec276c4e03c95185c5ea49b53643b584",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md",
+        "blob": "fd7d7a33ec276c4e03c95185c5ea49b53643b584",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 52,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B19-KFT01",
+    "content_version": "SOURCE_BLOB_f872e9f19e28467e1b6ea11a943e04a2edf3b266_AUTHORING_ANSWER_DRAFT",
+    "stem": "Nếu `log₅125=3`, em phát biểu lại một đẳng thức lũy thừa. Giải thích vì sao `log₄0` vô nghĩa và vì sao `log₂(4+4)` không bằng `log₂4+log₂4` (kiểm `log₂8=3`, vế sau 4).",
+    "answer_key": "5³=125; log₄0 không xác định; log₂(4+4)=3≠4.",
+    "worked_solution": "Theo định nghĩa logarit, log₅125=3 tương đương 5³=125. Với cơ số 4>0, 4^x>0 với mọi x thực nên không có x để 4^x=0. Vì 4+4=8, log₂8=3; còn log₂4+log₂4=2+2=4. Quy tắc cộng logarit áp dụng cho tích hai đối số dương, không áp dụng cho tổng.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f872e9f19e28467e1b6ea11a943e04a2edf3b266",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md",
+        "blob": "f872e9f19e28467e1b6ea11a943e04a2edf3b266",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 35,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-CHVI-B19-C01",
+        "THPT-G11-CHVI-B19-C03"
+      ],
+      "distinct_task_reason": "First part uses same logarithm but asks inverse power equality; other parts log4(0) and invalid sum rule not covered by whole existing item. One check already in stem.",
+      "answer_origin": "AUTHORING_DRAFT_NOT_LEGACY_SOURCE_ANSWER",
+      "legacy_reveal": "Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B20-KFT01",
+    "content_version": "SOURCE_BLOB_1587f399e7ea9557a9fc490768c589991f25dcb0_AUTHORING_ANSWER_DRAFT",
+    "stem": "Vì sao `y=3^x` không thể bằng −5? Nếu `log₂8=3`, hãy tìm hai điểm tương ứng trên hai đồ thị. Vì sao `log_{1/2}x` nghịch biến?",
+    "answer_key": "3^x>0; (3;8) trên y=2^x và (8;3) trên y=log₂x; log₁/₂x nghịch biến trên (0;+∞).",
+    "worked_solution": "Hàm mũ cơ số 3 luôn dương nên không nhận giá trị −5. Từ log₂8=3 suy ra 2³=8, hai đồ thị hàm ngược đổi chỗ tọa độ. Vì 0<1/2<1, hàm (1/2)^x nghịch biến; hàm ngược log₁/₂x cũng nghịch biến trên miền x>0.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1587f399e7ea9557a9fc490768c589991f25dcb0",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md",
+        "blob": "1587f399e7ea9557a9fc490768c589991f25dcb0",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 33,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NOT_LEGACY_SOURCE_ANSWER",
+      "legacy_reveal": "Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B21-KFT01",
+    "content_version": "SOURCE_BLOB_b7fb59866ce1b250e446cb957d975e7c58d037bb_AUTHORING_ANSWER_DRAFT",
+    "stem": "Giải thích vì sao `(1/2)^x> (1/2)^3` cho `x<3`, không phải x>3. Nếu `log₂(x−1)=3`, vì sao trước tiên cần x>1?",
+    "answer_key": "x<3; điều kiện x>1.",
+    "worked_solution": "Hàm (1/2)^x nghịch biến, nên bất đẳng thức giữa hai giá trị đảo chiều khi so sánh số mũ: x<3. Logarit log₂(x−1) có nghĩa khi x−1>0, tức x>1; phải kiểm điều kiện trước khi chuyển sang x−1=2³.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b7fb59866ce1b250e446cb957d975e7c58d037bb",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md",
+        "blob": "b7fb59866ce1b250e446cb957d975e7c58d037bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 37,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NOT_LEGACY_SOURCE_ANSWER",
+      "legacy_reveal": "Đối chiếu lập luận của em với kiến thức và ví dụ D2 dưới đây. Hoạt động này không ghi Skill Mastery."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
