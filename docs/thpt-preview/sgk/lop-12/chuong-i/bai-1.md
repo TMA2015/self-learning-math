@@ -99,11 +99,11 @@
 
     ### 2.1. Tính đơn điệu của hàm số
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Đồng biến, nghịch biến</strong><p>Giả sử \(K\) là một khoảng, đoạn hoặc nửa khoảng và \(f\) xác định trên \(K\). Với mọi \(x_1,x_2\in K\), nếu \(x_1&lt;x_2\) luôn kéo theo \(f(x_1)&lt;f(x_2)\) thì \(f\) đồng biến trên \(K\); nếu luôn kéo theo \(f(x_1)&gt;f(x_2)\) thì \(f\) nghịch biến trên \(K\). Hai trường hợp gọi chung là đơn điệu trên \(K\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Đồng biến, nghịch biến</strong><p>Giả sử \(K\) là một khoảng, đoạn hoặc nửa khoảng và \(f\) xác định trên \(K\). Với mọi \(x_1,x_2\in K\), nếu \(x_1\lt x_2\) luôn kéo theo \(f(x_1)\lt f(x_2)\) thì \(f\) đồng biến trên \(K\); nếu luôn kéo theo \(f(x_1)\gt f(x_2)\) thì \(f\) nghịch biến trên \(K\). Hai trường hợp gọi chung là đơn điệu trên \(K\).</p></div>
 
-    **Đọc đồ thị:** từ trái sang phải, đồ thị đi lên khi hàm đồng biến, đi xuống khi hàm nghịch biến. Khi đề không chỉ rõ tập \(K\), xét trên tập xác định của hàm số. Tuy nhiên, quy tắc đạo hàm dưới đây áp dụng trên từng khoảng; không tự động gộp các khoảng rời nhau.
+    **Đọc đồ thị:** từ trái sang phải, đồ thị đi lên khi hàm đồng biến, đi xuống khi hàm nghịch biến. Khi đề yêu cầu tìm các khoảng đơn điệu, hãy bắt đầu từ tập xác định rồi xét từng khoảng thích hợp. Nếu tập xác định bị tách thành nhiều khoảng, không gộp chúng thành một khoảng đơn điệu chỉ vì đạo hàm cùng dấu. Muốn khẳng định đơn điệu trên một tập cụ thể, phải kiểm điều kiện so sánh trong định nghĩa.
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lí — Dấu đạo hàm và tính đơn điệu</strong><p>Cho hàm số \(f\) có đạo hàm trên khoảng \(K\). Nếu \(f'(x)&gt;0\) với mọi \(x\in K\) thì \(f\) đồng biến trên \(K\). Nếu \(f'(x)&lt;0\) với mọi \(x\in K\) thì \(f\) nghịch biến trên \(K\).</p><p>Nếu \(f'(x)\ge0\) (tương ứng \(\le0\)) trên \(K\), chỉ bằng \(0\) tại hữu hạn điểm của \(K\), thì \(f\) vẫn đồng biến (tương ứng nghịch biến) trên \(K\). Nếu \(f'(x)=0\) tại mọi điểm của \(K\), hàm số không đổi trên \(K\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lí — Dấu đạo hàm và tính đơn điệu</strong><p>Cho hàm số \(f\) có đạo hàm trên khoảng \(K\). Nếu \(f'(x)\gt 0\) với mọi \(x\in K\) thì \(f\) đồng biến trên \(K\). Nếu \(f'(x)\lt 0\) với mọi \(x\in K\) thì \(f\) nghịch biến trên \(K\).</p><p>Nếu \(f'(x)\ge0\) (tương ứng \(\le0\)) trên \(K\), chỉ bằng \(0\) tại hữu hạn điểm của \(K\), thì \(f\) vẫn đồng biến (tương ứng nghịch biến) trên \(K\). Nếu \(f'(x)=0\) tại mọi điểm của \(K\), hàm số không đổi trên \(K\).</p></div>
 
     **Các bước xét tính đơn điệu:**
 
@@ -120,9 +120,9 @@
 
     ### 2.2. Cực trị của hàm số
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Cực đại, cực tiểu</strong><p>Cho hàm số \(f\) xác định trên khoảng \((a;b)\) chứa \(x_0\). Nếu tồn tại \(h&gt;0\) sao cho \((x_0-h;x_0+h)\subset(a;b)\) và \(f(x)&lt;f(x_0)\) với mọi \(x\) trong lân cận ấy, \(x\ne x_0\), thì hàm đạt cực đại tại \(x_0\). Nếu \(f(x)&gt;f(x_0)\) với mọi \(x\) như trên thì hàm đạt cực tiểu tại \(x_0\).</p><p>\(x_0\) là điểm cực trị của hàm số, \(f(x_0)\) là giá trị cực trị; \(M(x_0;f(x_0))\) là điểm cực trị của đồ thị. Kí hiệu giá trị cực đại \(y_{CĐ}\), giá trị cực tiểu \(y_{CT}\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Cực đại, cực tiểu</strong><p>Cho hàm số \(f\) xác định trên khoảng \((a;b)\) chứa \(x_0\). Nếu tồn tại \(h\gt 0\) sao cho \((x_0-h;x_0+h)\subset(a;b)\) và \(f(x)\lt f(x_0)\) với mọi \(x\) trong lân cận ấy, \(x\ne x_0\), thì hàm đạt cực đại tại \(x_0\). Nếu \(f(x)\gt f(x_0)\) với mọi \(x\) như trên thì hàm đạt cực tiểu tại \(x_0\).</p><p>\(x_0\) là điểm cực trị của hàm số, \(f(x_0)\) là giá trị cực trị; \(M(x_0;f(x_0))\) là điểm cực trị của đồ thị. Kí hiệu giá trị cực đại \(y_{CĐ}\), giá trị cực tiểu \(y_{CT}\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Tìm cực trị bằng dấu đạo hàm</strong><p>Giả sử \(f\) liên tục trên khoảng \((a;b)\) chứa \(x_0\), có đạo hàm trên \((a;x_0)\) và \((x_0;b)\). Nếu \(f'&gt;0\) trên khoảng bên trái, \(f'&lt;0\) trên khoảng bên phải thì \(x_0\) là điểm cực đại. Nếu \(f'&lt;0\) bên trái và \(f'&gt;0\) bên phải thì \(x_0\) là điểm cực tiểu.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Tìm cực trị bằng dấu đạo hàm</strong><p>Giả sử \(f\) liên tục trên khoảng \((a;b)\) chứa \(x_0\), có đạo hàm trên \((a;x_0)\) và \((x_0;b)\). Nếu \(f'\gt 0\) trên khoảng bên trái, \(f'\lt 0\) trên khoảng bên phải thì \(x_0\) là điểm cực đại. Nếu \(f'\lt 0\) bên trái và \(f'\gt 0\) bên phải thì \(x_0\) là điểm cực tiểu.</p></div>
 
     | Dấu \(f'\) bên trái \(x_0\) | Dấu \(f'\) bên phải \(x_0\) | Chiều biến thiên qua \(x_0\) | Kết luận (theo giả thiết trên) |
     | :--: | :--: | :--: | :-- |
