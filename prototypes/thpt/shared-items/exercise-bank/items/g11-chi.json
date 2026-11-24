@@ -1450,5 +1450,434 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-KFT02",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "stem": "Biết \\(\\cos a=-\\dfrac5{13}\\) và \\(\\dfrac{\\pi}{2}<a<\\pi\\). Tìm \\(\\sin2a\\) và \\(\\cos2a\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Vì \\(a\\) ở góc phần tư II nên \\(\\sin a>0\\). Từ hệ thức cơ bản, \\(\\sin a=\\sqrt{1-\\frac{25}{169}}=\\frac{12}{13}\\). Do đó\n\n\\[\n\\sin2a=2\\cdot\\frac{12}{13}\\cdot\\left(-\\frac5{13}\\right)=-\\frac{120}{169},\n\\qquad\n\\cos2a=2\\left(-\\frac5{13}\\right)^2-1=-\\frac{119}{169}.\n\\]\n\n**Kiểm lại:** \\(\\dfrac{120^2+119^2}{169^2}=1\\), phù hợp hệ thức \\(\\sin^22a+\\cos^22a=1\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+      "heading_id": "Vận dụng #2",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md",
+        "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #2",
+      "line": 88,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-KFT03",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "stem": "Không dùng máy tính, tính \\(2\\cos75^\\circ\\cos45^\\circ\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Từ công thức \\(2\\cos a\\cos b=\\cos(a-b)+\\cos(a+b)\\), ta có\n\n\\[\n2\\cos75^\\circ\\cos45^\\circ\n=\\cos30^\\circ+\\cos120^\\circ\n=\\frac{\\sqrt3}{2}-\\frac12\n=\\frac{\\sqrt3-1}{2}.\n\\]\n\n**Kiểm lại:** Cả \\(\\cos75^\\circ\\) và \\(\\cos45^\\circ\\) đều dương nên tích phải dương, đúng với kết quả.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+      "heading_id": "Vận dụng #3",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md",
+        "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #3",
+      "line": 120,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-KFT04",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "stem": "Không dùng máy tính, tính \\(\\sin75^\\circ-\\sin15^\\circ\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Dùng \\(\\sin u-\\sin v=2\\cos\\dfrac{u+v}{2}\\sin\\dfrac{u-v}{2}\\):\n\n\\[\n\\sin75^\\circ-\\sin15^\\circ\n=2\\cos45^\\circ\\sin30^\\circ\n=\\frac{\\sqrt2}{2}.\n\\]\n\n**Kiểm lại:** \\(\\sin75^\\circ>\\sin15^\\circ\\), nên hiệu phải dương. Nửa tổng bằng \\(45^\\circ\\), nửa hiệu bằng \\(30^\\circ\\), không phải \\(90^\\circ\\) và \\(60^\\circ\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+      "heading_id": "Vận dụng #4",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md",
+        "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #4",
+      "line": 155,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-KFT05",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "stem": "Hai tín hiệu được mô tả bởi \\(y_1(t)=\\sin(800\\pi t)\\) và \\(y_2(t)=\\sin(880\\pi t)\\), trong đó \\(t\\) tính bằng giây. Viết \\(y(t)=y_1(t)+y_2(t)\\) thành một tích, rồi cho biết vì sao chưa thể coi đó là một sóng sin duy nhất có biên độ không đổi.",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Lấy \\(u=800\\pi t\\), \\(v=880\\pi t\\). Khi đó \\((u+v)/2=840\\pi t\\), \\((u-v)/2=-40\\pi t\\). Vì cos là hàm chẵn,\n\n\\[\ny(t)=2\\sin(840\\pi t)\\cos(40\\pi t).\n\\]\n\nHệ số \\(2\\cos(40\\pi t)\\) **thay đổi theo thời gian**, nên không phải một biên độ cố định. Hai cách viết vẫn mô tả cùng một tín hiệu tổng hợp.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+      "heading_id": "Vận dụng #5",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md",
+        "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #5",
+      "line": 183,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-KFT01",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "stem": "Tại \\(x=0\\) và \\(x=\\pi/2\\), hãy xác định những hàm nào trong sin, cos, tan, cot có giá trị; nếu có thì giá trị bằng bao nhiêu?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Với \\(x=0\\): \\(\\sin0=0,\\ \\cos0=1,\\ \\tan0=0\\), còn \\(\\cot0\\) không xác định vì mẫu \\(\\sin0=0\\). Với \\(x=\\pi/2\\): \\(\\sin(\\pi/2)=1,\\ \\cos(\\pi/2)=0,\\ \\cot(\\pi/2)=0\\), còn \\(\\tan(\\pi/2)\\) không xác định vì mẫu \\(\\cos(\\pi/2)=0\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+      "heading_id": "Vận dụng #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md",
+        "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #1",
+      "line": 48,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-KFT02",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "stem": "Xét \\(f(x)=x\\sin x\\) trên \\(\\mathbb R\\): hàm chẵn hay lẻ? Hàm hằng \\(g(x)=2\\) trên \\(\\mathbb R\\) có chu kì dương nhỏ nhất không?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** \\(f(-x)=(-x)\\sin(-x)=x\\sin x=f(x)\\), nên \\(f\\) chẵn. Với \\(g(x)=2\\), mọi \\(T>0\\) đều thỏa \\(g(x+T)=g(x)\\), nên hàm tuần hoàn nhưng không có số dương nhỏ nhất thỏa điều kiện; do đó **không có chu kì** theo định nghĩa SGK.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+      "heading_id": "Vận dụng #2",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md",
+        "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #2",
+      "line": 66,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-KFT04",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "stem": "Trên \\([0;2\\pi]\\), tìm các \\(x\\) sao cho \\(\\cos x<0\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Đồ thị cos nằm dưới trục hoành đúng khi \\(x\\in(\\pi/2;3\\pi/2)\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+      "heading_id": "Vận dụng #4",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md",
+        "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #4",
+      "line": 102,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-KFT05",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "stem": "Trên \\((-\\pi/2;\\pi/2)\\), tìm tập nghiệm \\(\\tan x\\ge0\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Nhánh đi qua \\(O\\), nằm dưới trục hoành khi \\(x<0\\) và trên trục hoành khi \\(x>0\\). Vậy \\(x\\in[0;\\pi/2)\\). Không lấy \\(\\pi/2\\) vì hàm không xác định.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+      "heading_id": "Vận dụng #5",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md",
+        "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #5",
+      "line": 120,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-KFT06",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "stem": "Trên \\((0;\\pi)\\), khi nào \\(\\cot x<0\\)?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Trên \\((0;\\pi/2)\\), \\(\\sin x,\\cos x\\) đều dương, nên cot dương. Trên \\((\\pi/2;\\pi)\\), sin dương, cos âm, nên cot âm. Tập cần tìm là \\((\\pi/2;\\pi)\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+      "heading_id": "Vận dụng #6",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md",
+        "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #6",
+      "line": 138,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-KFT01",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "stem": "Hai phương trình \\(x-3=0\\) và \\((x-3)^2=0\\) có tương đương không? Còn hai phương trình \\(\\dfrac{x-1}{x+1}=0\\) và \\(x^2-1=0\\)?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Hai phương trình thứ nhất đều có tập nghiệm \\(\\{3\\}\\), nên tương đương. Phương trình phân thức có điều kiện \\(x\\ne-1\\) và nghiệm \\(x=1\\), còn \\(x^2-1=0\\) có nghiệm \\(x=\\pm1\\); hai phương trình sau không tương đương.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+      "heading_id": "Vận dụng #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
+        "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #1",
+      "line": 49,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-KFT04",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "stem": "Giải \\(\\tan(2x)=1\\) trên \\(\\mathbb R\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** \\(\\tan(2x)=\\tan(\\pi/4)\\), nên \\(2x=\\pi/4+k\\pi\\). Suy ra \\(x=\\pi/8+k\\pi/2\\), \\(k\\in\\mathbb Z\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+      "heading_id": "Vận dụng #4",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
+        "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #4",
+      "line": 103,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-KFT05",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "stem": "Giải \\(\\cot x=-1\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Vì \\(\\cot(3\\pi/4)=-1\\), nghiệm là \\(x=3\\pi/4+k\\pi\\), \\(k\\in\\mathbb Z\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+      "heading_id": "Vận dụng #5",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
+        "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #5",
+      "line": 121,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-KFT06",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "stem": "Dùng chế độ RAD hoặc phép tính gần đúng, xác định một góc \\(\\alpha\\in[-\\pi/2;\\pi/2]\\) thỏa \\(\\sin\\alpha=0{,}5\\). Nếu đang ở DEG, máy sẽ hiện số gần bằng bao nhiêu?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** \\(\\alpha=\\pi/6\\approx0{,}5236\\) rad. Ở chế độ DEG, máy hiển thị \\(30^\\circ\\). Một kết quả khác đơn vị **không phải** một góc khác; \\(\\pi/6\\) rad chính là \\(30^\\circ\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+      "heading_id": "Vận dụng #6",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
+        "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #6",
+      "line": 137,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
