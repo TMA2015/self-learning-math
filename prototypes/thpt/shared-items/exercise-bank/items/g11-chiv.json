@@ -1,0 +1,902 @@
+[
+  {
+    "item_id": "THPT-G11-CHIV-B10-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Hai điểm phân biệt A,B thuộc (P). Có chắc AB nằm trong (P) không?",
+    "answer_key": "Có, AB⊂(P).",
+    "worked_solution": "Theo tiên đề: nếu hai điểm phân biệt của một đường thuộc mặt phẳng thì đường đó nằm trong mặt phẳng.",
+    "skill_ids": [
+      "G11-B10-INCIDENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-C01 · SGK_CORE · `skill_id=G11-B10-INCIDENCE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Ba điểm A,B,C thẳng hàng có xác định duy nhất một mặt phẳng không?",
+    "answer_key": "Không.",
+    "worked_solution": "Vô số mặt phẳng chứa đường AB; cần ba điểm không thẳng hàng.",
+    "skill_ids": [
+      "G11-B10-PLANE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-C02 · SGK_CORE · `skill_id=G11-B10-PLANE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện S.ABC, giao tuyến (SAB) và (SAC) là đường nào?",
+    "answer_key": "SA.",
+    "worked_solution": "Hai mặt phẳng phân biệt cùng có S,A; giao tuyến là SA.",
+    "skill_ids": [
+      "G11-B10-PLANE_INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-P01 · SGK_PRACTICE · `skill_id=G11-B10-PLANE_INTERSECTION`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện S.ABC, M nằm trong cạnh SB. Giao của CM với (SAB) là gì?",
+    "answer_key": "M.",
+    "worked_solution": "Vì M∈SB⊂(SAB) và C không nằm trong (SAB), đường CM gặp mặt tại M.",
+    "skill_ids": [
+      "G11-B10-LINE_PLANE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-P02 · SGK_PRACTICE · `skill_id=G11-B10-LINE_PLANE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Cho đường a và A∉a. Có bao nhiêu mặt phẳng chứa a và A?",
+    "answer_key": "Đúng một.",
+    "worked_solution": "Đường thẳng và một điểm ngoài nó xác định duy nhất một mặt phẳng.",
+    "skill_ids": [
+      "G11-B10-PLANE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-P03 · SGK_PRACTICE · `skill_id=G11-B10-PLANE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B10-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện S.ABC, M,N,K là điểm bên trong SA,SB,SC. Thiết diện bởi (MNK) là đa giác nào?",
+    "answer_key": "Tam giác MNK.",
+    "worked_solution": "(MNK) cắt từng mặt bên theo MN,NK,KM; các điểm thuộc các cạnh tam giác đầu trên.",
+    "skill_ids": [
+      "G11-B10-SECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 10 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B10-P04 · SGK_PRACTICE · `skill_id=G11-B10-SECTION`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Hai đường thẳng khác nhau không cắt nhau trong không gian chắc chắn song song?",
+    "answer_key": "Không.",
+    "worked_solution": "Chúng có thể chéo nhau nếu không cùng nằm trong một mặt phẳng.",
+    "skill_ids": [
+      "G11-B11-RELATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-C01 · SGK_CORE · `skill_id=G11-B11-RELATIVE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong hình bình hành ABCD, AB và CD có quan hệ nào?",
+    "answer_key": "Song song.",
+    "worked_solution": "Hai cạnh đối phân biệt, đồng phẳng, không giao nhau.",
+    "skill_ids": [
+      "G11-B11-COPLANAR"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-C02 · SGK_CORE · `skill_id=G11-B11-COPLANAR`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện S.ABC, SA và BC có quan hệ nào?",
+    "answer_key": "Chéo nhau.",
+    "worked_solution": "Nếu cùng mặt phẳng thì bốn đỉnh đồng phẳng, trái tứ diện; chúng không cắt nhau.",
+    "skill_ids": [
+      "G11-B11-RELATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-P01 · SGK_PRACTICE · `skill_id=G11-B11-RELATIVE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tam giác SAB, M,N lần lượt trung điểm SA,SB. Chứng minh MN và AB có quan hệ nào.",
+    "answer_key": "MN∥AB.",
+    "worked_solution": "Định lý đường trung bình trong tam giác SAB; M,N,AB thuộc cùng (SAB).",
+    "skill_ids": [
+      "G11-B11-PARALLEL_PROOF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-P02 · SGK_PRACTICE · `skill_id=G11-B11-PARALLEL_PROOF`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong hình chóp S.ABCD đáy ABCD hình bình hành, SA và CD song song hay chéo nhau?",
+    "answer_key": "Chéo nhau.",
+    "worked_solution": "SA không thuộc mặt đáy, CD nằm đáy; chúng không cắt và không đồng phẳng vì mặt qua SA và CD sẽ chứa S,A,C,D khiến S nằm đáy.",
+    "skill_ids": [
+      "G11-B11-RELATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-P03 · SGK_PRACTICE · `skill_id=G11-B11-RELATIVE`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B11-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Nếu a∥b và b∥c, có thể kết luận a∥c ngay khi chưa biết a≠c không?",
+    "answer_key": "Chưa.",
+    "worked_solution": "a và c cùng phương; nếu trùng nhau thì không gọi hai đường phân biệt song song. Nêu thêm a≠c.",
+    "skill_ids": [
+      "G11-B11-PARALLEL_PROOF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 11 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B11-P04 · SGK_PRACTICE · `skill_id=G11-B11-PARALLEL_PROOF`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Một đường a nằm trong (P) có được gọi là a∥(P) theo định nghĩa không?",
+    "answer_key": "Không.",
+    "worked_solution": "a có vô số điểm chung với (P); a∥(P) yêu cầu không có điểm chung.",
+    "skill_ids": [
+      "G11-B12-POSITIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-C01 · SGK_CORE · `skill_id=G11-B12-POSITIONS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Điều kiện còn thiếu: a∥b, b⊂(P) suy ra a∥(P) khi ...?",
+    "answer_key": "a không nằm trong (P).",
+    "worked_solution": "Nếu a⊂(P), kết luận sai; cần a⊄(P).",
+    "skill_ids": [
+      "G11-B12-PARALLEL_TEST"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-C02 · SGK_CORE · `skill_id=G11-B12-PARALLEL_TEST`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong hình chóp S.ABC, M,N là trung điểm SA,SB. Chứng minh MN∥(ABC).",
+    "answer_key": "MN∥(ABC).",
+    "worked_solution": "MN∥AB theo đường trung bình, AB⊂(ABC), MN không thuộc đáy.",
+    "skill_ids": [
+      "G11-B12-PARALLEL_TEST"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-P01 · SGK_PRACTICE · `skill_id=G11-B12-PARALLEL_TEST`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong tứ diện S.ABC, đường SA và mặt (ABC) có vị trí tương đối nào?",
+    "answer_key": "Cắt nhau tại A.",
+    "worked_solution": "S không thuộc đáy, A thuộc đáy, nên giao duy nhất A.",
+    "skill_ids": [
+      "G11-B12-POSITIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-P02 · SGK_PRACTICE · `skill_id=G11-B12-POSITIONS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Cho d∥(P), d⊂(Q), (Q)∩(P)=e. Quan hệ d,e?",
+    "answer_key": "d∥e.",
+    "worked_solution": "Cùng thuộc (Q) và không giao: nếu d giao e thì d gặp (P), mâu thuẫn.",
+    "skill_ids": [
+      "G11-B12-PLANE_INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-P03 · SGK_PRACTICE · `skill_id=G11-B12-PLANE_INTERSECTION`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B12-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Hình chóp S.ABCD đáy hình bình hành. M,N trung điểm SA,SB. MN∥(ABCD) nhưng MN có nằm trong (ABCD) không?",
+    "answer_key": "Không.",
+    "worked_solution": "M,N thuộc các cạnh bên phía trên đáy; MN∥AB⊂đáy và không nằm đáy.",
+    "skill_ids": [
+      "G11-B12-CONSTRUCTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 12 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B12-P04 · SGK_PRACTICE · `skill_id=G11-B12-CONSTRUCTION`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Hai mặt phẳng phân biệt không có điểm chung gọi là gì?",
+    "answer_key": "Hai mặt phẳng song song.",
+    "worked_solution": "Định nghĩa song song giữa hai mặt phẳng phân biệt.",
+    "skill_ids": [
+      "G11-B13-PLANE_POSITIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-C01 · SGK_CORE · `skill_id=G11-B13-PLANE_POSITIONS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong (P), a và b cắt nhau, cả a,b song song (Q). Có thể suy ra gì?",
+    "answer_key": "(P)∥(Q).",
+    "worked_solution": "Dấu hiệu hai mặt phẳng song song qua hai đường cắt nhau trong cùng (P).",
+    "skill_ids": [
+      "G11-B13-PLANE_TEST"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-C02 · SGK_CORE · `skill_id=G11-B13-PLANE_TEST`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "(P)∥(Q), (R) cắt cả hai theo d,e. Quan hệ d,e?",
+    "answer_key": "d∥e.",
+    "worked_solution": "Hai giao tuyến cùng nằm trong (R), phân biệt, không giao nhau do (P),(Q) không giao.",
+    "skill_ids": [
+      "G11-B13-TRANSVERSAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-P01 · SGK_PRACTICE · `skill_id=G11-B13-TRANSVERSAL`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong (P) chỉ có một đường a∥(Q). Có đủ khẳng định (P)∥(Q) không?",
+    "answer_key": "Không.",
+    "worked_solution": "Hai mặt phẳng cắt nhau vẫn có thể chứa đường a song song giao tuyến và không gặp (Q). Cần hai đường cắt nhau.",
+    "skill_ids": [
+      "G11-B13-PLANE_TEST"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-P02 · SGK_PRACTICE · `skill_id=G11-B13-PLANE_TEST`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong chóp S.ABC, M,N,K cùng tỉ số SM/SA=SN/SB=SK/SC=1/3. Có (MNK)∥(ABC) không?",
+    "answer_key": "Có.",
+    "worked_solution": "Theo các đường trung bình tổng quát MN∥AB, MK∥AC; cả hai cắt nhau trong (MNK), suy hai mặt song song.",
+    "skill_ids": [
+      "G11-B13-PRISM_RATIO"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-P03 · SGK_PRACTICE · `skill_id=G11-B13-PRISM_RATIO`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B13-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong cùng chóp, mặt cắt song song đáy có tỉ số cạnh 2/3. Tỉ số diện tích thiết diện/đáy?",
+    "answer_key": "4/9.",
+    "worked_solution": "Hai tam giác đồng dạng nên tỉ số diện tích bằng bình phương 2/3.",
+    "skill_ids": [
+      "G11-B13-PRISM_RATIO"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 13 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B13-P04 · SGK_PRACTICE · `skill_id=G11-B13-PRISM_RATIO`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-C01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Phương chiếu Δ có thể song song mặt phẳng chiếu (P) không?",
+    "answer_key": "Không.",
+    "worked_solution": "Nếu song song, đường qua M cùng hướng có thể không gặp (P), ảnh M không xác định với mọi M.",
+    "skill_ids": [
+      "G11-B14-PROJECTION_DEF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-C01 · SGK_CORE · `skill_id=G11-B14-PROJECTION_DEF`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-C02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Phép chiếu song song có giữ mọi số đo góc không?",
+    "answer_key": "Không.",
+    "worked_solution": "Phép chiếu affine tổng quát bảo toàn tỉ số trên đường và quan hệ song song đủ điều kiện, không bảo toàn góc.",
+    "skill_ids": [
+      "G11-B14-AFFINE_INVARIANTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-C02 · SGK_CORE · `skill_id=G11-B14-AFFINE_INVARIANTS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-P01",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Trong lăng trụ ABC.A′B′C′, chiếu lên (ABC) theo phương AA′. Ảnh của B′ là điểm nào?",
+    "answer_key": "B.",
+    "worked_solution": "BB′∥AA′ và B∈(ABC), nên đường chiếu qua B′ gặp (ABC) đúng tại B.",
+    "skill_ids": [
+      "G11-B14-PROJECTION_DEF"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-P01 · SGK_PRACTICE · `skill_id=G11-B14-PROJECTION_DEF`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-P02",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "M′ là trung điểm B′C′ của lăng trụ tam giác ABC.A′B′C′. Chiếu theo AA′ lên (ABC). Ảnh M′ là điểm nào?",
+    "answer_key": "Trung điểm M của BC.",
+    "worked_solution": "Ảnh B′C′ là BC không suy biến; phép chiếu giữ tỉ số 1 nên ảnh trung điểm là trung điểm.",
+    "skill_ids": [
+      "G11-B14-AFFINE_INVARIANTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-P02 · SGK_PRACTICE · `skill_id=G11-B14-AFFINE_INVARIANTS`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-P03",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Một đường a song song phương chiếu Δ có ảnh là đường hay điểm?",
+    "answer_key": "Một điểm.",
+    "worked_solution": "Mọi đường qua các điểm a theo Δ chính là a, nên cùng giao với (P) tại một điểm.",
+    "skill_ids": [
+      "G11-B14-DEGENERACY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-P03 · SGK_PRACTICE · `skill_id=G11-B14-DEGENERACY`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHIV-B14-P04",
+    "content_version": "THPT-G11-CHIV-B10-B14-R03",
+    "stem": "Một hình bình hành không suy biến chiếu song song thành hình gì?",
+    "answer_key": "Hình bình hành.",
+    "worked_solution": "Hai cặp cạnh đối của ảnh vẫn song song hoặc trùng; giả thiết ảnh không suy biến loại trường hợp cùng đường.",
+    "skill_ids": [
+      "G11-B14-PARALLEL_AND_SHAPES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Đọc lại D1 và các điều kiện trong Bài 14 trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
+      "heading": "#### THPT-G11-CHIV-B14-P04 · SGK_PRACTICE · `skill_id=G11-B14-PARALLEL_AND_SHAPES`",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiv-b10-b14-source-locked-formative-r03.js",
+        "blob": "b9cae4023f586acd549ffc6e8253d7757f4265d7",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]
