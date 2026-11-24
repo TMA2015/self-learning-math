@@ -1,11 +1,11 @@
 [
   {
     "item_id": "THPT-G12-CHI-B01-C01",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hàm f(x)=x² giảm trên khoảng nào trong (−∞,0), (0,+∞)?",
-    "answer_key": null,
+    "answer_key": "Nghịch biến trên (−∞;0).",
     "worked_solution": "(−∞,0): khi x tiến về 0 từ bên trái, giá trị x² giảm; trên (0,+∞) hàm tăng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-MONOTONICITY_MEANING"
     ],
@@ -26,15 +26,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B01-C02",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho f(x)=x²−4x+1. Xác định dấu f′ và khoảng tăng/giảm.",
-    "answer_key": null,
-    "worked_solution": "f′=2x−4, âm x<2, dương x>2 ⇒ giảm (−∞,2), tăng (2,+∞).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "f′(x)=2x−4; f′<0 khi x<2, f′=0 khi x=2, f′>0 khi x>2; nghịch biến (−∞;2), đồng biến (2;+∞).",
+    "worked_solution": "f′(x)=2x−4=2(x−2). Vì hệ số 2 dương, dấu của f′ là dấu của x−2: âm khi x<2, bằng 0 khi x=2, dương khi x>2. Theo dấu đạo hàm, f nghịch biến trên (−∞;2) và đồng biến trên (2;+∞).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-DERIVATIVE_SIGN"
     ],
@@ -55,15 +55,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B01-C03",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f′ đổi dấu + sang − tại x=−1 và − sang + tại x=1. Xác định loại cực trị tại mỗi điểm nếu f liên tục và khả vi quanh chúng.",
-    "answer_key": null,
+    "answer_key": "Cực đại tại x=−1; cực tiểu tại x=1.",
     "worked_solution": "Cực đại tại −1, cực tiểu tại 1; dấu đổi mới quyết định loại cực trị.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-EXTREMA_SIGN_CHANGE"
     ],
@@ -84,15 +84,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B01-C04",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=x³ có f′(0)=0. x=0 có là điểm cực trị không, vì sao?",
-    "answer_key": null,
+    "answer_key": "Không có cực trị tại x=0.",
     "worked_solution": "Không; f′=3x²>0 ở hai phía (trừ x=0), nên hàm vẫn tăng qua x=0.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
     ],
@@ -113,15 +113,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B01-P01",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với f(x)=1/(x−2), nêu miền xác định và tất cả khoảng nghịch biến, giải thích tại sao phải tách.",
-    "answer_key": null,
-    "worked_solution": "D=ℝ\\{2}, f′=−1/(x−2)²<0. Giảm trên (−∞,2) và (2,+∞), không nối qua x=2 không thuộc D.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "D=ℝ\\{2}; nghịch biến trên (−∞;2) và (2;+∞).",
+    "worked_solution": "D=ℝ\\{2}. Trên D, f′(x)=−1/(x−2)²<0. Hàm nghịch biến trên từng khoảng (−∞;2) và (2;+∞), không nối hai khoảng qua điểm x=2 không thuộc D. Chẳng hạn, 1<3 nhưng f(1)=−1<f(3)=1, nên không thể kết luận nghịch biến trên cả D.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-DOMAIN_INTERVALS"
     ],
@@ -142,15 +142,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B01-P02",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho f′(x)=(x+1)(x−2) trên ℝ. Hãy nêu các khoảng tăng/giảm của f.",
-    "answer_key": null,
+    "answer_key": "Đồng biến trên (−∞;−1), (2;+∞); nghịch biến trên (−1;2).",
     "worked_solution": "f′>0 khi x<−1 hoặc x>2, f′<0 khi −1<x<2 ⇒ tăng, giảm, tăng theo ba khoảng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-DERIVATIVE_SIGN"
     ],
@@ -171,15 +171,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B01-P03",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=x³−3x. Tìm hoành độ và giá trị của các cực trị.",
-    "answer_key": null,
-    "worked_solution": "f′=3(x+1)(x−1); cực đại tại −1, giá trị 2; cực tiểu tại 1, giá trị −2.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "Cực đại tại x=−1, giá trị 2; cực tiểu tại x=1, giá trị −2.",
+    "worked_solution": "f′(x)=3x²−3=3(x+1)(x−1). Đạo hàm dương khi x<−1 hoặc x>1, âm khi −1<x<1. Tại x=−1, f′ đổi dấu từ + sang − nên f đạt cực đại, f(−1)=2. Tại x=1, f′ đổi dấu từ − sang + nên f đạt cực tiểu, f(1)=−2.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-EXTREMA_SIGN_CHANGE"
     ],
@@ -200,15 +200,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B01-P04",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hàm f(x)=|x| có cực tiểu tại 0 không, mặc dù f′(0) không tồn tại?",
-    "answer_key": null,
-    "worked_solution": "Có, f(x)≥f(0)=0; điều kiện f′(0)=0 chỉ là điều kiện cần đối với cực trị nội tại điểm có đạo hàm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "Có cực tiểu tại x=0, giá trị 0.",
+    "worked_solution": "Có. Với mọi x≠0, |x|>0=f(0), nên x=0 là điểm cực tiểu. Đạo hàm tại 0 không tồn tại vì đạo hàm một phía bên trái bằng −1, bên phải bằng 1. Điều kiện f′(x₀)=0 chỉ là điều kiện cần của cực trị tại điểm trong miền mà hàm có đạo hàm, không phải điều kiện bắt buộc cho mọi cực trị.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
     ],
@@ -229,15 +229,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B01-A01",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Vật có vị trí s(t)=t³−6t²+9t m, t≥0 s. Xác định các khoảng thời gian vật chuyển động theo chiều dương và âm.",
-    "answer_key": null,
-    "worked_solution": "v(t)=3(t−1)(t−3). Chiều dương khi 0<t<1 và t>3; chiều âm khi 1<t<3; t=1,3 dừng tức thời.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "Chiều dương khi 0≤t<1 hoặc t>3; chiều âm khi 1<t<3; v=0 tại t=1,3.",
+    "worked_solution": "Vận tốc v(t)=s′(t)=3t²−12t+9=3(t−1)(t−3) (m/s). Trong miền t≥0, v>0 khi 0≤t<1 hoặc t>3, vật chuyển động theo chiều dương; v<0 khi 1<t<3, vật chuyển động theo chiều âm. Tại t=1 và t=3 vận tốc bằng 0, vật dừng tức thời. Tại thời điểm ban đầu t=0, v(0)=9 m/s theo chiều dương.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-MOTION_CONTEXT"
     ],
@@ -258,15 +258,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-C01",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=x trên (0,1) có GTLN bằng 1 không? Giải thích.",
-    "answer_key": null,
-    "worked_solution": "Không; với mọi x<1 tồn tại y=(x+1)/2 trong (x,1), nên f(y)>f(x). 1 chỉ là supremum.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "Không có GTLN trên (0;1); 1 không đạt được.",
+    "worked_solution": "Không. Với mọi x∈(0;1), chọn y=(x+1)/2 thì x<y<1, nên f(y)>f(x). Như vậy không có giá trị nào của hàm lớn nhất trên khoảng. Số 1 là cận trên mà các giá trị của hàm có thể tiến sát tới, nhưng không đạt được.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
     ],
@@ -287,15 +287,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-C02",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hàm liên tục trên [−1,3] có chắc đạt GTNN và GTLN không?",
-    "answer_key": null,
+    "answer_key": "Có, đạt cả GTLN và GTNN.",
     "worked_solution": "Có, bởi định lý giá trị cực trị trên đoạn đóng hữu hạn; chưa cần biết chúng ở điểm nào.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CLOSED_INTERVAL_EXISTENCE"
     ],
@@ -316,15 +316,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-C03",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm GTLN/GTNN f(x)=x²−2x trên [0,4].",
-    "answer_key": null,
-    "worked_solution": "f'=2x−2, ứng viên x=0,1,4, lần lượt f=0,−1,8; GTNN=−1, GTLN=8.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "GTLN 8 tại x=4; GTNN −1 tại x=1.",
+    "worked_solution": "Hàm liên tục trên [0;4]. Ta có f′(x)=2x−2, bằng 0 tại x=1 thuộc đoạn. So sánh giá trị tại điểm này và hai đầu mút: f(0)=0, f(1)=−1, f(4)=8. Vậy GTNN bằng −1 tại x=1; GTLN bằng 8 tại x=4.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CRITICAL_END_POINTS"
     ],
@@ -345,15 +345,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-C04",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trên miền (0,+∞), f(x)=1/x có giá trị nhỏ nhất bằng 0 không?",
-    "answer_key": null,
+    "answer_key": "Không có GTNN; cũng không có GTLN trên (0;+∞).",
     "worked_solution": "Không; mọi 1/x>0, lim∞=0 không đạt được; cũng không có GTLN vì không bị chặn trên gần 0+.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
     ],
@@ -374,15 +374,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-P01",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm max/min g(x)=−x²+4x+2 trên [0,5], ghi cả điểm đạt.",
-    "answer_key": null,
+    "answer_key": "GTLN 6 tại x=2; GTNN −3 tại x=5.",
     "worked_solution": "g'=−2x+4, c=2; g(0)=2, g(2)=6, g(5)=−3. Max=6 tại2, min=−3 tại5.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CRITICAL_END_POINTS"
     ],
@@ -403,15 +403,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-P02",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=x² trên (−1,1) có GTNN? GTLN? Chứng minh.",
-    "answer_key": null,
-    "worked_solution": "min=0 tại x=0; không có max, vì x²<1 với mọi |x|<1 dù sup=1.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "GTNN 0 tại x=0; không có GTLN.",
+    "worked_solution": "Với x∈(−1;1), x²≥0, dấu bằng tại x=0 nên GTNN bằng 0. Không có GTLN: với mọi x trong khoảng, chọn y=(|x|+1)/2. Khi đó |x|<y<1, nên f(y)=y²>x²=f(x). Các giá trị x² có thể tiến sát 1 nhưng không đạt 1.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
     ],
@@ -432,15 +432,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-P03",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Xét f(x)=x/(x²+1), x≥0. Tìm GTLN, GTNN.",
-    "answer_key": null,
-    "worked_solution": "f'=(1−x²)/(x²+1)²; max 1/2 tại1, min0 tại0. Mệnh đề f→0 khi x∞ không tự chứng minh GTNN nếu quên x=0.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "GTLN 1/2 tại x=1; GTNN 0 tại x=0.",
+    "worked_solution": "f′(x)=(1−x²)/(x²+1)². Với 0≤x<1, f′>0; với x>1, f′<0. Hàm tăng đến x=1 rồi giảm, nên GTLN bằng f(1)=1/2. Mặt khác x≥0 và x²+1>0 nên f(x)≥0, dấu bằng tại x=0; GTNN bằng 0. Giới hạn f(x)→0 khi x→+∞ không tự chứng minh GTNN: cần kiểm tra giá trị 0 thực sự đạt được.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CONSTRAINED_DOMAIN"
     ],
@@ -461,15 +461,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-P04",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
-    "stem": "Trên [−2,2], f(x)=x³ có GTLN, GTNN và cực trị nội không?",
-    "answer_key": null,
-    "worked_solution": "max=8 tại2; min=−8 tại−2; không có cực trị nội dù f'(0)=0.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trên đoạn [−2;2], f(x)=x³ có GTLN, GTNN và cực trị tại điểm nằm trong khoảng (−2;2) không?",
+    "answer_key": "GTLN 8 tại x=2; GTNN −8 tại x=−2; không có cực trị trong (−2;2).",
+    "worked_solution": "f′(x)=3x²≥0 và chỉ bằng 0 tại x=0. Hàm x³ đồng biến trên toàn đoạn, nên GTLN f(2)=8, GTNN f(−2)=−8. Tại x=0 đạo hàm không đổi dấu và hàm vẫn tăng; không có cực trị tại điểm nằm trong (−2;2). Giá trị lớn nhất/nhỏ nhất trên đoạn không đồng nghĩa với cực trị tại điểm bên trong đoạn.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-EXTREMA_GLOBAL_MEANING"
     ],
@@ -490,15 +490,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-P05",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Vì sao f(x)=1/x trên [−1,1]\\{0} không được áp dụng định lý liên tục trên đoạn [−1,1]?",
-    "answer_key": null,
+    "answer_key": "Không áp dụng được vì hàm không xác định tại 0, không liên tục trên toàn đoạn [−1;1].",
     "worked_solution": "Không xác định tại0, miền xét không phải toàn đoạn đóng [−1,1]; f không bị chặn gần 0 nên cũng không có min/max toàn miền.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CLOSED_INTERVAL_EXISTENCE"
     ],
@@ -519,15 +519,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B02-A01",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Mảnh vườn chữ nhật chu vi 24 m, hai cạnh dương. Diện tích lớn nhất và có GTNN dương không?",
-    "answer_key": null,
-    "worked_solution": "x∈(0,12), A=x(12−x)≤36 m² (dấu bằng x=6); không có GTNN vì A→0+ khi x→0+.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "Diện tích lớn nhất 36 m² khi hai cạnh đều dài 6 m; không có GTNN.",
+    "worked_solution": "Gọi x (m) là một cạnh thì cạnh kia dài 12−x (m), vì chu vi bằng 24 m. Hai cạnh dương nên 0<x<12. Diện tích A=x(12−x)=36−(x−6)²≤36 (m²), dấu bằng khi x=6. Khi đó hai cạnh đều dài 6 m. Không có GTNN vì A>0 trên miền và A→0 khi x→0⁺, nên với mọi diện tích dương đang xét đều có thể chọn cạnh đủ nhỏ để được diện tích nhỏ hơn.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-OPTIMIZATION_MODEL"
     ],
@@ -548,15 +548,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-C01",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "lim(x→∞)[5+2/(x−1)] và phương trình tiệm cận ngang?",
-    "answer_key": null,
-    "worked_solution": "Giới hạn 5; y=5.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "Giới hạn 5; tiệm cận ngang y=5.",
+    "worked_solution": "Khi x→+∞, 2/(x−1)→0, do đó 5+2/(x−1)→5. Theo định nghĩa, đồ thị có tiệm cận ngang y=5.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-HORIZONTAL_LIMIT"
     ],
@@ -577,15 +577,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-C02",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=1/(x+3). Điểm x=−3 có là tiệm cận đứng? Nêu giới hạn hai phía.",
-    "answer_key": null,
+    "answer_key": "lim x→−3⁻ f(x)=−∞; lim x→−3⁺ f(x)=+∞; tiệm cận đứng x=−3.",
     "worked_solution": "lim x→−3− f=−∞, lim x→−3+ f=+∞; x=−3 là tiệm cận đứng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED"
     ],
@@ -606,15 +606,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-C03",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "g(x)=x−2+3/(x+1). Tiệm cận xiên khi x→∞?",
-    "answer_key": null,
-    "worked_solution": "y=x−2, vì phần dư →0; g=x−2 không phải y=x+1.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "Tiệm cận xiên y=x−2.",
+    "worked_solution": "g(x)−(x−2)=3/(x+1)→0 khi x→+∞. Vậy đường thẳng y=x−2 là tiệm cận xiên của đồ thị g. Không lấy mẫu x+1 làm phương trình tiệm cận xiên.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-OBLIQUE_REMAINDER"
     ],
@@ -635,15 +635,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-C04",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=(x²−9)/(x−3) có tiệm cận đứng x=3 không?",
-    "answer_key": null,
+    "answer_key": "Không; giới hạn bằng 6, đồ thị thiếu điểm (3;6).",
     "worked_solution": "Không; x≠3, f=x+3; lim x→3 f=6, chỉ là lỗ tại (3,6).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-REMOVABLE_DISCONTINUITY"
     ],
@@ -664,15 +664,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-P01",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=(2x−1)/(x+2). Tìm tiệm cận ngang.",
-    "answer_key": null,
+    "answer_key": "Tiệm cận ngang y=2.",
     "worked_solution": "Chia 2−5/(x+2) nên y=2.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-HORIZONTAL_LIMIT"
     ],
@@ -693,15 +693,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-P02",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "g=(x+1)/(x−2). Tính giới hạn một bên khi x→2±.",
-    "answer_key": null,
+    "answer_key": "lim x→2⁻ g(x)=−∞; lim x→2⁺ g(x)=+∞.",
     "worked_solution": "Tử gần3>0, mẫu âm/dương nên lim 2−=−∞, 2+=+∞; x=2 tiệm cận đứng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED"
     ],
@@ -722,15 +722,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-P03",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "h=(x²+2x+3)/(x+1). Tìm tiệm cận xiên và đứng.",
-    "answer_key": null,
-    "worked_solution": "h=x+1+2/(x+1); xiên y=x+1, đứng x=−1.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "Tiệm cận xiên y=x+1; tiệm cận đứng x=−1.",
+    "worked_solution": "Chia đa thức: h(x)=x+1+2/(x+1), với x≠−1. Khi x→±∞, h(x)−(x+1)=2/(x+1)→0 nên y=x+1 là tiệm cận xiên. Khi x→−1⁻, phần 2/(x+1)→−∞; khi x→−1⁺, phần này→+∞, còn x+1→0. Do đó x=−1 là tiệm cận đứng.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-OBLIQUE_REMAINDER"
     ],
@@ -751,15 +751,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-P04",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f(x)=1/sqrt(x−1), D=(1,+∞). x=1 có là tiệm cận đứng dù không thể xét từ bên trái?",
-    "answer_key": null,
+    "answer_key": "Có, x=1 là tiệm cận đứng vì giới hạn bên phải bằng +∞.",
     "worked_solution": "Có, lim x→1+=+∞ đủ để kết luận; chỉ dùng giới hạn trong D.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-DOMAIN_SIDED_LIMITS"
     ],
@@ -780,15 +780,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-P05",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "k=(x²−4)/(x−2), x≠2. Vẽ mô tả đồ thị có nên vẽ chấm đặc tại (2,4)?",
-    "answer_key": null,
+    "answer_key": "Không vẽ chấm đặc; đồ thị là đường y=x+2 bỏ điểm (2;4).",
     "worked_solution": "Không. k=x+2 chỉ khi x≠2; (2,4) là lỗ, không có tiệm cận đứng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-REMOVABLE_DISCONTINUITY"
     ],
@@ -809,15 +809,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-P06",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với f=3+7/(x−2), nhánh phải x>2 nằm trên hay dưới y=3? Nhánh trái?",
-    "answer_key": null,
+    "answer_key": "Nhánh phải ở trên y=3; nhánh trái ở dưới y=3.",
     "worked_solution": "x>2 ⇒ 7/(x−2)>0 ⇒ trên; x<2 ⇒ dưới. Không cần vẽ thêm đường sai.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-GRAPH_INTERPRETATION"
     ],
@@ -838,15 +838,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-P07",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "f=x/sqrt(x²+1) có bao nhiêu đường tiệm cận ngang? Phía nào?",
-    "answer_key": null,
-    "worked_solution": "Hai: y=1 khi x→+∞, y=−1 khi x→−∞, dùng sqrt(x²)=|x|.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "Hai tiệm cận ngang: y=1 về phía +∞, y=−1 về phía −∞.",
+    "worked_solution": "Với x≠0, f(x)=(x/|x|)/√(1+1/x²). Khi x→+∞, x/|x|=1 và mẫu tiến đến 1 nên giới hạn bằng 1. Khi x→−∞, x/|x|=−1 nên giới hạn bằng −1. Vì thế có hai tiệm cận ngang y=1 ở phía phải và y=−1 ở phía trái; phải dùng √(x²)=|x| chứ không phải x.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-HORIZONTAL_LIMIT"
     ],
@@ -867,15 +867,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B03-A01",
-    "content_version": "G12-SGK-CHI-B01-B05-R00",
+    "content_version": "G12-SGK-CHI-B01-B05-R00_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chi phí trung bình đơn vị C(q)=20+120/q (nghìn đồng/sp), q>0. Phân tích q→+∞ và q→0+, chỉ ra tiệm cận; ý nghĩa mô hình.",
-    "answer_key": null,
-    "worked_solution": "y=20 khi q→∞, q=0 là tiệm cận đứng từ phải (C→∞). q=0 không thể là mức sản lượng có chi phí trung bình xác định.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "answer_key": "C(q)→20 khi q→+∞, C(q)→+∞ khi q→0⁺; tiệm cận ngang C=20, đứng q=0; q=0 không có chi phí trung bình xác định.",
+    "worked_solution": "Khi q→+∞, 120/q→0 nên C(q)→20 nghìn đồng/sp; đường C=20 là tiệm cận ngang. Theo mô hình liên tục, khi q→0⁺, 120/q→+∞ nên C(q)→+∞; q=0 là tiệm cận đứng. Giá trị q=0 không thuộc miền xác định. Chi phí trung bình tiến gần 20 khi sản lượng tăng, nhưng luôn lớn hơn 20 ở mọi q hữu hạn dương. Nếu q là số sản phẩm nguyên, giới hạn q→0⁺ chỉ mô tả phần mở rộng liên tục của mô hình, không phải sản lượng nguyên dương thực tế.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-DOMAIN_SIDED_LIMITS"
     ],
@@ -896,7 +896,7 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G12-CHI-B04-C01",
