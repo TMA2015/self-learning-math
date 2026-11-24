@@ -4637,5 +4637,14 @@
     "order": 6,
     "item_id": "THPT-G11-CHI-TRY06",
     "outcome_id": "G11-B01-RELATED_ANGLES"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B08-C02",
+    "skill_id": "G11-B08-CLASS-BOUNDARIES",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
   }
 ]
