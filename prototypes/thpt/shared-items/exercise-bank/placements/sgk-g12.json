@@ -4504,5 +4504,31 @@
     "skill_id": "G12-CHV-B16-O02",
     "source_locator": "B16-T02",
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B01-C04",
+    "skill_id": "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT",
+    "source_locator": "Tự thử B",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHI:B02:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G12-CHI-B02-C01",
+    "skill_id": "G12-B02-EXTREMA_GLOBAL_MEANING",
+    "source_locator": "Tự thử B",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G12:CHI:B03:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-TOP10-P34",
+    "source_locator": "Tự thử B",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
   }
 ]
