@@ -593,7 +593,7 @@ function verifyG11W3(previous,current,changed,expected){
  const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
  const receipt=read(current,G11_W1_HANDOFF);
  assert.equal(blob(read(previous,G11_W1_HANDOFF)),"c0164fc067282cd343fa9de3639eb552536dfdb3");
- assert.equal(blob(receipt),"4b45f0a69399d5862574928a0f9aa2be3dfe9ca2");
+ assert.equal(blob(receipt),"eca03dc4ce7a2452fb2815534a23fcf6bf168e36");
  assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
  const hook="hooks/sgk_golden_first_paint.py";
  const oldHook=read(previous,hook).toString("utf8"),nowHook=read(current,hook).toString("utf8");
