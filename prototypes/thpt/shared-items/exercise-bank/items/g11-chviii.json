@@ -1171,12 +1171,17 @@
   },
   {
     "item_id": "THPT-G11-B28-KFT01",
-    "content_version": "SOURCE_BLOB_86018a916315d313249f958ff2c66acdb52612be",
+    "content_version": "SOURCE_BLOB_86018a916315d313249f958ff2c66acdb52612be_AUTHOR_KEY_REVIEW_R01",
     "stem": "Với Ω={1,2,3,4,5,6}, A={2,4,6}, B={4,5,6}, em hãy viết A∪B, A∩B và Ā; hỏi hai biến cố này xung khắc không và giải thích.",
-    "answer_key": null,
-    "worked_solution": "<strong>Tự đối chiếu sau khi làm:</strong> {2,4,5,6}; {4,6}; {1,3,5}; không xung khắc vì giao khác rỗng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "A∪B={2,4,5,6}; A∩B={4,6}; Ā={1,3,5}; không xung khắc.",
+    "worked_solution": "**Tự đối chiếu sau khi làm:** A∪B={2,4,5,6}, gồm các kết quả thuộc ít nhất một trong hai tập; A∩B={4,6}, gồm các kết quả chung; Ā=Ω\\A={1,3,5}, gồm các kết quả không thuộc A. A và B không xung khắc vì A∩B≠∅: kết quả 4 hoặc 6 làm cả hai biến cố cùng xảy ra.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B28-UNION",
+      "G11-B28-INTERSECTION",
+      "G11-B28-COMPLEMENT",
+      "G11-B28-DISJOINT"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1200,16 +1205,19 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B29-KFT01",
-    "content_version": "SOURCE_BLOB_51b686118c52605d8c8ab64b2e05d3fea419c1f8",
-    "stem": "Một câu lạc bộ 30 bạn: A có 14 bạn, B có 12 bạn, có 5 bạn thuộc cả A và B. Tính số bạn thuộc ít nhất một câu lạc bộ và số không thuộc cả hai.",
-    "answer_key": null,
-    "worked_solution": "<strong>Đối chiếu sau thử:</strong> 14+12−5=21 và 30−21=9. Hãy nói vì sao không dùng 14+12 trực tiếp.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_51b686118c52605d8c8ab64b2e05d3fea419c1f8_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một lớp có 30 bạn. Có 14 bạn tham gia CLB A, 12 bạn tham gia CLB B, trong đó 5 bạn tham gia cả hai CLB. Tính số bạn tham gia ít nhất một CLB và số bạn không tham gia CLB nào trong hai CLB A, B.",
+    "answer_key": "21 bạn thuộc ít nhất một CLB; 9 bạn không thuộc CLB nào.",
+    "worked_solution": "**Đối chiếu sau thử:** Khi cộng 14+12, năm bạn tham gia cả hai CLB bị đếm hai lần. Vì vậy số bạn tham gia ít nhất một CLB là 14+12−5=21. Số bạn không tham gia CLB A lẫn CLB B là 30−21=9. Tự kiểm bốn vùng: chỉ A có 9, cả hai có 5, chỉ B có 7, ngoài cả hai có 9; tổng 9+5+7+9=30.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B29-VENN_COUNTS",
+      "G11-B29-ADDITION_OVERLAP"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1234,16 +1242,19 @@
       "audit_note": "Clarify source wording 'không thuộc cả hai' versus neither membership; preserved source pending audit."
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B30-KFT01",
-    "content_version": "SOURCE_BLOB_7ef2e8be4bca6c64f7ab190ed5d1cde921998373",
-    "stem": "Hai cảm biến **hoạt động độc lập**, có xác suất phát hiện lần lượt 4/5 và 3/4. Tính (i) cùng phát hiện, (ii) ít nhất một phát hiện.",
-    "answer_key": null,
-    "worked_solution": "<strong>Đối chiếu sau thử:</strong> (i) 3/5, (ii) 1−(1/5)(1/4)=19/20. Hãy giải thích vì sao phải dùng tích ở (i), bù ở (ii).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_7ef2e8be4bca6c64f7ab190ed5d1cde921998373_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai cảm biến có biến cố phát hiện cùng một sự kiện độc lập với nhau, xác suất phát hiện lần lượt là 4/5 và 3/4. Tính (i) xác suất cả hai cùng phát hiện, (ii) xác suất ít nhất một cảm biến phát hiện.",
+    "answer_key": "(i) 3/5; (ii) 19/20.",
+    "worked_solution": "**Đối chiếu sau thử:** Gọi A, B là biến cố từng cảm biến phát hiện sự kiện. (i) Vì A và B độc lập, P(A∩B)=(4/5)(3/4)=3/5. (ii) Biến cố đối của ít nhất một cảm biến phát hiện là cả hai đều không phát hiện. Hai biến cố đối cũng độc lập, nên xác suất này bằng (1−4/5)(1−3/4)=1/20. Do đó P(A∪B)=1−1/20=19/20.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B30-MULTIPLY_INDEPENDENT",
+      "G11-B30-AT_LEAST_ONE"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1267,6 +1278,6 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
