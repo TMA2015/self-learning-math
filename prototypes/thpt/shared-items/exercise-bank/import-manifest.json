@@ -1294,18 +1294,18 @@
     }
   ],
   "counts": {
-    "formative_items": 1773,
+    "formative_items": 1779,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3880,
+    "placements": 3886,
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 681,
+    "legacy_combined_answer_items": 687,
     "topic_knowledge_first_try": 170,
-    "sgk_knowledge_first_try": 154,
+    "sgk_knowledge_first_try": 160,
     "authoring_answer_draft_items": 5
   },
   "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported; G11 33 Knowledge pages scanned, 32 pages with unkeyed blocks remain mapping pending; G12 19 Knowledge pages scanned; all 79 SGK pages inventoried, source mapping not complete; G11 B02–B07 16 unkeyed source tasks imported with canonical KFT IDs, partial matches deferred",
@@ -2547,7 +2547,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "681 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
+  "legacy_combined_answer_note": "687 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -4077,17 +4077,17 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-28.md",
         "blob": "86018a916315d313249f958ff2c66acdb52612be",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 26,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHVIII-B28-C03",
               "THPT-G11-CHVIII-B28-C04",
@@ -4095,7 +4095,9 @@
             ],
             "reason": "Source same Ω for union/intersection/complement/non-disjoint; existing distinct sets and separate requests.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B28-KFT01"
           }
         ]
       },
@@ -4106,24 +4108,26 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-29.md",
         "blob": "51b686118c52605d8c8ab64b2e05d3fea419c1f8",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 30,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHVIII-B29-P04",
               "THPT-G11-CHVIII-B29-C06"
             ],
             "reason": "Source 30,14,12,5 asks counts union and neither; existing different data. Wording 'không thuộc cả hai' potentially ambiguous versus 'không thuộc câu lạc bộ nào'.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B29-KFT01"
           }
         ]
       },
@@ -4134,24 +4138,26 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md",
         "blob": "7ef2e8be4bca6c64f7ab190ed5d1cde921998373",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 26,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHVIII-B30-C04",
               "THPT-G11-CHVIII-B30-P06"
             ],
             "reason": "Source 4/5 and 3/4, both and at least one; existing different probabilities and individual asks.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B30-KFT01"
           }
         ]
       },
@@ -4162,24 +4168,26 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-31.md",
         "blob": "20f6b47a4f56a1531ee695fde11953edfb9661bb",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 27,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHIX-B31-C03",
               "THPT-G11-CHIX-B31-C08"
             ],
             "reason": "Source derivative by definition at t=1 and tangent with f(1)=5,f′(1)=8; existing different point/data.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B31-KFT01"
           }
         ]
       },
@@ -4190,17 +4198,17 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-32.md",
         "blob": "078a5d9aca09954fd2b451508152147f6a655015",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 34,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHIX-B32-C14",
               "THPT-G11-CHIX-B32-C12",
@@ -4208,7 +4216,9 @@
             ],
             "reason": "Source three functions (x+1)cos2x, ln(5−x), e^(x²); existing different expressions/rules.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B32-KFT01"
           }
         ]
       },
@@ -4219,17 +4229,17 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-33.md",
         "blob": "920752c92ab12a97d8e034780907fd2bcaac1308",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 25,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHIX-CHIX-C01",
               "THPT-TOP09-P09",
@@ -4237,7 +4247,9 @@
             ],
             "reason": "Source s=t³−6t cm, v/a and directions at t=1; existing other polynomial, units or evaluation request.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B33-KFT01"
           }
         ]
       },
@@ -5219,13 +5231,13 @@
       "reviewed_blocks": 46,
       "reused": 4,
       "partial_matches": 0,
-      "no_exact_match_in_reviewed_shards": 6,
+      "no_exact_match_in_reviewed_shards": 0,
       "worked_example_scope_pending": 0,
       "unreviewed_blocks": 0,
-      "pending_mapping_blocks": 6,
+      "pending_mapping_blocks": 0,
       "scope": "G11 B02–B33; same-chapter records and relevant Topic candidate shards/first-try, public ChI selfcheck, G10 ChIII trig sources; not global exhaustiveness.",
       "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
-      "new_canonical_imported": 33,
+      "new_canonical_imported": 39,
       "worked_examples_classified": 3
     },
     "g12_mapping_review": {
