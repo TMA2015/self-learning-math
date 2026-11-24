@@ -1,170 +1,239 @@
-# Toán 12 · Bài 19. Công thức xác suất toàn phần và công thức Bayes
+# Bài 19. Công thức xác suất toàn phần và công thức Bayes
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG VI · SGK KẾT NỐI TRI THỨC · TẬP HAI</p><p class="thpt-r4-lead">Từ bản chất đến công thức, ví dụ giải có lý do, đọc hình và Tự thử trước khi vào Core.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../bai-18/">Bài 18</a><a href="../luyen-tap/#b19-core">Core</a><a href="../luyen-tap/#b19-practice">Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra</a></nav></div>
+<style>
+.md-typeset:has([data-g12-b19-knowledge]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-g12-b19-knowledge]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g12-b19-knowledge]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g12-b19-knowledge]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
 
-## 1. Vì sao cần học
+<div class="thpt-r4-screen" data-thpt-r4 data-g12-b19-knowledge>
+<p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG VI · KIẾN THỨC SGK KNTT · TẬP HAI</p>
+<p class="thpt-r4-lead">Tính xác suất một kết quả từ các nhóm khác nhau, rồi cập nhật xác suất của nhóm khi đã biết kết quả.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương VI</a><a href="../bai-18/">Bài trước</a><a href="../luyen-tap/#b19-core">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-Biết từng nhóm có cơ hội B xảy ra không đủ để suy ngay xác suất B trong cả dân số: phải tính theo **tỷ lệ từng nhóm**. Đặc biệt, khi thấy kết quả B (ví dụ một sản phẩm hỏng), ta còn muốn biết nó đến từ nhóm nào; đây là câu hỏi **đảo điều kiện**, cần Bayes, không phải đọc ngay xác suất hỏng khi biết nguồn.
+=== "Khám phá kiến thức"
 
-## 2. Kiến thức tiền đề
+    ### 1.1. Công thức xác suất toàn phần
 
-Nắm `A`, `Ā`, giao, biến cố xung khắc, `P(A)+P(Ā)=1`, công thức nhân xác suất có điều kiện (B18), đọc bảng và sơ đồ cây. Tự kiểm: “0,6 sản phẩm từ A có lỗi 0,02, phần còn lại lỗi 0,05. Xác suất toàn xưởng lỗi có phải (0,02+0,05)/2 không?” — Không, vì hai nhóm không ngang tỷ trọng.
+    Một kho nhận sản phẩm từ hai xưởng. Xưởng A làm 25% tổng số sản phẩm và có tỉ lệ lỗi 4%; xưởng còn lại làm 75% và có tỉ lệ lỗi 2%. Chọn đều một sản phẩm trong kho. Em dự đoán tỉ lệ lỗi chung là 3% vì trung bình của 4% và 2%? Cách tính đó chỉ phù hợp khi hai xưởng đóng góp bằng nhau. Ở đây cần tính cả tỉ lệ sản phẩm của từng nguồn.
 
-## 3. Hiểu bản chất trước công thức
+    Gọi \(A\) là biến cố “sản phẩm do xưởng A sản xuất”, \(B\) là biến cố “sản phẩm lỗi”. Mọi sản phẩm thuộc đúng một trong hai nhóm A và \(\overline A\). Hình dung kho có 10 000 sản phẩm với số lượng tương ứng chính xác các tỉ lệ đã cho:
 
-B xảy ra theo hai đường không trùng: `A rồi B` hoặc `Ā rồi B`. Hai giao biến cố xung khắc và hợp bằng B nên `P(B)=P(A∩B)+P(Ā∩B)`. Áp dụng công thức nhân từng nhánh được `P(B)=P(A)P(B|A)+P(Ā)P(B|Ā)`. Khi biết **B đã xảy ra**, trong số toàn bộ các trường hợp B, phần thuộc A là `P(A∩B)/P(B)`. Vì thế `P(A|B) = P(A)P(B|A)/P(B)` khi `P(B)>0`. Đây là Bayes, không phải một công thức tự nhiên phải nhớ trước khi hiểu cây.
+    | Nguồn | Lỗi | Không lỗi | Tổng |
+    | :-- | --: | --: | --: |
+    | A | 100 | 2400 | 2500 |
+    | Khác A | 150 | 7350 | 7500 |
+    | Tổng | 250 | 9750 | 10000 |
 
-## 4. Kiến thức, điều kiện và ví dụ có suy luận
+    Trong 2500 sản phẩm A có \(2500\cdot0{,}04=100\) sản phẩm lỗi. Trong 7500 sản phẩm còn lại có \(7500\cdot0{,}02=150\) sản phẩm lỗi. Vậy tỉ lệ lỗi chung là \(250/10000=0{,}025=2{,}5\%\). Bảng là mô hình tần số để thấy bản chất, không phải khẳng định số sản phẩm lỗi của một mẫu ngẫu nhiên luôn đúng 250.
 
-### Chia không gian thành hai trường hợp A và biến cố đối
-**Mục tiêu:** Chia không gian thành hai trường hợp A và biến cố đối. **D1 — Họ dạng:** Phân hoạch hai trường hợp.
+    Cùng phép tính dưới dạng xác suất: giả sử \(0<P(A)<1\), tức cả hai nhóm đều có xác suất dương. Biến cố B được chia thành hai phần xung khắc \(AB\) và \(\overline A B\), hợp của chúng chính là B. Theo quy tắc cộng và công thức nhân đã học,
+    \[
+    \begin{aligned}
+    P(B)&=P(AB)+P(\overline AB)\\
+    &=P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A).
+    \end{aligned}
+    \]
+    Đây là công thức xác suất toàn phần. Mỗi tỉ lệ lỗi theo nhóm được nhân với tỉ lệ của nhóm đó, sau đó cộng lại.
 
-**Vì sao:** Khi không biết trước A xảy ra hay không, cần xét đủ mọi đường dẫn đến kết quả.
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B19_TREE_AUTHORING_20261124.svg" alt="Cây hai nguồn: A 0,25, khác A 0,75. Hai lá lỗi có xác suất 0,010 và 0,015, cộng bằng 0,025"><figcaption>Nhân hai cạnh theo từng đường đi. Hai lá lỗi được tô xanh; cộng hai xác suất ấy để được xác suất lỗi chung. Bốn lá có tổng bằng 1.</figcaption></figure>
 
-**Tiền đề:** Biến cố đối; P(Ā)=1−P(A); hợp của biến cố xung khắc.
+    **Vận dụng.** Một thư viện có 40% sách thuộc nhóm khoa học. Trong nhóm khoa học, 30% là sách tiếng Anh; trong nhóm khác, 10% là sách tiếng Anh. Chọn đều một cuốn sách. Tính xác suất cuốn được chọn là sách tiếng Anh.
 
-**Giải thích bản chất trước công thức:** A và Ā xung khắc, hợp bằng toàn bộ không gian; B xảy ra theo đúng một trong hai nhánh.
+    ??? question "Đối chiếu"
 
-**Điều kiện và công thức (sau bản chất):** `B=(B∩A) ∪ (B∩Ā) và P(B)=P(B∩A)+P(B∩Ā).`
+        Gọi A là nhóm khoa học, B là sách tiếng Anh. \(P(A)=0{,}4,\ P(\overline A)=0{,}6,\ P(B\mid A)=0{,}3,\ P(B\mid\overline A)=0{,}1\). Do đó \(P(B)=0{,}4\cdot0{,}3+0{,}6\cdot0{,}1=0{,}18\), tức 18%.
 
-**D2 — Chọn phương pháp:** Tách A / không A, xác định tỷ lệ mỗi nhánh, không bỏ nhánh. **Chỉ dùng khi:** Hai nhánh phải loại trừ nhau và phủ hết không gian; tổng xác suất nhánh =1.
+    ??? tip "Kiểm lỗi"
 
-**EX-G12-B19-O01 — ví dụ có suy luận:** Một kho có 70% hàng loại A, 30% không phải A. Một mặt hàng hỏng thuộc nhánh A hoặc không A; giải thích vì sao phải cộng hai đường.
+        Nếu tính \(20\%\) bằng trung bình cộng, em đã coi hai nhóm lớn bằng nhau. Vẽ cây, ghi trọng số nhóm ở tầng đầu. Kết quả 18% nằm giữa hai tỉ lệ 10% và 30%, phù hợp với trung bình có trọng số.
 
-*Lời giải từng bước:* A∩H và Ā∩H loại trừ, hợp bằng H. Do đó P(H)=P(A∩H)+P(Ā∩H). **Kết luận:** `Hai nhánh xung khắc, đầy đủ`. **Bẫy nhận thức:** B có thể xảy ra theo hai nguyên nhân khác nhau; không thể chọn chỉ một nhánh.
+    Nếu có hơn hai nhóm, ý tưởng vẫn vậy: mỗi sản phẩm thuộc đúng một nhóm \(A_i\), các nhóm xung khắc và phủ hết không gian mẫu. Chẳng hạn ba nguồn chiếm 50%, 30%, 20% với tỉ lệ lỗi 1%, 2%, 4%. Tỉ lệ chung là \(0{,}5\cdot0{,}01+0{,}3\cdot0{,}02+0{,}2\cdot0{,}04=0{,}019\), tức 1,9%. Đây là mở rộng trực tiếp bằng cách cộng các giao xung khắc. Không cộng chồng các nhóm có thể trùng nhau. Nếu một nhóm có xác suất 0 thì phần giao của nó với B cũng có xác suất 0; bỏ phần đóng góp đó, không tính xác suất có điều kiện với mẫu số 0.
 
-### Tính xác suất toàn phần theo hai trường hợp
-**Mục tiêu:** Tính xác suất toàn phần theo hai trường hợp. **D1 — Họ dạng:** Tổng các xác suất giao theo phân hoạch.
+    ### 1.2. Công thức Bayes
 
-**Vì sao:** Kết quả tổng thể được tạo từ nhiều nhóm có tỷ lệ và xác suất riêng.
+    Trở lại kho hai xưởng. Bây giờ người kiểm tra đã biết sản phẩm mình chọn bị lỗi. Hỏi xác suất nó do xưởng A sản xuất. Câu hỏi không còn là “chọn từ toàn kho thì có lỗi không?”, mà là “trong những sản phẩm lỗi, bao nhiêu thuộc A?”.
 
-**Tiền đề:** Biến cố đối và công thức nhân xác suất.
+    Từ bảng 10 000 sản phẩm, nhóm điều kiện B chỉ gồm 250 sản phẩm lỗi, trong đó 100 thuộc A. Vậy \(P(A\mid B)=100/250=0{,}4\), tức 40%. Dù A sản xuất 25% toàn kho, A chiếm 40% nhóm sản phẩm lỗi. Tỉ lệ lỗi của A là 4%, không phải đáp án 40%; hai xác suất có điều kiện ngược chiều.
 
-**Giải thích bản chất trước công thức:** Xác suất B bằng tổng xác suất B xảy ra theo từng nhánh A và Ā.
+    Dùng cây ở trên, tử số là xác suất đường A rồi lỗi \(0{,}010\), mẫu số là tổng hai đường lỗi \(0{,}025\). Tổng quát, từ định nghĩa ở Bài 18 và công thức toàn phần:
+    \[
+    \begin{aligned}
+    P(A\mid B)&=\frac{P(AB)}{P(B)}\\
+    &=\frac{P(A)P(B\mid A)}
+    {P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A)}.
+    \end{aligned}
+    \]
+    Đó là công thức Bayes, áp dụng khi \(0<P(A)<1\) và \(P(B)>0\). Nếu nhóm A có xác suất 0 hoặc 1 thì, với \(P(B)>0\), xác suất của A khi biết B cũng lần lượt bằng 0 hoặc 1. Không thay vào công thức một xác suất có điều kiện chưa xác định. Công thức không cần A và B độc lập: chính sự thay đổi xác suất khi nhận thông tin mới là điều ta muốn tính.
 
-**Điều kiện và công thức (sau bản chất):** `P(B)=P(A)P(B|A)+P(Ā)P(B|Ā).`
+    **Vận dụng.** Với bài toán thư viện ở mục 1.1, nếu biết cuốn sách được chọn là sách tiếng Anh, xác suất nó thuộc nhóm khoa học bằng bao nhiêu?
 
-**D2 — Chọn phương pháp:** Nhân tỷ lệ nhóm với xác suất điều kiện của nhóm, sau đó cộng. **Chỉ dùng khi:** P(A),P(Ā)≥0 tổng 1; hai tỷ lệ điều kiện ∈[0,1], nhóm có xác suất dương.
+    ??? question "Đối chiếu"
 
-**EX-G12-B19-O02 — ví dụ có suy luận:** Dây chuyền A làm 60% sản phẩm hỏng 2%; B làm 40% hỏng 5%. Tính P(hỏng).
+        Trong mô hình 100 cuốn theo tỉ lệ đã cho, có 12 cuốn vừa khoa học vừa tiếng Anh, 6 cuốn tiếng Anh thuộc nhóm khác. Vậy \(P(A\mid B)=12/18=2/3\). Tương đương Bayes: \(0{,}4\cdot0{,}3/0{,}18=2/3\).
 
-*Lời giải từng bước:* P(H)=0,6×0,02+0,4×0,05=0,012+0,020=0,032=4/125. **Kết luận:** `4/125`. **Bẫy nhận thức:** Không lấy trung bình cộng hai tỷ lệ khi tỷ lệ nguồn khác nhau.
+    ??? tip "Kiểm lỗi"
 
-### Đọc sơ đồ cây xác suất hai tầng và cộng lá phù hợp
-**Mục tiêu:** Đọc sơ đồ cây xác suất hai tầng và cộng lá phù hợp. **D1 — Họ dạng:** Sơ đồ cây toàn phần.
+        \(30\%\) là xác suất tiếng Anh khi biết khoa học; đề hỏi chiều ngược. \(12\%\) là xác suất của cả hai đặc điểm khi chọn từ toàn bộ thư viện, chưa chia cho nhóm tiếng Anh.
 
-**Vì sao:** Hình cây làm rõ nhân trên nhánh và cộng giữa các đường không trùng.
+    **Tác động của tỉ lệ nền.** Trong một mô hình kiểm tra giả định, 1% đối tượng có đặc điểm A. Phép kiểm tra phát tín hiệu dương tính B ở 90% đối tượng có A và 5% đối tượng không có A. Một tín hiệu dương không đồng nghĩa xác suất có A là 90%.
 
-**Tiền đề:** Công thức nhân và biến cố đối.
+    | Đối tượng trong mô hình 10 000 | Dương tính B | Âm tính | Tổng |
+    | :-- | --: | --: | --: |
+    | Có A | 90 | 10 | 100 |
+    | Không A | 495 | 9405 | 9900 |
+    | Tổng | 585 | 9415 | 10000 |
 
-**Giải thích bản chất trước công thức:** Tại mỗi nút, các nhánh điều kiện cộng bằng 1; mỗi đường đến lá có xác suất là tích các nhánh.
+    Trong nhóm dương tính có nhiều trường hợp dương giả vì nhóm không A rất lớn. Bayes cho \(P(A\mid B)=90/585=2/13\approx15{,}38\%\). Nếu giữ nguyên tỉ lệ phát tín hiệu nhưng tăng tỉ lệ nền A lên 10%, trong 10000 đối tượng sẽ có 900 dương thật và 450 dương giả; xác suất sau khi biết dương là \(900/1350=2/3\). Cùng một phép kiểm tra, xác suất sau quan sát khác nhau do tỉ lệ nền khác nhau.
 
-**Điều kiện và công thức (sau bản chất):** `P(B)=P(A)P(B|A)+P(Ā)P(B|Ā).`
+    Có thể gọi \(P(A)\) là xác suất trước quan sát và \(P(A\mid B)\) là xác suất sau quan sát B. Bayes giúp cập nhật từ thông tin mới; không suy ra quan hệ nhân quả chỉ từ việc xác suất thay đổi. Ví dụ kiểm tra trên là số liệu giả định để học toán, không dùng để kết luận một cá nhân mắc bệnh hay để quyết định điều trị.
 
-**D2 — Chọn phương pháp:** Ghi xác suất trên cạnh; tính tích từng lá; cộng đúng lá mang B. **Chỉ dùng khi:** Không cộng xác suất cạnh thuộc đường khác nhau mà không nhân; đối chiếu tổng bốn lá =1.
+    **Vận dụng.** Với bảng 10 000 đối tượng và tỉ lệ nền 1% ở trên, tính xác suất không có A khi biết tín hiệu âm tính.
 
-**EX-G12-B19-O03 — ví dụ có suy luận:** Cây gồm A 40%, Ā 60%; P(B|A)=30%, P(B|Ā)=40%. Tính P(B) bằng các lá.
+    ??? question "Đối chiếu"
 
-*Lời giải từng bước:* Hai lá B có 0,4×0,3=0,12 và 0,6×0,4=0,24; cộng 0,36. **Kết luận:** `9/25`. **Bẫy nhận thức:** Nhân theo đường, cộng các lá phù hợp; các xác suất tại cùng một nút có tổng 1.
+        Trong 9415 trường hợp âm tính có 9405 trường hợp không A. Vậy \(P(\overline A\mid\overline B)=9405/9415=1881/1883\approx99{,}89\%\). Cũng có thể lấy \(1-P(A\mid\overline B)\).
 
-### Dùng Bayes để đảo chiều xác suất điều kiện
-**Mục tiêu:** Dùng Bayes để đảo chiều xác suất điều kiện. **D1 — Họ dạng:** Đảo điều kiện: Bayes.
+    ??? tip "Kiểm lỗi"
 
-**Vì sao:** Khi thấy kết quả B cần suy xác suất nguyên nhân A, không thể dùng P(B|A) làm đáp án.
+        Không lấy \(1-P(A\mid B)\): phép lấy phần bù phải giữ nguyên biến cố điều kiện. Ở câu này điều kiện là âm tính, nên phải dùng cột âm tính.
 
-**Tiền đề:** Công thức xác suất toàn phần và P(B)>0.
+=== "Kiến thức SGK"
 
-**Giải thích bản chất trước công thức:** Trong số mọi trường hợp gây ra B, ta hỏi bao nhiêu phần thuộc A.
+    ### 2.1. Công thức xác suất toàn phần
 
-**Điều kiện và công thức (sau bản chất):** `P(A|B)=P(A)P(B|A)/[P(A)P(B|A)+P(Ā)P(B|Ā)], nếu P(B)>0.`
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Xác suất toàn phần.</strong><p>Với hai biến cố A, B và \(0\lt P(A)\lt 1\),</p><div class="arithmatex">\(\displaystyle P(B)=P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A).\)</div><p>Vì B là hợp của hai giao xung khắc AB và \(\overline AB\). Nếu một nhóm có xác suất 0, giao tương ứng bằng 0; bỏ đóng góp của nhóm đó thay vì tính xác suất điều kiện không xác định.</p></div>
 
-**D2 — Chọn phương pháp:** Tính tử P(A∩B) và mẫu P(B) toàn phần, sau đó chia. **Chỉ dùng khi:** Mẫu P(B)>0; phải có thông tin tỉ lệ nền P(A) và cả nhánh còn lại.
+    <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B19_TREE_AUTHORING_20261124.svg" alt="Cây xác suất toàn phần và Bayes cho hai xưởng"><figcaption>Cạnh tầng đầu biểu thị tỉ lệ nguồn; cạnh tầng hai biểu thị xác suất lỗi hoặc không lỗi theo nguồn. Cộng đúng các lá lỗi để tính xác suất lỗi chung.</figcaption></figure>
 
-**EX-G12-B19-O04 — ví dụ có suy luận:** Nguồn A cung cấp 60%, tỉ lệ hỏng 2%; nguồn còn lại 40%, hỏng 5%. Nếu phát hiện sản phẩm hỏng, xác suất đến từ A?
+    **Mở rộng:** Nếu \(A_1,\ldots,A_k\) tạo thành phân hoạch không gian mẫu (đôi một xung khắc, hợp là \(\Omega\), mỗi nhóm có xác suất dương), thì
+    \[
+    P(B)=\sum_{i=1}^{k}P(A_i)P(B\mid A_i).
+    \]
+    Tỉ lệ nguồn phải cộng thành 1, còn tỉ lệ kết quả chung là trung bình có trọng số của tỉ lệ từng nhóm. Nếu nhóm có xác suất 0, bỏ nhóm đó khi tính tổng.
 
-*Lời giải từng bước:* Tử 0,6×0,02=0,012; mẫu 0,032; P(A|H)=0,012/0,032=3/8. **Kết luận:** `3/8`. **Bẫy nhận thức:** P(A|B) không bằng P(B|A); dữ kiện nhánh còn lại là cần thiết.
+    ### 2.2. Công thức Bayes
 
-### Giải thích tác động tỷ lệ nền tới xác suất sau quan sát
-**Mục tiêu:** Giải thích tác động tỷ lệ nền tới xác suất sau quan sát. **D1 — Họ dạng:** Giả dương và tỷ lệ nền.
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Bayes.</strong><p>Với \(P(B)\gt 0\), \(0\lt P(A)\lt 1\),</p><div class="arithmatex">\(\displaystyle P(A\mid B)=\frac{P(A)P(B\mid A)}{P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A)}.\)</div><p>Tử là xác suất giao AB; mẫu là xác suất B tính bằng toàn phần. Nếu \(P(A)=0\), kết quả bằng 0; nếu \(P(A)=1\), kết quả bằng 1, với điều kiện \(P(B)\gt 0\).</p></div>
 
-**Vì sao:** Một phép thử tốt vẫn có thể tạo nhiều kết quả dương tính giả nếu hiện tượng hiếm.
+    Khi có nhiều nguồn \(A_i\) như trên, xác suất nguồn \(A_j\) sau khi biết B là
+    \[
+    P(A_j\mid B)=\frac{P(A_j)P(B\mid A_j)}{\sum_{i=1}^{k}P(A_i)P(B\mid A_i)},\quad P(B)>0.
+    \]
 
-**Tiền đề:** Tỉ lệ nền, độ nhạy, độ đặc hiệu, xác suất dương tính giả.
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Phân biệt câu hỏi.</strong><p>Hỏi xác suất của kết quả B từ các tỉ lệ theo nguồn: tính toàn phần. Hỏi xác suất nguồn A khi đã biết B: lấy xác suất giao chia xác suất toàn phần (Bayes). Nếu có bảng đếm đồng khả năng, có thể lấy số đối tượng thuộc giao chia tổng nhóm điều kiện; đó là cùng một lập luận.</p></div>
 
-**Giải thích bản chất trước công thức:** Số dương thật tỷ lệ với người có đặc điểm; số dương giả tỷ lệ với số người không có đặc điểm. Bayes so sánh hai nhóm.
+    Quy trình giải: đặt tên biến cố bằng lời; xác định các nhóm không trùng, phủ hết; ghi xác suất nguồn và xác suất theo nhóm; nhân dọc nhánh; cộng những lá tương ứng với B; nếu hỏi điều kiện ngược, chia giao cho \(P(B)\). Kiểm kết quả thuộc \([0;1]\); khi tính cả các xác suất nguồn có điều kiện, tổng phải bằng 1.
 
-**Điều kiện và công thức (sau bản chất):** `P(A|+)=[p·s]/[p·s+(1−p)·f], p=P(A), s=P(+|A), f=P(+|Ā).`
+=== "Ví dụ"
 
-**D2 — Chọn phương pháp:** Dùng số người giả định (10.000) hoặc bảng nhánh; tách dương thật/dương giả. **Chỉ dùng khi:** Không coi kết quả toán giả định là tư vấn y tế cá nhân; cần nêu p,s,f đúng đơn vị và ý nghĩa.
+    ### 3.1. Hai nguồn sản xuất có quy mô khác nhau
 
-**EX-G12-B19-O05 — ví dụ có suy luận:** Tỷ lệ nền 1%, độ nhạy 90%, đặc hiệu 95% (giả định). P(có đặc điểm|dương)?
+    <!-- EX-G12-B19-O01 -->
+    <!-- EX-G12-B19-O02 -->
+    <!-- EX-G12-B19-O04 -->
+    **Đề bài.** Dây chuyền A làm 60% sản phẩm, tỉ lệ lỗi 2%; dây chuyền còn lại làm 40%, tỉ lệ lỗi 5%. Chọn đều một sản phẩm. Tính xác suất lỗi và xác suất do A sản xuất khi biết lỗi.
 
-*Lời giải từng bước:* Trong 10.000: có đặc điểm 100→90 dương thật; không có 9.900→495 dương giả. P=90/(90+495)=2/13. **Kết luận:** `2/13`. **Bẫy nhận thức:** Độ nhạy cao không có nghĩa P(có đặc điểm|dương) cao nếu tỷ lệ nền thấp.
+    **Phân tích:** Hai nguồn xung khắc và phủ hết. Tính hai giao, cộng thành xác suất lỗi rồi chia để đảo điều kiện.
 
-### Giải xác suất toàn phần nhiều nguồn và kiểm đơn vị tỷ lệ
-**Mục tiêu:** Giải xác suất toàn phần nhiều nguồn và kiểm đơn vị tỷ lệ. **D1 — Họ dạng:** Nhiều phân nhóm và dữ liệu sản xuất/khí tượng.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Gọi A là nguồn A, B là lỗi. \(P(AB)=0{,}6\cdot0{,}02=0{,}012\); \(P(\overline AB)=0{,}4\cdot0{,}05=0{,}020\). Vậy \(P(B)=0{,}032=3{,}2\%\). Do đó \(P(A\mid B)=0{,}012/0{,}032=3/8=37{,}5\%\).</p></div>
 
-**Vì sao:** Các lớp nguồn có thể khác kích thước và mức rủi ro.
+    **Kiểm lại:** Trong nhóm lỗi, nguồn còn lại chiếm \(0{,}020/0{,}032=5/8\); tổng hai nguồn bằng 1.
 
-**Tiền đề:** Hai nhánh toàn phần, nhân trên nhánh và cộng.
+    ### 3.2. Trạng thái thay đổi qua hai ngày
 
-**Giải thích bản chất trước công thức:** Khi {A₁,...,Aₙ} là phân hoạch, P(B)=Σᵢ P(Aᵢ)P(B|Aᵢ).
+    <!-- EX-G12-B19-O03 -->
+    **Đề bài.** Ngày thứ nhất, xác suất một máy hoạt động là 0,8. Nếu ngày thứ nhất hoạt động, ngày thứ hai hoạt động với xác suất 0,9; nếu ngày thứ nhất không hoạt động, xác suất ngày thứ hai hoạt động là 0,6. Tính xác suất máy hoạt động ngày thứ hai.
 
-**Điều kiện và công thức (sau bản chất):** `Với ba nhóm: P(B)=p₁q₁+p₂q₂+p₃q₃, p₁+p₂+p₃=1.`
+    **Phân tích:** Chia theo trạng thái ngày đầu, không giả sử hai ngày độc lập.
 
-**D2 — Chọn phương pháp:** Kiểm tổng tỷ trọng nguồn bằng 1; đổi phần trăm về tỷ lệ; nhân rồi cộng; nếu đảo nguồn, dùng Bayes. **Chỉ dùng khi:** Các nguồn loại trừ nhau/phủ hết; mọi tỷ lệ trong [0,1]; không cộng tỷ lệ lỗi thô.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Gọi A là hoạt động ngày đầu, B là hoạt động ngày sau. \(P(B)=0{,}8\cdot0{,}9+0{,}2\cdot0{,}6=0{,}84\).</p></div>
 
-**EX-G12-B19-O06 — ví dụ có suy luận:** Ba xưởng lần lượt làm 50%,30%,20%, tỉ lệ lỗi 1%,2%,4%. Tính P(lỗi).
+    **Kiểm lại:** Xác suất không hoạt động ngày sau bằng \(0{,}8\cdot0{,}1+0{,}2\cdot0{,}4=0{,}16\). Tổng bằng 1.
 
-*Lời giải từng bước:* 0,5×0,01+0,3×0,02+0,2×0,04=0,005+0,006+0,008=0,019. **Kết luận:** `19/1000`. **Bẫy nhận thức:** Tỉ lệ chung phải theo trọng số; kiểm tổng tỉ lệ nguồn và diễn giải phần trăm.
+    ### 3.3. Toàn phần và Bayes với ba nhóm
 
-### Giải tự luận tổng hợp: phân hoạch→toàn phần→Bayes→giải thích
-**Mục tiêu:** Giải tự luận tổng hợp: phân hoạch→toàn phần→Bayes→giải thích. **D1 — Họ dạng:** Ứng dụng đa bước và Written ôn thi.
+    <!-- EX-G12-B19-O06 -->
+    **Đề bài.** Ba nhóm A, B, C chiếm lần lượt 50%, 30%, 20% lượt gửi hàng. Tỉ lệ giao muộn tương ứng là 2%, 3%, 6%. Tính tỉ lệ giao muộn chung và xác suất một lượt giao muộn thuộc C.
 
-**Vì sao:** Đề thi tự luận thường đảo điều kiện sau khi đã tính xác suất tổng thể.
+    **Phân tích:** Có ba nguồn, nên phải cộng đủ ba giao ở mẫu số.
 
-**Tiền đề:** Sơ đồ cây, xác suất giao, toàn phần, Bayes.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Gọi M là giao muộn. Ba giao có xác suất \(0{,}5\cdot0{,}02=0{,}010\), \(0{,}3\cdot0{,}03=0{,}009\), \(0{,}2\cdot0{,}06=0{,}012\). Vậy \(P(M)=0{,}031\) (3,1%). \(P(C\mid M)=0{,}012/0{,}031=12/31\approx38{,}71\%\).</p></div>
 
-**Giải thích bản chất trước công thức:** Tổ chức lời giải theo 3 tầng: mô hình phân nhóm, xác suất kết quả, xác suất nguồn khi thấy kết quả.
+    **Kiểm lại:** Ba xác suất nguồn có điều kiện lần lượt là \(10/31,9/31,12/31\), tổng bằng 1.
 
-**Điều kiện và công thức (sau bản chất):** `P(B)=ΣP(Aᵢ)P(B|Aᵢ); P(Aⱼ|B)=P(Aⱼ)P(B|Aⱼ)/P(B).`
+    ### 3.4. Nhận thông tin mới và kiểm tỉ lệ nền
 
-**D2 — Chọn phương pháp:** Gọi tên biến cố, vẽ cây/ghi hai nhánh, tính từng giao, cộng, chia Bayes và kiểm 0≤kết quả≤1. **Chỉ dùng khi:** Nêu rõ tỷ lệ nhóm là trước khi quan sát; xác suất nghịch chỉ khi P(B)>0; không suy quan hệ nhân quả.
+    <!-- EX-G12-B19-O05 -->
+    **Đề bài.** Một hệ thống phát hiện lỗi giả định có tỉ lệ lỗi nền 2%. Nếu có lỗi, hệ thống báo động với xác suất 0,95; nếu không có lỗi, vẫn báo động với xác suất 0,04. Tính xác suất thật sự có lỗi khi báo động.
 
-**EX-G12-B19-O07 — ví dụ có suy luận:** Lớp A chiếm 60% học sinh và 90% trong đó đạt; lớp B chiếm 40% và 70% đạt. Tính P(đạt), P(A|đạt).
+    **Phân tích:** Báo động có thể đến từ hai nhóm. Tỉ lệ báo đúng trong nhóm lỗi không phải xác suất lỗi sau báo động.
 
-*Lời giải từng bước:* P(đạt)=0,6×0,9+0,4×0,7=0,82=41/50; P(A|đạt)=0,54/0,82=27/41. **Kết luận:** `41/50 và 27/41`. **Bẫy nhận thức:** Không dừng ở P(B), phải chia Bayes khi yêu cầu “biết đã xảy ra B”.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Gọi A là có lỗi, B là báo động. \(P(AB)=0{,}02\cdot0{,}95=0{,}019\). \(P(\overline AB)=0{,}98\cdot0{,}04=0{,}0392\). Do đó \(P(B)=0{,}0582\), và \(P(A\mid B)=0{,}019/0{,}0582=95/291\approx32{,}65\%\).</p></div>
 
-## 5. Hướng dẫn đọc hình
+    **Kiểm lại:** Nếu hình dung 10000 trường hợp, có 190 báo đúng và 392 báo giả; \(190/(190+392)\) cho cùng kết quả. Không nhầm độ chính xác theo một nhóm với xác suất sau quan sát.
 
-`Temp_FIG-G12-CHVI-B19-TOTAL-R00.png`: tại gốc cây là hai nhóm A/Ā (phải cộng 1); trên cạnh tầng hai là tỷ lệ B có điều kiện; lá B có giá trị bằng **tích** hai cạnh; tổng P(B) bằng **cộng** lá B. `Temp_FIG-G12-CHVI-B19-BAYES-R00.png`: vùng dương thật và dương giả đều đóng góp vào tổng dương; Bayes chọn vùng thuộc A trong tổng vùng dương, không đọc thẳng độ nhạy.
+    ### 3.5. Tính Bayes theo biến cố đối
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHVI-B19-TOTAL-R00.png" alt="Sơ đồ cây xác suất toàn phần"/><figcaption>Hình 1: Sơ đồ cây xác suất toàn phần. Xem hướng dẫn đọc hình phía trên.</figcaption></figure>
+    **Đề bài.** Một lớp có 60% học sinh chọn học phần X. Trong nhóm chọn X, xác suất hoàn thành dự án là 0,9; trong nhóm không chọn X, xác suất đó là 0,7. Chọn đều một học sinh. Biết học sinh chưa hoàn thành dự án, tính xác suất thuộc nhóm chọn X.
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHVI-B19-BAYES-R00.png" alt="Sơ đồ Bayes và tỷ lệ nền"/><figcaption>Hình 2: Sơ đồ Bayes và tỷ lệ nền. Xem hướng dẫn đọc hình phía trên.</figcaption></figure>
+    <!-- EX-G12-B19-O07 -->
+    **Phân tích:** Điều kiện là chưa hoàn thành, vì thế phải dùng xác suất phần bù trong từng nhóm.
 
-## 6. Tự thử trước Core
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Gọi A là chọn X, B là hoàn thành. \(P(\overline B\mid A)=0{,}1,\ P(\overline B\mid\overline A)=0{,}3\). Vậy \(P(\overline B)=0{,}6\cdot0{,}1+0{,}4\cdot0{,}3=0{,}18\). \(P(A\mid\overline B)=0{,}06/0{,}18=1/3\).</p></div>
 
-Hãy tự giải trên giấy trước khi mở phần đối chiếu.
+    **Kiểm lại:** \(P(B)=0{,}82\), nên \(P(\overline B)=1-0{,}82=0{,}18\). Không suy \(P(A\mid\overline B)=1-P(A\mid B)\).
 
-**Tự thử 1.** Xưởng A chiếm 25%, lỗi 4%; xưởng còn lại 75%, lỗi 2%. Hỏi xác suất lỗi chung.
+    ### 3.6. Vận dụng xác suất toàn phần kết hợp độc lập
 
-<details class="thpt-r4-try-reveal"><summary>Mở đối chiếu sau khi tự thử</summary>
+    **Đề bài.** Trong mô hình di truyền đơn giản, bố và mẹ được chọn độc lập từ một quần thể có 30% cá thể kiểu gene bb và 70% kiểu Bb. Mỗi cá thể truyền ngẫu nhiên một trong hai gene, hai lần truyền độc lập. Tính xác suất con nhận hai gene b.
 
-`0,25×0,04+0,75×0,02=0,025=1/40`. Nếu lấy trung bình cộng, quay lại hình cây `FIG-CHVI-B19-TOTAL` và D6 O02.
+    **Phân tích:** Với một cá thể, gene b được truyền chắc chắn nếu kiểu bb, và với xác suất \(1/2\) nếu kiểu Bb. Tính toàn phần trước, sau đó dùng độc lập theo giả thiết.
 
-</details>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Xác suất nhận b từ bố là \(0{,}3\cdot1+0{,}7\cdot1/2=0{,}65\). Tương tự từ mẹ là 0,65. Hai lần độc lập theo mô hình, nên xác suất nhận hai gene b bằng \(0{,}65^2=0{,}4225\) (42,25%).</p></div>
 
-**Tự thử 2.** Với dữ kiện T01, nếu biết sản phẩm lỗi, xác suất do A sản xuất?
+    **Kiểm lại:** Xác suất nhận b ở một lần nằm giữa \(1/2\) và 1. Nếu việc chọn hai cá thể hoặc truyền gene không độc lập, không tự nhân hai xác suất biên.
 
-<details class="thpt-r4-try-reveal"><summary>Mở đối chiếu sau khi tự thử</summary>
+=== "Lỗi thường gặp"
 
-tử `0,25×0,04=0,01`; mẫu `0,025`; do đó `0,4=2/5`. Không nhầm 4% với 40%; sai thì xem D6 O04/O05 và hình `FIG-CHVI-B19-BAYES`.
+    ### 4.1. Lấy trung bình cộng thay cho trung bình có trọng số
 
-</details>
+    **Sai:** Lấy \((4\%+2\%)/2\) dù hai nguồn chiếm 25% và 75%.
 
-## 7. Chuyển sang Core và Luyện tập
+    **Vì sao và cách sửa:** Mỗi nguồn đóng góp số sản phẩm khác nhau. Nhân tỉ lệ lỗi với tỉ lệ nguồn rồi cộng; kiểm trọng số tổng bằng 1.
 
-- <a href="../luyen-tap/#b19-core">Mở Core Bài 19</a>
-- <a href="../luyen-tap/#b19-practice">Luyện tập, Vận dụng và Tự luận Bài 19</a>
-- Nếu gặp khó khăn, dùng hướng dẫn D6 gắn với từng câu trong Core và Luyện tập.
+    ### 4.2. Bỏ sót hoặc đếm trùng nhánh
+
+    **Sai:** Mẫu số Bayes chỉ tính lá lỗi của A, hoặc cộng những nhóm có giao nhau.
+
+    **Vì sao và cách sửa:** \(P(B)\) phải gồm tất cả cách B xảy ra, không trùng. Chia theo A và biến cố đối, hoặc phân hoạch hợp lệ.
+
+    ### 4.3. Đảo điều kiện
+
+    **Sai:** \(P(A\mid B)=P(B\mid A)\).
+
+    **Vì sao và cách sửa:** Hai xác suất dùng hai nhóm điều kiện khác nhau. Xác định nhóm đã biết và đặt sau dấu \(\mid\); Bayes tính từ giao chia tổng của nhóm đó.
+
+    ### 4.4. Bỏ qua tỉ lệ nền
+
+    **Sai:** Hệ thống phát hiện đúng 95% lỗi thì mọi báo động đều có 95% khả năng là lỗi thật.
+
+    **Vì sao và cách sửa:** Báo động giả từ nhóm không lỗi cũng góp vào mẫu số. Dựng bảng hoặc cây với cả hai nhóm để tính xác suất sau báo động.
+
+    ### 4.5. Lấy phần bù nhưng thay đổi biến cố điều kiện
+
+    **Sai:** \(P(A\mid\overline B)=1-P(A\mid B)\).
+
+    **Vì sao và cách sửa:** Phần bù giữ nguyên điều kiện: \(P(\overline A\mid B)=1-P(A\mid B)\). Nếu điều kiện đổi sang \(\overline B\), phải lập lại mẫu số.
+
+    ### 4.6. Áp dụng Bayes khi mẫu số bằng 0
+
+    **Sai:** Chia cho \(P(B)=0\) rồi kết luận xác suất sau quan sát.
+
+    **Vì sao và cách sửa:** Công thức điều kiện chỉ dùng khi \(P(B)>0\). Kiểm dữ kiện và miền xác suất trước khi chia. Nếu nhóm ban đầu có xác suất 0, giao của nó với B bằng 0, không cần xác suất điều kiện tại nhóm rỗng.
+
+    **Học tiếp:** [Core và Luyện tập Bài 19](../luyen-tap/#b19-core) · [Tự kiểm tra cuối chương VI](../tu-kiem-tra-chuong/).
+
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK KNTT Toán 12 tập 2, trang in 72–78. Các bảng số liệu, ví dụ và hình minh họa do SLM biên soạn riêng.</p>
