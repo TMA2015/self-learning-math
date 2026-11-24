@@ -1294,18 +1294,18 @@
     }
   ],
   "counts": {
-    "formative_items": 1792,
+    "formative_items": 1804,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3899,
+    "placements": 3911,
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 687,
+    "legacy_combined_answer_items": 699,
     "topic_knowledge_first_try": 170,
-    "sgk_knowledge_first_try": 173,
+    "sgk_knowledge_first_try": 185,
     "authoring_answer_draft_items": 18
   },
   "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported; G11 33 Knowledge pages scanned, 32 pages with unkeyed blocks remain mapping pending; G12 19 Knowledge pages scanned; all 79 SGK pages inventoried, source mapping not complete; G11 B02–B07 16 unkeyed source tasks imported with canonical KFT IDs, partial matches deferred",
@@ -2547,7 +2547,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "687 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
+  "legacy_combined_answer_note": "699 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -4569,27 +4569,34 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md",
         "blob": "8991c8a30487fdf1db65cf31a19b0ed68ef52518",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "local_source_ids": [
           "B06-T01"
         ],
-        "local_id_mappings": [],
+        "local_id_mappings": [
+          {
+            "source_id": "B06-T01",
+            "item_id": "THPT-G12-B06-T01"
+          }
+        ],
         "unkeyed_activity_blocks": 0,
         "locator": "Bold TỰ THỬ Bxx-T01",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "B06-T01",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B06-P06",
               "THPT-G12-B06-C05"
             ],
             "reason": "Vector sum exact subtask only; second dot product uses lengths 2,5, not candidate 2,3.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B06-T01"
           }
         ]
       },
@@ -4600,27 +4607,34 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md",
         "blob": "4bfbed222d552f3ccb9c965616245015930ab1cd",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "local_source_ids": [
           "B07-T01"
         ],
-        "local_id_mappings": [],
+        "local_id_mappings": [
+          {
+            "source_id": "B07-T01",
+            "item_id": "THPT-G12-B07-T01"
+          }
+        ],
         "unkeyed_activity_blocks": 0,
         "locator": "Bold TỰ THỬ Bxx-T01",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "B07-T01",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B07-C04",
               "THPT-G12-B07-P02"
             ],
             "reason": "Different coordinates and coordinate plane; source combines coordinate difference and Oyz.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B07-T01"
           }
         ]
       },
@@ -4631,27 +4645,34 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md",
         "blob": "c85922428c85ddeb48cec5e2bd5953faa44207c8",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "local_source_ids": [
           "B08-T01"
         ],
-        "local_id_mappings": [],
+        "local_id_mappings": [
+          {
+            "source_id": "B08-T01",
+            "item_id": "THPT-G12-B08-T01"
+          }
+        ],
         "unkeyed_activity_blocks": 0,
         "locator": "Bold TỰ THỬ Bxx-T01",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "B08-T01",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B08-C04",
               "THPT-G12-B08-P01"
             ],
             "reason": "Different vectors and requested combination; source asks sign, 2u−v, distinction from lengths.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B08-T01"
           }
         ]
       },
@@ -4662,39 +4683,52 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md",
         "blob": "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
         "markers": 0,
-        "imported": 0,
+        "imported": 2,
         "reused": 0,
         "local_source_ids": [
           "B09-T01",
           "B09-T02"
         ],
-        "local_id_mappings": [],
+        "local_id_mappings": [
+          {
+            "source_id": "B09-T01",
+            "item_id": "THPT-G12-B09-T01"
+          },
+          {
+            "source_id": "B09-T02",
+            "item_id": "THPT-G12-B09-T02"
+          }
+        ],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "B09-T01",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B09-C02"
             ],
             "reason": "Same R=10 but different frequencies and number of groups; source also asks first nonempty class.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B09-T01"
           },
           {
             "order": 2,
             "locator": "B09-T02",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B09-C04",
               "THPT-G12-B09-P07"
             ],
             "reason": "Same frequencies but separate Q1/Q3 items; source asks n and both positions in one block.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B09-T02"
           }
         ]
       },
@@ -4705,7 +4739,7 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md",
         "blob": "32f4eda1cfd151592eef5a35921ad872c1f644c4",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 1,
         "local_source_ids": [
           "B10-T01",
@@ -4715,22 +4749,28 @@
           {
             "source_id": "B10-T02",
             "item_id": "THPT-G12-B10-C04"
+          },
+          {
+            "source_id": "B10-T01",
+            "item_id": "THPT-G12-B10-T01"
           }
         ],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "B10-T01",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B10-C02"
             ],
             "reason": "Source tests cancellation of deviations ±3, not same variance calculation.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B10-T01"
           },
           {
             "order": 2,
@@ -4753,40 +4793,53 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md",
         "blob": "f3fc0f654a21af7ec72de657643ef97488413dcb",
         "markers": 0,
-        "imported": 0,
+        "imported": 2,
         "reused": 0,
         "local_source_ids": [
           "B11-T01",
           "B11-T02"
         ],
-        "local_id_mappings": [],
+        "local_id_mappings": [
+          {
+            "source_id": "B11-T01",
+            "item_id": "THPT-G12-B11-T01"
+          },
+          {
+            "source_id": "B11-T02",
+            "item_id": "THPT-G12-B11-T02"
+          }
+        ],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "B11-T01",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B11-P02",
               "THPT-G12-B11-A01"
             ],
             "reason": "Derivative 2t and family t²+C differ from fixed initial condition or cubic velocity; source calls signed velocity speed, domain missing.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B11-T01"
           },
           {
             "order": 2,
             "locator": "B11-T02",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHIX-B32-C11",
               "THPT-G12-B11-C04"
             ],
             "reason": "Source asks verification on x>0 and why ln x invalid on x<0; existing derivative only or integral of 2/x.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B11-T02"
           }
         ]
       },
@@ -4797,40 +4850,53 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md",
         "blob": "2ea14427518e58acb03e85d64dcc6b18d55f8798",
         "markers": 0,
-        "imported": 0,
+        "imported": 2,
         "reused": 0,
         "local_source_ids": [
           "B12-T01",
           "B12-T02"
         ],
-        "local_id_mappings": [],
+        "local_id_mappings": [
+          {
+            "source_id": "B12-T01",
+            "item_id": "THPT-G12-B12-T01"
+          },
+          {
+            "source_id": "B12-T02",
+            "item_id": "THPT-G12-B12-T02"
+          }
+        ],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "B12-T01",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B12-C05",
               "THPT-G12-B13-C02"
             ],
             "reason": "Source interval [−1,1] and compares signed integral to geometric area; candidates [−2,2] and area only.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B12-T01"
           },
           {
             "order": 2,
             "locator": "B12-T02",
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B12-C03",
               "THPT-G12-B12-P03"
             ],
             "reason": "Different integral bounds and numbers; reverse orientation adds requirement.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G12-B12-T02"
           }
         ]
       },
@@ -4841,38 +4907,51 @@
         "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md",
         "blob": "51b5cf8243b4793e159db862379a21df60ff75bd",
         "markers": 0,
-        "imported": 0,
+        "imported": 2,
         "reused": 0,
         "local_source_ids": [
           "B13-T01",
           "B13-T02"
         ],
-        "local_id_mappings": [],
+        "local_id_mappings": [
+          {
+            "source_id": "B13-T01",
+            "item_id": "THPT-G12-B13-T01"
+          },
+          {
+            "source_id": "B13-T02",
+            "item_id": "THPT-G12-B13-T02"
+          }
+        ],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "B13-T01",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B13-C04"
             ],
             "reason": "Same curves/interval, source asks upper curve and integrand order; canonical asks area, solution includes integrand. Do not collapse different required output.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B13-T01"
           },
           {
             "order": 2,
             "locator": "B13-T02",
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G12-B13-C08"
             ],
             "reason": "Same solid, source asks slice radius and area; canonical asks full volume.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G12-B13-T02"
           }
         ]
       },
@@ -5248,7 +5327,7 @@
     "g12_local_id_blocks": 20,
     "unkeyed_activity_blocks_g12": 20,
     "g12_local_id_reused": 2,
-    "g12_pending_mapping_blocks": 22,
+    "g12_pending_mapping_blocks": 10,
     "g12_partial_task_matches": [
       {
         "source_id": "B06-T01",
@@ -5282,13 +5361,13 @@
     "g12_mapping_review": {
       "reviewed_blocks": 40,
       "reused": 5,
-      "partial_matches": 8,
-      "no_exact_match_in_reviewed_shards": 14,
+      "partial_matches": 2,
+      "no_exact_match_in_reviewed_shards": 8,
       "unreviewed_blocks": 0,
-      "pending_mapping_blocks": 22,
+      "pending_mapping_blocks": 10,
       "scope": "G12 B01–B19; six same-grade chapter shards, relevant Topic candidates/first-try and ChI public selfcheck. Global exhaustiveness not claimed.",
       "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
-      "new_canonical_imported": 13
+      "new_canonical_imported": 25
     },
     "unkeyed_id_assignment_note": "New canonical KFT IDs are scoped by grade, lesson and original source block order, assigned only to preexisting unkeyed tasks after source-task comparison. Existing original IDs are not changed. Candidate global uniqueness/semantic reconciliation and academic audit remain pending. No new math questions or solutions authored in this import."
   }
