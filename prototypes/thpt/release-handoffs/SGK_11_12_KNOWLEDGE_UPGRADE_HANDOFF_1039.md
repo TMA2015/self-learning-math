@@ -152,3 +152,18 @@ Kế thừa Academic/PED PASS của nhóm B10–B14 theo checkpoint review tại
 ## Cách cập nhật
 
 Với mỗi bài tiếp theo: cập nhật dòng bảng + bằng chứng ngắn gọn trong tài liệu này (SGK/outcome và kết quả kiểm thật, baseline/candidate source blob, source commit, PR, asset delta nếu có, kết luận Q18 và lỗi còn tồn tại nếu có). Nếu có bằng chứng reviewer/hồ sơ lịch sử, dẫn link và giữ snapshot; không nhân bản. RELEASE tiếp nhận các dòng CONTENT_READY và phản hồi vào cùng nhiệm vụ #1039. Không bắt buộc đồng thời hoàn tất cả 51 bài mới bàn giao từng bài. Core/Luyện tập, Tự kiểm tra, ngân hàng, RD1, Mastery, Firebase/Auth, Golden runtime đều ngoài scope.
+
+
+## RELEASE — W1 delta hậu kiểm G11 B02–B04 · 24/11/2026
+
+Owner yêu cầu tiếp tục cập nhật và phát hành B01–B04. B01 đã nghiệm thu, ngoài reset, không có delta được bàn giao; giữ nguyên blob `0603fbb2b61374fcd49eff3c119197cff3fa77e4`. Nguồn bàn giao AUTHORING: [biên bản chung commit 120b226](https://github.com/TMA2015/self-learning-math/blob/120b22640fd2de12cdbe074a4067e92c004bcc27/prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md), blob `0f5d497250a9b97be0f7d829bc0098af9729d36f`; [finding W1](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7125565971), [closeout](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7126396677). Không nhập W2 hoặc các nguồn chưa phát hành. Baseline main `a8f2d63e52335c1c686a567334b4f26d43bac0d3`, gh-pages `21fd3a4d2e8d8746ff3bd2b8fed17cca4006db21` đã OWNER PASS hotfix accordion #1089.
+
+**DELTA_C_ACADEMIC_MATERIAL · scoped source verification (RELEASE implementation of AUTHORING findings).** Đã đối chiếu exact source các vị trí bàn giao, tự kiểm lại phép biến đổi/điều kiện và kết quả bài tự thử thay đổi. Không nhận independent NotebookLM PASS mới; giữ verdict lịch sử đúng snapshot. Không dùng CI cấp Academic/PED PASS.
+
+| Bài | Blob published baseline | Blob candidate | Delta đã kiểm |
+|---|---|---|---|
+| B02 | `d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6` | `573e2d8fc84e89112c6b061b39e6a53465659472` | Góc không định hướng giữa vectơ; cos bất biến khi đổi dấu/cộng bội 2π; suy sin cộng từ cos hiệu, tan từ thương với cos a cos b và mẫu khác 0; cộng/trừ các công thức cho tích/tổng/hiệu, đúng dấu. |
+| B03 | `9177a10ade8788712c6b9fbf39789822df2a417a` | `6a88cfa1fc03f8ed6f642fc448bea286dfd9f55c` | Miền đối xứng bắt buộc (x² trên [0,+∞) không chẵn/lẻ); sin(3x) chu kì nhỏ nhất 2π/3 vì nếu T nhỏ hơn thì 3T trái chu kì cơ bản sin; q(t)=A sin(πt/2) có chu kì 4 s; 4 đồ thị có mốc/đối xứng/tiệm cận và tịnh tiến; tại −π/2: sin −1, cos/cot 0, tan không xác định; π/4: sin/cos √2/2, tan/cot 1. |
+| B04 | `0714c5b72389d29dbc8993c2ce9828fc98cf7a92` | `515ad705f86b2448b262026f2f2fb8d3ec2e5bdc` | sin m=±1 hai họ trùng, cos đối góc; cot 0 tại π/2, cot m≠0 dùng arctan(1/m) và cộng π nếu âm; RAD/DEG đúng, asin(0.58)=0.6187286907 rad=35.45054264°; 0.6187 và 35.45° làm tròn đúng, nghiệm tổng quát vẫn hai họ. |
+
+Bảo toàn byte-identical phần trước Khám phá và từ Ví dụ trở đi, headings, asset references, data attributes, danh sách Đối chiếu/Kiểm lỗi và tab 4; không chỉnh Core/Luyện tập/Tự kiểm tra/RD1/Mastery/Firebase, CSS/JS/hook. B01 giữ nguyên. Candidate chờ exact-head scoped QA, build, Golden computed CSS/MathJax/accordion/light-slate/390-820-1440 và deploy verification. Không nhận đã publish. W2 vẫn HOLD.
