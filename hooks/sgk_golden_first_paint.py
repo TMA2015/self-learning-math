@@ -591,8 +591,83 @@ def _render_w8(output: str, uri: str) -> str:
 })();
 </script></article>""", 1)
 
+# #1039 W9 exact G12 ChII routes; additive only.
+_W9_ROUTES = {f"thpt-preview/sgk/lop-12/chuong-ii/bai-{n}.md": (n, 7 if n == 7 else 8) for n in range(6, 9)}
+
+def _w9_hero_first_paint(html: str, number: int) -> str:
+    # Same public nav contract as the existing grade 12 runtime; B01 edge,
+    # B05 crosses to ChII. No changes to G10/G11 or later G12 routes.
+    matches = list(_HERO.finditer(html))
+    if len(matches) != 1 or 'data-sgk-lesson-nav=' in html:
+        return html
+    hero = matches[0]
+    body = hero.group(2)
+    if '<div' in body or len(_OLD_NAV.findall(body)) > 1:
+        return html
+    def choice(label, kind, dest):
+        if dest is None:
+            return '<span class="thpt-sgk-nav-unavailable" aria-disabled="true">' + label + '</span>'
+        return '<a href="' + dest + '" data-sgk-lesson-link="' + kind + '">' + label + '</a>'
+    previous = "../../chuong-i/bai-5/" if number == 6 else "../bai-" + str(number - 1) + "/"
+    following = "../bai-" + str(number + 1) + "/" if number < 8 else "../../chuong-iii/bai-9/"
+    nav = ('<nav class="thpt-r4-lesson-tabs thpt-sgk-lesson-nav" data-sgk-lesson-nav="12-B' +
+           str(number) + '" aria-label="Điều hướng bài học theo SGK">' +
+           choice("← Bài trước", "previous", previous) +
+           choice("Bài sau →", "next", following) +
+           choice("Core và Luyện tập", "practice", "../luyen-tap/") +
+           choice("Tự kiểm tra", "selfcheck", "../tu-kiem-tra-chuong/") + '</nav>')
+    new_hero = hero.group(1) + _OLD_NAV.sub('', body) + '\n' + nav + '\n' + hero.group(3)
+    return html[:hero.start()] + new_hero + html[hero.end():]
+
+def _render_w9(output: str, uri: str) -> str:
+    number, count = _W9_ROUTES[uri]
+    rendered = _render_first_paint(output, ("thpt-g10-knowledge-ap1", "thpt-g10-chiv-golden"))
+    if rendered != output:
+        rendered = _w9_hero_first_paint(rendered, number)
+    if rendered == output or 'data-sgk-golden-first-paint="true"' not in rendered or len(_H2.findall(rendered)) != 4 or rendered.count('data-sgk-lesson-nav="') != 1:
+        raise RuntimeError("W9 Golden first-paint build contract failed: " + uri)
+    rendered = _w8_mistake_disclosures(rendered, number, count)
+    # B08 only: existing Golden semantic rule palette, no source mutation.
+    if number == 8:
+        rendered = rendered.replace('</article>', """<style id="sgk-g12-w9-b08-rule">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style></article>""", 1)
+    # Reuse the existing W1 Golden values, no shared CSS/JS mutations.
+    return rendered.replace(
+        '</article>',
+        """<style id="sgk-g12-w9-golden-formula">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border: 1px solid var(--slm-g10-line);
+  border-radius: 8px; padding: 12px 14px; margin: 14px 0;
+  line-height: 1.75; overflow-x: auto; max-width: 100%;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border-color: #58677f; color: #eef4ff;
+}
+</style><script id="sgk-g12-w9-golden-tabs">
+(() => {
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/lop-12\/chuong-ii\/bai-[6-8]\/?$/.test(location.pathname))return;
+  const a=document.querySelector("article[data-sgk-golden-first-paint]");
+  const t=a?.querySelector(":scope > .tabbed-set");
+  if(!t||t.dataset.g12W9Golden==="true")return;
+  const labels=[...t.querySelectorAll(":scope > .tabbed-labels > label")];
+  const radios=[...t.querySelectorAll(':scope > input[type="radio"]')];
+  if(labels.length!==4||radios.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+  const sync=()=>labels.forEach((l,i)=>l.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  t.addEventListener("change",sync);sync();t.dataset.g12W9Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script></article>""", 1)
+
 def on_post_page(output, page, config):
     uri = page.file.src_uri
+    if uri in _W9_ROUTES:
+        return _render_w9(output, uri)
     if uri in _W8_ROUTES:
         return _render_w8(output, uri)
     if uri in _W7_ROUTES:
