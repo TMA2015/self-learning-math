@@ -26,7 +26,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B17-01_R01.svg" alt="Hàm bằng x cộng một ngoài điểm 1 nhưng nhận giá trị 0 ở 1, trong khi giới hạn bằng 2"><figcaption><strong>Hướng dẫn đọc:</strong> vòng rỗng tại \((1,2)\) thể hiện giá trị mà đồ thị tiến tới; chấm đặc tại \((1,0)\) là giá trị **thực** \(f(1)\). Hai điểm không trùng nên \(\lim_{x\to1}f(x)\ne f(1)\).</figcaption></figure>
 
-    Vì vậy, để kiểm liên tục tại \(a\) cần đủ **ba việc**: (1) \(f(a)\) xác định; (2) \(\lim_{x\to a}f(x)\) tồn tại và hữu hạn; (3) giới hạn đó bằng \(f(a)\). Đây không phải ba định nghĩa khác nhau mà là cách **kiểm tra đủ điều kiện của cùng một định nghĩa**. Hình vẽ “nét bút liền” chỉ là trực giác, không được thay cho kiểm toán học.
+    Vì vậy, để kiểm liên tục tại \(a\) cần đủ **ba việc**: (1) \(f(a)\) xác định; (2) \(\lim_{x\to a}f(x)\) tồn tại và hữu hạn; (3) giới hạn đó bằng \(f(a)\). Đây không phải ba định nghĩa khác nhau mà là cách **kiểm tra đủ điều kiện của cùng một định nghĩa**. Hình vẽ “nét bút liền” chỉ là trực giác, không được thay cho việc kiểm tra bằng định nghĩa.
 
     Với hàm cho bằng nhiều công thức, ở điểm nối phải kiểm hai giới hạn một phía. Ví dụ \(g(x)=x+1\) khi \(x<1\), \(g(x)=m\) khi \(x\ge1\). Bên trái tiến về 2; bên phải tiến về \(m\); giá trị ngay tại 1 cũng là \(m\). Hàm liên tục tại 1 **nếu và chỉ nếu \(m=2\)**, vì khi đó giới hạn trái/phải đều bằng 2 và bằng \(g(1)\).
 
@@ -48,11 +48,11 @@
 
     Khi xét hàm phân thức, miền xác định quan trọng không kém công thức. \(g(x)=\frac{x+1}{x-2}\) liên tục trên \((-\infty,2)\) và \((2,+\infty)\) vì tử, mẫu là đa thức và mẫu khác 0 ở hai khoảng. Nhưng tại \(x=2\) thì \(g\) **không xác định**, nên không gọi liên tục tại 2. Tại **đầu mút** của một khoảng cần đọc đúng dạng ngoặc tròn/vuông trước khi áp điều kiện một phía.
 
-    **Vận dụng.** Chứng minh \(f(x)=\sqrt{x}\) liên tục trên đoạn \([0,4]\). Vì sao không cần giới hạn trái tại \(x=0\)?
+    **Vận dụng.** Chứng minh \(f(x)=\sqrt{4-x}\) liên tục trên đoạn \([0,4]\). Vì sao chỉ cần giới hạn trái tại \(x=4\)?
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Với mọi \(x\in(0,4)\), hàm căn liên tục. Tại \(0\), giới hạn phải \(\lim_{x\to0^+}\sqrt{x}=0=f(0)\); tại \(4\), giới hạn trái \(\lim_{x\to4^-}\sqrt{x}=2=f(4)\). Do đó liên tục trên \([0,4]\). Vì \(\sqrt{x}\) không xác định khi \(x<0\), ta không xét giới hạn trái tại 0 theo miền thực.
+        **Lời giải:** Với mọi \(x\in(0,4)\), \(4-x>0\) nên hàm căn liên tục. Tại \(0\), \(\lim_{x\to0^+}\sqrt{4-x}=2=f(0)\); tại \(4\), \(\lim_{x\to4^-}\sqrt{4-x}=0=f(4)\). Vậy hàm liên tục trên \([0,4]\). Tại đầu mút phải \(4\), chỉ xét giới hạn từ bên trái trong đoạn; hàm không xác định trong số thực khi \(x>4\).
 
     ??? tip "Kiểm lỗi"
 
@@ -70,11 +70,11 @@
 
     Điều kiện liên tục rất quan trọng. Một hàm **nhảy** từ \(-1\) lên \(+1\) ngay tại một điểm có thể đổi dấu ở hai đầu mà **không bao giờ nhận 0**. Vì vậy nếu quên chứng minh liên tục trên đoạn, lập luận đổi dấu mất cơ sở.
 
-    **Vận dụng.** Chứng minh phương trình \(x^3+x-1=0\) có **ít nhất một nghiệm** trong \((0,1)\). Có được kết luận nghiệm duy nhất chỉ từ dấu của hai đầu không?
+    **Vận dụng.** Chứng minh phương trình \(x^3+2x-5=0\) có **ít nhất một nghiệm** trong \((1,2)\). Có được kết luận nghiệm duy nhất chỉ từ dấu của hai đầu không?
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Đặt \(p(x)=x^3+x-1\), là đa thức nên liên tục trên \([0,1]\). \(p(0)=-1<0\), \(p(1)=1>0\), do đó tồn tại \(c\in(0,1)\) sao cho \(p(c)=0\). Dữ kiện đổi dấu và liên tục **chỉ đủ** kết luận ít nhất một nghiệm, không tự chứng minh duy nhất.
+        **Lời giải:** Đặt \(q(x)=x^3+2x-5\), là đa thức nên liên tục trên \([1,2]\). \(q(1)=-2<0\), \(q(2)=7>0\), do đó tồn tại \(c\in(1,2)\) sao cho \(q(c)=0\). Dữ kiện đổi dấu và liên tục **chỉ đủ** kết luận ít nhất một nghiệm, không tự chứng minh duy nhất.
 
     ??? tip "Kiểm lỗi"
 
@@ -96,7 +96,7 @@
 
     **Các hàm cơ bản SGK:** Đa thức, \(\sin x,\cos x\) liên tục trên \(\mathbb R\). Hàm \(\tan x,\cot x\), hàm phân thức hữu tỉ liên tục ở **những điểm thuộc tập xác định**; hàm căn \(\sqrt{x}\) liên tục trên \([0,+\infty)\) theo điều kiện phải ở 0. Không suy rộng qua điểm mà hàm không xác định.
 
-    **Ví dụ kiểm:** \(f(x)=\sqrt{x}\) liên tục trên \([0,9]\) vì nội đoạn liên tục, \(\lim_{x\to0^+}\sqrt{x}=0\), \(\lim_{x\to9^-}\sqrt{x}=3=f(9)\).
+    **Ví dụ kiểm:** \(f(x)=\sqrt{x}\) liên tục trên \([0,9]\) vì nội đoạn liên tục, \(\lim_{x\to0^+}\sqrt{x}=0=f(0)\), \(\lim_{x\to9^-}\sqrt{x}=3=f(9)\).
 
     ### 2.3. Một số tính chất cơ bản
 
