@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-labelledby="t d">
+<title id="t">Giới hạn bên trái và bên phải khác nhau tại điểm 0</title>
+<desc id="d">Đồ thị hàm từng phần bằng 1 khi x nhỏ hơn 0 và bằng 3 khi x lớn hơn hoặc bằng 0; có chấm tròn rỗng tại (0,1), chấm tròn đặc tại (0,3). Giới hạn trái là 1 và phải là 3, vì vậy không có giới hạn hai phía.</desc>
+<rect width="860" height="400" rx="18" fill="#fff"/>
+<text x="430" y="36" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#193954">Hai phía tiến gần x = 0 cho hai giá trị khác nhau</text>
+<g font-family="Arial,sans-serif" font-size="19" fill="#243c5b">
+<line x1="95" y1="327" x2="787" y2="327" stroke="#536779" stroke-width="2.4"/>
+<line x1="430" y1="347" x2="430" y2="73" stroke="#536779" stroke-width="2.4"/>
+<text x="793" y="336">x</text><text x="407" y="82">f(x)</text><text x="413" y="346">0</text>
+<line x1="99" y1="243" x2="430" y2="243" stroke="#2473a5" stroke-width="4"/>
+<circle cx="430" cy="243" r="10" fill="#fff" stroke="#2473a5" stroke-width="3.5"/>
+<line x1="430" y1="122" x2="759" y2="122" stroke="#b34c38" stroke-width="4"/>
+<circle cx="430" cy="122" r="9" fill="#b34c38" stroke="#fff" stroke-width="2"/>
+<text x="408" y="247" text-anchor="end" font-weight="700" fill="#2473a5">1</text>
+<text x="408" y="126" text-anchor="end" font-weight="700" fill="#b34c38">3</text>
+<text x="130" y="226" fill="#2473a5">f(x) = 1 khi x &lt; 0</text>
+<text x="552" y="101" fill="#b34c38">f(x) = 3 khi x ≥ 0</text>
+<text x="430" y="376" text-anchor="middle" font-size="17">Giới hạn trái = 1 · Giới hạn phải = 3 · Không có giới hạn hai phía tại 0</text>
+</g></svg>
