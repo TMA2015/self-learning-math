@@ -524,7 +524,7 @@
     "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
     "stem": "Lợi nhuận giả định của một hoạt động theo lượng `x` có dạng `P(x)=−x²+10x−16` (triệu đồng), với `0≤x≤10`. Xác định miền `x` để `P(x)>0`.",
     "answer_key": "`2<x<8`.",
-    "worked_solution": "`P(x)=−(x−2)(x−8)`, hệ số âm, dương giữa hai nghiệm, thỏa miền vật lý.\n\n## Bài 18 — 4 held-out candidate IDs",
+    "worked_solution": "`P(x)=−(x−2)(x−8)`, hệ số âm, dương giữa hai nghiệm, thỏa miền vật lý.",
     "skill_ids": [],
     "original_outcome_text": "",
     "problem_type_id": null,
