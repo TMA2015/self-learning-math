@@ -20,11 +20,11 @@
 
     ### 1.1. Góc giữa hai đường thẳng
 
-    **Hình thành bản chất theo HĐ1 SGK:** Hai đường \(m,n\) chéo nhau. Lấy điểm \(O\), dựng \(a\parallel m\), \(b\parallel n\) qua \(O\), rồi đo góc không tù giữa \(a,b\). Nếu thay \(O\) bằng \(O'\), vẫn dựng các đường theo **hai phương cũ**, kết quả góc không đổi. SGK minh họa việc đó qua các hình bình hành và định lí côsin: dời một phương song song không làm thay đổi góc. Vì vậy, **góc giữa hai đường thẳng** là góc của **hai phương**, không phụ thuộc vị trí đường trong không gian.
+    **Hình thành bản chất theo HĐ1 SGK:** Hai đường \(m,n\) chéo nhau. Lấy điểm \(O\), dựng các đường \(a,b\) qua \(O\) lần lượt cùng phương với \(m,n\) (có thể trùng đường ban đầu), rồi đo góc không tù giữa \(a,b\). Nếu thay \(O\) bằng \(O'\), vẫn dựng các đường theo **hai phương cũ**, kết quả góc không đổi. Thật vậy, trên hai đường qua \(O\), chọn hai tia rồi lấy \(A,B\) sao cho \(OA=OB=1\). Dời hai tia theo cùng hướng đến \(O'\) và lấy \(A',B'\) sao cho \(O'A'=O'B'=1\). Phép dời song song cho \(AB=A'B'\); hai tam giác bằng nhau theo ba cạnh nên góc giữa các tia được giữ nguyên. Lấy góc không tù giữa hai đường, kết quả cũng không đổi. Vì vậy, **góc giữa hai đường thẳng** là góc của **hai phương**, không phụ thuộc vị trí đường trong không gian.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg" alt="Sơ đồ dời hai phương của đường a và b tới hai đường song song a phẩy b phẩy qua O"><figcaption><strong>Hướng dẫn đọc hình:</strong> \(a,b\) là các phương ban đầu; \(a',b'\) nét đứt được dựng qua \(O\), song song tương ứng. Dấu góc vuông được đọc tại \(O\). Đây chỉ là sơ đồ **các phương**, không phải chứng minh rằng \(a,b\) trong hình thực tế chắc chắn chéo nhau; không đo độ dài/góc từ nét vẽ.</figcaption></figure>
 
-    **Góc nào được chọn?** Hai đường không có hướng ưu tiên. Nếu hai **tia** tạo góc \(120^\circ\), góc giữa hai **đường thẳng chứa các tia** được lấy là \(60^\circ\), vì hai góc kề bù là \(120^\circ\) và \(60^\circ\). Nói chung \(0^\circ\le(m,n)\le90^\circ\). Với hai đường song song hoặc trùng nhau, góc bằng \(0^\circ\).
+    **Góc nào được chọn?** Một đường thẳng không có chiều được chọn sẵn, nên không được lấy tùy ý góc giữa hai tia. Nếu hai **tia** tạo góc \(120^\circ\), góc giữa hai **đường thẳng chứa các tia** được lấy là \(60^\circ\), vì hai góc kề bù là \(120^\circ\) và \(60^\circ\). Nói chung \(0^\circ\le(m,n)\le90^\circ\). Với hai đường song song hoặc trùng nhau, góc bằng \(0^\circ\).
 
     **Cách chọn phương pháp:** Khi hai đường không gặp nhau, chọn một đường \(b'\parallel b\) đi qua điểm \(O\) thuộc đường \(a\) nếu thuận lợi. Sau đó tìm một **tam giác cụ thể** chứa hai phương đã đưa về một điểm; dùng góc đặc biệt, định lí côsin hoặc quan hệ vuông góc có chứng minh. Không được tự coi góc do hai nét vẽ cắt nhau trên giấy là góc thật trong không gian.
 
@@ -73,7 +73,7 @@
 
     ### 2.1. Góc giữa hai đường thẳng
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Góc giữa hai đường thẳng</strong><p>Trong không gian, góc giữa hai đường thẳng \(m,n\), kí hiệu \((m,n)\), là góc không tù giữa hai đường \(a,b\) cùng đi qua một điểm \(O\) và tương ứng song song (cùng phương) với \(m,n\). Kết quả không phụ thuộc vị trí \(O\). Với hai đường bất kì, \(0^\circ\le(m,n)\le90^\circ\). Hai đường song song hoặc trùng nhau có góc \(0^\circ\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Góc giữa hai đường thẳng</strong><p>Trong không gian, góc giữa hai đường thẳng \(m,n\), kí hiệu \((m,n)\), là góc không tù giữa hai đường \(a,b\) cùng đi qua một điểm \(O\) và tương ứng cùng phương (song song hoặc trùng) với \(m,n\). Kết quả không phụ thuộc vị trí \(O\). Với hai đường bất kì, \(0^\circ\le(m,n)\le90^\circ\). Hai đường song song hoặc trùng nhau có góc \(0^\circ\).</p></div>
 
     **Cách xác định có lí do:** Chọn \(O\) trên một đường nếu tiện và kẻ đường qua \(O\) song song đường còn lại. Dùng góc không tù tại \(O\), hoặc góc bù của góc tù. Nếu không nhận ra góc đặc biệt, tìm tam giác chứa hai phương và dùng định lí côsin từ các độ dài đã biết. Tránh đo trực tiếp từ hình vẽ phối cảnh.
 
