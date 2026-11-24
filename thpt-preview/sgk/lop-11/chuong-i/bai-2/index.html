@@ -11772,17 +11772,17 @@
 \overrightarrow{OA}\cdot\overrightarrow{OB}
   =\cos a\cos b+\sin a\sin b.
 \]</div>
-<p>Mặt khác, tính theo <strong>góc giữa hai vectơ</strong> cho <span class="arithmatex">\(\overrightarrow{OA}\cdot\overrightarrow{OB}=\cos(a-b)\)</span>. Hai cách tính cùng một đại lượng phải bằng nhau, nên</p>
+<p>Mặt khác, gọi <span class="arithmatex">\(\theta\in[0;\pi]\)</span> là góc không định hướng giữa hai vectơ. Hai tia có góc quay lần lượt là <span class="arithmatex">\(a,b\)</span>, nên <span class="arithmatex">\(\cos\theta=\cos(a-b)\)</span> (đổi dấu hoặc cộng một bội của <span class="arithmatex">\(2\pi\)</span> không đổi cos). Vì hai vectơ đều dài <span class="arithmatex">\(1\)</span>, tích vô hướng cũng bằng <span class="arithmatex">\(\cos\theta=\cos(a-b)\)</span>. Hai cách tính cùng một đại lượng phải bằng nhau, nên</p>
 <div class="arithmatex">\[
 \boxed{\cos(a-b)=\cos a\cos b+\sin a\sin b.}
 \]</div>
 <p>Đây là điểm xuất phát quan trọng: công thức của góc hiệu xuất hiện từ hình học, không phải quy tắc tùy ý cần học thuộc.</p>
-<p><figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B02_UNIT_CIRCLE_AUTHORING_RESET_20261122.svg" alt="Trên đường tròn đơn vị, hai vectơ OA và OB tạo các góc a bằng 60 độ và b bằng 30 độ với trục Ox; góc giữa hai vectơ bằng a trừ b."><figcaption><strong>Đọc hình:</strong> xác định hai tia <span class="arithmatex">\(OA,OB\)</span>, đọc góc <span class="arithmatex">\(a,b\)</span> từ trục <span class="arithmatex">\(Ox\)</span>, rồi nhìn góc giữa hai tia là <span class="arithmatex">\(a-b\)</span>. Hình minh họa trường hợp <span class="arithmatex">\(a=60^\circ,b=30^\circ\)</span>; lập luận bằng tích vô hướng ở trên mới giải thích công thức cho mọi góc thực.</figcaption></figure></p>
+<p><figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B02_UNIT_CIRCLE_AUTHORING_RESET_20261122.svg" alt="Trên đường tròn đơn vị, hai vectơ OA và OB tạo các góc a bằng 60 độ và b bằng 30 độ với trục Ox; góc giữa hai vectơ bằng a trừ b."><figcaption><strong>Đọc hình:</strong> xác định hai tia <span class="arithmatex">\(OA,OB\)</span>, đọc góc <span class="arithmatex">\(a,b\)</span> từ trục <span class="arithmatex">\(Ox\)</span>, rồi nhìn góc giữa hai tia trong hình này là <span class="arithmatex">\(a-b=30^\circ\)</span>. Hình minh họa trường hợp <span class="arithmatex">\(a=60^\circ,b=30^\circ\)</span>; lập luận bằng tích vô hướng ở trên mới giải thích công thức cho mọi góc thực.</figcaption></figure></p>
 <p>Vậy còn góc <strong>tổng</strong> thì sao? Thay <span class="arithmatex">\(b\)</span> bởi <span class="arithmatex">\(-b\)</span> trong công thức vừa tìm được. Vì <span class="arithmatex">\(\cos(-b)=\cos b\)</span> và <span class="arithmatex">\(\sin(-b)=-\sin b\)</span>, ta nhận được</p>
 <div class="arithmatex">\[
 \cos(a+b)=\cos a\cos b-\sin a\sin b.
 \]</div>
-<p>Với sin, ta dùng <span class="arithmatex">\(\sin x=\cos\left(\dfrac{\pi}{2}-x\right)\)</span>. Thay các góc phù hợp vào công thức cos sẽ cho</p>
+<p>Với sin, ta dùng <span class="arithmatex">\(\sin x=\cos\left(\dfrac{\pi}{2}-x\right)\)</span>. Chẳng hạn, <span class="arithmatex">\(\sin(a+b)=\cos((\pi/2-a)-b)=\cos(\pi/2-a)\cos b+\sin(\pi/2-a)\sin b=\sin a\cos b+\cos a\sin b\)</span>. Thay <span class="arithmatex">\(b\)</span> bằng <span class="arithmatex">\(-b\)</span> cho công thức hiệu. Ta có</p>
 <div class="arithmatex">\[
 \sin(a+b)=\sin a\cos b+\cos a\sin b,\qquad
 \sin(a-b)=\sin a\cos b-\cos a\sin b.
@@ -11830,7 +11830,7 @@
 <div class="arithmatex">\[
 2\sin a\sin b=\cos(a-b)-\cos(a+b).
 \]</div>
-<p>Tương tự, cộng và trừ hai công thức sin của tổng/hiệu sẽ cho cách biến <span class="arithmatex">\(\sin a\cos b\)</span> thành tổng. Phép biến đổi này đặc biệt tiện khi hai góc <span class="arithmatex">\(a-b\)</span> hoặc <span class="arithmatex">\(a+b\)</span> là góc quen thuộc, dù bản thân <span class="arithmatex">\(a,b\)</span> không dễ tính.</p>
+<p>Cộng hai công thức sin của tổng và hiệu, các số hạng <span class="arithmatex">\(\cos a\sin b\)</span> trái dấu triệt tiêu, nên <span class="arithmatex">\(2\sin a\cos b=\sin(a+b)+\sin(a-b)\)</span>. Phép biến đổi này đặc biệt tiện khi hai góc <span class="arithmatex">\(a-b\)</span> hoặc <span class="arithmatex">\(a+b\)</span> là góc quen thuộc, dù bản thân <span class="arithmatex">\(a,b\)</span> không dễ tính.</p>
 <p><strong>Vận dụng.</strong> Không dùng máy tính, tính <span class="arithmatex">\(2\cos75^\circ\cos45^\circ\)</span>.</p>
 <details class="question">
 <summary>Đối chiếu</summary>
@@ -11857,7 +11857,7 @@
 \cos u+\cos v
 =2\cos\frac{u+v}{2}\cos\frac{u-v}{2}.
 \]</div>
-<p>Vì vậy, <strong>nửa tổng và nửa hiệu</strong> không phải hai con số tự xuất hiện trong công thức; đó là cách tìm hai góc <span class="arithmatex">\(a,b\)</span> sao cho <span class="arithmatex">\(a+b=u\)</span>, <span class="arithmatex">\(a-b=v\)</span>. Hai công thức cho hiệu hai sin và hiệu hai cos cũng được suy ra bằng cách tương tự.</p>
+<p>Vì vậy, <strong>nửa tổng và nửa hiệu</strong> không phải hai con số tự xuất hiện trong công thức; đó là cách tìm hai góc <span class="arithmatex">\(a,b\)</span> sao cho <span class="arithmatex">\(a+b=u\)</span>, <span class="arithmatex">\(a-b=v\)</span>. Lấy hiệu thay vì tổng, ta cũng được <span class="arithmatex">\(\sin u-\sin v=2\cos\dfrac{u+v}{2}\sin\dfrac{u-v}{2}\)</span> và <span class="arithmatex">\(\cos u-\cos v=-2\sin\dfrac{u+v}{2}\sin\dfrac{u-v}{2}\)</span>. Dấu trừ ở công thức cos xuất phát từ <span class="arithmatex">\(\cos(a+b)-\cos(a-b)=-2\sin a\sin b\)</span>.</p>
 <p><strong>Vận dụng.</strong> Không dùng máy tính, tính <span class="arithmatex">\(\sin75^\circ-\sin15^\circ\)</span>.</p>
 <details class="question">
 <summary>Đối chiếu</summary>
@@ -11898,7 +11898,7 @@ y(t)=2\sin(840\pi t)\cos(40\pi t).
 <h3 id="21-cong-thuc-cong">2.1. Công thức cộng</h3>
 <p>Cho <span class="arithmatex">\(a,b\)</span> là hai góc thực. Mọi công thức dưới đây của sin và cos đều có nghĩa, không cần thêm điều kiện:</p>
 <p><div class="thpt-r4-key-formula" role="note"><strong>Công thức cộng</strong><p><span class="arithmatex">\(\cos(a-b)=\cos a\cos b+\sin a\sin b\)</span></p><p><span class="arithmatex">\(\cos(a+b)=\cos a\cos b-\sin a\sin b\)</span></p><p><span class="arithmatex">\(\sin(a-b)=\sin a\cos b-\cos a\sin b\)</span></p><p><span class="arithmatex">\(\sin(a+b)=\sin a\cos b+\cos a\sin b\)</span></p><p><span class="arithmatex">\(\tan(a-b)=\dfrac{\tan a-\tan b}{1+\tan a\tan b}\)</span></p><p><span class="arithmatex">\(\tan(a+b)=\dfrac{\tan a+\tan b}{1-\tan a\tan b}\)</span></p><p><strong>Điều kiện:</strong> hai công thức tan dạng phân số chỉ áp dụng khi <span class="arithmatex">\(\cos a\ne0\)</span>, <span class="arithmatex">\(\cos b\ne0\)</span> và mẫu <span class="arithmatex">\(1\pm\tan a\tan b\)</span> của từng công thức khác <span class="arithmatex">\(0\)</span>. Các công thức sin/cos đúng với mọi góc thực.</p></div></p>
-<p>Hai công thức tan là thương của các công thức sin/cos tương ứng. Chính vì có phép chia, <strong>phải kiểm điều kiện xác định trước khi thay số</strong>; không thể suy rằng công thức tan đúng tại mọi góc như các công thức sin/cos.</p>
+<p>Hai công thức tan được suy từ <span class="arithmatex">\(\tan(a\pm b)=\dfrac{\sin(a\pm b)}{\cos(a\pm b)}\)</span>. Thay công thức cộng/hiệu của sin và cos, rồi chia cả tử và mẫu cho <span class="arithmatex">\(\cos a\cos b\ne0\)</span>, ta được hai phân thức tan ở trên; mẫu của từng phân thức phải khác <span class="arithmatex">\(0\)</span>. Chính vì có phép chia, <strong>phải kiểm điều kiện xác định trước khi thay số</strong>; không thể suy rằng công thức tan đúng tại mọi góc như các công thức sin/cos.</p>
 <p><strong>Ghi nhớ cách nhận diện:</strong> Góc được viết như <span class="arithmatex">\(75^\circ=45^\circ+30^\circ\)</span> hoặc <span class="arithmatex">\(15^\circ=45^\circ-30^\circ\)</span> thường gợi ý công thức cộng/trừ.</p>
 <h3 id="22-cong-thuc-nhan-oi">2.2. Công thức nhân đôi</h3>
 <p><div class="thpt-r4-key-formula" role="note"><strong>Công thức nhân đôi</strong><p><span class="arithmatex">\(\sin2a=2\sin a\cos a\)</span></p><p><span class="arithmatex">\(\cos2a=\cos^2a-\sin^2a=2\cos^2a-1=1-2\sin^2a\)</span></p><p><span class="arithmatex">\(\tan2a=\dfrac{2\tan a}{1-\tan^2a}\)</span>, khi <span class="arithmatex">\(\cos a\ne0\)</span> và <span class="arithmatex">\(1-\tan^2a\ne0\)</span>.</p></div></p>
