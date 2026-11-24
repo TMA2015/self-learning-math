@@ -13,12 +13,13 @@ const rows=chapters.flatMap(([c,a,b])=>Array.from({length:b-a+1},(_,i)=>({
 })));
 for(const n of [1,2,3,4])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-i/bai-"+n});
 for(const n of [5,6,7,8,9])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-"+(n<=7?"ii":"iii")+"/bai-"+n});
+for(const n of [10,11,12,13,14])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-iv/bai-"+n});
 const mode=process.env.SGK_FIRST_PAINT_MODE||"FULL";
-assert(["FULL","G11_W1","G11_W2"].includes(mode),"Unknown First Paint QA mode");
-const scoped=mode!=="FULL",w2=mode==="G11_W2";
-const selected=scoped?rows.filter(x=>x.grade===10&&x.n===10||x.grade===11&&(w2?x.n>=4:x.n<=4)):rows;
-const smoke=row=>row.grade===10||row.grade===11&&row.n===(w2?4:1);
-const chapterFor=n=>n<=4?"i":n<=7?"ii":n<=9?"iii":"iv";
+assert(["FULL","G11_W1","G11_W2","G11_W3"].includes(mode),"Unknown First Paint QA mode");
+const scoped=mode!=="FULL",w2=mode==="G11_W2",w3=mode==="G11_W3";
+const selected=scoped?rows.filter(x=>x.grade===10&&x.n===10||x.grade===11&&(w3?x.n>=9:w2?x.n>=4&&x.n<=9:x.n<=4)):rows;
+const smoke=row=>row.grade===10||row.grade===11&&row.n===(w3?9:w2?4:1);
+const chapterFor=n=>n<=4?"i":n<=7?"ii":n<=9?"iii":n<=14?"iv":"v";
 const headings=["1. Khám phá kiến thức","2. Kiến thức SGK",
  "3. Ví dụ","4. Lỗi thường gặp và cách tự khắc phục"];
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
@@ -53,11 +54,11 @@ for(const row of selected){
  for(const k of ["data-thpt-first-try-id","data-thpt-help-id"])
   assert.deepEqual(attr(html,k),attr(source,k),row.rel+" Q15 source-to-DOM "+k);
 }
-for(const rel of ["thpt-preview/sgk/lop-11/chuong-iv/bai-10","thpt-preview/sgk/lop-12/chuong-i/bai-1"])
+for(const rel of ["thpt-preview/sgk/lop-11/chuong-v/bai-15","thpt-preview/sgk/lop-12/chuong-i/bai-1"])
  assert(!read("site-thpt-preview/"+rel+"/index.html").includes('data-sgk-golden-first-paint="true"'),
   rel+" excluded route modified");
-assert.equal(selected.length,scoped?(w2?7:5):36);
-console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four headings, IDs, excluded G11 B10/G12");
+assert.equal(selected.length,scoped?(w2||w3?7:5):41);
+console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four headings, IDs, excluded G11 B15/G12");
 
 (async()=>{
  for(const [engine,driver] of (scoped?[["Chromium",chromium]]:[["Chromium",chromium],["WebKit",webkit]])){
@@ -160,7 +161,7 @@ console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four hea
    }
   }
  }finally{await browser.close()}
- assert.equal(checks,scoped?(w2?34:22):reps.length*3*2);
+ assert.equal(checks,scoped?(w2||w3?34:22):reps.length*3*2);
  console.log("PASS GOLDEN FIRST PAINT "+engine+": "+checks+
   " JS/no-JS modes/viewports; max top-of-page geometric delta "+
   maxGeometryDelta.toFixed(2)+"px");
