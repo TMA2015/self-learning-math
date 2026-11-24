@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 45/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B13, còn B14–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 46/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B14, còn B15–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B13 CONTENT_READY; B14–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B14 CONTENT_READY; B15–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -58,7 +58,8 @@
 | 12 | B11 | [#1080](https://github.com/TMA2015/self-learning-math/pull/1080) | CONTENT_READY — đã bàn giao |
 | 12 | B12 | [#1081](https://github.com/TMA2015/self-learning-math/pull/1081) | CONTENT_READY — đã bàn giao |
 | 12 | B13 | [#1082](https://github.com/TMA2015/self-learning-math/pull/1082) | CONTENT_READY — đã bàn giao |
-| 12 | B14–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B14 | [#1083](https://github.com/TMA2015/self-learning-math/pull/1083) | CONTENT_READY — đã bàn giao |
+| 12 | B15–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -285,6 +286,16 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B12_FIG01_AREA_DERIVATIVE_AUT
 | [#1082](https://github.com/TMA2015/self-learning-math/pull/1082) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md` | `546fdbeaa1080b169876592d9ee945b9434a51be` | `51b5cf8243b4793e159db862379a21df60ff75bd` | `6b782fbfdba8fed2eed5ce8423b6f9d1da451246` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg` (`af5e42bcb3b150c706d472a92be96399b480e02c`); `G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg` (`9fb3c7377877eaea2b5de466659c85437e95a7b7`); `G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg` (`01143627de4f6c90e3a74f6945c284c76f256c4a`).
+
+### Toán 12 B14 — Phương trình mặt phẳng (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đọc văn bản [SGK KNTT Toán 12 tập 2 trang in 29–40](https://thuvienhoclieu.com/wp-content/uploads/2023/11/thuvienhoclieu.com-SGK-Toan-lop-12-KNTT-Tap-2.pdf), HĐ1–10, Ví dụ 1–12, Vận dụng 1–5, bài tập 5.1–5.10, phần đọc thêm; screenshot PDF cache miss, không tuyên bố kiểm ảnh nguồn. Đối chiếu mẫu Golden G10 B19 và checklist owner. Bốn tab, sáu mục đúng SGK: pháp tuyến/cặp chỉ phương, phương trình tổng quát, lập phương trình, vuông góc, song song, khoảng cách. Dẫn dắt tích có hướng từ hai tích vô hướng bằng 0; phương trình từ hiệu tọa độ; đoạn chắn, dữ kiện suy biến, phân biệt hướng và vị trí, kiểm trùng/song song bằng bốn hệ số; chứng minh khoảng cách và tìm hình chiếu, chuẩn hóa khoảng cách giữa hai mặt phẳng song song. Mômen lực, quỹ đạo phẳng, tường phòng, tổng điểm và mô hình camera. 10 ví dụ, 6 Vận dụng có Đối chiếu/Kiểm lỗi, 7 lỗi thực chất. Hai SVG riêng B14 sinh từ tọa độ, PNG cũ giữ nguyên. 39 nhóm tự kiểm đạt (tích có hướng, điểm thuộc, quan hệ mặt phẳng, suy biến, khoảng cách/hình chiếu, tọa độ hình, cấu trúc); sau kiểm làm rõ một câu diễn đạt, readback xác nhận chỉ thay câu đó, bảo toàn kết quả. Tập OUTCOME_ID/FIRST_TRY_ID không đổi. Diff chỉ canonical và hai SVG riêng.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1083](https://github.com/TMA2015/self-learning-math/pull/1083) | `docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md` | `b0604cb989182eaf8bea58c5787e9032bfb83b94` | `265381a3bcef201aefff38185753a35f706237c1` | `953ea63b73f6d2abb1cdb46230f2bebbe5d767d2` |
+
+Asset delta tại `docs/assets/images/thpt/`: `G12_B14_FIG01_NORMAL_AUTHORING_20261124.svg` (`7a847024e9a36e7c483365b2f42965493743e2d6`); `G12_B14_FIG02_DISTANCE_AUTHORING_20261124.svg` (`c144223eac2eb53227f0e734354e8dd3023f2eb0`).
 
 ## Cách cập nhật
 
