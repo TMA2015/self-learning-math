@@ -4873,5 +4873,69 @@
     "item_id": "THPT-G11-B14-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHV:B15:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B15-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHV:B17:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B17-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B18:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B18-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B19:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B19-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B20:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B20-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHVI:B21:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B21-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B22:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B22-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B26-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
   }
 ]
