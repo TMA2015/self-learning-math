@@ -564,7 +564,7 @@
     "content_version": "1698c220a7d507eacf0774de09f7fdd5ae5711bbdd900d943ddeb365b4670bd4",
     "stem": "Cho đường tròn $(C):x^2+(y+1)^2=9$. Đánh giá: (a) $y=2$ tiếp xúc $(C)$; (b) tiếp điểm ở $(0;-2)$; (c) $y=1$ cắt $(C)$ tại hai điểm; (d) đường thẳng $y=3$ cắt $(C)$ tại hai điểm.",
     "answer_key": "(a) Đ; (b) S; (c) Đ; (d) S.",
-    "worked_solution": "Tâm $(0,-1)$, $R=3$. Khoảng cách từ tâm đến $y=2$ là 3, nên tiếp xúc ở $(0,2)$. Đến $y=1$ là 2 (<3), cắt hai điểm. Đến $y=3$ là 4 (>3), không giao. MERGE_COVERAGE: dùng chung chứng cứ vị trí đường–tròn, không tạo điểm mastery độc lập.",
+    "worked_solution": "Tâm $(0,-1)$, $R=3$. Khoảng cách từ tâm đến $y=2$ là 3, nên tiếp xúc ở $(0,2)$. Đến $y=1$ là 2 (<3), cắt hai điểm. Đến $y=3$ là 4 (>3), không giao.",
     "skill_ids": [],
     "original_outcome_text": "",
     "problem_type_id": null,
