@@ -1846,5 +1846,221 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-T01",
+    "content_version": "SOURCE_BLOB_f3fc0f654a21af7ec72de657643ef97488413dcb",
+    "stem": "Một vật có s(t)=t²+3. Hãy tìm tốc độ v(t) và đoán hàm s(t) nếu chỉ biết v(t)=2t.",
+    "answer_key": null,
+    "worked_solution": "v(t)=2t. Có vô số vị trí s(t)=t²+C; vị trí xuất phát chọn C.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f3fc0f654a21af7ec72de657643ef97488413dcb",
+      "heading_id": "B11-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md",
+        "blob": "f3fc0f654a21af7ec72de657643ef97488413dcb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B11-T01",
+      "line": 189,
+      "original_local_id": "B11-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID",
+      "related_item_ids": [
+        "THPT-G12-B11-P02",
+        "THPT-G12-B11-A01"
+      ],
+      "distinct_task_reason": "Derivative 2t and family t²+C differ from fixed initial condition or cubic velocity; source calls signed velocity speed, domain missing."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B11-T02",
+    "content_version": "SOURCE_BLOB_f3fc0f654a21af7ec72de657643ef97488413dcb",
+    "stem": "Tại x>0, kiểm tra xem F(x)=ln x có đạo hàm 1/x không; vì sao không thay bằng ln x trên x<0?",
+    "answer_key": null,
+    "worked_solution": "Có. (ln x)'=1/x trên x>0; với x<0 hàm ln x không xác định thực, dùng ln|x|.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "f3fc0f654a21af7ec72de657643ef97488413dcb",
+      "heading_id": "B11-T02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md",
+        "blob": "f3fc0f654a21af7ec72de657643ef97488413dcb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B11-T02",
+      "line": 200,
+      "original_local_id": "B11-T02",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID",
+      "related_item_ids": [
+        "THPT-G11-CHIX-B32-C11",
+        "THPT-G12-B11-C04"
+      ],
+      "distinct_task_reason": "Source asks verification on x>0 and why ln x invalid on x<0; existing derivative only or integral of 2/x."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-T01",
+    "content_version": "SOURCE_BLOB_2ea14427518e58acb03e85d64dcc6b18d55f8798",
+    "stem": "Nếu f(x)=x từ −1 đến1, tổng tích phân có dấu có bằng diện tích hình học không?",
+    "answer_key": null,
+    "worked_solution": "Không: ∫_{−1}¹x dx=0, nhưng S=∫|x|dx=1.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ea14427518e58acb03e85d64dcc6b18d55f8798",
+      "heading_id": "B12-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md",
+        "blob": "2ea14427518e58acb03e85d64dcc6b18d55f8798",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B12-T01",
+      "line": 191,
+      "original_local_id": "B12-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B12-T02",
+    "content_version": "SOURCE_BLOB_2ea14427518e58acb03e85d64dcc6b18d55f8798",
+    "stem": "Cho ∫_0²f=3 và ∫_2⁵f=−4. Không tìm f, hãy tính ∫_5⁰f.",
+    "answer_key": null,
+    "worked_solution": "∫_0⁵f=−1 nên ∫_5⁰f=1.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2ea14427518e58acb03e85d64dcc6b18d55f8798",
+      "heading_id": "B12-T02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md",
+        "blob": "2ea14427518e58acb03e85d64dcc6b18d55f8798",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B12-T02",
+      "line": 202,
+      "original_local_id": "B12-T02",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-T01",
+    "content_version": "SOURCE_BLOB_51b5cf8243b4793e159db862379a21df60ff75bd",
+    "stem": "Hai đồ thị y=x² và y=x trên [0,1]: đồ thị nào ở trên và cần lấy hiệu theo chiều nào?",
+    "answer_key": null,
+    "worked_solution": "Trên [0,1], x≥x² nên lấy x−x². Diện tích =1/6.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "51b5cf8243b4793e159db862379a21df60ff75bd",
+      "heading_id": "B13-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md",
+        "blob": "51b5cf8243b4793e159db862379a21df60ff75bd",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B13-T01",
+      "line": 217,
+      "original_local_id": "B13-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID",
+      "related_item_ids": [
+        "THPT-G12-B13-C04"
+      ],
+      "distinct_task_reason": "Same curves/interval, source asks upper curve and integrand order; canonical asks area, solution includes integrand. Do not collapse different required output."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B13-T02",
+    "content_version": "SOURCE_BLOB_51b5cf8243b4793e159db862379a21df60ff75bd",
+    "stem": "Khi quay miền dưới y=x (0≤x≤2) quanh Ox, lát cắt tại x có bán kính và diện tích bao nhiêu?",
+    "answer_key": null,
+    "worked_solution": "Bán kính r=x, diện tích đĩa S=πx²; thể tích =π∫_0²x²dx=8π/3.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "51b5cf8243b4793e159db862379a21df60ff75bd",
+      "heading_id": "B13-T02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md",
+        "blob": "51b5cf8243b4793e159db862379a21df60ff75bd",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B13-T02",
+      "line": 228,
+      "original_local_id": "B13-T02",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID",
+      "related_item_ids": [
+        "THPT-G12-B13-C08"
+      ],
+      "distinct_task_reason": "Same solid, source asks slice radius and area; canonical asks full volume."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
