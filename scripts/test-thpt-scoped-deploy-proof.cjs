@@ -484,7 +484,7 @@ function verifyW1Tab4Hotfix(previous,current,changed,expected){
 }
 
 // #1039 W1 review delta: exact path and blob locks, preserve published tab4 and all frozen sources.
-const G11_W1_REVIEW_DELTA_FILES=["docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs"];
+const G11_W1_REVIEW_DELTA_FILES=[".github/workflows/sgk-golden-first-paint-qa.yml","docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs"];
 const G11_W1_REVIEW_ROWS=[[2,"d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6","573e2d8fc84e89112c6b061b39e6a53465659472"],[3,"9177a10ade8788712c6b9fbf39789822df2a417a","6a88cfa1fc03f8ed6f642fc448bea286dfd9f55c"],[4,"0714c5b72389d29dbc8993c2ce9828fc98cf7a92","515ad705f86b2448b262026f2f2fb8d3ec2e5bdc"]];
 function verifyW1ReviewDelta(previous,current,changed,expected){
  assert.deepEqual(changed.slice().sort(),G11_W1_REVIEW_DELTA_FILES.slice().sort(),"W1 review delta exact diff");
