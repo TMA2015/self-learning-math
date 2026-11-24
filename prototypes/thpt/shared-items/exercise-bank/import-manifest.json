@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 469,
+    "legacy_combined_answer_items": 447,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_240_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_262_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 240 manually verified and key separated at checkpoints 29–36; 469 remain combined, answer_key=null. Preserve source and solution except explicit scoped author clarifications; self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 262 manually verified and key separated at checkpoints 29–37; 447 remain combined, answer_key=null. Preserve source history; scoped author clarifications in candidate. Self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 469,
+      "remaining_combined_answer_items": 447,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 240,
-        "remaining_count": 469,
+        "reviewed_count": 262,
+        "remaining_count": 447,
         "batches": [
           {
             "checkpoint": 29,
@@ -8712,6 +8712,283 @@
               "B04-P02 restore differentiability at sign-change points; B04-P01/P06 prove central symmetry directly via translated coordinates rather than an unsupported identification; B04-P05 verify sign change/tangency; B04-P04 distinguish local extrema from global values.",
               "B05-C04/P05 restore rectangular cardboard dimensions, square cuts and nondegenerate domain; A01 restore rectangular garden and derive optimum from 2x+y=40; A03 prove optimum q=100; P03 distinguish derivative units from finite cost increment (9.02 thousand VND). P02 speed |t−3| decreases before t=3, increases after, not differentiable at t=3.",
               "Source historical snapshot and existing skill IDs preserved; no PDF SGK re-read or full independent Academic/PED/reveal/D6 verdict. G12 remaining combined: 22 across ChII–VI."
+            ]
+          },
+          {
+            "checkpoint": 37,
+            "baseline": "5b881d7fd672fd57307bd0ada1b483257c655f48",
+            "reviewed_candidate": "9015aa0320558ab97a6f4730a2d457fbae8931bc",
+            "scope": "G12 SGK ChII–VI, 22 first-try records across 14 historical learner source blobs. Checked exact stem and solution against source, independently recalculated answers, separated key, 21 scoped improvements; existing skill IDs only. This completes original SGK legacy combined group 262/262 (G10 144, G11 40, G12 78).",
+            "shards": [
+              {
+                "shard": "g12-chii",
+                "before": "2019271fd7df8f7a6ddb3f33d762a18acb1c76c7",
+                "after": "e5de29bcecc10561c737172ddda860c95fd826bc",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G12-B06-T01",
+                    "source_blob": "8991c8a30487fdf1db65cf31a19b0ed68ef52518",
+                    "answer_key": "AC′⃗; tích vô hướng bằng 5, dương.",
+                    "skill_ids": [
+                      "G12-CHII-B06-O03",
+                      "G12-CHII-B06-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B07-T01",
+                    "source_blob": "4bfbed222d552f3ccb9c965616245015930ab1cd",
+                    "answer_key": "AB⃗=(3;3;−2); x_N=0.",
+                    "skill_ids": [
+                      "G12-CHII-B07-O04",
+                      "G12-CHII-B07-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-B08-T01",
+                    "source_blob": "c85922428c85ddeb48cec5e2bd5953faa44207c8",
+                    "answer_key": "Tích vô hướng −8, âm; 2u⃗−v⃗=(3;−6;8). Hiệu vectơ là vectơ, hiệu độ dài là số.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O04",
+                      "G12-CHII-B08-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 48
+              },
+              {
+                "shard": "g12-chiii",
+                "before": "61450d038a04cf18782835ef1e4f976417af599a",
+                "after": "7b51199f901dbd366eea1eaee4fba3d67f8c3d61",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G12-B09-T01",
+                    "source_blob": "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+                    "answer_key": "Lớp đầu có dữ liệu [5;10); R=10.",
+                    "skill_ids": [
+                      "G12-CHIII-B09-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B09-T02",
+                    "source_blob": "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+                    "answer_key": "n=40; n/4=10 thuộc lớp 2; 3n/4=30 thuộc lớp 3.",
+                    "skill_ids": [
+                      "G12-CHIII-B09-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B10-T01",
+                    "source_blob": "32f4eda1cfd151592eef5a35921ad872c1f644c4",
+                    "answer_key": "Không; tổng độ lệch bằng 0, tổng bình phương độ lệch bằng 18.",
+                    "skill_ids": [
+                      "G12-CHIII-B10-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 36
+              },
+              {
+                "shard": "g12-chiv",
+                "before": "2d35f0cd00cf68e7fd1543a92f55e955a2afd6f2",
+                "after": "142b6aa1a53e0bce4f15870e5d9355b589a3dcf7",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G12-B11-T01",
+                    "source_blob": "f3fc0f654a21af7ec72de657643ef97488413dcb",
+                    "answer_key": "v(t)=2t; họ tọa độ s(t)=t²+C, C∈ℝ.",
+                    "skill_ids": [
+                      "G12-CHIV-B11-O01",
+                      "G12-CHIV-B11-O02"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B11-T02",
+                    "source_blob": "f3fc0f654a21af7ec72de657643ef97488413dcb",
+                    "answer_key": "Có; trên x<0 dùng ln|x|=ln(−x).",
+                    "skill_ids": [
+                      "G12-CHIV-B11-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B12-T01",
+                    "source_blob": "2ea14427518e58acb03e85d64dcc6b18d55f8798",
+                    "answer_key": "Không; tích phân bằng 0, diện tích bằng 1.",
+                    "skill_ids": [
+                      "G12-CHIV-B12-O05"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B12-T02",
+                    "source_blob": "2ea14427518e58acb03e85d64dcc6b18d55f8798",
+                    "answer_key": "∫₅⁰ f(x) dx=1.",
+                    "skill_ids": [
+                      "G12-CHIV-B12-O03"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B13-T01",
+                    "source_blob": "51b5cf8243b4793e159db862379a21df60ff75bd",
+                    "answer_key": "y=x ở trên y=x² trên (0;1); lấy x−x², bằng 0 tại hai đầu mút.",
+                    "skill_ids": [
+                      "G12-CHIV-B13-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B13-T02",
+                    "source_blob": "51b5cf8243b4793e159db862379a21df60ff75bd",
+                    "answer_key": "Bán kính r=x; diện tích lát cắt S(x)=πx².",
+                    "skill_ids": [
+                      "G12-CHIV-B13-O08"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 66
+              },
+              {
+                "shard": "g12-chv",
+                "before": "9530eb5aa289caac0165401df82bc37e972722ca",
+                "after": "246a416d183c78a322bcb0850da123a34d5b9496",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G12-B14-T01",
+                    "source_blob": "265381a3bcef201aefff38185753a35f706237c1",
+                    "answer_key": "u⃗·n⃗=0.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O04"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B15-T01",
+                    "source_blob": "05a81b707824146d6829ef385091dd4046bbe8fe",
+                    "answer_key": "M=M₀.",
+                    "skill_ids": [
+                      "G12-CHV-B15-O01"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B15-T02",
+                    "source_blob": "05a81b707824146d6829ef385091dd4046bbe8fe",
+                    "answer_key": "Giao điểm duy nhất (2;1;4).",
+                    "skill_ids": [
+                      "G12-CHV-B15-O07"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B16-T01",
+                    "source_blob": "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+                    "answer_key": "1.",
+                    "skill_ids": [
+                      "G12-CHII-B08-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B17-T01",
+                    "source_blob": "29b609be3195efcd341aea39cb604a930dba8468",
+                    "answer_key": "9.",
+                    "skill_ids": [
+                      "G12-CHV-B17-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B17-T02",
+                    "source_blob": "29b609be3195efcd341aea39cb604a930dba8468",
+                    "answer_key": "Mặt phẳng tiếp xúc mặt cầu tại (3;0;0).",
+                    "skill_ids": [
+                      "G12-CHV-B17-O05"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 72
+              },
+              {
+                "shard": "g12-chvi",
+                "before": "65bf6d7237747aaea34cb0260f880c0a3ab28d47",
+                "after": "059391b39ba3218f75dc73341a706e26268f3353",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G12-B18-KFT01",
+                    "source_blob": "c5e96be714ed2b3d440c37c5507ddc79314bf087",
+                    "answer_key": "2/5.",
+                    "skill_ids": [
+                      "G12-CHVI-B18-O01"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B18-KFT02",
+                    "source_blob": "c5e96be714ed2b3d440c37c5507ddc79314bf087",
+                    "answer_key": "1/2.",
+                    "skill_ids": [
+                      "G12-CHVI-B18-O07"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B19-KFT01",
+                    "source_blob": "e9588ca5fcdb107aa62990dc2e36635ef01085c0",
+                    "answer_key": "0,025=1/40=2,5%.",
+                    "skill_ids": [
+                      "G12-CHVI-B19-O02"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-B19-KFT02",
+                    "source_blob": "e9588ca5fcdb107aa62990dc2e36635ef01085c0",
+                    "answer_key": "0,4=2/5=40%.",
+                    "skill_ids": [
+                      "G12-CHVI-B19-O04"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 42
+              }
+            ],
+            "notes": [
+              "B11-T01 correct velocity terminology and explicitly set t≥0; B13-T02 define bounded region; B14-T01 remove irrelevant cross product explanation; B15-T01/T02 give vector/line notation and derive intersection; B17-T02 define sphere and plane, prove tangency.",
+              "B14-T01/B16-T01 map existing prerequisite G12-CHII-B08-O04 (dot product) rather than claim full plane/angle outcome. B17-T01 is only radius-squared prerequisite of sphere equation, not proof of full outcome. B19-KFT02 restates data so it is independently solvable; context pointer retained.",
+              "B18 and B19 specify uniform random selection and explain conditional probability, total probability and Bayes; B09 distinguishes grouped range from exact raw data range. Full original SGK PDF reread, outcome/PED/reveal/D6/independent review remain pending. No runtime or release authorization."
             ]
           }
         ]
