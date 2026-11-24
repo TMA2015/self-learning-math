@@ -1299,8 +1299,8 @@
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3840,
-    "projection_field_differences": 47,
+    "placements": 3841,
+    "projection_field_differences": 48,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
     "legacy_combined_answer_items": 653,
@@ -1830,6 +1830,23 @@
       },
       "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
       "reason": "Same slope direction (3,0,4), length 5, angle with horizontal plane; same arcsin(4/5), source states implied length explicitly."
+    },
+    {
+      "item_id": "THPT-G11-B08-C02",
+      "projection": "SGK:G11:CHIII:B08:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-iii/bai-8.md",
+        "blob": "4f3d1af635dd548700ad3514aff283ebe29aa9a2",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+        "locator": "details[data-ped-first-try] #1",
+        "line": 21
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
+      "reason": "Same boundary 10, same adjacent groups, third group does not alter the answer, same reason left endpoint included."
     }
   ],
   "academic_audit": "PENDING",
@@ -2712,7 +2729,7 @@
         "public_blob": "bde0820d157a5169d3cf365c846cf11169d40035"
       }
     ],
-    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_SOURCE_MAPPING_PENDING",
+    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_MAPPING_IN_PROGRESS",
     "sgk_pages": [
       {
         "grade": 10,
@@ -2989,7 +3006,63 @@
         "reused": 0,
         "unkeyed_activity_blocks": 5,
         "locator": "Markdown bold Vận dụng labels in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Vận dụng #1",
+            "line": 61,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-CHI-RD1-05"
+            ],
+            "reason": "Existing public selfcheck asks both sin15° and cos15°; source asks cos15° by difference formula only. Same answer as sin75° is not same task.",
+            "source_answer_present": true
+          },
+          {
+            "order": 2,
+            "locator": "Vận dụng #2",
+            "line": 88,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B02-P06",
+              "THPT-G11-CHI-RD1-07"
+            ],
+            "reason": "Different angle data/signs, not same task.",
+            "source_answer_present": true
+          },
+          {
+            "order": 3,
+            "locator": "Vận dụng #3",
+            "line": 120,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B02-P04"
+            ],
+            "reason": "Existing uses different product and angles.",
+            "source_answer_present": true
+          },
+          {
+            "order": 4,
+            "locator": "Vận dụng #4",
+            "line": 155,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B02-P05"
+            ],
+            "reason": "Source asks difference, existing asks sum.",
+            "source_answer_present": true
+          },
+          {
+            "order": 5,
+            "locator": "Vận dụng #5",
+            "line": 183,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [],
+            "reason": "Two-signal sum/product and varying envelope not found.",
+            "source_answer_present": true
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3002,7 +3075,75 @@
         "reused": 0,
         "unkeyed_activity_blocks": 6,
         "locator": "Markdown bold Vận dụng labels in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Vận dụng #1",
+            "line": 48,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B03-C01",
+              "THPT-G11-B01-C02"
+            ],
+            "reason": "Source asks four functions at 0 and π/2, including undefined values; existing tasks differ.",
+            "source_answer_present": true
+          },
+          {
+            "order": 2,
+            "locator": "Vận dụng #2",
+            "line": 66,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHI-RD1-11",
+              "THPT-G11-B03-C02"
+            ],
+            "reason": "Different function and constant-function minimum-positive-period question.",
+            "source_answer_present": true
+          },
+          {
+            "order": 3,
+            "locator": "Vận dụng #3",
+            "line": 84,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-B03-C04"
+            ],
+            "reason": "Existing asks range and maxima on R; source also asks positive interval and minimum on [0,2π].",
+            "source_answer_present": true
+          },
+          {
+            "order": 4,
+            "locator": "Vận dụng #4",
+            "line": 102,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B03-P05"
+            ],
+            "reason": "Existing asks zeros, source asks strict negative interval.",
+            "source_answer_present": true
+          },
+          {
+            "order": 5,
+            "locator": "Vận dụng #5",
+            "line": 120,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [],
+            "reason": "Source asks tan x ≥0 on one open branch.",
+            "source_answer_present": true
+          },
+          {
+            "order": 6,
+            "locator": "Vận dụng #6",
+            "line": 138,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B03-P07"
+            ],
+            "reason": "Existing asks monotonicity, not negative interval.",
+            "source_answer_present": true
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3015,7 +3156,71 @@
         "reused": 0,
         "unkeyed_activity_blocks": 6,
         "locator": "Markdown bold Vận dụng labels in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Vận dụng #1",
+            "line": 49,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [],
+            "reason": "Two pairs of equivalent/non-equivalent equations, not found.",
+            "source_answer_present": true
+          },
+          {
+            "order": 2,
+            "locator": "Vận dụng #2",
+            "line": 67,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-B04-C01"
+            ],
+            "reason": "Existing solves same sin equation on R only; source additionally lists solutions in [0,2π).",
+            "source_answer_present": true
+          },
+          {
+            "order": 3,
+            "locator": "Vận dụng #3",
+            "line": 85,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-B03-P05"
+            ],
+            "reason": "Existing asks zeros on [0,2π]; source also asks full real solution family.",
+            "source_answer_present": true
+          },
+          {
+            "order": 4,
+            "locator": "Vận dụng #4",
+            "line": 103,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHI-RD1-19"
+            ],
+            "reason": "Same solution family for a different equation does not establish same task.",
+            "source_answer_present": true
+          },
+          {
+            "order": 5,
+            "locator": "Vận dụng #5",
+            "line": 121,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B04-C04"
+            ],
+            "reason": "Existing cot x=1, source cot x=−1.",
+            "source_answer_present": true
+          },
+          {
+            "order": 6,
+            "locator": "Vận dụng #6",
+            "line": 137,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [],
+            "reason": "Principal arcsine angle and RAD/DEG comparison, not found.",
+            "source_answer_present": true
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3028,7 +3233,20 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 19,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B05-C01"
+            ],
+            "reason": "Linked follow-up C01 is a different task; source u_n=2n−1, u4=7.",
+            "source_answer_present": true
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3041,7 +3259,21 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 19,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B06-C01",
+              "THPT-TOP07-P10"
+            ],
+            "reason": "Follow-up C01 different; topic P10 asks total 10 rows, source asks fourth row, 21 seats.",
+            "source_answer_present": true
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3054,7 +3286,21 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 19,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-B07-C01",
+              "THPT-G11-B07-P08"
+            ],
+            "reason": "Source 100×1.1²; linked C01 different sequence and P08 different investment data.",
+            "source_answer_present": true
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3064,10 +3310,24 @@
         "blob": "4f3d1af635dd548700ad3514aff283ebe29aa9a2",
         "markers": 0,
         "imported": 0,
-        "reused": 0,
+        "reused": 1,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "SOURCE_MAPPING_RESOLVED",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 21,
+            "status": "REUSE_CONFIRMED",
+            "candidate_item_ids": [
+              "THPT-G11-B08-C02"
+            ],
+            "reason": "Same boundary 10, same adjacent groups, third group does not alter the answer, same reason left endpoint included.",
+            "source_answer_present": true,
+            "item_id": "THPT-G11-B08-C02"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3080,7 +3340,21 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 21,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-B09-C04",
+              "THPT-G11-B09-C03"
+            ],
+            "reason": "C04 same grouped data and median class, source also asks total n and explicit position 10. Linked C03 uses different frequencies.",
+            "source_answer_present": true
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3767,6 +4041,16 @@
         ],
         "reason": "Source asks n plus both quartile positions; existing records each cover only one quartile, preserve combined task pending mapping."
       }
-    ]
+    ],
+    "g11_mapping_review": {
+      "reviewed_blocks": 22,
+      "reused": 1,
+      "partial_matches": 5,
+      "no_exact_match_in_reviewed_shards": 16,
+      "unreviewed_blocks": 24,
+      "pending_mapping_blocks": 45,
+      "scope": "G11 B02–B09; inspected same-chapter canonical records, relevant G11 ChI public selfcheck, all 22 Topic shards (trig candidate filter), Topic first-try and Written reference inventory, G10 ChIII trig shards; dãy số/statistics relevant topic candidates. Global cross-shard reconciliation remains pending.",
+      "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    }
   }
 }
