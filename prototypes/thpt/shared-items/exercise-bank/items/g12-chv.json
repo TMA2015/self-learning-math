@@ -2086,5 +2086,207 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B14-T01",
+    "content_version": "SOURCE_BLOB_265381a3bcef201aefff38185753a35f706237c1",
+    "stem": "Tính u·n với u=(1,2,0),n=(2,-1,0).",
+    "answer_key": null,
+    "worked_solution": "**Đối chiếu:** 0.\n\n**Vì sao:** Tích vô hướng bằng 0, tích có hướng và định nghĩa hai vectơ không cùng phương..",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "265381a3bcef201aefff38185753a35f706237c1",
+      "heading_id": "B14-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md",
+        "blob": "265381a3bcef201aefff38185753a35f706237c1",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B14-T01",
+      "line": 141,
+      "original_local_id": "B14-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-T01",
+    "content_version": "SOURCE_BLOB_05a81b707824146d6829ef385091dd4046bbe8fe",
+    "stem": "Tại t=0, M0+t u bằng gì?",
+    "answer_key": null,
+    "worked_solution": "**Đối chiếu:** M0.\n\n**Vì sao:** Cộng vectơ và tọa độ điểm M0+t u..",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "05a81b707824146d6829ef385091dd4046bbe8fe",
+      "heading_id": "B15-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md",
+        "blob": "05a81b707824146d6829ef385091dd4046bbe8fe",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B15-T01",
+      "line": 163,
+      "original_local_id": "B15-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B15-T02",
+    "content_version": "SOURCE_BLOB_05a81b707824146d6829ef385091dd4046bbe8fe",
+    "stem": "d=(t,1,2t), P:x+z−6=0. Tìm giao.",
+    "answer_key": null,
+    "worked_solution": "**Đối chiếu:** (2,1,4).\n\n**Vì sao:** Thế phương trình tham số vào phương trình mặt phẳng..",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "05a81b707824146d6829ef385091dd4046bbe8fe",
+      "heading_id": "B15-T02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md",
+        "blob": "05a81b707824146d6829ef385091dd4046bbe8fe",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B15-T02",
+      "line": 176,
+      "original_local_id": "B15-T02",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B16-T01",
+    "content_version": "SOURCE_BLOB_b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+    "stem": "|(1,0,0)·(-1,0,0)|=?",
+    "answer_key": null,
+    "worked_solution": "**Đối chiếu:** 1.\n\n**Vì sao:** Tích vô hướng và chuẩn Euclid của vectơ..",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+      "heading_id": "B16-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md",
+        "blob": "b226f2e5e38b0e4eb7d1e12c6dca4a3bae2e629d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B16-T01",
+      "line": 123,
+      "original_local_id": "B16-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-T01",
+    "content_version": "SOURCE_BLOB_29b609be3195efcd341aea39cb604a930dba8468",
+    "stem": "R=3 thì R² bằng mấy?",
+    "answer_key": null,
+    "worked_solution": "**Đối chiếu:** 9.\n\n**Vì sao:** Khoảng cách giữa hai điểm và chuẩn vectơ..",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "29b609be3195efcd341aea39cb604a930dba8468",
+      "heading_id": "B17-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md",
+        "blob": "29b609be3195efcd341aea39cb604a930dba8468",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B17-T01",
+      "line": 121,
+      "original_local_id": "B17-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID",
+      "related_item_ids": [
+        "THPT-G12-B17-P01"
+      ],
+      "distinct_task_reason": "Source asks R² alone, canonical asks full sphere equation with center."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B17-T02",
+    "content_version": "SOURCE_BLOB_29b609be3195efcd341aea39cb604a930dba8468",
+    "stem": "C(1,0,0),R=2, P:x=3. Phân loại.",
+    "answer_key": null,
+    "worked_solution": "**Đối chiếu:** Tiếp xúc.\n\n**Vì sao:** Khoảng cách từ điểm đến mặt phẳng và Pythagoras..",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "29b609be3195efcd341aea39cb604a930dba8468",
+      "heading_id": "B17-T02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md",
+        "blob": "29b609be3195efcd341aea39cb604a930dba8468",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B17-T02",
+      "line": 134,
+      "original_local_id": "B17-T02",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
