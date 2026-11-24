@@ -3100,5 +3100,208 @@
     "order": 5,
     "item_id": "THPT-G10-CHIX-TRY10",
     "outcome_id": "G10-B27-EQUIPROBABLE_MODELLING"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHI-TRY01"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHI-TRY02"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHI-TRY03"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHI-TRY04"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHI-TRY05"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHI-TRY06"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHI-TRY10"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHI-TRY07"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHI-TRY08"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHI-TRY09"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-G10-CHI-TRY11"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHII-TRY01",
+    "outcome_id": "G10-B03-LINEAR_INEQUALITY"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHII-TRY02",
+    "outcome_id": "G10-B03-POINT_TEST"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHII-TRY03",
+    "outcome_id": "G10-B03-BOUNDARY"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHII-TRY04",
+    "outcome_id": "G10-B03-HALFPLANE"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHII-TRY05",
+    "outcome_id": "G10-B03-MODELING"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHII-TRY06",
+    "outcome_id": "G10-B04-SYSTEM"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHII-TRY07",
+    "outcome_id": "G10-B04-REGION_INTERSECTION"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHII-TRY08",
+    "outcome_id": "G10-B04-FEASIBILITY"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHII-TRY09",
+    "outcome_id": "G10-B04-LINEAR_OBJECTIVE"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHII-TRY10",
+    "outcome_id": "G10-B04-INTEGER_MODELS"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B05:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIII-TRY01"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B05:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIII-TRY02"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B05:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIII-TRY03"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B05:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIII-TRY04"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B05:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIII-TRY05"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B05:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-G10-CHIII-TRY11",
+    "outcome_id": "G10-B05-CALCULATOR_ANGLE"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B06:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIII-TRY06"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B06:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIII-TRY07"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B06:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIII-TRY10"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B06:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIII-TRY08"
+  },
+  {
+    "collection": "SGK:G10:CHIII:B06:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIII-TRY09"
   }
 ]
