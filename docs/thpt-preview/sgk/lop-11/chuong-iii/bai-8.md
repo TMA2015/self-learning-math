@@ -18,7 +18,7 @@
 
 === "Khám phá kiến thức"
 
-    Một trường có hàng trăm nghìn tổng điểm thi. Nếu viết tất cả các giá trị theo từng thí sinh, ta giữ được thông tin rất chi tiết nhưng khó nhìn nhanh nhóm điểm nào đông. SGK bắt đầu từ tình huống ấy để giải thích tại sao cần **mẫu số liệu ghép nhóm**: chia miền giá trị thành các nhóm rồi đếm số quan sát trong mỗi nhóm. Ta học cách **đọc bảng nhóm** trước, sau đó mới học **tự ghép nhóm** một mẫu ban đầu.
+    Hãy hình dung bảng tổng điểm thi của hàng trăm nghìn thí sinh. Nếu viết tất cả các giá trị theo từng thí sinh, ta giữ được thông tin rất chi tiết nhưng khó nhìn nhanh nhóm điểm nào đông. SGK bắt đầu từ tình huống ấy để giải thích tại sao cần **mẫu số liệu ghép nhóm**: chia miền giá trị thành các nhóm rồi đếm số quan sát trong mỗi nhóm. Ta học cách **đọc bảng nhóm** trước, sau đó mới học **tự ghép nhóm** một mẫu ban đầu.
 
     ### 1.1. Giới thiệu về mẫu số liệu ghép nhóm
 
@@ -62,13 +62,13 @@
 
     Nếu một cuộc thi có thời gian chạy từ \(129\) đến \(145\) phút và cần chia **sáu nhóm dài 3 phút**, tổng khoảng phủ phải là \(6\cdot3=18\) phút, lớn hơn khoảng biến thiên \(145-129=16\). Có thể chọn từ \(127{,}5\) đến dưới \(145{,}5\) phút. Khi ấy giá trị lớn nhất \(145\) vẫn nằm trong nhóm cuối, không bị bỏ sót.
 
-    SGK còn yêu cầu phân nhóm \(8\) giá trị BMI theo các mức “dưới \(18{,}5\)”, “từ \(18{,}5\) đến dưới \(23\)” và “từ \(23\) trở lên”. Với dãy \(16{,}8;18{,}7;19{,}1;19{,}2;20{,}6;21{,}1;23{,}5;25{,}2\), tần số là **1, 5, 2**. Đó là ví dụ *phân loại theo tiêu chí đã cho*, không phải bắt buộc chia nhóm có cùng độ dài và cũng không phải hướng dẫn đánh giá sức khỏe cá nhân.
+    Ta cũng có thể phân nhóm \(8\) giá trị BMI theo các mức “dưới \(18{,}5\)”, “từ \(18{,}5\) đến dưới \(23\)” và “từ \(23\) trở lên”. Với dãy \(16{,}8;18{,}7;19{,}1;19{,}2;20{,}6;21{,}1;23{,}5;25{,}2\), tần số là **1, 5, 2**. Đó là ví dụ *phân loại theo tiêu chí đã cho*, không phải bắt buộc chia nhóm có cùng độ dài và cũng không phải hướng dẫn đánh giá sức khỏe cá nhân.
 
-    **Vận dụng.** Ghép \(9,10,10,19,20,22,28,29,30,33,39,40\) theo năm nhóm rộng 10 đã nêu. Có bao nhiêu số nhỏ hơn \(30\)? Nếu điểm \(30\) bị chuyển vào nhóm trước thì sai ở bước nào?
+    **Vận dụng.** Ghép \(5,8,12,12,19,20,21,29,30,34,39,40\) theo năm nhóm rộng 10 đã nêu. Có bao nhiêu số nhỏ hơn \(30\)? Nếu điểm \(30\) bị chuyển vào nhóm trước thì sai ở bước nào?
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Tần số là \(1,3,4,3,1\). Các số nhỏ hơn 30 có \(1+3+4=8\) giá trị. Nhóm \([20;30)\) không nhận 30; 30 phải thuộc \([30;40)\). Tổng tần số bằng 12.
+        **Lời giải:** Tần số là \(2,3,3,3,1\). Các số nhỏ hơn 30 có \(2+3+3=8\) giá trị. Nhóm \([20;30)\) không nhận 30; 30 phải thuộc \([30;40)\). Tổng tần số bằng 12.
 
     ??? tip "Kiểm lỗi"
 
@@ -88,7 +88,7 @@
     |:--|--:|--:|--:|--:|
     | Tần số | 4 | 8 | 6 | 2 |
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B08-01_R01.svg" alt="Bốn cột mẫu ghép nhóm với tần số lần lượt 4, 8, 6, 2"><figcaption><strong>Tra hình:</strong> cột thứ hai cho \(8\) quan sát trong nhóm \([10;20)\), và tổng tất cả cột là \(20\). Hình dùng chung với tab Khám phá, chỉ dẫn ở đây phục vụ việc tra cứu.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B08-01_R01.svg" alt="Bốn cột mẫu ghép nhóm với tần số lần lượt 4, 8, 6, 2"><figcaption><strong>Tra hình:</strong> cột thứ hai cho \(8\) quan sát trong nhóm \([10;20)\), và tổng tần số của các nhóm là \(20\). Hình dùng chung với tab Khám phá, chỉ dẫn ở đây phục vụ việc tra cứu.</figcaption></figure>
 
     **Nhận xét (theo SGK):** Ghép nhóm hữu ích khi không có dữ liệu chính xác hoặc muốn tổ chức, đọc, phân tích dữ liệu thuận tiện hơn. Nhóm cuối **có thể nhận đầu mút phải** nếu bảng quy định; một số bảng dùng nhóm mở như “dưới 15 tuổi” hoặc “từ 65 tuổi trở lên”. Không tự xem nhận xét này là một “Định nghĩa” hay “Tính chất” mới.
 
