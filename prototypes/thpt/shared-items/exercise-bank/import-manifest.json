@@ -1294,18 +1294,19 @@
     }
   ],
   "counts": {
-    "formative_items": 1765,
+    "formative_items": 1773,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3872,
+    "placements": 3880,
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 678,
+    "legacy_combined_answer_items": 681,
     "topic_knowledge_first_try": 170,
-    "sgk_knowledge_first_try": 146
+    "sgk_knowledge_first_try": 154,
+    "authoring_answer_draft_items": 5
   },
   "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported; G11 33 Knowledge pages scanned, 32 pages with unkeyed blocks remain mapping pending; G12 19 Knowledge pages scanned; all 79 SGK pages inventoried, source mapping not complete; G11 B02–B07 16 unkeyed source tasks imported with canonical KFT IDs, partial matches deferred",
   "projection_field_differences": [
@@ -2546,7 +2547,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "678 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
+  "legacy_combined_answer_note": "681 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -3683,24 +3684,26 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md",
         "blob": "95bbe5ecdd73b92f88176ae0245e11b1098d8e6e",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 51,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHV-B15-C01",
               "THPT-G11-CHV-B15-P02"
             ],
             "reason": "Different sequence constants; source additionally asks why no term needs to equal limit.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B15-KFT01"
           }
         ]
       },
@@ -3739,23 +3742,25 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md",
         "blob": "36a7c21f3ae2474318c1e857acbcb640680e1326",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 45,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHV-B17-C02"
             ],
             "reason": "Source abstract limit 3 versus value 5; existing specific rational function and different values.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B17-KFT01"
           }
         ]
       },
@@ -3766,17 +3771,17 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md",
         "blob": "fd7d7a33ec276c4e03c95185c5ea49b53643b584",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 52,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHVI-B18-C01",
               "THPT-G11-CHVI-B18-C02",
@@ -3784,7 +3789,9 @@
             ],
             "reason": "Three subquestions: negative exponent 4^-1, fractional exponent 27^(2/3), meaning/domain of growth model. Existing different data/tasks.",
             "source_answer_present": true,
-            "source_answer_mode": "DIRECT"
+            "source_answer_mode": "DIRECT",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B18-KFT01"
           }
         ]
       },
@@ -3795,24 +3802,27 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md",
         "blob": "f872e9f19e28467e1b6ea11a943e04a2edf3b266",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 35,
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHVI-B19-C01",
               "THPT-G11-CHVI-B19-C03"
             ],
             "reason": "First part uses same logarithm but asks inverse power equality; other parts log4(0) and invalid sum rule not covered by whole existing item. One check already in stem.",
             "source_answer_present": true,
-            "source_answer_mode": "INLINE_PARTIAL_GENERIC_REVEAL"
+            "source_answer_mode": "INLINE_PARTIAL_GENERIC_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G11-B19-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -3823,17 +3833,17 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md",
         "blob": "1587f399e7ea9557a9fc490768c589991f25dcb0",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 33,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHVI-B20-C04",
               "THPT-G11-CHVI-B20-P03",
@@ -3841,7 +3851,10 @@
             ],
             "reason": "Source three distinct prompts; existing uses other bases/inputs or asks different result.",
             "source_answer_present": false,
-            "source_answer_mode": "GENERIC_REVEAL"
+            "source_answer_mode": "GENERIC_REVEAL",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B20-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -3852,24 +3865,27 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md",
         "blob": "b7fb59866ce1b250e446cb957d975e7c58d037bb",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 37,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHVI-B21-C03",
               "THPT-G11-CHVI-B21-C02"
             ],
             "reason": "Different exponent boundary and logarithm equation; source asks rationale.",
             "source_answer_present": true,
-            "source_answer_mode": "INLINE_PARTIAL_GENERIC_REVEAL"
+            "source_answer_mode": "INLINE_PARTIAL_GENERIC_REVEAL",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B21-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -3880,17 +3896,17 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md",
         "blob": "d8a679897dde1d2fa25e12df56772eb54be29ff4",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 35,
-            "status": "PARTIAL_MATCH",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHVII-B22-P01",
               "THPT-G11-CHVII-B22-P03",
@@ -3898,7 +3914,10 @@
             ],
             "reason": "Source supplies AB⊥CC′ proof then asks why intersection unnecessary; existing asks procedure, counterexample or evidence rather than same explanation.",
             "source_answer_present": true,
-            "source_answer_mode": "INLINE_PARTIAL_GENERIC_REVEAL"
+            "source_answer_mode": "INLINE_PARTIAL_GENERIC_REVEAL",
+            "previous_status": "PARTIAL_MATCH",
+            "item_id": "THPT-G11-B22-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -3941,20 +3960,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "PED_SCOPE_DECISION_PENDING",
+        "status": "SOURCE_CLASSIFIED_NOT_EXERCISE",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 37,
-            "status": "WORKED_EXAMPLE_NOT_STANDALONE_TASK",
+            "status": "CLASSIFIED_WORKED_EXAMPLE_NOT_ITEM",
             "candidate_item_ids": [
               "THPT-G11-CHVII-B24-C05",
               "THPT-G11-CHVII-B24-P02"
             ],
             "reason": "Source states 10m/8m/6m and sin=6/10, no question; existing different data. Do not invent a question or count as imported item.",
             "source_answer_present": true,
-            "source_answer_mode": "INLINE_WORKED_EXAMPLE"
+            "source_answer_mode": "INLINE_WORKED_EXAMPLE",
+            "previous_status": "WORKED_EXAMPLE_NOT_STANDALONE_TASK",
+            "resolution": "Retain historical knowledge-page worked explanation; not a standalone exercise; no item ID or placement. PED audit may separately improve source activity design."
           }
         ]
       },
@@ -3969,19 +3990,21 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "PED_SCOPE_DECISION_PENDING",
+        "status": "SOURCE_CLASSIFIED_NOT_EXERCISE",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 37,
-            "status": "WORKED_EXAMPLE_NOT_STANDALONE_TASK",
+            "status": "CLASSIFIED_WORKED_EXAMPLE_NOT_ITEM",
             "candidate_item_ids": [
               "THPT-G11-CHVII-B25-C03"
             ],
             "reason": "Source states conclusion from SA⊥base and warns about other faces, no question. Existing asks general theorem, not this task.",
             "source_answer_present": true,
-            "source_answer_mode": "INLINE_WORKED_EXAMPLE"
+            "source_answer_mode": "INLINE_WORKED_EXAMPLE",
+            "previous_status": "WORKED_EXAMPLE_NOT_STANDALONE_TASK",
+            "resolution": "Retain historical knowledge-page worked explanation; not a standalone exercise; no item ID or placement. PED audit may separately improve source activity design."
           }
         ]
       },
@@ -3992,24 +4015,27 @@
         "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md",
         "blob": "417ce70fc81b8a656e803855d0594dfa9db945b2",
         "markers": 0,
-        "imported": 0,
+        "imported": 1,
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "status": "SOURCE_MAPPING_RESOLVED",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 35,
-            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "status": "NEW_CANONICAL_IMPORTED",
             "candidate_item_ids": [
               "THPT-G11-CHVII-B26-C06",
               "THPT-G11-CHVII-B26-P01"
             ],
             "reason": "Source 5/4/3 and asks why height is 3 not 5; existing 10/8 or 17/15. Numeric answer exposed inline.",
             "source_answer_present": true,
-            "source_answer_mode": "INLINE_ANSWER_GENERIC_REVEAL"
+            "source_answer_mode": "INLINE_ANSWER_GENERIC_REVEAL",
+            "previous_status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "item_id": "THPT-G11-B26-KFT01",
+            "answer_completion": "AUTHORING_DRAFT_PENDING_AUDIT"
           }
         ]
       },
@@ -4024,13 +4050,13 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "PED_SCOPE_DECISION_PENDING",
+        "status": "SOURCE_CLASSIFIED_NOT_EXERCISE",
         "block_mapping_review": [
           {
             "order": 1,
             "locator": "details[data-ped-first-try] #1",
             "line": 37,
-            "status": "WORKED_EXAMPLE_NOT_STANDALONE_TASK",
+            "status": "CLASSIFIED_WORKED_EXAMPLE_NOT_ITEM",
             "candidate_item_ids": [
               "THPT-G11-CHVII-B27-C01",
               "THPT-G11-CHVII-B27-C02",
@@ -4038,7 +4064,9 @@
             ],
             "reason": "Source provides all three calculated volumes, no question; existing different data.",
             "source_answer_present": true,
-            "source_answer_mode": "INLINE_WORKED_EXAMPLE"
+            "source_answer_mode": "INLINE_WORKED_EXAMPLE",
+            "previous_status": "WORKED_EXAMPLE_NOT_STANDALONE_TASK",
+            "resolution": "Retain historical knowledge-page worked explanation; not a standalone exercise; no item ID or placement. PED audit may separately improve source activity design."
           }
         ]
       },
@@ -5190,14 +5218,15 @@
     "g11_mapping_review": {
       "reviewed_blocks": 46,
       "reused": 4,
-      "partial_matches": 2,
-      "no_exact_match_in_reviewed_shards": 12,
-      "worked_example_scope_pending": 3,
+      "partial_matches": 0,
+      "no_exact_match_in_reviewed_shards": 6,
+      "worked_example_scope_pending": 0,
       "unreviewed_blocks": 0,
-      "pending_mapping_blocks": 17,
+      "pending_mapping_blocks": 6,
       "scope": "G11 B02–B33; same-chapter records and relevant Topic candidate shards/first-try, public ChI selfcheck, G10 ChIII trig sources; not global exhaustiveness.",
       "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
-      "new_canonical_imported": 25
+      "new_canonical_imported": 33,
+      "worked_examples_classified": 3
     },
     "g12_mapping_review": {
       "reviewed_blocks": 40,
