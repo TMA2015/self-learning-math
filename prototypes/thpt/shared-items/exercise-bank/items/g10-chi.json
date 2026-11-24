@@ -27,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết luận câu chứa x luôn đúng/sai, thử x=2 rồi x=3; nhận ra cần gán biến. Ôn Bài 1 §2.1 / HELP-G10-B01-01, sau đó tự làm THPT-TOP01-ADD01."
   },
   {
     "item_id": "THPT-G10-B01-C02",
@@ -57,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu phủ định bằng cách đổi số 15, giữ nguyên đối tượng và hỏi hai phát biểu có đúng một câu đúng không. Ôn Bài 1 §2.2; luyện THPT-G10-CHI-TRY02."
   },
   {
     "item_id": "THPT-G10-B01-P01",
@@ -87,14 +89,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ thử vài x rồi kết luận mọi x, viết bất đẳng thức x²≥0 với x bất kỳ. Ôn Bài 1 §2.5; tự làm THPT-G10-CHI-TRY05 để phân biệt chứng minh và phản ví dụ."
   },
   {
     "item_id": "THPT-G10-B01-P02",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
     "stem": "Xác định đúng/sai của “Tồn tại số nguyên n sao cho n²=2”. Viết phủ định bằng lượng từ.",
     "answer_key": "Sai; phủ định đúng: “Với mọi số nguyên n, n²≠2”.",
-    "worked_solution": "Không có số nguyên có bình phương bằng 2; đổi ∃ thành ∀ và = thành ≠ để phủ định.",
+    "worked_solution": "Nếu n∈ℤ thì hoặc |n|≤1, khi đó n²≤1, hoặc |n|≥2, khi đó n²≥4. Không trường hợp nào cho n²=2. Mệnh đề tồn tại sai; giữ nguyên miền ℤ, đổi ∃ thành ∀ và phủ định đẳng thức, được “Với mọi n∈ℤ, n²≠2”, là mệnh đề đúng.",
     "skill_ids": [
       "G10-B01-QUANTIFIERS"
     ],
@@ -117,21 +120,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho rằng n=√2 là nghiệm nguyên, kiểm miền ℤ bằng |n|≤1 hoặc |n|≥2; khi phủ định giữ miền. Ôn Bài 1 §2.5 / HELP-G10-B01-02; luyện THPT-TOP01-ADD01."
   },
   {
     "item_id": "THPT-G10-B01-P03",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Xét mệnh đề với n∈ℤ: “Nếu n chia hết cho 6 thì n chia hết cho 3”. Mệnh đề đúng không? Mệnh đề đảo đúng không?",
-    "answer_key": "Mệnh đề đúng; mệnh đề đảo sai (n=3).",
-    "worked_solution": "Nếu n=6k=3(2k) nên chia hết cho 3. Đảo “chia hết cho 3 ⇒ chia hết cho 6” sai vì n=3.",
+    "stem": "Với n∈ℤ, đặt P: “n chia hết cho 10”, Q: “n chia hết cho 5”. (a) Xét đúng/sai của P⇒Q và Q⇒P; chứng minh hoặc nêu phản ví dụ. (b) Trong hai điều kiện P, Q, điều kiện nào đủ cho điều kiện kia, điều kiện nào cần cho điều kiện kia?",
+    "answer_key": "P⇒Q đúng; Q⇒P sai (n=5). P là điều kiện đủ để có Q; Q là điều kiện cần để có P. Không có chiều ngược lại.",
+    "worked_solution": "Nếu P đúng thì n=10k=5(2k), k∈ℤ, nên Q đúng. Với n=5, Q đúng nhưng P sai, do đó Q⇒P sai. Vì P⇒Q đúng, P bảo đảm có Q (đủ); muốn có P thì nhất thiết phải có Q (cần). Q không đủ cho P, còn P không cần cho Q, như phản ví dụ n=5.",
     "skill_ids": [
       "G10-B01-IMPLICATION"
     ],
     "problem_type_id": null,
     "difficulty": "INTERMEDIATE",
     "hints": [
-      "Từ n=6k hãy suy ra bội của 3. Đảo chỉ cần một phản ví dụ."
+      "Viết n=10k; xét riêng n=5 ở chiều đảo. Điều kiện đứng trước mũi tên đúng là điều kiện đủ."
     ],
     "rubric": null,
     "interaction": {
@@ -147,14 +151,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo mũi tên hoặc nhầm cần/đủ, viết P và Q riêng, tìm một số thỏa Q nhưng không thỏa P. Ôn Bài 1 §2.3 / HELP-G10-B01-02; luyện THPT-G10-CHI-TRY03."
   },
   {
     "item_id": "THPT-G10-B01-P04",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
     "stem": "Với n∈ℤ, xét “n chẵn khi và chỉ khi n² chẵn”. Đúng hay sai?",
     "answer_key": "Đúng.",
-    "worked_solution": "Nếu n=2k thì n²=4k² chẵn; nếu n lẻ, n² lẻ, nên n² chẵn buộc n chẵn.",
+    "worked_solution": "Chiều thuận: nếu n=2k, k∈ℤ, thì n²=4k²=2(2k²) chẵn. Chiều đảo: nếu n lẻ thì n=2k+1, n²=4k²+4k+1=2(2k²+2k)+1 lẻ. Vì thế n² chẵn buộc n chẵn. Hai chiều đều đúng.",
     "skill_ids": [
       "G10-B01-EQUIVALENCE"
     ],
@@ -177,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mới chứng minh một chiều, viết hai mũi tên và xét n lẻ ở chiều đảo. Ôn Bài 1 §2.4; luyện THPT-TOP01-ADD02 để thử nhận diện chiều sai."
   },
   {
     "item_id": "THPT-G10-B01-P05",
@@ -207,7 +213,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu phủ định ∀ bằng ∀ hoặc dùng ≤ thay <, thử tại x=0 và kiểm nguyên tắc đúng một trong hai phát biểu. Ôn Bài 1 §2.2, §2.5 / HELP-G10-B01-02; luyện THPT-G10-CHI-TRY05."
   },
   {
     "item_id": "THPT-G10-B01-P06",
@@ -237,21 +244,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho rằng tiền đề sai buộc kéo theo sai, nhắc lại trường hợp duy nhất P⇒Q sai: P đúng, Q sai. Ôn Bài 1 §2.3, rồi tự kiểm bốn cặp đúng/sai của P,Q; luyện THPT-G10-CHI-TRY03 để phân biệt hai chiều."
   },
   {
     "item_id": "THPT-G10-B02-C01",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Cho A={1,2}, B={1,2,3}. Xác định 2∈A và A⊆B đúng/sai; phân biệt hai ký hiệu.",
-    "answer_key": "Cả hai đúng; ∈ nối phần tử và tập, ⊆ nối hai tập.",
-    "worked_solution": "2 là thành viên A; mọi phần tử của A đều trong B nên A⊆B. Không viết A∈B khi B chỉ chứa các số.",
+    "stem": "Cho A={1,2}, B={1,2,3}. Xét đúng/sai: (a) 2∈A; (b) A⊆B; (c) ∅⊆A; (d) ∅∈A. Giải thích sự khác nhau giữa ∈ và ⊆.",
+    "answer_key": "(a) Đúng; (b) đúng; (c) đúng; (d) sai. ∈ nói về một phần tử của tập; ⊆ nói về quan hệ bao hàm giữa hai tập.",
+    "worked_solution": "2 là một trong hai phần tử của A. Cả 1 và 2 đều thuộc B nên A⊆B. Tập rỗng không có phần tử nào nằm ngoài A, vì vậy ∅⊆A (tập rỗng là tập con của mọi tập). Tuy nhiên A chỉ chứa hai số 1, 2, không chứa tập rỗng như một phần tử, nên ∅∈A sai.",
     "skill_ids": [
       "G10-B02-MEMBERSHIP_SUBSET"
     ],
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Phần tử là số 2, còn A là một tập."
+      "Kiểm đối tượng ở bên trái mỗi kí hiệu: một phần tử hay một tập hợp? Tập rỗng không có phần tử."
     ],
     "rubric": null,
     "interaction": {
@@ -267,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu viết ∅∈A vì ∅⊆A, liệt kê chính xác phần tử của A và kiểm định nghĩa tập con. Ôn Bài 2 §2.1 / HELP-G10-B02-01; luyện THPT-G10-CHI-TRY06."
   },
   {
     "item_id": "THPT-G10-B02-C02",
@@ -297,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ phần chung khỏi hợp, đánh dấu từng phần tử ở cả hai danh sách; giao cần cả hai, hợp cần ít nhất một. Ôn Bài 2 §2.3.1 / HELP-G10-B02-02; luyện THPT-TOP01-ADD03."
   },
   {
     "item_id": "THPT-G10-B02-P01",
@@ -327,7 +337,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu A∖B và B∖A giống nhau, viết hai danh sách riêng, gạch phần chung rồi chỉ giữ phần của tập đứng trước. Ôn Bài 2 §2.3.1; luyện THPT-G10-CHI-TRY08."
   },
   {
     "item_id": "THPT-G10-B02-P02",
@@ -357,21 +368,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thêm số ngoài U vào phần bù, liệt kê U trước rồi gạch phần tử thuộc A. Ôn Bài 2 §2.3.1 / HELP-G10-B02-02; luyện THPT-TOP01-ADD05."
   },
   {
     "item_id": "THPT-G10-B02-P03",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Cho X=(-∞,3], Y=(1,+∞). Tìm X∩Y.",
-    "answer_key": "(1,3].",
-    "worked_solution": "Hai điều kiện đồng thời x≤3 và x>1 nên 1<x≤3.",
+    "stem": "Cho X=(−∞;2], Y=[2;+∞). Tìm X∩Y và giải thích vì sao giao này không rỗng dù hai tập chỉ gặp nhau tại đầu mút.",
+    "answer_key": "X∩Y={2}.",
+    "worked_solution": "x∈X∩Y khi đồng thời x≤2 và x≥2, tức x=2. Cả hai đầu mút 2 đều được lấy (ngoặc vuông), nên giao chỉ gồm một phần tử, không phải tập rỗng hay một khoảng có độ dài dương.",
     "skill_ids": [
       "G10-B02-INTERVALS"
     ],
     "problem_type_id": null,
     "difficulty": "INTERMEDIATE",
     "hints": [
-      "Kiểm lần lượt đầu mút 1 và 3."
+      "Chuyển mỗi khoảng thành một bất đẳng thức; kiểm riêng x=2."
     ],
     "rubric": null,
     "interaction": {
@@ -387,21 +399,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nghĩ hai nửa khoảng chỉ chạm nhau nên giao rỗng, kiểm riêng dấu bằng ở cả hai tập. Ôn Bài 2 §2.2.2 / HELP-G10-B02-03; luyện THPT-G10-CHI-TRY10."
   },
   {
     "item_id": "THPT-G10-B02-P04",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Cho X=(-∞,3], Y=(1,+∞). Tìm X∪Y.",
-    "answer_key": "ℝ.",
-    "worked_solution": "Mọi số thực x đều thuộc ít nhất một trong hai khoảng nên hợp bằng ℝ.",
+    "stem": "Cho X=(−∞;−1], Y=(2;+∞). Tìm X∪Y. Giải thích các số −1, 0, 2 có thuộc hợp không.",
+    "answer_key": "X∪Y=(−∞;−1]∪(2;+∞). Số −1 thuộc hợp, 0 và 2 không thuộc hợp.",
+    "worked_solution": "Thuộc hợp nghĩa là x≤−1 hoặc x>2. Hai tập có một khoảng trống (−1;2] giữa chúng; không thể nối thành một khoảng liên tục. −1 thuộc X, 0 không thuộc tập nào, 2 không thuộc X và bị loại khỏi Y bởi ngoặc tròn.",
     "skill_ids": [
       "G10-B02-INTERVALS"
     ],
     "problem_type_id": null,
     "difficulty": "INTERMEDIATE",
     "hints": [
-      "Xét mọi số thực x: x≤3 hoặc x>1."
+      "Dùng “hoặc”, không dùng “và”. Kiểm xem có khoảng trống giữa hai nửa khoảng hay không."
     ],
     "rubric": null,
     "interaction": {
@@ -417,14 +430,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nối hợp qua khoảng trống, thử một số giữa hai đầu mút và kiểm nó có thuộc ít nhất một tập không. Ôn Bài 2 §2.2.2 / HELP-G10-B02-03; luyện THPT-G10-CHI-TRY10."
   },
   {
     "item_id": "THPT-G10-B02-P05",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
     "stem": "Lớp có 40 học sinh, 23 học câu lạc bộ Anh, 25 học câu lạc bộ Toán, 12 học cả hai. Hỏi bao nhiêu học sinh không học câu lạc bộ nào?",
     "answer_key": "4 học sinh.",
-    "worked_solution": "n(A∪B)=23+25−12=36; ngoài cả hai =40−36=4.",
+    "worked_solution": "Gọi A là tập học sinh tham gia CLB Anh, B là tập tham gia CLB Toán; U là toàn bộ 40 học sinh. Vì 12 học sinh thuộc cả hai CLB đã được tính hai lần trong 23+25, phải trừ 12 một lần: |A∪B|=23+25−12=36. Số học sinh ngoài cả hai là |U|−|A∪B|=40−36=4. Kiểm tra bốn miền: chỉ Anh 11, cả hai 12, chỉ Toán 13, ngoài 4; tổng 40.",
     "skill_ids": [
       "G10-B02-VENN_MODEL"
     ],
@@ -447,21 +461,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng 23+25 hoặc trừ giao hai lần, điền vùng chung trước, tính hai vùng riêng rồi lấy sĩ số trừ hợp. Ôn Bài 2 §2.3.2 / HELP-G10-B02-02; luyện THPT-TOP01-ADD06."
   },
   {
     "item_id": "THPT-G10-B02-P06",
     "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
-    "stem": "Cho A={x∈ℤ | x²=4}, B={−2,2}. Hai tập A và B có bằng nhau không?",
-    "answer_key": "Có, A=B.",
-    "worked_solution": "x²=4 ⇔ x=±2; A={−2,2}=B.",
+    "stem": "Cho A={x∈ℤ | x²=4}, B={−2,2}. (a) Hai tập A và B có bằng nhau không? (b) Trong ℕ, ℤ, ℚ, ℝ, A là tập con của những tập nào? (c) Với C={−2,2,1/2,√2}, C là tập con của những tập nào trong bốn tập số trên? Giải thích.",
+    "answer_key": "(a) A=B={−2,2}. (b) A⊆ℤ, A⊆ℚ, A⊆ℝ; A không là tập con của ℕ. (c) C chỉ là tập con của ℝ trong bốn tập đã cho.",
+    "worked_solution": "(a) x²=4 ⇔ x=−2 hoặc x=2, cả hai đều nguyên, nên A và B có đúng cùng phần tử. (b) −2 và 2 là số nguyên, do ℤ⊆ℚ⊆ℝ nên A là tập con của ba tập này; −2 không thuộc ℕ. (c) 1/2 không nguyên, √2 là số vô tỉ nên không thuộc ℚ, đồng thời mọi phần tử C đều là số thực. C⊆ℝ nhưng C không là tập con của ℕ, ℤ hoặc ℚ.",
     "skill_ids": [
       "G10-B02-SET_EQUALITY"
     ],
     "problem_type_id": null,
     "difficulty": "INTERMEDIATE",
     "hints": [
-      "Giải phương trình trên ℤ, rồi so hai chiều chứa nhau."
+      "Giải x²=4 trên đúng miền ℤ; để bác bỏ quan hệ tập con, chỉ cần một phần tử không thuộc tập đang xét."
     ],
     "rubric": null,
     "interaction": {
@@ -477,7 +492,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ tìm x=2, thử x=−2; để kiểm tập con của tập số, tìm phần tử phản ví dụ như −2 hoặc √2. Ôn Bài 2 §2.1, §2.2.1 / HELP-G10-B02-01 và ví dụ 3.2; luyện THPT-G10-B02-C01."
   },
   {
     "item_id": "THPT-G10-CHI-TRY01",
