@@ -18,7 +18,8 @@ const chapter=/^docs\/thpt-preview\/sgk\/(?:(?:lop-11|lop-12)\/)?(?:chuong-(?:i|
 // G10 B10 (semantic 3+1) and B14 (native example/disclosure). No synthetic CSS.
 async function goldenW1Parity(page,browser,width,rel){
  const w1=/\/lop-11\/chuong-i\/bai-[234]\.md$/.test(rel);
- if(!w1)return;
+ const w2=/\/lop-11\/(?:chuong-ii\/bai-[567]|chuong-iii\/bai-[89])\.md$/.test(rel);
+ if(!w1&&!w2)return;
  const cases={
   article:["article.md-content__inner",["fontFamily","fontSize","fontWeight","lineHeight"]],
   tabs:["article .tabbed-labels",["gap","paddingTop","paddingBottom","borderBottomWidth"]],
@@ -52,6 +53,11 @@ async function goldenW1Parity(page,browser,width,rel){
   }
   const tabs=page.locator("article .tabbed-labels > label");
   for(const scheme of ["default","slate"]){
+   // W2: independent palette samples; do not reuse mutated MathJax/disclosure DOM from the previous interaction pass.
+   if(w2&&scheme==="slate"){
+    assert((await page.reload({waitUntil:"load",timeout:60000}))?.ok(),rel+" slate reload");
+    await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,null,{timeout:30000});
+   }
    for(const p of [reference,ref14,refB1,page]){
     await p.evaluate(s=>document.body.setAttribute("data-md-color-scheme",s),scheme);
     await p.waitForTimeout(150);
@@ -69,6 +75,17 @@ async function goldenW1Parity(page,browser,width,rel){
     assert(refs.length,rel+" missing reference component "+key);
     for(const v of c[key])match(v,refs,key);
    }
+   if(w2&&rel.endsWith("/bai-5.md")){
+    const recap=page.locator("article .thpt-r4-recap-card");
+    assert.equal(await recap.count(),1,"B05 exact mandatory recap");
+    const goldRecap=reference.locator("article .thpt-r4-knowledge-conclusion").filter({hasText:"Kiến thức cần nhớ — Bài 10:"});
+    assert.equal(await goldRecap.count(),1,"B10 Golden recap reference");
+    const readRecap=el=>{const st=getComputedStyle(el);return {shape:[st.paddingTop,st.paddingLeft,st.borderLeftWidth,st.borderTopLeftRadius,st.fontSize,st.lineHeight],colors:[st.backgroundColor,st.borderTopColor,st.borderLeftColor]};};
+    const got=await recap.evaluate(readRecap),ref=await goldRecap.evaluate(readRecap);
+    assert.deepEqual(got.shape,ref.shape,"B05 recap Golden dimensions");
+    assert.deepEqual(got.colors,scheme==="default"?["rgb(255, 243, 213)","rgb(234, 203, 124)","rgb(196, 154, 55)"]:["rgb(69, 57, 25)","rgb(133, 107, 55)","rgb(212, 176, 95)"],"B05 owner-approved recap semantic colors");
+    assert((await recap.innerText()).includes("Kiến thức cần nhớ"),"B05 recap label");
+   }
    for(const i of [0,1,2,3]){
     await tabs.nth(i).click();
     await page.waitForFunction(i=>[...document.querySelectorAll("article .tabbed-labels > label")].filter(x=>x.classList.contains("slm-g10-active-tab")).length===1&&document.querySelectorAll("article .tabbed-labels > label")[i].classList.contains("slm-g10-active-tab"),i);
@@ -82,6 +99,16 @@ async function goldenW1Parity(page,browser,width,rel){
    const source=fs.readFileSync(path.join(root,rel),"utf8");
    const expected=[...source.split('=== "Lỗi thường gặp"')[1].matchAll(/^    ### (4\.\d+\..+)$/gm)].map(x=>x[1]);
    assert(expected.length>0,rel+" expected recovery headings");
+   if(w2){
+    assert.equal(expected.length,rel.endsWith("/bai-5.md")?5:6);
+    const raw=await page.evaluate(async()=>{
+     const doc=new DOMParser().parseFromString(await (await fetch(location.href)).text(),"text/html");
+     const panel=doc.querySelectorAll("article .tabbed-block")[3];
+     return {titles:[...panel.querySelectorAll(":scope > details.tip > summary")].map(s=>s.textContent.trim()),links:[...panel.querySelectorAll(":scope > p")].filter(p=>p.querySelector("strong")?.textContent==="Học tiếp:").flatMap(p=>[...p.querySelectorAll("a")].map(a=>a.getAttribute("href")))};
+    });
+    assert.deepEqual(raw.titles,expected,rel+" source-to-static DOM recovery titles including math");
+    assert.equal(raw.links.length,rel.endsWith("/bai-5.md")?0:rel.endsWith("/bai-6.md")||rel.endsWith("/bai-7.md")?2:3,rel+" Học tiếp links preserved");
+   }
    assert.equal(await panel.locator(":scope > h3").count(),0,rel+" exposed tab4 headings");
    assert.equal(await tips.count(),expected.length,rel+" one accordion per recovery");
    assert.equal(await panel.locator(":scope > p > strong").filter({hasText:/^(Dấu hiệu:|Vì sao sai:|Cách sửa:)$/}).count(),0,rel+" exposed recovery body");
@@ -89,7 +116,15 @@ async function goldenW1Parity(page,browser,width,rel){
    const gold=await referenceTip.evaluate(styles);
    for(let k=0;k<expected.length;k++){
     const item=tips.nth(k),summary=item.locator(":scope > summary");
-    assert.equal((await summary.innerText()).trim(),expected[k],rel+" exact recovery title");
+    if(w2&&expected[k].includes("\\(")){
+     const count=(expected[k].match(/\\\(/g)||[]).length;
+     try{
+      await page.waitForFunction(({k,count})=>document.querySelectorAll("article .tabbed-block")[3].querySelectorAll(":scope > details.tip > summary")[k].querySelectorAll("mjx-container").length===count,{k,count});
+     }catch(error){
+      console.error("W2_MATH_HEADING_DIAGNOSTIC "+JSON.stringify({rel,width,scheme,k,count,html:await summary.innerHTML()}));
+      throw error;
+     }
+    }else assert.equal((await summary.innerText()).trim(),expected[k],rel+" exact recovery title");
     assert.equal(await item.evaluate(x=>x.open),false,rel+" accordion initially closed");
     assert.deepEqual(await item.evaluate(styles),gold,rel+" B01 tab4 Golden computed parity");
     assert.deepEqual(await item.locator(":scope > p > strong:first-child").allTextContents(),["Dấu hiệu:","Vì sao sai:","Cách sửa:"],rel+" original recovery paragraphs");
@@ -151,7 +186,7 @@ async function execute(){
      for(let i=0;i<4;i++){
       await tabs.locator(".tabbed-labels > label").nth(i).click();
       assert(await groups.nth(i).isVisible(),rel+" "+width+" learner tab "+i+" not visible");
-      if(/^docs\/thpt-preview\/sgk\/lop-11\/chuong-i\/bai-[234]\.md$/.test(rel)&&source.includes("data-g11-b0")){
+      if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-i\/bai-[234]|chuong-ii\/bai-[567]|chuong-iii\/bai-[89])\.md$/.test(rel)&&source.includes("data-g11-b0")){
        const panel=groups.nth(i);
        for(const disclosure of await panel.locator("details.question").all()){
         const summary=disclosure.locator("summary").first();

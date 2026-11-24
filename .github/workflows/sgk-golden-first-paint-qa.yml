@@ -3,6 +3,11 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - 'docs/thpt-preview/sgk/lop-11/chuong-ii/bai-5.md'
+      - 'docs/thpt-preview/sgk/lop-11/chuong-ii/bai-6.md'
+      - 'docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md'
+      - 'docs/thpt-preview/sgk/lop-11/chuong-iii/bai-8.md'
+      - 'docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md'
       - 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md'
       - 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md'
       - 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md'
@@ -25,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Classify exact #1039 W1 or retain full regression
+      - name: Classify exact #1039 W1/W2 or retain full regression
         id: delta
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
@@ -41,6 +46,9 @@ jobs:
             if grep -Fxq "impact=SCOPED_LESSON" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "changed_lessons=docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md" "$RUNNER_TEMP/first-paint-impact.txt"; then
               BEFORE_SHA="$BASE_SHA" SCOPED_LESSONS="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md" node scripts/test-thpt-scoped-deploy-proof.cjs
               mode=G11_W1
+            elif grep -Fxq "impact=SCOPED_LESSON" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "reason=OWNER_1039_W2_EXACT_SOURCE_AND_BROWSER" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "changed_lessons=docs/thpt-preview/sgk/lop-11/chuong-ii/bai-5.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-6.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md,docs/thpt-preview/sgk/lop-11/chuong-iii/bai-8.md,docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md" "$RUNNER_TEMP/first-paint-impact.txt"; then
+              BEFORE_SHA="$BASE_SHA" SCOPED_LESSONS="docs/thpt-preview/sgk/lop-11/chuong-ii/bai-5.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-6.md,docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md,docs/thpt-preview/sgk/lop-11/chuong-iii/bai-8.md,docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md" node scripts/test-thpt-scoped-deploy-proof.cjs
+              mode=G11_W2
             fi
           fi
           echo "mode=$mode" >> "$GITHUB_OUTPUT"
@@ -59,12 +67,12 @@ jobs:
           python -m pip install --disable-pip-version-check 'mkdocs-material>=9,<10'
           mkdocs build --config-file mkdocs.thpt-preview.yml --site-dir site-thpt-preview
       - name: Install Chromium for affected routes only
-        if: steps.delta.outputs.mode == 'G11_W1'
+        if: steps.delta.outputs.mode == 'G11_W1' || steps.delta.outputs.mode == 'G11_W2'
         run: |
           npm install --no-save playwright@1.56.1
           npx playwright install chromium
       - name: Install Chromium and Safari-compatible WebKit for full regression
-        if: steps.delta.outputs.mode != 'G11_W1'
+        if: steps.delta.outputs.mode == 'FULL'
         run: |
           npm install --no-save playwright@1.56.1
           npx playwright install --with-deps chromium webkit
@@ -84,7 +92,7 @@ jobs:
           else: raise SystemExit('SGK Golden server unavailable')
           PY
           node scripts/test-sgk-golden-first-paint.cjs
-          if [[ "$SGK_FIRST_PAINT_MODE" != "G11_W1" ]]; then
+          if [[ "$SGK_FIRST_PAINT_MODE" == "FULL" ]]; then
             node scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs
             node scripts/test-thpt-academic-presentation-browser.cjs
           fi
