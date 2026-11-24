@@ -19,7 +19,7 @@
 
     Giả sử em cần hướng dẫn một người lắp camera trong căn phòng. Nói camera cách sàn \(2{,}5\) m chưa đủ: ở cùng độ cao ấy có rất nhiều vị trí. Nếu còn biết camera cách hai bức tường vuông góc lần lượt \(1\) m và \(3\) m, ta có thể mô tả chính xác vị trí của nó, miễn là xác định rõ bức tường nào ứng với số nào và phía nào của mỗi bức tường.
 
-    Chọn một góc sàn làm \(O\), hai chiều dọc hai cạnh sàn làm chiều dương của \(Ox,Oy\), chiều lên trên làm chiều dương của \(Oz\). Giống hệ \(Oxy\) đã học ở lớp 10, ta cần gốc, chiều dương và đơn vị đo trên mỗi trục. Điểm mới là trục thứ ba cho phép mô tả cả chiều ngoài mặt phẳng \(Oxy\).
+    Chọn một góc sàn làm \(O\), hai chiều dọc hai cạnh sàn làm chiều dương của \(Ox,Oy\), chiều lên trên làm chiều dương của \(Oz\). Giống hệ \(Oxy\) đã học ở lớp 10, ta cần gốc, chiều dương và đơn vị đo trên mỗi trục. Điểm mới là trục thứ ba cho phép mô tả cả chiều ngoài mặt phẳng \(Oxy\). Chẳng hạn, nếu khoảng cách 1 m ứng với tường \(Oyz\), khoảng cách 3 m ứng với tường \(Ozx\), và camera nằm về phía dương của cả hai trục, thì với đơn vị mét, vị trí camera là \((1;3;2{,}5)\).
 
     Ba trục đôi một vuông góc, giao nhau tại \(O\), tạo thành hệ tọa độ Descartes vuông góc \(Oxyz\). Ba vectơ đơn vị \(\vec i,\vec j,\vec k\) chỉ một đơn vị theo các chiều dương tương ứng của \(Ox,Oy,Oz\). Ba mặt phẳng tọa độ là \((Oxy),(Oyz),(Ozx)\), lần lượt chứa hai trục có tên trong ngoặc. Chúng đôi một vuông góc: chẳng hạn \(Oz\) vuông góc với cả \(Ox\) và \(Oy\), nên \(Oz\perp(Oxy)\). Vì \(Oz\) nằm trong \((Oyz)\) và \((Ozx)\), hai mặt phẳng này đều vuông góc với \((Oxy)\); tương tự cho cặp còn lại.
 
@@ -135,7 +135,7 @@
     | \((Oyz)\) | \((0;y;z)\) |
     | \((Ozx)\) | \((x;0;z)\) |
 
-    Một điểm thuộc trục hoặc mặt phẳng tương ứng khi và chỉ khi các tọa độ phải đặt bằng \(0\) trong bảng vốn đã bằng \(0\). Tọa độ gốc là \(O(0;0;0)\). Nếu điểm ở trên tia dương của một trục, tọa độ theo trục đó dương (trừ gốc); nếu ở trên tia đối, tọa độ tương ứng âm (trừ gốc).
+    Một điểm thuộc mặt phẳng tọa độ nếu tọa độ theo trục vuông góc với mặt phẳng bằng \(0\); chẳng hạn \(M\in(Oxy)\) khi và chỉ khi \(z=0\). Điểm thuộc một trục nếu hai tọa độ còn lại đều bằng \(0\); chẳng hạn \(M\in Oz\) khi và chỉ khi \(x=y=0\). Tọa độ gốc là \(O(0;0;0)\). Nếu điểm ở trên tia dương của một trục, tọa độ theo trục đó dương (trừ gốc); nếu ở trên tia đối, tọa độ tương ứng âm (trừ gốc).
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Tọa độ của vectơ</strong><p>Với mỗi vectơ \(\vec a\), có duy nhất ba số thực \(x,y,z\) sao cho \(\vec a=x\vec i+y\vec j+z\vec k\). Viết \(\vec a=(x;y;z)\) hoặc \(\vec a(x;y;z)\). Nếu \(\overrightarrow{OM}=\vec a\), tọa độ của \(\vec a\) cũng là tọa độ của \(M\).</p></div>
 
