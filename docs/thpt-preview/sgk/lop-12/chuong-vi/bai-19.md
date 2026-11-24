@@ -104,7 +104,7 @@
 
     ### 2.1. Công thức xác suất toàn phần
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Công thức xác suất toàn phần.</strong><p>Với hai biến cố A, B và \(0&lt;P(A)&lt;1\),</p><div class="arithmatex">\(\displaystyle P(B)=P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A).\)</div><p>Vì B là hợp của hai giao xung khắc AB và \(\overline AB\). Nếu một nhóm có xác suất 0, giao tương ứng bằng 0; bỏ đóng góp của nhóm đó thay vì tính xác suất điều kiện không xác định.</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Xác suất toàn phần.</strong><p>Với hai biến cố A, B và \(0\lt P(A)\lt 1\),</p><div class="arithmatex">\(\displaystyle P(B)=P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A).\)</div><p>Vì B là hợp của hai giao xung khắc AB và \(\overline AB\). Nếu một nhóm có xác suất 0, giao tương ứng bằng 0; bỏ đóng góp của nhóm đó thay vì tính xác suất điều kiện không xác định.</p></div>
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B19_TREE_AUTHORING_20261124.svg" alt="Cây xác suất toàn phần và Bayes cho hai xưởng"><figcaption>Cạnh tầng đầu biểu thị tỉ lệ nguồn; cạnh tầng hai biểu thị xác suất lỗi hoặc không lỗi theo nguồn. Cộng đúng các lá lỗi để tính xác suất lỗi chung.</figcaption></figure>
 
@@ -116,7 +116,7 @@
 
     ### 2.2. Công thức Bayes
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Công thức Bayes.</strong><p>Với \(P(B)&gt;0\), \(0&lt;P(A)&lt;1\),</p><div class="arithmatex">\(\displaystyle P(A\mid B)=\frac{P(A)P(B\mid A)}{P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A)}.\)</div><p>Tử là xác suất giao AB; mẫu là xác suất B tính bằng toàn phần. Nếu \(P(A)=0\), kết quả bằng 0; nếu \(P(A)=1\), kết quả bằng 1, với điều kiện \(P(B)&gt;0\).</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Bayes.</strong><p>Với \(P(B)\gt 0\), \(0\lt P(A)\lt 1\),</p><div class="arithmatex">\(\displaystyle P(A\mid B)=\frac{P(A)P(B\mid A)}{P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A)}.\)</div><p>Tử là xác suất giao AB; mẫu là xác suất B tính bằng toàn phần. Nếu \(P(A)=0\), kết quả bằng 0; nếu \(P(A)=1\), kết quả bằng 1, với điều kiện \(P(B)\gt 0\).</p></div>
 
     Khi có nhiều nguồn \(A_i\) như trên, xác suất nguồn \(A_j\) sau khi biết B là
     \[
