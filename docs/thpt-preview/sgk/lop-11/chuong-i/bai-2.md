@@ -128,7 +128,9 @@
 
     \[
     2\sin a\cos b=\sin(a+b)+\sin(a-b).
-    \] Phép biến đổi này đặc biệt tiện khi hai góc \(a-b\) hoặc \(a+b\) là góc quen thuộc, dù bản thân \(a,b\) không dễ tính.
+    \]
+
+    Phép biến đổi này đặc biệt tiện khi hai góc \(a-b\) hoặc \(a+b\) là góc quen thuộc, dù bản thân \(a,b\) không dễ tính.
 
     **Vận dụng.** Không dùng máy tính, tính \(2\cos75^\circ\cos45^\circ\).
 
