@@ -15059,6 +15059,46 @@
           }
         ]
       }
+    },
+    "public_selfcheck_scoped_audit": {
+      "checkpoint": 46,
+      "baseline": "70ec56b0124bb40bdad89f9c37a49730256e3168",
+      "scope": "G10 CHI–IX, G11 CHI; G12 CHI 10 combined items previously checked CP44",
+      "newly_reviewed": 149,
+      "cumulative_distinct_public_selfcheck_only_reviewed": 173,
+      "source_parity_before_delta": "149/149; absent rubric normalized to null for 11 CHVII items",
+      "math_results": "149/149 numerical/logical conclusions verified; not full S1/PED",
+      "fixes": [
+        {
+          "item_id": "THPT-G10-CHII-RD1-11",
+          "before": "adb31e517315c2a31c2c972a2960e1169c6bcb1c",
+          "after": "990c44bc35039363ca3b2f28a3a46654f090ac36",
+          "delta": "C: complete key and rigorous integer optimality proof, same result"
+        },
+        {
+          "item_id": "THPT-G10-B17-R04",
+          "before": "d932d48fe48ef5ba350c67142128314f9a073051",
+          "after": "8dbb731f2d5987efe4b50318dd4a59d9e9cf79a3",
+          "delta": "A: remove internal heading present in original public projection"
+        },
+        {
+          "item_id": "THPT-G10-CHVII-RD1-15",
+          "before": "3425a2f2824bb65158471370fad51a238ce3e86e",
+          "after": "affef3ef720fe604b479826e158f344f83ee30c1",
+          "delta": "A: remove internal MERGE_COVERAGE from solution; no change to assessment policy"
+        },
+        {
+          "item_id": "THPT-G11-CHI-RD1-13",
+          "before": "5efdfd643d075f9a6153fd4371ae29d0f37d5993",
+          "after": "35fb04310097c429541acc79dc24627585cc9515",
+          "delta": "C: distinguish temperature °C and time hours; period refers to underlying periodic function"
+        }
+      ],
+      "remaining": [
+        "CHVI 18 source outcomes missing and 20 skill_ids empty; map against actual existing source before claiming coverage.",
+        "Rubric/stem alignment and optional scope enforcement before interaction; language consistency CHV; wheel motion model G11 CHI-03 needs clarification.",
+        "No fresh original SGK PDF reading, complete PED/D6/reveal or independent review."
+      ]
     }
   }
 }
