@@ -11858,23 +11858,23 @@
 <p>Trên đồ thị vận tốc – thời gian, một chặng rất ngắn <span class="arithmatex">\(\Delta t\)</span> cho độ dời xấp xỉ <span class="arithmatex">\(v(t)\Delta t\)</span>, tương ứng với diện tích một hình chữ nhật hẹp. Khi chia thời gian thành nhiều chặng sao cho độ dài chặng lớn nhất tiến về 0, tổng diện tích các hình chữ nhật tiến tới diện tích dưới đồ thị vận tốc không âm. Đó cũng là giới hạn của tổng độ dời ước tính trên các chặng. Trong ví dụ này, đồ thị là đoạn thẳng từ <span class="arithmatex">\((0;18)\)</span> đến <span class="arithmatex">\((3;0)\)</span>, nên diện tích tam giác bằng <span class="arithmatex">\(3\cdot18/2=27\)</span>. Tích phân giúp tính chính xác lượng tích lũy ấy, kể cả khi đồ thị là đường cong.</p>
 <p><!-- OUTCOME_ID: G12-CHIV-B12-O04 -->
 Với hàm <span class="arithmatex">\(f\)</span> liên tục, không âm trên <span class="arithmatex">\([a;b]\)</span>, miền giới hạn bởi đồ thị <span class="arithmatex">\(y=f(x)\)</span>, trục hoành và hai đường thẳng <span class="arithmatex">\(x=a,x=b\)</span> được gọi là hình thang cong (<span class="arithmatex">\(a&lt;b\)</span>). Tên gọi này bao gồm cả trường hợp đường biên phía trên là đoạn thẳng. Nếu <span class="arithmatex">\(f\)</span> âm trên một phần đoạn, ta không thể gọi toàn miền ấy là hình thang cong theo định nghĩa này.</p>
-<p>Hãy bắt đầu bằng <span class="arithmatex">\(f(x)=x+2\)</span> trên <span class="arithmatex">\([0;3]\)</span>. Với mỗi <span class="arithmatex">\(t\in[0;3]\)</span>, gọi <span class="arithmatex">\(S(t)\)</span> là diện tích từ <span class="arithmatex">\(x=0\)</span> đến <span class="arithmatex">\(x=t\)</span>. Hình thang có hai cạnh song song dài <span class="arithmatex">\(2\)</span> và <span class="arithmatex">\(t+2\)</span>, cách nhau <span class="arithmatex">\(t\)</span>, nên
-[
+<p>Hãy bắt đầu bằng <span class="arithmatex">\(f(x)=x+2\)</span> trên <span class="arithmatex">\([0;3]\)</span>. Với mỗi <span class="arithmatex">\(t\in[0;3]\)</span>, gọi <span class="arithmatex">\(S(t)\)</span> là diện tích từ <span class="arithmatex">\(x=0\)</span> đến <span class="arithmatex">\(x=t\)</span>. Hình thang có hai cạnh song song dài <span class="arithmatex">\(2\)</span> và <span class="arithmatex">\(t+2\)</span>, cách nhau <span class="arithmatex">\(t\)</span>, nên</p>
+<div class="arithmatex">\[
 S(t)=\frac{2+(t+2)}2t=2t+\frac{t^2}{2}.
-]
-Thật thú vị: <span class="arithmatex">\(S'(t)=2+t=f(t)\)</span>. Như vậy hàm diện tích là một nguyên hàm của hàm cho đường biên phía trên. <span class="arithmatex">\(S(0)=0\)</span>; diện tích cần tìm là <span class="arithmatex">\(S(3)=21/2\)</span>.</p>
+\]</div>
+<p>Thật thú vị: <span class="arithmatex">\(S'(t)=2+t=f(t)\)</span>. Như vậy hàm diện tích là một nguyên hàm của hàm cho đường biên phía trên. <span class="arithmatex">\(S(0)=0\)</span>; diện tích cần tìm là <span class="arithmatex">\(S(3)=21/2\)</span>.</p>
 <p>Liệu kết quả này còn đúng khi đường biên thật sự cong? Xét <span class="arithmatex">\(f(t)=t^2\)</span> trên <span class="arithmatex">\([1;2]\)</span>, gọi <span class="arithmatex">\(S(x)\)</span> là diện tích từ 1 đến <span class="arithmatex">\(x\)</span>. Khi dịch cận phải từ <span class="arithmatex">\(x\)</span> tới <span class="arithmatex">\(x+h\)</span>, với <span class="arithmatex">\(h&gt;0\)</span>, diện tích tăng thêm chính là phần nằm giữa hai cận này.</p>
 <p><figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg" alt="Dải diện tích dưới y=t bình phương từ x đến x+h được kẹp giữa hai hình chữ nhật có chiều cao x bình phương và (x+h) bình phương"><figcaption>Phần xanh và cam giữa <span class="arithmatex">\(x\)</span> và <span class="arithmatex">\(x+h\)</span> là diện tích tăng thêm. Hình chữ nhật thấp nằm dưới đường cong, hình chữ nhật cao bao trùm dải ấy. Trục ngang được cắt bớt để nhìn rõ đoạn từ 1 đến 2.</figcaption></figure></p>
-<p>Vì <span class="arithmatex">\(t^2\)</span> tăng trên <span class="arithmatex">\([1;2]\)</span>, hai hình chữ nhật có cùng chiều rộng <span class="arithmatex">\(h\)</span> cho
-[
+<p>Vì <span class="arithmatex">\(t^2\)</span> tăng trên <span class="arithmatex">\([1;2]\)</span>, hai hình chữ nhật có cùng chiều rộng <span class="arithmatex">\(h\)</span> cho</p>
+<div class="arithmatex">\[
 hx^2\le S(x+h)-S(x)\le h(x+h)^2.
-]
-Chia cho <span class="arithmatex">\(h&gt;0\)</span>, ta có <span class="arithmatex">\(x^2\le [S(x+h)-S(x)]/h\le (x+h)^2\)</span>. Khi <span class="arithmatex">\(h\to0^+\)</span>, hai biên đều tiến tới <span class="arithmatex">\(x^2\)</span>. Nếu <span class="arithmatex">\(h&lt;0\)</span>, xét dải từ <span class="arithmatex">\(x+h\)</span> đến <span class="arithmatex">\(x\)</span>, chia diện tích dải ấy cho <span class="arithmatex">\(-h&gt;0\)</span>; thương sai phân tương tự nằm giữa <span class="arithmatex">\((x+h)^2\)</span> và <span class="arithmatex">\(x^2\)</span>. Khi <span class="arithmatex">\(h\to0^-\)</span>, ta cũng nhận <span class="arithmatex">\(x^2\)</span>.</p>
-<p>Do đó <span class="arithmatex">\(S'(x)=x^2\)</span>, kể cả đạo hàm một phía ở hai đầu. Theo Bài 11,
-[
+\]</div>
+<p>Chia cho <span class="arithmatex">\(h&gt;0\)</span>, ta có <span class="arithmatex">\(x^2\le [S(x+h)-S(x)]/h\le (x+h)^2\)</span>. Khi <span class="arithmatex">\(h\to0^+\)</span>, hai biên đều tiến tới <span class="arithmatex">\(x^2\)</span>. Nếu <span class="arithmatex">\(h&lt;0\)</span>, xét dải từ <span class="arithmatex">\(x+h\)</span> đến <span class="arithmatex">\(x\)</span>, chia diện tích dải ấy cho <span class="arithmatex">\(-h&gt;0\)</span>; thương sai phân tương tự nằm giữa <span class="arithmatex">\((x+h)^2\)</span> và <span class="arithmatex">\(x^2\)</span>. Khi <span class="arithmatex">\(h\to0^-\)</span>, ta cũng nhận <span class="arithmatex">\(x^2\)</span>.</p>
+<p>Do đó <span class="arithmatex">\(S'(x)=x^2\)</span>, kể cả đạo hàm một phía ở hai đầu. Theo Bài 11,</p>
+<div class="arithmatex">\[
 S(x)=\frac{x^3}{3}+C.
-]
-Vì <span class="arithmatex">\(S(1)=0\)</span>, <span class="arithmatex">\(C=-1/3\)</span>. Diện tích toàn phần bằng <span class="arithmatex">\(S(2)=8/3-1/3=7/3\)</span>. Nếu chọn một nguyên hàm bất kì <span class="arithmatex">\(F(x)=x^3/3+C\)</span>, hiệu <span class="arithmatex">\(F(2)-F(1)\)</span> vẫn là <span class="arithmatex">\(7/3\)</span>.</p>
+\]</div>
+<p>Vì <span class="arithmatex">\(S(1)=0\)</span>, <span class="arithmatex">\(C=-1/3\)</span>. Diện tích toàn phần bằng <span class="arithmatex">\(S(2)=8/3-1/3=7/3\)</span>. Nếu chọn một nguyên hàm bất kì <span class="arithmatex">\(F(x)=x^3/3+C\)</span>, hiệu <span class="arithmatex">\(F(2)-F(1)\)</span> vẫn là <span class="arithmatex">\(7/3\)</span>.</p>
 <p>SGK tổng quát hóa kết quả: diện tích hình thang cong dưới hàm liên tục không âm <span class="arithmatex">\(f\)</span> bằng <span class="arithmatex">\(F(b)-F(a)\)</span>, với <span class="arithmatex">\(F\)</span> là một nguyên hàm của <span class="arithmatex">\(f\)</span>. Với hàm liên tục không nhất thiết đồng biến, lập luận kẹp tương tự dùng giá trị nhỏ nhất và lớn nhất trên dải hẹp; khi dải co lại, tính liên tục làm hai giá trị tiến về cùng <span class="arithmatex">\(f(x)\)</span>.</p>
 <p><strong>Vận dụng.</strong> Tính diện tích dưới đồ thị <span class="arithmatex">\(y=2x^2+1\)</span> trên đoạn <span class="arithmatex">\([0;2]\)</span>. Trước khi tính, hãy kiểm điều kiện hình thang cong và dự đoán diện tích nằm giữa diện tích hai hình chữ nhật nào.</p>
 <details class="question">
@@ -11888,18 +11888,18 @@ Vì <span class="arithmatex">\(S(1)=0\)</span>, <span class="arithmatex">\(C=-1/
 </details>
 <h4 id="b-inh-nghia-tich-phan">b) Định nghĩa tích phân</h4>
 <p><!-- OUTCOME_ID: G12-CHIV-B12-O01 -->
-Với hàm liên tục bất kì trên <span class="arithmatex">\([a;b]\)</span>, kể cả hàm nhận giá trị âm, ta vẫn có thể tính hiệu <span class="arithmatex">\(F(b)-F(a)\)</span>. Hiệu ấy được gọi là tích phân từ <span class="arithmatex">\(a\)</span> đến <span class="arithmatex">\(b\)</span> của <span class="arithmatex">\(f\)</span>, viết
-[
+Với hàm liên tục bất kì trên <span class="arithmatex">\([a;b]\)</span>, kể cả hàm nhận giá trị âm, ta vẫn có thể tính hiệu <span class="arithmatex">\(F(b)-F(a)\)</span>. Hiệu ấy được gọi là tích phân từ <span class="arithmatex">\(a\)</span> đến <span class="arithmatex">\(b\)</span> của <span class="arithmatex">\(f\)</span>, viết</p>
+<div class="arithmatex">\[
 \int_a^b f(x)\,dx=F(b)-F(a)=\left.F(x)\right|_a^b.
-]
-Vì hai nguyên hàm <span class="arithmatex">\(F,G\)</span> trên cùng đoạn chỉ khác một hằng số, <span class="arithmatex">\(G=F+C\)</span>, nên <span class="arithmatex">\(G(b)-G(a)=F(b)-F(a)\)</span>. Tích phân không phụ thuộc vào việc chọn nguyên hàm nào. Đây là lí do kết quả tích phân là <strong>một số</strong>, không có <span class="arithmatex">\(+C\)</span>.</p>
+\]</div>
+<p>Vì hai nguyên hàm <span class="arithmatex">\(F,G\)</span> trên cùng đoạn chỉ khác một hằng số, <span class="arithmatex">\(G=F+C\)</span>, nên <span class="arithmatex">\(G(b)-G(a)=F(b)-F(a)\)</span>. Tích phân không phụ thuộc vào việc chọn nguyên hàm nào. Đây là lí do kết quả tích phân là <strong>một số</strong>, không có <span class="arithmatex">\(+C\)</span>.</p>
 <p>Trong kí hiệu trên, <span class="arithmatex">\(a\)</span> là cận dưới, <span class="arithmatex">\(b\)</span> là cận trên, <span class="arithmatex">\(f(x)\)</span> là hàm dưới dấu tích phân. <span class="arithmatex">\(x\)</span> chỉ là biến lấy tích phân: viết <span class="arithmatex">\(t\)</span> thay cho <span class="arithmatex">\(x\)</span> đồng thời đổi <span class="arithmatex">\(dx\)</span> thành <span class="arithmatex">\(dt\)</span> không làm đổi kết quả nếu giữ cùng hàm và cận.</p>
-<p>Chẳng hạn,
-[
+<p>Chẳng hạn,</p>
+<div class="arithmatex">\[
 \int_1^3 (2x+1)\,dx=\left.(x^2+x)\right|_1^3
 =(9+3)-(1+1)=10.
-]
-Hãy đặt ngoặc quanh giá trị ở cận dưới. Nếu hàm chứa nhiều hạng tử, quên ngoặc thường làm sai dấu.</p>
+\]</div>
+<p>Hãy đặt ngoặc quanh giá trị ở cận dưới. Nếu hàm chứa nhiều hạng tử, quên ngoặc thường làm sai dấu.</p>
 <p><!-- OUTCOME_ID: G12-CHIV-B12-O05 -->
 Khi <span class="arithmatex">\(a&lt;b\)</span>, phần đồ thị phía trên trục hoành cho đóng góp không âm, phần phía dưới cho đóng góp không dương. Thí dụ <span class="arithmatex">\(f(x)=x\)</span> trên <span class="arithmatex">\([-2;2]\)</span>.</p>
 <p><figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg" alt="Đồ thị y=x trên đoạn âm 2 đến 2: hai tam giác có diện tích 2, đóng góp vào tích phân lần lượt âm 2 và dương 2"><figcaption>Tích phân từ <span class="arithmatex">\(-2\)</span> đến 2 bằng 0 vì hai đóng góp trái dấu triệt tiêu nhau. Tổng diện tích hai tam giác là 4. Không có diện tích hình học âm.</figcaption></figure></p>
@@ -11915,13 +11915,13 @@ Khi <span class="arithmatex">\(a&lt;b\)</span>, phần đồ thị phía trên t
 <p><span class="arithmatex">\(\left|\int_{-1}^2 x\,dx\right|=3/2\)</span>, không bằng <span class="arithmatex">\(5/2\)</span>. Đặt dấu giá trị tuyệt đối bên ngoài tích phân không loại bỏ sự triệt tiêu đã xảy ra bên trong.</p>
 </details>
 <p><!-- OUTCOME_ID: G12-CHIV-B12-O06 -->
-Để tính bằng nguyên hàm, trước hết kiểm hàm liên tục trên đoạn lấy tích phân. Sau đó tìm một nguyên hàm bằng bảng ở Bài 11, thay cận trên rồi trừ cận dưới. Ví dụ
-[
+Để tính bằng nguyên hàm, trước hết kiểm hàm liên tục trên đoạn lấy tích phân. Sau đó tìm một nguyên hàm bằng bảng ở Bài 11, thay cận trên rồi trừ cận dưới. Ví dụ</p>
+<div class="arithmatex">\[
 \int_0^{\pi/3}\cos x\,dx=\sin(\pi/3)-\sin0=\sqrt3/2,
 \quad
 \int_0^1 3^x\,dx=\frac{3-1}{\ln3}.
-]
-Với hàm <span class="arithmatex">\(1/x\)</span> trên <span class="arithmatex">\([-1;1]\)</span>, không áp dụng được công thức hiệu nguyên hàm vì hàm không xác định tại 0. Hai cận khác 0 chưa đủ: phải kiểm cả đoạn nằm giữa chúng.</p>
+\]</div>
+<p>Với hàm <span class="arithmatex">\(1/x\)</span> trên <span class="arithmatex">\([-1;1]\)</span>, không áp dụng được công thức hiệu nguyên hàm vì hàm không xác định tại 0. Hai cận khác 0 chưa đủ: phải kiểm cả đoạn nằm giữa chúng.</p>
 <p>Đôi khi tính bằng hình học nhanh hơn tìm nguyên hàm. Hàm <span class="arithmatex">\(y=\sqrt{16-x^2}\)</span> trên <span class="arithmatex">\([0;4]\)</span> biểu diễn một phần tư đường tròn bán kính 4 ở góc phần tư thứ nhất, bởi <span class="arithmatex">\(x^2+y^2=16,\ y\ge0\)</span>. Vậy tích phân bằng diện tích <span class="arithmatex">\(16\pi/4=4\pi\)</span>. Không cần tìm công thức nguyên hàm mới.</p>
 <p><strong>Vận dụng.</strong> Dùng ý nghĩa hình học, tính <span class="arithmatex">\(\int_{-2}^{2}\sqrt{4-x^2}\,dx\)</span>.</p>
 <details class="question">
@@ -11934,20 +11934,20 @@ Với hàm <span class="arithmatex">\(1/x\)</span> trên <span class="arithmatex
 </details>
 <h3 id="12-tinh-chat-cua-tich-phan">1.2. Tính chất của tích phân</h3>
 <p><!-- OUTCOME_ID: G12-CHIV-B12-O02 -->
-Nếu <span class="arithmatex">\(F'=f,\ G'=g\)</span>, thì <span class="arithmatex">\((kF)'=kf\)</span> và <span class="arithmatex">\((F\pm G)'=f\pm g\)</span>. Lấy hiệu giá trị ở hai cận, ta thu được các tính chất:
-[
+Nếu <span class="arithmatex">\(F'=f,\ G'=g\)</span>, thì <span class="arithmatex">\((kF)'=kf\)</span> và <span class="arithmatex">\((F\pm G)'=f\pm g\)</span>. Lấy hiệu giá trị ở hai cận, ta thu được các tính chất:</p>
+<div class="arithmatex">\[
 \int_a^b kf(x)\,dx=k\int_a^b f(x)\,dx,
 \qquad
 \int_a^b(f\pm g)\,dx=\int_a^b f\,dx\pm\int_a^b g\,dx.
-]
-Khác với họ nguyên hàm, công thức đưa hệ số ra ngoài đúng cả khi <span class="arithmatex">\(k=0\)</span>, vì tích phân là một số. Hai hàm cần được xét trên cùng đoạn; không tách tích hoặc thương thành tích hoặc thương của các tích phân.</p>
+\]</div>
+<p>Khác với họ nguyên hàm, công thức đưa hệ số ra ngoài đúng cả khi <span class="arithmatex">\(k=0\)</span>, vì tích phân là một số. Hai hàm cần được xét trên cùng đoạn; không tách tích hoặc thương thành tích hoặc thương của các tích phân.</p>
 <p>Ví dụ, nếu biết <span class="arithmatex">\(\int_1^4 f(x)\,dx=6\)</span> và <span class="arithmatex">\(\int_1^4g(x)\,dx=-2\)</span>, ta tính được <span class="arithmatex">\(\int_1^4(3f-2g)\,dx=18+4=22\)</span> mà không cần biết biểu thức của <span class="arithmatex">\(f,g\)</span>.</p>
 <p><!-- OUTCOME_ID: G12-CHIV-B12-O03 -->
-Khi ghép các chặng liên tiếp, tích phân của toàn đoạn bằng tổng tích phân từng chặng. Thật vậy, nếu <span class="arithmatex">\(a&lt;c&lt;b\)</span>,
-[
+Khi ghép các chặng liên tiếp, tích phân của toàn đoạn bằng tổng tích phân từng chặng. Thật vậy, nếu <span class="arithmatex">\(a&lt;c&lt;b\)</span>,</p>
+<div class="arithmatex">\[
 [F(c)-F(a)]+[F(b)-F(c)]=F(b)-F(a).
-]
-Khi hai cận bằng nhau, hiệu bằng 0; khi đảo cận, hiệu đổi dấu. Ví dụ <span class="arithmatex">\(\int_3^1 2x\,dx=1-9=-8\)</span>, mặc dù <span class="arithmatex">\(2x&gt;0\)</span> trên <span class="arithmatex">\([1;3]\)</span>. Cận dưới và cận trên là tên vị trí viết trong kí hiệu, không có nghĩa số viết phía dưới luôn nhỏ hơn số viết phía trên.</p>
+\]</div>
+<p>Khi hai cận bằng nhau, hiệu bằng 0; khi đảo cận, hiệu đổi dấu. Ví dụ <span class="arithmatex">\(\int_3^1 2x\,dx=1-9=-8\)</span>, mặc dù <span class="arithmatex">\(2x&gt;0\)</span> trên <span class="arithmatex">\([1;3]\)</span>. Cận dưới và cận trên là tên vị trí viết trong kí hiệu, không có nghĩa số viết phía dưới luôn nhỏ hơn số viết phía trên.</p>
 <p><!-- FIRST_TRY_ID: B12-T02 -->
 <strong>Vận dụng.</strong> Cho <span class="arithmatex">\(f\)</span> liên tục trên <span class="arithmatex">\([0;5]\)</span>, biết <span class="arithmatex">\(\int_0^2 f\,dx=4,\ \int_2^5 f\,dx=-7\)</span>. Tính <span class="arithmatex">\(\int_0^5 f\,dx,\ \int_5^0 2f\,dx,\ \int_2^2 f\,dx\)</span>.</p>
 <details class="question">
@@ -11958,21 +11958,21 @@ Khi hai cận bằng nhau, hiệu bằng 0; khi đảo cận, hiệu đổi dấ
 <summary>Kiểm lỗi</summary>
 <p>Nếu kết quả thứ hai là <span class="arithmatex">\(-6\)</span>, em đã quên đảo cận. Hãy viết <span class="arithmatex">\(\int_5^0 f=-\int_0^5 f\)</span> trước khi nhân 2.</p>
 </details>
-<p>Tính chất ghép đoạn đặc biệt hữu ích với giá trị tuyệt đối. Chẳng hạn, để tính <span class="arithmatex">\(\int_0^4 |x-1|\,dx\)</span>, nhận thấy <span class="arithmatex">\(x-1\)</span> đổi dấu tại 1. Do đó
-[
+<p>Tính chất ghép đoạn đặc biệt hữu ích với giá trị tuyệt đối. Chẳng hạn, để tính <span class="arithmatex">\(\int_0^4 |x-1|\,dx\)</span>, nhận thấy <span class="arithmatex">\(x-1\)</span> đổi dấu tại 1. Do đó</p>
+<div class="arithmatex">\[
 \begin{aligned}
 \int_0^4|x-1|\,dx
-&amp;=\int_0^1(1-x)\,dx+\int_1^4(x-1)\,dx\
+&amp;=\int_0^1(1-x)\,dx+\int_1^4(x-1)\,dx\\
 &amp;=\frac12+\frac92=5.
 \end{aligned}
-]
-Mỗi tích phân trên đoạn con dùng đúng biểu thức của giá trị tuyệt đối tại đó. Không cần chia đoạn tại nghiệm nằm ngoài cận. Nếu nghiệm nằm đúng cận, không tạo thêm đoạn có độ dài dương.</p>
+\]</div>
+<p>Mỗi tích phân trên đoạn con dùng đúng biểu thức của giá trị tuyệt đối tại đó. Không cần chia đoạn tại nghiệm nằm ngoài cận. Nếu nghiệm nằm đúng cận, không tạo thêm đoạn có độ dài dương.</p>
 <p><!-- OUTCOME_ID: G12-CHIV-B12-O07 -->
-<strong>Lượng biến đổi tích lũy.</strong> Nếu <span class="arithmatex">\(Q'(t)=q(t)\)</span> liên tục, thì
-[
+<strong>Lượng biến đổi tích lũy.</strong> Nếu <span class="arithmatex">\(Q'(t)=q(t)\)</span> liên tục, thì</p>
+<div class="arithmatex">\[
 Q(b)-Q(a)=\int_a^b q(t)\,dt.
-]
-Trở lại bài phanh xe: <span class="arithmatex">\(v(t)=18-6t\)</span>, xe dừng lúc <span class="arithmatex">\(t=3\)</span>; trên <span class="arithmatex">\([0;3]\)</span>, <span class="arithmatex">\(v(t)\ge0\)</span>. Quãng đường bằng <span class="arithmatex">\(\int_0^3(18-6t)\,dt=54-27=27\)</span> m, đúng kết quả hình học. Không dùng công thức vận tốc này sau khi xe đã dừng.</p>
+\]</div>
+<p>Trở lại bài phanh xe: <span class="arithmatex">\(v(t)=18-6t\)</span>, xe dừng lúc <span class="arithmatex">\(t=3\)</span>; trên <span class="arithmatex">\([0;3]\)</span>, <span class="arithmatex">\(v(t)\ge0\)</span>. Quãng đường bằng <span class="arithmatex">\(\int_0^3(18-6t)\,dt=54-27=27\)</span> m, đúng kết quả hình học. Không dùng công thức vận tốc này sau khi xe đã dừng.</p>
 <p>Nếu vật chuyển động thẳng và vận tốc đổi dấu, tích phân vận tốc cho độ dịch chuyển có dấu, còn tích phân tốc độ <span class="arithmatex">\(|v|\)</span> cho tổng quãng đường. Một vật đi 3 m rồi lùi 3 m có độ dịch chuyển 0 nhưng quãng đường 6 m. Vì vậy khi tính quãng đường phải xác định thời điểm đổi chiều, chia khoảng nếu cần.</p>
 <p>Cũng có thể dùng tích phân để tính lượng thay đổi của lợi nhuận từ lợi nhuận biên, hoặc lượng nước từ lưu lượng. Chỉ cần tốc độ biến đổi trên khoảng cần xét, không nhất thiết biết giá trị ban đầu. Nếu muốn tìm giá trị cuối, phải cộng lượng thay đổi vào giá trị ban đầu.</p>
 <p><strong>Vận dụng.</strong> Bể có 50 lít nước lúc <span class="arithmatex">\(t=0\)</span>. Lưu lượng thực (dòng vào trừ dòng ra) là <span class="arithmatex">\(q(t)=4-2t\)</span> lít/phút trong 4 phút. Tính lượng nước tăng trong giai đoạn đầu, lượng nước giảm trong giai đoạn sau, tổng độ lớn hai lần biến đổi, lượng thay đổi có dấu của cả 4 phút và lượng nước cuối.</p>
@@ -11985,19 +11985,19 @@ Trở lại bài phanh xe: <span class="arithmatex">\(v(t)=18-6t\)</span>, xe d�
 <summary>Kiểm lỗi</summary>
 <p>Không lấy <span class="arithmatex">\(|0|=0\)</span> để kết luận lượng nước chưa từng thay đổi. Đọc dấu của <span class="arithmatex">\(q\)</span> theo từng giai đoạn và phân biệt lượng thay đổi với giá trị cuối.</p>
 </details>
-<p><strong>Giá trị trung bình của hàm số.</strong> Nhiệt độ thay đổi liên tục trong ngày, không thể chỉ lấy nhiệt độ đầu và cuối chia đôi nếu quy luật biến đổi không tuyến tính. Nếu một hàm liên tục <span class="arithmatex">\(f\)</span> trên <span class="arithmatex">\([a;b]\)</span>, <span class="arithmatex">\(a&lt;b\)</span>, giá trị trung bình là
-[
+<p><strong>Giá trị trung bình của hàm số.</strong> Nhiệt độ thay đổi liên tục trong ngày, không thể chỉ lấy nhiệt độ đầu và cuối chia đôi nếu quy luật biến đổi không tuyến tính. Nếu một hàm liên tục <span class="arithmatex">\(f\)</span> trên <span class="arithmatex">\([a;b]\)</span>, <span class="arithmatex">\(a&lt;b\)</span>, giá trị trung bình là</p>
+<div class="arithmatex">\[
 \overline f=\frac{1}{b-a}\int_a^b f(x)\,dx.
-]
-Có thể hình dung thay đồ thị bởi một đường ngang có chiều cao <span class="arithmatex">\(\overline f\)</span> để tích lũy có dấu không đổi trên cùng đoạn. Đơn vị của <span class="arithmatex">\(\overline f\)</span> là đơn vị của <span class="arithmatex">\(f\)</span>, vì đã chia lượng tích lũy cho độ dài đoạn.</p>
+\]</div>
+<p>Có thể hình dung thay đồ thị bởi một đường ngang có chiều cao <span class="arithmatex">\(\overline f\)</span> để tích lũy có dấu không đổi trên cùng đoạn. Đơn vị của <span class="arithmatex">\(\overline f\)</span> là đơn vị của <span class="arithmatex">\(f\)</span>, vì đã chia lượng tích lũy cho độ dài đoạn.</p>
 <p><strong>Vận dụng.</strong> Nhiệt độ (°C) sau <span class="arithmatex">\(t\)</span> giờ kể từ 6 giờ sáng được mô hình hóa bởi <span class="arithmatex">\(T(t)=18+t^2/4\)</span>, <span class="arithmatex">\(0\le t\le4\)</span>. Tính nhiệt độ trung bình từ 6 đến 10 giờ.</p>
 <details class="question">
 <summary>Đối chiếu</summary>
-<p>[
+<div class="arithmatex">\[
 \overline T=\frac14\left[18t+\frac{t^3}{12}\right]_0^4
 =18+\frac43=\frac{58}{3}\approx19{,}33^\circ\mathrm C.
-]
-Kết quả nằm giữa nhiệt độ nhỏ nhất 18 và lớn nhất 22. Trung bình cộng hai giá trị đầu mút là 20, không phải giá trị trung bình của hàm bậc hai này.</p>
+\]</div>
+<p>Kết quả nằm giữa nhiệt độ nhỏ nhất 18 và lớn nhất 22. Trung bình cộng hai giá trị đầu mút là 20, không phải giá trị trung bình của hàm bậc hai này.</p>
 </details>
 <details class="tip">
 <summary>Kiểm lỗi</summary>

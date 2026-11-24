@@ -11812,13 +11812,13 @@
 <p><strong>Vận dụng.</strong> Trong hình hộp chữ nhật <span class="arithmatex">\(ABCD.A'B'C'D'\)</span>, có <span class="arithmatex">\(AB=5,\ AD=2,\ AA'=3\)</span>. Chọn <span class="arithmatex">\(B\)</span> làm gốc, chiều dương của ba trục lần lượt theo <span class="arithmatex">\(BA,BC,BB'\)</span>. Có lập được hệ tọa độ vuông góc không? Hãy viết ba vectơ đơn vị.</p>
 <details class="question">
 <summary>Đối chiếu</summary>
-<p>Ba cạnh <span class="arithmatex">\(BA,BC,BB'\)</span> đôi một vuông góc và có chung đầu <span class="arithmatex">\(B\)</span>. Vì <span class="arithmatex">\(BA=5,\ BC=2,\ BB'=3\)</span>, có thể chọn hệ tọa độ với
-[
+<p>Ba cạnh <span class="arithmatex">\(BA,BC,BB'\)</span> đôi một vuông góc và có chung đầu <span class="arithmatex">\(B\)</span>. Vì <span class="arithmatex">\(BA=5,\ BC=2,\ BB'=3\)</span>, có thể chọn hệ tọa độ với</p>
+<div class="arithmatex">\[
 \vec i=\tfrac15\overrightarrow{BA},\quad
 \vec j=\tfrac12\overrightarrow{BC},\quad
 \vec k=\tfrac13\overrightarrow{BB'}.
-]
-Mỗi vectơ đều có độ dài <span class="arithmatex">\(1\)</span>, theo đúng chiều đã chọn.</p>
+\]</div>
+<p>Mỗi vectơ đều có độ dài <span class="arithmatex">\(1\)</span>, theo đúng chiều đã chọn.</p>
 </details>
 <details class="tip">
 <summary>Kiểm lỗi</summary>
@@ -11827,11 +11827,11 @@ Mỗi vectơ đều có độ dài <span class="arithmatex">\(1\)</span>, theo �
 <h3 id="12-toa-o-cua-iem-toa-o-cua-vecto-trong-khong-gian">1.2. Tọa độ của điểm, tọa độ của vectơ trong không gian</h3>
 <p>Sau khi chọn hệ trục, làm thế nào chỉ ra một điểm bằng ba số? Hãy quan sát điểm <span class="arithmatex">\(M\)</span> trong hình. Để đi từ <span class="arithmatex">\(O\)</span> tới <span class="arithmatex">\(M\)</span>, ta có thể đi theo ba chặng: <span class="arithmatex">\(2\)</span> đơn vị theo chiều <span class="arithmatex">\(Ox\)</span>, <span class="arithmatex">\(1\)</span> đơn vị theo chiều <span class="arithmatex">\(Oy\)</span>, rồi <span class="arithmatex">\(3\)</span> đơn vị theo chiều <span class="arithmatex">\(Oz\)</span>.</p>
 <p><figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G12-CHII-B07-R00.svg" alt="Điểm M(2;1;3), hình chiếu X, Y, Z trên ba trục và H trên Oxy; ba chặng OX, XH, HM biểu diễn 2i, j, 3k"><figcaption>Đọc lần lượt <span class="arithmatex">\(O\to X\to H\to M\)</span>. Các mũi tên xanh biểu diễn ba thành phần; nét đứt hỗ trợ xác định hình chiếu. Phối cảnh không bảo toàn góc hay độ dài nhìn thấy trên màn hình.</figcaption></figure></p>
-<p>Áp dụng quy tắc cộng vectơ,
-[
+<p>Áp dụng quy tắc cộng vectơ,</p>
+<div class="arithmatex">\[
 \overrightarrow{OM}=2\vec i+\vec j+3\vec k.
-]
-Ba hệ số chính là tọa độ của điểm <span class="arithmatex">\(M\)</span>, viết <span class="arithmatex">\(M(2;1;3)\)</span>. Số đầu là hoành độ, số thứ hai là tung độ, số cuối là cao độ. Trong hệ đã chọn, mỗi điểm có một bộ ba tọa độ duy nhất; ngược lại, mỗi bộ ba số thực xác định một điểm.</p>
+\]</div>
+<p>Ba hệ số chính là tọa độ của điểm <span class="arithmatex">\(M\)</span>, viết <span class="arithmatex">\(M(2;1;3)\)</span>. Số đầu là hoành độ, số thứ hai là tung độ, số cuối là cao độ. Trong hệ đã chọn, mỗi điểm có một bộ ba tọa độ duy nhất; ngược lại, mỗi bộ ba số thực xác định một điểm.</p>
 <p>Vì sao không có hai bộ ba khác nhau cho cùng một điểm? Ba hướng trục độc lập: phần dịch chuyển theo <span class="arithmatex">\(Ox\)</span> không thể được tạo bằng hai dịch chuyển theo <span class="arithmatex">\(Oy,Oz\)</span>, vì hai hướng sau nằm trong mặt phẳng vuông góc với <span class="arithmatex">\(Ox\)</span>. Chiếu vuông góc lên từng trục, ta đọc được riêng từng thành phần có dấu. Do đó bộ ba hệ số trong biểu diễn <span class="arithmatex">\(\overrightarrow{OM}=x\vec i+y\vec j+z\vec k\)</span> là duy nhất.</p>
 <p>Nếu một thành phần âm, đi ngược chiều dương của trục ấy; nếu bằng <span class="arithmatex">\(0\)</span>, không có dịch chuyển theo hướng đó. Ví dụ <span class="arithmatex">\(N(-2;4;-1)\)</span> mô tả ba bước có dấu <span class="arithmatex">\(-2,4,-1\)</span>, chứ không phải ba độ dài âm. Gốc <span class="arithmatex">\(O\)</span> có tọa độ <span class="arithmatex">\((0;0;0)\)</span>.</p>
 <p><strong>Đọc hình chiếu.</strong> Muốn chiếu vuông góc <span class="arithmatex">\(M(x;y;z)\)</span> xuống <span class="arithmatex">\((Oxy)\)</span>, chỉ cần bỏ phần dịch chuyển theo <span class="arithmatex">\(Oz\)</span>, giữ nguyên hai thành phần còn lại. Vì vậy hình chiếu có tọa độ <span class="arithmatex">\((x;y;0)\)</span>. Tương tự, khi chiếu lên <span class="arithmatex">\((Oyz)\)</span>, bỏ thành phần <span class="arithmatex">\(x\)</span>; lên <span class="arithmatex">\((Ozx)\)</span>, bỏ thành phần <span class="arithmatex">\(y\)</span>. Khi chiếu lên một trục, chỉ giữ thành phần theo trục ấy. Trong hình trên, <span class="arithmatex">\(H(2;1;0)\)</span> là hình chiếu của <span class="arithmatex">\(M\)</span> xuống <span class="arithmatex">\((Oxy)\)</span>, còn <span class="arithmatex">\(X,Y,Z\)</span> là các hình chiếu lên <span class="arithmatex">\(Ox,Oy,Oz\)</span>.</p>
@@ -11849,16 +11849,16 @@ Ba hệ số chính là tọa độ của điểm <span class="arithmatex">\(M\)
 <p>Chẳng hạn <span class="arithmatex">\(\vec u=-2\vec i+5\vec k\)</span> có tọa độ <span class="arithmatex">\((-2;0;5)\)</span>. Hệ số của <span class="arithmatex">\(\vec j\)</span> không xuất hiện vì bằng <span class="arithmatex">\(0\)</span>; không được bỏ chỗ thứ hai. Hai vectơ bằng nhau khi cả ba tọa độ tương ứng bằng nhau, dù các mũi tên đặt tại những nơi khác nhau.</p>
 <p>Nếu vectơ xuất phát từ <span class="arithmatex">\(A\ne O\)</span> và kết thúc tại <span class="arithmatex">\(B\)</span>, tọa độ của nó không phải tọa độ điểm <span class="arithmatex">\(B\)</span>. Xét <span class="arithmatex">\(A(-1;1;2)\)</span>, <span class="arithmatex">\(B(2;-1;1)\)</span>. Từ <span class="arithmatex">\(A\)</span> đến <span class="arithmatex">\(B\)</span>, hoành độ tăng <span class="arithmatex">\(3\)</span>, tung độ giảm <span class="arithmatex">\(2\)</span>, cao độ giảm <span class="arithmatex">\(1\)</span>.</p>
 <p><figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B07_FIG02_DISPLACEMENT_AUTHORING_20261124.svg" alt="Vectơ từ A(−1;1;2) đến B(2;−1;1); đường gấp khúc lần lượt dịch chuyển +3 theo Ox, −2 theo Oy, −1 theo Oz"><figcaption>Mũi tên liền nối <span class="arithmatex">\(A\)</span> đến <span class="arithmatex">\(B\)</span>; ba mũi tên nét đứt biểu diễn từng độ thay đổi có dấu. Các hướng trục được ghi ở góc hình. Dời cả hai đầu mút cùng một vectơ thì ba độ thay đổi không đổi.</figcaption></figure></p>
-<p>Vì <span class="arithmatex">\(\overrightarrow{OA}+\overrightarrow{AB}=\overrightarrow{OB}\)</span>, ta có
-[
+<p>Vì <span class="arithmatex">\(\overrightarrow{OA}+\overrightarrow{AB}=\overrightarrow{OB}\)</span>, ta có</p>
+<div class="arithmatex">\[
 \begin{aligned}
 \overrightarrow{AB}
-&amp;=\overrightarrow{OB}-\overrightarrow{OA}\
-&amp;=(2-(-1))\vec i+(-1-1)\vec j+(1-2)\vec k\
+&amp;=\overrightarrow{OB}-\overrightarrow{OA}\\
+&amp;=(2-(-1))\vec i+(-1-1)\vec j+(1-2)\vec k\\
 &amp;=3\vec i-2\vec j-\vec k.
 \end{aligned}
-]
-Do đó <span class="arithmatex">\(\overrightarrow{AB}=(3;-2;-1)\)</span>. Đây là nguồn gốc của quy tắc <strong>tọa độ điểm cuối trừ tọa độ điểm đầu</strong>, theo từng thành phần. Nếu đảo chiều thành <span class="arithmatex">\(\overrightarrow{BA}\)</span>, cả ba dấu đổi ngược. Khi hai điểm trùng nhau, cả ba hiệu bằng <span class="arithmatex">\(0\)</span>.</p>
+\]</div>
+<p>Do đó <span class="arithmatex">\(\overrightarrow{AB}=(3;-2;-1)\)</span>. Đây là nguồn gốc của quy tắc <strong>tọa độ điểm cuối trừ tọa độ điểm đầu</strong>, theo từng thành phần. Nếu đảo chiều thành <span class="arithmatex">\(\overrightarrow{BA}\)</span>, cả ba dấu đổi ngược. Khi hai điểm trùng nhau, cả ba hiệu bằng <span class="arithmatex">\(0\)</span>.</p>
 <p>Nhờ quy tắc này, ta có thể tìm điểm chưa biết nếu biết điểm xuất phát và vectơ độ dời. Trong một lăng trụ, các vectơ cạnh bên tương ứng bằng nhau. Vì thế chỉ cần biết tọa độ của một cặp đỉnh tương ứng là có thể tìm độ thay đổi chung, rồi xác định các đỉnh còn thiếu. Ví dụ nếu <span class="arithmatex">\(A(0;1;2)\)</span> được dời đến <span class="arithmatex">\(A'(2;1;5)\)</span>, thì vectơ độ dời là <span class="arithmatex">\((2;0;3)\)</span>. Đỉnh <span class="arithmatex">\(B(-1;4;0)\)</span> sẽ được dời tới <span class="arithmatex">\(B'(1;4;3)\)</span>, vì phải có <span class="arithmatex">\(\overrightarrow{BB'}=\overrightarrow{AA'}\)</span>.</p>
 <p><strong>Vận dụng.</strong> Cho <span class="arithmatex">\(A(3;-2;4)\)</span>, <span class="arithmatex">\(B(-1;1;4)\)</span>. Tìm tọa độ <span class="arithmatex">\(\overrightarrow{AB}\)</span>, <span class="arithmatex">\(\overrightarrow{BA}\)</span> và điểm <span class="arithmatex">\(D\)</span> sao cho <span class="arithmatex">\(\overrightarrow{CD}=\overrightarrow{AB}\)</span>, biết <span class="arithmatex">\(C(5;0;-2)\)</span>.</p>
 <details class="question">
@@ -11925,12 +11925,12 @@ Do đó <span class="arithmatex">\(\overrightarrow{AB}=(3;-2;-1)\)</span>. Đây
 <p>Hai vectơ <span class="arithmatex">\(\vec a=(x;y;z)\)</span>, <span class="arithmatex">\(\vec b=(x';y';z')\)</span> bằng nhau khi và chỉ khi <span class="arithmatex">\(x=x',\ y=y',\ z=z'\)</span>.</p>
 <p><div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Tọa độ vectơ theo hai đầu mút</strong><p>Với <span class="arithmatex">\(A(x_A;y_A;z_A)\)</span>, <span class="arithmatex">\(B(x_B;y_B;z_B)\)</span> trong cùng hệ tọa độ, từ <span class="arithmatex">\(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\)</span> suy ra</p><div class="arithmatex"><span class="arithmatex">\(\displaystyle\overrightarrow{AB}=(x_B-x_A;y_B-y_A;z_B-z_A).\)</span></div><p>Đổi hai đầu mút làm đổi dấu cả ba tọa độ. Nếu <span class="arithmatex">\(A=O\)</span>, tọa độ <span class="arithmatex">\(\overrightarrow{AB}\)</span> chính là tọa độ <span class="arithmatex">\(B\)</span>.</p></div></p>
 <p>Để tìm một điểm cuối khi biết điểm đầu và vectơ độ dời, lập ba phương trình từ quy tắc trên. Trong hình lăng trụ, hình hộp, dùng các vectơ cạnh tương ứng bằng nhau hoặc quy tắc hình bình hành để tìm đỉnh còn thiếu.</p>
-<p><strong>Liên hệ:</strong> tọa độ Descartes không phải cách duy nhất để xác định vị trí trong không gian. Phần đọc thêm cuối bài SGK giới thiệu tọa độ cầu: khoảng cách <span class="arithmatex">\(r=OM\)</span>, góc phương vị <span class="arithmatex">\(\theta\)</span> của hình chiếu trên <span class="arithmatex">\((Oxy)\)</span> và góc cực <span class="arithmatex">\(\phi\)</span> giữa <span class="arithmatex">\(OM\)</span> với <span class="arithmatex">\(Oz\)</span>. Khi <span class="arithmatex">\(M\)</span> không nằm trên <span class="arithmatex">\(Oz\)</span>, ba đại lượng liên hệ bởi
-[
+<p><strong>Liên hệ:</strong> tọa độ Descartes không phải cách duy nhất để xác định vị trí trong không gian. Phần đọc thêm cuối bài SGK giới thiệu tọa độ cầu: khoảng cách <span class="arithmatex">\(r=OM\)</span>, góc phương vị <span class="arithmatex">\(\theta\)</span> của hình chiếu trên <span class="arithmatex">\((Oxy)\)</span> và góc cực <span class="arithmatex">\(\phi\)</span> giữa <span class="arithmatex">\(OM\)</span> với <span class="arithmatex">\(Oz\)</span>. Khi <span class="arithmatex">\(M\)</span> không nằm trên <span class="arithmatex">\(Oz\)</span>, ba đại lượng liên hệ bởi</p>
+<div class="arithmatex">\[
 x=r\sin\phi\cos\theta,\quad
 y=r\sin\phi\sin\theta,\quad z=r\cos\phi.
-]
-Trong đó <span class="arithmatex">\(r=\sqrt{x^2+y^2+z^2}\)</span>, <span class="arithmatex">\(\cos\phi=z/r\)</span>; nếu <span class="arithmatex">\(x\ne0\)</span>, <span class="arithmatex">\(\tan\theta=y/x\)</span>, nhưng phải xét góc phần tư để xác định đúng góc phương vị. Trên trục <span class="arithmatex">\(Oz\)</span> không có một góc phương vị duy nhất; tại <span class="arithmatex">\(O\)</span> cả hướng đều không xác định. Đây là kiến thức đọc thêm, không phải yêu cầu tính toán chính của Bài 7.</p>
+\]</div>
+<p>Trong đó <span class="arithmatex">\(r=\sqrt{x^2+y^2+z^2}\)</span>, <span class="arithmatex">\(\cos\phi=z/r\)</span>; nếu <span class="arithmatex">\(x\ne0\)</span>, <span class="arithmatex">\(\tan\theta=y/x\)</span>, nhưng phải xét góc phần tư để xác định đúng góc phương vị. Trên trục <span class="arithmatex">\(Oz\)</span> không có một góc phương vị duy nhất; tại <span class="arithmatex">\(O\)</span> cả hướng đều không xác định. Đây là kiến thức đọc thêm, không phải yêu cầu tính toán chính của Bài 7.</p>
 </div>
 <div class="tabbed-block">
 <h2 class="thpt-g10-section-heading">3. Ví dụ</h2>

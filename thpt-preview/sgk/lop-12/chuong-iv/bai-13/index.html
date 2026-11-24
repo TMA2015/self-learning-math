@@ -12034,24 +12034,24 @@
 Nếu đường biên trên là <span class="arithmatex">\(y=f(x)\ge0\)</span> và đường biên dưới là <span class="arithmatex">\(Ox\)</span>, giữa hai đường <span class="arithmatex">\(x=a,x=b\)</span> với <span class="arithmatex">\(a&lt;b\)</span>, chiều cao dải tại <span class="arithmatex">\(x\)</span> là <span class="arithmatex">\(f(x)\)</span>. Khi <span class="arithmatex">\(f\)</span> liên tục, diện tích là <span class="arithmatex">\(\int_a^b f(x)\,dx\)</span>. Chẳng hạn phần hình phẳng dưới <span class="arithmatex">\(y=x^2\)</span> từ <span class="arithmatex">\(0\)</span> đến <span class="arithmatex">\(2\)</span> có diện tích <span class="arithmatex">\([x^3/3]_0^2=8/3\)</span>. Nếu dùng hình chữ nhật cao 4, rộng 2, ta được 8, lớn hơn diện tích thật; điều đó phù hợp vì đường cong nằm dưới cạnh trên của hình chữ nhật.</p>
 <p><!-- OUTCOME_ID: G12-CHIV-B13-O02 -->
 Nếu đồ thị ở dưới trục hoành, độ cao của dải không phải là số âm. Ví dụ đường <span class="arithmatex">\(y=x-1\)</span> từ <span class="arithmatex">\(x=0\)</span> đến <span class="arithmatex">\(x=3\)</span> tạo hai tam giác. Tam giác trái có đáy và chiều cao đều bằng 1, diện tích <span class="arithmatex">\(1/2\)</span>; tam giác phải có đáy và chiều cao đều bằng 2, diện tích 2. Tổng bằng <span class="arithmatex">\(5/2\)</span>. Nhưng tích phân của <span class="arithmatex">\(x-1\)</span> trên <span class="arithmatex">\([0;3]\)</span> bằng <span class="arithmatex">\(3/2\)</span>, bởi nó lấy diện tích phải trừ diện tích trái.</p>
-<p>Để cộng cả hai phần, cần dùng độ cao <span class="arithmatex">\(|x-1|\)</span>:
-[
+<p>Để cộng cả hai phần, cần dùng độ cao <span class="arithmatex">\(|x-1|\)</span>:</p>
+<div class="arithmatex">\[
 S=\int_0^3|x-1|\,dx
 =\int_0^1(1-x)\,dx+\int_1^3(x-1)\,dx
 =\frac12+2=\frac52.
-]
-Kết quả đúng với cách tính hình học. Tổng quát, với hàm liên tục <span class="arithmatex">\(f\)</span> trên <span class="arithmatex">\([a;b]\)</span>, diện tích giới hạn bởi đồ thị, <span class="arithmatex">\(Ox\)</span> và hai đường đứng <span class="arithmatex">\(x=a,x=b\)</span> bằng <span class="arithmatex">\(\int_a^b|f(x)|\,dx\)</span>. Khi <span class="arithmatex">\(f\)</span> đổi dấu, tìm các nghiệm nằm trong khoảng, xét dấu rồi bỏ giá trị tuyệt đối trên từng đoạn. Nghiệm mà hàm chỉ tiếp xúc trục, không đổi dấu, không buộc phải tách tích phân.</p>
+\]</div>
+<p>Kết quả đúng với cách tính hình học. Tổng quát, với hàm liên tục <span class="arithmatex">\(f\)</span> trên <span class="arithmatex">\([a;b]\)</span>, diện tích giới hạn bởi đồ thị, <span class="arithmatex">\(Ox\)</span> và hai đường đứng <span class="arithmatex">\(x=a,x=b\)</span> bằng <span class="arithmatex">\(\int_a^b|f(x)|\,dx\)</span>. Khi <span class="arithmatex">\(f\)</span> đổi dấu, tìm các nghiệm nằm trong khoảng, xét dấu rồi bỏ giá trị tuyệt đối trên từng đoạn. Nghiệm mà hàm chỉ tiếp xúc trục, không đổi dấu, không buộc phải tách tích phân.</p>
 <p><strong>Vận dụng.</strong> Tính diện tích giới hạn bởi <span class="arithmatex">\(y=x^2-1\)</span>, trục hoành và hai đường <span class="arithmatex">\(x=0,x=2\)</span>.</p>
 <details class="question">
 <summary>Đối chiếu</summary>
-<p>Hàm liên tục, có nghiệm <span class="arithmatex">\(x=1\)</span> trong đoạn. Trên <span class="arithmatex">\([0;1]\)</span>, <span class="arithmatex">\(x^2-1\le0\)</span>; trên <span class="arithmatex">\([1;2]\)</span>, <span class="arithmatex">\(x^2-1\ge0\)</span>.
-[
+<p>Hàm liên tục, có nghiệm <span class="arithmatex">\(x=1\)</span> trong đoạn. Trên <span class="arithmatex">\([0;1]\)</span>, <span class="arithmatex">\(x^2-1\le0\)</span>; trên <span class="arithmatex">\([1;2]\)</span>, <span class="arithmatex">\(x^2-1\ge0\)</span>.</p>
+<div class="arithmatex">\[
 \begin{aligned}
-S&amp;=\int_0^1(1-x^2)\,dx+\int_1^2(x^2-1)\,dx\
+S&amp;=\int_0^1(1-x^2)\,dx+\int_1^2(x^2-1)\,dx\\
 &amp;=\frac23+\frac43=2.
 \end{aligned}
-]
-Hai diện tích đều không âm. Tích phân có dấu của <span class="arithmatex">\(x^2-1\)</span> chỉ bằng <span class="arithmatex">\(2/3\)</span>, không phải diện tích.</p>
+\]</div>
+<p>Hai diện tích đều không âm. Tích phân có dấu của <span class="arithmatex">\(x^2-1\)</span> chỉ bằng <span class="arithmatex">\(2/3\)</span>, không phải diện tích.</p>
 </details>
 <details class="tip">
 <summary>Kiểm lỗi</summary>
@@ -12059,31 +12059,31 @@ Hai diện tích đều không âm. Tích phân có dấu của <span class="ari
 </details>
 <h4 id="b-hinh-phang-gioi-han-boi-hai-o-thi-ham-so-va-hai-uong-thang">b) Hình phẳng giới hạn bởi hai đồ thị hàm số và hai đường thẳng</h4>
 <p><!-- OUTCOME_ID: G12-CHIV-B13-O03 -->
-Bây giờ đường biên dưới không nhất thiết là <span class="arithmatex">\(Ox\)</span>. Giả sử trên <span class="arithmatex">\([1;2]\)</span>, đường <span class="arithmatex">\(y=x+2\)</span> nằm trên đường <span class="arithmatex">\(y=x^2\)</span> (hai đồ thị gặp nhau ở 2). Tại <span class="arithmatex">\(x\)</span>, dải đứng dài từ tung độ <span class="arithmatex">\(x^2\)</span> tới <span class="arithmatex">\(x+2\)</span>; chiều cao là <span class="arithmatex">\(x+2-x^2\)</span>, không phải tổng của hai tung độ. Do đó diện tích là
-[
+Bây giờ đường biên dưới không nhất thiết là <span class="arithmatex">\(Ox\)</span>. Giả sử trên <span class="arithmatex">\([1;2]\)</span>, đường <span class="arithmatex">\(y=x+2\)</span> nằm trên đường <span class="arithmatex">\(y=x^2\)</span> (hai đồ thị gặp nhau ở 2). Tại <span class="arithmatex">\(x\)</span>, dải đứng dài từ tung độ <span class="arithmatex">\(x^2\)</span> tới <span class="arithmatex">\(x+2\)</span>; chiều cao là <span class="arithmatex">\(x+2-x^2\)</span>, không phải tổng của hai tung độ. Do đó diện tích là</p>
+<div class="arithmatex">\[
 S=\int_1^2(x+2-x^2)\,dx=\frac76.
-]
-Hai đồ thị có thể nằm cùng phía hoặc khác phía của trục hoành; điều quyết định chiều cao vẫn là tung độ trên trừ tung độ dưới. Ví dụ nếu đường trên là <span class="arithmatex">\(y=-1\)</span>, đường dưới là <span class="arithmatex">\(y=-3\)</span>, chiều cao bằng <span class="arithmatex">\((-1)-(-3)=2\)</span>, không phải 4.</p>
+\]</div>
+<p>Hai đồ thị có thể nằm cùng phía hoặc khác phía của trục hoành; điều quyết định chiều cao vẫn là tung độ trên trừ tung độ dưới. Ví dụ nếu đường trên là <span class="arithmatex">\(y=-1\)</span>, đường dưới là <span class="arithmatex">\(y=-3\)</span>, chiều cao bằng <span class="arithmatex">\((-1)-(-3)=2\)</span>, không phải 4.</p>
 <p><!-- OUTCOME_ID: G12-CHIV-B13-O04 -->
 Hai đường cũng có thể đổi vai trò trên và dưới. Quan sát <span class="arithmatex">\(y=x\)</span> và <span class="arithmatex">\(y=x^3\)</span> trên <span class="arithmatex">\([-1;1]\)</span>. Giải <span class="arithmatex">\(x=x^3\)</span>, ta được <span class="arithmatex">\(x(x-1)(x+1)=0\)</span>; ba giao điểm có hoành độ <span class="arithmatex">\(-1,0,1\)</span>.</p>
 <p><figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg" alt="Hai đồ thị y=x và y=x³ trên [-1;1] cắt nhau tại -1, 0, 1; x³ ở trên khi x âm và x ở trên khi x dương"><figcaption>Đọc hai đoạn đứng trong vùng tô màu: ở nửa trái, chiều cao là <span class="arithmatex">\(x^3-x\)</span>; ở nửa phải, chiều cao là <span class="arithmatex">\(x-x^3\)</span>. Không dùng cùng thứ tự trừ cho cả hai nửa.</figcaption></figure></p>
-<p>Hiệu <span class="arithmatex">\(x-x^3=x(1-x^2)\)</span> âm khi <span class="arithmatex">\(-1&lt;x&lt;0\)</span>, dương khi <span class="arithmatex">\(0&lt;x&lt;1\)</span>. Vì vậy
-[
+<p>Hiệu <span class="arithmatex">\(x-x^3=x(1-x^2)\)</span> âm khi <span class="arithmatex">\(-1&lt;x&lt;0\)</span>, dương khi <span class="arithmatex">\(0&lt;x&lt;1\)</span>. Vì vậy</p>
+<div class="arithmatex">\[
 \begin{aligned}
-S&amp;=\int_{-1}^0(x^3-x)\,dx+\int_0^1(x-x^3)\,dx\
+S&amp;=\int_{-1}^0(x^3-x)\,dx+\int_0^1(x-x^3)\,dx\\
 &amp;=\frac14+\frac14=\frac12.
 \end{aligned}
-]
-Nếu giữ nguyên <span class="arithmatex">\(x-x^3\)</span> trên cả đoạn thì tích phân bằng 0 do hàm lẻ, mặc dù hai miền có diện tích dương. Viết gọn công thức tổng quát <span class="arithmatex">\(S=\int_a^b|f(x)-g(x)|\,dx\)</span>. Nếu hiệu không đổi dấu, có thể lấy trị tuyệt đối của tích phân hiệu; nếu hiệu đổi dấu, phải tính từng phần trước khi cộng.</p>
+\]</div>
+<p>Nếu giữ nguyên <span class="arithmatex">\(x-x^3\)</span> trên cả đoạn thì tích phân bằng 0 do hàm lẻ, mặc dù hai miền có diện tích dương. Viết gọn công thức tổng quát <span class="arithmatex">\(S=\int_a^b|f(x)-g(x)|\,dx\)</span>. Nếu hiệu không đổi dấu, có thể lấy trị tuyệt đối của tích phân hiệu; nếu hiệu đổi dấu, phải tính từng phần trước khi cộng.</p>
 <p><!-- FIRST_TRY_ID: B13-T01 -->
 <strong>Vận dụng.</strong> Tính diện tích giới hạn bởi hai đồ thị <span class="arithmatex">\(y=x^2,\ y=x\)</span> và hai đường <span class="arithmatex">\(x=0,x=2\)</span>. Tại đâu hai đồ thị đổi vai trò?</p>
 <details class="question">
 <summary>Đối chiếu</summary>
-<p><span class="arithmatex">\(x^2=x\)</span> cho <span class="arithmatex">\(x=0,1\)</span>. Trong <span class="arithmatex">\((0;1)\)</span>, <span class="arithmatex">\(x&gt;x^2\)</span>; trong <span class="arithmatex">\((1;2)\)</span>, <span class="arithmatex">\(x^2&gt;x\)</span>. Vì thế
-[
+<p><span class="arithmatex">\(x^2=x\)</span> cho <span class="arithmatex">\(x=0,1\)</span>. Trong <span class="arithmatex">\((0;1)\)</span>, <span class="arithmatex">\(x&gt;x^2\)</span>; trong <span class="arithmatex">\((1;2)\)</span>, <span class="arithmatex">\(x^2&gt;x\)</span>. Vì thế</p>
+<div class="arithmatex">\[
 S=\int_0^1(x-x^2)\,dx+\int_1^2(x^2-x)\,dx
 =\frac16+\frac56=1.
-]</p>
+\]</div>
 </details>
 <details class="tip">
 <summary>Kiểm lỗi</summary>
@@ -12091,11 +12091,11 @@ S=\int_0^1(x-x^2)\,dx+\int_1^2(x^2-x)\,dx
 </details>
 <p>Khi đề chỉ cho hai đồ thị mà không cho hai đường đứng, các giao điểm có thể tự tạo cận của miền kín. Chẳng hạn <span class="arithmatex">\(y=4-x^2,\ y=0\)</span> tạo miền kín từ <span class="arithmatex">\(-2\)</span> đến 2. Nhưng hai đường song song không tự tạo miền kín hữu hạn; không được tự đặt cận theo ý mình. Nếu có nhiều miền kín, xác định miền nào đề yêu cầu và cộng đúng các miền.</p>
 <p><!-- OUTCOME_ID: G12-CHIV-B13-O05 -->
-<strong>Ứng dụng thực tế.</strong> Một khu đất dài 6 m được mô hình hóa trong hệ tọa độ (đơn vị mét) với đường biên dưới <span class="arithmatex">\(g(x)=1+x/3\)</span>, đường biên trên <span class="arithmatex">\(f(x)=g(x)+3-x^2/12\)</span>, <span class="arithmatex">\(0\le x\le6\)</span>. Bề rộng theo phương <span class="arithmatex">\(Oy\)</span> là <span class="arithmatex">\(f-g=3-x^2/12\ge0\)</span>; ở đầu phải hai đường gặp nhau. Diện tích khu đất là
-[
+<strong>Ứng dụng thực tế.</strong> Một khu đất dài 6 m được mô hình hóa trong hệ tọa độ (đơn vị mét) với đường biên dưới <span class="arithmatex">\(g(x)=1+x/3\)</span>, đường biên trên <span class="arithmatex">\(f(x)=g(x)+3-x^2/12\)</span>, <span class="arithmatex">\(0\le x\le6\)</span>. Bề rộng theo phương <span class="arithmatex">\(Oy\)</span> là <span class="arithmatex">\(f-g=3-x^2/12\ge0\)</span>; ở đầu phải hai đường gặp nhau. Diện tích khu đất là</p>
+<div class="arithmatex">\[
 S=\int_0^6(3-x^2/12)\,dx=18-6=12\ \mathrm{m}^2.
-]
-Cả hai tọa độ đều đo bằng mét nên tích phân chiều cao theo chiều rộng có đơn vị mét vuông. Không cần tính diện tích từ từng đường xuống <span class="arithmatex">\(Ox\)</span> rồi trừ nếu đã biết chiều cao.</p>
+\]</div>
+<p>Cả hai tọa độ đều đo bằng mét nên tích phân chiều cao theo chiều rộng có đơn vị mét vuông. Không cần tính diện tích từ từng đường xuống <span class="arithmatex">\(Ox\)</span> rồi trừ nếu đã biết chiều cao.</p>
 <p>Trong kinh tế, diện tích giữa đồ thị giá và số lượng có ý nghĩa khác diện tích đất. Giả sử giá cầu là <span class="arithmatex">\(p=D(x)=18-2x\)</span>, giá cung là <span class="arithmatex">\(p=P(x)=6+x\)</span> (nghìn đồng/sản phẩm), với số lượng <span class="arithmatex">\(x\)</span> được coi là biến liên tục. Điểm cân bằng thỏa <span class="arithmatex">\(D(x_0)=P(x_0)\)</span>, nên <span class="arithmatex">\(x_0=4,p_0=10\)</span>. Trên <span class="arithmatex">\([0;4]\)</span>, cầu nằm trên mức giá 10 còn cung nằm dưới mức ấy. Thặng dư tiêu dùng là diện tích giữa cầu và mức giá cân bằng, bằng <span class="arithmatex">\(\int_0^4(8-2x)\,dx=16\)</span> nghìn đồng; thặng dư sản xuất bằng <span class="arithmatex">\(\int_0^4(4-x)\,dx=8\)</span> nghìn đồng. Các diện tích phản ánh chênh lệch theo mô hình giá; không đồng nhất với tổng doanh thu hoặc lợi nhuận kế toán.</p>
 <h3 id="12-ung-dung-tich-phan-e-tinh-the-tich-vat-the">1.2. Ứng dụng tích phân để tính thể tích vật thể</h3>
 <h4 id="a-tinh-the-tich-cua-vat-the">a) Tính thể tích của vật thể</h4>
@@ -12105,78 +12105,78 @@ Hãy hình dung một khối dài được cắt thành nhiều lát mỏng vuô
 <p>Với khối lăng trụ có diện tích đáy <span class="arithmatex">\(B\)</span>, chiều cao vuông góc <span class="arithmatex">\(h\)</span>, chọn trục theo chiều cao. Mọi tiết diện song song đáy có diện tích <span class="arithmatex">\(B\)</span>, nên <span class="arithmatex">\(V=\int_0^h B\,dx=Bh\)</span>. Điều này đúng cả với lăng trụ xiên: mặt cắt song song đáy có thể dịch sang bên nhưng diện tích vẫn không đổi. Không dùng chiều dài cạnh bên thay chiều cao nếu cạnh bên không vuông góc đáy.</p>
 <p>Xét khối chóp đều đáy vuông cạnh 4 cm, cao 6 cm. Chọn gốc ở đỉnh chóp và trục <span class="arithmatex">\(Ox\)</span> đi qua tâm đáy. Mặt cắt tại <span class="arithmatex">\(x\)</span> song song với đáy, có cạnh <span class="arithmatex">\(\ell(x)\)</span>. Theo Thalès, tỉ số độ dài cạnh bằng tỉ số khoảng cách đến đỉnh: <span class="arithmatex">\(\ell(x)/4=x/6\)</span>.</p>
 <p><figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg" alt="Khối chóp đáy vuông cạnh 4, cao 6; mặt cắt vuông góc Ox ở x=3 là hình vuông cạnh 2"><figcaption>Ở nửa chiều cao <span class="arithmatex">\(x=3\)</span>, cạnh hình vuông chỉ còn một nửa cạnh đáy, nhưng diện tích chỉ còn một phần tư: <span class="arithmatex">\(2^2=4\)</span> thay vì <span class="arithmatex">\(4^2=16\)</span>. Đây là lý do diện tích phụ thuộc vào bình phương <span class="arithmatex">\(x\)</span>.</figcaption></figure></p>
-<p>Từ đó <span class="arithmatex">\(S(x)=(2x/3)^2=4x^2/9\)</span> cm². Thể tích là
-[
+<p>Từ đó <span class="arithmatex">\(S(x)=(2x/3)^2=4x^2/9\)</span> cm². Thể tích là</p>
+<div class="arithmatex">\[
 V=\int_0^6\frac{4x^2}{9}\,dx
 =\frac49\cdot\frac{216}{3}=32\ \mathrm{cm}^3.
-]
-Tổng quát với diện tích đáy <span class="arithmatex">\(B\)</span>, chiều cao <span class="arithmatex">\(h\)</span>, mặt cắt cách đỉnh <span class="arithmatex">\(x\)</span> có tỉ số đồng dạng <span class="arithmatex">\(x/h\)</span>, nên <span class="arithmatex">\(S(x)=B(x/h)^2\)</span>. Do đó <span class="arithmatex">\(V=Bh/3\)</span>. Nhờ tích phân, ta hiểu hệ số <span class="arithmatex">\(1/3\)</span> đến từ <span class="arithmatex">\(\int_0^h x^2\,dx=h^3/3\)</span>, chứ không chỉ ghi nhớ công thức.</p>
+\]</div>
+<p>Tổng quát với diện tích đáy <span class="arithmatex">\(B\)</span>, chiều cao <span class="arithmatex">\(h\)</span>, mặt cắt cách đỉnh <span class="arithmatex">\(x\)</span> có tỉ số đồng dạng <span class="arithmatex">\(x/h\)</span>, nên <span class="arithmatex">\(S(x)=B(x/h)^2\)</span>. Do đó <span class="arithmatex">\(V=Bh/3\)</span>. Nhờ tích phân, ta hiểu hệ số <span class="arithmatex">\(1/3\)</span> đến từ <span class="arithmatex">\(\int_0^h x^2\,dx=h^3/3\)</span>, chứ không chỉ ghi nhớ công thức.</p>
 <p><strong>Vận dụng.</strong> Một khối chóp cụt đều có hai đáy là hình vuông cạnh 2 cm và 5 cm, chiều cao 3 cm. Chọn <span class="arithmatex">\(x=0\)</span> ở đáy nhỏ, <span class="arithmatex">\(x=3\)</span> ở đáy lớn. Tìm diện tích tiết diện và thể tích.</p>
 <details class="question">
 <summary>Đối chiếu</summary>
-<p>Do các cạnh bên là đoạn thẳng và các mặt cắt song song đáy, cạnh của hình vuông tăng tuyến tính từ 2 đến 5: <span class="arithmatex">\(\ell(x)=2+x\)</span>. Vì vậy <span class="arithmatex">\(S(x)=(2+x)^2\)</span> cm².
-[
+<p>Do các cạnh bên là đoạn thẳng và các mặt cắt song song đáy, cạnh của hình vuông tăng tuyến tính từ 2 đến 5: <span class="arithmatex">\(\ell(x)=2+x\)</span>. Vì vậy <span class="arithmatex">\(S(x)=(2+x)^2\)</span> cm².</p>
+<div class="arithmatex">\[
 V=\int_0^3(2+x)^2\,dx
 =[(2+x)^3/3]_0^3=\frac{125-8}{3}=39\ \mathrm{cm}^3.
-]
-Kết quả nằm giữa <span class="arithmatex">\(3\cdot4=12\)</span> và <span class="arithmatex">\(3\cdot25=75\)</span>.</p>
+\]</div>
+<p>Kết quả nằm giữa <span class="arithmatex">\(3\cdot4=12\)</span> và <span class="arithmatex">\(3\cdot25=75\)</span>.</p>
 </details>
 <details class="tip">
 <summary>Kiểm lỗi</summary>
 <p>Không cho diện tích tăng tuyến tính từ 4 tới 25. Cạnh tăng tuyến tính, còn diện tích là bình phương cạnh. Kiểm <span class="arithmatex">\(\ell(0)=2,\ell(3)=5\)</span> trước khi bình phương.</p>
 </details>
-<p>Tổng quát, nếu hai đáy của một hình chóp cụt có diện tích <span class="arithmatex">\(B_0,B_1\)</span>, cao <span class="arithmatex">\(h\)</span>, các tiết diện đồng dạng. Căn bậc hai của diện tích tỉ lệ với kích thước dài, nên
-[
+<p>Tổng quát, nếu hai đáy của một hình chóp cụt có diện tích <span class="arithmatex">\(B_0,B_1\)</span>, cao <span class="arithmatex">\(h\)</span>, các tiết diện đồng dạng. Căn bậc hai của diện tích tỉ lệ với kích thước dài, nên</p>
+<div class="arithmatex">\[
 S(x)=\left[\sqrt{B_0}+\frac{x}{h}(\sqrt{B_1}-\sqrt{B_0})\right]^2.
-]
-Khai triển và tích phân từ 0 đến <span class="arithmatex">\(h\)</span> được
-[
+\]</div>
+<p>Khai triển và tích phân từ 0 đến <span class="arithmatex">\(h\)</span> được</p>
+<div class="arithmatex">\[
 V=\frac h3(B_0+\sqrt{B_0B_1}+B_1).
-]
-Khi đáy nhỏ co về đỉnh (<span class="arithmatex">\(B_0=0\)</span>), công thức trở về <span class="arithmatex">\(V=hB_1/3\)</span>.</p>
+\]</div>
+<p>Khi đáy nhỏ co về đỉnh (<span class="arithmatex">\(B_0=0\)</span>), công thức trở về <span class="arithmatex">\(V=hB_1/3\)</span>.</p>
 <p><!-- OUTCOME_ID: G12-CHIV-B13-O07 -->
 Tiết diện không nhất thiết là hình vuông. Nếu là hình tròn bán kính <span class="arithmatex">\(r(x)\)</span>, diện tích là <span class="arithmatex">\(\pi r(x)^2\)</span>. Nếu đề cho đường kính <span class="arithmatex">\(d(x)\)</span>, phải chia đôi: <span class="arithmatex">\(S(x)=\pi d(x)^2/4\)</span>. Tích phân diện tích đó mới cho thể tích. Có thể áp dụng dù tâm các mặt cắt không nằm trên một đường thẳng, miễn ta biết đúng diện tích và các mặt cắt vuông góc với trục tích phân.</p>
 <h4 id="b-tinh-the-tich-khoi-tron-xoay">b) Tính thể tích khối tròn xoay</h4>
 <p><!-- OUTCOME_ID: G12-CHIV-B13-O08 -->
 Có một cách đặc biệt tạo ra những tiết diện hình tròn: quay cả miền hình phẳng quanh một trục. Chẳng hạn quay miền tam giác nằm giữa <span class="arithmatex">\(y=x/2\)</span>, <span class="arithmatex">\(Ox\)</span>, <span class="arithmatex">\(x=0,x=4\)</span> quanh <span class="arithmatex">\(Ox\)</span>, ta được khối nón cao 4, bán kính đáy 2. Tại một giá trị <span class="arithmatex">\(x\)</span>, đoạn đứng từ 0 đến <span class="arithmatex">\(x/2\)</span> quay một vòng quanh trục, quét thành một đĩa tròn bán kính <span class="arithmatex">\(x/2\)</span>.</p>
 <p><figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg" alt="Miền tam giác dưới y=x/2 từ 0 đến 4 quay quanh Ox; tại x=3 đoạn đứng 1,5 thành đĩa bán kính 1,5"><figcaption>Ở <span class="arithmatex">\(x=3\)</span>, bán kính mặt cắt là <span class="arithmatex">\(1{,}5\)</span>, không phải đường kính 3. Hình elip bên phải biểu diễn mặt tròn trong phối cảnh, không làm thay đổi diện tích thực <span class="arithmatex">\(\pi(1{,}5)^2\)</span>.</figcaption></figure></p>
-<p>Vậy
-[
+<p>Vậy</p>
+<div class="arithmatex">\[
 V=\int_0^4\pi(x/2)^2\,dx
 =\frac\pi4\cdot\frac{64}{3}=\frac{16\pi}{3}.
-]
-Kiểm lại bằng công thức khối nón <span class="arithmatex">\(V=\pi\cdot 2^2\cdot4/3=16\pi/3\)</span>. Từ đó tổng quát hóa: với <span class="arithmatex">\(f(x)\)</span> liên tục, không âm trên <span class="arithmatex">\([a;b]\)</span>, quay miền nằm giữa <span class="arithmatex">\(y=f(x)\)</span> và <span class="arithmatex">\(Ox\)</span> quanh <span class="arithmatex">\(Ox\)</span> cho khối tròn xoay có
-[
+\]</div>
+<p>Kiểm lại bằng công thức khối nón <span class="arithmatex">\(V=\pi\cdot 2^2\cdot4/3=16\pi/3\)</span>. Từ đó tổng quát hóa: với <span class="arithmatex">\(f(x)\)</span> liên tục, không âm trên <span class="arithmatex">\([a;b]\)</span>, quay miền nằm giữa <span class="arithmatex">\(y=f(x)\)</span> và <span class="arithmatex">\(Ox\)</span> quanh <span class="arithmatex">\(Ox\)</span> cho khối tròn xoay có</p>
+<div class="arithmatex">\[
 V=\pi\int_a^b [f(x)]^2\,dx.
-]
-Bình phương xuất hiện vì diện tích mặt cắt là diện tích hình tròn, không phải vì bản thân phép tích phân cần bình phương. Với đúng miền giữa đồ thị và <span class="arithmatex">\(Ox\)</span>, kể cả khi <span class="arithmatex">\(f\)</span> âm, bán kính là <span class="arithmatex">\(|f(x)|\)</span> và bình phương vẫn là <span class="arithmatex">\(f(x)^2\)</span>.</p>
+\]</div>
+<p>Bình phương xuất hiện vì diện tích mặt cắt là diện tích hình tròn, không phải vì bản thân phép tích phân cần bình phương. Với đúng miền giữa đồ thị và <span class="arithmatex">\(Ox\)</span>, kể cả khi <span class="arithmatex">\(f\)</span> âm, bán kính là <span class="arithmatex">\(|f(x)|\)</span> và bình phương vẫn là <span class="arithmatex">\(f(x)^2\)</span>.</p>
 <p><!-- FIRST_TRY_ID: B13-T02 -->
 <strong>Vận dụng.</strong> Quay hình phẳng giới hạn bởi <span class="arithmatex">\(y=1+x^2\)</span>, <span class="arithmatex">\(Ox\)</span>, <span class="arithmatex">\(x=0,x=1\)</span> quanh <span class="arithmatex">\(Ox\)</span>. Tính thể tích và kiểm bằng thể tích hai hình trụ bán kính 1 và 2, cùng chiều cao 1.</p>
 <details class="question">
 <summary>Đối chiếu</summary>
-<p>Bán kính <span class="arithmatex">\(r(x)=1+x^2\)</span> nằm trong <span class="arithmatex">\([1;2]\)</span>, nên
-[
+<p>Bán kính <span class="arithmatex">\(r(x)=1+x^2\)</span> nằm trong <span class="arithmatex">\([1;2]\)</span>, nên</p>
+<div class="arithmatex">\[
 V=\pi\int_0^1(1+2x^2+x^4)\,dx
 =\pi(1+2/3+1/5)=28\pi/15.
-]
-Hai khối trụ có thể tích lần lượt <span class="arithmatex">\(\pi\)</span> và <span class="arithmatex">\(4\pi\)</span>; kết quả ở giữa, phù hợp với bán kính biến đổi.</p>
+\]</div>
+<p>Hai khối trụ có thể tích lần lượt <span class="arithmatex">\(\pi\)</span> và <span class="arithmatex">\(4\pi\)</span>; kết quả ở giữa, phù hợp với bán kính biến đổi.</p>
 </details>
 <details class="tip">
 <summary>Kiểm lỗi</summary>
 <p>Nếu chỉ lấy <span class="arithmatex">\(\pi\int_0^1(1+x^2)\,dx\)</span>, em đã tích phân bán kính chứ chưa tính diện tích mặt cắt. Bình phương toàn bộ <span class="arithmatex">\(1+x^2\)</span> trước khi tích phân.</p>
 </details>
-<p>Với khối cầu bán kính <span class="arithmatex">\(R&gt;0\)</span>, lấy nửa hình tròn phía trên <span class="arithmatex">\(Ox\)</span> có đường biên <span class="arithmatex">\(y=\sqrt{R^2-x^2}\)</span> trên <span class="arithmatex">\([-R;R]\)</span>. Quay quanh <span class="arithmatex">\(Ox\)</span> tạo cả khối cầu. Bình phương bán kính mặt cắt cho <span class="arithmatex">\(R^2-x^2\)</span>, nên
-[
+<p>Với khối cầu bán kính <span class="arithmatex">\(R&gt;0\)</span>, lấy nửa hình tròn phía trên <span class="arithmatex">\(Ox\)</span> có đường biên <span class="arithmatex">\(y=\sqrt{R^2-x^2}\)</span> trên <span class="arithmatex">\([-R;R]\)</span>. Quay quanh <span class="arithmatex">\(Ox\)</span> tạo cả khối cầu. Bình phương bán kính mặt cắt cho <span class="arithmatex">\(R^2-x^2\)</span>, nên</p>
+<div class="arithmatex">\[
 V=\pi\int_{-R}^R(R^2-x^2)\,dx
 =\frac43\pi R^3.
-]
-Nếu chỉ lấy từ 0 đến <span class="arithmatex">\(R\)</span>, ta được nửa khối cầu. Cận lấy theo chiều dài trên trục quay, không theo tung độ lớn nhất.</p>
-<p>Khối nón cụt có bán kính hai đáy <span class="arithmatex">\(r,R\)</span> và chiều cao <span class="arithmatex">\(h\)</span>. Bán kính ở giữa tăng hoặc giảm tuyến tính, <span class="arithmatex">\(r(x)=r+(R-r)x/h\)</span> với <span class="arithmatex">\(0\le x\le h\)</span>. Vậy
-[
+\]</div>
+<p>Nếu chỉ lấy từ 0 đến <span class="arithmatex">\(R\)</span>, ta được nửa khối cầu. Cận lấy theo chiều dài trên trục quay, không theo tung độ lớn nhất.</p>
+<p>Khối nón cụt có bán kính hai đáy <span class="arithmatex">\(r,R\)</span> và chiều cao <span class="arithmatex">\(h\)</span>. Bán kính ở giữa tăng hoặc giảm tuyến tính, <span class="arithmatex">\(r(x)=r+(R-r)x/h\)</span> với <span class="arithmatex">\(0\le x\le h\)</span>. Vậy</p>
+<div class="arithmatex">\[
 V=\pi\int_0^h[r+(R-r)x/h]^2\,dx
 =\frac{\pi h}{3}(r^2+rR+R^2).
-]
-Thử <span class="arithmatex">\(r=0\)</span>, ta có công thức nón; thử <span class="arithmatex">\(r=R\)</span>, ta có công thức trụ. Hai trường hợp giúp tự kiểm.</p>
+\]</div>
+<p>Thử <span class="arithmatex">\(r=0\)</span>, ta có công thức nón; thử <span class="arithmatex">\(r=R\)</span>, ta có công thức trụ. Hai trường hợp giúp tự kiểm.</p>
 <p><strong>Lưu ý mở rộng:</strong> Công thức đĩa nói trên dành cho miền có một biên là trục quay. Nếu quay một miền giữa hai đồ thị đều nằm phía trên <span class="arithmatex">\(Ox\)</span> mà không chạm trục, tiết diện thường là vành khăn có diện tích <span class="arithmatex">\(\pi(R(x)^2-r(x)^2)\)</span>, không phải <span class="arithmatex">\(\pi(R-r)^2\)</span>. Khi miền cắt qua trục quay, phải xác định lại tiết diện thật sự; không trừ máy móc bình phương hai tung độ. Nếu quay quanh trục khác, cũng phải xác định khoảng cách đến đúng trục và phương mặt cắt.</p>
 </div>
 <div class="tabbed-block">
