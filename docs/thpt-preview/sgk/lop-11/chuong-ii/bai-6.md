@@ -125,13 +125,14 @@
 
     ### 3.1. Nhận biết cấp số cộng từ công thức theo \(n\)
 
-    **Đề bài.** Trong hai dãy \(u_n=7-2n\) và \(v_n=n^2\), dãy nào là cấp số cộng?
+    **Đề bài.** Trong hai dãy \(u_n=4+3n\) và \(v_n=n^2\), với \(n\ge1\), dãy nào là cấp số cộng?
 
-    **Phân tích:** Định nghĩa yêu cầu hiệu liên tiếp không đổi; phải tính hiệu dưới dạng biểu thức theo \(n\), thay vì phán đoán từ vài số hạng.
+    **Phân tích:** Định nghĩa yêu cầu hiệu liên tiếp không đổi; phải tính hiệu theo \(n\), thay vì chỉ nhìn vài số hạng.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(u_{n+1}-u_n=[7-2(n+1)]-(7-2n)=-2\) với mọi \(n\ge1\), nên \((u_n)\) là cấp số cộng, \(u_1=5,d=-2\). Còn \(v_{n+1}-v_n=(n+1)^2-n^2=2n+1\) phụ thuộc \(n\); \((v_n)\) không là cấp số cộng.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(u_{n+1}-u_n=[4+3(n+1)]-(4+3n)=3\) với mọi \(n\ge1\), nên \((u_n)\) là cấp số cộng, \(u_1=7,d=3\). Còn \(v_{n+1}-v_n=(n+1)^2-n^2=2n+1\) phụ thuộc \(n\); \((v_n)\) không là cấp số cộng.</p></div>
 
-    **Kiểm lại:** \(u_1,u_2,u_3=5,3,1\), hiệu \(-2\); \(v_1,v_2,v_3=1,4,9\), hiệu \(3\) rồi \(5\).
+    **Kiểm lại:** \(u_1,u_2,u_3=7,10,13\), hiệu \(3\); \(v_1,v_2,v_3=1,4,9\), hiệu \(3\) rồi \(5\).
+
 
     ### 3.2. Tìm số hạng thứ 100 khi công sai âm
 
@@ -175,13 +176,14 @@
 
     ### 3.6. Tổng lương tăng đều qua các năm
 
-    **Đề bài.** Lương năm đầu \(100\) triệu đồng/năm; mỗi năm tiếp theo tăng thêm \(20\) triệu đồng/năm. Tính tổng tiền lương của \(10\) năm, giả sử không có điều chỉnh khác.
+    **Đề bài.** Lương năm đầu \(120\) triệu đồng; mỗi năm tiếp theo tăng thêm \(15\) triệu đồng so với năm trước. Tính tổng lương \(8\) năm, giả sử không có điều chỉnh khác.
 
-    **Phân tích:** Dữ kiện là **cộng một số tiền cố định** chứ không nhân theo tỉ lệ phần trăm. Đây là cấp số cộng có \(10\) số hạng, cần tính tổng \(S_{10}\).
+    **Phân tích:** Đây là mức tăng một số tiền cố định, tức cấp số cộng có \(8\) số hạng, cần tính \(S_8\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(u_1=100,d=20\) (triệu đồng). \(u_{10}=100+9\cdot20=280\) triệu. \(S_{10}=10(100+280)/2=1900\) triệu đồng \(=1{,}9\) tỉ đồng.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(u_1=120,d=15\) (triệu đồng). \(u_8=120+7\cdot15=225\) triệu đồng. \(S_8=8(120+225)/2=1380\) triệu đồng, tức \(1{,}38\) tỉ đồng.</p></div>
 
-    **Kiểm lại:** Dạng có công sai: \(S_{10}=\frac{10}{2}[200+9\cdot20]=5\cdot380=1900\), đúng.
+    **Kiểm lại:** \(\displaystyle S_8=\frac82[2\cdot120+7\cdot15]=4\cdot345=1380\), đúng.
+
 
     ### 3.7. Kí hiệu \(\Sigma\) và kiểm tổng bằng hai cách
 
