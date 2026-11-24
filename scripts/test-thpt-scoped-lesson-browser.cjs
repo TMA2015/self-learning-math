@@ -58,6 +58,18 @@ async function execute(){
      for(let i=0;i<4;i++){
       await tabs.locator(".tabbed-labels > label").nth(i).click();
       assert(await groups.nth(i).isVisible(),rel+" "+width+" learner tab "+i+" not visible");
+      if(/^docs\/thpt-preview\/sgk\/lop-11\/chuong-i\/bai-[234]\.md$/.test(rel)&&source.includes("data-g11-b0")){
+       const panel=groups.nth(i);
+       for(const disclosure of await panel.locator("details.question").all()){
+        const summary=disclosure.locator("summary").first();
+        assert((await summary.innerText()).includes("Đối chiếu"),rel+" "+width+" comparison label");
+        assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison prematurely open");
+        await summary.click();
+        assert(await disclosure.evaluate(el=>el.open),rel+" "+width+" comparison failed to open");
+        await summary.click();
+        assert(!(await disclosure.evaluate(el=>el.open)),rel+" "+width+" comparison failed to close");
+       }
+      }
       const figs=groups.nth(i).locator("figure img");
       for(const fig of await figs.all()){
        assert((await fig.getAttribute("alt"))?.trim(),rel+" "+width+" figure alt missing");

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" role="img" aria-labelledby="title desc">
+<title id="title">Hai vectơ đơn vị và góc hiệu</title>
+<desc id="desc">Trên đường tròn đơn vị tâm O, hai vectơ OA và OB lần lượt tạo với trục Ox góc a bằng 60 độ và b bằng 30 độ. Góc giữa OA và OB bằng a trừ b bằng 30 độ. Hình giúp liên hệ cos góc hiệu với tích vô hướng hai vectơ.</desc>
+<rect width="760" height="340" fill="#ffffff" rx="16"/>
+<g stroke="#c3ccd7" stroke-width="1.6" fill="none"><circle cx="240" cy="214" r="144"/><path d="M52 214H470 M240 318V32"/></g>
+<g fill="#44576a" font-family="Arial, sans-serif" font-size="17"><text x="474" y="220">x</text><text x="248" y="32">y</text><text x="225" y="235">O</text><text x="386" y="232">1</text></g>
+<g stroke-width="5" stroke-linecap="round" fill="none">
+<path d="M240 214L312 89" stroke="#0d7b6d"/>
+<path d="M240 214L365 142" stroke="#2e64b2"/>
+</g>
+<g fill="#0d7b6d"><circle cx="312" cy="89" r="6"/></g><g fill="#2e64b2"><circle cx="365" cy="142" r="6"/></g>
+<path d="M295 183 A64 64 0 0 0 272 159" fill="none" stroke="#b15e28" stroke-width="3"/>
+<g font-family="Arial, sans-serif" font-size="18" fill="#24364c">
+<text x="320" y="82">A(cos a; sin a)</text><text x="379" y="141">B(cos b; sin b)</text>
+<text x="303" y="210" fill="#2e64b2">b = 30°</text><text x="250" y="147" fill="#0d7b6d">a = 60°</text>
+<text x="318" y="181" fill="#995022">a − b</text>
+</g>
+<g font-family="Arial, sans-serif" font-size="17" fill="#263c50">
+<text x="526" y="96" font-weight="bold">Cách đọc hình</text>
+<text x="526" y="132">OA và OB đều dài 1.</text>
+<text x="526" y="163">Góc giữa hai vectơ</text>
+<text x="526" y="194">là a − b = 30°.</text>
+<text x="526" y="233">Tích vô hướng:</text>
+<text x="526" y="263">OA · OB = cos(a − b).</text>
+</g>
+</svg>
