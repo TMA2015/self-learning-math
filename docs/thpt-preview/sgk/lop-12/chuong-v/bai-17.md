@@ -153,6 +153,8 @@
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Tọa độ và độ dài cung.</strong><div class="arithmatex">\(\displaystyle P=(\cos\varphi\cos\lambda;\cos\varphi\sin\lambda;\sin\varphi).\)</div><p>Với \(P,Q\) trên mặt cầu đơn vị, đặt \(\gamma=\arccos(\overrightarrow{OP}\cdot\overrightarrow{OQ})\in[0;\pi]\) (radian). Khoảng cách theo cung nhỏ của đường tròn lớn bằng \(6371\gamma\) km. Nếu tính \(\gamma\) bằng độ, dùng \(6371\pi\gamma/180\).</p></div>
 
+    **Từ tọa độ đến vĩ độ, kinh độ.** Với điểm \(P(x;y;z)\) trên mặt cầu đơn vị, vĩ độ là \(\varphi=\arcsin z\). Nếu \(r=\sqrt{x^2+y^2}>0\), tìm kinh độ \(\lambda\) bằng \(\cos\lambda=x/r\), \(\sin\lambda=y/r\), chọn góc đúng theo dấu của cả hai tỉ số. Ở hai cực (\(r=0\)), kinh độ không xác định duy nhất.
+
     Không dùng trị tuyệt đối ở tích vô hướng tính góc ở tâm. Khoảng cách cung là khoảng cách ngắn nhất trên bề mặt cầu trong mô hình, không phải khoảng cách dây cung hay độ dài tuyến đường giao thông. SGK quy ước làm tròn đến bốn chữ số thập phân trong phần tính toán này; khi tự tính nên giữ đủ độ chính xác trung gian và ghi kết quả làm tròn theo đề.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B17_GREAT_CIRCLE_AUTHORING_20261124.svg" alt="So sánh cung tròn lớn và dây qua hai điểm"><figcaption>Cung và dây đều nối \(P,Q\) nhưng khác độ dài; cung được tính từ góc ở tâm có thể đến \(180^\circ\).</figcaption></figure>
