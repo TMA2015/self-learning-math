@@ -1124,5 +1124,502 @@
     "item_id": "THPT-G10-CHIII-RD1-14",
     "original_type": "WRITTEN_RUBRIC",
     "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B07-C01",
+    "skill_id": "G10-B07-DEFINITION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B07-C02",
+    "skill_id": "G10-B07-EQUALITY"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B07-P01",
+    "skill_id": "G10-B07-LENGTH"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B07-P02",
+    "skill_id": "G10-B07-EQUALITY"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B07-P03",
+    "skill_id": "G10-B07-DIRECTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B07-P04",
+    "skill_id": "G10-B07-ZERO"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B07-P05",
+    "skill_id": "G10-B07-DIRECTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B07:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B07-P06",
+    "skill_id": "G10-B07-LENGTH"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B08-C01",
+    "skill_id": "G10-B08-TRIANGLE"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B08-C02",
+    "skill_id": "G10-B08-PARALLELOGRAM"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B08-P01",
+    "skill_id": "G10-B08-OPPOSITE-SUBTRACTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B08-P02",
+    "skill_id": "G10-B08-OPPOSITE-SUBTRACTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B08-P03",
+    "skill_id": "G10-B08-TRIANGLE"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B08-P04",
+    "skill_id": "G10-B08-MIDPOINT"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B08-P05",
+    "skill_id": "G10-B08-CENTROID"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B08-P06",
+    "skill_id": "G10-B08-PARALLELOGRAM"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B09-C01",
+    "skill_id": "G10-B09-LENGTH_DIRECTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B09-C02",
+    "skill_id": "G10-B09-SCALAR_DEFINITION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B09-P01",
+    "skill_id": "G10-B09-LENGTH_DIRECTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B09-P02",
+    "skill_id": "G10-B09-DISTRIBUTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B09-P03",
+    "skill_id": "G10-B09-MIDPOINT_CENTROID"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B09-P04",
+    "skill_id": "G10-B09-MIDPOINT_CENTROID"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B09-P05",
+    "skill_id": "G10-B09-COLLINEAR"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B09-P06",
+    "skill_id": "G10-B09-DISTRIBUTION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B10-C01",
+    "skill_id": "G10-B10-VECTOR_COORDS"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B10-C02",
+    "skill_id": "G10-B10-NORM_DISTANCE"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B10-P01",
+    "skill_id": "G10-B10-OPERATIONS"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B10-P02",
+    "skill_id": "G10-B10-VECTOR_COORDS"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B10-P03",
+    "skill_id": "G10-B10-MIDPOINT_CENTROID"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B10-P04",
+    "skill_id": "G10-B10-MIDPOINT_CENTROID"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B10-P05",
+    "skill_id": "G10-B10-COLLINEAR_COORDS"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B10:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B10-P06",
+    "skill_id": "G10-B10-NORM_DISTANCE"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B11-C01",
+    "skill_id": "G10-B11-COORDINATE_DOT"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B11-C02",
+    "skill_id": "G10-B11-PERPENDICULAR"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B11-P01",
+    "skill_id": "G10-B11-GEOMETRIC_DOT"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B11-P02",
+    "skill_id": "G10-B11-COORDINATE_DOT"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B11-P03",
+    "skill_id": "G10-B11-COORDINATE_DOT"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B11-P04",
+    "skill_id": "G10-B11-COORDINATE_DOT"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B11-P05",
+    "skill_id": "G10-B11-APPLICATION"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B11:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B11-P06",
+    "skill_id": "G10-B11-PERPENDICULAR"
+  },
+  {
+    "collection": "SGK:G10:CHIV:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G10-B09-P07",
+    "skill_id": "G10-B09-DECOMP_S1"
+  },
+  {
+    "collection": "SGK:G10:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G10-CHIV-W07"
+  },
+  {
+    "collection": "SGK:G10:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G10-CHIV-W08-ANCHOR"
+  },
+  {
+    "collection": "SGK:G10:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G10-CHIV-W08-FORCE-TR01"
+  },
+  {
+    "collection": "SGK:G10:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G10-CHIV-W09"
+  },
+  {
+    "collection": "SGK:G10:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G10-CHIV-W10"
+  },
+  {
+    "collection": "SGK:G10:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "THPT-G10-CHIV-W11-ANCHOR"
+  },
+  {
+    "collection": "SGK:G10:CHIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 7,
+    "item_id": "THPT-G10-CHIV-W10-RIVER-TR01"
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIV-RD1-01",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIV-RD1-02",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIV-RD1-03",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIV-RD1-04",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIV-RD1-05",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G10-CHIV-RD1-06",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G10-CHIV-RD1-07",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G10-CHIV-RD1-08",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G10-CHIV-RD1-09",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G10-CHIV-RD1-10",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G10-CHIV-RD1-11",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G10-CHIV-RD1-12",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G10-CHIV-RD1-13",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G10-CHIV-RD1-14",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 15,
+    "item_id": "THPT-G10-CHIV-RD1-15",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 16,
+    "item_id": "THPT-G10-CHIV-RD1-16",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 17,
+    "item_id": "THPT-G10-CHIV-RD1-17",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 18,
+    "item_id": "THPT-G10-CHIV-RD1-18",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 19,
+    "item_id": "THPT-G10-CHIV-RD1-19",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 20,
+    "item_id": "THPT-G10-CHIV-RD1-20",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIV:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 21,
+    "item_id": "THPT-G10-CHIV-RD1-21",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
   }
 ]

@@ -1,0 +1,1346 @@
+[
+  {
+    "item_id": "THPT-G12-B06-C01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình lập phương cạnh 4 cm, độ dài vectơ đi dọc một cạnh bằng bao nhiêu?",
+    "answer_key": "4 cm",
+    "worked_solution": "Độ dài vectơ bằng khoảng cách hai đầu cạnh, bằng đúng độ dài cạnh.",
+    "skill_ids": [
+      "G12-CHII-B06-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C01` · `OUTCOME_ID=G12-CHII-B06-O01` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hình hộp chữ nhật có các cạnh theo ba phương vuông góc dài 3, 4, 12 cm. Độ dài vectơ nối hai đỉnh đối diện?",
+    "answer_key": "13 cm",
+    "worked_solution": "Đường chéo không gian dài $\\sqrt{3^2+4^2+12^2}=13$ cm.",
+    "skill_ids": [
+      "G12-CHII-B06-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P01` · `OUTCOME_ID=G12-CHII-B06-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Với hai điểm phân biệt A, B, vectơ $\\overrightarrow{AA}$ có độ dài và hướng thế nào?",
+    "answer_key": "Độ dài 0, hướng không xác định",
+    "worked_solution": "Vectơ-không có hai đầu trùng nhau, không có hướng xác định.",
+    "skill_ids": [
+      "G12-CHII-B06-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P02` · `OUTCOME_ID=G12-CHII-B06-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-C02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình bình hành ABCD, vectơ nào bằng $\\overrightarrow{AB}$?",
+    "answer_key": "$\\overrightarrow{DC}$",
+    "worked_solution": "Hai vectơ cùng chiều và cùng độ dài trên hai cạnh đối.",
+    "skill_ids": [
+      "G12-CHII-B06-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C02` · `OUTCOME_ID=G12-CHII-B06-O02` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình bình hành ABCD, vectơ nào đối với $\\overrightarrow{AB}$?",
+    "answer_key": "$\\overrightarrow{BA}$ hoặc $\\overrightarrow{CD}$",
+    "worked_solution": "Đều cùng độ dài và ngược chiều so với $\\overrightarrow{AB}$.",
+    "skill_ids": [
+      "G12-CHII-B06-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P03` · `OUTCOME_ID=G12-CHII-B06-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hai vectơ không bằng 0 cùng phương, một vectơ dài 2 cm, vectơ kia dài 5 cm. Chúng có thể bằng nhau không?",
+    "answer_key": "Không",
+    "worked_solution": "Hai vectơ bằng nhau phải cùng hướng và cùng độ dài; 2 khác 5.",
+    "skill_ids": [
+      "G12-CHII-B06-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P04` · `OUTCOME_ID=G12-CHII-B06-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-C03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Với A,B,C bất kì, $\\overrightarrow{AB}+\\overrightarrow{BC}$ bằng gì?",
+    "answer_key": "$\\overrightarrow{AC}$",
+    "worked_solution": "Ghép đường đi đầu–đuôi A→B→C.",
+    "skill_ids": [
+      "G12-CHII-B06-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C03` · `OUTCOME_ID=G12-CHII-B06-O03` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình bình hành ABCD, $\\overrightarrow{AB}+\\overrightarrow{AD}$ bằng gì?",
+    "answer_key": "$\\overrightarrow{AC}$",
+    "worked_solution": "Quy tắc đường chéo hình bình hành.",
+    "skill_ids": [
+      "G12-CHII-B06-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P05` · `OUTCOME_ID=G12-CHII-B06-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hình hộp $ABCD.A\\prime B\\prime C\\prime D\\prime$, $\\overrightarrow{AB}+\\overrightarrow{AD}+\\overrightarrow{AA\\prime}$ bằng gì?",
+    "answer_key": "$\\overrightarrow{AC\\prime}$",
+    "worked_solution": "Hai cạnh đáy cho AC, cạnh đứng bằng CC′; nối thành AC′.",
+    "skill_ids": [
+      "G12-CHII-B06-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P06` · `OUTCOME_ID=G12-CHII-B06-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-C04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Nếu $|\\vec a|=3$ và $k=-2$, độ dài $k\\vec a$ bằng bao nhiêu?",
+    "answer_key": "6",
+    "worked_solution": "$|-2|\\cdot 3=6$; hướng đổi do k âm.",
+    "skill_ids": [
+      "G12-CHII-B06-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C04` · `OUTCOME_ID=G12-CHII-B06-O04` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P07",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Điểm M là trung điểm đoạn AB. Biểu diễn $\\overrightarrow{AM}$ qua $\\overrightarrow{AB}$.",
+    "answer_key": "$\\tfrac12\\overrightarrow{AB}$",
+    "worked_solution": "Cùng hướng và độ dài bằng một nửa.",
+    "skill_ids": [
+      "G12-CHII-B06-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P07` · `OUTCOME_ID=G12-CHII-B06-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P08",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Điểm N ở tia đối của AB, AN=3AB. Viết $\\overrightarrow{AN}$ qua $\\overrightarrow{AB}$.",
+    "answer_key": "$-3\\overrightarrow{AB}$",
+    "worked_solution": "Ngược hướng, độ dài gấp ba.",
+    "skill_ids": [
+      "G12-CHII-B06-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P08` · `OUTCOME_ID=G12-CHII-B06-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-C05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hai vectơ khác 0 dài 2 và 3, tạo góc 60°. Tính tích vô hướng.",
+    "answer_key": "3",
+    "worked_solution": "$2\\cdot3\\cdot\\cos60^\\circ=3$.",
+    "skill_ids": [
+      "G12-CHII-B06-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C05` · `OUTCOME_ID=G12-CHII-B06-O05` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P09",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hai vectơ khác 0 dài 5 và 4 vuông góc. Tích vô hướng bằng bao nhiêu?",
+    "answer_key": "0",
+    "worked_solution": "Cos90°=0 nên tích bằng 0.",
+    "skill_ids": [
+      "G12-CHII-B06-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P09` · `OUTCOME_ID=G12-CHII-B06-O05` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P10",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Hai vectơ khác 0 dài 3 và 8 tạo góc 120°. Tích vô hướng bằng bao nhiêu?",
+    "answer_key": "-12",
+    "worked_solution": "$3\\cdot8\\cdot\\cos120^\\circ=-12$.",
+    "skill_ids": [
+      "G12-CHII-B06-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P10` · `OUTCOME_ID=G12-CHII-B06-O05` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-C06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Lực 10 N cùng hướng với độ dời 4 m. Công của lực là bao nhiêu?",
+    "answer_key": "40 J",
+    "worked_solution": "Góc 0°, W=10·4·cos0°=40 J.",
+    "skill_ids": [
+      "G12-CHII-B06-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-C06` · `OUTCOME_ID=G12-CHII-B06-O06` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P11",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Lực 12 N vuông góc với độ dời 5 m. Công bằng bao nhiêu?",
+    "answer_key": "0 J",
+    "worked_solution": "Góc 90° nên thành phần lực theo độ dời bằng 0.",
+    "skill_ids": [
+      "G12-CHII-B06-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P11` · `OUTCOME_ID=G12-CHII-B06-O06` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B06-P12",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Lực 8 N tạo góc 120° với độ dời 3 m. Công bằng bao nhiêu?",
+    "answer_key": "-12 J",
+    "worked_solution": "$W=8\\cdot3\\cdot(-1/2)=-12$ J; công âm do lực chống chuyển động.",
+    "skill_ids": [
+      "G12-CHII-B06-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B06-P12` · `OUTCOME_ID=G12-CHII-B06-O06` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-C01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong hệ Oxyz, điểm P(4;2;0) nằm trên mặt phẳng tọa độ nào?",
+    "answer_key": "(Oxy)",
+    "worked_solution": "Mặt phẳng Oxy đặc trưng bởi z=0.",
+    "skill_ids": [
+      "G12-CHII-B07-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-C01` · `OUTCOME_ID=G12-CHII-B07-O01` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-P01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Một điểm Q thuộc trục Oz. Hai tọa độ nào bắt buộc bằng 0?",
+    "answer_key": "x=0 và y=0",
+    "worked_solution": "Trên trục Oz chỉ có thành phần z.",
+    "skill_ids": [
+      "G12-CHII-B07-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P01` · `OUTCOME_ID=G12-CHII-B07-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-P02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Điểm M(-1;0;3) thuộc mặt phẳng tọa độ nào?",
+    "answer_key": "(Oxz)",
+    "worked_solution": "y=0 nên M thuộc mặt phẳng Oxz.",
+    "skill_ids": [
+      "G12-CHII-B07-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P02` · `OUTCOME_ID=G12-CHII-B07-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-C02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Cho $\\vec a=3\\vec i-2\\vec j+\\vec k$. Tọa độ $\\vec a$ là gì?",
+    "answer_key": "(3;-2;1)",
+    "worked_solution": "Hệ số theo i,j,k tạo thành ba tọa độ.",
+    "skill_ids": [
+      "G12-CHII-B07-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-C02` · `OUTCOME_ID=G12-CHII-B07-O02` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-P03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Nếu M(-2;4;1), tọa độ vectơ $\\overrightarrow{OM}$ bằng gì?",
+    "answer_key": "(-2;4;1)",
+    "worked_solution": "Theo định nghĩa tọa độ điểm từ vectơ vị trí.",
+    "skill_ids": [
+      "G12-CHII-B07-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P03` · `OUTCOME_ID=G12-CHII-B07-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-P04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Vectơ $\\vec u=(0;0;-5)$ viết dưới dạng i,j,k thế nào?",
+    "answer_key": "$-5\\vec k$",
+    "worked_solution": "Hai tọa độ x,y bằng 0.",
+    "skill_ids": [
+      "G12-CHII-B07-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P04` · `OUTCOME_ID=G12-CHII-B07-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-C03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trong phòng lấy O góc sàn và ba trục dọc dài/rộng/cao. Vật cách O lần lượt 2,3,4 m theo ba chiều dương có tọa độ gì?",
+    "answer_key": "(2;3;4) m",
+    "worked_solution": "Ba chuyển động độc lập theo ba trục từ O.",
+    "skill_ids": [
+      "G12-CHII-B07-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-C03` · `OUTCOME_ID=G12-CHII-B07-O03` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-P05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Một cảm biến ở trần trong phòng cao 3 m, chọn Oz hướng lên từ sàn. Tọa độ z của cảm biến là gì?",
+    "answer_key": "3 m",
+    "worked_solution": "Độ cao được đo từ mặt sàn z=0 theo chiều dương.",
+    "skill_ids": [
+      "G12-CHII-B07-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P05` · `OUTCOME_ID=G12-CHII-B07-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-P06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Khi lấy gốc ở góc trần và Oz hướng xuống, sàn cách gốc 3 m có tọa độ z gì?",
+    "answer_key": "3 m",
+    "worked_solution": "Trục dương đã đổi hướng; do chọn Oz xuống nên sàn có z dương.",
+    "skill_ids": [
+      "G12-CHII-B07-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P06` · `OUTCOME_ID=G12-CHII-B07-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-C04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "A(1;2;3), B(5;2;1). Tọa độ $\\overrightarrow{AB}$?",
+    "answer_key": "(4;0;-2)",
+    "worked_solution": "B-A theo từng tọa độ.",
+    "skill_ids": [
+      "G12-CHII-B07-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-C04` · `OUTCOME_ID=G12-CHII-B07-O04` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-P07",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "A(-2;3;4), B(1;-1;2). Tọa độ $\\overrightarrow{BA}$?",
+    "answer_key": "(-3;4;2)",
+    "worked_solution": "A-B vì điểm đầu B, cuối A.",
+    "skill_ids": [
+      "G12-CHII-B07-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P07` · `OUTCOME_ID=G12-CHII-B07-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B07-P08",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "A(0;0;0), B(-3;2;5). Tọa độ $\\overrightarrow{AB}$?",
+    "answer_key": "(-3;2;5)",
+    "worked_solution": "Lấy vị trí B trừ vị trí gốc A.",
+    "skill_ids": [
+      "G12-CHII-B07-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B07-P08` · `OUTCOME_ID=G12-CHII-B07-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-C01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Với a=(1;2;3), b=(3;-1;2), tính a+b.",
+    "answer_key": "(4;1;5)",
+    "worked_solution": "Cộng ba tọa độ tương ứng.",
+    "skill_ids": [
+      "G12-CHII-B08-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C01` · `OUTCOME_ID=G12-CHII-B08-O01` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P01",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Với a=(2;-3;1), b=(-1;4;0), tính a-b.",
+    "answer_key": "(3;-7;1)",
+    "worked_solution": "Trừ ba tọa độ tương ứng; -3-4=-7.",
+    "skill_ids": [
+      "G12-CHII-B08-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P01` · `OUTCOME_ID=G12-CHII-B08-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Với a=(1;-2;4), tính -3a.",
+    "answer_key": "(-3;6;-12)",
+    "worked_solution": "Nhân từng tọa độ với -3.",
+    "skill_ids": [
+      "G12-CHII-B08-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P02` · `OUTCOME_ID=G12-CHII-B08-O01` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-C02",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "a=(2;4;6) và b=(1;2;3) có cùng phương không?",
+    "answer_key": "Có; a=2b",
+    "worked_solution": "Một hệ số 2 khớp cả ba tọa độ.",
+    "skill_ids": [
+      "G12-CHII-B08-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C02` · `OUTCOME_ID=G12-CHII-B08-O02` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "u=(3;0;-6) và v=(-1;0;2) có cùng phương không?",
+    "answer_key": "Có; u=-3v",
+    "worked_solution": "Kiểm thành phần x,z và 0= -3·0; không lấy tỉ số 0/0.",
+    "skill_ids": [
+      "G12-CHII-B08-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P03` · `OUTCOME_ID=G12-CHII-B08-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "a=(1;2;3) và b=(2;4;7) có cùng phương không?",
+    "answer_key": "Không",
+    "worked_solution": "Tỉ lệ x,y là 2 nhưng z phải là 6, không phải 7.",
+    "skill_ids": [
+      "G12-CHII-B08-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P04` · `OUTCOME_ID=G12-CHII-B08-O02` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-C03",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trung điểm A(1;3;5), B(3;1;7) có tọa độ?",
+    "answer_key": "(2;2;6)",
+    "worked_solution": "Trung bình từng thành phần.",
+    "skill_ids": [
+      "G12-CHII-B08-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C03` · `OUTCOME_ID=G12-CHII-B08-O03` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trọng tâm tam giác A(0;0;0), B(3;0;0), C(0;6;0) là?",
+    "answer_key": "(1;2;0)",
+    "worked_solution": "Lấy tổng ba tọa độ rồi chia 3.",
+    "skill_ids": [
+      "G12-CHII-B08-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P05` · `OUTCOME_ID=G12-CHII-B08-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Trung điểm đoạn AB với A(-2;4;0) B(4;-2;6) là?",
+    "answer_key": "(1;1;3)",
+    "worked_solution": "Trung bình theo trục x,y,z.",
+    "skill_ids": [
+      "G12-CHII-B08-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P06` · `OUTCOME_ID=G12-CHII-B08-O03` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-C04",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "a=(1;2;3), b=(2;0;-1). Tính tích vô hướng a·b.",
+    "answer_key": "-1",
+    "worked_solution": "$1·2+2·0+3·(-1)=-1$.",
+    "skill_ids": [
+      "G12-CHII-B08-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C04` · `OUTCOME_ID=G12-CHII-B08-O04` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P07",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "u=(1;1;0), v=(1;-1;0) có vuông góc không?",
+    "answer_key": "Có",
+    "worked_solution": "Tích vô hướng 1-1+0=0, cả hai vectơ khác 0.",
+    "skill_ids": [
+      "G12-CHII-B08-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P07` · `OUTCOME_ID=G12-CHII-B08-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P08",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "a=(1;0;0), b=(1;1;0). Góc giữa hai vectơ?",
+    "answer_key": "45°",
+    "worked_solution": "$\\cos\\theta=1/(1\\cdot\\sqrt2)=1/\\sqrt2$.",
+    "skill_ids": [
+      "G12-CHII-B08-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P08` · `OUTCOME_ID=G12-CHII-B08-O04` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-C05",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Tính độ dài vectơ u=(3;4;0).",
+    "answer_key": "5",
+    "worked_solution": "$\\sqrt{9+16+0}=5$.",
+    "skill_ids": [
+      "G12-CHII-B08-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C05` · `OUTCOME_ID=G12-CHII-B08-O05` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P09",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Khoảng cách A(1;2;3), B(1;2;7) bằng?",
+    "answer_key": "4",
+    "worked_solution": "Độ chênh tọa độ (0;0;4) có độ dài 4.",
+    "skill_ids": [
+      "G12-CHII-B08-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P09` · `OUTCOME_ID=G12-CHII-B08-O05` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P10",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Độ dài vectơ v=(-2;3;6) bằng?",
+    "answer_key": "7",
+    "worked_solution": "$\\sqrt{4+9+36}=7$.",
+    "skill_ids": [
+      "G12-CHII-B08-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P10` · `OUTCOME_ID=G12-CHII-B08-O05` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-C06",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Robot đi thẳng từ A(0;0;0) tới B(3;4;0), tọa độ mét. Quãng đường đi thẳng là bao nhiêu?",
+    "answer_key": "5 m",
+    "worked_solution": "Độ dài đoạn AB là 5 m.",
+    "skill_ids": [
+      "G12-CHII-B08-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-C06` · `OUTCOME_ID=G12-CHII-B08-O06` · `ROLE=CORE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P11",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Drone đi thẳng 10 m trong 2 s. Tốc độ không đổi?",
+    "answer_key": "5 m/s",
+    "worked_solution": "Lấy độ dài đường đi chia thời gian dương.",
+    "skill_ids": [
+      "G12-CHII-B08-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P11` · `OUTCOME_ID=G12-CHII-B08-O06` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B08-P12",
+    "content_version": "G12-SGK-CHII-B06-B08-R00",
+    "stem": "Máy bay A(1;2;3) tới B(4;6;15) theo đường thẳng; độ dời dài bao nhiêu?",
+    "answer_key": "13 đơn vị",
+    "worked_solution": "Hiệu (3;4;12), độ dài 13.",
+    "skill_ids": [
+      "G12-CHII-B08-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+      "heading": "**`ITEM_ID=THPT-G12-B08-P12` · `OUTCOME_ID=G12-CHII-B08-O06` · `ROLE=PRACTICE`**",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chii-b06-b08-public-r00.json",
+        "blob": "982c2f2e27f7c7eda5cf8f64de1d6c195b531bfb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]
