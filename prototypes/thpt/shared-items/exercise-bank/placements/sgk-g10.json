@@ -3793,5 +3793,19 @@
     "order": 4,
     "item_id": "THPT-G10-CHVIII-TRY12",
     "outcome_id": "G10-B25-COEFFICIENT_SUM"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-G10-CHVII-TRY-ELLIPSE-TR01",
+    "skill_id": "G10-B22-ELLIPSE_PARAMETERS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 8,
+    "item_id": "THPT-G10-CHVII-TRY-HYPERBOLA-TR01",
+    "skill_id": "G10-B22-HYPERBOLA_PARAMETERS"
   }
 ]
