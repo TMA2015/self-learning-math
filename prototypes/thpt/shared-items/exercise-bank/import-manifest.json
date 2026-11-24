@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 565,
+    "legacy_combined_answer_items": 539,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_144_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_170_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 144 manually verified and key separated at checkpoints 29–32; 565 remain combined, answer_key=null. Preserve source and solution except explicit scoped author clarifications; self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 170 manually verified and key separated at checkpoints 29–33; 539 remain combined, answer_key=null. Preserve source and solution except explicit scoped author clarifications; self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 565,
+      "remaining_combined_answer_items": 539,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 144,
-        "remaining_count": 565,
+        "reviewed_count": 170,
+        "remaining_count": 539,
         "batches": [
           {
             "checkpoint": 29,
@@ -7643,6 +7643,257 @@
               "CHIX TRY10: fair distinguishable dice alone do not establish independence, explicitly state independent rolls. Ordered pairs 36 equiprobable, 6 diagonal, P=1/6.",
               "CHVIII TRY12 coefficient sum 81; original outcome G10-B25-COEFFICIENT_SUM preserved, skill mapping pending (do not conflate with odd coefficient sum).",
               "G10 chapter I–IX shards have 144 combined-answer records audited; scope excludes other bank shards, separate-answer records, S1 re-read, full outcome coverage and PED/integration review."
+            ]
+          },
+          {
+            "checkpoint": 33,
+            "baseline": "52dc38ba64337611a259bde018f8ab7a2945bdbc",
+            "reviewed_candidate": "b3fb7a77fd2df5c20d9d93161df64b51f54feed8",
+            "scope": "G11 SGK B01–B07, 26 first-try records, 23 in chapter I and 3 in chapter II. All stems and worked solutions matched in seven exact historical source blobs. Independently checked mathematical results, separated keys, mapped 25 records to existing skills, improved 7 worked solutions.",
+            "shards": [
+              {
+                "shard": "g11-chi",
+                "before": "dc49b0b1e71d4411608a4ed8d5d331dc905ccb23",
+                "after": "e6359986eb843c3c836db6afec680d0ac15b8306",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G11-CHI-TRY01",
+                    "source_blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+                    "answer_key": "+2π rad; độ dài cung 4π cm.",
+                    "skill_ids": [
+                      "G11-B01-ARC_LENGTH",
+                      "G11-B01-DEG_RAD"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-CHI-TRY02",
+                    "source_blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+                    "answer_key": "Có; các số đo là 210°+k·360°, k∈ℤ.",
+                    "skill_ids": [
+                      "G11-B01-PERIODIC_REDUCTION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-CHI-TRY03",
+                    "source_blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+                    "answer_key": "1700π km ≈ 5341 km.",
+                    "skill_ids": [
+                      "G11-B01-ARC_LENGTH",
+                      "G11-B01-DEG_RAD"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-CHI-TRY04",
+                    "source_blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+                    "answer_key": "sin=−1/2; cos=−√3/2; tan=√3/3.",
+                    "skill_ids": [
+                      "G11-B01-TRIG_UNIT_CIRCLE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-CHI-TRY05",
+                    "source_blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+                    "answer_key": "sinα=−1; cosα=0; tanα không xác định; cotα=0.",
+                    "skill_ids": [
+                      "G11-B01-TRIG_UNIT_CIRCLE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-CHI-TRY06",
+                    "source_blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+                    "answer_key": "sin(−π/6)=−1/2; cos(5π/6)=−√3/2.",
+                    "skill_ids": [
+                      "G11-B01-RELATED_ANGLES"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B02-KFT02",
+                    "source_blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+                    "answer_key": "sin 2a=−120/169; cos 2a=−119/169.",
+                    "skill_ids": [
+                      "G11-B02-DOUBLE_ANGLE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B02-KFT03",
+                    "source_blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+                    "answer_key": "(√3−1)/2.",
+                    "skill_ids": [
+                      "G11-B02-PRODUCT_TO_SUM"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B02-KFT04",
+                    "source_blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+                    "answer_key": "√2/2.",
+                    "skill_ids": [
+                      "G11-B02-SUM_TO_PRODUCT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B02-KFT05",
+                    "source_blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+                    "answer_key": "y(t)=2sin(840πt)cos(40πt); hệ số điều biến thay đổi theo t, không phải biên độ cố định.",
+                    "skill_ids": [
+                      "G11-B02-SUM_TO_PRODUCT"
+                    ],
+                    "content_clarification": "Clarify varying envelope magnitude and concrete times."
+                  },
+                  {
+                    "item_id": "THPT-G11-B03-KFT01",
+                    "source_blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+                    "answer_key": "x=0: sin=0, cos=1, tan=0, cot không xác định. x=π/2: sin=1, cos=0, tan không xác định, cot=0.",
+                    "skill_ids": [
+                      "G11-B03-DOMAIN_RANGE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B03-KFT02",
+                    "source_blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+                    "answer_key": "f chẵn; g tuần hoàn nhưng không có chu kì dương nhỏ nhất.",
+                    "skill_ids": [
+                      "G11-B03-PARITY",
+                      "G11-B03-PERIOD"
+                    ],
+                    "content_clarification": "Prove parity and nonexistence of smallest positive period."
+                  },
+                  {
+                    "item_id": "THPT-G11-B03-KFT04",
+                    "source_blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+                    "answer_key": "x∈(π/2;3π/2).",
+                    "skill_ids": [
+                      "G11-B03-COS_GRAPH"
+                    ],
+                    "content_clarification": "Explain cosine sign by unit circle, exclude zero endpoints."
+                  },
+                  {
+                    "item_id": "THPT-G11-B03-KFT05",
+                    "source_blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+                    "answer_key": "x∈[0;π/2).",
+                    "skill_ids": [
+                      "G11-B03-TAN_GRAPH"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B03-KFT06",
+                    "source_blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+                    "answer_key": "x∈(π/2;π).",
+                    "skill_ids": [
+                      "G11-B03-COT_GRAPH"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B04-KFT01",
+                    "source_blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+                    "answer_key": "Cặp thứ nhất tương đương, cùng tập nghiệm {3}; cặp thứ hai không tương đương, tập nghiệm {1} và {−1;1}.",
+                    "skill_ids": []
+                  },
+                  {
+                    "item_id": "THPT-G11-B04-KFT04",
+                    "source_blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+                    "answer_key": "x=π/8+kπ/2, k∈ℤ.",
+                    "skill_ids": [
+                      "G11-B04-TAN_EQ",
+                      "G11-B04-TRANSFORM"
+                    ],
+                    "content_clarification": "State domain and verify all tangent solutions."
+                  },
+                  {
+                    "item_id": "THPT-G11-B04-KFT05",
+                    "source_blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+                    "answer_key": "x=3π/4+kπ, k∈ℤ.",
+                    "skill_ids": [
+                      "G11-B04-COT_EQ"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B04-KFT06",
+                    "source_blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+                    "answer_key": "α=π/6≈0,5236 rad; DEG: 30°.",
+                    "skill_ids": [
+                      "G11-B04-SIN_EQ"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B02-KFT01",
+                    "source_blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+                    "answer_key": "(√6+√2)/4.",
+                    "skill_ids": [
+                      "G11-B02-SUM_DIFFERENCE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B03-KFT03",
+                    "source_blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+                    "answer_key": "sin x>0 khi x∈(0;π); GTLN 1 tại π/2; GTNN −1 tại 3π/2.",
+                    "skill_ids": [
+                      "G11-B03-SIN_GRAPH"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B04-KFT02",
+                    "source_blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+                    "answer_key": "x=−π/6+2kπ hoặc x=7π/6+2kπ, k∈ℤ; trong [0;2π): 7π/6 và 11π/6.",
+                    "skill_ids": [
+                      "G11-B04-SIN_EQ",
+                      "G11-B04-INTERVAL"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G11-B04-KFT03",
+                    "source_blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+                    "answer_key": "x=π/2+kπ, k∈ℤ; trong [0;2π): π/2 và 3π/2.",
+                    "skill_ids": [
+                      "G11-B04-COS_EQ",
+                      "G11-B04-INTERVAL"
+                    ]
+                  }
+                ],
+                "unchanged_count": 42
+              },
+              {
+                "shard": "g11-chii",
+                "before": "ab3bfbd6cb7a554afcf506d44bc83616fa35e725",
+                "after": "f2b1df567ae511fa361c39c06ecf508b2923772d",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G11-B05-KFT01",
+                    "source_blob": "8634196e27b5bac8cb3089f433779b592809d955",
+                    "answer_key": "u₄=7; số hạng thứ tư có chỉ số n=4, dãy bắt đầu n=1.",
+                    "skill_ids": [
+                      "G11-B05-EXPLICIT-TERM",
+                      "G11-B05-SEQUENCE-DEFINITION"
+                    ],
+                    "content_clarification": "Explain sequence index and first four terms."
+                  },
+                  {
+                    "item_id": "THPT-G11-B06-KFT01",
+                    "source_blob": "43b285b679941e0748ad78f377ab9bbdd73ec3d3",
+                    "answer_key": "21 ghế.",
+                    "skill_ids": [
+                      "G11-B06-AP-NTH"
+                    ],
+                    "content_clarification": "Explain three steps from first to fourth row."
+                  },
+                  {
+                    "item_id": "THPT-G11-B07-KFT01",
+                    "source_blob": "3d0886889e383cd76963e1fa3a5eef175a389080",
+                    "answer_key": "121.",
+                    "skill_ids": [
+                      "G11-B07-GP-NTH",
+                      "G11-B07-GP-APPLICATION"
+                    ],
+                    "content_clarification": "Explain compounding versus fixed increment."
+                  }
+                ],
+                "unchanged_count": 36
+              }
+            ],
+            "notes": [
+              "Arc length 1700π≈5340.7075 km rounds to 5341; double angles −120/169 and −119/169 satisfy unit identity; all trig equation families checked.",
+              "Constant function: every positive T yields repetition, T/2 also, so no smallest positive period; source convention preserved without claiming direct S1 re-read.",
+              "B04-KFT01 equivalence of equations: verified keys, no exact dedicated skill ID found in shard, pending mapping; do not invent IDs.",
+              "All 26 keys verified; no independent Academic/PED verdict or full S1/outcome/reveal/D6 review. Existing 18 draft review records unchanged."
             ]
           }
         ]
