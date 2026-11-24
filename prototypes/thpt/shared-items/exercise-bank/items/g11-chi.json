@@ -1879,5 +1879,153 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B02-KFT01",
+    "content_version": "SOURCE_BLOB_d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+    "stem": "Không dùng máy tính, tính \\(\\cos15^\\circ\\) bằng cách viết \\(15^\\circ=45^\\circ-30^\\circ\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** \\(\\cos15^\\circ=\\cos45^\\circ\\cos30^\\circ+\\sin45^\\circ\\sin30^\\circ=\\dfrac{\\sqrt2}{2}\\cdot\\dfrac{\\sqrt3}{2}+\\dfrac{\\sqrt2}{2}\\cdot\\dfrac12=\\dfrac{\\sqrt6+\\sqrt2}{4}\\).\n\n**Kiểm lại:** \\(15^\\circ\\) thuộc góc phần tư I, nên kết quả phải dương và nhỏ hơn \\(1\\); \\((\\sqrt6+\\sqrt2)/4\\approx0{,}966\\) thỏa điều đó.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+      "heading_id": "Vận dụng #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md",
+        "blob": "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #1",
+      "line": 61,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-CHI-RD1-05"
+      ],
+      "distinct_task_reason": "Existing public selfcheck asks both sin15° and cos15°; source asks cos15° by difference formula only. Same answer as sin75° is not same task."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B03-KFT03",
+    "content_version": "SOURCE_BLOB_9177a10ade8788712c6b9fbf39789822df2a417a",
+    "stem": "Trên một vòng \\(0\\le x\\le2\\pi\\), hàm \\(\\sin x\\) dương khi nào? Đạt giá trị lớn nhất và nhỏ nhất ở đâu?",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** \\(\\sin x>0\\) khi \\(x\\in(0;\\pi)\\). Giá trị lớn nhất \\(1\\) tại \\(x=\\pi/2\\), nhỏ nhất \\(-1\\) tại \\(x=3\\pi/2\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+      "heading_id": "Vận dụng #3",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md",
+        "blob": "9177a10ade8788712c6b9fbf39789822df2a417a",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #3",
+      "line": 84,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-B03-C04"
+      ],
+      "distinct_task_reason": "Existing asks range and maxima on R; source also asks positive interval and minimum on [0,2π]."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-KFT02",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "stem": "Tìm tất cả \\(x\\in\\mathbb R\\) sao cho \\(\\sin x=-\\frac12\\), rồi tìm các nghiệm trong \\([0;2\\pi)\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** Chọn \\(\\alpha=-\\pi/6\\). Hai họ là \\(x=-\\pi/6+2k\\pi\\) hoặc \\(x=7\\pi/6+2k\\pi\\), \\(k\\in\\mathbb Z\\). Trong \\([0;2\\pi)\\), hai nghiệm là \\(7\\pi/6\\) và \\(11\\pi/6\\) (từ họ thứ nhất với \\(k=1\\)).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+      "heading_id": "Vận dụng #2",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
+        "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #2",
+      "line": 67,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-B04-C01"
+      ],
+      "distinct_task_reason": "Existing solves same sin equation on R only; source additionally lists solutions in [0,2π)."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B04-KFT03",
+    "content_version": "SOURCE_BLOB_0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+    "stem": "Giải \\(\\cos x=0\\) trên \\(\\mathbb R\\), rồi nêu nghiệm thuộc \\([0;2\\pi)\\).",
+    "answer_key": null,
+    "worked_solution": "**Lời giải:** \\(\\cos x=0\\) khi \\(x=\\pi/2+k\\pi\\), \\(k\\in\\mathbb Z\\). Trong \\([0;2\\pi)\\) có \\(x=\\pi/2\\) và \\(x=3\\pi/2\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+      "heading_id": "Vận dụng #3",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
+        "blob": "0714c5b72389d29dbc8993c2ce9828fc98cf7a92",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "Vận dụng #3",
+      "line": 85,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-B03-P05"
+      ],
+      "distinct_task_reason": "Existing asks zeros on [0,2π]; source also asks full real solution family."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
