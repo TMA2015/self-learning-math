@@ -29,7 +29,7 @@
 
     Trong 2500 sản phẩm A có \(2500\cdot0{,}04=100\) sản phẩm lỗi. Trong 7500 sản phẩm còn lại có \(7500\cdot0{,}02=150\) sản phẩm lỗi. Vậy tỉ lệ lỗi chung là \(250/10000=0{,}025=2{,}5\%\). Bảng là mô hình tần số để thấy bản chất, không phải khẳng định số sản phẩm lỗi của một mẫu ngẫu nhiên luôn đúng 250.
 
-    Cùng phép tính dưới dạng xác suất: biến cố B được chia thành hai phần xung khắc \(AB\) và \(\overline A B\), hợp của chúng chính là B. Theo quy tắc cộng và công thức nhân đã học,
+    Cùng phép tính dưới dạng xác suất: giả sử \(0<P(A)<1\), tức cả hai nhóm đều có xác suất dương. Biến cố B được chia thành hai phần xung khắc \(AB\) và \(\overline A B\), hợp của chúng chính là B. Theo quy tắc cộng và công thức nhân đã học,
     \[
     \begin{aligned}
     P(B)&=P(AB)+P(\overline AB)\\
@@ -50,7 +50,7 @@
 
         Nếu tính \(20\%\) bằng trung bình cộng, em đã coi hai nhóm lớn bằng nhau. Vẽ cây, ghi trọng số nhóm ở tầng đầu. Kết quả 18% nằm giữa hai tỉ lệ 10% và 30%, phù hợp với trung bình có trọng số.
 
-    Nếu có hơn hai nhóm, ý tưởng vẫn vậy: mỗi sản phẩm thuộc đúng một nhóm \(A_i\), các nhóm xung khắc và phủ hết không gian mẫu. Chẳng hạn ba nguồn chiếm 50%, 30%, 20% với tỉ lệ lỗi 1%, 2%, 4%. Tỉ lệ chung là \(0{,}5\cdot0{,}01+0{,}3\cdot0{,}02+0{,}2\cdot0{,}04=0{,}019\), tức 1,9%. Đây là mở rộng trực tiếp bằng cách cộng các giao xung khắc. Không cộng chồng các nhóm có thể trùng nhau.
+    Nếu có hơn hai nhóm, ý tưởng vẫn vậy: mỗi sản phẩm thuộc đúng một nhóm \(A_i\), các nhóm xung khắc và phủ hết không gian mẫu. Chẳng hạn ba nguồn chiếm 50%, 30%, 20% với tỉ lệ lỗi 1%, 2%, 4%. Tỉ lệ chung là \(0{,}5\cdot0{,}01+0{,}3\cdot0{,}02+0{,}2\cdot0{,}04=0{,}019\), tức 1,9%. Đây là mở rộng trực tiếp bằng cách cộng các giao xung khắc. Không cộng chồng các nhóm có thể trùng nhau. Nếu một nhóm có xác suất 0 thì phần giao của nó với B cũng có xác suất 0; bỏ phần đóng góp đó, không tính xác suất có điều kiện với mẫu số 0.
 
     ### 1.2. Công thức Bayes
 
@@ -66,7 +66,7 @@
     {P(A)P(B\mid A)+P(\overline A)P(B\mid\overline A)}.
     \end{aligned}
     \]
-    Đó là công thức Bayes. Mẫu số phải dương vì ta đang điều kiện theo B. Công thức không cần A và B độc lập: chính sự thay đổi xác suất khi nhận thông tin mới là điều ta muốn tính.
+    Đó là công thức Bayes, áp dụng khi \(0<P(A)<1\) và \(P(B)>0\). Nếu nhóm A có xác suất 0 hoặc 1 thì, với \(P(B)>0\), xác suất của A khi biết B cũng lần lượt bằng 0 hoặc 1. Không thay vào công thức một xác suất có điều kiện chưa xác định. Công thức không cần A và B độc lập: chính sự thay đổi xác suất khi nhận thông tin mới là điều ta muốn tính.
 
     **Vận dụng.** Với bài toán thư viện ở mục 1.1, nếu biết cuốn sách được chọn là sách tiếng Anh, xác suất nó thuộc nhóm khoa học bằng bao nhiêu?
 
