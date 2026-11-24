@@ -2,16 +2,16 @@
   {
     "item_id": "THPT-G11-CHIX-B31-C01",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "Với $f(x)=x^2$, tính độ biến thiên trung bình từ x=1 đến x=3.",
-    "answer_key": "$(9-1)/(3-1)=4$.",
-    "worked_solution": "Giá trị này đo trung bình trên cả đoạn, chưa phải đạo hàm tại 1.",
+    "stem": "Cho f(x)=x². So sánh tốc độ biến thiên trung bình trên [1;3] và [−3;−1]. Hai khoảng có cùng độ dài, vì sao kết quả khác dấu?",
+    "answer_key": "Trên [1;3]: 4; trên [−3;−1]: −4.",
+    "worked_solution": "Trên [1;3], (f(3)−f(1))/(3−1)=(9−1)/2=4. Trên [−3;−1], (f(−1)−f(−3))/[−1−(−3)]=(1−9)/2=−4. Mẫu đều dương 2 nhưng hiệu giá trị hàm có dấu khác nhau. Đây là tốc độ trung bình trên đoạn, không phải đạo hàm tại một điểm.",
     "skill_ids": [
       "G11-B31-AVERAGE_RATE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Tính hai thương theo thứ tự giá trị ở đầu phải trừ đầu trái."
     ],
     "rubric": null,
     "interaction": {
@@ -27,12 +27,13 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm độ biến thiên với tốc độ trung bình, chia cho độ dài đoạn. Ôn TOP09-M01; luyện THPT-TOP09-P01."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P01",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "Chiều cao $H(t)=5+2t+t^2$ m. Tốc độ biến đổi trung bình trên [2,4]?",
+    "stem": "Chiều cao $H(t)=5+2t+t^2$ m, t tính bằng giây. Tốc độ biến đổi trung bình trên [2,4]?",
     "answer_key": "$[H(4)-H(2)]/2=(29-13)/2=8$ m/s.",
     "worked_solution": "Cần chia độ biến thiên 16 m cho thời gian 2 s.",
     "skill_ids": [
@@ -41,7 +42,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Tính ΔH rồi chia Δt."
     ],
     "rubric": null,
     "interaction": {
@@ -57,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm m với m/s, chia 16 m cho 2 s. Ôn TOP09-M01; luyện THPT-TOP09-P01."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C02",
@@ -71,7 +73,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Viết thương sai phân với h khác 0."
     ],
     "rubric": null,
     "interaction": {
@@ -87,7 +89,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ lấy giới hạn tử, giữ thương với h≠0. Ôn TOP09-M02; luyện THPT-TOP09-P02."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P02",
@@ -101,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Khai triển 2(1+h)² rồi khử h."
     ],
     "rubric": null,
     "interaction": {
@@ -117,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thế h=0 trước, khai triển và khử h. Ôn TOP09-M02; luyện THPT-TOP09-P02."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C03",
@@ -131,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Tính f(h)−f(0) trước khi chia h."
     ],
     "rubric": null,
     "interaction": {
@@ -147,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu giữ 3h² sau khi chia, kiểm từng hạng tử. Ôn TOP09-M03; luyện THPT-TOP09-P03."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P03",
@@ -161,7 +166,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Khai triển f(3+h), trừ f(3)."
     ],
     "rubric": null,
     "interaction": {
@@ -177,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên trừ f(3), tính giá trị tại h=0 để kiểm tử bằng 0. Ôn TOP09-M03; luyện THPT-TOP09-P03."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C04",
@@ -191,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Kiểm miền xác định trước khi xét đạo hàm."
     ],
     "rubric": null,
     "interaction": {
@@ -207,7 +213,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho đạo hàm ở x=0, kiểm f(0) không tồn tại. Ôn TOP09-M04; luyện THPT-TOP09-P04."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P04",
@@ -221,7 +228,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Tính thương phải tại 0 bằng √h/h."
     ],
     "rubric": null,
     "interaction": {
@@ -237,7 +244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhìn công thức đạo hàm, xét thương phải tiến +∞. Ôn TOP09-M04; luyện THPT-TOP09-P04."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C05",
@@ -251,7 +259,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Từ thương sai phân, nhân lại với h để xét liên tục."
     ],
     "rubric": null,
     "interaction": {
@@ -267,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo chiều mệnh đề, kiểm ví dụ góc nhọn liên tục nhưng không khả vi. Ôn TOP09-M05; luyện THPT-TOP09-P05."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P05",
@@ -281,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Xét thương |h|/h từ hai phía."
     ],
     "rubric": null,
     "interaction": {
@@ -297,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy cùng dấu cho hai phía, tách |h| theo dấu. Ôn TOP09-M05; luyện THPT-TOP09-P05."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C06",
@@ -311,7 +321,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Tách h âm và h dương."
     ],
     "rubric": null,
     "interaction": {
@@ -327,21 +337,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho đạo hàm bằng 0, tính thương trái và phải. Ôn TOP09-M06; luyện THPT-TOP09-P06."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P06",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "Xét $f(x)=|x+3|$. Tại x=-3, độ dốc hai phía là bao nhiêu?",
-    "answer_key": "Trái -1, phải +1; không có đạo hàm.",
-    "worked_solution": "Dịch góc nhọn |x| sang trái 3 đơn vị, không làm trơn nó.",
+    "stem": "Xét f(x)=|x+3|+2x tại x=−3. Tính hai đạo hàm một phía và kết luận.",
+    "answer_key": "Trái 1, phải 3; không có đạo hàm tại −3.",
+    "worked_solution": "f(−3)=−6. Với h≠0, [f(−3+h)−f(−3)]/h=|h|/h+2. Khi h→0⁻, thương bằng −1+2=1; khi h→0⁺, bằng 1+2=3. Hai giới hạn khác nhau nên không có đạo hàm tại −3.",
     "skill_ids": [
       "G11-B31-CORNER_CUSP"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Tách thương thành |h|/h và phần tuyến tính."
     ],
     "rubric": null,
     "interaction": {
@@ -357,7 +368,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng x thay h tại điểm −3, chuyển điểm về h=0. Ôn TOP09-M06; luyện THPT-TOP09-P06."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C07",
@@ -371,7 +383,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Phân biệt tung độ điểm và hệ số góc."
     ],
     "rubric": null,
     "interaction": {
@@ -387,7 +399,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy 7 làm độ dốc, đọc f′(2). Ôn TOP09-M07; luyện THPT-TOP09-P07."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P07",
@@ -401,7 +414,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Tính đạo hàm rồi thế x=−1."
     ],
     "rubric": null,
     "interaction": {
@@ -417,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy f(−1) làm độ dốc, tính f′(−1). Ôn TOP09-M07; luyện THPT-TOP09-P07."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C08",
@@ -431,7 +445,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Dùng y−f(a)=f′(a)(x−a)."
     ],
     "rubric": null,
     "interaction": {
@@ -447,7 +461,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ tung độ tiếp điểm, thế x=1 vào phương trình để kiểm. Ôn TOP09-M08; luyện THPT-TOP09-P08."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P08",
@@ -461,7 +476,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Tính f(−2) và f′(−2) riêng."
     ],
     "rubric": null,
     "interaction": {
@@ -477,7 +492,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu viết sai dấu x+2, dùng x−(−2). Ôn TOP09-M08; luyện THPT-TOP09-P08."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C09",
@@ -491,7 +507,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Lấy đạo hàm tọa độ rồi thế t."
     ],
     "rubric": null,
     "interaction": {
@@ -507,7 +523,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tính s(2) thay v(2), đạo hàm trước rồi thế. Ôn TOP09-M09; luyện THPT-TOP09-P09."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P09",
@@ -521,7 +538,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Tính v rồi lấy trị tuyệt đối."
     ],
     "rubric": null,
     "interaction": {
@@ -537,7 +554,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ghi tốc độ −4, lấy |v|. Ôn TOP09-M09; luyện THPT-TOP09-P09."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C10",
@@ -551,7 +569,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Chia đơn vị thể tích cho đơn vị thời gian."
     ],
     "rubric": null,
     "interaction": {
@@ -567,7 +585,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ghi lít thay lít/phút, viết thương ΔV/Δt. Ôn TOP09-M10; luyện THPT-TOP09-P10."
   },
   {
     "item_id": "THPT-G11-CHIX-B31-P10",
@@ -581,7 +600,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 31 trước khi tự thử."
+      "Đạo hàm theo q, giữ đơn vị nghìn đồng/sản phẩm."
     ],
     "rubric": null,
     "interaction": {
@@ -597,7 +616,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm tổng chi phí với chi phí cận biên, đối chiếu C và C′. Ôn TOP09-M10; luyện THPT-TOP09-P10."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C01",
@@ -611,7 +631,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Nhân số mũ rồi giảm số mũ một đơn vị."
     ],
     "rubric": null,
     "interaction": {
@@ -627,7 +647,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu giữ số mũ 6, viết quy tắc n x^{n−1}. Ôn TOP09-M11; luyện THPT-TOP09-P11."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P01",
@@ -641,7 +662,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Tính f′(x) rồi thế x=1."
     ],
     "rubric": null,
     "interaction": {
@@ -657,7 +678,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thế x=1 trước khi đạo hàm, giữ biểu thức theo x đến cuối. Ôn TOP09-M11; luyện THPT-TOP09-P11."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C02",
@@ -671,7 +693,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Nhân liên hợp trong thương sai phân, x>0."
     ],
     "rubric": null,
     "interaction": {
@@ -687,7 +709,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng công thức tại 0, kiểm mẫu căn và thương một phía. Ôn TOP09-M12; luyện THPT-TOP09-P12."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P02",
@@ -701,7 +724,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Tính đạo hàm 5√x tại x dương."
     ],
     "rubric": null,
     "interaction": {
@@ -717,7 +740,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên hệ số 5, dùng quy tắc nhân hằng số. Ôn TOP09-M12; luyện THPT-TOP09-P12."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C03",
@@ -731,7 +755,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Đạo hàm từng hạng, hằng số biến mất."
     ],
     "rubric": null,
     "interaction": {
@@ -747,7 +771,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu giữ 6, đạo hàm hằng bằng 0. Ôn TOP09-M13; luyện THPT-TOP09-P13."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P03",
@@ -761,7 +786,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Giữ hệ số của u′,v′; hằng số đạo hàm 0."
     ],
     "rubric": null,
     "interaction": {
@@ -777,7 +802,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đạo hàm 7 thành 7, kiểm hằng số. Ôn TOP09-M13; luyện THPT-TOP09-P13."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C04",
@@ -791,7 +817,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Viết đủ hai hạng trong quy tắc tích."
     ],
     "rubric": null,
     "interaction": {
@@ -807,7 +833,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy u′v′, viết đủ hai hạng. Ôn TOP09-M14; luyện THPT-TOP09-P14."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P04",
@@ -821,7 +848,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Đặt u=x, v=x²+4."
     ],
     "rubric": null,
     "interaction": {
@@ -837,7 +864,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ hạng x²+4, khai triển x³+4x để tự kiểm. Ôn TOP09-M14; luyện THPT-TOP09-P14."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C05",
@@ -851,7 +879,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Viết tử u′v−uv′, mẫu v²."
     ],
     "rubric": null,
     "interaction": {
@@ -867,7 +895,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo thứ tự phép trừ, viết u′v trước. Ôn TOP09-M15; luyện THPT-TOP09-P15."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P05",
@@ -881,7 +910,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Ghi miền x≠−1 rồi áp dụng thương."
     ],
     "rubric": null,
     "interaction": {
@@ -897,7 +926,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận x=−1, kiểm mẫu gốc bằng 0. Ôn TOP09-M15; luyện THPT-TOP09-P15."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C06",
@@ -911,7 +941,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Đặt u=2x−1, nhân u′."
     ],
     "rubric": null,
     "interaction": {
@@ -927,7 +957,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thiếu hệ số 2, tính đạo hàm hàm trong. Ôn TOP09-M16; luyện THPT-TOP09-P16."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P06",
@@ -941,7 +972,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Căn có đối số luôn dương; đạo hàm hàm hợp."
     ],
     "rubric": null,
     "interaction": {
@@ -957,7 +988,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thiếu 2x, ghi đạo hàm đối số riêng. Ôn TOP09-M16; luyện THPT-TOP09-P16."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C07",
@@ -971,7 +1003,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Nhớ dấu âm ở đạo hàm cos."
     ],
     "rubric": null,
     "interaction": {
@@ -987,7 +1019,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ghi đạo hàm cos dương, nhớ dấu trừ. Ôn TOP09-M17; luyện THPT-TOP09-P17."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P07",
@@ -1001,7 +1034,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Tách sin và cos, giữ hệ số có dấu."
     ],
     "rubric": null,
     "interaction": {
@@ -1017,7 +1050,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đổi dấu −3cos sai, nhân hai dấu âm. Ôn TOP09-M17; luyện THPT-TOP09-P17."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C08",
@@ -1031,7 +1065,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Kiểm cos x≠0 trước khi áp công thức."
     ],
     "rubric": null,
     "interaction": {
@@ -1047,7 +1081,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng tại cos x=0, kiểm miền tan. Ôn TOP09-M18; luyện THPT-TOP09-P18."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P08",
@@ -1061,7 +1096,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Đạo hàm cot âm; nhân hệ số 4."
     ],
     "rubric": null,
     "interaction": {
@@ -1077,7 +1112,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thiếu dấu âm, nhớ cot có đạo hàm −1/sin²x. Ôn TOP09-M18; luyện THPT-TOP09-P18."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C09",
@@ -1091,7 +1127,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Đặt u=5x và nhân 5."
     ],
     "rubric": null,
     "interaction": {
@@ -1107,7 +1143,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên 5, viết quy tắc hàm hợp. Ôn TOP09-M19; luyện THPT-TOP09-P19."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P09",
@@ -1121,7 +1158,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Đặt u=x²; kiểm cos u≠0."
     ],
     "rubric": null,
     "interaction": {
@@ -1137,7 +1174,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thiếu 2x hoặc miền, kiểm cả đối số lẫn cos. Ôn TOP09-M19; luyện THPT-TOP09-P19."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C10",
@@ -1151,7 +1189,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Đạo hàm e^x bằng chính nó."
     ],
     "rubric": null,
     "interaction": {
@@ -1167,7 +1205,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhân ln e, nhớ ln e=1. Ôn TOP09-M20; luyện THPT-TOP09-P20."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P10",
@@ -1181,7 +1220,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Dùng a^x ln a với a=5."
     ],
     "rubric": null,
     "interaction": {
@@ -1197,7 +1236,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên ln5, đối chiếu cơ số e và cơ số 5. Ôn TOP09-M20; luyện THPT-TOP09-P20."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C11",
@@ -1211,7 +1251,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Kiểm x>0 từ hàm log gốc."
     ],
     "rubric": null,
     "interaction": {
@@ -1227,7 +1267,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 1/x cho x âm, kiểm miền ln. Ôn TOP09-M21; luyện THPT-TOP09-P21."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P11",
@@ -1241,7 +1282,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Đổi cơ số về ln."
     ],
     "rubric": null,
     "interaction": {
@@ -1257,7 +1298,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên ln4 ở mẫu, đổi cơ số trước. Ôn TOP09-M21; luyện THPT-TOP09-P21."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C12",
@@ -1271,7 +1313,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Nhân đạo hàm của 3x−2."
     ],
     "rubric": null,
     "interaction": {
@@ -1287,7 +1329,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thiếu 3, lấy đạo hàm 3x−2 riêng. Ôn TOP09-M22; luyện THPT-TOP09-P22."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P12",
@@ -1301,7 +1344,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Kiểm x²+4>0, nhân đạo hàm đối số."
     ],
     "rubric": null,
     "interaction": {
@@ -1317,7 +1360,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho log đối số âm, kiểm x²+4≥4. Ôn TOP09-M22; luyện THPT-TOP09-P22."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C13",
@@ -1331,7 +1375,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Giải x−2>0 trước khi tính."
     ],
     "rubric": null,
     "interaction": {
@@ -1347,21 +1391,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận x=2, log của 0 không xác định. Ôn TOP09-M23; luyện THPT-TOP09-P23."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P13",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "$f(x)=\\sqrt{9-x^2}$ có đạo hàm hữu hạn trên khoảng nào?",
-    "answer_key": "$-x/\\sqrt{9-x^2}$ với -3<x<3.",
-    "worked_solution": "Căn có nghĩa trên [-3,3] nhưng đạo hàm công thức chỉ trong khoảng mở.",
+    "stem": "Cho f(x)=√(9−x²). Tìm miền xác định, đạo hàm trên khoảng mở và xét thương sai phân một phía tại x=3.",
+    "answer_key": "D=[−3;3]; f′=−x/√(9−x²) trên (−3;3); thương trái tại 3 tiến −∞, không có đạo hàm hữu hạn.",
+    "worked_solution": "Điều kiện 9−x²≥0 cho D=[−3;3]. Trên (−3;3), quy tắc hàm hợp cho f′=−x/√(9−x²). Tại x=3, f(3)=0; với h<0 đủ gần 0, thương √(−6h−h²)/h=−√(6+h)/√(−h)→−∞. Bên phải ngoài miền, nên không có đạo hàm hữu hạn hai phía.",
     "skill_ids": [
       "G11-B32-DOMAIN_VALIDATION"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Tách miền căn và miền công thức; tại biên dùng h<0 và đặt −h>0."
     ],
     "rubric": null,
     "interaction": {
@@ -1377,7 +1422,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận hai đầu ±3, kiểm mẫu căn bằng 0. Ôn TOP09-M23; luyện THPT-TOP09-P23."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C14",
@@ -1391,7 +1437,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Nhận diện tích hai hàm."
     ],
     "rubric": null,
     "interaction": {
@@ -1407,7 +1453,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn hàm hợp ngoài, tách hai nhân tử trước. Ôn TOP09-M24; luyện THPT-TOP09-P24."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P14",
@@ -1421,7 +1468,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Chọn thương ngoài và hàm hợp ở tử."
     ],
     "rubric": null,
     "interaction": {
@@ -1437,7 +1484,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ quy tắc thương, viết tử u′v−uv′. Ôn TOP09-M24; luyện THPT-TOP09-P24."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-C15",
@@ -1451,7 +1499,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Tính h′(t), rồi thế t=1."
     ],
     "rubric": null,
     "interaction": {
@@ -1467,7 +1515,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng h(1), lấy đạo hàm rồi mới thế. Ôn TOP09-M25; luyện THPT-TOP09-P25."
   },
   {
     "item_id": "THPT-G11-CHIX-B32-P15",
@@ -1481,7 +1530,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 32 trước khi tự thử."
+      "Đặt u=3t, nhân u′."
     ],
     "rubric": null,
     "interaction": {
@@ -1497,7 +1546,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thiếu hệ số 3, lấy đạo hàm đối số 3t. Ôn TOP09-M25; luyện THPT-TOP09-P25."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-C01",
@@ -1511,7 +1561,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Lấy đạo hàm của hàm f′."
     ],
     "rubric": null,
     "interaction": {
@@ -1527,7 +1577,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu hiểu f″ là bình phương, thực hiện hai lượt đạo hàm. Ôn TOP09-M26; luyện THPT-TOP09-P26."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-P01",
@@ -1541,7 +1592,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Lấy đạo hàm lần lượt hai lần."
     ],
     "rubric": null,
     "interaction": {
@@ -1557,7 +1608,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ghi f″=3x², còn thiếu một lượt. Ôn TOP09-M26; luyện THPT-TOP09-P26."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-C02",
@@ -1571,7 +1623,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Giữ biến x đến sau lần đạo hàm thứ hai."
     ],
     "rubric": null,
     "interaction": {
@@ -1587,7 +1639,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thay x=1 quá sớm, giữ biểu thức theo x. Ôn TOP09-M27; luyện THPT-TOP09-P27."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-P02",
@@ -1601,7 +1654,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Tính f′ rồi f″ trước khi thế 0."
     ],
     "rubric": null,
     "interaction": {
@@ -1617,7 +1670,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mất hạng 4, đạo hàm 4x thành 4. Ôn TOP09-M27; luyện THPT-TOP09-P27."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-C03",
@@ -1631,7 +1685,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Giữ hệ số 2 ở cả hai lần."
     ],
     "rubric": null,
     "interaction": {
@@ -1647,21 +1701,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thiếu hệ số 2 lần hai, áp hàm hợp lại. Ôn TOP09-M28; luyện THPT-TOP09-P28."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-P03",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "$f(x)=e^{-x}$, f'' bằng?",
-    "answer_key": "$e^{-x}$.",
-    "worked_solution": "Lần một -e^{-x}, lần hai +e^{-x}.",
+    "stem": "Cho f(x)=e^{−2x}. Tìm f′, f″ và f″(0); giải thích dấu của hệ số.",
+    "answer_key": "f′=−2e^{−2x}; f″=4e^{−2x}; f″(0)=4.",
+    "worked_solution": "Hàm trong −2x có đạo hàm −2. Lần đầu f′=−2e^{−2x}. Lần hai f″=−2·(−2)e^{−2x}=4e^{−2x}; tại x=0 bằng 4. Hệ số âm xuất hiện ở cả hai lượt nên tích dương.",
     "skill_ids": [
       "G11-B33-TRIG_EXP"
     ],
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Nhân −2 ở mỗi lượt lấy đạo hàm hàm hợp."
     ],
     "rubric": null,
     "interaction": {
@@ -1677,7 +1732,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mất dấu dương lần hai, nhân hai dấu âm. Ôn TOP09-M28; luyện THPT-TOP09-P28."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-C04",
@@ -1691,7 +1747,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Từ s tính v, từ v tính a."
     ],
     "rubric": null,
     "interaction": {
@@ -1707,12 +1763,13 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy vận tốc làm gia tốc, kiểm đơn vị. Ôn TOP09-M29; luyện THPT-TOP09-P29."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-P04",
     "content_version": "THPT-G11-CHIX-B31-B33-R00",
-    "stem": "Cho $s(t)=2t^3-t^2$ m, gia tốc lúc t=2?",
+    "stem": "Cho $s(t)=2t^3-t^2$ m, t tính bằng giây; gia tốc lúc t=2?",
     "answer_key": "$v=6t^2-2t$, $a=12t-2$, $a(2)=22$ m/s².",
     "worked_solution": "Tăng tốc tức thời theo dấu a cần xem cả vận tốc.",
     "skill_ids": [
@@ -1721,7 +1778,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Tính hai đạo hàm theo t rồi thế 2."
     ],
     "rubric": null,
     "interaction": {
@@ -1737,7 +1794,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết luận tăng tốc chỉ từ a>0, xét thêm v. Ôn TOP09-M29; luyện THPT-TOP09-P29."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-C05",
@@ -1751,7 +1809,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Khi v<0, tốc độ bằng −v."
     ],
     "rubric": null,
     "interaction": {
@@ -1767,7 +1825,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu v âm và a âm, |v|=−v nên đạo hàm tốc độ là −a>0. Ôn TOP09-M30; luyện THPT-TOP09-P30."
   },
   {
     "item_id": "THPT-G11-CHIX-B33-P05",
@@ -1781,7 +1840,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Khi v>0, tốc độ bằng v."
     ],
     "rubric": null,
     "interaction": {
@@ -1797,7 +1856,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu a âm luôn chậm dần, kiểm v đang dương hay âm. Ôn TOP09-M30; luyện THPT-TOP09-P30."
   },
   {
     "item_id": "THPT-G11-CHIX-CHIX-C01",
@@ -1811,7 +1871,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Phân biệt vị trí, vận tốc, gia tốc."
     ],
     "rubric": null,
     "interaction": {
@@ -1827,7 +1887,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm s″ với (s′)², tính đạo hàm của v. Ôn TOP09-M31; luyện THPT-TOP09-P31."
   },
   {
     "item_id": "THPT-G11-CHIX-CHIX-P01",
@@ -1841,7 +1902,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 33 trước khi tự thử."
+      "Tính f(a), f′(a), f″(a) riêng."
     ],
     "rubric": null,
     "interaction": {
@@ -1857,7 +1918,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng f″ làm độ dốc tiếp tuyến, kiểm f′ tại tiếp điểm. Ôn TOP09-M31; luyện THPT-TOP09-P31."
   },
   {
     "item_id": "THPT-G11-B31-KFT01",
