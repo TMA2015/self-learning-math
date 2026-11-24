@@ -4937,5 +4937,53 @@
     "item_id": "THPT-G11-B26-KFT01",
     "source_locator": "details[data-ped-first-try] #1",
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHVIII:B28:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B28-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHVIII:B29:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B29-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHVIII:B30:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B30-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B31:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B31-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B32:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B32-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
+  },
+  {
+    "collection": "SGK:G11:CHIX:B33:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G11-B33-KFT01",
+    "source_locator": "details[data-ped-first-try] #1",
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY"
   }
 ]
