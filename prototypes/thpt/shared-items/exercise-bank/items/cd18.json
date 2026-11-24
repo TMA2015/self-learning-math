@@ -1,12 +1,14 @@
 [
   {
     "item_id": "THPT-TOP18-P01",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "Cho ba điểm P, Q, R thẳng hàng **theo thứ tự P–Q–R** (Q nằm giữa P và R), PQ=3 cm và QR=2 cm. Tính PR. Trong trường hợp riêng P=Q, vectơ PQ có phải vectơ đơn vị không?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "a) Ba điểm phân biệt P,Q,R thẳng hàng theo thứ tự P–Q–R, PQ=3 cm và QR=2 cm. Tính PR. b) Xét tình huống khác, P=Q: vectơ PQ có phải vectơ đơn vị không?",
+    "answer_key": "PR=5 cm; khi P=Q thì PQ⃗=0⃗, không phải vectơ đơn vị.",
     "worked_solution": "Vì Q nằm giữa P và R nên PR=PQ+QR=3+2=5 cm. Ở trường hợp riêng P=Q thì vectơ PQ là vectơ-không, độ dài bằng 0 nên không phải vectơ đơn vị.\n\n**D6:** Không suy hướng từ nét vẽ, kiểm điểm đầu/cuối; vectơ-không không được đưa vào công thức góc.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B06-O01"
+    ],
     "original_outcome_ids": [
       "TOP18-O01"
     ],
@@ -23,16 +25,18 @@
       "heading_id": "THPT-TOP18-P01",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P02",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "Một con đường đi 4 km về phía Đông, một đường khác dài 4 km về Tây. Hai vectơ độ dời bằng nhau hay đối nhau?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một người di chuyển thẳng 4 km về phía Đông; người khác di chuyển thẳng 4 km về phía Tây. Hai vectơ độ dời bằng nhau hay đối nhau?",
+    "answer_key": "Hai vectơ độ dời đối nhau.",
     "worked_solution": "Đối nhau: độ dài bằng nhau nhưng hai hướng ngược nhau. Vị trí đặt mũi tên không làm đổi kết luận.\n\n**D6:** Hãy vẽ mũi tên đầu/cuối thay vì so sánh riêng độ dài.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B06-O02"
+    ],
     "original_outcome_ids": [
       "TOP18-O02"
     ],
@@ -49,16 +53,18 @@
       "heading_id": "THPT-TOP18-P02",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P03",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong tam giác ABC, viết vectơ AB + vectơ BC − vectơ AC dưới dạng đơn giản.",
-    "answer_key": null,
+    "answer_key": "Vectơ-không.",
     "worked_solution": "Bằng vectơ-không vì AB+BC=AC, nên hiệu với AC bằng 0.\n\n**D6:** Nếu không ghép được đầu của mũi tên thứ hai vào cuối mũi tên thứ nhất, hãy tịnh tiến vectơ rồi mới cộng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B06-O03"
+    ],
     "original_outcome_ids": [
       "TOP18-O03"
     ],
@@ -75,16 +81,18 @@
       "heading_id": "THPT-TOP18-P03",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P04",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho độ dời u có độ dài 5 cm và k=−2. Tính độ dài ku và so sánh hướng với u.",
-    "answer_key": null,
+    "answer_key": "|ku⃗|=10 cm; ku⃗ ngược hướng u⃗.",
     "worked_solution": "Độ dài |−2|·5=10 cm; vì k âm nên ngược hướng u.\n\n**D6:** Nếu lẫn dấu và độ dài, tách riêng: độ dài nhân |k|, chiều quyết định theo dấu k.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B06-O04"
+    ],
     "original_outcome_ids": [
       "TOP18-O04"
     ],
@@ -101,16 +109,18 @@
       "heading_id": "THPT-TOP18-P04",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P05",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hai vectơ độ dài 3 và 4, góc giữa chúng 60°. Tính tích vô hướng.",
-    "answer_key": null,
+    "answer_key": "6.",
     "worked_solution": "3·4·cos60°=6. Cần biết cả độ dài và góc; không nhân 3·4 trực tiếp.\n\n**D6:** Nếu một vectơ bằng 0, tích vô hướng vẫn bằng 0 nhưng không dùng phép chia cho tích độ dài để tìm cos góc.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B06-O05"
+    ],
     "original_outcome_ids": [
       "TOP18-O05"
     ],
@@ -127,16 +137,18 @@
       "heading_id": "THPT-TOP18-P05",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P06",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "Một lực 10 N tạo góc 60° với độ dời dài 2 m. Công của lực theo hướng độ dời?",
-    "answer_key": null,
-    "worked_solution": "W=10·2·cos60°=10 J, vì chỉ thành phần lực dọc chuyển dời sinh công.\n\n**D6:** D6: phân loại bài hỏi tổng vectơ hay hình chiếu; luôn có sơ đồ phương và đơn vị.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một lực không đổi có độ lớn 10 N, tạo góc 60° với vectơ độ dời dài 2 m. Tính công của lực.",
+    "answer_key": "W=10 J.",
+    "worked_solution": "Công của lực không đổi bằng tích vô hướng giữa lực và vectơ độ dời: W=F·s·cos60°=10·2·1/2=10 J. Chỉ thành phần của lực theo hướng độ dời góp phần vào công.\n\n**D6:** D6: phân loại bài hỏi tổng vectơ hay hình chiếu; luôn có sơ đồ phương và đơn vị.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B06-O06"
+    ],
     "original_outcome_ids": [
       "TOP18-O06"
     ],
@@ -153,16 +165,18 @@
       "heading_id": "THPT-TOP18-P06",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P07",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Điểm A=(0,4,−3) thuộc mặt phẳng Oyz không? Vì sao?",
-    "answer_key": null,
+    "answer_key": "Có, vì x=0.",
     "worked_solution": "Có, vì x=0. Không bắt buộc y,z dương để thuộc mặt tọa độ.\n\n**D6:** Gắn điều kiện bằng 0 với tên của tọa độ bị thiếu, không suy vị trí chỉ từ hình xiên.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B07-O01"
+    ],
     "original_outcome_ids": [
       "TOP18-O07"
     ],
@@ -179,16 +193,18 @@
       "heading_id": "THPT-TOP18-P07",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P08",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "Vectơ u=−2i+3j+k. Viết bộ ba tọa độ của u và của điểm N sao cho ON=u.",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong hệ tọa độ Oxyz với các vectơ đơn vị i⃗,j⃗,k⃗, cho u⃗=−2i⃗+3j⃗+k⃗. Viết tọa độ u⃗ và điểm N sao cho ON⃗=u⃗.",
+    "answer_key": "u⃗=(−2;3;1), N(−2;3;1).",
     "worked_solution": "u=(−2,3,1) và N(−2,3,1) khi gốc là O và ba trục chuẩn.\n\n**D6:** Nhắc lại điểm cần gốc, vectơ cần thành phần dịch chuyển; không tự đổi dấu khi đọc thành phần âm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B07-O02"
+    ],
     "original_outcome_ids": [
       "TOP18-O08"
     ],
@@ -205,16 +221,18 @@
       "heading_id": "THPT-TOP18-P08",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P09",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "Drone ở A=(1,−2,5) m; chuyển sang B=(1,2,5) m. Sự thay đổi theo Oy là bao nhiêu, theo chiều nào?",
-    "answer_key": null,
-    "worked_solution": "Tăng 4 m về Bắc; chiều cao z không đổi.\n\n**D6:** Nếu quên quy ước dấu, vẽ ba trục và ghi rõ đơn vị trước khi giải.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong hệ tọa độ Ox hướng Đông, Oy hướng Bắc, Oz hướng lên, drone đi từ A(1;−2;5) đến B(1;2;5), tọa độ tính bằng mét. Tọa độ theo Oy thay đổi bao nhiêu, theo chiều nào?",
+    "answer_key": "Tăng 4 m theo chiều dương Oy (về Bắc).",
+    "worked_solution": "Hiệu tọa độ B−A=(0;4;0) m. Tọa độ y tăng từ −2 lên 2, nên độ dời theo Oy là +4 m, về Bắc theo quy ước; tọa độ x và z không đổi.\n\n**D6:** Nếu quên quy ước dấu, vẽ ba trục và ghi rõ đơn vị trước khi giải.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B07-O03"
+    ],
     "original_outcome_ids": [
       "TOP18-O09"
     ],
@@ -231,16 +249,18 @@
       "heading_id": "THPT-TOP18-P09",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P10",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho C=(−1,3,2), D=(2,3,−2). Tính CD và DC; có đối nhau không?",
-    "answer_key": null,
+    "answer_key": "CD⃗=(3;0;−4), DC⃗=(−3;0;4); hai vectơ đối nhau.",
     "worked_solution": "CD=(3,0,−4), DC=(−3,0,4)=−CD.\n\n**D6:** Thường xuyên thử lấy tọa độ A cộng kết quả AB để xem có trở về B không.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B07-O04"
+    ],
     "original_outcome_ids": [
       "TOP18-O10"
     ],
@@ -257,16 +277,18 @@
       "heading_id": "THPT-TOP18-P10",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P11",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho u=(−1,2,4), v=(3,−2,1). Tính 2u−v.",
-    "answer_key": null,
+    "answer_key": "(−5;6;7).",
     "worked_solution": "2u−v=(−2,4,8)−(3,−2,1)=(−5,6,7).\n\n**D6:** Không nhân chéo tọa độ khi cộng; làm theo từng trục và kiểm dấu số âm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B08-O01"
+    ],
     "original_outcome_ids": [
       "TOP18-O11"
     ],
@@ -283,16 +305,18 @@
       "heading_id": "THPT-TOP18-P11",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P12",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Kiểm tra cùng phương của u=(2,4,1) và v=(1,2,0).",
-    "answer_key": null,
+    "answer_key": "Không cùng phương.",
     "worked_solution": "Không: từ hai thành phần đầu k=2 nhưng thành phần z yêu cầu 1=2·0 sai.\n\n**D6:** Không chia cho 0; kiểm cả ba thành phần, nếu một vectơ là vectơ-không thì nói rõ trường hợp riêng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B08-O02"
+    ],
     "original_outcome_ids": [
       "TOP18-O12"
     ],
@@ -309,16 +333,18 @@
       "heading_id": "THPT-TOP18-P12",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P13",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm trọng tâm tam giác A=(0,0,0), B=(3,0,3), C=(0,6,0).",
-    "answer_key": null,
+    "answer_key": "G(1;2;1).",
     "worked_solution": "G=(1,2,1) vì cộng ba tọa độ từng trục rồi chia 3.\n\n**D6:** Nếu kết quả bất ngờ, lấy 2M−A phải thu B; với trọng tâm G, 3G=A+B+C.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B08-O03"
+    ],
     "original_outcome_ids": [
       "TOP18-O13"
     ],
@@ -335,16 +361,18 @@
       "heading_id": "THPT-TOP18-P13",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P14",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "u=(1,0,0),v=(1,1,0). Tính cos góc giữa hai vectơ.",
-    "answer_key": null,
+    "answer_key": "cos θ=1/√2 (θ=45°).",
     "worked_solution": "cos=1/(1·√2)=1/√2 nên góc 45°.\n\n**D6:** Khi tìm cos, kiểm |u|,|v|>0; nếu làm tròn dữ liệu máy, cos chỉ nằm trong [−1,1].",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B08-O04"
+    ],
     "original_outcome_ids": [
       "TOP18-O14"
     ],
@@ -361,16 +389,18 @@
       "heading_id": "THPT-TOP18-P14",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P15",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Khoảng cách giữa A=(0,1,−2) và B=(2,−2,4)?",
-    "answer_key": null,
+    "answer_key": "7 đơn vị độ dài.",
     "worked_solution": "AB=(2,−3,6), nên khoảng cách √(4+9+36)=7.\n\n**D6:** Nếu căn ra số âm hoặc thiếu tọa độ z, quay lại định lí Pitago ba chiều.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B08-O05"
+    ],
     "original_outcome_ids": [
       "TOP18-O15"
     ],
@@ -387,16 +417,18 @@
       "heading_id": "THPT-TOP18-P15",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P16",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "Máy bay mô hình M0=(2,−1,4) km, v=(1,2,−1) km/h. Sau 2 h ở đâu?",
-    "answer_key": null,
-    "worked_solution": "M=(2,−1,4)+2(1,2,−1)=(4,3,2) km.\n\n**D6:** Nếu thấy độ cao âm mà vật không được dưới mặt đất, kiểm mốc t hoặc chiều dương và giới hạn vật lí.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Máy bay mô hình có vị trí ban đầu M₀(2;−1;4) (km) và bay với vận tốc không đổi v⃗=(1;2;−1) km/h trong 2 giờ. Tìm tọa độ vị trí sau 2 giờ.",
+    "answer_key": "M(2)=(4;3;2) km.",
+    "worked_solution": "Vì vận tốc không đổi, sau 2 giờ vectơ độ dời là 2v⃗=(2;4;−2) km. Cộng vào vị trí ban đầu M₀(2;−1;4), được vị trí M(2)=(4;3;2) km.\n\n**D6:** Nếu thấy độ cao âm mà vật không được dưới mặt đất, kiểm mốc t hoặc chiều dương và giới hạn vật lí.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHII-B08-O06"
+    ],
     "original_outcome_ids": [
       "TOP18-O16"
     ],
@@ -413,16 +445,18 @@
       "heading_id": "THPT-TOP18-P16",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P17",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "u=(1,1,0),v=(0,1,1). Tìm một pháp tuyến khác không bằng tích có hướng.",
-    "answer_key": null,
-    "worked_solution": "u×v=(1,−1,1). Kiểm n·u=1−1=0, n·v=−1+1=0. Hai vectơ đã cho độc lập nên n≠0.\n\n**Đường khắc phục D6:** Nếu tích có hướng 0, phải kiểm hai hướng có cùng phương hay không; không dùng vectơ 0 làm pháp tuyến.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho hai vectơ chỉ phương của một mặt phẳng u⃗=(1;1;0), v⃗=(0;1;1). Tìm một vectơ pháp tuyến khác không bằng tích có hướng.",
+    "answer_key": "Một vectơ pháp tuyến là n⃗=(1;−1;1).",
+    "worked_solution": "Tính u⃗×v⃗=(1·1−0·1; 0·0−1·1; 1·1−1·0)=(1;−1;1). Kiểm n⃗·u⃗=0 và n⃗·v⃗=0; n⃗ khác 0, nên là pháp tuyến của mặt phẳng có hai vectơ chỉ phương đã cho.\n\n**Đường khắc phục D6:** Nếu tích có hướng 0, phải kiểm hai hướng có cùng phương hay không; không dùng vectơ 0 làm pháp tuyến.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B14-O01"
+    ],
     "original_outcome_ids": [
       "TOP18-O17"
     ],
@@ -439,16 +473,18 @@
       "heading_id": "THPT-TOP18-P17",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P18",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "M0=(−1,2,0), n=(1,2,−1). Viết phương trình mặt phẳng và thử lại M0.",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Viết phương trình mặt phẳng đi qua M₀(−1;2;0), nhận n⃗=(1;2;−1) làm pháp tuyến. Kiểm tra M₀ thuộc mặt phẳng.",
+    "answer_key": "x+2y−z−3=0.",
     "worked_solution": "(x+1)+2(y−2)−z=0, suy x+2y−z−3=0. Thay (−1,2,0) được −1+4−3=0.\n\n**Đường khắc phục D6:** Không để pháp tuyến n=0; thay tọa độ điểm đã cho vào phương trình để phát hiện lỗi dấu.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B14-O02"
+    ],
     "original_outcome_ids": [
       "TOP18-O18"
     ],
@@ -465,16 +501,18 @@
       "heading_id": "THPT-TOP18-P18",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P19",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Lập mặt phẳng qua A=(0,0,0),B=(1,0,1),C=(0,1,1).",
-    "answer_key": null,
-    "worked_solution": "AB=(1,0,1),AC=(0,1,1), n=(−1,−1,1) nên mặt phẳng −x−y+z=0, hoặc z=x+y.\n\n**Đường khắc phục D6:** Kiểm AB,AC có cùng phương không trước khi dựng n, và thay đủ ba điểm vào đáp án.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "−x−y+z=0 (hay z=x+y).",
+    "worked_solution": "AB⃗=(1;0;1), AC⃗=(0;1;1) không cùng phương. Tích có hướng AB⃗×AC⃗=(−1;−1;1) là pháp tuyến. Vì mặt phẳng qua A(0;0;0), phương trình là −x−y+z=0. Thay B,C đều được 0.\n\n**Đường khắc phục D6:** Kiểm AB,AC có cùng phương không trước khi dựng n, và thay đủ ba điểm vào đáp án.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B14-O03"
+    ],
     "original_outcome_ids": [
       "TOP18-O19"
     ],
@@ -491,16 +529,18 @@
       "heading_id": "THPT-TOP18-P19",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P20",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm mặt phẳng chứa Oy và A=(2,0,−1).",
-    "answer_key": null,
+    "answer_key": "x+2z=0.",
     "worked_solution": "Dùng e2=(0,1,0) và OA=(2,0,−1); pháp tuyến n=(1,0,2), nên x+2z=0; Oy và A đều thỏa.\n\n**Đường khắc phục D6:** Không bỏ điều kiện chứa điểm/đường; một mặt chỉ có pháp tuyến đúng nhưng lệch vị trí vẫn sai.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B14-O04"
+    ],
     "original_outcome_ids": [
       "TOP18-O20"
     ],
@@ -517,16 +557,18 @@
       "heading_id": "THPT-TOP18-P20",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P21",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "P:x−y=0, Q:x+y=0. Chúng vuông góc không?",
-    "answer_key": null,
+    "answer_key": "Có, hai mặt phẳng vuông góc.",
     "worked_solution": "Pháp tuyến n1=(1,−1,0),n2=(1,1,0); tích n1·n2=0 và cả hai khác không nên hai mặt vuông góc.\n\n**Đường khắc phục D6:** Nếu n1∥n2, kiểm tỉ lệ cả hệ số tự do trước khi nói 'hai mặt song song phân biệt'.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B14-O05"
+    ],
     "original_outcome_ids": [
       "TOP18-O21"
     ],
@@ -543,16 +585,18 @@
       "heading_id": "THPT-TOP18-P21",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P22",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tính khoảng cách M=(1,1,1) đến P:2x−y+2z−6=0.",
-    "answer_key": null,
+    "answer_key": "1 đơn vị độ dài.",
     "worked_solution": "Thay M: 2−1+2−6=−3, |−3|=3, |n|=√(4+1+4)=3 nên d=1.\n\n**Đường khắc phục D6:** Đừng quên trị tuyệt đối và chuẩn hóa pháp tuyến; đáp án khoảng cách phải không âm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B14-O06"
+    ],
     "original_outcome_ids": [
       "TOP18-O22"
     ],
@@ -569,16 +613,18 @@
       "heading_id": "THPT-TOP18-P22",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P24",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Đường qua P=(−1,2,0) hướng v=(0,3,−2). Viết phương trình tham số.",
-    "answer_key": null,
+    "answer_key": "x=−1, y=2+3t, z=−2t (t∈ℝ).",
     "worked_solution": "x=−1,y=2+3t,z=−2t (t∈R). Tại t=0 trở về P; vectơ v khác 0.\n\n**Đường khắc phục D6:** Nếu thành phần hướng bằng 0, tọa độ tương ứng là hằng, không tùy tiện bỏ phương trình đó.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B15-O01"
+    ],
     "original_outcome_ids": [
       "TOP18-O24"
     ],
@@ -595,16 +641,18 @@
       "heading_id": "THPT-TOP18-P24",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P25",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "Tìm đường qua C=(1,−1,0),D=(1,1,4).",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Viết phương trình tham số của đường thẳng qua C(1;−1;0), D(1;1;4).",
+    "answer_key": "x=1, y=−1+2t, z=4t (t∈ℝ).",
     "worked_solution": "CD=(0,2,4), nên x=1,y=−1+2t,z=4t; t=0 cho C, t=1 cho D.\n\n**Đường khắc phục D6:** Nhớ A≠B, lấy đúng B−A và thử lại tọa độ cả hai điểm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B15-O02"
+    ],
     "original_outcome_ids": [
       "TOP18-O25"
     ],
@@ -621,16 +669,18 @@
       "heading_id": "THPT-TOP18-P25",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P26",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho đường x=2,y=−1+3t,z=5−t. Viết chính tắc.",
-    "answer_key": null,
+    "answer_key": "x=2 và (y+1)/3=(z−5)/(−1).",
     "worked_solution": "x=2 và (y+1)/3=(z−5)/(−1). Không ghi (x−2)/0.\n\n**Đường khắc phục D6:** D6: nhận từng thành phần hướng bằng 0 rồi giữ phương trình hằng; tỉ số có mẫu 0 là vô nghĩa.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B15-O03"
+    ],
     "original_outcome_ids": [
       "TOP18-O26"
     ],
@@ -647,16 +697,18 @@
       "heading_id": "THPT-TOP18-P26",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P27",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Điểm P=(2,0,2) có thuộc d: x=1+t,y=t,z=t không?",
-    "answer_key": null,
+    "answer_key": "Không thuộc d.",
     "worked_solution": "Không. Từ x=2 suy t=1; khi đó y=z=1, khác y=0,z=2 của P.\n\n**Đường khắc phục D6:** Không dùng ba tham số khác nhau cho ba tọa độ; kiểm tất cả với một t chung.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B15-O04"
+    ],
     "original_outcome_ids": [
       "TOP18-O27"
     ],
@@ -673,16 +725,18 @@
       "heading_id": "THPT-TOP18-P27",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P28",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "d1 qua (1,1,0) hướng (2,0,0), d2 qua (3,1,0) hướng (1,0,0). Trùng hay song song phân biệt?",
-    "answer_key": null,
+    "answer_key": "Hai đường trùng nhau.",
     "worked_solution": "Trùng: hướng cùng phương và điểm (3,1,0) nằm trên d1 khi t=1.\n\n**Đường khắc phục D6:** Khi đã có hướng tỉ lệ, đừng kết luận song song phân biệt trước khi kiểm một điểm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B15-O05"
+    ],
     "original_outcome_ids": [
       "TOP18-O28"
     ],
@@ -699,16 +753,18 @@
       "heading_id": "THPT-TOP18-P28",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P29",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Phân loại d1(t)=(t,0,0), d2(s)=(0,s,2).",
-    "answer_key": null,
+    "answer_key": "Hai đường chéo nhau.",
     "worked_solution": "Khác phương, z luôn 0 ở d1 nhưng luôn 2 ở d2, hệ vô nghiệm ⇒ chéo nhau.\n\n**Đường khắc phục D6:** D6: giải đủ ba tọa độ; hình chiếu lên giấy giao nhau không chứng minh hai đường trong không gian cắt nhau.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B15-O06"
+    ],
     "original_outcome_ids": [
       "TOP18-O29"
     ],
@@ -725,16 +781,18 @@
       "heading_id": "THPT-TOP18-P29",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P30",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm giao của d(t)=(2+t,−1,t) với mặt P:x+y+z=3.",
-    "answer_key": null,
+    "answer_key": "Giao điểm (3;−1;1).",
     "worked_solution": "Thay: (2+t)−1+t=3 → 2t=2 → t=1, điểm (3,−1,1).\n\n**Đường khắc phục D6:** Khi n·u=0, không chia cho 0; so sánh hằng số để phân biệt nằm trong/sóng song.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B15-O07"
+    ],
     "original_outcome_ids": [
       "TOP18-O30"
     ],
@@ -751,16 +809,18 @@
       "heading_id": "THPT-TOP18-P30",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P31",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "u=(1,1,0),v=(1,−1,0). Tính góc giữa hai đường.",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai đường thẳng có vectơ chỉ phương lần lượt u⃗=(1;1;0), v⃗=(1;−1;0). Tính góc giữa chúng.",
+    "answer_key": "90°.",
     "worked_solution": "Tích vô hướng 0, nên góc 90°. Hai hướng đều khác không.\n\n**Đường khắc phục D6:** Nếu ra góc tù từ cos âm, nhớ góc giữa **đường** lấy giá trị không tù bằng trị tuyệt đối.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B16-O01"
+    ],
     "original_outcome_ids": [
       "TOP18-O31"
     ],
@@ -777,16 +837,18 @@
       "heading_id": "THPT-TOP18-P31",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P32",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Đường có hướng u=(3,4,0), mặt z=0. Góc giữa đường và mặt?",
-    "answer_key": null,
+    "answer_key": "0°.",
     "worked_solution": "0°, do n=(0,0,1), u·n=0. Chưa biết đường nằm trong hay song song phân biệt nếu chưa kiểm điểm gốc.\n\n**Đường khắc phục D6:** Không nhầm góc pháp tuyến–đường với góc đường–mặt; trường hợp suy biến hình chiếu khi θ=90° vẫn xác định góc 90°.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B16-O02"
+    ],
     "original_outcome_ids": [
       "TOP18-O32"
     ],
@@ -803,16 +865,18 @@
       "heading_id": "THPT-TOP18-P32",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P33",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "P:x+y=0,Q:x−y=1. Tính góc hai mặt.",
-    "answer_key": null,
+    "answer_key": "90°.",
     "worked_solution": "Pháp tuyến n1=(1,1,0),n2=(1,−1,0), dot=0 nên góc 90°.\n\n**Đường khắc phục D6:** Kiểm chọn n≠0; nhớ góc giữa hai mặt là góc nhỏ, không lệ thuộc hướng n.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B16-O03"
+    ],
     "original_outcome_ids": [
       "TOP18-O33"
     ],
@@ -829,16 +893,18 @@
       "heading_id": "THPT-TOP18-P33",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P34",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Mặt x=0 và đường d(t)=(1,t,0). Quan hệ?",
-    "answer_key": null,
+    "answer_key": "Đường thẳng song song phân biệt với mặt phẳng.",
     "worked_solution": "n=(1,0,0),u=(0,1,0), n·u=0 và điểm (1,0,0) không thuộc x=0, nên song song phân biệt.\n\n**Đường khắc phục D6:** Một đẳng thức hướng không quyết định vị trí; kiểm điểm/đường thuộc nhau.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B16-O04"
+    ],
     "original_outcome_ids": [
       "TOP18-O34"
     ],
@@ -855,16 +921,18 @@
       "heading_id": "THPT-TOP18-P34",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P35",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "Một dây cáp có độ dời ngang 8 m, tăng cao 6 m. Tính sin góc cáp với nền và độ dài cáp.",
-    "answer_key": null,
-    "worked_solution": "Độ dài cáp √(8²+6²)=10 m, sinθ=6/10=3/5.\n\n**Đường khắc phục D6:** Phân biệt quãng ngang và chiều dài đường xiên; nếu có thể hãy kiểm bằng tam giác vuông.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một dây cáp căng thẳng có hình chiếu ngang dài 8 m, độ chênh cao hai đầu 6 m. Tính sin góc của cáp với nền ngang và độ dài cáp.",
+    "answer_key": "sin θ=3/5; độ dài cáp 10 m.",
+    "worked_solution": "Dây cáp thẳng và hình chiếu ngang tạo tam giác vuông với độ chênh cao. Độ dài cáp là √(8²+6²)=10 m; sin góc θ giữa cáp và nền ngang bằng 6/10=3/5.\n\n**Đường khắc phục D6:** Phân biệt quãng ngang và chiều dài đường xiên; nếu có thể hãy kiểm bằng tam giác vuông.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B16-O05"
+    ],
     "original_outcome_ids": [
       "TOP18-O35"
     ],
@@ -881,16 +949,18 @@
       "heading_id": "THPT-TOP18-P35",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P36",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Viết mặt cầu tâm (−1,2,0), bán kính 3.",
-    "answer_key": null,
+    "answer_key": "(x+1)²+(y−2)²+z²=9.",
     "worked_solution": "(x+1)²+(y−2)²+z²=9. Các dấu trong ngoặc đối với tọa độ tâm.\n\n**Đường khắc phục D6:** Bán kính phải dương; phương trình không có điểm nếu tổng bình phương bằng số âm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B17-O01"
+    ],
     "original_outcome_ids": [
       "TOP18-O36"
     ],
@@ -907,16 +977,18 @@
       "heading_id": "THPT-TOP18-P36",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P37",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Viết tâm và bán kính của x²+y²+z²+2x−4y+4=0.",
-    "answer_key": null,
-    "worked_solution": "Hoàn bình phương: (x+1)²+(y−2)²+z²=1; tâm (−1,2,0), R=1.\n\n**Đường khắc phục D6:** Không quên chuyển hằng số khi hoàn bình phương; tính R² trước khi lấy căn, kiểm >0.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Tâm (−1;2;0), R=1.",
+    "worked_solution": "Hoàn thành bình phương: x²+2x=(x+1)²−1, y²−4y=(y−2)²−4. Thay vào phương trình, được (x+1)²+(y−2)²+z²=1. Vì R²=1>0, đây là mặt cầu tâm (−1;2;0), bán kính 1.\n\n**Đường khắc phục D6:** Không quên chuyển hằng số khi hoàn bình phương; tính R² trước khi lấy căn, kiểm >0.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B17-O02"
+    ],
     "original_outcome_ids": [
       "TOP18-O37"
     ],
@@ -933,16 +1005,18 @@
       "heading_id": "THPT-TOP18-P37",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P38",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "Mặt cầu tâm C=(1,1,1) R=2, xét P=(1,1,3) và Q=(2,2,2).",
-    "answer_key": null,
-    "worked_solution": "CP²=4=R² nên P trên; CQ²=3<R² nên Q trong.\n\n**Đường khắc phục D6:** So bình phương khoảng cách và bán kính; nếu nhầm tâm, thay hệ tọa độ dịch chuyển M−C.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho mặt cầu tâm C(1;1;1), bán kính R=2. Xác định P(1;1;3) và Q(2;2;2) nằm trên mặt cầu, bên trong hay bên ngoài khối cầu.",
+    "answer_key": "P nằm trên mặt cầu; Q nằm trong khối cầu, không thuộc mặt cầu.",
+    "worked_solution": "CP²=0²+0²+2²=4=R², nên P nằm trên mặt cầu. CQ²=1²+1²+1²=3<R², nên Q nằm trong khối cầu nhưng không thuộc mặt cầu.\n\n**Đường khắc phục D6:** So bình phương khoảng cách và bán kính; nếu nhầm tâm, thay hệ tọa độ dịch chuyển M−C.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B17-O03"
+    ],
     "original_outcome_ids": [
       "TOP18-O38"
     ],
@@ -959,16 +1033,18 @@
       "heading_id": "THPT-TOP18-P38",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P39",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
-    "stem": "A=(0,2,0),B=(0,2,6). Xác định tâm, bán kính và phương trình mặt cầu.",
-    "answer_key": null,
-    "worked_solution": "Tâm C=(0,2,3), AB=6, R=3, phương trình x²+(y−2)²+(z−3)²=9.\n\n**Đường khắc phục D6:** Tính trung điểm trước; đường kính là AB, bán kính nửa AB, không dùng AB trực tiếp làm R.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho mặt cầu đường kính AB với A(0;2;0), B(0;2;6). Xác định tâm, bán kính và phương trình mặt cầu.",
+    "answer_key": "Tâm C(0;2;3), R=3; x²+(y−2)²+(z−3)²=9.",
+    "worked_solution": "Vì AB là đường kính, tâm C là trung điểm AB: C(0;2;3). AB=√(0²+0²+6²)=6 nên R=AB/2=3. Phương trình mặt cầu là x²+(y−2)²+(z−3)²=9.\n\n**Đường khắc phục D6:** Tính trung điểm trước; đường kính là AB, bán kính nửa AB, không dùng AB trực tiếp làm R.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B17-O04"
+    ],
     "original_outcome_ids": [
       "TOP18-O39"
     ],
@@ -985,16 +1061,18 @@
       "heading_id": "THPT-TOP18-P39",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P40",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Mặt cầu tâm C=(0,0,1) bán kính 5, mặt z=4. Tính bán kính đường tròn thiết diện.",
-    "answer_key": null,
-    "worked_solution": "Khoảng cách d=|4−1|=3, r=√(25−9)=4; hình tròn có tâm (0,0,4).\n\n**Đường khắc phục D6:** Đầu tiên tính khoảng cách tâm–mặt chuẩn; không lấy trực tiếp số D của phương trình làm d nếu pháp tuyến chưa chuẩn hóa.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Bán kính đường tròn giao tuyến bằng 4.",
+    "worked_solution": "Khoảng cách từ C(0;0;1) đến mặt phẳng z=4 là d=|1−4|=3<R=5. Giao tuyến là đường tròn có tâm H(0;0;4), hình chiếu vuông góc của C. Với điểm M trên đường tròn, CM²=CH²+HM², nên r=HM=√(25−9)=4.\n\n**Đường khắc phục D6:** Đầu tiên tính khoảng cách tâm–mặt chuẩn; không lấy trực tiếp số D của phương trình làm d nếu pháp tuyến chưa chuẩn hóa.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B17-O05"
+    ],
     "original_outcome_ids": [
       "TOP18-O40"
     ],
@@ -1011,16 +1089,18 @@
       "heading_id": "THPT-TOP18-P40",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP18-P23",
-    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+    "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
     "stem": "Mặt cầu tâm O R=10, mặt phẳng z=6. Tính bán kính đường tròn cắt.",
-    "answer_key": null,
-    "worked_solution": "r=√(100−36)=8. Nếu mặt ở z=11 thì d>R nên không có giao.\n\n**Đường khắc phục D6:** Cần học khái niệm mặt cầu B17 trước; không cho O23 làm outcome Core bắt buộc của B14 hay SGK-ChII.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "8 đơn vị độ dài.",
+    "worked_solution": "Khoảng cách từ tâm O đến mặt phẳng z=6 bằng d=6. Vì d<R=10, giao là đường tròn. Từ tam giác vuông có cạnh huyền R và một cạnh d, bán kính giao tuyến r=√(R²−d²)=√(100−36)=8. Nếu mặt phẳng là z=11 thì d>R, không có giao.\n\n**Đường khắc phục D6:** Cần học khái niệm mặt cầu B17 trước; không cho O23 làm outcome Core bắt buộc của B14 hay SGK-ChII.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHV-B14-O07"
+    ],
     "original_outcome_ids": [
       "TOP18-O23"
     ],
@@ -1037,6 +1117,6 @@
       "heading_id": "THPT-TOP18-P23",
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
