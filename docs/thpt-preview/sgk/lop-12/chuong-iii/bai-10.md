@@ -16,7 +16,7 @@
 
     <!-- OUTCOME_ID: G12-CHIII-B10-O01 -->
     <!-- EX_ID: EX-G12-B10-01 -->
-    Trong bảng ghép nhóm, từng quan sát đã bị mất thông tin về giá trị chính xác. Chẳng hạn thời gian thực hiện một công việc được ghi như sau:
+    Trong bảng ghép nhóm, ta chỉ biết mỗi nhóm có bao nhiêu quan sát, không biết chính xác giá trị của từng quan sát. Chẳng hạn thời gian thực hiện một công việc được ghi như sau:
 
     | Thời gian (phút) | \([0;10)\) | \([10;20)\) | \([20;30)\) |
     | :-- | :--: | :--: | :--: |
@@ -144,7 +144,7 @@
     <!-- EX_ID: EX-G12-B10-06 -->
     Nếu quy mô hai phương án rất khác nhau, độ lệch chuẩn tuyệt đối có thể gây hiểu nhầm. Ví dụ một đơn vị có lợi nhuận trung bình 25 triệu đồng/tháng và độ lệch chuẩn 5 triệu; đơn vị kia trung bình 500 triệu và độ lệch chuẩn 30 triệu. Đơn vị thứ hai biến động tuyệt đối lớn hơn, nhưng 30 triệu chỉ bằng 6% mức trung bình của nó, còn 5 triệu bằng 20% mức trung bình của đơn vị thứ nhất. Không nên chỉ dựa vào phương sai hoặc độ lệch chuẩn tuyệt đối để kết luận đơn vị nào rủi ro hơn về tương đối.
 
-    **Đọc thêm — Hệ số biến thiên.** SGK giới thiệu \(CV=s/\overline{x}\). Khi số trung bình dương có ý nghĩa và đại lượng được đo trên thang có gốc 0 thực sự, hệ số này cho biết mức phân tán tương đối so với trung bình, không có đơn vị (có thể biểu diễn thành phần trăm). Hai giá trị trên cho \(CV=20\%\) và \(6\%\). Không áp dụng máy móc khi trung bình bằng 0, gần 0 hoặc âm; đây cũng không phải thước đo mọi loại rủi ro.
+    **Đọc thêm — Hệ số biến thiên.** SGK giới thiệu \(CV=s/\overline{x}\). Khi số trung bình dương có ý nghĩa và đại lượng được đo trên thang có gốc 0 thực sự, hệ số này cho biết mức phân tán tương đối so với trung bình, không có đơn vị (có thể biểu diễn thành phần trăm). Hai giá trị trên cho \(CV=20\%\) và \(6\%\). Chẳng hạn, 0 đồng nghĩa là không có số tiền đó, nhưng 0°C không có nghĩa là không có nhiệt độ: đổi sang độ Fahrenheit sẽ làm thay đổi tỉ lệ tính được. Vì vậy không dùng hệ số này để so sánh nhiệt độ theo thang Celsius. Không áp dụng máy móc khi trung bình bằng 0, gần 0 hoặc âm; đây cũng không phải thước đo mọi loại rủi ro.
 
     <!-- FIRST_TRY_ID: B10-T02 -->
     **Vận dụng.** Hai cơ sở có lợi nhuận trung bình và độ lệch chuẩn lần lượt là:
