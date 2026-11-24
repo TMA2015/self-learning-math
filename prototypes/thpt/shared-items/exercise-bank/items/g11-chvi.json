@@ -11,7 +11,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Viết lũy thừa mũ âm thành nghịch đảo."
     ],
     "rubric": null,
     "interaction": {
@@ -27,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thêm dấu âm trước kết quả, kiểm (2/5)^2>0 và lấy nghịch đảo. Ôn TOP04-M01; luyện THPT-G11-CHVI-B18-P01."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-C02",
@@ -41,7 +42,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Lấy căn bậc bốn trước rồi lập phương."
     ],
     "rubric": null,
     "interaction": {
@@ -57,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia 81 cho 4, kiểm 3⁴=81 và 3³=27. Ôn TOP04-M02; luyện THPT-G11-CHVI-B18-P03."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-C03",
@@ -71,7 +73,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Mũ âm đòi hỏi mẫu khác 0."
     ],
     "rubric": null,
     "interaction": {
@@ -87,7 +89,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho 0 mũ âm bằng 0, viết 1/0² và nhận ra không xác định. Ôn TOP04-M01; luyện THPT-G11-CHVI-B18-C01."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-C04",
@@ -101,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Nghĩ về các số mũ hữu tỉ xấp xỉ √2."
     ],
     "rubric": null,
     "interaction": {
@@ -117,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ hiểu mũ là số lần nhân nguyên, xét 2^1,4 và 2^1,41; đọc cách mở rộng mũ thực. Ôn TOP04-M03; luyện THPT-TOP04-P03."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-C05",
@@ -131,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Căn bậc chẵn là giá trị không âm; phương trình tìm tất cả nghiệm."
     ],
     "rubric": null,
     "interaction": {
@@ -147,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhận 5 cho x²=25, thử −5; với căn bậc lẻ thử lập phương −3. Ôn TOP04-M02; luyện THPT-TOP04-P02."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P01",
@@ -161,7 +166,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Cộng hai số mũ khi nhân cùng cơ số dương."
     ],
     "rubric": null,
     "interaction": {
@@ -177,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhân hai số mũ, phân biệt a^p·a^q với (a^p)^q. Ôn TOP04-M04; luyện THPT-G11-CHVI-B18-P04."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P02",
@@ -191,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Lấy căn bậc ba rồi lấy nghịch đảo."
     ],
     "rubric": null,
     "interaction": {
@@ -207,7 +213,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu trả 4 hoặc −4, thử 4³=64 rồi tính 1/4. Ôn TOP04-M02; luyện THPT-G11-CHVI-B18-C01."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P03",
@@ -221,7 +228,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Tìm căn bậc bốn của 16 trước."
     ],
     "rubric": null,
     "interaction": {
@@ -237,7 +244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy 16·3/4, kiểm 2⁴=16 rồi lập phương. Ôn TOP04-M02; luyện THPT-G11-CHVI-B18-C02."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P04",
@@ -251,7 +259,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Nhân hai số mũ trong lũy thừa của lũy thừa."
     ],
     "rubric": null,
     "interaction": {
@@ -267,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng hai số mũ, viết (a^p)^q=a^(pq), a>0. Ôn TOP04-M04; luyện THPT-G11-CHVI-B18-P01."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P05",
@@ -281,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Mỗi năm nhân 1,05 vào số vốn hiện có."
     ],
     "rubric": null,
     "interaction": {
@@ -297,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng 5% vốn ban đầu hai lần, lập bảng năm 0,1,2. Ôn TOP04-M17; luyện THPT-TOP04-P21."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P06",
@@ -311,7 +321,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Tính trực tiếp từng lũy thừa."
     ],
     "rubric": null,
     "interaction": {
@@ -327,7 +337,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu áp dụng cộng mũ cho phép cộng, so 4+8 với 4·8. Ôn TOP04-M04; luyện THPT-G11-CHVI-B18-P01."
   },
   {
     "item_id": "THPT-G11-CHVI-B18-P07",
@@ -341,7 +352,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 18 rồi tự thử trước khi mở lời giải."
+      "Đưa hệ số về đoạn [1;10), đếm số vị trí dịch dấu phẩy."
     ],
     "rubric": null,
     "interaction": {
@@ -357,7 +368,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu số mũ dương cho số nhỏ hơn 1, nhân thử hệ số với 10^m; kiểm lại giá trị và dạng chuẩn. Ôn TOP04-M01; luyện THPT-G11-CHVI-B18-C01."
   },
   {
     "item_id": "THPT-G11-CHVI-B19-C01",
@@ -371,7 +383,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+      "Tìm số mũ t để 5^t=125."
     ],
     "rubric": null,
     "interaction": {
@@ -387,7 +399,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu trả 25, thử lũy thừa của 5 thay vì chia 125/5. Ôn TOP04-M05; luyện THPT-G11-CHVI-B19-P03."
   },
   {
     "item_id": "THPT-G11-CHVI-B19-C02",
@@ -401,7 +414,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+      "Đổi logarit thành lũy thừa."
     ],
     "rubric": null,
     "interaction": {
@@ -417,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nghĩ logarit âm vô nghĩa, kiểm đối số 1/8 dương và 2^(−3)=1/8. Ôn TOP04-M05; luyện THPT-TOP04-P06."
   },
   {
     "item_id": "THPT-G11-CHVI-B19-C03",
@@ -431,7 +445,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+      "Mọi 2^x đều dương."
     ],
     "rubric": null,
     "interaction": {
@@ -447,7 +461,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận số âm làm đối số, thử giải 2^x=−4 và kiểm tập giá trị. Ôn TOP04-M06; luyện THPT-G11-CHVI-B19-P04."
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P01",
@@ -461,7 +476,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+      "Quy tắc thương cần từng đối số dương."
     ],
     "rubric": null,
     "interaction": {
@@ -477,7 +492,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu trừ 81−3, đổi về thương 81/3 rồi tìm số mũ. Ôn TOP04-M07; luyện THPT-TOP04-P09."
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P02",
@@ -491,7 +507,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+      "Gộp tổng hai log cùng cơ số thành log của tích."
     ],
     "rubric": null,
     "interaction": {
@@ -507,7 +523,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng đối số 8+4, kiểm 2^5=32. Ôn TOP04-M07; luyện THPT-G11-CHVI-B19-P01."
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P03",
@@ -521,7 +538,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+      "Viết 64 và √4 thành lũy thừa của 4."
     ],
     "rubric": null,
     "interaction": {
@@ -537,7 +554,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm log của căn bằng căn của log, đổi √4=4^(1/2). Ôn TOP04-M05; luyện THPT-TOP04-P10."
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P04",
@@ -551,7 +569,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+      "Xét dấu tích trước, rồi xét từng đối số khi tách log."
     ],
     "rubric": null,
     "interaction": {
@@ -567,7 +585,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ miền hai thừa số âm, thử x=−3 trong log tích và từng log riêng. Ôn TOP04-M06; luyện THPT-TOP04-P07."
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P05",
@@ -581,7 +600,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+      "Đổi cơ số bằng tỉ số hai lôgarit tự nhiên."
     ],
     "rubric": null,
     "interaction": {
@@ -597,7 +616,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo tử/mẫu, đặt t=log₂7 rồi lấy ln hai vế 2^t=7. Ôn TOP04-M08; luyện THPT-TOP04-P10."
   },
   {
     "item_id": "THPT-G11-CHVI-B19-P06",
@@ -611,7 +631,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 19 rồi tự thử trước khi mở lời giải."
+      "Lập 50·2^t=800 và chia 50."
     ],
     "rubric": null,
     "interaction": {
@@ -627,7 +647,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy 800/50 là số kỳ, tìm số mũ t sao cho 2^t=16. Ôn TOP04-M17; luyện THPT-TOP04-P21."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-C01",
@@ -641,7 +662,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+      "Kiểm miền số mũ, giá trị dương và x=0."
     ],
     "rubric": null,
     "interaction": {
@@ -657,21 +678,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho 0 thuộc tập giá trị, giải 5^x=0 và thấy bất khả. Ôn TOP04-M09; luyện THPT-TOP04-P12."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-C02",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
     "stem": "Hàm (1/5)^x đồng biến hay nghịch biến và tại sao?",
     "answer_key": "Nghịch biến trên ℝ.",
-    "worked_solution": "Mỗi khi x tăng 1, giá trị hàm nhân 1/5, tức giảm; 0<1/5<1.",
+    "worked_solution": "Với x₁<x₂, đặt d=x₂−x₁>0. Vì 0<1/5<1 nên (1/5)^d<1. Do đó f(x₂)=f(x₁)·(1/5)^d<f(x₁), do f(x₁)>0. Hàm nghịch biến trên ℝ, không chỉ tại các số mũ nguyên.",
     "skill_ids": [
       "G11-B20-EXP_MONOTONIC"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+      "So sánh hai giá trị tại x₁<x₂ bằng tỉ số."
     ],
     "rubric": null,
     "interaction": {
@@ -687,7 +709,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết luận tăng, kiểm (1/5)^0 và (1/5)^1; dùng tính nghịch biến với mọi số thực. Ôn TOP04-M10; luyện THPT-TOP04-P14."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-C03",
@@ -701,7 +724,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+      "Đối số của logarit phải dương."
     ],
     "rubric": null,
     "interaction": {
@@ -717,7 +740,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận x=2, thay vào log₃0; giữ x>2. Ôn TOP04-M11; luyện THPT-TOP04-P15."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-C04",
@@ -731,7 +755,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+      "Đổi chỗ hoành độ và tung độ qua y=x."
     ],
     "rubric": null,
     "interaction": {
@@ -747,7 +771,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu giữ (3,27), kiểm log₃27=3. Ôn TOP04-M12; luyện THPT-TOP04-P16."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-P01",
@@ -761,7 +786,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+      "Đổi logarit bằng −1 thành lũy thừa."
     ],
     "rubric": null,
     "interaction": {
@@ -777,7 +802,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu trả −2, kiểm 2^(−1)>0. Ôn TOP04-M11; luyện THPT-TOP04-P15."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-P02",
@@ -791,7 +817,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+      "So sánh số mũ; cơ số 3>1."
     ],
     "rubric": null,
     "interaction": {
@@ -807,7 +833,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo dấu, kiểm 3^(1/2)=√3<3. Ôn TOP04-M10; luyện THPT-TOP04-P14."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-P03",
@@ -821,7 +848,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+      "Tìm t sao cho (1/2)^t=2."
     ],
     "rubric": null,
     "interaction": {
@@ -837,21 +864,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho giá trị logarit phải dương, kiểm t=−1. Ôn TOP04-M11; luyện THPT-TOP04-P15."
   },
   {
     "item_id": "THPT-G11-CHVI-B20-P04",
     "content_version": "THPT-G11-CHVI-B18-B21-R01-POSTPASS",
-    "stem": "Mô hình N(t)=20·(3/2)^t, t≥0 (kỳ). Tính N(2) và giải thích tại sao theo t tăng thì N tăng.",
-    "answer_key": "45; N tăng vì cơ số 3/2>1.",
-    "worked_solution": "20·(3/2)²=45; mỗi kỳ lượng tăng theo hệ số 1,5 của kỳ trước (mô hình lý tưởng).",
+    "stem": "Mô hình N(t)=20·(3/2)^t với t≥0 (kỳ, xét t thực). (a) Tính N(2) và giải thích tính tăng. (b) Viết hàm ngược t theo N và nêu miền của hàm ngược trong mô hình.",
+    "answer_key": "N(2)=45; N tăng. t=log_(3/2)(N/20), với N≥20.",
+    "worked_solution": "N(2)=20·(3/2)²=45. Vì cơ số 3/2>1 và hệ số 20>0, N tăng theo t. N/20=(3/2)^t nên t=log_(3/2)(N/20). Do t≥0 và N(0)=20, tập giá trị của mô hình liên tục là [20,+∞), chính là miền của hàm ngược; thử N=45 cho t=2. Nếu chỉ cập nhật ở kỳ nguyên, chỉ xét các N tương ứng với t nguyên.",
     "skill_ids": [
       "G11-B20-INVERSE_GRAPH"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 20 rồi tự thử trước khi mở lời giải."
+      "Tính N(2), sau đó giải N=20(3/2)^t theo t."
     ],
     "rubric": null,
     "interaction": {
@@ -867,7 +895,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho mọi N thực là đầu vào hàm ngược, kiểm N≥20 khi t≥0. Ôn TOP04-M12; luyện THPT-TOP04-P16."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-C01",
@@ -881,7 +910,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Viết 16=2⁴."
     ],
     "rubric": null,
     "interaction": {
@@ -897,7 +926,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ +1 ở số mũ, giải x+1=4 rồi thử lại. Ôn TOP04-M13; luyện THPT-G11-CHVI-B21-P01."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-C02",
@@ -911,7 +941,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Ghi x−2>0, đổi log thành lũy thừa."
     ],
     "rubric": null,
     "interaction": {
@@ -927,7 +957,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ điều kiện, thử x=11 vào đối số và phương trình gốc. Ôn TOP04-M14; luyện THPT-G11-CHVI-B21-P02."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-C03",
@@ -941,7 +972,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Cơ số 1/2 nghịch biến."
     ],
     "rubric": null,
     "interaction": {
@@ -957,7 +988,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn x>2, thử x=1 và x=3. Ôn TOP04-M15; luyện THPT-G11-CHVI-B21-P03."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-C04",
@@ -971,7 +1003,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Đặt x>1; cơ số 2 đồng biến."
     ],
     "rubric": null,
     "interaction": {
@@ -987,7 +1019,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ điều kiện, kiểm logarit tại x=1 không xác định. Ôn TOP04-M16; luyện THPT-G11-CHVI-B21-P04."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P01",
@@ -1001,7 +1034,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Viết 1/25=5^(−2)."
     ],
     "rubric": null,
     "interaction": {
@@ -1017,7 +1050,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu viết mũ 2 thay −2, kiểm nghịch đảo rồi giải 2x−1=−2. Ôn TOP04-M13; luyện THPT-G11-CHVI-B21-C01."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P02",
@@ -1031,7 +1065,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "ĐK x+2>0; đổi sang (1/2)^(−2)."
     ],
     "rubric": null,
     "interaction": {
@@ -1047,7 +1081,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy x+2=1/4, tính nghịch đảo của (1/2)^2. Ôn TOP04-M14; luyện THPT-G11-CHVI-B21-C02."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P03",
@@ -1061,7 +1096,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Cơ số 1/3 nhỏ hơn 1, đảo chiều khi so sánh mũ."
     ],
     "rubric": null,
     "interaction": {
@@ -1077,7 +1112,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn x≤2, thử x=3 và kiểm bất phương trình. Ôn TOP04-M15; luyện THPT-G11-CHVI-B21-C03."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P04",
@@ -1091,7 +1127,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Ghi x>1 trước khi đảo chiều so sánh."
     ],
     "rubric": null,
     "interaction": {
@@ -1107,7 +1143,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ghi x<5 mà quên cận dưới, thử x=0 và loại log không xác định. Ôn TOP04-M16; luyện THPT-TOP04-P20."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P05",
@@ -1121,7 +1158,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Giao hai điều kiện đối số dương trước."
     ],
     "rubric": null,
     "interaction": {
@@ -1137,7 +1174,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận x=3 từ hai đối số bằng nhau, thay vào cả hai và thấy đều âm. Ôn TOP04-M18; luyện THPT-TOP04-P22."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P06",
@@ -1151,7 +1189,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Phân biệt vượt 121 với đạt 121; n nguyên."
     ],
     "rubric": null,
     "interaction": {
@@ -1167,7 +1205,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn năm 2, tính 100·1,1²=121 rồi kiểm năm 3. Ôn TOP04-M17; luyện THPT-TOP04-P21."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P07",
@@ -1181,7 +1220,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Xét tập giá trị của hàm 2^x."
     ],
     "rubric": null,
     "interaction": {
@@ -1197,7 +1236,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cố lấy log₂(−1), kiểm đối số và tính dương của hàm mũ. Ôn TOP04-M13; luyện THPT-TOP04-P17."
   },
   {
     "item_id": "THPT-G11-CHVI-B21-P08",
@@ -1211,7 +1251,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ giải của Bài 21 rồi tự thử trước khi mở lời giải."
+      "Logarit trả lại số mũ; phân biệt miền và tập giá trị của hàm ngược."
     ],
     "rubric": null,
     "interaction": {
@@ -1227,7 +1267,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho log₂x có miền ℝ, thử x=−1; kiểm log₂(2^3)=3. Ôn TOP04-M18; luyện THPT-TOP04-P16."
   },
   {
     "item_id": "THPT-G11-B18-KFT01",
