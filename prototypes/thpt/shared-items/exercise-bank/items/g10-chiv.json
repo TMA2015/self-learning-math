@@ -4,7 +4,7 @@
     "content_version": "THPT-G10-CHIV-B07-B08-R01",
     "stem": "Theo định nghĩa, vectơ $\\overrightarrow{AB}$ có điểm đầu và điểm cuối là gì?",
     "answer_key": "B",
-    "worked_solution": "Vectơ có điểm đầu A và điểm cuối B; đổi thứ tự thành $\\overrightarrow{BA}$ sẽ đổi hướng.",
+    "worked_solution": "Vectơ có điểm đầu A và điểm cuối B. Nếu A≠B, đổi thứ tự thành $\\overrightarrow{BA}$ cho vectơ đối, ngược hướng; nếu A=B thì cả hai là vectơ-không.",
     "options": [
       "A. Đầu B, cuối A",
       "B. Đầu A, cuối B",
@@ -34,7 +34,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo điểm đầu/cuối, vẽ mũi tên A→B và kiểm A≠B. Ôn Bài 7 mục 2.1.1; luyện THPT-G10-CHIV-TRY01."
   },
   {
     "item_id": "THPT-G10-B07-C02",
@@ -71,7 +72,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ so độ dài, kiểm thêm chiều hai mũi tên. Ôn Bài 7 mục 2.2.2; luyện THPT-G10-CHIV-TRY02."
   },
   {
     "item_id": "THPT-G10-B07-P01",
@@ -101,7 +103,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy độ dài âm khi đảo chiều, dùng khoảng cách giữa hai đầu mút. Ôn Bài 7 mục 2.1.1; luyện THPT-G10-CHIV-TRY02."
   },
   {
     "item_id": "THPT-G10-B07-P02",
@@ -138,7 +141,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn CD thay DC, đánh dấu chiều hai cạnh đối. Ôn Bài 7 mục 2.2.2; luyện THPT-G10-CHIV-TRY02."
   },
   {
     "item_id": "THPT-G10-B07-P03",
@@ -168,7 +172,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn DC, so chiều của mũi tên với AB. Ôn Bài 7 mục 2.2.1; luyện THPT-G10-CHIV-TRY02."
   },
   {
     "item_id": "THPT-G10-B07-P04",
@@ -205,7 +210,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu gán hướng vật lý riêng cho vectơ-không, tách quy ước khỏi hướng hình học. Ôn Bài 7 mục 2.1.2; luyện THPT-G10-CHIV-TRY11."
   },
   {
     "item_id": "THPT-G10-B07-P05",
@@ -242,7 +248,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết luận bằng nhau chỉ vì cùng hướng, kiểm cả hai độ dài. Ôn Bài 7 mục 2.2.2; luyện THPT-G10-CHIV-TRY02."
   },
   {
     "item_id": "THPT-G10-B07-P06",
@@ -272,7 +279,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng quãng đường thành độ dời, nối thẳng điểm đầu/cuối và dùng Pitago. Ôn Bài 7 mục 2.2.3; luyện THPT-G10-CHIV-TRY06."
   },
   {
     "item_id": "THPT-G10-B08-C01",
@@ -309,7 +317,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ra CA, nối đuôi–đầu và kiểm điểm xuất phát. Ôn Bài 8 mục 2.1.1; luyện THPT-G10-CHIV-TRY06."
   },
   {
     "item_id": "THPT-G10-B08-C02",
@@ -346,7 +355,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn BD, kiểm đường chéo xuất phát từ gốc chung A. Ôn Bài 8 mục 2.1.2; luyện THPT-G10-CHIV-TRY07."
   },
   {
     "item_id": "THPT-G10-B08-P01",
@@ -376,21 +386,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tổng khác 0, theo A→B→A để thấy đầu cuối trùng nhau. Ôn Bài 8 mục 2.1.3; luyện THPT-G10-CHIV-TRY04."
   },
   {
     "item_id": "THPT-G10-B08-P02",
     "content_version": "THPT-G10-CHIV-B07-B08-R01",
-    "stem": "Rút gọn $\\overrightarrow{AB}-\\overrightarrow{AC}$.",
-    "answer_key": "$\\overrightarrow{CB}$",
-    "worked_solution": "$\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{CA}=\\overrightarrow{CB}$ theo quy tắc ba điểm (CA + AB = CB).",
+    "stem": "Với ba điểm M,N,P bất kì, rút gọn $\\overrightarrow{MP}-\\overrightarrow{MN}$ và giải thích chiều của vectơ kết quả.",
+    "answer_key": "$\\overrightarrow{NP}$",
+    "worked_solution": "$\\overrightarrow{MP}-\\overrightarrow{MN}=\\overrightarrow{NM}+\\overrightarrow{MP}=\\overrightarrow{NP}$. Vectơ hiệu đi từ điểm cuối N của vectơ bị trừ tới điểm cuối P của vectơ đứng trước.",
     "skill_ids": [
       "G10-B08-OPPOSITE-SUBTRACTION"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Trừ một vectơ tức cộng với vectơ đối; thử đảo thứ tự phép cộng."
+      "Đổi phép trừ thành cộng vectơ đối, rồi nối mũi tên."
     ],
     "rubric": null,
     "interaction": {
@@ -406,7 +417,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo chiều hiệu, nối từ cuối vectơ bị trừ đến cuối vectơ đứng trước. Ôn Bài 8 mục 2.2.2; luyện THPT-G10-CHIV-TRY08."
   },
   {
     "item_id": "THPT-G10-B08-P03",
@@ -436,7 +448,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu còn AD, kiểm chặng DA cuối. Ôn Bài 8 mục 2.1.1; luyện THPT-G10-CHIV-TRY04."
   },
   {
     "item_id": "THPT-G10-B08-P04",
@@ -473,14 +486,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho MA=MB, vẽ hai mũi tên đối nhau. Ôn Bài 8 mục 2.2.3; luyện THPT-G10-CHIV-TRY09."
   },
   {
     "item_id": "THPT-G10-B08-P05",
     "content_version": "THPT-G10-CHIV-B07-B08-R01",
     "stem": "Cho G là trọng tâm tam giác ABC. Rút gọn $\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}$.",
     "answer_key": "$\\vec0$",
-    "worked_solution": "Tính chất trọng tâm: $\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}=\\vec0$. Cần phân biệt với tổng các vectơ xuất phát từ A.",
+    "worked_solution": "Gọi M là trung điểm BC. Ta có $\\overrightarrow{GB}+\\overrightarrow{GC}=2\\overrightarrow{GM}$ (vì $\\overrightarrow{MB}+\\overrightarrow{MC}=\\vec0$). Trọng tâm G nằm giữa A,M và AG=2GM nên $\\overrightarrow{GA}=-2\\overrightarrow{GM}$. Cộng lại được $\\vec0$.",
     "skill_ids": [
       "G10-B08-CENTROID"
     ],
@@ -503,21 +517,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng ba độ dài, dùng M trung điểm BC và AG=2GM. Ôn Bài 8 mục 2.2.3; luyện THPT-G10-CHIV-TRY10."
   },
   {
     "item_id": "THPT-G10-B08-P06",
     "content_version": "THPT-G10-CHIV-B07-B08-R01",
-    "stem": "Hai lực có độ lớn 3 N và 4 N tác dụng tại cùng điểm, **vuông góc nhau**. Độ lớn của hợp lực bằng bao nhiêu N?",
-    "answer_key": "5 N",
-    "worked_solution": "Theo quy tắc hình bình hành, đường chéo là vectơ hợp lực. Với góc vuông, độ dài đường chéo là $\\sqrt{3^2+4^2}=5\\,\\mathrm N$. Không cộng độ lớn thành 7 N vì hai lực không cùng hướng.",
+    "stem": "Hai lực có độ lớn 6 N và 8 N cùng tác dụng tại một điểm, tạo góc 60°. Tính độ lớn hợp lực.",
+    "answer_key": "$2\\sqrt{37}$ N",
+    "worked_solution": "Theo quy tắc hình bình hành, hợp lực là đường chéo xuất phát từ điểm đặt chung. Dùng định lí côsin trong tam giác ghép nối hai lực (góc trong 120°): $R^2=6^2+8^2-2\\cdot6\\cdot8\\cos120^\\circ=148$. Vậy $R=2\\sqrt{37}$ N, không phải 14 N.",
     "skill_ids": [
       "G10-B08-PARALLELOGRAM"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Quy tắc hình bình hành cho tổng vectơ; tính độ dài bằng hình học vuông."
+      "Góc trong tam giác nối đuôi–đầu bù với góc giữa hai lực; dùng định lí côsin."
     ],
     "rubric": null,
     "interaction": {
@@ -533,7 +548,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng độ lớn hai lực, dựng hình bình hành và kiểm góc giữa hai lực. Ôn Bài 8 mục 2.1.2; luyện THPT-G10-CHIV-TRY07."
   },
   {
     "item_id": "THPT-G10-B09-C01",
@@ -570,7 +586,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu độ dài âm, dùng |k| để tính độ dài và dấu k để xét hướng. Ôn Bài 9 mục 2.1; luyện THPT-G10-CHIV-TRY12."
   },
   {
     "item_id": "THPT-G10-B09-C02",
@@ -607,7 +624,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu giữ nguyên vectơ khi nhân 0, tính |0|·|a|. Ôn Bài 9 mục 2.1; luyện THPT-G10-CHIV-TRY11."
   },
   {
     "item_id": "THPT-G10-B09-P01",
@@ -637,7 +655,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng hệ số vào độ dài, dùng |ka|=|k||a|. Ôn Bài 9 mục 2.1; luyện THPT-G10-CHIV-TRY12."
   },
   {
     "item_id": "THPT-G10-B09-P02",
@@ -667,7 +686,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên phân phối, khai triển rồi gom riêng từng vectơ. Ôn Bài 9 mục 2.2; luyện THPT-G10-CHIV-TRY13."
   },
   {
     "item_id": "THPT-G10-B09-P03",
@@ -697,7 +717,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mất dấu âm, viết AM trước rồi đảo thành MA. Ôn Bài 9 mục 2.1; luyện THPT-G10-CHIV-TRY14."
   },
   {
     "item_id": "THPT-G10-B09-P04",
@@ -734,7 +755,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 2/3 cho tổng AB+AC, tách hai bước trung điểm và trọng tâm. Ôn Bài 9 mục 2.2; luyện THPT-G10-CHIV-TRY15."
   },
   {
     "item_id": "THPT-G10-B09-P05",
@@ -764,7 +786,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm ngược hướng với khác phương, xét dấu k và |k|. Ôn Bài 9 mục 2.1; luyện THPT-G10-CHIV-TRY14."
   },
   {
     "item_id": "THPT-G10-B09-P06",
@@ -794,7 +817,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy 9 km làm độ dời, cộng hệ số có dấu trước. Ôn Bài 9 mục 2.2; luyện THPT-G10-CHIV-TRY06."
   },
   {
     "item_id": "THPT-G10-B10-C01",
@@ -831,7 +855,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy đầu trừ cuối, viết xB−xA và yB−yA. Ôn Bài 10 mục 2.1; luyện THPT-G10-CHIV-TRY16."
   },
   {
     "item_id": "THPT-G10-B10-C02",
@@ -861,7 +886,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng 5+12, dùng Pitago cho hai thành phần. Ôn Bài 10 mục 2.1; luyện THPT-G10-CHIV-TRY18."
   },
   {
     "item_id": "THPT-G10-B10-P01",
@@ -891,7 +917,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu trừ sai dấu, viết riêng 2u rồi trừ từng tọa độ. Ôn Bài 10 mục 2.2; luyện THPT-G10-CHIV-TRY17."
   },
   {
     "item_id": "THPT-G10-B10-P02",
@@ -921,7 +948,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy A trừ AB, giải xB−xA=4 và yB−yA=3. Ôn Bài 10 mục 2.1; luyện THPT-G10-CHIV-TRY16."
   },
   {
     "item_id": "THPT-G10-B10-P03",
@@ -951,7 +979,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia nhầm 3, lấy trung bình đúng hai tọa độ. Ôn Bài 10 mục ví dụ 3.3; luyện THPT-G10-CHIV-TRY20."
   },
   {
     "item_id": "THPT-G10-B10-P04",
@@ -981,14 +1010,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy trung điểm thay trọng tâm, cộng đủ ba tọa độ rồi chia 3. Ôn Bài 10 mục ví dụ 3.3; luyện THPT-G10-CHIV-TRY20."
   },
   {
     "item_id": "THPT-G10-B10-P05",
     "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Với $\\vec u=(2;-3)$, $\\vec v=(-4;6)$, chọn phát biểu đúng.",
+    "stem": "Với $\\vec u=(0;-3)$, $\\vec v=(0;6)$, chọn phát biểu đúng.",
     "answer_key": "B",
-    "worked_solution": "$\\vec v=-2\\vec u$ với $\\vec u\\ne\\vec0$, vậy cùng phương và ngược hướng.",
+    "worked_solution": "$\\vec v=-2\\vec u$ với $\\vec u\\ne\\vec0$, vậy cùng phương và ngược hướng. Không được chia hai hoành độ 0 cho nhau; kiểm hệ số −2 trên cả hai tọa độ.",
     "options": [
       "A. Không cùng phương",
       "B. Cùng phương và ngược hướng",
@@ -1018,7 +1048,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia cho tọa độ 0, dùng v=ku hoặc tích chéo, rồi xét dấu k. Ôn Bài 10 mục 2.2; luyện THPT-G10-CHIV-TRY19."
   },
   {
     "item_id": "THPT-G10-B10-P06",
@@ -1048,7 +1079,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng khoảng cách theo hai trục, lấy hiệu tọa độ rồi dùng Pitago. Ôn Bài 10 mục ví dụ 3.1; luyện THPT-G10-CHIV-TRY18."
   },
   {
     "item_id": "THPT-G10-B11-C01",
@@ -1078,7 +1110,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhân chéo hoặc trả lời vectơ, nhân từng cặp tọa độ rồi cộng thành số. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY22."
   },
   {
     "item_id": "THPT-G10-B11-C02",
@@ -1115,21 +1148,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết luận vuông góc chỉ vì tích bằng 0, kiểm hai vectơ khác không. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY23."
   },
   {
     "item_id": "THPT-G10-B11-P01",
     "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Cho $|\\vec u|=5$, $|\\vec v|=4$ và góc giữa chúng $60^\\circ$. Tính $\\vec u\\cdot\\vec v$.",
-    "answer_key": "10",
-    "worked_solution": "$5\\cdot4\\cos60^\\circ=20/2=10$.",
+    "stem": "Cho $|\\vec u|=6$, $|\\vec v|=5$ và góc giữa chúng $120^\\circ$. Tính tích vô hướng và giải thích dấu.",
+    "answer_key": "−15",
+    "worked_solution": "$\\vec u\\cdot\\vec v=6\\cdot5\\cos120^\\circ=30\\cdot(-1/2)=-15$. Tích âm vì góc giữa hai vectơ là góc tù, không phải do độ dài âm.",
     "skill_ids": [
       "G10-B11-GEOMETRIC_DOT"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Nhớ $\\cos60^\\circ=1/2$."
+      "Góc tù có côsin âm; dùng công thức tích vô hướng."
     ],
     "rubric": null,
     "interaction": {
@@ -1145,7 +1179,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho tích luôn dương, kiểm dấu côsin của góc giữa hai vectơ. Ôn Bài 11 mục 2.2; luyện THPT-G10-CHIV-TRY21."
   },
   {
     "item_id": "THPT-G10-B11-P02",
@@ -1175,7 +1210,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên điều kiện khác 0, kiểm tung độ u và tọa độ v trước. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY23."
   },
   {
     "item_id": "THPT-G10-B11-P03",
@@ -1205,14 +1241,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên chia tích độ dài, tính hai độ dài riêng rồi kiểm cos∈[−1;1]. Ôn Bài 11 mục 2.2–2.3; luyện THPT-G10-CHIV-TRY21."
   },
   {
     "item_id": "THPT-G10-B11-P04",
     "content_version": "THPT-G10-CHIV-B09-B11-R01",
-    "stem": "Cho $A(0;0),B(4;1),C(2;3)$. Tính $\\overrightarrow{AB}\\cdot\\overrightarrow{AC}$.",
+    "stem": "Cho $A(1;-2),B(5;-1),C(3;1)$. Tính $\\overrightarrow{AB}\\cdot\\overrightarrow{AC}$.",
     "answer_key": "11",
-    "worked_solution": "$\\overrightarrow{AB}=(4;1)$, $\\overrightarrow{AC}=(2;3)$, tích bằng $4\\cdot2+1\\cdot3=11$.",
+    "worked_solution": "$\\overrightarrow{AB}=(5-1;-1-(-2))=(4;1)$, $\\overrightarrow{AC}=(3-1;1-(-2))=(2;3)$. Tích bằng $4\\cdot2+1\\cdot3=11$.",
     "skill_ids": [
       "G10-B11-COORDINATE_DOT"
     ],
@@ -1235,7 +1272,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy tọa độ điểm thay vectơ, tính B−A và C−A trước. Ôn Bài 11 mục 2.3; luyện THPT-G10-CHIV-TRY22."
   },
   {
     "item_id": "THPT-G10-B11-P05",
@@ -1265,7 +1303,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng tích hai độ lớn, chỉ lấy thành phần độ dời theo hướng lực và kiểm dấu. Ôn Bài 11 mục Công của lực; luyện THPT-G10-CHIV-TRY24."
   },
   {
     "item_id": "THPT-G10-B11-P06",
@@ -1295,7 +1334,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên điều kiện hai cạnh khác 0, kiểm AB,AC và tích vô hướng trước khi tính diện tích. Ôn Bài 11 mục ví dụ 3.3; luyện THPT-G10-CHIV-TRY23."
   },
   {
     "item_id": "THPT-G10-B09-P07",
