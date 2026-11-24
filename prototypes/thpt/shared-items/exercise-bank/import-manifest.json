@@ -87,7 +87,8 @@
     "79ea13417b34c5e2f436d35a906cf25bd5fb126d",
     "e5cd5bbc4332322bbb4a0e0a2257d72f994f0bc7",
     "4b6ab3755ff8d5c074f4ffa7d7a283fa8799bfb7",
-    "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4"
+    "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+    "0603fbb2b61374fcd49eff3c119197cff3fa77e4"
   ],
   "projection_sources": [
     {
@@ -979,23 +980,28 @@
       "path": "docs/thpt-preview/sgk/chuong-vii/bai-22.md",
       "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+      "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 1734,
+    "formative_items": 1740,
     "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3832,
+    "placements": 3838,
     "projection_field_differences": 45,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 647,
+    "legacy_combined_answer_items": 653,
     "topic_knowledge_first_try": 170,
-    "sgk_knowledge_first_try": 115
+    "sgk_knowledge_first_try": 121
   },
-  "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried",
+  "scope": "CD01–22, all 24 SGK chapters, public G11/G12 supplements and 170 topic knowledge first-try IDs; SGK knowledge inventory and whole-bank reconciliation pending; G10 ChIX B26–B27 first try imported; G10 B01–B06 first try imported; G10 B07–B14 first try imported; G10 B15–B18 and B23–B25 first try inventoried; G10 all 27 Knowledge pages inventoried; G11 B01 knowledge first try imported",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -2086,7 +2092,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "647 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
+  "legacy_combined_answer_note": "653 combined-answer records retain full original answer/solution text; answer_key=null; manual audit pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -2368,7 +2374,7 @@
         "public_blob": "bde0820d157a5169d3cf365c846cf11169d40035"
       }
     ],
-    "sgk_inventory": "G10_ALL_27_PAGES_INVENTORIED_G11_G12_PENDING",
+    "sgk_inventory": "G10_COMPLETE_G11_B01_IMPORTED_G11_B02_B33_UNKEYED_INVENTORY_PENDING_G12_PENDING",
     "sgk_pages": [
       {
         "grade": 10,
@@ -2623,6 +2629,16 @@
         "markers": 8,
         "imported": 2,
         "reused": 6
+      },
+      {
+        "grade": 11,
+        "chapter": "I",
+        "lesson": "B01",
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+        "blob": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+        "markers": 6,
+        "imported": 6,
+        "reused": 0
       }
     ],
     "context_review": []
