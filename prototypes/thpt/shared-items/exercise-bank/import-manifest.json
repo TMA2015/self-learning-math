@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 589,
+    "legacy_combined_answer_items": 565,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_120_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_144_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 120 manually verified and key separated at checkpoints 29–31; 589 remain combined, answer_key=null. Preserve source and solution except explicit scoped author clarifications; self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 144 manually verified and key separated at checkpoints 29–32; 565 remain combined, answer_key=null. Preserve source and solution except explicit scoped author clarifications; self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 589,
+      "remaining_combined_answer_items": 565,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 120,
-        "remaining_count": 589,
+        "reviewed_count": 144,
+        "remaining_count": 565,
         "batches": [
           {
             "checkpoint": 29,
@@ -7410,6 +7410,239 @@
               "G10-CHVI-TRY03 graph membership skill pending; B15_OUT_03 preserved; TRY02 domain skill mapped, range aspect retained in original outcome; do not invent skill IDs.",
               "B18-P03 conditions both radicands and filter −4; B18-C02 verify −4 and −3; B17-P03 strict inequality requires Δ<0; all keys independently checked.",
               "B16-P04 proof by explicit preimage rather than relying on later continuity theorem; no full S1/PED or independent verdict."
+            ]
+          },
+          {
+            "checkpoint": 32,
+            "baseline": "95a3da7247ad1c2950e774c33dc3760e3e21033c",
+            "reviewed_candidate": "bf29418563926df96a2eaba0fb552e7145b9b6e5",
+            "scope": "G10 SGK B19–B27: 24 remaining combined-answer records in chapter VII–IX shards (2 conics, 12 combinatorics, 10 probability). Exact stem/solution match in six historical source blobs, independent calculation, 24 separated keys and 23 existing skill mappings; four scoped clarifications.",
+            "shards": [
+              {
+                "shard": "g10-chvii",
+                "before": "1dc0e6b2765c4b6104d5456988bf6f1fd0e0dbb4",
+                "after": "f40ca3d160f674514543b546f0be5976830b5ed6",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G10-CHVII-TRY-ELLIPSE-TR01",
+                    "source_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+                    "answer_key": "x²/36+y²/16=1; y≥0, |x|≤6; tại x=3, y=2√3 m≈3,464 m.",
+                    "skill_ids": [
+                      "G10-B22-ELLIPSE_PARAMETERS"
+                    ],
+                    "content_clarification": "Explicit upward Oy for upper half-ellipse."
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVII-TRY-HYPERBOLA-TR01",
+                    "source_blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+                    "answer_key": "2a=20 km; c=30 km; b²=800 km²; 0<20<60 nên hypebol không suy biến; chưa chọn được nhánh.",
+                    "skill_ids": [
+                      "G10-B22-HYPERBOLA_PARAMETERS"
+                    ],
+                    "content_clarification": "Restore receiver P, distinguish signal arrival from transmitter; explain branch by signed distance difference."
+                  }
+                ],
+                "unchanged_count": 55
+              },
+              {
+                "shard": "g10-chviii",
+                "before": "00d303ff975efcc99465e439319c4c6edf81db00",
+                "after": "6eff0184aec3ccdf3f7a824ed3170aebd69bb51d",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY01",
+                    "source_blob": "a5512d5a206d89808863257d5094e242e28d91c9",
+                    "answer_key": "8 lựa chọn.",
+                    "skill_ids": [
+                      "COUNT_ADDITION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY02",
+                    "source_blob": "a5512d5a206d89808863257d5094e242e28d91c9",
+                    "answer_key": "12 suất.",
+                    "skill_ids": [
+                      "COUNT_MULTIPLICATION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY03",
+                    "source_blob": "a5512d5a206d89808863257d5094e242e28d91c9",
+                    "answer_key": "9 số: 10,12,13,20,21,23,30,31,32.",
+                    "skill_ids": [
+                      "COUNT_MULTIPLICATION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY04",
+                    "source_blob": "a5512d5a206d89808863257d5094e242e28d91c9",
+                    "answer_key": "5 số: 10,12,20,30,32.",
+                    "skill_ids": [
+                      "COUNT_CASES_NO_REPEAT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY05",
+                    "source_blob": "dbf48cdd16811a2581be679bdc86fc6ca15fe311",
+                    "answer_key": "12 cách.",
+                    "skill_ids": [
+                      "PERMUTATION_ADJACENT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY06",
+                    "source_blob": "dbf48cdd16811a2581be679bdc86fc6ca15fe311",
+                    "answer_key": "20 cách.",
+                    "skill_ids": [
+                      "ARRANGEMENT_WITH_ROLES"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY07",
+                    "source_blob": "dbf48cdd16811a2581be679bdc86fc6ca15fe311",
+                    "answer_key": "10 nhóm.",
+                    "skill_ids": [
+                      "COMBINATION"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY08",
+                    "source_blob": "dbf48cdd16811a2581be679bdc86fc6ca15fe311",
+                    "answer_key": "40 nhóm.",
+                    "skill_ids": [
+                      "COMBINATION_TWO_GROUPS"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY09",
+                    "source_blob": "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d",
+                    "answer_key": "10.",
+                    "skill_ids": [
+                      "BINOMIAL_COEFFICIENT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY10",
+                    "source_blob": "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d",
+                    "answer_key": "−8.",
+                    "skill_ids": [
+                      "BINOMIAL_NEGATIVE_COEFF"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY11",
+                    "source_blob": "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d",
+                    "answer_key": "81.",
+                    "skill_ids": [
+                      "BINOMIAL_CONSTANT_TERM",
+                      "G10-B25-CONSTANT_TERM"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHVIII-TRY12",
+                    "source_blob": "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d",
+                    "answer_key": "81.",
+                    "skill_ids": [],
+                    "content_clarification": "Explain coefficient sum via substitution x=1."
+                  }
+                ],
+                "unchanged_count": 25
+              },
+              {
+                "shard": "g10-chix",
+                "before": "55cdeab3779f68a39d7101eefa5c949864270e57",
+                "after": "78fd5980536800d2989b9dea615d2e4783df4e95",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY01",
+                    "source_blob": "6b695c41cff31490630b380522752636fc57f8b7",
+                    "answer_key": "Ω={(1,N),(1,S),(2,N),(2,S),(3,N),(3,S)}; n(Ω)=6.",
+                    "skill_ids": [
+                      "G10-B26-EXPERIMENT_SAMPLE_SPACE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY02",
+                    "source_blob": "6b695c41cff31490630b380522752636fc57f8b7",
+                    "answer_key": "Ω={1,2,3,4,5,6,7}; A={2,3,5,7}; P(A)=4/7.",
+                    "skill_ids": [
+                      "G10-B26-EVENT_SUBSET"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY03",
+                    "source_blob": "6b695c41cff31490630b380522752636fc57f8b7",
+                    "answer_key": "P(X)=2/5; hai nhãn không đồng khả năng.",
+                    "skill_ids": [
+                      "G10-B26-CLASSICAL_RATIO"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY04",
+                    "source_blob": "6b695c41cff31490630b380522752636fc57f8b7",
+                    "answer_key": "2/3.",
+                    "skill_ids": [
+                      "G10-B26-COMPLEMENT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY05",
+                    "source_blob": "6b695c41cff31490630b380522752636fc57f8b7",
+                    "answer_key": "(a) Chưa đủ căn cứ vì chưa biết ba thông báo đồng khả năng. (b) P=1/200=0,005>0; vẫn có thể trúng.",
+                    "skill_ids": [
+                      "G10-B26-SCOPE_SMALL_PROBABILITY"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY06",
+                    "source_blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+                    "answer_key": "3/5.",
+                    "skill_ids": [
+                      "G10-B27-COUNTING_OUTCOMES"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY07",
+                    "source_blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+                    "answer_key": "3/5.",
+                    "skill_ids": [
+                      "G10-B27-TREE_SEQUENCE"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY08",
+                    "source_blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+                    "answer_key": "7/8.",
+                    "skill_ids": [
+                      "G10-B27-COMPLEMENT_PROBABILITY"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY09",
+                    "source_blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+                    "answer_key": "4/25.",
+                    "skill_ids": [
+                      "G10-B27-MULTISTEP_CONTEXT"
+                    ]
+                  },
+                  {
+                    "item_id": "THPT-G10-CHIX-TRY10",
+                    "source_blob": "209de8ae01c8654e55e07648c76b7d98396f7393",
+                    "answer_key": "Sai; xác suất đúng 1/6.",
+                    "skill_ids": [
+                      "G10-B27-EQUIPROBABLE_MODELLING"
+                    ],
+                    "content_clarification": "Add independence, required for equiprobable ordered pairs."
+                  }
+                ],
+                "unchanged_count": 14
+              }
+            ],
+            "notes": [
+              "Ellipse a=6,b=4; y=2sqrt(3) at x=3. Hyperbola |PA−PB|=20, c=30, b²=800, 0<20<60, branch undetermined. Restore receiver P and arrival-order meaning from same source context.",
+              "CHIX TRY10: fair distinguishable dice alone do not establish independence, explicitly state independent rolls. Ordered pairs 36 equiprobable, 6 diagonal, P=1/6.",
+              "CHVIII TRY12 coefficient sum 81; original outcome G10-B25-COEFFICIENT_SUM preserved, skill mapping pending (do not conflate with odd coefficient sum).",
+              "G10 chapter I–IX shards have 144 combined-answer records audited; scope excludes other bank shards, separate-answer records, S1 re-read, full outcome coverage and PED/integration review."
             ]
           }
         ]
