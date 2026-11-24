@@ -22,7 +22,7 @@
 
     Hãy xét hai hộp bóng riêng biệt. Hộp thứ nhất có \(6\) bóng trắng và \(4\) bóng đen; hộp thứ hai có \(1\) bóng trắng và \(7\) bóng đen. Long lấy đều một bóng từ hộp thứ nhất, Hải lấy đều một bóng từ hộp thứ hai. Ta gọi \(A\) là “Long lấy bóng trắng”, \(B\) là “Hải lấy bóng đen”.
 
-    Xác suất của \(A\) là \(6/10\), của \(B\) là \(7/8\). Vì lấy bóng ở **hai hộp khác nhau**, kết quả trong hộp của Long không làm thay đổi màu sắc hay số bóng trong hộp của Hải. Hai biến cố này **độc lập**.
+    Xác suất của \(A\) là \(6/10\), của \(B\) là \(7/8\). Giả sử Long và Hải chọn ngẫu nhiên độc lập, mỗi bóng trong hộp của mình có cơ hội như nhau. Khi đó kết quả lấy bóng của Long không thay đổi xác suất lấy bóng của Hải; hai biến cố này **độc lập**.
 
     Để biết cơ hội cả hai cùng đạt yêu cầu, ta có thể tưởng tượng một bảng gồm mọi cặp bóng có thể lấy: mỗi bóng trong hộp thứ nhất ghép với mỗi bóng trong hộp thứ hai. Có tất cả \(10\cdot8=80\) cặp đồng khả năng; trong đó \(6\cdot7=42\) cặp gồm bóng trắng ở hộp thứ nhất và bóng đen ở hộp thứ hai. Vì vậy
 
@@ -36,7 +36,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVIII-B30-01_R00.svg" alt="Sơ đồ cây hai phép thử độc lập: lần một thành công 3/4 hoặc thất bại 1/4; lần hai thành công 2/3 hoặc thất bại 1/3; bốn kết quả cuối có xác suất 1/2, 1/4, 1/6 và 1/12"><figcaption><strong>Đọc hình:</strong> từ “Bắt đầu”, đi theo một nhánh của lượt một rồi một nhánh của lượt hai. Hai nhánh của lượt hai đều mang xác suất \(2/3\) (đạt) và \(1/3\) (trượt) vì độc lập. Đi hết một đường rồi **nhân** các xác suất trên đường ấy; chẳng hạn hai lần cùng đạt: \((3/4)(2/3)=1/2\). Bốn xác suất ở các lá cộng đúng bằng \(1\).</figcaption></figure>
 
-    Nếu chỉ hỏi “**ít nhất một** lượt thành công”, có thể cộng ba trường hợp thuận lợi trên cây. Cách ngắn hơn là xét biến cố đối “**cả hai cùng thất bại**”: \(1-(1/4)(1/3)=11/12\). Cách lấy bù này dựa vào việc **các biến cố đối của hai phép thử độc lập cũng độc lập**.
+    Bốn lá lần lượt là: cả hai đạt \(1/2\), chỉ lượt một đạt \(1/4\), chỉ lượt hai đạt \(1/6\), cả hai trượt \(1/12\). Vì các lá là những trường hợp xung khắc, xác suất **đúng một** lượt đạt là \(1/4+1/6=5/12\). Nếu chỉ hỏi “**ít nhất một** lượt thành công”, có thể cộng ba trường hợp thuận lợi trên cây. Cách ngắn hơn là xét biến cố đối “**cả hai cùng thất bại**”: \(1-(1/4)(1/3)=11/12\). Cách lấy bù này dựa vào việc **các biến cố đối của hai phép thử độc lập cũng độc lập**.
 
     **Vận dụng.** Hai cảm biến hoạt động độc lập; xác suất mỗi cảm biến phát hiện sự cố lần lượt là \(0{,}8\) và \(0{,}7\). Tính xác suất cả hai cùng phát hiện và xác suất ít nhất một cảm biến phát hiện. Hãy thử nêu biến cố đối của yêu cầu thứ hai.
 
@@ -82,7 +82,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất của các biến cố đối</strong><p>Nếu \(A,B\) độc lập thì \(A,\overline B\); \(\overline A,B\); và \(\overline A,\overline B\) cũng độc lập. Vì thế, khi \(P(A)=a\), \(P(B)=b\), xác suất <strong>cả hai không xảy ra</strong> là \((1-a)(1-b)\), và xác suất <strong>ít nhất một xảy ra</strong> là \(1-(1-a)(1-b)\).</p></div>
 
-    **Lưu ý:** Hai biến cố xung khắc có xác suất dương thì **không độc lập**: giao có xác suất \(0\) trong khi tích hai xác suất riêng lớn hơn \(0\). Trường hợp một xác suất bằng \(0\) cần xét riêng. **Không** coi “độc lập” là “không thể xảy ra đồng thời”.
+    **Lưu ý:** Hai biến cố xung khắc có xác suất dương thì **không độc lập**: giao có xác suất \(0\) trong khi tích hai xác suất riêng lớn hơn \(0\). Nếu \(P(A)=0\), thì \(P(AB)=0=P(A)P(B)\) với mọi \(B\); theo điều kiện tích, hai biến cố độc lập. Trường hợp \(P(B)=0\) cũng tương tự. **Không** coi “độc lập” là “không thể xảy ra đồng thời”.
 
     ### 2.2. Vận dụng
 
@@ -97,7 +97,7 @@
 
     **Ví dụ minh họa.** Khảo sát \(100\) người cho biết \(40\) người thuộc A, \(30\) người thuộc B và \(20\) người thuộc cả hai. Ta có \(P(AB)=0{,}20\), khác \(P(A)P(B)=0{,}4\cdot0{,}3=0{,}12\). Vì vậy \(A,B\) không độc lập trong mô hình thống kê này.
 
-    **Tự kiểm phát biểu:** Nói “khác tích nên không độc lập” là kiểm toán xác suất. Nói “A gây ra B” từ riêng bảng tần số là vượt quá điều được chứng minh. Đây là hai kết luận hoàn toàn khác nhau.
+    **Tự kiểm phát biểu:** Nói “khác tích nên không độc lập” là kiểm tra tính độc lập. Nói “A gây ra B” từ riêng bảng tần số là vượt quá điều được chứng minh. Đây là hai kết luận hoàn toàn khác nhau.
 
 === "Ví dụ"
 
