@@ -193,18 +193,8 @@
 
     #### d) Lập phương trình đường thẳng đi qua hai điểm
 
-    **Kiến thức cần nhớ:** Với \(A(x_1;y_1;z_1)\ne B(x_2;y_2;z_2)\), chọn \(A\) làm điểm gốc, \(\overrightarrow{AB}=(x_2-x_1;y_2-y_1;z_2-z_1)\) làm chỉ phương. Phương trình tham số là
-    \[
-    \begin{cases}
-    x=x_1+(x_2-x_1)t,\\
-    y=y_1+(y_2-y_1)t,\\
-    z=z_1+(z_2-z_1)t,
-    \end{cases}\quad t\in\mathbb R.
-    \]
-    Khi cả ba hiệu tọa độ khác 0, có phương trình chính tắc
-    \[
-    \frac{x-x_1}{x_2-x_1}=\frac{y-y_1}{y_2-y_1}=\frac{z-z_1}{z_2-z_1}.
-    \]
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Đường thẳng qua hai điểm.</strong><p>Với \(A(x_1;y_1;z_1)\ne B(x_2;y_2;z_2)\), chọn \(A\) làm điểm gốc, \(\overrightarrow{AB}=(x_2-x_1;y_2-y_1;z_2-z_1)\) làm chỉ phương. Phương trình tham số là</p><div class="arithmatex">\(\displaystyle\begin{cases}x=x_1+(x_2-x_1)t\\y=y_1+(y_2-y_1)t\\z=z_1+(z_2-z_1)t\end{cases},\quad t\in\mathbb R.\)</div><p>Khi cả ba hiệu tọa độ khác 0, phương trình chính tắc là</p><div class="arithmatex">\(\displaystyle\frac{x-x_1}{x_2-x_1}=\frac{y-y_1}{y_2-y_1}=\frac{z-z_1}{z_2-z_1}.\)</div></div>
+
     Với đường thẳng vuông góc mặt phẳng, dùng pháp tuyến mặt phẳng làm chỉ phương; với đường thẳng song song đường đã biết, dùng chỉ phương của đường đã biết và kiểm vị trí nếu cần. Muốn tìm giao với mặt phẳng, thế tọa độ tham số vào phương trình mặt phẳng rồi xét số nghiệm; nếu mô hình là đoạn hoặc tia, kiểm miền tham số.
 
     ### 2.2. Hai đường thẳng vuông góc
@@ -217,14 +207,7 @@
 
     Cho \(d_1\) qua \(A\), chỉ phương \(\vec u\); \(d_2\) qua \(B\), chỉ phương \(\vec v\), cả hai khác không. Đặt \(\vec n=[\vec u,\vec v]\), \(K=\overrightarrow{AB}\cdot\vec n\).
 
-    **Kiến thức cần nhớ:**
-
-    | Vị trí | Điều kiện cần và đủ |
-    | :-- | :-- |
-    | Song song phân biệt | \(\vec n=\vec0,\ A\notin d_2\) |
-    | Trùng nhau | \(\vec n=\vec0,\ A\in d_2\) |
-    | Cắt nhau | \(\vec n\ne\vec0,\ K=0\) |
-    | Chéo nhau | \(K\ne0\) |
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Vị trí tương đối.</strong><p>Điều kiện cần và đủ:</p><ul><li>Song song phân biệt: \(\vec n=\vec0,\ A\notin d_2\).</li><li>Trùng nhau: \(\vec n=\vec0,\ A\in d_2\).</li><li>Cắt nhau: \(\vec n\ne\vec0,\ K=0\).</li><li>Chéo nhau: \(K\ne0\).</li></ul></div>
 
     Khi \(K\ne0\), tự động \(\vec n\ne\vec0\). Khi \(K=0\), phải kiểm \(\vec n\) để phân biệt cắt với cùng phương. Đổi chiều hoặc nhân chỉ phương với số khác 0 không làm thay đổi điều kiện bằng 0 hay khác 0.
 
