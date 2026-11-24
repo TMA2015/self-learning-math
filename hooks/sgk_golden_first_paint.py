@@ -185,8 +185,85 @@ def _w1_mistake_disclosures(html: str, number: int) -> str:
         return '<details class="tip" id="' + item[1] + '">\n<summary>' + item[2] + '</summary>\n' + item[3] + '</details>\n'
     return html[:start] + '\n<p>Mở từng mục để xem dấu hiệu, vì sao sai và cách sửa.</p>\n' + pattern.sub(disclosure, body) + html[end:]
 
+# #1039 W2: only these five signed Knowledge routes. W1 remains byte-identical.
+_W2_ROUTES = {
+    f"thpt-preview/sgk/lop-11/chuong-{chapter}/bai-{n}.md": (n, 5 if n == 5 else 6)
+    for chapter, numbers in (("ii", (5, 6, 7)), ("iii", (8, 9)))
+    for n in numbers
+}
+
+def _w2_mistake_disclosures(html: str, number: int, count: int) -> str:
+    heading = '<h2 class="thpt-g10-section-heading">' + _HEADINGS[3] + '</h2>'
+    if html.count(heading) != 1:
+        raise RuntimeError("W2 tab4 heading changed")
+    start = html.index(heading) + len(heading)
+    foot = re.search(r'<p>\s*<p class="thpt-r4-footnote">|<p class="thpt-r4-footnote">', html[start:])
+    if foot is None:
+        raise RuntimeError("W2 tab4 source note missing")
+    end = start + foot.start()
+    body = html[start:end]
+    # Preserve heading markup (including inline math), IDs, and the 3 original paragraphs.
+    pattern = re.compile(r'<h3 id="([^"]+)">(4\.\d+\.[\s\S]*?)</h3>\s*((?:<p>[\s\S]*?</p>\s*){3})')
+    matches = list(pattern.finditer(body))
+    tail = pattern.sub("", body)
+    if len(matches) != count:
+        raise RuntimeError("W2 tab4 unexpected recovery count: B" + str(number))
+    if number == 5:
+        valid_tail = not tail.strip()
+    else:
+        valid_tail = re.fullmatch(r'\s*<p><strong>Học tiếp:</strong>[\s\S]*?</p>\s*', tail) is not None
+    if not valid_tail:
+        raise RuntimeError("W2 tab4 unexpected trailing content: B" + str(number))
+    for i, item in enumerate(matches, 1):
+        if not item[2].startswith(f"4.{i}. ") or re.findall(r'<p><strong>([^<]+)</strong>', item[3])[:3] != ["Dấu hiệu:", "Vì sao sai:", "Cách sửa:"]:
+            raise RuntimeError("W2 tab4 missing original recovery labels")
+    def disclosure(item):
+        return '<details class="tip" id="' + item[1] + '">\n<summary>' + item[2] + '</summary>\n' + item[3] + '</details>\n'
+    return html[:start] + '\n<p>Mở từng mục để xem dấu hiệu, vì sao sai và cách sửa.</p>\n' + pattern.sub(disclosure, body) + html[end:]
+
+def _render_w2(output: str, uri: str) -> str:
+    number, count = _W2_ROUTES[uri]
+    rendered = _render_first_paint(output, ("thpt-g10-knowledge-ap1", "thpt-g10-chiv-golden"))
+    if rendered != output:
+        rendered = _hero_first_paint(rendered, uri)
+    if rendered == output or 'data-sgk-golden-first-paint="true"' not in rendered or len(_H2.findall(rendered)) != 4 or rendered.count('data-sgk-lesson-nav="') != 1:
+        raise RuntimeError("W2 Golden first-paint build contract failed: " + uri)
+    rendered = _w2_mistake_disclosures(rendered, number, count)
+    # Reuse the existing W1 Golden values, no shared CSS/JS mutations.
+    return rendered.replace(
+        '</article>',
+        """<style id="sgk-g11-w2-golden-formula">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border: 1px solid var(--slm-g10-line);
+  border-radius: 8px; padding: 12px 14px; margin: 14px 0;
+  line-height: 1.75; overflow-x: auto; max-width: 100%;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border-color: #58677f; color: #eef4ff;
+}
+</style><script id="sgk-g11-w2-golden-tabs">
+(() => {
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/lop-11\/(?:chuong-ii\/bai-[567]|chuong-iii\/bai-[89])\/?$/.test(location.pathname))return;
+  const a=document.querySelector("article[data-sgk-golden-first-paint]");
+  const t=a?.querySelector(":scope > .tabbed-set");
+  if(!t||t.dataset.g11W2Golden==="true")return;
+  const labels=[...t.querySelectorAll(":scope > .tabbed-labels > label")];
+  const radios=[...t.querySelectorAll(':scope > input[type="radio"]')];
+  if(labels.length!==4||radios.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+  const sync=()=>labels.forEach((l,i)=>l.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  t.addEventListener("change",sync);sync();t.dataset.g11W2Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script></article>""", 1)
+
 def on_post_page(output, page, config):
     uri = page.file.src_uri
+    if uri in _W2_ROUTES:
+        return _render_w2(output, uri)
     classes = _classes(uri)
     if classes is None:
         return output
