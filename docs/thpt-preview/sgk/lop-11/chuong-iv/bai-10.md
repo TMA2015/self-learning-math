@@ -38,7 +38,7 @@
 
     ### 1.2. Các tính chất thừa nhận
 
-    Qua hai điểm phân biệt chỉ có một đường thẳng; qua ba điểm **không thẳng hàng** chỉ có một mặt phẳng. Chẳng hạn, ba điểm tiếp xúc không thẳng hàng của một giá ba chân xác định một mặt phẳng; độ ổn định của giá còn phụ thuộc trọng tâm và cách đặt, còn một đường thẳng đi qua ba điểm thẳng hàng vẫn có thể nằm trong vô số mặt phẳng khác nhau. SGK còn thừa nhận có thể chọn bốn điểm không đồng phẳng: không gian không chỉ là một mặt phẳng duy nhất.
+    Qua hai điểm phân biệt chỉ có một đường thẳng; qua ba điểm **không thẳng hàng** chỉ có một mặt phẳng. Chẳng hạn, ba điểm tiếp xúc không thẳng hàng của một giá ba chân xác định một mặt phẳng; độ ổn định của giá còn phụ thuộc trọng tâm và cách đặt. Ngược lại, một đường thẳng đi qua ba điểm thẳng hàng vẫn nằm trong vô số mặt phẳng khác nhau. SGK còn thừa nhận có thể chọn bốn điểm không đồng phẳng: không gian không chỉ là một mặt phẳng duy nhất.
 
     Ta cần ghi nhớ **sáu tính chất thừa nhận**, với đúng điều kiện của chúng: (1) duy nhất đường thẳng qua hai điểm phân biệt; (2) duy nhất mặt phẳng qua ba điểm không thẳng hàng; (3) tồn tại bốn điểm không đồng phẳng; (4) nếu một đường có hai điểm phân biệt thuộc mặt thì cả đường thuộc mặt; (5) hai mặt phẳng phân biệt có điểm chung thì giao nhau theo đường thẳng đi qua điểm chung; (6) trong mỗi mặt phẳng, những kết quả của hình học phẳng vẫn đúng.
 
@@ -124,7 +124,7 @@
 
     **Lập luận:** Với một điểm ngoài đường, lấy hai điểm khác nhau trên đường để được ba điểm không thẳng hàng. Với hai đường cắt nhau tại \(M\), lấy \(A,B\) lần lượt trên hai đường và khác \(M\), thì \(A,M,B\) không thẳng hàng.
 
-    **Giới hạn áp dụng:** Điểm \(A\in d\) không cùng đường \(d\) xác định duy nhất mặt phẳng; hai đường trùng nhau hoặc chéo nhau không thỏa điều kiện **cắt nhau** của cách thứ ba. Không lẫn hình chiếu với quan hệ thật trong không gian.
+    **Giới hạn áp dụng:** Điểm \(A\notin d\) cùng với đường \(d\) xác định duy nhất một mặt phẳng; nếu \(A\in d\) thì không xác định được duy nhất mặt phẳng; hai đường trùng nhau hoặc chéo nhau không thỏa điều kiện **cắt nhau** của cách thứ ba. Không lẫn hình chiếu với quan hệ thật trong không gian.
 
     **Tìm giao điểm đường thẳng–mặt phẳng:** Chọn mặt phẳng phụ chứa đường cần tìm; dựng giao tuyến với mặt phẳng đích, sau đó tìm giao điểm hai đường **nếu tồn tại**. Trong tứ diện \(ABCD\), \(E\) nằm trong \(BCD\), \(F\) trong \(AE\), lấy \(M=BE\cap CD\), \(N=BF\cap AM\); từ \((ABM)\cap(ACD)=AM\) suy ra \(N=BF\cap(ACD)\).
 
