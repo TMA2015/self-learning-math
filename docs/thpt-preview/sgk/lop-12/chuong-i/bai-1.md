@@ -242,6 +242,8 @@
 
     **Đề bài.** Hàm \(f\) khả vi trên \(\mathbb R\). Đồ thị \(y=f'(x)\) cắt trục hoành tại \(x=-2\) và \(x=3\), tiếp xúc trục hoành tại \(x=0\). Đường \(f'\) nằm phía trên trục hoành trên \((-\infty;-2)\), phía dưới trên \((-2;0)\) và \((0;3)\), phía trên trên \((3;+\infty)\). Xét tính đơn điệu và điểm cực trị của \(f\).
 
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B01_FIG02_READ_DERIVATIVE_AUTHORING_20261124.svg" alt="Đồ thị đạo hàm cắt trục hoành tại âm hai và ba, tiếp xúc tại không; dương ở hai khoảng ngoài và âm ở giữa trừ không"><figcaption>Đọc dấu theo vị trí đường cong so với trục hoành; chú ý tại \(0\), đường chỉ chạm trục rồi quay lại phía dưới.</figcaption></figure>
+
     **Phân tích:** Ta chỉ cần dấu của \(f'\), không cần biết độ cao cụ thể của \(f\) hay độ dốc của đường \(f'\).
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \(f\) đồng biến trên \((-\infty;-2)\), \((3;+\infty)\). Trên \((-2;3)\), \(f'\le0\) và chỉ bằng \(0\) tại \(0\), nên \(f\) nghịch biến trên cả khoảng \((-2;3)\). Hàm đạt cực đại tại \(-2\), cực tiểu tại \(3\). Điểm \(0\) không có cực trị do đạo hàm không đổi dấu qua nó. Đề không cung cấp \(f(-2),f(3)\) nên chưa biết các giá trị cực trị.</p></div>
