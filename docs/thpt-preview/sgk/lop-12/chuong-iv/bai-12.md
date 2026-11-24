@@ -1,217 +1,395 @@
-# Toán 12 · Bài 12. Tích phân
+# Bài 12. Tích phân
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 12–18</p><p class="thpt-r4-lead">Hiểu bản chất trước công thức, xem ví dụ có suy luận, đọc hình PNG gốc đã review và tự thử trước Core.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../bai-11/">Bài 11 · Ôn lại</a><a href="../bai-13/">Bài 13 · Học tiếp</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · KIẾN THỨC SGK KNTT · TẬP HAI</p>
+<p class="thpt-r4-lead">Từ diện tích và lượng thay đổi tích lũy đến hiệu hai giá trị nguyên hàm; tính tích phân và vận dụng trong chuyển động, kinh tế, đo lường.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../bai-11/">Bài trước</a><a href="../luyen-tap/#b12-core">Core/Luyện tập</a><a href="../bai-13/">Bài tiếp theo</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-## 1. Vì sao cần học và kiến thức tiền đề
+=== "Khám phá kiến thức"
 
-Một lượng biến thiên liên tục phải cộng dồn qua thời gian/khoảng; định lí Newton–Leibniz giúp chuyển bài toán cộng dồn thành hiệu hai giá trị nguyên hàm. Dấu âm có ý nghĩa phương hướng, không làm diện tích âm.
+    ### 1.1. Khái niệm tích phân
 
-**Tiền đề cần tự kiểm:** nguyên hàm, số có dấu, hàm liên tục trên đoạn, giá trị tại cận; xem lại B11 nếu sai +C.
+    #### a) Diện tích hình thang cong
 
-## 2. Hiểu bản chất, công thức và điều kiện
+    Một xe đang chạy với vận tốc \(18\) m/s. Khi phanh, vận tốc giảm đều theo công thức \(v(t)=18-6t\) m/s cho đến khi xe dừng, trong đó \(t\) tính bằng giây. Xe dừng ở \(t=3\). Nếu vận tốc không đổi, quãng đường bằng vận tốc nhân thời gian. Nhưng ở đây vận tốc thay đổi từng lúc, không thể lấy vận tốc ban đầu nhân 3.
 
-<!-- OUTCOME_ID: G12-CHIV-B12-O01 -->
+    Trên đồ thị vận tốc – thời gian, một chặng rất ngắn \(\Delta t\) cho độ dời xấp xỉ \(v(t)\Delta t\), tương ứng với diện tích một hình chữ nhật hẹp. Khi chia thời gian thành những chặng ngày càng nhỏ, tổng diện tích các hình chữ nhật xấp xỉ ngày càng tốt diện tích dưới đồ thị. Trong ví dụ này, đồ thị là đoạn thẳng từ \((0;18)\) đến \((3;0)\), nên diện tích tam giác bằng \(3\cdot18/2=27\). Tích phân giúp tính chính xác lượng tích lũy ấy, kể cả khi đồ thị là đường cong.
 
-### 1. Tích phân xác định: lấy giá trị nguyên hàm ở hai cận
+    <!-- OUTCOME_ID: G12-CHIV-B12-O04 -->
+    Với hàm \(f\) liên tục, không âm trên \([a;b]\), miền giới hạn bởi đồ thị \(y=f(x)\), trục hoành và hai đường thẳng \(x=a,x=b\) được gọi là hình thang cong (\(a<b\)). Tên gọi này bao gồm cả trường hợp đường biên phía trên là đoạn thẳng. Nếu \(f\) âm trên một phần đoạn, ta không thể gọi toàn miền ấy là hình thang cong theo định nghĩa này.
 
-- **Vì sao cần biết:** Cộng dồn biến đổi liên tục trên một khoảng thay vì cộng nhiều bước rời rạc.
+    Hãy bắt đầu bằng \(f(x)=x+2\) trên \([0;3]\). Với mỗi \(t\in[0;3]\), gọi \(S(t)\) là diện tích từ \(x=0\) đến \(x=t\). Hình thang có hai cạnh song song dài \(2\) và \(t+2\), cách nhau \(t\), nên
+    \[
+    S(t)=\frac{2+(t+2)}2t=2t+\frac{t^2}{2}.
+    \]
+    Thật thú vị: \(S'(t)=2+t=f(t)\). Như vậy hàm diện tích là một nguyên hàm của hàm cho đường biên phía trên. \(S(0)=0\); diện tích cần tìm là \(S(3)=21/2\).
 
-- **Kiến thức tiền đề:** Hàm liên tục trên đoạn và nguyên hàm F trên đoạn.
+    Liệu kết quả này còn đúng khi đường biên thật sự cong? Xét \(f(t)=t^2\) trên \([1;2]\), gọi \(S(x)\) là diện tích từ 1 đến \(x\). Khi dịch cận phải từ \(x\) tới \(x+h\), với \(h>0\), diện tích tăng thêm chính là phần nằm giữa hai cận này.
 
-- **Bản chất trước công thức:** Tích phân xác định là một số phụ thuộc f và hai cận; nếu F'=f thì lấy F(b)−F(a), không kèm +C.
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg" alt="Dải diện tích dưới y=t bình phương từ x đến x+h được kẹp giữa hai hình chữ nhật có chiều cao x bình phương và (x+h) bình phương"><figcaption>Phần xanh và cam giữa \(x\) và \(x+h\) là diện tích tăng thêm. Hình chữ nhật thấp nằm dưới đường cong, hình chữ nhật cao bao trùm dải ấy. Trục ngang được cắt bớt để nhìn rõ đoạn từ 1 đến 2.</figcaption></figure>
 
-- **Định nghĩa và công thức:** \(\int_a^b f(x)dx=F(b)-F(a).\)
+    Vì \(t^2\) tăng trên \([1;2]\), hai hình chữ nhật có cùng chiều rộng \(h\) cho
+    \[
+    hx^2\le S(x+h)-S(x)\le h(x+h)^2.
+    \]
+    Chia cho \(h>0\), ta có \(x^2\le [S(x+h)-S(x)]/h\le (x+h)^2\). Khi \(h\to0^+\), hai biên đều tiến tới \(x^2\). Nếu \(h<0\), xét dải từ \(x+h\) đến \(x\), chia diện tích dải ấy cho \(-h>0\); thương sai phân tương tự nằm giữa \((x+h)^2\) và \(x^2\). Khi \(h\to0^-\), ta cũng nhận \(x^2\).
 
-- **Điều kiện và giới hạn:** f liên tục trên [a,b] trong mức SGK; kiểm cận trên/dưới và đơn vị khi có ngữ cảnh.
+    Do đó \(S'(x)=x^2\), kể cả đạo hàm một phía ở hai đầu. Theo Bài 11,
+    \[
+    S(x)=\frac{x^3}{3}+C.
+    \]
+    Vì \(S(1)=0\), \(C=-1/3\). Diện tích toàn phần bằng \(S(2)=8/3-1/3=7/3\). Nếu chọn một nguyên hàm bất kì \(F(x)=x^3/3+C\), hiệu \(F(2)-F(1)\) vẫn là \(7/3\).
 
-- **Lý do chọn phương pháp:** Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu.
+    SGK tổng quát hóa kết quả: diện tích hình thang cong dưới hàm liên tục không âm \(f\) bằng \(F(b)-F(a)\), với \(F\) là một nguyên hàm của \(f\). Với hàm liên tục không nhất thiết đồng biến, lập luận kẹp tương tự dùng giá trị nhỏ nhất và lớn nhất trên dải hẹp; khi dải co lại, tính liên tục làm hai giá trị tiến về cùng \(f(x)\).
 
-#### Ví dụ có suy luận
+    **Vận dụng.** Tính diện tích dưới đồ thị \(y=2x^2+1\) trên đoạn \([0;2]\). Trước khi tính, hãy kiểm điều kiện hình thang cong và dự đoán diện tích nằm giữa diện tích hai hình chữ nhật nào.
 
-**Đề:** Tính ∫_0^3 2x dx.
+    ??? question "Đối chiếu"
 
-**Lời giải có suy luận:** F=x²; F(3)−F(0)=9. Không viết +C vào kết quả tích phân xác định. Lý do chọn cách giải: Tìm nguyên hàm F, thế cận b trước a, rút gọn; kiểm bằng ước lượng dấu. Kiểm điều kiện áp dụng: f liên tục trên [a,b] trong mức SGK; kiểm cận trên/dưới và đơn vị khi có ngữ cảnh.
+        Hàm liên tục, không âm và tăng trên \([0;2]\), có giá trị nhỏ nhất 1, lớn nhất 9. Diện tích nằm giữa \(2\cdot1=2\) và \(2\cdot9=18\).
 
-**Bẫy cần tự phát hiện:** Tính F(a)−F(b) (đảo dấu) hoặc giữ +C ở kết quả xác định.
+        Một nguyên hàm là \(F(x)=2x^3/3+x\). Vậy \(S=F(2)-F(0)=16/3+2=22/3\), phù hợp với ước lượng.
 
-<!-- OUTCOME_ID: G12-CHIV-B12-O02 -->
+    ??? tip "Kiểm lỗi"
 
-### 2. Tính tuyến tính của tích phân xác định
+        Không lấy diện tích hình thang theo hai chiều cao đầu mút khi đường biên là parabol. Công thức hình thang thông thường chỉ đúng khi đường biên trên là đoạn thẳng. Dùng hiệu nguyên hàm và kiểm dấu của hàm.
 
-- **Vì sao cần biết:** Một tốc độ tổng hợp bởi nhiều thành phần có lượng tích lũy bằng tổng phần tích lũy.
+    #### b) Định nghĩa tích phân
 
-- **Kiến thức tiền đề:** Tính tuyến tính nguyên hàm và Newton–Leibniz.
+    <!-- OUTCOME_ID: G12-CHIV-B12-O01 -->
+    Với hàm liên tục bất kì trên \([a;b]\), kể cả hàm nhận giá trị âm, ta vẫn có thể tính hiệu \(F(b)-F(a)\). Hiệu ấy được gọi là tích phân từ \(a\) đến \(b\) của \(f\), viết
+    \[
+    \int_a^b f(x)\,dx=F(b)-F(a)=\left.F(x)\right|_a^b.
+    \]
+    Vì hai nguyên hàm \(F,G\) trên cùng đoạn chỉ khác một hằng số, \(G=F+C\), nên \(G(b)-G(a)=F(b)-F(a)\). Tích phân không phụ thuộc vào việc chọn nguyên hàm nào. Đây là lí do kết quả tích phân là **một số**, không có \(+C\).
 
-- **Bản chất trước công thức:** Có thể đưa hằng số ra ngoài và tách tổng/hiệu dưới dấu tích phân cùng hai cận.
+    Trong kí hiệu trên, \(a\) là cận dưới, \(b\) là cận trên, \(f(x)\) là hàm dưới dấu tích phân. \(x\) chỉ là biến lấy tích phân: viết \(t\) thay cho \(x\) đồng thời đổi \(dx\) thành \(dt\) không làm đổi kết quả nếu giữ cùng hàm và cận.
 
-- **Định nghĩa và công thức:** \(\int_a^b(\alpha f+\beta g)dx=\alpha\int_a^b fdx+\beta\int_a^b gdx.\)
+    Chẳng hạn,
+    \[
+    \int_1^3 (2x+1)\,dx=\left.(x^2+x)\right|_1^3
+    =(9+3)-(1+1)=10.
+    \]
+    Hãy đặt ngoặc quanh giá trị ở cận dưới. Nếu hàm chứa nhiều hạng tử, quên ngoặc thường làm sai dấu.
 
-- **Điều kiện và giới hạn:** Điều kiện các hàm khả tích/liên tục ở mức bài và cùng khoảng tích phân; nếu đổi cận phải đổi dấu.
+    <!-- OUTCOME_ID: G12-CHIV-B12-O05 -->
+    Khi \(a<b\), phần đồ thị phía trên trục hoành cho đóng góp không âm, phần phía dưới cho đóng góp không dương. Thí dụ \(f(x)=x\) trên \([-2;2]\).
 
-- **Lý do chọn phương pháp:** Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg" alt="Đồ thị y=x trên đoạn âm 2 đến 2: hai tam giác có diện tích 2, đóng góp vào tích phân lần lượt âm 2 và dương 2"><figcaption>Tích phân từ \(-2\) đến 2 bằng 0 vì hai đóng góp trái dấu triệt tiêu nhau. Tổng diện tích hai tam giác là 4. Không có diện tích hình học âm.</figcaption></figure>
 
-#### Ví dụ có suy luận
+    Ta kiểm bằng nguyên hàm \(F(x)=x^2/2\): \(F(2)-F(-2)=2-2=0\). Nếu cần tổng diện tích hai phần, phải tính với hàm \(|x|\), luôn không âm. Phương pháp tính diện tích hình phẳng tổng quát sẽ được học ở Bài 13.
 
-**Đề:** Tính ∫_0^1 (4x+2)dx.
+    <!-- FIRST_TRY_ID: B12-T01 -->
+    **Vận dụng.** Tính \(\int_{-1}^2x\,dx\) và \(\int_{-1}^2|x|\,dx\). Giải thích tại sao hai kết quả khác nhau.
 
-**Lời giải có suy luận:** F=2x²+2x, kết quả F(1)−F(0)=4. Lý do chọn cách giải: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F. Kiểm điều kiện áp dụng: Điều kiện các hàm khả tích/liên tục ở mức bài và cùng khoảng tích phân; nếu đổi cận phải đổi dấu.
+    ??? question "Đối chiếu"
 
-**Bẫy cần tự phát hiện:** Tách ∫(f+g) rồi quên một hệ số hoặc dùng hai cận khác nhau.
+        Tích phân thứ nhất bằng \(2-1/2=3/2\). Đồ thị \(|x|\) tạo hai tam giác phía trên trục hoành có diện tích \(1/2\) và 2, nên tích phân thứ hai bằng \(5/2\). Tích phân thứ nhất lấy hiệu hai diện tích, tích phân thứ hai lấy tổng.
 
-<!-- OUTCOME_ID: G12-CHIV-B12-O03 -->
+    ??? tip "Kiểm lỗi"
 
-### 3. Cận đảo chiều, đoạn ghép và đoạn có độ dài 0
+        \(\left|\int_{-1}^2 x\,dx\right|=3/2\), không bằng \(5/2\). Đặt dấu giá trị tuyệt đối bên ngoài tích phân không loại bỏ sự triệt tiêu đã xảy ra bên trong.
 
-- **Vì sao cần biết:** Đại lượng tích lũy khi đi ngược hướng đổi dấu, còn ghép hai chặng phải bằng tổng các chặng.
+    <!-- OUTCOME_ID: G12-CHIV-B12-O06 -->
+    Để tính bằng nguyên hàm, trước hết kiểm hàm liên tục trên đoạn lấy tích phân. Sau đó tìm một nguyên hàm bằng bảng ở Bài 11, thay cận trên rồi trừ cận dưới. Ví dụ
+    \[
+    \int_0^{\pi/3}\cos x\,dx=\sin(\pi/3)-\sin0=\sqrt3/2,
+    \quad
+    \int_0^1 3^x\,dx=\frac{3-1}{\ln3}.
+    \]
+    Với hàm \(1/x\) trên \([-1;1]\), không áp dụng được công thức hiệu nguyên hàm vì hàm không xác định tại 0. Hai cận khác 0 chưa đủ: phải kiểm cả đoạn nằm giữa chúng.
 
-- **Kiến thức tiền đề:** Số có dấu, cộng đại số, định nghĩa tích phân xác định.
+    Đôi khi tính bằng hình học nhanh hơn tìm nguyên hàm. Hàm \(y=\sqrt{16-x^2}\) trên \([0;4]\) biểu diễn một phần tư đường tròn bán kính 4 ở góc phần tư thứ nhất, bởi \(x^2+y^2=16,\ y\ge0\). Vậy tích phân bằng diện tích \(16\pi/4=4\pi\). Không cần tìm công thức nguyên hàm mới.
 
-- **Bản chất trước công thức:** ∫_a^a f=0, ∫_b^a f=−∫_a^b f và ∫_a^c f+∫_c^b f=∫_a^b f.
+    **Vận dụng.** Dùng ý nghĩa hình học, tính \(\int_{-2}^{2}\sqrt{4-x^2}\,dx\).
 
-- **Định nghĩa và công thức:** \(\int_a^b fdx=-\int_b^a fdx;\quad\int_a^b fdx=\int_a^c fdx+\int_c^b fdx.\)
+    ??? question "Đối chiếu"
 
-- **Điều kiện và giới hạn:** f liên tục trên khoảng chứa các cận; a,b,c có thể hoán vị, đẳng thức luôn theo dấu.
+        Hàm không âm, liên tục trên \([-2;2]\). Đồ thị là nửa đường tròn phía trên trục hoành, bán kính 2. Tích phân bằng diện tích nửa hình tròn: \(2\pi\).
 
-- **Lý do chọn phương pháp:** Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu.
+    ??? tip "Kiểm lỗi"
 
-#### Ví dụ có suy luận
+        Cận từ \(-2\) đến 2 phủ cả nửa đường tròn trên, không phải một phần tư. Dùng \(y\ge0\) để chọn đúng nửa đường tròn.
 
-**Đề:** Biết ∫_0^2 f=4, ∫_2^5 f=−1. Tìm ∫_5^0 f.
+    ### 1.2. Tính chất của tích phân
 
-**Lời giải có suy luận:** ∫_0^5 f=4+(−1)=3, nên ∫_5^0 f=−3. Lý do chọn cách giải: Vẽ trục cận theo thứ tự, ghép hoặc trừ đúng lượng, kiểm chiều dấu. Kiểm điều kiện áp dụng: f liên tục trên khoảng chứa các cận; a,b,c có thể hoán vị, đẳng thức luôn theo dấu.
+    <!-- OUTCOME_ID: G12-CHIV-B12-O02 -->
+    Nếu \(F'=f,\ G'=g\), thì \((kF)'=kf\) và \((F\pm G)'=f\pm g\). Lấy hiệu giá trị ở hai cận, ta thu được các tính chất:
+    \[
+    \int_a^b kf(x)\,dx=k\int_a^b f(x)\,dx,
+    \qquad
+    \int_a^b(f\pm g)\,dx=\int_a^b f\,dx\pm\int_a^b g\,dx.
+    \]
+    Khác với họ nguyên hàm, công thức đưa hệ số ra ngoài đúng cả khi \(k=0\), vì tích phân là một số. Hai hàm cần được xét trên cùng đoạn; không tách tích hoặc thương thành tích hoặc thương của các tích phân.
 
-**Bẫy cần tự phát hiện:** Xem tích phân như độ dài tuyệt đối nên luôn dương; khi đảo cận quên dấu trừ.
+    Ví dụ, nếu biết \(\int_1^4 f(x)\,dx=6\) và \(\int_1^4g(x)\,dx=-2\), ta tính được \(\int_1^4(3f-2g)\,dx=18+4=22\) mà không cần biết biểu thức của \(f,g\).
 
-<!-- OUTCOME_ID: G12-CHIV-B12-O04 -->
+    <!-- OUTCOME_ID: G12-CHIV-B12-O03 -->
+    Khi ghép các chặng liên tiếp, tích phân của toàn đoạn bằng tổng tích phân từng chặng. Thật vậy, nếu \(a<c<b\),
+    \[
+    [F(c)-F(a)]+[F(b)-F(c)]=F(b)-F(a).
+    \]
+    Khi hai cận bằng nhau, hiệu bằng 0; khi đảo cận, hiệu đổi dấu. Ví dụ \(\int_3^1 2x\,dx=1-9=-8\), mặc dù \(2x>0\) trên \([1;3]\). Cận dưới và cận trên là tên vị trí viết trong kí hiệu, không có nghĩa số viết phía dưới luôn nhỏ hơn số viết phía trên.
 
-### 4. Diện tích dưới đồ thị không âm
+    <!-- FIRST_TRY_ID: B12-T02 -->
+    **Vận dụng.** Cho \(f\) liên tục trên \([0;5]\), biết \(\int_0^2 f\,dx=4,\ \int_2^5 f\,dx=-7\). Tính \(\int_0^5 f\,dx,\ \int_5^0 2f\,dx,\ \int_2^2 f\,dx\).
 
-- **Vì sao cần biết:** Một diện tích liên tục không thể tính bằng tổng hình chữ nhật nhỏ chính xác hữu hạn, nhưng giới hạn của tổng cho tích phân.
+    ??? question "Đối chiếu"
 
-- **Kiến thức tiền đề:** Hình thang cong với f liên tục không âm, trục Ox và hai đường x=a,b.
+        Ghép đoạn được \(4-7=-3\). Đảo cận và đưa hệ số ra ngoài được \(-2(-3)=6\). Hai cận trùng nhau cho 0.
 
-- **Bản chất trước công thức:** Nếu f(x)≥0 trên [a,b], diện tích hình giới hạn bằng ∫_a^b f(x)dx.
+    ??? tip "Kiểm lỗi"
 
-- **Định nghĩa và công thức:** \(S=\int_a^b f(x)dx\quad\text{khi }f(x)\ge0.\)
+        Nếu kết quả thứ hai là \(-6\), em đã quên đảo cận. Hãy viết \(\int_5^0 f=-\int_0^5 f\) trước khi nhân 2.
 
-- **Điều kiện và giới hạn:** Phải chứng minh hoặc nhận diện f≥0 trên đoạn, đơn vị diện tích là đơn vị x nhân đơn vị y.
+    Tính chất ghép đoạn đặc biệt hữu ích với giá trị tuyệt đối. Chẳng hạn, để tính \(\int_0^4 |x-1|\,dx\), nhận thấy \(x-1\) đổi dấu tại 1. Do đó
+    \[
+    \begin{aligned}
+    \int_0^4|x-1|\,dx
+    &=\int_0^1(1-x)\,dx+\int_1^4(x-1)\,dx\\
+    &=\frac12+\frac92=5.
+    \end{aligned}
+    \]
+    Mỗi tích phân trên đoạn con dùng đúng biểu thức của giá trị tuyệt đối tại đó. Không cần chia đoạn tại nghiệm nằm ngoài cận. Nếu nghiệm nằm đúng cận, không tạo thêm đoạn có độ dài dương.
 
-- **Lý do chọn phương pháp:** Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.
+    <!-- OUTCOME_ID: G12-CHIV-B12-O07 -->
+    **Lượng biến đổi tích lũy.** Nếu \(Q'(t)=q(t)\) liên tục, thì
+    \[
+    Q(b)-Q(a)=\int_a^b q(t)\,dt.
+    \]
+    Trở lại bài phanh xe: \(v(t)=18-6t\), xe dừng lúc \(t=3\); trên \([0;3]\), \(v(t)\ge0\). Quãng đường bằng \(\int_0^3(18-6t)\,dt=54-27=27\) m, đúng kết quả hình học. Không dùng công thức vận tốc này sau khi xe đã dừng.
 
-#### Ví dụ có suy luận
+    Nếu vật chuyển động thẳng và vận tốc đổi dấu, tích phân vận tốc cho độ dịch chuyển có dấu, còn tích phân tốc độ \(|v|\) cho tổng quãng đường. Một vật đi 3 m rồi lùi 3 m có độ dịch chuyển 0 nhưng quãng đường 6 m. Vì vậy khi tính quãng đường phải xác định thời điểm đổi chiều, chia khoảng nếu cần.
 
-**Đề:** Tính diện tích dưới y=3x trên [0,2].
+    Cũng có thể dùng tích phân để tính lượng thay đổi của lợi nhuận từ lợi nhuận biên, hoặc lượng nước từ lưu lượng. Chỉ cần tốc độ biến đổi trên khoảng cần xét, không nhất thiết biết giá trị ban đầu. Nếu muốn tìm giá trị cuối, phải cộng lượng thay đổi vào giá trị ban đầu.
 
-**Lời giải có suy luận:** Vì 3x≥0 trên [0,2], S=∫_0^2 3x dx=[3x²/2]_0²=6 đơn vị². Lý do chọn cách giải: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng. Kiểm điều kiện áp dụng: Phải chứng minh hoặc nhận diện f≥0 trên đoạn, đơn vị diện tích là đơn vị x nhân đơn vị y.
+    **Vận dụng.** Bể có 50 lít nước lúc \(t=0\). Lưu lượng thực (dòng vào trừ dòng ra) là \(q(t)=4-2t\) lít/phút trong 4 phút. Tính lượng nước thay đổi, lượng nước cuối và tổng lượng nước tăng thêm hoặc giảm đi xét theo từng giai đoạn.
 
-**Bẫy cần tự phát hiện:** Tự động gắn S=∫ f cho f âm hoặc qua chỗ cắt trục.
+    ??? question "Đối chiếu"
 
-<!-- OUTCOME_ID: G12-CHIV-B12-O05 -->
+        \(q(t)\) đổi dấu tại 2. Hai giai đoạn có lượng thay đổi \(\int_0^2(4-2t)\,dt=4\) lít và \(\int_2^4(4-2t)\,dt=-4\) lít. Tổng biến đổi bằng 0, lượng cuối vẫn là 50 lít. Bể tăng 4 lít rồi giảm 4 lít; tổng độ lớn các biến đổi là 8 lít.
 
-### 5. Tích phân có dấu khác diện tích và quãng đường
+        Vì \(q\) là lưu lượng thực, 8 lít không phải tổng lượng nước thật đi qua hai ống nếu dòng vào và dòng ra đồng thời tồn tại; ta không biết từng lưu lượng riêng.
 
-- **Vì sao cần biết:** Khi vật quay đầu hoặc đồ thị đi dưới trục, phần âm làm độ dời triệt tiêu nhưng quãng đường/diện tích vẫn có.
+    ??? tip "Kiểm lỗi"
 
-- **Kiến thức tiền đề:** Giải phương trình f(x)=0 và chia đoạn theo dấu.
+        Không lấy \(|0|=0\) để kết luận lượng nước chưa từng thay đổi. Đọc dấu của \(q\) theo từng giai đoạn và phân biệt lượng thay đổi với giá trị cuối.
 
-- **Bản chất trước công thức:** ∫f là tích lũy có dấu; diện tích là ∫|f|, vận tốc đổi dấu cho độ dời ∫v nhưng quãng đường ∫|v|.
+    **Giá trị trung bình của hàm số.** Nhiệt độ thay đổi liên tục trong ngày, không thể chỉ lấy nhiệt độ đầu và cuối chia đôi nếu quy luật biến đổi không tuyến tính. Nếu một hàm liên tục \(f\) trên \([a;b]\), \(a<b\), giá trị trung bình là
+    \[
+    \overline f=\frac{1}{b-a}\int_a^b f(x)\,dx.
+    \]
+    Có thể hình dung thay đồ thị bởi một đường ngang có chiều cao \(\overline f\) để tích lũy có dấu không đổi trên cùng đoạn. Đơn vị của \(\overline f\) là đơn vị của \(f\), vì đã chia lượng tích lũy cho độ dài đoạn.
 
-- **Định nghĩa và công thức:** \(S=\int_a^b|f(x)|dx\quad\text{(diện tích giữa đồ thị và trục)}.\)
+    **Vận dụng.** Nhiệt độ (°C) sau \(t\) giờ kể từ 6 giờ sáng được mô hình hóa bởi \(T(t)=18+t^2/4\), \(0\le t\le4\). Tính nhiệt độ trung bình từ 6 đến 10 giờ.
 
-- **Điều kiện và giới hạn:** Chia tại mọi nghiệm/điểm đổi dấu trong đoạn; không lấy trị tuyệt đối kết quả tích phân tổng (|∫f| có thể nhỏ hơn ∫|f|).
+    ??? question "Đối chiếu"
 
-- **Lý do chọn phương pháp:** Lập bảng dấu, chia cận, đổi dấu trên vùng âm, cộng phần diện tích dương.
+        \[
+        \overline T=\frac14\left[18t+\frac{t^3}{12}\right]_0^4
+        =18+\frac43=\frac{58}{3}\approx19{,}33^\circ\mathrm C.
+        \]
+        Kết quả nằm giữa nhiệt độ nhỏ nhất 18 và lớn nhất 22. Trung bình cộng hai giá trị đầu mút là 20, không phải giá trị trung bình của hàm bậc hai này.
 
-#### Ví dụ có suy luận
+    ??? tip "Kiểm lỗi"
 
-**Đề:** Với f(x)=x trên [−1,1], so sánh ∫f và ∫|f|.
+        Chia cho độ dài thời gian 4 giờ, không chia cho số mốc giờ được kể tên. Dùng biến \(t\) tính từ 6 giờ sáng, nên cận là 0 và 4.
 
-**Lời giải có suy luận:** ∫_{−1}^1 xdx=0 (phần âm triệt dương), nhưng ∫|x|=∫_{−1}^0(−x)+∫_0^1 x=1. Lý do chọn cách giải: Lập bảng dấu, chia cận, đổi dấu trên vùng âm, cộng phần diện tích dương. Kiểm điều kiện áp dụng: Chia tại mọi nghiệm/điểm đổi dấu trong đoạn; không lấy trị tuyệt đối kết quả tích phân tổng (|∫f| có thể nhỏ hơn ∫|f|).
+=== "Kiến thức SGK"
 
-**Bẫy cần tự phát hiện:** Lấy |∫f| thay cho ∫|f| hoặc nghĩ đồ thị âm tạo “diện tích âm”.
+    ### 2.1. Khái niệm tích phân
 
-<!-- OUTCOME_ID: G12-CHIV-B12-O06 -->
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Hình thang cong.</strong><p>Với \(a&lt;b\), hàm \(f\) liên tục và không âm trên \([a;b]\), hình phẳng giới hạn bởi đồ thị \(y=f(x)\), trục hoành, \(x=a\) và \(x=b\) là hình thang cong.</p></div>
 
-### 6. Tích phân xác định của lượng giác, hàm mũ
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lí — Diện tích hình thang cong.</strong><p>Diện tích hình thang cong trên bằng \(F(b)-F(a)\), trong đó \(F\) là một nguyên hàm của \(f\) trên đoạn \([a;b]\).</p></div>
 
-- **Vì sao cần biết:** Lượng tích lũy của biến thiên tuần hoàn hoặc hàm mũ được tính chính xác bằng nguyên hàm đã học.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa tích phân.</strong><p>Cho \(f\) liên tục trên đoạn \([a;b]\), \(a&lt;b\), và \(F\) là một nguyên hàm của \(f\) trên đoạn ấy.</p><div class="arithmatex">\(\displaystyle\int_a^b f(x)\,dx=\left.F(x)\right|_a^b=F(b)-F(a).\)</div><p>\(a,b\) lần lượt là cận dưới, cận trên; \(f(x)\,dx\) là biểu thức dưới dấu tích phân; \(f(x)\) là hàm dưới dấu tích phân. Giá trị tích phân không phụ thuộc cách chọn nguyên hàm hoặc tên biến lấy tích phân.</p></div>
 
-- **Kiến thức tiền đề:** Nguyên hàm e^x, sin, cos; π và ln là giá trị chính xác.
+    Quy ước \(\int_a^a f(x)\,dx=0\) tại điểm \(a\) thuộc miền xác định, và \(\int_a^b f(x)\,dx=-\int_b^a f(x)\,dx\) khi \(a>b\) và \(f\) liên tục trên \([b;a]\).
 
-- **Bản chất trước công thức:** Dùng F(b)−F(a); ∫cos=sin, ∫sin=−cos, ∫e^x=e^x.
+    **Ý nghĩa hình học:** nếu \(a<b\) và \(f\) liên tục, không âm trên \([a;b]\), thì \(\int_a^b f(x)\,dx\) bằng diện tích hình thang cong. Tích phân nói chung có dấu, không phải lúc nào cũng là diện tích. Với cận thuận, \(\int_a^b |f(x)|\,dx\ge0\); tính bằng cách chia đoạn theo dấu của \(f\) khi cần.
 
-- **Định nghĩa và công thức:** \(\int_0^\pi\sin xdx=[-\cos x]_0^\pi=2.\)
+    **Cách tính bằng nguyên hàm:** kiểm miền xác định và tính liên tục trên cả đoạn; tìm một nguyên hàm; thay cận trên, trừ giá trị tại cận dưới; không ghi \(+C\) ở kết quả. Khi đồ thị không âm tạo thành hình quen thuộc, có thể tính trực tiếp bằng diện tích.
 
-- **Điều kiện và giới hạn:** Bài trig dùng radian; dấu và giá trị đặc biệt ở các cận phải chính xác, ln2 là số dương.
+    ### 2.2. Tính chất của tích phân
 
-- **Lý do chọn phương pháp:** Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính tuyến tính.</strong><p>Nếu \(f,g\) liên tục trên \([a;b]\) và \(k\) là số thực,</p><div class="arithmatex">\(\displaystyle\int_a^b kf(x)\,dx=k\int_a^b f(x)\,dx.\)</div><div class="arithmatex">\(\displaystyle\int_a^b[f(x)\pm g(x)]\,dx=\int_a^b f(x)\,dx\pm\int_a^b g(x)\,dx.\)</div></div>
 
-#### Ví dụ có suy luận
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính cộng theo đoạn.</strong><p>Với \(a&lt;c&lt;b\) và \(f\) liên tục trên \([a;b]\),</p><div class="arithmatex">\(\displaystyle\int_a^b f(x)\,dx=\int_a^c f(x)\,dx+\int_c^b f(x)\,dx.\)</div><p>Kết hợp quy ước đảo cận, hệ thức vẫn đúng khi thay đổi thứ tự ba mốc, miễn hàm liên tục trên đoạn chứa chúng.</p></div>
 
-**Đề:** Tính ∫_0^{π/2}(sin x+cos x)dx.
+    **Ứng dụng trong tính toán:** Dùng tuyến tính để tách các hạng tử cùng cận, dùng cộng theo đoạn để xử lí biểu thức giá trị tuyệt đối, hàm có công thức khác nhau trên từng phần (trong phạm vi hàm liên tục), hoặc tìm tích phân từ các giá trị đã biết.
 
-**Lời giải có suy luận:** F=−cos x+sin x; F(π/2)=1, F(0)=−1; tích phân=2. Lý do chọn cách giải: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ. Kiểm điều kiện áp dụng: Bài trig dùng radian; dấu và giá trị đặc biệt ở các cận phải chính xác, ln2 là số dương.
+    **Ứng dụng thực tiễn:** Nếu \(Q'=q\) liên tục, lượng thay đổi của \(Q\) trên \([a;b]\) là \(\int_a^b q(t)\,dt\). Với chuyển động thẳng trong khoảng thời gian \(a<b\),
 
-**Bẫy cần tự phát hiện:** Nhầm sinπ=1 hoặc quên dấu khi ∫sinx dx=−cosx.
+    | Đại lượng | Công thức |
+    | :-- | :-- |
+    | Độ dịch chuyển có dấu | \(\int_a^b v(t)\,dt\) |
+    | Tổng quãng đường | \(\int_a^b |v(t)|\,dt\) |
+    | Giá trị trung bình của hàm \(f\) | \(\dfrac{1}{b-a}\int_a^b f(t)\,dt\) |
 
-<!-- OUTCOME_ID: G12-CHIV-B12-O07 -->
+    Kiểm miền của mô hình, đổi đơn vị thống nhất, phân biệt giá trị đầu/cuối với lượng thay đổi. Giá trị trung bình chỉ xác định bằng công thức trên khi \(a<b\).
 
-### 7. Tích phân tốc độ để tính lượng tích lũy
+=== "Ví dụ"
 
-- **Vì sao cần biết:** Vận tốc, lưu lượng và mức tiêu thụ biến thiên theo thời gian; tích phân tạo biến đổi tổng.
+    ### 3.1. Tính tích phân đa thức qua hai cận
 
-- **Kiến thức tiền đề:** Đơn vị rate × thời gian; phân biệt độ dời và quãng đường khi rate có dấu.
+    **Đề bài.** Tính \(\int_{-2}^{1}(3x^2-2x+4)\,dx\).
 
-- **Bản chất trước công thức:** ΔQ=∫_a^b Q'(t)dt; nếu Q'≥0 thì đây là lượng tăng thực, nếu âm có suy giảm.
+    **Phân tích:** Dùng tuyến tính và nguyên hàm đa thức; cận âm cần đặt ngoặc.
 
-- **Định nghĩa và công thức:** \(Q(b)-Q(a)=\int_a^b Q'(t)dt.\)
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Một nguyên hàm là \(F(x)=x^3-x^2+4x\). \(F(1)=4,\ F(-2)=-8-4-8=-20\). Do đó tích phân bằng \(4-(-20)=24\).</p></div>
 
-- **Điều kiện và giới hạn:** Giữ cùng đơn vị thời gian, đổi giây sang giờ nếu đầu bài cần; không giả định độ dời là quãng đường khi v có thể âm.
+    **Kiểm lại:** \(3x^2-2x+4=3(x-1/3)^2+11/3>0\); kết quả cận thuận phải dương.
 
-- **Lý do chọn phương pháp:** Lập tích phân từ đầu đến cuối, tính và kiểm thứ nguyên/kịch bản sign.
+    ### 3.2. Tích phân chứa lũy thừa và logarit
 
-#### Ví dụ có suy luận
+    **Đề bài.** Tính \(\int_1^4(2\sqrt{x}+3/x)\,dx\).
 
-**Đề:** Dòng chảy q(t)=5+2t (lít/phút) trong 0≤t≤3. Tính nước đã chảy.
+    **Phân tích:** Hai hạng tử liên tục trên \([1;4]\); dùng công thức lũy thừa và logarit.
 
-**Lời giải có suy luận:** ∫_0³(5+2t)dt=[5t+t²]_0³=15+9=24 lít; q≥0. Lý do chọn cách giải: Lập tích phân từ đầu đến cuối, tính và kiểm thứ nguyên/kịch bản sign. Kiểm điều kiện áp dụng: Giữ cùng đơn vị thời gian, đổi giây sang giờ nếu đầu bài cần; không giả định độ dời là quãng đường khi v có thể âm.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(F(x)=\frac43x^{3/2}+3\ln x\). Tích phân bằng \(\frac43(8-1)+3(\ln4-\ln1)=\frac{28}{3}+3\ln4\).</p></div>
 
-**Bẫy cần tự phát hiện:** Đổi vận tốc âm thành dương trước khi tính độ dời hoặc bỏ qua đơn vị phút/giờ.
+    **Kiểm lại:** Đạo hàm của \(F\) là \(2\sqrt{x}+3/x\). Không lấy \(\ln1=1\).
 
-## 3. Đọc hình minh họa gốc
+    ### 3.3. Tích phân lượng giác
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHIV-B12-SIGNED-AREA-R00.png" alt="Đồ thị y=x trên [-2,2], vùng âm và dương triệt tiêu khi lấy tích phân có dấu nhưng cùng đóng góp dương vào diện tích. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán." /><figcaption>Đồ thị y=x trên [-2,2], vùng âm và dương triệt tiêu khi lấy tích phân có dấu nhưng cùng đóng góp dương vào diện tích. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán.</figcaption></figure>
+    **Đề bài.** Tính \(\int_0^{\pi/4}(2\cos x-3/\cos^2x)\,dx\).
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHIV-B12-NEWTON-LEIBNIZ-R00.png" alt="Vùng hình thang cong dưới y=2x, 0 đến 2, được tính từ F(2)−F(0). Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán." /><figcaption>Vùng hình thang cong dưới y=2x, 0 đến 2, được tính từ F(2)−F(0). Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán.</figcaption></figure>
+    **Phân tích:** \(\cos x\ne0\) trên cả đoạn. Dùng hai nguyên hàm \(\sin x,\tan x\).
 
-## 4. Tự thử trước Core
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(F(x)=2\sin x-3\tan x\). Vậy \(F(\pi/4)-F(0)=\sqrt2-3\).</p></div>
 
-Hãy tự giải rồi mới chủ động mở đối chiếu. Không ghi điểm hay Mastery.
+    **Kiểm lại:** Hàm dưới dấu tích phân âm trên đoạn vì \(2\cos x\le2\) và \(3/\cos^2x\ge3\). Kết quả âm là hợp lí.
 
-<!-- FIRST_TRY_ID: B12-T01 -->
-### Tình huống 1
+    ### 3.4. Tích phân hàm mũ
 
-Nếu f(x)=x từ −1 đến1, tổng tích phân có dấu có bằng diện tích hình học không?
+    **Đề bài.** Tính \(\int_0^2(2e^x+3\cdot2^{-x})\,dx\).
 
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
+    **Phân tích:** Chia cho logarit cơ số \(1/2\) khi tìm nguyên hàm của \(2^{-x}\).
 
-Không: ∫_{−1}¹x dx=0, nhưng S=∫|x|dx=1.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(F(x)=2e^x-3\cdot2^{-x}/\ln2\). Tích phân là \(2(e^2-1)-3(1/4-1)/\ln2=2(e^2-1)+9/(4\ln2)\).</p></div>
 
-</details>
+    **Kiểm lại:** Hai hạng tử của kết quả đều dương. Đạo hàm hạng thứ hai của \(F\) bằng \(3\cdot2^{-x}\).
 
-<!-- FIRST_TRY_ID: B12-T02 -->
-### Tình huống 2
+    ### 3.5. Chọn hình học thay vì tìm nguyên hàm
 
-Cho ∫_0²f=3 và ∫_2⁵f=−4. Không tìm f, hãy tính ∫_5⁰f.
+    **Đề bài.** Tính \(\int_0^3\sqrt{9-x^2}\,dx\) và \(\int_1^4(3x+2)\,dx\) bằng ý nghĩa hình học.
 
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
+    **Phân tích:** Nhận ra một phần tư hình tròn và một hình thang vuông; cả hai hàm không âm trên đoạn tương ứng.
 
-∫_0⁵f=−1 nên ∫_5⁰f=1.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Đồ thị thứ nhất thỏa \(x^2+y^2=9,\ x,y\ge0\), nên tích phân bằng \(9\pi/4\). Đồ thị thứ hai là đoạn thẳng với hai tung độ đầu mút 5 và 14; diện tích hình thang là \(3(5+14)/2=57/2\).</p></div>
 
-</details>
+    **Kiểm lại:** Tích phân thứ hai cũng bằng \([3x^2/2+2x]_1^4=57/2\).
 
-## 5. Chuyển sang Core và Luyện tập
+    ### 3.6. Tính từ dữ kiện tích phân cho trước
 
-Sau khi học kiến thức và tự thử, em luyện đúng Bài 12; hãy tự giải từng câu trước khi nộp để xem lời giải hoặc rubric.
+    **Đề bài.** Cho \(f,g\) liên tục trên \([0;6]\), \(\int_0^6 f=9,\ \int_0^2 f=5,\ \int_2^6 g=-3\) (các tích phân đều theo \(x\)). Tính \(\int_6^2(2f-3g)\,dx\).
 
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b12-core">✎ Core · Bài 12</a><a href="../luyen-tap/#b12-practice">✎ Luyện tập, Vận dụng và Tự luận</a><a href="../luyen-tap/#b12-help">Khi gặp khó khăn</a></nav></div>
+    **Phân tích:** Tìm tích phân \(f\) trên đúng đoạn \([2;6]\), rồi dùng tuyến tính và đảo cận.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(\int_2^6 f\,dx=9-5=4\). Vậy \(\int_2^6(2f-3g)\,dx=2\cdot4-3(-3)=17\). Đảo cận được \(-17\).</p></div>
+
+    **Kiểm lại:** Từng tích phân đã được đưa về cùng hai cận. Không dùng trực tiếp giá trị 9 thay cho tích phân từ 2 đến 6.
+
+    ### 3.7. Giá trị tuyệt đối có hai điểm đổi dấu
+
+    **Đề bài.** Tính \(\int_{-2}^2|x^2-1|\,dx\).
+
+    **Phân tích:** \(x^2-1=0\) tại \(\pm1\). Biểu thức không âm ở hai đoạn ngoài và âm ở đoạn giữa.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Chia đoạn tại \(-1,1\). Do hàm \(|x^2-1|\) chẵn, hai đoạn ngoài cho cùng giá trị. Tích phân bằng \(2\int_1^2(x^2-1)\,dx+\int_{-1}^1(1-x^2)\,dx\).</p><p>Ta có \(\int_1^2(x^2-1)\,dx=[x^3/3-x]_1^2=4/3\), và \(\int_{-1}^1(1-x^2)\,dx=[x-x^3/3]_{-1}^1=4/3\). Tổng bằng \(4\).</p></div>
+
+    **Kiểm lại:** Nếu bỏ dấu giá trị tuyệt đối, tích phân của \(x^2-1\) chỉ bằng \(4/3\); đó không phải đáp án cần tìm.
+
+    ### 3.8. Độ dịch chuyển và tổng quãng đường
+
+    **Đề bài.** Vật chuyển động thẳng, vận tốc \(v(t)=6-3t\) m/s trên \([0;4]\). Tính độ dịch chuyển và quãng đường.
+
+    **Phân tích:** Vận tốc đổi dấu tại \(t=2\). Tích phân \(v\) tính độ dịch chuyển, còn \(|v|\) tính quãng đường.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \(F(t)=6t-\frac32t^2\) là một nguyên hàm của \(v\). \(F(0)=0,F(2)=6,F(4)=0\). Độ dịch chuyển bằng \(F(4)-F(0)=0\) m. Hai chặng có độ dịch chuyển lần lượt \(6\) và \(-6\) m, nên quãng đường bằng \(6+6=12\) m.</p></div>
+
+    **Kiểm lại:** Vật quay về vị trí đầu, không có nghĩa vật đứng yên. Tổng quãng đường luôn lớn hơn hoặc bằng độ lớn độ dịch chuyển.
+
+    ### 3.9. Lợi nhuận thay đổi từ lợi nhuận biên
+
+    **Đề bài.** Lợi nhuận \(P(x)\) tính bằng nghìn đồng khi bán \(x\) sản phẩm, có \(P'(x)=80-0{,}2x\) trên \([100;120]\). Biết \(P(100)=5000\). Tìm mức thay đổi và lợi nhuận khi bán 120 sản phẩm.
+
+    **Phân tích:** Dùng tích phân của lợi nhuận biên. Đơn vị của đạo hàm là nghìn đồng trên một sản phẩm.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(P(120)-P(100)=[80x-0{,}1x^2]_{100}^{120}=1600-0{,}1(14400-10000)=1160\) nghìn đồng.</p><p>Vậy \(P(120)=5000+1160=6160\) nghìn đồng, tức 6,16 triệu đồng.</p></div>
+
+    **Kiểm lại:** Lợi nhuận biên giảm từ 60 xuống 56 nghìn đồng/sản phẩm. Lượng tăng nằm giữa \(56\cdot20=1120\) và \(60\cdot20=1200\).
+
+    ### 3.10. Giá trị trung bình theo bán kính
+
+    **Đề bài.** Trong một mô hình dòng chảy, vận tốc tại khoảng cách \(r\) tính từ tâm ống là \(v(r)=k(R^2-r^2)\), \(0\le r\le R\), với \(k>0,R>0\). Tính giá trị trung bình của \(v\) theo biến \(r\) và so sánh với giá trị lớn nhất.
+
+    **Phân tích:** Trung bình ở đây là trung bình theo chiều dài bán kính, không phải trung bình theo diện tích mặt cắt ống.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> \(\overline v=\frac1R\int_0^R k(R^2-r^2)\,dr=\frac{k}{R}[R^2r-r^3/3]_0^R=\frac23kR^2\).</p><p>Vì \(r^2\ge0\), vận tốc lớn nhất là \(kR^2\) tại tâm \(r=0\). Giá trị trung bình theo \(r\) bằng \(2/3\) vận tốc lớn nhất.</p></div>
+
+    **Kiểm lại:** Vận tốc giảm từ \(kR^2\) đến 0, nên giá trị trung bình nằm giữa hai mốc đó. Không kết luận đây là vận tốc trung bình theo diện tích mặt cắt.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Giữ hằng số C trong tích phân xác định
+
+    **Sai ở đâu:** \(\int_0^2 x\,dx=2+C\).
+
+    **Vì sao sai:** Hiệu hai giá trị của cùng nguyên hàm làm triệt tiêu hằng số.
+
+    **Cách sửa:** Chọn \(F=x^2/2\), viết \(F(2)-F(0)=2\).
+
+    ### 4.2. Đảo cận hoặc quên ngoặc
+
+    **Sai ở đâu:** Viết \(F(a)-F(b)\) thay cho \(F(b)-F(a)\), hoặc chỉ trừ hạng tử đầu khi thế cận dưới.
+
+    **Vì sao sai:** Tích phân tính hiệu của hai giá trị đầy đủ.
+
+    **Cách sửa:** Ghi riêng \(F(b)\), \(F(a)\), rồi trừ có ngoặc. Nếu đảo cận, đổi dấu.
+
+    ### 4.3. Không kiểm cả đoạn lấy tích phân
+
+    **Sai ở đâu:** Tính \(\int_{-1}^1dx/x\) bằng \(\ln|1|-\ln|-1|=0\).
+
+    **Vì sao sai:** Hàm \(1/x\) không liên tục, thậm chí không xác định tại 0. Không có nguyên hàm trên cả đoạn theo điều kiện của bài.
+
+    **Cách sửa:** Kiểm tất cả điểm trong đoạn; không áp dụng công thức tích phân SGK qua điểm không xác định.
+
+    ### 4.4. Coi tích phân luôn bằng diện tích
+
+    **Sai ở đâu:** Tích phân bằng 0 thì miền giữa đồ thị và trục hoành có diện tích 0.
+
+    **Vì sao sai:** Phần dưới trục có thể triệt tiêu phần trên trong phép cộng có dấu.
+
+    **Cách sửa:** Với cận thuận, dùng \(|f|\) khi cần tổng diện tích các phần. Kiểm các điểm đổi dấu.
+
+    ### 4.5. Dùng sai tính tuyến tính
+
+    **Sai ở đâu:** Viết \(\int fg=(\int f)(\int g)\), hoặc tách tổng với các cận khác nhau.
+
+    **Vì sao sai:** Tính tuyến tính chỉ áp dụng cho cộng, trừ, nhân hằng số và cùng hai cận.
+
+    **Cách sửa:** Biến đổi hàm trước nếu cần; tính đúng nguyên hàm hoặc dùng tính cộng theo đoạn.
+
+    ### 4.6. Nhầm độ dịch chuyển với quãng đường
+
+    **Sai ở đâu:** Tính quãng đường bằng trị tuyệt đối của tích phân vận tốc dù vật đổi chiều.
+
+    **Vì sao sai:** Các độ dịch chuyển trái dấu có thể triệt tiêu.
+
+    **Cách sửa:** Tìm điểm đổi dấu của vận tốc, dùng tích phân \(|v|\) hoặc cộng độ lớn từng chặng.
+
+    ### 4.7. Nhầm tổng tích lũy với giá trị trung bình
+
+    **Sai ở đâu:** Dùng trực tiếp \(\int_a^b f(x)\,dx\) làm giá trị trung bình.
+
+    **Vì sao sai:** Tích phân đo lượng tích lũy trên cả đoạn; đơn vị có thêm đơn vị của biến.
+
+    **Cách sửa:** Chia cho \(b-a>0\) và kiểm kết quả có nằm giữa giá trị nhỏ nhất và lớn nhất của hàm liên tục trên đoạn.
+
+    **Học tiếp:** [Core và Luyện tập Bài 12](../luyen-tap/#b12-core) · [Bài 13 — Ứng dụng hình học của tích phân](../bai-13/).
+
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK KNTT Toán 12 tập 2, trang in 12–18. Các ví dụ và hình do SLM biên soạn để hỗ trợ tự học.</p>
