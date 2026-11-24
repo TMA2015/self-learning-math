@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 44/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B12, còn B13–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 45/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B13, còn B14–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B12 CONTENT_READY; B13–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B13 CONTENT_READY; B14–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -57,7 +57,8 @@
 | 12 | B10 | [#1079](https://github.com/TMA2015/self-learning-math/pull/1079) | CONTENT_READY — đã bàn giao |
 | 12 | B11 | [#1080](https://github.com/TMA2015/self-learning-math/pull/1080) | CONTENT_READY — đã bàn giao |
 | 12 | B12 | [#1081](https://github.com/TMA2015/self-learning-math/pull/1081) | CONTENT_READY — đã bàn giao |
-| 12 | B13–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B13 | [#1082](https://github.com/TMA2015/self-learning-math/pull/1082) | CONTENT_READY — đã bàn giao |
+| 12 | B14–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -274,6 +275,16 @@ Asset delta: thêm `docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261
 | [#1081](https://github.com/TMA2015/self-learning-math/pull/1081) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md` | `7faaacd5b9e7379ed273053e87fffc0705c80a6f` | `2ea14427518e58acb03e85d64dcc6b18d55f8798` | `3203313ad151cb44fb6264dcbe896e01b6f30fe0` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg` (`299037dee91e0c91db3e5c911982bbebbb514ae0`); `G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg` (`b04dafd5b4ff5f56be0893d3a52bba5121b64808`).
+
+### Toán 12 B13 — Ứng dụng hình học của tích phân (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đối chiếu [SGK KNTT Toán 12 tập 2 trang in 19–26](https://intracomuni.edu.vn/wp-content/uploads/2026/11/sach-giao-khoa-toan-12-tap-2-ket-noi-tri-thuc-voi-cuoc-song.pdf) và [SGKVN](https://sgkvn.com/lop-12-15/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-iv-nguyen-ham-va-tich-phan-3521/bai-13-ung-dung-hinh-hoc-cua-tich-phan-13002.html). Screenshot PDF cache miss; không tuyên bố kiểm ảnh gốc. Đọc toàn văn mẫu Golden G10 B19. Bốn tab, hai mục đúng SGK: diện tích hình phẳng; thể tích vật thể. Giải thích lát đứng và chiều cao không âm, giao điểm, đổi dấu, miền kín, thặng dư tiêu dùng/sản xuất, Lorenz; diện tích mặt cắt, đồng dạng, suy ra công thức lăng trụ/chóp/chóp cụt, trụ/nón/nón cụt/cầu/chỏm cầu; phân biệt đĩa/vành khăn (mở rộng), bán kính/đường kính và đơn vị. 10 ví dụ, 4 Vận dụng có Đối chiếu/Kiểm lỗi, 7 lỗi thực chất. Ba SVG riêng về hai đồ thị, thiết diện chóp, quay thành nón; PNG cũ giữ trong kho. 41 nhóm tự kiểm: 40 đạt ở snapshot đầu, phát hiện cộng sai hai phần diện tích, sửa thành 1/6+5/6=1 và kiểm lại bằng tích phân số Simpson (0,1666667+0,8333333=1), readback xác nhận delta duy nhất. Các kết quả trước được bảo toàn. Kiểm tọa độ hình, tính liên tục/điều kiện, cấu trúc bốn tab, tập OUTCOME_ID/FIRST_TRY_ID không đổi. Diff chỉ canonical và ba SVG B13.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1082](https://github.com/TMA2015/self-learning-math/pull/1082) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md` | `546fdbeaa1080b169876592d9ee945b9434a51be` | `51b5cf8243b4793e159db862379a21df60ff75bd` | `6b782fbfdba8fed2eed5ce8423b6f9d1da451246` |
+
+Asset delta tại `docs/assets/images/thpt/`: `G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg` (`af5e42bcb3b150c706d472a92be96399b480e02c`); `G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg` (`9fb3c7377877eaea2b5de466659c85437e95a7b7`); `G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg` (`01143627de4f6c90e3a74f6945c284c76f256c4a`).
 
 ## Cách cập nhật
 
