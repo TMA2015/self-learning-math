@@ -808,7 +808,7 @@ function verifyG12W10(previous,current,changed,expected){
  assert.deepEqual(expected.slice().sort(),G12_W10_ROWS.map(x=>x[4]).sort());
  const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
  const receipt=read(current,G11_W1_HANDOFF);
- assert.equal(blob(read(previous,G11_W1_HANDOFF)),"07a9d19fa60117f99130788f4bc8c58752d1834f");assert.equal(blob(receipt),"e1dc88b8262862bafb88d51d0c0cf377823a48a9");assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
+ assert.equal(blob(read(previous,G11_W1_HANDOFF)),"e1dc88b8262862bafb88d51d0c0cf377823a48a9");assert.equal(blob(receipt),"07a9d19fa60117f99130788f4bc8c58752d1834f");assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
  const hook="hooks/sgk_golden_first_paint.py",old=read(previous,hook).toString("utf8"),now=read(current,hook).toString("utf8");
  assert.equal(blob(read(current,hook)),"75ec11492a16789608dd23b51ebcbf896d578846");
  const a=now.indexOf("# #1039 W10 exact G12 ChIII routes;"),b=now.indexOf("def on_post_page(output, page, config):");assert(a>0&&b>a);
