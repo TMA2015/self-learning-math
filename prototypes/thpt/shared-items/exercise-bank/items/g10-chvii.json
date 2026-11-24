@@ -1536,12 +1536,14 @@
   },
   {
     "item_id": "THPT-G10-CHVII-TRY-ELLIPSE-TR01",
-    "content_version": "SOURCE_BLOB_0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
-    "stem": "Mái nửa elip rộng **12 m**, cao **4 m** tại tâm. Đặt O ở giữa nền, Ox dọc nền. (a) Viết phương trình elip đầy đủ và điều kiện miền mái. (b) Tại x=3 m, mái cao bao nhiêu?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Mái nửa elip rộng **12 m**, cao **4 m** tại tâm. Đặt O ở giữa nền, Ox dọc nền, Oy hướng thẳng đứng lên trên. (a) Viết phương trình elip đầy đủ và điều kiện miền mái. (b) Tại x=3 m, mái cao bao nhiêu?",
+    "answer_key": "x²/36+y²/16=1; y≥0, |x|≤6; tại x=3, y=2√3 m≈3,464 m.",
     "worked_solution": "Bán trục ngang 6, bán trục đứng 4: `x²/36+y²/16=1`, **y≥0**, |x|≤6. Tại x=3, `y=4√(1−9/36)=2√3≈3,464 m`. Không lấy y âm hoặc dùng a=12. Nếu sai, xem `HELP-G10-CHVII-ELLIPSE-TR01`.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-ELLIPSE_PARAMETERS"
+    ],
     "original_outcome_ids": [
       "G10-B22-ELLIPSE_PARAMETERS"
     ],
@@ -1564,16 +1566,18 @@
       "help_ref": "HELP-G10-CHVII-ELLIPSE-TR01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G10-CHVII-TRY-HYPERBOLA-TR01",
-    "content_version": "SOURCE_BLOB_0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
-    "stem": "Hai trạm cách nhau **60 km**, phát đồng thời; tốc độ truyền **100.000 km/s**, chênh thời gian nhận **0,0002 s**. Hãy tính 2a, c, b² và kiểm điều kiện có hypebol thực. Dữ kiện chưa nói trạm nào đến trước: có thể chọn nhánh không?",
-    "answer_key": null,
-    "worked_solution": "Hiệu quãng đường `vΔt=100000·0,0002=20 km`, nên `2a=20`, `a=10 km`, `2c=60`, `c=30 km`, `b²=c²−a²=900−100=800 km²`. Vì `0<20<60`, dữ kiện hình học phù hợp hypebol. **Chưa đủ thông tin trạm nào nhận trước** nên chưa thể chọn nhánh. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai trạm A và B cách nhau **60 km**, phát tín hiệu đồng thời với cùng tốc độ **100.000 km/s**. Tại máy thu P, độ lớn chênh lệch thời gian nhận hai tín hiệu là **0,0002 s**. Hãy tính 2a, c, b² và kiểm điều kiện có hypebol không suy biến. Chưa biết tín hiệu của trạm nào đến P trước: có thể chọn nhánh không?",
+    "answer_key": "2a=20 km; c=30 km; b²=800 km²; 0<20<60 nên hypebol không suy biến; chưa chọn được nhánh.",
+    "worked_solution": "Vì hai trạm phát đồng thời và tín hiệu truyền cùng tốc độ, |PA−PB|=vΔt=100000·0,0002=20 km. Do đó 2a=20 km, a=10 km; 2c=60 km, c=30 km; b²=c²−a²=900−100=800 km². Vì 0<20<60 nên quỹ tích là hypebol không suy biến. Chỉ biết độ lớn chênh lệch thời gian, chưa biết tín hiệu của trạm nào đến P trước nên không thể chọn nhánh. Nếu biết tín hiệu B đến trước, P gần B hơn và thuộc nhánh phía B; tương tự với A. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_PARAMETERS"
+    ],
     "original_outcome_ids": [
       "G10-B22-HYPERBOLA_PARAMETERS"
     ],
@@ -1596,6 +1600,6 @@
       "help_ref": "HELP-G10-CHVII-HYPERBOLA-TR01"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
