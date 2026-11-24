@@ -400,7 +400,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhận x=−1 sau bình phương, kiểm vế phải x−1≥0 trước; tại −1, vế trái bằng 2 còn vế phải −2. Ôn Bài 18 §2.2 / HELP-G10-CHVI-TRY17; luyện THPT-G10-B18-P01."
   },
   {
     "item_id": "THPT-G10-B18-C02",
@@ -431,7 +432,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu bỏ x=−4 vì cho rằng căn phải dương, kiểm cả hai căn được phép bằng 0; đặt u=x+4≥0 rồi xét u=0 và u=1. Ôn Bài 18 §2.1 / HELP-G10-CHVI-TRY16; luyện THPT-TOP03-ADD15."
   },
   {
     "item_id": "THPT-G10-B18-P01",
@@ -462,7 +464,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhận −1, thử trực tiếp hai vế và kiểm x≥0; giữ x=4. Ôn Bài 18 §2.2 / HELP-G10-CHVI-TRY18; luyện THPT-TOP03-ADD13."
   },
   {
     "item_id": "THPT-G10-B18-P02",
@@ -493,7 +496,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ ghi một nghiệm, kiểm cả 0 và 6 trong phương trình gốc; điều kiện x≥−3 không loại nghiệm nào. Ôn Bài 18 §2.2 / HELP-G10-CHVI-TRY17; luyện THPT-TOP03-ADD16."
   },
   {
     "item_id": "THPT-G10-B18-P03",
@@ -524,7 +528,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhận −4, thay vào x+3 và nhận ra căn không xác định trong ℝ. Kiểm đồng thời hai biểu thức dưới căn trước khi bình phương. Ôn Bài 18 §2.1 / HELP-G10-CHVI-TRY16; luyện THPT-TOP03-ADD17."
   },
   {
     "item_id": "THPT-G10-B18-P04",
@@ -555,7 +560,8 @@
       }
     },
     "exposure": "FORMATIVE_ONLY",
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm cạnh huyền hoặc quên độ dài dương, phác tam giác vuông, đánh dấu x+1 là cạnh huyền rồi kiểm x>0 và hệ thức Pitago. Ôn Bài 18 mục ứng dụng độ dài / HELP-G10-CHVI-TRY19; luyện THPT-TOP03-ADD21."
   },
   {
     "item_id": "THPT-CORE-QF01",
