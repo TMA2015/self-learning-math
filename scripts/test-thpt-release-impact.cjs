@@ -580,6 +580,9 @@ const G11_W5_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/t
 const G11_W5_FILES=new Set(["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md","docs/assets/images/thpt/G11_B20_DECREASING_EXP_LOG_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG11W5(files){return files.length===G11_W5_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W5_FILES.has(p));}
 
+const G12_W12_LESSONS=["docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md"];
+const G12_W12_FILES=new Set(["docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md","docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md","docs/assets/images/thpt/G12_B14_FIG01_NORMAL_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B14_FIG02_DISTANCE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B15_FIG01_PARAMETER_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B15_FIG02_SKEW_PERP_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B16_FIG01_LINE_ANGLE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B16_FIG02_LINE_PLANE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B16_FIG03_PLANE_ANGLE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B17_SECTION_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B17_GREAT_CIRCLE_AUTHORING_20261124.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
+function isG12W12(files){return files.length===G12_W12_FILES.size&&new Set(files).size===files.length&&files.every(p=>G12_W12_FILES.has(p));}
 const G12_W11_LESSONS=["docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md"];
 const G12_W11_FILES=new Set(["docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-12.md","docs/thpt-preview/sgk/lop-12/chuong-iv/bai-13.md","docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B12_FIG01_AREA_DERIVATIVE_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B12_FIG02_SIGNED_AREA_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg","docs/assets/images/thpt/G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-sgk-golden-first-paint.cjs","scripts/test-thpt-scoped-lesson-browser.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG12W11(files){return files.length===G12_W11_FILES.size&&new Set(files).size===files.length&&files.every(p=>G12_W11_FILES.has(p));}
@@ -605,6 +608,7 @@ function classify(paths,{manual=false}={}){
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isG12W12(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W12_LESSONS.join(","),reason:"OWNER_1039_W12_EXACT_SOURCE_AND_BROWSER"};
  if(isG12W11(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W11_LESSONS.join(","),reason:"OWNER_1039_W11_EXACT_SOURCE_AND_BROWSER"};
  if(isG12W10(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W10_LESSONS.join(","),reason:"OWNER_1039_W10_EXACT_SOURCE_AND_BROWSER"};
  if(isG12W9(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W9_LESSONS.join(","),reason:"OWNER_1039_W9_EXACT_SOURCE_AND_BROWSER"};
@@ -754,6 +758,13 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const g12W12=[...G12_W12_FILES];
+ assert.equal(classify(g12W12).impact,"SCOPED_LESSON");
+ assert.equal(classify(g12W12).changed_lessons,G12_W12_LESSONS.join(","));
+ assert.equal(classify(g12W12.slice(1)).impact,"FULL");
+ assert.equal(classify([...g12W12,"docs/thpt-preview/sgk/lop-12/chuong-v/luyen-tap.md"]).impact,"FULL");
+ assert.equal(classify([...g12W12,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
+ assert.equal(classify(g12W12,{manual:true}).impact,"FULL");
  const g12W11=[...G12_W11_FILES];
  assert.equal(classify(g12W11).impact,"SCOPED_LESSON");
  assert.equal(classify(g12W11).changed_lessons,G12_W11_LESSONS.join(","));
