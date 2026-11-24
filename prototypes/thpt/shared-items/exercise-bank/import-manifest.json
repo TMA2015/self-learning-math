@@ -15099,6 +15099,292 @@
         "Rubric/stem alignment and optional scope enforcement before interaction; language consistency CHV; wheel motion model G11 CHI-03 needs clarification.",
         "No fresh original SGK PDF reading, complete PED/D6/reveal or independent review."
       ]
+    },
+    "public_selfcheck_followup": {
+      "checkpoint": 47,
+      "baseline": "ad501a3f305db62e9a34c58a72947d4e8417f25d",
+      "files": [
+        {
+          "path": "items/g10-chvi-public-selfcheck.json",
+          "before": "8dbb731f2d5987efe4b50318dd4a59d9e9cf79a3",
+          "after": "e71fc0f643b44b25c10b41bfd502f86d37cfa55a",
+          "changed": [
+            "THPT-G10-B15-R01",
+            "THPT-G10-B15-R02",
+            "THPT-G10-B15-R03",
+            "THPT-G10-B15-R05",
+            "THPT-G10-B16-R01",
+            "THPT-G10-B16-R02",
+            "THPT-G10-B16-R03",
+            "THPT-G10-B16-R04",
+            "THPT-G10-B16-R05",
+            "THPT-G10-B17-R01",
+            "THPT-G10-B17-R02",
+            "THPT-G10-B17-R03",
+            "THPT-G10-B17-R04",
+            "THPT-G10-B18-R01",
+            "THPT-G10-B18-R02",
+            "THPT-G10-B18-R03",
+            "THPT-G10-B18-R04",
+            "THPT-G10-B16-R06",
+            "THPT-G10-B17-R05"
+          ],
+          "unchanged": 1
+        },
+        {
+          "path": "placements/sgk-g10.json",
+          "before": "223272aa94543a6131d08c5972bf1fd64c1df045",
+          "after": "240d485678b3182add1fb3acd7035e6fc9994e08",
+          "changed": [
+            "THPT-G10-B15-R01",
+            "THPT-G10-B15-R02",
+            "THPT-G10-B15-R03",
+            "THPT-G10-B15-R04",
+            "THPT-G10-B15-R05",
+            "THPT-G10-B16-R01",
+            "THPT-G10-B16-R02",
+            "THPT-G10-B16-R03",
+            "THPT-G10-B16-R04",
+            "THPT-G10-B16-R05",
+            "THPT-G10-B17-R01",
+            "THPT-G10-B17-R02",
+            "THPT-G10-B17-R03",
+            "THPT-G10-B17-R04",
+            "THPT-G10-B18-R01",
+            "THPT-G10-B18-R02",
+            "THPT-G10-B18-R03",
+            "THPT-G10-B18-R04",
+            "THPT-G10-B16-R06",
+            "THPT-G10-B17-R05"
+          ],
+          "unchanged": 513
+        },
+        {
+          "path": "items/g10-chi-public-selfcheck.json",
+          "before": "90bab261104d1583eebf99cb3fa052075821935a",
+          "after": "c355ca49b3a7ae9c88df01244ae4740f06eddaab",
+          "changed": [
+            "THPT-G10-CHI-RD1-01",
+            "THPT-G10-CHI-RD1-02",
+            "THPT-G10-CHI-RD1-07",
+            "THPT-G10-CHI-RD1-08"
+          ],
+          "unchanged": 10
+        },
+        {
+          "path": "items/g10-chii-public-selfcheck.json",
+          "before": "990c44bc35039363ca3b2f28a3a46654f090ac36",
+          "after": "b452bc5e89e7fe7f0d746222a978f83f5403d182",
+          "changed": [
+            "THPT-G10-CHII-RD1-02",
+            "THPT-G10-CHII-RD1-07",
+            "THPT-G10-CHII-RD1-08"
+          ],
+          "unchanged": 11
+        },
+        {
+          "path": "items/g10-chviii-public-selfcheck.json",
+          "before": "1a7cfe9a8518151593c80fa2816e317e33a1cacc",
+          "after": "e864d82a7f9a5e43b88c57fecf431008167386d6",
+          "changed": [
+            "THPT-G10-CHVIII-RD1-01",
+            "THPT-G10-CHVIII-RD1-05",
+            "THPT-G10-CHVIII-RD1-07",
+            "THPT-G10-CHVIII-RD1-11"
+          ],
+          "unchanged": 10
+        },
+        {
+          "path": "items/g11-chi-public-selfcheck.json",
+          "before": "35fb04310097c429541acc79dc24627585cc9515",
+          "after": "0d301e1bab11589980dc1f3b2834d3b74ad69368",
+          "changed": [
+            "THPT-G11-CHI-RD1-03",
+            "THPT-G11-CHI-RD1-11",
+            "THPT-G11-CHI-RD1-17"
+          ],
+          "unchanged": 17
+        },
+        {
+          "path": "items/g10-chv-public-selfcheck.json",
+          "before": "10d853defda16ddedc93baf94f0c6a52ab16586e",
+          "after": "6ce779070f04ea86a1352276de6034ae7f5fc609",
+          "changed": [
+            "THPT-G10-CHV-RD1-08",
+            "THPT-G10-CHV-RD1-11",
+            "THPT-G10-CHV-RD1-12",
+            "THPT-G10-CHV-RD1-13",
+            "THPT-G10-CHV-RD1-14",
+            "THPT-G10-CHV-RD1-15",
+            "THPT-G10-CHV-RD1-16",
+            "THPT-G10-CHV-RD1-17",
+            "THPT-G10-CHV-RD1-18"
+          ],
+          "unchanged": 9
+        }
+      ],
+      "source_outcome_evidence": {
+        "B15": "ee38fdfeddc78a22a527a6a7449347f86eeee422",
+        "B16": "190f351516932caf0b8a417132f15e7915f79993",
+        "B17": "bbfc3fdb1e2a5e153bfe20f933fbf8844263552a",
+        "B18": "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
+        "skill_bank": "fe70233d0a9936364acaa51b8c6367deb6c2d7ca"
+      },
+      "mapped": [
+        {
+          "item_id": "THPT-G10-B15-R01",
+          "outcome_id": "B15_OUT_01",
+          "skill_ids": [
+            "FUNCTION_MAPPING",
+            "FUNCTION_DOMAIN"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B15-R02",
+          "outcome_id": "B15_OUT_05",
+          "skill_ids": [
+            "FUNCTION_PIECEWISE"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B15-R03",
+          "outcome_id": "B15_OUT_04",
+          "skill_ids": [
+            "FUNCTION_MONOTONICITY"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B15-R04",
+          "outcome_id": "B15_OUT_03",
+          "skill_ids": []
+        },
+        {
+          "item_id": "THPT-G10-B15-R05",
+          "outcome_id": "B15_OUT_02",
+          "skill_ids": [
+            "FUNCTION_DOMAIN"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B16-R01",
+          "outcome_id": "B16_OUT_04",
+          "skill_ids": [
+            "B16_OUT_04",
+            "B16_OUT_02"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B16-R02",
+          "outcome_id": "B16_OUT_03",
+          "skill_ids": [
+            "B16_OUT_03",
+            "B16_OUT_02"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B16-R03",
+          "outcome_id": "B16_OUT_05",
+          "skill_ids": [
+            "B16_OUT_05"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B16-R04",
+          "outcome_id": "B16_OUT_05",
+          "skill_ids": [
+            "B16_OUT_05"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B16-R05",
+          "outcome_id": "B16_OUT_01",
+          "skill_ids": [
+            "B16_OUT_01"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B17-R01",
+          "outcome_id": "B17_OUT_03",
+          "skill_ids": [
+            "QUAD_INEQUALITY"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B17-R02",
+          "outcome_id": "B17_OUT_04",
+          "skill_ids": [
+            "QUAD_PARAMETER"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B17-R03",
+          "outcome_id": "B17_OUT_02",
+          "skill_ids": [
+            "QUAD_DOUBLE_ROOT_SIGN",
+            "QUAD_INEQUALITY"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B17-R04",
+          "outcome_id": "B17_OUT_05",
+          "skill_ids": [
+            "QUAD_MODELING"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B18-R01",
+          "outcome_id": "B18_OUT_03",
+          "skill_ids": [
+            "RADICAL_CONDITION",
+            "RADICAL_FILTER"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B18-R02",
+          "outcome_id": "B18_OUT_01",
+          "skill_ids": [
+            "RADICAL_TWO_SIDES",
+            "RADICAL_DOMAIN"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B18-R03",
+          "outcome_id": "B18_OUT_01",
+          "skill_ids": [
+            "RADICAL_TWO_SIDES",
+            "RADICAL_DOMAIN",
+            "RADICAL_FILTER"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B18-R04",
+          "outcome_id": "B18_OUT_04",
+          "skill_ids": [
+            "RADICAL_MODELING"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B16-R06",
+          "outcome_id": "B16_OUT_04",
+          "skill_ids": [
+            "B16_OUT_04"
+          ]
+        },
+        {
+          "item_id": "THPT-G10-B17-R05",
+          "outcome_id": "B17_OUT_01",
+          "skill_ids": [
+            "QUAD_SIGN",
+            "QUAD_DOUBLE_ROOT_SIGN"
+          ]
+        }
+      ],
+      "notes": [
+        "20/20 primary outcomes mapped to existing actual learner IDs in placement; original_outcome_text preserved exactly (18 historical blanks, not fabricated). 19/20 have existing skill codes; B15-R04 and analogous TRY03 have none verified, retain outcome B15_OUT_03 without inventing taxonomy.",
+        "11 rubric clarifications: score only requested selection/true-false; explanation is self-comparison feedback, not separately scored. No auto-grading enabled.",
+        "9 CHV items Vietnamese statistical terminology/units; same math. G11 CHI-03 fixed-axis unidirectional rotation; -11 domain; -17 explicit tan domain. CHVI B16-R03 time unit, B17-R05 complete key for part c. No change to original mathematical results.",
+        "Original source blobs, IDs, exposure, interaction and counts preserved. Delta A/C as appropriate, not new independent verdict. Full S1/PED/D6 and reveal enforcement pending."
+      ]
     }
   }
 }
