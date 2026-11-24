@@ -8,7 +8,9 @@
     "ab878f1a18dea87872449a79c27b75a612d81b39",
     "2e93db80384de53e208248eaa0396a7f487302ac",
     "95a554e31a613b8e215679fe6790738473d598df",
-    "89ae1cd2338f2c5c48b9af874a8b52b1306c8acd"
+    "89ae1cd2338f2c5c48b9af874a8b52b1306c8acd",
+    "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
+    "e10e57d7684497b0dfa9325af766a75b7cfa239f"
   ],
   "projection_sources": [
     {
@@ -105,20 +107,55 @@
       "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
       "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-chii-reviewed-formative-v1.js",
+      "blob": "c258edc212022944c0e0e4693c5efffb72754f4a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ii.md",
+      "blob": "6ff217b4c24a248a8120bc1f964476b4966eca83",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd02/luyen-tap.md",
+      "blob": "3a7fca2aaabee8128e280325822671c1d1e76a73",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd02/tu-kiem-tra.md",
+      "blob": "9c6b28e200eb51da2b42f8c68634aeaeefe61ea2",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g10-readiness/CHII.json",
+      "blob": "7f35aa93193f886490754237bf0f3f6209eabe86",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-ii/tu-kiem-tra-chuong.md",
+      "blob": "665e2c482f3075b40c16bdc442b94d7f1914a5c1",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+      "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 158,
-    "written_references": 26,
-    "topic_practice": 189,
-    "topic_replay": 64,
-    "sgk_public_selfcheck": 42,
-    "placements": 391,
+    "formative_items": 192,
+    "written_references": 30,
+    "topic_practice": 227,
+    "topic_replay": 80,
+    "sgk_public_selfcheck": 56,
+    "placements": 477,
     "projection_field_differences": 0,
-    "public_selfcheck_only_items": 14,
+    "public_selfcheck_only_items": 28,
     "unstructured_projection_review": 12
   },
-  "scope": "CD01/05/07/08 + G10 ChI + G11 ChII/ChV public formative, public self-check and written references",
+  "scope": "CD01/02/05/07/08 + G10 ChI/ChII + G11 ChII/ChV public formative, public self-check and written references",
   "projection_field_differences": [],
   "academic_audit": "PENDING",
   "interaction_conversion": "PENDING",
@@ -192,6 +229,30 @@
         {
           "path": "docs/thpt-preview/chuyen-de/cd01/tu-kiem-tra.md",
           "blob": "9ea39f0f9aded526ba1fc1b1622fb0c84a48ad43",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        }
+      ]
+    },
+    {
+      "topic": "CD02",
+      "new_formative": 18,
+      "new_written": 2,
+      "shared_sgk_formative": 16,
+      "shared_written": 2,
+      "practice": 38,
+      "replay": 16,
+      "placements": 54,
+      "answer_table_rows_checked": 16,
+      "source_blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "projection_sources": [
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd02/luyen-tap.md",
+          "blob": "3a7fca2aaabee8128e280325822671c1d1e76a73",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        },
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd02/tu-kiem-tra.md",
+          "blob": "9c6b28e200eb51da2b42f8c68634aeaeefe61ea2",
           "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
         }
       ]
@@ -283,5 +344,5 @@
       "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
     }
   ],
-  "public_legacy_selfcheck_note": "14 already-public client items, exact historical RD1 IDs retained, actual runtime/pages and owner #662 checked; no private RD1, independent credit or Mastery."
+  "public_legacy_selfcheck_note": "28 already-public client items, exact historical RD1 IDs retained, actual runtime/pages and owner #662 checked; no private RD1, independent credit or Mastery."
 }

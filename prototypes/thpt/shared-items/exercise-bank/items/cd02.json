@@ -1,0 +1,470 @@
+[
+  {
+    "item_id": "THPT-TOP02-ADD01",
+    "content_version": "R01",
+    "stem": "-2(3x−1)≤8. Giải bất phương trình và giải thích bước đảo chiều.",
+    "answer_key": "x≥−1.",
+    "worked_solution": "−6x+2≤8 ⇒ −6x≤6. Chia cả hai vế cho −6 (âm) phải đổi ≤ thành ≥, nên x≥−1; thử x=−1 cho bằng, x=0 cho 2≤8.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O01"
+    ],
+    "problem_type_id": "TOP02-O01-FAM-ADD01",
+    "difficulty": "Nhận biết",
+    "hints": [],
+    "remediation": "Đảo chiều khi nhân/chia số âm; TOP02-M01.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD01 · TOP02-O01",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD02",
+    "content_version": "R01",
+    "stem": "Chứng minh x²−6x+9≥0 với mọi số thực x; khi nào xảy ra dấu bằng?",
+    "answer_key": "Đúng với mọi x∈ℝ; bằng 0 khi x=3.",
+    "worked_solution": "x²−6x+9=(x−3)²≥0 do bình phương số thực không âm; dấu bằng ⇔ x−3=0 ⇔ x=3. Đây là chứng minh bất đẳng thức bằng biểu diễn dạng bình phương.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O01"
+    ],
+    "problem_type_id": "TOP02-O01-FAM-ADD02",
+    "difficulty": "Thông hiểu",
+    "hints": [],
+    "remediation": "Nhầm x²≥0 với x²>0; TOP02-M01.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD02 · TOP02-O01",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD03",
+    "content_version": "R01",
+    "stem": "Cho f(x)=2x²−5x+2. Tìm a, Δ, nghiệm và dạng phân tích thành nhân tử.",
+    "answer_key": "a=2, Δ=9, nghiệm 1/2 và 2; f(x)=(2x−1)(x−2).",
+    "worked_solution": "a=2,b=−5,c=2 nên Δ=b²−4ac=25−16=9; x=(5±3)/4 ∈{1/2,2}. Nhân (2x−1)(x−2)=2x²−5x+2.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O02"
+    ],
+    "problem_type_id": "TOP02-O02-FAM-ADD03",
+    "difficulty": "Thông hiểu",
+    "hints": [],
+    "remediation": "Quên chia 2a hoặc sai b âm; TOP02-M02.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD03 · TOP02-O02",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD04",
+    "content_version": "R01",
+    "stem": "f(x)=x²+6x+9 có bao nhiêu nghiệm phân biệt và Δ bằng bao nhiêu?",
+    "answer_key": "Δ=0; một nghiệm kép x=−3.",
+    "worked_solution": "Δ=36−4·1·9=0; f(x)=(x+3)². Tam thức chạm trục Ox tại −3, không đi xuyên qua trục.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O02"
+    ],
+    "problem_type_id": "TOP02-O02-FAM-ADD04",
+    "difficulty": "Thông hiểu",
+    "hints": [],
+    "remediation": "Nhầm nghiệm kép với hai nghiệm phân biệt; TOP02-M02.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD04 · TOP02-O02",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD05",
+    "content_version": "R01",
+    "stem": "Xét dấu f(x)=x²−2x+5 trên ℝ mà không cần tìm nghiệm.",
+    "answer_key": "f(x)>0 với mọi x∈ℝ.",
+    "worked_solution": "Hoàn phương f(x)=(x−1)²+4>0; tương đương a=1>0, Δ=4−20=−16<0, luôn cùng dấu a.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O03"
+    ],
+    "problem_type_id": "TOP02-O03-FAM-ADD05",
+    "difficulty": "Thông hiểu",
+    "hints": [],
+    "remediation": "Thấy Δ<0 rồi kết luận vô nghiệm dấu bất đẳng thức; TOP02-M03.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD05 · TOP02-O03",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD06",
+    "content_version": "R01",
+    "stem": "Chứng minh g(x)=−2x²+4x−5 âm với mọi x∈ℝ.",
+    "answer_key": "g(x)<0 với mọi x∈ℝ.",
+    "worked_solution": "g(x)=−2(x−1)²−3 ≤−3<0. Hệ số đầu âm và Δ<0 nên không đổi dấu.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O03"
+    ],
+    "problem_type_id": "TOP02-O03-FAM-ADD06",
+    "difficulty": "Thông hiểu",
+    "hints": [],
+    "remediation": "Đoán dấu qua hệ số b mà quên a; TOP02-M03.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD06 · TOP02-O03",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD07",
+    "content_version": "R01",
+    "stem": "Xác định nơi f(x)=3(x−2)² bằng 0, dương và âm.",
+    "answer_key": "Bằng 0 tại x=2; dương với x≠2; không âm tại mọi x, không âm có dấu bằng.",
+    "worked_solution": "Hệ số 3>0 và bình phương không âm; bằng 0 duy nhất khi x=2. Với x≠2 bình phương dương, không có miền âm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O04"
+    ],
+    "problem_type_id": "TOP02-O04-FAM-ADD07",
+    "difficulty": "Nhận biết",
+    "hints": [],
+    "remediation": "Bỏ điểm nghiệm kép khi giải ≥ hoặc ≤; TOP02-M04.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD07 · TOP02-O04",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD08",
+    "content_version": "R01",
+    "stem": "Xác định nơi g(x)=−(x+1)² bằng 0, âm và dương.",
+    "answer_key": "Bằng 0 tại x=−1; âm với x≠−1; không bao giờ dương.",
+    "worked_solution": "Bình phương ≥0; đổi dấu bằng trừ làm g≤0. Chỉ khi x+1=0 thì g=0. Đi qua không? Không, đồ thị tiếp xúc Ox.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O04"
+    ],
+    "problem_type_id": "TOP02-O04-FAM-ADD08",
+    "difficulty": "Nhận biết",
+    "hints": [],
+    "remediation": "Nhầm tiếp xúc với cắt qua trục; TOP02-M04.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD08 · TOP02-O04",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD09",
+    "content_version": "R01",
+    "stem": "Lập bảng dấu của f(x)=x²−4x+3.",
+    "answer_key": "Nghiệm 1,3; f>0 trên (−∞,1)∪(3,+∞), f<0 trên (1,3), f=0 ở 1,3.",
+    "worked_solution": "f(x)=(x−1)(x−3), hệ số đầu dương. Ngoài hai nghiệm hai thừa số cùng dấu nên tích dương; trong hai nghiệm trái dấu nên tích âm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O05"
+    ],
+    "problem_type_id": "TOP02-O05-FAM-ADD09",
+    "difficulty": "Thông hiểu",
+    "hints": [],
+    "remediation": "Đảo dấu ngoài/trong hai nghiệm; TOP02-M05.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD09 · TOP02-O05",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD10",
+    "content_version": "R01",
+    "stem": "Tìm các x làm −x²+x+6>0.",
+    "answer_key": "x∈(−2,3).",
+    "worked_solution": "−x²+x+6=−(x−3)(x+2); hai nghiệm −2,3, hệ số đầu âm nên tam thức dương giữa hai nghiệm, không lấy biên do >0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O05"
+    ],
+    "problem_type_id": "TOP02-O05-FAM-ADD10",
+    "difficulty": "Thông hiểu",
+    "hints": [],
+    "remediation": "Sai dấu của a âm; TOP02-M05.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD10 · TOP02-O05",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD11",
+    "content_version": "R01",
+    "stem": "Giải x²−7x+12<0, ghi tập nghiệm bằng khoảng.",
+    "answer_key": "(3,4).",
+    "worked_solution": "x²−7x+12=(x−3)(x−4). Tích âm khi 3<x<4. Dấu < nghiêm ngặt nên bỏ hai đầu mút.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O06"
+    ],
+    "problem_type_id": "TOP02-O06-FAM-ADD11",
+    "difficulty": "Vận dụng",
+    "hints": [],
+    "remediation": "Sai ngoặc tròn/vuông ở nghiệm; TOP02-M06.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD11 · TOP02-O06",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD12",
+    "content_version": "R01",
+    "stem": "Giải −x²+5x−6≥0.",
+    "answer_key": "[2,3].",
+    "worked_solution": "−x²+5x−6=−(x−2)(x−3)≥0 ⇔ (x−2)(x−3)≤0. Nghiệm [2,3], gồm hai đầu mút vì ≥0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O06"
+    ],
+    "problem_type_id": "TOP02-O06-FAM-ADD12",
+    "difficulty": "Vận dụng",
+    "hints": [],
+    "remediation": "Quên đảo dấu khi nhân −1; TOP02-M06.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD12 · TOP02-O06",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD13",
+    "content_version": "R01",
+    "stem": "Tìm các tham số thực m để x²−2mx+9>0 với mọi x∈ℝ.",
+    "answer_key": "−3<m<3.",
+    "worked_solution": "a=1>0 cố định; điều kiện dương nghiêm ngặt trên ℝ là Δ<0. Δ=(−2m)²−36=4(m²−9)<0 ⇔ m²<9 ⇔ −3<m<3. Ở |m|=3 đồ thị chạm 0 nên không thỏa >.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O07"
+    ],
+    "problem_type_id": "TOP02-O07-FAM-ADD13",
+    "difficulty": "Vận dụng",
+    "hints": [],
+    "remediation": "Nhầm Δ≤0 với >0 toàn miền; TOP02-M07.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD13 · TOP02-O07",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD14",
+    "content_version": "R01",
+    "stem": "Tìm các m thực để x²−2mx+4≥0 với mọi x∈ℝ.",
+    "answer_key": "−2≤m≤2.",
+    "worked_solution": "a=1>0; không âm trên ℝ ⇔ Δ≤0. Δ=4(m²−4)≤0 ⇔ |m|≤2. Ở m=±2 tam thức là bình phương, có thể bằng 0 nên vẫn đạt ≥.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O07"
+    ],
+    "problem_type_id": "TOP02-O07-FAM-ADD14",
+    "difficulty": "Vận dụng",
+    "hints": [],
+    "remediation": "Nhầm nghiêm ngặt với không nghiêm ngặt; TOP02-M07.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD14 · TOP02-O07",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD15",
+    "content_version": "R01",
+    "stem": "Một khu vườn hình chữ nhật có hai cạnh dài x và 12−x mét, 0<x<12. Tìm x để diện tích ít nhất 35 m².",
+    "answer_key": "x∈[5,7] mét.",
+    "worked_solution": "S=x(12−x)≥35 ⇔ −x²+12x−35≥0 ⇔ (x−5)(x−7)≤0. Suy ra 5≤x≤7, đều nằm trong miền độ dài 0<x<12.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O08"
+    ],
+    "problem_type_id": "TOP02-O08-FAM-ADD15",
+    "difficulty": "Vận dụng",
+    "hints": [],
+    "remediation": "Quên ràng buộc độ dài dương và dấu ≥; TOP02-M08.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD15 · TOP02-O08",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD16",
+    "content_version": "R01",
+    "stem": "Mô hình độ cao (mét) theo thời gian t≥0 (giây): h(t)=−5t²+20t+1. Trong khoảng thời gian nào h(t)≥16?",
+    "answer_key": "t∈[1,3] giây.",
+    "worked_solution": "−5t²+20t+1≥16 ⇔ −5(t²−4t+3)≥0 ⇔ (t−1)(t−3)≤0 ⇔ t∈[1,3]. Điều kiện t≥0 được đáp ứng; chỉ diễn giải trong mô hình.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O08"
+    ],
+    "problem_type_id": "TOP02-O08-FAM-ADD16",
+    "difficulty": "Vận dụng",
+    "hints": [],
+    "remediation": "Quên thời gian t≥0 hoặc đổi dấu sai; TOP02-M08.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD16 · TOP02-O08",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD17",
+    "content_version": "R01",
+    "stem": "Bất phương trình 0x+5y≥10 có phải bậc nhất hai ẩn không? Cho một nghiệm và một điểm không thỏa.",
+    "answer_key": "Có (a,b)=(0,5)≠(0,0). (9,3) thỏa, (0,1) không thỏa.",
+    "worked_solution": "Bậc nhất hai ẩn cho phép một hệ số bằng 0, miễn không đồng thời bằng 0. Thế (9,3): 15≥10 đúng; (0,1):5≥10 sai.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O09"
+    ],
+    "problem_type_id": "TOP02-O09-FAM-ADD17",
+    "difficulty": "Thông hiểu",
+    "hints": [],
+    "remediation": "Sai khi nghĩ phải xuất hiện cả x và y; TOP02-M09.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD17 · TOP02-O09",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP02-ADD18",
+    "content_version": "R01",
+    "stem": "Với x,y nguyên không âm thỏa x+2y≤7, 2x+y≤7, tối đa hóa P=3x+2y. So sánh với tối ưu liên tục.",
+    "answer_key": "Tối ưu nguyên P=11 tại (x,y)=(3,1); tối ưu liên tục 35/3 tại (7/3,7/3).",
+    "worked_solution": "Trong miền liên tục, các đỉnh (0,0),(7/2,0),(7/3,7/3),(0,7/2); P lần lượt 0,21/2,35/3,7 nên max 35/3. Với nguyên: y=0→x≤3 nên P≤9; y=1→x≤3 cho P≤11 đạt (3,1); y=2→x≤2 cho P≤10; y=3→x≤1 cho P≤9. Do đó max nguyên=11. Không làm tròn 35/3 mà bỏ kiểm khả thi.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP02-O16"
+    ],
+    "problem_type_id": "TOP02-O16-FAM-ADD18",
+    "difficulty": "Vận dụng",
+    "hints": [],
+    "remediation": "Đồng nhất phương án thực với nghiệm sản phẩm nguyên; TOP02-M16.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading": "## THPT-TOP02-ADD18 · TOP02-O16",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

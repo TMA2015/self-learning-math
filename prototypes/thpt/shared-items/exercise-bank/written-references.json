@@ -314,5 +314,53 @@
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
     "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G10-CHII-W03",
+    "source": {
+      "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
+      "heading_id": "THPT-G10-CHII-W03"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ii.md",
+      "blob": "6ff217b4c24a248a8120bc1f964476b4966eca83",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G10-CHII-W04-ANCHOR",
+    "source": {
+      "blob": "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
+      "heading_id": "THPT-G10-CHII-W04-ANCHOR"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-ii.md",
+      "blob": "6ff217b4c24a248a8120bc1f964476b4966eca83",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP02-W01",
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading_id": "THPT-TOP02-W01"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP02-W02",
+    "source": {
+      "blob": "e10e57d7684497b0dfa9325af766a75b7cfa239f",
+      "heading_id": "THPT-TOP02-W02"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
   }
 ]

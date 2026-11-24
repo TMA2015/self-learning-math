@@ -234,5 +234,241 @@
     "item_id": "THPT-G10-CHI-RD1-14",
     "original_type": "WRITTEN_RUBRIC",
     "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B03-C01",
+    "skill_id": "G10-B03-LINEAR_INEQUALITY"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B03-C02",
+    "skill_id": "G10-B03-POINT_TEST"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B03-P01",
+    "skill_id": "G10-B03-BOUNDARY"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B03-P02",
+    "skill_id": "G10-B03-HALFPLANE"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B03-P03",
+    "skill_id": "G10-B03-POINT_TEST"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B03-P04",
+    "skill_id": "G10-B03-MODELING"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B03-P05",
+    "skill_id": "G10-B03-HALFPLANE"
+  },
+  {
+    "collection": "SGK:G10:CHII:B03:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B03-P06",
+    "skill_id": "G10-B03-MODELING"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B04-C01",
+    "skill_id": "G10-B04-SYSTEM"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B04-C02",
+    "skill_id": "G10-B04-REGION_INTERSECTION"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B04-P01",
+    "skill_id": "G10-B04-REGION_INTERSECTION"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B04-P02",
+    "skill_id": "G10-B04-LINEAR_OBJECTIVE"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B04-P03",
+    "skill_id": "G10-B04-LINEAR_OBJECTIVE"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B04-P04",
+    "skill_id": "G10-B04-FEASIBILITY"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B04-P05",
+    "skill_id": "G10-B04-FEASIBILITY"
+  },
+  {
+    "collection": "SGK:G10:CHII:B04:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B04-P06",
+    "skill_id": "G10-B04-INTEGER_MODELS"
+  },
+  {
+    "collection": "SGK:G10:CHII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G10-CHII-W03"
+  },
+  {
+    "collection": "SGK:G10:CHII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G10-CHII-W04-ANCHOR"
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G10-CHII-RD1-01",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G10-CHII-RD1-02",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G10-CHII-RD1-03",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G10-CHII-RD1-04",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G10-CHII-RD1-05",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G10-CHII-RD1-06",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G10-CHII-RD1-07",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G10-CHII-RD1-08",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G10-CHII-RD1-09",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G10-CHII-RD1-10",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G10-CHII-RD1-11",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G10-CHII-RD1-12",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G10-CHII-RD1-13",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G10-CHII-RD1-14",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
   }
 ]
