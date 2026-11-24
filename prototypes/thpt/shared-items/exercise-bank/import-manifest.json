@@ -15804,6 +15804,180 @@
         "Source provenance, IDs, exposure, interaction and placements unchanged. Original content_version values retained as import/source labels, bank candidate exact commit/blob used for delta evidence; formal item-version cutover rule still needs reconciliation. Q01 fresh SGK PDF/SBT, taxonomy, full PED/D6 and browser reveal remain unverified; no new PASS."
       ],
       "next": "Audit actual CĐ04 scope and G10 ChIV; do not assume topic number equals chapter. Keep CD12 full audit at its own checkpoint."
+    },
+    "formative_scoped_audit_cp51": {
+      "checkpoint": 51,
+      "baseline": "f73b1bff238338a0a4ed3482558bdeb74b70e195",
+      "scope": "G10 ChIV vectors B07–11, CD04 exponential/logarithmic and G11 ChVI shared B18–21; CD13 affected outcomes only",
+      "source_evidence": {
+        "B07": "e76a0ae4f9628ffd1d183b44eaae1c35e454bf13",
+        "B08": "9e5c9227417484e3bbea4f0ba085ff844100f321",
+        "B09": "f589e9a61841b12dfbf427c1a92dd5105612d584",
+        "B10": "7b0428899b64a9986689dc5723d119b4356eb06b",
+        "B11": "313a27573cd679234c62f5041587ea86de684733",
+        "g10_formative": [
+          "1b59b046b6539280817fb1b968dc9c8460fca7c5",
+          "713e6a97b95c2c807c8b76045b324bdddf1a6737"
+        ],
+        "g11_formative": "33cf4229baa63ac70b4ca1b640a5be8414ed54c1",
+        "cd04_knowledge": "5040737c0c50cc1cc205ce0302597152a691e033",
+        "cd04_practice": "375c6afaebbb0ce14991c65f2abde53c295f325b",
+        "cd13_knowledge": "1921034b56d7de4edd5ce279e79f90760acca16d"
+      },
+      "files": [
+        {
+          "path": "items/g10-chiv.json",
+          "before": "e69532125ec352ca8b040ec437b9902d30283acc",
+          "after": "dd3698d9e22e0069eda202c629160a3d66ff111c",
+          "changed": 40,
+          "unchanged": 27
+        },
+        {
+          "path": "items/g11-chvi.json",
+          "before": "c1c404b60a5d1ee464e90f6cb5b8755ce3feb9c7",
+          "after": "07045f4bfa7de40fe60f3f1dd661665e58ccea92",
+          "changed": 41,
+          "unchanged": 4
+        },
+        {
+          "path": "items/cd04.json",
+          "before": "b27f4167525ccf33beed6620a1162e7edb0210e1",
+          "after": "f84586f12cd9942c5464a438daf7a7303f7d6a51",
+          "changed": 22
+        }
+      ],
+      "reviewed": {
+        "formative_changed": 103,
+        "vector_additional_P07_read_preserved": 1,
+        "first_try_preserved": 30,
+        "topic_outcomes": 18,
+        "topic_practice_placements": 75,
+        "topic_replay_placements": 18,
+        "topic_written_read_only": 12,
+        "sgk_source_parity_before_edit": 81,
+        "cd13_shared_placements": 20
+      },
+      "matrix": {
+        "TOP04-O01": [
+          "THPT-G11-CHVI-B18-C01",
+          "THPT-G11-CHVI-B18-C03",
+          "THPT-G11-CHVI-B18-P07",
+          "THPT-TOP04-P01"
+        ],
+        "TOP04-O02": [
+          "THPT-G11-CHVI-B18-C02",
+          "THPT-G11-CHVI-B18-C05",
+          "THPT-G11-CHVI-B18-P02",
+          "THPT-G11-CHVI-B18-P03",
+          "THPT-TOP04-P02"
+        ],
+        "TOP04-O03": [
+          "THPT-G11-CHVI-B18-C04",
+          "THPT-TOP04-P03",
+          "THPT-TOP04-P04"
+        ],
+        "TOP04-O04": [
+          "THPT-G11-CHVI-B18-P01",
+          "THPT-G11-CHVI-B18-P04",
+          "THPT-G11-CHVI-B18-P06",
+          "THPT-G11-CHVI-B18-W01",
+          "THPT-TOP04-P05",
+          "THPT-TOP04-W01"
+        ],
+        "TOP04-O05": [
+          "THPT-G11-CHVI-B19-C01",
+          "THPT-G11-CHVI-B19-C02",
+          "THPT-G11-CHVI-B19-P03",
+          "THPT-TOP04-P06"
+        ],
+        "TOP04-O06": [
+          "THPT-G11-CHVI-B19-C03",
+          "THPT-G11-CHVI-B19-P04",
+          "THPT-G11-CHVI-B19-W01",
+          "THPT-TOP04-P07",
+          "THPT-TOP04-P08"
+        ],
+        "TOP04-O07": [
+          "THPT-G11-CHVI-B19-P01",
+          "THPT-G11-CHVI-B19-P02",
+          "THPT-G11-CHVI-B19-W02-ANCHOR",
+          "THPT-TOP04-P09"
+        ],
+        "TOP04-O08": [
+          "THPT-G11-CHVI-B19-P05",
+          "THPT-TOP04-P10",
+          "THPT-TOP04-P11",
+          "THPT-TOP04-W02"
+        ],
+        "TOP04-O09": [
+          "THPT-G11-CHVI-B20-C01",
+          "THPT-TOP04-P12",
+          "THPT-TOP04-P13"
+        ],
+        "TOP04-O10": [
+          "THPT-G11-CHVI-B20-C02",
+          "THPT-G11-CHVI-B20-P02",
+          "THPT-TOP04-P14"
+        ],
+        "TOP04-O11": [
+          "THPT-G11-CHVI-B20-C03",
+          "THPT-G11-CHVI-B20-P01",
+          "THPT-G11-CHVI-B20-P03",
+          "THPT-TOP04-P15"
+        ],
+        "TOP04-O12": [
+          "THPT-G11-CHVI-B20-C04",
+          "THPT-G11-CHVI-B20-P04",
+          "THPT-G11-CHVI-B20-W01",
+          "THPT-G11-CHVI-B20-W02-ANCHOR",
+          "THPT-TOP04-P16"
+        ],
+        "TOP04-O13": [
+          "THPT-G11-CHVI-B21-C01",
+          "THPT-G11-CHVI-B21-P01",
+          "THPT-G11-CHVI-B21-P07",
+          "THPT-TOP04-P17"
+        ],
+        "TOP04-O14": [
+          "THPT-G11-CHVI-B21-C02",
+          "THPT-G11-CHVI-B21-P02",
+          "THPT-TOP04-P18",
+          "THPT-TOP04-W03"
+        ],
+        "TOP04-O15": [
+          "THPT-G11-CHVI-B21-C03",
+          "THPT-G11-CHVI-B21-P03",
+          "THPT-TOP04-P19"
+        ],
+        "TOP04-O16": [
+          "THPT-G11-CHVI-B21-C04",
+          "THPT-G11-CHVI-B21-P04",
+          "THPT-TOP04-P20"
+        ],
+        "TOP04-O17": [
+          "THPT-G11-CHVI-B18-P05",
+          "THPT-G11-CHVI-B19-P06",
+          "THPT-G11-CHVI-B21-P06",
+          "THPT-G11-CHVI-B18-W02-ANCHOR",
+          "THPT-G11-CHVI-B21-W02-ANCHOR",
+          "THPT-TOP04-P21",
+          "THPT-TOP04-W04"
+        ],
+        "TOP04-O18": [
+          "THPT-G11-CHVI-B21-P05",
+          "THPT-G11-CHVI-B21-P08",
+          "THPT-G11-CHVI-B21-W01",
+          "THPT-TOP04-P22"
+        ]
+      },
+      "findings": [
+        "B07-C01 direction reversal only if A≠B; B08-P02 changes exact first-try to new point labels and explicit orientation, P05 proves centroid identity, P06 uses nonperpendicular forces 6,8,60°, R=2√37. B10-P05 handles zero coordinates without division; B11-P01 obtuse dot product −15; P04 nonorigin A. 40 concrete remediation; B09-P07 existing source/rubric preserved, 26 first-try unchanged.",
+        "CD04 P08 log square domain x≠3, correct 2log₂|x−3|; P17 positive auxiliary t rejects −3, x=0; 22 existing skill tags, hints and remediation. G11 41 generic hints replaced; B20-C02 proof monotonic for any reals not integer steps alone; B20-P04 extends growth model to inverse and actual range N≥20, aligns O12. 4 KFT untouched.",
+        "All 22 topic placement shards scanned: changed G10 items only shared with CD13 (20 practice; related O01/O04/O06/O08/O09 still aligned); CD04 63 formative +12 Written =75 practice, 18 replay, all resolve, 75 source markers match. All remediation item references resolve.",
+        "12 CD04 Written public projection calculations correct; B19-W01 rubric expects substitution but worked solution stops after filtering x=3; TOP04-W02 rubric asks change-of-base although prompt allows identifying powers and exemplar uses powers. Flag Written canonical owner, no edit. G10 ChIV Written remaining not audited in CP51.",
+        "No new IDs or placements; historical provenance, interaction/exposure, content_version labels kept. First no-op update unchanged blob; actual data delta verified at immutable commits. No fresh S1 PDF/SBT, full Q01/PED/D6/runtime/browser QA, no independent PASS. G11 lesson pages not read separately this batch, use exact public formative source and CD04 knowledge; verify S1 later."
+      ],
+      "next": "G10 ChV and CD05 actual scope; retain open Written findings for canonical review and CĐ13 full audit separately."
     }
   }
 }
