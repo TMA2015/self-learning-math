@@ -36,7 +36,7 @@ jobs:
             node scripts/test-thpt-release-impact.cjs --self-test
             env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/first-paint-paths.txt" > "$RUNNER_TEMP/first-paint-impact.txt"
             if grep -Fxq "impact=SCOPED_LESSON" "$RUNNER_TEMP/first-paint-impact.txt" && grep -Fxq "changed_lessons=docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md" "$RUNNER_TEMP/first-paint-impact.txt"; then
-              SCOPED_LESSONS="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md" node scripts/test-thpt-scoped-deploy-proof.cjs
+              BEFORE_SHA="$BASE_SHA" SCOPED_LESSONS="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md" node scripts/test-thpt-scoped-deploy-proof.cjs
               mode=G11_W1
             fi
           fi
