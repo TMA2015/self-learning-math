@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_MATH_AND_SKILL_REVIEW_18_DRAFTS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -6093,6 +6093,248 @@
         "unreviewed_flags": 0,
         "scope": "All recorded migration flags classified; 2 stale Written projections and 33 same-task placements require preserving context/scaffolding/reveal semantics at authorized cutover. No assertion of global source equivalence outside flagged rows or full academic/PED audit. Legacy counts retained."
       }
+    },
+    "author_academic_audit": {
+      "standard": "SLM-THPT-QUALITY-ONE v3.2.0",
+      "baseline": "67fc3a9c77d53f5ee3c5fe924b99467d388147d6",
+      "reviewed_candidate": "6e579e4b571bd2e35770eeaa97fbc4c306939358",
+      "scope": "18 authored first-try answer drafts only; exact historical SGK learner source pages and existing reviewed chapter skill IDs checked; independent recalculation. No direct original S1 PDF re-read or full Q01–Q18 verdict; no independent NotebookLM review. Source history and 18 draft provenance retained.",
+      "math_reviewed": 18,
+      "skill_mapping_reviewed": 18,
+      "content_clarifications": 6,
+      "remaining_combined_answer_items": 709,
+      "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
+      "items": [
+        {
+          "item_id": "THPT-G11-B19-KFT01",
+          "source_blob": "f872e9f19e28467e1b6ea11a943e04a2edf3b266",
+          "shard": "g11-chvi",
+          "candidate_blob": "bb62f1201041614a14577ef318779c8f8d89f5f8",
+          "skill_ids": [
+            "G11-B19-LOG_DEFINITION",
+            "G11-B19-LOG_DOMAIN",
+            "G11-B19-LOG_LAWS"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "5³=125; base 4 positive power cannot equal 0; log₂8=3 vs 2+2=4. Preserve explanatory demand, not numeric-only drill."
+        },
+        {
+          "item_id": "THPT-G11-B20-KFT01",
+          "source_blob": "1587f399e7ea9557a9fc490768c589991f25dcb0",
+          "shard": "g11-chvi",
+          "candidate_blob": "bb62f1201041614a14577ef318779c8f8d89f5f8",
+          "skill_ids": [
+            "G11-B20-EXP_FUNCTION",
+            "G11-B20-INVERSE_GRAPH",
+            "G11-B20-LOG_MONOTONIC"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "CONTENT_CLARIFIED",
+          "evidence": "Positive exponential; inverse graph coordinates (3,8),(8,3); prove decreasing inverse by ordering two positive inputs. Explicit graph functions added."
+        },
+        {
+          "item_id": "THPT-G11-B21-KFT01",
+          "source_blob": "b7fb59866ce1b250e446cb957d975e7c58d037bb",
+          "shard": "g11-chvi",
+          "candidate_blob": "bb62f1201041614a14577ef318779c8f8d89f5f8",
+          "skill_ids": [
+            "G11-B21-EXP_INEQUALITY",
+            "G11-B21-DOMAIN_CHECK"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "Base 1/2 decreasing, x<3; log argument x−1>0. Source asks reasons, not equation solution."
+        },
+        {
+          "item_id": "THPT-G11-B22-KFT01",
+          "source_blob": "d8a679897dde1d2fa25e12df56772eb54be29ff4",
+          "shard": "g11-chvii",
+          "candidate_blob": "74514400bb3d7396eb16db188d8ff93d10d42105",
+          "skill_ids": [
+            "G11-B22-ANGLE_LINES",
+            "G11-B22-PERP_SKEW"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "Parallel translation CC′ to AA′ gives angle 90°; intersecting not required. Explanation task, not finding angle."
+        },
+        {
+          "item_id": "THPT-G11-B26-KFT01",
+          "source_blob": "417ce70fc81b8a656e803855d0594dfa9db945b2",
+          "shard": "g11-chvii",
+          "candidate_blob": "74514400bb3d7396eb16db188d8ff93d10d42105",
+          "skill_ids": [
+            "G11-B26-HEIGHT_APPLICATION",
+            "G11-B26-POINT_PLANE"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "Right triangle SAH: sqrt(25−16)=3; height is perpendicular distance, not slant length."
+        },
+        {
+          "item_id": "THPT-G12-B01-KFT01",
+          "source_blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B01-EXTREMA_SIGN_CHANGE",
+            "G12-B01-DERIVATIVE_SIGN"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "Positive then negative derivative gives increasing then decreasing; continuity at included x₀ required to conclude local maximum."
+        },
+        {
+          "item_id": "THPT-G12-B01-KFT03",
+          "source_blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B01-DOMAIN_INTERVALS"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "CONTENT_CLARIFIED",
+          "evidence": "Explicit source example 1/(x−1) restored; f(0)=−1<f(2)=1 contradicts global decreasing."
+        },
+        {
+          "item_id": "THPT-G12-B02-KFT01",
+          "source_blob": "d6e517a980ec9259345285964f4c42767faa6122",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B02-EXTREMA_GLOBAL_MEANING",
+            "G12-B02-CLOSED_INTERVAL_EXISTENCE"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "Continuous closed interval guarantees attainment, but f(5)>f(2) does not identify global maximizer. Insufficient data retained."
+        },
+        {
+          "item_id": "THPT-G12-B02-KFT03",
+          "source_blob": "d6e517a980ec9259345285964f4c42767faa6122",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B02-CONSTRAINED_DOMAIN"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "CONTENT_CLARIFIED",
+          "evidence": "Restore 24m rectangle example, side lengths x and 12−x positive."
+        },
+        {
+          "item_id": "THPT-G12-B03-KFT01",
+          "source_blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B03-VERTICAL_ONE_SIDED",
+            "G12-B03-HORIZONTAL_LIMIT"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "At x=4 one-sided infinite limits; both infinite directions horizontal limit 2."
+        },
+        {
+          "item_id": "THPT-G12-B03-KFT03",
+          "source_blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B03-OBLIQUE_REMAINDER"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "Limit difference to 2x+3 zero at +∞; nonzero slope gives oblique asymptote."
+        },
+        {
+          "item_id": "THPT-G12-B04-KFT01",
+          "source_blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B04-DOMAIN_NONCONNECT",
+            "G12-B04-RATIONAL_VARIATION"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "CONTENT_CLARIFIED",
+          "evidence": "Restore source rational function, two separate branches and divergent one-sided limits at excluded x=1."
+        },
+        {
+          "item_id": "THPT-G12-B04-KFT02",
+          "source_blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B04-INTERCEPTS_LIMITS"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "x²(x−3) negative on both sides sufficiently near 0; horizontal tangent at origin, no crossing."
+        },
+        {
+          "item_id": "THPT-G12-B04-KFT03",
+          "source_blob": "a9a9a8f823ee85fe53014150b5cda31201867a4d",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B04-CENTER_SYMMETRY"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "Centered offsets ±h give opposite vertical deviations ±11/h, center (3,2)."
+        },
+        {
+          "item_id": "THPT-G12-B05-KFT01",
+          "source_blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B05-MOTION_SPEED_ACCELERATION"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "s(1)=3 but v=−2, speed 2; units conditional on chosen measurement."
+        },
+        {
+          "item_id": "THPT-G12-B05-KFT02",
+          "source_blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B05-MARGINAL_COST",
+            "G12-B05-UNIT_ASSUMPTION_CHECK"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "ANSWER_AND_SOLUTION_RETAINED",
+          "evidence": "Derivative cost per unit production, million VND/product."
+        },
+        {
+          "item_id": "THPT-G12-B05-KFT03",
+          "source_blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B05-MODEL_VARIABLE_DOMAIN"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "CONTENT_CLARIFIED",
+          "evidence": "Restore rectangle geometry and variable definitions; four sides 2x+2y=L vs three sides 2x+y=L."
+        },
+        {
+          "item_id": "THPT-G12-B05-KFT04",
+          "source_blob": "54c9c90323f7b1d9077270d90627864f5a468c03",
+          "shard": "g12-chi",
+          "candidate_blob": "e868fb83397cf0fa523e7cc22864b9e85cd505c2",
+          "skill_ids": [
+            "G12-B05-BOUNDARY_FEASIBILITY",
+            "G12-B05-MODEL_VARIABLE_DOMAIN"
+          ],
+          "disposition": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+          "revision": "CONTENT_CLARIFIED",
+          "evidence": "Restore 30×20cm cardboard and four square cuts; positive dimensions require 0<x<10."
+        }
+      ]
     }
   }
 }
