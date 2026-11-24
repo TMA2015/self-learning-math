@@ -7,20 +7,20 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- Đã xác nhận có PR nâng cấp riêng đúng 32/32 bài lớp 11; trạng thái **bản thảo có thật** không phải tự động hoàn thành. B33 đã có biên nhận hoàn chỉnh và bàn giao. Các bài khác: dùng lại chứng cứ có sẵn, chốt source/asset đúng snapshot và xử lý phần thực sự còn thiếu, rồi cập nhật dòng dưới đây. Không đánh dấu PASS chỉ bằng số lượng PR.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 32/51 bài đã bàn giao; 19 bài lớp 12 tiếp theo. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
 - Toán 12 B01–B19: chưa xác nhận hoàn thành đợt reset hiện hành; không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
-| 11 | B02 | [#1021](https://github.com/TMA2015/self-learning-math/pull/1021) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B03 | [#1023](https://github.com/TMA2015/self-learning-math/pull/1023) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B04 | [#1025](https://github.com/TMA2015/self-learning-math/pull/1025) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B05 | [#1027](https://github.com/TMA2015/self-learning-math/pull/1027) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B06 | [#1028](https://github.com/TMA2015/self-learning-math/pull/1028) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B07 | [#1029](https://github.com/TMA2015/self-learning-math/pull/1029) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B08 | [#1030](https://github.com/TMA2015/self-learning-math/pull/1030) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B09 | [#1031](https://github.com/TMA2015/self-learning-math/pull/1031) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
+| 11 | B02 | [#1021](https://github.com/TMA2015/self-learning-math/pull/1021) | CONTENT_READY — đã bàn giao |
+| 11 | B03 | [#1023](https://github.com/TMA2015/self-learning-math/pull/1023) | CONTENT_READY — đã bàn giao |
+| 11 | B04 | [#1025](https://github.com/TMA2015/self-learning-math/pull/1025) | CONTENT_READY — đã bàn giao |
+| 11 | B05 | [#1027](https://github.com/TMA2015/self-learning-math/pull/1027) | CONTENT_READY — đã bàn giao |
+| 11 | B06 | [#1028](https://github.com/TMA2015/self-learning-math/pull/1028) | CONTENT_READY — đã bàn giao |
+| 11 | B07 | [#1029](https://github.com/TMA2015/self-learning-math/pull/1029) | CONTENT_READY — đã bàn giao |
+| 11 | B08 | [#1030](https://github.com/TMA2015/self-learning-math/pull/1030) | CONTENT_READY — đã bàn giao |
+| 11 | B09 | [#1031](https://github.com/TMA2015/self-learning-math/pull/1031) | CONTENT_READY — đã bàn giao |
 | 11 | B10 | [#1034](https://github.com/TMA2015/self-learning-math/pull/1034) | CONTENT_READY — đã bàn giao |
 | 11 | B11 | [#1035](https://github.com/TMA2015/self-learning-math/pull/1035) | CONTENT_READY — đã bàn giao |
 | 11 | B12 | [#1036](https://github.com/TMA2015/self-learning-math/pull/1036) | CONTENT_READY — đã bàn giao |
@@ -39,11 +39,11 @@
 | 11 | B25 | [#1052](https://github.com/TMA2015/self-learning-math/pull/1052) | CONTENT_READY — đã bàn giao |
 | 11 | B26 | [#1054](https://github.com/TMA2015/self-learning-math/pull/1054) | CONTENT_READY — đã bàn giao |
 | 11 | B27 | [#1056](https://github.com/TMA2015/self-learning-math/pull/1056) | CONTENT_READY — đã bàn giao |
-| 11 | B28 | [#1062](https://github.com/TMA2015/self-learning-math/pull/1062) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B29 | [#1064](https://github.com/TMA2015/self-learning-math/pull/1064) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B30 | [#1065](https://github.com/TMA2015/self-learning-math/pull/1065) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B31 | [#1066](https://github.com/TMA2015/self-learning-math/pull/1066) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
-| 11 | B32 | [#1067](https://github.com/TMA2015/self-learning-math/pull/1067) | Đã biên soạn, có tự kiểm; còn chốt chất lượng/bàn giao |
+| 11 | B28 | [#1062](https://github.com/TMA2015/self-learning-math/pull/1062) | CONTENT_READY — đã bàn giao |
+| 11 | B29 | [#1064](https://github.com/TMA2015/self-learning-math/pull/1064) | CONTENT_READY — đã bàn giao |
+| 11 | B30 | [#1065](https://github.com/TMA2015/self-learning-math/pull/1065) | CONTENT_READY — đã bàn giao |
+| 11 | B31 | [#1066](https://github.com/TMA2015/self-learning-math/pull/1066) | CONTENT_READY — đã bàn giao |
+| 11 | B32 | [#1067](https://github.com/TMA2015/self-learning-math/pull/1067) | CONTENT_READY — đã bàn giao |
 | 11 | B33 | [#1068](https://github.com/TMA2015/self-learning-math/pull/1068) | CONTENT_READY — đã bàn giao |
 | 12 | B01–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
@@ -126,6 +126,28 @@ Kế thừa Academic/PED PASS của nhóm B10–B14 theo checkpoint review tại
 | B15 [#1041](https://github.com/TMA2015/self-learning-math/pull/1041) | `871c5b20143254f5a282d6a89b8ac918050a5a8b` | `95bbe5ecdd73b92f88176ae0245e11b1098d8e6e` | `110d26c475df0f00dda7fa53bdc1afdfd6cb915a` | Giới hạn hữu hạn/vô cực, quy tắc giới hạn, CSN lùi vô hạn; kiểm tổng riêng và chu kì. | `G11_B15_GEOMETRIC_PARTIAL_SUMS_AUTHORING_20261123.svg` |
 | B16 [#1042](https://github.com/TMA2015/self-learning-math/pull/1042) | `f8bb7b9f35d05d2674b40047a1fd73b002d6debd` | `a2242eeb50ae0f02643182bf10c315c41ce05c3b` | `df4d5536c079d4825222c4320e8d3e443aa88ae5` | Giới hạn tại điểm/vô cực, giới hạn vô cực, một phía; liên hợp, dấu và hình bước nhảy. | `G11_B16_ONE_SIDED_JUMP_AUTHORING_20261123.svg` |
 | B17 [#1043](https://github.com/TMA2015/self-learning-math/pull/1043) | `da585f0e68a9f63538dc69ef71e0aee4fe2efc75` | `36a7c21f3ae2474318c1e857acbcb640680e1326` | `22e4e8c777a989ad00e72af94ea3e2eae0690ec9` | Liên tục tại điểm/trên khoảng/tính chất; lỗ, bước nhảy, kiểm đổi dấu tồn tại nghiệm. | `G11_B17_IVT_SIGN_CHANGE_AUTHORING_20261123.svg` |
+
+### B02–B09 và B28–B32 — chốt tự kiểm và bàn giao (24/11/2026)
+
+**Q18_VERIFICATION_MODE=AUTHOR_SELF_VERIFIED; AUTHOR_SIGNOFF=CONTENT_READY; RELEASE_SCOPE=SGK_KNOWLEDGE_ENRICHMENT_ONLY; RELEASE_INTAKE=PENDING_RELEASE.** Dùng chứng cứ tự kiểm SGK, học thuật, diễn giải, ví dụ và hình đã ghi trong từng PR; kiểm lại exact nguồn và phạm vi diff, không nhận thay NotebookLM independent PASS. Các hạn chế ảnh chụp trang SGK đã ghi trong PR được giữ nguyên; B29 đối chiếu nguồn tham chiếu theo từng mục, không nhận đã đọc trực tiếp ảnh gốc. B03/B04/B06–B09 sửa các ví dụ trùng bài tự thử; B31/B32 sửa diễn giải toán học. Các thay đổi thực chất được tự giải lại và xác minh số, miền, dấu; 8/8 nguồn sửa đúng blob sau ghi, MathJax/HTML cân bằng, bài tự thử có Đối chiếu. 5 nguồn B02/B05/B28–B30 giữ nguyên snapshot tự kiểm, không sửa để tạo hình thức. Tất cả 13 nguồn có đúng 4 tab, đối ứng các mục SGK, MathJax cân bằng, số Vận dụng khớp Đối chiếu; diff chỉ file Kiến thức và SVG riêng bài nếu có. Không còn lỗi học liệu thực chất đã phát hiện chưa xử lý. Core, Luyện tập, Tự kiểm tra, ngân hàng, RD1, Mastery và runtime ngoài phạm vi.
+
+| Bài / PR | Commit khóa | Blob nền main lúc đối chiếu | Blob ứng viên | Bằng chứng kiểm tra/Delta | SVG thay đổi (lấy theo commit khóa, thư mục docs/assets/images/thpt) |
+|---|---|---|---|---|---|
+| B02 [#1021](https://github.com/TMA2015/self-learning-math/pull/1021) | `b6b88d8fdd67a902dc55d9d46b4c0baab551dd95` | `15c4de731bfbaf5b8a141a54d9b5493e7895c752` | `d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6` | SGK 17–21; cộng, nhân đôi, tích–tổng, tổng–tích; kiểm đủ dấu/điều kiện, góc đặc biệt và tín hiệu âm thanh. | `G11_B02_UNIT_CIRCLE_AUTHORING_RESET_20261122.svg` |
+| B03 [#1023](https://github.com/TMA2015/self-learning-math/pull/1023) | `a7288efd8e2287085fb77210bc0a5e4d8521d4f0` | `a8a3592c661b06fae94aad386b991f23a6718957` | `9177a10ade8788712c6b9fbf39789822df2a417a` | SGK 22–30; định nghĩa, chẵn/lẻ/tuần hoàn, 4 đồ thị. Delta 3.2 và 3.6: x cos x lẻ; tan âm trên (−π/2;0), cot dương trên (0;π/2); bài tự thử không trùng. | Không; dùng asset hiện có |
+| B04 [#1025](https://github.com/TMA2015/self-learning-math/pull/1025) | `a505489e888d61850ef20a426447b981a4d3e869` | `71271b2035bfe289ac3ccf6f384d8f41ec55aefb` | `0714c5b72389d29dbc8993c2ce9828fc98cf7a92` | SGK 31–39; tương đương, 4 họ nghiệm, máy tính RAD/DEG. Delta 3.1: (x−2)/(x+2)=0 có tập nghiệm {2}, x²−4=0 có {−2,2}; kiểm miền. | `G11_B04_COS_MINUS_HALF_AUTHORING_RESET_20261123.svg`; `G11_B04_SIN_HALF_AUTHORING_RESET_20261123.svg` |
+| B05 [#1027](https://github.com/TMA2015/self-learning-math/pull/1027) | `bb5730eae8db4fbcd01e486891fd1c1a2090589a` | `8634196e27b5bac8cb3089f433779b592809d955` | `8f23807a3d75fdefde567993e1dc95c6027fccd1` | SGK 42–47; định nghĩa, cách cho, tăng/giảm/bị chặn; truy hồi 1→5→17→53, hiệu 1/[n(n+1)]>0 và dãy luân phiên. | Không; dùng asset hiện có |
+| B06 [#1028](https://github.com/TMA2015/self-learning-math/pull/1028) | `652e68410ed85a61326273531d41b982f7238582` | `43b285b679941e0748ad78f377ab9bbdd73ec3d3` | `ce7c346193e5311712fd98e8714f02167af1718e` | SGK 48–51; định nghĩa, số hạng tổng quát, tổng. Delta 3.1, 3.6: 4+3n có u1=7,d=3; lương 8 năm tổng 1380 triệu; đối chứng công thức tổng. | Không; dùng asset hiện có |
+| B07 [#1029](https://github.com/TMA2015/self-learning-math/pull/1029) | `c5fa6e7c33e1365089e1dadfe34462c289d0c498` | `3d0886889e383cd76963e1fa3a5eef175a389080` | `9f76ca1b6ba598ed89724c2a1ebd36b7e45b7759` | SGK 52–55; định nghĩa, số hạng tổng quát, tổng; q=0,1. Delta 3.7: 3+6+12+24+48=93, n=5; tự thử cũ giữ nguyên. | Không; dùng asset hiện có |
+| B08 [#1030](https://github.com/TMA2015/self-learning-math/pull/1030) | `449ee91989631f4571ee2a2dd3ad4ed646ec974f` | `4f3d1af635dd548700ad3514aff283ebe29aa9a2` | `8d650b041cb7bd33dde4a7923f61cd29cbe1bfeb` | SGK 58–61; mẫu ghép nhóm, cách ghép, đầu mút. Delta 3.1–3.3: cỡ mẫu 24, 9/24=37,5%; đếm lại 12 quan sát cho [1,3,3,3,2]. | Không; dùng asset hiện có |
+| B09 [#1031](https://github.com/TMA2015/self-learning-math/pull/1031) | `e697303f359d3cf4a2ba2ea82d4f0d43e0306554` | `46aa17f758783330c2b396f9ed36a25ab77a4094` | `8a6f4467d445a1527fa79b4f30b73495c8105772` | SGK 62–67; trung bình, trung vị, tứ phân vị, mốt. Delta 3.1–3.4: bảng tần số 4,10,5,1 cho 16,5; 16; 11,22; mốt 10+60/11≈15,45. | Không; dùng asset hiện có |
+| B28 [#1062](https://github.com/TMA2015/self-learning-math/pull/1062) | `7ae741d314cffcde2624ffb218828a63d99644c1` | `86018a916315d313249f958ff2c66acdb52612be` | `eeebaf5a8b564ddc04f89ec70b87ebdab98c55fc` | SGK 66–71; hợp, giao, độc lập; kiểm liệt kê kết quả, không đếm trùng, có/không hoàn lại và xung khắc khác độc lập. | Không; dùng asset hiện có |
+| B29 [#1064](https://github.com/TMA2015/self-learning-math/pull/1064) | `981a24d68efee702a5f01a74054759370ed9c94c` | `51b686118c52605d8c8ab64b2e05d3fea419c1f8` | `00aac19435a7133b5dd957882539c53afe717b30` | SGK 72–75, đối chiếu nguồn tham chiếu từng mục như PR; cộng xung khắc và tổng quát, giao, bù; kiểm 26/40, 2/3, 49%, 31%, dữ kiện giao bất khả thi. | Không; dùng asset hiện có |
+| B30 [#1065](https://github.com/TMA2015/self-learning-math/pull/1065) | `178d5d468489c943202ea8ec107d1489c70db91f` | `7ef2e8be4bca6c64f7ab190ed5d1cde921998373` | `bac2f0a7f289abcdeb80a1524ded15fb43777415` | SGK 76–78; nhân độc lập và vận dụng; kiểm 21/40, cây xác suất, bảng 5000 người, phân biệt phụ thuộc thống kê và nhân quả. | Không; dùng asset hiện có |
+| B31 [#1066](https://github.com/TMA2015/self-learning-math/pull/1066) | `6fe6cd336607941d964b8fe10acfc04f5087f83c` | `20f6b47a4f56a1531ee695fde11953edfb9661bb` | `a0c25691f38ff40955b6316ed8be29880b0ca4a0` | SGK 81–86; dẫn tới đạo hàm, tại điểm/trên khoảng, tiếp tuyến; kiểm sai phân, 9 A, 95,1 m/s, cầu 17,6 m. Delta phân biệt tọa độ có dấu và quãng đường tích lũy; tại t=0,1 vận tốc −1 m/s. | Không; dùng asset hiện có |
+| B32 [#1067](https://github.com/TMA2015/self-learning-math/pull/1067) | `db471893cbb43bd5ab06f9755da9e65691d9bfab` | `078a5d9aca09954fd2b451508152147f6a655015` | `fedb5d316838fbce9704ac5ba5d1543d60bf0685` | SGK 87–94; đủ 5 nhóm quy tắc, điều kiện miền, 16 đối chứng sai phân; delta giải thích quy tắc thương qua wv=u và tách (x)'=1 để tránh 0^0 tại x=0; kiểm thương −3 tại x=2. | Không; dùng asset hiện có |
+
+**Kết luận G11:** 32/32 nguồn canonical B02–B33 đã khóa và bàn giao theo các dòng CONTENT_READY trong chính tài liệu này. Kết luận và commit hiện tại thay thế các trạng thái chờ bàn giao / NotebookLM pending của các snapshot lịch sử trong PR; không thay đổi kết quả review cũ. RELEASE có thể tiếp nhận toàn bộ 32 dòng bằng exact commit/blob, kiểm tích hợp theo vai trò của mình; không yêu cầu một hồ sơ riêng cho từng bài.
 
 ## Cách cập nhật
 
