@@ -142,43 +142,47 @@
 
     ### 3.1. Tính số trung bình có trọng số
 
-    **Đề bài.** Bảng A gồm bốn nhóm \([0;10),[10;20),[20;30),[30;40)\) có tần số \(4,8,6,2\). Tìm số trung bình ghép nhóm.
+    **Đề bài.** Bốn nhóm \([0;10),[10;20),[20;30),[30;40)\) có tần số \(4,10,5,1\). Tìm số trung bình ghép nhóm.
 
-    **Phân tích:** Không có số đo riêng lẻ, nên dùng trung điểm nhóm làm giá trị đại diện và nhân tần số tương ứng.
+    **Phân tích:** Dùng trung điểm nhóm làm giá trị đại diện và nhân tần số tương ứng.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Các giá trị đại diện là \(5,15,25,35\), cỡ mẫu \(20\). \(\bar x=(4\cdot5+8\cdot15+6\cdot25+2\cdot35)/20=(20+120+150+70)/20=18\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Các giá trị đại diện là \(5,15,25,35\), cỡ mẫu \(20\). \(\bar x=(4\cdot5+10\cdot15+5\cdot25+1\cdot35)/20=330/20=16{,}5\).</p></div>
 
-    **Kiểm lại:** Trung bình có trọng số \(18\) nằm trong khoảng giá trị chung từ \(0\) đến dưới \(40\), và không nhầm với trung bình đơn \(20\).
+    **Kiểm lại:** Trung bình có trọng số \(16{,}5\) nằm trong khoảng chung từ \(0\) đến dưới \(40\), khác trung bình đơn \(20\).
+
 
     ### 3.2. Tìm trung vị từ tần số tích lũy
 
-    **Đề bài.** Bảng A có tần số \(4,8,6,2\). Ước lượng trung vị.
+    **Đề bài.** Bốn nhóm \([0;10),[10;20),[20;30),[30;40)\) có tần số \(4,10,5,1\). Ước lượng trung vị.
 
-    **Phân tích:** Xác định nhóm chứa vị trí \(n/2\) bằng tích lũy, sau đó mới nội suy; không đọc trung điểm nhóm làm kết quả.
+    **Phân tích:** Tìm nhóm chứa vị trí \(n/2\) bằng tần số tích lũy, rồi nội suy.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(n=20,\ n/2=10\), tích lũy \(4,12,18,20\). Nhóm chứa trung vị là \([10;20)\), \(L=10,C=4,m=8,h=10\). \(M_e=10+(10-4)\cdot10/8=17{,}5\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(n=20,\ n/2=10\), tích lũy \(4,14,19,20\). Nhóm chứa trung vị là \([10;20)\), \(L=10,C=4,m=10,h=10\). \(M_e=10+(10-4)\cdot10/10=16\).</p></div>
 
-    **Kiểm lại:** \(17{,}5\in[10;20)\), đúng nhóm chứa trung vị.
+    **Kiểm lại:** \(16\in[10;20)\), đúng nhóm chứa trung vị.
+
 
     ### 3.3. Hai tứ phân vị ở hai nhóm khác nhau
 
-    **Đề bài.** Với bảng A, tìm \(Q_1\) và \(Q_3\).
+    **Đề bài.** Bốn nhóm \([0;10),[10;20),[20;30),[30;40)\) có tần số \(4,10,5,1\). Tìm \(Q_1,Q_3\).
 
-    **Phân tích:** Tính hai vị trí \(n/4=5\) và \(3n/4=15\), rồi tra nhóm bằng tần số tích lũy; không dùng một bộ \(L,C,m,h\) cho cả hai.
+    **Phân tích:** Tính hai vị trí \(n/4=5\) và \(3n/4=15\). Tần số tích lũy là \(4,14,19,20\); xác định nhóm riêng cho từng vị trí.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Vị trí \(5\) thuộc \([10;20)\): \(Q_1=10+(5-4)\cdot10/8=11{,}25\). Vị trí \(15\) thuộc \([20;30)\): \(Q_3=20+(15-12)\cdot10/6=25\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Vị trí \(5\) thuộc \([10;20)\): \(Q_1=10+(5-4)\cdot10/10=11\). Vị trí \(15\) thuộc \([20;30)\): \(Q_3=20+(15-14)\cdot10/5=22\).</p></div>
 
-    **Kiểm lại:** \(Q_1\le M_e\le Q_3\), tức \(11{,}25\le17{,}5\le25\), đúng ý nghĩa vị trí chia tư.
+    **Kiểm lại:** \(Q_1\le M_e\le Q_3\), tức \(11\le16\le22\).
+
 
     ### 3.4. Mốt khác trung điểm nhóm có tần số lớn nhất
 
-    **Đề bài.** Tìm mốt ghép nhóm của bảng A.
+    **Đề bài.** Bốn nhóm \([0;10),[10;20),[20;30),[30;40)\) có tần số \(4,10,5,1\). Tìm mốt ghép nhóm.
 
-    **Phân tích:** Các nhóm cùng rộng \(10\), nhóm tần số lớn nhất là \([10;20)\) có \(m_j=8\). Dùng chênh lệch với hai tần số kề, không thay luôn trung điểm \(15\).
+    **Phân tích:** Các nhóm cùng rộng \(10\), nhóm tần số lớn nhất là \([10;20)\) có \(m_j=10\). Dùng chênh lệch với hai tần số kề.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(M_o=10+\dfrac{8-4}{(8-4)+(8-6)}\cdot10=10+\dfrac{20}3\approx16{,}67\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(M_o=10+\dfrac{10-4}{(10-4)+(10-5)}\cdot10=10+\dfrac{60}{11}\approx15{,}45\).</p></div>
 
-    **Kiểm lại:** Mốt ước lượng nằm trong \([10;20)\). Nếu nhóm rộng khác nhau, phép tính này không còn được dùng trực tiếp theo SGK.
+    **Kiểm lại:** Mốt ước lượng thuộc \([10;20)\). Không dùng trực tiếp công thức này khi các nhóm có độ rộng khác nhau.
+
 
     ### 3.5. Hiệu chỉnh nhóm số liệu rời rạc
 
