@@ -1579,5 +1579,81 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B22-KFT01",
+    "content_version": "SOURCE_BLOB_d8a679897dde1d2fa25e12df56772eb54be29ff4_AUTHORING_ANSWER_DRAFT",
+    "stem": "Hình hộp chữ nhật có cạnh AB theo phương ngang và CC′ theo phương thẳng đứng. Chúng không cắt nhau; vì CC′//AA′ và AB⊥AA′, suy ra (AB,CC′)=90°. Vì sao không cần AB gặp CC′?",
+    "answer_key": "Vì góc giữa hai đường thẳng trong không gian được xác định theo phương, không đòi hỏi chúng cắt nhau.",
+    "worked_solution": "Qua A dựng đường song song với CC′, chính là AA′. Góc giữa AB và CC′ bằng góc giữa AB và AA′, tức 90° trong hình hộp chữ nhật. Hai đường có thể chéo nhau mà vẫn vuông góc theo định nghĩa góc giữa hai đường.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "d8a679897dde1d2fa25e12df56772eb54be29ff4",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md",
+        "blob": "d8a679897dde1d2fa25e12df56772eb54be29ff4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 35,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-CHVII-B22-P01",
+        "THPT-G11-CHVII-B22-P03",
+        "THPT-TOP16-P04"
+      ],
+      "distinct_task_reason": "Source supplies AB⊥CC′ proof then asks why intersection unnecessary; existing asks procedure, counterexample or evidence rather than same explanation.",
+      "answer_origin": "AUTHORING_DRAFT_NOT_LEGACY_SOURCE_ANSWER",
+      "legacy_reveal": "Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B26-KFT01",
+    "content_version": "SOURCE_BLOB_417ce70fc81b8a656e803855d0594dfa9db945b2_AUTHORING_ANSWER_DRAFT",
+    "stem": "Chóp có SA=5, hình chiếu S trên đáy là H, AH=4: SH=3. Tại sao chiều cao là 3 chứ không phải 5?",
+    "answer_key": "SH=3, vì chiều cao là đoạn vuông góc với đáy.",
+    "worked_solution": "H là hình chiếu vuông góc của S trên đáy nên SH⊥AH. Tam giác SAH vuông tại H, SH=√(SA²−AH²)=√(25−16)=3. SA=5 là cạnh xiên, không phải khoảng cách vuông góc từ S tới đáy.",
+    "answer_representation": "SEPARATE_AUTHORING_DRAFT",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "417ce70fc81b8a656e803855d0594dfa9db945b2",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md",
+        "blob": "417ce70fc81b8a656e803855d0594dfa9db945b2",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 35,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "answer_origin": "AUTHORING_DRAFT_NOT_LEGACY_SOURCE_ANSWER",
+      "legacy_reveal": "Đối chiếu lập luận của em với phần ví dụ được giải thích dưới đây. Đây là hoạt động luyện tập, không ghi Skill Mastery."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
