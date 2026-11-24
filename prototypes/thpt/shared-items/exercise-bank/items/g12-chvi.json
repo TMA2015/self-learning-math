@@ -1,0 +1,1178 @@
+[
+  {
+    "item_id": "THPT-G12-B18-C01",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Chọn đều một số trong {1,2,3,4,5,6}. Đã biết số được chọn là số lẻ; xác suất số đó lớn hơn 3 là bao nhiêu?",
+    "answer_key": "`1/3`.",
+    "worked_solution": "B={1,3,5}, A∩B={5}; vì chỉ còn 3 khả năng nên P(A|B)=1/3.",
+    "skill_ids": [
+      "G12-CHVI-B18-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-C01 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-P01",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Chọn đều một thẻ từ 1 đến 12. Biết thẻ chia hết cho 3; tính xác suất thẻ đồng thời là số chẵn.",
+    "answer_key": "`1/2`.",
+    "worked_solution": "B={3,6,9,12}, A∩B={6,12}, do đó P(A|B)=2/4=1/2.",
+    "skill_ids": [
+      "G12-CHVI-B18-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-P01 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-A01",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Thư viện có 12 cuốn sách: 5 sách khoa học gồm 3 bìa cứng, 7 sách văn học gồm 2 bìa cứng. Chọn đều một cuốn trong nhóm bìa cứng. Xác suất sách khoa học là bao nhiêu?",
+    "answer_key": "`3/5`.",
+    "worked_solution": "Có 5 cuốn bìa cứng, trong đó 3 khoa học nên 3/5. Không chia cho tổng số 12 cuốn.",
+    "skill_ids": [
+      "G12-CHVI-B18-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-A01 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-C02",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cho P(B)=3/5 và P(A∩B)=1/5. Tính P(A|B).",
+    "answer_key": "`1/3`.",
+    "worked_solution": "P(A|B)=(1/5)/(3/5)=1/3.",
+    "skill_ids": [
+      "G12-CHVI-B18-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-C02 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-P02",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Từ 8 thẻ đánh số 1–8, chọn đều một thẻ. B: thẻ chẵn; A: thẻ chia hết cho 4. Tính P(A|B) theo công thức.",
+    "answer_key": "`1/2`.",
+    "worked_solution": "P(B)=4/8, P(A∩B)=2/8, nên (2/8)/(4/8)=1/2.",
+    "skill_ids": [
+      "G12-CHVI-B18-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-P02 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-A02",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Trong 60 thí sinh, 30 người tham dự câu lạc bộ tiếng Anh và 18 người thuộc câu lạc bộ đồng thời đạt điểm giỏi. Chọn đều một người, biết người đó thuộc câu lạc bộ; xác suất đạt giỏi?",
+    "answer_key": "`3/5`.",
+    "worked_solution": "P(B)=30/60; P(A∩B)=18/60. Chia được 18/30=3/5.",
+    "skill_ids": [
+      "G12-CHVI-B18-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-A02 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-C03",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Lớp có 20 học sinh đi xe buýt, trong đó 8 em là nữ; toàn lớp có 25 nữ. Tính P(nữ|đi xe buýt).",
+    "answer_key": "`2/5`.",
+    "worked_solution": "Nhóm điều kiện có 20 em, giao có 8 em, nên 8/20=2/5.",
+    "skill_ids": [
+      "G12-CHVI-B18-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-C03 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-P03",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Với dữ kiện 20 em đi xe buýt, 8 nữ trong số đó, cả lớp có 25 nữ, tính P(đi xe buýt|nữ).",
+    "answer_key": "`8/25`.",
+    "worked_solution": "Điều kiện là 25 học sinh nữ, giao có 8 nên 8/25.",
+    "skill_ids": [
+      "G12-CHVI-B18-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-P03 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-A03",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Một đội có 15 người chơi bóng rổ, 12 người chơi bóng đá, 6 chơi cả hai. Tính cả P(rổ|đá) và P(đá|rổ).",
+    "answer_key": "`1/2 và 2/5`.",
+    "worked_solution": "Lần lượt 6/12=1/2 và 6/15=2/5. Giải thích vì sao hai xác suất khác nhau.",
+    "skill_ids": [
+      "G12-CHVI-B18-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-A03 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-C04",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cho P(A)=2/5, P(B)=1/4, P(A∩B)=1/10. A và B có độc lập không?",
+    "answer_key": "`Có`.",
+    "worked_solution": "P(A)P(B)=(2/5)(1/4)=1/10=P(A∩B) nên độc lập.",
+    "skill_ids": [
+      "G12-CHVI-B18-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-C04 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-P04",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cho P(A)=1/2, P(B)=1/2 nhưng P(A∩B)=0. Có thể nói hai biến cố độc lập không?",
+    "answer_key": "`Không`.",
+    "worked_solution": "Không; P(A)P(B)=1/4 khác 0. Hai biến cố xung khắc và có xác suất dương không độc lập.",
+    "skill_ids": [
+      "G12-CHVI-B18-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-P04 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-A04",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Một lớp có P(chơi cờ)=0,3, P(chơi nhạc)=0,6 và P(cả hai)=0,18. Tính P(chơi cờ|chơi nhạc) và nhận xét.",
+    "answer_key": "`0,3; độc lập`.",
+    "worked_solution": "0,18/0,6=0,3=P(chơi cờ), nên hai biến cố độc lập với dữ liệu đã cho.",
+    "skill_ids": [
+      "G12-CHVI-B18-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-A04 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-C05",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Khảo sát: CLB có 8 đạt,2 chưa; không CLB có 12 đạt,8 chưa. Tính P(đạt|CLB).",
+    "answer_key": "`4/5`.",
+    "worked_solution": "Tổng CLB=10, đạt=8 nên 8/10=4/5.",
+    "skill_ids": [
+      "G12-CHVI-B18-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-C05 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-P05",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Dữ liệu: Nhóm X 30 chọn A,20 không; Nhóm Y 15 chọn A,35 không. Tính P(X|chọn A).",
+    "answer_key": "`2/3`.",
+    "worked_solution": "Tổng chọn A=30+15=45, số trong X=30, P=30/45=2/3.",
+    "skill_ids": [
+      "G12-CHVI-B18-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-P05 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-A05",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Nhóm I: 18 đúng,12 sai; Nhóm II: 24 đúng,6 sai. So sánh xác suất trả lời đúng trong từng nhóm.",
+    "answer_key": "`3/5 và 4/5`.",
+    "worked_solution": "P(đúng|I)=18/30=3/5; P(đúng|II)=24/30=4/5, nhóm II cao hơn 1/5.",
+    "skill_ids": [
+      "G12-CHVI-B18-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-A05 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-C06",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cho P(A)=0,3, P(B|A)=0,6. Tính P(A∩B).",
+    "answer_key": "`9/50`.",
+    "worked_solution": "0,3×0,6=0,18.",
+    "skill_ids": [
+      "G12-CHVI-B18-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-C06 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-P06",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cho P(B)=2/5 và P(A|B)=1/4. Tính P(A∩B).",
+    "answer_key": "`1/10`.",
+    "worked_solution": "P(B)P(A|B)=(2/5)(1/4)=1/10.",
+    "skill_ids": [
+      "G12-CHVI-B18-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-P06 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-A06",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Tỉ lệ chuyến tàu đúng giờ là 80%. Trong các chuyến đúng giờ, 90% hành khách kết nối chuyến tiếp theo thành công. Tính xác suất một hành khách rơi vào cả hai tình huống.",
+    "answer_key": "`18/25`.",
+    "worked_solution": "P(đúng giờ∩kết nối)=0,8×0,9=0,72. Xác suất 90% là có điều kiện, không phải tổng thể.",
+    "skill_ids": [
+      "G12-CHVI-B18-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-A06 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-C07",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Túi 4 bi vàng, 2 bi đen; lấy 2 bi không hoàn lại. Tính P(cả hai vàng).",
+    "answer_key": "`2/5`.",
+    "worked_solution": "P=(4/6)(3/5)=2/5.",
+    "skill_ids": [
+      "G12-CHVI-B18-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-C07 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-P07",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Túi 3 bi đỏ và 2 bi xanh; lấy hai bi không hoàn lại. Tính xác suất hai bi khác màu.",
+    "answer_key": "`3/5`.",
+    "worked_solution": "P(đỏ rồi xanh)=3/5×2/4=3/10; P(xanh rồi đỏ)=2/5×3/4=3/10; cộng=3/5.",
+    "skill_ids": [
+      "G12-CHVI-B18-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-P07 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B18-A07",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Túi 4 bi đỏ, 2 bi xanh; rút 3 lần không hoàn lại. Xác suất đúng 2 đỏ và 1 xanh?",
+    "answer_key": "`3/5`.",
+    "worked_solution": "Có 3 thứ tự RRB, RBR, BRR; mỗi thứ tự có xác suất (4×3×2)/(6×5×4)=1/5; tổng=3/5.",
+    "skill_ids": [
+      "G12-CHVI-B18-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B18-A07 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-C01",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cho P(A)=0,35. Tính P(Ā).",
+    "answer_key": "`13/20`.",
+    "worked_solution": "P(Ā)=1−0,35=0,65.",
+    "skill_ids": [
+      "G12-CHVI-B19-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-C01 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-P01",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cho P(A)=2/5. Tính P(Ā), kiểm hai nhánh phủ hết không gian.",
+    "answer_key": "`3/5`.",
+    "worked_solution": "P(Ā)=3/5, tổng bằng 1 và A∩Ā=∅.",
+    "skill_ids": [
+      "G12-CHVI-B19-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-P01 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-A01",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cho P(B)=0,32, P(A)=0,4, P(B|A)=0,5. Tìm P(B|Ā).",
+    "answer_key": "`1/5`.",
+    "worked_solution": "0,32=0,4×0,5+0,6×x ⇒ 0,12=0,6x ⇒ x=0,2.",
+    "skill_ids": [
+      "G12-CHVI-B19-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-A01 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-C02",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Nhóm A chiếm 40%, xác suất đạt 80%; nhóm còn lại 60%, xác suất đạt 60%. Tính P(đạt).",
+    "answer_key": "`17/25`.",
+    "worked_solution": "0,4×0,8+0,6×0,6=0,32+0,36=0,68=17/25.",
+    "skill_ids": [
+      "G12-CHVI-B19-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-C02 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-P02",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Hai nguồn cung A 30%, B 70%, tỉ lệ lỗi lần lượt 10% và 20%. Xác suất lấy ngẫu nhiên một sản phẩm lỗi?",
+    "answer_key": "`17/100`.",
+    "worked_solution": "0,3×0,1+0,7×0,2=0,03+0,14=0,17.",
+    "skill_ids": [
+      "G12-CHVI-B19-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-P02 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-A02",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Tỉ lệ người di chuyển ngày nghỉ là 60%, 80% trong số này dùng xe công cộng; ngày thường là 40%, 50% dùng xe công cộng. Xác suất ngẫu nhiên một lượt khảo sát dùng xe công cộng?",
+    "answer_key": "`17/25`.",
+    "worked_solution": "0,6×0,8+0,4×0,5=0,48+0,20=0,68.",
+    "skill_ids": [
+      "G12-CHVI-B19-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-A02 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-C03",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cây: P(A)=0,2, P(B|A)=0,7, P(B|Ā)=0,4. Tính P(B).",
+    "answer_key": "`23/50`.",
+    "worked_solution": "0,2×0,7+0,8×0,4=0,14+0,32=0,46.",
+    "skill_ids": [
+      "G12-CHVI-B19-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-C03 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-P03",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Cây: P(A)=0,7; xác suất kết quả E nếu A là 0,2, nếu Ā là 0,5. Tính P(E).",
+    "answer_key": "`29/100`.",
+    "worked_solution": "0,7×0,2+0,3×0,5=0,14+0,15=0,29.",
+    "skill_ids": [
+      "G12-CHVI-B19-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-P03 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-A03",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Theo cây P(A)=0,7, P(E|A)=0,2, P(E|Ā)=0,5, tính P(A|E).",
+    "answer_key": "`14/29`.",
+    "worked_solution": "P(A∩E)=0,14; P(E)=0,29 nên P(A|E)=14/29.",
+    "skill_ids": [
+      "G12-CHVI-B19-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-A03 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-C04",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "P(A)=0,3, P(B|A)=0,1, P(B|Ā)=0,2. Tính P(A|B).",
+    "answer_key": "`3/17`.",
+    "worked_solution": "Tử 0,03; mẫu 0,03+0,14=0,17; được 3/17.",
+    "skill_ids": [
+      "G12-CHVI-B19-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-C04 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-P04",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "P(A)=1/4, P(B|A)=4/5, P(B|Ā)=3/5. Tính P(A|B).",
+    "answer_key": "`4/13`.",
+    "worked_solution": "Tử (1/4)(4/5)=1/5; mẫu 1/5+(3/4)(3/5)=13/20; hậu nghiệm=4/13.",
+    "skill_ids": [
+      "G12-CHVI-B19-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-P04 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-A04",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Một tỉ lệ nền là 2%, độ nhạy của phép thử là 90%, tỷ lệ dương tính giả 10% (giả định). Nếu kết quả dương, xác suất thuộc nhóm có đặc điểm là bao nhiêu?",
+    "answer_key": "`9/58`.",
+    "worked_solution": "P(A|+)=(0,02×0,9)/(0,02×0,9+0,98×0,1)=0,018/0,116=9/58. Đây chỉ là ví dụ toán giả định.",
+    "skill_ids": [
+      "G12-CHVI-B19-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-A04 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-C05",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Giả định tỷ lệ nền 2%, độ nhạy 90%, xác suất dương tính giả 5%. Tính P(có đặc điểm|dương).",
+    "answer_key": "`18/67`.",
+    "worked_solution": "Tử 0,02×0,9=0,018; giả dương 0,98×0,05=0,049; tổng 0,067; P=18/67.",
+    "skill_ids": [
+      "G12-CHVI-B19-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-C05 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-P05",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Giả định tỷ lệ nền 1%, độ nhạy 80%, tỷ lệ dương giả 10%. Tính P(có đặc điểm|dương).",
+    "answer_key": "`8/107`.",
+    "worked_solution": "Tử 0,008; giả dương 0,99×0,10=0,099; tổng 0,107; P=8/107.",
+    "skill_ids": [
+      "G12-CHVI-B19-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-P05 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-A05",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Một bộ lọc thư có tỷ lệ thư rác 5%, nhận diện đúng thư rác 90%, gắn nhầm thư thường 4%. Nếu thư bị gắn rác, xác suất thư thực sự rác?",
+    "answer_key": "`45/83`.",
+    "worked_solution": "P(rác|gắn)=0,05×0,9/[0,05×0,9+0,95×0,04]=0,045/0,083=45/83.",
+    "skill_ids": [
+      "G12-CHVI-B19-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-A05 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-C06",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Ba vùng A,B,C chiếm 25%,50%,25% dân số khảo sát; khả năng mưa lần lượt 60%,20%,40%. Tính P(mưa).",
+    "answer_key": "`7/20`.",
+    "worked_solution": "0,25×0,6+0,5×0,2+0,25×0,4=0,15+0,10+0,10=0,35.",
+    "skill_ids": [
+      "G12-CHVI-B19-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-C06 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-P06",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Ba nhà máy đóng góp 20%,30%,50%, tỉ lệ lỗi 1%,2%,3%. Tính tỉ lệ lỗi chung.",
+    "answer_key": "`23/1000`.",
+    "worked_solution": "0,2×0,01+0,3×0,02+0,5×0,03=0,002+0,006+0,015=0,023.",
+    "skill_ids": [
+      "G12-CHVI-B19-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-P06 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-A06",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Ba nguồn cung chiếm 40%,35%,25%, tỷ lệ lỗi lần lượt 2%,4%,8%. Tính P(lỗi).",
+    "answer_key": "`21/500`.",
+    "worked_solution": "0,4×0,02+0,35×0,04+0,25×0,08=0,008+0,014+0,02=0,042.",
+    "skill_ids": [
+      "G12-CHVI-B19-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-A06 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-C07",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "70% đơn thuộc ca sáng thành công 80%; 30% ca tối thành công 50%. Tính P(thành công) và P(ca sáng|thành công).",
+    "answer_key": "`71/100 và 56/71`.",
+    "worked_solution": "P(S)=0,7×0,8+0,3×0,5=0,71; P(sáng|S)=0,56/0,71=56/71.",
+    "skill_ids": [
+      "G12-CHVI-B19-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 1,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-C07 — Core — kiểm tra nền tảng",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-P07",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Nguồn A 60% có tỉ lệ hỏng 10%; nguồn B 40% hỏng 5%. Tính P(hỏng) và P(A|hỏng).",
+    "answer_key": "`2/25 và 3/4`.",
+    "worked_solution": "P(H)=0,6×0,1+0,4×0,05=0,08; P(A|H)=0,06/0,08=3/4.",
+    "skill_ids": [
+      "G12-CHVI-B19-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 2,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-P07 — Luyện tập — biến thể",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B19-A07",
+    "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
+    "stem": "Tỷ lệ giao ca sáng 45%, tỷ lệ giao đúng là 90%; ca tối 55%, tỷ lệ giao đúng là 80%. Tính P(giao đúng), sau đó P(ca tối|giao đúng).",
+    "answer_key": "`169/200 và 88/169`.",
+    "worked_solution": "P(Đ)=0,45×0,9+0,55×0,8=0,845=169/200; P(tối|Đ)=0,44/0,845=88/169.",
+    "skill_ids": [
+      "G12-CHVI-B19-O07"
+    ],
+    "problem_type_id": null,
+    "difficulty": 3,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+      "heading": "#### THPT-G12-B19-A07 — Vận dụng — bài toán có bối cảnh",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
+        "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

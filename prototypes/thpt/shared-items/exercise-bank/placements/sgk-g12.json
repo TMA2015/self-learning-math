@@ -2761,5 +2761,495 @@
     "order": 24,
     "item_id": "THPT-G12-B17-A05",
     "skill_id": "G12-CHV-B17-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-B18-C01",
+    "skill_id": "G12-CHVI-B18-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-B18-P01",
+    "skill_id": "G12-CHVI-B18-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-B18-A01",
+    "skill_id": "G12-CHVI-B18-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G12-B18-W01",
+    "skill_id": "G12-CHVI-B18-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-B18-C02",
+    "skill_id": "G12-CHVI-B18-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-B18-P02",
+    "skill_id": "G12-CHVI-B18-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-B18-A02",
+    "skill_id": "G12-CHVI-B18-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G12-B18-W02",
+    "skill_id": "G12-CHVI-B18-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-B18-C03",
+    "skill_id": "G12-CHVI-B18-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-B18-P03",
+    "skill_id": "G12-CHVI-B18-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 3,
+    "item_id": "THPT-G12-B18-A03",
+    "skill_id": "G12-CHVI-B18-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G12-B18-W03",
+    "skill_id": "G12-CHVI-B18-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-B18-C04",
+    "skill_id": "G12-CHVI-B18-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-B18-P04",
+    "skill_id": "G12-CHVI-B18-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G12-B18-A04",
+    "skill_id": "G12-CHVI-B18-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G12-B18-W04",
+    "skill_id": "G12-CHVI-B18-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G12-B18-C05",
+    "skill_id": "G12-CHVI-B18-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-B18-P05",
+    "skill_id": "G12-CHVI-B18-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 5,
+    "item_id": "THPT-G12-B18-A05",
+    "skill_id": "G12-CHVI-B18-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G12-B18-W05",
+    "skill_id": "G12-CHVI-B18-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G12-B18-C06",
+    "skill_id": "G12-CHVI-B18-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G12-B18-P06",
+    "skill_id": "G12-CHVI-B18-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 6,
+    "item_id": "THPT-G12-B18-A06",
+    "skill_id": "G12-CHVI-B18-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "THPT-G12-B18-W06",
+    "skill_id": "G12-CHVI-B18-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 7,
+    "item_id": "THPT-G12-B18-C07",
+    "skill_id": "G12-CHVI-B18-O07"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G12-B18-P07",
+    "skill_id": "G12-CHVI-B18-O07"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B18:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 7,
+    "item_id": "THPT-G12-B18-A07",
+    "skill_id": "G12-CHVI-B18-O07"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 7,
+    "item_id": "THPT-G12-B18-W07",
+    "skill_id": "G12-CHVI-B18-O07"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-B19-C01",
+    "skill_id": "G12-CHVI-B19-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-B19-P01",
+    "skill_id": "G12-CHVI-B19-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-B19-A01",
+    "skill_id": "G12-CHVI-B19-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 8,
+    "item_id": "THPT-G12-B19-W01",
+    "skill_id": "G12-CHVI-B19-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-B19-C02",
+    "skill_id": "G12-CHVI-B19-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-B19-P02",
+    "skill_id": "G12-CHVI-B19-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-B19-A02",
+    "skill_id": "G12-CHVI-B19-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 9,
+    "item_id": "THPT-G12-B19-W02",
+    "skill_id": "G12-CHVI-B19-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-B19-C03",
+    "skill_id": "G12-CHVI-B19-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-B19-P03",
+    "skill_id": "G12-CHVI-B19-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 3,
+    "item_id": "THPT-G12-B19-A03",
+    "skill_id": "G12-CHVI-B19-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 10,
+    "item_id": "THPT-G12-B19-W03",
+    "skill_id": "G12-CHVI-B19-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-B19-C04",
+    "skill_id": "G12-CHVI-B19-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-B19-P04",
+    "skill_id": "G12-CHVI-B19-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G12-B19-A04",
+    "skill_id": "G12-CHVI-B19-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 11,
+    "item_id": "THPT-G12-B19-W04",
+    "skill_id": "G12-CHVI-B19-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G12-B19-C05",
+    "skill_id": "G12-CHVI-B19-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-B19-P05",
+    "skill_id": "G12-CHVI-B19-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 5,
+    "item_id": "THPT-G12-B19-A05",
+    "skill_id": "G12-CHVI-B19-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 12,
+    "item_id": "THPT-G12-B19-W05",
+    "skill_id": "G12-CHVI-B19-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G12-B19-C06",
+    "skill_id": "G12-CHVI-B19-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G12-B19-P06",
+    "skill_id": "G12-CHVI-B19-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 6,
+    "item_id": "THPT-G12-B19-A06",
+    "skill_id": "G12-CHVI-B19-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 13,
+    "item_id": "THPT-G12-B19-W06",
+    "skill_id": "G12-CHVI-B19-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 7,
+    "item_id": "THPT-G12-B19-C07",
+    "skill_id": "G12-CHVI-B19-O07"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G12-B19-P07",
+    "skill_id": "G12-CHVI-B19-O07"
+  },
+  {
+    "collection": "SGK:G12:CHVI:B19:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 7,
+    "item_id": "THPT-G12-B19-A07",
+    "skill_id": "G12-CHVI-B19-O07"
+  },
+  {
+    "collection": "SGK:G12:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 14,
+    "item_id": "THPT-G12-B19-W07",
+    "skill_id": "G12-CHVI-B19-O07"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G12-B18-A01",
+    "skill_id": "G12-CHVI-B18-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G12-B18-A02",
+    "skill_id": "G12-CHVI-B18-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G12-B18-A03",
+    "skill_id": "G12-CHVI-B18-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G12-B18-A04",
+    "skill_id": "G12-CHVI-B18-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G12-B18-A05",
+    "skill_id": "G12-CHVI-B18-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G12-B18-A06",
+    "skill_id": "G12-CHVI-B18-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G12-B18-A07",
+    "skill_id": "G12-CHVI-B18-O07"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G12-B19-A01",
+    "skill_id": "G12-CHVI-B19-O01"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G12-B19-A02",
+    "skill_id": "G12-CHVI-B19-O02"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G12-B19-A03",
+    "skill_id": "G12-CHVI-B19-O03"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G12-B19-A04",
+    "skill_id": "G12-CHVI-B19-O04"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G12-B19-A05",
+    "skill_id": "G12-CHVI-B19-O05"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G12-B19-A06",
+    "skill_id": "G12-CHVI-B19-O06"
+  },
+  {
+    "collection": "SGK:G12:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G12-B19-A07",
+    "skill_id": "G12-CHVI-B19-O07"
   }
 ]
