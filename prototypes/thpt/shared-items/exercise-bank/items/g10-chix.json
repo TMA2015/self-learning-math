@@ -2,7 +2,7 @@
   {
     "item_id": "THPT-G10-B26-C01",
     "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
-    "stem": "Tung đồng thời một đồng xu cân đối (N: ngửa, S: sấp) và một xúc xắc 6 mặt cân đối; ghi cả hai kết quả. Hãy viết dạng chung của các phần tử không gian mẫu Ω và xác định số phần tử của Ω.",
+    "stem": "Tung đồng thời một đồng xu cân đối (N: ngửa, S: sấp) và một xúc xắc 6 mặt cân đối; hai phép thử độc lập; ghi cả hai kết quả. Hãy viết dạng chung của các phần tử không gian mẫu Ω và xác định số phần tử của Ω.",
     "answer_key": "Ω={(N,k),(S,k) | k∈{1,2,3,4,5,6}}; n(Ω)=12.",
     "worked_solution": "Mỗi kết quả gồm một mặt đồng xu và một số chấm; hai lựa chọn cho đồng xu nhân sáu lựa chọn xúc xắc = 12 cặp phân biệt. Đếm (N,3) khác (S,3).",
     "skill_ids": [
@@ -27,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng 2+6, viết mỗi kết quả dưới dạng cặp và đếm mọi cặp. Ôn Bài 26 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY01."
   },
   {
     "item_id": "THPT-G10-B26-C02",
@@ -57,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia cho 3 màu, đếm 8 ô vật lí đồng khả năng, không phải nhãn. Ôn Bài 26 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY03."
   },
   {
     "item_id": "THPT-G10-B26-P01",
@@ -87,7 +89,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tính phần xanh dương thay vì phần đối, lấy 1 trừ xác suất xanh dương. Ôn Bài 26 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY04."
   },
   {
     "item_id": "THPT-G10-B26-P02",
@@ -117,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu gộp NS và SN, ghi thứ tự hai lần tung và kiểm bốn chuỗi. Ôn Bài 26 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY02."
   },
   {
     "item_id": "THPT-G10-B26-P03",
@@ -147,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đếm 10 hai lần, viết tập hợp các số thuận lợi rồi đếm mỗi phần tử một lần. Ôn Bài 26 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY02."
   },
   {
     "item_id": "THPT-G10-B26-P04",
@@ -177,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nói xác suất nhỏ bằng 0, kiểm 1 kết quả thuận lợi trong 1000. Ôn Bài 26 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY05."
   },
   {
     "item_id": "THPT-G10-B26-P05",
@@ -207,14 +213,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia đều theo màu, kiểm giả thiết đồng khả năng của kết quả sơ cấp. Ôn Bài 26 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY05."
   },
   {
     "item_id": "THPT-G10-B27-C01",
     "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
     "stem": "Một túi có 3 thẻ phân biệt: hai thẻ đỏ R₁, R₂ và một thẻ xanh B. Rút lần lượt 2 thẻ không hoàn lại, mỗi thẻ còn trong túi có cùng khả năng được rút. Dùng sơ đồ cây hai tầng để tính xác suất hai thẻ rút ra khác màu.",
     "answer_key": "2/3.",
-    "worked_solution": "Sáu chuỗi thẻ có thứ tự đồng khả năng: (R₁,R₂), (R₁,B), (R₂,R₁), (R₂,B), (B,R₁), (B,R₂). Bốn chuỗi khác màu là (R₁,B), (R₂,B), (B,R₁), (B,R₂), nên P=4/6=2/3. Cây phải có ba nhánh lần đầu và hai nhánh tiếp nối mỗi nhánh đầu.",
+    "worked_solution": "Cây hai tầng (lần 1 → các nhánh lần 2): R₁ → R₂, B; R₂ → R₁, B; B → R₁, R₂. Mỗi lá là một chuỗi thẻ phân biệt, có xác suất bằng nhau vì lần đầu chọn đều trong 3, lần sau chọn đều trong 2. Có 6 lá, trong đó (R₁,B),(R₂,B),(B,R₁),(B,R₂) khác màu. Vậy P=4/6=2/3.",
     "skill_ids": [
       "G10-B27-TREE_SEQUENCE"
     ],
@@ -237,7 +244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cây chỉ có hai nhánh màu ngang nhau, vẽ ba thẻ phân biệt ở lần đầu và hai thẻ còn lại ở lần hai. Ôn Bài 27 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY07."
   },
   {
     "item_id": "THPT-G10-B27-C02",
@@ -267,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ đếm mũ, lập đủ cặp áo–mũ và giữ mẫu sáu bộ. Ôn Bài 27 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY06."
   },
   {
     "item_id": "THPT-G10-B27-P01",
@@ -297,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng chỉnh hợp cho tử nhưng tổ hợp cho mẫu, chọn một quy ước không thứ tự cho cả hai. Ôn Bài 27 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY06."
   },
   {
     "item_id": "THPT-G10-B27-P02",
@@ -327,21 +337,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu biến cố đối là đúng một thẻ đỏ, viết phủ định của ít nhất một xanh là không có xanh. Ôn Bài 27 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY08."
   },
   {
     "item_id": "THPT-G10-B27-P03",
     "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
-    "stem": "Một hộp có 3 thẻ đỏ và 2 thẻ xanh, các thẻ phân biệt. Rút hai thẻ lần lượt không hoàn lại; mọi chuỗi hai thẻ cụ thể có khả năng như nhau. Tính xác suất thẻ thứ nhất đỏ, thứ hai xanh.",
-    "answer_key": "3/10.",
-    "worked_solution": "Mẫu gồm 5×4=20 cặp thẻ có thứ tự. Thuận lợi có 3×2=6 cặp (đỏ trước, xanh sau), P=6/20=3/10. Cũng có thể viết (3/5)×(2/4)=3/10 nếu xem theo giai đoạn.",
+    "stem": "Hộp có 3 thẻ đỏ và 2 thẻ xanh, các thẻ phân biệt. Rút đều lần lượt 2 thẻ. Tính xác suất đỏ trước, xanh sau trong hai trường hợp: (a) không hoàn lại; (b) hoàn lại thẻ thứ nhất và trộn đều trước lần hai.",
+    "answer_key": "(a) 3/10; (b) 6/25.",
+    "worked_solution": "(a) Không hoàn lại: có 5·4=20 chuỗi thẻ đồng khả năng, trong đó 3·2=6 chuỗi đỏ rồi xanh, P=6/20=3/10. (b) Hoàn lại và trộn đều: có 5·5=25 chuỗi đồng khả năng, vẫn có 3·2=6 chuỗi đỏ rồi xanh, P=6/25. Mẫu khác nhau vì số thẻ ở lần hai khác nhau.",
     "skill_ids": [
       "G10-B27-MULTISTEP_CONTEXT"
     ],
     "problem_type_id": null,
     "difficulty": "INTERMEDIATE",
     "hints": [
-      "Sau lần rút đầu, thẻ không được bỏ lại vào hộp."
+      "Lập mẫu có thứ tự riêng cho từng cơ chế rút; đếm số thẻ còn lại ở lần hai."
     ],
     "rubric": null,
     "interaction": {
@@ -357,7 +368,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu giữ 5 lựa chọn lần hai khi không hoàn lại, kiểm số thẻ còn lại sau lần đầu. Ôn Bài 27 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY09."
   },
   {
     "item_id": "THPT-G10-B27-P04",
@@ -387,12 +399,13 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu gộp hai mặt xu khác thứ tự, đánh dấu hai đồng xu và đếm đủ hai cách. Ôn Bài 27 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY07."
   },
   {
     "item_id": "THPT-G10-B27-P05",
     "content_version": "THPT-G10-CHIX-D1D4-REVIEWED-20261028-R0",
-    "stem": "Gieo hai xúc xắc 6 mặt cân đối phân biệt. Một bạn đếm 21 cặp không có thứ tự {i,j} với 1≤i≤j≤6 và kết luận P(tổng bằng 3)=1/21. Hỏi cách tính đó có đúng không? Tính xác suất chính xác.",
+    "stem": "Gieo độc lập hai xúc xắc 6 mặt cân đối phân biệt. Một bạn đếm 21 cặp không có thứ tự {i,j} với 1≤i≤j≤6 và kết luận P(tổng bằng 3)=1/21. Hỏi cách tính đó có đúng không? Tính xác suất chính xác.",
     "answer_key": "Cách tính sai; xác suất đúng 1/18.",
     "worked_solution": "Các cặp không thứ tự {i,j} không có cùng xác suất: {1,2} ứng với hai cặp có thứ tự (1,2),(2,1), nhưng {1,1} chỉ ứng với (1,1). Cần dùng Ω là 36 cặp có thứ tự đồng khả năng. Tổng bằng 3 chỉ có (1,2),(2,1); P=2/36=1/18.",
     "skill_ids": [
@@ -417,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 21 cặp không thứ tự như đồng khả năng, so {1,1} và {1,2}. Ôn Bài 27 phần kiến thức tương ứng; luyện THPT-G10-CHIX-TRY10."
   },
   {
     "item_id": "THPT-G10-CHIX-TRY01",
