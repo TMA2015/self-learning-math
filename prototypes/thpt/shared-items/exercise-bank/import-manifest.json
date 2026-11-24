@@ -15385,6 +15385,141 @@
         "9 CHV items Vietnamese statistical terminology/units; same math. G11 CHI-03 fixed-axis unidirectional rotation; -11 domain; -17 explicit tan domain. CHVI B16-R03 time unit, B17-R05 complete key for part c. No change to original mathematical results.",
         "Original source blobs, IDs, exposure, interaction and counts preserved. Delta A/C as appropriate, not new independent verdict. Full S1/PED/D6 and reveal enforcement pending."
       ]
+    },
+    "formative_scoped_audit_cp48": {
+      "checkpoint": 48,
+      "baseline": "88e3048527d7c79ec0e6d3bca0c29c0b36d20743",
+      "scope": "G10 ChI B01/B02 + CĐ01 shared practice, not entire bank",
+      "source_evidence": {
+        "sgk_formative": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "B01": "dba6430cd79b17dee0591fb2dcd075ea5200b126",
+        "B02": "3002487e974f2693528a39b2b2055fad8724d698",
+        "topic_knowledge": "f94ff63e14201de93f02ba65b0d8892a7c049b7c",
+        "topic_practice": "68aff74a219fd7e43e69f2970598a29a933fac89",
+        "written": "1e9d93509213bffd3a8437ee209bd55383abec7e"
+      },
+      "files": [
+        {
+          "path": "items/g10-chi.json",
+          "before": "f40fb546245fe0efaebce3dd9b7bb5e07cad3365",
+          "after": "7f2fd69e717938773ff4da895933261a7b49b89d",
+          "changed": [
+            "THPT-G10-B01-C01",
+            "THPT-G10-B01-C02",
+            "THPT-G10-B01-P01",
+            "THPT-G10-B01-P02",
+            "THPT-G10-B01-P03",
+            "THPT-G10-B01-P04",
+            "THPT-G10-B01-P05",
+            "THPT-G10-B01-P06",
+            "THPT-G10-B02-C01",
+            "THPT-G10-B02-C02",
+            "THPT-G10-B02-P01",
+            "THPT-G10-B02-P02",
+            "THPT-G10-B02-P03",
+            "THPT-G10-B02-P04",
+            "THPT-G10-B02-P05",
+            "THPT-G10-B02-P06"
+          ]
+        },
+        {
+          "path": "items/cd01.json",
+          "before": "605e6758a9b32f46adb7265826c7288f16e1e234",
+          "after": "fb615be4210f2a2190c5857355bc40ee49b18a7a",
+          "changed": [
+            "THPT-TOP01-ADD01",
+            "THPT-TOP01-ADD02",
+            "THPT-TOP01-ADD03",
+            "THPT-TOP01-ADD04",
+            "THPT-TOP01-ADD05",
+            "THPT-TOP01-ADD06"
+          ]
+        },
+        {
+          "path": "placements/cd01.json",
+          "before": "e67d438b3775e5193e21a8c76e671a6e2f5ba552",
+          "after": "e67d438b3775e5193e21a8c76e671a6e2f5ba552",
+          "changed": []
+        },
+        {
+          "path": "placements/sgk-g10.json",
+          "before": "240d485678b3182add1fb3acd7035e6fc9994e08",
+          "after": "240d485678b3182add1fb3acd7035e6fc9994e08",
+          "changed": []
+        },
+        {
+          "path": "written-references.json",
+          "before": "4c9a032916f3d0593fc0cd639510a5128f56a5e1",
+          "after": "4c9a032916f3d0593fc0cd639510a5128f56a5e1",
+          "changed": []
+        }
+      ],
+      "reviewed": {
+        "formative": 22,
+        "first_try_preserved": 11,
+        "written_reference_read_only": 2,
+        "topic_outcomes": 11,
+        "topic_practice_placements": 24,
+        "replay_placements": 11,
+        "sgk_formative_source_parity_before_edit": 16
+      },
+      "matrix": {
+        "TOP01-O01": [
+          "THPT-G10-B01-C01",
+          "THPT-TOP01-ADD01"
+        ],
+        "TOP01-O02": [
+          "THPT-G10-B01-C02",
+          "THPT-G10-B01-P05"
+        ],
+        "TOP01-O03": [
+          "THPT-G10-B01-P03",
+          "THPT-G10-B01-P06",
+          "THPT-G10-CHI-W01"
+        ],
+        "TOP01-O04": [
+          "THPT-G10-B01-P04",
+          "THPT-TOP01-ADD02"
+        ],
+        "TOP01-O05": [
+          "THPT-G10-B01-P01",
+          "THPT-G10-B01-P02"
+        ],
+        "TOP01-O06": [
+          "THPT-G10-B02-C01",
+          "THPT-G10-B02-P06"
+        ],
+        "TOP01-O07": [
+          "THPT-G10-B02-C02",
+          "THPT-TOP01-ADD03"
+        ],
+        "TOP01-O08": [
+          "THPT-G10-B02-P01",
+          "THPT-TOP01-ADD04"
+        ],
+        "TOP01-O09": [
+          "THPT-G10-B02-P02",
+          "THPT-TOP01-ADD05"
+        ],
+        "TOP01-O10": [
+          "THPT-G10-B02-P03",
+          "THPT-G10-B02-P04"
+        ],
+        "TOP01-O11": [
+          "THPT-G10-B02-P05",
+          "THPT-G10-CHI-W02-ANCHOR",
+          "THPT-TOP01-ADD06"
+        ]
+      },
+      "findings": [
+        "O03: P03 previously copied the worked example and did not ask to identify necessary/sufficient; now different divisibility pair and explicit reasoning both ways.",
+        "O10: previous P03/P04 copied the identical worked example; now closed endpoint singleton intersection and disconnected union with boundary tests.",
+        "O06: prior practice did not directly test empty set or number-set classification although knowledge does; C01 and P06 extended in place, no new IDs.",
+        "P02/P04 B01 and P05 B02: proof and explicit four-region check improved; 16 existing SGK items gained targeted remediation, 6 topic additions gained existing skill tags, hints and concrete corrective actions. ADD01 distinguishes counterexample from negation; ADD04/05 remove escaped double slash display ambiguity.",
+        "W01/W02 computations and 7-point rubrics correct on existing library; W02 asks meaning A∖B but does not explicitly define A,B. Flag for canonical Written owner, reference only, no duplication or source edit.",
+        "11 topic outcomes mapped, but count is not full S1/Q01/PED PASS. CĐ01 knowledge has embedded first-try exercises without separate item IDs in current topic first-try shard; no new IDs inferred. D6 links to real sections/items checked textually, browser/link/reveal QA pending. Original SGK PDF not reread."
+      ],
+      "next": "G10 ChII + CD02; verify skill/problem family/difficulty taxonomy and D6 by evidence; carry Written W02 issue to authorized canonical review."
     }
   }
 }
