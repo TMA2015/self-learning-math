@@ -1,0 +1,238 @@
+[
+  {
+    "collection": "SGK:G10:CHI:B01:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B01-C01",
+    "skill_id": "G10-B01-PROPOSITION"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B01-C02",
+    "skill_id": "G10-B01-NEGATION"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B01-P01",
+    "skill_id": "G10-B01-QUANTIFIERS"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B01-P02",
+    "skill_id": "G10-B01-QUANTIFIERS"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B01-P03",
+    "skill_id": "G10-B01-IMPLICATION"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B01-P04",
+    "skill_id": "G10-B01-EQUIVALENCE"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B01-P05",
+    "skill_id": "G10-B01-NEGATION"
+  },
+  {
+    "collection": "SGK:G10:CHI:B01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B01-P06",
+    "skill_id": "G10-B01-IMPLICATION"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B02-C01",
+    "skill_id": "G10-B02-MEMBERSHIP_SUBSET"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B02-C02",
+    "skill_id": "G10-B02-UNION_INTERSECTION"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B02-P01",
+    "skill_id": "G10-B02-DIFFERENCE"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B02-P02",
+    "skill_id": "G10-B02-COMPLEMENT"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B02-P03",
+    "skill_id": "G10-B02-INTERVALS"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B02-P04",
+    "skill_id": "G10-B02-INTERVALS"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B02-P05",
+    "skill_id": "G10-B02-VENN_MODEL"
+  },
+  {
+    "collection": "SGK:G10:CHI:B02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B02-P06",
+    "skill_id": "G10-B02-SET_EQUALITY"
+  },
+  {
+    "collection": "SGK:G10:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G10-CHI-W01"
+  },
+  {
+    "collection": "SGK:G10:CHI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G10-CHI-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G10-CHI-RD1-01",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G10-CHI-RD1-02",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G10-CHI-RD1-03",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G10-CHI-RD1-04",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G10-CHI-RD1-05",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G10-CHI-RD1-06",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G10-CHI-RD1-07",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G10-CHI-RD1-08",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G10-CHI-RD1-09",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G10-CHI-RD1-10",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G10-CHI-RD1-11",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G10-CHI-RD1-12",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G10-CHI-RD1-13",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G10-CHI-RD1-14",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  }
+]

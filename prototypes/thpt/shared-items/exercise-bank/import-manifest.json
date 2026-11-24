@@ -6,7 +6,9 @@
     "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
     "f70e2c961dfcf31825d135b61e301cbb4c322767",
     "ab878f1a18dea87872449a79c27b75a612d81b39",
-    "2e93db80384de53e208248eaa0396a7f487302ac"
+    "2e93db80384de53e208248eaa0396a7f487302ac",
+    "95a554e31a613b8e215679fe6790738473d598df",
+    "89ae1cd2338f2c5c48b9af874a8b52b1306c8acd"
   ],
   "projection_sources": [
     {
@@ -68,18 +70,55 @@
       "path": "docs/thpt-preview/chuyen-de/cd08/tu-kiem-tra.md",
       "blob": "82622b0fa06ec19abec57666bdf78efb91333ea4",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+      "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-i.md",
+      "blob": "1e9d93509213bffd3a8437ee209bd55383abec7e",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd01/luyen-tap.md",
+      "blob": "68aff74a219fd7e43e69f2970598a29a933fac89",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd01/tu-kiem-tra.md",
+      "blob": "9ea39f0f9aded526ba1fc1b1622fb0c84a48ad43",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g10-readiness/CHI.json",
+      "blob": "bef97279707fa1bdfc00db4e0421cee6df0572a9",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-i/tu-kiem-tra-chuong.md",
+      "blob": "f6ec58276b1a151aa5434a9017a28b00feb6f5a5",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g10-reviewed-selfcheck-v1.js",
+      "blob": "84ac8f852d2c0b960528ffb037c1fdffb0596b3a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 136,
-    "written_references": 24,
-    "topic_practice": 165,
-    "topic_replay": 53,
-    "sgk_public_selfcheck": 28,
-    "placements": 324,
-    "projection_field_differences": 0
+    "formative_items": 158,
+    "written_references": 26,
+    "topic_practice": 189,
+    "topic_replay": 64,
+    "sgk_public_selfcheck": 42,
+    "placements": 391,
+    "projection_field_differences": 0,
+    "public_selfcheck_only_items": 14,
+    "unstructured_projection_review": 12
   },
-  "scope": "CĐ05, CĐ07, CĐ08 + G11 ChII/ChV public formative and self-check; written references only. Not full THPT inventory.",
+  "scope": "CD01/05/07/08 + G10 ChI + G11 ChII/ChV public formative, public self-check and written references",
   "projection_field_differences": [],
   "academic_audit": "PENDING",
   "interaction_conversion": "PENDING",
@@ -132,6 +171,117 @@
           "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
         }
       ]
+    },
+    {
+      "topic": "CD01",
+      "new_formative": 6,
+      "new_written": 0,
+      "shared_sgk_formative": 16,
+      "shared_written": 2,
+      "practice": 24,
+      "replay": 11,
+      "placements": 35,
+      "answer_table_rows_checked": 11,
+      "source_blob": "89ae1cd2338f2c5c48b9af874a8b52b1306c8acd",
+      "projection_sources": [
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd01/luyen-tap.md",
+          "blob": "68aff74a219fd7e43e69f2970598a29a933fac89",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        },
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd01/tu-kiem-tra.md",
+          "blob": "9ea39f0f9aded526ba1fc1b1622fb0c84a48ad43",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        }
+      ]
     }
-  ]
+  ],
+  "unstructured_projection_review": [
+    {
+      "item_id": "THPT-G10-B01-C01",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G10-B01-P03",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G10-B01-P06",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G10-B01-P04",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-TOP01-ADD02",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G10-B01-P01",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G10-B02-C01",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G10-B02-P06",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G10-B02-P02",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G10-B02-P04",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": true,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-G10-B02-P05",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    },
+    {
+      "item_id": "THPT-TOP01-ADD06",
+      "projection": "CD01_PRACTICE",
+      "answer_literal_present": false,
+      "solution_literal_present": true,
+      "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
+    }
+  ],
+  "public_legacy_selfcheck_note": "14 already-public client items, exact historical RD1 IDs retained, actual runtime/pages and owner #662 checked; no private RD1, independent credit or Mastery."
 }

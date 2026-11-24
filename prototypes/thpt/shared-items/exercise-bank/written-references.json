@@ -286,5 +286,33 @@
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
     "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G10-CHI-W01",
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading_id": "THPT-G10-CHI-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-i.md",
+      "blob": "1e9d93509213bffd3a8437ee209bd55383abec7e",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G10-CHI-W02-ANCHOR",
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading_id": "THPT-G10-CHI-W02-ANCHOR"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-i.md",
+      "blob": "1e9d93509213bffd3a8437ee209bd55383abec7e",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
   }
 ]

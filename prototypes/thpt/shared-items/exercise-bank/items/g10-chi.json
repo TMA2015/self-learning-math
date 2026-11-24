@@ -1,0 +1,482 @@
+[
+  {
+    "item_id": "THPT-G10-B01-C01",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Xét hai câu: (a) “9 là số chính phương”; (b) “x + 1 = 3”. Câu nào là mệnh đề, và giá trị đúng/sai?",
+    "answer_key": "(a) là mệnh đề đúng; (b) là mệnh đề chứa biến, chưa có giá trị chân lý khi chưa quy định x.",
+    "worked_solution": "9=3²; câu x+1=3 đúng khi x=2 và sai khi x khác 2 nên chưa là một mệnh đề xác định nếu không gán biến.",
+    "skill_ids": [
+      "G10-B01-PROPOSITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Tìm xem câu đã xác định đúng/sai hay còn phụ thuộc biến."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B01-C01 — SGK_CORE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B01-C02",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Phủ định của P: “15 chia hết cho 4” là gì? Xét giá trị đúng/sai của P và phủ định.",
+    "answer_key": "“15 không chia hết cho 4”; P sai, phủ định đúng.",
+    "worked_solution": "15 chia 4 dư 3 nên P sai; phủ định của P đúng.",
+    "skill_ids": [
+      "G10-B01-NEGATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Phủ định thay bằng “không”, không thay 15 bằng số khác."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B01-C02 — SGK_CORE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B01-P01",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Xác định đúng/sai của “Với mọi số thực x, x² + 1 > 0”.",
+    "answer_key": "Đúng.",
+    "worked_solution": "Với mọi x∈ℝ, x²≥0 nên x²+1≥1>0.",
+    "skill_ids": [
+      "G10-B01-QUANTIFIERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Với số thực, bình phương luôn không âm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B01-P01 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B01-P02",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Xác định đúng/sai của “Tồn tại số nguyên n sao cho n²=2”. Viết phủ định bằng lượng từ.",
+    "answer_key": "Sai; phủ định đúng: “Với mọi số nguyên n, n²≠2”.",
+    "worked_solution": "Không có số nguyên có bình phương bằng 2; đổi ∃ thành ∀ và = thành ≠ để phủ định.",
+    "skill_ids": [
+      "G10-B01-QUANTIFIERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Bình phương số nguyên kẹp giữa 1 và 4 như thế nào?"
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B01-P02 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B01-P03",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Xét mệnh đề với n∈ℤ: “Nếu n chia hết cho 6 thì n chia hết cho 3”. Mệnh đề đúng không? Mệnh đề đảo đúng không?",
+    "answer_key": "Mệnh đề đúng; mệnh đề đảo sai (n=3).",
+    "worked_solution": "Nếu n=6k=3(2k) nên chia hết cho 3. Đảo “chia hết cho 3 ⇒ chia hết cho 6” sai vì n=3.",
+    "skill_ids": [
+      "G10-B01-IMPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Từ n=6k hãy suy ra bội của 3. Đảo chỉ cần một phản ví dụ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B01-P03 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B01-P04",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Với n∈ℤ, xét “n chẵn khi và chỉ khi n² chẵn”. Đúng hay sai?",
+    "answer_key": "Đúng.",
+    "worked_solution": "Nếu n=2k thì n²=4k² chẵn; nếu n lẻ, n² lẻ, nên n² chẵn buộc n chẵn.",
+    "skill_ids": [
+      "G10-B01-EQUIVALENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Cần kiểm cả chiều thuận và chiều đảo; ở chiều đảo dùng phản chứng khi n lẻ."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B01-P04 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B01-P05",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Phủ định của Q: “Với mọi x∈ℝ, x²≥0” là gì? Đúng hay sai?",
+    "answer_key": "“Tồn tại x∈ℝ sao cho x²<0”; mệnh đề phủ định sai.",
+    "worked_solution": "Với mọi x thực, x²≥0. Vậy không có x thực có bình phương âm, phủ định sai.",
+    "skill_ids": [
+      "G10-B01-NEGATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Phủ định ∀ là ∃, phủ định ≥ là <."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B01-P05 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B01-P06",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Gọi P: “2>3”, Q: “5<4”. Xác định giá trị đúng/sai của P⇒Q và giải thích theo quy ước mệnh đề kéo theo.",
+    "answer_key": "P⇒Q đúng theo bảng giá trị chân lý (P sai, Q sai).",
+    "worked_solution": "P sai vì 2<3, Q sai vì 5>4. Kéo theo với tiền đề sai là đúng theo quy ước logic.",
+    "skill_ids": [
+      "G10-B01-IMPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "P⇒Q chỉ sai khi P đúng và Q sai."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B01-P06 — SGK_PRACTICE · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B02-C01",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Cho A={1,2}, B={1,2,3}. Xác định 2∈A và A⊆B đúng/sai; phân biệt hai ký hiệu.",
+    "answer_key": "Cả hai đúng; ∈ nối phần tử và tập, ⊆ nối hai tập.",
+    "worked_solution": "2 là thành viên A; mọi phần tử của A đều trong B nên A⊆B. Không viết A∈B khi B chỉ chứa các số.",
+    "skill_ids": [
+      "G10-B02-MEMBERSHIP_SUBSET"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Phần tử là số 2, còn A là một tập."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B02-C01 — SGK_CORE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B02-C02",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Với A={1,2,3,4}, B={3,4,5}, tìm A∩B và A∪B.",
+    "answer_key": "A∩B={3,4}; A∪B={1,2,3,4,5}.",
+    "worked_solution": "Phần tử chung: 3,4. Phần tử thuộc A hoặc B: 1,2,3,4,5 không lặp.",
+    "skill_ids": [
+      "G10-B02-UNION_INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Giao là cùng nằm trong hai tập; hợp là nằm trong ít nhất một tập."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B02-C02 — SGK_CORE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B02-P01",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Với A={1,2,3,4}, B={3,4,5}, hãy tìm A\\B và B\\A.",
+    "answer_key": "A\\B={1,2}; B\\A={5}.",
+    "worked_solution": "A\\B lấy phần tử chỉ trong A; B\\A lấy phần tử chỉ trong B.",
+    "skill_ids": [
+      "G10-B02-DIFFERENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Hiệu phụ thuộc thứ tự A trừ B hay B trừ A."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B02-P01 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B02-P02",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Trong tập vũ trụ U={1,2,3,4,5,6}, cho A={2,4,6}. Tìm phần bù U\\A.",
+    "answer_key": "{1,3,5}.",
+    "worked_solution": "Loại 2,4,6 khỏi U, còn 1,3,5.",
+    "skill_ids": [
+      "G10-B02-COMPLEMENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Phần bù luôn cần chỉ rõ tập vũ trụ U."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B02-P02 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B02-P03",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Cho X=(-∞,3], Y=(1,+∞). Tìm X∩Y.",
+    "answer_key": "(1,3].",
+    "worked_solution": "Hai điều kiện đồng thời x≤3 và x>1 nên 1<x≤3.",
+    "skill_ids": [
+      "G10-B02-INTERVALS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Kiểm lần lượt đầu mút 1 và 3."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B02-P03 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B02-P04",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Cho X=(-∞,3], Y=(1,+∞). Tìm X∪Y.",
+    "answer_key": "ℝ.",
+    "worked_solution": "Mọi số thực x đều thuộc ít nhất một trong hai khoảng nên hợp bằng ℝ.",
+    "skill_ids": [
+      "G10-B02-INTERVALS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Xét mọi số thực x: x≤3 hoặc x>1."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B02-P04 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B02-P05",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Lớp có 40 học sinh, 23 học câu lạc bộ Anh, 25 học câu lạc bộ Toán, 12 học cả hai. Hỏi bao nhiêu học sinh không học câu lạc bộ nào?",
+    "answer_key": "4 học sinh.",
+    "worked_solution": "n(A∪B)=23+25−12=36; ngoài cả hai =40−36=4.",
+    "skill_ids": [
+      "G10-B02-VENN_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Tính số học ít nhất một CLB bằng công thức cộng trừ giao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B02-P05 — SGK_PRACTICE · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B02-P06",
+    "content_version": "THPT-G10-CHI-B01B02-D1D6-R01",
+    "stem": "Cho A={x∈ℤ | x²=4}, B={−2,2}. Hai tập A và B có bằng nhau không?",
+    "answer_key": "Có, A=B.",
+    "worked_solution": "x²=4 ⇔ x=±2; A={−2,2}=B.",
+    "skill_ids": [
+      "G10-B02-SET_EQUALITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Giải phương trình trên ℤ, rồi so hai chiều chứa nhau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95a554e31a613b8e215679fe6790738473d598df",
+      "heading": "### THPT-G10-B02-P06 — SGK_PRACTICE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chi-reviewed-formative-v1.js",
+        "blob": "bfc61f3d0b51f5b58fb663e5e8bb391918e77d4c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]
