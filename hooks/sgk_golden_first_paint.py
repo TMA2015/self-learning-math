@@ -428,8 +428,73 @@ def _render_w6(output: str, uri: str) -> str:
 })();
 </script></article>""", 1)
 
+# #1039 W7 exact route scope; reuse proven recovery transformation.
+_W7_ROUTES = {f"thpt-preview/sgk/lop-11/chuong-{'viii' if n <= 30 else 'ix'}/bai-{n}.md": (n, count) for n, count in ((28,6),(29,6),(30,7),(31,8),(32,10),(33,8))}
+
+def _w7_mistake_disclosures(html: str, number: int, count: int) -> str:
+    # Keep all signed labels and paragraph bytes; only wrap tab4.
+    heading = '<h2 class="thpt-g10-section-heading">' + _HEADINGS[3] + '</h2>'
+    if html.count(heading) != 1:
+        raise RuntimeError("W7 tab4 heading changed")
+    start = html.index(heading) + len(heading)
+    pattern = re.compile(r'\s*<h3 id="([^"]+)">(4\.\d+\.[\s\S]*?)</h3>\s*((?:<p>[\s\S]*?</p>\s*){3})')
+    pos = start
+    out = []
+    for i in range(1, count + 1):
+        item = pattern.match(html, pos)
+        if item is None or not item[2].startswith(f"4.{i}. "):
+            raise RuntimeError("W7 recovery shape mismatch: B" + str(number))
+        if re.findall(r'<p><strong>([^<]+)</strong>', item[3])[:3] != ["Sai ở đâu:", "Vì sao sai:", "Cách sửa:"]:
+            raise RuntimeError("W7 recovery labels mismatch")
+        out.append('<details class="tip" id="' + item[1] + '">\n<summary>' + item[2] + '</summary>\n' + item[3] + '</details>\n')
+        pos = item.end()
+    if not re.match(r'\s*</div>', html[pos:]):
+        raise RuntimeError("W7 unexpected trailing recovery content: B" + str(number))
+    return html[:start] + '\n<p>Mở từng mục để xem sai ở đâu, vì sao sai và cách sửa.</p>\n' + ''.join(out) + html[pos:]
+
+def _render_w7(output: str, uri: str) -> str:
+    number, count = _W7_ROUTES[uri]
+    rendered = _render_first_paint(output, ("thpt-g10-knowledge-ap1", "thpt-g10-chiv-golden"))
+    if rendered != output:
+        rendered = _hero_first_paint(rendered, uri)
+    if rendered == output or 'data-sgk-golden-first-paint="true"' not in rendered or len(_H2.findall(rendered)) != 4 or rendered.count('data-sgk-lesson-nav="') != 1:
+        raise RuntimeError("W7 Golden first-paint build contract failed: " + uri)
+    rendered = _w7_mistake_disclosures(rendered, number, count)
+    # Reuse the existing W1 Golden values, no shared CSS/JS mutations.
+    return rendered.replace(
+        '</article>',
+        """<style id="sgk-g11-w7-golden-formula">
+.md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border: 1px solid var(--slm-g10-line);
+  border-radius: 8px; padding: 12px 14px; margin: 14px 0;
+  line-height: 1.75; overflow-x: auto; max-width: 100%;
+}
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1.thpt-g10-chiv-golden[data-sgk-golden-first-paint] .thpt-r4-key-formula {
+  background: transparent; border-color: #58677f; color: #eef4ff;
+}
+</style><script id="sgk-g11-w7-golden-tabs">
+(() => {
+ const mount=()=>{
+  if(!/\/thpt-preview\/sgk\/lop-11\/(?:chuong-viii\/bai-(?:2[89]|30)|chuong-ix\/bai-3[1-3])\/?$/.test(location.pathname))return;
+  const a=document.querySelector("article[data-sgk-golden-first-paint]");
+  const t=a?.querySelector(":scope > .tabbed-set");
+  if(!t||t.dataset.g11W7Golden==="true")return;
+  const labels=[...t.querySelectorAll(":scope > .tabbed-labels > label")];
+  const radios=[...t.querySelectorAll(':scope > input[type="radio"]')];
+  if(labels.length!==4||radios.length!==4||!labels.every((l,i)=>l.htmlFor===radios[i].id))return;
+  const sync=()=>labels.forEach((l,i)=>l.classList.toggle("slm-g10-active-tab",radios[i].checked));
+  t.addEventListener("change",sync);sync();t.dataset.g11W7Golden="true";
+ };
+ if(window.document$?.subscribe)window.document$.subscribe(mount);
+ else if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",mount);
+ else mount();
+})();
+</script></article>""", 1)
+
 def on_post_page(output, page, config):
     uri = page.file.src_uri
+    if uri in _W7_ROUTES:
+        return _render_w7(output, uri)
     if uri in _W6_ROUTES:
         return _render_w6(output, uri)
     if uri in _W5_ROUTES:

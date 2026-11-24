@@ -23,7 +23,8 @@ async function goldenW1Parity(page,browser,width,rel){
  const w4=/\/lop-11\/chuong-v\/bai-1[5-7]\.md$/.test(rel);
  const w5=/\/lop-11\/chuong-vi\/bai-(?:1[89]|2[01])\.md$/.test(rel);
  const w6=/\/lop-11\/chuong-vii\/bai-2[2-7]\.md$/.test(rel);
- if(!w1&&!w2&&!w3&&!w4&&!w5&&!w6)return;
+ const w7=/\/lop-11\/(?:chuong-viii\/bai-(?:2[89]|30)|chuong-ix\/bai-3[1-3])\.md$/.test(rel);
+ if(!w1&&!w2&&!w3&&!w4&&!w5&&!w6&&!w7)return;
  const cases={
   article:["article.md-content__inner",["fontFamily","fontSize","fontWeight","lineHeight"]],
   tabs:["article .tabbed-labels",["gap","paddingTop","paddingBottom","borderBottomWidth"]],
@@ -58,7 +59,7 @@ async function goldenW1Parity(page,browser,width,rel){
   const tabs=page.locator("article .tabbed-labels > label");
   for(const scheme of ["default","slate"]){
    // W2: independent palette samples; do not reuse mutated MathJax/disclosure DOM from the previous interaction pass.
-   if((w2||w3||w4||w5||w6)&&scheme==="slate"){
+   if((w2||w3||w4||w5||w6||w7)&&scheme==="slate"){
     assert((await page.reload({waitUntil:"load",timeout:60000}))?.ok(),rel+" slate reload");
     await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,null,{timeout:30000});
    }
@@ -103,24 +104,24 @@ async function goldenW1Parity(page,browser,width,rel){
    const source=fs.readFileSync(path.join(root,rel),"utf8");
    const expected=[...source.split('=== "Lỗi thường gặp"')[1].matchAll(/^    ### (4\.\d+\..+)$/gm)].map(x=>x[1]);
    assert(expected.length>0,rel+" expected recovery headings");
-   if(w2||w3||w4||w5||w6){
-    assert.equal(expected.length,rel.endsWith("/bai-5.md")?5:w6&&/bai-2[5-7]\.md$/.test(rel)?8:6);
+   if(w2||w3||w4||w5||w6||w7){
+    assert.equal(expected.length,w7?({28:6,29:6,30:7,31:8,32:10,33:8})[Number(rel.match(/bai-(\d+)\.md$/)[1])]:rel.endsWith("/bai-5.md")?5:w6&&/bai-2[5-7]\.md$/.test(rel)?8:6);
     const raw=await page.evaluate(async()=>{
      const doc=new DOMParser().parseFromString(await (await fetch(location.href)).text(),"text/html");
      const panel=doc.querySelectorAll("article .tabbed-block")[3];
      return {titles:[...panel.querySelectorAll(":scope > details.tip > summary")].map(s=>s.textContent.trim()),links:[...panel.querySelectorAll(":scope > p")].filter(p=>p.querySelector("strong")?.textContent==="Học tiếp:").flatMap(p=>[...p.querySelectorAll("a")].map(a=>a.getAttribute("href")))};
     });
     assert.deepEqual(raw.titles,expected,rel+" source-to-static DOM recovery titles including math");
-    assert.equal(raw.links.length,rel.endsWith("/bai-5.md")?0:rel.endsWith("/bai-6.md")||rel.endsWith("/bai-7.md")?2:3,rel+" Học tiếp links preserved");
+    assert.equal(raw.links.length,w7?0:rel.endsWith("/bai-5.md")?0:rel.endsWith("/bai-6.md")||rel.endsWith("/bai-7.md")?2:3,rel+" Học tiếp links preserved");
    }
    assert.equal(await panel.locator(":scope > h3").count(),0,rel+" exposed tab4 headings");
    assert.equal(await tips.count(),expected.length,rel+" one accordion per recovery");
-   assert.equal(await panel.locator(":scope > p > strong").filter({hasText:/^(Dấu hiệu:|Vì sao sai:|Cách sửa:)$/}).count(),0,rel+" exposed recovery body");
+   assert.equal(await panel.locator(":scope > p > strong").filter({hasText:/^(Dấu hiệu:|Sai ở đâu:|Vì sao sai:|Cách sửa:)$/}).count(),0,rel+" exposed recovery body");
    const styles=el=>{const t=getComputedStyle(el),s=getComputedStyle(el.querySelector("summary"));return [t.backgroundColor,t.color,t.borderColor,t.borderRadius,t.marginTop,t.marginBottom,t.fontSize,t.lineHeight,s.backgroundColor,s.color,s.fontFamily,s.fontSize,s.fontWeight,s.lineHeight,s.padding,s.borderRadius,s.minHeight,getComputedStyle(el.querySelector("summary"),"::before").content];};
    const gold=await referenceTip.evaluate(styles);
    for(let k=0;k<expected.length;k++){
     const item=tips.nth(k),summary=item.locator(":scope > summary");
-    if((w2||w3||w4||w5||w6)&&expected[k].includes("\\(")){
+    if((w2||w3||w4||w5||w6||w7)&&expected[k].includes("\\(")){
      const count=(expected[k].match(/\\\(/g)||[]).length;
      try{
       await page.waitForFunction(({k,count})=>document.querySelectorAll("article .tabbed-block")[3].querySelectorAll(":scope > details.tip > summary")[k].querySelectorAll("mjx-container").length===count,{k,count});
@@ -131,7 +132,7 @@ async function goldenW1Parity(page,browser,width,rel){
     }else assert.equal((await summary.innerText()).trim(),expected[k],rel+" exact recovery title");
     assert.equal(await item.evaluate(x=>x.open),false,rel+" accordion initially closed");
     assert.deepEqual(await item.evaluate(styles),gold,rel+" B01 tab4 Golden computed parity");
-    assert.deepEqual(await item.locator(":scope > p > strong:first-child").allTextContents(),["Dấu hiệu:","Vì sao sai:","Cách sửa:"],rel+" original recovery paragraphs");
+    assert.deepEqual(await item.locator(":scope > p > strong:first-child").allTextContents(),[w7?"Sai ở đâu:":"Dấu hiệu:","Vì sao sai:","Cách sửa:"],rel+" original recovery paragraphs");
     assert(!(await item.locator(":scope > p").first().isVisible()),rel+" closed body must be hidden");
     await summary.click();
     assert(await item.evaluate(x=>x.open),rel+" disclosure opens");
@@ -190,7 +191,7 @@ async function execute(){
      for(let i=0;i<4;i++){
       await tabs.locator(".tabbed-labels > label").nth(i).click();
       assert(await groups.nth(i).isVisible(),rel+" "+width+" learner tab "+i+" not visible");
-      if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-i\/bai-[234]|chuong-ii\/bai-[567]|chuong-iii\/bai-[89]|chuong-iv\/bai-1[0-4]|chuong-v\/bai-1[5-7]|chuong-vi\/bai-(?:1[89]|2[01])|chuong-vii\/bai-2[2-7])\.md$/.test(rel)){
+      if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-i\/bai-[234]|chuong-ii\/bai-[567]|chuong-iii\/bai-[89]|chuong-iv\/bai-1[0-4]|chuong-v\/bai-1[5-7]|chuong-vi\/bai-(?:1[89]|2[01])|chuong-vii\/bai-2[2-7]|(?:chuong-viii\/bai-(?:2[89]|30)|chuong-ix\/bai-3[1-3]))\.md$/.test(rel)){
        const panel=groups.nth(i);
        for(const disclosure of await panel.locator("details.question").all()){
         const summary=disclosure.locator("summary").first();
