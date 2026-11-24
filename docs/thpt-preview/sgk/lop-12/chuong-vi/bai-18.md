@@ -99,7 +99,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Xác suất có điều kiện.</strong> Xác suất của biến cố A được tính khi biết biến cố B đã xảy ra gọi là xác suất của A với điều kiện B, kí hiệu \(P(A\mid B)\).</div>
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Xác suất có điều kiện.</strong><div class="arithmatex">\(\displaystyle P(A\mid B)=\frac{P(AB)}{P(B)},\quad P(B)&gt;0.\)</div><p>\(AB=A\cap B\). Trong mô hình hữu hạn đồng khả năng, công thức tương đương \(n(AB)/n(B)\). Không đảo điều kiện; kiểm mẫu số dương.</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Xác suất có điều kiện.</strong><div class="arithmatex">\(\displaystyle P(A\mid B)=\frac{P(AB)}{P(B)},\quad P(B)\gt 0.\)</div><p>\(AB=A\cap B\). Trong mô hình hữu hạn đồng khả năng, công thức tương đương \(n(AB)/n(B)\). Không đảo điều kiện; kiểm mẫu số dương.</p></div>
 
     Với điều kiện B có xác suất dương, \(P(\overline A\mid B)=1-P(A\mid B)\). Nếu \(P(A),P(B)>0\), hai biến cố độc lập khi và chỉ khi \(P(A\mid B)=P(A)\), tương đương \(P(B\mid A)=P(B)\). Định nghĩa độc lập bằng \(P(AB)=P(A)P(B)\) vẫn dùng được khi một xác suất bằng 0.
 
@@ -107,7 +107,7 @@
 
     ### 2.2. Công thức nhân xác suất
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Công thức nhân xác suất.</strong><div class="arithmatex">\(\displaystyle P(AB)=P(B)P(A\mid B)\quad\text{khi }P(B)&gt;0.\)</div><div class="arithmatex">\(\displaystyle P(AB)=P(A)P(B\mid A)\quad\text{khi }P(A)&gt;0.\)</div><p>Nếu biến cố được lấy làm điều kiện có xác suất bằng 0, giao cũng có xác suất bằng 0. Không cần chia cho 0. Trường hợp độc lập, \(P(AB)=P(A)P(B)\).</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Nhân xác suất.</strong><div class="arithmatex">\(\displaystyle P(AB)=P(B)P(A\mid B)\quad\text{khi }P(B)\gt 0.\)</div><div class="arithmatex">\(\displaystyle P(AB)=P(A)P(B\mid A)\quad\text{khi }P(A)\gt 0.\)</div><p>Nếu biến cố được lấy làm điều kiện có xác suất bằng 0, giao cũng có xác suất bằng 0. Không cần chia cho 0. Trường hợp độc lập, \(P(AB)=P(A)P(B)\).</p></div>
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B18_TREE_AUTHORING_20261124.svg" alt="Cây xác suất của hai lần rút bi, các nhánh thứ hai phụ thuộc lần đầu"><figcaption>Tổng các nhánh ra từ mỗi nút bằng 1; xác suất lá là tích các cạnh trên đường từ gốc. Cộng xác suất của các lá xung khắc thỏa đề bài.</figcaption></figure>
 
