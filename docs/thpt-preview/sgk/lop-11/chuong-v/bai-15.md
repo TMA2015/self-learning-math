@@ -24,11 +24,11 @@
 
     ### 1.1. Giới hạn hữu hạn của dãy số
 
-    Xét dãy \(u_n=\frac1n\) với \(n=1,2,\ldots\). Các giá trị đầu là \(1;\frac12;\frac13;\frac14;\ldots\). Không có số hạng cuối cùng và **không số hạng nào bằng 0**. Nhưng các số hạng càng về sau càng gần 0. Nếu yêu cầu khoảng cách tới 0 nhỏ hơn \(0{,}01\), chỉ cần \(n>100\); từ đó về sau **mọi** số hạng đều đáp ứng. Yêu cầu khoảng cách nhỏ hơn \(0{,}0001\) thì lại chọn mốc lớn hơn. Một mốc cố định cho tất cả độ chính xác là không cần thiết.
+    Xét dãy \(u_n=\frac1n\) với \(n=1,2,\ldots\). Các giá trị đầu là \(1;\frac12;\frac13;\frac14;\ldots\). Không có số hạng cuối cùng và **không số hạng nào bằng 0**. Nhưng các số hạng càng về sau càng gần 0. Nếu yêu cầu khoảng cách tới 0 nhỏ hơn \(0{,}01\), chỉ cần \(n>100\); từ đó về sau **mọi** số hạng đều đáp ứng. Yêu cầu khoảng cách nhỏ hơn \(0{,}0001\) thì lại chọn mốc lớn hơn. Mốc chỉ số cần chọn phụ thuộc vào mức sai số mong muốn: sai số càng nhỏ, có thể phải đi càng xa trong dãy.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B15-01_R01.svg" alt="Các điểm của dãy một chia n tiến sát trục 0 và không chạm trục"><figcaption><strong>Đọc hình:</strong> trục ngang là số thứ tự \(n\), trục đứng là \(u_n\); các điểm \(1/n\) luôn dương nhưng tiến sát đường \(u_n=0\). Không cần tồn tại số hạng “cuối” bằng 0.</figcaption></figure>
 
-    Ta nói \(u_n\to0\) khi các giá trị tuyệt đối \(|u_n|\) cuối cùng **nhỏ hơn mọi mức sai số dương** được chọn. Chữ “cuối cùng” nghĩa là kể từ một chỉ số \(N\), tất cả số hạng đều thỏa điều kiện; không phải chỉ vài số hạng tình cờ gần 0. Khi muốn dãy tiến đến \(a\), ta xét khoảng cách \(|u_n-a|\). Nói \(u_n\to a\) tương đương \(u_n-a\to0\). Chẳng hạn \(3+\frac2n\to3\) vì khoảng cách đến 3 là \(2/n\to0\).
+    Ta nói \(u_n\to0\) khi các giá trị tuyệt đối \(|u_n|\) **nhỏ hơn mức sai số dương tùy ý** được chọn, kể từ một chỉ số \(N\), tất cả số hạng đều thỏa điều kiện; không phải chỉ vài số hạng tình cờ gần 0. Khi muốn dãy tiến đến \(a\), ta xét khoảng cách \(|u_n-a|\). Nói \(u_n\to a\) tương đương \(u_n-a\to0\). Chẳng hạn \(3+\frac2n\to3\) vì khoảng cách đến 3 là \(2/n\to0\).
 
     **Kết quả cơ bản:** \(\frac1{n^k}\to0\) với số nguyên dương \(k\); \(q^n\to0\) khi \(|q|<1\). Vì thế \(0{,}8^n\to0\), và \((-\frac12)^n\to0\) dù đổi dấu. Nếu \(|u_n|\le v_n\) với \(v_n\ge0\) và \(v_n\to0\), thì \(u_n\to0\): một khoảng cách nhỏ hơn khoảng cách khác đang tiến về 0 cũng phải tiến về 0.
 
@@ -76,7 +76,11 @@
 
     Với cấp số nhân có số hạng đầu \(u_1\), công bội \(q\), tổng \(n\) số hạng đầu (khi \(q\ne1\)) là \(S_n=u_1\frac{1-q^n}{1-q}\). Nếu \(|q|<1\), \(q^n\to0\), nên \(S_n\to\frac{u_1}{1-q}\). **Tổng của cấp số nhân lùi vô hạn** là giới hạn đó. Điều kiện \(|q|<1\) bảo đảm phần còn lại \(u_1q^n/(1-q)\to0\); không phải “vô hạn số hạng nào cũng cộng được”.
 
-    Thử dãy \(6,-3,\frac32,-\frac34,\ldots\) có \(q=-\frac12\). Công bội âm không cản trở hội tụ, vì \(|q|=\frac12<1\); tổng vô hạn bằng \(6/(1+\frac12)=4\). Các tổng riêng của ví dụ **luân phiên trên và dưới 4**, không tăng đều như dãy có \(q>0\). Nếu \(q=1\), tổng \(2+2+2+\cdots\) tăng không bị chặn; không áp dụng công thức tổng vô hạn.
+    Thử dãy \(6,-3,\frac32,-\frac34,\ldots\) có \(q=-\frac12\). Công bội âm không cản trở hội tụ, vì \(|q|=\frac12<1\); tổng vô hạn bằng \(6/(1+\frac12)=4\). Các tổng riêng của ví dụ **luân phiên trên và dưới 4**, khác với tổng riêng tăng dần khi \(u_1>0\) và \(0<q<1\). Nếu \(q=1\), tổng \(2+2+2+\cdots\) tăng không bị chặn; không áp dụng công thức tổng vô hạn.
+
+    Trở lại câu chuyện Achilles: nếu thời gian ở chặng đầu là 1 giây và mỗi chặng sau mất một nửa thời gian chặng trước, tổng thời gian của vô số chặng là \(1/(1-1/2)=2\) giây. Việc chia quá trình thành vô số chặng không làm thời gian đuổi kịp trở thành vô hạn.
+
+    **Đổi số thập phân tuần hoàn thành phân số:** \(0{,}(27)=0{,}27+0{,}0027+0{,}000027+\cdots\). Đây là cấp số nhân với \(u_1=27/100,\ q=1/100\), nên tổng bằng \(\frac{27/100}{1-1/100}=\frac3{11}\).
 
     **Vận dụng.** Một mô hình ghi nhận các khoản đóng góp \(8,4,2,1,\ldots\) (đơn vị). Tính tổng lý thuyết nếu mô hình kéo dài mãi. Vì sao tổng thực tế sau hữu hạn đợt nhỏ hơn tổng đó?
 
@@ -95,6 +99,8 @@
     Chẳng hạn nếu đặt \(M=10^6\), chỉ cần \(n>1000\) thì \(n^2>M\). Nếu đặt một mốc lớn hơn nữa, chọn \(n\) lớn hơn. Dấu \(+\infty\) không phải **một số thực để thay vào phép tính**. Với \(v_n=(-1)^n n\), độ lớn tăng mãi nhưng dấu thay đổi, nên dãy không tiến đến \(+\infty\) hay \(-\infty\); không thể chỉ nhìn \(|v_n|\).
 
     Các ví dụ cơ bản: \(n^k\to+\infty\) với \(k\) nguyên dương; \(q^n\to+\infty\) khi \(q>1\). Với tổng có thành phần hữu hạn, nếu \(u_n\to+\infty\) và \(v_n\to b\) hữu hạn, thì \(u_n+v_n\to+\infty\). Với tích, nếu \(u_n\to+\infty\) và \(v_n\to b>0\) thì \(u_nv_n\to+\infty\); còn nếu \(b<0\) thì \(u_nv_n\to-\infty\). **Nếu \(b=0\)** thì không được suy ra giới hạn của tích từ các mệnh đề này.
+
+    Với thương, nếu tử tiến tới một số thực còn mẫu tiến tới \(+\infty\) hoặc \(-\infty\), thương tiến về 0: chẳng hạn \((2+1/n)/n\to0\). Nếu tử tiến tới \(a>0\) còn mẫu dương tiến về 0, thương tiến tới \(+\infty\), chẳng hạn \(2/(1/n)=2n\). Đổi dấu tử hoặc mẫu thì đổi dấu của giới hạn vô cực. Nếu cả hai dãy cùng tiến tới \(+\infty\), tích cũng tiến tới \(+\infty\).
 
     Ví dụ \(\frac{n^2}{2n+1}=\frac n{2+1/n}\to+\infty\) vì mẫu đã chuẩn hóa tiến về 2 dương, cuối cùng nằm giữa hai số dương cố định (chẳng hạn \(2<2+1/n\le3\)), còn tử \(n\) tăng không bị chặn. Không viết \(\infty/\infty=1\) hoặc coi vô cực như số để rút gọn.
 
@@ -138,6 +144,8 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B15_GEOMETRIC_PARTIAL_SUMS_AUTHORING_20261123.svg" alt="Tổng riêng của cấp số nhân công bội một phần hai tăng và tiến tới 2"><figcaption><strong>Tra hình:</strong> với \(u_1=1,q=\frac12\), \(S_n=2(1-2^{-n})\to2\). Đây là giới hạn của **tổng riêng**, không phải giới hạn của các số hạng \(u_n\), vốn bằng 0.</figcaption></figure>
 
+    **Ứng dụng:** \(0{,}(27)=\sum_{j=1}^{\infty}\frac{27}{100^j}=\frac{27/100}{1-1/100}=\frac3{11}\); kí hiệu tổng vô hạn ở đây là giới hạn các tổng riêng.
+
     **Cách kiểm hợp lí:** Với \(u_1>0\), \(0<q<1\), mọi tổng riêng dương tăng dần và nhỏ hơn \(S\). Nếu \(q<0\) nhưng \(|q|<1\), các tổng riêng có thể luân phiên quanh \(S\), dù vẫn hội tụ về \(S\).
 
     ### 2.4. Giới hạn vô cực của dãy số
@@ -146,7 +154,7 @@
 
     **Giới hạn cơ bản SGK:** \(n^k\to+\infty\) với số nguyên dương \(k\), \(q^n\to+\infty\) khi \(q>1\); \(-n^k\to-\infty\). Vô cực không phải một số thực.
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Một số giới hạn vô cực và điều kiện dấu</strong><p>Nếu \(u_n\to+\infty\), \(v_n\to b\in\mathbb R\) thì \(u_n+v_n\to+\infty\). Nếu thêm \(b>0\), \(u_nv_n\to+\infty\); nếu \(b<0\), \(u_nv_n\to-\infty\). Với \(b=0\), <strong>không thể suy ngay</strong> giới hạn tích chỉ từ hai giới hạn đó. Các trường hợp \(\infty-\infty\), \(0\cdot\infty\), \(\infty/\infty\) là dạng cần biến đổi hoặc xét riêng.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Một số giới hạn vô cực và điều kiện dấu</strong><p>Nếu \(u_n\to+\infty\), \(v_n\to b\in\mathbb R\) thì \(u_n+v_n\to+\infty\). Nếu thêm \(b>0\), \(u_nv_n\to+\infty\); nếu \(b<0\), \(u_nv_n\to-\infty\). Với \(b=0\), <strong>không thể suy ngay</strong> giới hạn tích chỉ từ hai giới hạn đó. Nếu \(u_n,v_n\to+\infty\) thì \(u_nv_n\to+\infty\). Nếu \(u_n\to a\in\mathbb R\) và \(v_n\to\pm\infty\) thì \(u_n/v_n\to0\). Nếu \(u_n\to a>0,\ v_n\to0\) và \(v_n>0\) kể từ một chỉ số đủ lớn thì \(u_n/v_n\to+\infty\); với mẫu âm hoặc tử có giới hạn âm khác 0, xét dấu tương ứng. Các trường hợp \(\infty-\infty\), \(0\cdot\infty\), \(\infty/\infty\) là dạng cần biến đổi hoặc xét riêng.</p></div>
 
     **Lí do chọn phương pháp:** Với \(u_n=\frac{n^2}{2n+1}=\frac n{2+1/n}\), mẫu chuẩn hóa dương và tiến về 2, nên \(u_n\to+\infty\). Cũng có thể kẹp: với \(n\ge1\), \(n/3\le u_n<n/2\). Việc thấy bậc tử lớn hơn bậc mẫu chỉ là dự đoán; cần kiểm cả **dấu của mẫu**.
 
