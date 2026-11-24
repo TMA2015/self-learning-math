@@ -118,7 +118,7 @@
     \[
     \begin{cases}x^2+y^2+z^2=1,\\(x-2)^2+y^2+z^2=5,\\x^2+(y-2)^2+z^2=2.\end{cases}
     \]
-    Trừ phương trình đầu khỏi phương trình thứ hai, được \(-4x+4=4\), nên \(x=0\). Tương tự \(-4y+4=1\), suy ra \(y=3/4\). Thế lại cho \(z=\pm\sqrt7/4\). Nếu biết thiết bị ở bán cầu Bắc thì \(z>0\), chọn \(P(0;3/4;\sqrt7/4)\); vĩ độ \(\arcsin(\sqrt7/4)\approx41{,}4096^\circ N\), kinh độ \(90^\circ E\).
+    Trừ phương trình đầu khỏi phương trình thứ hai, được \(-4x+4=4\), nên \(x=0\). Tương tự \(-4y+4=1\), suy ra \(y=3/4\). Thế lại cho \(z=\pm\sqrt7/4\). Nếu một phép đo bổ sung xác nhận thiết bị ở bán cầu Bắc thì \(z>0\), chọn \(P(0;3/4;\sqrt7/4)\); vĩ độ \(\arcsin(\sqrt7/4)\approx41{,}4096^\circ N\), kinh độ \(90^\circ E\).
 
     Bài toán minh họa nguyên lí định vị bằng khoảng cách trong phần đọc thêm SGK. GPS thực tế còn phải xử lí sai số đồng hồ, quỹ đạo, tín hiệu và thường dùng ít nhất bốn vệ tinh để giải ba tọa độ cùng sai lệch đồng hồ; không đồng nhất mô hình toán học lý tưởng với độ chính xác thực tế.
 
@@ -126,9 +126,9 @@
 
     ### 2.1. Phương trình mặt cầu
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Mặt cầu.</strong> Mặt cầu tâm \(I\), bán kính \(R&gt;0\), là tập các điểm \(M\) trong không gian có \(IM=R\). Đường kính nối hai điểm đối diện qua tâm, có độ dài \(2R\).</div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Mặt cầu.</strong> Mặt cầu tâm \(I\), bán kính \(R\gt 0\), là tập các điểm \(M\) trong không gian có \(IM=R\). Đường kính nối hai điểm đối diện qua tâm, có độ dài \(2R\).</div>
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Phương trình mặt cầu tâm và bán kính.</strong><p>Với tâm \(I(a;b;c)\) và \(R&gt;0\),</p><div class="arithmatex">\(\displaystyle (x-a)^2+(y-b)^2+(z-c)^2=R^2.\)</div><p>Đọc tọa độ tâm từ hiệu trong ngoặc; lấy căn bậc hai dương của vế phải để được bán kính.</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Phương trình mặt cầu tâm và bán kính.</strong><p>Với tâm \(I(a;b;c)\) và \(R\gt 0\),</p><div class="arithmatex">\(\displaystyle (x-a)^2+(y-b)^2+(z-c)^2=R^2.\)</div><p>Đọc tọa độ tâm từ hiệu trong ngoặc; lấy căn bậc hai dương của vế phải để được bán kính.</p></div>
 
     Với dạng khai triển \(x^2+y^2+z^2-2ax-2by-2cz+d=0\), hoàn thành bình phương được \(R^2=a^2+b^2+c^2-d\). Nếu \(R^2>0\), phương trình biểu diễn mặt cầu tâm \(I(a;b;c)\), bán kính \(\sqrt{a^2+b^2+c^2-d}\). Nếu \(R^2=0\) chỉ một điểm, nếu âm thì vô nghiệm. Nếu viết dạng \(x^2+y^2+z^2+Dx+Ey+Fz+G=0\), tâm là \((-D/2;-E/2;-F/2)\) và \(R^2=(D^2+E^2+F^2)/4-G\).
 
@@ -163,7 +163,7 @@
 
     **Phân tích:** Chia cho 3 rồi hoàn thành bình phương, kiểm vế phải.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Sau khi chia 3, ta có \(x^2+y^2+z^2+2x-4y+3=0\). Suy ra \((x+1)^2+(y-2)^2+z^2=1+4-3=2&gt;0\). Tâm \(I(-1;2;0)\), bán kính \(\sqrt2\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Sau khi chia 3, ta có \(x^2+y^2+z^2+2x-4y+3=0\). Suy ra \((x+1)^2+(y-2)^2+z^2=1+4-3=2\gt 0\). Tâm \(I(-1;2;0)\), bán kính \(\sqrt2\).</p></div>
 
     **Kiểm lại:** Khai triển và nhân 3 thu được phương trình ban đầu.
 
@@ -173,7 +173,7 @@
 
     **Phân tích:** Bán kính là \(IA\), không cần tìm căn nếu chỉ lập phương trình.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(R^2=(-2)^2+2^2+3^2=17\). Phương trình \((x-2)^2+(y+1)^2+(z-1)^2=17\). \(IB^2=1+1+0=2&lt;17\), nên \(B\) nằm trong khối cầu.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(R^2=(-2)^2+2^2+3^2=17\). Phương trình \((x-2)^2+(y+1)^2+(z-1)^2=17\). \(IB^2=1+1+0=2\lt 17\), nên \(B\) nằm trong khối cầu.</p></div>
 
     **Kiểm lại:** Thay \(A\) vào cho đúng 17.
 
@@ -183,7 +183,7 @@
 
     **Phân tích:** Hoàn thành bình phương, yêu cầu bán kính dương.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \((x-2)^2+(y+1)^2+(z+1)^2=6-m\). Cần \(6-m&gt;0\), tức \(m&lt;6\). Tâm \((2;-1;-1)\), bán kính \(\sqrt{6-m}\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \((x-2)^2+(y+1)^2+(z+1)^2=6-m\). Cần \(6-m\gt 0\), tức \(m\lt 6\). Tâm \((2;-1;-1)\), bán kính \(\sqrt{6-m}\).</p></div>
 
     **Kiểm lại:** \(m=6\) chỉ một điểm, \(m>6\) vô nghiệm.
 
