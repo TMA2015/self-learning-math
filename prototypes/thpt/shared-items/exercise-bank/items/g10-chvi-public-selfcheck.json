@@ -5,7 +5,10 @@
     "stem": "Bảng có các cặp `(1;4),(2;5),(2;5)`. Đây có phải quan hệ hàm số `y` của `x` không? Tập xác định là gì?",
     "answer_key": "Có; `D={1;2}`.",
     "worked_solution": "Giá trị đầu vào `2` lặp lại nhưng đều có đầu ra `5`, nên mỗi đầu vào có đúng một đầu ra. `D` gồm các giá trị `x` phân biệt.",
-    "skill_ids": [],
+    "skill_ids": [
+      "FUNCTION_MAPPING",
+      "FUNCTION_DOMAIN"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -45,7 +48,9 @@
     "stem": "Với hàm `F(x)=7x` trên `0≤x≤2` và `F(x)=14+3(x−2)` khi `x>2`, tính `F(4)` (đơn vị tùy ý).",
     "answer_key": "`20`.",
     "worked_solution": "`4>2`, nên `F(4)=14+3·2=20`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "FUNCTION_PIECEWISE"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -85,7 +90,9 @@
     "stem": "Hàm `h(x)=−2x+4` đồng biến hay nghịch biến trên `ℝ`? Vì sao?",
     "answer_key": "Nghịch biến toàn `ℝ`.",
     "worked_solution": "Khi `x₁<x₂`, `h(x₁)−h(x₂)=−2(x₁−x₂)>0`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "FUNCTION_MONOTONICITY"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -165,7 +172,9 @@
     "stem": "Tìm tập xác định trong số thực của `f(x)=√(9−3x)/(x+1)`.",
     "answer_key": "`D=(−∞;3]\\{−1}`.",
     "worked_solution": "Căn đòi `9−3x≥0 ↔ x≤3`; mẫu `x+1≠0 ↔ x≠−1`; lấy giao hai điều kiện.",
-    "skill_ids": [],
+    "skill_ids": [
+      "FUNCTION_DOMAIN"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -205,7 +214,10 @@
     "stem": "Cho `f(x)=2x²−12x+11`. Tìm tọa độ đỉnh, trục đối xứng, GTNN và tập giá trị.",
     "answer_key": "`I(3;−7)`, trục `x=3`, GTNN `−7`, `T=[−7;+∞)`.",
     "worked_solution": "`f(x)=2(x−3)²−7`; hệ số trước bình phương dương.",
-    "skill_ids": [],
+    "skill_ids": [
+      "B16_OUT_04",
+      "B16_OUT_02"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -245,7 +257,10 @@
     "stem": "Với `y=−x²+4x+5`, xác định đỉnh/trục và các điểm cắt `Ox,Oy`; mô tả chiều mở của parabol.",
     "answer_key": "`I(2;9)`, trục `x=2`, cắt `Ox` tại `(-1;0)` và `(5;0)`, cắt `Oy` tại `(0;5)`, parabol mở xuống.",
     "worked_solution": "`y=−(x−2)²+9=−(x+1)(x−5)`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "B16_OUT_03",
+      "B16_OUT_02"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -282,10 +297,12 @@
   {
     "item_id": "THPT-G10-B16-R03",
     "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
-    "stem": "Chuyển động giả định có độ cao `h(t)=−4t²+24t` (m), tính từ khi bắt đầu `t=0` đến khi chạm đất. Hỏi thời gian đạt độ cao cực đại, độ cao đó và thời gian trở lại mặt đất.",
+    "stem": "Chuyển động giả định có độ cao `h(t)=−4t²+24t` (m), trong đó t tính bằng giây, tính từ khi bắt đầu `t=0` đến khi chạm đất. Hỏi thời gian đạt độ cao cực đại, độ cao đó và thời gian trở lại mặt đất.",
     "answer_key": "`t=3s`, `hmax=36m`, `t_landing=6s`.",
     "worked_solution": "`h(t)=−4(t−3)²+36`; nghiệm `h=0` là `t=0,6`, miền thực tế `[0;6]`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "B16_OUT_05"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -325,7 +342,9 @@
     "stem": "Giá `p` nghìn đồng và nhu cầu dự kiến `n(p)=150−3p` sản phẩm, trên `0≤p≤50`. Tìm giá tối ưu và doanh thu lớn nhất (nghìn đồng), với `R(p)=p·n(p)`.",
     "answer_key": "`p=25` nghìn đồng, `Rmax=1875` nghìn đồng (1,875 triệu đồng).",
     "worked_solution": "`R(p)=−3p²+150p=−3(p−25)²+1875`; khi `p=25`, `n=75`. Điều kiện miền thỏa.",
-    "skill_ids": [],
+    "skill_ids": [
+      "B16_OUT_05"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -365,7 +384,9 @@
     "stem": "Trong ba biểu thức `f(x)=x²+3x+2`, `g(x)=0x²+5x−7`, `h(x)=−4x+1`, biểu thức nào là hàm số bậc hai? Vì sao?",
     "answer_key": "Chỉ `f` là hàm số bậc hai.",
     "worked_solution": "Hệ số trước `x²` phải khác 0. Hai biểu thức còn lại chỉ có bậc nhất (`g` có hệ số `x²` bằng 0).",
-    "skill_ids": [],
+    "skill_ids": [
+      "B16_OUT_01"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -405,7 +426,9 @@
     "stem": "Giải `x²−x−6≥0`.",
     "answer_key": "`(−∞;−2]∪[3;+∞)`.",
     "worked_solution": "`(x+2)(x−3)≥0` ở ngoài hai nghiệm, lấy cả biên.",
-    "skill_ids": [],
+    "skill_ids": [
+      "QUAD_INEQUALITY"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -445,7 +468,9 @@
     "stem": "Tìm `m∈ℝ` để `x²−2(m−1)x+m²+1>0` với mọi `x∈ℝ`.",
     "answer_key": "`m>0`.",
     "worked_solution": "`a=1>0`, `Δ=4(m−1)²−4(m²+1)=−8m<0` khi và chỉ khi `m>0`.",
-    "skill_ids": [],
+    "skill_ids": [
+      "QUAD_PARAMETER"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -485,7 +510,10 @@
     "stem": "Với `f(x)=−(x−1)²`, giải bất phương trình `f(x)<0`.",
     "answer_key": "`ℝ\\{1}`.",
     "worked_solution": "`−(x−1)²<0 ↔ (x−1)²>0`, xảy ra khi `x≠1`. Nghiệm kép không tạo đổi dấu.",
-    "skill_ids": [],
+    "skill_ids": [
+      "QUAD_DOUBLE_ROOT_SIGN",
+      "QUAD_INEQUALITY"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -525,7 +553,9 @@
     "stem": "Lợi nhuận giả định của một hoạt động theo lượng `x` có dạng `P(x)=−x²+10x−16` (triệu đồng), với `0≤x≤10`. Xác định miền `x` để `P(x)>0`.",
     "answer_key": "`2<x<8`.",
     "worked_solution": "`P(x)=−(x−2)(x−8)`, hệ số âm, dương giữa hai nghiệm, thỏa miền vật lý.",
-    "skill_ids": [],
+    "skill_ids": [
+      "QUAD_MODELING"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -565,7 +595,10 @@
     "stem": "Giải `√(2x+5)=x+1` trên `ℝ`.",
     "answer_key": "`{2}`.",
     "worked_solution": "`x+1≥0`. Bình phương: `2x+5=(x+1)² ↔ x²=4` cho `±2`, chỉ `2` hợp lệ.",
-    "skill_ids": [],
+    "skill_ids": [
+      "RADICAL_CONDITION",
+      "RADICAL_FILTER"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -605,7 +638,10 @@
     "stem": "Giải `√(x²+3x+2)=√(x+2)` trên `ℝ`.",
     "answer_key": "`{−2;0}`.",
     "worked_solution": "Bình phương: `x²+3x+2=x+2 ↔ x(x+2)=0`; ở cả `−2` và `0`, hai biểu thức dưới căn không âm và bằng nhau.",
-    "skill_ids": [],
+    "skill_ids": [
+      "RADICAL_TWO_SIDES",
+      "RADICAL_DOMAIN"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -645,7 +681,11 @@
     "stem": "Giải `√(x²+4x+1)=√(2x+3)` trên `ℝ`.",
     "answer_key": "`{−1+√3}`.",
     "worked_solution": "Bình phương `x²+2x−2=0`, cho `x=−1±√3`. Điều kiện `2x+3≥0` loại `x=−1−√3` (nhỏ hơn `−3/2`); nghiệm `−1+√3` đạt cả hai điều kiện.",
-    "skill_ids": [],
+    "skill_ids": [
+      "RADICAL_TWO_SIDES",
+      "RADICAL_DOMAIN",
+      "RADICAL_FILTER"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -685,7 +725,9 @@
     "stem": "Một tam giác vuông có hai cạnh góc vuông dài `x>0` m và `4` m, cạnh huyền dài `x+2` m. Tìm `x`.",
     "answer_key": "`x=3m`.",
     "worked_solution": "`√(x²+16)=x+2`. Bình phương cho `x²+16=(x+2)²`, tức `4x=12`, nên `x=3`. Thử `5=3+2`, thỏa điều kiện.",
-    "skill_ids": [],
+    "skill_ids": [
+      "RADICAL_MODELING"
+    ],
     "original_outcome_text": "",
     "problem_type_id": null,
     "difficulty": null,
@@ -725,7 +767,9 @@
     "stem": "Cho \\(f(x)=-(x-1)^2+9\\), **chỉ xét trên** \\(D=[-2;5]\\).\n\na) Xác định tọa độ đỉnh và trục đối xứng của parabol.\n\nb) Trên những đoạn nào trong D, hàm đồng biến và nghịch biến? Giải thích dựa trên dạng bình phương/khoảng cách tới trục, không chỉ thử hai số.\n\nc) Tính \\(f(-2)\\), \\(f(1)\\), \\(f(5)\\); tìm GTLN, GTNN, **tập giá trị \\(T_D\\)**. Vì sao \\(T_D\\) khác tập giá trị của hàm nếu xét toàn \\(\\mathbb R\\)?",
     "answer_key": "1. Đỉnh \\(I(1;9)\\), trục \\(x=1\\), parabol mở xuống vì \\(a=-1<0\\).\n2. Trên \\([-2;1]\\), khi x tăng thì khoảng cách \\(|x-1|\\) giảm, nên \\(-(x-1)^2\\) tăng: **đồng biến**. Trên \\([1;5]\\), khi x tăng thì \\(|x-1|\\) tăng: **nghịch biến**. Không được nói hàm cùng một chiều trên toàn D.\n3. \\(f(-2)=-(-3)^2+9=0\\), \\(f(1)=9\\), \\(f(5)=-(4)^2+9=-7\\). Trên D, GTLN \\(=9\\) tại x=1, GTNN \\(=-7\\) tại x=5; **tập giá trị \\(T_D=[-7;9]\\)**. Nếu xét toàn ℝ, tập giá trị là \\((-\\infty;9]\\), khác D đã cho.",
     "worked_solution": "1. Đỉnh \\(I(1;9)\\), trục \\(x=1\\), parabol mở xuống vì \\(a=-1<0\\).\n2. Trên \\([-2;1]\\), khi x tăng thì khoảng cách \\(|x-1|\\) giảm, nên \\(-(x-1)^2\\) tăng: **đồng biến**. Trên \\([1;5]\\), khi x tăng thì \\(|x-1|\\) tăng: **nghịch biến**. Không được nói hàm cùng một chiều trên toàn D.\n3. \\(f(-2)=-(-3)^2+9=0\\), \\(f(1)=9\\), \\(f(5)=-(4)^2+9=-7\\). Trên D, GTLN \\(=9\\) tại x=1, GTNN \\(=-7\\) tại x=5; **tập giá trị \\(T_D=[-7;9]\\)**. Nếu xét toàn ℝ, tập giá trị là \\((-\\infty;9]\\), khác D đã cho.\n4. Kiểm chứng bằng bất đẳng thức: vì \\(x\\in[-2;5]\\) nên \\(0\\le(x-1)^2\\le16\\). Do đó \\(-7\\le f(x)\\le9\\); hàm liên tục trên D nên nhận tất cả các giá trị trong đoạn này.\n\n**Hỗ trợ tự khắc phục sau Final Submit:**\n1. **Nhận diện:** Em có kết luận tăng/giảm cả D, quên đầu x=5 hoặc dùng tập giá trị toàn ℝ?\n2. **Tự chẩn đoán:** Khoanh lỗi đầu tiên trong ba bước: đọc đỉnh x=1, chia miền bởi đỉnh, so hai biên.\n3. **Kiến thức gốc:** Parabol a<0 đi lên bên trái đỉnh, đi xuống bên phải; tập giá trị phải tính trên miền của **đề**, không trên toàn ℝ.\n4. **Tự sửa:** Đánh dấu [-2;1], [1;5], tính lại f(-2), f(1), f(5), ghi khoảng biến thiên rồi tự rút tập giá trị.\n5. **Luyện lại:** Xem SGK B16 §2, R03 B16_OUT_04, FIRST_TRY THPT-G10-CHVI-TRY09 và HELP-G10-CHVI-TRY09. Chỉ luyện tập tự đối chiếu, không tính Mastery từ câu đã xem đáp án.",
-    "skill_ids": [],
+    "skill_ids": [
+      "B16_OUT_04"
+    ],
     "original_outcome_text": "B16_OUT_04",
     "problem_type_id": null,
     "difficulty": null,
@@ -763,9 +807,12 @@
     "item_id": "THPT-G10-B17-R05",
     "content_version": "a25ae92a4cb01122189bab2f4a22f7427838d5d7d7361a2cb9e9855571c9a154",
     "stem": "Xét trên \\(\\mathbb R\\) ba tam thức:\n\\[\nP(x)=2x^2+4x+5,\\qquad Q(x)=-(x+1)^2,\\qquad R(x)=-2(x-1)(x-4).\n\\]\n\na) Với mỗi tam thức, tính Δ, nêu dấu a và phân loại Δ<0, =0 hay >0.\n\nb) Với mỗi tam thức, xác định **đầy đủ** khoảng có giá trị dương, âm và các điểm bằng 0; giải thích qua vị trí parabol so với Ox.\n\nc) Giải thích 2–3 câu vì sao dấu của Δ **không đủ** nếu chưa xét dấu a.",
-    "answer_key": "- **P:** a=2>0, b=4, c=5, \\(\\Delta=4^2-4\\cdot2\\cdot5=-24<0\\). Không có nghiệm thực, **P(x)>0 mọi x∈ℝ**; không có điểm bằng 0 hoặc miền âm. Cách kiểm: \\(P(x)=2(x+1)^2+3>0\\).\n- **Q:** \\(Q=-x^2-2x-1\\), a=-1<0, \\(\\Delta=(-2)^2-4(-1)(-1)=0\\); nghiệm kép **x=-1**. Q=0 tại -1; **Q<0** trên \\((-\\infty;-1)\\cup(-1;+\\infty)\\); không có miền dương. Đồ thị chạm Ox chứ không đổi dấu.\n- **R:** \\(R=-2x^2+10x-8\\), a=-2<0, \\(\\Delta=100-4(-2)(-8)=36>0\\). Hai nghiệm **1, 4**. R<0 trên \\((-\\infty;1)\\cup(4;+\\infty)\\); R>0 trên \\((1;4)\\); R=0 tại x=1,4.",
+    "answer_key": "- **P:** a=2>0, b=4, c=5, \\(\\Delta=4^2-4\\cdot2\\cdot5=-24<0\\). Không có nghiệm thực, **P(x)>0 mọi x∈ℝ**; không có điểm bằng 0 hoặc miền âm. Cách kiểm: \\(P(x)=2(x+1)^2+3>0\\).\n- **Q:** \\(Q=-x^2-2x-1\\), a=-1<0, \\(\\Delta=(-2)^2-4(-1)(-1)=0\\); nghiệm kép **x=-1**. Q=0 tại -1; **Q<0** trên \\((-\\infty;-1)\\cup(-1;+\\infty)\\); không có miền dương. Đồ thị chạm Ox chứ không đổi dấu.\n- **R:** \\(R=-2x^2+10x-8\\), a=-2<0, \\(\\Delta=100-4(-2)(-8)=36>0\\). Hai nghiệm **1, 4**. R<0 trên \\((-\\infty;1)\\cup(4;+\\infty)\\); R>0 trên \\((1;4)\\); R=0 tại x=1,4.\n- Δ quyết định số nghiệm thực; dấu a quyết định hướng mở và dấu của tam thức ngoài các nghiệm. Phải xét cả a và Δ.",
     "worked_solution": "- **P:** a=2>0, b=4, c=5, \\(\\Delta=4^2-4\\cdot2\\cdot5=-24<0\\). Không có nghiệm thực, **P(x)>0 mọi x∈ℝ**; không có điểm bằng 0 hoặc miền âm. Cách kiểm: \\(P(x)=2(x+1)^2+3>0\\).\n- **Q:** \\(Q=-x^2-2x-1\\), a=-1<0, \\(\\Delta=(-2)^2-4(-1)(-1)=0\\); nghiệm kép **x=-1**. Q=0 tại -1; **Q<0** trên \\((-\\infty;-1)\\cup(-1;+\\infty)\\); không có miền dương. Đồ thị chạm Ox chứ không đổi dấu.\n- **R:** \\(R=-2x^2+10x-8\\), a=-2<0, \\(\\Delta=100-4(-2)(-8)=36>0\\). Hai nghiệm **1, 4**. R<0 trên \\((-\\infty;1)\\cup(4;+\\infty)\\); R>0 trên \\((1;4)\\); R=0 tại x=1,4.\n- **Tổng kết:** Δ quyết định số giao/chạm Ox; a quyết định hướng mở và dấu ở các khoảng ngoài nghiệm. Muốn xét dấu đúng phải dùng **cả a và Δ**, đồng thời điền 0 tại nghiệm.\n\n**Hỗ trợ tự khắc phục sau Final Submit:**\n1. **Nhận diện:** Em có cho Q đổi dấu qua -1 hoặc cho R dương ở hai khoảng ngoài?\n2. **Tự chẩn đoán:** Với P/Q/R, viết rõ a và Δ; khoanh bước đầu tiên em suy dấu nhưng không giải thích được.\n3. **Kiến thức gốc:** Δ<0 giữ dấu a; Δ=0 giữ dấu a trừ nghiệm kép bằng 0; Δ>0 cùng dấu a ngoài hai nghiệm, trái dấu a ở giữa.\n4. **Tự sửa:** Vẽ ba phác họa parabol (mở lên không cắt, mở xuống chạm, mở xuống cắt hai điểm), điền 0 tại nghiệm rồi xét khoảng.\n5. **Luyện lại:** Trở về SGK B17 §2, R03 B17_OUT_01, FIRST_TRY THPT-G10-CHVI-TRY11 và HELP-G10-CHVI-TRY11; có thể làm Core THPT-G10-B17-C01/C02. Không biến bài đã xem lời giải thành điểm Mastery.",
-    "skill_ids": [],
+    "skill_ids": [
+      "QUAD_SIGN",
+      "QUAD_DOUBLE_ROOT_SIGN"
+    ],
     "original_outcome_text": "B17_OUT_01",
     "problem_type_id": null,
     "difficulty": null,
