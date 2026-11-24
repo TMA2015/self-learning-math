@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 92,
+    "legacy_combined_answer_items": 0,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_617_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "AUTHOR_REVIEW_18_DRAFTS_AND_709_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 617 manually verified and key separated at checkpoints 29–43; 92 remain combined, answer_key=null. All 355 legacy combined Topic items reviewed. Remaining: 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 709 manually verified and key separated at checkpoints 29–44; 0 remain combined. This closes the legacy combined-answer review group only, not full academic/PED or release certification. Preserve original source history and self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 92,
+      "remaining_combined_answer_items": 0,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 617,
-        "remaining_count": 92,
+        "reviewed_count": 709,
+        "remaining_count": 0,
         "batches": [
           {
             "checkpoint": 29,
@@ -14097,6 +14097,964 @@
               "CĐ19 counting and Newton calculations unchanged; P13/T13 distinguish continuous forecast-model values from discrete inventory counts; P12 removes unnecessary restriction on evaluation at x=1 in worked solution. Optional reciprocal expansion P11 and coefficient sum P12/T12 retain original Topic outcome and source scope; mapped existing prerequisite skills only, not full optional outcome. Calculator/approximation P14/T14/P13/T13 map underlying arrangement/combination/binomial skills only, not new SGK identifiers or full outcome coverage.",
               "CĐ20 makes die fairness, independent rolls/tosses, sampling model explicit; CĐ21 clarifies uniform sampling and conditional tree procedure. All probability values unchanged. CĐ22 uses existing original SGK relative-error convention denominator |a|, population-style variance denominator n, grouped interpolation at class boundaries; T10 distinguishes grouped range from original raw range, T13 includes full class intervals so standalone; T04/T08/T09/T11 show calculation steps.",
               "All 91 original outcomes, source, ID, exposure, remediation, interaction preserved; 118 first-try records outside scope unchanged. No combined Topic items remain; this is not a full Academic/PED verdict on all items. Remaining 92 SGK supplementary/public items, original PDF reread, full coverage/PED/D6/reveal, optional scope integration enforcement, independent review, interaction conversion pending. No runtime or release."
+            ]
+          },
+          {
+            "checkpoint": 44,
+            "baseline": "158a1e99272b862c8ad2c404a0fd9c2d55205dd3",
+            "reviewed_candidate": "f3ac0ad8ca6c10deff0df201445b316f475d91cc",
+            "scope": "Remaining 92 SGK supplementary/public items: G11 supplement 52, G12 ChI public self-check 10, G12 experience 30. All 92 matched ID-scoped canonical question and answer plus exact public JSON item stem, answer and outcome. G11 source b848436621c17c89919e3d3f93519d12612fe039 projection c3e849345b5880ef021bb851aaa50fedc818e91a; G12 ChI source f0862dcdab21dec136e43969f45c42638e7c7574 projection 98c2bafc5ecd8487417e2fd9df8d6fcb28f7cbec; G12 experience source 8a34d1cf4009b9b6511a34c08c5d8e31525a6a46 projection cc0a6c419b02e0e61b5710f397fc0a025d668eaa. Independently recalculated results, separated keys, retained existing skill IDs. 41 targeted stem/solution improvements.",
+            "shards": [
+              {
+                "shard": "g11-supplement",
+                "before": "98c0d233a51078bf8d111a5e7a148a6603e5115c",
+                "after": "778480048784e2b3e66ed192edd44f149c419020",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "220,5 (giá trị mô hình).",
+                    "skill_ids": [
+                      "G11-E01-EXPONENTIAL_MODEL"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Không; để hai mô hình khớp tại các năm nguyên, chọn k=ln(1+r) trong A₀e^(kt).",
+                    "skill_ids": [
+                      "G11-E01-EXPONENTIAL_MODEL"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-C02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "3 chu kì.",
+                    "skill_ids": [
+                      "G11-E01-HALF_LIFE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "1/(2√2)≈0,3536 (khoảng 35,36% khối lượng ban đầu).",
+                    "skill_ids": [
+                      "G11-E01-HALF_LIFE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-C03",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "pH=6.",
+                    "skill_ids": [
+                      "G11-E01-PH_SCALE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-P03",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Nồng độ mới bằng 1/100 nồng độ ban đầu; giảm 100 lần.",
+                    "skill_ids": [
+                      "G11-E01-PH_SCALE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-C04",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "M=5.",
+                    "skill_ids": [
+                      "G11-E01-RICHTER_SCALE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-P04",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Chênh lệch 0,7.",
+                    "skill_ids": [
+                      "G11-E01-RICHTER_SCALE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-C05",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "20 dB.",
+                    "skill_ids": [
+                      "G11-E01-DECIBEL_SCALE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-P05",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "1000.",
+                    "skill_ids": [
+                      "G11-E01-DECIBEL_SCALE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E01-P06",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Ví dụ: tỉ lệ tăng hằng năm ổn định; nguồn lực và môi trường cho phép mô hình tiếp tục tăng trong thời gian dài. Chấp nhận hai giả định hợp lí khác có giải thích.",
+                    "skill_ids": [
+                      "G11-E01-MODEL_ASSUMPTIONS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "2 mặt đáy tam giác; 3 mặt bên.",
+                    "skill_ids": [
+                      "G11-E02-NET_CONSTRUCTION"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Ví dụ: bỏ mặt nắp, kiểm kích thước và vị trí cạnh ghép, kiểm các mặt gấp thành thùng không chồng lên nhau.",
+                    "skill_ids": [
+                      "G11-E02-NET_CONSTRUCTION"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-C02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "45°.",
+                    "skill_ids": [
+                      "G11-E02-LINE_PLANE_MEASURE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "tan θ=1/3; sin θ=1/√10.",
+                    "skill_ids": [
+                      "G11-E02-LINE_PLANE_MEASURE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-C03",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Hai tia nằm trong hai nửa mặt phẳng của nhị diện, cùng gốc H∈d và vuông góc d.",
+                    "skill_ids": [
+                      "G11-E02-DIHEDRAL_MEASURE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-P03",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Không; cần hai tia đúng điều kiện xác định góc phẳng nhị diện.",
+                    "skill_ids": [
+                      "G11-E02-DIHEDRAL_MEASURE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-C04",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "24 cm³.",
+                    "skill_ids": [
+                      "G11-E02-VOLUME_MODEL"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-P04",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "5 cm.",
+                    "skill_ids": [
+                      "G11-E02-VOLUME_MODEL"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-C05",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Vì đó là các cặp đỉnh tương ứng, tạo ba cạnh bên song song và bằng nhau.",
+                    "skill_ids": [
+                      "G11-E02-GEOGEBRA_REPRESENTATION"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-SUPP-E02-P05",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Nét đứt.",
+                    "skill_ids": [
+                      "G11-E02-GEOGEBRA_REPRESENTATION"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-TRIG-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "cos(a+b)=cos a cos b−sin a sin b.",
+                    "skill_ids": [
+                      "G11-YR-TRIG_IDENTITY"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-TRIG-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "2π/3.",
+                    "skill_ids": [
+                      "G11-YR-TRIG_IDENTITY"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-TRIG-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "x∈{0,π,2π}.",
+                    "skill_ids": [
+                      "G11-YR-TRIG_IDENTITY"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-SEQ-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "u₆=15.",
+                    "skill_ids": [
+                      "G11-YR-SEQUENCE_MODEL"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-SEQ-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "S₄=45.",
+                    "skill_ids": [
+                      "G11-YR-SEQUENCE_MODEL"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-SEQ-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "165 triệu đồng.",
+                    "skill_ids": [
+                      "G11-YR-SEQUENCE_MODEL"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-LIMIT-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "4.",
+                    "skill_ids": [
+                      "G11-YR-LIMIT_CONTINUITY"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-LIMIT-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "a=3.",
+                    "skill_ids": [
+                      "G11-YR-LIMIT_CONTINUITY"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-LIMIT-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "3.",
+                    "skill_ids": [
+                      "G11-YR-LIMIT_CONTINUITY"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-EXPL-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Điều kiện x>1; nghiệm x=9.",
+                    "skill_ids": [
+                      "G11-YR-EXP_LOG_DOMAIN"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-EXPL-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "x=5.",
+                    "skill_ids": [
+                      "G11-YR-EXP_LOG_DOMAIN"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-EXPL-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "x≤3.",
+                    "skill_ids": [
+                      "G11-YR-EXP_LOG_DOMAIN"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-DERIV-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "f′(1)=1.",
+                    "skill_ids": [
+                      "G11-YR-DERIVATIVE_RATE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-DERIV-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "2x sin x+(x²+1)cos x.",
+                    "skill_ids": [
+                      "G11-YR-DERIVATIVE_RATE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-DERIV-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Đi theo chiều âm; vận tốc −2 m/s, tốc độ 2 m/s.",
+                    "skill_ids": [
+                      "G11-YR-DERIVATIVE_RATE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-SPACE-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "d⊥(P).",
+                    "skill_ids": [
+                      "G11-YR-SPACE_PERP_DISTANCE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-SPACE-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "tan θ=1/2.",
+                    "skill_ids": [
+                      "G11-YR-SPACE_PERP_DISTANCE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-SPACE-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "a.",
+                    "skill_ids": [
+                      "G11-YR-SPACE_PERP_DISTANCE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-VOL-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "24 cm³.",
+                    "skill_ids": [
+                      "G11-YR-SPACE_VOLUME"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-VOL-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "72 cm³.",
+                    "skill_ids": [
+                      "G11-YR-SPACE_VOLUME"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-VOL-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "45 cm³.",
+                    "skill_ids": [
+                      "G11-YR-SPACE_VOLUME"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-STAT-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "[10,20).",
+                    "skill_ids": [
+                      "G11-YR-GROUPED_STATS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-STAT-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "[10,20), tần số 5.",
+                    "skill_ids": [
+                      "G11-YR-GROUPED_STATS"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-STAT-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Q₁≈11,25; Q₃≈23,75; nội suy giả định số liệu phân bố đều trong từng lớp.",
+                    "skill_ids": [
+                      "G11-YR-GROUPED_STATS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-PROB-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "0,8.",
+                    "skill_ids": [
+                      "G11-YR-PROBABILITY_COMBINE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-PROB-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "0,6.",
+                    "skill_ids": [
+                      "G11-YR-PROBABILITY_COMBINE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-PROB-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "0,3.",
+                    "skill_ids": [
+                      "G11-YR-PROBABILITY_COMBINE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-IND-C01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "0,06.",
+                    "skill_ids": [
+                      "G11-YR-PROBABILITY_INDEP"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-IND-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "0,36.",
+                    "skill_ids": [
+                      "G11-YR-PROBABILITY_INDEP"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-IND-P02",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Không độc lập.",
+                    "skill_ids": [
+                      "G11-YR-PROBABILITY_INDEP"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G11-YR-INT-P01",
+                    "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
+                    "answer_key": "Bạn thứ nhất: giới hạn dạng vô định (G11-YR-LIMIT_CONTINUITY); bạn thứ hai: điều kiện xác định logarit (G11-YR-EXP_LOG_DOMAIN).",
+                    "skill_ids": [
+                      "G11-YR_CROSS_CHAPTER_REMEDIATION"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 0
+              },
+              {
+                "shard": "g12-chi-public-selfcheck",
+                "before": "7247b57846ba3c994730e549bfcdeb269016ac4c",
+                "after": "5cab474a643cb275ed080564e73daf6b628dcd0e",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G12-CHI-END-C01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Đồng biến (−∞,1), (3,+∞); nghịch biến (1,3); cực đại tại x=1, f(1)=4; cực tiểu tại x=3, f(3)=0.",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_VARIATION_EXTREMA"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-END-C02",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Tiệm cận đứng x=3; tiệm cận ngang y=2; tâm đối xứng (3;2).",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-END-C03",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Sai; x=0 không phải điểm cực trị.",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-END-C04",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Đi chiều âm; tốc độ 4 m/s.",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-END-P01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "GTNN 1 tại x=2; GTLN 5 tại cả x=0 và x=4.",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_VARIATION_EXTREMA"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-END-P02",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Tiệm cận đứng x=2; tiệm cận xiên y=x+2.",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_ASYMPTOTE_GRAPH"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-END-P03",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Sai; không có tiệm cận đứng tại x=2.",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-END-P04",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Diện tích lớn nhất 162 m² tại x=9 m, chiều dài 18 m.",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_MODEL_RATE_OPTIMUM"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-END-A01",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "GTLN 1 tại x=1; không có GTNN.",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_VARIATION_EXTREMA"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-CHI-END-A02",
+                    "source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+                    "answer_key": "Sai; hàm giảm trên từng khoảng xác định, không giảm trên toàn tập xác định. Phản ví dụ x₁=−2<x₂=0 nhưng f(x₁)=−1<3=f(x₂).",
+                    "skill_ids": [
+                      "G12-CHI-INTEGRATED_ERROR_DIAGNOSIS"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  }
+                ],
+                "unchanged_count": 0
+              },
+              {
+                "shard": "g12-experience",
+                "before": "6252f274f82b53b70e0fce3237952aa88cbc23b4",
+                "after": "cb6791249113af33d7f5d705858f8b85edfae5aa",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G12-EXP01-C01",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "3x²−4x+5.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-P01",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "F(x)+C=x³−2x²+5x+C, C∈ℝ; các hàm này cùng đạo hàm.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O01"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-A01",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "sin(2x)+3x²+C, C∈ℝ.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-C02",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "1.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-P02",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Đổi cận đổi dấu: ∫₁⁰ 2x dx=−1.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-A02",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "0; hàm lẻ trên đoạn đối xứng.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-C03",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "T₂=2.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O03"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-P03",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Hai nút đầu/cuối chỉ thuộc một hình thang; các nút giữa thuộc hai hình thang.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O03"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-A03",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "T₂=3/8.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O03"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-C04",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Cận trên sai số 1/150≈0,0066667.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O04"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-P04",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Không; số chữ số hiển thị không chứng nhận sai số.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-A04",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "n nhỏ nhất bằng 5.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O04"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-C05",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "T₂=6 m.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O05"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-P05",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "cm³.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP01-A05",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "12 cm³.",
+                    "skill_ids": [
+                      "G12-SGK-EXP01-O05"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-C01",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Có; cùng điểm (1;2;0) trên Oxy.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O01"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-P01",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Không; hình chiếu có thể che khuất độ sâu và chỗ nối không khớp.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-A01",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Mô hình có vẻ khép kín trong hình chiếu ban đầu nhưng các phần không nối thật trong 3D.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-C02",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "6 đỉnh.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-P02",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Vì đáy thẳng hàng có diện tích 0, làm khối lăng trụ suy biến.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-A02",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "8 đơn vị khối.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O02"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-C03",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "3.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O03"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-P03",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Không; cần xác nhận giao điểm thực bằng tọa độ hoặc quan hệ hình học 3D.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O03"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-A03",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Nhìn bên theo phương để thấy trục Oz, chẳng hạn chiếu lên xOz hoặc yOz.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O03"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-C04",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "M(0,0)=(1;0;0).",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O04"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-P04",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Sau một vòng, chiều ngang bị đảo: M(0,v)=M(2π,−v).",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O04"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-A04",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "M(0,−1)=M(2π,1)=(1/2;0;0).",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O04"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-C05",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Có; lưu tọa độ và tham số.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-P05",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Lưu dữ liệu, lệnh và quy tắc dựng, không chỉ tên nút.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-G12-EXP02-A05",
+                    "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+                    "answer_key": "Thêm góc nhìn khác và dữ liệu tọa độ, tham số, quan hệ hình học để kiểm tra độc lập.",
+                    "skill_ids": [
+                      "G12-SGK-EXP02-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  }
+                ],
+                "unchanged_count": 0
+              }
+            ],
+            "notes": [
+              "G11: clarify yearly growth and continuous parameter k, pH/logarithmic reference and dB models, vertical poles/horizontal ground, dihedral-angle rays, signed velocity (explicit illustrative m/s units), cuboid/common perpendicular proof, year-end statistics standalone group data and error diagnosis. Open questions accept valid alternative reasoned responses.",
+              "G12 ChI: derivative signs and extrema, asymptote limits, closed/open interval extrema, rectangular garden optimization and motion context. All numerical results unchanged.",
+              "G12 experience: add original surrounding formula/context for trapezoid estimates and valid error bound, unequal intervals and signed displacement; add exact source triangle coordinates/height and Möbius parameterization to standalone exercises. Distinguish 3D proof from appearance or multiple projections. Activities remain experience scope; no promotion to chapter Core or Mastery.",
+              "All 92 original source, IDs, skill IDs, role/exposure metadata and SELF_COMPARE/auto_grade=false unchanged; only permitted fields changed. No combined legacy records remain according to reconciled manifest. Final exhaustive shard scan to follow before reporting verified zero. Original PDF reread, full Academic/PED/coverage/D6/reveal, optional scope enforcement, independent verdict and interaction conversion pending. No runtime or release."
             ]
           }
         ]
