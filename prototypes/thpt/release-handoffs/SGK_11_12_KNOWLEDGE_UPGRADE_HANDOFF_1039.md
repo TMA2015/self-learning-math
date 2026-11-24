@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 32/51 bài đã bàn giao; 19 bài lớp 12 tiếp theo. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 33/51 bài đã bàn giao; Toán 12 đã hoàn thành B01, còn B02–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12 B01–B19: chưa xác nhận hoàn thành đợt reset hiện hành; không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01 CONTENT_READY; B02–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -45,7 +45,8 @@
 | 11 | B31 | [#1066](https://github.com/TMA2015/self-learning-math/pull/1066) | CONTENT_READY — đã bàn giao |
 | 11 | B32 | [#1067](https://github.com/TMA2015/self-learning-math/pull/1067) | CONTENT_READY — đã bàn giao |
 | 11 | B33 | [#1068](https://github.com/TMA2015/self-learning-math/pull/1068) | CONTENT_READY — đã bàn giao |
-| 12 | B01–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B01 | [#1069](https://github.com/TMA2015/self-learning-math/pull/1069) | CONTENT_READY — đã bàn giao |
+| 12 | B02–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -148,6 +149,14 @@ Kế thừa Academic/PED PASS của nhóm B10–B14 theo checkpoint review tại
 | B32 [#1067](https://github.com/TMA2015/self-learning-math/pull/1067) | `db471893cbb43bd5ab06f9755da9e65691d9bfab` | `078a5d9aca09954fd2b451508152147f6a655015` | `fedb5d316838fbce9704ac5ba5d1543d60bf0685` | SGK 87–94; đủ 5 nhóm quy tắc, điều kiện miền, 16 đối chứng sai phân; delta giải thích quy tắc thương qua wv=u và tách (x)'=1 để tránh 0^0 tại x=0; kiểm thương −3 tại x=2. | Không; dùng asset hiện có |
 
 **Kết luận G11:** 32/32 nguồn canonical B02–B33 đã khóa và bàn giao theo các dòng CONTENT_READY trong chính tài liệu này. Kết luận và commit hiện tại thay thế các trạng thái chờ bàn giao / NotebookLM pending của các snapshot lịch sử trong PR; không thay đổi kết quả review cũ. RELEASE có thể tiếp nhận toàn bộ 32 dòng bằng exact commit/blob, kiểm tích hợp theo vai trò của mình; không yêu cầu một hồ sơ riêng cho từng bài.
+
+### Toán 12 B01 — Tính đơn điệu và cực trị (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** S1: [SGK KNTT Toán 12 tập 1 trang in 5–14](https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-12-Tap-1-Chuong-trinh-moi.pdf), đọc trực tiếp text hai mục Tính đơn điệu/Cực trị, định nghĩa, dấu đạo hàm, bảng biến thiên, cực trị và bài tập. Screenshot PDF cache miss; không nhận visual-source PASS. Đọc mẫu G10 B19. Canonical bốn tab, hai mục đối ứng; giải thích (f') hữu hạn nghiệm bằng 0, hàm không đổi, điểm loại miền, không khả vi, giá trị/điểm cực trị, đọc đồ thị (f'); 10 ví dụ tự giải, 2 Vận dụng độc lập có Đối chiếu/Kiểm lỗi. Kiểm lại đa thức (cực trị 2/−2, ±16, −13/3), phân thức tách miền, căn/đầu mút, trị tuyệt đối, chuyển động, độ cao t=2,5, logistic t=ln4 và 250 sản phẩm/năm; 19 nhóm kiểm toán/source đạt, đồ thị dấu mới kiểm nghiệm ba nghiệm và dấu hai phía. Hình cũ giữ nguyên. Diff 2 file đúng phạm vi. Không còn lỗi thực chất đã phát hiện.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên | Asset delta |
+|---|---|---|---|---|---|
+| [#1069](https://github.com/TMA2015/self-learning-math/pull/1069) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md` | `05bf9eb5596654216972ef140d551ab4131fc121` | `64f6a142a88e8c4dd63dff3f7d2220787fcdec5c` | `bed6da8643ee1def36fd72e8ae20308a39ea0c1a` | Thêm `docs/assets/images/thpt/G12_B01_FIG02_READ_DERIVATIVE_AUTHORING_20261124.svg`, blob `4720ec1c26e8ecc6ff5707281b9aba3465d31df5`; hình cũ `e2696224533994826104e6c505d9dab26fc0a2e2` giữ nguyên. |
 
 ## Cách cập nhật
 
