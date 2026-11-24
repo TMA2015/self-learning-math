@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 430" width="1080" height="430" role="img" aria-labelledby="t d">
+<title id="t">Khoảng cách giữa các đối tượng song song</title><desc id="d">Ba khung: đường a song song mặt phẳng P, hai điểm M N trên a có chân A B trên P tạo chữ nhật ABNM nên cùng độ cao; hai mặt phẳng P Q song song có đoạn vuông góc chung dài h; hai đường m n song song trong mặt phẳng có đoạn vuông góc chung dài k. Cách đo khoảng cách là đoạn vuông góc, không đo đoạn xiên.</desc>
+<rect width="1080" height="430" rx="18" fill="#fff"/><text x="540" y="37" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a405a">Cùng phương song song ⇒ khoảng cách vuông góc không đổi</text>
+<g font-family="Arial" font-size="18" fill="#244056">
+<rect x="15" y="65" width="341" height="303" rx="12" fill="#f5f9fc" stroke="#d9e4ec"/>
+<text x="185" y="92" text-anchor="middle" font-weight="700">1. Đường // mặt</text>
+<polygon points="52,287 279,287 330,341 101,341" fill="#e2eef7" stroke="#6594af" stroke-width="2.5"/>
+<path d="M100 162 L284 162" stroke="#2b73a4" stroke-width="5"/><path d="M132 162 L132 299 M248 162 L248 299" stroke="#bf5b38" stroke-width="3.7" stroke-dasharray="8 6"/>
+<path d="M132 299 L248 299" stroke="#38866e" stroke-width="4"/>
+<text x="121" y="151">M</text><text x="246" y="151">N</text><text x="123" y="322">A</text><text x="252" y="322">B</text><text x="288" y="152">a</text><text x="306" y="302">(P)</text>
+<text x="186" y="360" text-anchor="middle" font-size="15">MA = NB = d(a,(P))</text>
+<rect x="371" y="65" width="341" height="303" rx="12" fill="#f5f9fc" stroke="#d9e4ec"/>
+<text x="542" y="92" text-anchor="middle" font-weight="700">2. Hai mặt song song</text>
+<polygon points="407,171 626,171 671,217 452,217" fill="#dff4ec" stroke="#529078" stroke-width="2.5"/>
+<polygon points="407,276 626,276 671,322 452,322" fill="#e2eef7" stroke="#6594af" stroke-width="2.5"/>
+<path d="M510 191 L510 295" stroke="#bf5b38" stroke-width="5"/>
+<text x="524" y="187">M</text><text x="523" y="313">H</text><text x="633" y="166">(Q)</text><text x="635" y="271">(P)</text>
+<text x="542" y="360" text-anchor="middle" font-size="15">MH = d((P),(Q))</text>
+<rect x="727" y="65" width="338" height="303" rx="12" fill="#f5f9fc" stroke="#d9e4ec"/>
+<text x="896" y="92" text-anchor="middle" font-weight="700">3. Hai đường song song</text>
+<path d="M776 162 L1021 162" stroke="#2b73a4" stroke-width="5"/>
+<path d="M776 278 L1021 278" stroke="#33846e" stroke-width="5"/>
+<path d="M881 162 L881 278" stroke="#bf5b38" stroke-width="5"/>
+<path d="M881 263 H898 V278" stroke="#bf5b38" stroke-width="2" fill="none"/>
+<text x="1023" y="151">m</text><text x="1023" y="269">n</text><text x="864" y="152">M</text><text x="865" y="303">H</text>
+<text x="896" y="360" text-anchor="middle" font-size="15">MH = d(m,n)</text>
+<text x="540" y="408" text-anchor="middle" font-size="16" fill="#64788a">Sơ đồ các đoạn đo; quan hệ song song và vuông góc phải được xác minh từ giả thiết.</text>
+</g></svg>

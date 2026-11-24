@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 485" width="1010" height="485" role="img" aria-labelledby="t d">
+<title id="t">Luyện tập 1 SGK: khoảng cách từ A tới mặt BCC phẩy B phẩy và đường BC phẩy</title>
+<desc id="d">Lăng trụ đứng ABC.A phẩy B phẩy C phẩy có tam giác đáy vuông cân tại A, AB bằng AC bằng a và cạnh đứng dài h. Mặt bên BCC phẩy B phẩy tô xanh, đường chéo BC phẩy tô đỏ. H là chân từ A xuống BC trong mặt đáy; AH vuông góc cả BC và BB phẩy nên d từ A đến mặt bên bằng AH bằng a chia căn hai. Tam giác ABC phẩy vuông tại A, đường cao từ A xuống BC phẩy có độ dài a nhân căn a bình phương cộng h bình phương chia căn hai a bình phương cộng h bình phương.</desc>
+<rect width="1010" height="485" rx="18" fill="#fff"/>
+<text x="505" y="35" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#1a405a">Hai đối tượng khác nhau ⇒ hai khoảng cách khác nhau</text>
+<polygon points="105,349 383,349 268,207" fill="#e8f3fc" stroke="#5789a9" stroke-width="3"/>
+<polygon points="105,155 383,155 268,13" transform="translate(0,54)" fill="#e3f7ed" stroke="#4d9379" stroke-width="3"/>
+<path d="M105 349 L105 209 M383 349 L383 209 M268 207 L268 67" fill="none" stroke="#697f93" stroke-width="3"/>
+<polygon points="383,349 268,207 268,67 383,209" fill="#d8edf7" fill-opacity=".65" stroke="#397ca4" stroke-width="3"/>
+<path d="M383 349 L268 67" stroke="#c65a36" stroke-width="6"/>
+<path d="M105 349 L321 272" stroke="#32866c" stroke-width="5" stroke-linecap="round"/>
+<circle cx="321" cy="272" r="6" fill="#32866c"/>
+<g font-family="Arial" font-size="19" fill="#25445f">
+<text x="80" y="365">A</text><text x="389" y="363">B</text><text x="272" y="202">C</text>
+<text x="80" y="201">A′</text><text x="388" y="203">B′</text><text x="272" y="62">C′</text><text x="326" y="287">H</text>
+<text x="174" y="347">AB=a</text><text x="126" y="281">AC=a</text><text x="82" y="264">h</text>
+<text x="355" y="148" fill="#bb5331">BC′</text><text x="196" y="294" fill="#2e836a">AH</text>
+<rect x="520" y="81" width="455" height="307" rx="12" fill="#f5f9fc" stroke="#dce6ed"/>
+<text x="543" y="126" font-weight="700">Khoảng cách đến mặt (BCC′B′)</text>
+<text x="543" y="168">AH ⟂ BC, AH ⟂ BB′</text>
+<text x="543" y="210">⇒ d(A, mặt bên) = a/√2</text>
+<text x="543" y="265" font-weight="700">Khoảng cách đến đường BC′</text>
+<text x="543" y="307">ΔABC′ vuông tại A:</text>
+<text x="543" y="348">d(A,BC′) = a√(a²+h²)/√(2a²+h²)</text>
+<text x="505" y="454" text-anchor="middle" font-size="16" fill="#66798a">H là chân trên BC, không tự coi H cũng nằm trên BC′; hình chỉ là phối cảnh.</text>
+</g></svg>
