@@ -2,17 +2,21 @@
   {
     "item_id": "THPT-TOP08-P01",
     "content_version": 1,
-    "stem": "Dãy u_n=5+4/n với n nguyên dương. Tìm giới hạn khi n→∞; số 5 có nhất thiết là số hạng nào đó của dãy không?",
-    "answer_key": "lim u_n=5; không số hạng nào bằng 5.",
-    "worked_solution": "Vì 4/n→0 nên 5+4/n→5. Với mọi n≥1, u_n−5=4/n>0 nên u_n không bao giờ bằng 5. Giới hạn nói về giá trị tiến tới, không yêu cầu dãy đạt giá trị đó.",
-    "skill_ids": [],
+    "stem": "Dãy u_n=5+4/n, n nguyên dương. Tìm giới hạn, cho biết có số hạng nào bằng 5 không và tìm chỉ số nhỏ nhất để |u_n−5|<0,1.",
+    "answer_key": "Giới hạn 5; không đạt 5; n nhỏ nhất là 41.",
+    "worked_solution": "Vì 4/n→0 nên u_n→5. Với mọi n≥1, u_n−5=4/n>0 nên không số hạng nào bằng 5. Điều kiện 4/n<0,1 tương đương n>40 vì n dương; chỉ số nguyên nhỏ nhất là 41. Tại n=40, khoảng cách đúng bằng 0,1 nên không thỏa dấu nghiêm.",
+    "skill_ids": [
+      "G11-B15-FINITE_SEQUENCE"
+    ],
     "original_outcome_ids": [
       "TOP08-O01"
     ],
     "problem_type_id": "TOP08-FINITE_LIMIT",
     "difficulty": "BASIC",
-    "hints": [],
-    "remediation": "Nếu cho rằng giới hạn phải là số hạng, thử giải 4/n=0 với n hữu hạn.",
+    "hints": [
+      "Tìm khoảng cách |u_n−5| và điều kiện chỉ số."
+    ],
+    "remediation": "Nếu coi giới hạn phải là số hạng, giải 4/n=0 rồi kiểm n hữu hạn. Ôn TOP08-M01; luyện THPT-G11-CHV-B15-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -30,14 +34,18 @@
     "stem": "Xét v_n=(−1)^n+1/n, n≥1. Dãy có giới hạn hữu hạn hay giới hạn ±∞ không? Giải thích bằng hai dãy chỉ số chẵn/lẻ.",
     "answer_key": "Không có giới hạn hữu hạn hay ±∞.",
     "worked_solution": "Với n=2k, v_{2k}=1+1/(2k)→1. Với n=2k+1, v_{2k+1}=−1+1/(2k+1)→−1. Hai dãy con tiến tới hai số khác nhau; không thể có giới hạn chung, và cũng không tiến tới vô cực cùng dấu.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B15-INFINITE_SEQUENCE"
+    ],
     "original_outcome_ids": [
       "TOP08-O02"
     ],
     "problem_type_id": "TOP08-OSCILLATION_DIVERGENCE",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Đừng chỉ nhìn 1/n→0 rồi kết luận cả dãy về 0: thành phần (−1)^n vẫn dao động.",
+    "hints": [
+      "Tách n chẵn, lẻ; so hai giới hạn."
+    ],
+    "remediation": "Nếu cho số hạng luân phiên vẫn hội tụ, tách chỉ số chẵn/lẻ và so kết quả. Ôn TOP08-M02; luyện THPT-G11-CHV-B15-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -55,14 +63,18 @@
     "stem": "Tính lim(n→∞)(−2/5)^n và cho biết việc luân phiên dấu có ngăn dãy hội tụ không.",
     "answer_key": "Giới hạn bằng 0; luân phiên dấu không ngăn hội tụ.",
     "worked_solution": "Do |−2/5|=2/5<1, trị tuyệt đối |(−2/5)^n|=(2/5)^n→0. Suy ra chính dãy tiến về 0 theo định lí kẹp; dấu có thể luân phiên nhưng độ lớn giảm về 0.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B15-FINITE_SEQUENCE"
+    ],
     "original_outcome_ids": [
       "TOP08-O03"
     ],
     "problem_type_id": "TOP08-GEOMETRIC_QN",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "So sánh q=−1 (không hội tụ) với q=−2/5 (hội tụ) bằng độ lớn |q|.",
+    "hints": [
+      "So |q| với 1, không chỉ xét dấu q."
+    ],
+    "remediation": "Nếu q âm khiến em kết luận không hội tụ, xét |q| và độ lớn từng số hạng. Ôn TOP08-M03; luyện THPT-TOP08-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -80,14 +92,18 @@
     "stem": "Tính lim(n→∞)(7n²−3n+1)/(2n²+n) với n≥1.",
     "answer_key": "7/2.",
     "worked_solution": "Chia cả tử/mẫu cho n²: (7−3/n+1/n²)/(2+1/n)→7/2. Mẫu giới hạn bằng 2 khác 0 nên luật thương hợp lệ.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B15-LIMIT_ARITHMETIC"
+    ],
     "original_outcome_ids": [
       "TOP08-O04"
     ],
     "problem_type_id": "TOP08-SEQUENCE_LEADING_POWERS",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Không cho rằng ∞/∞ là đáp số; đưa về biểu thức có giới hạn hữu hạn.",
+    "hints": [
+      "Chia tử mẫu cho n²; kiểm mẫu giới hạn."
+    ],
+    "remediation": "Nếu chia cho n thay n², viết từng số hạng sau chia; kiểm mẫu tiến về số khác 0. Ôn TOP08-M04; luyện THPT-G11-CHV-B15-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -105,14 +121,18 @@
     "stem": "Tính tổng vô hạn 12+3+3/4+3/16+⋯, và nêu điều kiện dùng công thức.",
     "answer_key": "16; công bội q=1/4 thỏa |q|<1.",
     "worked_solution": "Đây là CSN a=12, q=3/12=1/4. S_n=12(1−(1/4)^n)/(1−1/4); khi n→∞ thì (1/4)^n→0 nên tổng vô hạn bằng 12/(3/4)=16.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B15-GEOMETRIC"
+    ],
     "original_outcome_ids": [
       "TOP08-O05"
     ],
     "problem_type_id": "TOP08-INFINITE_GP",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu áp dụng khi |q|≥1 thì không được dùng công thức tổng lùi vô hạn; quay lại kiểm giới hạn số hạng.",
+    "hints": [
+      "Tìm công bội và lấy giới hạn tổng riêng."
+    ],
+    "remediation": "Nếu dùng công thức khi |q|≥1, kiểm q^n có tiến về 0 không. Ôn TOP08-M05; luyện THPT-G11-CHV-B15-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -130,14 +150,18 @@
     "stem": "Với f(x)=(x²−6x+8)/(x−2), x≠2, tính lim(x→2)f(x). Hàm có cần định nghĩa tại x=2 để có giới hạn không?",
     "answer_key": "Giới hạn −2; f(2) không cần được định nghĩa.",
     "worked_solution": "Tử=(x−2)(x−4). Với x≠2, f(x)=x−4, nên khi x→2 thì f(x)→−2. Phép rút gọn chỉ đúng trong lân cận loại điểm; giới hạn không xác nhận f(2).",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_POINT"
+    ],
     "original_outcome_ids": [
       "TOP08-O06"
     ],
     "problem_type_id": "TOP08-PUNCTURED_NEIGHBORHOOD",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu thế trực tiếp ra 0/0, đó là tín hiệu cần biến đổi, không phải kết quả.",
+    "hints": [
+      "Phân tích tử, chỉ khử nhân tử khi x≠2."
+    ],
+    "remediation": "Nếu thế x=2 sau khi khử và ghi f(2), phân biệt biểu thức rút gọn trong lân cận với giá trị hàm ban đầu. Ôn TOP08-M06; luyện THPT-G11-CHV-B16-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -155,14 +179,18 @@
     "stem": "Cho f(x)=x+1 nếu x<1, và f(x)=x²+3 nếu x≥1. Tính hai giới hạn một phía tại 1 và quyết định có lim(x→1)f(x) không.",
     "answer_key": "Trái 2, phải 4; không tồn tại giới hạn hai phía hữu hạn.",
     "worked_solution": "Khi x→1⁻ dùng nhánh x+1 nên được 2. Khi x→1⁺ dùng nhánh x²+3 nên được 4. Hai giới hạn một phía khác nhau thì giới hạn hai phía không tồn tại dù f(1)=4 xác định.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B16-ONE_SIDED"
+    ],
     "original_outcome_ids": [
       "TOP08-O07"
     ],
     "problem_type_id": "TOP08-ONE_SIDED_JUMP",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Không lấy giá trị f(1) thay giới hạn bên trái; đọc điều kiện từng nhánh.",
+    "hints": [
+      "Đọc công thức riêng ở mỗi phía điểm nối."
+    ],
+    "remediation": "Nếu chỉ dùng nhánh chứa điểm nối, tính hai giới hạn riêng, không dùng f(1) thay giới hạn trái. Ôn TOP08-M07; luyện THPT-G11-CHV-B16-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -180,14 +208,18 @@
     "stem": "Xét f(x)=(x+1)/(x−2). Khi x→2⁻ và x→2⁺, f(x) tiến tới đâu? Có giới hạn hữu hạn hai phía không?",
     "answer_key": "Giới hạn trái −∞, phải +∞; không có giới hạn hai phía hữu hạn.",
     "worked_solution": "Gần x=2, tử x+1→3>0. Mẫu x−2 âm rất nhỏ từ trái ⇒ f→−∞; dương rất nhỏ từ phải ⇒ f→+∞. Không gộp hai vô cực khác dấu thành một giới hạn.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B16-INFINITE_LIMIT"
+    ],
     "original_outcome_ids": [
       "TOP08-O08"
     ],
     "problem_type_id": "TOP08-ONE_SIDED_INFINITE",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Lập bảng dấu tử/mẫu trên hai phía trước khi viết ±∞.",
+    "hints": [
+      "Xét dấu tử và mẫu theo từng phía."
+    ],
+    "remediation": "Nếu bỏ dấu của mẫu, thử x=1,99 và x=2,01 rồi suy hướng. Ôn TOP08-M08; luyện THPT-G11-CHV-B16-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -202,17 +234,21 @@
   {
     "item_id": "THPT-TOP08-P09",
     "content_version": 1,
-    "stem": "Tính lim(x→−∞)(4x²−3)/(2x²+x).",
-    "answer_key": "2.",
-    "worked_solution": "Chia tử/mẫu cho x²≠0 khi |x| lớn: (4−3/x²)/(2+1/x)→4/2=2, dù x tiến −∞. Bậc tử và mẫu bằng nhau, giới hạn là tỉ số hệ số dẫn.",
-    "skill_ids": [],
+    "stem": "Tính lim(x→−∞)(4x³−3)/(2x²+x) và giải thích dấu vô cực.",
+    "answer_key": "−∞.",
+    "worked_solution": "Chia cả tử và mẫu cho x²: (4x−3/x²)/(2+1/x). Khi x→−∞, tử→−∞, mẫu→2>0. Vì mẫu dương và tiến tới số khác 0 nên thương→−∞. Không lấy tỉ số 4/2 vì bậc tử lớn hơn bậc mẫu.",
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_INFINITY"
+    ],
     "original_outcome_ids": [
       "TOP08-O09"
     ],
     "problem_type_id": "TOP08-FUNCTION_INFINITY_EQUAL_DEGREE",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Đừng coi dấu x âm quyết định dấu x²; x² dương ở cả hai phía.",
+    "hints": [
+      "Chia cả tử và mẫu cho x²; xét riêng dấu và xu hướng của tử, mẫu."
+    ],
+    "remediation": "Nếu dùng √(x²)=x khi x âm, kiểm |x|=−x; theo dõi dấu số hạng dẫn. Ôn TOP08-M09; luyện THPT-G11-CHV-B16-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -230,14 +266,18 @@
     "stem": "Tính lim(x→3)(x²−x−6)/(x−3). Vì sao phép thế ban đầu chưa có giá trị?",
     "answer_key": "5.",
     "worked_solution": "x²−x−6=(x−3)(x+2). Biểu thức không xác định tại x=3 và thế trực tiếp cho 0/0, nhưng với x≠3 ta khử nhân tử x−3, lấy lim(x+2)=5. Giới hạn khác việc định nghĩa f(3).",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B16-ALGEBRAIC_TECHNIQUES"
+    ],
     "original_outcome_ids": [
       "TOP08-O10"
     ],
     "problem_type_id": "TOP08-INDETERMINATE_FACTOR",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Chỉ khử nhân tử sau khi phân tích và nêu x≠3; 0/0 là dạng vô định.",
+    "hints": [
+      "Thế thử để nhận dạng 0/0, phân tích nhân tử."
+    ],
+    "remediation": "Nếu coi 0/0 là 0, khử nhân tử ở x≠3 rồi lấy giới hạn. Ôn TOP08-M10; luyện THPT-G11-CHV-B16-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -255,14 +295,18 @@
     "stem": "Tính lim(x→4)(√(x+5)−3)/(x−4).",
     "answer_key": "1/6.",
     "worked_solution": "Nhân liên hợp tử: [(√(x+5)−3)(√(x+5)+3)]/[(x−4)(√(x+5)+3)] = (x−4)/[(x−4)(√(x+5)+3)]=1/(√(x+5)+3), x≠4 trong miền. Khi x→4, mẫu→6, lim=1/6.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B16-ALGEBRAIC_TECHNIQUES"
+    ],
     "original_outcome_ids": [
       "TOP08-O11"
     ],
     "problem_type_id": "TOP08-RADICAL_CONJUGATE",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Không thay 0/0 bằng 0; kiểm x+5≥0 và mẫu liên hợp khác 0 gần 4.",
+    "hints": [
+      "Nhân liên hợp và giữ miền của căn."
+    ],
+    "remediation": "Nếu nhân liên hợp chỉ ở tử, nhân cả tử và mẫu với cùng biểu thức. Ôn TOP08-M11; luyện THPT-G11-CHV-B16-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -277,17 +321,21 @@
   {
     "item_id": "THPT-TOP08-P12",
     "content_version": 1,
-    "stem": "Tính lim(x→+∞)(√(x²+2x)−x).",
-    "answer_key": "1.",
-    "worked_solution": "Trực tiếp là dạng ∞−∞. Nhân liên hợp: (2x)/(√(x²+2x)+x). Với x>0 chia cho x được 2/[√(1+2/x)+1]→2/(1+1)=1. Cần x→+∞ để |x|=x; không áp cùng cách chia cho x>0 khi x→−∞.",
-    "skill_ids": [],
+    "stem": "Tính hai giới hạn của √(x²+2x)−x khi x→+∞ và khi x→−∞. Giải thích vì sao kết quả khác nhau.",
+    "answer_key": "Khi x→+∞: 1; khi x→−∞: +∞.",
+    "worked_solution": "Khi x→+∞, x>0, nhân liên hợp rồi chia cho x: 2/[√(1+2/x)+1]→1. Khi x→−∞, x≤−2 thuộc miền căn, −x→+∞ và √(x²+2x)≥0; do đó √(x²+2x)−x≥−x→+∞. Không dùng √(x²)=x khi x<0.",
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_INFINITY"
+    ],
     "original_outcome_ids": [
       "TOP08-O12"
     ],
     "problem_type_id": "TOP08-ASYMPTOTIC_RADICAL",
     "difficulty": "TRANSFER",
-    "hints": [],
-    "remediation": "Trước khi tách √(x²), viết √(x²)=|x|, không mặc định bằng x trên toàn trục.",
+    "hints": [
+      "Nhân liên hợp, dùng √(x²)=|x| theo từng hướng."
+    ],
+    "remediation": "Nếu cho √(x²)=x ở cả hai hướng, viết |x| rồi xét từng trường hợp. Ôn TOP08-M12; luyện THPT-G11-CHV-B16-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -305,14 +353,18 @@
     "stem": "f(x)=(x²−4)/(x−2) với x≠2, f(2)=k. Tìm k để f liên tục tại 2.",
     "answer_key": "k=4.",
     "worked_solution": "Trong lân cận x≠2, f=x+2 ⇒ lim(x→2)f=4. Liên tục tại 2 đòi f(2) được định nghĩa và bằng giới hạn, nên k=4; các k khác tạo gián đoạn có thể sửa được.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
     "original_outcome_ids": [
       "TOP08-O13"
     ],
     "problem_type_id": "TOP08-CONTINUITY_AT_POINT",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nhớ kiểm đủ: giá trị tại điểm, giới hạn hai phía, sự bằng nhau.",
+    "hints": [
+      "Tính giới hạn hai phía trước khi tìm tham số tại điểm."
+    ],
+    "remediation": "Nếu chọn k trước khi tính giới hạn, rút gọn ngoài điểm rồi đối chiếu f(2). Ôn TOP08-M13; luyện THPT-G11-CHV-B17-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -327,17 +379,21 @@
   {
     "item_id": "THPT-TOP08-P14",
     "content_version": 1,
-    "stem": "Với f(x)=(x²−4x+3)/(x−1) khi x≠1 và f(1)=9, hãy phân loại gián đoạn tại 1 và tìm giá trị thay thế để liên tục.",
-    "answer_key": "Gián đoạn có thể khử; thay f(1)=−2.",
-    "worked_solution": "Tử=(x−1)(x−3). Khi x≠1, f=x−3 nên giới hạn tại 1 là −2; hiện f(1)=9 khác giới hạn. Đổi riêng giá trị ở điểm thành −2 sẽ làm liên tục; đây không phải gián đoạn nhảy hay vô cực.",
-    "skill_ids": [],
+    "stem": "Xét hai hàm tại x=1: f(x)=(x²−4x+3)/(x−1) nếu x≠1, f(1)=9; g(x)=x−3 nếu x<1, g(x)=x+1 nếu x≥1. Phân loại gián đoạn và cho biết có thể sửa chỉ bằng đổi giá trị tại 1 không.",
+    "answer_key": "f gián đoạn có thể khử, sửa f(1)=−2; g gián đoạn nhảy, không thể sửa chỉ tại 1.",
+    "worked_solution": "Với x≠1, f(x)=x−3, hai giới hạn một phía đều bằng −2 nhưng f(1)=9; đổi f(1) thành −2 làm liên tục. Với g, giới hạn trái bằng −2, giới hạn phải bằng 2, khác nhau. Đổi g(1) không làm thay đổi hai giới hạn nên không thể khử bước nhảy bằng việc sửa một điểm.",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
     "original_outcome_ids": [
       "TOP08-O14"
     ],
     "problem_type_id": "TOP08-DISCONTINUITY_TYPES",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu thấy mẫu ban đầu bằng 0 rồi gọi 'vô cực', trước hết thử phân tích tử và xem có triệt tiêu không.",
+    "hints": [
+      "Kiểm giá trị tại điểm so với giới hạn hữu hạn."
+    ],
+    "remediation": "Nếu gọi mọi gián đoạn là nhảy, so hai giới hạn một phía và giá trị tại điểm. Ôn TOP08-M14; luyện THPT-G11-CHV-B17-C02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -355,14 +411,18 @@
     "stem": "Xét f(x)=√(x(4−x)) trên miền [0,4]. Hàm có liên tục trên đoạn [0,4] theo nghĩa tương đối không? Giá trị ở hai đầu là gì?",
     "answer_key": "Có; f(0)=f(4)=0.",
     "worked_solution": "Biểu thức x(4−x)≥0 đúng trên [0,4]; đa thức và căn bậc hai liên tục trên miền thích hợp, nên hàm liên tục bên trong. Tại 0 dùng giới hạn phải bằng f(0)=0; tại 4 dùng giới hạn trái bằng f(4)=0. Không cần giới hạn từ ngoài miền.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B17-CONTINUITY_INTERVAL"
+    ],
     "original_outcome_ids": [
       "TOP08-O15"
     ],
     "problem_type_id": "TOP08-CLOSED_INTERVAL_ENDPOINT",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Ở đầu mút, dùng đúng giới hạn một phía phía trong miền thay vì đòi hai phía ngoài miền.",
+    "hints": [
+      "Kiểm giới hạn phải ở đầu trái và giới hạn trái ở đầu phải."
+    ],
+    "remediation": "Nếu yêu cầu giới hạn ngoài miền tại đầu mút, chỉ dùng hướng nằm trong đoạn. Ôn TOP08-M15; luyện THPT-G11-CHV-B17-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -380,14 +440,18 @@
     "stem": "Tìm miền xác định và các khoảng/đoạn liên tục theo miền cho f(x)=√(x−1)/(x−3).",
     "answer_key": "D=[1,3)∪(3,+∞); liên tục trên mỗi thành phần theo nghĩa tương đối, tại x=1 liên tục phải.",
     "worked_solution": "Cần x−1≥0 ⇒ x≥1, đồng thời x−3≠0 ⇒ x≠3. Căn và phép chia liên tục nơi xác định; tại x=1, f(1)=0/(−2)=0 và giới hạn phải cùng bằng 0. Không nói f liên tục xuyên điểm loại 3.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B17-CONTINUITY_OPERATIONS"
+    ],
     "original_outcome_ids": [
       "TOP08-O16"
     ],
     "problem_type_id": "TOP08-CONTINUITY_OPERATIONS_DOMAIN",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Ghi đồng thời điều kiện căn và mẫu; tại 1 chỉ xét từ phải.",
+    "hints": [
+      "Giao điều kiện căn với điều kiện mẫu khác 0."
+    ],
+    "remediation": "Nếu bỏ điểm mẫu 0, thử thế x=3 vào mẫu và tách các khoảng. Ôn TOP08-M16; luyện THPT-G11-CHV-B17-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -402,17 +466,21 @@
   {
     "item_id": "THPT-TOP08-P17",
     "content_version": 1,
-    "stem": "Chứng minh x³+x−1=0 có ít nhất một nghiệm trong (0,1). Định lí giá trị trung gian đã chứng minh tính duy nhất chưa?",
-    "answer_key": "Ít nhất một nghiệm ở (0,1); chưa suy ra duy nhất chỉ từ IVT.",
-    "worked_solution": "g(x)=x³+x−1 là đa thức nên liên tục trên [0,1]. g(0)=−1<0, g(1)=1>0. Theo định lí giá trị trung gian, có c∈(0,1) với g(c)=0. Muốn kết luận duy nhất phải dùng lập luận thêm (chẳng hạn g tăng do x³ và x đều tăng).",
-    "skill_ids": [],
+    "stem": "Chứng minh x³+x−1=0 có ít nhất một nghiệm trong (0;1). Sau đó xét tính duy nhất bằng một lập luận riêng, không dùng đạo hàm.",
+    "answer_key": "Có đúng một nghiệm trong (0;1).",
+    "worked_solution": "g(x)=x³+x−1 liên tục trên [0;1], g(0)=−1<0, g(1)=1>0. Theo định lí giá trị trung gian có nghiệm c∈(0;1). Nếu 0<x<y<1 thì x³<y³ và x<y, nên g(x)<g(y). Vì g tăng nghiêm ngặt, không thể có hai nghiệm trong (0;1). Định lí đổi dấu chỉ cho tồn tại; tính duy nhất cần lập luận đơn điệu.",
+    "skill_ids": [
+      "G11-B17-ZERO_EXISTENCE"
+    ],
     "original_outcome_ids": [
       "TOP08-O17"
     ],
     "problem_type_id": "TOP08-IVT_EXISTENCE",
     "difficulty": "TRANSFER",
-    "hints": [],
-    "remediation": "Không viết 'nghiệm duy nhất theo IVT'; IVT chỉ cho tồn tại khi có liên tục và trái dấu.",
+    "hints": [
+      "Kiểm liên tục trên đoạn và dấu hai đầu; phân biệt tồn tại với duy nhất."
+    ],
+    "remediation": "Nếu suy duy nhất chỉ từ đổi dấu, cần thêm tính đơn điệu hoặc phản ví dụ. Ôn TOP08-M17; luyện THPT-G11-CHV-B17-P07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -430,14 +498,18 @@
     "stem": "Mô hình giả định g(t)=t²+t−3, t∈[1,2]. Chứng minh có thời điểm g(t)=0; sau hai bước chia đôi nêu một khoảng dài 1/4 chứa nghiệm.",
     "answer_key": "Có nghiệm; khoảng [5/4,3/2] sau 2 bước chia đôi.",
     "worked_solution": "g là đa thức nên liên tục; g(1)=−1<0,g(2)=3>0. Giữa [1,2] tại 3/2: g(3/2)=3/4>0 nên giữ [1,3/2]; giữa khoảng đó tại 5/4: g(5/4)=25/16+5/4−3=−3/16<0 nên giữ [5/4,3/2] dài 1/4. Đây là một mô hình toán giả định, không tự suy diễn dữ liệu thực tế.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B17-ZERO_EXISTENCE"
+    ],
     "original_outcome_ids": [
       "TOP08-O18"
     ],
     "problem_type_id": "TOP08-BISECTION_MODEL",
     "difficulty": "TRANSFER",
-    "hints": [],
-    "remediation": "Nếu đổi dấu không đúng khi chia đôi, lập bảng g(đầu),g(giữa),g(cuối), giữ cặp trái dấu.",
+    "hints": [
+      "Tính giá trị tại trung điểm, giữ đoạn hai đầu trái dấu."
+    ],
+    "remediation": "Nếu giữ đoạn có cùng dấu hai đầu, lập bảng dấu tại từng trung điểm. Ôn TOP08-M18; luyện THPT-TOP08-P17.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
