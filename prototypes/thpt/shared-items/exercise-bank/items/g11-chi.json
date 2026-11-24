@@ -11,7 +11,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Lấy 135×π/180, rồi so với π/2 và π."
+      "Đổi độ sang radian, kiểm góc phần tư bằng các mốc π/2 và π."
     ],
     "rubric": null,
     "interaction": {
@@ -27,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng sai tỉ lệ, nhớ 180°=π rad; kiểm góc 135° nằm giữa 90° và 180°. Ôn TOP06-M01; luyện THPT-TOP06-P01."
   },
   {
     "item_id": "THPT-G11-B01-C02",
@@ -41,7 +42,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "5π/6 nằm ở góc phần tư II; góc tham chiếu π/6."
+      "Dùng góc chuẩn π/6 và dấu góc phần tư II."
     ],
     "rubric": null,
     "interaction": {
@@ -57,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm dấu tan/cot, xác định sin,cos trước rồi chia đúng thứ tự. Ôn TOP06-M02; luyện THPT-TOP06-P02."
   },
   {
     "item_id": "THPT-G11-B01-P01",
@@ -71,7 +73,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "cos²α=1−sin²α; dấu cos âm ở góc phần tư II."
+      "Dùng sin²α+cos²α=1 và chọn dấu cos."
     ],
     "rubric": null,
     "interaction": {
@@ -87,7 +89,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận cả hai dấu cos, kiểm α thuộc góc phần tư II. Ôn TOP06-M04; luyện THPT-TOP06-P02."
   },
   {
     "item_id": "THPT-G11-B01-P02",
@@ -101,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Trừ các bội nguyên của 360°, sau đó tính tại góc cơ bản."
+      "Tách bội nguyên của 360°."
     ],
     "rubric": null,
     "interaction": {
@@ -117,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ mất số vòng quay, tách góc thực khỏi góc cùng tia cuối. Ôn TOP06-M03; luyện THPT-TOP06-P01."
   },
   {
     "item_id": "THPT-G11-B01-P03",
@@ -131,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Độ dài cung s=R|α| nếu α tính bằng radian và xét độ dài không âm."
+      "Đổi góc về radian rồi nhân bán kính."
     ],
     "rubric": null,
     "interaction": {
@@ -147,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhân thêm π/180 khi góc đã là radian, kiểm đơn vị và công thức s=r|θ|. Ôn TOP06-M03; luyện THPT-TOP06-P03."
   },
   {
     "item_id": "THPT-G11-B01-P04",
@@ -161,7 +166,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "cos²α=1/(1+tan²α). Dấu cos dương và tan âm nên sin âm."
+      "Từ tan và cos>0, xác định cos rồi sin."
     ],
     "rubric": null,
     "interaction": {
@@ -177,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho cos âm hoặc dùng cot khi tan=0, kiểm điều kiện đã cho. Ôn TOP06-M04; luyện THPT-TOP06-P02."
   },
   {
     "item_id": "THPT-G11-B02-C01",
@@ -191,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "sin(u−v)=sin u cos v−cos u sin v."
+      "Khai triển sin(u−v), chú ý dấu trừ."
     ],
     "rubric": null,
     "interaction": {
@@ -207,7 +213,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng hai tích, kiểm công thức hiệu bằng trường hợp u=v. Ôn TOP06-M06; luyện THPT-TOP06-P06."
   },
   {
     "item_id": "THPT-G11-B02-C02",
@@ -221,7 +228,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "cos(2u)=2cos²u−1."
+      "Dùng cos2u=2cos²u−1."
     ],
     "rubric": null,
     "interaction": {
@@ -237,7 +244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy 2cosu, kiểm công thức nhân đôi bằng u=π/3. Ôn TOP06-M07; luyện THPT-TOP06-P07."
   },
   {
     "item_id": "THPT-G11-B02-P01",
@@ -251,7 +259,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tách 75°=45°+30°."
+      "Tách góc thành tổng hai góc đặc biệt."
     ],
     "rubric": null,
     "interaction": {
@@ -267,21 +275,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu viết sin(A+B)=sin A+sin B, khai triển đủ hai tích. Ôn TOP06-M06; luyện THPT-TOP06-P06."
   },
   {
     "item_id": "THPT-G11-B02-P02",
     "content_version": "THPT-G11-CHI-B01-B02-R01",
-    "stem": "Tính chính xác cos 75° bằng công thức cộng.",
-    "answer_key": "(√6−√2)/4.",
-    "worked_solution": "cos75°=√2/2·√3/2−√2/2·1/2=(√6−√2)/4.",
+    "stem": "Tính chính xác cos 105° bằng công thức cộng. Giải thích dấu kết quả.",
+    "answer_key": "(√2−√6)/4, âm.",
+    "worked_solution": "105°=60°+45°. cos105°=cos60°cos45°−sin60°sin45°=(√2−√6)/4<0 vì √6>√2. Dấu âm phù hợp với góc phần tư II.",
     "skill_ids": [
       "G11-B02-SUM_DIFFERENCE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "cos(45°+30°)=cos45°cos30°−sin45°sin30°."
+      "Tách 105°=60°+45°; kiểm dấu cos ở góc phần tư II."
     ],
     "rubric": null,
     "interaction": {
@@ -297,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng dấu cộng thay dấu trừ, kiểm dấu cos khi tổng góc lớn. Ôn TOP06-M06; luyện THPT-TOP06-P06."
   },
   {
     "item_id": "THPT-G11-B02-P03",
@@ -311,7 +321,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Nhận dạng sin(u+v)."
+      "Nhận dạng sin(u+v) qua hai tích."
     ],
     "rubric": null,
     "interaction": {
@@ -327,7 +337,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tính từng giá trị không đặc biệt, ghép theo công thức cộng trước. Ôn TOP06-M06; luyện THPT-TOP06-P06."
   },
   {
     "item_id": "THPT-G11-B02-P04",
@@ -341,7 +352,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "2sin u sin v=cos(u−v)−cos(u+v)."
+      "Dùng 2sin u sin v=cos(u−v)−cos(u+v)."
     ],
     "rubric": null,
     "interaction": {
@@ -357,7 +368,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo dấu hai cos, thử u=v để kiểm vế trái không âm. Ôn TOP06-M07; luyện THPT-TOP06-P07."
   },
   {
     "item_id": "THPT-G11-B02-P05",
@@ -371,7 +383,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "sin u+sin v=2sin((u+v)/2)cos((u−v)/2)."
+      "Tìm nửa tổng, nửa hiệu trước khi biến đổi."
     ],
     "rubric": null,
     "interaction": {
@@ -387,7 +399,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên hệ số 2, thử hai góc bằng nhau để kiểm công thức. Ôn TOP06-M07; luyện THPT-TOP06-P07."
   },
   {
     "item_id": "THPT-G11-B02-P06",
@@ -401,7 +414,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "sin2α=2sinαcosα; cos2α=cos²α−sin²α."
+      "Dùng sin2α và cos2α theo sinα,cosα."
     ],
     "rubric": null,
     "interaction": {
@@ -417,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bình phương nhầm dấu, kiểm sin²2α+cos²2α=1. Ôn TOP06-M07; luyện THPT-TOP06-P06."
   },
   {
     "item_id": "THPT-G11-B01-P05",
@@ -431,7 +445,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Sử dụng hệ thức góc bù, hơn kém π và góc đối; kiểm dấu của kết quả."
+      "Dùng hệ thức góc bù, góc hơn kém π, góc đối."
     ],
     "rubric": null,
     "interaction": {
@@ -447,21 +461,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đổi dấu cả sin và cos cho góc bù, vẽ đối xứng qua Oy. Ôn TOP06-M05; luyện THPT-TOP06-P05."
   },
   {
     "item_id": "THPT-G11-B02-P07",
     "content_version": "THPT-G11-CHI-B01-B02-R01",
-    "stem": "Biết tan u=1/2 và tan v=1/3, trong đó tan u và tan v đều xác định. Tính tan(u+v) nếu biểu thức xác định.",
-    "answer_key": "1.",
-    "worked_solution": "1−(1/2)(1/3)=5/6≠0 nên tan(u+v) xác định. tan(u+v)=(1/2+1/3)/(1−1/6)=(5/6)/(5/6)=1.",
+    "stem": "Biết tan u=2 và tan v=1/2, cả hai đều xác định. Có được tính tan(u+v) bằng công thức cộng không? Giải thích.",
+    "answer_key": "tan(u+v) không xác định.",
+    "worked_solution": "Vì cosu≠0 và cosv≠0, cos(u+v)=cosu cosv(1−tan u tan v). Tích tan u tan v=1 nên cos(u+v)=0. Vì vậy tan(u+v) không xác định; công thức cộng có mẫu bằng 0, không thể chia.",
     "skill_ids": [
       "G11-B02-SUM_DIFFERENCE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Kiểm 1−tan u·tan v≠0, sau đó mới áp dụng công thức cộng tan."
+      "Kiểm 1−tan u tan v; nếu bằng 0, xét cos(u+v)."
     ],
     "rubric": null,
     "interaction": {
@@ -477,7 +492,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mẫu bằng 0, công thức thương không xác định; không coi kết quả là một số. Ôn TOP06-M06; luyện THPT-TOP06-P04."
   },
   {
     "item_id": "THPT-G11-B03-C01",
@@ -491,7 +507,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Viết tanx=sinx/cosx; loại các điểm cosx=0."
     ],
     "rubric": null,
     "interaction": {
@@ -507,7 +523,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ loại π/2, thêm mọi bội kπ. Ôn TOP06-M08; luyện THPT-TOP06-P08."
   },
   {
     "item_id": "THPT-G11-B03-C02",
@@ -521,7 +538,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Kiểm TXĐ đối xứng rồi thay −x vào từng hàm."
     ],
     "rubric": null,
     "interaction": {
@@ -537,7 +554,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhìn đồ thị một nhánh, kiểm cả miền và công thức đối xứng. Ôn TOP06-M09; luyện THPT-TOP06-P09."
   },
   {
     "item_id": "THPT-G11-B03-C03",
@@ -551,7 +569,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "So sự lặp của sin và tan theo đường tròn."
     ],
     "rubric": null,
     "interaction": {
@@ -567,7 +585,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng π cho sin, thử x=π/2 và x+π. Ôn TOP06-M09; luyện THPT-TOP06-P09."
   },
   {
     "item_id": "THPT-G11-B03-C04",
@@ -581,7 +600,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Dùng −1≤sinx≤1 và tìm góc đạt sinx=1."
     ],
     "rubric": null,
     "interaction": {
@@ -597,7 +616,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nêu một đỉnh, cộng đủ 2kπ. Ôn TOP06-M10; luyện THPT-TOP06-P10."
   },
   {
     "item_id": "THPT-G11-B03-P01",
@@ -611,7 +631,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Cot xác định khi sin2x≠0."
     ],
     "rubric": null,
     "interaction": {
@@ -627,21 +647,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên chia cả kπ cho 2, kiểm x=π/2. Ôn TOP06-M08; luyện THPT-TOP06-P11."
   },
   {
     "item_id": "THPT-G11-B03-P02",
     "content_version": "THPT-G11-CHI-B03-B04-R01",
     "stem": "Tìm tập giá trị của f(x)=1+2sin x.",
     "answer_key": "[-1,3].",
-    "worked_solution": "-1≤sinx≤1; nhân 2 cộng 1 cho -1≤f≤3. Hai cận đều đạt.",
+    "worked_solution": "−1≤sinx≤1 nên −1≤1+2sinx≤3. Với mỗi y∈[−1;3], (y−1)/2∈[−1;1], tồn tại x sao cho sinx=(y−1)/2 (tập giá trị của sin). Vì vậy tập giá trị đúng là [−1;3].",
     "skill_ids": [
       "G11-B03-SIN_GRAPH"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Nhân hai đầu cận của sin với 2 rồi cộng 1."
     ],
     "rubric": null,
     "interaction": {
@@ -657,7 +678,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ tìm hai cận, giải thích mọi giá trị trung gian được nhận. Ôn TOP06-M10; luyện THPT-TOP06-P10."
   },
   {
     "item_id": "THPT-G11-B03-P03",
@@ -671,7 +693,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Tìm T làm đối số tăng đúng chu kỳ cơ bản của cos."
     ],
     "rubric": null,
     "interaction": {
@@ -687,7 +709,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ hệ số 4, thế x+T và so pha; dịch pha không đổi chu kỳ. Ôn TOP06-M09; luyện THPT-TOP06-P09."
   },
   {
     "item_id": "THPT-G11-B03-P04",
@@ -701,7 +724,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Đọc một nhánh tăng trọn vẹn của đồ thị sin."
     ],
     "rubric": null,
     "interaction": {
@@ -717,7 +740,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn [0;π], kiểm sinπ/2=1 nhưng sinπ=0. Ôn TOP06-M10; luyện THPT-TOP06-P10."
   },
   {
     "item_id": "THPT-G11-B03-P05",
@@ -731,7 +755,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Dùng giao điểm đồ thị cos với Ox và lọc miền."
     ],
     "rubric": null,
     "interaction": {
@@ -747,7 +771,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ lấy π/2, kiểm nghiệm thứ hai trong một vòng. Ôn TOP06-M10; luyện THPT-TOP06-P15."
   },
   {
     "item_id": "THPT-G11-B03-P06",
@@ -761,7 +786,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Tìm hai nghiệm cosx=0 gần 0 nhất."
     ],
     "rubric": null,
     "interaction": {
@@ -777,7 +802,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho x=0 là tiệm cận, kiểm tan0=0 và mẫu khác 0. Ôn TOP06-M11; luyện THPT-TOP06-P11."
   },
   {
     "item_id": "THPT-G11-B03-P07",
@@ -791,7 +817,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Đọc chiều biến thiên trên từng nhánh giữa hai tiệm cận."
     ],
     "rubric": null,
     "interaction": {
@@ -807,21 +833,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu gộp các nhánh thành một khoảng, kiểm điểm không xác định kπ. Ôn TOP06-M11; luyện THPT-TOP06-P11."
   },
   {
     "item_id": "THPT-G11-B03-P08",
     "content_version": "THPT-G11-CHI-B03-B04-R01",
-    "stem": "T(t)=24+3cos(πt/6) (°C, t giờ). Chu kỳ, cao nhất và thấp nhất?",
-    "answer_key": "T=12 giờ; max 27°C; min 21°C.",
-    "worked_solution": "ω=π/6 nên T=2π/(π/6)=12; vì cos∈[-1,1], T(t)∈[21,27].",
+    "stem": "Nhiệt độ giả định H(t)=24+3cos(πt/6) (°C), t tính bằng giờ, chỉ xét 2≤t≤10. Tìm chu kỳ của công thức, GTLN và GTNN trong miền đã cho.",
+    "answer_key": "Chu kỳ của công thức 12 giờ; GTLN 25,5°C tại t=2 và 10; GTNN 21°C tại t=6.",
+    "worked_solution": "Chu kỳ công thức là 2π/(π/6)=12 giờ. Khi 2≤t≤10, pha nằm trong [π/3;5π/3]. Cos giảm từ 1/2 đến −1 tại π rồi tăng tới 1/2. Vậy H lớn nhất 24+3/2=25,5°C ở hai đầu, nhỏ nhất 24−3=21°C tại t=6. Không lấy 27°C vì pha 2kπ không thuộc miền.",
     "skill_ids": [
       "G11-B03-MODELING"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 3 trước khi đối chiếu lời giải."
+      "Đổi miền t thành miền pha, kiểm hai đầu và pha π."
     ],
     "rubric": null,
     "interaction": {
@@ -837,7 +864,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy chu kỳ bằng 6, dùng ωT=2π và kiểm thời gian các đỉnh. Ôn TOP06-M16; luyện THPT-TOP06-P16."
   },
   {
     "item_id": "THPT-G11-B04-C01",
@@ -851,7 +879,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Tìm hai góc cùng sin trong một vòng rồi cộng 2kπ."
     ],
     "rubric": null,
     "interaction": {
@@ -867,7 +895,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ lấy một họ, dùng góc bù và kiểm bằng đường tròn. Ôn TOP06-M12; luyện THPT-TOP06-P12."
   },
   {
     "item_id": "THPT-G11-B04-C02",
@@ -881,7 +910,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Cos bằng 1/2 ở hai góc đối nhau."
     ],
     "rubric": null,
     "interaction": {
@@ -897,7 +926,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ dấu ±, kiểm cos(−π/3)=cos(π/3). Ôn TOP06-M12; luyện THPT-TOP06-P12."
   },
   {
     "item_id": "THPT-G11-B04-C03",
@@ -911,7 +941,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Dùng một góc có tan=−1 và chu kỳ π."
     ],
     "rubric": null,
     "interaction": {
@@ -927,7 +957,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ cộng 2kπ, sẽ bỏ mất nghiệm cách π. Ôn TOP06-M13; luyện THPT-TOP06-P13."
   },
   {
     "item_id": "THPT-G11-B04-C04",
@@ -941,7 +972,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Tìm góc có cot=1 và kiểm sin khác 0."
     ],
     "rubric": null,
     "interaction": {
@@ -957,7 +988,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm cot với tan nghịch dấu, viết cos/sin. Ôn TOP06-M13; luyện THPT-TOP06-P13."
   },
   {
     "item_id": "THPT-G11-B04-P01",
@@ -971,7 +1003,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Đặt u=2x, tìm đủ hai họ rồi chia cả họ."
     ],
     "rubric": null,
     "interaction": {
@@ -987,7 +1019,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên chia 2kπ, thế một nghiệm với k=1. Ôn TOP06-M14; luyện THPT-TOP06-P12."
   },
   {
     "item_id": "THPT-G11-B04-P02",
@@ -1001,7 +1034,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Chia hai vế cho 2, đặt u=x−π/6."
     ],
     "rubric": null,
     "interaction": {
@@ -1017,7 +1050,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mất dấu ±, viết hai phương trình u riêng rồi cộng π/6. Ôn TOP06-M14; luyện THPT-TOP06-P12."
   },
   {
     "item_id": "THPT-G11-B04-P03",
@@ -1031,7 +1065,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Đặt u=3x, dùng chu kỳ π."
     ],
     "rubric": null,
     "interaction": {
@@ -1047,7 +1081,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên chia kπ, kiểm hai nghiệm liên tiếp cách π/3. Ôn TOP06-M14; luyện THPT-TOP06-P13."
   },
   {
     "item_id": "THPT-G11-B04-P04",
@@ -1061,7 +1096,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Dùng cos2x=2cos²x−1 rồi phân tích nhân tử."
     ],
     "rubric": null,
     "interaction": {
@@ -1077,7 +1112,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia cho cosx−1, kiểm nghiệm x=0 bị mất. Ôn TOP06-M14; luyện THPT-TOP06-P14."
   },
   {
     "item_id": "THPT-G11-B04-P05",
@@ -1091,7 +1127,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Viết hai họ khi sin A=sin B."
     ],
     "rubric": null,
     "interaction": {
@@ -1107,21 +1143,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia cho sinx, thử x=0 và x=π để thấy nghiệm bị mất. Ôn TOP06-M14; luyện THPT-TOP06-P14."
   },
   {
     "item_id": "THPT-G11-B04-P06",
     "content_version": "THPT-G11-CHI-B03-B04-R01",
     "stem": "Giải sinx=1/2 trên [0,2π).",
     "answer_key": "{π/6,5π/6}.",
-    "worked_solution": "Nghiệm tổng quát π/6+2kπ hoặc 5π/6+2kπ; chỉ k=0 cho nghiệm thuộc khoảng yêu cầu, 2π bị loại.",
+    "worked_solution": "Hai họ nghiệm là x=π/6+2kπ hoặc x=5π/6+2kπ (k∈ℤ). Điều kiện 0≤x<2π cho k=0 ở cả hai họ. S={π/6;5π/6}. Hai đầu mút 0 và 2π đều có sin bằng 0, không phải nghiệm.",
     "skill_ids": [
       "G11-B04-INTERVAL"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Viết hai họ rồi lọc 0≤x<2π."
     ],
     "rubric": null,
     "interaction": {
@@ -1137,7 +1174,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy nghiệm âm hoặc ngoài vòng, dùng hai bất đẳng thức với k. Ôn TOP06-M15; luyện THPT-TOP06-P15."
   },
   {
     "item_id": "THPT-G11-B04-P07",
@@ -1151,7 +1189,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Giải cos2x=0 rồi lọc theo đoạn đóng."
     ],
     "rubric": null,
     "interaction": {
@@ -1167,7 +1205,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên chia kπ, liệt kê k=0,1 và kiểm từng nghiệm. Ôn TOP06-M15; luyện THPT-TOP06-P15."
   },
   {
     "item_id": "THPT-G11-B04-P08",
@@ -1181,7 +1220,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Ghi cosx≠0 và cos2x≠0 trước khi dùng công thức."
     ],
     "rubric": null,
     "interaction": {
@@ -1197,7 +1236,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhân chéo làm nhận điểm loại, thay ứng viên vào mẫu ban đầu. Ôn TOP06-M14; luyện THPT-TOP06-P14."
   },
   {
     "item_id": "THPT-G11-B04-P09",
@@ -1211,7 +1251,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Đưa về phương trình sin rồi đổi miền của đối số."
     ],
     "rubric": null,
     "interaction": {
@@ -1227,7 +1267,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng họ nghiệm mọi t mà không lọc 0≤t<12, giao với miền. Ôn TOP06-M16; luyện THPT-TOP06-P16."
   },
   {
     "item_id": "THPT-G11-B04-P10",
@@ -1241,7 +1282,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại kiến thức và ví dụ ở Bài 4 trước khi đối chiếu lời giải."
+      "Dùng tập giá trị của sin; kiểm cả hai đầu mút."
     ],
     "rubric": null,
     "interaction": {
@@ -1257,7 +1298,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu loại m=±1, thử x=π/2 hoặc 3π/2. Ôn TOP06-M12; luyện THPT-TOP06-P12."
   },
   {
     "item_id": "THPT-G11-CHI-TRY01",
