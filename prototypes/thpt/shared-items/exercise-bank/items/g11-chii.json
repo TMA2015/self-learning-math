@@ -11,7 +11,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Viết n² với n=1 đến 5."
     ],
     "rubric": null,
     "interaction": {
@@ -27,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bắt đầu n=0, nhớ đề chỉ lấy số chính phương dương. Ôn TOP07-M01; luyện THPT-TOP07-P01."
   },
   {
     "item_id": "THPT-G11-B05-C02",
@@ -41,7 +42,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Thay từng chỉ số vào đúng công thức."
     ],
     "rubric": null,
     "interaction": {
@@ -57,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm u₆ với 6u₁, thay n=6 độc lập. Ôn TOP07-M02; luyện THPT-TOP07-P02."
   },
   {
     "item_id": "THPT-G11-B05-C03",
@@ -71,7 +73,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Bắt đầu từ u₁ rồi cộng 5 từng bước."
     ],
     "rubric": null,
     "interaction": {
@@ -87,7 +89,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thêm một lần cộng thừa, đếm ba bước từ u₁ đến u₄. Ôn TOP07-M03; luyện THPT-TOP07-P03."
   },
   {
     "item_id": "THPT-G11-B05-C04",
@@ -101,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Tính hiệu u_{n+1}−u_n."
     ],
     "rubric": null,
     "interaction": {
@@ -117,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhìn vài số đầu, chứng minh hiệu âm với mọi n≥1. Ôn TOP07-M04; luyện THPT-TOP07-P04."
   },
   {
     "item_id": "THPT-G11-B05-P01",
@@ -131,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Giải 5n+2=87 và kiểm n nguyên dương."
     ],
     "rubric": null,
     "interaction": {
@@ -147,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận chỉ số không nguyên, không phải số hạng của dãy. Ôn TOP07-M02; luyện THPT-TOP07-P02."
   },
   {
     "item_id": "THPT-G11-B05-P02",
@@ -161,7 +166,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Viết ba bước truy hồi liên tiếp."
     ],
     "rubric": null,
     "interaction": {
@@ -177,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm 2u_n+1 thành 2(u_n+1), khai triển và kiểm u₂. Ôn TOP07-M03; luyện THPT-TOP07-P03."
   },
   {
     "item_id": "THPT-G11-B05-P03",
@@ -191,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Quy đồng hiệu hai phân số liên tiếp."
     ],
     "rubric": null,
     "interaction": {
@@ -207,7 +213,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đảo thứ tự hiệu, viết u_{n+1} trước rồi kiểm mẫu dương. Ôn TOP07-M04; luyện THPT-TOP07-P04."
   },
   {
     "item_id": "THPT-G11-B05-P04",
@@ -221,7 +228,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Dùng 0<1/n≤1."
     ],
     "rubric": null,
     "interaction": {
@@ -237,7 +244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận 2 là số hạng, kiểm 1/n không bằng 0. Ôn TOP07-M05; luyện THPT-TOP07-P05."
   },
   {
     "item_id": "THPT-G11-B05-P05",
@@ -251,7 +259,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Tách n chẵn, n lẻ và so hai giá trị."
     ],
     "rubric": null,
     "interaction": {
@@ -267,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho dãy bị chặn thì phải đơn điệu, chỉ ra hai cặp liên tiếp ngược chiều. Ôn TOP07-M05; luyện THPT-TOP07-P05."
   },
   {
     "item_id": "THPT-G11-B05-P06",
@@ -281,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Thay n=12, không tính tổng."
     ],
     "rubric": null,
     "interaction": {
@@ -297,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhân 12 với số ghế cuối, đọc lại câu hỏi chỉ một hàng. Ôn TOP07-M02; luyện THPT-TOP07-P02."
   },
   {
     "item_id": "THPT-G11-B05-P07",
@@ -311,7 +321,7 @@
     "problem_type_id": null,
     "difficulty": "ADVANCED",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Tính u₂ rồi u₃ bằng truy hồi."
     ],
     "rubric": null,
     "interaction": {
@@ -327,7 +337,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thay n vào công thức truy hồi thay vì u_n, kiểm u₂=10. Ôn TOP07-M03; luyện THPT-TOP07-P03."
   },
   {
     "item_id": "THPT-G11-B05-P08",
@@ -341,7 +352,7 @@
     "problem_type_id": null,
     "difficulty": "ADVANCED",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+      "Viết u_n=1−1/(n+1)."
     ],
     "rubric": null,
     "interaction": {
@@ -357,21 +368,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho cận trên 1 được đạt, kiểm phân số dương tại mọi n hữu hạn. Ôn TOP07-M05; luyện THPT-TOP07-P05."
   },
   {
     "item_id": "THPT-G11-B06-C01",
     "content_version": "THPT-G11-CHII-B05-B07-R03",
-    "stem": "Dãy 11,7,3,−1,... có phải cấp số cộng không? Tìm d.",
+    "stem": "Cho dãy u_n=15−4n, n≥1. Chứng minh đây là cấp số cộng và tìm công sai.",
     "answer_key": "Có, d=−4.",
-    "worked_solution": "Các hiệu liên tiếp đều bằng −4.",
+    "worked_solution": "Với mọi n≥1, u_{n+1}−u_n=15−4(n+1)−(15−4n)=−4. Hiệu cố định nên dãy là cấp số cộng; u₁=11. Chỉ biết bốn số đầu 11,7,3,−1 chưa đủ chứng minh quy luật ở mọi n.",
     "skill_ids": [
       "G11-B06-AP-DEFINITION"
     ],
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Kiểm hiệu của hai số hạng liên tiếp."
     ],
     "rubric": null,
     "interaction": {
@@ -387,7 +399,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ có vài số đầu mà chưa có quy luật, không khẳng định toàn dãy. Ôn TOP07-M06; luyện THPT-TOP07-P06."
   },
   {
     "item_id": "THPT-G11-B06-C02",
@@ -401,7 +414,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Đếm 9−1 bước cộng."
     ],
     "rubric": null,
     "interaction": {
@@ -417,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 9d, viết u₂=u₁+d trước. Ôn TOP07-M07; luyện THPT-TOP07-P07."
   },
   {
     "item_id": "THPT-G11-B06-C03",
@@ -431,7 +445,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Tìm số cuối rồi ghép đầu–cuối."
     ],
     "rubric": null,
     "interaction": {
@@ -447,7 +461,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng u₅ làm tổng, cộng năm số hạng hoặc dùng công thức S₅. Ôn TOP07-M09; luyện THPT-TOP07-P09."
   },
   {
     "item_id": "THPT-G11-B06-C04",
@@ -461,7 +476,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Hai hiệu liên tiếp bằng nhau."
     ],
     "rubric": null,
     "interaction": {
@@ -477,7 +492,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy trung bình của ba số, viết x−6=14−x. Ôn TOP07-M08; luyện THPT-TOP07-P08."
   },
   {
     "item_id": "THPT-G11-B06-P01",
@@ -491,7 +507,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Lấy u₈−u₃, chia 5 bước."
     ],
     "rubric": null,
     "interaction": {
@@ -507,7 +523,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 8−1 bước, kiểm khoảng chỉ số đúng là 8−3. Ôn TOP07-M08; luyện THPT-TOP07-P08."
   },
   {
     "item_id": "THPT-G11-B06-P02",
@@ -521,7 +538,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Tính hiệu tổng quát từ (n+1)²−n²."
     ],
     "rubric": null,
     "interaction": {
@@ -537,7 +554,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho tăng là CSC, kiểm hiệu còn phụ thuộc n. Ôn TOP07-M06; luyện THPT-TOP07-P06."
   },
   {
     "item_id": "THPT-G11-B06-P03",
@@ -551,7 +569,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Tính u₈ rồi dùng tổng đầu–cuối."
     ],
     "rubric": null,
     "interaction": {
@@ -567,7 +585,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tự loại số hạng âm, nhớ tổng đại số bao gồm chúng. Ôn TOP07-M09; luyện THPT-TOP07-P09."
   },
   {
     "item_id": "THPT-G11-B06-P04",
@@ -581,7 +600,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Giải theo n rồi kiểm n nguyên dương."
     ],
     "rubric": null,
     "interaction": {
@@ -597,7 +616,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên cộng lại 1 sau tìm n−1, thế chỉ số vào công thức. Ôn TOP07-M07; luyện THPT-TOP07-P07."
   },
   {
     "item_id": "THPT-G11-B06-P05",
@@ -611,7 +631,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Viết hai lần số giữa bằng tổng hai đầu."
     ],
     "rubric": null,
     "interaction": {
@@ -627,7 +647,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ dấu −1, khai triển từng biểu thức. Ôn TOP07-M08; luyện THPT-TOP07-P08."
   },
   {
     "item_id": "THPT-G11-B06-P06",
@@ -641,7 +662,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Tính thưởng tháng 10 rồi tổng 10 tháng."
     ],
     "rubric": null,
     "interaction": {
@@ -657,7 +678,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm tiền tháng cuối với tổng, ghi rõ đơn vị triệu đồng. Ôn TOP07-M10; luyện THPT-TOP07-P10."
   },
   {
     "item_id": "THPT-G11-B06-P07",
@@ -671,7 +693,7 @@
     "problem_type_id": null,
     "difficulty": "ADVANCED",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Từ u₅ tìm u₁, u₁₂ rồi S₁₂."
     ],
     "rubric": null,
     "interaction": {
@@ -687,7 +709,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm dấu của d=−3, thế ngược u₅ để kiểm. Ôn TOP07-M09; luyện THPT-TOP07-P09."
   },
   {
     "item_id": "THPT-G11-B06-P08",
@@ -701,7 +724,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+      "Xác định u₁,d,n rồi tính tổng."
     ],
     "rubric": null,
     "interaction": {
@@ -717,21 +740,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 15 bước tăng, kiểm từ hàng 1 đến 15 có 14 bước. Ôn TOP07-M10; luyện THPT-TOP07-P10."
   },
   {
     "item_id": "THPT-G11-B07-C01",
     "content_version": "THPT-G11-CHII-B05-B07-R03",
-    "stem": "Dãy 5,15,45,135,... có phải CSN không? Tìm q.",
+    "stem": "Cho dãy u_n=5·3^(n−1), n≥1. Chứng minh đây là cấp số nhân và tìm công bội.",
     "answer_key": "Có, q=3.",
-    "worked_solution": "Mỗi số hạng sau gấp 3 lần số hạng trước.",
+    "worked_solution": "Với mọi n≥1, u_{n+1}=5·3^n=3u_n. Theo định nghĩa, đây là CSN với q=3. Chỉ liệt kê 5,15,45,135 chưa đủ chứng minh toàn bộ dãy nếu không biết quy luật.",
     "skill_ids": [
       "G11-B07-GP-DEFINITION"
     ],
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Kiểm hệ thức nhân q cho mọi n."
     ],
     "rubric": null,
     "interaction": {
@@ -747,7 +771,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ nhìn vài số đầu, cần giả thiết quy luật toàn dãy. Ôn TOP07-M11; luyện THPT-TOP07-P11."
   },
   {
     "item_id": "THPT-G11-B07-C02",
@@ -761,7 +786,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Tính u₆=u₁q⁵."
     ],
     "rubric": null,
     "interaction": {
@@ -777,7 +802,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm số mũ 6, đếm năm lần nhân. Ôn TOP07-M12; luyện THPT-TOP07-P12."
   },
   {
     "item_id": "THPT-G11-B07-C03",
@@ -791,7 +817,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Liệt kê bốn số hoặc dùng tổng hữu hạn."
     ],
     "rubric": null,
     "interaction": {
@@ -807,7 +833,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng công thức tổng vô hạn với q=2, kiểm điều kiện |q|<1. Ôn TOP07-M14; luyện THPT-TOP07-P14."
   },
   {
     "item_id": "THPT-G11-B07-C04",
@@ -821,7 +848,7 @@
     "problem_type_id": null,
     "difficulty": "BASIC",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Dùng x²=2·18 rồi kiểm giả thiết dương."
     ],
     "rubric": null,
     "interaction": {
@@ -837,7 +864,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận x=−6, kiểm đề yêu cầu ba số dương. Ôn TOP07-M13; luyện THPT-TOP07-P13."
   },
   {
     "item_id": "THPT-G11-B07-P01",
@@ -851,7 +879,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Tính u_{n+1} từ công thức, so với u_n."
     ],
     "rubric": null,
     "interaction": {
@@ -867,7 +895,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ dấu âm q, kiểm u₂ và u₄. Ôn TOP07-M11; luyện THPT-TOP07-P11."
   },
   {
     "item_id": "THPT-G11-B07-P02",
@@ -881,7 +910,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Chia u₅ cho u₂; giải q³=27."
     ],
     "rubric": null,
     "interaction": {
@@ -897,7 +926,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận thêm q=−3, kiểm lập phương âm. Ôn TOP07-M13; luyện THPT-TOP07-P13."
   },
   {
     "item_id": "THPT-G11-B07-P03",
@@ -911,7 +941,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Dùng tổng hữu hạn q≠1, giữ ngoặc quanh −2."
     ],
     "rubric": null,
     "interaction": {
@@ -927,7 +957,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mất dấu của (−2)^5, tính trực tiếp năm số để kiểm. Ôn TOP07-M14; luyện THPT-TOP07-P14."
   },
   {
     "item_id": "THPT-G11-B07-P04",
@@ -941,7 +972,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Với q=1, tất cả số hạng bằng u₁."
     ],
     "rubric": null,
     "interaction": {
@@ -957,21 +988,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu mẫu 1−q=0, không chia; cộng n số bằng nhau. Ôn TOP07-M14; luyện THPT-TOP07-P14."
   },
   {
     "item_id": "THPT-G11-B07-P05",
     "content_version": "THPT-G11-CHII-B05-B07-R03",
-    "stem": "Ba số 9, x, 1 theo thứ tự là CSN, tất cả dương. Tìm x.",
-    "answer_key": "x=3.",
-    "worked_solution": "x²=9·1=9 và x>0 ⇒ x=3.",
+    "stem": "Ba số 9, x, 1 theo thứ tự là ba số hạng liên tiếp của một cấp số nhân thực. Tìm tất cả x và công bội tương ứng.",
+    "answer_key": "x=3, q=1/3; hoặc x=−3, q=−1/3.",
+    "worked_solution": "Do hai đầu khác 0, x≠0. Từ 9q=x và xq=1 suy ra x²=9, nên x=±3. Với x=3, q=1/3; với x=−3, q=−1/3. Cả hai đều thỏa 9q=x và xq=1.",
     "skill_ids": [
       "G11-B07-GP-THREE-TERMS"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Không có giả thiết ba số dương; xét đủ hai dấu từ x²=9 rồi kiểm q."
     ],
     "rubric": null,
     "interaction": {
@@ -987,7 +1019,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ lấy căn dương, đọc giả thiết và xét công bội âm nếu được phép. Ôn TOP07-M13; luyện THPT-TOP07-P13."
   },
   {
     "item_id": "THPT-G11-B07-P06",
@@ -1001,7 +1034,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Tính từ thời điểm 0, mỗi giờ nhân 2."
     ],
     "rubric": null,
     "interaction": {
@@ -1017,7 +1050,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng mũ 4, kiểm có đúng năm lần tăng từ t=0 đến 5. Ôn TOP07-M16; luyện THPT-TOP07-P16."
   },
   {
     "item_id": "THPT-G11-B07-P07",
@@ -1031,7 +1065,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Kiểm u_{n+1}=0·u_n thay vì lấy tỉ số."
     ],
     "rubric": null,
     "interaction": {
@@ -1047,7 +1081,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia 0/0, dùng định nghĩa truy hồi cho mọi n. Ôn TOP07-M11; luyện THPT-TOP07-P11."
   },
   {
     "item_id": "THPT-G11-B07-P08",
@@ -1061,7 +1096,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+      "Lập V_n=50·1,04^n từ mốc 0."
     ],
     "rubric": null,
     "interaction": {
@@ -1077,7 +1112,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng lãi cố định mỗi năm, tính lãi trên số dư năm trước. Ôn TOP07-M17; luyện THPT-TOP07-P17."
   },
   {
     "item_id": "THPT-G11-B05-KFT01",
