@@ -1,0 +1,1537 @@
+[
+  {
+    "item_id": "THPT-G10-B19-C01",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Cho đường thẳng Δ: \\(3x-2y+6=0\\). Nêu một vectơ pháp tuyến và một vectơ chỉ phương của Δ.",
+    "answer_key": "\\(\\vec n=(3;-2)\\); \\(\\vec u=(2;3)\\).",
+    "worked_solution": "Các hệ số trước \\(x,y\\) cho \\(\\vec n\\); \\(\\vec u\\cdot\\vec n=2\\cdot3+3(-2)=0\\).",
+    "skill_ids": [
+      "G10-B19-NORMAL_DIRECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Nhận diện vectơ pháp tuyến trước."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B19-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B19-C02",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Viết phương trình tổng quát đường thẳng qua \\(A(1;2)\\) và có vectơ pháp tuyến \\(\\vec n=(2;-1)\\).",
+    "answer_key": "\\(2x-y=0\\).",
+    "worked_solution": "\\(2(x-1)-(y-2)=0\\Rightarrow2x-y=0\\).",
+    "skill_ids": [
+      "G10-B19-GENERAL_POINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Thay tọa độ điểm và hệ số pháp tuyến vào a(x−x₀)+b(y−y₀)=0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B19-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B19-P01",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Viết phương trình tham số đường thẳng qua \\(A(-1;2)\\), nhận \\(\\vec u=(3;-2)\\) làm vectơ chỉ phương.",
+    "answer_key": "\\(x=-1+3t,\\ y=2-2t,\\ t\\in\\mathbb R\\).",
+    "worked_solution": "Mọi điểm trên đường thẳng có tọa độ \\(A+t\\vec u\\).",
+    "skill_ids": [
+      "G10-B19-PARAMETRIC"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Dùng điểm gốc cộng (t) lần vectơ chỉ phương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B19-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B19-P02",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Viết phương trình tổng quát đường thẳng qua \\(A(1;2)\\) và \\(B(4;-1)\\).",
+    "answer_key": "\\(x+y-3=0\\).",
+    "worked_solution": "\\(\\overrightarrow{AB}=(3;-3)\\), một pháp tuyến là \\((1;1)\\). Qua \\(A\\): \\((x-1)+(y-2)=0\\).",
+    "skill_ids": [
+      "G10-B19-GENERAL_POINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tìm vectơ AB rồi một pháp tuyến vuông góc."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B19-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B19-P03",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Kiểm tra \\(M(2;3)\\) và \\(N(0;0)\\) có thuộc Δ: \\(2x-y-1=0\\) không.",
+    "answer_key": "\\(M\\in\\Delta,\\ N\\notin\\Delta\\).",
+    "worked_solution": "Thế \\(M\\): \\(4-3-1=0\\); thế \\(N\\): \\(-1\\ne0\\).",
+    "skill_ids": [
+      "G10-B19-MEMBERSHIP"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Thế tọa độ mỗi điểm vào phương trình tổng quát."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B19-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B19-P04",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Một mô hình nhiệt độ \\(T\\) (°C) theo thời gian \\(t\\) (giờ) có đồ thị đường thẳng qua \\((0;20)\\) và \\((5;5)\\), trong \\(0\\le t\\le5\\). Lập \\(T(t)\\) và tìm thời điểm \\(T=11\\)°C.",
+    "answer_key": "\\(T(t)=20-3t\\), \\(t=3\\) giờ.",
+    "worked_solution": "Độ dốc \\((5-20)/(5-0)=-3\\), nên \\(T=20-3t\\); giải \\(20-3t=11\\) cho \\(t=3\\), thuộc miền.",
+    "skill_ids": [
+      "G10-B19-LINEAR_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tìm hệ số góc theo hai điểm và nhớ miền thực tế."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B19-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B20-C01",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Xét \\(d_1:2x-y+3=0\\), \\(d_2:4x-2y-5=0\\). Hai đường có vị trí tương đối nào?",
+    "answer_key": "Song song và phân biệt.",
+    "worked_solution": "Hệ số \\(x,y\\) của \\(d_2\\) bằng 2 lần hệ số của \\(d_1\\), nhưng hằng số \\(-5\\ne6\\); do đó không trùng.",
+    "skill_ids": [
+      "G10-B20-RELATIVE_POSITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "So sánh cả ba hệ số khi kiểm tra trùng nhau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B20-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B20-C02",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Hai đường \\(d_1:x+2y=0\\) và \\(d_2:2x-y+4=0\\) có vuông góc không?",
+    "answer_key": "Có, chúng vuông góc.",
+    "worked_solution": "Pháp tuyến \\(\\vec n_1=(1;2)\\), \\(\\vec n_2=(2;-1)\\) có tích vô hướng \\(2-2=0\\).",
+    "skill_ids": [
+      "G10-B20-PERPENDICULAR"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Kiểm tra tích vô hướng của hai vectơ pháp tuyến."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B20-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B20-P01",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tìm giao điểm \\(d_1:x+y-3=0\\) và \\(d_2:x-y-1=0\\).",
+    "answer_key": "\\(I(2;1)\\).",
+    "worked_solution": "Giải hệ \\(x+y=3,\\ x-y=1\\) được \\(x=2,y=1\\).",
+    "skill_ids": [
+      "G10-B20-INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Giải hệ hai phương trình đường thẳng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B20-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B20-P02",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tính khoảng cách từ \\(P(1;-2)\\) đến đường \\(d:3x+4y-5=0\\).",
+    "answer_key": "\\(d(P,d)=2\\).",
+    "worked_solution": "\\(\\dfrac{|3\\cdot1+4(-2)-5|}{\\sqrt{3^2+4^2}}=\\dfrac{10}{5}=2\\).",
+    "skill_ids": [
+      "G10-B20-DISTANCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tử là trị tuyệt đối; mẫu là độ dài vectơ pháp tuyến."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B20-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B20-P03",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tìm góc nhọn giữa \\(d_1:x-y=0\\) và \\(d_2:x=0\\).",
+    "answer_key": "\\(45^\\circ\\).",
+    "worked_solution": "Pháp tuyến \\((1;-1)\\), \\((1;0)\\) có \\(|\\cos\\varphi|=1/\\sqrt2\\). Do đó góc nhọn là \\(45^\\circ\\).",
+    "skill_ids": [
+      "G10-B20-ANGLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Dùng giá trị tuyệt đối trong công thức góc giữa hai đường."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B20-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B20-P04",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Viết đường thẳng qua \\(A(2;-1)\\) và vuông góc với \\(d:3x-4y+2=0\\).",
+    "answer_key": "\\(4x+3y-5=0\\).",
+    "worked_solution": "Một pháp tuyến của đường cần tìm là vectơ chỉ phương \\((4;3)\\) của \\(d\\). Dùng \\(A\\): \\(4(x-2)+3(y+1)=0\\).",
+    "skill_ids": [
+      "G10-B20-PERPENDICULAR"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Đường vuông góc với d có pháp tuyến song song vectơ chỉ phương d."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B20-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B21-C01",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Viết phương trình đường tròn tâm \\(I(1;-2)\\), bán kính \\(R=3\\).",
+    "answer_key": "\\((x-1)^2+(y+2)^2=9\\).",
+    "worked_solution": "Áp dụng \\((x-a)^2+(y-b)^2=R^2\\).",
+    "skill_ids": [
+      "G10-B21-CIRCLE_STANDARD"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Dấu trong ngoặc ngược với tọa độ tâm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B21-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B21-C02",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tìm tâm và bán kính đường tròn \\(x^2+y^2-4x+6y-12=0\\).",
+    "answer_key": "Tâm \\(I(2;-3)\\), bán kính \\(R=5\\).",
+    "worked_solution": "Hoàn thành bình phương: \\((x-2)^2+(y+3)^2=25\\).",
+    "skill_ids": [
+      "G10-B21-CIRCLE_GENERAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Gom (x) và (y) thành các bình phương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B21-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B21-P01",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Viết phương trình đường tròn đường kính \\(AB\\), với \\(A(-2;1)\\), \\(B(4;5)\\).",
+    "answer_key": "\\((x-1)^2+(y-3)^2=13\\).",
+    "worked_solution": "Trung điểm \\(I(1;3)\\); \\(AB^2=6^2+4^2=52\\), \\(R^2=AB^2/4=13\\).",
+    "skill_ids": [
+      "G10-B21-CIRCLE_STANDARD"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tâm là trung điểm đường kính, bán kính bằng một nửa độ dài AB."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B21-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B21-P02",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Viết tiếp tuyến của đường tròn \\(x^2+y^2=25\\) tại \\(M(3;4)\\).",
+    "answer_key": "\\(3x+4y=25\\).",
+    "worked_solution": "\\(\\overrightarrow{OM}=(3;4)\\) là pháp tuyến của tiếp tuyến tại \\(M\\). Phương trình \\(3(x-3)+4(y-4)=0\\).",
+    "skill_ids": [
+      "G10-B21-CIRCLE_TANGENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Bán kính tại tiếp điểm vuông góc tiếp tuyến."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B21-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B21-P03",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Xét \\((C):(x-1)^2+(y+1)^2=4\\) và đường thẳng \\(d:x=3\\). \\(d\\) có tiếp xúc với \\((C)\\) không? Nêu tiếp điểm.",
+    "answer_key": "Có, tiếp xúc tại \\(H(3;-1)\\).",
+    "worked_solution": "Tâm \\((1;-1)\\), \\(R=2\\), khoảng cách từ tâm đến \\(x=3\\) bằng \\(2\\). Hình chiếu vuông góc là \\(H(3;-1)\\).",
+    "skill_ids": [
+      "G10-B21-CIRCLE_TANGENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "So sánh khoảng cách từ tâm đến đường với bán kính."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B21-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B21-P04",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tìm đường tròn qua \\(A(0;0)\\), \\(B(4;0)\\), \\(C(0;2)\\).",
+    "answer_key": "\\((x-2)^2+(y-1)^2=5\\).",
+    "worked_solution": "Tam giác ABC vuông tại A; tâm ngoại tiếp là trung điểm BC, \\(I(2;1)\\), \\(R^2=IA^2=5\\).",
+    "skill_ids": [
+      "G10-B21-CIRCLE_THROUGH_POINTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Có thể tìm tâm bằng đường trung trực, hoặc dùng tính chất tam giác vuông."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B21-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B22-C01",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Cho elip \\(E:\\dfrac{x^2}{25}+\\dfrac{y^2}{9}=1\\). Tìm hai tiêu điểm và tâm sai.",
+    "answer_key": "\\(F_1(-4;0),F_2(4;0)\\), \\(e=4/5\\).",
+    "worked_solution": "\\(a=5,b=3,c=\\sqrt{a^2-b^2}=\\sqrt{16}=4\\), \\(e=c/a=4/5\\).",
+    "skill_ids": [
+      "G10-B22-ELLIPSE_PARAMETERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Elip có (c^2=a^2-b^2)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B22-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B22-C02",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Cho hypebol \\(H:\\dfrac{x^2}{9}-\\dfrac{y^2}{16}=1\\). Tìm hai tiêu điểm và hai tiệm cận.",
+    "answer_key": "\\(F_{1,2}=(\\mp5;0)\\); \\(y=\\pm\\frac43x\\).",
+    "worked_solution": "\\(a=3,b=4,c=\\sqrt{a^2+b^2}=5\\). Tiệm cận \\(y=\\pm(b/a)x\\).",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_PARAMETERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Hypebol có (c^2=a^2+b^2), khác elip."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B22-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B22-P01",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Elip có tiêu điểm \\((-3;0)\\), \\((3;0)\\), độ dài trục lớn \\(10\\). Viết phương trình chính tắc.",
+    "answer_key": "\\(\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1\\).",
+    "worked_solution": "\\(a=5,c=3,b^2=a^2-c^2=16\\).",
+    "skill_ids": [
+      "G10-B22-ELLIPSE_PARAMETERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Dùng độ dài trục lớn (2a) và khoảng cách tiêu điểm (2c)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B22-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B22-P02",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Hypebol có hai đỉnh \\((-2;0),(2;0)\\), hai tiêu điểm \\((-\\sqrt{13};0),(\\sqrt{13};0)\\). Viết phương trình chính tắc.",
+    "answer_key": "\\(\\dfrac{x^2}{4}-\\dfrac{y^2}{9}=1\\).",
+    "worked_solution": "\\(a=2,c=\\sqrt{13},b^2=c^2-a^2=9\\).",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_PARAMETERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Hypebol: trừ (y^2/b^2) và (c^2=a^2+b^2)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B22-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B22-P03",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Viết phương trình chính tắc của parabol có tiêu điểm \\(F(2;0)\\) và đường chuẩn \\(x=-2\\).",
+    "answer_key": "\\(y^2=8x\\).",
+    "worked_solution": "Với \\(y^2=2px\\), tiêu điểm \\((p/2;0)\\), đường chuẩn \\(x=-p/2\\), nên \\(p=4\\).",
+    "skill_ids": [
+      "G10-B22-PARABOLA_FOCUS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Dùng quy ước SGK (y^2=2px), (p>0)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B22-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B22-P04",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Một mặt cắt chảo phản xạ được mô hình bằng \\(y^2=12x\\) (đơn vị cm). Xác định tiêu điểm và đường chuẩn.",
+    "answer_key": "\\(F(3;0)\\), đường chuẩn \\(x=-3\\) (cm).",
+    "worked_solution": "So với \\(y^2=2px\\) được \\(p=6\\); \\(F(p/2;0)=(3;0)\\), đường chuẩn \\(x=-p/2=-3\\). Đây là mô hình hình học lý tưởng, không phải thông số thiết bị thực.",
+    "skill_ids": [
+      "G10-B22-PARABOLA_FOCUS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "So hệ số (12) với (2p); đừng nhầm (p) với tiêu cự đến đỉnh."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B22-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B19-P05",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Viết phương trình tổng quát của đường thẳng qua \\(P(2;-1)\\) và song song với \\(d:3x+2y-7=0\\).",
+    "answer_key": "\\(3x+2y-4=0\\).",
+    "worked_solution": "Đường cần tìm có pháp tuyến \\((3;2)\\), nên dạng \\(3x+2y+c=0\\). Thế \\(P\\): \\(6-2+c=0\\Rightarrow c=-4\\). Hai đường phân biệt vì \\(-4\\ne-7\\).",
+    "skill_ids": [
+      "G10-B19-NORMAL_DIRECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Giữ hai hệ số pháp tuyến, tìm hằng số bằng tọa độ điểm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B19-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B19-P06",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tìm phương trình đường thẳng \\(\\Delta\\) đi qua giao điểm của \\(d_1:x+y-4=0\\) và \\(d_2:2x-y-2=0\\), đồng thời vuông góc với \\(d_3:x-2y+1=0\\).",
+    "answer_key": "\\(\\Delta:2x+y-6=0\\).",
+    "worked_solution": "Giải hệ \\(x+y=4,\\ 2x-y=2\\) được \\(I(2;2)\\). Đường \\(d_3\\) có vectơ chỉ phương \\((2;1)\\), là pháp tuyến của \\(\\Delta\\). Vậy \\(2(x-2)+(y-2)=0\\).",
+    "skill_ids": [
+      "G10-B19-MULTISTEP"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Tìm giao điểm trước; đổi vectơ chỉ phương của d3 thành pháp tuyến của đường cần tìm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B19-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B20-P05",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tìm \\(m\\in\\mathbb R\\) để \\(d_1:(m+1)x+2y-1=0\\) song song và phân biệt với \\(d_2:3x-6y+4=0\\).",
+    "answer_key": "\\(m=-2\\).",
+    "worked_solution": "Hai pháp tuyến cùng phương khi \\((m+1,2)=\\lambda(3,-6)\\). Từ \\(2=-6\\lambda\\) có \\(\\lambda=-1/3\\), suy ra \\(m+1=-1\\), \\(m=-2\\). Khi đó \\(d_1:-x+2y-1=0\\); nhân với \\(-3\\) được \\(3x-6y+3=0\\ne d_2\\), nên hai đường song song phân biệt.",
+    "skill_ids": [
+      "G10-B20-RELATIVE_POSITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Sau khi tìm m, kiểm tra cả hằng số để loại trường hợp trùng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B20-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B20-P06",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tính cosin của góc nhọn giữa \\(d_1:x+2y=0\\) và \\(d_2:2x+y=0\\).",
+    "answer_key": "\\(\\cos\\varphi=\\frac45\\), nên \\(\\varphi=\\arccos\\frac45\\approx36{,}87^\\circ\\).",
+    "worked_solution": "Pháp tuyến là \\(\\vec n_1=(1;2)\\), \\(\\vec n_2=(2;1)\\). \\(\\cos\\varphi=\\frac{|\\vec n_1\\cdot\\vec n_2|}{\\|\\vec n_1\\|\\|\\vec n_2\\|}=\\frac{|2+2|}{\\sqrt5\\sqrt5}=\\frac45\\).",
+    "skill_ids": [
+      "G10-B20-ANGLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Dùng trị tuyệt đối để lấy góc nhọn giữa hai đường."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B20-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B21-P05",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tìm \\(k\\in\\mathbb R\\) để \\(x^2+y^2-6x+2y+k=0\\) là đường tròn tiếp xúc với đường thẳng \\(x=0\\). Nêu tiếp điểm.",
+    "answer_key": "\\(k=1\\), tiếp điểm \\(H(0;-1)\\).",
+    "worked_solution": "Hoàn thành bình phương: \\((x-3)^2+(y+1)^2=10-k\\). Tâm \\(I(3;-1)\\), khoảng cách tới \\(x=0\\) bằng 3. Tiếp xúc khi \\(R=3\\), tức \\(10-k=9\\Rightarrow k=1\\). Hình chiếu của I lên \\(x=0\\) là \\(H(0;-1)\\).",
+    "skill_ids": [
+      "G10-B21-CIRCLE_GENERAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Điều kiện tiếp xúc: khoảng cách tâm đến đường bằng bán kính dương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B21-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B21-P06",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tìm phương trình đường tròn đi qua \\(A(1;2)\\), \\(B(5;4)\\), biết tâm nằm trên trục \\(Ox\\).",
+    "answer_key": "\\((x-\\frac92)^2+y^2=\\frac{65}{4}\\).",
+    "worked_solution": "Đặt tâm \\(I(h;0)\\). Từ \\(IA^2=IB^2\\): \\((h-1)^2+4=(h-5)^2+16\\Rightarrow 8h=36\\Rightarrow h=9/2\\). Khi đó \\(R^2=(9/2-1)^2+2^2=49/4+16/4=65/4>0\\).",
+    "skill_ids": [
+      "G10-B21-CIRCLE_THROUGH_POINTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Dùng tính chất hai bán kính IA và IB bằng nhau."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B21-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B22-P05",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Tìm các giao điểm của elip \\(E:\\frac{x^2}{16}+\\frac{y^2}{9}=1\\) với đường thẳng \\(y=\\frac32\\).",
+    "answer_key": "\\((2\\sqrt3;\\frac32)\\) và \\((-2\\sqrt3;\\frac32)\\).",
+    "worked_solution": "Thế \\(y=3/2\\): \\(x^2/16+(9/4)/9=1\\Rightarrow x^2/16=3/4\\Rightarrow x^2=12\\), nên \\(x=\\pm2\\sqrt3\\).",
+    "skill_ids": [
+      "G10-B22-CONIC_INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "INTERMEDIATE",
+    "hints": [
+      "Thay y trước, giải phương trình một ẩn x."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B22-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B22-P06",
+    "content_version": "THPT-G10-CHVII-D3D4-REVIEWED-20261028-R01",
+    "stem": "Cho parabol \\(P:y^2=8x\\). Chứng minh điểm \\(M(2;4)\\) thuộc \\(P\\) và có khoảng cách tới tiêu điểm bằng khoảng cách tới đường chuẩn.",
+    "answer_key": "\\(M\\in P\\), \\(MF=d(M,\\Delta)=4\\).",
+    "worked_solution": "Vì \\(4^2=8\\cdot2=16\\), \\(M\\in P\\). Với \\(y^2=2px\\), \\(p=4\\), nên tiêu điểm \\(F(2;0)\\), đường chuẩn \\(\\Delta:x=-2\\). Khi đó \\(MF=\\sqrt{(2-2)^2+(4-0)^2}=4\\), và \\(d(M,\\Delta)=|2-(-2)|=4\\).",
+    "skill_ids": [
+      "G10-B22-PARABOLA_FOCUS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Xác định p từ 2p=8, rồi kiểm tra hai khoảng cách."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2b191d7abba7a4f5bd79d4c122673cd53a45495b",
+      "heading_id": "THPT-G10-B22-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvii-reviewed-formative-v1.js",
+        "blob": "8fe0fd30f756a4aea8a2dd17dff9cf13d5eeeea4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY01",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Cho n=(2,3) là pháp tuyến của d. Vectơ u=(-3,2) có phải một chỉ phương của d không? Nêu phép kiểm.",
+    "answer_key": "Có, vì n·u=2(-3)+3(2)=0 và u≠(0,0).",
+    "worked_solution": "Tích vô hướng bằng 0 chứng minh u vuông góc với pháp tuyến n, tức song song với đường thẳng d; u không phải vectơ không.",
+    "skill_ids": [
+      "G10-B19-NORMAL_DIRECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY01` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-C01` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY01"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY02",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Đường thẳng qua A(1,3), pháp tuyến n=(2,-1) có phương trình tổng quát nào?",
+    "answer_key": "2(x-1)-(y-3)=0 hay 2x-y+1=0.",
+    "worked_solution": "AM=(x-1,y-3), n·AM=2(x-1)-(y-3); thế A được 0. Không tự đảo vai trò n với vectơ chỉ phương.",
+    "skill_ids": [
+      "G10-B19-GENERAL_POINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY02` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-C02` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY02"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY03",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Viết phương trình tham số đường thẳng qua A(1,-1), chỉ phương u=(-2,3).",
+    "answer_key": "x=1-2t, y=-1+3t (t∈ℝ).",
+    "worked_solution": "Khi t=0 thu A; khi t=1 thu A+u=(-1,2). Mọi điểm thuộc đường có độ dời t·u.",
+    "skill_ids": [
+      "G10-B19-PARAMETRIC"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY03` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P01` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY03"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY04",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Cho A(-1,2), B(2,5). Viết một phương trình tổng quát của đường AB.",
+    "answer_key": "x-y+3=0.",
+    "worked_solution": "AB=(3,3)≠0, chọn n=(1,-1). Qua A: (x+1)-(y-2)=0 ⇒ x-y+3=0; thế B: 2-5+3=0.",
+    "skill_ids": [
+      "G10-B19-TWO_POINTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY04` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P02` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY04"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY05",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Với d: 2x-3y+1=0, M(1,1) và N(2,1) điểm nào thuộc d?",
+    "answer_key": "M thuộc d vì 2-3+1=0; N không thuộc vì 4-3+1=2.",
+    "worked_solution": "Điểm thuộc là nghiệm của phương trình theo cặp tọa độ. Đây là phép thử hai lần độc lập.",
+    "skill_ids": [
+      "G10-B19-MEMBERSHIP"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY05` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P03` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY05"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY06",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Hai đường d1: x+y=4, d2: x-y=2 gặp nhau ở đâu và có vuông góc không?",
+    "answer_key": "Giao I(3,1); hai đường vuông góc.",
+    "worked_solution": "Cộng hai phương trình được 2x=6 ⇒ x=3, y=1. Pháp tuyến (1,1) và (1,-1) có tích vô hướng 1-1=0.",
+    "skill_ids": [
+      "G10-B19-MULTISTEP"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY06` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P06` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY06"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY07",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Giá trị V theo thời gian t (t≥0) đi qua (0,5) và (2,9), giả sử tuyến tính. Lập V(t) và tính V(3).",
+    "answer_key": "V(t)=2t+5, V(3)=11.",
+    "worked_solution": "Hệ số góc (9-5)/(2-0)=2, giá trị tại t=0 là 5. Đây là phép ngoại suy t=3, chỉ hợp lý nếu giả thiết tăng đều vẫn đúng.",
+    "skill_ids": [
+      "G10-B19-LINEAR_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY07` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P04` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY07"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY08",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "d1: 2x-y+1=0, d2: 4x-2y+3=0 là song song phân biệt hay trùng nhau?",
+    "answer_key": "Song song phân biệt.",
+    "worked_solution": "Hai pháp tuyến (2,-1) và (4,-2) tỉ lệ 2 lần, nhưng nhân toàn phương trình d1 với 2 cho hằng số 2, không phải 3 của d2.",
+    "skill_ids": [
+      "G10-B20-RELATIVE_POSITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY08` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-C01` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY08"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY09",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Qua P(1,-2) viết đường vuông góc với d: x+2y-5=0.",
+    "answer_key": "2x-y-4=0.",
+    "worked_solution": "n=(1,2) của d, chọn n'=(2,-1) có tích vô hướng 0. Qua P: 2(x-1)-(y+2)=0 ⇒ 2x-y-4=0.",
+    "skill_ids": [
+      "G10-B20-PERPENDICULAR"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY09` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-C02` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY09"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY10",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Tìm giao điểm của x+2y=8 và 2x-y=1.",
+    "answer_key": "I(2,3).",
+    "worked_solution": "Từ 2x-y=1 ⇒ y=2x-1. Thế vào x+2(2x-1)=8 ⇒ x=2, y=3; kiểm 2+6=8, 4-3=1.",
+    "skill_ids": [
+      "G10-B20-INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY10` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P01` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY10"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY11",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Tính khoảng cách từ M(1,2) đến d: 3x+4y-1=0.",
+    "answer_key": "d(M,d)=2.",
+    "worked_solution": "Tử |3·1+4·2−1|=10, mẫu √(3²+4²)=5, nên khoảng cách bằng 10/5=2.",
+    "skill_ids": [
+      "G10-B20-DISTANCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY11` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P02` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY11"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY12",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Góc nhỏ giữa d1: x=0 và d2: x-y=0 bằng bao nhiêu?",
+    "answer_key": "45°.",
+    "worked_solution": "Pháp tuyến n1=(1,0), n2=(1,-1). cosφ=|1|/(1·√2)=1/√2 nên φ=45°.",
+    "skill_ids": [
+      "G10-B20-ANGLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY12` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P03` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY12"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY13",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Đường tròn có tâm I(-2,1) và bán kính 3 có phương trình nào?",
+    "answer_key": "(x+2)²+(y-1)²=9.",
+    "worked_solution": "IM²=(x+2)²+(y-1)², và R²=3²=9. Cần R=3>0.",
+    "skill_ids": [
+      "G10-B21-CIRCLE_STANDARD"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY13` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-C01` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY13"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY14",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Phương trình x²+y²−6x+4y+8=0 biểu diễn đường tròn nào?",
+    "answer_key": "(x−3)²+(y+2)²=5, tâm I(3,−2), bán kính √5.",
+    "worked_solution": "x²−6x=(x−3)²−9, y²+4y=(y+2)²−4. Suy ra tổng hai bình phương bằng −8+9+4=5>0.",
+    "skill_ids": [
+      "G10-B21-CIRCLE_GENERAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY14` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-C02` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY14"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY15",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Đường tròn tâm I(1,−1), bán kính 5; M(4,3). Viết tiếp tuyến tại M.",
+    "answer_key": "3x+4y−24=0.",
+    "worked_solution": "IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.",
+    "skill_ids": [
+      "G10-B21-CIRCLE_TANGENT"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY15` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P02` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY15"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY16",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Đường tròn qua A(0,0), B(2,0), C(0,2) có tâm, bán kính và phương trình gì?",
+    "answer_key": "Tâm I(1,1), bán kính √2, phương trình (x−1)²+(y−1)²=2.",
+    "worked_solution": "Trung trực AB là x=1; trung trực AC là y=1. IA²=1²+1²=2; thử B và C đều cho tổng bình phương bằng 2.",
+    "skill_ids": [
+      "G10-B21-CIRCLE_THROUGH_POINTS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY16` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P04` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY16"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY17",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Đường tròn tâm I(1,2), R=3 và đường d: y=−1 có quan hệ nào?",
+    "answer_key": "Tiếp xúc; tiếp điểm T(1,−1).",
+    "worked_solution": "Khoảng cách từ I(1,2) đến y=−1 là |2−(−1)|=3=R. Chân đường vuông góc từ I xuống d là T(1,−1).",
+    "skill_ids": [
+      "G10-B21-LINE_CIRCLE_POSITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY17` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P03` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY17"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY18",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Với elip x²/25+y²/16=1, tìm a, b, c và hai tiêu điểm.",
+    "answer_key": "a=5, b=4, c=3; F1(−3,0), F2(3,0).",
+    "worked_solution": "a²=25>b²=16, c²=25−16=9 ⇒ c=3; elip có trục lớn Ox.",
+    "skill_ids": [
+      "G10-B22-ELLIPSE_PARAMETERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY18` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P01` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY18"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY19",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Hypebol x²/16−y²/9=1 có các đỉnh và hai tiêu điểm tọa độ nào?",
+    "answer_key": "Đỉnh A1(−4,0), A2(4,0); tiêu điểm F1(−5,0), F2(5,0).",
+    "worked_solution": "a=4, b=3, c²=a²+b²=16+9=25 ⇒ c=5; trục thực Ox.",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_PARAMETERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY19` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-C02` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY19"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY20",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Hypebol x²/25−y²/4=1 có hai đường tiệm cận nào?",
+    "answer_key": "y=(2/5)x và y=−(2/5)x.",
+    "worked_solution": "a²=25 ⇒ a=5; b²=4 ⇒ b=2. Hệ số góc tiệm cận là ±b/a=±2/5.",
+    "skill_ids": [
+      "G10-B22-HYPERBOLA_ASYMPTOTES"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY20` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-C02` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY20"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY21",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Cho parabol y²=8x với x≥0. Xác định tiêu điểm, đường chuẩn; M(2,4) có thuộc parabol không?",
+    "answer_key": "p=4; F(2,0), đường chuẩn x=−2; M(2,4) thuộc vì 4²=8·2.",
+    "worked_solution": "2p=8 ⇒ p=4, F=(p/2,0)=(2,0), đường chuẩn x=−p/2=−2. M có MF=4 và khoảng cách đến x=−2 là 4.",
+    "skill_ids": [
+      "G10-B22-PARABOLA_FOCUS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY21` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P03` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY21"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY22",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Đường x=0 cắt elip x²/9+y²/4=1 tại những điểm nào?",
+    "answer_key": "(0,2) và (0,−2).",
+    "worked_solution": "Thế x=0 được y²/4=1 ⇒ y²=4 ⇒ y=±2; cả hai tọa độ thỏa phương trình gốc.",
+    "skill_ids": [
+      "G10-B22-CONIC_INTERSECTION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY22` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P05` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY22"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY23",
+    "content_version": "G10-SGK-CHVII-PED-R01-23OUT-20261105",
+    "stem": "Mặt cắt một máng giả sử có dạng y²=20x (x,y tính bằng cm). Bề rộng của máng tại x=5 cm là bao nhiêu?",
+    "answer_key": "20 cm.",
+    "worked_solution": "Thế x=5 được y²=100 ⇒ y=±10 cm. Độ rộng là 10−(−10)=20 cm.",
+    "skill_ids": [
+      "G10-B22-CONIC_MODEL"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY23` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P04` khi đã hiểu kiến thức.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "5377380447ca2f131b634b8b65db885f86418cdd",
+      "heading_id": "THPT-G10-CHVII-TRY23"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

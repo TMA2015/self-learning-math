@@ -1621,5 +1621,610 @@
     "item_id": "THPT-G10-CHIV-RD1-21",
     "original_type": "WRITTEN_RUBRIC",
     "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B19-C01",
+    "skill_id": "G10-B19-NORMAL_DIRECTION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B19-C02",
+    "skill_id": "G10-B19-GENERAL_POINT"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B19-P01",
+    "skill_id": "G10-B19-PARAMETRIC"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B19-P02",
+    "skill_id": "G10-B19-GENERAL_POINT"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B19-P03",
+    "skill_id": "G10-B19-MEMBERSHIP"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G10-B19-P04",
+    "skill_id": "G10-B19-LINEAR_MODEL"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B20-C01",
+    "skill_id": "G10-B20-RELATIVE_POSITION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B20-C02",
+    "skill_id": "G10-B20-PERPENDICULAR"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B20-P01",
+    "skill_id": "G10-B20-INTERSECTION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B20-P02",
+    "skill_id": "G10-B20-DISTANCE"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B20-P03",
+    "skill_id": "G10-B20-ANGLE"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G10-B20-P04",
+    "skill_id": "G10-B20-PERPENDICULAR"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B21-C01",
+    "skill_id": "G10-B21-CIRCLE_STANDARD"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B21-C02",
+    "skill_id": "G10-B21-CIRCLE_GENERAL"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B21-P01",
+    "skill_id": "G10-B21-CIRCLE_STANDARD"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B21-P02",
+    "skill_id": "G10-B21-CIRCLE_TANGENT"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B21-P03",
+    "skill_id": "G10-B21-CIRCLE_TANGENT"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G10-B21-P04",
+    "skill_id": "G10-B21-CIRCLE_THROUGH_POINTS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:PRACTICE",
+    "role": "SGK_OPTIONAL_SPECIALIZED",
+    "order": 1,
+    "item_id": "THPT-G10-B22-C01",
+    "skill_id": "G10-B22-ELLIPSE_PARAMETERS",
+    "optional": true
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B22-C02",
+    "skill_id": "G10-B22-HYPERBOLA_PARAMETERS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B22-P01",
+    "skill_id": "G10-B22-ELLIPSE_PARAMETERS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B22-P01",
+    "skill_id": "G10-B22-ELLIPSE_PARAMETERS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B22-P02",
+    "skill_id": "G10-B22-HYPERBOLA_PARAMETERS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B22-P03",
+    "skill_id": "G10-B22-PARABOLA_FOCUS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G10-B22-P04",
+    "skill_id": "G10-B22-PARABOLA_FOCUS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B19-P05",
+    "skill_id": "G10-B19-NORMAL_DIRECTION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B19-P06",
+    "skill_id": "G10-B19-MULTISTEP"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B20-P05",
+    "skill_id": "G10-B20-RELATIVE_POSITION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B20-P06",
+    "skill_id": "G10-B20-ANGLE"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B21-P05",
+    "skill_id": "G10-B21-CIRCLE_GENERAL"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B21-P06",
+    "skill_id": "G10-B21-CIRCLE_THROUGH_POINTS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B22-P05",
+    "skill_id": "G10-B22-CONIC_INTERSECTION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B22-P06",
+    "skill_id": "G10-B22-PARABOLA_FOCUS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVII-TRY01",
+    "skill_id": "G10-B19-NORMAL_DIRECTION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVII-TRY02",
+    "skill_id": "G10-B19-GENERAL_POINT"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVII-TRY03",
+    "skill_id": "G10-B19-PARAMETRIC"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVII-TRY04",
+    "skill_id": "G10-B19-TWO_POINTS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHVII-TRY05",
+    "skill_id": "G10-B19-MEMBERSHIP"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-G10-CHVII-TRY06",
+    "skill_id": "G10-B19-MULTISTEP"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B19:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 7,
+    "item_id": "THPT-G10-CHVII-TRY07",
+    "skill_id": "G10-B19-LINEAR_MODEL"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVII-TRY08",
+    "skill_id": "G10-B20-RELATIVE_POSITION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVII-TRY09",
+    "skill_id": "G10-B20-PERPENDICULAR"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVII-TRY10",
+    "skill_id": "G10-B20-INTERSECTION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVII-TRY11",
+    "skill_id": "G10-B20-DISTANCE"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B20:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHVII-TRY12",
+    "skill_id": "G10-B20-ANGLE"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVII-TRY13",
+    "skill_id": "G10-B21-CIRCLE_STANDARD"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVII-TRY14",
+    "skill_id": "G10-B21-CIRCLE_GENERAL"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVII-TRY15",
+    "skill_id": "G10-B21-CIRCLE_TANGENT"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVII-TRY16",
+    "skill_id": "G10-B21-CIRCLE_THROUGH_POINTS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B21:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHVII-TRY17",
+    "skill_id": "G10-B21-LINE_CIRCLE_POSITION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVII-TRY18",
+    "skill_id": "G10-B22-ELLIPSE_PARAMETERS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVII-TRY19",
+    "skill_id": "G10-B22-HYPERBOLA_PARAMETERS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVII-TRY20",
+    "skill_id": "G10-B22-HYPERBOLA_ASYMPTOTES"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVII-TRY21",
+    "skill_id": "G10-B22-PARABOLA_FOCUS"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHVII-TRY22",
+    "skill_id": "G10-B22-CONIC_INTERSECTION"
+  },
+  {
+    "collection": "SGK:G10:CHVII:B22:FIRST_TRY",
+    "role": "SGK_PRE_CORE_FIRST_TRY",
+    "order": 6,
+    "item_id": "THPT-G10-CHVII-TRY23",
+    "skill_id": "G10-B22-CONIC_MODEL"
+  },
+  {
+    "collection": "SGK:G10:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G10-CHVII-W19-01"
+  },
+  {
+    "collection": "SGK:G10:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G10-CHVII-W20-01"
+  },
+  {
+    "collection": "SGK:G10:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G10-CHVII-W21-ANCHOR-01"
+  },
+  {
+    "collection": "SGK:G10:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G10-CHVII-W22-01"
+  },
+  {
+    "collection": "SGK:G10:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G10-CHVII-W22-ELLIPSE-TR01"
+  },
+  {
+    "collection": "SGK:G10:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "THPT-G10-CHVII-W22-HYPERBOLA-TR01"
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G10-CHVII-RD1-01",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G10-CHVII-RD1-02",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G10-CHVII-RD1-03",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G10-CHVII-RD1-04",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G10-CHVII-RD1-05",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G10-CHVII-RD1-06",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G10-CHVII-RD1-07",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G10-CHVII-RD1-08",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G10-CHVII-RD1-09",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G10-CHVII-RD1-10",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G10-CHVII-RD1-11",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G10-CHVII-RD1-12",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G10-CHVII-RD1-13",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G10-CHVII-RD1-14",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 15,
+    "item_id": "THPT-G10-CHVII-RD1-15",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 16,
+    "item_id": "THPT-G10-CHVII-RD1-16",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 17,
+    "item_id": "THPT-G10-CHVII-RD1-17",
+    "original_type": "MCQ_SINGLE",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 18,
+    "item_id": "THPT-G10-CHVII-RD1-18",
+    "original_type": "SHORT_EXPLANATION",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 19,
+    "item_id": "THPT-G10-CHVII-RD1-19",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 20,
+    "item_id": "THPT-G10-CHVII-RD1-20",
+    "original_type": "TRUE_FALSE_GROUP",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 21,
+    "item_id": "THPT-G10-CHVII-RD1-21",
+    "original_type": "WRITTEN_RUBRIC",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 22,
+    "item_id": "THPT-G10-CHVII-RD1-22",
+    "original_type": "MCQ_SINGLE",
+    "optional": true
   }
 ]
