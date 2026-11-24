@@ -45,23 +45,23 @@
 
     Tang và côtang xuất hiện từ hai tỉ số \(\tan x=\sin x/\cos x\) và \(\cot x=\cos x/\sin x\). Vì là phép chia, chúng không xác định tại các góc làm mẫu số bằng \(0\). Chẳng hạn ở \(x=\pi/2\), điểm \(M=(0,1)\); \(\sin x\) vẫn bằng \(1\) nhưng \(\tan x\) **không có giá trị**. Ở \(x=0\), \(\cot x\) lại không xác định. Sự khác biệt này sẽ quyết định hình dạng hai đồ thị ở mục 5, 6.
 
-    **Vận dụng.** Tại \(x=0\) và \(x=\pi/2\), hãy xác định những hàm nào trong sin, cos, tan, cot có giá trị; nếu có thì giá trị bằng bao nhiêu?
+    **Vận dụng.** Tại \(x=-\pi/2\) và \(x=\pi/4\), hãy xác định những hàm nào trong sin, cos, tan, cot có giá trị; nếu có thì giá trị bằng bao nhiêu?
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Với \(x=0\): \(\sin0=0,\ \cos0=1,\ \tan0=0\), còn \(\cot0\) không xác định vì mẫu \(\sin0=0\). Với \(x=\pi/2\): \(\sin(\pi/2)=1,\ \cos(\pi/2)=0,\ \cot(\pi/2)=0\), còn \(\tan(\pi/2)\) không xác định vì mẫu \(\cos(\pi/2)=0\).
+        **Lời giải:** Với \(x=-\pi/2\): \(\sin(-\pi/2)=-1,\ \cos(-\pi/2)=0,\ \cot(-\pi/2)=0\), còn tan không xác định vì mẫu cos bằng \(0\). Với \(x=\pi/4\): \(\sin(\pi/4)=\cos(\pi/4)=\sqrt2/2\), nên cả tan và cot bằng \(1\).
 
     ??? tip "Kiểm lỗi"
 
-        Nếu viết \(\tan(\pi/2)=0\), hãy đọc lại: \(\tan x\) dùng **cos ở mẫu**, không phải sin. Giá trị của tử số không cứu được một phân số có mẫu bằng \(0\).
+        Nếu viết \(\tan(-\pi/2)=0\), hãy đọc lại: \(\tan x\) dùng **cos ở mẫu**, không phải sin. Giá trị của tử số không cứu được một phân số có mẫu bằng \(0\).
 
     ### 1.2. Hàm số chẵn, hàm số lẻ, hàm số tuần hoàn
 
-    Trên đồ thị \(y=x^2\), hai đầu vào \(x\) và \(-x\) có cùng đầu ra; đồ thị phản chiếu qua trục tung. Nhưng với \(y=x^3\), đổi \(x\) thành \(-x\) sẽ đổi dấu đầu ra, nên đồ thị đối xứng qua gốc \(O\). Đó là trực giác về **hàm chẵn** và **hàm lẻ**. Trước khi so \(f(-x)\), phải kiểm xem miền xác định có chứa đồng thời cả \(x\) và \(-x\) hay không.
+    Trên đồ thị \(y=x^2\), hai đầu vào \(x\) và \(-x\) có cùng đầu ra; đồ thị phản chiếu qua trục tung. Nhưng với \(y=x^3\), đổi \(x\) thành \(-x\) sẽ đổi dấu đầu ra, nên đồ thị đối xứng qua gốc \(O\). Đó là trực giác về **hàm chẵn** và **hàm lẻ**. Trước khi so \(f(-x)\), phải kiểm rằng với mọi \(x\in D\), ta đều có \(-x\in D\). Chẳng hạn, \(f(x)=x^2\) nếu chỉ xác định trên \([0;+\infty)\) thì không chẵn cũng không lẻ: \(1\) thuộc miền nhưng \(-1\) không thuộc miền. Nếu miền đối xứng qua \(0\), mới kiểm \(f(-x)=f(x)\) hoặc \(f(-x)=-f(x)\) với mọi \(x\in D\).
 
     Trở lại đường tròn: quay thêm \(2\pi\) thì điểm \(M\) về đúng vị trí cũ. Vì thế \(\sin(x+2\pi)=\sin x\), \(\cos(x+2\pi)=\cos x\). Tang và côtang lặp giá trị chỉ sau \(\pi\), do tử và mẫu đồng thời đổi dấu. Một hàm như thế được gọi là **tuần hoàn**. Điều quan trọng không phải chỉ tìm được một số làm hàm lặp lại, mà còn xem số dương nhỏ nhất ấy có tồn tại không: với hàm hằng trên \(\mathbb R\), mọi \(T>0\) đều làm hàm lặp lại, nhưng không có **số dương nhỏ nhất**, nên hàm **không có chu kì** theo định nghĩa SGK.
 
-    Để biểu diễn nhịp lặp lại, ta dùng tính tuần hoàn của đối số: nếu \(y=\sin(3x)\), muốn đối số tăng thêm \(2\pi\), chỉ cần \(x\) tăng \(2\pi/3\). Đó là lý do hệ số trong đối số làm thay đổi chu kì theo **chiều ngược lại**.
+    Để biểu diễn nhịp lặp lại, ta dùng tính tuần hoàn của đối số: nếu \(y=\sin(3x)\), muốn đối số tăng thêm \(2\pi\), chỉ cần \(x\) tăng \(2\pi/3\). Đây là một số dương làm hàm lặp lại. Nếu có chu kì dương \(T\) nhỏ hơn \(2\pi/3\), thì \(\sin(u+3T)=\sin u\) với mọi \(u=3x\in\mathbb R\); khi đó \(0<3T<2\pi\) trái với việc sin có chu kì nhỏ nhất \(2\pi\). Vậy chu kì nhỏ nhất là \(2\pi/3\). Đó là lý do hệ số trong đối số làm thay đổi chu kì theo **chiều ngược lại**. Ví dụ, nếu luồng khí hô hấp được mô hình hóa bởi \(q(t)=A\sin(\pi t/2)\), \(A>0\), với \(t\) tính bằng giây, thì mô hình có chu kì \(4\) giây; mỗi nhịp lặp đầy đủ kéo dài \(4\) giây.
 
     **Vận dụng.** Xét \(f(x)=x\sin x\) trên \(\mathbb R\): hàm chẵn hay lẻ? Hàm hằng \(g(x)=2\) trên \(\mathbb R\) có chu kì dương nhỏ nhất không?
 
@@ -75,7 +75,7 @@
 
     ### 1.3. Đồ thị và tính chất của hàm số \(y=\sin x\)
 
-    Khi \(M\) đi quanh đường tròn, hãy theo dõi **tung độ** thay vì vị trí của cả điểm. Từ \(x=0\), tung độ tăng đến \(1\) tại \(x=\pi/2\), giảm về \(0\) tại \(\pi\), xuống \(-1\) tại \(3\pi/2\), rồi trở về \(0\) tại \(2\pi\). Đặt những giá trị ấy lên hệ trục và nối bằng đường cong liên tục, ta có một nhịp của đồ thị sin. Nhịp đó lặp sang trái và phải sau mỗi \(2\pi\).
+    Khi \(M\) đi quanh đường tròn, hãy theo dõi **tung độ** thay vì vị trí của cả điểm. Từ \(x=0\), tung độ tăng đến \(1\) tại \(x=\pi/2\), giảm về \(0\) tại \(\pi\), xuống \(-1\) tại \(3\pi/2\), rồi trở về \(0\) tại \(2\pi\). Đặt những giá trị ấy lên hệ trục và nối bằng đường cong liên tục, ta có một nhịp của đồ thị sin. Khi tự vẽ, đánh dấu năm điểm ứng với các góc trên, nối theo thứ tự bằng đường cong trơn (không nối bằng đoạn thẳng); có thể dựng phần bên trái bằng đối xứng qua gốc \(O\), rồi lặp các đoạn theo phương ngang sau mỗi \(2\pi\).
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-01_R01.svg" alt="Đồ thị sin với các mốc 0, pi trên 2, pi, 3pi trên 2 và 2pi"><figcaption><strong>Đọc hình sin:</strong> đi từ giao điểm trục hoành tại \(0\), tới đỉnh \(1\) ở \(\pi/2\), xuống đáy \(-1\) ở \(3\pi/2\), rồi lặp. Độ cao giới hạn trong \([-1;1]\); phần bên trái là ảnh đối xứng qua gốc \(O\).</figcaption></figure>
 
@@ -93,7 +93,7 @@
 
     ### 1.4. Đồ thị và tính chất của hàm số \(y=\cos x\)
 
-    Lần này hãy quan sát **hoành độ** của cùng điểm \(M\). Ở góc \(0\), hoành độ là \(1\); tới \(\pi/2\) bằng \(0\), tới \(\pi\) bằng \(-1\), rồi quay lại \(1\) ở \(2\pi\). Khác với sin khởi đầu ở \(0\), cos khởi đầu tại đỉnh. Cũng vì \(\cos(-x)=\cos x\), nửa đồ thị bên trái là ảnh gương qua trục tung của nửa bên phải.
+    Lần này hãy quan sát **hoành độ** của cùng điểm \(M\). Ở góc \(0\), hoành độ là \(1\); tới \(\pi/2\) bằng \(0\), tới \(\pi\) bằng \(-1\), rồi quay lại \(1\) ở \(2\pi\). Khác với sin khởi đầu ở \(0\), cos khởi đầu tại đỉnh. Khi tự vẽ, đánh dấu các điểm \((0;1),(\pi/2;0),(\pi;-1),(3\pi/2;0),(2\pi;1)\) và nối bằng đường cong trơn. Cos dương khi hoành độ của \(M\) dương, âm khi hoành độ âm. Vì \(\cos(-x)=\cos x\), dựng phần bên trái bằng ảnh gương qua trục tung, rồi tịnh tiến theo phương ngang từng chu kì \(2\pi\).
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-02_R01.svg" alt="Đồ thị cos từ âm 2pi đến 2pi với điểm đỉnh tại x bằng 0"><figcaption><strong>Đọc hình cos:</strong> tại \(x=0\) bắt đầu bằng \(1\), đạt \(-1\) ở \(\pi\), rồi trở lại \(1\) ở \(2\pi\). Đồ thị đối xứng qua trục tung và lặp sau \(2\pi\).</figcaption></figure>
 
@@ -115,7 +115,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-03_R01.svg" alt="Các nhánh đồ thị tan với tiệm cận đứng tại pi trên 2 cộng kpi"><figcaption><strong>Đọc hình tan:</strong> mỗi nhánh tăng từ âm vô cùng lên dương vô cùng giữa hai đường đứt \(x=-\pi/2+k\pi\) và \(x=\pi/2+k\pi\). Đường đứt là **tiệm cận, không phải đồ thị**.</figcaption></figure>
 
-    Vì \(\tan(x+\pi)=\tan x\), hình dạng nhánh lặp sau \(\pi\). Chú ý: tăng trên **từng khoảng xác định** không có nghĩa được so sánh xuyên qua một tiệm cận.
+    Khi tự vẽ, kẻ hai tiệm cận \(x=\pm\pi/2\) bằng nét đứt, đánh dấu \((-\pi/4;-1),(0;0),(\pi/4;1)\), rồi nối thành nhánh tăng tiến sát hai tiệm cận. Tan bằng \(0\) khi sin bằng \(0\) và cos khác \(0\); dấu của tan là dấu của thương sin/cos. Vì \(\tan(x+\pi)=\tan x\), tịnh tiến nhánh theo phương ngang từng bội của \(\pi\). Chú ý: tăng trên **từng khoảng xác định** không có nghĩa được so sánh xuyên qua một tiệm cận.
 
     **Vận dụng.** Trên \((-\pi/2;\pi/2)\), tìm tập nghiệm \(\tan x\ge0\).
 
@@ -129,7 +129,7 @@
 
     ### 1.6. Đồ thị và tính chất của hàm số \(y=\cot x\)
 
-    Côtang đảo chiều phép chia: \(\cot x=\cos x/\sin x\). Ở \(x=0\) và \(x=\pi\), sin bằng \(0\), vì thế cot không có giá trị; còn tại \(\pi/2\), cos bằng \(0\) và cot bằng \(0\). Trên khoảng \((0;\pi)\), cot **giảm** từ giá trị rất lớn xuống giá trị rất âm. Tương tự tan, nhánh cot lặp lại sau \(\pi\) và có tiệm cận đứng tại các bội nguyên của \(\pi\).
+    Côtang đảo chiều phép chia: \(\cot x=\cos x/\sin x\). Ở \(x=0\) và \(x=\pi\), sin bằng \(0\), vì thế cot không có giá trị; còn tại \(\pi/2\), cos bằng \(0\) và cot bằng \(0\). Trên khoảng \((0;\pi)\), cot **giảm** từ giá trị rất lớn xuống giá trị rất âm. Khi tự vẽ, kẻ nét đứt tại \(x=0,\pi\), đánh dấu \((\pi/4;1),(\pi/2;0),(3\pi/4;-1)\), rồi nối thành nhánh giảm, tiến sát hai tiệm cận. Cot bằng \(0\) khi cos bằng \(0\) và sin khác \(0\); dấu được xác định từ thương cos/sin. Tịnh tiến nhánh thêm từng bội của \(\pi\) để có toàn bộ đồ thị.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-04_R01.svg" alt="Đồ thị cot giảm giữa các tiệm cận x bằng kpi"><figcaption><strong>Đọc hình cot:</strong> giữa \(x=0\) và \(x=\pi\), nhánh đi từ trên xuống dưới và cắt trục hoành ở \(\pi/2\); các đường \(x=k\pi\) chỉ vị trí không xác định.</figcaption></figure>
 
@@ -171,7 +171,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Hàm số sin</strong><p><strong>Tập xác định:</strong> \(\mathbb R\). <strong>Tập giá trị:</strong> \([-1;1]\). Hàm <strong>lẻ</strong>, chu kì cơ bản \(2\pi\), đồ thị đối xứng qua gốc tọa độ.</p><p><strong>Đồng biến</strong> trên mỗi khoảng \(\big(-\dfrac{\pi}{2}+2k\pi;\dfrac{\pi}{2}+2k\pi\big)\); <strong>nghịch biến</strong> trên mỗi khoảng \(\big(\dfrac{\pi}{2}+2k\pi;\dfrac{3\pi}{2}+2k\pi\big)\), \(k\in\mathbb Z\).</p></div>
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-01_R01.svg" alt="Đồ thị sin có chu kì 2pi và đối xứng qua gốc"><figcaption><strong>Cách đọc:</strong> từ \(0\) lên \(1\) tại \(\pi/2\), qua \(0\) tại \(\pi\), xuống \(-1\) tại \(3\pi/2\); đó là một chu kì. Tiếp tục tịnh tiến thêm \(2k\pi\).</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B03-01_R01.svg" alt="Đồ thị sin có chu kì 2pi và đối xứng qua gốc"><figcaption><strong>Cách đọc:</strong> từ \(0\) lên \(1\) tại \(\pi/2\), qua \(0\) tại \(\pi\), xuống \(-1\) tại \(3\pi/2\), rồi trở về \(0\) tại \(2\pi\); đó là một chu kì đầy đủ. Tiếp tục tịnh tiến thêm \(2k\pi\).</figcaption></figure>
 
     ### 2.4. Đồ thị và tính chất hàm số \(y=\cos x\)
 
