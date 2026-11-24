@@ -15978,6 +15978,132 @@
         "No new IDs or placements; historical provenance, interaction/exposure, content_version labels kept. First no-op update unchanged blob; actual data delta verified at immutable commits. No fresh S1 PDF/SBT, full Q01/PED/D6/runtime/browser QA, no independent PASS. G11 lesson pages not read separately this batch, use exact public formative source and CD04 knowledge; verify S1 later."
       ],
       "next": "G10 ChV and CD05 actual scope; retain open Written findings for canonical review and CĐ13 full audit separately."
+    },
+    "formative_scoped_audit_cp52": {
+      "checkpoint": 52,
+      "baseline": "df430213cec47b02be96a76a160feed823388bb4",
+      "scope": "G10 ChV B12–14, CD05 functions and graph transformations; CD22 affected placements only",
+      "source_evidence": {
+        "B12": "d552c5415c05f1c354cdb8e01a61f0165296e66c",
+        "B13": "f42ca4234cf03030bde83cdfa6dd7a67561d999d",
+        "B14": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+        "g10_formative": [
+          "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+          "ddd5ec947029f644865110f2f381047214499e3e"
+        ],
+        "written": "8a1fbabe62d749177d2986e3d59ddb979a9d0267",
+        "cd05_knowledge": "845bbd4a837d812ba70b3db191b562566184c0d4",
+        "cd05_practice": "cef1a6b5e51206446ee754e2c0e486cb21b71930",
+        "cd22_knowledge": "bde0820d157a5169d3cf365c846cf11169d40035"
+      },
+      "files": [
+        {
+          "path": "items/g10-chv.json",
+          "before": "c0c94a52c01a197a4b25e0f2bd372a8ff29c07e1",
+          "after": "3f81c5e8d8a63d14a5ebafb0c44ef932cba097e9",
+          "changed": 24,
+          "unchanged": 16
+        },
+        {
+          "path": "items/cd05.json",
+          "before": "2ffb103fa2f02962132d0a5eeba2295ef870c265",
+          "after": "b52d42d648c591fbc5647d711aa6bc2bf3ea1be2",
+          "changed": 34
+        }
+      ],
+      "reviewed": {
+        "formative_changed": 58,
+        "first_try_preserved": 15,
+        "previous_calculator_practice_preserved": 1,
+        "sgk_source_math_parity_before_edit": 24,
+        "topic_outcomes": 17,
+        "topic_practice_placements": 38,
+        "topic_replay_placements": 17,
+        "written_read_only": 7,
+        "cd22_shared_practice_placements": 24,
+        "cd22_shared_replay_placements": 3
+      },
+      "matrix": {
+        "TOP05-O01": [
+          "THPT-TOP05-P01",
+          "THPT-TOP05-P02"
+        ],
+        "TOP05-O02": [
+          "THPT-TOP05-P03",
+          "THPT-TOP05-P04"
+        ],
+        "TOP05-O03": [
+          "THPT-TOP05-P05",
+          "THPT-TOP05-P06",
+          "THPT-TOP05-W01"
+        ],
+        "TOP05-O04": [
+          "THPT-TOP05-P07",
+          "THPT-TOP05-P08"
+        ],
+        "TOP05-O05": [
+          "THPT-TOP05-P09",
+          "THPT-TOP05-P10"
+        ],
+        "TOP05-O06": [
+          "THPT-TOP05-P11",
+          "THPT-TOP05-P12"
+        ],
+        "TOP05-O07": [
+          "THPT-TOP05-P13",
+          "THPT-TOP05-P14"
+        ],
+        "TOP05-O08": [
+          "THPT-TOP05-P15",
+          "THPT-TOP05-P16"
+        ],
+        "TOP05-O09": [
+          "THPT-TOP05-P17",
+          "THPT-TOP05-P18"
+        ],
+        "TOP05-O10": [
+          "THPT-TOP05-P19",
+          "THPT-TOP05-P20"
+        ],
+        "TOP05-O11": [
+          "THPT-TOP05-P21",
+          "THPT-TOP05-P22"
+        ],
+        "TOP05-O12": [
+          "THPT-TOP05-P23",
+          "THPT-TOP05-P24"
+        ],
+        "TOP05-O13": [
+          "THPT-TOP05-P25",
+          "THPT-TOP05-P26"
+        ],
+        "TOP05-O14": [
+          "THPT-TOP05-P27",
+          "THPT-TOP05-P28"
+        ],
+        "TOP05-O15": [
+          "THPT-TOP05-P29",
+          "THPT-TOP05-P30",
+          "THPT-TOP05-W02"
+        ],
+        "TOP05-O16": [
+          "THPT-TOP05-P31",
+          "THPT-TOP05-P32",
+          "THPT-TOP05-W03"
+        ],
+        "TOP05-O17": [
+          "THPT-TOP05-P33",
+          "THPT-TOP05-P34",
+          "THPT-TOP05-W04"
+        ]
+      },
+      "findings": [
+        "B12-P03 compares relative-error upper bounds at different magnitudes (1%,0.5%) rather than two repeated actual-error calculations; P05 tests rounding carry 9,95→10,0 and exact half-unit error 0,05. B13-P05 requires sorting first; B14-P03 tests strict outlier boundary 7, only 20 flagged, no automatic deletion. 24 targeted remediation entries.",
+        "CĐ05 P02 checks both totality and uniqueness; P05 proves every intermediate value by constructing x=2−√(y−1), avoids relying on unintroduced continuity theorem; P12 vertex outside domain; P13 same expression on symmetric vs nonsymmetric domain; P15 negative shift and no fundamental period inference; P16 concrete counterexample; P27 contrasts |f(x)| with f(|x|); P33 two feasible integer maxima 24,75 at 5 and 6. 34 hints and D6, 14 mapped to existing B15/B16 skills; 20 skill mappings remain unverified, no invented IDs.",
+        "24/24 unchanged-source SGK stems/answer/solutions/skills match after math delimiter normalization before edit; P07 calculator practice historically revised, preserved with 15 first tries. 38/38 CD05 marker IDs/outcomes align; 17 replay and 4 Written references resolve. All 58 remediation item references resolve. 22 topic shards scanned: CD22 shares 24 G10 items and 3 replay, null outcome IDs in legacy placement; no full CD22 audit.",
+        "Seven Written calculations correct; G10 library correct path tu-luan-chuong-v-b13-b14.md; four CD05 Written lack library projection pointer. No Written edits. No new IDs/placements; historical source and interaction/exposure unchanged. Fresh SGK PDF/SBT, full PED/D6/browser QA, content version policy unresolved. No new PASS."
+      ],
+      "next": "G10 ChVI remaining items B15–17 (B18 CP50 preserved), CD06 actual scope; check overlap before delta."
     }
   }
 }
