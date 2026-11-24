@@ -1,243 +1,417 @@
-# Toán 12 · Bài 13. Ứng dụng của tích phân
+# Bài 13. Ứng dụng hình học của tích phân
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 19–26</p><p class="thpt-r4-lead">Hiểu bản chất trước công thức, xem ví dụ có suy luận, đọc hình PNG gốc đã review và tự thử trước Core.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../bai-12/">Bài 12 · Ôn lại</a></nav></div>
+<style>
+.md-typeset:has([data-g12-b13-knowledge]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#e8f7f2;border-color:#a9dccc;border-left-color:#087d69;color:#174137}
+.md-typeset:has([data-g12-b13-knowledge]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#eaf1fc;border-color:#a5bee5;border-left-color:#4879c2;color:#193d66}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g12-b13-knowledge]) .thpt-r4-knowledge-conclusion.thpt-r4-concept-card{background:#193d36;border-color:#447e70;border-left-color:#76dfc7;color:#e9fff7}
+[data-md-color-scheme="slate"] .md-typeset:has([data-g12-b13-knowledge]) .thpt-r4-knowledge-conclusion.thpt-r4-rule-card{background:#203551;border-color:#45658a;border-left-color:#8cb4ed;color:#ecf5ff}
+</style>
 
-## 1. Vì sao cần học và kiến thức tiền đề
+<div class="thpt-r4-screen" data-thpt-r4 data-g12-b13-knowledge>
+<p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · KIẾN THỨC SGK KNTT · TẬP HAI</p>
+<p class="thpt-r4-lead">Tính diện tích miền có biên cong và thể tích vật thể bằng cách xác định chiều cao hoặc diện tích của từng lát cắt.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../bai-12/">Bài trước</a><a href="../luyen-tap/#b13-core">Core/Luyện tập</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-Diện tích/ thể tích của miền có biên cong được tính bằng cách cộng vô số lát nhỏ. Điều khó là dựng đúng miền và diện tích lát cắt, không phải thay cận vào một công thức học thuộc.
+=== "Khám phá kiến thức"
 
-**Tiền đề cần tự kiểm:** tích phân xác định, diện tích hình phẳng, tìm nghiệm giao điểm, công thức πr² và đơn vị độ dài/diện tích.
+    ### 1.1. Ứng dụng tích phân để tính diện tích hình phẳng
 
-## 2. Hiểu bản chất, công thức và điều kiện
+    #### a) Hình phẳng giới hạn bởi một đồ thị hàm số, trục hoành và hai đường thẳng
 
-<!-- OUTCOME_ID: G12-CHIV-B13-O01 -->
+    Em đã biết cách tính diện tích tam giác, hình thang hay hình tròn. Nhưng nếu một mảnh đất có đường biên cong, làm sao tính diện tích khi biết phương trình của đường biên? Ý tưởng ở Bài 12 là chia miền thành những dải đứng rất hẹp, mỗi dải có diện tích xấp xỉ chiều cao nhân chiều rộng. Tích phân cho phép cộng dồn chính xác các diện tích ấy.
 
-### 1. Diện tích hình phẳng dưới đường cong không âm
+    <!-- OUTCOME_ID: G12-CHIV-B13-O01 -->
+    Nếu đường biên trên là \(y=f(x)\ge0\) và đường biên dưới là \(Ox\), giữa hai đường \(x=a,x=b\) với \(a<b\), chiều cao dải tại \(x\) là \(f(x)\). Khi \(f\) liên tục, diện tích là \(\int_a^b f(x)\,dx\). Chẳng hạn phần hình phẳng dưới \(y=x^2\) từ \(0\) đến \(2\) có diện tích \([x^3/3]_0^2=8/3\). Nếu dùng hình chữ nhật cao 4, rộng 2, ta được 8, lớn hơn diện tích thật; điều đó phù hợp vì đường cong nằm dưới cạnh trên của hình chữ nhật.
 
-- **Vì sao cần biết:** Tổng diện tích hình giới hạn bởi trục hoành và đường cong cần nguyên hàm để tính chính xác.
+    <!-- OUTCOME_ID: G12-CHIV-B13-O02 -->
+    Nếu đồ thị ở dưới trục hoành, độ cao của dải không phải là số âm. Ví dụ đường \(y=x-1\) từ \(x=0\) đến \(x=3\) tạo hai tam giác. Tam giác trái có đáy và chiều cao đều bằng 1, diện tích \(1/2\); tam giác phải có đáy và chiều cao đều bằng 2, diện tích 2. Tổng bằng \(5/2\). Nhưng tích phân của \(x-1\) trên \([0;3]\) bằng \(3/2\), bởi nó lấy diện tích phải trừ diện tích trái.
 
-- **Kiến thức tiền đề:** Giới hạn hình bởi y=f(x), Ox, x=a,b; kiểm f không âm.
+    Để cộng cả hai phần, cần dùng độ cao \(|x-1|\):
+    \[
+    S=\int_0^3|x-1|\,dx
+    =\int_0^1(1-x)\,dx+\int_1^3(x-1)\,dx
+    =\frac12+2=\frac52.
+    \]
+    Kết quả đúng với cách tính hình học. Tổng quát, với hàm liên tục \(f\) trên \([a;b]\), diện tích giới hạn bởi đồ thị, \(Ox\) và hai đường đứng \(x=a,x=b\) bằng \(\int_a^b|f(x)|\,dx\). Khi \(f\) đổi dấu, tìm các nghiệm nằm trong khoảng, xét dấu rồi bỏ giá trị tuyệt đối trên từng đoạn. Nghiệm mà hàm chỉ tiếp xúc trục, không đổi dấu, không buộc phải tách tích phân.
 
-- **Bản chất trước công thức:** Nếu f≥0 liên tục [a,b], S=∫_a^b f(x)dx; S có đơn vị bình phương.
+    **Vận dụng.** Tính diện tích giới hạn bởi \(y=x^2-1\), trục hoành và hai đường \(x=0,x=2\).
 
-- **Định nghĩa và công thức:** \(S=\int_a^b f(x)dx,\quad f\ge0.\)
+    ??? question "Đối chiếu"
 
-- **Điều kiện và giới hạn:** Không dùng công thức này nguyên dạng nếu hàm âm trên bất kỳ đoạn con; phải dùng trị tuyệt đối.
+        Hàm liên tục, có nghiệm \(x=1\) trong đoạn. Trên \([0;1]\), \(x^2-1\le0\); trên \([1;2]\), \(x^2-1\ge0\).
+        \[
+        \begin{aligned}
+        S&=\int_0^1(1-x^2)\,dx+\int_1^2(x^2-1)\,dx\\
+        &=\frac23+\frac43=2.
+        \end{aligned}
+        \]
+        Hai diện tích đều không âm. Tích phân có dấu của \(x^2-1\) chỉ bằng \(2/3\), không phải diện tích.
 
-- **Lý do chọn phương pháp:** Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
+    ??? tip "Kiểm lỗi"
 
-#### Ví dụ có suy luận
+        Nếu nhận \(2/3\), em đã cho hai miền triệt tiêu. Hãy viết hai tích phân riêng, chọn biểu thức không âm ở mỗi miền, rồi cộng.
 
-**Đề:** Tính diện tích dưới y=x² trên [0,3].
+    #### b) Hình phẳng giới hạn bởi hai đồ thị hàm số và hai đường thẳng
 
-**Lời giải có suy luận:** Vì x²≥0, S=∫_0³x²dx=[x³/3]_0³=9 đv². Lý do chọn cách giải: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị. Kiểm điều kiện áp dụng: Không dùng công thức này nguyên dạng nếu hàm âm trên bất kỳ đoạn con; phải dùng trị tuyệt đối.
+    <!-- OUTCOME_ID: G12-CHIV-B13-O03 -->
+    Bây giờ đường biên dưới không nhất thiết là \(Ox\). Giả sử trên \([1;2]\), đường \(y=x+2\) nằm trên đường \(y=x^2\) (hai đồ thị gặp nhau ở 2). Tại \(x\), dải đứng dài từ tung độ \(x^2\) tới \(x+2\); chiều cao là \(x+2-x^2\), không phải tổng của hai tung độ. Do đó diện tích là
+    \[
+    S=\int_1^2(x+2-x^2)\,dx=\frac76.
+    \]
+    Hai đồ thị có thể nằm cùng phía hoặc khác phía của trục hoành; điều quyết định chiều cao vẫn là tung độ trên trừ tung độ dưới. Ví dụ nếu đường trên là \(y=-1\), đường dưới là \(y=-3\), chiều cao bằng \((-1)-(-3)=2\), không phải 4.
 
-**Bẫy cần tự phát hiện:** Tính F(a)−F(b) hoặc không kiểm hàm âm trên miền hình.
+    <!-- OUTCOME_ID: G12-CHIV-B13-O04 -->
+    Hai đường cũng có thể đổi vai trò trên và dưới. Quan sát \(y=x\) và \(y=x^3\) trên \([-1;1]\). Giải \(x=x^3\), ta được \(x(x-1)(x+1)=0\); ba giao điểm có hoành độ \(-1,0,1\).
 
-<!-- OUTCOME_ID: G12-CHIV-B13-O02 -->
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg" alt="Hai đồ thị y=x và y=x³ trên [-1;1] cắt nhau tại -1, 0, 1; x³ ở trên khi x âm và x ở trên khi x dương"><figcaption>Đọc hai đoạn đứng trong vùng tô màu: ở nửa trái, chiều cao là \(x^3-x\); ở nửa phải, chiều cao là \(x-x^3\). Không dùng cùng thứ tự trừ cho cả hai nửa.</figcaption></figure>
 
-### 2. Diện tích với đồ thị cắt trục Ox
+    Hiệu \(x-x^3=x(1-x^2)\) âm khi \(-1<x<0\), dương khi \(0<x<1\). Vì vậy
+    \[
+    \begin{aligned}
+    S&=\int_{-1}^0(x^3-x)\,dx+\int_0^1(x-x^3)\,dx\\
+    &=\frac14+\frac14=\frac12.
+    \end{aligned}
+    \]
+    Nếu giữ nguyên \(x-x^3\) trên cả đoạn thì tích phân bằng 0 do hàm lẻ, mặc dù hai miền có diện tích dương. Viết gọn công thức tổng quát \(S=\int_a^b|f(x)-g(x)|\,dx\). Nếu hiệu không đổi dấu, có thể lấy trị tuyệt đối của tích phân hiệu; nếu hiệu đổi dấu, phải tính từng phần trước khi cộng.
 
-- **Vì sao cần biết:** Đồ thị có thể xuống dưới trục nhưng diện tích hình phẳng vẫn là số không âm.
+    <!-- FIRST_TRY_ID: B13-T01 -->
+    **Vận dụng.** Tính diện tích giới hạn bởi hai đồ thị \(y=x^2,\ y=x\) và hai đường \(x=0,x=2\). Tại đâu hai đồ thị đổi vai trò?
 
-- **Kiến thức tiền đề:** Nghiệm f=0, bảng xét dấu và tích phân từng đoạn.
+    ??? question "Đối chiếu"
 
-- **Bản chất trước công thức:** Khi f đổi dấu, S=∫_a^b |f(x)|dx phải chia tại nghiệm trong khoảng.
+        \(x^2=x\) cho \(x=0,1\). Trong \((0;1)\), \(x>x^2\); trong \((1;2)\), \(x^2>x\). Vì thế
+        \[
+        S=\int_0^1(x-x^2)\,dx+\int_1^2(x^2-x)\,dx
+        =\frac16+\frac56=\frac76.
+        \]
 
-- **Định nghĩa và công thức:** \(S=\int_a^b|f(x)|dx.\)
+    ??? tip "Kiểm lỗi"
 
-- **Điều kiện và giới hạn:** Chia tại toàn bộ giao điểm với Ox; không lấy |∫_a^b f| làm thay thế. Chỉ chia theo các khoảng thật sự thay đổi dấu; nghiệm bội chẵn có thể không làm đổi dấu.
+        Nếu chỉ tính từ 0 đến 1, em đã bỏ miền được giới hạn thêm bởi \(x=2\). Đọc đủ các đường biên đề cho, giải giao điểm nằm trong cận, rồi xét dấu.
 
-- **Lý do chọn phương pháp:** Tìm nghiệm, phân vùng, trên vùng âm dùng −f, tính tổng.
+    Khi đề chỉ cho hai đồ thị mà không cho hai đường đứng, các giao điểm có thể tự tạo cận của miền kín. Chẳng hạn \(y=4-x^2,\ y=0\) tạo miền kín từ \(-2\) đến 2. Nhưng hai đường song song không tự tạo miền kín hữu hạn; không được tự đặt cận theo ý mình. Nếu có nhiều miền kín, xác định miền nào đề yêu cầu và cộng đúng các miền.
 
-#### Ví dụ có suy luận
+    <!-- OUTCOME_ID: G12-CHIV-B13-O05 -->
+    **Ứng dụng thực tế.** Một khu đất dài 6 m được mô hình hóa trong hệ tọa độ (đơn vị mét) với đường biên dưới \(g(x)=1+x/3\), đường biên trên \(f(x)=g(x)+3-x^2/12\), \(0\le x\le6\). Bề rộng theo phương \(Oy\) là \(f-g=3-x^2/12\ge0\); ở đầu phải hai đường gặp nhau. Diện tích khu đất là
+    \[
+    S=\int_0^6(3-x^2/12)\,dx=18-6=12\ \mathrm{m}^2.
+    \]
+    Cả hai tọa độ đều đo bằng mét nên tích phân chiều cao theo chiều rộng có đơn vị mét vuông. Không cần tính diện tích từ từng đường xuống \(Ox\) rồi trừ nếu đã biết chiều cao.
 
-**Đề:** Diện tích giữa y=x và Ox từ −3 tới 3.
+    Trong kinh tế, diện tích giữa đồ thị giá và số lượng có ý nghĩa khác diện tích đất. Giả sử giá cầu là \(p=D(x)=18-2x\), giá cung là \(p=P(x)=6+x\) (nghìn đồng/sản phẩm), với số lượng \(x\) được coi là biến liên tục. Điểm cân bằng thỏa \(D(x_0)=P(x_0)\), nên \(x_0=4,p_0=10\). Trên \([0;4]\), cầu nằm trên mức giá 10 còn cung nằm dưới mức ấy. Thặng dư tiêu dùng là diện tích giữa cầu và mức giá cân bằng, bằng \(\int_0^4(8-2x)\,dx=16\) nghìn đồng; thặng dư sản xuất bằng \(\int_0^4(4-x)\,dx=8\) nghìn đồng. Các diện tích phản ánh chênh lệch theo mô hình giá; không đồng nhất với tổng doanh thu hoặc lợi nhuận kế toán.
 
-**Lời giải có suy luận:** S=∫_{−3}^0(−x)dx+∫_0^3xdx=9. Lý do chọn cách giải: Tìm nghiệm, phân vùng, trên vùng âm dùng −f, tính tổng. Kiểm điều kiện áp dụng: Chia tại toàn bộ giao điểm với Ox; không lấy |∫_a^b f| làm thay thế.
+    ### 1.2. Ứng dụng tích phân để tính thể tích vật thể
 
-**Bẫy cần tự phát hiện:** Lấy tích phân có dấu trực tiếp khi hình cắt trục, làm các vùng triệt tiêu.
+    #### a) Tính thể tích của vật thể
 
-<!-- OUTCOME_ID: G12-CHIV-B13-O03 -->
+    <!-- OUTCOME_ID: G12-CHIV-B13-O06 -->
+    Hãy hình dung một khối dài được cắt thành nhiều lát mỏng vuông góc với trục \(Ox\). Nếu là khối trụ bán kính \(R\) nằm từ \(x=a\) đến \(x=b\), mọi lát có cùng diện tích \(\pi R^2\). Thể tích bằng diện tích đáy nhân chiều dài \(b-a\), cũng chính là \(\int_a^b\pi R^2\,dx\).
 
-### 3. Diện tích giữa hai đường cong không đổi vị trí trên/dưới
+    Nếu tiết diện thay đổi, chẳng hạn một khối chóp nhỏ ở gần đỉnh và lớn ở gần đáy, không thể dùng một diện tích mặt cắt cố định nhân chiều cao. Gọi \(S(x)\) là diện tích mặt cắt của vật thể bởi mặt phẳng vuông góc với \(Ox\) tại \(x\). Với lát dày \(\Delta x\) rất nhỏ, thể tích lát xấp xỉ \(S(x)\Delta x\). Cộng các lát và cho độ dày tiến về 0, ta có công thức \(V=\int_a^b S(x)\,dx\) khi \(S(x)\) liên tục trên \([a;b]\). Đây là tổng của các **diện tích mặt cắt nhân độ dày**, không phải tổng các độ dài.
 
-- **Vì sao cần biết:** Diện tích kẹp giữa hai đường có thể dùng chiều cao lát cắt là hàm trên trừ hàm dưới.
+    Với khối lăng trụ có diện tích đáy \(B\), chiều cao vuông góc \(h\), chọn trục theo chiều cao. Mọi tiết diện song song đáy có diện tích \(B\), nên \(V=\int_0^h B\,dx=Bh\). Điều này đúng cả với lăng trụ xiên: mặt cắt song song đáy có thể dịch sang bên nhưng diện tích vẫn không đổi. Không dùng chiều dài cạnh bên thay chiều cao nếu cạnh bên không vuông góc đáy.
 
-- **Kiến thức tiền đề:** Hai hàm liên tục f,g và xét thứ tự đồ thị trên [a,b].
+    Xét khối chóp đều đáy vuông cạnh 4 cm, cao 6 cm. Chọn gốc ở đỉnh chóp và trục \(Ox\) đi qua tâm đáy. Mặt cắt tại \(x\) song song với đáy, có cạnh \(\ell(x)\). Theo Thalès, tỉ số độ dài cạnh bằng tỉ số khoảng cách đến đỉnh: \(\ell(x)/4=x/6\).
 
-- **Bản chất trước công thức:** Nếu f≥g trên [a,b], S=∫_a^b(f−g)dx, không phải ∫f+∫g.
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG02_PYRAMID_SECTION_AUTHORING_20261124.svg" alt="Khối chóp đáy vuông cạnh 4, cao 6; mặt cắt vuông góc Ox ở x=3 là hình vuông cạnh 2"><figcaption>Ở nửa chiều cao \(x=3\), cạnh hình vuông chỉ còn một nửa cạnh đáy, nhưng diện tích chỉ còn một phần tư: \(2^2=4\) thay vì \(4^2=16\). Đây là lý do diện tích phụ thuộc vào bình phương \(x\).</figcaption></figure>
 
-- **Định nghĩa và công thức:** \(S=\int_a^b [f(x)-g(x)]dx\quad(f\ge g).\)
+    Từ đó \(S(x)=(2x/3)^2=4x^2/9\) cm². Thể tích là
+    \[
+    V=\int_0^6\frac{4x^2}{9}\,dx
+    =\frac49\cdot\frac{216}{3}=32\ \mathrm{cm}^3.
+    \]
+    Tổng quát với diện tích đáy \(B\), chiều cao \(h\), mặt cắt cách đỉnh \(x\) có tỉ số đồng dạng \(x/h\), nên \(S(x)=B(x/h)^2\). Do đó \(V=Bh/3\). Nhờ tích phân, ta hiểu hệ số \(1/3\) đến từ \(\int_0^h x^2\,dx=h^3/3\), chứ không chỉ ghi nhớ công thức.
 
-- **Điều kiện và giới hạn:** Phải xác định chính xác đường trên/dưới, các giao điểm làm cận và dấu hiệu; đơn vị diện tích.
+    **Vận dụng.** Một khối chóp cụt đều có hai đáy là hình vuông cạnh 2 cm và 5 cm, chiều cao 3 cm. Chọn \(x=0\) ở đáy nhỏ, \(x=3\) ở đáy lớn. Tìm diện tích tiết diện và thể tích.
 
-- **Lý do chọn phương pháp:** Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.
+    ??? question "Đối chiếu"
 
-#### Ví dụ có suy luận
+        Do các cạnh bên là đoạn thẳng và các mặt cắt song song đáy, cạnh của hình vuông tăng tuyến tính từ 2 đến 5: \(\ell(x)=2+x\). Vì vậy \(S(x)=(2+x)^2\) cm².
+        \[
+        V=\int_0^3(2+x)^2\,dx
+        =[(2+x)^3/3]_0^3=\frac{125-8}{3}=39\ \mathrm{cm}^3.
+        \]
+        Kết quả nằm giữa \(3\cdot4=12\) và \(3\cdot25=75\).
 
-**Đề:** Tính diện tích giữa y=3x và y=x trên [0,2].
+    ??? tip "Kiểm lỗi"
 
-**Lời giải có suy luận:** 3x≥x, S=∫_0²2x dx=4 đv². Lý do chọn cách giải: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0. Kiểm điều kiện áp dụng: Phải xác định chính xác đường trên/dưới, các giao điểm làm cận và dấu hiệu; đơn vị diện tích.
+        Không cho diện tích tăng tuyến tính từ 4 tới 25. Cạnh tăng tuyến tính, còn diện tích là bình phương cạnh. Kiểm \(\ell(0)=2,\ell(3)=5\) trước khi bình phương.
 
-**Bẫy cần tự phát hiện:** Lấy hàm dưới trừ trên cho diện tích âm hoặc bỏ mất đường biên/cận.
+    Tổng quát, nếu hai đáy của chóp cụt đều có diện tích \(B_0,B_1\), cao \(h\), các tiết diện đồng dạng. Căn bậc hai của diện tích tỉ lệ với kích thước dài, nên
+    \[
+    S(x)=\left[\sqrt{B_0}+\frac{x}{h}(\sqrt{B_1}-\sqrt{B_0})\right]^2.
+    \]
+    Khai triển và tích phân từ 0 đến \(h\) được
+    \[
+    V=\frac h3(B_0+\sqrt{B_0B_1}+B_1).
+    \]
+    Khi đáy nhỏ co về đỉnh (\(B_0=0\)), công thức trở về \(V=hB_1/3\).
 
-<!-- OUTCOME_ID: G12-CHIV-B13-O04 -->
+    <!-- OUTCOME_ID: G12-CHIV-B13-O07 -->
+    Tiết diện không nhất thiết là hình vuông. Nếu là hình tròn bán kính \(r(x)\), diện tích là \(\pi r(x)^2\). Nếu đề cho đường kính \(d(x)\), phải chia đôi: \(S(x)=\pi d(x)^2/4\). Tích phân diện tích đó mới cho thể tích. Có thể áp dụng dù tâm các mặt cắt không nằm trên một đường thẳng, miễn ta biết đúng diện tích và các mặt cắt vuông góc với trục tích phân.
 
-### 4. Hai đường cong cắt nhau: phải chia miền
+    #### b) Tính thể tích khối tròn xoay
 
-- **Vì sao cần biết:** Ở các miền khác nhau, đường trên/dưới có thể đảo vai trò; lấy một hiệu duy nhất sẽ mất diện tích.
+    <!-- OUTCOME_ID: G12-CHIV-B13-O08 -->
+    Có một cách đặc biệt tạo ra những tiết diện hình tròn: quay cả miền hình phẳng quanh một trục. Chẳng hạn quay miền tam giác nằm giữa \(y=x/2\), \(Ox\), \(x=0,x=4\) quanh \(Ox\), ta được khối nón cao 4, bán kính đáy 2. Tại một giá trị \(x\), đoạn đứng từ 0 đến \(x/2\) quay một vòng quanh trục, quét thành một đĩa tròn bán kính \(x/2\).
 
-- **Kiến thức tiền đề:** Giải f(x)=g(x), khảo sát dấu hiệu f−g.
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg" alt="Miền tam giác dưới y=x/2 từ 0 đến 4 quay quanh Ox; tại x=3 đoạn đứng 1,5 thành đĩa bán kính 1,5"><figcaption>Ở \(x=3\), bán kính mặt cắt là \(1{,}5\), không phải đường kính 3. Hình elip bên phải biểu diễn mặt tròn trong phối cảnh, không làm thay đổi diện tích thực \(\pi(1{,}5)^2\).</figcaption></figure>
 
-- **Bản chất trước công thức:** Diện tích S=∫|f−g|; chia tại mọi giao điểm và chọn hiệu không âm mỗi đoạn.
+    Vậy
+    \[
+    V=\int_0^4\pi(x/2)^2\,dx
+    =\frac\pi4\cdot\frac{64}{3}=\frac{16\pi}{3}.
+    \]
+    Kiểm lại bằng công thức khối nón \(V=\pi\cdot 2^2\cdot4/3=16\pi/3\). Từ đó tổng quát hóa: với \(f(x)\) liên tục, không âm trên \([a;b]\), quay miền nằm giữa \(y=f(x)\) và \(Ox\) quanh \(Ox\) cho khối tròn xoay có
+    \[
+    V=\pi\int_a^b [f(x)]^2\,dx.
+    \]
+    Bình phương xuất hiện vì diện tích mặt cắt là diện tích hình tròn, không phải vì bản thân phép tích phân cần bình phương. Với đúng miền giữa đồ thị và \(Ox\), kể cả khi \(f\) âm, bán kính là \(|f(x)|\) và bình phương vẫn là \(f(x)^2\).
 
-- **Định nghĩa và công thức:** \(S=\int_a^b|f(x)-g(x)|dx.\)
+    <!-- FIRST_TRY_ID: B13-T02 -->
+    **Vận dụng.** Quay hình phẳng giới hạn bởi \(y=1+x^2\), \(Ox\), \(x=0,x=1\) quanh \(Ox\). Tính thể tích và kiểm bằng thể tích hai hình trụ bán kính 1 và 2, cùng chiều cao 1.
 
-- **Điều kiện và giới hạn:** Không được giả thiết một đồ thị ở trên trên toàn đoạn nếu có giao điểm bên trong.
+    ??? question "Đối chiếu"
 
-- **Lý do chọn phương pháp:** Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương.
+        Bán kính \(r(x)=1+x^2\) nằm trong \([1;2]\), nên
+        \[
+        V=\pi\int_0^1(1+2x^2+x^4)\,dx
+        =\pi(1+2/3+1/5)=28\pi/15.
+        \]
+        Hai khối trụ có thể tích lần lượt \(\pi\) và \(4\pi\); kết quả ở giữa, phù hợp với bán kính biến đổi.
 
-#### Ví dụ có suy luận
+    ??? tip "Kiểm lỗi"
 
-**Đề:** Diện tích giới hạn bởi y=x² và y=x trên [0,1].
+        Nếu chỉ lấy \(\pi\int_0^1(1+x^2)\,dx\), em đã tích phân bán kính chứ chưa tính diện tích mặt cắt. Bình phương toàn bộ \(1+x^2\) trước khi tích phân.
 
-**Lời giải có suy luận:** Giao tại0,1; x≥x² trong [0,1], S=∫_0¹(x−x²)dx=1/6. Lý do chọn cách giải: Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương. Kiểm điều kiện áp dụng: Không được giả thiết một đồ thị ở trên trên toàn đoạn nếu có giao điểm bên trong.
+    Với khối cầu bán kính \(R>0\), lấy nửa hình tròn phía trên \(Ox\) có đường biên \(y=\sqrt{R^2-x^2}\) trên \([-R;R]\). Quay quanh \(Ox\) tạo cả khối cầu. Bình phương bán kính mặt cắt cho \(R^2-x^2\), nên
+    \[
+    V=\pi\int_{-R}^R(R^2-x^2)\,dx
+    =\frac43\pi R^3.
+    \]
+    Nếu chỉ lấy từ 0 đến \(R\), ta được nửa khối cầu. Cận lấy theo chiều dài trên trục quay, không theo tung độ lớn nhất.
 
-**Bẫy cần tự phát hiện:** Quên giao điểm giữa khoảng và để các vùng triệt dấu.
+    Khối nón cụt có bán kính hai đáy \(r,R\) và chiều cao \(h\). Bán kính ở giữa tăng hoặc giảm tuyến tính, \(r(x)=r+(R-r)x/h\) với \(0\le x\le h\). Vậy
+    \[
+    V=\pi\int_0^h[r+(R-r)x/h]^2\,dx
+    =\frac{\pi h}{3}(r^2+rR+R^2).
+    \]
+    Thử \(r=0\), ta có công thức nón; thử \(r=R\), ta có công thức trụ. Hai trường hợp giúp tự kiểm.
 
-<!-- OUTCOME_ID: G12-CHIV-B13-O05 -->
+    **Lưu ý mở rộng:** Công thức đĩa nói trên dành cho miền có một biên là trục quay. Nếu quay một miền giữa hai đồ thị đều nằm phía trên \(Ox\) mà không chạm trục, tiết diện thường là vành khăn có diện tích \(\pi(R(x)^2-r(x)^2)\), không phải \(\pi(R-r)^2\). Khi miền cắt qua trục quay, phải xác định lại tiết diện thật sự; không trừ máy móc bình phương hai tung độ. Nếu quay quanh trục khác, cũng phải xác định khoảng cách đến đúng trục và phương mặt cắt.
 
-### 5. Lập mô hình hình học và kiểm đơn vị
+=== "Kiến thức SGK"
 
-- **Vì sao cần biết:** Để tính diện tích đất, vật liệu, hoặc mặt cắt, cần đổi hình thực thành miền [a,b] và giải thích đơn vị trục.
+    ### 2.1. Ứng dụng tích phân để tính diện tích hình phẳng
 
-- **Kiến thức tiền đề:** Đơn vị trục Ox/Oy và mô hình biểu thức f(x).
+    #### a) Hình phẳng giới hạn bởi đồ thị, trục hoành và hai đường thẳng
 
-- **Bản chất trước công thức:** Diện tích S được tính bằng tích phân độ cao theo chiều rộng, với đơn vị (đơn vị x)×(đơn vị y).
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Diện tích với trục hoành.</strong><p>Cho \(f\) liên tục trên \([a;b]\), \(a&lt;b\). Diện tích hình phẳng giới hạn bởi đồ thị \(y=f(x)\), trục hoành và hai đường thẳng \(x=a,x=b\) bằng</p><div class="arithmatex">\(\displaystyle S=\int_a^b|f(x)|\,dx.\)</div><p>Nếu \(f\) không âm trên đoạn thì bỏ dấu giá trị tuyệt đối; nếu không dương thì tích phân của \(-f\). Khi hàm đổi dấu, tách tại các mốc đổi dấu rồi cộng các diện tích.</p></div>
 
-- **Định nghĩa và công thức:** \(S=\int_a^b h(x)dx\quad(h\ge0).\)
+    #### b) Hình phẳng giới hạn bởi hai đồ thị và hai đường thẳng
 
-- **Điều kiện và giới hạn:** Phải phân biệt diện tích (m²) với thể tích (m³), không dùng công thức khi độ cao đổi dấu mà chưa chia.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Diện tích giữa hai đồ thị.</strong><p>Cho \(f,g\) liên tục trên \([a;b]\), \(a&lt;b\). Diện tích giới hạn bởi \(y=f(x),y=g(x)\) và hai đường thẳng \(x=a,x=b\) là</p><div class="arithmatex">\(\displaystyle S=\int_a^b|f(x)-g(x)|\,dx.\)</div><p>Chiều cao lát đứng bằng tung độ đường trên trừ tung độ đường dưới. Nếu \(f-g\) không đổi dấu trên đoạn thì \(S=\left|\int_a^b(f-g)\,dx\right|\). Nếu đổi dấu, tách tại các mốc đổi dấu.</p></div>
 
-- **Lý do chọn phương pháp:** Nêu biến x và đơn vị, mô tả hai cận, xét h≥0, rồi tính số và thứ nguyên.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG01_TWO_CURVES_AUTHORING_20261124.svg" alt="Hai miền giữa y=x và y=x³ đổi thứ tự trên dưới tại x=0"><figcaption>Ví dụ về việc chia miền: giao điểm ở \(-1,0,1\), hiệu không âm là \(x^3-x\) ở nửa trái và \(x-x^3\) ở nửa phải.</figcaption></figure>
 
-#### Ví dụ có suy luận
+    Cách lập tích phân diện tích: xác định đúng các đường biên và cận; giải phương trình giao điểm (hoặc nghiệm của \(f\) nếu biên còn lại là \(Ox\)); xét dấu hiệu hai hàm trên từng khoảng; viết hiệu không âm rồi tính tổng. Với các bài cơ bản có hữu hạn mốc đổi dấu, lập bảng dấu là cách thuận tiện. Nếu đề chỉ cho các đồ thị, cần xác định các miền kín hữu hạn trước khi chọn cận. Kết quả không âm, có đơn vị diện tích khi hai trục đều mang đơn vị độ dài.
 
-**Đề:** Mặt cắt có h(x)=3−x/2 (m), 0≤x≤4 (m). Tính diện tích.
+    **Ứng dụng:** Nếu giá cầu \(D(x)\) và giá cung \(P(x)\) gặp nhau tại \((x_0;p_0)\), và \(D(x)\ge p_0\ge P(x)\) trên \([0;x_0]\), thặng dư tiêu dùng là \(\int_0^{x_0}(D(x)-p_0)\,dx\), thặng dư sản xuất là \(\int_0^{x_0}(p_0-P(x))\,dx\). Trục đứng biểu diễn giá trên mỗi đơn vị sản phẩm, nên tích phân có đơn vị tiền.
 
-**Lời giải có suy luận:** h≥1, S=[3x−x²/4]_0^4=12−4=8m². Lý do chọn cách giải: Nêu biến x và đơn vị, mô tả hai cận, xét h≥0, rồi tính số và thứ nguyên. Kiểm điều kiện áp dụng: Phải phân biệt diện tích (m²) với thể tích (m³), không dùng công thức khi độ cao đổi dấu mà chưa chia.
+    ### 2.2. Ứng dụng tích phân để tính thể tích vật thể
 
-**Bẫy cần tự phát hiện:** Nhìn thấy tích phân rồi gọi kết quả m³ thay vì m², hoặc quên kiểm miền vật lý.
+    #### a) Tính thể tích của vật thể
 
-<!-- OUTCOME_ID: G12-CHIV-B13-O06 -->
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Thể tích theo mặt cắt.</strong><p>Vật thể nằm giữa hai mặt phẳng vuông góc với \(Ox\) tại \(x=a,x=b\), \(a&lt;b\). Nếu mặt cắt tại hoành độ \(x\) có diện tích \(S(x)\) là hàm liên tục trên \([a;b]\), thì</p><div class="arithmatex">\(\displaystyle V=\int_a^b S(x)\,dx.\)</div><p>Diện tích mặt cắt không âm. Độ dày lát tính theo phương vuông góc với mặt cắt, nên đơn vị thể tích là đơn vị diện tích nhân đơn vị độ dài.</p></div>
 
-### 6. Thể tích bằng tích phân diện tích mặt cắt
+    Chọn trục vuông góc với các mặt cắt thuận tiện; xác định cận; tìm kích thước mặt cắt theo \(x\) bằng hình học, Thalès, đồng dạng hoặc phương trình biên; chuyển kích thước thành diện tích rồi tích phân. Với thiết diện hình vuông cạnh \(\ell\), \(S=\ell^2\); với hình tròn bán kính \(r\), \(S=\pi r^2\); nếu biết đường kính \(d\), \(S=\pi d^2/4\).
 
-- **Vì sao cần biết:** Một khối không đều có lát cắt vuông góc thay đổi theo vị trí; lấy tích phân mặt cắt khôi phục thể tích.
+    | Hình khối | Diện tích thiết diện theo chiều cao \(x\) | Thể tích |
+    | :-- | :-- | :-- |
+    | Lăng trụ đáy diện tích \(B\), cao \(h\) | \(S(x)=B\) | \(Bh\) |
+    | Chóp đáy diện tích \(B\), cao \(h\); gốc ở đỉnh | \(B(x/h)^2\) | \(Bh/3\) |
+    | Chóp cụt đều cao \(h\), hai đáy \(B_0,B_1\) | \([\sqrt{B_0}+(\sqrt{B_1}-\sqrt{B_0})x/h]^2\) | \(\frac h3(B_0+\sqrt{B_0B_1}+B_1)\) |
 
-- **Kiến thức tiền đề:** Diện tích mặt cắt S(x) theo một trục dài, tổng thể tích các lát mỏng.
+    Trong bảng, \(0\le x\le h,\ h>0\); mặt cắt song song đáy. Với chóp cụt đều chọn gốc ở mặt đáy có diện tích \(B_0\). Các công thức thể tích đều thu được bằng tích phân diện tích trong cột giữa.
 
-- **Bản chất trước công thức:** Nếu lát cắt vuông góc Ox tại x có diện tích S(x)≥0, V=∫_a^b S(x)dx.
+    #### b) Tính thể tích khối tròn xoay
 
-- **Định nghĩa và công thức:** \(V=\int_a^b S(x)dx.\)
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Khối tròn xoay.</strong><p>Cho \(f\) liên tục, không âm trên \([a;b]\). Khi quay miền giới hạn bởi đồ thị \(y=f(x)\), trục hoành và hai đường thẳng \(x=a,x=b\) quanh \(Ox\), ta được một khối tròn xoay. Mặt cắt vuông góc \(Ox\) tại \(x\) là hình tròn bán kính \(f(x)\).</p></div>
 
-- **Điều kiện và giới hạn:** S(x) phải tính bằng đơn vị diện tích, dx là độ dày đơn vị dài; V là đơn vị lập phương.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc — Thể tích khối tròn xoay quanh Ox.</strong><p>Diện tích mặt cắt là \(S(x)=\pi f(x)^2\), do đó</p><div class="arithmatex">\(\displaystyle V=\pi\int_a^b[f(x)]^2\,dx.\)</div><p>Với miền giữa đồ thị bất kì liên tục và \(Ox\), bán kính là \(|f(x)|\), nên công thức vẫn đúng. Không dùng nguyên dạng cho một miền không có biên \(Ox\) hoặc quay quanh một trục khác.</p></div>
 
-- **Lý do chọn phương pháp:** Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B13_FIG03_REVOLUTION_AUTHORING_20261124.svg" alt="Đoạn đứng trong tam giác quay quanh Ox tạo đĩa tròn có bán kính bằng độ cao"><figcaption>Đọc từ trái sang phải: đoạn đứng ở \(x=3\) có độ dài \(1{,}5\), quay thành hình tròn diện tích \(2{,}25\pi\). Công thức lấy tích phân diện tích các mặt cắt như vậy.</figcaption></figure>
 
-#### Ví dụ có suy luận
+    | Khối | Bán kính thiết diện \(r(x)\) | Thể tích |
+    | :-- | :-- | :-- |
+    | Trụ cao \(h\), bán kính \(R\) | \(R,\ 0\le x\le h\) | \(\pi R^2h\) |
+    | Nón cao \(h\), bán kính đáy \(R\) | \(Rx/h,\ 0\le x\le h\) | \(\pi R^2h/3\) |
+    | Cầu bán kính \(R\) | \(\sqrt{R^2-x^2},\ -R\le x\le R\) | \(4\pi R^3/3\) |
+    | Nón cụt cao \(h\), bán kính \(r,R\) | \(r+(R-r)x/h,\ 0\le x\le h\) | \(\pi h(r^2+rR+R^2)/3\) |
 
-**Đề:** Khối có S(x)=3x² (cm²) tại 0≤x≤2 (cm). Tính V.
+    Điều kiện kích thước dương; trường hợp một bán kính nón cụt bằng 0 trở về nón. Khi một miền cho tiết diện vành khăn, dùng quy tắc thể tích tổng quát với diện tích hình tròn ngoài trừ diện tích hình tròn trong. Đây là lưu ý mở rộng từ công thức mặt cắt, không phải công thức đĩa áp dụng máy móc.
 
-**Lời giải có suy luận:** V=∫_0²3x²dx=[x³]_0²=8 cm³. Lý do chọn cách giải: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài. Kiểm điều kiện áp dụng: S(x) phải tính bằng đơn vị diện tích, dx là độ dày đơn vị dài; V là đơn vị lập phương.
+=== "Ví dụ"
 
-**Bẫy cần tự phát hiện:** Nhầm tích phân cạnh hình vuông với tích phân diện tích (quên bình phương).
+    ### 3.1. Diện tích khi đồ thị tiếp xúc trục hoành
 
-<!-- OUTCOME_ID: G12-CHIV-B13-O07 -->
+    **Đề bài.** Tính diện tích giới hạn bởi \(y=-(x-1)^2\), \(Ox\), \(x=0,x=3\).
 
-### 7. Khối có lát cắt hình tròn
+    **Phân tích:** Hàm không dương trên cả đoạn. Nghiệm \(x=1\) là nghiệm tiếp xúc, không đổi dấu.
 
-- **Vì sao cần biết:** Biết bán kính của các lát cắt tròn tại từng vị trí cho phép tính thể tích vật có hình dạng biến thiên.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Vì \(|-(x-1)^2|=(x-1)^2\), diện tích là \(\int_0^3(x-1)^2\,dx=[(x-1)^3/3]_0^3=(8-(-1))/3=3\).</p></div>
 
-- **Kiến thức tiền đề:** Diện tích hình tròn πr², r(x)≥0.
+    **Kiểm lại:** Diện tích hai phần là \(1/3\) và \(8/3\); tổng bằng 3. Không bắt buộc chia tại 1 vì hiệu không đổi dấu.
 
-- **Bản chất trước công thức:** Nếu mỗi lát vuông góc Ox là hình tròn bán kính r(x), S(x)=πr(x)², V=π∫_a^b r(x)²dx.
+    ### 3.2. Diện tích từ đồ thị lượng giác đổi dấu
 
-- **Định nghĩa và công thức:** \(V=\pi\int_a^b r(x)^2dx.\)
+    **Đề bài.** Tính diện tích giới hạn bởi \(y=\cos x\), \(Ox\), \(x=0,x=3\pi/2\).
 
-- **Điều kiện và giới hạn:** Phải phân biệt bán kính và đường kính; r(x) phải không âm và thuộc đơn vị độ dài.
+    **Phân tích:** Cosin đổi dấu tại \(\pi/2\) và bằng 0 tại cận phải; trên \([\pi/2;3\pi/2]\) cosin không dương.
 
-- **Lý do chọn phương pháp:** Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(S=\int_0^{\pi/2}\cos x\,dx-\int_{\pi/2}^{3\pi/2}\cos x\,dx=1-(-1-1)=3\).</p></div>
 
-#### Ví dụ có suy luận
+    **Kiểm lại:** Diện tích phần dương bằng 1, phần âm về vị trí có diện tích 2. Tích phân có dấu bằng \(-1\), không phải diện tích.
 
-**Đề:** Lát cắt tròn bán kính r(x)=x+1 (cm), x∈[0,1]cm. Tính V.
+    ### 3.3. Tìm cận từ giao điểm của hai đồ thị
 
-**Lời giải có suy luận:** V=π∫_0¹(x+1)²dx=π[(x+1)³/3]_0¹=7π/3 cm³. Lý do chọn cách giải: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác. Kiểm điều kiện áp dụng: Phải phân biệt bán kính và đường kính; r(x) phải không âm và thuộc đơn vị độ dài.
+    **Đề bài.** Tính diện tích miền kín giữa \(y=6x-x^2\) và \(y=2x\).
 
-**Bẫy cần tự phát hiện:** Bình phương đường kính thay vì bán kính, làm kết quả lớn gấp4.
+    **Phân tích:** Hai đồ thị tự tạo miền kín. Giải giao điểm, rồi xét dấu hiệu.
 
-<!-- OUTCOME_ID: G12-CHIV-B13-O08 -->
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(6x-x^2=2x\) tương đương \(x(4-x)=0\), nên hai cận là 0 và 4. Hiệu \(4x-x^2=x(4-x)\ge0\) trên đoạn đó. Do vậy \(S=\int_0^4(4x-x^2)\,dx=[2x^2-x^3/3]_0^4=32-64/3=32/3\).</p></div>
 
-### 8. Khối tròn xoay quanh trục Ox
+    **Kiểm lại:** Chiều cao lớn nhất bằng 4 tại \(x=2\); diện tích không vượt quá \(4\cdot4=16\).
 
-- **Vì sao cần biết:** Khi quay miền phẳng giới hạn bởi y=f(x) và Ox quanh Ox, mỗi lát cắt thành một đĩa tròn.
+    ### 3.4. Hai đồ thị lượng giác đổi vị trí
 
-- **Kiến thức tiền đề:** Diện tích đĩa πr² và tích phân theo chiều dài.
+    **Đề bài.** Tính diện tích giữa \(y=\sin x,y=\cos x\) trên \([0;\pi/2]\).
 
-- **Bản chất trước công thức:** Khối tròn xoay quay miền giữa y=f(x) và Ox, x=a,b quanh Ox có V=π∫_a^b[f(x)]²dx.
+    **Phân tích:** Hai hàm bằng nhau tại \(\pi/4\); so sánh ở hai đầu để nhận biết vị trí.
 
-- **Định nghĩa và công thức:** \(V=\pi\int_a^b [f(x)]^2dx.\)
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Trên \([0;\pi/4]\), \(\cos x\ge\sin x\); trên \([\pi/4;\pi/2]\), thứ tự ngược lại.</p><div class="arithmatex">\(\displaystyle S=[\sin x+\cos x]_0^{\pi/4}+[-\cos x-\sin x]_{\pi/4}^{\pi/2}=2(\sqrt2-1).\)</div></div>
 
-- **Điều kiện và giới hạn:** f liên tục trên đoạn; nếu f đổi dấu, bán kính là |f| và bình phương f vẫn đúng khi miền giữa đồ thị và Ox; tránh dùng công thức nếu hình đang quay quanh trục khác Ox.
+    **Kiểm lại:** Hai phần bằng nhau do phép đối xứng \(x\mapsto\pi/2-x\). Tích phân của hiệu không có giá trị tuyệt đối bằng 0.
 
-- **Lý do chọn phương pháp:** Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
+    ### 3.5. Thiết lập diện tích chênh lệch trong mô hình Lorenz
 
-#### Ví dụ có suy luận
+    **Đề bài.** Trong mô hình minh họa, \(x\in[0;1]\) là tỉ lệ hộ gia đình từ thu nhập thấp đến cao; \(L(x)=x^2\) là tỉ lệ thu nhập tích lũy. Tính diện tích giữa \(y=x\) (mô hình bình đẳng) và \(y=L(x)\).
 
-**Đề:** Quay miền dưới y=2x trên [0,2] quanh Ox. Tính V.
+    **Phân tích:** Trên \([0;1]\), \(x\ge x^2\); dùng tỉ lệ chứ không phải số phần trăm từ 0 đến 100.
 
-**Lời giải có suy luận:** V=π∫_0²(2x)²dx=4π[x³/3]_0²=32π/3. Lý do chọn cách giải: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm. Kiểm điều kiện áp dụng: f liên tục trên đoạn; nếu f đổi dấu, bán kính là |f| và bình phương f vẫn đúng khi miền giữa đồ thị và Ox; tránh dùng công thức nếu hình đang quay quanh trục khác Ox.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(S=\int_0^1(x-x^2)\,dx=[x^2/2-x^3/3]_0^1=1/6\).</p><p>Diện tích này đo khoảng chênh giữa hai đường trong mô hình trên. Nếu cả hai trục được đổi thành thang phần trăm, diện tích theo tọa độ mới gấp \(100^2\) lần; không so trực tiếp hai số nếu thang đo khác nhau.</p></div>
 
-**Bẫy cần tự phát hiện:** Nhầm V=π∫f dx hoặc quên bình phương bán kính; dùng diện tích m² làm thể tích m³.
+    **Kiểm lại:** Hai đường cùng qua \((0;0),(1;1)\), và miền chênh nằm trong tam giác dưới \(y=x\) có diện tích \(1/2\). Đây là mô hình giả định, không phải dữ liệu thu nhập của một quốc gia cụ thể.
 
-## 3. Đọc hình minh họa gốc
+    ### 3.6. Thể tích từ tiết diện không phải hình tròn
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHIV-B13-TWO-CURVES-R00.png" alt="Hai đồ thị y=x và y=x³ trên [-1,1] giao tại -1, 0, 1; đổi đường trên và dưới tại x=0. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán." /><figcaption>Hai đồ thị y=x và y=x³ trên [-1,1] giao tại -1, 0, 1; đổi đường trên và dưới tại x=0. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán.</figcaption></figure>
+    **Đề bài.** Một vật thể nằm giữa \(x=0\) và \(x=4\) (cm). Mặt cắt vuông góc \(Ox\) là tam giác vuông có hai cạnh góc vuông \(x+1\) và 3 cm. Tính thể tích.
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHIV-B13-VOLUME-SLICES-R00.png" alt="Một khối có lát cắt hình vuông cạnh x+1, diện tích S(x)=(x+1)²; tích phân theo x là thể tích. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán." /><figcaption>Một khối có lát cắt hình vuông cạnh x+1, diện tích S(x)=(x+1)²; tích phân theo x là thể tích. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán.</figcaption></figure>
+    **Phân tích:** Diện tích mỗi tam giác là nửa tích hai cạnh góc vuông, không dùng công thức khối tròn xoay.
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHIV-B13-REVOLUTION-R00.png" alt="Miền dưới đường y=sqrt(4-x²) từ 0 đến2 quay quanh Ox, mỗi lát cắt là đĩa bán kính y và diện tích πy². Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán." /><figcaption>Miền dưới đường y=sqrt(4-x²) từ 0 đến2 quay quanh Ox, mỗi lát cắt là đĩa bán kính y và diện tích πy². Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán.</figcaption></figure>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(S(x)=3(x+1)/2\) cm². Vậy \(V=\int_0^4 3(x+1)/2\,dx=\frac32[x^2/2+x]_0^4=18\) cm³.</p></div>
 
-## 4. Tự thử trước Core
+    **Kiểm lại:** Hai diện tích đầu mút là \(1{,}5\) và \(7{,}5\) cm². Vì \(S(x)\) tuyến tính, trung bình là \(4{,}5\) cm²; nhân 4 cm được 18 cm³.
 
-Hãy tự giải rồi mới chủ động mở đối chiếu. Không ghi điểm hay Mastery.
+    ### 3.7. Thể tích khối tròn xoay có biên parabol
 
-<!-- FIRST_TRY_ID: B13-T01 -->
-### Tình huống 1
+    **Đề bài.** Quay miền giữa \(y=4-x^2\), \(Ox\), \(x=0,x=2\) quanh \(Ox\). Tính thể tích.
 
-Hai đồ thị y=x² và y=x trên [0,1]: đồ thị nào ở trên và cần lấy hiệu theo chiều nào?
+    **Phân tích:** Hàm liên tục và không âm; bán kính là \(4-x^2\). Cần bình phương trước khi tích phân.
 
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(V=\pi\int_0^2(16-8x^2+x^4)\,dx=\pi[16x-8x^3/3+x^5/5]_0^2=\frac{256\pi}{15}\).</p></div>
 
-Trên [0,1], x≥x² nên lấy x−x². Diện tích =1/6.
+    **Kiểm lại:** Khối nằm trong hình trụ bán kính 4, cao 2, thể tích \(32\pi\). Kết quả nhỏ hơn \(32\pi\) và dương.
 
-</details>
+    ### 3.8. Thể tích chỏm cầu
 
-<!-- FIRST_TRY_ID: B13-T02 -->
-### Tình huống 2
+    **Đề bài.** Một chỏm cầu của khối cầu bán kính 5 cm có chiều cao 2 cm. Tính thể tích chỏm.
 
-Khi quay miền dưới y=x (0≤x≤2) quanh Ox, lát cắt tại x có bán kính và diện tích bao nhiêu?
+    **Phân tích:** Đặt tâm cầu ở gốc, trục \(Ox\) đi qua đỉnh chỏm ở \(x=5\). Mặt phẳng cắt ở \(x=5-2=3\); bán kính tiết diện là \(\sqrt{25-x^2}\).
 
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \(V=\pi\int_3^5(25-x^2)\,dx=\pi[25x-x^3/3]_3^5=\frac{52\pi}{3}\) cm³.</p></div>
 
-Bán kính r=x, diện tích đĩa S=πx²; thể tích =π∫_0²x²dx=8π/3.
+    **Kiểm lại:** Bán kính tại đáy chỏm là 4 cm, tại đỉnh là 0. Thể tích nhỏ hơn \(2\cdot16\pi=32\pi\) cm³. Tổng quát với \(0<h\le R\), lấy cận \(R-h,R\) cho \(V=\pi h^2(R-h/3)\).
 
-</details>
+    ### 3.9. Tính thể tích khi biết đường kính mặt cắt
 
-## 5. Chuyển sang Core và Luyện tập
+    **Đề bài.** Một chi tiết đặc dài 2 cm có các mặt cắt vuông góc trục là hình tròn đường kính \(d(x)=4+x\) cm, \(0\le x\le2\). Tìm thể tích.
 
-Sau khi học kiến thức và tự thử, em luyện đúng Bài 13; hãy tự giải từng câu trước khi nộp để xem lời giải hoặc rubric.
+    **Phân tích:** Bán kính chỉ bằng một nửa đường kính, diện tích là \(\pi(4+x)^2/4\).
 
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b13-core">✎ Core · Bài 13</a><a href="../luyen-tap/#b13-practice">✎ Luyện tập, Vận dụng và Tự luận</a><a href="../luyen-tap/#b13-help">Khi gặp khó khăn</a></nav></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(V=\frac\pi4\int_0^2(4+x)^2\,dx=\frac\pi{12}(6^3-4^3)=\frac{38\pi}{3}\) cm³.</p></div>
+
+    **Kiểm lại:** Bán kính đầu mút là 2 và 3 cm; thể tích phải nằm giữa \(8\pi\) và \(18\pi\) cm³. Công thức nón cụt với \(h=2,r=2,R=3\) cũng cho \(38\pi/3\).
+
+    ### 3.10. Mở rộng — Thể tích khi mặt cắt là vành khăn
+
+    **Đề bài.** Quay miền giới hạn bởi \(y=x+2\), \(y=1\), \(x=0,x=2\) quanh \(Ox\). Tính thể tích khối thu được.
+
+    **Phân tích:** Miền nằm hoàn toàn phía trên trục và không chạm trục. Khi quay, khoảng từ bán kính 1 đến \(x+2\) được quét, tạo vành khăn.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> \(S(x)=\pi[(x+2)^2-1]\). Vậy \(V=\pi\int_0^2(x^2+4x+3)\,dx=\pi(8/3+8+6)=50\pi/3\).</p></div>
+
+    **Kiểm lại:** Thể tích bằng thể tích nón cụt ngoài \(2\pi(2^2+2\cdot4+4^2)/3=56\pi/3\) trừ thể tích trụ rỗng \(2\pi\), đúng \(50\pi/3\). Không bình phương riêng hiệu hai bán kính.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Bỏ trị tuyệt đối hoặc lấy trị tuyệt đối quá muộn
+
+    **Sai ở đâu:** Tính diện tích bằng \(\left|\int_a^b f(x)\,dx\right|\) dù \(f\) đổi dấu.
+
+    **Vì sao sai:** Các phần trên và dưới trục đã triệt tiêu trước khi lấy trị tuyệt đối.
+
+    **Cách sửa:** Tìm mốc đổi dấu, tích phân biểu thức không âm trên mỗi đoạn rồi cộng. Chỉ dùng trị tuyệt đối ngoài tích phân khi hàm không đổi dấu.
+
+    ### 4.2. Chọn cận theo cảm giác từ hình
+
+    **Sai ở đâu:** Nhìn hình rồi tự đặt cận hoặc bỏ đường đứng đề cho.
+
+    **Vì sao sai:** Miền tích phân được quyết định bởi toàn bộ đường biên, không phải hình phác gần đúng.
+
+    **Cách sửa:** Giải giao điểm chính xác; ghi đủ các đường \(x=a,x=b\) nếu có; xác định miền kín thực sự được hỏi.
+
+    ### 4.3. Lấy tổng tung độ hoặc không đổi thứ tự trên–dưới
+
+    **Sai ở đâu:** Với hai đường nằm dưới \(Ox\), cộng độ lớn hai tung độ để tìm chiều cao.
+
+    **Vì sao sai:** Chiều cao lát đứng là khoảng cách giữa hai tung độ.
+
+    **Cách sửa:** Lập \(|f-g|\). Sau mỗi giao điểm, thử dấu của \(f-g\) để xác định đường trên và đường dưới.
+
+    ### 4.4. Tích phân kích thước thay cho diện tích mặt cắt
+
+    **Sai ở đâu:** Mặt cắt vuông cạnh \(x+1\) nhưng dùng \(V=\int(x+1)\,dx\).
+
+    **Vì sao sai:** Tích phân độ dài theo độ dài chỉ cho đại lượng có đơn vị diện tích.
+
+    **Cách sửa:** Tính \(S(x)=(x+1)^2\) trước, rồi tích phân theo chiều dày lát; kết quả có đơn vị thể tích.
+
+    ### 4.5. Nhầm tỉ số độ dài với tỉ số diện tích
+
+    **Sai ở đâu:** Chóp cắt ở nửa chiều cao thì diện tích mặt cắt bằng một nửa diện tích đáy.
+
+    **Vì sao sai:** Hai hình đồng dạng có tỉ số diện tích bằng bình phương tỉ số độ dài.
+
+    **Cách sửa:** Cạnh giảm còn một nửa thì diện tích còn một phần tư. Với chóp cụt, nội suy kích thước dài rồi bình phương, không nội suy diện tích trực tiếp.
+
+    ### 4.6. Dùng đường kính làm bán kính hoặc quên bình phương khi quay
+
+    **Sai ở đâu:** Tính \(V=\pi\int f(x)\,dx\), hoặc dùng \(S=\pi d^2\) khi \(d\) là đường kính.
+
+    **Vì sao sai:** Diện tích đĩa là \(\pi r^2\), với \(r\) là khoảng cách từ trục đến biên.
+
+    **Cách sửa:** Viết rõ \(r(x)\), đổi \(d\) thành \(d/2\) nếu cần, sau đó lấy bình phương và nhân \(\pi\).
+
+    ### 4.7. Dùng công thức đĩa cho mọi miền và mọi trục quay
+
+    **Sai ở đâu:** Quay miền cách trục một khoảng dương mà vẫn tính như đĩa đặc, hoặc dùng tung độ làm bán kính khi trục quay không phải \(Ox\).
+
+    **Vì sao sai:** Mặt cắt thật có thể là vành khăn; bán kính phải đo tới đúng trục quay.
+
+    **Cách sửa:** Vẽ đoạn trong miền tại một mặt cắt, hình dung đoạn đó quay thành hình gì; tính đúng diện tích mặt cắt trước khi tích phân.
+
+    **Học tiếp:** [Core và Luyện tập Bài 13](../luyen-tap/#b13-core) · [Tự kiểm tra cuối chương IV](../tu-kiem-tra-chuong/).
+
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK KNTT Toán 12 tập 2, trang in 19–26. Các ví dụ, số liệu mô hình và hình minh họa được SLM biên soạn riêng.</p>
