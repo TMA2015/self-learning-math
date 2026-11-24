@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 419,
+    "legacy_combined_answer_items": 373,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_290_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_336_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 290 manually verified and key separated at checkpoints 29–38; 419 remain combined, answer_key=null. Remaining: 327 Topic (157 cd14–21 practice + 170 topic knowledge first try) and 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 336 manually verified and key separated at checkpoints 29–39; 373 remain combined, answer_key=null. Remaining: 281 Topic (134 cd15–21 practice + 147 topic knowledge first try) and 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 419,
+      "remaining_combined_answer_items": 373,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 290,
-        "remaining_count": 419,
+        "reviewed_count": 336,
+        "remaining_count": 373,
         "batches": [
           {
             "checkpoint": 29,
@@ -9402,6 +9402,641 @@
               "CĐ12 P01–02 explain sign and supplementary angles; P04 explains exact sin75° via addition formula (not a new mandatory G10 outcome); P05 distinguishes circumradius and inradius; P06 proves both solutions viable and exactly two triangles up to congruence; P09 checks triangle inequality; P10 rationalizes exact distances and checks side ordering.",
               "CĐ13 P03/P16 specify straight segments before adding traveled distances; P06 derive midpoint and centroid; P11 names the box and applies Pythagoras twice. All numerical answers unchanged.",
               "Correction to CP37 remaining scope: 447 consisted of 355 Topic + 92 SGK supplemental/public items. Current remainder 419 = 327 Topic + 92 SGK. Earlier 262 verified SGK regular chapter shards, not all SGK supplemental/public items. CĐ01–11 and CĐ22 practice shards have zero combined items; CĐ22 has first-try records in shared topic shard. No direct S1 PDF reread or full outcome/PED/reveal/D6/independent verdict. No runtime/release."
+            ]
+          },
+          {
+            "checkpoint": 39,
+            "baseline": "364cc5f8846f77388f42d347c63433e97296b9b2",
+            "reviewed_candidate": "a3649390c099971c4ac6637d12a0b415f5cf10b2",
+            "scope": "CĐ14 practice and first try: 46 items (23+23), all 46 stem/solution pairs matched within their ID-scoped canonical blocks and public learner projections after whitespace normalization. Canonical blob d3c54d3867e6e831d6968a81d9c24d9d6b219363; historical public practice blob bb6cfd2534b12967c510ea4ef0a826e1306a49e0 and knowledge blob a67f3e9a9e75a6d9ab006f5525848147680dbbe5. Recalculated results, separated keys, mapped existing G10 ChVII skills and retained Topic outcomes. 25 targeted stem/solution improvements; all original remediation text preserved.",
+            "shards": [
+              {
+                "shard": "cd14",
+                "before": "837a13f8ab77b019b5a51780bad54586806fa66a",
+                "after": "dceaef9e27bc95c06a7a955773e7602ecde84716",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP14-P01",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Một pháp tuyến n⃗=(−2;5), một chỉ phương u⃗=(5;2); n⃗·u⃗=0.",
+                    "skill_ids": [
+                      "G10-B19-NORMAL_DIRECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P02",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "3x−2y+7=0.",
+                    "skill_ids": [
+                      "G10-B19-GENERAL_POINT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P03",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "x=2−t, y=−3+4t (t∈ℝ); M(4;−11) khi t=−2.",
+                    "skill_ids": [
+                      "G10-B19-PARAMETRIC"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O03"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P04",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "x−2y+4=0.",
+                    "skill_ids": [
+                      "G10-B19-TWO_POINTS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P05",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "M thuộc d; N không thuộc d.",
+                    "skill_ids": [
+                      "G10-B19-MEMBERSHIP"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P06",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "3x−y−8=0.",
+                    "skill_ids": [
+                      "G10-B19-MULTISTEP",
+                      "G10-B20-INTERSECTION",
+                      "G10-B20-RELATIVE_POSITION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O06"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P07",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "V(t)=10+4t (lít), t tính bằng phút; V(6)=34 lít nếu vẫn đổ đều và chưa tràn.",
+                    "skill_ids": [
+                      "G10-B19-LINEAR_MODEL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O07"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P08",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Hai đường song song phân biệt.",
+                    "skill_ids": [
+                      "G10-B20-RELATIVE_POSITION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O08"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P09",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "3x+2y=0.",
+                    "skill_ids": [
+                      "G10-B20-PERPENDICULAR",
+                      "G10-B19-GENERAL_POINT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O09"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P10",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Giao điểm (2;1).",
+                    "skill_ids": [
+                      "G10-B20-INTERSECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O10"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P11",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Khoảng cách bằng 1.",
+                    "skill_ids": [
+                      "G10-B20-DISTANCE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O11"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P12",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "60°.",
+                    "skill_ids": [
+                      "G10-B20-ANGLE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O12"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P13",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "(x+2)²+(y−1)²=16; P thuộc đường tròn.",
+                    "skill_ids": [
+                      "G10-B21-CIRCLE_STANDARD"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O13"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P14",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Tâm I(3;−1), bán kính R=3.",
+                    "skill_ids": [
+                      "G10-B21-CIRCLE_GENERAL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O14"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P15",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "x+2y−13=0.",
+                    "skill_ids": [
+                      "G10-B21-CIRCLE_TANGENT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O15"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P16",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Tâm I(4;3); R=5.",
+                    "skill_ids": [
+                      "G10-B21-CIRCLE_THROUGH_POINTS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O16"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P17",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Một giao điểm (1;1), tiếp xúc.",
+                    "skill_ids": [
+                      "G10-B21-LINE_CIRCLE_POSITION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O17"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P18",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "F₁(−4;0), F₂(4;0).",
+                    "skill_ids": [
+                      "G10-B22-ELLIPSE_PARAMETERS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O18"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P19",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "F₁(−7;0), F₂(7;0).",
+                    "skill_ids": [
+                      "G10-B22-HYPERBOLA_PARAMETERS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O19"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P20",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "y=(5/4)x và y=−(5/4)x.",
+                    "skill_ids": [
+                      "G10-B22-HYPERBOLA_ASYMPTOTES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O20"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P21",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "F(5/2;0); đường chuẩn x=−5/2.",
+                    "skill_ids": [
+                      "G10-B22-PARABOLA_FOCUS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O21"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P22",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "(−4;0) và (4;0).",
+                    "skill_ids": [
+                      "G10-B22-CONIC_INTERSECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O22"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-P23",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "y²=16x (tọa độ tính bằng cm); bề rộng 24 cm.",
+                    "skill_ids": [
+                      "G10-B22-PARABOLA_FOCUS",
+                      "G10-B22-CONIC_MODEL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O23"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 0
+              },
+              {
+                "shard": "topic-knowledge-first-try",
+                "before": "6bd04725b7c7066d82990d71cf862de47542ea09",
+                "after": "b4d1f29370379fe819a4a18a4a1f4f3ba72122d8",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP14-T01",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Một vectơ chỉ phương là (−2;3) (hoặc mọi bội khác 0 của nó).",
+                    "skill_ids": [
+                      "G10-B19-NORMAL_DIRECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T02",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "x−2y+4=0.",
+                    "skill_ids": [
+                      "G10-B19-GENERAL_POINT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T03",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "M(5;5).",
+                    "skill_ids": [
+                      "G10-B19-PARAMETRIC"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O03"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T04",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "x+y−2=0.",
+                    "skill_ids": [
+                      "G10-B19-TWO_POINTS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T05",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Có, điểm thuộc đường thẳng.",
+                    "skill_ids": [
+                      "G10-B19-MEMBERSHIP"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T06",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "3x+y−14=0.",
+                    "skill_ids": [
+                      "G10-B19-MULTISTEP",
+                      "G10-B20-INTERSECTION",
+                      "G10-B20-RELATIVE_POSITION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O06"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T07",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "13 lít, nếu vẫn đổ đều và chưa tràn.",
+                    "skill_ids": [
+                      "G10-B19-LINEAR_MODEL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O07"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T08",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Hai đường trùng nhau.",
+                    "skill_ids": [
+                      "G10-B20-RELATIVE_POSITION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O08"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T09",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "3x+y−5=0.",
+                    "skill_ids": [
+                      "G10-B20-PERPENDICULAR",
+                      "G10-B19-GENERAL_POINT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O09"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T10",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Giao điểm (3;2).",
+                    "skill_ids": [
+                      "G10-B20-INTERSECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O10"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T11",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "2 đơn vị độ dài.",
+                    "skill_ids": [
+                      "G10-B20-DISTANCE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O11"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T12",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "45°.",
+                    "skill_ids": [
+                      "G10-B20-ANGLE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O12"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T13",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "(x+1)²+(y−3)²=4.",
+                    "skill_ids": [
+                      "G10-B21-CIRCLE_STANDARD"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O13"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T14",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Tâm I(−1;2), R=2.",
+                    "skill_ids": [
+                      "G10-B21-CIRCLE_GENERAL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O14"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T15",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "3x+4y=25.",
+                    "skill_ids": [
+                      "G10-B21-CIRCLE_TANGENT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O15"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T16",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Tâm I(3;4), R=5.",
+                    "skill_ids": [
+                      "G10-B21-CIRCLE_THROUGH_POINTS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O16"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T17",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Một điểm chung (5;0), tiếp xúc.",
+                    "skill_ids": [
+                      "G10-B21-LINE_CIRCLE_POSITION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O17"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T18",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "F₁(−3;0), F₂(3;0).",
+                    "skill_ids": [
+                      "G10-B22-ELLIPSE_PARAMETERS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O18"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T19",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "F₁(−5;0), F₂(5;0).",
+                    "skill_ids": [
+                      "G10-B22-HYPERBOLA_PARAMETERS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O19"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T20",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "y=(3/5)x và y=−(3/5)x.",
+                    "skill_ids": [
+                      "G10-B22-HYPERBOLA_ASYMPTOTES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O20"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T21",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "F(3/2;0); đường chuẩn x=−3/2.",
+                    "skill_ids": [
+                      "G10-B22-PARABOLA_FOCUS"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O21"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T22",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "Hai giao điểm (1;2) và (1;−2).",
+                    "skill_ids": [
+                      "G10-B22-CONIC_INTERSECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O22"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP14-T23",
+                    "source_blob": "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
+                    "answer_key": "y²=12x, tọa độ tính bằng cm.",
+                    "skill_ids": [
+                      "G10-B22-PARABOLA_FOCUS",
+                      "G10-B22-CONIC_MODEL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP14-O23"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 147
+              }
+            ],
+            "notes": [
+              "P23 and T23 explicitly identify parabolic cross-section, vertex O and focus on positive Ox to resolve orientation ambiguity; P23 width 24 cm, T23 y²=12x. P07/T07 specify continuing constant inflow, no outflow and no overflow. T03/T16/T19 state missing line/circle/hyperbola context.",
+              "P04/P06/P09/T04/T06/T09 derive line equations and distinguish normal/direction, parallel and perpendicular; P14/T14 show completing squares; P15/T15 derive tangent and check point; P17/T17 justify unique contact; P11/P12/T20/T22 strengthen formula substitution.",
+              "46 mathematical results unchanged. 147 first-try records outside CĐ14 unchanged; original provenance, outcome, hints, remediation, ID and interaction preserved. Not a full D6 link audit, full coverage, original SGK PDF re-read, independent verdict or interaction conversion. No release authorization."
             ]
           }
         ]
