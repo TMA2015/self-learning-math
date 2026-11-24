@@ -482,7 +482,7 @@
   {
     "item_id": "THPT-G11-CHI-RD1-13",
     "content_version": "b34b5f232b41e03eaddd1c3566ce2f73881ec09f8b3449432814b763d754f107",
-    "stem": "Cho M(t)=25+2sin(πt/4), 0≤t≤8, đơn vị °C/giờ. Tính chu kỳ, thời điểm cao/thấp nhất và các giá trị tương ứng trên miền.",
+    "stem": "Cho mô hình nhiệt độ M(t)=25+2sin(πt/4), trong đó t là thời gian tính bằng giờ, M(t) tính bằng °C, 0≤t≤8. Tìm chu kỳ của hàm tuần hoàn dùng trong mô hình, thời điểm nhiệt độ cao nhất/thấp nhất và các giá trị tương ứng trên miền đã cho.",
     "answer_key": "Chu kỳ 8 giờ; max 27°C lúc t=2; min 23°C lúc t=6.",
     "worked_solution": "ω=π/4 nên T=8 giờ. Sin=1 tại πt/4=π/2 ⇒ t=2; sin=-1 tại 3π/2 ⇒ t=6.",
     "skill_ids": [],
