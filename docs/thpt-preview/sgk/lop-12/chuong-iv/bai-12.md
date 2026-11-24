@@ -14,7 +14,7 @@
 
     Một xe đang chạy với vận tốc \(18\) m/s. Khi phanh, vận tốc giảm đều theo công thức \(v(t)=18-6t\) m/s cho đến khi xe dừng, trong đó \(t\) tính bằng giây. Xe dừng ở \(t=3\). Nếu vận tốc không đổi, quãng đường bằng vận tốc nhân thời gian. Nhưng ở đây vận tốc thay đổi từng lúc, không thể lấy vận tốc ban đầu nhân 3.
 
-    Trên đồ thị vận tốc – thời gian, một chặng rất ngắn \(\Delta t\) cho độ dời xấp xỉ \(v(t)\Delta t\), tương ứng với diện tích một hình chữ nhật hẹp. Khi chia thời gian thành những chặng ngày càng nhỏ, tổng diện tích các hình chữ nhật xấp xỉ ngày càng tốt diện tích dưới đồ thị. Trong ví dụ này, đồ thị là đoạn thẳng từ \((0;18)\) đến \((3;0)\), nên diện tích tam giác bằng \(3\cdot18/2=27\). Tích phân giúp tính chính xác lượng tích lũy ấy, kể cả khi đồ thị là đường cong.
+    Trên đồ thị vận tốc – thời gian, một chặng rất ngắn \(\Delta t\) cho độ dời xấp xỉ \(v(t)\Delta t\), tương ứng với diện tích một hình chữ nhật hẹp. Khi chia thời gian thành nhiều chặng sao cho độ dài chặng lớn nhất tiến về 0, tổng diện tích các hình chữ nhật tiến tới diện tích dưới đồ thị vận tốc không âm. Đó cũng là giới hạn của tổng độ dời ước tính trên các chặng. Trong ví dụ này, đồ thị là đoạn thẳng từ \((0;18)\) đến \((3;0)\), nên diện tích tam giác bằng \(3\cdot18/2=27\). Tích phân giúp tính chính xác lượng tích lũy ấy, kể cả khi đồ thị là đường cong.
 
     <!-- OUTCOME_ID: G12-CHIV-B12-O04 -->
     Với hàm \(f\) liên tục, không âm trên \([a;b]\), miền giới hạn bởi đồ thị \(y=f(x)\), trục hoành và hai đường thẳng \(x=a,x=b\) được gọi là hình thang cong (\(a<b\)). Tên gọi này bao gồm cả trường hợp đường biên phía trên là đoạn thẳng. Nếu \(f\) âm trên một phần đoạn, ta không thể gọi toàn miền ấy là hình thang cong theo định nghĩa này.
@@ -164,7 +164,7 @@
 
     Cũng có thể dùng tích phân để tính lượng thay đổi của lợi nhuận từ lợi nhuận biên, hoặc lượng nước từ lưu lượng. Chỉ cần tốc độ biến đổi trên khoảng cần xét, không nhất thiết biết giá trị ban đầu. Nếu muốn tìm giá trị cuối, phải cộng lượng thay đổi vào giá trị ban đầu.
 
-    **Vận dụng.** Bể có 50 lít nước lúc \(t=0\). Lưu lượng thực (dòng vào trừ dòng ra) là \(q(t)=4-2t\) lít/phút trong 4 phút. Tính lượng nước thay đổi, lượng nước cuối và tổng lượng nước tăng thêm hoặc giảm đi xét theo từng giai đoạn.
+    **Vận dụng.** Bể có 50 lít nước lúc \(t=0\). Lưu lượng thực (dòng vào trừ dòng ra) là \(q(t)=4-2t\) lít/phút trong 4 phút. Tính lượng nước tăng trong giai đoạn đầu, lượng nước giảm trong giai đoạn sau, tổng độ lớn hai lần biến đổi, lượng thay đổi có dấu của cả 4 phút và lượng nước cuối.
 
     ??? question "Đối chiếu"
 
@@ -200,11 +200,11 @@
 
     ### 2.1. Khái niệm tích phân
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Hình thang cong.</strong><p>Với \(a&lt;b\), hàm \(f\) liên tục và không âm trên \([a;b]\), hình phẳng giới hạn bởi đồ thị \(y=f(x)\), trục hoành, \(x=a\) và \(x=b\) là hình thang cong.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Hình thang cong.</strong><p>Với \(a\lt b\), hàm \(f\) liên tục và không âm trên \([a;b]\), hình phẳng giới hạn bởi đồ thị \(y=f(x)\), trục hoành, \(x=a\) và \(x=b\) là hình thang cong.</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Định lí — Diện tích hình thang cong.</strong><p>Diện tích hình thang cong trên bằng \(F(b)-F(a)\), trong đó \(F\) là một nguyên hàm của \(f\) trên đoạn \([a;b]\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa tích phân.</strong><p>Cho \(f\) liên tục trên đoạn \([a;b]\), \(a&lt;b\), và \(F\) là một nguyên hàm của \(f\) trên đoạn ấy.</p><div class="arithmatex">\(\displaystyle\int_a^b f(x)\,dx=\left.F(x)\right|_a^b=F(b)-F(a).\)</div><p>\(a,b\) lần lượt là cận dưới, cận trên; \(f(x)\,dx\) là biểu thức dưới dấu tích phân; \(f(x)\) là hàm dưới dấu tích phân. Giá trị tích phân không phụ thuộc cách chọn nguyên hàm hoặc tên biến lấy tích phân.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa tích phân.</strong><p>Cho \(f\) liên tục trên đoạn \([a;b]\), \(a\lt b\), và \(F\) là một nguyên hàm của \(f\) trên đoạn ấy.</p><div class="arithmatex">\(\displaystyle\int_a^b f(x)\,dx=\left.F(x)\right|_a^b=F(b)-F(a).\)</div><p>\(a,b\) lần lượt là cận dưới, cận trên; \(f(x)\,dx\) là biểu thức dưới dấu tích phân; \(f(x)\) là hàm dưới dấu tích phân. Giá trị tích phân không phụ thuộc cách chọn nguyên hàm hoặc tên biến lấy tích phân.</p></div>
 
     Quy ước \(\int_a^a f(x)\,dx=0\) tại điểm \(a\) thuộc miền xác định, và \(\int_a^b f(x)\,dx=-\int_b^a f(x)\,dx\) khi \(a>b\) và \(f\) liên tục trên \([b;a]\).
 
@@ -216,7 +216,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính tuyến tính.</strong><p>Nếu \(f,g\) liên tục trên \([a;b]\) và \(k\) là số thực,</p><div class="arithmatex">\(\displaystyle\int_a^b kf(x)\,dx=k\int_a^b f(x)\,dx.\)</div><div class="arithmatex">\(\displaystyle\int_a^b[f(x)\pm g(x)]\,dx=\int_a^b f(x)\,dx\pm\int_a^b g(x)\,dx.\)</div></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính cộng theo đoạn.</strong><p>Với \(a&lt;c&lt;b\) và \(f\) liên tục trên \([a;b]\),</p><div class="arithmatex">\(\displaystyle\int_a^b f(x)\,dx=\int_a^c f(x)\,dx+\int_c^b f(x)\,dx.\)</div><p>Kết hợp quy ước đảo cận, hệ thức vẫn đúng khi thay đổi thứ tự ba mốc, miễn hàm liên tục trên đoạn chứa chúng.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính cộng theo đoạn.</strong><p>Với \(a\lt c\lt b\) và \(f\) liên tục trên \([a;b]\),</p><div class="arithmatex">\(\displaystyle\int_a^b f(x)\,dx=\int_a^c f(x)\,dx+\int_c^b f(x)\,dx.\)</div><p>Kết hợp quy ước đảo cận, hệ thức vẫn đúng khi thay đổi thứ tự ba mốc, miễn hàm liên tục trên đoạn chứa chúng.</p></div>
 
     **Ứng dụng trong tính toán:** Dùng tuyến tính để tách các hạng tử cùng cận, dùng cộng theo đoạn để xử lí biểu thức giá trị tuyệt đối, hàm có công thức khác nhau trên từng phần (trong phạm vi hàm liên tục), hoặc tìm tích phân từ các giá trị đã biết.
 
@@ -225,7 +225,7 @@
     | Đại lượng | Công thức |
     | :-- | :-- |
     | Độ dịch chuyển có dấu | \(\int_a^b v(t)\,dt\) |
-    | Tổng quãng đường | \(\int_a^b |v(t)|\,dt\) |
+    | Tổng quãng đường | \(\int_a^b \lvert v(t)\rvert\,dt\) |
     | Giá trị trung bình của hàm \(f\) | \(\dfrac{1}{b-a}\int_a^b f(t)\,dt\) |
 
     Kiểm miền của mô hình, đổi đơn vị thống nhất, phân biệt giá trị đầu/cuối với lượng thay đổi. Giá trị trung bình chỉ xác định bằng công thức trên khi \(a<b\).
