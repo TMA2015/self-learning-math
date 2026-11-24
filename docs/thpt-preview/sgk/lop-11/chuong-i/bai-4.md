@@ -196,13 +196,14 @@
 
     ### 3.1. So tập nghiệm trước khi gọi tương đương
 
-    **Đề bài.** Hai phương trình \(\dfrac{x-1}{x+1}=0\) và \(x^2-1=0\) có tương đương không?
+    **Đề bài.** Hai phương trình \(\dfrac{x-2}{x+2}=0\) và \(x^2-4=0\) có tương đương không?
 
-    **Phân tích:** Hai phương trình khác miền xác định; không thể chỉ khử mẫu rồi kết luận có cùng tập nghiệm. Cần giải từng phương trình và so hai tập nghiệm thực.
+    **Phân tích:** Phải giữ điều kiện mẫu khác \(0\), giải từng phương trình rồi so hai tập nghiệm thực.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Phương trình phân thức có điều kiện \(x\ne-1\); một phân số bằng \(0\) khi tử bằng \(0\), nên \(S_1=\{1\}\). Phương trình \(x^2-1=0\) có \(S_2=\{-1,1\}\). Vì \(S_1\ne S_2\), hai phương trình không tương đương.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Phương trình phân thức có điều kiện \(x\ne-2\), tử bằng \(0\) khi \(x=2\), nên \(S_1=\{2\}\). Phương trình \(x^2-4=0\) có \(S_2=\{-2,2\}\). Vì \(S_1\ne S_2\), hai phương trình không tương đương.</p></div>
 
-    **Kiểm lại:** \(x=-1\) bị cấm ở phương trình phân thức nhưng là nghiệm của \(x^2-1=0\). Không có phép biến đổi tương đương giữa hai tập nghiệm này.
+    **Kiểm lại:** \(x=-2\) bị loại khỏi miền xác định của phương trình thứ nhất nhưng là nghiệm của phương trình thứ hai.
+
 
     ### 3.2. Hai họ nghiệm của sin khi đối số có hệ số
 
