@@ -104,7 +104,7 @@ async function goldenW1Parity(page,browser,width,rel){
    const expected=[...source.split('=== "Lỗi thường gặp"')[1].matchAll(/^    ### (4\.\d+\..+)$/gm)].map(x=>x[1]);
    assert(expected.length>0,rel+" expected recovery headings");
    if(w2||w3||w4||w5||w6){
-    assert.equal(expected.length,rel.endsWith("/bai-5.md")?5:6);
+    assert.equal(expected.length,rel.endsWith("/bai-5.md")?5:w6&&/bai-2[5-7]\.md$/.test(rel)?8:6);
     const raw=await page.evaluate(async()=>{
      const doc=new DOMParser().parseFromString(await (await fetch(location.href)).text(),"text/html");
      const panel=doc.querySelectorAll("article .tabbed-block")[3];
