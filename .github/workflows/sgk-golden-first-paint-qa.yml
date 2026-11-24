@@ -3,6 +3,9 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md'
+      - 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md'
+      - 'docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md'
       - 'hooks/sgk_golden_first_paint.py'
       - 'scripts/test-sgk-golden-first-paint.cjs'
       - 'scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs'

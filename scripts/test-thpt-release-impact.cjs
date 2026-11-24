@@ -559,12 +559,18 @@ function isG11W1Tab4Hotfix(files){
  return files.length===G11_W1_TAB4_HOTFIX_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W1_TAB4_HOTFIX_FILES.has(p));
 }
 
+const G11_W1_REVIEW_DELTA_FILES=new Set([".github/workflows/sgk-golden-first-paint-qa.yml","docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs"]);
+function isG11W1ReviewDelta(files){
+ return files.length===G11_W1_REVIEW_DELTA_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W1_REVIEW_DELTA_FILES.has(p));
+}
+
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isG11W1ReviewDelta(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",reason:"OWNER_1039_W1_REVIEW_DELTA_EXACT_SOURCE"};
  if(isG11W1Tab4Hotfix(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",reason:"SGK_REL_006_EXACT_TAB4_PRESENTATION_ONLY"};
  if(isG11W1Release(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",reason:"EXACT_OWNER_1039_G11_W1_HANDOFF_SOURCE_AND_BROWSER"};
  if(isExactMathLabFullPage(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_25_MODELS_DIRECT_FULL_PAGE_WITH_200_BROWSER_GATES"};
@@ -703,6 +709,12 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const g11Review=[...G11_W1_REVIEW_DELTA_FILES];
+ assert.equal(classify(g11Review).impact,"SCOPED_LESSON");
+ assert.equal(classify(g11Review).changed_lessons,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md");
+ assert.equal(classify(g11Review.slice(1)).impact,"FULL");
+ assert.equal(classify([...g11Review,"docs/thpt-preview/sgk/lop-11/chuong-i/luyen-tap.md"]).impact,"FULL");
+ assert.equal(classify([...g11Review,"hooks/sgk_golden_first_paint.py"]).impact,"FULL");
  const g11Tab4Hotfix=[...G11_W1_TAB4_HOTFIX_FILES];
  assert.equal(classify(g11Tab4Hotfix).impact,"SCOPED_LESSON");
  assert.equal(classify(g11Tab4Hotfix).changed_lessons,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md");
