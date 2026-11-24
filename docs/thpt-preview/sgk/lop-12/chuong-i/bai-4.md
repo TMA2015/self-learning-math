@@ -45,6 +45,8 @@
 
         Giao \(Oy\) tại \((0;3)\), giao \(Ox\) tại \((-1;0),(3;0)\). Phác parabol mở xuống qua các điểm này, đỉnh \((1;4)\), đối xứng qua \(x=1\).
 
+        <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B04_FIG07_CHECK_QUADRATIC_20261124.svg" alt="Parabol mở xuống có đỉnh (1;4), cắt Ox tại −1,3 và Oy tại 3"><figcaption>Kiểm vị trí đỉnh, giao trục và hai nhánh.</figcaption></figure>
+
     ??? tip "Kiểm lỗi"
 
         Nếu phác parabol mở lên, hãy so dấu của \(g'\) tại \(0\) và \(2\) với hai mũi tên. Đỉnh \((1;4)\) phải nằm cao hơn các điểm lân cận.
@@ -90,6 +92,8 @@
 
         Giao \(Ox\) tại \(x=-\sqrt3,0,\sqrt3\); giao \(Oy\) tại \(O\). Tâm \(O\) vì \(y''=-6x=0\) tại \(0\) và hàm lẻ. Vẽ đường giảm từ đầu trái cao xuống \((-1;-2)\), tăng qua \(O\) tới \((1;2)\), rồi giảm về phía phải thấp, đi qua các giao điểm đã tìm.
 
+        <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B04_FIG08_CHECK_CUBIC_20261124.svg" alt="Đồ thị −x³+3x đi xuống tới cực tiểu (−1;−2), lên tới cực đại (1;2), rồi đi xuống"><figcaption>Kiểm hai cực trị, chiều đi của hai đầu và tâm O.</figcaption></figure>
+
     ??? tip "Kiểm lỗi"
 
         Nếu vẽ đầu phải đi lên, kiểm dấu hệ số bậc ba. Nếu hoán đổi cực đại và cực tiểu, xét lại dấu đạo hàm tại \(x=-2,0,2\).
@@ -125,6 +129,8 @@
         | \(y\) | \(2\) | ↗ | \(+\infty\) | ‖ | \(-\infty\) | ↗ | \(2\) |
 
         Giao trục tại \((-1/2;0)\) và \((0;1)\). Tâm \((-1;2)\), trục đối xứng \(y-2=\pm(x+1)\). Vẽ nhánh trái trên \(y=2\), nhánh phải dưới \(y=2\), mỗi nhánh đi lên theo chiều tăng của \(x\).
+
+        <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B04_FIG09_CHECK_RATIONAL_20261124.svg" alt="Hai nhánh đồng biến tách tại −1, tiến về đường ngang y=2"><figcaption>Kiểm mỗi nhánh với dấu phần dư và các điểm giao trục.</figcaption></figure>
 
     ??? tip "Kiểm lỗi"
 
@@ -172,6 +178,8 @@
         | \(y\) | \(-\infty\) | ↗ | \(1\) | ↘ | \(-\infty\) | ‖ | \(+\infty\) | ↘ | \(5\) | ↗ | \(+\infty\) |
 
         Tiệm cận \(x=2,\ y=x+1\); tâm \(I(2;3)\). Giao \(Oy\) tại \((0;1/2)\), giao \(Ox\) tại \(x=(1\pm\sqrt5)/2\). Vẽ hai nhánh giống dạng \(x+1/x\) nhưng tịnh tiến: nhánh trái dưới đường xiên, đi qua hai giao điểm \(Ox\) và cực đại \((1;1)\); nhánh phải trên đường xiên, đi qua cực tiểu \((3;5)\). Hai trục đối xứng là hai đường phân giác của \(x=2\) và \(y=x+1\).
+
+        <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B04_FIG10_CHECK_OBLIQUE_20261124.svg" alt="Đồ thị x+1+1/(x−2) có cực đại (1;1), cực tiểu (3;5), hai nhánh tách tại 2"><figcaption>Kiểm hai cực trị, giao trục, hai giới hạn gần tiệm cận đứng và vị trí so với tiệm cận xiên.</figcaption></figure>
 
     ??? tip "Kiểm lỗi"
 
@@ -227,7 +235,7 @@
 
     **Phân tích:** Hệ số bậc ba âm; đạo hàm có thể có hai nghiệm. Sau khi lập bảng, tìm giao trục và tâm.
 
-    **Lời giải.** \(D=\mathbb R,\ y'=-3x(x-2)\). Hàm nghịch biến trên \((-\infty;0)\), \((2;+\infty)\), đồng biến trên \((0;2)\). Cực tiểu \(y(0)=-4\), cực đại \(y(2)=0\). Hai giới hạn khi \(x\to-\infty,+\infty\) lần lượt là \(+\infty,-\infty\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(D=\mathbb R,\ y'=-3x(x-2)\). Hàm nghịch biến trên \((-\infty;0)\), \((2;+\infty)\), đồng biến trên \((0;2)\). Cực tiểu \(y(0)=-4\), cực đại \(y(2)=0\). Hai giới hạn khi \(x\to-\infty,+\infty\) lần lượt là \(+\infty,-\infty\).</p></div>
 
     | \(x\) | \(-\infty\) | | \(0\) | | \(2\) | | \(+\infty\) |
     | :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -244,7 +252,7 @@
 
     **Phân tích:** Đạo hàm bằng \(0\) ở một điểm nhưng không đổi dấu qua điểm đó.
 
-    **Lời giải.** \(D=\mathbb R,\ y'=3(x+2)^2\ge0\), bằng \(0\) duy nhất tại \(-2\). Hàm đồng biến trên \(\mathbb R\), không có cực trị. Hai giới hạn ở vô cực lần lượt \(-\infty,+\infty\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(D=\mathbb R,\ y'=3(x+2)^2\ge0\), bằng \(0\) duy nhất tại \(-2\). Hàm đồng biến trên \(\mathbb R\), không có cực trị. Hai giới hạn ở vô cực lần lượt \(-\infty,+\infty\).</p></div>
 
     | \(x\) | \(-\infty\) | | \(-2\) | | \(+\infty\) |
     | :-- | :--: | :--: | :--: | :--: | :--: |
@@ -259,7 +267,9 @@
 
     **Đề bài.** Khảo sát \(y=-x^3-x+2\).
 
-    **Lời giải.** \(D=\mathbb R,\ y'=-3x^2-1<0\) trên toàn trục số. Hàm nghịch biến trên \(\mathbb R\), không có cực trị. Giới hạn bên trái \(+\infty\), bên phải \(-\infty\).
+    **Phân tích:** Đạo hàm là tổng hai số hạng luôn âm hoặc không dương, nên không cần giải phương trình đạo hàm bằng 0; dùng tâm để đặt thêm điểm.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \(D=\mathbb R,\ y'=-3x^2-1&lt;0\) trên toàn trục số. Hàm nghịch biến trên \(\mathbb R\), không có cực trị. Giới hạn bên trái \(+\infty\), bên phải \(-\infty\).</p></div>
 
     | \(x\) | \(-\infty\) | | \(+\infty\) |
     | :-- | :--: | :--: | :--: |
@@ -276,7 +286,7 @@
 
     **Phân tích:** Đưa về dạng hằng cộng phần dư, cẩn thận đổi dấu mẫu.
 
-    **Lời giải.** \(D=\mathbb R\setminus\{1\}\), \(y=-1-4/(x-1)\), \(y'=4/(x-1)^2>0\). Hàm đồng biến trên từng khoảng xác định, không có cực trị. Giới hạn hai đầu vô cực bằng \(-1\), tại \(1^-\) là \(+\infty\), tại \(1^+\) là \(-\infty\). Tiệm cận \(x=1,\ y=-1\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(D=\mathbb R\setminus\{1\}\), \(y=-1-4/(x-1)\), \(y'=4/(x-1)^2&gt;0\). Hàm đồng biến trên từng khoảng xác định, không có cực trị. Giới hạn hai đầu vô cực bằng \(-1\), tại \(1^-\) là \(+\infty\), tại \(1^+\) là \(-\infty\). Tiệm cận \(x=1,\ y=-1\).</p></div>
 
     | \(x\) | \(-\infty\) | | \(1^-\) | \(x=1\) | \(1^+\) | | \(+\infty\) |
     | :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -293,7 +303,7 @@
 
     **Phân tích:** Chia đa thức giúp tìm ngay tiệm cận và đạo hàm: \(y=x-1+4/(x-1)\).
 
-    **Lời giải.** \(D=\mathbb R\setminus\{1\}\). \(y'=1-4/(x-1)^2\), bằng \(0\) tại \(-1,3\). Dấu lần lượt \(+,-,-,+\) trên bốn khoảng chia bởi \(-1,1,3\). Cực đại \(y(-1)=-4\), cực tiểu \(y(3)=4\). Tiệm cận \(x=1,\ y=x-1\). 
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> \(D=\mathbb R\setminus\{1\}\). \(y'=1-4/(x-1)^2\), bằng \(0\) tại \(-1,3\). Dấu lần lượt \(+,-,-,+\) trên bốn khoảng chia bởi \(-1,1,3\). Cực đại \(y(-1)=-4\), cực tiểu \(y(3)=4\). Tiệm cận \(x=1,\ y=x-1\). </p></div>
 
     | \(x\) | \(-\infty\) | | \(-1\) | | \(1^-\) | \(x=1\) | \(1^+\) | | \(3\) | | \(+\infty\) |
     | :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -308,7 +318,9 @@
 
     **Đề bài.** Khảo sát \(y=(x^2+x-2)/(x+1)\).
 
-    **Lời giải.** \(D=\mathbb R\setminus\{-1\}\), \(y=x-2/(x+1)\). Đạo hàm \(y'=1+2/(x+1)^2>0\), hàm đồng biến trên từng khoảng, không có cực trị. Tiệm cận đứng \(x=-1\), xiên \(y=x\). Tại \(-1^-\) giới hạn \(+\infty\), tại \(-1^+\) giới hạn \(-\infty\); ở hai đầu vô cực lần lượt \(-\infty,+\infty\).
+    **Phân tích:** Chia đa thức để xác định dấu phần dư; kiểm xem đạo hàm có nghiệm thực hay không trước khi lập bảng.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(D=\mathbb R\setminus\{-1\}\), \(y=x-2/(x+1)\). Đạo hàm \(y'=1+2/(x+1)^2&gt;0\), hàm đồng biến trên từng khoảng, không có cực trị. Tiệm cận đứng \(x=-1\), xiên \(y=x\). Tại \(-1^-\) giới hạn \(+\infty\), tại \(-1^+\) giới hạn \(-\infty\); ở hai đầu vô cực lần lượt \(-\infty,+\infty\).</p></div>
 
     | \(x\) | \(-\infty\) | | \(-1^-\) | \(x=-1\) | \(-1^+\) | | \(+\infty\) |
     | :-- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -325,7 +337,7 @@
 
     **Phân tích:** Nồng độ bằng khối lượng chất chia thể tích, không phải chỉ khối lượng chất thêm vào.
 
-    **Lời giải.** Thể tích \(200+40t\) lít, khối lượng \(20t\) gam. Nồng độ \(f(t)=20t/(200+40t)=t/[2(t+5)]\) gam/lít. Trên \(t\ge0\), \(f'=5/[2(t+5)^2]>0\); \(f(0)=0\), \(\lim_{t\to+\infty}f=1/2\).
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> Thể tích \(200+40t\) lít, khối lượng \(20t\) gam. Nồng độ \(f(t)=20t/(200+40t)=t/[2(t+5)]\) gam/lít. Trên \(t\ge0\), \(f'=5/[2(t+5)^2]&gt;0\); \(f(0)=0\), \(\lim_{t\to+\infty}f=1/2\).</p></div>
 
     | \(t\) | \(0\) | \((0;+\infty)\) | \(+\infty\) |
     | :-- | :--: | :--: | :--: |
@@ -340,7 +352,9 @@
 
     **Đề bài.** Mắc song song điện trở \(6\,\Omega\) với biến trở \(x>0\). Điện trở tương đương \(R(x)=6x/(6+x)\). Khảo sát và giải thích giới hạn trên.
 
-    **Lời giải.** \(R=6-36/(x+6)\), \(R'=36/(x+6)^2>0\) với \(x>0\). Khi \(x\to0^+\), \(R\to0\); khi \(x\to+\infty\), \(R\to6\). Hàm đồng biến trên \((0;+\infty)\), không có cực trị.
+    **Phân tích:** Chỉ xét miền vật lí dương; tách phần hằng để thấy giới hạn trên và dùng đạo hàm để xác nhận chiều biến thiên.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \(R=6-36/(x+6)\), \(R'=36/(x+6)^2&gt;0\) với \(x&gt;0\). Khi \(x\to0^+\), \(R\to0\); khi \(x\to+\infty\), \(R\to6\). Hàm đồng biến trên \((0;+\infty)\), không có cực trị.</p></div>
 
     | \(x\) | \(0^+\) | | \(+\infty\) |
     | :-- | :--: | :--: | :--: |
