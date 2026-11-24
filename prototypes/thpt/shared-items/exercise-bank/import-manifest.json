@@ -15520,6 +15520,177 @@
         "11 topic outcomes mapped, but count is not full S1/Q01/PED PASS. CĐ01 knowledge has embedded first-try exercises without separate item IDs in current topic first-try shard; no new IDs inferred. D6 links to real sections/items checked textually, browser/link/reveal QA pending. Original SGK PDF not reread."
       ],
       "next": "G10 ChII + CD02; verify skill/problem family/difficulty taxonomy and D6 by evidence; carry Written W02 issue to authorized canonical review."
+    },
+    "formative_scoped_audit_cp49": {
+      "checkpoint": 49,
+      "baseline": "11f027c7103f71e9d0c882f7cb19e00af7069b06",
+      "scope": "G10 ChII B03/B04 and CD02 (includes B17 quadratic prerequisite/outcomes; not full B17 bank audit)",
+      "source_evidence": {
+        "sgk_formative": "c258edc212022944c0e0e4693c5efffb72754f4a",
+        "B03": "03cf894ec9e4fb55b86201ab43dab21c48337ef3",
+        "B04": "4c8bfa2bd9af3ac5a31da945abdc990ceaee4618",
+        "topic_knowledge": "38f9db4dc4ceef35e3605587bf723513bfe8f0f6",
+        "topic_practice": "3a7fca2aaabee8128e280325822671c1d1e76a73",
+        "written": "6ff217b4c24a248a8120bc1f964476b4966eca83",
+        "existing_B17_skill_bank": "fe70233d0a9936364acaa51b8c6367deb6c2d7ca"
+      },
+      "files": [
+        {
+          "path": "items/g10-chii.json",
+          "before": "5465f02f365f14ee280ffff61ce1f7219038d7d2",
+          "after": "21915c60f6e14be08ab0a1e9ea1be5c93664de7f",
+          "changed": [
+            "THPT-G10-B03-C01",
+            "THPT-G10-B03-C02",
+            "THPT-G10-B03-P01",
+            "THPT-G10-B03-P02",
+            "THPT-G10-B03-P03",
+            "THPT-G10-B03-P04",
+            "THPT-G10-B03-P05",
+            "THPT-G10-B03-P06",
+            "THPT-G10-B04-C01",
+            "THPT-G10-B04-C02",
+            "THPT-G10-B04-P01",
+            "THPT-G10-B04-P02",
+            "THPT-G10-B04-P03",
+            "THPT-G10-B04-P04",
+            "THPT-G10-B04-P05",
+            "THPT-G10-B04-P06"
+          ]
+        },
+        {
+          "path": "items/cd02.json",
+          "before": "6e6a1008bef0a160536545632787bcf83d253592",
+          "after": "f24cf635784a46daec9932d7339837f8f83b5a07",
+          "changed": [
+            "THPT-TOP02-ADD01",
+            "THPT-TOP02-ADD02",
+            "THPT-TOP02-ADD03",
+            "THPT-TOP02-ADD04",
+            "THPT-TOP02-ADD05",
+            "THPT-TOP02-ADD06",
+            "THPT-TOP02-ADD07",
+            "THPT-TOP02-ADD08",
+            "THPT-TOP02-ADD09",
+            "THPT-TOP02-ADD10",
+            "THPT-TOP02-ADD11",
+            "THPT-TOP02-ADD12",
+            "THPT-TOP02-ADD13",
+            "THPT-TOP02-ADD14",
+            "THPT-TOP02-ADD15",
+            "THPT-TOP02-ADD16",
+            "THPT-TOP02-ADD17",
+            "THPT-TOP02-ADD18"
+          ]
+        },
+        {
+          "path": "placements/cd02.json",
+          "before": "fc8f70d93e2ee517e2ec135a991cc86803c27c7d",
+          "after": "fc8f70d93e2ee517e2ec135a991cc86803c27c7d",
+          "changed": []
+        },
+        {
+          "path": "placements/sgk-g10.json",
+          "before": "240d485678b3182add1fb3acd7035e6fc9994e08",
+          "after": "240d485678b3182add1fb3acd7035e6fc9994e08",
+          "changed": []
+        },
+        {
+          "path": "written-references.json",
+          "before": "4c9a032916f3d0593fc0cd639510a5128f56a5e1",
+          "after": "4c9a032916f3d0593fc0cd639510a5128f56a5e1",
+          "changed": []
+        }
+      ],
+      "reviewed": {
+        "formative": 34,
+        "first_try_preserved": 10,
+        "written_reference_read_only": 4,
+        "topic_outcomes": 16,
+        "topic_practice_placements": 38,
+        "replay_placements": 16,
+        "sgk_formative_source_parity_before_edit": 16
+      },
+      "matrix": {
+        "TOP02-O01": [
+          "THPT-TOP02-ADD01",
+          "THPT-TOP02-ADD02"
+        ],
+        "TOP02-O02": [
+          "THPT-TOP02-ADD03",
+          "THPT-TOP02-ADD04"
+        ],
+        "TOP02-O03": [
+          "THPT-TOP02-ADD05",
+          "THPT-TOP02-ADD06"
+        ],
+        "TOP02-O04": [
+          "THPT-TOP02-ADD07",
+          "THPT-TOP02-ADD08"
+        ],
+        "TOP02-O05": [
+          "THPT-TOP02-ADD09",
+          "THPT-TOP02-ADD10"
+        ],
+        "TOP02-O06": [
+          "THPT-TOP02-ADD11",
+          "THPT-TOP02-ADD12"
+        ],
+        "TOP02-O07": [
+          "THPT-TOP02-ADD13",
+          "THPT-TOP02-ADD14",
+          "THPT-TOP02-W01"
+        ],
+        "TOP02-O08": [
+          "THPT-TOP02-ADD15",
+          "THPT-TOP02-ADD16"
+        ],
+        "TOP02-O09": [
+          "THPT-G10-B03-C01",
+          "THPT-TOP02-ADD17"
+        ],
+        "TOP02-O10": [
+          "THPT-G10-B03-C02",
+          "THPT-G10-B03-P03"
+        ],
+        "TOP02-O11": [
+          "THPT-G10-B03-P01",
+          "THPT-G10-B03-P02",
+          "THPT-G10-B03-P05"
+        ],
+        "TOP02-O12": [
+          "THPT-G10-B03-P04",
+          "THPT-G10-B03-P06",
+          "THPT-G10-CHII-W03"
+        ],
+        "TOP02-O13": [
+          "THPT-G10-B04-C01",
+          "THPT-G10-B04-C02",
+          "THPT-G10-B04-P01"
+        ],
+        "TOP02-O14": [
+          "THPT-G10-B04-P04",
+          "THPT-G10-B04-P05"
+        ],
+        "TOP02-O15": [
+          "THPT-G10-B04-P02",
+          "THPT-G10-B04-P03",
+          "THPT-G10-CHII-W04-ANCHOR"
+        ],
+        "TOP02-O16": [
+          "THPT-G10-B04-P06",
+          "THPT-TOP02-ADD18",
+          "THPT-TOP02-W02"
+        ]
+      },
+      "findings": [
+        "Old mathematics 34/34 correct; ADD07 answer wording incomplete/ambiguous about no negative values; clarified. ADD08 and ADD09 sign explanation completed. ADD18 proof integer objective ≤11 from real optimum 35/3, attained at (3,1).",
+        "B03-C01 and P02/P03 duplicated examples/help in knowledge; changed within IDs, P02 explicitly 'phía trên' and closed boundary, P03 distinguishes excluded boundary from test point. B03-P06 replaces repeated budget feasibility by taught weighted-average model with x+y>0 and 5y≤3x; preserves modeling skill, MCQ and answer letter; x,y are real masses, not integer counts. B04-P02/P05 explain conditions for vertex theorem and unbounded minimum.",
+        "34 items have concrete remediation; 14/18 ADD mapped to verified existing B17/B03/B04 skills. ADD01–04 retain actual TOP02-O01/O02 but no invented skill IDs; verify prerequisite skill taxonomy later.",
+        "All four Written calculations and rubric totals 7 points correct in public sources; TOP02-W01/W02 reference entries lack library projection pointer (public practice source visible), record owner follow-up rather than copy or alter Written. 10 First Try unchanged. All 38 practice placements and 16 replay resolve, no new IDs or runtime edits.",
+        "No fresh original SGK PDF/SBT evidence, complete Q01/PED/D6 or browser/reveal QA. Preserve previous PASS exact snapshot; Delta C for changed requirements/models/options, A for wording/remediation. No interaction conversion."
+      ],
+      "next": "G10 ChIII and CĐ03 only after inspecting actual topic title and scope; audit all relevant shared sources."
     }
   }
 }
