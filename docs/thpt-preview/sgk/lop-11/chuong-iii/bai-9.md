@@ -46,11 +46,11 @@
 
     ### 1.2. Trung vị của mẫu số liệu ghép nhóm
 
-    Số trung bình dùng **mọi** nhóm, nhưng có khi ta chỉ muốn biết ranh giới để khoảng một nửa dữ liệu ở phía trước, nửa kia ở phía sau. Đó là ý nghĩa của **trung vị**. Trong 20 quan sát đã xếp thứ tự, vị trí giữa nằm quanh \(n/2=10\). Từ bảng A, cộng tần số lần lượt được \(4,\ 12,\ 18,\ 20\). Vậy vị trí thứ 10 nằm ở **nhóm thứ hai \([10;20)\)**.
+    Số trung bình dùng **mọi** nhóm, nhưng có khi ta chỉ muốn biết ranh giới để khoảng một nửa dữ liệu ở phía trước, nửa kia ở phía sau. Đó là ý nghĩa của **trung vị**. Nếu có đủ 20 quan sát đã xếp theo thứ tự, trung vị gốc là trung bình của số đo thứ 10 và thứ 11. Với bảng ghép nhóm, ta dùng mốc tần số tích lũy \(n/2=10\) để ước lượng trung vị. Từ bảng A, cộng tần số lần lượt được \(4,\ 12,\ 18,\ 20\). Vậy vị trí thứ 10 nằm ở **nhóm thứ hai \([10;20)\)**.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B09-01_R01.svg" alt="Tần số tích lũy tại các biên nhóm lần lượt 4, 12, 18, 20"><figcaption><strong>Đọc hình:</strong> tới biên \(10\) có 4 quan sát, tới biên \(20\) có 12 quan sát. Mốc giữa \(n/2=10\) nằm **sau 4 nhưng trước 12**, nên thuộc nhóm \([10;20)\). Đây là tần số tích lũy, không phải đường biểu diễn từng số đo.</figcaption></figure>
 
-    Ta chưa biết chính xác số đo thứ 10; vì thế **nội suy** trong nhóm. Trước nhóm có 4 người, nhóm chứa 8 người, cần đi thêm \(10-4=6\) “vị trí quan sát” trong 8 người của nhóm. Nếu coi phân bố trong khoảng dài 10 phút là tương đối đều, khoảng từ đầu nhóm đến trung vị được ước lượng bằng \(6/8\) độ dài nhóm. Vậy \(M_e=10+(10-4)\cdot10/8=17{,}5\) phút. Đây là **trung vị ghép nhóm**, không là giá trị thứ 10 thực sự trong danh sách gốc.
+    Ta không biết chính xác hai số đo giữa; vì thế **nội suy** trong nhóm. Tần số tích lũy ở đầu nhóm là 4, ở cuối nhóm là 12. Giả sử tần số tích lũy tăng đều trong khoảng dài 10 phút, để đạt mốc 10 ta cần thêm \(10-4=6\) trên tổng tần số 8 của nhóm. Vì vậy khoảng từ đầu nhóm đến trung vị được ước lượng bằng \(6/8\) độ dài nhóm. Vậy \(M_e=10+(10-4)\cdot10/8=17{,}5\) phút. Đây là **trung vị ghép nhóm**, không nhất thiết bằng trung vị tính từ dữ liệu gốc.
 
     **Vận dụng.** Với bảng A, nếu ai đó lấy ngay trung điểm nhóm chứa vị trí 10 là \(15\) làm trung vị thì đã bỏ bước nào?
 
@@ -70,13 +70,13 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B09-02_R01.svg" alt="Trên trục khoảng, các vị trí tứ phân vị ước lượng 11 phẩy 25, trung vị 17 phẩy 5, Q3 bằng 25"><figcaption><strong>Đọc hình:</strong> \(Q_1\approx11{,}25\), \(Q_2=M_e\approx17{,}5\), \(Q_3\approx25\) là các vị trí **nội suy** theo bảng nhóm; không phải ba giá trị cụ thể chắc chắn đã được đo.</figcaption></figure>
 
-    Nếu vị trí \(n/4\) hoặc \(3n/4\) rơi đúng vào tần số tích lũy ở ranh giới hai nhóm, việc nội suy đúng theo cả hai phía sẽ cho **cùng mốc biên**. Không tự cộng thêm 1 hay trừ đi 1 đơn vị: điểm chia nhóm là biên giá trị, không phải một số thứ tự học sinh.
+    Nếu vị trí \(n/4\) hoặc \(3n/4\) rơi đúng vào tần số tích lũy ở ranh giới hai nhóm, nếu hai nhóm kề đều có tần số dương thì nội suy theo cả hai phía sẽ cho **cùng mốc biên**. Không tự cộng thêm 1 hay trừ đi 1 đơn vị: điểm chia nhóm là biên giá trị, không phải một số thứ tự học sinh.
 
-    **Vận dụng.** Với bảng A, giải thích vì sao \(Q_3\) thuộc nhóm \([20;30)\) và tính \(Q_1,Q_3\).
+    **Vận dụng.** Bảng B có các nhóm như bảng A nhưng tần số lần lượt là \(2,6,8,4\). Xác định nhóm chứa \(Q_1,Q_3\) rồi ước lượng hai tứ phân vị này.
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** \(3n/4=15\). Tích lũy trước nhóm ba là 12 và hết nhóm ba là 18, nên vị trí 15 ở \([20;30)\); \(Q_3=20+(15-12)10/6=25\). Với \(n/4=5\) thuộc \([10;20)\), \(Q_1=10+(5-4)10/8=11{,}25\).
+        **Lời giải:** \(n=20\), tần số tích lũy lần lượt là \(2,8,16,20\). Mốc \(n/4=5\) thuộc \([10;20)\), nên \(Q_1=10+(5-2)10/6=15\). Mốc \(3n/4=15\) thuộc \([20;30)\), nên \(Q_3=20+(15-8)10/8=28{,}75\).
 
     ??? tip "Kiểm lỗi"
 
@@ -90,17 +90,23 @@
 
     Điểm cực kì quan trọng là **công thức mốt này được SGK định nghĩa cho các nhóm có độ dài bằng nhau**. Nếu chia các nhóm rộng 5, 15 và 10 rồi áp trực tiếp công thức trên, ta đã bỏ mất điều kiện nguồn. Nếu mọi tần số bằng nhau, theo SGK mẫu ghép nhóm **không có mốt**; với các đỉnh tần số bằng nhau ở nhiều nhóm, có thể có nhiều hơn một mốt, không được ép một giá trị duy nhất.
 
-    **Vận dụng.** Với bảng A có các nhóm cùng rộng 10, hãy xác định nhóm chứa mốt và ước lượng \(M_o\). Có thể dùng nguyên công thức nếu độ rộng các nhóm khác nhau không?
+    **Vận dụng.** Với bảng B ở bài tự thử trước (tần số \(2,6,8,4\), các nhóm cùng rộng 10), hãy xác định nhóm chứa mốt và ước lượng \(M_o\). Có thể dùng nguyên công thức nếu độ rộng các nhóm khác nhau không?
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** Nhóm chứa mốt là \([10;20)\), vì tần số \(8\) lớn nhất. \(M_o=10+\frac{8-4}{(8-4)+(8-6)}\cdot10=10+\frac{20}3\approx16{,}67\) phút. Nếu nhóm khác độ rộng, **không dùng trực tiếp công thức này** theo điều kiện SGK.
+        **Lời giải:** Nhóm chứa mốt là \([20;30)\), vì tần số \(8\) lớn nhất. \(M_o=20+\frac{8-6}{(8-6)+(8-4)}\cdot10=20+\frac{10}3\approx23{,}33\) phút. Nếu nhóm khác độ rộng, **không dùng trực tiếp công thức này** theo điều kiện SGK.
 
     ??? tip "Kiểm lỗi"
 
         Đừng so sánh mốt với số đo gốc khi chỉ có bảng nhóm. Kiểm nhóm rộng bằng nhau, tần số nhóm trước/sau và mẫu số của phép nội suy trước khi kết luận.
 
 === "Kiến thức SGK"
+
+    **Bảng A — Thời gian đi học (phút) của 20 học sinh**
+
+    | Nhóm giá trị | \([0;10)\) | \([10;20)\) | \([20;30)\) | \([30;40)\) |
+    |:--|--:|--:|--:|--:|
+    | Tần số | 4 | 8 | 6 | 2 |
 
     ### 2.1. Số trung bình của mẫu số liệu ghép nhóm
 
@@ -128,7 +134,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B09-02_R01.svg" alt="Trục giá trị có Q1 bằng 11,25; Me bằng 17,5 và Q3 bằng 25"><figcaption><strong>Tra hình:</strong> bảng A có \(Q_1\approx11{,}25\), \(Q_2=M_e\approx17{,}5\), \(Q_3\approx25\); các điểm nội suy **không phục hồi** dữ liệu gốc.</figcaption></figure>
 
-    **Ý nghĩa SGK:** Ba tứ phân vị chia mẫu được ước lượng thành bốn phần, mỗi phần khoảng \(25\%\). Trước khi nội suy, phải tìm nhóm cho từng vị trí \(n/4,\,n/2,\,3n/4\) bằng tần số tích lũy. Với vị trí rơi đúng biên, hai cách chọn nhóm kề liên tục cho cùng một giá trị biên khi áp dụng thống nhất.
+    **Ý nghĩa SGK:** Ba tứ phân vị chia mẫu được ước lượng thành bốn phần, mỗi phần khoảng \(25\%\). Trước khi nội suy, phải tìm nhóm cho từng vị trí \(n/4,\,n/2,\,3n/4\) bằng tần số tích lũy. Với vị trí rơi đúng biên, nếu cả hai nhóm kề đều có tần số dương thì hai cách chọn nhóm cho cùng một giá trị biên. Không chia cho tần số 0.
 
     ### 2.4. Mốt của mẫu số liệu ghép nhóm
 
@@ -136,7 +142,7 @@
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức — Mốt ghép nhóm</strong><p>Nếu nhóm chứa mốt thứ \(j\) có đầu mút trái \(L\), độ dài chung \(h>0\), tần số \(m_j\) và hai nhóm kề tần số \(m_{j-1},m_{j+1}\), thì \(M_o=L+\dfrac{m_j-m_{j-1}}{(m_j-m_{j-1})+(m_j-m_{j+1})}\,h\), với mẫu khác \(0\).</p><p>Quy ước \(m_0=m_{k+1}=0\). Nếu các nhóm có độ dài không bằng nhau, **không áp trực tiếp** công thức này. Khi các nhóm có tần số đều bằng nhau, SGK quy định bảng **không có mốt**; có thể có nhiều hơn một mốt trong các tình huống nhiều đỉnh.</p></div>
 
-    **Tra bảng A:** Nhóm modal \([10;20)\) có \(m_j=8\), các nhóm kề là \(4\) và \(6\), \(h=10\), nên \(M_o\approx16{,}67\) phút. Đó là ước lượng mốt từ nhóm, không là điểm đo cá nhân được xác nhận.
+    **Tra bảng A:** Nhóm chứa mốt \([10;20)\) có \(m_j=8\), các nhóm kề là \(4\) và \(6\), \(h=10\), nên \(M_o\approx16{,}67\) phút. Đó là ước lượng mốt từ nhóm, không có nghĩa là có người đi đúng từng ấy phút.
 
 === "Ví dụ"
 
