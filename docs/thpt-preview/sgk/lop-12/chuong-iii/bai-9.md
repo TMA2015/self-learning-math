@@ -14,6 +14,8 @@
 
     Ở lớp 10, với mẫu số liệu không ghép nhóm, em đã biết khoảng biến thiên là hiệu giữa giá trị lớn nhất và giá trị nhỏ nhất. Ví dụ mẫu \(12,13,15,16,19\) có khoảng biến thiên \(19-12=7\). Nếu chỉ thay \(19\) bằng \(30\), khoảng biến thiên tăng lên \(18\), dù bốn giá trị còn lại không thay đổi. Đại lượng này nhìn vào hai đầu của mẫu.
 
+    <!-- OUTCOME_ID: G12-CHIII-B09-O01 -->
+    <!-- EX_ID: EX-G12-B09-01 -->
     Trong thực tế, đôi khi ta không có từng kết quả đo mà chỉ có bảng ghép nhóm. Xét thời gian hoàn thành một công việc của 40 người (phút):
 
     | Thời gian (phút) | \([5;10)\) | \([10;15)\) | \([15;20)\) | \([20;25)\) | \([25;30)\) | \([30;35)\) |
@@ -22,6 +24,7 @@
 
     Nhóm \([10;15)\) có 6 người nghĩa là mỗi người trong nhóm mất ít nhất 10 phút nhưng chưa tới 15 phút. Ta không biết chính xác thời gian từng người. Vì nhóm đầu có dữ liệu là \([10;15)\), thời gian nhỏ nhất của mẫu gốc thỏa \(10\le x_{\min}<15\). Vì nhóm cuối có dữ liệu là \([25;30)\), thời gian lớn nhất thỏa \(25\le x_{\max}<30\).
 
+    <!-- OUTCOME_ID: G12-CHIII-B09-O02 -->
     Ta chỉ biết giới hạn của thời gian nhanh nhất và chậm nhất, chưa biết hai giá trị chính xác. Do đó dùng hiệu giữa cận trên của nhóm cuối có dữ liệu và cận dưới của nhóm đầu có dữ liệu:
 
     \[
@@ -30,8 +33,10 @@
 
     Đây là khoảng biến thiên **của mẫu ghép nhóm**. Nó là một xấp xỉ cho khoảng biến thiên mẫu gốc, không khẳng định có người làm đúng 10 phút hay đúng 30 phút. Thực ra \(x_{\max}<30\) và \(x_{\min}\ge10\), nên \(x_{\max}-x_{\min}<20\). Hai nhóm có tần số bằng 0 ở ngoài cùng không kéo dài miền có dữ liệu; nếu lấy \(35-5=30\), kết quả sai.
 
+    <!-- OUTCOME_ID: G12-CHIII-B09-O03 -->
     Khi so sánh hai bảng cùng đo một đại lượng và được ghép nhóm tương thích, khoảng biến thiên lớn hơn cho biết miền phủ từ hai đầu rộng hơn. Nhưng một người hoàn thành đặc biệt chậm có thể làm miền này mở rộng rất nhiều. Vì vậy khoảng biến thiên chưa nói hết dữ liệu điển hình ở giữa tập trung đến mức nào.
 
+    <!-- FIRST_TRY_ID: B09-T01 -->
     **Vận dụng.** Thời gian đọc sách mỗi ngày của một nhóm học sinh được ghi trong bảng sau:
 
     | Thời gian (phút) | \([0;10)\) | \([10;20)\) | \([20;30)\) | \([30;40)\) | \([40;50)\) |
@@ -56,6 +61,8 @@
 
     Với số liệu gốc, em có thể sắp các quan sát, tìm trung vị của nửa dưới và nửa trên theo quy ước SGK. Nhưng ở đây từng quan sát đã được gộp vào nhóm. Ta cần ước lượng vị trí của hai mốc tứ phân vị bằng tần số tích lũy.
 
+    <!-- OUTCOME_ID: G12-CHIII-B09-O04 -->
+    <!-- EX_ID: EX-G12-B09-04 -->
     Bỏ hai nhóm rỗng ở ngoài của bảng trên, lập bảng cộng dồn:
 
     | Thời gian (phút) | \([10;15)\) | \([15;20)\) | \([20;25)\) | \([25;30)\) |
@@ -65,6 +72,8 @@
 
     Cỡ mẫu \(n=40\). Mốc một phần tư là \(n/4=10\); mốc ba phần tư là \(3n/4=30\). Hai số 10 và 30 ở đây biểu thị **mốc số lượng tích lũy**, chưa phải số phút. Mốc 10 nằm giữa 6 và 20, nên \(Q_1\) được nội suy trong nhóm \([15;20)\). Mốc 30 nằm giữa 20 và 32, nên \(Q_3\) được nội suy trong nhóm \([20;25)\).
 
+    <!-- OUTCOME_ID: G12-CHIII-B09-O05 -->
+    <!-- EX_ID: EX-G12-B09-05 -->
     Vì sao cần nội suy? Trước nhóm chứa \(Q_1\) đã có 6 quan sát, cần thêm \(10-6=4\) trên tổng 14 quan sát của nhóm để tới mốc 10. Khi xấp xỉ sự phân bố trong nhóm bằng một đoạn thẳng, ta đi được \(4/14\) bề rộng 5 phút, bắt đầu từ cận dưới 15:
 
     \[
@@ -77,6 +86,7 @@
     Q_3=20+\frac{30-20}{12}\cdot5=\frac{145}{6}\approx24{,}17.
     \]
 
+    <!-- FIG_ROLE: D5-01 -->
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G12-CHIII-B09-QUARTILES-R00.svg" alt="Đường tần số tích lũy đi qua (10;0), (15;6), (20;20), (25;32), (30;40); mốc 10 và 30 xác định Q1 và Q3"><figcaption>Đọc từ trục đứng: đi ngang từ mốc 10 tới đường nội suy, rồi đi xuống trục giá trị để được \(Q_1\). Làm tương tự từ mốc 30 cho \(Q_3\). Các đoạn thẳng là mô hình xấp xỉ trong từng nhóm, không phải dữ liệu quan sát gốc.</figcaption></figure>
 
     Sau khi có hai tứ phân vị, lấy hiệu (giữ giá trị chính xác đến bước cuối):
@@ -84,10 +94,12 @@
     \Delta_Q=\frac{145}{6}-\frac{115}{7}=\frac{325}{42}\approx7{,}74\text{ phút}.
     \]
 
+    <!-- FIG_ROLE: D5-02 -->
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G12-CHIII-B09-RANGE-IQR-R00.svg" alt="Hai đoạn trên cùng thang giá trị, R từ 10 đến 30 bằng 20; khoảng tứ phân vị từ 16,43 đến 24,17 bằng khoảng 7,74"><figcaption>Thanh trên phủ toàn bộ miền dữ liệu ghép nhóm. Đoạn xanh phía dưới chỉ đo độ rộng giữa hai mốc tứ phân vị của chính bảng này. Hai đại lượng có cùng đơn vị phút nhưng trả lời hai câu hỏi khác nhau.</figcaption></figure>
 
     Với bảng ghép nhóm, các công thức trên cho giá trị xác định theo quy tắc nội suy. Khi dùng chúng để nói về mẫu gốc, đó là các giá trị xấp xỉ. Bảng không cho biết từng quan sát, nên cũng không thể chỉ ra chính xác 20 người nào ở trong khoảng giữa.
 
+    <!-- FIRST_TRY_ID: B09-T02 -->
     **Vận dụng.** Thời gian chờ xe (phút) được ghi như sau. Tính \(Q_1,Q_3,\Delta_Q\), làm tròn khoảng tứ phân vị đến hàng phần trăm.
 
     | Thời gian (phút) | \([0;4)\) | \([4;8)\) | \([8;12)\) | \([12;16)\) |
@@ -110,6 +122,8 @@
 
     Nếu mốc tích lũy trùng đúng một ranh giới giữa hai nhóm kề nhau có dữ liệu, nội suy đến cuối nhóm trước hay từ đầu nhóm sau đều cho cùng cận chung. Ví dụ tần số của ba nhóm \([0;5),[5;10),[10;15)\) là \(5,10,5\). Mốc \(n/4=5\) đúng ở cận chung 5; mốc \(3n/4=15\) ở cận chung 10. Vậy \(Q_1=5,Q_3=10\). Không cần làm tròn \(n/4\) hoặc \(3n/4\) thành số nguyên trước khi nội suy.
 
+    <!-- OUTCOME_ID: G12-CHIII-B09-O06 -->
+    <!-- EX_ID: EX-G12-B09-06 -->
     **Chọn thước đo phù hợp.** Xét hai mẫu thời gian (phút) có cùng 40 quan sát, trên cùng các nhóm:
 
     | Thời gian | \([0;10)\) | \([10;20)\) | \([20;30)\) | \([30;40)\) | \([40;50)\) |
@@ -145,7 +159,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Công thức — Tứ phân vị của mẫu ghép nhóm</strong><p>Với \(r=1,2,3\), đặt mốc \(t=rn/4\). Gọi \([L;U)\) là nhóm dùng để nội suy \(Q_r\), có tần số \(f&gt;0\), tần số tích lũy trước nhóm là \(C\), độ rộng \(h=U-L&gt;0\). Khi \(C\le t\le C+f\), ta tính</p><div class="arithmatex">\(\displaystyle Q_r=L+\frac{rn/4-C}{f}\,h.\)</div><p>Đây là công thức nội suy của mẫu ghép nhóm đã học ở lớp 11; \(Q_2\) là trung vị của mẫu ghép nhóm.</p></div>
 
-    Cách thực hiện: tính \(n\) và tần số tích lũy; xác định nhóm có dữ liệu đạt mốc cần xét (chọn nhóm có tần số dương đầu tiên có cộng dồn đạt hoặc vượt mốc); dùng đúng cận dưới, tần số nhóm, cộng dồn trước nhóm và độ rộng **của nhóm ấy**. Nếu hai nhóm kề nhau có dữ liệu gặp nhau đúng tại mốc, kết quả là cận chung. Nếu có nhóm rỗng ở giữa và mốc rơi đúng đoạn tích lũy nằm ngang, quy tắc chọn nhóm đầu đạt mốc cho cận phải nhóm trước; không chia cho tần số 0 và không khẳng định đây là tứ phân vị chính xác của mẫu gốc. Nếu đề cho quy ước riêng tại biên, theo quy ước của đề.
+    Cách thực hiện: tính \(n\) và tần số tích lũy; xác định nhóm có dữ liệu đạt mốc cần xét (chọn nhóm có tần số dương đầu tiên có cộng dồn đạt hoặc vượt mốc); dùng đúng cận dưới, tần số nhóm, cộng dồn trước nhóm và độ rộng **của nhóm ấy**. Nếu hai nhóm kề nhau có dữ liệu gặp nhau đúng tại mốc, kết quả là cận chung. Nếu có nhóm rỗng ở giữa và mốc rơi đúng đoạn tích lũy nằm ngang, quy tắc chọn nhóm đầu đạt mốc cho cận phải nhóm trước; không chia cho tần số 0 và không khẳng định đây là tứ phân vị chính xác của mẫu gốc. Nếu đề cho quy ước riêng tại biên, theo quy ước của đề. Ví dụ với tần số 5, 0, 15 trên các nhóm \([0;5),[5;10),[10;15)\), mốc \(n/4=5\) cho \(Q_1=5\) theo cách chọn nhóm đầu đạt mốc; không nội suy trong nhóm rỗng.
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Khoảng tứ phân vị</strong><div class="arithmatex">\(\displaystyle\Delta_Q=Q_3-Q_1.\)</div><p>Khoảng tứ phân vị (IQR) đo độ trải của phần giữa mẫu, có cùng đơn vị với dữ liệu. Với mẫu ghép nhóm, nó là một xấp xỉ cho khoảng tứ phân vị của mẫu gốc.</p></div>
 
@@ -160,6 +174,7 @@
 
 === "Ví dụ"
 
+    <!-- EX_ID: EX-G12-B09-02 -->
     ### 3.1. Khoảng biến thiên khi chỉ một nhóm có dữ liệu
 
     **Đề bài.** Khối lượng sản phẩm (g) có các nhóm sau:
@@ -232,6 +247,7 @@
 
     **Kiểm lại:** A có 24/40 quan sát ở nhóm giữa, B chỉ có 8/40. Kết luận về \(\Delta_Q\) phù hợp với bảng.
 
+    <!-- EX_ID: EX-G12-B09-03 -->
     ### 3.5. Ảnh hưởng của một giá trị cực lớn
 
     **Đề bài.** Hai mẫu thời gian chờ (phút) đều có 20 quan sát. Mẫu thứ hai chỉ khác mẫu thứ nhất ở chỗ một quan sát trong nhóm cuối \([20;25)\) chuyển sang nhóm \([45;50)\).
