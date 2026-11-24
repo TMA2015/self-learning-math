@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 37/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B05, còn B06–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 38/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B06, còn B07–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B05 CONTENT_READY; B06–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B06 CONTENT_READY; B07–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -50,7 +50,8 @@
 | 12 | B03 | [#1071](https://github.com/TMA2015/self-learning-math/pull/1071) | CONTENT_READY — đã bàn giao |
 | 12 | B04 | [#1073](https://github.com/TMA2015/self-learning-math/pull/1073) | CONTENT_READY — đã bàn giao |
 | 12 | B05 | [#1074](https://github.com/TMA2015/self-learning-math/pull/1074) | CONTENT_READY — đã bàn giao |
-| 12 | B06–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B06 | [#1075](https://github.com/TMA2015/self-learning-math/pull/1075) | CONTENT_READY — đã bàn giao |
+| 12 | B07–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -197,6 +198,16 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B04_FIG03_QUADRATIC_AUTHORING
 | [#1074](https://github.com/TMA2015/self-learning-math/pull/1074) | `docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md` | `77b1efcec397b2cc412cbb3b9969ccbbb2f5b3de` | `54c9c90323f7b1d9077270d90627864f5a468c03` | `7019a282f97e0eca987a596a188030bd9d1e7076` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B05_FIG02_BOX_NET_AUTHORING_20261124.svg` (`abc066d14e33a6e1fcec829aae34e47d4f0a273e`); `G12_B05_FIG03_TRAVEL_AUTHORING_20261124.svg` (`8303761922a9fa53e41b5dad2482ac9bb9b6950a`); `G12_B05_FIG04_POLLUTION_COST_AUTHORING_20261124.svg` (`fa76ba8469c7fb27e2fe3f83f8b8b3b8bf04a497`); `G12_B05_FIG05_PROFIT_AUTHORING_20261124.svg` (`340dc2bea3ce34ca1cc06c608c50c16deb19f1d4`). Giữ nguyên `G12_B05_FIG01_BOX_VOLUME_R00.svg` (`eacd5ba60f25d87c102917a55d314fb16d6f8341`).
+
+### Toán 12 B06 — Vectơ trong không gian (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đối chiếu [SGK KNTT Toán 12 tập 1 trang in 45–59](https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-12-Tap-1-Chuong-trinh-moi.pdf) và [bản SGK trực tuyến](https://sgkvn.com/lop-12-15/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-ii-vecto-va-he-truc-toa-do-trong-khong-gian-3522/bai-6-vecto-trong-khong-gian-12889.html). Screenshot PDF cache miss; không tuyên bố đã kiểm hình ảnh gốc. Đọc toàn văn mẫu Golden Toán 10 B07. Bốn tab, bốn mục chính đối ứng, sửa quy ước vectơ-không theo SGK; bổ sung giá, đặt vectơ duy nhất, tính chất phép cộng/nhân, quy tắc hiệu đúng chiều, trung điểm và trọng tâm tam giác/tứ diện (3:1), tính chất tích vô hướng, góc tù/công âm, cân bằng lực. 10 ví dụ, 4 Vận dụng độc lập có Đối chiếu/Kiểm lỗi, 8 ngộ nhận. 28 nhóm tự kiểm đạt: kiểm các hệ thức trên hình hộp xiên và tứ diện không suy biến, độ dài 5 và 13, tỉ số lực 25/16, hai tích khai triển và độ dài √7, công −100 J, tâm/hình minh họa, quy ước và cấu trúc. Giữ hình hộp cũ, thêm hai hình trọng tâm tứ diện và đưa hai vectơ về chung gốc. Diff chỉ canonical và hai SVG riêng B06. Không còn lỗi thực chất đã phát hiện.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1075](https://github.com/TMA2015/self-learning-math/pull/1075) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md` | `0aac0cec595611aa68c7817c0af78095338d83d4` | `8991c8a30487fdf1db65cf31a19b0ed68ef52518` | `b7eb1d0d5120de61065ba002760f1e56f6337063` |
+
+Asset delta tại `docs/assets/images/thpt/`: `G12_B06_FIG02_TETRA_CENTROID_AUTHORING_20261124.svg` (`ec871f9e8285f1f6ad203214b975a76783c7174b`); `G12_B06_FIG03_VECTOR_ANGLE_AUTHORING_20261124.svg` (`a3133220a16675ca3c719deea35b9d7e6476dc85`). Giữ nguyên `FIG-G12-CHII-B06-R00.svg` (`26e388d873521aa5b0bae945343e69357490ec16`).
 
 ## Cách cập nhật
 
