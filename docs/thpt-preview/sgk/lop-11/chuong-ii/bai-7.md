@@ -200,13 +200,14 @@
 
     ### 3.7. Tìm số lượng số hạng qua tổng cấp số nhân
 
-    **Đề bài.** Cấp số nhân \(2,6,18,\ldots\) cần cộng bao nhiêu số hạng đầu để tổng bằng \(728\)?
+    **Đề bài.** Cấp số nhân \(3,6,12,\ldots\) cần cộng bao nhiêu số hạng đầu để tổng bằng \(93\)?
 
-    **Phân tích:** Biết \(S_n\) chứ không biết \(n\), nên phải lập phương trình với lũy thừa \(3^n\), sau đó kiểm \(n\in\mathbb N^*\).
+    **Phân tích:** Biết \(S_n\) chứ không biết \(n\), nên lập phương trình với \(2^n\), sau đó kiểm \(n\in\mathbb N^*\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(S_n=2(1-3^n)/(1-3)=3^n-1=728\), suy ra \(3^n=729=3^6\). Vậy \(n=6\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(S_n=3(2^n-1)=93\), suy ra \(2^n-1=31\), tức \(2^n=32=2^5\). Vậy \(n=5\).</p></div>
 
-    **Kiểm lại:** Tổng sáu số \(2+6+18+54+162+486=728\).
+    **Kiểm lại:** \(3+6+12+24+48=93\).
+
 
     ### 3.8. So sánh hai phương án lương theo quý
 
