@@ -116,7 +116,11 @@
 
     Trong mô hình đơn giản, giả sử điểm \(P\) nằm trên mặt cầu đơn vị, cách \(A(2;0;0)\) một khoảng \(\sqrt5\), cách \(B(0;2;0)\) một khoảng \(\sqrt2\). Ta có
     \[
-    \begin{cases}x^2+y^2+z^2=1,\\(x-2)^2+y^2+z^2=5,\\x^2+(y-2)^2+z^2=2.\end{cases}
+    \begin{cases}
+    x^2+y^2+z^2=1,\\
+    (x-2)^2+y^2+z^2=5,\\
+    x^2+(y-2)^2+z^2=2.
+    \end{cases}
     \]
     Trừ phương trình đầu khỏi phương trình thứ hai, được \(-4x+4=4\), nên \(x=0\). Tương tự \(-4y+4=1\), suy ra \(y=3/4\). Thế lại cho \(z=\pm\sqrt7/4\). Nếu một phép đo bổ sung xác nhận thiết bị ở bán cầu Bắc thì \(z>0\), chọn \(P(0;3/4;\sqrt7/4)\); vĩ độ \(\arcsin(\sqrt7/4)\approx41{,}4096^\circ N\), kinh độ \(90^\circ E\).
 
