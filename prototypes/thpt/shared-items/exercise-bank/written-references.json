@@ -3677,5 +3677,593 @@
     },
     "kind": "WRITTEN_REFERENCE_ONLY",
     "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-W02",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-W02"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E01-W03",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E01-W03"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-W02",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-W02"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-SUPP-E02-W03",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-SUPP-E02-W03"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-TRIG-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-TRIG-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-SEQ-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-SEQ-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-LIMIT-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-LIMIT-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-EXPL-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-EXPL-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-DERIV-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-DERIV-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-SPACE-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-SPACE-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-VOLUME-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-VOLUME-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-STAT-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-STAT-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-PROB-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-PROB-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-YR-IND-W01",
+    "source": {
+      "blob": "b848436621c17c89919e3d3f93519d12612fe039",
+      "heading_id": "THPT-G11-YR-IND-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP01-W01",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP01-W02",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-W02"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP01-W03",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-W03"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP01-W04",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-W04"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP01-W05",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-W05"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP02-W01",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP02-W02",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-W02"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP02-W03",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-W03"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP02-W04",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-W04"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-EXP02-W05",
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-W05"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W01",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W02",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W02"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W03",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W03"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W04",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W04"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W05",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W05"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W06",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W06"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W07",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W07"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W08",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W08"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W09",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W09"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W10",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W10"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W11",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W11"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W12",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W12"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W13",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W13"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W14",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W14"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W15",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W15"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-YE-W16",
+    "source": {
+      "blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a",
+      "heading_id": "THPT-G12-YE-W16"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
   }
 ]

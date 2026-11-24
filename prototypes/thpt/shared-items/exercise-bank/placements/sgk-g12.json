@@ -3671,5 +3671,820 @@
     "order": 12,
     "item_id": "THPT-G12-B10-P12",
     "skill_id": "G12-CHIII-B10-O06"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-EXP01-C01",
+    "skill_id": "G12-SGK-EXP01-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-EXP01-P01",
+    "skill_id": "G12-SGK-EXP01-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-EXP01-A01",
+    "skill_id": "G12-SGK-EXP01-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G12-EXP01-W01",
+    "skill_id": "G12-SGK-EXP01-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-EXP01-C02",
+    "skill_id": "G12-SGK-EXP01-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-EXP01-P02",
+    "skill_id": "G12-SGK-EXP01-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-EXP01-A02",
+    "skill_id": "G12-SGK-EXP01-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G12-EXP01-W02",
+    "skill_id": "G12-SGK-EXP01-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-EXP01-C03",
+    "skill_id": "G12-SGK-EXP01-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-EXP01-P03",
+    "skill_id": "G12-SGK-EXP01-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 3,
+    "item_id": "THPT-G12-EXP01-A03",
+    "skill_id": "G12-SGK-EXP01-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G12-EXP01-W03",
+    "skill_id": "G12-SGK-EXP01-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-EXP01-C04",
+    "skill_id": "G12-SGK-EXP01-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-EXP01-P04",
+    "skill_id": "G12-SGK-EXP01-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G12-EXP01-A04",
+    "skill_id": "G12-SGK-EXP01-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G12-EXP01-W04",
+    "skill_id": "G12-SGK-EXP01-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G12-EXP01-C05",
+    "skill_id": "G12-SGK-EXP01-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-EXP01-P05",
+    "skill_id": "G12-SGK-EXP01-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 5,
+    "item_id": "THPT-G12-EXP01-A05",
+    "skill_id": "G12-SGK-EXP01-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP01:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G12-EXP01-W05",
+    "skill_id": "G12-SGK-EXP01-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-EXP02-C01",
+    "skill_id": "G12-SGK-EXP02-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-EXP02-P01",
+    "skill_id": "G12-SGK-EXP02-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-EXP02-A01",
+    "skill_id": "G12-SGK-EXP02-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G12-EXP02-W01",
+    "skill_id": "G12-SGK-EXP02-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-EXP02-C02",
+    "skill_id": "G12-SGK-EXP02-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-EXP02-P02",
+    "skill_id": "G12-SGK-EXP02-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-EXP02-A02",
+    "skill_id": "G12-SGK-EXP02-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G12-EXP02-W02",
+    "skill_id": "G12-SGK-EXP02-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-EXP02-C03",
+    "skill_id": "G12-SGK-EXP02-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-EXP02-P03",
+    "skill_id": "G12-SGK-EXP02-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 3,
+    "item_id": "THPT-G12-EXP02-A03",
+    "skill_id": "G12-SGK-EXP02-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G12-EXP02-W03",
+    "skill_id": "G12-SGK-EXP02-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G12-EXP02-C04",
+    "skill_id": "G12-SGK-EXP02-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-EXP02-P04",
+    "skill_id": "G12-SGK-EXP02-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G12-EXP02-A04",
+    "skill_id": "G12-SGK-EXP02-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G12-EXP02-W04",
+    "skill_id": "G12-SGK-EXP02-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G12-EXP02-C05",
+    "skill_id": "G12-SGK-EXP02-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-EXP02-P05",
+    "skill_id": "G12-SGK-EXP02-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 5,
+    "item_id": "THPT-G12-EXP02-A05",
+    "skill_id": "G12-SGK-EXP02-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP02:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G12-EXP02-W05",
+    "skill_id": "G12-SGK-EXP02-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G12-EXP01-A01",
+    "skill_id": "G12-SGK-EXP01-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G12-EXP01-A02",
+    "skill_id": "G12-SGK-EXP01-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G12-EXP01-A03",
+    "skill_id": "G12-SGK-EXP01-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G12-EXP01-A04",
+    "skill_id": "G12-SGK-EXP01-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G12-EXP01-A05",
+    "skill_id": "G12-SGK-EXP01-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G12-EXP02-A01",
+    "skill_id": "G12-SGK-EXP02-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G12-EXP02-A02",
+    "skill_id": "G12-SGK-EXP02-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G12-EXP02-A03",
+    "skill_id": "G12-SGK-EXP02-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G12-EXP02-A04",
+    "skill_id": "G12-SGK-EXP02-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G12-EXP02-A05",
+    "skill_id": "G12-SGK-EXP02-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G12-YE-M01",
+    "skill_id": "G12-SGK-YE-O01",
+    "original_role": "MCQ_CORE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G12-YE-M01",
+    "skill_id": "G12-SGK-YE-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G12-YE-M02",
+    "skill_id": "G12-SGK-YE-O01",
+    "original_role": "MCQ_PRACTICE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G12-YE-M02",
+    "skill_id": "G12-SGK-YE-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G12-YE-M03",
+    "skill_id": "G12-SGK-YE-O01",
+    "original_role": "MCQ_PRACTICE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G12-YE-M03",
+    "skill_id": "G12-SGK-YE-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G12-YE-M04",
+    "skill_id": "G12-SGK-YE-O01",
+    "original_role": "MCQ_APPLICATION"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G12-YE-M04",
+    "skill_id": "G12-SGK-YE-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G12-YE-M05",
+    "skill_id": "G12-SGK-YE-O02",
+    "original_role": "MCQ_CORE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G12-YE-M05",
+    "skill_id": "G12-SGK-YE-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G12-YE-M06",
+    "skill_id": "G12-SGK-YE-O02",
+    "original_role": "MCQ_PRACTICE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G12-YE-M06",
+    "skill_id": "G12-SGK-YE-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 2,
+    "item_id": "THPT-G12-YE-M07",
+    "skill_id": "G12-SGK-YE-O02",
+    "original_role": "MCQ_APPLICATION"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G12-YE-M07",
+    "skill_id": "G12-SGK-YE-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 3,
+    "item_id": "THPT-G12-YE-M08",
+    "skill_id": "G12-SGK-YE-O03",
+    "original_role": "MCQ_APPLICATION"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G12-YE-M08",
+    "skill_id": "G12-SGK-YE-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G12-YE-M09",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "MCQ_CORE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G12-YE-M09",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G12-YE-M10",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "MCQ_PRACTICE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G12-YE-M10",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G12-YE-M11",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "MCQ_PRACTICE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G12-YE-M11",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G12-YE-M12",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "MCQ_APPLICATION"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G12-YE-M12",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G12-YE-M13",
+    "skill_id": "G12-SGK-YE-O05",
+    "original_role": "MCQ_PRACTICE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G12-YE-M13",
+    "skill_id": "G12-SGK-YE-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G12-YE-M14",
+    "skill_id": "G12-SGK-YE-O06",
+    "original_role": "MCQ_PRACTICE"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G12-YE-M14",
+    "skill_id": "G12-SGK-YE-O06"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 5,
+    "item_id": "THPT-G12-YE-M15",
+    "skill_id": "G12-SGK-YE-O06",
+    "original_role": "MCQ_APPLICATION"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 15,
+    "item_id": "THPT-G12-YE-M15",
+    "skill_id": "G12-SGK-YE-O06"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G12-YE-W01",
+    "skill_id": "G12-SGK-YE-O01",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 16,
+    "item_id": "THPT-G12-YE-W01",
+    "skill_id": "G12-SGK-YE-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G12-YE-W02",
+    "skill_id": "G12-SGK-YE-O01",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 17,
+    "item_id": "THPT-G12-YE-W02",
+    "skill_id": "G12-SGK-YE-O01"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G12-YE-W03",
+    "skill_id": "G12-SGK-YE-O02",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 18,
+    "item_id": "THPT-G12-YE-W03",
+    "skill_id": "G12-SGK-YE-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G12-YE-W04",
+    "skill_id": "G12-SGK-YE-O02",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 19,
+    "item_id": "THPT-G12-YE-W04",
+    "skill_id": "G12-SGK-YE-O02"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G12-YE-W05",
+    "skill_id": "G12-SGK-YE-O03",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 20,
+    "item_id": "THPT-G12-YE-W05",
+    "skill_id": "G12-SGK-YE-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "THPT-G12-YE-W06",
+    "skill_id": "G12-SGK-YE-O03",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 21,
+    "item_id": "THPT-G12-YE-W06",
+    "skill_id": "G12-SGK-YE-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 7,
+    "item_id": "THPT-G12-YE-W07",
+    "skill_id": "G12-SGK-YE-O03",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 22,
+    "item_id": "THPT-G12-YE-W07",
+    "skill_id": "G12-SGK-YE-O03"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 8,
+    "item_id": "THPT-G12-YE-W08",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 23,
+    "item_id": "THPT-G12-YE-W08",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 9,
+    "item_id": "THPT-G12-YE-W09",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 24,
+    "item_id": "THPT-G12-YE-W09",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 10,
+    "item_id": "THPT-G12-YE-W10",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 25,
+    "item_id": "THPT-G12-YE-W10",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 11,
+    "item_id": "THPT-G12-YE-W11",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 26,
+    "item_id": "THPT-G12-YE-W11",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 12,
+    "item_id": "THPT-G12-YE-W12",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 27,
+    "item_id": "THPT-G12-YE-W12",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 13,
+    "item_id": "THPT-G12-YE-W13",
+    "skill_id": "G12-SGK-YE-O04",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 28,
+    "item_id": "THPT-G12-YE-W13",
+    "skill_id": "G12-SGK-YE-O04"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 14,
+    "item_id": "THPT-G12-YE-W14",
+    "skill_id": "G12-SGK-YE-O05",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 29,
+    "item_id": "THPT-G12-YE-W14",
+    "skill_id": "G12-SGK-YE-O05"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 15,
+    "item_id": "THPT-G12-YE-W15",
+    "skill_id": "G12-SGK-YE-O06",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 30,
+    "item_id": "THPT-G12-YE-W15",
+    "skill_id": "G12-SGK-YE-O06"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 16,
+    "item_id": "THPT-G12-YE-W16",
+    "skill_id": "G12-SGK-YE-O06",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G12:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 31,
+    "item_id": "THPT-G12-YE-W16",
+    "skill_id": "G12-SGK-YE-O06"
   }
 ]

@@ -1,0 +1,872 @@
+[
+  {
+    "item_id": "THPT-G12-EXP01-C01",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Đạo hàm của x³−2x²+5x+7 bằng gì?",
+    "answer_key": null,
+    "worked_solution": "3x²−4x+5, bất kể C=7.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-P01",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "CAS cho F=x³−2x²+5x. Vì sao phải bổ sung +C?",
+    "answer_key": null,
+    "worked_solution": "Bởi F+k vẫn có cùng đạo hàm, k∈ℝ.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-A01",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Tìm họ nguyên hàm của 2cos(2x)+6x trên ℝ.",
+    "answer_key": null,
+    "worked_solution": "sin(2x)+3x²+C; kiểm đạo hàm 2cos(2x)+6x.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-A01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-C02",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Tính ∫₀¹ 2x dx.",
+    "answer_key": null,
+    "worked_solution": "1; nguyên hàm x².",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-C02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-P02",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Vì sao ∫₁⁰ 2x dx =−1 thay vì 1?",
+    "answer_key": null,
+    "worked_solution": "Đổi thứ tự cận đổi dấu của tích phân có hướng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-A02",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Tính ∫₋₁¹ x³ dx và giải thích nhanh nhờ đối xứng.",
+    "answer_key": null,
+    "worked_solution": "0 vì x³ là hàm lẻ trên đoạn đối xứng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-A02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-C03",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Tính T₂ của ∫₀² x dx.",
+    "answer_key": null,
+    "worked_solution": "2; h=1, f=0,1,2 ⇒ T₂=1(0+1+1).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-C03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-P03",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Tại sao hệ số f(a),f(b) trong công thức chỉ là 1/2?",
+    "answer_key": null,
+    "worked_solution": "Hai đầu mỗi đầu tham gia đúng một hình thang, các nút giữa tham gia hai.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-P03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-A03",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Xấp xỉ ∫₀¹ x²dx bằng T₂.",
+    "answer_key": null,
+    "worked_solution": "h=1/2; f(0)=0,f(1/2)=1/4,f(1)=1; T₂=(1/2)(0+1/4+1/2)=3/8.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-A03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-C04",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Công thức bound với M=2, b−a=1, n=5 là bao nhiêu?",
+    "answer_key": null,
+    "worked_solution": "1/(150)≈0,0066667.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-C04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-P04",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Có thể kết luận sai số <0,01 chỉ bằng cách phần mềm hiển thị ba chữ số thập phân không?",
+    "answer_key": null,
+    "worked_solution": "Không; độ dài hiển thị không là chứng nhận sai số.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-P04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-A04",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Nếu M=2, [a,b]=[0,1], yêu cầu bound <0,01, chọn n nguyên nhỏ nhất.",
+    "answer_key": null,
+    "worked_solution": "n²>100/6 ⇒ n≥5.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-A04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-C05",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Với t=0,1,2 và v=1,3,5 (m/s), T₂ là bao nhiêu?",
+    "answer_key": null,
+    "worked_solution": "6m.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-C05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-P05",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Lấy diện tích mặt cắt (cm²) tích phân theo chiều dài (cm) thu được đơn vị nào?",
+    "answer_key": null,
+    "worked_solution": "cm³.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-P05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP01-A05",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Dữ liệu x=0,1,3 cm; S=2,4,5 cm². Xấp xỉ thể tích.",
+    "answer_key": null,
+    "worked_solution": "(1)(2+4)/2+(2)(4+5)/2=3+9=12 cm³.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP01-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP01-A05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-C01",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Hai điểm P(1,2,0) và Q(1,2,3) có hình chiếu lên Oxy giống không?",
+    "answer_key": null,
+    "worked_solution": "Có, đều là (1,2).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-P01",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Vì sao một hình tam giác Penrose trông khép kín ở một góc không chứng minh mô hình 3D đó thực sự khép kín?",
+    "answer_key": null,
+    "worked_solution": "Vì ảnh chiếu bỏ mất độ sâu và có thể che khuất các chỗ nối không khớp.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-A01",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Sau khi xoay một mô hình Penrose 3D, thấy khe hở. Phát biểu nhận xét toán học.",
+    "answer_key": null,
+    "worked_solution": "Mô hình chỉ khép kín trong hình chiếu được chọn, không khép kín về tọa độ không gian.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-A01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-C02",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Lăng trụ tam giác có bao nhiêu đỉnh?",
+    "answer_key": null,
+    "worked_solution": "6.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-C02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-P02",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Vì sao A,B,C không được thẳng hàng khi tạo lăng trụ tam giác?",
+    "answer_key": null,
+    "worked_solution": "Đáy sẽ suy biến có diện tích bằng 0, không tạo khối lăng trụ thực.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-A02",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Với cùng đáy, thay h=4 thì thể tích bằng bao nhiêu?",
+    "answer_key": null,
+    "worked_solution": "V=2×4=8 (đv³).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-A02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-C03",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Độ dài MN của M(1,0,0),N(1,0,3) là bao nhiêu?",
+    "answer_key": null,
+    "worked_solution": "3.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-C03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-P03",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Ảnh chụp màn hình tại một góc cho thấy hai đoạn dính nhau. Đó có đủ để khẳng định chúng cắt nhau không?",
+    "answer_key": null,
+    "worked_solution": "Không, cần điều kiện giao nhau trong Oxyz hoặc kiểm bằng nhiều góc.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-P03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-A03",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Nếu hai điểm khác nhau ở đúng tọa độ z, nên chọn góc nhìn nào để kiểm?",
+    "answer_key": null,
+    "worked_solution": "Nhìn bên, mặt đứng xOz hoặc yOz để thấy chênh lệch z.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-A03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-C04",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Tại u=0, v=0, điểm M là gì?",
+    "answer_key": null,
+    "worked_solution": "M(0,0)=(1,0,0).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-C04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-P04",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Vì sao mặt vặn nửa vòng có mô tả ghép v với −v khi đi một vòng?",
+    "answer_key": null,
+    "worked_solution": "Sau một vòng quanh tâm, chiều ngang của dải bị đảo; hai mép nối đổi hướng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-P04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-A04",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Tính M(0,−1) và M(2π,1).",
+    "answer_key": null,
+    "worked_solution": "Cùng (1/2,0,0).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-A04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-C05",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Báo cáo mô hình tái lập tối thiểu có nên lưu thông số tọa độ không?",
+    "answer_key": null,
+    "worked_solution": "Có; tọa độ/tham số là chứng cứ có thể kiểm độc lập.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-C05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-P05",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Nếu phần mềm đổi giao diện hoặc ngôn ngữ menu, cách nào giữ báo cáo tái lập?",
+    "answer_key": null,
+    "worked_solution": "Lưu lệnh, dữ liệu và quy tắc dựng, không chỉ nhãn nút trên giao diện.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-P05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-EXP02-A05",
+    "content_version": "G12-SGK-EXP01-EXP02-R01",
+    "stem": "Một mô hình có 1 ảnh duy nhất ở góc nhìn đẹp. Cần thêm gì để kiểm tra 3D?",
+    "answer_key": null,
+    "worked_solution": "Thêm góc nhìn khác và dữ liệu tọa độ/quan hệ giao–song song.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G12-SGK-EXP02-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+      "heading_id": "THPT-G12-EXP02-A05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+        "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

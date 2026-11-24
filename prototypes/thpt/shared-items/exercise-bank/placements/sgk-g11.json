@@ -3949,5 +3949,651 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 12,
     "item_id": "THPT-G11-B09-P10"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-SUPP-E01-C01",
+    "skill_id": "G11-E01-EXPONENTIAL_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-SUPP-E01-P01",
+    "skill_id": "G11-E01-EXPONENTIAL_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-SUPP-E01-C02",
+    "skill_id": "G11-E01-HALF_LIFE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-SUPP-E01-P02",
+    "skill_id": "G11-E01-HALF_LIFE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-SUPP-E01-C03",
+    "skill_id": "G11-E01-PH_SCALE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-SUPP-E01-P03",
+    "skill_id": "G11-E01-PH_SCALE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-SUPP-E01-C04",
+    "skill_id": "G11-E01-RICHTER_SCALE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-SUPP-E01-P04",
+    "skill_id": "G11-E01-RICHTER_SCALE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-SUPP-E01-C05",
+    "skill_id": "G11-E01-DECIBEL_SCALE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-SUPP-E01-P05",
+    "skill_id": "G11-E01-DECIBEL_SCALE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G11-SUPP-E01-P06",
+    "skill_id": "G11-E01-MODEL_ASSUMPTIONS"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-SUPP-E02-C01",
+    "skill_id": "G11-E02-NET_CONSTRUCTION"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-SUPP-E02-P01",
+    "skill_id": "G11-E02-NET_CONSTRUCTION"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-SUPP-E02-C02",
+    "skill_id": "G11-E02-LINE_PLANE_MEASURE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-SUPP-E02-P02",
+    "skill_id": "G11-E02-LINE_PLANE_MEASURE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-SUPP-E02-C03",
+    "skill_id": "G11-E02-DIHEDRAL_MEASURE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-SUPP-E02-P03",
+    "skill_id": "G11-E02-DIHEDRAL_MEASURE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-SUPP-E02-C04",
+    "skill_id": "G11-E02-VOLUME_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-SUPP-E02-P04",
+    "skill_id": "G11-E02-VOLUME_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-SUPP-E02-C05",
+    "skill_id": "G11-E02-GEOGEBRA_REPRESENTATION"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-SUPP-E02-P05",
+    "skill_id": "G11-E02-GEOGEBRA_REPRESENTATION"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:TRIG:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-TRIG-C01",
+    "skill_id": "G11-YR-TRIG_IDENTITY"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:TRIG:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-TRIG-P01",
+    "skill_id": "G11-YR-TRIG_IDENTITY"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:TRIG:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-YR-TRIG-P02",
+    "skill_id": "G11-YR-TRIG_IDENTITY"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SEQUENCE:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-SEQ-C01",
+    "skill_id": "G11-YR-SEQUENCE_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SEQUENCE:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-SEQ-P01",
+    "skill_id": "G11-YR-SEQUENCE_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SEQUENCE:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G11-YR-SEQ-P02",
+    "skill_id": "G11-YR-SEQUENCE_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:LIMIT:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-LIMIT-C01",
+    "skill_id": "G11-YR-LIMIT_CONTINUITY"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:LIMIT:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-LIMIT-P01",
+    "skill_id": "G11-YR-LIMIT_CONTINUITY"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:LIMIT:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-YR-LIMIT-P02",
+    "skill_id": "G11-YR-LIMIT_CONTINUITY"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:EXPLOG:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-EXPL-C01",
+    "skill_id": "G11-YR-EXP_LOG_DOMAIN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:EXPLOG:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-EXPL-P01",
+    "skill_id": "G11-YR-EXP_LOG_DOMAIN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:EXPLOG:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-YR-EXPL-P02",
+    "skill_id": "G11-YR-EXP_LOG_DOMAIN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:DERIV:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-DERIV-C01",
+    "skill_id": "G11-YR-DERIVATIVE_RATE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:DERIV:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-DERIV-P01",
+    "skill_id": "G11-YR-DERIVATIVE_RATE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:DERIV:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G11-YR-DERIV-P02",
+    "skill_id": "G11-YR-DERIVATIVE_RATE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SPACE:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-SPACE-C01",
+    "skill_id": "G11-YR-SPACE_PERP_DISTANCE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SPACE:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-SPACE-P01",
+    "skill_id": "G11-YR-SPACE_PERP_DISTANCE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SPACE:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-YR-SPACE-P02",
+    "skill_id": "G11-YR-SPACE_PERP_DISTANCE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:VOLUME:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-VOL-C01",
+    "skill_id": "G11-YR-SPACE_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:VOLUME:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-VOL-P01",
+    "skill_id": "G11-YR-SPACE_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:VOLUME:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-YR-VOL-P02",
+    "skill_id": "G11-YR-SPACE_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:STAT:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-STAT-C01",
+    "skill_id": "G11-YR-GROUPED_STATS"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:STAT:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-STAT-P01",
+    "skill_id": "G11-YR-GROUPED_STATS"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:STAT:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-YR-STAT-P02",
+    "skill_id": "G11-YR-GROUPED_STATS"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:PROB:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-PROB-C01",
+    "skill_id": "G11-YR-PROBABILITY_COMBINE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:PROB:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-YR-PROB-P01",
+    "skill_id": "G11-YR-PROBABILITY_COMBINE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:PROB:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-YR-PROB-P02",
+    "skill_id": "G11-YR-PROBABILITY_COMBINE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:PROB:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-YR-IND-C01",
+    "skill_id": "G11-YR-PROBABILITY_INDEP"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:PROB:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-YR-IND-P01",
+    "skill_id": "G11-YR-PROBABILITY_INDEP"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:PROB:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-YR-IND-P02",
+    "skill_id": "G11-YR-PROBABILITY_INDEP"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:INTEGRATE:APPLICATION",
+    "role": "SGK_APPLICATION",
+    "order": 1,
+    "item_id": "THPT-G11-YR-INT-P01",
+    "skill_id": "G11-YR_CROSS_CHAPTER_REMEDIATION"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-SUPP-E01-W01",
+    "skill_id": "G11-E01-HALF_LIFE",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G11-SUPP-E01-W02",
+    "skill_id": "G11-E01-DECIBEL_SCALE",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E01:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G11-SUPP-E01-W03",
+    "skill_id": "G11-E01-MODEL_ASSUMPTIONS",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-SUPP-E02-W01",
+    "skill_id": "G11-E02-LINE_PLANE_MEASURE",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G11-SUPP-E02-W02",
+    "skill_id": "G11-E02-VOLUME_MODEL",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:E02:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G11-SUPP-E02-W03",
+    "skill_id": "G11-E02-GEOGEBRA_REPRESENTATION",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:TRIG:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-YR-TRIG-W01",
+    "skill_id": "G11-YR-TRIG_IDENTITY",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SEQUENCE:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-YR-SEQ-W01",
+    "skill_id": "G11-YR-SEQUENCE_MODEL",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:LIMIT:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-YR-LIMIT-W01",
+    "skill_id": "G11-YR-LIMIT_CONTINUITY",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:EXPLOG:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-YR-EXPL-W01",
+    "skill_id": "G11-YR-EXP_LOG_DOMAIN",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:DERIV:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-YR-DERIV-W01",
+    "skill_id": "G11-YR-DERIVATIVE_RATE",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SPACE:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-YR-SPACE-W01",
+    "skill_id": "G11-YR-SPACE_PERP_DISTANCE",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:VOLUME:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-YR-VOLUME-W01",
+    "skill_id": "G11-YR-SPACE_VOLUME",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:STAT:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-YR-STAT-W01",
+    "skill_id": "G11-YR-GROUPED_STATS",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:PROB:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-YR-PROB-W01",
+    "skill_id": "G11-YR-PROBABILITY_COMBINE",
+    "original_role": "ANCHOR_TAG"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:PROB:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G11-YR-IND-W01",
+    "skill_id": "G11-YR-PROBABILITY_INDEP",
+    "original_role": "WRITTEN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G11-SUPP-E01-P01",
+    "skill_id": "G11-E01-EXPONENTIAL_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G11-SUPP-E01-P02",
+    "skill_id": "G11-E01-HALF_LIFE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G11-SUPP-E01-P03",
+    "skill_id": "G11-E01-PH_SCALE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G11-SUPP-E01-P04",
+    "skill_id": "G11-E01-RICHTER_SCALE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G11-SUPP-E01-P05",
+    "skill_id": "G11-E01-DECIBEL_SCALE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G11-SUPP-E01-P06",
+    "skill_id": "G11-E01-MODEL_ASSUMPTIONS"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G11-SUPP-E02-P01",
+    "skill_id": "G11-E02-NET_CONSTRUCTION"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G11-SUPP-E02-P02",
+    "skill_id": "G11-E02-LINE_PLANE_MEASURE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G11-SUPP-E02-P03",
+    "skill_id": "G11-E02-DIHEDRAL_MEASURE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G11-SUPP-E02-P04",
+    "skill_id": "G11-E02-VOLUME_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:EXP:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G11-SUPP-E02-P05",
+    "skill_id": "G11-E02-GEOGEBRA_REPRESENTATION"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G11-YR-TRIG-P01",
+    "skill_id": "G11-YR-TRIG_IDENTITY"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G11-YR-SEQ-P01",
+    "skill_id": "G11-YR-SEQUENCE_MODEL"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G11-YR-LIMIT-P01",
+    "skill_id": "G11-YR-LIMIT_CONTINUITY"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G11-YR-EXPL-P01",
+    "skill_id": "G11-YR-EXP_LOG_DOMAIN"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G11-YR-DERIV-P01",
+    "skill_id": "G11-YR-DERIVATIVE_RATE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G11-YR-SPACE-P01",
+    "skill_id": "G11-YR-SPACE_PERP_DISTANCE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G11-YR-VOL-P01",
+    "skill_id": "G11-YR-SPACE_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G11-YR-STAT-P01",
+    "skill_id": "G11-YR-GROUPED_STATS"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G11-YR-PROB-P01",
+    "skill_id": "G11-YR-PROBABILITY_COMBINE"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G11-YR-IND-P01",
+    "skill_id": "G11-YR-PROBABILITY_INDEP"
+  },
+  {
+    "collection": "SGK:G11:SUPPLEMENT:YEAR:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G11-YR-INT-P01",
+    "skill_id": "G11-YR_CROSS_CHAPTER_REMEDIATION"
   }
 ]

@@ -55,7 +55,10 @@
     "c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3",
     "4ea8df2ca2682d9fac8b1556852334af336930a5",
     "4e8e462a5c2243583be8c71625a9be3095e48c7b",
-    "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f"
+    "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+    "b848436621c17c89919e3d3f93519d12612fe039",
+    "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46",
+    "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
   ],
   "projection_sources": [
     {
@@ -702,21 +705,86 @@
       "path": "docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md",
       "blob": "80ca474035139434605dd75fe237b84ae1f29c43",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g11-supplement-p99-p109-public-r00.json",
+      "blob": "c3e849345b5880ef021bb851aaa50fedc818e91a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g12-exp01-exp02-public-r01.json",
+      "blob": "cc0a6c419b02e0e61b5710f397fc0a025d668eaa",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g12-yearend-public-r00.json",
+      "blob": "679a49d6f3392fe68b5f4e04841e97c13bfb0547",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/bo-sung/luyen-tap-trai-nghiem.md",
+      "blob": "4092cb760ccf7d0da9fa7625c0db9528788a5932",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/bo-sung/luyen-tap-on-tap-cuoi-nam.md",
+      "blob": "b400ae65ee17b7b2295e5c178dd6bda9b798a1bc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/bo-sung/tu-kiem-tra-trai-nghiem.md",
+      "blob": "b4ca6533fcde90745283aea24d5453b8757735f1",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/bo-sung/tu-kiem-tra.md",
+      "blob": "c542ccc5878d0205de6601b241f42ae81b23fe57",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/bo-sung/tu-luan.md",
+      "blob": "d5fab906c8015134de913b8c4c986b427f14f3e6",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g11-supplement-p99-p109-r00.js",
+      "blob": "84d74bd56aa9a9170601c6e9f97b3c44046bb353",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/bo-sung/luyen-tap-trai-nghiem.md",
+      "blob": "db1e324a2997ea8059d75a8bac9ed7f8a81f0a90",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/bo-sung/tu-kiem-tra-trai-nghiem.md",
+      "blob": "f2a860275b152a95d5e9878179916530fb1325e6",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/on-tap-cuoi-nam/luyen-tap.md",
+      "blob": "35a625f6252b98d1d45425b6e86bf29fe0b371d6",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-12/on-tap-cuoi-nam/tu-kiem-tra.md",
+      "blob": "7cb8af4de4cb65070adb9496c4dfdf34b88f99f7",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 1352,
-    "written_references": 283,
+    "formative_items": 1449,
+    "written_references": 325,
     "topic_practice": 1479,
     "topic_replay": 338,
-    "sgk_public_selfcheck": 409,
-    "placements": 3344,
+    "sgk_public_selfcheck": 472,
+    "placements": 3546,
     "projection_field_differences": 20,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 280
+    "legacy_combined_answer_items": 362
   },
-  "scope": "CD01–22 + all 24 SGK chapters public formative, public self-check and written references (supplements and full reconciliation pending)",
+  "scope": "CD01–22 + all 24 SGK chapters + public G11/G12 supplements; full reconciliation and knowledge first-try inventory pending",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -1461,7 +1529,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "280 combined-answer records, answer_key=null, manual review pending (includes G10 B12-P07 runtime candidate).",
+  "legacy_combined_answer_note": "362 combined-answer records retain complete source answer/solution, answer_key=null, manual audit pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -1602,6 +1670,36 @@
     {
       "scope": "CD22",
       "note": "114 existing placements (107 SGK +7 public topic extensions), original 7 extension IDs retained. G10 B12-P07 separate runtime candidate Delta C review pending; not added to CD22. All 24 SGK chapters represented, supplements and remaining public first-try/knowledge items need inventory before closure."
+    },
+    {
+      "scope": "SUPPLEMENTS",
+      "note": "G11/G12 public supplements imported; exact G11 runtime self-check selection uses first non-Core per outcome, 11+11; G12 EXP 10 end references and YE all 31 same IDs. No independent Readiness credit. Knowledge-page items with canonical IDs still need reconciliation."
+    }
+  ],
+  "supplement_import_batches": [
+    {
+      "scope": "G11_P99_P109",
+      "formative": 52,
+      "written": 16,
+      "public_selfcheck_reuse": 22,
+      "placements": 90,
+      "source_blob": "b848436621c17c89919e3d3f93519d12612fe039"
+    },
+    {
+      "scope": "G12_EXP01_EXP02",
+      "formative": 30,
+      "written": 10,
+      "public_selfcheck_reuse": 10,
+      "placements": 50,
+      "source_blob": "8a34d1cf4009b9b6511a34c08c5d8e31525a6a46"
+    },
+    {
+      "scope": "G12_YEAR_END",
+      "formative": 15,
+      "written": 16,
+      "public_selfcheck_reuse": 31,
+      "placements": 62,
+      "source_blob": "7274cb3a6c35627f0e23574709cf5cdc355ab46a"
     }
   ]
 }
