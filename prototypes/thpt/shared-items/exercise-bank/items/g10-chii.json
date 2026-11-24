@@ -4,10 +4,10 @@
     "content_version": "THPT-G10-CHII-R01",
     "stem": "Biểu thức nào sau đây là bất phương trình bậc nhất hai ẩn?",
     "answer_key": "B",
-    "worked_solution": "0x−3y>1 đúng dạng ax+by>c với (a,b)=(0,−3) ≠ (0,0). Các lựa chọn khác bậc cao hoặc hệ số x,y đồng thời bằng 0.",
+    "worked_solution": "B đúng: 4x+0y≥8 có hai hệ số (4,0), không đồng thời bằng 0; tương đương x≥2, còn y tùy ý. A chứa x², C chứa xy, D có cả hai hệ số bằng 0.",
     "options": [
       "A. 2x²+y≤3",
-      "B. 0x−3y>1",
+      "B. 4x+0y≥8",
       "C. xy<2",
       "D. 0x+0y≤2"
     ],
@@ -34,7 +34,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu loại một hệ số bằng 0, kiểm (a,b) có đồng thời bằng 0 không; phân biệt bậc nhất với x², xy. Ôn Bài 3 §2.1.1; luyện THPT-G10-CHII-TRY01."
   },
   {
     "item_id": "THPT-G10-B03-C02",
@@ -71,7 +72,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu thay y âm sai dấu hoặc bỏ điểm biên, viết −(−1) trong ngoặc và so với ≤. Ôn Bài 3 §2.1.2; luyện THPT-G10-CHII-TRY02."
   },
   {
     "item_id": "THPT-G10-B03-P01",
@@ -108,19 +110,20 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ đường biên vì thấy dấu bất phương trình, thay một điểm trên biên và kiểm dấu bằng. Ôn Bài 3 §2.2.1; luyện THPT-G10-CHII-TRY03."
   },
   {
     "item_id": "THPT-G10-B03-P02",
     "content_version": "THPT-G10-CHII-R01",
-    "stem": "Miền nghiệm của 3x−y<2 nằm ở đâu so với y=3x−2?",
+    "stem": "Miền nghiệm của 2x−3y≤6 nằm ở đâu so với đường thẳng y=(2x−6)/3?",
     "answer_key": "A",
-    "worked_solution": "3x−y<2 ⇔ −y<2−3x ⇔ y>3x−2. Nằm phía trên đường biên nét đứt, không lấy biên.",
+    "worked_solution": "2x−3y≤6 ⇔ −3y≤6−2x ⇔ y≥(2x−6)/3, vì chia cho −3 phải đảo chiều. Miền phía trên và gồm cả đường biên (nét liền). Thử O(0,0): 0≤6, đồng thời 0≥−2, phù hợp.",
     "options": [
-      "A. Trên đường thẳng, không gồm biên",
-      "B. Dưới đường thẳng, không gồm biên",
-      "C. Trên đường thẳng, gồm biên",
-      "D. Dưới đường thẳng, gồm biên"
+      "A. Phía trên, gồm đường biên",
+      "B. Phía dưới, gồm đường biên",
+      "C. Phía trên, không gồm đường biên",
+      "D. Phía dưới, không gồm đường biên"
     ],
     "skill_ids": [
       "G10-B03-HALFPLANE"
@@ -128,7 +131,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Nhân với −1 khi chuyển −y sang một vế và nhớ đảo chiều."
+      "Cô lập −3y rồi chia cho −3; kiểm dấu bằng và thử một điểm ngoài biên."
     ],
     "rubric": null,
     "interaction": {
@@ -145,19 +148,20 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đổi chiều sai, cô lập −3y rồi chia số âm; kiểm O và dấu bằng. Ôn Bài 3 §2.2.2 / HELP-G10-B03-02; luyện THPT-G10-CHII-TRY04."
   },
   {
     "item_id": "THPT-G10-B03-P03",
     "content_version": "THPT-G10-CHII-R01",
-    "stem": "Khi vẽ 2x+y≥0, kết luận nào đúng về điểm thử O(0,0)?",
+    "stem": "Khi vẽ miền nghiệm 3x−2y>0, kết luận nào đúng về điểm thử O(0,0)?",
     "answer_key": "B",
-    "worked_solution": "O nằm trên đường 2x+y=0 nên không giúp chọn một phía. Có thể dùng (1,0): 2>0, phía chứa (1,0) thỏa ≥.",
+    "worked_solution": "O nằm trên biên 3x−2y=0; dù không thỏa dấu >, nó không thuộc riêng nửa mặt phẳng nào, nên không giúp chọn phía. Thử (1,0): 3>0 đúng, chọn nửa mặt phẳng chứa (1,0), loại đường biên.",
     "options": [
-      "A. O hợp lệ để xác định phía vì thỏa bất phương trình",
-      "B. O không hợp lệ vì nằm trên đường biên",
-      "C. O không hợp lệ vì y=0",
-      "D. Không cần đường biên"
+      "A. O xác định được phía cần tô vì không thỏa bất phương trình",
+      "B. O không dùng để chọn phía vì nằm trên đường biên",
+      "C. O không dùng được vì y=0",
+      "D. Không cần vẽ đường biên"
     ],
     "skill_ids": [
       "G10-B03-POINT_TEST"
@@ -165,7 +169,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Tính 2·0+0 và so với vế phải của phương trình đường biên."
+      "Điểm thử phải nằm ngoài đường biên; hãy thay O vào phương trình biên."
     ],
     "rubric": null,
     "interaction": {
@@ -182,7 +186,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng O trên biên để tô miền, chọn một điểm khác biên và thay vào bất phương trình. Ôn Bài 3 §2.2.2 / HELP-G10-B03-01; luyện THPT-G10-B03-P05."
   },
   {
     "item_id": "THPT-G10-B03-P04",
@@ -219,7 +224,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đổi nhầm đơn vị hoặc dấu ít nhất, quy mọi số tiền về nghìn, kiểm một phương án vừa đạt và điều kiện đếm vé. Ôn Bài 3 §2.2.3; luyện THPT-G10-CHII-TRY05."
   },
   {
     "item_id": "THPT-G10-B03-P05",
@@ -256,19 +262,20 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận điểm có vế trái bằng 0, đối chiếu dấu > với =; thử từng điểm. Ôn Bài 3 §2.2.1 / HELP-G10-B03-02; luyện THPT-G10-CHII-TRY03."
   },
   {
     "item_id": "THPT-G10-B03-P06",
     "content_version": "THPT-G10-CHII-R01",
-    "stem": "Cửa hàng mua x thùng loại A giá 35 nghìn/thùng, y thùng loại B giá 20 nghìn/thùng, ngân sách không quá 700 nghìn; x,y∈Z≥0. Cặp nào khả thi?",
+    "stem": "Trộn x kg hàng A giá 80 nghìn đồng/kg và y kg hàng B giá 120 nghìn đồng/kg. Muốn giá trung bình không quá 95 nghìn đồng/kg, điều kiện nào tương đương với yêu cầu thực tế?",
     "answer_key": "A",
-    "worked_solution": "(10,15): 350+300=650≤700; (15,10):725; (20,1):720; (0,36):720 đều vượt 700.",
+    "worked_solution": "Khối lượng x,y không âm và tổng x+y>0 thì giá trung bình (80x+120y)/(x+y) mới xác định. Nhân bất phương trình với mẫu dương: 80x+120y≤95(x+y) ⇔ 25y≤15x ⇔ 5y≤3x. (0,0) thỏa bất phương trình sau biến đổi nhưng không có giá trung bình; vì vậy B sai. C sai chiều, D sai hệ số.",
     "options": [
-      "A. (10,15)",
-      "B. (15,10)",
-      "C. (20,1)",
-      "D. (0,36)"
+      "A. 5y≤3x, x,y≥0, x+y>0",
+      "B. 5y≤3x, x,y≥0, kể cả x=y=0",
+      "C. 5y≥3x, x,y≥0, x+y>0",
+      "D. 3y≤5x, x,y≥0, x+y>0"
     ],
     "skill_ids": [
       "G10-B03-MODELING"
@@ -276,7 +283,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Tính 35x+20y rồi so với 700."
+      "Viết tổng tiền chia tổng khối lượng; trước khi nhân chéo, kiểm mẫu số dương."
     ],
     "rubric": null,
     "interaction": {
@@ -293,7 +300,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhận (0,0) sau nhân chéo, kiểm lại mẫu x+y trước khi biến đổi. Ôn Bài 3 §3.3 / HELP-G10-B03-01; tự kiểm phương án (5,3) và (5,4)."
   },
   {
     "item_id": "THPT-G10-B04-C01",
@@ -330,7 +338,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ kiểm tổng, lập bảng ba điều kiện và loại cặp sai bất kỳ một dòng. Ôn Bài 4 §2.1.1 / HELP-G10-B04-01; luyện THPT-G10-CHII-TRY06."
   },
   {
     "item_id": "THPT-G10-B04-C02",
@@ -367,7 +376,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu tô toàn nửa mặt phẳng, lấy giao với cả x≥0 và y≥0; xác định giao trục và cạnh lấy dấu bằng. Ôn Bài 4 §2.2.1; luyện THPT-G10-CHII-TRY07."
   },
   {
     "item_id": "THPT-G10-B04-P01",
@@ -404,14 +414,15 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn điểm thỏa một đường chéo mà quên đường kia, lập bảng kiểm bốn điều kiện. Ôn Bài 4 §2.2.1 / HELP-G10-B04-01; luyện THPT-G10-CHII-TRY06."
   },
   {
     "item_id": "THPT-G10-B04-P02",
     "content_version": "THPT-G10-CHII-R01",
     "stem": "Trên miền x≥0, y≥0, x+y≤7, 2x+y≤10, giá trị lớn nhất của F=4x+3y là bao nhiêu?",
     "answer_key": "C",
-    "worked_solution": "Các đỉnh (0,0),(5,0),(3,4),(0,7). F lần lượt 0,20,24,21. Cực đại 24 tại (3,4).",
+    "worked_solution": "Giao với hai trục cho (5,0) và (0,7); giải x+y=7, 2x+y=10 được (3,4); thêm (0,0). Miền là đa giác kín, bị chặn; hàm tuyến tính đạt GTLN tại ít nhất một đỉnh. F lần lượt 0,20,24,21; GTLN 24 tại (3,4). Kiểm lại (3,4) thỏa cả hai ràng buộc với dấu bằng.",
     "options": [
       "A. 20",
       "B. 21",
@@ -441,7 +452,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ giao hai biên hoặc chọn đỉnh không hợp lệ, giải hệ hai đường biên, kiểm ràng buộc rồi lập bảng F. Ôn Bài 4 §2.3.1 / HELP-G10-B04-02; luyện THPT-G10-CHII-TRY09."
   },
   {
     "item_id": "THPT-G10-B04-P03",
@@ -478,7 +490,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn duy nhất một đầu cạnh, kiểm F tại trung điểm của cạnh x+y=8. Ôn Bài 4 §2.3.1 / HELP-G10-B04-02; luyện THPT-G10-B04-P02 để so với trường hợp tối ưu duy nhất."
   },
   {
     "item_id": "THPT-G10-B04-P04",
@@ -515,19 +528,20 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cố tìm giao điểm của hai miền mâu thuẫn, đặt t=x+y và kiểm khoảng t. Ôn Bài 4 §2.2.2 / HELP-G10-B04-01; luyện THPT-G10-CHII-TRY08."
   },
   {
     "item_id": "THPT-G10-B04-P05",
     "content_version": "THPT-G10-CHII-R01",
     "stem": "Với miền x≥0, y≥0 không bị chặn, F=−x−y có đặc điểm nào?",
     "answer_key": "B",
-    "worked_solution": "Vì x+y≥0, F=−x−y≤0; tại (0,0), F=0 là giá trị lớn nhất. Cho x→∞, F→−∞ nên không có giá trị nhỏ nhất hữu hạn.",
+    "worked_solution": "Vì x,y≥0, F=−x−y≤0 và F(0,0)=0, nên GTLN là 0 (duy nhất tại O). Khi y=0 và x tăng tùy ý, F=−x giảm không bị chặn dưới; không tồn tại GTNN. Miền không bị chặn không đồng nghĩa cả hai cực trị đều không tồn tại.",
     "options": [
-      "A. Không có cực đại vì miền không bị chặn",
-      "B. Cực đại bằng 0 tại (0,0), không có cực tiểu hữu hạn",
-      "C. Cực tiểu bằng 0 tại (0,0)",
-      "D. Cả cực đại và cực tiểu đều bằng 0"
+      "A. Không có GTLN vì miền không bị chặn",
+      "B. GTLN bằng 0 tại (0,0), không có GTNN",
+      "C. GTNN bằng 0 tại (0,0)",
+      "D. GTLN và GTNN đều bằng 0"
     ],
     "skill_ids": [
       "G10-B04-FEASIBILITY"
@@ -552,7 +566,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết luận không có GTLN chỉ vì miền không bị chặn, tìm cận F≤0 rồi kiểm điểm đạt cận; thử y=0,x tăng để xét GTNN. Ôn Bài 4 §2.3.1 và TOP02-M14; tự kiểm F=x+y trên cùng miền."
   },
   {
     "item_id": "THPT-G10-B04-P06",
@@ -589,7 +604,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn 25/3 cho số lượng nguyên, liệt kê x=0,1,2 và y nguyên tối đa theo cả hai ràng buộc. Ôn Bài 4 §2.3.2 / HELP-G10-B04-02; luyện THPT-TOP02-ADD18."
   },
   {
     "item_id": "THPT-G10-CHII-TRY01",
