@@ -5,14 +5,18 @@
     "stem": "Cho dãy hữu hạn a_n=(−1)^n(2n+1), n∈{0,1,2,3}. Liệt kê các số hạng; có a_4 trong dãy không?",
     "answer_key": "a_0=1,a_1=−3,a_2=5,a_3=−7; không có a_4.",
     "worked_solution": "Thế lần lượt n=0,1,2,3 cho 1,−3,5,−7. Miền chỉ số của dãy có 0 nhưng không có 4; tính biểu thức tại n=4 được 9 không khiến 9 trở thành số hạng thuộc dãy đã cho.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B05-SEQUENCE-DEFINITION"
+    ],
     "original_outcome_ids": [
       "TOP07-O01"
     ],
     "problem_type_id": "TOP07-FINITE_INDEX",
     "difficulty": "BASIC",
-    "hints": [],
-    "remediation": "Viết miền chỉ số trước khi thay số; không mặc định mọi dãy bắt đầu n=1.",
+    "hints": [
+      "Thế đúng từng chỉ số trong tập {0;1;2;3}."
+    ],
+    "remediation": "Nếu ghi a₄, kiểm miền chỉ số, không phải cứ thay vào biểu thức được là thuộc dãy. Ôn TOP07-M01; luyện THPT-G11-B05-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -30,14 +34,18 @@
     "stem": "Dãy vô hạn u_n=(n+1)/(2n+1), n≥1. Tính u_4 và xét 1/2 có phải một số hạng hay không.",
     "answer_key": "u_4=5/9; 1/2 không là số hạng.",
     "worked_solution": "Thế n=4 được 5/9. Nếu (n+1)/(2n+1)=1/2 thì 2n+2=2n+1, vô lý; không có chỉ số nguyên dương nào thỏa.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM"
+    ],
     "original_outcome_ids": [
       "TOP07-O02"
     ],
     "problem_type_id": "TOP07-EXPLICIT_MEMBERSHIP",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Không suy từ giới hạn 1/2 thành 'phải có một số hạng đúng bằng 1/2'.",
+    "hints": [
+      "Để xét có số hạng bằng 1/2, giải phương trình theo n nguyên dương."
+    ],
+    "remediation": "Nếu nhận 1/2 vì gần giới hạn, giải phương trình chính xác rồi kiểm n nguyên dương. Ôn TOP07-M02; luyện THPT-G11-B05-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -55,14 +63,18 @@
     "stem": "Dãy u_1=4, u_{n+1}=2u_n−1. Tìm u_2,u_3,u_4 và chứng minh công thức u_n=3·2^{n−1}+1.",
     "answer_key": "u_2=7,u_3=13,u_4=25; u_n=3·2^{n−1}+1.",
     "worked_solution": "Đặt v_n=u_n−1, khi đó v_{n+1}=2v_n và v_1=3, suy ra v_n=3·2^{n−1}. Hoặc quy nạp: công thức đúng n=1, thay vào truy hồi cho n+1 đúng.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
     "original_outcome_ids": [
       "TOP07-O03"
     ],
     "problem_type_id": "TOP07-RECURRENCE_CLOSED",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu nhầm u_{n+1}=2(u_n−1), khai triển và đối chiếu u_2.",
+    "hints": [
+      "Đặt v_n=u_n−1 để triệt tiêu hằng số truy hồi."
+    ],
+    "remediation": "Nếu nhầm 2u_n−1 thành 2(u_n−1), khai triển; kiểm v_{n+1}=2v_n. Ôn TOP07-M03; luyện THPT-G11-B05-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -80,14 +92,18 @@
     "stem": "Với u_n=3−2/n (n≥1), xét dãy tăng hay giảm bằng hiệu hai số hạng liên tiếp.",
     "answer_key": "Tăng nghiêm ngặt.",
     "worked_solution": "u_{n+1}−u_n=(3−2/(n+1))−(3−2/n)=2/[n(n+1)]>0 vì n≥1. Kết luận tăng với mọi chỉ số thuộc miền.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B05-MONOTONICITY"
+    ],
     "original_outcome_ids": [
       "TOP07-O04"
     ],
     "problem_type_id": "TOP07-MONOTONIC_PROOF",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Thử n=1,2 để đoán rồi phải chứng minh dấu tổng quát.",
+    "hints": [
+      "Tính u_{n+1}−u_n với n bất kỳ."
+    ],
+    "remediation": "Nếu chỉ xét vài số đầu, chứng minh hiệu dương với mọi n≥1. Ôn TOP07-M04; luyện THPT-G11-B05-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -105,14 +121,18 @@
     "stem": "Cho u_n=(2n+1)/(n+2), n≥1. Chứng minh 1≤u_n<2 và cho biết số hạng nào nhận cận dưới 1.",
     "answer_key": "1≤u_n<2; u_1=1.",
     "worked_solution": "Biến đổi u_n=2−3/(n+2). Vì n≥1 nên 0<3/(n+2)≤1; do đó 1≤u_n<2; dấu bằng trái tại n=1.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B05-BOUNDS"
+    ],
     "original_outcome_ids": [
       "TOP07-O05"
     ],
     "problem_type_id": "TOP07-BOUNDS_SHARP",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Đừng đánh đồng cận trên 2 với một giá trị dãy thực sự đạt.",
+    "hints": [
+      "Viết u_n=2−3/(n+2) rồi xét cận của phân số."
+    ],
+    "remediation": "Nếu cho u_n=2 tại một n hữu hạn, kiểm 3/(n+2)>0. Ôn TOP07-M05; luyện THPT-G11-B05-P08.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -127,17 +147,21 @@
   {
     "item_id": "THPT-TOP07-P06",
     "content_version": 1,
-    "stem": "Dãy 7,4,1,−2,… có là cấp số cộng? Nêu công sai và u_n.",
-    "answer_key": "Có; d=−3; u_n=7−3(n−1).",
-    "worked_solution": "Hiệu mỗi số sau trừ số trước luôn −3. Dãy CSC với số đầu 7, công sai −3 và số thứ n là 7+(n−1)(−3).",
-    "skill_ids": [],
+    "stem": "Dãy u_n=10−3n (n≥1) có là cấp số cộng không? Chứng minh và tìm công sai. Nếu chỉ biết bốn số đầu 7,4,1,−2 thì có chắc mọi số tiếp theo theo quy luật này không?",
+    "answer_key": "Có, d=−3. Chỉ biết bốn số đầu thì chưa đủ kết luận cả dãy là cấp số cộng.",
+    "worked_solution": "u_{n+1}−u_n=[10−3(n+1)]−(10−3n)=−3 với mọi n≥1, nên là CSC. Nếu chỉ biết bốn số đầu, có thể chọn số thứ năm bằng 0 thay vì −5; khi đó bốn số đầu vẫn đúng nhưng hiệu tiếp theo không bằng −3. Do vậy cần công thức hoặc quy luật cho mọi bước.",
+    "skill_ids": [
+      "G11-B06-AP-DEFINITION"
+    ],
     "original_outcome_ids": [
       "TOP07-O06"
     ],
     "problem_type_id": "TOP07-AP_CONSTANT_DIFF",
     "difficulty": "BASIC",
-    "hints": [],
-    "remediation": "Kiểm dấu hiệu u_{n+1}−u_n không phụ thuộc n.",
+    "hints": [
+      "Tính hiệu u_{n+1}−u_n với n bất kỳ, không chỉ bốn số đầu."
+    ],
+    "remediation": "Nếu kết luận chỉ từ vài số đầu, kiểm hiệu tổng quát hoặc tìm một cách nối tiếp khác. Ôn TOP07-M06; luyện THPT-G11-B06-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -155,14 +179,18 @@
     "stem": "CSC có u_1=−4 và d=3. Tính u_{20}.",
     "answer_key": "53.",
     "worked_solution": "Từ số hạng thứ nhất đến thứ 20 có 19 bước cộng d. u_{20}=−4+19·3=53.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
     "original_outcome_ids": [
       "TOP07-O07"
     ],
     "problem_type_id": "TOP07-AP_NTH",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Không nhầm n bước với n−1 bước.",
+    "hints": [
+      "Đếm số bước từ 1 đến 20."
+    ],
+    "remediation": "Nếu dùng 20 bước, viết u_1 rồi u_2=u_1+d, suy ra 19 bước. Ôn TOP07-M07; luyện THPT-G11-B06-C02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -180,14 +208,18 @@
     "stem": "CSC có u_5=14 và u_{11}=32. Tìm công sai d và u_1.",
     "answer_key": "d=3, u_1=2.",
     "worked_solution": "Khoảng cách chỉ số là 11−5=6 bước; d=(32−14)/6=3, suy ra u_1=u_5−4d=14−12=2.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
     "original_outcome_ids": [
       "TOP07-O08"
     ],
     "problem_type_id": "TOP07-AP_REVERSE",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Không chia hiệu giá trị cho 11 hay 5.",
+    "hints": [
+      "Lấy hiệu hai số hạng chia số bước."
+    ],
+    "remediation": "Nếu chia 18 cho 11 hoặc 5, đếm 11−5=6 bước. Ôn TOP07-M08; luyện THPT-G11-B06-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -205,14 +237,18 @@
     "stem": "CSC có u_1=3,d=4. Tính tổng 15 số hạng đầu.",
     "answer_key": "465.",
     "worked_solution": "u_{15}=3+14·4=59. Ghép số hạng đầu và cuối: S_{15}=15(3+59)/2=465.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
     "original_outcome_ids": [
       "TOP07-O09"
     ],
     "problem_type_id": "TOP07-AP_SUM",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu dùng n/2[2u_1+(n−1)d], bảo đảm n=15 và d=4.",
+    "hints": [
+      "Tìm u_15 rồi ghép số hạng đầu và cuối."
+    ],
+    "remediation": "Nếu lấy 15d thay 14d, tính u_15 rồi kiểm S_15. Ôn TOP07-M09; luyện THPT-G11-B06-P07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -227,17 +263,21 @@
   {
     "item_id": "THPT-TOP07-P10",
     "content_version": 1,
-    "stem": "Một khán đài có 10 hàng, hàng đầu 12 ghế, mỗi hàng tiếp theo nhiều hơn hàng trước 3 ghế. Tổng số ghế?",
-    "answer_key": "255 ghế.",
-    "worked_solution": "Số ghế theo hàng là CSC với u_1=12,d=3,n=10. Hàng cuối 12+9·3=39; tổng S_{10}=10(12+39)/2=255. Ghế phải đếm số nguyên không âm.",
-    "skill_ids": [],
+    "stem": "Một khán đài có hàng đầu 12 ghế, mỗi hàng sau thêm 3 ghế. Nếu chỉ có 260 ghế, có thể bố trí tối đa bao nhiêu hàng hoàn chỉnh theo quy luật này? Còn dư bao nhiêu ghế?",
+    "answer_key": "10 hàng hoàn chỉnh, dư 5 ghế.",
+    "worked_solution": "Tổng n hàng là S_n=n[2·12+(n−1)·3]/2. Vì số ghế mỗi hàng dương, S_n tăng theo n nguyên dương. S_10=10(12+39)/2=255≤260; S_11=255+42=297>260. Vậy tối đa 10 hàng hoàn chỉnh, dư 260−255=5 ghế.",
+    "skill_ids": [
+      "G11-B06-AP-APPLICATION"
+    ],
     "original_outcome_ids": [
       "TOP07-O10"
     ],
     "problem_type_id": "TOP07-AP_REAL_MODEL",
     "difficulty": "TRANSFER",
-    "hints": [],
-    "remediation": "Dùng n−1 khoảng tăng cho hàng cuối rồi mới tính tổng.",
+    "hints": [
+      "Tính số ghế theo hàng, rồi xét tổng tích lũy và giới hạn nguyên."
+    ],
+    "remediation": "Nếu chọn số hàng không nguyên, kiểm tổng tại hai số hàng liền nhau. Ôn TOP07-M10; luyện THPT-G11-B06-P08.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -252,17 +292,21 @@
   {
     "item_id": "THPT-TOP07-P11",
     "content_version": 1,
-    "stem": "Dãy −3,6,−12,24,… có là CSN không? Nêu công bội và số tiếp theo.",
-    "answer_key": "Có; q=−2; tiếp theo −48.",
-    "worked_solution": "Tỉ số 6/(−3)=(−12)/6=24/(−12)=−2. Công bội âm làm dấu luân phiên; nhân 24 với −2 được −48.",
-    "skill_ids": [],
+    "stem": "Cho u_n=−3(−2)^(n−1), n≥1. Chứng minh đây là cấp số nhân, tìm q và u_5. Giải thích tại sao dấu luân phiên không làm mất tính cấp số nhân.",
+    "answer_key": "CSN q=−2; u_5=−48.",
+    "worked_solution": "Với mọi n≥1, u_{n+1}=−3(−2)^n=(−2)u_n. Do đó CSN có q=−2; u_5=−3·(−2)^4=−48. Nhân số âm với số âm cho số dương và ngược lại, nên dấu luân phiên, nhưng hệ số nhân vẫn cố định.",
+    "skill_ids": [
+      "G11-B07-GP-DEFINITION"
+    ],
     "original_outcome_ids": [
       "TOP07-O11"
     ],
     "problem_type_id": "TOP07-GP_SIGN_RATIO",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Không lấy |q|=2 rồi làm mất dấu.",
+    "hints": [
+      "Kiểm định nghĩa u_{n+1}=qu_n với mọi n; công bội âm làm dấu luân phiên."
+    ],
+    "remediation": "Nếu bỏ dấu âm của q, kiểm tích với số hạng trước. Ôn TOP07-M11; luyện THPT-G11-B07-P07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -280,14 +324,18 @@
     "stem": "CSN u_1=3,q=−2. Tính u_6.",
     "answer_key": "−96.",
     "worked_solution": "u_6=3(−2)^{6−1}=3(−32)=−96. Lũy thừa bậc lẻ của số âm là âm.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B07-GP-NTH"
+    ],
     "original_outcome_ids": [
       "TOP07-O12"
     ],
     "problem_type_id": "TOP07-GP_NTH",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nhớ số mũ n−1 và giữ dấu trong ngoặc.",
+    "hints": [
+      "Đếm n−1 lần nhân và xét chẵn/lẻ số mũ."
+    ],
+    "remediation": "Nếu tính (−2)^6, kiểm số mũ n−1=5. Ôn TOP07-M12; luyện THPT-G11-B07-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -305,14 +353,18 @@
     "stem": "CSN có u_2=6,u_4=54, các số hạng liên quan khác 0. Có bao nhiêu cặp (u_1,q) thực thỏa điều kiện?",
     "answer_key": "Hai cặp: (2,3) và (−2,−3).",
     "worked_solution": "u_4/u_2=q²=54/6=9 ⇒ q=3 hoặc q=−3. Với u_2=u_1q=6, suy ra u_1=2 khi q=3 và u_1=−2 khi q=−3. Kiểm lại u_4=u_1q³=54 trong cả hai trường hợp.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B07-GP-NTH"
+    ],
     "original_outcome_ids": [
       "TOP07-O13"
     ],
     "problem_type_id": "TOP07-GP_REVERSE",
     "difficulty": "TRANSFER",
-    "hints": [],
-    "remediation": "Không tự lấy căn q=+3 và bỏ nghiệm âm.",
+    "hints": [
+      "Chia hai số hạng khác 0; giải q²=9 đủ hai dấu."
+    ],
+    "remediation": "Nếu lấy q=3 duy nhất, nhớ căn của q² có hai dấu và thử lại. Ôn TOP07-M13; luyện THPT-G11-B07-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -327,17 +379,21 @@
   {
     "item_id": "THPT-TOP07-P14",
     "content_version": 1,
-    "stem": "CSN u_1=5,q=2. Tính S_6; viết rõ vì sao không dùng công thức q=1.",
-    "answer_key": "315.",
-    "worked_solution": "S_6=5(2^6−1)/(2−1)=5·63=315. Vì q=2≠1 nên áp dụng tổng nhân hữu hạn; nếu q=1 thì phải dùng S_n=nu_1.",
-    "skill_ids": [],
+    "stem": "Hai cấp số nhân cùng u_1=5: A có q=2, B có q=1. Tính tổng sáu số hạng đầu mỗi dãy và giải thích vì sao không dùng chung công thức thương.",
+    "answer_key": "S₆(A)=315; S₆(B)=30.",
+    "worked_solution": "A có q≠1, S₆=5(2⁶−1)/(2−1)=315. B có q=1, sáu số hạng đều bằng 5, S₆=6·5=30. Công thức u₁(1−qⁿ)/(1−q) không xác định tại q=1, nên cần xét trường hợp này riêng.",
+    "skill_ids": [
+      "G11-B07-GP-SUM"
+    ],
     "original_outcome_ids": [
       "TOP07-O14"
     ],
     "problem_type_id": "TOP07-GP_SUM_FINITE",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Phân biệt q≠1 với q=1; công thức có mẫu q−1 không dùng được khi q=1.",
+    "hints": [
+      "Kiểm riêng q=1 trước khi dùng công thức thương."
+    ],
+    "remediation": "Nếu chia 1−q khi q=1, dùng tổng n số hạng bằng nhau. Ôn TOP07-M14; luyện THPT-G11-B07-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -352,17 +408,21 @@
   {
     "item_id": "THPT-TOP07-P15",
     "content_version": 1,
-    "stem": "CSN vô hạn có a_1=9,q=−1/3. Tính tổng S_∞, tổng bốn số hạng đầu S_4 và phần dư S_∞−S_4.",
-    "answer_key": "S_∞=27/4, S_4=20/3, phần dư=1/12.",
-    "worked_solution": "|q|=1/3<1 nên S_∞=9/(1+1/3)=27/4. S_4=9[1−(−1/3)^4]/(1+1/3)=20/3. Phần dư=27/4−20/3=(81−80)/12=1/12.",
-    "skill_ids": [],
+    "stem": "CSN vô hạn có a₁=9, q=−1/3. Tính S∞, tổng ba số hạng đầu S₃ và phần dư có dấu S∞−S₃; giải thích vì sao phần dư âm.",
+    "answer_key": "S∞=27/4; S₃=7; S∞−S₃=−1/4.",
+    "worked_solution": "|q|=1/3<1 nên S∞=9/(1+1/3)=27/4. Ba số hạng đầu 9,−3,1 cho S₃=7. Phần dư S∞−S₃=27/4−7=−1/4. Tổng riêng S₃ lớn hơn tổng vô hạn vì đuôi bắt đầu bằng số âm −1/3 và có tổng −1/4; sai số tuyệt đối là 1/4, không âm.",
+    "skill_ids": [
+      "G11-B15-GEOMETRIC"
+    ],
     "original_outcome_ids": [
       "TOP07-O15"
     ],
     "problem_type_id": "TOP07-GP_INFINITE_REMAINDER",
     "difficulty": "TRANSFER",
-    "hints": [],
-    "remediation": "Tổng vô hạn cần |q|<1; phần dư có dấu khi q âm.",
+    "hints": [
+      "Tính tổng riêng bằng công thức hữu hạn; tổng vô hạn chỉ dùng khi |q|<1."
+    ],
+    "remediation": "Nếu coi tổng riêng là tổng vô hạn, kiểm q^n và dấu của phần dư. Ôn TOP07-M15; luyện THPT-G11-CHV-B15-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -380,14 +440,18 @@
     "stem": "Hai mô hình bắt đầu ở kỳ 0 với 50 đơn vị. A tăng 5 đơn vị mỗi kỳ; B tăng 10% so với kỳ trước. Tính A_3,B_3 và xác định kỳ nguyên k≥0 đầu tiên có B_k−A_k≥1.",
     "answer_key": "A_3=65; B_3=66,55; k=3 là kỳ đầu tiên hiệu ít nhất 1.",
     "worked_solution": "A_k=50+5k; B_k=50·1,1^k. Theo k=0,1,2,3, A lần lượt 50,55,60,65 và B lần lượt 50,55,60,5,66,55. Hiệu B_k−A_k lần lượt 0,0,0,5,1,55; do đó k=3 là chỉ số đầu tiên thỏa ≥1. Dãy bắt đầu ở kỳ 0, không phải số hạng đầu ở kỳ 1.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
     "original_outcome_ids": [
       "TOP07-O16"
     ],
     "problem_type_id": "TOP07-LINEAR_VS_MULTIPLICATIVE",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Lập bảng từng kỳ 0→3; giữ nguyên 5 khi cộng nhưng tính 10% trên số dư mới khi nhân.",
+    "hints": [
+      "Lập hai công thức tại kỳ 0, so hiệu ở từng kỳ trước ngưỡng."
+    ],
+    "remediation": "Nếu nhầm tăng 10% trên vốn ban đầu, lập lại từng kỳ theo số dư hiện có. Ôn TOP07-M16; luyện THPT-G11-B07-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -402,17 +466,21 @@
   {
     "item_id": "THPT-TOP07-P17",
     "content_version": 1,
-    "stem": "Gửi 8 triệu đồng, lãi kép 5% mỗi năm, không nộp/rút giữa kỳ. Sau đúng 2 năm có bao nhiêu triệu?",
-    "answer_key": "8,82 triệu đồng.",
-    "worked_solution": "Mỗi năm nhân số dư với 1,05: 8·1,05²=8·1,1025=8,82 (triệu). Đây là mô hình giả định, chưa trừ thuế/phí nếu có.",
-    "skill_ids": [],
+    "stem": "Gửi 8 triệu đồng theo mô hình lãi kép 5%/năm, không nộp/rút giữa kỳ, chỉ cập nhật cuối mỗi năm. Tìm năm nguyên đầu tiên số dư đạt ít nhất 8,82 triệu và năm đầu tiên vượt 8,82 triệu.",
+    "answer_key": "Đạt ít nhất: năm 2; vượt: năm 3.",
+    "worked_solution": "V_n=8·1,05^n triệu, n nguyên không âm. V₁=8,4<8,82; V₂=8,82; V₃=9,261>8,82. Dãy tăng vì 1,05>1 nên lần đầu đạt ngưỡng là năm 2, lần đầu vượt nghiêm là năm 3. Đây là mô hình giả định không tính phí.",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
     "original_outcome_ids": [
       "TOP07-O17"
     ],
     "problem_type_id": "TOP07-COMPOUND_INTEREST",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "5% là tỉ lệ theo năm, không phải cộng 0,05 triệu mỗi năm.",
+    "hints": [
+      "Lấy số dư năm trước nhân 1,05; phân biệt đạt và vượt ngưỡng."
+    ],
+    "remediation": "Nếu chọn năm 2 khi ngưỡng là 8,82 và yêu cầu vượt, kiểm năm liền sau. Ôn TOP07-M17; luyện THPT-G11-B07-P08.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -430,14 +498,18 @@
     "stem": "Gửi 40 đơn vị vào CUỐI mỗi kỳ của 3 kỳ, lãi cố định 5%/kỳ, không phí. (a) Số dư ngay sau khoản gửi cuối kỳ 3? (b) Nếu gửi 40 vào ĐẦU mỗi kỳ 1,2,3 thì số dư cuối kỳ 3 lớn hơn bao nhiêu?",
     "answer_key": "(a) 126,1; (b) gửi đầu kỳ được 132,405, nhiều hơn 6,305 đơn vị.",
     "worked_solution": "Gửi cuối kỳ 1,2,3 được hưởng tương ứng 2,1,0 kỳ lãi: FV_cuối=40[(1,05)^2+1,05+1]=126,1. Gửi đầu kỳ 1,2,3 tương ứng thời điểm 0,1,2 nên mỗi khoản sinh lãi thêm một kỳ: FV_đầu=126,1·1,05=132,405. Chênh lệch =6,305. Các mốc thời gian quan trọng hơn tên công thức.",
-    "skill_ids": [],
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
     "original_outcome_ids": [
       "TOP07-O18"
     ],
     "problem_type_id": "TOP07-ANNUITY_END_PERIOD",
     "difficulty": "TRANSFER",
-    "hints": [],
-    "remediation": "Vẽ các mốc 0–1–2–3 và ghi số kỳ hưởng lãi cho từng khoản trước khi cộng.",
+    "hints": [
+      "Vẽ trục kỳ 0–3, đếm số kỳ lãi của từng khoản gửi."
+    ],
+    "remediation": "Nếu tính lãi cho khoản vừa gửi cuối kỳ, đếm kỳ thực sự được hưởng lãi. Ôn TOP07-M18; luyện THPT-TOP07-P16.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
