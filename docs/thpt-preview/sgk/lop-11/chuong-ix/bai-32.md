@@ -27,7 +27,7 @@
     =3x^2+3xh+h^2\quad(h\ne0).
     \]
 
-    Khi \(h\to0\), hai số hạng chứa \(h\) tiến về \(0\), còn lại \(3x^2\). Như vậy \((x^3)'=3x^2\). Cùng cách lập luận ấy cho các lũy thừa nguyên dương, ta thu được \((x^n)'=nx^{n-1}\). Con số \(n\) không xuất hiện tùy tiện: nó đến từ **hệ số của phần biến thiên bậc nhất** khi khai triển \((x+h)^n\).
+    Khi \(h\to0\), hai số hạng chứa \(h\) tiến về \(0\), còn lại \(3x^2\). Như vậy \((x^3)'=3x^2\). Cùng cách lập luận ấy cho số nguyên \(n\ge2\), ta thu được \((x^n)'=nx^{n-1}\). Riêng \((x)'=1\), kể cả tại \(x=0\). Con số \(n\) không xuất hiện tùy tiện: nó đến từ **hệ số của phần biến thiên bậc nhất** khi khai triển \((x+h)^n\).
 
     Còn với \(y=\sqrt{x}\), việc khai triển không thuận tiện. Ta nhân tử và mẫu của thương sai phân với biểu thức liên hợp:
 
@@ -60,13 +60,20 @@
     \Delta(uv)=v\,\Delta u+u\,\Delta v+\Delta u\,\Delta v.
     \]
 
-    Chia cho \(\Delta x\) rồi lấy giới hạn, nếu \(u,v\) có đạo hàm thì phần góc nhỏ không còn đóng góp bậc nhất. Vì thế \((uv)'=u'v+uv'\): **hai thành phần cùng biến đổi nên có hai số hạng**.
+    Chia cho \(\Delta x\ne0\) rồi lấy giới hạn: \(\Delta u/\Delta x\to u'\), \(\Delta v/\Delta x\to v'\) và \(\Delta v\to0\), vì hàm có đạo hàm thì liên tục. Do đó \((\Delta u/\Delta x)\Delta v\to0\): phần góc nhỏ không đóng góp vào giới hạn. Vì thế \((uv)'=u'v+uv'\): **hai thành phần cùng biến đổi nên có hai số hạng**.
 
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg" alt="Hình chữ nhật ban đầu diện tích uv, hai dải tăng diện tích v nhân du và u nhân dv, một góc nhỏ diện tích du nhân dv"><figcaption><strong>Đọc hình:</strong> miền giữa là diện tích ban đầu \(uv\), hai dải bên trên và bên phải biểu diễn \(u\,\Delta v\) và \(v\,\Delta u\); góc nhỏ là \(\Delta u\,\Delta v\). Hình minh họa khi hai kích thước tăng; công thức đạo hàm của tích vẫn đúng khi các hàm biến thiên theo chiều ngược lại.</figcaption></figure>
 
     Ví dụ, với \(u=x\), \(v=x^2+1\), quy tắc tích cho \(\bigl[x(x^2+1)\bigr]'=(x^2+1)+x(2x)=3x^2+1\). Nếu em nhân hai đạo hàm, chỉ được \(2x\), rõ ràng sai: khai triển hàm gốc là \(x^3+x\), đạo hàm phải bằng \(3x^2+1\).
 
-    Với **thương** \(u/v\), điều đầu tiên phải hỏi là **\(v\) có bằng \(0\) không?**. Để hiểu công thức, đặt \(w=u/v\), tức \(wv=u\). Với các hàm có đạo hàm và \(v\ne0\), quy tắc tích cho \(w'v+wv'=u'\). Thay \(w=u/v\) rồi giải theo \(w'\), ta được
+    Với **thương** \(u/v\), điều đầu tiên phải hỏi là **\(v\) có bằng \(0\) không?**. Để hiểu công thức, cố định một điểm \(x\) có \(v(x)\ne0\), đặt \(u=u(x),v=v(x)\), và gọi \(\Delta u,\Delta v\) là các độ thay đổi khi \(x\) đổi thêm \(h\). Quy đồng thương sai phân:
+
+    \[
+    \frac{(u+\Delta u)/(v+\Delta v)-u/v}{h}
+    =\frac{v(\Delta u/h)-u(\Delta v/h)}{v(v+\Delta v)}.
+    \]
+
+    Vì \(v\) có đạo hàm nên liên tục, \(v+\Delta v\) khác 0 khi \(h\) đủ gần 0. Khi \(h\to0\), ta có \(\Delta u/h\to u'\), \(\Delta v/h\to v'\), và \(\Delta v\to0\). Vậy thương sai phân có giới hạn hữu hạn và ta được
 
     \[
     \left(\frac uv\right)'=\frac{u'v-uv'}{v^2}\quad(v\ne0).
@@ -133,7 +140,7 @@
     2\cos\left(x+\frac h2\right)\sin\frac h2.
     \]
 
-    Chia cho \(h\), ta có \(\cos(x+h/2)\cdot\frac{\sin(h/2)}{h/2}\). Khi \(h\to0\), thừa số thứ hai tiến đến \(1\), thừa số thứ nhất tiến đến \(\cos x\). Vì vậy **\((\sin x)'=\cos x\)**.
+    Chia cho \(h\), ta có \(\cos(x+h/2)\cdot\frac{\sin(h/2)}{h/2}\). Khi \(h\to0\), dùng giới hạn cơ bản \(\lim_{t\to0}\sin t/t=1\) (với \(t\) đo bằng rađian), thừa số thứ hai tiến đến \(1\), thừa số thứ nhất tiến đến \(\cos x\). Vì vậy **\((\sin x)'=\cos x\)**.
 
     Còn \(\cos x=\sin(\pi/2-x)\). Áp dụng quy tắc dây chuyền vừa học, \((\cos x)'=\cos(\pi/2-x)\cdot(-1)=-\sin x\). Dấu trừ giải thích vì sao gần \(x=0\), khi \(x\) dương tăng một chút thì giá trị \(\cos x\) bắt đầu giảm.
 
@@ -175,7 +182,7 @@
 
     Đó là nét đặc biệt của cơ số \(e\): **đạo hàm của \(e^x\) chính là \(e^x\)**. Với cơ số \(a>0\), \(a\ne1\), dùng \(a^x=e^{x\ln a}\) và quy tắc dây chuyền được \((a^x)'=a^x\ln a\). Hệ số \(\ln a\) là điều không được quên khi cơ số khác \(e\).
 
-    Với hàm lôgarit tự nhiên, từ \(\ln(x+h)-\ln x=\ln(1+h/x)\) và \(\lim_{t\to0}\ln(1+t)/t=1\), suy ra
+    Với hàm lôgarit tự nhiên, từ \(\ln(x+h)-\ln x=\ln(1+h/x)\) và \(\lim_{t\to0}\ln(1+t)/t=1\). Đặt \(t=h/x\) với \(x>0\); thương sai phân bằng \(\frac1x\frac{\ln(1+t)}t\), suy ra
 
     \[
     (\ln x)'=\frac1x\qquad(x>0).
@@ -227,7 +234,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Khái niệm — Hàm số hợp</strong><p>Với \(u=g(x)\) và \(y=f(u)\), nếu giá trị của \(g(x)\) thuộc miền xác định của \(f\), ta có hàm số hợp \(y=f(g(x))\): biến \(x\) tác động đến \(y\) <strong>thông qua</strong> \(u\).</p></div>
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc dây chuyền</strong><p>Nếu \(g\) có đạo hàm tại \(x\) và \(f\) có đạo hàm tại \(u=g(x)\), thì \(\displaystyle(f(g(x)))'=f'(g(x))\cdot g'(x)\). Đặc biệt, nếu \(u=u(x)\): \((u^n)'=nu^{n-1}u'\) với \(n\in\mathbb N^*\); \(\displaystyle(\sqrt u)'=\frac{u'}{2\sqrt u}\) khi \(u>0\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Quy tắc dây chuyền</strong><p>Nếu \(g\) có đạo hàm tại \(x\) và \(f\) có đạo hàm tại \(u=g(x)\), thì \(\displaystyle(f(g(x)))'=f'(g(x))\cdot g'(x)\). Đặc biệt, nếu \(u=u(x)\): \((u^n)'=nu^{n-1}u'\) với số nguyên \(n\ge2\); riêng \(n=1\), đạo hàm là \(u'\) tại mọi điểm có đạo hàm; \(\displaystyle(\sqrt u)'=\frac{u'}{2\sqrt u}\) khi \(u>0\).</p></div>
 
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-02_R00.svg" alt="Sơ đồ hàm hợp x qua hàm trong u bằng g của x rồi qua hàm ngoài y bằng f của u"><figcaption><strong>Tra hình:</strong> từ \(x\) sang \(u\) có tốc độ \(g'(x)\); từ \(u\) sang \(y\) có tốc độ \(f'(u)\). Nhân **hai tốc độ** để được đạo hàm theo \(x\).</figcaption></figure>
 
