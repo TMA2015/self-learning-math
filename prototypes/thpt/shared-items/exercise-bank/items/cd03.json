@@ -592,7 +592,7 @@
     "hints": [
       "Vẽ tam giác vuông, cạnh huyền 10 m; giữ x>0."
     ],
-    "remediation": "Nếu nhận −8, kiểm điều kiện độ dài x>0 và x+2>0; nếu sai phân tích, chia 2 trước. Ôn TOP03-M12; luyện THPT-TOP03-ADD18.",
+    "remediation": "Nếu nhận −8, kiểm x>0 và x+2>0; nếu sai phân tích, chia 2 trước. Ôn TOP03-M12; luyện THPT-G10-B18-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
