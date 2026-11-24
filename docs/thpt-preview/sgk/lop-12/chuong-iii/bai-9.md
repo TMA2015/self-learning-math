@@ -74,7 +74,7 @@
 
     <!-- OUTCOME_ID: G12-CHIII-B09-O05 -->
     <!-- EX_ID: EX-G12-B09-05 -->
-    Vì sao cần nội suy? Trước nhóm chứa \(Q_1\) đã có 6 quan sát, cần thêm \(10-6=4\) trên tổng 14 quan sát của nhóm để tới mốc 10. Khi xấp xỉ sự phân bố trong nhóm bằng một đoạn thẳng, ta đi được \(4/14\) bề rộng 5 phút, bắt đầu từ cận dưới 15:
+    Vì sao cần nội suy? Trước nhóm chứa \(Q_1\) đã có 6 quan sát, cần thêm \(10-6=4\) trên tổng 14 quan sát của nhóm để tới mốc 10. Vì không biết từng thời gian thực tế, ta tạm coi các giá trị phân bố đều trong nhóm, tức số quan sát tích lũy tăng tuyến tính từ 6 đến 20 khi thời gian tăng từ 15 đến 20 phút. Cần thêm 4 trong tổng 14 quan sát của nhóm, nên ta đi được \(4/14\) bề rộng 5 phút, bắt đầu từ cận dưới 15:
 
     \[
     Q_1=15+\frac{10-6}{14}\cdot5=\frac{115}{7}\approx16{,}43.
@@ -157,9 +157,11 @@
 
     ### 2.2. Khoảng tứ phân vị
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Công thức — Tứ phân vị của mẫu ghép nhóm</strong><p>Với \(r=1,2,3\), đặt mốc \(t=rn/4\). Gọi \([L;U)\) là nhóm dùng để nội suy \(Q_r\), có tần số \(f&gt;0\), tần số tích lũy trước nhóm là \(C\), độ rộng \(h=U-L&gt;0\). Khi \(C\le t\le C+f\), ta tính</p><div class="arithmatex">\(\displaystyle Q_r=L+\frac{rn/4-C}{f}\,h.\)</div><p>Đây là công thức nội suy của mẫu ghép nhóm đã học ở lớp 11; \(Q_2\) là trung vị của mẫu ghép nhóm.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Công thức — Tứ phân vị của mẫu ghép nhóm</strong><p>Với \(r=1,2,3\), đặt mốc \(t=rn/4\). Gọi \([L;U)\) là nhóm dùng để nội suy \(Q_r\), có tần số \(f\gt 0\), tần số tích lũy trước nhóm là \(C\), độ rộng \(h=U-L\gt 0\). Khi \(C\le t\le C+f\), ta tính</p><div class="arithmatex">\(\displaystyle Q_r=L+\frac{rn/4-C}{f}\,h.\)</div><p>Đây là công thức nội suy của mẫu ghép nhóm đã học ở lớp 11; \(Q_2\) là trung vị của mẫu ghép nhóm.</p></div>
 
-    Cách thực hiện: tính \(n\) và tần số tích lũy; xác định nhóm có dữ liệu đạt mốc cần xét (chọn nhóm có tần số dương đầu tiên có cộng dồn đạt hoặc vượt mốc); dùng đúng cận dưới, tần số nhóm, cộng dồn trước nhóm và độ rộng **của nhóm ấy**. Nếu hai nhóm kề nhau có dữ liệu gặp nhau đúng tại mốc, kết quả là cận chung. Nếu có nhóm rỗng ở giữa và mốc rơi đúng đoạn tích lũy nằm ngang, quy tắc chọn nhóm đầu đạt mốc cho cận phải nhóm trước; không chia cho tần số 0 và không khẳng định đây là tứ phân vị chính xác của mẫu gốc. Nếu đề cho quy ước riêng tại biên, theo quy ước của đề. Ví dụ với tần số 5, 0, 15 trên các nhóm \([0;5),[5;10),[10;15)\), mốc \(n/4=5\) cho \(Q_1=5\) theo cách chọn nhóm đầu đạt mốc; không nội suy trong nhóm rỗng.
+    Cách thực hiện: tính \(n\) và tần số tích lũy; xác định nhóm có dữ liệu đạt mốc cần xét (chọn nhóm có tần số dương đầu tiên có cộng dồn đạt hoặc vượt mốc); dùng đúng cận dưới, tần số nhóm, cộng dồn trước nhóm và độ rộng **của nhóm ấy**.
+
+    **Lưu ý về ranh giới.** Nếu mốc nằm đúng ở ranh giới của hai nhóm kề nhau có dữ liệu, nội suy cho cận chung. Nếu có nhóm rỗng ở giữa, chọn nhóm có dữ liệu đầu tiên đạt mốc, như quy tắc trên; không chia cho tần số 0. Ví dụ với tần số 5, 0, 15 trên các nhóm \([0;5),[5;10),[10;15)\), mốc \(n/4=5\) cho \(Q_1=5\) theo cách chọn nhóm đầu đạt mốc; không nội suy trong nhóm rỗng. Đây là kết quả theo quy tắc nội suy đã chọn, không phải tứ phân vị chính xác của mẫu gốc. Nếu đề quy định cách xử lý ranh giới khác, làm theo đề.
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Khoảng tứ phân vị</strong><div class="arithmatex">\(\displaystyle\Delta_Q=Q_3-Q_1.\)</div><p>Khoảng tứ phân vị (IQR) đo độ trải của phần giữa mẫu, có cùng đơn vị với dữ liệu. Với mẫu ghép nhóm, nó là một xấp xỉ cho khoảng tứ phân vị của mẫu gốc.</p></div>
 
