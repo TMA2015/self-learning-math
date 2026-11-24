@@ -498,7 +498,16 @@ function verifyW1ReviewDelta(previous,current,changed,expected){
  assert(handoff.toString("utf8").includes("DELTA_C_ACADEMIC_MATERIAL"));
  const prefix=s=>s.slice(0,s.indexOf('=== "Khám phá kiến thức"'));
  const suffix=s=>s.slice(s.indexOf('=== "Ví dụ"'));
- const markers=(s,re)=>[...s.matchAll(re)].map(m=>m[0]);
+ const structure=s=>{
+  const lines=s.split("\n").map(line=>line.trim());
+  return {
+   tabs:lines.filter(line=>line.startsWith('=== "')),
+   headings:lines.filter(line=>line.startsWith("### ")),
+   disclosures:lines.filter(line=>line.startsWith('??? question "')||line.startsWith('??? tip "')),
+   assets:s.match(/src="[^"]+"/g)||[],
+   identities:s.match(/data-[\w-]+="[^"]+"/g)||[]
+  };
+ };
  const b1="docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md";
  assert.equal(blob(read(previous,b1)),"0603fbb2b61374fcd49eff3c119197cff3fa77e4");
  assert.equal(blob(read(current,b1)),blob(read(previous,b1)));
@@ -511,9 +520,10 @@ function verifyW1ReviewDelta(previous,current,changed,expected){
   const a=before.toString("utf8"),b=now.toString("utf8");
   assert(a.includes('=== "Khám phá kiến thức"')&&a.includes('=== "Ví dụ"'));
   assert.equal(prefix(a),prefix(b));assert.equal(suffix(a),suffix(b),"Frozen example/mistake tabs");
-  for(const re of [/^=== .+$/gm,/^\s+### .+$/gm,/src="[^"]+"/g,/data-[\w-]+="[^"]+"/g,/^\s+\?\?\? (?:question|tip) .+$/gm]){
-   assert.deepEqual(markers(a,re),markers(b),"W1 structure/asset/identity changed "+file);
-  }
+  const oldStructure=structure(a),newStructure=structure(b);
+  assert.deepEqual(oldStructure.tabs,['=== "Khám phá kiến thức"','=== "Kiến thức SGK"','=== "Ví dụ"','=== "Lỗi thường gặp"']);
+  assert(oldStructure.headings.length>0&&oldStructure.disclosures.length>0&&oldStructure.assets.length>0);
+  for(const key of Object.keys(oldStructure))assert.deepEqual(oldStructure[key],newStructure[key],"W1 "+key+" changed "+file);
   assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final|g11-chapter-selfcheck)/i.test(b));
   console.log("SCOPED_G11_W1_REVIEW_DELTA_SOURCE_PASS "+file+" "+newSha);
  }
