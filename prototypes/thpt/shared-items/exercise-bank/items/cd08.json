@@ -248,7 +248,7 @@
     "hints": [
       "Chia cả tử và mẫu cho x²; xét riêng dấu và xu hướng của tử, mẫu."
     ],
-    "remediation": "Nếu dùng √(x²)=x khi x âm, kiểm |x|=−x; theo dõi dấu số hạng dẫn. Ôn TOP08-M09; luyện THPT-G11-CHV-B16-P04.",
+    "remediation": "Nếu lấy 4/2, kiểm bậc tử 3 lớn hơn bậc mẫu 2. Chia cả hai cho x², giữ số hạng 4x và xét dấu khi x→−∞. Ôn TOP08-M09; luyện THPT-G11-CHV-B16-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
