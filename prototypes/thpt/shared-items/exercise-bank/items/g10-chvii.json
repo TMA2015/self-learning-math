@@ -1533,5 +1533,69 @@
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY-ELLIPSE-TR01",
+    "content_version": "SOURCE_BLOB_0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+    "stem": "Mái nửa elip rộng **12 m**, cao **4 m** tại tâm. Đặt O ở giữa nền, Ox dọc nền. (a) Viết phương trình elip đầy đủ và điều kiện miền mái. (b) Tại x=3 m, mái cao bao nhiêu?",
+    "answer_key": null,
+    "worked_solution": "Bán trục ngang 6, bán trục đứng 4: `x²/36+y²/16=1`, **y≥0**, |x|≤6. Tại x=3, `y=4√(1−9/36)=2√3≈3,464 m`. Không lấy y âm hoặc dùng a=12. Nếu sai, xem `HELP-G10-CHVII-ELLIPSE-TR01`.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G10-B22-ELLIPSE_PARAMETERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+      "heading_id": "THPT-G10-CHVII-TRY-ELLIPSE-TR01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-vii/bai-22.md",
+        "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G10-CHVII-ELLIPSE-TR01"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-CHVII-TRY-HYPERBOLA-TR01",
+    "content_version": "SOURCE_BLOB_0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+    "stem": "Hai trạm cách nhau **60 km**, phát đồng thời; tốc độ truyền **100.000 km/s**, chênh thời gian nhận **0,0002 s**. Hãy tính 2a, c, b² và kiểm điều kiện có hypebol thực. Dữ kiện chưa nói trạm nào đến trước: có thể chọn nhánh không?",
+    "answer_key": null,
+    "worked_solution": "Hiệu quãng đường `vΔt=100000·0,0002=20 km`, nên `2a=20`, `a=10 km`, `2c=60`, `c=30 km`, `b²=c²−a²=900−100=800 km²`. Vì `0<20<60`, dữ kiện hình học phù hợp hypebol. **Chưa đủ thông tin trạm nào nhận trước** nên chưa thể chọn nhánh. Nếu quên điều kiện này, xem `HELP-G10-CHVII-HYPERBOLA-TR01`.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "G10-B22-HYPERBOLA_PARAMETERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+      "heading_id": "THPT-G10-CHVII-TRY-HYPERBOLA-TR01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/chuong-vii/bai-22.md",
+        "blob": "0b37ecdc4270fe24b6ba0b3dc724a2444f703cd4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "help_ref": "HELP-G10-CHVII-HYPERBOLA-TR01"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
