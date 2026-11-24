@@ -95,16 +95,16 @@
   {
     "item_id": "THPT-G10-B23-P02",
     "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
-    "stem": "Từ A đến B có 3 tuyến, từ B đến C có 4 tuyến, và từ A đến C có 2 tuyến đi thẳng không qua B. Một hành trình chọn đi thẳng hoặc qua B đúng một lần. Có bao nhiêu hành trình?",
-    "answer_key": "14 hành trình.",
-    "worked_solution": "Qua B: mỗi tuyến A→B ghép với 4 tuyến B→C, được 3·4=12. Đi thẳng: 2. Hai trường hợp rời nhau nên có 12+2=14 hành trình.",
+    "stem": "Từ A đến B có 3 tuyến, từ B đến C có 4 tuyến, từ C đến D có 2 tuyến. Hành trình A→D phải qua B rồi C, chọn đúng một tuyến ở mỗi chặng; mọi tổ hợp tuyến đều đi được. Có bao nhiêu hành trình?",
+    "answer_key": "24 hành trình.",
+    "worked_solution": "Mỗi lựa chọn tuyến A→B ghép được với 4 tuyến B→C, tạo 3·4=12 hành trình tới C. Mỗi hành trình đó ghép tiếp được với 2 tuyến C→D. Quy tắc nhân cho ba bước cho 3·4·2=24 hành trình.",
     "skill_ids": [
       "COUNT_PRODUCT_PATH"
     ],
     "problem_type_id": null,
     "difficulty": "BASE",
     "hints": [
-      "Tách đi thẳng và qua B; áp dụng quy tắc nhân cho nhánh qua B."
+      "Vẽ ba tầng của sơ đồ cây; mỗi nhánh ở tầng trước có bao nhiêu lựa chọn tiếp theo?"
     ],
     "rubric": null,
     "interaction": {
@@ -121,7 +121,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cộng 3 và 4, vẽ cây hai chặng, mỗi nhánh đầu có bốn nhánh sau. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY02."
+    "remediation": "Nếu cộng 3+4+2, vẽ cây ba chặng và kiểm mỗi kết quả hoàn chỉnh phải chọn đủ ba tuyến. Ôn Bài 23 §2.2; luyện THPT-G10-CHVIII-TRY02."
   },
   {
     "item_id": "THPT-G10-B23-P03",
