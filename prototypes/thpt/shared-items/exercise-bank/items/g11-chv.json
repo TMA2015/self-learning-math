@@ -467,7 +467,7 @@
   {
     "item_id": "THPT-G11-CHV-B16-P03",
     "content_version": "THPT-G11-CHV-B15-B17-R03",
-    "stem": "Cho f(x)=x² khi x<2 và f(x)=3x−2 khi x>2, riêng f(2)=7. Tính giới hạn hai phía tại 2, giới hạn hai phía và xét liên tục tại 2.",
+    "stem": "Cho f(x)=x² khi x<2 và f(x)=3x−2 khi x>2, riêng f(2)=7. Tính hai giới hạn một phía tại 2, giới hạn hai phía và xét liên tục tại 2.",
     "answer_key": "Hai giới hạn một phía bằng 4; giới hạn bằng 4; không liên tục tại 2 vì f(2)=7.",
     "worked_solution": "Khi x→2⁻, x²→4; khi x→2⁺, 3x−2→4. Vì hai giới hạn một phía bằng nhau, giới hạn tại 2 tồn tại và bằng 4. Nhưng f(2)=7≠4 nên hàm không liên tục tại 2. Giá trị riêng tại một điểm không làm thay đổi giới hạn ở lân cận.",
     "skill_ids": [
