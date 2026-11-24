@@ -36,7 +36,11 @@
     "ebc70018a168998c7dd43b34c3e195a2b1e15ed7",
     "d3c54d3867e6e831d6968a81d9c24d9d6b219363",
     "e945ccdd434689a5c6d8d7bfd44ba26d287a7b9b",
-    "c1be91f17044d89474d6399308385b4f1fbc7aeb"
+    "c1be91f17044d89474d6399308385b4f1fbc7aeb",
+    "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+    "5646241f4bb72f12419aaf585ee1fbea6f4185d0",
+    "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+    "0ef0ad696e97d2549f29c5a22ba675970572a089"
   ],
   "projection_sources": [
     {
@@ -478,21 +482,56 @@
       "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iv.md",
       "blob": "17bb4f8071a421060f665f2ec89e1ea9f88218ca",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd16/luyen-tap.md",
+      "blob": "42099bd6939e7c6c22b0c6f9050846f047665212",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd16/tu-kiem-tra.md",
+      "blob": "7acb410487da64f42cc64888f9a13843a8d2ad2e",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd17/luyen-tap.md",
+      "blob": "23c879ae5194bab75c19cf287eb25dfe3d152f52",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd17/tu-kiem-tra.md",
+      "blob": "ac5298d286fabc12d39145d55e196205b6f33948",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g11-chvii-b22-b27-source-locked-formative-r01.js",
+      "blob": "4d656f2b8d952a2ad0be1c4298d065e0b8c95c88",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g11-selfcheck/CHVII.json",
+      "blob": "b7bd2285219261c291ad0c9d728cdbfb3b98efb7",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 901,
-    "written_references": 179,
-    "topic_practice": 983,
-    "topic_replay": 275,
-    "sgk_public_selfcheck": 271,
-    "placements": 2233,
+    "formative_items": 985,
+    "written_references": 197,
+    "topic_practice": 1085,
+    "topic_replay": 291,
+    "sgk_public_selfcheck": 289,
+    "placements": 2432,
     "projection_field_differences": 3,
     "public_selfcheck_only_items": 135,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 167
+    "legacy_combined_answer_items": 200
   },
-  "scope": "CD01–15 + G10 ChI/ChII/ChIII/ChIV/ChVI/ChVII + G11 ChI/ChII/ChIV/ChV/ChVI/ChIX + G12 ChI/ChII/ChIV public formative, public self-check and written references",
+  "scope": "CD01–17 + G10 ChI/ChII/ChIII/ChIV/ChVI/ChVII + G11 ChI/ChII/ChIV/ChV/ChVI/ChVII/ChIX + G12 ChI/ChII/ChIV public formative, public self-check and written references",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -861,6 +900,54 @@
           "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
         }
       ]
+    },
+    {
+      "topic": "CD16",
+      "new_formative": 21,
+      "new_written": 3,
+      "shared_sgk_formative": 33,
+      "shared_written": 8,
+      "practice": 65,
+      "replay": 8,
+      "placements": 73,
+      "answer_table_rows_checked": 8,
+      "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "projection_sources": [
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd16/luyen-tap.md",
+          "blob": "42099bd6939e7c6c22b0c6f9050846f047665212",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        },
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd16/tu-kiem-tra.md",
+          "blob": "7acb410487da64f42cc64888f9a13843a8d2ad2e",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        }
+      ]
+    },
+    {
+      "topic": "CD17",
+      "new_formative": 12,
+      "new_written": 3,
+      "shared_sgk_formative": 18,
+      "shared_written": 4,
+      "practice": 37,
+      "replay": 8,
+      "placements": 45,
+      "answer_table_rows_checked": 8,
+      "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+      "projection_sources": [
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd17/luyen-tap.md",
+          "blob": "23c879ae5194bab75c19cf287eb25dfe3d152f52",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        },
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd17/tu-kiem-tra.md",
+          "blob": "ac5298d286fabc12d39145d55e196205b6f33948",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        }
+      ]
     }
   ],
   "unstructured_projection_review": [
@@ -950,7 +1037,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "125 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "167 records retain combined answer/solution (previous 145 +22 CĐ15), answer_key=null; manual review pending.",
+  "legacy_combined_answer_note": "200 records retain combined answer/solution (previous 167 +33 CĐ16/17), answer_key=null; manual review pending.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -1079,6 +1166,10 @@
     {
       "scope": "CD14",
       "note": "23 existing pre-Core First Try preserved as UNSCORED_PUBLIC_NO_MASTERY; B22-C01 optional specialized only; B22-P01 one ID with both Core and Practice placements. CD14 original SGK markers do not supply topic outcome tags; omitted pending audit. Two additional SGK Written transfer references from current library included."
+    },
+    {
+      "scope": "CD15–17",
+      "note": "Original SGK markers have no topic outcome tag; omitted pending audit. G11 ChVII uses active SGK runtime source afc8ec... and retains historic topic source 564624... for equivalence review; never duplicate ID."
     }
   ]
 }

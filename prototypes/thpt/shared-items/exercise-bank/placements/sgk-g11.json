@@ -2679,5 +2679,542 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 17,
     "item_id": "THPT-G11-CHIV-B14-P04"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B22:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B22-C01",
+    "skill_id": "G11-B22-ANGLE_LINES"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B22:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B22-C02",
+    "skill_id": "G11-B22-PERP_SKEW"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B22:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B22-C03",
+    "skill_id": "G11-B22-PARALLEL_DIRECTION"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B22:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVII-B22-C04",
+    "skill_id": "G11-B22-PROOF_CONTEXT"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B22:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B22-P01",
+    "skill_id": "G11-B22-ANGLE_LINES"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B22:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B22-P02",
+    "skill_id": "G11-B22-PERP_SKEW"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B22:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B22-P03",
+    "skill_id": "G11-B22-PARALLEL_DIRECTION"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B23:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B23-C01",
+    "skill_id": "G11-B23-PERP_PLANE_DEF"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B23:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B23-C02",
+    "skill_id": "G11-B23-TWO_INTERSECT"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B23:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B23-C03",
+    "skill_id": "G11-B23-PARALLEL_TRANSFER"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B23:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVII-B23-C04",
+    "skill_id": "G11-B23-PLANE_PROPERTY"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B23:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-CHVII-B23-C05",
+    "skill_id": "G11-B23-PRACTICAL_POST"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B23:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B23-P01",
+    "skill_id": "G11-B23-PERP_PLANE_DEF"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B23:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B23-P02",
+    "skill_id": "G11-B23-TWO_INTERSECT"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B23:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B23-P03",
+    "skill_id": "G11-B23-PARALLEL_TRANSFER"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B24:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B24-C01",
+    "skill_id": "G11-B24-POINT_PROJECTION"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B24:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B24-C02",
+    "skill_id": "G11-B24-LINE_PROJECTION"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B24:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B24-C03",
+    "skill_id": "G11-B24-THREE_PERP"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B24:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVII-B24-C04",
+    "skill_id": "G11-B24-LINE_PLANE_ANGLE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B24:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-CHVII-B24-C05",
+    "skill_id": "G11-B24-ANGLE_APPLICATION"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B24:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B24-P01",
+    "skill_id": "G11-B24-POINT_PROJECTION"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B24:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B24-P02",
+    "skill_id": "G11-B24-LINE_PROJECTION"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B24:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B24-P03",
+    "skill_id": "G11-B24-THREE_PERP"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B25-C01",
+    "skill_id": "G11-B25-PLANE_ANGLE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B25-C02",
+    "skill_id": "G11-B25-DIHEDRAL"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B25-C03",
+    "skill_id": "G11-B25-PERP_PLANES"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVII-B25-C04",
+    "skill_id": "G11-B25-PERP_PLANE_RULE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-CHVII-B25-C05",
+    "skill_id": "G11-B25-RIGHT_PRISM"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G11-CHVII-B25-C06",
+    "skill_id": "G11-B25-REGULAR_PYRAMID"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:CORE",
+    "role": "SGK_CORE",
+    "order": 7,
+    "item_id": "THPT-G11-CHVII-B25-C07",
+    "skill_id": "G11-B25-REGULAR_FRUSTUM"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B25-P01",
+    "skill_id": "G11-B25-PLANE_ANGLE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B25-P02",
+    "skill_id": "G11-B25-DIHEDRAL"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B25:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B25-P03",
+    "skill_id": "G11-B25-PERP_PLANES"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B26-C01",
+    "skill_id": "G11-B26-POINT_LINE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B26-C02",
+    "skill_id": "G11-B26-POINT_PLANE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B26-C03",
+    "skill_id": "G11-B26-PARALLEL_LINE_PLANE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVII-B26-C04",
+    "skill_id": "G11-B26-PARALLEL_PLANES"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-CHVII-B26-C05",
+    "skill_id": "G11-B26-SKEW_COMMON_PERP"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G11-CHVII-B26-C06",
+    "skill_id": "G11-B26-HEIGHT_APPLICATION"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B26-P01",
+    "skill_id": "G11-B26-POINT_LINE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B26-P02",
+    "skill_id": "G11-B26-POINT_PLANE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B26:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B26-P03",
+    "skill_id": "G11-B26-PARALLEL_LINE_PLANE"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B27-C01",
+    "skill_id": "G11-B27-PRISM_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B27-C02",
+    "skill_id": "G11-B27-PYRAMID_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B27-C03",
+    "skill_id": "G11-B27-BOX_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-CHVII-B27-C04",
+    "skill_id": "G11-B27-FRUSTUM_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-CHVII-B27-C05",
+    "skill_id": "G11-B27-VOLUME_APPLICATION"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B27-P01",
+    "skill_id": "G11-B27-PRISM_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B27-P02",
+    "skill_id": "G11-B27-PYRAMID_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B27-P03",
+    "skill_id": "G11-B27-BOX_VOLUME"
+  },
+  {
+    "collection": "SGK:G11:CHVII:B27:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G11-CHVII-CHVII-C01",
+    "skill_id": "G11-CHVII-INTEGRATED"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B22-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B22-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B23-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G11-CHVII-B23-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "THPT-G11-CHVII-B24-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "THPT-G11-CHVII-B24-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 7,
+    "item_id": "THPT-G11-CHVII-B25-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 8,
+    "item_id": "THPT-G11-CHVII-B25-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 9,
+    "item_id": "THPT-G11-CHVII-B26-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 10,
+    "item_id": "THPT-G11-CHVII-B26-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 11,
+    "item_id": "THPT-G11-CHVII-B27-W01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 12,
+    "item_id": "THPT-G11-CHVII-B27-W02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G11-CHVII-B22-P01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G11-CHVII-B22-P02"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G11-CHVII-B22-P03"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G11-CHVII-B23-P01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G11-CHVII-B23-P02"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G11-CHVII-B23-P03"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G11-CHVII-B24-P01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G11-CHVII-B24-P02"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G11-CHVII-B24-P03"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G11-CHVII-B25-P01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G11-CHVII-B25-P02"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G11-CHVII-B25-P03"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G11-CHVII-B26-P01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G11-CHVII-B26-P02"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 15,
+    "item_id": "THPT-G11-CHVII-B26-P03"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 16,
+    "item_id": "THPT-G11-CHVII-B27-P01"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 17,
+    "item_id": "THPT-G11-CHVII-B27-P02"
+  },
+  {
+    "collection": "SGK:G11:CHVII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 18,
+    "item_id": "THPT-G11-CHVII-B27-P03"
   }
 ]

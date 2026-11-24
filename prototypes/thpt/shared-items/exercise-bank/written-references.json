@@ -2273,5 +2273,245 @@
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
     "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B22-W01",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B22-W01",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B22-W02-ANCHOR",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B22-W02-ANCHOR",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B23-W01",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B23-W01",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B23-W02-ANCHOR",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B23-W02-ANCHOR",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B24-W01",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B24-W01",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B24-W02-ANCHOR",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B24-W02-ANCHOR",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B25-W01",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B25-W01",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B25-W02-ANCHOR",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B25-W02-ANCHOR",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B26-W01",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B26-W01",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B26-W02-ANCHOR",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B26-W02-ANCHOR",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B27-W01",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B27-W01",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHVII-B27-W02-ANCHOR",
+    "source": {
+      "blob": "afc8ec039213b87b4930f2d34d48c28d1fc6277f",
+      "heading_id": "THPT-G11-CHVII-B27-W02-ANCHOR",
+      "topic_reference_blob": "5646241f4bb72f12419aaf585ee1fbea6f4185d0"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-vii.md",
+      "blob": "ef20f074dcd3972877f852c2bb075f6aa5362b9a",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP16-W01",
+    "source": {
+      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "heading_id": "THPT-TOP16-W01"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP16-W02",
+    "source": {
+      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "heading_id": "THPT-TOP16-W02"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP16-W03",
+    "source": {
+      "blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+      "heading_id": "THPT-TOP16-W03"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP17-W01",
+    "source": {
+      "blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+      "heading_id": "THPT-TOP17-W01"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP17-W02",
+    "source": {
+      "blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+      "heading_id": "THPT-TOP17-W02"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-TOP17-W03",
+    "source": {
+      "blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+      "heading_id": "THPT-TOP17-W03"
+    },
+    "existing_library_projection": null,
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
   }
 ]
