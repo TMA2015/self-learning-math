@@ -1861,12 +1861,16 @@
   },
   {
     "item_id": "THPT-G11-B31-KFT01",
-    "content_version": "SOURCE_BLOB_20f6b47a4f56a1531ee695fde11953edfb9661bb",
-    "stem": "Tính vận tốc tức thời của $s(t)=3t^2+2t$ tại $t=1$ **bằng định nghĩa**. Vì sao phải rút gọn $h$ trước khi lấy giới hạn? Nếu $f(1)=5$ và $f'(1)=8$, phương trình tiếp tuyến là gì?",
-    "answer_key": null,
-    "worked_solution": "<strong>Đối chiếu sau khi thử:</strong> thương $[s(1+h)-s(1)]/h=8+3h$, cho $v(1)=8$ m/s; chưa được đặt $h=0$ trong thương gốc; tiếp tuyến $y-5=8(x-1)$.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_20f6b47a4f56a1531ee695fde11953edfb9661bb_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một vật có tọa độ \\(s(t)=3t^2+2t\\) (m), với t tính bằng giây. Tính vận tốc tức thời tại \\(t=1\\) **bằng định nghĩa**. Vì sao phải rút gọn h trước khi lấy giới hạn? Nếu \\(f(1)=5\\) và \\(f'(1)=8\\), phương trình tiếp tuyến của đồ thị \\(y=f(x)\\) tại x=1 là gì?",
+    "answer_key": "v(1)=8 m/s; thương sai phân cần h≠0; tiếp tuyến y−5=8(x−1).",
+    "worked_solution": "**Đối chiếu sau khi thử:** \\(s(1)=5\\) và \\(s(1+h)=3(1+h)^2+2(1+h)=5+8h+3h^2\\). Với \\(h\\ne0\\),\n\\[\n\\frac{s(1+h)-s(1)}h=\\frac{8h+3h^2}h=8+3h.\n\\]\nKhông đặt h=0 trong thương ban đầu vì mẫu bằng 0. Sau khi rút gọn với h khác 0, lấy giới hạn khi h→0 được \\(v(1)=8\\) m/s. Tiếp tuyến của đồ thị \\(y=f(x)\\) qua điểm (1;5) có hệ số góc 8, nên \\(y-5=8(x-1)\\).",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B31-LIMIT_QUOTIENT",
+      "G11-B31-INSTANT_VELOCITY",
+      "G11-B31-TANGENT_EQUATION"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1890,16 +1894,22 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B32-KFT01",
-    "content_version": "SOURCE_BLOB_078a5d9aca09954fd2b451508152147f6a655015",
-    "stem": "Tự giải $y=(x+1)\\cos(2x)$; $z=\\ln(5-x)$; $w=e^{x^2}$. Hãy nêu **mỗi biểu thức dùng quy tắc ngoài nào và vì sao**.",
-    "answer_key": null,
-    "worked_solution": "<strong>Đối chiếu sau khi thử:</strong> $y'=\\cos2x-2(x+1)\\sin2x$ (tích+dây chuyền); $z'=-1/(5-x)$, chỉ $x&lt;5$ (log+dây chuyền); $w'=2xe^{x^2}$ (hàm mũ hợp). Cần biết mũ, log, lượng giác trong cùng một chương, không chỉ đa thức.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "SOURCE_BLOB_078a5d9aca09954fd2b451508152147f6a655015_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tính đạo hàm của \\(y=(x+1)\\cos(2x)\\), \\(z=\\ln(5-x)\\), \\(w=e^{x^2}\\), ghi điều kiện xác định. Hãy nêu mỗi biểu thức dùng quy tắc ngoài nào và vì sao.",
+    "answer_key": "y′=cos(2x)−2(x+1)sin(2x), quy tắc tích; z′=−1/(5−x), x<5, log hàm hợp; w′=2xe^(x²), mũ hàm hợp.",
+    "worked_solution": "**Đối chiếu sau khi thử:** \\(y\\) xác định trên \\(\\mathbb R\\). Vì y là tích của x+1 và cos(2x), dùng quy tắc tích; khi tính đạo hàm cos(2x) dùng quy tắc hàm hợp: \\((\\cos(2x))'=-2\\sin(2x)\\). Do đó \\(y'=\\cos(2x)-2(x+1)\\sin(2x)\\).\n\nVới z, điều kiện \\(5-x>0\\), tức x<5. Hàm ngoài là ln, hàm trong 5−x có đạo hàm −1; dùng quy tắc hàm hợp được \\(z'=-1/(5-x)\\).\n\nVới w, xác định trên \\(\\mathbb R\\); hàm ngoài là hàm mũ cơ số e, hàm trong x² có đạo hàm 2x. Do đó \\(w'=2xe^{x^2}\\). Cần nhận diện quy tắc ngoài trước, rồi tính đạo hàm của các thành phần.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B32-PRODUCT",
+      "G11-B32-TRIG_CHAIN",
+      "G11-B32-EXP_LOG_CHAIN",
+      "G11-B32-DOMAIN_VALIDATION",
+      "G11-B32-RULE_SELECTION"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1923,16 +1933,19 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-G11-B33-KFT01",
-    "content_version": "SOURCE_BLOB_920752c92ab12a97d8e034780907fd2bcaac1308",
-    "stem": "Cho $s(t)=t^3-6t$ cm, $t$ giây. Hãy viết vận tốc, gia tốc và đơn vị. Tại $t=1$, vật đang đi theo chiều nào và gia tốc theo chiều nào?",
-    "answer_key": null,
+    "content_version": "SOURCE_BLOB_920752c92ab12a97d8e034780907fd2bcaac1308_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho tọa độ của vật trên trục đã chọn \\(s(t)=t^3-6t\\) (cm), với t tính bằng giây, \\(t\\ge0\\). Hãy viết vận tốc, gia tốc và đơn vị. Tại \\(t=1\\), vật đang đi theo chiều nào và gia tốc theo chiều nào?",
+    "answer_key": "v=3t²−6 cm/s; a=6t cm/s². Tại t=1, v=−3 cm/s (chiều âm), a=6 cm/s² (chiều dương).",
     "worked_solution": "<strong>Đối chiếu sau khi thử:</strong> $v=3t^2-6$ cm/s, $a=6t$ cm/s²; tại t=1, $v=-3$ cm/s (chiều âm), $a=+6$ cm/s² (chiều dương), hai dấu trái nhau nên tốc độ tức thời đang giảm. Không suy một gia tốc dương là vật luôn nhanh dần.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B33-ACCELERATION",
+      "G11-B33-SIGN_INTERPRET"
+    ],
     "original_outcome_ids": [],
     "problem_type_id": null,
     "difficulty": null,
@@ -1956,6 +1969,6 @@
       "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
