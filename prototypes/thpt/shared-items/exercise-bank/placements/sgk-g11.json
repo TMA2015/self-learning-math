@@ -3657,5 +3657,297 @@
     "role": "CLIENT_SELF_CHECK_NO_MASTERY",
     "order": 20,
     "item_id": "THPT-G11-CHVIII-CHVIII-P01"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-B08-C01",
+    "skill_id": "G11-B08-GROUPED-DEFINITION"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-B08-C02",
+    "skill_id": "G11-B08-CLASS-BOUNDARIES"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-B08-C03",
+    "skill_id": "G11-B08-GROUP-WIDTH"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-B08-C04",
+    "skill_id": "G11-B08-FREQUENCY-TABLE"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-B08-C05",
+    "skill_id": "G11-B08-INTERPRETATION"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-B08-P01",
+    "skill_id": "G11-B08-CLASS-BOUNDARIES"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-B08-P02",
+    "skill_id": "G11-B08-GROUP-WIDTH"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-B08-P03",
+    "skill_id": "G11-B08-FREQUENCY-TABLE"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-B08-P04",
+    "skill_id": "G11-B08-INTERPRETATION"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-B08-P05",
+    "skill_id": "G11-B08-FREQUENCY-TABLE"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-B08-P06",
+    "skill_id": "G11-B08-INTERPRETATION"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G11-B08-P07",
+    "skill_id": "G11-B08-INTERPRETATION"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B08:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 8,
+    "item_id": "THPT-G11-B08-P08",
+    "skill_id": "G11-B08-GROUPED-DEFINITION"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G11-B09-C01",
+    "skill_id": "G11-B09-REPRESENTATIVE"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G11-B09-C02",
+    "skill_id": "G11-B09-GROUPED-MEAN"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G11-B09-C03",
+    "skill_id": "G11-B09-CUMULATIVE"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G11-B09-C04",
+    "skill_id": "G11-B09-GROUPED-MEDIAN"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G11-B09-C05",
+    "skill_id": "G11-B09-MODE-CONDITIONS"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G11-B09-P01",
+    "skill_id": "G11-B09-GROUPED-MEAN"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G11-B09-P02",
+    "skill_id": "G11-B09-GROUPED-MEDIAN"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G11-B09-P03",
+    "skill_id": "G11-B09-GROUPED-QUARTILES"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G11-B09-P04",
+    "skill_id": "G11-B09-GROUPED-MODE"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G11-B09-P05",
+    "skill_id": "G11-B09-GROUPED-MEAN"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G11-B09-P06",
+    "skill_id": "G11-B09-CUMULATIVE"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 7,
+    "item_id": "THPT-G11-B09-P07",
+    "skill_id": "G11-B09-GROUPED-MEDIAN"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 8,
+    "item_id": "THPT-G11-B09-P08",
+    "skill_id": "G11-B09-GROUPED-QUARTILES"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 9,
+    "item_id": "THPT-G11-B09-P09",
+    "skill_id": "G11-B09-MODE-CONDITIONS"
+  },
+  {
+    "collection": "SGK:G11:CHIII:B09:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 10,
+    "item_id": "THPT-G11-B09-P10",
+    "skill_id": "G11-B09-INTERPRETATION"
+  },
+  {
+    "collection": "SGK:G11:CHIII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "THPT-G11-CHIII-W08-01"
+  },
+  {
+    "collection": "SGK:G11:CHIII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "THPT-G11-CHIII-W08-02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHIII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "THPT-G11-CHIII-W09-01"
+  },
+  {
+    "collection": "SGK:G11:CHIII:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "THPT-G11-CHIII-W09-02-ANCHOR"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G11-B08-P01"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G11-B08-P02"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G11-B08-P03"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G11-B08-P04"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G11-B08-P08"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G11-B09-P01"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G11-B09-P02"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G11-B09-P03"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G11-B09-P04"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G11-B09-P06"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G11-B09-P09"
+  },
+  {
+    "collection": "SGK:G11:CHIII:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G11-B09-P10"
   }
 ]

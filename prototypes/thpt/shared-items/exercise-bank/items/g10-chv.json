@@ -1,0 +1,802 @@
+[
+  {
+    "item_id": "THPT-G10-B12-C01",
+    "content_version": "R01",
+    "stem": "Biết số đúng \\(\\bar a=14{,}37\\), số gần đúng \\(a=14{,}4\\). Sai số tuyệt đối là bao nhiêu?",
+    "answer_key": "\\(0{,}03\\)",
+    "worked_solution": "\\(\\Delta=|14{,}37-14{,}4|=0{,}03\\).",
+    "options": [
+      "A. $0{,}3$",
+      "B. $0{,}03$",
+      "C. $0{,}003$",
+      "D. $14{,}37$"
+    ],
+    "key_choice": "B",
+    "skill_ids": [
+      "G10-B12-ABS_ERROR"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Lấy trị tuyệt đối hiệu số đúng và số gần đúng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B12-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+        "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B12-C02",
+    "content_version": "R01",
+    "stem": "Kết quả đo \\(12{,}3\\,\\mathrm{cm}\\) có độ chính xác \\(d=0{,}2\\,\\mathrm{cm}\\). Kết luận chắc chắn nào đúng?",
+    "answer_key": "\\(\\bar a\\in[12{,}1;12{,}5]\\,\\mathrm{cm}\\)",
+    "worked_solution": "\\(|\\bar a-12{,}3|\\le0{,}2\\) nên \\(12{,}1\\le\\bar a\\le12{,}5\\). Không suy sai số thực bằng 0,2.",
+    "options": [
+      "A. $\\bar a=12{,}5$",
+      "B. $\\Delta=0{,}2$ chắc chắn",
+      "C. $\\bar a\\in[12{,}1;12{,}5]$",
+      "D. $\\bar a=12{,}3$ chắc chắn"
+    ],
+    "key_choice": "C",
+    "skill_ids": [
+      "G10-B12-ABS_ERROR"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Độ chính xác là giới hạn sai số, chưa biết sai số thực."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B12-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+        "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B12-P01",
+    "content_version": "R01",
+    "stem": "Số đúng \\(\\bar a=80\\), dùng số gần đúng \\(a=78\\). Tính sai số tương đối theo phần trăm.",
+    "answer_key": "\\(100/39\\%\\approx2{,}5641\\%\\)",
+    "worked_solution": "\\(\\Delta_a=|80-78|=2\\); \\(\\delta_a=2/78=1/39\\approx2{,}5641\\%\\). Không dùng mẫu số 80.",
+    "skill_ids": [
+      "G10-B12-REL_ERROR"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Tìm $\\Delta$, chia cho số gần đúng $|a|=78$ theo SGK."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B12-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+        "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B12-P02",
+    "content_version": "R01",
+    "stem": "Quy tròn số đúng 4286 đến hàng chục. Hãy cho số quy tròn và sai số tuyệt đối thực.",
+    "answer_key": "4290, sai số 4",
+    "worked_solution": "4286 làm tròn đến hàng chục được 4290; sai số thực \\(|4290-4286|=4\\), không quá 5.",
+    "skill_ids": [
+      "G10-B12-ROUNDING"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Chữ số hàng đơn vị là 6."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B12-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+        "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B12-P03",
+    "content_version": "R01",
+    "stem": "Số đúng là 2500 người, số gần đúng a=2475 người. Sai số tương đối là bao nhiêu?",
+    "answer_key": "\\(100/99\\%\\approx1{,}0101\\%\\)",
+    "worked_solution": "\\(\\Delta_a=25\\), \\(\\delta_a=25/2475=1/99\\approx1{,}0101\\%\\). Không dùng mẫu 2500.",
+    "skill_ids": [
+      "G10-B12-REL_ERROR"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Chia sai số tuyệt đối cho **số gần đúng** 2475 theo KNTT."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B12-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+        "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B12-P04",
+    "content_version": "R01",
+    "stem": "Bản ghi \\(3{,}20\\,\\mathrm{m}\\) với độ chính xác \\(0{,}05\\,\\mathrm{m}\\). Khoảng nào **chắc chắn chứa** giá trị đúng?",
+    "answer_key": "\\(\\bar a\\in[3{,}15;3{,}25]\\,\\mathrm{m}\\)",
+    "worked_solution": "\\(3{,}20-0{,}05\\le\\bar a\\le3{,}20+0{,}05\\), tức \\(\\bar a\\in[3{,}15;3{,}25]\\,\\mathrm{m}\\).",
+    "skill_ids": [
+      "G10-B12-APPROX_CONCEPT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Giải $|\\bar a-3{,}20|\\le0{,}05$. Số gần đúng là 3,20."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B12-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+        "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B12-P05",
+    "content_version": "R01",
+    "stem": "Làm tròn 10,06 đến hàng phần mười. Sai số tuyệt đối của phép làm tròn là bao nhiêu?",
+    "answer_key": "\\(10{,}1\\) và \\(0{,}04\\)",
+    "worked_solution": "\\(10{,}06\\to10{,}1\\); \\(\\Delta=|10{,}06-10{,}1|=0{,}04\\).",
+    "skill_ids": [
+      "G10-B12-ROUNDING"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Giữ một chữ số thập phân; xem chữ số hàng phần trăm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B12-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+        "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B12-P06",
+    "content_version": "R01",
+    "stem": "Hai phép đo cùng cho giá trị gần đúng \\(10{,}0\\,\\mathrm{cm}\\), nhưng độ chính xác lần lượt \\(d_1=0{,}2\\) cm và \\(d_2=0{,}05\\) cm. So sánh **cận trên** sai số tương đối \\(d/|a|\\).",
+    "answer_key": "Lần 2 nhỏ hơn: \\(0{,}5\\%\\) so với \\(2\\%\\)",
+    "worked_solution": "\\(0{,}2/10=2\\%\\); \\(0{,}05/10=0{,}5\\%\\). Lần 2 có giới hạn trên sai số tương đối nhỏ hơn; sai số thực từng phép đo chưa biết.",
+    "skill_ids": [
+      "G10-B12-REL_ERROR"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Tính hai cận trên với cùng số gần đúng a=10,0; không gọi đó là sai số thực."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B12-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+        "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B12-P07",
+    "content_version": "THPT-G10-CHV-B12-CALCULATOR-R03-CANDIDATE",
+    "stem": "Hãy tự dùng máy tính cầm tay tìm số gần đúng của $\\sqrt[3]{7}$ đến hàng phần nghìn, rồi kiểm tra sai số của kết quả có nhỏ hơn $0{,}0005$ không. Nêu cách nhập để không nhầm phép căn bậc ba với chia cho 3.",
+    "answer_key": null,
+    "worked_solution": "Kết quả: $\\sqrt[3]{7}\\approx1{,}91293118\\ldots\\approx1{,}913$. Nhập phím căn bậc ba hoặc $7^{(1/3)}$ có ngoặc, chuyển sang dạng thập phân rồi xét chữ số hàng phần mười nghìn là 9. Chứng minh $1{,}9125^3<7<1{,}9135^3$ và hàm lập phương tăng trên số dương, nên $|\\sqrt[3]{7}-1{,}913|<0{,}0005$. Không thay $\\sqrt[3]{7}$ bằng $7/3$.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "G10-B12-CALCULATOR_APPROX"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Tự thao tác máy trước khi mở gợi ý. Dùng căn bậc ba hoặc mũ $1/3$ có ngoặc, đọc nhiều hơn ba chữ số thập phân và chỉ sau đó mới quy tròn. Có thể kiểm cận bằng lập phương hai biên."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+      "heading_id": "THPT-G10-B12-P07",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+        "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "review_state": "RUNTIME_CANDIDATE_DELTA_C_REVIEW_PENDING"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B13-C01",
+    "content_version": "R01",
+    "stem": "Mẫu \\(3,5,7,9\\) có số trung bình bằng bao nhiêu?",
+    "answer_key": "\\(6\\)",
+    "worked_solution": "\\((3+5+7+9)/4=24/4=6\\).",
+    "options": [
+      "A. $5$",
+      "B. $6$",
+      "C. $7$",
+      "D. $8$"
+    ],
+    "key_choice": "B",
+    "skill_ids": [
+      "G10-B13-MEAN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Cộng bốn giá trị rồi chia 4."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B13-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B13-C02",
+    "content_version": "R01",
+    "stem": "Mẫu đã sắp \\(1,2,4,8,12\\) có trung vị bằng bao nhiêu?",
+    "answer_key": "\\(4\\)",
+    "worked_solution": "Trung vị là phần tử giữa: 4.",
+    "options": [
+      "A. $2$",
+      "B. $3$",
+      "C. $4$",
+      "D. $8$"
+    ],
+    "key_choice": "C",
+    "skill_ids": [
+      "G10-B13-MEDIAN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Mẫu lẻ 5 giá trị, chọn giá trị thứ 3."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B13-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B13-P01",
+    "content_version": "R01",
+    "stem": "Trong bảng tần số, giá trị 2 xuất hiện 2 lần, 4 xuất hiện 3 lần, 8 xuất hiện 1 lần. Tính số trung bình.",
+    "answer_key": "\\(4\\)",
+    "worked_solution": "\\(n=2+3+1=6\\), tổng \\(2\\cdot2+4\\cdot3+8\\cdot1=24\\); \\(\\bar x=4\\).",
+    "skill_ids": [
+      "G10-B13-MEAN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Nhân từng giá trị với tần số trước khi chia tổng tần số."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B13-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B13-P02",
+    "content_version": "R01",
+    "stem": "Mẫu đã sắp \\(1,3,4,8,9,10\\). Tìm \\(Q_1,Q_2,Q_3\\) theo KNTT.",
+    "answer_key": "\\(Q_1=3,Q_2=6,Q_3=9\\)",
+    "worked_solution": "\\(Q_2=(4+8)/2=6\\); nửa trái trung vị 3, nửa phải trung vị 9.",
+    "skill_ids": [
+      "G10-B13-QUARTILES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Mẫu n chẵn; chia hai nửa $1,3,4$ và $8,9,10$."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B13-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B13-P03",
+    "content_version": "R01",
+    "stem": "Mẫu \\(1,1,3,3,5,7\\). Mốt của mẫu là gì?",
+    "answer_key": "Hai mốt: 1 và 3",
+    "worked_solution": "Giá trị 1 và 3 mỗi giá trị xuất hiện 2 lần, các giá trị khác chỉ 1; do đó mẫu có hai mốt 1 và 3.",
+    "skill_ids": [
+      "G10-B13-MODE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đếm tần số của mỗi giá trị."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B13-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B13-P04",
+    "content_version": "R01",
+    "stem": "Thu nhập ngày (đơn vị thống nhất) là \\(4,5,5,6,30\\). Tính trung bình và trung vị; số nào ít bị số 30 chi phối hơn?",
+    "answer_key": "\\(\\bar x=10\\), trung vị 5; trung vị ổn định hơn",
+    "worked_solution": "\\(\\bar x=(4+5+5+6+30)/5=10\\), trung vị 5. Giá trị 30 kéo tăng trung bình nhưng không thay đổi vị trí phần tử giữa.",
+    "skill_ids": [
+      "G10-B13-INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Sắp mẫu, phần tử giữa là 5; tổng cả mẫu 50."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B13-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B13-P05",
+    "content_version": "R01",
+    "stem": "Mẫu đã sắp \\(1,2,3,4,6,8,9\\) có \\(Q_1,Q_2,Q_3\\) là gì?",
+    "answer_key": "\\((2,4,8)\\)",
+    "worked_solution": "\\(Q_2=4\\); nửa trái 1,2,3 có trung vị 2; nửa phải 6,8,9 có trung vị 8.",
+    "skill_ids": [
+      "G10-B13-QUARTILES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Mẫu 7 phần tử: bỏ 4 khi chia các nửa."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B13-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B13-P06",
+    "content_version": "R01",
+    "stem": "Hai nhóm \\(A=(6,7,8,9,10)\\), \\(B=(6,7,8,9,30)\\). So sánh số trung bình và trung vị của từng nhóm.",
+    "answer_key": "\\(A:\\bar x=8,\\mathrm{Me}=8;\\ B:\\bar x=12,\\mathrm{Me}=8\\)",
+    "worked_solution": "\\(\\bar x_A=40/5=8,\\bar x_B=60/5=12\\); cả hai trung vị 8. Số trung bình bị giá trị 30 làm tăng, trung vị giữ nguyên.",
+    "skill_ids": [
+      "G10-B13-INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Cùng bốn số đầu; 10 đổi thành 30, ảnh hưởng tới tổng nhưng không đổi phần tử thứ ba."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B13-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B14-C01",
+    "content_version": "R01",
+    "stem": "Mẫu \\(3,7,9\\) có khoảng biến thiên là bao nhiêu?",
+    "answer_key": "\\(6\\)",
+    "worked_solution": "\\(R=9-3=6\\).",
+    "options": [
+      "A. $3$",
+      "B. $6$",
+      "C. $7$",
+      "D. $9$"
+    ],
+    "key_choice": "B",
+    "skill_ids": [
+      "G10-B14-RANGE_IQR"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Lấy số lớn nhất trừ số nhỏ nhất."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B14-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B14-C02",
+    "content_version": "R01",
+    "stem": "Mẫu \\(1,3,5\\) có phương sai (chia cho \\(n\\), theo SGK) bằng bao nhiêu?",
+    "answer_key": "\\(8/3\\)",
+    "worked_solution": "\\(s^2=[(1-3)^2+0+(5-3)^2]/3=(4+4)/3=8/3\\).",
+    "options": [
+      "A. $8$",
+      "B. $4$",
+      "C. $8/3$",
+      "D. $2$"
+    ],
+    "key_choice": "C",
+    "skill_ids": [
+      "G10-B14-VARIANCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "$\\bar x=3$; tính ba bình phương độ lệch rồi chia 3."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B14-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B14-P01",
+    "content_version": "R01",
+    "stem": "Mẫu \\(2,4,6,8,10\\) có khoảng tứ phân vị bao nhiêu (theo cách chia nửa của KNTT)?",
+    "answer_key": "\\(6\\)",
+    "worked_solution": "\\(Q_1=(2+4)/2=3\\), \\(Q_3=(8+10)/2=9\\); \\(\\Delta_Q=9-3=6\\).",
+    "skill_ids": [
+      "G10-B14-RANGE_IQR"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Bỏ trung vị 6; lấy trung vị hai nửa còn lại."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B14-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B14-P02",
+    "content_version": "R01",
+    "stem": "Mẫu \\(1,1,5,5\\). Tính phương sai và độ lệch chuẩn.",
+    "answer_key": "\\(s^2=4,s=2\\)",
+    "worked_solution": "\\(\\bar x=3\\), bốn bình phương độ lệch bằng 4; \\(s^2=16/4=4\\) và \\(s=2\\).",
+    "skill_ids": [
+      "G10-B14-STDDEV"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Mẫu có trung bình 3."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B14-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B14-P03",
+    "content_version": "R01",
+    "stem": "Mẫu \\(1,2,2,3,3,4,4,30\\). Theo hàng rào 1,5·IQR, giá trị nào bất thường?",
+    "answer_key": "\\(30\\)",
+    "worked_solution": "\\(Q_1=2,Q_3=4,\\Delta_Q=2\\); ngưỡng trên 7, dưới −1. 30 lớn hơn 7 nên bất thường; số 1 không nhỏ hơn −1.",
+    "skill_ids": [
+      "G10-B14-OUTLIERS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Đặt hai nửa 4 số, tính $Q_1,Q_3$ rồi hàng rào trên."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B14-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B14-P04",
+    "content_version": "R01",
+    "stem": "\\(A=(5,5,8)\\), \\(B=(2,7,9)\\). Cùng trung bình 6. Nhóm nào có phương sai lớn hơn?",
+    "answer_key": "B, vì \\(26/3>2\\)",
+    "worked_solution": "\\(s_A^2=(1+1+4)/3=2\\); \\(s_B^2=(16+1+9)/3=26/3\\), nên B phân tán lớn hơn.",
+    "skill_ids": [
+      "G10-B14-COMPARISON"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Tính tổng bình phương khoảng cách tới trung bình 6."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B14-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B14-P05",
+    "content_version": "R01",
+    "stem": "Độ dài (cm) của 4 vật: \\(5,7,7,9\\). Tính phương sai và độ lệch chuẩn; ghi đúng đơn vị.",
+    "answer_key": "\\(s^2=2\\,\\mathrm{cm}^2,\\ s=\\sqrt2\\,\\mathrm{cm}\\)",
+    "worked_solution": "\\(s^2=(4+0+0+4)/4=2\\,\\mathrm{cm}^2\\). \\(s=\\sqrt2\\,\\mathrm{cm}\\). Không gán đơn vị cm² cho độ lệch chuẩn.",
+    "skill_ids": [
+      "G10-B14-STDDEV"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Trung bình bằng 7 cm; khác biệt −2,0,0,2."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B14-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B14-P06",
+    "content_version": "R01",
+    "stem": "Mẫu \\(2,6,6,10\\). Tính khoảng biến thiên, IQR và phương sai theo SGK.",
+    "answer_key": "\\(R=8,\\Delta_Q=4,s^2=8\\)",
+    "worked_solution": "\\(R=10-2=8\\); \\(Q_1=4,Q_3=8\\) nên IQR=4; \\(s^2=[16+0+0+16]/4=8\\).",
+    "skill_ids": [
+      "G10-B14-VARIANCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "$\\bar x=6$; nửa trái 2,6 và nửa phải 6,10."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-B14-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+        "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

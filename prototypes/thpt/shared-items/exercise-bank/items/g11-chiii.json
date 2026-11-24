@@ -1,0 +1,842 @@
+[
+  {
+    "item_id": "THPT-G11-B08-C01",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Trong bảng các khoảng [0;5), [5;10), [10;15) với tần số 3,7,5, n là bao nhiêu?",
+    "answer_key": "n=15.",
+    "worked_solution": "Cộng tần số: 3+7+5=15. Đây là cỡ mẫu, không phải số nhóm.",
+    "skill_ids": [
+      "G11-B08-GROUPED-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-C02",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Trong cách chia [0;10),[10;20), số liệu đúng bằng 10 thuộc nhóm nào?",
+    "answer_key": "[10;20).",
+    "worked_solution": "Khoảng trái đóng nhận 10, khoảng trước mở tại 10 nên không nhận.",
+    "skill_ids": [
+      "G11-B08-CLASS-BOUNDARIES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-C03",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Độ dài nhóm [12;18) là bao nhiêu?",
+    "answer_key": "6.",
+    "worked_solution": "Lấy đầu mút phải trừ đầu mút trái: 18-12=6.",
+    "skill_ids": [
+      "G11-B08-GROUP-WIDTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-C03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-C04",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Các tần số 2,4,5,3 ứng với 4 nhóm. Tần số nhóm thứ ba là gì, cỡ mẫu?",
+    "answer_key": "5; n=14.",
+    "worked_solution": "Tần số đọc tại cột thứ ba; n=2+4+5+3=14.",
+    "skill_ids": [
+      "G11-B08-FREQUENCY-TABLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-C04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-C05",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Từ bảng ghép nhóm [0;10),[10;20) có tần số 4 và 6, có biết chính xác 10 giá trị ban đầu không?",
+    "answer_key": "Không.",
+    "worked_solution": "Bảng chỉ lưu khoảng và số lượng trong khoảng, không cho biết vị trí chính xác của từng giá trị.",
+    "skill_ids": [
+      "G11-B08-INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-C05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-P01",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Ghép các số 5,10,10,19,20,29 vào [0;10),[10;20),[20;30). Lập bảng tần số.",
+    "answer_key": "[1,3,2].",
+    "worked_solution": "5 ở nhóm 1; 10,10,19 nhóm 2; 20,29 nhóm 3; tổng 6.",
+    "skill_ids": [
+      "G11-B08-CLASS-BOUNDARIES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-P02",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Với 4 nhóm [7;11),[11;15),[15;19),[19;23), có cùng độ rộng? Có chồng lấn?",
+    "answer_key": "Đều rộng 4, liền nhau và không chồng lấn.",
+    "worked_solution": "Mỗi nhóm rộng 11-7=4; hai nhóm kề nhau cùng biên nhưng một bên mở, một bên đóng.",
+    "skill_ids": [
+      "G11-B08-GROUP-WIDTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-P03",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Điểm [1,2,3,4,5,6,7,8,9,10] chia [1;4),[4;7),[7;11). Bảng tần số?",
+    "answer_key": "[3,3,4].",
+    "worked_solution": "Nhóm 1 gồm 1,2,3; nhóm 2 gồm 4,5,6; nhóm 3 gồm 7,8,9,10.",
+    "skill_ids": [
+      "G11-B08-FREQUENCY-TABLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-P04",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Tần số các khoảng điểm [0;4),[4;8),[8;12) là 6,9,5. Tỉ lệ lớp [4;8) bằng?",
+    "answer_key": "9/20=45%.",
+    "worked_solution": "n=6+9+5=20, chia 9 cho 20. Tỉ lệ chỉ phản ánh số liệu trong khoảng.",
+    "skill_ids": [
+      "G11-B08-INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-P05",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Cho 20 quan sát và các nhóm có tần số [4,8,6,?]. Điền tần số cuối.",
+    "answer_key": "2.",
+    "worked_solution": "20-(4+8+6)=2, kiểm n=20.",
+    "skill_ids": [
+      "G11-B08-FREQUENCY-TABLE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-P06",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Hai bộ dữ liệu 2,3,4 và 2,2,4 cùng thuộc các nhóm [0;3),[3;6). Có thể có bảng ghép giống nhau?",
+    "answer_key": "Không: bộ thứ nhất [1,2], bộ thứ hai [2,1].",
+    "worked_solution": "Đếm phần tử dưới 3 và từ 3 đến dưới 6 cho từng bộ; không giả định các bộ có cùng bảng chỉ vì cùng miền.",
+    "skill_ids": [
+      "G11-B08-INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-P07",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Bảng chiều dài [150;155),[155;160),[160;165) có tần số 6,10,4. Có thể kết luận đúng 10 người cao 157,5 cm không?",
+    "answer_key": "Không.",
+    "worked_solution": "157,5 là trung điểm đại diện, không phải chiều cao thực tế của từng người trong nhóm.",
+    "skill_ids": [
+      "G11-B08-INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-P07",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B08-P08",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Giải thích vì sao nhóm “dưới 15 tuổi” là nhóm ghép, nhưng không có trung điểm hữu hạn khi thiếu đầu mút trái.",
+    "answer_key": "Đó là nhóm ghép có tần số; không đủ đầu mút hữu hạn để tính trung điểm theo công thức.",
+    "worked_solution": "Ghép nhóm không nhất thiết khoảng đóng cả hai phía. Các phép tính dựa trên trung điểm cần có nhóm được lượng hóa thích hợp.",
+    "skill_ids": [
+      "G11-B08-GROUPED-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B08-P08",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-C01",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Nhóm [20;30) có giá trị đại diện bằng?",
+    "answer_key": "25.",
+    "worked_solution": "Trung điểm (20+30)/2=25.",
+    "skill_ids": [
+      "G11-B09-REPRESENTATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-C01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-C02",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Bảng [0;10),[10;20) có tần số 2,6. Số trung bình ghép nhóm?",
+    "answer_key": "12,5.",
+    "worked_solution": "Giá trị đại diện 5,15; (2·5+6·15)/8=100/8=12,5.",
+    "skill_ids": [
+      "G11-B09-GROUPED-MEAN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-C02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-C03",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Tần số [3,5,2,4] có các tần số tích lũy nào?",
+    "answer_key": "[3,8,10,14].",
+    "worked_solution": "Cộng dồn từ trái sang phải: 3, 3+5, 3+5+2, 3+5+2+4.",
+    "skill_ids": [
+      "G11-B09-CUMULATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-C03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-C04",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Với A: các nhóm [0;10),[10;20),[20;30),[30;40), tần số [4,8,6,2], trung vị nằm trong nhóm nào?",
+    "answer_key": "[10;20).",
+    "worked_solution": "n=20, n/2=10; tích lũy 4,12,18,20, nên nhóm 2 chứa vị trí 10.",
+    "skill_ids": [
+      "G11-B09-GROUPED-MEDIAN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-C04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-C05",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Các nhóm không cùng độ rộng, có được áp dụng trực tiếp công thức mốt của SGK Toán 11 không?",
+    "answer_key": "Không.",
+    "worked_solution": "Công thức mốt với các hiệu tần số được SGK đưa ra cho nhóm bằng độ rộng. Không áp dụng máy móc cho độ rộng khác nhau.",
+    "skill_ids": [
+      "G11-B09-MODE-CONDITIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-C05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P01",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tìm số trung bình ghép nhóm.",
+    "answer_key": "18.",
+    "worked_solution": "Midpoint 5,15,25,35; (4·5+8·15+6·25+2·35)/20=360/20=18.",
+    "skill_ids": [
+      "G11-B09-GROUPED-MEAN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P01",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P02",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Ước lượng trung vị bằng nội suy.",
+    "answer_key": "17,5.",
+    "worked_solution": "n=20; nhóm [10;20) chứa vị trí n/2=10; Me=10+(10-4)·10/8=17,5.",
+    "skill_ids": [
+      "G11-B09-GROUPED-MEDIAN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P02",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P03",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tính Q1, Q3 theo nội suy SGK.",
+    "answer_key": "Q1=11,25; Q3=25.",
+    "worked_solution": "Vị trí 5: Q1=10+(5-4)/8·10=11,25. Vị trí 15: Q3=20+(15-12)/6·10=25.",
+    "skill_ids": [
+      "G11-B09-GROUPED-QUARTILES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P03",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P04",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tìm mốt ước lượng.",
+    "answer_key": "50/3≈16,67.",
+    "worked_solution": "Nhóm mốt [10;20) m=8, trước 4, sau 6. Mo=10+[(8-4)/((8-4)+(8-6))]·10=50/3.",
+    "skill_ids": [
+      "G11-B09-GROUPED-MODE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P04",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P05",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Tính số trung bình ghép nhóm.",
+    "answer_key": "20.",
+    "worked_solution": "Trung điểm 12,5;17,5;22,5;27,5. Tổng trọng số 400; n=20, x̄=20.",
+    "skill_ids": [
+      "G11-B09-GROUPED-MEAN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P05",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P06",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Lập bảng tần số tích lũy, nhóm chứa Q3.",
+    "answer_key": "[3,9,18,20]; nhóm [20;25).",
+    "worked_solution": "n=20; 3n/4=15; tích lũy lần đầu ≥15 tại nhóm thứ 3.",
+    "skill_ids": [
+      "G11-B09-CUMULATIVE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P06",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P07",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Mẫu B: [10;15)→3 | [15;20)→6 | [20;25)→9 | [25;30)→2. Tính trung vị.",
+    "answer_key": "185/9≈20,56.",
+    "worked_solution": "n/2=10; trước nhóm 3 tích lũy 9, tần số nhóm 9 và h=5: Me=20+(10-9)·5/9=185/9.",
+    "skill_ids": [
+      "G11-B09-GROUPED-MEDIAN"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P07",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P08",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Mẫu C: [40;50)→2 | [50;60)→5 | [60;70)→8 | [70;80)→5. Tìm Q1 và Q3.",
+    "answer_key": "Q1=56; Q3=70.",
+    "worked_solution": "n=20; tích lũy [2,7,15,20]. Q1=50+(5-2)·10/5=56. Q3=60+(15-7)·10/8=70 (biên chung của hai nhóm).",
+    "skill_ids": [
+      "G11-B09-GROUPED-QUARTILES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P08",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P09",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Bốn nhóm [0;2),[2;4),[4;6),[6;8) đều có tần số 7. Có mốt theo quy ước SGK không?",
+    "answer_key": "Không.",
+    "worked_solution": "Khi tần số các nhóm bằng nhau, SGK quy ước mẫu ghép nhóm không có mốt.",
+    "skill_ids": [
+      "G11-B09-MODE-CONDITIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P09",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-P10",
+    "content_version": "THPT-G11-CHIII-B08-B09-R03",
+    "stem": "Hai bộ số liệu gốc khác nhau nhưng cho cùng bảng ghép nhóm. Số trung bình thực chính xác có bắt buộc giống nhau?",
+    "answer_key": "Không.",
+    "worked_solution": "Các giá trị bên trong mỗi nhóm có thể khác nhau, nên trung bình gốc khác; trung bình nhóm chỉ là ước lượng.",
+    "skill_ids": [
+      "G11-B09-INTERPRETATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-B09-P10",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+        "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

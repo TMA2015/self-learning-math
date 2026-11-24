@@ -50,7 +50,12 @@
     "fde4f8be91b5884b4559fef59fde46cf826c2bc9",
     "caf4ca6f8866a2cb3377dfdfa73d723c0e5bd5f0",
     "e526468f2452221e08070fc96e3a64d42ad5c8f9",
-    "1578efd4d2d46deb9bae064d12752d88fc3747b8"
+    "1578efd4d2d46deb9bae064d12752d88fc3747b8",
+    "49502fe39cf0a67f6a3e973a77f94164150637a7",
+    "c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3",
+    "4ea8df2ca2682d9fac8b1556852334af336930a5",
+    "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+    "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f"
   ],
   "projection_sources": [
     {
@@ -642,21 +647,76 @@
       "path": "docs/assets/data/thpt-g12-chvi-b18-b19-public-r00.json",
       "blob": "a5a96800c059dff9fbfa5393bd665c219c764060",
       "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd22/luyen-tap.md",
+      "blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd22/tu-kiem-tra.md",
+      "blob": "d2f4ee3ef4fc5f82350fbd4bf54f1ea3e710c4c6",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-chv-b12-reviewed-formative-r02.js",
+      "blob": "ca93acc0dd4df6e8f7fcd45732a6c69d82892d3f",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-chv-b13-b14-reviewed-formative-v1.js",
+      "blob": "ddd5ec947029f644865110f2f381047214499e3e",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g11-chiii-b08-b09-source-locked-formative-r03.js",
+      "blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g10-readiness/CHV.json",
+      "blob": "94c5c39ad7958b2ef02ada016d928954a0b430f6",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g11-selfcheck/CHIII.json",
+      "blob": "ba74db982965c95997603c91b835f93038060934",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-v-b13-b14.md",
+      "blob": "8a1fbabe62d749177d2986e3d59ddb979a9d0267",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iii.md",
+      "blob": "7642de8c885faaff932a58233bf812a141efcbfc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/sgk/chuong-v/tu-kiem-tra-chuong.md",
+      "blob": "80ca474035139434605dd75fe237b84ae1f29c43",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   ],
   "counts": {
-    "formative_items": 1256,
-    "written_references": 264,
-    "topic_practice": 1365,
-    "topic_replay": 329,
-    "sgk_public_selfcheck": 367,
-    "placements": 3071,
-    "projection_field_differences": 8,
-    "public_selfcheck_only_items": 155,
+    "formative_items": 1352,
+    "written_references": 283,
+    "topic_practice": 1479,
+    "topic_replay": 338,
+    "sgk_public_selfcheck": 409,
+    "placements": 3344,
+    "projection_field_differences": 20,
+    "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 279
+    "legacy_combined_answer_items": 280
   },
-  "scope": "CD01–21 + G10 ChI/II/III/IV/VI/VII/VIII/IX + G11 ChI/II/IV/V/VI/VII/VIII/IX + G12 ChI/II/IV/V/VI public formative, public self-check and written references",
+  "scope": "CD01–22 + all 24 SGK chapters public formative, public self-check and written references (supplements and full reconciliation pending)",
   "projection_field_differences": [
     {
       "item_id": "THPT-G11-CHVI-B18-C05",
@@ -716,6 +776,90 @@
       "projection": "CD21_PRACTICE",
       "fields": [
         "stem"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B08-C02",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B08-C04",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B08-P01",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B08-P02",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B08-P03",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B08-P04",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B08-P06",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B09-C03",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B09-P06",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G11-B09-P09",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B10-P04",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
+      ]
+    },
+    {
+      "item_id": "THPT-G12-B10-C04",
+      "projection": "CD22_PRACTICE",
+      "fields": [
+        "worked_solution"
       ]
     }
   ],
@@ -1204,6 +1348,30 @@
           "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
         }
       ]
+    },
+    {
+      "topic": "CD22",
+      "new_formative": 7,
+      "new_written": 0,
+      "shared_sgk_formative": 88,
+      "shared_written": 19,
+      "practice": 114,
+      "replay": 9,
+      "placements": 123,
+      "answer_table_rows_checked": 9,
+      "source_blob": "c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3",
+      "projection_sources": [
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd22/luyen-tap.md",
+          "blob": "e0492a48aff879128577458dbd8b2da898980ff1",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        },
+        {
+          "path": "docs/thpt-preview/chuyen-de/cd22/tu-kiem-tra.md",
+          "blob": "d2f4ee3ef4fc5f82350fbd4bf54f1ea3e710c4c6",
+          "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+        }
+      ]
     }
   ],
   "unstructured_projection_review": [
@@ -1292,8 +1460,8 @@
       "review": "UNSTRUCTURED_DISPLAY_REVIEW_DURING_AUDIT"
     }
   ],
-  "public_legacy_selfcheck_note": "145 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "279 combined-answer records, answer_key=null, manual review pending.",
+  "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
+  "legacy_combined_answer_note": "280 combined-answer records, answer_key=null, manual review pending (includes G10 B12-P07 runtime candidate).",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -1430,6 +1598,10 @@
     {
       "scope": "CD18",
       "note": "Reuse all 64 G12 ChII IDs, 96 G12 ChV IDs imported once from current packet source, retain historical topic source. 4 optional_after_b17 items kept optional; 40 own outcomes but 12 replay; coverage pending audit. No invented outcome tags for shared items."
+    },
+    {
+      "scope": "CD22",
+      "note": "114 existing placements (107 SGK +7 public topic extensions), original 7 extension IDs retained. G10 B12-P07 separate runtime candidate Delta C review pending; not added to CD22. All 24 SGK chapters represented, supplements and remaining public first-try/knowledge items need inventory before closure."
     }
   ]
 }

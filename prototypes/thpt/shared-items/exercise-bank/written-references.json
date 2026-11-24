@@ -3411,5 +3411,271 @@
     "existing_library_projection": null,
     "kind": "WRITTEN_REFERENCE_ONLY",
     "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G10-CHV-W12",
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-CHV-W12"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-v-b13-b14.md",
+      "blob": "8a1fbabe62d749177d2986e3d59ddb979a9d0267",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G10-CHV-W13",
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-CHV-W13"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-v-b13-b14.md",
+      "blob": "8a1fbabe62d749177d2986e3d59ddb979a9d0267",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G10-CHV-W14-ANCHOR",
+    "source": {
+      "blob": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+      "heading_id": "THPT-G10-CHV-W14-ANCHOR"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-chuong-v-b13-b14.md",
+      "blob": "8a1fbabe62d749177d2986e3d59ddb979a9d0267",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHIII-W08-01",
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-CHIII-W08-01"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iii.md",
+      "blob": "7642de8c885faaff932a58233bf812a141efcbfc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHIII-W08-02-ANCHOR",
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-CHIII-W08-02-ANCHOR"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iii.md",
+      "blob": "7642de8c885faaff932a58233bf812a141efcbfc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHIII-W09-01",
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-CHIII-W09-01"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iii.md",
+      "blob": "7642de8c885faaff932a58233bf812a141efcbfc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G11-CHIII-W09-02-ANCHOR",
+    "source": {
+      "blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+      "heading_id": "THPT-G11-CHIII-W09-02-ANCHOR"
+    },
+    "existing_library_projection": {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-iii.md",
+      "blob": "7642de8c885faaff932a58233bf812a141efcbfc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B09-W01",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B09-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B09-W02",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B09-W02"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B09-W03",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B09-W03"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B09-W04",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B09-W04"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B09-W05",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B09-W05"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B09-W06",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B09-W06"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B10-W01",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B10-W01"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B10-W02",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B10-W02"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B10-W03",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B10-W03"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B10-W04",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B10-W04"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B10-W05",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B10-W05"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
+  },
+  {
+    "item_id": "THPT-G12-B10-W06",
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading_id": "THPT-G12-B10-W06"
+    },
+    "existing_library_projection": {
+      "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+      "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "kind": "WRITTEN_REFERENCE_ONLY",
+    "auto_grade": false
   }
 ]

@@ -1,0 +1,1046 @@
+[
+  {
+    "item_id": "THPT-G12-B09-C01",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Các nhóm [0;10), [10;20), [20;30) có tần số 0,5,7. Cỡ mẫu là bao nhiêu?",
+    "answer_key": "12",
+    "worked_solution": "Cộng tần số 0+5+7=12; lớp rỗng không làm tăng cỡ mẫu.",
+    "skill_ids": [
+      "G12-CHIII-B09-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P01",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Bảng gồm các nhóm [5;10), [10;15), [15;20) với f=(2,0,6). Nhóm giữa có giá trị gốc không?",
+    "answer_key": "Không",
+    "worked_solution": "Tần số lớp giữa bằng 0 nên không có quan sát nằm ở lớp ấy.",
+    "skill_ids": [
+      "G12-CHIII-B09-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P02",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Có hai bảng ghép nhóm cùng tần số (3,4,3). Có thể khẳng định các số liệu gốc của chúng bằng nhau không?",
+    "answer_key": "Không",
+    "worked_solution": "Tần số chỉ cho biết số quan sát thuộc nhóm, không giữ từng giá trị gốc.",
+    "skill_ids": [
+      "G12-CHIII-B09-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-C02",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Các nhóm [0;5),[5;10),[10;15),[15;20) có f=(0,5,10,0). R là bao nhiêu?",
+    "answer_key": "10",
+    "worked_solution": "Nhóm đầu có dữ liệu là [5;10), cuối [10;15), nên R=15−5=10.",
+    "skill_ids": [
+      "G12-CHIII-B09-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-C02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P03",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Các nhóm [10;20),[20;30),[30;40),[40;50) có f=(2,0,7,1). R ghép nhóm?",
+    "answer_key": "40",
+    "worked_solution": "Nhóm đầu [10;20), cuối [40;50): R=50−10=40.",
+    "skill_ids": [
+      "G12-CHIII-B09-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P04",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Một mẫu gốc có min=13, max=47; bảng ghép lớp [10;20) đến [40;50) ở hai biên. So R gốc với R ghép nhóm.",
+    "answer_key": "R gốc=34; R ghép nhóm=40",
+    "worked_solution": "R gốc=47−13=34; nhóm biên có f>0 nên R ghép=50−10=40.",
+    "skill_ids": [
+      "G12-CHIII-B09-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-C03",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "R thay đổi nhiều nếu thêm một quan sát vào lớp rất xa lớp cuối hiện tại. Đúng hay sai?",
+    "answer_key": "Đúng",
+    "worked_solution": "R dựa vào hai cận nhóm có dữ liệu ở xa nhất; một quan sát có thể đổi biên.",
+    "skill_ids": [
+      "G12-CHIII-B09-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-C03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P05",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Phân bố ban đầu có nhóm dương đầu [10;20), cuối [30;40). Sau thêm 1 số liệu ở [60;70), R tăng bao nhiêu?",
+    "answer_key": "30",
+    "worked_solution": "R cũ=40−10=30; R mới=70−10=60; tăng 30.",
+    "skill_ids": [
+      "G12-CHIII-B09-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P06",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Mẫu A có R=20, mẫu B có R=30 (cùng đơn vị). Có thể suy B có IQR lớn hơn không?",
+    "answer_key": "Không",
+    "worked_solution": "Khoảng biến thiên không quyết định mức phân tán ở 50% giữa mẫu.",
+    "skill_ids": [
+      "G12-CHIII-B09-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P06",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-C04",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Với f=(6,14,12,8), n=40; lớp chứa Q₁ thuộc vị trí nào?",
+    "answer_key": "Lớp 2",
+    "worked_solution": "n/4=10; cộng dồn 6<10≤20 nên nằm lớp 2.",
+    "skill_ids": [
+      "G12-CHIII-B09-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-C04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P07",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Với f=(6,14,12,8), lớp chứa Q₃ là lớp mấy?",
+    "answer_key": "Lớp 3",
+    "worked_solution": "3n/4=30; cộng dồn 6,20,32 nên lớp 3.",
+    "skill_ids": [
+      "G12-CHIII-B09-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P07",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P08",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Tần số (2,6,10,6) có n=24. Nêu vị trí n/4 và 3n/4 và hai lớp tương ứng.",
+    "answer_key": "6 và 18; lớp 2 và lớp 3",
+    "worked_solution": "Cộng dồn 2,8,18,24; vị trí 6 nằm lớp 2; vị trí 18 ở biên trên lớp 3.",
+    "skill_ids": [
+      "G12-CHIII-B09-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Quy ước định vị theo SGK; không đồng nhất với mọi định nghĩa tứ phân vị cho dữ liệu thô ở từng phần mềm.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P08",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-C05",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Nhóm [15;20) chứa Q₁ của mẫu n=40, C=6, f=14. Tính Q₁ (2 chữ số).",
+    "answer_key": "16,43",
+    "worked_solution": "Q₁≈15+((10−6)/14)·5=16,42857≈16,43.",
+    "skill_ids": [
+      "G12-CHIII-B09-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-C05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P09",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Nhóm [20;25) chứa Q₃ của mẫu n=40, C=20, f=12. Tính Q₃ (2 chữ số).",
+    "answer_key": "24,17",
+    "worked_solution": "Q₃≈20+((30−20)/12)·5=24,1667≈24,17.",
+    "skill_ids": [
+      "G12-CHIII-B09-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P09",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P10",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Với Bảng f=(6,14,12,8) trên các lớp [10;15),[15;20),[20;25),[25;30), IQR bằng bao nhiêu (2 chữ số)?",
+    "answer_key": "7,74",
+    "worked_solution": "Tính Q₁≈16,4286; Q₃≈24,1667; Δ_Q≈7,7381≈7,74.",
+    "skill_ids": [
+      "G12-CHIII-B09-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P10",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-C06",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Muốn bớt nhạy với các nhóm cực trị khi so sánh nửa giữa của hai mẫu, nên ưu tiên R hay IQR?",
+    "answer_key": "IQR",
+    "worked_solution": "IQR dựa trên Q₁ và Q₃, phản ánh 50% giữa; R dựa hai biên.",
+    "skill_ids": [
+      "G12-CHIII-B09-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-C06",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P11",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Hai mẫu cùng đơn vị có R_A=50, IQR_A=14; R_B=30, IQR_B=9. Nhận xét chính xác?",
+    "answer_key": "A trải rộng hơn theo cả hai thước đo này",
+    "worked_solution": "R_A>R_B và IQR_A>IQR_B; chỉ nhận xét trên 2 số đặc trưng, không suy mọi đặc điểm phân bố.",
+    "skill_ids": [
+      "G12-CHIII-B09-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P11",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-P12",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Nếu IQR của A nhỏ hơn B nhưng R_A lớn hơn R_B thì kết luận “A luôn ít phân tán hơn B” có đúng không?",
+    "answer_key": "Không",
+    "worked_solution": "Hai chỉ số đo các phần khác nhau; dữ liệu có thể có biên xa nhưng nửa giữa tập trung.",
+    "skill_ids": [
+      "G12-CHIII-B09-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B09-P12",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-C01",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Giá trị đại diện của nhóm [10;20) là số nào?",
+    "answer_key": "15",
+    "worked_solution": "Trung điểm (10+20)/2=15.",
+    "skill_ids": [
+      "G12-CHIII-B10-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-C01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P01",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Các nhóm [0;10),[10;20),[20;30),[30;40), f=(2,6,6,2). Tính x̄ ghép nhóm.",
+    "answer_key": "20",
+    "worked_solution": "Giá trị đại diện 5,15,25,35; tổng trọng số=320, n=16 ⇒ x̄=20.",
+    "skill_ids": [
+      "G12-CHIII-B10-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P01",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P02",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Lớp [0;20) có f=1, [20;40) có f=9. Trung bình ghép nhóm?",
+    "answer_key": "28",
+    "worked_solution": "Giá trị đại diện 10 và 30; (1·10+9·30)/10=28, không phải (10+30)/2.",
+    "skill_ids": [
+      "G12-CHIII-B10-O01"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-C02",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Các trung điểm (1,3,5,7) có f=(1,3,3,1). Phương sai s² theo mẫu số n là bao nhiêu?",
+    "answer_key": "3",
+    "worked_solution": "x̄=4, tổng f(c−4)²=24; n=8; s²=24/8=3.",
+    "skill_ids": [
+      "G12-CHIII-B10-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-C02",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P03",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Nếu 10 quan sát đại diện đều bằng 6, s² bằng bao nhiêu?",
+    "answer_key": "0",
+    "worked_solution": "Mỗi độ lệch c−x̄ bằng 0 nên tổng bình phương bằng 0.",
+    "skill_ids": [
+      "G12-CHIII-B10-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P04",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Đơn vị dữ liệu là giờ. Đơn vị phương sai là gì?",
+    "answer_key": "Giờ²",
+    "worked_solution": "Phương sai lấy bình phương sai lệch nên đơn vị bình phương.",
+    "skill_ids": [
+      "G12-CHIII-B10-O02"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-C03",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Dữ liệu có E(c²)=19 và x̄=4. s² bằng bao nhiêu?",
+    "answer_key": "3",
+    "worked_solution": "Áp dụng s²=E(c²)−x̄²=19−16=3.",
+    "skill_ids": [
+      "G12-CHIII-B10-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-C03",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P05",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Có f=(2,6,2), c=(10,20,30). Tính E(c²).",
+    "answer_key": "440",
+    "worked_solution": "(2·100+6·400+2·900)/10=440.",
+    "skill_ids": [
+      "G12-CHIII-B10-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P06",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Nếu tính được s²≈−0,000001 do làm tròn, có kết luận phương sai âm thật không?",
+    "answer_key": "Không",
+    "worked_solution": "Phương sai theo định nghĩa luôn không âm; kiểm độ chính xác trung gian và công thức.",
+    "skill_ids": [
+      "G12-CHIII-B10-O03"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không làm tròn trung bình quá sớm; số âm nhỏ do máy tính làm tròn phải rà soát trước khi lấy căn.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P06",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-C04",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Nếu s²=9 cm², độ lệch chuẩn s là bao nhiêu?",
+    "answer_key": "3 cm",
+    "worked_solution": "s=√9=3 và đơn vị trở lại cm.",
+    "skill_ids": [
+      "G12-CHIII-B10-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-C04",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P07",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Phương sai 75 phút² cho độ lệch chuẩn xấp xỉ bao nhiêu phút?",
+    "answer_key": "8,66 phút",
+    "worked_solution": "s=√75≈8,66 phút.",
+    "skill_ids": [
+      "G12-CHIII-B10-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P07",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P08",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Câu “s=16 giờ²” khi s²=16 giờ² sai ở đâu?",
+    "answer_key": "s=4 giờ; nhầm giá trị và đơn vị",
+    "worked_solution": "Phải lấy căn √16=4, đơn vị giờ.",
+    "skill_ids": [
+      "G12-CHIII-B10-O04"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P08",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-C05",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Hai mẫu cùng trung bình/cùng đơn vị có s_A=2, s_B=5. Mẫu nào ít phân tán quanh trung bình theo s?",
+    "answer_key": "A",
+    "worked_solution": "2<5; với cùng bối cảnh, A ổn định hơn theo tiêu chí độ lệch chuẩn.",
+    "skill_ids": [
+      "G12-CHIII-B10-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-C05",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P09",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Tần số A=(2,6,2), B=(4,2,4) trên c=(10,20,30). So s²_A và s²_B.",
+    "answer_key": "40 và 80",
+    "worked_solution": "Cả hai x̄=20; A: (2·100+2·100)/10=40; B: (4·100+4·100)/10=80.",
+    "skill_ids": [
+      "G12-CHIII-B10-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P09",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P10",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Nếu A có s thấp nhưng điểm trung bình cũng thấp hơn mục tiêu tối thiểu, có thể kết luận A tốt hơn không?",
+    "answer_key": "Không",
+    "worked_solution": "Độ phân tán và độ đạt mục tiêu là hai tiêu chí khác nhau.",
+    "skill_ids": [
+      "G12-CHIII-B10-O05"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P10",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-C06",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "A có x̄=20, s=4; B có x̄=200, s=20. So s trực tiếp 20>4 để kết luận B có rủi ro tương đối lớn hơn có đủ không?",
+    "answer_key": "Không",
+    "worked_solution": "Mức trung bình khác xa; s tuyệt đối không đủ đánh giá rủi ro tương đối.",
+    "skill_ids": [
+      "G12-CHIII-B10-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "1",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-C06",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P11",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Trong ô tham khảo “Em có biết”, CV=s/x̄. Nếu x̄=20,s=4, CV là bao nhiêu?",
+    "answer_key": "0,2 = 20%",
+    "worked_solution": "Khi x̄>0, CV=4/20=0,2=20%; đây là tham khảo, không phải Core.",
+    "skill_ids": [
+      "G12-CHIII-B10-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "2",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P11",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-P12",
+    "content_version": "G12-SGK-CHIII-B09-B10-R00",
+    "stem": "Nếu x̄=0, có được dùng CV=s/x̄ không?",
+    "answer_key": "Không",
+    "worked_solution": "Mẫu số bằng 0; không xác định. Trước đó cần xem lại mô hình và phạm vi áp dụng.",
+    "skill_ids": [
+      "G12-CHIII-B10-O06"
+    ],
+    "problem_type_id": null,
+    "difficulty": "3",
+    "hints": [],
+    "rubric": null,
+    "conditions": "Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.",
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "heading": "#### Item THPT-G12-B10-P12",
+      "public_projection": {
+        "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
+        "blob": "e72c6050cc97f897939bfbc4e1469691a4ffed62",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]
