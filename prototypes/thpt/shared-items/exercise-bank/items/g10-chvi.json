@@ -892,7 +892,7 @@
     "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac_AUTHOR_KEY_REVIEW_R01",
     "stem": "Cho \\(f(x)=-(x-2)^2+7\\) nhưng chỉ xét \\(x\\in[3;5]\\). Tìm GTLN, GTNN và tập giá trị của hàm trên đoạn này.",
     "answer_key": "GTLN 6 tại x=3; GTNN −2 tại x=5; T=[−2;6].",
-    "worked_solution": "Trên \\([3;5]\\), \\(x-2\\) dương và tăng khi x tăng, nên \\(-(x-2)^2+7\\) giảm. \\(f(3)=6\\), \\(f(5)=-2\\). GTLN 6 tại \\(x=3\\); GTNN \\(-2\\) tại \\(x=5\\). Hàm liên tục trên đoạn nên nhận mọi giá trị giữa hai giá trị đầu mút; tập giá trị \\([-2;6]\\). Đỉnh x=2 nằm ngoài miền đang xét.",
+    "worked_solution": "Trên \\([3;5]\\), \\(x-2\\) dương và tăng khi x tăng, nên \\(-(x-2)^2+7\\) giảm. \\(f(3)=6\\), \\(f(5)=-2\\). GTLN 6 tại \\(x=3\\); GTNN \\(-2\\) tại \\(x=5\\). Với mọi \\(y\\in[-2;6]\\), chọn \\(x=2+\\sqrt{7-y}\\) thì \\(x\\in[3;5]\\) và \\(f(x)=y\\). Vậy tập giá trị \\([-2;6]\\). Đỉnh x=2 nằm ngoài miền đang xét.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "B16_OUT_04"
