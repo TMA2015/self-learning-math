@@ -31,7 +31,7 @@
 
         Mẫu số là 5, không phải 10. Số 7 và 9 thuộc A nhưng bị loại khỏi nhóm điều kiện B.
 
-    Nếu các kết quả ban đầu không đồng khả năng thì không thể đếm số kết quả đơn thuần. Ta dùng tổng xác suất. Xác suất của nhóm \(B\) là \(P(B)\); phần của nhóm ấy đồng thời thỏa A là \(P(A\cap B)\). Chuẩn hóa toàn bộ nhóm B thành một đơn vị, ta được
+    Nếu các kết quả ban đầu không đồng khả năng thì không thể đếm số kết quả đơn thuần. Ta dùng tổng xác suất. Xác suất của nhóm \(B\) là \(P(B)\); phần của nhóm ấy đồng thời thỏa A là \(P(A\cap B)\). Khi biết B xảy ra, ta chỉ xét các kết quả thuộc B. Trong số đó, phần thỏa A chính là giao của A và B. Vì vậy, lấy xác suất phần giao chia cho xác suất của cả nhóm B, ta được
     \[
     P(A\mid B)=\frac{P(A\cap B)}{P(B)},\quad P(B)>0.
     \]
@@ -91,7 +91,13 @@
 
     **Ứng dụng — trò chơi ba cửa.** Có một phần thưởng được đặt đều ngẫu nhiên sau một trong ba cửa, hai cửa còn lại không có thưởng. Người chơi chọn cửa 1; người dẫn biết vị trí thưởng, luôn mở một cửa chưa chọn không có thưởng, luôn cho đổi cửa, và nếu có hai cửa hợp lệ thì chọn đều. Sau khi người dẫn mở cửa 3, có nên đổi sang cửa 2 không?
 
-    Gọi \(E_i\) là biến cố thưởng ở cửa \(i\), \(H\) là việc mở cửa 3. Ban đầu \(P(E_i)=1/3\). Nếu thưởng ở cửa 1, người dẫn có hai cửa để mở nên \(P(H\mid E_1)=1/2\). Nếu ở cửa 2, phải mở cửa 3 nên \(P(H\mid E_2)=1\). Nếu ở cửa 3, người dẫn không mở cửa 3, nên \(P(H\mid E_3)=0\). Công thức nhân cho \(P(E_1H)=1/6,\ P(E_2H)=1/3,\ P(E_3H)=0\). Các giao này xung khắc và phủ hết H, do đó \(P(H)=1/2\). Khi biết H, xác suất thưởng ở cửa 1 là \((1/6)/(1/2)=1/3\), ở cửa 2 là \((1/3)/(1/2)=2/3\). Đổi cửa có lợi theo đúng quy tắc trò chơi đã nêu. Không suy rằng hai cửa còn đóng đương nhiên đồng khả năng; nếu đổi quy tắc người dẫn, phải lập lại mô hình.
+    Gọi \(E_i\) là biến cố thưởng ở cửa \(i\), \(H\) là việc mở cửa 3. Ban đầu \(P(E_i)=1/3\).
+
+    **Bước 1 — Xét cách người dẫn chọn cửa.** Nếu thưởng ở cửa 1, người dẫn có hai cửa để mở nên \(P(H\mid E_1)=1/2\). Nếu thưởng ở cửa 2, người dẫn buộc phải mở cửa 3 nên \(P(H\mid E_2)=1\). Nếu thưởng ở cửa 3, người dẫn không được mở cửa 3, nên \(P(H\mid E_3)=0\).
+
+    **Bước 2 — Tính xác suất mở cửa 3.** Công thức nhân cho \(P(E_1H)=1/6,\ P(E_2H)=1/3,\ P(E_3H)=0\). Ba trường hợp không thể xảy ra đồng thời và bao gồm mọi cách mở cửa 3. Do đó \(P(H)=1/6+1/3=1/2\).
+
+    **Bước 3 — Tính xác suất có điều kiện.** Sau khi biết H, xác suất thưởng ở cửa 1 là \((1/6)/(1/2)=1/3\), ở cửa 2 là \((1/3)/(1/2)=2/3\). Vậy đổi cửa có lợi theo đúng quy tắc trò chơi đã nêu. Không suy rằng hai cửa còn đóng đương nhiên đồng khả năng; nếu đổi quy tắc người dẫn, phải lập lại mô hình.
 
 === "Kiến thức SGK"
 
