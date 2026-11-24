@@ -898,5 +898,71 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B15-KFT01",
+    "content_version": "SOURCE_BLOB_95bbe5ecdd73b92f88176ae0245e11b1098d8e6e",
+    "stem": "Dãy 2+1/n tiến gần số nào? Tại sao không cần có số hạng nào đúng bằng số đó?",
+    "answer_key": null,
+    "worked_solution": "tiến gần 2 vì 1/n→0. Đây là formative tự học, không ghi Skill Mastery.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "95bbe5ecdd73b92f88176ae0245e11b1098d8e6e",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md",
+        "blob": "95bbe5ecdd73b92f88176ae0245e11b1098d8e6e",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 51,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B17-KFT01",
+    "content_version": "SOURCE_BLOB_36a7c21f3ae2474318c1e857acbcb640680e1326",
+    "stem": "Giả sử f có giới hạn tại a bằng 3 nhưng f(a)=5. Hàm có liên tục tại a không? Vì sao? Sau đó chuyển sang Core/Practice để luyện độc lập, không tính điểm mastery từ câu tự thử.",
+    "answer_key": null,
+    "worked_solution": "không, vì giá trị tại a khác giới hạn.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "36a7c21f3ae2474318c1e857acbcb640680e1326",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md",
+        "blob": "36a7c21f3ae2474318c1e857acbcb640680e1326",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 45,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
