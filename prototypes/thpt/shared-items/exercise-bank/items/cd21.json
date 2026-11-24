@@ -1,12 +1,15 @@
 [
   {
     "item_id": "THPT-TOP21-P01",
-    "content_version": "TOP21-R03",
+    "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong 40 thẻ vật lí khác nhau được chọn đều có 12 thẻ hình tam giác, trong đó đúng 5 thẻ đỏ. Biết đã chọn thẻ tam giác, tính xác suất thẻ đỏ và giải thích mẫu số.",
-    "answer_key": null,
+    "answer_key": "5/12.",
     "worked_solution": "**Lời giải:** Khi chưa biết gì thêm, phép thử có 40 thẻ vật lí đồng khả năng. Nhưng đề đã cho biết **thẻ được chọn mang hình tam giác**, nên chỉ xét 12 thẻ tam giác. Trong nhóm này có đúng 5 thẻ đỏ, vì vậy \\(P(\\text{đỏ}\\mid\\text{tam giác})=5/12\\). Mẫu số 12 là số kết quả còn phù hợp với điều kiện, không phải 40 thẻ ban đầu.\n\n**Khi làm sai:** Nếu ra 5/40, hãy hỏi lại: đề đã cho biết thẻ mang hình gì? Mọi kết quả không phải tam giác đã bị loại khỏi nhóm xét.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O01",
+      "G12-CHVI-B18-O03"
+    ],
     "original_outcome_ids": [
       "TOP21-O01"
     ],
@@ -22,16 +25,18 @@
       "blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
       "heading_id": "THPT-TOP21-P01"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-P02",
-    "content_version": "TOP21-R03",
+    "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chọn đều một số trong 1,…,12. A: chia hết cho 4. B: lớn hơn 6. Tính P(A|B).",
-    "answer_key": null,
+    "answer_key": "1/3.",
     "worked_solution": "**Lời giải:** Gọi \\(B\\) là biến cố đã biết “số lớn hơn 6”; khi chọn đều trong 1–12, \\(B=\\{7,8,9,10,11,12\\}\\) gồm 6 số. Biến cố \\(A\\) “chia hết cho 4” có các kết quả 4, 8, 12; giao \\(A\\cap B=\\{8,12\\}\\) gồm 2 số. Vì \\(P(B)=6/12>0\\), xác suất điều kiện là \\(P(A\\mid B)=n(A\\cap B)/n(B)=2/6=1/3\\). Chỉ có các phần tử của \\(B\\) được đưa vào mẫu số.\n\n**Khi làm sai:** Nếu dùng 3/12, em đang tính P(A), không phải P(A|B). Hãy viết trọn tập B trước.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O02"
+    ],
     "original_outcome_ids": [
       "TOP21-O02"
     ],
@@ -47,16 +52,19 @@
       "blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
       "heading_id": "THPT-TOP21-P02"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-P03",
-    "content_version": "TOP21-R03",
+    "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hộp có 5 thẻ đỏ, 2 thẻ vàng. Rút đều ba thẻ liên tiếp không hoàn lại. Tính xác suất màu theo đúng thứ tự đỏ–vàng–đỏ.",
-    "answer_key": null,
+    "answer_key": "4/21.",
     "worked_solution": "**Lời giải:** Vì **không hoàn lại**, ta phải cập nhật thành phần hộp sau mỗi lượt. Xác suất đỏ đầu tiên là \\(5/7\\); khi đỏ đã rút, hộp còn 4 đỏ và 2 vàng trong 6 thẻ, nên xác suất vàng thứ hai là \\(2/6\\). Sau hai lượt đỏ–vàng, hộp còn 4 đỏ trong 5 thẻ, nên xác suất đỏ ở lượt ba là \\(4/5\\). Theo quy tắc nhân theo các điều kiện liên tiếp, \\(P(\\text{đỏ–vàng–đỏ})=\\dfrac57\\cdot\\dfrac26\\cdot\\dfrac45=\\dfrac4{21}\\). Không nhân ba xác suất dựa trên hộp ban đầu.\n\n**Khi làm sai:** Nếu giữ 5/7 cho lượt thứ ba, em chưa cập nhật trạng thái túi; hãy ghi 'còn 6' rồi 'còn 5' trên các cạnh cây.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O06",
+      "G12-CHVI-B18-O07"
+    ],
     "original_outcome_ids": [
       "TOP21-O03"
     ],
@@ -72,16 +80,18 @@
       "blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
       "heading_id": "THPT-TOP21-P03"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-P04",
-    "content_version": "TOP21-R03",
+    "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Gieo một xúc xắc cân đối. A: mặt chẵn; B: mặt lớn hơn 3. Hai biến cố độc lập không?",
-    "answer_key": null,
+    "answer_key": "Không độc lập.",
     "worked_solution": "**Lời giải:** Với một xúc xắc cân đối, \\(A=\\{2,4,6\\}\\), \\(B=\\{4,5,6\\}\\). Ta có \\(P(A)=P(B)=3/6=1/2\\) nhưng \\(A\\cap B=\\{4,6\\}\\), nên \\(P(A\\cap B)=2/6=1/3\\). Để kiểm **độc lập**, cần so sánh xác suất giao với tích: \\(P(A)P(B)=(1/2)(1/2)=1/4\\). Vì \\(1/3\\ne1/4\\), hai biến cố **không độc lập**. Cùng có xác suất 1/2 không đủ để kết luận độc lập.\n\n**Khi làm sai:** Nếu coi độc lập vì cả hai đều xác suất 1/2, em chưa kiểm phần giao. Khoanh {4,6} trên Ω.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O04"
+    ],
     "original_outcome_ids": [
       "TOP21-O04"
     ],
@@ -97,16 +107,18 @@
       "blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
       "heading_id": "THPT-TOP21-P04"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-P05",
-    "content_version": "TOP21-R03",
-    "stem": "Kho hàng nhập 2/5 kiện từ X với tỉ lệ hỏng 1/20 và 3/5 từ Y với tỉ lệ hỏng 1/10. Lấy ngẫu nhiên một kiện. Tính tỉ lệ hỏng chung.",
-    "answer_key": null,
+    "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Kho hàng nhập 2/5 kiện từ X với tỉ lệ hỏng 1/20 và 3/5 từ Y với tỉ lệ hỏng 1/10. Chọn ngẫu nhiên đều một kiện trong kho. Tính xác suất kiện được chọn bị hỏng.",
+    "answer_key": "2/25.",
     "worked_solution": "**Lời giải:** Một kiện hàng được chọn có thể đến từ **X hoặc Y**, hai nguồn rời nhau và chiếm toàn bộ kho. Xác suất đi theo đường “X rồi hỏng” là \\((2/5)(1/20)=1/50\\); đường “Y rồi hỏng” là \\((3/5)(1/10)=3/50\\). Hai đường không chồng nhau nên cộng lại: \\(P(\\text{hỏng})=1/50+3/50=4/50=2/25\\). Không tính trung bình cộng đơn giản của hai tỉ lệ hỏng vì hai nguồn đóng góp lượng hàng khác nhau.\n\n**Khi làm sai:** Nếu lấy trung bình cộng 1/20 và 1/10, em ngầm giả định hai nguồn 50%–50%; thực tế là 2/5 và 3/5.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O02"
+    ],
     "original_outcome_ids": [
       "TOP21-O05"
     ],
@@ -122,16 +134,18 @@
       "blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
       "heading_id": "THPT-TOP21-P05"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-P06",
-    "content_version": "TOP21-R03",
-    "stem": "Một lô gồm 1/4 sản phẩm từ H, 3/4 từ K. Xác suất mang nhãn xanh là 3/5 nếu từ H, 1/5 nếu từ K. Biết đã thấy nhãn xanh, tính xác suất sản phẩm thuộc H.",
-    "answer_key": null,
+    "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một lô gồm 1/4 sản phẩm từ H, 3/4 từ K. Xác suất mang nhãn xanh là 3/5 nếu từ H, 1/5 nếu từ K. Chọn ngẫu nhiên đều một sản phẩm. Biết sản phẩm có nhãn xanh, tính xác suất sản phẩm thuộc H.",
+    "answer_key": "1/2.",
     "worked_solution": "**Lời giải:** Biết sản phẩm có **nhãn xanh**, ta phải xét tất cả nguồn có thể tạo ra nhãn xanh. Đường “H rồi xanh” có xác suất \\(P(H\\cap\\text{xanh})=(1/4)(3/5)=3/20\\). Đường “K rồi xanh” có xác suất \\((3/4)(1/5)=3/20\\). Xác suất thấy nhãn xanh từ hai nguồn là \\(P(\\text{xanh})=3/20+3/20=6/20\\). Vì vậy xác suất sản phẩm thuộc H **khi đã thấy xanh** là \\(P(H\\mid\\text{xanh})=(3/20)/(6/20)=1/2\\). Số \\(3/5\\) là xác suất xanh khi biết H, tức câu hỏi ngược chiều.\n\n**Khi làm sai:** Nếu viết 3/5, em đã đảo câu hỏi. Muốn biết nguồn sau khi thấy nhãn, mẫu số gồm các cách có nhãn xanh từ cả H và K.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O04"
+    ],
     "original_outcome_ids": [
       "TOP21-O06"
     ],
@@ -147,16 +161,18 @@
       "blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
       "heading_id": "THPT-TOP21-P06"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-P07",
-    "content_version": "TOP21-R03",
+    "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chọn tuyến R xác suất 2/5, xác suất thành công khi đi R là 3/4. Chọn tuyến S xác suất 3/5, xác suất thành công khi đi S là 1/2. Tính P(S và thất bại) và P(thành công).",
-    "answer_key": null,
+    "answer_key": "P(S và thất bại)=3/10; P(thành công)=3/5.",
     "worked_solution": "**Lời giải:** Cây có hai nhánh gốc: R xác suất \\(2/5\\) và S xác suất \\(3/5\\). Sau khi chọn S, xác suất thất bại là \\(1-1/2=1/2\\), nên đường **S rồi thất bại** có xác suất \\((3/5)(1/2)=3/10\\). Muốn tính xác suất thành công, cộng hai lá thành công rời nhau: R thành công \\((2/5)(3/4)=3/10\\), S thành công \\((3/5)(1/2)=3/10\\), nên \\(P(\\text{thành công})=3/5\\). Hai lá thất bại còn lại có xác suất R thất bại \\(1/10\\) và S thất bại \\(3/10\\); cả bốn lá cộng thành 1.\n\n**Khi làm sai:** Nếu ra 1/2 cho S và thất bại, em dùng xác suất thất bại có điều kiện mà quên xác suất chọn S. Đọc từ gốc đến lá.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O03"
+    ],
     "original_outcome_ids": [
       "TOP21-O07"
     ],
@@ -172,16 +188,18 @@
       "blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
       "heading_id": "THPT-TOP21-P07"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-P08",
-    "content_version": "TOP21-R03",
-    "stem": "Trong mô hình kiểm tra 1.000 sản phẩm có đúng 20 sản phẩm lỗi. Thiết bị phát hiện 80% sản phẩm lỗi và báo nhầm 5% của 980 sản phẩm tốt. Nếu máy báo lỗi, xác suất sản phẩm thực sự lỗi là bao nhiêu?",
-    "answer_key": null,
+    "content_version": "TOP21-R03_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Trong mô hình kiểm tra 1 000 sản phẩm có đúng 20 sản phẩm lỗi. Thiết bị phát hiện 80% sản phẩm lỗi và báo nhầm 5% của 980 sản phẩm tốt. Chọn ngẫu nhiên đều một sản phẩm trong 1 000 sản phẩm. Biết máy báo lỗi sản phẩm đó, xác suất nó thực sự lỗi là bao nhiêu?",
+    "answer_key": "16/65≈24,62%.",
     "worked_solution": "**Lời giải:** Trong 1.000 sản phẩm, có 20 sản phẩm lỗi và 980 sản phẩm tốt. Máy phát hiện \\(80\\%\\) trong 20 sản phẩm lỗi nên báo đúng \\(20\\cdot0{,}8=16\\) sản phẩm; đồng thời báo nhầm \\(5\\%\\) trong 980 sản phẩm tốt, tức \\(980\\cdot0{,}05=49\\) sản phẩm. Khi máy đã báo lỗi, nhóm đang xét có \\(16+49=65\\) sản phẩm bị báo, nhưng chỉ 16 thật sự lỗi. Xác suất cần tìm là \\(16/65\\approx24{,}62\\%\\). Mẫu số là tổng **mọi trường hợp bị báo**, không phải số sản phẩm thật sự lỗi.\n\n**Khi làm sai:** Nếu trả lời 80%, em chỉ nêu khả năng phát hiện khi đồ đã lỗi. Hãy đếm toàn bộ 65 lượt báo, gồm cả 49 lượt báo nhầm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O05"
+    ],
     "original_outcome_ids": [
       "TOP21-O08"
     ],
@@ -197,6 +215,6 @@
       "blob": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
       "heading_id": "THPT-TOP21-P08"
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]

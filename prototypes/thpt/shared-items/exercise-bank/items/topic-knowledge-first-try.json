@@ -3906,12 +3906,14 @@
   },
   {
     "item_id": "THPT-TOP19-T01",
-    "content_version": "TOP19-R11-20261121-T01",
+    "content_version": "TOP19-R11-20261121-T01_AUTHOR_KEY_REVIEW_R01",
     "stem": "Một tủ sách có 5 truyện khác nhau và 4 sách tranh khác nhau, không có cuốn nào trùng hai nhóm. Chọn đúng một cuốn để đọc. Hỏi có mấy cách?",
-    "answer_key": null,
+    "answer_key": "9 cách.",
     "worked_solution": "**9 cách**, vì hai nhóm cuốn sách không trùng nhau và mỗi kết quả chỉ lấy đúng một cuốn: 5+4=9.\n\n**Kiểm lỗi**\n\nNếu tính 5×2, hãy thử viết một kết quả: chỉ tên **một** cuốn sách, không phải một cặp. Quay lại xem điều kiện “hoặc”. Đọc lại **Kiến thức 1.1**, sau đó thử **Bài luyện 1** và **Bài luyện 3** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "COUNT_ADDITION"
+    ],
     "original_outcome_ids": [
       "TOP19-O01"
     ],
@@ -3933,16 +3935,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T02",
-    "content_version": "TOP19-R11-20261121-T02",
+    "content_version": "TOP19-R11-20261121-T02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Có 5 loại áo và 3 kiểu huy hiệu, mỗi loại áo đều có thể ghép với đủ ba kiểu huy hiệu. Mỗi bộ quà gồm đúng một loại áo và một kiểu huy hiệu. Hỏi có bao nhiêu bộ quà khác nhau?",
-    "answer_key": null,
+    "answer_key": "15 bộ.",
     "worked_solution": "**15 bộ.** Với mỗi loại trong 5 loại áo đều có 3 cách chọn huy hiệu, nên theo quy tắc nhân ta có \\(5\\cdot3=15\\) bộ.\n\n**Kiểm lỗi**\n\nNếu được 8, em có thể đã cộng \\(5+3\\). Hãy vẽ bảng gồm 5 hàng cho các loại áo và 3 cột cho các kiểu huy hiệu. Mỗi ô là một bộ quà; đếm đủ 15 ô để kiểm tra phép nhân. Đọc lại **Kiến thức 1.2**, sau đó thử **Bài luyện 4** và **Bài luyện 7** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "COUNT_MULTIPLICATION"
+    ],
     "original_outcome_ids": [
       "TOP19-O02"
     ],
@@ -3964,16 +3968,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T03",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Từ {0,1,2,3,4} lập số tự nhiên có hai chữ số khác nhau. Có bao nhiêu số?",
-    "answer_key": null,
+    "answer_key": "16 số.",
     "worked_solution": "Hàng chục có 4 cách (1–4); hàng đơn vị còn 4 cách (kể cả 0 nếu chưa dùng): 4×4=**16** số.\n\n**Kiểm lỗi**\n\nNếu có 20, em đã cho chữ số hàng chục nhận 0. Nếu có 12, em có thể đã loại 0 khỏi cả hàng đơn vị. Đọc lại **Kiến thức 1.3**, sau đó thử **Bài luyện 8** và **Bài luyện 9** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "COUNT_CASES_NO_REPEAT"
+    ],
     "original_outcome_ids": [
       "TOP19-O03"
     ],
@@ -3995,16 +4001,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T04",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Từ {0,1,2,3} lập số chẵn có hai chữ số khác nhau. Có bao nhiêu số?",
-    "answer_key": null,
+    "answer_key": "5 số.",
     "worked_solution": "Đơn vị 0: hàng chục có 3 cách; đơn vị 2: hàng chục chỉ 1 hoặc 3, có 2 cách; tổng **3+2=5** số.\n\n**Kiểm lỗi**\n\nNếu em nhân 2×3, hãy xét riêng đuôi 0: hàng chục có 3 lựa chọn, còn đuôi 2 chỉ có 2. Đọc lại **Kiến thức 1.4**, sau đó thử **Bài luyện 10** và **Bài luyện 12** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "COUNT_CASES_NO_REPEAT"
+    ],
     "original_outcome_ids": [
       "TOP19-O04"
     ],
@@ -4026,16 +4034,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T05",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Có 5 học sinh khác nhau xếp thành một hàng, không ràng buộc. Có bao nhiêu thứ tự?",
-    "answer_key": null,
+    "answer_key": "120 thứ tự.",
     "worked_solution": "Hoán vị cả 5 học sinh, mỗi người một vị trí: 5!=**120**.\n\n**Kiểm lỗi**\n\nNếu em dùng tổ hợp, hãy đổi chỗ hai học sinh; thứ tự hàng đổi thành kết quả khác, do đó phải đếm tất cả thứ tự. Đọc lại **Kiến thức 2.1**, sau đó thử **Bài luyện 14** và **Bài luyện 17** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "PERMUTATION"
+    ],
     "original_outcome_ids": [
       "TOP19-O05"
     ],
@@ -4057,16 +4067,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T06",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Từ 6 bạn chọn một trưởng nhóm và một phó nhóm khác nhau. Có bao nhiêu cách?",
-    "answer_key": null,
+    "answer_key": "30 cách.",
     "worked_solution": "Hai vai phân biệt, lần lượt 6 rồi 5 lựa chọn: A(6,2)=**30**.\n\n**Kiểm lỗi**\n\nNếu ra 15, em đang coi A làm trưởng/B làm phó giống B trưởng/A phó; hãy viết hai kết quả để thấy khác. Đọc lại **Kiến thức 2.2**, sau đó thử **Bài luyện 18** và **Bài luyện 20** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "ARRANGEMENT_WITH_ROLES"
+    ],
     "original_outcome_ids": [
       "TOP19-O06"
     ],
@@ -4088,16 +4100,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T07",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Chọn một nhóm 3 người từ 6 người khác nhau, không phân vai. Có bao nhiêu nhóm?",
-    "answer_key": null,
+    "answer_key": "20 nhóm.",
     "worked_solution": "C(6,3)=6×5×4/(3×2×1)=**20** nhóm.\n\n**Kiểm lỗi**\n\nNếu em ra 120, đó là số thứ tự của bộ ba; mỗi nhóm bị đếm 3!=6 lần, phải chia 6. Đọc lại **Kiến thức 2.3**, sau đó thử **Bài luyện 21** và **Bài luyện 22** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "COMBINATION"
+    ],
     "original_outcome_ids": [
       "TOP19-O07"
     ],
@@ -4119,16 +4133,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T08",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Từ 4 bạn nữ và 3 bạn nam chọn nhóm 3 người gồm đúng 2 nữ, 1 nam, không phân vai. Bao nhiêu nhóm?",
-    "answer_key": null,
+    "answer_key": "18 nhóm.",
     "worked_solution": "Chọn 2 nữ trong 4: C(4,2)=6; chọn 1 nam trong 3: 3. Nhân: **18** nhóm.\n\n**Kiểm lỗi**\n\nNếu tính A(4,2)×3, em đã phân biệt thứ tự hai nữ; bài này chỉ chọn nhóm nên dùng tổ hợp. Đọc lại **Kiến thức 2.4**, sau đó thử **Bài luyện 23** và **Bài luyện 25** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "COMBINATION_TWO_GROUPS"
+    ],
     "original_outcome_ids": [
       "TOP19-O08"
     ],
@@ -4150,16 +4166,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T14",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Từ 8 ứng viên khác nhau, chọn 3 bạn giữ ba vai trò phân biệt. Hãy (a) xác định phép tính máy cần dùng, (b) cho số cách và (c) tự kiểm bằng tích không cần máy.",
-    "answer_key": null,
+    "answer_key": "nPr; 336 cách; 8·7·6=336.",
     "worked_solution": "Ba vai khác nhau, nên dùng **nPr** (chỉnh hợp): A(8,3)=8×7×6=**336** cách. Trên máy có `nPr`, tính `8 nPr 3`; trên máy không có, nhân ba số giảm dần 8·7·6. Không dùng C(8,3) vì đó là chọn **nhóm không phân vai**.\n\n**Kiểm lỗi**\n\nNếu kết quả ra 56, em mới chọn hai vai thay vì ba. Nếu ra C(8,3)=56, em quên **ba vai phân biệt**; so A(8,3)=C(8,3)×3!=56×6=336. Quay lại Kiến thức 2.2–2.3 để phân biệt kết quả có thứ tự và không có thứ tự. Đọc lại **Kiến thức 2.5**, sau đó thử **Bài luyện 20** và **Bài luyện 27** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "ARRANGEMENT_WITH_ROLES"
+    ],
     "original_outcome_ids": [
       "TOP19-O14"
     ],
@@ -4181,16 +4199,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T09",
-    "content_version": "TOP19-R11-20261121-T09",
+    "content_version": "TOP19-R11-20261121-T09_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hệ số của x³ trong (x+3)^4 bằng bao nhiêu? Giải thích số cách chọn ba thừa số chứa x và hệ số của thừa số còn lại.",
-    "answer_key": null,
+    "answer_key": "12.",
     "worked_solution": "Muốn x³ chọn x tại 3 trong 4 vị trí: C(4,3)=4 cách; vị trí còn lại phải chọn 3, nên hệ số là 4·3=**12**.\n\n**Kiểm lỗi**\n\nNếu em chép số 4 ở hàng n=4 của tam giác Pascal thì mới đếm số cách chọn vị trí, chưa nhân hệ số 3 của thừa số không chứa x. Viết rõ ba lần chọn x và một lần chọn 3: C(4,3)·3=12. Đọc lại **Kiến thức 3.1**, sau đó thử **Bài luyện 28** và **Bài luyện 30** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "BINOMIAL_COEFFICIENT",
+      "BINOMIAL_COMPOSITE_COEFF"
+    ],
     "original_outcome_ids": [
       "TOP19-O09"
     ],
@@ -4212,16 +4233,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T10",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hệ số x² trong (x−2)^4 là bao nhiêu?",
-    "answer_key": null,
+    "answer_key": "24.",
     "worked_solution": "Muốn x² thì k=2 lần chọn −2. Hệ số C(4,2)(−2)²=6·4=**24**.\n\n**Kiểm lỗi**\n\nNếu ra −24, kiểm lại: chọn −2 hai lần thì tích dương; dấu phụ thuộc k chẵn/lẻ. Đọc lại **Kiến thức 3.2**, sau đó thử **Bài luyện 31** và **Bài luyện 36** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "BINOMIAL_NEGATIVE_COEFF",
+      "BINOMIAL_SECOND_HIGHEST"
+    ],
     "original_outcome_ids": [
       "TOP19-O10"
     ],
@@ -4243,16 +4267,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T13",
-    "content_version": "TOP19-R03",
-    "stem": "Một kho ban đầu có 5 000 bộ dụng cụ, tăng 1% mỗi năm theo cùng tỉ lệ, trong 5 năm. Dùng **hai số hạng đầu** của (1+0,01)^5 để ước tính số bộ cuối kỳ và nêu vì sao đây không phải giá trị đúng tuyệt đối.",
-    "answer_key": null,
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một mô hình dự báo tồn kho bắt đầu với 5 000 bộ dụng cụ, tăng 1% mỗi năm theo cùng tỉ lệ trong 5 năm. Dùng hai số hạng đầu của (1+0,01)^5 để ước tính giá trị mô hình cuối kỳ và giải thích vì sao đây chỉ là ước lượng.",
+    "answer_key": "5 250 bộ (ước lượng thấp hơn giá trị mô hình).",
     "worked_solution": "r=0,01. Hai số hạng đầu là 1+5r=1,05. Do đó 5 000×1,05=**5 250 bộ** (ước tính). Các hạng bậc 2 trở lên đều dương nên số thực tế mô hình 5 000×1,01^5 lớn hơn 5 250 một ít.\n\n**Kiểm lỗi**\n\nNếu tính 5 000(1+0,01) mà bỏ mũ 5, em mới tính tăng một năm. Quay lại Kiến thức 3.1 để viết năm thừa số rồi đọc hệ số của r là C(5,1)=5. Nếu viết dấu bằng chính xác, hãy chỉ phần r² còn bị bỏ qua. Đọc lại **Kiến thức 3.3**, sau đó thử **Bài luyện 29** và **Bài luyện 38** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "BINOMIAL_COEFFICIENT"
+    ],
     "original_outcome_ids": [
       "TOP19-O13"
     ],
@@ -4274,16 +4300,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T11",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong khai triển \\((3x-2)^5\\), số hạng không chứa \\(x\\) là bao nhiêu? Giải thích bằng cách chọn hạng tử từ năm thừa số.",
-    "answer_key": null,
+    "answer_key": "−32.",
     "worked_solution": "Chọn \\(-2\\) từ cả năm thừa số, không chọn \\(3x\\) ở vị trí nào, nên có duy nhất \\(C(5,5)=1\\) cách cho hạng tử đó. Hệ số tự do là \\((-2)^5=\\mathbf{-32}\\).\n\n**Kiểm lỗi**\n\nNếu được +32, em đã quên số lần chọn thừa số âm là **5 lần (lẻ)**. Nếu tính \\(5\\cdot(-2)\\), em đã nhầm cộng năm lần với **nhân năm thừa số**. Thử n=2 trước: \\((x-2)^2=x^2-4x+4\\) có hằng số \\((-2)^2=4\\). Đọc lại **Kiến thức 3.4**, sau đó thử **Bài luyện 35** và **Bài luyện 40** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B25-CONSTANT_TERM"
+    ],
     "original_outcome_ids": [
       "TOP19-O11"
     ],
@@ -4305,16 +4333,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP19-T12",
-    "content_version": "TOP19-R03",
+    "content_version": "TOP19-R03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tổng hệ số của đa thức (x+2)^5 bằng bao nhiêu?",
-    "answer_key": null,
+    "answer_key": "243.",
     "worked_solution": "Thay x=1: (1+2)^5=**243**.\n\n**Kiểm lỗi**\n\nNếu cộng lẻ từng số hạng và sai, nhớ P(1) chỉ đúng khi cả đa thức được tính tại 1, không chỉ thay hệ số tổ hợp. Đọc lại **Kiến thức 3.5**, sau đó thử **Bài luyện 41** và **Bài luyện 42** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "BINOMIAL_COEFFICIENT"
+    ],
     "original_outcome_ids": [
       "TOP19-O12"
     ],
@@ -4336,16 +4366,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T01",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Gieo một xúc xắc 8 mặt đồng khả năng ghi các số 1–8. Viết Ω và biến cố “ra số chẵn”.",
-    "answer_key": null,
+    "answer_key": "Ω={1,2,3,4,5,6,7,8}; A={2,4,6,8}.",
     "worked_solution": "Ω={1,2,3,4,5,6,7,8}; A={2,4,6,8}.\n\n**Kiểm lỗi**\n\nNếu chỉ viết xác suất 1/2, em chưa mô tả biến cố; hãy ghi kết quả sơ cấp vào tập. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 1 tại Luyện tập 1.1. Không gian mẫu và tập kết quả của biến cố.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-EXPERIMENT_SAMPLE_SPACE",
+      "G10-B26-EVENT_SUBSET"
+    ],
     "original_outcome_ids": [
       "TOP20-O01"
     ],
@@ -4367,16 +4400,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T10",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Một vòng quay cân đối có các kết quả ghi 1 đến 6. Biến cố A là “kết quả không lớn hơn 2”. Hãy viết A và nói khi nào A xảy ra.",
-    "answer_key": null,
+    "answer_key": "A={1,2}; xảy ra khi quay được 1 hoặc 2.",
     "worked_solution": "**Lời giải:** A={1,2}; A xảy ra nếu lượt quay cho kết quả 1 hoặc 2.\n\n**Kiểm lỗi**\n\nNếu viết A={2}, em đã bỏ kết quả 1 cũng không lớn hơn 2. Xem từng phần tử Ω={1,…,6}. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 2 tại Luyện tập 1.2. Mô tả biến cố từ một điều kiện.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-EVENT_SUBSET"
+    ],
     "original_outcome_ids": [
       "TOP20-O02"
     ],
@@ -4398,16 +4433,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T02",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hộp có 2 phiếu đỏ và 4 phiếu xanh khác nhau, rút đều một phiếu. P(đỏ) có phải 1/2 vì có hai màu không?",
-    "answer_key": null,
+    "answer_key": "Không; P(đỏ)=1/3.",
     "worked_solution": "Không. Sáu phiếu vật lí đồng khả năng, P(đỏ)=2/6=1/3.\n\n**Kiểm lỗi**\n\nNếu dùng 1/2, em đếm màu thay vì từng phiếu; hãy đặt tên cho sáu phiếu. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 3 tại Luyện tập 1.3. Xác suất cổ điển từ phiếu đồng khả năng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-CLASSICAL_RATIO"
+    ],
     "original_outcome_ids": [
       "TOP20-O03"
     ],
@@ -4429,16 +4466,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T11",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tung hai đồng xu cân đối và độc lập. Nếu chỉ ghi số mặt ngửa 0, 1, 2 thì ba giá trị ấy có đồng khả năng không? Hãy viết các chuỗi sơ cấp và tính xác suất có đúng một mặt ngửa.",
-    "answer_key": null,
+    "answer_key": "Không đồng khả năng; Ω={NN,NS,SN,SS}; P(đúng một ngửa)=1/2.",
     "worked_solution": "**Lời giải:** Không. Không gian mẫu gồm NN, NS, SN, SS, mỗi chuỗi có xác suất 1/4. Số ngửa 0 ứng với SS, số ngửa 1 ứng với NS và SN, số ngửa 2 ứng với NN. Vì vậy ba giá trị **không** đồng khả năng; xác suất đúng một ngửa là \\(2/4=1/2\\).\n\n**Kiểm lỗi**\n\nNếu ra 1/3, em đã đếm ba **nhãn** thay vì bốn chuỗi sơ cấp. Liệt kê đủ NN, NS, SN, SS rồi ghép mỗi chuỗi với số mặt ngửa tương ứng. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 6 tại Luyện tập 1.6. Gộp kết quả không đồng khả năng.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B27-EQUIPROBABLE_MODELLING"
+    ],
     "original_outcome_ids": [
       "TOP20-O06"
     ],
@@ -4460,16 +4499,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T03",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Có 20 thẻ đồng khả năng, đúng 1 thẻ màu đen. Tính P(không đen). Biến cố đen có phải không thể?",
-    "answer_key": null,
+    "answer_key": "P(không đen)=19/20; đen hiếm nhưng không phải không thể.",
     "worked_solution": "P(không đen)=19/20; P(đen)=1/20>0 nên đen là hiếm, không phải không thể.\n\n**Kiểm lỗi**\n\nNếu nói xác suất 0, em đã nhầm ít xảy ra với biến cố rỗng. Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 4 tại Luyện tập 1.4. Tính xác suất bằng biến cố đối.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-COMPLEMENT"
+    ],
     "original_outcome_ids": [
       "TOP20-O04"
     ],
@@ -4491,16 +4532,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T12",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong 100 vé đồng khả năng chỉ có một vé trúng. Biến cố trúng vé là không thể hay hiếm? Viết xác suất.",
-    "answer_key": null,
+    "answer_key": "Hiếm, không phải không thể; P(trúng)=1/100.",
     "worked_solution": "**Lời giải:** P(trúng)=1/100>0; hiếm chứ không phải biến cố không thể.\n\n**Kiểm lỗi**\n\nNếu P=0, em đã bỏ một vé trúng còn có mặt trong Ω. Đếm n(A)=1 và n(Ω)=100. Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 5 tại Luyện tập 1.5. Biến cố hiếm và biến cố không thể.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B26-SCOPE_SMALL_PROBABILITY"
+    ],
     "original_outcome_ids": [
       "TOP20-O05"
     ],
@@ -4522,16 +4565,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T04",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Từ 6 học sinh chọn một nhóm 2 người không phân vai; so với chọn trưởng rồi phó, có bao nhiêu kết quả mỗi loại?",
-    "answer_key": null,
+    "answer_key": "15 nhóm; 30 cặp phân vai.",
     "worked_solution": "Không phân vai có C(6,2)=15 nhóm; phân hai vai có 6×5=30 cặp có thứ tự.\n\n**Kiểm lỗi**\n\nNếu có cả hai bằng 30, nhóm AB và BA đã bị đếm hai lần ở trường hợp không phân vai. Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 7 tại Luyện tập 1.7. Chọn nhóm không xét thứ tự.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "COMBINATION",
+      "ARRANGEMENT_WITH_ROLES"
+    ],
     "original_outcome_ids": [
       "TOP20-O07"
     ],
@@ -4553,16 +4599,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T13",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Từ 5 phiếu khác nhau (1 đỏ, 4 xanh), chọn đều **hai phiếu không xét thứ tự**. Xác suất ít nhất một phiếu đỏ?",
-    "answer_key": null,
+    "answer_key": "2/5.",
     "worked_solution": "**Lời giải:** P=1−P(cả hai xanh)=1−C(4,2)/C(5,2)=1−6/10=2/5.\n\n**Kiểm lỗi**\n\nNếu dùng 1−4/5 thì em đang xét một phiếu. Mẫu này là **nhóm hai phiếu**, phải đếm C(5,2). Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 8 tại Luyện tập 1.8. Ít nhất một và biến cố đối.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B27-COMPLEMENT_PROBABILITY"
+    ],
     "original_outcome_ids": [
       "TOP20-O08"
     ],
@@ -4584,16 +4632,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T05",
-    "content_version": "TOP20-R02",
-    "stem": "Gieo hai xúc xắc phân biệt, cân đối. Có bao nhiêu cặp sơ cấp đồng khả năng và P(tổng số chấm bằng 12)?",
-    "answer_key": null,
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Gieo độc lập hai xúc xắc sáu mặt phân biệt, cân đối. Có bao nhiêu cặp sơ cấp đồng khả năng và P(tổng số chấm bằng 12)?",
+    "answer_key": "36 cặp; P(tổng=12)=1/36.",
     "worked_solution": "Có 36 cặp có thứ tự; chỉ (6,6) có tổng12 nên P=1/36.\n\n**Kiểm lỗi**\n\nKhông coi 11 tổng số chấm từ 2 đến12 là đồng khả năng; tổng12 chỉ có một cặp. Ôn lại Kiến thức 1.5, rồi làm Bài luyện 6 (Luyện tập 1.6) để lập các cặp sơ cấp đồng khả năng trước khi đếm mỗi giá trị tổng. Nếu vẫn nhầm thứ tự rút, luyện thêm Bài luyện 10 (Luyện tập 1.10).",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B27-MULTISTEP_CONTEXT"
+    ],
     "original_outcome_ids": [
       "TOP20-O10"
     ],
@@ -4615,16 +4665,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T14",
-    "content_version": "TOP20-R02",
-    "stem": "Tung một đồng xu cân đối ba lần, coi chuỗi có thứ tự. Có mấy kết quả đồng khả năng và xác suất đúng hai mặt ngửa?",
-    "answer_key": null,
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Tung một đồng xu cân đối ba lần độc lập, ghi chuỗi kết quả có thứ tự. Có bao nhiêu kết quả đồng khả năng và xác suất đúng hai mặt ngửa?",
+    "answer_key": "8 chuỗi; P(đúng hai ngửa)=3/8.",
     "worked_solution": "**Lời giải:** Có 2³=8 chuỗi; đúng hai ngửa là NNS, NSN, SNN (3 chuỗi), P=3/8.\n\n**Kiểm lỗi**\n\nNếu đếm ba loại “0/1/2/3 ngửa” là 4 kết quả đồng khả năng, em đã gộp các chuỗi khác nhau. Vẽ cây ba tầng. Ôn lại mục Kiến thức 1.5. Chọn đúng mô hình trước khi tính và Bài luyện 9 tại Luyện tập 1.9. Chuỗi có thứ tự trên sơ đồ cây.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B27-TREE_SEQUENCE"
+    ],
     "original_outcome_ids": [
       "TOP20-O09"
     ],
@@ -4646,16 +4698,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T06",
-    "content_version": "TOP20-R12-20261121-T06",
+    "content_version": "TOP20-R12-20261121-T06_AUTHOR_KEY_REVIEW_R01",
     "stem": "Gieo một xúc xắc sáu mặt cân đối. A=ra số chẵn, B=ra số không lớn hơn 2. Viết A∩B và A∪B.",
-    "answer_key": null,
+    "answer_key": "A∩B={2}; A∪B={1,2,4,6}.",
     "worked_solution": "A={2,4,6}, B={1,2}; giao={2}, hợp={1,2,4,6}.\n\n**Kiểm lỗi**\n\nNếu lấy B={4,5,6} thì em đã chép điều kiện “lớn hơn 3” của hình minh họa, không phải điều kiện “không lớn hơn 2” trong đề này. Viết B={1,2} trước; giao chỉ lấy phần chung {2}, còn hợp chứa {1,2,4,6} và mỗi số được ghi đúng một lần. Ôn lại Kiến thức 2.1 và giải lại Bài luyện 11.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B28-UNION",
+      "G11-B28-INTERSECTION"
+    ],
     "original_outcome_ids": [
       "TOP20-O11"
     ],
@@ -4677,16 +4732,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T07",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tung một đồng xu cân đối và gieo xúc xắc cân đối độc lập. Xác suất đồng xu ngửa và xúc xắc chẵn là bao nhiêu?",
-    "answer_key": null,
+    "answer_key": "1/4.",
     "worked_solution": "P=1/2×3/6=1/4. Hai phép thử độc lập nên số cặp thuận lợi=1×3 trong 12 cặp.\n\n**Kiểm lỗi**\n\nNếu tính 1/2+1/2, em đang cộng xác suất mà đề yêu cầu cùng xảy ra. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 12 tại Luyện tập 2.2. Xác suất giao của hai biến cố độc lập.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B30-MULTIPLY_INDEPENDENT"
+    ],
     "original_outcome_ids": [
       "TOP20-O12"
     ],
@@ -4708,16 +4765,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T15",
-    "content_version": "TOP20-R02",
-    "stem": "Gieo một xúc xắc: A=ra 1 và B=ra 6. A,B có xung khắc không? Có độc lập không?",
-    "answer_key": null,
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Gieo một xúc xắc sáu mặt cân đối một lần. A=ra 1 và B=ra 6. A,B có xung khắc không? Có độc lập không?",
+    "answer_key": "Xung khắc; không độc lập.",
     "worked_solution": "**Lời giải:** A∩B=∅ nên xung khắc; P(A)P(B)=1/36>0 nhưng P(A∩B)=0 nên **không độc lập**.\n\n**Kiểm lỗi**\n\nNếu viết “vì không xảy ra cùng nên độc lập”, em đã đảo khái niệm. Xung khắc là giao rỗng, độc lập cần kiểm tích xác suất. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 13 tại Luyện tập 2.3. Phân biệt xung khắc và độc lập.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B30-INDEPENDENT_VS_DISJOINT"
+    ],
     "original_outcome_ids": [
       "TOP20-O13"
     ],
@@ -4739,16 +4798,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T08",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Gieo xúc xắc cân đối. A=lẻ, B=lớn hơn 3. Tính P(A∪B) bằng quy tắc cộng.",
-    "answer_key": null,
+    "answer_key": "5/6.",
     "worked_solution": "A={1,3,5}, B={4,5,6}, giao={5}; P(hợp)=3/6+3/6−1/6=5/6.\n\n**Kiểm lỗi**\n\nNếu ra 1, em đã cộng mà quên trừ kết quả 5 được đếm hai lần. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 14 tại Luyện tập 2.4. Áp dụng quy tắc cộng xác suất.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B29-ADDITION_OVERLAP"
+    ],
     "original_outcome_ids": [
       "TOP20-O14"
     ],
@@ -4770,16 +4831,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T16",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Gieo xúc xắc cân đối. A={1,2}, B={5,6}. Tính P(A∪B) và nêu vì sao cộng trực tiếp.",
-    "answer_key": null,
+    "answer_key": "2/3.",
     "worked_solution": "**Lời giải:** Hai tập rời nhau nên P(A∩B)=0, P(A∪B)=2/6+2/6=4/6=2/3.\n\n**Kiểm lỗi**\n\nNếu nhân 2/6×2/6, em đã tính giao của biến cố độc lập; ở đây A,B xung khắc và đề hỏi hợp. Ôn lại mục Kiến thức 2.3. Quy tắc cộng xác suất và Bài luyện 15 tại Luyện tập 2.5. Quy tắc cộng khi hai biến cố xung khắc.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B29-ADDITION_DISJOINT"
+    ],
     "original_outcome_ids": [
       "TOP20-O15"
     ],
@@ -4801,16 +4864,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T09",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Hai thiết bị hoạt động độc lập, xác suất hỏng lần lượt 1/5 và 1/4. Xác suất có ít nhất một thiết bị hoạt động là bao nhiêu?",
-    "answer_key": null,
+    "answer_key": "19/20.",
     "worked_solution": "P=1−P(cả hai hỏng)=1−(1/5)(1/4)=19/20.\n\n**Kiểm lỗi**\n\nNếu nhân hai xác suất hoạt động 4/5×3/4, em đang tính cả hai hoạt động, không phải ít nhất một. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 16 tại Luyện tập 2.6. Quy tắc nhân cho hai phép thử độc lập.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B30-AT_LEAST_ONE"
+    ],
     "original_outcome_ids": [
       "TOP20-O16"
     ],
@@ -4832,16 +4897,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP20-T17",
-    "content_version": "TOP20-R02",
+    "content_version": "TOP20-R02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. A=đồng xu ngửa, B=xúc xắc chẵn. Tính P(A∪B).",
-    "answer_key": null,
+    "answer_key": "3/4.",
     "worked_solution": "**Lời giải:** P(A)=1/2, P(B)=1/2, P(A∩B)=1/4. Vậy P(A∪B)=1/2+1/2−1/4=3/4.\n\n**Kiểm lỗi**\n\nNếu được 1, em đã cộng mà chưa trừ phần **cả hai cùng xảy ra**; nếu được 1/4 đó là giao, không phải hợp. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 17 tại Luyện tập 2.7. Tính xác suất hợp bằng cộng và trừ giao.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-CHVIII-INTEGRATED"
+    ],
     "original_outcome_ids": [
       "TOP20-O17"
     ],
@@ -4863,16 +4930,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-T01",
-    "content_version": "TOP21-R06",
+    "content_version": "TOP21-R06_AUTHOR_KEY_REVIEW_R01",
     "stem": "Trong 24 vé khác nhau được chọn đều có 9 vé xanh, 6 trong 9 vé xanh có dấu sao. Đã biết vé rút ra là xanh. Hỏi xác suất vé đó có dấu sao?",
-    "answer_key": null,
+    "answer_key": "2/3.",
     "worked_solution": "Nhóm điều kiện gồm 9 vé xanh; có 6 vé trong nhóm đó có sao. Do đó P(sao | xanh)=6/9=2/3, không phải 6/24.\n\n**Kiểm lỗi**\n\nNếu chia cho 24, em đã quên thu hẹp Ω khi biết màu vé. Tự gạch riêng 9 vé xanh, đánh dấu 6 vé sao rồi thử lại. Ôn lại mục Kiến thức 1.1 (đổi nhóm đang xét) và Bài luyện 1 tại Luyện tập 1.1.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O01",
+      "G12-CHVI-B18-O03"
+    ],
     "original_outcome_ids": [
       "TOP21-O01"
     ],
@@ -4894,16 +4964,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-T02",
-    "content_version": "TOP21-R06",
+    "content_version": "TOP21-R06_AUTHOR_KEY_REVIEW_R01",
     "stem": "Gieo xúc xắc sáu mặt cân đối. A là 'chia hết cho 3', B là 'số chẵn'. Tính P(A|B).",
-    "answer_key": null,
+    "answer_key": "1/3.",
     "worked_solution": "B={2,4,6}, A∩B={6}; P(A|B)=(1/6)/(3/6)=1/3. Mẫu số P(B)=1/2>0.\n\n**Kiểm lỗi**\n\nNếu viết 1/2, em đã lấy P(B) thay cho xác suất giao trong B. Nếu chia cho P(A), em đã đổi chiều thành P(B|A). Ôn lại mục Kiến thức 1.2 (công thức xác suất có điều kiện) và Bài luyện 2 tại Luyện tập 1.2.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O02"
+    ],
     "original_outcome_ids": [
       "TOP21-O02"
     ],
@@ -4925,16 +4997,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-T03",
-    "content_version": "TOP21-R06",
+    "content_version": "TOP21-R06_AUTHOR_KEY_REVIEW_R01",
     "stem": "Có 4 thẻ đỏ và 5 thẻ xanh khác nhau; rút liên tiếp hai thẻ không hoàn lại, đều mỗi lượt. Tính P(lượt đầu đỏ và lượt sau xanh).",
-    "answer_key": null,
+    "answer_key": "5/18.",
     "worked_solution": "P(đỏ đầu)=4/9; sau đó còn 8 thẻ, 5 xanh nên P(xanh sau | đỏ đầu)=5/8. Giao = (4/9)(5/8)=5/18.\n\n**Kiểm lỗi**\n\nNếu dùng (4/9)(5/9), em chưa đổi tổng số thẻ ở lượt hai từ 9 xuống 8. Vẽ một nhánh đỏ trước rồi ghi nội dung túi còn lại. Ôn lại mục Kiến thức 1.3 (quy tắc nhân cho lượt phụ thuộc) và Bài luyện 3 tại Luyện tập 1.3.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O06",
+      "G12-CHVI-B18-O07"
+    ],
     "original_outcome_ids": [
       "TOP21-O03"
     ],
@@ -4956,16 +5031,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-T04",
-    "content_version": "TOP21-R06",
+    "content_version": "TOP21-R06_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tung hai đồng xu cân đối, độc lập. A: đồng xu đầu ngửa; B: có đúng một mặt ngửa trong cả hai lượt. A, B có độc lập không?",
-    "answer_key": null,
+    "answer_key": "Có, độc lập.",
     "worked_solution": "Ω={NN,NS,SN,SS}. P(A)=2/4, P(B)=2/4, P(A∩B)=1/4 (chỉ NS). Vì 1/4=(1/2)(1/2), A và B độc lập trong mô hình này.\n\n**Kiểm lỗi**\n\nNếu kết luận phụ thuộc chỉ vì B có nhắc đồng xu đầu, em đã suy theo ngôn ngữ. Hãy đếm giao và tích; cả hai cùng bằng 1/4. Ôn lại mục Kiến thức 1.4 (dấu hiệu độc lập) và Bài luyện 4 tại Luyện tập 1.4.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B18-O04"
+    ],
     "original_outcome_ids": [
       "TOP21-O04"
     ],
@@ -4987,16 +5064,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-T05",
-    "content_version": "TOP21-R06",
+    "content_version": "TOP21-R06_AUTHOR_KEY_REVIEW_R01",
     "stem": "Nguồn X cung cấp 1/4 sản phẩm, tỉ lệ lỗi 1/10; nguồn Y cung cấp 3/4, tỉ lệ lỗi 1/30. Chọn đều một sản phẩm. Xác suất gặp lỗi?",
-    "answer_key": null,
+    "answer_key": "1/20.",
     "worked_solution": "P(lỗi)=(1/4)(1/10)+(3/4)(1/30)=1/40+1/40=1/20.\n\n**Kiểm lỗi**\n\nNếu ra 1/10+1/30, em đã quên nhân tỉ trọng nguồn; làm lại từng đường 'chọn nguồn → lỗi' trước khi cộng. Ôn lại mục Kiến thức 2.1 (công thức xác suất toàn phần) và Bài luyện 5 tại Luyện tập 2.1.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O02"
+    ],
     "original_outcome_ids": [
       "TOP21-O05"
     ],
@@ -5018,16 +5097,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-T06",
-    "content_version": "TOP21-R06",
-    "stem": "Nguồn X chiếm 2/5 sản phẩm, tỉ lệ lỗi 1/10; Y chiếm 3/5, tỉ lệ lỗi 1/5. Biết sản phẩm chọn ra bị lỗi, xác suất nó thuộc Y?",
-    "answer_key": null,
+    "content_version": "TOP21-R06_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Nguồn X chiếm 2/5 sản phẩm, tỉ lệ lỗi 1/10; Y chiếm 3/5, tỉ lệ lỗi 1/5. Chọn ngẫu nhiên đều một sản phẩm. Biết sản phẩm chọn ra bị lỗi, xác suất nó thuộc Y?",
+    "answer_key": "3/4.",
     "worked_solution": "P(Y∩lỗi)=(3/5)(1/5)=3/25; P(X∩lỗi)=(2/5)(1/10)=1/25. P(lỗi)=4/25 nên P(Y|lỗi)=(3/25)/(4/25)=3/4.\n\n**Kiểm lỗi**\n\nNếu trả lời 1/5, em mới tính xác suất lỗi khi đã biết Y, chưa đảo chiều. Cộng tất cả nhánh lỗi thành mẫu số rồi chia đường Y–lỗi. Ôn lại mục Kiến thức 2.2 (Bayes) và Bài luyện 6 tại Luyện tập 2.2.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O04"
+    ],
     "original_outcome_ids": [
       "TOP21-O06"
     ],
@@ -5049,16 +5130,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-T07",
-    "content_version": "TOP21-R06",
-    "stem": "Chọn lớp A với xác suất 3/5, trong A tỉ lệ thẻ đỏ là 3/10; lớp B với xác suất 2/5, trong B tỉ lệ đỏ 1/4. Lập bốn lá đỏ/không đỏ và tính P(đỏ).",
-    "answer_key": null,
+    "content_version": "TOP21-R06_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Chọn lớp A với xác suất 3/5 hoặc lớp B với xác suất 2/5, rồi rút đều một thẻ trong lớp đã chọn. Trong A tỉ lệ thẻ đỏ là 3/10; trong B tỉ lệ đỏ là 1/4. Lập bốn xác suất ở lá đỏ/không đỏ của cây và tính P(đỏ).",
+    "answer_key": "A-đỏ=9/50; A-không đỏ=21/50; B-đỏ=1/10; B-không đỏ=3/10; P(đỏ)=7/25.",
     "worked_solution": "A-đỏ=9/50, A-không đỏ=21/50; B-đỏ=1/10, B-không đỏ=3/10. Tổng bốn lá bằng 1, P(đỏ)=9/50+1/10=7/25.\n\n**Kiểm lỗi**\n\nNếu bốn lá không cộng thành 1, hãy rà mỗi nút: đỏ và không đỏ trong A phải có tổng 1; tương tự B. Đừng cộng trực tiếp 3/10 và 1/4. Ôn lại mục Kiến thức 3.1 (đọc sơ đồ cây) và Bài luyện 7 tại Luyện tập 3.1.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O03"
+    ],
     "original_outcome_ids": [
       "TOP21-O07"
     ],
@@ -5080,16 +5163,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP21-T08",
-    "content_version": "TOP21-R06",
-    "stem": "Một hệ thống giả định có 2% hồ sơ thuộc nhóm H. Hệ thống báo dấu hiệu với 90% hồ sơ H và báo nhầm với 15% hồ sơ không H. Biết hồ sơ bị báo, xác suất nó thuộc H?",
-    "answer_key": null,
+    "content_version": "TOP21-R06_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Một hệ thống giả định có 2% hồ sơ thuộc nhóm H. Hệ thống báo dấu hiệu với 90% hồ sơ H và báo nhầm với 15% hồ sơ không H. Chọn ngẫu nhiên đều một hồ sơ. Biết hồ sơ bị báo, xác suất nó thuộc H?",
+    "answer_key": "6/55≈10,91%.",
     "worked_solution": "P(H∩báo)=0,02·0,90=0,018; P(không H∩báo)=0,98·0,15=0,147. Xác suất cần tìm là 0,018/(0,018+0,147)=18/165=6/55≈10,91%.\n\n**Kiểm lỗi**\n\nNếu ra 90%, em đã nhầm 'báo khi biết H' với 'H khi đã báo'. Hãy lập bảng 10.000 hồ sơ: 200 H có 180 báo; 9.800 không H có 1.470 báo; tỉ lệ 180/(180+1470). Ôn lại mục Kiến thức 3.2 (tỉ lệ nền) và Bài luyện 8 tại Luyện tập 3.2.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHVI-B19-O05"
+    ],
     "original_outcome_ids": [
       "TOP21-O08"
     ],
@@ -5111,16 +5196,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T01",
-    "content_version": "TOP22-R09-20261121-FT01",
+    "content_version": "TOP22-R09-20261121-FT01_AUTHOR_KEY_REVIEW_R01",
     "stem": "Giá trị thật 9,68 mm ghi 9,7 mm: tìm sai số tuyệt đối và phần trăm tương đối.",
-    "answer_key": null,
-    "worked_solution": "\\(\\Delta=0{,}02\\) mm; \\(\\delta_a=(0{,}02/9{,}7)\\cdot100\\%\\approx0{,}206\\%\\).\n\n**Kiểm lỗi**\n\nĐừng lấy độ chính xác làm sai số thật; kiểm đơn vị và việc nhân 100 để ra phần trăm. Đọc lại **Kiến thức 1.1**, rồi tự làm **Bài luyện 2**, **Bài luyện 3**, **Bài luyện 4** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Sai số tuyệt đối 0,02 mm; sai số tương đối ≈0,206%.",
+    "worked_solution": "Sai số tuyệt đối Δ=|9,68−9,7|=0,02 mm. Theo quy ước SGK đang dùng, sai số tương đối của số gần đúng a=9,7 là δₐ=Δ/|a|. Đổi sang phần trăm: (0,02/9,7)·100%≈0,206%.\n\n**Kiểm lỗi**\n\nĐừng lấy độ chính xác làm sai số thật; kiểm đơn vị và việc nhân 100 để ra phần trăm. Đọc lại **Kiến thức 1.1**, rồi tự làm **Bài luyện 2**, **Bài luyện 3**, **Bài luyện 4** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B12-ABS_ERROR",
+      "G10-B12-REL_ERROR"
+    ],
     "original_outcome_ids": [
       "G10-B12-ABS_ERROR",
       "G10-B12-REL_ERROR"
@@ -5143,16 +5231,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T02",
-    "content_version": "TOP22-R09-20261121-FT02",
+    "content_version": "TOP22-R09-20261121-FT02_AUTHOR_KEY_REVIEW_R01",
     "stem": "Mẫu 1,3,3,5,8 có trung bình và mốt nào?",
-    "answer_key": null,
+    "answer_key": "Trung bình 4; mốt 3.",
     "worked_solution": "Trung bình 4, mốt 3. Năm số có tổng bằng 20.\n\n**Kiểm lỗi**\n\nNếu nhầm mốt với trung vị, lập bảng số lần xuất hiện trước khi kết luận. Đọc lại **Kiến thức 1.2**, rồi tự làm **Bài luyện 11**, **Bài luyện 13** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B13-MEAN",
+      "G10-B13-MODE"
+    ],
     "original_outcome_ids": [
       "G10-B13-MEAN",
       "G10-B13-MODE"
@@ -5175,16 +5266,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T03",
-    "content_version": "TOP22-R09-20261121-FT03",
+    "content_version": "TOP22-R09-20261121-FT03_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tìm Me, Q1, Q3 của 2,4,6,8,10,12.",
-    "answer_key": null,
+    "answer_key": "Me=7; Q₁=4; Q₃=10.",
     "worked_solution": "Có 6 số: \\(Me=(6+8)/2=7\\); nửa dưới 2,4,6 có \\(Q_1=4\\), nửa trên 8,10,12 có \\(Q_3=10\\).\n\n**Kiểm lỗi**\n\nĐánh dấu vị trí giữa và chia hai nửa sau khi đã sắp; không đoán từ thứ tự đề liệt kê. Đọc lại **Kiến thức 1.3**, rồi tự làm **Bài luyện 12**, **Bài luyện 15** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B13-MEDIAN",
+      "G10-B13-QUARTILES"
+    ],
     "original_outcome_ids": [
       "G10-B13-MEDIAN",
       "G10-B13-QUARTILES"
@@ -5207,16 +5301,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T04",
-    "content_version": "TOP22-R09-20261121-FT04",
+    "content_version": "TOP22-R09-20261121-FT04_AUTHOR_KEY_REVIEW_R01",
     "stem": "Mẫu 2,3,4,5,6,7,25 có IQR và hàng rào trên bao nhiêu?",
-    "answer_key": null,
-    "worked_solution": "\\(Q_1=3,Q_3=7,IQR=4\\); hàng rào trên \\(7+1{,}5\\cdot4=13\\). Số 25 vượt hàng rào.\n\n**Kiểm lỗi**\n\nĐọc đúng Q1/Q3 trước khi gán nhãn ngoại lệ; đừng loại bỏ điểm dữ liệu chỉ vì trông khác. Đọc lại **Kiến thức 1.4**, rồi tự làm **Bài luyện 21**, **Bài luyện 31** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "IQR=4; hàng rào trên 13.",
+    "worked_solution": "Mẫu đã sắp tăng dần có 7 số, trung vị là 5. Nửa dưới (2,3,4) có Q₁=3, nửa trên (6,7,25) có Q₃=7. IQR=7−3=4. Hàng rào trên là Q₃+1,5·IQR=13; giá trị 25 vượt hàng rào.\n\n**Kiểm lỗi**\n\nĐọc đúng Q1/Q3 trước khi gán nhãn ngoại lệ; đừng loại bỏ điểm dữ liệu chỉ vì trông khác. Đọc lại **Kiến thức 1.4**, rồi tự làm **Bài luyện 21**, **Bài luyện 31** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B14-RANGE_IQR",
+      "G10-B14-OUTLIERS"
+    ],
     "original_outcome_ids": [
       "G10-B14-RANGE_IQR",
       "G10-B14-OUTLIERS"
@@ -5239,16 +5336,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T05",
-    "content_version": "TOP22-R09-20261121-FT05",
+    "content_version": "TOP22-R09-20261121-FT05_AUTHOR_KEY_REVIEW_R01",
     "stem": "So sánh phương sai A=4,5,6 và B=2,5,8.",
-    "answer_key": null,
-    "worked_solution": "Trung bình cùng bằng 5; \\(s_A^2=2/3\\), \\(s_B^2=6\\). A ít phân tán hơn.\n\n**Kiểm lỗi**\n\nLập bảng x−x̄ rồi bình phương và chia đúng n; kiểm phương sai không âm. Đọc lại **Kiến thức 1.5**, rồi tự làm **Bài luyện 22**, **Bài luyện 23**, **Bài luyện 32** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "s²_A=2/3; s²_B=6; A ít phân tán hơn.",
+    "worked_solution": "Hai mẫu cùng trung bình 5. Theo phương sai chia cho n: s²_A=((4−5)²+0²+(6−5)²)/3=2/3; s²_B=((2−5)²+0²+(8−5)²)/3=6. Vì 2/3<6, mẫu A ít phân tán quanh trung bình hơn.\n\n**Kiểm lỗi**\n\nLập bảng x−x̄ rồi bình phương và chia đúng n; kiểm phương sai không âm. Đọc lại **Kiến thức 1.5**, rồi tự làm **Bài luyện 22**, **Bài luyện 23**, **Bài luyện 32** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G10-B14-VARIANCE",
+      "G10-B14-COMPARISON"
+    ],
     "original_outcome_ids": [
       "G10-B14-VARIANCE",
       "G10-B14-COMPARISON"
@@ -5271,16 +5371,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T06",
-    "content_version": "TOP22-R09-20261121-FT06",
+    "content_version": "TOP22-R09-20261121-FT06_AUTHOR_KEY_REVIEW_R01",
     "stem": "Tần số của các nhóm [0,10), [10,20), [20,30) với dữ liệu 3,10,10,20,29?",
-    "answer_key": null,
+    "answer_key": "Tần số lần lượt 1,2,2.",
     "worked_solution": "1,2,2; tổng 5. Hai số 10 thuộc nhóm thứ hai.\n\n**Kiểm lỗi**\n\nKhoanh từng quan sát theo biên trái đóng–phải mở, rồi đối chiếu tổng tần số với n. Đọc lại **Kiến thức 2.1**, rồi tự làm **Bài luyện 38**, **Bài luyện 40**, **Bài luyện 44** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B08-FREQUENCY-TABLE",
+      "G11-B08-CLASS-BOUNDARIES"
+    ],
     "original_outcome_ids": [
       "G11-B08-FREQUENCY-TABLE",
       "G11-B08-CLASS-BOUNDARIES"
@@ -5303,16 +5406,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T07",
-    "content_version": "TOP22-R09-20261121-FT07",
+    "content_version": "TOP22-R09-20261121-FT07_AUTHOR_KEY_REVIEW_R01",
     "stem": "Nhóm [0,10):1, [10,20):2, [20,30):1: ước lượng trung bình, tích lũy.",
-    "answer_key": null,
+    "answer_key": "Trung bình ghép nhóm 15; tần số tích lũy 1,3,4.",
     "worked_solution": "Trung điểm 5,15,25; trung bình (5+30+25)/4=15, tích lũy 1,3,4.\n\n**Kiểm lỗi**\n\nKhông lấy trung bình ba trung điểm nếu nhóm có tần số khác nhau. Đọc lại **Kiến thức 2.2**, rồi tự làm **Bài luyện 47**, **Bài luyện 48**, **Bài luyện 51** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B09-GROUPED-MEAN",
+      "G11-B09-CUMULATIVE"
+    ],
     "original_outcome_ids": [
       "G11-B09-GROUPED-MEAN",
       "G11-B09-CUMULATIVE"
@@ -5335,16 +5441,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T08",
-    "content_version": "TOP22-R09-20261121-FT08",
+    "content_version": "TOP22-R09-20261121-FT08_AUTHOR_KEY_REVIEW_R01",
     "stem": "Nhóm [0,10):5, [10,20):5, [20,30):10: ước lượng Me, Q1, Q3.",
-    "answer_key": null,
-    "worked_solution": "Tích lũy 5,10,20. \\(Me=20,Q_1=10,Q_3=25\\).\n\n**Kiểm lỗi**\n\nNếu chọn nhầm nhóm, tô cột tích lũy đến n/4,n/2,3n/4 trước khi nội suy. Đọc lại **Kiến thức 2.3**, rồi tự làm **Bài luyện 52**, **Bài luyện 53**, **Bài luyện 58** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Me=20; Q₁=10; Q₃=25.",
+    "worked_solution": "Cỡ mẫu n=20, tần số tích lũy là 5,10,20. Vị trí nội suy Q₁, Me, Q₃ lần lượt là n/4=5, n/2=10, 3n/4=15. Q₁ ở ranh giới 10, Me ở ranh giới 20; Q₃ thuộc nhóm [20,30), nội suy Q₃=20+(15−10)·10/10=25. Các giá trị là ước lượng ghép nhóm.\n\n**Kiểm lỗi**\n\nNếu chọn nhầm nhóm, tô cột tích lũy đến n/4,n/2,3n/4 trước khi nội suy. Đọc lại **Kiến thức 2.3**, rồi tự làm **Bài luyện 52**, **Bài luyện 53**, **Bài luyện 58** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B09-GROUPED-MEDIAN",
+      "G11-B09-GROUPED-QUARTILES"
+    ],
     "original_outcome_ids": [
       "G11-B09-GROUPED-MEDIAN",
       "G11-B09-GROUPED-QUARTILES"
@@ -5367,16 +5476,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T09",
-    "content_version": "TOP22-R09-20261121-FT09",
+    "content_version": "TOP22-R09-20261121-FT09_AUTHOR_KEY_REVIEW_R01",
     "stem": "Nhóm [0,10):4,[10,20):10,[20,30):6, cùng độ rộng: ước lượng mốt.",
-    "answer_key": null,
-    "worked_solution": "Nhóm mốt [10,20); \\(Mo=10+(6/(6+4))10=16\\).\n\n**Kiểm lỗi**\n\nKiểm mẫu số dương, tần số các nhóm kề và điều kiện cùng độ rộng. Đọc lại **Kiến thức 2.4**, rồi tự làm **Bài luyện 50**, **Bài luyện 54**, **Bài luyện 59** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Mốt ghép nhóm 16.",
+    "worked_solution": "Nhóm có tần số cao nhất là [10,20), tần số 10. Các nhóm có cùng độ rộng h=10. Chênh lệch với nhóm trước là 10−4=6, với nhóm sau là 10−6=4. Mốt ước lượng Mo=10+6/(6+4)·10=16.\n\n**Kiểm lỗi**\n\nKiểm mẫu số dương, tần số các nhóm kề và điều kiện cùng độ rộng. Đọc lại **Kiến thức 2.4**, rồi tự làm **Bài luyện 50**, **Bài luyện 54**, **Bài luyện 59** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B09-GROUPED-MODE"
+    ],
     "original_outcome_ids": [
       "G11-B09-GROUPED-MODE",
       "G11-B09-MODE-CONDITIONS"
@@ -5399,16 +5510,18 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T10",
-    "content_version": "TOP22-R09-20261121-FT10",
-    "stem": "Nhóm [5,15):3,[15,25):4,[25,35):1: ước lượng độ rộng phủ theo nhóm.",
-    "answer_key": null,
-    "worked_solution": "35−5=30 đơn vị; không kết luận R thực chắc chắn bằng 30.\n\n**Kiểm lỗi**\n\nNếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "TOP22-R09-20261121-FT10_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Cho mẫu ghép nhóm [5,15):3, [15,25):4, [25,35):1. Tính khoảng biến thiên của mẫu ghép nhóm và phân biệt với khoảng biến thiên của mẫu gốc.",
+    "answer_key": "Khoảng biến thiên mẫu ghép nhóm 30 đơn vị (không khẳng định mẫu gốc bằng 30).",
+    "worked_solution": "Nhóm đầu và cuối đều có tần số dương. Khoảng biến thiên mẫu ghép nhóm bằng đầu mút phải nhóm cuối trừ đầu mút trái nhóm đầu: R_g=35−5=30. Không biết chính xác giá trị lớn nhất, nhỏ nhất của mẫu gốc nên không khẳng định khoảng biến thiên mẫu gốc bằng 30.\n\n**Kiểm lỗi**\n\nNếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHIII-B09-O02"
+    ],
     "original_outcome_ids": [
       "G12-CHIII-B09-O01",
       "G12-CHIII-B09-O02"
@@ -5431,16 +5544,20 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T11",
-    "content_version": "TOP22-R09-20261121-FT11",
+    "content_version": "TOP22-R09-20261121-FT11_AUTHOR_KEY_REVIEW_R01",
     "stem": "Nhóm [0,10):4,[10,20):10,[20,30):6: Q1,Q3,IQR ước lượng?",
-    "answer_key": null,
-    "worked_solution": "\\(Q_1=11\\), \\(Q_3=20+10/6=65/3\\), \\(IQR_g=32/3\\approx10{,}67\\).\n\n**Kiểm lỗi**\n\nNếu sai Q1/Q3, tự kiểm nhóm chứa vị trí n/4 và 3n/4, luôn kiểm Q1≤Q3. Đọc lại **Kiến thức 3.2**, rồi tự làm **Bài luyện 83**, **Bài luyện 84**, **Bài luyện 85** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_key": "Q₁=11; Q₃=65/3; IQR=32/3≈10,67.",
+    "worked_solution": "Cỡ mẫu n=20, tần số tích lũy 4,14,20. Vị trí Q₁ là 5, thuộc [10,20): Q₁=10+(5−4)·10/10=11. Vị trí Q₃ là 15, thuộc [20,30): Q₃=20+(15−14)·10/6=65/3. IQR_g=65/3−11=32/3≈10,67.\n\n**Kiểm lỗi**\n\nNếu sai Q1/Q3, tự kiểm nhóm chứa vị trí n/4 và 3n/4, luôn kiểm Q1≤Q3. Đọc lại **Kiến thức 3.2**, rồi tự làm **Bài luyện 83**, **Bài luyện 84**, **Bài luyện 85** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G11-B09-GROUPED-QUARTILES",
+      "G12-CHIII-B09-O05",
+      "G12-CHIII-B09-O06"
+    ],
     "original_outcome_ids": [
       "G12-CHIII-B09-O04",
       "G12-CHIII-B09-O05"
@@ -5463,16 +5580,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T12",
-    "content_version": "TOP22-R09-20261121-FT12",
-    "stem": "Nhóm [0,10):1,[10,20):2,[20,30):1: phương sai/std nhóm?",
-    "answer_key": null,
+    "content_version": "TOP22-R09-20261121-FT12_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Mẫu ghép nhóm [0,10):1, [10,20):2, [20,30):1. Tính phương sai và độ lệch chuẩn mẫu ghép nhóm.",
+    "answer_key": "Phương sai 50; độ lệch chuẩn 5√2≈7,071.",
     "worked_solution": "Các trung điểm 5,15,25; \\(\\bar x_g=15\\); \\(s_g^2=(100+0+100)/4=50\\), \\(s_g=5\\sqrt2\\approx7{,}071\\).\n\n**Kiểm lỗi**\n\nĐừng chia n−1 hoặc bỏ trọng số f; dùng hai công thức kiểm chéo để tránh phương sai âm. Đọc lại **Kiến thức 3.3**, rồi tự làm **Bài luyện 95**, **Bài luyện 98**, **Bài luyện 106** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHIII-B10-O02",
+      "G12-CHIII-B10-O04"
+    ],
     "original_outcome_ids": [
       "G12-CHIII-B10-O02",
       "G12-CHIII-B10-O03"
@@ -5495,16 +5615,19 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   },
   {
     "item_id": "THPT-TOP22-T13",
-    "content_version": "TOP22-R09-20261121-FT13",
-    "stem": "A có tần số 1,4,1 và B 2,2,2 trên ba nhóm trên: so sánh phương sai nhóm.",
-    "answer_key": null,
-    "worked_solution": "Cùng \\(\\bar x_g=15\\). \\(s_A^2=100/3\\), \\(s_B^2=200/3\\), nên A ít phân tán hơn.\n\n**Kiểm lỗi**\n\nKhông suy nhân quả từ các số mô tả; kiểm cỡ mẫu, đơn vị và cách ghép nhóm. Đọc lại **Kiến thức 3.4**, rồi tự làm **Bài luyện 108**, **Bài luyện 110**, **Bài luyện 114** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
-    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
-    "skill_ids": [],
+    "content_version": "TOP22-R09-20261121-FT13_AUTHOR_KEY_REVIEW_R01",
+    "stem": "Hai mẫu ghép nhóm A,B cùng sử dụng ba khoảng [0,10), [10,20), [20,30). Tần số A lần lượt 1,4,1; tần số B lần lượt 2,2,2. So sánh phương sai mẫu ghép nhóm.",
+    "answer_key": "s²_A=100/3; s²_B=200/3; A ít phân tán hơn.",
+    "worked_solution": "Hai mẫu có cỡ mẫu 6 và trung điểm nhóm 5,15,25. Cả hai có trung bình ghép nhóm 15. s²_A=(1·100+4·0+1·100)/6=100/3; s²_B=(2·100+2·0+2·100)/6=200/3. Vì s²_A<s²_B, A ít phân tán hơn quanh trung bình ghép nhóm.\n\n**Kiểm lỗi**\n\nKhông suy nhân quả từ các số mô tả; kiểm cỡ mẫu, đơn vị và cách ghép nhóm. Đọc lại **Kiến thức 3.4**, rồi tự làm **Bài luyện 108**, **Bài luyện 110**, **Bài luyện 114** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
+    "skill_ids": [
+      "G12-CHIII-B10-O02",
+      "G12-CHIII-B10-O05"
+    ],
     "original_outcome_ids": [
       "G12-CHIII-B10-O05",
       "G12-CHIII-B10-O06"
@@ -5527,6 +5650,6 @@
       }
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
   }
 ]
