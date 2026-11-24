@@ -703,12 +703,12 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
- const hotfix=[...G11_W1_TAB4_HOTFIX_FILES];
- assert.equal(classify(hotfix).impact,"SCOPED_LESSON");
- assert.equal(classify(hotfix).changed_lessons,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md");
- assert.equal(classify(hotfix.slice(1)).impact,"FULL");
- assert.equal(classify([...hotfix,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
- assert.equal(classify(hotfix,{manual:true}).impact,"FULL");
+ const g11Tab4Hotfix=[...G11_W1_TAB4_HOTFIX_FILES];
+ assert.equal(classify(g11Tab4Hotfix).impact,"SCOPED_LESSON");
+ assert.equal(classify(g11Tab4Hotfix).changed_lessons,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md");
+ assert.equal(classify(g11Tab4Hotfix.slice(1)).impact,"FULL");
+ assert.equal(classify([...g11Tab4Hotfix,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
+ assert.equal(classify(g11Tab4Hotfix,{manual:true}).impact,"FULL");
  const g11w1=[...G11_W1_RELEASE_FILES];
  assert.equal(classify(g11w1).impact,"SCOPED_LESSON","Exact #1039 W1 release");
  assert.equal(classify(g11w1).changed_lessons,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md");
