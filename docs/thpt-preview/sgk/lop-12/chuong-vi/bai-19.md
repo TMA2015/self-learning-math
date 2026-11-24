@@ -236,4 +236,4 @@
 
     **Học tiếp:** [Core và Luyện tập Bài 19](../luyen-tap/#b19-core) · [Tự kiểm tra cuối chương VI](../tu-kiem-tra-chuong/).
 
-    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK KNTT Toán 12 tập 2, trang in 72–77. Các bảng số liệu, ví dụ và hình minh họa do SLM biên soạn riêng.</p>
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK KNTT Toán 12 tập 2, trang in 72–78. Các bảng số liệu, ví dụ và hình minh họa do SLM biên soạn riêng.</p>
