@@ -16433,6 +16433,158 @@
         "56 records outside delta unchanged. Source/exposure/interaction/ID/counts retained. No fresh SGK PDF/SBT, full Academic/PED/D6/browser QA or version cutover decision; no new PASS."
       ],
       "next": "G10 ChVIII and CĐ08 actual scope; preserve the four G11 B15 items upgraded at CP54; only inspect for cross-scope impact."
+    },
+    "formative_scoped_audit_cp55": {
+      "checkpoint": 55,
+      "baseline": "0a7a9cf49579ec4ff0e80a3cda792e02ee11438a",
+      "scope": "G10 ChVIII B23–25, CD08 limits and continuity, G11 ChV B15–17 remaining items; four CP54 records preserved; CD19 impact only",
+      "source_evidence": {
+        "B23": "a5512d5a206d89808863257d5094e242e28d91c9",
+        "B24": "dbf48cdd16811a2581be679bdc86fc6ca15fe311",
+        "B25": "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d",
+        "g10_formative": "2ae62fada28913ec336b3507684408a1e05a3232",
+        "g11_formative": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "cd08_knowledge": "48e70752d3b94f71076642478531ab5ba7d422dc",
+        "cd08_practice": "bef2e32b6bafb396659b5b899108b6d5f344731a",
+        "cd19_knowledge": "9c482d5e4017336e397966f810047590bdfc4c1f"
+      },
+      "files": [
+        {
+          "path": "items/g10-chviii.json",
+          "before": "6eff0184aec3ccdf3f7a824ed3170aebd69bb51d",
+          "after": "273b54df289f80074af13fc394cd78bdb8cf91ae",
+          "changed": 25,
+          "unchanged": 12
+        },
+        {
+          "path": "items/g11-chv.json",
+          "before": "0b7ecc531526561ab7e325128e66ce22a1800216",
+          "after": "9f7f2a7343048004cac155a1d31c7a9df5ec0a87",
+          "changed": 26,
+          "unchanged": 6
+        },
+        {
+          "path": "items/cd08.json",
+          "before": "535dad3785f87a7721cfd41af04ac29dcace6e60",
+          "after": "29a8adeb6ed89ba110cb68885c16d27865b1a586",
+          "changed": 18
+        }
+      ],
+      "reviewed": {
+        "formative_changed": 69,
+        "topic_outcomes": 18,
+        "topic_practice_placements": 58,
+        "topic_replay_placements": 18,
+        "written_cd08_read_only": 10,
+        "sgk_source_math_parity_before_edit": 54,
+        "sgk_source_math_records_checked": 55,
+        "remediation_ids_resolve": 69,
+        "cd08_skill_mappings_verified": 18
+      },
+      "matrix": {
+        "TOP08-O01": [
+          "THPT-G11-CHV-B15-P02",
+          "THPT-G11-CHV-B15-C01",
+          "THPT-TOP08-P01"
+        ],
+        "TOP08-O02": [
+          "THPT-G11-CHV-B15-P05",
+          "THPT-G11-CHV-B15-C02",
+          "THPT-TOP08-P02"
+        ],
+        "TOP08-O03": [
+          "THPT-TOP08-P03"
+        ],
+        "TOP08-O04": [
+          "THPT-G11-CHV-B15-W01",
+          "THPT-G11-CHV-B15-P04",
+          "THPT-G11-CHV-B15-P03",
+          "THPT-G11-CHV-B15-P01",
+          "THPT-TOP08-P04",
+          "THPT-TOP08-W01"
+        ],
+        "TOP08-O05": [
+          "THPT-G11-CHV-B15-W02-ANCHOR",
+          "THPT-G11-CHV-B15-P07",
+          "THPT-G11-CHV-B15-P06",
+          "THPT-G11-CHV-B15-C03",
+          "THPT-TOP08-P05",
+          "THPT-TOP08-W02"
+        ],
+        "TOP08-O06": [
+          "THPT-G11-CHV-B16-W01",
+          "THPT-G11-CHV-B16-C01",
+          "THPT-TOP08-P06"
+        ],
+        "TOP08-O07": [
+          "THPT-G11-CHV-B16-P03",
+          "THPT-G11-CHV-B16-C02",
+          "THPT-TOP08-P07",
+          "THPT-TOP08-W03"
+        ],
+        "TOP08-O08": [
+          "THPT-G11-CHV-B16-P06",
+          "THPT-G11-CHV-B16-C03",
+          "THPT-TOP08-P08"
+        ],
+        "TOP08-O09": [
+          "THPT-G11-CHV-B16-P07",
+          "THPT-G11-CHV-B16-P05",
+          "THPT-TOP08-P09"
+        ],
+        "TOP08-O10": [
+          "THPT-G11-CHV-B16-P02",
+          "THPT-TOP08-P10"
+        ],
+        "TOP08-O11": [
+          "THPT-G11-CHV-B16-P01",
+          "THPT-TOP08-P11"
+        ],
+        "TOP08-O12": [
+          "THPT-G11-CHV-B16-W02-ANCHOR",
+          "THPT-G11-CHV-B16-P04",
+          "THPT-TOP08-P12"
+        ],
+        "TOP08-O13": [
+          "THPT-G11-CHV-B17-P06",
+          "THPT-G11-CHV-B17-P02",
+          "THPT-G11-CHV-B17-C01",
+          "THPT-TOP08-P13"
+        ],
+        "TOP08-O14": [
+          "THPT-G11-CHV-B17-P04",
+          "THPT-G11-CHV-B17-C02",
+          "THPT-TOP08-P14"
+        ],
+        "TOP08-O15": [
+          "THPT-G11-CHV-B17-W02-ANCHOR",
+          "THPT-G11-CHV-B17-P05",
+          "THPT-G11-CHV-B17-C03",
+          "THPT-TOP08-P15"
+        ],
+        "TOP08-O16": [
+          "THPT-G11-CHV-B17-P01",
+          "THPT-TOP08-P16"
+        ],
+        "TOP08-O17": [
+          "THPT-G11-CHV-B17-W01",
+          "THPT-G11-CHV-B17-P07",
+          "THPT-G11-CHV-B17-P03",
+          "THPT-TOP08-P17"
+        ],
+        "TOP08-O18": [
+          "THPT-TOP08-P18",
+          "THPT-TOP08-W04"
+        ]
+      },
+      "findings": [
+        "G10 25 targeted remediation. B23-P02 three-step product remains TOP19-O02; B24-P03 constrained permutation T not first, 18; B25-P03 odd-power signed coefficients subtract −108, result 216, retains TOP19-O10. 12 first tries preserved.",
+        "CĐ08 P01 strict error threshold n≥41; P09 unequal polynomial degrees at −∞; P12 different results at ±∞; P14 removable versus jump; P17 separate existence and uniqueness proofs. 18 specific hints/D6 and existing skill codes. G11 B15–17 remaining 26 targeted hints/D6; B16-P03 independent f(2) vs limit; P07 saturation and 90% threshold 45 hours; B17-P07 explicit three-root counterexample to uniqueness. Four CP54 records and two first tries byte-equivalent at record level.",
+        "Historical SGK source math parity: 25/25 G10, 29/30 G11, known CP54 B15-P06 earlier delta accounts for sole difference. All 58 CĐ08 markers match 18 outcomes, 48 formative placements +10 Written, 18 replay, all resolve; all remediation IDs resolve. 22 topic shards scanned: CD07 four preserved B15 items; CD19 25 G10 items; affected outcomes inspected, not full audit.",
+        "Ten Written CĐ08 calculations/rubrics reviewed; B16-W02-ANCHOR rubric requires explicit domain x+9≥0 not written in worked solution; four TOP08 Written missing library projection pointer. G10 ChVIII Written not reviewed in CP55.",
+        "Preserve 2312 IDs/3921 placements, source, interaction, exposure, prior snapshots. No fresh SGK PDF/SBT, full Academic/PED/D6/browser QA or version cutover decision. No new PASS."
+      ],
+      "next": "G10 ChIX and CD09 actual scope; preserve prior audited records."
     }
   }
 }
