@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 410" width="820" height="410" role="img" aria-labelledby="title desc">
+<title id="title">Mặt phẳng P chứa đường thẳng AB và điểm C ngoài mặt phẳng</title>
+<desc id="desc">Mặt phẳng P biểu diễn bằng hình bình hành. A và B là hai điểm phân biệt nằm trong mặt phẳng, toàn bộ đường thẳng AB nằm trong mặt phẳng. C được vẽ ở ngoài mặt phẳng, không thuộc P.</desc>
+<rect width="820" height="410" rx="18" fill="#fff"/>
+<text x="410" y="37" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172b4d">Hai điểm trên mặt phẳng xác định đường thẳng nằm trong mặt phẳng</text>
+<polygon points="90,310 600,310 725,150 215,150" fill="#e7f5f5" stroke="#3d7580" stroke-width="2.5"/>
+<text x="646" y="275" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#236c75">(P)</text>
+<line x1="193" y1="238" x2="565" y2="238" stroke="#205f9a" stroke-width="3.8"/>
+<polygon points="193,238 206,230 206,246" fill="#205f9a"/>
+<polygon points="565,238 552,230 552,246" fill="#205f9a"/>
+<circle cx="287" cy="238" r="6.5" fill="#0f3c6d"/><text x="281" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#173959">A</text>
+<circle cx="465" cy="238" r="6.5" fill="#0f3c6d"/><text x="466" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#173959">B</text>
+<circle cx="552" cy="88" r="7" fill="#ad433a"/><text x="574" y="91" font-family="Arial,sans-serif" font-size="21" fill="#a0302b">C ∉ (P)</text>
+<text x="372" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#205f9a">AB ⊂ (P)</text>
+<text x="410" y="364" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#45566c">Hình bình hành chỉ là hình biểu diễn một phần của mặt phẳng vô hạn.</text>
+</svg>
