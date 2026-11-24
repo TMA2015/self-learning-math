@@ -1,215 +1,369 @@
-# Toán 12 · Bài 11. Nguyên hàm
+# Bài 11. Nguyên hàm
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · SGK KẾT NỐI TRI THỨC · TẬP HAI · TRANG 4–11</p><p class="thpt-r4-lead">Hiểu bản chất trước công thức, xem ví dụ có suy luận, đọc hình PNG gốc đã review và tự thử trước Core.</p><nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../bai-12/">Bài 12 · Học tiếp</a></nav></div>
+<div class="thpt-r4-screen" data-thpt-r4>
+<p class="thpt-r4-eyebrow">TOÁN 12 · CHƯƠNG IV · KIẾN THỨC SGK KNTT · TẬP HAI</p>
+<p class="thpt-r4-lead">Tìm lại hàm số khi biết đạo hàm; hiểu họ nguyên hàm, sử dụng các tính chất và bảng nguyên hàm để giải bài toán thực tế.</p>
+<nav class="thpt-r4-lesson-tabs"><a href="../">Chương IV</a><a href="../luyen-tap/#b11-core">Core/Luyện tập</a><a href="../bai-12/">Bài tiếp theo</a><a href="../tu-kiem-tra-chuong/">Tự kiểm tra cuối chương</a></nav>
+</div>
 
-## 1. Vì sao cần học và kiến thức tiền đề
+=== "Khám phá kiến thức"
 
-Từ vị trí lấy đạo hàm để ra vận tốc; muốn khôi phục vị trí từ vận tốc phải đi chiều ngược lại. Nguyên hàm không phải phép chia đạo hàm, và thường có một họ hàm khác nhau bởi hằng số.
+    ### 1.1. Nguyên hàm của một hàm số
 
-**Tiền đề cần tự kiểm:** đạo hàm đa thức, sin/cos, hàm mũ, logarit và ý nghĩa vận tốc; xem lại đạo hàm nếu nhầm chiều biến đổi.
+    Một xe đang chuyển động thẳng theo chiều dương có vận tốc \(v(t)=2t\) m/s kể từ thời điểm \(t=0\). Ta biết vận tốc ở mọi thời điểm nhưng chưa biết tọa độ của xe. Ở chương I, từ hàm tọa độ \(s(t)\) em đã học cách tính vận tốc \(s'(t)\). Bây giờ ta cần đi theo chiều ngược lại: tìm hàm \(s\) có đạo hàm bằng \(2t\).
 
-## 2. Hiểu bản chất, công thức và điều kiện
+    <!-- OUTCOME_ID: G12-CHIV-B11-O01 -->
+    Hãy nhớ \((t^2)'=2t\). Vì vậy \(s(t)=t^2\) là một đáp án. Nhưng \(s(t)=t^2+3\) cũng có đạo hàm \(2t\), bởi đạo hàm của 3 bằng 0. Trong toán học, một hàm \(F\) có đạo hàm bằng \(f\) tại mọi điểm thuộc khoảng đang xét được gọi là một nguyên hàm của \(f\) trên khoảng ấy.
 
-<!-- OUTCOME_ID: G12-CHIV-B11-O01 -->
+    Muốn kiểm một hàm có phải nguyên hàm hay không, chỉ cần lấy đạo hàm. Ví dụ \(F(x)=x^3/3-2x\) có đạo hàm \(x^2-2\), nên là một nguyên hàm của \(f(x)=x^2-2\) trên \(\mathbb R\). Còn \(G(x)=x^3/3+2x\) có đạo hàm \(x^2+2\), không đúng. Muốn chứng minh \(F\) là nguyên hàm của \(f\), phải kiểm tra \(F'(x)=f(x)\) tại mọi điểm của khoảng đang xét. Hai biểu thức trùng nhau tại một điểm riêng lẻ chưa đủ.
 
-### 1. Nguyên hàm là phép đảo của đạo hàm
+    <!-- OUTCOME_ID: G12-CHIV-B11-O02 -->
+    Thực ra mọi hàm \(F(x)=x^2+C\), với \(C\) là hằng số thực, đều có đạo hàm bằng \(2x\). Quan sát đồ thị ba trường hợp:
 
-- **Vì sao cần biết:** Từ vận tốc đã biết muốn khôi phục vị trí, ta cần tìm một hàm có đạo hàm bằng tốc độ biến đổi đã cho.
+    <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261124.svg" alt="Ba đồ thị y=x bình phương cộng C với C=-1,0,1; các tiếp tuyến tại x=1 có cùng hệ số góc 2"><figcaption>Thay đổi \(C\) tịnh tiến đồ thị theo phương thẳng đứng. Tại cùng hoành độ \(x=1\), ba tiếp tuyến đều có hệ số góc 2. Đạo hàm không nhận biết sự khác biệt về tung độ ban đầu.</figcaption></figure>
 
-- **Kiến thức tiền đề:** Đạo hàm đa thức, quy tắc đạo hàm tổng và tích với hằng số.
+    Vì sao không còn nguyên hàm nào ngoài họ \(x^2+C\)? Nếu \(G'(x)=2x\) trên một khoảng \(K\), xét \(H(x)=G(x)-x^2\). Khi đó \(H'(x)=0\) tại mọi điểm trong khoảng. Theo tính chất đã học về đạo hàm, hàm có đạo hàm bằng 0 trên một khoảng là hàm hằng trên khoảng ấy. Do đó \(G(x)-x^2=C\), tức \(G(x)=x^2+C\).
 
-- **Bản chất trước công thức:** Nếu F'(x)=f(x) trên khoảng K thì F là một nguyên hàm của f trên K. Phân biệt kiểm tra đạo hàm của F với việc chỉ đoán công thức.
+    Tổng quát, nếu đã tìm được một nguyên hàm \(F\) của \(f\), toàn bộ họ nguyên hàm trên cùng khoảng là \(F+C\). Ta viết
+    \[
+    \int f(x)\,dx=F(x)+C.
+    \]
+    Dấu \(\int\) ở đây biểu thị việc tìm nguyên hàm, không phải một số đo diện tích. Kết quả là một họ hàm số. \(dx\) cho biết biến đang xét là \(x\); vi phân của \(F\) được viết \(dF(x)=F'(x)\,dx=f(x)\,dx\).
 
-- **Định nghĩa và công thức:** \(F'(x)=f(x)\quad (x\in K).\)
+    Trở lại chiếc xe: nếu biết \(s(0)=3\) m, từ \(s(t)=t^2+C\) suy ra \(C=3\). Khi đó tọa độ duy nhất là \(s(t)=t^2+3\). Sau 4 giây, xe ở tọa độ 19 m, còn quãng đường đi được từ lúc \(t=0\) là \(19-3=16\) m. Vận tốc không âm trong khoảng này nên quãng đường bằng độ dời. Không nhầm tọa độ với quãng đường.
 
-- **Điều kiện và giới hạn:** Luôn nêu khoảng K; kiểm tra đạo hàm từng hạng tử. Hai hàm trùng đạo hàm trên cùng một khoảng chỉ khác một hằng số.
+    <!-- FIRST_TRY_ID: B11-T01 -->
+    **Vận dụng.** Cho \(f(x)=6x^2-4\). Trong hai hàm \(F(x)=2x^3-4x+7\), \(G(x)=2x^3+4x\), hàm nào là nguyên hàm của \(f\) trên \(\mathbb R\)? Tìm họ nguyên hàm và chọn nguyên hàm \(H\) thỏa \(H(1)=5\).
 
-- **Lý do chọn phương pháp:** Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x.
+    ??? question "Đối chiếu"
 
-#### Ví dụ có suy luận
+        \(F'=6x^2-4=f\); \(G'=6x^2+4\ne f\). Họ nguyên hàm là \(2x^3-4x+C\). Từ \(H(1)=2-4+C=5\), suy ra \(C=7\), nên \(H(x)=2x^3-4x+7\).
 
-**Đề:** Cho F(x)=x^4-3x^2+2. Hãy tìm f(x) sao cho F là nguyên hàm của f.
+    ??? tip "Kiểm lỗi"
 
-**Lời giải có suy luận:** Vì F'(x)=4x^3-6x, nên f(x)=4x^3-6x trên R. Cách kiểm: lấy đạo hàm F, không phải tích phân F. Lý do chọn cách giải: Đạo hàm đáp án ứng viên để kiểm đúng f; không kiểm bằng cách thay một giá trị x. Kiểm điều kiện áp dụng: Luôn nêu khoảng K; kiểm tra đạo hàm từng hạng tử. Hai hàm trùng đạo hàm trên cùng một khoảng chỉ khác một hằng số.
+        Nếu chỉ viết \(2x^3-4x\), em mới tìm được một nguyên hàm, chưa viết cả họ. Sau khi xác định \(C\), kiểm hai điều kiện: \(H'=f\) và \(H(1)=5\).
 
-**Bẫy cần tự phát hiện:** Đạo hàm nhầm x^3 thành 3x hoặc kiểm thử tại một điểm rồi kết luận mọi x.
+    Một nguyên hàm phải được xét trên miền mà cả hàm và đạo hàm phù hợp. Trên đoạn kín, đạo hàm ở hai đầu được hiểu theo phía nằm trong đoạn. Nếu miền bị tách thành nhiều khoảng, kết luận hai nguyên hàm chỉ khác một hằng số áp dụng riêng trên từng khoảng; không bắt buộc dùng cùng một hằng số cho các khoảng tách rời. Các hàm liên tục trên một khoảng luôn có nguyên hàm trên khoảng ấy, dù đôi khi không viết được bằng các công thức sơ cấp quen thuộc.
 
-<!-- OUTCOME_ID: G12-CHIV-B11-O02 -->
+    ### 1.2. Tính chất cơ bản của nguyên hàm
 
-### 2. Họ nguyên hàm và điều kiện đầu
+    Khi lấy đạo hàm, ta được phép đưa hằng số ra ngoài và lấy đạo hàm từng hạng tử của tổng. Tìm nguyên hàm là đi theo chiều ngược lại nên các tính chất này vẫn giúp ta chia bài toán thành những phần đơn giản.
 
-- **Vì sao cần biết:** Một vận tốc có thể tương ứng nhiều vị trí chỉ khác vị trí xuất phát; điều kiện đầu chọn đúng một hàm.
+    <!-- OUTCOME_ID: G12-CHIV-B11-O03 -->
+    Nếu \(F'=f\), với \(k\ne0\) là hằng số, \((kF)'=kf\). Do đó \(\int kf(x)\,dx=k\int f(x)\,dx\). Vì \(k\ne0\), khi \(C\) chạy qua mọi số thực thì \(kC\) cũng chạy qua mọi số thực. Nếu \(k=0\), xử lí riêng: nguyên hàm của hàm bằng 0 là họ hàm hằng \(C\).
 
-- **Kiến thức tiền đề:** Đạo hàm hằng số bằng 0; nghiệm phương trình tuyến tính đơn giản.
+    Tương tự, nếu \(F'=f,\ G'=g\) trên cùng khoảng, thì \((F+G)'=f+g\) và \((F-G)'=f-g\). Ta có thể cộng hoặc trừ các nguyên hàm tương ứng rồi gộp các hằng số thành một \(C\) tùy ý.
 
-- **Bản chất trước công thức:** Nếu F là nguyên hàm của f trên một khoảng, mọi nguyên hàm có dạng F+C. Một dữ kiện F(x0)=y0 xác định C.
+    Ví dụ, muốn tìm \(\int (3x^2-4x+2)\,dx\), hãy nhớ \((x^3)'=3x^2,\ (x^2)'=2x,\ (x)'=1\). Do đó
+    \[
+    \int(3x^2-4x+2)\,dx=x^3-2x^2+2x+C.
+    \]
+    Đạo hàm kết quả trả lại đúng cả ba hạng tử ban đầu. Đó là cách kiểm tin cậy hơn việc chỉ nhìn hình thức đáp án.
 
-- **Định nghĩa và công thức:** \(\int f(x)\,dx=F(x)+C.\)
+    Không có quy tắc tổng quát cho phép lấy nguyên hàm từng thừa số rồi nhân lại. Chẳng hạn \(\int x\cdot x\,dx=x^3/3+C\), không phải \((x^2/2)^2+C\). Đối với tích đa thức hoặc bình phương, hãy khai triển trước nếu nhờ đó đưa được về tổng các lũy thừa đơn giản.
 
-- **Điều kiện và giới hạn:** Mệnh đề chỉ được khẳng định trên từng khoảng liên thông; mỗi nhánh tách biệt có thể có hằng số riêng.
+    <!-- OUTCOME_ID: G12-CHIV-B11-O07 -->
+    Trong thực tế, nếu biết tốc độ biến đổi của một đại lượng và giá trị ban đầu, ta có thể khôi phục đại lượng đó. Chẳng hạn một bể đang có 40 lít nước; nước chảy vào với tốc độ \(q'(t)=6+2t\) lít/phút, không có dòng ra. Sau \(t\) phút, lượng nước \(q(t)\) thỏa
+    \[
+    q(t)=6t+t^2+C,\quad q(0)=40.
+    \]
+    Vậy \(q(t)=40+6t+t^2\). Sau 5 phút có 95 lít, nếu quy luật dòng vào còn đúng và bể đủ sức chứa. Đạo hàm cho \(6+2t\) lít/phút, khớp dữ kiện.
 
-- **Lý do chọn phương pháp:** Tích phân được F+C; thay x0 vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu.
+    **Vận dụng.** Một cơ sở có doanh thu biên \(R'(x)=0{,}08x+12\) nghìn đồng/sản phẩm trong mô hình liên tục, với \(R(0)=0\). Tìm doanh thu khi bán 100 sản phẩm.
 
-#### Ví dụ có suy luận
+    ??? question "Đối chiếu"
 
-**Đề:** Cho f(x)=2x và F(2)=7. Tìm nguyên hàm F.
+        \(R(x)=0{,}04x^2+12x+C\). Từ \(R(0)=0\), \(C=0\). Vậy \(R(100)=0{,}04\cdot10000+1200=1600\) nghìn đồng, tức 1,6 triệu đồng.
 
-**Lời giải có suy luận:** F(x)=x^2+C. Từ 4+C=7 suy ra C=3; F(x)=x^2+3 và F'=2x. Lý do chọn cách giải: Tích phân được F+C; thay x0 vào F+C; giải C; kiểm lại đạo hàm và điều kiện đầu. Kiểm điều kiện áp dụng: Mệnh đề chỉ được khẳng định trên từng khoảng liên thông; mỗi nhánh tách biệt có thể có hằng số riêng.
+    ??? tip "Kiểm lỗi"
 
-**Bẫy cần tự phát hiện:** Quên +C hoặc xem mọi nguyên hàm đều bằng đúng F không có độ dịch.
+        Không lấy \(100R'(100)\) làm doanh thu: tốc độ biến đổi không cố định. Hãy tìm hàm có đạo hàm bằng \(R'\), chọn hằng số từ điều kiện ban đầu, rồi mới thay số lượng.
 
-<!-- OUTCOME_ID: G12-CHIV-B11-O03 -->
+    ### 1.3. Nguyên hàm của một số hàm số thường gặp
 
-### 3. Quy tắc lũy thừa và tính tuyến tính
+    #### a) Hàm số lũy thừa
 
-- **Vì sao cần biết:** Để tính tích phân những tốc độ đa thức, ta cần quy tắc lấy ngược đạo hàm và phân phối theo từng hạng tử.
+    Ta đã biết với \(x>0\), \((x^\alpha)'=\alpha x^{\alpha-1}\) cho mọi số mũ thực \(\alpha\). Muốn tìm hàm có đạo hàm bằng \(x^\alpha\), thử tăng số mũ lên một đơn vị. Đạo hàm \(x^{\alpha+1}\) sẽ có hệ số \(\alpha+1\); để hệ số trở về 1, chia cho \(\alpha+1\). Vì thế, với \(\alpha\ne-1\),
+    \[
+    \int x^\alpha\,dx=\frac{x^{\alpha+1}}{\alpha+1}+C.
+    \]
+    Công thức đúng trên \(x>0\); đối với số mũ nguyên, dùng trên các khoảng mà biểu thức ban đầu và nguyên hàm xác định, theo điều kiện cụ thể. Riêng hàm hằng \(1\) có nguyên hàm \(x+C\) trên \(\mathbb R\).
 
-- **Kiến thức tiền đề:** Đạo hàm x^(n+1)=(n+1)x^n, phép biến đổi tổng.
+    Ví dụ \(\sqrt{x}=x^{1/2}\) khi \(x>0\), nên nguyên hàm là \(\frac23x^{3/2}+C\). Với \(1/x^3=x^{-3}\), tăng số mũ lên \(-2\), chia cho \(-2\), được \(-1/(2x^2)+C\) trên từng khoảng không chứa 0. Đừng nhầm quy tắc nguyên hàm với đạo hàm vốn giảm số mũ.
 
-- **Bản chất trước công thức:** Đối với n≠−1, nguyên hàm x^n là x^(n+1)/(n+1), đồng thời có thể tách tổng và hệ số ra ngoài.
+    <!-- OUTCOME_ID: G12-CHIV-B11-O04 -->
+    Trường hợp \(\alpha=-1\) là ngoại lệ: công thức trên dẫn đến phép chia cho 0. Thay vào đó, hãy nhớ \((\ln x)'=1/x\) khi \(x>0\). Khi \(x<0\), \(\ln(-x)\) xác định và đạo hàm bằng \((-1)/(-x)=1/x\). Gộp hai biểu thức bằng giá trị tuyệt đối:
+    \[
+    \int\frac1x\,dx=\ln|x|+C.
+    \]
+    Trên \((-\infty;0)\) và \((0;+\infty)\), các hằng số có thể độc lập. Nếu đề chỉ cho một khoảng dương, dùng \(\ln x+C\) là đủ.
 
-- **Định nghĩa và công thức:** \(\int x^n\,dx=\frac{x^{n+1}}{n+1}+C\ (n\ne-1);\quad \int(af+bg)dx=a\int fdx+b\int gdx.\)
+    <!-- FIRST_TRY_ID: B11-T02 -->
+    **Vận dụng.** Tìm \(\int(2x^{-3}+3/x-4\sqrt{x})\,dx\) trên \((0;+\infty)\).
 
-- **Điều kiện và giới hạn:** Điều kiện n≠-1; với số mũ không nguyên cần xét miền xác định thực và khoảng làm việc.
+    ??? question "Đối chiếu"
 
-- **Lý do chọn phương pháp:** Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm.
+        Tách từng hạng tử. \(2\int x^{-3}dx=-x^{-2}+C_1\); \(3\int dx/x=3\ln x+C_2\); \(-4\int x^{1/2}dx=-\frac83x^{3/2}+C_3\). Gộp lại:
+        \[
+        -\frac1{x^2}+3\ln x-\frac83x^{3/2}+C.
+        \]
+        Đạo hàm lần lượt là \(2/x^3,\ 3/x,\ -4\sqrt{x}\), khớp đề.
 
-#### Ví dụ có suy luận
+    ??? tip "Kiểm lỗi"
 
-**Đề:** Tính ∫(3x^2−4x+2)dx.
+        Không áp dụng công thức lũy thừa cho \(x^{-1}\). Sau khi tăng số mũ, phải chia cho số mũ mới; chú ý dấu âm khi số mũ mới âm.
 
-**Lời giải có suy luận:** Nguyên hàm là x^3−2x^2+2x+C; đạo hàm đúng 3x^2−4x+2. Lý do chọn cách giải: Tách đa thức thành các hạng tử, nâng số mũ một đơn vị, chia số mũ mới, rồi lấy đạo hàm kiểm. Kiểm điều kiện áp dụng: Điều kiện n≠-1; với số mũ không nguyên cần xét miền xác định thực và khoảng làm việc.
+    #### b) Hàm số lượng giác
 
-**Bẫy cần tự phát hiện:** Áp quy tắc lũy thừa n=-1 gây chia 0; quên chia cho số mũ mới.
+    <!-- OUTCOME_ID: G12-CHIV-B11-O06 -->
+    Hãy đọc ngược bảng đạo hàm lượng giác. Vì \((\sin x)'=\cos x\), nguyên hàm của \(\cos x\) là \(\sin x+C\). Vì \((\cos x)'=-\sin x\), muốn thu được \(\sin x\) phải đổi dấu: \(-\cos x+C\).
 
-<!-- OUTCOME_ID: G12-CHIV-B11-O04 -->
+    Hai công thức khác cũng đọc ngược từ \((\tan x)'=1/\cos^2x\), \((\cot x)'=-1/\sin^2x\). Vì vậy nguyên hàm tương ứng là \(\tan x+C\), \(-\cot x+C\). Chúng chỉ dùng trên những khoảng không chứa điểm làm mẫu số bằng 0. Các góc trong công thức đạo hàm và nguyên hàm lượng giác tính bằng radian.
 
-### 4. Trường hợp 1/x và logarit giá trị tuyệt đối
+    Nhiều biểu thức trông chưa giống bảng nguyên hàm nhưng có thể biến đổi. Chẳng hạn \(\tan^2x=1/\cos^2x-1\) khi \(\cos x\ne0\), nên nguyên hàm là \(\tan x-x+C\) trên từng khoảng xác định. Với bình phương sin hoặc cos, công thức hạ bậc giúp đưa về tổng của hàm hằng và hàm cosin. Không nhân hai nguyên hàm với nhau để tính nguyên hàm của tích.
 
-- **Vì sao cần biết:** Có những tốc độ tỉ lệ nghịch với biến nên quy tắc lũy thừa không dùng được tại số mũ -1.
+    **Vận dụng.** Tính \(\int(3\sin x-2/\cos^2x+\tan^2x)\,dx\) trên \((-\pi/2;\pi/2)\).
 
-- **Kiến thức tiền đề:** Đạo hàm ln|x|=1/x khi x≠0.
+    ??? question "Đối chiếu"
 
-- **Bản chất trước công thức:** Nguyên hàm 1/x là ln|x|+C trên từng khoảng (−∞,0) hoặc (0,+∞).
+        Thay \(\tan^2x=1/\cos^2x-1\), biểu thức dưới dấu nguyên hàm trở thành \(3\sin x-1/\cos^2x-1\). Kết quả \(-3\cos x-\tan x-x+C\). Lấy đạo hàm được \(3\sin x-1/\cos^2x-1\), đúng biểu thức sau biến đổi.
 
-- **Định nghĩa và công thức:** \(\int\frac{1}{x}\,dx=\ln|x|+C\quad(x\ne0).\)
+    ??? tip "Kiểm lỗi"
 
-- **Điều kiện và giới hạn:** Không được lấy một hằng số C chung bắt buộc trên hai khoảng tách rời bởi x=0; trên x>0 có thể dùng ln x.
+        Đạo hàm của \(\cos x\) có dấu âm; nguyên hàm của \(\sin x\) phải là \(-\cos x+C\). Khoảng đã cho không chứa nghiệm của \(\cos x=0\).
 
-- **Lý do chọn phương pháp:** Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm.
+    #### c) Hàm số mũ
 
-#### Ví dụ có suy luận
+    <!-- OUTCOME_ID: G12-CHIV-B11-O05 -->
+    Hàm \(e^x\) đặc biệt vì đạo hàm bằng chính nó, nên nguyên hàm là \(e^x+C\). Với \(a>0,\ a\ne1\), đạo hàm của \(a^x\) là \(a^x\ln a\). Chia cho \(\ln a\) để loại hệ số dư, được
+    \[
+    \int a^x\,dx=\frac{a^x}{\ln a}+C.
+    \]
+    Nếu \(0<a<1\), \(\ln a\) âm; dấu âm ấy cần giữ. Chẳng hạn \(1/4^x=(1/4)^x\), nên nguyên hàm là \(-1/(4^x\ln4)+C\). Nếu \(a=1\), không chia cho \(\ln1=0\); hàm dưới dấu nguyên hàm là 1.
 
-**Đề:** Tính ∫(3/x+2x)dx trên K=(0,+∞).
+    **Vận dụng.** Tính \(\int(2e^x-3^x+2^{-x})\,dx\).
 
-**Lời giải có suy luận:** F=3ln x+x^2+C vì F'=3/x+2x trên K; nếu K âm thay ln x bằng ln|x|. Lý do chọn cách giải: Nhận diện 1/x, tách tuyến tính các hạng khác, ghi điều kiện x≠0 và lấy đạo hàm kiểm. Kiểm điều kiện áp dụng: Không được lấy một hằng số C chung bắt buộc trên hai khoảng tách rời bởi x=0; trên x>0 có thể dùng ln x.
+    ??? question "Đối chiếu"
 
-**Bẫy cần tự phát hiện:** Viết ln x cho x âm hoặc áp 1/(n+1) với n=−1.
+        Vì \(2^{-x}=(1/2)^x\), \(\ln(1/2)=-\ln2\), kết quả là
+        \[
+        2e^x-\frac{3^x}{\ln3}-\frac{2^{-x}}{\ln2}+C.
+        \]
+        Đạo hàm hạng cuối bằng \(-(-\ln2)2^{-x}/\ln2=2^{-x}\), đúng dấu.
 
-<!-- OUTCOME_ID: G12-CHIV-B11-O05 -->
+    ??? tip "Kiểm lỗi"
 
-### 5. Nguyên hàm hàm mũ
+        Chỉ cơ số \(e\) có \(\ln e=1\); với cơ số khác \(e\), đừng quên chia cho logarit tự nhiên của cơ số.
 
-- **Vì sao cần biết:** Tốc độ tăng theo tỉ lệ với lượng hiện có dẫn đến e^x và a^x; nguyên hàm giúp phục hồi tổng lượng.
+=== "Kiến thức SGK"
 
-- **Kiến thức tiền đề:** (e^x)'=e^x, (a^x)'=a^x ln a.
+    ### 2.1. Nguyên hàm của một hàm số
 
-- **Bản chất trước công thức:** Nguyên hàm của e^x là e^x+C; của a^x là a^x/ln a+C.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Nguyên hàm</strong><p>Cho \(f\) xác định trên một khoảng, đoạn hoặc nửa khoảng \(K\). Hàm \(F\) là một nguyên hàm của \(f\) trên \(K\) nếu \(F'(x)=f(x)\) với mọi \(x\in K\).</p><p>Tại đầu mút thuộc \(K\), đạo hàm được hiểu là đạo hàm một phía từ trong \(K\).</p></div>
 
-- **Định nghĩa và công thức:** \(\int e^x dx=e^x+C;\quad\int a^x dx=\frac{a^x}{\ln a}+C.\)
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất — Họ nguyên hàm</strong><p>Nếu \(F\) là một nguyên hàm của \(f\) trên \(K\), thì mọi nguyên hàm của \(f\) trên \(K\) có dạng \(F(x)+C\), với \(C\in\mathbb R\).</p><div class="arithmatex">\(\displaystyle\int f(x)\,dx=F(x)+C.\)</div></div>
 
-- **Điều kiện và giới hạn:** a>0 và a≠1; ln a khác 0; hàm xác định trên R. Riêng a=1 cho hàm hằng 1, nguyên hàm là x+C chứ không thể chia cho ln1=0.
+    Hàm liên tục trên một khoảng có nguyên hàm trên khoảng đó. Vi phân của nguyên hàm là \(dF(x)=F'(x)\,dx=f(x)\,dx\). Nếu đề không chỉ rõ \(K\), xét tập xác định của hàm dưới dấu nguyên hàm; khi tập xác định gồm các khoảng tách rời, hiểu họ nguyên hàm trên từng khoảng với hằng số độc lập.
 
-- **Lý do chọn phương pháp:** Tách hệ số rồi chia ln a nếu cơ số a không phải e.
+    Nếu cần tìm một nguyên hàm thỏa \(F(x_0)=y_0\), tìm họ trước rồi dùng điều kiện để xác định \(C\) trên khoảng chứa \(x_0\).
 
-#### Ví dụ có suy luận
+    ### 2.2. Tính chất cơ bản của nguyên hàm
 
-**Đề:** Tính ∫(3e^x+4^x)dx.
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất tuyến tính</strong><p>Với các hàm \(f,g\) liên tục trên cùng \(K\), và \(k\) là hằng số khác 0:</p><div class="arithmatex">\(\displaystyle\int kf(x)\,dx=k\int f(x)\,dx\)</div><div class="arithmatex">\(\displaystyle\int[f(x)\pm g(x)]\,dx=\int f(x)\,dx\pm\int g(x)\,dx.\)</div><p>Khi tính cả họ, gộp các hằng số tùy ý thành một \(C\). Nếu \(k=0\), dùng riêng \(\int 0\,dx=C\).</p></div>
 
-**Lời giải có suy luận:** Kết quả 3e^x+4^x/ln4+C; đạo hàm phần 4^x/ln4 bằng 4^x. Lý do chọn cách giải: Tách hệ số rồi chia ln a nếu cơ số a không phải e. Kiểm điều kiện áp dụng: a>0 và a≠1; ln a khác 0; hàm xác định trên R.
+    Các tính chất suy ra từ đạo hàm của tổng, hiệu và tích với hằng số. Không suy ra quy tắc tương tự cho tích hoặc thương hai hàm số.
 
-**Bẫy cần tự phát hiện:** Nhầm ∫2^x dx=2^x+C (thiếu 1/ln2).
+    ### 2.3. Nguyên hàm của một số hàm số thường gặp
 
-<!-- OUTCOME_ID: G12-CHIV-B11-O06 -->
+    **Bảng nguyên hàm.** Mỗi hàng ghi một nguyên hàm \(F\); họ đầy đủ là \(F+C\) trên khoảng đang xét.
 
-### 6. Nguyên hàm lượng giác và điều kiện miền
+    | Hàm \(f(x)\) | Một nguyên hàm \(F(x)\) | Điều kiện |
+    | :-- | :-- | :-- |
+    | \(0\) | \(0\) | \(\mathbb R\) |
+    | \(1\) | \(x\) | \(\mathbb R\) |
+    | \(x^\alpha\) | \(\dfrac{x^{\alpha+1}}{\alpha+1}\) | \(\alpha\ne-1,\ x>0\); mở rộng theo miền với số mũ nguyên |
+    | \(\dfrac1x\) | \(\ln\lvert x\rvert\) | Từng khoảng không chứa 0 |
+    | \(\cos x\) | \(\sin x\) | \(\mathbb R\) |
+    | \(\sin x\) | \(-\cos x\) | \(\mathbb R\) |
+    | \(\dfrac1{\cos^2x}\) | \(\tan x\) | Khoảng không chứa \(\pi/2+k\pi,\ k\in\mathbb Z\) |
+    | \(\dfrac1{\sin^2x}\) | \(-\cot x\) | Khoảng không chứa \(k\pi,\ k\in\mathbb Z\) |
+    | \(e^x\) | \(e^x\) | \(\mathbb R\) |
+    | \(a^x\) | \(\dfrac{a^x}{\ln a}\) | \(a>0,\ a\ne1,\ x\in\mathbb R\) |
 
-- **Vì sao cần biết:** Các vận tốc dao động tuần hoàn có thể được phục hồi từ sin, cos và các đạo hàm của tan, cot.
+    Với lũy thừa nguyên dương, công thức dùng trên \(\mathbb R\); với số mũ nguyên âm, dùng trên từng khoảng không chứa 0. Theo quy ước hàm lũy thừa SGK, \(x^0\) xét khi \(x\ne0\); hàm hằng \(1\) được xét riêng trên toàn \(\mathbb R\). Với số mũ không nguyên, công thức tổng quát được phát biểu cho \(x>0\). Khi biểu thức gốc là căn cụ thể, xét miền xác định của chính biểu thức ấy; không tự mở rộng công thức qua điểm không xác định.
 
-- **Kiến thức tiền đề:** (sin x)'=cos x, (cos x)'=−sin x, (tan x)'=1/cos²x.
+    **Cách tự giải:** Xác định miền → biến đổi biểu thức nếu cần → nhận dạng các công thức trong bảng → áp dụng tính chất tuyến tính → gộp \(C\) → lấy đạo hàm kiểm lại. Khi có điều kiện đầu, dùng thêm điều kiện để tìm \(C\).
 
-- **Bản chất trước công thức:** ∫cos x dx=sin x+C; ∫sin x dx=−cos x+C; ∫sec²x dx=tan x+C; ∫csc²x dx=−cot x+C.
+=== "Ví dụ"
 
-- **Định nghĩa và công thức:** \(\int\cos xdx=\sin x+C;\quad\int\sin xdx=-\cos x+C.\)
+    ### 3.1. Kiểm nguyên hàm bằng đạo hàm
 
-- **Điều kiện và giới hạn:** Những nguyên hàm tan và cot chỉ tính trên các khoảng liên tục không chứa nghiệm cosx=0 hoặc sinx=0 tương ứng; góc tính bằng radian.
+    **Đề bài.** Trên \((0;+\infty)\), kiểm xem \(F(x)=x\ln x-x\) có là nguyên hàm của \(\ln x\) không.
 
-- **Lý do chọn phương pháp:** Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác.
+    **Phân tích:** Dùng quy tắc đạo hàm của tích và kiểm đúng miền.
 
-#### Ví dụ có suy luận
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(F'(x)=\ln x+x\cdot1/x-1=\ln x\) với mọi \(x&gt;0\). Vậy \(F\) là một nguyên hàm của \(\ln x\) trên khoảng đã cho; họ nguyên hàm là \(x\ln x-x+C\).</p></div>
 
-**Đề:** Tính ∫(2cos x+4sin x)dx.
+    **Kiểm lại:** Không dùng \(\ln x\) ở \(x\le0\). Một đẳng thức đạo hàm đúng trên cả khoảng xác nhận kết quả.
 
-**Lời giải có suy luận:** 2sin x−4cos x+C; đạo hàm là 2cos x+4sin x. Lý do chọn cách giải: Tách hệ số, ghi dấu âm chính xác ở nguyên hàm sin, kiểm bằng đạo hàm lượng giác. Kiểm điều kiện áp dụng: Những nguyên hàm tan và cot chỉ tính trên các khoảng liên tục không chứa nghiệm cosx=0 hoặc sinx=0 tương ứng; góc tính bằng radian.
+    ### 3.2. Khai triển bình phương trước khi tìm nguyên hàm
 
-**Bẫy cần tự phát hiện:** Quên dấu âm của nguyên hàm sin hoặc viết tan x trên đoạn đi qua cosx=0.
+    **Đề bài.** Tìm \(\int(3x-2)^2\,dx\).
 
-<!-- OUTCOME_ID: G12-CHIV-B11-O07 -->
+    **Phân tích:** Khai triển thành đa thức để dùng các nguyên hàm cơ bản.
 
-### 7. Khôi phục hàm theo tốc độ biến đổi
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \((3x-2)^2=9x^2-12x+4\). Do đó nguyên hàm là \(3x^3-6x^2+4x+C\) trên \(\mathbb R\).</p></div>
 
-- **Vì sao cần biết:** Khi biết vận tốc, gia tốc hoặc tốc độ tăng sản lượng, cần nguyên hàm và dữ kiện ban đầu để trả về đại lượng thực.
+    **Kiểm lại:** \((3x^3-6x^2+4x)'=9x^2-12x+4=(3x-2)^2\).
 
-- **Kiến thức tiền đề:** Vận tốc s'=v, gia tốc v'=a, đơn vị thời gian và điều kiện đầu.
+    ### 3.3. Phân thức có thể tách thành các lũy thừa
 
-- **Bản chất trước công thức:** Từ q'(t)=r(t) tìm q(t)=∫r(t)dt; áp q(t0)=q0 chọn C; nếu cho gia tốc phải tích phân hai lần.
+    **Đề bài.** Tìm \(\int (x+2)^2/x^2\,dx\) trên \((-\infty;0)\).
 
-- **Định nghĩa và công thức:** \(q(t)=F(t)+C,\qquad F'(t)=r(t).\)
+    **Phân tích:** Khai triển tử và chia từng hạng tử cho \(x^2\); miền âm đòi hỏi \(\ln|x|\).
 
-- **Điều kiện và giới hạn:** Đơn vị q' là đơn vị q trên một đơn vị t; t trong miền thời gian hợp lý; không đổi ý nghĩa của vận tốc với quãng đường.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> \((x+2)^2/x^2=1+4/x+4/x^2\). Vậy nguyên hàm là \(x+4\ln(-x)-4/x+C\) trên \((-\infty;0)\).</p></div>
 
-- **Lý do chọn phương pháp:** Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên.
+    **Kiểm lại:** Đạo hàm \(4\ln(-x)\) là \(4/x\), đạo hàm \(-4/x\) là \(4/x^2\).
 
-#### Ví dụ có suy luận
+    ### 3.4. Tích chứa căn thức
 
-**Đề:** Vật có a(t)=6t, v(0)=1 và s(0)=2. Tính v(t), s(t).
+    **Đề bài.** Tìm \(\int\sqrt{x}(6x^2-2)\,dx\) với \(x>0\).
 
-**Lời giải có suy luận:** v(t)=3t²+1; s(t)=t³+t+2. Kiểm v'=6t, s'=v và hai điều kiện đầu. Lý do chọn cách giải: Đọc đúng đạo hàm, nguyên hàm, chọn C theo trạng thái ban đầu, kiểm thứ nguyên. Kiểm điều kiện áp dụng: Đơn vị q' là đơn vị q trên một đơn vị t; t trong miền thời gian hợp lý; không đổi ý nghĩa của vận tốc với quãng đường.
+    **Phân tích:** Viết căn thành lũy thừa và nhân vào ngoặc.
 
-**Bẫy cần tự phát hiện:** Dùng gia tốc trực tiếp làm vị trí hoặc quên hai điều kiện đầu khi tích phân hai lần.
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(\sqrt{x}(6x^2-2)=6x^{5/2}-2x^{1/2}\). Nguyên hàm là \(\frac{12}{7}x^{7/2}-\frac43x^{3/2}+C\).</p></div>
 
-## 3. Đọc hình minh họa gốc
+    **Kiểm lại:** \((12/7)(7/2)=6\), \((-4/3)(3/2)=-2\), đúng các hệ số.
 
-<figure class="thpt-r4-plot g12-chi-figure"><img loading="lazy" decoding="async" src="../../../../../assets/images/thpt/Temp_FIG-G12-CHIV-B11-PRIMITIVES-R00.png" alt="Họ nguyên hàm F(x)=x²+C và đạo hàm f(x)=2x; mọi giá trị C cho cùng đạo hàm, đọc sự tịnh tiến theo trục tung. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán." /><figcaption>Họ nguyên hàm F(x)=x²+C và đạo hàm f(x)=2x; mọi giá trị C cho cùng đạo hàm, đọc sự tịnh tiến theo trục tung. Hình chính xác là một biểu diễn có trục và nhãn; chỉ suy từ đồ thị những điều có căn cứ và kiểm bằng phép toán.</figcaption></figure>
+    ### 3.5. Hằng số trên hai khoảng tách rời
 
-## 4. Tự thử trước Core
+    **Đề bài.** Tìm tất cả hàm \(F\) trên \(\mathbb R\setminus\{0\}\) sao cho \(F'(x)=1/x\), \(F(1)=2,\ F(-1)=-3\).
 
-Hãy tự giải rồi mới chủ động mở đối chiếu. Không ghi điểm hay Mastery.
+    **Phân tích:** Hai điểm thuộc hai khoảng khác nhau, mỗi khoảng có hằng số riêng.
 
-<!-- FIRST_TRY_ID: B11-T01 -->
-### Tình huống 1
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Trên \(x&gt;0\), \(F(x)=\ln x+C_+\); từ \(F(1)=2\) suy ra \(C_+=2\). Trên \(x&lt;0\), \(F(x)=\ln(-x)+C_-\); từ \(F(-1)=-3\) suy ra \(C_-=-3\).</p><div class="arithmatex">\(\displaystyle F(x)=\begin{cases}\ln x+2,&amp;x&gt;0,\\\ln(-x)-3,&amp;x&lt;0.\end{cases}\)</div></div>
 
-Một vật có s(t)=t²+3. Hãy tìm tốc độ v(t) và đoán hàm s(t) nếu chỉ biết v(t)=2t.
+    **Kiểm lại:** Cả hai nhánh có đạo hàm \(1/x\) và thỏa điều kiện riêng. Không đặt \(x=0\).
 
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
+    ### 3.6. Biến đổi lượng giác bằng công thức hạ bậc
 
-v(t)=2t. Có vô số vị trí s(t)=t²+C; vị trí xuất phát chọn C.
+    **Đề bài.** Tính \(\int6\cos^2(x/2)\,dx\).
 
-</details>
+    **Phân tích:** Dùng \(2\cos^2(x/2)=1+\cos x\), tránh xử lí nguyên hàm của bình phương trực tiếp.
 
-<!-- FIRST_TRY_ID: B11-T02 -->
-### Tình huống 2
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(6\cos^2(x/2)=3+3\cos x\), nên nguyên hàm là \(3x+3\sin x+C\) trên \(\mathbb R\).</p></div>
 
-Tại x>0, kiểm tra xem F(x)=ln x có đạo hàm 1/x không; vì sao không thay bằng ln x trên x<0?
+    **Kiểm lại:** Đạo hàm bằng \(3+3\cos x=6\cos^2(x/2)\).
 
-<details><summary>Mở đối chiếu sau khi tự thử</summary>
+    ### 3.7. Kết hợp lượng giác và phân thức lượng giác
 
-Có. (ln x)'=1/x trên x>0; với x<0 hàm ln x không xác định thực, dùng ln|x|.
+    **Đề bài.** Tìm \(\int(4\cos x-3/\sin^2x)\,dx\) trên \((0;\pi)\).
 
-</details>
+    **Phân tích:** Dùng hai hàng của bảng. Vì nguyên hàm của \(1/\sin^2x\) mang dấu âm, nhân thêm \(-3\) sẽ cho dấu dương.
 
-## 5. Chuyển sang Core và Luyện tập
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.7"><p><strong>Lời giải.</strong> \(\int(4\cos x-3/\sin^2x)\,dx=4\sin x+3\cot x+C\).</p></div>
 
-Sau khi học kiến thức và tự thử, em luyện đúng Bài 11; hãy tự giải từng câu trước khi nộp để xem lời giải hoặc rubric.
+    **Kiểm lại:** \((3\cot x)'=-3/\sin^2x\); \(\sin x\ne0\) trong khoảng đã cho.
 
-<div class="thpt-r4-screen" data-thpt-r4><nav class="thpt-r4-lesson-tabs"><a href="../luyen-tap/#b11-core">✎ Core · Bài 11</a><a href="../luyen-tap/#b11-practice">✎ Luyện tập, Vận dụng và Tự luận</a><a href="../luyen-tap/#b11-help">Khi gặp khó khăn</a></nav></div>
+    ### 3.8. Hàm mũ có cơ số nhỏ hơn 1
+
+    **Đề bài.** Tìm \(\int(5^x+3/2^x-4e^x)\,dx\).
+
+    **Phân tích:** Viết \(1/2^x=(1/2)^x\) và lưu ý \(\ln(1/2)=-\ln2\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Nguyên hàm là \(\frac{5^x}{\ln5}-\frac{3}{2^x\ln2}-4e^x+C\) trên \(\mathbb R\).</p></div>
+
+    **Kiểm lại:** Đạo hàm ba hạng tử lần lượt bằng \(5^x,3/2^x,-4e^x\).
+
+    ### 3.9. Khôi phục hàm số từ hệ số góc tiếp tuyến
+
+    **Đề bài.** Đồ thị \(y=F(x)\) có hệ số góc tiếp tuyến tại hoành độ \(x\) bằng \(3(x+1)^2\). Biết đồ thị đi qua \(A(0;4)\). Tìm \(F\).
+
+    **Phân tích:** Hệ số góc là \(F'(x)\). Khai triển rồi nguyên hàm; điều kiện điểm thuộc đồ thị cho \(F(0)=4\).
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(F'=3x^2+6x+3\), nên \(F=x^3+3x^2+3x+C\). Từ \(F(0)=4\), \(C=4\). Vậy \(F(x)=x^3+3x^2+3x+4\).</p></div>
+
+    **Kiểm lại:** \(F'(x)=3(x+1)^2\), \(F(0)=4\).
+
+    ### 3.10. Khôi phục vận tốc và tọa độ từ gia tốc
+
+    **Đề bài.** Vật chuyển động thẳng với gia tốc \(a(t)=4t\) m/s², vận tốc đầu \(v(0)=2\) m/s và tọa độ đầu \(s(0)=5\) m. Tìm \(v(t),s(t)\) và quãng đường trong 3 giây đầu.
+
+    **Phân tích:** \(v'=a,\ s'=v\), cần nguyên hàm hai lần và dùng hai điều kiện đầu. Kiểm dấu vận tốc trước khi tính quãng đường.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.10"><p><strong>Lời giải.</strong> \(v(t)=2t^2+C_1\), từ \(v(0)=2\) được \(v(t)=2t^2+2\). Tiếp theo \(s(t)=\frac23t^3+2t+C_2\), từ \(s(0)=5\) được \(s(t)=\frac23t^3+2t+5\). Vì \(v(t)&gt;0\) trên \([0;3]\), quãng đường bằng \(s(3)-s(0)=29-5=24\) m.</p></div>
+
+    **Kiểm lại:** \(v'=4t,\ s'=v\), đúng hai điều kiện đầu và đúng đơn vị.
+
+    ### 3.11. Tìm độ cao lớn nhất từ vận tốc
+
+    **Đề bài.** Một vật được ném thẳng đứng lên từ độ cao 2 m, có vận tốc \(v(t)=20-10t\) m/s trong thời gian bay. Tìm độ cao sau 1 giây và độ cao lớn nhất.
+
+    **Phân tích:** Lấy nguyên hàm để tìm độ cao, dùng điều kiện ban đầu. Độ cao đạt cực đại khi vận tốc đổi dấu từ dương sang âm.
+
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.11"><p><strong>Lời giải.</strong> \(h(t)=20t-5t^2+C\), \(h(0)=2\) nên \(h(t)=2+20t-5t^2\). \(h(1)=17\) m. \(v(t)=0\) tại \(t=2\), dương trước và âm sau mốc này. Vật vẫn ở trên mặt đất tại \(t=2\), nên độ cao lớn nhất \(h(2)=22\) m.</p></div>
+
+    **Kiểm lại:** \(h(t)=22-5(t-2)^2\le22\), xác nhận đỉnh. Mô hình chỉ dùng trong thời gian vật còn bay.
+
+=== "Lỗi thường gặp"
+
+    ### 4.1. Tìm đạo hàm thay vì nguyên hàm
+
+    **Sai ở đâu:** Viết \(\int x^3dx=3x^2+C\).
+
+    **Vì sao sai:** Đó là chiều tính đạo hàm, không phải chiều ngược lại.
+
+    **Cách sửa:** Tăng số mũ, chia số mũ mới: \(x^4/4+C\). Lấy đạo hàm kiểm.
+
+    ### 4.2. Quên hằng số hoặc nhầm một nguyên hàm với cả họ
+
+    **Sai ở đâu:** Viết họ nguyên hàm của \(2x\) chỉ là \(x^2\).
+
+    **Vì sao sai:** Mọi \(x^2+C\) đều có cùng đạo hàm.
+
+    **Cách sửa:** Ghi \(+C\) khi tìm họ; chỉ chọn hằng số cụ thể nếu có điều kiện phù hợp.
+
+    ### 4.3. Dùng công thức lũy thừa cho số mũ -1
+
+    **Sai ở đâu:** Chia cho \(0\) khi tìm nguyên hàm của \(x^{-1}\).
+
+    **Vì sao sai:** Công thức lũy thừa đòi hỏi số mũ khác \(-1\).
+
+    **Cách sửa:** Dùng \(\ln|x|+C\) trên từng khoảng xác định; xét riêng dấu của \(x\).
+
+    ### 4.4. Bỏ điều kiện miền xác định
+
+    **Sai ở đâu:** Dùng \(\ln x\) cho \(x<0\); bắt buộc hai nhánh nguyên hàm của \(1/x\) có cùng hằng số.
+
+    **Vì sao sai:** \(\ln x\) không xác định thực trên miền âm; tính chất hàm có đạo hàm bằng 0 là hàm hằng chỉ áp dụng trên từng khoảng.
+
+    **Cách sửa:** Viết đúng biểu thức và khoảng xét; tách hằng số nếu miền không liên thông.
+
+    ### 4.5. Nhầm tính chất tuyến tính với tích hoặc thương
+
+    **Sai ở đâu:** Lấy tích hai nguyên hàm làm nguyên hàm của tích hai hàm số.
+
+    **Vì sao sai:** Đạo hàm của tích có hai hạng tử, không phải tích hai đạo hàm.
+
+    **Cách sửa:** Khai triển hoặc biến đổi đại số, lượng giác về dạng trong bảng khi có thể.
+
+    ### 4.6. Nhầm dấu lượng giác và hệ số logarit
+
+    **Sai ở đâu:** \(\int\sin xdx=\cos x+C\) hoặc \(\int2^xdx=2^x+C\).
+
+    **Vì sao sai:** Đạo hàm các đáp án lần lượt là \(-\sin x\), \(2^x\ln2\).
+
+    **Cách sửa:** Dùng \(-\cos x+C\), \(2^x/\ln2+C\); kiểm bằng đạo hàm.
+
+    ### 4.7. Nhầm giá trị ban đầu với tốc độ thay đổi
+
+    **Sai ở đâu:** Đặt \(C=v(0)\) trong hàm tọa độ, hoặc coi vận tốc là quãng đường.
+
+    **Vì sao sai:** Mỗi lần tìm nguyên hàm khôi phục một đại lượng khác, có điều kiện đầu và đơn vị riêng.
+
+    **Cách sửa:** Viết \(v'=a,\ s'=v\); xác định hằng số theo đúng đại lượng, kiểm dấu vận tốc khi tính quãng đường.
+
+    **Học tiếp:** [Core và Luyện tập Bài 11](../luyen-tap/#b11-core) · [Bài 12 — Tích phân](../bai-12/).
+
+    <p class="thpt-r4-footnote">Nguồn kiến thức: SGK KNTT Toán 12 tập 2, trang in 4–11; các ví dụ và hình minh họa được SLM biên soạn riêng.</p>
