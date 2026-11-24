@@ -19,7 +19,7 @@
 
     Một vật đặt trên mặt bàn nằm ngang chịu phản lực của bàn theo phương thẳng đứng. Mũi tên theo phương ấy không chạy dọc mặt bàn mà vuông góc với mặt bàn. Nếu ta nghiêng bàn, phương vuông góc cũng thay đổi. Trong hình học, một vectơ khác không có giá vuông góc với mặt phẳng được gọi là vectơ pháp tuyến của mặt phẳng đó.
 
-    Biết một điểm trên mặt phẳng và một pháp tuyến khác không, ta xác định được duy nhất mặt phẳng: đi qua điểm đó, mặt phẳng phải có mọi hướng nằm ngang theo nghĩa vuông góc với pháp tuyến. Độ dài và chiều của mũi tên pháp tuyến không quyết định mặt phẳng; nhân với số khác 0 vẫn cho cùng phương pháp tuyến.
+    Biết một điểm trên mặt phẳng và một pháp tuyến khác không, ta xác định được duy nhất mặt phẳng: đi qua điểm đó, mọi vectơ có giá nằm trong mặt phẳng đều vuông góc với pháp tuyến. Độ dài và chiều của mũi tên pháp tuyến không quyết định mặt phẳng; nhân với số khác 0 vẫn cho cùng phương pháp tuyến.
 
     <!-- OUTCOME_ID: G12-CHV-B14-O01 -->
     Đôi khi đề chưa cho pháp tuyến mà chỉ cho hai hướng nằm trong hoặc song song với mặt phẳng. Chẳng hạn \(\vec u=(1;0;1),\vec v=(0;1;1)\) là hai hướng của mặt phẳng \(z=x+y\). Chúng không cùng phương. Ta cần một vectơ \(\vec n=(A;B;C)\ne\vec0\) vuông góc với cả hai. Điều kiện tích vô hướng bằng 0 cho \(A+C=0,\ B+C=0\). Chọn \(C=1\), nhận được \(\vec n=(-1;-1;1)\).
