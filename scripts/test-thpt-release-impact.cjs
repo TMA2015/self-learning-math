@@ -576,12 +576,17 @@ const G11_W4_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md","docs/th
 const G11_W4_FILES=new Set(["docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md","docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md","docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md","docs/assets/images/thpt/G11_B15_GEOMETRIC_PARTIAL_SUMS_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B16_ONE_SIDED_JUMP_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B17_IVT_SIGN_CHANGE_AUTHORING_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
 function isG11W4(files){return files.length===G11_W4_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W4_FILES.has(p));}
 
+const G11_W5_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md"];
+const G11_W5_FILES=new Set(["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md","docs/assets/images/thpt/G11_B20_DECREASING_EXP_LOG_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"]);
+function isG11W5(files){return files.length===G11_W5_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W5_FILES.has(p));}
+
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isG11W5(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G11_W5_LESSONS.join(","),reason:"OWNER_1039_W5_EXACT_SOURCE_AND_BROWSER"};
  if(isG11W4(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G11_W4_LESSONS.join(","),reason:"OWNER_1039_W4_EXACT_SOURCE_AND_BROWSER"};
  if(isG11W3(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G11_W3_LESSONS.join(","),reason:"OWNER_1039_W3_EXACT_SOURCE_AND_BROWSER"};
  if(isG11W2(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G11_W2_LESSONS.join(","),reason:"OWNER_1039_W2_EXACT_SOURCE_AND_BROWSER"};
@@ -724,6 +729,14 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const g11W5=[...G11_W5_FILES];
+ assert.equal(classify(g11W5).impact,"SCOPED_LESSON");
+ assert.equal(classify(g11W5).changed_lessons,G11_W5_LESSONS.join(","));
+ assert.equal(classify(g11W5.slice(1)).impact,"FULL");
+ assert.equal(classify(g11W5.filter(p=>!p.endsWith("AUTHORING_20261123.svg"))).impact,"FULL");
+ assert.equal(classify([...g11W5,"docs/thpt-preview/sgk/lop-11/chuong-vi/luyen-tap.md"]).impact,"FULL");
+ assert.equal(classify([...g11W5,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
+ assert.equal(classify(g11W5,{manual:true}).impact,"FULL");
  const g11W4=[...G11_W4_FILES];
  assert.equal(classify(g11W4).impact,"SCOPED_LESSON");
  assert.equal(classify(g11W4).changed_lessons,G11_W4_LESSONS.join(","));

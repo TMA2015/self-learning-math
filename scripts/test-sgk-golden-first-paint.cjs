@@ -15,12 +15,13 @@ for(const n of [1,2,3,4])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuo
 for(const n of [5,6,7,8,9])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-"+(n<=7?"ii":"iii")+"/bai-"+n});
 for(const n of [10,11,12,13,14])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-iv/bai-"+n});
 for(const n of [15,16,17])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-v/bai-"+n});
+for(const n of [18,19,20,21])rows.push({n,grade:11,rel:"thpt-preview/sgk/lop-11/chuong-vi/bai-"+n});
 const mode=process.env.SGK_FIRST_PAINT_MODE||"FULL";
-assert(["FULL","G11_W1","G11_W2","G11_W3","G11_W4"].includes(mode),"Unknown First Paint QA mode");
-const scoped=mode!=="FULL",w2=mode==="G11_W2",w3=mode==="G11_W3",w4=mode==="G11_W4";
-const selected=scoped?rows.filter(x=>x.grade===10&&x.n===10||x.grade===11&&(w4?x.n>=14:w3?x.n>=9&&x.n<=14:w2?x.n>=4&&x.n<=9:x.n<=4)):rows;
-const smoke=row=>row.grade===10||row.grade===11&&row.n===(w4?14:w3?9:w2?4:1);
-const chapterFor=n=>n<=4?"i":n<=7?"ii":n<=9?"iii":n<=14?"iv":n<=17?"v":"vi";
+assert(["FULL","G11_W1","G11_W2","G11_W3","G11_W4","G11_W5"].includes(mode),"Unknown First Paint QA mode");
+const scoped=mode!=="FULL",w2=mode==="G11_W2",w3=mode==="G11_W3",w4=mode==="G11_W4",w5=mode==="G11_W5";
+const selected=scoped?rows.filter(x=>x.grade===10&&x.n===10||x.grade===11&&(w5?x.n>=17:w4?x.n>=14&&x.n<=17:w3?x.n>=9&&x.n<=14:w2?x.n>=4&&x.n<=9:x.n<=4)):rows;
+const smoke=row=>row.grade===10||row.grade===11&&row.n===(w5?17:w4?14:w3?9:w2?4:1);
+const chapterFor=n=>n<=4?"i":n<=7?"ii":n<=9?"iii":n<=14?"iv":n<=17?"v":n<=21?"vi":"vii";
 const headings=["1. Khám phá kiến thức","2. Kiến thức SGK",
  "3. Ví dụ","4. Lỗi thường gặp và cách tự khắc phục"];
 const labels=["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"];
@@ -55,11 +56,11 @@ for(const row of selected){
  for(const k of ["data-thpt-first-try-id","data-thpt-help-id"])
   assert.deepEqual(attr(html,k),attr(source,k),row.rel+" Q15 source-to-DOM "+k);
 }
-for(const rel of ["thpt-preview/sgk/lop-11/chuong-vi/bai-18","thpt-preview/sgk/lop-12/chuong-i/bai-1"])
+for(const rel of ["thpt-preview/sgk/lop-11/chuong-vii/bai-22","thpt-preview/sgk/lop-12/chuong-i/bai-1"])
  assert(!read("site-thpt-preview/"+rel+"/index.html").includes('data-sgk-golden-first-paint="true"'),
   rel+" excluded route modified");
-assert.equal(selected.length,scoped?(w4?5:w2||w3?7:5):44);
-console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four headings, IDs, excluded G11 B18/G12");
+assert.equal(selected.length,scoped?(w5?6:w4?5:w2||w3?7:5):48);
+console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four headings, IDs, excluded G11 B22/G12");
 
 (async()=>{
  for(const [engine,driver] of (scoped?[["Chromium",chromium]]:[["Chromium",chromium],["WebKit",webkit]])){
@@ -162,7 +163,7 @@ console.log("PASS STATIC_FIRST_PAINT: "+selected.length+" exact routes; four hea
    }
   }
  }finally{await browser.close()}
- assert.equal(checks,scoped?(w4?22:w2||w3?34:22):reps.length*3*2);
+ assert.equal(checks,scoped?(w5?28:w4?22:w2||w3?34:22):reps.length*3*2);
  console.log("PASS GOLDEN FIRST PAINT "+engine+": "+checks+
   " JS/no-JS modes/viewports; max top-of-page geometric delta "+
   maxGeometryDelta.toFixed(2)+"px");

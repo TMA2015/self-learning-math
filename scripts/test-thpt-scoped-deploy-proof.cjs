@@ -671,6 +671,51 @@ function verifyG11W4(previous,current,changed,expected){
  console.log("PASS #1039 W4 three source locks, three new and three reused SVG, frozen W1/W2/W3 and assessment boundary, exact hook");
 }
 
+const G11_W5_ROWS=[[18,"fd7d7a33ec276c4e03c95185c5ea49b53643b584","91397166b56f95c8118d0134f7f8cb14916a963c"],[19,"f872e9f19e28467e1b6ea11a943e04a2edf3b266","ddc2ae13711cd29fbe096b303db042a37b547686"],[20,"1587f399e7ea9557a9fc490768c589991f25dcb0","486af83a35ac295bf22bcd8e9b1ce3a428848550"],[21,"b7fb59866ce1b250e446cb957d975e7c58d037bb","c13fea0e82a408692ba43fe0e8fa6fdbdeaa83f9"]];
+const G11_W5_NEW_ASSETS=[["docs/assets/images/thpt/G11_B20_DECREASING_EXP_LOG_AUTHORING_20261123.svg","e0edabf109720b5720e2419c8b0f2c4af6045b50"],["docs/assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg","f2c7fdfbb16c79d43ceb36b9c8df35ddb042e3cb"]];
+const G11_W5_EXISTING_ASSETS=[["docs/assets/images/thpt/FIG-G11-CHVI-B18-01_R00.svg","79528bcd2c87eb40b1b54f18c697b0ae3458e642"],["docs/assets/images/thpt/FIG-G11-CHVI-B19-01_R00.svg","fe2895ac101dcc4cf4046d57428181ad0f448dc8"],["docs/assets/images/thpt/FIG-G11-CHVI-B20-01_R00.svg","64bcb465bd6d809095a4ca2b910555e314badb69"],["docs/assets/images/thpt/FIG-G11-CHVI-B21-01_R00.svg","6d43f842d096b974eb70af21e6751f1ec70eea00"]];
+const G11_W5_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md"];
+const G11_W5_FILES=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md","docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md","docs/assets/images/thpt/G11_B20_DECREASING_EXP_LOG_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B21_EXP_LOG_THRESHOLD_AUTHORING_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
+function verifyG11W5(previous,current,changed,expected){
+ assert.equal(previous,"25fef0d91201601ad55c8b4ce5d9e69be6f09887","W5 must start from exact published W4 main");
+ assert.deepEqual(changed.slice().sort(),G11_W5_FILES.slice().sort());
+ assert.deepEqual(expected.slice().sort(),G11_W5_LESSONS.slice().sort());
+ const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
+ const receipt=read(current,G11_W1_HANDOFF);
+ assert.equal(blob(read(previous,G11_W1_HANDOFF)),"4ca5e678146021533871669d7cf6cfed0069f91c");
+ assert.equal(blob(receipt),"4d8858dca8e46f64ff33d183f6adddb1ca0ce25a");
+ assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
+ const hook="hooks/sgk_golden_first_paint.py";
+ const oldHook=read(previous,hook).toString("utf8"),nowHook=read(current,hook).toString("utf8");
+ assert.equal(blob(read(current,hook)),"278e592244a64d22346431012d61cd862c772299");
+ const start=nowHook.indexOf("# #1039 W5 exact route scope;");
+ const end=nowHook.indexOf("def on_post_page(output, page, config):");
+ assert(start>0&&end>start);
+ assert.equal((nowHook.slice(0,start)+nowHook.slice(end)).replace("    if uri in _W5_ROUTES:\n        return _render_w5(output, uri)\n",""),oldHook,"W1/W2/W3/W4 and other routes unchanged");
+ for(const file of ["docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",...G11_W4_LESSONS,...G11_W3_LESSONS,...G11_W2_LESSONS,...G11_W1_LESSONS])assert.equal(blob(read(previous,file)),blob(read(current,file)));
+ for(const [n,oldSha,newSha] of G11_W5_ROWS){
+  const file="docs/thpt-preview/sgk/lop-11/chuong-vi/bai-"+n+".md";
+  assert.equal(blob(read(previous,file)),oldSha);
+  const source=read(current,file),content=source.toString("utf8");
+  assert.equal(blob(source),newSha);assert.equal(blob(fs.readFileSync(path.join(root,file))),newSha);
+  assert.deepEqual(content.split("\n").filter(l=>l.startsWith('=== "')),['=== "Khám phá kiến thức"','=== "Kiến thức SGK"','=== "Ví dụ"','=== "Lỗi thường gặp"']);
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final|g11-chapter-selfcheck)/i.test(content));
+  const recovery=content.split('=== "Lỗi thường gặp"')[1];
+  assert.equal(recovery.split("\n").filter(l=>/^    ### 4\.\d+\./.test(l)).length,6);
+  assert(recovery.includes("**Học tiếp:**"));
+  assert(receipt.toString("utf8").includes(oldSha)&&receipt.toString("utf8").includes(newSha));
+  console.log("SCOPED_G11_W5_SOURCE_PASS "+file+" "+newSha);
+ }
+ for(const [file,h] of [...G11_W5_EXISTING_ASSETS,...G11_W4_NEW_ASSETS,...G11_W4_EXISTING_ASSETS,...G11_W3_NEW_ASSETS,...G11_W3_EXISTING_ASSETS,...G11_W2_ASSETS,...G11_W1_ASSETS]){
+  assert.equal(blob(read(previous,file)),h);assert.equal(blob(read(current,file)),h);
+ }
+ for(const [file,h] of G11_W5_NEW_ASSETS){
+  assert.throws(()=>read(previous,file),"New SVG must not exist in baseline");
+  assert.equal(blob(read(current,file)),h);assert.equal(blob(fs.readFileSync(path.join(root,file))),h);
+ }
+ console.log("PASS #1039 W5 four source locks, two new and four reused SVG, frozen W1/W2/W3/W4 and assessment boundary, exact hook");
+}
+
 function main(){
  const previous=process.env.BEFORE_SHA,current=process.env.HEAD_SHA;
  assert(sha(previous)&&sha(current),"Full nonzero main push before/head commits required");
@@ -678,6 +723,9 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.length===G11_W5_FILES.length&&changed.every(x=>G11_W5_FILES.includes(x))){
+  verifyG11W5(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
+ }
  if(changed.length===G11_W4_FILES.length&&changed.every(x=>G11_W4_FILES.includes(x))){
   verifyG11W4(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
  }
