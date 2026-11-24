@@ -1042,5 +1042,109 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-T01",
+    "content_version": "SOURCE_BLOB_4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+    "stem": "Trên các nhóm [0;5), [5;10), [10;15) có f=(0,3,4), hãy chỉ ra lớp đầu có dữ liệu và R. Hãy thử trước khi mở lời giải.",
+    "answer_key": null,
+    "worked_solution": "Nhóm đầu có dữ liệu là [5;10), cuối là [10;15); R=15−5=10. Nếu bạn chọn 15, hãy quay lại mục 1/mục 2 để kiểm nhóm rỗng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+      "heading_id": "B09-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md",
+        "blob": "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B09-T01",
+      "line": 10,
+      "original_local_id": "B09-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B09-T02",
+    "content_version": "SOURCE_BLOB_4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+    "stem": "Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n/4 rơi vào lớp nào?",
+    "answer_key": null,
+    "worked_solution": "n=40, mốc 10 thuộc lớp 2 và mốc 30 thuộc lớp 3 (cộng dồn 6,20,32,40). Nếu chọn lớp 4, hãy ôn cách lập cộng dồn ở mục 4.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+      "heading_id": "B09-T02",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-9.md",
+        "blob": "4571bac678c36c4fb06d6a7fde45b86703f8ebce",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B09-T02",
+      "line": 14,
+      "original_local_id": "B09-T02",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID",
+      "related_item_ids": [
+        "THPT-G12-B09-C04",
+        "THPT-G12-B09-P07"
+      ],
+      "distinct_task_reason": "Same frequencies but separate Q1/Q3 items; source asks n and both positions in one block."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G12-B10-T01",
+    "content_version": "SOURCE_BLOB_32f4eda1cfd151592eef5a35921ad872c1f644c4",
+    "stem": "Hai số cách trung bình lần lượt −3 và +3. Nếu cộng hai độ lệch trực tiếp, có thể thấy biến động không? Thử bình phương trước khi mở lời giải.",
+    "answer_key": null,
+    "worked_solution": "Tổng độ lệch là 0 nhưng tổng bình phương là 18; lấy bình phương tránh triệt tiêu chéo dấu. Nếu còn nhầm, quay lại kiến thức bình phương ở mục 2.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "32f4eda1cfd151592eef5a35921ad872c1f644c4",
+      "heading_id": "B10-T01",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md",
+        "blob": "32f4eda1cfd151592eef5a35921ad872c1f644c4",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "B10-T01",
+      "line": 10,
+      "original_local_id": "B10-T01",
+      "id_assignment": "NAMESPACE_EXISTING_LOCAL_SOURCE_ID"
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
