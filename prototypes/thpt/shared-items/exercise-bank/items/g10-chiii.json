@@ -361,16 +361,16 @@
   {
     "item_id": "THPT-G10-B06-P01",
     "content_version": "THPT-G10-CHIII-R01",
-    "stem": "Cho tam giác ABC có \\(A=30^\\circ,B=60^\\circ,a=4\\). Tính \\(b\\) và \\(R\\).",
-    "answer_key": "\\(b=4\\sqrt3,\\ R=4\\).",
-    "worked_solution": "\\(b=4(\\sqrt3/2)/(1/2)=4\\sqrt3\\); \\(2R=4/(1/2)=8\\), R=4.",
+    "stem": "Cho tam giác ABC có A=45°, B=30°, a=8. Tính b và R.",
+    "answer_key": "b=4√2; R=4√2.",
+    "worked_solution": "Theo định lí sin, b=a·sin B/sin A=8·(1/2)/(√2/2)=4√2. Đồng thời 2R=a/sin A=8√2 nên R=4√2. Góc B<A nên b<a, phù hợp.",
     "skill_ids": [
       "G10-B06-SINE_RULE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Theo định lí sin b/sinB=a/sinA=2R."
+      "Dùng b/sin B=a/sin A=2R; phân biệt R với 2R."
     ],
     "rubric": null,
     "interaction": {
