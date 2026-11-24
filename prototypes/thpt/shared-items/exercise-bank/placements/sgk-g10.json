@@ -3030,5 +3030,75 @@
     "item_id": "THPT-G10-CHV-RD1-18",
     "original_type": "SHORT_EXPLANATION",
     "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIX-TRY01",
+    "outcome_id": "G10-B26-EXPERIMENT_SAMPLE_SPACE"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIX-TRY02",
+    "outcome_id": "G10-B26-EVENT_SUBSET"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIX-TRY03",
+    "outcome_id": "G10-B26-CLASSICAL_RATIO"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIX-TRY04",
+    "outcome_id": "G10-B26-COMPLEMENT"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B26:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIX-TRY05",
+    "outcome_id": "G10-B26-SCOPE_SMALL_PROBABILITY"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 1,
+    "item_id": "THPT-G10-CHIX-TRY06",
+    "outcome_id": "G10-B27-COUNTING_OUTCOMES"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 2,
+    "item_id": "THPT-G10-CHIX-TRY07",
+    "outcome_id": "G10-B27-TREE_SEQUENCE"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 3,
+    "item_id": "THPT-G10-CHIX-TRY08",
+    "outcome_id": "G10-B27-COMPLEMENT_PROBABILITY"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 4,
+    "item_id": "THPT-G10-CHIX-TRY09",
+    "outcome_id": "G10-B27-MULTISTEP_CONTEXT"
+  },
+  {
+    "collection": "SGK:G10:CHIX:B27:KNOWLEDGE_FIRST_TRY",
+    "role": "SGK_FIRST_TRY",
+    "order": 5,
+    "item_id": "THPT-G10-CHIX-TRY10",
+    "outcome_id": "G10-B27-EQUIPROBABLE_MODELLING"
   }
 ]
