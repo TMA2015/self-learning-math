@@ -35,7 +35,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu sai dấu hoặc nhầm 0,3, đặt hai số thẳng hàng dấu phẩy, trừ rồi lấy trị tuyệt đối. Ôn Bài 12 §2.2; luyện THPT-G10-CHV-TRY02."
   },
   {
     "item_id": "THPT-G10-B12-C02",
@@ -73,7 +74,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu coi d là sai số thực, thử số đúng bằng 12,3; sai số khi đó bằng 0 nhưng vẫn thỏa d. Ôn Bài 12 §2.2; luyện THPT-G10-CHV-TRY02."
   },
   {
     "item_id": "THPT-G10-B12-P01",
@@ -103,7 +105,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia 80, dùng mẫu |a|=78 theo định nghĩa SGK; đổi tỉ số sang phần trăm bằng nhân 100. Ôn Bài 12 §2.2b; luyện THPT-G10-CHV-TRY03."
   },
   {
     "item_id": "THPT-G10-B12-P02",
@@ -133,21 +136,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu làm tròn thành 4280, kiểm chữ số hàng đơn vị 6 và cận nửa đơn vị hàng chục. Ôn Bài 12 §2.3; luyện THPT-G10-CHV-TRY04."
   },
   {
     "item_id": "THPT-G10-B12-P03",
     "content_version": "R01",
-    "stem": "Số đúng là 2500 người, số gần đúng a=2475 người. Sai số tương đối là bao nhiêu?",
-    "answer_key": "\\(100/99\\%\\approx1{,}0101\\%\\)",
-    "worked_solution": "\\(\\Delta_a=25\\), \\(\\delta_a=25/2475=1/99\\approx1{,}0101\\%\\). Không dùng mẫu 2500.",
+    "stem": "Hai phép đo có số gần đúng lần lượt 40 cm và 200 cm, với độ chính xác tương ứng 0,4 cm và 1 cm. So sánh cận trên sai số tương đối theo SGK. Có thể khẳng định sai số thực của lần nào nhỏ hơn không?",
+    "answer_key": "Lần 1: 1%; lần 2: 0,5%. Lần 2 có cận trên nhỏ hơn; chưa biết sai số thực.",
+    "worked_solution": "Dùng cận δₐ≤d/|a|. Lần 1: 0,4/40=0,01=1%; lần 2: 1/200=0,005=0,5%. Dù d₂ lớn hơn d₁, cận tương đối lần 2 nhỏ hơn vì đại lượng đo lớn hơn. Không suy được thứ tự sai số thực chỉ từ các cận.",
     "skill_ids": [
       "G10-B12-REL_ERROR"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Chia sai số tuyệt đối cho **số gần đúng** 2475 theo KNTT."
+      "Chia mỗi độ chính xác cho trị tuyệt đối của số gần đúng tương ứng."
     ],
     "rubric": null,
     "interaction": {
@@ -163,7 +167,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu so sai số tuyệt đối mà quên cỡ đại lượng, tính riêng Δ/|a| rồi đổi ra %. Ôn Bài 12 §2.2b; luyện THPT-G10-CHV-TRY03."
   },
   {
     "item_id": "THPT-G10-B12-P04",
@@ -193,21 +198,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ ghi một giá trị đúng, lấy a−d và a+d; kiểm dấu ≤ ở hai đầu. Ôn Bài 12 §2.2; luyện THPT-G10-CHV-TRY02."
   },
   {
     "item_id": "THPT-G10-B12-P05",
     "content_version": "R01",
-    "stem": "Làm tròn 10,06 đến hàng phần mười. Sai số tuyệt đối của phép làm tròn là bao nhiêu?",
-    "answer_key": "\\(10{,}1\\) và \\(0{,}04\\)",
-    "worked_solution": "\\(10{,}06\\to10{,}1\\); \\(\\Delta=|10{,}06-10{,}1|=0{,}04\\).",
+    "stem": "Quy tròn số đúng 9,95 đến hàng phần mười. Ghi số quy tròn với đúng hàng yêu cầu và tính sai số tuyệt đối.",
+    "answer_key": "10,0; sai số tuyệt đối 0,05.",
+    "worked_solution": "Chữ số hàng phần trăm là 5 nên tăng hàng phần mười, phát sinh nhớ sang hàng đơn vị và hàng chục: 9,95 → 10,0. Sai số |10,0−9,95|=0,05, đúng bằng nửa đơn vị hàng phần mười. Ghi 10,0 để thể hiện hàng quy tròn.",
     "skill_ids": [
       "G10-B12-ROUNDING"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Giữ một chữ số thập phân; xem chữ số hàng phần trăm."
+      "Chữ số 5 làm tròn lên; nhớ sang hàng liền trước nếu cần."
     ],
     "rubric": null,
     "interaction": {
@@ -223,7 +229,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu xử lý nhầm chữ số 5 hoặc nhớ sai cận, xác định hàng quy tròn và tính |a−số đúng|. Ôn Bài 12 §2.3; luyện THPT-G10-CHV-TRY04."
   },
   {
     "item_id": "THPT-G10-B12-P06",
@@ -253,7 +260,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn phép đo chỉ vì d nhỏ, so d/|a| của từng phép đo; đây là cận, không phải sai số thật. Ôn Bài 12 §2.2b; luyện THPT-G10-CHV-TRY03."
   },
   {
     "item_id": "THPT-G10-B12-P07",
@@ -323,7 +331,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia nhầm số quan sát, đếm đủ 4 rồi kiểm tổng bằng 4 lần trung bình. Ôn Bài 13 §2.1; luyện THPT-G10-CHV-TRY05."
   },
   {
     "item_id": "THPT-G10-B13-C02",
@@ -361,7 +370,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn số lớn nhất hay trung bình, sắp mẫu và đếm vị trí giữa. Ôn Bài 13 §2.1; luyện THPT-G10-CHV-TRY06."
   },
   {
     "item_id": "THPT-G10-B13-P01",
@@ -391,7 +401,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia cho số loại giá trị, cộng các tần số để tìm n; tính tổng có trọng số. Ôn Bài 13 §2.1; luyện THPT-G10-CHV-TRY05."
   },
   {
     "item_id": "THPT-G10-B13-P02",
@@ -421,7 +432,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy Q₂ là một số trong mẫu chẵn, lấy trung bình hai vị trí giữa rồi chia hai nửa. Ôn Bài 13 §2.2; luyện THPT-G10-CHV-TRY07."
   },
   {
     "item_id": "THPT-G10-B13-P03",
@@ -451,7 +463,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ chọn mốt lớn nhất về giá trị, lập bảng tần số và giữ tất cả giá trị cùng tần số cao nhất. Ôn Bài 13 §2.3; luyện THPT-G10-CHV-TRY08."
   },
   {
     "item_id": "THPT-G10-B13-P04",
@@ -481,21 +494,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ giá trị lớn khỏi trung bình, giữ đủ mẫu rồi so với trung vị; chọn số đại diện theo mục đích. Ôn Bài 13 §2.1; luyện THPT-G10-CHV-TRY09."
   },
   {
     "item_id": "THPT-G10-B13-P05",
     "content_version": "R01",
-    "stem": "Mẫu đã sắp \\(1,2,3,4,6,8,9\\) có \\(Q_1,Q_2,Q_3\\) là gì?",
-    "answer_key": "\\((2,4,8)\\)",
-    "worked_solution": "\\(Q_2=4\\); nửa trái 1,2,3 có trung vị 2; nửa phải 6,8,9 có trung vị 8.",
+    "stem": "Cho mẫu chưa sắp xếp 9,1,6,2,8,4,3. Tìm Q₁,Q₂,Q₃ theo KNTT và giải thích cách chia nửa.",
+    "answer_key": "Q₁=2, Q₂=4, Q₃=8.",
+    "worked_solution": "Sắp dãy 1,2,3,4,6,8,9. Có 7 quan sát nên Q₂ là giá trị thứ tư 4. Bỏ vị trí đó khi chia nửa; nửa dưới (1,2,3) cho Q₁=2, nửa trên (6,8,9) cho Q₃=8.",
     "skill_ids": [
       "G10-B13-QUARTILES"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Mẫu 7 phần tử: bỏ 4 khi chia các nửa."
+      "Sắp tăng dần trước khi tìm trung vị; với n lẻ, không đưa Q₂ vào hai nửa."
     ],
     "rubric": null,
     "interaction": {
@@ -511,7 +525,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đưa trung vị vào cả hai nửa mẫu lẻ, bỏ vị trí giữa trước khi tính Q₁,Q₃. Ôn Bài 13 §2.2; luyện THPT-G10-CHV-TRY07."
   },
   {
     "item_id": "THPT-G10-B13-P06",
@@ -541,7 +556,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho trung bình và trung vị luôn đổi cùng nhau, thay một cực trị mà giữ thứ tự giữa, tính lại hai đại lượng. Ôn Bài 13 §2.1; luyện THPT-G10-CHV-TRY09."
   },
   {
     "item_id": "THPT-G10-B14-C01",
@@ -579,7 +595,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng min và max, lấy hiệu lớn nhất trừ nhỏ nhất. Ôn Bài 14 §2.1; luyện THPT-G10-CHV-TRY10."
   },
   {
     "item_id": "THPT-G10-B14-C02",
@@ -617,7 +634,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia n−1 hoặc quên bình phương, tính từng độ lệch, bình phương rồi chia n theo SGK. Ôn Bài 14 §2.2; luyện THPT-G10-CHV-TRY11."
   },
   {
     "item_id": "THPT-G10-B14-P01",
@@ -647,7 +665,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm khoảng biến thiên và khoảng tứ phân vị, tính Q₁,Q₃ rồi lấy Q₃−Q₁. Ôn Bài 14 §2.1; luyện THPT-G10-CHV-TRY10."
   },
   {
     "item_id": "THPT-G10-B14-P02",
@@ -677,21 +696,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu trả phương sai bằng độ lệch chuẩn, tính s² trước rồi lấy căn không âm. Ôn Bài 14 §2.2; luyện THPT-G10-CHV-TRY12."
   },
   {
     "item_id": "THPT-G10-B14-P03",
     "content_version": "R01",
-    "stem": "Mẫu \\(1,2,2,3,3,4,4,30\\). Theo hàng rào 1,5·IQR, giá trị nào bất thường?",
-    "answer_key": "\\(30\\)",
-    "worked_solution": "\\(Q_1=2,Q_3=4,\\Delta_Q=2\\); ngưỡng trên 7, dưới −1. 30 lớn hơn 7 nên bất thường; số 1 không nhỏ hơn −1.",
+    "stem": "Mẫu đã sắp 0,2,2,2,3,3,4,4,4,4,7,20. Theo KNTT, tính hai hàng rào và xác định giá trị bất thường. Giá trị 7 ở đúng hàng rào có bị đánh dấu không?",
+    "answer_key": "Q₁=2; Q₃=4; ΔQ=2; hàng rào −1 và 7; chỉ 20 bất thường, 7 không bất thường.",
+    "worked_solution": "Có 12 quan sát. Nửa dưới (0,2,2,2,3,3) cho Q₁=(2+2)/2=2; nửa trên (4,4,4,4,7,20) cho Q₃=(4+4)/2=4. ΔQ=2. Hàng rào dưới 2−1,5·2=−1, trên 4+1,5·2=7. Chỉ giá trị 20>7 bất thường; 7 nằm đúng hàng rào nên không thỏa bất đẳng thức nghiêm. Cần kiểm tra nguồn dữ liệu trước khi quyết định loại.",
     "skill_ids": [
       "G10-B14-OUTLIERS"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Đặt hai nửa 4 số, tính $Q_1,Q_3$ rồi hàng rào trên."
+      "Chia mẫu chẵn thành hai nửa 6 giá trị, tính Q₁,Q₃ rồi so với hàng rào bằng bất đẳng thức nghiêm."
     ],
     "rubric": null,
     "interaction": {
@@ -707,7 +727,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu coi giá trị ở đúng hàng rào là bất thường, kiểm bất đẳng thức nghiêm và không tự xóa dữ liệu. Ôn Bài 14 §2.3; luyện THPT-G10-CHV-TRY13."
   },
   {
     "item_id": "THPT-G10-B14-P04",
@@ -737,7 +758,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết luận hai nhóm phân tán bằng nhau vì cùng trung bình, so bình phương độ lệch của từng mẫu. Ôn Bài 14 §2.2; luyện THPT-G10-CHV-TRY14."
   },
   {
     "item_id": "THPT-G10-B14-P05",
@@ -767,7 +789,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu ghi cm² cho s, lấy căn cả giá trị và đơn vị của s²; ghi s bằng cm. Ôn Bài 14 §2.2; luyện THPT-G10-CHV-TRY12."
   },
   {
     "item_id": "THPT-G10-B14-P06",
@@ -797,7 +820,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm R với ΔQ, tính min/max và Q₁/Q₃ riêng; tính phương sai theo n. Ôn Bài 14 §2.1–2.2; luyện THPT-G10-CHV-TRY10."
   },
   {
     "item_id": "THPT-G10-CHV-TRY01",
