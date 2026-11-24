@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 42/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B10, còn B11–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 43/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B11, còn B12–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B10 CONTENT_READY; B11–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B11 CONTENT_READY; B12–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -55,7 +55,8 @@
 | 12 | B08 | [#1077](https://github.com/TMA2015/self-learning-math/pull/1077) | CONTENT_READY — đã bàn giao |
 | 12 | B09 | [#1078](https://github.com/TMA2015/self-learning-math/pull/1078) | CONTENT_READY — đã bàn giao |
 | 12 | B10 | [#1079](https://github.com/TMA2015/self-learning-math/pull/1079) | CONTENT_READY — đã bàn giao |
-| 12 | B11–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B11 | [#1080](https://github.com/TMA2015/self-learning-math/pull/1080) | CONTENT_READY — đã bàn giao |
+| 12 | B12–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -252,6 +253,16 @@ Asset delta tại `docs/assets/images/thpt/`: `FIG-G12-CHIII-B09-QUARTILES-R00.s
 | [#1079](https://github.com/TMA2015/self-learning-math/pull/1079) | `docs/thpt-preview/sgk/lop-12/chuong-iii/bai-10.md` | `4ddf957c7fd1ebe3531c00b64074baecced0acb9` | `32f4eda1cfd151592eef5a35921ad872c1f644c4` | `12371f18f44610853ddca68a40908dee690a91ec` |
 
 Asset delta: `docs/assets/images/thpt/FIG-G12-CHIII-B10-SPREAD-R00.svg` từ `ddff354dca86b0cfa1a223a8245b87044a6e93b1` sang `120a1a0e7b360c8cde1742459174d747bca87de0`.
+
+### Toán 12 B11 — Nguyên hàm (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đọc trực tiếp văn bản [SGK KNTT Toán 12 tập 2, trang in 4–11](https://thuvienhoclieu.com/wp-content/uploads/2023/11/thuvienhoclieu.com-SGK-Toan-lop-12-KNTT-Tap-2.pdf) và [SGKVN](https://sgkvn.com/lop-12-15/ket-noi-tri-thuc-voi-cuoc-song-3/chuong-iv-nguyen-ham-va-tich-phan-3521/bai-11-nguyen-ham-12886.html). HĐ1–7, Ví dụ 1–8, Luyện tập, Vận dụng, bảng nguyên hàm, bài tập 4.1–4.7. Screenshot PDF cache miss, không tuyên bố kiểm ảnh gốc. Đọc toàn văn Golden G10 B19. Bốn tab, ba mục đối ứng: nguyên hàm của một hàm số, tính chất cơ bản, nguyên hàm các hàm số thường gặp. Giải thích họ F+C từ đạo hàm hiệu bằng 0, điều kiện đầu mút một phía, vi phân, tính liên tục, tính tuyến tính k khác 0, hằng số độc lập trên các khoảng tách rời, lũy thừa/logarit/lượng giác/mũ và đầy đủ bảng 10 công thức; bài toán doanh thu, hệ số góc, vận tốc/gia tốc và độ cao cực đại. 11 ví dụ, 5 Vận dụng có Đối chiếu/Kiểm lỗi, 7 lỗi thường gặp. 34 nhóm tự kiểm đạt: đối chiếu đạo hàm và giá trị đầu bằng giải tích và kiểm số tại nhiều điểm, kiểm hình và cấu trúc; bảo toàn tập mã OUTCOME_ID/FIRST_TRY_ID. SVG mới biểu diễn ba parabol tịnh tiến và tiếp tuyến tại x=1 cùng hệ số góc 2; tọa độ sinh từ hàm số; PNG cũ giữ nguyên trong kho nhưng bài dùng SVG mới. Diff chỉ canonical và một hình riêng B11.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1080](https://github.com/TMA2015/self-learning-math/pull/1080) | `docs/thpt-preview/sgk/lop-12/chuong-iv/bai-11.md` | `8a8236025b63b633261c482210f017d12ab04cee` | `f3fc0f654a21af7ec72de657643ef97488413dcb` | `136e34f376b8281eb1023d1583d18efaf0baa96f` |
+
+Asset delta: thêm `docs/assets/images/thpt/G12_B11_FIG01_FAMILY_AUTHORING_20261124.svg` (blob `cb98c0d7e33eab90f1b1fd4e09e6dba925539e25`). Không chỉnh sửa PNG cũ.
 
 ## Cách cập nhật
 
