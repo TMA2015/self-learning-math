@@ -26,7 +26,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-concept-figure"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B14_FIG01_NORMAL_AUTHORING_20261124.svg" alt="Mặt phẳng z=x+y có hai hướng u=(1;0;1), v=(0;1;1) và pháp tuyến n=(-1;-1;1)"><figcaption>Hai mũi tên xanh nằm dọc mặt phẳng; mũi tên cam vuông góc với cả hai. Không đo góc trên hình phối cảnh. Kiểm bằng hai tích vô hướng bằng 0.</figcaption></figure>
 
-    Với hai vectơ bất kì \(\vec u=(a;b;c),\vec v=(a';b';c')\), có một cách tính trực tiếp vectơ vuông góc với cả hai, gọi là tích có hướng:
+    Với hai vectơ bất kì \(\vec u=(a;b;c),\vec v=(a';b';c')\), ta có thể tính một vectơ gọi là tích có hướng. Tích vô hướng của vectơ này với mỗi vectơ ban đầu đều bằng 0; nếu kết quả khác vectơ-không thì nó vuông góc với cả hai:
     \[
     [\vec u,\vec v]=(bc'-b'c;\ ca'-c'a;\ ab'-a'b).
     \]
@@ -163,7 +163,7 @@
     \]
     Tử số đo giá trị vế trái tại \(M\), nhưng chưa phải khoảng cách. Chia cho độ dài pháp tuyến để kết quả không phụ thuộc cách nhân phương trình; lấy trị tuyệt đối để khoảng cách không âm.
 
-    Với ví dụ trên, \(L=2-2+6-4=2,\ |\vec n|=3\), nên khoảng cách \(2/3\). Hình chiếu là \(H=M-(2/9)\vec n=(5/9;20/9;23/9)\). Thế \(H\) vào phương trình được 0, còn \(\overrightarrow{MH}=-(2/9)\vec n\), đúng phương vuông góc.
+    Với ví dụ trên, \(L=2-2+6-4=2,\ |\vec n|=3\), nên khoảng cách \(2/3\). Hình chiếu là \(\overrightarrow{OH}=\overrightarrow{OM}-\frac29\vec n=(5/9;20/9;23/9)\). Thế \(H\) vào phương trình được 0, còn \(\overrightarrow{MH}=-(2/9)\vec n\), đúng phương vuông góc.
 
     Nếu hai mặt phẳng song song có cùng pháp tuyến, viết \((P):Ax+By+Cz+D_1=0\), \((Q):Ax+By+Cz+D_2=0\). Với mọi \(M\) trên \((P)\), \(Ax_0+By_0+Cz_0=-D_1\). Thế vào công thức khoảng cách tới \((Q)\), nhận \(|D_2-D_1|/|\vec n|\). Công thức không phụ thuộc chọn điểm nào trên \((P)\). Nếu pháp tuyến ban đầu chỉ tỉ lệ, cần nhân hoặc chia toàn bộ một phương trình để có cùng ba hệ số đầu trước.
 
@@ -234,9 +234,9 @@
 
     Đặt \(L=Ax_0+By_0+Cz_0+D\), khi cần tìm hình chiếu, dùng
     \[
-    H=M-\frac{L}{A^2+B^2+C^2}(A;B;C)
+    \overrightarrow{OH}=\overrightarrow{OM}-\frac{L}{A^2+B^2+C^2}\vec n
     \]
-    (hiểu là phép tính từng tọa độ). Kiểm \(H\) thỏa phương trình và \(\overrightarrow{MH}\) là bội của pháp tuyến.
+    trong đó \(\vec n=(A;B;C)\). Tọa độ của \(H\) là tọa độ của vectơ \(\overrightarrow{OH}\). Kiểm \(H\) thỏa phương trình và \(\overrightarrow{MH}\) là bội của pháp tuyến.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G12_B14_FIG02_DISTANCE_AUTHORING_20261124.svg" alt="Khoảng cách là đoạn vuông góc MH từ M tới mặt phẳng"><figcaption>\(MH\) là khoảng cách ngắn nhất; \(MT^2=MH^2+HT^2\) đối với mọi \(T\) trên mặt phẳng.</figcaption></figure>
 
