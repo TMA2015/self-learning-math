@@ -27,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhân 4 với 3, phân biệt chọn đúng một loại với chọn một cây từ mỗi loại. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY01."
   },
   {
     "item_id": "THPT-G10-B23-C02",
@@ -57,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng số áo và quần, lập các cặp (áo;quần) để thấy mỗi áo ghép với mọi quần. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY02."
   },
   {
     "item_id": "THPT-G10-B23-P01",
@@ -87,21 +89,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu loại chữ lặp, đọc lại điều kiện được lặp; số 0 được phép ở vị trí mã. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY03."
   },
   {
     "item_id": "THPT-G10-B23-P02",
     "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
-    "stem": "Từ A đến B có 3 tuyến đường, từ B đến C có 4 tuyến. Mọi hành trình A→C bắt buộc qua B và chọn một tuyến ở mỗi đoạn. Có bao nhiêu hành trình?",
-    "answer_key": "12 hành trình",
-    "worked_solution": "Quy tắc nhân cho hai chặng: 3×4=12.",
+    "stem": "Từ A đến B có 3 tuyến, từ B đến C có 4 tuyến, và từ A đến C có 2 tuyến đi thẳng không qua B. Một hành trình chọn đi thẳng hoặc qua B đúng một lần. Có bao nhiêu hành trình?",
+    "answer_key": "14 hành trình.",
+    "worked_solution": "Qua B: mỗi tuyến A→B ghép với 4 tuyến B→C, được 3·4=12. Đi thẳng: 2. Hai trường hợp rời nhau nên có 12+2=14 hành trình.",
     "skill_ids": [
       "COUNT_PRODUCT_PATH"
     ],
     "problem_type_id": null,
     "difficulty": "BASE",
     "hints": [
-      "Mỗi tuyến đoạn đầu ghép được với tất cả tuyến đoạn sau."
+      "Tách đi thẳng và qua B; áp dụng quy tắc nhân cho nhánh qua B."
     ],
     "rubric": null,
     "interaction": {
@@ -117,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng 3 và 4, vẽ cây hai chặng, mỗi nhánh đầu có bốn nhánh sau. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY02."
   },
   {
     "item_id": "THPT-G10-B23-P03",
@@ -147,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng cả nhóm giao nhau, kiểm hai danh sách rời nhau trước khi cộng. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY01."
   },
   {
     "item_id": "THPT-G10-B23-P04",
@@ -177,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ tính hai nhóm món, lập đủ ba bước chọn. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY02."
   },
   {
     "item_id": "THPT-G10-B24-C01",
@@ -207,7 +213,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng tổ hợp, lưu ý đổi thứ tự người tạo cách xếp khác. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY05."
   },
   {
     "item_id": "THPT-G10-B24-C02",
@@ -237,7 +244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia 3!, kiểm ba vị trí có tên, đổi vai tạo kết quả mới. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY06."
   },
   {
     "item_id": "THPT-G10-B24-P01",
@@ -267,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu đếm 8·7·6, mỗi nhóm bị đếm 3! lần; chia đúng số lần trùng. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY07."
   },
   {
     "item_id": "THPT-G10-B24-P02",
@@ -297,21 +306,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho một người giữ hai vai, loại người đã chọn ở bước hai. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY06."
   },
   {
     "item_id": "THPT-G10-B24-P03",
     "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
-    "stem": "Các chữ T, O, A, N khác nhau được sắp thành một dãy 4 chữ. Có bao nhiêu dãy?",
-    "answer_key": "24 dãy",
-    "worked_solution": "Hoán vị của 4 chữ khác nhau: \\(4!=24\\).",
+    "stem": "Dùng mỗi chữ T, O, A, N đúng một lần để lập dãy bốn chữ. Có bao nhiêu dãy mà T không đứng đầu?",
+    "answer_key": "18 dãy.",
+    "worked_solution": "Có 4! =24 dãy tất cả. Nếu T đứng đầu, ba chữ còn lại có 3!=6 cách xếp. Do đó số dãy thỏa điều kiện là 24−6=18. Hoặc chọn chữ đầu trong O,A,N rồi xếp ba chữ còn lại: 3·3!=18.",
     "skill_ids": [
       "PERMUTATION_LETTERS"
     ],
     "problem_type_id": null,
     "difficulty": "BASE",
     "hints": [
-      "Không có chữ nào trùng nhau."
+      "Đếm tất cả rồi trừ các dãy có T đứng đầu, hoặc chọn chữ đầu trước."
     ],
     "rubric": null,
     "interaction": {
@@ -327,7 +337,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 4⁴, mỗi chữ chỉ được dùng một lần; số lựa chọn giảm sau mỗi bước. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY05."
   },
   {
     "item_id": "THPT-G10-B24-P04",
@@ -357,7 +368,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng hai tổ hợp, mỗi đội cần đồng thời đủ cả nam và nữ. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY08."
   },
   {
     "item_id": "THPT-G10-B25-C01",
@@ -387,7 +399,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy 4², chọn hai trong bốn nhân tử lấy b; phần còn lại lấy a. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY09."
   },
   {
     "item_id": "THPT-G10-B25-C02",
@@ -417,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhầm hệ số với số hạng, chọn hai trong năm nhân tử lấy x. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY09."
   },
   {
     "item_id": "THPT-G10-B25-P01",
@@ -447,7 +461,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu kết quả dương, giữ dấu của −1 trong nhân tử còn lại. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY10."
   },
   {
     "item_id": "THPT-G10-B25-P02",
@@ -477,21 +492,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ xét số mũ dương, viết số mũ tổng 6−2k rồi cho bằng 0. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY11."
   },
   {
     "item_id": "THPT-G10-B25-P03",
     "content_version": "THPT-G10-CHVIII-D3D4-R01-PLUS-P07-DELTA-20261028",
-    "stem": "Tìm hệ số của \\(x^2\\) trong \\((1+3x)^4\\).",
-    "answer_key": "54",
-    "worked_solution": "\\(\\binom42(3)^2=6\\cdot9=54\\).",
+    "stem": "Tìm hệ số của x² trong (1+3x)⁴−(1−3x)⁴. Giải thích vì sao không cần khai triển hết.",
+    "answer_key": "0.",
+    "worked_solution": "Hệ số x² của hai nhị thức lần lượt là C(4,2)·3²=54 và C(4,2)·(−3)²=54. Khi trừ, chúng triệt tiêu: 54−54=0. Chỉ cần tính hệ số của đúng bậc cần tìm.",
     "skill_ids": [
       "BINOMIAL_COMPOSITE_COEFF"
     ],
     "problem_type_id": null,
     "difficulty": "BASE",
     "hints": [
-      "Nhân thêm hệ số 3 tương ứng số mũ 2."
+      "Tính hệ số x² ở từng nhị thức; lưu ý (−3)²=3²."
     ],
     "rubric": null,
     "interaction": {
@@ -507,7 +523,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ 3², mỗi lần chọn 3x đóng góp cả hệ số 3. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY09."
   },
   {
     "item_id": "THPT-G10-B25-P04",
@@ -537,7 +554,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chọn bốn lần −2, đếm số lần chọn x để có đúng x⁴. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY10."
   },
   {
     "item_id": "THPT-G10-B23-P05",
@@ -567,7 +585,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cho hàng trăm bằng 0, tách hàng đơn vị 0 và khác 0; đếm lại từng trường hợp. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY04."
   },
   {
     "item_id": "THPT-G10-B23-P06",
@@ -597,7 +616,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu nhân vé vào cả phương án xe đạp, tách hai nhánh trước khi áp dụng quy tắc nhân. Ôn Bài 23 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY04."
   },
   {
     "item_id": "THPT-G10-B24-P05",
@@ -627,7 +647,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng số nhóm chứa A và chứa B, nhóm chứa cả hai bị đếm hai lần; dùng phần bù. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY07."
   },
   {
     "item_id": "THPT-G10-B24-P06",
@@ -657,7 +678,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu quên thứ tự trong khối, tính cả AB và BA. Ôn Bài 24 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY05."
   },
   {
     "item_id": "THPT-G10-B25-P05",
@@ -687,7 +709,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu bỏ dấu âm, viết (−x)³ trước khi lấy hệ số. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY10."
   },
   {
     "item_id": "THPT-G10-B25-P06",
@@ -717,7 +740,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia tổng hệ số cho 2 không có lí do, tính cả f(1) và f(−1) để tách chẵn/lẻ. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY12."
   },
   {
     "item_id": "THPT-G10-B25-P07",
@@ -747,7 +771,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu lấy hệ số của x, đặt số mũ x bằng 0 và kiểm chỉ một lựa chọn. Ôn Bài 25 phần Kiểm lỗi; luyện THPT-G10-CHVIII-TRY11."
   },
   {
     "item_id": "THPT-G10-CHVIII-TRY01",
