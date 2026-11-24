@@ -1299,8 +1299,8 @@
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3844,
-    "projection_field_differences": 51,
+    "placements": 3847,
+    "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
     "legacy_combined_answer_items": 653,
@@ -1898,6 +1898,54 @@
       },
       "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
       "reason": "Same criterion: perpendicular to two parallel lines in plane insufficient; canonical key/rationale matches. Source reveals answer inline, separate PED flag."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B01-C04",
+      "projection": "SGK:G12:CHI:B01:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-1.md",
+        "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+        "locator": "Tự thử B"
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
+      "reason": "Same counterexample x³, stationary derivative at 0 is insufficient for extremum; existing solution explains unchanged positive derivative."
+    },
+    {
+      "item_id": "THPT-G12-CHI-B02-C01",
+      "projection": "SGK:G12:CHI:B02:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-2.md",
+        "blob": "d6e517a980ec9259345285964f4c42767faa6122",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+        "locator": "Tự thử B"
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
+      "reason": "Same f(x)=x on (0,1), distinction between approaching 1 and attaining maximum; existing solution proves nonattainment."
+    },
+    {
+      "item_id": "THPT-TOP10-P34",
+      "projection": "SGK:G12:CHI:B03:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
+        "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+        "locator": "Tự thử B"
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
+      "reason": "Same rational function (x²−4)/(x−2), pole candidate 2 versus hole; canonical solution factors and gives finite limit. Existing key also discusses oblique asymptote; flag projection difference."
     }
   ],
   "academic_audit": "PENDING",
@@ -2780,7 +2828,7 @@
         "public_blob": "bde0820d157a5169d3cf365c846cf11169d40035"
       }
     ],
-    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_G11_BLOCK_REVIEW_COMPLETE_G12_PENDING",
+    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_BLOCK_REVIEW_COMPLETE_CANONICAL_MAPPING_PENDING",
     "sgk_pages": [
       {
         "grade": 10,
@@ -4091,12 +4139,49 @@
         "blob": "64f6a142a88e8c4dd63dff3f7d2220787fcdec5c",
         "markers": 0,
         "imported": 0,
-        "reused": 0,
+        "reused": 1,
         "local_source_ids": [],
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 3,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Tự thử A",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B01-C03",
+              "THPT-G12-CHI-B04-P02"
+            ],
+            "reason": "General sign change at x0 versus two fixed critical points and explicit continuity assumptions.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          },
+          {
+            "order": 2,
+            "locator": "Tự thử B",
+            "status": "REUSE_CONFIRMED",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B01-C04"
+            ],
+            "reason": "Same counterexample x³, stationary derivative at 0 is insufficient for extremum; existing solution explains unchanged positive derivative.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "item_id": "THPT-G12-CHI-B01-C04"
+          },
+          {
+            "order": 3,
+            "locator": "Tự thử C",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B01-P01"
+            ],
+            "reason": "Same disconnected-domain principle, existing pole x=2; source pole x=1 and no specific formula to evaluate at 0 and 2.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4106,12 +4191,48 @@
         "blob": "d6e517a980ec9259345285964f4c42767faa6122",
         "markers": 0,
         "imported": 0,
-        "reused": 0,
+        "reused": 1,
         "local_source_ids": [],
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 3,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Tự thử A",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B02-P01"
+            ],
+            "reason": "Source says endpoint value exceeds one local maximum, but no evidence it is global maximum; missing sufficient hypotheses.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          },
+          {
+            "order": 2,
+            "locator": "Tự thử B",
+            "status": "REUSE_CONFIRMED",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B02-C01"
+            ],
+            "reason": "Same f(x)=x on (0,1), distinction between approaching 1 and attaining maximum; existing solution proves nonattainment.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "item_id": "THPT-G12-CHI-B02-C01"
+          },
+          {
+            "order": 3,
+            "locator": "Tự thử C",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B02-A01"
+            ],
+            "reason": "Same possible positive lengths for perimeter 24, existing asks optimization rather than why domain is necessary.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4121,12 +4242,49 @@
         "blob": "02f4b8a446e89d824b7b08c833fc306ca9db02c6",
         "markers": 0,
         "imported": 0,
-        "reused": 0,
+        "reused": 1,
         "local_source_ids": [],
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 3,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Tự thử A",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B03-C01",
+              "THPT-G12-CHI-B03-C02"
+            ],
+            "reason": "Source asks both asymptotes for 2+1/(x−4), candidate data and asks differ.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          },
+          {
+            "order": 2,
+            "locator": "Tự thử B",
+            "status": "REUSE_CONFIRMED",
+            "candidate_item_ids": [
+              "THPT-TOP10-P34"
+            ],
+            "reason": "Same rational function (x²−4)/(x−2), pole candidate 2 versus hole; canonical solution factors and gives finite limit. Existing key also discusses oblique asymptote; flag projection difference.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL",
+            "item_id": "THPT-TOP10-P34"
+          },
+          {
+            "order": 3,
+            "locator": "Tự thử C",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B03-C03"
+            ],
+            "reason": "Source gives limiting difference to 2x+3, asks type; existing computes a specific different oblique asymptote.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4141,7 +4299,43 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 3,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Tự thử A",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B04-C03",
+              "THPT-G12-CHI-B04-P03"
+            ],
+            "reason": "Similar separate branches but existing formula/pole or requested task differs.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          },
+          {
+            "order": 2,
+            "locator": "Tự thử B",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B04-P05"
+            ],
+            "reason": "Same cubic, existing additionally asks at x=3; source only x=0, do not conflate.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          },
+          {
+            "order": 3,
+            "locator": "Tự thử C",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B04-P01"
+            ],
+            "reason": "Different reciprocal function and center.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4156,7 +4350,56 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 4,
         "locator": "Section Tự thử trước Core; A/B/C/D prompts, no direct answer in section",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Tự thử A",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B05-C02",
+              "THPT-TOP09-P09"
+            ],
+            "reason": "Different motion function and evaluation.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          },
+          {
+            "order": 2,
+            "locator": "Tự thử B",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B05-C03",
+              "THPT-G11-CHIX-B31-P10"
+            ],
+            "reason": "Source asks unit million đồng per product, existing different units and numerical derivatives.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          },
+          {
+            "order": 3,
+            "locator": "Tự thử C",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B05-A01"
+            ],
+            "reason": "Source compares fencing constraint for four versus three sides; existing optimizes three-sided fence only. Requires context.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          },
+          {
+            "order": 4,
+            "locator": "Tự thử D",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-CHI-B05-C04",
+              "THPT-G12-CHI-B05-P05"
+            ],
+            "reason": "Same cardboard dimensions but source asks why x=12 invalid; existing asks full domain or degenerate x=10.",
+            "source_answer_present": false,
+            "source_answer_mode": "NO_DIRECT_REVEAL"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4173,7 +4416,21 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "Bold TỰ THỬ Bxx-T01",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B06-T01",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-B06-P06",
+              "THPT-G12-B06-C05"
+            ],
+            "reason": "Vector sum exact subtask only; second dot product uses lengths 2,5, not candidate 2,3.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4190,7 +4447,21 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "Bold TỰ THỬ Bxx-T01",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B07-T01",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B07-C04",
+              "THPT-G12-B07-P02"
+            ],
+            "reason": "Different coordinates and coordinate plane; source combines coordinate difference and Oyz.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4207,7 +4478,21 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "Bold TỰ THỬ Bxx-T01",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B08-T01",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B08-C04",
+              "THPT-G12-B08-P01"
+            ],
+            "reason": "Different vectors and requested combination; source asks sign, 2u−v, distinction from lengths.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4225,7 +4510,32 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B09-T01",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B09-C02"
+            ],
+            "reason": "Same R=10 but different frequencies and number of groups; source also asks first nonempty class.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "B09-T02",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-B09-C04",
+              "THPT-G12-B09-P07"
+            ],
+            "reason": "Same frequencies but separate Q1/Q3 items; source asks n and both positions in one block.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4248,7 +4558,32 @@
         ],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B10-T01",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B10-C02"
+            ],
+            "reason": "Source tests cancellation of deviations ±3, not same variance calculation.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "B10-T02",
+            "status": "REUSE_CONFIRMED",
+            "candidate_item_ids": [
+              "THPT-G12-B10-C04"
+            ],
+            "item_id": "THPT-G12-B10-C04",
+            "reason": "Confirmed at checkpoint 17; preserve existing mapping.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4266,7 +4601,33 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B11-T01",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-B11-P02",
+              "THPT-G12-B11-A01"
+            ],
+            "reason": "Derivative 2t and family t²+C differ from fixed initial condition or cubic velocity; source calls signed velocity speed, domain missing.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "B11-T02",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-CHIX-B32-C11",
+              "THPT-G12-B11-C04"
+            ],
+            "reason": "Source asks verification on x>0 and why ln x invalid on x<0; existing derivative only or integral of 2/x.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4284,7 +4645,33 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B12-T01",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B12-C05",
+              "THPT-G12-B13-C02"
+            ],
+            "reason": "Source interval [−1,1] and compares signed integral to geometric area; candidates [−2,2] and area only.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "B12-T02",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B12-C03",
+              "THPT-G12-B12-P03"
+            ],
+            "reason": "Different integral bounds and numbers; reverse orientation adds requirement.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4302,7 +4689,31 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B13-T01",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-B13-C04"
+            ],
+            "reason": "Same curves/interval, source asks upper curve and integrand order; canonical asks area, solution includes integrand. Do not collapse different required output.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "B13-T02",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-B13-C08"
+            ],
+            "reason": "Same solid, source asks slice radius and area; canonical asks full volume.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4319,7 +4730,20 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B14-T01",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B14-P01"
+            ],
+            "reason": "Source dot product of specified u,n; candidate asks cross-product-derived normal to different vectors. Source explanation not focused on dot product.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4337,7 +4761,33 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B15-T01",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B15-C01",
+              "THPT-G12-B15-A01"
+            ],
+            "reason": "Source generic t=0 parameter expression; existing specific line/trajectory construction.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "B15-T02",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B15-C07",
+              "THPT-G12-B15-P07"
+            ],
+            "reason": "Different line and plane, intersection coordinates differ.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4360,7 +4810,32 @@
         ],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B16-T01",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B16-C01"
+            ],
+            "reason": "Source absolute dot product for opposite unit vectors; candidate angle between orthogonal vectors.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "B16-T02",
+            "status": "REUSE_CONFIRMED",
+            "candidate_item_ids": [
+              "THPT-G12-B16-A02"
+            ],
+            "item_id": "THPT-G12-B16-A02",
+            "reason": "Confirmed at checkpoint 17; preserve existing mapping.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4378,7 +4853,31 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 0,
         "locator": "FIRST_TRY_ID comments preceding task and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "B17-T01",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-B17-P01"
+            ],
+            "reason": "Source asks R² alone, canonical asks full sphere equation with center.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "B17-T02",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B17-C05"
+            ],
+            "reason": "Same tangency criterion but different sphere and plane.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4393,7 +4892,32 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 2,
         "locator": "Section Tự thử trước Core; numbered prompts and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Tự thử 1",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B18-C01",
+              "THPT-G12-B18-P02"
+            ],
+            "reason": "Different sample spaces and conditioning events.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "Tự thử 2",
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G12-B18-P07"
+            ],
+            "reason": "Same 3 red/2 green without replacement, canonical asks different colors rather than conditional second red.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4408,7 +4932,33 @@
         "local_id_mappings": [],
         "unkeyed_activity_blocks": 2,
         "locator": "Section Tự thử trước Core; numbered prompts and details",
-        "status": "SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "Tự thử 1",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B19-P02",
+              "THPT-G12-B19-P07"
+            ],
+            "reason": "Different production weights and defect rates.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          },
+          {
+            "order": 2,
+            "locator": "Tự thử 2",
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G12-B19-C04",
+              "THPT-G12-B19-P07"
+            ],
+            "reason": "Depends on preceding source T01, different weights and rates; preserve dependency.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       }
     ],
     "context_review": [
@@ -4509,6 +5059,27 @@
         "locator": "details[data-ped-first-try] #1",
         "status": "PED_REVIEW_PENDING",
         "reason": "Clarify neither membership vs not both."
+      },
+      {
+        "grade": 12,
+        "lesson": "B01",
+        "locator": "Tự thử C",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "No specific rational function provided for requested x=0,2 test."
+      },
+      {
+        "grade": 12,
+        "lesson": "B05",
+        "locator": "Tự thử C",
+        "status": "KNOWLEDGE_CONTEXT_REVIEW_PENDING",
+        "reason": "Fence constraint comparison requires explicit geometry and definitions."
+      },
+      {
+        "grade": 12,
+        "lesson": "B19",
+        "locator": "Tự thử 2",
+        "status": "KNOWLEDGE_CONTEXT_REVIEW_PENDING",
+        "reason": "Depends on data from Tự thử 1; preserve dependency in migration."
       }
     ],
     "unkeyed_source_note": "Unkeyed activity blocks are source inventory, not item IDs or imported records. A block can contain multiple tasks. Resolve against existing canonical records using exact task identity (not linked follow-up IDs alone), then identify genuinely unkeyed tasks before ID assignment and import; no loss or silent omission. G11 B19–B27 generic self-check redirects to examples require separate content-quality review. G12 local IDs Bxx-Txx are preserved as scoped source locators; 2 exact task matches mapped to existing global IDs. Remaining blocks need cross-bank reconciliation and explicit canonical IDs; no new IDs allocated during this checkpoint. B01–B05 16 prompts have no direct answer reveal in their first-try sections.",
@@ -4516,7 +5087,7 @@
     "g12_local_id_blocks": 20,
     "unkeyed_activity_blocks_g12": 20,
     "g12_local_id_reused": 2,
-    "g12_pending_mapping_blocks": 38,
+    "g12_pending_mapping_blocks": 35,
     "g12_partial_task_matches": [
       {
         "source_id": "B06-T01",
@@ -4543,6 +5114,16 @@
       "unreviewed_blocks": 0,
       "pending_mapping_blocks": 42,
       "scope": "G11 B02–B33; same-chapter records and relevant Topic candidate shards/first-try, public ChI selfcheck, G10 ChIII trig sources; not global exhaustiveness.",
+      "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    "g12_mapping_review": {
+      "reviewed_blocks": 40,
+      "reused": 5,
+      "partial_matches": 16,
+      "no_exact_match_in_reviewed_shards": 19,
+      "unreviewed_blocks": 0,
+      "pending_mapping_blocks": 35,
+      "scope": "G12 B01–B19; six same-grade chapter shards, relevant Topic candidates/first-try and ChI public selfcheck. Global exhaustiveness not claimed.",
       "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   }
