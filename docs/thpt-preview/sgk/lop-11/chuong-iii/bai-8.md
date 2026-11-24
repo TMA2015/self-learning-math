@@ -108,33 +108,36 @@
 
     ### 3.1. Đọc bảng thành các câu thống kê
 
-    **Đề bài.** Bảng có bốn nhóm \([0;10),[10;20),[20;30),[30;40)\), tần số \(4,8,6,2\). Tìm số quan sát dưới \(20\) và từ \(20\) trở lên.
+    **Đề bài.** Bảng có bốn nhóm \([0;10),[10;20),[20;30),[30;40)\), tần số \(3,7,9,5\). Tìm số quan sát dưới \(20\) và từ \(20\) trở lên.
 
-    **Phân tích:** Hai điều kiện chia miền dữ liệu thành hai phần tại mốc \(20\); dựa đúng quy ước đầu mút.
+    **Phân tích:** Hai điều kiện chia miền dữ liệu tại mốc \(20\); dựa đúng quy ước đầu mút.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Dưới \(20\) có \(4+8=12\) quan sát; từ \(20\) trở lên có \(6+2=8\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Dưới \(20\) có \(3+7=10\) quan sát; từ \(20\) trở lên có \(9+5=14\).</p></div>
 
-    **Kiểm lại:** \(12+8=20\), khớp tổng tần số của bảng.
+    **Kiểm lại:** \(10+14=24\), khớp tổng tần số của bảng.
+
 
     ### 3.2. Tính tỉ lệ nhóm đúng ý nghĩa
 
-    **Đề bài.** Với bảng trên, tỉ lệ nhóm \([10;20)\) là bao nhiêu? Có thể kết luận cả tám quan sát có giá trị \(15\) không?
+    **Đề bài.** Bốn nhóm \([0;10),[10;20),[20;30),[30;40)\) có tần số \(3,7,9,5\). Tỉ lệ nhóm \([20;30)\) là bao nhiêu? Có thể kết luận cả chín quan sát của nhóm có giá trị \(25\) không?
 
-    **Phân tích:** Tỉ lệ dùng số quan sát nhóm chia cỡ mẫu; giá trị giữa khoảng không là dữ liệu cá nhân.
+    **Phân tích:** Tỉ lệ là số quan sát của nhóm chia cỡ mẫu; trung điểm khoảng không phải dữ liệu cá nhân.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(8/(4+8+6+2)=8/20=40\%\). Không thể khẳng định cả tám bằng \(15\); chẳng hạn \(12\) và \(18\) cùng thuộc khoảng nhưng khác nhau.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> \(9/(3+7+9+5)=9/24=37{,}5\%\). Không thể khẳng định cả chín bằng \(25\); chẳng hạn \(22\) và \(28\) cùng thuộc khoảng nhưng khác nhau.</p></div>
 
-    **Kiểm lại:** \(40\%\) chỉ mô tả tần suất của một nhóm.
+    **Kiểm lại:** \(37{,}5\%\) chỉ mô tả tần suất của nhóm.
+
 
     ### 3.3. Đếm đúng các giá trị ở đầu mút
 
-    **Đề bài.** Ghép \(9,10,10,19,20,22,28,29,30,33,39,40\) vào các nhóm \([0;10),[10;20),[20;30),[30;40),[40;50)\).
+    **Đề bài.** Ghép \(8,10,15,19,20,21,25,30,30,35,40,42\) vào các nhóm \([0;10),[10;20),[20;30),[30;40),[40;50)\).
 
     **Phân tích:** Các giá trị \(10,20,30,40\) là đầu mút trái của những nhóm kế tiếp, phải định vị trước khi đếm.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Tần số lần lượt là \(1,3,4,3,1\): \(9\); \(10,10,19\); \(20,22,28,29\); \(30,33,39\); \(40\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.3"><p><strong>Lời giải.</strong> Tần số lần lượt là \(1,3,3,3,2\): \(8\); \(10,15,19\); \(20,21,25\); \(30,30,35\); \(40,42\).</p></div>
 
-    **Kiểm lại:** Tổng \(1+3+4+3+1=12\). Không số nào bị đếm hai lần.
+    **Kiểm lại:** Tổng \(1+3+3+3+2=12\). Mỗi quan sát được tính đúng một lần; hai số \(30\) là hai quan sát khác nhau cùng thuộc nhóm \([30;40)\).
+
 
     ### 3.4. Chọn nhóm đều để bao phủ số đo
 
