@@ -7,9 +7,9 @@
 ## Tiến độ và danh mục nguồn
 
 - Phạm vi reset: 32 bài Toán 11 B02–B33 và 19 bài Toán 12 B01–B19, tổng 51. B01 lớp 11 không thuộc đợt.
-- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 38/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B06, còn B07–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
+- **Toán 11 B02–B33: 32/32 CONTENT_READY, đã bàn giao đủ 32 nguồn canonical cho RELEASE.** B10–B27 kế thừa review đúng snapshot; B02–B09 và B28–B33 chốt Q18 AUTHOR_SELF_VERIFIED sau tự kiểm và sửa delta thực chất. Tổng đợt: 39/51 bài đã bàn giao; Toán 12 đã hoàn thành B01–B07, còn B08–B19. RELEASE_INTAKE=PENDING_RELEASE; biên bản này là điểm tiếp nhận nguồn, không phải chứng nhận website đã cập nhật.
 - B10–B17: bằng chứng review nằm trong PR liên quan; B18–B21: [kết luận đối chiếu](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7098583928); B22–B27: [kết luận đối chiếu và B27 delta](https://github.com/TMA2015/self-learning-math/issues/1039#issuecomment-7106569995). Giữ nguyên phạm vi/snapshot, không gán independent PASS cho nội dung mới.
-- Toán 12: B01–B06 CONTENT_READY; B07–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
+- Toán 12: B01–B07 CONTENT_READY; B08–B19 chưa hoàn thành. Không dùng PR đợt đã hủy #987 để tính hoàn thành.
 
 | Lớp | Bài | PR nguồn canonical | Trạng thái AUTHORING / bàn giao |
 |---|---|---|---|
@@ -51,7 +51,8 @@
 | 12 | B04 | [#1073](https://github.com/TMA2015/self-learning-math/pull/1073) | CONTENT_READY — đã bàn giao |
 | 12 | B05 | [#1074](https://github.com/TMA2015/self-learning-math/pull/1074) | CONTENT_READY — đã bàn giao |
 | 12 | B06 | [#1075](https://github.com/TMA2015/self-learning-math/pull/1075) | CONTENT_READY — đã bàn giao |
-| 12 | B07–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
+| 12 | B07 | [#1076](https://github.com/TMA2015/self-learning-math/pull/1076) | CONTENT_READY — đã bàn giao |
+| 12 | B08–B19 | Bổ sung PR canonical vào bảng này khi thực hiện | Chưa xác nhận hoàn thành |
 
 ## Bằng chứng bàn giao các bài đã chốt
 
@@ -208,6 +209,16 @@ Asset delta tại `docs/assets/images/thpt/`: `G12_B05_FIG02_BOX_NET_AUTHORING_2
 | [#1075](https://github.com/TMA2015/self-learning-math/pull/1075) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md` | `0aac0cec595611aa68c7817c0af78095338d83d4` | `8991c8a30487fdf1db65cf31a19b0ed68ef52518` | `b7eb1d0d5120de61065ba002760f1e56f6337063` |
 
 Asset delta tại `docs/assets/images/thpt/`: `G12_B06_FIG02_TETRA_CENTROID_AUTHORING_20261124.svg` (`ec871f9e8285f1f6ad203214b975a76783c7174b`); `G12_B06_FIG03_VECTOR_ANGLE_AUTHORING_20261124.svg` (`a3133220a16675ca3c719deea35b9d7e6476dc85`). Giữ nguyên `FIG-G12-CHII-B06-R00.svg` (`26e388d873521aa5b0bae945343e69357490ec16`).
+
+### Toán 12 B07 — Hệ trục tọa độ trong không gian (24/11/2026)
+
+**Q18 AUTHOR_SELF_VERIFIED · CONTENT_READY · RELEASE_INTAKE=PENDING_RELEASE.** Đã đọc văn bản [SGK KNTT Toán 12 tập 1, trang in 60–66](https://toanaz.com/wp-content/uploads/2026/10/SGK-Toan-12-Tap-1-Chuong-trinh-moi.pdf), HĐ1–4, Ví dụ 1–5, nhận xét hình chiếu, Vận dụng 1–2, bài tập 2.13–2.19, phần đọc thêm tọa độ cầu; screenshot PDF cache miss, không tuyên bố đã kiểm ảnh gốc. Đọc toàn văn mẫu Golden G10 B10. Bốn tab, hai mục chính đối ứng: hệ trục tọa độ; tọa độ điểm và vectơ. Giải thích ba vectơ đơn vị, tính duy nhất, sáu hình chiếu, thuộc trục/mặt phẳng, dấu, bằng nhau, cuối trừ đầu; tìm đỉnh lăng trụ/hình hộp, vị trí và độ dời, gốc tại trần; đọc thêm tọa độ cầu có điều kiện góc phần tư và điểm trên trục. Không chuyển phép toán tổng quát B08 sang B07. 10 ví dụ, 3 Vận dụng độc lập có Đối chiếu/Kiểm lỗi và 7 lỗi thực chất. 27 nhóm tự kiểm đạt, gồm chuẩn hóa trục, chiếu, hiệu có dấu, kiểm điểm trùng, lăng trụ/hình hộp không suy biến, đơn vị km/m, chuyển đổi tọa độ cầu và kiểm tọa độ các điểm/đường trong SVG. Sửa hình cũ theo phép chiếu nhất quán, thêm hình độ dời. Diff chỉ canonical và hai SVG riêng B07. Không còn lỗi thực chất đã phát hiện.
+
+| PR | Nguồn canonical | Commit khóa | Blob nền main | Blob ứng viên |
+|---|---|---|---|---|
+| [#1076](https://github.com/TMA2015/self-learning-math/pull/1076) | `docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md` | `51f6eb713b27ecae933d9e46496c11b2c26fc74f` | `4bfbed222d552f3ccb9c965616245015930ab1cd` | `97f27ec66f7a7582b2dabe5fd2915d634dd9bfe8` |
+
+Asset delta tại `docs/assets/images/thpt/`: sửa `FIG-G12-CHII-B07-R00.svg` từ blob `979ca912e99fdadfc4e91ae0edad5db34fc13928` sang `053c483242c92f11097b5d577aeb4ad5f832497a`; thêm `G12_B07_FIG02_DISPLACEMENT_AUTHORING_20261124.svg` (`498a7f687a493dc3cf4b03d4423eba5025559d8b`).
 
 ## Cách cập nhật
 
