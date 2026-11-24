@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 539,
+    "legacy_combined_answer_items": 525,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_170_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_184_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 170 manually verified and key separated at checkpoints 29–33; 539 remain combined, answer_key=null. Preserve source and solution except explicit scoped author clarifications; self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 184 manually verified and key separated at checkpoints 29–34; 525 remain combined, answer_key=null. Preserve source and solution except explicit scoped author clarifications; self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 539,
+      "remaining_combined_answer_items": 525,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 170,
-        "remaining_count": 539,
+        "reviewed_count": 184,
+        "remaining_count": 525,
         "batches": [
           {
             "checkpoint": 29,
@@ -7894,6 +7894,223 @@
               "Constant function: every positive T yields repetition, T/2 also, so no smallest positive period; source convention preserved without claiming direct S1 re-read.",
               "B04-KFT01 equivalence of equations: verified keys, no exact dedicated skill ID found in shard, pending mapping; do not invent IDs.",
               "All 26 keys verified; no independent Academic/PED verdict or full S1/outcome/reveal/D6 review. Existing 18 draft review records unchanged."
+            ]
+          },
+          {
+            "checkpoint": 34,
+            "baseline": "ada3d568fad65033f4bcb5683cb9b60a4afd40f0",
+            "reviewed_candidate": "6309f0e6f97f6a834db9f54012da20d3af5ee874",
+            "scope": "G11 SGK ChIII–IX: all 14 remaining combined-answer records, across six shards, verified against 14 exact historical lesson blobs. Separate keys, map 14/14 existing skills, improve all 14 stems and/or explanations without changing underlying tasks; B29 clarifies ambiguous complement wording in accordance with source solution.",
+            "shards": [
+              {
+                "shard": "g11-chiii",
+                "before": "7f1101ee369ec4dcf0dc1a5b7eced139fd9622c1",
+                "after": "8a017b6e5e068ffb04403baa61ee3301903c28b5",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G11-B09-KFT01",
+                    "source_blob": "46aa17f758783330c2b396f9ed36a25ab77a4094",
+                    "answer_key": "20 quan sát; vị trí thứ 10 thuộc nhóm [10;20).",
+                    "skill_ids": [
+                      "G11-B09-CUMULATIVE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 28
+              },
+              {
+                "shard": "g11-chiv",
+                "before": "3904b5e3b0f4abb768f92cb9628152743c341ca3",
+                "after": "c3230d7b98cb1e56e2084d5395f87724cdfd86e1",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G11-B10-KFT01",
+                    "source_blob": "b55bf3c5122dd967b3b56fe9085eff19e58d509e",
+                    "answer_key": "Có, C∈(P) vì đường thẳng AB nằm trong (P).",
+                    "skill_ids": [
+                      "G11-B10-INCIDENCE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-B12-KFT01",
+                    "source_blob": "6dc44484c9e12d7dcbf49c40157645ddae577390",
+                    "answer_key": "Không; AB nằm trong mặt phẳng đáy, không song song mặt phẳng đó.",
+                    "skill_ids": [
+                      "G11-B12-POSITIONS",
+                      "G11-B12-PARALLEL_TEST"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-B13-KFT01",
+                    "source_blob": "619162cbe9854188c5873e03a69c3fb5afc95b43",
+                    "answer_key": "(MNK)∥(ABC), vì MN và MK cắt nhau tại M và cùng song song với (ABC).",
+                    "skill_ids": [
+                      "G11-B13-PLANE_TEST"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-B14-KFT01",
+                    "source_blob": "121b165f6bd95cdfa4c33d4a4def678d9121e81c",
+                    "answer_key": "Ảnh là điểm A.",
+                    "skill_ids": [
+                      "G11-B14-DEGENERACY"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 30
+              },
+              {
+                "shard": "g11-chv",
+                "before": "f99171fffcde8e3e89571851dee1e6994b42a0f5",
+                "after": "9496b950480739d1866d93be6abe3216fec11070",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G11-B15-KFT01",
+                    "source_blob": "95bbe5ecdd73b92f88176ae0245e11b1098d8e6e",
+                    "answer_key": "Giới hạn bằng 2; mỗi số hạng lớn hơn 2 nhưng khoảng cách 1/n tiến về 0.",
+                    "skill_ids": [
+                      "G11-B15-FINITE_SEQUENCE"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-B17-KFT01",
+                    "source_blob": "36a7c21f3ae2474318c1e857acbcb640680e1326",
+                    "answer_key": "Không liên tục tại a vì lim f(x)=3≠f(a)=5 khi x→a.",
+                    "skill_ids": [
+                      "G11-B17-CONTINUITY_POINT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 30
+              },
+              {
+                "shard": "g11-chvi",
+                "before": "bb62f1201041614a14577ef318779c8f8d89f5f8",
+                "after": "c1c404b60a5d1ee464e90f6cb5b8755ce3feb9c7",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G11-B18-KFT01",
+                    "source_blob": "fd7d7a33ec276c4e03c95185c5ea49b53643b584",
+                    "answer_key": "(1) 4⁻¹=1/4. (2) 27^(2/3)=9. (3) Tăng 6% mỗi năm; t nguyên không âm nếu cập nhật hằng năm.",
+                    "skill_ids": [
+                      "G11-B18-POWER_INTEGER",
+                      "G11-B18-POWER_RATIONAL",
+                      "G11-B18-GROWTH_MODEL"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 44
+              },
+              {
+                "shard": "g11-chviii",
+                "before": "0ed20f03793c61479dd731980bc32c53269dfdb0",
+                "after": "1cc0c14893932fe0db6903ed6667073c1cd5bf9c",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G11-B28-KFT01",
+                    "source_blob": "86018a916315d313249f958ff2c66acdb52612be",
+                    "answer_key": "A∪B={2,4,5,6}; A∩B={4,6}; Ā={1,3,5}; không xung khắc.",
+                    "skill_ids": [
+                      "G11-B28-UNION",
+                      "G11-B28-INTERSECTION",
+                      "G11-B28-COMPLEMENT",
+                      "G11-B28-DISJOINT"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-B29-KFT01",
+                    "source_blob": "51b686118c52605d8c8ab64b2e05d3fea419c1f8",
+                    "answer_key": "21 bạn thuộc ít nhất một CLB; 9 bạn không thuộc CLB nào.",
+                    "skill_ids": [
+                      "G11-B29-VENN_COUNTS",
+                      "G11-B29-ADDITION_OVERLAP"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-B30-KFT01",
+                    "source_blob": "7ef2e8be4bca6c64f7ab190ed5d1cde921998373",
+                    "answer_key": "(i) 3/5; (ii) 19/20.",
+                    "skill_ids": [
+                      "G11-B30-MULTIPLY_INDEPENDENT",
+                      "G11-B30-AT_LEAST_ONE"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 39
+              },
+              {
+                "shard": "g11-chix",
+                "before": "511e4aff0a1c69c3516ff53b4af88630c4f9e314",
+                "after": "fb8ff39a91f1077aea16b216f830689f84d5ad96",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-G11-B31-KFT01",
+                    "source_blob": "20f6b47a4f56a1531ee695fde11953edfb9661bb",
+                    "answer_key": "v(1)=8 m/s; thương sai phân cần h≠0; tiếp tuyến y−5=8(x−1).",
+                    "skill_ids": [
+                      "G11-B31-LIMIT_QUOTIENT",
+                      "G11-B31-INSTANT_VELOCITY",
+                      "G11-B31-TANGENT_EQUATION"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-B32-KFT01",
+                    "source_blob": "078a5d9aca09954fd2b451508152147f6a655015",
+                    "answer_key": "y′=cos(2x)−2(x+1)sin(2x), quy tắc tích; z′=−1/(5−x), x<5, log hàm hợp; w′=2xe^(x²), mũ hàm hợp.",
+                    "skill_ids": [
+                      "G11-B32-PRODUCT",
+                      "G11-B32-TRIG_CHAIN",
+                      "G11-B32-EXP_LOG_CHAIN",
+                      "G11-B32-DOMAIN_VALIDATION",
+                      "G11-B32-RULE_SELECTION"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-G11-B33-KFT01",
+                    "source_blob": "920752c92ab12a97d8e034780907fd2bcaac1308",
+                    "answer_key": "v=3t²−6 cm/s; a=6t cm/s². Tại t=1, v=−3 cm/s (chiều âm), a=6 cm/s² (chiều dương).",
+                    "skill_ids": [
+                      "G11-B33-ACCELERATION",
+                      "G11-B33-SIGN_INTERPRET"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  }
+                ],
+                "unchanged_count": 62
+              }
+            ],
+            "notes": [
+              "B13 midpoint proof establishes MN and MK disjoint from base plane before applying two intersecting lines criterion. B12 clarifies contained vs parallel. B14 explains why projection collapses to A.",
+              "B29 ambiguous original wording 'không thuộc cả hai' corrected to neither club, consistent with original key 9; 21 in union, 9 outside. Historical audit_note retained as provenance.",
+              "B31 restore units and difference quotient derivation; B32 explicit derivative task, domain and rule selection; B33 position coordinate not unsigned distance.",
+              "All 14 math results verified and 14 skill mappings grounded in existing shard IDs; no independent Academic/PED or S1 re-read verdict."
             ]
           }
         ]
