@@ -716,6 +716,51 @@ function verifyG11W5(previous,current,changed,expected){
  console.log("PASS #1039 W5 four source locks, two new and four reused SVG, frozen W1/W2/W3/W4 and assessment boundary, exact hook");
 }
 
+const G11_W6_ROWS=[[22,"d8a679897dde1d2fa25e12df56772eb54be29ff4","fdcee166ee96617e3889cd9c05d2b5549be0705c"],[23,"ad1ce1335b2c4dcef36edff8f8ad5378b8f63cad","03cccc3ae3b48856589611ee4d3ffea05cdc89b4"],[24,"0bd7550087f455264e2b5e5d3214078e063ccb1c","8eab4af3ecff4958feffaf2bf092a1ec01a506c4"],[25,"c6ba455035041fbe16ee66f346cb78477ceaaa73","81d59089a9169c20a920735eb87dc8008b958afe"],[26,"417ce70fc81b8a656e803855d0594dfa9db945b2","3babd4c575e2dc5b9974b3abfe686ac4d5a3a5bc"],[27,"abd417ddb6d89528eaa8da28c132a126a26738e0","d1f4a6cd17321278cb8c6bc65ab397f8b15feb0b"]];
+const G11_W6_NEW_ASSETS=[["docs/assets/images/thpt/G11_B22_KHEOPS_ANGLE_AUTHORING_20261123.svg","9e3820f228b9c0733378736e4cd24636572b5c83"],["docs/assets/images/thpt/G11_B22_SKEW_PERP_RECTANGULAR_BOX_AUTHORING_20261123.svg","95c942955c6a4499378b90260eb37a3116791854"],["docs/assets/images/thpt/G11_B23_PARALLEL_PLANES_NORMAL_AUTHORING_20261123.svg","d8264650f25a1dc885cab77a6ba9900829fb2ee1"],["docs/assets/images/thpt/G11_B23_PERPENDICULAR_BISECTOR_PLANE_AUTHORING_20261123.svg","bca2dd8689c5edb1a19bb1e6fe11eeb24d40df52"],["docs/assets/images/thpt/G11_B24_SABC_PROJECTION_EXAMPLE_AUTHORING_20261123.svg","f05beae8d637098a296c4e52e2a6ff4913d145f7"],["docs/assets/images/thpt/G11_B24_THREE_PERPENDICULAR_LINES_AUTHORING_20261123.svg","ccfeff10568475186750ae735dfc8edc4bca7658"],["docs/assets/images/thpt/G11_B25_CUBE_EQUILATERAL_DIAGONALS_AUTHORING_20261123.svg","40e1fa9e9d922d4bb433a6ee36e2477bf66afbca"],["docs/assets/images/thpt/G11_B25_DIHEDRAL_CHAIR_AUTHORING_20261123.svg","e2d84db3d7fe0dc03bb33a4afba5e3b31bbba362"],["docs/assets/images/thpt/G11_B25_PERPENDICULAR_PLANES_AUTHORING_20261123.svg","1f2e7a6f93fc5981def01d39e7ab41b13717ef57"],["docs/assets/images/thpt/G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg","8efdd9fd9528f064da32202edb8f155941186b9f"],["docs/assets/images/thpt/G11_B25_RHOMBUS_PYRAMID_DIHEDRAL_AUTHORING_20261123.svg","6ef7828be37ca6906e7fd06aa3642a3085aee99f"],["docs/assets/images/thpt/G11_B25_SPECIAL_PRISMS_AUTHORING_20261123.svg","139874b20f72f567c66a311141642cc2b441e079"],["docs/assets/images/thpt/G11_B26_PARALLEL_DISTANCES_AUTHORING_20261123.svg","8d235dac67e15cc18514585fd95b0ddf01506f60"],["docs/assets/images/thpt/G11_B26_PYRAMID_HEIGHT_AUTHORING_20261123.svg","57867c20712b82d1d117621124936d5a7b797657"],["docs/assets/images/thpt/G11_B26_RHOMBUS_PRISM_DISTANCES_AUTHORING_20261123.svg","c6a0b4379711c13fa429f22ec47b9b1f41641437"],["docs/assets/images/thpt/G11_B26_RIGHT_TRIANGULAR_PRISM_AUTHORING_20261123.svg","ed51c2603dcf3f4bb6d5135fbf76b3f559678fb7"],["docs/assets/images/thpt/G11_B26_SABC_COMMON_PERPENDICULAR_AUTHORING_20261123.svg","fbaa2a728fbd178866cd7b3425b9265ba21af06b"],["docs/assets/images/thpt/G11_B26_SKEW_COMMON_PERPENDICULAR_AUTHORING_20261123.svg","53e2dd16ebaa406149586ccaa2ae64d70546ffa6"],["docs/assets/images/thpt/G11_B26_SLOPE_CLEARANCE_AUTHORING_20261123.svg","799feadf45ad7a3e57fb42167bac21b9faafea89"],["docs/assets/images/thpt/G11_B26_SQUARE_PYRAMID_SKEW_DISTANCE_AUTHORING_20261123.svg","e86bfcbfb9d7414afec530db780122947bfb9e5c"],["docs/assets/images/thpt/G11_B27_FRUSTUM_BASKET_AUTHORING_20261123.svg","56ac666836da322f1dd9fb63dca588046ce62759"],["docs/assets/images/thpt/G11_B27_FRUSTUM_SIMILARITY_AUTHORING_20261123.svg","10ccc89345ab469eb7feb136a933da546c8234f0"],["docs/assets/images/thpt/G11_B27_PARALLELEPIPED_OBLIQUE_AUTHORING_20261123.svg","4f495702bc69960025b454acd6c967a17a83f760"],["docs/assets/images/thpt/G11_B27_PRISM_INCLINED_HEIGHT_AUTHORING_20261123.svg","f62240aa34d6fe3711193b1f742cd2ed286c0518"],["docs/assets/images/thpt/G11_B27_TETRAHEDRON_ORTHOGONAL_AUTHORING_20261123.svg","2669181a54e561532ecbfb032348f92f43d2dc42"]];
+const G11_W6_EXISTING_ASSETS=[["docs/assets/images/thpt/FIG-G11-CHVII-B22-01_R00.svg","5f2d23adb6f947064312d04d67ce5a5bb2d1ff48"],["docs/assets/images/thpt/FIG-G11-CHVII-B23-01_R00.svg","b53b65704f9830e1c97b533bac0e79a0b56761b6"],["docs/assets/images/thpt/FIG-G11-CHVII-B24-01_R00.svg","c98d7df30b87c339336636e00322816a4099681b"],["docs/assets/images/thpt/FIG-G11-CHVII-B25-01_R00.svg","3f6112a7b12f1829ee2249b979d45f1f5370fc66"],["docs/assets/images/thpt/FIG-G11-CHVII-B26-01_R00.svg","26fb51f3af65ba7d86a2907f0eaff808d2d87532"],["docs/assets/images/thpt/FIG-G11-CHVII-B27-01_R00.svg","a7bec7a20295d09ca6f32aae0e8910cef7bed9dc"],["docs/assets/images/thpt/G10_B20_POINT_LINE_DISTANCE_R02.svg","ef30404a12bbb1a9241e7efc3c5f8a4fa1a8e9ff"]];
+const G11_W6_LESSONS=["docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-23.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md"];
+const G11_W6_FILES=["docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-23.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","docs/assets/images/thpt/G11_B22_KHEOPS_ANGLE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B22_SKEW_PERP_RECTANGULAR_BOX_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B23_PARALLEL_PLANES_NORMAL_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B23_PERPENDICULAR_BISECTOR_PLANE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B24_SABC_PROJECTION_EXAMPLE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B24_THREE_PERPENDICULAR_LINES_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_CUBE_EQUILATERAL_DIAGONALS_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_DIHEDRAL_CHAIR_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_PERPENDICULAR_PLANES_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_REGULAR_PYRAMID_FRUSTUM_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_RHOMBUS_PYRAMID_DIHEDRAL_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B25_SPECIAL_PRISMS_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_PARALLEL_DISTANCES_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_PYRAMID_HEIGHT_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_RHOMBUS_PRISM_DISTANCES_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_RIGHT_TRIANGULAR_PRISM_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_SABC_COMMON_PERPENDICULAR_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_SKEW_COMMON_PERPENDICULAR_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_SLOPE_CLEARANCE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B26_SQUARE_PYRAMID_SKEW_DISTANCE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_FRUSTUM_BASKET_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_FRUSTUM_SIMILARITY_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_PARALLELEPIPED_OBLIQUE_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_PRISM_INCLINED_HEIGHT_AUTHORING_20261123.svg","docs/assets/images/thpt/G11_B27_TETRAHEDRON_ORTHOGONAL_AUTHORING_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs","scripts/test-sgk-golden-first-paint.cjs",".github/workflows/sgk-golden-first-paint-qa.yml",".github/workflows/thpt-scoped-release-qa.yml"];
+function verifyG11W6(previous,current,changed,expected){
+ assert.equal(previous,"7c9161abdbe5a51ecc11db343cd660a70d8f2657","W6 must start from exact published W5 main");
+ assert.deepEqual(changed.slice().sort(),G11_W6_FILES.slice().sort());
+ assert.deepEqual(expected.slice().sort(),G11_W6_LESSONS.slice().sort());
+ const read=(ref,file)=>cp.execFileSync("git",["show",ref+":"+file],{cwd:root});
+ const receipt=read(current,G11_W1_HANDOFF);
+ assert.equal(blob(read(previous,G11_W1_HANDOFF)),"4d8858dca8e46f64ff33d183f6adddb1ca0ce25a");
+ assert.equal(blob(receipt),"5a1813dd06dee8dcac575cf4d1d7f3df0c722817");
+ assert(receipt.toString("utf8").startsWith(read(previous,G11_W1_HANDOFF).toString("utf8")));
+ const hook="hooks/sgk_golden_first_paint.py";
+ const oldHook=read(previous,hook).toString("utf8"),nowHook=read(current,hook).toString("utf8");
+ assert.equal(blob(read(current,hook)),"7b3301c7e606af4e174722914c56613477ed3946");
+ const start=nowHook.indexOf("# #1039 W6 exact route scope;");
+ const end=nowHook.indexOf("def on_post_page(output, page, config):");
+ assert(start>0&&end>start);
+ assert.equal((nowHook.slice(0,start)+nowHook.slice(end)).replace("    if uri in _W6_ROUTES:\n        return _render_w6(output, uri)\n",""),oldHook,"W1/W2/W3/W4/W5 and other routes unchanged");
+ for(const file of ["docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",...G11_W5_LESSONS,...G11_W4_LESSONS,...G11_W3_LESSONS,...G11_W2_LESSONS,...G11_W1_LESSONS])assert.equal(blob(read(previous,file)),blob(read(current,file)));
+ for(const [n,oldSha,newSha] of G11_W6_ROWS){
+  const file="docs/thpt-preview/sgk/lop-11/chuong-vii/bai-"+n+".md";
+  assert.equal(blob(read(previous,file)),oldSha);
+  const source=read(current,file),content=source.toString("utf8");
+  assert.equal(blob(source),newSha);assert.equal(blob(fs.readFileSync(path.join(root,file))),newSha);
+  assert.deepEqual(content.split("\n").filter(l=>l.startsWith('=== "')),['=== "Khám phá kiến thức"','=== "Kiến thức SGK"','=== "Ví dụ"','=== "Lỗi thường gặp"']);
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final|g11-chapter-selfcheck)/i.test(content));
+  const recovery=content.split('=== "Lỗi thường gặp"')[1];
+  assert.equal(recovery.split("\n").filter(l=>/^    ### 4\.\d+\./.test(l)).length,n<=24?6:8);
+  assert(recovery.includes("**Học tiếp:**"));
+  assert(receipt.toString("utf8").includes(oldSha)&&receipt.toString("utf8").includes(newSha));
+  console.log("SCOPED_G11_W6_SOURCE_PASS "+file+" "+newSha);
+ }
+ for(const [file,h] of [...G11_W6_EXISTING_ASSETS,...G11_W5_NEW_ASSETS,...G11_W5_EXISTING_ASSETS,...G11_W4_NEW_ASSETS,...G11_W4_EXISTING_ASSETS,...G11_W3_NEW_ASSETS,...G11_W3_EXISTING_ASSETS,...G11_W2_ASSETS,...G11_W1_ASSETS]){
+  assert.equal(blob(read(previous,file)),h);assert.equal(blob(read(current,file)),h);
+ }
+ for(const [file,h] of G11_W6_NEW_ASSETS){
+  assert.throws(()=>read(previous,file),"New SVG must not exist in baseline");
+  assert.equal(blob(read(current,file)),h);assert.equal(blob(fs.readFileSync(path.join(root,file))),h);
+ }
+ console.log("PASS #1039 W6 six source locks, 25 new and seven reused SVG, frozen W1/W2/W3/W4/W5 and assessment boundary, exact hook");
+}
+
 function main(){
  const previous=process.env.BEFORE_SHA,current=process.env.HEAD_SHA;
  assert(sha(previous)&&sha(current),"Full nonzero main push before/head commits required");
@@ -723,6 +768,9 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.length===G11_W6_FILES.length&&changed.every(x=>G11_W6_FILES.includes(x))){
+  verifyG11W6(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
+ }
  if(changed.length===G11_W5_FILES.length&&changed.every(x=>G11_W5_FILES.includes(x))){
   verifyG11W5(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));return;
  }
