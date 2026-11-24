@@ -470,5 +470,423 @@
     "item_id": "THPT-G10-CHII-RD1-14",
     "original_type": "SHORT_EXPLANATION",
     "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B15-C01",
+    "skill_id": "FUNCTION_MAPPING"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B15-C02",
+    "skill_id": "FUNCTION_DOMAIN"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B15-P01",
+    "skill_id": "FUNCTION_DOMAIN"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B15-P02",
+    "skill_id": "FUNCTION_PIECEWISE"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B15-P03",
+    "skill_id": "FUNCTION_MONOTONICITY"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:PRACTICE",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G10-B15-P04",
+    "skill_id": "FUNCTION_MODELING"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B17-C01",
+    "skill_id": "QUAD_SIGN"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B17-C02",
+    "skill_id": "QUAD_DOUBLE_ROOT_SIGN"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B17-P01",
+    "skill_id": "QUAD_INEQUALITY"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B17-P02",
+    "skill_id": "QUAD_INEQUALITY"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B17-P03",
+    "skill_id": "QUAD_PARAMETER"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B17:PRACTICE",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G10-B17-P04",
+    "skill_id": "QUAD_MODELING"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-G10-B18-C01",
+    "skill_id": "RADICAL_CONDITION"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B18-C02",
+    "skill_id": "RADICAL_TWO_SIDES"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B18-P01",
+    "skill_id": "RADICAL_FILTER"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B18-P02",
+    "skill_id": "RADICAL_FILTER"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B18-P03",
+    "skill_id": "RADICAL_DOMAIN"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B18:PRACTICE",
+    "role": "SGK_APPLICATION",
+    "order": 4,
+    "item_id": "THPT-G10-B18-P04",
+    "skill_id": "RADICAL_MODELING"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:CORE",
+    "role": "SGK_CORE",
+    "order": 1,
+    "item_id": "THPT-CORE-QF01",
+    "skill_id": "B16_OUT_02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:CORE",
+    "role": "SGK_CORE",
+    "order": 2,
+    "item_id": "THPT-G10-B16-C01",
+    "skill_id": "B16_OUT_01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:CORE",
+    "role": "SGK_CORE",
+    "order": 3,
+    "item_id": "THPT-G10-B16-C02",
+    "skill_id": "B16_OUT_03"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:CORE",
+    "role": "SGK_CORE",
+    "order": 4,
+    "item_id": "THPT-G10-B16-C03",
+    "skill_id": "B16_OUT_04"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:CORE",
+    "role": "SGK_CORE",
+    "order": 5,
+    "item_id": "THPT-G10-B16-C04",
+    "skill_id": "B16_OUT_05"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:CORE",
+    "role": "SGK_CORE",
+    "order": 6,
+    "item_id": "THPT-G10-B16-C05",
+    "skill_id": "B16_OUT_02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 1,
+    "item_id": "THPT-G10-B16-P00",
+    "skill_id": "B16_OUT_03"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 2,
+    "item_id": "THPT-G10-B16-P01",
+    "skill_id": "B16_OUT_01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 3,
+    "item_id": "THPT-G10-B16-P02",
+    "skill_id": "B16_OUT_02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 4,
+    "item_id": "THPT-G10-B16-P03",
+    "skill_id": "B16_OUT_03"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B16-P04",
+    "skill_id": "B16_OUT_04"
+  },
+  {
+    "collection": "SGK:G10:CHVI:B16:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 6,
+    "item_id": "THPT-G10-B16-P05",
+    "skill_id": "B16_OUT_05"
+  },
+  {
+    "collection": "SGK:G10:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 1,
+    "item_id": "HPT-G10-CHVI-WRI-15-01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 2,
+    "item_id": "HPT-G10-CHVI-WRI-15-02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 3,
+    "item_id": "HPT-G10-CHVI-WRI-16-01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 4,
+    "item_id": "HPT-G10-CHVI-WRI-16-02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 5,
+    "item_id": "HPT-G10-CHVI-WRI-17-01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 6,
+    "item_id": "HPT-G10-CHVI-WRI-17-02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 7,
+    "item_id": "HPT-G10-CHVI-WRI-18-01"
+  },
+  {
+    "collection": "SGK:G10:CHVI:WRITTEN",
+    "role": "SGK_WRITTEN",
+    "order": 8,
+    "item_id": "HPT-G10-CHVI-WRI-18-02"
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 1,
+    "item_id": "THPT-G10-B15-R01",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 2,
+    "item_id": "THPT-G10-B15-R02",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 3,
+    "item_id": "THPT-G10-B15-R03",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 4,
+    "item_id": "THPT-G10-B15-R04",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 5,
+    "item_id": "THPT-G10-B15-R05",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 6,
+    "item_id": "THPT-G10-B16-R01",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 7,
+    "item_id": "THPT-G10-B16-R02",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 8,
+    "item_id": "THPT-G10-B16-R03",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 9,
+    "item_id": "THPT-G10-B16-R04",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 10,
+    "item_id": "THPT-G10-B16-R05",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 11,
+    "item_id": "THPT-G10-B17-R01",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 12,
+    "item_id": "THPT-G10-B17-R02",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 13,
+    "item_id": "THPT-G10-B17-R03",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 14,
+    "item_id": "THPT-G10-B17-R04",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 15,
+    "item_id": "THPT-G10-B18-R01",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 16,
+    "item_id": "THPT-G10-B18-R02",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 17,
+    "item_id": "THPT-G10-B18-R03",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 18,
+    "item_id": "THPT-G10-B18-R04",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 19,
+    "item_id": "THPT-G10-B16-R06",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
+  },
+  {
+    "collection": "SGK:G10:CHVI:SELF_CHECK",
+    "role": "CLIENT_SELF_CHECK_NO_MASTERY",
+    "order": 20,
+    "item_id": "THPT-G10-B17-R05",
+    "original_type": "OPEN_REVIEW",
+    "optional": false
   }
 ]

@@ -1,0 +1,548 @@
+[
+  {
+    "item_id": "THPT-TOP03-ADD01",
+    "content_version": "R01",
+    "stem": "Giải 2x+6=14 và chỉ rõ phép biến đổi tương đương.",
+    "answer_key": "S={4}.",
+    "worked_solution": "Trừ 6 ở cả hai vế: 2x=8; chia 2>0 (với phương trình, chỉ cần chia số khác 0) được x=4. Thay 2·4+6=14. Cả hai bước đều đảo ngược được nên tập nghiệm giữ nguyên.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O01"
+    ],
+    "problem_type_id": "TOP03-TRANSFORM_EQUIVALENCE",
+    "difficulty": "BASIC",
+    "hints": [],
+    "remediation": "Nếu cộng/trừ không đều hai vế, thế ngược x=4 để kiểm lại phép biến đổi.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD01 · TOP03-O01",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD02",
+    "content_version": "R01",
+    "stem": "So sánh tập nghiệm của x=3 và x²=9. Có được thay kí hiệu kéo theo bằng tương đương khi bình phương không?",
+    "answer_key": "x=3 có S₁={3}; x²=9 có S₂={−3,3}; không tương đương.",
+    "worked_solution": "Từ x=3 suy ra x²=9, nhưng từ x²=9 chỉ suy ra x=±3. Phép bình phương mất thông tin dấu; muốn biến đổi hai chiều phải thêm điều kiện x≥0 trong ví dụ này.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O01"
+    ],
+    "problem_type_id": "TOP03-TRANSFORM_ONE_WAY",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu nghĩ x²=9 chỉ có 3, thử x=−3; nối với bài học nghiệm ngoại lai.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD02 · TOP03-O01",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD03",
+    "content_version": "R01",
+    "stem": "Giải 3(x−2)=2x+5 và thử lại nghiệm.",
+    "answer_key": "S={11}.",
+    "worked_solution": "Khai triển 3x−6=2x+5 ⇔ x=11. Thay: 3·9=27 và 2·11+5=27. Phép chuyển vế, thu gọn là tương đương trên ℝ.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O02"
+    ],
+    "problem_type_id": "TOP03-LINEAR_EQUATION",
+    "difficulty": "BASIC",
+    "hints": [],
+    "remediation": "Nếu quên nhân 3 với −2, khai triển lại và thử bằng hai vế.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD03 · TOP03-O02",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD04",
+    "content_version": "R01",
+    "stem": "Biện luận phương trình mx=2m theo tham số thực m.",
+    "answer_key": "Nếu m≠0 thì S={2}; nếu m=0 thì S=ℝ.",
+    "worked_solution": "Với m≠0, chia cả hai vế cho m được x=2. Với m=0, phương trình là 0=0, mọi số thực đều thỏa. Không được chia cho biểu thức có thể bằng 0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O02"
+    ],
+    "problem_type_id": "TOP03-LINEAR_PARAM_DEGENERATE",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu kết luận x=2 với mọi m, hãy thử m=0 và x=7; phân biệt phương trình có một nghiệm với vô số nghiệm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD04 · TOP03-O02",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD05",
+    "content_version": "R01",
+    "stem": "Giải (x−2)(2x+3)=0.",
+    "answer_key": "S={2,−3/2}.",
+    "worked_solution": "Tích bằng 0 khi ít nhất một thừa số bằng 0. x−2=0 ⇒ x=2; 2x+3=0 ⇒ x=−3/2. Cả hai làm tích bằng 0.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O03"
+    ],
+    "problem_type_id": "TOP03-ZERO_PRODUCT",
+    "difficulty": "BASIC",
+    "hints": [],
+    "remediation": "Nếu chia cho x−2, sẽ mất nghiệm x=2; dùng quy tắc tích bằng 0 thay vì khử thừa số.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD05 · TOP03-O03",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD06",
+    "content_version": "R01",
+    "stem": "Giải (x−1)²(x+4)=0; nghiệm kép có đếm là hai nghiệm phân biệt không?",
+    "answer_key": "S={1,−4}; chỉ 2 giá trị phân biệt.",
+    "worked_solution": "(x−1)²=0 ⇔ x=1; x+4=0 ⇔ x=−4. Bội của nghiệm 1 là 2 nhưng tập nghiệm chỉ ghi mỗi giá trị một lần.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O03"
+    ],
+    "problem_type_id": "TOP03-ZERO_PRODUCT_MULTIPLICITY",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu viết {1,1,−4}, phân biệt số lần nghiệm xuất hiện khi phân tích với số phần tử tập nghiệm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD06 · TOP03-O03",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD07",
+    "content_version": "R01",
+    "stem": "Giải 2x²−5x−3=0 bằng biệt thức hoặc phân tích nhân tử.",
+    "answer_key": "S={−1/2,3}.",
+    "worked_solution": "Δ=(−5)²−4·2·(−3)=49. x=(5±7)/4 cho 3 và −1/2. Đồng thời (2x+1)(x−3)=0; hai cách đối chiếu nhau.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O04"
+    ],
+    "problem_type_id": "TOP03-QUADRATIC_ROOTS",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu tính Δ=1, kiểm dấu của c=−3; thử nghiệm trong phương trình gốc.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD07 · TOP03-O04",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD08",
+    "content_version": "R01",
+    "stem": "Tìm tập nghiệm thực của x²+2x+5=0; giải thích vì sao vô nghiệm.",
+    "answer_key": "S=∅ trên ℝ.",
+    "worked_solution": "Δ=2²−4·1·5=−16<0, nên không có nghiệm thực; hoặc (x+1)²+4=0 là bất khả thi vì vế trái ≥4.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O04"
+    ],
+    "problem_type_id": "TOP03-QUADRATIC_NO_REAL_ROOT",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu nhầm với nghiệm kép, so Δ=0 và Δ<0; đối chiếu bằng hoàn phương.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD08 · TOP03-O04",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD09",
+    "content_version": "R01",
+    "stem": "Giải (x²−4)/(x−2)=0. Giải thích vì sao x=2 bị loại.",
+    "answer_key": "S={−2}.",
+    "worked_solution": "Điều kiện x≠2. Tử (x−2)(x+2)=0 cho x=2 hoặc −2; chỉ −2 hợp miền. Rút gọn thành x+2=0 chỉ được dùng trên miền x≠2, không tự lấp lỗ x=2.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O05"
+    ],
+    "problem_type_id": "TOP03-RATIONAL_DOMAIN_CANCEL",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu ghi {−2,2}, hãy thay x=2 vào mẫu và nhận thấy không xác định.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD09 · TOP03-O05",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD10",
+    "content_version": "R01",
+    "stem": "Giải 1/(x−1)+1/(x+1)=1 trong ℝ.",
+    "answer_key": "S={1−√2,1+√2}.",
+    "worked_solution": "Điều kiện x≠±1. Quy đồng thành 2x/(x²−1)=1; nhân với mẫu khác 0 cho 2x=x²−1 ⇒ x²−2x−1=0 ⇒ x=1±√2. Hai nghiệm đều khác ±1 nên được nhận.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O05"
+    ],
+    "problem_type_id": "TOP03-RATIONAL_COMMON_DENOMINATOR",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu nhân hai vế với mẫu mà quên điều kiện, quay lại bước x≠1 và x≠−1 rồi đối chiếu nghiệm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD10 · TOP03-O05",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD11",
+    "content_version": "R01",
+    "stem": "Giải |2x−3|=5.",
+    "answer_key": "S={−1,4}.",
+    "worked_solution": "Vì 5≥0, |2x−3|=5 ⇔ 2x−3=5 hoặc 2x−3=−5. Hai nhánh cho x=4 và x=−1; thử lại cả hai có giá trị tuyệt đối 5.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O06"
+    ],
+    "problem_type_id": "TOP03-ABSOLUTE_VALUE_BRANCH",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu chỉ lấy x=4, nhớ |u|=c có hai nhánh khi c>0.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD11 · TOP03-O06",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD12",
+    "content_version": "R01",
+    "stem": "Giải |x−2|=x.",
+    "answer_key": "S={1}.",
+    "worked_solution": "Vế trái ≥0 nên x≥0. Nếu x≥2 thì |x−2|=x−2, không thể bằng x; nếu 0≤x<2 thì |x−2|=2−x=x ⇒ x=1 hợp miền. Thử |−1|=1.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O06"
+    ],
+    "problem_type_id": "TOP03-ABSOLUTE_VALUE_SIGN_CONSTRAINT",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu nhận x âm, kiểm dấu vế phải; nếu nhận cả x≥2, xét nhánh giá trị tuyệt đối đúng miền.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD12 · TOP03-O06",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD13",
+    "content_version": "R01",
+    "stem": "Giải √(x+2)=x; chỉ rõ nghiệm ngoại lai sau bình phương.",
+    "answer_key": "S={2}. Nghiệm ứng viên −1 bị loại.",
+    "worked_solution": "Vế phải là x nên bắt buộc x≥0. Bình phương x+2=x² ⇔ (x−2)(x+1)=0 ⇒ x=2 hoặc −1; chỉ x=2 hợp dấu vế phải, thử √4=2. −1 cho √1=1≠−1.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O07"
+    ],
+    "problem_type_id": "TOP03-SQUARE_IMPLICATION_FILTER",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu kết luận hai nghiệm, thử x=−1 trong phương trình gốc và kiểm dấu.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD13 · TOP03-O07",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD14",
+    "content_version": "R01",
+    "stem": "Giải √(x²)=x trong ℝ.",
+    "answer_key": "S=[0,+∞).",
+    "worked_solution": "√(x²)=|x|, không tự bằng x khi x âm. Điều kiện |x|=x ⇔ x≥0. Với x=−2, vế trái 2 còn vế phải −2, không bằng.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O07"
+    ],
+    "problem_type_id": "TOP03-SQUARE_ROOT_ABSOLUTE",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu triệt căn/bình phương máy móc rồi nhận cả ℝ, thử x âm để phát hiện mất thông tin dấu.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD14 · TOP03-O07",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD15",
+    "content_version": "R01",
+    "stem": "Giải √(3x+1)=√(x+7) trong ℝ.",
+    "answer_key": "S={3}.",
+    "worked_solution": "Điều kiện 3x+1≥0 và x+7≥0 ⇒ x≥−1/3. Hai căn không âm bằng nhau iff 3x+1=x+7 ⇒ x=3. Thử hai vế √10 bằng nhau.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O08"
+    ],
+    "problem_type_id": "TOP03-TWO_RADICALS_DOMAIN",
+    "difficulty": "UNDERSTAND",
+    "hints": [],
+    "remediation": "Nếu chỉ bình phương mà quên miền, đặt điều kiện cho cả hai căn trước.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD15 · TOP03-O08",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD16",
+    "content_version": "R01",
+    "stem": "Giải √(5x+4)=x+2. Phương trình có thể có hai nghiệm hay không?",
+    "answer_key": "S={0,1}.",
+    "worked_solution": "Điều kiện x+2≥0 và 5x+4≥0. Bình phương 5x+4=(x+2)² ⇒ x²−x=0 ⇒ x=0 hoặc 1. Cả hai thỏa: √4=2=0+2, √9=3=1+2. Không được mặc định một căn có đúng một nghiệm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O09"
+    ],
+    "problem_type_id": "TOP03-ONE_RADICAL_TWO_VALID_ROOTS",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu tự loại mất một nghiệm, thử cả x=0 và x=1 trong gốc.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD16 · TOP03-O09",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD17",
+    "content_version": "R01",
+    "stem": "Giải √(x+4)=√(x²+5x+2) trong ℝ và xác định nghiệm ứng viên không hợp lệ.",
+    "answer_key": "S={−2+√6}; −2−√6 bị loại.",
+    "worked_solution": "Điều kiện x+4≥0 và x²+5x+2≥0. Bình phương x+4=x²+5x+2 ⇔ x²+4x−2=0 ⇒ x=−2±√6. Với −2−√6<−4, x+4<0, không có căn thực. Với −2+√6>−4, hai radicand cùng bằng x+4=2+√6>0 nên nhận.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O10"
+    ],
+    "problem_type_id": "TOP03-RADICAL_DOMAIN_FALSE_CANDIDATE",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu giữ cả hai nghiệm, so −2−√6 với −4 bằng bình phương/ước lượng √6>2.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD17 · TOP03-O10",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD18",
+    "content_version": "R01",
+    "stem": "Giải √(x²+9)=x−1; vì sao phương trình đại số sau bình phương có nghiệm mà phương trình gốc vô nghiệm?",
+    "answer_key": "S=∅.",
+    "worked_solution": "Bên phải x−1 phải ≥0 ⇒ x≥1. Bình phương x²+9=(x−1)² ⇒ 9=−2x+1 ⇒ x=−4, trái x≥1. Trực tiếp tại −4: căn √25=5 còn −4−1=−5. Không có nghiệm.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O10"
+    ],
+    "problem_type_id": "TOP03-RADICAL_NO_SOLUTION_SIGN",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu nhận x=−4 vì làm đúng bình phương, thử lại dấu hai vế gốc.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD18 · TOP03-O10",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD19",
+    "content_version": "R01",
+    "stem": "Giải phương trình x⁴−5x²+4=0 trong ℝ bằng ẩn phụ.",
+    "answer_key": "S={−2,−1,1,2}.",
+    "worked_solution": "Đặt t=x²≥0; khi đó t²−5t+4=(t−1)(t−4)=0 ⇒ t∈{1,4} đều ≥0. Quay lại x²=1 ⇒ x=±1; x²=4 ⇒ x=±2. Thử bằng cách thay t vào phương trình.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O11"
+    ],
+    "problem_type_id": "TOP03-BIQUADRATIC_SUBSTITUTION",
+    "difficulty": "APPLY_EXTENSION",
+    "hints": [],
+    "remediation": "Nếu chỉ lấy x dương, nhớ x²=t>0 có hai nghiệm đối nhau.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD19 · TOP03-O11",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD20",
+    "content_version": "R01",
+    "stem": "Giải x⁴+3x²−4=0 bằng t=x²; giải thích vì sao một giá trị t bị loại.",
+    "answer_key": "S={−1,1}.",
+    "worked_solution": "Đặt t=x²≥0, giải t²+3t−4=(t+4)(t−1)=0 cho t=1 hoặc t=−4. Vì t≥0, loại −4; từ x²=1 được x=±1.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O11"
+    ],
+    "problem_type_id": "TOP03-BIQUADRATIC_NEGATIVE_T",
+    "difficulty": "APPLY_EXTENSION",
+    "hints": [],
+    "remediation": "Nếu nhận nghiệm x²=−4 trong ℝ, kiểm bình phương số thực không âm.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD20 · TOP03-O11",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-TOP03-ADD21",
+    "content_version": "R01",
+    "stem": "Một thang dài 10 m tựa tường, chân thang cách tường x>0 m, độ cao đầu thang là x+2 m. Tìm x và độ cao.",
+    "answer_key": "x=6 m; độ cao 8 m.",
+    "worked_solution": "Pythagore: √[x²+(x+2)²]=10, x>0. Bình phương x²+(x+2)²=100 ⇒ 2x²+4x−96=0 ⇒ (x+8)(x−6)=0. Chỉ x=6 hợp chiều dài dương; thử √(36+64)=10. Độ cao 8 m.",
+    "skill_ids": [],
+    "original_outcome_ids": [
+      "TOP03-O12"
+    ],
+    "problem_type_id": "TOP03-GEOMETRIC_RADICAL_MODEL",
+    "difficulty": "APPLY",
+    "hints": [],
+    "remediation": "Nếu nhận −8, kiểm điều kiện độ dài x>0 và x+2>0; nếu sai phân tích, chia 2 trước.",
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "fd85d7056f3b934f4599727f8c6da173cf05cd65",
+      "heading": "## THPT-TOP03-ADD21 · TOP03-O12",
+      "version_scope": "SOURCE_PACKET_R01_NO_PER_ITEM_VERSION"
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

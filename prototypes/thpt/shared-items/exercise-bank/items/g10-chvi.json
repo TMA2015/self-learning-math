@@ -1,0 +1,950 @@
+[
+  {
+    "item_id": "THPT-G10-B15-C01",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Bảng dữ liệu có các cặp (x;y): (1;3), (2;4), (2;5). Đây có là một hàm số y của x không?",
+    "answer_key": null,
+    "worked_solution": "Không. Cùng x=2 có hai giá trị đầu ra khác nhau là 4 và 5, vi phạm tính duy nhất của hàm số.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "FUNCTION_MAPPING"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Kiểm tra mỗi giá trị x có đúng một giá trị y hay không."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B15-C02",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Tìm tập xác định của f(x)=√(2x−3) trong ℝ.",
+    "answer_key": null,
+    "worked_solution": "D=[3/2;+∞). Điều kiện căn: 2x−3≥0, suy ra x≥3/2.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "FUNCTION_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Biểu thức dưới căn bậc hai phải không âm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B15-P01",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Tìm tập xác định của g(x)=(x+1)/(x²−9).",
+    "answer_key": null,
+    "worked_solution": "D=ℝ∖{−3;3}. Mẫu x²−9=(x−3)(x+3) phải khác 0.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "FUNCTION_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Mẫu số phải khác 0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B15-P02",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Phí giao hàng giả định (nghìn đồng): C(x)=8x với 0≤x≤2; C(x)=16+6(x−2) khi x>2; x tính bằng km. Tính C(2) và C(3).",
+    "answer_key": null,
+    "worked_solution": "C(2)=16 và C(3)=22 (nghìn đồng). x=2 dùng nhánh thứ nhất; x=3 dùng nhánh thứ hai: 16+6=22.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "FUNCTION_PIECEWISE"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Chọn nhánh theo điều kiện của x; công thức này đã xuất hiện trong bài giảng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "EXPOSED_IN_KNOWLEDGE",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B15-P03",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "f(x)=|x+2| đồng biến/nghịch biến trên những khoảng nào?",
+    "answer_key": null,
+    "worked_solution": "Nghịch biến trên (−∞;−2), đồng biến trên (−2;+∞). Khi x<−2, f(x)=−(x+2); khi x>−2, f(x)=x+2.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "FUNCTION_MONOTONICITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Viết hàm trị tuyệt đối thành hai công thức."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B15-P04",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Dịch vụ giả định thu 100 nghìn đồng cho quãng đường 0<x≤2 km; trên 2 km thu thêm 12 nghìn đồng/km. Ngân sách tối đa 160 nghìn đồng. Tìm mọi quãng đường x có thể đi.",
+    "answer_key": null,
+    "worked_solution": "0<x≤7 km. Với 0<x≤2, phí 100≤160. Với x>2: 100+12(x−2)≤160 ⇔ x≤7. Hợp hai miền được (0;7].",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "FUNCTION_MODELING"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Xét từng miền rồi lấy hợp nghiệm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B17-C01",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Xét dấu f(x)=x²−4x+8 trên ℝ.",
+    "answer_key": null,
+    "worked_solution": "f(x)>0 với mọi x∈ℝ, vì Δ=(−4)²−4·1·8=−16<0 và a=1>0.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "QUAD_SIGN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tính Δ và xét dấu a."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B17-C02",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "g(x)=−3(x−2)². Khi nào g(x)=0? Có x nào làm g(x)>0 không?",
+    "answer_key": null,
+    "worked_solution": "g(x)=0 chỉ khi x=2; không có x làm g(x)>0. Bình phương không âm, nhân −3 được biểu thức không dương.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "QUAD_DOUBLE_ROOT_SIGN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Xét dấu của (x−2)²."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B17-P01",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Giải bất phương trình 2x²−10x+12≤0.",
+    "answer_key": null,
+    "worked_solution": "Tập nghiệm [2;3]. Vì 2x²−10x+12=2(x−2)(x−3), tam thức không dương giữa hai nghiệm, gồm hai đầu mút.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "QUAD_INEQUALITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tìm nghiệm và xét dấu giữa hai nghiệm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B17-P02",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Giải bất phương trình −x²+2x+8>0.",
+    "answer_key": null,
+    "worked_solution": "Tập nghiệm (−2;4). Phân tích −(x−4)(x+2)>0, tam thức mở xuống nên dương giữa hai nghiệm.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "QUAD_INEQUALITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Chú ý hệ số a âm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B17-P03",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Tìm m để x²−2(m+1)x+m²+3>0 với mọi số thực x.",
+    "answer_key": null,
+    "worked_solution": "m<1. Với a=1>0, cần Δ<0. Δ=8(m−1)<0 ⇔ m<1.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "QUAD_PARAMETER"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Dấu >0 nghiêm ngặt đòi hỏi Δ<0, không phải Δ≤0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B17-P04",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Có 30 m lưới rào ba cạnh hình chữ nhật sát tường; x (m) là mỗi cạnh vuông góc tường. Tìm mọi x để diện tích ít nhất 100 m².",
+    "answer_key": null,
+    "worked_solution": "5≤x≤10 (m). Miền 0<x<15; S=x(30−2x). S≥100 ⇔ 2(x−5)(x−10)≤0 nên nghiệm [5;10] hợp miền.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "QUAD_MODELING"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Lập diện tích và giữ miền độ dài thực tế."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B18-C01",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Giải √(x+5)=x−1 trong ℝ.",
+    "answer_key": null,
+    "worked_solution": "S={4}. Điều kiện x≥1; bình phương x+5=(x−1)² ⇔ (x−4)(x+1)=0. Loại −1; thử x=4 được 3=3.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "RADICAL_CONDITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Vế phải cần không âm trước khi bình phương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B18-C02",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Giải √((x+4)²)=√(x+4) trong ℝ.",
+    "answer_key": null,
+    "worked_solution": "S={−4;−3}. Điều kiện x+4≥0. Đặt u=x+4≥0: u²=u ⇒ u=0 hoặc 1; hai giá trị đều thỏa.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "RADICAL_TWO_SIDES"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Xem miền của căn thứ hai trước khi bình phương."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B18-P01",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Giải √(3x+4)=x.",
+    "answer_key": null,
+    "worked_solution": "S={4}. Điều kiện x≥0, bình phương được (x−4)(x+1)=0; loại −1, thử x=4: √16=4.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "RADICAL_FILTER"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Vế phải không âm; thử lại mọi nghiệm ứng viên."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B18-P02",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Giải √(2x²+9)=x+3.",
+    "answer_key": null,
+    "worked_solution": "S={0;6}. Điều kiện x≥−3; bình phương được x(x−6)=0; thử x=0 và x=6 đều đúng.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "RADICAL_FILTER"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Không mặc định phương trình chỉ có một nghiệm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B18-P03",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Giải trên ℝ: √(x²+7x+11)=√(x+3).",
+    "answer_key": null,
+    "worked_solution": "S={−2}. Bình phương được (x+2)(x+4)=0; ứng viên −4 làm căn x+3 có radicand −1, loại; x=−2 thỏa cả hai vế bằng 1.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "RADICAL_DOMAIN"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Kiểm điều kiện thực của cả hai biểu thức dưới căn."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B18-P04",
+    "content_version": "THPT-G10-CHVI-REVIEWED-20261028",
+    "stem": "Tam giác vuông có hai cạnh góc vuông dài x>0 mét và 3 mét; cạnh huyền dài x+1 mét. Tìm x.",
+    "answer_key": null,
+    "worked_solution": "x=4 m. Từ Pythagore: √(x²+9)=x+1, bình phương được x²+9=x²+2x+1 ⇒ x=4; kiểm √25=5.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "RADICAL_MODELING"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Dùng Pythagore và giữ x>0."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-chvi-reviewed-formative-v1.js",
+        "blob": "1223d4c2b574433479c5d222dbeff363718ee4bb",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-CORE-QF01",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Cho \\(y=(x+3)^2-5\\). Hoành độ đỉnh là bao nhiêu?",
+    "answer_key": "-3",
+    "worked_solution": "Đỉnh \\(I(-3;-5)\\), nên hoành độ đỉnh bằng \\(-3\\), không phải \\(3\\) hoặc \\(-5\\).",
+    "options": [
+      {
+        "value": "-3",
+        "label": "\\(-3\\)"
+      },
+      {
+        "value": "3",
+        "label": "\\(3\\)"
+      },
+      {
+        "value": "-5",
+        "label": "\\(-5\\)"
+      }
+    ],
+    "answer_representation": "EXPLICIT_KEY",
+    "skill_ids": [
+      "B16_OUT_02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Viết \\(x+3=x-(-3)\\), rồi so sánh với \\(a(x-h)^2+k\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-C01",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Với \\(f_m(x)=(m-2)x^2+3x+1\\), tìm mọi \\(m\\) để \\(f_m\\) là hàm số bậc hai. Khi \\(m=2\\), hàm còn thuộc loại nào?",
+    "answer_key": null,
+    "worked_solution": "\\(m-2\\ne0\\iff m\\ne2\\). Nếu \\(m=2\\), \\(f_2(x)=3x+1\\) là hàm bậc nhất; không được dùng công thức đỉnh của parabol.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Hãy đọc hệ số đứng trước \\(x^2\\) sau khi thu gọn và dùng định nghĩa \\(a\\ne0\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-C02",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Cho \\(g(x)=x^2-6x+5\\). Tính \\(g(2)\\) và \\(g(4)\\), giải thích vì sao hai điểm trên đồ thị đối xứng qua một đường thẳng.",
+    "answer_key": null,
+    "worked_solution": "\\(g(2)=4-12+5=-3\\), \\(g(4)=16-24+5=-3\\). Trục đối xứng là \\(x=3\\), hai hoành độ 2 và 4 cách trục một đơn vị, nên hai điểm \\((2;-3)\\), \\((4;-3)\\) đối xứng qua trục.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Viết \\(g(x)=(x-3)^2-4\\) rồi so khoảng cách của 2 và 4 đến 3."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-C03",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Với \\(g(x)=2(x-4)^2-3\\), tìm GTNN, nơi đạt GTNN, tập giá trị và hai khoảng tăng/giảm.",
+    "answer_key": null,
+    "worked_solution": "GTNN bằng \\(-3\\) khi \\(x=4\\). Tập giá trị \\([-3;+\\infty)\\). Hàm nghịch biến trên \\((-\\infty;4)\\) và đồng biến trên \\((4;+\\infty)\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Vì hệ số 2 dương, bình phương không âm; đọc nhánh trái/phải từ trục \\(x=4\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-C04",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Độ cao giả định \\(h(t)=-2(t-3)^2+18\\) mét trong \\(0\\le t\\le6\\) giây. Tìm độ cao lớn nhất và kiểm tra độ cao tại hai đầu khoảng.",
+    "answer_key": null,
+    "worked_solution": "Vì \\(-2(t-3)^2\\le0\\), \\(h(t)\\le18\\). GTLN 18 m đạt tại \\(t=3\\) s thuộc miền đã cho. \\(h(0)=h(6)=0\\) m; mô hình không áp dụng cho thời gian ngoài \\([0;6]\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Đỉnh của parabol mở xuống nằm ở \\(t=3\\). Đừng quên kiểm \\(3\\in[0;6]\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-C05",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Xét \\(y=x^2+6x+5\\). Hoàn thành bình phương và cho biết đỉnh, trục đối xứng, hướng mở.",
+    "answer_key": null,
+    "worked_solution": "\\(y=(x+3)^2-4\\), nên đỉnh \\(I(-3;-4)\\), trục \\(x=-3\\), parabol mở lên vì \\(a=1&gt;0\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Tách \\(x^2+6x=(x+3)^2-9\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-P00",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Cho \\(y=-2x^2+8x-6\\). Hai giao điểm với trục \\(Ox\\) có hoành độ nào?",
+    "answer_key": "1,3",
+    "worked_solution": "\\(-2(x-1)(x-3)=0\\) nên \\(x=1,3\\). Đây là hai giao điểm khác nhau, dù đồ thị mở xuống.",
+    "options": [
+      {
+        "value": "1,3",
+        "label": "\\(x=1\\) và \\(x=3\\)"
+      },
+      {
+        "value": "2",
+        "label": "Chỉ \\(x=2\\)"
+      },
+      {
+        "value": "-1,3",
+        "label": "\\(x=-1\\) và \\(x=3\\)"
+      }
+    ],
+    "answer_representation": "EXPLICIT_KEY",
+    "skill_ids": [
+      "B16_OUT_03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Đặt \\(y=0\\), chia cả hai vế cho \\(-2\\), rồi phân tích thành nhân tử."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false,
+      "original_type": "MCQ_SINGLE"
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-P01",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Với \\(h_k(x)=(k+1)x^2-2x+5\\), khi nào \\(h_k\\) là hàm số bậc hai? Nêu tập xác định với mọi \\(k\\) thực.",
+    "answer_key": null,
+    "worked_solution": "Hàm số bậc hai khi \\(k\\ne-1\\); khi \\(k=-1\\), \\(h_{-1}(x)=-2x+5\\) là hàm bậc nhất. Tập xác định luôn là \\(\\mathbb R\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_01"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Điều kiện bậc hai chỉ phụ thuộc hệ số \\(k+1\\). Đa thức xác định tại mọi số thực."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-P02",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Cho \\(f(x)=-3x^2+12x-9\\). Xác định đỉnh, trục đối xứng, GTLN và nghiệm của \\(f(x)=0\\).",
+    "answer_key": null,
+    "worked_solution": "\\(f(x)=-3(x-2)^2+3\\). Đỉnh \\(I(2;3)\\), trục \\(x=2\\), GTLN 3 tại \\(x=2\\). Giải \\(-3(x-2)^2+3=0\\) được \\(x=1\\) hoặc \\(x=3\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_02"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Hoàn thành bình phương hoặc dùng \\(x=-b/(2a)\\); nếu giải nghiệm hãy thử lại vào biểu thức gốc."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-P03",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Xét \\(f(x)=x^2+2x-8\\). Tìm đỉnh, trục đối xứng, ba giao điểm với các trục; lấy thêm một cặp điểm đối xứng để phác parabol.",
+    "answer_key": null,
+    "worked_solution": "Đỉnh \\(I(-1;-9)\\), trục \\(x=-1\\), parabol mở lên. \\(f(x)=(x+4)(x-2)\\) nên giao \\(Ox\\): \\((-4;0)\\), \\((2;0)\\); giao \\(Oy\\): \\((0;-8)\\). Điểm đối xứng với \\((0;-8)\\) qua \\(x=-1\\) là \\((-2;-8)\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_03"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Viết \\(f(x)=(x+1)^2-9\\). Giao \\(Oy\\): cho \\(x=0\\). Giao \\(Ox\\): giải \\(f(x)=0\\)."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-P04",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Cho \\(f(x)=-(x-2)^2+7\\) nhưng chỉ xét \\(x\\in[3;5]\\). Tìm GTLN, GTNN và tập giá trị của hàm trên đoạn này.",
+    "answer_key": null,
+    "worked_solution": "Trên \\([3;5]\\), \\(f\\) nghịch biến. \\(f(3)=6\\), \\(f(5)=-2\\). GTLN 6 tại \\(x=3\\); GTNN \\(-2\\) tại \\(x=5\\), tập giá trị \\([-2;6]\\).",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_04"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Đỉnh ở \\(x=2\\) nằm ngoài đoạn \\([3;5]\\): không áp dụng máy móc GTLN 7 của toàn trục số."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G10-B16-P05",
+    "content_version": "PUBLIC_B16_BLOB_ff29cbee1f5566bb6eef9e352355e156400a17ac",
+    "stem": "Có 36 m hàng rào để rào ba cạnh hình chữ nhật dựa vào một bức tường thẳng. Gọi \\(x\\) (m) là chiều rộng vuông góc tường. Tìm miền của \\(x\\), diện tích lớn nhất và kích thước tương ứng.",
+    "answer_key": null,
+    "worked_solution": "\\(S(x)=x(36-2x)=-2(x-9)^2+162\\), với \\(0&lt;x&lt;18\\). Vì \\(-2(x-9)^2\\le0\\) và \\(9\\) thuộc miền, diện tích lớn nhất là \\(162\\,\\mathrm{m}^2\\) khi chiều rộng \\(x=9\\) m, cạnh còn lại \\(18\\) m.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [
+      "B16_OUT_05"
+    ],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [
+      "Cạnh song song tường cần rào dài \\(36-2x\\) (m), nên \\(0&lt;x&lt;18\\). Hãy đưa \\(S(x)=x(36-2x)\\) về dạng đỉnh."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/core/ham-so-bac-hai.md",
+        "blob": "ff29cbee1f5566bb6eef9e352355e156400a17ac",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]
