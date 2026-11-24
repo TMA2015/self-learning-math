@@ -838,5 +838,43 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B09-KFT01",
+    "content_version": "SOURCE_BLOB_46aa17f758783330c2b396f9ed36a25ab77a4094",
+    "stem": "Với các nhóm [0;10),[10;20),[20;30),[30;40) có tần số [4,8,6,2], tổng có bao nhiêu quan sát? Vị trí thứ 10 thuộc nhóm nào?",
+    "answer_key": null,
+    "worked_solution": "Có 20 quan sát; tích lũy [4,12,18,20], vị trí thứ 10 thuộc [10;20). Nếu chưa chắc, xem lại phần tích lũy và luyện THPT-G11-B09-C03.",
+    "answer_representation": "COMBINED_ANSWER_AND_SOLUTION",
+    "skill_ids": [],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": null,
+    "hints": [],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "46aa17f758783330c2b396f9ed36a25ab77a4094",
+      "heading_id": "details[data-ped-first-try] #1",
+      "public_projection": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md",
+        "blob": "46aa17f758783330c2b396f9ed36a25ab77a4094",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      },
+      "locator": "details[data-ped-first-try] #1",
+      "line": 21,
+      "original_item_id": null,
+      "id_assignment": "NEW_CANONICAL_ID_FOR_PREEXISTING_UNKEYED_SOURCE_TASK",
+      "related_item_ids": [
+        "THPT-G11-B09-C04",
+        "THPT-G11-B09-C03"
+      ],
+      "distinct_task_reason": "C04 same grouped data and median class, source also asks total n and explicit position 10. Linked C03 uses different frequencies."
+    },
+    "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
   }
 ]
