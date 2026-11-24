@@ -1303,7 +1303,7 @@
     "projection_field_differences": 54,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
-    "legacy_combined_answer_items": 329,
+    "legacy_combined_answer_items": 263,
     "topic_knowledge_first_try": 170,
     "sgk_knowledge_first_try": 195,
     "authoring_answer_draft_items": 18
@@ -2348,7 +2348,7 @@
       }
     }
   ],
-  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_380_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
+  "academic_audit": "IN_PROGRESS_AUTHOR_REVIEW_18_DRAFTS_AND_446_LEGACY_COMBINED_KEYS_COMPLETE_FULL_AUDIT_PENDING",
   "interaction_conversion": "PENDING",
   "release_authorization": false,
   "import_batches": [
@@ -3042,7 +3042,7 @@
     }
   ],
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
-  "legacy_combined_answer_note": "709 at original import; 380 manually verified and key separated at checkpoints 29–40; 329 remain combined, answer_key=null. Remaining: 237 Topic (112 cd16–21 practice + 125 topic knowledge first try) and 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
+  "legacy_combined_answer_note": "709 at original import; 446 manually verified and key separated at checkpoints 29–41; 263 remain combined, answer_key=null. Remaining: 171 Topic (79 cd18–21 practice + 92 topic knowledge first try) and 92 SGK supplementary/public items (52 G11 supplement, 10 G12 public selfcheck, 30 G12 experience). Preserve original source history and self-compare, not auto-grade.",
   "written_projection_review": [
     {
       "item_id": "THPT-G12-CHI-B01-W02",
@@ -6102,7 +6102,7 @@
       "math_reviewed": 18,
       "skill_mapping_reviewed": 18,
       "content_clarifications": 6,
-      "remaining_combined_answer_items": 329,
+      "remaining_combined_answer_items": 263,
       "ped_integration": "PENDING: post-attempt reveal and context/repair links, no Mastery; no website changes.",
       "items": [
         {
@@ -6337,8 +6337,8 @@
       ],
       "legacy_combined_answer_review": {
         "baseline_count": 709,
-        "reviewed_count": 380,
-        "remaining_count": 329,
+        "reviewed_count": 446,
+        "remaining_count": 263,
         "batches": [
           {
             "checkpoint": 29,
@@ -10644,6 +10644,1000 @@
               "P15 candidate changes premise from MN∥AB (which gives away conclusion g=AB) to MN∥(ABC), so the learner actually applies line-plane intersection theorem; outcome TOP15-O12 and conclusion unchanged. This is an intentional scoped pedagogical revision, not a historical source correction.",
               "P01/P04 justify parallel section, similarity and squared area ratio; P02 distinguishes parallel/skew/intersecting by coordinates; P05 proves projection degeneracy; P13/P14 justify intersection and line-plane parallelism; P18/T15 provide counterexample; P20 distinguishes projection directions.",
               "T13/T17/T19/T20/T22 and related items made self-contained; T16 explicitly assumes parallel planes before exposing inconsistent premise; T21 distinguishes nondegenerate parallelogram from collapsed segment. Numeric results unchanged; no automatic grading. 148 first-try records outside CĐ15 byte-equivalent at record level. Full PDF, coverage, PED, D6 links, reveal, independent review and interaction conversion pending."
+            ]
+          },
+          {
+            "checkpoint": 41,
+            "baseline": "c2f9f52dddc345768b8771eb88ea5d8195667229",
+            "reviewed_candidate": "d48c86d857b7a3dfb831f9f8fb4e382b3752d391",
+            "scope": "CĐ16–17: 66 (42+24) practice and first try, ID-scoped canonical/projection match; first-try stem precedes ITEM_ID marker, solution follows. CĐ16 canonical 1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84, practice 42099bd6939e7c6c22b0c6f9050846f047665212, knowledge f4576823969f7cb602802c938e9aca52d6dc7eb5; CĐ17 canonical 0ef0ad696e97d2549f29c5a22ba675970572a089, practice 23c879ae5194bab75c19cf287eb25dfe3d152f52, knowledge 0af4b566e0b1b9a7249d1ab3ef6b4bcb7c48a04b. Re-solved, separated keys, mapped exact S1_ORIGINAL_OUTCOME source markers to existing G11 skills. 30 stem/solution improvements.",
+            "shards": [
+              {
+                "shard": "cd16",
+                "before": "25117b4292393f887eee6613713c06e3d3490181",
+                "after": "13908a349a4358d0d3fb0ade8722e97e3bac0e55",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP16-P01",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "0°.",
+                    "skill_ids": [
+                      "G11-B22-ANGLE_LINES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O01"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P02",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "BC⊥AA′.",
+                    "skill_ids": [
+                      "G11-B22-PERP_SKEW"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O02"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P03",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "BC⊥DD′.",
+                    "skill_ids": [
+                      "G11-B22-PARALLEL_DIRECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O03"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P04",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "AB⊥CC′ vì CC′⊥(ABCD) và AB⊂(ABCD).",
+                    "skill_ids": [
+                      "G11-B22-PROOF_CONTEXT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O04"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P05",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "d⊥(P).",
+                    "skill_ids": [
+                      "G11-B23-PERP_PLANE_DEF"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O05"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P06",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "d⊥(P).",
+                    "skill_ids": [
+                      "G11-B23-TWO_INTERSECT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O06"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P07",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "a⊥(Q).",
+                    "skill_ids": [
+                      "G11-B23-PARALLEL_TRANSFER"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O07"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P08",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "d∥e.",
+                    "skill_ids": [
+                      "G11-B23-PLANE_PROPERTY"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O08"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P09",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "d⊥(ABCD).",
+                    "skill_ids": [
+                      "G11-B23-PRACTICAL_POST"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O09"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P10",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "H là hình chiếu; d(A,(P))=7 cm.",
+                    "skill_ids": [
+                      "G11-B24-POINT_PROJECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O10"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P11",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Đoạn BC.",
+                    "skill_ids": [
+                      "G11-B24-LINE_PROJECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O11"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P12",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Có, c⊥BH.",
+                    "skill_ids": [
+                      "G11-B24-THREE_PERP"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O12"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P13",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "sin θ=5/13.",
+                    "skill_ids": [
+                      "G11-B24-LINE_PLANE_ANGLE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O13"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P14",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Độ dài 13 m; tan θ=5/12.",
+                    "skill_ids": [
+                      "G11-B24-ANGLE_APPLICATION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O14"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P15",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "70°.",
+                    "skill_ids": [
+                      "G11-B25-PLANE_ANGLE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O15"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P16",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "45°.",
+                    "skill_ids": [
+                      "G11-B25-DIHEDRAL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O16"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P17",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "(P)⊥(Q).",
+                    "skill_ids": [
+                      "G11-B25-PERP_PLANES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O17"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P18",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Không; a không vuông góc nền.",
+                    "skill_ids": [
+                      "G11-B25-PERP_PLANE_RULE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O18"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P19",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Không; đáy không đều, nhưng cạnh bên vuông góc đáy.",
+                    "skill_ids": [
+                      "G11-B25-RIGHT_PRISM"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O19"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P20",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "5.",
+                    "skill_ids": [
+                      "G11-B25-REGULAR_PYRAMID"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O20"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP16-P21",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "4:1 (đáy lớn : đáy nhỏ).",
+                    "skill_ids": [
+                      "G11-B25-REGULAR_FRUSTUM"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O21"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  }
+                ],
+                "unchanged_count": 0
+              },
+              {
+                "shard": "cd17",
+                "before": "b09a52b5c03ba053fa32eae98d3edbee17a5c6c1",
+                "after": "0b4695539c5bfeaaa7e093ee6b0362526e047c86",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP17-P01",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "AX=13; d(A,d)=5.",
+                    "skill_ids": [
+                      "G11-B26-POINT_LINE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O01"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P02",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "8 cm.",
+                    "skill_ids": [
+                      "G11-B26-POINT_PLANE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O02"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P03",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "7 cm.",
+                    "skill_ids": [
+                      "G11-B26-PARALLEL_LINE_PLANE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O03"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P04",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "6 cm.",
+                    "skill_ids": [
+                      "G11-B26-PARALLEL_PLANES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O04"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P05",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "BC là đoạn vuông góc chung; khoảng cách bằng 7.",
+                    "skill_ids": [
+                      "G11-B26-SKEW_COMMON_PERP"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O05"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P06",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "4.",
+                    "skill_ids": [
+                      "G11-B26-HEIGHT_APPLICATION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O06"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P07",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "72 m³.",
+                    "skill_ids": [
+                      "G11-B27-PRISM_VOLUME"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O07"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P08",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "48 cm³.",
+                    "skill_ids": [
+                      "G11-B27-PYRAMID_VOLUME"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O08"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P09",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "125 cm³.",
+                    "skill_ids": [
+                      "G11-B27-BOX_VOLUME"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O09"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P10",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "84 đơn vị khối.",
+                    "skill_ids": [
+                      "G11-B27-FRUSTUM_VOLUME"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O10"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P11",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "168 cm³.",
+                    "skill_ids": [
+                      "G11-B27-VOLUME_APPLICATION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O11"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-P12",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "64 đơn vị khối.",
+                    "skill_ids": [
+                      "G11-CHVII-INTEGRATED"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O12"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  }
+                ],
+                "unchanged_count": 0
+              },
+              {
+                "shard": "topic-knowledge-first-try",
+                "before": "4369c8af9e874cd860ad572d9eaca1080155248f",
+                "after": "e827ae8252abf893410bb35c11171acec2314698",
+                "reviewed": [
+                  {
+                    "item_id": "THPT-TOP16-T01",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "0°.",
+                    "skill_ids": [
+                      "G11-B22-ANGLE_LINES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O01"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O01 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T02",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Có, AB⊥DD′.",
+                    "skill_ids": [
+                      "G11-B22-PERP_SKEW"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O02"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O02 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T03",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "a⊥c.",
+                    "skill_ids": [
+                      "G11-B22-PARALLEL_DIRECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O03"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O03 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T04",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Chưa đủ.",
+                    "skill_ids": [
+                      "G11-B22-PROOF_CONTEXT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O04"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O04 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T05",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Không đủ.",
+                    "skill_ids": [
+                      "G11-B23-PERP_PLANE_DEF"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O05"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O05 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T06",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Chưa đủ.",
+                    "skill_ids": [
+                      "G11-B23-TWO_INTERSECT"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O06"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O06 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T07",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Có, b⊥(P).",
+                    "skill_ids": [
+                      "G11-B23-PARALLEL_TRANSFER"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O07"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O07 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T08",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Không; chỉ có một đường.",
+                    "skill_ids": [
+                      "G11-B23-PLANE_PROPERTY"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O08"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O08 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T09",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Chưa đủ.",
+                    "skill_ids": [
+                      "G11-B23-PRACTICAL_POST"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O09"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O09 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T10",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Chính A; khoảng cách bằng 0.",
+                    "skill_ids": [
+                      "G11-B24-POINT_PROJECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O10"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O10 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T11",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Một điểm: giao điểm của d với (P).",
+                    "skill_ids": [
+                      "G11-B24-LINE_PROJECTION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O11"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O11 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T12",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Có, c⊥AB.",
+                    "skill_ids": [
+                      "G11-B24-THREE_PERP"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O12"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O12 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T13",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "0°.",
+                    "skill_ids": [
+                      "G11-B24-LINE_PLANE_ANGLE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O13"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O13 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T14",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "5 m.",
+                    "skill_ids": [
+                      "G11-B24-ANGLE_APPLICATION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O14"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O14 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T15",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "0°.",
+                    "skill_ids": [
+                      "G11-B25-PLANE_ANGLE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O15"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O15 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T16",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "60°.",
+                    "skill_ids": [
+                      "G11-B25-DIHEDRAL"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O16"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O16 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T17",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "(P)⊥(Q).",
+                    "skill_ids": [
+                      "G11-B25-PERP_PLANES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O17"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O17 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T18",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "Có, a⊥(Q).",
+                    "skill_ids": [
+                      "G11-B25-PERP_PLANE_RULE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O18"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O18 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T19",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "7 cm.",
+                    "skill_ids": [
+                      "G11-B25-RIGHT_PRISM"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O19"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O19 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T20",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "5.",
+                    "skill_ids": [
+                      "G11-B25-REGULAR_PYRAMID"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O20"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O20 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP16-T21",
+                    "source_blob": "1d45c826ca9fc2aa9fc9ef65797620c97d8f8f84",
+                    "answer_key": "4:1.",
+                    "skill_ids": [
+                      "G11-B25-REGULAR_FRUSTUM"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP16-O21"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP16-O21 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T01",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "3 cm.",
+                    "skill_ids": [
+                      "G11-B26-POINT_LINE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O01"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O01 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T02",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "0.",
+                    "skill_ids": [
+                      "G11-B26-POINT_PLANE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O02"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O02 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T03",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "Có, hai khoảng cách bằng nhau.",
+                    "skill_ids": [
+                      "G11-B26-PARALLEL_LINE_PLANE"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O03"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O03 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T04",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "4 m.",
+                    "skill_ids": [
+                      "G11-B26-PARALLEL_PLANES"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O04"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O04 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T05",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "5; đoạn vuông góc chung AD.",
+                    "skill_ids": [
+                      "G11-B26-SKEW_COMMON_PERP"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O05"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O05 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": true
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T06",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "h=4.",
+                    "skill_ids": [
+                      "G11-B26-HEIGHT_APPLICATION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O06"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O06 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T07",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "60 cm³.",
+                    "skill_ids": [
+                      "G11-B27-PRISM_VOLUME"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O07"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O07 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T08",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "20 cm³.",
+                    "skill_ids": [
+                      "G11-B27-PYRAMID_VOLUME"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O08"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O08 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T09",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "24 cm³.",
+                    "skill_ids": [
+                      "G11-B27-BOX_VOLUME"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O09"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O09 --"
+                    ],
+                    "stem_changed": true,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T10",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "8.",
+                    "skill_ids": [
+                      "G11-B27-FRUSTUM_VOLUME"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O10"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O10 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T11",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "60 m³.",
+                    "skill_ids": [
+                      "G11-B27-VOLUME_APPLICATION"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O11"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O11 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  },
+                  {
+                    "item_id": "THPT-TOP17-T12",
+                    "source_blob": "0ef0ad696e97d2549f29c5a22ba675970572a089",
+                    "answer_key": "4.",
+                    "skill_ids": [
+                      "G11-CHVII-INTEGRATED"
+                    ],
+                    "original_outcome_ids": [
+                      "TOP17-O12"
+                    ],
+                    "imported_outcome_ids_before": [
+                      "TOP17-O12 --"
+                    ],
+                    "stem_changed": false,
+                    "solution_changed": false
+                  }
+                ],
+                "unchanged_count": 137
+              }
+            ],
+            "notes": [
+              "33 first-try imported original_outcome_ids had trailing ' --' from HTML comments; normalized to exact source PRIMARY_OUTCOME marker, no reassignment. Before values recorded per item. Other topics untouched.",
+              "CĐ16 add explicit box names, foot H and B membership, straight ramp and horizontal floor; prove parallel-plane perpendicular transfer, correct P18 necessity by contradiction, add counterexample T06 and clarify skew perpendicular; show right triangle for slant height.",
+              "CĐ17 distinguish perpendicular distance and oblique segment, prove common perpendicular, derive pyramid height and frustum volume, clarify rectangular box and triangular base. Numeric results unchanged. All D6/remediation preserved; 137 shared first-try records outside scope unchanged. Full PDF, outcome coverage, PED/D6/reveal, independent review and interaction conversion pending."
             ]
           }
         ]
