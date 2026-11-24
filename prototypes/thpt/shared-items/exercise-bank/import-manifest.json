@@ -15691,6 +15691,119 @@
         "No fresh original SGK PDF/SBT evidence, complete Q01/PED/D6 or browser/reveal QA. Preserve previous PASS exact snapshot; Delta C for changed requirements/models/options, A for wording/remediation. No interaction conversion."
       ],
       "next": "G10 ChIII and CĐ03 only after inspecting actual topic title and scope; audit all relevant shared sources."
+    },
+    "formative_scoped_audit_cp50": {
+      "checkpoint": 50,
+      "baseline": "887fa8dbe5d3e7b5fbc7789427cce370eba5ea85",
+      "scope": "G10 ChIII B05/B06; CD03 equations with shared B18 items; CD12 affected placements checked, not full CD12 audit",
+      "source_evidence": {
+        "sgk_formative": "413d63fecc8b984a429cba99a5d170828384eab5",
+        "B05": "79f8101d34430bc0d672558115191a95875014a6",
+        "B06": "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9",
+        "B18": "3d8b0ed45b606f608db4b2a55ecfa8a273a8c802",
+        "topic03_knowledge": "38ee9f7b2a75bc2d3f910b879c513c1c4249f4a5",
+        "topic03_practice": "dda346972000e9cd976dfd26f607d77a48e1d42d",
+        "topic12_knowledge": "e092cc892dbce26a863e56c6234b6aa4d202e552",
+        "written_chiii": "271794ec365b038ff09fa7f3a9be47c3a54110d3"
+      },
+      "files": [
+        {
+          "path": "items/g10-chiii.json",
+          "before": "30701e524a10baecb702115820443c03662d7c7f",
+          "after": "de16297d0a333ab1c6716bd5561ab618ae7dfeea",
+          "changed": 16,
+          "unchanged": 11
+        },
+        {
+          "path": "items/cd03.json",
+          "before": "9723df9733c7046f721e4e0cd341fc3567371e75",
+          "after": "1bdfe03e647d24162326be01584eb328f194510f",
+          "changed": 21
+        },
+        {
+          "path": "items/g10-chvi.json",
+          "before": "fe70233d0a9936364acaa51b8c6367deb6c2d7ca",
+          "after": "d3e8a48e5ead3ef53e32e46ef722c0b49a705e06",
+          "changed": 6,
+          "unchanged": 42
+        }
+      ],
+      "reviewed": {
+        "formative": 43,
+        "first_try_preserved_chiii": 11,
+        "written_reference_read_only": 6,
+        "topic03_outcomes": 12,
+        "topic03_practice_placements": 31,
+        "topic03_replay_placements": 12,
+        "sgk_chiii_source_parity_before_edit": 16,
+        "topic12_shared_practice_placements": 16,
+        "topic12_shared_replay_placements": 6
+      },
+      "matrix": {
+        "TOP03-O01": [
+          "THPT-TOP03-ADD01",
+          "THPT-TOP03-ADD02"
+        ],
+        "TOP03-O02": [
+          "THPT-TOP03-ADD03",
+          "THPT-TOP03-ADD04"
+        ],
+        "TOP03-O03": [
+          "THPT-TOP03-ADD05",
+          "THPT-TOP03-ADD06"
+        ],
+        "TOP03-O04": [
+          "THPT-TOP03-ADD07",
+          "THPT-TOP03-ADD08"
+        ],
+        "TOP03-O05": [
+          "THPT-TOP03-ADD09",
+          "THPT-TOP03-ADD10"
+        ],
+        "TOP03-O06": [
+          "THPT-TOP03-ADD11",
+          "THPT-TOP03-ADD12"
+        ],
+        "TOP03-O09": [
+          "THPT-G10-B18-C01",
+          "THPT-G10-B18-P01",
+          "THPT-G10-B18-P02",
+          "THPT-TOP03-ADD16"
+        ],
+        "TOP03-O08": [
+          "THPT-G10-B18-C02",
+          "HPT-G10-CHVI-WRI-18-01",
+          "THPT-TOP03-ADD15"
+        ],
+        "TOP03-O10": [
+          "THPT-G10-B18-P03",
+          "THPT-TOP03-ADD17",
+          "THPT-TOP03-ADD18",
+          "THPT-TOP03-W01"
+        ],
+        "TOP03-O07": [
+          "THPT-TOP03-ADD13",
+          "THPT-TOP03-ADD14"
+        ],
+        "TOP03-O12": [
+          "THPT-G10-B18-P04",
+          "HPT-G10-CHVI-WRI-18-02",
+          "THPT-TOP03-ADD21",
+          "THPT-TOP03-W02"
+        ],
+        "TOP03-O11": [
+          "THPT-TOP03-ADD19",
+          "THPT-TOP03-ADD20"
+        ]
+      },
+      "findings": [
+        "ChIII old math correct; replace exact example B05-C01, B05-P03, B06-P01; add cofunction and calculator both supplementary angles B05-P05, R in Heron B06-P02, SSA two solutions B06-P03, nonright surveying with rounding B06-P05. All 16 now actionable remediation; 11 first-try preserved.",
+        "CD03 old results correct; ADD04 covers unique/no/infinite cases, ADD07 uses reduced discriminant, ADD08 compares double root and no real root, ADD15/17 Vietnamese terms, ADD21 explicit perpendicular wall and ground. All 21 hints and remediation; 7 verified existing B18 skill mappings, 14 prerequisite/extension skills unresolved, outcome unchanged. Six shared B18 items change remediation only; prior math/key untouched.",
+        "Cross-checked all 22 topic placement shards: B05/B06 only shared by CD12; B18 only CD03. CD12 changed items remain aligned with O01/O02/O06/O10/O11; SSA also O08, but no claim full CD12 audit. 31/31 CD03 source markers match existing placement; 12 replay resolve. All remediation item IDs resolve.",
+        "Six Written calculations/rubric totals verified from existing public pages: 2 SGK ChIII, 2 B18 Written, 2 Topic03 Written; latter still lack library projection pointer; HPT prefix preserved exactly as canonical historical ID, no rename. Two B18 Written display includes escaped HTML in Topic source; RELEASE rendering check pending. No Written edit.",
+        "Source provenance, IDs, exposure, interaction and placements unchanged. Original content_version values retained as import/source labels, bank candidate exact commit/blob used for delta evidence; formal item-version cutover rule still needs reconciliation. Q01 fresh SGK PDF/SBT, taxonomy, full PED/D6 and browser reveal remain unverified; no new PASS."
+      ],
+      "next": "Audit actual CĐ04 scope and G10 ChIV; do not assume topic number equals chapter. Keep CD12 full audit at its own checkpoint."
     }
   }
 }
