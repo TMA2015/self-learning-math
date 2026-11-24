@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "description": "Data contract only; Q01–Q18 unchanged",
+  "item_required": [
+    "item_id",
+    "content_version",
+    "stem",
+    "answer_key",
+    "worked_solution",
+    "source",
+    "interaction",
+    "status"
+  ],
+  "item_id_rule": "Preserve original ID; unique across shards and written references",
+  "placement_required": [
+    "collection",
+    "role",
+    "order",
+    "item_id"
+  ],
+  "interaction_types_initial": [
+    "SELF_COMPARE"
+  ],
+  "auto_grade_initial": false,
+  "nullable_unverified_fields": [
+    "problem_type_id",
+    "rubric"
+  ],
+  "private_rd1_allowed": false,
+  "public_selfcheck_mastery": false
+}

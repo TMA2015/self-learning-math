@@ -1,0 +1,65 @@
+{
+  "status": "AUTHORING_MIGRATION_CANDIDATE_NOT_RELEASE_READY",
+  "base_commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+  "source_blobs": [
+    "2101e2a248e0cf53ee11847b913b937cebcd0806",
+    "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+    "f70e2c961dfcf31825d135b61e301cbb4c322767"
+  ],
+  "projection_sources": [
+    {
+      "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+      "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+      "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd07/luyen-tap.md",
+      "blob": "6dc4c5a5b2da6056182c70cad07ef3a524b20ace",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/chuyen-de/cd07/tu-kiem-tra.md",
+      "blob": "ec0a840fcbe0fb6fe77e2c7020b7c9eb7ae16cdb",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g11-selfcheck/CHII.json",
+      "blob": "e2abdb9adac6c573a42b3455cbe66a40f952f8fc",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/assets/data/thpt-g11-selfcheck/CHV.json",
+      "blob": "d2aa6c7c1606141e79d9a1471eb45dc9afc87488",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-ii.md",
+      "blob": "2ddde229be6ee78855a244b08f63b6b9f5184220",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    },
+    {
+      "path": "docs/thpt-preview/thu-vien/tu-luan-g11-chuong-v.md",
+      "blob": "047f42f1d3cd241d1d5155e6f7ebc3c5bdd20aff",
+      "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+    }
+  ],
+  "counts": {
+    "formative_items": 84,
+    "written_references": 16,
+    "topic_practice": 69,
+    "topic_replay": 18,
+    "sgk_public_selfcheck": 28,
+    "placements": 193,
+    "projection_field_differences": 0
+  },
+  "scope": "CĐ07 + G11 ChII/ChV public formative and self-check; written references only. Not full THPT inventory.",
+  "projection_field_differences": [],
+  "academic_audit": "PENDING",
+  "interaction_conversion": "PENDING",
+  "release_authorization": false
+}

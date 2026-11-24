@@ -1,0 +1,1082 @@
+[
+  {
+    "item_id": "THPT-G11-B05-C01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy hữu hạn gồm 5 số chính phương dương đầu tiên là gì?",
+    "answer_key": "1; 4; 9; 16; 25.",
+    "worked_solution": "Số hạng thứ n là n², n=1,2,3,4,5. Dãy có đúng năm số hạng.",
+    "skill_ids": [
+      "G11-B05-SEQUENCE-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-C01 · SGK_CORE · G11-B05-SEQUENCE-DEFINITION · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-C02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Cho u_n=4n−3 (n≥1). Tìm u_1 và u_6.",
+    "answer_key": "u_1=1; u_6=21.",
+    "worked_solution": "Thế n=1 và n=6, tương ứng 4·1−3=1, 4·6−3=21.",
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-C02 · SGK_CORE · G11-B05-EXPLICIT-TERM · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-C03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "u_1=2, u_{n+1}=u_n+5. Viết 4 số hạng đầu.",
+    "answer_key": "2; 7; 12; 17.",
+    "worked_solution": "Bắt đầu tại u_1=2, mỗi lần tăng 5.",
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-C03 · SGK_CORE · G11-B05-RECURRENCE · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-C04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy u_n=5−2n (n≥1) tăng hay giảm?",
+    "answer_key": "Giảm nghiêm ngặt.",
+    "worked_solution": "u_{n+1}−u_n=−2<0 với mọi n≥1.",
+    "skill_ids": [
+      "G11-B05-MONOTONICITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-C04 · SGK_CORE · G11-B05-MONOTONICITY · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-P01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy u_n=5n+2 (n≥1). Có số hạng nào bằng 87 không? Nếu có là số hạng thứ mấy?",
+    "answer_key": "Có, n=17.",
+    "worked_solution": "5n+2=87 ⇒ n=17 là số nguyên dương.",
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P01 · SGK_PRACTICE · G11-B05-EXPLICIT-TERM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-P02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "u_1=1,u_{n+1}=2u_n+1. Tìm u_4.",
+    "answer_key": "u_4=15.",
+    "worked_solution": "u_2=3,u_3=7,u_4=15; không nhầm 2u_n+1 với 2(u_n+1).",
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P02 · SGK_PRACTICE · G11-B05-RECURRENCE · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-P03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Chứng minh u_n=3/(n+2) giảm với mọi n≥1.",
+    "answer_key": "Giảm nghiêm ngặt.",
+    "worked_solution": "u_{n+1}−u_n=3/(n+3)−3/(n+2)=−3/[(n+2)(n+3)]<0.",
+    "skill_ids": [
+      "G11-B05-MONOTONICITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P03 · SGK_PRACTICE · G11-B05-MONOTONICITY · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-P04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Xác định một cận trên và một cận dưới của u_n=2−1/n (n≥1).",
+    "answer_key": "1≤u_n<2; cận dưới 1, cận trên 2.",
+    "worked_solution": "Vì 0<1/n≤1 nên 1≤2−1/n<2.",
+    "skill_ids": [
+      "G11-B05-BOUNDS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P04 · SGK_PRACTICE · G11-B05-BOUNDS · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-P05",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy u_n=(-1)^n (n≥1) có tăng, giảm hay bị chặn không?",
+    "answer_key": "Không tăng hoặc giảm; bị chặn bởi -1 và 1.",
+    "worked_solution": "Các giá trị luân phiên −1,1,−1,1...; −1≤u_n≤1.",
+    "skill_ids": [
+      "G11-B05-SEQUENCE-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P05 · SGK_PRACTICE · G11-B05-SEQUENCE-DEFINITION · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-P06",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Một khán phòng có hàng ghế thứ n gồm 10+2(n−1) ghế; có 12 hàng. Hỏi hàng cuối có bao nhiêu ghế?",
+    "answer_key": "32 ghế.",
+    "worked_solution": "Thế n=12: 10+2·11=32; không tính tổng khi chỉ hỏi một hàng.",
+    "skill_ids": [
+      "G11-B05-EXPLICIT-TERM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P06 · SGK_PRACTICE · G11-B05-EXPLICIT-TERM · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-P07",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Với u_1=4, u_{n+1}=3u_n−2, tính u_3.",
+    "answer_key": "u_3=28.",
+    "worked_solution": "u_2=3·4−2=10, u_3=3·10−2=28.",
+    "skill_ids": [
+      "G11-B05-RECURRENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P07 · SGK_PRACTICE · G11-B05-RECURRENCE · ADVANCED",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B05-P08",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Chứng minh u_n=n/(n+1) (n≥1) bị chặn và tìm một khoảng chứa mọi u_n.",
+    "answer_key": "1/2≤u_n<1.",
+    "worked_solution": "u_n=1−1/(n+1); n≥1 ⇒ 0<1/(n+1)≤1/2; suy ra 1/2≤u_n<1.",
+    "skill_ids": [
+      "G11-B05-BOUNDS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 5 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B05-P08 · SGK_PRACTICE · G11-B05-BOUNDS · ADVANCED",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-C01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy 11,7,3,−1,... có phải cấp số cộng không? Tìm d.",
+    "answer_key": "Có, d=−4.",
+    "worked_solution": "Các hiệu liên tiếp đều bằng −4.",
+    "skill_ids": [
+      "G11-B06-AP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-C01 · SGK_CORE · G11-B06-AP-DEFINITION · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-C02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSC có u_1=6,d=3. Tìm u_9.",
+    "answer_key": "u_9=30.",
+    "worked_solution": "u_9=6+(9−1)·3=30.",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-C02 · SGK_CORE · G11-B06-AP-NTH · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-C03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSC có u_1=2,d=2. Tính S_5.",
+    "answer_key": "S_5=30.",
+    "worked_solution": "Năm số hạng đầu 2,4,6,8,10 nên tổng 30, hoặc 5(2+10)/2=30.",
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-C03 · SGK_CORE · G11-B06-AP-SUM · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-C04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Tìm x để 6,x,14 theo thứ tự là ba số hạng liên tiếp của CSC.",
+    "answer_key": "x=10.",
+    "worked_solution": "2x=6+14 ⇒ x=10.",
+    "skill_ids": [
+      "G11-B06-AP-THREE-TERMS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-C04 · SGK_CORE · G11-B06-AP-THREE-TERMS · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-P01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSC u_3=10,u_8=30. Tìm công sai và u_1.",
+    "answer_key": "d=4,u_1=2.",
+    "worked_solution": "u_8−u_3=5d=20 ⇒ d=4; u_1=u_3−2d=2.",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P01 · SGK_PRACTICE · G11-B06-AP-NTH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-P02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy u_n=3n²+1 (n≥1) có phải CSC không?",
+    "answer_key": "Không.",
+    "worked_solution": "u_{n+1}−u_n=6n+3 phụ thuộc n.",
+    "skill_ids": [
+      "G11-B06-AP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P02 · SGK_PRACTICE · G11-B06-AP-DEFINITION · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-P03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSC có u_1=9,d=−2. Tính S_8.",
+    "answer_key": "S_8=16.",
+    "worked_solution": "u_8=9−14=−5, S_8=8(9−5)/2=16.",
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P03 · SGK_PRACTICE · G11-B06-AP-SUM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-P04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSC u_1=−5,d=4 có số hạng nào bằng 39?",
+    "answer_key": "Có, n=12.",
+    "worked_solution": "−5+4(n−1)=39 ⇒ n−1=11 ⇒ n=12 nguyên dương.",
+    "skill_ids": [
+      "G11-B06-AP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P04 · SGK_PRACTICE · G11-B06-AP-NTH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-P05",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Ba số 2x−1, x+5, 3x+1 là ba số hạng liên tiếp của CSC. Tìm x.",
+    "answer_key": "x=10/3.",
+    "worked_solution": "2(x+5)=(2x−1)+(3x+1)=5x ⇒ 2x+10=5x ⇒ x=10/3.",
+    "skill_ids": [
+      "G11-B06-AP-THREE-TERMS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P05 · SGK_PRACTICE · G11-B06-AP-THREE-TERMS · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-P06",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Tiền thưởng tháng đầu 1,2 triệu; mỗi tháng sau tăng 0,1 triệu. Tổng thưởng 10 tháng?",
+    "answer_key": "16,5 triệu đồng.",
+    "worked_solution": "u_1=1,2;d=0,1;u_10=2,1;S_10=10(1,2+2,1)/2=16,5.",
+    "skill_ids": [
+      "G11-B06-AP-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P06 · SGK_PRACTICE · G11-B06-AP-APPLICATION · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-P07",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSC d=−3,u_5=13. Tính S_12.",
+    "answer_key": "S_12=102.",
+    "worked_solution": "u_1=u_5−4d=25;u_12=25−33=−8;S_12=12(25−8)/2=102.",
+    "skill_ids": [
+      "G11-B06-AP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "ADVANCED",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P07 · SGK_PRACTICE · G11-B06-AP-SUM · ADVANCED",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B06-P08",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Một sân vận động có 15 hàng ghế, hàng đầu 20 ghế, mỗi hàng sau nhiều hơn 2 ghế. Tổng số ghế?",
+    "answer_key": "510 ghế.",
+    "worked_solution": "u_15=20+14·2=48, S_15=15(20+48)/2=510.",
+    "skill_ids": [
+      "G11-B06-AP-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 6 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B06-P08 · SGK_PRACTICE · G11-B06-AP-APPLICATION · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-C01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy 5,15,45,135,... có phải CSN không? Tìm q.",
+    "answer_key": "Có, q=3.",
+    "worked_solution": "Mỗi số hạng sau gấp 3 lần số hạng trước.",
+    "skill_ids": [
+      "G11-B07-GP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-C01 · SGK_CORE · G11-B07-GP-DEFINITION · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-C02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSN u_1=4,q=2. Tìm u_6.",
+    "answer_key": "u_6=128.",
+    "worked_solution": "u_6=4·2^(6−1)=128.",
+    "skill_ids": [
+      "G11-B07-GP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-C02 · SGK_CORE · G11-B07-GP-NTH · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-C03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSN u_1=3,q=2. Tính S_4.",
+    "answer_key": "45.",
+    "worked_solution": "3+6+12+24=45, hoặc 3(1−2⁴)/(1−2)=45.",
+    "skill_ids": [
+      "G11-B07-GP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-C03 · SGK_CORE · G11-B07-GP-SUM · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-C04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Một CSN có ba số hạng dương liên tiếp 2, x, 18. Tìm x.",
+    "answer_key": "x=6.",
+    "worked_solution": "x²=2·18=36; do các số hạng đều dương nên x=6.",
+    "skill_ids": [
+      "G11-B07-GP-THREE-TERMS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "BASIC",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-C04 · SGK_CORE · G11-B07-GP-THREE-TERMS · BASIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-P01",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy u_n=7(−2)^(n−1) là CSN? Tìm q và u_4.",
+    "answer_key": "q=−2,u_4=−56.",
+    "worked_solution": "u_{n+1}=−2u_n; u_4=7(−2)^3=−56.",
+    "skill_ids": [
+      "G11-B07-GP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P01 · SGK_PRACTICE · G11-B07-GP-DEFINITION · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-P02",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSN u_2=6,u_5=162, các số hạng đầu khác 0. Tìm q và u_1.",
+    "answer_key": "q=3,u_1=2.",
+    "worked_solution": "u_5/u_2=q³=27 ⇒ q=3 (nghiệm thực duy nhất);u_1=u_2/q=2.",
+    "skill_ids": [
+      "G11-B07-GP-NTH"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P02 · SGK_PRACTICE · G11-B07-GP-NTH · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-P03",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSN u_1=2,q=−2. Tính S_5.",
+    "answer_key": "S_5=22.",
+    "worked_solution": "S_5=2(1−(−2)^5)/(1−(−2))=2·33/3=22.",
+    "skill_ids": [
+      "G11-B07-GP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P03 · SGK_PRACTICE · G11-B07-GP-SUM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-P04",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "CSN u_1=8,q=1. Tính S_9.",
+    "answer_key": "72.",
+    "worked_solution": "Dãy hằng bằng 8, S_9=9·8=72; không chia cho 1−q=0.",
+    "skill_ids": [
+      "G11-B07-GP-SUM"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P04 · SGK_PRACTICE · G11-B07-GP-SUM · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-P05",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Ba số 9, x, 1 theo thứ tự là CSN, tất cả dương. Tìm x.",
+    "answer_key": "x=3.",
+    "worked_solution": "x²=9·1=9 và x>0 ⇒ x=3.",
+    "skill_ids": [
+      "G11-B07-GP-THREE-TERMS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P05 · SGK_PRACTICE · G11-B07-GP-THREE-TERMS · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-P06",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Một nguồn vi khuẩn ban đầu 200 cá thể, mỗi giờ gấp đôi. Sau 5 giờ có bao nhiêu?",
+    "answer_key": "6400 cá thể.",
+    "worked_solution": "N_5=200·2⁵=6400; ban đầu tính là thời điểm t=0.",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P06 · SGK_PRACTICE · G11-B07-GP-APPLICATION · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-P07",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Dãy 3,0,0,0,... có phải CSN không?",
+    "answer_key": "Có, công bội q=0.",
+    "worked_solution": "u_{n+1}=0·u_n cho mọi n≥1; không dùng u_3/u_2=0/0.",
+    "skill_ids": [
+      "G11-B07-GP-DEFINITION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P07 · SGK_PRACTICE · G11-B07-GP-DEFINITION · CORE_APPLY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-B07-P08",
+    "content_version": "THPT-G11-CHII-B05-B07-R03",
+    "stem": "Gửi 50 triệu đồng với lãi kép 4% mỗi năm, không nạp/rút. Số tiền sau 3 năm?",
+    "answer_key": "50·1,04³ = 56,2432 triệu đồng.",
+    "worked_solution": "V_3=50(1+0,04)^3=56,2432; phân biệt t=0 và t=3.",
+    "skill_ids": [
+      "G11-B07-GP-APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Đọc lại kiến thức và ví dụ của Bài 7 trước khi mở đối chiếu lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "2101e2a248e0cf53ee11847b913b937cebcd0806",
+      "heading": "### THPT-G11-B07-P08 · SGK_PRACTICE · G11-B07-GP-APPLICATION · APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chii-b05-b07-source-locked-formative-r03.js",
+        "blob": "f9f11db523b4a40bbce549fc4bfab2ea356d717c",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]

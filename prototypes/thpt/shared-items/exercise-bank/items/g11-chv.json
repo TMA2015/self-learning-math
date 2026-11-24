@@ -1,0 +1,902 @@
+[
+  {
+    "item_id": "THPT-G11-CHV-B15-C01",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Với uₙ=7+3/n, số 7 có ý nghĩa gì khi n tăng mãi?",
+    "answer_key": "Giới hạn của dãy là 7.",
+    "worked_solution": "Khoảng cách từ uₙ đến 7 bằng 3/n, tiến về 0. Như vậy 7 không cần là một số hạng của dãy.",
+    "skill_ids": [
+      "G11-B15-FINITE_SEQUENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-C01 · CORE · skill_id=G11-B15-FINITE_SEQUENCE",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B15-C02",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Dãy uₙ=−2n có tiến đến −∞ hay không? Giải thích bằng lời.",
+    "answer_key": "Có, uₙ→−∞.",
+    "worked_solution": "Với mọi M>0, từ n>M/2 thì −2n<−M; các số hạng ngày càng nhỏ theo chiều âm.",
+    "skill_ids": [
+      "G11-B15-INFINITE_SEQUENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-C02 · CORE · skill_id=G11-B15-INFINITE_SEQUENCE",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B15-C03",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tổng vô hạn 3+3/5+3/25+… có thể dùng công thức cấp số nhân lùi vô hạn không?",
+    "answer_key": "Có; tổng bằng 15/4.",
+    "worked_solution": "Số hạng đầu 3, công bội 1/5 có trị tuyệt đối nhỏ hơn 1; tổng 3/(1−1/5)=15/4.",
+    "skill_ids": [
+      "G11-B15-GEOMETRIC"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-C03 · CORE · skill_id=G11-B15-GEOMETRIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B15-P01",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tìm lim(n→∞) (5n²+2)/(2n²+n).",
+    "answer_key": "5/2.",
+    "worked_solution": "Chia tử và mẫu cho n²; các phần 2/n² và 1/n tiến về 0; mẫu giới hạn 2 khác 0.",
+    "skill_ids": [
+      "G11-B15-LIMIT_ARITHMETIC"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-P01 · PRACTICE · skill_id=G11-B15-LIMIT_ARITHMETIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B15-P02",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Với uₙ=−4+9/n, hãy chỉ ra giới hạn và giải thích vì sao không phải −4+9.",
+    "answer_key": "−4.",
+    "worked_solution": "Hiệu uₙ−(−4)=9/n→0; số 9 không giữ nguyên mà được chia cho n đang tăng.",
+    "skill_ids": [
+      "G11-B15-FINITE_SEQUENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-P02 · PRACTICE · skill_id=G11-B15-FINITE_SEQUENCE",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B15-P03",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tính lim(n→∞) (1−2/n)(4+1/n).",
+    "answer_key": "4.",
+    "worked_solution": "Hai thừa số có giới hạn hữu hạn 1 và 4, nên giới hạn tích là 1×4.",
+    "skill_ids": [
+      "G11-B15-LIMIT_ARITHMETIC"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-P03 · PRACTICE · skill_id=G11-B15-LIMIT_ARITHMETIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B15-P04",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tính lim(n→∞) √(n²+2n)/n với n nguyên dương.",
+    "answer_key": "1.",
+    "worked_solution": "Do n>0, chia trong căn cho n²: √(1+2/n)→1; không nhầm √(n²) với |n| cho n âm.",
+    "skill_ids": [
+      "G11-B15-LIMIT_ARITHMETIC"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-P04 · PRACTICE · skill_id=G11-B15-LIMIT_ARITHMETIC",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B15-P05",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Dãy vₙ=(−1)ⁿ có giới hạn hữu hạn hoặc ±∞ không?",
+    "answer_key": "Không có giới hạn theo các loại đã học.",
+    "worked_solution": "Các số hạng chẵn bằng 1 và lẻ bằng −1, nên không dần về một số hay vô cực có dấu.",
+    "skill_ids": [
+      "G11-B15-INFINITE_SEQUENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-P05 · PRACTICE · skill_id=G11-B15-INFINITE_SEQUENCE",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B15-P06",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tính tổng lý thuyết 8−4+2−1+…; vì sao tổng vẫn hữu hạn dù có vô hạn số hạng?",
+    "answer_key": "16/3.",
+    "worked_solution": "Đây là cấp số nhân a=8, q=−1/2, |q|<1; tổng bằng 8/(1+1/2)=16/3; số hạng và phần dư tiến về 0.",
+    "skill_ids": [
+      "G11-B15-GEOMETRIC_APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-P06 · APPLICATION · skill_id=G11-B15-GEOMETRIC_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B15-P07",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Bóng rơi từ độ cao 3 m, mỗi lần bật lên cao bằng 1/2 lần trước; mô hình vô hạn. Tổng quãng đường theo phương thẳng đứng là bao nhiêu?",
+    "answer_key": "9 m.",
+    "worked_solution": "Lần đầu đi xuống 3 m. Những lần sau gồm đi lên và xuống ở các độ cao 3/2,3/4,… nên tổng là 3+2×[(3/2)/(1−1/2)]=9 m. Nêu rõ đây là mô hình lí tưởng.",
+    "skill_ids": [
+      "G11-B15-GEOMETRIC_APPLICATION"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 15 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B15-P07 · APPLICATION · skill_id=G11-B15-GEOMETRIC_APPLICATION",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-C01",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Hàm f(x)=(x²−9)/(x−3) (x≠3) không xác định ở x=3. Nó có giới hạn khi x→3 không?",
+    "answer_key": "Có, giới hạn bằng 6.",
+    "worked_solution": "Với x≠3, f(x)=x+3. Khi x tiến đến 3, f(x) tiến đến 6; giới hạn không yêu cầu f(3) tồn tại.",
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_POINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-C01 · CORE · skill_id=G11-B16-LIMIT_AT_POINT",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-C02",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Cho f(x)=x+2 nếu x<0 và f(x)=3−x nếu x≥0. Giới hạn hai phía tại 0 có tồn tại không?",
+    "answer_key": "Không.",
+    "worked_solution": "Phía trái tiến đến 2, phía phải tiến đến 3. Hai giới hạn một phía khác nhau nên giới hạn hai phía không tồn tại.",
+    "skill_ids": [
+      "G11-B16-ONE_SIDED"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-C02 · CORE · skill_id=G11-B16-ONE_SIDED",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-C03",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Khi x→4⁺ và x→4⁻, f(x)=1/(x−4) có xu hướng như thế nào?",
+    "answer_key": "+∞ ở bên phải và −∞ ở bên trái.",
+    "worked_solution": "Khi x>4 mẫu dương rất nhỏ; khi x<4 mẫu âm rất nhỏ. Dấu mẫu quyết định dấu giới hạn vô cực.",
+    "skill_ids": [
+      "G11-B16-INFINITE_LIMIT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-C03 · CORE · skill_id=G11-B16-INFINITE_LIMIT",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-P01",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tính lim(x→0) (√(x+4)−2)/x.",
+    "answer_key": "1/4.",
+    "worked_solution": "Với x≠0, nhân liên hợp: (√(x+4)−2)/x=1/(√(x+4)+2), rồi cho x→0.",
+    "skill_ids": [
+      "G11-B16-ALGEBRAIC_TECHNIQUES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-P01 · PRACTICE · skill_id=G11-B16-ALGEBRAIC_TECHNIQUES",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-P02",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tính lim(x→1) (x²−1)/(x²+x−2).",
+    "answer_key": "2/3.",
+    "worked_solution": "Phân tích (x−1)(x+1)/[(x−1)(x+2)] khi x≠1, sau đó thế giới hạn 2/3.",
+    "skill_ids": [
+      "G11-B16-ALGEBRAIC_TECHNIQUES"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-P02 · PRACTICE · skill_id=G11-B16-ALGEBRAIC_TECHNIQUES",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-P03",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "f(x)=x² khi x≤2 và f(x)=3x−2 khi x>2. Hai giới hạn một phía ở 2 có bằng nhau không?",
+    "answer_key": "Có, đều bằng 4.",
+    "worked_solution": "Từ trái x²→4; từ phải 3x−2→4, nên giới hạn hai phía bằng 4.",
+    "skill_ids": [
+      "G11-B16-ONE_SIDED"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-P03 · PRACTICE · skill_id=G11-B16-ONE_SIDED",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-P04",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tính lim(x→−∞) √(x²+4)/x.",
+    "answer_key": "−1.",
+    "worked_solution": "Vì x âm đủ lớn, √(x²)=|x|=−x; biểu thức bằng −√(1+4/x²)→−1.",
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_INFINITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-P04 · PRACTICE · skill_id=G11-B16-LIMIT_AT_INFINITY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-P05",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tính lim(x→+∞) (3x²−x)/(x²+2).",
+    "answer_key": "3.",
+    "worked_solution": "Chia cả tử và mẫu cho x²; tử→3 và mẫu→1.",
+    "skill_ids": [
+      "G11-B16-LIMIT_AT_INFINITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-P05 · PRACTICE · skill_id=G11-B16-LIMIT_AT_INFINITY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-P06",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Tính lim(x→2⁻) (x+1)/(2−x).",
+    "answer_key": "+∞.",
+    "worked_solution": "Tử tiến tới 3>0, mẫu dương và tiến đến 0 khi x<2.",
+    "skill_ids": [
+      "G11-B16-INFINITE_LIMIT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-P06 · PRACTICE · skill_id=G11-B16-INFINITE_LIMIT",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B16-P07",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Mô hình hiệu suất H(t)=100t/(t+5) với t≥0. Khi t tăng vô hạn, H(t) tiến đến mức nào? Điều đó có nghĩa gì?",
+    "answer_key": "100 (đơn vị hiệu suất của mô hình).",
+    "worked_solution": "Chia tử mẫu cho t: H(t)=100/(1+5/t)→100. Mô hình dự báo mức bão hòa, không khẳng định giá trị 100 đạt được ở thời gian hữu hạn.",
+    "skill_ids": [
+      "G11-B16-REAL_CONTEXT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 16 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B16-P07 · APPLICATION · skill_id=G11-B16-REAL_CONTEXT",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-C01",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Cho f(x)=(x²−1)/(x−1) khi x≠1 và f(1)=2. Hàm có liên tục ở 1 không?",
+    "answer_key": "Có.",
+    "worked_solution": "Giới hạn khi x→1 bằng lim(x+1)=2, khớp với giá trị f(1)=2.",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-C01 · CORE · skill_id=G11-B17-CONTINUITY_POINT",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-C02",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Cùng biểu thức (x²−1)/(x−1) khi x≠1 nhưng đặt f(1)=0. Hàm có liên tục ở 1 không?",
+    "answer_key": "Không.",
+    "worked_solution": "Giới hạn bằng 2 nhưng giá trị ở điểm lại bằng 0. Thiếu điều kiện giới hạn bằng giá trị hàm.",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-C02 · CORE · skill_id=G11-B17-CONTINUITY_POINT",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-C03",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Hàm h(x)=√(x+2) có liên tục tại đầu mút x=−2 trên miền xác định không?",
+    "answer_key": "Có, liên tục từ bên phải tại −2.",
+    "worked_solution": "Hàm xác định với x≥−2; lim(x→−2⁺)√(x+2)=0=h(−2). Không kiểm tra từ phía trái ngoài miền xác định.",
+    "skill_ids": [
+      "G11-B17-ELEMENTARY_CONTINUITY"
+    ],
+    "problem_type_id": null,
+    "difficulty": "CORE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-C03 · CORE · skill_id=G11-B17-ELEMENTARY_CONTINUITY",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-P01",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Hàm g(x)=(x+2)/(x−1) liên tục trên những khoảng nào?",
+    "answer_key": "(−∞,1) và (1,+∞).",
+    "worked_solution": "Tử và mẫu là đa thức liên tục, thương liên tục khi mẫu khác 0; phải loại x=1.",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_OPERATIONS"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-P01 · PRACTICE · skill_id=G11-B17-CONTINUITY_OPERATIONS",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-P02",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Cho f(x)=ax+1 nếu x<2, và f(x)=x²−1 nếu x≥2. Tìm a để liên tục tại 2.",
+    "answer_key": "a=1.",
+    "worked_solution": "Giới hạn trái 2a+1; giới hạn phải và f(2) đều bằng 3. Điều kiện khớp 2a+1=3.",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-P02 · PRACTICE · skill_id=G11-B17-CONTINUITY_POINT",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-P03",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Chứng minh f(x)=x²−2 có ít nhất một nghiệm trong (1,2).",
+    "answer_key": "Có ít nhất một nghiệm.",
+    "worked_solution": "Đa thức liên tục trên [1,2], f(1)=−1<0, f(2)=2>0. Theo định lí giá trị trung gian, tồn tại c∈(1,2) với f(c)=0.",
+    "skill_ids": [
+      "G11-B17-ZERO_EXISTENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-P03 · PRACTICE · skill_id=G11-B17-ZERO_EXISTENCE",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-P04",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Đặt f(x)=(x²−16)/(x−4) khi x≠4 và f(4)=m. Tìm m để liên tục ở 4.",
+    "answer_key": "m=8.",
+    "worked_solution": "Với x≠4 rút gọn thành x+4; giới hạn khi x→4 bằng 8, nên cần f(4)=8.",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_POINT"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-P04 · PRACTICE · skill_id=G11-B17-CONTINUITY_POINT",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-P05",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "Hàm f(x)=√(9−x²) có liên tục trên đoạn [−3,3] không?",
+    "answer_key": "Có.",
+    "worked_solution": "Miền xác định là [−3,3]. Hàm liên tục ở bên trong và có giới hạn một phía tại hai đầu mút bằng giá trị hàm.",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_INTERVAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-P05 · PRACTICE · skill_id=G11-B17-CONTINUITY_INTERVAL",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-P06",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "f(x)=x+1 với x<0, f(x)=x²+1 với x≥0. Liên tục tại 0 không?",
+    "answer_key": "Có.",
+    "worked_solution": "Giới hạn trái và phải cùng bằng 1, giá trị f(0)=1.",
+    "skill_ids": [
+      "G11-B17-CONTINUITY_INTERVAL"
+    ],
+    "problem_type_id": null,
+    "difficulty": "PRACTICE_APPLY",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-P06 · PRACTICE · skill_id=G11-B17-CONTINUITY_INTERVAL",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  },
+  {
+    "item_id": "THPT-G11-CHV-B17-P07",
+    "content_version": "THPT-G11-CHV-B15-B17-R03",
+    "stem": "f(x)=x³−5 liên tục trên [1,2]; f(1) và f(2) trái dấu. Kết luận nào chắc chắn đúng, và có được suy ngay nghiệm duy nhất không?",
+    "answer_key": "Có ít nhất một nghiệm trong (1,2); chưa thể suy duy nhất chỉ từ định lí đổi dấu.",
+    "worked_solution": "f(1)=−4<0, f(2)=3>0. Định lí cho sự tồn tại, còn tính duy nhất cần luận cứ khác.",
+    "skill_ids": [
+      "G11-B17-ZERO_EXISTENCE"
+    ],
+    "problem_type_id": null,
+    "difficulty": "APPLICATION",
+    "hints": [
+      "Xem lại điều kiện và ví dụ giải của Bài 17 rồi tự thử trước khi mở lời giải."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SELF_COMPARE",
+      "auto_grade": false
+    },
+    "source": {
+      "blob": "7934757ed06de4ae4b63dbc351ef524fc054e0d0",
+      "heading": "#### THPT-G11-CHV-B17-P07 · APPLICATION · skill_id=G11-B17-ZERO_EXISTENCE",
+      "public_projection": {
+        "path": "docs/assets/javascripts/thpt-g11-chv-b15-b17-source-locked-formative-r03.js",
+        "blob": "cbe3608a8551b85440e955835706f7046d88ef7d",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
+      }
+    },
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+  }
+]
