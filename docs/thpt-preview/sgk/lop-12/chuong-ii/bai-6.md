@@ -55,7 +55,7 @@
     =\overrightarrow{AC'}.
     \]
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G12-CHII-B06-R00.svg" alt="Quy tắc hình hộp, tổng ba vectơ AB, AD, AA phẩy bằng AC phẩy"><figcaption>Chọn ba cạnh đi ra từ cùng đỉnh \(A\). Ghép hai cạnh đáy thành đường chéo \(AC\), rồi dời cạnh đứng \(AA'\) đến \(C\). Kết quả là đường chéo không gian \(AC'\). Quy tắc đúng với mọi hình hộp, không chỉ hình hộp chữ nhật.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G12-CHII-B06-R00.svg" alt="Quy tắc hình hộp, tổng ba vectơ AB, AD, AA phẩy bằng AC phẩy"><figcaption>Chọn ba cạnh đi ra từ cùng đỉnh \(A\). Ghép hai cạnh đáy thành đường chéo \(AC\), rồi đặt vectơ \(\overrightarrow{AA'}\) tại \(C\), giữ nguyên hướng và độ dài, để được \(\overrightarrow{CC'}\). Kết quả là đường chéo không gian \(AC'\). Quy tắc đúng với mọi hình hộp, không chỉ hình hộp chữ nhật.</figcaption></figure>
 
     Phép cộng có tính giao hoán, kết hợp như trong mặt phẳng. Ta được phép đổi thứ tự các vectơ trong tổng và gom các cặp thích hợp. Cộng vectơ-không không làm thay đổi vectơ. Nếu một vật chịu nhiều lực, tổng các vectơ lực biểu diễn hợp lực; hợp lực bằng \(\vec0\) nghĩa là các lực cân bằng, không phải từng lực đều bằng không.
 
@@ -85,7 +85,7 @@
     =2\overrightarrow{OM}.
     \]
 
-    Công thức tương tự cho trọng tâm \(G\) của tam giác \(ABC\): \(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}=3\overrightarrow{OG}\). Để thấy vì sao, lấy \(M\) là trung điểm \(BC\). Trên trung tuyến, \(\overrightarrow{AG}=\frac23\overrightarrow{AM}\), nên \(\overrightarrow{GA}=-2\overrightarrow{GM}\); đồng thời \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\). Tổng ba vectơ xuất phát từ \(G\) bằng \(\vec0\). Chèn gốc \(O\) vào mỗi vectơ cho hệ thức đã nêu.
+    Công thức tương tự cho trọng tâm \(G\) của tam giác \(ABC\): \(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}=3\overrightarrow{OG}\). Để thấy vì sao, lấy \(M\) là trung điểm \(BC\). Trên trung tuyến, \(\overrightarrow{AG}=\frac23\overrightarrow{AM}\), nên \(\overrightarrow{GA}=-2\overrightarrow{GM}\); đồng thời \(\overrightarrow{GB}+\overrightarrow{GC}=2\overrightarrow{GM}\). Tổng ba vectơ xuất phát từ \(G\) bằng \(\vec0\). Viết \(\overrightarrow{GA}=\overrightarrow{OA}-\overrightarrow{OG}\), tương tự với \(B,C\). Thay ba hiệu vào tổng bằng \(\vec0\) cho hệ thức đã nêu.
 
     Trong tứ diện \(ABCD\), gọi \(G\) là trọng tâm mặt \(BCD\). Theo hệ thức trọng tâm tam giác, \(\overrightarrow{AB}+\overrightarrow{AC}+\overrightarrow{AD}=3\overrightarrow{AG}\). Nếu chọn \(I\) trên \(AG\) sao cho \(AI=3IG\), ta có \(\overrightarrow{IA}=-3\overrightarrow{IG}\). Do \(\overrightarrow{IB}+\overrightarrow{IC}+\overrightarrow{ID}=3\overrightarrow{IG}\), suy ra tổng bốn vectơ từ \(I\) đến bốn đỉnh bằng \(\vec0\). Điểm \(I\) được gọi là trọng tâm tứ diện. Hệ thức tổng bằng \(\vec0\) xác định duy nhất điểm này: nếu một điểm \(J\) cũng có tổng bốn vectơ bằng \(\vec0\), chèn \(I\) vào từng vectơ từ \(J\) sẽ cho \(4\overrightarrow{JI}=\vec0\), nên \(J=I\).
 
@@ -124,7 +124,7 @@
 
     ??? question "Đối chiếu"
 
-        \(W=50\cdot4\cos120^\circ=-100\) J. Dấu âm nghĩa là thành phần lực theo hướng độ dời ngược chiều chuyển động. Vì \(\cos\theta\le1\), công lớn nhất bằng \(200\) J khi lực cùng hướng với độ dời, tức \(\theta=0^\circ\).
+        \(W=50\cdot4\cos120^\circ=-100\) J. Dấu âm nghĩa là thành phần lực dọc theo độ dời hướng ngược với độ dời. Vì \(\cos\theta\le1\), công lớn nhất bằng \(200\) J khi lực cùng hướng với độ dời, tức \(\theta=0^\circ\).
 
     ??? tip "Kiểm lỗi"
 
@@ -156,7 +156,7 @@
 
     ### 2.3. Tích của một số với một vectơ trong không gian
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa</strong><p>Với \(k\ne0,\vec a\ne\vec0\), tích \(k\vec a\) là vectơ cùng hướng với \(\vec a\) nếu \(k&gt;0\), ngược hướng nếu \(k&lt;0\), và có độ dài \(|k|\,|\vec a|\). Quy ước \(0\vec a=\vec0\), \(k\vec0=\vec0\).</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa</strong><p>Với \(k\ne0,\vec a\ne\vec0\), tích \(k\vec a\) là vectơ cùng hướng với \(\vec a\) nếu \(k\gt 0\), ngược hướng nếu \(k\lt 0\), và có độ dài \(|k|\,|\vec a|\). Quy ước \(0\vec a=\vec0\), \(k\vec0=\vec0\).</p></div>
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Tính chất và điều kiện cùng phương</strong><p>Với \(h,k\in\mathbb R\): \(h(k\vec a)=(hk)\vec a\), \((h+k)\vec a=h\vec a+k\vec a\), \(k(\vec a+\vec b)=k\vec a+k\vec b\), \(1\vec a=\vec a\), \((-1)\vec a=-\vec a\).</p><p>Với \(\vec b\ne\vec0\), \(\vec a,\vec b\) cùng phương khi và chỉ khi có số thực \(k\) sao cho \(\vec a=k\vec b\).</p></div>
 
