@@ -412,6 +412,57 @@ function selfTest(){
   b23CanonicalAnswers(b23Old),"Changing the explanation must still fail");
  console.log("PASS scoped production proof fixtures: historical blob, new receipt, Q15/16, no old math loss; negatives fail closed");
 }
+
+// Owner #1039: first Knowledge-only wave, with the immutable snapshot of the
+// single AUTHORING handoff (same canonical path, not a second receipt).
+// These three lessons previously had no scored First Try identities.
+// Authoring rewrote the unscored Knowledge/HELP explanations; no bank, Core,
+// practice, chapter assessment, runtime or shared CSS may enter this batch.
+const G11_W1_HANDOFF="prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md";
+const G11_W1_HANDOFF_SHA="0339ff19d39210df10d2b4296460c8b758b51d02";
+const G11_W1_ROWS=[
+ [2,1021,"b6b88d8fdd67a902dc55d9d46b4c0baab551dd95","15c4de731bfbaf5b8a141a54d9b5493e7895c752","d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6"],
+ [3,1023,"a7288efd8e2287085fb77210bc0a5e4d8521d4f0","a8a3592c661b06fae94aad386b991f23a6718957","9177a10ade8788712c6b9fbf39789822df2a417a"],
+ [4,1025,"a505489e888d61850ef20a426447b981a4d3e869","71271b2035bfe289ac3ccf6f384d8f41ec55aefb","0714c5b72389d29dbc8993c2ce9828fc98cf7a92"]
+];
+const G11_W1_LESSONS=G11_W1_ROWS.map(r=>"docs/thpt-preview/sgk/lop-11/chuong-i/bai-"+r[0]+".md");
+const G11_W1_ASSETS=[["docs/assets/images/thpt/G11_B02_UNIT_CIRCLE_AUTHORING_RESET_20261122.svg","02bb742a7e44b9219e7bd44fa9e306468ac6cc9c"],["docs/assets/images/thpt/G11_B04_COS_MINUS_HALF_AUTHORING_RESET_20261123.svg","34e5b47e1e549c6d24d00354cf1d7bd730561839"],["docs/assets/images/thpt/G11_B04_SIN_HALF_AUTHORING_RESET_20261123.svg","86530ed774254494b010d60a27fed660f9e6f745"]];
+const G11_W1_PATHS=[".github/workflows/sgk-golden-first-paint-qa.yml","scripts/test-thpt-academic-presentation-browser.cjs","scripts/test-thpt-sgk-lesson-nav-p2-browser.cjs","scripts/test-sgk-golden-first-paint.cjs","hooks/sgk_golden_first_paint.py","docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md","docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md","docs/assets/images/thpt/G11_B02_UNIT_CIRCLE_AUTHORING_RESET_20261122.svg","docs/assets/images/thpt/G11_B04_COS_MINUS_HALF_AUTHORING_RESET_20261123.svg","docs/assets/images/thpt/G11_B04_SIN_HALF_AUTHORING_RESET_20261123.svg","prototypes/thpt/release-handoffs/SGK_11_12_KNOWLEDGE_UPGRADE_HANDOFF_1039.md","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs"];
+function verifyG11W1(previous,current,changed,expected){
+ assert.deepEqual(changed.slice().sort(),G11_W1_PATHS.slice().sort(),"#1039 W1 exact diff only");
+ assert.deepEqual(expected.slice().sort(),G11_W1_LESSONS.slice().sort(),"#1039 W1 changed lessons mismatch");
+ const git=(args)=>cp.execFileSync("git",args,{cwd:root});
+ assert.equal(blob(fs.readFileSync(path.join(root,"hooks/sgk_golden_first_paint.py"))),"80194f462a0a55410a828e03dc50b5307402fb09","W1 verified exact route-scoped Golden adapter");
+ const receipt=fs.readFileSync(path.join(root,G11_W1_HANDOFF));
+ assert.equal(blob(receipt),G11_W1_HANDOFF_SHA,"Single #1039 handoff snapshot changed");
+ const r=receipt.toString("utf8");
+ assert(r.includes("32/32 CONTENT_READY")&&r.includes("Q18_VERIFICATION_MODE=AUTHOR_SELF_VERIFIED")&&r.includes("RELEASE_SCOPE=SGK_KNOWLEDGE_ENRICHMENT_ONLY"));
+ for(const [n,pr,commit,oldSha,newSha] of G11_W1_ROWS){
+  const file="docs/thpt-preview/sgk/lop-11/chuong-i/bai-"+n+".md";
+  const lines=r.split("\n").filter(l=>l.startsWith("| B0"+n+" [#"+pr+"]"));
+  assert.equal(lines.length,1,"Missing unique signed handoff row B0"+n);
+  for(const value of [commit,oldSha,newSha])assert(lines[0].includes(value),"Handoff row mismatch B0"+n);
+  const before=git(["show",previous+":"+file]),now=fs.readFileSync(path.join(root,file));
+  assert.equal(blob(before),oldSha,"Published baseline mismatch "+file);
+  assert.equal(blob(now),newSha,"Candidate learner blob mismatch "+file);
+  assert.equal(blob(git(["show",current+":"+file])),newSha,"Exact commit candidate mismatch "+file);
+  const s=now.toString("utf8"),old=before.toString("utf8");
+  assert.deepEqual([...s.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"]);
+  assert.deepEqual(tokenSet(s,"data-thpt-first-try-id"),tokenSet(old,"data-thpt-first-try-id"),"Scored/identified First Try changed");
+  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final|g11-chapter-selfcheck)/i.test(s),"Assessment mount in Knowledge");
+  assert(s.includes('href="../luyen-tap/"')&&s.includes('href="../tu-kiem-tra-chuong/"'),"Protected navigation missing");
+  // Old HELP IDs belonged to the overwritten Knowledge prose, not a bank;
+  // preserve independent chapter files and all other paths by exact diff.
+  assert((s.match(/^\s+\?\?\? question "Đối chiếu"$/gm)||[]).length>0,"Voluntary comparison absent");
+  console.log("SCOPED_G11_W1_SOURCE_PASS "+JSON.stringify({lesson:file,baseline:oldSha,candidate:newSha,authoring:commit,pr,receipt:G11_W1_HANDOFF_SHA,mode:"AUTHOR_SELF_VERIFIED",status:"TECHNICAL_SOURCE_ONLY"}));
+ }
+ for(const [asset,sha] of G11_W1_ASSETS){
+  assert.equal(blob(fs.readFileSync(path.join(root,asset))),sha,"Signed SVG changed "+asset);
+  assert.equal(blob(git(["show",current+":"+asset])),sha,"Commit SVG mismatch "+asset);
+ }
+ console.log("PASS #1039 W1 exact 3 learner + 3 SVG, source and assessment boundaries; no Academic/PED verdict");
+}
+
 function main(){
  const previous=process.env.BEFORE_SHA,current=process.env.HEAD_SHA;
  assert(sha(previous)&&sha(current),"Full nonzero main push before/head commits required");
@@ -419,6 +470,10 @@ function main(){
  assert.equal(checked,current,"Proof must run on exact main HEAD");
  const changed=cp.execFileSync("git",["diff","--no-renames","--name-only",previous,current],
   {cwd:root,encoding:"utf8"}).trim().split("\n").filter(Boolean);
+ if(changed.includes(G11_W1_HANDOFF)){
+  verifyG11W1(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));
+  return;
+ }
  const lessonPaths=changed.filter(x=>LESSON.test(x)),receipts=changed.filter(x=>RECEIPT.test(x));
  const batch=PLACEMENT_BATCHES.find(b=>
   b.lessons.length===lessonPaths.length&&b.lessons.every(x=>lessonPaths.includes(x))&&

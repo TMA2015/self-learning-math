@@ -21,8 +21,8 @@ const pages=[
   },
   {
     path:"sgk/lop-11/chuong-i/bai-2/",
-    expected:["1.1. Công thức cộng và trừ","1.2. Công thức nhân đôi",
-      "1.3. Tích thành tổng","1.4. Tổng thành tích"],
+    expected:["1.1. Từ góc hiệu đến công thức cộng","1.2. Khi hai góc bằng nhau: công thức nhân đôi",
+      "1.3. Vì sao biến đổi được một tích thành tổng?","1.4. Từ tổng về tích và trở lại bài toán âm thanh"],
     minMath:12
   },
   {
