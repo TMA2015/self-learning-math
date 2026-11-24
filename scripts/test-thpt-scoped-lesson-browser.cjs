@@ -20,7 +20,8 @@ async function goldenW1Parity(page,browser,width,rel){
  const w1=/\/lop-11\/chuong-i\/bai-[234]\.md$/.test(rel);
  const w2=/\/lop-11\/(?:chuong-ii\/bai-[567]|chuong-iii\/bai-[89])\.md$/.test(rel);
  const w3=/\/lop-11\/chuong-iv\/bai-1[0-4]\.md$/.test(rel);
- if(!w1&&!w2&&!w3)return;
+ const w4=/\/lop-11\/chuong-v\/bai-1[5-7]\.md$/.test(rel);
+ if(!w1&&!w2&&!w3&&!w4)return;
  const cases={
   article:["article.md-content__inner",["fontFamily","fontSize","fontWeight","lineHeight"]],
   tabs:["article .tabbed-labels",["gap","paddingTop","paddingBottom","borderBottomWidth"]],
@@ -55,7 +56,7 @@ async function goldenW1Parity(page,browser,width,rel){
   const tabs=page.locator("article .tabbed-labels > label");
   for(const scheme of ["default","slate"]){
    // W2: independent palette samples; do not reuse mutated MathJax/disclosure DOM from the previous interaction pass.
-   if((w2||w3)&&scheme==="slate"){
+   if((w2||w3||w4)&&scheme==="slate"){
     assert((await page.reload({waitUntil:"load",timeout:60000}))?.ok(),rel+" slate reload");
     await page.waitForFunction(()=>document.querySelectorAll("mjx-container").length>0,null,{timeout:30000});
    }
@@ -100,7 +101,7 @@ async function goldenW1Parity(page,browser,width,rel){
    const source=fs.readFileSync(path.join(root,rel),"utf8");
    const expected=[...source.split('=== "Lỗi thường gặp"')[1].matchAll(/^    ### (4\.\d+\..+)$/gm)].map(x=>x[1]);
    assert(expected.length>0,rel+" expected recovery headings");
-   if(w2||w3){
+   if(w2||w3||w4){
     assert.equal(expected.length,rel.endsWith("/bai-5.md")?5:6);
     const raw=await page.evaluate(async()=>{
      const doc=new DOMParser().parseFromString(await (await fetch(location.href)).text(),"text/html");
@@ -117,7 +118,7 @@ async function goldenW1Parity(page,browser,width,rel){
    const gold=await referenceTip.evaluate(styles);
    for(let k=0;k<expected.length;k++){
     const item=tips.nth(k),summary=item.locator(":scope > summary");
-    if((w2||w3)&&expected[k].includes("\\(")){
+    if((w2||w3||w4)&&expected[k].includes("\\(")){
      const count=(expected[k].match(/\\\(/g)||[]).length;
      try{
       await page.waitForFunction(({k,count})=>document.querySelectorAll("article .tabbed-block")[3].querySelectorAll(":scope > details.tip > summary")[k].querySelectorAll("mjx-container").length===count,{k,count});
@@ -187,7 +188,7 @@ async function execute(){
      for(let i=0;i<4;i++){
       await tabs.locator(".tabbed-labels > label").nth(i).click();
       assert(await groups.nth(i).isVisible(),rel+" "+width+" learner tab "+i+" not visible");
-      if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-i\/bai-[234]|chuong-ii\/bai-[567]|chuong-iii\/bai-[89]|chuong-iv\/bai-1[0-4])\.md$/.test(rel)){
+      if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-i\/bai-[234]|chuong-ii\/bai-[567]|chuong-iii\/bai-[89]|chuong-iv\/bai-1[0-4]|chuong-v\/bai-1[5-7])\.md$/.test(rel)){
        const panel=groups.nth(i);
        for(const disclosure of await panel.locator("details.question").all()){
         const summary=disclosure.locator("summary").first();
