@@ -160,6 +160,31 @@ def _render_first_paint(html: str, class_names: tuple[str, str]) -> str:
     return result
 
 
+
+# SGK-REL-006: transform only the fourth tab of the three exact W1 pages.
+# Preserve original h3 anchor ID and the complete rendered content bytes.
+_W1_MISTAKE_COUNTS = {2: 5, 3: 6, 4: 6}
+def _w1_mistake_disclosures(html: str, number: int) -> str:
+    heading = '<h2 class="thpt-g10-section-heading">' + _HEADINGS[3] + '</h2>'
+    if html.count(heading) != 1:
+        raise RuntimeError("W1 tab4 heading changed")
+    start = html.index(heading) + len(heading)
+    foot = re.search(r'<p>\s*<p class="thpt-r4-footnote">|<p class="thpt-r4-footnote">', html[start:])
+    if foot is None:
+        raise RuntimeError("W1 tab4 source note missing")
+    end = start + foot.start()
+    body = html[start:end]
+    pattern = re.compile(r'<h3 id="([^"]+)">(4\.\d+\.[^<]+)</h3>\s*((?:<p>[\s\S]*?</p>\s*){3})')
+    matches = list(pattern.finditer(body))
+    if len(matches) != _W1_MISTAKE_COUNTS[number] or pattern.sub("", body).strip():
+        raise RuntimeError("W1 tab4 unexpected source shape: B" + str(number))
+    for i, item in enumerate(matches, 1):
+        if not item[2].startswith(f"4.{i}. ") or re.findall(r'<p><strong>([^<]+)</strong>', item[3])[:3] != ["Dấu hiệu:", "Vì sao sai:", "Cách sửa:"]:
+            raise RuntimeError("W1 tab4 missing original recovery labels")
+    def disclosure(item):
+        return '<details class="tip" id="' + item[1] + '">\n<summary>' + item[2] + '</summary>\n' + item[3] + '</details>\n'
+    return html[:start] + '\n<p>Mở từng mục để xem dấu hiệu, vì sao sai và cách sửa.</p>\n' + pattern.sub(disclosure, body) + html[end:]
+
 def on_post_page(output, page, config):
     uri = page.file.src_uri
     classes = _classes(uri)
@@ -182,6 +207,7 @@ def on_post_page(output, page, config):
     ):
         raise RuntimeError("Golden first-paint build contract failed: " + uri)
     if uri in {f"thpt-preview/sgk/lop-11/chuong-i/bai-{n}.md" for n in (2, 3, 4)}:
+        rendered = _w1_mistake_disclosures(rendered, int(uri.rsplit('-', 1)[1][:-3]))
         # #1039 W1: only the three exact approved Golden Knowledge routes.
         # The existing G10 B10 formula rule is applied unchanged in value.
         # Its selector is scoped to this built article, overriding the

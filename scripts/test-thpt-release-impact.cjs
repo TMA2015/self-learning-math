@@ -554,12 +554,18 @@ function isG11W1Release(files){
  try{return fs.readFileSync("scripts/test-thpt-scoped-deploy-proof.cjs","utf8").includes("SCOPED_G11_W1_SOURCE_PASS")&&fs.readFileSync(".github/workflows/thpt-scoped-release-qa.yml","utf8").includes("Verify #1039 W1 on exact integration HEAD");}catch{return false;}
 }
 
+const G11_W1_TAB4_HOTFIX_FILES=new Set(["hooks/sgk_golden_first_paint.py","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-scoped-lesson-browser.cjs"]);
+function isG11W1Tab4Hotfix(files){
+ return files.length===G11_W1_TAB4_HOTFIX_FILES.size&&new Set(files).size===files.length&&files.every(p=>G11_W1_TAB4_HOTFIX_FILES.has(p));
+}
+
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
  if(manual)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"MANUAL_FULL_REQUEST"};
  if(!files.length)return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"EMPTY_DIFF"};
  if(files.some(x=>x.includes("..")||x.includes("\\")||x.startsWith("/")))
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
+ if(isG11W1Tab4Hotfix(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",reason:"SGK_REL_006_EXACT_TAB4_PRESENTATION_ONLY"};
  if(isG11W1Release(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",reason:"EXACT_OWNER_1039_G11_W1_HANDOFF_SOURCE_AND_BROWSER"};
  if(isExactMathLabFullPage(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_25_MODELS_DIRECT_FULL_PAGE_WITH_200_BROWSER_GATES"};
  if(isMathLabDeployRecovery(files))return {impact:"SCOPED_MATH_LAB_FULLPAGE",full_suite:"false",changed_lessons:"",reason:"OWNER_POSTMERGE_V2_HEAD_SHA_DEPLOY_RECOVERY_25_MODEL_200_BROWSER_PROOF"};
@@ -697,6 +703,13 @@ function classify(paths,{manual=false}={}){
  return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"SHARED_OR_UNRECOGNIZED_CHANGE"};
 }
 function selfTest(){
+ const g11Tab4Hotfix=[...G11_W1_TAB4_HOTFIX_FILES];
+ assert.equal(classify(g11Tab4Hotfix).impact,"SCOPED_LESSON");
+ assert.equal(classify(g11Tab4Hotfix).changed_lessons,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md");
+ assert.equal(classify(g11Tab4Hotfix.slice(1)).impact,"CI_ROUTING_ONLY","Test-only subset cannot publish learner pages");
+ assert.equal(classify(g11Tab4Hotfix.filter(p=>!p.endsWith("test-thpt-scoped-deploy-proof.cjs"))).impact,"FULL","Incomplete hook change must fail closed");
+ assert.equal(classify([...g11Tab4Hotfix,"docs/assets/javascripts/thpt-r4-preview.js"]).impact,"FULL");
+ assert.equal(classify(g11Tab4Hotfix,{manual:true}).impact,"FULL");
  const g11w1=[...G11_W1_RELEASE_FILES];
  assert.equal(classify(g11w1).impact,"SCOPED_LESSON","Exact #1039 W1 release");
  assert.equal(classify(g11w1).changed_lessons,"docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md,docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md");
