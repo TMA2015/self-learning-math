@@ -1299,8 +1299,8 @@
     "topic_practice": 1479,
     "topic_replay": 338,
     "sgk_public_selfcheck": 472,
-    "placements": 3841,
-    "projection_field_differences": 48,
+    "placements": 3844,
+    "projection_field_differences": 51,
     "public_selfcheck_only_items": 173,
     "unstructured_projection_review": 12,
     "legacy_combined_answer_items": 653,
@@ -1847,6 +1847,57 @@
       },
       "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
       "reason": "Same boundary 10, same adjacent groups, third group does not alter the answer, same reason left endpoint included."
+    },
+    {
+      "item_id": "THPT-G11-CHIV-B11-P01",
+      "projection": "SGK:G11:CHIV:B11:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-11.md",
+        "blob": "7dccb87d44c1734cf7b5f3c77df209b75db6e63b",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+        "locator": "details[data-ped-first-try] #1",
+        "line": 40
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
+      "reason": "Same tetrahedron and opposite edges SA, BC; existing key and solution establish both nonintersection and noncoplanarity."
+    },
+    {
+      "item_id": "THPT-G11-CHV-B16-C01",
+      "projection": "SGK:G11:CHV:B16:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md",
+        "blob": "a2242eeb50ae0f02643182bf10c315c41ce05c3b",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+        "locator": "details[data-ped-first-try] #1",
+        "line": 50
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
+      "reason": "Identical rational function and punctured domain, limit 6; canonical solution supplies requested rationale. Public reveal gives only 6."
+    },
+    {
+      "item_id": "THPT-G11-CHVII-B23-P02",
+      "projection": "SGK:G11:CHVII:B23:KNOWLEDGE_FIRST_TRY",
+      "fields": [
+        "stem",
+        "worked_solution"
+      ],
+      "source": {
+        "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-23.md",
+        "blob": "ad1ce1335b2c4dcef36edff8f8ad5378b8f63cad",
+        "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3",
+        "locator": "details[data-ped-first-try] #1",
+        "line": 37
+      },
+      "status": "REUSE_SAME_MATH_TASK_PROJECTION_TEXT_DIFF_PENDING_AUDIT",
+      "reason": "Same criterion: perpendicular to two parallel lines in plane insufficient; canonical key/rationale matches. Source reveals answer inline, separate PED flag."
     }
   ],
   "academic_audit": "PENDING",
@@ -2729,7 +2780,7 @@
         "public_blob": "bde0820d157a5169d3cf365c846cf11169d40035"
       }
     ],
-    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_MAPPING_IN_PROGRESS",
+    "sgk_inventory": "ALL_79_SGK_KNOWLEDGE_PAGES_SCANNED_G11_BLOCK_REVIEW_COMPLETE_G12_PENDING",
     "sgk_pages": [
       {
         "grade": 10,
@@ -3367,7 +3418,21 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 40,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-CHIV-B10-C01"
+            ],
+            "reason": "Source asks whether C on AB belongs to (P); existing asks whether whole AB is contained. Same theorem but different requested conclusion.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3377,10 +3442,25 @@
         "blob": "7dccb87d44c1734cf7b5f3c77df209b75db6e63b",
         "markers": 0,
         "imported": 0,
-        "reused": 0,
+        "reused": 1,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "SOURCE_MAPPING_RESOLVED",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 40,
+            "status": "REUSE_CONFIRMED",
+            "candidate_item_ids": [
+              "THPT-G11-CHIV-B11-P01"
+            ],
+            "reason": "Same tetrahedron and opposite edges SA, BC; existing key and solution establish both nonintersection and noncoplanarity.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT",
+            "item_id": "THPT-G11-CHIV-B11-P01"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3393,7 +3473,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 40,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-CHIV-B12-C01",
+              "THPT-G11-CHIV-B12-C02"
+            ],
+            "reason": "Source tests invalid inference from AB∥CD in same base; C01 asks definition only, C02 asks condition without configuration.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3406,7 +3501,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 40,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHIV-B13-P03",
+              "THPT-TOP15-P16"
+            ],
+            "reason": "Source all midpoints and proof; existing ratios 1/3 or 1/4 and different demands.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3419,7 +3529,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 40,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-CHIV-B14-P01",
+              "THPT-G11-CHIV-B14-P03"
+            ],
+            "reason": "Source asks image of entire AA′ and specific point A; existing asks B′ image or generic parallel line collapse.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3432,7 +3557,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 51,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHV-B15-C01",
+              "THPT-G11-CHV-B15-P02"
+            ],
+            "reason": "Different sequence constants; source additionally asks why no term needs to equal limit.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3442,10 +3582,25 @@
         "blob": "a2242eeb50ae0f02643182bf10c315c41ce05c3b",
         "markers": 0,
         "imported": 0,
-        "reused": 0,
+        "reused": 1,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "SOURCE_MAPPING_RESOLVED",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 50,
+            "status": "REUSE_CONFIRMED",
+            "candidate_item_ids": [
+              "THPT-G11-CHV-B16-C01"
+            ],
+            "reason": "Identical rational function and punctured domain, limit 6; canonical solution supplies requested rationale. Public reveal gives only 6.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT_INCOMPLETE",
+            "item_id": "THPT-G11-CHV-B16-C01"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3458,7 +3613,21 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 45,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHV-B17-C02"
+            ],
+            "reason": "Source abstract limit 3 versus value 5; existing specific rational function and different values.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3471,7 +3640,23 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 52,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHVI-B18-C01",
+              "THPT-G11-CHVI-B18-C02",
+              "THPT-G11-CHVI-B18-P05"
+            ],
+            "reason": "Three subquestions: negative exponent 4^-1, fractional exponent 27^(2/3), meaning/domain of growth model. Existing different data/tasks.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3484,7 +3669,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 35,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-CHVI-B19-C01",
+              "THPT-G11-CHVI-B19-C03"
+            ],
+            "reason": "First part uses same logarithm but asks inverse power equality; other parts log4(0) and invalid sum rule not covered by whole existing item. One check already in stem.",
+            "source_answer_present": true,
+            "source_answer_mode": "INLINE_PARTIAL_GENERIC_REVEAL"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3497,7 +3697,23 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 33,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHVI-B20-C04",
+              "THPT-G11-CHVI-B20-P03",
+              "THPT-G11-CHVI-B21-P07"
+            ],
+            "reason": "Source three distinct prompts; existing uses other bases/inputs or asks different result.",
+            "source_answer_present": false,
+            "source_answer_mode": "GENERIC_REVEAL"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3510,7 +3726,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 37,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHVI-B21-C03",
+              "THPT-G11-CHVI-B21-C02"
+            ],
+            "reason": "Different exponent boundary and logarithm equation; source asks rationale.",
+            "source_answer_present": true,
+            "source_answer_mode": "INLINE_PARTIAL_GENERIC_REVEAL"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3523,7 +3754,23 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 35,
+            "status": "PARTIAL_MATCH",
+            "candidate_item_ids": [
+              "THPT-G11-CHVII-B22-P01",
+              "THPT-G11-CHVII-B22-P03",
+              "THPT-TOP16-P04"
+            ],
+            "reason": "Source supplies AB⊥CC′ proof then asks why intersection unnecessary; existing asks procedure, counterexample or evidence rather than same explanation.",
+            "source_answer_present": true,
+            "source_answer_mode": "INLINE_PARTIAL_GENERIC_REVEAL"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3533,10 +3780,25 @@
         "blob": "ad1ce1335b2c4dcef36edff8f8ad5378b8f63cad",
         "markers": 0,
         "imported": 0,
-        "reused": 0,
+        "reused": 1,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "SOURCE_MAPPING_RESOLVED",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 37,
+            "status": "REUSE_CONFIRMED",
+            "candidate_item_ids": [
+              "THPT-G11-CHVII-B23-P02"
+            ],
+            "reason": "Same criterion: perpendicular to two parallel lines in plane insufficient; canonical key/rationale matches. Source reveals answer inline, separate PED flag.",
+            "source_answer_present": true,
+            "source_answer_mode": "INLINE_ANSWER_GENERIC_REVEAL",
+            "item_id": "THPT-G11-CHVII-B23-P02"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3549,7 +3811,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "PED_SCOPE_DECISION_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 37,
+            "status": "WORKED_EXAMPLE_NOT_STANDALONE_TASK",
+            "candidate_item_ids": [
+              "THPT-G11-CHVII-B24-C05",
+              "THPT-G11-CHVII-B24-P02"
+            ],
+            "reason": "Source states 10m/8m/6m and sin=6/10, no question; existing different data. Do not invent a question or count as imported item.",
+            "source_answer_present": true,
+            "source_answer_mode": "INLINE_WORKED_EXAMPLE"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3562,7 +3839,21 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "PED_SCOPE_DECISION_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 37,
+            "status": "WORKED_EXAMPLE_NOT_STANDALONE_TASK",
+            "candidate_item_ids": [
+              "THPT-G11-CHVII-B25-C03"
+            ],
+            "reason": "Source states conclusion from SA⊥base and warns about other faces, no question. Existing asks general theorem, not this task.",
+            "source_answer_present": true,
+            "source_answer_mode": "INLINE_WORKED_EXAMPLE"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3575,7 +3866,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 35,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHVII-B26-C06",
+              "THPT-G11-CHVII-B26-P01"
+            ],
+            "reason": "Source 5/4/3 and asks why height is 3 not 5; existing 10/8 or 17/15. Numeric answer exposed inline.",
+            "source_answer_present": true,
+            "source_answer_mode": "INLINE_ANSWER_GENERIC_REVEAL"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3588,7 +3894,23 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "PED_SCOPE_DECISION_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 37,
+            "status": "WORKED_EXAMPLE_NOT_STANDALONE_TASK",
+            "candidate_item_ids": [
+              "THPT-G11-CHVII-B27-C01",
+              "THPT-G11-CHVII-B27-C02",
+              "THPT-G11-CHVII-B27-C04"
+            ],
+            "reason": "Source provides all three calculated volumes, no question; existing different data.",
+            "source_answer_present": true,
+            "source_answer_mode": "INLINE_WORKED_EXAMPLE"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3601,7 +3923,23 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 26,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHVIII-B28-C03",
+              "THPT-G11-CHVIII-B28-C04",
+              "THPT-G11-CHVIII-B28-C05"
+            ],
+            "reason": "Source same Ω for union/intersection/complement/non-disjoint; existing distinct sets and separate requests.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3614,7 +3952,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 30,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHVIII-B29-P04",
+              "THPT-G11-CHVIII-B29-C06"
+            ],
+            "reason": "Source 30,14,12,5 asks counts union and neither; existing different data. Wording 'không thuộc cả hai' potentially ambiguous versus 'không thuộc câu lạc bộ nào'.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3627,7 +3980,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 26,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHVIII-B30-C04",
+              "THPT-G11-CHVIII-B30-P06"
+            ],
+            "reason": "Source 4/5 and 3/4, both and at least one; existing different probabilities and individual asks.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3640,7 +4008,22 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 27,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHIX-B31-C03",
+              "THPT-G11-CHIX-B31-C08"
+            ],
+            "reason": "Source derivative by definition at t=1 and tangent with f(1)=5,f′(1)=8; existing different point/data.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3653,7 +4036,23 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 34,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHIX-B32-C14",
+              "THPT-G11-CHIX-B32-C12",
+              "THPT-G11-CHIX-B32-P12"
+            ],
+            "reason": "Source three functions (x+1)cos2x, ln(5−x), e^(x²); existing different expressions/rules.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 11,
@@ -3666,7 +4065,23 @@
         "reused": 0,
         "unkeyed_activity_blocks": 1,
         "locator": "details[data-ped-first-try] in source order",
-        "status": "UNKEYED_SOURCE_MAPPING_PENDING"
+        "status": "BLOCK_REVIEWED_CANONICAL_MAPPING_PENDING",
+        "block_mapping_review": [
+          {
+            "order": 1,
+            "locator": "details[data-ped-first-try] #1",
+            "line": 25,
+            "status": "NO_EXACT_MATCH_IN_REVIEWED_SHARDS",
+            "candidate_item_ids": [
+              "THPT-G11-CHIX-CHIX-C01",
+              "THPT-TOP09-P09",
+              "THPT-TOP09-P29"
+            ],
+            "reason": "Source s=t³−6t cm, v/a and directions at t=1; existing other polynomial, units or evaluation request.",
+            "source_answer_present": true,
+            "source_answer_mode": "DIRECT"
+          }
+        ]
       },
       {
         "grade": 12,
@@ -4017,6 +4432,83 @@
         "locator": "B14-T01",
         "status": "PED_REVIEW_PENDING",
         "reason": "Explanation references cross product/non-collinearity instead of showing dot product computation."
+      },
+      {
+        "grade": 11,
+        "lesson": "B16",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "Public reveal gives only 6, omits requested domain/limit rationale."
+      },
+      {
+        "grade": 11,
+        "lesson": "B19",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "INLINE_PARTIAL_GENERIC_REVEAL: First part uses same logarithm but asks inverse power equality; other parts log4(0) and invalid sum rule not covered by whole existing item. One check already in stem."
+      },
+      {
+        "grade": 11,
+        "lesson": "B20",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "GENERIC_REVEAL: Source three distinct prompts; existing uses other bases/inputs or asks different result."
+      },
+      {
+        "grade": 11,
+        "lesson": "B21",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "INLINE_PARTIAL_GENERIC_REVEAL: Different exponent boundary and logarithm equation; source asks rationale."
+      },
+      {
+        "grade": 11,
+        "lesson": "B22",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "INLINE_PARTIAL_GENERIC_REVEAL: Source supplies AB⊥CC′ proof then asks why intersection unnecessary; existing asks procedure, counterexample or evidence rather than same explanation."
+      },
+      {
+        "grade": 11,
+        "lesson": "B23",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "INLINE_ANSWER_GENERIC_REVEAL: Same criterion: perpendicular to two parallel lines in plane insufficient; canonical key/rationale matches. Source reveals answer inline, separate PED flag."
+      },
+      {
+        "grade": 11,
+        "lesson": "B24",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "INLINE_WORKED_EXAMPLE: Source states 10m/8m/6m and sin=6/10, no question; existing different data. Do not invent a question or count as imported item."
+      },
+      {
+        "grade": 11,
+        "lesson": "B25",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "INLINE_WORKED_EXAMPLE: Source states conclusion from SA⊥base and warns about other faces, no question. Existing asks general theorem, not this task."
+      },
+      {
+        "grade": 11,
+        "lesson": "B26",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "INLINE_ANSWER_GENERIC_REVEAL: Source 5/4/3 and asks why height is 3 not 5; existing 10/8 or 17/15. Numeric answer exposed inline."
+      },
+      {
+        "grade": 11,
+        "lesson": "B27",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "INLINE_WORKED_EXAMPLE: Source provides all three calculated volumes, no question; existing different data."
+      },
+      {
+        "grade": 11,
+        "lesson": "B29",
+        "locator": "details[data-ped-first-try] #1",
+        "status": "PED_REVIEW_PENDING",
+        "reason": "Clarify neither membership vs not both."
       }
     ],
     "unkeyed_source_note": "Unkeyed activity blocks are source inventory, not item IDs or imported records. A block can contain multiple tasks. Resolve against existing canonical records using exact task identity (not linked follow-up IDs alone), then identify genuinely unkeyed tasks before ID assignment and import; no loss or silent omission. G11 B19–B27 generic self-check redirects to examples require separate content-quality review. G12 local IDs Bxx-Txx are preserved as scoped source locators; 2 exact task matches mapped to existing global IDs. Remaining blocks need cross-bank reconciliation and explicit canonical IDs; no new IDs allocated during this checkpoint. B01–B05 16 prompts have no direct answer reveal in their first-try sections.",
@@ -4043,13 +4535,14 @@
       }
     ],
     "g11_mapping_review": {
-      "reviewed_blocks": 22,
-      "reused": 1,
-      "partial_matches": 5,
-      "no_exact_match_in_reviewed_shards": 16,
-      "unreviewed_blocks": 24,
-      "pending_mapping_blocks": 45,
-      "scope": "G11 B02–B09; inspected same-chapter canonical records, relevant G11 ChI public selfcheck, all 22 Topic shards (trig candidate filter), Topic first-try and Written reference inventory, G10 ChIII trig shards; dãy số/statistics relevant topic candidates. Global cross-shard reconciliation remains pending.",
+      "reviewed_blocks": 46,
+      "reused": 4,
+      "partial_matches": 10,
+      "no_exact_match_in_reviewed_shards": 29,
+      "worked_example_scope_pending": 3,
+      "unreviewed_blocks": 0,
+      "pending_mapping_blocks": 42,
+      "scope": "G11 B02–B33; same-chapter records and relevant Topic candidate shards/first-try, public ChI selfcheck, G10 ChIII trig sources; not global exhaustiveness.",
       "source_base": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
     }
   }
