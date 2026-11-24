@@ -11,8 +11,10 @@
     ],
     "problem_type_id": "TOP03-TRANSFORM_EQUIVALENCE",
     "difficulty": "BASIC",
-    "hints": [],
-    "remediation": "Nếu cộng/trừ không đều hai vế, thế ngược x=4 để kiểm lại phép biến đổi.",
+    "hints": [
+      "Thực hiện cùng phép tính ở hai vế; chỉ chia số khác 0."
+    ],
+    "remediation": "Nếu cộng/trừ không đều hai vế, thế ngược x=4 để kiểm lại phép biến đổi. Ôn TOP03-M01; luyện THPT-TOP03-ADD02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -37,8 +39,10 @@
     ],
     "problem_type_id": "TOP03-TRANSFORM_ONE_WAY",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu nghĩ x²=9 chỉ có 3, thử x=−3; nối với bài học nghiệm ngoại lai.",
+    "hints": [
+      "Thử x=−3 trong cả hai phương trình."
+    ],
+    "remediation": "Nếu nghĩ x²=9 chỉ có 3, thử x=−3; nối với bài học nghiệm ngoại lai. Ôn TOP03-M01; luyện THPT-TOP03-ADD01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -63,8 +67,10 @@
     ],
     "problem_type_id": "TOP03-LINEAR_EQUATION",
     "difficulty": "BASIC",
-    "hints": [],
-    "remediation": "Nếu quên nhân 3 với −2, khai triển lại và thử bằng hai vế.",
+    "hints": [
+      "Khai triển 3(x−2), rồi thu gọn hai vế."
+    ],
+    "remediation": "Nếu quên nhân 3 với −2, khai triển lại và thử bằng hai vế. Ôn TOP03-M02; luyện THPT-TOP03-ADD04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -80,17 +86,19 @@
   {
     "item_id": "THPT-TOP03-ADD04",
     "content_version": "R01",
-    "stem": "Biện luận phương trình mx=2m theo tham số thực m.",
-    "answer_key": "Nếu m≠0 thì S={2}; nếu m=0 thì S=ℝ.",
-    "worked_solution": "Với m≠0, chia cả hai vế cho m được x=2. Với m=0, phương trình là 0=0, mọi số thực đều thỏa. Không được chia cho biểu thức có thể bằng 0.",
+    "stem": "Biện luận phương trình (m−1)(m−2)x=2(m−1) trên ℝ theo tham số thực m.",
+    "answer_key": "m=1: S=ℝ; m=2: S=∅; m≠1,2: S={2/(m−2)}.",
+    "worked_solution": "Hệ số của x bằng 0 khi m=1 hoặc m=2. Nếu m=1, hai vế đều bằng 0, mọi x∈ℝ thỏa. Nếu m=2, phương trình là 0=2, vô nghiệm. Nếu m khác 1 và 2, chia hai vế cho (m−1)(m−2) được x=2/(m−2). Thay vào phương trình gốc cho 2(m−1) ở hai vế. Ba trường hợp loại trừ nhau và bao hết m∈ℝ.",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O02"
     ],
     "problem_type_id": "TOP03-LINEAR_PARAM_DEGENERATE",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu kết luận x=2 với mọi m, hãy thử m=0 và x=7; phân biệt phương trình có một nghiệm với vô số nghiệm.",
+    "hints": [
+      "Tách các m làm hệ số của x bằng 0 trước khi chia."
+    ],
+    "remediation": "Nếu chia cho m−1 hoặc m−2 ngay, kiểm riêng m=1 và m=2 để không mất trường hợp vô số nghiệm hoặc vô nghiệm. Ôn TOP03-M02; luyện THPT-TOP03-ADD03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -115,8 +123,10 @@
     ],
     "problem_type_id": "TOP03-ZERO_PRODUCT",
     "difficulty": "BASIC",
-    "hints": [],
-    "remediation": "Nếu chia cho x−2, sẽ mất nghiệm x=2; dùng quy tắc tích bằng 0 thay vì khử thừa số.",
+    "hints": [
+      "Dùng quy tắc tích bằng 0, không chia cho một thừa số."
+    ],
+    "remediation": "Nếu chia cho x−2, sẽ mất nghiệm x=2; dùng quy tắc tích bằng 0 thay vì khử thừa số. Ôn TOP03-M03; luyện THPT-TOP03-ADD06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -141,8 +151,10 @@
     ],
     "problem_type_id": "TOP03-ZERO_PRODUCT_MULTIPLICITY",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu viết {1,1,−4}, phân biệt số lần nghiệm xuất hiện khi phân tích với số phần tử tập nghiệm.",
+    "hints": [
+      "Tìm giá trị làm từng thừa số bằng 0, không đếm trùng."
+    ],
+    "remediation": "Nếu viết {1,1,−4}, phân biệt số lần nghiệm xuất hiện khi phân tích với số phần tử tập nghiệm. Ôn TOP03-M03; luyện THPT-TOP03-ADD05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -158,17 +170,19 @@
   {
     "item_id": "THPT-TOP03-ADD07",
     "content_version": "R01",
-    "stem": "Giải 2x²−5x−3=0 bằng biệt thức hoặc phân tích nhân tử.",
-    "answer_key": "S={−1/2,3}.",
-    "worked_solution": "Δ=(−5)²−4·2·(−3)=49. x=(5±7)/4 cho 3 và −1/2. Đồng thời (2x+1)(x−3)=0; hai cách đối chiếu nhau.",
+    "stem": "Giải 2x²−6x−8=0 bằng biệt thức thu gọn Δ′, sau đó kiểm bằng phân tích nhân tử.",
+    "answer_key": "Δ′=25; S={−1,4}.",
+    "worked_solution": "a=2, b′=−3, c=−8. Δ′=(−3)²−2·(−8)=25>0. Công thức x=(−b′±√Δ′)/a cho x=(3±5)/2, tức 4 và −1. Kiểm: 2x²−6x−8=2(x−4)(x+1). Hai nghiệm làm tích bằng 0.",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O04"
     ],
     "problem_type_id": "TOP03-QUADRATIC_ROOTS",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu tính Δ=1, kiểm dấu của c=−3; thử nghiệm trong phương trình gốc.",
+    "hints": [
+      "Nhận ra b chẵn; tính b'=b/2 và Δ'."
+    ],
+    "remediation": "Nếu dùng mẫu 2a trong công thức Δ′, phân biệt b với b′=b/2 và kiểm nghiệm bằng nhân tử. Ôn TOP03-M04; luyện THPT-TOP03-ADD08.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -184,17 +198,19 @@
   {
     "item_id": "THPT-TOP03-ADD08",
     "content_version": "R01",
-    "stem": "Tìm tập nghiệm thực của x²+2x+5=0; giải thích vì sao vô nghiệm.",
-    "answer_key": "S=∅ trên ℝ.",
-    "worked_solution": "Δ=2²−4·1·5=−16<0, nên không có nghiệm thực; hoặc (x+1)²+4=0 là bất khả thi vì vế trái ≥4.",
+    "stem": "So sánh số nghiệm thực phân biệt và tập nghiệm của (A) x²+2x+5=0 và (B) x²+2x+1=0. Giải thích sự khác nhau.",
+    "answer_key": "(A) S=∅ (0 nghiệm); (B) S={−1} (1 nghiệm kép).",
+    "worked_solution": "(A) Δ=4−20=−16<0; viết (x+1)²+4=0 cũng thấy vô nghiệm thực. (B) Δ=4−4=0; (x+1)²=0 chỉ cho x=−1, là nghiệm kép nhưng chỉ một giá trị phân biệt. Δ<0 và Δ=0 không cùng số nghiệm thực.",
     "skill_ids": [],
     "original_outcome_ids": [
       "TOP03-O04"
     ],
     "problem_type_id": "TOP03-QUADRATIC_NO_REAL_ROOT",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu nhầm với nghiệm kép, so Δ=0 và Δ<0; đối chiếu bằng hoàn phương.",
+    "hints": [
+      "So Δ với 0 ở từng phương trình; hoàn thành bình phương để kiểm."
+    ],
+    "remediation": "Nếu nhầm với nghiệm kép, so Δ=0 và Δ<0; đối chiếu bằng hoàn phương. Ôn TOP03-M04; luyện THPT-TOP03-ADD07.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -219,8 +235,10 @@
     ],
     "problem_type_id": "TOP03-RATIONAL_DOMAIN_CANCEL",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu ghi {−2,2}, hãy thay x=2 vào mẫu và nhận thấy không xác định.",
+    "hints": [
+      "Ghi mẫu khác 0 trước khi xét tử bằng 0."
+    ],
+    "remediation": "Nếu ghi {−2,2}, hãy thay x=2 vào mẫu và nhận thấy không xác định. Ôn TOP03-M05; luyện THPT-TOP03-ADD10.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -245,8 +263,10 @@
     ],
     "problem_type_id": "TOP03-RATIONAL_COMMON_DENOMINATOR",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu nhân hai vế với mẫu mà quên điều kiện, quay lại bước x≠1 và x≠−1 rồi đối chiếu nghiệm.",
+    "hints": [
+      "Ghi x≠±1 rồi nhân với mẫu chung."
+    ],
+    "remediation": "Nếu nhân hai vế với mẫu mà quên điều kiện, quay lại bước x≠1 và x≠−1 rồi đối chiếu nghiệm. Ôn TOP03-M05; luyện THPT-TOP03-ADD09.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -271,8 +291,10 @@
     ],
     "problem_type_id": "TOP03-ABSOLUTE_VALUE_BRANCH",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu chỉ lấy x=4, nhớ |u|=c có hai nhánh khi c>0.",
+    "hints": [
+      "Vế phải dương nên có hai nhánh dấu."
+    ],
+    "remediation": "Nếu chỉ lấy x=4, nhớ |u|=c có hai nhánh khi c>0. Ôn TOP03-M06; luyện THPT-TOP03-ADD12.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -297,8 +319,10 @@
     ],
     "problem_type_id": "TOP03-ABSOLUTE_VALUE_SIGN_CONSTRAINT",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu nhận x âm, kiểm dấu vế phải; nếu nhận cả x≥2, xét nhánh giá trị tuyệt đối đúng miền.",
+    "hints": [
+      "Vế phải phải không âm; xét hai miền của x−2."
+    ],
+    "remediation": "Nếu nhận x âm, kiểm dấu vế phải; nếu nhận cả x≥2, xét nhánh giá trị tuyệt đối đúng miền. Ôn TOP03-M06; luyện THPT-TOP03-ADD11.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -317,14 +341,19 @@
     "stem": "Giải √(x+2)=x; chỉ rõ nghiệm ngoại lai sau bình phương.",
     "answer_key": "S={2}. Nghiệm ứng viên −1 bị loại.",
     "worked_solution": "Vế phải là x nên bắt buộc x≥0. Bình phương x+2=x² ⇔ (x−2)(x+1)=0 ⇒ x=2 hoặc −1; chỉ x=2 hợp dấu vế phải, thử √4=2. −1 cho √1=1≠−1.",
-    "skill_ids": [],
+    "skill_ids": [
+      "RADICAL_CONDITION",
+      "RADICAL_FILTER"
+    ],
     "original_outcome_ids": [
       "TOP03-O07"
     ],
     "problem_type_id": "TOP03-SQUARE_IMPLICATION_FILTER",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu kết luận hai nghiệm, thử x=−1 trong phương trình gốc và kiểm dấu.",
+    "hints": [
+      "Kiểm dấu vế phải trước bình phương, rồi thử từng ứng viên."
+    ],
+    "remediation": "Nếu kết luận hai nghiệm, thử x=−1 trong phương trình gốc và kiểm dấu. Ôn TOP03-M07; luyện THPT-TOP03-ADD14.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -343,14 +372,18 @@
     "stem": "Giải √(x²)=x trong ℝ.",
     "answer_key": "S=[0,+∞).",
     "worked_solution": "√(x²)=|x|, không tự bằng x khi x âm. Điều kiện |x|=x ⇔ x≥0. Với x=−2, vế trái 2 còn vế phải −2, không bằng.",
-    "skill_ids": [],
+    "skill_ids": [
+      "RADICAL_CONDITION"
+    ],
     "original_outcome_ids": [
       "TOP03-O07"
     ],
     "problem_type_id": "TOP03-SQUARE_ROOT_ABSOLUTE",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu triệt căn/bình phương máy móc rồi nhận cả ℝ, thử x âm để phát hiện mất thông tin dấu.",
+    "hints": [
+      "Căn bậc hai số học luôn không âm; √(x²)=|x|."
+    ],
+    "remediation": "Nếu triệt căn/bình phương máy móc rồi nhận cả ℝ, thử x âm để phát hiện mất thông tin dấu. Ôn TOP03-M07; luyện THPT-TOP03-ADD13.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -368,15 +401,20 @@
     "content_version": "R01",
     "stem": "Giải √(3x+1)=√(x+7) trong ℝ.",
     "answer_key": "S={3}.",
-    "worked_solution": "Điều kiện 3x+1≥0 và x+7≥0 ⇒ x≥−1/3. Hai căn không âm bằng nhau iff 3x+1=x+7 ⇒ x=3. Thử hai vế √10 bằng nhau.",
-    "skill_ids": [],
+    "worked_solution": "Điều kiện 3x+1≥0 và x+7≥0 ⇒ x≥−1/3. Hai căn không âm bằng nhau khi và chỉ khi 3x+1=x+7 ⇒ x=3. Thử hai vế √10 bằng nhau.",
+    "skill_ids": [
+      "RADICAL_TWO_SIDES",
+      "RADICAL_DOMAIN"
+    ],
     "original_outcome_ids": [
       "TOP03-O08"
     ],
     "problem_type_id": "TOP03-TWO_RADICALS_DOMAIN",
     "difficulty": "UNDERSTAND",
-    "hints": [],
-    "remediation": "Nếu chỉ bình phương mà quên miền, đặt điều kiện cho cả hai căn trước.",
+    "hints": [
+      "Ghi điều kiện cho cả hai căn trước khi bình phương."
+    ],
+    "remediation": "Nếu chỉ bình phương mà quên miền, đặt điều kiện cho cả hai căn trước. Ôn TOP03-M08; luyện THPT-TOP03-ADD17.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -395,14 +433,19 @@
     "stem": "Giải √(5x+4)=x+2. Phương trình có thể có hai nghiệm hay không?",
     "answer_key": "S={0,1}.",
     "worked_solution": "Điều kiện x+2≥0 và 5x+4≥0. Bình phương 5x+4=(x+2)² ⇒ x²−x=0 ⇒ x=0 hoặc 1. Cả hai thỏa: √4=2=0+2, √9=3=1+2. Không được mặc định một căn có đúng một nghiệm.",
-    "skill_ids": [],
+    "skill_ids": [
+      "RADICAL_CONDITION",
+      "RADICAL_FILTER"
+    ],
     "original_outcome_ids": [
       "TOP03-O09"
     ],
     "problem_type_id": "TOP03-ONE_RADICAL_TWO_VALID_ROOTS",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu tự loại mất một nghiệm, thử cả x=0 và x=1 trong gốc.",
+    "hints": [
+      "Kiểm x+2≥0 và 5x+4≥0; thử tất cả nghiệm."
+    ],
+    "remediation": "Nếu tự loại mất một nghiệm, thử cả x=0 và x=1 trong gốc. Ôn TOP03-M09; luyện THPT-TOP03-ADD13.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -420,15 +463,20 @@
     "content_version": "R01",
     "stem": "Giải √(x+4)=√(x²+5x+2) trong ℝ và xác định nghiệm ứng viên không hợp lệ.",
     "answer_key": "S={−2+√6}; −2−√6 bị loại.",
-    "worked_solution": "Điều kiện x+4≥0 và x²+5x+2≥0. Bình phương x+4=x²+5x+2 ⇔ x²+4x−2=0 ⇒ x=−2±√6. Với −2−√6<−4, x+4<0, không có căn thực. Với −2+√6>−4, hai radicand cùng bằng x+4=2+√6>0 nên nhận.",
-    "skill_ids": [],
+    "worked_solution": "Điều kiện x+4≥0 và x²+5x+2≥0. Bình phương x+4=x²+5x+2 ⇔ x²+4x−2=0 ⇒ x=−2±√6. Với −2−√6<−4, x+4<0, không có căn thực. Với −2+√6>−4, hai biểu thức dưới căn cùng bằng x+4=2+√6>0 nên nhận.",
+    "skill_ids": [
+      "RADICAL_TWO_SIDES",
+      "RADICAL_DOMAIN"
+    ],
     "original_outcome_ids": [
       "TOP03-O10"
     ],
     "problem_type_id": "TOP03-RADICAL_DOMAIN_FALSE_CANDIDATE",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu giữ cả hai nghiệm, so −2−√6 với −4 bằng bình phương/ước lượng √6>2.",
+    "hints": [
+      "Kiểm cả hai biểu thức dưới căn ở mỗi ứng viên."
+    ],
+    "remediation": "Nếu giữ cả hai nghiệm, so −2−√6 với −4 bằng bình phương/ước lượng √6>2. Ôn TOP03-M10; luyện THPT-TOP03-ADD15.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -447,14 +495,18 @@
     "stem": "Giải √(x²+9)=x−1; vì sao phương trình đại số sau bình phương có nghiệm mà phương trình gốc vô nghiệm?",
     "answer_key": "S=∅.",
     "worked_solution": "Bên phải x−1 phải ≥0 ⇒ x≥1. Bình phương x²+9=(x−1)² ⇒ 9=−2x+1 ⇒ x=−4, trái x≥1. Trực tiếp tại −4: căn √25=5 còn −4−1=−5. Không có nghiệm.",
-    "skill_ids": [],
+    "skill_ids": [
+      "RADICAL_FILTER"
+    ],
     "original_outcome_ids": [
       "TOP03-O10"
     ],
     "problem_type_id": "TOP03-RADICAL_NO_SOLUTION_SIGN",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu nhận x=−4 vì làm đúng bình phương, thử lại dấu hai vế gốc.",
+    "hints": [
+      "Kiểm x−1≥0 trước khi giải phương trình sau bình phương."
+    ],
+    "remediation": "Nếu nhận x=−4 vì làm đúng bình phương, thử lại dấu hai vế gốc. Ôn TOP03-M10; luyện THPT-TOP03-ADD17.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -479,8 +531,10 @@
     ],
     "problem_type_id": "TOP03-BIQUADRATIC_SUBSTITUTION",
     "difficulty": "APPLY_EXTENSION",
-    "hints": [],
-    "remediation": "Nếu chỉ lấy x dương, nhớ x²=t>0 có hai nghiệm đối nhau.",
+    "hints": [
+      "Đặt t=x²≥0; khi quay về x, xét cả hai dấu."
+    ],
+    "remediation": "Nếu chỉ lấy x dương, nhớ x²=t>0 có hai nghiệm đối nhau. Ôn TOP03-M11; luyện THPT-TOP03-ADD20.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -505,8 +559,10 @@
     ],
     "problem_type_id": "TOP03-BIQUADRATIC_NEGATIVE_T",
     "difficulty": "APPLY_EXTENSION",
-    "hints": [],
-    "remediation": "Nếu nhận nghiệm x²=−4 trong ℝ, kiểm bình phương số thực không âm.",
+    "hints": [
+      "Lọc t không âm trước khi giải x²=t."
+    ],
+    "remediation": "Nếu nhận nghiệm x²=−4 trong ℝ, kiểm bình phương số thực không âm. Ôn TOP03-M11; luyện THPT-TOP03-ADD19.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -522,17 +578,21 @@
   {
     "item_id": "THPT-TOP03-ADD21",
     "content_version": "R01",
-    "stem": "Một thang dài 10 m tựa tường, chân thang cách tường x>0 m, độ cao đầu thang là x+2 m. Tìm x và độ cao.",
+    "stem": "Một thang dài 10 m tựa vào tường thẳng đứng, mặt đất nằm ngang. Chân thang cách tường x>0 m, độ cao đầu thang là x+2 m. Tìm x và độ cao.",
     "answer_key": "x=6 m; độ cao 8 m.",
     "worked_solution": "Pythagore: √[x²+(x+2)²]=10, x>0. Bình phương x²+(x+2)²=100 ⇒ 2x²+4x−96=0 ⇒ (x+8)(x−6)=0. Chỉ x=6 hợp chiều dài dương; thử √(36+64)=10. Độ cao 8 m.",
-    "skill_ids": [],
+    "skill_ids": [
+      "RADICAL_MODELING"
+    ],
     "original_outcome_ids": [
       "TOP03-O12"
     ],
     "problem_type_id": "TOP03-GEOMETRIC_RADICAL_MODEL",
     "difficulty": "APPLY",
-    "hints": [],
-    "remediation": "Nếu nhận −8, kiểm điều kiện độ dài x>0 và x+2>0; nếu sai phân tích, chia 2 trước.",
+    "hints": [
+      "Vẽ tam giác vuông, cạnh huyền 10 m; giữ x>0."
+    ],
+    "remediation": "Nếu nhận −8, kiểm điều kiện độ dài x>0 và x+2>0; nếu sai phân tích, chia 2 trước. Ôn TOP03-M12; luyện THPT-TOP03-ADD18.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
