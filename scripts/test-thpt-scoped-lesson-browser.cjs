@@ -227,10 +227,10 @@ async function execute(){
          await Promise.race([
           new Promise((res,rej)=>{
            image.addEventListener("load",res,{once:true});
-           image.addEventListener("error",()=>rej(new Error("scoped SVG/image load failed")),{once:true});
+           image.addEventListener("error",()=>rej(new Error("scoped SVG/image load failed: "+(image.currentSrc||image.src))),{once:true});
            if(image.complete){
             if(image.naturalWidth>0)res();
-            else rej(new Error("scoped SVG/image completed without pixels"));
+            else rej(new Error("scoped SVG/image completed without pixels: "+(image.currentSrc||image.src)));
            }
           }),
           deadline("load")
