@@ -1,16 +1,15 @@
-<!-- TOP09_MASTER974_SOURCE_CUSTODY_CURRENT_20261121 -->
-**CURRENT AUTHORING CĐ09:** one actual student learner `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md` Git blob `5681dd894755165e799b4a20d9741f43115778d9`, current existing author Q18 source-scoped `b0e17ea8fbd00075c5de7dcaeb178985743645f8`, unified Q01–Q18 v3.2.0. Three verified current #977 defects #030–032 fixed: 32/32 actual D6 Knowledge→Practice numbered routes, one voluntary final selfcheck lookup for 32/32 original canonical IDs, O32 independent f(x)=1/x differential firsttry with correct domain, signed dy=-1/20, actual Δy=-1/22 and absolute error1/220. The earlier separate R06 candidate is NONACTIVE and optional independent NotebookLM affected-only reviewer packet remains PENDING; current signoff is honest `AUTHOR_SELF_VERIFIED` based on direct author math/PED, not a forged reviewer verdict. Original 108 canonical Practice stems/answers/solutions, 14 Written rubrics, four SVG, 32 public selfcheck question-only original stems unchanged; 141/141 disclosures balanced, one SGK credit. Historical source/Q18/learner SHA in paragraphs below are old receipts not current competing canonical. No RD1/official readiness/Final Submit/Mastery, website, merge/deploy.
+<!-- #1109 A02 CP05 active source custody. Previous evidence is historical. -->
+**CURRENT AUTHORING CĐ09:** one canonical learner 9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0, source commit 135aa1b69fac65ffe26c6ccc55d960829b9bca01, Q18 dae205e928e26916c4bdfcbc232c5aca0dd91856, v3.2.0, Work #1055 DELTA_C + X-G.5 all three pages. Direct SGK original ChIX pp81–96; locked historical SBT. Original71/NEW37 frozen, 108 Practice/14 Written/32 replay IDs and criteria retained semantically, 4 SVG unchanged, 32 FirstTry/D6. 0 private RD1, no independent reviewer PASS, official readiness, Mastery or RELEASE authorization.
 
----
 
 # CĐ09 R05 — AUTHORING-ONLY S1 and canonical custody
 
 R03_IMMUTABLE_GIT_BLOB: 52be5ef6b8684632435ae22429bf7b5db5cf50cf
 CURRENT_LEARNER_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-CURRENT_LEARNER_SOURCE_BLOB: 5681dd894755165e799b4a20d9741f43115778d9
+CURRENT_LEARNER_SOURCE_BLOB: 9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: b0e17ea8fbd00075c5de7dcaeb178985743645f8
-STATUS: R05_MASTER974_AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_32_D6_O32_TRANSFER
+CURRENT_Q18_RECEIPT_BLOB: dae205e928e26916c4bdfcbc232c5aca0dd91856
+STATUS: A02_CP05_AUTHOR_SELF_VERIFIED_SOURCE_ONLY
 
 ## 18/11/2026 — Active source correction, signed scoped Q18 provenance
 
@@ -20,7 +19,7 @@ STATUS: R05_MASTER974_AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_32_D6_O32_TRANSFER
 ## Nguồn S1 và giới hạn nội dung
 
 - **SGK Toán 11 Kết nối tri thức Tập 2, Chương IX:** B31 Định nghĩa và ý nghĩa đạo hàm trang in **81–87**; B32 Các quy tắc tính đạo hàm **88–94**; B33 Đạo hàm cấp hai **95–96**; cuối ChIX **97–98**. Hoạt động trải nghiệm từ trang 99 thuộc phạm vi SGK khác, không giả vờ nhập vào Core ChIX.
-- **SBT KNTT Toán11 Tập 2:** B31 trang in **54–57**, B32 **58–60**, B33 **61–62**, cuối ChIX **63–65**, lời giải ChIX **111–116**. Các trang đã xác minh trực tiếp trong biên nhận source lịch sử từ SGK/SBT scan gốc; với phần đã xem, **chỉ số trang PDF 1-based = trang in+1**. SGK PDF SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, SBT PDF SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`. Lượt này **không quét lại** bản PDF, không phỏng đoán các trang chưa đối chiếu.
+- **SBT KNTT Toán11 Tập 2:** B31 trang in **54–57**, B32 **58–60**, B33 **61–62**, cuối ChIX **63–65**, lời giải ChIX **111–116**. Các trang đã xác minh trực tiếp trong biên nhận source lịch sử từ SGK/SBT scan gốc; với phần đã xem, **chỉ số trang PDF 1-based = trang in+1**. SGK PDF SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`, SBT PDF SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`. Lượt CP05 trực tiếp mở SGK B31–33 trang in 81–96; SBT giữ biên nhận lịch sử, không tuyên bố đọc lại toàn bộ SBT.
 - **SGK G11 ChIX source canonical PUBLIC 71 ID**, đã có historical independent Academic+PED PASS đúng snapshot blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0` và composite source receipt `4280a1741ccde038bbd5ae22af5def0d8683c7e8`. Bảo toàn original snapshot và 31 private RD1 gốc chỉ owner giữ. Các item SGK chỉ INDEX/placement, không clone stem/key/rubric.
 - **Phạm vi mở rộng có đánh dấu:** `TOP09-O32` giải thích vi phân tuyến tính `dy=f'(a)dx` và độ tăng bậc nhất; KHÔNG tự gọi đây là SGK B31/B32/B33 Core. Tiệm cận/tối ưu/khảo sát thuộc CĐ10; các giới hạn nền thuộc CĐ08, có nhắc lại tại chỗ khi cần. Các công thức lượng giác dùng x đo radian, mẫu/log/căn kiểm miền.
 

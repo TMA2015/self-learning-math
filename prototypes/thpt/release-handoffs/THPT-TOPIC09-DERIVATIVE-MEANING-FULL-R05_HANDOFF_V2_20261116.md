@@ -1,16 +1,14 @@
-<!-- TOP09_MASTER974_CURRENT_AUTHORING_V2_20261121 -->
-## CURRENT CĐ09 AUTHORING one V2 · math/PED Q18 v3.2.0
+<!-- #1109 A02 CP05 source-only current V2; historical evidence remains scoped to old snapshots. -->
+## CURRENT CĐ09 AUTHORING · A02 CP05
 
-One effective learner `prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md` blob `5681dd894755165e799b4a20d9741f43115778d9`, same original 71 SGK and 37 Topic canonical source banks with unchanged item math and four SVG; current existing Q18 author-only `b0e17ea8fbd00075c5de7dcaeb178985743645f8`, author source-custody `f740d4d08a5003d013e3ca70278367b6a8a6552e`. Three source-proved PED issues #977-030…032 addressed directly on one learner: 32/32 outcome-specific remedial Kiểm lỗi with real Practice Bài numbers; one opt-in Câu1–32→same item-ID Bài Practice map; O32 immediate FirstTry independent f(x)=1/x at a=2, dx=0.2, domain [2,2.2], signed dy=-1/20, Δy=-1/22, error1/220, explicit why local linear approximation only. Inverse-diff certifies all 108 Practice original stems/keys/solutions, 14 Written rubrics, 32 original PUBLIC question stems, four SVG preserved; 141/141 disclosure balance, SGK source credit only once at Topic end. Previous R06 nonpolynomial candidate is NONACTIVE, affected-only NotebookLM **independent PENDING**, current `AUTHOR_SELF_VERIFIED` source proof only—never assert independent reviewer PASS. No RD1, official readiness, Mastery, Final Submit, website implementation, merge/deploy.
-
----
+One canonical learner `9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0`, Q18 `dae205e928e26916c4bdfcbc232c5aca0dd91856`, source custody `70c4a351b200fd12d9db81188ca04039e87b932b`. CONTENT_READY source lane, Work #1055 Knowledge corrections and SGK B31–33 direct targeted verification, X-G.5 across all three pages. 32 outcomes, 108 Practice (71 SGK +37 Topic), 14 Written rubrics, 32 replays, 4 original SVG. Exact IDs/rubric tokens and replay↔Practice stems preserved, notation-equivalent display (not byte parity). No independent NotebookLM PASS, RD1/Mastery/official readiness or release authorization.
 
 # AUTHORING CĐ09 — Đạo hàm và ý nghĩa vi phân · V2 current R05
 
 PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
 CONTENT_REVISION: R05
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_AUTHORING_ONLY_CUSTODY_METADATA_20261116.md
-AUTHOR_METADATA_BLOB: f740d4d08a5003d013e3ca70278367b6a8a6552e
+AUTHOR_METADATA_BLOB: 70c4a351b200fd12d9db81188ca04039e87b932b
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -18,9 +16,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
-ACADEMIC_SOURCE_BLOB: 5681dd894755165e799b4a20d9741f43115778d9
+ACADEMIC_SOURCE_BLOB: 9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC09_R05_AUTHOR_SELF_QA_RECEIPT_20261116.md
-REVIEW_RECEIPT_BLOB: b0e17ea8fbd00075c5de7dcaeb178985743645f8
+REVIEW_RECEIPT_BLOB: dae205e928e26916c4bdfcbc232c5aca0dd91856
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_NEW37_PUBLIC_CANONICAL_R05_20261116.md
 PUBLIC_CANONICAL_BANK_BLOB: f249949be3b254a29c8859301b6c4904e636c505
 PUBLIC_ORIGINAL71_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC09_DERIVATIVE_ORIGINAL71_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -398,33 +396,33 @@ One placement per 32 new Practice item ID P01–P32, available earlier in Practi
 
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Exact learner SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, receipt SHA bce770e351460d9d01d7567332aed489bc68aa4d; not an independent NotebookLM reviewer PASS on R05.
+ONE normative source: `SLM-THPT-QUALITY-ONE v3.2.0` — `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Current source 9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0; Q18 dae205e928e26916c4bdfcbc232c5aca0dd91856.
 
 | Qxx | Exact academic/pedagogical source evidence | Scope verdict | Source trace | Release boundary |
 |---|---|---|---|---|
-| Q01 | G11 KNTT T2 SGK B31/B32/B33 ChIX and original71 scoped S1/owner PDF receipt, no fresh rescan. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q02 | 32 Topic outcomes TOP09-O01..O32 explained in five connected arcs; O32 differential marked Topic extension. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q03 | Derivative limit existence and domains, radian, radical/log/cot/tan restrictions, second derivative and approximation conditions. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q04 | Reasoned secant definition, slope, product area, chain, tangent, signed motion and differential error examples. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q05 | 108 unique canonical public IDs: 71 immutable original SGK +37 active R05 Topic canonical, including P23 corrected domain wording. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q06 | Five new Written rubric/7, original SGK Written reused without duplicated stem/answer/rubric. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q07 | Four real SVG with matched x² secant, area strips, s=t³−6t²+9t motion and differential at a2 dx0.1. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q08 | 32 First Try opt-in comparisons with targeted D6 and canonical practice groups. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q09 | Motivation from vehicle average velocity versus instantaneous rate before formulas. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q10 | Local prerequisites limits, points, physical units, algebraic structure and allowed argument domains. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q11 | Derivative as limit of secant slopes before derivation rules, velocity/acceleration before interpreting signs. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q12 | SVG values checked against exact worked examples and descriptions, not generic nearby images. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q13 | Why product has two strips, why composition needs chain, why speed requires signs v and a, why differential is approximate. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q14 | 32 self tries after connected concept passages, voluntary reveal with specific error correction. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q15 | Corrected P23 R05 content_version 2, one active canonical ID and stem, original R01 bank immutable; 108 no-copy ID matrix. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q16 | No imported 31 original owner-private RD1; public CLIENT_SELF_CHECK_NO_MASTERY, RELEASE Final Submit gate separate. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q17 | Three independent Topic pages, no Topic Core, no forced SGK navigation or mastery claims. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q18 | Exact learner SHA 68fe5b8a and new Q18 author receipt bc2aa70a, 32 outcome/37 new key checks. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_8222107d | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q01 | Direct original SGK KNTT T2 B31–33 printed 81–96, PDF1 82–97; original SBT locked evidence preserved for unchanged scope. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q02 | 32 outcomes and five connected arcs; O32 differential explicitly Topic extension. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q03 | Finite two-sided definition and domains; radians, log, sqrt, quotient, second derivative, differentiability and local approximation. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q04 | 32 worked examples and FirstTry recomputed, including signed velocity, nonlinear second chain and rational differential. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q05 | 108 exact canonical public markers: 71 original SGK and 37 Topic; no new IDs or bank edits. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q06 | 14 Written rubrics; 71 point tokens and criteria preserved by equivalent formatting. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q07 | 4 original SVG exact source hashes: secant, product area, signed motion, differential. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q08 | 32 voluntary FirstTry and Kiểm lỗi routes to original Practice numbers. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q09 | Average rate vs instantaneous rate establishes why derivative is necessary. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q10 | Limits, domains, radian, unit and sign prerequisites before methods. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q11 | Connect x−a and h forms; three SGK exponential/log limits; acceleration from average rate. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q12 | Secant slope 3→2, area 2+1.8+0.6, correct signed motion intervals, dy=.4 vs Δy=.41. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q13 | Derivative sign local relative to f(a), not entire-neighborhood monotonicity; product and chain reasoning; differential error. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q14 | 32 opt-in comparisons, individual D6 and independent transfer tasks, no automatic grading claim. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q15 | One active bank and original71 index unchanged; exact 108 IDs and 32 replay stems; notation equivalence, not byte equality. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q16 | CLIENT_SELF_CHECK_NO_MASTERY, private count0, no official readiness, Final Submit reserved for RELEASE. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q17 | Three pages X-G.5, 1867/1867 inline and 9/9 display, 141/141 disclosures; no dollar/slash inside math. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q18 | Exact current source 9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0 and Q18 dae205e928e26916c4bdfcbc232c5aca0dd91856; affected-scope author verification not independent PASS. | AUTHOR_SELF_VERIFIED_A02_CP05 | SOURCE_LOCKED_9281c89b | RELEASE_QA_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
 
 - **SGK** Toán11 KNTT Tập2 ChIX B31 printed81–87, B32 88–94, B33 95–96, cuối ChIX 97–98; from source-locked original historic scanned SGK first-party PDF SHA256 `14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491`. SGK Experience pp99 onward separate, not Core CĐ09.
-- **SBT** KNTT Tập2 B31 54–57, B32 58–60, B33 61–62, cuối ChIX63–65, lời giải111–116; scanned first-party SBT PDF SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`. Source receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md` original direct rendered scans p printed ↔ PDF index p+1 on the sampled pages; **no new PDF image scan this turn**.
+- **SBT** KNTT Tập2 B31 54–57, B32 58–60, B33 61–62, cuối ChIX63–65, lời giải111–116; scanned first-party SBT PDF SHA256 `a7c3d5ee9770377e16d7df97c531a2bc081fa47c8266fd4ad3438cba0d04e189`. Source receipt `prototypes/thpt/review-packets/G11_T2_OWNER_DRIVE_S1_PDF_VISUAL_SHA_RECEIPT_20261102.md` original direct rendered scans p printed ↔ PDF index p+1 on the sampled pages; **CP05 direct SGK original visual read; SBT scan remains historical**.
 - Original 31 SGK skill outcomes/71 public IDs independently reviewed historical source blob `3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0`, archived NotebookLM source-fidelity composite `4280a1741ccde038bbd5ae22af5def0d8683c7e8` (historical Permanent Source v2.0). Those PASS are only for original SGK; NEW Topic contents have their own Q18 AUTHOR_SELF_VERIFIED v3.1.0, no NotebookLM re-review falsely claimed.
 - Formal linear differential approximation `dy=f'(a)dx`, TOP09-O32 is **Topic-only extension, not S1 SGK Core**. Guard differentiability at a and small input steps; do not assert Δy equals dy exactly.
 
@@ -454,9 +452,11 @@ One normative `SLM-THPT-QUALITY-ONE v3.1.0`, from `prototypes/thpt/THPT_UNIFIED_
 
 ## AUTHORING_A1_A7
 
-A1 source SHA 8222107d717f7d02b845f79ccdd154e8dbe71cc6, self-QA receipt bce770e351460d9d01d7567332aed489bc68aa4d, one stable V2 packet. A2 scoped original G11 ChIX SGK/SBT printed/PDF index receipt. A3 substantive author Q18 self-review of DELTA_C, not a new independent NotebookLM review on R05. A4 32 outcomes/108 unique IDs/32 public selfchecks, 5 new Written rubric. A5 five natural conceptual arcs and 32 targeted First Tries, four exact SVG. A6 37 canonical source answers/conditions and four figure value checks; P23 stem already corrected in R04, content_version=2 on active R05 bank. A7 original 31 RD1 owner-held, none copied; public mode no Mastery and Final Submit gate for RELEASE.
+A1 source 9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0, Q18 dae205e928e26916c4bdfcbc232c5aca0dd91856, custody 70c4a351b200fd12d9db81188ca04039e87b932b. A2 direct SGK B31–33 pp81–96 and historical SBT scope. A3 AUTHOR_SELF_VERIFIED affected DELTA_C, no independent NotebookLM PASS. A4 32 outcomes, 108 exact IDs, 32 replay mappings and 14 Written. A5 32 FirstTry/D6, four unchanged SVG, concept arcs. A6 Work fixes + X-G.5 semantic parity, no P0/P1 in affected scope; original banks unchanged. A7 0 private RD1, no official readiness/Mastery/authorization.
 
 ## DELTA_LEDGER
+
+A02 CP02/CP05 — Work #1055 Knowledge corrections, SGK bridges and X-G.5 three pages. Source 9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0, prior signed 5681dd894755165e799b4a20d9741f43115778d9. 108 Practice and 32 replays notation-only equivalent, 71 rubric point tokens exact; no bank edit. Prior sections/snapshots historical, no independent PASS.
 
 R01 historical canonical SGK source/receipt and R03 learner candidate immutable. R04 is `DELTA_C_ACADEMIC_MATERIAL`: learner narrative rewritten to connect mean rate→derivative→geometry/rules→second derivative/differential; four mathematical SVG example mismatches corrected (x² secant at a1, product rectangle numeric strips, signed movement s=t³−6t²+9t, and differential at a2 dx0.1), repetitive generic D6 removed; Practice and Self Check rewritten as learner prose. Original R01 NEW37 bank immutable; current R04 NEW37 canonical source corrects P23 "miền giá trị" to "tập xác định" without changing item_id, solution or rubric. R04 had only hidden 108 ID pointers; R05 replaces them with 108 learner-visible canonical problem cards plus solutions and D6, independently source-parity checked 108/108. No merge/deploy.
 

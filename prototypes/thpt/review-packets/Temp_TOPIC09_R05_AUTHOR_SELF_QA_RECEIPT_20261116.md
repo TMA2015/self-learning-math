@@ -1,3 +1,41 @@
+<!-- #1109 A02 CP05 closure: active receipt; prior evidence below is historical, not current claims. -->
+# CĐ09 — AUTHOR_SELF_QA_RECEIPT · A02 CP05 · 25/11/2026
+
+PACKET_ID: THPT-TOPIC09-DERIVATIVE-MEANING-FULL-R01
+CONTENT_REVISION: R05
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+LEARNING_PATH: TOPIC
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic09-derivative/Temp_TOPIC09_R05_STUDENT_FIRST_108_CANONICAL_VISIBLE_20261116.md
+SOURCE_BLOB: 9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0
+ACADEMIC_SOURCE_BLOB: 9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0
+SOURCE_COMMIT: 135aa1b69fac65ffe26c6ccc55d960829b9bca01
+PREVIOUS_SIGNED_SOURCE_BLOB: 5681dd894755165e799b4a20d9741f43115778d9
+PREVIOUS_SIGNED_Q18_BLOB: b0e17ea8fbd00075c5de7dcaeb178985743645f8
+ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+P0: 0
+P1: 0
+AUTHOR_SIGNOFF: A02_CP05_AUTHOR_SELF_VERIFIED_9281c89b9928cb0ccd38dedbc466fe1ef50bc6e0
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+PRIVATE_RD1_IMPORTED: 0
+OFFICIAL_READINESS: NOT_CLAIMED
+RELEASE_AUTHORIZATION: NO
+
+S1_RECEIPT: Direct original owner Drive SGK Toán 11 KNTT Tập 2 ChIX B31–33 printed 81–96, PDF1 82–97, SHA256 14ec0da7fa3d7c7365ed7f64599fc1e26484eccf1557301c57012ae64338e491. Rendered chapter pages and read definitions, examples, formula table and second derivative applications; specifically reread p82 (derivative definition, x−x0, current) and p92 (three limit bridges). Existing locked SBT receipt from original SGK canonical scope retained, not a new SBT scan. O32 differential is Topic extension, not SGK requirement.
+OUTCOME_AUDIT: Direct rechecked 32 worked examples and 32 Vận dụng/Đối chiếu; 32/32 actual independent example, FirstTry and Kiểm lỗi. Work #1055 CP02 source corrections and CP05 source actual diff, no new item. On readback, all 32 lesson/outcome markers and 140 canonical/replay markers exact vs prior signed source, 108 Practice, 14 Written, 32 replays matched exact current Practice stems; 71 point tokens unchanged. Prior 272/272 and 37/37 assertions are historical, not new test totals.
+MATH_VERIFICATION: O01 average 9 m/s vs displacement zero example; O02 slope −4+h and 6+h; O03 derivative3 and0 with x−a/h definitions; O04 sqrt(x−5) interior reciprocal root, reciprocal derivative on x≠0; O05 |2h|/h left−2 right2 and |h|+h slopes0,2; O06 piecewise left3/right0; O07 f(1)=0, f'(1)=6; O08 y=5x−1, y=0; O09 v=−3 and speed3; O10 T'(2)=1, T(2)=16, I(2)=7, marginal cost as approximation only; O11 20x⁴−9x² and21x²; O12 sqrt(2x+5) derivative1/sqrt(2x+5), endpoint excluded; O13 8x³−10x and4x+5; O14 3x²+4x−1 and6x²−2x+2; product rectangle added areas2+1.8+0.6=4.4; O15 quotient3/(x+2)^2, domain x≠−2, reciprocal sign; O16 nested 6x(x²+2)^2 and3/(2sqrt(3x+1)); O17 trig derivative4cos+2sin and−4sin−cos, radian conversion factor; O18 tan/cot domain and sign; O19 10x cos(5x²+1) and5cos(5x); O20 three limit relations and derivative7^x ln7; O21 log5 on positive domain, ln(4x)'=1/x; O22 2x/(x²+4)+2^x ln2 and 3/(3x−2); O23 domain (−∞;−1)∪(−1;1)∪(1;5], derivative interior; O24 e^(x²)(1+2x²); O25 signed velocity at2/4 −2/+2; O26 f''(1)=12; O27 30x−4 and20x³; O28 nonlinear inner second derivative includes F'(u)u'', example (2+4x²)e^(x²), f''=−16sin(4x)+9e^(3x); O29 v(1)=−4,a(1)=−2 and speed increasing; correct v/a signs and t=1,2,3 not decimal; O30 v=−3,a=−12 increases speed; O31 f(0),f'(0),f''(0)=2,3,4; O32 dx=.05 dy=.4 actual .4025, error .0025; rational transfer dy=−1/20, Δy=−1/22, error1/220. 4 unchanged SVG description/value guides checked directly. Practice affected notation maps inspected and residual split Δt, Δy=0.41 repaired, derivative identities explicitly typeset rather than false equality. No key/rubric/mode change.
+PED_VERIFICATION: Concept sequence average→instant→geometric meaning→rules→higher derivatives/differential; domain before rules, explicit two-sided quotient and local derivative sign (not monotonicity over entire interval), independent transfer tasks; 32 FirstTry and D6. SGK source bridges x−a/h, current, cost model, three limits, acceleration average→instant; 1867/1867 inline, 9/9 display, balanced braces, no dollar delimiter or raw slash in math, no split adjoining decimal/Greek token; 141/141 disclosures. Source QA only; browser/learner UAT not performed.
+CANONICAL_Q15: 71 original SGK placement index 3c025ce2dfb8e16743873ac2b3f35bfb37c27ef8, original SGK source 3fe3b1a12fac656b543ba3ba2743e3ba855c4fe0 and Topic NEW37 f249949be3b254a29c8859301b6c4904e636c505 exact unchanged, 14 Written rubric criteria/point tokens and canonical IDs preserved by notation-equivalent diff. No original bank changes during owner freeze. Current learner text is not byte-identical to bank (intentional typesetting equivalence under #1109).
+ASSESSMENT_Q16: 32 question-only replays exact current Practice stems Bài 3,6,10,13,16,20,24,27,31,35,38,41,44,48,52,56,59,62,65,68,71,74,79,82,85,88,91,95,99,103,107,108. Original optional end-page map unchanged. CLIENT_SELF_CHECK_NO_MASTERY, 0 private RD1, no official readiness; no runtime or Final Submit modifications.
+
+Disposition: author-scoped source verification and unchanged snapshot custody, no independent Topic Academic/PED reviewer PASS. DELTA_C in Knowledge; X-G.5 formatting-equivalent changes Practice/Replay. CONTENT_READY source lane, not RELEASE_READY. No merge/deploy. Historic original Q18 is preserved below and on old blob, not active on new source.
+
+---
+
+## Historical signed evidence
+
 <!-- TOP09_MASTER974_CURRENT_AUTHOR_Q18_D6_O32_20261121 -->
 ## CĐ09 · CURRENT Q18 AUTHOR_SELF_VERIFIED v3.2.0 — toán gốc không đổi, học độc lập có đường hồi phục
 
