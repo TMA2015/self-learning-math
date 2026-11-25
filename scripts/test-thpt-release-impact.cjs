@@ -621,7 +621,7 @@ function isExactTopicRW1(files){
 // #1055 R-W2 only: exact technical path set. The dedicated PR and
 // production gates verify actual base-to-head diff, immutable canonical
 // sources, byte-identical SGK/THCS renderer prefix and both browser waves.
-const SHARED_KNOWLEDGE_MATH_FILES=new Set([".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml","docs/assets/javascripts/math-details-v1.js","docs/assets/javascripts/thpt-topic-w2-golden-v1.js","docs/assets/javascripts/thpt-topic-w3-golden-v1.js","docs/assets/javascripts/thpt-topic-w4-golden-v1.js","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-topic-knowledge-tabs-v3.cjs","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-topic-w2-golden-browser.py","scripts/test-thpt-topic-w3-golden-browser.py","scripts/test-thpt-topic-w4-golden-browser.py"]);
+const SHARED_KNOWLEDGE_MATH_FILES=new Set([".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml","docs/assets/javascripts/math-details-v1.js","docs/assets/javascripts/thpt-topic-w2-golden-v1.js","docs/assets/javascripts/thpt-topic-w3-golden-v1.js","docs/assets/javascripts/thpt-topic-w4-golden-v1.js","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-topic-knowledge-tabs-v3.cjs","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-topic-w2-golden-browser.py","scripts/test-thpt-topic-w3-golden-browser.py","scripts/test-thpt-topic-w4-golden-browser.py","docs/assets/javascripts/thpt-topic-w5-golden-v1.js","scripts/test-thpt-topic-w5-golden-browser.py"]);
 function isExactSharedKnowledgeMath(files){
  if(files.length!==SHARED_KNOWLEDGE_MATH_FILES.size||new Set(files).size!==files.length||!files.every(f=>SHARED_KNOWLEDGE_MATH_FILES.has(f)))return false;
  try{
@@ -630,7 +630,7 @@ function isExactSharedKnowledgeMath(files){
   const deploy=fs.readFileSync(".github/workflows/deploy.yml","utf8");
   return helper.includes("window.SLMTHPTKnowledgeMath=shared;")&&
     qa.includes("SHARED_MATH_SCOPE_HOLD")&&qa.includes("markdown_inventory(topic)")&&qa.includes("RW2_SIZES")&&
-    deploy.includes("deploy-scoped-topic-shared-math:")&&deploy.includes("--shared-candidate-scope")&&deploy.includes("test-thpt-topic-rw1-math-browser.py --rw2");
+    deploy.includes("deploy-scoped-topic-shared-math:")&&deploy.includes("--shared-candidate-scope")&&deploy.includes("test-thpt-topic-rw1-math-browser.py --rw2")&&deploy.includes("test-thpt-topic-rw1-math-browser.py --tail")&&deploy.includes("scripts/test-thpt-topic-w5-golden-browser.py");
  }catch{return false}
 }
 // Exact governance-only files: other learner/runtime changes remain FULL.
