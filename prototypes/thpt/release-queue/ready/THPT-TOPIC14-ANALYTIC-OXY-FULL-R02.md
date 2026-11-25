@@ -1,3 +1,6 @@
+<!-- A06 WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 O16/O20/O23 edited in canonical at candidate blob `2132dafdeff986ea842947d193d0de6704235009`, commit `6eb7cd671714b309117e39bf6eebe8822be113be`. Previous signed pointers below are historical only until affected Q18/V2/ready re-lock and X-G.5 verification; no RELEASE authorization.
+
 <!-- OWNER_APPROVED_TOPIC14_20261121_EDITORIAL_EQUIVALENCE_READY -->
 **LATEST SOURCE_EQUIVALENT_CLEANUP:** Current one CĐ14 original R02 learner Git `d3c54d3867e6e831d6968a81d9c24d9d6b219363`, Q18 `e407a0318965dbf6cb65c9e6a2e1ac971f65221e`, A1/Q15 `ba2fb889ed7d6e1ed107c8218545bf99c46fb7d4`, V2 `224d04d6d787dc043e4bcda57f4c94811b4e3c9a`. The old learner `ff3d838680899b3c0a54ddd5774bebdf2f7d7d19` had two student-facing SGK/staff-like source-specific notes in reused `THPT-G10-B22-P03` and `THPT-G10-CHVII-W22-01`. Now only `SGK` citation reference removed in explanatory `Nếu làm sai` and `Depth note` renamed normal `Lưu ý phương pháp`; the math **y²=2px, p>0**, F(p/2;0), unique-intersection tangent proof, original problem, key and /6 written rubric unchanged. Original SGK ChVII canonical author source has no identical extra student notes; therefore changes are to **Topic-only extra annotation** and do not manufacture alternate SGK bank answers. Exactly 57/59 other shared SGK projection card bodies and 28 Topic practice untouched. `DELTA_A_UI_EDITORIAL` + source-equivalent D6; no independent full Topic review, merge/deploy or website behavior changes.
 ---
@@ -15,7 +18,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: f1a10ca651859d10112a0b363677f08a860997c7
 CATALOG_TOPIC_ID: CD14
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
@@ -36,7 +39,7 @@ SVG2_BLOB: 0fd1f0671ccdad9b7bdff1d05551a3e32f9d82d1
 SVG3_BLOB: 6a1d532983804a7cdb7d44b5d99f82c688660d62
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
