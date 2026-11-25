@@ -618,7 +618,22 @@ function isExactTopicRW1(files){
   return js.includes("SLMTopicRW1Math")&&js.includes("cd0[1-8]")&&adapter.includes('part==="kien-thuc"&&["06","07","08"].includes(topic)')&&qa.includes("RW1_SCOPE_HOLD")&&qa.includes("formula parity")&&qa.includes("126*6");
  }catch{return false}
 }
-// Exact governance-only files: actual learner/runtime changes remain FULL.
+// #1055 R-W2 only: exact technical path set. The dedicated PR and
+// production gates verify actual base-to-head diff, immutable canonical
+// sources, byte-identical SGK/THCS renderer prefix and both browser waves.
+const SHARED_KNOWLEDGE_MATH_FILES=new Set([".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml","docs/assets/javascripts/math-details-v1.js","docs/assets/javascripts/thpt-topic-w2-golden-v1.js","docs/assets/javascripts/thpt-topic-w3-golden-v1.js","docs/assets/javascripts/thpt-topic-w4-golden-v1.js","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-topic-knowledge-tabs-v3.cjs","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-topic-w2-golden-browser.py","scripts/test-thpt-topic-w3-golden-browser.py","scripts/test-thpt-topic-w4-golden-browser.py"]);
+function isExactSharedKnowledgeMath(files){
+ if(files.length!==SHARED_KNOWLEDGE_MATH_FILES.size||new Set(files).size!==files.length||!files.every(f=>SHARED_KNOWLEDGE_MATH_FILES.has(f)))return false;
+ try{
+  const helper=fs.readFileSync("docs/assets/javascripts/math-details-v1.js","utf8");
+  const qa=fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8");
+  const deploy=fs.readFileSync(".github/workflows/deploy.yml","utf8");
+  return helper.includes("window.SLMTHPTKnowledgeMath=shared;")&&
+    qa.includes("SHARED_MATH_SCOPE_HOLD")&&qa.includes("markdown_inventory(topic)")&&qa.includes("RW2_SIZES")&&
+    deploy.includes("deploy-scoped-topic-shared-math:")&&deploy.includes("--shared-candidate-scope")&&deploy.includes("test-thpt-topic-rw1-math-browser.py --rw2");
+ }catch{return false}
+}
+// Exact governance-only files: other learner/runtime changes remain FULL.
 const MATH_NOTATION_GOVERNANCE=new Set(["AGENTS.md","prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md","prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_OWNER_RESET_20261122.md","scripts/test-thpt-push-deploy-scope.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml"]);
 function classify(paths,{manual=false}={}){
  const files=paths.map(s=>s.trim()).filter(Boolean);
@@ -628,6 +643,7 @@ function classify(paths,{manual=false}={}){
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
+ if(isExactSharedKnowledgeMath(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_EXACT_SHARED_KNOWLEDGE_MATH_RW2"};
  if(isExactTopicRW1(files))return {impact:"SCOPED_TOPIC_RW1",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW1_EXACT_KNOWLEDGE_MATH_TAB_QA"};
  if(isG12MathHotfix(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_MATH_HOTFIX_LESSONS.join(","),reason:"OWNER_1039_G12_MATH_HOTFIX"};
  if(isG12W13(files))return {impact:"SCOPED_LESSON",full_suite:"false",changed_lessons:G12_W13_LESSONS.join(","),reason:"OWNER_1039_W13_EXACT_SOURCE_AND_BROWSER"};
@@ -802,9 +818,14 @@ function selfTest(){
   "scripts/test-thpt-release-impact.cjs",
   ".github/workflows/thpt-topic-rw1-math-qa.yml"
  ];
- // The new candidate must stay FULL until a separately verified exact
- // deploy lane exists. Unknown/mixed site paths cannot get a fast pass.
+ // Incomplete old candidate and any mixed/unknown site paths stay FULL.
  assert.equal(classify(sharedCandidate).impact,"FULL");
+ const shared=[...SHARED_KNOWLEDGE_MATH_FILES];
+ assert.equal(classify(shared).impact,"SCOPED_TOPIC_SHARED_MATH");
+ assert.equal(classify(shared.slice(1)).impact,"FULL");
+ assert.equal(classify([...shared,"docs/thpt-preview/chuyen-de/cd09/kien-thuc.md"]).impact,"FULL");
+ assert.equal(classify([...shared,"docs/assets/javascripts/firebase-gemini-v1.js"]).impact,"FULL");
+ assert.equal(classify(shared,{manual:true}).impact,"FULL");
  assert.equal(classify([...sharedCandidate,"docs/thpt-preview/chuyen-de/cd09/kien-thuc.md"]).impact,"FULL");
  assert.equal(classify(rw1.slice(1)).impact,"FULL");
  assert.equal(classify([...rw1,"docs/thpt-preview/chuyen-de/cd01/kien-thuc.md"]).impact,"FULL");
@@ -1166,7 +1187,7 @@ if(require.main===module){
   const out=classify(files,{manual:process.env.RELEASE_QA_FORCE_FULL==="true"});
   // CI migration itself must exercise the new renderer against the most recent
   // owner-P2 accepted Golden baseline (B14), even though its paths are global.
-  const qaSmoke=out.impact!=="SCOPED_TOPIC_RW1"&&files.some(x=>[
+  const qaSmoke=!["SCOPED_TOPIC_RW1","SCOPED_TOPIC_SHARED_MATH"].includes(out.impact)&&files.some(x=>[
    ".github/workflows/thpt-scoped-release-qa.yml",
    "scripts/test-thpt-scoped-lesson-browser.cjs",
    "scripts/test-thpt-release-impact.cjs"
