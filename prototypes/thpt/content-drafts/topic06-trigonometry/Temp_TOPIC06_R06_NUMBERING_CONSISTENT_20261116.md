@@ -497,9 +497,9 @@ Xét ví dụ: \(\tan\left(x+\frac{\pi}{4}\right)=-1\), suy ra \(x+\frac{\pi}{4}
 
 **Ví dụ**
 
-**Đề bài.** Giải \(\cot(2x)=1\) trên \(\mathbb R\).
+**Đề bài.** Giải \(\cot(3x)=\sqrt3\) trên \(\mathbb R\).
 
-**Lời giải.** Điều kiện \(\sin(2x)\ne0\). Vì \(\cot(\frac{\pi}{4})=1\) và côtang có chu kỳ \(\pi\), lại nghịch biến trên mỗi nhánh, nên \(2x=\frac{\pi}{4}+k\pi\), tức \(x=\frac{\pi}{8}+\frac{k\pi}{2}\), \(k\in\mathbb Z\). Tại các nghiệm, \(\sin(2x)=\pm\frac{\sqrt2}{2}\ne0\), nên tất cả đều hợp lệ. Khác với tang, điều kiện cần kiểm ở đây là sin của đối số khác 0.
+**Lời giải.** Điều kiện \(\sin(3x)\ne0\). Vì \(\cot(\frac{\pi}{6})=\sqrt3\) và côtang có chu kỳ \(\pi\), lại nghịch biến trên mỗi nhánh, nên \(3x=\frac{\pi}{6}+k\pi\), tức \(x=\frac{\pi}{18}+\frac{k\pi}{3}\), \(k\in\mathbb Z\). Tại các nghiệm, \(\sin(3x)=\pm\frac12\ne0\), nên tất cả đều hợp lệ. Khác với tang, điều kiện cần kiểm ở đây là sin của đối số khác 0.
 
 **Vận dụng**
 
