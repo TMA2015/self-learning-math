@@ -20,9 +20,9 @@ Nếu tọa độ của xe tăng 16 mét trong 2 giây, vận tốc trung bình 
 
 **Ví dụ**
 
-**Đề bài:** s(t)=3t²+2 (m), t≥0 (s). Tính vận tốc trung bình trên [1,2].
+**Đề bài:** \(s(t)=3t^2+2\) (m), \(t\ge0\) (s). Tính vận tốc trung bình trên \([1;2]\).
 
-**Lời giải:** s(1)=5, s(2)=14; độ dời 9 m trong 1 s, nên vận tốc trung bình (14−5)/(2−1)=9 m/s. Không đồng nhất vận tốc trung bình và tức thời.
+**Lời giải:** \(s(1)=5\), \(s(2)=14\); độ dời 9 m trong 1 s, nên vận tốc trung bình \(\frac{14-5}{2-1}=9\) m/s. Không đồng nhất vận tốc trung bình và tức thời.
 
 **Vận dụng** Hàm \(f(x)=x^2\) biến đổi trung bình bao nhiêu trên khoảng \([0;2]\)?
 
@@ -42,29 +42,29 @@ Nếu dùng giá trị tại cuối khoảng chia cho thời gian thay vì **đ�
 
 <!-- LESSON_ID: TOP09-M02; OUTCOME_ID: TOP09-O02 -->
 
-> **PHƯƠNG PHÁP — Cát tuyến và giới hạn độ dốc.** Để thấy tốc độ tức thời, ta cho hai điểm trên đồ thị tiến sát nhau. Đường thẳng qua hai điểm tiến gần nhau có thể tiết lộ độ nghiêng của đồ thị tại một điểm? Ta đã biết p(a,f(a)), Q(a+h,f(a+h)), giới hạn h→0 từ hai phía. Cát tuyến PQ có hệ số góc [f(a+h)−f(a)]/h với h≠0. Nếu thương có giới hạn hữu hạn khi h→0 từ cả hai phía thuộc miền, ta có độ dốc tiếp tuyến; không thế h=0 trước khi rút. 'Cát tuyến' là qua hai điểm phân biệt, 'tiếp tuyến' là giới hạn vị trí/hệ số góc.
+> **PHƯƠNG PHÁP — Cát tuyến và giới hạn độ dốc.** Để thấy tốc độ tức thời, ta cho hai điểm trên đồ thị tiến sát nhau. Đường thẳng qua hai điểm tiến gần nhau có thể tiết lộ độ nghiêng của đồ thị tại một điểm? Ta đã biết \(P(a;f(a))\), \(Q(a+h;f(a+h))\), giới hạn \(h\to0\) từ hai phía. Cát tuyến PQ có hệ số góc \(\frac{f(a+h)-f(a)}h\) với \(h\ne0\). Nếu thương có giới hạn hữu hạn khi \(h\to0\) từ cả hai phía thuộc miền, ta có độ dốc tiếp tuyến; không thế \(h=0\) trước khi rút. 'Cát tuyến' là qua hai điểm phân biệt, 'tiếp tuyến' là giới hạn vị trí/hệ số góc.
 
-Chẳng hạn, f(x)=x², a=1: thương [(1+h)²−1]/h=2+h, h≠0; khi h→0 thu 2. Chọn khai triển vì thương ban đầu cho 0/0.
+Chẳng hạn, \(f(x)=x^2\), \(a=1\): thương \(\frac{(1+h)^2-1}h=2+h\), \(h\ne0\); khi \(h\to0\) thu 2. Chọn khai triển vì thương ban đầu cho \(\frac00\).
 
 **Ví dụ**
 
-**Đề bài:** Với f(x)=x² tại a=−2, tính hệ số góc cát tuyến ứng với bước h≠0 và giới hạn.
+**Đề bài:** Với \(f(x)=x^2\) tại \(a=-2\), tính hệ số góc cát tuyến ứng với bước \(h\ne0\) và giới hạn.
 
-**Lời giải:** [(−2+h)²−4]/h=−4+h (h≠0); khi h→0, độ dốc tiếp tuyến bằng −4. Hình cát tuyến ở mục 1.3 dùng điểm có hoành độ 1, không phải −2 trong ví dụ này.
+**Lời giải:** \(\frac{(-2+h)^2-4}h=-4+h\) (h≠0); khi \(h\to0\), độ dốc tiếp tuyến bằng −4. Hình cát tuyến ở mục 1.3 dùng điểm có hoành độ 1, không phải −2 trong ví dụ này.
 
-**Vận dụng** f(x)=x²,a=3: hệ số góc cát tuyến theo h là gì?
+**Vận dụng** \(f(x)=x^2\),\(a=3\): hệ số góc cát tuyến theo h là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-[(3+h)²−9]/h=6+h, h≠0; giới hạn 6.
+\(\frac{(3+h)^2-9}h=6+h\), \(h\ne0\); giới hạn 6.
 
-Nếu gọi 0/0 là độ dốc, cần biểu diễn h khác 0 và khử nhân tử.
+Nếu gọi \(\frac00\) là độ dốc, cần biểu diễn h khác 0 và khử nhân tử.
 
 
 **Kiểm lỗi**
 
-Nếu thay h=0 trực tiếp vào thương sai phân rồi viết 0/0, đọc **Kiến thức 1.2**, làm **Bài 4** và **Bài 6**; rút gọn khi h≠0 trước khi cho h→0.
+Nếu thay \(h=0\) trực tiếp vào thương sai phân rồi viết \(\frac00\), đọc **Kiến thức 1.2**, làm **Bài 4** và **Bài 6**; rút gọn khi \(h\ne0\) trước khi cho \(h\to0\).
 
 </details>
 
@@ -72,15 +72,15 @@ Nếu thay h=0 trực tiếp vào thương sai phân rồi viết 0/0, đọc **
 
 <!-- LESSON_ID: TOP09-M03; OUTCOME_ID: TOP09-O03 -->
 
-Giới hạn thương sai phân đưa ta tới định nghĩa đạo hàm. Vì sao một đạo hàm là một giới hạn chứ không chỉ là bảng công thức? Ta sử dụng giới hạn hàm số CĐ08 và f(a), f(a+h) thuộc miền. 
+Giới hạn thương sai phân đưa ta tới định nghĩa đạo hàm. Vì sao một đạo hàm là một giới hạn chứ không chỉ là bảng công thức? Ta sử dụng giới hạn hàm số CĐ08 và \(f(a)\), \(f(a+h)\) thuộc miền. 
 
 > **ĐỊNH NGHĨA — Đạo hàm tại một điểm.** Với \(a\) là điểm trong của miền xác định, \(f'(a)=\displaystyle\lim_{h\to0}\frac{f(a+h)-f(a)}h\), nếu giới hạn **hữu hạn từ cả hai phía** tồn tại. Đạo hàm một phía riêng lẻ chưa đủ kết luận có đạo hàm thông thường tại \(a\).
 
  Tính bằng định nghĩa giúp kiểm công thức có áp dụng hay không.
 
-Xét ví dụ: f=x³ tại a=2: (2+h)³−8=12h+6h²+h³, chia h→12. Chọn khai triển vì yêu cầu định nghĩa, không dùng ngay quy tắc 3x².
+Xét ví dụ: \(f=x^3\) tại \(a=2\): \((2+h)^3-8=12h+6h^2+h^3\), chia h→12. Chọn khai triển vì yêu cầu định nghĩa, không dùng ngay quy tắc \(3x^2\).
 
-Hình minh họa riêng \(f(x)=x^2\) tại \(a=1\): điểm cố định \(P=(1;1)\), điểm \(Q=(2;4)\) ứng với \(h=1\) cho hệ số góc cát tuyến \(\frac{4-1}{2-1}=3\). Khi \(Q=(1+h;(1+h)^2)\) tiến gần \(P\), hệ số góc \(2+h\) tiến tới 2; tiếp tuyến tại \(P\) có phương trình \(y=2x-1\). Khác với ví dụ \(f=x^3\) phía trên, hình đang vẽ **parabol bình phương tại x=1**.
+Hình minh họa riêng \(f(x)=x^2\) tại \(a=1\): điểm cố định \(P=(1;1)\), điểm \(Q=(2;4)\) ứng với \(h=1\) cho hệ số góc cát tuyến \(\frac{4-1}{2-1}=3\). Khi \(Q=(1+h;(1+h)^2)\) tiến gần \(P\), hệ số góc \(2+h\) tiến tới 2; tiếp tuyến tại \(P\) có phương trình \(y=2x-1\). Khác với ví dụ \(f=x^3\) phía trên, hình đang vẽ **parabol bình phương tại \(x=1\)**.
 
 ![Cát tuyến tiến gần tiếp tuyến của hàm bậc hai](../../visuals/THPT_TOPIC09_SECANT_TANGENT_R01.svg)
 
@@ -88,18 +88,18 @@ Hình minh họa riêng \(f(x)=x^2\) tại \(a=1\): điểm cố định \(P=(1;
 
 **Ví dụ**
 
-**Đề bài:** Dùng định nghĩa tính f′(1) cho f(x)=x³.
+**Đề bài:** Dùng định nghĩa tính \(f'(1)\) cho \(f(x)=x^3\).
 
-**Lời giải:** [(1+h)³−1]/h=3+3h+h² với h≠0, tiến 3 khi h→0 từ hai phía. Vậy f′(1)=3.
+**Lời giải:** \(\frac{(1+h)^3-1}h=3+3h+h^2\) với \(h\ne0\), tiến 3 khi \(h\to0\) từ hai phía. Vậy \(f'(1)=3\).
 
-**Vận dụng** Tính f'(0) theo định nghĩa nếu f(x)=x².
+**Vận dụng** Tính \(f'(0)\) theo định nghĩa nếu \(f(x)=x^2\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-[h²−0]/h=h→0, nên f'(0)=0.
+\(\frac{h^2-0}h=h\to0\), nên \(f'(0)=0\).
 
-Nếu quên 'hai phía', so giới hạn thương khi h>0 và h<0.
+Nếu quên 'hai phía', so giới hạn thương khi \(h>0\) và \(h<0\).
 
 
 **Kiểm lỗi**
@@ -123,15 +123,15 @@ Chẳng hạn, \(f(x)=\sqrt{x}\) xác định khi \(x\ge0\). Với \(x>0\) bất
 \frac{\sqrt{x+h}-\sqrt{x}}{h}
 =\frac{1}{\sqrt{x+h}+\sqrt{x}}\longrightarrow\frac{1}{2\sqrt{x}}.
 \]
-Vì giới hạn hữu hạn này tồn tại tại mọi \(x>0\), đó là miền khả vi của hàm căn. Tại x=0, không thể lấy đạo hàm hai phía trên ℝ và thương phải→+∞; không ghi f'(0)=∞ như đạo hàm hữu hạn.
+Vì giới hạn hữu hạn này tồn tại tại mọi \(x>0\), đó là miền khả vi của hàm căn. Tại \(x=0\), không thể lấy đạo hàm hai phía trên ℝ và thương phải→+∞; không ghi \(f'(0)=\infty\) như đạo hàm hữu hạn.
 
 **Ví dụ**
 
-**Đề bài:** Xác định nơi khả vi của f(x)=√(x−5).
+**Đề bài:** Xác định nơi khả vi của \(f(x)=\sqrt{x-5}\).
 
-**Lời giải:** Miền x≥5. Với \(x>5\), nhân liên hợp tương tự cho thương \(\frac{1}{\sqrt{x+h-5}+\sqrt{x-5}}\to\frac{1}{2\sqrt{x-5}}\). Ở x=5 thiếu phía trái và thương sai phân phải 1/√h→+∞, nên không có đạo hàm hai phía hữu hạn.
+**Lời giải:** Miền \(x\ge5\). Với \(x>5\), nhân liên hợp tương tự cho thương \(\frac{1}{\sqrt{x+h-5}+\sqrt{x-5}}\to\frac{1}{2\sqrt{x-5}}\). Ở \(x=5\) thiếu phía trái và thương sai phân phải \(\frac1{\sqrt h}\to+\infty\), nên không có đạo hàm hai phía hữu hạn.
 
-**Vận dụng** Hàm f(x)=1/x có đạo hàm ở mọi x∈ℝ không?
+**Vận dụng** Hàm \(f(x)=\frac1x\) có đạo hàm ở mọi \(x\in\mathbb R\) không?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -151,7 +151,7 @@ Nếu ghi đạo hàm tại điểm ngoài miền hoặc cho căn có đạo hà
 
 <!-- LESSON_ID: TOP09-M05; OUTCOME_ID: TOP09-O05 -->
 
-Có đạo hàm kéo theo liên tục, nhưng điều ngược lại chưa chắc đúng. Có thể đồ thị liên tục vẫn có một góc gãy không? Cần nhớ tiêu chuẩn liên tục tại điểm và giới hạn h→0. 
+Có đạo hàm kéo theo liên tục, nhưng điều ngược lại chưa chắc đúng. Có thể đồ thị liên tục vẫn có một góc gãy không? Cần nhớ tiêu chuẩn liên tục tại điểm và giới hạn \(h\to0\). 
 
 > **ĐỊNH LÝ — Khả vi kéo theo liên tục.** Nếu \(f\) có đạo hàm hữu hạn tại điểm trong \(a\), thì \(f\) liên tục tại \(a\). Chiều đảo **không đúng nói chung**: \(f(x)=|x|\) liên tục tại \(0\) nhưng không có đạo hàm hai phía vì các độ dốc một phía lần lượt là \(-1\) và \(1\).
 
@@ -161,13 +161,13 @@ f(a+h)-f(a)=h\frac{f(a+h)-f(a)}h\longrightarrow0.
 \]
 Suy ra \(f(a+h)\to f(a)\), đúng điều kiện liên tục. Chiều đảo sai: liên tục không đảm bảo hai độ dốc một phía bằng nhau.
 
-Chẳng hạn, Xét |x−1| tại1: f liên tục vì |x−1|→0; đạo hàm trái−1, phải+1 nên không khả vi. Chọn xét thương để bác bỏ mệnh đề đảo.
+Chẳng hạn, Xét \(|x-1|\) tại1: f liên tục vì \(|x-1|\to0\); đạo hàm trái−1, phải+1 nên không khả vi. Chọn xét thương để bác bỏ mệnh đề đảo.
 
 **Ví dụ**
 
-**Đề bài:** Xét f(x)=|2x+3| tại a=−3/2: có liên tục và khả vi không?
+**Đề bài:** Xét \(f(x)=|2x+3|\) tại \(a=-\frac32\): có liên tục và khả vi không?
 
-**Lời giải:** Giá trị hàm tại a bằng 0, hàm liên tục. Thương sai phân =−2 khi h<0, +2 khi h>0; hai giới hạn khác nhau nên không khả vi tại a.
+**Lời giải:** Giá trị hàm tại a bằng 0, hàm liên tục. Thương sai phân =−2 khi \(h<0\), +2 khi \(h>0\); hai giới hạn khác nhau nên không khả vi tại a.
 
 **Vận dụng** Xét \(f(x)=|x|+x\) tại \(0\). Hàm có liên tục không? Tính thương sai phân từ trái và phải để quyết định có đạo hàm hay không.
 
@@ -181,7 +181,7 @@ Nếu dùng tính liên tục để suy đạo hàm, đối chiếu phản ví d
 
 **Kiểm lỗi**
 
-Nếu suy ngược 'liên tục ⇒ khả vi', đọc **Kiến thức 1.5**, làm **Bài 14** và **Bài 16**; |x| liên tục tại góc nhọn nhưng đạo hàm trái/phải khác nhau.
+Nếu suy ngược 'liên tục ⇒ khả vi', đọc **Kiến thức 1.5**, làm **Bài 14** và **Bài 16**; \(|x|\) liên tục tại góc nhọn nhưng đạo hàm trái/phải khác nhau.
 
 </details>
 
@@ -194,17 +194,17 @@ Nếu suy ngược 'liên tục ⇒ khả vi', đọc **Kiến thức 1.5**, là
 f'_-(a)=\lim_{h\to0^-}\frac{f(a+h)-f(a)}h,\qquad
 f'_+(a)=\lim_{h\to0^+}\frac{f(a+h)-f(a)}h.
 \]
-Tại một điểm trong, đạo hàm thông thường tồn tại khi và chỉ khi hai giới hạn này cùng hữu hạn và bằng nhau. Tại góc nhọn |x−a| chúng thường trái dấu. Có thể có đạo hàm một phía nhưng không có đạo hàm hai phía; không gộp hai độ dốc thành 0.
+Tại một điểm trong, đạo hàm thông thường tồn tại khi và chỉ khi hai giới hạn này cùng hữu hạn và bằng nhau. Tại góc nhọn \(|x-a|\) chúng thường trái dấu. Có thể có đạo hàm một phía nhưng không có đạo hàm hai phía; không gộp hai độ dốc thành 0.
 
-Chẳng hạn, f(x)=|x−3| tại 3: [|h|−0]/h=−1 khi h<0, +1 khi h>0. Chọn xét dấu tuyệt đối trước, nên không có f'(3).
+Chẳng hạn, \(f(x)=|x-3|\) tại 3: \(\frac{|h|-0}h=-1\) khi \(h<0\), +1 khi \(h>0\). Chọn xét dấu tuyệt đối trước, nên không có \(f'(3)\).
 
 **Ví dụ**
 
-**Đề bài:** Cho f(x)=3x nếu x<0, f(x)=x² nếu x≥0. Xét tại 0.
+**Đề bài:** Cho \(f(x)=3x\) nếu \(x<0\), \(f(x)=x^2\) nếu \(x\ge0\). Xét tại 0.
 
-**Lời giải:** Giới hạn hai phía bằng 0=f(0) nên liên tục. Thương sai phân trái bằng 3, phải tiến 0; đạo hàm hai phía tại 0 không tồn tại.
+**Lời giải:** Giới hạn hai phía bằng \(0=f(0)\) nên liên tục. Thương sai phân trái bằng 3, phải tiến 0; đạo hàm hai phía tại 0 không tồn tại.
 
-**Vận dụng** Tại x=0, đạo hàm một phía của |2x| là gì?
+**Vận dụng** Tại \(x=0\), đạo hàm một phía của \(|2x|\) là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -228,9 +228,9 @@ Biết \(f'(a)=2\) chưa đủ nếu không biết \(a\) là vị trí nào và 
 
 <!-- LESSON_ID: TOP09-M07; OUTCOME_ID: TOP09-O07 -->
 
-> **TÍNH CHẤT — Hệ số góc tiếp tuyến.** Vì sao biết tọa độ P chưa nói được đường tiếp tuyến nghiêng bao nhiêu? Ta đã biết định nghĩa hệ số góc đường thẳng và đạo hàm. Đạo hàm f'(a) là hệ số góc của tiếp tuyến nếu tồn tại, còn f(a) là tung độ điểm tiếp xúc. Đây là hai số thường khác nhau, có thể một số 0 còn số kia không. Nếu \(f'(a)>0\), thương sai phân \(\frac{f(a+h)-f(a)}h\) dương với mọi \(h\ne0\) đủ nhỏ; điều đó mô tả chiều biến thiên so với giá trị tại \(a\). Không được suy ngược rằng hàm đồng biến nghiêm ngặt thì đạo hàm phải dương ở mọi điểm: \(f(x)=x^3\) đồng biến nghiêm ngặt trên \(\mathbb R\), nhưng \(f'(0)=0\) (thương sai phân tại 0 là \(h^2\to0\)). Độ dốc âm cũng không đồng nghĩa tung độ âm.
+> **TÍNH CHẤT — Hệ số góc tiếp tuyến.** Vì sao biết tọa độ P chưa nói được đường tiếp tuyến nghiêng bao nhiêu? Ta đã biết định nghĩa hệ số góc đường thẳng và đạo hàm. Đạo hàm \(f'(a)\) là hệ số góc của tiếp tuyến nếu tồn tại, còn \(f(a)\) là tung độ điểm tiếp xúc. Đây là hai số thường khác nhau, có thể một số 0 còn số kia không. Nếu \(f'(a)>0\), thương sai phân \(\frac{f(a+h)-f(a)}h\) dương với mọi \(h\ne0\) đủ nhỏ; điều đó mô tả chiều biến thiên so với giá trị tại \(a\). Không được suy ngược rằng hàm đồng biến nghiêm ngặt thì đạo hàm phải dương ở mọi điểm: \(f(x)=x^3\) đồng biến nghiêm ngặt trên \(\mathbb R\), nhưng \(f'(0)=0\) (thương sai phân tại 0 là \(h^2\to0\)). Độ dốc âm cũng không đồng nghĩa tung độ âm.
 
-Chẳng hạn, y=x²+1 tại x=1: P(1,2) và f'(1)=2. Tiếp tuyến có độ dốc2, tung độ tại điểm2; hai giá trị trùng do bài này ngẫu nhiên, không phải quy tắc. Ở x=0 có f(0)=1 nhưng f'(0)=0.
+Chẳng hạn, \(y=x^2+1\) tại \(x=1\): \(P(1;2)\) và \(f'(1)=2\). Tiếp tuyến có độ dốc2, tung độ tại điểm2; hai giá trị trùng do bài này ngẫu nhiên, không phải quy tắc. Ở \(x=0\) có \(f(0)=1\) nhưng \(f'(0)=0\).
 
 Nếu gọi \(\alpha\) là góc định hướng từ chiều dương trục hoành đến tiếp tuyến không thẳng đứng, thì hệ số góc \(k=\tan\alpha=f'(a)\). Vì vậy một giới hạn về góc nghiêng trong bài toán thiết kế đường dốc phải được chuyển thành **giới hạn về hệ số góc** bằng hàm tang; không nhầm số \(f'(a)\) với một góc đo bằng độ.
 
@@ -240,19 +240,19 @@ Nếu gọi \(\alpha\) là góc định hướng từ chiều dương trục ho�
 
 **Lời giải:** \(f(1)=1+4-5=0\), nên điểm tiếp xúc là \(P(1;0)\). \(f'(x)=2x+4\), suy ra \(f'(1)=6\) là hệ số góc của tiếp tuyến, không phải tung độ. Độ dốc bằng 6 trong khi tung độ bằng 0, nên cần phân biệt rõ hai đại lượng.
 
-**Vận dụng** f(x)=x²+2 tại x=0, độ dốc và tung độ lần lượt bao nhiêu?
+**Vận dụng** \(f(x)=x^2+2\) tại \(x=0\), độ dốc và tung độ lần lượt bao nhiêu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Độ dốc f'(0)=0; tung độ f(0)=2.
+Độ dốc \(f'(0)=0\); tung độ \(f(0)=2\).
 
-Nếu nhầm giá trị và độ dốc, ghi riêng P(a,f(a)) và m=f'(a).
+Nếu nhầm giá trị và độ dốc, ghi riêng \(P(a;f(a))\) và m=f'(a).
 
 
 **Kiểm lỗi**
 
-Nếu lấy f(a) làm hệ số góc, đọc **Kiến thức 2.1**, giải **Bài 23** rồi **Bài 24**; tọa độ điểm tiếp xúc và f'(a) là hai đại lượng khác nhau.
+Nếu lấy \(f(a)\) làm hệ số góc, đọc **Kiến thức 2.1**, giải **Bài 23** rồi **Bài 24**; tọa độ điểm tiếp xúc và \(f'(a)\) là hai đại lượng khác nhau.
 
 </details>
 
@@ -260,29 +260,29 @@ Nếu lấy f(a) làm hệ số góc, đọc **Kiến thức 2.1**, giải **Bà
 
 <!-- LESSON_ID: TOP09-M08; OUTCOME_ID: TOP09-O08 -->
 
-> **CÔNG THỨC — Viết phương trình tiếp tuyến.** Khi có độ dốc, ta viết phương trình tiếp tuyến. Một độ dốc có đủ để viết đường tiếp tuyến không? Ta sử dụng dạng đường thẳng y−y₀=m(x−x₀), giá trị f(a). Tiếp tuyến nếu đạo hàm hữu hạn tại a có phương trình y−f(a)=f'(a)(x−a). Phải lấy đúng cả tọa độ điểm và hệ số góc, không thay f'' hay f(a) làm độ dốc. Nên kiểm đường đã tìm đi qua P.
+> **CÔNG THỨC — Viết phương trình tiếp tuyến.** Khi có độ dốc, ta viết phương trình tiếp tuyến. Một độ dốc có đủ để viết đường tiếp tuyến không? Ta sử dụng dạng đường thẳng \(y-y_0=m(x-x_0)\), giá trị \(f(a)\). Tiếp tuyến nếu đạo hàm hữu hạn tại a có phương trình \(y-f(a)=f'(a)(x-a)\). Phải lấy đúng cả tọa độ điểm và hệ số góc, không thay \(f''\) hay \(f(a)\) làm độ dốc. Nên kiểm đường đã tìm đi qua P.
 
-Xét ví dụ: Với f=x² tại a=2, P(2,4), m=4 ⇒ y−4=4(x−2) ⇒ y=4x−4. Chọn điểm-hệ số góc để tránh sai hằng số.
+Xét ví dụ: Với \(f=x^2\) tại \(a=2\), \(P(2;4)\), \(m=4\) ⇒ \(y-4=4(x-2)\) ⇒ \(y=4x-4\). Chọn điểm-hệ số góc để tránh sai hằng số.
 
 **Ví dụ**
 
-**Đề bài:** Viết tiếp tuyến với y=x²+3x tại x=1.
+**Đề bài:** Viết tiếp tuyến với \(y=x^2+3x\) tại \(x=1\).
 
-**Lời giải:** Điểm P(1,4), đạo hàm 2x+3 cho m=5; tiếp tuyến y−4=5(x−1), tức y=5x−1. Thay x=1 kiểm đi qua P.
+**Lời giải:** Điểm \(P(1;4)\), đạo hàm 2x+3 cho m=5; tiếp tuyến \(y-4=5(x-1)\), tức \(y=5x-1\). Thay \(x=1\) kiểm đi qua P.
 
-**Vận dụng** Tiếp tuyến y=x³ tại x=0 là gì?
+**Vận dụng** Tiếp tuyến \(y=x^3\) tại \(x=0\) là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-f(0)=0, f'(0)=0 ⇒ y=0.
+\(f(0)=0\), \(f'(0)=0\) ⇒ \(y=0\).
 
-Nếu kết quả không qua (a,f(a)), thế lại x=a để phát hiện.
+Nếu kết quả không qua \((a;f(a))\), thế lại x=a để phát hiện.
 
 
 **Kiểm lỗi**
 
-Nếu viết đường thẳng không đi qua (a,f(a)) hoặc nhầm tung độ với đạo hàm, đọc **Kiến thức 2.2**, giải **Bài 25** và **Bài 27**, thử thế x=a vào phương trình tiếp tuyến.
+Nếu viết đường thẳng không đi qua \((a;f(a))\) hoặc nhầm tung độ với đạo hàm, đọc **Kiến thức 2.2**, giải **Bài 25** và **Bài 27**, thử thế x=a vào phương trình tiếp tuyến.
 
 </details>
 
@@ -292,20 +292,20 @@ Nếu viết đường thẳng không đi qua (a,f(a)) hoặc nhầm tung độ 
 
 > **CÔNG THỨC — Vận tốc có hướng.** Trong chuyển động trên một trục thẳng, nếu \(s(t)\) là **tọa độ có dấu** của vật đo bằng mét tại thời điểm \(t\) đo bằng giây, thì độ dốc của đồ thị \(s(t)\) cho **vận tốc có hướng** \(v(t)=s'(t)\), đơn vị m/s. Vật có thể có vận tốc \(-2\) m/s mà tốc độ vẫn dương không? Có: **tốc độ** là \(|v(t)|\), luôn không âm; còn \(v(t)<0\) chỉ nói vật đang chuyển động theo chiều âm, không tự khẳng định đang chậm dần.
 
-Chẳng hạn, s(t)=t²−6t (m), t≥0: v(t)=2t−6; tại t=2, v=−2 m/s, tốc độ2 m/s. Chọn trị tuyệt đối chỉ sau khi xác định vận tốc có hướng.
+Chẳng hạn, \(s(t)=t^2-6t\) (m), \(t\ge0\): \(v(t)=2t-6\); tại \(t=2\), \(v=-2\) m/s, tốc độ2 m/s. Chọn trị tuyệt đối chỉ sau khi xác định vận tốc có hướng.
 
 **Ví dụ**
 
-**Đề bài:** s(t)=t²−5t+2 (m), t≥0 (s). Tính vận tốc và tốc độ tại t=1.
+**Đề bài:** \(s(t)=t^2-5t+2\) (m), \(t\ge0\) (s). Tính vận tốc và tốc độ tại \(t=1\).
 
-**Lời giải:** v(t)=2t−5, v(1)=−3 m/s có hướng âm; tốc độ |v(1)|=3 m/s. Dấu v chưa đủ kết luận đang chậm dần.
+**Lời giải:** \(v(t)=2t-5\), \(v(1)=-3\) m/s có hướng âm; tốc độ \(|v(1)|=3\) m/s. Dấu v chưa đủ kết luận đang chậm dần.
 
-**Vận dụng** Với s(t)=−3t (m), tốc độ là bao nhiêu?
+**Vận dụng** Với \(s(t)=-3t\) (m), tốc độ là bao nhiêu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-v=−3 m/s, tốc độ3 m/s.
+\(v=-3\) m/s, tốc độ3 m/s.
 
 Nếu gọi tốc độ âm, kiểm định nghĩa |v|.
 
@@ -320,19 +320,19 @@ Nếu gọi vận tốc âm là tốc độ âm, đọc **Kiến thức 2.3**, l
 
 <!-- LESSON_ID: TOP09-M10; OUTCOME_ID: TOP09-O10 -->
 
-> **TÍNH CHẤT — Đơn vị của đạo hàm.** Đơn vị của đạo hàm tùy đại lượng đầu vào và đầu ra. Đạo hàm của nhiệt độ theo phút có phải nhiệt độ hay tốc độ nhiệt độ đang thay đổi? Cần nhớ đơn vị, tỷ số Δđầu ra/Δđầu vào. f'(a) có đơn vị [f]/[x]. Nhiệt độ T(t) tính °C, t phút ⇒ T'(t) °C/phút; độ cao s(t) mét và t giây ⇒ s' m/s. Có thể nói đạo hàm dương/âm và mức biến thiên tức thời trong phạm vi mô hình, không dùng giá trị hàm thay tốc độ.
+> **TÍNH CHẤT — Đơn vị của đạo hàm.** Đơn vị của đạo hàm tùy đại lượng đầu vào và đầu ra. Đạo hàm của nhiệt độ theo phút có phải nhiệt độ hay tốc độ nhiệt độ đang thay đổi? Cần nhớ đơn vị, tỷ số Δđầu ra/Δđầu vào. \(f'(a)\) có đơn vị [f]/[x]. Nhiệt độ T(t) tính °C, t phút ⇒ T'(t) °C/phút; độ cao s(t) mét và t giây ⇒ s' m/s. Có thể nói đạo hàm dương/âm và mức biến thiên tức thời trong phạm vi mô hình, không dùng giá trị hàm thay tốc độ.
 
-Chẳng hạn, T(t)=15+2t−0,5t² °C; T'(t)=2−t, tại t=1 là +1 °C/phút. Chọn tốc độ biến thiên thay vì tính T(1)=16,5 °C.
+Chẳng hạn, \(T(t)=15+2t-0{,}5t^2\) °C; \(T'(t)=2-t\), tại \(t=1\) là +1 °C/phút. Chọn tốc độ biến thiên thay vì tính \(T(1)=16{,}5\) °C.
 
 Không chỉ vận tốc và nhiệt độ: trong mạch điện, nếu điện lượng \(Q(t)\) tính bằng coulomb đi qua tiết diện dây trong \(t\) giây, cường độ dòng điện **trung bình** là \(\dfrac{Q(t_2)-Q(t_1)}{t_2-t_1}\), còn cường độ **tức thời** là \(I(t)=Q'(t)\), tính bằng ampere. Ví dụ \(Q(t)=t^2+3t\) (C) trên \(t\ge0\) cho \(I(t)=2t+3\) (A), nên tại \(t=2\) s ta được \(I(2)=7\) A. Đây cũng là cùng một ý tưởng thương sai phân tiến đến giới hạn, không phải một quy tắc đạo hàm mới.
 
 **Ví dụ**
 
-**Đề bài:** T(t)=18+t²−3t °C, t tính phút. Tính T′(2) và nêu đơn vị.
+**Đề bài:** \(T(t)=18+t^2-3t\) °C, t tính phút. Tính \(T'(2)\) và nêu đơn vị.
 
-**Lời giải:** T′(t)=2t−3; T′(2)=1 °C/phút, tức nhiệt độ tăng tức thời. Giá trị T(2)=16 °C là đại lượng khác.
+**Lời giải:** \(T'(t)=2t-3\); \(T'(2)=1\) °C/phút, tức nhiệt độ tăng tức thời. Giá trị \(T(2)=16\) °C là đại lượng khác.
 
-**Vận dụng** Nếu giá P(x)=50+3x đồng, x là số sản phẩm được mô hình hóa bằng biến thực không âm, P'(x) có đơn vị gì?
+**Vận dụng** Nếu giá \(P(x)=50+3x\) đồng, x là số sản phẩm được mô hình hóa bằng biến thực không âm, \(P'(x)\) có đơn vị gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -356,24 +356,24 @@ Ta đã biết cách tìm đạo hàm từ thương sai phân, nhưng không th�
 
 <!-- LESSON_ID: TOP09-M11; OUTCOME_ID: TOP09-O11 -->
 
-> **CÔNG THỨC — Lũy thừa và hằng số.** Có thể tìm đạo hàm của đa thức nhanh mà vẫn hiểu vì sao hệ số n xuất hiện? Để xác định điều đó, cần xét hằng số và phép khai triển (x+h)^n (n nguyên dương). Từ định nghĩa và khai triển, [ (x+h)^n−x^n]/h có hạng đầu n x^{n−1}, các hạng khác chứa h và về0. Do đó (x^n)'=n x^{n−1} (n nguyên dương), (c)'=0. Không áp quy tắc đa thức cho cơ số a^x mà không phân biệt biến nằm ở đâu.
+> **CÔNG THỨC — Lũy thừa và hằng số.** Có thể tìm đạo hàm của đa thức nhanh mà vẫn hiểu vì sao hệ số n xuất hiện? Để xác định điều đó, cần xét hằng số và phép khai triển \((x+h)^n\) (n nguyên dương). Từ định nghĩa và khai triển, \(\frac{(x+h)^n-x^n}h\) có hạng đầu \(nx^{n-1}\), các hạng khác chứa h và về0. Do đó \((x^n)'=nx^{n-1}\) (n nguyên dương), \((c)'=0\). Không áp quy tắc đa thức cho cơ số \(a^x\) mà không phân biệt biến nằm ở đâu.
 
-Chẳng hạn, y=3x⁴−2: đạo hàm 3·4x³=12x³ và đạo hàm hằng−2 bằng0. Chọn tính từng hạng sau khi đã hiểu giới hạn khai triển.
+Chẳng hạn, \(y=3x^4-2\): đạo hàm \(3\cdot4x^3=12x^3\) và đạo hàm hằng−2 bằng0. Chọn tính từng hạng sau khi đã hiểu giới hạn khai triển.
 
 **Ví dụ**
 
-**Đề bài:** Lấy đạo hàm y=4x⁵−3x³+7.
+**Đề bài:** Lấy đạo hàm \(y=4x^5-3x^3+7\).
 
-**Lời giải:** Dùng đạo hàm từng hạng: y′=4·5x⁴−3·3x²+0=20x⁴−9x². Biến ở cơ số x, không phải ở số mũ như aˣ.
+**Lời giải:** Dùng đạo hàm từng hạng: \(y'=4\cdot5x^4-3\cdot3x^2+0=20x^4-9x^2\). Biến ở cơ số x, không phải ở số mũ như \(a^x\).
 
-**Vận dụng** (7x³−4)' bằng bao nhiêu?
+**Vận dụng** \((7x^3-4)'\) bằng bao nhiêu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-21x².
+\(21x^2\).
 
-Nếu ra 7x², bạn bỏ hệ số mũ 3.
+Nếu ra \(7x^2\), bạn bỏ hệ số mũ 3.
 
 
 **Kiểm lỗi**
@@ -386,15 +386,15 @@ Nếu quên nhân số mũ hoặc đạo hàm hằng số khác 0, đọc **Ki�
 
 <!-- LESSON_ID: TOP09-M12; OUTCOME_ID: TOP09-O12 -->
 
-> **CÔNG THỨC — Căn thức và điểm biên.** Hàm căn nhắc ta công thức luôn gắn với miền. Có giá trị √0=0 nhưng vì sao vẫn không có công thức f'(0) hữu hạn? Ta đã biết căn không âm, nhân liên hợp và giới hạn một phía. √x được định nghĩa trên x≥0. Trên x>0, thương sai phân nhân liên hợp dẫn (√x)'=1/(2√x). Tại 0, thương phải √h/h=1/√h→+∞, nên không có đạo hàm hữu hạn (và thiếu phía trái). Với \(\sqrt{g(x)}\), công thức đạo hàm hàm hợp ở mục 3.6 áp dụng nơi \(g(x)>0\) và \(g\) khả vi. Nếu \(g(x)=0\), cần xét trực tiếp, không tự kết luận từ mẫu bằng 0 của công thức.
+> **CÔNG THỨC — Căn thức và điểm biên.** Hàm căn nhắc ta công thức luôn gắn với miền. Có giá trị \(\sqrt0=0\) nhưng vì sao vẫn không có công thức \(f'(0)\) hữu hạn? Ta đã biết căn không âm, nhân liên hợp và giới hạn một phía. \(\sqrt x\) được định nghĩa trên \(x\ge0\). Trên \(x>0\), thương sai phân nhân liên hợp dẫn \((\sqrt x)'=\frac1{2\sqrt x}\). Tại 0, thương phải \(\frac{\sqrt h}h=\frac1{\sqrt h}\to+\infty\), nên không có đạo hàm hữu hạn (và thiếu phía trái). Với \(\sqrt{g(x)}\), công thức đạo hàm hàm hợp ở mục 3.6 áp dụng nơi \(g(x)>0\) và \(g\) khả vi. Nếu \(g(x)=0\), cần xét trực tiếp, không tự kết luận từ mẫu bằng 0 của công thức.
 
-Chẳng hạn, f=√(x+4): miền x≥−4, f'(x)=1/(2√(x+4)) với x>−4. Chọn xét miền trước khi áp bảng vì tại biên mẫu sẽ bằng0.
+Chẳng hạn, \(f=\sqrt{x+4}\): miền \(x\ge-4\), \(f'(x)=\frac1{2\sqrt{x+4}}\) với \(x>-4\). Chọn xét miền trước khi áp bảng vì tại biên mẫu sẽ bằng0.
 
 **Ví dụ**
 
-**Đề bài:** Tìm miền và đạo hàm của g(x)=√(2x+5).
+**Đề bài:** Tìm miền và đạo hàm của \(g(x)=\sqrt{2x+5}\).
 
-**Lời giải:** D=[−5/2,+∞). Với \(x>-\frac52\), dùng liên hợp ngay từ thương sai phân (chưa cần quy tắc hàm hợp):
+**Lời giải:** \(D=[-\frac52;+\infty)\). Với \(x>-\frac52\), dùng liên hợp ngay từ thương sai phân (chưa cần quy tắc hàm hợp):
 \[
 \frac{\sqrt{2x+2h+5}-\sqrt{2x+5}}h
 =\frac{2}{\sqrt{2x+2h+5}+\sqrt{2x+5}}
@@ -402,7 +402,7 @@ Chẳng hạn, f=√(x+4): miền x≥−4, f'(x)=1/(2√(x+4)) với x>−4. Ch
 \]
 Hệ số 2 ở tử xuất phát từ hiệu hai biểu thức trong căn bằng \(2h\). Ở biên không có đạo hàm hai phía hữu hạn.
 
-**Vận dụng** f(x)=√(x−1), có đạo hàm hữu hạn tại x=1 không?
+**Vận dụng** \(f(x)=\sqrt{x-1}\), có đạo hàm hữu hạn tại \(x=1\) không?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -424,15 +424,15 @@ Nếu dùng công thức căn ngay ở điểm biên mà mẫu trở thành 0, �
 
 > **CÔNG THỨC — Quy tắc tổng.** Tổng, hiệu và hệ số hằng có cách lấy đạo hàm tương ứng. Đạo hàm của tổng thay đổi thế nào khi từng thành phần thay đổi? Ta sử dụng tính tuyến tính giới hạn, đạo hàm cơ bản. Nếu u,v khả vi, (u±v)'=u'±v' và (c u)'=c u'. Đạo hàm của hằng số bằng0; không giữ hạng hằng. Lý do là thương sai phân của tổng bằng tổng các thương, có thể lấy giới hạn từng phần khi chúng tồn tại.
 
-Xét ví dụ: y=4x³−3x+6 ⇒ y'=12x²−3; hằng6 biến mất. Chọn phân rã vì phép cộng không lồng hàm hay tạo tích cần công thức khác.
+Xét ví dụ: \(y=4x^3-3x+6\) ⇒ \(y'=12x^2-3\); hằng6 biến mất. Chọn phân rã vì phép cộng không lồng hàm hay tạo tích cần công thức khác.
 
 **Ví dụ**
 
-**Đề bài:** Tính y′ nếu y=2x⁴−5x²+8.
+**Đề bài:** Tính \(y'\) nếu \(y=2x^4-5x^2+8\).
 
-**Lời giải:** Theo tuyến tính, y′=8x³−10x; hằng 8 có đạo hàm bằng 0.
+**Lời giải:** Theo tuyến tính, \(y'=8x^3-10x\); hằng 8 có đạo hàm bằng 0.
 
-**Vận dụng** (2x²+5x−8)' bằng bao nhiêu?
+**Vận dụng** \((2x^2+5x-8)'\) bằng bao nhiêu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -456,7 +456,7 @@ Với tích, không thể chỉ nhân hai đạo hàm. Tại sao (uv)' không ph
 
 > **CÔNG THỨC — Đạo hàm của tích.** Khi \(u,v\) đều khả vi, \((uv)'=u'v+uv'\). Cần lấy đúng **hai** hạng và giữ nguyên miền khả vi chung; không viết \((uv)'=u'v'\). Hai dải diện tích trong hình chữ nhật giải thích hai hạng. Chỉ dùng khi cả u,v khả vi tại điểm.
 
-Chẳng hạn, f=x(x²+3): f'=1·(x²+3)+x·2x=3x²+3. Chọn quy tắc tích vì hai thừa số biến theo x. Kiểm rút gọn trước cũng được x³+3x→3x²+3.
+Chẳng hạn, \(f=x(x^2+3)\): \(f'=1\cdot(x^2+3)+x\cdot2x=3x^2+3\). Chọn quy tắc tích vì hai thừa số biến theo x. Kiểm rút gọn trước cũng được \((x^3+3x)'=3x^2+3\).
 
 Trong hình chữ nhật minh họa, cạnh ngang \(u=3\) và cạnh đứng \(v=2\). Khi \(\Delta u=1\), \(\Delta v=0{,}6\), diện tích tăng bởi ba phần: \(v\Delta u=2\), \(u\Delta v=1{,}8\), phần góc nhỏ \(\Delta u\Delta v=0{,}6\); tổng tăng 4,4. Với các thay đổi do cùng \(\Delta x\to0\), chia độ tăng diện tích cho \(\Delta x\) rồi lấy giới hạn, phần góc bậc hai biến mất, để lại \(u'v+uv'\). Ví dụ số hữu hạn giúp **thấy đủ ba phần**, không có nghĩa bỏ ngay 0,6 trước khi lấy giới hạn.
 
@@ -466,9 +466,9 @@ Trong hình chữ nhật minh họa, cạnh ngang \(u=3\) và cạnh đứng \(v
 
 **Ví dụ**
 
-**Đề bài:** Tính [(x+2)(x²−1)]′ bằng quy tắc tích và kiểm.
+**Đề bài:** Tính \([(x+2)(x^2-1)]'\) bằng quy tắc tích và kiểm.
 
-**Lời giải:** y′=(x²−1)+2x(x+2)=3x²+4x−1; khai triển x³+2x²−x−2 rồi lấy đạo hàm cũng được kết quả đó.
+**Lời giải:** \(y'=(x^2-1)+2x(x+2)=3x^2+4x-1\); khai triển \(x^3+2x^2-x-2\) rồi lấy đạo hàm cũng được kết quả đó.
 
 **Vận dụng** Tính đạo hàm của \(y=(2x-1)(x^2+1)\) bằng quy tắc tích, rồi kiểm bằng khai triển.
 
@@ -488,29 +488,29 @@ Nếu cho (uv)'=u'v' hoặc quên đạo hàm một thừa số, đọc **Kiến
 
 <!-- LESSON_ID: TOP09-M15; OUTCOME_ID: TOP09-O15 -->
 
-> **CÔNG THỨC — Quy tắc thương.** Với thương, phải giữ điều kiện mẫu khác không. Tại sao tử và mẫu đều có đạo hàm nhưng hàm thương vẫn có điểm bị loại? Cần nhớ mẫu số phải khác0, u/v trên miền chung. (u/v)'=(u'v−uv')/v² khi u,v khả vi và v≠0. Dấu trừ bắt nguồn từ đạo hàm 1/v=−v'/v². Mọi kết quả đạo hàm phải ghi miền nguyên gốc; phép rút gọn không tự nối lỗ hổng ở mẫu.
+> **CÔNG THỨC — Quy tắc thương.** Với thương, phải giữ điều kiện mẫu khác không. Tại sao tử và mẫu đều có đạo hàm nhưng hàm thương vẫn có điểm bị loại? Cần nhớ mẫu số phải khác0, \(\frac uv\) trên miền chung. \((\frac uv)'=\frac{u'v-uv'}{v^2}\) khi u,v khả vi và \(v\ne0\). Dấu trừ bắt nguồn từ đạo hàm \((\frac1v)'=-\frac{v'}{v^2}\). Mọi kết quả đạo hàm phải ghi miền nguyên gốc; phép rút gọn không tự nối lỗ hổng ở mẫu.
 
-Chẳng hạn, f=(x+1)/(x−2) có miền x≠2, f'=[1(x−2)−(x+1)·1]/(x−2)²=−3/(x−2)². Chọn quy tắc thương trước khi đơn giản hóa.
+Chẳng hạn, \(f=\frac{x+1}{x-2}\) có miền \(x\ne2\), \(f'=\frac{1(x-2)-(x+1)\cdot1}{(x-2)^2}=-\frac3{(x-2)^2}\). Chọn quy tắc thương trước khi đơn giản hóa.
 
 **Ví dụ**
 
-**Đề bài:** Lấy đạo hàm f(x)=(x−1)/(x+2) và nêu miền.
+**Đề bài:** Lấy đạo hàm \(f(x)=\frac{x-1}{x+2}\) và nêu miền.
 
-**Lời giải:** D=ℝ\{−2}. Quy tắc thương: f′=[(x+2)−(x−1)]/(x+2)²=3/(x+2)², chỉ có nghĩa x≠−2.
+**Lời giải:** \(D=\mathbb R\setminus\{-2\}\). Quy tắc thương: \(f'=\frac{(x+2)-(x-1)}{(x+2)^2}=\frac3{(x+2)^2}\), chỉ có nghĩa \(x\ne-2\).
 
-**Vận dụng** (x/(x+1))' là gì, trên miền nào?
+**Vận dụng** \((\frac{x}{x+1})'\) là gì, trên miền nào?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-1/(x+1)², với x≠−1.
+\(\frac1{(x+1)^2}\), với \(x\ne-1\).
 
 Nếu cho x=−1 hợp lệ vì kết quả nhìn đơn giản, quay lại mẫu gốc.
 
 
 **Kiểm lỗi**
 
-Nếu áp quy tắc thương tại mẫu 0 hoặc đảo thứ tự tử số, đọc **Kiến thức 3.5**, làm **Bài 50** và **Bài 52**; ghi miền rồi dùng (u'v−uv')/v².
+Nếu áp quy tắc thương tại mẫu 0 hoặc đảo thứ tự tử số, đọc **Kiến thức 3.5**, làm **Bài 50** và **Bài 52**; ghi miền rồi dùng \(\frac{u'v-uv'}{v^2}\).
 
 </details>
 
@@ -518,7 +518,7 @@ Nếu áp quy tắc thương tại mẫu 0 hoặc đảo thứ tự tử số, �
 
 <!-- LESSON_ID: TOP09-M16; OUTCOME_ID: TOP09-O16 -->
 
-Hàm hợp cần tính cả sự thay đổi của biểu thức bên trong. Vì sao đạo hàm của (2x+1)^5 phải thêm nhân 2? Để xác định điều đó, cần xét phân biệt biến trong u=g(x) và hàm ngoài f(u). 
+Hàm hợp cần tính cả sự thay đổi của biểu thức bên trong. Vì sao đạo hàm của \((2x+1)^5\) phải thêm nhân 2? Để xác định điều đó, cần xét phân biệt biến trong u=g(x) và hàm ngoài f(u). 
 
 > **ĐỊNH NGHĨA — Hàm số hợp.** Nếu \(u=g(x)\) là hàm bên trong và \(y=F(u)\) là hàm bên ngoài, thì \(y=F(g(x))\) là **hàm hợp**. Biểu thức chỉ xác định ở những \(x\) mà \(g(x)\) có nghĩa **và** \(g(x)\) thuộc miền xác định của \(F\). Chẳng hạn \(F(u)=\sqrt{u}\), \(g(x)=1-x^2\) tạo thành \(y=\sqrt{1-x^2}\) trên \([-1;1]\); công thức đạo hàm qua quy tắc dây chuyền áp dụng trên \((-1;1)\), không tự cho đạo hàm hữu hạn tại hai đầu mút.
 
@@ -526,13 +526,13 @@ Hàm hợp cần tính cả sự thay đổi của biểu thức bên trong. Vì
 
  Đạo hàm biến thiên của đầu ra theo đầu vào bên trong rồi nhân tốc độ thay đổi của đầu vào bên trong; không chỉ đạo hàm lớp ngoài.
 
-Chẳng hạn, y=(2x+1)^5: u=2x+1, u'=2, F'(u)=5u⁴ ⇒ y'=10(2x+1)^4. Chọn tách lớp để không quên nhân 2.
+Chẳng hạn, \(y=(2x+1)^5\): \(u=2x+1\), \(u'=2\), \(F'(u)=5u^4\) ⇒ \(y'=10(2x+1)^4\). Chọn tách lớp để không quên nhân 2.
 
 **Ví dụ**
 
-**Đề bài:** Lấy đạo hàm y=(x²+2)³, chỉ rõ lớp trong/ngoài.
+**Đề bài:** Lấy đạo hàm \(y=(x^2+2)^3\), chỉ rõ lớp trong/ngoài.
 
-**Lời giải:** Đặt u=x²+2, u′=2x; lớp ngoài u³ có đạo hàm 3u². Vậy y′=3(x²+2)²·2x=6x(x²+2)².
+**Lời giải:** Đặt \(u=x^2+2\), \(u'=2x\); lớp ngoài \(u^3\) có đạo hàm \(3u^2\). Vậy \(y'=3(x^2+2)^2\cdot2x=6x(x^2+2)^2\).
 
 **Vận dụng** Tính đạo hàm của \(y=\sqrt{3x+1}\) tại những điểm \(3x+1>0\), chỉ rõ lớp trong và lớp ngoài.
 
