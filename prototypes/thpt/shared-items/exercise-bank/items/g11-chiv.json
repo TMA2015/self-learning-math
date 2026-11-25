@@ -903,7 +903,7 @@
     "content_version": "THPT-G11-CHIV-B10-B14-R03",
     "stem": "Một hình bình hành ABCD không suy biến được chiếu song song lên mặt phẳng (P). Ảnh có luôn là hình bình hành không suy biến không? Nêu điều kiện và một trường hợp ảnh suy biến.",
     "answer_key": "Không luôn; nếu phương chiếu không song song mặt phẳng chứa ABCD thì ảnh là hình bình hành không suy biến. Nếu phương chiếu song song một cạnh AB thì ảnh là đoạn thẳng.",
-    "worked_solution": "Nếu phương chiếu không song song mặt phẳng chứa hình, mỗi đường chiếu gặp mặt phẳng ấy nhiều nhất một điểm. Phép chiếu không đồng nhất hai điểm phân biệt của hình và bảo toàn các cặp cạnh đối song song, nên ảnh là hình bình hành không suy biến. Nếu phương chiếu song song AB, ảnh A=B và ảnh D=C (ký hiệu A′=B′, D′=C′), hai ảnh còn lại phân biệt vì AD không cùng phương AB; ảnh toàn hình là đoạn A′D′. Vì vậy không đủ chỉ giả thiết hình ban đầu không suy biến.",
+    "worked_solution": "Nếu phương chiếu không song song mặt phẳng chứa hình, mỗi đường chiếu gặp mặt phẳng ấy nhiều nhất một điểm. Phép chiếu không đồng nhất hai điểm phân biệt của hình và bảo toàn các cặp cạnh đối song song, nên ảnh là hình bình hành không suy biến. Nếu phương chiếu song song AB, A′=B′ và D′=C′ (dấu phẩy chỉ ảnh), hai ảnh còn lại phân biệt vì AD không cùng phương AB; ảnh toàn hình là đoạn A′D′. Vì vậy không đủ chỉ giả thiết hình ban đầu không suy biến.",
     "skill_ids": [
       "G11-B14-PARALLEL_AND_SHAPES"
     ],
