@@ -92,7 +92,7 @@ with sync_playwright() as pw:
                     assert full and len(short)<=len(full) and len(short)<=32,(engine,topic,width,short,full)
                     assert tab.get_attribute("aria-label")==full
                 assert tabs.first.inner_text() == {
-  "16": "1. Hai đường thẳng vuông góc",
+  "16": "1. Hai đường vuông góc",
   "17": "1. Khoảng cách: vì sao không đo",
   "18": "1. Vectơ và phép toán hình học"
 }[topic]

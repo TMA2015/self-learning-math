@@ -34,11 +34,22 @@ jobs:
           assert(/BEFORE_SHA:\s*\$\{\{\s*github\.event\.before\s*\}\}/.test(w),'Full main push base required');
           assert(/HEAD_SHA:\s*\$\{\{\s*github\.sha\s*\}\}/.test(w),'Full main push head required');
           const expr="$"+"{{";
-          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_RW1' && needs.release-scope.outputs.impact != 'SCOPED_MATH_LAB_FULLPAGE' }}";
+          const fullIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_RW1' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_SHARED_MATH' && needs.release-scope.outputs.impact != 'SCOPED_MATH_LAB_FULLPAGE' }}";
           const rw1If="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_RW1' }}";
           assert(w.includes(rw1If),"R-W1 exact scope lane missing");
           const rw1=w.split('\n  deploy-scoped-topic-rw1:\n')[1]?.split('\n  deploy-scoped-math-lab-fullpage:\n')[0];
           assert(rw1&&rw1.includes('python scripts/test-thpt-topic-rw1-math-browser.py --scope')&&rw1.includes('python scripts/test-thpt-topic-rw1-math-browser.py')&&rw1.includes('ghp-import -n -p -f site'),"R-W1 exact source/browser/deploy gate missing");
+          const sharedIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_SHARED_MATH' }}";
+          assert(w.includes(sharedIf),"Shared Knowledge exact scope lane missing");
+          const shared=w.split('\n  deploy-scoped-topic-shared-math:\n')[1]?.split('\n  deploy-scoped-math-lab-fullpage:\n')[0];
+          assert(shared,"Shared Knowledge publish job missing");
+          for(const req of ['--shared-candidate-scope','scripts/test-thpt-release-queue.cjs','scripts/test-thpt-handoff-gate-v2.cjs',
+            'scripts/test-thpt-topic-w2-source-locked.py','scripts/test-thpt-topic-w3-source-locked.py','scripts/test-thpt-topic-w4-source-locked.py',
+            'scripts/test-thpt-topic-rw1-math-browser.py','scripts/test-thpt-topic-rw1-math-browser.py --rw2','scripts/test-thpt-topic-rw1-math-browser.py --tail',
+            'scripts/test-thpt-topic-w5-source-intake.py','scripts/test-thpt-topic-w5-source-locked.py','scripts/test-thpt-topic-w5-golden-browser.py',
+            'scripts/test-thpt-topic-w2-golden-browser.py','scripts/test-thpt-topic-w3-golden-browser.py','scripts/test-thpt-topic-w4-golden-browser.py',
+            'mkdocs build --strict','mkdocs build -f mkdocs.thpt-preview.yml --strict','node scripts/assemble-thpt-site.cjs','ghp-import -n -p -f site'])
+            assert(shared.includes(req),"Shared Knowledge protected gate missing "+req);
           const labIf="if: "+expr+" needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_MATH_LAB_FULLPAGE' }}";
           assert(w.includes(labIf),"Math Lab 25 must have an exact-diff production lane");
           const lab=w.split('\n  deploy-scoped-math-lab-fullpage:\n')[1];

@@ -32,16 +32,16 @@ function verifyTopicKnowledge(src,pages,label) {
  // and the dedicated exact-source Chromium/WebKit workflow validates behavior.
  const isGoldenDomTabs=label.replace(/\\/g,"/").endsWith("/cd01/kien-thuc.md") &&
    src.includes("data-topic01-knowledge-start");
- const w1Match=label.replace(/\\/g,"/").match(/\/cd(0[2-9]|1[0-5])\/kien-thuc\.md$/);
+ const w1Match=label.replace(/\\/g,"/").match(/\/cd(0[2-9]|1[0-9]|2[0-2])\/kien-thuc\.md$/);
  const isW1DomTabs=!!w1Match&&src.includes('data-topic-w1-source-start="kien-thuc"');
- const w1Expected={"02":[4,16],"03":[4,12],"04":[5,18],"05":[4,17],"06":[4,16],"07":[4,18],"08":[4,18],"09":[5,32],"10":[6,36],"11":[4,22],"12":[3,12],"13":[3,16],"14":[4,23],"15":[5,22]};
+ const w1Expected={"02":[4,16],"03":[4,12],"04":[5,18],"05":[4,17],"06":[4,16],"07":[4,18],"08":[4,18],"09":[5,32],"10":[6,36],"11":[4,22],"12":[3,12],"13":[3,16],"14":[4,23],"15":[5,22],"16":[4,21],"17":[2,12],"18":[8,40],"19":[3,14],"20":[2,9],"21":[3,8],"22":[3,13]};
  if(isW1DomTabs){
    const target=w1Expected[w1Match[1]];
    const modules=[...src.matchAll(/^## (\d+)\. /gm)].map(x=>Number(x[1]));
    const subtopic=[...src.matchAll(/^### (\d+)\.(\d+)\. /gm)];
    assert.deepEqual(modules,Array.from({length:target[0]},(_,i)=>i+1),label+": all W1 knowledge modules must be present");
    assert.equal(subtopic.length,target[1],label+": source-locked W1 outcome tabs must be complete");
-   const adapter=Number(w1Match[1])>=12?"thpt-topic-w3-golden-v1.js":Number(w1Match[1])>=6?"thpt-topic-w2-golden-v1.js":"thpt-topic-w1-golden-v1.js";
+   const adapter=Number(w1Match[1])>=19?"thpt-topic-w5-golden-v1.js":Number(w1Match[1])>=16?"thpt-topic-w4-golden-v1.js":Number(w1Match[1])>=12?"thpt-topic-w3-golden-v1.js":Number(w1Match[1])>=6?"thpt-topic-w2-golden-v1.js":"thpt-topic-w1-golden-v1.js";
     const ui=fs.readFileSync(path.join(ROOT,"docs/assets/javascripts",adapter),"utf8");
    assert(ui.includes("dataset.topicW1ModuleTab")&&ui.includes("dataset.topicW1Subtab")&&
      ui.includes('setAttribute("role","tab")')&&ui.includes("ArrowLeft")&&
@@ -102,6 +102,16 @@ function run(){
    for(const p of PAGES){
      const fp=path.join(base,p);
      pages[p]=fs.existsSync(fp)?fs.readFileSync(fp,"utf8"):null;
+   }
+   // #1051 owner-approved retired pilot: verify three exact same-site
+   // redirects instead of counting it as a canonical learning journey.
+   if(path.relative(DIR,base).replace(/\\/g,"/")==="ham-so"){
+     for(const p of PAGES){
+       const src=pages[p];
+       assert(src&&src.includes("RETIRED_PILOT_REDIRECT_ONLY")&&src.includes('window.location.replace("../../");'),"Retired pilot must preserve "+p+" redirect");
+       assert(!src.includes("data-topic-w1-source-start")&&!src.includes("data-topic01-knowledge-start")&&!/^===\s*"/m.test(src),"Retired pilot must not become learner content");
+     }
+     continue;
    }
    const count=verifyTopicKnowledge(pages["kien-thuc.md"],pages,path.relative(ROOT,f));
    counts.push({topic:path.relative(DIR,base),tabs:count,preview:/PILOT_PARTIAL|TECHNICAL_DEMO_ONLY/.test(pages["kien-thuc.md"]||"")});

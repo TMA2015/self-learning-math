@@ -103,7 +103,7 @@ with sync_playwright() as pw:
     "06": "1. Góc quay",
     "07": "1. Dãy số",
     "08": "1. Giới hạn dãy số",
-    "09": "1. Đạo hàm tại điểm"
+    "09": "1. Định nghĩa đạo hàm"
 }[topic]
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e.parentElement).display") == "flex"
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e).backgroundColor") != "rgba(0, 0, 0, 0)"
@@ -257,9 +257,12 @@ with sync_playwright() as pw:
                     page.locator(f'[data-topic-w1-module-tab="{module}"]').click()
                     page.locator(f'[data-topic-w1-subtab="{sub}"]').click()
                     current = page.locator('.thpt-r4-knowledge-content-panel:visible')
-                    exp = current.locator('[data-topic-w2-display-math="exponent"]')
+                    # Shared renderer uses native semantic superscripts for explicit
+                    # plain-text shorthand; canonical TeX still uses MathJax.
+                    exp = current.locator('sup[data-topic-rw1-original]')
                     assert exp.count() >= (2 if topic == "09" else 3), (engine, topic, width, "raw superscripts not normalized", exp.count())
-                    expect(exp.first.locator("mjx-container").first).to_be_visible(timeout=20000)
+                    expect(exp.first).to_be_visible(timeout=20000)
+                    assert exp.first.inner_text() == ("g" if topic == "09" else "2x"), (topic, "incorrect exponent content")
                     assert not current.evaluate(r"(e) => /(?:e|a|x)\^\{/.test(e.innerText)"), (
                         engine, topic, width, "visible unrendered superscript syntax",
                     )

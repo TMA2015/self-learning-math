@@ -220,9 +220,10 @@ with sync_playwright() as pw:
                         if width == 820 and engine == "chromium":
                             audit_visible_math(active, f"CĐ{topic} Knowledge {i+1}.{j+1}")
                             if topic == "19" and i == 2 and j in (0, 1):
-                                repaired = active.locator('.arithmatex[data-topic-w3-display-math="exponent"]')
+                                repaired = active.locator('sup[data-topic-rw1-original]')
                                 assert repaired.count() >= 3, ("CĐ19_SIGNED_NEWTON_INLINE_TEX", i, j)
-                                expect(repaired.first.locator("mjx-container")).to_have_count(1, timeout=15000)
+                                expect(repaired.first).to_be_visible(timeout=15000)
+                                assert repaired.first.inner_text() == ("n−k" if j == 0 else "5"), ("CĐ19_SIGNED_NEWTON_EXPONENT", i, j)
                         raw_display = active.evaluate(r"""e => /\[\s*(?:\\vec|\(\\vec|\\sin|\\cos|\\tan|\\frac|\\sqrt|\\lim|\\operatorname)/.test(e.innerText)""")
                         assert not raw_display, (engine, topic, width, i, j, "visible unrendered display TeX", active.evaluate(r"""e => e.innerText.match(/\[.{0,500}?\\(?:vec|sin|frac|sqrt|lim|operatorname)[\s\S]{0,400}/s)?.[0] || e.innerText.slice(0,220)"""))
                         current = subtabs.nth(j)
@@ -315,7 +316,7 @@ with sync_playwright() as pw:
                       .map(n => n.nodeValue.slice(0, 220))""", literal)
                     assert not orphan_literals, (engine, topic, width, subtab_id,
                                                  "OWNER_P1_RAW_DISPLAY_MATH", orphan_literals)
-                    recovered = current_panel.locator('[data-topic-w3-display-math="recovered-display"]')
+                    recovered = current_panel.locator('[data-topic-rw1-display="1"][data-topic-rw1-original^="["]')
                     assert recovered.count() >= 1, (engine, topic, width, subtab_id,
                                                      "DISPLAY_MATH_WRAPPER_MISSING", literal)
                     expect(recovered.first.locator("mjx-container")).to_have_count(1, timeout=12000)
