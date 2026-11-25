@@ -15,7 +15,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Qua A dựng đường có cùng phương B′C′."
+      "B′D′ song song đường chéo nào của đáy? Xét tam giác ABD."
     ],
     "rubric": null,
     "interaction": {
@@ -28,7 +28,7 @@
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu nghĩ hai đường không gặp thì không có góc, chuyển phương qua một điểm; góc giữa hai đường song song bằng 0°. Ôn CĐ16 mục 1.1; luyện THPT-G11-CHVII-B22-P01."
+    "remediation": "Nếu lấy 135° vì chọn hai tia ngược chiều, góc giữa hai đường là góc không tù. Chuyển B′D′ về BD rồi xét tam giác ABD vuông cân. Ôn CĐ16 mục 1.1; luyện THPT-G11-CHVII-B22-P01."
   },
   {
     "item_id": "THPT-TOP16-P02",
@@ -294,7 +294,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Dựng chân đường vuông góc của A lên đáy; dùng tam giác vuông."
+      "Xác định đường vuông góc từ A′ đến đáy rồi xét tam giác A′AB."
     ],
     "rubric": null,
     "interaction": {
