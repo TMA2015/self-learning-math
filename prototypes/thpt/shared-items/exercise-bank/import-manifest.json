@@ -17227,6 +17227,113 @@
         "84 D6 links resolve, all placements resolve, frozen practice/replay order unchanged, no new IDs, source, version, original outcomes, rubric, status, interaction or replay changes. No fresh SGK/SBT PDF verification or new Academic/PED PASS."
       ],
       "next": "CĐ18 next (large scope; do not substitute count for depth), then CĐ19–20; previous remaining CĐ13 G12 ChII and CĐ15 thin outcomes/Written workstream still open."
+    },
+    "formative_scoped_audit_cp62": {
+      "checkpoint": 62,
+      "baseline": "416b8c629a757bcf202a74425ebc8d10c9d5bf69",
+      "scope": "CĐ18, shared G12 ChII B06–08 and ChV B14–17, Written read-only; optional O23 after B17",
+      "files": [
+        {
+          "path": "items/cd18.json",
+          "before": "255bd0ba2cac6a0932562d31de682e04a7cede95",
+          "after": "9672eb0b296e6ceb87653ba140e3f9572e17e23d",
+          "changed": 40
+        },
+        {
+          "path": "items/g12-chii.json",
+          "before": "2cbdc178783a0a6e9161f9d54d9694ebb1c24d02",
+          "after": "fb40323bb911c851e45a7f2022cc1dc0b746480f",
+          "changed": 36
+        },
+        {
+          "path": "items/g12-chv.json",
+          "before": "246a416d183c78a322bcb0850da123a34d5b9496",
+          "after": "0a508a3d450f7bf662b67bc880ae4604bced6b7a",
+          "changed": 72
+        },
+        {
+          "path": "placements/cd18.json",
+          "before": "2ce619c814f48a0725be177f3629b172541a6a88",
+          "after": "6599f83a8217dca8f772457f8eb208f8e9bbb851",
+          "changed": 160
+        }
+      ],
+      "source_evidence": {
+        "cd18_knowledge": "97350084db7e5d979d7f1d4c92c2810bf7116b9f",
+        "cd18_practice": "de3db595b945156d80a8d777a64b190cb86fd338",
+        "cd18_replay": "cd3a3a626fe15e49f7c226caaf5b55b1c5d9d70d",
+        "cd18_written": "d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960",
+        "g12_chii_written": "856a37bd16d2746ffc2e12906de18d1f4338a3b6",
+        "g12_chv_written": "11eb2834cfdb4a24685157f84666c2bb0767970a"
+      },
+      "reviewed": {
+        "topic_formative": 40,
+        "shared_formative": 120,
+        "shared_chii_preserved": 12,
+        "shared_chii_changed": 36,
+        "shared_chv_changed": 72,
+        "written_source": 47,
+        "changed_records": 148,
+        "skill_tags_corrected": 1,
+        "placement_outcomes_filled": 160,
+        "placements_resolve": 219,
+        "d6_targets_resolve": 148,
+        "practice_coverage": {
+          "TOP18-O01": 4,
+          "TOP18-O02": 4,
+          "TOP18-O03": 4,
+          "TOP18-O04": 4,
+          "TOP18-O05": 4,
+          "TOP18-O06": 4,
+          "TOP18-O07": 4,
+          "TOP18-O08": 4,
+          "TOP18-O09": 4,
+          "TOP18-O10": 4,
+          "TOP18-O11": 4,
+          "TOP18-O12": 4,
+          "TOP18-O13": 4,
+          "TOP18-O14": 4,
+          "TOP18-O15": 4,
+          "TOP18-O16": 4,
+          "TOP18-O17": 4,
+          "TOP18-O18": 4,
+          "TOP18-O19": 4,
+          "TOP18-O20": 4,
+          "TOP18-O21": 4,
+          "TOP18-O22": 4,
+          "TOP18-O23": 4,
+          "TOP18-O24": 4,
+          "TOP18-O25": 4,
+          "TOP18-O26": 4,
+          "TOP18-O27": 4,
+          "TOP18-O28": 4,
+          "TOP18-O29": 4,
+          "TOP18-O30": 4,
+          "TOP18-O31": 4,
+          "TOP18-O32": 4,
+          "TOP18-O33": 4,
+          "TOP18-O34": 4,
+          "TOP18-O35": 4,
+          "TOP18-O36": 4,
+          "TOP18-O37": 4,
+          "TOP18-O38": 3,
+          "TOP18-O39": 4,
+          "TOP18-O40": 5
+        },
+        "projection_order": {
+          "practice": 207,
+          "replay": 12,
+          "practice_order_match": true,
+          "replay_order_match": true
+        }
+      },
+      "findings": [
+        "40 topic hints/D6; P01 actual spatial displacement vs path; P06 positive and negative work; P12 parameter with zero coordinate; P13 recover missing vertex; P14 obtuse vector angle without abs; P16 motion valid until landing; P17 dependent directions and nonzero normal; P19 plane via three noncollinear points; P21 all parallel/coincident/orthogonal checks; P22 scale-invariant distance; P28/P29/P30 position cases; P31 vector vs line angle; P32 complementary angle; P34 contained/parallel/perpendicular; P37 degeneracy of sphere; P38 all three regions; P39 diameter; P40 intersection/tangency/disjoint; P23 optional after B17 using nonhorizontal plane, scope unchanged.",
+        "36 remaining ChII shared formative upgraded and 12 CP59 records preserved byte-equivalent at record level; 72 ChV C/P/A specific hint/D6. Nine first-try items outside these placements untouched. B17-C04/P04 explicitly require diameter, B14-P01 nonzero normal, B15-A01/A02 physical domain and units, B15-P05 no intersection requirement for perpendicular directions, B16-A05 distinct applied task, B17-A03 maps O40 (source original O03 retained). B14 C/P/A07 remain optional after B17, not Core B14. 160 shared placements filled: 120 formative+40 Written; all 40 topic outcomes represented. Historical source order preserved.",
+        "47 Written blocks (16+24+7) read, seven topic Written lack library pointer. B15-W05 solution explicitly erroneous 'Cần thêm giao điểm để gọi hai đường thẳng vuông góc hình học' (contradicts B22/CĐ16); B16-W01 stem asks vector angle but rubric/solution use abs for line angle, same numeric result only for given positive dot; B14-W07 'h<R: hình tròn' ambiguous sphere surface vs solid; B14-W03 and several B15/B16 W rubrics ask steps not demonstrated; TOP18-W02 exact core duplicate B14-W03; W06 line-plane intersection prerequisite comes later than O22. B08-W06 speed statement needs monotone straight motion or average speed clarification. W07 radar 3–9 h boundary included if region closed, worked solution distinguishes inside/boundary; no source edits, Written reference-only.",
+        "Zero-vector wording in frozen ChII source explicitly 'không có hướng xác định'; preserve prior reviewed wording pending fresh textbook convention reconciliation with CĐ13. No fresh SGK/SBT PDF or full source parity/PED PASS; no change IDs/source/version/original_outcome_ids/rubric/status/interaction, no auto-grade or replay edit. 148 target links resolve and 219 placements resolve; 207 practice/12 replay order matches source."
+      ],
+      "next": "CĐ19–20; CĐ13 ChII remaining now covered, CĐ15 thin outcomes and Written reconciliation remain open."
     }
   }
 }
