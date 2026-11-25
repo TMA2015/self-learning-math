@@ -1,3 +1,4 @@
+<!-- 25/11 #1109: candidate HOLD; prior signed snapshot remains historical. Do not intake until exact source receipt and handoff. -->
 <!-- TOP06_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
 **CURRENT CĐ06 AUTHORING CONTENT_READY (source/Q18 only, no RELEASE):** one learner R06 blob `edfecb3edd165e87bcb615ec4cbb66833ad52675` (source commit `4d2f9d2f0f9ea41a78639e61f4b3c2600f3257f5`), original 46 G11 and 20 Topic canonical bank files unchanged; one existing Q18 `AUTHOR_SELF_VERIFIED` v3.2.0 receipt `ef1e607675b82fcbf7c7aa6005c0c1005a836d1f`, A1–A7 metadata `103a0f784a45d8cad76395b08753bffd99b580a7`, one V2 `03f015c140942896f0c373f29c28106761f98122`. Targeted Q04/Q08/Q14/PED6 source correction: O16 first-try no longer answers same numerical question as previous Example; uses `h(t)=4+0.8sin(πt/8)`, `T=16 h`, `h(4)=4.8 m`, outside-time t20 excluded. O01 now offers real Bài1/Bài6 error recovery; 16 public selfchecks gain one voluntary actual canonical Practice lookup map. Direct inverse-diff proves original 66 canonical Practice/8 Written rubrics/3 SVG and 16 public selfcheck stems intact; 16/16 actual D6 destinations, 83/83 balanced disclosures, one SGK footer. No independent NotebookLM reviewer PASS newly claimed, no official Readiness, RD1/Final Submit/Mastery, website AP/R or owner deployment authorization. No merge/deploy.
 
@@ -12,7 +13,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: 4d2f9d2f0f9ea41a78639e61f4b3c2600f3257f5
 CURRENT_PR: #891 Draft AUTHORING source-only, no release authorization
 AUTHOR_PR: 891
@@ -44,7 +45,7 @@ SVG3_PATH: prototypes/thpt/visuals/THPT_TOPIC06_TAN_ASYMPTOTES_R01.svg
 SVG3_BLOB: 436820a1d3bf908f1c289385826fa6c7affc853a
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: #1109 A01 CURRENT_SOURCE_UPGRADE_PENDING (Work + X-G.5 + Q18/V2/REGISTER)
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 PRIVATE_RD1_COUNT: 0
 PRIVATE_RD1_SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
