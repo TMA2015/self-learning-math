@@ -146,6 +146,12 @@ Một đường có thể xuyên qua, nằm trọn trong hoặc đi song song v�
 
 **Lời giải:** Vì SB⊂(SAB), ta có M∈(SAB). Đường CM đi qua M. Đỉnh C nằm ngoài (SAB), nên CM không thể nằm trọn trong mặt đó; nó cắt (SAB) tại duy nhất M.
 
+**Ví dụ**
+
+**Đề bài:** Trong tứ diện \(S.ABC\), lấy \(M\) trên \(SA\), \(N\) trên \(SB\) sao cho \(\frac{SM}{SA}=\frac12\), \(\frac{SN}{SB}=\frac13\). Tìm giao điểm của đường thẳng \(MN\) với \((ABC)\).
+
+**Lời giải:** Chọn mặt phụ \((SAB)\), vì nó chứa cả \(M,N\), do đó chứa \(MN\). Hai mặt \((SAB)\) và \((ABC)\) có hai điểm chung \(A,B\), nên giao tuyến là \(AB\). Trong tam giác \(SAB\), hai tỉ số đã cho khác nhau nên \(MN\) không song song \(AB\) (theo định lí Thalès đảo chiều suy luận). Hai đường này cùng nằm trong \((SAB)\), vì vậy cắt nhau tại một điểm \(I\). Kéo dài \(MN\) và \(AB\) trên hình đến khi gặp nhau. Vì \(I\) thuộc \(MN\) và \(AB\subset(ABC)\), \(I\) là giao điểm cần tìm; \(MN\) không nằm trong \((ABC)\) vì \(M\) nằm trong cạnh \(SA\) và ngoài \((ABC)\).
+
 <!-- ITEM_ID: THPT-TOP15-T04; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O04; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
 
@@ -597,13 +603,13 @@ Ta còn có thể phát biểu mạnh hơn phần “giao tuyến song song”. 
 
 **Đề bài:** Cho \((P):z=0\), \((Q):z=4\), \((R):x+y=1\). Xác định giao tuyến của \((R)\) với từng mặt \((P),(Q)\), và chứng minh quan hệ giữa hai giao tuyến.
 
-**Lời giải:** Mặt \((R)\) cắt \((P)\) theo \(g:\{x+y=1,z=0\}\). Nó cũng cắt \((Q)\) theo \(h:\{x+y=1,z=4\}\). Cả hai giao tuyến có vectơ chỉ phương \((1,-1,0)\), ở hai độ cao khác nhau nên song song phân biệt. Bước bắt buộc là chứng minh \((R)\) không song song \((Q)\), chứ không chỉ nhìn hai đường trên hình.
+**Lời giải:** Mặt \((R)\) cắt \((P)\) theo \(g:\{x+y=1,z=0\}\). Nó cũng cắt \((Q)\) theo \(h:\{x+y=1,z=4\}\). Cả hai giao tuyến có vectơ chỉ phương \((1,-1,0)\), ở hai độ cao khác nhau nên song song phân biệt. Ở đây có thể viện dẫn ngay định lí vừa học: vì \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), \((R)\) cũng cắt \((Q)\); không cần chứng minh lại điều đó. Việc tìm hai giao tuyến bằng phương trình là cách kiểm trực tiếp, không suy từ hình vẽ.
 
 **Ví dụ**
 
 **Đề bài:** Cho (P):z=0, (Q):z=2 và (R):x=0. Tìm giao tuyến của (R) với từng mặt và phân loại chúng.
 
-**Lời giải:** Giao tuyến g=(P)∩(R) gồm các điểm (0,t,0). Giao tuyến h=(Q)∩(R) gồm các điểm (0,t,2). Hai đường cùng hướng (0,1,0), cùng nằm trong (R), không gặp nhau nên song song. Giả thiết (R) cắt cả hai mặt là bắt buộc.
+**Lời giải:** Giao tuyến g=(P)∩(R) gồm các điểm (0,t,0). Giao tuyến h=(Q)∩(R) gồm các điểm (0,t,2). Hai đường cùng hướng (0,1,0), cùng nằm trong (R), không gặp nhau nên song song. Nếu đã biết \((P)\parallel(Q)\) và \((R)\) cắt \((P)\), định lí bảo đảm giao tuyến thứ hai tồn tại. Trong ví dụ này ta viết rõ cả hai giao tuyến để kiểm.
 
 <!-- ITEM_ID: THPT-TOP15-T16; ROLE: TOPIC_FIRST_TRY; OUTCOME: TOP15-O16; PUBLIC_FORMATIVE_NO_MASTERY -->
 **Vận dụng**
@@ -777,9 +783,9 @@ Tỉ số được bảo toàn không chỉ khi hai đoạn nằm **trên một 
 
 **Ví dụ**
 
-**Đề bài:** Dưới \(T(x,y,z)=(x-z,y,0)\), lấy \(A(0,0,0),B(2,0,0),C(0,1,3),D(4,1,3)\). Hai đoạn \(AB,CD\) cùng hướng trục \(Ox\), dài lần lượt \(2\) và \(4\). Tính ảnh các đầu mút rồi so tỉ số hai độ dài trước và sau chiếu.
+**Đề bài:** Dưới \(T(x,y,z)=(x-z,y,0)\), lấy \(A(0,0,0)\), \(B(2,0,1)\), \(C(0,1,3)\), \(D(4,1,5)\). Hai đoạn \(AB,CD\) song song. Tính độ dài và tỉ số trước và sau chiếu.
 
-**Lời giải:** Ảnh \(A'(0,0,0),B'(2,0,0),C'(-3,1,0),D'(1,1,0)\) cũng có độ dài \(2\) và \(4\); cả hai tỉ số đều bằng \(1/2\). Trong trường hợp phương đoạn có thành phần theo hướng chiếu, độ dài riêng từng đoạn có thể đổi, nhưng **tỉ số của hai đoạn cùng hướng** vẫn giữ.
+**Lời giải:** \(\overrightarrow{AB}=(2,0,1)\), \(\overrightarrow{CD}=(4,0,2)=2\overrightarrow{AB}\). Do đó \(AB=\sqrt5\), \(CD=2\sqrt5\). Ảnh các đầu mút là \(A'(0,0,0)\), \(B'(1,0,0)\), \(C'(-3,1,0)\), \(D'(-1,1,0)\); suy ra \(A'B'=1\), \(C'D'=2\). Cả hai độ dài đều thay đổi, nhưng \(\frac{AB}{CD}=\frac12=\frac{A'B'}{C'D'}\). Phép chiếu giữ tỉ số của hai đoạn cùng phương không suy biến, không nhất thiết giữ độ dài riêng.
 
 **Ví dụ**
 
