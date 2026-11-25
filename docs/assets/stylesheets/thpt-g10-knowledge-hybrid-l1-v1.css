@@ -113,11 +113,13 @@
   color: var(--md-default-fg-color--light);
 }
 .md-typeset.thpt-g10-knowledge-ap1 .tabbed-block details.question,
-.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block details.tip {
+.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block details.tip,
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] {
   margin: .7rem 0 1rem;
   border-radius: .48rem;
 }
-.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block details summary {
+.md-typeset.thpt-g10-knowledge-ap1 .tabbed-block details summary,
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] summary {
   font-weight: 650;
   cursor: pointer;
 }
@@ -217,7 +219,8 @@
 }
 /* One quiet, accessible disclosure design for formative "Đối chiếu" and
  * mistake recovery; no neon green or legacy tip/quiz icons. */
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question),
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] {
   background: #f8faff;
   border: 1px solid #d9e4f4;
   border-radius: .62rem;
@@ -225,7 +228,8 @@
   color: #243753;
   overflow: hidden;
 }
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary,
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] > summary {
   color: #263e73;
   background: transparent;
   border-radius: .62rem;
@@ -235,7 +239,8 @@
   padding: .7rem .85rem .7rem 2.15rem;
   line-height: 1.45;
 }
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary::before {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary::before,
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] > summary::before {
   -webkit-mask: none;
   mask: none;
   background: none;
@@ -249,13 +254,16 @@
   left: .88rem;
   transform: none;
 }
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question)[open] > summary::before {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question)[open] > summary::before,
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure][open] > summary::before {
   transform: rotate(90deg);
 }
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary::after {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary::after,
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] > summary::after {
   display: none;
 }
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary:focus-visible {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary:focus-visible,
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] > summary:focus-visible {
   outline: 2px solid #6c8adb;
   outline-offset: -2px;
 }
@@ -280,15 +288,18 @@
   color: #f0f4ff;
   background: linear-gradient(90deg,#283b61,#1c273e);
 }
-[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) {
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question),
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] {
   color: #dce6fc;
   background: #202e48;
   border-color: #465978;
 }
-[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary {
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary,
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] > summary {
   color: #e2ebff;
 }
-[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary::before {
+[data-md-color-scheme="slate"] .md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.tip,.question) > summary::before,
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] > summary::before {
   color: #e2ebff;
 }
 @media(max-width:600px) {
@@ -324,19 +335,23 @@
   font-size: inherit;
   line-height: 1.65;
 }
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.question,.tip) {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.question,.tip),
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] {
   font-size: inherit;
 }
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.question,.tip) > :is(p,ul,ol,div) {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.question,.tip) > :is(p,ul,ol,div),
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] > :is(p,ul,ol,div) {
   font-size: inherit;
 }
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.question,.tip) > summary {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.question,.tip) > summary,
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] > summary {
   font-size: 1em;
   line-height: 1.4;
   padding: .45rem .8rem .45rem 1.9rem;
   min-height: 2rem;
 }
-.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.question,.tip) > summary::before {
+.md-typeset.thpt-g10-knowledge-ap1:is(.thpt-g10-first-six-golden,.thpt-g10-chiv-golden) .tabbed-block details:is(.question,.tip) > summary::before,
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout details[data-topic-sgk-disclosure] > summary::before {
   top: .55rem;
   left: .76rem;
 }

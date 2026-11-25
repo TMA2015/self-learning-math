@@ -44,27 +44,27 @@ body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-g
  * Exact values from thpt-g10-knowledge-hybrid-l1-v1.css: native SGK
  * blue-neutral details.question, not Material's neon-green question default.
  * Source/render is independent of Material tabbed-block visibility state. */
-body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question {
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]) {
   margin:.7rem 0 1rem;
   background:#f8faff;border:1px solid #d9e4f4;border-radius:.62rem;
   box-shadow:none;color:#243753;overflow:hidden;
 }
-body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary {
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]) > summary {
   list-style:none;position:relative;
   color:#263e73;background:transparent;border-radius:.62rem;border:none;
   font-weight:700;font-size:.88rem;padding:.7rem .85rem .7rem 2.15rem;line-height:1.45;
 }
-body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::before {
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]) > summary::before {
   -webkit-mask:none;mask:none;background:none;content:"▶";display:block;
   color:#263e73;width:.85rem;height:auto;font-size:.72rem;
   top:.76rem;left:.88rem;transform:none;
 }
-body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question[open] > summary::before {transform:rotate(90deg)}
-body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::after {display:none}
-body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary:focus-visible {outline:2px solid #6c8adb;outline-offset:-2px}
-body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question {color:#dce6fc;background:#202e48;border-color:#465978}
-body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary,
-body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question > summary::before {color:#e2ebff}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure])[open] > summary::before {transform:rotate(90deg)}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]) > summary::after {display:none}
+body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]) > summary:focus-visible {outline:2px solid #6c8adb;outline-offset:-2px}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]) {color:#dce6fc;background:#202e48;border-color:#465978}
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]) > summary,
+body[data-md-color-scheme="slate"].thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout .thpt-r4-knowledge-content-panel details.question:not([data-topic-sgk-disclosure]) > summary::before {color:#e2ebff}
 
 /* CĐ01 FOUC guard — apply only during the initial Golden hydration.
  * Inline bootstrap before the public source sets pending; successful runtime

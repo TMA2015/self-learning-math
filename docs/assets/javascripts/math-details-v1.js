@@ -306,10 +306,43 @@
   }).catch(err=>console.error("TOPIC_RW1_MATH_HOLD",err));
   return chain;
  }
+ // OWNER: use the same two native disclosures as the SGK lesson.
+ // Move only the existing mistake-recovery paragraph(s). Explicit labels
+ // are preferred; the five legacy topic cases below have source-reviewed
+ // unlabelled recovery boundaries. No answer text or TeX is rewritten.
+ function splitSGKDisclosure(details){
+  if(details.dataset.topicSgkDisclosure)return;
+  const summary=details.querySelector(":scope > summary");
+  if(summary?.textContent.trim()!=="Đối chiếu")return;
+  details.dataset.topicSgkDisclosure="answer";
+  const blocks=[...details.children].filter(el=>el!==summary);
+  const heading=blocks.find(el=>el.matches("p,h4,strong")&&el.textContent.trim()==="Kiểm lỗi");
+  let start=heading?.nextElementSibling;
+  if(!heading){
+   const topic=location.pathname.match(/\/chuyen-de\/cd(\d\d)\//)?.[1];
+   const last=blocks.at(-1);
+   // CĐ03–06: the reviewed unlabelled second paragraph is the
+   // remediation instruction, not an additional step of the answer.
+   if(["03","04","05","06"].includes(topic)&&blocks.length===2&&blocks.every(el=>el.matches("p"))&&
+      /^(Nếu|Ghi|Vẽ|Không)\b/u.test(last.textContent.trim())&&/làm lại Bài/i.test(last.textContent)&&/Luyện tập/i.test(last.textContent))start=last;
+   // CĐ17 2.4 includes a second, explicitly labelled recovery paragraph.
+   if(topic==="17"&&last?.querySelector(":scope > strong")?.textContent.trim()==="Nếu làm sai:")start=last;
+  }
+  if(!start)return;
+  const tip=make("details"),label=make("summary","Kiểm lỗi");
+  tip.className="tip";tip.dataset.topicSgkDisclosure="mistake";
+  tip.dataset.topicRw1Managed="1";
+  tip.append(label);
+  while(start){const next=start.nextSibling;tip.append(start);start=next}
+  if(heading)heading.remove();
+  details.after(tip);
+  tip.addEventListener("toggle",()=>{if(tip.open)typeset(tip)});
+ }
  function prepare(root){
   if(!root)return;
   root.querySelectorAll("details").forEach(disclosure);
   normalize(root);
+  root.querySelectorAll("details").forEach(splitSGKDisclosure);
   for(const el of root.querySelectorAll(".arithmatex"))if(!el.dataset.topicRw1Original&&!el.querySelector("mjx-container"))el.dataset.topicRw1Original=el.textContent;
  }
  const shared=Object.freeze({prepare,normalize,typeset,disclosure});
