@@ -11,7 +11,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Cộng tần số các nhóm."
     ],
     "rubric": null,
     "interaction": {
@@ -27,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Cỡ mẫu là số quan sát, không phải số nhóm. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P05."
   },
   {
     "item_id": "THPT-G11-B08-C02",
@@ -41,7 +42,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Xét đầu trái đóng, đầu phải mở."
     ],
     "rubric": null,
     "interaction": {
@@ -57,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "10 thuộc nhóm bắt đầu tại 10, không thuộc nhóm kết thúc ở 10. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
   },
   {
     "item_id": "THPT-G11-B08-C03",
@@ -71,7 +73,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Lấy cận phải trừ cận trái."
     ],
     "rubric": null,
     "interaction": {
@@ -87,7 +89,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Độ rộng khác số quan sát; phải dương. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P02."
   },
   {
     "item_id": "THPT-G11-B08-C04",
@@ -101,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Đọc tần số thứ ba rồi cộng bốn tần số."
     ],
     "rubric": null,
     "interaction": {
@@ -117,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Đừng lấy số nhóm làm cỡ mẫu. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P05."
   },
   {
     "item_id": "THPT-G11-B08-C05",
@@ -131,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Một bảng nhóm chỉ giữ khoảng và số lượng."
     ],
     "rubric": null,
     "interaction": {
@@ -147,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không khôi phục được dữ liệu gốc nếu thiếu thông tin bên trong nhóm. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P07."
   },
   {
     "item_id": "THPT-G11-B08-P01",
@@ -161,7 +166,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Xếp từng số vào đúng khoảng nửa kín."
     ],
     "rubric": null,
     "interaction": {
@@ -177,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Số 10,20 thuộc nhóm bên phải; kiểm tổng 6. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P03."
   },
   {
     "item_id": "THPT-G11-B08-P02",
@@ -191,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Tính từng độ rộng và kiểm các biên chung."
     ],
     "rubric": null,
     "interaction": {
@@ -207,7 +213,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai nhóm kề không chồng nhau vì một đầu mở, một đầu đóng. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C02."
   },
   {
     "item_id": "THPT-G11-B08-P03",
@@ -221,7 +228,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Đếm theo ba khoảng, chú ý số 4 và 7."
     ],
     "rubric": null,
     "interaction": {
@@ -237,7 +244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai số ở biên trái thuộc nhóm mới; tổng phải bằng 10. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
   },
   {
     "item_id": "THPT-G11-B08-P04",
@@ -251,7 +259,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Chia tần số nhóm thứ hai cho tổng tần số."
     ],
     "rubric": null,
     "interaction": {
@@ -267,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tỉ lệ 9/20, không phải 9/3. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C04."
   },
   {
     "item_id": "THPT-G11-B08-P05",
@@ -281,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Lấy 20 trừ tổng ba tần số đã biết."
     ],
     "rubric": null,
     "interaction": {
@@ -297,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Kiểm tổng sau khi điền bằng 20. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-C01."
   },
   {
     "item_id": "THPT-G11-B08-P06",
@@ -311,7 +321,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Đếm số dưới 3 và từ 3 đến dưới 6 trong mỗi mẫu."
     ],
     "rubric": null,
     "interaction": {
@@ -327,7 +337,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Cùng các khoảng không đảm bảo cùng bảng tần số. Ôn CĐ22 mục 2.1; luyện THPT-G11-B08-P01."
   },
   {
     "item_id": "THPT-G11-B08-P07",
@@ -341,7 +352,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Trung điểm chỉ là đại diện, không phải giá trị thô."
     ],
     "rubric": null,
     "interaction": {
@@ -357,21 +368,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không gán tất cả người trong khoảng chiều cao bằng 157,5 cm. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06."
   },
   {
     "item_id": "THPT-G11-B08-P08",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Giải thích vì sao nhóm “dưới 15 tuổi” là nhóm ghép, nhưng không có trung điểm hữu hạn khi thiếu đầu mút trái.",
-    "answer_key": "Đó là nhóm ghép có tần số; không đủ đầu mút hữu hạn để tính trung điểm theo công thức.",
-    "worked_solution": "Ghép nhóm không nhất thiết khoảng đóng cả hai phía. Các phép tính dựa trên trung điểm cần có nhóm được lượng hóa thích hợp.",
+    "stem": "Một bảng khảo sát thu nhập có nhóm “dưới 15 triệu đồng”, không quy định cận dưới của thu nhập trong mô hình. Có đủ dữ kiện tính trung điểm nhóm theo công thức (a+b)/2 không?",
+    "answer_key": "Không, thiếu cận dưới hữu hạn được quy định.",
+    "worked_solution": "Công thức trung điểm cần hai cận hữu hạn a,b. Nhóm chỉ cho cận trên 15 triệu đồng; không tự đặt cận dưới bằng 0 nếu mô hình chưa nêu (thu nhập ròng có thể âm). Có thể đếm tần số nhóm, nhưng chưa đủ dữ kiện tính giá trị đại diện theo trung điểm.",
     "skill_ids": [
       "G11-B08-GROUPED-DEFINITION"
     ],
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 8 trước khi mở đối chiếu lời giải."
+      "Công thức trung điểm cần hai cận hữu hạn đã biết."
     ],
     "rubric": null,
     "interaction": {
@@ -387,7 +399,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không tự đặt cận còn thiếu nếu đề chưa quy định. Ôn CĐ22 mục 2.1; luyện THPT-G11-B09-C01."
   },
   {
     "item_id": "THPT-G11-B09-C01",
@@ -401,7 +414,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Lấy trung bình hai cận."
     ],
     "rubric": null,
     "interaction": {
@@ -417,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Trung điểm không nhất thiết xuất hiện trong mẫu gốc. Ôn CĐ22 mục 2.2; luyện THPT-G11-TOPSTAT-ADD06."
   },
   {
     "item_id": "THPT-G11-B09-C02",
@@ -431,7 +445,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Nhân mỗi trung điểm với tần số rồi chia tổng tần số."
     ],
     "rubric": null,
     "interaction": {
@@ -447,7 +461,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy trung bình đơn giản của 5 và 15. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P01."
   },
   {
     "item_id": "THPT-G11-B09-C03",
@@ -461,7 +476,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Cộng dồn từ nhóm đầu đến nhóm đang xét."
     ],
     "rubric": null,
     "interaction": {
@@ -477,12 +492,13 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tích lũy cuối phải bằng cỡ mẫu 14. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P06."
   },
   {
     "item_id": "THPT-G11-B09-C04",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
-    "stem": "Với A: các nhóm [0;10),[10;20),[20;30),[30;40), tần số [4,8,6,2], trung vị nằm trong nhóm nào?",
+    "stem": "Với A: các nhóm [0;10),[10;20),[20;30),[30;40), tần số [4,8,6,2], nhóm dùng để nội suy trung vị là nhóm nào?",
     "answer_key": "[10;20).",
     "worked_solution": "n=20, n/2=10; tích lũy 4,12,18,20, nên nhóm 2 chứa vị trí 10.",
     "skill_ids": [
@@ -491,7 +507,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Tìm n/2 rồi xác định nhóm từ tần số tích lũy."
     ],
     "rubric": null,
     "interaction": {
@@ -507,7 +523,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không chọn nhóm có tần số lớn nhất để tìm trung vị. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02."
   },
   {
     "item_id": "THPT-G11-B09-C05",
@@ -521,7 +538,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Kiểm độ rộng nhóm trước khi dùng công thức mốt."
     ],
     "rubric": null,
     "interaction": {
@@ -537,7 +554,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Công thức hiệu tần số trong nguồn áp dụng nhóm cùng độ rộng. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-P04."
   },
   {
     "item_id": "THPT-G11-B09-P01",
@@ -551,7 +569,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Tính bốn trung điểm và tổng có trọng số."
     ],
     "rubric": null,
     "interaction": {
@@ -567,7 +585,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chia n=20, không chia 4 nhóm. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P05."
   },
   {
     "item_id": "THPT-G11-B09-P02",
@@ -581,7 +600,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Dùng n/2=10, F trước=4, f=8, h=10."
     ],
     "rubric": null,
     "interaction": {
@@ -597,7 +616,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy trung điểm 15 làm trung vị khi vị trí nội suy khác. Ôn CĐ22 mục 2.3; luyện THPT-G11-TOPSTAT-ADD07."
   },
   {
     "item_id": "THPT-G11-B09-P03",
@@ -611,7 +631,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Định vị n/4 và 3n/4 trước khi nội suy."
     ],
     "rubric": null,
     "interaction": {
@@ -627,21 +647,22 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không dùng cùng nhóm cho Q1 và Q3 nếu tích lũy không chứa cả hai. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08."
   },
   {
     "item_id": "THPT-G11-B09-P04",
     "content_version": "THPT-G11-CHIII-B08-B09-R03",
     "stem": "Mẫu A: [0;10)→4 | [10;20)→8 | [20;30)→6 | [30;40)→2. Tìm mốt ước lượng.",
     "answer_key": "50/3≈16,67.",
-    "worked_solution": "Nhóm mốt [10;20) m=8, trước 4, sau 6. Mo=10+[(8-4)/((8-4)+(8-6))]·10=50/3.",
+    "worked_solution": "Các nhóm cùng độ rộng 10. Nhóm mốt [10;20) có f_m=8, hai nhóm kề có f_-=4, f_+=6. Mo≈10+[(8−4)/((8−4)+(8−6))]·10=50/3≈16,67. Đây là ước lượng từ bảng ghép nhóm, không khẳng định mốt dữ liệu thô.",
     "skill_ids": [
       "G11-B09-GROUPED-MODE"
     ],
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Nhóm mốt có f=8, hai nhóm kề 4 và 6."
     ],
     "rubric": null,
     "interaction": {
@@ -657,7 +678,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Dùng hiệu tần số với nhóm kề, không lấy trung điểm mặc định. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05."
   },
   {
     "item_id": "THPT-G11-B09-P05",
@@ -671,7 +693,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Dùng trung điểm 12,5;17,5;22,5;27,5."
     ],
     "rubric": null,
     "interaction": {
@@ -687,7 +709,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tổng trọng số chia 20, không chia 4. Ôn CĐ22 mục 2.2; luyện THPT-G11-B09-P01."
   },
   {
     "item_id": "THPT-G11-B09-P06",
@@ -701,7 +724,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Cộng dồn 3,6,9,2; tìm vị trí 3n/4."
     ],
     "rubric": null,
     "interaction": {
@@ -717,7 +740,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Vị trí Q3 là 15, không phải 3/4 số nhóm. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P08."
   },
   {
     "item_id": "THPT-G11-B09-P07",
@@ -731,7 +755,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Nhóm thứ ba chứa vị trí n/2=10; F trước=9."
     ],
     "rubric": null,
     "interaction": {
@@ -747,7 +771,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Dùng độ rộng 5 và tần số 9; không lấy trung điểm 22,5. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P02."
   },
   {
     "item_id": "THPT-G11-B09-P08",
@@ -761,7 +786,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Tính tích lũy và xét đúng mốc biên Q3."
     ],
     "rubric": null,
     "interaction": {
@@ -777,7 +802,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Khi vị trí đúng tích lũy và hai lớp liền nhau, nội suy cho biên chung. Ôn CĐ22 mục 2.3; luyện THPT-G11-B09-P03."
   },
   {
     "item_id": "THPT-G11-B09-P09",
@@ -791,7 +817,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "So các tần số nhóm; tất cả cùng bằng 7."
     ],
     "rubric": null,
     "interaction": {
@@ -807,7 +833,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Theo quy ước nguồn, mẫu này không có mốt; không chia 0 trong công thức. Ôn CĐ22 mục 2.4; luyện THPT-G11-B09-C05."
   },
   {
     "item_id": "THPT-G11-B09-P10",
@@ -821,7 +848,7 @@
     "problem_type_id": null,
     "difficulty": "APPLICATION",
     "hints": [
-      "Đọc lại kiến thức và ví dụ của Bài 9 trước khi mở đối chiếu lời giải."
+      "Dựng hai mẫu thô khác nhau trong cùng khoảng."
     ],
     "rubric": null,
     "interaction": {
@@ -837,7 +864,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Trung bình ghép nhóm giống nhau không kéo theo trung bình thô giống nhau. Ôn CĐ22 mục 2.4; luyện THPT-G11-TOPSTAT-ADD06."
   },
   {
     "item_id": "THPT-G11-B09-KFT01",
