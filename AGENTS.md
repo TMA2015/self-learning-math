@@ -51,6 +51,8 @@ Chủ dự án nghiệm thu trực tiếp [HTML CĐ01](https://github.com/TMA201
 
 **Khi nâng cấp B13 trở đi:** chỉ một bài đang xử lý, một canonical có hiệu lực, một chuẩn Q01–Q18, một Issue điều hành #795. Lỗi mới ghi **bài/outcome/item + Qxx + nguồn/render SHA + cách sửa/test** và áp dụng `DELTA_A/B/C/D` đúng phạm vi; giữ PASS snapshot đã khóa. Không mở lại #763/#807 hoặc tạo chuẩn/QA mới chỉ vì lỗi cụ thể. Nếu cần thay **tiêu chí chuẩn gốc**, trình `STANDARD_CHANGE_REQUEST` có phiên bản và owner duyệt; lỗi giao diện/metadata chỉ sửa phần bị ảnh hưởng.
 
+**Quy cách toán thống nhất — owner 25/11/2026:** trước AUTHORING/RELEASE phần học liệu THPT mới hoặc đang nâng cấp, đọc mục **X-G.5** của [chuẩn gốc Q01–Q18](prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md). AUTHORING chuẩn hóa notation ngay trong nguồn được giao; RELEASE tái sử dụng renderer tương thích cũ và QA công thức đúng scope. Giữ writer-first, không checklist/receipt/NotebookLM riêng, không mở lại PASS lịch sử. Không cấp quyền sửa ngoài scope hoặc merge/deploy.
+
 **Nguồn quy phạm duy nhất:** [SLM-THPT-QUALITY-ONE v3.2.0](prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md). Phần dưới là lịch sử/quy định còn tương thích; chỗ nào nói chuẩn v3.0.1 đang chờ merge, #763/#807 đang HOLD, hoặc cấm AI Tutor trên Practice thì quyết định hiện hành này và chuẩn v3.2.0 được ưu tiên.
 
 ---
