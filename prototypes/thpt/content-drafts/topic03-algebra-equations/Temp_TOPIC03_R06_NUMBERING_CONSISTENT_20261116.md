@@ -270,7 +270,7 @@ Giải \(\sqrt{x^2+5}=\sqrt{4x+2}\).
 
 Miền \(x\ge-\frac12\). Bình phương được \(x^2+5=4x+2\Rightarrow (x-1)(x-3)=0\), nên \(x=1\) hoặc \(x=3\); cả hai hợp miền, thử được \(\sqrt6\) và \(\sqrt{14}\) tương ứng ở mỗi vế.
 
-Nếu quên một miền căn, thay ứng viên \(-4\) trong ví dụ trên vào \(x+3\) để thấy biểu thức dưới căn âm; làm lại Bài 21, Bài 14 và Bài 18 trong phần Luyện tập.
+Nếu quên một miền căn, thay ứng viên \(-4\) trong ví dụ sát hình trục số vào \(x+3\) để thấy biểu thức dưới căn âm; làm lại Bài 21, Bài 14 và Bài 18 trong phần Luyện tập.
 
 </details>
 
