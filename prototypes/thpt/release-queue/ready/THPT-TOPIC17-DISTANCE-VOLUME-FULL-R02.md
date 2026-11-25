@@ -1,3 +1,6 @@
+<!-- WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 candidate learner blob `c73a4c3ca77669c4e83889ddea497b23e698c9d2`, source commit `5d452e323bf657b8c5e74735b54968fbb8bdfa18`. Earlier signed source/receipt pointers below remain historical for the previous snapshot only. Affected Q18/V2, S1 and X-G.5 verification/re-lock pending; not authorized for release.
+
 <!-- OWNER_APPROVED_SHARED_G11_B22_B27_LABEL_EQUIVALENCE_CĐ17_READY_20261121 -->
 **CURRENT SOURCE_OWNER_PARITY:** Existing one CĐ17 learner `0ef0ad696e97d2549f29c5a22ba675970572a089`, original shared G11 SGK ChVII B22–27 one bank `5646241f4bb72f12419aaf585ee1fbea6f4185d0` matched EXACT identical blob in CĐ16 branch. Corrected all **18** original B26–B27 student `Đáp án sau Submit luyện tập` headings to `Đáp án`, matching 51/51 source-owner bank and 33 CĐ16 projection. All original 37 Practice mathematical stems, numeric/text answer values, worked solutions, 7 Written rubrics, 8 public same-ID selfchecks, 2 diagrams, Q16/Final Submit/Mastery unchanged; no duplicate SGK bank or new item version. Current Q18 `5f6fb06ac8751e59d08d22ba78ebeee829c28a55`, A1 `041ba48f0302b6b121fa2017f7ab6bc27d60443e`, V2 `ae9c4caec79325bd35038ac7f9a3411bdf3cbf2f`; `DELTA_B_SOURCE_EQUIVALENT_EDITORIAL` author-self check only, not independent whole Topic review or website RELEASE. Prior bank `afc8ec039213b87b4930f2d34d48c28d1fc6277f` immutable history.
 ---
@@ -14,7 +17,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 CONTENT_REVISION: R03_MASTER974_12D6_SELF_CHECK_20261121
 NOTEBOOKLM_REREVIEW: NOT_REQUIRED_WITH_REASON
 SOURCE_COMMIT: 648c048d96fff2ae82489c4878fb43306e4011cf
@@ -39,7 +42,7 @@ ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 P0: 0
 P1: 0
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
