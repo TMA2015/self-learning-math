@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""#1055 R-W1 Knowledge only. Existing canonical source and assessment stay locked."""
+"""#1055 X-G.5: R-W1 regression and R-W2 Knowledge candidate. Canonical sources stay locked."""
 from __future__ import annotations
 import functools
 import http.server
@@ -26,7 +26,34 @@ FILES={
     ".github/workflows/deploy.yml",
     ".github/workflows/thpt-deploy-scope-safety-qa.yml",
 }
-SIZES={"01":11,"02":16,"03":12,"04":18,"05":17,"06":16,"07":18,"08":18}
+RW1_SIZES={"01":11,"02":16,"03":12,"04":18,"05":17,"06":16,"07":18,"08":18}
+RW2_SIZES={"09":32,"10":36,"11":22,"12":12,"13":16,"14":23,"15":22,"16":21}
+RW2="--rw2" in sys.argv
+SIZES=RW2_SIZES if RW2 else RW1_SIZES
+WAVE="R-W2" if RW2 else "R-W1"
+CURRENT_BASE="ad3545985c7a1e369799e66fa770678860827be4"
+CURRENT_FILES={
+    "docs/assets/javascripts/math-details-v1.js",
+    "docs/assets/javascripts/thpt-topic-w2-golden-v1.js",
+    "docs/assets/javascripts/thpt-topic-w3-golden-v1.js",
+    "docs/assets/javascripts/thpt-topic-w4-golden-v1.js",
+    "scripts/test-thpt-topic-rw1-math-browser.py",
+    ".github/workflows/thpt-topic-rw1-math-qa.yml",
+}
+def current_scope():
+    changed=set(subprocess.check_output(["git","diff","--no-renames","--name-only",CURRENT_BASE,"HEAD"],cwd=ROOT,text=True).splitlines())
+    assert changed==CURRENT_FILES,("SHARED_MATH_SCOPE_HOLD",sorted(changed^CURRENT_FILES))
+    path="docs/assets/javascripts/math-details-v1.js"
+    old=subprocess.check_output(["git","show",CURRENT_BASE+":"+path],cwd=ROOT,text=True)
+    new=(ROOT/path).read_text(encoding="utf-8")
+    assert old.split("/* OWNER #1055 R-W1",1)[0]==new.split("/* OWNER #1055, X-G.5",1)[0], "SGK/THCS shared code changed"
+    for f in CURRENT_FILES:
+        if f.endswith(".js"):
+            subprocess.run(["node","--check",f],cwd=ROOT,check=True)
+    print("PASS exact six paths, no source/assessment/receipt/SVG changes, legacy SGK/THCS helper unchanged",flush=True)
+if "--shared-candidate-scope" in sys.argv:
+    current_scope()
+    sys.exit(0)
 
 def scope():
     changed=set(subprocess.check_output(["git","diff","--no-renames","--name-only",BASE_SHA,"HEAD"],cwd=ROOT,text=True).splitlines())
@@ -84,6 +111,29 @@ SOURCE=r"""async () => {
  }
  return result;
 }"""
+
+def markdown_inventory(topic):
+    """Independent source inventory, not derived from compiled HTML.
+    Strip only source comments/fenced examples and Markdown quote prefixes.
+    Retain full TeX, including braces, punctuation and explicit display mode.
+    A mismatch is actionable; it is never waived by counting HTML wrappers."""
+    path=ROOT/"docs"/"thpt-preview"/"chuyen-de"/("cd"+topic)/"kien-thuc.md"
+    text=path.read_text(encoding="utf-8")
+    text=re.sub(r"<!--[\s\S]*?-->","",text)
+    text=re.sub(r"(?ms)^\s*[\x60~]{3,}[^\n]*\n.*?^\s*[\x60~]{3,}\s*$","",text)
+    text=re.sub(r"(?m)^[ \t]*(?:>[ \t]*)+","",text)
+    heads=list(re.finditer(r"(?m)^#{2,3} (\d+\.\d+\.|\d+\.)[^\n]*",text))
+    result={}
+    pattern=re.compile(r"\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]")
+    for i,head in enumerate(heads):
+        if not head.group(1).count(".")==2:
+            continue
+        key=head.group(1).rstrip(".")
+        block=text[head.start():heads[i+1].start() if i+1<len(heads) else len(text)]
+        result[key]=[re.sub(r"\s+","",m.group(1) if m.group(1) is not None else m.group(2)) for m in pattern.finditer(block)]
+    assert len(result)==SIZES[topic],(topic,"Markdown outcome inventory",len(result),SIZES[topic])
+    return result
+
 AUDIT=r"""panel => {
  const issues=[], visible=el=>!el.closest("[hidden],details:not([open])")&&el.getClientRects().length;
  const walker=document.createTreeWalker(panel,NodeFilter.SHOW_TEXT);
@@ -122,6 +172,11 @@ with sync_playwright() as pw:
                 page.wait_for_function("()=>!!window.SLMTopicRW1Math && !!window.MathJax?.startup?.document",timeout=30000)
                 page.evaluate("()=>MathJax.startup.promise")
                 inventory=page.evaluate(SOURCE)
+                signed=markdown_inventory(topic)
+                assert set(inventory)==set(signed),(topic,"source/HTML outcome mismatch",set(inventory)^set(signed))
+                for key,values in signed.items():
+                    source_math=Counter(values); html_math=Counter(inventory[key])
+                    assert source_math==html_math,(topic,key,"Markdown -> compiled HTML formula mismatch",list((source_math-html_math).items())[:10],list((html_math-source_math).items())[:10])
                 assert len(inventory)==outcomes,(topic,"source outcome inventory",len(inventory),outcomes)
                 expect(page.locator(SUB)).to_have_count(outcomes)
                 assert page.locator("[data-thpt-readiness],[data-mastery-credit]").count()==0
@@ -149,7 +204,7 @@ with sync_playwright() as pw:
                         # Real runtime only; do not call typeset manually in QA.
                         page.wait_for_function("""()=>{const p=document.querySelector('.thpt-r4-knowledge-content-panel:not([hidden])');return !!p&&[...document.querySelectorAll('.thpt-r4-knowledge-content-panel .arithmatex')].filter(x=>!x.closest('[hidden],details:not([open])')).every(x=>x.querySelectorAll('mjx-container').length===1)}""",timeout=30000)
                         first=panel.evaluate(AUDIT)
-                        expected=Counter(inventory[key]);actual=Counter(first["math"])
+                        expected=Counter(signed[key]);actual=Counter(first["math"])
                         assert expected==actual,(engine,topic,width,key,"formula parity",list((expected-actual).items())[:8],list((actual-expected).items())[:8])
                         assert not first["issues"] and first["errors"]==first["missing"]==first["loose"]==0,(engine,topic,width,key,first)
                         for d in disclosures.all():
@@ -170,9 +225,9 @@ with sync_playwright() as pw:
                         formula_cases+=sum(expected.values())
                 assert seen==set(inventory),(topic,seen,set(inventory))
                 assert not errors,(engine,topic,width,errors)
-                print(f"PASS RW1 {engine} CĐ{topic} @{width}: {len(seen)} outcomes, all math/source parity, 2 reopen cycles, tab labels",flush=True)
+                print(f"PASS {WAVE} {engine} CĐ{topic} @{width}: {len(seen)} outcomes, Markdown/HTML/MathJax parity, 2 reopen cycles, tab labels",flush=True)
                 page.close()
         browser.close()
-assert cases==126*6,(cases,126*6)
-print(f"PASS RW1 all {cases} outcome/viewports; {formula_cases} explicit source formula/viewports",flush=True)
+assert cases==sum(SIZES.values())*6,(cases,sum(SIZES.values())*6)
+print(f"PASS {WAVE} all {cases} outcome/viewports; {formula_cases} explicit source formula/viewports",flush=True)
 server.shutdown()
