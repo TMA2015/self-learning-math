@@ -176,13 +176,13 @@ Vì sao hai cách đó hợp lý? Hãy tưởng tượng tịnh tiến đường
 
 **Vận dụng**
 
-Trong lập phương cạnh 5, khoảng cách giữa AB và DD′ là bao nhiêu?
+Trong hình lập phương ABCD.A′B′C′D′ cạnh 5, hãy xác định đoạn vuông góc chung và khoảng cách giữa hai đường thẳng AB và CC′.
 
 <!-- ITEM_ID: THPT-TOP17-T05; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O05 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-5, bằng AD là đoạn vuông góc chung; AB và DD′ chéo nhau.
+BC là đoạn vuông góc chung: B thuộc AB, C thuộc CC′; BC vuông góc AB trong đáy hình vuông và vuông góc CC′ vì CC′ vuông góc mặt phẳng đáy. Hai đường AB và CC′ chéo nhau, nên khoảng cách bằng BC = 5.
 
 **Kiểm lỗi**
 
@@ -322,13 +322,13 @@ Nếu tính thể tích chóp bằng công thức lăng trụ, đọc **Kiến t
 
 **Vận dụng**
 
-Hộp có kích thước 2,3,4 cm, thể tích?
+Hộp chữ nhật có ba kích thước 2 cm, 5 cm và 0,3 dm. Đổi về cùng đơn vị rồi tính thể tích.
 
 <!-- ITEM_ID: THPT-TOP17-T09; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O09 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-24 cm³.
+0,3 dm = 3 cm, nên thể tích bằng 2 × 5 × 3 = 30 cm³.
 
 **Kiểm lỗi**
 
@@ -452,13 +452,13 @@ Nếu quên hệ số 1/2 cho đáy tam giác vuông hoặc đổi cm³ sang lí
 
 **Vận dụng**
 
-Chóp đều đáy vuông cạnh 6 và đường cao mặt bên 5. Chiều cao khối?
+Chóp đều đáy vuông cạnh 6 và đường cao mặt bên 5. Tính chiều cao và thể tích của khối chóp.
 
 <!-- ITEM_ID: THPT-TOP17-T12; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP17-O12 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-4, từ tam giác vuông nối đỉnh, tâm đáy, trung điểm cạnh: 5²−3²=4².
+Chiều cao là 4, từ tam giác vuông nối đỉnh, tâm đáy, trung điểm cạnh: 5²−3²=4². Diện tích đáy bằng 36, nên thể tích bằng (1/3) × 36 × 4 = 48 đơn vị khối.
 
 **Kiểm lỗi**
 
