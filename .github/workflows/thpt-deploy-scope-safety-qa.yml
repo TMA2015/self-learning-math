@@ -165,7 +165,7 @@ jobs:
           node scripts/test-thpt-handoff-gate-v2.cjs --self-test
           node scripts/test-thpt-handoff-gate-v2.cjs
           git diff --no-renames --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/safety-pr-paths.txt"
-          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/safety-pr-paths.txt" > "$RUNNER_TEMP/safety-pr-impact.txt"
+          env -u GITHUB_OUTPUT node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/safety-pr-paths.txt" > "$RUNNER_TEMP/safety-pr-impact.txt"
           if grep -Fxq 'reason=OWNER_1110_DEPLOY_RECOVERY_EXACT' "$RUNNER_TEMP/safety-pr-impact.txt"; then
             node scripts/test-thpt-release-impact.cjs --prove-shared-recovery
           fi
