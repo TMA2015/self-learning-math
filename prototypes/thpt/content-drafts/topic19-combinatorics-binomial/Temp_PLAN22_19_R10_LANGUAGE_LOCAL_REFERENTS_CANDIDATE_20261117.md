@@ -116,7 +116,7 @@ Vẽ ba ô hàng trăm, chục, đơn vị; chọn thứ tự theo ô có điề
 
 **Đề bài:** Một mã gồm hai ký tự đầu lấy từ \(\{A,B,C,D\}\), được phép lặp, và một chữ số cuối lấy từ 0 đến 9. Có bao nhiêu mã khác nhau? Mã có được kết thúc bằng 0 không?
 
-**Lời giải:** Mỗi ký tự trong hai vị trí đầu có 4 lựa chọn; chữ số cuối có 10 lựa chọn, **kể cả 0**. Theo quy tắc nhân có \(4\cdot4\cdot10=160\) mã. Mã có thể kết thúc bằng 0 vì đề quy định **mã**, không phải số tự nhiên có ba chữ số; giới hạn “không được bắt đầu bằng 0” của bài lập số không được bê sang mô hình này.
+**Lời giải:** Mỗi ký tự trong hai vị trí đầu có 4 lựa chọn; chữ số cuối có 10 lựa chọn, **kể cả 0**. Theo quy tắc nhân có \(4\cdot4\cdot10=160\) mã. Mã có thể kết thúc bằng 0 vì đề cho phép mọi chữ số từ 0 đến 9 ở vị trí cuối. Số tự nhiên có ba chữ số cũng có thể tận cùng bằng 0 (ví dụ 120); điểm khác biệt là số có ba chữ số không được bắt đầu bằng 0, còn mã có thể bắt đầu bằng 0 nếu quy định của mã cho phép.
 
 **Ví dụ**
 
@@ -399,7 +399,7 @@ Các số `C(n,k)` trên máy không phải một loại hệ số bí ẩn: ch�
 
 Khi khai triển \((a+b)^4\), ta nhân bốn thừa số \((a+b)\). Mỗi lần tạo một hạng tử, ta chọn \(a\) hoặc \(b\) từ từng thừa số. Vì thế, hệ số của một hạng tử được xác định bằng số cách chọn các vị trí lấy \(b\); chẳng hạn chọn đúng hai trong bốn vị trí có 6 cách.
 
-Để nhận hạng tử a^(n−k)b^k trong (a+b)^n, chọn đúng k trong n vị trí lấy b, các vị trí còn lại lấy a. Có C(n,k) cách. Vì thế khai triển là tổng các hệ số C(n,k)a^(n−k)b^k. Ở phạm vi SGK đang đối chiếu chỉ học chắc n=4,5; không đưa mũ bất kỳ vào Core nếu chưa xác nhận.
+Để nhận hạng tử a^(n−k)b^k trong (a+b)^n, chọn đúng k trong n vị trí lấy b, các vị trí còn lại lấy a. Có C(n,k) cách. Vì thế khai triển là tổng các hạng tử \(\binom nk a^{n-k}b^k\), trong đó \(\binom nk\) là hệ số tổ hợp. Ở Toán 10, trước tiên luyện hai trường hợp \(n=4\) và \(n=5\); công thức tổng quát là phần mở rộng.
 
 **Điều kiện áp dụng:** n là số nguyên không âm; trong chương này đặc biệt dùng n=4 hoặc n=5. Hệ số là số cách chọn vị trí, không phải số lần ta viết chữ b trong một tích.
 
@@ -440,7 +440,7 @@ Nếu em chép số 4 ở hàng n=4 của tam giác Pascal thì mới đếm s�
 
 Cùng hệ số tổ hợp nhưng (x−2)^5 có hạng tử dương và âm. Nếu chỉ nhớ 'dấu xen kẽ' mà không xét số lần chọn −2, ta rất dễ sai.
 
-Trong (u+v)^n, hạng tử chọn v đúng k lần có hệ số C(n,k)u^(n−k)v^k. Nếu v âm, dấu của hạng tử là (−1)^k. Khi hỏi hệ số x^m, tìm số lần chọn bằng cách giải phương trình số mũ trước rồi mới tính dấu.
+Trong \((u+v)^n\), hạng tử ứng với việc chọn \(v\) đúng \(k\) lần là \(\binom nk u^{n-k}v^k\); hệ số tổ hợp là \(\binom nk\). Nếu v âm, dấu của hạng tử là (−1)^k. Khi hỏi hệ số x^m, tìm số lần chọn bằng cách giải phương trình số mũ trước rồi mới tính dấu.
 
 **Điều kiện áp dụng:** Với một đa thức thật, số mũ x là không âm; không nhầm thứ tự k là số lần lấy hạng tử thứ hai. Đặc biệt 0≤k≤n.
 
@@ -568,7 +568,7 @@ Khi khai triển dài, cộng từng hệ số là việc nặng. Nhưng tổng 
 
 Với đa thức P(x)=a₀+a₁x+...+aₙxⁿ, P(1)=a₀+...+aₙ. Các hệ số tổ hợp hàng n tạo thành tam giác Pascal; mỗi số ở giữa bằng tổng hai số ở hàng n−1 vì có thể chọn hoặc không chọn một phần tử cố định.
 
-**Điều kiện áp dụng:** Chỉ áp dụng tổng hệ số bằng P(1) khi biểu thức là **đa thức theo x**, không tùy tiện áp dụng cho phân thức chưa xác định tại 1. Tổng hệ số/tổng chẵn lẻ cao hơn yêu cầu n=4,5 phải gắn nhãn vận dụng hoặc mở rộng.
+**Điều kiện áp dụng:** Với đa thức hữu hạn, thay \(x=1\) cho tổng các hệ số. Mẹo này cũng đúng cho tổng hữu hạn các lũy thừa nguyên của \(x\), kể cả số mũ âm, vì \(1^k=1\) với mọi số nguyên \(k\). Không áp dụng tùy tiện cho phân thức không xác định tại 1 hoặc biểu thức chưa được viết thành tổng hữu hạn các lũy thừa. Đây là kiến thức mở rộng sau khai triển nhị thức.
 
 > **TÍNH CHẤT — Tổng hệ số và tam giác Pascal (mở rộng)**
 >
@@ -578,7 +578,7 @@ Với đa thức P(x)=a₀+a₁x+...+aₙxⁿ, P(1)=a₀+...+aₙ. Các hệ s�
 
 **Đề bài:** Cho đa thức \(P(x)=(2x-1)^4\). Tính tổng tất cả hệ số của \(P(x)\) mà không khai triển đủ.
 
-**Lời giải:** Với một **đa thức** \(P(x)=a_0+a_1x+\cdots+a_nx^n\), thay \(x=1\) sẽ cho \(P(1)=a_0+a_1+\cdots+a_n\). Vậy tổng hệ số của \((2x-1)^4\) bằng \(P(1)=(2-1)^4=1\). Cách này hợp lệ với đa thức hữu hạn, không tự áp dụng cho biểu thức chứa \(x^{-1}\).
+**Lời giải:** Với một **đa thức** \(P(x)=a_0+a_1x+\cdots+a_nx^n\), thay \(x=1\) sẽ cho \(P(1)=a_0+a_1+\cdots+a_n\). Vậy tổng hệ số của \((2x-1)^4\) bằng \(P(1)=(2-1)^4=1\). Cách này hợp lệ với đa thức hữu hạn. Chẳng hạn, tổng hệ số của \(2x^{-1}+3x\) cũng bằng \(2+3=5\), đúng bằng giá trị tại \(x=1\); nhưng không áp dụng cho biểu thức không xác định tại 1.
 
 **Vận dụng**
 
@@ -591,7 +591,7 @@ Thay x=1: (1+2)^5=**243**.
 
 **Kiểm lỗi**
 
-Nếu cộng lẻ từng số hạng và sai, nhớ P(1) chỉ đúng khi cả đa thức được tính tại 1, không chỉ thay hệ số tổ hợp. Đọc lại **Kiến thức 3.5**, sau đó thử **Bài luyện 41** và **Bài luyện 42** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
+Nếu cộng lẻ từng số hạng và sai, nhớ thay x=1 vào toàn bộ biểu thức hữu hạn đã khai triển, kể cả các thừa số hằng; không chỉ cộng các hệ số tổ hợp. Đọc lại **Kiến thức 3.5**, sau đó thử **Bài luyện 41** và **Bài luyện 42** trong phần Luyện tập; mở lời giải chỉ sau khi tự làm.
 
 </details>
 
