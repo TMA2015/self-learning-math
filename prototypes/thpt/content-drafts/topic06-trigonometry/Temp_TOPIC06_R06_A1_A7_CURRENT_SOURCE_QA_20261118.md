@@ -1,16 +1,13 @@
-<!-- TOP06_MASTER974_CURRENT_SOURCE_CUSTODY_20261121 -->
-**CURRENT AUTHORING / one effective R06 learner:** `edfecb3edd165e87bcb615ec4cbb66833ad52675`, **existing composite author Q18** `ef1e607675b82fcbf7c7aa6005c0c1005a836d1f` under v3.2.0; immutable 46 G11+20 Topic shared banks and eight original Written rubrics. Three affected PED6 upgrades #977 019–021: O01 real Kiến thức/Bài routes, 16 real public replay→Practice answer-location links, and new O16 selftry `h=4+0.8sin(πt/8)` with `T=16 h`, `h(4)=4.8 m`, `t=20` excluded from [0,16]. Current source inverse-diff against immutable previous `55cbb23d860aaff700c959bc291ec44699584159` restricts modifications to O01 FirstTry disclosure, O16 FirstTry disclosure, one selfcheck map. Prior 66-item/16-outcome author math audit remains valid for unchanged source portions, new O16 calculations separately self-proved and signed. 83/83 disclosures, 16/16 actual recovery routes, 1 SGK credit, 3 original SVG. No independent new NotebookLM PASS, private RD1, official Readiness, website or merge/deploy. Old SHA narratives below are historical scoped records.
-
-# CĐ06 · R06 A1–A7 exact-current-source intake QA · 18/11/2026
+# CĐ06 — current A1–A7 source custody · A01 CP06
 
 PACKET_ID: THPT-TOPIC06-TRIGONOMETRY-FULL-R06
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic06-trigonometry/Temp_TOPIC06_R06_NUMBERING_CONSISTENT_20261116.md
-SOURCE_BLOB: edfecb3edd165e87bcb615ec4cbb66833ad52675
+SOURCE_BLOB: 621afad176e6944f832746b231cbd9265e96bce2
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: ef1e607675b82fcbf7c7aa6005c0c1005a836d1f
+REVIEW_RECEIPT_BLOB: 07e70b50c23db3caaa87254e1bd0236bd76dd1c0
 ORIGINAL_G11_SOURCE_BLOB: 256ceb5edc5e02aec320e83e99c8e08e035654f3
 ORIGINAL46_INDEX_BLOB: d8279df37c9dcd74a0b26f0da389baf7d53ecf64
 NEW20_CANONICAL_BANK_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65
@@ -18,77 +15,16 @@ ACADEMIC_VERDICT: SELF_VERIFIED
 PEDAGOGICAL_VERDICT: SELF_VERIFIED
 INDEPENDENT_NOTEBOOKLM_PASS: NOT_CLAIMED
 RELEASE_AUTHORIZATION: NO
+CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC06_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
+CURRENT_Q18_RECEIPT_BLOB: 07e70b50c23db3caaa87254e1bd0236bd76dd1c0
+PREVIOUS_AUTHOR_METADATA_BLOB: 103a0f784a45d8cad76395b08753bffd99b580a7
+AUTHOR_SIGNOFF: A01_CP06_CD06_621afad176e6944f832746b231cbd9265e96bce2
 
-## A1 — Current author source and signed receipt
-One R06 learning source Git SHA `9f6996d37e1972e7a2a2f283d062bf24cdbbc79f`; current composite receipt `1fe31c58908c6364b93aedac7239ef1e25e29040`. The historical R05 signed source `dd3af68f681eba9a7b75040d9490815f81efdd6b` is unchanged. Use current source for RELEASE intake, not an obsolete R05 signed source or alternate draft.
+A1 source 4c164a60299c3afeaa2eeaa7efd2317f2d32edd9 / 621afad176e6944f832746b231cbd9265e96bce2 and exact Q18 07e70b50c23db3caaa87254e1bd0236bd76dd1c0; A2 SGK KNTT G11 T1 B01–04 printed pp5–39, original scan SHA256 4492122eb2c9df626582d37b5c3d0e6513d66ca68d80d8a1e69577aa8b706828, direct targeted visual reading CP05 (printed+1 PDF index); prior SBT scope retained, no new SBT page audit.; A3 author-self Q18, no new independent verdict; A4 66 Practice +16 Replay, semantic equivalence to latest signed edfecb3edd165e87bcb615ec4cbb66833ad52675 via CP03/CP04; all item IDs/order/key/conditions/rubrics and mode retained. Display notation intentionally differs from frozen bank text; no literal parity claim. Owner #1109 schedules bank reconciliation after eight batches, not a second canonical owner. Frozen original G11 source 256ceb5edc5e02aec320e83e99c8e08e035654f3, index d8279df37c9dcd74a0b26f0da389baf7d53ecf64 and bank f83b285ff0c8f4e45b724cf06248935e5d618b65 directly checked unchanged at 4c164a60299c3afeaa2eeaa7efd2317f2d32edd9.; A5 Why and conditions before identity, coordinate-based derivation, worked angle and denominator reasoning. O07 new transfer tests sign and factor rather than recall; O13 compares two zero families and why mutually excluded, with numbered recovery; O11 cot diagram complements tan with precise x-axis/branch reading; O12 explains merge of families and special endpoints. All 16 FirstTry/Đối chiếu with numbered D6, 83 balanced disclosures, one public lookup map. Five SVGs (unit circle, sin, phase, tan, cot), source-only check not browser.; A6 CP04: radian definition and signed arc; unit-circle identity before use, dot-product derivation of sin/cos addition, test a=π,b=0 detects sign; O08 domain intersection with excluded interior point; O09 common versus minimal period; O10 amplitude/phase/constant case; O15 both k families filtered. CP05: O04 tan x cot x=1 when defined (x≠kπ/2); O05 odd/supplement/complement/π-shift identities with domain; O07 half-angle square identities derived from cos double angle, positive cos(π/8)=sqrt(2+sqrt2)/2; O11 cot graph and points; O12/13 degree families and principal ranges, existence tan/cot all real a. CP06: O07 new transfer sin²x−cos²x=−cos(2x), sin(3x)cos(2x)=(sin(5x)+sin x)/2 (at π/2 both 1; missing half gives 2); O12 coincident families at ±1; O13 tan(2x)=0 gives kπ/2, cot(2x)=0 gives π/4+kπ/2, disjoint and each denominator nonzero. O04 clarifies domain retained even after simplification. CP05 cot SVG 402 numerical points, max source coordinate error 0.017px, disjoint strictly decreasing mathematical branches. CP06 confirms exact same Practice/Replay bytes as CP05, 1188 balanced inline pairs, 8 display pairs. Existing B40 proof depth, B27 rubric-model depth and B59/B65 overlap deferred to authorized shared-bank audit; no new error in notation delta.; A7 public replay no Mastery, 0 private items; no RELEASE. Previous full historical metadata retained at Git blob 103a0f784a45d8cad76395b08753bffd99b580a7; source ownership and placement matrix unchanged.
 
-## A2 — SGK S1, precise original scope
-G11 KNTT Tập Một ChI B01–B04 source, page provenance from immutable signed R05 owner receipt (not newly reopened PDF scan). Three separate Topic self-sufficient pages do not impersonate textbook Core; original 46 questions remain owned by original G11 source, newly written 20 are distinct Topic owner.
-
-## A3 — Mathematical completeness
-16 outcome Knowledge modules in four coherent mathematics arcs, 16 independent examples with conditions and complete solutions, 16 Vận dụng/Đối chiếu. Exact R06 mathematical formal condition checking: signed rotations and radians, sin/cos quadrants, tan/cot denominator exclusions, two sin/cos equation solution families, phase shifts/ranges and zero-factor roots. Earlier R05 Q18 recorded 54 directly checked mathematics cases, current R06 affected differences rechecked in composite, no new unrelated full 66-item review falsely asserted.
-
-## A4 — Q15 canonical source
-66 unique student-facing practice IDs, 46 G11 original at source `256ceb5edc5e02aec320e83e99c8e08e035654f3` with index `d8279df37c9dcd74a0b26f0da389baf7d53ecf64`; 20 NEW20 at `f83b285ff0c8f4e45b724cf06248935e5d618b65` (16 Practice + 4 Written). Eight total source-owned Written /7 rubrics. Current learner cards are display-only, not second banks; 16 public Tự kiểm tra question-only reuses of TOP06 P IDs. No content version revision or new canonical item.
-
-## A5 — PED/Visual and D1–D6
-**Exactly 16** outcomes with 16 standalone Ví dụ/Đề bài/Lời giải and 16 Vận dụng/opt-in Đối chiếu. **15 revised D6** error-specific routes source-checked to real numbered Bài with target numbers in 1..66; unchanged O01 correction retained. Three source-exact SVGs (quadrant unit circle, sine period, tan vertical asymptotes) with text-directed student reading. 82 valid balanced disclosures (16 Knowledge+66 Practice). No code/receipt metadata in visible learning text; one SGK footer line at end.
-
-## A6 — Scope, delta and author Q18
-Historical R05 FULL source Q18 signed `8f4d721ec8ab5b08baaf0a19c7aeaf2aa9cf454f`, R06 numbering receipt `879ad8bf09e1b5f5efd33c8266a021d9d9638df8`, R06 targeted PED6 source receipt `2d7686a55f2196e7422bf30dfd6d0dc3fcc10e83`. New composite `7040dfe92bb4ab06e433a6843d23f7b8c8ec5999` reviews the latest R06 boxes and D6 together; counted 66 canonical, 16 public replays, 3 actual SVG, 16 full learner modules. Source unchanged in this final handoff stage, no cloned R06 candidate or new canonical bank. All current affected Q01–Q18 self-QA P0/P1=0; not a simulated NotebookLM response.
-
-## A7 — Final Submit, RD1 and no-Mastery boundary
-Public formative 16 Tự kiểm tra questions are not held-out, not official TOPIC_READINESS, cannot record Mastery. RD1_COUNT_IMPORTED=0, no student data/keys moved to repository, no official scoring. Q16 Final Submit and no pre-submit hints/answer/tutor are to be verified in RELEASE independently. No website, Firebase, Golden, production, merge or deploy.
-
-## SOURCE_QA_SUMMARY
-SOURCE_LINES: 1571
-LESSON_OUTCOMES: 16
-INDEPENDENT_EXAMPLES: 16
-FIRSTTRY_OPT_IN: 16
-STUDENT_VISIBLE_PRACTICE_BAI: 66
-PRACTICE_CANONICAL_UNIQUE: 66
-PUBLIC_SELF_CHECK_QUESTION_ONLY: 16
-COLLAPSED_DISCLOSURES: 82
-REAL_SVG_FILES: 3
-END_BIBLIOGRAPHY_LINES: 1
-MATH_VERIFICATION: affected conditions/quadrants/phase/zero-root inspected, unchanged source original exact bank pointers; historical R05 54 math checks retained only on its own snapshot
-PED_VERIFICATION: 16 complete local concept-first modules and 15 affected D6 routes, not browser AP QA
-CANONICAL_Q15: 46 original+20 new, original bank pointers unchanged, no duplicate ownership
-ASSESSMENT_Q16: no official Readiness/Final Submit/Mastery, public replays only
-
-AUTHOR_SIGNOFF: TOP06_MASTER974_CURRENT_PED6_16_PUBLIC_SELFCHECK_20261121_edfecb3edd165e87bcb615ec4cbb66833ad52675
-CONTENT_READY_CONDITION: ONE_CURRENT_V2_READY_REGISTER_AND_EXACT_HEAD_SOURCE_GATE
-RELEASE_AUTHORIZATION: NO
-
-
-**19/11 owner ΔA:** source `787a5a15129785e1f8226314606052afa1f6000b`, Q18 `7040dfe92bb4ab06e433a6843d23f7b8c8ec5999` exact; math and 16 outcomes unaffected; CONTENT_READY preserved.
-
-
-## 20/11/2026 — A1–A7 targeted source update, S1 B02 TOP06-O08
-- Latest learner blob: 493e6216d559c6544a7314f3df2b230fa3af528f; targeted author Q18 receipt: a5702a167a4563f61aa397e99595409bb88413a0. Previous blobs 787a5a15129785e1f8226314606052afa1f6000b and 7040dfe92bb4ab06e433a6843d23f7b8c8ec5999 remain historical.
-- 10 direct trigonometric identities/2 denominator restrictions checked; added required double-angle, 3 product-to-sum and 4 sum-to-product formula statements in Knowledge §2.4. 66 existing canonical items, 16 selfchecks, SVG, rubric and RD1 privacy unchanged.
-- Q01/Q03/Q09–14 targeted self-QA PASS; full SGK 10–12 to 22-topic exhaustiveness not claimed; V2/ready/REGISTER exact SHA synchronization required, no release authorization.
-
-
-## 20/11/2026 — Final source-lock after comprehensive G11 B01/B02 check
-- Current SOURCE_BLOB: 9f6996d37e1972e7a2a2f283d062bf24cdbbc79f; targeted Q18 SOURCE_BLOB: 1fe31c58908c6364b93aedac7239ef1e25e29040. Intermediate 493e6216d559c6544a7314f3df2b230fa3af528f and Q18 a5702a167a4563f61aa397e99595409bb88413a0 are historical only.
-- In addition to three product-to-sum and four sum-to-product formulas and double-angle, O06/O07 now cover complementary/pi-shift symmetries and tangent addition/difference with nonzero-denominator guards. Direct unit-circle and reverse-algebra QA on affected O06/O07/O08, unchanged 66 canonical questions/keys/rubrics, 16 public replay assessments, Q16.
-- This is targeted S1 Delta C author self-QA, not a blanket independent reviewer PASS nor a website RELEASE authorization.
-
-
-## 20/11/2026 current source lock
-- SOURCE_BLOB: f2b5a126a676b153e9d44208317c812d849a3021
-- REVIEW_RECEIPT_BLOB: 8cd7de91845c62577c934f7f8410698cc5d88129
-- One trig-domain warning label only, original math and S1 checks preserved.
-
-
-## 20/11/2026 — active A1 TOP06-O16 affected math Delta C
-- ACADEMIC_SOURCE_BLOB: 0d5bd83766db6911ced4b1392fce9fc02e3c0fe2
-- REVIEW_RECEIPT_BLOB: d3ff7b5aed1720f711ec9f93a10148eead5cfd3a
-- First-try h(12) now 1.5 m for 2+0.5cos(πt/4), domain, phase, and example cross-check; questions outside O16 and original canonical item bank preserved.
-
-
-## 20/11/2026 — CĐ06 student Knowledge S1 G11 B1–B4
-- CURRENT_LEARNER_SOURCE_BLOB: 55cbb23d860aaff700c959bc291ec44699584159
-- REVIEW_RECEIPT_BLOB: 72596f066ba642a682fff724891923e777a30abf
-- Restored Chasles, special angles, calculator DEG/RAD and inverse keys, monotonicity of trig functions; all original item bank/rubrics and practices unmodified.
+## Current figure custody
+prototypes/thpt/visuals/THPT_TOPIC06_UNIT_CIRCLE_QUADRANTS_R01.svg: 3974269a87ca54be3bb89382655ec2ebc934a73c
+prototypes/thpt/visuals/THPT_TOPIC06_SINE_PERIOD_R01.svg: 57a59a8d14e547680022793270d8b8691881c6f1
+prototypes/thpt/visuals/THPT_TOPIC06_TAN_ASYMPTOTES_R01.svg: 76edbe0917c90d9f67f82cfd91f1fd28784f2e53
+prototypes/thpt/visuals/THPT_TOPIC06_COS_PHASE_COMPARISON_R01.svg: c8734ab09037afc437aa48344178a975bc23bf87
+prototypes/thpt/visuals/THPT_TOPIC06_COT_ASYMPTOTES_R01.svg: eac15f15e82e2e33cde3e09b07ced3c6455728b5
