@@ -7,6 +7,9 @@
 const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-topic-w1-part]");
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
+const sharedKnowledgeActive=part==="kien-thuc"&&topic==="16";
+const sharedKnowledgeMath=()=>sharedKnowledgeActive?window.SLMTHPTKnowledgeMath:null;
+let sharedKnowledgePrepared=false;
 const sizes={"16":{"outcomes":21,"items":65,"replay":8,"groups":4,"practiceGroups":4},"17":{"outcomes":12,"items":37,"replay":8,"groups":2,"practiceGroups":3},"18":{"outcomes":40,"items":207,"replay":12,"groups":8,"practiceGroups":8}};
 const expected=sizes[topic];
 /* Presentation-only aliases. Full, reviewed heading text stays in its panel and
@@ -14,40 +17,40 @@ const expected=sizes[topic];
 const topicTabNames={
   "16": {
     "modules": [
-      "1. Hai đường thẳng vuông góc",
-      "2. Đường thẳng vuông góc mặt ph",
-      "3. Phép chiếu vuông góc và góc",
-      "4. Hai mặt phẳng vuông góc và h"
+      "1. Hai đường vuông góc",
+      "2. Đường vuông góc mặt phẳng",
+      "3. Chiếu vuông góc, góc",
+      "4. Hai mặt phẳng vuông góc"
     ],
     "subs": [
       [
         "1.1. Góc giữa hai đường",
-        "1.2. Hai đường chéo nhau có thể",
-        "1.3. Chuyển phương bằng đường s",
-        "1.4. Không đo góc từ hình phối"
+        "1.2. Chéo nhau và vuông góc",
+        "1.3. Chuyển phương song song",
+        "1.4. Góc và hình phối cảnh"
       ],
       [
         "2.1. Đường vuông góc mặt phẳng",
-        "2.2. Dấu hiệu hai đường cắt nha",
-        "2.3. Chuyển vuông góc qua đường",
-        "2.4. Pháp tuyến duy nhất qua mộ",
-        "2.5. Kiểm cột đứng bằng hai hướ"
+        "2.2. Dấu hiệu hai đường cắt nhau",
+        "2.3. Vuông góc qua song song",
+        "2.4. Pháp tuyến qua một điểm",
+        "2.5. Kiểm cột đứng"
       ],
       [
-        "3.1. Chân hình chiếu vuông góc",
-        "3.2. Hình chiếu của đoạn và ảnh",
+        "3.1. Chân hình chiếu",
+        "3.2. Hình chiếu đoạn thẳng",
         "3.3. Định lí ba đường vuông góc",
-        "3.4. Góc đường thẳng với mặt ph",
+        "3.4. Góc đường–mặt",
         "3.5. Tam giác vuông và góc dốc"
       ],
       [
         "4.1. Góc giữa hai mặt phẳng",
-        "4.2. Góc nhị diện và góc hai mặ",
+        "4.2. Góc nhị diện",
         "4.3. Dấu hiệu hai mặt vuông góc",
-        "4.4. Đường vuông góc giao tuyến",
+        "4.4. Vuông góc giao tuyến",
         "4.5. Lăng trụ đứng và chiều cao",
-        "4.6. Chóp đều: chiều cao và đườ",
-        "4.7. Chóp cụt đều: tỉ số đồng d"
+        "4.6. Chóp đều và đường cao",
+        "4.7. Chóp cụt đều và đồng dạng"
       ]
     ]
   },
@@ -188,7 +191,7 @@ const normalizeRenderedMath=node=>{
   if(hit){if(lastIndex<v.length)parts.append(document.createTextNode(v.slice(lastIndex)));t.replaceWith(parts)}
  }
 };
-const renderMath=node=>{normalizeRenderedMath(node);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
+const renderMath=node=>{if(sharedKnowledgeActive){if(!sharedKnowledgeMath())throw Error("TOPIC_SHARED_MATH_HELPER_MISSING");if(sharedKnowledgePrepared)return sharedKnowledgeMath().typeset(node);return}normalizeRenderedMath(node);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
 /* Source SVGs remain byte-identical; only the rendered footprint is constrained.
  * W3-only data attribute avoids changing accepted CĐ01/W1/W3 and SGK images. */
 const capKnowledgeFigures=root=>{
@@ -283,6 +286,7 @@ function styleKnowledge(root){
  for(const details of root.querySelectorAll("details")){
   const summary=details.querySelector("summary");if(!summary)continue;
   details.classList.add("question");
+  if(sharedKnowledgeActive){sharedKnowledgeMath().disclosure(details);continue}
   const content=solutionContent(details);
   details.replaceChildren(summary,...content.childNodes);
   details.addEventListener("toggle",()=>{if(details.open)renderMath(details)});
@@ -347,7 +351,10 @@ function initKnowledge(){
   }
   bind(subButtons,subPanels);
  }
- normalizeInlineStems(layout,/^Vận dụng[:.]?$/);styleKnowledge(layout);capKnowledgeFigures(layout);bind(allButtons,allPanels);
+ normalizeInlineStems(layout,/^Vận dụng[:.]?$/);styleKnowledge(layout);capKnowledgeFigures(layout);
+ if(sharedKnowledgeActive){sharedKnowledgeMath().prepare(layout);sharedKnowledgeMath().normalize(intro);sharedKnowledgePrepared=true}
+ bind(allButtons,allPanels);
+ if(sharedKnowledgeActive)sharedKnowledgeMath().typeset(layout);
  if(layout.querySelectorAll("[data-topic-w1-callout]").length<expected.outcomes)throw Error("Missing formal semantic callouts");
  ready();
 }
