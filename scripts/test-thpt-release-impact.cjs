@@ -655,6 +655,35 @@ function isExactSharedDeployRecovery(files,base){
   isExactSharedKnowledgeMath([...SHARED_KNOWLEDGE_MATH_FILES])&&
   fs.readFileSync(".github/workflows/deploy.yml","utf8").includes("OWNER_1110_DEPLOY_RECOVERY_EXACT");
 }
+const RW3_TAB_FILES=new Set(["docs/assets/javascripts/thpt-topic-w4-golden-v1.js","docs/assets/javascripts/thpt-topic-w5-golden-v1.js","scripts/test-thpt-topic-w4-golden-browser.py","scripts/test-thpt-topic-w5-golden-browser.py","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/thpt-topic-w4-golden-release-qa.yml",".github/workflows/thpt-topic-w5-golden-release-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
+function isExactRW3Tabs(files){
+ return files.length===RW3_TAB_FILES.size&&new Set(files).size===files.length&&files.every(f=>RW3_TAB_FILES.has(f))&&fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("RW3_TAB_SCOPE_HOLD");
+}
+function proveRW3Tabs(){
+ const cp=require("node:child_process"), git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"});
+ const base=process.env.BASE_SHA;
+ assert.equal(base,"0a4a1aa82961e4136a3aa5b0fb783e5b9c3e303a","R-W3 base must be the published snapshot");
+ assert(isExactRW3Tabs(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"R-W3 exact scope HOLD");
+ let changes=0;
+ for(const wave of [4,5]){
+  const p="docs/assets/javascripts/thpt-topic-w"+wave+"-golden-v1.js";
+  const split=s=>{const m=s.match(/const topicTabNames=(\{[\s\S]*?\n\});/);assert(m,"Missing alias map");return {rest:s.replace(m[0],"ALIAS_DATA"),data:JSON.parse(m[1])};};
+  const old=split(git("show",base+":"+p)),now=split(fs.readFileSync(p,"utf8"));
+  assert.equal(now.rest,old.rest,"Non-alias JS changed");
+  assert.deepEqual(Object.keys(now.data),Object.keys(old.data));
+  for(const key of Object.keys(old.data)){
+   if(key==="16")assert.deepEqual(now.data[key],old.data[key],"CĐ16 changed");
+   const flatten=x=>[...x.modules,...x.subs.flat()];
+   const a=flatten(old.data[key]),b=flatten(now.data[key]);
+   assert.deepEqual(now.data[key].subs.map(x=>x.length),old.data[key].subs.map(x=>x.length));
+   assert.equal(a.length,b.length);
+   assert(a.every((v,i)=>v.match(/^\d+(?:\.\d+)?\./)?.[0]===b[i].match(/^\d+(?:\.\d+)?\./)?.[0]),"Tab number/order changed");
+   changes+=a.filter((v,i)=>v!==b[i]).length;
+  }
+ }
+ assert.equal(changes,69,"Unexpected alias count");
+ console.log("PASS R-W3 69 labels only, all renderer logic, content and protected assessment unchanged");
+}
 // Exact governance-only files: other learner/runtime changes remain FULL.
 const MATH_NOTATION_GOVERNANCE=new Set(["AGENTS.md","prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md","prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_OWNER_RESET_20261122.md","scripts/test-thpt-push-deploy-scope.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml"]);
 function classify(paths,{manual=false,base=""}={}){
@@ -665,6 +694,7 @@ function classify(paths,{manual=false,base=""}={}){
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
+ if(isExactRW3Tabs(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW3_TAB_LABELS"};
  if(isExactSharedDeployRecovery(files,base))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1110_DEPLOY_RECOVERY_EXACT"};
  if(isExactSharedKnowledgeMath(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_EXACT_SHARED_KNOWLEDGE_MATH_RW2"};
  if(isExactTopicRW1(files))return {impact:"SCOPED_TOPIC_RW1",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW1_EXACT_KNOWLEDGE_MATH_TAB_QA"};
@@ -849,6 +879,11 @@ function selfTest(){
  assert.equal(classify([...shared,"docs/thpt-preview/chuyen-de/cd09/kien-thuc.md"]).impact,"FULL");
  assert.equal(classify([...shared,"docs/assets/javascripts/firebase-gemini-v1.js"]).impact,"FULL");
  assert.equal(classify(shared,{manual:true}).impact,"FULL");
+ const rw3Tabs=[...RW3_TAB_FILES];
+ assert.equal(classify(rw3Tabs).reason,"OWNER_1055_RW3_TAB_LABELS");
+ assert.equal(classify([...rw3Tabs,"mkdocs.yml"]).impact,"FULL");
+ assert.equal(classify(rw3Tabs.slice(1)).impact,"FULL");
+ assert.equal(classify(rw3Tabs,{manual:true}).impact,"FULL");
  const sharedRecovery=[...SHARED_DEPLOY_RECOVERY_FILES];
  assert.equal(classify(sharedRecovery,{base:SHARED_DEPLOY_RECOVERY_BASE}).reason,"OWNER_1110_DEPLOY_RECOVERY_EXACT");
  assert.notEqual(classify(sharedRecovery,{base:"0".repeat(40)}).impact,"SCOPED_TOPIC_SHARED_MATH");
@@ -1210,7 +1245,8 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--prove-shared-recovery"))proveSharedDeployRecovery();
+ if(process.argv.includes("--prove-rw3-tabs"))proveRW3Tabs();
+ else if(process.argv.includes("--prove-shared-recovery"))proveSharedDeployRecovery();
  else if(process.argv.includes("--self-test"))selfTest();
  else{
   assert.equal(process.argv.length,3,"Supply git diff --name-only path file");
