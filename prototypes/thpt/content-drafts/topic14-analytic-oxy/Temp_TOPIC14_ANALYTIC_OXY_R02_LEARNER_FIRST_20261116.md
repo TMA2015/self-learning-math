@@ -562,9 +562,9 @@ Qua ba điểm không thẳng hàng có đúng một đường tròn; có thể 
 
 **Ví dụ**
 
-**Đề bài:** Tìm tâm và bán kính đường tròn qua \(A(0,0)\), \(B(4,0)\), \(C(0,6)\).
+**Đề bài:** Tìm tâm và bán kính đường tròn qua \(A(0,0)\), \(B(4,0)\), \(C(1,3)\).
 
-**Lời giải:** Hai vectơ \(\overrightarrow{AB}=(4,0)\) và \(\overrightarrow{AC}=(0,6)\) vuông góc, nên tam giác vuông tại \(A\). Tâm ngoại tiếp là trung điểm cạnh huyền \(BC\): \(I(2,3)\). Bán kính \(IA=\sqrt{2^2+3^2}=\sqrt{13}\).
+**Lời giải:** Ba điểm không thẳng hàng. Gọi tâm \(I(x,y)\). Từ \(IA^2=IB^2\) suy ra \(x^2+y^2=(x-4)^2+y^2\), nên \(x=2\); đây là trung trực của \(AB\). Từ \(IA^2=IC^2\) suy ra \(x^2+y^2=(x-1)^2+(y-3)^2\), hay \(x+3y=5\); đây là trung trực của \(AC\). Giao hai trung trực là \(I(2,1)\). Bán kính \(R=IA=\sqrt{5}\). Kiểm lại \(IB^2=IC^2=5\), nên cả ba điểm cùng thuộc đường tròn. Cách này không cần tam giác vuông.
 
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-T16; PRIMARY_OUTCOME: TOP14-O16; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Vận dụng**
@@ -712,6 +712,10 @@ Tiệm cận cho hình dung nhánh hypebol khi đi xa, nhưng không phải đư
 
 **Ví dụ**
 
+![Hai nhánh hypebol, hai đỉnh và các tiệm cận](../../visuals/THPT_TOPIC14_HYPERBOLA_ASYMPTOTES.svg)
+
+*Đọc hình:* Tâm \(O\) nằm ở gốc tọa độ, hai đỉnh là \((-3;0)\) và \((3;0)\). Các đường nét đứt đi qua \(O\) là tiệm cận; hai nhánh tiến gần chúng khi đi xa. Đừng nhầm hai đường thẳng đứng \(x=\pm3\) đi qua các đỉnh với hai tiệm cận.
+
 **Đề bài:** Tìm hai đường tiệm cận của hypebol \(x^2/9-y^2/4=1\).
 
 **Lời giải:** Vì \(a=3,b=2\) theo các mẫu số dương, công thức tiệm cận là \(y=\pm(b/a)x=\pm(2/3)x\). Hai đường qua gốc và không là hai đường \(x=\pm a\).
@@ -838,7 +842,7 @@ Một ăng-ten dùng mặt cắt parabol đặt nguồn thu tại tiêu điểm;
 <!-- CANONICAL_ITEM_ID: THPT-TOP14-T23; PRIMARY_OUTCOME: TOP14-O23; SOURCE_TYPE: TOPIC_NEW_CANDIDATE; ROLE: TOPIC_FIRST_TRY -->
 **Vận dụng**
 
-Nguồn thu ở tiêu điểm cách đỉnh 3 cm; với trục Ox và đơn vị cm, phương trình mặt cắt?
+Mặt cắt ăng-ten là parabol có đỉnh \(O\), trục đối xứng \(Ox\), mở về phía \(x>0\). Nguồn thu ở tiêu điểm cách đỉnh 3 cm. Viết phương trình mặt cắt trong đơn vị cm.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
