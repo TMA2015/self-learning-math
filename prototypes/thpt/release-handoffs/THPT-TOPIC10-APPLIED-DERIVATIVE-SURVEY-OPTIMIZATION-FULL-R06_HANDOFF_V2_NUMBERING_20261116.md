@@ -1,18 +1,14 @@
-<!-- TOP10_MASTER974_CURRENT_ONE_V2_HANDOFF_20261121 -->
-## CURRENT AUTHORING V2 CĐ10 — source-Q18 v3.2.0 / no RELEASE
+<!-- #1109 A02 CP06 current source-only V2; historical evidence is confined to old snapshots. -->
+## CURRENT CĐ10 AUTHORING · A02 CP06
 
-**Single effective R06 learner** `prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md`, Git blob **`7954f917b89c64527b166d02aac1844da08ed806`**, existing composite author Q18 `4cf2638f752b93fd87aa5446a1d89b66665afede`, A1–A7/S1 custodian `a4cc9fd38e2c50405df1ca33a89465620cb33926`. One original G12 SGK78 source-index `ffaba90bddc47a1d86dd905535e37c07d22173d9` + one unchanged new42 Topic bank `5f6ab764df6541ada9b4d4475403d29984d8e7da`, four original SVG unchanged.
-
-**Verified actual teaching corrections #977-033–035:** 36 uniquely relevant Kiểm lỗi inside existing voluntary Knowledge FirstTry disclosures with exact same-subsection + original Practice numbered retry; ONE post-all-36-public-selfcheck voluntary answer-navigation map based on 36 exact shared original item IDs, no duplicated bank answers/rubrics; SGK attribution only once in final Topic footer. Source inverse reconstruction proves entire original 120 Practice including 18 Written rubric, 36 original public Selfcheck question stems and 4 SVG unaffected; **157/157 disclosures balanced**. No student-view admin comments, source notes labeled `AUTHORING_ONLY_NOT_FOR_STUDENT_VIEW`. `DELTA_C_PED_TARGETED` direct author self-proven for error/recovery pathways, `DELTA_A_EDITORIAL` for source attribution; previous SGK source S1 math audited and kept immutable. No newly claimed NotebookLM full-Topic reviewer PASS, no public independent Topic Readiness, RD1, Skill Mastery or Final Submit. AUTHORING only; RELEASE/website AP/R and owner release authorization independent. No merge/deploy.
-
----
+Canonical learner 952ce21e99953348068b6499449dae75d4490d10; Q18 74ecc58ea5c86f83b5549732a2dde769ad5696a8; source custody eebc96d05017913567dec8709e792a0429023f9f. CONTENT_READY source lane, Work #1055 Knowledge corrections and direct targeted SGK B1–5, X-G.5 all three pages. 36 outcomes, 120 Practice (78 SGK+42 Topic), 18 Written, 36 replays, five guided figures (four original plus new O18 SVG). Exact source markers/rubric point patterns and replay↔Practice stems preserved, notation-equivalent display. No independent reviewer PASS, RD1/Mastery/official readiness or RELEASE authorization.
 
 # CĐ10/22 — Ứng dụng đạo hàm: Khảo sát hàm số và Bài toán tối ưu hóa · HANDOFF V2
 
 PACKET_ID: THPT-TOPIC10-APPLIED-DERIVATIVE-SURVEY-OPTIMIZATION-FULL-R01
 CONTENT_REVISION: R06_FULL_S1_20261120
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_AUTHORING_ONLY_NUMBERING_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: a4cc9fd38e2c50405df1ca33a89465620cb33926
+AUTHOR_METADATA_BLOB: eebc96d05017913567dec8709e792a0429023f9f
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -20,9 +16,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic10-applied-derivative/Temp_TOPIC10_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 7954f917b89c64527b166d02aac1844da08ed806
+ACADEMIC_SOURCE_BLOB: 952ce21e99953348068b6499449dae75d4490d10
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC10_R06_CURRENT_SOURCE_EQUIVALENCE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: 4cf2638f752b93fd87aa5446a1d89b66665afede
+REVIEW_RECEIPT_BLOB: 74ecc58ea5c86f83b5549732a2dde769ad5696a8
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_NEW42_PUBLIC_CANONICAL_R04_20261113.md
 PUBLIC_CANONICAL_BANK_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da
 PUBLIC_ORIGINAL78_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC10_APPLIED_DERIVATIVE_ORIGINAL78_SGK_CANONICAL_INDEX_R01_20261112.md
@@ -35,6 +31,8 @@ SVG3_PATH: prototypes/thpt/visuals/THPT_TOPIC10_RATIONAL_ASYMPTOTES_R01.svg
 SVG3_BLOB: 4582dd5abd7d660d27b2d574fd7c6780e8271739
 SVG4_PATH: prototypes/thpt/visuals/THPT_TOPIC10_BOX_VOLUME_OPT_R01.svg
 SVG4_BLOB: ed12c88d5f79ba1f6c2e8db7b5e4e0f4077ce33c
+SVG5_PATH: prototypes/thpt/visuals/THPT_TOPIC10_ASYMPTOTE_READING_R01.svg
+SVG5_BLOB: fd95665e72fb029bf5182643ea3888f19bb9732b
 ORIGINAL_SGK_SOURCE_PATH: prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md
 ORIGINAL_SGK_SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574
 ORIGINAL_SGK_REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/G12_SGK_CHI_B01_B05_R00_INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_PASS_SOURCE_RECEIPT_20261102.md
@@ -444,34 +442,34 @@ Exactly 36 public placements reuse the same P01–P36 canonical questions; visib
 - RELEASE must check actual Golden render, heading tree, internal anchors/mobile and controls; no merge/deploy from AUTHORING.
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` effective `SLM-THPT-QUALITY-ONE v3.1.0`. R05 learner SHA bd33faa8e7bc348cda78da6e44d3f40a68223596, R04 active new42 source SHA 5f6ab764df6541ada9b4d4475403d29984d8e7da, receipt SHA 96cc3e1dee497f7a42e1ef50bee4c17692a9158e; no independent NotebookLM R04 PASS claimed.
+One normative `SLM-THPT-QUALITY-ONE v3.2.0` — `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. Source 952ce21e99953348068b6499449dae75d4490d10; Q18 74ecc58ea5c86f83b5549732a2dde769ad5696a8.
 
 | Qxx | Scoped academic/PED source evidence | Verdict | Trace | Release boundary |
 |---|---|---|---|---|
-| Q01 | Original G12 KNTT T1 ChI B01–B05 SGK/SBT checked source and 78 immutable original IDs, no fresh PDF scan. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q02 | 36 outcomes TOP10-O01..O36 in complete connected student narrative and one 120-ID canonical matrix. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q03 | Domains, derivative sign, local versus global extrema, open bounds, asymptotes and integer/physical feasible conditions. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q04 | Reasoned sign-table derivation, endpoint comparisons, rational asymptote proof and 12cm box volume differentiation. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q05 | 78 historical G12 canonical plus42 active source-locked new, same 120 unique IDs, corrected P20/P24/P36 solution depths. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q06 | Six new Written with one rubric per canonical stem and original G12 Written refs, no cloned Anchor. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q07 | Four SVG: derivative cubic, closed [0,3] x²−2x extreme, rational two asymptotes, box Vmax128. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q08 | 36 voluntary first tries and targeted D6 remediations with correct canonical exercise families. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q09 | Opens with why derivative slope is not enough to choose a feasible volume/profit decision. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q10 | Reintroduces local derivative signs, function domain, limit and physical dimensions before each method. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q11 | Meaning of whole-domain optimization/limits before mechanical f'=0 or formula memorization. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q12 | Read each SVG exact values and checked actual figure/adjacent example pairing. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q13 | Explains why stationary point only candidate, why open domain may attain max, why boundary matters, and why cost differs profit. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q14 | 36 learner first-tries after explanatory passages with optional reveal and specific recovery, not pedagogy cards. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q15 | One active new42 R04 canonical bank, projected into R05 with original42 history immutable and 78 original, all 120 IDs source-locked. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q16 | 0 private RD1 imported and public CLIENT_SELF_CHECK_NO_MASTERY; Final Submit safety belongs to RELEASE. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q17 | Three independent Topic pages without Topic Core, practice bank render requirement separate from SGK journey. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q18 | Exact R05 student source 68d3ccd1, canonical bank 5f6ab764 and signed R05 author receipt cdf1356b, v3.1.0. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_68d3ccd1 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q01 | Direct SGK G12 T1 B1–5 selected printed pp6–40; 104-page original PDF SHA256 faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd. Historical SBT scope retained. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q02 | 36 outcomes in six connected arcs, 120 original IDs and 36 public selfcheck placements. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q03 | Exact monotonicity and finite-zero conditions, continuity and attainment, domains, same-side limits, integer feasibility, symmetry proof. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q04 | Recomputed 36 examples and FirstTry answers; three-side fence, local/global extrema, rational derivative signs, cylinder h=2r, profit break-even. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q05 | 120 original canonical markers; 78 SGK +42 Topic, frozen bank and index unchanged. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q06 | 18 Written rubric headings/point patterns preserved by notation equivalence; no duplicated item or changed scoring. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q07 | Five figures with exact hashes and guided reading, four original plus new O18 two-panel asymptote task. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q08 | 36 FirstTry and 36 individualized Kiểm lỗi routes to original numbered Practice. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q09 | Motivation from slope insufficient for physical/financial optimum. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q10 | Domain, derivative, interval, continuity, limit and unit prerequisites before method. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q11 | Meaning first: pairwise comparison, attained bounds, geometric distance to asymptote, model objective before derivative. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q12 | Correct SVG values: cubic local ±2, endpoint min−1/max3, rational x=1/y=2, box Vmax128, two-panel asymptote reading. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q13 | Why finite-zero exception, endpoint/kink, same-side limits, residual denominator, symmetry and integer comparison matter. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q14 | 36 voluntary comparisons and specific retry routes, independent transfer tasks in Knowledge. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q15 | Original78 index + NEW42 single bank unchanged; 120 markers and all 36 replay stems match current original placements; no content_version/key/rubric changes. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q16 | CLIENT_SELF_CHECK_NO_MASTERY; zero private items, official readiness NOT_CLAIMED, Final Submit runtime separate. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q17 | Three pages X-G.5 structural notation; 1599 balanced inline pairs, 1 standalone display, 157 balanced disclosures; no dollar or slash inside TeX. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q18 | Current learner 952ce21e99953348068b6499449dae75d4490d10, author receipt 74ecc58ea5c86f83b5549732a2dde769ad5696a8, scoped Q18 v3.2.0, no independent reviewer PASS. | AUTHOR_SELF_VERIFIED_A02_CP06 | SOURCE_LOCKED_952ce21e | RELEASE_QA_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
 
-- **SGK** KNTT Toán12 Tập1 ChI B01 printed5–14/PDF1 7–16, B02 15–19/17–21, B03 20–25/22–27, B04 26–32/28–34, B05 33–41/35–43, chapter end42–44/44–46. Primary original publisher scan SHA256 faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd.
-- **SBT** Toán12 Tập1 B01 4–9/PDF1 2–7, B02 10–16/8–14, B03 17–20/15–18, B04 21–26/19–24, B05 27–32/25–30, end33–37/31–35. Publisher scan SHA256 db9d07a2fbe55cda3b4b50fb13d1767e45a7552f668b726241c59febac69c0ca.
-- Exact original source receipt `prototypes/thpt/review-packets/G12_SGK_CHI_B01_B05_R00_INDEPENDENT_NOTEBOOKLM_ACADEMIC_PED_PASS_SOURCE_RECEIPT_20261102.md` blob8fef1c7dbd9b404881ff40cec8147c9ae89ef473 and direct owner PDF S1 p↔PDF1 original source `prototypes/thpt/review-packets/G12_SGK_S1_ORIGINAL_PDF_VISUAL_SCOPE_AND_CHI_PREFLIGHT_20261102.md`. No new PDF scan in this Topic turn; original independent PASS frozen **only original SGK** (78 items,36 outcomes,6 SVG), not new CĐ10.
+- Original owner Drive SGK Toán 12 KNTT Tập Một, SHA256 faeb554bea9cf81189c5e790b1b1edb42f50b3648694acc80dc99682ada3f1fd, 104 PDF pages; direct selected printed pp6,7,8,10,15,16,18,20,22,24,26,27,28,30,31,33,34,36,37,39,40, PDF1 printed+2. B1 printed5–14, B2 15–19, B3 20–25, B4 26–32, B5 33–41, end42–44.
+- Original SBT historical printed4–37/PDF1 2–35 preserved, no new SBT scan. Original SGK source f0862dcdab21dec136e43969f45c42638e7c7574, historical SGK-only review 8fef1c7dbd9b404881ff40cec8147c9ae89ef473, not independent current Topic verdict.
+- Direct source bridges and exact affected proof are recorded in current Q18 74ecc58ea5c86f83b5549732a2dde769ad5696a8. Extra models/transfer examples are clearly Topic learning material, not claims of verbatim SGK exercises.
 
 ## D1_D6_EVIDENCE
 
@@ -479,7 +477,7 @@ One normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.
 - D2 36 newly written worked examples with full reasoning and choice of derivative/limit/endpoint/feasibility, plus learner first try and explanatory comparison.
 - D3 78 unchanged G12 SGK canonical item references (without duplicated content) plus36 NEW Practice, difficulty spanning basic concept, constrained arithmetic, algebraic transfer and modeling.
 - D4 6 NEW Written/Anchor /7 rubrics, one canonical item each, multi-step on local/global max, open/closed interval, rational asymptotes, cubic survey, max box volume and integer profit.
-- D5 4 original math SVG with title/desc and guided reading, 3 specs SPEC_ONLY not runtime/browser.
+- D5 five math SVG with title/desc and guided reading (four original plus new O18 graph-reading task), 3 specs SPEC_ONLY not runtime/browser.
 - D6 36 outcome-specific routes to recover sign, domain, limit, endpoint, model and answer feasibility misconceptions.
 
 ## PED1_PED6_EVIDENCE
@@ -487,15 +485,17 @@ One normative source `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.
 - PED1 WHY motivation in every of36 modules: function behavior, maximizing, asymptotic graph and real optimization.
 - PED2 local prerequisite before concept on each outcome: derivative meaning, domain, limits, integers and units.
 - PED3 meaning ahead of method: pairwise monotonicity, sign changes, extremum attainment, asymptotic limit and feasible model.
-- PED4 four new SVG readouts show f' sign, endpoint extrema, TCD/TCN sides and feasible box with correct calculations.
+- PED4 five SVG readouts show f' sign, endpoint extrema, TCD/TCN sides and feasible box with correct calculations, plus two-panel graph-reading transfer.
 - PED5 explained example choices and mathematical limits: domain and f' zero insufficient, open vs closed extrema, one-sided limits, constrained integer q.
 - PED6 36 first tries before optional reveal and matching D6 return-to-outcome.
 
 ## AUTHORING_A1_A7
 
-A1: current source SHA 6cac404d215a758b9df477cb30ac54b6710b2e45, active corrected bank SHA 5f6ab764df6541ada9b4d4475403d29984d8e7da, current Q18 receipt dbe3bbba36e6192d034794867d31618bf4e51ad8 and one stable packet. A2: historical owner G12 ChI SGK/SBT printed-page source receipt. A3: substantive author Q18 self-QA on new DELTA_C, no new independent NotebookLM review. A4: 36 outcomes, 120 canonical IDs, 36 selfcheck reuse, six new Written. A5: coherent six-part conceptual teaching, 36 first tries and four exact figures. A6: 42 active new solutions and the material P20/P24/P36 repairs and numeric volume/interval cases rechecked. A7: zero private RD1 and no official readiness/Mastery; RELEASE must test runtime Final Submit.
+A1: source 952ce21e99953348068b6499449dae75d4490d10, Q18 74ecc58ea5c86f83b5549732a2dde769ad5696a8, custody eebc96d05017913567dec8709e792a0429023f9f; single packet and frozen bank/index. A2: direct targeted owner SGK B1–5 and historical SBT. A3: AUTHOR_SELF_VERIFIED affected DELTA_C, no independent reviewer PASS. A4: 36 outcomes, 120 original IDs, 18 Written, 36 exact replays. A5: 36 FirstTry/D6 and five source-locked figures. A6: Work repair and equivalent X-G.5 notation, no identified P0/P1 in affected scope. A7: zero private RD1; no official readiness/Mastery/authorization.
 
 ## DELTA_LEDGER
+
+A02 CP02–06: Work #1055 Knowledge and direct SGK bridges; five figures (one new), X-G.5 three pages, 120 Practice/36 replays equivalent notation only, 18 rubric headings/point patterns unchanged. Source 952ce21e99953348068b6499449dae75d4490d10; historical signed source 7954f917b89c64527b166d02aac1844da08ed806. Previous source evidence confined to its scope. No bank/runtime changes or independent reviewer PASS.
 
 Historical R01 bank/source/review and intermediate R02 repair source and R03 student text remain immutable. R04 `DELTA_C_ACADEMIC_MATERIAL`: continuous learning arc from slope to conditional optimization, corrected math examples paired with interval/box SVG, removed repeated generic remediation and technical Practice table; current NEW42 R04 canonical bank promotes the substantive R02 solution/rubric clarification changes and three stem/key changes P20/P24/P36. P36 demonstrates an open domain **can attain** a maximum, a crucial conceptual counterexample. P24 explicit continuity hypothesis for f' sign inference. New exact source-locked Q18 self-QA receipt. No hidden RD1, no merge/deploy.
 
