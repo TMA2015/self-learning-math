@@ -1,11 +1,7 @@
-<!-- #1109 A02 CP03: active candidate source 374303a3f1fb78e11c98ba9041c41b538399f3f3 at d441a95e598b389b6a8ec0bcfb2915004a2af979 is NOT CONTENT_READY. All signed source/receipt pointers below remain historical until affected-scope verification and relock; no RELEASE intake. -->
+<!-- #1109 A02 CP04 source lane current; historic signed snapshots remain in Git. -->
+**CONTENT_READY — AUTHORING ONLY:** learner 64dc1d59c48e1f666c0f6b3f33155175724b078b, current Q18 371a76f49383e5bca016627c01b8f1887f56cd0c, V2 307b035a06b93bc3a6489cc30b4ce0f1211fdde2, original36/NEW22 frozen, Work corrections and X-G.5 completed on all three public pages. Current source affected self-QA, not independent PASS or RELEASE authorization. Legacy Bài9 P2 explanation wording deferred #1090 per owner scope; correct key and stem retained.
 
-<!-- TOP08_MASTER974_CURRENT_AUTHORING_R05_READY_20261121 -->
-**HISTORICAL SIGNED SNAPSHOT v3.2.0, NOT CURRENT CANDIDATE READY:** one original R05 learner source `0853a6de4be055d63a767b58dab20fa113e11098` (Git source commit `c2b045234514b1e9f2042064c145cd6abfffd6da`), same original36 G11 SGK placement bank `43cbb73bd06e0da6bf8838d925186bc4db4194a7` and Topic22 source `2e93db80384de53e208248eaa0396a7f487302ac`; existing current author Q18 receipt `9e80780f05096269b7cd1942c7006138d72d7ec9`, source custody `b997e079eac17c2cd807b57124cdfc142259f260`, **one V2** `acd074d8104eab7639037c94aa64782092c80816`. Five actually verified student issues #977-025–029 fixed: 18/18 genuine D6 recovery routes, 18/18 public question-only selfcheck lookup, O08 correct left/right probes near x3, O10 x6 instead of false x3, O12 independent limit at −∞ with result −3 rather than copied previously revealed +∞ example. Original 58 unique Practice items and 10 Written rubrics, 18 selfcheck question stems, three SVG fully preserved; 77/77 balanced disclosures and only one SGK credit footer. Corrected authoring management comments flagged NOT_FOR_STUDENT_VIEW. S1 scanned original G11 ChV B15–B17 proven in previous scoped receipt; affected Delta C self-Q18 under v3.2.0, no new independent NotebookLM reviewer Academic/PED PASS, RD1, Final Submit/Mastery, AP/R website, owner release authorization or merge/deploy. Historic original R05 QA counts are previous snapshot only, not falsely current new independent tests.
-
----
-
-# CĐ08 — Giới hạn và Tính liên tục · AUTHORING upgrade in progress (stable PACKET_ID R01)
+# CĐ08 — Giới hạn và Tính liên tục · AUTHORING source ready (stable PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -14,19 +10,19 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: BLOCKED_BY_AUTHORING
-SOURCE_COMMIT: c2b045234514b1e9f2042064c145cd6abfffd6da
+STATE: CONTENT_READY
+SOURCE_COMMIT: 5ffb5778bb5d5f0e4b039d476e11d893de4d7c74
 AUTHOR_PR: 829
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/829 — DRAFT AUTHORING, not merged/deployed
 CATALOG_TOPIC_ID: CD08
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-ACADEMIC_SOURCE_BLOB: 0853a6de4be055d63a767b58dab20fa113e11098
+ACADEMIC_SOURCE_BLOB: 64dc1d59c48e1f666c0f6b3f33155175724b078b
 REVIEW_RECEIPT: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md (Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS)
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-REVIEW_RECEIPT_BLOB: 9e80780f05096269b7cd1942c7006138d72d7ec9
+REVIEW_RECEIPT_BLOB: 371a76f49383e5bca016627c01b8f1887f56cd0c
 AUTHOR_HANDOFF: prototypes/thpt/release-handoffs/THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R05_HANDOFF_V2_20261115.md
-AUTHOR_HANDOFF_BLOB: acd074d8104eab7639037c94aa64782092c80816
+AUTHOR_HANDOFF_BLOB: 307b035a06b93bc3a6489cc30b4ce0f1211fdde2
 PUBLIC_ORIGINAL36_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_ORIGINAL36_SGK_PLACEMENT_INDEX_R05_20261115.md
 PUBLIC_ORIGINAL36_INDEX_BLOB: 43cbb73bd06e0da6bf8838d925186bc4db4194a7
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC08_LIMITS_CONTINUITY_NEW22_PUBLIC_CANONICAL_R05_20261115.md
@@ -40,7 +36,7 @@ SVG3_PATH: prototypes/thpt/visuals/THPT_TOPIC08_IVT_BISECTION_R01.svg
 SVG3_BLOB: 60a389862b5bc221a51447179ec8aab6c03b7ca4
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: #1109 A02 affected-scope final source QA + Q18/V2/REGISTER relock pending; shared bank deferred
+BLOCKERS: NONE
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
@@ -53,29 +49,17 @@ RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 
 ## R05_STUDENT_VIEW_CERTIFICATION
 
-- **18/18 outcome:** có lời giảng bản chất, Ví dụ với Đề bài/Lời giải độc lập, 18 Vận dụng/Đối chiếu đặt ngay sau bài. Bốn chặng học liền mạch, không 7 ô kỹ thuật.
-- **58/58** public canonical question stems/answers/solutions thực tế ở Luyện tập (36 old G11 ChV SGK +22 Topic R05), 10 Written/rubric; 18 public selfcheck stems P01–P18 chỉ câu hỏi, `CLIENT_SELF_CHECK_NO_MASTERY`.
-- Hai original36 placement sửa đúng nội dung B15-C03→O05, B17-P07→O17; Topic W01/W02 sửa gần trùng CĐ07 thành content_version2, giữ item_id và một ngân hàng đáp án/rubric.
-- SVG1 R05 accessible description đúng “nằm **phía trên** giới hạn 2” và giữ 8 điểm; SVG2 jump, SVG3 IVT gốc vẫn source-locked.
-- Q18 R05 `AUTHOR_SELF_VERIFIED` receipt blob `3285d8d9db6882e798995d92a0d8f83ce592d8e9` trên exact learner SHA `a33d1e6a20dba1dc7861097e231906aff2938c02`, **159/159** direct assertions. Không NotebookLM independent review mới, không UAT học sinh thật hay browser/AP RELEASE.
-- **R04 lịch sử bất biến:** source `8fd1c9d223ccab794ae20fc8f0206df32f0671c4`, Q18 receipt `c3cfa8ca4ec9c05710fed4ab2428f3d2814eec07`, V2 blob `cd18380d72b41d09cb0b6ba241e6089644b7aeeb`; không kế thừa PASS sang R05.
-- RELEASE vẫn riêng: MathJax/SVG rendering/Golden responsive, Final Submit, 0 protected RD1/Mastery, QA browser/mobile devices, chủ dự án quyền phát hành. AUTHORING NO MERGE/DEPLOY.
-
-## 18/11/2026 · Active R05 learner prose and formal-knowledge closure
-
-- Current effective learner SOURCE_BLOB `b3d24c35675d4b39fb8d14c201b7d965d1183f44`, target Q18 AUTHOR_SELF_VERIFIED receipt `81dedff34a973b5a1db6737c16ff5d3020e613b6`, metadata `b4e108b12e15d483c73a5dba436f85e437a08788`, handoff V2 `df3bb1695043eafe1b269fc1450496f5cf86b4ad`. This updates an *existing single R05 packet*, not a second Topic source.
-- 4 student-facing real formal knowledge statements: sequence epsilon limit, infinite geometric sum |q|<1, continuity and one-sided endpoint, zero-crossing IVT; plus one short recap. Two previously unreceipted-but-correct learner prose refinements at O13/O14 between original signed R05 (`a33d1e6a20dba1dc7861097e231906aff2938c02`) and pre-edit (`8e40965f6174b52c386ab461440b1ed11ccededc`) are now explicitly reviewed and recorded. Historical 159/159 source Q18 retains original SHA.
-- Original 58 Practice canonical stems, keys, solutions and rubric, 18 public question-only replays, item IDs, image paths and disclosures byte-exact; no official Topic Readiness/private RD1/Skill Mastery. Scoped author self-QA is not independent NotebookLM PASS; RELEASE browser, AP/Golden and owner permissions separate.
+18 modules with independent worked examples, 18 FirstTry/D6; 58 original Practice ID/key/solution and 10 Written rubric criteria retained by equivalent notation (not byte parity); 18 public replay question-only stems exactly match their Practice placement. All three original SVG unchanged; 1295/1295 inline and 2/2 display pairs, 77/77 details, 52 rubric point tokens unchanged. Direct SGK targeted CP03 and historical unchanged source/SBT custody. Current source Q18 371a76f49383e5bca016627c01b8f1887f56cd0c; historic prior evidence preserved in prior Git blobs. P0/P1=0 in affected scope, legacy P2 deferred under owner bank freeze. No browser/AP/R, independent Academic/PED PASS, RD1/Mastery or release authorization.
 
 ## AUTHORING A1–A7
 
-- [x] A1_SOURCE_SNAPSHOT — learner source `b3d24c35675d4b39fb8d14c201b7d965d1183f44`, current scoped Q18 `81dedff34a973b5a1db6737c16ff5d3020e613b6`, A1 `b4e108b12e15d483c73a5dba436f85e437a08788`, V2 `df3bb1695043eafe1b269fc1450496f5cf86b4ad`; original SGK36 source and NEW22 bank unchanged.
-- [x] A2_SGK_SBT_SCOPE — SGK KNTT Toán11 T1 ChV B15 printed104–110,B16 111–118,B17 119–122,end123; historical original publisher SBT direct scan B15 75–78,B16 79–83,B17 84–86,end87–90. No new scan claimed; source/extension boundary recorded.
-- [x] A3_NOTEBOOKLM_VERDICT — current Q18 `AUTHOR_SELF_VERIFIED v3.1.0` with real math/PED/source Q01–Q18 evidence, 159/159 author source/math checks, no new NotebookLM report or fabricated independent PASS; historical original SGK ChV reviewer retained only for source R02/03.
-- [x] A4_ITEM_OUTCOME_IDS — 18 lesson IDs/outcomes and 58 public canonical unique IDs in full single V2 matrix (36 SGK source pointers + 22 NEW); 18 Self Check placements refer back to P01–P18 without item duplication.
-- [x] A5_D1_D6_SCOPE — concept-first and reasoned example for each of 18 outcomes, 18 first tries/D6, 4 new Written rubrics /7, 3 source math SVG; two optional lab specifications only.
-- [x] A6_DELTA_RESOLVED — CĐ08 new academic content is DELTA_C_ACADEMIC_MATERIAL, signed self QA source-locked, P0/P1=0; old SGK ChV R03 unchanged.
-- [x] A7_PUBLIC_PRIVATE_BOUNDARY — private RD1 0 imported; no independent TOPIC_READINESS, no Mastery, Final Submit browser/negative leakage tests owned by RELEASE.
+- [x] A1_SOURCE_SNAPSHOT — learner 64dc1d59c48e1f666c0f6b3f33155175724b078b, Q18 371a76f49383e5bca016627c01b8f1887f56cd0c, V2 307b035a06b93bc3a6489cc30b4ce0f1211fdde2; frozen bank/index unchanged.
+- [x] A2_SGK_SBT_SCOPE — CP03 direct SGK KNTT G11 T1 B15–17 target printed pages; previous original SBT audit retained only unchanged scope.
+- [x] A3_NOTEBOOKLM_VERDICT — AUTHOR_SELF_VERIFIED v3.2.0 current affected source; no independent reviewer PASS.
+- [x] A4_ITEM_OUTCOME_IDS — 18 outcome/lesson IDs, 58 original public IDs and 18 exact replay placements, 10 Written.
+- [x] A5_D1_D6_SCOPE — Concept-first four arcs, 18 worked examples, 18 Vận dụng/D6, 3 original SVG; X-G.5 3 pages.
+- [x] A6_DELTA_RESOLVED — Work Delta C Knowledge and notation-equivalent Practice/Replay; scoped P0/P1=0. Legacy P2 Bài9 deferred #1090 per owner.
+- [x] A7_PUBLIC_PRIVATE_BOUNDARY — 0 private RD1 imported; no Mastery, official Readiness or release authorization. Final Submit remains RELEASE.
 
 ## PED1–PED6 / Q09–Q14
 
