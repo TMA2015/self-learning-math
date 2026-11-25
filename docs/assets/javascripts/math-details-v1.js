@@ -147,13 +147,13 @@
 })();
 
 
-/* OWNER #1055 R-W1, DELTA_A_UI. Only Knowledge routes CD01–08.
+/* OWNER #1055, X-G.5, DELTA_A_UI. Shared Topic Knowledge renderer CD01–22.
  * Never change canonical learner Markdown, assessment, answers or route chrome.
  * Preserve inline DOM, recover the signed TeX in escaped display delimiters,
  * and give these disclosures one serialized MathJax owner. */
 (()=>{
  "use strict";
- if(!/\/thpt-preview\/chuyen-de\/cd0[1-8]\/kien-thuc\/(?:index\.html)?$/.test(location.pathname))return;
+ if(!/\/thpt-preview\/chuyen-de\/cd(?:0[1-9]|1[0-9]|2[0-2])\/kien-thuc\/(?:index\.html)?$/.test(location.pathname))return;
  const make=(tag,value)=>{const el=document.createElement(tag);if(value!==undefined)el.textContent=value;return el};
  const math=(tex,display=false,source=tex)=>{
   const el=make("span",display?"\\["+tex+"\\]":"\\("+tex+"\\)");
@@ -299,5 +299,8 @@
   normalize(root);
   for(const el of root.querySelectorAll(".arithmatex"))if(!el.dataset.topicRw1Original&&!el.querySelector("mjx-container"))el.dataset.topicRw1Original=el.textContent;
  }
- window.SLMTopicRW1Math=Object.freeze({prepare,normalize,typeset,disclosure});
+ const shared=Object.freeze({prepare,normalize,typeset,disclosure});
+ window.SLMTHPTKnowledgeMath=shared;
+ // Compatibility for the already published CĐ01–08 adapters and regression.
+ window.SLMTopicRW1Math=shared;
 })();
