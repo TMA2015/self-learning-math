@@ -1,3 +1,42 @@
+<!-- #1109 A02 CP04 CURRENT exact-source author self-QA; previous sections are historical evidence, not active claims. -->
+# CĐ08 — AUTHOR_SELF_QA_RECEIPT · A02 CP04 · 25/11/2026
+
+PACKET_ID: THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01
+CONTENT_REVISION: R05
+STANDARD_ID: SLM-THPT-QUALITY-ONE
+STANDARD_VERSION: 3.2.0
+LEARNING_PATH: TOPIC
+Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
+ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
+SOURCE_BLOB: 64dc1d59c48e1f666c0f6b3f33155175724b078b
+ACADEMIC_SOURCE_BLOB: 64dc1d59c48e1f666c0f6b3f33155175724b078b
+SOURCE_COMMIT: 5ffb5778bb5d5f0e4b039d476e11d893de4d7c74
+PREVIOUS_SIGNED_SOURCE_BLOB: 0853a6de4be055d63a767b58dab20fa113e11098
+PREVIOUS_SIGNED_Q18_BLOB: 9e80780f05096269b7cd1942c7006138d72d7ec9
+ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
+P0: 0
+P1: 0
+P2: 1 pre-existing Bài 9 explanation wording, noted CP03; owner #1109 forbids academic changes in Practice/Replay and freezes bank; correct stem/domain n>0 and key 1. No changed meaning, not a new P0/P1; revisit #1090 when unfrozen.
+AUTHOR_SIGNOFF: A02_CP04_AUTHOR_SELF_VERIFIED_64dc1d59c48e1f666c0f6b3f33155175724b078b
+ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
+OFFICIAL_READINESS: NOT_CLAIMED
+PRIVATE_RD1_IMPORTED: 0
+RELEASE_AUTHORIZATION: NO
+
+S1_RECEIPT: CP03 direct original SGK KNTT G11 T1 ChV B15–17 target printed pp105–106,108–109,114–117,120–122 (PDF SHA256 4492122eb2c9df626582d37b5c3d0e6513d66ca68d80d8a1e69577aa8b706828; checkpoint #1109 comment 7166873263). Squeeze, sqrt, infinite-limit rules, sequential definition, continuity on intervals and sign-change verified. Prior original S1 scan and SBT receipts remain valid for unchanged material only, not newly read entire books. Threshold/epsilon and full IVT intuition supplement original definitions; bisection application.
+OUTCOME_AUDIT: Read all 18 current Knowledge modules, actual examples, FirstTry, voluntary Đối chiếu, D6; re-evaluated CP01/03 material and CP04 local fixes. Reviewed all 205 changed Practice/Replay lines from CP01 to CP03 against actual old/current source, plus final CP04 notation-only changes. All 58 stem/key/solution meanings, IDs and 10 Written rubric criteria/point allocations retained; 18 replay exact stem matching current practice, 52 rubric point tokens unchanged, all canonical/replay markers byte-exact. Old 58-item audit and 159 assertion receipt retained on old source only.
+MATH_VERIFICATION: O01 epsilon N=101/1001 and 2/n bound; O02 n−1 lower bound, alternating signed subsequences, finite/infinite ratio and product with positive limiting factor; O03 squeeze |(-1)^n/n²|=1/n² and negative geometric power; O04 finite laws, sqrt via difference of squares and A=0, unequal-degree limits 0 and +∞; O05 q=−1/2 S=16/3, R2=4/3, zero sequence exception, strict remainder B19 n=5; O06 punctured domain, factor to x+7 at7→14; O07 left4/right2; O08 accumulation prerequisite and sin²(1/x)/x² sequences at 1/(π/2+kπ) and 1/(kπ), left+∞ right−∞ for (x−4)/(x−3); O09 degrees and x³/(x²+1) sign; O10 at −2 limit1 and at6 limit12; O11 numerator x−1 and denominator conjugate→4; O12 positive∞ example4 and negative∞ transfer−3; O13 f(8)=16 and hole vs actual point; O14 left2/right1 and 1/(x−3)²→+∞ both sides; O15 domain [−2;6] endpoints0 and half-open convention; O16 D=(−∞;1]∪[4;+∞), denominator x=3 already excluded; O17 sign-change sufficient, not necessary or uniqueness; O18 x²−2 midpoints 1.5/1.25, signs 0.25/−0.4375, interval [1.25;1.5], example x²−5 keeps [2;2.25]; g=x²−3 firsttry keeps [1.5;2]. Exact practice bisection B57 [5/4;3/2], B58 a=−2 and sole root3/2. CP04 makes prerequisite and stop condition explicit, defines local f/g before computations, no new learner item.
+PED_VERIFICATION: Concept-first four arcs; all 18 examples/FirstTry/D6 retained; each exact formula now readable through LaTeX X-G.5. Squeeze and square-root proof fill prior missing bridges; concrete examples of finite/±∞ distinguish unbounded from infinite limit; condition domain before method and sign-change as sufficient not necessary; sequential definition + threshold connect rather than compete. 3 SVG unchanged and actual SVG title/desc match mathematical guide. 1295/1295 inline pairs, 2/2 standalone display pairs, balanced inline braces, 77/77 details; no inline raw slash; no fresh browser rendering or independent review. Historical source math/PED evidence applies to unchanged scope only.
+CANONICAL_Q15: original36 index 43cbb73bd06e0da6bf8838d925186bc4db4194a7 and NEW22 bank 2e93db80384de53e208248eaa0396a7f487302ac untouched by owner freeze; learner display notation equivalence, not byte parity. 58 original placements with exact markers and point allocations. Bài9 legacy P2 wording recorded for #1090; no new key/rubric.
+ASSESSMENT_Q16: 18 question-only public replays mapped exactly to Bài 3,6,7,12,18,22,25,29,32,34,36,39,43,46,50,52,56,57. Original voluntary lookup unchanged. No official readiness, no private RD1, no Mastery, no changes to Final Submit/runtime. RELEASE actual browser QA separate.
+
+**Disposition:** author source-only affected QA and retained unchanged snapshot evidence. CONTENT_READY source lane only; no independent NotebookLM Academic/PED PASS, no RELEASE_READY or authorization. Bài9 P2 legacy flag is explicitly deferred per owner scope, not hidden. CP01/CP03/CP04 source changes DELTA_C_ACADEMIC_MATERIAL in Knowledge plus notation-equivalent X-G.5 across three pages. No new receipt file; history follows.
+
+---
+
+## Historical signed evidence — superseded for current source pointer
+
 <!-- TOP08_MASTER974_CURRENT_AUTHOR_SOURCE_Q18_20261121 -->
 ## CURRENT Q18 AUTHOR_SELF_VERIFIED v3.2.0 — CĐ08 source chính, 18 outcome, 58 câu gốc
 
