@@ -1,17 +1,9 @@
-<!-- TOP03_MASTER974_Q18_PED6_20261121 -->
-## CURRENT AUTHORING CĐ03 — one V2 source-locked snapshot
-Same canonical learner `prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md` Git blob `38f41f013e75b42605d7a88f9205c20af6315a41`, Q18 author self-verified `ef40b5871762558959108cf1879155c7e14158fe`, custody `3ce4f7ec703a437bea18b5389f2968d099cc7c58`. Inherited 31-item math/12-outcome deep audit on untouched learner mathematics; new source only adds O01 actionable `Kiểm lỗi` and one opt-in Câu 1–12→Practice mapping `1,3,5,7,9,11,19,14,13,17,28,26`. No new bank items or Written rubrics; total 44 voluntary disclosure blocks, exact original 31 Practice and three SVGs kept. `DELTA_C_PED_TARGETED`, one source, one signed Q18 file, 0 current P0/P1 found; no independent NotebookLM fresh verdict. Historical QA HOLD headings below refer to superseded source snapshots only. `CONTENT_READY` AUTHORING limited; RELEASE AP/R/UI and owner authorization unclaimed. No merge/deploy.
-
----
-
-# AUTHORING QA HOLD — CĐ03, một bản thảo hiện hành đã sửa D6 và Ví dụ
-
-**Scope:** CĐ03/22 trong danh mục được chủ dự án yêu cầu theo thứ tự. Chuyên đề độc lập có ba trang Kiến thức / Luyện tập / Tự kiểm tra; SGK KNTT Toán 10 tập 2 ChVI B18 chỉ là nguồn S1 và item reuse, không là thứ tự nội dung Topic. 12 outcomes, 31 unique PUBLIC canonical IDs, 3 SVG. Mô hình tương tác SPEC_ONLY, không trình bày là website đã hoạt động. AUTHORING Draft PR #820, không merge/deploy.
+# CĐ03 — current one V2 AUTHORING handoff · A01 CP06
 
 PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_ONLY_CUSTODY_20261116.md
-AUTHOR_METADATA_BLOB: 3ce4f7ec703a437bea18b5389f2968d099cc7c58
+AUTHOR_METADATA_BLOB: cf8d6d1edb19397c33e795e14449d163b8398a58
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -19,9 +11,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 38f41f013e75b42605d7a88f9205c20af6315a41
+ACADEMIC_SOURCE_BLOB: bd3b88b635b203872a9afa5893cc1e3af3e7d7c6
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-REVIEW_RECEIPT_BLOB: ef40b5871762558959108cf1879155c7e14158fe
+REVIEW_RECEIPT_BLOB: 28c43a014a015b1c81986e0b9c7b7127c3dfe55b
 PUBLIC_SOURCE_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
 PUBLIC_SOURCE_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
 PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
@@ -37,7 +29,7 @@ SVG0_BLOB: 57dc5868ca6b726c4936b2b5e5a3419112752930
 SVG1_PATH: prototypes/thpt/visuals/THPT_TOPIC03_EQUIVALENCE_VS_SQUARING_R01.svg
 SVG1_BLOB: abb748c7b13dadc1786ea0de5f489a09dd2fe676
 SVG2_PATH: prototypes/thpt/visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.svg
-SVG2_BLOB: 7ee7acd819d9f6d8eb66bcc4ac8abebfd7d4521b
+SVG2_BLOB: 78689938988f1a4e097aebbade89c85be0ab8b79
 CATALOG_TOPIC_ID: CD03
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
 ACADEMIC_VERDICT: SELF_VERIFIED
@@ -50,6 +42,9 @@ PRIVATE_RD1_COUNT: 0
 PRIVATE_RD1_SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
+AUTHOR_SIGNOFF: A01_CP06_CD03_bd3b88b635b203872a9afa5893cc1e3af3e7d7c6
+
+Previous V2 snapshot b70e42a176f46295e3a8ad7985e9551d9821635f remains immutable in Git. Current delta evidence: #1109 CP03–CP06. AUTHOR_SELF_VERIFIED, no independent NotebookLM or RELEASE verdict.
 
 ## LESSON_IDS
 
@@ -172,63 +167,48 @@ Exactly 12 references to already-public Practice items, one for each outcome. Th
 | TOP03-O11 | THPT-TOP03-ADD19 | CLIENT_SELF_CHECK_NO_MASTERY |
 | TOP03-O12 | THPT-G10-B18-P04 | CLIENT_SELF_CHECK_NO_MASTERY |
 
-
-## 18/11 — Targeted formal-mathematics learner clarity (DELTA_C)
-
-- Effective source blob `8b0e5be33b42d8b1d3e743bb2502501789333075`, current signed Q18 `537186b1763ef06bed205f45d8d3b907dc3c7aa2`, updated A1 metadata `4f998f805133cf9945e002ed2680e6891a78e788`. Previous effective source `daeeb5d571d120b31265f8c603a76049a1f2c78c` is retained as an immutable historical snapshot.
-- Genuine mathematical labels at TOP03-O01 equivalent equations (same solution set on same domain), O03 zero-product rule without invalid division, O07 sqrt(A)=B iff B≥0 and A=B²; one concise recall block. Tested on existing examples and conditions, not by making 12 duplicate template cards.
-- 31 canonical Practice items + answer/solutions/rubrics/D6, 12 public self-check question-only repeats, SVG references and disclosure order unchanged exactly from previous effective source. The earlier 11 targeted D6 navigation fixes are still included; G10 original canonical and source IDs untouched.
-- Source-scoped AUTHOR_SELF_VERIFIED, not a new independent external NotebookLM verdict. Existing Draft #888 author QA HOLD remains until latest HEAD checks. RELEASE integration/browser/Final Submit remains separate, no merge/deploy.
-
-## R06 formatting/numbering Delta-A custody
-
-- Current source `9cc738526f95e68a31f99409d8672aff44f5c8a9` preserves exact predecessor learner math and every original canonical question, answer, rubric, D6, SVG and public selfcheck. Only heading depth/sequence (H1 page → H2 group 1..N → H3 lesson 1.1..), and formatting of Practice labels changed.
-- Signed Q18 `22c934be731baf6690a52c28ba8cb993f34ee013` references old immutable source `05e9675a7dca802aa9540a96a46d76d013055d8b` and receipt `871edc307cae9e156dab528da6d98653b6686331`. No NotebookLM independent new reviewer PASS, no functional website assessment claims.
-- Author metadata `08bdb553501f9a9627a52cf6e5248501ad7044ac` retains all previous A1–A7/outcome/index evidence, with current source pointer. RELEASE must check rendered DOM, anchors/responsive. AUTHORING NO MERGE/DEPLOY.
-
 ## QUALITY_Q01_Q18_EVIDENCE
 
-Single normative source: `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md` with effective v3.1.0. Author R04 source 9cc738526f95e68a31f99409d8672aff44f5c8a9, receipt 22c934be731baf6690a52c28ba8cb993f34ee013. No new NotebookLM independent review.
+One standard: THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md, v3.2.0.
 
-| Qxx | Specific mathematical and pedagogical evidence | Scope verdict | Source lock | Release status |
+| Q | Evidence | Mode | Snapshot | RELEASE |
 |---|---|---|---|---|
-| Q01 | S1 only for original B18 SGK G10 T2 print25–27/SBT19–21 and source-scope original 8 items, no PDF rescan claimed. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q02 | TOP03-O01..O12 one independent Topic learning source, 31 unique canonical public IDs, 12 opt-in selfcheck refs. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q03 | Equivalent and one-way transformations, zero-factor, quadratic, domain of fractions/radicals, absolute values, real positivity. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q04 | Proof reasoning includes x=3 vs x²=9, sign of sqrt B, radical-domain candidate filtering, substitution and time/geometry modelling. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q05 | 8 original canonical (six formative+two Written) +23 new original canonical with distinct structures, one answer each. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q06 | Four Written: originals HPT-*WRI-18-01/02 rubric 5/6, two new W01/W02 rubric /7, Anchor only role. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q07 | Three actual SVGs: equivalence/squaring, two-radical numberline domain for x=-4/-2, original G10 B18 radical decision flow next to method. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q08 | 12 specific First Try + D6 returning to condition, false candidate, correct root/units; no generic boilerplate. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q09 | Why solve? Candidate roots after transformation might not satisfy original equation, foregrounded before algorithms. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q10 | Local prerequisites: real sets, zero-product, Δ, absolute value, sqrt nonnegative, physical variable units. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q11 | Explains reversible steps before equivalent arrows, why square is one way, why substitution requires t≥0. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q12 | Radical-domain SVG now directly alongside matching example sqrt(x²+7x+11)=sqrt(x+3) and original flow embedded. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q13 | Why test sign after square, denominator before cancelling, original equation after filtering, and physical conditions. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q14 | 12 voluntary Đối chiếu disclosures, no visible answer before learner requests; remedial routes are algebra-specific. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q15 | Unique 8 original+23 new IDs; HPT historical original Written names preserved, no re-ID/duplicate rubric. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q16 | 0 private RD1 imported, public selfcheck CLIENT_SELF_CHECK_NO_MASTERY; Final Submit and runtime no-leak still RELEASE gate. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q17 | Three-page independent Topic, no separate Core; optional biquadratic O11 not promoted into B18 Core. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q18 | Exact Git SHA e94bbe37 and author Q18 receipt 53fa40ee, scoped 12 outcomes and 23 new solutions, historic reviewer not transferred. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_05e9675a | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q01 | Direct S1 G10 T2 B17–18 printed pp19–27 CP05; prior SBT evidence retained without new scan claim. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q02 | TOP03-O01..O12 one independent Topic learning source, 31 unique canonical public IDs, 12 opt-in selfcheck refs. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q03 | CP01–CP05: O04 distinguishes strictly positive from nonnegative (after reversing sign of negative leading coefficient); O08 sqrt(A)=sqrt(B) iff A=B≥0, |A|=|B| alone insufficient (A=-1,B=1); numberline x≥-3 closed endpoint, -4 excluded and -2 accepted; O10 both exact irrational candidates and check r+ via identity/sign, r- excluded; O12 explicitly compares 90/v and 90/(v+15) and units; O08 recovery now points to the matching numberline example. G10 T2 B17 pp19–24 and B18 pp25–27 checked directly in CP05, SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6, printed index+1. Radical conditions, real roots and physical units verified; no full new textbook or SBT exercise audit. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q04 | O04 positivity, O08 counterexample and domain, O10 exact candidate verification, O12 time difference worked reasoning. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q05 | 8 original canonical (six formative+two Written) +23 new original canonical with distinct structures, one answer each. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q06 | Four Written: originals HPT-*WRI-18-01/02 rubric 5/6, two new W01/W02 rubric /7, Anchor only role. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q07 | Three real source-locked SVG; corrected closed endpoint at -3, accepted -2 and excluded -4. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q08 | Meaning before transformation: equivalent vs implication; strict positivity proof; O08 condition counterexample with a closed domain boundary distinct from solution; O10 candidate table demonstrates exact substitution rather than rounding; O12 links variable/time equations to units; 12 voluntary Vận dụng/Đối chiếu and numbered recovery preserved. Three real original SVG paths and 44 balanced disclosures (12+31+1 public lookup); current SVG geometry checked at source, no actual browser verdict. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q09 | Why solve? Candidate roots after transformation might not satisfy original equation, foregrounded before algorithms. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q10 | Local prerequisites: real sets, zero-product, Δ, absolute value, sqrt nonnegative, physical variable units. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q11 | Explains reversible steps before equivalent arrows, why square is one way, why substitution requires t≥0. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q12 | Corrected numberline with closed domain boundary and separate accepted/rejected markers; reading guide explicit. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q13 | Why test sign after square, denominator before cancelling, original equation after filtering, and physical conditions. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q14 | 12 voluntary Đối chiếu disclosures, no visible answer before learner requests; remedial routes are algebra-specific. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q15 | 31 Practice +12 Replay, semantic equivalence to latest signed 38f41f013e75b42605d7a88f9205c20af6315a41 via CP03/CP04; canonical IDs/order/key/conditions/rubrics and mode retained. Display notation intentionally differs from frozen bank text; no claim of literal parity. Owner #1109 schedules bank reconciliation after the eight batches, not a new canonical owner. Index b2e79a6cda5fdcc82dbd281e4273577ca637895e, extension bank fd85d7056f3b934f4599727f8c6da173cf05cd65 unchanged. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q16 | 0 private RD1 imported, public selfcheck CLIENT_SELF_CHECK_NO_MASTERY; Final Submit and runtime no-leak still RELEASE gate. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q17 | Three-page independent Topic, no separate Core; optional biquadratic O11 not promoted into B18 Core. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q18 | Current bd3b88b635b203872a9afa5893cc1e3af3e7d7c6 and Q18 28c43a014a015b1c81986e0b9c7b7127c3dfe55b; previous immutable receipt ef40b5871762558959108cf1879155c7e14158fe, scoped delta verification. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_bd3b88b6 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
-
-SGK Kết nối tri thức Toán 10 **tập 2 Bài 18** ‘Phương trình quy về phương trình bậc hai’ số trang **in** 25–27 và SBT **in** 19–21, xác minh bằng historical independent NotebookLM receipt 28/10/2026. B18 source B18_OUT01–04 đánh giá đủ trong đúng batch gốc. **Lượt này không được cung cấp bản PDF scan trực tiếp**, vì vậy không tuyên bố mới kiểm lại offset giữa trang in/PDF. SBT dùng để tham khảo họ dạng, không sao chép đề. O01–O06 kỹ thuật nền/phạm vi hỗ trợ từ trước, O11 đặt t=x² là tùy chọn mở rộng, không đánh dấu là Core B18. Phương trình lượng giác, mũ/log thuộc chuyên đề khác; bất phương trình thuộc CĐ02.
+CP01–CP05: O04 distinguishes strictly positive from nonnegative (after reversing sign of negative leading coefficient); O08 sqrt(A)=sqrt(B) iff A=B≥0, |A|=|B| alone insufficient (A=-1,B=1); numberline x≥-3 closed endpoint, -4 excluded and -2 accepted; O10 both exact irrational candidates and check r+ via identity/sign, r- excluded; O12 explicitly compares 90/v and 90/(v+15) and units; O08 recovery now points to the matching numberline example. G10 T2 B17 pp19–24 and B18 pp25–27 checked directly in CP05, SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6, printed index+1. Radical conditions, real roots and physical units verified; no full new textbook or SBT exercise audit.
 
 ## D1_D6_EVIDENCE
-
-D1 12 mô-đun độc lập với điều kiện toán thực, tương đương/suy ra, mẫu khác0 và căn không âm; D2 12 reasoned worked examples with checks; D3 31 PUBLIC canonical IDs (8 source reused +23 newly authored, all new answer/solution/D6), difficulty BASIC/UNDERSTAND/APPLY/SYNTHESIS; D4 four Written one rubric each (old 5/6 points preserved, 2 new /7); D5 3 accessible SVG (old one plus 2 new actual source) showing conditional methods and roots; D6 12 targeted learner first-try and error-repair routes. Coverage verified per outcome and problem family; no numeric quota substitution for depth.
+Meaning before transformation: equivalent vs implication; strict positivity proof; O08 condition counterexample with a closed domain boundary distinct from solution; O10 candidate table demonstrates exact substitution rather than rounding; O12 links variable/time equations to units; 12 voluntary Vận dụng/Đối chiếu and numbered recovery preserved. Three real original SVG paths and 44 balanced disclosures (12+31+1 public lookup); current SVG geometry checked at source, no actual browser verdict. 31 Practice +12 Replay, semantic equivalence to latest signed 38f41f013e75b42605d7a88f9205c20af6315a41 via CP03/CP04; canonical IDs/order/key/conditions/rubrics and mode retained. Display notation intentionally differs from frozen bank text; no claim of literal parity. Owner #1109 schedules bank reconciliation after the eight batches, not a new canonical owner. Index b2e79a6cda5fdcc82dbd281e4273577ca637895e, extension bank fd85d7056f3b934f4599727f8c6da173cf05cd65 unchanged.
 
 ## PED1_PED6_EVIDENCE
-
-PED1 starts each module with a mathematical WHY or everyday motivation; PED2 local prerequisite within Topic; PED3 concept before formula; PED4 three diagrams with reader instructions, verified title/desc and points/domain; PED5 reasons for equivalent transformation vs squaring, domain checks, discriminant, case splits and limitations; PED6 first try before voluntary answer reveal, D6 error→principle→retry. Two interaction labs are proposals not working widgets; RELEASE QA must not claim them as implemented.
+Meaning before transformation: equivalent vs implication; strict positivity proof; O08 condition counterexample with a closed domain boundary distinct from solution; O10 candidate table demonstrates exact substitution rather than rounding; O12 links variable/time equations to units; 12 voluntary Vận dụng/Đối chiếu and numbered recovery preserved. Three real original SVG paths and 44 balanced disclosures (12+31+1 public lookup); current SVG geometry checked at source, no actual browser verdict.
 
 ## AUTHORING_A1_A7
+Existing custody prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_ONLY_CUSTODY_20261116.md, blob cf8d6d1edb19397c33e795e14449d163b8398a58, exact Q18 28c43a014a015b1c81986e0b9c7b7127c3dfe55b; same lesson/item/outcome matrix, scope and protected assessment. No new independent review.
 
-A1: exact R04 learner source 9cc738526f95e68a31f99409d8672aff44f5c8a9 and receipt 22c934be731baf6690a52c28ba8cb993f34ee013, one stable PACKET_ID. A2: historical original B18 SGK/SBT print source scoped; no new PDF scan claim. A3: changed R04 author self-QA, not independent NotebookLM. A4: 12 outcomes, 31 unique canonical IDs (including two historical HPT Written IDs), 12 public selfcheck placements, four one-source Written rubrics. A5: four continuous concept arcs, 12 targeted first-tries, 3 real SVGs correctly adjacent to matching examples. A6: all 23 new item solutions and 12 outcome mathematics rechecked, SVG two-radical mismatch repaired. A7: 0 private RD1, NO official `TOPIC_READINESS` or Mastery, no pre-Final Submit key leakage authorized.
+## DELTA_LEDGER
+DELTA_C Knowledge repair and DELTA_B_SOURCE_EQUIVALENT notation, evidence CP03a/b, CP04 #7164862154, CP05 #7165894264, CP06. CP01–CP05: O04 distinguishes strictly positive from nonnegative (after reversing sign of negative leading coefficient); O08 sqrt(A)=sqrt(B) iff A=B≥0, |A|=|B| alone insufficient (A=-1,B=1); numberline x≥-3 closed endpoint, -4 excluded and -2 accepted; O10 both exact irrational candidates and check r+ via identity/sign, r- excluded; O12 explicitly compares 90/v and 90/(v+15) and units; O08 recovery now points to the matching numberline example. G10 T2 B17 pp19–24 and B18 pp25–27 checked directly in CP05, SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6, printed index+1. Radical conditions, real roots and physical units verified; no full new textbook or SBT exercise audit.
+31 Practice +12 Replay, semantic equivalence to latest signed 38f41f013e75b42605d7a88f9205c20af6315a41 via CP03/CP04; canonical IDs/order/key/conditions/rubrics and mode retained. Display notation intentionally differs from frozen bank text; no claim of literal parity. Owner #1109 schedules bank reconciliation after the eight batches, not a new canonical owner. Index b2e79a6cda5fdcc82dbd281e4273577ca637895e, extension bank fd85d7056f3b934f4599727f8c6da173cf05cd65 unchanged.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
-
 RD1_PRIVATE_COUNT = 0
 PRIVATE_OWNER_HELD = YES_IF_FUTURE_OFFICIAL_TOPIC_READINESS
 PRIVATE_GIT_CONTENT = NONE
@@ -236,36 +216,5 @@ PRIVATE_BANK_SHA256 = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b78
 
 The SHA above represents only 0 bytes imported private payload, **not** a private protected bank digest. The original SGK Chapter Readiness contents were not fetched or placed in this public repository. A public selfcheck after Practice is not independent.
 
-## DELTA_LEDGER
-
-Immutable R01 historical source/reviewer evidence and R03 candidate remain unmodified. R04 `DELTA_C_ACADEMIC_MATERIAL`: one connected reasoning arc for equivalent transformations and three for conditions, radical candidates and translation back to real variable; removed pedagogical A/B/C partition and repetitive generic fallback; replaced M08 worked example with exact two-radical `sqrt(x²+7x+11)=sqrt(x+3)` valid candidate x=-2 (x=-4 rejected). Original SVG domain diagram moved to the corrected two-radical example; original G10 B18 radical flow now embedded at M10 alongside algorithm. All three visual source blobs unchanged, original 8 and extension 23 item bytes and rubrics unchanged. Technical source register moved into AUTHORING sidecar, not a fourth student page. Q18 self-QA receipt regenerated on exact R04 SHA, no claim original independent reviewer covered it.
-
-## CĐ03 R05 CURRENT SOURCE AND REGRESSION AUDIT
-
-CĐ03 R05 exact source blob `9cc738526f95e68a31f99409d8672aff44f5c8a9`, signed Q18 AUTHOR_SELF_VERIFIED receipt blob `22c934be731baf6690a52c28ba8cb993f34ee013`; four reader-first arcs, 12 complete Ví dụ/Đề bài/Lời giải, 12 near-outcome Vận dụng/Đối chiếu and D6, 31 actual learner-visible original canonical questions+solutions (8 historic: 6 JS formative and 2 HPT-Written; 23 Topic extensions), four original rubric point totals 5/6/7/7 and 12 public self-check question stems. Old R04 academic blob `e94bbe37339f7002bd8e29bdf60e0c86fae0aa95` and Q18 receipt `53fa40ee7efc98de49d2c0319aa431094b68e065` retain historical source-scope PASS; no independent NotebookLM R05 PASS claimed. R05 DELTA_C changes example pedagogy and displays existing canonical exercise content but does **not** change any original item stem/key/solution/rubric. Three SVGs are unchanged with the correct -4/-2 diagram next to its matching R04 M08 example and a separate explicitly different R05 M08 example. One stable PACKET_ID R01, one V2, manifest and REGISTER, no new Topic Core/official Readiness or RD1 private; original 13-point Topic checklist #864 and defect ledger #865. Release/browser/owner controls remain separate.
-
 ## RELEASE_AND_OWNER_GATE
-
-RELEASE must resolve official runtime TOPIC_ID on owner decision and integrate on current main, verify AP1–AP5, R1–R5 and P1–P2 on exact HEAD, Golden R4/Adaptive Tabs, responsiveness/MathJax/SVG/keyboard/touch, canonical solution/rubric parity including original 5/6-point grading, Final Submit no hint/key/Tutor/correctness before submission, no exposure of private RD1, no Mastery from public selfcheck or Written self-rubric. Interaction labs are spec-only, not runtime. Owner **has not authorized merge/deploy**; SGK, THCS, Firebase and learner records remain unaffected.
-
-
-## One effective learner draft — source correction inline
-
-The single active learner **path** is existing R06_NUMBERING_CONSISTENT_20261116.md, current SHA daeeb5d571d120b31265f8c603a76049a1f2c78c, not an additional R07 file. Corrections: 11 student error-remediation pointers now name real numbered Practice exercises; worked Example TOP03-O09 changed to independently solved sqrt(x+6)=x (x≥0, only x=3) so original Vận dụng sqrt(2x+7)=x+1 is not pre-solved. Prior R06 headings kept; 31 canonical Practice items, 12 question-only public replays, 43 disclosures, questions/keys/rubrics, SVGs untouched. Existing Q18 has source-specific author self QA, not blanket NotebookLM PASS. `CONTENT_STATE=BLOCKED_BY_AUTHORING` until existing ready manifest, REGISTER and exact final HEAD CI reconcile; do not read original R05/R06 historical snapshot as current learner source. No RELEASE integration/merge/deploy.
-
-
-**Current source handoff:** Source-specific Q18 author self-QA for the changed math/editorial portion is complete, immutable predecessor source preserved in Git, one learner source and matching A1/V2/ready/REGISTER selected. No website/AP/RELEASE PASS or merge/deploy implied. A separate CI on HEAD is required before release intake acceptance.
-
-
-**19/11 OWNER ΔA:** 9 typed formal captions, math unchanged; one V2 source-lock refreshed, CONTENT_READY preserved.
-
-
-**20/11 S1 Δ′ mandatory coverage Delta C:** b=2b′, Δ′=(b′)²−ac and real-root cases inserted in single learner `8b0e5be33b42d8b1d3e743bb2502501789333075`; affected QA 6/6 author self PASS, receipt `537186b1763ef06bed205f45d8d3b907dc3c7aa2`, A1 `4f998f805133cf9945e002ed2680e6891a78e788`. Source CONTENT_READY retained under owner, no RELEASE.
-
-
-## 20/11/2026 owner editorial ΔA
-- Learner 488cee3670af82ed9fd1f457d23a489e7ba8d063, Q18 65841734363d64cc474c359041d65e99535cae23, A1 386752c7cb3024a78ba5ad2d8969996cef6f3df0; three equivalence labels changed only, no canonical mathematics changed.
-
-
-## 20/11/2026 — Current single source CĐ03 Knowledge checked
-- Learner 9df43259cfb61646ec1d60c036e360c40417daae, Q18 6380d2340c6cb3dc597777eac1d514d95e140322, A1 56257640ac50a9809756b5715c1f877182e071c8. No new learner path; two equation patterns, conditions, and examples checked. Existing Practice/Selfchecks untouched.
+AUTHORING content only. RELEASE AP/R, browser, MathJax, Golden UI, Q16 runtime, exact integration HEAD and owner approval remain separate, no merge/deploy.
