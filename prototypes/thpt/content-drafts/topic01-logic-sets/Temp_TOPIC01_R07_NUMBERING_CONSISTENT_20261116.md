@@ -105,6 +105,8 @@ Nhưng một kết luận đúng theo chiều thuận chưa cho phép đọc ng�
 
 **Ví dụ**
 
+Ký hiệu \(a\mid n\) đọc là “\(a\) là ước của \(n\)” hay “\(n\) chia hết cho \(a\)” (với \(a\) là số nguyên khác 0). Chẳng hạn, \(10\mid n\) nghĩa là \(n=10k\) với một số nguyên \(k\), không phải 10 chia hết cho \(n\).
+
 **Đề bài.** Với \(n\in\mathbb Z\), chứng minh \(10\mid n\Rightarrow5\mid n\) và kiểm chiều đảo.
 
 **Lời giải.** Viết \(n=10k=5(2k)\) với \(k\in\mathbb Z\), nên chiều thuận đúng. Chiều đảo sai tại \(n=5\). Ta dùng phép phân tích bội để chứng minh và một phản ví dụ đúng miền để bác bỏ chiều đảo.
@@ -370,7 +372,18 @@ Một điều kiện như “giữa 1 và 3” cần nói rõ **có lấy** 1 ho
 > \((a,b)\) không chứa hai đầu mút; \([a,b]\) chứa cả hai; \((a,b]\) chỉ chứa b. Vô cực luôn đi với ngoặc tròn và không là số thực có thể lấy làm đầu mút.
 
 
-Xét \(X=(-\infty,3]\) và \(Y=(1,+\infty)\). Muốn thuộc **giao**, số phải vừa lớn hơn 1 vừa không vượt 3, nên \(X\cap Y=(1,3]\). Muốn thuộc **hợp**, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy \(X\cup Y=\mathbb R\). Thử riêng \(x=1\) và \(x=3\) giúp ta kiểm dấu ngoặc ở biên.
+Khi biểu diễn khoảng trên trục số, ta đánh dấu các đầu mút hữu hạn bằng **chấm đặc** nếu nhận đầu mút và **chấm rỗng** nếu loại đầu mút. Tô phần trục số thỏa bất đẳng thức. Mũi tên biểu thị phần kéo dài về vô cực.
+
+| Ký hiệu | Điều kiện | Cách đánh dấu và tô trục số |
+|---|---|---|
+| \((1;3)\) | \(1<x<3\) | Rỗng tại 1 và 3; tô giữa |
+| \([1;3]\) | \(1\le x\le3\) | Đặc tại 1 và 3; tô giữa |
+| \((1;3]\) | \(1<x\le3\) | Rỗng tại 1, đặc tại 3; tô giữa |
+| \([1;3)\) | \(1\le x<3\) | Đặc tại 1, rỗng tại 3; tô giữa |
+| \((-\infty;3]\) | \(x\le3\) | Đặc tại 3; tô về trái |
+| \((1;+\infty)\) | \(x>1\) | Rỗng tại 1; tô về phải |
+
+Xét \(X=(-\infty;3]\) và \(Y=(1;+\infty)\). Muốn thuộc **giao**, số phải vừa lớn hơn 1 vừa không vượt 3, nên \(X\cap Y=(1,3]\). Muốn thuộc **hợp**, số chỉ cần thỏa ít nhất một điều kiện: mọi số thực đều nằm ở X hoặc Y, vậy \(X\cup Y=\mathbb R\). Thử riêng \(x=1\): thuộc \(X\) nhưng không thuộc \(Y\), nên bị loại khỏi giao. Thử \(x=3\): thuộc cả \(X\) và \(Y\), nên được nhận trong giao. Trên trục số, phần tô chung nằm giữa 1 và 3, chấm rỗng ở 1 và chấm đặc ở 3; phần tô của ít nhất một tập phủ kín trục số.
 
 **Ví dụ**
 
@@ -397,6 +410,8 @@ Nếu em lấy nhầm 0 hoặc 2 trong giao, hãy kiểm riêng hai câu hỏi �
 ### 3.2. Đếm phần hợp không lặp
 
 Khi cộng hai nhóm có phần chung, em đã đếm thừa bao nhiêu lần?
+
+Với một tập hữu hạn \(A\), ký hiệu \(n(A)\) hoặc \(\lvert A\rvert\) chỉ **số phần tử của tập \(A\)**. Chẳng hạn, nếu \(A=\{2;4;6\}\) thì \(n(A)=\lvert A\rvert=3\). Không nhầm dấu này với giá trị tuyệt đối của một số như \(\lvert-3\rvert\). Tương tự, \(\lvert A\cap B\rvert=n(A\cap B)\) là số phần tử chung của hai tập.
 
 Khi có số lượng của hai nhóm, phần giao cần được tính đúng một lần để đếm không trùng. Một học sinh tham gia hai câu lạc bộ sẽ được tính **hai lần** nếu ta chỉ cộng số học sinh của từng câu lạc bộ. Vì vậy với hai tập hữu hạn, ta phải trừ một lần phần đã đếm trùng: \(|A\cup B|=|A|+|B|-|A\cap B|\). Hình Ven hai nhóm chia vũ trụ thành bốn vùng: chỉ A, cả hai, chỉ B và ngoài cả hai. Ta điền vùng giao trước rồi mới tính các vùng riêng.
 
@@ -753,7 +768,9 @@ Khối lớp có 42 học sinh. Có 24 bạn đăng kí CLB Tiếng Anh, 21 bạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Giao =9; chỉ Anh 24−9=15; chỉ Nhạc 21−9=12; hợp =24+21−9=36; ngoài =42−36=6; A\B là tập 15 bạn chỉ học Anh.
+Giao có 9 bạn; chỉ Anh có \(24-9=15\); chỉ Nhạc có \(21-9=12\); hợp có \(24+21-9=36\); ngoài cả hai có \(42-36=6\). \(A\setminus B\) là tập 15 bạn chỉ học Anh.
+
+Để đối chiếu sơ đồ Venn đã vẽ, kiểm hình chữ nhật \(U\) chứa hai hình tròn giao nhau: hình tròn \(A\) là CLB Tiếng Anh, hình tròn \(B\) là CLB Âm nhạc. Điền 9 vào phần chồng lên nhau, 15 vào phần riêng của \(A\), 12 vào phần riêng của \(B\), và 6 ở trong \(U\) nhưng ngoài cả hai hình tròn. Kiểm tổng bốn vùng: \(15+9+12+6=42\).
 
 **Các bước tự đối chiếu:** Rubric 7 điểm: sơ đồ đúng hai tập và giao 2đ; chỉ Anh 1đ; chỉ Nhạc 1đ; hợp và ngoài 2đ; giải thích A\B 1đ.
 
