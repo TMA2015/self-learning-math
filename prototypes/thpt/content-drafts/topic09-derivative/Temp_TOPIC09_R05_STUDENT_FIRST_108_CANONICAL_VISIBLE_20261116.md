@@ -50,7 +50,7 @@ Chẳng hạn, \(f(x)=x^2\), \(a=1\): thương \(\frac{(1+h)^2-1}h=2+h\), \(h\ne
 
 **Đề bài:** Với \(f(x)=x^2\) tại \(a=-2\), tính hệ số góc cát tuyến ứng với bước \(h\ne0\) và giới hạn.
 
-**Lời giải:** \(\frac{(-2+h)^2-4}h=-4+h\) (h≠0); khi \(h\to0\), độ dốc tiếp tuyến bằng −4. Hình cát tuyến ở mục 1.3 dùng điểm có hoành độ 1, không phải −2 trong ví dụ này.
+**Lời giải:** \(\frac{(-2+h)^2-4}h=-4+h\) (\(h\ne0\)); khi \(h\to0\), độ dốc tiếp tuyến bằng −4. Hình cát tuyến ở mục 1.3 dùng điểm có hoành độ 1, không phải −2 trong ví dụ này.
 
 **Vận dụng** \(f(x)=x^2\),\(a=3\): hệ số góc cát tuyến theo h là gì?
 
@@ -78,7 +78,7 @@ Giới hạn thương sai phân đưa ta tới định nghĩa đạo hàm. Vì s
 
  Tính bằng định nghĩa giúp kiểm công thức có áp dụng hay không.
 
-Xét ví dụ: \(f=x^3\) tại \(a=2\): \((2+h)^3-8=12h+6h^2+h^3\), chia h→12. Chọn khai triển vì yêu cầu định nghĩa, không dùng ngay quy tắc \(3x^2\).
+Xét ví dụ: \(f=x^3\) tại \(a=2\): \((2+h)^3-8=12h+6h^2+h^3\), chia cho \(h\ne0\), được \(12+6h+h^2\to12\) khi \(h\to0\). Chọn khai triển vì yêu cầu định nghĩa, không dùng ngay quy tắc \(3x^2\).
 
 Hình minh họa riêng \(f(x)=x^2\) tại \(a=1\): điểm cố định \(P=(1;1)\), điểm \(Q=(2;4)\) ứng với \(h=1\) cho hệ số góc cát tuyến \(\frac{4-1}{2-1}=3\). Khi \(Q=(1+h;(1+h)^2)\) tiến gần \(P\), hệ số góc \(2+h\) tiến tới 2; tiếp tuyến tại \(P\) có phương trình \(y=2x-1\). Khác với ví dụ \(f=x^3\) phía trên, hình đang vẽ **parabol bình phương tại \(x=1\)**.
 
@@ -116,14 +116,16 @@ Không chỉ xét một điểm riêng lẻ, ta còn cần biết đạo hàm t�
 
 > **ĐỊNH NGHĨA — Đạo hàm trên một khoảng.** Hàm số \(f\) có đạo hàm trên khoảng \((a;b)\) nếu tại **mọi** \(x\in(a;b)\), giới hạn thương sai phân xác định một đạo hàm hữu hạn \(f'(x)\). Khi đó \(x\mapsto f'(x)\) là **hàm số đạo hàm**, kí hiệu \(y'=f'(x)\). Một điểm thuộc miền xác định của \(f\) chưa chắc thuộc miền xác định của \(f'\).
 
-Biết hàm số có đạo hàm tại một điểm, chẳng hạn (x=2), chưa thể suy ra có đạo hàm ở mọi điểm trên một khoảng. Có thể chứng minh đạo hàm tồn tại tại một điểm bất kỳ của khoảng (không cần liệt kê từng điểm) và không được đồng nhất **miền xác định của hàm gốc** với **miền mà đạo hàm tồn tại**. Với hàm căn bậc hai, công thức đạo hàm chỉ dùng được khi (x>0); tại biên (x=0), thương sai phân từ bên phải không có giới hạn hữu hạn.
+Biết hàm số có đạo hàm tại một điểm, chẳng hạn \(x=2\), chưa thể suy ra có đạo hàm ở mọi điểm trên một khoảng. Có thể chứng minh đạo hàm tồn tại tại một điểm bất kỳ của khoảng (không cần liệt kê từng điểm) và không được đồng nhất **miền xác định của hàm gốc** với **miền mà đạo hàm tồn tại**. Với hàm căn bậc hai, công thức đạo hàm chỉ dùng được khi \(x>0\); tại biên \(x=0\), thương sai phân từ bên phải không có giới hạn hữu hạn.
 
 Chẳng hạn, \(f(x)=\sqrt{x}\) xác định khi \(x\ge0\). Với \(x>0\) bất kỳ và \(h\ne0\) đủ nhỏ để \(x+h>0\), nhân liên hợp:
+
 \[
 \frac{\sqrt{x+h}-\sqrt{x}}{h}
 =\frac{1}{\sqrt{x+h}+\sqrt{x}}\longrightarrow\frac{1}{2\sqrt{x}}.
 \]
-Vì giới hạn hữu hạn này tồn tại tại mọi \(x>0\), đó là miền khả vi của hàm căn. Tại \(x=0\), không thể lấy đạo hàm hai phía trên ℝ và thương phải→+∞; không ghi \(f'(0)=\infty\) như đạo hàm hữu hạn.
+
+Vì giới hạn hữu hạn này tồn tại tại mọi \(x>0\), đó là miền khả vi của hàm căn. Tại \(x=0\), không thể lấy đạo hàm hai phía trên ℝ và thương sai phân từ bên phải tiến tới \(+\infty\); không ghi \(f'(0)=\infty\) như đạo hàm hữu hạn.
 
 **Ví dụ**
 
@@ -156,9 +158,11 @@ Có đạo hàm kéo theo liên tục, nhưng điều ngược lại chưa chắ
 > **ĐỊNH LÝ — Khả vi kéo theo liên tục.** Nếu \(f\) có đạo hàm hữu hạn tại điểm trong \(a\), thì \(f\) liên tục tại \(a\). Chiều đảo **không đúng nói chung**: \(f(x)=|x|\) liên tục tại \(0\) nhưng không có đạo hàm hai phía vì các độ dốc một phía lần lượt là \(-1\) và \(1\).
 
 Vì sao? Khi \(h\to0\), nếu đạo hàm hữu hạn tồn tại thì \(\frac{f(a+h)-f(a)}{h}\to f'(a)\). Do đó
+
 \[
 f(a+h)-f(a)=h\frac{f(a+h)-f(a)}h\longrightarrow0.
 \]
+
 Suy ra \(f(a+h)\to f(a)\), đúng điều kiện liên tục. Chiều đảo sai: liên tục không đảm bảo hai độ dốc một phía bằng nhau.
 
 Chẳng hạn, Xét \(|x-1|\) tại1: f liên tục vì \(|x-1|\to0\); đạo hàm trái−1, phải+1 nên không khả vi. Chọn xét thương để bác bỏ mệnh đề đảo.
@@ -190,10 +194,12 @@ Nếu suy ngược 'liên tục ⇒ khả vi', đọc **Kiến thức 1.5**, là
 <!-- LESSON_ID: TOP09-M06; OUTCOME_ID: TOP09-O06 -->
 
 > **ĐỊNH NGHĨA — Đạo hàm một phía.** Góc nhọn cho thấy hai đạo hàm một phía có thể khác nhau. Một tiếp tuyến duy nhất có độ dốc hữu hạn có hình thành tại điểm gấp khúc? Để xác định điều đó, cần xét hàm trị tuyệt đối và xét dấu h. Khi các phía tương ứng thuộc miền xác định, ta đặt
+
 \[
 f'_-(a)=\lim_{h\to0^-}\frac{f(a+h)-f(a)}h,\qquad
 f'_+(a)=\lim_{h\to0^+}\frac{f(a+h)-f(a)}h.
 \]
+
 Tại một điểm trong, đạo hàm thông thường tồn tại khi và chỉ khi hai giới hạn này cùng hữu hạn và bằng nhau. Tại góc nhọn \(|x-a|\) chúng thường trái dấu. Có thể có đạo hàm một phía nhưng không có đạo hàm hai phía; không gộp hai độ dốc thành 0.
 
 Chẳng hạn, \(f(x)=|x-3|\) tại 3: \(\frac{|h|-0}h=-1\) khi \(h<0\), +1 khi \(h>0\). Chọn xét dấu tuyệt đối trước, nên không có \(f'(3)\).
@@ -247,7 +253,7 @@ Nếu gọi \(\alpha\) là góc định hướng từ chiều dương trục ho�
 
 Độ dốc \(f'(0)=0\); tung độ \(f(0)=2\).
 
-Nếu nhầm giá trị và độ dốc, ghi riêng \(P(a;f(a))\) và m=f'(a).
+Nếu nhầm giá trị và độ dốc, ghi riêng \(P(a;f(a))\) và \(m=f'(a)\).
 
 
 **Kiểm lỗi**
@@ -268,7 +274,7 @@ Xét ví dụ: Với \(f=x^2\) tại \(a=2\), \(P(2;4)\), \(m=4\) ⇒ \(y-4=4(x-
 
 **Đề bài:** Viết tiếp tuyến với \(y=x^2+3x\) tại \(x=1\).
 
-**Lời giải:** Điểm \(P(1;4)\), đạo hàm 2x+3 cho m=5; tiếp tuyến \(y-4=5(x-1)\), tức \(y=5x-1\). Thay \(x=1\) kiểm đi qua P.
+**Lời giải:** Điểm \(P(1;4)\), đạo hàm \(2x+3\) cho \(m=5\); tiếp tuyến \(y-4=5(x-1)\), tức \(y=5x-1\). Thay \(x=1\) kiểm đi qua P.
 
 **Vận dụng** Tiếp tuyến \(y=x^3\) tại \(x=0\) là gì?
 
@@ -277,12 +283,12 @@ Xét ví dụ: Với \(f=x^2\) tại \(a=2\), \(P(2;4)\), \(m=4\) ⇒ \(y-4=4(x-
 
 \(f(0)=0\), \(f'(0)=0\) ⇒ \(y=0\).
 
-Nếu kết quả không qua \((a;f(a))\), thế lại x=a để phát hiện.
+Nếu kết quả không qua \((a;f(a))\), thế lại \(x=a\) để phát hiện.
 
 
 **Kiểm lỗi**
 
-Nếu viết đường thẳng không đi qua \((a;f(a))\) hoặc nhầm tung độ với đạo hàm, đọc **Kiến thức 2.2**, giải **Bài 25** và **Bài 27**, thử thế x=a vào phương trình tiếp tuyến.
+Nếu viết đường thẳng không đi qua \((a;f(a))\) hoặc nhầm tung độ với đạo hàm, đọc **Kiến thức 2.2**, giải **Bài 25** và **Bài 27**, thử thế \(x=a\) vào phương trình tiếp tuyến.
 
 </details>
 
@@ -312,7 +318,7 @@ Nếu gọi tốc độ âm, kiểm định nghĩa |v|.
 
 **Kiểm lỗi**
 
-Nếu gọi vận tốc âm là tốc độ âm, đọc **Kiến thức 2.3**, làm **Bài 29** và **Bài 31**; vận tốc s'(t) có hướng còn tốc độ là |s'(t)|.
+Nếu gọi vận tốc âm là tốc độ âm, đọc **Kiến thức 2.3**, làm **Bài 29** và **Bài 31**; vận tốc \(s'(t)\) có hướng còn tốc độ là \(|s'(t)|\).
 
 </details>
 
@@ -320,7 +326,7 @@ Nếu gọi vận tốc âm là tốc độ âm, đọc **Kiến thức 2.3**, l
 
 <!-- LESSON_ID: TOP09-M10; OUTCOME_ID: TOP09-O10 -->
 
-> **TÍNH CHẤT — Đơn vị của đạo hàm.** Đơn vị của đạo hàm tùy đại lượng đầu vào và đầu ra. Đạo hàm của nhiệt độ theo phút có phải nhiệt độ hay tốc độ nhiệt độ đang thay đổi? Cần nhớ đơn vị, tỷ số Δđầu ra/Δđầu vào. \(f'(a)\) có đơn vị [f]/[x]. Nhiệt độ T(t) tính °C, t phút ⇒ T'(t) °C/phút; độ cao s(t) mét và t giây ⇒ s' m/s. Có thể nói đạo hàm dương/âm và mức biến thiên tức thời trong phạm vi mô hình, không dùng giá trị hàm thay tốc độ.
+> **TÍNH CHẤT — Đơn vị của đạo hàm.** Đơn vị của đạo hàm tùy đại lượng đầu vào và đầu ra. Đạo hàm của nhiệt độ theo phút có phải nhiệt độ hay tốc độ nhiệt độ đang thay đổi? Cần nhớ đơn vị, tỉ số độ biến thiên đầu ra và độ biến thiên đầu vào. \(f'(a)\) có đơn vị bằng đơn vị của đầu ra chia cho đơn vị của đầu vào. Nhiệt độ \(T(t)\) tính bằng °C, \(t\) tính bằng phút thì \(T'(t)\) có đơn vị °C/phút; độ cao \(s(t)\) tính bằng mét và \(t\) tính bằng giây thì \(s'(t)\) có đơn vị m/s. Có thể nói đạo hàm dương/âm và mức biến thiên tức thời trong phạm vi mô hình, không dùng giá trị hàm thay tốc độ.
 
 Chẳng hạn, \(T(t)=15+2t-0{,}5t^2\) °C; \(T'(t)=2-t\), tại \(t=1\) là +1 °C/phút. Chọn tốc độ biến thiên thay vì tính \(T(1)=16{,}5\) °C.
 
@@ -395,11 +401,13 @@ Chẳng hạn, \(f=\sqrt{x+4}\): miền \(x\ge-4\), \(f'(x)=\frac1{2\sqrt{x+4}}\
 **Đề bài:** Tìm miền và đạo hàm của \(g(x)=\sqrt{2x+5}\).
 
 **Lời giải:** \(D=[-\frac52;+\infty)\). Với \(x>-\frac52\), dùng liên hợp ngay từ thương sai phân (chưa cần quy tắc hàm hợp):
+
 \[
 \frac{\sqrt{2x+2h+5}-\sqrt{2x+5}}h
 =\frac{2}{\sqrt{2x+2h+5}+\sqrt{2x+5}}
 \longrightarrow\frac1{\sqrt{2x+5}}.
 \]
+
 Hệ số 2 ở tử xuất phát từ hiệu hai biểu thức trong căn bằng \(2h\). Ở biên không có đạo hàm hai phía hữu hạn.
 
 **Vận dụng** \(f(x)=\sqrt{x-1}\), có đạo hàm hữu hạn tại \(x=1\) không?
@@ -407,9 +415,9 @@ Hệ số 2 ở tử xuất phát từ hiệu hai biểu thức trong căn bằn
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Không; hàm xác định tại1 nhưng thương phải→+∞.
+Không; hàm xác định tại 1 nhưng thương sai phân từ bên phải tiến tới \(+\infty\).
 
-Nếu chỉ xét x−1≥0, còn phải kiểm mẫu đạo hàm khác0.
+Nếu chỉ xét \(x-1\ge0\), còn phải kiểm mẫu đạo hàm khác0.
 
 
 **Kiểm lỗi**
@@ -422,7 +430,7 @@ Nếu dùng công thức căn ngay ở điểm biên mà mẫu trở thành 0, �
 
 <!-- LESSON_ID: TOP09-M13; OUTCOME_ID: TOP09-O13 -->
 
-> **CÔNG THỨC — Quy tắc tổng.** Tổng, hiệu và hệ số hằng có cách lấy đạo hàm tương ứng. Đạo hàm của tổng thay đổi thế nào khi từng thành phần thay đổi? Ta sử dụng tính tuyến tính giới hạn, đạo hàm cơ bản. Nếu u,v khả vi, (u±v)'=u'±v' và (c u)'=c u'. Đạo hàm của hằng số bằng0; không giữ hạng hằng. Lý do là thương sai phân của tổng bằng tổng các thương, có thể lấy giới hạn từng phần khi chúng tồn tại.
+> **CÔNG THỨC — Quy tắc tổng.** Tổng, hiệu và hệ số hằng có cách lấy đạo hàm tương ứng. Đạo hàm của tổng thay đổi thế nào khi từng thành phần thay đổi? Ta sử dụng tính tuyến tính giới hạn, đạo hàm cơ bản. Nếu u,v khả vi, \((u\pm v)'=u'\pm v'\) và \((cu)'=cu'\). Đạo hàm của hằng số bằng0; không giữ hạng hằng. Lý do là thương sai phân của tổng bằng tổng các thương, có thể lấy giới hạn từng phần khi chúng tồn tại.
 
 Xét ví dụ: \(y=4x^3-3x+6\) ⇒ \(y'=12x^2-3\); hằng6 biến mất. Chọn phân rã vì phép cộng không lồng hàm hay tạo tích cần công thức khác.
 
@@ -452,7 +460,7 @@ Nếu giữ nguyên hằng số khi đạo hàm tổng, đọc **Kiến thức 3
 
 <!-- LESSON_ID: TOP09-M14; OUTCOME_ID: TOP09-O14 -->
 
-Với tích, không thể chỉ nhân hai đạo hàm. Tại sao (uv)' không phải chỉ bằng u'v'? Ta bắt đầu từ đạo hàm u,v và phép khai triển Δ(uv). Khi u tăng Δu và v tăng Δv, độ tăng tích là \(v\Delta u+u\Delta v+\Delta u\Delta v\). Chia cho \(\Delta x\) và lấy giới hạn giúp giải thích vì sao không thể chỉ lấy tích hai đạo hàm.
+Với tích, không thể chỉ nhân hai đạo hàm. Tại sao \((uv)'\) không phải chỉ bằng \(u'v'\)? Ta bắt đầu từ đạo hàm u,v và phép khai triển \(\Delta(uv)\). Khi u tăng \(\Delta u\) và v tăng \(\Delta v\), độ tăng tích là \(v\Delta u+u\Delta v+\Delta u\Delta v\). Chia cho \(\Delta x\) và lấy giới hạn giúp giải thích vì sao không thể chỉ lấy tích hai đạo hàm.
 
 > **CÔNG THỨC — Đạo hàm của tích.** Khi \(u,v\) đều khả vi, \((uv)'=u'v+uv'\). Cần lấy đúng **hai** hạng và giữ nguyên miền khả vi chung; không viết \((uv)'=u'v'\). Hai dải diện tích trong hình chữ nhật giải thích hai hạng. Chỉ dùng khi cả u,v khả vi tại điểm.
 
@@ -480,7 +488,7 @@ Trong hình chữ nhật minh họa, cạnh ngang \(u=3\) và cạnh đứng \(v
 
 **Kiểm lỗi**
 
-Nếu cho (uv)'=u'v' hoặc quên đạo hàm một thừa số, đọc **Kiến thức 3.4**, làm **Bài 46** và **Bài 48**; viết u'v+uv' trước khi thu gọn.
+Nếu cho \((uv)'=u'v'\) hoặc quên đạo hàm một thừa số, đọc **Kiến thức 3.4**, làm **Bài 46** và **Bài 48**; viết \(u'v+uv'\) trước khi thu gọn.
 
 </details>
 
@@ -505,7 +513,7 @@ Chẳng hạn, \(f=\frac{x+1}{x-2}\) có miền \(x\ne2\), \(f'=\frac{1(x-2)-(x+
 
 \(\frac1{(x+1)^2}\), với \(x\ne-1\).
 
-Nếu cho x=−1 hợp lệ vì kết quả nhìn đơn giản, quay lại mẫu gốc.
+Nếu cho \(x=-1\) hợp lệ vì kết quả nhìn đơn giản, quay lại mẫu gốc.
 
 
 **Kiểm lỗi**
@@ -518,7 +526,7 @@ Nếu áp quy tắc thương tại mẫu 0 hoặc đảo thứ tự tử số, �
 
 <!-- LESSON_ID: TOP09-M16; OUTCOME_ID: TOP09-O16 -->
 
-Hàm hợp cần tính cả sự thay đổi của biểu thức bên trong. Vì sao đạo hàm của \((2x+1)^5\) phải thêm nhân 2? Để xác định điều đó, cần xét phân biệt biến trong u=g(x) và hàm ngoài f(u). 
+Hàm hợp cần tính cả sự thay đổi của biểu thức bên trong. Vì sao đạo hàm của \((2x+1)^5\) phải thêm nhân 2? Để xác định điều đó, cần xét phân biệt biến trong \(u=g(x)\) và hàm ngoài \(f(u)\). 
 
 > **ĐỊNH NGHĨA — Hàm số hợp.** Nếu \(u=g(x)\) là hàm bên trong và \(y=F(u)\) là hàm bên ngoài, thì \(y=F(g(x))\) là **hàm hợp**. Biểu thức chỉ xác định ở những \(x\) mà \(g(x)\) có nghĩa **và** \(g(x)\) thuộc miền xác định của \(F\). Chẳng hạn \(F(u)=\sqrt{u}\), \(g(x)=1-x^2\) tạo thành \(y=\sqrt{1-x^2}\) trên \([-1;1]\); công thức đạo hàm qua quy tắc dây chuyền áp dụng trên \((-1;1)\), không tự cho đạo hàm hữu hạn tại hai đầu mút.
 
@@ -544,7 +552,7 @@ Lớp trong \(u=3x+1\), \(u'=3\); lớp ngoài \(F(u)=\sqrt u\), \(F'(u)=\frac1{
 
 **Kiểm lỗi**
 
-Nếu đạo hàm (u(x))^n nhưng quên u', đọc **Kiến thức 3.6**, làm **Bài 55** và **Bài 56**; phân biệt hàm ngoài với hàm trong.
+Nếu đạo hàm \((u(x))^n\) nhưng quên \(u'\), đọc **Kiến thức 3.6**, làm **Bài 55** và **Bài 56**; phân biệt hàm ngoài với hàm trong.
 
 </details>
 
@@ -589,9 +597,11 @@ Nếu nhầm dấu đạo hàm cos hoặc áp công thức lượng giác khi g�
 > **CÔNG THỨC — Tan và cot.** Tan và cot có điểm cấm phải loại trước. Vì sao tan/cot có chỗ không thể lấy đạo hàm dù sin/cos trơn? Ta sử dụng \(\tan x=\frac{\sin x}{\cos x}\), \(\cot x=\frac{\cos x}{\sin x}\). Với x radian, \((\tan x)'=\frac1{\cos^2 x}\) khi \(\cos x\ne0\), \((\cot x)'=-\frac1{\sin^2 x}\) khi \(\sin x\ne0\). Dấu và điều kiện theo quy tắc thương; khi mẫu bằng0 hàm gốc không xác định, đạo hàm không thể được báo ở đó.
 
 Ví dụ, dùng quy tắc thương và \(\sin^2 x+\cos^2 x=1\) ta được
+
 \[
 (\tan x)'=\frac{\cos^2 x+\sin^2 x}{\cos^2 x}=\frac1{\cos^2 x}\quad(\cos x\ne0).
 \]
+
 Tương tự, thương \(\frac{\cos x}{\sin x}\) cho tử \(-\sin^2 x-\cos^2 x=-1\), nên đạo hàm cot mang dấu âm.
 
 Xét ví dụ: tan x ở \(x=\frac\pi2\) không xác định vì \(\cos\frac\pi2=0\). Ở \(x=0\): \((\tan x)'=1\) và \((\cot x)'\) không có do \(\sin0=0\). Chọn phân biệt miền cho từng hàm.
@@ -676,7 +686,7 @@ Nếu thiếu hệ số3, kết hợp quy tắc mũ với dây chuyền.
 
 **Kiểm lỗi**
 
-Nếu đạo hàm \(a^x\) thiếu \(\ln a\) hoặc đạo hàm \(e^u\) quên u', đọc **Kiến thức 4.4**, làm **Bài 66** và **Bài 68**; cơ số \(a>0\), \(a\ne1\) với hàm mũ cơ số a.
+Nếu đạo hàm \(a^x\) thiếu \(\ln a\) hoặc đạo hàm \(e^u\) quên \(u'\), đọc **Kiến thức 4.4**, làm **Bài 66** và **Bài 68**; cơ số \(a>0\), \(a\ne1\) với hàm mũ cơ số a.
 
 </details>
 
@@ -685,9 +695,11 @@ Nếu đạo hàm \(a^x\) thiếu \(\ln a\) hoặc đạo hàm \(e^u\) quên u',
 <!-- LESSON_ID: TOP09-M21; OUTCOME_ID: TOP09-O21 -->
 
 Để hiểu nguồn gốc công thức đạo hàm lôgarit, dùng giới hạn \(\displaystyle\lim_{u\to0}\frac{\ln(1+u)}{u}=1\). Với \(x>0\), khi \(h\) đủ nhỏ để \(x+h>0\), ta có
+
 \[
 \frac{\ln(x+h)-\ln x}{h}=\frac1x\frac{\ln(1+h/x)}{h/x}\longrightarrow\frac1x.
 \]
+
 Từ \(\log_a x=\dfrac{\ln x}{\ln a}\) với \(a>0,\ a\ne1\), ta suy ra hệ số \(\frac1{\ln a}\). Các phép biến đổi này chỉ có nghĩa khi đối số lôgarit **dương**.
 
 > **CÔNG THỨC — Logarit và miền.** Hàm logarit còn đòi hỏi xét miền của đối số. Khi lấy đạo hàm \(\ln x\), tại sao phải giữ \(x>0\) ngay cả khi \(\frac1x\) có nghĩa với \(x<0\)? Để xác định điều đó, cần xét miền của logarit và công thức đạo hàm của logarit tự nhiên. \((\ln x)'=\frac1x\) với \(x>0\); \((\log_a x)'=\frac1{x\ln a}\) với \(a>0\),\(a\ne1\) và \(x>0\). Công thức đạo hàm không mở rộng miền logarit gốc sang \(x<0\). Với \(\ln|x|\) có miền \(x\ne0\) và đạo hàm \(\frac1x\) nhưng đó là hàm khác (không tự đồng nhất với ln x).
@@ -739,7 +751,7 @@ Chẳng hạn, \(f=\ln(x^2+1)\) xác định mọi x, \(f'=\frac{2x}{x^2+1}\). C
 
 \(\frac3{3x-2}\), \(x>\frac23\).
 
-Nếu chỉ ghi mẫu≠0 mà cho \(x<\frac23\), điều kiện log phải dương bị vi phạm.
+Nếu chỉ ghi mẫu khác 0 mà cho \(x<\frac23\), điều kiện log phải dương bị vi phạm.
 
 
 **Kiểm lỗi**
@@ -754,7 +766,7 @@ Nếu cho \(\ln(3x-2)\) trên \(x\le\frac23\) hoặc quên nhân đạo hàm hà
 
 > **KIẾN THỨC CẦN GHI NHỚ — Đạo hàm và miền gốc.** Miền cần kiểm cả trước và sau lấy đạo hàm. Công thức đạo hàm có thể làm mình 'quên' một điểm hàm gốc không xác định không? Ta sử dụng điều kiện căn, mẫu, log và mẫu trig. Bước 1 giải miền xác định của biểu thức gốc. Bước 2 chọn công thức đạo hàm trên các khoảng nội điểm miền có thể lấy đạo hàm. Bước 3 so miền đạo hàm và miền gốc, đặc biệt đầu mút căn và điểm loại mẫu. Một biểu thức đại số sau rút không được tự dùng ở điểm gốc cấm.
 
-Xét ví dụ: \(f=\frac{\sqrt{x-3}}{x-4}\) có miền \(x\ge3\), \(x\ne4\). Công thức derivative theo tích/thương chỉ áp ở \(x>3\), \(x\ne4\). Tại \(x=3\) hàm có giá trị0 nhưng không có đạo hàm hữu hạn hai phía.
+Xét ví dụ: \(f=\frac{\sqrt{x-3}}{x-4}\) có miền \(x\ge3\), \(x\ne4\). Công thức đạo hàm theo tích/thương chỉ áp ở \(x>3\), \(x\ne4\). Tại \(x=3\) hàm có giá trị0 nhưng không có đạo hàm hữu hạn hai phía.
 
 **Ví dụ**
 
@@ -886,7 +898,7 @@ Chẳng hạn, \(f=3x^4-2x^2+1\): \(f'=12x^3-4x\), \(f''=36x^2-4\). Chọn hai b
 
 **Lời giải:** \(f'=15x^2-4x\); \(f''=30x-4\). Hệ số phải tính ở cả hai lần.
 
-**Vận dụng** \(f=x^5\): f''=?
+**Vận dụng** \(f=x^5\): \(f''\) bằng bao nhiêu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -936,7 +948,7 @@ Nếu quên đạo hàm dây chuyền ở lần thứ hai với sin/cos hoặc m
 
 <!-- LESSON_ID: TOP09-M29; OUTCOME_ID: TOP09-O29 -->
 
-Trong chuyển động, đạo hàm vận tốc là gia tốc. Vật có thể đang chuyển động nhưng gia tốc bằng 0 đúng lúc đó không? Ta bắt đầu từ vận tốc \(v=s'\) và đơn vị m/s, thời gian s. Từ tọa độ \(s(t)\), \(v(t)=s'(t)\), \(a(t)=v'(t)=s''(t)\). Đơn vị a là m/s²; dấu của a cho biết **vận tốc có hướng** đang tăng hay giảm, không phải trực tiếp tốc độ \(|v|\). Muốn nói nhanh/chậm cần kết hợp dấu v và a.
+Trong chuyển động, đạo hàm vận tốc là gia tốc. Vật có thể đang chuyển động nhưng gia tốc bằng 0 đúng lúc đó không? Ta bắt đầu từ vận tốc \(v=s'\) và đơn vị m/s, thời gian s. Từ tọa độ \(s(t)\), \(v(t)=s'(t)\), \(a(t)=v'(t)=s''(t)\). Đơn vị của gia tốc là m/s²; dấu của a cho biết **vận tốc có hướng** đang tăng hay giảm, không phải trực tiếp tốc độ \(|v|\). Muốn nói nhanh/chậm cần kết hợp dấu v và a.
 
 Giống như đi từ vận tốc trung bình đến vận tốc tức thời, gia tốc trung bình trong khoảng thời gian \(\Delta t\ne0\) là \(\frac{\Delta v}{\Delta t}\); cho \(\Delta t\to0\) và lấy giới hạn hữu hạn thì được \(a(t)=v'(t)=s''(t)\). Cách hiểu này giải thích vì sao đạo hàm cấp hai biểu diễn sự biến thiên **của vận tốc**, chứ không phải chỉ là thao tác lấy đạo hàm hai lần.
 
@@ -1004,17 +1016,17 @@ Nếu cho rằng gia tốc âm luôn làm tốc độ giảm, đọc **Kiến th
 
 <!-- LESSON_ID: TOP09-M31; OUTCOME_ID: TOP09-O31 -->
 
-> **PHƯƠNG PHÁP — Phối hợp ba đại lượng.** Tổng hợp quy tắc cần kiểm cả miền và đơn vị. Một đề có f, \(f'\), \(f''\) yêu cầu những thông tin khác nhau như thế nào? Để xác định điều đó, cần xét tích, chain, giá trị tại điểm, phương trình tiếp tuyến. Đối chiếu yêu cầu: \(f(a)\) là tung độ, \(f'(a)\) là độ dốc/tốc độ thay đổi, \(f''(a)\) là tốc độ thay đổi của độ dốc. Tính đạo hàm đúng với miền rồi dùng \(f'(a)\) chứ không dùng \(f''(a)\) để lập tiếp tuyến. Đây là bước tổng hợp, không chuyển sang khảo sát cực trị CĐ10.
+> **PHƯƠNG PHÁP — Phối hợp ba đại lượng.** Tổng hợp quy tắc cần kiểm cả miền và đơn vị. Một đề có f, \(f'\), \(f''\) yêu cầu những thông tin khác nhau như thế nào? Để xác định điều đó, cần xét quy tắc tích, quy tắc hàm hợp, giá trị tại điểm, phương trình tiếp tuyến. Đối chiếu yêu cầu: \(f(a)\) là tung độ, \(f'(a)\) là độ dốc/tốc độ thay đổi, \(f''(a)\) là tốc độ thay đổi của độ dốc. Tính đạo hàm đúng với miền rồi dùng \(f'(a)\) chứ không dùng \(f''(a)\) để lập tiếp tuyến. Đây là bước tổng hợp, không chuyển sang khảo sát cực trị CĐ10.
 
-Chẳng hạn, \(f=xe^x\): \(f'=e^x(1+x)\), \(f''=e^x(2+x)\); tại \(x=0\) f=0, f'=1, \(f''=2\), tiếp tuyến \(y=x\). Chọn khai triển từng bước và kiểm qua \((0;0)\).
+Chẳng hạn, \(f=xe^x\): \(f'=e^x(1+x)\), \(f''=e^x(2+x)\); tại \(x=0\) \(f(0)=0,\ f'(0)=1\), \(f''(0)=2\), tiếp tuyến \(y=x\). Chọn khai triển từng bước và kiểm qua \((0;0)\).
 
 **Ví dụ**
 
 **Đề bài:** Với \(f(x)=(x+2)e^x\), tính f(0), \(f'(0)\), \(f''(0)\) và tiếp tuyến.
 
-**Lời giải:** \(f'=e^x(x+3)\), \(f''=e^x(x+4)\); tại 0 lần lượt f=2, f′=3, f″=4. Tiếp tuyến \(y=3x+2\), không lấy \(f''\) làm hệ số góc.
+**Lời giải:** \(f'=e^x(x+3)\), \(f''=e^x(x+4)\); tại 0 lần lượt \(f(0)=2,\ f'(0)=3,\ f''(0)=4\). Tiếp tuyến \(y=3x+2\), không lấy \(f''\) làm hệ số góc.
 
-**Vận dụng** \(f=x^2+1\) tại \(x=0\), tiếp tuyến y=?
+**Vận dụng** \(f=x^2+1\) tại \(x=0\), phương trình tiếp tuyến là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -1035,13 +1047,15 @@ Nếu đặt \(f''(a)\) vào hệ số góc tiếp tuyến thay \(f'(a)\), đọ
 <!-- LESSON_ID: TOP09-M32; OUTCOME_ID: TOP09-O32 -->
 
 Tốc độ tức thời còn dùng để xấp xỉ sự thay đổi rất nhỏ. Khi đầu vào đổi rất nhỏ, có cần tính lại toàn bộ giá trị hàm mới để dự đoán đầu ra không? Ta đã biết giới hạn đạo hàm \(f'(a)\), ký hiệu Δx, đại số bình phương. Nếu \(f\) khả vi tại \(a\), đặt phần sai lệch \(r(\Delta x)=f(a+\Delta x)-f(a)-f'(a)\Delta x\). Từ định nghĩa đạo hàm, với \(\Delta x\ne0\),
+
 \[
 \frac{r(\Delta x)}{\Delta x}
 =\frac{f(a+\Delta x)-f(a)}{\Delta x}-f'(a)\longrightarrow0.
 \]
+
 Nghĩa là sai lệch nhỏ hơn bậc của bước thay đổi khi bước tiến về 0. Ví dụ với \(f(x)=x^2\), khai triển cho \(r(\Delta x)=(\Delta x)^2\), nên \(\frac{r(\Delta x)}{\Delta x}=\Delta x\to0\). Ta ký hiệu phần sai lệch có tính chất này là \(o(\Delta x)\) và viết \(f(a+\Delta x)-f(a)=f'(a)\Delta x+o(\Delta x)\). Phần tuyến tính \(dy=f'(a)\,dx\) với \(dx=\Delta x\) gọi là **vi phân**; với bước đủ nhỏ, \(\Delta y\approx dy\), KHÔNG luôn bằng nhau. Vi phân là công cụ xấp xỉ cục bộ, không nên gọi là toàn bộ 'độ tăng'. Đây là một **kiến thức mở rộng của Chuyên đề**, không thay thế các kiến thức cơ bản về đạo hàm vừa học.
 
-Chẳng hạn, \(f=x^2\),\(a=3\),\(dx=0{,}02\): \(f'(3)=6\) nên \(dy=0{,}12\); \(\Delta y=(3{,}02)^2-9=0{,}1204\), sai lệch0,0004=(dx)². Chọn vi phân để ước lượng nhanh và định lượng phần dư, không hứa chính xác cho bước lớn.
+Chẳng hạn, \(f=x^2\), \(a=3\), \(dx=0{,}02\): \(f'(3)=6\) nên \(dy=0{,}12\); \(\Delta y=(3{,}02)^2-9=0{,}1204\), sai lệch \(0{,}0004=(dx)^2\). Chọn vi phân để ước lượng nhanh và định lượng phần dư, không hứa chính xác cho bước lớn.
 
 > **CÔNG THỨC — Vi phân xấp xỉ.** Ngay trên hình, chọn \(f(x)=x^2\), \(a=2\), \(dx=0{,}1\). Vì \(f'(2)=4\), vi phân dự đoán \(dy=4\cdot0{,}1=0{,}4\). Độ tăng thật là \(\Delta y=(2{,}1)^2-2^2=0{,}41\), lớn hơn 0,01. Bước lớn hơn có thể tạo sai số đáng kể hơn; ví dụ \(a=3,dx=0{,}02\) phía trên là **trường hợp khác**, không phải các cột đang vẽ.
 
