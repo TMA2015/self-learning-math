@@ -93,7 +93,7 @@ with sync_playwright() as pw:
                     assert tab.get_attribute("aria-label")==full
                 assert tabs.first.inner_text() == {
   "16": "1. Hai đường vuông góc",
-  "17": "1. Khoảng cách: vì sao không đo",
+  "17": "1. Khoảng cách vuông góc",
   "18": "1. Vectơ và phép toán hình học"
 }[topic]
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e.parentElement).display") == "flex"

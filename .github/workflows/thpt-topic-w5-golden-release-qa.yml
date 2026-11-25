@@ -34,10 +34,24 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Classify exact display-only PR
+        id: scope
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [[ -n "$BASE_SHA" ]]; then
+            git diff --no-renames --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/rw3-paths.txt"
+            node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/rw3-paths.txt"
+            if grep -Fxq 'reason=OWNER_1055_RW3_TAB_LABELS' "$GITHUB_OUTPUT"; then
+              node scripts/test-thpt-release-impact.cjs --prove-rw3-tabs
+            fi
+          fi
       - uses: actions/setup-python@v5
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
         with:
           python-version: '3.12'
       - name: Verify W5 signed AUTHORING and source-only 12 public pages
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
         run: |
           node --check docs/assets/javascripts/thpt-topic-w5-golden-v1.js
           python3 -m py_compile scripts/test-thpt-topic-w5-golden-browser.py scripts/test-thpt-topic-w5-source-locked.py
@@ -49,12 +63,14 @@ jobs:
           python3 scripts/test-thpt-topic-w5-source-intake.py
           python3 scripts/test-thpt-topic-w5-source-locked.py
       - name: Strict build the same THCS+THPT site and THPT preview
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
           node scripts/assemble-thpt-site.cjs
       - name: Verify all 12 W5 route files, source SHA, 10 images, 4 optional models
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
         run: |
           python3 - <<'PY'
           import json
@@ -75,6 +91,7 @@ jobs:
           print('PASS W5 12 routes source/Q18, 10 signed SVGs and 4 optional models')
           PY
       - name: Chromium and WebKit scoped W5 Golden browser (390/820/1440)
+        if: steps.scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
         run: |
           python -m pip install --disable-pip-version-check playwright==1.56.0
           python -m playwright install --with-deps chromium webkit
