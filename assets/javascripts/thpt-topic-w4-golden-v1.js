@@ -56,25 +56,25 @@ const topicTabNames={
   },
   "17": {
     "modules": [
-      "1. Khoảng cách: vì sao không đo",
-      "2. Thể tích: từ lớp cắt bằng nh"
+      "1. Khoảng cách vuông góc",
+      "2. Thể tích các khối"
     ],
     "subs": [
       [
-        "1.1. Khoảng cách từ điểm đến đư",
-        "1.2. Khoảng cách từ điểm đến mặ",
-        "1.3. Khoảng cách đường thẳng so",
-        "1.4. Khoảng cách hai mặt phẳng",
-        "1.5. Khoảng cách giữa hai đường",
-        "1.6. Đường cao vuông góc của kh"
+        "1.1. Điểm đến đường thẳng",
+        "1.2. Điểm đến mặt phẳng",
+        "1.3. Đường song song mặt phẳng",
+        "1.4. Hai mặt phẳng song song",
+        "1.5. Hai đường chéo nhau",
+        "1.6. Đường cao vuông góc"
       ],
       [
         "2.1. Thể tích lăng trụ",
         "2.2. Thể tích khối chóp",
-        "2.3. Thể tích hình hộp và lập p",
+        "2.3. Hình hộp và lập phương",
         "2.4. Thể tích chóp cụt",
-        "2.5. Thể tích trong tình huống",
-        "2.6. Tổng hợp hình học và thể t"
+        "2.5. Thể tích thực tế",
+        "2.6. Tổng hợp hình học, thể tích"
       ]
     ]
   },
@@ -82,17 +82,17 @@ const topicTabNames={
     "modules": [
       "1. Vectơ và phép toán hình học",
       "2. Làm quen hệ tọa độ Oxyz",
-      "3. Phép toán tọa độ và khoảng c",
+      "3. Tọa độ và khoảng cách",
       "4. Mặt phẳng trong Oxyz",
       "5. Đường thẳng và giao điểm",
       "6. Góc và quan hệ vị trí",
       "7. Mặt cầu và thiết diện",
-      "8. Vận dụng tích hợp sau B17 (t"
+      "8. Vận dụng tự chọn sau B17"
     ],
     "subs": [
       [
         "1.1. Vectơ và vectơ-không",
-        "1.2. Bằng nhau, đối nhau và cùn",
+        "1.2. Bằng, đối, cùng phương",
         "1.3. Cộng vectơ theo đường đi",
         "1.4. Nhân vectơ với một số",
         "1.5. Góc và tích vô hướng",
@@ -109,7 +109,7 @@ const topicTabNames={
         "3.2. Kiểm hai vectơ cùng phương",
         "3.3. Trung điểm và trọng tâm",
         "3.4. Tích vô hướng trong tọa độ",
-        "3.5. Độ dài và khoảng cách hai",
+        "3.5. Độ dài, khoảng cách 2 điểm",
         "3.6. Mô hình chuyển động"
       ],
       [
@@ -117,34 +117,34 @@ const topicTabNames={
         "4.2. Mặt phẳng qua một điểm",
         "4.3. Mặt phẳng qua ba điểm",
         "4.4. Mặt phẳng chứa trục",
-        "4.5. Hai mặt phẳng: song song h",
-        "4.6. Khoảng cách điểm đến mặt p"
+        "4.5. Hai mặt song song/vuông góc",
+        "4.6. Điểm đến mặt phẳng"
       ],
       [
-        "5.1. Phương trình tham số đường",
+        "5.1. PT tham số đường thẳng",
         "5.2. Đường thẳng qua hai điểm",
-        "5.3. Khi một tọa độ hướng bằng",
-        "5.4. Kiểm điểm thuộc đường thẳn",
+        "5.3. Tọa độ hướng bằng không",
+        "5.4. Điểm thuộc đường thẳng",
         "5.5. Hai đường có cùng phương",
-        "5.6. Hai đường cắt hay chéo nha",
+        "5.6. Hai đường cắt hay chéo?",
         "5.7. Tìm giao giữa đường và mặt"
       ],
       [
         "6.1. Góc giữa hai đường",
         "6.2. Góc giữa đường và mặt",
         "6.3. Góc giữa hai mặt",
-        "6.4. Nhận diện đường–mặt song s",
+        "6.4. Đường–mặt song song",
         "6.5. Góc dốc và độ nghiêng"
       ],
       [
         "7.1. Mặt cầu từ tâm và bán kính",
-        "7.2. Hoàn thành bình phương tìm",
-        "7.3. Điểm trong, trên hay ngoài",
-        "7.4. Mặt cầu qua hai đầu đường",
-        "7.5. Tiếp xúc và thiết diện mặt"
+        "7.2. Hoàn thành bình phương",
+        "7.3. Điểm trong, trên, ngoài cầu",
+        "7.4. Mặt cầu từ đường kính",
+        "7.5. Tiếp xúc, thiết diện cầu"
       ],
       [
-        "8.1. Mặt cắt và khoảng cách đến"
+        "8.1. Mặt cắt, khoảng cách cầu"
       ]
     ]
   }
