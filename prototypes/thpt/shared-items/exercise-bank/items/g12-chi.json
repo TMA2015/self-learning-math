@@ -619,7 +619,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tách số hạng hằng và phần tiến về 0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -634,7 +636,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy cả biểu thức làm đường tiệm cận, tính giới hạn của phần phân thức riêng. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P13."
   },
   {
     "item_id": "THPT-G12-CHI-B03-C02",
@@ -648,7 +651,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Xét dấu mẫu ở hai phía −3."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -663,7 +668,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu ghi một giới hạn hai phía vô cực không dấu, thử x=−3,1 và −2,9 rồi xét dấu từng bên. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P14."
   },
   {
     "item_id": "THPT-G12-CHI-B03-C03",
@@ -677,7 +683,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính hiệu g(x)−(x−2)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -692,7 +700,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm mẫu với đường xiên, chỉ đường thẳng có hiệu với hàm tiến về 0 mới là tiệm cận xiên. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P15."
   },
   {
     "item_id": "THPT-G12-CHI-B03-C04",
@@ -706,7 +715,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Phân tích tử thành nhân tử và rút gọn với x≠3."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -721,7 +732,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu mẫu bằng 0 mà kết luận đứng ngay, tính giới hạn sau rút gọn; hữu hạn nghĩa là lỗ trong trường hợp này. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P16."
   },
   {
     "item_id": "THPT-G12-CHI-B03-P01",
@@ -735,7 +747,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Chia tử cho mẫu hoặc chia cả tử và mẫu cho x."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -750,7 +764,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy hệ số tự do thay hệ số bậc cao nhất, viết f=2−5/(x+2) rồi lấy giới hạn. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P13."
   },
   {
     "item_id": "THPT-G12-CHI-B03-P02",
@@ -764,7 +779,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tử tiến về 3 dương; kiểm dấu mẫu ở trái và phải 2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -779,7 +796,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu hai phía cùng dấu, thử x=1,9 và 2,1 để thấy mẫu đổi dấu. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P14."
   },
   {
     "item_id": "THPT-G12-CHI-B03-P03",
@@ -793,7 +811,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Chia đa thức, xét phần dư ở vô cực và quanh −1."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -808,7 +828,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ tìm đường xiên, xét thêm giới hạn vô cực một phía ở nghiệm mẫu. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P15."
   },
   {
     "item_id": "THPT-G12-CHI-B03-P04",
@@ -822,7 +843,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Xác định phía nào thuộc miền trước khi lấy giới hạn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -837,7 +860,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đòi hai giới hạn, nhớ chỉ một giới hạn một phía vô cực trong tập xác định đã đủ. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P17."
   },
   {
     "item_id": "THPT-G12-CHI-B03-P05",
@@ -851,7 +875,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Rút gọn biểu thức nhưng giữ x≠2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -866,7 +892,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu vẽ chấm đặc, thay x=2 vào biểu thức gốc: không xác định, chỉ có điểm khuyết. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P16."
   },
   {
     "item_id": "THPT-G12-CHI-B03-P06",
@@ -880,7 +907,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Xét dấu f−3 theo x−2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -895,7 +924,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm trên/dưới, thử x=3 và x=1, so từng giá trị với 3. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P18."
   },
   {
     "item_id": "THPT-G12-CHI-B03-P07",
@@ -909,7 +939,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tách √(x²) thành |x| ở cả hai phía."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -924,7 +956,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho hai giới hạn bằng 1, viết x/|x| tại x âm và x dương. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P13."
   },
   {
     "item_id": "THPT-G12-CHI-B03-A01",
@@ -938,7 +971,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Xét q lớn và q dương rất nhỏ; phân biệt mô hình liên tục với sản lượng nguyên."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -953,7 +988,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho chi phí đạt 20 hoặc q=0 hợp lệ, xét 120/q>0 ở q hữu hạn dương và mẫu ở 0. Ôn Toán 12 Chương I Bài 3; luyện THPT-TOP10-P17."
   },
   {
     "item_id": "THPT-G12-CHI-B04-C01",
@@ -967,7 +1003,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tìm điều kiện mẫu khác 0 trước mọi thao tác."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -982,7 +1020,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu vẽ điểm tại 2, kiểm tập xác định trước cả đạo hàm và giao trục. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P19."
   },
   {
     "item_id": "THPT-G12-CHI-B04-C02",
@@ -996,7 +1035,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Phân tích đạo hàm thành 3x(x−2)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1011,7 +1052,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi mọi nghiệm đạo hàm là cực trị, lập dấu +,−,+ rồi tính riêng f ở hai nghiệm. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P20."
   },
   {
     "item_id": "THPT-G12-CHI-B04-C03",
@@ -1025,7 +1067,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tìm miền và đạo hàm của phân thức."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1040,7 +1084,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gộp hai khoảng qua 1, kiểm rằng 1 không thuộc miền và thử hai điểm ở hai phía. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P21."
   },
   {
     "item_id": "THPT-G12-CHI-B04-C04",
@@ -1054,7 +1099,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Giao Ox đặt y=0; giao Oy đặt x=0, kiểm miền."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1069,7 +1116,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đổi hoành/tung, ghi tọa độ (x;y) sau khi thay đúng biến. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P22."
   },
   {
     "item_id": "THPT-G12-CHI-B04-P01",
@@ -1083,7 +1131,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đặt X=x−4, Y=y−2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1098,7 +1148,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ đoán từ hình, chứng minh Y=5/X bất biến khi đổi (X,Y) thành (−X,−Y). Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P23."
   },
   {
     "item_id": "THPT-G12-CHI-B04-P02",
@@ -1112,7 +1163,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đọc dấu đạo hàm ở hai bên mỗi mốc."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1127,7 +1180,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm cực đại với giá trị cực đại, đề chỉ đủ cho vị trí, chưa biết f tại mốc. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P24."
   },
   {
     "item_id": "THPT-G12-CHI-B04-P03",
@@ -1141,7 +1195,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Kiểm miền và giới hạn khi x→−1 từ từng phía."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1156,7 +1212,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nối hai nhánh, chỉ ra không có điểm đồ thị nào có hoành độ −1. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P25."
   },
   {
     "item_id": "THPT-G12-CHI-B04-P04",
@@ -1170,7 +1227,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Giải h′=0, lập dấu trên ba khoảng."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1185,7 +1244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi cực trị địa phương là GTLN/GTNN toàn ℝ, kiểm giới hạn ở ±∞. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P20."
   },
   {
     "item_id": "THPT-G12-CHI-B04-P05",
@@ -1199,7 +1259,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Phân tích x²(x−3), kiểm dấu trước và sau mỗi nghiệm."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1214,7 +1276,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nghĩ mọi giao điểm đều cắt trục, xét dấu ở hai phía của nghiệm bội chẵn x=0. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P22."
   },
   {
     "item_id": "THPT-G12-CHI-B04-P06",
@@ -1228,7 +1291,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đặt x=1+u rồi kiểm f(1+u)+f(1−u)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1243,7 +1308,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm tâm với cực đại, lấy trung điểm hai điểm đối xứng để chứng minh tâm (1;−2). Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P23."
   },
   {
     "item_id": "THPT-G12-CHI-B04-A01",
@@ -1257,7 +1323,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đạo hàm trên q>10 và xét hai giới hạn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1272,7 +1340,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi 4 là giá trị nhỏ nhất đạt được, kiểm phần 200/(q−10) luôn dương. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P21."
   },
   {
     "item_id": "THPT-G12-CHI-B04-A02",
@@ -1286,7 +1355,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Kiểm hệ số bậc ba và dấu đạo hàm giữa 0 và 2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1301,7 +1372,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu vẽ đường tăng liên tục, thử f(0)=0 và f(2)=−4 để thấy một đoạn giảm. Ôn Toán 12 Chương I Bài 4; luyện THPT-TOP10-P19."
   },
   {
     "item_id": "THPT-G12-CHI-B05-C01",
@@ -1315,7 +1387,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Lấy đạo hàm rồi chia đơn vị đại lượng cho đơn vị biến."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1330,7 +1404,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu ghi m/s², nhớ đây là đạo hàm bậc nhất của đại lượng đo bằng mét theo giây. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P26."
   },
   {
     "item_id": "THPT-G12-CHI-B05-C02",
@@ -1344,7 +1419,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính v=s′, tốc độ là |v|."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1359,7 +1436,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu ghi tốc độ âm, tách dấu vận tốc chỉ hướng và trị tuyệt đối là tốc độ. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P27."
   },
   {
     "item_id": "THPT-G12-CHI-B05-C03",
@@ -1373,7 +1451,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Lấy C′ tại q=5 và kiểm đơn vị."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1388,7 +1468,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu thay trực tiếp vào C, nhớ đề hỏi tốc độ biến thiên chi phí, không phải tổng chi phí. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P28."
   },
   {
     "item_id": "THPT-G12-CHI-B05-C04",
@@ -1402,7 +1483,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Cả chiều cao và hai cạnh đáy phải dương."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1417,7 +1500,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho x=10, chiều rộng đáy bằng 0, hộp suy biến; lấy giao ba điều kiện. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P29."
   },
   {
     "item_id": "THPT-G12-CHI-B05-P01",
@@ -1431,7 +1515,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính f′(2), dùng Δf≈f′(2)Δx với Δx nhỏ."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1446,7 +1532,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu hiểu 12 là mức tăng chính xác mỗi phút, phân biệt tốc độ tức thời và sai phân hữu hạn. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P26."
   },
   {
     "item_id": "THPT-G12-CHI-B05-P02",
@@ -1460,7 +1547,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "So dấu v và a, rồi xét riêng lúc v=0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1475,7 +1564,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu a dương mà kết luận tốc độ luôn tăng, viết tốc độ |t−3| trước và sau t=3. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P27."
   },
   {
     "item_id": "THPT-G12-CHI-B05-P03",
@@ -1489,7 +1579,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính riêng C′(100) và C(101)−C(100)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1504,7 +1596,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho hai giá trị bằng nhau, dùng hiệu 101²−100²=201; kiểm đơn vị của mỗi đại lượng. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P28."
   },
   {
     "item_id": "THPT-G12-CHI-B05-P04",
@@ -1518,7 +1611,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "So giá trị tại nghiệm đạo hàm và hai đầu đoạn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1533,7 +1628,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ giải f′=0, lập bảng ba giá trị để xác nhận GTLN trên đoạn đóng. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P30."
   },
   {
     "item_id": "THPT-G12-CHI-B05-P05",
@@ -1547,7 +1643,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Xác định miền hộp không suy biến và xét giới hạn biên."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1562,7 +1660,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy 0 là GTNN, hỏi có x nào trong (0,10) cho V=0 không. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P31."
   },
   {
     "item_id": "THPT-G12-CHI-B05-P06",
@@ -1576,7 +1675,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đơn vị đạo hàm là đơn vị tử chia đơn vị biến."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1591,7 +1692,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi A′ là vận tốc, kiểm biến độc lập x đo độ dài chứ không đo thời gian. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P32."
   },
   {
     "item_id": "THPT-G12-CHI-B05-A01",
@@ -1605,7 +1707,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Ràng buộc ba cạnh 2x+y=40, rồi lập A(x)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1620,7 +1724,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng 2x+2y, vẽ cạnh sát tường không cần rào; kiểm miền dương trước tối ưu. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P30."
   },
   {
     "item_id": "THPT-G12-CHI-B05-A02",
@@ -1634,7 +1739,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Kết hợp q≥0 và p(q)≥0; xét q nguyên nếu là sản phẩm."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1649,7 +1756,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu loại 300, đề cho phép giá bằng 0; nếu q nguyên, chuyển đoạn thành tập các số nguyên. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P29."
   },
   {
     "item_id": "THPT-G12-CHI-B05-A03",
@@ -1663,7 +1771,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tìm nghiệm P′ và kiểm miền, phân biệt q với P(q)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1678,7 +1788,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu trả 100 nghìn đồng, 100 là sản lượng; thay vào P để tìm lợi nhuận. Ôn Toán 12 Chương I Bài 5; luyện THPT-TOP10-P32."
   },
   {
     "item_id": "THPT-G12-B01-KFT01",
