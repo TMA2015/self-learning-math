@@ -37,7 +37,16 @@ jobs:
           node scripts/test-thpt-push-deploy-scope.cjs --self-test
           node scripts/test-thpt-push-deploy-scope.cjs | tee /tmp/thpt-deploy-scope.txt
           classification="$(tail -n 1 /tmp/thpt-deploy-scope.txt)"
-          if [[ "$classification" == "DEPLOY_REQUIRED" ]]; then
+          # Classify the full push before deciding whether this is the one-time
+          # exact metadata-only recovery of the already approved #1110 release.
+          git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/main-push-scoped-paths.txt"
+          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/main-push-scoped-paths.txt"
+          if [[ "$classification" == "NO_DEPLOY_METADATA_ONLY" && "$BEFORE_SHA" == "f9a4b0caef4f860a17d956c0c4d7600dc511c3d2" ]] &&
+             grep -Fxq 'reason=OWNER_1110_DEPLOY_RECOVERY_EXACT' "$GITHUB_OUTPUT" &&
+             grep -Fxq 'impact=SCOPED_TOPIC_SHARED_MATH' "$GITHUB_OUTPUT"; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+            echo "Exact #1110 deploy-only recovery; re-run complete shared source/browser gates before publishing" >> "$GITHUB_STEP_SUMMARY"
+          elif [[ "$classification" == "DEPLOY_REQUIRED" ]]; then
             echo "deploy=true" >> "$GITHUB_OUTPUT"
             echo "Site/runtime or unknown files changed: retain ALL existing deploy gates" >> "$GITHUB_STEP_SUMMARY"
           elif [[ "$classification" == "NO_DEPLOY_METADATA_ONLY" ]]; then
@@ -49,8 +58,6 @@ jobs:
           fi
           # Narrow exact one-lesson source edits to a separate production lane.
           # Unknown/mixed/shared diffs always stay on the original complete gate.
-          git diff --no-renames --name-only "$BEFORE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/main-push-scoped-paths.txt"
-          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/main-push-scoped-paths.txt"
           echo "QA impact (source only): $(cat "$RUNNER_TEMP/main-push-scoped-paths.txt" | tr '\n' ' ')" >> "$GITHUB_STEP_SUMMARY"
 
   deploy:
@@ -737,6 +744,9 @@ jobs:
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
           python -m playwright install --with-deps chromium webkit
       - name: Exact source and protected scope gate
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
         run: |
           node scripts/test-thpt-release-impact.cjs --self-test
           python scripts/test-thpt-topic-rw1-math-browser.py --shared-candidate-scope
