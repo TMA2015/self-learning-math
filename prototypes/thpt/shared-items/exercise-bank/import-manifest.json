@@ -16854,6 +16854,56 @@
         "G12 ChI B03–B05/END remaining; CĐ10 Written references/rubrics, original SGK/SBT fresh visual evidence, complete source field parity, figure-reading/optimization transfer breadth and cutover/version decision pending. No new Academic/PED PASS."
       ],
       "next": "Finish shared G12 ChI B03–B05/END and CĐ10 Written review, then CĐ11; preserve CP57."
+    },
+    "formative_scoped_audit_cp58": {
+      "checkpoint": 58,
+      "baseline": "3cd5aa75bfa44e1b488a57ddf11de0c4b13da5f7",
+      "scope": "CĐ10 remaining G12 ChI B03–B05/END and Written; CĐ11 P01–P22 and shared G12 ChIV targeted math/solution review; Written reference audit.",
+      "source_evidence": {
+        "cd10_written": "5f6ab764df6541ada9b4d4475403d29984d8e7da",
+        "g12_chi": "f0862dcdab21dec136e43969f45c42638e7c7574",
+        "cd11_academic": "6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0",
+        "g12_chiv": "45722cd386a498f3e0e96a09928c85565af56d1b",
+        "cd11_knowledge": "31282e35cd68d3a563c9cab5cf92d2d1453ae535",
+        "cd11_practice": "a2d7d56bfeb50316718b6695b2c78d95cf82d830",
+        "cd11_replay": "b009080c9d147af9e8c581002df425bb5048090f"
+      },
+      "files": [
+        {
+          "path": "items/cd11.json",
+          "before": "e0330f1bdfe5404973e11f2f04c7cb7b6c1bcc89",
+          "after": "71062d8cc3be5dbe95648ab76755bcb5f6e99912",
+          "changed": 22
+        },
+        {
+          "path": "items/g12-chi.json",
+          "before": "73fac370e8465cb6453bfb6c8552c992f70b7bfc",
+          "after": "839fd0cdabd2de38893c4e9835effac5a5b118cf",
+          "changed": 37
+        },
+        {
+          "path": "items/g12-chiv.json",
+          "before": "142b6aa1a53e0bce4f15870e5d9355b589a3dcf7",
+          "after": "19f461563030f4691e28d105ab5000b952c6911e",
+          "changed": 8
+        }
+      ],
+      "reviewed": {
+        "cd11_topic_formative": 22,
+        "g12_chi_remaining_formative": 37,
+        "g12_chi_public_selfcheck": 10,
+        "g12_chiv_shared_formative": 66,
+        "g12_chiv_changed": 8,
+        "cd10_written_source_read": 18,
+        "cd11_written_source_read": 28
+      },
+      "findings": [
+        "CĐ10 B03–B05: 37 hints and cause-specific remediation tied to existing topic practice placements; stems/keys/solutions preserved. 10 public END keys and solutions read, unchanged; no hints added to END. CĐ10 Written: TOP10-W01 overlaps G12-CHI-B02-W01 and TOP10-W03 overlaps G12-CHI-B03-W02; same core problem with expanded subparts/rubric, do not merge IDs yet. Six TOP10 Written have no existing library projection pointer. SGK B01-W01/W02 have rubric only in academic source, B03-W02 exemplar lacks explicit one-sided limits required by rubric; B04-W01/W02 exemplar lacks full requested table/limit detail. Preserve Written source and references; canonical/rubric remediation pending.",
+        "CĐ11: 22 hints/D6 and existing SGK skill mapping from placement; P07/P14 specify units, P11 avoids same stem as B13-C01, P12 explicitly tests displacement vs distance, P15 new interval to avoid B13-W05 repetition, P16 sign-changing quadratic with asymmetric interval, P17 verifies whole-interval ordering, P18 distinguishes three intervals, P19 self-determines intersection bounds rather than repeats B13-P04, P21 nonconstant decreasing radius. 66 shared SGK C/P/A answer keys/solutions read; 8 targeted edits improve explicit +C/derivation, B12-P07 units, B13-P04 intersection, B13-P05 geometric region vs signed height, C08/P08 disk condition. No first-try edits.",
+        "Written CĐ11: 28 source blocks read; TOP11-W05 overlaps G12-B13-W06 (same square cross-sections); TOP11-W04 previously same stem as P18, formative changed to three intervals. Six TOP11 Written no existing library projection pointer; B11-W03/04/05/06 abbreviated exemplars omit some rubric-required steps, B12-W05 lacks explicit interval integrals. B12-C05/B13-C02 identical formative stems under different existing IDs; retain until canonical cutover resolution, not silently delete. TOP11-W03/04/05/06 mathematical answers recomputed; no Written edits.",
+        "No fresh SGK/SBT PDF evidence, full historical stem/key/solution parity or all shared G12 ChIV hint/D6 upgrades; no Academic/PED PASS. No placement, source, interaction, status, version, assessment or Written reference changes; counts remain invariant within delta, not a fresh whole bank scan."
+      ],
+      "next": "Finish targeted G12 ChIV D6/remaining Written findings and proceed CĐ12/CĐ13 in batches of 2–3; preserve CP58."
     }
   }
 }
