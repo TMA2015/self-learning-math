@@ -1002,8 +1002,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY01` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-C01` khi đã hiểu kiến thức.",
+    "hints": [
+      "Lấy hệ số x,y làm pháp tuyến rồi tìm một vectơ vuông góc."
+    ],
+    "remediation": "Nếu chọn cùng vectơ làm chỉ phương và pháp tuyến, kiểm tích vô hướng bằng 0 và hai vectơ khác 0. Ôn CĐ14 mục 1.1; luyện THPT-G10-B19-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1027,8 +1029,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY02` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-C02` khi đã hiểu kiến thức.",
+    "hints": [
+      "Dùng n·PM=0, M(x;y) là điểm bất kỳ trên đường."
+    ],
+    "remediation": "Nếu sai hằng số, thay P vào phương trình; vế trái phải bằng 0. Ôn CĐ14 mục 1.2; luyện THPT-G10-B19-C02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1052,8 +1056,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY03` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P01` khi đã hiểu kiến thức.",
+    "hints": [
+      "Cộng vào tọa độ A cùng một tham số t nhân từng tọa độ u."
+    ],
+    "remediation": "Nếu thế hai t khác nhau, điểm nhận được có thể không thuộc đường; dùng t=−2 đồng thời. Ôn CĐ14 mục 1.3; luyện THPT-G10-B19-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1077,8 +1083,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY04` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P02` khi đã hiểu kiến thức.",
+    "hints": [
+      "Tính AB rồi tìm pháp tuyến vuông góc với AB."
+    ],
+    "remediation": "Nếu nhầm AB thành pháp tuyến, kiểm tích vô hướng và thay cả hai điểm vào phương trình. Ôn CĐ14 mục 1.4; luyện THPT-G10-B19-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1102,8 +1110,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY05` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P03` khi đã hiểu kiến thức.",
+    "hints": [
+      "Thay từng cặp tọa độ vào vế trái."
+    ],
+    "remediation": "Nếu chỉ nhìn một tọa độ hoặc hình vẽ, chưa đủ; một điểm thuộc khi cả cặp thỏa phương trình. Ôn CĐ14 mục 1.5; luyện THPT-G10-B19-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1127,8 +1137,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY06` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P06` khi đã hiểu kiến thức.",
+    "hints": [
+      "Tìm giao điểm trước; đường cần dựng có cùng pháp tuyến với đường đã cho."
+    ],
+    "remediation": "Nếu giữ nguyên hằng số, kiểm đường mới đi qua giao điểm và phân biệt với đường cũ. Ôn CĐ14 mục 1.6; luyện THPT-G10-B19-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1152,8 +1164,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY07` bên dưới; quay lại câu canonical cũ `THPT-G10-B19-P04` khi đã hiểu kiến thức.",
+    "hints": [
+      "Tính lượng tăng mỗi phút, sau đó cộng lượng ban đầu."
+    ],
+    "remediation": "Nếu ra 4t, đã bỏ 10 lít ban đầu; chỉ ngoại suy khi bể chưa tràn và còn đổ đều. Ôn CĐ14 mục 1.7; luyện THPT-G10-B19-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1177,8 +1191,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY08` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-C01` khi đã hiểu kiến thức.",
+    "hints": [
+      "So tỉ lệ cả ba hệ số, không chỉ hai hệ số của x,y."
+    ],
+    "remediation": "Nếu pháp tuyến cùng phương, đường có thể trùng hoặc song song phân biệt; kiểm hằng số. Ôn CĐ14 mục 2.1; luyện THPT-G10-B20-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1202,8 +1218,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY09` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-C02` khi đã hiểu kiến thức.",
+    "hints": [
+      "Pháp tuyến của đường cũ có thể làm chỉ phương đường mới."
+    ],
+    "remediation": "Nếu hai pháp tuyến cùng phương thì hai đường không vuông góc; kiểm tích vô hướng bằng 0. Ôn CĐ14 mục 2.2; luyện THPT-G10-B20-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1227,8 +1245,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY10` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P01` khi đã hiểu kiến thức.",
+    "hints": [
+      "Giải hệ hai phương trình bằng thế hoặc cộng đại số."
+    ],
+    "remediation": "Nếu điểm chỉ thỏa một phương trình, chưa phải giao điểm; thử lại cả hai. Ôn CĐ14 mục 2.3; luyện THPT-G10-B20-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1252,8 +1272,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY11` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P02` khi đã hiểu kiến thức.",
+    "hints": [
+      "Chia trị tuyệt đối của vế trái tại P cho độ dài pháp tuyến."
+    ],
+    "remediation": "Nếu bỏ trị tuyệt đối hoặc căn ở mẫu, kiểm khoảng cách không âm và bất biến khi đổi dấu phương trình. Ôn CĐ14 mục 2.4; luyện THPT-G10-B20-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1277,8 +1299,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY12` bên dưới; quay lại câu canonical cũ `THPT-G10-B20-P03` khi đã hiểu kiến thức.",
+    "hints": [
+      "Lấy trị tuyệt đối tích vô hướng hai pháp tuyến chia tích độ dài."
+    ],
+    "remediation": "Nếu lấy góc tù giữa hai vectơ, nhớ góc giữa đường nằm trong [0°,90°]. Ôn CĐ14 mục 2.5; luyện THPT-G10-B20-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1302,8 +1326,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY13` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-C01` khi đã hiểu kiến thức.",
+    "hints": [
+      "Viết bình phương khoảng cách IP bằng R²."
+    ],
+    "remediation": "Nếu sai dấu tâm hoặc quên bình phương R, thay P vào phương trình để kiểm. Ôn CĐ14 mục 3.1; luyện THPT-G10-B21-C01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1327,8 +1353,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY14` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-C02` khi đã hiểu kiến thức.",
+    "hints": [
+      "Hoàn thành bình phương riêng cho x và y."
+    ],
+    "remediation": "Nếu đọc trực tiếp hệ số x,y là tâm hoặc R²≤0, hoàn thành bình phương và kiểm điều kiện R>0. Ôn CĐ14 mục 3.2; luyện THPT-G10-B21-C02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1352,8 +1380,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY15` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P02` khi đã hiểu kiến thức.",
+    "hints": [
+      "Bán kính IP vuông góc tiếp tuyến tại P."
+    ],
+    "remediation": "Nếu dùng IP làm chỉ phương, đổi sang pháp tuyến và thử P thuộc tiếp tuyến. Ôn CĐ14 mục 3.3; luyện THPT-G10-B21-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1377,8 +1407,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY16` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P04` khi đã hiểu kiến thức.",
+    "hints": [
+      "Đặt tâm I(h;k), dùng IA²=IB²=IC²."
+    ],
+    "remediation": "Nếu lấy trung điểm cạnh làm tâm tùy ý, chỉ đúng cho cạnh huyền tam giác vuông; kiểm cả ba khoảng cách. Ôn CĐ14 mục 3.4; luyện THPT-G10-B21-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1402,8 +1434,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY17` bên dưới; quay lại câu canonical cũ `THPT-G10-B21-P03` khi đã hiểu kiến thức.",
+    "hints": [
+      "So khoảng cách tâm–đường với R rồi thế phương trình để tìm giao."
+    ],
+    "remediation": "Nếu lấy luôn hình chiếu tâm làm tiếp điểm khi khoảng cách nhỏ hơn R, giải phương trình để tìm đủ hai giao điểm. Ôn CĐ14 mục 3.5; luyện THPT-G10-B21-P03.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1427,8 +1461,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY18` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P01` khi đã hiểu kiến thức.",
+    "hints": [
+      "Đọc a²,b² với a>b>0, dùng c²=a²−b²."
+    ],
+    "remediation": "Nếu dùng dấu cộng hoặc lấy c=a²−b², kiểm c<a và lấy căn dương. Ôn CĐ14 mục 4.1; luyện THPT-G10-B22-P01.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1452,8 +1488,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY19` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-C02` khi đã hiểu kiến thức.",
+    "hints": [
+      "Dùng c²=a²+b²; trục thực nằm trên Ox."
+    ],
+    "remediation": "Nếu lấy dấu trừ như elip, kiểm c>a và tọa độ tiêu điểm trên trục thực. Ôn CĐ14 mục 4.2; luyện THPT-G10-B22-P02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1477,8 +1515,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY20` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-C02` khi đã hiểu kiến thức.",
+    "hints": [
+      "Từ mẫu tìm a,b; tiệm cận có hệ số góc ±b/a."
+    ],
+    "remediation": "Nếu nhầm đường x=±a là tiệm cận, đó là hoành độ đỉnh; hai tiệm cận đi qua tâm. Ôn CĐ14 mục 4.3; luyện THPT-G10-B22-C02.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1502,8 +1542,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY21` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P03` khi đã hiểu kiến thức.",
+    "hints": [
+      "So hệ số x với 2p rồi xác định p/2."
+    ],
+    "remediation": "Nếu nhầm p là tiêu cự, kiểm F(p/2;0), đường chuẩn x=−p/2. Ôn CĐ14 mục 4.4; luyện THPT-G10-B22-P06.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1527,8 +1569,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY22` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P05` khi đã hiểu kiến thức.",
+    "hints": [
+      "Thế y=k rồi xét dấu của biểu thức cho x²."
+    ],
+    "remediation": "Nếu luôn lấy hai nghiệm, kiểm trường hợp x²=0 và x²<0 trước. Ôn CĐ14 mục 4.5; luyện THPT-G10-B22-P05.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1552,8 +1596,10 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
-    "remediation": "xem hướng khắc phục `HELP-G10-CHVII-TRY23` bên dưới; quay lại câu canonical cũ `THPT-G10-B22-P04` khi đã hiểu kiến thức.",
+    "hints": [
+      "Với tiêu điểm F(f;0), viết y²=4fx; tìm cả hai mép tại x đã cho."
+    ],
+    "remediation": "Nếu chỉ lấy |y|, đó là nửa bề rộng; lấy hiệu tung độ trên và dưới, giữ đơn vị cm. Ôn CĐ14 mục 4.6; luyện THPT-G10-B22-P04.",
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
