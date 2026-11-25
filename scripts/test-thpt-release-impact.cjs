@@ -684,6 +684,28 @@ function proveRW3Tabs(){
  assert.equal(changes,69,"Unexpected alias count");
  console.log("PASS R-W3 69 labels only, all renderer logic, content and protected assessment unchanged");
 }
+const TOPIC_DISCLOSURE_FILES=new Set(["docs/assets/javascripts/math-details-v1.js","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml","docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css","docs/assets/stylesheets/thpt-topic01-release-v1.css","docs/assets/stylesheets/thpt-topic-w1-golden-v1.css"]);
+function isExactTopicDisclosures(files){
+ const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
+ return files.length===TOPIC_DISCLOSURE_FILES.size&&new Set(files).size===files.length&&files.every(f=>TOPIC_DISCLOSURE_FILES.has(f))&&
+  [["docs/assets/javascripts/math-details-v1.js","e7910dd0fd0cbbf903cf1bb0f255bf44615a0ea7"],["docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css","ddfa078c55c0fd08f7f14b62c6820ca285d427e2"],["docs/assets/stylesheets/thpt-topic01-release-v1.css","cf59fb79370254b09c2874de346073518df4b185"],["docs/assets/stylesheets/thpt-topic-w1-golden-v1.css","81cf00277e9db1e481f78ddfe00fbdb4eebaaefa"]].every(([p,sha])=>blob(p)===sha)&&fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("TOPIC_SGK_DISCLOSURE_ONLY");
+}
+function proveTopicDisclosures(){
+ const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"});
+ const base=process.env.BASE_SHA;
+ assert(/^[0-9a-f]{40}$/.test(base||""),"Actual base required");
+ assert(isExactTopicDisclosures(git("diff","--no-renames","--name-only",base,"HEAD").trim().split("\n")),"Disclosure scope HOLD");
+ const helper="docs/assets/javascripts/math-details-v1.js";
+ const old=git("show",base+":"+helper),now=fs.readFileSync(helper,"utf8");
+ const restore=now.replace(/ \/\/ OWNER: use the same two native disclosures[\s\S]*?(?= function prepare\(root\)\{)/,"").replace("  root.querySelectorAll(\"details\").forEach(splitSGKDisclosure);\n","");
+ assert.equal(restore,old,"Math/SGK logic changed outside the new disclosure split");
+ const css="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css";
+ const restored=fs.readFileSync(css,"utf8").replace(/,\nbody(?:\[data-md-color-scheme="slate"\])?\.thpt-r4-topic-knowledge \.topic01-knowledge-layout details\[data-topic-sgk-disclosure\][^\n{]*(?= \{)/g,"");
+ assert.equal(restored,git("show",base+":"+css),"SGK CSS declarations changed");
+ for(const p of ["docs/assets/stylesheets/thpt-topic01-release-v1.css","docs/assets/stylesheets/thpt-topic-w1-golden-v1.css"])
+  assert.equal(fs.readFileSync(p,"utf8").replaceAll(":not([data-topic-sgk-disclosure])",""),git("show",base+":"+p),"Unrelated Topic CSS changed");
+ console.log("PASS exact disclosure-only scope: SGK declarations and all math code unchanged; no source/assessment edits");
+}
 // Exact governance-only files: other learner/runtime changes remain FULL.
 const MATH_NOTATION_GOVERNANCE=new Set(["AGENTS.md","prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md","prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_OWNER_RESET_20261122.md","scripts/test-thpt-push-deploy-scope.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml"]);
 function classify(paths,{manual=false,base=""}={}){
@@ -694,6 +716,7 @@ function classify(paths,{manual=false,base=""}={}){
   return {impact:"FULL",full_suite:"true",changed_lessons:"",reason:"UNSAFE_PATH"};
  if(files.length===MATH_NOTATION_GOVERNANCE.size&&new Set(files).size===files.length&&files.every(p=>MATH_NOTATION_GOVERNANCE.has(p)))
   return {impact:"METADATA",full_suite:"false",changed_lessons:"",reason:"EXACT_MATH_NOTATION_GOVERNANCE_ONLY"};
+ if(isExactTopicDisclosures(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_TOPIC_SGK_DISCLOSURES"};
  if(isExactRW3Tabs(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_RW3_TAB_LABELS"};
  if(isExactSharedDeployRecovery(files,base))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1110_DEPLOY_RECOVERY_EXACT"};
  if(isExactSharedKnowledgeMath(files))return {impact:"SCOPED_TOPIC_SHARED_MATH",full_suite:"false",changed_lessons:"",reason:"OWNER_1055_EXACT_SHARED_KNOWLEDGE_MATH_RW2"};
@@ -879,6 +902,10 @@ function selfTest(){
  assert.equal(classify([...shared,"docs/thpt-preview/chuyen-de/cd09/kien-thuc.md"]).impact,"FULL");
  assert.equal(classify([...shared,"docs/assets/javascripts/firebase-gemini-v1.js"]).impact,"FULL");
  assert.equal(classify(shared,{manual:true}).impact,"FULL");
+ const topicDisclosures=[...TOPIC_DISCLOSURE_FILES];
+ if(fs.readFileSync("docs/assets/javascripts/math-details-v1.js","utf8").includes("function splitSGKDisclosure"))assert.equal(classify(topicDisclosures).reason,"OWNER_TOPIC_SGK_DISCLOSURES");
+ assert.equal(classify([...topicDisclosures,"mkdocs.yml"]).impact,"FULL");
+ assert.equal(classify(topicDisclosures,{manual:true}).impact,"FULL");
  const rw3Tabs=[...RW3_TAB_FILES];
  assert.equal(classify(rw3Tabs).reason,"OWNER_1055_RW3_TAB_LABELS");
  assert.equal(classify([...rw3Tabs,"mkdocs.yml"]).impact,"FULL");
@@ -1245,7 +1272,8 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--prove-rw3-tabs"))proveRW3Tabs();
+ if(process.argv.includes("--prove-topic-disclosures"))proveTopicDisclosures();
+ else if(process.argv.includes("--prove-rw3-tabs"))proveRW3Tabs();
  else if(process.argv.includes("--prove-shared-recovery"))proveSharedDeployRecovery();
  else if(process.argv.includes("--self-test"))selfTest();
  else{

@@ -767,7 +767,9 @@ jobs:
           HEAD_SHA: ${{ github.sha }}
         run: |
           node scripts/test-thpt-release-impact.cjs --self-test
-          if [[ "${{ needs.release-scope.outputs.reason }}" == "OWNER_1055_RW3_TAB_LABELS" ]]; then
+          if [[ "${{ needs.release-scope.outputs.reason }}" == "OWNER_TOPIC_SGK_DISCLOSURES" ]]; then
+            node scripts/test-thpt-release-impact.cjs --prove-topic-disclosures
+          elif [[ "${{ needs.release-scope.outputs.reason }}" == "OWNER_1055_RW3_TAB_LABELS" ]]; then
             node scripts/test-thpt-release-impact.cjs --prove-rw3-tabs
           else
             python scripts/test-thpt-topic-rw1-math-browser.py --shared-candidate-scope
@@ -779,7 +781,7 @@ jobs:
           node scripts/test-thpt-handoff-gate-v2.cjs --self-test
           node scripts/test-thpt-handoff-gate-v2.cjs
       - name: Preserve signed W2 W3 W4 W5 sources and PUBLIC_REPLAY_ONLY
-        if: needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
+        if: needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
         run: |
           git fetch --no-tags origin 7ccecad8e357319f6f432b0765630fd50625b56f a7d3d7756535cfee29f04bde86af6ab58b0a9d30 28bd2103731eef4b4a6960cd5fc33d49c0680017 a1d0c5ae4c37ca0def035939fcbeef0109be3e1b c78cbbeefc92d14060a5bd81a1e2036ea2f6afeb c644ae7a75dc1d02c4e2ac0d0e7ee0856df62f07
           git fetch --no-tags origin 8ff14130b995ae505978e590c4e65d9287f93342 0edada0daa8a36bcadd4317086bd0530e20ade7e b31c26c4fe630c0e362d48ed868b465bfe7f7177 5bb6e5fdb56a2d4d9d6cf749916913da2540b36f
@@ -795,7 +797,7 @@ jobs:
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: All 22 Knowledge pages and affected Golden adapter regressions
-        if: needs.release-scope.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS'
+        if: needs.release-scope.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT' && needs.release-scope.outputs.reason != 'OWNER_1055_RW3_TAB_LABELS' && needs.release-scope.outputs.reason != 'OWNER_TOPIC_SGK_DISCLOSURES'
         run: |
           python scripts/test-thpt-topic-rw1-math-browser.py
           python scripts/test-thpt-topic-rw1-math-browser.py --rw2
@@ -808,6 +810,9 @@ jobs:
       - name: R-W3 changed tab labels only
         if: needs.release-scope.outputs.reason == 'OWNER_1055_RW3_TAB_LABELS'
         run: python scripts/test-thpt-topic-rw1-math-browser.py --tabs-only
+      - name: Topic SGK disclosure-only browser parity
+        if: needs.release-scope.outputs.reason == 'OWNER_TOPIC_SGK_DISCLOSURES'
+        run: python scripts/test-thpt-topic-rw1-math-browser.py --disclosures-only
       - name: Assemble verified site and publish
         run: |
           node scripts/assemble-thpt-site.cjs

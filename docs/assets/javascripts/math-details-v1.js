@@ -324,7 +324,7 @@
    // CĐ03–06: the reviewed unlabelled second paragraph is the
    // remediation instruction, not an additional step of the answer.
    if(["03","04","05","06"].includes(topic)&&blocks.length===2&&blocks.every(el=>el.matches("p"))&&
-      /^(Nếu|Ghi|Vẽ|Không)\b/u.test(last.textContent.trim())&&/làm lại Bài/i.test(last.textContent)&&/Luyện tập/i.test(last.textContent))start=last;
+      /^(Nếu|Ghi|Vẽ|Không)(?:\s|$)/u.test(last.textContent.trim())&&/làm lại Bài/i.test(last.textContent)&&/Luyện tập/i.test(last.textContent))start=last;
    // CĐ17 2.4 includes a second, explicitly labelled recovery paragraph.
    if(topic==="17"&&last?.querySelector(":scope > strong")?.textContent.trim()==="Nếu làm sai:")start=last;
   }
