@@ -26,17 +26,17 @@ Hãy hình dung một bảng ghi nhiệt độ ở từng thời điểm. Để 
 
 **Các cách cho một hàm số.** Trong thực tế, quy luật ghép đầu vào với đầu ra có thể được trình bày bằng **bảng** (mỗi cột ghi một cặp giá trị), **biểu đồ** (đọc giá trị từ các cột hay điểm biểu diễn), **công thức** (ví dụ \(f(x)=2x+1\)) hoặc **mô tả bằng lời** (mỗi sản phẩm có giá 5 nghìn đồng thì số tiền mua \(x\) sản phẩm là \(5x\) nghìn đồng). Dù cho bằng cách nào, phải chỉ ra các đầu vào được phép và **mỗi đầu vào chỉ nhận một đầu ra**. Nếu bảng chỉ ghi vài thời điểm thì ta không được tự khẳng định công thức hay giá trị ở thời điểm chưa quan sát, trừ khi bài toán bổ sung quy luật hoặc giả thiết.
 
-Xét bảng các cặp \((0,2),(1,4),(1,4)\). Dù \(x=1\) được ghi hai lần, cả hai lần đều cho 4, nên bảng vẫn phù hợp với một hàm số. Nếu thay một cặp thành \((1,7)\) thì cùng đầu vào 1 sẽ có hai đầu ra khác nhau: bảng không còn định nghĩa một hàm. Trên đồ thị, ta có thể hình dung điều kiện ấy bằng việc mỗi đường thẳng đứng cắt đồ thị tại **không quá một điểm**.
+Xét bảng các cặp \((0;2),(1;4),(1;4)\). Dù \(x=1\) được ghi hai lần, cả hai lần đều cho 4, nên bảng vẫn phù hợp với một hàm số. Nếu thay một cặp thành \((1;7)\) thì cùng đầu vào 1 sẽ có hai đầu ra khác nhau: bảng không còn định nghĩa một hàm. Trên đồ thị, ta có thể hình dung điều kiện ấy bằng việc mỗi đường thẳng đứng cắt đồ thị tại **không quá một điểm**.
 
 **Ví dụ**
 
-**Đề bài.** Xét \((0,1),(1,2),(1,2),(2,3)\) trên tập \(\{0,1,2\}\). Có phải hàm số? Nếu thay cặp cuối bằng \((1,3)\) thì sao?
+**Đề bài.** Xét \((0;1),(1;2),(1;2),(2;3)\) trên tập \(\{0;1;2\}\). Có phải hàm số? Nếu thay cặp cuối bằng \((1;3)\) thì sao?
 
-**Lời giải.** Ban đầu \(f(0)=1,f(1)=2,f(2)=3\), mỗi đầu vào cho đúng một đầu ra nên là hàm số dù cặp \((1,2)\) lặp. Sau khi thay, \(x=1\) cho cả 2 và 3; đồng thời \(x=2\) vẫn thuộc tập đầu vào nhưng không còn đầu ra nào. Vì vậy vi phạm cả yêu cầu **mỗi đầu vào** và **đúng một đầu ra**.
+**Lời giải.** Ban đầu \(f(0)=1,f(1)=2,f(2)=3\), mỗi đầu vào cho đúng một đầu ra nên là hàm số dù cặp \((1;2)\) lặp. Sau khi thay, \(x=1\) cho cả 2 và 3; đồng thời \(x=2\) vẫn thuộc tập đầu vào nhưng không còn đầu ra nào. Vì vậy vi phạm cả yêu cầu **mỗi đầu vào** và **đúng một đầu ra**.
 
 **Vận dụng**
 
-Các cặp \((1,3),(2,3),(3,5)\) có thể là dữ liệu của một hàm số không? Điều gì quyết định?
+Các cặp \((1;3),(2;3),(3;5)\) có thể là dữ liệu của một hàm số không? Điều gì quyết định?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -54,7 +54,7 @@ Nếu em nhầm “nhiều đầu vào có cùng một đầu ra” với “m�
 
 Tại sao căn bằng 0 được nhận, còn mẫu bằng 0 phải loại?
 
-Khi một hàm số \(y=f(x)\) được **cho bằng công thức mà không ghi tập xác định**, ta quy ước tập xác định là **tất cả số thực \(x\) làm cho biểu thức \(f(x)\) có nghĩa**. Ví dụ, \(f(x)=\sqrt{x-2}\) có miền \([2,+\infty)\), còn \(g(x)=1/(x-2)\) có miền \(\mathbb R\setminus\{2\}\). Nếu bài toán **đã chỉ định miền**, chẳng hạn \(x\) là số sản phẩm nguyên không âm từ \(0\) đến \(10\), phải dùng miền chỉ định ấy sau khi kiểm biểu thức có nghĩa, không tự nới thành cả \(\mathbb R\).
+Khi một hàm số \(y=f(x)\) được **cho bằng công thức mà không ghi tập xác định**, ta quy ước tập xác định là **tất cả số thực \(x\) làm cho biểu thức \(f(x)\) có nghĩa**. Ví dụ, \(f(x)=\sqrt{x-2}\) có miền \([2;+\infty)\), còn \(g(x)=\frac1{x-2}\) có miền \(\mathbb R\setminus\{2\}\). Nếu bài toán **đã chỉ định miền**, chẳng hạn \(x\) là số sản phẩm nguyên không âm từ \(0\) đến \(10\), phải dùng miền chỉ định ấy sau khi kiểm biểu thức có nghĩa, không tự nới thành cả \(\mathbb R\).
 
 Để có một hàm số, trước hết cần biết những đầu vào nào biểu thức cho phép. Căn số học và mẫu số tạo ra điểm bị loại; căn \(\sqrt u\) đòi \(u\ge0\), mẫu v đòi \(v\ne0\). Không loại nhầm giá trị làm căn bằng 0.
 
@@ -68,7 +68,7 @@ Chẳng hạn, với \(\frac{\sqrt{x+1}}{x-2}\), cần \(x\ge-1\), \(x\ne2\), n�
 
 **Đề bài.** Tìm tập xác định \(f(x)=\dfrac{\sqrt{5-x}}{x+2}\).
 
-**Lời giải.** Cần \(5-x\ge0\Rightarrow x\le5\), và \(x+2\ne0\Rightarrow x\ne-2\). Giao hai điều kiện: \(D=(-\infty,-2)\cup(-2,5]\). Nhận \(x=5\) vì \(\sqrt0=0\) và mẫu khác 0.
+**Lời giải.** Cần \(5-x\ge0\Rightarrow x\le5\), và \(x+2\ne0\Rightarrow x\ne-2\). Giao hai điều kiện: \(D=(-\infty;-2)\cup(-2;5]\). Nhận \(x=5\) vì \(\sqrt0=0\) và mẫu khác 0.
 
 **Vận dụng**
 
@@ -94,9 +94,9 @@ Xét ví dụ: \(f(x)=x^2\) trên \(D=\{-2;0;1\}\) cho \(T=\{0;1;4\}\). Với \(
 
 **Ví dụ**
 
-**Đề bài.** Cho \(f(x)=2x+1\). Tìm tập giá trị trên \(D_1=\{-1,0,2\}\) và \(D_2=[-1,2]\).
+**Đề bài.** Cho \(f(x)=2x+1\). Tìm tập giá trị trên \(D_1=\{-1;0;2\}\) và \(D_2=[-1;2]\).
 
-**Lời giải.** Trên \(D_1\), thế từng số: \(T_1=\{-1,1,5\}\). Trên đoạn \(D_2\), hàm bậc nhất có hệ số \(2>0\) nên tăng từ \(-1\) đến \(5\); \(T_2=[-1,5]\). Không nối các giá trị rời rạc của \(D_1\) thành đoạn.
+**Lời giải.** Trên \(D_1\), thế từng số: \(T_1=\{-1;1;5\}\). Trên đoạn \(D_2\), hàm bậc nhất có hệ số \(2>0\) nên tăng từ \(-1\) đến \(5\); \(T_2=[-1;5]\). Không nối các giá trị rời rạc của \(D_1\) thành đoạn.
 
 **Vận dụng**
 
@@ -122,9 +122,9 @@ Chẳng hạn, \(f(x)=\lvert x-2\rvert+1\): \(A(1;2)\) thuộc vì \(f(1)=2\), \
 
 **Ví dụ**
 
-**Đề bài.** Với \(f(x)=|x+1|+2\), kiểm \(A(0,3)\), \(B(1,5)\), \(C(-1,2)\) có thuộc đồ thị không.
+**Đề bài.** Với \(f(x)=|x+1|+2\), kiểm \(A(0;3)\), \(B(1;5)\), \(C(-1;2)\) có thuộc đồ thị không.
 
-**Lời giải.** Điểm \((a,b)\) thuộc đồ thị nếu \(b=f(a)\). \(f(0)=3\) nên \(A\) thuộc; \(f(1)=4\ne5\) nên \(B\) không thuộc; \(f(-1)=2\) nên \(C\) thuộc. Đỉnh của đồ thị chữ V là \((-1,2)\).
+**Lời giải.** Điểm \((a,b)\) thuộc đồ thị nếu \(b=f(a)\). \(f(0)=3\) nên \(A\) thuộc; \(f(1)=4\ne5\) nên \(B\) không thuộc; \(f(-1)=2\) nên \(C\) thuộc. Đỉnh của đồ thị chữ V là \((-1;2)\).
 
 **Vận dụng**
 
@@ -186,7 +186,7 @@ Muốn **lập bảng giá trị và vẽ đồ thị**, trước tiên tìm đ�
 |---|---:|---:|---:|---:|---:|
 | \(f(x)\) | \(3\) | \(0\) | \(-1\) | \(0\) | \(3\) |
 
-Trên hệ trục, đánh dấu các điểm \((-1,3),(0,0),(1,-1),(2,0),(3,3)\), rồi nối bằng một **đường cong parabol trơn**, không nối thành các đoạn thẳng gấp khúc. Hai điểm có hoành độ cách đều \(x=1\) có cùng tung độ; đỉnh \((1,-1)\), trục đối xứng \(x=1\). Khi đọc hình, hãy nhận ra chiều mở, vị trí đỉnh, đường đối xứng và các điểm cắt trục nếu có; nếu bài toán chỉ cho phép \(x\) trong một miền \(D\), chỉ xét phần đồ thị tương ứng với \(D\).
+Trên hệ trục, đánh dấu các điểm \((-1;3),(0;0),(1;-1),(2;0),(3;3)\), rồi nối bằng một **đường cong parabol trơn**, không nối thành các đoạn thẳng gấp khúc. Hai điểm có hoành độ cách đều \(x=1\) có cùng tung độ; đỉnh \((1;-1)\), trục đối xứng \(x=1\). Khi đọc hình, hãy nhận ra chiều mở, vị trí đỉnh, đường đối xứng và các điểm cắt trục nếu có; nếu bài toán chỉ cho phép \(x\) trong một miền \(D\), chỉ xét phần đồ thị tương ứng với \(D\).
 
 Để vẽ đúng các **giao điểm với trục tọa độ**, ta dùng chính định nghĩa điểm thuộc đồ thị: trên trục \(Oy\) có \(x=0\), nên giao điểm của \(y=ax^2+bx+c\) với \(Oy\) là \((0;c)\). Trên trục \(Ox\) có \(y=0\), nên phải giải \(ax^2+bx+c=0\). Với \(\Delta=b^2-4ac\): nếu \(\Delta>0\), parabol cắt \(Ox\) tại **hai điểm** có hoành độ là hai nghiệm; nếu \(\Delta=0\), parabol **tiếp xúc** \(Ox\) tại đỉnh; nếu \(\Delta<0\), parabol không có điểm chung với \(Ox\). Không được tự vẽ thêm giao điểm khi phương trình vô nghiệm thực.
 
@@ -200,9 +200,9 @@ Chẳng hạn, \(f(x)=-(x-1)^2+8\) trên \([2;5]\): hoành độ đỉnh 1 nằm
 
 **Ví dụ**
 
-**Đề bài.** Tìm GTLN và GTNN của \(f(x)=-(x-2)^2+9\) trên \([3,6]\).
+**Đề bài.** Tìm GTLN và GTNN của \(f(x)=-(x-2)^2+9\) trên \([3;6]\).
 
-**Lời giải.** Đỉnh \((2,9)\) nằm ngoài đoạn. Trên \(x\ge3\), \((x-2)^2\) tăng nên \(f\) giảm. \(f(3)=8\) là GTLN, \(f(6)=-7\) là GTNN. Không nhận giá trị 9 tại \(x=2\) ngoài miền.
+**Lời giải.** Đỉnh \((2;9)\) nằm ngoài đoạn. Trên \(x\ge3\), \((x-2)^2\) tăng nên \(f\) giảm. \(f(3)=8\) là GTLN, \(f(6)=-7\) là GTNN. Không nhận giá trị 9 tại \(x=2\) ngoài miền.
 
 **Vận dụng**
 
@@ -294,7 +294,7 @@ Chẳng hạn, \(f(x)=\lvert x-1\rvert\), \(g(x)=f(x)+4\) có đỉnh \((1;4)\),
 
 **Đề bài.** Từ \(f(x)=x^2\), đặt \(g(x)=f(x)+3\). Tìm đỉnh và \(g(2)\).
 
-**Lời giải.** Cộng 3 ngoài hàm giữ nguyên hoành độ, tăng tung độ 3. Đỉnh chuyển từ \((0,0)\) lên \((0,3)\); \(g(2)=2^2+3=7\). Điểm \((2,4)\) của \(f\) biến thành \((2,7)\).
+**Lời giải.** Cộng 3 ngoài hàm giữ nguyên hoành độ, tăng tung độ 3. Đỉnh chuyển từ \((0;0)\) lên \((0;3)\); \(g(2)=2^2+3=7\). Điểm \((2;4)\) của \(f\) biến thành \((2;7)\).
 
 **Vận dụng**
 
@@ -316,15 +316,15 @@ Vì sao biểu thức \(f(x-3)\) lại dịch phải ba đơn vị?
 
 > **PHƯƠNG PHÁP — Dịch đồ thị theo phương ngang.** Khi dịch theo phương ngang, dấu bên trong đối số dễ gây nhầm. Dời thời điểm bắt đầu của hiện tượng có thể dời cả miền hợp lệ. Cần nhớ đặt \(u=x-h\); miền gốc \(D_f\). Hàm \(g(x)=f(x-h)\) xác định khi \(x-h\in D_f\), nên \(D_g=D_f+h\); điểm \((u;f(u))\) thành \((u+h;f(u))\). Nếu \(h>0\) thì dịch **phải** h; \(f(x+h)\) dịch trái h. Không đoán chiều dịch chỉ theo dấu trừ cộng nếu chưa xét tọa độ.
 
-Chẳng hạn, từ parabol \(f(x)=x^2\) có đỉnh \((0,0)\), hàm \(g(x)=f(x-2)+1=(x-2)^2+1\) có đỉnh \((2,1)\): dịch phải 2 và lên 1, đúng như hai đường trong hình. Với một hàm có miền giới hạn như \(f(x)=\sqrt x\), phép \(f(x-3)\) còn làm điểm bắt đầu dịch từ \((0,0)\) sang \((3,0)\); miền mới là \([3,+\infty)\). Cả hai minh họa cùng quy luật hoành độ cộng 2 hay 3 theo lượng dịch.
+Chẳng hạn, từ parabol \(f(x)=x^2\) có đỉnh \((0;0)\), hàm \(g(x)=f(x-2)+1=(x-2)^2+1\) có đỉnh \((2;1)\): dịch phải 2 và lên 1, đúng như hai đường trong hình. Với một hàm có miền giới hạn như \(f(x)=\sqrt x\), phép \(f(x-3)\) còn làm điểm bắt đầu dịch từ \((0;0)\) sang \((3;0)\); miền mới là \([3;+\infty)\). Cả hai minh họa cùng quy luật hoành độ cộng 2 hay 3 theo lượng dịch.
 
 ![Parabol gốc và parabol được tịnh tiến](../../visuals/THPT_TOPIC05_GRAPH_TRANSLATION_R01.svg)
 
-*Đọc hình:* Hai parabol \(y=x^2\) và \(y=(x-2)^2+1\) có đỉnh lần lượt \((0,0)\), \((2,1)\). Chọn điểm đỉnh để thấy chính xác **dịch phải hai, lên một**; không có phép đổi độ rộng.
+*Đọc hình:* Hai parabol \(y=x^2\) và \(y=(x-2)^2+1\) có đỉnh lần lượt \((0;0)\), \((2;1)\). Chọn điểm đỉnh để thấy chính xác **dịch phải hai, lên một**; không có phép đổi độ rộng.
 
 **Ví dụ**
 
-**Đề bài.** Từ \(f(x)=x^2\), đặt \(g(x)=f(x-3)\). Tìm đỉnh và ảnh của điểm \((1,1)\).
+**Đề bài.** Từ \(f(x)=x^2\), đặt \(g(x)=f(x-3)\). Tìm đỉnh và ảnh của điểm \((1;1)\).
 
 **Lời giải.** Đặt \(u=x-3\Rightarrow x=u+3\): dịch phải 3. Đỉnh \((0,0)\mapsto(3,0)\) và \((1,1)\mapsto(4,1)\). Hình trong bài minh họa một phép dịch khác (phải 2, lên 1) nhưng cùng quy tắc điểm.
 
@@ -376,7 +376,7 @@ Nhân tung độ với hệ số âm tác động lên chiều và độ lớn r
 
 > **PHƯƠNG PHÁP — Đổi độ cao và phản xạ đứng.** Nhân toàn bộ giá trị hàm làm độ cao thay đổi, khác tác động lên đối số. Ta nhân tung độ y với hệ số c. Hàm \(g(x)=cf(x)\) biến \((x;y)\mapsto(x;cy)\). Nếu \(\lvert c\rvert>1\) thì dãn đứng, nếu \(0<\lvert c\rvert<1\) thì co đứng, nếu \(c<0\) thì còn phản xạ qua Ox. Với \(c=0\), hình về Ox nhưng không là phép giãn khả nghịch. Nếu \(c\ne0\) thì tập nghiệm \(f(x)=0\) giữ nguyên.
 
-Chẳng hạn, đặt \(f(x)=|x|\) và \(h(x)=-2|x|+3\). Với \(x=2\), điểm \((2,2)\) trên đồ thị \(f\) thành \((2,-1)\) trên \(h\): trước tiên nhân tung độ với \(-2\) (lật qua trục \(Ox\), dãn đứng hai lần), rồi cộng 3 (dịch lên). Đỉnh chuyển từ \((0,0)\) lên \((0,3)\), đúng như hình. Muốn đổi chỉ riêng tung độ mà không dịch, ta bỏ số \(+3\) ở ngoài.
+Chẳng hạn, đặt \(f(x)=|x|\) và \(h(x)=-2|x|+3\). Với \(x=2\), điểm \((2;2)\) trên đồ thị \(f\) thành \((2;-1)\) trên \(h\): trước tiên nhân tung độ với \(-2\) (lật qua trục \(Ox\), dãn đứng hai lần), rồi cộng 3 (dịch lên). Đỉnh chuyển từ \((0;0)\) lên \((0;3)\), đúng như hình. Muốn đổi chỉ riêng tung độ mà không dịch, ta bỏ số \(+3\) ở ngoài.
 
 ![Phản xạ và co giãn tung độ của đồ thị](../../visuals/THPT_TOPIC05_REFLECTION_VERTICAL_SCALE_R01.svg)
 
@@ -384,7 +384,7 @@ Chẳng hạn, đặt \(f(x)=|x|\) và \(h(x)=-2|x|+3\). Với \(x=2\), điểm 
 
 **Ví dụ**
 
-**Đề bài.** Cho \(f(x)=|x|\), \(g(x)=-3|x|+2\). Điểm \((2,2)\) thành điểm nào? Đỉnh mới?
+**Đề bài.** Cho \(f(x)=|x|\), \(g(x)=-3|x|+2\). Điểm \((2;2)\) thành điểm nào? Đỉnh mới?
 
 **Lời giải.** Mỗi tung độ \(y\mapsto-3y+2\), nên \((2,2)\mapsto(2,-4)\), đỉnh \((0,0)\mapsto(0,2)\). Hình cạnh bài dùng trường hợp **khác** \(h=-2|x|+3\); không nhầm số của hình và ví dụ.
 
@@ -442,7 +442,7 @@ Chẳng hạn, \(f(x)=x-1\): \(\lvert f(x)\rvert=\lvert x-1\rvert\) có đỉnh 
 
 **Đề bài.** Với \(f(x)=x+2\), so \(p(x)=|f(x)|\) và \(q(x)=f(|x|)\) tại \(x=-3\).
 
-**Lời giải.** \(p(x)=|x+2|\) có đỉnh \((-2,0)\), \(q(x)=|x|+2\) có đỉnh \((0,2)\). \(p(-3)=1\) nhưng \(q(-3)=5\). Dấu trị tuyệt đối ngoài tác động lên tung độ; trong tác động lên đầu vào.
+**Lời giải.** \(p(x)=|x+2|\) có đỉnh \((-2;0)\), \(q(x)=|x|+2\) có đỉnh \((0;2)\). \(p(-3)=1\) nhưng \(q(-3)=5\). Dấu trị tuyệt đối ngoài tác động lên tung độ; trong tác động lên đầu vào.
 
 **Vận dụng**
 
@@ -476,7 +476,7 @@ Chẳng hạn, \(f(x)=x^2\), \(g(x)=2f(x-1)+3\) có đỉnh \((1;3)\), \(g(0)=5\
 
 **Đề bài.** Cho \(f(x)=x^2\), \(g(x)=-2f(x-1)+3\). Mô tả phép biến đổi, tìm đỉnh và \(g(0)\).
 
-**Lời giải.** Dịch phải 1, nhân tung độ \(-2\) (phản xạ \(Ox\), dãn đứng 2) rồi lên 3. \(g(x)=-2(x-1)^2+3\) có đỉnh \((1,3)\), mở xuống, \(g(0)=1\).
+**Lời giải.** Dịch phải 1, nhân tung độ \(-2\) (phản xạ \(Ox\), dãn đứng 2) rồi lên 3. \(g(x)=-2(x-1)^2+3\) có đỉnh \((1;3)\), mở xuống, \(g(0)=1\).
 
 **Vận dụng**
 
@@ -498,17 +498,17 @@ Chấm đặc hay chấm rỗng quyết định giá trị tại mốc?
 
 > **ĐỊNH NGHĨA — Hàm từng đoạn và điểm đầu mút.** Với hàm từng đoạn, điểm nối và dấu bằng có thể làm thay đổi đồ thị. Hai công thức giá theo thời gian có thể gặp nhau hoặc tạo bước nhảy tại mốc đổi giá. Để xác định điều đó, cần xét điều kiện từng nhánh: chẳng hạn \(x<c\), \(x\le c\) hoặc \(x\ge c\). Tại \(x=c\), **nhánh chứa mốc c** xác định \(f(c)\), nếu c thuộc miền xác định. Nhìn độ cao của hai nhánh sát c: khác nhau tạo bước nhảy, bằng nhau có thể nối khi điểm được nhận. Đây là cách đọc hình trực quan, không thay nội dung định nghĩa/định lý giới hạn và liên tục chính thức ở CĐ08.
 
-Chẳng hạn, hàm từng đoạn \(f(x)=2\) khi \(x\le1\), còn \(f(x)=x+3\) khi \(x>1\) có \(f(1)=2\) nhờ nhánh chứa dấu bằng. Trên hình, nhánh phải chỉ tiến gần điểm \((1,4)\) khi \(x\to1^+\) nhưng không nhận điểm ấy. Vì 2 khác 4, hai nhánh tạo **bước nhảy** tại \(x=1\), chứ không nối nhau; cần phân biệt giá trị tại mốc và giá trị gần mốc.
+Chẳng hạn, hàm từng đoạn \(f(x)=2\) khi \(x\le1\), còn \(f(x)=x+3\) khi \(x>1\) có \(f(1)=2\) nhờ nhánh chứa dấu bằng. Trên hình, nhánh phải chỉ tiến gần điểm \((1;4)\) khi \(x\to1^+\) nhưng không nhận điểm ấy. Vì 2 khác 4, hai nhánh tạo **bước nhảy** tại \(x=1\), chứ không nối nhau; cần phân biệt giá trị tại mốc và giá trị gần mốc.
 
 ![Điểm đầu rỗng và đặc ở hàm số từng đoạn](../../visuals/THPT_TOPIC05_PIECEWISE_ENDPOINTS_R01.svg)
 
-*Đọc hình:* Chấm **đặc** tại \((1,2)\) thuộc nhánh \(x\le1\); chấm **rỗng** tại \((1,4)\) chỉ là điểm mà nhánh \(x>1\) tiến tới. Hai tung độ khác nhau nên không thể kết luận đồ thị nối liên tục.
+*Đọc hình:* Chấm **đặc** tại \((1;2)\) thuộc nhánh \(x\le1\); chấm **rỗng** tại \((1;4)\) chỉ là điểm mà nhánh \(x>1\) tiến tới. Hai tung độ khác nhau nên không thể kết luận đồ thị nối liên tục.
 
 **Ví dụ**
 
 **Đề bài.** Đặt \(p(x)=3\) nếu \(x\le2\), và \(p(x)=x+4\) nếu \(x>2\). Tìm \(p(2)\), hai chấm tại mốc và tính bước nhảy.
 
-**Lời giải.** Nhánh chứa dấu bằng cho \(p(2)=3\): chấm đặc \((2,3)\). Nhánh phải tiến tới 6 nhưng không nhận tại 2: chấm rỗng \((2,6)\). Khi đi từ trái sang phải, độ cao chuyển từ 3 lên 6, nên bước nhảy hướng lên có độ lớn \(6-3=3\) đơn vị. Hình bài học dùng mốc 1, áp dụng cùng nguyên tắc.
+**Lời giải.** Nhánh chứa dấu bằng cho \(p(2)=3\): chấm đặc \((2;3)\). Nhánh phải tiến tới 6 nhưng không nhận tại 2: chấm rỗng \((2;6)\). Khi đi từ trái sang phải, độ cao chuyển từ 3 lên 6, nên bước nhảy hướng lên có độ lớn \(6-3=3\) đơn vị. Hình bài học dùng mốc 1, áp dụng cùng nguyên tắc.
 
 **Vận dụng**
 
@@ -530,7 +530,7 @@ Có thể chọn đỉnh tối ưu nếu lượng sản xuất bị giới hạn
 
 Trước khi tối ưu một hàm số, ta thường phải **tự lập hàm số từ tình huống**. Bắt đầu bằng lời: cần tìm đại lượng nào và nó phụ thuộc vào đại lượng nào? Tiếp đó chọn **biến cùng đơn vị, miền hợp lệ**, biểu diễn các đại lượng còn lại theo biến, lập công thức hàm số rồi dùng nó giải câu hỏi và **kiểm tính phù hợp của kết quả**. Bốn bước này giúp ta không nhảy ngay vào một công thức có thể sai mô hình.
 
-Chẳng hạn, dùng 24 m dây bao quanh một mảnh vườn **hình chữ nhật đủ bốn cạnh**. Gọi \(x\) (m) là chiều rộng; từ chu vi \(2(x+y)=24\), chiều dài là \(y=12-x\) (m). Vì cả hai cạnh dương, \(0<x<12\). Diện tích là \(S(x)=x(12-x)=36-(x-6)^2\) (m²). Đây là một **hàm số của chiều rộng** trên miền \((0,12)\); vì bình phương không âm, diện tích lớn nhất \(36\) m² đạt tại \(x=6\), tức hình vuông cạnh \(6\) m. Sau khi tính xong phải thử ngược chu vi \(4\cdot6=24\) m. Trường hợp chỉ rào ba cạnh dựa vào tường sẽ là **một mô hình khác**, nên không được sao chép công thức này.
+Chẳng hạn, dùng 24 m dây bao quanh một mảnh vườn **hình chữ nhật đủ bốn cạnh**. Gọi \(x\) (m) là chiều rộng; từ chu vi \(2(x+y)=24\), chiều dài là \(y=12-x\) (m). Vì cả hai cạnh dương, \(0<x<12\). Diện tích là \(S(x)=x(12-x)=36-(x-6)^2\) (m²). Đây là một **hàm số của chiều rộng** trên miền \((0;12)\); vì bình phương không âm, diện tích lớn nhất \(36\) m² đạt tại \(x=6\), tức hình vuông cạnh \(6\) m. Sau khi tính xong phải thử ngược chu vi \(4\cdot6=24\) m. Trường hợp chỉ rào ba cạnh dựa vào tường sẽ là **một mô hình khác**, nên không được sao chép công thức này.
 
 > **PHƯƠNG PHÁP — Tối ưu trong miền khả thi.** Mọi phép biến đổi phải quay về miền hợp lệ của mô hình. Một đỉnh đẹp trên toàn \(\mathbb R\) có thể không có ý nghĩa vì sản phẩm chỉ nhận giá trị nguyên và còn ràng buộc. Đặt biến, **đơn vị và miền khả thi trước**; từ đó tính hàm và ứng viên, kiểm ứng viên trong D. Khi ràng buộc đổi, quyết định tối ưu có thể đổi dù công thức không đổi. Với bậc hai sơ cấp dùng hoàn phương; khảo sát cực trị bằng đạo hàm thuộc CĐ10.
 
@@ -538,7 +538,7 @@ Chẳng hạn, \(P(q)=-(q-4)^2+16\) (triệu đồng) với \(q\in\{5;6\}\). Đ�
 
 **Ví dụ**
 
-**Đề bài.** Lợi nhuận \(P(q)=-(q-6)^2+25\) triệu đồng, với \(q\in\{7,8,9\}\) lô. Chọn \(q\) tối ưu.
+**Đề bài.** Lợi nhuận \(P(q)=-(q-6)^2+25\) triệu đồng, với \(q\in\{7;8;9\}\) lô. Chọn \(q\) tối ưu.
 
 **Lời giải.** Đỉnh \(q=6\) không khả thi. \(P(7)=24,\ P(8)=21,\ P(9)=16\) triệu đồng, nên chọn \(q=7\) và lợi nhuận lớn nhất 24 triệu. Giữ điều kiện số lô nguyên và đơn vị.
 
