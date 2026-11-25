@@ -7,19 +7,22 @@
 const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-topic-w1-part]");
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
+const rw1Active=part==="kien-thuc";
+const rw1Math=()=>rw1Active?window.SLMTopicRW1Math:null;
+let rw1Prepared=false;
 const sizes={"02":{outcomes:16,items:38,replay:16,groups:4},"03":{outcomes:12,items:31,replay:12,groups:4},"04":{outcomes:18,items:75,replay:18,groups:5},"05":{outcomes:17,items:38,replay:17,groups:4}};
 const expected=sizes[topic];
 /* Presentation-only aliases. Full, reviewed heading text stays in its panel and
  * remains accessible through the tab's aria-label/title. */
 const topicTabNames={
  "02":{modules:["1. Bất phương trình","2. Dấu tam thức","3. Miền nghiệm","4. Tối ưu"],
- subs:[["1.1. Biến đổi BPT"],["2.1. Biệt thức và nghiệm","2.2. Tam thức cùng dấu","2.3. Nghiệm kép","2.4. Bảng dấu","2.5. BPT bậc hai","2.6. BPT mọi x","2.7. Điều kiện thực tế"],["3.1. BPT hai ẩn","3.2. Chọn điểm thử","3.3. Biên lấy hoặc loại","3.4. Lập ràng buộc","3.5. Miền giao","3.6. Miền rỗng, vô hạn"],["4.1. Tối ưu tuyến tính","4.2. Biến nguyên"]]},
+ subs:[["1.1. Biến đổi BPT"],["2.1. Biệt thức, nghiệm","2.2. Tam thức cùng dấu","2.3. Nghiệm kép","2.4. Bảng dấu","2.5. BPT bậc hai","2.6. BPT mọi x","2.7. Điều kiện thực tế"],["3.1. BPT hai ẩn","3.2. Chọn điểm thử","3.3. Biên lấy hoặc loại","3.4. Lập ràng buộc","3.5. Miền giao","3.6. Miền rỗng, vô hạn"],["4.1. Tối ưu tuyến tính","4.2. Biến nguyên"]]},
  "03":{modules:["1. Biến đổi tương đương","2. Điều kiện xác định","3. Nghiệm ngoại lai","4. Đặt ẩn và ứng dụng"],
  subs:[["1.1. Phép tương đương","1.2. PT có tham số","1.3. Tích bằng 0","1.4. PT bậc hai"],["2.1. PT phân thức","2.2. Giá trị tuyệt đối"],["3.1. Nghiệm ngoại lai","3.2. Hai căn bậc hai","3.3. PT một căn","3.4. Lọc nghiệm"],["4.1. Đặt t = x²","4.2. Mô hình thực tế"]]},
  "04":{modules:["1. Lũy thừa","2. Lôgarit","3. Hàm mũ và logarit","4. Phương trình, BPT","5. Tăng trưởng"],
  subs:[["1.1. Mũ nguyên và âm","1.2. Căn và mũ hữu tỉ","1.3. Mũ thực","1.4. Quy tắc lũy thừa"],["2.1. Định nghĩa lôgarit","2.2. Điều kiện lôgarit","2.3. Quy tắc lôgarit","2.4. Đổi cơ số"],["3.1. Hàm mũ","3.2. Đơn điệu hàm mũ","3.3. Hàm lôgarit","3.4. Hai hàm ngược"],["4.1. PT mũ","4.2. PT lôgarit","4.3. BPT mũ","4.4. BPT lôgarit"],["5.1. Mô hình tăng giảm","5.2. Bài toán tổng hợp"]]},
  "05":{modules:["1. Hàm số","2. Đọc đồ thị","3. Biến đổi đồ thị","4. Ứng dụng"],
- subs:[["1.1. Nhận biết hàm số","1.2. Tập xác định","1.3. Tập giá trị","1.4. Điểm trên đồ thị"],["2.1. Đồng biến, nghịch biến","2.2. Đỉnh parabol","2.3. Chẵn, lẻ","2.4. Chu kỳ"],["3.1. Dịch đứng","3.2. Dịch ngang","3.3. Phản xạ trục","3.4. Co giãn đứng","3.5. Co giãn ngang","3.6. |f(x)| và f(|x|)"],["4.1. Kết hợp biến đổi","4.2. Hàm từng đoạn","4.3. Tối ưu theo miền"]]}
+ subs:[["1.1. Nhận biết hàm số","1.2. Tập xác định","1.3. Tập giá trị","1.4. Điểm trên đồ thị"],["2.1. Đồng/nghịch biến","2.2. Đỉnh parabol","2.3. Chẵn, lẻ","2.4. Chu kỳ"],["3.1. Dịch đứng","3.2. Dịch ngang","3.3. Phản xạ trục","3.4. Co giãn đứng","3.5. Co giãn ngang","3.6. |f(x)| và f(|x|)"],["4.1. Kết hợp biến đổi","4.2. Hàm từng đoạn","4.3. Tối ưu theo miền"]]}
 };
 const displayShortTopicW1=(button,label,full)=>{
  if(!label||!full||label.length>=full.length)throw Error("TOPIC_W1_SHORT_TAB_SOURCE_HOLD");
@@ -37,7 +40,7 @@ const start=article?.querySelector("[data-topic-w1-source-start]"),end=article?.
 if(!article||!start||!end||start.dataset.ready==="1")return;
 const first=start.closest("p")||start,last=end.closest("p")||end;
 const create=(tag,cls,value)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(value!==undefined)x.textContent=String(value);return x};
-const renderMath=node=>{const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
+const renderMath=node=>{if(rw1Active){if(!rw1Math())throw Error("TOPIC_RW1_MATH_HELPER_MISSING");if(rw1Prepared)return rw1Math().typeset(node);return}const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
 const sourceNodes=()=>{const nodes=[];for(let n=first.nextSibling;n&&n!==last;n=n.nextSibling)nodes.push(n);return nodes};
 const ready=()=>{start.dataset.ready="1";document.documentElement.classList.remove("topic-w1-pending","topic-w1-fallback");document.documentElement.classList.add("topic-w1-ready")};
 const safeFallback=error=>{console.error("TOPIC_W1_GOLDEN_HOLD",topic,part,error);document.documentElement.classList.remove("topic-w1-pending");document.documentElement.classList.add("topic-w1-fallback");let status=document.querySelector(".topic-w1-boot-status");if(status)status.textContent="Giao diện tương tác chưa tải được. Nội dung học liệu gốc vẫn có thể đọc bên dưới."};
@@ -86,6 +89,7 @@ function styleKnowledge(root){
  }
  for(const details of root.querySelectorAll("details")){
   const summary=details.querySelector("summary");if(!summary)continue;
+  if(rw1Active){rw1Math().disclosure(details);continue}
   details.classList.add("question");
   const content=solutionContent(details);
   details.replaceChildren(summary,...content.childNodes);
@@ -151,7 +155,10 @@ function initKnowledge(){
   }
   bind(subButtons,subPanels);
  }
- styleKnowledge(layout);bind(allButtons,allPanels);
+ styleKnowledge(layout);
+ if(rw1Active){rw1Math().prepare(layout);rw1Math().normalize(intro);rw1Prepared=true}
+ bind(allButtons,allPanels);
+ if(rw1Active)rw1Math().typeset(layout);
  if(layout.querySelectorAll("[data-topic-w1-callout]").length<expected.outcomes)throw Error("Missing formal semantic callouts");
  ready();
 }
