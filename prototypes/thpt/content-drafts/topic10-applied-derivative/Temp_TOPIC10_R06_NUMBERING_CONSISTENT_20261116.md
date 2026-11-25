@@ -82,7 +82,7 @@ Vì thế, khi khảo sát một hàm số, ta luôn tìm miền trước, rồi
 
 **Đề bài:** Tìm miền và các khoảng giảm của \(g=\frac{x+1}{x-3}\).
 
-**Lời giải:** \(D=\mathbb R\setminus\{3\}\), \(g'=-\frac4{(x-3)^2}<0\). Hàm giảm trên \((-\infty;3)\) và \((3;\infty)\) riêng biệt, không nối kết luận qua điểm x=3 không xác định.
+**Lời giải:** \(D=\mathbb R\setminus\{3\}\), \(g'=-\frac4{(x-3)^2}<0\). Hàm giảm trên \((-\infty;3)\) và \((3;\infty)\) riêng biệt, không nối kết luận qua điểm \(x=3\) không xác định.
 
 **Vận dụng** \(g(x)=\sqrt{x-1}\) có miền xác định nào? Có thể nói hàm tăng trên miền đó không?
 
@@ -104,24 +104,24 @@ Nếu em kết luận nghịch biến trên toàn tập rời nhau hoặc dùng 
 
 > **TÍNH CHẤT — Cực trị qua đổi dấu.** Đổi chiều biến thiên giúp tìm cực trị địa phương. Tại sao đổi dấu đạo hàm quan trọng hơn chỉ giải \(f'=0\)? Ta bắt đầu từ dấu f' hai phía, miền và khả vi lân cận. **Điều kiện bắt buộc:** hàm số phải liên tục tại điểm trong (c) và khả vi trên hai khoảng ngay bên trái, bên phải (c). Khi đó, nếu (f') dương trước (c) và âm sau (c), hàm đạt cực đại địa phương tại (c); nếu (f') âm trước và dương sau, hàm đạt cực tiểu. Không thể suy cực trị chỉ từ bảng dấu hai phía nếu giá trị (f(c)) không khớp giới hạn tại (c). Nếu không đổi dấu, \(f'=0\) có thể là điểm dừng không cực trị. Cực đại địa phương khác giá trị lớn nhất toàn cục.
 
-Chẳng hạn, \(f=x^3-3x\): \(f'=3(x-1)(x+1)\), dương x<−1, âm \(-1<x<1\), dương x>1. Cực đại ở x=−1 giá trị2, cực tiểu ở x=1 giá trị−2.
+Chẳng hạn, \(f=x^3-3x\): \(f'=3(x-1)(x+1)\), dương \(x<-1\), âm \(-1<x<1\), dương \(x>1\). Cực đại ở \(x=-1\) giá trị2, cực tiểu ở \(x=1\) giá trị−2.
 
 ![Đồ thị bậc ba và bảng dấu đạo hàm](../../visuals/THPT_TOPIC10_DERIVATIVE_SIGN_VARIATION_R01.svg)
 
-*Quan sát hình:* Đọc sự đổi dấu + sang − ở x=−1 và − sang + ở x=1; hai cực trị địa phương phải khớp bảng dấu và tọa độ đồ thị.
+*Quan sát hình:* Đọc sự đổi dấu + sang − ở \(x=-1\) và − sang + ở \(x=1\); hai cực trị địa phương phải khớp bảng dấu và tọa độ đồ thị.
 
 **Ví dụ**
 
 **Đề bài:** Tìm các cực trị địa phương của \(f=-x^4+4x^2\).
 
-**Lời giải:** \(f'=-4x(x^2-2)\), có mốc \(-\sqrt2;\ 0;\ \sqrt2\) với dấu +,−,+,−. Cực đại tại \(x=\pm\sqrt2\), giá trị4; cực tiểu tại x=0, giá trị0. Đổi dấu \(f'\) mới quyết định loại cực trị.
+**Lời giải:** \(f'=-4x(x^2-2)\), có mốc \(-\sqrt2;\ 0;\ \sqrt2\) với dấu +,−,+,−. Cực đại tại \(x=\pm\sqrt2\), giá trị4; cực tiểu tại \(x=0\), giá trị0. Đổi dấu \(f'\) mới quyết định loại cực trị.
 
 **Vận dụng** \(f=x^2\) có cực tiểu ở đâu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-x=0, f' đổi âm→dương, f(0)=0.
+\(x=0\), f' đổi âm→dương, \(f(0)=0\).
 
 Nếu chỉ giải \(f'=0\), lập bảng dấu qua nghiệm.
 
@@ -151,7 +151,7 @@ Chẳng hạn, \(f=x^3\): \(f'=3x^2\ge0\), không đổi dấu qua0 nên không 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Có, \(f'=4x^3\) đổi âm→dương ở0; f(0)=0.
+Có, \(f'=4x^3\) đổi âm→dương ở0; \(f(0)=0\).
 
 Nếu bỏ điểm gấp khúc |x|, bổ sung điểm f không khả vi nhưng có giá trị.
 
@@ -202,20 +202,20 @@ Một điểm cao hơn các điểm **rất gần nó** có thể vẫn thấp h
 
 > **ĐỊNH NGHĨA — Cực trị địa phương và toàn cục.** Một đỉnh cục bộ có chắc cao nhất trên toàn miền không? Ta đã biết cực trị qua đổi dấu, miền so sánh. Cực đại địa phương chỉ so các điểm gần c; GTLN/GTNN trên D phải so với MỌI \(x\in D\). Một hàm có thể có nhiều cực trị địa phương, có thể không có GTLN nếu không bị chặn trên hoặc cận trên đúng không đạt; tương tự cho GTNN khi xét cận dưới.
 
-Chẳng hạn, \(f=x^3-3x\) trên ℝ có cực đại địa phương 2 tại−1 và cực tiểu−2 tại1, nhưng f→+∞/−∞ khi \(x\to\pm\infty\) nên không có GTLN/GTNN trên ℝ.
+Chẳng hạn, \(f=x^3-3x\) trên ℝ có cực đại địa phương 2 tại−1 và cực tiểu−2 tại1, nhưng \(f(x)\to+\infty\) khi \(x\to+\infty\) và \(f(x)\to-\infty\) khi \(x\to-\infty\) nên không có GTLN/GTNN trên ℝ.
 
 **Ví dụ**
 
 **Đề bài:** \(f=x^4-2x^2\) trên ℝ có cực đại địa phương ở 0; có GTLN không?
 
-**Lời giải:** \(f'=4x(x^2-1)\) đổi dấu + sang − tại 0 nên f(0)=0 cực đại địa phương. Nhưng \(f\to+\infty\) khi \(|x|\to\infty\) nên không có GTLN; GTNN=−1 tại ±1 vì \(f=(x^2-1)^2-1\).
+**Lời giải:** \(f'=4x(x^2-1)\) đổi dấu + sang − tại 0 nên \(f(0)=0\) cực đại địa phương. Nhưng \(f\to+\infty\) khi \(|x|\to\infty\) nên không có GTLN; GTNN=−1 tại ±1 vì \(f=(x^2-1)^2-1\).
 
 **Vận dụng** Hàm \(f=x^2\) trên ℝ có GTNN không, GTLN không?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-GTNN0 tại0; không có GTLN vì \(x^2\to\infty\).
+GTNN bằng 0 tại \(x=0\); không có GTLN vì \(x^2\to\infty\).
 
 Nếu nói cực đại 2 là GTLN của hàm bậc ba, thử x=10.
 
@@ -236,7 +236,7 @@ Liên tục trên đoạn đóng bảo đảm có cực trị toàn cục. Khi n
 
  Nếu thiếu 'đóng' hay tính liên tục thì chưa có bảo đảm; vẫn có thể đạt nhưng phải chứng minh riêng. Kết quả chỉ nói tồn tại, chưa cho tọa độ.
 
-Xét ví dụ: \(f=x^2-2x\) trên \([0;3]\) là đa thức liên tục nên tồn tại hai giá trị. Ta còn tính được GTNN−1 tại x=1, GTLN3 tại x=3 sau so ứng viên.
+Xét ví dụ: \(f=x^2-2x\) trên \([0;3]\) là đa thức liên tục nên tồn tại hai giá trị. Ta còn tính được GTNN−1 tại \(x=1\), GTLN3 tại \(x=3\) sau so ứng viên.
 
 **Ví dụ**
 
@@ -249,7 +249,7 @@ Xét ví dụ: \(f=x^2-2x\) trên \([0;3]\) là đa thức liên tục nên tồ
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Có, GTLN4 tại2 và GTNN0 tại0.
+Có, GTLN4 tại2 và GTNN bằng 0 tại \(x=0\).
 
 Nếu miền mở, thử xét f=x trên \((0;1)\) không đạt cận1.
 
@@ -266,7 +266,7 @@ Nếu em áp dụng định lí GTLN/GTNN cho miền hở hoặc không liên t�
 
 Muốn tìm giá trị ấy, phải so điểm tới hạn và đầu đoạn. Vì sao chỉ giải \(f'=0\) có thể bỏ sót GTLN tại đầu mút? Ta bắt đầu từ hàm liên tục trên \([a;b]\), khả vi từng khoảng, giá trị ứng viên. Với hàm liên tục trên đoạn \([a;b]\), nếu điểm đạt GTLN hoặc GTNN nằm trong nội miền và tại đó hàm khả vi thì đạo hàm bằng 0 (định lý Fermat); nếu không khả vi, điểm ấy vẫn có thể là nơi đạt. Khi số điểm nội miền có đạo hàm bằng 0 hoặc không tồn tại là hữu hạn, chỉ cần so các giá trị tại chúng và hai đầu đoạn. Nếu danh sách không hữu hạn, phải dùng thêm lập luận về dấu, bảng biến thiên hoặc bất đẳng thức; không giả định luôn có một danh sách hữu hạn. Phương pháp: xác định miền, liệt kê đủ ứng viên, tính chính xác f tại mỗi điểm, so sánh cùng đơn vị. Điểm \(f'=0\) ngoài đoạn phải loại.
 
-Chẳng hạn, \(f=x^3-3x\) trên \([0;2]\), \(f'=3x^2-3\)⇒ x=1 trong đoạn. \(f(0)=0,\ f(1)=-2,\ f(2)=2\)⇒GTNN−2 tại1,GTLN2 tại2. Chọn kiểm hai đầu vì cực đại không nhất thiết nội miền.
+Chẳng hạn, \(f=x^3-3x\) trên \([0;2]\), \(f'=3x^2-3\)⇒ \(x=1\) trong đoạn. \(f(0)=0,\ f(1)=-2,\ f(2)=2\)⇒GTNN−2 tại1,GTLN2 tại2. Chọn kiểm hai đầu vì cực đại không nhất thiết nội miền.
 
 > **PHƯƠNG PHÁP — Ứng viên và biên.** Hình bên dưới là **ví dụ khác** đúng với dữ liệu gốc: trên đoạn \([0;3]\), \(g(x)=x^2-2x\) có \(g'(x)=2x-2\), ứng viên nội miền \(x=1\) và hai đầu đoạn \(x=0,3\). Ta tính \(g(0)=0\), \(g(1)=-1\), \(g(3)=3\). Vậy GTNN là −1 tại 1 và GTLN là 3 tại **đầu phải 3**; điều này minh họa lý do không chỉ so các nghiệm đạo hàm bằng 0. Bài \(x^3-3x\) trên \([0;2]\) vừa giải dùng cùng phương pháp nhưng **không phải hình đang vẽ**.
 
@@ -278,14 +278,14 @@ Chẳng hạn, \(f=x^3-3x\) trên \([0;2]\), \(f'=3x^2-3\)⇒ x=1 trong đoạn.
 
 **Đề bài:** Tìm GTLN/GTNN của \(f=x^2-4x+6\) trên \([-1;5]\).
 
-**Lời giải:** \(f'=2x-4=0\) tại2; so f(−1)=11, f(2)=2, f(5)=11. GTNN2 tại2, GTLN11 tại cả −1 và5. Không bỏ qua đầu đoạn.
+**Lời giải:** \(f'=2x-4=0\) tại2; so \(f(-1)=11\), \(f(2)=2\), \(f(5)=11\). GTNN2 tại2, GTLN11 tại cả −1 và5. Không bỏ qua đầu đoạn.
 
 **Vận dụng** \(f=x^2-4x\) trên \([0;3]\), GTNN?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-f'=2x−4=0 tại2: \(f(0)=0,\ f(2)=-4,\ f(3)=-3\)⇒GTNN−4 tại2.
+\(f'=2x-4=0\) tại2: \(f(0)=0,\ f(2)=-4,\ f(3)=-3\)⇒GTNN−4 tại2.
 
 Nếu thấy nghiệm đạo hàm nằm ngoài đoạn, bỏ ứng viên ấy.
 
@@ -300,22 +300,22 @@ Nếu em chỉ kiểm nghiệm \(f'=0\) mà bỏ hai đầu đoạn hoặc đi�
 
 <!-- LESSON_ID: TOP10-M10; OUTCOME_ID: TOP10-O10 -->
 
-> **KIẾN THỨC CẦN GHI NHỚ — Miền mở và khả đạt.** Trên miền mở, một cận có thể không được đạt. f(x) tiến đến 1 nhưng không bao giờ bằng 1, có gọi GTLN=1 không? Cần nhớ tập giá trị, cận trên và điều kiện 'đạt'. Cận trên đúng (cận trên nhỏ nhất, supremum) chưa chắc là GTLN vì nó có thể không được đạt. Trên \((0;1)\), f(x)=x có cận trên đúng bằng 1 nhưng không có GTLN vì x=1 bị loại. Có thể có giá trị lớn nhất trên miền mở nếu hàm có điểm nội miền đạt, phải xét trường hợp cụ thể. Không được suy từ giới hạn ở biên thành giá trị đạt.
+> **KIẾN THỨC CẦN GHI NHỚ — Miền mở và khả đạt.** Trên miền mở, một cận có thể không được đạt. f(x) tiến đến 1 nhưng không bao giờ bằng 1, có gọi GTLN=1 không? Cần nhớ tập giá trị, cận trên và điều kiện 'đạt'. Cận trên đúng (cận trên nhỏ nhất, supremum) chưa chắc là GTLN vì nó có thể không được đạt. Trên \((0;1)\), f(x)=x có cận trên đúng bằng 1 nhưng không có GTLN vì \(x=1\) bị loại. Có thể có giá trị lớn nhất trên miền mở nếu hàm có điểm nội miền đạt, phải xét trường hợp cụ thể. Không được suy từ giới hạn ở biên thành giá trị đạt.
 
-Chẳng hạn, \(f=1-(x-2)^2\) trên \((0;3)\) có GTLN1 tại x=2 (nội miền) dù miền mở. Trái lại g=x trên \((0;1)\) không có GTLN, chỉ có cận trên đúng bằng 1.
+Chẳng hạn, \(f=1-(x-2)^2\) trên \((0;3)\) có GTLN1 tại \(x=2\) (nội miền) dù miền mở. Trái lại g=x trên \((0;1)\) không có GTLN, chỉ có cận trên đúng bằng 1.
 
 **Ví dụ**
 
 **Đề bài:** \(f=x(1-x)\) trên \((0;1)\) có GTLN và GTNN không?
 
-**Lời giải:** \(f=\frac14-(x-\frac12)^2\) đạt GTLN \(\frac14\) tại \(x=\frac12\). Với \(x\in(0;1)\) thì f>0 nhưng f→0 ở hai biên bị loại, nên không có GTNN; cận dưới0 không đạt.
+**Lời giải:** \(f=\frac14-(x-\frac12)^2\) đạt GTLN \(\frac14\) tại \(x=\frac12\). Với \(x\in(0;1)\) thì \(f>0\) nhưng \(f\to0\) ở hai biên bị loại, nên không có GTNN; cận dưới0 không đạt.
 
-**Vận dụng** \(g(x)=-x\) trên \((0;1)\) có GTLN0 không?
+**Vận dụng** \(g(x)=-x\) trên \((0;1)\) có GTLN bằng 0 không?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Không, vì g→0 khi \(x\to0^+\) nhưng x=0 bị loại.
+Không, vì \(g\to0\) khi \(x\to0^+\) nhưng \(x=0\) bị loại.
 
 Nếu ghi GTLN là cận không đạt, hãy hỏi có \(x\in D\) sao cho f(x)=cận không.
 
@@ -332,20 +332,20 @@ Nếu em gọi một cận tiến tới nhưng không đạt là GTLN/GTNN, đ�
 
 > **PHƯƠNG PHÁP — Miền ràng buộc.** Ràng buộc có thể loại nghiệm tối ưu nằm ngoài miền. Một đáp số x tối ưu có thể vô nghĩa nếu x vi phạm điều kiện thực tế? Để xác định điều đó, cần xét bất phương trình, khoảng ràng buộc, max/min. Bài toán cực trị có ràng buộc phải lấy miền khả thi từ bối cảnh (độ dài dương, số lượng nguyên, ngân sách, khối lượng, thời gian). Sau tìm cực trị liên tục, kiểm nghiệm tối ưu có trong miền; nếu biến nguyên, so các giá trị nguyên lân cận. Không mở rộng mô hình ra ngoài điều kiện.
 
-Chẳng hạn, Lợi ích \(P(x)=-(x-4)^2+10\) với \(x\in[0;3]\) không đạt đỉnh 10 ở x=4 vì ngoài miền; P tăng trên \([0;3]\), GTLN P(3)=9. Chọn kiểm miền trước khi tuyên bố cực đại.
+Chẳng hạn, Lợi ích \(P(x)=-(x-4)^2+10\) với \(x\in[0;3]\) không đạt đỉnh 10 ở \(x=4\) vì ngoài miền; P tăng trên \([0;3]\), GTLN P(3)=9. Chọn kiểm miền trước khi tuyên bố cực đại.
 
 **Ví dụ**
 
 **Đề bài:** \(A(x)=x(10-x)\), chỉ cho phép \(x\in[7;9]\). Tìm diện tích lớn nhất.
 
-**Lời giải:** \(A'=10-2x<0\) trên \([7;9]\), nên A giảm: GTLN A(7)=21, GTNN A(9)=9. Nghiệm không ràng buộc x=5 bị loại vì không thuộc miền.
+**Lời giải:** \(A'=10-2x<0\) trên \([7;9]\), nên A giảm: GTLN A(7)=21, GTNN A(9)=9. Nghiệm không ràng buộc \(x=5\) bị loại vì không thuộc miền.
 
 **Vận dụng** Với \(f=-(x-5)^2\), \(x\in[0;2]\), x tối ưu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-x=2, f(2)=−9; x=5 không hợp lệ.
+\(x=2\), f(2)=−9; \(x=5\) không hợp lệ.
 
 Nếu nghiệm \(f'=0\) ngoài miền, kiểm đầu mút hợp lệ.
 
@@ -362,13 +362,13 @@ Nếu nghiệm tối ưu không thuộc miền ràng buộc nhưng vẫn đượ
 
 > **PHƯƠNG PHÁP — Lập mô hình ba cạnh.** Tối ưu bắt đầu từ biến và đại lượng mục tiêu. Tại sao một công thức đạo hàm đúng vẫn cho bài toán thực tế sai? Ta đã biết chọn biến và đơn vị, mối ràng buộc, miền. Quy trình mô hình: chọn đại lượng cần tối ưu, chọn biến và đơn vị, dùng ràng buộc để đưa mục tiêu về một biến, lập miền hợp lệ, đạo hàm và kiểm biên, rồi diễn giải kết quả theo mô hình. Không coi việc giải \(f'=0\) là đủ chứng minh tối ưu.
 
-Chẳng hạn, Chu vi hình chữ nhật 20 m, cạnh \(x\in(0;10)\), cạnh kia10−x, diện tích \(A=x(10-x)\). \(A'=10-2x=0\)⇒x=5, diện tích25 m² là lớn nhất vì \(A=25-(x-5)^2\le25\), đạt tại x=5.
+Chẳng hạn, Chu vi hình chữ nhật 20 m, cạnh \(x\in(0;10)\), cạnh kia10−x, diện tích \(A=x(10-x)\). \(A'=10-2x=0\)⇒\(x=5\), diện tích25 m² là lớn nhất vì \(A=25-(x-5)^2\le25\), đạt tại \(x=5\).
 
 **Ví dụ**
 
 **Đề bài:** Dùng 24 m hàng rào làm ba cạnh hình chữ nhật sát bờ sông, tìm diện tích tối đa.
 
-**Lời giải:** Gọi hai cạnh vuông góc dài x>0, cạnh thứ ba \(24-2x>0\); \(0<x<12\). \(A=x(24-2x)=-2(x-6)^2+72\le72\) m², đạt khi x=6 m, cạnh còn lại12 m. Phải mô hình đúng ba cạnh.
+**Lời giải:** Gọi hai cạnh vuông góc dài \(x>0\), cạnh thứ ba \(24-2x>0\); \(0<x<12\). \(A=x(24-2x)=-2(x-6)^2+72\le72\) m², đạt khi \(x=6\) m, cạnh còn lại12 m. Phải mô hình đúng ba cạnh.
 
 **Vận dụng** Có 32 m hàng rào để rào ba cạnh của một mảnh vườn hình chữ nhật dựa vào tường thẳng (cạnh sát tường không cần rào). Hãy đặt biến là chiều dài cạnh song song tường, lập miền khả thi và tìm diện tích lớn nhất.
 
@@ -394,20 +394,20 @@ Bảng dấu đạo hàm mô tả chiều đi của các nhánh, nhưng chưa ch
 
 > **ĐỊNH NGHĨA — Tiệm cận ngang.** Một đồ thị có thể tiến gần một đường thẳng dù không bao giờ chạm? Ta sử dụng giới hạn ở vô cực và phân thức. Đường y=L là tiệm cận ngang nếu \(\lim_{x\to+\infty}f(x)=L\) hoặc \(\lim_{x\to-\infty}f(x)=L\) hữu hạn. Chỉ cần một trong hai phía; có thể là hai giới hạn khác nhau nếu hàm thích hợp. Việc đồ thị cắt đường y=L tại điểm hữu hạn không làm mất tính tiệm cận.
 
-Xét ví dụ: \(f=\frac{2x+1}{x+3}\to2\) khi \(x\to\pm\infty\), nên y=2 là tiệm cận ngang; không phải y=0 vì tử và mẫu cùng bậc.
+Xét ví dụ: \(f=\frac{2x+1}{x+3}\to2\) khi \(x\to\pm\infty\), nên \(y=2\) là tiệm cận ngang; không phải \(y=0\) vì tử và mẫu cùng bậc.
 
 **Ví dụ**
 
 **Đề bài:** Tìm tiệm cận ngang của \(f=\frac{3x-1}{x+5}\).
 
-**Lời giải:** \(D=\mathbb R\setminus\{-5\}\). Chia tử mẫu cho x: \(f=\frac{3-\frac1x}{1+\frac5x}\to3\) khi \(x\to\pm\infty\). y=3 là tiệm cận ngang; không dựa vào hằng −1.
+**Lời giải:** \(D=\mathbb R\setminus\{-5\}\). Chia tử mẫu cho x: \(f=\frac{3-\frac1x}{1+\frac5x}\to3\) khi \(x\to\pm\infty\). \(y=3\) là tiệm cận ngang; không dựa vào hằng −1.
 
 **Vận dụng** \(f=\frac{3x-2}{x+4}\) có TCN?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-y=3 khi \(x\to\pm\infty\).
+\(y=3\) khi \(x\to\pm\infty\).
 
 Nếu lấy hệ số hằng ở tử làm tiệm cận, chia cho x bậc cao nhất.
 
@@ -428,20 +428,20 @@ Gần điểm cấm, giới hạn một phía quyết định tiệm cận đứ
 
  Chỉ có mẫu bằng0 chưa đủ: nếu tử cùng triệt tiêu có thể là lỗ khử. Cần xác định miền và tính dấu mỗi phía.
 
-Chẳng hạn, \(f=\frac{x+1}{x-2}\), tại2 tử→3>0, mẫu âm phía trái/dương phía phải, nên \(f\to-\infty\) khi \(x\to2^-\), \(f\to+\infty\) khi \(x\to2^+\), x=2 là TCD.
+Chẳng hạn, \(f=\frac{x+1}{x-2}\), tại2 tử→3>0, mẫu âm phía trái/dương phía phải, nên \(f\to-\infty\) khi \(x\to2^-\), \(f\to+\infty\) khi \(x\to2^+\), \(x=2\) là TCD.
 
 **Ví dụ**
 
 **Đề bài:** Tìm tiệm cận đứng của \(f=\frac1{(x+3)^2}\).
 
-**Lời giải:** \(D=\mathbb R\setminus\{-3\}\). Khi x→−3 từ hai phía, mẫu tiến0⁺ nên \(f\to+\infty\). Vì ít nhất một giới hạn một phía vô cực, x=−3 là tiệm cận đứng.
+**Lời giải:** \(D=\mathbb R\setminus\{-3\}\). Khi \(x\to-3\) từ hai phía, mẫu tiến0⁺ nên \(f\to+\infty\). Vì ít nhất một giới hạn một phía vô cực, \(x=-3\) là tiệm cận đứng.
 
 **Vận dụng** \(f=\frac1{x+1}\) có TCD ở đâu và hai phía?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-x=−1; trái −∞, phải+∞.
+\(x=-1\); trái −∞, phải+∞.
 
 Nếu viết \(\frac00\) rồi gọi đứng, thử phân tích và rút gọn.
 
@@ -492,15 +492,15 @@ Nếu em ghi \(y=ax\) nhưng bỏ hệ số dịch \(b\), đọc **Kiến thức
 
 > **TÍNH CHẤT — Lỗ khử được.** Lỗ khử được có giới hạn hữu hạn, khác tiệm cận đứng. Tại sao một đồ thị có thể bị thiếu đúng một điểm nhưng không lao ra vô cực? Để xác định điều đó, cần xét phân tích tử/mẫu, giới hạn hữu hạn. Nếu sau khi rút hết nhân tử chung, mẫu còn lại khác 0 tại \(a\), thì giới hạn hữu hạn và điểm bị loại là một lỗ, không phải tiệm cận đứng. Chỉ có nhân tử chung chưa đủ: chẳng hạn \(\frac{x-a}{(x-a)^2}=\frac1{x-a}\) với \(x\ne a\) vẫn có tiệm cận đứng \(x=a\). Phép rút gọn không tự bổ sung f(a) vào miền gốc. Có thể có TCD ở điểm khác.
 
-Chẳng hạn, \(f=\frac{x^2-4}{x-2}\), \(x\ne2\) ⇒ f=x+2 trên miền. Lim tại2 là4 hữu hạn nên không có tiệm cận đứng x=2, chỉ lỗ tại \((2;4)\).
+Chẳng hạn, \(f=\frac{x^2-4}{x-2}\), \(x\ne2\) ⇒ f=x+2 trên miền. Lim tại2 là4 hữu hạn nên không có tiệm cận đứng \(x=2\), chỉ lỗ tại \((2;4)\).
 
 **Ví dụ**
 
-**Đề bài:** \(f=\frac{x^2-25}{x+5}\), \(x\ne-5\) có tiệm cận đứng tại x=−5 không?
+**Đề bài:** \(f=\frac{x^2-25}{x+5}\), \(x\ne-5\) có tiệm cận đứng tại \(x=-5\) không?
 
 **Lời giải:** \(D=\mathbb R\setminus\{-5\}\). Với \(x\ne-5\), \(f=\frac{(x-5)(x+5)}{x+5}=x-5\), nên \(\lim_{x\to-5}f(x)=-10\) hữu hạn. Điểm \((-5;-10)\) là lỗ, không phải tiệm cận đứng; rút gọn không tạo lại giá trị f(−5).
 
-**Vận dụng** \(f=\frac{x^2-9}{x-3}\), có TCD x=3?
+**Vận dụng** \(f=\frac{x^2-9}{x-3}\), có TCD \(x=3\)?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -522,20 +522,20 @@ Nếu em xem lỗ khử được như tiệm cận đứng hoặc tự điền �
 
 > **KIẾN THỨC CẦN GHI NHỚ — Giới hạn hợp lệ theo miền.** Miền quyết định phía nào được lấy giới hạn. Có thể lấy giới hạn phía ngoài miền mà hàm không tồn tại? Ta đã biết đầu mút miền, hàm có mẫu/căn. Giới hạn một phía x→a phải dùng các điểm thuộc miền D gần a ở đúng phía. Ở đầu miền của căn \(\sqrt{x-1}\), không có lân cận phía trái trong miền thực; không dùng giá trị giả. Ở điểm loại phân thức, nếu D có hai nhánh thì kiểm từng phía. TCD dựa trên đường đi hợp lệ trong miền.
 
-Chẳng hạn, \(f=\frac1{\sqrt{x-1}}\) có D=(1,∞); khi \(x\to1^+\), \(f\to+\infty\) nên x=1 là TCD từ phía phải. Không có giới hạn thực \(x\to1^-\) từ miền.
+Chẳng hạn, \(f=\frac1{\sqrt{x-1}}\) có \(D=(1;+\infty)\); khi \(x\to1^+\), \(f\to+\infty\) nên \(x=1\) là TCD từ phía phải. Không có giới hạn thực \(x\to1^-\) từ miền.
 
 **Ví dụ**
 
-**Đề bài:** Xét \(f=\frac1{\sqrt{5-x}}\). Tìm miền và giới hạn gần x=5.
+**Đề bài:** Xét \(f=\frac1{\sqrt{5-x}}\). Tìm miền và giới hạn gần \(x=5\).
 
-**Lời giải:** Mẫu căn phải dương nên D=(−∞,5). Khi \(x\to5^-\) từ trong miền, \(f\to+\infty\), vậy x=5 là tiệm cận đứng từ phía trái. Không xét phía x>5 trong số thực.
+**Lời giải:** Mẫu căn phải dương nên \(D=(-\infty;5)\). Khi \(x\to5^-\) từ trong miền, \(f\to+\infty\), vậy \(x=5\) là tiệm cận đứng từ phía trái. Không xét phía \(x>5\) trong số thực.
 
-**Vận dụng** \(f=\frac1{\sqrt{x}}\) tại x=0, phía nào xét TCD?
+**Vận dụng** \(f=\frac1{\sqrt{x}}\) tại \(x=0\), phía nào xét TCD?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Chỉ \(x\to0^+\); giới hạn +∞, x=0 là TCD.
+Chỉ \(x\to0^+\); giới hạn +∞, \(x=0\) là TCD.
 
 Nếu viết giới hạn trái của f không có miền thực, đó là sai điều kiện.
 
@@ -552,13 +552,13 @@ Nếu em đòi giới hạn từ phía ngoài miền của một hàm có căn �
 
 > **PHƯƠNG PHÁP — Tiệm cận qua hình.** Đồ thị giúp phân biệt đường giới hạn ngang, đứng, xiên. Vì sao tiệm cận không phải đường mà đồ thị tuyệt đối không được chạm? Ta sử dụng đọc trục và giới hạn, đồ thị phân nhánh. Tiệm cận là mô tả khoảng cách/hành vi giới hạn, không phải cấm giao nhau. Đọc TCD x=a qua một nhánh lao ±∞ gần a, ngang y=L qua xu hướng ở vô cực, xiên y=ax+b khi hiệu f−(ax+b)→0. Phải kiểm tính đúng theo mỗi phía vô cực/điểm cấm, không dựa chỉ nét vẽ.
 
-Xét ví dụ: \(f=x+\frac1x\), \(x\ne0\): TCD x=0 vì \(\frac1x\) vô cực, TC xiên y=x vì \(f-x=\frac1x\to0\). Không có TCN, mặc dù x lớn đồ thị gần đường xiên.
+Xét ví dụ: \(f=x+\frac1x\), \(x\ne0\): TCD \(x=0\) vì \(\frac1x\) vô cực, TC xiên \(y=x\) vì \(f-x=\frac1x\to0\). Không có TCN, mặc dù x lớn đồ thị gần đường xiên.
 
 **Ví dụ**
 
 **Đề bài:** Đọc tiệm cận của \(f=\frac{x^2+2x}{x+1}\).
 
-**Lời giải:** \(D=\mathbb R\setminus\{-1\}\), \(f=x+1-\frac1{x+1}\). Vì \(\frac1{x+1}\) vô cực gần −1, TCD x=−1; vì \(f-(x+1)\to0\) ở vô cực, tiệm cận xiên y=x+1.
+**Lời giải:** \(D=\mathbb R\setminus\{-1\}\), \(f=x+1-\frac1{x+1}\). Vì \(\frac1{x+1}\) vô cực gần −1, TCD \(x=-1\); vì \(f-(x+1)\to0\) ở vô cực, tiệm cận xiên y=x+1.
 
 **Vận dụng** Quan sát hai hình sau (không cần biết trước biểu thức của hàm). Đọc phương trình đường tiệm cận đứng và đường tiệm cận ngang hoặc xiên của mỗi hình. Mô tả nhánh trái và nhánh phải khi tiến gần tiệm cận đứng.
 
@@ -588,20 +588,20 @@ Giờ đây, miền xác định cho biết nơi được phép vẽ, đạo hà
 
 > **PHƯƠNG PHÁP — Các bước khảo sát.** Muốn phác đồ thị đúng thì thứ tự nào ngăn bỏ sót nhánh? Ta bắt đầu từ miền, đạo hàm, giới hạn, điểm đặc biệt. Quy trình: (1) tìm D; (2) tìm các điểm nội miền mà \(f'=0\) hoặc đạo hàm không tồn tại, rồi xét dấu trên từng nhánh của miền xác định; (3) tính cực trị, giới hạn tại biên/±∞, TCD/TCN/TC xiên nếu có; (4) lập bảng biến thiên, ghi giá trị tại các mốc và giới hạn ở hai đầu mỗi nhánh; (5) tìm giao trục, điểm hỗ trợ, tâm/trục đối xứng phù hợp và phác đồ thị dựa trên bảng biến thiên. Không nối hai nhánh qua điểm bị loại.
 
-Chẳng hạn, \(f=\frac1{x-1}\): \(D=\mathbb R\setminus\{1\}\), \(f'=-\frac1{(x-1)^2}<0\), TCD x=1, TCN y=0; hai nhánh đều giảm nhưng không nối qua x=1. Chọn kiểm miền trước dấu.
+Chẳng hạn, \(f=\frac1{x-1}\): \(D=\mathbb R\setminus\{1\}\), \(f'=-\frac1{(x-1)^2}<0\), TCD \(x=1\), TCN \(y=0\); hai nhánh đều giảm nhưng không nối qua \(x=1\). Chọn kiểm miền trước dấu.
 
 **Ví dụ**
 
 **Đề bài:** Dựng các dữ kiện khảo sát \(g=\frac{x+1}{x-2}\).
 
-**Lời giải:** \(D=\mathbb R\setminus\{2\}\), \(g'=-\frac3{(x-2)^2}<0\): giảm mỗi nhánh; TCD x=2, TCN y=1. Giao Ox \((-1;0)\), Oy \((0;-\frac12)\). Vì \(g(x)=1+\frac3{x-2}\), bên trái \(x=2\) đồ thị tiến xuống \(-\infty\), bên phải tiến lên \(+\infty\); tại hai phía vô cực đồ thị tiến gần \(y=1\). Tâm đối xứng là \(I(2;1)\). Ghi các giới hạn ấy vào hai nhánh giảm trong bảng biến thiên, rồi vẽ qua hai giao trục đã tìm; không nối qua \(x=2\).
+**Lời giải:** \(D=\mathbb R\setminus\{2\}\), \(g'=-\frac3{(x-2)^2}<0\): giảm mỗi nhánh; TCD \(x=2\), TCN \(y=1\). Giao Ox \((-1;0)\), Oy \((0;-\frac12)\). Vì \(g(x)=1+\frac3{x-2}\), bên trái \(x=2\) đồ thị tiến xuống \(-\infty\), bên phải tiến lên \(+\infty\); tại hai phía vô cực đồ thị tiến gần \(y=1\). Tâm đối xứng là \(I(2;1)\). Ghi các giới hạn ấy vào hai nhánh giảm trong bảng biến thiên, rồi vẽ qua hai giao trục đã tìm; không nối qua \(x=2\).
 
 **Vận dụng** Khảo sát \(f(x)=x^2\) trên \(\mathbb R\): tìm miền, đạo hàm, khoảng tăng giảm, cực trị và mô tả hình dạng đồ thị theo đúng thứ tự.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-\(D=\mathbb R\), f'=2x, giảm trước0 tăng sau0, đỉnh(0,0), không TCD/TC ngang, đồ thị parabol.
+\(D=\mathbb R\), \(f'=2x\), giảm trước0 tăng sau0, đỉnh(0,0), không TCD/TC ngang, đồ thị parabol.
 
 Nếu thiếu nhánh phía trái, bảng dấu f' là nơi tìm lại.
 
@@ -618,7 +618,7 @@ Nếu em bắt đầu phác hình trước khi kiểm miền xác định, đạ
 
 > **PHƯƠNG PHÁP — Đồ thị hàm bậc ba.** Với đa thức bậc ba, bảng dấu đạo hàm định hình các nhánh. Đa thức bậc ba có nhất thiết hai cực trị? Cần nhớ đạo hàm bậc hai, dấu f', giới hạn ±∞. Với f bậc ba, f' là tam thức bậc hai: có thể có hai nghiệm phân biệt tạo hai cực trị, nghiệm kép không đổi dấu tạo điểm dừng, hoặc không nghiệm tạo đơn điệu. Chỉ tính \(f'=0\) chưa đủ; phải lập bảng dấu/điểm uốn nếu xét thêm, không gán mọi bậc ba hai cực trị.
 
-Chẳng hạn, \(f=x^3-3x\): \(f'=3(x-1)(x+1)\), cực đại ở −1 giá trị2, cực tiểu ở1 giá trị−2; khi \(x\to+\infty\) f→∞, \(x\to-\infty\) \(f\to-\infty\). Chọn bảng dấu để xác định hai nhánh.
+Chẳng hạn, \(f=x^3-3x\): \(f'=3(x-1)(x+1)\), cực đại ở −1 giá trị2, cực tiểu ở1 giá trị−2; khi \(x\to+\infty\) \(f\to+\infty\), \(x\to-\infty\) \(f\to-\infty\). Chọn bảng dấu để xác định hai nhánh.
 
 Đồ thị bậc ba còn có **tâm đối xứng** ngay cả khi không có cực trị. Với \(y=ax^3+bx^2+cx+d\), \(a\ne0\), ta tính \(y''=6ax+2b\) rồi giải \(y''=0\), được \(x_0=-\dfrac{b}{3a}\). Tung độ tâm là \(f(x_0)\). Ta không nhầm vị trí này với nghiệm \(f'(x)=0\), và đồ thị của đa thức bậc ba không có tiệm cận.
 
@@ -630,7 +630,7 @@ Chẳng hạn, \(f=x^3-3x\): \(f'=3(x-1)(x+1)\), cực đại ở −1 giá tr�
 
 **Đề bài:** Khảo sát chiều biến thiên và cực trị của \(f=x^3+3x^2\).
 
-**Lời giải:** \(f'=3x(x+2)\) có dấu +,−,+ qua −2,0. Cực đại địa phương \((-2;4)\), cực tiểu \((0;0)\); f→±∞ ở ±∞ nên không có GTLN/GTNN toàn ℝ.
+**Lời giải:** \(f'=3x(x+2)\) có dấu +,−,+ qua −2,0. Cực đại địa phương \((-2;4)\), cực tiểu \((0;0)\); \(f(x)\to+\infty\) khi \(x\to+\infty\) và \(f(x)\to-\infty\) khi \(x\to-\infty\) nên không có GTLN/GTNN toàn ℝ.
 
 **Vận dụng** \(f=x^3\) có cực trị không?
 
@@ -654,11 +654,11 @@ Nếu em vẽ đồ thị bậc ba luôn tăng hoặc bỏ một điểm đổi 
 
 > **PHƯƠNG PHÁP — Khảo sát phân thức.** Phân thức đòi hỏi xét điểm cấm và tiệm cận. Tại sao bảng biến thiên của phân thức phải có đường phân cách ở x=a? Để xác định điều đó, cần xét quy tắc đạo hàm thương và giới hạn một phía. Đối với \(f=\frac{ax+b}{cx+d}\) với \(cx+d\ne0\), \(f'=\frac{ad-bc}{(cx+d)^2}\) (trong miền), nên dấu không đổi trên mỗi khoảng miền. Khi \(c\ne0\) và \(ad-bc\ne0\), mẫu có nghiệm \(-\frac dc\), tử khác 0 tại đó, nên tiệm cận đứng là \(x=-\frac dc\), tiệm cận ngang là \(y=\frac ac\). Nếu \(c\ne0\) nhưng \(ad-bc=0\), hàm bằng hằng số \(\frac ac\) trên miền xác định và có một lỗ tại điểm mẫu bằng 0, không có tiệm cận đứng. Bảng biến thiên ghi riêng các nhánh, không nối qua TCD.
 
-Chẳng hạn, \(f=\frac{2x+1}{x-1}\): \(D=\mathbb R\setminus\{1\}\), \(f'=\frac{2(x-1)-(2x+1)}{(x-1)^2}=-\frac3{(x-1)^2}<0\); TCD x=1, TCN y=2. Trái gần1→−∞, phải→+∞.
+Chẳng hạn, \(f=\frac{2x+1}{x-1}\): \(D=\mathbb R\setminus\{1\}\), \(f'=\frac{2(x-1)-(2x+1)}{(x-1)^2}=-\frac3{(x-1)^2}<0\); TCD \(x=1\), TCN \(y=2\). Trái gần1→−∞, phải→+∞.
 
 ![Hai nhánh phân thức và tiệm cận](../../visuals/THPT_TOPIC10_RATIONAL_ASYMPTOTES_R01.svg)
 
-*Quan sát hình:* Đường x=1 là tiệm cận đứng, y=2 tiệm cận ngang của \(\frac{2x+1}{x-1}\); không nối các nhánh qua x=1.
+*Quan sát hình:* Đường \(x=1\) là tiệm cận đứng, \(y=2\) tiệm cận ngang của \(\frac{2x+1}{x-1}\); không nối các nhánh qua \(x=1\).
 
 Ngoài phân thức bậc nhất trên bậc nhất, ta còn khảo sát **phân thức bậc hai trên bậc nhất** \(\displaystyle y=\frac{ax^2+bx+c}{px+q}\) với \(a,p\ne0\) và tử không chia hết cho mẫu. Chia đa thức, ta đưa hàm về \(y=mx+n+\frac{k}{px+q}\), \(k\ne0\). Từ đây xác định đường tiệm cận đứng \(x=-\frac qp\), tiệm cận xiên \(y=mx+n\), rồi xét dấu đạo hàm, điểm cực trị và giới hạn ở từng nhánh miền. Nếu tử chia hết cho mẫu, điểm mẫu bị loại có thể chỉ là **lỗ**, không được tự kết luận có tiệm cận đứng.
 
@@ -670,14 +670,14 @@ Ngoài phân thức bậc nhất trên bậc nhất, ta còn khảo sát **phân
 
 **Đề bài:** Khảo sát phân thức \(f=\frac{3x-2}{x+1}\).
 
-**Lời giải:** \(D=\mathbb R\setminus\{-1\}\), \(f'=\frac5{(x+1)^2}>0\) nên tăng riêng trên hai khoảng. TCD x=−1 vì tử tại đó −5≠0; TCN y=3 theo tỉ số hệ số đầu.
+**Lời giải:** \(D=\mathbb R\setminus\{-1\}\), \(f'=\frac5{(x+1)^2}>0\) nên tăng riêng trên hai khoảng. TCD \(x=-1\) vì tử tại đó −5≠0; TCN \(y=3\) theo tỉ số hệ số đầu.
 
 **Vận dụng** \(f=\frac{x+3}{x-2}\), dấu đạo hàm?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-\(f'=-\frac5{(x-2)^2}<0\) trên mỗi nhánh; TCD x=2, TCN y=1.
+\(f'=-\frac5{(x-2)^2}<0\) trên mỗi nhánh; TCD \(x=2\), TCN \(y=1\).
 
 Nếu đọc 'giảm trên toàn ℝ\{2}' theo mọi cặp, lưu ý hai nhánh không tạo một khoảng.
 
@@ -692,22 +692,22 @@ Nếu em gộp hai khoảng bị ngăn bởi tiệm cận đứng thành một k
 
 <!-- LESSON_ID: TOP10-M22; OUTCOME_ID: TOP10-O22 -->
 
-> **PHƯƠNG PHÁP — Giao trục.** Giao trục và điểm đặc biệt định vị đồ thị. Tại sao tìm giao trục không đủ để vẽ đúng đồ thị? Ta đã biết giải \(f(x)=0\), thế x=0 khi x=0 thuộc miền, dấu và giới hạn. Giao Ox là nghiệm \(f(x)=0\) thuộc D; giao Oy chỉ có khi 0∈D và là (0,f(0)). Với phân thức, nghiệm tử tại điểm mẫu=0 phải loại. Giới hạn ở vô cực và điểm loại mô tả nhánh mà hai giao trục không cho biết.
+> **PHƯƠNG PHÁP — Giao trục.** Giao trục và điểm đặc biệt định vị đồ thị. Tại sao tìm giao trục không đủ để vẽ đúng đồ thị? Ta đã biết giải \(f(x)=0\), thế \(x=0\) khi \(x=0\) thuộc miền, dấu và giới hạn. Giao Ox là nghiệm \(f(x)=0\) thuộc D; giao Oy chỉ có khi 0∈D và là (0,f(0)). Với phân thức, nghiệm tử tại điểm mẫu=0 phải loại. Giới hạn ở vô cực và điểm loại mô tả nhánh mà hai giao trục không cho biết.
 
-Chẳng hạn, \(f=\frac{x-2}{x+1}\): Ox \((2;0)\), Oy(0,−2), TCD x=−1 và TCN y=1. Ta chọn kiểm mẫu khi giải tử bằng0; x=2 hợp lệ.
+Chẳng hạn, \(f=\frac{x-2}{x+1}\): Ox \((2;0)\), Oy(0,−2), TCD \(x=-1\) và TCN \(y=1\). Ta chọn kiểm mẫu khi giải tử bằng0; \(x=2\) hợp lệ.
 
 **Ví dụ**
 
 **Đề bài:** Với \(f=\frac{x-3}{x+2}\), tìm giao trục và tiệm cận.
 
-**Lời giải:** \(D=\mathbb R\setminus\{-2\}\), giao Ox \((3;0)\), giao Oy \((0;-\frac32)\); TCD x=−2 vì tử không triệt tiêu, TCN y=1. Hai giao trục không quyết định hết hai nhánh.
+**Lời giải:** \(D=\mathbb R\setminus\{-2\}\), giao Ox \((3;0)\), giao Oy \((0;-\frac32)\); TCD \(x=-2\) vì tử không triệt tiêu, TCN \(y=1\). Hai giao trục không quyết định hết hai nhánh.
 
 **Vận dụng** \(f=\frac{x-1}{x-1}\), \(x\ne1\) có giao Ox không?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Không; f=1 trên D nên không có nghiệm f=0, x=1 bị loại.
+Không; f=1 trên D nên không có nghiệm f=0, \(x=1\) bị loại.
 
 Nếu rút gọn rồi tự điền điểm bị loại, đã đổi đồ thị.
 
@@ -724,7 +724,7 @@ Nếu em giải tử bằng 0 nhưng quên mẫu cũng bằng 0 tại nghiệm �
 
 > **TÍNH CHẤT — Tâm đối xứng.** Một số phân thức có tâm đối xứng tại giao tiệm cận. Hình hai nhánh cong đối nhau có tâm nào và phải chứng minh ra sao? Ta sử dụng tịnh tiến tọa độ \(X=x-a,\ Y=y-b\), đối xứng tâm. Đồ thị \(y=b+\frac{k}{x-a}\), với a,b∈ℝ và \(k\ne0\), có TCD x=a, TCN y=b, tâm đối xứng tại giao \((a;b)\), vì \(f(a+h)+f(a-h)=2b\) khi \(h\ne0\). Không kết luận mọi phân thức đều đối xứng tâm chỉ từ nét nhìn; kiểm phép tịnh tiến hoặc tính chất đối xứng.
 
-Xét ví dụ: \(f=\frac{2x+1}{x-1}=2+\frac3{x-1}\) nên tâm I(1,2); TCD x=1, TCN y=2. Chọn phép tách vì chứng minh được đối xứng chứ không chỉ đo bằng mắt.
+Xét ví dụ: \(f=\frac{2x+1}{x-1}=2+\frac3{x-1}\) nên tâm \(I(1;2)\); TCD \(x=1\), TCN \(y=2\). Chọn phép tách vì chứng minh được đối xứng chứ không chỉ đo bằng mắt.
 
 Với dạng bậc hai trên bậc nhất \(y=mx+n+\frac{k}{px+q}\) (\(m,k,p\ne0\)), **tâm** vẫn là giao hai tiệm cận. Hai **trục đối xứng** là các đường phân giác góc tạo bởi tiệm cận đứng và tiệm cận xiên. Vì cặp đường ấy không nhất thiết vuông góc, không được máy móc dùng \(y-b=\pm(x-a)\) — công thức này chỉ áp dụng cho dạng có tiệm cận ngang và đứng vuông góc. Trong ví dụ mục 4.3, tâm \(I(1;0)\) nằm tại giao \(x=1\) và \(y=x-1\). Đặt \(X=x-1,\ Y=y\); phương trình trở thành \(X(Y-X)=1\). Phép đối xứng qua gốc đổi \((X;Y)\) thành \((-X;-Y)\) nên không đổi tích này, chứng minh tính đối xứng tâm. Để tìm hai trục, dùng điều kiện khoảng cách đến hai tiệm cận bằng nhau: \(|X|=\frac{|Y-X|}{\sqrt2}\). Suy ra \(Y=(1+\sqrt2)X\) hoặc \(Y=(1-\sqrt2)X\). Trong tọa độ gốc, hai trục là \(y=(1+\sqrt2)(x-1)\) và \(y=(1-\sqrt2)(x-1)\). Hai đường này mới là các phân giác của cặp tiệm cận xiên–đứng.
 
@@ -738,14 +738,14 @@ Chẳng hạn, \(f(x)=\dfrac{x+1}{x-2}=1+\dfrac{3}{x-2}\) có tâm \(I(2;1)\) v�
 
 **Đề bài:** Tìm tâm đối xứng của \(y=4-\frac2{x-3}\).
 
-**Lời giải:** TCD x=3, TCN y=4, ứng viên tâm I(3,4). Với \(h\ne0\), \(f(3+h)=4-\frac2h\) và \(f(3-h)=4+\frac2h\), tổng bằng8=2·4, xác nhận đối xứng tâm.
+**Lời giải:** TCD \(x=3\), TCN \(y=4\), ứng viên tâm \(I(3;4)\). Với \(h\ne0\), \(f(3+h)=4-\frac2h\) và \(f(3-h)=4+\frac2h\), tổng bằng8=2·4, xác nhận đối xứng tâm.
 
 **Vận dụng** \(f=\frac{x+1}{x-2}\) có tâm đối xứng nào?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-\(f=1+\frac3{x-2}\) nên I(2,1).
+\(f=1+\frac3{x-2}\) nên \(I(2;1)\).
 
 Nếu lấy tâm tại giao trục, nhầm với giao tiệm cận.
 
@@ -760,13 +760,13 @@ Nếu em đặt tâm đối xứng tại giao trục thay vì giao hai tiệm c�
 
 <!-- LESSON_ID: TOP10-M24; OUTCOME_ID: TOP10-O24 -->
 
-> **PHƯƠNG PHÁP — Bảng biến thiên.** Bảng biến thiên cho ta đọc cực trị và chiều biến thiên. Một bảng mũi tên lên/xuống có thể cho biết GTLN, cực trị và khoảng tăng không? Ta bắt đầu từ ý nghĩa mũi tên, điểm tách miền, giới hạn ở biên. Bảng biến thiên chứa điểm phân chia, dấu f', giá trị tại điểm và giới hạn. Mũi tên giảm→tăng tại c∈D gợi cực tiểu, nhưng muốn GTNN toàn miền phải so mọi nhánh và biên. Vạch đôi ở một mốc biểu diễn điểm bị loại khỏi miền, không phải nơi đạt cực trị. Nếu đề không cho biết giới hạn ở vô cực hoặc tại biên, chỉ ghi các mũi tên biến thiên và giá trị đã biết; không tự điền giới hạn chưa chứng minh.
+> **PHƯƠNG PHÁP — Bảng biến thiên.** Bảng biến thiên cho ta đọc cực trị và chiều biến thiên. Một bảng mũi tên lên/xuống có thể cho biết GTLN, cực trị và khoảng tăng không? Ta bắt đầu từ ý nghĩa mũi tên, điểm tách miền, giới hạn ở biên. Bảng biến thiên chứa điểm phân chia, dấu f', giá trị tại điểm và giới hạn. Mũi tên giảm→tăng tại \(c\in D\) gợi cực tiểu, nhưng muốn GTNN toàn miền phải so mọi nhánh và biên. Vạch đôi ở một mốc biểu diễn điểm bị loại khỏi miền, không phải nơi đạt cực trị. Nếu đề không cho biết giới hạn ở vô cực hoặc tại biên, chỉ ghi các mũi tên biến thiên và giá trị đã biết; không tự điền giới hạn chưa chứng minh.
 
 Chẳng hạn, nếu f' âm trên \((-\infty;1)\), dương trên \((1;\infty)\) và f(1)=−3, f liên tục trong ℝ, thì f có cực tiểu ở \((1;-3)\). Nếu f' không có trên nhánh bị loại, không gắn nhãn cực tiểu ở đó.
 
 **Ví dụ**
 
-**Đề bài:** Giả sử f liên tục trên ℝ, \(f'<0\) khi x<0, \(f'>0\) khi x>0, f(0)=−2. Đọc bảng biến thiên.
+**Đề bài:** Giả sử f liên tục trên ℝ, \(f'<0\) khi x<0, \(f'>0\) khi \(x>0\), f(0)=−2. Đọc bảng biến thiên.
 
 **Lời giải:** Đặt mốc 0 giữa hai khoảng. Bảng biến thiên biểu diễn các dữ kiện đã biết:
 
@@ -927,13 +927,13 @@ Nếu em cho rằng đạo hàm đúng bằng chênh lệch khi tăng nguyên m�
 
 > **PHƯƠNG PHÁP — Miền khả thi của hộp.** Một mô hình tối ưu phải xác định miền khả thi. Vì sao nghiệm phương trình đạo hàm có thể là kích thước âm vô nghĩa? Ta bắt đầu từ độ dài, thời gian, lượng sản phẩm, ràng buộc tổng. Bài toán thực tế cần miền khả thi từ dữ kiện: kích thước dương, thể tích không âm, thời gian trong giai đoạn khảo sát, lượng người/sản phẩm có thể là số nguyên. Miền phải ghi trước khi tối ưu và dùng để loại ứng viên ngoài miền. Lời giải chỉ có nghĩa trong mô hình và giả thiết cho trước.
 
-Chẳng hạn, Hình chữ nhật có tổng hai cạnh bằng10 m, x>0 và 10−x>0 ⇒ \(0<x<10\). Diện tích \(A=x(10-x)\), điểm x=5 hợp lệ; x=−5 dù có thể nằm trong phép tính đại số bị loại.
+Chẳng hạn, Hình chữ nhật có tổng hai cạnh bằng10 m, \(x>0\) và 10−x>0 ⇒ \(0<x<10\). Diện tích \(A=x(10-x)\), điểm \(x=5\) hợp lệ; \(x=-5\) dù có thể nằm trong phép tính đại số bị loại.
 
 **Ví dụ**
 
 **Đề bài:** Cắt bốn góc tấm giấy 20×20 cm cạnh x làm hộp không nắp: lập V và miền.
 
-**Lời giải:** Chiều cao x, cạnh đáy20−2x (cm), nên \(V=x(20-2x)^2\) cm³. Kích thước dương đòi hỏi \(0<x<10\); x=0 hay 10 không tạo hộp hợp lệ.
+**Lời giải:** Chiều cao x, cạnh đáy20−2x (cm), nên \(V=x(20-2x)^2\) cm³. Kích thước dương đòi hỏi \(0<x<10\); \(x=0\) hay 10 không tạo hộp hợp lệ.
 
 **Vận dụng** Với hộp không nắp gấp từ tấm bìa vuông cạnh 8 cm, mô hình \(V=x(8-2x)^2\), chiều cao và cạnh đáy phải dương. \(x\) nằm trong khoảng nào?
 
@@ -942,7 +942,7 @@ Chẳng hạn, Hình chữ nhật có tổng hai cạnh bằng10 m, x>0 và 10�
 
 \(0<x<4\) để cạnh \(8-2x>0\).
 
-Nếu xét x=5, đáy có cạnh âm, không có hộp.
+Nếu xét \(x=5\), đáy có cạnh âm, không có hộp.
 
 
 **Kiểm lỗi**
@@ -957,7 +957,7 @@ Nếu em đạo hàm mô hình hộp trước khi đặt điều kiện chiều 
 
 Đạo hàm giúp tìm ứng viên bên trong miền. Có thể biết hàm đạt cực đại nhờ đạo hàm mà không kiểm giá trị biên? Cần nhớ bảng dấu f', điểm khả thi, mục tiêu. Khi tối ưu f trên miền \([a;b]\) hoặc \((a;b)\), lấy f' trong nội miền để tìm ứng viên; so giá trị ở ứng viên hợp lệ và hai đầu nếu thuộc miền, thêm điểm không khả vi. Với miền mở, kiểm giới hạn biên và việc cận đạt. Không tuyên bố \(f'=0\) luôn cho GTLN.
 
-Chẳng hạn, \(A(x)=x(12-x)\) trên \(0<x<12\), \(A'=12-2x\); đổi dương→âm tại x=6, max A=36 đạt tại6. Đầu miền cho A→0 không đạt nhưng không ảnh hưởng max.
+Chẳng hạn, \(A(x)=x(12-x)\) trên \(0<x<12\), \(A'=12-2x\); đổi dương→âm tại \(x=6\), max A=36 đạt tại6. Đầu miền cho A→0 không đạt nhưng không ảnh hưởng max.
 
 > **PHƯƠNG PHÁP — Tối ưu trên đoạn.** Tình huống đúng như hình: từ tấm bìa vuông cạnh **12 cm**, cắt bốn hình vuông cạnh \(x\) rồi gấp thành hộp không nắp. Muốn còn đáy có hai chiều dương, phải có \(0<x<6\). Thể tích là \(V(x)=x(12-2x)^2\) (cm³); đạo hàm \(V'(x)=12(x-2)(x-6)\). Trên \((0;2)\) đạo hàm dương, trên \((2;6)\) âm nên thể tích **lớn nhất 128 cm³** tại \(x=2\) cm, trong khi hai biên tạo hộp suy biến không được lấy. Đây là bài **thể tích**, khác với ví dụ diện tích \(A=x(12-x)\) vừa nêu.
 
@@ -969,7 +969,7 @@ Chẳng hạn, \(A(x)=x(12-x)\) trên \(0<x<12\), \(A'=12-2x\); đổi dương�
 
 **Đề bài:** Tối ưu \(f=(x-1)(5-x)\) trên \([1;5]\).
 
-**Lời giải:** \(f'=6-2x=0\) tại x=3 trong miền; f(1)=0, f(3)=4, f(5)=0. GTLN4 ở3, GTNN0 ở hai đầu; so biên thay vì chỉ giải \(f'=0\).
+**Lời giải:** \(f'=6-2x=0\) tại \(x=3\) trong miền; \(f(1)=0\), f(3)=4, f(5)=0. GTLN4 ở3, GTNN0 ở hai đầu; so biên thay vì chỉ giải \(f'=0\).
 
 Một bài toán **tìm giá trị nhỏ nhất trên miền mở** khác: làm hộp kín hình trụ có thể tích cố định \(V>0\). Gọi \(r>0\) là bán kính đáy, \(h>0\) là chiều cao. Từ \(V=\pi r^2h\) suy ra \(h=\frac V{\pi r^2}\); diện tích toàn phần cần giảm là \(S(r)=2\pi r^2+\frac{2V}{r}\). Đạo hàm
 
@@ -984,9 +984,9 @@ Nghiệm dương duy nhất là \(r=\sqrt[3]{\frac V{2\pi}}\). Trước nghiệm
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-x=4,A=16.
+\(x=4\),A=16.
 
-Nếu x>0 nhưng nghiệm ngoài miền, phải loại.
+Nếu \(x>0\) nhưng nghiệm ngoài miền, phải loại.
 
 
 **Kiểm lỗi**
@@ -1001,13 +1001,13 @@ Nếu em chỉ giữ nghiệm \(f'=0\) mà không so biên hoặc khả đạt, 
 
 > **PHƯƠNG PHÁP — Điểm không khả vi.** Cả đầu mút và điểm không khả vi cũng cần kiểm. Hai biên có thể làm thay đổi kết luận tối ưu như thế nào? Để xác định điều đó, cần xét đoạn đóng/mở và điểm dừng. Điểm biên thuộc miền có thể là nơi đạt max/min, kể cả đạo hàm trong lòng chưa bằng0. Nếu điểm biên bị loại, chỉ có thể là giới hạn/cận không đạt. Với biến nguyên, không dùng nghiệm thực phân số làm số sản phẩm. Chỉ thu hẹp còn hai số nguyên kề điểm tối ưu thực khi đã chứng minh hàm đơn điệu đúng chiều ở hai phía và hai số đó khả thi; xem mục 5.7. Nếu không, phải xét tất cả ứng viên nguyên có thể tối ưu.
 
-Chẳng hạn, \(P(x)=-(x-5)^2+20\) trên \(x\in[0;4]\): P tăng đến x=4 nên GTLN16 tại biên4; không lấy P(5)=20 ngoài miền. Chọn kiểm điểm biên vì f'(x)>0 trên toàn khoảng.
+Chẳng hạn, \(P(x)=-(x-5)^2+20\) trên \(x\in[0;4]\): P tăng đến \(x=4\) nên GTLN16 tại biên4; không lấy P(5)=20 ngoài miền. Chọn kiểm điểm biên vì f'(x)>0 trên toàn khoảng.
 
 **Ví dụ**
 
 **Đề bài:** Tìm GTLN/GTNN của \(f=|x|\) trên \([-2;1]\).
 
-**Lời giải:** f liên tục nhưng không khả vi tại0, nên so cả điểm gãy và hai đầu: f(−2)=2, f(0)=0, f(1)=1. GTNN0 tại0, GTLN2 tại−2.
+**Lời giải:** f liên tục nhưng không khả vi tại0, nên so cả điểm gãy và hai đầu: f(−2)=2, \(f(0)=0\), f(1)=1. GTNN bằng 0 tại \(x=0\), GTLN2 tại−2.
 
 **Vận dụng** Tìm GTLN và GTNN của \(g(x)=3-|x-1|\) trên \([-1;4]\). Chỉ rõ điểm cần kiểm dù đạo hàm không tồn tại ở đó.
 
@@ -1093,7 +1093,7 @@ Nếu em nhầm cực đại địa phương của đa thức với GTLN trên \
 
 > **PHƯƠNG PHÁP — Tiệm cận và bảng dấu.** Tiệm cận luôn cần đối chiếu lại miền và biểu thức. Một biểu thức có thể vừa có TCD vừa có TCN hoặc TC xiên không? Ta bắt đầu từ chia đa thức, giới hạn một phía và miền. Đồ thị phân thức có thể có TCD tại x=a nơi giá trị vô cực, và TCN/TC xiên tại \(x\to+\infty\) tùy bậc đa thức. Điểm khử được là lỗ, không TCD. Muốn vẽ chính xác cả hai nhánh phải tính f' và dấu cùng tiệm cận, không kết luận chỉ bằng nhìn phân thức.
 
-Chẳng hạn, \(f=\frac{x^2+1}{x-1}=x+1+\frac2{x-1}\) ⇒ TCD x=1, TC xiên y=x+1. \(f'=\frac{2x(x-1)-(x^2+1)}{(x-1)^2}=\frac{x^2-2x-1}{(x-1)^2}\), có hai nghiệm \(1\pm\sqrt2\); một ở mỗi nhánh.
+Chẳng hạn, \(f=\frac{x^2+1}{x-1}=x+1+\frac2{x-1}\) ⇒ TCD \(x=1\), TC xiên y=x+1. \(f'=\frac{2x(x-1)-(x^2+1)}{(x-1)^2}=\frac{x^2-2x-1}{(x-1)^2}\), có hai nghiệm \(1\pm\sqrt2\); một ở mỗi nhánh.
 
 **Ví dụ**
 
@@ -1115,9 +1115,9 @@ Tại \(a\), giá trị cực đại địa phương là \(2-2\sqrt3\); tại \(
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-x=1,y=1, do tử tại1 bằng3 khác0.
+\(x=1\),\(y=1\), do tử tại1 bằng3 khác0.
 
-Nếu nói y=x, kiểm bậc tử/mẫu trước.
+Nếu nói \(y=x\), kiểm bậc tử/mẫu trước.
 
 
 **Kiểm lỗi**
@@ -1166,11 +1166,11 @@ Chẳng hạn, với \(f=\frac1x\) trên \(D=\mathbb R\setminus\{0\}\), \(f'<0\)
 
 **Ví dụ**
 
-**Đề bài:** Một lời giải khẳng định \(f=\frac{x^2-16}{x-4}\) có TCD x=4 vì mẫu bằng 0. Em hãy kiểm chứng và sửa.
+**Đề bài:** Một lời giải khẳng định \(f=\frac{x^2-16}{x-4}\) có TCD \(x=4\) vì mẫu bằng 0. Em hãy kiểm chứng và sửa.
 
-**Lời giải:** Miền \(D=\mathbb R\setminus\{4\}\); với \(x\ne4\), \(f=\frac{(x-4)(x+4)}{x-4}=x+4\). Vì \(\lim_{x\to4}f(x)=8\) hữu hạn, không có TCD x=4 mà chỉ có lỗ \((4;8)\). Không gán f(4)=8 vì điểm đó bị loại khỏi miền gốc.
+**Lời giải:** Miền \(D=\mathbb R\setminus\{4\}\); với \(x\ne4\), \(f=\frac{(x-4)(x+4)}{x-4}=x+4\). Vì \(\lim_{x\to4}f(x)=8\) hữu hạn, không có TCD \(x=4\) mà chỉ có lỗ \((4;8)\). Không gán f(4)=8 vì điểm đó bị loại khỏi miền gốc.
 
-**Vận dụng** \(f=\frac{x^2-1}{x-1}\), \(x\ne1\), có TCD tại x=1 không?
+**Vận dụng** \(f=\frac{x^2-1}{x-1}\), \(x\ne1\), có TCD tại \(x=1\) không?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -1233,7 +1233,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án/lí do chỉ mở sau khi làm:** \(f'>0\) khi x<−1 hoặc x>2, \(f'<0\) khi −1<x<2 ⇒ tăng, giảm, tăng theo ba khoảng.
+**Đáp án/lí do chỉ mở sau khi làm:** \(f'>0\) khi \(x<-1\) hoặc x>2, \(f'<0\) khi −1<x<2 ⇒ tăng, giảm, tăng theo ba khoảng.
 
 **Nếu làm sai:** Viết \(f'\) rồi lập bảng dấu tại mọi nghiệm, kiểm tính khả vi trước kết luận.
 
@@ -1259,15 +1259,15 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án:** \(f'=2x-4\): giảm \((-\infty;2)\), tăng \((2;\infty)\).
 
-**Lời giải có suy luận và điều kiện:** Đa thức xác định trên ℝ. \(f'(x)=2x-4=2(x-2)\), âm với x<2, bằng 0 ở 2 và dương với x>2. Vì thế f giảm trên \((-\infty;2)\), tăng trên \((2;\infty)\), đạt cực tiểu tại x=2.
+**Lời giải có suy luận và điều kiện:** Đa thức xác định trên ℝ. \(f'(x)=2x-4=2(x-2)\), âm với x<2, bằng 0 ở 2 và dương với x>2. Vì thế f giảm trên \((-\infty;2)\), tăng trên \((2;\infty)\), đạt cực tiểu tại \(x=2\).
 
-**Nếu làm sai:** Nếu giải \(f'=0\) nhưng bỏ bảng dấu, hãy thử x=1 và x=3 để nhận ra sự đổi chiều.
+**Nếu làm sai:** Nếu giải \(f'=0\) nhưng bỏ bảng dấu, hãy thử \(x=1\) và \(x=3\) để nhận ra sự đổi chiều.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B01-W02; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O03; SINGLE_ITEM_ID -->
 
-**Bài 6.** Xét \(f(x)=\frac1{x-2}\). Chứng minh f nghịch biến trên mỗi thành phần khoảng của miền xác định; nêu một cặp x1<x2 ở hai phía x=2 cho thấy không thể gộp các khoảng vào một phát biểu \"nghịch biến trên D\".
+**Bài 6.** Xét \(f(x)=\frac1{x-2}\). Chứng minh f nghịch biến trên mỗi thành phần khoảng của miền xác định; nêu một cặp x1<x2 ở hai phía \(x=2\) cho thấy không thể gộp các khoảng vào một phát biểu \"nghịch biến trên D\".
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1284,7 +1284,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án/lí do chỉ mở sau khi làm:** \(D=\mathbb R\setminus\{2\}\), \(f'=-\frac1{(x-2)^2}<0\). Giảm trên \((-\infty;2)\) và \((2;+\infty)\), không nối qua x=2 không thuộc D.
+**Đáp án/lí do chỉ mở sau khi làm:** \(D=\mathbb R\setminus\{2\}\), \(f'=-\frac1{(x-2)^2}<0\). Giảm trên \((-\infty;2)\) và \((2;+\infty)\), không nối qua \(x=2\) không thuộc D.
 
 **Nếu làm sai:** Khoanh tròn điểm cấm và xét riêng từng khoảng của miền xác định.
 
@@ -1296,9 +1296,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** \((-\infty;-1)\), \((-1;+\infty)\), không gộp qua x=−1.
+**Đáp án:** \((-\infty;-1)\), \((-1;+\infty)\), không gộp qua \(x=-1\).
 
-**Lời giải có suy luận và điều kiện:** Miền xác định \(D=\mathbb R\setminus\{-1\}\). \(f'(x)=-\frac1{(x+1)^2}<0\) cho mọi x≠−1, nên f nghịch biến riêng trên \((-\infty;-1)\) và \((-1;+\infty)\). Không thể ghép qua x=−1 vì tại đó không có giá trị hàm.
+**Lời giải có suy luận và điều kiện:** Miền xác định \(D=\mathbb R\setminus\{-1\}\). \(f'(x)=-\frac1{(x+1)^2}<0\) cho mọi x≠−1, nên f nghịch biến riêng trên \((-\infty;-1)\) và \((-1;+\infty)\). Không thể ghép qua \(x=-1\) vì tại đó không có giá trị hàm.
 
 **Nếu làm sai:** Nếu gọi f giảm trên toàn D, thử \(x_1=-2\) và \(x_2=0\): f(−2)=−1<f(0)=1, trái điều kiện giảm cho hai điểm ở hai nhánh.
 
@@ -1330,7 +1330,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B01-C03; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O04; SINGLE_ITEM_ID -->
 
-**Bài 11.** \(f'\) đổi dấu + sang − tại x=−1 và − sang + tại x=1. Xác định loại cực trị tại mỗi điểm nếu f liên tục và khả vi quanh chúng.
+**Bài 11.** \(f'\) đổi dấu + sang − tại \(x=-1\) và − sang + tại \(x=1\). Xác định loại cực trị tại mỗi điểm nếu f liên tục và khả vi quanh chúng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1362,7 +1362,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án:** \(f'=3(x^2-1)\); cực đại tại −1 (2), cực tiểu tại 1 (−2); trên đoạn max2 tại −1 và2, min−2 tại −2 và1; trên ℝ không có max/min toàn cục.
 
-**Lời giải đầy đủ:** \(f'=3x^2-3\): dấu + trên x<−1, − trên \(-1<x<1\),+ trên x>1. f(−1)=2 là cực đại địa phương; f(1)=−2 là cực tiểu. Đầu đoạn f(−2)=−8+6=−2, f(2)=8−6=2, vậy GTLN2 tại x=−1 hoặc2 và GTNN−2 tại x=−2 hoặc1. Trên ℝ, f→±∞ theo x nên không có GTLN/GTNN.
+**Lời giải đầy đủ:** \(f'=3x^2-3\): dấu + trên \(x<-1\), − trên \(-1<x<1\),+ trên \(x>1\). \(f(-1)=2\) là cực đại địa phương; \(f(1)=-2\) là cực tiểu. Đầu đoạn \(f(-2)=-8+6=-2\), \(f(2)=8-6=2\), vậy GTLN2 tại \(x=-1\ \text{hoặc}\ x=2\) và GTNN−2 tại \(x=-2\ \text{hoặc}\ x=1\). Trên ℝ, \(f\to\pm\infty\) theo x nên không có GTLN/GTNN.
 
 **Rubric /7 điểm:**
 1. Tính f' đúng (1đ)
@@ -1391,11 +1391,11 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B01-C04; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O05; SINGLE_ITEM_ID -->
 
-**Bài 15.** \(f(x)=x^3\) có \(f'(0)=0\). x=0 có là điểm cực trị không, vì sao?
+**Bài 15.** \(f(x)=x^3\) có \(f'(0)=0\). \(x=0\) có là điểm cực trị không, vì sao?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án/lí do chỉ mở sau khi làm:** Không; \(f'=3x^2>0\) ở hai phía (trừ x=0), nên hàm vẫn tăng qua x=0.
+**Đáp án/lí do chỉ mở sau khi làm:** Không; \(f'=3x^2>0\) ở hai phía (trừ x=0), nên hàm vẫn tăng qua \(x=0\).
 
 **Nếu làm sai:** Cho một phản ví dụ f′(c)=0 nhưng \(f'\) cùng dấu hai phía để tránh học mẹo.
 
@@ -1409,7 +1409,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án:** Không, \(f'=5x^4\ge0\) và f tăng qua0.
 
-**Lời giải có suy luận và điều kiện:** \(f'(x)=5x^4\ge0\) trên ℝ và f'(0)=0. Với \(x_1<x_2\) luôn \(x_1^5<x_2^5\), hàm tăng nghiêm ngặt trên ℝ; qua x=0 không đổi từ tăng sang giảm hoặc ngược lại. Do đó 0 là điểm dừng nhưng không phải cực trị.
+**Lời giải có suy luận và điều kiện:** \(f'(x)=5x^4\ge0\) trên ℝ và f'(0)=0. Với \(x_1<x_2\) luôn \(x_1^5<x_2^5\), hàm tăng nghiêm ngặt trên ℝ; qua \(x=0\) không đổi từ tăng sang giảm hoặc ngược lại. Do đó 0 là điểm dừng nhưng không phải cực trị.
 
 **Nếu làm sai:** Trường hợp \(f'(c)=0\) mới là ứng viên. Hãy đối chiếu dấu f' hai phía c hoặc định nghĩa cực trị trong lân cận.
 
@@ -1473,9 +1473,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** So f(−2)=−2,f(−1)=2,f(1)=−2,f(2)=2; GTLN2, GTNN−2, đạt tại nhiều điểm.
+**Đáp án:** So f(−2)=−2,\(f(-1)=2\),\(f(1)=-2\),\(f(2)=2\); GTLN2, GTNN−2, đạt tại nhiều điểm.
 
-**Lời giải có suy luận và điều kiện:** Đạo hàm \(f'=3(x^2-1)=0\) tại ±1. Vì f liên tục trên \([-2;2]\), liệt kê hai đầu và hai điểm tới hạn: f(−2)=−2, f(−1)=2, f(1)=−2, f(2)=2. Do đó GTLN bằng 2 tại −1 và 2; GTNN bằng −2 tại −2 và 1.
+**Lời giải có suy luận và điều kiện:** Đạo hàm \(f'=3(x^2-1)=0\) tại ±1. Vì f liên tục trên \([-2;2]\), liệt kê hai đầu và hai điểm tới hạn: f(−2)=−2, \(f(-1)=2\), \(f(1)=-2\), \(f(2)=2\). Do đó GTLN bằng 2 tại −1 và 2; GTNN bằng −2 tại −2 và 1.
 
 **Nếu làm sai:** Cực đại địa phương chưa chắc là max toàn cục. Trên đoạn đóng phải so cả hai đầu mút.
 
@@ -1513,7 +1513,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án:** GTLN5 tại−2, GTNN1 tại0.
 
-**Lời giải có suy luận và điều kiện:** \(f=x^2+1\) liên tục trên \([-2;1]\), f'=2x=0 tại x=0. Tính f(−2)=5, f(0)=1, f(1)=2; so ba giá trị cho GTLN=5 tại −2 và GTNN=1 tại 0.
+**Lời giải có suy luận và điều kiện:** \(f=x^2+1\) liên tục trên \([-2;1]\), f'=2x=0 tại \(x=0\). Tính f(−2)=5, f(0)=1, f(1)=2; so ba giá trị cho GTLN=5 tại −2 và GTNN=1 tại 0.
 
 **Nếu làm sai:** Nếu chỉ xét \(f'=0\), hãy bổ sung ngay hai đầu đoạn \([-2;1]\) vào danh sách ứng viên.
 
@@ -1525,7 +1525,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải tự mở:** f'=3(x+1)(x−1). Ứng viên −2,−1,1,2; f lần lượt −2,2,−2,2. GTLN=2 đạt tại x=−1 và2, GTNN=−2 đạt tại x=−2 và1. Cực đại nội x=−1, cực tiểu nội x=1, không vì thế bỏ qua hai biên.
+**Lời giải tự mở:** f'=3(x+1)(x−1). Ứng viên −2,−1,1,2; f lần lượt −2,2,−2,2. GTLN=2 đạt tại \(x=-1\) và2, GTNN=−2 đạt tại \(x=-2\) và1. Cực đại nội \(x=-1\), cực tiểu nội \(x=1\), không vì thế bỏ qua hai biên.
 
 **Rubric /4:** 1 D+f'; 1 các điểm tới hạn và biên; 1 bốn giá trị; 1 max/min đúng cả điểm đạt và phân biệt cực trị nội.
 
@@ -1565,7 +1565,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án:** x=−1,1,3; f lần lượt3,−1,3 nên max3,min−1.
 
-**Lời giải có suy luận và điều kiện:** \(f=x^2-2x\) liên tục trên \([-1;3]\); f'=2x−2=0 khi x=1 nằm trong đoạn. Cần so f(−1)=3, f(1)=−1 và f(3)=3. GTLN=3 ở x=−1,3; GTNN=−1 ở x=1.
+**Lời giải có suy luận và điều kiện:** \(f=x^2-2x\) liên tục trên \([-1;3]\); f'=2x−2=0 khi \(x=1\) nằm trong đoạn. Cần so f(−1)=3, f(1)=−1 và f(3)=3. GTLN=3 ở x=−1,3; GTNN=−1 ở \(x=1\).
 
 **Nếu làm sai:** Đạo hàm tại đầu đoạn không cần bằng 0 để đầu đoạn đạt max/min.
 
@@ -1573,19 +1573,19 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP10-W02; SOURCE_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da; OUTCOME: TOP10-O09; SINGLE_ITEM_ID -->
 
-**Bài 29.** Cho f(x)=|x−1| trên \([0;3]\). (a) Chỉ ra f không khả vi tại x=1 nhưng vẫn là ứng viên. (b) Tìm GTLN/GTNN trên đoạn. (c) Xét lại trên miền mở \((0;3)\) và cho biết có GTLN không, có GTNN không.
+**Bài 29.** Cho \(f(x)=|x-1|\) trên \([0;3]\). (a) Chỉ ra f không khả vi tại \(x=1\) nhưng vẫn là ứng viên. (b) Tìm GTLN/GTNN trên đoạn. (c) Xét lại trên miền mở \((0;3)\) và cho biết có GTLN không, có GTNN không.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 **Đáp án:** \([0;3]\): max2 tại3, min0 tại1; \((0;3)\): không có GTLN (sup2 không đạt), min0 tại1.
 
-**Lời giải đầy đủ:** f(x)=|x−1| có góc nhọn x=1 trong miền, tại đó đạo hàm trái −1, phải +1. Trên \([0;3]\), so f(0)=1,f(1)=0,f(3)=2 nên max2 tại3,min0 tại1. Trên \((0;3)\), x=3 bị loại và f(x)<2 với mọi x trong miền nhưng có thể tiến sát2 khi x→3⁻, nên không có GTLN; x=1 thuộc miền và f(1)=0, có GTNN0.
+**Lời giải đầy đủ:** \(f(x)=|x-1|\) có góc nhọn \(x=1\) trong miền, tại đó đạo hàm trái −1, phải +1. Trên \([0;3]\), so \(f(0)=1,\ f(1)=0,\ f(3)=2\) nên max2 tại3,min0 tại1. Trên \((0;3)\), \(x=3\) bị loại và \(f(x)<2\) với mọi x trong miền nhưng có thể tiến sát2 khi \(x\to3^-\), nên không có GTLN; \(x=1\) thuộc miền và \(f(1)=0\), có GTNN0.
 
 **Rubric /7 điểm:**
 1. Xác định điểm không khả vi1 (1đ)
 2. So giới hạn thương trái/phải đúng (1đ)
 3. Tính f(0)=1 (1đ)
-4. Tính f(1)=0,f(3)=2 (1đ)
+4. Tính \(f(1)=0\),f(3)=2 (1đ)
 5. GTLN/GTNN trên \([0;3]\) đúng (1đ)
 6. Miền \((0;3)\) không đạt sup2 (1đ)
 7. Min0 vẫn đạt ở1 (1đ)
@@ -1600,7 +1600,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** min=0 tại x=0; không có max, vì \(x^2<1\) với mọi |x|<1 dù sup=1.
+**Đối chiếu:** min=0 tại \(x=0\); không có max, vì \(x^2<1\) với mọi |x|<1 dù sup=1.
 
 **Nếu làm sai:** Phân biệt cận trên với GTLN: phải tìm được điểm thuộc miền làm hàm bằng cận.
 
@@ -1626,7 +1626,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án:** Không có GTLN (sup1), không có GTNN (inf0), vì cả hai đầu bị loại.
 
-**Lời giải có suy luận và điều kiện:** Trên \((0;1)\), \(f=x^2\) tăng vì f'=2x>0. Khi \(x\to1^-\), f→1 nhưng điểm x=1 không thuộc miền, nên không có GTLN. Khi \(x\to0^+\), f→0 nhưng x=0 bị loại, nên không có GTNN. Cận trên đúng nhỏ nhất là 1, cận dưới đúng lớn nhất là 0.
+**Lời giải có suy luận và điều kiện:** Trên \((0;1)\), \(f=x^2\) tăng vì \(f'=2x>0\). Khi \(x\to1^-\), \(f\to1\) nhưng điểm \(x=1\) không thuộc miền, nên không có GTLN. Khi \(x\to0^+\), \(f\to0\) nhưng \(x=0\) bị loại, nên không có GTNN. Cận trên đúng nhỏ nhất là 1, cận dưới đúng lớn nhất là 0.
 
 **Nếu làm sai:** Để gọi một số là GTLN/GTNN, phải tìm được x thuộc miền đạt đúng số đó; đừng thay giới hạn bằng giá trị hàm.
 
@@ -1638,7 +1638,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** \(f'=\frac{1-x^2}{(x^2+1)^2}\); max \(\frac12\) tại1, min0 tại0. Mệnh đề f→0 khi x∞ không tự chứng minh GTNN nếu quên x=0.
+**Đối chiếu:** \(f'=\frac{1-x^2}{(x^2+1)^2}\); max \(\frac12\) tại1, min0 tại0. Mệnh đề \(f\to0\) khi \(x\to+\infty\) không tự chứng minh GTNN nếu quên \(x=0\).
 
 **Nếu làm sai:** Thay lại x vào ràng buộc; nghiệm tối ưu ngoài miền phải bị loại.
 
@@ -1650,9 +1650,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** f(4)=16 tại x=4, không lấy 20 ở x=6.
+**Đáp án:** f(4)=16 tại \(x=4\), không lấy 20 ở \(x=6\).
 
-**Lời giải có suy luận và điều kiện:** Với \(x\in[0;4]\), \(f=20-(x-6)^2\), f'(x)=−2(x−6)>0 vì x<6. Vậy f tăng trên toàn miền khả thi, đạt GTLN ở đầu phải x=4: f(4)=20−4=16. Đỉnh x=6 nằm ngoài miền.
+**Lời giải có suy luận và điều kiện:** Với \(x\in[0;4]\), \(f=20-(x-6)^2\), f'(x)=−2(x−6)>0 vì x<6. Vậy f tăng trên toàn miền khả thi, đạt GTLN ở đầu phải \(x=4\): f(4)=20−4=16. Đỉnh \(x=6\) nằm ngoài miền.
 
 **Nếu làm sai:** Nếu nghiệm \(f'=0\) ngoài miền, loại nó trước khi so; tối ưu luôn gắn với điều kiện khả thi.
 
@@ -1664,7 +1664,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải tự mở:** x+y=14, 0<x<14; A=x(14−x), A'=14−2x; max49 m² khi x=y=7. A>0 và tiến về0 khi x→0+, nhưng 0 không đạt nên không có min.
+**Lời giải tự mở:** x+y=14, 0<x<14; A=x(14−x), A'=14−2x; max49 m² khi x=y=7. A>0 và tiến về0 khi \(x\to0^+\), nhưng 0 không đạt nên không có min.
 
 **Rubric /4:** 1 xác lập đúng miền/biến; 1 công thức diện tích; 1 tìm tối ưu và đơn vị; 1 xử lý biên mở, giải thích min không tồn tại.
 
@@ -1678,7 +1678,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** x∈(0,12), A=x(12−x)≤36 m² (dấu bằng x=6); không có GTNN vì A→0+ khi x→0+.
+**Đối chiếu:** \(x\in(0;12)\), \(A=x(12-x)\le36\) m² (dấu bằng x=6); không có GTNN vì \(A\to0^+\) khi \(x\to0^+\).
 
 **Nếu làm sai:** Vẽ hình, chọn biến và viết tổng ba cạnh hàng rào trước khi lập A(x).
 
@@ -1706,7 +1706,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** Hai: y=1 khi \(x\to+\infty\), y=−1 khi \(x\to-\infty\), dùng \(\sqrt{x^2}=|x|\).
+**Đối chiếu:** Hai: \(y=1\) khi \(x\to+\infty\), y=−1 khi \(x\to-\infty\), dùng \(\sqrt{x^2}=|x|\).
 
 **Nếu làm sai:** Tính giới hạn f(x) ở +∞ và −∞, không suy bằng hình ảnh một mình.
 
@@ -1718,7 +1718,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** Chia \(2-\frac5{x+2}\) nên y=2.
+**Đối chiếu:** Chia \(2-\frac5{x+2}\) nên \(y=2\).
 
 **Nếu làm sai:** Tính giới hạn f(x) ở +∞ và −∞, không suy bằng hình ảnh một mình.
 
@@ -1756,7 +1756,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** Tử gần3>0, mẫu âm/dương nên lim 2−=−∞, 2+=+∞; x=2 tiệm cận đứng.
+**Đối chiếu:** Tử gần3>0, mẫu âm/dương nên lim 2−=−∞, 2+=+∞; \(x=2\) tiệm cận đứng.
 
 **Nếu làm sai:** Mẫu bằng 0 chưa đủ: tính ít nhất một giới hạn một phía vô cực.
 
@@ -1764,11 +1764,11 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B03-C02; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O14; SINGLE_ITEM_ID -->
 
-**Bài 43.** \(f=\frac1{x+3}\). Điểm x=−3 có là tiệm cận đứng? Nêu giới hạn hai phía.
+**Bài 43.** \(f=\frac1{x+3}\). Điểm \(x=-3\) có là tiệm cận đứng? Nêu giới hạn hai phía.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** lim x→−3− f=−∞, lim x→−3+ f=+∞; x=−3 là tiệm cận đứng.
+**Đối chiếu:** lim x→−3− f=−∞, lim x→−3+ f=+∞; \(x=-3\) là tiệm cận đứng.
 
 **Nếu làm sai:** Mẫu bằng 0 chưa đủ: tính ít nhất một giới hạn một phía vô cực.
 
@@ -1780,9 +1780,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Trái +∞, phải−∞; TCD x=3.
+**Đáp án:** Trái +∞, phải−∞; TCD \(x=3\).
 
-**Lời giải có suy luận và điều kiện:** Khi x→3⁻, mẫu x−3 âm và tiến 0, tử −2 âm nên \(\frac{-2}{x-3}\to+\infty\). Khi x→3⁺, mẫu dương rất nhỏ nên phân thức→−∞. Vậy x=3 là tiệm cận đứng với hai nhánh ngược dấu.
+**Lời giải có suy luận và điều kiện:** Khi \(x\to3^-\), mẫu x−3 âm và tiến 0, tử −2 âm nên \(\frac{-2}{x-3}\to+\infty\). Khi \(x\to3^+\), mẫu dương rất nhỏ nên phân thức→−∞. Vậy \(x=3\) là tiệm cận đứng với hai nhánh ngược dấu.
 
 **Nếu làm sai:** Kiểm riêng dấu tử và mẫu ở mỗi phía điểm cấm; không viết '∞' không kèm dấu.
 
@@ -1794,7 +1794,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đối chiếu:** \(D=\mathbb R\setminus\{1\}\); \(g=x+1+\frac2{x-1}\); y=x+1 xiên; x=1 đứng; vì g lớn theo x khi \(|x|\to\infty\) nên không có tiệm cận ngang.
+**Đối chiếu:** \(D=\mathbb R\setminus\{1\}\); \(g=x+1+\frac2{x-1}\); y=x+1 xiên; \(x=1\) đứng; vì g lớn theo x khi \(|x|\to\infty\) nên không có tiệm cận ngang.
 
 **Rubric /4:** 1 D; 1 chia đa thức đúng; 1 đứng và giới hạn; 1 xiên, chứng minh phần dư→0 và bác ngang.
 
@@ -1808,7 +1808,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** \(h=x+1+\frac2{x+1}\); xiên y=x+1, đứng x=−1.
+**Đối chiếu:** \(h=x+1+\frac2{x+1}\); xiên y=x+1, đứng \(x=-1\).
 
 **Nếu làm sai:** Chia đa thức rồi xét hiệu f(x)−(ax+b) ở vô cực để kiểm tiệm cận xiên.
 
@@ -1842,20 +1842,20 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP10-W03; SOURCE_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da; OUTCOME: TOP10-O15; SINGLE_ITEM_ID -->
 
-**Bài 49.** Cho \(f(x)=\frac{x^2+1}{x-1}\). (a) Nêu miền. (b) Chia đa thức thành đường xiên + phần dư. (c) Chứng minh TCD x=1 qua hai giới hạn một phía. (d) Chứng minh TC xiên và nêu vì sao x=1 không là lỗ.
+**Bài 49.** Cho \(f(x)=\frac{x^2+1}{x-1}\). (a) Nêu miền. (b) Chia đa thức thành đường xiên + phần dư. (c) Chứng minh TCD \(x=1\) qua hai giới hạn một phía. (d) Chứng minh TC xiên và nêu vì sao \(x=1\) không là lỗ.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** \(D=\mathbb R\setminus\{1\}\); \(f=x+1+\frac2{x-1}\); TCD x=1 (trái −∞, phải +∞); TC xiên y=x+1 ở ±∞.
+**Đáp án:** \(D=\mathbb R\setminus\{1\}\); \(f=x+1+\frac2{x-1}\); TCD \(x=1\) (trái −∞, phải +∞); TC xiên y=x+1 ở ±∞.
 
-**Lời giải đầy đủ:** \(D=\mathbb R\setminus\{1\}\). Chia \(x^2+1=(x-1)(x+1)+2\) nên \(f=x+1+\frac2{x-1}\). Khi \(x\to1^-\), \(\frac2{x-1}\to-\infty\), khi \(x\to1^+\) thì \(f\to+\infty\) nên x=1 là TCD. Khi \(x\to\pm\infty\), \(f-(x+1)=\frac2{x-1}\to0\) nên y=x+1 là TC xiên. Vì tử tại1 bằng2≠0, không có nhân tử chung khử, đây không phải lỗ.
+**Lời giải đầy đủ:** \(D=\mathbb R\setminus\{1\}\). Chia \(x^2+1=(x-1)(x+1)+2\) nên \(f=x+1+\frac2{x-1}\). Khi \(x\to1^-\), \(\frac2{x-1}\to-\infty\), khi \(x\to1^+\) thì \(f\to+\infty\) nên \(x=1\) là TCD. Khi \(x\to\pm\infty\), \(f-(x+1)=\frac2{x-1}\to0\) nên y=x+1 là TC xiên. Vì tử tại1 bằng2≠0, không có nhân tử chung khử, đây không phải lỗ.
 
 **Rubric /7 điểm:**
 1. Nêu D loại1 (1đ)
 2. Chia được \(f=x+1+\frac2{x-1}\) (1đ)
 3. Giới hạn trái −∞ (1đ)
 4. Giới hạn phải+∞ (1đ)
-5. Kết luận TCD x=1 (1đ)
+5. Kết luận TCD \(x=1\) (1đ)
 6. Chứng minh phần dư→0, xiên y=x+1 (1đ)
 7. Phân biệt TCD với lỗ bằng tử tại1 (1đ)
 
@@ -1877,7 +1877,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B03-C04; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O16; SINGLE_ITEM_ID -->
 
-**Bài 51.** \(f=\frac{x^2-9}{x-3}\) có tiệm cận đứng x=3 không?
+**Bài 51.** \(f=\frac{x^2-9}{x-3}\) có tiệm cận đứng \(x=3\) không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1893,9 +1893,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Khử được, lim2; không TCD x=1.
+**Đáp án:** Khử được, lim2; không TCD \(x=1\).
 
-**Lời giải có suy luận và điều kiện:** \(D=\mathbb R\setminus\{1\}\). Với \(x\ne1\), \(f=\frac{(x-1)(x+1)}{x-1}=x+1\). Vì \(\lim_{x\to1}f=2\) hữu hạn, x=1 là điểm khuyết khử được, không phải tiệm cận đứng. Không được tự bổ sung f(1)=2 vào hàm gốc.
+**Lời giải có suy luận và điều kiện:** \(D=\mathbb R\setminus\{1\}\). Với \(x\ne1\), \(f=\frac{(x-1)(x+1)}{x-1}=x+1\). Vì \(\lim_{x\to1}f=2\) hữu hạn, \(x=1\) là điểm khuyết khử được, không phải tiệm cận đứng. Không được tự bổ sung f(1)=2 vào hàm gốc.
 
 **Nếu làm sai:** Nếu thấy mẫu bằng0, hãy thử phân tích tử thành nhân tử và xét giới hạn sau rút trên miền hợp lệ.
 
@@ -1915,7 +1915,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B03-P04; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O17; SINGLE_ITEM_ID -->
 
-**Bài 54.** f(x)=1/sqrt(x−1), D=(1,+∞). x=1 có là tiệm cận đứng dù không thể xét từ bên trái?
+**Bài 54.** \(f(x)=\frac1{\sqrt{x-1}}\), \(D=(1;+\infty)\). \(x=1\) có là tiệm cận đứng dù không thể xét từ bên trái?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1931,9 +1931,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** D=(2,∞), TCD x=2 từ bên phải.
+**Đáp án:** \(D=(2;+\infty)\), TCD \(x=2\) từ bên phải.
 
-**Lời giải có suy luận và điều kiện:** Biểu thức \(\frac1{\sqrt{x-2}}\) yêu cầu x−2>0 vì căn nằm ở mẫu, nên \(D=(2;+\infty)\). Khi \(x\to2^+\), mẫu dương tiến 0 và \(f\to+\infty\), do đó x=2 là tiệm cận đứng một phía; không có giá trị thực ở x<2.
+**Lời giải có suy luận và điều kiện:** Biểu thức \(\frac1{\sqrt{x-2}}\) yêu cầu x−2>0 vì căn nằm ở mẫu, nên \(D=(2;+\infty)\). Khi \(x\to2^+\), mẫu dương tiến 0 và \(f\to+\infty\), do đó \(x=2\) là tiệm cận đứng một phía; không có giá trị thực ở x<2.
 
 **Nếu làm sai:** Căn ở tử cho điều kiện ≥0, nhưng căn ở mẫu phải >0. Không tính giới hạn từ phía ngoài miền.
 
@@ -1945,7 +1945,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đối chiếu:** \(D=\mathbb R\setminus\{2\}\); \(f=3+\frac7{x-2}\), y=3 ngang, x=2 đứng; x<2 dưới y=3 và xuống −∞ khi x→2−, x>2 trên y=3 và lên +∞ khi x→2+.
+**Đối chiếu:** \(D=\mathbb R\setminus\{2\}\); \(f=3+\frac7{x-2}\), \(y=3\) ngang, \(x=2\) đứng; x<2 dưới \(y=3\) và xuống −∞ khi x→2−, x>2 trên \(y=3\) và lên +∞ khi x→2+.
 
 **Rubric /4:** 1 D+biến đổi; 1 tiệm cận ngang; 1 đứng với dấu một bên; 1 mô tả nhánh tương ứng.
 
@@ -1955,7 +1955,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B03-P06; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O18; SINGLE_ITEM_ID -->
 
-**Bài 57.** Với \(f=3+\frac7{x-2}\), nhánh phải x>2 nằm trên hay dưới y=3? Nhánh trái?
+**Bài 57.** Với \(f=3+\frac7{x-2}\), nhánh phải x>2 nằm trên hay dưới \(y=3\)? Nhánh trái?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1971,9 +1971,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Không vì f→±∞ theo x; có tiệm cận xiên y=x.
+**Đáp án:** Không vì \(f\to\pm\infty\) theo x; có tiệm cận xiên \(y=x\).
 
-**Lời giải có suy luận và điều kiện:** Với \(x\ne0\), \(f=x+\frac1x\). Khi \(x\to+\infty\), \(f\to+\infty\); khi \(x\to-\infty\), \(f\to-\infty\), nên không có tiệm cận ngang hữu hạn. Tuy nhiên \(f-x=\frac1x\to0\) ở cả hai phía vô cực nên y=x là tiệm cận xiên.
+**Lời giải có suy luận và điều kiện:** Với \(x\ne0\), \(f=x+\frac1x\). Khi \(x\to+\infty\), \(f\to+\infty\); khi \(x\to-\infty\), \(f\to-\infty\), nên không có tiệm cận ngang hữu hạn. Tuy nhiên \(f-x=\frac1x\to0\) ở cả hai phía vô cực nên \(y=x\) là tiệm cận xiên.
 
 **Nếu làm sai:** Để tìm tiệm cận ngang, xét giới hạn chính f; để tìm xiên, xét hiệu với đường ax+b.
 
@@ -2011,11 +2011,11 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Min tại x=2 y=0; Oy tại(0,4).
+**Đáp án:** Min tại \(x=2\) \(y=0\); Oy tại(0,4).
 
-**Lời giải có suy luận và điều kiện:** \(f=(x-2)^2\ge0\) và bằng0 khi x=2, nên cực tiểu (cũng là GTNN trên ℝ) tại \((2;0)\). Giao trục Oy lấy x=0: f(0)=4 nên là \((0;4)\). Có thể kiểm f'=2(x−2) đổi dấu âm sang dương tại 2.
+**Lời giải có suy luận và điều kiện:** \(f=(x-2)^2\ge0\) và bằng0 khi \(x=2\), nên cực tiểu (cũng là GTNN trên ℝ) tại \((2;0)\). Giao trục Oy lấy \(x=0\): f(0)=4 nên là \((0;4)\). Có thể kiểm f'=2(x−2) đổi dấu âm sang dương tại 2.
 
-**Nếu làm sai:** Đọc 'giao Oy' nghĩa là x=0, không phải nghiệm f=0 (giao Ox).
+**Nếu làm sai:** Đọc 'giao Oy' nghĩa là \(x=0\), không phải nghiệm f=0 (giao Ox).
 
 </details>
 
@@ -2025,7 +2025,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải tự mở:** \(D=\mathbb R\), f'=3x(x−2), tăng/giảm/tăng ba khoảng, max cục bộ \((0;0)\), min cục bộ \((2;-4)\), lim hai đầu −∞/+∞; nghiệm x=0 bội2 và x=3 đơn; tâm \((1;-2)\).
+**Lời giải tự mở:** \(D=\mathbb R\), f'=3x(x−2), tăng/giảm/tăng ba khoảng, max cục bộ \((0;0)\), min cục bộ \((2;-4)\), lim hai đầu −∞/+∞; nghiệm \(x=0\) bội2 và \(x=3\) đơn; tâm \((1;-2)\).
 
 **Rubric /4:** 1 miền+đạo hàm+dấu; 1 cực trị+bảng; 1 giới hạn+giao trục; 1 tâm và đồ thị khớp chứng cứ.
 
@@ -2096,11 +2096,11 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B04-A01; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O21; SINGLE_ITEM_ID -->
 
-**Bài 67.** Chi phí bình quân \(f(q)=4+\frac{200}{q-10}\) cho q>10 đơn vị. Tính giới hạn \(q\to10^+\), \(q\to+\infty\) và nhận định chi phí theo q.
+**Bài 67.** Chi phí bình quân \(f(q)=4+\frac{200}{q-10}\) cho \(q>10\) đơn vị. Tính giới hạn \(q\to10^+\), \(q\to+\infty\) và nhận định chi phí theo q.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** \(f\to+\infty\) khi \(q\to10^+\), f→4 khi \(q\to+\infty\), \(f'<0\); trên \((10;\infty)\) chi phí giảm dần và tiệm cận y=4. Không mở rộng sang q≤10 nếu mô hình quy định q>10.
+**Đối chiếu:** \(f\to+\infty\) khi \(q\to10^+\), \(f\to4\) khi \(q\to+\infty\), \(f'<0\); trên \((10;\infty)\) chi phí giảm dần và tiệm cận \(y=4\). Không mở rộng sang \(q\le10\) nếu mô hình quy định \(q>10\).
 
 **Nếu làm sai:** Với phân thức, ghi nghiệm mẫu và xét \(f'\) trên từng thành phần miền.
 
@@ -2124,9 +2124,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=−1 (tử ở−1 là−5 khác0), y=3.
+**Đáp án:** \(x=-1\) (tử ở−1 là−5 khác0), \(y=3\).
 
-**Lời giải có suy luận và điều kiện:** \(D=\mathbb R\setminus\{-1\}\). Với \(f=\frac{3x-2}{x+1}\), tử tại x=−1 bằng −5 khác0 nên x=−1 là tiệm cận đứng (trái +∞, phải −∞). Chia \(f=3-\frac5{x+1}\), phần dư→0 ở ±∞ nên y=3 là tiệm cận ngang.
+**Lời giải có suy luận và điều kiện:** \(D=\mathbb R\setminus\{-1\}\). Với \(f=\frac{3x-2}{x+1}\), tử tại \(x=-1\) bằng −5 khác0 nên \(x=-1\) là tiệm cận đứng (trái +∞, phải −∞). Chia \(f=3-\frac5{x+1}\), phần dư→0 ở ±∞ nên \(y=3\) là tiệm cận ngang.
 
 **Nếu làm sai:** Nếu muốn biết hướng nhánh gần TCD, thay số sát −1 ở từng phía, không chỉ ghi vị trí mẫu bằng0.
 
@@ -2134,11 +2134,11 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B04-P05; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O22; SINGLE_ITEM_ID -->
 
-**Bài 70.** \(y=x^3-3x^2\) cắt hay tiếp xúc Ox tại x=0 và tại x=3?
+**Bài 70.** \(y=x^3-3x^2\) cắt hay tiếp xúc Ox tại \(x=0\) và tại \(x=3\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** x=0 nghiệm kép, tiếp xúc Ox tại \((0;0)\); x=3 nghiệm đơn, cắt Ox tại \((3;0)\).
+**Đối chiếu:** \(x=0\) nghiệm kép, tiếp xúc Ox tại \((0;0)\); \(x=3\) nghiệm đơn, cắt Ox tại \((3;0)\).
 
 **Nếu làm sai:** Nghiệm tử chỉ cho giao Ox khi không bị mẫu triệt tiêu; giao Oy cần 0 thuộc miền.
 
@@ -2150,7 +2150,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** Ox: x=−2 ⇒ \((-2;0)\); Oy: x=0 ⇒ \((0;-2)\).
+**Đối chiếu:** Ox: \(x=-2\) ⇒ \((-2;0)\); Oy: \(x=0\) ⇒ \((0;-2)\).
 
 **Nếu làm sai:** Nghiệm tử chỉ cho giao Ox khi không bị mẫu triệt tiêu; giao Oy cần 0 thuộc miền.
 
@@ -2162,9 +2162,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** f=x+2 trên D nên giao tại x=−2; x=2 là lỗ, không giao.
+**Đáp án:** f=x+2 trên D nên giao tại \(x=-2\); \(x=2\) là lỗ, không giao.
 
-**Lời giải có suy luận và điều kiện:** \(f=\frac{x^2-4}{x-2}\), \(D=\mathbb R\setminus\{2\}\); rút trên D thành f=x+2. Giao Ox giải x+2=0 được x=−2 thuộc D, nên điểm giao là \((-2;0)\). Điểm \((2;4)\) bị khuyết, không phải giao trục hay điểm trên đồ thị.
+**Lời giải có suy luận và điều kiện:** \(f=\frac{x^2-4}{x-2}\), \(D=\mathbb R\setminus\{2\}\); rút trên D thành f=x+2. Giao Ox giải x+2=0 được \(x=-2\) thuộc D, nên điểm giao là \((-2;0)\). Điểm \((2;4)\) bị khuyết, không phải giao trục hay điểm trên đồ thị.
 
 **Nếu làm sai:** Rút gọn biểu thức không mở rộng miền của hàm; luôn đối chiếu nghiệm với mẫu ban đầu.
 
@@ -2176,7 +2176,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** \((1;-2)\), vì hoành độ điểm uốn \(x=-\frac b{3a}=1\) và f(1)=−2; không phải \((0;0)\).
+**Đối chiếu:** \((1;-2)\), vì hoành độ điểm uốn \(x=-\frac b{3a}=1\) và \(f(1)=-2\); không phải \((0;0)\).
 
 **Nếu làm sai:** Tách \(y=b+\frac{k}{x-a}\) và kiểm cặp điểm (a±h) đối xứng qua \((a;b)\).
 
@@ -2188,7 +2188,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** \((4;2)\), giao hai tiệm cận x=4, y=2.
+**Đối chiếu:** \((4;2)\), giao hai tiệm cận \(x=4\), \(y=2\).
 
 **Nếu làm sai:** Tách \(y=b+\frac{k}{x-a}\) và kiểm cặp điểm (a±h) đối xứng qua \((a;b)\).
 
@@ -2200,9 +2200,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** I(−4,3).
+**Đáp án:** \(I(-4;3)\).
 
-**Lời giải có suy luận và điều kiện:** \(f=3-\frac2{x+4}\) có TCD x=−4 vì mẫu tiến0, TCN y=3 vì phần phân thức→0 khi \(|x|\to\infty\). Phép tịnh tiến u=x+4,v=y−3 cho v=−2/u đối xứng qua gốc, nên tâm đối xứng của đồ thị gốc là I(−4,3).
+**Lời giải có suy luận và điều kiện:** \(f=3-\frac2{x+4}\) có TCD \(x=-4\) vì mẫu tiến0, TCN \(y=3\) vì phần phân thức→0 khi \(|x|\to\infty\). Phép tịnh tiến u=x+4,v=y−3 cho \(v=-\frac2u\) đối xứng qua gốc, nên tâm đối xứng của đồ thị gốc là \(I(-4;3)\).
 
 **Nếu làm sai:** Tâm phân thức dạng \(b+\frac k{x-a}\) là giao hai tiệm cận \((a;b)\), không phải giao trục tọa độ.
 
@@ -2222,13 +2222,13 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP10-P24; SOURCE_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da; OUTCOME: TOP10-O24; SINGLE_ITEM_ID -->
 
-**Bài 77.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.
+**Bài 77.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với \(x>0\), f(0)=4. Xác định cực trị tại \(x=0\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Cực tiểu địa phương tại \((0;4)\).
 
-**Lời giải có suy luận và điều kiện:** Theo giả thiết f' âm khi x<0 và dương khi x>0; vì f liên tục tại 0 và f(0)=4, hàm giảm tới 0 rồi tăng, nên \((0;4)\) là điểm cực tiểu địa phương. Không đủ dữ kiện khẳng định đây là GTNN của toàn miền nếu còn nhánh khác.
+**Lời giải có suy luận và điều kiện:** Theo giả thiết f' âm khi x<0 và dương khi \(x>0\); vì f liên tục tại 0 và f(0)=4, hàm giảm tới 0 rồi tăng, nên \((0;4)\) là điểm cực tiểu địa phương. Không đủ dữ kiện khẳng định đây là GTNN của toàn miền nếu còn nhánh khác.
 
 **Nếu làm sai:** Bảng dấu âm→dương nghĩa là đồ thị đi xuống rồi đi lên. Kiểm giả thiết liên tục ở điểm chuyển dấu.
 
@@ -2240,7 +2240,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Lời giải tự mở:** \(D=\mathbb R\setminus\{1\}\), \(y'=-\frac3{(x-1)^2}\), giảm từng nhánh; x=1, y=1 tiệm cận; tâm \((1;1)\); Ox \((-2;0)\), Oy \((0;-2)\), hai nhánh tách tại tiệm cận đứng.
+**Lời giải tự mở:** \(D=\mathbb R\setminus\{1\}\), \(y'=-\frac3{(x-1)^2}\), giảm từng nhánh; \(x=1\), \(y=1\) tiệm cận; tâm \((1;1)\); Ox \((-2;0)\), Oy \((0;-2)\), hai nhánh tách tại tiệm cận đứng.
 
 **Rubric /4:** 1 D+đạo hàm; 1 đơn điệu từng khoảng; 1 giới hạn/tiệm cận; 1 giao trục+đúng hai nhánh.
 
@@ -2250,11 +2250,11 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-B04-P03; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O25; SINGLE_ITEM_ID -->
 
-**Bài 79.** Với \(y=1+\frac2{x+1}\), có nên nối hai nhánh qua x=−1?
+**Bài 79.** Với \(y=1+\frac2{x+1}\), có nên nối hai nhánh qua \(x=-1\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** Không; x=−1 bị loại khỏi D và là tiệm cận đứng.
+**Đối chiếu:** Không; \(x=-1\) bị loại khỏi D và là tiệm cận đứng.
 
 **Nếu làm sai:** Thử hai điểm ở hai nhánh để thấy dấu \(f'\) âm riêng từng nhánh chưa đủ cho toàn D.
 
@@ -2422,7 +2422,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** \(0<x<10\) cm, vì 30−2x>0, 20−2x>0 và x>0.
+**Đối chiếu:** \(0<x<10\) cm, vì 30−2x>0, 20−2x>0 và \(x>0\).
 
 **Nếu làm sai:** Độ dài đáy và chiều cao phải dương; xác định miền vật lý trước tối ưu.
 
@@ -2436,7 +2436,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án:** \(0<x<12\); cạnh kia 12−x.
 
-**Lời giải có suy luận và điều kiện:** Hình chữ nhật chu vi24 m có 2(x+y)=24⇒x+y=12. Với hai cạnh đều dương, y=12−x>0 và x>0 nên miền \(0<x<12\). Các đầu x=0,12 cho hình suy biến, không hợp lệ.
+**Lời giải có suy luận và điều kiện:** Hình chữ nhật chu vi24 m có 2(x+y)=24⇒x+y=12. Với hai cạnh đều dương, y=12−x>0 và \(x>0\) nên miền \(0<x<12\). Các đầu x=0,12 cho hình suy biến, không hợp lệ.
 
 **Nếu làm sai:** Nếu cho 0≤x≤24, hãy chia chu vi cho2 và ghi điều kiện cạnh còn lại dương.
 
@@ -2460,7 +2460,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đối chiếu:** f'=−2x+8, x=4 cho f=13; f(0)=−3, f(6)=9; max13 tại4.
+**Đối chiếu:** f'=−2x+8, \(x=4\) cho f=13; f(0)=−3, f(6)=9; max13 tại4.
 
 **Nếu làm sai:** Nghiệm \(f'=0\) chỉ là ứng viên nội miền; hãy so các biên có trong miền.
 
@@ -2472,9 +2472,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=2, P=6; đỉnh3 không hợp lệ.
+**Đáp án:** \(x=2\), P=6; đỉnh3 không hợp lệ.
 
-**Lời giải có suy luận và điều kiện:** \(f(x)=7-(x-3)^2\), \(x\in[0;2]\). Vì f'(x)=−2(x−3)>0 trên \([0;2)\), hàm tăng đến x=2 và đạt GTLN f(2)=7−1=6. Đỉnh x=3 cho giá trị7 nhưng nằm ngoài miền, không là phương án.
+**Lời giải có suy luận và điều kiện:** \(f(x)=7-(x-3)^2\), \(x\in[0;2]\). Vì f'(x)=−2(x−3)>0 trên \([0;2)\), hàm tăng đến \(x=2\) và đạt GTLN f(2)=7−1=6. Đỉnh \(x=3\) cho giá trị7 nhưng nằm ngoài miền, không là phương án.
 
 **Nếu làm sai:** Khi tối ưu có ràng buộc, hãy xét ứng viên \(f'=0\) có thực sự nằm trong miền hay không.
 
@@ -2482,24 +2482,24 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP10-W05; SOURCE_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da; OUTCOME: TOP10-O30; SINGLE_ITEM_ID -->
 
-**Bài 97.** Tấm bìa hình vuông cạnh 12 cm. Cắt bốn hình vuông cạnh x cm (0<x<6) ở bốn góc và gấp hộp không nắp. (a) Lập V(x) và miền. (b) Tính V'. (c) Tìm x làm thể tích lớn nhất, tính Vmax. (d) Kiểm hai biên \(x\to0^+\),x→6⁻ và giải thích vì sao không nhận các biên.
+**Bài 97.** Tấm bìa hình vuông cạnh 12 cm. Cắt bốn hình vuông cạnh x cm (0<x<6) ở bốn góc và gấp hộp không nắp. (a) Lập V(x) và miền. (b) Tính V'. (c) Tìm x làm thể tích lớn nhất, tính Vmax. (d) Kiểm hai biên \(x\to0^+\),\(x\to6^-\) và giải thích vì sao không nhận các biên.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** \(V=x(12-2x)^2\) cm³; \(V'=12(x-2)(x-6)\); x=2 cm, Vmax128 cm³; hai biên thể tích→0 nhưng không thuộc miền.
+**Đáp án:** \(V=x(12-2x)^2\) cm³; \(V'=12(x-2)(x-6)\); \(x=2\) cm, Vmax128 cm³; hai biên thể tích→0 nhưng không thuộc miền.
 
-**Lời giải đầy đủ:** Đáy có cạnh 12−2x>0 và chiều cao x>0 ⇒ \(0<x<6\). \(V=x(12-2x)^2=144x-48x^2+4x^3\); \(V'=144-96x+12x^2=12(x-2)(x-6)\). Trên \((0;2)\), V'>0; \((2;6)\), V'<0 ⇒ max tại x=2. \(V(2)=2\cdot8^2=128\) cm³. Khi \(x\to0^+\) hoặc6⁻, thể tích→0, biên không cho hộp hợp lệ. Không lấy nghiệm6 làm cực trị trong miền, vì x=6 làm đáy0.
+**Lời giải đầy đủ:** Đáy có cạnh \(12-2x>0\) và chiều cao \(x>0\) ⇒ \(0<x<6\). \(V=x(12-2x)^2=144x-48x^2+4x^3\); \(V'=144-96x+12x^2=12(x-2)(x-6)\). Trên \((0;2)\), \(V'>0\); \((2;6)\), \(V'<0\) ⇒ max tại \(x=2\). \(V(2)=2\cdot8^2=128\) cm³. Khi \(x\to0^+\) hoặc6⁻, thể tích→0, biên không cho hộp hợp lệ. Không lấy nghiệm6 làm cực trị trong miền, vì \(x=6\) làm đáy0.
 
 **Rubric /7 điểm:**
 1. Miền \(0<x<6\) và lý do (1đ)
 2. \(V=x(12-2x)^2\) và đơn vị (1đ)
 3. Tính V' chính xác (1đ)
 4. Giải nghiệm x=2,6 và loại6 (1đ)
-5. Bảng dấu V' và max x=2 (1đ)
+5. Bảng dấu V' và max \(x=2\) (1đ)
 6. Tính Vmax128 cm³ (1đ)
 7. Kiểm hai giới hạn biên và giả thiết hộp (1đ)
 
-**Nếu làm sai:** Đừng bỏ điều kiện đáy dương, và chỉ chọn điểm nội miền x=2 làm tối ưu.
+**Nếu làm sai:** Đừng bỏ điều kiện đáy dương, và chỉ chọn điểm nội miền \(x=2\) làm tối ưu.
 
 </details>
 
@@ -2537,7 +2537,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 **Đáp án:** Min1 tại1, max9 tại3.
 
-**Lời giải có suy luận và điều kiện:** Trên \([1;3]\), \(f=x^2\) liên tục và f'=2x>0; vì thế hàm tăng, GTNN=f(1)=1 và GTLN=f(3)=9. Cả hai đạt tại đầu đoạn, không có điểm nội miền \(f'=0\).
+**Lời giải có suy luận và điều kiện:** Trên \([1;3]\), \(f=x^2\) liên tục và \(f'=2x>0\); vì thế hàm tăng, GTNN=f(1)=1 và GTLN=f(3)=9. Cả hai đạt tại đầu đoạn, không có điểm nội miền \(f'=0\).
 
 **Nếu làm sai:** Không bắt buộc tìm nghiệm \(f'=0\) nếu đạo hàm luôn dương trên đoạn; hai đầu đoạn vẫn quyết định cực trị toàn cục.
 
@@ -2589,7 +2589,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** max1 tại1; không min, vì f>0 nhưng →0 ở hai biên bị loại.
+**Đáp án:** max1 tại1; không min, vì \(f>0\) nhưng →0 ở hai biên bị loại.
 
 **Nếu làm sai:** Đừng dùng cực đại địa phương làm GTLN khi f không bị chặn phía trên.
 
@@ -2601,7 +2601,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** min1 tại2; max5 tại cả x=0 và4.
+**Đáp án:** min1 tại2; max5 tại cả \(x=0\) và4.
 
 **Nếu làm sai:** Đừng dùng cực đại địa phương làm GTLN khi f không bị chặn phía trên.
 
@@ -2625,9 +2625,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** GTLN9 tại x=3; không có GTNN.
+**Đáp án:** GTLN9 tại \(x=3\); không có GTNN.
 
-**Lời giải có suy luận và điều kiện:** \(f=-x^2+6x=9-(x-3)^2\le9\) với mọi x∈ℝ, bằng9 tại x=3. Vậy GTLN=9. Khi \(|x|\to\infty\), \(f\to-\infty\) nên không có GTNN trên toàn ℝ; điều này phù hợp parabol mở xuống.
+**Lời giải có suy luận và điều kiện:** \(f=-x^2+6x=9-(x-3)^2\le9\) với mọi x∈ℝ, bằng9 tại \(x=3\). Vậy GTLN=9. Khi \(|x|\to\infty\), \(f\to-\infty\) nên không có GTNN trên toàn ℝ; điều này phù hợp parabol mở xuống.
 
 **Nếu làm sai:** Chứng minh GTLN bằng bình phương không âm; để phủ nhận GTNN, chỉ ra hàm không bị chặn dưới.
 
@@ -2639,7 +2639,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** \(D=\mathbb R\setminus\{-1\}\), \(g=x+1+\frac4{x+1}\), đứng x=−1, xiên y=x+1. \(g'=1-\frac4{(x+1)^2}=\frac{(x-1)(x+3)}{(x+1)^2}\). Dấu + trên \((-\infty;-3)\),\((1;\infty)\); − trên \((-3;-1)\), \((-1;1)\). Cực đại cục bộ \((-3;-4)\), cực tiểu cục bộ \((1;4)\).
+**Đáp án:** \(D=\mathbb R\setminus\{-1\}\), \(g=x+1+\frac4{x+1}\), đứng \(x=-1\), xiên y=x+1. \(g'=1-\frac4{(x+1)^2}=\frac{(x-1)(x+3)}{(x+1)^2}\). Dấu + trên \((-\infty;-3)\),\((1;\infty)\); − trên \((-3;-1)\), \((-1;1)\). Cực đại cục bộ \((-3;-4)\), cực tiểu cục bộ \((1;4)\).
 
 **Rubric tự đối chiếu /4:** 1 D/chia; 1 tiệm cận; 1 đạo hàm/dấu; 1 cực trị và nhánh không nối.
 
@@ -2653,7 +2653,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** \(g=x+2+\frac8{x-2}\), đứng x=2, xiên y=x+2.
+**Đáp án:** \(g=x+2+\frac8{x-2}\), đứng \(x=2\), xiên y=x+2.
 
 **Nếu làm sai:** TCD cần giới hạn vô cực, tiệm cận xiên cần hiệu tiến0; kiểm đạo hàm theo từng nhánh.
 
@@ -2665,7 +2665,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** \(g=2+\frac7{x-3}\), đứng x=3, ngang y=2, tâm \((3;2)\).
+**Đáp án:** \(g=2+\frac7{x-3}\), đứng \(x=3\), ngang \(y=2\), tâm \((3;2)\).
 
 **Nếu làm sai:** TCD cần giới hạn vô cực, tiệm cận xiên cần hiệu tiến0; kiểm đạo hàm theo từng nhánh.
 
@@ -2673,13 +2673,13 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP10-P34; SOURCE_BLOB: 5f6ab764df6541ada9b4d4475403d29984d8e7da; OUTCOME: TOP10-O34; SINGLE_ITEM_ID -->
 
-**Bài 111.** \(f=\frac{x^2-4}{x-2}\), TCD ở x=2?
+**Bài 111.** \(f=\frac{x^2-4}{x-2}\), TCD ở \(x=2\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Không; chỉ lỗ. Nếu \(x\ne2\), f=x+2, có đường xiên y=x+2 ở vô cực (thực tế đồ thị trùng đường này trừ một điểm).
 
-**Lời giải có suy luận và điều kiện:** \(f=\frac{x^2-4}{x-2}\) với \(x\ne2\) bằng x+2 trên miền D. Giới hạn khi x→2 bằng4 hữu hạn, nên x=2 không là TCD mà chỉ là lỗ \((2;4)\). Vì f(x)−(x+2)=0 với mọi \(x\in D\), đường y=x+2 thỏa định nghĩa tiệm cận xiên ở vô cực (đồ thị trùng đường ấy trừ lỗ).
+**Lời giải có suy luận và điều kiện:** \(f=\frac{x^2-4}{x-2}\) với \(x\ne2\) bằng x+2 trên miền D. Giới hạn khi x→2 bằng4 hữu hạn, nên \(x=2\) không là TCD mà chỉ là lỗ \((2;4)\). Vì f(x)−(x+2)=0 với mọi \(x\in D\), đường y=x+2 thỏa định nghĩa tiệm cận xiên ở vô cực (đồ thị trùng đường ấy trừ lỗ).
 
 **Nếu làm sai:** Đừng mặc định mẫu bằng0 là TCD; phân tích nhân tử và tính giới hạn một phía trước.
 
@@ -2777,7 +2777,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-END-P03; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O36; SINGLE_ITEM_ID -->
 
-**Bài 118.** \(h=\frac{x^2-4}{x-2}\), \(x\ne2\). "Có tiệm cận đứng x=2 vì mẫu bằng 0." Giải thích.
+**Bài 118.** \(h=\frac{x^2-4}{x-2}\), \(x\ne2\). "Có tiệm cận đứng \(x=2\) vì mẫu bằng 0." Giải thích.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2789,7 +2789,7 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-CHI-END-C03; SOURCE_BLOB: f0862dcdab21dec136e43969f45c42638e7c7574; OUTCOME: TOP10-O36; SINGLE_ITEM_ID -->
 
-**Bài 119.** "f'(0)=0 với \(f=x^3\) nên x=0 là cực tiểu." Đúng hay sai?
+**Bài 119.** "f'(0)=0 với \(f=x^3\) nên \(x=0\) là cực tiểu." Đúng hay sai?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -2805,9 +2805,9 @@ Hãy tự giải trước khi mở **Lời giải**. Ghi rõ miền, mốc đạ
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** GTLN=1 tại x=2; không có GTNN (infimum −3 không đạt).
+**Đáp án:** GTLN=1 tại \(x=2\); không có GTNN (infimum −3 không đạt).
 
-**Lời giải có suy luận và điều kiện:** Trên \((0;3)\), \(g(x)=1-(x-2)^2\le1\) và bằng1 tại x=2 thuộc miền, nên GTLN=1 đạt ở x=2. Nhưng khi \(x\to0^+\), g→−3, và mọi \(x\in(0;3)\) đều có g(x)>−3, nên không có GTNN (infimum −3). Miền mở vẫn có thể đạt max ở nội miền.
+**Lời giải có suy luận và điều kiện:** Trên \((0;3)\), \(g(x)=1-(x-2)^2\le1\) và bằng1 tại \(x=2\) thuộc miền, nên GTLN=1 đạt ở \(x=2\). Nhưng khi \(x\to0^+\), \(g\to-3\), và mọi \(x\in(0;3)\) đều có g(x)>−3, nên không có GTNN (infimum −3). Miền mở vẫn có thể đạt max ở nội miền.
 
 **Nếu làm sai:** Đừng kết luận mọi hàm trên miền mở đều không có GTLN. Kiểm liệu điểm cực trị nội miền có đạt chặn trên hay không.
 
@@ -2911,7 +2911,7 @@ Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P24; NO_RD1; NO_MASTERY -->
 
-**Câu 24.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với x>0, f(0)=4. Xác định cực trị tại x=0.
+**Câu 24.** Cho f liên tục trên một khoảng chứa 0, khả vi ở các điểm khác 0 gần 0, f'(x)<0 với x<0 và f'(x)>0 với \(x>0\), f(0)=4. Xác định cực trị tại \(x=0\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P25; NO_RD1; NO_MASTERY -->
 
@@ -2951,7 +2951,7 @@ Hãy tự làm 36 câu sau trước khi xem lời giải ở phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P34; NO_RD1; NO_MASTERY -->
 
-**Câu 34.** \(f=\frac{x^2-4}{x-2}\), TCD ở x=2?
+**Câu 34.** \(f=\frac{x^2-4}{x-2}\), TCD ở \(x=2\)?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP10-P35; NO_RD1; NO_MASTERY -->
 
