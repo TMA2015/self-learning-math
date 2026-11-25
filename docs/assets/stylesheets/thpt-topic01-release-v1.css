@@ -80,3 +80,7 @@ html.topic01-boot-pending-selfcheck .md-typeset > p:has(> span[data-topic01-self
  * MathJax intentionally scroll inside the CĐ01 knowledge area. Clip only the
  * outer knowledge canvas; nested rails/formulas keep their own x-scroll. */
 body.thpt-r4-topic-knowledge .md-typeset.topic01-golden-knowledge .topic01-knowledge-layout{overflow-x:clip}
+
+/* Native SGK disclosures only. The wrapper creates no visual box;
+ * the existing SGK .tabbed-block rules own both controls and typography. */
+body.thpt-r4-topic-knowledge .topic01-knowledge-layout .topic-sgk-disclosure-pair.tabbed-block{display:contents!important}

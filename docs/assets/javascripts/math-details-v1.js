@@ -328,6 +328,11 @@
    // CĐ17 2.4 includes a second, explicitly labelled recovery paragraph.
    if(topic==="17"&&last?.querySelector(":scope > strong")?.textContent.trim()==="Nếu làm sai:")start=last;
   }
+  // Layout-neutral SGK selector bridge: reuse the ORIGINAL .tabbed-block
+  // disclosure rules without touching the locked SGK stylesheet.
+  const pair=make("div");
+  pair.className="tabbed-block topic-sgk-disclosure-pair";
+  details.before(pair);pair.append(details);
   if(!start)return;
   const tip=make("details"),label=make("summary","Kiểm lỗi");
   tip.className="tip";tip.dataset.topicSgkDisclosure="mistake";

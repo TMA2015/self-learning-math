@@ -684,11 +684,11 @@ function proveRW3Tabs(){
  assert.equal(changes,69,"Unexpected alias count");
  console.log("PASS R-W3 69 labels only, all renderer logic, content and protected assessment unchanged");
 }
-const TOPIC_DISCLOSURE_FILES=new Set(["docs/assets/javascripts/math-details-v1.js","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml","docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css","docs/assets/stylesheets/thpt-topic01-release-v1.css","docs/assets/stylesheets/thpt-topic-w1-golden-v1.css"]);
+const TOPIC_DISCLOSURE_FILES=new Set(["docs/assets/javascripts/math-details-v1.js","scripts/test-thpt-topic-rw1-math-browser.py","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-topic-rw1-math-qa.yml",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml","docs/assets/stylesheets/thpt-topic01-release-v1.css","docs/assets/stylesheets/thpt-topic-w1-golden-v1.css",".github/workflows/thpt-topic01-source-locked-release-qa.yml",".github/workflows/thpt-topic-w1-golden-release-qa.yml",".github/workflows/thpt-topic-w2-golden-release-qa.yml"]);
 function isExactTopicDisclosures(files){
  const crypto=require("node:crypto"),blob=p=>{const b=fs.readFileSync(p);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
  return files.length===TOPIC_DISCLOSURE_FILES.size&&new Set(files).size===files.length&&files.every(f=>TOPIC_DISCLOSURE_FILES.has(f))&&
-  [["docs/assets/javascripts/math-details-v1.js","e7910dd0fd0cbbf903cf1bb0f255bf44615a0ea7"],["docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css","ddfa078c55c0fd08f7f14b62c6820ca285d427e2"],["docs/assets/stylesheets/thpt-topic01-release-v1.css","cf59fb79370254b09c2874de346073518df4b185"],["docs/assets/stylesheets/thpt-topic-w1-golden-v1.css","81cf00277e9db1e481f78ddfe00fbdb4eebaaefa"]].every(([p,sha])=>blob(p)===sha)&&fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("TOPIC_SGK_DISCLOSURE_ONLY");
+  [["docs/assets/javascripts/math-details-v1.js","5db3b192527694119596bbe3e3eb46a8fce35d89"],["docs/assets/stylesheets/thpt-topic01-release-v1.css","be4cc34a8a4e77fca777be5c04f0dd3267d81bec"],["docs/assets/stylesheets/thpt-topic-w1-golden-v1.css","81cf00277e9db1e481f78ddfe00fbdb4eebaaefa"]].every(([p,sha])=>blob(p)===sha)&&fs.readFileSync("scripts/test-thpt-topic-rw1-math-browser.py","utf8").includes("TOPIC_SGK_DISCLOSURE_ONLY");
 }
 function proveTopicDisclosures(){
  const cp=require("node:child_process"),git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"});
@@ -700,10 +700,11 @@ function proveTopicDisclosures(){
  const restore=now.replace(/ \/\/ OWNER: use the same two native disclosures[\s\S]*?(?= function prepare\(root\)\{)/,"").replace("  root.querySelectorAll(\"details\").forEach(splitSGKDisclosure);\n","");
  assert.equal(restore,old,"Math/SGK logic changed outside the new disclosure split");
  const css="docs/assets/stylesheets/thpt-g10-knowledge-hybrid-l1-v1.css";
- const restored=fs.readFileSync(css,"utf8").replace(/,\nbody(?:\[data-md-color-scheme="slate"\])?\.thpt-r4-topic-knowledge \.topic01-knowledge-layout details\[data-topic-sgk-disclosure\][^\n{]*(?= \{)/g,"");
- assert.equal(restored,git("show",base+":"+css),"SGK CSS declarations changed");
- for(const p of ["docs/assets/stylesheets/thpt-topic01-release-v1.css","docs/assets/stylesheets/thpt-topic-w1-golden-v1.css"])
-  assert.equal(fs.readFileSync(p,"utf8").replaceAll(":not([data-topic-sgk-disclosure])",""),git("show",base+":"+p),"Unrelated Topic CSS changed");
+ assert.equal(fs.readFileSync(css,"utf8"),git("show",base+":"+css),"SGK stylesheet must be byte-identical");
+ for(const p of ["docs/assets/stylesheets/thpt-topic01-release-v1.css","docs/assets/stylesheets/thpt-topic-w1-golden-v1.css"]){
+  const prior=fs.readFileSync(p,"utf8").replaceAll(":not([data-topic-sgk-disclosure])","").replace(/\n\/\* Native SGK disclosures only\.[\s\S]*$/,"");
+  assert.equal(prior,git("show",base+":"+p),"Unrelated Topic CSS changed");
+ }
  console.log("PASS exact disclosure-only scope: SGK declarations and all math code unchanged; no source/assessment edits");
 }
 // Exact governance-only files: other learner/runtime changes remain FULL.
