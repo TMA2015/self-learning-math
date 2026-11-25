@@ -33,9 +33,9 @@
   {
     "item_id": "THPT-TOP17-P02",
     "content_version": "SOURCE_BLOB_0ef0ad696e97d2549f29c5a22ba675970572a089_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho H là hình chiếu vuông góc của A lên mặt phẳng (P), M∈(P), AM=10 cm, HM=6 cm. Tính khoảng cách từ A đến (P). Nếu N∈(P), HN=0 thì N là điểm nào?",
-    "answer_key": "d(A,(P))=8 cm; N=H.",
-    "worked_solution": "AH⊥(P) nên AH⊥HM. Tam giác AHM vuông tại H, AH=√(10²−6²)=8 cm. Vì H là chân chiếu, khoảng cách bằng AH=8 cm. HN=0 khi và chỉ khi N=H; đây cũng là điểm duy nhất trong (P) đạt khoảng cách nhỏ nhất từ A.",
+    "stem": "Cho H là hình chiếu vuông góc của A lên mặt phẳng (P), M∈(P), AM=10 cm, HM=6 cm. Tính khoảng cách từ A đến (P) và chứng minh H là điểm duy nhất trong (P) gần A nhất.",
+    "answer_key": "d(A,(P))=8 cm; H là điểm duy nhất đạt khoảng cách nhỏ nhất.",
+    "worked_solution": "AH⊥(P) nên AH⊥HM. Tam giác AHM vuông tại H, AH=√(10²−6²)=8 cm. Với mọi N∈(P) khác H, AH⊥HN, nên AN²=AH²+HN²>AH². Do đó AN>AH. Khi N=H, khoảng cách bằng AH=8 cm. Vậy H là điểm duy nhất trong mặt phẳng gần A nhất.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B26-POINT_PLANE"
