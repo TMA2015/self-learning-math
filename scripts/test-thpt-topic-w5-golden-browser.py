@@ -143,10 +143,10 @@ with sync_playwright() as pw:
                     assert full and len(short)<=len(full) and len(short)<=32,(engine,topic,width,short,full)
                     assert tab.get_attribute("aria-label")==full
                 assert tabs.first.inner_text() == {
-  "19": "1. Quy tắc đếm và chia trường",
+  "19": "1. Quy tắc đếm, chia trường hợp",
   "20": "1. Mô hình ngẫu nhiên",
-  "21": "1. Biết thêm thông tin và xác",
-  "22": "1. Dữ liệu thô, độ chính xác và"
+  "21": "1. Xác suất có điều kiện",
+  "22": "1. Dữ liệu thô và số đặc trưng"
 }[topic]
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e.parentElement).display") == "flex"
                 assert tabs.first.evaluate("(e)=>getComputedStyle(e).backgroundColor") != "rgba(0, 0, 0, 0)"
