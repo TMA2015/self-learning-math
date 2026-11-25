@@ -7,6 +7,9 @@
 const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-topic-w1-part]");
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
+const sharedKnowledgeActive=part==="kien-thuc";
+const sharedKnowledgeMath=()=>sharedKnowledgeActive?window.SLMTHPTKnowledgeMath:null;
+let sharedKnowledgePrepared=false;
 const sizes={"19":{"outcomes":14,"items":42,"replay":7,"groups":3,"practiceGroups":3},"20":{"outcomes":9,"items":20,"replay":11,"groups":2,"practiceGroups":3},"21":{"outcomes":8,"items":11,"replay":8,"groups":3,"practiceGroups":3},"22":{"outcomes":13,"items":114,"replay":9,"groups":3,"practiceGroups":3}};
 const expected=sizes[topic];
 /* A missing expected causes W5 hydration fallback before any tab mounts. */
@@ -176,6 +179,7 @@ const normalizeRenderedMath=node=>{
  * renderMath on both a subgroup and its parent; a whole-panel re-typeset
  * otherwise inserts duplicate mjx-container nodes for the same formula. */
 const renderMath=node=>{
+ if(sharedKnowledgeActive){if(!sharedKnowledgeMath())throw Error("TOPIC_SHARED_MATH_HELPER_MISSING");if(sharedKnowledgePrepared)return sharedKnowledgeMath().typeset(node);return}
  normalizeRenderedMath(node);
  const spans=[...node.querySelectorAll(".arithmatex")].filter(el=>
   !el.querySelector("mjx-container")&&el.dataset.topicW5TypesetQueued!=="1");
@@ -291,6 +295,7 @@ function styleKnowledge(root){
  for(const details of root.querySelectorAll("details")){
   const summary=details.querySelector("summary");if(!summary)continue;
   details.classList.add("question");
+  if(sharedKnowledgeActive){sharedKnowledgeMath().disclosure(details);continue}
   const content=solutionContent(details);
   details.replaceChildren(summary,...content.childNodes);
   details.addEventListener("toggle",()=>{if(details.open)renderMath(details)});
@@ -355,7 +360,10 @@ function initKnowledge(){
   }
   bind(subButtons,subPanels);
  }
- normalizeInlineStems(layout,/^Vận dụng[:.]?$/);styleKnowledge(layout);capKnowledgeFigures(layout);bind(allButtons,allPanels);
+ normalizeInlineStems(layout,/^Vận dụng[:.]?$/);styleKnowledge(layout);capKnowledgeFigures(layout);
+ if(sharedKnowledgeActive){sharedKnowledgeMath().prepare(layout);sharedKnowledgeMath().normalize(intro);sharedKnowledgePrepared=true}
+ bind(allButtons,allPanels);
+ if(sharedKnowledgeActive)sharedKnowledgeMath().typeset(layout);
  if(layout.querySelectorAll("[data-topic-w1-callout]").length<expected.outcomes)throw Error("Missing formal semantic callouts");
  ready();
 }
