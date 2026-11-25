@@ -79,11 +79,11 @@ Nếu em thay điều kiện \(F(a)\) thành \(F'(a)\) hoặc không tìm hằng
 
 <!-- LESSON_ID: TOP11-M03; OUTCOME_ID: TOP11-O03 -->
 
-Từ định nghĩa, ta suy ra nguyên hàm lũy thừa và tổng. Vì sao n=−1 là trường hợp đặc biệt, còn các lũy thừa khác chia được cho n+1? Ta sử dụng đạo hàm của x^{n+1} và tính tuyến tính, miền x^n. 
+Từ quy tắc đạo hàm lũy thừa, ta biết \((x^{n+1})'=(n+1)x^n\) trên khoảng thích hợp. Muốn đạo hàm trở về đúng \(x^n\), ta chia cho \(n+1\). Khi \(n=-1\), phép chia này không thực hiện được; ta sẽ xét trường hợp ấy riêng.
 
 > **CÔNG THỨC — Nguyên hàm lũy thừa.** Với \(n\ne-1\) và trên khoảng mà biểu thức thực \(x^n\) được xác định, \(\displaystyle\int x^n\,dx=\frac{x^{n+1}}{n+1}+C\). Trường hợp \(n=-1\) dùng \(\ln|x|+C\) trên từng khoảng tránh \(0\); không thay trực tiếp vào mẫu \(n+1=0\).
 
- Với αf+βg, nguyên hàm là αF+βG+C. Không để +C riêng từng hạng rồi tính thành nhiều hằng độc lập trong cùng một tổng.
+ Nếu \(F'=f\), \(G'=g\) trên cùng một khoảng và \(\alpha,\beta\) là các hằng số thì họ nguyên hàm của \(\alpha f+\beta g\) là \(\alpha F+\beta G+C\). Các hằng số cộng được gộp thành một hằng số \(C\) duy nhất.
 
 Xét ví dụ: \(\int (6x^2-4x+3)\,\mathrm dx=2x^3-2x^2+3x+C\). Đạo hàm của \(2x^3\) là \(6x^2\), của \(-2x^2\) là \(-4x\) và của \(3x\) là \(3\). Kiểm từng hạng giúp tránh lỗi hệ số.
 
@@ -109,13 +109,13 @@ Nếu em quên chia hệ số theo mũ mới khi tính nguyên hàm lũy thừa,
 
 </details>
 
-### 1.4. Nguyên hàm 1/x trên khoảng
+### 1.4. Nguyên hàm của \(\frac1x\) trên khoảng
 
 <!-- LESSON_ID: TOP11-M04; OUTCOME_ID: TOP11-O04 -->
 
-> **CÔNG THỨC — Nguyên hàm 1/x trên khoảng.** Nguyên hàm 1/x đặc biệt vì số mũ −1 làm mẫu công thức bằng 0. Tại sao ln|x| xuất hiện, và có thể dùng một C qua x=0 không? Ta bắt đầu từ logarit thực, (ln|x|)'=1/x khi x khác0, miền liên thông. Đạo hàm ln|x| bằng1/x với x≠0; vì vậy ∫dx/x=ln|x|+C trên từng khoảng (-∞,0) hoặc (0,+∞). Không có nguyên hàm liên tục vượt điểm 0 cho 1/x do hàm gốc không xác định ở đó. Trên miền rời có thể dùng C_- và C_+ khác nhau; một điều kiện tại −1 không xác định hằng ở nhánh dương.
+> **CÔNG THỨC — Nguyên hàm của \(\frac1x\).** Khi \(x>0\), ta có \((\ln x)'=\frac1x\). Khi \(x<0\), \(-x>0\) nên \((\ln(-x))'=\frac1{-x}\cdot(-1)=\frac1x\). Hai biểu thức logarit này được viết gọn thành \(\ln|x|\). Vì vậy \(\int\frac1x\,\mathrm dx=\ln|x|+C\) trên từng khoảng \((-\infty;0)\) hoặc \((0;+\infty)\). Không thể áp dụng công thức trên một khoảng chứa \(0\), vì hàm số không xác định tại đó. Hai khoảng có thể có các hằng số \(C_-\) và \(C_+\) khác nhau; một điều kiện tại \(-1\) không xác định hằng số ở nhánh dương.
 
-Chẳng hạn, Trên x<0, ∫(3/x)dx=3ln(−x)+C. Lấy đạo hàm 3·(−1)/(−x)=3/x, đúng. Chọn ln(−x) vì −x>0 trên nhánh âm; ln x không hợp lệ.
+Chẳng hạn, trên \(x<0\), \(\int\frac3x\,\mathrm dx=3\ln(-x)+C\). Lấy đạo hàm: \(3\cdot\frac{-1}{-x}=\frac3x\), đúng với hàm đã cho. Ta chọn \(\ln(-x)\) vì \(-x>0\) trên nhánh âm; \(\ln x\) không xác định ở đó.
 
 **Ví dụ**
 
@@ -143,24 +143,24 @@ Nếu em dùng \(\ln x\) cho \(x<0\) hoặc ghép hằng số xuyên qua điểm
 
 <!-- LESSON_ID: TOP11-M05; OUTCOME_ID: TOP11-O05 -->
 
-> **CÔNG THỨC — Hàm mũ và hệ số bù.** Hàm mũ đòi hỏi hệ số bù theo đạo hàm của biểu thức trong. Nếu e^{2x} thay đổi nhanh gấp đôi lớp ngoài, phải sửa nguyên hàm bằng cách nào? Cần nhớ dây chuyền (e^{kx})'=k e^{kx}, (a^x)'=a^x ln a. Với k≠0, nguyên hàm e^{kx} là e^{kx}/k+C; với a>0,a≠1, nguyên hàm a^x là a^x/ln a+C. Hệ số bù chính là nghịch của hệ số khi đạo hàm. Không áp công thức lũy thừa x^n cho a^x, vì vị trí biến khác.
+> **CÔNG THỨC — Hàm mũ và hệ số bù.** Từ quy tắc đạo hàm hàm hợp, \((e^{kx})'=ke^{kx}\). Khi \(k\ne0\), ta chia cho \(k\) để có đạo hàm đúng bằng \(e^{kx}\). Vì vậy \(\int e^{kx}\,\mathrm dx=\frac{e^{kx}}k+C\). Tương tự, \((a^x)'=a^x\ln a\), nên \(\int a^x\,\mathrm dx=\frac{a^x}{\ln a}+C\) với \(a>0,\ a\ne1\). Không áp dụng quy tắc nguyên hàm lũy thừa \(x^n\) cho hàm mũ \(a^x\), vì vị trí của biến khác nhau.
 
-Chẳng hạn, \(\int (6e^{3x}+2^x)\,\mathrm dx\)=2e^{3x}+2^x/ln2+C. Đạo hàm ngược cho 6e^{3x}+2^x. Chọn đối chiếu quy tắc mũ và chain trước.
+Chẳng hạn, \(\int(6e^{3x}+2^x)\,\mathrm dx=2e^{3x}+\frac{2^x}{\ln 2}+C\). Lấy đạo hàm kết quả, ta được \(6e^{3x}+2^x\). Hệ số \(2\) ở số hạng đầu xuất hiện vì ta chia \(6\) cho \(3\).
 
 **Ví dụ**
 
 **Đề bài:** Tính \(\int (3e^{3x}+2^x)\,\mathrm dx\).
 
-**Lời giải:** Vì (e^{3x})′=3e^{3x} và (2^x/ln2)′=2^x (2>0,2≠1), họ nguyên hàm là e^{3x}+2^x/ln2+C. Kiểm đạo hàm để xác nhận hệ số bù.
+**Lời giải:** Vì \((e^{3x})'=3e^{3x}\) và \(\left(\frac{2^x}{\ln 2}\right)'=2^x\) (cơ số \(2>0,\ 2\ne1\)), họ nguyên hàm là \(e^{3x}+\frac{2^x}{\ln 2}+C\). Lấy đạo hàm để xác nhận các hệ số.
 
 **Vận dụng** Tìm \(\int 5e^{5x}\,\mathrm dx\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-e^{5x}+C.
+\(e^{5x}+C\).
 
-Nếu ra 5e^{5x}, đạo hàm ngược sẽ cho 25e^{5x}, phải chia5.
+Nếu kết quả là \(5e^{5x}\), lấy đạo hàm sẽ được \(25e^{5x}\), gấp năm lần hàm đã cho. Em cần chia hệ số cho \(5\).
 
 
 **Kiểm lỗi**
