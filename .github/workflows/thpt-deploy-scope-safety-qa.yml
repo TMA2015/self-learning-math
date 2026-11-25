@@ -51,6 +51,9 @@ jobs:
           assert(sharedGate.includes('node scripts/test-thpt-handoff-gate-v2.cjs\n'),"Shared V2 handoff gate missing");
           assert(w.includes("reason=OWNER_1110_DEPLOY_RECOVERY_EXACT")&&w.includes("impact=SCOPED_TOPIC_SHARED_MATH"),"Exact #1110 metadata-only deploy recovery gate missing");
           assert(w.includes('"$BEFORE_SHA" == "f9a4b0caef4f860a17d956c0c4d7600dc511c3d2"'),"Recovery must be pinned to the failed #1110 main SHA");
+          assert(shared.includes('node scripts/test-thpt-release-impact.cjs --prove-shared-recovery'),"Recovery must prove prior input identity");
+          assert(shared.includes("gh api")&&shared.includes("90cfffe5f3adb09eaf347ac9436c6f9e6d4b8ecd")&&shared.includes("45625817148"),"Prior exact-head browser CI must be verified");
+          assert(shared.includes("if: needs.release-scope.outputs.reason != 'OWNER_1110_DEPLOY_RECOVERY_EXACT'"),"Only exact recovery may reuse browser PASS");
           for(const req of ['--shared-candidate-scope','scripts/test-thpt-release-queue.cjs','scripts/test-thpt-handoff-gate-v2.cjs',
             'scripts/test-thpt-topic-w2-source-locked.py','scripts/test-thpt-topic-w3-source-locked.py','scripts/test-thpt-topic-w4-source-locked.py',
             'scripts/test-thpt-topic-rw1-math-browser.py','scripts/test-thpt-topic-rw1-math-browser.py --rw2','scripts/test-thpt-topic-rw1-math-browser.py --tail',
@@ -161,6 +164,11 @@ jobs:
         run: |
           node scripts/test-thpt-handoff-gate-v2.cjs --self-test
           node scripts/test-thpt-handoff-gate-v2.cjs
+          git diff --no-renames --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/safety-pr-paths.txt"
+          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/safety-pr-paths.txt" > "$RUNNER_TEMP/safety-pr-impact.txt"
+          if grep -Fxq 'reason=OWNER_1110_DEPLOY_RECOVERY_EXACT' "$RUNNER_TEMP/safety-pr-impact.txt"; then
+            node scripts/test-thpt-release-impact.cjs --prove-shared-recovery
+          fi
       - name: Evidence boundary
         run: |
           echo 'This verifies deployment scope logic only; not a site publication or owner approval.'
