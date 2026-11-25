@@ -64,8 +64,13 @@ jobs:
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: Shared-renderer candidate scope (no canonical changes)
-        if: github.event.pull_request.head.ref == 'release/shared-knowledge-math-rw2-20261125'
+        if: steps.impact.outputs.impact == 'SCOPED_TOPIC_SHARED_MATH' || github.event.pull_request.head.ref == 'release/shared-knowledge-math-rw2-20261125'
         run: python scripts/test-thpt-topic-rw1-math-browser.py --shared-candidate-scope
+      - name: Published Topic navigation source preflight
+        if: steps.impact.outputs.impact != 'METADATA'
+        run: |
+          node scripts/test-thpt-topic-knowledge-tabs-v3.cjs --self-test
+          node scripts/test-thpt-topic-knowledge-tabs-v3.cjs
       - name: Knowledge outcomes — Markdown/HTML/MathJax, Chromium/WebKit, 390/820/1440
         if: steps.impact.outputs.impact != 'METADATA'
         run: |
