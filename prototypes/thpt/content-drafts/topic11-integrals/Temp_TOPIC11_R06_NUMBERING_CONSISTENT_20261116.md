@@ -85,15 +85,15 @@ Từ định nghĩa, ta suy ra nguyên hàm lũy thừa và tổng. Vì sao n=�
 
  Với αf+βg, nguyên hàm là αF+βG+C. Không để +C riêng từng hạng rồi tính thành nhiều hằng độc lập trong cùng một tổng.
 
-Xét ví dụ: ∫(6x²−4x+3)dx=2x³−2x²+3x+C. Vì đạo hàm 2x³ là6x², −2x² là−4x và 3x là3. Kiểm từng hạng giúp tránh lỗi hệ số.
+Xét ví dụ: \(\int (6x^{2}-4x+3)\,\mathrm dx\)=2x³−2x²+3x+C. Vì đạo hàm 2x³ là6x², −2x² là−4x và 3x là3. Kiểm từng hạng giúp tránh lỗi hệ số.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫(2x⁵−4x³+6)dx.
+**Đề bài:** Tính \(\int (2x^{5}-4x^{3}+6)\,\mathrm dx\).
 
-**Lời giải:** Trên ℝ, dùng tính tuyến tính và quy tắc lũy thừa: ∫2x⁵dx=x⁶/3, ∫(−4x³)dx=−x⁴, ∫6dx=6x. Kết quả F=x⁶/3−x⁴+6x+C, đạo hàm F′=2x⁵−4x³+6.
+**Lời giải:** Trên ℝ, dùng tính tuyến tính và quy tắc lũy thừa: \(\int 2x^{5}\,\mathrm dx\)=x⁶/3, \(\int (-4x^{3})\,\mathrm dx\)=−x⁴, \(\int 6\,\mathrm dx\)=6x. Kết quả F=x⁶/3−x⁴+6x+C, đạo hàm F′=2x⁵−4x³+6.
 
-**Vận dụng** ∫(5x⁴+2x)dx=?
+**Vận dụng** \(\int (5x^{4}+2x)\,\mathrm dx\)=?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -145,15 +145,15 @@ Nếu em dùng \(\ln x\) cho \(x<0\) hoặc ghép hằng số xuyên qua điểm
 
 > **CÔNG THỨC — Hàm mũ và hệ số bù.** Hàm mũ đòi hỏi hệ số bù theo đạo hàm của biểu thức trong. Nếu e^{2x} thay đổi nhanh gấp đôi lớp ngoài, phải sửa nguyên hàm bằng cách nào? Cần nhớ dây chuyền (e^{kx})'=k e^{kx}, (a^x)'=a^x ln a. Với k≠0, nguyên hàm e^{kx} là e^{kx}/k+C; với a>0,a≠1, nguyên hàm a^x là a^x/ln a+C. Hệ số bù chính là nghịch của hệ số khi đạo hàm. Không áp công thức lũy thừa x^n cho a^x, vì vị trí biến khác.
 
-Chẳng hạn, ∫(6e^{3x}+2^x)dx=2e^{3x}+2^x/ln2+C. Đạo hàm ngược cho 6e^{3x}+2^x. Chọn đối chiếu quy tắc mũ và chain trước.
+Chẳng hạn, \(\int (6e^{3x}+2^x)\,\mathrm dx\)=2e^{3x}+2^x/ln2+C. Đạo hàm ngược cho 6e^{3x}+2^x. Chọn đối chiếu quy tắc mũ và chain trước.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫(3e^{3x}+2^x)dx.
+**Đề bài:** Tính \(\int (3e^{3x}+2^x)\,\mathrm dx\).
 
 **Lời giải:** Vì (e^{3x})′=3e^{3x} và (2^x/ln2)′=2^x (2>0,2≠1), họ nguyên hàm là e^{3x}+2^x/ln2+C. Kiểm đạo hàm để xác nhận hệ số bù.
 
-**Vận dụng** Tìm ∫5e^{5x}dx.
+**Vận dụng** Tìm \(\int 5e^{5x}\,\mathrm dx\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -173,7 +173,7 @@ Nếu em đạo hàm ngược \(e^{kx}\) hay \(a^x\) mà thiếu hệ số bù, 
 
 <!-- LESSON_ID: TOP11-M06; OUTCOME_ID: TOP11-O06 -->
 
-> **CÔNG THỨC — Nguyên hàm lượng giác.** Với lượng giác, kiểm dấu và đơn vị radian. Nguyên hàm sin và cos có luôn giữ nguyên dấu không? Để xác định điều đó, cần xét (sin x)'=cos x và (cos x)'=−sin x với x radian. ∫cos(kx)dx=sin(kx)/k+C, ∫sin(kx)dx=−cos(kx)/k+C khi k≠0 và góc radian. Dấu trừ của nguyên hàm sin đến từ đạo hàm cos. Không dùng công thức này nguyên dạng khi biến x là số đo độ; phải quy đổi đơn vị.
+> **CÔNG THỨC — Nguyên hàm lượng giác.** Với lượng giác, kiểm dấu và đơn vị radian. Nguyên hàm sin và cos có luôn giữ nguyên dấu không? Để xác định điều đó, cần xét (sin x)'=cos x và (cos x)'=−sin x với x radian. \(\int \cos (kx)\,\mathrm dx\)=sin(kx)/k+C, \(\int \sin (kx)\,\mathrm dx\)=−cos(kx)/k+C khi k≠0 và góc radian. Dấu trừ của nguyên hàm sin đến từ đạo hàm cos. Không dùng công thức này nguyên dạng khi biến x là số đo độ; phải quy đổi đơn vị.
 
 Từ hai đạo hàm \((\tan x)'=\dfrac{1}{\cos^2x}\) (khi \(\cos x\ne0\)) và \((\cot x)'=-\dfrac{1}{\sin^2x}\) (khi \(\sin x\ne0\)), ta còn hai nguyên hàm cơ bản mà chỉ học sin và cos sẽ bỏ sót:
 
@@ -184,15 +184,15 @@ Từ hai đạo hàm \((\tan x)'=\dfrac{1}{\cos^2x}\) (khi \(\cos x\ne0\)) và \
 
 Mỗi công thức được áp dụng trên **một khoảng** không chứa điểm làm mẫu bằng 0. Chẳng hạn, trên khoảng \(0<x<\pi/2\), \(\int(2/\cos^2x-3/\sin^2x)\,dx=2\tan x+3\cot x+C\). Lấy đạo hàm của kết quả cho đúng \(2/\cos^2x-3/\sin^2x\); dấu cộng trước \(3\cot x\) đến từ \((\cot x)'=-1/\sin^2x\). Trên những khoảng xác định tách rời, hằng số \(C\) có thể khác nhau.
 
-Chẳng hạn, ∫(4cos2x+3sin3x)dx=2sin2x−cos3x+C. Chọn đạo hàm ngược: 2·2cos2x=4cos2x; derivative −cos3x là+3sin3x.
+Chẳng hạn, \(\int (4\cos 2x+3\sin 3x)\,\mathrm dx\)=2sin2x−cos3x+C. Chọn đạo hàm ngược: 2·2cos2x=4cos2x; derivative −cos3x là+3sin3x.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫(4cos(2x)−3sin(3x))dx, góc đo radian.
+**Đề bài:** Tính \(\int (4\cos (2x)-3\sin (3x))\,\mathrm dx\), góc đo radian.
 
 **Lời giải:** Ta có (2sin2x)′=4cos2x và (cos3x)′=−3sin3x. Vậy F=2sin2x+cos3x+C. Dùng radian và quy tắc dây chuyền khi lấy đạo hàm ngược.
 
-**Vận dụng** ∫2sin(2x)dx?
+**Vận dụng** \(\int 2\sin (2x)\,\mathrm dx\)?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -258,13 +258,13 @@ Như vậy định nghĩa giải thích **vì sao tích phân xác định là m
 
  C bị triệt trong hiệu. Khác nguyên hàm bất định, tích phân xác định không thêm +C. Tên biến lấy tích phân là **ký hiệu thay chỗ**, nên nếu giữ đúng cùng hàm và cận thì \(\int_a^b f(x)\,dx=\int_a^b f(t)\,dt\); còn đổi hàm hay đổi cận thì nói chung đổi giá trị. Nếu hàm không liên tục/không xác định trên đoạn, không áp máy móc mà kiểm điều kiện.
 
-Xét ví dụ: ∫₁² 4x³dx=[x⁴]₁²=16−1=15. Chọn nguyên hàm x⁴, kiểm đa thức liên tục trên [1,2]; nếu viết +C trong 15 sẽ biến kết quả số thành họ hàm vô nghĩa.
+Xét ví dụ: \(\int_{1}^{2} 4x^{3}\,\mathrm dx\)=[x⁴]₁²=16−1=15. Chọn nguyên hàm x⁴, kiểm đa thức liên tục trên [1,2]; nếu viết +C trong 15 sẽ biến kết quả số thành họ hàm vô nghĩa.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫₁³4x dx bằng nguyên hàm và cận.
+**Đề bài:** Tính \(\int_{1}^{3} 4x\,\mathrm dx\) bằng nguyên hàm và cận.
 
-**Lời giải:** f(x)=4x liên tục trên [1,3], F(x)=2x². Định lí Newton–Leibniz cho ∫₁³4x dx=F(3)−F(1)=18−2=16. Tích phân có cận là số, không thêm +C.
+**Lời giải:** f(x)=4x liên tục trên [1,3], F(x)=2x². Định lí Newton–Leibniz cho \(\int_{1}^{3} 4x\,\mathrm dx\)=F(3)−F(1)=18−2=16. Tích phân có cận là số, không thêm +C.
 
 **Vận dụng** Tính \(\displaystyle\int_1^3 2x\,dx\). Viết rõ giá trị nguyên hàm ở cả hai cận.
 
@@ -288,11 +288,11 @@ Nếu em thêm \(+C\) vào tích phân có cận hoặc chỉ thế cận trên,
 
 > **TÍNH CHẤT — Tính tuyến tính của tích phân.** Tính tuyến tính cho phép gộp những tích phân có cận phù hợp. Vì sao có thể tách một biểu thức dài thành vài tích phân nhỏ? Ta bắt đầu từ phép cộng, hằng số và cùng cận [a,b]. ∫_a^b(αf+βg)=α∫_a^b f+β∫_a^b g khi các thành phần khả tích; tất cả dùng cùng cận. Tính tuyến tính không cho quyền thay cận tùy ý. Nếu một thành phần không xác định trên đoạn, phải xử lý vấn đề trước.
 
-Chẳng hạn, ∫₀¹(3x²+2x+1)dx=[x³+x²+x]₀¹=3. Có thể tách thành1+1+1. Chọn cách tổng từng thành phần vì số hạng là đa thức.
+Chẳng hạn, \(\int_{0}^{1} (3x^{2}+2x+1)\,\mathrm dx\)=[x³+x²+x]₀¹=3. Có thể tách thành1+1+1. Chọn cách tổng từng thành phần vì số hạng là đa thức.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫₀²(3x²−2x+4)dx và giải thích phép tách.
+**Đề bài:** Tính \(\int_{0}^{2} (3x^{2}-2x+4)\,\mathrm dx\) và giải thích phép tách.
 
 **Lời giải:** Các đa thức đều khả tích trên [0,2]; dùng tuyến tính, F=x³−x²+4x. Giá trị là F(2)−F(0)=8−4+8=12. Cũng có thể tách thành ba tích phân và tính riêng từng tích phân **với cùng hai cận 0 và 2**:
 
@@ -303,7 +303,7 @@ Chẳng hạn, ∫₀¹(3x²+2x+1)dx=[x³+x²+x]₀¹=3. Có thể tách thành1
 
 Hai cách hoàn toàn tương đương; không được tự ý thay cận của một số hạng mà không có phép biến đổi hợp lệ.
 
-**Vận dụng** ∫₀²(2x+3)dx?
+**Vận dụng** \(\int_{0}^{2} (2x+3)\,\mathrm dx\)?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -325,13 +325,13 @@ Nếu em tách biểu thức nhưng đổi nhầm cận hoặc không nhân hệ
 
 > **TÍNH CHẤT — Đảo cận và ghép cận.** Chiều lấy cận quyết định dấu tích phân. Đi ngược chiều tích lũy làm thay đổi dấu nhưng có làm diện tích âm không? Cần nhớ F(b)−F(a) với F′=f, và phép đổi dấu khi đảo hai cận. ∫_b^a f=−∫_a^b f, ∫_a^a f=0; nếu a≤c≤b, ∫_a^b f=∫_a^c f+∫_c^b f. Đây là **tích phân có hướng**, không đồng nhất với diện tích hình học. Quy tắc ghép cũng có thể dùng để chia tại nghiệm đổi dấu.
 
-Chẳng hạn, ∫₂⁰(3x²+1)dx=−∫₀²(3x²+1)dx=−10. Giá trị âm xuất phát đảo cận, không đại diện diện tích âm. Chọn đổi thứ tự cận trước thay số.
+Chẳng hạn, \(\int_{2}^{0} (3x^{2}+1)\,\mathrm dx\)=−\(\int_{0}^{2} (3x^{2}+1)\,\mathrm dx\)=−10. Giá trị âm xuất phát đảo cận, không đại diện diện tích âm. Chọn đổi thứ tự cận trước thay số.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫₄¹2x dx và so với ∫₁⁴2x dx.
+**Đề bài:** Tính \(\int_{4}^{1} 2x\,\mathrm dx\) và so với \(\int_{1}^{4} 2x\,\mathrm dx\).
 
-**Lời giải:** F=x². Theo chiều cận 4→1, ∫₄¹2x dx=F(1)−F(4)=1−16=−15; cận đảo cho +15. Dấu âm là chiều tích lũy, không phải diện tích hình học âm.
+**Lời giải:** F=x². Theo chiều cận 4→1, \(\int_{4}^{1} 2x\,\mathrm dx\)=F(1)−F(4)=1−16=−15; cận đảo cho +15. Dấu âm là chiều tích lũy, không phải diện tích hình học âm.
 
 **Vận dụng** Biết \(\int_1^3 f(x)\,dx=5\) và \(\int_3^5 f(x)\,dx=-2\), trong đó \(f\) liên tục trên \([1;5]\). Tính \(\int_1^5 f(x)\,dx\), \(\int_5^1 f(x)\,dx\) và \(\int_3^3 f(x)\,dx\).
 
@@ -351,22 +351,22 @@ Nếu em quên dấu khi đảo cận hoặc ghép sai khoảng, đọc **Kiến
 
 <!-- LESSON_ID: TOP11-M11; OUTCOME_ID: TOP11-O11 -->
 
-> **CÔNG THỨC — Từ tích lũy tới diện tích không âm.** Diện tích dưới đồ thị bằng tích phân khi hàm không âm. Tại sao tổng các hình chữ nhật rất mỏng mô phỏng đúng diện tích cong? Để xác định điều đó, cần xét đồ thị liên tục và không âm, dải đứng rộng dx. Nếu f(x)≥0 liên tục trên [a,b], diện tích vùng giữa đồ thị, Ox, hai đường x=a,b bằng ∫_a^b f(x)dx. Ý nghĩa là giới hạn tổng diện tích dải hẹp f(x)dx. Nếu f đổi dấu, tích phân cho phần diện tích đại số chứ không phải tổng vùng.
+> **CÔNG THỨC — Từ tích lũy tới diện tích không âm.** Diện tích dưới đồ thị bằng tích phân khi hàm không âm. Tại sao tổng các hình chữ nhật rất mỏng mô phỏng đúng diện tích cong? Để xác định điều đó, cần xét đồ thị liên tục và không âm, dải đứng rộng dx. Nếu f(x)≥0 liên tục trên [a,b], diện tích vùng giữa đồ thị, Ox, hai đường x=a,b bằng \(\int_{a}^{b} f(x)\,\mathrm dx\). Ý nghĩa là giới hạn tổng diện tích dải hẹp f(x)dx. Nếu f đổi dấu, tích phân cho phần diện tích đại số chứ không phải tổng vùng.
 
-Chẳng hạn, y=2x trên [0,2] không âm: S=∫₀²2x dx=[x²]₀²=4, đúng diện tích tam giác đáy2 cao4 là4. Hai phương pháp kiểm chéo bản chất.
+Chẳng hạn, y=2x trên [0,2] không âm: S=\(\int_{0}^{2} 2x\,\mathrm dx\)=[x²]₀²=4, đúng diện tích tam giác đáy2 cao4 là4. Hai phương pháp kiểm chéo bản chất.
 
 **Ví dụ**
 
 **Đề bài:** Tính diện tích hình phẳng dưới y=2x+1 trên [0,2].
 
-**Lời giải:** Vì f=2x+1≥1>0 và liên tục trên đoạn, S=∫₀²(2x+1)dx=[x²+x]₀²=4+2=6 đơn vị diện tích. Dùng diện tích bằng tích phân vì đồ thị nằm trên Ox.
+**Lời giải:** Vì f=2x+1≥1>0 và liên tục trên đoạn, S=\(\int_{0}^{2} (2x+1)\,\mathrm dx\)=[x²+x]₀²=4+2=6 đơn vị diện tích. Dùng diện tích bằng tích phân vì đồ thị nằm trên Ox.
 
 **Vận dụng** Diện tích dưới y=x² trên [0,1]?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-∫₀¹x²dx=1/3 đơn vị².
+\(\int_{0}^{1} x^{2}\,\mathrm dx\)=1/3 đơn vị².
 
 Nếu trả diện tích âm, kiểm f có âm trên đoạn hay không.
 
@@ -395,7 +395,7 @@ Chẳng hạn, v(t)=t−1 trên [0,2]: ∫v=0, nhưng ∫|v|=∫₀¹(1−t)+∫
 
 **Đề bài:** Với f(x)=x−1 trên [0,4], tính tích phân có dấu và diện tích hình học.
 
-**Lời giải:** f đổi dấu ở x=1. Tích phân có dấu ∫₀⁴(x−1)dx=[x²/2−x]₀⁴=4. Diện tích phải tách: ∫₀¹(1−x)dx=1/2 và ∫₁⁴(x−1)dx=9/2, tổng S=5. Không lấy |4| thay ∫|f|.
+**Lời giải:** f đổi dấu ở x=1. Tích phân có dấu \(\int_{0}^{4} (x-1)\,\mathrm dx\)=[x²/2−x]₀⁴=4. Diện tích phải tách: \(\int_{0}^{1} (1-x)\,\mathrm dx\)=1/2 và \(\int_{1}^{4} (x-1)\,\mathrm dx\)=9/2, tổng S=5. Không lấy |4| thay ∫|f|.
 
 **Vận dụng** Một vật chuyển động thẳng với vận tốc có hướng \(v(t)=2-t\) (m/s), \(0\le t\le5\) giây. Tìm thời điểm đổi chiều, độ dời và tổng quãng đường của vật.
 
@@ -423,15 +423,15 @@ Nếu em lấy trị tuyệt đối của **một** tích phân có dấu làm q
 
 > **CÔNG THỨC — Tích phân lượng giác.** Sin, cos và mũ dùng cùng nguyên tắc thế cận sau nguyên hàm. Một biểu thức lượng giác hoặc hàm mũ vẫn tính bằng F(b)−F(a) được không? Ta sử dụng hàm e^x, sin/cos liên tục trên đoạn, góc radian. Nếu f liên tục, quy tắc Newton–Leibniz không phụ thuộc biểu thức có là đa thức hay không. Nguyên hàm cos x là sin x+C, nguyên hàm sin x là −cos x+C (góc radian), và nguyên hàm e^x là e^x+C. Lấy giá trị hai cận đúng, kiểm sinh ra số và dấu. Với e^{kx}, chia k khi tìm nguyên hàm.
 
-Xét ví dụ: ∫₀^{ln3}e^x dx=e^{ln3}−1=2. Chọn F=e^x vì d(e^x)=e^x, cận ln3 cho giá trị hữu hạn. Không viết ln3 thành3 ở cận x.
+Xét ví dụ: \(\int_{0}^{\ln 3} e^x\,\mathrm dx\)=e^{ln3}−1=2. Chọn F=e^x vì d(e^x)=e^x, cận ln3 cho giá trị hữu hạn. Không viết ln3 thành3 ở cận x.
 
 **Ví dụ**
 
-**Đề bài:** Tính ∫₀^π sin x dx khi góc đo radian.
+**Đề bài:** Tính \(\int_{0}^{\pi} \sin  x\,\mathrm dx\) khi góc đo radian.
 
-**Lời giải:** Hàm sin liên tục, F=−cos x. ∫₀^π sin x dx=[−cos x]₀^π=1−(−1)=2. Dùng radian; kết quả khác việc coi góc theo độ.
+**Lời giải:** Hàm sin liên tục, F=−cos x. \(\int_{0}^{\pi} \sin  x\,\mathrm dx\)=[−cos x]₀^π=1−(−1)=2. Dùng radian; kết quả khác việc coi góc theo độ.
 
-**Vận dụng** ∫₀^{π/2} sin x dx?
+**Vận dụng** \(\int_{0}^{\frac{\pi}{2}} \sin  x\,\mathrm dx\)?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -451,22 +451,22 @@ Nếu em quên đạo hàm \(-\cos x\) bằng \(\sin x\) hoặc thế cận góc
 
 <!-- LESSON_ID: TOP11-M14; OUTCOME_ID: TOP11-O14 -->
 
-> **PHƯƠNG PHÁP — Tích lũy từ tốc độ biến thiên.** Tích phân từ tốc độ cho lại lượng tích lũy. Biết tốc độ cuối khoảng có suy được lượng tích lũy bằng 'tốc độ cuối×thời gian'? Ta bắt đầu từ tốc độ biến thiên r(t) và tích phân của r. Nếu Q'(t)=r(t), lượng biến đổi ròng Q(b)−Q(a)=∫_a^b r(t)dt. Khi r không hằng, dùng r(b)(b−a) thường sai; diện tích dưới đồ thị tốc độ phản ánh toàn thời gian. Đơn vị r là lượng/giây, sau tích phân là lượng. Với r đổi dấu, diễn giải ròng.
+> **PHƯƠNG PHÁP — Tích lũy từ tốc độ biến thiên.** Tích phân từ tốc độ cho lại lượng tích lũy. Biết tốc độ cuối khoảng có suy được lượng tích lũy bằng 'tốc độ cuối×thời gian'? Ta bắt đầu từ tốc độ biến thiên r(t) và tích phân của r. Nếu Q'(t)=r(t), lượng biến đổi ròng Q(b)−Q(a)=\(\int_{a}^{b} r(t)\,\mathrm dt\). Khi r không hằng, dùng r(b)(b−a) thường sai; diện tích dưới đồ thị tốc độ phản ánh toàn thời gian. Đơn vị r là lượng/giây, sau tích phân là lượng. Với r đổi dấu, diễn giải ròng.
 
-Chẳng hạn, Lưu lượng r(t)=2t lít/phút trên [0,2]: Q(2)−Q(0)=∫₀²2t dt=4 lít, không phải r(2)·2=8 lít. Chọn dải tốc độ thay đổi thay vì một mức cuối.
+Chẳng hạn, Lưu lượng r(t)=2t lít/phút trên [0,2]: Q(2)−Q(0)=\(\int_{0}^{2} 2t\,\mathrm dt\)=4 lít, không phải r(2)·2=8 lít. Chọn dải tốc độ thay đổi thay vì một mức cuối.
 
 **Ví dụ**
 
 **Đề bài:** Một vật chuyển động thẳng với vận tốc có hướng v(t)=5−2t (m/s) trong 0≤t≤2 giây. Tính độ dời của vật.
 
-**Lời giải:** Độ dời s(2)−s(0)=∫₀²v(t)dt=∫₀²(5−2t)dt=[5t−t²]₀²=10−4=6 m. Không tính bằng v(2)·2=2 m vì vận tốc không hằng; trên [0,2] có v(t)≥1 m/s nên quãng đường cũng bằng 6 m.
+**Lời giải:** Độ dời s(2)−s(0)=\(\int_{0}^{2} v(t)\,\mathrm dt\)=\(\int_{0}^{2} (5-2t)\,\mathrm dt\)=[5t−t²]₀²=10−4=6 m. Không tính bằng v(2)·2=2 m vì vận tốc không hằng; trên [0,2] có v(t)≥1 m/s nên quãng đường cũng bằng 6 m.
 
 **Vận dụng** Một vật có vận tốc có hướng v(t)=3t² (m/s) trong 0≤t≤1 giây. Độ dời là bao nhiêu?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Độ dời bằng ∫₀¹3t²dt=1 m.
+Độ dời bằng \(\int_{0}^{1} 3t^{2}\,\mathrm dt\)=1 m.
 
 Nếu kết quả còn đơn vị m/s, em chưa tích phân theo thời gian (giây).
 
@@ -529,13 +529,13 @@ Khi đồ thị cắt trục, cần chia miền và cộng diện tích. Khi đ�
 
  Nếu f đổi dấu, chia tại tất cả nghiệm trong đoạn và đổi dấu tích phân tương ứng; nếu f không âm xuyên đoạn, không cần chia. Diện tích luôn ≥0 và có đơn vị²; không dùng |∫f| trừ khi f giữ dấu.
 
-Chẳng hạn, f(x)=x trên [−2,2]: tích phân có dấu0, nhưng S=∫−₂⁰(−x)dx+∫₀²x dx=2+2=4. Chọn mốc x=0 vì đường cắt Ox ở đó.
+Chẳng hạn, f(x)=x trên [−2,2]: tích phân có dấu0, nhưng S=\(\int_{-2}^{0} (-x)\,\mathrm dx\)+\(\int_{0}^{2} x\,\mathrm dx\)=2+2=4. Chọn mốc x=0 vì đường cắt Ox ở đó.
 
 **Ví dụ**
 
 **Đề bài:** Với y=x²−1 trên [−2,2], tính tích phân có dấu và diện tích giữa đồ thị với Ox.
 
-**Lời giải:** Hàm đổi dấu ở x=−1 và x=1. Tích phân có dấu ∫₋₂²(x²−1)dx=[x³/3−x]₋₂²=4/3. Diện tích: hai mảnh ngoài mỗi mảnh ∫₁²(x²−1)dx=4/3 và mảnh giữa ∫₋₁¹(1−x²)dx=4/3, nên S=4. Không lấy |∫f| làm diện tích.
+**Lời giải:** Hàm đổi dấu ở x=−1 và x=1. Tích phân có dấu \(\int_{-2}^{2} (x^{2}-1)\,\mathrm dx\)=[x³/3−x]₋₂²=4/3. Diện tích: hai mảnh ngoài mỗi mảnh \(\int_{1}^{2} (x^{2}-1)\,\mathrm dx\)=4/3 và mảnh giữa \(\int_{-1}^{1} (1-x^{2})\,\mathrm dx\)=4/3, nên S=4. Không lấy |∫f| làm diện tích.
 
 **Vận dụng** Tính diện tích hình phẳng giữa \(y=2x-2\) và trục hoành trên \([0;3]\). Tự tìm mốc chia đoạn.
 
@@ -555,22 +555,22 @@ Nếu em cho phép hai phần hình nằm trên/dưới Ox triệt tiêu thành 
 
 <!-- LESSON_ID: TOP11-M17; OUTCOME_ID: TOP11-O17 -->
 
-> **CÔNG THỨC — Diện tích giữa hai đường.** Giữa hai đường, phải xét đường trên trước. Lấy 'trên−dưới' vì sao cho diện tích dải đứng không âm? Ta đã biết đồ thị liên tục f,g trên [a,b] và dấu f−g. Nếu f(x)≥g(x) trên cả đoạn, dải đứng có chiều cao f−g≥0; diện tích S=∫_a^b(f−g)dx. Kiểm bằng một điểm thử trong mỗi khoảng có thể đổi thứ tự; nếu f−g không giữ dấu, chuyển sang bài chia miền. Đơn vị².
+> **CÔNG THỨC — Diện tích giữa hai đường.** Giữa hai đường, phải xét đường trên trước. Lấy 'trên−dưới' vì sao cho diện tích dải đứng không âm? Ta đã biết đồ thị liên tục f,g trên [a,b] và dấu f−g. Nếu f(x)≥g(x) trên cả đoạn, dải đứng có chiều cao f−g≥0; diện tích S=\(\int_{a}^{b} (f-g)\,\mathrm dx\). Kiểm bằng một điểm thử trong mỗi khoảng có thể đổi thứ tự; nếu f−g không giữ dấu, chuyển sang bài chia miền. Đơn vị².
 
-Chẳng hạn, Trên [0,1], f=2, g=x², rõ 2>x², S=∫₀¹(2−x²)dx=2−1/3=5/3. Chọn đường trên y=2 rồi trừ y=x²; kết quả dương.
+Chẳng hạn, Trên [0,1], f=2, g=x², rõ 2>x², S=\(\int_{0}^{1} (2-x^{2})\,\mathrm dx\)=2−1/3=5/3. Chọn đường trên y=2 rồi trừ y=x²; kết quả dương.
 
 **Ví dụ**
 
 **Đề bài:** Tính diện tích giữa y=2x+1 và y=x+1 trên [0,2].
 
-**Lời giải:** Hiệu (2x+1)−(x+1)=x≥0 trên [0,2], nên đường thứ nhất nằm trên. S=∫₀²x dx=[x²/2]₀²=2 đơn vị diện tích. Chọn trên−dưới thay vì cộng hai tích phân.
+**Lời giải:** Hiệu (2x+1)−(x+1)=x≥0 trên [0,2], nên đường thứ nhất nằm trên. S=\(\int_{0}^{2} x\,\mathrm dx\)=[x²/2]₀²=2 đơn vị diện tích. Chọn trên−dưới thay vì cộng hai tích phân.
 
 **Vận dụng** S giữa y=3 và y=x trên [0,2]?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-∫₀²(3−x)dx=4.
+\(\int_{0}^{2} (3-x)\,\mathrm dx\)=4.
 
 Nếu hiệu âm, hãy kiểm đã trừ đúng 'trên−dưới'.
 
@@ -585,7 +585,7 @@ Nếu em lấy đường dưới trừ đường trên hoặc bỏ kiểm vị t
 
 <!-- LESSON_ID: TOP11-M18; OUTCOME_ID: TOP11-O18 -->
 
-> **PHƯƠNG PHÁP — Hai đường đổi thứ tự.** Khi hai đường giao, thứ tự có thể đổi trong đoạn. Một giao điểm nằm trong [a,b] có thể đổi thứ tự hai đường ra sao? Ta sử dụng phương trình f=g, dấu f−g, tích phân trị tuyệt đối. Tính diện tích giữa hai đường trên [a,b] bằng ∫_a^b|f−g|dx; giải điểm giao, chia tại nghiệm trong khoảng, kiểm đường nào trên mỗi mảnh. Các diện tích không âm phải **cộng**, không cộng tích phân có dấu chưa đổi. Không cần chia tại điểm chạm không đổi dấu, nhưng phải kiểm.
+> **PHƯƠNG PHÁP — Hai đường đổi thứ tự.** Khi hai đường giao, thứ tự có thể đổi trong đoạn. Một giao điểm nằm trong [a,b] có thể đổi thứ tự hai đường ra sao? Ta sử dụng phương trình f=g, dấu f−g, tích phân trị tuyệt đối. Tính diện tích giữa hai đường trên [a,b] bằng \(\int_{a}^{b} |f-g|\,\mathrm dx\); giải điểm giao, chia tại nghiệm trong khoảng, kiểm đường nào trên mỗi mảnh. Các diện tích không âm phải **cộng**, không cộng tích phân có dấu chưa đổi. Không cần chia tại điểm chạm không đổi dấu, nhưng phải kiểm.
 
 Xét ví dụ: f=x,g=x² trên [0,2], giao x=0,1. Trên (0,1) x>x², trên (1,2) x²>x: S=1/6+5/6=1. Trong khi ∫₀²(x−x²)=−2/3, minh họa sai nếu không chia.
 
@@ -597,7 +597,7 @@ Xét ví dụ: f=x,g=x² trên [0,2], giao x=0,1. Trên (0,1) x>x², trên (1,2)
 
 **Đề bài:** Tính diện tích giữa y=3x và y=x² trên [0,4]; cần chia ở đâu?
 
-**Lời giải:** Hai đường giao khi x²=3x, tức x=0 và x=3. Trên (0,3) 3x>x², trên (3,4) x²>3x. S=∫₀³(3x−x²)dx+∫₃⁴(x²−3x)dx=9/2+11/6=19/3. Không lấy trị tuyệt đối của một tích phân duy nhất.
+**Lời giải:** Hai đường giao khi x²=3x, tức x=0 và x=3. Trên (0,3) 3x>x², trên (3,4) x²>3x. S=\(\int_{0}^{3} (3x-x^{2})\,\mathrm dx\)+\(\int_{3}^{4} (x^{2}-3x)\,\mathrm dx\)=9/2+11/6=19/3. Không lấy trị tuyệt đối của một tích phân duy nhất.
 
 **Vận dụng** Tính diện tích giữa \(y=2x\) và \(y=x^2\) trên đoạn \([0,3]\). Vì sao phải chia miền tại một giao điểm ở trong đoạn?
 
@@ -619,13 +619,13 @@ Nếu em dùng một hiệu có dấu xuyên qua giao điểm đổi thứ tự 
 
 > **PHƯƠNG PHÁP — Mô hình diện tích từ giao điểm.** Mô hình diện tích cần đúng giao điểm, cận và đơn vị. Vì sao phải tìm đường biên và giao điểm trước khi bấm nguyên hàm? Ta bắt đầu từ hình phẳng bị chặn, giải f=g và kiểm miền các nhánh. Lập mô hình: xác định ranh giới và trục, chọn biến theo chiều lát cắt, giải giao điểm thực nằm trong miền, kiểm thứ tự trên/dưới, tính tích phân diện tích, ghi đơn vị². Có khi hai đường không tạo miền kín nếu thiếu cận hoặc không có điểm giao thứ hai; không tự tạo cận 0,1 từ hình tưởng tượng.
 
-Chẳng hạn, cho y=2x và y=x²: giao x=0 và2, trên (0,2) 2x≥x² nên S=∫₀²(2x−x²)dx=4/3 đơn vị². Chọn cận 0..2 từ phương trình chứ không từ dáng đồ thị.
+Chẳng hạn, cho y=2x và y=x²: giao x=0 và2, trên (0,2) 2x≥x² nên S=\(\int_{0}^{2} (2x-x^{2})\,\mathrm dx\)=4/3 đơn vị². Chọn cận 0..2 từ phương trình chứ không từ dáng đồ thị.
 
 **Ví dụ**
 
 **Đề bài:** Tìm diện tích hình phẳng giới hạn bởi y=2−x² và y=x giữa hai giao điểm.
 
-**Lời giải:** Giải 2−x²=x ⇒ x²+x−2=0 ⇒ x=−2 và x=1. Trên (−2,1) hiệu 2−x²−x>0 (thử x=0). S=∫₋₂¹(2−x²−x)dx=[2x−x³/3−x²/2]₋₂¹=9/2 đơn vị diện tích. Các cận do giao điểm quyết định.
+**Lời giải:** Giải 2−x²=x ⇒ x²+x−2=0 ⇒ x=−2 và x=1. Trên (−2,1) hiệu 2−x²−x>0 (thử x=0). S=\(\int_{-2}^{1} (2-x^{2}-x)\,\mathrm dx\)=[2x−x³/3−x²/2]₋₂¹=9/2 đơn vị diện tích. Các cận do giao điểm quyết định.
 
 **Vận dụng** Hai đồ thị \(y=4-x^2\) và \(y=0\) tạo thành một hình phẳng bị chặn. Tự tìm hai giao điểm, xác định đường nằm trên giữa chúng rồi tính diện tích.
 
@@ -651,9 +651,9 @@ Mỗi lát cắt mỏng của một khối có diện tích riêng; cộng chún
 
 <!-- LESSON_ID: TOP11-M20; OUTCOME_ID: TOP11-O20 -->
 
-Nếu mỗi lát mỏng đã biết diện tích, tổng lát cho thể tích như thế nào? Cần nhớ tiết diện A(x)≥0 có đơn vị diện tích, độ dày dx. Với khối được xác định trên [a,b], diện tích thiết diện vuông góc Ox tại x là A(x), V=∫_a^bA(x)dx (khi hàm diện tích thiết diện A liên tục trên [a,b]). Chọn công thức A theo **hình dạng tiết diện thật**: vuông thì s², tròn thì πr², hình khác có công thức khác. Không thêm π nếu không phải mặt cắt tròn.
+Nếu mỗi lát mỏng đã biết diện tích, tổng lát cho thể tích như thế nào? Cần nhớ tiết diện A(x)≥0 có đơn vị diện tích, độ dày dx. Với khối được xác định trên [a,b], diện tích thiết diện vuông góc Ox tại x là A(x), V=\(\int_{a}^{b} A(x)\,\mathrm dx\) (khi hàm diện tích thiết diện A liên tục trên [a,b]). Chọn công thức A theo **hình dạng tiết diện thật**: vuông thì s², tròn thì πr², hình khác có công thức khác. Không thêm π nếu không phải mặt cắt tròn.
 
-Chẳng hạn, Tiết diện vuông cạnh 2x trên [0,1] (đơn vị cm): A=4x² cm², V=∫₀¹4x²dx=4/3 cm³. Chọn vuông nên không có π.
+Chẳng hạn, Tiết diện vuông cạnh 2x trên [0,1] (đơn vị cm): A=4x² cm², V=\(\int_{0}^{1} 4x^{2}\,\mathrm dx\)=4/3 cm³. Chọn vuông nên không có π.
 
 > **CÔNG THỨC — Thể tích từ thiết diện vuông.** Hình minh họa **hai lát cắt có cùng độ dài tham chiếu bằng 1**, không phải các thiết diện cạnh \(2x\) của ví dụ tính \(4/3\) vừa giải. Nếu cạnh hình vuông \(s=1\), diện tích là \(s^2=1\); nếu bán kính hình tròn \(r=1\), diện tích là \(\pi r^2=\pi\). Bởi vậy phải xác định hình dạng mặt cắt **trước** khi lập \(V=\int A(x)\,dx\): khác hình, khác diện tích dù dùng cùng một số đo chiều dài.
 
@@ -675,7 +675,7 @@ Bình phương rồi lấy tích phân từ \(0\) đến \(h\) cho thể tích.
 
 **Đề bài:** Một khối có tiết diện vuông cạnh s(x)=2x+1 cm, x∈[0,1] cm. Tính thể tích.
 
-**Lời giải:** Diện tích mặt cắt A(x)=(2x+1)²=4x²+4x+1 cm². V=∫₀¹A(x)dx=4/3+2+1=13/3 cm³. Không nhân π vì tiết diện là hình vuông.
+**Lời giải:** Diện tích mặt cắt A(x)=(2x+1)²=4x²+4x+1 cm². V=\(\int_{0}^{1} A(x)\,\mathrm dx\)=4/3+2+1=13/3 cm³. Không nhân π vì tiết diện là hình vuông.
 
 **Vận dụng** Tiết diện vuông cạnh 3 không đổi, đoạn dài2: thể tích?
 
@@ -697,22 +697,22 @@ Nếu em lấy chiều dài cạnh hình vuông làm diện tích, hoặc nhân 
 
 <!-- LESSON_ID: TOP11-M21; OUTCOME_ID: TOP11-O21 -->
 
-> **CÔNG THỨC — Thể tích từ tiết diện tròn.** Thiết diện tròn dùng diện tích đĩa πr². Nếu lát cắt tròn, công thức phải sửa như thế nào so với tiết diện vuông? Để xác định điều đó, cần xét diện tích đĩa tròn πr², r≥0 theo x. Đối với khối có mặt cắt vuông góc Ox hình tròn bán kính r(x)≥0 trên [a,b], A(x)=πr(x)², V=π∫r²dx. Đây là phương pháp mặt cắt; **không nhất thiết** là miền quay nếu bài toán chỉ nói thiết diện. Chuyển đơn vị: r cm ⇒ A cm², dx cm ⇒ V cm³.
+> **CÔNG THỨC — Thể tích từ tiết diện tròn.** Thiết diện tròn dùng diện tích đĩa πr². Nếu lát cắt tròn, công thức phải sửa như thế nào so với tiết diện vuông? Để xác định điều đó, cần xét diện tích đĩa tròn πr², r≥0 theo x. Đối với khối có mặt cắt vuông góc Ox hình tròn bán kính r(x)≥0 trên [a,b], A(x)=πr(x)², V=π\(\int r^{2}\,\mathrm dx\). Đây là phương pháp mặt cắt; **không nhất thiết** là miền quay nếu bài toán chỉ nói thiết diện. Chuyển đơn vị: r cm ⇒ A cm², dx cm ⇒ V cm³.
 
-Chẳng hạn, r(x)=2x trên [0,1], V=π∫₀¹4x²dx=4π/3 đơn vị³. Chọn π vì lát tròn và bình phương r, không nhầm bán kính với diện tích.
+Chẳng hạn, r(x)=2x trên [0,1], V=π\(\int_{0}^{1} 4x^{2}\,\mathrm dx\)=4π/3 đơn vị³. Chọn π vì lát tròn và bình phương r, không nhầm bán kính với diện tích.
 
 **Ví dụ**
 
 **Đề bài:** Khối có thiết diện tròn bán kính r(x)=√(x+1) cm với x∈[0,3] cm. Tính V.
 
-**Lời giải:** Vì r≥0, A(x)=πr²=π(x+1) cm². V=π∫₀³(x+1)dx=π(9/2+3)=15π/2 cm³. Đơn vị cm³; không lấy diện tích hình vuông.
+**Lời giải:** Vì r≥0, A(x)=πr²=π(x+1) cm². V=π\(\int_{0}^{3} (x+1)\,\mathrm dx\)=π(9/2+3)=15π/2 cm³. Đơn vị cm³; không lấy diện tích hình vuông.
 
 **Vận dụng** r(x)=1+x trên [0,1], V?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-π∫₀¹(1+x)²dx=7π/3.
+π\(\int_{0}^{1} (1+x)^{2}\,\mathrm dx\)=7π/3.
 
 Nếu ra \(\frac{3\pi}2\), em đã tính \(\pi\int_0^1(1+x)\,dx\), tức tích phân bán kính thay vì diện tích tiết diện. Phải bình phương bán kính trước: \(\pi(1+x)^2\).
 
@@ -727,9 +727,9 @@ Nếu em quên bình phương bán kính hoặc nhầm đường kính với bá
 
 <!-- LESSON_ID: TOP11-M22; OUTCOME_ID: TOP11-O22 -->
 
-> **CÔNG THỨC — Đĩa và vành khăn khối xoay.** Khối xoay cho tiết diện đĩa hoặc vành khăn tùy vùng. Vì sao thể tích quay một vùng giữa hai đồ thị có thể phải trừ hai đĩa? Ta đã biết bán kính là khoảng cách từ đồ thị đến Ox, miền f≥g≥0. Nếu \(f\) **liên tục, không âm** trên \([a,b]\) và quay vùng 0≤y≤f(x) quanh Ox, lát cắt đĩa bán kính f, thể tích V=π∫f²dx. Điều kiện liên tục và không âm giúp áp dụng đúng công thức đĩa; với vùng khác cần phân tích lại thiết diện. Nếu quay miền g≤y≤f với 0≤g≤f quanh Ox, lát cắt là vành khăn với bán kính ngoài R=f, bán kính trong r=g, V=π∫(R²−r²)dx. Nếu đường cắt Ox/hai vùng chồng khi quay, công thức đơn giản có thể không áp; cần phân tích hình cắt cẩn thận.
+> **CÔNG THỨC — Đĩa và vành khăn khối xoay.** Khối xoay cho tiết diện đĩa hoặc vành khăn tùy vùng. Vì sao thể tích quay một vùng giữa hai đồ thị có thể phải trừ hai đĩa? Ta đã biết bán kính là khoảng cách từ đồ thị đến Ox, miền f≥g≥0. Nếu \(f\) **liên tục, không âm** trên \([a,b]\) và quay vùng 0≤y≤f(x) quanh Ox, lát cắt đĩa bán kính f, thể tích V=π\(\int f^{2}\,\mathrm dx\). Điều kiện liên tục và không âm giúp áp dụng đúng công thức đĩa; với vùng khác cần phân tích lại thiết diện. Nếu quay miền g≤y≤f với 0≤g≤f quanh Ox, lát cắt là vành khăn với bán kính ngoài R=f, bán kính trong r=g, V=π\(\int (R^{2}-r^{2})\,\mathrm dx\). Nếu đường cắt Ox/hai vùng chồng khi quay, công thức đơn giản có thể không áp; cần phân tích hình cắt cẩn thận.
 
-Chẳng hạn, Quay vùng 0≤y≤x, x∈[0,1] quanh Ox, V=π∫₀¹x²dx=π/3. Nếu quay vùng x≤y≤2, x∈[0,2], ngoài R=2 trong r=x: V=π∫₀²(4−x²)dx=16π/3. Chọn hiệu bình phương bán kính chứ không bình phương chiều dày.
+Chẳng hạn, Quay vùng 0≤y≤x, x∈[0,1] quanh Ox, V=π\(\int_{0}^{1} x^{2}\,\mathrm dx\)=π/3. Nếu quay vùng x≤y≤2, x∈[0,2], ngoài R=2 trong r=x: V=π\(\int_{0}^{2} (4-x^{2})\,\mathrm dx\)=16π/3. Chọn hiệu bình phương bán kính chứ không bình phương chiều dày.
 
 Ngay trên hình, lấy miền \(0\le x\le2\), \(x\le y\le2\) quay quanh \(Ox\). Tại lát \(x=1\), vành khăn có bán kính ngoài 2, trong 1 nên diện tích \(\pi(2^2-1^2)=3\pi\). Khi cộng các lát, \(V=\pi\int_0^2(4-x^2)\,dx=16\pi/3\). Việc **trừ hai bình phương** xuất phát từ diện tích đĩa lớn trừ đĩa nhỏ, không từ bình phương bề dày.
 
@@ -741,7 +741,7 @@ Ngay trên hình, lấy miền \(0\le x\le2\), \(x\le y\le2\) quay quanh \(Ox\).
 
 **Đề bài:** Miền 0≤x≤1, x≤y≤x+2 quay quanh Ox. Tính thể tích khối xoay.
 
-**Lời giải:** Bán kính ngoài R=x+2, trong r=x≥0; lát cắt là vành khăn. A=π(R²−r²)=π[(x+2)²−x²]=π(4x+4). V=π∫₀¹(4x+4)dx=π(2+4)=6π đơn vị³. Không tính π(R−r)² và không nhầm với đĩa đặc.
+**Lời giải:** Bán kính ngoài R=x+2, trong r=x≥0; lát cắt là vành khăn. A=π(R²−r²)=π[(x+2)²−x²]=π(4x+4). V=π\(\int_{0}^{1} (4x+4)\,\mathrm dx\)=π(2+4)=6π đơn vị³. Không tính π(R−r)² và không nhầm với đĩa đặc.
 
 **Vận dụng** Quay miền \(0\le x\le2,\ 1\le y\le3\) quanh trục \(Ox\). Tính thể tích và giải thích vì sao không dùng đĩa đặc.
 
@@ -941,7 +941,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-W03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O03; SINGLE_ITEM_ID -->
 
-**Bài 12.** Giải đầy đủ ∫(2x^3+6x−2)dx và kiểm bằng đạo hàm.
+**Bài 12.** Giải đầy đủ \(\int (2x^3+6x-2)\,\mathrm dx\) và kiểm bằng đạo hàm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -971,7 +971,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-P03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O03; SINGLE_ITEM_ID -->
 
-**Bài 14.** Tính ∫(5x^4−4x+3)dx.
+**Bài 14.** Tính \(\int (5x^4-4x+3)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -985,7 +985,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-C03; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O03; SINGLE_ITEM_ID -->
 
-**Bài 15.** Tính ∫6x^2 dx.
+**Bài 15.** Tính \(\int 6x^2\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -999,13 +999,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P03; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O03; SINGLE_ITEM_ID -->
 
-**Bài 16.** Tính ∫(3x²+4x−2)dx.
+**Bài 16.** Tính \(\int (3x^{2}+4x-2)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** x³+2x²−2x+C.
 
-**Lời giải:** Lấy nguyên hàm từng hạng: ∫3x²dx=x³, ∫4xdx=2x² và ∫(−2)dx=−2x. Cộng lại được x³+2x²−2x+C; đạo hàm ngược trả đúng3x²+4x−2.
+**Lời giải:** Lấy nguyên hàm từng hạng: \(\int 3x^{2}\,\mathrm dx\)=x³, \(\int 4x\,\mathrm dx\)=2x² và \(\int (-2)\,\mathrm dx\)=−2x. Cộng lại được x³+2x²−2x+C; đạo hàm ngược trả đúng3x²+4x−2.
 
 **Nếu làm sai:** Quy tắc lũy thừa tăng số mũ thêm1 rồi chia hệ số mới; kiểm bằng đạo hàm.
 
@@ -1019,7 +1019,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4ln|x|+1/x+C.
 
-**Lời giải:** ∫−x^(−2)dx=+1/x; đạo hàm của 1/x là −1/x².
+**Lời giải:** \(\int -x^{-2}\,\mathrm dx\)=+1/x; đạo hàm của 1/x là −1/x².
 
 **Rubric tự luận /5:** 1đ điều kiện x≠0; 2đ log và lũy thừa; 1đ +C; 1đ đạo hàm kiểm.
 
@@ -1091,7 +1091,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** F(x)=2ln(−x)+sin x+4+sin1 (x<0).
 
-**Lời giải:** Vì x<0 nên ∫2/x dx=2ln(−x), và ∫cos x dx=sin x. F=2ln(−x)+sin x+C. F(−1)=0−sin1+C=4⇒C=4+sin1. Đạo hàm ln(−x) là (−1)/(−x)=1/x, nên F'=2/x+cos x; F(−1)=4. ln x không xác định thực nếu x<0.
+**Lời giải:** Vì x<0 nên ∫2/x dx=2ln(−x), và \(\int \cos  x\,\mathrm dx\)=sin x. F=2ln(−x)+sin x+C. F(−1)=0−sin1+C=4⇒C=4+sin1. Đạo hàm ln(−x) là (−1)/(−x)=1/x, nên F'=2/x+cos x; F(−1)=4. ln x không xác định thực nếu x<0.
 
 **Rubric /7:**
 1. Giữ miền x<0 (1đ)
@@ -1108,7 +1108,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-W05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O05; SINGLE_ITEM_ID -->
 
-**Bài 23.** Giải ∫(2^x+3e^x)dx và kiểm đạo hàm.
+**Bài 23.** Giải \(\int (2^x+3e^x)\,\mathrm dx\) và kiểm đạo hàm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1118,7 +1118,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Rubric tự luận /5:** 1đ nêu a>0,a≠1; 2đ hai nguyên hàm đúng; 1đ hằng số; 1đ kiểm đạo hàm.
 
-**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: ∫e^{kx}dx=e^{kx}/k+C.
+**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx\)=e^{kx}/k+C.
 
 </details>
 
@@ -1132,13 +1132,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Lời giải:** q=3e^t+C; 3+C=5 => C=2. Giải thích chọn cách: Tách hệ số rồi chia ln a nếu cơ số a không phải e.
 
-**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: ∫e^{kx}dx=e^{kx}/k+C.
+**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx\)=e^{kx}/k+C.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-P05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O05; SINGLE_ITEM_ID -->
 
-**Bài 25.** Tính ∫2^x dx.
+**Bài 25.** Tính \(\int 2^x\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1146,13 +1146,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Lời giải:** (2^x)'=2^x ln2, vì vậy chia ln2.
 
-**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: ∫e^{kx}dx=e^{kx}/k+C.
+**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx\)=e^{kx}/k+C.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-C05; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O05; SINGLE_ITEM_ID -->
 
-**Bài 26.** Tính ∫e^x dx.
+**Bài 26.** Tính \(\int e^x\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1160,19 +1160,19 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Lời giải:** Vì đạo hàm e^x là e^x. Giải thích chọn cách: Tách hệ số rồi chia ln a nếu cơ số a không phải e.
 
-**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: ∫e^{kx}dx=e^{kx}/k+C.
+**Nếu làm sai:** Kiểm hệ số của đạo hàm hàm mũ bên trong: \(\int e^{kx}\,\mathrm dx\)=e^{kx}/k+C.
 
 </details>
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P05; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O05; SINGLE_ITEM_ID -->
 
-**Bài 27.** Tính ∫(2e^{2x}+3^x)dx.
+**Bài 27.** Tính \(\int (2e^{2x}+3^x)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** e^{2x}+3^x/ln3+C.
 
-**Lời giải:** ∫2e^{2x}dx=e^{2x} vì đạo hàm e^{2x} là2e^{2x}. ∫3^xdx=3^x/ln3 vì đạo hàm 3^x=3^x ln3. Cộng được F=e^{2x}+3^x/ln3+C.
+**Lời giải:** \(\int 2e^{2x}\,\mathrm dx\)=e^{2x} vì đạo hàm e^{2x} là2e^{2x}. \(\int 3^x\,\mathrm dx\)=3^x/ln3 vì đạo hàm 3^x=3^x ln3. Cộng được F=e^{2x}+3^x/ln3+C.
 
 **Nếu làm sai:** Không áp quy tắc nguyên hàm x^n cho hàm có x ở số mũ; dùng đạo hàm mũ ngược.
 
@@ -1210,7 +1210,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-P06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O06; SINGLE_ITEM_ID -->
 
-**Bài 30.** Tính ∫(3sin x−2cos x)dx.
+**Bài 30.** Tính \(\int (3\sin  x-2\cos  x)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1224,7 +1224,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B11-C06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O06; SINGLE_ITEM_ID -->
 
-**Bài 31.** Tính ∫2cos x dx.
+**Bài 31.** Tính \(\int 2\cos  x\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1238,13 +1238,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P06; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O06; SINGLE_ITEM_ID -->
 
-**Bài 32.** Tính ∫(2cos x−3sin x)dx.
+**Bài 32.** Tính \(\int (2\cos  x-3\sin  x)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 2sin x+3cos x+C (x radian).
 
-**Lời giải:** Với x đo radian, ∫2cos x dx=2sin x; ∫−3sin x dx=+3cos x do (cos x)'=−sin x. Họ nguyên hàm là 2sin x+3cos x+C; kiểm ngược cả hai dấu.
+**Lời giải:** Với x đo radian, \(\int 2\cos  x\,\mathrm dx\)=2sin x; \(\int -3\sin  x\,\mathrm dx\)=+3cos x do (cos x)'=−sin x. Họ nguyên hàm là 2sin x+3cos x+C; kiểm ngược cả hai dấu.
 
 **Nếu làm sai:** Quên dấu âm của đạo hàm cos dễ gây sai nguyên hàm sin; luôn đạo hàm kết quả để kiểm.
 
@@ -1326,7 +1326,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-W01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O08; SINGLE_ITEM_ID -->
 
-**Bài 38.** Tính ∫_{−1}^2 (2x+1)dx và giải thích vì sao kết quả không có +C.
+**Bài 38.** Tính \(\int_{-1}^{2} (2x+1)\,\mathrm dx\) và giải thích vì sao kết quả không có +C.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1348,7 +1348,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 8 m.
 
-**Lời giải:** ∫_0^2 3t²dt=[t³]_0²=8 m; vận tốc không âm nên bằng quãng đường.
+**Lời giải:** \(\int_{0}^{2} 3t^{2}\,\mathrm dt\)=[t³]_0²=8 m; vận tốc không âm nên bằng quãng đường.
 
 **Nếu làm sai:** Kiểm nguyên hàm F và thay đúng b−a, không thêm +C vào tích phân xác định.
 
@@ -1356,7 +1356,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-P01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O08; SINGLE_ITEM_ID -->
 
-**Bài 40.** Tính ∫_1^3 x² dx.
+**Bài 40.** Tính \(\int_{1}^{3} x^{2}\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1370,7 +1370,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-C01; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O08; SINGLE_ITEM_ID -->
 
-**Bài 41.** Tính ∫_0^2 2x dx.
+**Bài 41.** Tính \(\int_{0}^{2} 2x\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1384,13 +1384,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P08; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O08; SINGLE_ITEM_ID -->
 
-**Bài 42.** Tính ∫₀²(3x²+1)dx.
+**Bài 42.** Tính \(\int_{0}^{2} (3x^{2}+1)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** [x³+x]₀²=8+2=10.
 
-**Lời giải:** Lấy F=x³+x vì F'=3x²+1. Theo Newton–Leibniz, ∫₀²(3x²+1)dx=F(2)−F(0)=(8+2)−0=10. Tích phân xác định là số, không cộng +C.
+**Lời giải:** Lấy F=x³+x vì F'=3x²+1. Theo Newton–Leibniz, \(\int_{0}^{2} (3x^{2}+1)\,\mathrm dx\)=F(2)−F(0)=(8+2)−0=10. Tích phân xác định là số, không cộng +C.
 
 **Nếu làm sai:** Ghi hai cận rõ ràng và luôn trừ giá trị tại cận dưới.
 
@@ -1398,7 +1398,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-W02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O09; SINGLE_ITEM_ID -->
 
-**Bài 43.** Giải ∫_1^2 (6x²−4x+1)dx bằng tính tuyến tính; kiểm kết quả.
+**Bài 43.** Giải \(\int_{1}^{2} (6x^{2}-4x+1)\,\mathrm dx\) bằng tính tuyến tính; kiểm kết quả.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1420,7 +1420,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 5 đơn vị.
 
-**Lời giải:** ∫_0^1 (4+2t)dt=[4t+t²]_0^1=5. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.
+**Lời giải:** \(\int_{0}^{1} (4+2t)\,\mathrm dt\)=[4t+t²]_0^1=5. Giải thích chọn cách: Phân phối rồi dùng nguyên hàm từng hạng tử, chỉ thế cận một lần khi đã tổng hợp F.
 
 **Nếu làm sai:** Tách các hạng tử phải giữ cùng cận và hệ số, rồi tính hiệu tại hai đầu.
 
@@ -1428,7 +1428,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-P02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O09; SINGLE_ITEM_ID -->
 
-**Bài 45.** Tính ∫_0^2 (3x²−2)dx.
+**Bài 45.** Tính \(\int_{0}^{2} (3x^{2}-2)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1442,7 +1442,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-C02; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O09; SINGLE_ITEM_ID -->
 
-**Bài 46.** Tính ∫_0^1 (2x+3)dx.
+**Bài 46.** Tính \(\int_{0}^{1} (2x+3)\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1456,13 +1456,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P09; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O09; SINGLE_ITEM_ID -->
 
-**Bài 47.** Tính ∫₁³(2x+1)dx−∫₁³x dx.
+**Bài 47.** Tính \(\int_{1}^{3} (2x+1)\,\mathrm dx\)−\(\int_{1}^{3} x\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** ∫₁³(x+1)dx=[x²/2+x]₁³=(9/2+3)−(1/2+1)=6.
+**Đáp án:** \(\int_{1}^{3} (x+1)\,\mathrm dx\)=[x²/2+x]₁³=(9/2+3)−(1/2+1)=6.
 
-**Lời giải:** Hai tích phân cùng cận, nên gộp ∫₁³[(2x+1)−x]dx=∫₁³(x+1)dx. Nguyên hàm F=x²/2+x, hiệu F(3)−F(1)=(9/2+3)−(1/2+1)=6.
+**Lời giải:** Hai tích phân cùng cận, nên gộp ∫₁³[(2x+1)−x]dx=\(\int_{1}^{3} (x+1)\,\mathrm dx\). Nguyên hàm F=x²/2+x, hiệu F(3)−F(1)=(9/2+3)−(1/2+1)=6.
 
 **Nếu làm sai:** Nếu cận khác nhau, không gộp trực tiếp. Kiểm dấu của dấu trừ trước khi cộng hạng.
 
@@ -1528,13 +1528,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P10; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O10; SINGLE_ITEM_ID -->
 
-**Bài 52.** Tính ∫₃¹ x²dx.
+**Bài 52.** Tính \(\int_{3}^{1} x^{2}\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** −26/3.
 
-**Lời giải:** Dùng đảo cận: ∫₃¹x²dx=−∫₁³x²dx=−[x³/3]₁³=−(27−1)/3=−26/3. Giá trị âm do chiều lấy tích phân, không phải diện tích âm.
+**Lời giải:** Dùng đảo cận: \(\int_{3}^{1} x^{2}\,\mathrm dx\)=−\(\int_{1}^{3} x^{2}\,\mathrm dx\)=−[x³/3]₁³=−(27−1)/3=−26/3. Giá trị âm do chiều lấy tích phân, không phải diện tích âm.
 
 **Nếu làm sai:** Khi cận trên nhỏ hơn cận dưới, đổi chỗ và đặt dấu trừ một lần.
 
@@ -1564,7 +1564,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4 m².
 
-**Lời giải:** S=∫_0²(1+x)dx=[x+x²/2]_0²=4. Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.
+**Lời giải:** S=\(\int_{0}^{2} (1+x)\,\mathrm dx\)=[x+x²/2]_0²=4. Giải thích chọn cách: Kiểm dấu hàm trước khi tích phân; dựng hình/thấy giao điểm với Ox, lấy cận đúng.
 
 **Nếu làm sai:** Diện tích bằng ∫f chỉ khi f≥0 trên [a,b]; nhớ đơn vị bình phương.
 
@@ -1592,7 +1592,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 2 đơn vị².
 
-**Lời giải:** Hàm không âm; S=∫_0^2 xdx=[x²/2]_0²=2.
+**Lời giải:** Hàm không âm; S=\(\int_{0}^{2} x\,\mathrm dx\)=[x²/2]_0²=2.
 
 **Nếu làm sai:** Diện tích bằng ∫f chỉ khi f≥0 trên [a,b]; nhớ đơn vị bình phương.
 
@@ -1606,7 +1606,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** S=8/3 đơn vị diện tích.
 
-**Lời giải:** Vì x²≥0 liên tục trên [0,2], diện tích đúng bằng tích phân ∫₀²x²dx=[x³/3]₀²=8/3 đơn vị². Nếu f đổi dấu, công thức diện tích phải dùng |f|.
+**Lời giải:** Vì x²≥0 liên tục trên [0,2], diện tích đúng bằng tích phân \(\int_{0}^{2} x^{2}\,\mathrm dx\)=[x³/3]₀²=8/3 đơn vị². Nếu f đổi dấu, công thức diện tích phải dùng |f|.
 
 **Nếu làm sai:** Đừng quên xác nhận f≥0 trên đoạn trước khi gọi tích phân là diện tích hình học.
 
@@ -1636,7 +1636,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** Độ dời 0 m; quãng đường 4 m.
 
-**Lời giải:** ∫_0⁴(t−2)dt=0; chia tại t=2, ∫|t−2|=2+2=4.
+**Lời giải:** \(\int_{0}^{4} (t-2)\,\mathrm dt\)=0; chia tại t=2, ∫|t−2|=2+2=4.
 
 **Nếu làm sai:** Chia tại nghiệm f=0 rồi cộng độ lớn ∫|f|, không lấy |∫f|.
 
@@ -1664,7 +1664,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4 đơn vị².
 
-**Lời giải:** Chia tại x=0: ∫_{−2}^0(−x)dx+∫_0^2 xdx=2+2=4.
+**Lời giải:** Chia tại x=0: \(\int_{-2}^{0} (-x)\,\mathrm dx\)+\(\int_{0}^{2} x\,\mathrm dx\)=2+2=4.
 
 **Nếu làm sai:** Chia tại nghiệm f=0 rồi cộng độ lớn ∫|f|, không lấy |∫f|.
 
@@ -1676,9 +1676,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** ∫−₂¹x dx=(1−4)/2=−3/2; diện tích 2+1/2=5/2.
+**Đáp án:** \(\int_{-2}^{1} x\,\mathrm dx\)=(1−4)/2=−3/2; diện tích 2+1/2=5/2.
 
-**Lời giải:** Tích phân có dấu I=∫_{−2}^{1}x dx=[x²/2]_{−2}^{1}=1/2−2=−3/2. Để tính diện tích, chia tại x=0: S=∫_{−2}⁰(−x)dx+∫₀¹x dx=2+1/2=5/2 đơn vị². |I|=3/2 khác S.
+**Lời giải:** Tích phân có dấu I=\(\int_{-2}^{1} x\,\mathrm dx\)=[x²/2]_{−2}^{1}=1/2−2=−3/2. Để tính diện tích, chia tại x=0: S=\(\int_{-2}^{0} (-x)\,\mathrm dx\)+\(\int_{0}^{1} x\,\mathrm dx\)=2+1/2=5/2 đơn vị². |I|=3/2 khác S.
 
 **Nếu làm sai:** Tìm nghiệm làm f đổi dấu rồi lấy trị tuyệt đối từng phần; không lấy |∫f| thay ∫|f|.
 
@@ -1692,7 +1692,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** Độ dời=0 m, đổi chiều ở t=1 s, quãng đường=1 m.
 
-**Lời giải:** ∫₀²(t−1)dt=[t²/2−t]₀²=2−2=0. v<0 trên (0,1), v>0 trên (1,2), nên đổi chiều tại1. Quãng đường ∫₀¹(1−t)dt+∫₁²(t−1)dt=1/2+1/2=1 m. |∫v|=0 khác ∫|v|=1 vì hai đoạn đối chiều triệt trong độ dời.
+**Lời giải:** \(\int_{0}^{2} (t-1)\,\mathrm dt\)=[t²/2−t]₀²=2−2=0. v<0 trên (0,1), v>0 trên (1,2), nên đổi chiều tại1. Quãng đường \(\int_{0}^{1} (1-t)\,\mathrm dt\)+\(\int_{1}^{2} (t-1)\,\mathrm dt\)=1/2+1/2=1 m. |∫v|=0 khác ∫|v|=1 vì hai đoạn đối chiều triệt trong độ dời.
 
 **Rubric /7:**
 1. Đặt đúng tích phân v(t) (1đ)
@@ -1709,7 +1709,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-W06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O13; SINGLE_ITEM_ID -->
 
-**Bài 64.** Tính ∫_0^{π/2}(2cos x+sin x)dx bằng nguyên hàm; giải rõ cận.
+**Bài 64.** Tính \(\int_{0}^{\frac{\pi}{2}} (2\cos  x+\sin  x)\,\mathrm dx\) bằng nguyên hàm; giải rõ cận.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -1731,7 +1731,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 2 đơn vị.
 
-**Lời giải:** ∫_0^{ln2}2e^tdt=2(2−1)=2. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
+**Lời giải:** \(\int_{0}^{\ln 2} 2e^t\,\mathrm dt\)=2(2−1)=2. Giải thích chọn cách: Giữ π, e, ln2 dạng chính xác đến kết quả cuối; không tự quy đổi radian thành độ.
 
 **Nếu làm sai:** Thử đạo hàm của sin, cos, e^x và so cận trong radian.
 
@@ -1739,7 +1739,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-P06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O13; SINGLE_ITEM_ID -->
 
-**Bài 66.** Tính ∫_0^π cos x dx.
+**Bài 66.** Tính \(\int_{0}^{\pi} \cos  x\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1753,7 +1753,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-G12-B12-C06; SOURCE_BLOB: 45722cd386a498f3e0e96a09928c85565af56d1b; OUTCOME: TOP11-O13; SINGLE_ITEM_ID -->
 
-**Bài 67.** Tính ∫_0^{ln 2} e^x dx.
+**Bài 67.** Tính \(\int_{0}^{\ln  2} e^x\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -1767,13 +1767,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-P13; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O13; SINGLE_ITEM_ID -->
 
-**Bài 68.** Tính ∫₀^π2sin x dx.
+**Bài 68.** Tính \(\int_{0}^{\pi} 2\sin  x\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** [−2cos x]₀^π=2−(−2)=4.
 
-**Lời giải:** Góc đo radian; F=−2cos x vì F'=2sin x. Thế cận: ∫₀^π2sin x dx=−2cosπ−(−2cos0)=2−(−2)=4. Vì sin≥0 trên [0,π], giá trị này cũng là diện tích dưới đồ thị.
+**Lời giải:** Góc đo radian; F=−2cos x vì F'=2sin x. Thế cận: \(\int_{0}^{\pi} 2\sin  x\,\mathrm dx\)=−2cosπ−(−2cos0)=2−(−2)=4. Vì sin≥0 trên [0,π], giá trị này cũng là diện tích dưới đồ thị.
 
 **Nếu làm sai:** Nếu ra 0, kiểm lại cosπ=−1 và dấu trừ trước F(0).
 
@@ -1787,7 +1787,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** Độ dời 2m.
 
-**Lời giải:** v(t)=4t−3; ∫_0²vdt=[2t²−3t]_0²=8−6=2m. Vì v đổi dấu ở t=3/4 nên quãng đường >|2m|.
+**Lời giải:** v(t)=4t−3; \(\int_{0}^{2} v\,\mathrm dt\)=[2t²−3t]_0²=8−6=2m. Vì v đổi dấu ở t=3/4 nên quãng đường >|2m|.
 
 **Rubric tự luận /5:** 1đ tìm v(t); 1đ tìm thời điểm đổi dấu; 2đ tính tích phân; 1đ nêu phân biệt độ dời và quãng đường.
 
@@ -1803,7 +1803,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 16 sản phẩm.
 
-**Lời giải:** ∫_0²(4+3t²)dt=[4t+t³]_0²=8+8=16.
+**Lời giải:** \(\int_{0}^{2} (4+3t^{2})\,\mathrm dt\)=[4t+t³]_0²=8+8=16.
 
 **Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng giá trị cuối×thời gian.
 
@@ -1817,7 +1817,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 7/3 m (nếu v đo m/s).
 
-**Lời giải:** v≥0 nên ∫_1² t²dt=(8−1)/3=7/3.
+**Lời giải:** v≥0 nên \(\int_{1}^{2} t^{2}\,\mathrm dt\)=(8−1)/3=7/3.
 
 **Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng giá trị cuối×thời gian.
 
@@ -1831,7 +1831,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 12 m.
 
-**Lời giải:** ∫_0³(2t+1)dt=[t²+t]_0³=9+3=12.
+**Lời giải:** \(\int_{0}^{3} (2t+1)\,\mathrm dt\)=[t²+t]_0³=9+3=12.
 
 **Nếu làm sai:** Tốc độ biến thiên không hằng phải tích phân; không dùng giá trị cuối×thời gian.
 
@@ -1845,7 +1845,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** s(2)=5+8=13m.
 
-**Lời giải:** Vì v(t)=s'(t)=3t², độ dời từ0 tới2 là ∫₀²3t²dt=[t³]₀²=8. Vị trí cuối s(2)=s(0)+8=5+8=13 m. Không dùng v(2)×2 vì vận tốc không hằng.
+**Lời giải:** Vì v(t)=s'(t)=3t², độ dời từ0 tới2 là \(\int_{0}^{2} 3t^{2}\,\mathrm dt\)=[t³]₀²=8. Vị trí cuối s(2)=s(0)+8=5+8=13 m. Không dùng v(2)×2 vì vận tốc không hằng.
 
 **Nếu làm sai:** Phân biệt độ dời và vị trí cuối: vị trí cuối bằng vị trí đầu cộng độ dời.
 
@@ -1877,7 +1877,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 21/2 m².
 
-**Lời giải:** ∫_0³(2+x)dx=6+9/2=21/2. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
+**Lời giải:** \(\int_{0}^{3} (2+x)\,\mathrm dx\)=6+9/2=21/2. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
 
 **Nếu làm sai:** Hàm √x có miền x≥0, ∫√x dx=(2/3)x^(3/2)+C.
 
@@ -1905,7 +1905,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 8/3 đơn vị².
 
-**Lời giải:** S=∫_0²x²dx=8/3. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
+**Lời giải:** S=\(\int_{0}^{2} x^{2}\,\mathrm dx\)=8/3. Giải thích chọn cách: Kiểm dấu, ghi miền hình, lập cận, tích phân và nêu đơn vị.
 
 **Nếu làm sai:** Hàm √x có miền x≥0, ∫√x dx=(2/3)x^(3/2)+C.
 
@@ -1991,7 +1991,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** S=1/2+2=5/2.
 
-**Lời giải:** y=|x| không âm. Trên [−1,0], |x|=−x cho S₁=∫_{−1}⁰(−x)dx=1/2; trên [0,2], |x|=x cho S₂=∫₀²x dx=2. Tổng S=5/2 đơn vị².
+**Lời giải:** y=|x| không âm. Trên [−1,0], |x|=−x cho S₁=\(\int_{-1}^{0} (-x)\,\mathrm dx\)=1/2; trên [0,2], |x|=x cho S₂=\(\int_{0}^{2} x\,\mathrm dx\)=2. Tổng S=5/2 đơn vị².
 
 **Nếu làm sai:** Trị tuyệt đối đổi công thức tại x=0; chia đoạn để tích phân thành biểu thức đại số đơn giản.
 
@@ -2021,7 +2021,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 9 đơn vị².
 
-**Lời giải:** Hiệu 2x≥0; ∫_0³2x dx=9. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.
+**Lời giải:** Hiệu 2x≥0; \(\int_{0}^{3} 2x\,\mathrm dx\)=9. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.
 
 **Nếu làm sai:** Giải f−g, kiểm đường nào trên rồi mới lấy tích phân (trên−dưới).
 
@@ -2035,7 +2035,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 32/3 đơn vị².
 
-**Lời giải:** 4≥x², S=∫_{−2}²(4−x²)dx=16−16/3=32/3.
+**Lời giải:** 4≥x², S=\(\int_{-2}^{2} (4-x^{2})\,\mathrm dx\)=16−16/3=32/3.
 
 **Nếu làm sai:** Giải f−g, kiểm đường nào trên rồi mới lấy tích phân (trên−dưới).
 
@@ -2049,7 +2049,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 2 đơn vị².
 
-**Lời giải:** Lấy trên−dưới=x; ∫_0²x dx=2. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.
+**Lời giải:** Lấy trên−dưới=x; \(\int_{0}^{2} x\,\mathrm dx\)=2. Giải thích chọn cách: Lấy hiệu độ cao (trên−dưới), tích phân theo x, kiểm S≥0.
 
 **Nếu làm sai:** Giải f−g, kiểm đường nào trên rồi mới lấy tích phân (trên−dưới).
 
@@ -2061,9 +2061,9 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** Vì x+2−x²=(2−x)(x+1)≥0, S=∫₀²(x+2−x²)dx=10/3.
+**Đáp án:** Vì x+2−x²=(2−x)(x+1)≥0, S=\(\int_{0}^{2} (x+2-x^{2})\,\mathrm dx\)=10/3.
 
-**Lời giải:** Trên [0,2], f−g=(x+2)−x²=(2−x)(x+1)≥0 nên đường y=x+2 ở trên y=x². Diện tích S=∫₀²(x+2−x²)dx=[x²/2+2x−x³/3]₀²=2+4−8/3=10/3 đơn vị².
+**Lời giải:** Trên [0,2], f−g=(x+2)−x²=(2−x)(x+1)≥0 nên đường y=x+2 ở trên y=x². Diện tích S=\(\int_{0}^{2} (x+2-x^{2})\,\mathrm dx\)=[x²/2+2x−x³/3]₀²=2+4−8/3=10/3 đơn vị².
 
 **Nếu làm sai:** Trước khi lấy hiệu, kiểm dấu f−g để xác định đường nào ở trên trên toàn khoảng.
 
@@ -2093,7 +2093,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 8/3 đơn vị².
 
-**Lời giải:** Hai đồ thị giao ở ±1, trên là 2−x²; S=∫_{−1}¹(2−2x²)dx=8/3.
+**Lời giải:** Hai đồ thị giao ở ±1, trên là 2−x²; S=\(\int_{-1}^{1} (2-2x^{2})\,\mathrm dx\)=8/3.
 
 **Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu f−g.
 
@@ -2107,7 +2107,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4/3 đơn vị².
 
-**Lời giải:** 2x≥x²; ∫_0²(2x−x²)dx=4−8/3=4/3.
+**Lời giải:** 2x≥x²; \(\int_{0}^{2} (2x-x^{2})\,\mathrm dx\)=4−8/3=4/3.
 
 **Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu f−g.
 
@@ -2121,7 +2121,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 1/6 đơn vị².
 
-**Lời giải:** S=∫_0¹(x−x²)dx=1/6. Giải thích chọn cách: Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương.
+**Lời giải:** S=\(\int_{0}^{1} (x-x^{2})\,\mathrm dx\)=1/6. Giải thích chọn cách: Giải giao điểm, sắp xếp cận, thử dấu từng khoảng rồi tích phân phần dương.
 
 **Nếu làm sai:** Giao điểm ở trong đoạn có thể đảo thứ tự; cần chia đoạn theo dấu f−g.
 
@@ -2135,7 +2135,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 1 đơn vị² (giao 0,1 và chia tại1).
 
-**Lời giải:** Hai đường giao khi x=x² ⇔ x=0 hoặc1. Trên (0,1), x−x²>0; trên (1,2), x−x²<0. Diện tích S=∫₀¹(x−x²)dx+∫₁²(x²−x)dx=1/6+5/6=1 đơn vị².
+**Lời giải:** Hai đường giao khi x=x² ⇔ x=0 hoặc1. Trên (0,1), x−x²>0; trên (1,2), x−x²<0. Diện tích S=\(\int_{0}^{1} (x-x^{2})\,\mathrm dx\)+\(\int_{1}^{2} (x^{2}-x)\,\mathrm dx\)=1/6+5/6=1 đơn vị².
 
 **Nếu làm sai:** Nếu hai đường đổi thứ tự, phải chia tại giao điểm và cộng phần dương, không để diện tích triệt dấu.
 
@@ -2143,13 +2143,13 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W04; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O18; SINGLE_ITEM_ID -->
 
-**Bài 94.** Tính diện tích giới hạn bởi hai đường y=x và y=x² trên đoạn [0,2]. (a) Giải giao điểm. (b) Xác định đường trên từng khoảng. (c) Thiết lập hai tích phân. (d) Tính diện tích và so với tích phân đại số ∫₀²(x−x²)dx.
+**Bài 94.** Tính diện tích giới hạn bởi hai đường y=x và y=x² trên đoạn [0,2]. (a) Giải giao điểm. (b) Xác định đường trên từng khoảng. (c) Thiết lập hai tích phân. (d) Tính diện tích và so với tích phân đại số \(\int_{0}^{2} (x-x^{2})\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 **Đáp án:** Giao x=0,1. S=∫₀¹(x−x²)+∫₁²(x²−x)=1. Tích phân đại số ∫₀²(x−x²)=−2/3, không phải diện tích.
 
-**Lời giải:** x=x² ⇒ x=0 hoặc1. Trên (0,1), x>x²; trên (1,2), x²>x. S=[x²/2−x³/3]₀¹+[x³/3−x²/2]₁²=(1/2−1/3)+(8/3−2−(1/3−1/2))=1/6+5/6=1. Trong khi ∫₀²(x−x²)dx=[x²/2−x³/3]₀²=2−8/3=−2/3. Âm cho thấy không phải diện tích hình học.
+**Lời giải:** x=x² ⇒ x=0 hoặc1. Trên (0,1), x>x²; trên (1,2), x²>x. S=[x²/2−x³/3]₀¹+[x³/3−x²/2]₁²=(1/2−1/3)+(8/3−2−(1/3−1/2))=1/6+5/6=1. Trong khi \(\int_{0}^{2} (x-x^{2})\,\mathrm dx\)=[x²/2−x³/3]₀²=2−8/3=−2/3. Âm cho thấy không phải diện tích hình học.
 
 **Rubric /7:**
 1. Giải x=0,1 (1đ)
@@ -2188,7 +2188,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 375 m².
 
-**Lời giải:** S=∫_0⁵(100−10x)dx=[100x−5x²]_0⁵=500−125=375m².
+**Lời giải:** S=\(\int_{0}^{5} (100-10x)\,\mathrm dx\)=[100x−5x²]_0⁵=500−125=375m².
 
 **Nếu làm sai:** Cận vùng kín phải lấy từ giao điểm hợp lệ, so sánh hai đồ thị trên từng mảnh.
 
@@ -2216,7 +2216,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4 cm².
 
-**Lời giải:** S=∫_0²(x+1)dx=4; đơn vị cm². Giải thích chọn cách: Nêu biến x và đơn vị, mô tả hai cận, xét h≥0, rồi tính số và thứ nguyên.
+**Lời giải:** S=\(\int_{0}^{2} (x+1)\,\mathrm dx\)=4; đơn vị cm². Giải thích chọn cách: Nêu biến x và đơn vị, mô tả hai cận, xét h≥0, rồi tính số và thứ nguyên.
 
 **Nếu làm sai:** Cận vùng kín phải lấy từ giao điểm hợp lệ, so sánh hai đồ thị trên từng mảnh.
 
@@ -2230,7 +2230,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4/3 đơn vị².
 
-**Lời giải:** Giao điểm y=2x và y=x² cho 2x=x²⇔x(x−2)=0, x=0 hoặc2. Trên [0,2], 2x−x²=x(2−x)≥0. Vậy diện tích giới hạn S=∫₀²(2x−x²)dx=[x²−x³/3]₀²=4−8/3=4/3 đơn vị².
+**Lời giải:** Giao điểm y=2x và y=x² cho 2x=x²⇔x(x−2)=0, x=0 hoặc2. Trên [0,2], 2x−x²=x(2−x)≥0. Vậy diện tích giới hạn S=\(\int_{0}^{2} (2x-x^{2})\,\mathrm dx\)=[x²−x³/3]₀²=4−8/3=4/3 đơn vị².
 
 **Nếu làm sai:** Cận của hình kín xuất phát từ giao điểm, không đoán trên nét vẽ.
 
@@ -2246,7 +2246,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 26/3 cm³.
 
-**Lời giải:** S(x)=(x+1)² cm²; V=∫_0²(x+1)²dx=[(x+1)³/3]_0²=(27−1)/3=26/3.
+**Lời giải:** S(x)=(x+1)² cm²; V=\(\int_{0}^{2} (x+1)^{2}\,\mathrm dx\)=[(x+1)³/3]_0²=(27−1)/3=26/3.
 
 **Rubric tự luận /5:** 1đ mô tả lát cắt; 1đ biểu thức S đúng; 2đ tích phân; 1đ đơn vị/kết luận.
 
@@ -2262,7 +2262,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 16/3 cm³.
 
-**Lời giải:** S≥0; V=∫_0²(4−x²)dx=8−8/3=16/3.
+**Lời giải:** S≥0; V=\(\int_{0}^{2} (4-x^{2})\,\mathrm dx\)=8−8/3=16/3.
 
 **Nếu làm sai:** Tiết diện vuông diện tích s², không π; tích phân A(x) theo độ dày dx.
 
@@ -2276,7 +2276,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 6 m³.
 
-**Lời giải:** V=∫_0²(2+x)dx=4+2=6. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.
+**Lời giải:** V=\(\int_{0}^{2} (2+x)\,\mathrm dx\)=4+2=6. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.
 
 **Nếu làm sai:** Tiết diện vuông diện tích s², không π; tích phân A(x) theo độ dày dx.
 
@@ -2290,7 +2290,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 9 cm³.
 
-**Lời giải:** V=∫_0³x²dx=[x³/3]_0³=9. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.
+**Lời giải:** V=\(\int_{0}^{3} x^{2}\,\mathrm dx\)=[x³/3]_0³=9. Giải thích chọn cách: Xác định hình cắt, tính S(x) đúng hình học, tích phân theo chiều dài.
 
 **Nếu làm sai:** Tiết diện vuông diện tích s², không π; tích phân A(x) theo độ dày dx.
 
@@ -2304,7 +2304,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** V=7/3 đơn vị³.
 
-**Lời giải:** Tiết diện vuông cạnh x+1 có diện tích A(x)=(x+1)²=x²+2x+1. Thể tích V=∫₀¹A(x)dx=[x³/3+x²+x]₀¹=1/3+1+1=7/3 đơn vị³. Không nhân π vì không có hình tròn.
+**Lời giải:** Tiết diện vuông cạnh x+1 có diện tích A(x)=(x+1)²=x²+2x+1. Thể tích V=\(\int_{0}^{1} A(x)\,\mathrm dx\)=[x³/3+x²+x]₀¹=1/3+1+1=7/3 đơn vị³. Không nhân π vì không có hình tròn.
 
 **Nếu làm sai:** Phân biệt cạnh dài (đơn vị) và diện tích lát cắt (đơn vị²) trước khi tích phân thành thể tích.
 
@@ -2316,15 +2316,15 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** A=(x+1)² cm², V=∫₀²(x+1)² dx=26/3 cm³; không nhân π.
+**Đáp án:** A=(x+1)² cm², V=\(\int_{0}^{2} (x+1)^{2}\,\mathrm dx\)=26/3 cm³; không nhân π.
 
-**Lời giải:** Tiết diện vuông cạnh x+1 nên A=(x+1)²=x²+2x+1 cm². V=∫₀² A dx=[x³/3+x²+x]₀²=8/3+4+2=26/3 cm³. Hình vuông có diện tích s², còn πr² là thiết diện tròn nên nhân π sai.
+**Lời giải:** Tiết diện vuông cạnh x+1 nên A=(x+1)²=x²+2x+1 cm². V=\(\int_{0}^{2} A\,\mathrm dx\)=[x³/3+x²+x]₀²=8/3+4+2=26/3 cm³. Hình vuông có diện tích s², còn πr² là thiết diện tròn nên nhân π sai.
 
 **Rubric /7:**
 1. Miền [0,2] và đơn vị cm (1đ)
 2. A=(x+1)² cm² (1đ)
 3. Khai triển chính xác (1đ)
-4. Lập V=∫A dx đúng cận (1đ)
+4. Lập V=\(\int A\,\mathrm dx\) đúng cận (1đ)
 5. Tính nguyên hàm (1đ)
 6. Giá trị26/3 cm³ (1đ)
 7. Nêu không có π vì mặt cắt vuông (1đ)
@@ -2341,7 +2341,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 7π/3 cm³.
 
-**Lời giải:** r=d/2=x+1; V=π∫_0¹(x+1)²dx=7π/3.
+**Lời giải:** r=d/2=x+1; V=π\(\int_{0}^{1} (x+1)^{2}\,\mathrm dx\)=7π/3.
 
 **Rubric tự luận /5:** 1đ đổi d thành r; 1đ S=πr²; 2đ tích phân; 1đ đơn vị/kết luận.
 
@@ -2357,7 +2357,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 8π cm³.
 
-**Lời giải:** r²=x; V=π∫_0⁴x dx=8π. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.
+**Lời giải:** r²=x; V=π\(\int_{0}^{4} x\,\mathrm dx\)=8π. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.
 
 **Nếu làm sai:** Tiết diện tròn A=πr²; nhớ bình phương bán kính không phải πr.
 
@@ -2371,7 +2371,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 32π/3 cm³.
 
-**Lời giải:** V=π∫_0²4x²dx=4π·8/3=32π/3. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.
+**Lời giải:** V=π\(\int_{0}^{2} 4x^{2}\,\mathrm dx\)=4π·8/3=32π/3. Giải thích chọn cách: Đổi đường kính→bán kính nếu cần, bình phương r trước khi tích phân; giữ π chính xác.
 
 **Nếu làm sai:** Tiết diện tròn A=πr²; nhớ bình phương bán kính không phải πr.
 
@@ -2399,7 +2399,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** V=8π/3 đơn vị³.
 
-**Lời giải:** Tiết diện hình tròn bán kính r(x)=x, diện tích A(x)=πx². V=∫₀²πx²dx=π[x³/3]₀²=8π/3 đơn vị³. Điều kiện x≥0 trên [0,2] đảm bảo bán kính hợp lệ.
+**Lời giải:** Tiết diện hình tròn bán kính r(x)=x, diện tích A(x)=πx². V=\(\int_{0}^{2} \pi x^{2}\,\mathrm dx\)=π[x³/3]₀²=8π/3 đơn vị³. Điều kiện x≥0 trên [0,2] đảm bảo bán kính hợp lệ.
 
 **Nếu làm sai:** Dùng diện tích đĩa πr², không dùng chu vi 2πr hoặc chỉ bán kính r.
 
@@ -2413,7 +2413,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 16π/3 đơn vị³.
 
-**Lời giải:** V=π∫_0²(4−x²)dx=π(8−8/3)=16π/3; là nửa thể tích khối cầu bán kính2.
+**Lời giải:** V=π\(\int_{0}^{2} (4-x^{2})\,\mathrm dx\)=π(8−8/3)=16π/3; là nửa thể tích khối cầu bán kính2.
 
 **Rubric tự luận /5:** 1đ xác định r(x); 1đ công thức π∫r²; 2đ tích phân; 1đ nhận xét hình học và đơn vị.
 
@@ -2429,7 +2429,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 4π/3 đơn vị³.
 
-**Lời giải:** V=π∫_0¹4x²dx=4π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
+**Lời giải:** V=π\(\int_{0}^{1} 4x^{2}\,\mathrm dx\)=4π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
 
 **Nếu làm sai:** Vành khăn A=π(R²−r²), không π(R−r)²; kiểm 0≤r≤R.
 
@@ -2443,7 +2443,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 8π đơn vị³.
 
-**Lời giải:** V=π∫_0⁴x dx=8π. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
+**Lời giải:** V=π\(\int_{0}^{4} x\,\mathrm dx\)=8π. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
 
 **Nếu làm sai:** Vành khăn A=π(R²−r²), không π(R−r)²; kiểm 0≤r≤R.
 
@@ -2457,7 +2457,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 8π/3 đơn vị³.
 
-**Lời giải:** V=π∫_0²x²dx=8π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
+**Lời giải:** V=π\(\int_{0}^{2} x^{2}\,\mathrm dx\)=8π/3. Giải thích chọn cách: Xác định trục quay, bán kính tại x là |f(x)|, tính π∫f², kiểm thể tích không âm.
 
 **Nếu làm sai:** Vành khăn A=π(R²−r²), không π(R−r)²; kiểm 0≤r≤R.
 
@@ -2471,7 +2471,7 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 **Đáp án:** 2π đơn vị³.
 
-**Lời giải:** Quay vùng 0≤y≤√x, 0≤x≤2 quanh Ox: tiết diện là đĩa bán kính √x. Diện tích A(x)=π(√x)²=πx; V=π∫₀²x dx=π[x²/2]₀²=2π đơn vị³.
+**Lời giải:** Quay vùng 0≤y≤√x, 0≤x≤2 quanh Ox: tiết diện là đĩa bán kính √x. Diện tích A(x)=π(√x)²=πx; V=π\(\int_{0}^{2} x\,\mathrm dx\)=π[x²/2]₀²=2π đơn vị³.
 
 **Nếu làm sai:** Nếu được 8π, em hãy kiểm lại cả diện tích lát cắt và bước thế cận: A(x)=π(√x)²=πx, nên V=π[x²/2]₀²=2π. Không dùng cận hay kết quả của ví dụ khác.
 
@@ -2479,11 +2479,11 @@ Làm từng bài trước khi mở **Lời giải**. Khi tính nguyên hàm, ki�
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP11-W06; SOURCE_BLOB: 6cee7cbfc89d503ce3102b5a1d693a15b9cce8c0; OUTCOME: TOP11-O22; SINGLE_ITEM_ID -->
 
-**Bài 116.** Miền 0≤x≤2, x≤y≤2 quay quanh trục Ox. (a) Mô tả bán kính ngoài, trong của tiết diện. (b) Thiết lập công thức vành khăn. (c) Tính thể tích. (d) Nêu vì sao không dùng π∫(2−x)²dx.
+**Bài 116.** Miền 0≤x≤2, x≤y≤2 quay quanh trục Ox. (a) Mô tả bán kính ngoài, trong của tiết diện. (b) Thiết lập công thức vành khăn. (c) Tính thể tích. (d) Nêu vì sao không dùng π\(\int (2-x)^{2}\,\mathrm dx\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** R=2, r=x; V=π∫₀²(4−x²)dx=16π/3 đơn vị³.
+**Đáp án:** R=2, r=x; V=π\(\int_{0}^{2} (4-x^{2})\,\mathrm dx\)=16π/3 đơn vị³.
 
 **Lời giải:** Với x∈[0,2], y từ x tới2 nên quay quanh Ox cho vành khăn bán kính ngoài R=2, trong r=x. Diện tích A=π(R²−r²)=π(4−x²). V=π[x·4−x³/3]₀²=π(8−8/3)=16π/3. (R−r)²=4−4x+x² khác R²−r², không biểu diễn diện tích vành khăn; chỉ dùng π∫f² khi vùng chạm trục.
 
@@ -2517,7 +2517,7 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P03; NO_RD1; NO_MASTERY -->
 
-**Câu 3.** Tính ∫(3x²+4x−2)dx.
+**Câu 3.** Tính \(\int (3x^{2}+4x-2)\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P04; NO_RD1; NO_MASTERY -->
 
@@ -2525,11 +2525,11 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P05; NO_RD1; NO_MASTERY -->
 
-**Câu 5.** Tính ∫(2e^{2x}+3^x)dx.
+**Câu 5.** Tính \(\int (2e^{2x}+3^x)\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P06; NO_RD1; NO_MASTERY -->
 
-**Câu 6.** Tính ∫(2cos x−3sin x)dx.
+**Câu 6.** Tính \(\int (2\cos  x-3\sin  x)\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P07; NO_RD1; NO_MASTERY -->
 
@@ -2537,15 +2537,15 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P08; NO_RD1; NO_MASTERY -->
 
-**Câu 8.** Tính ∫₀²(3x²+1)dx.
+**Câu 8.** Tính \(\int_{0}^{2} (3x^{2}+1)\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P09; NO_RD1; NO_MASTERY -->
 
-**Câu 9.** Tính ∫₁³(2x+1)dx−∫₁³x dx.
+**Câu 9.** Tính \(\int_{1}^{3} (2x+1)\,\mathrm dx\)−\(\int_{1}^{3} x\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P10; NO_RD1; NO_MASTERY -->
 
-**Câu 10.** Tính ∫₃¹ x²dx.
+**Câu 10.** Tính \(\int_{3}^{1} x^{2}\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P11; NO_RD1; NO_MASTERY -->
 
@@ -2557,7 +2557,7 @@ Bộ tự kiểm tra công khai này gồm 22 câu **đã xuất hiện trong Lu
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P13; NO_RD1; NO_MASTERY -->
 
-**Câu 13.** Tính ∫₀^π2sin x dx.
+**Câu 13.** Tính \(\int_{0}^{\pi} 2\sin  x\,\mathrm dx\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP11-P14; NO_RD1; NO_MASTERY -->
 
