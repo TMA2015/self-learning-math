@@ -1,22 +1,11 @@
-<!-- TOP05_MASTER974_PED6_CURRENT_ONE_V2_20261121 -->
-## CURRENT AUTHORING CĐ05 — V2 one locked source (Q01–Q18 v3.2.0)
-
-One canonical R06 learner source `909f873c57e543b8f6d3c383d0b88df6900e334a`; exact bank source `ab878f1a18dea87872449a79c27b75a612d81b39` unchanged. One existing signed composite Q18 AUTHOR_SELF_VERIFIED receipt `9c8c62a406e24af99efbdbe0bc081f1998c1f2ba`, existing author A1–A7/custody `701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a`. Reused direct 38-canonical +17-outcome math/PED audit for its unchanged source, with two additional independently checked affected PED6 corrections: O01 returns students to specific Bài1/Bài2 after an error; 17 PUBLIC selfchecks gain **one opt-in** map to actual Practice (no duplicated answer/key). Full Practice 38 original math and 4 Written rubrics untouched, three SVG unchanged, 56/56 balanced disclosures, 1 SGK credit at Topic end. PUBLIC replay only/no Mastery/RD1. `DELTA_C_PED_TARGETED` signed by author, no independent NotebookLM reviewer PASS claim, no RELEASE/merge/deploy.
-
----
-
-<!-- TOP05_S1_G10_B16_QUADRATIC_AUTHORING_DELTA_C_20261120 -->
-**20/11 Owner Authoring Q01 Delta C / G10 T2 B16:** Single source `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd` explicitly teaches quadratic y=ax²+bx+c (a≠0), domain R, value-table, parabola construction, vertex/axis, upward/downward and variation; S1 printed pages 11–14. Scoped Q18 `a9a4e5261dc9444018d316a393a5d4ac6c868d00`, A1 `e63fd2c3ea1be9736a6fdfc565e99554b38e545d`. 9/9 math+source tests; canonical examples/questions/keys/rubrics untouched, no additional placement or private RD1. Source academic CONTENT_READY preserved under owner, no RELEASE or new independent NotebookLM claim.
-
----
-# AUTHORING CĐ05 — Hàm số, đồ thị và các phép biến đổi đồ thị · one CURRENT R06 V2
+# CĐ05 — current one V2 AUTHORING handoff · A01 CP06
 
 PACKET_ID: THPT-TOPIC05-FUNCTION-GRAPH-TRANSFORMS-FULL-R06
 CONTENT_REVISION: R06
 AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
 AUTHOR_A1_A7_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md
-AUTHOR_METADATA_BLOB: 701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a
-AUTHOR_A1_A7_BLOB: 701d1c2ea6cf4090106cdfdef3e275e7d6a79e3a
+AUTHOR_METADATA_BLOB: cb809845c8d4b8bef7a85610a993ed664d44c889
+AUTHOR_A1_A7_BLOB: cb809845c8d4b8bef7a85610a993ed664d44c889
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
@@ -24,9 +13,9 @@ LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
 ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_NUMBERING_CONSISTENT_20261116.md
-ACADEMIC_SOURCE_BLOB: 909f873c57e543b8f6d3c383d0b88df6900e334a
+ACADEMIC_SOURCE_BLOB: 277e8738c6cb7cce7f7f11c666382446f69be8e9
 REVIEW_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC05_R06_COMPOSITE_Q18_AUTHOR_SELF_QA_20261118.md
-REVIEW_RECEIPT_BLOB: 9c8c62a406e24af99efbdbe0bc081f1998c1f2ba
+REVIEW_RECEIPT_BLOB: c2fba301449c6ca519d1d7f75f28db3dffb4b1db
 PUBLIC_CANONICAL_BANK_PATH: prototypes/thpt/shared-items/Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md
 PUBLIC_CANONICAL_BANK_BLOB: ab878f1a18dea87872449a79c27b75a612d81b39
 CATALOG_TOPIC_ID: CD05
@@ -40,8 +29,16 @@ PRIVATE_RD1_COUNT: 0
 PRIVATE_RD1_SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 MASTERY_ACTIVATION: NO
 RELEASE_AUTHORIZATION: NO
+AUTHOR_SIGNOFF: A01_CP06_CD05_277e8738c6cb7cce7f7f11c666382446f69be8e9
+CONTENT_STATE: CONTENT_READY
+SVG1_PATH: prototypes/thpt/visuals/THPT_TOPIC05_GRAPH_TRANSLATION_R01.svg
+SVG1_BLOB: e73c9c7a076de103edebf65cae0ed3529449ad06
+SVG2_PATH: prototypes/thpt/visuals/THPT_TOPIC05_REFLECTION_VERTICAL_SCALE_R01.svg
+SVG2_BLOB: 0f20dc39c3432be8a8fe0af6e86df7207ffdcaa7
+SVG3_PATH: prototypes/thpt/visuals/THPT_TOPIC05_PIECEWISE_ENDPOINTS_R01.svg
+SVG3_BLOB: 77f9345af366a64a3fba4a35c3d8d6b84a5d845e
 
-**CĐ05 Topic độc lập, không Topic Core.** 17 concept outcomes, 38 new PUBLIC canonical IDs (34 Practice +4 Written rubric /7), 3 SVG thật. Chưa merge/deploy; prior R18 #782 academic/PED PASS bảo toàn đúng source cũ, không gán CĐ05 mới.
+Previous V2 snapshot be57f89611335a5e7547e77ebb0ad15e3eef1312 remains immutable in Git. Current delta evidence: #1109 CP03–CP06. AUTHOR_SELF_VERIFIED, no independent NotebookLM or RELEASE verdict.
 
 ## LESSON_IDS
 
@@ -169,7 +166,6 @@ One item ID, one canonical bank; compact source_type is TOPIC_NEW_CANDIDATE; no 
 | `THPT-TOP05-W03` | `TOP05-O16` | `TOPIC_WRITTEN` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
 | `THPT-TOP05-W04` | `TOP05-O17` | `TOPIC_WRITTEN` | TOPIC_NEW_CANDIDATE | PROPOSED_NOT_LIVE |
 
-
 ## SELF_CHECK_PUBLIC_PLACEMENTS
 
 17 lượt công khai dùng lại item đã xuất hiện ở Practice, KHÔNG tạo ID mới hoặc official TOPIC_READINESS. CLIENT_SELF_CHECK_NO_MASTERY, no Skill Mastery.
@@ -194,62 +190,48 @@ One item ID, one canonical bank; compact source_type is TOPIC_NEW_CANDIDATE; no 
 | `TOP05-O16` | `THPT-TOP05-P31` | CLIENT_SELF_CHECK_NO_MASTERY |
 | `TOP05-O17` | `THPT-TOP05-P33` | CLIENT_SELF_CHECK_NO_MASTERY |
 
-
-## R06 numbering-only Delta-A evidence
-
-- 3 Topic pages H1, knowledge H2 1..N / lesson H3 1.1... and Practice group H2 1..N. Question labels are bold, not improperly nested H4. Source `efcd1e3c9a90b2909baf3e18f0b1729ea5b34044`; canonical stems/keys/solutions/rubrics/D6 and selfchecks unchanged from previous exact source `3052d5f7090f74af2eca7739047c59ed76ccda63`.
-- New author self Q18 `26163231bb56a41ebb4d99670e924ce9208ef605`, previous Q18 `9b3c25de45fc8601f2b5c8c11c6f7dc89b015fbc` historical. Metadata `e55f0dfaf35bd7a83ff3a1b39cad2f9fc93097cc` includes canonical/outcome S1 provenance unchanged.
-- No new independent NotebookLM Topic PASS, no live browser/Golden/Final Submit acceptance. RELEASE checks renderer/mobile; no merge/deploy in AUTHORING.
-
 ## QUALITY_Q01_Q18_EVIDENCE
 
-One canonical `SLM-THPT-QUALITY-ONE v3.1.0` from `prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md`. New author receipt 26163231bb56a41ebb4d99670e924ce9208ef605 and exact source efcd1e3c9a90b2909baf3e18f0b1729ea5b34044; no independent reviewer PASS asserted for this snapshot.
+One standard: THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md, v3.2.0.
 
-| Qxx | Specific mathematical and pedagogical evidence | Scope verdict | Source trace | Release boundary |
+| Q | Evidence | Mode | Snapshot | RELEASE |
 |---|---|---|---|---|
-| Q01 | KNTT grade-scope of mapping, function domain, graph and transformations via historical R01 author source, no invented page scan. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q02 | All 17 TOP05-O01..O17 in source with one worked concept and clear family practice alignment. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q03 | Domain radical/nonzero denominator, piecewise endpoint, symmetry prerequisites, real vs integer business domain. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q04 | 17 standalone learner **Ví dụ–Đề bài–Lời giải**, each checked for domain, vertex, mapping, transformations, periodic assumptions and numeric examples. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q05 | 38/38 learner-visible canonical original Practice stem+key+worked-solution projections (34 Practice+4 Written); exactly source-shared, not an ID-only table. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q06 | Four original Written items shown to learner with their exact seven-point rubrics. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q07 | 3 original SVG shown correctly at M10 translation, M12 reflection/vertical scale and M16 piecewise discontinuous endpoints; reviewed title/desc and three numerical cases. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q08 | 17 Vận dụng/Đối chiếu self-reveals immediately next to their distinct lesson outcomes and D6 recovery. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q09 | A real fee-vs-distance table motivates a function, graph reading and decision with changing inputs. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q10 | Explains inputs, outputs, sqrt u requiring u≥0, denominator≠0, intervals and coordinate points at point of use. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q11 | Meaning of function and whole-graph point movement before symbolic transformation identities. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q12 | Title/desc verified on all three original SVG; numerically correct point tracking and endpoint reading. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q13 | Why f(x-h) moves right, f(x)+k moves up; coordinate derivation; why restricted domain may reject vertex. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q14 | 17 First Try/Đối chiếu after explanation with D6 specific failure modes, not PED named-card walls. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q15 | 38 unique canonical IDs with exact original stem/key/solution/rubric, read-only display placements +17 public selfcheck replay placements. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q16 | 17 actual public Selfcheck prompts, no answer/key/hint/rubric exposed there; CLIENT_SELF_CHECK_NO_MASTERY, no private RD1, Final Submit belongs RELEASE. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q17 | Independent three-part learner Topic: 17 self-contained Knowledge lessons, 38 actual Practice problems, 17 public selfcheck questions; no Topic Core. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
-| Q18 | Exact R05 learner source 3052d5f7 and R05 author-self Q18 receipt 9b3c25de; 17 outcome checks, 34 new direct calculations, 38/38 canonical parity. | AUTHOR_SELF_VERIFIED_R05 | SOURCE_LOCKED_3052d5f7 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q01 | SGK KNTT G10 T2 B15 pp4–10, B16 pp11–18; original scan SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6, direct targeted reading CP05, PDF index printed+1; historical G11 B3 and SBT evidence retained, not a new full scan of SBT. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q02 | All 17 TOP05-O01..O17 in source with one worked concept and clear family practice alignment. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q03 | Function definition, domain, monotonicity proof and restricted quadratic vertex; piecewise endpoints and signed jumps; CP04/05 exact checks. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q04 | O01 definition counterexample, O05 arbitrary-pair proof, O16 endpoint/jump, O06 vertex/axis and monotonicity examples. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q05 | 38 visible canonical Practice projections with keys/reasoning; math and rubrics preserved in semantic notation comparison CP03. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q06 | Four original Written items shown to learner with their exact seven-point rubrics. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q07 | Three unchanged original SVGs, explicit closed/open endpoint and jump explanation. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q08 | Concept before formula; table supports unique output and full domain; arbitrary pair proof not selected points; O16 point excluded versus limit distinguished by open/closed markers; jump size explicitly computed. All 17 Vận dụng/Đối chiếu and recovery retained, 56 balanced disclosures, one public lookup map. Actual browser rendering not tested. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q09 | A real fee-vs-distance table motivates a function, graph reading and decision with changing inputs. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q10 | Explains inputs, outputs, sqrt u requiring u≥0, denominator≠0, intervals and coordinate points at point of use. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q11 | Meaning of function and whole-graph point movement before symbolic transformation identities. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q12 | Three original visuals with reading instructions; distinguish actual graph point and excluded endpoint. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q13 | Why f(x-h) moves right, f(x)+k moves up; coordinate derivation; why restricted domain may reject vertex. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q14 | 17 First Try/Đối chiếu after explanation with D6 specific failure modes, not PED named-card walls. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q15 | 38 Practice +17 Replay, semantic equivalence to latest signed 909f873c57e543b8f6d3c383d0b88df6900e334a via CP03/CP04; all item IDs/order/key/conditions/rubrics and mode retained. Display notation intentionally differs from frozen bank text; no literal parity claim. Owner #1109 schedules bank reconciliation after eight batches, not a second canonical owner. Frozen banks/index checked unchanged: Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md ab878f1a18dea87872449a79c27b75a612d81b39. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q16 | 17 public replay questions and voluntary answer-location lookup only, CLIENT_SELF_CHECK_NO_MASTERY, no private RD1 or official assessment. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q17 | Independent three-part learner Topic: 17 self-contained Knowledge lessons, 38 actual Practice problems, 17 public selfcheck questions; no Topic Core. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
+| Q18 | Current 277e8738c6cb7cce7f7f11c666382446f69be8e9 and Q18 c2fba301449c6ca519d1d7f75f28db3dffb4b1db; prior immutable receipt 9c8c62a406e24af99efbdbe0bc081f1998c1f2ba, affected-scope verification. | AUTHOR_SELF_VERIFIED_SCOPED_DELTA | SOURCE_LOCKED_277e8738 | RELEASE_QA_SEPARATE_NO_DEPLOY |
 
 ## S1_SGK_SBT_SOURCE
-
-**CĐ05 S1 bổ sung phạm vi chẵn/lẻ, tuần hoàn:** SGK KNTT Toán 11 Tập 1 B03 trang in 22–30, PDF 1-based 23–31; SHA256 bản scan nguồn đã xác minh trong owner receipt ngày 07/11/2026: `4492122eb2c9df626582d37b5c3d0e6513d66ca68d80d8a1e69577aa8b706828`. Chỉ dùng nguồn khái niệm/định nghĩa, phần lượng giác đầy đủ thuộc CĐ06; không nhận đã mở lại bản scan trong lượt này. Không thay bài tập/đáp án đã khóa.
-
-Chứng cứ owner original SGK/SBT KNTT Toán 10 tập 2 đã đọc ảnh gốc và kiểm SHA256 07/11/2026 thuộc Draft #782; **lượt này chỉ đọc lại receipt**, không tuyên bố quét PDF mới. SGK B15 Hàm số trang in4–10/PDF one-based5–11, B16 Hàm số bậc hai in11–18/PDF12–19, PDF SHA256 `ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6`. SBT B15 in3–9/PDF4–10, B16 in10–15/PDF11–16, SHA256 `3cb33690e0627b9e8ac467c23625b7feb7d05a8422293db0e1b26e44ca6a78c7`. Original owner S1 image receipts Git blobs `001a9dd34cf8af83e787fd28d760431fe63e1f24` và `50f667cdfa3fa1aedf5a38c0bc7f80650a6835bf` của #782. S1 dùng xác thực nền hàm số, miền/tập giá trị, điểm/đồ thị, parabol và mô hình; tổng quát phép dịch/co giãn là học liệu Topic tự biên soạn, **không** nhận chúng xuất hiện nguyên văn trong SGK B15/B16. Không sao chép bài SBT có bản quyền.
+SGK KNTT G10 T2 B15 pp4–10, B16 pp11–18; original scan SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6, direct targeted reading CP05, PDF index printed+1; historical G11 B3 and SBT evidence retained, not a new full scan of SBT.
 
 ## D1_D6_EVIDENCE
-
-D1: 17 mô-đun giải thích WHY/định nghĩa/điều kiện/giới hạn áp dụng, kể cả miền sau biến đổi và điểm rỗng/đặc. D2: 17 ví dụ đã giải có lý do chọn phương pháp, không chỉ công thức. D3: 38 ID canonical public mới (34 Practice,4 Written) trải 17 outcome với ≥2 ID/outcome, đa dạng miền/đồ thị/phép biến đổi/mô hình. D4: bốn tự luận có rubric 7 điểm nguyên gốc cùng một bank, Anchor chỉ là nhãn. D5: ba SVG thật (parabol dịch, phản xạ/kéo dãn, chấm đoạn) có title/desc, tác giả giải thích cách đọc; lab tương tác SPEC_ONLY không hoạt động. D6: 17 Tự thử có tự mở đối chiếu + hướng khắc phục và chuyển câu.
+Concept before formula; table supports unique output and full domain; arbitrary pair proof not selected points; O16 point excluded versus limit distinguished by open/closed markers; jump size explicitly computed. All 17 Vận dụng/Đối chiếu and recovery retained, 56 balanced disclosures, one public lookup map. Actual browser rendering not tested. 38 Practice +17 Replay, semantic equivalence to latest signed 909f873c57e543b8f6d3c383d0b88df6900e334a via CP03/CP04; all item IDs/order/key/conditions/rubrics and mode retained. Display notation intentionally differs from frozen bank text; no literal parity claim. Owner #1109 schedules bank reconciliation after eight batches, not a second canonical owner. Frozen banks/index checked unchanged: Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md ab878f1a18dea87872449a79c27b75a612d81b39.
 
 ## PED1_PED6_EVIDENCE
-
-PED1 17 WHY từ data/đơn vị/nhìn đồ thị; PED2 17 tiền đề trong chuyên đề, học sinh không buộc quay SGK; PED3 từ quy tắc đơn trị và phép đổi tọa độ đến công thức; PED4 ba SVG có hướng dẫn đọc số và biên; PED5 17 ví dụ vì sao dùng so hiệu, hoàn phương, đổi điểm và kiểm giới hạn c/k≠0; PED6 17 Tự thử trước đối chiếu, 17 D6 nguyên nhân–kiến thức–tự luyện lại.
+Concept before formula; table supports unique output and full domain; arbitrary pair proof not selected points; O16 point excluded versus limit distinguished by open/closed markers; jump size explicitly computed. All 17 Vận dụng/Đối chiếu and recovery retained, 56 balanced disclosures, one public lookup map. Actual browser rendering not tested.
 
 ## AUTHORING_A1_A7
-
-A1: efcd1e3c9a90b2909baf3e18f0b1729ea5b34044 learner source +26163231bb56a41ebb4d99670e924ce9208ef605 Q18 receipt exact; one stable packet. A2: KNTT scoped functions/graph and existing R01 source receipt, no invented SGK page number. A3: new substantial DELTA_C source independently self-audited by AUTHORING, not NotebookLM. A4: 17 outcome IDs, 38 new unique PUBLIC IDs (34 Practice+4 Written rubric /7), 17 public selfcheck references. A5: four flowing conceptual arcs, 17 first tries/D6, 3 real SVG in correct context. A6: all 38 source solutions and 17 outcomes checked for domain, endpoint, transformation and integer conditions; three material SVG/example mismatches repaired. A7: 0 private RD1, no official Readiness/Mastery, RELEASE must verify on actual runtime.
+Existing custody prototypes/thpt/content-drafts/topic05-functions-graph/Temp_TOPIC05_R06_A1_A7_CURRENT_SOURCE_QA_20261118.md, blob cb809845c8d4b8bef7a85610a993ed664d44c889, exact Q18 c2fba301449c6ca519d1d7f75f28db3dffb4b1db; same lesson/item/outcome matrix, scope and protected assessment. No new independent review.
 
 ## DELTA_LEDGER
-
-Historical R01 self-QA and R03 teaching candidate are immutable. `DELTA_C_ACADEMIC_MATERIAL`: replaced segmented pedagogy preamble and generic D6 boilerplate, integrated four cohesive mathematical arcs, repaired three example/SVG inconsistencies: translated x²→(x−2)²+1, vertically flipped/stretched/translated |x|→−2|x|+3, and genuine jump function f=2 (x≤1)/x+3 (x>1) with hollow/filled endpoints. All three original SVG and canonical 38 question bank blobs unchanged; new exact R04 author receipt reviews affected passages, no inherited historic reviewer verdict. AUTHORING-only metadata sidecar does not render a fourth learning page.
+DELTA_C Knowledge repair and DELTA_B_SOURCE_EQUIVALENT notation, CP03a/b, CP04 #7164862154, CP05 #7165894264, CP06. O01 explicit function input set {0;1}, table shows repeated (1;4) is consistent; replacement in worked example yields two outputs at 1 and missing output at 2, violates both clauses. O05 for arbitrary -5≤x1<x2≤-2 the product (x2−x1)(x2+x1)<0 proves decreasing; extrema 25 and 4 explicit. O16 open endpoint is not a graph point; example jump +3 and transfer +2. O06 monotonicity intervals use semicolon, no math change; parabolic vertex, table, axis, zeros and domain checked CP05. Three original diagrams retained. No other mathematical or item change.
+38 Practice +17 Replay, semantic equivalence to latest signed 909f873c57e543b8f6d3c383d0b88df6900e334a via CP03/CP04; all item IDs/order/key/conditions/rubrics and mode retained. Display notation intentionally differs from frozen bank text; no literal parity claim. Owner #1109 schedules bank reconciliation after eight batches, not a second canonical owner. Frozen banks/index checked unchanged: Temp_TOPIC05_GRAPH_TRANSFORMS_NEW38_PUBLIC_CANONICAL_R01_20261112.md ab878f1a18dea87872449a79c27b75a612d81b39.
 
 ## PRIVATE_RD1_CUSTODY_METADATA
-
 RD1_PRIVATE_COUNT = 0
 PRIVATE_OWNER_HELD = YES_IF_FUTURE_OFFICIAL_TOPIC_READINESS
 PRIVATE_GIT_CONTENT = NONE
@@ -257,35 +239,5 @@ PRIVATE_BANK_SHA256 = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b78
 
 Chuỗi SHA256 trên là **0 bytes private được nhập**, không phải hash 30 câu private pilot hoặc một owner-held CĐ05 RD1 hiện hữu. Câu đã luyện và xem đáp án chỉ được làm CLIENT_SELF_CHECK_NO_MASTERY, tuyệt đối không suy thành TOPIC_READINESS độc lập.
 
-## R05 AUTHORING SOURCE CUSTODY AND DELTA — CURRENT
-
-R05 academic source `efcd1e3c9a90b2909baf3e18f0b1729ea5b34044`, Q18 author self-QA receipt `26163231bb56a41ebb4d99670e924ce9208ef605`. R04 source `04f532661d014ee011e5d2f61a3dca9578a101d4` and old Q18 receipt `82a7c3dd772ce6e0751291e71a17cf28f4cb56b6` remain immutable historical evidence, and the R04 AUTHOR_METADATA_PATH is historical-only, not a replacement for R05 academic source SHA.
-R05 supplies four continuous teaching arcs /17 actual learner knowledge modules, each with original **Ví dụ**, self-contained Đề bài/Lời giải, and lesson-adjacent Vận dụng/Đối chiếu/D6. The previously ID-only Luyện tập and placement-only Tự kiểm tra now contain **38 original canonical questions, answers and solutions** with four exact seven-point rubrics and 17 public reuse questions. Original bank `ab878f1a18dea87872449a79c27b75a612d81b39` and three SVG blobs are unchanged; HTML comments mark projections as display-only, not a new source bank.
-Q18 R05 is DELTA_C for novel pedagogical examples and real learner presentation; 34 direct math/graph/domain checks and exact 38/38 source parity. 13 original owner editorial items Issue #864 and defect ledger Issue #865 govern this packet, no second standard. No NotebookLM reviewer PASS on new R05, no private RD1, no official Readiness/Mastery. RELEASE owns Final Submit, browser, device, deployment and owner authorization.
-
 ## RELEASE_AND_OWNER_GATE
-
-RELEASE chưa tích hợp website, chưa test AP1–AP5, R1–R5, P1–P2 trên HEAD runtime. Cần bảo vệ Golden R4 5+1 / Adaptive Knowledge Tabs v2, responsive MathJax và SVG, keyboard/touch, canonical version và đúng 3 Topic pages. Trước Final Submit không key, feedback, AI Tutor, hint, rubric; sau nộp mới tự đối chiếu. Chủ dự án chưa cấp phép merge/deploy, branch SOURCE ONLY không tác động SGK, THCS, Firebase, Gemini, dữ liệu học sinh. Runtime Topic ID phải được chủ dự án phê duyệt; các lab SPEC_ONLY không mạo nhận tính năng chạy.
-
-## CURRENT R06 closure after prior historical R05 / numbering records — 18/11/2026
-
-This final appended section supersedes any older R05 or R06-numbering source pointers in the historical body above. The original file path is reused for ONE V2 handoff, not a parallel active handoff. Current learner source Git SHA `9e9965e8bf5f1053a1c50820bfa7ac0800801dcd`, immutable canonical bank SHA `ab878f1a18dea87872449a79c27b75a612d81b39`, latest **AUTHOR_SELF_VERIFIED** Q18 composite SHA `a9a4e5261dc9444018d316a393a5d4ac6c868d00` and A1–A7 SHA `e63fd2c3ea1be9736a6fdfc565e99554b38e545d`. The source's 38 display-only Practice/Written projections exactly match canonical bank problem, answer, reasoning; 17 public replay stems are question-only. No new source copy, no revised bank, no official held-out assessment.
-
-Q01–Q18 academic/PED source self-QA and A1–A7 have no demonstrated P0/P1 on the inspected current file. The 16 pedagogical remediation routes and three formal clarification boxes were explicitly checked; earlier independent reviewer PASS is **not** claimed for this R06 snapshot. Public selfcheck is `CLIENT_SELF_CHECK_NO_MASTERY`, private RD1 count remains 0 imported, and no live Score/Mastery. Source-only `CONTENT_READY` will be recorded through one R06 ready manifest and REGISTER, superseding old R01 active ready without deleting historical Git evidence. RELEASE AP/R/P, actual browser, source intake on website, Final Submit/hidden questions and owner merge/deploy permission are separate and **NOT** granted.
-
-AUTHOR_SIGNOFF: TOP05_R06_CURRENT_ONE_V2_LOCKED_TO_Q18_A1_BANK_20261118
-
-
-**19/11 owner ΔA:** 14 formal captions classified, 4 repeated discovery mini-heads removed; exact source/Q18/A1 lock, CONTENT_READY maintained.
-
-
-## 20/11/2026 current V2 snapshot
-- SOURCE 853e8a9f3d8a53179eea124ddb7386a7daa3f84d, Q18 e4523969e46c2a45155f8ba26d6441c37df3d4fe, A1 27090335a6405e4ab1baa848a02615456b342b42: six formal label prefixes only; no canon maths/Q16 change.
-
-
-## 20/11/2026 — active V2 B16 O07 source
-- Current learner 7b5d360250b5268d8c566be945f9c9be4a2c4dd4, Q18 f3180f5a7f250e65cf7fc996dde0116eaa5020d6, A1 793739d77aa7c33c0e028202917ee63b7db6a370; restored required parabola Ox/Oy plotting rules in place, same canonical answer/rubric source and three learning pages. No website change.
-
-
-## 20/11/2026 — Existing handoff updated for same CĐ05 Knowledge learner
-- Learner 583ba974917ce04b16dd4ff6d92b7cdb9b77a2b1, Q18 f20c9cfae613b6dfb65fe1a7b754e05f54cf84ce, A1 28ddbef7523a8e62daa98234a20a33ae1a3a7f80; all 17 student Knowledge units cover scoped SGK B15–16, canonical bank not re-authored. No release.
+AUTHORING content only. RELEASE AP/R, browser, MathJax, Golden UI, Q16 runtime, exact integration HEAD and owner approval remain separate, no merge/deploy.
