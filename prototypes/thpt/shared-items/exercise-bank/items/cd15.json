@@ -656,9 +656,9 @@
   {
     "item_id": "THPT-TOP15-P22",
     "content_version": "SOURCE_BLOB_c1be91f17044d89474d6399308385b4f1fbc7aeb_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Trong lăng trụ ABC.A′B′C′, M′ thuộc đoạn A′B′ và A′M′:M′B′=2:3. Chiếu theo phương AA′ xuống (ABC). Biết AB=15 cm. Tìm ảnh M′ và hai độ dài AM,MB. Nêu vì sao phép giữ tỉ số áp dụng được.",
-    "answer_key": "Ảnh M thuộc AB; AM=6 cm, MB=9 cm; ảnh A′B′ không suy biến.",
-    "worked_solution": "Ảnh A′,B′ lần lượt là A,B phân biệt, nên ảnh của đoạn A′B′ là đoạn AB không suy biến. Phép chiếu song song bảo toàn tỉ số hai đoạn cùng đường trong trường hợp này, nên AM:MB=2:3. Tổng AB=15 cm chia 5 phần bằng nhau, mỗi phần 3 cm. Vậy AM=6 cm, MB=9 cm.",
+    "stem": "Trong lăng trụ ABC.A′B′C′, M′ là một điểm trên đoạn A′B′, chiếu song song theo AA′ lên đáy (ABC) được M. Biết AB=20 cm, AM=4 cm. Tìm tỉ số A′M′:M′B′. Nếu đổi sang chiếu theo phương A′B′ thì có xác định ảnh lên (ABC) cho mọi điểm không?",
+    "answer_key": "A′M′:M′B′=1:4. Không thể dùng phương A′B′ để chiếu lên (ABC) cho mọi điểm vì phương ấy song song mặt đáy.",
+    "worked_solution": "Với phương AA′, hai đầu A′,B′ có ảnh A,B phân biệt; phép chiếu bảo toàn tỉ số trên đoạn không suy biến. MB=20−4=16 cm, nên A′M′:M′B′=AM:MB=4:16=1:4. Nếu đổi phương chiếu thành A′B′ thì phương này song song AB trong mặt đáy. Đường qua một điểm ở mặt đáy trên theo phương đó nằm trong mặt đáy trên và không cắt mặt đáy dưới, nên không xác định được phép chiếu song song lên đáy cho mọi điểm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B14-AFFINE_INVARIANTS"
@@ -669,7 +669,7 @@
     "problem_type_id": null,
     "difficulty": null,
     "hints": [
-      "Xác định ảnh hai đầu mút, kiểm chúng phân biệt rồi dùng tính chất giữ tỉ số."
+      "Từ AB và AM tính MB, rồi dùng tính chất bảo toàn tỉ số; kiểm phương chiếu mới có cắt được mặt đáy không."
     ],
     "rubric": null,
     "interaction": {
@@ -682,6 +682,6 @@
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu hai đầu mút có cùng ảnh, tỉ số độ dài không còn xác định; phân biệt trường hợp suy biến. Ôn CĐ15 mục 5.3; luyện THPT-G11-CHIV-B14-P02."
+    "remediation": "Nếu lấy tỉ số 4:20, phải dùng hai đoạn AM và MB, không phải AM và AB. Nếu phương chiếu song song mặt đích, đường chiếu qua điểm ngoài mặt không có giao điểm. Ôn CĐ15 mục 5.1, 5.3; luyện THPT-G11-CHIV-B14-P02."
   }
 ]
