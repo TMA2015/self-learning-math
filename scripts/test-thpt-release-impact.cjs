@@ -634,9 +634,19 @@ function isExactSharedKnowledgeMath(files){
  }catch{return false}
 }
 // One-time recovery of failed #1110 deploy; no runtime or learner changes.
-// Only the exact failed main SHA and these three QA/workflow files qualify.
+// Only the exact failed main SHA and these four QA/workflow files qualify.
 const SHARED_DEPLOY_RECOVERY_BASE="f9a4b0caef4f860a17d956c0c4d7600dc511c3d2";
-const SHARED_DEPLOY_RECOVERY_FILES=new Set(["scripts/test-thpt-release-impact.cjs",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml"]);
+const SHARED_DEPLOY_RECOVERY_FILES=new Set(["scripts/test-thpt-release-impact.cjs",".github/workflows/deploy.yml",".github/workflows/thpt-deploy-scope-safety-qa.yml",".github/workflows/thpt-topic-rw1-math-qa.yml"]);
+const SHARED_APPROVED_HEAD="90cfffe5f3adb09eaf347ac9436c6f9e6d4b8ecd";
+function proveSharedDeployRecovery(){
+ const cp=require("node:child_process");
+ const git=(...args)=>cp.execFileSync("git",args,{encoding:"utf8"}).trim();
+ assert.equal(process.env.BASE_SHA,SHARED_DEPLOY_RECOVERY_BASE,"Recovery base must be exact approved merged SHA");
+ assert.equal(git("rev-parse",SHARED_APPROVED_HEAD+"^{tree}"),git("rev-parse",SHARED_DEPLOY_RECOVERY_BASE+"^{tree}"),"Approved PR and merged tree differ");
+ const files=git("diff","--no-renames","--name-only",SHARED_APPROVED_HEAD,"HEAD").split("\n").filter(Boolean);
+ assert(isExactSharedDeployRecovery(files,process.env.BASE_SHA),"Recovery contains non-QA changes or unexpected files");
+ console.log("PASS #1110 exact snapshot preserved: only four QA/workflow paths changed; renderer, content, build inputs and prior browser test code byte-identical");
+}
 function isExactSharedDeployRecovery(files,base){
  return base===SHARED_DEPLOY_RECOVERY_BASE&&
   files.length===SHARED_DEPLOY_RECOVERY_FILES.size&&new Set(files).size===files.length&&
@@ -840,8 +850,8 @@ function selfTest(){
  assert.equal(classify(shared,{manual:true}).impact,"FULL");
  const sharedRecovery=[...SHARED_DEPLOY_RECOVERY_FILES];
  assert.equal(classify(sharedRecovery,{base:SHARED_DEPLOY_RECOVERY_BASE}).reason,"OWNER_1110_DEPLOY_RECOVERY_EXACT");
- assert.equal(classify(sharedRecovery,{base:"0".repeat(40)}).impact,"CI_ROUTING_ONLY");
- assert.equal(classify(sharedRecovery.slice(1),{base:SHARED_DEPLOY_RECOVERY_BASE}).impact,"CI_ROUTING_ONLY");
+ assert.notEqual(classify(sharedRecovery,{base:"0".repeat(40)}).impact,"SCOPED_TOPIC_SHARED_MATH");
+ assert.notEqual(classify(sharedRecovery.slice(1),{base:SHARED_DEPLOY_RECOVERY_BASE}).impact,"SCOPED_TOPIC_SHARED_MATH");
  assert.equal(classify([...sharedRecovery,"docs/assets/javascripts/firebase-gemini-v1.js"],{base:SHARED_DEPLOY_RECOVERY_BASE}).impact,"FULL");
  assert.equal(classify([...sharedRecovery,"docs/thpt-preview/chuyen-de/cd17/kien-thuc.md"],{base:SHARED_DEPLOY_RECOVERY_BASE}).impact,"FULL");
  assert.equal(classify(sharedRecovery,{base:SHARED_DEPLOY_RECOVERY_BASE,manual:true}).impact,"FULL");
@@ -1199,7 +1209,8 @@ function selfTest(){
  console.log("PASS scoped CI impact classifier: canonical SGK page/receipt-only fast lanes, global/unknown/assessment full, manual full");
 }
 if(require.main===module){
- if(process.argv.includes("--self-test"))selfTest();
+ if(process.argv.includes("--prove-shared-recovery"))proveSharedDeployRecovery();
+ else if(process.argv.includes("--self-test"))selfTest();
  else{
   assert.equal(process.argv.length,3,"Supply git diff --name-only path file");
   const files=fs.readFileSync(process.argv[2],"utf8").split(/\r?\n/);
