@@ -11,7 +11,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 22 rồi tự giải trước khi mở lời giải."
+      "Chọn góc nhỏ hơn giữa 145° và góc bù."
     ],
     "rubric": null,
     "interaction": {
@@ -29,7 +29,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ hai đường không gặp thì không có góc, chuyển phương qua một điểm; góc giữa hai đường song song bằng 0°. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
+    "remediation": "Nếu lấy 145°, góc giữa hai đường không vượt 90°; lấy 180°−145°. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-C02",
@@ -43,7 +43,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 22 rồi tự giải trước khi mở lời giải."
+      "Xét góc giữa hai phương sau khi đưa về cùng điểm."
     ],
     "rubric": null,
     "interaction": {
@@ -61,7 +61,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho hai đường phải gặp mới vuông góc, kiểm góc giữa hai phương, không phải giao điểm. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02."
+    "remediation": "Nếu nghĩ phải giao nhau, dùng hai cạnh chéo nhau của hình hộp chữ nhật. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-C03",
@@ -75,7 +75,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 22 rồi tự giải trước khi mở lời giải."
+      "Đường song song có cùng phương; thay a′ bằng a khi xét góc với b."
     ],
     "rubric": null,
     "interaction": {
@@ -93,7 +93,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu suy hai đường cùng vuông góc đường thứ ba phải song song, xét AB và AD cùng vuông góc AA′ nhưng cắt nhau. Ôn CĐ16 mục 1.3; luyện THPT-TOP16-P03."
+    "remediation": "Nếu đổi phương làm thay góc, kiểm a′∥a nên góc với b giữ nguyên. Ôn CĐ16 mục 1.3; luyện THPT-TOP16-P03."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-C04",
@@ -107,7 +107,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 22 rồi tự giải trước khi mở lời giải."
+      "Qua một điểm dựng hai hướng ngang và thẳng đứng."
     ],
     "rubric": null,
     "interaction": {
@@ -125,7 +125,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ nhìn nét vẽ, hãy dùng tính chất hình chữ nhật của mặt bên và quan hệ song song. Ôn CĐ16 mục 1.4; luyện THPT-TOP16-P04."
+    "remediation": "Nếu chỉ nhìn hai thanh trên hình, chứng minh phương thẳng đứng vuông góc phương Đông–Tây. Ôn CĐ16 mục 1.4; luyện THPT-TOP16-P04."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-P01",
@@ -139,7 +139,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 22 rồi tự giải trước khi mở lời giải."
+      "Qua O dựng hai đường cùng phương với hai đường ban đầu."
     ],
     "rubric": null,
     "interaction": {
@@ -157,7 +157,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ hai đường không gặp thì không có góc, chuyển phương qua một điểm; góc giữa hai đường song song bằng 0°. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
+    "remediation": "Nếu cho phải kéo dài đến giao điểm, hai đường chéo không gặp; chỉ chuyển phương về O. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-P02",
@@ -171,7 +171,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 22 rồi tự giải trước khi mở lời giải."
+      "So phương AB với D′C′ trong hai đáy."
     ],
     "rubric": null,
     "interaction": {
@@ -189,7 +189,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nghĩ hai đường không gặp thì không có góc, chuyển phương qua một điểm; góc giữa hai đường song song bằng 0°. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
+    "remediation": "Nếu ra 90°, hai cạnh này song song, không phải hai phương vuông góc. Ôn CĐ16 mục 1.1; luyện THPT-TOP16-P01."
   },
   {
     "item_id": "THPT-G11-CHVII-B22-P03",
@@ -203,7 +203,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 22 rồi tự giải trước khi mở lời giải."
+      "Chọn hai cạnh không gặp nhau nhưng cùng phương với hai cạnh vuông góc."
     ],
     "rubric": null,
     "interaction": {
@@ -221,7 +221,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu cho hai đường phải gặp mới vuông góc, kiểm góc giữa hai phương, không phải giao điểm. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02."
+    "remediation": "Nếu chọn hai cạnh có chung đỉnh thì chưa phải phản ví dụ; kiểm chúng không cắt. Ôn CĐ16 mục 1.2; luyện THPT-TOP16-P02."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C01",
@@ -235,7 +235,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 23 rồi tự giải trước khi mở lời giải."
+      "Một đường trong nền không đại diện cho mọi phương của nền."
     ],
     "rubric": null,
     "interaction": {
@@ -253,7 +253,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ kiểm một phương, xét hai cạnh khác hướng của hình chữ nhật; một phương chưa đủ. Ôn CĐ16 mục 2.1; luyện THPT-TOP16-P05."
+    "remediation": "Nếu kết luận ngay, tìm đường khác hướng trong nền cần kiểm thêm. Ôn CĐ16 mục 2.1; luyện THPT-TOP16-P05."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C02",
@@ -267,7 +267,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 23 rồi tự giải trước khi mở lời giải."
+      "Hai đường a,b phải cùng mặt phẳng và cắt nhau."
     ],
     "rubric": null,
     "interaction": {
@@ -285,7 +285,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hai đường kiểm tra song song hoặc trùng nhau, chưa đủ hai phương độc lập. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06."
+    "remediation": "Nếu thiếu một điều kiện, không thể dùng dấu hiệu đủ. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C03",
@@ -299,7 +299,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 23 rồi tự giải trước khi mở lời giải."
+      "e giữ cùng phương với d."
     ],
     "rubric": null,
     "interaction": {
@@ -317,7 +317,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ nhìn hai mặt có vẻ song song, phải dùng giả thiết (P)∥(Q) mới chuyển được các phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07."
+    "remediation": "Nếu cho e phải đi qua chân của d, không cần; vuông góc mặt là quan hệ theo phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C04",
@@ -331,7 +331,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 23 rồi tự giải trước khi mở lời giải."
+      "Hai đường vuông góc cùng một mặt có cùng phương."
     ],
     "rubric": null,
     "interaction": {
@@ -349,7 +349,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu d,e đi qua cùng một điểm, chúng trùng; giả thiết d≠e mới cho song song. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
+    "remediation": "Nếu cho chúng cắt nhau mà phân biệt, qua một điểm chỉ có một đường vuông góc mặt. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-C05",
@@ -363,7 +363,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 23 rồi tự giải trước khi mở lời giải."
+      "Hai thanh cắt nhau và đều thuộc nền."
     ],
     "rubric": null,
     "interaction": {
@@ -381,7 +381,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ đo theo hai đường song song, dựng thêm một hướng không cùng phương; hai phép đo cũ chưa đủ. Ôn CĐ16 mục 2.5; luyện THPT-TOP16-P09."
+    "remediation": "Nếu chỉ kiểm hai thanh song song, chưa đủ hai phương; kiểm lại giả thiết. Ôn CĐ16 mục 2.5; luyện THPT-TOP16-P09."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P01",
@@ -395,7 +395,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 23 rồi tự giải trước khi mở lời giải."
+      "Chuyển hai hướng cắt nhau từ (Q) về (P)."
     ],
     "rubric": null,
     "interaction": {
@@ -413,7 +413,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ nhìn hai mặt có vẻ song song, phải dùng giả thiết (P)∥(Q) mới chuyển được các phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07."
+    "remediation": "Nếu không dùng giả thiết hai mặt song song, chưa có căn cứ chuyển phương. Ôn CĐ16 mục 2.3; luyện THPT-TOP16-P07."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P02",
@@ -427,7 +427,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 23 rồi tự giải trước khi mở lời giải."
+      "Hai đường song song chỉ cho một phương."
     ],
     "rubric": null,
     "interaction": {
@@ -445,7 +445,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hai đường kiểm tra song song hoặc trùng nhau, chưa đủ hai phương độc lập. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06."
+    "remediation": "Nếu kết luận d vuông góc mặt, xét một đường trong mặt vuông góc cả hai đường song song. Ôn CĐ16 mục 2.2; luyện THPT-TOP16-P06."
   },
   {
     "item_id": "THPT-G11-CHVII-B23-P03",
@@ -459,7 +459,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 23 rồi tự giải trước khi mở lời giải."
+      "Dùng tính duy nhất đường vuông góc mặt qua một điểm."
     ],
     "rubric": null,
     "interaction": {
@@ -477,7 +477,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu d,e đi qua cùng một điểm, chúng trùng; giả thiết d≠e mới cho song song. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
+    "remediation": "Nếu hai đường có cùng điểm, chúng trùng; không thể phân biệt và cắt nhau. Ôn CĐ16 mục 2.4; luyện THPT-TOP16-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C01",
@@ -491,7 +491,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 24 rồi tự giải trước khi mở lời giải."
+      "Kiểm H thuộc mặt phẳng và MH vuông góc mặt."
     ],
     "rubric": null,
     "interaction": {
@@ -509,7 +509,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy đoạn xiên làm khoảng cách, tìm cạnh vuông góc mặt đáy trước. Ôn CĐ16 mục 3.1; luyện THPT-TOP16-P10."
+    "remediation": "Nếu chọn điểm khác H làm chân, đoạn nối đến điểm đó không vuông góc mặt. Ôn CĐ16 mục 3.1; luyện THPT-TOP16-P10."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C02",
@@ -523,7 +523,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 24 rồi tự giải trước khi mở lời giải."
+      "Mọi điểm của l có cùng đường chiếu l."
     ],
     "rubric": null,
     "interaction": {
@@ -541,7 +541,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hai đầu mút cùng ảnh, đoạn chiếu co thành một điểm; không nối thành đoạn có độ dài dương. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
+    "remediation": "Nếu cho ảnh là một đường, tất cả điểm đều chiếu về l∩(P). Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C03",
@@ -555,7 +555,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 24 rồi tự giải trước khi mở lời giải."
+      "Đường b xiên nên hình chiếu b′ là đường không suy biến."
     ],
     "rubric": null,
     "interaction": {
@@ -573,7 +573,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu B=H, ảnh chỉ là điểm và định lí ba đường vuông góc dạng này không áp dụng. Ôn CĐ16 mục 3.3; luyện THPT-TOP16-P12."
+    "remediation": "Nếu chỉ dùng góc trên hình, áp dụng định lí ba đường vuông góc cho a nằm trong (P). Ôn CĐ16 mục 3.3; luyện THPT-TOP16-P12."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C04",
@@ -587,7 +587,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 24 rồi tự giải trước khi mở lời giải."
+      "A đã thuộc mặt, B chiếu xuống C; tìm góc tại A."
     ],
     "rubric": null,
     "interaction": {
@@ -605,7 +605,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy góc giữa AB và AH, đó là góc phụ với góc đường–mặt. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13."
+    "remediation": "Nếu chọn góc ABC, góc với đường vuông góc là góc phụ, không phải góc đường–mặt. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-C05",
@@ -619,7 +619,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 24 rồi tự giải trước khi mở lời giải."
+      "Tỉ số sin bằng chiều cao chia độ dài đoạn xiên."
     ],
     "rubric": null,
     "interaction": {
@@ -637,7 +637,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy độ cao chia độ dài dốc, đó là sin chứ không phải tan. Ôn CĐ16 mục 3.5; luyện THPT-TOP16-P14."
+    "remediation": "Nếu chia cho hình chiếu ngang, đó là tan, không phải sin. Ôn CĐ16 mục 3.5; luyện THPT-TOP16-P14."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-P01",
@@ -651,7 +651,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 24 rồi tự giải trước khi mở lời giải."
+      "Phương thẳng đứng tạo 90° với mặt nền."
     ],
     "rubric": null,
     "interaction": {
@@ -669,7 +669,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy góc giữa AB và AH, đó là góc phụ với góc đường–mặt. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13."
+    "remediation": "Nếu cộng 35° với 90°, hãy xét hai góc phụ nhau trong mặt phẳng đứng. Ôn CĐ16 mục 3.4; luyện THPT-TOP16-P13."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-P02",
@@ -683,7 +683,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 24 rồi tự giải trước khi mở lời giải."
+      "Dựng tam giác vuông có cạnh huyền 5 m, chiều cao 3 m."
     ],
     "rubric": null,
     "interaction": {
@@ -701,7 +701,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hai đầu mút cùng ảnh, đoạn chiếu co thành một điểm; không nối thành đoạn có độ dài dương. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
+    "remediation": "Nếu cộng hai bình phương, nhớ hình chiếu là cạnh góc vuông; lấy hiệu 25−9. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
   },
   {
     "item_id": "THPT-G11-CHVII-B24-P03",
@@ -715,7 +715,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 24 rồi tự giải trước khi mở lời giải."
+      "Độ cao vuông góc nền, hình chiếu nằm trong nền."
     ],
     "rubric": null,
     "interaction": {
@@ -733,7 +733,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu hai đầu mút cùng ảnh, đoạn chiếu co thành một điểm; không nối thành đoạn có độ dài dương. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
+    "remediation": "Nếu đồng nhất hai đoạn, kiểm phương của từng đoạn. Ôn CĐ16 mục 3.2; luyện THPT-TOP16-P11."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C01",
@@ -747,7 +747,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Góc giữa hai mặt bằng góc không tù giữa hai pháp tuyến."
     ],
     "rubric": null,
     "interaction": {
@@ -765,7 +765,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng hai đường bất kỳ trong hai mặt, góc của chúng không nhất thiết là góc giữa hai mặt. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15."
+    "remediation": "Nếu lấy góc tù, chọn góc nhỏ hơn hoặc góc bù. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C02",
@@ -779,7 +779,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Góc nhị diện có thể tù; góc giữa hai mặt không tù."
     ],
     "rubric": null,
     "interaction": {
@@ -797,7 +797,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu ghi 135° cho góc hai mặt, nhớ góc giữa hai mặt không vượt 90°; nhị diện vẫn 135°. Ôn CĐ16 mục 4.2; luyện THPT-TOP16-P16."
+    "remediation": "Nếu giữ 125°, lấy góc bù 180°−125°. Ôn CĐ16 mục 4.2; luyện THPT-TOP16-P16."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C03",
@@ -811,7 +811,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Một mặt chứa một đường vuông góc mặt kia."
     ],
     "rubric": null,
     "interaction": {
@@ -829,7 +829,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ thấy hai đường vuông góc, cần chứng minh một đường vuông góc cả mặt bằng hai phương cắt nhau. Ôn CĐ16 mục 4.3; luyện THPT-TOP16-P17."
+    "remediation": "Nếu chỉ thấy hai đường vuông góc, chưa đủ chứng minh cả hai mặt vuông góc. Ôn CĐ16 mục 4.3; luyện THPT-TOP16-P17."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C04",
@@ -843,7 +843,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Kiểm a nằm trong (P) và a vuông góc giao tuyến Δ."
     ],
     "rubric": null,
     "interaction": {
@@ -861,7 +861,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu bỏ điều kiện vuông góc giao tuyến, đường xiên trên tường không vuông góc sàn. Ôn CĐ16 mục 4.4; luyện THPT-TOP16-P18."
+    "remediation": "Nếu thiếu một giả thiết, không dùng định lí hai mặt vuông góc. Ôn CĐ16 mục 4.4; luyện THPT-TOP16-P18."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C05",
@@ -875,7 +875,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Lăng trụ đều cần vừa đứng vừa có đáy là đa giác đều."
     ],
     "rubric": null,
     "interaction": {
@@ -893,7 +893,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu gọi mọi lăng trụ đứng là đều, kiểm thêm hình dạng đáy. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19."
+    "remediation": "Nếu chỉ kiểm một trong hai điều kiện, chưa đủ. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C06",
@@ -907,7 +907,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Chân đường cao của chóp đều là tâm đáy."
     ],
     "rubric": null,
     "interaction": {
@@ -925,7 +925,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng AO thay OM, sẽ tính cạnh bên thay đường cao mặt bên; kiểm điểm cuối của đoạn. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20."
+    "remediation": "Nếu chọn trung điểm cạnh đáy, đó là chân đường cao mặt bên, không phải chân chiều cao khối. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C07",
@@ -939,7 +939,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Chóp cụt đều là phần giữa hai mặt cắt song song của chóp đều."
     ],
     "rubric": null,
     "interaction": {
@@ -957,7 +957,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng 8:4 cho diện tích, đó chỉ là tỉ số độ dài; diện tích đổi theo hai chiều. Ôn CĐ16 mục 4.7; luyện THPT-TOP16-P21."
+    "remediation": "Nếu cho hai đáy bằng nhau, nhớ chúng đồng dạng nhưng khác kích thước trong chóp cụt không suy biến. Ôn CĐ16 mục 4.7; luyện THPT-TOP16-P21."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-P01",
@@ -971,7 +971,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Góc giữa hai mặt nằm từ 0° đến 90°."
     ],
     "rubric": null,
     "interaction": {
@@ -989,7 +989,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng hai đường bất kỳ trong hai mặt, góc của chúng không nhất thiết là góc giữa hai mặt. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15."
+    "remediation": "Nếu ghi 130°, đó có thể là góc nhị diện; góc giữa hai mặt là 50°. Ôn CĐ16 mục 4.1; luyện THPT-TOP16-P15."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-P02",
@@ -1003,7 +1003,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Tìm đường từ S đến tâm đáy O."
     ],
     "rubric": null,
     "interaction": {
@@ -1021,7 +1021,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng AO thay OM, sẽ tính cạnh bên thay đường cao mặt bên; kiểm điểm cuối của đoạn. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20."
+    "remediation": "Nếu lấy SA làm chiều cao, SA xiên vì A là đỉnh đáy, không phải tâm O. Ôn CĐ16 mục 4.6; luyện THPT-TOP16-P20."
   },
   {
     "item_id": "THPT-G11-CHVII-B25-P03",
@@ -1035,7 +1035,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 25 rồi tự giải trước khi mở lời giải."
+      "Kiểm hình thang có phải đa giác đều không."
     ],
     "rubric": null,
     "interaction": {
@@ -1053,7 +1053,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu gọi mọi lăng trụ đứng là đều, kiểm thêm hình dạng đáy. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19."
+    "remediation": "Nếu nghĩ mọi lăng trụ đứng đều, phải kiểm thêm đáy là đa giác đều. Ôn CĐ16 mục 4.5; luyện THPT-TOP16-P19."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C01",
@@ -1067,7 +1067,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 26 rồi tự giải trước khi mở lời giải."
+      "Dùng Pitago trong tam giác MHK vuông tại H."
     ],
     "rubric": null,
     "interaction": {
@@ -1085,7 +1085,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chọn AX làm khoảng cách, so AX²=AH²+HX² và kiểm chân H. Ôn CĐ17 mục 1.1; luyện THPT-TOP17-P01."
+    "remediation": "Nếu cho MH=MK, HK>0 vì K≠H, nên MK²>MH². Ôn CĐ17 mục 1.1; luyện THPT-TOP17-P01."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C02",
@@ -1099,7 +1099,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 26 rồi tự giải trước khi mở lời giải."
+      "Điểm đã nằm trong mặt phẳng tự là hình chiếu của nó."
     ],
     "rubric": null,
     "interaction": {
@@ -1117,7 +1117,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy AM làm khoảng cách, AM là đoạn xiên; cạnh vuông góc ngắn hơn. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02."
+    "remediation": "Nếu cho khoảng cách dương, đoạn từ M đến chính M có độ dài 0. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C03",
@@ -1131,7 +1131,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 26 rồi tự giải trước khi mở lời giải."
+      "Đường song song mặt có mọi điểm ở cùng độ cao vuông góc."
     ],
     "rubric": null,
     "interaction": {
@@ -1149,7 +1149,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu d không song song mặt, không thể lấy tùy ý một điểm đại diện cho khoảng cách. Ôn CĐ17 mục 1.3; luyện THPT-TOP17-P03."
+    "remediation": "Nếu cho khoảng cách thay đổi, kiểm giả thiết đường không cắt mặt và cùng phương với đường nằm trong mặt. Ôn CĐ17 mục 1.3; luyện THPT-TOP17-P03."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C04",
@@ -1163,7 +1163,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 26 rồi tự giải trước khi mở lời giải."
+      "Khoảng cách giữa hai mặt song song đo theo phương vuông góc."
     ],
     "rubric": null,
     "interaction": {
@@ -1181,7 +1181,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng đường xiên nối hai mặt, chiếu vuông góc để xác định độ dài ngắn nhất. Ôn CĐ17 mục 1.4; luyện THPT-TOP17-P04."
+    "remediation": "Nếu đo từ M theo đường xiên, phải dựng chân vuông góc xuống mặt thứ hai. Ôn CĐ17 mục 1.4; luyện THPT-TOP17-P04."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C05",
@@ -1195,7 +1195,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 26 rồi tự giải trước khi mở lời giải."
+      "Đoạn vuông góc chung phải vuông góc cả hai đường."
     ],
     "rubric": null,
     "interaction": {
@@ -1213,7 +1213,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ vuông góc một đường, chưa phải đoạn vuông góc chung; kiểm phương thứ hai. Ôn CĐ17 mục 1.5; luyện THPT-TOP17-P05."
+    "remediation": "Nếu chỉ kiểm một đầu, kiểm thêm vuông góc với đường thứ hai và hai đầu thuộc đúng hai đường. Ôn CĐ17 mục 1.5; luyện THPT-TOP17-P05."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C06",
@@ -1227,7 +1227,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 26 rồi tự giải trước khi mở lời giải."
+      "H là hình chiếu của S lên đáy."
     ],
     "rubric": null,
     "interaction": {
@@ -1245,7 +1245,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng đường cao mặt bên làm chiều cao, phải tìm cạnh SO vuông góc đáy. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06."
+    "remediation": "Nếu lấy SA=10, đó là cạnh bên; chiều cao là SH. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-P01",
@@ -1259,7 +1259,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 26 rồi tự giải trước khi mở lời giải."
+      "Cạnh xiên 17 là cạnh huyền, hình chiếu 15 là một cạnh góc vuông."
     ],
     "rubric": null,
     "interaction": {
@@ -1277,7 +1277,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng đường cao mặt bên làm chiều cao, phải tìm cạnh SO vuông góc đáy. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06."
+    "remediation": "Nếu cộng bình phương, phải lấy 17²−15² để tìm chiều cao. Ôn CĐ17 mục 1.6; luyện THPT-TOP17-P06."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-P02",
@@ -1291,7 +1291,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 26 rồi tự giải trước khi mở lời giải."
+      "Khoảng cách là độ dài của đoạn vuông góc."
     ],
     "rubric": null,
     "interaction": {
@@ -1309,7 +1309,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy AM làm khoảng cách, AM là đoạn xiên; cạnh vuông góc ngắn hơn. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02."
+    "remediation": "Nếu cho khoảng cách âm, độ dài luôn không âm; bằng 0 khi điểm thuộc mặt. Ôn CĐ17 mục 1.2; luyện THPT-TOP17-P02."
   },
   {
     "item_id": "THPT-G11-CHVII-B26-P03",
@@ -1323,7 +1323,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 26 rồi tự giải trước khi mở lời giải."
+      "Hai đường chéo nhau không cắt và có đoạn vuông góc chung."
     ],
     "rubric": null,
     "interaction": {
@@ -1341,7 +1341,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu chỉ vuông góc một đường, chưa phải đoạn vuông góc chung; kiểm phương thứ hai. Ôn CĐ17 mục 1.5; luyện THPT-TOP17-P05."
+    "remediation": "Nếu đoạn chung dài 0, hai đầu trùng, tức hai đường gặp nhau, trái giả thiết. Ôn CĐ17 mục 1.5; luyện THPT-TOP17-P05."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C01",
@@ -1355,7 +1355,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 27 rồi tự giải trước khi mở lời giải."
+      "Nhân diện tích đáy với chiều cao vuông góc."
     ],
     "rubric": null,
     "interaction": {
@@ -1373,7 +1373,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng cạnh xiên làm h, h là khoảng cách vuông góc giữa hai đáy. Ôn CĐ17 mục 2.1; luyện THPT-TOP17-P07."
+    "remediation": "Nếu chia cho 3, đã dùng công thức chóp cho lăng trụ. Ôn CĐ17 mục 2.1; luyện THPT-TOP17-P07."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C02",
@@ -1387,7 +1387,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 27 rồi tự giải trước khi mở lời giải."
+      "Thể tích chóp bằng một phần ba tích S và h."
     ],
     "rubric": null,
     "interaction": {
@@ -1405,7 +1405,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng V=Sh, đó là công thức lăng trụ; chóp có hệ số 1/3. Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
+    "remediation": "Nếu dùng V=Sh, thiếu hệ số 1/3. Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C03",
@@ -1419,7 +1419,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 27 rồi tự giải trước khi mở lời giải."
+      "Nhân ba kích thước cùng đơn vị."
     ],
     "rubric": null,
     "interaction": {
@@ -1437,7 +1437,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy diện tích toàn phần làm thể tích hoặc trộn cm và dm, đổi đơn vị rồi nhân ba chiều. Ôn CĐ17 mục 2.3; luyện THPT-TOP17-P09."
+    "remediation": "Nếu ghi m², thể tích có đơn vị m³. Ôn CĐ17 mục 2.3; luyện THPT-TOP17-P09."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C04",
@@ -1451,7 +1451,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 27 rồi tự giải trước khi mở lời giải."
+      "Dùng công thức h(S+S′+√(SS′))/3."
     ],
     "rubric": null,
     "interaction": {
@@ -1469,7 +1469,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng trung bình cộng hai đáy hoặc cạnh xiên, viết đủ ba số hạng S,S′,√(SS′). Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
+    "remediation": "Nếu dùng trung bình cộng hai diện tích, còn thiếu số hạng căn tích. Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-C05",
@@ -1483,7 +1483,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 27 rồi tự giải trước khi mở lời giải."
+      "1 m³ bằng 1000 dm³ và 1 dm³ bằng 1 lít."
     ],
     "rubric": null,
     "interaction": {
@@ -1501,7 +1501,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu nhầm 1 m³=100 L, nhớ 1 m³=1000 dm³=1000 L; kiểm phần dung tích được dùng. Ôn CĐ17 mục 2.5; luyện THPT-TOP17-P11."
+    "remediation": "Nếu nhân 100 hay 10, đổi theo ba chiều, không theo một chiều. Ôn CĐ17 mục 2.5; luyện THPT-TOP17-P11."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P01",
@@ -1515,7 +1515,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 27 rồi tự giải trước khi mở lời giải."
+      "Dùng công thức thể tích chóp, không phải lăng trụ."
     ],
     "rubric": null,
     "interaction": {
@@ -1533,7 +1533,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng V=Sh, đó là công thức lăng trụ; chóp có hệ số 1/3. Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
+    "remediation": "Nếu ra 108 dm³, cần chia 3. Ôn CĐ17 mục 2.2; luyện THPT-TOP17-P08."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P02",
@@ -1547,7 +1547,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 27 rồi tự giải trước khi mở lời giải."
+      "Tính √(16·9) rồi cộng cả ba số hạng."
     ],
     "rubric": null,
     "interaction": {
@@ -1565,7 +1565,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng trung bình cộng hai đáy hoặc cạnh xiên, viết đủ ba số hạng S,S′,√(SS′). Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
+    "remediation": "Nếu quên căn tích, kiểm công thức chóp cụt trước khi thay số. Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
   },
   {
     "item_id": "THPT-G11-CHVII-B27-P03",
@@ -1579,7 +1579,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 27 rồi tự giải trước khi mở lời giải."
+      "Chiều cao phải vuông góc hai mặt đáy."
     ],
     "rubric": null,
     "interaction": {
@@ -1597,7 +1597,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu dùng trung bình cộng hai đáy hoặc cạnh xiên, viết đủ ba số hạng S,S′,√(SS′). Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
+    "remediation": "Nếu lấy cạnh xiên, đoạn đó dài hơn khoảng cách vuông góc. Ôn CĐ17 mục 2.4; luyện THPT-TOP17-P10."
   },
   {
     "item_id": "THPT-G11-CHVII-CHVII-C01",
@@ -1611,7 +1611,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại điều kiện và ví dụ của Bài 27 rồi tự giải trước khi mở lời giải."
+      "Độ cao vuông góc đã cho là 6 cm; chọn công thức khối chóp."
     ],
     "rubric": null,
     "interaction": {
@@ -1629,7 +1629,7 @@
       }
     },
     "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
-    "remediation": "Nếu lấy cạnh bên làm h, dựng tam giác vuông với bán kính đường tròn ngoại tiếp đáy. Ôn CĐ17 mục 2.6; luyện THPT-TOP17-P12."
+    "remediation": "Nếu lấy cạnh 10 cm, đó là đoạn xiên; h=6 mới dùng trong V=Sh/3. Ôn CĐ17 mục 2.6; luyện THPT-TOP17-P12."
   },
   {
     "item_id": "THPT-G11-B22-KFT01",
