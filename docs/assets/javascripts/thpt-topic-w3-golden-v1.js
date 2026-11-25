@@ -94,7 +94,7 @@ const topicTabNames={
       [
         "2.1. Cắt, song song và trùng",
         "2.2. Đường vuông góc qua điểm",
-        "2.3. Giao điểm từ hệ phương trình",
+        "2.3. Giao điểm từ hệ PT",
         "2.4. Khoảng cách điểm–đường",
         "2.5. Góc giữa hai đường"
       ],
