@@ -222,12 +222,12 @@ Chẳng hạn, cho v(t)=4t−2 (m/s), s(0)=3m: s(t)=2t²−2t+3. Sau2 giây s(2)
 
 **Lời giải:** Vì s′=v, s(t)=2t²+t+C (m). s(1)=2+1+C=6 ⇒ C=3. Do đó s(2)=8+2+3=13 m. Cần điều kiện đầu để xác định s; tích phân vận tốc cho độ dời.
 
-**Vận dụng** v(t)=6t, s(0)=1, s(1) bằng?
+**Vận dụng** Vật chuyển động thẳng có vận tốc \(v(t)=6t\) (m/s), thời gian \(t\) tính bằng giây, vị trí ban đầu \(s(0)=1\) m. Tính vị trí \(s(1)\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-s(t)=3t²+1 nên s(1)=4m.
+Vì \(s'(t)=v(t)\), ta có \(s(t)=3t^2+C\). Thế \(s(0)=1\) được \(C=1\); do đó \(s(1)=4\) m.
 
 Nếu không có s(0), không thể nói vị trí tuyệt đối cụ thể.
 
@@ -266,12 +266,12 @@ Xét ví dụ: ∫₁² 4x³dx=[x⁴]₁²=16−1=15. Chọn nguyên hàm x⁴, 
 
 **Lời giải:** f(x)=4x liên tục trên [1,3], F(x)=2x². Định lí Newton–Leibniz cho ∫₁³4x dx=F(3)−F(1)=18−2=16. Tích phân có cận là số, không thêm +C.
 
-**Vận dụng** ∫₀²2x dx?
+**Vận dụng** Tính \(\displaystyle\int_1^3 2x\,dx\). Viết rõ giá trị nguyên hàm ở cả hai cận.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-[x²]₀²=4.
+\(\left[x^2\right]_1^3=3^2-1^2=8\). Nếu em ra 9, em mới thế cận trên mà quên trừ giá trị tại cận dưới.
 
 Nếu chỉ thế cận trên, luôn nhắc hiệu F(b)−F(a).
 
@@ -294,7 +294,14 @@ Chẳng hạn, ∫₀¹(3x²+2x+1)dx=[x³+x²+x]₀¹=3. Có thể tách thành1
 
 **Đề bài:** Tính ∫₀²(3x²−2x+4)dx và giải thích phép tách.
 
-**Lời giải:** Các đa thức đều khả tích trên [0,2]; dùng tuyến tính, F=x³−x²+4x. Giá trị là F(2)−F(0)=8−4+8=12. Không thay cận riêng cho từng hạng tử.
+**Lời giải:** Các đa thức đều khả tích trên [0,2]; dùng tuyến tính, F=x³−x²+4x. Giá trị là F(2)−F(0)=8−4+8=12. Cũng có thể tách thành ba tích phân và tính riêng từng tích phân **với cùng hai cận 0 và 2**:
+
+\[
+\int_0^2 3x^2\,dx-\int_0^2 2x\,dx+\int_0^2 4\,dx
+=8-4+8=12.
+\]
+
+Hai cách hoàn toàn tương đương; không được tự ý thay cận của một số hạng mà không có phép biến đổi hợp lệ.
 
 **Vận dụng** ∫₀²(2x+3)dx?
 
@@ -326,14 +333,12 @@ Chẳng hạn, ∫₂⁰(3x²+1)dx=−∫₀²(3x²+1)dx=−10. Giá trị âm x
 
 **Lời giải:** F=x². Theo chiều cận 4→1, ∫₄¹2x dx=F(1)−F(4)=1−16=−15; cận đảo cho +15. Dấu âm là chiều tích lũy, không phải diện tích hình học âm.
 
-**Vận dụng** ∫₁¹(x²+1)dx?
+**Vận dụng** Biết \(\int_1^3 f(x)\,dx=5\) và \(\int_3^5 f(x)\,dx=-2\), trong đó \(f\) liên tục trên \([1;5]\). Tính \(\int_1^5 f(x)\,dx\), \(\int_5^1 f(x)\,dx\) và \(\int_3^3 f(x)\,dx\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-0.
-
-Nếu kết luận diện tích hình học từ tích phân đảo cận, phải quay lại miền và |f|.
+Ghép tại \(3\): \(\int_1^5 f(x)\,dx=5+(-2)=3\). Đảo cận cho \(\int_5^1 f(x)\,dx=-3\); hai cận bằng nhau cho \(\int_3^3 f(x)\,dx=0\). Nếu em cộng thành 7, em đã thay số hạng âm bằng trị tuyệt đối, trong khi đề hỏi tích phân có dấu.
 
 
 **Kiểm lỗi**
@@ -392,14 +397,18 @@ Chẳng hạn, v(t)=t−1 trên [0,2]: ∫v=0, nhưng ∫|v|=∫₀¹(1−t)+∫
 
 **Lời giải:** f đổi dấu ở x=1. Tích phân có dấu ∫₀⁴(x−1)dx=[x²/2−x]₀⁴=4. Diện tích phải tách: ∫₀¹(1−x)dx=1/2 và ∫₁⁴(x−1)dx=9/2, tổng S=5. Không lấy |4| thay ∫|f|.
 
-**Vận dụng** f=x trên [−1,1], diện tích và tích phân là gì?
+**Vận dụng** Một vật chuyển động thẳng với vận tốc có hướng \(v(t)=2-t\) (m/s), \(0\le t\le5\) giây. Tìm thời điểm đổi chiều, độ dời và tổng quãng đường của vật.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Diện tích1, tích phân có dấu0.
+Vận tốc bằng 0 tại \(t=2\), dương trước 2 và âm sau 2 nên vật đổi chiều tại đó. Độ dời là
 
-Nếu câu hỏi 'quãng đường', hãy chia đoạn tại nghiệm v=0 rồi lấy |v|.
+\[
+\int_0^5(2-t)\,dt=\left[2t-\frac{t^2}2\right]_0^5=-\frac52\ \text{m}.
+\]
+
+Hai phần quãng đường là \(\int_0^2(2-t)\,dt=2\) m và \(\int_2^5(t-2)\,dt=\frac92\) m. Tổng quãng đường \(\frac{13}2\) m. Nếu lấy \(\frac52\) m, em mới lấy trị tuyệt đối của độ dời, chưa cộng quãng đường ở cả hai chiều.
 
 
 **Kiểm lỗi**
@@ -528,14 +537,12 @@ Chẳng hạn, f(x)=x trên [−2,2]: tích phân có dấu0, nhưng S=∫−₂
 
 **Lời giải:** Hàm đổi dấu ở x=−1 và x=1. Tích phân có dấu ∫₋₂²(x²−1)dx=[x³/3−x]₋₂²=4/3. Diện tích: hai mảnh ngoài mỗi mảnh ∫₁²(x²−1)dx=4/3 và mảnh giữa ∫₋₁¹(1−x²)dx=4/3, nên S=4. Không lấy |∫f| làm diện tích.
 
-**Vận dụng** S giữa y=x và Ox trên [−1,0]?
+**Vận dụng** Tính diện tích hình phẳng giữa \(y=2x-2\) và trục hoành trên \([0;3]\). Tự tìm mốc chia đoạn.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-1/2 đơn vị².
-
-Nếu tích phân có dấu0 mà hình có hai miền, bạn đã để triệt tiêu sai.
+Hàm bằng 0 tại \(x=1\), âm trên \([0;1)\) và dương trên \((1;3]\). Diện tích là \(\int_0^1(2-2x)\,dx+\int_1^3(2x-2)\,dx=1+4=5\) đơn vị diện tích. Tích phân có dấu chỉ bằng \(-1+4=3\); hai mảnh diện tích không triệt tiêu nhau.
 
 
 **Kiểm lỗi**
@@ -620,14 +627,12 @@ Chẳng hạn, cho y=2x và y=x²: giao x=0 và2, trên (0,2) 2x≥x² nên S=�
 
 **Lời giải:** Giải 2−x²=x ⇒ x²+x−2=0 ⇒ x=−2 và x=1. Trên (−2,1) hiệu 2−x²−x>0 (thử x=0). S=∫₋₂¹(2−x²−x)dx=[2x−x³/3−x²/2]₋₂¹=9/2 đơn vị diện tích. Các cận do giao điểm quyết định.
 
-**Vận dụng** Cho y=x+1 và y=1 trên [0,2], S?
+**Vận dụng** Hai đồ thị \(y=3x\) và \(y=x^2\) tạo thành một hình phẳng bị chặn. Tự tìm hai giao điểm, xác định đường nằm trên giữa chúng rồi tính diện tích.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-∫₀² x dx=2 đơn vị².
-
-Nếu thiếu cận trong đề không tự nói đó là hình kín; tìm giao điểm/ranh giới trước.
+Giải \(x^2=3x\), được \(x=0\) hoặc \(x=3\). Trên \((0;3)\), \(3x-x^2=x(3-x)>0\), nên đường thẳng nằm trên parabol. Vậy \(S=\int_0^3(3x-x^2)\,dx=\left[\frac32x^2-\frac{x^3}3\right]_0^3=\frac92\) đơn vị diện tích. Không tự chọn hai cận 0 và 2 như ở ví dụ trước.
 
 
 **Kiểm lỗi**
@@ -709,7 +714,7 @@ Chẳng hạn, r(x)=2x trên [0,1], V=π∫₀¹4x²dx=4π/3 đơn vị³. Chọ
 
 π∫₀¹(1+x)²dx=7π/3.
 
-Nếu ra 2π, bạn đã tích phân r thay r².
+Nếu ra \(\frac{3\pi}2\), em đã tính \(\pi\int_0^1(1+x)\,dx\), tức tích phân bán kính thay vì diện tích tiết diện. Phải bình phương bán kính trước: \(\pi(1+x)^2\).
 
 
 **Kiểm lỗi**
@@ -738,14 +743,12 @@ Ngay trên hình, lấy miền \(0\le x\le2\), \(x\le y\le2\) quay quanh \(Ox\).
 
 **Lời giải:** Bán kính ngoài R=x+2, trong r=x≥0; lát cắt là vành khăn. A=π(R²−r²)=π[(x+2)²−x²]=π(4x+4). V=π∫₀¹(4x+4)dx=π(2+4)=6π đơn vị³. Không tính π(R−r)² và không nhầm với đĩa đặc.
 
-**Vận dụng** Quay miền 0≤y≤2, x∈[0,3] quanh Ox, V?
+**Vận dụng** Quay miền \(0\le x\le2,\ 1\le y\le3\) quanh trục \(Ox\). Tính thể tích và giải thích vì sao không dùng đĩa đặc.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Đĩa r=2 không đổi, V=π·4·3=12π.
-
-Nếu vùng không chạm Ox, không dùng đĩa đầy; kiểm lỗ r>0.
+Miền không chạm trục \(Ox\), nên mỗi thiết diện là vành khăn có bán kính ngoài \(R=3\), trong \(r=1\). Diện tích là \(\pi(3^2-1^2)=8\pi\). Thể tích \(V=\int_0^2 8\pi\,dx=16\pi\) đơn vị thể tích. Nếu ra \(18\pi\), em đã tính cả phần lỗ; nếu ra \(8\pi\), em đã dùng \(\pi(R-r)^2\) thay hiệu hai diện tích.
 
 
 **Kiểm lỗi**
