@@ -10,7 +10,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Liệt kê ba số lẻ và lọc số lớn hơn 3."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -25,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không chia cho 6 khi đã biết số lẻ. Ôn CĐ21 mục 1.1; luyện THPT-TOP21-P01."
   },
   {
     "item_id": "THPT-G12-B18-P01",
@@ -38,7 +41,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Tìm các bội của 3 rồi lọc số chẵn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -53,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Mẫu là bốn bội của 3, không phải 12 thẻ. Ôn CĐ21 mục 1.1; luyện THPT-TOP21-P01."
   },
   {
     "item_id": "THPT-G12-B18-A01",
@@ -66,7 +72,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Đếm số sách bìa cứng ở cả hai loại."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -81,7 +89,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chỉ xét năm sách bìa cứng. Ôn CĐ21 mục 1.1; luyện THPT-TOP21-P01."
   },
   {
     "item_id": "THPT-G12-B18-C02",
@@ -94,7 +103,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Lấy xác suất giao chia P(B)>0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -109,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhân hai xác suất khi đề hỏi điều kiện. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-P02",
@@ -122,7 +134,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Liệt kê B và A∩B."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -137,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu dùng 2/8, đó là xác suất giao. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-A02",
@@ -150,7 +165,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Điều kiện là thuộc CLB, giao có 18 người."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -165,12 +182,13 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không chia 18 cho tổng 60. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-C03",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Lớp có 20 học sinh đi xe buýt, trong đó 8 em là nữ; toàn lớp có 25 nữ. Tính P(nữ|đi xe buýt).",
+    "stem": "Chọn đều một học sinh trong lớp. Có 20 học sinh đi xe buýt, trong đó 8 em là nữ; toàn lớp có 25 nữ. Tính P(nữ|đi xe buýt).",
     "answer_key": "`2/5`.",
     "worked_solution": "Nhóm điều kiện có 20 em, giao có 8 em, nên 8/20=2/5.",
     "skill_ids": [
@@ -178,7 +196,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Điều kiện đi xe buýt nên xét 20 người."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -193,12 +213,13 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không dùng 25 nữ làm mẫu cho chiều hỏi này. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-P03",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Với dữ kiện 20 em đi xe buýt, 8 nữ trong số đó, cả lớp có 25 nữ, tính P(đi xe buýt|nữ).",
+    "stem": "Chọn đều một học sinh trong lớp. Có 20 em đi xe buýt, 8 nữ trong số đó; cả lớp có 25 nữ. Tính P(đi xe buýt|nữ).",
     "answer_key": "`8/25`.",
     "worked_solution": "Điều kiện là 25 học sinh nữ, giao có 8 nên 8/25.",
     "skill_ids": [
@@ -206,7 +227,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Điều kiện nữ nên xét 25 người."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -221,20 +244,23 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Đảo điều kiện đổi mẫu, tử vẫn 8. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-A03",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Một đội có 15 người chơi bóng rổ, 12 người chơi bóng đá, 6 chơi cả hai. Tính cả P(rổ|đá) và P(đá|rổ).",
+    "stem": "Chọn đều một người trong một đội có 15 người chơi bóng rổ, 12 người chơi bóng đá, 6 chơi cả hai. Tính P(rổ|đá) và P(đá|rổ), giải thích vì sao khác nhau.",
     "answer_key": "`1/2 và 2/5`.",
-    "worked_solution": "Lần lượt 6/12=1/2 và 6/15=2/5. Giải thích vì sao hai xác suất khác nhau.",
+    "worked_solution": "Giao gồm 6 người. Biết chơi đá, mẫu 12 người nên P(rổ|đá)=6/12=1/2. Biết chơi rổ, mẫu 15 người nên P(đá|rổ)=6/15=2/5. Cùng tử nhưng nhóm điều kiện khác nhau.",
     "skill_ids": [
       "G12-CHVI-B18-O03"
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Hai xác suất cùng tử 6 nhưng mẫu khác nhau."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -249,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "P(rổ|đá) dùng 12; P(đá|rổ) dùng 15. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-C04",
@@ -262,7 +289,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Tính P(A)P(B) rồi so với giao."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -277,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không kết luận độc lập chỉ vì giao khác rỗng. Ôn CĐ21 mục 1.4; luyện THPT-TOP21-P04."
   },
   {
     "item_id": "THPT-G12-B18-P04",
@@ -290,7 +320,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "So 0 với tích 1/2·1/2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -305,7 +337,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Xung khắc có xác suất dương không độc lập. Ôn CĐ21 mục 1.4; luyện THPT-TOP21-P04."
   },
   {
     "item_id": "THPT-G12-B18-A04",
@@ -318,7 +351,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Tính 0,18/0,6 và so với 0,3."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -333,7 +368,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu điều kiện có xác suất dương, độc lập tương đương xác suất không đổi. Ôn CĐ21 mục 1.4; luyện THPT-TOP21-P04."
   },
   {
     "item_id": "THPT-G12-B18-C05",
@@ -346,7 +382,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Lấy số đạt trong nhóm CLB chia tổng nhóm."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -361,7 +399,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không dùng tổng người đạt ở cả hai nhóm làm mẫu. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-P05",
@@ -374,7 +413,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Đếm tổng người chọn A ở cả hai nhóm."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -389,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Mẫu 45, không phải tổng nhóm X=50. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-A05",
@@ -402,7 +444,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Tính tỉ lệ đúng riêng trong từng nhóm."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -417,7 +461,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "So tỉ lệ, không chỉ so số người đúng khi cỡ nhóm khác. Ôn CĐ21 mục 1.2; luyện THPT-TOP21-P02."
   },
   {
     "item_id": "THPT-G12-B18-C06",
@@ -430,7 +475,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Dùng P(A∩B)=P(A)P(B|A)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -445,7 +492,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không đòi độc lập khi đã có xác suất có điều kiện. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
   },
   {
     "item_id": "THPT-G12-B18-P06",
@@ -458,7 +506,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Dùng P(B)P(A|B)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -473,20 +523,23 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia thay vì nhân, đang đảo công thức. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
   },
   {
     "item_id": "THPT-G12-B18-A06",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Tỉ lệ chuyến tàu đúng giờ là 80%. Trong các chuyến đúng giờ, 90% hành khách kết nối chuyến tiếp theo thành công. Tính xác suất một hành khách rơi vào cả hai tình huống.",
+    "stem": "Trong các lượt hành khách được khảo sát, 80% đi chuyến tàu đến đúng giờ. Trong nhóm lượt hành khách đi chuyến đúng giờ, 90% kết nối chuyến tiếp theo thành công. Chọn đều một lượt hành khách, tính xác suất đi chuyến đúng giờ và kết nối thành công.",
     "answer_key": "`18/25`.",
-    "worked_solution": "P(đúng giờ∩kết nối)=0,8×0,9=0,72. Xác suất 90% là có điều kiện, không phải tổng thể.",
+    "worked_solution": "Gọi A là lượt hành khách đi chuyến đúng giờ, B là kết nối thành công. P(A)=0,8 và P(B|A)=0,9; cùng một đơn vị kết quả là lượt hành khách. P(A∩B)=0,8·0,9=0,72=18/25.",
     "skill_ids": [
       "G12-CHVI-B18-O06"
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Dùng cùng đơn vị kết quả là lượt hành khách, nhân xác suất đúng giờ và kết nối có điều kiện."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -501,7 +554,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không trộn tỉ lệ chuyến tàu với tỉ lệ hành khách nếu khác trọng số. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
   },
   {
     "item_id": "THPT-G12-B18-C07",
@@ -514,7 +568,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Sau một bi vàng, còn ba bi vàng trong năm bi."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -529,7 +585,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không dùng (4/6)^2 khi không hoàn lại. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
   },
   {
     "item_id": "THPT-G12-B18-P07",
@@ -542,7 +599,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Tách đỏ–xanh và xanh–đỏ."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -557,7 +616,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai thứ tự rời nhau, cộng xác suất hai đường. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
   },
   {
     "item_id": "THPT-G12-B18-A07",
@@ -570,7 +630,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Tách ba thứ tự có hai đỏ và một xanh."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -585,7 +647,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không chỉ tính một thứ tự; cập nhật số bi còn lại. Ôn CĐ21 mục 1.3; luyện THPT-TOP21-P03."
   },
   {
     "item_id": "THPT-G12-B19-C01",
@@ -598,7 +661,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Dùng P(Ā)=1−P(A)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -613,7 +678,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai biến cố đối phủ hết Ω và không giao. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
   },
   {
     "item_id": "THPT-G12-B19-P01",
@@ -626,7 +692,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Lấy 1−2/5 rồi kiểm tổng."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -641,7 +709,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhầm Ā với một biến cố tùy ý khác A. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
   },
   {
     "item_id": "THPT-G12-B19-A01",
@@ -654,7 +723,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Lập 0,32=0,4·0,5+0,6·x."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -669,7 +740,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chia phần xác suất còn lại cho trọng số 0,6. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
   },
   {
     "item_id": "THPT-G12-B19-C02",
@@ -682,7 +754,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Nhân tỉ trọng từng nhóm với tỉ lệ đạt."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -697,7 +771,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai nguồn không bằng nhau, không lấy trung bình cộng đơn giản. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
   },
   {
     "item_id": "THPT-G12-B19-P02",
@@ -710,7 +785,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Cộng hai đường nguồn–lỗi."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -725,7 +802,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không bỏ trọng số 30% và 70%. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
   },
   {
     "item_id": "THPT-G12-B19-A02",
@@ -738,7 +816,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Cộng hai xác suất ngày nghỉ/Ngày thường và dùng xe."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -753,7 +833,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Đảm bảo cùng đơn vị là một lượt khảo sát. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
   },
   {
     "item_id": "THPT-G12-B19-C03",
@@ -766,7 +847,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Nhánh Ā có xác suất 1−0,2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -781,7 +864,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nhân trên từng đường đến B, rồi cộng. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
   },
   {
     "item_id": "THPT-G12-B19-P03",
@@ -794,7 +878,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Nhánh Ā có xác suất 0,3."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -809,7 +895,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không cộng trực tiếp 0,2+0,5. Ôn CĐ21 mục 3.1; luyện THPT-TOP21-P07."
   },
   {
     "item_id": "THPT-G12-B19-A03",
@@ -822,7 +909,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Tử là đường A–E; mẫu gồm cả hai đường E."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -837,7 +926,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không đảo P(E|A) thành P(A|E). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
   },
   {
     "item_id": "THPT-G12-B19-C04",
@@ -850,7 +940,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Tính đường A–B và tổng mọi đường B."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -865,7 +957,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chỉ chia cho 0,1, mẫu chưa gồm Ā. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
   },
   {
     "item_id": "THPT-G12-B19-P04",
@@ -878,7 +971,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Tính tử 1/4·4/5 và đường Ā–B."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -893,7 +988,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Mẫu là xác suất B chung. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
   },
   {
     "item_id": "THPT-G12-B19-A04",
@@ -906,7 +1002,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Lập hai đường dương đúng và dương giả."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -921,7 +1019,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Độ nhạy không phải xác suất có đặc điểm khi dương. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08."
   },
   {
     "item_id": "THPT-G12-B19-C05",
@@ -934,7 +1033,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Tính 0,02·0,9 và 0,98·0,05."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -949,7 +1050,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Mẫu gồm cả dương tính đúng và giả. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08."
   },
   {
     "item_id": "THPT-G12-B19-P05",
@@ -962,7 +1064,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Tính trọng số 1% và 99%."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -977,7 +1081,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tỉ lệ nền nhỏ có thể khiến báo giả nhiều hơn báo đúng. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08."
   },
   {
     "item_id": "THPT-G12-B19-A05",
@@ -990,7 +1095,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Tính xác suất thư rác bị gắn và thư thường bị gắn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1005,20 +1112,23 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy 90% làm xác suất thư thật sự rác khi bị gắn. Ôn CĐ21 mục 3.2; luyện THPT-TOP21-P08."
   },
   {
     "item_id": "THPT-G12-B19-C06",
     "content_version": "G12-SGK-CHVI-B18-B19-END-R00",
-    "stem": "Ba vùng A,B,C chiếm 25%,50%,25% dân số khảo sát; khả năng mưa lần lượt 60%,20%,40%. Tính P(mưa).",
+    "stem": "Chọn ngẫu nhiên một lượt khảo sát từ ba vùng A,B,C có tỉ trọng lượt khảo sát lần lượt 25%,50%,25%; xác suất ghi nhận mưa trong từng vùng lần lượt 60%,20%,40%. Tính xác suất lượt khảo sát ghi nhận mưa.",
     "answer_key": "`7/20`.",
-    "worked_solution": "0,25×0,6+0,5×0,2+0,25×0,4=0,15+0,10+0,10=0,35.",
+    "worked_solution": "Ba vùng phân hoạch các lượt khảo sát. Theo toàn phần: P(mưa)=0,25·0,6+0,5·0,2+0,25·0,4=0,35=7/20.",
     "skill_ids": [
       "G12-CHVI-B19-O06"
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Nhân ba trọng số với xác suất mưa từng vùng."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1033,7 +1143,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Ba vùng phải rời nhau và phủ toàn bộ mô hình lấy mẫu. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
   },
   {
     "item_id": "THPT-G12-B19-P06",
@@ -1046,7 +1157,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Đổi các phần trăm ra số thập phân, cộng ba tích."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1061,7 +1174,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không cộng tỉ lệ lỗi đơn thuần. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
   },
   {
     "item_id": "THPT-G12-B19-A06",
@@ -1074,7 +1188,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Nhân tỉ trọng và tỉ lệ lỗi từng nguồn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1089,7 +1205,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Kiểm các trọng số cộng bằng 1. Ôn CĐ21 mục 2.1; luyện THPT-TOP21-P05."
   },
   {
     "item_id": "THPT-G12-B19-C07",
@@ -1102,7 +1219,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 1,
-    "hints": [],
+    "hints": [
+      "Tính P(thành công) trước, sau đó chia đường sáng–thành công."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1117,7 +1236,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhầm P(thành công|sáng) và P(sáng|thành công). Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
   },
   {
     "item_id": "THPT-G12-B19-P07",
@@ -1130,7 +1250,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 2,
-    "hints": [],
+    "hints": [
+      "Cộng hai đường hỏng, rồi tính tỉ số đường A–hỏng."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1145,7 +1267,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Mẫu Bayes là tổng xác suất hỏng. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
   },
   {
     "item_id": "THPT-G12-B19-A07",
@@ -1158,7 +1281,9 @@
     ],
     "problem_type_id": null,
     "difficulty": 3,
-    "hints": [],
+    "hints": [
+      "Tính hai đường giao đúng và dùng đường tối–đúng làm tử."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -1173,7 +1298,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không dùng 55% làm hậu nghiệm khi đã biết giao đúng. Ôn CĐ21 mục 2.2; luyện THPT-TOP21-P06."
   },
   {
     "item_id": "THPT-G12-B18-KFT01",
