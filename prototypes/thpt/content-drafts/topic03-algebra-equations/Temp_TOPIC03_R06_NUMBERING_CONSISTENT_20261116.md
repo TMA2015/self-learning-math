@@ -76,7 +76,7 @@ Nếu quên trường hợp hệ số 0, đặt \(a=0\) và thử \(x=6\); làm 
 
 ### 1.3. Tích bằng 0, tránh làm mất nghiệm
 
-Chia cả hai vế cho x−2 có thể làm mất nghiệm nào?
+Chia cả hai vế cho \(x-2\) có thể làm mất nghiệm nào?
 
 Khi một biểu thức được tách thành tích, tính chất tích bằng không giúp nhìn thấy nhiều nghiệm. Đưa phương trình về tích làm lộ nhiều nghiệm, nhưng chia cho một nhân tử có thể làm mất nghiệm ngay tại nhân tử ấy. Ta bắt đầu từ tính chất \(ab=0\) khi và chỉ khi \(a=0\) hoặc \(b=0\).
 
@@ -90,7 +90,7 @@ Xét ví dụ: \(x^2-x-6=0\Leftrightarrow (x-3)(x+2)=0\), suy ra \(x\in\{3;-2\}\
 
 **Đề bài.** Giải \((x+2)(3x-1)=0\).
 
-**Lời giải.** Theo tính chất tích bằng 0, \(x+2=0\) hoặc \(3x-1=0\). Vậy \(S=\{-2,\frac13\}\). Không chia cho một thừa số chứa x, vì như vậy có thể loại mất nghiệm của chính thừa số ấy.
+**Lời giải.** Theo tính chất tích bằng 0, \(x+2=0\) hoặc \(3x-1=0\). Vậy \(S=\{-2;\frac13\}\). Không chia cho một thừa số chứa x, vì như vậy có thể loại mất nghiệm của chính thừa số ấy.
 
 **Vận dụng**
 
@@ -128,7 +128,7 @@ Hãy kiểm tra trường hợp sau: \(x^2-4x+3=0\). Ta có \(\Delta=16-12=4>0\)
 
 **Đề bài.** Giải \(2x^2-3x-2=0\) trên \(\mathbb R\).
 
-**Lời giải.** Với \(a=2,b=-3,c=-2\), \(\Delta=b^2-4ac=9+16=25>0\). Hai nghiệm \((3\pm5)/4\) là \(2\) và \(-\frac12\). Có thể đối chiếu bằng \((2x+1)(x-2)=0\).
+**Lời giải.** Với \(a=2,b=-3,c=-2\), \(\Delta=b^2-4ac=9+16=25>0\). Hai nghiệm \(\frac{3\pm5}{4}\) là \(2\) và \(-\frac12\). Có thể đối chiếu bằng \((2x+1)(x-2)=0\).
 
 **Vận dụng**
 
@@ -260,7 +260,7 @@ Xét ví dụ sát hình trục số: \(\sqrt{x^2+7x+11}=\sqrt{x+3}\). Hai vế 
 
 **Đề bài.** Giải \(\sqrt{x^2+4x+5}=\sqrt{x+5}\) trên \(\mathbb R\).
 
-**Lời giải.** Hai căn xác định khi \(x+5\ge0\) và \(x^2+4x+5\ge0\); điều kiện thứ hai luôn đúng vì \((x+2)^2+1>0\). Bình phương hai căn được \(x^2+3x=0\), nên \(x=0\) hoặc \(x=-3\). Cả hai thỏa \(x\ge-5\) và khi thế vào thì hai biểu thức dưới căn bằng nhau, không âm. Vậy \(S=\{-3,0\}\). Hình trục số phía trên minh họa một trường hợp *khác*, có ứng viên \(-4\) bị loại.
+**Lời giải.** Hai căn xác định khi \(x+5\ge0\) và \(x^2+4x+5\ge0\); điều kiện thứ hai luôn đúng vì \((x+2)^2+1>0\). Bình phương hai căn được \(x^2+3x=0\), nên \(x=0\) hoặc \(x=-3\). Cả hai thỏa \(x\ge-5\) và khi thế vào thì hai biểu thức dưới căn bằng nhau, không âm. Vậy \(S=\{-3;0\}\). Hình trục số phía trên minh họa một trường hợp *khác*, có ứng viên \(-4\) bị loại.
 
 **Vận dụng**
 
