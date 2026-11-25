@@ -519,13 +519,13 @@ Nếu đo góc với đường pháp tuyến thay cho góc đường–mặt, đ
 
 **Vận dụng**
 
-Dốc cao 3 m, ngang 4 m: độ dài đoạn dốc?
+Dốc cao 3 m, khoảng ngang 4 m: tính độ dài đoạn dốc. Tiếp theo, gọi \(\theta\) là góc giữa đoạn dốc và mặt nền ngang; hãy xác định cạnh đối, cạnh kề và tính \(\tan\theta\).
 
 <!-- ITEM_ID: THPT-TOP16-T14; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP16-O14 -->
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-5 m theo định lí Pitago, không phải 7 m.
+Độ dài dốc là \(\sqrt{3^2+4^2}=5\) m, không phải 7 m. Góc dốc \(\theta\) nằm giữa cạnh huyền và đoạn ngang; cạnh đối dài 3 m, cạnh kề dài 4 m. Vì vậy \(\tan\theta=\frac34\). Nếu dùng \(\frac35\), em đã tính sin thay cho tang.
 
 **Kiểm lỗi**
 
@@ -782,7 +782,7 @@ Hai đáy hình vuông cạnh 6 và 3 có tỉ số diện tích đáy lớn : �
 
 **Kiểm lỗi**
 
-Nếu lấy tỉ số cạnh 8:4 làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 64**.
+Nếu lấy tỉ số cạnh \(6:3=2:1\) làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 64**.
 
 </details>
 
