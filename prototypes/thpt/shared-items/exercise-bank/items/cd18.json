@@ -28,7 +28,7 @@
       "version_scope": "EXACT_Q18_LEARNER_SNAPSHOT_NO_PER_ITEM_VERSION"
     },
     "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
-    "remediation": "Nếu cộng độ dài, chỉ cộng khi Q nằm giữa P,R; vectơ-không có độ dài 0, không dùng để xác định góc. Ôn CĐ18 mục 1.1; luyện THPT-G12-B06-P02."
+    "remediation": "Nếu ra 10 cm, đó là độ dài đường đi theo ba cạnh, không phải độ dài vectơ nối hai đỉnh. Dùng Pitago hai lần và kiểm trường hợp hai đầu trùng nhau: độ dài 0. Ôn CĐ18 mục 1.1; luyện THPT-G12-B06-P02."
   },
   {
     "item_id": "THPT-TOP18-P02",
@@ -498,9 +498,9 @@
   {
     "item_id": "THPT-TOP18-P17",
     "content_version": "SOURCE_BLOB_d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Cho u=(1;2;0), v=(2;4;0). Có thể dùng u×v làm pháp tuyến mặt phẳng không? Thay v bằng w=(0;1;2), hãy tìm một pháp tuyến và kiểm lại.",
-    "answer_key": "Không vì u×v=0; với w, n=(4;−2;1).",
-    "worked_solution": "v=2u nên u×v=(0;0;0), không xác định một pháp tuyến khác không. Với w=(0;1;2), u×w=(2·2−0·1;0·0−1·2;1·1−2·0)=(4;−2;1). Kiểm n·u=4−4=0, n·w=−2+2=0 và n≠0; vậy n là một pháp tuyến của mặt chứa hai hướng u,w.",
+    "stem": "Cho u=(1;2;0), v=(2;4;0). Có thể dùng u×v làm pháp tuyến mặt phẳng không? Thay v bằng w=(0;2;1), hãy tìm một pháp tuyến và kiểm lại.",
+    "answer_key": "Không vì u×v=0; với w, n=(2;−1;2).",
+    "worked_solution": "v=2u nên u×v=(0;0;0), không xác định một pháp tuyến khác không. Với w=(0;2;1), u×w=(2·1−0·2;0·0−1·1;1·2−2·0)=(2;−1;2). Kiểm n·u=2−2=0, n·w=−2+2=0 và n≠0; vậy n là một pháp tuyến của mặt chứa hai hướng u,w.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B14-O01"
