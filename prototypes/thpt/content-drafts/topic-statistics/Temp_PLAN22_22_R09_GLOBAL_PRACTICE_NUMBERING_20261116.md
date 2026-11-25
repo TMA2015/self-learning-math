@@ -98,15 +98,15 @@ Mốt trả lời 'giá trị gặp thường nhất' chứ không đo vị trí
 
 
 
-<!-- ITEM_ID: THPT-TOP22-T02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B13-MEAN; SECONDARY_OUTCOME: G10-B13-MODE; CONTENT_VERSION: TOP22-R09-20261121-FT02; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP22-T02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G10-B13-MEAN; SECONDARY_OUTCOME: G10-B13-MODE; CONTENT_VERSION: TOP22-R09-WORK-20261126-FT02; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
 
 **Vận dụng**
 
-Mẫu 1,3,3,5,8 có trung bình và mốt nào?
+Mẫu 1,1,4,6,8 có trung bình và mốt nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Trung bình 4, mốt 3. Năm số có tổng bằng 20.
+Trung bình bằng 20/5=4. Mốt bằng 1 vì 1 xuất hiện hai lần, nhiều nhất. Trung vị bằng 4, khác mốt.
 
 **Kiểm lỗi**
 
@@ -373,15 +373,27 @@ Tần số tích lũy nối lần lượt các nhóm từ trái sang phải; nh�
 
 
 
-<!-- ITEM_ID: THPT-TOP22-T07; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G11-B09-GROUPED-MEAN; SECONDARY_OUTCOME: G11-B09-CUMULATIVE; CONTENT_VERSION: TOP22-R09-20261121-FT07; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP22-T07; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G11-B09-GROUPED-MEAN; SECONDARY_OUTCOME: G11-B09-CUMULATIVE; CONTENT_VERSION: TOP22-R09-WORK-20261126-FT07; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
 
 **Vận dụng**
 
-Nhóm [0,10):1, [10,20):2, [20,30):1: ước lượng trung bình, tích lũy.
+Cho bảng ghép nhóm sau. Ước lượng trung bình và tính tần số tích lũy.
+
+| Khoảng | Tần số |
+|---|---:|
+| [0;10) | 1 |
+| [10;20) | 1 |
+| [20;30) | 2 |
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Trung điểm 5,15,25; trung bình (5+30+25)/4=15, tích lũy 1,3,4.
+| Khoảng | Trung điểm | Tần số | Tần số tích lũy |
+|---|---:|---:|---:|
+| [0;10) | 5 | 1 | 1 |
+| [10;20) | 15 | 1 | 2 |
+| [20;30) | 25 | 2 | 4 |
+
+Trung bình ước lượng là \((5+15+2\cdot25)/4=17{,}5\). Nếu bỏ trọng số và lấy trung bình ba trung điểm thì được 15, không đúng với bảng này.
 
 **Kiểm lỗi**
 
@@ -395,6 +407,15 @@ Không lấy trung bình ba trung điểm nếu nhóm có tần số khác nhau.
 Sau khi chỉ còn bảng tần số theo khoảng, ta biết trung vị thật hay phải ước lượng qua tần số tích lũy?
 
 Với bảng nhóm, tìm nhóm chứa vị trí \(p\) từ **tần số tích lũy**, rồi nội suy: \(\mathrm{estimate}=L+(p-F_{\mathrm{trước}})h/f\) khi tần số nhóm \(f>0\). Với trung vị dùng \(p=n/2\), tứ phân vị \(p=n/4,3n/4\). Ví dụ nhóm [0,10):4, [10,20):6, [20,30):8, [30,40):2 có \(n=20\), tích lũy 4,10,18,20. \(Me=20\), \(Q_1=10+(5-4)10/6=35/3\), \(Q_3=20+(15-10)10/8=26{,}25\). Đều là **ước lượng** từ bảng, không là số gốc chính xác.
+
+| Khoảng | Tần số | Tần số tích lũy |
+|---|---:|---:|
+| [0;10) | 4 | 4 |
+| [10;20) | 6 | 10 |
+| [20;30) | 8 | 18 |
+| [30;40) | 2 | 20 |
+
+**Vì sao nội suy?** Khi không biết từng giá trị trong nhóm, ta giả định các quan sát được phân bố đều trong khoảng để ước lượng. Nếu vị trí cần tìm đã đi qua một phần của tần số nhóm, ta đi qua cùng tỉ lệ chiều rộng khoảng. Chẳng hạn vị trí thứ 5 nằm trong nhóm [10;20), sau 4 quan sát của nhóm trước: ta đi thêm 1/6 chiều rộng 10, tức 10/6 kể từ cận trái 10.
 
 ![Biểu đồ tần số ghép nhóm của 20 quan sát với bốn cột](assets/Temp_STATISTICS_GROUPED_FREQ_R00_20261111.svg)
 
@@ -641,11 +662,11 @@ Có hai cách kiểm chéo: \(\sum f_i(c_i-\bar x_g)^2/n\) và \(\sum f_i c_i^2/
 
 
 
-<!-- ITEM_ID: THPT-TOP22-T12; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B10-O02; SECONDARY_OUTCOME: G12-CHIII-B10-O03; CONTENT_VERSION: TOP22-R09-20261121-FT12; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
+<!-- ITEM_ID: THPT-TOP22-T12; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: G12-CHIII-B10-O02; SECONDARY_OUTCOME: G12-CHIII-B10-O03; CONTENT_VERSION: TOP22-R09-WORK-20261126-FT12; LEARNER_LABEL: VAN_DUNG; PUBLIC_FORMATIVE_NO_MASTERY -->
 
 **Vận dụng**
 
-Nhóm [0,10):1,[10,20):2,[20,30):1: phương sai/std nhóm?
+Cho ba nhóm [0;10), [10;20), [20;30) có tần số lần lượt là 1, 2, 1. Tính phương sai và độ lệch chuẩn ước lượng.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
