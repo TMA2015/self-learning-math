@@ -18,6 +18,8 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Strict syntax and positive/negative site change regression
         run: |
           node --check scripts/test-thpt-push-deploy-scope.cjs
@@ -43,6 +45,12 @@ jobs:
           assert(w.includes(sharedIf),"Shared Knowledge exact scope lane missing");
           const shared=w.split('\n  deploy-scoped-topic-shared-math:\n')[1]?.split('\n  deploy-scoped-math-lab-fullpage:\n')[0];
           assert(shared,"Shared Knowledge publish job missing");
+          const sharedGate=shared.split('      - name: Exact source and protected scope gate\n')[1]?.split('      - name: Preserve signed W2 W3 W4 W5 sources and PUBLIC_REPLAY_ONLY')[0];
+          const requiredEnv="        env:\n          BASE_SHA: "+expr+" github.event.before }}\n          HEAD_SHA: "+expr+" github.sha }}\n        run: |";
+          assert(sharedGate?.startsWith(requiredEnv),"Shared production V2 handoff must receive exact push base and head");
+          assert(sharedGate.includes('node scripts/test-thpt-handoff-gate-v2.cjs\n'),"Shared V2 handoff gate missing");
+          assert(w.includes("reason=OWNER_1110_DEPLOY_RECOVERY_EXACT")&&w.includes("impact=SCOPED_TOPIC_SHARED_MATH"),"Exact #1110 metadata-only deploy recovery gate missing");
+          assert(w.includes('"$BEFORE_SHA" == "f9a4b0caef4f860a17d956c0c4d7600dc511c3d2"'),"Recovery must be pinned to the failed #1110 main SHA");
           for(const req of ['--shared-candidate-scope','scripts/test-thpt-release-queue.cjs','scripts/test-thpt-handoff-gate-v2.cjs',
             'scripts/test-thpt-topic-w2-source-locked.py','scripts/test-thpt-topic-w3-source-locked.py','scripts/test-thpt-topic-w4-source-locked.py',
             'scripts/test-thpt-topic-rw1-math-browser.py','scripts/test-thpt-topic-rw1-math-browser.py --rw2','scripts/test-thpt-topic-rw1-math-browser.py --tail',
@@ -146,6 +154,13 @@ jobs:
           assert(!w.includes('continue-on-error:'),'No failures may be ignored');
           console.log('PASS deploy safety: six mutually exclusive FULL, SGK-scoped, W3, W4, W5 and W2+W3 maintenance lanes, source/receipt + Q16/built-site guards, unchanged FULL regression signatures.');
           NODE
+      - name: Execute V2 handoff gate with actual PR base and head (production input regression)
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          node scripts/test-thpt-handoff-gate-v2.cjs --self-test
+          node scripts/test-thpt-handoff-gate-v2.cjs
       - name: Evidence boundary
         run: |
           echo 'This verifies deployment scope logic only; not a site publication or owner approval.'
