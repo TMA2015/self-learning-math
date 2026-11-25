@@ -3,6 +3,7 @@
 from __future__ import annotations
 import functools
 import http.server
+import html
 import json
 import pathlib
 import re
@@ -40,6 +41,10 @@ CURRENT_FILES={
     "scripts/test-thpt-topic-rw1-math-browser.py",
     ".github/workflows/thpt-topic-rw1-math-qa.yml",
     "scripts/test-thpt-release-impact.cjs",
+    "scripts/test-thpt-topic-w2-golden-browser.py",
+    "scripts/test-thpt-topic-w3-golden-browser.py",
+    "scripts/test-thpt-topic-w4-golden-browser.py",
+    "scripts/test-thpt-topic-knowledge-tabs-v3.cjs",
 }
 def current_scope():
     changed=set(subprocess.check_output(["git","diff","--no-renames","--name-only",CURRENT_BASE,"HEAD"],cwd=ROOT,text=True).splitlines())
@@ -51,7 +56,7 @@ def current_scope():
     for f in CURRENT_FILES:
         if f.endswith(".js"):
             subprocess.run(["node","--check",f],cwd=ROOT,check=True)
-    print("PASS exact seven paths, no source/assessment/receipt/SVG changes, legacy SGK/THCS helper unchanged",flush=True)
+    print("PASS exact eleven paths, no source/assessment/receipt/SVG changes, legacy SGK/THCS helper unchanged",flush=True)
 if "--shared-candidate-scope" in sys.argv:
     current_scope()
     sys.exit(0)
@@ -131,7 +136,7 @@ def markdown_inventory(topic):
             continue
         key=head.group(1).rstrip(".")
         block=text[head.start():heads[i+1].start() if i+1<len(heads) else len(text)]
-        result[key]=[re.sub(r"\s+","",m.group(1) if m.group(1) is not None else m.group(2)) for m in pattern.finditer(block)]
+        result[key]=[re.sub(r"\s+","",html.unescape(m.group(1) if m.group(1) is not None else m.group(2))) for m in pattern.finditer(block)]
     assert len(result)==SIZES[topic],(topic,"Markdown outcome inventory",len(result),SIZES[topic])
     return result
 
