@@ -610,13 +610,13 @@ Hãy làm trước khi mở **Lời giải**. Nhớ phân biệt tia cuối và 
 
 **Bài 1.**
 
-Đổi góc 135° sang radian và xác định góc nằm ở góc phần tư nào trong [0,2π).
+Đổi góc \(135^\circ\) sang radian và xác định góc nằm ở góc phần tư nào trong \([0;2\pi)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 3π/4 rad; góc phần tư II.
+**Đáp án:** \(\frac{3\pi}{4}\) rad; góc phần tư II.
 
-135°×π/180°=3π/4. Vì π/2<3π/4<π nên góc ở góc phần tư II.
+\(135\cdot\frac{\pi}{180}=\frac{3\pi}{4}\). Vì \(\frac{\pi}{2}<\frac{3\pi}{4}<\pi\) nên góc ở góc phần tư II.
 
 </details>
 
@@ -624,13 +624,13 @@ Hãy làm trước khi mở **Lời giải**. Nhớ phân biệt tia cuối và 
 
 **Bài 2.**
 
-Tính sin(5π/6), cos(5π/6), tan(5π/6) và cot(5π/6).
+Tính \(\sin(\frac{5\pi}{6})\), \(\cos(\frac{5\pi}{6})\), \(\tan(\frac{5\pi}{6})\) và \(\cot(\frac{5\pi}{6})\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1/2; −√3/2; −√3/3; −√3.
+**Đáp án:** \(\frac12;\ -\frac{\sqrt3}{2};\ -\frac{\sqrt3}{3};\ -\sqrt3\).
 
-sin(5π/6)=1/2, cos(5π/6)=−√3/2. Vì cos và sin đều khác 0, tan=(1/2)/(−√3/2)=−√3/3; cot=−√3.
+\(\sin(\frac{5\pi}{6})=\frac12\), \(\cos(\frac{5\pi}{6})=-\frac{\sqrt3}{2}\). Vì cos và sin đều khác 0, \(\tan(\frac{5\pi}{6})=\frac{1/2}{-\sqrt3/2}=-\frac{\sqrt3}{3}\); \(\cot(\frac{5\pi}{6})=-\sqrt3\).
 
 </details>
 
@@ -638,13 +638,13 @@ sin(5π/6)=1/2, cos(5π/6)=−√3/2. Vì cos và sin đều khác 0, tan=(1/2)/
 
 **Bài 3.**
 
-Rút gọn góc 765° về góc cùng phương trong [0°,360°), rồi tính sin 765°.
+Rút gọn góc \(765^\circ\) về góc cùng phương trong \([0^\circ;360^\circ)\), rồi tính \(\sin765^\circ\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 45°; sin 765°=√2/2.
+**Đáp án:** \(45^\circ\); \(\sin765^\circ=\frac{\sqrt2}{2}\).
 
-765°−2×360°=45°. sin(765°)=sin(45°)=√2/2 do chu kì 360°.
+\(765^\circ-2\cdot360^\circ=45^\circ\). \(\sin765^\circ=\sin45^\circ=\frac{\sqrt2}{2}\) do chu kì \(360^\circ\).
 
 </details>
 
@@ -652,13 +652,13 @@ Rút gọn góc 765° về góc cùng phương trong [0°,360°), rồi tính si
 
 **Bài 4.**
 
-Một cung của đường tròn có bán kính 12 cm chắn góc ở tâm 5π/6 rad. Tính độ dài cung.
+Một cung của đường tròn có bán kính 12 cm chắn góc ở tâm \(\frac{5\pi}{6}\) rad. Tính độ dài cung.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 10π cm.
+**Đáp án:** \(10\pi\,\mathrm{cm}\).
 
-s=12×5π/6=10π cm. Góc theo radian nên không cần nhân thêm π/180.
+\(s=12\cdot\frac{5\pi}{6}=10\pi\,\mathrm{cm}\). Góc theo radian nên không cần nhân thêm \(\frac{\pi}{180}\).
 
 </details>
 
@@ -666,17 +666,17 @@ s=12×5π/6=10π cm. Góc theo radian nên không cần nhân thêm π/180.
 
 **Bài 5.**
 
-Một điểm M xuất phát tại A=(20;0) trên đường tròn tâm O bán kính 20 cm, chuyển động ngược chiều kim đồng hồ một góc 5π/3 rad. (a) Tính độ dài cung đã đi. (b) Tìm tọa độ M và giải thích dấu tung độ. (c) Tính khoảng cách thẳng AM để so sánh với độ dài đường đi.
+Một điểm M xuất phát tại \(A=(20;0)\) trên đường tròn tâm O bán kính 20 cm, chuyển động ngược chiều kim đồng hồ một góc \(\frac{5\pi}{3}\) rad. (a) Tính độ dài cung đã đi. (b) Tìm tọa độ M và giải thích dấu tung độ. (c) Tính khoảng cách thẳng AM để so sánh với độ dài đường đi.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** s=100π/3 cm; M=(10;−10√3) cm; AM=20 cm.
+**Đáp án:** \(s=\frac{100\pi}{3}\,\mathrm{cm}\); \(M=(10;-10\sqrt3)\) (cm); \(AM=20\,\mathrm{cm}\).
 
-s=Rα=20·5π/3=100π/3 cm. cos5π/3=1/2; sin5π/3=−√3/2 nên M=(10;−10√3). AM=√[(10−20)²+(−10√3)²]=20 cm. Độ dài cung lớn hơn dây.
+\(s=R\alpha=20\cdot\frac{5\pi}{3}=\frac{100\pi}{3}\,\mathrm{cm}\). \(\cos(\frac{5\pi}{3})=\frac12\); \(\sin(\frac{5\pi}{3})=-\frac{\sqrt3}{2}\) nên \(M=(10;-10\sqrt3)\). \(AM=\sqrt{(10-20)^2+(-10\sqrt3)^2}=20\,\mathrm{cm}\). Độ dài cung lớn hơn dây.
 
 **Rubric tự đối chiếu:**
 
-7 điểm: góc và đơn vị rad 1; công thức cung 1; tính s đúng 1; hoành độ 1; tung độ và dấu 1; AM=20 đúng 1; giải thích cung vs dây 1.
+7 điểm: góc và đơn vị rad 1; công thức cung 1; tính s đúng 1; hoành độ 1; tung độ và dấu 1; \(AM=20\) đúng 1; giải thích cung vs dây 1.
 
 </details>
 
@@ -684,13 +684,13 @@ s=Rα=20·5π/3=100π/3 cm. cos5π/3=1/2; sin5π/3=−√3/2 nên M=(10;−10√
 
 **Bài 6.**
 
-Một góc quay −450°. Đổi sang radian, xác định tọa độ tia cuối.
+Một góc quay \(-450^\circ\). Đổi sang radian, xác định tọa độ tia cuối.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −5π/2; (0,−1).
+**Đáp án:** \(-\frac{5\pi}{2}\); \((0;-1)\).
 
-−450×π/180=−5π/2; cộng 2π được −π/2, tia cuối tại (0,−1). Không thay góc quay ban đầu bằng góc đại diện nếu bài hỏi số vòng.
+\(-450\cdot\frac{\pi}{180}=-\frac{5\pi}{2}\); cộng \(2\pi\) được \(-\frac{\pi}{2}\), tia cuối tại \((0;-1)\). Không thay góc quay ban đầu bằng góc đại diện nếu bài hỏi số vòng.
 
 </details>
 
@@ -698,13 +698,13 @@ Một góc quay −450°. Đổi sang radian, xác định tọa độ tia cuố
 
 **Bài 7.**
 
-Sinα=4/5, α thuộc góc phần tư II. Tìm cosα, tanα.
+\(\sin\alpha=\frac45\), \(\alpha\) thuộc góc phần tư II. Tìm \(\cos\alpha\), \(\tan\alpha\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −3/5; −4/3.
+**Đáp án:** \(-\frac35;\ -\frac43\).
 
-cos²α=1−16/25=9/25; cos âm ở góc II nên cos=−3/5; tan=sin/cos=−4/3 vì cos khác 0.
+\(\cos^2\alpha=1-\frac{16}{25}=\frac9{25}\); cos âm ở góc II nên \(\cos\alpha=-\frac35\); \(\tan\alpha=\frac{\sin\alpha}{\cos\alpha}=-\frac43\) vì cos khác 0.
 
 </details>
 
@@ -712,13 +712,13 @@ cos²α=1−16/25=9/25; cos âm ở góc II nên cos=−3/5; tan=sin/cos=−4/3 
 
 **Bài 8.**
 
-Bánh xe bán kính 7 cm quay −120°. Độ dời cung có hướng và quãng đường trên vành bánh?
+Bánh xe bán kính 7 cm quay \(-120^\circ\). Độ dời cung có hướng và quãng đường trên vành bánh?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −14π/3 cm; 14π/3 cm.
+**Đáp án:** \(-\frac{14\pi}{3}\,\mathrm{cm}\); \(\frac{14\pi}{3}\,\mathrm{cm}\).
 
-−120°=−2π/3 rad. rθ=−14π/3, r|θ|=14π/3. Độ dài quãng đường không âm.
+\(-120^\circ=-\frac{2\pi}{3}\) rad. \(r\theta=-\frac{14\pi}{3}\), \(r\lvert\theta\rvert=\frac{14\pi}{3}\). Độ dài quãng đường không âm.
 
 </details>
 
@@ -726,13 +726,13 @@ Bánh xe bán kính 7 cm quay −120°. Độ dời cung có hướng và quãng
 
 **Bài 9.**
 
-α thuộc góc phần tư II và cosα=−5/13. (a) Tìm sinα, tanα kèm dấu. (b) Với β=π−α, tìm sinβ,cosβ và giải thích đối xứng. (c) Nêu điểm loại của tan và cot nói chung.
+\(\alpha\) thuộc góc phần tư II và \(\cos\alpha=-\frac5{13}\). (a) Tìm \(\sin\alpha\), \(\tan\alpha\) kèm dấu. (b) Với \(\beta=\pi-\alpha\), tìm \(\sin\beta\), \(\cos\beta\) và giải thích đối xứng. (c) Nêu điểm loại của tan và cot nói chung.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** sinα=12/13; tanα=−12/5; sinβ=12/13; cosβ=5/13; tan loại cos=0, cot loại sin=0.
+**Đáp án:** \(\sin\alpha=\frac{12}{13}\); \(\tan\alpha=-\frac{12}{5}\); \(\sin\beta=\frac{12}{13}\); \(\cos\beta=\frac5{13}\); tan loại \(\cos x=0\), cot loại \(\sin x=0\).
 
-Vì α ở II, sinα>0. sin²α=1−25/169=144/169 ⇒ sinα=12/13; tanα=(12/13)/(−5/13)=−12/5. β phản xạ α qua Oy nên giữ sin và đổi dấu cos. Tan/cot chỉ là thương khi mẫu khác 0.
+Vì \(\alpha\) ở II, \(\sin\alpha>0\). \(\sin^2\alpha=1-\frac{25}{169}=\frac{144}{169}\), suy ra \(\sin\alpha=\frac{12}{13}\); \(\tan\alpha=\frac{12/13}{-5/13}=-\frac{12}{5}\). \(\beta\) phản xạ \(\alpha\) qua Oy nên giữ sin và đổi dấu cos. Tan/cot chỉ là thương khi mẫu khác 0.
 
 **Rubric tự đối chiếu:**
 
@@ -740,8 +740,8 @@ Vì α ở II, sinα>0. sin²α=1−25/169=144/169 ⇒ sinα=12/13; tanα=(12/13
 2. Tính sin đúng (1đ)
 3. Tính tan và điều kiện (1đ)
 4. Giải thích đối xứng (1đ)
-5. Tính sinβ (1đ)
-6. Tính cosβ (1đ)
+5. Tính \(\sin\beta\) (1đ)
+6. Tính \(\cos\beta\) (1đ)
 7. Nêu đúng cả hai miền loại (1đ)
 
 </details>
@@ -752,13 +752,13 @@ Vì α ở II, sinα>0. sin²α=1−25/169=144/169 ⇒ sinα=12/13; tanα=(12/13
 
 **Bài 10.**
 
-Biết sin α=3/5 và π/2<α<π. Tính cos α và tan α.
+Biết \(\sin\alpha=\frac35\) và \(\frac{\pi}{2}<\alpha<\pi\). Tính \(\cos\alpha\) và \(\tan\alpha\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** cos α=−4/5; tan α=−3/4.
+**Đáp án:** \(\cos\alpha=-\frac45\); \(\tan\alpha=-\frac34\).
 
-cos²α=1−9/25=16/25. α ở góc phần tư II nên cos α=−4/5. tan α=sin α/cos α=−3/4.
+\(\cos^2\alpha=1-\frac9{25}=\frac{16}{25}\). \(\alpha\) ở góc phần tư II nên \(\cos\alpha=-\frac45\). \(\tan\alpha=\frac{\sin\alpha}{\cos\alpha}=-\frac34\).
 
 </details>
 
@@ -766,13 +766,13 @@ cos²α=1−9/25=16/25. α ở góc phần tư II nên cos α=−4/5. tan α=sin
 
 **Bài 11.**
 
-Biết tan α=−2 và cos α>0. Tính sin α, cos α và cot α.
+Biết \(\tan\alpha=-2\) và \(\cos\alpha>0\). Tính \(\sin\alpha\), \(\cos\alpha\) và \(\cot\alpha\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** sin α=−2√5/5; cos α=√5/5; cot α=−1/2.
+**Đáp án:** \(\sin\alpha=-\frac{2\sqrt5}{5}\); \(\cos\alpha=\frac{\sqrt5}{5}\); \(\cot\alpha=-\frac12\).
 
-1+tan²α=5 ⇒ cos²α=1/5. cos α=1/√5, sin α=tan α·cos α=−2/√5, cot α=1/tan α=−1/2.
+\(1+\tan^2\alpha=5\Rightarrow\cos^2\alpha=\frac15\). \(\cos\alpha=\frac1{\sqrt5}\), \(\sin\alpha=\tan\alpha\cdot\cos\alpha=-\frac2{\sqrt5}\), \(\cot\alpha=\frac1{\tan\alpha}=-\frac12\).
 
 </details>
 
@@ -780,13 +780,13 @@ Biết tan α=−2 và cos α>0. Tính sin α, cos α và cot α.
 
 **Bài 12.**
 
-Dùng công thức hiệu để tính sin(π/3−π/6).
+Dùng công thức hiệu để tính \(\sin(\frac{\pi}{3}-\frac{\pi}{6})\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1/2.
+**Đáp án:** \(\frac12\).
 
-sin(π/3−π/6)= (√3/2)(√3/2)−(1/2)(1/2)=3/4−1/4=1/2.
+\(\sin(\frac{\pi}{3}-\frac{\pi}{6})=\frac{\sqrt3}{2}\cdot\frac{\sqrt3}{2}-\frac12\cdot\frac12=\frac34-\frac14=\frac12\).
 
 </details>
 
@@ -794,13 +794,13 @@ sin(π/3−π/6)= (√3/2)(√3/2)−(1/2)(1/2)=3/4−1/4=1/2.
 
 **Bài 13.**
 
-Dùng công thức góc nhân đôi để tính cos(2π/3) từ cos(π/3).
+Dùng công thức góc nhân đôi để tính \(\cos(\frac{2\pi}{3})\) từ \(\cos(\frac{\pi}{3})\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −1/2.
+**Đáp án:** \(-\frac12\).
 
-cos(2π/3)=2(1/2)²−1=−1/2.
+\(\cos(\frac{2\pi}{3})=2(\frac12)^2-1=-\frac12\).
 
 </details>
 
@@ -808,13 +808,13 @@ cos(2π/3)=2(1/2)²−1=−1/2.
 
 **Bài 14.**
 
-Tính chính xác sin 75° mà không dùng máy tính.
+Tính chính xác \(\sin75^\circ\) mà không dùng máy tính.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** (√6+√2)/4.
+**Đáp án:** \(\frac{\sqrt6+\sqrt2}{4}\).
 
-sin75°=sin45°cos30°+cos45°sin30°=√2/2·√3/2+√2/2·1/2=(√6+√2)/4.
+\(\sin75^\circ=\sin45^\circ\cos30^\circ+\cos45^\circ\sin30^\circ=\frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2}+\frac{\sqrt2}{2}\cdot\frac12=\frac{\sqrt6+\sqrt2}{4}\).
 
 </details>
 
@@ -822,13 +822,13 @@ sin75°=sin45°cos30°+cos45°sin30°=√2/2·√3/2+√2/2·1/2=(√6+√2)/4.
 
 **Bài 15.**
 
-Tính chính xác cos 75° bằng công thức cộng.
+Tính chính xác \(\cos75^\circ\) bằng công thức cộng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** (√6−√2)/4.
+**Đáp án:** \(\frac{\sqrt6-\sqrt2}{4}\).
 
-cos75°=√2/2·√3/2−√2/2·1/2=(√6−√2)/4.
+\(\cos75^\circ=\frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2}-\frac{\sqrt2}{2}\cdot\frac12=\frac{\sqrt6-\sqrt2}{4}\).
 
 </details>
 
@@ -836,13 +836,13 @@ cos75°=√2/2·√3/2−√2/2·1/2=(√6−√2)/4.
 
 **Bài 16.**
 
-Không tính riêng các góc, rút gọn E=sin20°cos40°+cos20°sin40°.
+Không tính riêng các góc, rút gọn \(E=\sin20^\circ\cos40^\circ+\cos20^\circ\sin40^\circ\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** √3/2.
+**Đáp án:** \(\frac{\sqrt3}{2}\).
 
-E=sin(20°+40°)=sin60°=√3/2.
+\(E=\sin(20^\circ+40^\circ)=\sin60^\circ=\frac{\sqrt3}{2}\).
 
 </details>
 
@@ -850,13 +850,13 @@ E=sin(20°+40°)=sin60°=√3/2.
 
 **Bài 17.**
 
-Dùng công thức biến đổi tích thành tổng để tính 2sin75°sin15°.
+Dùng công thức biến đổi tích thành tổng để tính \(2\sin75^\circ\sin15^\circ\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 1/2.
+**Đáp án:** \(\frac12\).
 
-2sin75°sin15°=cos60°−cos90°=1/2−0=1/2.
+\(2\sin75^\circ\sin15^\circ=\cos60^\circ-\cos90^\circ=\frac12-0=\frac12\).
 
 </details>
 
@@ -864,13 +864,13 @@ Dùng công thức biến đổi tích thành tổng để tính 2sin75°sin15°
 
 **Bài 18.**
 
-Dùng công thức biến đổi tổng thành tích để tính sin75°+sin15°.
+Dùng công thức biến đổi tổng thành tích để tính \(\sin75^\circ+\sin15^\circ\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** √6/2.
+**Đáp án:** \(\frac{\sqrt6}{2}\).
 
-sin75°+sin15°=2sin45°cos30°=2·√2/2·√3/2=√6/2.
+\(\sin75^\circ+\sin15^\circ=2\sin45^\circ\cos30^\circ=2\cdot\frac{\sqrt2}{2}\cdot\frac{\sqrt3}{2}=\frac{\sqrt6}{2}\).
 
 </details>
 
@@ -878,13 +878,13 @@ sin75°+sin15°=2sin45°cos30°=2·√2/2·√3/2=√6/2.
 
 **Bài 19.**
 
-Cho góc α có sin α=3/5 và cos α=4/5. Tính sin2α và cos2α.
+Cho góc \(\alpha\) có \(\sin\alpha=\frac35\) và \(\cos\alpha=\frac45\). Tính \(\sin(2\alpha)\) và \(\cos(2\alpha)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** sin2α=24/25; cos2α=7/25.
+**Đáp án:** \(\sin(2\alpha)=\frac{24}{25}\); \(\cos(2\alpha)=\frac7{25}\).
 
-sin2α=2·3/5·4/5=24/25; cos2α=16/25−9/25=7/25.
+\(\sin(2\alpha)=2\cdot\frac35\cdot\frac45=\frac{24}{25}\); \(\cos(2\alpha)=\frac{16}{25}-\frac9{25}=\frac7{25}\).
 
 </details>
 
@@ -892,13 +892,13 @@ sin2α=2·3/5·4/5=24/25; cos2α=16/25−9/25=7/25.
 
 **Bài 20.**
 
-Cho góc θ ở góc phần tư II có sin θ=4/5 và cos θ=−3/5. Không tìm θ, hãy tính sin(π−θ), cos(π+θ), sin(−θ).
+Cho góc \(\theta\) ở góc phần tư II có \(\sin\theta=\frac45\) và \(\cos\theta=-\frac35\). Không tìm \(\theta\), hãy tính \(\sin(\pi-\theta)\), \(\cos(\pi+\theta)\), \(\sin(-\theta)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 4/5; 3/5; −4/5.
+**Đáp án:** \(\frac45;\ \frac35;\ -\frac45\).
 
-sin(π−θ)=sin θ=4/5; cos(π+θ)=−cos θ=3/5; sin(−θ)=−sin θ=−4/5.
+\(\sin(\pi-\theta)=\sin\theta=\frac45\); \(\cos(\pi+\theta)=-\cos\theta=\frac35\); \(\sin(-\theta)=-\sin\theta=-\frac45\).
 
 </details>
 
@@ -906,13 +906,13 @@ sin(π−θ)=sin θ=4/5; cos(π+θ)=−cos θ=3/5; sin(−θ)=−sin θ=−4/5.
 
 **Bài 21.**
 
-Biết tan u=1/2 và tan v=1/3, trong đó tan u và tan v đều xác định. Tính tan(u+v) nếu biểu thức xác định.
+Biết \(\tan u=\frac12\) và \(\tan v=\frac13\), trong đó \(\tan u\) và \(\tan v\) đều xác định. Tính \(\tan(u+v)\) nếu biểu thức xác định.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** 1.
 
-1−(1/2)(1/3)=5/6≠0 nên tan(u+v) xác định. tan(u+v)=(1/2+1/3)/(1−1/6)=(5/6)/(5/6)=1.
+\(1-\frac12\cdot\frac13=\frac56\ne0\) nên \(\tan(u+v)\) xác định. \(\tan(u+v)=\frac{\frac12+\frac13}{1-\frac16}=\frac{5/6}{5/6}=1\).
 
 </details>
 
@@ -920,17 +920,17 @@ Biết tan u=1/2 và tan v=1/3, trong đó tan u và tan v đều xác định. 
 
 **Bài 22.**
 
-Với các góc u,v bất kỳ, chứng minh sin(u+v)sin(u−v)=sin²u−sin²v. Sau đó áp dụng u=π/4, v=π/12 để tính sin(π/3)sin(π/6) bằng hai cách và giải thích vì sao hai cách trùng nhau.
+Với các góc u, v bất kỳ, chứng minh \(\sin(u+v)\sin(u-v)=\sin^2 u-\sin^2 v\). Sau đó áp dụng \(u=\frac{\pi}{4}\), \(v=\frac{\pi}{12}\) để tính \(\sin(\frac{\pi}{3})\sin(\frac{\pi}{6})\) bằng hai cách và giải thích vì sao hai cách trùng nhau.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** Đẳng thức đúng; sin(π/3)sin(π/6)=√3/4.
+**Đáp án:** Đẳng thức đúng; \(\sin(\frac{\pi}{3})\sin(\frac{\pi}{6})=\frac{\sqrt3}{4}\).
 
-Theo biến đổi tích thành tổng: sin(u+v)sin(u−v)=[cos(2v)−cos(2u)]/2=(1−2sin²v−1+2sin²u)/2=sin²u−sin²v. Với u=π/4, v=π/12, vế trái=sinπ/3·sinπ/6=√3/4. Vế phải=sin²π/4−sin²π/12=1/2−(2−√3)/4=√3/4. Hai cách bằng nhau do đẳng thức tổng quát.
+Theo biến đổi tích thành tổng: \(\sin(u+v)\sin(u-v)=\frac{\cos(2v)-\cos(2u)}2=\frac{1-2\sin^2 v-1+2\sin^2 u}{2}=\sin^2 u-\sin^2 v\). Với \(u=\frac{\pi}{4}\), \(v=\frac{\pi}{12}\), vế trái bằng \(\sin(\frac{\pi}{3})\cdot\sin(\frac{\pi}{6})=\frac{\sqrt3}{4}\). Vế phải bằng \(\sin^2(\frac{\pi}{4})-\sin^2(\frac{\pi}{12})=\frac12-\frac{2-\sqrt3}{4}=\frac{\sqrt3}{4}\). Hai cách bằng nhau do đẳng thức tổng quát.
 
 **Rubric tự đối chiếu:**
 
-7 điểm: đổi A=u+v B=u−v đúng 1; áp dụng công thức đúng 2; rút gọn đẳng thức 1; tính trực tiếp √3/4 1; tính sin²π/12 đúng 1; giải thích nhất quán 1.
+7 điểm: đổi \(A=u+v\), \(B=u-v\) đúng 1; áp dụng công thức đúng 2; rút gọn đẳng thức 1; tính trực tiếp \(\frac{\sqrt3}{4}\) 1; tính \(\sin^2(\frac{\pi}{12})\) đúng 1; giải thích nhất quán 1.
 
 </details>
 
@@ -938,13 +938,13 @@ Theo biến đổi tích thành tổng: sin(u+v)sin(u−v)=[cos(2v)−cos(2u)]/2
 
 **Bài 23.**
 
-F(x)=sinx/(1+cosx). Tìm miền ban đầu và biểu thức rút gọn.
+\(F(x)=\frac{\sin x}{1+\cos x}\). Tìm miền ban đầu và biểu thức rút gọn.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x≠(2k+1)π; F=tan(x/2) trên miền đó.
+**Đáp án:** \(x\ne(2k+1)\pi\); \(F=\tan(\frac x2)\) trên miền đó.
 
-Dùng sinx=2sin(x/2)cos(x/2), 1+cosx=2cos²(x/2), rút gọn chỉ khi cos(x/2) khác 0. Miền ban đầu loại x=(2k+1)π.
+Dùng \(\sin x=2\sin(\frac x2)\cos(\frac x2)\), \(1+\cos x=2\cos^2(\frac x2)\), rút gọn chỉ khi \(\cos(\frac x2)\ne0\). Miền ban đầu loại \(x=(2k+1)\pi\).
 
 </details>
 
@@ -952,13 +952,13 @@ Dùng sinx=2sin(x/2)cos(x/2), 1+cosx=2cos²(x/2), rút gọn chỉ khi cos(x/2) 
 
 **Bài 24.**
 
-α=π/3. Tìm sin(π−α), cos(π−α) và giải thích dấu.
+\(\alpha=\frac{\pi}{3}\). Tìm \(\sin(\pi-\alpha)\), \(\cos(\pi-\alpha)\) và giải thích dấu.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** √3/2; −1/2.
+**Đáp án:** \(\frac{\sqrt3}{2};\ -\frac12\).
 
-π−α=2π/3; đối xứng qua Oy giữ tung độ, đổi dấu hoành độ: sin=√3/2, cos=−1/2.
+\(\pi-\alpha=\frac{2\pi}{3}\); đối xứng qua Oy giữ tung độ, đổi dấu hoành độ: \(\sin(\pi-\alpha)=\frac{\sqrt3}{2}\), \(\cos(\pi-\alpha)=-\frac12\).
 
 </details>
 
@@ -966,13 +966,13 @@ Dùng sinx=2sin(x/2)cos(x/2), 1+cosx=2cos²(x/2), rút gọn chỉ khi cos(x/2) 
 
 **Bài 25.**
 
-Chứng minh sin(u+v)−sin(u−v)=2cosu sinv.
+Chứng minh \(\sin(u+v)-\sin(u-v)=2\cos u\sin v\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 2cosu sinv.
+**Đáp án:** \(2\cos u\sin v\).
 
-Khai triển cả hai công thức cộng/trừ: sinucosv+cosusinv −(sinucosv−cosusinv)=2cosusinv.
+Khai triển cả hai công thức cộng/trừ: \(\sin u\cos v+\cos u\sin v-(\sin u\cos v-\cos u\sin v)=2\cos u\sin v\).
 
 </details>
 
@@ -980,13 +980,13 @@ Khai triển cả hai công thức cộng/trừ: sinucosv+cosusinv −(sinucosv�
 
 **Bài 26.**
 
-Đưa cos(5x)−cos(x) về tích.
+Đưa \(\cos(5x)-\cos x\) về tích.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −2sin3x sin2x.
+**Đáp án:** \(-2\sin(3x)\sin(2x)\).
 
-cosA−cosB=−2sin((A+B)/2)sin((A−B)/2); dùng A=5x,B=x cho nửa tổng 3x, nửa hiệu 2x.
+\(\cos A-\cos B=-2\sin(\frac{A+B}{2})\sin(\frac{A-B}{2})\); dùng \(A=5x,\ B=x\) cho nửa tổng \(3x\), nửa hiệu \(2x\).
 
 </details>
 
@@ -994,21 +994,21 @@ cosA−cosB=−2sin((A+B)/2)sin((A−B)/2); dùng A=5x,B=x cho nửa tổng 3x, 
 
 **Bài 27.**
 
-Giải cos3x+cosx=0 trên [0,2π). Lý giải vì sao dùng tổng–tích, liệt kê nghiệm hai nhánh và kiểm biên.
+Giải \(\cos(3x)+\cos x=0\) trên \([0;2\pi)\). Lý giải vì sao dùng tổng–tích, liệt kê nghiệm hai nhánh và kiểm biên.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** {π/4,π/2,3π/4,5π/4,3π/2,7π/4}.
+**Đáp án:** \(\{\frac{\pi}{4};\frac{\pi}{2};\frac{3\pi}{4};\frac{5\pi}{4};\frac{3\pi}{2};\frac{7\pi}{4}\}\).
 
-cos3x+cosx=2cos2x cosx. Nhánh cos2x=0 cho x=π/4+kπ/2, trong khoảng có π/4,3π/4,5π/4,7π/4. Nhánh cosx=0 cho π/2,3π/2. Sáu nghiệm không trùng và thuộc [0,2π).
+\(\cos(3x)+\cos x=2\cos(2x)\cos x\). Nhánh \(\cos(2x)=0\) cho \(x=\frac{\pi}{4}+\frac{k\pi}{2}\), trong khoảng có \(\frac{\pi}{4},\frac{3\pi}{4},\frac{5\pi}{4},\frac{7\pi}{4}\). Nhánh \(\cos x=0\) cho \(\frac{\pi}{2},\frac{3\pi}{2}\). Sáu nghiệm không trùng và thuộc \([0;2\pi)\).
 
 **Rubric tự đối chiếu:**
 
 1. Nêu lý do chọn tổng–tích (1đ)
 2. Biến đổi đúng (1đ)
-3. Giải họ cos2x (1đ)
+3. Giải họ \(\cos(2x)\) (1đ)
 4. Lọc đủ 4 nghiệm họ 1 (1đ)
-5. Giải họ cosx (1đ)
+5. Giải họ \(\cos x\) (1đ)
 6. Lọc 2 nghiệm họ 2 (1đ)
 7. Kiểm biên/trùng và thế lại (1đ)
 
@@ -1020,13 +1020,13 @@ cos3x+cosx=2cos2x cosx. Nhánh cos2x=0 cho x=π/4+kπ/2, trong khoảng có π/4
 
 **Bài 28.**
 
-TXĐ của y=tan x là gì?
+Tập xác định của \(y=\tan x\) là gì?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** ℝ \ {π/2+kπ:k∈ℤ}.
+**Đáp án:** \(\mathbb R\setminus\{\frac{\pi}{2}+k\pi:k\in\mathbb Z\}\).
 
-tan x chỉ xác định khi cos x≠0; cos x=0 tại π/2+kπ.
+\(\tan x\) chỉ xác định khi \(\cos x\ne0\); \(\cos x=0\) tại \(\frac{\pi}{2}+k\pi\).
 
 </details>
 
