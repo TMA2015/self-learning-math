@@ -366,7 +366,7 @@ Hàm mũ cùng cơ số nhỏ hơn 1 thay đổi theo chiều nào khi số mũ 
 
 > **TÍNH CHẤT — Tính đơn điệu của hàm mũ.** Cơ số lớn hơn 1 hay nằm giữa 0 và 1 làm thay đổi hướng đồ thị mũ. Đưa bất phương trình về so số mũ chỉ đúng nếu biết hàm tăng hay giảm. Cần nhớ các giá trị a^0=1,a^1=a và khái niệm hàm đơn điệu. Với a>1, a^x tăng nghiêm ngặt; với 0<a<1, a^x giảm nghiêm ngặt. Nếu a^u>a^v thì u>v khi a>1, nhưng u<v khi 0<a<1. Bản chất: tăng một đơn vị số mũ sẽ nhân giá trị với a; nhân số >1 làm lớn, nhân số nằm (0,1) làm nhỏ.
 
-Chẳng hạn, Vì (1/4)^0=1 và (1/4)^1=1/4 nên cơ số 1/4 giảm theo số mũ. Do −1<2, (1/4)^(−1)=4>(1/4)^2=1/16.
+Chẳng hạn, với cơ số cố định \(\frac14\), ta có \(\left(\frac14\right)^0=1\) và \(\left(\frac14\right)^1=\frac14\). Hàm số nghịch biến: số mũ tăng thì giá trị lũy thừa giảm, còn cơ số không đổi. Vì \(-1<2\), \(\left(\frac14\right)^{-1}=4>\left(\frac14\right)^2=\frac1{16}\).
 
 **Ví dụ**
 
@@ -380,7 +380,7 @@ So (1/5)^(−1) và (1/5)^2.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-5>1/25; số mũ −1 nhỏ hơn 2 nhưng cơ số giảm làm giá trị lớn hơn.
+\(5>\frac1{25}\). Cơ số \(\frac15\) không đổi và thuộc \((0;1)\), nên hàm số nghịch biến: số mũ \(-1\) nhỏ hơn 2 thì giá trị lũy thừa lớn hơn.
 
 Nếu luôn giữ dấu so sánh khi bỏ mũ, vẽ hai điểm 0,1 trên đồ thị để sửa.
 
@@ -485,13 +485,13 @@ Xét ví dụ: 4^x=2^(x+3) ⇒ 2^(2x)=2^(x+3) ⇒ 2x=x+3 ⇒ x=3. Nếu có 9^x�
 
 **Vận dụng**
 
-Giải 2^(2x)=8·2^x.
+Giải phương trình \(2^{2x}-3\cdot2^x-4=0\). Đặt \(t=2^x\), xác định điều kiện của \(t\) rồi giải.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-2^(2x)=2^(x+3) ⇒ x=3; 2^x>0 nên có thể chia cho 2^x nếu muốn.
+Đặt \(t=2^x>0\). Phương trình trở thành \(t^2-3t-4=0\), hay \((t-4)(t+1)=0\). Ta nhận \(t=4\) và loại \(t=-1\) vì \(2^x\) luôn dương. Từ \(2^x=4\), suy ra \(x=2\). Kiểm lại: \(16-3\cdot4-4=0\).
 
-Nếu đặt t=3^x mà nhận t âm, kiểm t>0; làm lại Bài 60 (đặt ẩn dương) và Bài 51 (phương trình mũ) trong phần Luyện tập.
+Nếu em nhận cả \(t=-1\), hãy nhớ không tồn tại số thực \(x\) sao cho \(2^x=-1\). Ôn Bài 60 (đặt ẩn dương) và Bài 51 (phương trình mũ) trong Luyện tập.
 
 </details>
 
@@ -521,9 +521,9 @@ Giải log₂(x−2)+log₂(x+2)=3.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Điều kiện x>2. x²−4=8 ⇒ x=±2√3, chỉ +2√3 thỏa vì >2.
+Điều kiện \(x-2>0,\ x+2>0\), tức \(x>2\). Gộp hai lôgarit trong miền đó rồi chuyển sang dạng lũy thừa: \((x-2)(x+2)=2^3=8\). Suy ra \(x^2-4=8\), tức \(x=\pm2\sqrt3\). Chỉ \(x=2\sqrt3\) thỏa \(x>2\).
 
-Nếu dùng x âm từ phương trình bình phương, thay vào từng đối số; làm lại Bài 61, Bài 64 và Bài 27 (phương trình lôgarit có điều kiện) trong phần Luyện tập.
+Nghiệm âm xuất hiện khi giải phương trình bậc hai thu được từ tích hai đối số, không phải do bình phương hai vế. Nếu em nhận nghiệm âm, thay vào từng đối số để thấy lôgarit không xác định. Ôn Bài 61, Bài 64 và Bài 27 trong Luyện tập.
 
 </details>
 
