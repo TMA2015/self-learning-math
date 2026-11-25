@@ -15,7 +15,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Dùng sin²α+cos²α=1 rồi xét góc tù trên nửa đường tròn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -25,7 +27,8 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P01 · TOP12-O04"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu sin âm, nhớ tung độ dương ở góc tù; chỉ cos âm. Kiểm tan bằng thương sin/cos. Ôn CĐ12 mục 1.4; luyện THPT-G10-B05-P02."
   },
   {
     "item_id": "THPT-TOP12-P02",
@@ -43,7 +46,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đổi 150° và 120° thành góc bù tương ứng."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -53,7 +58,8 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P02 · TOP12-O02"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cộng sai dấu, vẽ hai điểm đối xứng qua Oy; sin giữ dấu còn cos đổi dấu. Ôn CĐ12 mục 1.2; luyện THPT-G10-B05-P03."
   },
   {
     "item_id": "THPT-TOP12-P03",
@@ -70,7 +76,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Chọn cạnh đối diện góc xen giữa, rồi viết định lí côsin."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -80,14 +88,15 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P03 · TOP12-O05"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu ra căn của 37, kiểm dấu cos120° âm làm số hạng −2bc cos A dương. Ôn CĐ12 mục 2.1; luyện THPT-G10-B06-C01."
   },
   {
     "item_id": "THPT-TOP12-P04",
     "content_version": 2,
-    "stem": "Trong tam giác ABC có `A=30°, B=75°, a=6`. Tính b,c.",
-    "answer_key": "b=c=3(√6+√2).",
-    "worked_solution": "Tổng ba góc bằng 180°, nên C=180°−30°−75°=75°. Hai góc B,C bằng nhau nên b=c. Theo định lí sin, b=6 sin75°/sin30°=12 sin75°. Dùng sin75°=(√6+√2)/4 (từ sin(45°+30°)), được b=c=3(√6+√2). Nếu sai, mục 6–7 → bài luyện về hai góc và một cạnh.",
+    "stem": "Trong tam giác ABC có A=30°, B=60°, a=6. Tính b, c và kiểm thứ tự độ dài ba cạnh.",
+    "answer_key": "b=6√3; c=12.",
+    "worked_solution": "C=180°−30°−60°=90°. Theo định lí sin, a/sin A=6/(1/2)=12. Do đó b=12 sin60°=6√3 và c=12 sin90°=12. Kiểm 6<6√3<12, phù hợp thứ tự A<B<C.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-SINE_RULE"
@@ -97,7 +106,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tìm góc C trước, rồi ghép từng cạnh với sin góc đối diện."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -107,14 +118,15 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P04 · TOP12-O06"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đảo tỉ số, viết a/sin A=b/sin B=c/sin C; kiểm cạnh đối diện 90° dài nhất. Ôn CĐ12 mục 2.2; luyện THPT-G10-B06-P01."
   },
   {
     "item_id": "THPT-TOP12-P05",
     "content_version": 2,
-    "stem": "Ba cạnh 6, 8, 10 tạo thành tam giác ABC. Xác định góc đối diện cạnh 10, diện tích S, bán kính nội tiếp r và bán kính ngoại tiếp R.",
-    "answer_key": "Góc đối diện cạnh 10 bằng 90°; S=24; r=2; R=5.",
-    "worked_solution": "Vì 6²+8²=10², theo định lí Pythagore đảo, tam giác vuông với cạnh huyền 10. Hai cạnh góc vuông là 6 và 8, nên S=6·8/2=24. Nửa chu vi p=(6+8+10)/2=12. Do S=pr, r=24/12=2. Tâm ngoại tiếp là trung điểm cạnh huyền, nên R=10/2=5 (cũng bằng 6·8·10/(4S)). Nếu nhầm r và R, xem lại mục 7,9–10.",
+    "stem": "Một tam giác có ba cạnh 5, 7, 8. Chọn phương pháp xác định góc lớn nhất là nhọn, vuông hay tù; tính diện tích và hai bán kính r, R.",
+    "answer_key": "Góc lớn nhất nhọn; S=10√3; r=√3; R=7√3/3.",
+    "worked_solution": "Vì 5+7>8, tam giác tồn tại. Góc lớn nhất đối diện cạnh 8, có cos=(25+49−64)/(2·5·7)=1/7>0, nên nhọn. Biết ba cạnh, chọn Heron: p=10, S=√(10·5·3·2)=10√3. S=pr cho r=√3; S=abc/(4R) cho R=280/(40√3)=7√3/3. Không dùng công thức nửa tích hai cạnh nếu chưa biết góc xen giữa hoặc chiều cao.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-COSINE_RULE",
@@ -125,7 +137,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Với ba cạnh, kiểm tồn tại và dùng côsin xác định loại góc; Heron tính diện tích."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -135,7 +149,8 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P05 · TOP12-O07"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng công thức tam giác vuông cho mọi bộ ba cạnh, kiểm góc lớn nhất bằng côsin trước. Ôn CĐ12 mục 2.3; luyện THPT-G10-B06-P06."
   },
   {
     "item_id": "THPT-TOP12-P06",
@@ -152,7 +167,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính sin B, xét cả góc nhọn và góc bù."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -162,7 +179,8 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P06 · TOP12-O08"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ lấy một góc từ máy, kiểm cả hai giá trị B bằng điều kiện A+B<180°. Ôn CĐ12 mục 2.4; luyện THPT-G10-B06-P03."
   },
   {
     "item_id": "THPT-TOP12-P07",
@@ -179,7 +197,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Kiểm giá trị sin B trước khi tìm góc."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -189,7 +209,8 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P07 · TOP12-O08"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu máy báo lỗi, so 7/6 với 1; đây là dữ kiện không thể tạo tam giác. Ôn CĐ12 mục 2.4; luyện THPT-TOP12-P06."
   },
   {
     "item_id": "THPT-TOP12-P08",
@@ -206,7 +227,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Diện tích bằng nửa tích hai cạnh và sin góc xen giữa."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -216,14 +239,15 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P08 · TOP12-O09"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng cos hoặc diện tích âm với góc tù, dựng chiều cao xuống đường thẳng chứa đáy. Ôn CĐ12 mục 3.1; luyện THPT-G10-B06-C02."
   },
   {
     "item_id": "THPT-TOP12-P09",
     "content_version": 2,
-    "stem": "Tam giác có ba cạnh dài 7, 8, 9. Tìm diện tích S, bán kính nội tiếp r và bán kính ngoại tiếp R.",
-    "answer_key": "S=12√5; r=√5; R=21√5/10.",
-    "worked_solution": "Ba cạnh 7,8,9 thỏa bất đẳng thức tam giác vì 7+8>9. Nửa chu vi p=12. Theo Heron, S=√(12·5·4·3)=12√5. Từ S=pr, r=√5. Từ S=abc/(4R), R=7·8·9/(4·12√5)=21√5/10. Nếu nhầm r/R: mục 10 → bài luyện về diện tích từ ba cạnh.",
+    "stem": "Tam giác có ba cạnh 5, 6, 7. Tính diện tích S, bán kính nội tiếp r và bán kính ngoại tiếp R.",
+    "answer_key": "S=6√6; r=2√6/3; R=35√6/24.",
+    "worked_solution": "Vì 5+6>7, ba cạnh lập thành tam giác. Nửa chu vi p=9. Heron cho S=√(9·4·3·2)=6√6. Từ S=pr suy r=6√6/9=2√6/3. Từ S=abc/(4R) suy R=210/(24√6)=35√6/24.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-HERON",
@@ -234,7 +258,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính nửa chu vi p; dùng Heron rồi S=pr và S=abc/(4R)."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -244,14 +270,15 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P09 · TOP12-O10"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm r với R, kiểm đơn vị và viết hai công thức riêng; không dùng chu vi thay p. Ôn CĐ12 mục 3.2; luyện THPT-G10-B06-P02."
   },
   {
     "item_id": "THPT-TOP12-P10",
     "content_version": 2,
-    "stem": "Hai điểm A,B cách nhau 80 m; cùng nhìn C sao cho `A=30°,B=45°` là các góc **trong** của tam giác ABC. Tìm BC và AC dưới dạng căn thức chính xác.",
-    "answer_key": "BC=40(√6−√2) m; AC=80(√3−1) m.",
-    "worked_solution": "Góc C=180°−30°−45°=105°. Theo định lí sin, BC/ sin30°=AC/sin45°=80/sin105°. Vì sin105°=sin75°=(√6+√2)/4, ta được BC=160/(√6+√2)=40(√6−√2) m và AC=160√2/(√6+√2)=80(√3−1) m. Kiểm: B>A nên AC>BC. Nếu sai: mục 6,11 → bài luyện về đo đạc.",
+    "stem": "Hai điểm A,B cách nhau 80 m. Trong tam giác ABC, góc trong A=35°, B=55°. Tìm BC và AC, làm tròn đến 0,1 m (máy tính DEG).",
+    "answer_key": "BC≈45,9 m; AC≈65,5 m.",
+    "worked_solution": "C=180°−35°−55°=90°. Theo định lí sin, BC=80 sin35°/sin90°≈45,9 m; AC=80 sin55°/sin90°≈65,5 m. Dùng chế độ DEG và chỉ làm tròn ở cuối. Vì B>A nên AC>BC. Cả hai cạnh ngắn hơn AB đối diện góc vuông.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B06-APPLICATION",
@@ -262,7 +289,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính góc C từ tổng 180°, sau đó dùng định lí sin."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -272,7 +301,8 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P10 · TOP12-O11"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm BC với AC, ghi cạnh đối diện A là BC, đối diện B là AC; kiểm cạnh đối diện góc lớn hơn dài hơn. Ôn CĐ12 mục 3.3; luyện THPT-G10-B06-P05."
   },
   {
     "item_id": "THPT-TOP12-P11",
@@ -289,7 +319,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "So tổng hai cạnh ngắn nhất với cạnh dài nhất."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -299,7 +331,8 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P11 · TOP12-O12"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu áp dụng Heron ngay, kiểm điều kiện tam giác không suy biến trước; trường hợp bằng cũng không hợp lệ. Ôn CĐ12 mục 3.4; luyện THPT-TOP12-P12."
   },
   {
     "item_id": "THPT-TOP12-P12",
@@ -317,7 +350,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Một góc trong tam giác không suy biến phải lớn hơn 0° và nhỏ hơn 180°."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -327,6 +362,7 @@
       "blob": "8f05b5556d83675649451dec76a8c1ffa5e1098d",
       "heading": "## THPT-TOP12-P12 · TOP12-O12"
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ thấy a=2 từ biểu thức đại số rồi chấp nhận, kiểm 2+5=7 nên ba điểm thẳng hàng. Ôn CĐ12 mục 3.4; luyện THPT-TOP12-P11."
   }
 ]
