@@ -20,7 +20,7 @@ Ta xét dãy \(u_n=2+1/n\) với \(n\) nguyên dương. Mọi số hạng đều
 
 > **ĐỊNH NGHĨA — Giới hạn hữu hạn của dãy số.** Viết \(\lim_{n\to\infty}u_n=L\) khi với **mọi** \(\varepsilon>0\) đều có một chỉ số \(N\) sao cho \(|u_n-L|<\varepsilon\) với **mọi** \(n\ge N\) thuộc miền chỉ số. Không yêu cầu dãy có số hạng bằng \(L\).
 
- Trong ví dụ, chỉ cần chọn \(N>1/\varepsilon\) và \(n\ge N\), ta được \(1/n<\varepsilon\). Việc chứng minh bằng khoảng cách cho thấy công thức giới hạn không chỉ là phép thế \(n=\infty\), mà là một khẳng định về mọi mức sai số.
+ Trong ví dụ, chỉ cần chọn \(N>1/\varepsilon\) và \(n\ge N\), ta được \(1/n<\varepsilon\). Ví dụ, nếu yêu cầu sai số nhỏ hơn \(0{,}01\), chọn \(N=101\): mọi \(n\ge101\) đều có \(\frac1n\le\frac1{101}<0{,}01\). Nếu đổi yêu cầu thành \(0{,}001\), ta chọn \(N=1001\). Việc chứng minh bằng khoảng cách cho thấy công thức giới hạn không chỉ là phép thế \(n=\infty\), mà là một khẳng định về mọi mức sai số.
 
 ![Các điểm dãy số tiến gần đường giới hạn L](../../visuals/THPT_TOPIC08_SEQUENCE_LIMIT_R05.svg)
 
@@ -60,12 +60,12 @@ Chẳng hạn, v_n=−n² với n≥1 đi về −∞ vì với mọi M>0, n>√
 
 **Lời giải.** Với \(a_n\), luôn có \(a_n\ge n-1\); khi \(n\) đủ lớn thì \(a_n\) vượt mọi ngưỡng dương, vậy \(a_n\to+\infty\) dù có thành phần đổi dấu. Với \(b_n\), hai dãy con chẵn và lẻ bằng \(1\) và \(-1\), nên không có giới hạn chung hay giới hạn vô cực có dấu.
 
-**Vận dụng** u_n=n², n≥1, giới hạn là gì?
+**Vận dụng** So sánh hành vi của \(u_n=n^2\) và \(w_n=(-1)^n n\), \(n\ge1\). Dãy nào tiến đến \(+\infty\)?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-+∞, vì n vượt mọi căn của ngưỡng dương.
+Dãy \(u_n\to+\infty\), vì với mỗi \(M>0\), mọi \(n>\sqrt M\) cho \(n^2>M\). Dãy \(w_n\) có các số hạng chẵn \(2,4,6,\ldots\) tiến tới \(+\infty\), còn các số hạng lẻ \(-1,-3,-5,\ldots\) tiến tới \(-\infty\); không có giới hạn chung. Không bị chặn không đồng nghĩa với tiến tới vô cực có một dấu.
 
 Nếu viết 'vô hạn' cho (−1)^n, hãy liệt kê các số hạng chẵn và lẻ rồi xét giới hạn từng dãy con.
 
@@ -154,7 +154,7 @@ Tổng vô hạn của cấp số nhân chỉ hữu hạn khi điều kiện h�
 
 > **CÔNG THỨC — Tổng cấp số nhân vô hạn.** Với \(|q|<1\), tổng \(\sum_{k=0}^{\infty}aq^k\) hội tụ và bằng \(\dfrac{a}{1-q}\), vì các tổng hữu hạn \(a(1-q^n)/(1-q)\) tiến đến giá trị ấy. Với \(|q|\ge1\) và \(a\ne0\), số hạng không tiến 0 nên tổng không hội tụ.
 
- Phần dư R_n=a q^n/(1−q) quyết định sai số.
+Với \(S_n\) là tổng \(n\) số hạng đầu, phần dư có dấu là \(R_n=S_\infty-S_n=\frac{aq^n}{1-q}\). Sai số tuyệt đối là \(|R_n|\), tiến về 0 khi \(|q|<1\); nếu \(q<0\), chính \(R_n\) có thể đổi dấu qua từng bước.
 
 Chẳng hạn, 10+5+2,5+… có a=10,q=1/2; S_n=20(1−(1/2)^n), phần dư=20/2^n nên tổng tiến 20. Ta chọn xem S_n trước S∞ để thấy nguồn gốc điều kiện hội tụ.
 
@@ -222,7 +222,7 @@ Nếu coi dạng \(0/0\) là đáp số hoặc tự gán giá trị của hàm t
 
 <!-- LESSON_ID: TOP08-M07; OUTCOME_ID: TOP08-O07 -->
 
-> **ĐỊNH NGHĨA — Giới hạn trái và phải.** Tiến đến điểm từ trái và phải có thể cho hai kết quả khác nhau. Hàm có thể tiến đến hai giá trị khác nhau khi ta lại gần từ trái và từ phải không? Ta đã biết bất đẳng thức x<a/x>a, hàm xác định từng phần. Giới hạn trái lim(x→a⁻) xét x<a, phải lim(x→a⁺) xét x>a, đều đi trong miền xác định. Giới hạn hai phía hữu hạn tồn tại và bằng L khi và chỉ khi cả hai giới hạn một phía cùng tồn tại và bằng L. f(a) không quyết định hai giới hạn này; đọc điều kiện từng nhánh trước khi thế.
+> **ĐỊNH NGHĨA — Giới hạn trái và phải.** Tiến đến điểm từ trái và phải có thể cho hai kết quả khác nhau. Hàm có thể tiến đến hai giá trị khác nhau khi ta lại gần từ trái và từ phải không? Ta đã biết bất đẳng thức x<a/x>a, hàm xác định từng phần. Giới hạn trái lim(x→a⁻) xét x<a, phải lim(x→a⁺) xét x>a, đều đi trong miền xác định. Khi miền có điểm tiến tới \(a\) từ cả hai phía, giới hạn hai phía hữu hạn tồn tại và bằng \(L\) khi và chỉ khi hai giới hạn một phía cùng bằng \(L\). Nếu miền chỉ có một phía, xét giới hạn từ phía đó. f(a) không quyết định hai giới hạn này; đọc điều kiện từng nhánh trước khi thế.
 
 Chẳng hạn, f(x)=x+2 nếu x<0; f(x)=2x+1 nếu x≥0. Khi x→0⁻, f→2; khi x→0⁺, f→1. Hai giá trị khác nên không có giới hạn hai phía, mặc dù f(0)=1. Chọn phương pháp tách nhánh vì hàm từng phần.
 
@@ -252,7 +252,13 @@ Nếu dùng cùng một nhánh của hàm cho cả trái và phải, đọc lạ
 
 <!-- LESSON_ID: TOP08-M08; OUTCOME_ID: TOP08-O08 -->
 
-> **ĐỊNH NGHĨA — Giới hạn vô cực gần điểm.** Khi hàm tăng không bị chặn gần điểm, ta gặp giới hạn vô cực. Một phân thức có mẫu tiến đến 0 thì luôn tiến +∞ không? Ta sử dụng bảng dấu, 0⁺ và 0⁻, tử khác 0 gần điểm. Khi tử tiến đến một số khác 0 và mẫu tiến 0, giới hạn có thể là +∞ hoặc −∞ tùy dấu tử/mẫu trên từng phía. Kí hiệu f(x)→+∞ hay −∞ mô tả không bị chặn theo dấu, không phải giới hạn hữu hạn. Nếu trái và phải vô cực khác dấu thì không thể nói có giới hạn vô cực chung có một dấu.
+> **ĐỊNH NGHĨA — Giới hạn vô cực gần điểm.** Một phân thức có mẫu tiến đến 0 có luôn tiến tới \(+\infty\) không? Hãy phân biệt giá trị rất lớn ở vài điểm với việc vượt mọi ngưỡng ở **tất cả** các điểm đủ gần.
+
+> Viết \(\lim_{x\to a^+}f(x)=+\infty\) nếu với mỗi \(M>0\), có \(\delta>0\) sao cho mọi \(x\) thuộc miền xác định thỏa \(0<x-a<\delta\) đều có \(f(x)>M\). Với giới hạn trái, dùng \(0<a-x<\delta\). Giới hạn \(-\infty\) được định nghĩa tương tự, nhưng yêu cầu \(f(x)<-M\). Nếu cả hai phía cùng tiến tới một vô cực có dấu, ta có giới hạn hai phía tương ứng; trái dấu thì không.
+
+Chẳng hạn, \(f(x)=\frac{\sin^2(1/x)}{x^2}\) với \(x\ne0\) không bị chặn gần 0: tại \(x=\frac1{\pi/2+k\pi}\), \(f(x)=\frac1{x^2}\to+\infty\) khi \(k\to+\infty\). Nhưng tại \(x=\frac1{k\pi}\), \(k\) nguyên dương, \(f(x)=0\). Vì thế hàm không tiến tới \(+\infty\) ngay cả từ bên phải. Không được thay điều kiện “mọi \(x\) đủ gần” bằng “không bị chặn”.
+
+Khi tử tiến đến một số khác 0 và mẫu tiến 0, xét dấu tử và mẫu theo từng phía để xác định giới hạn \(+\infty\) hoặc \(-\infty\).
 
 Xét ví dụ: f(x)=1/(x−5): x→5⁻ thì mẫu âm nhỏ ⇒ f→−∞; x→5⁺ thì mẫu dương nhỏ ⇒ f→+∞. Chọn bảng dấu mẫu vì tử dương không đổi.
 
@@ -282,7 +288,9 @@ Nếu thấy mẫu về 0 rồi tự kết luận \(+\infty\), đọc **Kiến t
 
 <!-- LESSON_ID: TOP08-M09; OUTCOME_ID: TOP08-O09 -->
 
-> **ĐỊNH NGHĨA — Giới hạn khi x tiến vô cực.** Ra xa trên trục hoành lại dẫn đến giới hạn ở vô cực. Hai đa thức đều rất lớn thì tỉ số sẽ luôn tiến đến 1? Ta bắt đầu từ quy tắc giới hạn 1/x^k→0 và dấu x âm. Với phân thức đa thức, so bậc tử/mẫu và chia cho lũy thừa x thích hợp. Nếu bậc bằng nhau thì giới hạn là tỉ số hệ số đầu (mẫu đầu khác 0); nếu bậc tử nhỏ hơn, giới hạn 0. Nếu bậc tử lớn hơn, cần xét dấu và bậc của phần còn lại, không tự viết ∞. Khi x→−∞, x lũy thừa chẵn dương, lẻ âm.
+> **ĐỊNH NGHĨA — Giới hạn khi x tiến vô cực.** Ra xa trên trục hoành, ta hỏi giá trị hàm có tiến sát một số \(L\) hay không. Viết \(\lim_{x\to+\infty}f(x)=L\) nếu với mỗi \(\varepsilon>0\), có \(R>0\) sao cho mọi \(x>R\) thuộc miền xác định đều có \(|f(x)-L|<\varepsilon\); với \(x\to-\infty\), thay bằng \(x<-R\) (miền có các giá trị ra xa theo phía đang xét). Ví dụ \(2+\frac1x\) tiến tới 2 ở cả hai phía: nếu \(|x|>100\), sai số nhỏ hơn \(0{,}01\).
+
+**PHƯƠNG PHÁP — Phân thức đa thức.** Hai đa thức đều rất lớn thì tỉ số có luôn tiến đến 1? Ta bắt đầu từ \(\frac1{x^k}\to0\) với \(k\) nguyên dương, và xét dấu khi \(x\) âm. Với phân thức đa thức, so bậc tử/mẫu và chia cho lũy thừa x thích hợp. Nếu bậc bằng nhau thì giới hạn là tỉ số hệ số đầu (mẫu đầu khác 0); nếu bậc tử nhỏ hơn, giới hạn 0. Nếu bậc tử lớn hơn, cần xét dấu và bậc của phần còn lại, không tự viết ∞. Khi x→−∞, x lũy thừa chẵn dương, lẻ âm.
 
 Chẳng hạn, lim(x→−∞)(2x²+5x)/(5x²−1) = lim(2+5/x)/(5−1/x²)=2/5. Chọn chia x² vì hai đa thức cùng bậc; −∞ không đổi dấu x².
 
@@ -292,12 +300,14 @@ Chẳng hạn, lim(x→−∞)(2x²+5x)/(5x²−1) = lim(2+5/x)/(5−1/x²)=2/5.
 
 **Lời giải.** Chia tử và mẫu cho \(x^2\ne0\) với \(|x|\) lớn: \(\dfrac{3-2/x}{1+1/x^2}\to3\). Dù \(x\) âm khi tiến về \(-\infty\), \(x^2\) vẫn dương; mẫu mới tiến về \(1\ne0\).
 
-**Vận dụng** lim(x→+∞)(−3x³+1)/(x³+4) bằng bao nhiêu?
+Nếu tử thấp bậc hơn mẫu, chẳng hạn \(\frac{x+2}{x^2+1}\), chia cho \(x^2\) cho giới hạn 0. Nếu tử cao hơn mẫu, \(\frac{x^3}{x^2+1}=\frac{x}{1+1/x^2}\) tiến tới \(+\infty\) khi \(x\to+\infty\), nhưng tới \(-\infty\) khi \(x\to-\infty\).
+
+**Vận dụng** Tính \(\lim_{x\to+\infty}\frac{-3x^3+1}{x^3+4}\) và \(\lim_{x\to-\infty}\frac{2x^3}{x^2+1}\).
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-−3; chia cả tử/mẫu cho x³.
+Giới hạn thứ nhất bằng \(-3\) khi chia cả tử và mẫu cho \(x^3\). Giới hạn thứ hai bằng \(-\infty\), vì \(\frac{2x^3}{x^2+1}=\frac{2x}{1+1/x^2}\), mẫu tiến tới 1 còn tử tiến tới \(-\infty\).
 
 Nếu giữ dấu 'x âm' ở mọi hạng, tách x² và x³ ra để so dấu của từng lũy thừa.
 
@@ -312,7 +322,7 @@ Nếu dùng dấu của x thay cho dấu của \(x^2\), hoặc chọn sai bậc 
 
 <!-- LESSON_ID: TOP08-M10; OUTCOME_ID: TOP08-O10 -->
 
-> **PHƯƠNG PHÁP — Khử dạng 0/0 bằng nhân tử.** Thế trực tiếp cho dạng 0/0 đòi hỏi biến đổi có thể khử hợp lệ. Làm sao biến một biểu thức 'không xác định ở điểm' thành giới hạn tính được? Cần nhớ hằng đẳng thức và phân thức khác 0 ở lân cận bỏ điểm. 0/0 là dạng vô định khi thế thử, không phải kết quả. Tìm nhân tử chung và khử chỉ trên các x khác điểm cấm; biểu thức sau khử giúp tính giới hạn nhưng không mở rộng miền của hàm gốc. Khi nhân tử không triệt tiêu hoặc hàm từng nhánh khác, phải kiểm lại một phía.
+> **PHƯƠNG PHÁP — Khử dạng 0/0 bằng nhân tử.** Thế trực tiếp cho dạng 0/0 đòi hỏi biến đổi có thể khử hợp lệ. Làm sao biến một biểu thức 'không xác định ở điểm' thành giới hạn tính được? Cần nhớ hằng đẳng thức và nhân tử được khử và mẫu số khác 0 ở lân cận bỏ điểm. 0/0 là dạng vô định khi thế thử, không phải kết quả. Tìm nhân tử chung và khử chỉ trên các x khác điểm cấm; biểu thức sau khử giúp tính giới hạn nhưng không mở rộng miền của hàm gốc. Khi nhân tử không triệt tiêu hoặc hàm từng nhánh khác, phải kiểm lại một phía.
 
 Chẳng hạn, (x²−7x+12)/(x−3) có tử (x−3)(x−4); với x≠3 rút thành x−4, giới hạn tại 3 là −1. Chọn phân tích nhân tử vì nghiệm tử trùng nghiệm mẫu.
 
@@ -350,7 +360,7 @@ Chẳng hạn, lim(x→0)(√(x+16)−4)/x: nhân liên hợp (√(x+16)+4), đ�
 
 **Đề bài.** Tính \(\lim_{x\to1}\dfrac{\sqrt{x+3}-2}{x-1}\).
 
-**Lời giải.** Trong miền \(x+3\ge0\) và \(x\ne1\), nhân liên hợp: \(\dfrac{(\sqrt{x+3}-2)(\sqrt{x+3}+2)}{(x-1)(\sqrt{x+3}+2)}=\dfrac1{\sqrt{x+3}+2}\). Khi \(x\to1\), mẫu tiến tới \(4\), nên giới hạn bằng \(1/4\).
+**Lời giải.** Trong miền \(x+3\ge0\) và \(x\ne1\), nhân liên hợp: \(\dfrac{(\sqrt{x+3}-2)(\sqrt{x+3}+2)}{(x-1)(\sqrt{x+3}+2)}=\dfrac{(x+3)-4}{(x-1)(\sqrt{x+3}+2)}=\dfrac1{\sqrt{x+3}+2}\). Khi \(x\to1\), mẫu tiến tới \(4\), nên giới hạn bằng \(1/4\).
 
 **Vận dụng** lim(x→0)(√(x+25)−5)/x bằng bao nhiêu?
 
@@ -427,7 +437,7 @@ Xét ví dụ: Đặt \(f(x)=\frac{x^2-5x+6}{x-2}\) khi \(x\ne2\) và \(f(2)=k\)
 
 c=0 vì lim(x→0)sin x=0, bằng giá trị ở điểm.
 
-Nếu quên hàm phải được định nghĩa tại a, so 'hole' và 'point f(a)=...' trên đồ thị.
+Nếu quên hàm phải được định nghĩa tại \(a\), hãy phân biệt chấm rỗng biểu thị điểm bị khuyết với chấm đặc biểu thị giá trị thực \(f(a)\). Ví dụ đồ thị \(y=x+8\) với \(x\ne8\) có chấm rỗng tại \((8;16)\); gán \(f(8)=16\) mới lấp đúng chỗ khuyết.
 
 
 **Kiểm lỗi**
@@ -440,7 +450,7 @@ Nếu tính được giới hạn nhưng quên điều kiện giá trị hàm ph
 
 <!-- LESSON_ID: TOP08-M14; OUTCOME_ID: TOP08-O14 -->
 
-Giới hạn và giá trị tại điểm có thể lệch nhau theo những cách rất khác. Đồ thị 'đứt' có phải lúc nào cũng vá được bằng một điểm mới? Ta bắt đầu từ giới hạn trái/phải và miền xác định. Gián đoạn khử được khi giới hạn hai phía hữu hạn tồn tại nhưng giá trị tại điểm thiếu/khác; có thể đặt lại f(a)=L. Gián đoạn nhảy khi hai giới hạn hữu hạn một phía khác nhau, không thể vá bằng một giá trị. Gián đoạn vô cực khi ít nhất một phía tăng không bị chặn; cần xem chiều và dấu. Nhận dạng dựa vào giới hạn, không chỉ nét đồ thị.
+Giới hạn và giá trị tại điểm có thể lệch nhau theo những cách rất khác. Đồ thị 'đứt' có phải lúc nào cũng vá được bằng một điểm mới? Ta bắt đầu từ giới hạn trái/phải và miền xác định. Gián đoạn khử được khi giới hạn hai phía hữu hạn tồn tại nhưng giá trị tại điểm thiếu/khác; có thể đặt lại f(a)=L. Gián đoạn nhảy khi hai giới hạn hữu hạn một phía khác nhau, không thể vá bằng một giá trị. Gián đoạn vô cực khi ít nhất một giới hạn một phía bằng \(+\infty\) hoặc \(-\infty\) theo định nghĩa mọi ngưỡng ở mục 2.3; chỉ không bị chặn thì chưa đủ. Nhận dạng dựa vào giới hạn, không chỉ nét đồ thị.
 
 Chẳng hạn, f=|x|/x (x≠0) có giới hạn trái −1, phải +1 ⇒ gián đoạn nhảy tại 0. g=1/x có hai phía ±∞ ⇒ gián đoạn vô cực tại 0. h=(x²−36)/(x−6) nếu x≠6 rút x+6, lim=12 ⇒ gián đoạn có thể khử ở 6. Chọn so một phía trước khi kết luận.
 
@@ -476,7 +486,7 @@ Nếu thấy mẫu số bằng 0 rồi gọi tất cả là gián đoạn vô c�
 
 <!-- LESSON_ID: TOP08-M15; OUTCOME_ID: TOP08-O15 -->
 
-> **ĐỊNH NGHĨA — Liên tục trên khoảng và đoạn.** Trên khoảng và đoạn, tính liên tục phải được xét cả đầu mút. Hàm √x có thiếu 'giới hạn trái' tại x=0 trong miền của nó, vậy có thể liên tục trên [0,9] không? Cần nhớ miền căn không âm, giới hạn một phía. Hàm liên tục trên (a,b) khi liên tục tại từng điểm bên trong; liên tục trên [a,b] còn yêu cầu liên tục từ phải tại a và từ trái tại b, theo miền xác định. Ở đầu mút không yêu cầu xét bên ngoài miền. Nếu miền là tập hợp nhiều khoảng rời, không tuyên bố 'liên tục qua lỗ' ở điểm ngoài miền.
+> **ĐỊNH NGHĨA — Liên tục trên khoảng và đoạn.** Chỉ kiểm tính liên tục tại các điểm thuộc khoảng hoặc đoạn đang xét; nếu đầu mút được lấy, xét giới hạn từ phía bên trong. Hàm √x có thiếu 'giới hạn trái' tại x=0 trong miền của nó, vậy có thể liên tục trên [0,9] không? Cần nhớ miền căn không âm, giới hạn một phía. Hàm liên tục trên (a,b) khi liên tục tại từng điểm bên trong; liên tục trên [a,b] còn yêu cầu liên tục từ phải tại a và từ trái tại b, theo miền xác định. Ở đầu mút không yêu cầu xét bên ngoài miền. Nếu miền là tập hợp nhiều khoảng rời, không tuyên bố 'liên tục qua lỗ' ở điểm ngoài miền.
 
 Với **nửa khoảng**, ta áp dụng cùng ý tưởng nhưng chỉ kiểm đầu mút **được lấy**. Trên \([a,+\infty)\), hàm phải liên tục tại mọi \(x>a\) và có giới hạn phải ở \(a\) bằng \(f(a)\); trên \((a,b]\), hàm liên tục trong \((a,b)\) và giới hạn trái ở \(b\) bằng \(f(b)\). Không cần kiểm phía của đầu mút bị loại khỏi miền. Chẳng hạn, \(g(x)=x^2\) liên tục trên \((-\infty,2]\), bởi đa thức liên tục ở mọi điểm trong khoảng và khi \(x\to2^-\), giới hạn bằng \(g(2)=4\).
 
@@ -488,12 +498,12 @@ Chẳng hạn, f(x)=√x trên [0,9] liên tục bên trong vì căn liên tục
 
 **Lời giải.** Điều kiện \(16-(x-2)^2\ge0\) tương đương \(|x-2|\le4\), nên miền xác định là \([-2,6]\). Hàm là hợp của đa thức và căn không âm, liên tục bên trong. Tại \(-2\) dùng giới hạn phải và tại \(6\) giới hạn trái, đều bằng \(0\), đúng các giá trị \(f(-2)=f(6)=0\).
 
-**Vận dụng** g(x)=√(16−x²) có liên tục trên [−4,4] không?
+**Vận dụng** Hàm \(g(x)=\frac1x\) có liên tục trên \((0;1)\) không? Có thể kết luận như vậy trên \([0;1]\) không? Vì sao?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Có; trong đoạn biểu thức trong căn không âm và liên tục, tại −4 chỉ cần giới hạn phải, tại 4 chỉ cần trái.
+Có trên \((0;1)\), vì tại mọi điểm của khoảng, mẫu khác 0. Không thể liên tục trên \([0;1]\), vì \(g(0)\) không xác định. Điểm 0 không thuộc khoảng mở, nên khi xét \((0;1)\) không phải kiểm liên tục tại 0.
 
 Nếu hỏi giới hạn trái của √x ở 0 trong ℝ và nói 'không liên tục', hãy trở về định nghĩa liên tục trên miền [0,9].
 
@@ -510,7 +520,7 @@ Nếu cho rằng đầu mút không liên tục vì thiếu một phía nằm ng
 
 > **TÍNH CHẤT — Miền xác định và phép toán liên tục.** Phép toán giữ tính liên tục khi miền và điều kiện phù hợp. Nếu mỗi phép tính trong hàm trông quen thuộc, có thể bỏ qua miền xác định khi kết luận liên tục? Để xác định điều đó, cần xét đa thức, căn, mẫu khác 0, hợp hàm. Đa thức, \(\sin x\) và \(\cos x\) liên tục trên toàn \(\mathbb R\); căn liên tục nơi đối số không âm; phân thức liên tục tại điểm có mẫu khác \(0\). Vì \(\tan x=\sin x/\cos x\) và \(\cot x=\cos x/\sin x\), \(\tan x\) liên tục tại các điểm \(\cos x\ne0\), còn \(\cot x\) liên tục tại các điểm \(\sin x\ne0\); không được kết luận qua điểm cấm mẫu. Tổng, hiệu, tích, thương (khi mẫu khác \(0\)) và hợp các hàm liên tục vẫn liên tục khi giữ đúng điều kiện miền. Luôn tìm miền chung của căn và mẫu trước khi viết khoảng liên tục. Tại đầu mút của miền liên tục tương đối có thể chỉ xét một phía.
 
-Chẳng hạn, f(x)=(x²+1)/(x−1) có miền ℝ\{1} nên liên tục trên (−∞,1) và (1,∞), không thể nói liên tục trên toàn ℝ. Phép chia thất bại tại 1 dù tử vẫn có nghĩa.
+Chẳng hạn, \(f(x)=\frac{x^2+1}{x-1}\) có miền \(\mathbb R\setminus\{1\}\) nên liên tục trên \((-\infty;1)\) và \((1;+\infty)\), không thể nói liên tục trên toàn \(\mathbb R\). Phép chia thất bại tại 1 dù tử vẫn có nghĩa.
 
 **Ví dụ**
 
@@ -538,8 +548,6 @@ Nếu xét mỗi điều kiện căn nhưng quên mẫu khác 0, hoặc nói li�
 
 Nếu một hàm liên tục trên đoạn và nhận giá trị âm ở đầu này, dương ở đầu kia, nó buộc phải đi qua mức 0 ở một vị trí giữa hai đầu. Đây không phải suy đoán từ vài điểm trên đồ thị mà là định lý giá trị trung gian. Từ bảo đảm **tồn tại** ấy, ta có thể dùng phép chia đôi để tìm khoảng ngày càng nhỏ chứa nghiệm, dù chưa biết công thức nghiệm chính xác.
 
-Biết đồ thị không đứt và hai đầu một khoảng có dấu trái nhau, ta có thể kết luận có điểm cắt trục ngay cả khi chưa giải phương trình chính xác. Phương pháp chia đôi biến kết luận tồn tại ấy thành cách tìm xấp xỉ.
-
 ### 4.1. Định lí giá trị trung gian
 
 <!-- LESSON_ID: TOP08-M17; OUTCOME_ID: TOP08-O17 -->
@@ -548,7 +556,7 @@ Làm sao biết một phương trình có nghiệm dù chưa tìm được công
 
 > **ĐỊNH LÝ — Trường hợp đổi dấu của định lý giá trị trung gian.** Nếu \(f\) **liên tục trên đoạn** \([a,b]\), \(a<b\), và \(f(a)f(b)<0\), thì tồn tại **ít nhất một** \(c\in(a,b)\) sao cho \(f(c)=0\). Kết luận tồn tại không tự khẳng định nghiệm duy nhất.
 
- Định lí cho tồn tại, không tự cho duy nhất; nếu f(a)f(b)>0 cũng không đủ kết luận vô nghiệm. Muốn duy nhất cần lý do độc lập (đơn điệu, v.v.). Không dùng IVT khi có điểm gián đoạn trong đoạn.
+ Định lí cho tồn tại, không tự cho duy nhất; nếu f(a)f(b)>0 cũng không đủ kết luận vô nghiệm. Muốn duy nhất cần lý do độc lập (đơn điệu, v.v.). IVT là viết tắt của định lý giá trị trung gian (Intermediate Value Theorem). Không dùng IVT khi hàm không liên tục trên cả đoạn. Chẳng hạn, \(f(x)=\frac1x\) có \(f(-1)=-1\), \(f(1)=1\), nhưng không xác định tại 0 và không có nghiệm \(f(x)=0\). Đổi dấu hai đầu không đủ nếu thiếu điều kiện liên tục.
 
 Chẳng hạn, g(x)=x³−2 liên tục trên [1,2]; g(1)=−1, g(2)=6, nên tồn tại c∈(1,2) với g(c)=0. Có nghiệm thực ∛2, nhưng IVT chỉ khẳng định tồn tại; ta chọn IVT để làm chứng cứ không cần tính căn chính xác.
 
@@ -578,19 +586,26 @@ Nếu suy ngay nghiệm **duy nhất** chỉ từ trái dấu ở hai đầu, đ
 
 <!-- LESSON_ID: TOP08-M18; OUTCOME_ID: TOP08-O18 -->
 
-> **PHƯƠNG PHÁP — Chia đôi khoảng để khoanh nghiệm.** Sau kết luận tồn tại nghiệm, chia đôi giúp khoanh nghiệm bằng phép tính. Sau khi biết có nghiệm, làm thế nào khoanh vùng được nó mà chưa dùng máy tính? Ta sử dụng IVT, giá trị tại trung điểm, dấu trái/phải. Chia đôi đoạn [a,b] có f liên tục và hai đầu trái dấu: tại m=(a+b)/2, nếu f(m)=0 thì tìm xong; nếu không, giữ nửa đoạn có hai giá trị đầu trái dấu. Lặp lại, độ dài đoạn sau k bước bằng (b−a)/2^k. Phải nói rõ mô hình toán có miền t và đơn vị; nghiệm mô hình không tự là kết luận thực nghiệm.
+> **PHƯƠNG PHÁP — Chia đôi khoảng để khoanh nghiệm.** Sau kết luận tồn tại nghiệm, chia đôi giúp khoanh nghiệm bằng phép tính. Sau khi biết có nghiệm, làm thế nào khoanh vùng được nó mà chưa dùng máy tính? Ta sử dụng IVT, giá trị tại trung điểm, dấu trái/phải. Chia đôi đoạn [a,b] có f liên tục và hai đầu trái dấu: tại m=(a+b)/2, nếu f(m)=0 thì tìm xong; nếu không, giữ nửa đoạn có hai giá trị đầu trái dấu. Lặp lại, độ dài đoạn sau k bước bằng (b−a)/2^k.
 
-Xét ví dụ: Với g(x)=x²−2 trên [1,2], g(1)=−1,g(2)=2. Bước 1 m=1,5: g=0,25>0 giữ [1,1,5]. Bước 2 m=1,25: g=−0,4375<0 giữ [1,25,1,5]; nghiệm √2 vẫn trong khoảng dài 0,25. Chọn dấu bảo toàn điều kiện IVT sau mỗi bước.
+Xét ví dụ \(g(x)=x^2-2\) trên \([1;2]\), với \(g(1)=-1\), \(g(2)=2\). Theo dõi từng bước:
+
+| Bước | Đoạn trước khi chia | Trung điểm \(m\) | \(g(m)\) | Đoạn giữ lại |
+|---|---|---|---|---|
+| 1 | \([1;2]\) | \(1{,}5\) | \(0{,}25>0\) | \([1;1{,}5]\) |
+| 2 | \([1;1{,}5]\) | \(1{,}25\) | \(-0{,}4375<0\) | \([1{,}25;1{,}5]\) |
+
+Sau mỗi bước, hai đầu đoạn giữ lại vẫn trái dấu. Nghiệm \(\sqrt2\) nằm trong đoạn cuối dài \(0{,}25\).
 
 ![Định lý giá trị trung gian và chia đôi đoạn](../../visuals/THPT_TOPIC08_IVT_BISECTION_R01.svg)
 
-*Đọc hình:* Với \(f(x)=x^2-2\), đầu \(x=1\) có \(f=-1\) và \(x=2\) có \(f=2\), nên có ít nhất một nghiệm giữa chúng. Tại trung điểm \(1{,}5\), \(f=0{,}25>0\), vì thế bước đầu giữ \([1,1{,}5]\). Định lý bảo đảm **tồn tại**, còn tính duy nhất cần lập luận riêng.
+*Đọc hình:* Với \(f(x)=x^2-2\), đầu \(x=1\) có \(f=-1\) và \(x=2\) có \(f=2\), nên có ít nhất một nghiệm giữa chúng. Tại trung điểm \(1{,}5\), \(f=0{,}25>0\), vì thế bước đầu giữ \([1;1{,}5]\). Định lý bảo đảm **tồn tại**, còn tính duy nhất cần lập luận riêng.
 
 **Ví dụ**
 
 **Đề bài.** Dùng hai bước chia đôi để khoanh nghiệm của \(x^2-5=0\) trong \([2,3]\).
 
-**Lời giải.** Vì \(g(2)=-1<0\), \(g(3)=4>0\), bước 1 lấy \(m=2{,}5\) có \(g(m)=1{,}25>0\), giữ \([2,2{,}5]\). Bước 2 có \(m=2{,}25\), \(g(m)=0{,}0625>0\), giữ \([2,2{,}25]\), dài \(0{,}25\). Các đầu đoạn luôn trái dấu; hình phía trên dùng \(x^2-2\), không phải phương trình này.
+**Lời giải.** Vì \(g(2)=-1<0\), \(g(3)=4>0\), bước 1 lấy \(m=2{,}5\) có \(g(m)=1{,}25>0\), giữ \([2;2{,}5]\). Bước 2 có \(m=2{,}25\), \(g(m)=0{,}0625>0\), giữ \([2;2{,}25]\), dài \(0{,}25\). Các đầu đoạn luôn trái dấu; hình phía trên dùng \(x^2-2\), không phải phương trình này.
 
 **Vận dụng** Với x²−3 trên [1,2], sau một bước chia đôi giữ nửa nào?
 
