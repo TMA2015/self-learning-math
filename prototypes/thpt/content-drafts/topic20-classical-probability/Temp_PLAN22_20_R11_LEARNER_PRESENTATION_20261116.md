@@ -151,7 +151,9 @@ Nếu gọi sự việc cần tìm là A, phần còn lại của không gian m�
 
 **Lời giải:** Có 18 phiếu không trúng trong 20 phiếu đồng khả năng, nên \(P(\text{không trúng})=\frac{18}{20}=\frac{9}{10}\). Biến cố “trúng thưởng” là biến cố đối của “không trúng thưởng”, do đó \(P(\text{trúng})=1-\frac{9}{10}=\frac{1}{10}\). Dùng biến cố đối giúp kiểm tra ngay hai xác suất cộng lại bằng 1.
 
-**Nguyên lí xác suất bé:** Một biến cố có \(0<P(A)\ll 1\) vẫn có thể xảy ra. Không suy ra biến cố không thể và không khẳng định số lần xảy ra trong một số lượt thử bằng chính xác “số lượt × xác suất”.
+**Nguyên lí xác suất bé:** Trong thực tế, khi xác suất xảy ra một biến cố trong một phép thử rất nhỏ, ta thường có thể coi biến cố đó không xảy ra trong lần thử ấy. Đây là một nguyên lí dùng để nhận định thực tiễn, không phải khẳng định toán học rằng \(P(A)=0\). Thế nào là “rất nhỏ” còn tùy hậu quả và bối cảnh; một biến cố có xác suất dương vẫn có thể xảy ra.
+
+Khi lặp lại cùng một phép thử độc lập nhiều lần với xác suất \(P(A)=p\) không đổi, số lần biến cố xảy ra thường xấp xỉ \(np\) nếu số lần thử \(n\) đủ lớn. Chẳng hạn, nếu xác suất một phiếu trúng là \(0{,}02\) và rút 1000 lần độc lập theo cùng mô hình, số lượt trúng ước tính là \(1000\cdot0{,}02=20\). Đó là ước lượng, không phải bảo đảm đúng 20 lần. Một biến cố hiếm trong một lần thử vẫn có thể xuất hiện khi thử nhiều lần.
 
 **Kiến thức cần ghi nhớ**
 
@@ -370,13 +372,24 @@ Nếu lấy \(B=\{4,5,6\}\) thì em đã chép điều kiện “lớn hơn 3”
 
 ### 2.2. Độc lập không phải xung khắc
 
-Giả sử ta tung hai đồng xu cân đối và việc tung đồng xu thứ nhất không ảnh hưởng đến đồng xu thứ hai. Biết đồng xu đầu tiên ra ngửa không làm kết quả ngửa của đồng xu thứ hai dễ hay khó hơn. Đó là trực giác của **hai biến cố độc lập**: thông tin rằng biến cố này xảy ra không làm thay đổi xác suất của biến cố kia (khi xác suất có điều kiện được xác định).
+Giả sử ta tung hai đồng xu cân đối và việc tung đồng xu thứ nhất không ảnh hưởng đến đồng xu thứ hai. Biết đồng xu đầu tiên ra ngửa không làm kết quả ngửa của đồng xu thứ hai dễ hay khó hơn. Đó là trực giác của **hai biến cố độc lập**: việc một biến cố xảy ra hay không xảy ra không ảnh hưởng đến xác suất của biến cố kia (khi nhóm điều kiện có xác suất dương).
 
 Bây giờ hãy so sánh với hai biến cố “lần tung đầu ra ngửa” và “lần tung đầu ra sấp”. Chúng không thể cùng xảy ra, nên **xung khắc**; nhưng khi đã biết biến cố thứ nhất xảy ra, biến cố thứ hai chắc chắn không xảy ra. Với hai biến cố đều có xác suất dương, xung khắc và độc lập vì thế không thể là cùng một tính chất. Tiêu chuẩn toán học để kiểm tra độc lập là so sánh xác suất của **giao** với **tích hai xác suất riêng**. Đây là điều kiện phải được kiểm tra, không phải công thức được phép áp dụng cho mọi cặp biến cố.
 
 > **TÍNH CHẤT — Độc lập**
 >
 > \(P(A\cap B)=P(A)P(B).\) Đây là tiêu chuẩn độc lập; không suy từ việc hai biến cố không xung khắc.
+
+Nếu \(A,B\) độc lập thì \(A,\overline B\); \(\overline A,B\); \(\overline A,\overline B\) cũng độc lập. Thật vậy, \(A\) chia thành hai phần rời nhau \(A\cap B\) và \(A\cap\overline B\), nên
+
+\[
+P(A\cap\overline B)
+=P(A)-P(A\cap B)
+=P(A)(1-P(B))
+=P(A)P(\overline B).
+\]
+
+Đổi vai hai biến cố cho kết luận về \(\overline A,B\); dùng cùng lập luận thêm một lần cho \(\overline A,\overline B\). Vì vậy, khi hai thiết bị hoạt động độc lập, hai biến cố chúng bị hỏng cũng độc lập.
 
 **Phản ví dụ giúp kiểm khái niệm.** Trên một xúc xắc sáu mặt cân đối, xét \(A=\{2,4,6\}\) là biến cố chẵn và \(B=\{1,2,3\}\) là biến cố không lớn hơn 3. Ta có \(P(A)=P(B)=\frac{1}{2}\), \(A\cap B=\{2\}\), \(P(A\cap B)=\frac{1}{6}\) khác \(P(A)P(B)=\frac{1}{4}\). Vậy hai biến cố **không độc lập**, dù vẫn có thể cùng xảy ra và do đó **không xung khắc**. Muốn quyết định độc lập, luôn xét **cùng một không gian mẫu** và so đúng \(P(A\cap B)\) với \(P(A)P(B)\).
 
