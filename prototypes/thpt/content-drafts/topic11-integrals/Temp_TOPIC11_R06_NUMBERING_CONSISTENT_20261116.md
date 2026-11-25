@@ -49,7 +49,7 @@ Nếu em chỉ thấy một nguyên hàm mà bỏ \(+C\), hoặc kết luận b�
 
 <!-- LESSON_ID: TOP11-M02; OUTCOME_ID: TOP11-O02 -->
 
-> **TÍNH CHẤT — Một họ nguyên hàm và điều kiện đầu.** Các nguyên hàm khác nhau bởi hằng số; điều kiện đầu chọn một hàm. Nếu hai hàm có cùng đạo hàm, số liệu ban đầu có chọn ra đúng một hàm không? Ta đã biết viết F₀(x)+C, biết a thuộc khoảng và F(a)=b. Nếu f liên tục trên một khoảng, mọi nguyên hàm khác nhau một hằng số trên khoảng ấy. Giá trị đầu F(a)=b cho phương trình F₀(a)+C=b, giải C; không áp dữ kiện ở một thành phần miền để khóa hằng trên thành phần tách rời. Hãy kiểm cả điều kiện và đạo hàm.
+> **TÍNH CHẤT — Một họ nguyên hàm và điều kiện đầu.** Nếu hai hàm có cùng đạo hàm trên một khoảng thì chúng chỉ khác nhau một hằng số. Chọn một nguyên hàm \(F_0\) của \(f\), ta viết \(F(x)=F_0(x)+C\). Nếu biết \(a\) thuộc khoảng đó và \(F(a)=b\), ta có \(F_0(a)+C=b\), từ đó xác định \(C=b-F_0(a)\). Dữ kiện ở một khoảng không xác định hằng số trên một khoảng tách rời khác. Hãy kiểm cả đạo hàm và giá trị ban đầu.
 
 Chẳng hạn, \(F'(x)=3x^2-4\), \(F(1)=5\). Họ nguyên hàm là \(F(x)=x^3-4x+C\). Thay \(x=1\), ta được \(1-4+C=5\), suy ra \(C=8\). Vậy \(F(x)=x^3-4x+8\). Kiểm lại \(F'(x)=3x^2-4\) và \(F(1)=5\).
 
@@ -173,7 +173,7 @@ Nếu em đạo hàm ngược \(e^{kx}\) hay \(a^x\) mà thiếu hệ số bù, 
 
 <!-- LESSON_ID: TOP11-M06; OUTCOME_ID: TOP11-O06 -->
 
-> **CÔNG THỨC — Nguyên hàm lượng giác.** Với lượng giác, kiểm dấu và đơn vị radian. Nguyên hàm sin và cos có luôn giữ nguyên dấu không? Để xác định điều đó, cần xét (sin x)'=cos x và (cos x)'=−sin x với x radian. \(\int \cos (kx)\,\mathrm dx\)=sin(kx)/k+C, \(\int \sin (kx)\,\mathrm dx\)=−cos(kx)/k+C khi k≠0 và góc radian. Dấu trừ của nguyên hàm sin đến từ đạo hàm cos. Không dùng công thức này nguyên dạng khi biến x là số đo độ; phải quy đổi đơn vị.
+> **CÔNG THỨC — Nguyên hàm lượng giác.** Với góc tính bằng radian, \((\sin x)'=\cos x\), \((\cos x)'=-\sin x\). Theo quy tắc đạo hàm hàm hợp, khi \(k\ne0\), ta có \(\int\cos(kx)\,\mathrm dx=\frac{\sin(kx)}k+C\) và \(\int\sin(kx)\,\mathrm dx=-\frac{\cos(kx)}k+C\). Dấu trừ trong công thức thứ hai xuất hiện vì đạo hàm của cos mang dấu âm. Nếu góc được cho theo độ, phải đổi đơn vị trước khi áp dụng.
 
 Từ hai đạo hàm \((\tan x)'=\dfrac{1}{\cos^2x}\) (khi \(\cos x\ne0\)) và \((\cot x)'=-\dfrac{1}{\sin^2x}\) (khi \(\sin x\ne0\)), ta còn hai nguyên hàm cơ bản mà chỉ học sin và cos sẽ bỏ sót:
 
@@ -182,24 +182,24 @@ Từ hai đạo hàm \((\tan x)'=\dfrac{1}{\cos^2x}\) (khi \(\cos x\ne0\)) và \
 \int \frac{1}{\sin^2x}\,dx=-\cot x+C\quad(\sin x\ne0).
 \]
 
-Mỗi công thức được áp dụng trên **một khoảng** không chứa điểm làm mẫu bằng 0. Chẳng hạn, trên khoảng \(0<x<\pi/2\), \(\int(2/\cos^2x-3/\sin^2x)\,dx=2\tan x+3\cot x+C\). Lấy đạo hàm của kết quả cho đúng \(2/\cos^2x-3/\sin^2x\); dấu cộng trước \(3\cot x\) đến từ \((\cot x)'=-1/\sin^2x\). Trên những khoảng xác định tách rời, hằng số \(C\) có thể khác nhau.
+Mỗi công thức được áp dụng trên **một khoảng** không chứa điểm làm mẫu bằng 0. Chẳng hạn, trên khoảng \(0<x<\frac{\pi}{2}\), ta có \(\int\left(\frac{2}{\cos^2x}-\frac{3}{\sin^2x}\right)\mathrm dx=2\tan x+3\cot x+C\). Lấy đạo hàm kết quả cho đúng \(\frac{2}{\cos^2x}-\frac{3}{\sin^2x}\); dấu cộng trước \(3\cot x\) đến từ \((\cot x)'=-\frac{1}{\sin^2x}\). Trên những khoảng xác định tách rời, hằng số \(C\) có thể khác nhau.
 
-Chẳng hạn, \(\int (4\cos 2x+3\sin 3x)\,\mathrm dx\)=2sin2x−cos3x+C. Chọn đạo hàm ngược: 2·2cos2x=4cos2x; derivative −cos3x là+3sin3x.
+Chẳng hạn, \(\int(4\cos(2x)+3\sin(3x))\,\mathrm dx=2\sin(2x)-\cos(3x)+C\). Kiểm bằng đạo hàm: \((2\sin(2x))'=4\cos(2x)\) và \((-\cos(3x))'=3\sin(3x)\).
 
 **Ví dụ**
 
 **Đề bài:** Tính \(\int (4\cos (2x)-3\sin (3x))\,\mathrm dx\), góc đo radian.
 
-**Lời giải:** Ta có (2sin2x)′=4cos2x và (cos3x)′=−3sin3x. Vậy F=2sin2x+cos3x+C. Dùng radian và quy tắc dây chuyền khi lấy đạo hàm ngược.
+**Lời giải:** Ta có \((2\sin(2x))'=4\cos(2x)\) và \((\cos(3x))'=-3\sin(3x)\). Vậy \(F(x)=2\sin(2x)+\cos(3x)+C\). Khi lấy đạo hàm để kiểm lại, dùng góc radian và quy tắc đạo hàm hàm hợp.
 
 **Vận dụng** \(\int 2\sin (2x)\,\mathrm dx\)?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-−cos(2x)+C.
+\(-\cos(2x)+C\).
 
-Nếu thiếu dấu âm, lấy đạo hàm cos(2x) là −2sin(2x) rồi sửa.
+Nếu thiếu dấu âm, em hãy lấy đạo hàm của \(\cos(2x)\): kết quả là \(-2\sin(2x)\), trái dấu với hàm đề bài.
 
 
 **Kiểm lỗi**
@@ -212,15 +212,15 @@ Nếu em mất dấu khi nguyên hàm \(\sin\) hoặc quên nhân hệ số góc
 
 <!-- LESSON_ID: TOP11-M07; OUTCOME_ID: TOP11-O07 -->
 
-> **PHƯƠNG PHÁP — Từ vận tốc khôi phục vị trí.** Khi nguyên hàm là vị trí, điều kiện đầu mang nghĩa vật lý. Một đồ thị v(t) mô tả vận tốc, có xác định duy nhất vị trí s(t) chưa? Ta đã biết v=s'(t), nguyên hàm và điều kiện vị trí đầu s(t₀). Vận tốc có hướng v(t)=s'(t) giúp dựng lại vị trí s(t)=F(t)+C, nhưng C cần giá trị đầu. Tích phân v trên [a,b] cho **độ dời**, không phải luôn là tổng quãng đường. Đọc đơn vị: v (m/s), s (m), dv/dt gia tốc (m/s²).
+> **PHƯƠNG PHÁP — Từ vận tốc khôi phục vị trí.** Vận tốc có hướng \(v(t)=s'(t)\) cho biết vị trí \(s(t)\) biến đổi nhanh thế nào. Nếu \(F\) là một nguyên hàm của \(v\) thì \(s(t)=F(t)+C\). Ta cần biết vị trí ban đầu \(s(t_0)\) để tìm \(C\); chỉ biết vận tốc chưa đủ để xác định vị trí. Tích phân của \(v\) trên \([a;b]\) cho **độ dời**, không phải luôn là tổng quãng đường. Nếu thời gian tính bằng giây và vị trí tính bằng mét, đơn vị vận tốc là \(\mathrm{m/s}\), còn gia tốc \(v'(t)\) có đơn vị \(\mathrm{m/s^2}\).
 
-Chẳng hạn, cho v(t)=4t−2 (m/s), s(0)=3m: s(t)=2t²−2t+3. Sau2 giây s(2)=8−4+3=7m. Kiểm đạo hàm s'=4t−2, đơn vị m/s. Chọn nguyên hàm rồi mới khóa C.
+Chẳng hạn, cho \(v(t)=4t-2\) (m/s), \(s(0)=3\) m. Một họ nguyên hàm là \(s(t)=2t^2-2t+C\); từ vị trí ban đầu suy ra \(C=3\). Sau 2 giây, \(s(2)=8-4+3=7\) m. Kiểm lại \(s'(t)=4t-2\) (m/s).
 
 **Ví dụ**
 
-**Đề bài:** Vận tốc có hướng v(t)=4t+1 m/s, t≥0, và s(1)=6 m. Tính s(2).
+**Đề bài:** Vận tốc có hướng \(v(t)=4t+1\) (m/s), \(t\ge0\), và \(s(1)=6\) m. Tính \(s(2)\).
 
-**Lời giải:** Vì s′=v, s(t)=2t²+t+C (m). s(1)=2+1+C=6 ⇒ C=3. Do đó s(2)=8+2+3=13 m. Cần điều kiện đầu để xác định s; tích phân vận tốc cho độ dời.
+**Lời giải:** Vì \(s'=v\), ta có \(s(t)=2t^2+t+C\) (m). Thay \(t=1\), \(s(1)=2+1+C=6\), suy ra \(C=3\). Do đó \(s(2)=8+2+3=13\) m. Cần điều kiện vị trí đã biết để xác định hằng số; riêng tích phân vận tốc chỉ cho độ dời.
 
 **Vận dụng** Vật chuyển động thẳng có vận tốc \(v(t)=6t\) (m/s), thời gian \(t\) tính bằng giây, vị trí ban đầu \(s(0)=1\) m. Tính vị trí \(s(1)\).
 
@@ -229,7 +229,7 @@ Chẳng hạn, cho v(t)=4t−2 (m/s), s(0)=3m: s(t)=2t²−2t+3. Sau2 giây s(2)
 
 Vì \(s'(t)=v(t)\), ta có \(s(t)=3t^2+C\). Thế \(s(0)=1\) được \(C=1\); do đó \(s(1)=4\) m.
 
-Nếu không có s(0), không thể nói vị trí tuyệt đối cụ thể.
+Nếu không biết \(s(0)\), ta chưa xác định được vị trí tuyệt đối cụ thể.
 
 
 **Kiểm lỗi**
@@ -248,7 +248,7 @@ Khi biến thiên diễn ra suốt một khoảng, tích phân cộng dồn các
 
 <!-- LESSON_ID: TOP11-M08; OUTCOME_ID: TOP11-O08 -->
 
-Vì sao cùng nguyên hàm khác nhau C nhưng tích phân có cận vẫn là một số? Ta sử dụng F′=f trên đoạn [a,b] với F là một nguyên hàm, và f liên tục trên đoạn để áp dụng Newton–Leibniz. 
+Các nguyên hàm của cùng một hàm số trên một khoảng có thể khác nhau hằng số. Vì sao khi tính tích phân có cận, ta vẫn luôn thu được cùng một số? Với \(f\) liên tục trên đoạn \([a;b]\), chọn nguyên hàm \(F\) của \(f\) trên đoạn ấy.
 
 > **ĐỊNH NGHĨA — Tích phân xác định.** Với \(f\) liên tục trên đoạn \([a,b]\), chọn một nguyên hàm \(F\) của \(f\) trên đoạn ấy. **Tích phân của \(f\) từ \(a\) đến \(b\)** là số \(F(b)-F(a)\), ký hiệu \(\displaystyle\int_a^b f(x)\,dx\). Kết quả không phụ thuộc vào việc chọn nguyên hàm nào: nếu chọn \(F+C\) thì hai hằng số ở hai cận triệt tiêu. \(a\) là cận dưới, \(b\) là cận trên, \(f\) là hàm dưới dấu tích phân; khi đảo hai cận thì tích phân đổi dấu.
 
@@ -256,15 +256,15 @@ Như vậy định nghĩa giải thích **vì sao tích phân xác định là m
 
 > **ĐỊNH LÝ — Newton–Leibniz.** Nếu \(f\) liên tục trên đoạn \([a,b]\), \(a<b\), và \(F\) liên tục trên \([a,b]\), khả vi trên \((a,b)\) với \(F'(x)=f(x)\) tại mọi \(x\in(a,b)\), thì \(\displaystyle\int_a^b f(x)\,dx=F(b)-F(a)\). Đây là **một số thực**, không có \(+C\).
 
- C bị triệt trong hiệu. Khác nguyên hàm bất định, tích phân xác định không thêm +C. Tên biến lấy tích phân là **ký hiệu thay chỗ**, nên nếu giữ đúng cùng hàm và cận thì \(\int_a^b f(x)\,dx=\int_a^b f(t)\,dt\); còn đổi hàm hay đổi cận thì nói chung đổi giá trị. Nếu hàm không liên tục/không xác định trên đoạn, không áp máy móc mà kiểm điều kiện.
+ Hằng số \(C\) bị triệt tiêu trong hiệu \((F(b)+C)-(F(a)+C)=F(b)-F(a)\). Khác với nguyên hàm bất định, tích phân xác định không thêm \(+C\). Tên biến lấy tích phân là **ký hiệu thay chỗ**, nên nếu giữ cùng hàm và cận thì \(\int_a^b f(x)\,\mathrm dx=\int_a^b f(t)\,\mathrm dt\); còn đổi hàm hoặc đổi cận thì nói chung giá trị thay đổi. Nếu hàm không xác định hoặc không liên tục trên đoạn, cần kiểm điều kiện trước khi áp dụng công thức.
 
-Xét ví dụ: \(\int_{1}^{2} 4x^{3}\,\mathrm dx\)=[x⁴]₁²=16−1=15. Chọn nguyên hàm x⁴, kiểm đa thức liên tục trên [1,2]; nếu viết +C trong 15 sẽ biến kết quả số thành họ hàm vô nghĩa.
+Xét ví dụ: \(\int_1^2 4x^3\,\mathrm dx=\left[x^4\right]_1^2=16-1=15\). Chọn nguyên hàm \(F(x)=x^4\); hàm dưới dấu tích phân là đa thức, liên tục trên \([1;2]\). Kết quả là một số, không thêm \(+C\).
 
 **Ví dụ**
 
 **Đề bài:** Tính \(\int_{1}^{3} 4x\,\mathrm dx\) bằng nguyên hàm và cận.
 
-**Lời giải:** f(x)=4x liên tục trên [1,3], F(x)=2x². Định lí Newton–Leibniz cho \(\int_{1}^{3} 4x\,\mathrm dx\)=F(3)−F(1)=18−2=16. Tích phân có cận là số, không thêm +C.
+**Lời giải:** \(f(x)=4x\) liên tục trên \([1;3]\), chọn \(F(x)=2x^2\). Theo công thức Newton–Leibniz, \(\int_1^3 4x\,\mathrm dx=F(3)-F(1)=18-2=16\). Tích phân có cận là một số, không thêm \(+C\).
 
 **Vận dụng** Tính \(\displaystyle\int_1^3 2x\,dx\). Viết rõ giá trị nguyên hàm ở cả hai cận.
 
@@ -273,7 +273,7 @@ Xét ví dụ: \(\int_{1}^{2} 4x^{3}\,\mathrm dx\)=[x⁴]₁²=16−1=15. Chọn
 
 \(\left[x^2\right]_1^3=3^2-1^2=8\). Nếu em ra 9, em mới thế cận trên mà quên trừ giá trị tại cận dưới.
 
-Nếu chỉ thế cận trên, luôn nhắc hiệu F(b)−F(a).
+Nếu chỉ thế cận trên, hãy nhớ công thức là hiệu \(F(b)-F(a)\).
 
 
 **Kiểm lỗi**
@@ -286,15 +286,15 @@ Nếu em thêm \(+C\) vào tích phân có cận hoặc chỉ thế cận trên,
 
 <!-- LESSON_ID: TOP11-M09; OUTCOME_ID: TOP11-O09 -->
 
-> **TÍNH CHẤT — Tính tuyến tính của tích phân.** Tính tuyến tính cho phép gộp những tích phân có cận phù hợp. Vì sao có thể tách một biểu thức dài thành vài tích phân nhỏ? Ta bắt đầu từ phép cộng, hằng số và cùng cận [a,b]. ∫_a^b(αf+βg)=α∫_a^b f+β∫_a^b g khi các thành phần khả tích; tất cả dùng cùng cận. Tính tuyến tính không cho quyền thay cận tùy ý. Nếu một thành phần không xác định trên đoạn, phải xử lý vấn đề trước.
+> **TÍNH CHẤT — Tính tuyến tính của tích phân.** Nếu \(f,g\) liên tục trên \([a;b]\) và \(\alpha,\beta\) là hằng số, thì \(\int_a^b(\alpha f(x)+\beta g(x))\,\mathrm dx=\alpha\int_a^b f(x)\,\mathrm dx+\beta\int_a^b g(x)\,\mathrm dx\). Vì hiệu giá trị nguyên hàm cũng tuân theo phép cộng và nhân với hằng số, ta có thể tách một biểu thức dài thành các tích phân đơn giản hơn. Tất cả tích phân trong công thức đều giữ cùng hai cận. Nếu một thành phần không xác định trên đoạn, cần kiểm điều kiện trước.
 
-Chẳng hạn, \(\int_{0}^{1} (3x^{2}+2x+1)\,\mathrm dx\)=[x³+x²+x]₀¹=3. Có thể tách thành1+1+1. Chọn cách tổng từng thành phần vì số hạng là đa thức.
+Chẳng hạn, \(\int_0^1(3x^2+2x+1)\,\mathrm dx=\left[x^3+x^2+x\right]_0^1=3\). Có thể tính ba tích phân thành phần riêng rồi cộng: \(1+1+1=3\).
 
 **Ví dụ**
 
 **Đề bài:** Tính \(\int_{0}^{2} (3x^{2}-2x+4)\,\mathrm dx\) và giải thích phép tách.
 
-**Lời giải:** Các đa thức đều khả tích trên [0,2]; dùng tuyến tính, F=x³−x²+4x. Giá trị là F(2)−F(0)=8−4+8=12. Cũng có thể tách thành ba tích phân và tính riêng từng tích phân **với cùng hai cận 0 và 2**:
+**Lời giải:** Các đa thức đều liên tục trên \([0;2]\); dùng tính tuyến tính, chọn nguyên hàm \(F(x)=x^3-x^2+4x\). Giá trị là \(F(2)-F(0)=8-4+8=12\). Cũng có thể tách thành ba tích phân và tính riêng từng tích phân **với cùng hai cận 0 và 2**:
 
 \[
 \int_0^2 3x^2\,dx-\int_0^2 2x\,dx+\int_0^2 4\,dx
@@ -308,7 +308,7 @@ Hai cách hoàn toàn tương đương; không được tự ý thay cận của
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-[x²+3x]₀²=4+6=10.
+\(\left[x^2+3x\right]_0^2=4+6=10\).
 
 Nếu ghép các tích phân khác cận mà không đổi cận, đó không phải quy tắc tuyến tính.
 
@@ -323,15 +323,15 @@ Nếu em tách biểu thức nhưng đổi nhầm cận hoặc không nhân hệ
 
 <!-- LESSON_ID: TOP11-M10; OUTCOME_ID: TOP11-O10 -->
 
-> **TÍNH CHẤT — Đảo cận và ghép cận.** Chiều lấy cận quyết định dấu tích phân. Đi ngược chiều tích lũy làm thay đổi dấu nhưng có làm diện tích âm không? Cần nhớ F(b)−F(a) với F′=f, và phép đổi dấu khi đảo hai cận. ∫_b^a f=−∫_a^b f, ∫_a^a f=0; nếu a≤c≤b, ∫_a^b f=∫_a^c f+∫_c^b f. Đây là **tích phân có hướng**, không đồng nhất với diện tích hình học. Quy tắc ghép cũng có thể dùng để chia tại nghiệm đổi dấu.
+> **TÍNH CHẤT — Đảo cận và ghép cận.** Với \(f\) liên tục trên đoạn chứa các cận, từ hiệu \(F(b)-F(a)\) của một nguyên hàm \(F\), suy ra \(\int_b^a f(x)\,\mathrm dx=-\int_a^b f(x)\,\mathrm dx\) và \(\int_a^a f(x)\,\mathrm dx=0\). Nếu \(a\le c\le b\), thì \(\int_a^b f(x)\,\mathrm dx=\int_a^c f(x)\,\mathrm dx+\int_c^b f(x)\,\mathrm dx\), vì giá trị \(F(c)\) được cộng rồi trừ đi. Tích phân có hướng, không đồng nhất với diện tích hình học. Quy tắc ghép cận giúp ta chia khoảng tại điểm hàm đổi dấu.
 
-Chẳng hạn, \(\int_{2}^{0} (3x^{2}+1)\,\mathrm dx\)=−\(\int_{0}^{2} (3x^{2}+1)\,\mathrm dx\)=−10. Giá trị âm xuất phát đảo cận, không đại diện diện tích âm. Chọn đổi thứ tự cận trước thay số.
+Chẳng hạn, \(\int_2^0(3x^2+1)\,\mathrm dx=-\int_0^2(3x^2+1)\,\mathrm dx=-10\). Giá trị âm xuất phát từ việc đảo cận, không đại diện cho một diện tích âm.
 
 **Ví dụ**
 
 **Đề bài:** Tính \(\int_{4}^{1} 2x\,\mathrm dx\) và so với \(\int_{1}^{4} 2x\,\mathrm dx\).
 
-**Lời giải:** F=x². Theo chiều cận 4→1, \(\int_{4}^{1} 2x\,\mathrm dx\)=F(1)−F(4)=1−16=−15; cận đảo cho +15. Dấu âm là chiều tích lũy, không phải diện tích hình học âm.
+**Lời giải:** Chọn \(F(x)=x^2\). Theo chiều cận từ 4 đến 1, \(\int_4^1 2x\,\mathrm dx=F(1)-F(4)=1-16=-15\). Khi đảo lại hai cận, \(\int_1^4 2x\,\mathrm dx=15\). Dấu âm biểu thị hướng lấy tích phân, không phải diện tích hình học âm.
 
 **Vận dụng** Biết \(\int_1^3 f(x)\,dx=5\) và \(\int_3^5 f(x)\,dx=-2\), trong đó \(f\) liên tục trên \([1;5]\). Tính \(\int_1^5 f(x)\,dx\), \(\int_5^1 f(x)\,dx\) và \(\int_3^3 f(x)\,dx\).
 
