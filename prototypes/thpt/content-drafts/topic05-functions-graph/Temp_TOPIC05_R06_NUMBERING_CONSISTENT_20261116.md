@@ -44,7 +44,7 @@ Có. Ba đầu vào 1, 2, 3 khác nhau và mỗi đầu vào chỉ có một đ�
 
 **Kiểm lỗi**
 
-Nếu em nhầm “nhiều đầu vào có cùng một đầu ra” với “một đầu vào có nhiều đầu ra”, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** và **Bài 2** trong Luyện tập. Ở Bài 1, cặp (1,4) lặp lại nhưng vẫn là hàm; ở Bài 2, một đầu vào 0 cho hai giá trị 1 và 3 nên không là hàm.
+Nếu em nhầm “nhiều đầu vào có cùng một đầu ra” với “một đầu vào có nhiều đầu ra”, đọc lại **Kiến thức 1.1** rồi làm **Bài 1** và **Bài 2** trong Luyện tập. Ở Bài 1, cặp \((1;4)\) lặp lại nhưng vẫn là hàm; ở Bài 2, một đầu vào 0 cho hai giá trị 1 và 3 nên không là hàm.
 
 </details>
 
@@ -56,13 +56,13 @@ Tại sao căn bằng 0 được nhận, còn mẫu bằng 0 phải loại?
 
 Khi một hàm số \(y=f(x)\) được **cho bằng công thức mà không ghi tập xác định**, ta quy ước tập xác định là **tất cả số thực \(x\) làm cho biểu thức \(f(x)\) có nghĩa**. Ví dụ, \(f(x)=\sqrt{x-2}\) có miền \([2,+\infty)\), còn \(g(x)=1/(x-2)\) có miền \(\mathbb R\setminus\{2\}\). Nếu bài toán **đã chỉ định miền**, chẳng hạn \(x\) là số sản phẩm nguyên không âm từ \(0\) đến \(10\), phải dùng miền chỉ định ấy sau khi kiểm biểu thức có nghĩa, không tự nới thành cả \(\mathbb R\).
 
-Để có một hàm số, trước hết cần biết những đầu vào nào biểu thức cho phép. Căn số học và mẫu số tạo ra điểm bị loại; dấu ≥ của căn không được biến thành >. Ta đã biết căn √u đòi u≥0, mẫu v≠0. 
+Để có một hàm số, trước hết cần biết những đầu vào nào biểu thức cho phép. Căn số học và mẫu số tạo ra điểm bị loại; căn \(\sqrt u\) đòi \(u\ge0\), mẫu v đòi \(v\ne0\). Không loại nhầm giá trị làm căn bằng 0.
 
 > **KIẾN THỨC CẦN GHI NHỚ — Miền xác định của phân thức có căn.** Với \(f(x)=\dfrac{\sqrt{A(x)}}{B(x)}\), điều kiện xác định trên số thực là \(A(x)\ge0\) **và** \(B(x)\ne0\). Miền xác định là giao của hai điều kiện, phải xét trên biểu thức gốc trước khi rút gọn.
 
  Ở đầu mút căn bằng0 là hợp lệ nếu mẫu khác0.
 
-Chẳng hạn, √(x+1)/(x−2): cần x≥−1, x≠2 ⇒ D=[−1,2)∪(2,+∞). Nhận x=−1 vì căn bằng0, mẫu−3.
+Chẳng hạn, với \(\frac{\sqrt{x+1}}{x-2}\), cần \(x\ge-1\), \(x\ne2\), nên \(D=[-1;2)\cup(2;+\infty)\). Nhận \(x=-1\) vì căn bằng 0, mẫu bằng −3.
 
 **Ví dụ**
 
@@ -72,13 +72,13 @@ Chẳng hạn, √(x+1)/(x−2): cần x≥−1, x≠2 ⇒ D=[−1,2)∪(2,+∞)
 
 **Vận dụng**
 
-Tìm D của √(9−x²)/(x−1).
+Tìm D của \(\frac{\sqrt{9-x^2}}{x-1}\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-D=[−3,1)∪(1,3], vì −3≤x≤3 và x≠1.
+\(D=[-3;1)\cup(1;3]\), vì \(-3\le x\le3\) và \(x\ne1\).
 
-Nếu bỏ điều kiện mẫu, thử x=1; nếu loại căn bằng0, thử x=±3; làm lại Bài 3 và Bài 4 trong phần Luyện tập.
+Nếu bỏ điều kiện mẫu, thử \(x=1\); nếu loại căn bằng 0, thử \(x=\pm3\); làm lại Bài 3 và Bài 4 trong phần Luyện tập.
 
 </details>
 
@@ -88,9 +88,9 @@ Nếu bỏ điều kiện mẫu, thử x=1; nếu loại căn bằng0, thử x=�
 
 Đổi tập đầu vào từ rời rạc sang đoạn ảnh hưởng tập giá trị ra sao?
 
-> **ĐỊNH NGHĨA — Tập giá trị phụ thuộc miền.** Miền đầu vào chưa nói hết các giá trị đầu ra mà hàm có thể nhận. Một biểu thức có thể cho rất nhiều giá trị trên ℝ, nhưng trên số sản phẩm nguyên chỉ có ít đầu ra. Ta sử dụng phép thế số và tập số nguyên/đoạn. T={f(x):x∈D} là tập **các y thật nhận được**, khác tập xác định D và tập đích ℝ. Miền rời rạc dẫn tới tập giá trị rời rạc, không tự nối thành khoảng.
+> **ĐỊNH NGHĨA — Tập giá trị phụ thuộc miền.** Miền đầu vào chưa nói hết các giá trị đầu ra mà hàm có thể nhận. Một biểu thức có thể cho rất nhiều giá trị trên \(\mathbb R\), nhưng trên số sản phẩm nguyên chỉ có ít đầu ra. \(T=\{f(x):x\in D\}\) là tập **các giá trị y thật nhận được**, khác tập xác định D và tập đích \(\mathbb R\). Miền rời rạc dẫn tới tập giá trị rời rạc, không tự nối thành khoảng.
 
-Xét ví dụ: f(x)=x² trên D={−2,0,1} cho T={0,1,4}. Với D=[−2,1] thì T=[0,4]. Cùng công thức nhưng miền khác nhau làm tập giá trị khác.
+Xét ví dụ: \(f(x)=x^2\) trên \(D=\{-2;0;1\}\) cho \(T=\{0;1;4\}\). Với \(D=[-2;1]\) thì \(T=[0;4]\). Cùng công thức nhưng miền khác nhau làm tập giá trị khác.
 
 **Ví dụ**
 
@@ -100,7 +100,7 @@ Xét ví dụ: f(x)=x² trên D={−2,0,1} cho T={0,1,4}. Với D=[−2,1] thì 
 
 **Vận dụng**
 
-f(q)=3q−1 với q∈{0,1,2} có T nào?
+\(f(q)=3q-1\) với \(q\in\{0;1;2\}\) có tập giá trị T nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -116,9 +116,9 @@ Nếu lầm T với [min,max], liệt kê đầu vào thực sự cho phép; là
 
 Muốn kiểm một điểm có thuộc đồ thị, phải làm phép tính nào?
 
-> **TÍNH CHẤT — Đọc một điểm thuộc đồ thị.** Khi đã biết miền và tập giá trị, đồ thị cho phép quan sát quy luật. Nối một vài điểm đo thành đường cong có thể là giả định, không phải dữ kiện chắc chắn. Ta bắt đầu từ hệ trục Oxy; điểm A(a,b). Γ={(x,f(x)):x∈D}. A(a,b) thuộc đồ thị khi a∈D và b=f(a). Chấm đặc biểu thị điểm thuộc, chấm rỗng không thuộc; đường thẳng đứng x=c gặp hai y thì quan hệ không là đồ thị y=f(x).
+> **TÍNH CHẤT — Đọc một điểm thuộc đồ thị.** Khi đã biết miền và tập giá trị, đồ thị cho phép quan sát quy luật. Nối một vài điểm đo thành đường cong có thể là giả định, không phải dữ kiện chắc chắn. Ta bắt đầu từ hệ trục Oxy; điểm \(A(a;b)\). Đồ thị \(\Gamma=\{(x;f(x)):x\in D\}\). Điểm \(A(a;b)\) thuộc đồ thị khi \(a\in D\) và \(b=f(a)\). Chấm đặc biểu thị điểm thuộc, chấm rỗng không thuộc; nếu đường thẳng đứng \(x=c\) gặp hai điểm có tung độ khác nhau thì quan hệ không là đồ thị \(y=f(x)\).
 
-Chẳng hạn, f(x)=|x−2|+1: A(1,2) thuộc vì f(1)=2, B(3,3) không thuộc vì f(3)=2. Thay vào công thức là lý do kiểm nhanh chính xác.
+Chẳng hạn, \(f(x)=\lvert x-2\rvert+1\): \(A(1;2)\) thuộc vì \(f(1)=2\), \(B(3;3)\) không thuộc vì \(f(3)=2\). Thay vào công thức là lý do kiểm nhanh chính xác.
 
 **Ví dụ**
 
@@ -128,13 +128,13 @@ Chẳng hạn, f(x)=|x−2|+1: A(1,2) thuộc vì f(1)=2, B(3,3) không thuộc 
 
 **Vận dụng**
 
-Vì sao đường tròn x²+y²=9 không biểu diễn hàm y=f(x) trên [−3,3]?
+Vì sao đường tròn \(x^2+y^2=9\) không biểu diễn hàm \(y=f(x)\) trên \([-3;3]\)?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-x=0 cho hai y=3 và −3, vi phạm một đầu vào một đầu ra.
+\(x=0\) cho hai giá trị \(y=3\) và \(y=-3\), vi phạm một đầu vào một đầu ra.
 
-Nếu chỉ nhìn đường cong mượt và gọi hàm, kẻ đường thẳng đứng qua x=0; làm lại Bài 8 và Bài 9 trong phần Luyện tập.
+Nếu chỉ nhìn đường cong mượt và gọi hàm, kẻ đường thẳng đứng qua \(x=0\); làm lại Bài 8 và Bài 9 trong phần Luyện tập.
 
 </details>
 
@@ -148,9 +148,9 @@ Khi đã biết một điểm \((a,f(a))\) có thuộc đồ thị hay không, c
 
 Nhìn vài điểm tăng đã chứng minh hàm đồng biến chưa?
 
-> **ĐỊNH NGHĨA — Đồng biến và nghịch biến.** Một vài điểm tăng không chứng minh cả đồ thị tăng; cần xét mọi cặp trong khoảng. Cần nhớ thứ tự x₁<x₂ và dấu của hiệu f(x₂)−f(x₁). Hàm đồng biến nghiêm ngặt trên khoảng K khi với mọi x₁<x₂ trong K, f(x₁)<f(x₂); nghịch biến nếu f(x₁)>f(x₂). Với x²: trên x<0 hàm giảm, trên x>0 hàm tăng. Không kết luận trên cả ℝ chỉ vì một nhánh đi lên.
+> **ĐỊNH NGHĨA — Đồng biến và nghịch biến.** Một vài điểm tăng không chứng minh cả đồ thị tăng; cần xét mọi cặp trong khoảng. Cần nhớ thứ tự \(x_1<x_2\) và dấu của hiệu \(f(x_2)-f(x_1)\). Hàm đồng biến nghiêm ngặt trên khoảng K khi với mọi \(x_1<x_2\) trong K, \(f(x_1)<f(x_2)\); nghịch biến nếu \(f(x_1)>f(x_2)\). Với \(f(x)=x^2\), hàm giảm trên khoảng \(x<0\), tăng trên khoảng \(x>0\). Không kết luận trên cả \(\mathbb R\) chỉ vì một nhánh đi lên.
 
-Chẳng hạn, f(x)=−3x+2: f(x₂)−f(x₁)=−3(x₂−x₁)<0 khi x₁<x₂, nên nghịch biến trên ℝ. Chọn cách so hiệu vì không cần đạo hàm.
+Chẳng hạn, \(f(x)=-3x+2\): \(f(x_2)-f(x_1)=-3(x_2-x_1)<0\) khi \(x_1<x_2\), nên nghịch biến trên \(\mathbb R\). Chọn cách so hiệu vì không cần đạo hàm.
 
 **Ví dụ**
 
@@ -194,9 +194,9 @@ Ngay ở bảng trên, \(f(x)=x^2-2x=x(x-2)\) cho \(c=0\), nên đồ thị đi 
 
 > **TÍNH CHẤT — Chiều mở và biến thiên của parabol.** Với \(f(x)=a(x-h)^2+k\), \(a\ne0\): nếu \(a>0\), parabol mở lên, hàm **nghịch biến** trên \((-\infty,h)\), **đồng biến** trên \((h,+\infty)\) và đạt giá trị nhỏ nhất \(k\) tại \(x=h\). Nếu \(a<0\), parabol mở xuống, hàm **đồng biến** trên \((-\infty,h)\), **nghịch biến** trên \((h,+\infty)\) và đạt giá trị lớn nhất \(k\) tại \(x=h\). Các kết luận cực trị toàn miền này chỉ áp dụng ngay khi đang xét toàn \(\mathbb R\); trên một miền ràng buộc phải kiểm đỉnh có được phép và so sánh biên.
 
-> **TÍNH CHẤT — Đỉnh parabol trên miền cho phép.** Với parabol, vị trí đỉnh cho biết cực trị trong miền được phép. Đỉnh của parabol có thể nằm ngoài miền khả thi nên không phải đáp án cực trị. Để xác định điều đó, cần xét bình phương không âm, khoảng/đoạn đóng và số nguyên. Hoàn phương ax²+bx+c=a(x−h)²+k (a≠0), h=−b/(2a), k=f(h). Đỉnh(h,k), trục đối xứng x=h. Khi tìm GTLN/GTNN trên D, luôn kiểm h có ở D không, so biên và các giá trị nguyên khả thi; không cần vội dùng đạo hàm.
+> **TÍNH CHẤT — Đỉnh parabol trên miền cho phép.** Với parabol, vị trí đỉnh cho biết giá trị lớn nhất hoặc nhỏ nhất nếu đỉnh thuộc miền được phép. Hoàn thành bình phương: \(ax^2+bx+c=a(x-h)^2+k\) (\(a\ne0\)), với \(h=-\frac{b}{2a}\), \(k=f(h)\). Đỉnh là \((h;k)\), trục đối xứng \(x=h\). Khi tìm giá trị lớn nhất hoặc nhỏ nhất trên D, luôn kiểm h có ở D không, so biên và các giá trị nguyên khả thi; không cần vội dùng đạo hàm.
 
-Chẳng hạn, f(x)=−(x−1)²+8 trên [2,5]: đỉnh ở1 bị loại. Hàm giảm trên miền, max f(2)=7, min f(5)=−8. Chọn kiểm miền trước công thức cực trị.
+Chẳng hạn, \(f(x)=-(x-1)^2+8\) trên \([2;5]\): hoành độ đỉnh 1 nằm ngoài miền. Hàm giảm trên miền, giá trị lớn nhất \(f(2)=7\), nhỏ nhất \(f(5)=-8\). Chọn kiểm miền trước khi dùng công thức cực trị.
 
 **Ví dụ**
 
@@ -206,11 +206,11 @@ Chẳng hạn, f(x)=−(x−1)²+8 trên [2,5]: đỉnh ở1 bị loại. Hàm g
 
 **Vận dụng**
 
-f(x)=(x+2)²−1 trên [−1,3] có min/max?
+\(f(x)=(x+2)^2-1\) trên \([-1;3]\) có giá trị nhỏ nhất và lớn nhất là bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Đỉnh−2 ngoài miền; min f(−1)=0, max f(3)=24.
+Hoành độ đỉnh −2 nằm ngoài miền; giá trị nhỏ nhất \(f(-1)=0\), giá trị lớn nhất \(f(3)=24\).
 
 Nếu lấy đỉnh vô điều kiện, khoanh D trước khi chọn; làm lại Bài 12 và Bài 13 trong phần Luyện tập.
 
@@ -228,7 +228,7 @@ Tại sao cần miền đối xứng để kết luận hàm chẵn hoặc lẻ?
 
  Miền không đối xứng thì không suy chẵn/lẻ chỉ từ công thức.
 
-Chẳng hạn, f(x)=x⁴−2x² chẵn do f(−x)=f(x); x³ lẻ do f(−x)=−f(x). Tính trực tiếp đáng tin hơn nhìn sơ đồ phác.
+Chẳng hạn, \(f(x)=x^4-2x^2\) chẵn do \(f(-x)=f(x)\); hàm \(f(x)=x^3\) lẻ do \(f(-x)=-f(x)\). Tính trực tiếp đáng tin hơn nhìn sơ đồ phác.
 
 **Ví dụ**
 
@@ -238,11 +238,11 @@ Chẳng hạn, f(x)=x⁴−2x² chẵn do f(−x)=f(x); x³ lẻ do f(−x)=−f
 
 **Vận dụng**
 
-g(x)=x²+x trên ℝ thuộc loại nào?
+Hàm \(g(x)=x^2+x\) trên \(\mathbb R\) thuộc loại nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-g(−x)=x²−x khác g(x) và −g(x), nên không chẵn/lẻ.
+\(g(-x)=x^2-x\) khác \(g(x)\) và \(-g(x)\) như các hàm số, nên không chẵn, không lẻ.
 
 Nếu chỉ nhìn số mũ cao nhất, thay −x vào **toàn bộ** biểu thức; làm lại Bài 14 và Bài 15 trong phần Luyện tập.
 
@@ -254,9 +254,9 @@ Nếu chỉ nhìn số mũ cao nhất, thay −x vào **toàn bộ** biểu th�
 
 Lặp ở vài điểm có đủ để kết luận tuần hoàn không?
 
-> **ĐỊNH NGHĨA — Chu kỳ hàm số.** Một loại đối xứng khác xuất hiện khi giá trị lặp lại theo chu kỳ. Quan sát số liệu lặp chưa đủ chứng minh hàm tuần hoàn trên mọi đầu vào. Ta sử dụng t>0, phép dịch đầu vào x↦x+T. T là chu kỳ khi f(x+T)=f(x) với mọi x trong miền mà các điểm dịch hợp lệ và miền bảo toàn qua phép dịch. Chu kỳ cơ bản là chu kỳ dương nhỏ nhất nếu tồn tại. Không lẫn chu kỳ trên Ox với độ cao/biên độ trên Oy. Công thức chi tiết lượng giác thuộc CĐ06.
+> **ĐỊNH NGHĨA — Chu kỳ hàm số.** Một loại đối xứng khác xuất hiện khi giá trị lặp lại theo chu kỳ. Quan sát số liệu lặp chưa đủ chứng minh hàm tuần hoàn trên mọi đầu vào. Số \(T>0\) là chu kỳ khi miền xác định bảo toàn qua phép dịch \(x\mapsto x+T\) và \(f(x+T)=f(x)\) với mọi x trong miền. Chu kỳ cơ bản là chu kỳ dương nhỏ nhất nếu tồn tại. Không lẫn chu kỳ trên Ox với độ cao/biên độ trên Oy. Công thức chi tiết lượng giác thuộc CĐ06.
 
-Xét ví dụ: Nếu f(x+5)=f(x) và f(2)=−1, thì f(12)=f(2+2·5)=−1. Chọn dùng định nghĩa, không cần biết hàm là sin hay cos.
+Xét ví dụ: Nếu \(f(x+5)=f(x)\) và \(f(2)=-1\), thì \(f(12)=f(2+2\cdot5)=-1\). Chọn dùng định nghĩa, không cần biết hàm là sin hay cos.
 
 **Ví dụ**
 
@@ -266,11 +266,11 @@ Xét ví dụ: Nếu f(x+5)=f(x) và f(2)=−1, thì f(12)=f(2+2·5)=−1. Chọ
 
 **Vận dụng**
 
-f(x+3)=f(x), f(1)=4; f(10) là?
+\(f(x+3)=f(x)\), \(f(1)=4\); tính \(f(10)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-4, vì 10=1+3·3; chưa thể kết luận 3 là chu kỳ **cơ bản**.
+4, vì \(10=1+3\cdot3\); chưa thể kết luận 3 là chu kỳ **cơ bản**.
 
 Nếu từ bốn điểm suy toàn miền tuần hoàn, hãy tách quan sát và định nghĩa; làm lại Bài 16 và Bài 17 trong phần Luyện tập.
 
@@ -286,9 +286,9 @@ Thay vì nhớ dấu cộng hay dấu trừ một cách máy móc, hãy đánh d
 
 Cộng một hằng số ngoài hàm làm điểm đồ thị dịch theo phương nào?
 
-> **PHƯƠNG PHÁP — Dịch đồ thị theo phương đứng.** Một mức phí cố định cộng vào mọi hóa đơn, không đổi lượng đầu vào. Ta bắt đầu từ điểm (x,f(x)) và phép cộng số k. g(x)=f(x)+k có D_g=D_f, mọi điểm (x,y)→(x,y+k). k>0 dịch lên, k<0 dịch xuống. Số cộng nằm **ngoài** f làm đổi tung độ, không đổi hoành độ.
+> **PHƯƠNG PHÁP — Dịch đồ thị theo phương đứng.** Một mức phí cố định cộng vào mọi hóa đơn, không đổi lượng đầu vào. Ta bắt đầu từ điểm \((x;f(x))\) và phép cộng số k. Hàm \(g(x)=f(x)+k\) có \(D_g=D_f\), mọi điểm \((x;y)\mapsto(x;y+k)\). Nếu \(k>0\) thì dịch lên, nếu \(k<0\) thì dịch xuống. Số cộng nằm **ngoài** f làm đổi tung độ, không đổi hoành độ.
 
-Chẳng hạn, f(x)=|x−1|, g(x)=f(x)+4 có đỉnh(1,4), g(0)=5. Chọn xem điểm đỉnh và một điểm kiểm.
+Chẳng hạn, \(f(x)=\lvert x-1\rvert\), \(g(x)=f(x)+4\) có đỉnh \((1;4)\), \(g(0)=5\). Chọn xem điểm đỉnh và một điểm kiểm.
 
 **Ví dụ**
 
@@ -298,11 +298,11 @@ Chẳng hạn, f(x)=|x−1|, g(x)=f(x)+4 có đỉnh(1,4), g(0)=5. Chọn xem đ
 
 **Vận dụng**
 
-Từ f=x², g=f−2 có đỉnh đâu?
+Từ \(f(x)=x^2\), cho \(g(x)=f(x)-2\). Đỉnh g ở đâu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(0,−2), và điểm (1,1) thành (1,−1).
+\((0;-2)\), và điểm \((1;1)\) thành \((1;-1)\).
 
 Nếu nói dịch ngang, hãy xem x có bị thay trong f không; làm lại Bài 18 và Bài 19 trong phần Luyện tập.
 
@@ -312,9 +312,9 @@ Nếu nói dịch ngang, hãy xem x có bị thay trong f không; làm lại Bà
 
 ### 3.2. Dịch đồ thị theo phương ngang
 
-Vì sao biểu thức f(x−3) lại dịch phải ba đơn vị?
+Vì sao biểu thức \(f(x-3)\) lại dịch phải ba đơn vị?
 
-> **PHƯƠNG PHÁP — Dịch đồ thị theo phương ngang.** Khi dịch theo phương ngang, dấu bên trong đối số dễ gây nhầm. Dời thời điểm bắt đầu của hiện tượng có thể dời cả miền hợp lệ. Cần nhớ đặt u=x−h; miền gốc D_f. g(x)=f(x−h) xác định khi x−h∈D_f, nên D_g=D_f+h; điểm (u,f(u)) thành(u+h,f(u)). h>0 là dịch **phải** h; f(x+h) dịch trái h. Không đoán chiều dịch chỉ theo dấu trừ cộng nếu chưa xét tọa độ.
+> **PHƯƠNG PHÁP — Dịch đồ thị theo phương ngang.** Khi dịch theo phương ngang, dấu bên trong đối số dễ gây nhầm. Dời thời điểm bắt đầu của hiện tượng có thể dời cả miền hợp lệ. Cần nhớ đặt \(u=x-h\); miền gốc \(D_f\). Hàm \(g(x)=f(x-h)\) xác định khi \(x-h\in D_f\), nên \(D_g=D_f+h\); điểm \((u;f(u))\) thành \((u+h;f(u))\). Nếu \(h>0\) thì dịch **phải** h; \(f(x+h)\) dịch trái h. Không đoán chiều dịch chỉ theo dấu trừ cộng nếu chưa xét tọa độ.
 
 Chẳng hạn, từ parabol \(f(x)=x^2\) có đỉnh \((0,0)\), hàm \(g(x)=f(x-2)+1=(x-2)^2+1\) có đỉnh \((2,1)\): dịch phải 2 và lên 1, đúng như hai đường trong hình. Với một hàm có miền giới hạn như \(f(x)=\sqrt x\), phép \(f(x-3)\) còn làm điểm bắt đầu dịch từ \((0,0)\) sang \((3,0)\); miền mới là \([3,+\infty)\). Cả hai minh họa cùng quy luật hoành độ cộng 2 hay 3 theo lượng dịch.
 
@@ -330,11 +330,11 @@ Chẳng hạn, từ parabol \(f(x)=x^2\) có đỉnh \((0,0)\), hàm \(g(x)=f(x-
 
 **Vận dụng**
 
-g(x)=(x+2)² dịch parabol x² thế nào?
+\(g(x)=(x+2)^2\) dịch parabol \(y=x^2\) thế nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Trái2, đỉnh(−2,0), vì x+2=0 tại−2.
+Dịch trái 2, đỉnh \((-2;0)\), vì \(x+2=0\) tại \(x=-2\).
 
 Nếu dịch phải vì dấu+, tìm x để đối số bằng0; làm lại Bài 20 và Bài 21 trong phần Luyện tập.
 
@@ -346,9 +346,9 @@ Nếu dịch phải vì dấu+, tìm x để đối số bằng0; làm lại Bà
 
 Phản xạ đầu vào và phản xạ đầu ra khác nhau thế nào?
 
-> **PHƯƠNG PHÁP — Phản xạ qua hai trục.** Sau phép dịch, phép phản xạ tạo đồ thị mới mà không cần vẽ lại. Đổi dấu đầu ra khác hoàn toàn việc đổi hướng đầu vào. Để xác định điều đó, cần xét điểm (x,y), đổi dấu x hoặc y. −f(x) phản xạ Ox: (x,y)→(x,−y), miền giữ. f(−x) phản xạ Oy: (x,y)→(−x,y), miền thành −D_f. Với f chẵn, phản xạ Oy không làm đổi hình; với f lẻ cả hai cho cùng biểu thức.
+> **PHƯƠNG PHÁP — Phản xạ qua hai trục.** Sau phép dịch, phép phản xạ tạo đồ thị mới mà không cần vẽ lại. Đổi dấu đầu ra khác hoàn toàn việc đổi hướng đầu vào. Với \(-f(x)\), phản xạ qua Ox: \((x;y)\mapsto(x;-y)\), miền giữ nguyên. Với \(f(-x)\), phản xạ qua Oy: \((x;y)\mapsto(-x;y)\), miền thành \(-D_f\). Với f chẵn, phản xạ qua Oy không làm đổi hình; với f lẻ, cả hai cho cùng biểu thức.
 
-Chẳng hạn, f=x²+x: −f=−x²−x trong khi f(−x)=x²−x. Tại x=1 được −2 và0, chứng minh hai phép khác nhau.
+Chẳng hạn, \(f(x)=x^2+x\): \(-f(x)=-x^2-x\) trong khi \(f(-x)=x^2-x\). Tại \(x=1\) được −2 và 0, chứng minh hai phép khác nhau.
 
 **Ví dụ**
 
@@ -358,11 +358,11 @@ Chẳng hạn, f=x²+x: −f=−x²−x trong khi f(−x)=x²−x. Tại x=1 đ�
 
 **Vận dụng**
 
-Với f=x²−2x, f(−x) là gì?
+Với \(f(x)=x^2-2x\), tính \(f(-x)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-x²+2x, là ảnh qua trục Oy.
+\(x^2+2x\), là ảnh qua trục Oy.
 
 Nếu đổi dấu toàn biểu thức, đó là phản xạ Ox; làm lại Bài 22 và Bài 23 trong phần Luyện tập.
 
@@ -374,7 +374,7 @@ Nếu đổi dấu toàn biểu thức, đó là phản xạ Ox; làm lại Bài
 
 Nhân tung độ với hệ số âm tác động lên chiều và độ lớn ra sao?
 
-> **PHƯƠNG PHÁP — Đổi độ cao và phản xạ đứng.** Nhân toàn bộ giá trị hàm làm độ cao thay đổi, khác tác động lên đối số. Phóng to đơn vị tung độ làm đường cong cao hơn nhưng giữ vị trí đầu vào. Ta đã biết nhân một tung độ y với hệ số c. g(x)=c f(x): (x,y)→(x,cy). |c|>1 dãn đứng, 0<|c|<1 co đứng, c<0 còn phản xạ Ox. c=0 đưa hình về Ox nhưng không là phép giãn khả nghịch. Nếu c≠0 thì tập nghiệm f(x)=0 giữ nguyên.
+> **PHƯƠNG PHÁP — Đổi độ cao và phản xạ đứng.** Nhân toàn bộ giá trị hàm làm độ cao thay đổi, khác tác động lên đối số. Ta nhân tung độ y với hệ số c. Hàm \(g(x)=cf(x)\) biến \((x;y)\mapsto(x;cy)\). Nếu \(\lvert c\rvert>1\) thì dãn đứng, nếu \(0<\lvert c\rvert<1\) thì co đứng, nếu \(c<0\) thì còn phản xạ qua Ox. Với \(c=0\), hình về Ox nhưng không là phép giãn khả nghịch. Nếu \(c\ne0\) thì tập nghiệm \(f(x)=0\) giữ nguyên.
 
 Chẳng hạn, đặt \(f(x)=|x|\) và \(h(x)=-2|x|+3\). Với \(x=2\), điểm \((2,2)\) trên đồ thị \(f\) thành \((2,-1)\) trên \(h\): trước tiên nhân tung độ với \(-2\) (lật qua trục \(Ox\), dãn đứng hai lần), rồi cộng 3 (dịch lên). Đỉnh chuyển từ \((0,0)\) lên \((0,3)\), đúng như hình. Muốn đổi chỉ riêng tung độ mà không dịch, ta bỏ số \(+3\) ở ngoài.
 
@@ -390,13 +390,13 @@ Chẳng hạn, đặt \(f(x)=|x|\) và \(h(x)=-2|x|+3\). Với \(x=2\), điểm 
 
 **Vận dụng**
 
-g=(1/2)|x| tại x=4 so với f=|x|?
+So sánh \(g(x)=\frac12\lvert x\rvert\) với \(f(x)=\lvert x\rvert\) tại \(x=4\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-g(4)=2, f(4)=4, co đứng một nửa.
+\(g(4)=2\), \(f(4)=4\), co đứng một nửa.
 
-Nếu kết luận co ngang, giữ x=4 và so hai tung độ; làm lại Bài 24 và Bài 25 trong phần Luyện tập.
+Nếu kết luận co ngang, giữ \(x=4\) và so hai tung độ; làm lại Bài 24 và Bài 25 trong phần Luyện tập.
 
 </details>
 
@@ -406,9 +406,9 @@ Nếu kết luận co ngang, giữ x=4 và so hai tung độ; làm lại Bài 24
 
 Vì sao f(3x) có thể hẹp hơn đồ thị f(x)?
 
-> **PHƯƠNG PHÁP — Co giãn ngang theo đối số.** Nếu nhân biến bên trong đối số, khoảng cách theo trục hoành biến đổi. Khi đầu vào chạy nhanh gấp đôi, cùng một tung độ xuất hiện sớm hơn. Ta sử dụng đặt u=kx (k khác0), điểm gốc(u,f(u)). g(x)=f(kx) biến (u,f(u)) thành(u/k,f(u)); độ rộng ngang nhân1/|k|. |k|>1 là co ngang, 0<|k|<1 là dãn ngang; k<0 còn phản xạ Oy. Miền D_g={x:kx∈D_f}, khác phép g=kf(x).
+> **PHƯƠNG PHÁP — Co giãn ngang theo đối số.** Nếu nhân biến bên trong đối số, khoảng cách theo trục hoành biến đổi. Khi đầu vào chạy nhanh gấp đôi, cùng một tung độ xuất hiện sớm hơn. Đặt \(u=kx\) (\(k\ne0\)), điểm gốc \((u;f(u))\). Hàm \(g(x)=f(kx)\) biến điểm đó thành \((\frac uk;f(u))\); độ rộng ngang nhân với \(\frac1{\lvert k\rvert}\). Nếu \(\lvert k\rvert>1\) thì co ngang, nếu \(0<\lvert k\rvert<1\) thì dãn ngang; nếu \(k<0\) thì còn phản xạ qua Oy. Miền \(D_g=\{x:kx\in D_f\}\), khác phép \(g(x)=kf(x)\).
 
-Xét ví dụ: f=|x|, g=f(2x)=2|x|: cùng y=4, f đạt x=±4 còn g đạt x=±2. Vẻ dốc hơn là kết quả co ngang theo đối số.
+Xét ví dụ: \(f(x)=\lvert x\rvert\), \(g(x)=f(2x)=2\lvert x\rvert\). Cùng mức \(y=4\), f đạt \(x=\pm4\) còn g đạt \(x=\pm2\). Vẻ dốc hơn là kết quả co ngang theo đối số.
 
 **Ví dụ**
 
@@ -418,25 +418,25 @@ Xét ví dụ: f=|x|, g=f(2x)=2|x|: cùng y=4, f đạt x=±4 còn g đạt x=±
 
 **Vận dụng**
 
-f=√x, g=f(3x): D và x khi g(x)=2?
+Cho \(f(x)=\sqrt x\), \(g(x)=f(3x)\). Tìm miền D của g và x khi \(g(x)=2\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-D=[0,+∞), 3x=4 ⇒ x=4/3, so f đạt y=2 ở x=4.
+\(D=[0;+\infty)\), \(3x=4\Rightarrow x=\frac43\); so với f đạt \(y=2\) ở \(x=4\).
 
-Nếu nhận giãn ngang3, dùng u=3x ⇒ x=u/3; làm lại Bài 26 và Bài 27 trong phần Luyện tập.
+Nếu nhận giãn ngang 3, dùng \(u=3x\Rightarrow x=\frac u3\); làm lại Bài 26 và Bài 27 trong phần Luyện tập.
 
 </details>
 
 <!-- LESSON_ID: TOP05-M14; OUTCOME_ID: TOP05-O14; R04_BLOB: 04f532661d014ee011e5d2f61a3dca9578a101d4 -->
 
-### 3.6. Phân biệt |f(x)| và f(|x|)
+### 3.6. Giá trị tuyệt đối ngoài và trong hàm
 
 Trị tuyệt đối đặt ngoài hàm và trong đối số tác động lên thành phần nào?
 
-> **TÍNH CHẤT — Phân biệt |f(x)| và f(|x|).** Giá trị tuyệt đối có hai hiệu ứng khác nhau khi đặt ngoài hay trong hàm. Dấu |.| bên ngoài f và bên trong đối số thay hai nửa đồ thị khác nhau. Ta bắt đầu từ |t|≥0, |t|=t khi t≥0, =−t nếu t<0. |f(x)| giữ phần y≥0, phản xạ phần y<0 lên Ox; miền không đổi. f(|x|) lấy nửa đồ thị f trên x≥0 rồi phản xạ sang x≤0; miền mới {x:|x|∈D_f}. Không thể coi chúng giống nhau.
+> **TÍNH CHẤT — Giá trị tuyệt đối ngoài và trong hàm.** Giá trị tuyệt đối có hai hiệu ứng khác nhau khi đặt ngoài hay trong hàm. Ta bắt đầu từ \(\lvert t\rvert\ge0\), \(\lvert t\rvert=t\) khi \(t\ge0\), \(\lvert t\rvert=-t\) nếu \(t<0\). Với \(\lvert f(x)\rvert\), giữ phần \(y\ge0\), phản xạ phần \(y<0\) qua Ox lên trên; miền không đổi. Với \(f(\lvert x\rvert)\), lấy nửa đồ thị f trên \(x\ge0\) rồi phản xạ sang \(x\le0\); miền mới \(\{x:\lvert x\rvert\in D_f\}\). Không thể coi chúng giống nhau.
 
-Chẳng hạn, f=x−1: |f(x)|=|x−1| có đỉnh(1,0), còn f(|x|)=|x|−1 có đỉnh(0,−1). Điểm x=0 cho hai giá trị khác.
+Chẳng hạn, \(f(x)=x-1\): \(\lvert f(x)\rvert=\lvert x-1\rvert\) có đỉnh \((1;0)\), còn \(f(\lvert x\rvert)=\lvert x\rvert-1\) có đỉnh \((0;-1)\). Điểm \(x=0\) cho hai giá trị khác.
 
 **Ví dụ**
 
@@ -446,13 +446,13 @@ Chẳng hạn, f=x−1: |f(x)|=|x−1| có đỉnh(1,0), còn f(|x|)=|x|−1 có
 
 **Vận dụng**
 
-f=x²−1, tính |f(0)| và f(|0|).
+Cho \(f(x)=x^2-1\), tính \(\lvert f(0)\rvert\) và \(f(\lvert0\rvert)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-|−1|=1, còn f(0)=−1.
+\(\lvert-1\rvert=1\), còn \(f(0)=-1\).
 
-Nếu gán hai hàm bằng nhau mọi x, dùng x=0 làm phản ví dụ; làm lại Bài 28 và Bài 29 trong phần Luyện tập.
+Nếu gán hai hàm bằng nhau với mọi x, dùng \(x=0\) làm phản ví dụ; làm lại Bài 28 và Bài 29 trong phần Luyện tập.
 
 </details>
 
@@ -468,9 +468,9 @@ Khi nhiều phép biến đổi xảy ra liên tiếp, thứ tự thực hiện 
 
 Làm sao theo dõi đúng tọa độ điểm khi phối hợp dịch và co giãn?
 
-> **PHƯƠNG PHÁP — Phối hợp nhiều phép biến đổi.** Nhìn dấu cộng trừ mà bỏ qua thứ tự thao tác có thể sai miền và đỉnh. Cần nhớ đổi điểm(u,f(u)) theo u=k(x−h). Với g(x)=c f(k(x−h))+v, c,k≠0, điểm(u,f(u)) thành(h+u/k, c f(u)+v). Đây là phép đổi tọa độ có chứng minh, không phải 'dịch đoán'. Luôn kiểm f đã xác định ở k(x−h) trước khi tính.
+> **PHƯƠNG PHÁP — Phối hợp nhiều phép biến đổi.** Nhìn dấu cộng trừ mà bỏ qua thứ tự thao tác có thể sai miền và đỉnh. Đổi điểm \((u;f(u))\) theo \(u=k(x-h)\). Với \(g(x)=cf(k(x-h))+v\), \(c,k\ne0\), điểm \((u;f(u))\) thành \((h+\frac uk;cf(u)+v)\). Đây là phép đổi tọa độ có chứng minh, không phải dịch đoán. Luôn kiểm f đã xác định ở \(k(x-h)\) trước khi tính.
 
-Chẳng hạn, f=x², g=2f(x−1)+3 có đỉnh (1,3), g(0)=5. Viết dạng đỉnh trực tiếp cho thấy miền ℝ và cực tiểu3.
+Chẳng hạn, \(f(x)=x^2\), \(g(x)=2f(x-1)+3\) có đỉnh \((1;3)\), \(g(0)=5\). Viết dạng đỉnh trực tiếp cho thấy miền \(\mathbb R\) và giá trị nhỏ nhất 3.
 
 **Ví dụ**
 
@@ -480,13 +480,13 @@ Chẳng hạn, f=x², g=2f(x−1)+3 có đỉnh (1,3), g(0)=5. Viết dạng đ�
 
 **Vận dụng**
 
-g=−f(x+2)+1 với f=x² có đỉnh và hướng mở?
+\(g(x)=-f(x+2)+1\) với \(f(x)=x^2\) có đỉnh và hướng mở thế nào?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-g=−(x+2)²+1, đỉnh(−2,1), mở xuống.
+\(g(x)=-(x+2)^2+1\), đỉnh \((-2;1)\), mở xuống.
 
-Nếu đọc x+2 là dịch phải, tìm x làm x+2=0; làm lại Bài 30, Bài 31 và Bài 36 trong phần Luyện tập.
+Nếu đọc \(x+2\) là dịch phải, tìm x làm \(x+2=0\); làm lại Bài 30, Bài 31 và Bài 36 trong phần Luyện tập.
 
 </details>
 
@@ -532,9 +532,9 @@ Trước khi tối ưu một hàm số, ta thường phải **tự lập hàm s�
 
 Chẳng hạn, dùng 24 m dây bao quanh một mảnh vườn **hình chữ nhật đủ bốn cạnh**. Gọi \(x\) (m) là chiều rộng; từ chu vi \(2(x+y)=24\), chiều dài là \(y=12-x\) (m). Vì cả hai cạnh dương, \(0<x<12\). Diện tích là \(S(x)=x(12-x)=36-(x-6)^2\) (m²). Đây là một **hàm số của chiều rộng** trên miền \((0,12)\); vì bình phương không âm, diện tích lớn nhất \(36\) m² đạt tại \(x=6\), tức hình vuông cạnh \(6\) m. Sau khi tính xong phải thử ngược chu vi \(4\cdot6=24\) m. Trường hợp chỉ rào ba cạnh dựa vào tường sẽ là **một mô hình khác**, nên không được sao chép công thức này.
 
-> **PHƯƠNG PHÁP — Tối ưu trong miền khả thi.** Mọi phép biến đổi phải quay về miền hợp lệ của mô hình. Một đỉnh đẹp trên toàn ℝ có thể không có ý nghĩa vì sản phẩm chỉ nhận giá trị nguyên và còn ràng buộc. Ta đã biết biến q nguyên, đơn vị, miền quyết định D. Đặt biến, **đơn vị và miền khả thi trước**; từ đó tính hàm và ứng viên, kiểm ứng viên trong D. Khi ràng buộc đổi, quyết định tối ưu có thể đổi dù công thức không đổi. Với bậc hai sơ cấp dùng hoàn phương; khảo sát cực trị bằng đạo hàm thuộc CĐ10.
+> **PHƯƠNG PHÁP — Tối ưu trong miền khả thi.** Mọi phép biến đổi phải quay về miền hợp lệ của mô hình. Một đỉnh đẹp trên toàn \(\mathbb R\) có thể không có ý nghĩa vì sản phẩm chỉ nhận giá trị nguyên và còn ràng buộc. Đặt biến, **đơn vị và miền khả thi trước**; từ đó tính hàm và ứng viên, kiểm ứng viên trong D. Khi ràng buộc đổi, quyết định tối ưu có thể đổi dù công thức không đổi. Với bậc hai sơ cấp dùng hoàn phương; khảo sát cực trị bằng đạo hàm thuộc CĐ10.
 
-Chẳng hạn, P(q)=−(q−4)²+16 (triệu) với q∈{5,6}. Đỉnh q=4 không khả thi; P(5)=15, P(6)=12 ⇒ chọn q=5.
+Chẳng hạn, \(P(q)=-(q-4)^2+16\) (triệu đồng) với \(q\in\{5;6\}\). Đỉnh \(q=4\) không khả thi; \(P(5)=15\), \(P(6)=12\), nên chọn \(q=5\).
 
 **Ví dụ**
 
@@ -544,11 +544,11 @@ Chẳng hạn, P(q)=−(q−4)²+16 (triệu) với q∈{5,6}. Đỉnh q=4 khôn
 
 **Vận dụng**
 
-Q(t)=(t−3)²+2 trên t∈[5,7], giá trị min?
+\(Q(t)=(t-3)^2+2\) trên \(t\in[5;7]\); giá trị nhỏ nhất là bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-t≥5, nên min Q(5)=6; không chọn Q(3)=2 vì ngoài miền.
+\(t\ge5\), nên giá trị nhỏ nhất \(Q(5)=6\); không chọn \(Q(3)=2\) vì ngoài miền.
 
 Nếu vẫn chọn đỉnh không hợp lệ, viết lại tập khả thi và thử các biên; làm lại Bài 34, Bài 35 và Bài 38 trong phần Luyện tập.
 
