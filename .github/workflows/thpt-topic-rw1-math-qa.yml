@@ -1,0 +1,45 @@
+name: THPT Topic R-W1 Knowledge math and tab QA (no deploy)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/assets/javascripts/math-details-v1.js'
+      - 'docs/assets/javascripts/thpt-topic01-release-tabs-v1.js'
+      - 'docs/assets/javascripts/thpt-topic-w1-golden-v1.js'
+      - 'docs/assets/javascripts/thpt-topic-w2-golden-v1.js'
+      - 'scripts/test-thpt-topic-rw1-math-browser.py'
+      - 'scripts/test-thpt-release-impact.cjs'
+      - '.github/workflows/thpt-topic-rw1-math-qa.yml'
+      - '.github/workflows/deploy.yml'
+      - '.github/workflows/thpt-deploy-scope-safety-qa.yml'
+permissions:
+  contents: read
+jobs:
+  topic-rw1:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scoped QA dependencies
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Exact source and protected scope gate
+        run: |
+          node scripts/test-thpt-release-impact.cjs --self-test
+          python scripts/test-thpt-topic-rw1-math-browser.py --scope
+          node scripts/test-thpt-topic01-release-intake.cjs
+      - name: Strict build (not full-site browser audit)
+        run: |
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+      - name: All 126 Knowledge outcomes — Chromium and WebKit, 390/820/1440
+        run: python scripts/test-thpt-topic-rw1-math-browser.py

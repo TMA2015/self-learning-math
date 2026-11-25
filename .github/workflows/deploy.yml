@@ -56,7 +56,7 @@ jobs:
   deploy:
     needs: release-scope
     # The large inherited site-wide regression lane is for shared/unknown changes only.
-    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' && needs.release-scope.outputs.impact != 'SCOPED_MATH_LAB_FULLPAGE' }}
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact != 'SCOPED_LESSON' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_HOTFIX_W2_W3' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W4' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_W5_P1_HOTFIX' && needs.release-scope.outputs.impact != 'SCOPED_TOPIC_RW1' && needs.release-scope.outputs.impact != 'SCOPED_MATH_LAB_FULLPAGE' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -679,6 +679,42 @@ jobs:
           PY
       - name: Publish verified ONE combined site to existing GitHub Pages
         run: ghp-import -n -p -f site
+
+  deploy-scoped-topic-rw1:
+    name: Publish R-W1 CĐ01–08 Knowledge math/UI only
+    needs: release-scope
+    if: ${{ needs.release-scope.outputs.deploy == 'true' && needs.release-scope.outputs.impact == 'SCOPED_TOPIC_RW1' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scoped QA dependencies
+        run: |
+          python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Exact source and protected scope gate
+        run: |
+          node scripts/test-thpt-release-impact.cjs --self-test
+          python scripts/test-thpt-topic-rw1-math-browser.py --scope
+          node scripts/test-thpt-topic01-release-intake.cjs
+      - name: Strict build (not full-site browser audit)
+        run: |
+          mkdocs build --strict
+          mkdocs build -f mkdocs.thpt-preview.yml --strict
+      - name: All 126 Knowledge outcomes — Chromium and WebKit, 390/820/1440
+        run: python scripts/test-thpt-topic-rw1-math-browser.py
+      - name: Assemble verified site and publish
+        run: |
+          node scripts/assemble-thpt-site.cjs
+          ghp-import -n -p -f site
 
   deploy-scoped-math-lab-fullpage:
     name: Publish 25 unframed Math Lab documents after source and 200 browser checks

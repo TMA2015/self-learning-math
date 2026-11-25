@@ -1,0 +1,177 @@
+#!/usr/bin/env python3
+"""#1055 R-W1 Knowledge only. Existing canonical source and assessment stay locked."""
+from __future__ import annotations
+import functools
+import http.server
+import json
+import pathlib
+import re
+import subprocess
+import sys
+import threading
+from collections import Counter
+from playwright.sync_api import sync_playwright, expect
+
+ROOT=pathlib.Path(__file__).resolve().parent.parent
+BASE_SHA="bb1c4eead91282f67478dd615a41739a6091c2ff"
+FILES={
+    "docs/assets/javascripts/math-details-v1.js",
+    "docs/assets/javascripts/thpt-topic01-release-tabs-v1.js",
+    "docs/assets/javascripts/thpt-topic-w1-golden-v1.js",
+    "docs/assets/javascripts/thpt-topic-w2-golden-v1.js",
+    "scripts/test-thpt-topic-rw1-math-browser.py",
+    "scripts/test-thpt-release-impact.cjs",
+    ".github/workflows/thpt-topic-rw1-math-qa.yml",
+    ".github/workflows/deploy.yml",
+    ".github/workflows/thpt-deploy-scope-safety-qa.yml",
+}
+SIZES={"01":11,"02":16,"03":12,"04":18,"05":17,"06":16,"07":18,"08":18}
+
+def scope():
+    changed=set(subprocess.check_output(["git","diff","--no-renames","--name-only",BASE_SHA,"HEAD"],cwd=ROOT,text=True).splitlines())
+    assert changed==FILES,("RW1_SCOPE_HOLD",sorted(changed^FILES))
+    helper="docs/assets/javascripts/math-details-v1.js"
+    old=subprocess.check_output(["git","show",BASE_SHA+":"+helper],cwd=ROOT,text=True)
+    new=(ROOT/helper).read_text(encoding="utf-8")
+    prior=new.split("/* OWNER #1055 R-W1, DELTA_A_UI.",1)[0]
+    assert prior.rstrip().replace('element.dataset.topicRw1Managed === "1" || ',"")==old.rstrip(), "Unrelated shared math behavior changed"
+    assert r"/\/thpt-preview\/chuyen-de\/cd0[1-8]\/kien-thuc\/(?:index\.html)?$/" in new
+    assert 'part==="kien-thuc"&&["06","07","08"].includes(topic)' in (ROOT/"docs/assets/javascripts/thpt-topic-w2-golden-v1.js").read_text()
+    for f in FILES:
+        if f.endswith(".js"):
+            subprocess.run(["node","--check",f],cwd=ROOT,check=True)
+    print("PASS RW1 exact nine paths; all canonical content/Q18/SVG/assessment and unrelated runtime source unchanged",flush=True)
+if "--scope" in sys.argv:
+    scope()
+    sys.exit(0)
+
+BUILD=ROOT/"site-thpt-preview"
+assert BUILD.is_dir()
+server=http.server.ThreadingHTTPServer(("127.0.0.1",0),functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(BUILD)))
+threading.Thread(target=server.serve_forever,daemon=True).start()
+BASE=f"http://127.0.0.1:{server.server_address[1]}/thpt-preview/chuyen-de/"
+MODULE="[data-topic01-module-tab],[data-topic-w1-module-tab]"
+SUB="[data-topic01-subtab],[data-topic-w1-subtab]"
+PANEL=".thpt-r4-knowledge-content-panel:visible"
+# Extract the original formula inventory from the immutable built HTML, before
+# adapters or MathJax run. Recover only the exact escaped display forms.
+SOURCE=r"""async () => {
+ const doc=new DOMParser().parseFromString(await (await fetch(location.href)).text(),"text/html");
+ const article=doc.querySelector("article.md-typeset");
+ const result={};
+ const heads=[...article.querySelectorAll("h3")].filter(h=>/^\d+\.\d+\./.test(h.textContent));
+ const rx=/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\[\s*\n([\s\S]*?)\n\s*\]|\[A\\setminus B=\{x\\in A:x\\notin B\}\.\]|\[\|A\\cup B\|=\|A\|\+\|B\|-\|A\\cap B\|\.\]/g;
+ const canon=s=>s.replace(/\s+/g,"");
+ for(const h of heads){
+  const key=h.textContent.match(/^\d+\.\d+/)[0], values=[];
+  let n=h;
+  while(n){
+   const w=doc.createTreeWalker(n,NodeFilter.SHOW_TEXT);
+   while(w.nextNode()){
+    if(w.currentNode.parentElement?.closest("script,style,code,pre,svg"))continue;
+    for(const m of w.currentNode.nodeValue.matchAll(rx)){
+     if(m[3]!==undefined&&!/\\[A-Za-z]+/.test(m[3]))continue;
+     let tex=m[1]??m[2]??m[3]??m[0].slice(1,-1);
+     if(m[0].startsWith("[A\\setminus"))tex="A\\setminus B=\\{x\\in A:x\\notin B\\}.";
+     values.push(canon(tex));
+    }
+   }
+   n=n.nextElementSibling;
+   if(!n||n.matches("h2")||n.matches("h3")&&/^\d+\.\d+\./.test(n.textContent))break;
+  }
+  result[key]=values;
+ }
+ return result;
+}"""
+AUDIT=r"""panel => {
+ const issues=[], visible=el=>!el.closest("[hidden],details:not([open])")&&el.getClientRects().length;
+ const walker=document.createTreeWalker(panel,NodeFilter.SHOW_TEXT);
+ while(walker.nextNode()){
+  const t=walker.currentNode,p=t.parentElement;
+  if(!p||p.closest(".arithmatex,mjx-container,math,script,style,svg,code,pre,sup,sub")||!visible(p))continue;
+  if(/\\(?:\(|\[|\)|\]|frac\b|sqrt\b|lim\b|operatorname\b|setminus\b|cup\b|cap\b|mathbb\b|begin\b|end\b|ge\b|le\b|ne\b|cdot\b|to\b)|\*\*|[A-Za-z0-9)\]][\^_](?:\{|\(|[−-]?[A-Za-z0-9])/.test(t.nodeValue))issues.push(t.nodeValue.trim().slice(0,160));
+ }
+ const wrappers=[...panel.querySelectorAll(".arithmatex")].filter(visible);
+ const errors=[...panel.querySelectorAll("mjx-merror,mjx-container mjx-container")].filter(visible).length;
+ const missing=wrappers.filter(el=>el.querySelectorAll("mjx-container").length!==1).length;
+ const math=[...MathJax.startup.document.math].filter(item=>item.typesetRoot&&panel.contains(item.typesetRoot)).map(item=>item.math.replace(/\s+/g,""));
+ const loose=[...panel.querySelectorAll("details[data-topic-rw1-managed] > mjx-container,details[data-topic-rw1-managed] > span.arithmatex:not([data-topic-rw1-display])")].length;
+ return {issues,errors,missing,math,loose,wrappers:wrappers.length};
+}"""
+def tab_check(button,width):
+    info=button.evaluate("""e=>({short:e.textContent.trim(),full:e.title,aria:e.getAttribute('aria-label'),height:e.getBoundingClientRect().height,font:getComputedStyle(e).fontSize,scroll:e.scrollWidth,client:e.clientWidth})""")
+    assert info["full"] and info["aria"]==info["full"] and len(info["short"])<=len(info["full"]) and len(info["short"])<=32,info
+    assert abs(info["height"]-44)<=1 and info["font"]==("14px" if width<=640 else "15px"),info
+    assert info["scroll"]<=info["client"]+2,("clipped tab",info)
+
+cases=0
+formula_cases=0
+with sync_playwright() as pw:
+    for engine in ("chromium","webkit"):
+        browser=getattr(pw,engine).launch(headless=True)
+        for topic,outcomes in SIZES.items():
+            for width in (390,820,1440):
+                page=browser.new_page(viewport={"width":width,"height":850},device_scale_factor=1)
+                errors=[]
+                page.on("pageerror",lambda err:errors.append(str(err)))
+                page.on("console",lambda msg:errors.append(msg.text) if msg.type=="error" and ("TOPIC_RW1_MATH_HOLD" in msg.text or "TOPIC_W1_GOLDEN_HOLD" in msg.text) else None)
+                res=page.goto(BASE+"cd"+topic+"/kien-thuc/",wait_until="domcontentloaded")
+                assert res and res.status==200
+                expect(page.locator(".topic01-knowledge-layout")).to_be_visible(timeout=20000)
+                page.wait_for_function("()=>!!window.SLMTopicRW1Math && !!window.MathJax?.startup?.document",timeout=30000)
+                page.evaluate("()=>MathJax.startup.promise")
+                inventory=page.evaluate(SOURCE)
+                assert len(inventory)==outcomes,(topic,"source outcome inventory",len(inventory),outcomes)
+                expect(page.locator(SUB)).to_have_count(outcomes)
+                assert page.locator("[data-thpt-readiness],[data-mastery-credit]").count()==0
+                seen=set()
+                for module in page.locator(MODULE).all():
+                    module.click()
+                    tab_check(module,width)
+                    group=page.locator(".thpt-r4-knowledge-module-panel:visible")
+                    expect(group).to_have_count(1)
+                    for sub in group.locator(SUB).all():
+                        sub.click()
+                        tab_check(sub,width)
+                        panel=page.locator(PANEL)
+                        expect(panel).to_have_count(1)
+                        key=re.match(r"^\d+\.\d+",panel.locator("h3").first.inner_text()).group()
+                        assert key not in seen,(topic,key)
+                        seen.add(key)
+                        disclosures=panel.locator("details.question")
+                        assert disclosures.count()>=1,(topic,key,"missing disclosure")
+                        for d in disclosures.all():
+                            assert d.get_attribute("data-topic-rw1-managed")=="1"
+                            assert d.get_attribute("open") is None,(topic,key,"answer opened before action")
+                            d.locator("summary").click()
+                            expect(d).to_have_attribute("open","")
+                        # Real runtime only; do not call typeset manually in QA.
+                        page.wait_for_function("""()=>{const p=document.querySelector('.thpt-r4-knowledge-content-panel:not([hidden])');return !!p&&[...document.querySelectorAll('.thpt-r4-knowledge-content-panel .arithmatex')].filter(x=>!x.closest('[hidden],details:not([open])')).every(x=>x.querySelectorAll('mjx-container').length===1)}""",timeout=30000)
+                        first=panel.evaluate(AUDIT)
+                        expected=Counter(inventory[key]);actual=Counter(first["math"])
+                        assert expected==actual,(engine,topic,width,key,"formula parity",list((expected-actual).items())[:8],list((actual-expected).items())[:8])
+                        assert not first["issues"] and first["errors"]==first["missing"]==first["loose"]==0,(engine,topic,width,key,first)
+                        for d in disclosures.all():
+                            for _ in range(2):
+                                d.locator("summary").click()
+                                assert d.get_attribute("open") is None
+                                d.locator("summary").click()
+                                expect(d).to_have_attribute("open","")
+                        # Let toggle callbacks and the queued MathJax work settle.
+                        page.wait_for_timeout(120)
+                        second=panel.evaluate(AUDIT)
+                        assert Counter(second["math"])==actual and second["errors"]==second["missing"]==second["loose"]==0 and not second["issues"],(engine,topic,width,key,"reopen drift",second)
+                        for d in disclosures.all():
+                            d.locator("summary").click()
+                            assert d.get_attribute("open") is None
+                        assert page.evaluate("document.documentElement.scrollWidth<=innerWidth+2"),(engine,topic,width,key,"page overflow")
+                        cases+=1
+                        formula_cases+=sum(expected.values())
+                assert seen==set(inventory),(topic,seen,set(inventory))
+                assert not errors,(engine,topic,width,errors)
+                print(f"PASS RW1 {engine} CĐ{topic} @{width}: {len(seen)} outcomes, all math/source parity, 2 reopen cycles, tab labels",flush=True)
+                page.close()
+        browser.close()
+assert cases==126*6,(cases,126*6)
+print(f"PASS RW1 all {cases} outcome/viewports; {formula_cases} explicit source formula/viewports",flush=True)
+server.shutdown()
