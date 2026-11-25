@@ -1,3 +1,6 @@
+<!-- WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 candidate learner blob `e1471eaecd620a05c29178f2915ab3e2edd4ed84`, source commit `5e2f9633e5262b027cc07096073b4a6531a1e4ba`. Earlier signed source/receipt pointers below remain historical for the previous snapshot only. Affected Q18/V2, S1 and X-G.5 verification/re-lock pending; not authorized for release.
+
 <!-- OWNER_APPROVED_SHARED_G12_CHV_WRITTEN_24_STAFF_NOTE_REMOVAL_READY_20261121 -->
 **CURRENT EXACT SOURCE_EQUIVALENT AUTHORING:** Same one CĐ18 original R04 learner `d8f30dc5a62b1706e5464e5a7b3b52b15e5bd960` and original G12 SGK ChV B14–B17 shared bank `ad4165de0a2c3442b50d7f3d0019a99b5bbdef39` (matching source-owner #725 and CĐ18 branch hash). All **24** original `- **Written:** học sinh tự đối chiếu, không được tự động ghi Mastery...` staff-only visible prose removed from original shared SGK canonical and exactly 24 Topic projected Written answers. In SGK canonical there is now ONE hidden `Q16_AUTHORING_ONLY` metadata comment retaining the existing no self-graded Mastery policy; Topic source keeps `NO_MASTERY` Q16 controls. Original **24/24 original Written rubric mathematical criteria/point weights and solutions byte-for-byte unchanged** once removing the one staff sentence; remaining 183 Practice question/answer bodies untouched, all 247 original canonical public IDs, 40 FirstTry, 12 public question-only selfcheck, 10 SVG and W07 anti-spoiler preserved. Historical G12 SBT B14 page25 source provenance remains P2 not claimed solved. Q18 `3a0cbbfb74252787f08c9504de9018c7e58bf8a1`, A1 `baac29f51c2bbc7a66d95f39680c6d7be285916d`, V2 `79fe1557f85488361322d9e36b606f1e44b3ddd1`; `DELTA_B_SOURCE_EQUIVALENT` (student-only editorial). No full independent NotebookLM Topic PASS or website release/merge/deploy.
 ---
@@ -20,7 +23,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: aee8a33bcf44acb90268f96b297fa161a3861de3
 CATALOG_TOPIC_ID: CD18
 RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
@@ -46,7 +49,7 @@ P0: 0
 P1: 0
 P2: 2
 P2_NOTE: SBT_REFERENCE_GAP_DOCUMENTED_G12_B14_PRINTED_P25
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
