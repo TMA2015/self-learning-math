@@ -444,6 +444,12 @@ Có thể nối hai nhánh tan qua tiệm cận không?
 
 *Đọc hình:* Các nhánh của \(y=\tan x\) tăng giữa hai tiệm cận \(x=-\pi/2\), \(x=\pi/2\). Đường tiệm cận bị loại khỏi miền; không thể nối nhánh qua vạch đứt hoặc đánh dấu tại đó một giá trị hàm hữu hạn. Các đầu đường cong chạm biên trên/dưới của khung chỉ vì phần tiếp theo nằm ngoài vùng vẽ, không phải vì đồ thị dừng hay trở thành đoạn ngang.
 
+Đối với côtang, mẫu số là sin nên các đường bị loại chuyển sang \(x=k\pi\), với \(k\in\mathbb Z\). Trên mỗi khoảng giữa hai đường đó, côtang giảm. Có thể dựng nhánh đầu tiên từ ba điểm: \((\frac{\pi}{4};1)\), \((\frac{\pi}{2};0)\), \((\frac{3\pi}{4};-1)\), rồi lặp lại theo chu kỳ \(\pi\).
+
+![Hai nhánh đồ thị côtang và các tiệm cận đứng](../../visuals/THPT_TOPIC06_COT_ASYMPTOTES_R01.svg)
+
+*Đọc hình:* Trên khoảng \((0;\pi)\), đường cong đi từ trên xuống dưới và cắt trục hoành tại \(x=\frac{\pi}{2}\). Nhánh trên \((-\pi;0)\) có cùng dạng do tính tuần hoàn. Khác với tang, côtang nghịch biến trên từng nhánh và không xác định tại \(x=0\).
+
 **Ví dụ**
 
 **Đề bài.** Cho \(g(x)=\tan(x-\frac{\pi}{4})\). Tìm miền xác định và chu kỳ.
