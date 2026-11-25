@@ -1,123 +1,19 @@
-<!-- TOP03_MASTER974_PED6_SOURCE_CUSTODY_20261121 -->
-**Current AUTHORING source custody:** one R06 canonical learner `38f41f013e75b42605d7a88f9205c20af6315a41`; existing Q18 self-QA receipt `ef40b5871762558959108cf1879155c7e14158fe` under Q01–Q18 v3.2.0. Fixes #977 TOP22-20261121-011 (O01 missing target) and -012 (12-item public selfcheck voluntary answer navigation). Prior 31-item direct academic audit retained on unchanged bank/Knowledge; only two inserted PED-facing regions with inverse-diff proof. Header is current, all historical SHA below are historical. No Reviewer independent PASS, RELEASE, merge/deploy.
-
-# CĐ03 — metadata bản thảo hiện hành, đã sửa D6 + Ví dụ trực tiếp
+# CĐ03 — current A1–A7 source custody · A01 CP06
 
 CURRENT_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R06_NUMBERING_CONSISTENT_20261116.md
-CURRENT_SOURCE_BLOB: 38f41f013e75b42605d7a88f9205c20af6315a41
+CURRENT_SOURCE_BLOB: bd3b88b635b203872a9afa5893cc1e3af3e7d7c6
 CURRENT_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC03_R06_NUMBERING_DELTA_A_Q18_20261116.md
-CURRENT_Q18_RECEIPT_BLOB: ef40b5871762558959108cf1879155c7e14158fe
+CURRENT_Q18_RECEIPT_BLOB: 28c43a014a015b1c81986e0b9c7b7127c3dfe55b
 STANDARD_ID: SLM-THPT-QUALITY-ONE
 STANDARD_VERSION: 3.2.0
-DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL
-PREVIOUS_AUTHOR_METADATA_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_R04_AUTHORING_ONLY_CUSTODY_METADATA_20261113.md
-PREVIOUS_AUTHOR_METADATA_BLOB: 9b69bbbff0e9af27a8b7190df89243d8751f858b
-AUTHORING_STATUS: AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_PED6_DELTA; NO_RELEASE
+DELTA_CLASS: DELTA_C_ACADEMIC_MATERIAL + DELTA_B_SOURCE_EQUIVALENT
+AUTHORING_STATUS: AUTHOR_SELF_VERIFIED_CURRENT_SOURCE; NO_RELEASE
+PREVIOUS_AUTHOR_METADATA_BLOB: 3ce4f7ec703a437bea18b5389f2968d099cc7c58
 RELEASE_AUTHORIZATION: NO
 
-Original A1–A7/SGK/outcome/item source matrix below is inherited **unaltered**; only current learner snapshot formatting and Q18 source custody above changed. User-facing headings are now page H1, numbered group H2 and child H3, with Practice Bài labels not H4. Old author metadata Git blob `9b69bbbff0e9af27a8b7190df89243d8751f858b` and old academic source/Q18 remain immutable. No independent reviewer claim or RELEASE approval.
+A1 source 960a5c6f18b3b54a3bd614b6afa6606492cdd318 / bd3b88b635b203872a9afa5893cc1e3af3e7d7c6 and exact Q18 28c43a014a015b1c81986e0b9c7b7127c3dfe55b; A2 original G10 T2 B17–18 direct S1 (CP05); A3 author-self Q18, no new independent verdict; A4 31 Practice +12 Replay, semantic equivalence to latest signed 38f41f013e75b42605d7a88f9205c20af6315a41 via CP03/CP04; canonical IDs/order/key/conditions/rubrics and mode retained. Display notation intentionally differs from frozen bank text; no claim of literal parity. Owner #1109 schedules bank reconciliation after the eight batches, not a new canonical owner. Index b2e79a6cda5fdcc82dbd281e4273577ca637895e, extension bank fd85d7056f3b934f4599727f8c6da173cf05cd65 unchanged.; A5 Meaning before transformation: equivalent vs implication; strict positivity proof; O08 condition counterexample with a closed domain boundary distinct from solution; O10 candidate table demonstrates exact substitution rather than rounding; O12 links variable/time equations to units; 12 voluntary Vận dụng/Đối chiếu and numbered recovery preserved. Three real original SVG paths and 44 balanced disclosures (12+31+1 public lookup); current SVG geometry checked at source, no actual browser verdict.; A6 CP01–CP05: O04 distinguishes strictly positive from nonnegative (after reversing sign of negative leading coefficient); O08 sqrt(A)=sqrt(B) iff A=B≥0, |A|=|B| alone insufficient (A=-1,B=1); numberline x≥-3 closed endpoint, -4 excluded and -2 accepted; O10 both exact irrational candidates and check r+ via identity/sign, r- excluded; O12 explicitly compares 90/v and 90/(v+15) and units; O08 recovery now points to the matching numberline example. G10 T2 B17 pp19–24 and B18 pp25–27 checked directly in CP05, SHA256 ee8a00392e1c9fc5b213e574666cf1f8487548737e138573f28a988c640fafe6, printed index+1. Radical conditions, real roots and physical units verified; no full new textbook or SBT exercise audit.; A7 public replay no Mastery, 0 private items; no RELEASE. Previous full historical metadata is retained at Git blob 3ce4f7ec703a437bea18b5389f2968d099cc7c58; source ownership and placement matrix unchanged.
 
----
-
-# CĐ03 R04 — AUTHORING-only source custody
-
-STATUS: R04_AUTHOR_SELF_VERIFIED_IN_V2_CUSTODY
-ACADEMIC_SOURCE_PATH: prototypes/thpt/content-drafts/topic03-algebra-equations/Temp_TOPIC03_CONTINUOUS_KNOWLEDGE_ARCS_R04_REVIEW_CANDIDATE_20261113.md
-IMMUTABLE_R03_BLOB: 678b93e92ee5b9b995bee08597a618ff1f536be5
-
-## Phụ lục AUTHORING — không hiển thị trên giao diện học sinh
-
-PACKET_ID: THPT-TOPIC03-ALGEBRA-EQUATIONS-FULL-R01
-CATALOG_TOPIC_ID: CD03
-STANDARD_ID: SLM-THPT-QUALITY-ONE
-STANDARD_VERSION: 3.0.1
-LEARNING_PATH: TOPIC
-OUTER_PAGES: KIEN_THUC / LUYEN_TAP / TU_KIEM_TRA
-RUNTIME_TOPIC_ID: UNASSIGNED_OWNER_DECISION
-SGK_SOURCE_ROLE: S1_REFERENCE_ONLY
-SGK_G10_T2_B18: KNTT printed pages SGK 25–27, SBT 19–21, verified historical reviewer receipt, not a newly opened PDF
-ORIGINAL_INDEX_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_ORIGINAL08_CANONICAL_INDEX_R01_20261112.md
-ORIGINAL_INDEX_BLOB: b2e79a6cda5fdcc82dbd281e4273577ca637895e
-NEW_PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC03_EQUATION_NEW23_PUBLIC_CANONICAL_R01_20261112.md
-NEW_PUBLIC_EXTENSION_BLOB: fd85d7056f3b934f4599727f8c6da173cf05cd65
-VISUAL_OLD_FLOW_BLOB: 57dc5868ca6b726c4936b2b5e5a3419112752930
-VISUAL_EQUIVALENCE_BLOB: abb748c7b13dadc1786ea0de5f489a09dd2fe676
-VISUAL_DOMAIN_BLOB: 7ee7acd819d9f6d8eb66bcc4ac8abebfd7d4521b
-TOPIC_OUTCOMES: 12
-KNOWLEDGE_MODULES: 12
-FIRST_TRY_REVEAL_D6: 12_EACH
-CANONICAL_UNIQUE_PUBLIC_IDS: 31
-PUBLIC_OLD_REUSE: 8
-PUBLIC_NEW_ORIGINAL: 23
-PUBLIC_WRITTEN: 4
-PUBLIC_SELF_CHECK_REUSE: 12
-ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
-OFFICIAL_TOPIC_READINESS: NOT_CLAIMED
-PRIVATE_RD1_IMPORTED: 0
-INTERACTION_MODELS_IMPLEMENTED: NO
-RELEASE_AUTHORIZATION: NO
-
-| canonical item_id | primary Topic outcome | role | one source blob |
-|---|---|---|---|
-| `THPT-G10-B18-C01` | `TOP03-O09` | TOPIC_PRACTICE | `1223d4c2b574433479c5d222dbeff363718ee4bb` |
-| `THPT-G10-B18-C02` | `TOP03-O08` | TOPIC_PRACTICE | `1223d4c2b574433479c5d222dbeff363718ee4bb` |
-| `THPT-G10-B18-P01` | `TOP03-O09` | TOPIC_PRACTICE | `1223d4c2b574433479c5d222dbeff363718ee4bb` |
-| `THPT-G10-B18-P02` | `TOP03-O09` | TOPIC_PRACTICE | `1223d4c2b574433479c5d222dbeff363718ee4bb` |
-| `THPT-G10-B18-P03` | `TOP03-O10` | TOPIC_PRACTICE | `1223d4c2b574433479c5d222dbeff363718ee4bb` |
-| `THPT-G10-B18-P04` | `TOP03-O12` | TOPIC_PRACTICE | `1223d4c2b574433479c5d222dbeff363718ee4bb` |
-| `HPT-G10-CHVI-WRI-18-01` | `TOP03-O08` | TOPIC_WRITTEN | `4da918f36d30c9b7110099e81fc88943e5b7705b` |
-| `HPT-G10-CHVI-WRI-18-02` | `TOP03-O12` | TOPIC_WRITTEN | `4da918f36d30c9b7110099e81fc88943e5b7705b` |
-| `THPT-TOP03-ADD01` | `TOP03-O01` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD02` | `TOP03-O01` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD03` | `TOP03-O02` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD04` | `TOP03-O02` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD05` | `TOP03-O03` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD06` | `TOP03-O03` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD07` | `TOP03-O04` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD08` | `TOP03-O04` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD09` | `TOP03-O05` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD10` | `TOP03-O05` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD11` | `TOP03-O06` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD12` | `TOP03-O06` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD13` | `TOP03-O07` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD14` | `TOP03-O07` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD15` | `TOP03-O08` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD16` | `TOP03-O09` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD17` | `TOP03-O10` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD18` | `TOP03-O10` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD19` | `TOP03-O11` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD20` | `TOP03-O11` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-ADD21` | `TOP03-O12` | TOPIC_PRACTICE | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-W01` | `TOP03-O10` | TOPIC_WRITTEN | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-| `THPT-TOP03-W02` | `TOP03-O12` | TOPIC_WRITTEN | `fd85d7056f3b934f4599727f8c6da173cf05cd65` |
-
-**Giới hạn Academic/Q18:** Nguồn G10 B18 công khai có 6 câu và 2 Written thuộc phạm vi review NotebookLM 28/10/2026; receipt gốc khóa snapshot 5 Temp_ SHA256, **không suy các tệp public đã qua merge byte-identical với Temp_**. Tác giả kiểm lại nội dung và giới hạn từng câu trên blob mới. CĐ03 mới là DELTA_C, kiểm tự thân theo `AUTHOR_SELF_VERIFIED` chủ dự án cho phép v3.0.1; không mạo nhận NotebookLM đã review CĐ03, không sửa SGK.
-
-
-## 18/11/2026 — exact current Knowledge clarification and Q18
-
-- One effective learner file `8b0e5be33b42d8b1d3e743bb2502501789333075`; targeted signed source Q18 `537186b1763ef06bed205f45d8d3b907dc3c7aa2`. Existing corrective D6/Example from Draft #888 is preserved; original SGK/index bank and item→outcome source map remain unchanged.
-- Added three explicitly typed genuine mathematics statements at TOP03-O01/O03/O07 (equivalent equations, zero-product property, necessary+ sufficient sign condition for sqrt(A)=B), and one concise learning recap. Only Knowledge modified; 31 canonical Practice items, 12 public Selfchecks, original SVG and disclosure structure byte-exact to source `daeeb5d571d120b31265f8c603a76049a1f2c78c`.
-- Existing AUTHORING_STATUS `REVISED_SINGLE_SOURCE_QA_HOLD` retained until current-head CI and full affected-scope closure. No new independent NotebookLM or RELEASE/merge/deploy claim.
-
-## Revision after R06 — correct one source, do not create a correction source
-
-The learner source at CURRENT_SOURCE_PATH is edited **in place**. Its prior numbered headings and all 31 student Practice items/solutions and 12 public selfcheck question-only placements are preserved. Eleven D6 student destinations now point to actual numbered Bài and avoid raw ADD/P/W codes. TOP03-O09 worked Example is changed from identical-to-Vận-dụng sqrt(2x+7)=x+1 to independent sqrt(x+6)=x; x≥0, candidates x=3/−2, only x=3 valid; original First Try and its optional key are unchanged. Source has 43 unchanged canonical/display placements, 43 expandable solution blocks. Other historical R05/R06 files are provenance only, not active intake sources. Pending receipt/handoff/ready/REGISTER final QA; not website approved.
-
-
-**19/11 owner ΔA:** current source `8b0e5be33b42d8b1d3e743bb2502501789333075`, current Q18 `537186b1763ef06bed205f45d8d3b907dc3c7aa2`; 12 lesson outcomes, all math and question content unchanged, CONTENT_READY maintained.
-
-
-**20/11 S1 G10 B17 Delta C:** current single learner `8b0e5be33b42d8b1d3e743bb2502501789333075`, Q18 `537186b1763ef06bed205f45d8d3b907dc3c7aa2`, added Δ′ b=2b′ to `TOP03-O04`; 6/6 scoped math checks, canonical items/solutions unchanged. AUTHORING CONTENT_READY retained, no independent reviewer PASS.
-
-
-## 20/11/2026 current source custody
-- CURRENT_SOURCE_BLOB: 488cee3670af82ed9fd1f457d23a489e7ba8d063
-- CURRENT_Q18_RECEIPT_BLOB: 65841734363d64cc474c359041d65e99535cae23
-- Only 3 correct mathematical-equivalence type labels; Q15/Q16 protected.
-
-
-## 20/11/2026 — Current Knowledge CĐ03 hoàn thiện
-- CURRENT_LEARNER_SOURCE_BLOB: 9df43259cfb61646ec1d60c036e360c40417daae
-- CURRENT_Q18_RECEIPT_BLOB: 6380d2340c6cb3dc597777eac1d514d95e140322
-- S1 B18 đã kiểm hai dạng căn, PT bậc hai, nghiệm ngoại lai; sửa diễn giải tự học, Luyện tập/Tự kiểm tra bất biến.
+## Current figure custody
+docs/assets/images/thpt/THPT_G10_CHVI_B18_RADICAL_FLOW_D5_R03.svg: 57dc5868ca6b726c4936b2b5e5a3419112752930
+prototypes/thpt/visuals/THPT_TOPIC03_EQUIVALENCE_VS_SQUARING_R01.svg: abb748c7b13dadc1786ea0de5f489a09dd2fe676
+prototypes/thpt/visuals/THPT_TOPIC03_RADICAL_DOMAIN_NUMBERLINE_R01.svg: 78689938988f1a4e097aebbade89c85be0ab8b79
