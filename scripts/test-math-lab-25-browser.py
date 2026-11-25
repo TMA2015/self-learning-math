@@ -33,6 +33,79 @@ SHOTS.mkdir(parents=True,exist_ok=True)
     "Keep this server private; do not expose it to the Internet.\n",
     encoding="utf-8"
 )
+def check_menu(page, browser_name, width):
+    # THPT_MENU_ONLY: actual built menu, one + six destinations; compare
+    # the track width to the former responsive three/two-column layout.
+    expected=["Trang chủ THPT","Tiến độ học tập","Học theo SGK","Chuyên đề","Thư viện bài tập","Math Lab · 25 mô hình tương tác"]
+    routes=["home/","tien-do/","sgk/","chuyen-de/","thu-vien/","math-lab/"]
+    page.goto(base+"/thpt-preview/home/",wait_until="domcontentloaded")
+    launcher=page.locator("[data-thpt-r4-launcher]")
+    launcher.wait_for()
+    assert "6 + 1" in launcher.inner_text()
+    launcher.click()
+    dialog=page.locator("[data-thpt-r4-shortcut-dialog]")
+    dialog.wait_for()
+    assert dialog.locator("h2").inner_text()=="Toán THPT 6+1"
+    assert dialog.locator("summary").inner_text()=="6 nhóm THPT · mở/thu gọn"
+    cover=dialog.locator("[data-math-program-cover-link]")
+    assert cover.count()==1 and cover.inner_text()=="⌂ Chọn chương trình" and cover.get_attribute("href")=="/"
+    assert dialog.locator(".roadmap-topic-dialog__list").count()==0
+    assert dialog.locator("details.roadmap-main-quick > nav").count()==1
+    nav=dialog.locator('nav[aria-label="Sáu lối tắt chính Toán THPT"]')
+    links=nav.locator("a")
+    assert links.all_inner_texts()==expected
+    assert [a.get_attribute("href") for a in links.all()]==["/thpt-preview/"+route for route in routes]
+    assert dialog.locator("[data-thpt-math-lab-shortcut]").count()==1
+    box=nav.evaluate("""nav=>{
+      const s=getComputedStyle(nav), rect=nav.getBoundingClientRect();
+      const gap=parseFloat(s.columnGap), cols=matchMedia('(max-width:38rem)').matches?2:3;
+      return {oldWidth:(rect.width-gap*(cols-1))/cols,tracks:s.gridTemplateColumns.split(' '),buttons:[...nav.children].map(a=>{const r=a.getBoundingClientRect(),s=getComputedStyle(a);return {x:r.x,y:r.y,w:r.width,h:r.height,min:s.minHeight,font:s.fontSize,padding:s.padding,background:s.backgroundColor,border:s.borderRadius}})};
+    }""")
+    assert len(box["tracks"])==2,(width,box)
+    buttons=box["buttons"]
+    for a in buttons:
+        assert abs(a["w"]-box["oldWidth"])<=1.1,(width,"old track width changed",a,box)
+        for k in ("min","font","padding","background","border"):
+            assert a[k]==buttons[0][k],(width,k,a)
+    for i in range(0,6,2):
+        assert abs(buttons[i]["y"]-buttons[i+1]["y"])<1 and buttons[i]["x"]<buttons[i+1]["x"],(width,buttons)
+        assert abs(buttons[i]["x"]-buttons[0]["x"])<1
+        if i: assert buttons[i]["y"]>buttons[i-2]["y"]
+    dialog.locator("summary").click()
+    assert not nav.is_visible()
+    dialog.locator("summary").click()
+    assert nav.is_visible()
+    dialog.get_by_role("button",name="Đóng").click()
+    assert not dialog.is_visible()
+    launcher.click()
+    assert dialog.locator("details.roadmap-main-quick a").count()==6
+    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth+1")
+    dialog.get_by_role("button",name="Đóng").click()
+    # Both equal learning branches reach their existing landing pages.
+    for index in (2,3):
+        launcher.click()
+        links.nth(index).click()
+        page.wait_for_url(base+"/thpt-preview/"+routes[index])
+        launcher=page.locator("[data-thpt-r4-launcher]")
+        launcher.wait_for()
+    launcher.click()
+    cover.click()
+    page.wait_for_url(base+"/")
+    assert "Chọn hành trình Toán" in page.locator("h1").inner_text()
+    print(f"PASS THPT menu 6+1 {browser_name} {width}: exact links, 2x3, original track width, cover, reopen",flush=True)
+
+if "--menu-only" in __import__("sys").argv:
+    with sync_playwright() as pw:
+        for browser_name in ("chromium","webkit"):
+            browser=getattr(pw,browser_name).launch(headless=True)
+            for width in (390,820,1440):
+                page=browser.new_page(viewport={"width":width,"height":850},device_scale_factor=1)
+                check_menu(page,browser_name,width)
+                page.close()
+            browser.close()
+    server.shutdown()
+    raise SystemExit(0)
+
 with sync_playwright() as pw:
  for browser_name in ("chromium","webkit"):
     browser=getattr(pw,browser_name).launch(headless=True)
@@ -88,11 +161,11 @@ with sync_playwright() as pw:
         page.goto(base+"/thpt-preview/home/",wait_until="domcontentloaded")
         launcher=page.locator("[data-thpt-r4-launcher]")
         launcher.wait_for()
-        assert "5 + 1" in launcher.inner_text(),(browser_name,width,"Golden 5+1 changed")
+        assert "6 + 1" in launcher.inner_text(),(browser_name,width,"Golden 6+1 changed")
         launcher.click()
         dialog=page.locator("[data-thpt-r4-shortcut-dialog]")
         assert dialog.locator('[data-thpt-math-lab-shortcut="1"]').count()==1,(browser_name,width,"Math Lab shortcut missing")
-        assert dialog.locator('nav[aria-label="Năm lối tắt chính Toán THPT"] a').count()==5,(browser_name,width,"Five main groups changed")
+        assert dialog.locator('nav[aria-label="Sáu lối tắt chính Toán THPT"] a').count()==6,(browser_name,width,"Six main groups missing")
         assert dialog.locator('[data-thpt-math-lab-shortcut="1"]').get_attribute("href").endswith("/thpt-preview/math-lab/"),(browser_name,width,"Math Lab shortcut wrong URL")
       for row in rows:
         model_id=row[0]
@@ -124,7 +197,7 @@ with sync_playwright() as pw:
           page.screenshot(path=str(SHOTS/f"model-fullpage-{model_id.lower()}-{width}.png"),animations="disabled",full_page=True)
       if errors:
         failures.append((browser_name,width,errors[:6]))
-      print(f"PASS {browser_name} {width}px 25 model pages: restored context, both back links, no iframe, controls, one-scroll, Golden 5+1")
+      print(f"PASS {browser_name} {width}px 25 model pages: restored context, both back links, no iframe, controls, one-scroll, Golden 6+1")
       context.close()
     browser.close()
 server.shutdown()

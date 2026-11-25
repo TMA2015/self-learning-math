@@ -35,8 +35,8 @@ const hook=read("hooks/math_lab_full_page.py");
 assert(hook.includes("def on_post_page(")&&hook.includes("data-ml-restored-full-page")&&hook.includes("Math Lab source SHA mismatch"),"Source-locked full-page compositor missing");
 assert(main.includes("hooks/math_lab_full_page.py")&&thpt.includes("INHERIT: mkdocs.yml"),"Both MkDocs configs must compose restored Math Lab viewer");
 assert(!libraryJS.includes("location.replace(expected.href)"),"Redirect must not strip model-page metadata/back links");
-assert(libraryJS.includes("requestAnimationFrame(mountMathLabShortcut)")&&libraryJS.includes('a.dataset.thptMathLabShortcut="1"'),"Isolated 5+1 Math Lab auxiliary shortcut missing");
-assert(launcherJS.includes('btn.dataset.thptR4Launcher="1"')&&launcherJS.includes('["Danh mục 22 Chuyên đề đã phát hành","chuyen-de/"]'),"Golden shared THPT launcher changed");
+assert(libraryJS.includes("requestAnimationFrame(mountMathLabShortcut)")&&libraryJS.includes('a.dataset.thptMathLabShortcut="1"'),"Legacy Math Lab shortcut compatibility guard missing");
+assert(launcherJS.includes('btn.dataset.thptR4Launcher="1"')&&launcherJS.includes('["Math Lab · 25 mô hình tương tác","math-lab/"]')&&launcherJS.includes('title.textContent="Toán THPT 6+1"')&&!launcherJS.includes('["Danh mục 22 Chuyên đề đã phát hành","chuyen-de/"]'),"Owner THPT 6+1 menu missing");
 
 assert.equal((home.match(/href="\.\.\/math-lab\/"/g)||[]).length,1,"Home missing ONE Math Lab card");
 assert(home.indexOf('href="../thu-vien/"')<home.indexOf('href="../math-lab/"')&&home.indexOf('href="../math-lab/"')<home.indexOf('href="../tien-do/"'),"Home card order must be Library / Math Lab / Progress");
