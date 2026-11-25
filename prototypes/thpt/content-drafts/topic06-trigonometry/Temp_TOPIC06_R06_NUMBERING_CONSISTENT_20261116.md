@@ -91,13 +91,13 @@ Chẳng hạn, tại góc \(135^\circ\) (góc phần tư II) trên hình, \(\cos
 
 **Vận dụng**
 
-Sinα=−3/5, α thuộc góc phần tư IV; cosα bằng bao nhiêu?
+\(\sin\alpha=-\frac35\), \(\alpha\) thuộc góc phần tư IV; \(\cos\alpha\) bằng bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-+4/5 vì cos dương ở góc IV.
+\(\frac45\) vì cos dương ở góc IV.
 
-Nếu ra −4/5, xem lại trục hoành phía phải; làm lại Bài 2 và Bài 7 trong phần Luyện tập.
+Nếu ra \(-\frac45\), xem lại trục hoành phía phải; làm lại Bài 2 và Bài 7 trong phần Luyện tập.
 
 </details>
 
@@ -107,9 +107,9 @@ Nếu ra −4/5, xem lại trục hoành phía phải; làm lại Bài 2 và Bà
 
 Quãng đường đi có âm khi kim quay thuận chiều không?
 
-> **TÍNH CHẤT — Cung hình học và độ dời có hướng.** Các góc khác số đo vẫn có thể dẫn tới cùng vị trí trên đường tròn. Đo được quãng đường trên một vòng cung từ góc ở tâm bằng cách nào? Ta sử dụng định nghĩa radian và chu vi 2πr. Độ dài cung hình học s=r|θ| với θ radian, r>0; độ dời có hướng d=rθ giữ dấu. Góc chênh 2kπ có cùng tia cuối nhưng cung quét có thể khác nhiều vòng.
+> **TÍNH CHẤT — Cung hình học và độ dời có hướng.** Các góc khác số đo vẫn có thể dẫn tới cùng vị trí trên đường tròn. Đo được quãng đường trên một vòng cung từ góc ở tâm bằng cách nào? Ta sử dụng định nghĩa radian và chu vi \(2\pi r\). Độ dài cung hình học \(s=r\lvert\theta\rvert\) với \(\theta\) tính bằng radian, \(r>0\); độ dời theo chiều quay \(d=r\theta\) giữ dấu. Góc chênh \(2k\pi\) có cùng tia cuối nhưng cung quét có thể khác nhiều vòng.
 
-Xét ví dụ: Bánh xe bán kính 7 cm quay −120° tức −2π/3: độ dời cung theo chiều quay là −14π/3 cm, độ dài quãng đường là 14π/3 cm. Trước hết đổi radian để đơn vị đúng.
+Xét ví dụ: Bánh xe bán kính 7 cm quay \(-120^\circ\), tức \(-\frac{2\pi}{3}\) radian: độ dời theo chiều quay là \(-\frac{14\pi}{3}\,\mathrm{cm}\), độ dài quãng đường là \(\frac{14\pi}{3}\,\mathrm{cm}\). Trước hết đổi radian để đơn vị đúng.
 
 **Ví dụ**
 
@@ -119,13 +119,13 @@ Xét ví dụ: Bánh xe bán kính 7 cm quay −120° tức −2π/3: độ dờ
 
 **Vận dụng**
 
-Bán kính 3, quay 3π/2 rad: cung dài bao nhiêu?
+Bán kính 3, quay \(\frac{3\pi}{2}\) radian: cung dài bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-9π/2; góc đã ở radian.
+\(\frac{9\pi}{2}\); góc đã ở radian.
 
-Nếu dùng r×góc độ trực tiếp, đổi 270°=3π/2 rồi tính lại. Hãy làm lại Bài 4 và Bài 8 trong phần Luyện tập.
+Nếu nhân bán kính với số đo góc bằng độ trực tiếp, đổi \(270^\circ=\frac{3\pi}{2}\) radian rồi tính lại. Hãy làm lại Bài 4 và Bài 8 trong phần Luyện tập.
 
 </details>
 
@@ -141,13 +141,13 @@ Các công thức không phải những dòng cần học thuộc riêng lẻ: c
 
 Khi nào các tỉ số tan/cot không được phép sử dụng?
 
-Có thể tìm một giá trị lượng giác từ các giá trị còn lại không? Ta bắt đầu từ tam giác vuông; cos²+sin²=1 trên đường tròn đơn vị. 
+Có thể tìm một giá trị lượng giác từ các giá trị còn lại không? Ta bắt đầu từ định lí Pythagore trên đường tròn đơn vị: \(\cos^2 x+\sin^2 x=1\).
 
 > **TÍNH CHẤT — Hệ thức cơ bản và điều kiện.** Với mọi \(x\in\mathbb R\), \(\sin^2x+\cos^2x=1\). Khi \(\cos x\ne0\), \(1+\tan^2x=1/\cos^2x\); khi \(\sin x\ne0\), \(1+\cot^2x=1/\sin^2x\). Không dùng các hệ thức có mẫu bằng 0.
 
  Không được chia cho sin hoặc cos tại nghiệm bằng 0.
 
-Chẳng hạn, Nếu sinx=3/5 và x ở góc phần tư I: cosx=4/5; tanx=3/4. Nếu sinx=0 thì cotx không xác định, dù các hệ thức không có dấu chia sau biến đổi.
+Chẳng hạn, nếu \(\sin x=\frac35\) và \(x\) ở góc phần tư I: \(\cos x=\frac45\); \(\tan x=\frac34\). Nếu \(\sin x=0\) thì \(\cot x\) không xác định, dù các hệ thức không có dấu chia sau biến đổi.
 
 **Ví dụ**
 
@@ -157,11 +157,11 @@ Chẳng hạn, Nếu sinx=3/5 và x ở góc phần tư I: cosx=4/5; tanx=3/4. N
 
 **Vận dụng**
 
-Với x=π/2, tanx tồn tại không?
+Với \(x=\frac{\pi}{2}\), \(\tan x\) tồn tại không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Không, cos(π/2)=0.
+Không, \(\cos\left(\frac{\pi}{2}\right)=0\).
 
 Ghi điều kiện trước khi áp dụng đẳng thức phân thức; làm lại Bài 10 và Bài 23 trong phần Luyện tập.
 
@@ -173,11 +173,11 @@ Ghi điều kiện trước khi áp dụng đẳng thức phân thức; làm l�
 
 Phản xạ qua trục Oy đổi giá trị nào?
 
-> **TÍNH CHẤT — Góc liên quan và đối xứng.** Những góc đối xứng trên đường tròn tạo ra các quy luật về giá trị lượng giác. Vì sao hai góc khác nhau có thể có sin bằng nhau nhưng cos trái dấu? Cần nhớ phép đối xứng qua trục Oy trên đường tròn. Đối xứng của điểm (cosα,sinα) qua Oy biến α thành π−α; do đó sin(π−α)=sinα, cos(π−α)=−cosα. Với −α: cos chẵn, sin lẻ. Lý do hình học đi trước việc học thuộc dấu.
+> **TÍNH CHẤT — Góc liên quan và đối xứng.** Những góc đối xứng trên đường tròn tạo ra các quy luật về giá trị lượng giác. Vì sao hai góc khác nhau có thể có sin bằng nhau nhưng cos trái dấu? Cần nhớ phép đối xứng qua trục \(Oy\) trên đường tròn. Đối xứng của điểm \((\cos\alpha;\sin\alpha)\) qua \(Oy\) biến góc \(\alpha\) thành \(\pi-\alpha\); do đó \(\sin(\pi-\alpha)=\sin\alpha\), \(\cos(\pi-\alpha)=-\cos\alpha\). Với \(-\alpha\): cos chẵn, sin lẻ. Lý do hình học đi trước việc học thuộc dấu.
 
 Ngoài đối xứng bù và đối đã thấy, góc **phụ nhau** đổi vai trò hoành độ–tung độ: \(\sin(\tfrac{\pi}{2}-\alpha)=\cos\alpha\), \(\cos(\tfrac{\pi}{2}-\alpha)=\sin\alpha\). Góc hơn kém \(\pi\) đưa điểm tới điểm đối diện trên đường tròn nên \(\sin(\pi+\alpha)=-\sin\alpha\), \(\cos(\pi+\alpha)=-\cos\alpha\); vì cả tử và mẫu đổi dấu nên \(\tan(\pi+\alpha)=\tan\alpha\) khi \(\cos\alpha\ne0\). Có thể tự kiểm với \(\alpha=\pi/6\). Những quan hệ góc liên kết này áp dụng cho mọi góc có nghĩa; riêng với tan/cot, vẫn phải kiểm mẫu số bằng \(0\) hay không.
 
-Chẳng hạn, α=π/6; góc 5π/6 đối xứng qua Oy nên sin(5π/6)=1/2, cos(5π/6)=−√3/2. Dùng điểm trên đường tròn thay vì nhớ hai bảng dấu.
+Chẳng hạn, \(\alpha=\frac{\pi}{6}\); góc \(\frac{5\pi}{6}\) đối xứng qua \(Oy\) nên \(\sin\left(\frac{5\pi}{6}\right)=\frac12\), \(\cos\left(\frac{5\pi}{6}\right)=-\frac{\sqrt3}{2}\). Dùng điểm trên đường tròn thay vì nhớ hai bảng dấu.
 
 **Ví dụ**
 
@@ -187,11 +187,11 @@ Chẳng hạn, α=π/6; góc 5π/6 đối xứng qua Oy nên sin(5π/6)=1/2, cos
 
 **Vận dụng**
 
-So sánh sin(−π/3) với sin(π/3).
+So sánh \(\sin\left(-\frac{\pi}{3}\right)\) với \(\sin\left(\frac{\pi}{3}\right)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-sin(−π/3)=−√3/2 do sin là hàm lẻ.
+\(\sin\left(-\frac{\pi}{3}\right)=-\frac{\sqrt3}{2}\) do sin là hàm lẻ.
 
 Vẽ trục Ox và phản xạ trên đường tròn; làm lại Bài 20 và Bài 24 trong phần Luyện tập.
 
@@ -220,7 +220,7 @@ Vì sao \(\sin(u+v)\) không thể luôn bằng \(\sin u+\sin v\)?
 
 Các dạng phân thức này chỉ dùng khi \(\cos u\ne0,\cos v\ne0\), đồng thời mẫu tương ứng khác \(0\) (tức \(\cos(u\pm v)\ne0\)); không triệt mẫu hay lấy tang của góc chưa xác định. Chẳng hạn \(\tan(\pi/3-\pi/4)=(\sqrt3-1)/(1+\sqrt3)=2-\sqrt3\), còn \(\tan(\pi/4+\pi/4)\) không xác định dù \(\tan(\pi/4)\) tồn tại.
 
-Chẳng hạn, Cos15°=cos(45°−30°)=√6/4+√2/4. Chọn phép trừ vì 15° không có trong bảng cơ bản nhưng 45°,30° thì có.
+Chẳng hạn, \(\cos15^\circ=\cos(45^\circ-30^\circ)=\frac{\sqrt6+\sqrt2}{4}\). Chọn phép trừ vì 15° không có trong bảng cơ bản nhưng 45°, 30° thì có.
 
 **Ví dụ**
 
@@ -230,13 +230,13 @@ Chẳng hạn, Cos15°=cos(45°−30°)=√6/4+√2/4. Chọn phép trừ vì 15
 
 **Vận dụng**
 
-Tính sin75° từ 45°+30°.
+Tính \(\sin75^\circ\) từ \(45^\circ+30^\circ\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-(√6+√2)/4.
+\(\frac{\sqrt6+\sqrt2}{4}\).
 
-Nếu ghi sin45°+sin30°, thử u=v=π/2 để tìm phản ví dụ. Hãy làm lại Bài 12 và Bài 25 trong phần Luyện tập.
+Nếu ghi \(\sin45^\circ+\sin30^\circ\), thử \(u=v=\frac{\pi}{2}\) để tìm phản ví dụ. Hãy làm lại Bài 12 và Bài 25 trong phần Luyện tập.
 
 </details>
 
@@ -246,7 +246,7 @@ Nếu ghi sin45°+sin30°, thử u=v=π/2 để tìm phản ví dụ. Hãy làm 
 
 Có thể chọn dạng tích hay tổng để thuận lợi giải phương trình?
 
-> **CÔNG THỨC — Góc nhân đôi và đổi dạng.** Công thức góc đôi và tích–tổng gắn liền với công thức cộng. Một tổ hợp sin2x hoặc sinx cosx có thể biến đổi gọn hơn ra sao? Ta đã biết công thức cộng; phân phối biểu thức. Lấy u=v=x trong công thức cộng được sin2x=2sinx cosx và cos2x=cos²x−sin²x. Cộng/trừ các công thức cho u±v tạo biến đổi tích–tổng, tổng–tích. Chọn dạng đơn giản hóa theo mục tiêu, luôn giữ biểu thức xác định.
+> **CÔNG THỨC — Góc nhân đôi và đổi dạng.** Công thức góc đôi và tích–tổng gắn liền với công thức cộng. Một tổ hợp \(\sin 2x\) hoặc \(\sin x\cos x\) có thể biến đổi gọn hơn ra sao? Ta đã biết công thức cộng; phân phối biểu thức. Lấy \(u=v=x\) trong công thức cộng được \(\sin 2x=2\sin x\cos x\) và \(\cos 2x=\cos^2 x-\sin^2 x\). Cộng/trừ các công thức cho \(u\pm v\) tạo biến đổi tích–tổng, tổng–tích. Chọn dạng đơn giản hóa theo mục tiêu, luôn giữ biểu thức xác định.
 
 **CÔNG THỨC — Các dạng nhân đôi, tích–tổng và tổng–tích cần sử dụng.** Từ \(\cos(a-b)\) và \(\cos(a+b)\), lấy tổng để triệt hai tích sin, lấy hiệu để triệt hai tích cos; làm tương tự với công thức cộng của sin. Như vậy ta không cần học một bộ quy tắc rời rạc:
 
@@ -281,7 +281,7 @@ Có thể chọn dạng tích hay tổng để thuận lợi giải phương tr�
 
 Thử \(a=b=0\) chỉ kiểm được một vài công thức, không phát hiện được dấu sai trong hiệu hai côsin vì hai vế đều bằng 0. Để kiểm dấu trừ trong \(\cos a-\cos b\), chọn \(a=\pi,\ b=0\): vế trái bằng \(-2\), còn \(-2\sin\frac{a+b}{2}\sin\frac{a-b}{2}=-2\). Có thể kiểm đầy đủ bằng cách khai triển ngược với công thức cộng. Ví dụ, \(\cos3x+\cos x=2\cos2x\cos x\); còn \(\sin3x\cos x=\frac12(\sin4x+\sin2x)\). Đối với tang, phải kiểm cả \(\cos a\ne0\) và mẫu \(1-\tan^2a\ne0\), thay vì áp công thức ở điểm không xác định.
 
-Chẳng hạn, sin3x+sinx=2sin2x cosx: đặt A=3x,B=x rồi dùng sinA+sinB=2sin((A+B)/2)cos((A−B)/2). Cách này phù hợp khi muốn đặt nhân tử hoặc xét nghiệm.
+Chẳng hạn, \(\sin 3x+\sin x=2\sin 2x\cos x\): đặt \(A=3x,\ B=x\) rồi dùng \(\sin A+\sin B=2\sin\frac{A+B}{2}\cos\frac{A-B}{2}\). Cách này phù hợp khi muốn đặt nhân tử hoặc xét nghiệm.
 
 **Ví dụ**
 
@@ -291,13 +291,13 @@ Chẳng hạn, sin3x+sinx=2sin2x cosx: đặt A=3x,B=x rồi dùng sinA+sinB=2si
 
 **Vận dụng**
 
-Viết 2sinx cosx thành hàm của 2x.
+Viết \(2\sin x\cos x\) thành hàm của \(2x\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-sin2x.
+\(\sin 2x\).
 
-Nếu nhầm hệ số 2, thay x=π/4 để kiểm. Hãy làm lại Bài 17, Bài 18 và Bài 26 trong phần Luyện tập.
+Nếu nhầm hệ số 2, thay \(x=\frac{\pi}{4}\) để kiểm. Hãy làm lại Bài 17, Bài 18 và Bài 26 trong phần Luyện tập.
 
 </details>
 
@@ -313,9 +313,9 @@ Khi góc thay đổi liên tục, sin, cos, tan và cot trở thành hàm số c
 
 Khi biểu thức có căn và tan, phải giao những miền nào?
 
-> **KIẾN THỨC CẦN GHI NHỚ — Miền xác định của biểu thức lượng giác.** Vì sao không phải mọi hàm lượng giác đều có miền xác định ℝ? Ta sử dụng khái niệm hàm số và mẫu số khác 0. Sin, cos xác định trên ℝ, nhận giá trị trong [−1,1]. Tanx không xác định tại x=π/2+kπ; cotx không xác định tại x=kπ. Với biểu thức ghép như \(\sqrt{2\sin x-1}\), phải thêm điều kiện \(2\sin x-1\ge0\). Nếu có đồng thời căn, phân thức, tang hoặc côtang thì lấy **giao tất cả điều kiện**, không chỉ kiểm một biểu thức.
+> **KIẾN THỨC CẦN GHI NHỚ — Miền xác định của biểu thức lượng giác.** Vì sao không phải mọi hàm lượng giác đều có miền xác định \(\mathbb R\)? Ta sử dụng khái niệm hàm số và mẫu số khác 0. Sin, cos xác định trên \(\mathbb R\), nhận giá trị trong \([-1;1]\). \(\tan x\) không xác định tại \(x=\frac{\pi}{2}+k\pi\); \(\cot x\) không xác định tại \(x=k\pi\), với \(k\in\mathbb Z\). Với biểu thức ghép như \(\sqrt{2\sin x-1}\), phải thêm điều kiện \(2\sin x-1\ge0\). Nếu có đồng thời căn, phân thức, tang hoặc côtang thì lấy **giao tất cả điều kiện**, không chỉ kiểm một biểu thức.
 
-Xét ví dụ: Tìm D của f(x)=√(2sinx−1): cần sinx≥1/2, nên x∈[π/6+2kπ,5π/6+2kπ], k∈ℤ. Chọn hình đường tròn hoặc đồ thị sin để xác định các cung đủ điều kiện.
+Xét ví dụ: Tìm \(D\) của \(f(x)=\sqrt{2\sin x-1}\): cần \(\sin x\ge\frac12\), nên \(x\in\left[\frac{\pi}{6}+2k\pi;\frac{5\pi}{6}+2k\pi\right]\), \(k\in\mathbb Z\). Chọn hình đường tròn hoặc đồ thị sin để xác định các cung đủ điều kiện.
 
 **Ví dụ**
 
@@ -347,7 +347,7 @@ Nếu chỉ kiểm điều kiện dưới căn, thử \(x=\frac{\pi}{2}\): căn 
 
 Hai điểm cùng độ cao đã đủ chứng minh chu kỳ chưa?
 
-> **TÍNH CHẤT — Chu kỳ cơ bản và đối xứng.** Chu kỳ và đối xứng giúp đọc hàm lượng giác trên cả miền, không chỉ vài điểm. Làm thế nào dự đoán khi nào một dạng sóng lặp lại? Ta bắt đầu từ hàm số trên miền xác định; giá trị sin,cos trên vòng tròn. f có chu kỳ T>0 khi x±T đều thuộc miền nếu x thuộc miền và f(x+T)=f(x) với mọi x. Sin và cos có chu kỳ cơ bản \(2\pi\); tan và cot có chu kỳ cơ bản \(\pi\). Sin, tan, cot là **hàm lẻ** trên miền đối xứng tương ứng, còn cos là **hàm chẵn**; đổi biến và nhân hệ số có thể làm chu kỳ khác. Để đọc chiều biến thiên, ta xét **từng khoảng**, không suy từ một vài điểm có cùng tung độ:
+> **TÍNH CHẤT — Chu kỳ cơ bản và đối xứng.** Chu kỳ và đối xứng giúp đọc hàm lượng giác trên cả miền, không chỉ vài điểm. Làm thế nào dự đoán khi nào một dạng sóng lặp lại? Ta bắt đầu từ hàm số trên miền xác định; giá trị sin, cos trên vòng tròn. Hàm \(f\) có chu kỳ \(T>0\) khi \(x\pm T\) đều thuộc miền nếu \(x\) thuộc miền và \(f(x+T)=f(x)\) với mọi \(x\) thuộc miền. Sin và cos có chu kỳ cơ bản \(2\pi\); tan và cot có chu kỳ cơ bản \(\pi\). Sin, tan, cot là **hàm lẻ** trên miền đối xứng tương ứng, còn cos là **hàm chẵn**; đổi biến và nhân hệ số có thể làm chu kỳ khác. Để đọc chiều biến thiên, ta xét **từng khoảng**, không suy từ một vài điểm có cùng tung độ:
 - \(\sin x\) tăng trên \([-\pi/2+2k\pi,\ \pi/2+2k\pi]\) và giảm trên \([\pi/2+2k\pi,\ 3\pi/2+2k\pi]\).
 - \(\cos x\) giảm trên \([2k\pi,\ \pi+2k\pi]\) và tăng trên \([\pi+2k\pi,\ 2\pi+2k\pi]\).
 - \(\tan x\) tăng trên mỗi khoảng \((-\pi/2+k\pi,\ \pi/2+k\pi)\).
@@ -355,7 +355,7 @@ Hai điểm cùng độ cao đã đủ chứng minh chu kỳ chưa?
 
 Đây là các khoảng đủ dài để thấy một nhánh tăng/giảm trọn vẹn; tại các điểm **tiệm cận của tan/cot**, hàm không xác định nên không được gộp hai nhánh thành một khoảng. Tập giá trị sin/cos là \([-1,1]\), còn tan/cot là \(\mathbb R\), bởi mỗi nhánh tan/cot đi từ âm vô hạn đến dương vô hạn hoặc ngược lại.
 
-Chẳng hạn, y=sin(3x) có chu kỳ cơ bản 2π/3 vì tăng x lên 2π/3 làm góc tăng 2π. y=cos2x+sin3x có chu kỳ 2π; hai thành phần có tần số khác nhau và chu kỳ chung phù hợp.
+Chẳng hạn, \(y=\sin(3x)\) có chu kỳ cơ bản \(\frac{2\pi}{3}\) vì tăng \(x\) lên \(\frac{2\pi}{3}\) làm góc tăng \(2\pi\). Hàm \(y=\cos 2x+\sin 3x\) có chu kỳ \(2\pi\); hai thành phần có tần số khác nhau và chu kỳ chung phù hợp.
 
 **Ví dụ**
 
@@ -365,11 +365,11 @@ Chẳng hạn, y=sin(3x) có chu kỳ cơ bản 2π/3 vì tăng x lên 2π/3 là
 
 **Vận dụng**
 
-Chu kỳ cơ bản của y=cos(4x) là gì?
+Chu kỳ cơ bản của \(y=\cos(4x)\) là gì?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-π/2.
+\(\frac{\pi}{2}\).
 
 Nếu đo chu kỳ bằng cách nhìn một đỉnh, kiểm đỉnh tiếp theo và điều kiện trên mọi x. Hãy làm lại Bài 30 và Bài 40 trong phần Luyện tập.
 
@@ -381,7 +381,7 @@ Nếu đo chu kỳ bằng cách nhìn một đỉnh, kiểm đỉnh tiếp theo 
 
 Biên độ khác dịch pha và trục giữa ra sao?
 
-Với sin và cos, dịch pha làm đổi vị trí đỉnh nhưng giữ tính tuần hoàn. Đồ thị giúp đọc điều gì ngoài một bảng giá trị? Cần nhớ mỗi điểm đồ thị là (x,f(x)); chuyển dịch ngang/đứng. y=A sin(ωx+φ)+d (A,ω≠0) có biên độ |A|, chu kỳ 2π/|ω|, trục giữa y=d và tập giá trị [d−|A|,d+|A|]. Pha dịch ngang −φ/ω; không nhầm chiều dấu. Nếu ω=0, hàm hằng và không có chu kỳ cơ bản.
+Với sin và cos, dịch pha làm đổi vị trí đỉnh nhưng giữ tính tuần hoàn. Đồ thị giúp đọc điều gì ngoài một bảng giá trị? Cần nhớ mỗi điểm đồ thị là \((x;f(x))\); chuyển dịch ngang/đứng. Hàm \(y=A\sin(\omega x+\varphi)+d\) với \(A\ne0,\ \omega\ne0\) có biên độ \(\lvert A\rvert\), chu kỳ \(\frac{2\pi}{\lvert\omega\rvert}\), trục giữa \(y=d\) và tập giá trị \([d-\lvert A\rvert;d+\lvert A\rvert]\). Pha dịch ngang \(-\frac{\varphi}{\omega}\); không nhầm chiều dấu. Nếu \(\omega=0\), hàm hằng và không có chu kỳ cơ bản.
 
 > **PHƯƠNG PHÁP — Biên độ, pha và trục giữa.** Trước hết, hình bên dưới vẽ \(y=\sin x\) trên một chu kỳ \([0,2\pi]\): đi qua \((0,0)\), cực đại 1 ở \(x=\pi/2\), về 0 ở \(\pi\), cực tiểu −1 ở \(3\pi/2\), rồi về 0 ở \(2\pi\). Khi kết hợp các phép biến đổi, ví dụ \(y=-2\sin(3x-\pi/2)+1\) có biên độ 2, chu kỳ \(2\pi/3\), đường giữa \(y=1\), tập giá trị \([-1,3]\), dịch pha phải \(\pi/6\) trước khi lật và co giãn đứng. Hình gốc giải thích chu kỳ, **không phải hình của hàm đã biến đổi**.
 
@@ -401,7 +401,7 @@ Với sin và cos, dịch pha làm đổi vị trí đỉnh nhưng giữ tính t
 
 **Vận dụng**
 
-y=3cos(2x)+4 có giá trị lớn nhất, nhỏ nhất là bao nhiêu?
+\(y=3\cos(2x)+4\) có giá trị lớn nhất, nhỏ nhất là bao nhiêu?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
@@ -417,7 +417,7 @@ Nếu tìm sai giá trị lớn nhất, nhỏ nhất của \(y=3\cos(2x)+4\), h�
 
 Có thể nối hai nhánh tan qua tiệm cận không?
 
-Đồ thị tan và cot có điểm cấm, nên phải tách thành từng nhánh. Tại sao đồ thị tan không nối liền qua x=π/2? Để xác định điều đó, cần xét tan là sin/cos, cot là cos/sin. Tan có miền \(\mathbb R\setminus\{\pi/2+k\pi:k\in\mathbb Z\}\), chu kỳ \(\pi\) và tiệm cận đứng ở điểm loại. Cot có miền \(\mathbb R\setminus\{k\pi:k\in\mathbb Z\}\), chu kỳ \(\pi\) và tiệm cận đứng tại các điểm đó. **Mỗi nhánh tan đồng biến, mỗi nhánh cot nghịch biến** trên khoảng nằm giữa hai tiệm cận liên tiếp. Đồ thị chia nhánh, không nối qua tiệm cận.
+Đồ thị tan và cot có điểm cấm, nên phải tách thành từng nhánh. Tại sao đồ thị tan không nối liền qua \(x=\frac{\pi}{2}\)? Để xác định điều đó, cần xét \(\tan x=\frac{\sin x}{\cos x}\), \(\cot x=\frac{\cos x}{\sin x}\). Tan có miền \(\mathbb R\setminus\left\{\frac{\pi}{2}+k\pi:k\in\mathbb Z\right\}\), chu kỳ \(\pi\) và tiệm cận đứng ở điểm loại. Cot có miền \(\mathbb R\setminus\{k\pi:k\in\mathbb Z\}\), chu kỳ \(\pi\) và tiệm cận đứng tại các điểm đó. **Mỗi nhánh tan đồng biến, mỗi nhánh cot nghịch biến** trên khoảng nằm giữa hai tiệm cận liên tiếp. Đồ thị chia nhánh, không nối qua tiệm cận.
 
 > **TÍNH CHẤT — Nhánh tan/cot và tiệm cận đứng.** Trên hình, \(y=\tan x\) không xác định tại \(x=\pm\pi/2\) (và nói chung \(\pi/2+k\pi\)), vì \(\cos x=0\). Những đường này là **tiệm cận đứng**, không phải điểm để nối các nhánh. Nếu thay đối số thành \(2x\), hàm \(y=\tan(2x)\) sẽ có điểm loại tại \(x=\pi/4+k\pi/2\) và chu kỳ cơ bản \(\pi/2\). Hình đang minh họa \(\tan x\), không vẽ phiên bản \(\tan(2x)\).
 
@@ -433,11 +433,11 @@ Có thể nối hai nhánh tan qua tiệm cận không?
 
 **Vận dụng**
 
-Tanx xác định tại x=π không?
+\(\tan x\) xác định tại \(x=\pi\) không?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Có, tanπ=0; cotπ mới không xác định.
+Có, \(\tan\pi=0\); \(\cot\pi\) mới không xác định.
 
 Ghi bảng điểm loại trước khi nối hình; làm lại Bài 37, Bài 38 và Bài 42 trong phần Luyện tập.
 
@@ -455,11 +455,11 @@ Một nghiệm trên đường tròn có thể lặp lại sau những chu kỳ,
 
 Vì sao sin/cos thường phải ghi hai họ nghiệm?
 
-> **PHƯƠNG PHÁP — Nghiệm của sin/cos.** Giải sinx=a khác giải đa thức chỗ nào? Ta đã biết đường tròn đơn vị, nghiệm cùng vị trí theo chu kỳ. Sinx=a có nghiệm thực khi |a|≤1; nếu sinα=a thì x=α+2kπ hoặc x=π−α+2kπ. Cosx=a có x=±arccos(a)+2kπ khi |a|≤1. Trong công thức này \(\arccos(a)\in[0,\pi]\), còn \(\alpha\) phải là góc đã biết thỏa \(\sin\alpha=a\).
+> **PHƯƠNG PHÁP — Nghiệm của sin/cos.** Giải \(\sin x=a\) khác giải đa thức chỗ nào? Ta đã biết đường tròn đơn vị, nghiệm cùng vị trí theo chu kỳ. Phương trình \(\sin x=a\) có nghiệm thực khi \(\lvert a\rvert\le1\); nếu \(\sin\alpha=a\) thì \(x=\alpha+2k\pi\) hoặc \(x=\pi-\alpha+2k\pi\). Phương trình \(\cos x=a\) có \(x=\pm\arccos(a)+2k\pi\) khi \(\lvert a\rvert\le1\), với \(k\in\mathbb Z\). Trong công thức này \(\arccos(a)\in[0;\pi]\), còn \(\alpha\) phải là góc đã biết thỏa \(\sin\alpha=a\).
 
 Khi đề cho giá trị lượng giác **không phải góc đặc biệt**, máy tính cầm tay có thể tìm **một góc đại diện** bằng các phím nghịch đảo như \(\sin^{-1},\cos^{-1},\tan^{-1}\). Chọn trước chế độ **RAD** nếu lời giải ghi radian, **DEG** nếu ghi độ. Ví dụ, với \(\sin x=0{,}3\), dùng \(\alpha=\arcsin(0{,}3)\) trong chế độ RAD rồi vẫn phải viết **hai họ** \(x=\alpha+2k\pi\) hoặc \(x=\pi-\alpha+2k\pi\), \(k\in\mathbb Z\); giá trị máy tính không thay thế các họ nghiệm. Các phím ngược trả một **giá trị chính**, không phải toàn bộ nghiệm.
 
-Chẳng hạn, Sin(2x)=√3/2: 2x=π/3+2kπ hoặc 2π/3+2kπ ⇒ x=π/6+kπ hoặc π/3+kπ, k∈ℤ. Có hai họ vì đường ngang cắt đường tròn tại hai điểm.
+Chẳng hạn, \(\sin(2x)=\frac{\sqrt3}{2}\): \(2x=\frac{\pi}{3}+2k\pi\) hoặc \(2x=\frac{2\pi}{3}+2k\pi\), suy ra \(x=\frac{\pi}{6}+k\pi\) hoặc \(x=\frac{\pi}{3}+k\pi\), \(k\in\mathbb Z\). Có hai họ vì đường ngang cắt đường tròn tại hai điểm.
 
 **Ví dụ**
 
@@ -469,13 +469,13 @@ Chẳng hạn, Sin(2x)=√3/2: 2x=π/3+2kπ hoặc 2π/3+2kπ ⇒ x=π/6+kπ ho�
 
 **Vận dụng**
 
-Giải cosx=0 trên ℝ.
+Giải \(\cos x=0\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-x=π/2+kπ (k∈ℤ).
+\(x=\frac{\pi}{2}+k\pi\), \(k\in\mathbb Z\).
 
-Nếu chỉ viết một nghiệm, quay thêm chu kỳ; nếu |a|>1 thì vô nghiệm. Hãy làm lại Bài 44, Bài 45 và Bài 60 trong phần Luyện tập.
+Nếu chỉ viết một nghiệm, quay thêm chu kỳ; nếu \(\lvert a\rvert>1\) thì vô nghiệm. Hãy làm lại Bài 44, Bài 45 và Bài 60 trong phần Luyện tập.
 
 </details>
 
@@ -485,9 +485,9 @@ Nếu chỉ viết một nghiệm, quay thêm chu kỳ; nếu |a|>1 thì vô ngh
 
 Vì sao tan/cot chỉ có một họ nghiệm mỗi chu kỳ?
 
-> **PHƯƠNG PHÁP — Nghiệm của tan/cot.** Khi giải phương trình tan hoặc cot, miền xác định thuộc về lời giải. Tại sao tanx=a chỉ cần một họ nghiệm? Ta sử dụng tan xác định khi cosx≠0; tính chu kỳ π. Tan là tỉ số với cos không bằng 0; tanx=a ⇔ x=arctan(a)+kπ, k∈ℤ. Cotx=a ⇔ x=arccot(a)+kπ với arccot chọn trong (0,π), k∈ℤ; cách viết khác phải định rõ nhánh arccot. Luôn xét điều kiện ban đầu khi có biểu thức ghép.
+> **PHƯƠNG PHÁP — Nghiệm của tan/cot.** Khi giải phương trình tan hoặc cot, miền xác định thuộc về lời giải. Tại sao \(\tan x=a\) chỉ cần một họ nghiệm? Ta sử dụng tan xác định khi \(\cos x\ne0\); tính chu kỳ \(\pi\). Tan là tỉ số với cos không bằng 0; \(\tan x=a\Leftrightarrow x=\arctan(a)+k\pi\), \(k\in\mathbb Z\). \(\cot x=a\Leftrightarrow x=\operatorname{arccot}(a)+k\pi\) với \(\operatorname{arccot}(a)\in(0;\pi)\), \(k\in\mathbb Z\); cách viết khác phải định rõ nhánh arccot. Luôn xét điều kiện ban đầu khi có biểu thức ghép.
 
-Xét ví dụ: Tan(x+π/4)=−1 ⇒ x+π/4=−π/4+kπ ⇒ x=−π/2+kπ. Thế lại: góc tan bằng −π/4+kπ, không chạm điểm loại.
+Xét ví dụ: \(\tan\left(x+\frac{\pi}{4}\right)=-1\), suy ra \(x+\frac{\pi}{4}=-\frac{\pi}{4}+k\pi\), nên \(x=-\frac{\pi}{2}+k\pi\), \(k\in\mathbb Z\). Thế lại: góc tan bằng \(-\frac{\pi}{4}+k\pi\), không chạm điểm loại.
 
 **Ví dụ**
 
@@ -497,13 +497,13 @@ Xét ví dụ: Tan(x+π/4)=−1 ⇒ x+π/4=−π/4+kπ ⇒ x=−π/2+kπ. Thế 
 
 **Vận dụng**
 
-Giải tan(2x)=0.
+Giải \(\tan(2x)=0\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-x=kπ/2, k∈ℤ; mọi nghiệm nằm trong miền tan.
+\(x=\frac{k\pi}{2}\), \(k\in\mathbb Z\); mọi nghiệm nằm trong miền tan.
 
-Không nhân chéo cho cos=0; làm lại Bài 46, Bài 47 và Bài 61 trong phần Luyện tập.
+Không nhân chéo tại điểm \(\cos x=0\); làm lại Bài 46, Bài 47 và Bài 61 trong phần Luyện tập.
 
 </details>
 
@@ -515,7 +515,7 @@ Chia cho sin/cos có thể làm mất nghiệm nào?
 
 > **TÍNH CHẤT — Biến đổi không làm mất nghiệm.** Biến đổi phương trình lượng giác có thể sinh nghiệm ngoài điều kiện. Rút gọn có thể vô tình tạo nghiệm mới như thế nào? Ta bắt đầu từ hệ thức cơ bản và quy tắc biến đổi tương đương. Phân tích thành tích chỉ tương đương nếu không chia cho biểu thức có thể bằng 0. Nếu khử mẫu/biến đổi căn cần giữ điều kiện ban đầu rồi thử lại. Một tích bằng 0 cho hợp các họ nghiệm của từng thừa số; không vứt một nhánh.
 
-Chẳng hạn, Sinx(2cosx−1)=0 ⇒ sinx=0 hoặc cosx=1/2, nên x=kπ hoặc x=±π/3+2kπ. Không được chia cả hai vế cho sinx vì mất x=kπ.
+Chẳng hạn, \(\sin x(2\cos x-1)=0\) suy ra \(\sin x=0\) hoặc \(\cos x=\frac12\), nên \(x=k\pi\) hoặc \(x=\pm\frac{\pi}{3}+2k\pi\), \(k\in\mathbb Z\). Không được chia cả hai vế cho \(\sin x\) vì mất họ nghiệm \(x=k\pi\).
 
 **Ví dụ**
 
@@ -525,11 +525,11 @@ Chẳng hạn, Sinx(2cosx−1)=0 ⇒ sinx=0 hoặc cosx=1/2, nên x=kπ hoặc x
 
 **Vận dụng**
 
-Giải 2sinx cosx=0.
+Giải \(2\sin x\cos x=0\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-x=kπ/2, k∈ℤ; hoặc sinx=0 (kπ) hoặc cosx=0 (π/2+kπ).
+\(x=\frac{k\pi}{2}\), \(k\in\mathbb Z\); hoặc xét \(\sin x=0\) cho \(x=k\pi\), hoặc \(\cos x=0\) cho \(x=\frac{\pi}{2}+k\pi\).
 
 Nếu định chia hai vế cho \(\sin x\), hãy xét riêng trường hợp \(\sin x=0\) trước để không mất nghiệm. Làm lại Bài 62 (phương trình phân thức cần lọc điểm mẫu bằng 0), rồi Bài 55 (điều kiện xác định của hai biểu thức tang) trong phần Luyện tập; không chia hoặc nhân với biểu thức có thể bằng 0 khi chưa xét điều kiện.
 
@@ -539,11 +539,11 @@ Nếu định chia hai vế cho \(\sin x\), hãy xét riêng trường hợp \(\
 
 ### 4.4. Lọc nghiệm theo khoảng
 
-Đoạn [0,2π) có lấy góc 2π không?
+Khoảng nửa mở \([0;2\pi)\) có lấy góc \(2\pi\) không?
 
-> **PHƯƠNG PHÁP — Lọc nghiệm theo khoảng.** Nghiệm tổng quát cần lọc khi chỉ xét một khoảng hữu hạn. Một họ nghiệm có vô hạn số nguyên k, nhưng bài toán chỉ chọn khoảng nhất định. Cần nhớ bất đẳng thức, khoảng mở/đóng và hàm lượng giác. Giải trên ℝ trước, sau đó lọc k theo khoảng hoặc xét trực tiếp các góc trên đường tròn trong [a,b]. Với [a,b) chỉ lấy a nếu thỏa, loại b; tránh đếm hai góc 0 và 2π là hai nghiệm khác nhau khi khoảng nửa mở.
+> **PHƯƠNG PHÁP — Lọc nghiệm theo khoảng.** Nghiệm tổng quát cần lọc khi chỉ xét một khoảng hữu hạn. Một họ nghiệm có vô hạn số nguyên \(k\), nhưng bài toán chỉ chọn khoảng nhất định. Cần nhớ bất đẳng thức, khoảng mở/đóng và hàm lượng giác. Giải trên \(\mathbb R\) trước, sau đó lọc \(k\) theo khoảng hoặc xét trực tiếp các góc trên đường tròn trong \([a;b]\). Với \([a;b)\) chỉ lấy \(a\) nếu thỏa, loại \(b\); tránh đếm cả hai góc \(0\) và \(2\pi\) khi khoảng nửa mở là \([0;2\pi)\).
 
-Chẳng hạn, 2sin²x−3sinx+1=0 ⇒ (2sinx−1)(sinx−1)=0. Với [0,2π): x=π/6,5π/6,π/2, tổng 3 nghiệm. Không thêm 2π vì không thuộc khoảng.
+Chẳng hạn, \(2\sin^2 x-3\sin x+1=0\Rightarrow (2\sin x-1)(\sin x-1)=0\). Với \(x\in[0;2\pi)\): \(x=\frac{\pi}{6},\frac{5\pi}{6},\frac{\pi}{2}\), tổng 3 nghiệm. Không thêm \(2\pi\) vì không thuộc khoảng.
 
 **Ví dụ**
 
@@ -553,11 +553,11 @@ Chẳng hạn, 2sin²x−3sinx+1=0 ⇒ (2sinx−1)(sinx−1)=0. Với [0,2π): x
 
 **Vận dụng**
 
-Giải sinx=0 trên [0,2π).
+Giải \(\sin x=0\) trên \([0;2\pi)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-x=0,π; loại 2π.
+\(x=0\) hoặc \(x=\pi\); loại \(2\pi\).
 
 Vẽ dãy nghiệm trên trục số và đánh dấu đầu mút; làm lại Bài 53, Bài 54 và Bài 63 trong phần Luyện tập.
 
@@ -569,9 +569,9 @@ Vẽ dãy nghiệm trên trục số và đánh dấu đầu mút; làm lại B�
 
 Nghiệm của mô hình ngoài miền thời gian có hợp lệ không?
 
-> **PHƯƠNG PHÁP — Chu kỳ trong mô hình có giới hạn.** Mô hình tuần hoàn thực tế còn có giới hạn thời gian và đơn vị phải kiểm. Sóng, thủy triều và nhiệt độ thay đổi trong thời gian hữu hạn có thể mô tả bằng công thức nào? Để xác định điều đó, cần xét đồ thị sin/cos, chu kỳ, đơn vị thời gian. Mô hình h(t)=d+Acos(ωt+φ) có điều kiện miền t thực tế, mức nền d, biên độ |A|, chu kỳ 2π/|ω| khi ω≠0. Dữ liệu thực không nhất thiết đúng sinus lý tưởng; phải phân biệt mô hình giả định với kết luận về thế giới.
+> **PHƯƠNG PHÁP — Chu kỳ trong mô hình có giới hạn.** Mô hình tuần hoàn thực tế còn có giới hạn thời gian và đơn vị phải kiểm. Sóng, thủy triều và nhiệt độ thay đổi trong thời gian hữu hạn có thể mô tả bằng công thức nào? Để xác định điều đó, cần xét đồ thị sin/cos, chu kỳ, đơn vị thời gian. Mô hình \(h(t)=d+A\cos(\omega t+\varphi)\) có điều kiện miền \(t\) thực tế, mức nền \(d\), biên độ \(\lvert A\rvert\), chu kỳ \(\frac{2\pi}{\lvert\omega\rvert}\) khi \(A\ne0,\ \omega\ne0\). Dữ liệu thực không nhất thiết đúng dạng sin lý tưởng; phải phân biệt mô hình giả định với kết luận về thế giới.
 
-Chẳng hạn, Mực nước giả định h(t)=3+1,2cos(πt/6) (m), 0≤t≤24 h. Chu kỳ 12 h; h(0)=4,2 m; h(6)=1,8 m; lần đầu đạt mức nền h=3 m khi t=3 h. Đây chỉ là mô hình luyện toán, không phải dự báo thật.
+Chẳng hạn, mực nước giả định \(h(t)=3+1{,}2\cos\left(\frac{\pi t}{6}\right)\) (m), \(0\le t\le24\) giờ. Chu kỳ 12 giờ; \(h(0)=4{,}2\) m; \(h(6)=1{,}8\) m; lần đầu đạt mức nền \(h=3\) m khi \(t=3\) giờ. Đây chỉ là mô hình luyện toán, không phải dự báo thật.
 
 **Ví dụ**
 
