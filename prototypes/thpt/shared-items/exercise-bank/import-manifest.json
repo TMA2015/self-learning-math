@@ -17334,6 +17334,81 @@
         "Zero-vector wording in frozen ChII source explicitly 'không có hướng xác định'; preserve prior reviewed wording pending fresh textbook convention reconciliation with CĐ13. No fresh SGK/SBT PDF or full source parity/PED PASS; no change IDs/source/version/original_outcome_ids/rubric/status/interaction, no auto-grade or replay edit. 148 target links resolve and 219 placements resolve; 207 practice/12 replay order matches source."
       ],
       "next": "CĐ19–20; CĐ13 ChII remaining now covered, CĐ15 thin outcomes and Written reconciliation remain open."
+    },
+    "formative_scoped_audit_cp63": {
+      "checkpoint": 63,
+      "baseline": "f4705b95a92abd62582837c23273e1c3f843a152",
+      "scope": "CĐ19–20 topic formative, G11 ChVIII SGK related formative, G10 ChVIII/IX read-only and topic Written read-only",
+      "files": [
+        {
+          "path": "items/cd19.json",
+          "before": "d3b7f43809968988c817a5044953a42ce02554af",
+          "after": "5622ecdddab2e8ad4c4fe855728c786af06392ec",
+          "changed": 14
+        },
+        {
+          "path": "items/cd20.json",
+          "before": "3fbb493496c32e50fbbc3b77bb288f17607572a2",
+          "after": "06756ef17a84dab41491817a619edd6e195c8a52",
+          "changed": 17
+        },
+        {
+          "path": "items/g11-chviii.json",
+          "before": "1cc0c14893932fe0db6903ed6667073c1cd5bf9c",
+          "after": "df162077a215c749606aa97e10c47a3f6f4991af",
+          "changed": 39
+        },
+        {
+          "path": "placements/cd19.json",
+          "before": "f19f9842755761430b76d80356ac35d10639432f",
+          "after": "57221192c9ce62687e33e078b1efcd677466c426",
+          "changed": 1
+        }
+      ],
+      "source_evidence": {
+        "cd19_knowledge": "9c482d5e4017336e397966f810047590bdfc4c1f",
+        "cd19_practice": "37cfd4178da9a30bf8de9dbe60e6399f02e85137",
+        "cd19_replay": "b0fc1d6d82cf2c8d4aee11cc7df0f66d75a6f211",
+        "cd20_knowledge": "6722873d012f3073ed467079dd469f3217d48a86",
+        "cd20_practice": "b6753b682ad90c9bb2410c3aa7487d2cfae7d96b",
+        "cd20_replay": "bf84193df1d6bf1600fdca91c0542ef478a038c1",
+        "cd19_written": "2faa5d797eb16020d21673c572c443f1cb7acb41",
+        "cd20_written": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9"
+      },
+      "reviewed": {
+        "topic_formative": 31,
+        "related_g11_formative": 39,
+        "g10_formative_preserved": 39,
+        "topic_written": 6,
+        "changed_records": 70,
+        "placement_outcomes_corrected": 1,
+        "placements_resolve": 80,
+        "d6_targets_resolve": 70,
+        "practice_outcomes": 31,
+        "projection_order": [
+          {
+            "topic": 19,
+            "practice": 42,
+            "replay": 7,
+            "practice_order_match": true,
+            "replay_order_match": true
+          },
+          {
+            "topic": 20,
+            "practice": 20,
+            "replay": 11,
+            "practice_order_match": true,
+            "replay_order_match": true
+          }
+        ]
+      },
+      "findings": [
+        "CĐ19 P01 overlapping lists count once; P02 restricted product choices; P03 compare repetition; P05 complementary adjacency; P08 count allowed group compositions; P11 polynomial constant core plus optional reciprocal SBT; P12 optional even/odd coefficient sums. P13/P14 checked numerical values and calculator relation, new hints and feedback. G10 B25-P07 mapping O10→O11 (polynomial constant term), preserve frozen marker order. O13/O14 only one formative.",
+        "CĐ20 P02 impossible/certain/possible; P03 physical outcomes versus labels; P05 finite equiprobable scope; P08 complement verified by direct enumeration; P10 compare with/without replacement; P14 inverse addition rule and bounds; P16 independent device success and complement, changed parameters to avoid KFT duplicate; P17 intersection/union/exactly one. 17 outcomes each only one topic formative. No SGK practice placements in frozen CĐ20 source; do not invent placements. 39 SGK G11 B28–30 related public formative hints/D6, no new topic placements. G10 ChVIII 25 + ChIX 14 formative already upgraded, read and preserved; 12+10 TRY and 3 KFT kept unchanged.",
+        "Six topic Written source blocks read; all keys correct on given data, six missing library pointers. TOP19-W01 says split cases but solution counts two equivalent unit choices together; valid, may explain explicitly. TOP19-W03 requires optional coefficient sum before section 3.5; note prerequisite/optional distinction at later reconciliation. CĐ20 W01–03 correct and integrated, W03 covers complementary event, not a replacement for independent formative variants. Related SGK Written not in topic placements; not audited this round.",
+        "Readback 70/70 D6 targets, 80/80 placements; 42+20 practice and 7+11 replay order exactly source markers. No new IDs, source/version/original outcome/rubric/status/interaction changes or auto-grade; 325 Written refs unchanged. No fresh SGK/SBT PDF or Academic/PED PASS."
+      ],
+      "next": "CĐ21–22, then reconcile thin CĐ19 O13/O14, CĐ20 SGK shared coverage and previous CĐ15 gaps/Written within authorized scope."
     }
   }
 }
