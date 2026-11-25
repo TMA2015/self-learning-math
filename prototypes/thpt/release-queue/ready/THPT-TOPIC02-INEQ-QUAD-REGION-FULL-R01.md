@@ -1,3 +1,6 @@
+<!-- A04 WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 CD02-A01–A06 edited in canonical at candidate blob `db609ea5aa1337b46b2e5dc1acc404d91d92bf13`, commit `9f40f23a83cff1d024fdabc92fa710560327b2d0`. Previous signed pointers below are historical only until affected Q18/V2/ready re-lock and X-G.5 verification; no RELEASE authorization.
+
 <!-- MASTER974_TOPIC02_FULL_AUDIT_CONTENT_READY_20261121 -->
 **CURRENT AUTHORING Q01–Q18 self-verified CĐ02 snapshot under v3.2.0:** canonical learner source `d2f1ac8d5526e28cb9cf4e4c56b005ebea51dbb5`, signed complete 16-outcome/38-original-canonical/4 Written/3 SVG/16 public selfcheck author Q18 receipt `c1766ba52a80be61b9f8fd2124d0116605f74b92`, author metadata `11a25dac858fd6d33096b90dccb65c60abcc334c`, sole V2 `ee5068f0812867e0a40f89ff3b208007ab7f5dc7`. 5 verified source math/PED defects fixed, no active P0/P1 found in this authoring audit. Primary original-S1 scoped evidence inherited faithfully (not fresh exhaustive SBT scan). **AUTHOR_SELF_VERIFIED**, *not* independent NotebookLM PASS or RELEASE. 16 public Tự kiểm tra remain CLIENT_SELF_CHECK_NO_MASTERY, no RD1/Final Submit/Mastery, no website merge/deploy. Historical notes below are snapshot-specific.
 
@@ -22,7 +25,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: 5944692c05c7ae651a42ede9afa752749a2edc08
 AUTHOR_PR: 818
 CURRENT_PR: #818 Draft AUTHORING; no merge or deploy
@@ -49,7 +52,7 @@ SVG3_PATH: prototypes/thpt/visuals/THPT_TOPIC02_QUADRATIC_SIGN_R01.svg
 SVG3_BLOB: 809ee7091849592e8312548fb8d916f1f461a77f
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
