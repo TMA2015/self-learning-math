@@ -147,7 +147,7 @@ Có thể tìm một giá trị lượng giác từ các giá trị còn lại k
 
 Chẳng hạn tại \(x=0\), tang bằng 0 nhưng côtang không xác định; không thể kết luận tích bằng 1 tại đó.
 
-Chẳng hạn, nếu \(\sin x=\frac35\) và \(x\) ở góc phần tư I: \(\cos x=\frac45\); \(\tan x=\frac34\). Nếu \(\sin x=0\) thì \(\cot x\) không xác định, dù các hệ thức không có dấu chia sau biến đổi.
+Chẳng hạn, nếu \(\sin x=\frac35\) và \(x\) ở góc phần tư I: \(\cos x=\frac45\); \(\tan x=\frac34\). Nếu \(\sin x=0\) thì \(\cot x\) không xác định; dù hệ thức đã viết gọn thành tích bằng 1, điều kiện ban đầu vẫn phải giữ.
 
 **Ví dụ**
 
@@ -310,13 +310,13 @@ Chẳng hạn, \(\sin 3x+\sin x=2\sin 2x\cos x\): đặt \(A=3x,\ B=x\) rồi d�
 
 **Vận dụng**
 
-Viết \(2\sin x\cos x\) thành hàm của \(2x\).
+Không dùng máy tính, viết \(\sin^2 x-\cos^2 x\) thành một hàm của \(2x\). Sau đó dùng công thức tích thành tổng để viết \(\sin(3x)\cos(2x)\) thành tổng.
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(\sin 2x\).
+Từ \(\cos(2x)=\cos^2 x-\sin^2 x\), đổi thứ tự hai số hạng cho \(\sin^2 x-\cos^2 x=-\cos(2x)\). Kiểm tại \(x=0\): hai vế cùng bằng \(-1\).
 
-Nếu nhầm hệ số 2, thay \(x=\frac{\pi}{4}\) để kiểm. Hãy làm lại Bài 17, Bài 18 và Bài 26 trong phần Luyện tập.
+Áp dụng tích thành tổng với \(a=3x,\ b=2x\), được \(\sin(3x)\cos(2x)=\frac12[\sin(5x)+\sin x]\). Có thể nhân ngược công thức cộng của sin để tự kiểm. Nếu quên hệ số \(\frac12\), hãy thử \(x=\frac{\pi}{2}\) để thấy vế trái bằng 1 nhưng tổng chưa chia bằng 2. Hãy làm lại Bài 17, Bài 18 và Bài 26 trong phần Luyện tập.
 
 </details>
 
@@ -484,7 +484,7 @@ Vì sao sin/cos thường phải ghi hai họ nghiệm?
 
 Khi đề cho giá trị lượng giác **không phải góc đặc biệt**, máy tính cầm tay có thể tìm **một góc đại diện** bằng các phím nghịch đảo như \(\sin^{-1},\cos^{-1},\tan^{-1}\). Chọn trước chế độ **RAD** nếu lời giải ghi radian, **DEG** nếu ghi độ. Ví dụ, với \(\sin x=0{,}3\), dùng \(\alpha=\arcsin(0{,}3)\) trong chế độ RAD rồi vẫn phải viết **hai họ** \(x=\alpha+2k\pi\) hoặc \(x=\pi-\alpha+2k\pi\), \(k\in\mathbb Z\); giá trị máy tính không thay thế các họ nghiệm. Các phím ngược trả một **giá trị chính**, không phải toàn bộ nghiệm: với sin, góc chính nằm trong \([-\frac{\pi}{2};\frac{\pi}{2}]\); với cos, trong \([0;\pi]\).
 
-Nếu số đo dùng **độ**, thay nửa vòng \(\pi\) bằng \(180^\circ\) và cả vòng \(2\pi\) bằng \(360^\circ\). Ví dụ, \(\sin x=\sin 30^\circ\) cho \(x=30^\circ+360^\circ k\) hoặc \(x=150^\circ+360^\circ k\); \(\cos x=\cos 60^\circ\) cho \(x=\pm60^\circ+360^\circ k\), \(k\in\mathbb Z\). Không trộn độ với radian trong cùng một họ nghiệm.
+Nếu số đo dùng **độ**, thay nửa vòng \(\pi\) bằng \(180^\circ\) và cả vòng \(2\pi\) bằng \(360^\circ\). Ví dụ, \(\sin x=\sin 30^\circ\) cho \(x=30^\circ+360^\circ k\) hoặc \(x=150^\circ+360^\circ k\); \(\cos x=\cos 60^\circ\) cho \(x=\pm60^\circ+360^\circ k\), \(k\in\mathbb Z\). Không trộn độ với radian trong cùng một họ nghiệm. Khi \(a=1\) hoặc \(a=-1\), hai họ của sin hoặc hai dấu của cos trùng nhau (có thể lệch một chu kỳ); chỉ cần ghi họ nghiệm một lần.
 
 Chẳng hạn, \(\sin(2x)=\frac{\sqrt3}{2}\): \(2x=\frac{\pi}{3}+2k\pi\) hoặc \(2x=\frac{2\pi}{3}+2k\pi\), suy ra \(x=\frac{\pi}{6}+k\pi\) hoặc \(x=\frac{\pi}{3}+k\pi\), \(k\in\mathbb Z\). Có hai họ vì đường ngang cắt đường tròn tại hai điểm.
 
@@ -530,13 +530,13 @@ Xét ví dụ: \(\tan\left(x+\frac{\pi}{4}\right)=-1\), suy ra \(x+\frac{\pi}{4}
 
 **Vận dụng**
 
-Giải \(\tan(2x)=0\).
+Giải \(\tan(2x)=0\) và \(\cot(2x)=0\). Vì sao hai phương trình không có nghiệm chung?
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
-\(x=\frac{k\pi}{2}\), \(k\in\mathbb Z\); mọi nghiệm nằm trong miền tan.
+Với tang, cần \(\cos(2x)\ne0\); tử số bằng 0 khi \(2x=k\pi\), nên \(x=\frac{k\pi}{2}\). Với côtang, cần \(\sin(2x)\ne0\); tử số bằng 0 khi \(2x=\frac{\pi}{2}+k\pi\), nên \(x=\frac{\pi}{4}+\frac{k\pi}{2}\), với \(k\in\mathbb Z\) trong cả hai họ. Mỗi họ đều thỏa điều kiện riêng, nhưng ở nghiệm của tang thì côtang không xác định và ngược lại.
 
-Không nhân chéo tại điểm \(\cos x=0\); làm lại Bài 46, Bài 47 và Bài 61 trong phần Luyện tập.
+Nếu viết cùng một họ cho cả hai phương trình, hãy đối chiếu hai mẫu số và hai đồ thị ở mục 3.4; làm lại Bài 46, Bài 47 và Bài 61 trong phần Luyện tập.
 
 </details>
 
