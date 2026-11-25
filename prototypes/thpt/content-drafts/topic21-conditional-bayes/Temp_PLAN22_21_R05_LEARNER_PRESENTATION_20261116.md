@@ -28,7 +28,7 @@ Khi rút ngẫu nhiên một học sinh trong cả lớp, ta xét mọi học si
 
 **Đề bài:** Một lớp có 20 học sinh, trong đó 8 bạn tham gia câu lạc bộ cờ và 5 trong 8 bạn ấy đeo kính. Chọn đều một học sinh, biết bạn được chọn thuộc câu lạc bộ cờ. Tính xác suất bạn ấy đeo kính.
 
-**Lời giải:** Thông tin “thuộc câu lạc bộ cờ” giới hạn nhóm đang xét còn 8 bạn. Trong nhóm này có 5 bạn đeo kính, nên xác suất cần tìm là \(5/8\). Không lấy \(5/20\), vì 20 là quy mô cả lớp, không phải nhóm đã biết. Việc chọn đều là giả thiết cần thiết cho cách đếm theo số học sinh.
+**Lời giải:** Thông tin “thuộc câu lạc bộ cờ” giới hạn nhóm đang xét còn 8 bạn. Trong nhóm này có 5 bạn đeo kính, nên xác suất cần tìm là \(\frac{5}{8}\). Không lấy \(\frac{5}{20}\), vì 20 là quy mô cả lớp, không phải nhóm đã biết. Việc chọn đều là giả thiết cần thiết cho cách đếm theo số học sinh.
 
 **Kiến thức cần ghi nhớ**
 
@@ -41,7 +41,7 @@ Trong 24 vé khác nhau được chọn đều có 9 vé xanh, 6 trong 9 vé xan
 <!-- ITEM_ID: THPT-TOP21-T01; ROLE: TOPIC_FIRST_TRY; LEARNER_LABEL: VAN_DUNG; PRIMARY_OUTCOME: TOP21-O01; CONTENT_VERSION: TOP21-R06; PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Nhóm điều kiện gồm 9 vé xanh; có 6 vé trong nhóm đó có sao. Do đó P(sao | xanh)=6/9=2/3, không phải 6/24.
+Nhóm điều kiện gồm 9 vé xanh; có 6 vé trong nhóm đó có sao. Do đó \(P(\text{sao}\mid\text{xanh})=\frac69=\frac23\), không phải 6/24.
 
 **Kiểm lỗi**
 
@@ -55,7 +55,7 @@ Nếu chia cho 24, em đã quên thu hẹp Ω khi biết màu vé. Tự gạch r
 
 Đôi khi ta không được cho số người hoặc số phiếu trong từng nhóm, mà chỉ biết các xác suất của biến cố. Ta vẫn muốn giữ đúng cách nhìn từ bài trước: khi biết \(B\) xảy ra, ta chỉ quan tâm phần \(B\), còn trường hợp vừa \(A\) vừa \(B\) chính là vùng giao \(A\cap B\). Lấy phần giao so với toàn bộ phần đã biết sẽ cho xác suất của \(A\) **trong điều kiện \(B\)**.
 
-Nếu các kết quả ban đầu đồng khả năng, ta có thể dùng tỉ số \(n(A\cap B)/n(B)\). Khi dữ liệu cho dưới dạng xác suất, cùng ý tưởng ấy được viết bằng cách chia xác suất giao cho xác suất của biến cố đã biết. Điều kiện \(P(B)>0\) không thể bỏ qua vì không được chia cho 0.
+Nếu các kết quả ban đầu đồng khả năng, ta có thể dùng tỉ số \(\frac{n(A\cap B)}{n(B)}\). Khi dữ liệu cho dưới dạng xác suất, cùng ý tưởng ấy được viết bằng cách chia xác suất giao cho xác suất của biến cố đã biết. Điều kiện \(P(B)>0\) không thể bỏ qua vì không được chia cho 0.
 
 Khi số liệu có **hai nhóm** và **hai đặc điểm**, ta có thể xếp số người hoặc số vật vào **bảng dữ liệu thống kê 2×2**. Mỗi ô cho biết số trường hợp thỏa **đồng thời** hai điều kiện; tổng của hàng hoặc cột cho biết có bao nhiêu trường hợp thuộc nhóm đã biết. Chẳng hạn, xét dữ liệu giả định về 30 học sinh như sau:
 
@@ -65,16 +65,16 @@ Khi số liệu có **hai nhóm** và **hai đặc điểm**, ta có thể xếp
 | Không tham gia câu lạc bộ cờ | 4 | 14 | 18 |
 | **Tổng** | **9** | **21** | **30** |
 
-Nếu chọn đều một học sinh và **biết bạn ấy thuộc câu lạc bộ cờ**, ta chỉ xét hàng 12 bạn: có 5 bạn đeo kính nên \(P(\text{đeo kính}\mid\text{câu lạc bộ cờ})=5/12\). Ngược lại, **biết bạn ấy đeo kính** thì phải xét cột 9 bạn: trong đó 5 bạn thuộc câu lạc bộ nên \(P(\text{câu lạc bộ cờ}\mid\text{đeo kính})=5/9\). Cùng một ô giao nhưng **mẫu số khác nhau**, vì thông tin đã biết đã đổi. Đây là bảng minh họa để học cách tính xác suất; không suy quan hệ nhân quả giữa việc tham gia câu lạc bộ và đeo kính. Chú ý vị trí sau vạch đứng: \(P(A\mid B)\) hỏi về \(A\) khi **đã biết \(B\)**, khác với \(P(B\mid A)\).
+Nếu chọn đều một học sinh và **biết bạn ấy thuộc câu lạc bộ cờ**, ta chỉ xét hàng 12 bạn: có 5 bạn đeo kính nên \(P(\text{đeo kính}\mid\text{câu lạc bộ cờ})=\frac{5}{12}\). Ngược lại, **biết bạn ấy đeo kính** thì phải xét cột 9 bạn: trong đó 5 bạn thuộc câu lạc bộ nên \(P(\text{câu lạc bộ cờ}\mid\text{đeo kính})=\frac{5}{9}\). Cùng một ô giao nhưng **mẫu số khác nhau**, vì thông tin đã biết đã đổi. Đây là bảng minh họa để học cách tính xác suất; không suy quan hệ nhân quả giữa việc tham gia câu lạc bộ và đeo kính. Chú ý vị trí sau vạch đứng: \(P(A\mid B)\) hỏi về \(A\) khi **đã biết \(B\)**, khác với \(P(B\mid A)\).
 
 > **CÔNG THỨC — Xác suất có điều kiện**
 >
-> \[P(A\mid B)=\frac{P(A\cap B)}{P(B)},\qquad P(B)>0.\] \(P(A\cap B)\) là phần giao; \(P(B)\) là toàn bộ nhóm đã biết. Khi các phần tử của B đồng khả năng có thể dùng \(n(A\cap B)/n(B)\).
+> \(P(A\mid B)=\frac{P(A\cap B)}{P(B)},\qquad P(B)>0.\) \(P(A\cap B)\) là phần giao; \(P(B)\) là toàn bộ nhóm đã biết. Khi các phần tử của B đồng khả năng có thể dùng \(\frac{n(A\cap B)}{n(B)}\).
 
 **Hai chiều điều kiện không được đánh tráo.** Với bảng 30 học sinh đã giới thiệu, 12 bạn thuộc câu lạc bộ cờ, 9 bạn đeo kính, 5 bạn ở cả hai nhóm. Đặt \(A=\{\text{đeo kính}\}\), \(B=\{\text{tham gia câu lạc bộ cờ}\}\). Khi ấy
 \[
-P(A\mid B)=\frac{5/30}{12/30}=\frac5{12},\qquad
-P(B\mid A)=\frac{5/30}{9/30}=\frac59.
+P(A\mid B)=\frac{\frac{5}{30}}{\frac{12}{30}}=\frac5{12},\qquad
+P(B\mid A)=\frac{\frac{5}{30}}{\frac{9}{30}}=\frac59.
 \]
 **Vì sao khác nhau?** Tử số đều là phần **giao**; mẫu của xác suất điều kiện là phần **đã biết** sau dấu \(\mid\). Điều kiện B là chọn **hàng** câu lạc bộ, điều kiện A là chọn **cột** đeo kính. Không thể dùng \(\frac5{30}\) làm đáp số vì chưa thu hẹp mẫu. Nếu \(P(B)=0\), công thức \(P(A\mid B)\) không xác định; không tùy tiện đặt bằng 0.
 
@@ -82,7 +82,7 @@ P(B\mid A)=\frac{5/30}{9/30}=\frac59.
 
 **Đề bài:** Chọn ngẫu nhiên đều một số nguyên từ 1 đến 10. Gọi \(A\) là biến cố “số chẵn” và \(B\) là biến cố “số chia hết cho 3”. Tính \(P(A\mid B)\).
 
-**Lời giải:** Do chọn đều, \(\Omega=\{1,2,\ldots,10\}\). Biến cố đã biết là \(B=\{3,6,9\}\), gồm ba số; giao \(A\cap B=\{6\}\) chỉ có một số. Vậy \(P(A\mid B)=n(A\cap B)/n(B)=1/3\). Kiểm bằng công thức: \(P(A\cap B)=1/10\), \(P(B)=3/10>0\), nên \(P(A\mid B)=(1/10)/(3/10)=1/3\). Không dùng \(P(A)=5/10\) làm mẫu số vì đề không cho biết \(A\) trước.
+**Lời giải:** Do chọn đều, \(\Omega=\{1,2,\ldots,10\}\). Biến cố đã biết là \(B=\{3,6,9\}\), gồm ba số; giao \(A\cap B=\{6\}\) chỉ có một số. Vậy \(P(A\mid B)=\frac{n(A\cap B)}{n(B)}=\frac{1}{3}\). Kiểm bằng công thức: \(P(A\cap B)=\frac{1}{10}\), \(P(B)=\frac{3}{10}>0\), nên \(P(A\mid B)=\frac{\frac{1}{10}}{\frac{3}{10}}=\frac{1}{3}\). Không dùng \(P(A)=\frac{5}{10}\) làm mẫu số vì đề không cho biết \(A\) trước.
 
 **Kiến thức cần ghi nhớ**
 
@@ -90,12 +90,12 @@ Muốn tính \(P(A\mid B)\), đặt đúng nhóm đã biết \(B\) làm mẫu s�
 
 **Vận dụng**
 
-Gieo xúc xắc sáu mặt cân đối. A là 'chia hết cho 3', B là 'số chẵn'. Tính P(A|B).
+Gieo xúc xắc sáu mặt cân đối. A là 'chia hết cho 3', B là 'số chẵn'. Tính \(P(A\mid B)\).
 
 <!-- ITEM_ID: THPT-TOP21-T02; ROLE: TOPIC_FIRST_TRY; LEARNER_LABEL: VAN_DUNG; PRIMARY_OUTCOME: TOP21-O02; CONTENT_VERSION: TOP21-R06; PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-B={2,4,6}, A∩B={6}; P(A|B)=(1/6)/(3/6)=1/3. Mẫu số P(B)=1/2>0.
+\(B=\{2,4,6\},\ A\cap B=\{6\};\ P(A\mid B)=\frac{\frac16}{\frac36}=\frac13\). Mẫu số \(P(B)\)=\(\frac{1}{2}\)>0.
 
 **Kiểm lỗi**
 
@@ -113,13 +113,13 @@ Muốn tính xác suất hai sự việc \(A\) rồi \(B\) cùng xảy ra, trư�
 
 > **CÔNG THỨC — Xác suất đồng thời theo điều kiện**
 >
-> \[P(A\cap B)=P(A)P(B\mid A)\quad\text{khi }P(A)>0.\] Tương tự \(P(A\cap B)=P(B)P(A\mid B)\) nếu \(P(B)>0\). Khi rút không hoàn lại, phải cập nhật xác suất nhánh sau.
+> \(P(A\cap B)=P(A)P(B\mid A)\quad\text{khi }P(A)>0.\) Tương tự \(P(A\cap B)=P(B)P(A\mid B)\) nếu \(P(B)>0\). Khi rút không hoàn lại, phải cập nhật xác suất nhánh sau.
 
 **Ví dụ**
 
 **Đề bài:** Một túi có 3 thẻ xanh lục và 4 thẻ cam, tất cả các thẻ phân biệt. Rút đều ngẫu nhiên hai thẻ liên tiếp không hoàn lại. Tính xác suất cả hai thẻ đều xanh lục.
 
-**Lời giải:** Xác suất thẻ đầu xanh lục là \(3/7\). Sau khi đã rút xanh lục, túi còn 2 thẻ xanh lục trong tổng 6 thẻ, nên xác suất xanh lục ở lượt hai **khi lượt đầu xanh lục** là \(2/6\). Theo quy tắc nhân có điều kiện, xác suất cả hai xanh lục bằng \((3/7)(2/6)=1/7\). Không được dùng \((3/7)^2\) vì số thẻ đã thay đổi sau lượt đầu.
+**Lời giải:** Xác suất thẻ đầu xanh lục là \(\frac{3}{7}\). Sau khi đã rút xanh lục, túi còn 2 thẻ xanh lục trong tổng 6 thẻ, nên xác suất xanh lục ở lượt hai **khi lượt đầu xanh lục** là \(\frac{2}{6}\). Theo quy tắc nhân có điều kiện, xác suất cả hai xanh lục bằng \((\frac{3}{7})( \frac{2}{6})=\frac{1}{7}\). Không được dùng \((\frac{3}{7})^2\) vì số thẻ đã thay đổi sau lượt đầu.
 
 Nếu \(P(A)=0\), vì \(A\cap B\subseteq A\) nên chắc chắn \(P(A\cap B)=0\). Khi ấy **không** viết \(P(B\mid A)\) theo công thức thông thường vì mẫu \(P(A)\) bằng \(0\). Tương tự nếu \(P(B)=0\), giao có xác suất \(0\) nhưng không dùng \(P(A\mid B)\). Vì vậy, quy tắc nhân vẫn xử lý được trường hợp xác suất bằng \(0\), chỉ cần tách ra trước khi chia.
 
@@ -129,7 +129,7 @@ P(A\cap B\cap C)=P(A)P(B\mid A)P(C\mid A\cap B).
 \]
 Tại bước ba, điều kiện gồm **cả hai bước trước**; không được nhân \(P(C)\) nếu quá trình không độc lập. Nhánh có xác suất 0 cho giao bằng 0 nhưng không được lập phân số điều kiện mẫu 0.
 
-**Ví dụ bổ sung.** Trong túi có 4 bi đỏ và 3 bi xanh phân biệt, rút liên tiếp ba bi **không hoàn lại**. Xác suất tất cả đỏ là \(\frac47\cdot\frac36\cdot\frac25=\frac4{35}\). Kiểm bằng tổ hợp: \(\binom43/\binom73=4/35\). Hai cách khớp vì khi rút theo thứ tự ta cập nhật số viên còn lại, còn khi đếm nhóm không thứ tự ta dùng tổ hợp ở cả tử và mẫu. Lấy \((4/7)^3\) là sai vì đã mặc định có hoàn lại.
+**Ví dụ bổ sung.** Trong túi có 4 bi đỏ và 3 bi xanh phân biệt, rút liên tiếp ba bi **không hoàn lại**. Xác suất tất cả đỏ là \(\frac47\cdot\frac36\cdot\frac25=\frac4{35}\). Kiểm bằng tổ hợp: \(\frac{\binom43}{\binom73}=\frac{4}{35}\). Hai cách khớp vì khi rút theo thứ tự ta cập nhật số viên còn lại, còn khi đếm nhóm không thứ tự ta dùng tổ hợp ở cả tử và mẫu. Lấy \((\frac{4}{7})^3\) là sai vì đã mặc định có hoàn lại.
 
 **Kiến thức cần ghi nhớ**
 
@@ -137,16 +137,16 @@ Nhân xác suất dọc một đường theo đúng điều kiện của từng 
 
 **Vận dụng**
 
-Có 4 thẻ đỏ và 5 thẻ xanh khác nhau; rút liên tiếp hai thẻ không hoàn lại, đều mỗi lượt. Tính P(lượt đầu đỏ và lượt sau xanh).
+Có 4 thẻ đỏ và 5 thẻ xanh khác nhau; rút liên tiếp hai thẻ không hoàn lại, đều mỗi lượt. Tính \(P(\text{đỏ đầu}\cap\text{xanh sau})\).
 
 <!-- ITEM_ID: THPT-TOP21-T03; ROLE: TOPIC_FIRST_TRY; LEARNER_LABEL: VAN_DUNG; PRIMARY_OUTCOME: TOP21-O03; CONTENT_VERSION: TOP21-R06; PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-P(đỏ đầu)=4/9; sau đó còn 8 thẻ, 5 xanh nên P(xanh sau | đỏ đầu)=5/8. Giao = (4/9)(5/8)=5/18.
+\(P(\text{đỏ đầu})=\frac49\); sau đó còn 8 thẻ, 5 xanh nên \(P(\text{xanh sau}\mid\text{đỏ đầu})=\frac58\). Giao = \(\frac49\cdot\frac58=\frac5{18}\).
 
 **Kiểm lỗi**
 
-Nếu dùng (4/9)(5/9), em chưa đổi tổng số thẻ ở lượt hai từ 9 xuống 8. Vẽ một nhánh đỏ trước rồi ghi nội dung túi còn lại. Ôn lại mục Kiến thức 1.3 (quy tắc nhân cho lượt phụ thuộc) và Bài luyện 3 tại Luyện tập 1.3.
+Nếu dùng \(\frac49\cdot\frac59\), em chưa đổi tổng số thẻ ở lượt hai từ 9 xuống 8. Vẽ một nhánh đỏ trước rồi ghi nội dung túi còn lại. Ôn lại mục Kiến thức 1.3 (quy tắc nhân cho lượt phụ thuộc) và Bài luyện 3 tại Luyện tập 1.3.
 
 </details>
 
@@ -160,13 +160,13 @@ Khi \(P(B)>0\), nếu xác suất của \(A\) trong nhóm \(B\) bằng xác su�
 
 > **TÍNH CHẤT — Tiêu chuẩn độc lập**
 >
-> \[A\text{ và }B\text{ độc lập}\iff P(A\cap B)=P(A)P(B).\] Khi \(P(B)>0\), độc lập tương đương \(P(A\mid B)=P(A)\). Hai biến cố xung khắc có xác suất dương không độc lập.
+> \(A\text{ và }B\text{ độc lập}\iff P(A\cap B)=P(A)P(B).\) Khi \(P(B)>0\), độc lập tương đương \(P(A\mid B)=P(A)\). Hai biến cố xung khắc có xác suất dương không độc lập.
 
 **Ví dụ**
 
 **Đề bài:** Gieo hai xúc xắc cân đối và độc lập. Gọi \(A\) là biến cố “xúc xắc thứ nhất ra số chẵn” và \(B\) là biến cố “xúc xắc thứ hai ra số lớn hơn 4”. Kiểm tra hai biến cố có độc lập không.
 
-**Lời giải:** Trong 36 cặp số chấm đồng khả năng, \(A\) có xác suất \(3/6=1/2\), còn \(B\) có xác suất \(2/6=1/3\). Để đồng thời thỏa \(A\) và \(B\), xúc xắc thứ nhất có 3 lựa chọn chẵn và thứ hai có 2 lựa chọn lớn hơn 4, nên \(P(A\cap B)=6/36=1/6\). Vì \(P(A)P(B)=(1/2)(1/3)=1/6=P(A\cap B)\), hai biến cố độc lập. Kết luận đến từ đẳng thức xác suất, không chỉ từ việc chúng nhắc hai xúc xắc khác nhau.
+**Lời giải:** Trong 36 cặp số chấm đồng khả năng, \(A\) có xác suất \(\frac{3}{6}=\frac{1}{2}\), còn \(B\) có xác suất \(\frac{2}{6}=\frac{1}{3}\). Để đồng thời thỏa \(A\) và \(B\), xúc xắc thứ nhất có 3 lựa chọn chẵn và thứ hai có 2 lựa chọn lớn hơn 4, nên \(P(A\cap B)=\frac{6}{36}=\frac{1}{6}\). Vì \(P(A)P(B)=(\frac{1}{2})( \frac{1}{3})=\frac{1}{6}=P(A\cap B)\), hai biến cố độc lập. Kết luận đến từ đẳng thức xác suất, không chỉ từ việc chúng nhắc hai xúc xắc khác nhau.
 
 **Kiến thức cần ghi nhớ**
 
@@ -179,7 +179,7 @@ Tung hai đồng xu cân đối, độc lập. A: đồng xu đầu ngửa; B: c
 <!-- ITEM_ID: THPT-TOP21-T04; ROLE: TOPIC_FIRST_TRY; LEARNER_LABEL: VAN_DUNG; PRIMARY_OUTCOME: TOP21-O04; CONTENT_VERSION: TOP21-R06; PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Ω={NN,NS,SN,SS}. P(A)=2/4, P(B)=2/4, P(A∩B)=1/4 (chỉ NS). Vì 1/4=(1/2)(1/2), A và B độc lập trong mô hình này.
+\(\Omega=\{NN,NS,SN,SS\}\). \(P(A)=\frac24,\ P(B)=\frac24,\ P(A\cap B)=\frac14\) (chỉ NS). Vì \(\frac14=\frac12\cdot\frac12\), A và B độc lập trong mô hình này.
 
 **Kiểm lỗi**
 
@@ -199,7 +199,7 @@ Gọi \(L\) là biến cố “sản phẩm lỗi”. Trong trường hợp hai 
 
 > **CÔNG THỨC — Xác suất toàn phần hai nhánh**
 >
-> Nếu \(X\cap Y=\varnothing\), \(X\cup Y=\Omega\) và \(P(X),P(Y)>0\) thì \[P(L)=P(X)P(L\mid X)+P(Y)P(L\mid Y).\] Đây là tổng hai **đường đi rời nhau**, không phải tổng trần hai xác suất điều kiện.
+> Nếu \(X\cap Y=\varnothing\), \(X\cup Y=\Omega\) và \(P(X),P(Y)>0\) thì \(P(L)=P(X)P(L\mid X)+P(Y)P(L\mid Y).\) Đây là tổng hai **đường đi rời nhau**, không phải tổng trần hai xác suất điều kiện.
 
 **Ví dụ**
 
@@ -225,16 +225,16 @@ Xác suất toàn phần là tổng các xác suất đường đi rời nhau. T
 
 **Vận dụng**
 
-Nguồn X cung cấp 1/4 sản phẩm, tỉ lệ lỗi 1/10; nguồn Y cung cấp 3/4, tỉ lệ lỗi 1/30. Chọn đều một sản phẩm. Xác suất gặp lỗi?
+Nguồn X cung cấp \(\frac{1}{4}\) sản phẩm, tỉ lệ lỗi \(\frac{1}{10}\); nguồn Y cung cấp \(\frac{3}{4}\), tỉ lệ lỗi 1/30. Chọn đều một sản phẩm. Xác suất gặp lỗi?
 
 <!-- ITEM_ID: THPT-TOP21-T05; ROLE: TOPIC_FIRST_TRY; LEARNER_LABEL: VAN_DUNG; PRIMARY_OUTCOME: TOP21-O05; CONTENT_VERSION: TOP21-R06; PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-P(lỗi)=(1/4)(1/10)+(3/4)(1/30)=1/40+1/40=1/20.
+\(P(\text{lỗi})=\frac14\cdot\frac1{10}+\frac34\cdot\frac1{30}=\frac1{40}+\frac1{40}=\frac1{20}\).
 
 **Kiểm lỗi**
 
-Nếu ra 1/10+1/30, em đã quên nhân tỉ trọng nguồn; làm lại từng đường 'chọn nguồn → lỗi' trước khi cộng. Ôn lại mục Kiến thức 2.1 (công thức xác suất toàn phần) và Bài luyện 5 tại Luyện tập 2.1.
+Nếu ra \(\frac1{10}+\frac1{30}\), em đã quên nhân tỉ trọng nguồn; làm lại từng đường 'chọn nguồn → lỗi' trước khi cộng. Ôn lại mục Kiến thức 2.1 (công thức xác suất toàn phần) và Bài luyện 5 tại Luyện tập 2.1.
 
 </details>
 
@@ -248,19 +248,19 @@ Muốn trả lời, trước hết ta tính xác suất **mọi cách** tạo ra
 
 > **CÔNG THỨC — Bayes – đảo chiều câu hỏi**
 >
-> \[P(Y\mid L)=\frac{P(Y)P(L\mid Y)}{P(L)},\qquad P(L)>0.\] Với hai nhánh X,Y phân hoạch, mẫu số là công thức toàn phần của L. Xác suất của nguồn **sau khi thấy L** không tự bằng xác suất thấy L **khi biết nguồn**.
+> \(P(Y\mid L)=\frac{P(Y)P(L\mid Y)}{P(L)},\qquad P(L)>0.\) Với hai nhánh X,Y phân hoạch, mẫu số là công thức toàn phần của L. Xác suất của nguồn **sau khi thấy L** không tự bằng xác suất thấy L **khi biết nguồn**.
 
 **Ví dụ**
 
 **Đề bài:** Nguồn A cung cấp 20% sản phẩm và cho dấu hiệu H ở 80% sản phẩm của mình; nguồn B cung cấp 80% còn lại và cho dấu hiệu H ở 10% sản phẩm của mình. Chọn ngẫu nhiên một sản phẩm. Biết sản phẩm có dấu hiệu H, tính xác suất nó đến từ A.
 
-**Lời giải:** Gọi \(H\) là biến cố “có dấu hiệu”. Xác suất toàn phần là \(P(H)=0{,}2\cdot0{,}8+0{,}8\cdot0{,}1=0{,}16+0{,}08=0{,}24\). Riêng đường “A và H” có xác suất \(0{,}2\cdot0{,}8=0{,}16\). Do đó \(P(A\mid H)=0{,}16/0{,}24=2/3\). Kết quả khác 80% vì 80% trả lời câu hỏi ngược chiều: “có H khi biết nguồn A”.
+**Lời giải:** Gọi \(H\) là biến cố “có dấu hiệu”. Xác suất toàn phần là \(P(H)=0{,}2\cdot0{,}8+0{,}8\cdot0{,}1=0{,}16+0{,}08=0{,}24\). Riêng đường “A và H” có xác suất \(0{,}2\cdot0{,}8=0{,}16\). Do đó \(P(A\mid H)=\frac{0{,}16}{0{,}24}=\frac{2}{3}\). Kết quả khác 80% vì 80% trả lời câu hỏi ngược chiều: “có H khi biết nguồn A”.
 
 **Kiểm kết quả Bayes bằng tổng hậu nghiệm.** Với ba nguồn ở mục 2.1, xác suất “nguồn 3 và lỗi” bằng \(0{,}5\cdot0{,}04=0{,}02\); tổng lỗi bằng \(0{,}028>0\). Do đó:
 \[
 P(B_3\mid L)=\frac{0{,}02}{0{,}028}=\frac57\approx71{,}43\%.
 \]
-Nguồn 3 tạo ra **50% sản phẩm** nhưng chiếm hơn **71% sản phẩm lỗi** trong mô hình này do tỷ lệ lỗi cao hơn. Hai nguồn còn lại có hậu nghiệm \(0{,}002/0{,}028=1/14\) và \(0{,}006/0{,}028=3/14\). Tổng \(1/14+3/14+5/7=1\), là phép kiểm toàn bộ nguồn đã phủ hết mẫu sau khi biết lỗi. Không nhầm xác suất **nguồn khi thấy lỗi** với tỷ lệ lỗi **khi biết nguồn**.
+Nguồn 3 tạo ra **50% sản phẩm** nhưng chiếm hơn **71% sản phẩm lỗi** trong mô hình này do tỷ lệ lỗi cao hơn. Hai nguồn còn lại có hậu nghiệm \(\frac{0{,}002}{0{,}028}=\frac{1}{14}\) và \(\frac{0{,}006}{0{,}028}=\frac{3}{14}\). Tổng \(\frac{1}{14}+\frac{3}{14}+\frac{5}{7}=1\), là phép kiểm toàn bộ nguồn đã phủ hết mẫu sau khi biết lỗi. Không nhầm xác suất **nguồn khi thấy lỗi** với tỷ lệ lỗi **khi biết nguồn**.
 
 **Kiến thức cần ghi nhớ**
 
@@ -268,16 +268,16 @@ Bayes đảo chiều điều kiện: lấy xác suất đường nguồn–kết
 
 **Vận dụng**
 
-Nguồn X chiếm 2/5 sản phẩm, tỉ lệ lỗi 1/10; Y chiếm 3/5, tỉ lệ lỗi 1/5. Biết sản phẩm chọn ra bị lỗi, xác suất nó thuộc Y?
+Nguồn X chiếm \(\frac{2}{5}\) sản phẩm, tỉ lệ lỗi \(\frac{1}{10}\); Y chiếm \(\frac{3}{5}\), tỉ lệ lỗi 1/5. Biết sản phẩm chọn ra bị lỗi, xác suất nó thuộc Y?
 
 <!-- ITEM_ID: THPT-TOP21-T06; ROLE: TOPIC_FIRST_TRY; LEARNER_LABEL: VAN_DUNG; PRIMARY_OUTCOME: TOP21-O06; CONTENT_VERSION: TOP21-R06; PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-P(Y∩lỗi)=(3/5)(1/5)=3/25; P(X∩lỗi)=(2/5)(1/10)=1/25. P(lỗi)=4/25 nên P(Y|lỗi)=(3/25)/(4/25)=3/4.
+\(P(Y\cap\text{lỗi})=\frac35\cdot\frac15=\frac3{25}\); \(P(X\cap\text{lỗi})=\frac25\cdot\frac1{10}=\frac1{25}\). \(P(\text{lỗi})=\frac4{25}\) nên \(P(Y\mid\text{lỗi})=\frac{\frac3{25}}{\frac4{25}}=\frac34\).
 
 **Kiểm lỗi**
 
-Nếu trả lời 1/5, em mới tính xác suất lỗi khi đã biết Y, chưa đảo chiều. Cộng tất cả nhánh lỗi thành mẫu số rồi chia đường Y–lỗi. Ôn lại mục Kiến thức 2.2 (Bayes) và Bài luyện 6 tại Luyện tập 2.2.
+Nếu trả lời \(\frac{1}{5}\), em mới tính xác suất lỗi khi đã biết Y, chưa đảo chiều. Cộng tất cả nhánh lỗi thành mẫu số rồi chia đường Y–lỗi. Ôn lại mục Kiến thức 2.2 (Bayes) và Bài luyện 6 tại Luyện tập 2.2.
 
 </details>
 
@@ -297,7 +297,7 @@ Một đường đi từ gốc đến lá tương ứng với một trường h�
 
 **Ví dụ**
 
-**Đề bài:** Một hành khách chọn tuyến R với xác suất \(3/5\), chọn tuyến S với xác suất \(2/5\). Nếu chọn R, xác suất đến đúng giờ là \(4/5\); nếu chọn S, xác suất đến đúng giờ là \(1/2\). Hãy tìm xác suất đến đúng giờ và kiểm tra tổng bốn lá trên cây.
+**Đề bài:** Một hành khách chọn tuyến R với xác suất \(\frac{3}{5}\), chọn tuyến S với xác suất \(\frac{2}{5}\). Nếu chọn R, xác suất đến đúng giờ là \(\frac{4}{5}\); nếu chọn S, xác suất đến đúng giờ là \(\frac{1}{2}\). Hãy tìm xác suất đến đúng giờ và kiểm tra tổng bốn lá trên cây.
 
 **Lời giải:** Gọi \(D\) là biến cố đến đúng giờ. Tại nút R, hai xác suất nhánh có điều kiện là \(P(D\mid R)=\dfrac45\) và \(P(\bar D\mid R)=\dfrac15\). Nhân với xác suất chọn R để được hai xác suất lá: \(P(R\cap D)=\dfrac35\cdot\dfrac45=\dfrac{12}{25}\), \(P(R\cap\bar D)=\dfrac35\cdot\dfrac15=\dfrac3{25}\). Tại nút S, mỗi xác suất nhánh có điều kiện bằng \(\dfrac12\), nên hai xác suất lá đều bằng \(\dfrac25\cdot\dfrac12=\dfrac15\). Bốn lá cộng thành \(\dfrac{12}{25}+\dfrac3{25}+\dfrac15+\dfrac15=1\). Hai lá đúng giờ rời nhau, vì vậy \(P(D)=\dfrac{12}{25}+\dfrac15=\dfrac{17}{25}\). Phân biệt xác suất nhánh (trong một tuyến) với xác suất lá (tính từ gốc).
 
@@ -311,16 +311,16 @@ Tại mỗi nút, tổng nhánh ra bằng 1; nhân dọc đường, cộng các 
 
 **Vận dụng**
 
-Chọn lớp A với xác suất 3/5, trong A tỉ lệ thẻ đỏ là 3/10; lớp B với xác suất 2/5, trong B tỉ lệ đỏ 1/4. Lập bốn lá đỏ/không đỏ và tính P(đỏ).
+Chọn lớp A với xác suất \(\frac{3}{5}\), trong A tỉ lệ thẻ đỏ là \(\frac{3}{10}\); lớp B với xác suất \(\frac{2}{5}\), trong B tỉ lệ đỏ 1/4. Lập bốn lá đỏ/không đỏ và tính \(P(\text{đỏ})\).
 
 <!-- ITEM_ID: THPT-TOP21-T07; ROLE: TOPIC_FIRST_TRY; LEARNER_LABEL: VAN_DUNG; PRIMARY_OUTCOME: TOP21-O07; CONTENT_VERSION: TOP21-R06; PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-A-đỏ=9/50, A-không đỏ=21/50; B-đỏ=1/10, B-không đỏ=3/10. Tổng bốn lá bằng 1, P(đỏ)=9/50+1/10=7/25.
+\(P(A\cap\text{đỏ})=\frac9{50}\), \(P(A\cap\text{không đỏ})=\frac{21}{50}\); \(P(B\cap\text{đỏ})=\frac1{10}\), \(P(B\cap\text{không đỏ})=\frac3{10}\). Tổng bốn lá bằng 1, \(P(\text{đỏ})=\frac9{50}+\frac1{10}=\frac7{25}\).
 
 **Kiểm lỗi**
 
-Nếu bốn lá không cộng thành 1, hãy rà mỗi nút: đỏ và không đỏ trong A phải có tổng 1; tương tự B. Đừng cộng trực tiếp 3/10 và 1/4. Ôn lại mục Kiến thức 3.1 (đọc sơ đồ cây) và Bài luyện 7 tại Luyện tập 3.1.
+Nếu bốn lá không cộng thành 1, hãy rà mỗi nút: đỏ và không đỏ trong A phải có tổng 1; tương tự B. Đừng cộng trực tiếp \(\frac{3}{10}\) và 1/4. Ôn lại mục Kiến thức 3.1 (đọc sơ đồ cây) và Bài luyện 7 tại Luyện tập 3.1.
 
 </details>
 
@@ -334,7 +334,7 @@ Hãy chia sản phẩm thành hai nguồn: thật sự lỗi \(H\) và không l�
 
 > **CÔNG THỨC — Bayes có xét tỉ lệ nền**
 >
-> \[P(H\mid +)=\frac{P(H)P(+\mid H)}{P(H)P(+\mid H)+P(\bar H)P(+\mid\bar H)},\qquad P(+)>0.\] Cần biết **tỉ lệ nền**, **khả năng phát hiện khi thực sự H** và **tỉ lệ báo nhầm khi không H**. Không kết luận \(P(H\mid +)=P(+\mid H)\); nếu không có trường hợp được báo thì xác suất điều kiện ấy không xác định bằng công thức này.
+> \(P(H\mid +)=\frac{P(H)P(+\mid H)}{P(H)P(+\mid H)+P(\bar H)P(+\mid\bar H)},\qquad P(+)>0.\) Cần biết **tỉ lệ nền**, **khả năng phát hiện khi thực sự H** và **tỉ lệ báo nhầm khi không H**. Không kết luận \(P(H\mid +)=P(+\mid H)\); nếu không có trường hợp được báo thì xác suất điều kiện ấy không xác định bằng công thức này.
 
 **Ví dụ**
 
@@ -361,11 +361,11 @@ Một hệ thống giả định có 2% hồ sơ thuộc nhóm H. Hệ thống b
 <!-- ITEM_ID: THPT-TOP21-T08; ROLE: TOPIC_FIRST_TRY; LEARNER_LABEL: VAN_DUNG; PRIMARY_OUTCOME: TOP21-O08; CONTENT_VERSION: TOP21-R06; PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-P(H∩báo)=0,02·0,90=0,018; P(không H∩báo)=0,98·0,15=0,147. Xác suất cần tìm là 0,018/(0,018+0,147)=18/165=6/55≈10,91%.
+\(P(H\cap\text{báo})=0{,}02\cdot0{,}90=0{,}018\); \(P(\bar H\cap\text{báo})=0{,}98\cdot0{,}15=0{,}147\). Xác suất cần tìm là \(\frac{0{,}018}{0{,}018+0{,}147}=\frac{18}{165}=\frac6{55}\approx10{,}91\%\).
 
 **Kiểm lỗi**
 
-Nếu ra 90%, em đã nhầm 'báo khi biết H' với 'H khi đã báo'. Hãy lập bảng 10.000 hồ sơ: 200 H có 180 báo; 9.800 không H có 1.470 báo; tỉ lệ 180/(180+1470). Ôn lại mục Kiến thức 3.2 (tỉ lệ nền) và Bài luyện 8 tại Luyện tập 3.2.
+Nếu ra 90%, em đã nhầm 'báo khi biết H' với 'H khi đã báo'. Hãy lập bảng 10.000 hồ sơ: 200 H có 180 báo; 9.800 không H có 1.470 báo; tỉ lệ \(\frac{180}{180+1470}\). Ôn lại mục Kiến thức 3.2 (tỉ lệ nền) và Bài luyện 8 tại Luyện tập 3.2.
 
 </details>
 
@@ -384,9 +384,9 @@ Trong 40 thẻ vật lí khác nhau được chọn đều có 12 thẻ hình ta
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Khi chưa biết gì thêm, phép thử có 40 thẻ vật lí đồng khả năng. Nhưng đề đã cho biết **thẻ được chọn mang hình tam giác**, nên chỉ xét 12 thẻ tam giác. Trong nhóm này có đúng 5 thẻ đỏ, vì vậy \(P(\text{đỏ}\mid\text{tam giác})=5/12\). Mẫu số 12 là số kết quả còn phù hợp với điều kiện, không phải 40 thẻ ban đầu.
+**Lời giải:** Khi chưa biết gì thêm, phép thử có 40 thẻ vật lí đồng khả năng. Nhưng đề đã cho biết **thẻ được chọn mang hình tam giác**, nên chỉ xét 12 thẻ tam giác. Trong nhóm này có đúng 5 thẻ đỏ, vì vậy \(P(\text{đỏ}\mid\text{tam giác})=\frac{5}{12}\). Mẫu số 12 là số kết quả còn phù hợp với điều kiện, không phải 40 thẻ ban đầu.
 
-**Khi làm sai:** Nếu ra 5/40, hãy hỏi lại: đề đã cho biết thẻ mang hình gì? Mọi kết quả không phải tam giác đã bị loại khỏi nhóm xét.
+**Khi làm sai:** Nếu ra \(\frac{5}{40}\), hãy hỏi lại: đề đã cho biết thẻ mang hình gì? Mọi kết quả không phải tam giác đã bị loại khỏi nhóm xét.
 
 </details>
 
@@ -397,13 +397,13 @@ Trong 40 thẻ vật lí khác nhau được chọn đều có 12 thẻ hình ta
 **Bài luyện 2.**
 
 <!-- ITEM_ID: THPT-TOP21-P02; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP21-O02; CONTENT_VERSION: TOP21-R03; PUBLIC_FORMATIVE_NO_MASTERY -->
-Chọn đều một số trong 1,…,12. A: chia hết cho 4. B: lớn hơn 6. Tính P(A|B).
+Chọn đều một số trong 1,…,12. A: chia hết cho 4. B: lớn hơn 6. Tính \(P(A\mid B)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Gọi \(B\) là biến cố đã biết “số lớn hơn 6”; khi chọn đều trong 1–12, \(B=\{7,8,9,10,11,12\}\) gồm 6 số. Biến cố \(A\) “chia hết cho 4” có các kết quả 4, 8, 12; giao \(A\cap B=\{8,12\}\) gồm 2 số. Vì \(P(B)=6/12>0\), xác suất điều kiện là \(P(A\mid B)=n(A\cap B)/n(B)=2/6=1/3\). Chỉ có các phần tử của \(B\) được đưa vào mẫu số.
+**Lời giải:** Gọi \(B\) là biến cố đã biết “số lớn hơn 6”; khi chọn đều trong 1–12, \(B=\{7,8,9,10,11,12\}\) gồm 6 số. Biến cố \(A\) “chia hết cho 4” có các kết quả 4, 8, 12; giao \(A\cap B=\{8,12\}\) gồm 2 số. Vì \(P(B)=\frac{6}{12}>0\), xác suất điều kiện là \(P(A\mid B)=\frac{n(A\cap B)}{n(B)}=\frac{2}{6}=\frac{1}{3}\). Chỉ có các phần tử của \(B\) được đưa vào mẫu số.
 
-**Khi làm sai:** Nếu dùng 3/12, em đang tính P(A), không phải P(A|B). Hãy viết trọn tập B trước.
+**Khi làm sai:** Nếu dùng \(\frac{3}{12}\), em đang tính \(P(A)\), không phải \(P(A\mid B)\). Hãy viết trọn tập B trước.
 
 </details>
 
@@ -418,9 +418,9 @@ Hộp có 5 thẻ đỏ, 2 thẻ vàng. Rút đều ba thẻ liên tiếp không
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Vì **không hoàn lại**, ta phải cập nhật thành phần hộp sau mỗi lượt. Xác suất đỏ đầu tiên là \(5/7\); khi đỏ đã rút, hộp còn 4 đỏ và 2 vàng trong 6 thẻ, nên xác suất vàng thứ hai là \(2/6\). Sau hai lượt đỏ–vàng, hộp còn 4 đỏ trong 5 thẻ, nên xác suất đỏ ở lượt ba là \(4/5\). Theo quy tắc nhân theo các điều kiện liên tiếp, \(P(\text{đỏ–vàng–đỏ})=\dfrac57\cdot\dfrac26\cdot\dfrac45=\dfrac4{21}\). Không nhân ba xác suất dựa trên hộp ban đầu.
+**Lời giải:** Vì **không hoàn lại**, ta phải cập nhật thành phần hộp sau mỗi lượt. Xác suất đỏ đầu tiên là \(\frac{5}{7}\); khi đỏ đã rút, hộp còn 4 đỏ và 2 vàng trong 6 thẻ, nên xác suất vàng thứ hai là \(\frac{2}{6}\). Sau hai lượt đỏ–vàng, hộp còn 4 đỏ trong 5 thẻ, nên xác suất đỏ ở lượt ba là \(\frac{4}{5}\). Theo quy tắc nhân theo các điều kiện liên tiếp, \(P(\text{đỏ–vàng–đỏ})=\dfrac57\cdot\dfrac26\cdot\dfrac45=\dfrac4{21}\). Không nhân ba xác suất dựa trên hộp ban đầu.
 
-**Khi làm sai:** Nếu giữ 5/7 cho lượt thứ ba, em chưa cập nhật trạng thái túi; hãy ghi 'còn 6' rồi 'còn 5' trên các cạnh cây.
+**Khi làm sai:** Nếu giữ \(\frac{5}{7}\) cho lượt thứ ba, em chưa cập nhật trạng thái túi; hãy ghi 'còn 6' rồi 'còn 5' trên các cạnh cây.
 
 </details>
 
@@ -435,9 +435,9 @@ Gieo một xúc xắc cân đối. A: mặt chẵn; B: mặt lớn hơn 3. Hai b
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Với một xúc xắc cân đối, \(A=\{2,4,6\}\), \(B=\{4,5,6\}\). Ta có \(P(A)=P(B)=3/6=1/2\) nhưng \(A\cap B=\{4,6\}\), nên \(P(A\cap B)=2/6=1/3\). Để kiểm **độc lập**, cần so sánh xác suất giao với tích: \(P(A)P(B)=(1/2)(1/2)=1/4\). Vì \(1/3\ne1/4\), hai biến cố **không độc lập**. Cùng có xác suất 1/2 không đủ để kết luận độc lập.
+**Lời giải:** Với một xúc xắc cân đối, \(A=\{2,4,6\}\), \(B=\{4,5,6\}\). Ta có \(P(A)=P(B)=\frac{3}{6}=\frac{1}{2}\) nhưng \(A\cap B=\{4,6\}\), nên \(P(A\cap B)=\frac{2}{6}=\frac{1}{3}\). Để kiểm **độc lập**, cần so sánh xác suất giao với tích: \(P(A)P(B)=(\frac{1}{2})( \frac{1}{2})=\frac{1}{4}\). Vì \(\frac{1}{3}\ne\frac{1}{4}\), hai biến cố **không độc lập**. Cùng có xác suất \(\frac{1}{2}\) không đủ để kết luận độc lập.
 
-**Khi làm sai:** Nếu coi độc lập vì cả hai đều xác suất 1/2, em chưa kiểm phần giao. Khoanh {4,6} trên Ω.
+**Khi làm sai:** Nếu coi độc lập vì cả hai đều xác suất \(\frac{1}{2}\), em chưa kiểm phần giao. Khoanh \(\{4,6\}\) trên Ω.
 
 </details>
 
@@ -450,13 +450,13 @@ Gieo một xúc xắc cân đối. A: mặt chẵn; B: mặt lớn hơn 3. Hai b
 **Bài luyện 5.**
 
 <!-- ITEM_ID: THPT-TOP21-P05; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP21-O05; CONTENT_VERSION: TOP21-R03; PUBLIC_FORMATIVE_NO_MASTERY -->
-Kho hàng nhập 2/5 kiện từ X với tỉ lệ hỏng 1/20 và 3/5 từ Y với tỉ lệ hỏng 1/10. Lấy ngẫu nhiên một kiện. Tính tỉ lệ hỏng chung.
+Kho hàng nhập \(\frac{2}{5}\) kiện từ X với tỉ lệ hỏng \(\frac{1}{20}\) và \(\frac{3}{5}\) từ Y với tỉ lệ hỏng 1/10. Lấy ngẫu nhiên một kiện. Tính tỉ lệ hỏng chung.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Một kiện hàng được chọn có thể đến từ **X hoặc Y**, hai nguồn rời nhau và chiếm toàn bộ kho. Xác suất đi theo đường “X rồi hỏng” là \((2/5)(1/20)=1/50\); đường “Y rồi hỏng” là \((3/5)(1/10)=3/50\). Hai đường không chồng nhau nên cộng lại: \(P(\text{hỏng})=1/50+3/50=4/50=2/25\). Không tính trung bình cộng đơn giản của hai tỉ lệ hỏng vì hai nguồn đóng góp lượng hàng khác nhau.
+**Lời giải:** Một kiện hàng được chọn có thể đến từ **X hoặc Y**, hai nguồn rời nhau và chiếm toàn bộ kho. Xác suất đi theo đường “X rồi hỏng” là \((\frac{2}{5})( \frac{1}{20})=\frac{1}{50}\); đường “Y rồi hỏng” là \((\frac{3}{5})( \frac{1}{10})=\frac{3}{50}\). Hai đường không chồng nhau nên cộng lại: \(P(\text{hỏng})=\frac{1}{50}+\frac{3}{50}=\frac{4}{50}=\frac{2}{25}\). Không tính trung bình cộng đơn giản của hai tỉ lệ hỏng vì hai nguồn đóng góp lượng hàng khác nhau.
 
-**Khi làm sai:** Nếu lấy trung bình cộng 1/20 và 1/10, em ngầm giả định hai nguồn 50%–50%; thực tế là 2/5 và 3/5.
+**Khi làm sai:** Nếu lấy trung bình cộng \(\frac{1}{20}\) và \(\frac{1}{10}\), em ngầm giả định hai nguồn 50%–50%; thực tế là \(\frac{2}{5}\) và 3/5.
 
 </details>
 
@@ -467,13 +467,13 @@ Kho hàng nhập 2/5 kiện từ X với tỉ lệ hỏng 1/20 và 3/5 từ Y v�
 **Bài luyện 6.**
 
 <!-- ITEM_ID: THPT-TOP21-P06; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP21-O06; CONTENT_VERSION: TOP21-R03; PUBLIC_FORMATIVE_NO_MASTERY -->
-Một lô gồm 1/4 sản phẩm từ H, 3/4 từ K. Xác suất mang nhãn xanh là 3/5 nếu từ H, 1/5 nếu từ K. Biết đã thấy nhãn xanh, tính xác suất sản phẩm thuộc H.
+Một lô gồm \(\frac{1}{4}\) sản phẩm từ H, \(\frac{3}{4}\) từ K. Xác suất mang nhãn xanh là \(\frac{3}{5}\) nếu từ H, \(\frac{1}{5}\) nếu từ K. Biết đã thấy nhãn xanh, tính xác suất sản phẩm thuộc H.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Biết sản phẩm có **nhãn xanh**, ta phải xét tất cả nguồn có thể tạo ra nhãn xanh. Đường “H rồi xanh” có xác suất \(P(H\cap\text{xanh})=(1/4)(3/5)=3/20\). Đường “K rồi xanh” có xác suất \((3/4)(1/5)=3/20\). Xác suất thấy nhãn xanh từ hai nguồn là \(P(\text{xanh})=3/20+3/20=6/20\). Vì vậy xác suất sản phẩm thuộc H **khi đã thấy xanh** là \(P(H\mid\text{xanh})=(3/20)/(6/20)=1/2\). Số \(3/5\) là xác suất xanh khi biết H, tức câu hỏi ngược chiều.
+**Lời giải:** Biết sản phẩm có **nhãn xanh**, ta phải xét tất cả nguồn có thể tạo ra nhãn xanh. Đường “H rồi xanh” có xác suất \(P(H\cap\text{xanh})=(\frac{1}{4})( \frac{3}{5})=\frac{3}{20}\). Đường “K rồi xanh” có xác suất \((\frac{3}{4})( \frac{1}{5})=\frac{3}{20}\). Xác suất thấy nhãn xanh từ hai nguồn là \(P(\text{xanh})=\frac{3}{20}+\frac{3}{20}=\frac{6}{20}\). Vì vậy xác suất sản phẩm thuộc H **khi đã thấy xanh** là \(P(H\mid\text{xanh})=\frac{\frac{3}{20}}{\frac{6}{20}}=\frac{1}{2}\). Số \(\frac{3}{5}\) là xác suất xanh khi biết H, tức câu hỏi ngược chiều.
 
-**Khi làm sai:** Nếu viết 3/5, em đã đảo câu hỏi. Muốn biết nguồn sau khi thấy nhãn, mẫu số gồm các cách có nhãn xanh từ cả H và K.
+**Khi làm sai:** Nếu viết \(\frac{3}{5}\), em đã đảo câu hỏi. Muốn biết nguồn sau khi thấy nhãn, mẫu số gồm các cách có nhãn xanh từ cả H và K.
 
 </details>
 
@@ -486,13 +486,13 @@ Một lô gồm 1/4 sản phẩm từ H, 3/4 từ K. Xác suất mang nhãn xanh
 **Bài luyện 7.**
 
 <!-- ITEM_ID: THPT-TOP21-P07; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP21-O07; CONTENT_VERSION: TOP21-R03; PUBLIC_FORMATIVE_NO_MASTERY -->
-Chọn tuyến R xác suất 2/5, xác suất thành công khi đi R là 3/4. Chọn tuyến S xác suất 3/5, xác suất thành công khi đi S là 1/2. Tính P(S và thất bại) và P(thành công).
+Chọn tuyến R xác suất \(\frac{2}{5}\), xác suất thành công khi đi R là 3/4. Chọn tuyến S xác suất \(\frac{3}{5}\), xác suất thành công khi đi S là 1/2. Tính \(P(S\cap\text{thất bại})\) và \(P(\text{thành công})\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Cây có hai nhánh gốc: R xác suất \(2/5\) và S xác suất \(3/5\). Sau khi chọn S, xác suất thất bại là \(1-1/2=1/2\), nên đường **S rồi thất bại** có xác suất \((3/5)(1/2)=3/10\). Muốn tính xác suất thành công, cộng hai lá thành công rời nhau: R thành công \((2/5)(3/4)=3/10\), S thành công \((3/5)(1/2)=3/10\), nên \(P(\text{thành công})=3/5\). Hai lá thất bại còn lại có xác suất R thất bại \(1/10\) và S thất bại \(3/10\); cả bốn lá cộng thành 1.
+**Lời giải:** Cây có hai nhánh gốc: R xác suất \(\frac{2}{5}\) và S xác suất \(\frac{3}{5}\). Sau khi chọn S, xác suất thất bại là \(1-\frac{1}{2}=\frac{1}{2}\), nên đường **S rồi thất bại** có xác suất \((\frac{3}{5})( \frac{1}{2})=\frac{3}{10}\). Muốn tính xác suất thành công, cộng hai lá thành công rời nhau: R thành công \((\frac{2}{5})( \frac{3}{4})=\frac{3}{10}\), S thành công \((\frac{3}{5})( \frac{1}{2})=\frac{3}{10}\), nên \(P(\text{thành công})=\frac{3}{5}\). Hai lá thất bại còn lại có xác suất R thất bại \(\frac{1}{10}\) và S thất bại \(\frac{3}{10}\); cả bốn lá cộng thành 1.
 
-**Khi làm sai:** Nếu ra 1/2 cho S và thất bại, em dùng xác suất thất bại có điều kiện mà quên xác suất chọn S. Đọc từ gốc đến lá.
+**Khi làm sai:** Nếu ra \(\frac{1}{2}\) cho S và thất bại, em dùng xác suất thất bại có điều kiện mà quên xác suất chọn S. Đọc từ gốc đến lá.
 
 </details>
 
@@ -507,7 +507,7 @@ Trong mô hình kiểm tra 1.000 sản phẩm có đúng 20 sản phẩm lỗi. 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Trong 1.000 sản phẩm, có 20 sản phẩm lỗi và 980 sản phẩm tốt. Máy phát hiện \(80\%\) trong 20 sản phẩm lỗi nên báo đúng \(20\cdot0{,}8=16\) sản phẩm; đồng thời báo nhầm \(5\%\) trong 980 sản phẩm tốt, tức \(980\cdot0{,}05=49\) sản phẩm. Khi máy đã báo lỗi, nhóm đang xét có \(16+49=65\) sản phẩm bị báo, nhưng chỉ 16 thật sự lỗi. Xác suất cần tìm là \(16/65\approx24{,}62\%\). Mẫu số là tổng **mọi trường hợp bị báo**, không phải số sản phẩm thật sự lỗi.
+**Lời giải:** Trong 1.000 sản phẩm, có 20 sản phẩm lỗi và 980 sản phẩm tốt. Máy phát hiện \(80\%\) trong 20 sản phẩm lỗi nên báo đúng \(20\cdot0{,}8=16\) sản phẩm; đồng thời báo nhầm \(5\%\) trong 980 sản phẩm tốt, tức \(980\cdot0{,}05=49\) sản phẩm. Khi máy đã báo lỗi, nhóm đang xét có \(16+49=65\) sản phẩm bị báo, nhưng chỉ 16 thật sự lỗi. Xác suất cần tìm là \(\frac{16}{65}\approx24{,}62\%\). Mẫu số là tổng **mọi trường hợp bị báo**, không phải số sản phẩm thật sự lỗi.
 
 **Khi làm sai:** Nếu trả lời 80%, em chỉ nêu khả năng phát hiện khi đồ đã lỗi. Hãy đếm toàn bộ 65 lượt báo, gồm cả 49 lượt báo nhầm.
 
@@ -520,7 +520,7 @@ Trong mô hình kiểm tra 1.000 sản phẩm có đúng 20 sản phẩm lỗi. 
 
 **Bài luyện 9.**
 
-Một tập hợp 60 học sinh được chọn đều một học sinh: có 24 bạn thuộc câu lạc bộ C, trong đó 15 bạn đeo kính; trong 36 bạn không thuộc C có 18 bạn đeo kính. Hãy lập bảng 2×2, tính P(kính|C), P(C|kính), P(C∩kính) và giải thích vì sao hai xác suất có điều kiện không bằng nhau.
+Một tập hợp 60 học sinh được chọn đều một học sinh: có 24 bạn thuộc câu lạc bộ C, trong đó 15 bạn đeo kính; trong 36 bạn không thuộc C có 18 bạn đeo kính. Hãy lập bảng 2×2, tính \(P(\text{kính}\mid C)\), \(P(C\mid\text{kính})\), \(P(C\cap\text{kính})\) và giải thích vì sao hai xác suất có điều kiện không bằng nhau.
 
 <!-- ITEM_ID: THPT-TOP21-W01; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP21-O02; SECONDARY_OUTCOME: TOP21-O01; CONTENT_VERSION: TOP21-R06; PUBLIC_SELF_SCORED_NO_MASTERY -->
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -535,15 +535,15 @@ Một tập hợp 60 học sinh được chọn đều một học sinh: có 24 
 | Không thuộc C | 18 | 18 | 36 |
 | Tổng | 33 | 27 | 60 |
 
-(b) Khi **biết thuộc C**, ta chỉ xét 24 học sinh thuộc C; có 15 đeo kính nên \(P(\text{kính}\mid C)=15/24=5/8\).
+(b) Khi **biết thuộc C**, ta chỉ xét 24 học sinh thuộc C; có 15 đeo kính nên \(P(\text{kính}\mid C)=\frac{15}{24}=\frac{5}{8}\).
 
-(c) Khi **biết đeo kính**, nhóm xét gồm 33 học sinh đeo kính; 15 trong số đó thuộc C nên \(P(C\mid\text{kính})=15/33=5/11\).
+(c) Khi **biết đeo kính**, nhóm xét gồm 33 học sinh đeo kính; 15 trong số đó thuộc C nên \(P(C\mid\text{kính})=\frac{15}{33}=\frac{5}{11}\).
 
-(d) Trên toàn bộ 60 học sinh, giao “thuộc C và đeo kính” có 15 học sinh, nên \(P(C\cap\text{kính})=15/60=1/4\). Hai xác suất có điều kiện ở (b), (c) khác nhau vì **hai nhóm đã biết khác nhau**, dẫn tới mẫu số 24 và 33 khác nhau.
+(d) Trên toàn bộ 60 học sinh, giao “thuộc C và đeo kính” có 15 học sinh, nên \(P(C\cap\text{kính})=\frac{15}{60}=\frac{1}{4}\). Hai xác suất có điều kiện ở (b), (c) khác nhau vì **hai nhóm đã biết khác nhau**, dẫn tới mẫu số 24 và 33 khác nhau.
 
-**Rubric:** Bảng đủ bốn ô và tổng=60 (1); đúng P(kính|C)=5/8 (1); đúng P(C|kính)=5/11 (1); đúng xác suất giao 1/4 và giải thích khác mẫu số (1).
+**Rubric:** Bảng đủ bốn ô và tổng=60 (1); đúng \(P(\text{kính}\mid C)=\frac58\) (1); đúng \(P(C\mid\text{kính})=\frac5{11}\) (1); đúng xác suất giao \(\frac{1}{4}\) và giải thích khác mẫu số (1).
 
-**Khi làm sai:** Nếu đảo 5/8 và 5/11, hãy gạch dưới từ **“biết”**, xem lại Kiến thức 1.1–1.2 và làm lại Bài luyện 1–2 (Luyện tập 1.1–1.2).
+**Khi làm sai:** Nếu đảo \(\frac{5}{8}\) và \(\frac{5}{11}\), hãy gạch dưới từ **“biết”**, xem lại Kiến thức 1.1–1.2 và làm lại Bài luyện 1–2 (Luyện tập 1.1–1.2).
 
 </details>
 
@@ -552,7 +552,7 @@ Một tập hợp 60 học sinh được chọn đều một học sinh: có 24 
 
 **Bài luyện 10.**
 
-Sản phẩm từ nguồn X chiếm 1/3, tỉ lệ lỗi 1/5; nguồn Y chiếm 2/3, tỉ lệ lỗi 1/10. Một sản phẩm được lấy ngẫu nhiên. (a) Vẽ hoặc mô tả bốn đường đi lỗi/không lỗi. (b) Tính P(lỗi). (c) Biết sản phẩm lỗi, tính P(X|lỗi).
+Sản phẩm từ nguồn X chiếm \(\frac{1}{3}\), tỉ lệ lỗi \(\frac{1}{5}\); nguồn Y chiếm \(\frac{2}{3}\), tỉ lệ lỗi 1/10. Một sản phẩm được lấy ngẫu nhiên. (a) Vẽ hoặc mô tả bốn đường đi lỗi/không lỗi. (b) Tính \(P(\text{lỗi})\). (c) Biết sản phẩm lỗi, tính \(P(X\mid\text{lỗi})\).
 
 <!-- ITEM_ID: THPT-TOP21-W02; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP21-O06; SECONDARY_OUTCOME: TOP21-O05,TOP21-O07; CONTENT_VERSION: TOP21-R06; PUBLIC_SELF_SCORED_NO_MASTERY -->
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -560,20 +560,20 @@ Sản phẩm từ nguồn X chiếm 1/3, tỉ lệ lỗi 1/5; nguồn Y chiếm 
 **Lời giải:**
 
 (a) Vì hai nguồn X, Y phân chia toàn bộ sản phẩm, từ mỗi nguồn tách thành “lỗi” và “không lỗi”. Bốn lá có xác suất:
-- X và lỗi: \((1/3)(1/5)=1/15\).
-- X và không lỗi: \((1/3)(4/5)=4/15\).
-- Y và lỗi: \((2/3)(1/10)=1/15\).
-- Y và không lỗi: \((2/3)(9/10)=3/5\).
+- X và lỗi: \((\frac{1}{3})( \frac{1}{5})=\frac{1}{15}\).
+- X và không lỗi: \((\frac{1}{3})( \frac{4}{5})=\frac{4}{15}\).
+- Y và lỗi: \((\frac{2}{3})( \frac{1}{10})=\frac{1}{15}\).
+- Y và không lỗi: \((\frac{2}{3})( \frac{9}{10})=\frac{3}{5}\).
 
-Tổng bốn lá bằng \(1/15+4/15+1/15+3/5=1\), nên không bỏ sót trường hợp.
+Tổng bốn lá bằng \(\frac{1}{15}+\frac{4}{15}+\frac{1}{15}+\frac{3}{5}=1\), nên không bỏ sót trường hợp.
 
-(b) “Lỗi” xảy ra theo **hai đường rời nhau**: X–lỗi và Y–lỗi. Do đó \(P(\text{lỗi})=1/15+1/15=2/15\).
+(b) “Lỗi” xảy ra theo **hai đường rời nhau**: X–lỗi và Y–lỗi. Do đó \(P(\text{lỗi})=\frac{1}{15}+\frac{1}{15}=\frac{2}{15}\).
 
-(c) Khi **biết đã lỗi**, chỉ còn hai lá lỗi; trong đó đường đến từ X có xác suất \(1/15\). Vì vậy \(P(X\mid\text{lỗi})=(1/15)/(2/15)=1/2\). Không dùng \(1/5\) vì đó là tỉ lệ lỗi **khi đã biết X**, trái chiều với câu hỏi.
+(c) Khi **biết đã lỗi**, chỉ còn hai lá lỗi; trong đó đường đến từ X có xác suất \(\frac{1}{15}\). Vì vậy \(P(X\mid\text{lỗi})=\frac{\frac{1}{15}}{\frac{2}{15}}=\frac{1}{2}\). Không dùng \(\frac{1}{5}\) vì đó là tỉ lệ lỗi **khi đã biết X**, trái chiều với câu hỏi.
 
-**Rubric:** Nêu hai nhánh X,Y đầy đủ và các điều kiện (1); tính đúng bốn xác suất lá/tổng 1 (1); cộng phần lỗi được 2/15 (1); đảo điều kiện Bayes được 1/2 và diễn giải nhóm đã biết lỗi (1).
+**Rubric:** Nêu hai nhánh X,Y đầy đủ và các điều kiện (1); tính đúng bốn xác suất lá/tổng 1 (1); cộng phần lỗi được \(\frac{2}{15}\) (1); đảo điều kiện Bayes được \(\frac{1}{2}\) và diễn giải nhóm đã biết lỗi (1).
 
-**Khi làm sai:** Nếu cho 1/5 ở (c), em vẫn đang trả lời lỗi khi X, không phải X khi lỗi; viết hai nhánh lỗi, ôn Kiến thức 2.1–2.2 rồi làm lại Bài luyện 5–6 (Luyện tập 2.1–2.2).
+**Khi làm sai:** Nếu cho \(\frac{1}{5}\) ở (c), em vẫn đang trả lời lỗi khi X, không phải X khi lỗi; viết hai nhánh lỗi, ôn Kiến thức 2.1–2.2 rồi làm lại Bài luyện 5–6 (Luyện tập 2.1–2.2).
 
 </details>
 
@@ -582,7 +582,7 @@ Tổng bốn lá bằng \(1/15+4/15+1/15+3/5=1\), nên không bỏ sót trườn
 
 **Bài luyện 11.**
 
-Trong một hệ thống giả định 10.000 hồ sơ có 1% hồ sơ thuộc nhóm H. Bộ lọc nhận ra 80% hồ sơ H và báo nhầm 5% hồ sơ không H. (a) Tính số lần báo đúng và báo nhầm. (b) Tính P(H|báo). (c) Phản biện nhận định “máy chính xác 80%, vậy 80% hồ sơ bị báo thuộc H”.
+Trong một hệ thống giả định 10.000 hồ sơ có 1% hồ sơ thuộc nhóm H. Bộ lọc nhận ra 80% hồ sơ H và báo nhầm 5% hồ sơ không H. (a) Tính số lần báo đúng và báo nhầm. (b) Tính \(P(H\mid\text{báo})\). (c) Phản biện nhận định “máy chính xác 80%, vậy 80% hồ sơ bị báo thuộc H”.
 
 <!-- ITEM_ID: THPT-TOP21-W03; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP21-O08; SECONDARY_OUTCOME: TOP21-O06; CONTENT_VERSION: TOP21-R06; PUBLIC_SELF_SCORED_NO_MASTERY -->
 <details markdown="1"><summary>Lời giải và rubric</summary>
@@ -591,11 +591,11 @@ Trong một hệ thống giả định 10.000 hồ sơ có 1% hồ sơ thuộc n
 
 (a) Trong 10.000 hồ sơ, nhóm H chiếm \(1\%\) nên có 100 hồ sơ H và 9.900 hồ sơ không thuộc H. Bộ lọc nhận biết \(80\%\) của nhóm H, tức **80 hồ sơ báo đúng**; đồng thời báo nhầm \(5\%\) của 9.900 hồ sơ ngoài H, tức **495 hồ sơ báo nhầm**.
 
-(b) Như vậy tổng số hồ sơ bị báo là \(80+495=575\), nhưng chỉ 80 thuộc H. Xác suất một hồ sơ thật sự thuộc H **khi đã bị báo** là \(P(H\mid\text{báo})=80/575=16/115\approx13{,}91\%\).
+(b) Như vậy tổng số hồ sơ bị báo là \(80+495=575\), nhưng chỉ 80 thuộc H. Xác suất một hồ sơ thật sự thuộc H **khi đã bị báo** là \(P(H\mid\text{báo})=\frac{80}{575}=\frac{16}{115}\approx13{,}91\%\).
 
 (c) Nhận định “80% hồ sơ bị báo thuộc H” là sai. **80%** ở đề bài là xác suất bộ lọc báo khi hồ sơ đã thuộc H, còn câu hỏi yêu cầu xác suất hồ sơ thuộc H khi đã bị báo. Nhóm không H đông gấp nhiều lần nên dù báo nhầm ở tỉ lệ 5%, vẫn tạo ra 495 lượt báo nhầm, nhiều hơn 80 lượt báo đúng.
 
-**Rubric:** Phân nhóm nền 100/9.900 (1); báo đúng 80, báo nhầm 495 (1); P(H|báo)=16/115 (1); giải thích đảo điều kiện và tỷ lệ nền (1).
+**Rubric:** Phân nhóm nền 100/9.900 (1); báo đúng 80, báo nhầm 495 (1); \(P(H\mid\text{báo})=\frac{16}{115}\) (1); giải thích đảo điều kiện và tỷ lệ nền (1).
 
 **Khi làm sai:** Nếu ra 80%, hãy lập bảng 2×2 rồi nhìn mẫu số là **tổng hồ sơ đã bị báo =575**, không phải tổng hồ sơ H=100; xem lại mục Kiến thức 3.2 (tỉ lệ nền) và Bài luyện 8 (Luyện tập 3.2).
 
@@ -611,7 +611,7 @@ Tám câu dưới đây dùng lại bài đã xuất hiện trong Luyện tập,
 **Câu 1.** Trong 40 thẻ vật lí khác nhau được chọn đều có 12 thẻ hình tam giác, trong đó đúng 5 thẻ đỏ. Biết đã chọn thẻ tam giác, tính xác suất thẻ đỏ và giải thích mẫu số.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P02; PRIMARY_OUTCOME: TOP21-O02; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
-**Câu 2.** Chọn đều một số trong 1,…,12. A: chia hết cho 4. B: lớn hơn 6. Tính P(A|B).
+**Câu 2.** Chọn đều một số trong 1,…,12. A: chia hết cho 4. B: lớn hơn 6. Tính \(P(A\mid B)\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P03; PRIMARY_OUTCOME: TOP21-O03; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
 **Câu 3.** Hộp có 5 thẻ đỏ, 2 thẻ vàng. Rút đều ba thẻ liên tiếp không hoàn lại. Tính xác suất màu theo đúng thứ tự đỏ–vàng–đỏ.
@@ -620,13 +620,13 @@ Tám câu dưới đây dùng lại bài đã xuất hiện trong Luyện tập,
 **Câu 4.** Gieo một xúc xắc cân đối. A: mặt chẵn; B: mặt lớn hơn 3. Hai biến cố độc lập không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P05; PRIMARY_OUTCOME: TOP21-O05; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
-**Câu 5.** Kho hàng nhập 2/5 kiện từ X với tỉ lệ hỏng 1/20 và 3/5 từ Y với tỉ lệ hỏng 1/10. Lấy ngẫu nhiên một kiện. Tính tỉ lệ hỏng chung.
+**Câu 5.** Kho hàng nhập \(\frac{2}{5}\) kiện từ X với tỉ lệ hỏng \(\frac{1}{20}\) và \(\frac{3}{5}\) từ Y với tỉ lệ hỏng 1/10. Lấy ngẫu nhiên một kiện. Tính tỉ lệ hỏng chung.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P06; PRIMARY_OUTCOME: TOP21-O06; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
-**Câu 6.** Một lô gồm 1/4 sản phẩm từ H, 3/4 từ K. Xác suất mang nhãn xanh là 3/5 nếu từ H, 1/5 nếu từ K. Biết đã thấy nhãn xanh, tính xác suất sản phẩm thuộc H.
+**Câu 6.** Một lô gồm \(\frac{1}{4}\) sản phẩm từ H, \(\frac{3}{4}\) từ K. Xác suất mang nhãn xanh là \(\frac{3}{5}\) nếu từ H, \(\frac{1}{5}\) nếu từ K. Biết đã thấy nhãn xanh, tính xác suất sản phẩm thuộc H.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P07; PRIMARY_OUTCOME: TOP21-O07; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
-**Câu 7.** Chọn tuyến R xác suất 2/5, xác suất thành công khi đi R là 3/4. Chọn tuyến S xác suất 3/5, xác suất thành công khi đi S là 1/2. Tính P(S và thất bại) và P(thành công).
+**Câu 7.** Chọn tuyến R xác suất \(\frac{2}{5}\), xác suất thành công khi đi R là 3/4. Chọn tuyến S xác suất \(\frac{3}{5}\), xác suất thành công khi đi S là 1/2. Tính \(P(S\cap\text{thất bại})\) và \(P(\text{thành công})\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP21-P08; PRIMARY_OUTCOME: TOP21-O08; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_NEW_ITEM_ID -->
 **Câu 8.** Trong mô hình kiểm tra 1.000 sản phẩm có đúng 20 sản phẩm lỗi. Thiết bị phát hiện 80% sản phẩm lỗi và báo nhầm 5% của 980 sản phẩm tốt. Nếu máy báo lỗi, xác suất sản phẩm thực sự lỗi là bao nhiêu?
