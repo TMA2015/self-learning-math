@@ -627,12 +627,12 @@ Chẳng hạn, cho y=2x và y=x²: giao x=0 và2, trên (0,2) 2x≥x² nên S=�
 
 **Lời giải:** Giải 2−x²=x ⇒ x²+x−2=0 ⇒ x=−2 và x=1. Trên (−2,1) hiệu 2−x²−x>0 (thử x=0). S=∫₋₂¹(2−x²−x)dx=[2x−x³/3−x²/2]₋₂¹=9/2 đơn vị diện tích. Các cận do giao điểm quyết định.
 
-**Vận dụng** Hai đồ thị \(y=3x\) và \(y=x^2\) tạo thành một hình phẳng bị chặn. Tự tìm hai giao điểm, xác định đường nằm trên giữa chúng rồi tính diện tích.
+**Vận dụng** Hai đồ thị \(y=4-x^2\) và \(y=0\) tạo thành một hình phẳng bị chặn. Tự tìm hai giao điểm, xác định đường nằm trên giữa chúng rồi tính diện tích.
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-Giải \(x^2=3x\), được \(x=0\) hoặc \(x=3\). Trên \((0;3)\), \(3x-x^2=x(3-x)>0\), nên đường thẳng nằm trên parabol. Vậy \(S=\int_0^3(3x-x^2)\,dx=\left[\frac32x^2-\frac{x^3}3\right]_0^3=\frac92\) đơn vị diện tích. Không tự chọn hai cận 0 và 2 như ở ví dụ trước.
+Giải \(4-x^2=0\), được \(x=-2\) hoặc \(x=2\). Trên \((-2;2)\), \(4-x^2>0\), nên parabol nằm trên trục hoành. Vậy \(S=\int_{-2}^{2}(4-x^2)\,dx=\left[4x-\dfrac{x^3}{3}\right]_{-2}^{2}=\dfrac{32}{3}\) đơn vị diện tích. Hai cận phải đến từ giao điểm; không lấy lại cận của ví dụ đã học.
 
 
 **Kiểm lỗi**
