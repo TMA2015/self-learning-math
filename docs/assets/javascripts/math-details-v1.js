@@ -171,7 +171,7 @@
  // MkDocs also strips single-line display delimiters inside blockquotes.
  // Only complete TeX equations, or isolated multiline script equations,
  // qualify; ordinary intervals, citations and bracketed prose never do.
- const recovered=(tex,multiline)=>typeof tex==="string"&&(multiline?(/\\[A-Za-z]+/.test(tex)||(/=/.test(tex)&&/[\^_]/.test(tex))):(/\\[A-Za-z]+/.test(tex)&&/=/.test(tex)));
+ const recovered=(tex,multiline)=>typeof tex==="string"&&(multiline?(/\\[A-Za-z]+/.test(tex)||(/=/.test(tex)&&/[\^_]/.test(tex)&&/^[A-Za-z0-9()+\-−.,\s^_{}=]+$/.test(tex))):((/\\[A-Za-z]+/.test(tex)&&(/=/.test(tex)||/\\(?:approx|leq?|geq?|neq?|equiv)\b/.test(tex)))||(/=/.test(tex)&&/[\^_]/.test(tex)&&/^[A-Za-z0-9()+\-−.,\s^_{}=]+$/.test(tex))));
  const tokens=/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]|\[\s*\n([\s\S]*?)\n\s*\]|\[A\\setminus B=\{x\\in A:x\\notin B\}\.\]|\[\|A\\cup B\|=\|A\|\+\|B\|-\|A\\cap B\|\.\]|\[((?:(?!\\[\(\[])[^\[\]\r\n])+)\]|\*\*|\*/g;
  const skips=".arithmatex,mjx-container,math,script,style,pre,code,svg,textarea,input,button";
  function inline(parent,parts){
