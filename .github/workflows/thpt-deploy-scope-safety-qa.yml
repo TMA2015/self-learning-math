@@ -45,7 +45,8 @@ jobs:
           assert(shared,"Shared Knowledge publish job missing");
           for(const req of ['--shared-candidate-scope','scripts/test-thpt-release-queue.cjs','scripts/test-thpt-handoff-gate-v2.cjs',
             'scripts/test-thpt-topic-w2-source-locked.py','scripts/test-thpt-topic-w3-source-locked.py','scripts/test-thpt-topic-w4-source-locked.py',
-            'scripts/test-thpt-topic-rw1-math-browser.py','scripts/test-thpt-topic-rw1-math-browser.py --rw2',
+            'scripts/test-thpt-topic-rw1-math-browser.py','scripts/test-thpt-topic-rw1-math-browser.py --rw2','scripts/test-thpt-topic-rw1-math-browser.py --tail',
+            'scripts/test-thpt-topic-w5-source-intake.py','scripts/test-thpt-topic-w5-source-locked.py','scripts/test-thpt-topic-w5-golden-browser.py',
             'scripts/test-thpt-topic-w2-golden-browser.py','scripts/test-thpt-topic-w3-golden-browser.py','scripts/test-thpt-topic-w4-golden-browser.py',
             'mkdocs build --strict','mkdocs build -f mkdocs.thpt-preview.yml --strict','node scripts/assemble-thpt-site.cjs','ghp-import -n -p -f site'])
             assert(shared.includes(req),"Shared Knowledge protected gate missing "+req);
