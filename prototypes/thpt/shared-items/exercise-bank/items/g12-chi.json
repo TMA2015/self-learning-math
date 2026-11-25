@@ -11,7 +11,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "So sánh bình phương của hai số âm, hoặc xét f′=2x."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -26,7 +28,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nói x² luôn tăng, thử −2<−1 nhưng 4>1. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P01."
   },
   {
     "item_id": "THPT-G12-CHI-B01-C02",
@@ -40,7 +43,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tách 2(x−2), lập dấu hai phía x=2."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -55,7 +60,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ giải f′=0, thử dấu ở x=1 và 3. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P02."
   },
   {
     "item_id": "THPT-G12-CHI-B01-C03",
@@ -69,7 +75,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đọc dấu trước và sau từng mốc."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -84,7 +92,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm loại cực trị, vẽ mũi tên tăng rồi giảm hoặc giảm rồi tăng. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P03."
   },
   {
     "item_id": "THPT-G12-CHI-B01-C04",
@@ -98,7 +107,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Xét f′ ở hai phía 0, không chỉ tại 0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -113,7 +124,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nghĩ f′=0 luôn có cực trị, kiểm x³ tăng qua 0. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P04."
   },
   {
     "item_id": "THPT-G12-CHI-B01-P01",
@@ -127,7 +139,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Ghi miền rồi xét dấu riêng hai khoảng."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -142,7 +156,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nối qua 2, thử f(1) và f(3). Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-C02."
   },
   {
     "item_id": "THPT-G12-CHI-B01-P02",
@@ -156,7 +171,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Hai nghiệm của tích chia trục số thành ba khoảng."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -171,7 +188,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm dấu tích, chọn x=0 ở khoảng giữa. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-C02."
   },
   {
     "item_id": "THPT-G12-CHI-B01-P03",
@@ -185,7 +203,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tìm nghiệm f′, xét đổi dấu, tính f tại nghiệm."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -200,7 +220,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ nêu hoành độ, tính cả giá trị cực trị. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-C03."
   },
   {
     "item_id": "THPT-G12-CHI-B01-P04",
@@ -214,7 +235,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "So |x| với |0|; đạo hàm không phải cách duy nhất."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -229,7 +252,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu loại mọi điểm không khả vi, dùng định nghĩa cực tiểu. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-C04."
   },
   {
     "item_id": "THPT-G12-CHI-B01-A01",
@@ -243,7 +267,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Phân tích v(t)=s′(t) thành tích rồi giới hạn t≥0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -258,7 +284,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu dùng dấu tọa độ, xem lại dấu vận tốc; phân biệt dừng tức thời với đứng yên. Ôn Toán 12 Chương I Bài 1; luyện THPT-G12-CHI-B01-P02."
   },
   {
     "item_id": "THPT-G12-CHI-B02-C01",
@@ -272,7 +299,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tìm một số lớn hơn x nhưng vẫn nhỏ hơn 1."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -287,7 +316,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy 1 là GTLN, kiểm 1 không thuộc (0;1). Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P02."
   },
   {
     "item_id": "THPT-G12-CHI-B02-C02",
@@ -301,7 +331,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Kiểm đủ liên tục, đoạn đóng và hữu hạn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -316,7 +348,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu bỏ một giả thiết, đối chiếu phản ví dụ 1/x trên đoạn khuyết. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P05."
   },
   {
     "item_id": "THPT-G12-CHI-B02-C03",
@@ -330,7 +363,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "So f tại hai đầu và nghiệm f′ trong đoạn."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -345,7 +380,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ xét x=1, thêm x=0,4. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P01."
   },
   {
     "item_id": "THPT-G12-CHI-B02-C04",
@@ -359,7 +395,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Xét giới hạn khi x tiến tới 0⁺ và +∞."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -374,7 +412,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu gọi 0 là GTNN, kiểm 1/x không bao giờ bằng 0. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P02."
   },
   {
     "item_id": "THPT-G12-CHI-B02-P01",
@@ -388,7 +427,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Tính g tại 0,5 và nghiệm g′=0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -403,7 +444,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu nhầm GTNN là giá trị tại đỉnh, so các đầu mút. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C03."
   },
   {
     "item_id": "THPT-G12-CHI-B02-P02",
@@ -417,7 +459,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Kiểm x=0 thuộc miền, còn ±1 thì không."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -432,7 +476,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho miền mở không có GTNN, kiểm f(0)=0. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C01."
   },
   {
     "item_id": "THPT-G12-CHI-B02-P03",
@@ -446,7 +491,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Xét dấu đạo hàm và điều kiện x≥0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -461,7 +508,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu chỉ dùng lim f=0, cần chỉ ra x=0 thực sự đạt 0. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C04."
   },
   {
     "item_id": "THPT-G12-CHI-B02-P04",
@@ -475,7 +523,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Dùng tính tăng của x³ trên đoạn và kiểm x=0."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -490,7 +540,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu đồng nhất GTLN với cực đại nội miền, phân biệt hai khái niệm. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C03."
   },
   {
     "item_id": "THPT-G12-CHI-B02-P05",
@@ -504,7 +555,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Kiểm hàm tại x=0 trước khi dùng định lý."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -519,7 +572,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu cho tập khuyết một điểm là đoạn đóng đầy đủ, xét 1/x gần 0. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-C02."
   },
   {
     "item_id": "THPT-G12-CHI-B02-A01",
@@ -533,7 +587,9 @@
     ],
     "problem_type_id": null,
     "difficulty": null,
-    "hints": [],
+    "hints": [
+      "Đặt hai cạnh dương, viết tổng bằng 12 rồi hoàn thành bình phương."
+    ],
     "rubric": null,
     "interaction": {
       "type": "SELF_COMPARE",
@@ -548,7 +604,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING"
+    "status": "AUTHOR_MATH_AND_SKILL_REVIEWED_PED_INTEGRATION_PENDING",
+    "remediation": "Nếu lấy diện tích 0 ở biên làm GTNN, biên không tạo mảnh vườn hợp lệ. Ôn Toán 12 Chương I Bài 2; luyện THPT-G12-CHI-B02-P03."
   },
   {
     "item_id": "THPT-G12-CHI-B03-C01",
