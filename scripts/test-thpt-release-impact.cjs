@@ -788,7 +788,24 @@ function selfTest(){
  assert.equal(classify([...notation,"mkdocs.yml"]).full_suite,"true");
  assert.equal(classify(notation,{manual:true}).full_suite,"true");
  const rw1=[...TOPIC_RW1_FILES];
- assert.equal(classify(rw1).impact,"SCOPED_TOPIC_RW1");
+ // The original ten-path lane is immutable; the evolved shared renderer
+ // intentionally no longer qualifies. Do not make the historical fixture
+ // assert a stale runtime signature against the current checkout.
+ const evolvedShared=fs.readFileSync("docs/assets/javascripts/math-details-v1.js","utf8").includes("window.SLMTHPTKnowledgeMath=shared;");
+ assert.equal(classify(rw1).impact,evolvedShared?"FULL":"SCOPED_TOPIC_RW1");
+ const sharedCandidate=[
+  "docs/assets/javascripts/math-details-v1.js",
+  "docs/assets/javascripts/thpt-topic-w2-golden-v1.js",
+  "docs/assets/javascripts/thpt-topic-w3-golden-v1.js",
+  "docs/assets/javascripts/thpt-topic-w4-golden-v1.js",
+  "scripts/test-thpt-topic-rw1-math-browser.py",
+  "scripts/test-thpt-release-impact.cjs",
+  ".github/workflows/thpt-topic-rw1-math-qa.yml"
+ ];
+ // The new candidate must stay FULL until a separately verified exact
+ // deploy lane exists. Unknown/mixed site paths cannot get a fast pass.
+ assert.equal(classify(sharedCandidate).impact,"FULL");
+ assert.equal(classify([...sharedCandidate,"docs/thpt-preview/chuyen-de/cd09/kien-thuc.md"]).impact,"FULL");
  assert.equal(classify(rw1.slice(1)).impact,"FULL");
  assert.equal(classify([...rw1,"docs/thpt-preview/chuyen-de/cd01/kien-thuc.md"]).impact,"FULL");
  assert.equal(classify(rw1,{manual:true}).impact,"FULL");
