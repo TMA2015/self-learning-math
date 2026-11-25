@@ -16814,6 +16814,46 @@
         "Preserve source, interaction/exposure, 2312 IDs/3921 placements. No fresh PDF SGK/SBT, complete Academic/PED/browser QA or cutover version decision. No new PASS."
       ],
       "next": "G10 chapter formative sweep complete in scope; continue CĐ10 and corresponding shared G12/G11 items, avoid already reviewed deltas; Written gaps remain separate."
+    },
+    "formative_scoped_audit_cp57": {
+      "checkpoint": 57,
+      "baseline": "1adf8618c8810b3990db1795dd7bbf74234583fa",
+      "scope": "CĐ10 P01–P36 + shared G12 ChI B01–B02 C/P/A (19), targeted audit; rest pending",
+      "source_evidence": {
+        "cd10_knowledge": "91522426f7f384f2518e5dbc1e804bb8aafea5d1",
+        "cd10_practice": "2462e007e3ec6f22ce20a7de82170d6d0b64ec16",
+        "cd10_replay": "f731ae117b0bd6afa6e9530e706daef9c6ae9c14"
+      },
+      "files": [
+        {
+          "path": "items/cd10.json",
+          "before": "e7858136ed8c80f2162378e294e8ded912e30e26",
+          "after": "bc793e1cadef57622d5ffc80e0d0b2e93dd0ca8e",
+          "changed": 36
+        },
+        {
+          "path": "items/g12-chi.json",
+          "before": "8c5e6757ad2ec77e9ba12b583b72f2f9a2e95a81",
+          "after": "73fac370e8465cb6453bfb6c8552c992f70b7bfc",
+          "changed": 19,
+          "unchanged": 50
+        }
+      ],
+      "reviewed": {
+        "topic_formative": 36,
+        "shared_sgk_formative": 19,
+        "topic_outcomes": 36,
+        "topic_practice_markers": 120,
+        "topic_replay_markers": 36,
+        "remediation_links_resolved": 56,
+        "topic_skill_mappings_to_existing_codes": 36
+      },
+      "findings": [
+        "P04 distinguishes abscissa/value/graph point. P12 clarifies adjacent sides. P26/P28 explicit model and units, derivative vs finite increment. P31 now tests nondifferentiable interior point and boundaries; P32 compares continuous optimum with tied integer choices and limits of rounding. P34 focuses on vertical asymptote and removable discontinuity. All 36 have hints/remediation and existing skill links. 19 SGK B01–B02 hints/D6; no change to their stems/keys/solutions. Protected IDs, source, version, interaction/rubric/status retained.",
+        "120 practice and 36 replay marker IDs/outcome/order match frozen public projection; 56 D6 links resolve in current G12 ChI shard. No placement edits. Prior totals 2312 IDs/3921 placements unchanged by delta; no whole-bank re-scan.",
+        "G12 ChI B03–B05/END remaining; CĐ10 Written references/rubrics, original SGK/SBT fresh visual evidence, complete source field parity, figure-reading/optimization transfer breadth and cutover/version decision pending. No new Academic/PED PASS."
+      ],
+      "next": "Finish shared G12 ChI B03–B05/END and CĐ10 Written review, then CĐ11; preserve CP57."
     }
   }
 }
