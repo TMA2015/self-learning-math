@@ -1,9 +1,11 @@
+<!-- #1109 A02 CP01: active candidate source 032ef33d09d22df4b7585f72100bf3860f63054e at 5186e2569f299e41d5c58b515b567a894d3b54d4 is NOT CONTENT_READY. All signed source/receipt pointers below remain historical until affected-scope verification and relock; no RELEASE intake. -->
+
 <!-- TOP08_MASTER974_CURRENT_AUTHORING_R05_READY_20261121 -->
-**CURRENT AUTHORING CONTENT_READY v3.2.0, NOT WEBSITE RELEASE:** one original R05 learner source `0853a6de4be055d63a767b58dab20fa113e11098` (Git source commit `c2b045234514b1e9f2042064c145cd6abfffd6da`), same original36 G11 SGK placement bank `43cbb73bd06e0da6bf8838d925186bc4db4194a7` and Topic22 source `2e93db80384de53e208248eaa0396a7f487302ac`; existing current author Q18 receipt `9e80780f05096269b7cd1942c7006138d72d7ec9`, source custody `b997e079eac17c2cd807b57124cdfc142259f260`, **one V2** `acd074d8104eab7639037c94aa64782092c80816`. Five actually verified student issues #977-025–029 fixed: 18/18 genuine D6 recovery routes, 18/18 public question-only selfcheck lookup, O08 correct left/right probes near x3, O10 x6 instead of false x3, O12 independent limit at −∞ with result −3 rather than copied previously revealed +∞ example. Original 58 unique Practice items and 10 Written rubrics, 18 selfcheck question stems, three SVG fully preserved; 77/77 balanced disclosures and only one SGK credit footer. Corrected authoring management comments flagged NOT_FOR_STUDENT_VIEW. S1 scanned original G11 ChV B15–B17 proven in previous scoped receipt; affected Delta C self-Q18 under v3.2.0, no new independent NotebookLM reviewer Academic/PED PASS, RD1, Final Submit/Mastery, AP/R website, owner release authorization or merge/deploy. Historic original R05 QA counts are previous snapshot only, not falsely current new independent tests.
+**HISTORICAL SIGNED SNAPSHOT v3.2.0, NOT CURRENT CANDIDATE READY:** one original R05 learner source `0853a6de4be055d63a767b58dab20fa113e11098` (Git source commit `c2b045234514b1e9f2042064c145cd6abfffd6da`), same original36 G11 SGK placement bank `43cbb73bd06e0da6bf8838d925186bc4db4194a7` and Topic22 source `2e93db80384de53e208248eaa0396a7f487302ac`; existing current author Q18 receipt `9e80780f05096269b7cd1942c7006138d72d7ec9`, source custody `b997e079eac17c2cd807b57124cdfc142259f260`, **one V2** `acd074d8104eab7639037c94aa64782092c80816`. Five actually verified student issues #977-025–029 fixed: 18/18 genuine D6 recovery routes, 18/18 public question-only selfcheck lookup, O08 correct left/right probes near x3, O10 x6 instead of false x3, O12 independent limit at −∞ with result −3 rather than copied previously revealed +∞ example. Original 58 unique Practice items and 10 Written rubrics, 18 selfcheck question stems, three SVG fully preserved; 77/77 balanced disclosures and only one SGK credit footer. Corrected authoring management comments flagged NOT_FOR_STUDENT_VIEW. S1 scanned original G11 ChV B15–B17 proven in previous scoped receipt; affected Delta C self-Q18 under v3.2.0, no new independent NotebookLM reviewer Academic/PED PASS, RD1, Final Submit/Mastery, AP/R website, owner release authorization or merge/deploy. Historic original R05 QA counts are previous snapshot only, not falsely current new independent tests.
 
 ---
 
-# CĐ08 — Giới hạn và Tính liên tục · AUTHORING CONTENT_READY R05 (stable PACKET_ID R01)
+# CĐ08 — Giới hạn và Tính liên tục · AUTHORING upgrade in progress (stable PACKET_ID R01)
 
 PACKET_ID: THPT-TOPIC08-LIMITS-CONTINUITY-FULL-R01
 STANDARD_ID: SLM-THPT-QUALITY-ONE
@@ -12,7 +14,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: c2b045234514b1e9f2042064c145cd6abfffd6da
 AUTHOR_PR: 829
 CURRENT_PR: https://github.com/TMA2015/self-learning-math/pull/829 — DRAFT AUTHORING, not merged/deployed
@@ -38,7 +40,7 @@ SVG3_PATH: prototypes/thpt/visuals/THPT_TOPIC08_IVT_BISECTION_R01.svg
 SVG3_BLOB: 60a389862b5bc221a51447179ec8aab6c03b7ca4
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: #1109 A02 current-source Work repair + X-G.5 notation audit + Q18/V2/REGISTER relock pending
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
