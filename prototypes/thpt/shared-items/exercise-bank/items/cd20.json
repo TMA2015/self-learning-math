@@ -455,9 +455,9 @@
   {
     "item_id": "THPT-TOP20-P16",
     "content_version": "TOP20-R09_AUTHOR_KEY_REVIEW_R01",
-    "stem": "Hai thiết bị hoạt động độc lập, xác suất hoạt động của thiết bị thứ nhất là 4/5, của thiết bị thứ hai là 3/4. Tính xác suất ít nhất một thiết bị hoạt động và xác suất cả hai hoạt động.",
-    "answer_key": "Ít nhất một: 19/20; cả hai: 3/5.",
-    "worked_solution": "Gọi A,B là biến cố từng thiết bị hoạt động. Do độc lập, P(A∩B)=4/5·3/4=3/5. Biến cố cả hai không hoạt động là giao hai biến cố đối, cũng độc lập: (1−4/5)(1−3/4)=1/20. Vậy P(A∪B)=1−1/20=19/20. Kiểm bằng quy tắc cộng: 4/5+3/4−3/5=19/20.",
+    "stem": "Hai thiết bị hoạt động độc lập, xác suất hoạt động của thiết bị thứ nhất là 2/3, của thiết bị thứ hai là 3/5. Tính xác suất ít nhất một thiết bị hoạt động và xác suất cả hai hoạt động.",
+    "answer_key": "Ít nhất một: 13/15; cả hai: 2/5.",
+    "worked_solution": "Gọi A,B là biến cố từng thiết bị hoạt động. Do độc lập, P(A∩B)=2/3·3/5=2/5. Hai biến cố đối cũng độc lập nên xác suất cả hai không hoạt động bằng (1−2/3)(1−3/5)=2/15. Vậy P(A∪B)=1−2/15=13/15. Kiểm bằng quy tắc cộng: 2/3+3/5−2/5=13/15.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B30-MULTIPLY_INDEPENDENT"
