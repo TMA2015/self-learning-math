@@ -161,7 +161,7 @@ Không được đồng nhất **hiếm** với **không thể**. Một vé trú
 
 **Vận dụng**
 
-Có 20 thẻ đồng khả năng, đúng 1 thẻ màu đen. Tính P(không đen). Biến cố đen có phải không thể?
+Có 20 thẻ đồng khả năng, đúng 1 thẻ màu đen. Tính \(P(\text{không đen})\). Biến cố đen có phải không thể?
 
 <!-- ITEM_ID: THPT-TOP20-T03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O04; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
@@ -289,7 +289,7 @@ Khi gieo hai xúc xắc phân biệt, có 36 **cặp có thứ tự** đồng kh
 
 **Vận dụng**
 
-Gieo hai xúc xắc phân biệt, cân đối. Có bao nhiêu cặp sơ cấp đồng khả năng và P(tổng số chấm bằng 12)?
+Gieo hai xúc xắc phân biệt, cân đối. Có bao nhiêu cặp sơ cấp đồng khả năng và \(P(\text{tổng số chấm bằng 12})\)?
 
 <!-- ITEM_ID: THPT-TOP20-T05; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O10; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
@@ -603,7 +603,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P03; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O03; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 3.** Túi chứa 10 phiếu khác nhau, đúng 3 phiếu có thưởng, rút đều một phiếu. Tính P(trúng).
+**Bài luyện 3.** Túi chứa 10 phiếu khác nhau, đúng 3 phiếu có thưởng, rút đều một phiếu. Tính \(P(\text{trúng})\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -617,7 +617,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P04; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O04; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 4.** Trong 12 thẻ khác nhau, có 4 thẻ bị lỗi. Rút đều một thẻ. Tính P(không lỗi) bằng biến cố đối.
+**Bài luyện 4.** Trong 12 thẻ khác nhau, có 4 thẻ bị lỗi. Rút đều một thẻ. Tính \(P(\text{không lỗi})\) bằng biến cố đối.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -659,7 +659,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P07; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O07; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 7.** Từ 7 thẻ khác nhau, trong đó có 3 thẻ ghi sao, lấy đều 2 thẻ cùng lúc (không xét thứ tự). Tính P(cả hai sao).
+**Bài luyện 7.** Từ 7 thẻ khác nhau, trong đó có 3 thẻ ghi sao, lấy đều 2 thẻ cùng lúc (không xét thứ tự). Tính \(P(\text{cả hai sao})\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -673,7 +673,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P08; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O08; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 8.** Túi có 2 bóng đỏ và 4 bóng xanh khác nhau. Chọn đều 2 bóng cùng lúc. Tính P(ít nhất một bóng đỏ).
+**Bài luyện 8.** Túi có 2 bóng đỏ và 4 bóng xanh khác nhau. Chọn đều 2 bóng cùng lúc. Tính \(P(\text{ít nhất một bóng đỏ})\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -701,7 +701,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P10; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O10; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 10.** Hộp 5 thẻ khác nhau (2 đỏ, 3 xanh), rút đều liên tiếp 2 thẻ không hoàn lại. Tính P(cả hai đỏ) bằng đếm chuỗi.
+**Bài luyện 10.** Hộp 5 thẻ khác nhau (2 đỏ, 3 xanh), rút đều liên tiếp 2 thẻ không hoàn lại. Tính \(P(\text{cả hai đỏ})\) bằng đếm chuỗi.
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -787,7 +787,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P16; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O16; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 16.** Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. P(ngửa và mặt xúc xắc chia hết cho 3)?
+**Bài luyện 16.** Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. \(P(\text{ngửa và mặt xúc xắc chia hết cho 3})\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -819,7 +819,7 @@ Ba bài tự luận dưới đây yêu cầu trình bày lời giải và giải
 
 <!-- ITEM_ID: THPT-TOP20-W01; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O08; CONTENT_VERSION: TOP20-R12; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
 
-**Bài luyện 18.** Có 8 phiếu phân biệt, 3 phiếu đỏ và 5 phiếu xanh. Chọn đều một nhóm 2 phiếu không xét thứ tự. (a) Có bao nhiêu nhóm kết quả? (b) Tính P(cả hai đỏ). (c) Tính P(ít nhất một đỏ) bằng biến cố đối.
+**Bài luyện 18.** Có 8 phiếu phân biệt, 3 phiếu đỏ và 5 phiếu xanh. Chọn đều một nhóm 2 phiếu không xét thứ tự. (a) Có bao nhiêu nhóm kết quả? (b) Tính \(P(\text{cả hai đỏ})\). (c) Tính \(P(\text{ít nhất một đỏ})\) bằng biến cố đối.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -907,19 +907,19 @@ Trước hết, đồng xu cân đối có xác suất ngửa \(P(A)=\frac{1}{2}
 **Câu 1.** Rút đều một thẻ trong 10 thẻ đánh số 0 đến 9. Viết Ω và biến cố A “số chẵn”.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P03; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 2.** Túi chứa 10 phiếu khác nhau, đúng 3 phiếu có thưởng, rút đều một phiếu. Tính P(trúng).
+**Câu 2.** Túi chứa 10 phiếu khác nhau, đúng 3 phiếu có thưởng, rút đều một phiếu. Tính \(P(\text{trúng})\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P04; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 3.** Trong 12 thẻ khác nhau, có 4 thẻ bị lỗi. Rút đều một thẻ. Tính P(không lỗi) bằng biến cố đối.
+**Câu 3.** Trong 12 thẻ khác nhau, có 4 thẻ bị lỗi. Rút đều một thẻ. Tính \(P(\text{không lỗi})\) bằng biến cố đối.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P07; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 4.** Từ 7 thẻ khác nhau, trong đó có 3 thẻ ghi sao, lấy đều 2 thẻ cùng lúc (không xét thứ tự). Tính P(cả hai sao).
+**Câu 4.** Từ 7 thẻ khác nhau, trong đó có 3 thẻ ghi sao, lấy đều 2 thẻ cùng lúc (không xét thứ tự). Tính \(P(\text{cả hai sao})\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P08; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 5.** Túi có 2 bóng đỏ và 4 bóng xanh khác nhau. Chọn đều 2 bóng cùng lúc. Tính P(ít nhất một bóng đỏ).
+**Câu 5.** Túi có 2 bóng đỏ và 4 bóng xanh khác nhau. Chọn đều 2 bóng cùng lúc. Tính \(P(\text{ít nhất một bóng đỏ})\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P10; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 6.** Hộp 5 thẻ khác nhau (2 đỏ, 3 xanh), rút đều liên tiếp 2 thẻ không hoàn lại. Tính P(cả hai đỏ) bằng đếm chuỗi.
+**Câu 6.** Hộp 5 thẻ khác nhau (2 đỏ, 3 xanh), rút đều liên tiếp 2 thẻ không hoàn lại. Tính \(P(\text{cả hai đỏ})\) bằng đếm chuỗi.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P11; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
 **Câu 7.** Gieo xúc xắc: A=ra số lẻ, B=ra số không nhỏ hơn 5. Viết \(A\cap B\) và \(A\cup B\).
@@ -931,7 +931,7 @@ Trước hết, đồng xu cân đối có xác suất ngửa \(P(A)=\frac{1}{2}
 **Câu 9.** Gieo xúc xắc. \(A=\{1,2,3,4\}\), \(B=\{2,4,6\}\). Tính \(P(A\cup B)\) theo quy tắc cộng.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P16; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 10.** Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. P(ngửa và mặt xúc xắc chia hết cho 3)?
+**Câu 10.** Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. \(P(\text{ngửa và mặt xúc xắc chia hết cho 3})\)?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P17; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
 **Câu 11.** Gieo hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lẻ, B: con thứ hai không lớn hơn 2. Tính \(P(A\cup B)\).
