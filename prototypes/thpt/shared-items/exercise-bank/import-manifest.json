@@ -17409,6 +17409,97 @@
         "Readback 70/70 D6 targets, 80/80 placements; 42+20 practice and 7+11 replay order exactly source markers. No new IDs, source/version/original outcome/rubric/status/interaction changes or auto-grade; 325 Written refs unchanged. No fresh SGK/SBT PDF or Academic/PED PASS."
       ],
       "next": "CĐ21–22, then reconcile thin CĐ19 O13/O14, CĐ20 SGK shared coverage and previous CĐ15 gaps/Written within authorized scope."
+    },
+    "formative_scoped_audit_cp64": {
+      "checkpoint": 64,
+      "baseline": "3d8a9be61cf5ee7f6f7921bec5e8424d20206bce",
+      "scope": "CĐ21–22 first formative pass; related G12 ChVI; shared G11 ChIII/G12 ChIII and G10 ChV read-only; topic and placed Written read-only",
+      "files": [
+        {
+          "path": "items/cd21.json",
+          "before": "1467b306abfdc7ea7bb68e177419d6c0285e45aa",
+          "after": "2991a3317c2dc5339143484a7f8fd1edbd099683",
+          "changed": 8
+        },
+        {
+          "path": "items/cd22.json",
+          "before": "c5a7288146268904c8a68ddc641c604dc30c0a5c",
+          "after": "2b4a3f366a67407bc2ec3e8fec65f0fe3edf876c",
+          "changed": 7
+        },
+        {
+          "path": "items/g12-chvi.json",
+          "before": "059391b39ba3218f75dc73341a706e26268f3353",
+          "after": "9c5283cd30e5e49d3ce70364b08e859dba4721dd",
+          "changed": 42
+        },
+        {
+          "path": "items/g11-chiii.json",
+          "before": "8a017b6e5e068ffb04403baa61ee3301903c28b5",
+          "after": "238dd3cabb11e28570f061724dd2c4213ffb7785",
+          "changed": 28
+        },
+        {
+          "path": "items/g12-chiii.json",
+          "before": "7b51199f901dbd366eea1eaee4fba3d67f8c3d61",
+          "after": "6f3a4b8555e056fa449eb74170e6d50dff6eeff4",
+          "changed": 36
+        },
+        {
+          "path": "placements/cd22.json",
+          "before": "71d19a32c486d090069feb47fe35dd6e15f85a74",
+          "after": "004b2840f79040e738f4f31f8c11014d6faa9ed2",
+          "changed": 114
+        }
+      ],
+      "source_evidence": {
+        "cd21_knowledge": "15b5da831fee54d1316a8928a423790bc93962a0",
+        "cd21_practice": "76dfdd8f9544037b64866d7d5d8c35db3faa8ed7",
+        "cd21_replay": "3a48f5062fb1f77290d172bd9e02f14d87dfc6ef",
+        "cd22_knowledge": "bde0820d157a5169d3cf365c846cf11169d40035",
+        "cd22_practice": "e0492a48aff879128577458dbd8b2da898980ff1",
+        "cd22_replay": "d2f4ee3ef4fc5f82350fbd4bf54f1ea3e710c4c6",
+        "cd21_written": "e526468f2452221e08070fc96e3a64d42ad5c8f9",
+        "g10_chv_written": "49502fe39cf0a67f6a3e973a77f94164150637a7",
+        "g11_chiii_written": "4ea8df2ca2682d9fac8b1556852334af336930a5",
+        "g12_chiii_written": "4e8e462a5c2243583be8c71625a9be3095e48c7b"
+      },
+      "reviewed": {
+        "topic_formative": 15,
+        "related_g12_chvi_formative": 42,
+        "shared_g11_chiii_formative": 28,
+        "shared_g12_chiii_formative": 36,
+        "g10_chv_placed_formative_preserved": 24,
+        "written": 22,
+        "changed_records": 121,
+        "placement_outcomes_filled": 114,
+        "placements_resolve": 142,
+        "d6_targets_resolve": 121,
+        "practice_outcomes": 47,
+        "projection_order": [
+          {
+            "topic": 21,
+            "practice": 11,
+            "replay": 8,
+            "practice_order_match": true,
+            "replay_order_match": true
+          },
+          {
+            "topic": 22,
+            "practice": 114,
+            "replay": 9,
+            "practice_order_match": true,
+            "replay_order_match": true
+          }
+        ]
+      },
+      "findings": [
+        "CĐ21 P02 reverse conditioning and impossible condition, P03 ordered versus unordered draw, P04 compare independent/dependent with conditional probabilities, P05 changing source weights, P06 Bayes versus prior, P08 false-positive rate comparison in probability model rather than fractional counts. 42 G12 B18–19 related C/P/A records item-specific hints and D6. B18-A06 corrected denominator/sampling unit mismatch (trip vs passenger), B18-C03/P03/A03 explicit uniform choice and explanation, B19-C06 same survey unit. Frozen CĐ21 has no shared SGK placement; all 8 outcomes one topic formative; do not create placement in this pass.",
+        "CĐ22 seven added items now require explicit reasoning: precision interval, tied modes vs no mode per frozen KNTT convention, median robustness, both IQR fences and avoid deleting outliers automatically, variance and units, concrete counterexample of grouped mean and median differing from raw mean/median. 28 G11 and 36 G12 shared C/P hints/D6; B08-P08 unbounded group clarified, B09-P08 boundary interpolation distinguished from half-open interval membership, B10-P03 grouped zero variance does not prove raw zero variance; B10-C02/P09 differentiated from Written. 24 G10 shared placements already upgraded, retained; extra G10-B12-P07 not in CĐ22 placement, not changed. 114 CĐ22 practice/Written primary outcome mappings use 39 source-native OUTCOME_REF IDs (no fabricated TOP22 codes); every source outcome covered, GROUPED-MODE only one formative. CĐ21 no new placement. All first-try outside scope retained.",
+        "22 Written blocks read (3 topic CĐ21+19 shared CĐ22); keys checked, CĐ21 three lack library pointer; G12-B10-W03/W05 duplicated data with former C/P now differentiated; W04 overlap B10-P01 and P07 remains scaffolded split, B09-W06 solution lacks explicit Q1/Q3 numerical intermediate despite rubric requiring them; G11 W09-01 and W09-02 explain boundary computation but should distinguish observation position from value in half-open interval; G12-B10-W06 CV remains optional/reference-only, not Core. No Written changes.",
+        "Readback 121/121 D6 targets resolve; 142/142 placements resolve; 11+114 practice and 8+9 replay markers exact frozen order. 47/47 source outcomes formative placement; no protected field differences against CP63 baseline; no choices or auto_grade=true introduced, 325 Written refs preserved. No fresh SGK/SBT PDF or Academic/PED PASS. Completed first scoped formative pass across 22 topics, not full academic acceptance."
+      ],
+      "next": "Targeted reconciliation: actual source-based shared placements CĐ20–21, depth gaps CĐ15/CĐ19/CĐ22 and remaining relevant SGK/first-try, Written library pointer/academic defects per authorized scope. No cutover, merge or deploy."
     }
   }
 }
