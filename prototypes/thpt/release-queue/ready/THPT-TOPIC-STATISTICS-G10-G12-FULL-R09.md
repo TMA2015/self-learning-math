@@ -1,3 +1,6 @@
+<!-- WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 candidate learner blob `8d0a01ca7bb7d3dafc2aaf57e9f79984a8fbcd8b`, source commit `188ef3067430ddece60ae29be0770d629506e612`. Earlier signed source/receipt pointers below remain historical for the previous snapshot only. Affected Q18/V2, S1 and X-G.5 verification/re-lock pending; not authorized for release.
+
 <!-- TOP22_MASTER974_FINAL_READY_SOURCE_LOCK_20261121 -->
 **CĐ22 final R09 AUTHORING ready SHA lock:** learner `7ac79e5ed705a5ce482c3d9c42a4451e659e1109`, signed Q18 `2e35a06020768e5a6db2e9f2fe65a46f577960c2`, one 127-item/9-same-ID Q15 A1 `496b936cfcdee2347aaf8460188bb6381205ce2c`, one V2 `5f57cec1d8d2a47d674aedd88fa18350af78645f` (source commit `75c1be1493feb239147b493fecd933965181ad5a`). Final learner wording corrected one voluntary SelfCheck explanation to remove technical status label; no math/key/rubric/39-outcome/13-FirstTry/114-SGK-Practice/9-public-replay/128-detail/SVG effect. Original P2 S1 PDF-index reference unresolved nonblocking; source AUTHORING `CONTENT_READY` not independent NotebookLM whole-Topic PASS nor website RELEASE, and `BLOCKERS: NONE` refers to no blocker in newly changed authoring delta, not dismissal of original P2.
 ---
@@ -48,7 +51,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: 75c1be1493feb239147b493fecd933965181ad5a
 AUTHOR_PR: 812
 CURRENT_PR: #812 Draft AUTHORING, no release or merge authorization
@@ -65,7 +68,7 @@ PUBLIC_EXTENSION_PATH: prototypes/thpt/shared-items/Temp_TOPIC_STATISTICS_G10_G1
 PUBLIC_EXTENSION_BLOB: c222f9c8ef2c3b34caf4f6d6c33fa88f960471c3
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
