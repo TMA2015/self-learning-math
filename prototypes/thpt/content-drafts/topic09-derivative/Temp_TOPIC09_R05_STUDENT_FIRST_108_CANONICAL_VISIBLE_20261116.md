@@ -14,7 +14,7 @@ Nếu tọa độ của một chiếc xe trên đường thẳng tăng 16 mét t
 
 <!-- LESSON_ID: TOP09-M01; OUTCOME_ID: TOP09-O01 -->
 
-Nếu tọa độ của xe tăng 16 mét trong 2 giây, vận tốc trung bình là 8 m/s. Nhưng nếu xe đi 8 mét rồi quay lại 8 mét, quãng đường vẫn là 16 mét, tốc độ trung bình là 8 m/s, còn độ dời và vận tốc trung bình đều bằng 0. Nhưng con số 8 chưa nói xe chuyển động nhanh bao nhiêu **đúng tại một thời điểm**. Để hiểu sự khác biệt, hãy bắt đầu với một đại lượng \(s(t)\) biểu diễn tọa độ theo thời gian. Trên khoảng \([a;b]\), vận tốc trung bình có hướng bằng \(\frac{s(b)-s(a)}{b-a}\) với \(a\ne b\); tử số là độ dời, mẫu số là khoảng thời gian và đơn vị là mét trên giây nếu \(s\) đo bằng mét.
+Nếu tọa độ của xe tăng 16 mét trong 2 giây, vận tốc trung bình là 8 m/s. Nhưng nếu xe đi 8 mét rồi quay lại 8 mét, quãng đường vẫn là 16 mét, tốc độ trung bình là 8 m/s, còn độ dời và vận tốc trung bình đều bằng 0. Nhưng con số 8 chưa nói xe chuyển động nhanh bao nhiêu **đúng tại một thời điểm**. Để hiểu sự khác biệt, hãy bắt đầu với một đại lượng \(s(t)\) biểu diễn tọa độ theo thời gian. Trên đoạn thời gian \([a;b]\) với \(a<b\), vận tốc trung bình có hướng bằng \(\frac{s(b)-s(a)}{b-a}\); tử số là độ dời, mẫu số là khoảng thời gian và đơn vị là mét trên giây nếu \(s\) đo bằng mét.
 
 > **CÔNG THỨC — Vận tốc trung bình.** Xét \(s(t)=2t^2\) (m) trong khoảng từ \(t=1\) đến \(t=3\) giây. Tọa độ tăng từ \(s(1)=2\) đến \(s(3)=18\), tức độ dời 16 m trong 2 s. Vận tốc trung bình là \(\frac{18-2}{3-1}=8\) m/s. Ta phải dùng **hiệu hai tọa độ chia hiệu hai thời điểm**, không phải \(\frac{s(3)}3\). Ở bước tiếp theo, khi hai thời điểm tiến sát nhau, ý tưởng này sẽ dẫn tới đạo hàm và vận tốc tức thời.
 
@@ -74,9 +74,15 @@ Nếu thay \(h=0\) trực tiếp vào thương sai phân rồi viết \(\frac00\
 
 Giới hạn thương sai phân đưa ta tới định nghĩa đạo hàm. Vì sao một đạo hàm là một giới hạn chứ không chỉ là bảng công thức? Ta sử dụng giới hạn hàm số CĐ08 và \(f(a)\), \(f(a+h)\) thuộc miền. 
 
-> **ĐỊNH NGHĨA — Đạo hàm tại một điểm.** Với \(a\) là điểm trong của miền xác định, \(f'(a)=\displaystyle\lim_{h\to0}\frac{f(a+h)-f(a)}h\), nếu giới hạn **hữu hạn từ cả hai phía** tồn tại. Đạo hàm một phía riêng lẻ chưa đủ kết luận có đạo hàm thông thường tại \(a\).
+> **ĐỊNH NGHĨA — Đạo hàm tại một điểm.** Với hàm xác định trên một khoảng mở chứa \(a\), \(f'(a)=\displaystyle\lim_{h\to0}\frac{f(a+h)-f(a)}h\), nếu giới hạn **hữu hạn từ cả hai phía** tồn tại. Đạo hàm một phía riêng lẻ chưa đủ kết luận có đạo hàm thông thường tại \(a\).
 
- Tính bằng định nghĩa giúp kiểm công thức có áp dụng hay không.
+Đặt \(h=x-a\), ta có cách viết tương đương trong SGK:
+
+\[
+f'(a)=\lim_{x\to a}\frac{f(x)-f(a)}{x-a}.
+\]
+
+Để tính bằng định nghĩa: tính \(f(x)-f(a)\), lập thương khi \(x\ne a\), rồi tìm giới hạn hữu hạn. Tính bằng định nghĩa giúp kiểm công thức có áp dụng hay không.
 
 Xét ví dụ: \(f=x^3\) tại \(a=2\): \((2+h)^3-8=12h+6h^2+h^3\), chia cho \(h\ne0\), được \(12+6h+h^2\to12\) khi \(h\to0\). Chọn khai triển vì yêu cầu định nghĩa, không dùng ngay quy tắc \(3x^2\).
 
@@ -171,7 +177,7 @@ Chẳng hạn, Xét \(|x-1|\) tại1: f liên tục vì \(|x-1|\to0\); đạo h�
 
 **Đề bài:** Xét \(f(x)=|2x+3|\) tại \(a=-\frac32\): có liên tục và khả vi không?
 
-**Lời giải:** Giá trị hàm tại a bằng 0, hàm liên tục. Thương sai phân =−2 khi \(h<0\), +2 khi \(h>0\); hai giới hạn khác nhau nên không khả vi tại a.
+**Lời giải:** Tại \(a=-\frac32\), \(f(a)=0\) và \(f(a+h)=|2h|\), tiến tới 0 nên hàm liên tục. Với \(h\ne0\), thương sai phân là \(\frac{|2h|}h\), bằng \(-2\) khi \(h<0\), bằng \(2\) khi \(h>0\); hai giới hạn khác nhau nên không khả vi tại a.
 
 **Vận dụng** Xét \(f(x)=|x|+x\) tại \(0\). Hàm có liên tục không? Tính thương sai phân từ trái và phải để quyết định có đạo hàm hay không.
 
@@ -208,7 +214,7 @@ Chẳng hạn, \(f(x)=|x-3|\) tại 3: \(\frac{|h|-0}h=-1\) khi \(h<0\), +1 khi 
 
 **Đề bài:** Cho \(f(x)=3x\) nếu \(x<0\), \(f(x)=x^2\) nếu \(x\ge0\). Xét tại 0.
 
-**Lời giải:** Giới hạn hai phía bằng \(0=f(0)\) nên liên tục. Thương sai phân trái bằng 3, phải tiến 0; đạo hàm hai phía tại 0 không tồn tại.
+**Lời giải:** Giới hạn hai phía bằng \(0=f(0)\) nên liên tục. Với \(h<0\), thương sai phân là \(\frac{3h-0}h=3\); với \(h>0\), thương là \(\frac{h^2-0}h=h\to0\). Hai giới hạn khác nhau; đạo hàm hai phía tại 0 không tồn tại.
 
 **Vận dụng** Tại \(x=0\), đạo hàm một phía của \(|2x|\) là gì?
 
@@ -276,7 +282,7 @@ Xét ví dụ: Với \(f=x^2\) tại \(a=2\), \(P(2;4)\), \(m=4\) ⇒ \(y-4=4(x-
 
 **Lời giải:** Điểm \(P(1;4)\), đạo hàm \(2x+3\) cho \(m=5\); tiếp tuyến \(y-4=5(x-1)\), tức \(y=5x-1\). Thay \(x=1\) kiểm đi qua P.
 
-**Vận dụng** Tiếp tuyến \(y=x^3\) tại \(x=0\) là gì?
+**Vận dụng** Phương trình tiếp tuyến của đồ thị \(y=x^3\) tại \(x=0\) là gì?
 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
@@ -330,7 +336,7 @@ Nếu gọi vận tốc âm là tốc độ âm, đọc **Kiến thức 2.3**, l
 
 Chẳng hạn, \(T(t)=15+2t-0{,}5t^2\) °C; \(T'(t)=2-t\), tại \(t=1\) là +1 °C/phút. Chọn tốc độ biến thiên thay vì tính \(T(1)=16{,}5\) °C.
 
-Không chỉ vận tốc và nhiệt độ: trong mạch điện, nếu điện lượng \(Q(t)\) tính bằng coulomb đi qua tiết diện dây trong \(t\) giây, cường độ dòng điện **trung bình** là \(\dfrac{Q(t_2)-Q(t_1)}{t_2-t_1}\), còn cường độ **tức thời** là \(I(t)=Q'(t)\), tính bằng ampere. Ví dụ \(Q(t)=t^2+3t\) (C) trên \(t\ge0\) cho \(I(t)=2t+3\) (A), nên tại \(t=2\) s ta được \(I(2)=7\) A. Đây cũng là cùng một ý tưởng thương sai phân tiến đến giới hạn, không phải một quy tắc đạo hàm mới.
+Không chỉ vận tốc và nhiệt độ: trong mạch điện, nếu điện lượng \(Q(t)\) tính bằng coulomb đi qua tiết diện dây trong \(t\) giây, cường độ dòng điện **trung bình** là \(\dfrac{Q(t_2)-Q(t_1)}{t_2-t_1}\), còn cường độ **tức thời** là \(I(t)=Q'(t)\), tính bằng ampere. Ví dụ \(Q(t)=t^2+3t\) (C) trên \(t\ge0\) cho \(I(t)=2t+3\) (A), nên tại \(t=2\) s ta được \(I(2)=7\) A. Đây cũng là cùng một ý tưởng thương sai phân tiến đến giới hạn, không phải một quy tắc đạo hàm mới. Tương tự, trong kinh tế, nếu \(C(x)\) là mô hình chi phí sản xuất \(x\) sản phẩm, \(C'(x)\) là chi phí cận biên (đồng/sản phẩm). Với số lượng nguyên và bước tăng một sản phẩm, \(C'(x)\) chỉ là xấp xỉ của \(C(x+1)-C(x)\) khi mô hình thay đổi đủ chậm, không phải đẳng thức tổng quát.
 
 **Ví dụ**
 
@@ -445,7 +451,7 @@ Xét ví dụ: \(y=4x^3-3x+6\) ⇒ \(y'=12x^2-3\); hằng6 biến mất. Chọn 
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-4x+5.
+\(4x+5\).
 
 Nếu viết −8 ở đạo hàm, xem lại định nghĩa đạo hàm hằng.
 
@@ -564,7 +570,7 @@ Nếu đạo hàm \((u(x))^n\) nhưng quên \(u'\), đọc **Kiến thức 3.6**
 
 <!-- LESSON_ID: TOP09-M17; OUTCOME_ID: TOP09-O17 -->
 
-> **CÔNG THỨC — Sin và cos.** Vì sao trong công thức đạo hàm lượng giác lại phải biết đơn vị góc? Ta đã biết hàm sin/cos liên tục và giới hạn \(\lim_{h\to0}\frac{\sin h}{h}=1\) khi \(h\) đo bằng radian. Với x đo **radian**, \((\sin x)'=\cos x\), \((\cos x)'=-\sin x\). Nếu tham số nhập độ thì đạo hàm có thêm \(\frac{\pi}{180}\), không thể dùng công thức radian trực tiếp. Điều kiện về radian là một phần nội dung toán, không phải chi tiết trình bày.
+> **CÔNG THỨC — Sin và cos.** Vì sao trong công thức đạo hàm lượng giác lại phải biết đơn vị góc? Ta đã biết hàm sin/cos liên tục và giới hạn \(\lim_{h\to0}\frac{\sin h}{h}=1\) khi \(h\) đo bằng radian. Với x đo **radian**, \((\sin x)'=\cos x\), \((\cos x)'=-\sin x\). Nếu góc được biểu diễn bằng số đo độ \(x\), trước hết phải đổi sang radian \(\frac{\pi x}{180}\); đạo hàm theo \(x\) có thêm hệ số \(\frac{\pi}{180}\), không thể dùng công thức radian trực tiếp. Điều kiện về radian là một phần nội dung toán, không phải chi tiết trình bày.
 
 Chẳng hạn, \(f=3\sin x+\cos x\) (radian): \(f'=3\cos x-\sin x\). Dấu âm xuất phát từ công thức cộng cos. Dùng \(\cos h-1=-2\sin^2(\frac h2)\) suy ra \(\frac{\cos h-1}{h}\to0\). Vì thế thương sai phân của cos bằng \(\cos x\frac{\cos h-1}{h}-\sin x\frac{\sin h}{h}\to-\sin x\). Tương tự, công thức cộng sin cho giới hạn bằng \(\cos x\).
 
@@ -579,9 +585,9 @@ Chẳng hạn, \(f=3\sin x+\cos x\) (radian): \(f'=3\cos x-\sin x\). Dấu âm x
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-−4sin x−cos x.
+\(-4\sin x-\cos x\).
 
-Nếu ra +4sin x, kiểm đạo hàm cos âm.
+Nếu ra \(+4\sin x\), kiểm đạo hàm cos âm.
 
 
 **Kiểm lỗi**
@@ -647,7 +653,7 @@ Chẳng hạn, \(y=\cos(3x^2)\) ⇒ \(u=3x^2\), \(u'=6x\), \(y'=-6x\sin(3x^2)\).
 <details class="slm-topic-first-try" markdown="1">
 <summary>Đối chiếu</summary>
 
-5cos(5x) trong radian.
+\(5\cos(5x)\) khi góc đo bằng radian.
 
 Nếu ra cos(5x), đạo hàm trong 5x chưa được nhân.
 
@@ -662,7 +668,15 @@ Nếu lấy đạo hàm \(\sin(2x^2)\) mà quên đạo hàm \(2x^2\) hoặc b�
 
 <!-- LESSON_ID: TOP09-M20; OUTCOME_ID: TOP09-O20 -->
 
-Vì sao \(e^x\) có đạo hàm là chính nó? Từ cách hình thành số \(e\), ta có các giới hạn nền \(\displaystyle\lim_{h\to0}(1+h)^{\frac1h}=e\) (khi \(1+h>0\)) và \(\displaystyle\lim_{h\to0}\frac{e^h-1}{h}=1\). Bởi vậy, thương sai phân của \(e^x\) viết được thành \(\displaystyle e^x\frac{e^h-1}{h}\), có giới hạn \(e^x\). Với \(a>0\), đặt \(a^x=e^{x\ln a}\) rồi dùng quy tắc hàm hợp; hệ số \(\ln a\) xuất hiện do đạo hàm của \(x\ln a\), chứ không phải là một hệ số phải học thuộc vô cớ.
+Vì sao \(e^x\) có đạo hàm là chính nó? Từ cách hình thành số \(e\), SGK sử dụng ba giới hạn nền:
+
+\[
+\lim_{h\to0}(1+h)^{\frac1h}=e,\qquad
+\lim_{h\to0}\frac{\ln(1+h)}h=1,\qquad
+\lim_{h\to0}\frac{e^h-1}h=1.
+\]
+
+Trong hai giới hạn đầu, xét \(1+h>0\). Lấy lôgarit tự nhiên ở giới hạn thứ nhất và dùng tính liên tục của \(\ln\), ta có giới hạn thứ hai. Đặt \(u=e^h-1\), khi \(h\to0\) thì \(u\to0\) và \(h=\ln(1+u)\); giới hạn thứ ba là giới hạn của \(\frac{u}{\ln(1+u)}\), tức 1. Bởi vậy, thương sai phân của \(e^x\) viết được thành \(\displaystyle e^x\frac{e^h-1}{h}\), có giới hạn \(e^x\). Với \(a>0\), đặt \(a^x=e^{x\ln a}\) rồi dùng quy tắc hàm hợp; hệ số \(\ln a\) xuất hiện do đạo hàm của \(x\ln a\), chứ không phải là một hệ số phải học thuộc vô cớ.
 
 > **CÔNG THỨC — Hàm mũ.** Đạo hàm của hàm mũ liên hệ với giá trị chính nó. Tại sao \(e^x\) tự là đạo hàm của nó mà \(2^x\) cần thêm \(\ln2\)? Cần nhớ lũy thừa \(x^n\) khác hàm mũ \(a^x\), log tự nhiên. Với cơ số \(a>0\) và \(a\ne1\), \((a^x)'=a^x\ln a\); riêng \(e^x\) vì \(\ln e=1\) nên đạo hàm bằng chính \(e^x\). Đây không phải \((x^n)'=nx^{n-1}\), vì biến đứng ở số mũ. Với cơ số \(a=1\), hàm hằng bằng1 và đạo hàm0, xử lý riêng.
 
@@ -954,7 +968,7 @@ Giống như đi từ vận tốc trung bình đến vận tốc tức thời, g
 
 Chẳng hạn, \(s(t)=t^3-3t^2+2t\): \(v=3t^2-6t+2\), \(a=6t-6\); tại \(t=1\), \(a=0\) nhưng \(v=-1\) m/s. Chọn lấy đạo hàm lần hai thay vì kết luận từ \(s(t)\).
 
-> **CÔNG THỨC — Gia tốc.** Đọc riêng đồ thị của \(s(t)=t^3-6t^2+9t\) trên \([0;4]\): \(v(t)=3(t-1)(t-3)\), \(a(t)=6(t-2)\). Vận tốc dương trước 1 và sau 3, âm giữa 1 và 3; gia tốc âm trước 2, dương sau 2. Vì vậy tốc độ \(|v|\) **giảm** trên (0,1) và (2,3), **tăng** trên (1,2) và (3,4). Tại \(t=1{,}2{,}3\) phải kiểm ranh giới. Đây là đồ thị của một chuyển động khác với ví dụ \(s=t^3-3t^2+2t\) vừa tính.
+> **CÔNG THỨC — Gia tốc.** Đọc riêng đồ thị của \(s(t)=t^3-6t^2+9t\) trên \([0;4]\): \(v(t)=3(t-1)(t-3)\), \(a(t)=6(t-2)\). Vận tốc dương trước 1 và sau 3, âm giữa 1 và 3; gia tốc âm trước 2, dương sau 2. Vì vậy tốc độ \(|v|\) **giảm** trên \((0;1)\) và \((2;3)\), **tăng** trên \((1;2)\) và \((3;4)\). Tại các thời điểm \(t=1\), \(t=2\), \(t=3\) phải kiểm ranh giới. Đây là đồ thị của một chuyển động khác với ví dụ \(s=t^3-3t^2+2t\) vừa tính.
 
 ![Đồ thị vận tốc và gia tốc theo thời gian](../../visuals/THPT_TOPIC09_VELOCITY_ACCELERATION_R01.svg)
 
@@ -1057,11 +1071,11 @@ Nghĩa là sai lệch nhỏ hơn bậc của bước thay đổi khi bước ti�
 
 Chẳng hạn, \(f=x^2\), \(a=3\), \(dx=0{,}02\): \(f'(3)=6\) nên \(dy=0{,}12\); \(\Delta y=(3{,}02)^2-9=0{,}1204\), sai lệch \(0{,}0004=(dx)^2\). Chọn vi phân để ước lượng nhanh và định lượng phần dư, không hứa chính xác cho bước lớn.
 
-> **CÔNG THỨC — Vi phân xấp xỉ.** Ngay trên hình, chọn \(f(x)=x^2\), \(a=2\), \(dx=0{,}1\). Vì \(f'(2)=4\), vi phân dự đoán \(dy=4\cdot0{,}1=0{,}4\). Độ tăng thật là \(\Delta y=(2{,}1)^2-2^2=0{,}41\), lớn hơn 0,01. Bước lớn hơn có thể tạo sai số đáng kể hơn; ví dụ \(a=3,dx=0{,}02\) phía trên là **trường hợp khác**, không phải các cột đang vẽ.
+> **CÔNG THỨC — Vi phân xấp xỉ.** Ngay trên hình, chọn \(f(x)=x^2\), \(a=2\), \(dx=0{,}1\). Vì \(f'(2)=4\), vi phân dự đoán \(dy=4\cdot0{,}1=0{,}4\). Độ tăng thật là \(\Delta y=(2{,}1)^2-2^2=0{,}41\), lớn hơn 0,01. Bước lớn hơn có thể tạo sai số đáng kể hơn; ví dụ \(a=3,\ dx=0{,}02\) phía trên là **trường hợp khác**, không phải các cột đang vẽ.
 
 ![Xấp xỉ tuyến tính và độ tăng thực của hàm](../../visuals/THPT_TOPIC09_LINEAR_DIFFERENTIAL_R01.svg)
 
-*Đọc hình:* Hai cột 0,4 (vi phân) và 0,41 (độ tăng thật) tại \(a=2,dx=0{,}1\) khác nhau đúng 0,01. Vi phân là **xấp xỉ bậc nhất**, không tự nhận bằng độ tăng thật.
+*Đọc hình:* Hai cột 0,4 (vi phân) và 0,41 (độ tăng thật) tại \(a=2,\ dx=0{,}1\) khác nhau đúng 0,01. Vi phân là **xấp xỉ bậc nhất**, không tự nhận bằng độ tăng thật.
 
 **Ví dụ**
 
