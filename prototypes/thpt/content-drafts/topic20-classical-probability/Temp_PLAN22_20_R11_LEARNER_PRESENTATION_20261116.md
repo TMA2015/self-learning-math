@@ -39,11 +39,11 @@ Gieo một xúc xắc 8 mặt đồng khả năng ghi các số 1–8. Viết Ω
 <!-- ITEM_ID: THPT-TOP20-T01; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O01; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Ω={1,2,3,4,5,6,7,8}; A={2,4,6,8}.
+\(\Omega=\{1,2,3,4,5,6,7,8\}\); \(A=\{2,4,6,8\}\).
 
 **Kiểm lỗi**
 
-Nếu chỉ viết xác suất 1/2, em chưa mô tả biến cố; hãy ghi kết quả sơ cấp vào tập. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 1 tại Luyện tập 1.1. Không gian mẫu và tập kết quả của biến cố.
+Nếu chỉ viết xác suất \(\frac{1}{2}\), em chưa mô tả biến cố; hãy ghi kết quả sơ cấp vào tập. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 1 tại Luyện tập 1.1. Không gian mẫu và tập kết quả của biến cố.
 
 </details>
 
@@ -58,11 +58,11 @@ Một vòng quay cân đối có các kết quả ghi 1 đến 6. Biến cố A 
 <!-- ITEM_ID: THPT-TOP20-T10; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O02; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**Lời giải:** A={1,2}; A xảy ra nếu lượt quay cho kết quả 1 hoặc 2.
+**Lời giải:** \(A=\{1,2\}\); A xảy ra nếu lượt quay cho kết quả 1 hoặc 2.
 
 **Kiểm lỗi**
 
-Nếu viết A={2}, em đã bỏ kết quả 1 cũng không lớn hơn 2. Xem từng phần tử Ω={1,…,6}. Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 2 tại Luyện tập 1.2. Mô tả biến cố từ một điều kiện.
+Nếu viết \(A=\{2\}\), em đã bỏ kết quả 1 cũng không lớn hơn 2. Xem từng phần tử \(\Omega=\{1,\ldots,6\}\). Ôn lại mục Kiến thức 1.1. Phép thử, không gian mẫu và biến cố và Bài luyện 2 tại Luyện tập 1.2. Mô tả biến cố từ một điều kiện.
 
 </details>
 
@@ -74,43 +74,43 @@ Khi không gian mẫu gồm hữu hạn kết quả đồng khả năng, mỗi k
 
 > **CÔNG THỨC — Xác suất cổ điển**
 >
-> \[P(A)=\frac{n(A)}{n(\Omega)},\quad n(\Omega)>0.\] Chỉ dùng khi các kết quả sơ cấp hữu hạn và đồng khả năng.
+> \(P(A)=\frac{n(A)}{n(\Omega)},\quad n(\Omega)>0.\) Chỉ dùng khi các kết quả sơ cấp hữu hạn và đồng khả năng.
 
 Từ cách đếm, em có thể tự kiểm tra ngay những giới hạn mà mọi xác suất cổ điển đều phải thỏa. Biến cố \(A\) là một tập con của không gian mẫu \(\Omega\), nên số kết quả thuận lợi không thể âm và không thể vượt quá tổng số kết quả. Tập rỗng không chứa kết quả nào, còn biến cố chắc chắn chứa toàn bộ kết quả. Chia các số đếm đó cho \(n(\Omega)>0\) ta được các tính chất sau, thay vì chỉ ghi nhớ chúng như ba công thức độc lập.
 
-> **TÍNH CHẤT — Ba tính chất cơ bản của xác suất cổ điển.** Trong phép thử có không gian mẫu hữu hạn, không rỗng và các kết quả sơ cấp đồng khả năng, với mọi biến cố \(A\subseteq\Omega\): \(0\le P(A)\le1\); \(P(\Omega)=1\) (biến cố chắc chắn); \(P(\varnothing)=0\) (biến cố không thể). Điều này suy ra lần lượt từ \(0\le n(A)\le n(\Omega)\), \(n(\Omega)/n(\Omega)=1\) và \(n(\varnothing)=0\). Với một phép thử không thỏa giả thiết đồng khả năng, không được dùng tỉ số đếm đơn thuần để tính xác suất.
+> **TÍNH CHẤT — Ba tính chất cơ bản của xác suất cổ điển.** Trong phép thử có không gian mẫu hữu hạn, không rỗng và các kết quả sơ cấp đồng khả năng, với mọi biến cố \(A\subseteq\Omega\): \(0\le P(A)\le1\); \(P(\Omega)=1\) (biến cố chắc chắn); \(P(\varnothing)=0\) (biến cố không thể). Điều này suy ra lần lượt từ \(0\le n(A)\le n(\Omega)\), \(\frac{n(\Omega)}{n(\Omega)}=1\) và \(n(\varnothing)=0\). Với một phép thử không thỏa giả thiết đồng khả năng, không được dùng tỉ số đếm đơn thuần để tính xác suất.
 
-Chẳng hạn, với sáu thẻ vật lí đồng khả năng, biến cố “rút ra một trong cả sáu thẻ” có xác suất \(6/6=1\), còn “rút thẻ số 7” khi chỉ có các số từ 1 đến 6 có xác suất \(0/6=0\). Một biến cố có xác suất \(1/6\) tuy hiếm nhưng vẫn có thể xảy ra; đừng đồng nhất xác suất nhỏ với xác suất bằng 0.
+Chẳng hạn, với sáu thẻ vật lí đồng khả năng, biến cố “rút ra một trong cả sáu thẻ” có xác suất \(\frac{6}{6}=1\), còn “rút thẻ số 7” khi chỉ có các số từ 1 đến 6 có xác suất \(\frac{0}{6}=0\). Một biến cố có xác suất \(\frac{1}{6}\) tuy hiếm nhưng vẫn có thể xảy ra; đừng đồng nhất xác suất nhỏ với xác suất bằng 0.
 
 
-**Vì sao phải đếm phiếu mà không đếm nhãn?** Với một hộp có 2 phiếu ghi A, 3 phiếu ghi B và 3 phiếu ghi C, nếu mỗi **phiếu** có khả năng được chọn như nhau thì không gian mẫu phù hợp gồm **8 phiếu vật lý phân biệt**, không phải 3 nhãn. Xác suất chọn nhãn A là \(2/8=1/4\), còn nhãn B hoặc C mỗi nhãn \(3/8\). Không thể áp dụng \(1/3\) bằng cách coi ba nhãn là ba kết quả sơ cấp đồng khả năng.
+**Vì sao phải đếm phiếu mà không đếm nhãn?** Với một hộp có 2 phiếu ghi A, 3 phiếu ghi B và 3 phiếu ghi C, nếu mỗi **phiếu** có khả năng được chọn như nhau thì không gian mẫu phù hợp gồm **8 phiếu vật lý phân biệt**, không phải 3 nhãn. Xác suất chọn nhãn A là \(\frac{2}{8}=\frac{1}{4}\), còn nhãn B hoặc C mỗi nhãn \(\frac{3}{8}\). Không thể áp dụng \(\frac{1}{3}\) bằng cách coi ba nhãn là ba kết quả sơ cấp đồng khả năng.
 
-**Ví dụ bổ sung.** Gieo hai xúc xắc sáu mặt cân đối **phân biệt**. Không gian mẫu đồng khả năng là 36 cặp có thứ tự \((i,j)\), \(i,j\in\{1,\dots,6\}\). Tổng bằng 7 có sáu cặp \((1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\), nên \(P(\text{tổng }7)=6/36=1/6\). Nếu mô hình chỉ ghi các giá trị tổng \(2,3,\dots,12\) rồi lấy \(1/11\), mẫu vừa tạo **không đồng khả năng** (tổng 2 chỉ có một cặp, tổng 7 có sáu cặp). Quy tắc trước phép tính: **mô hình hóa đúng kết quả đồng khả năng** rồi mới đếm biến cố.
+**Ví dụ bổ sung.** Gieo hai xúc xắc sáu mặt cân đối **phân biệt**. Không gian mẫu đồng khả năng là 36 cặp có thứ tự \((i,j)\), \(i,j\in\{1,\dots,6\}\). Tổng bằng 7 có sáu cặp \((1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\), nên \(P(\text{tổng }7)=\frac{6}{36}=\frac{1}{6}\). Nếu mô hình chỉ ghi các giá trị tổng \(2,3,\dots,12\) rồi lấy \(\frac{1}{11}\), mẫu vừa tạo **không đồng khả năng** (tổng 2 chỉ có một cặp, tổng 7 có sáu cặp). Quy tắc trước phép tính: **mô hình hóa đúng kết quả đồng khả năng** rồi mới đếm biến cố.
 
 **Ví dụ**
 
 **Đề bài:** Một hộp có tám phiếu khác nhau: hai phiếu ghi A, ba phiếu ghi B và ba phiếu ghi C. Rút ngẫu nhiên đều một phiếu. Tính xác suất rút được nhãn B. Có thể chia đều xác suất cho ba loại nhãn không?
 
-**Lời giải:** Tám **phiếu vật lí** là tám kết quả đồng khả năng. Ba phiếu mang nhãn B làm biến cố cần tìm xảy ra, vì thế \(P(B)=3/8\). Không thể lấy \(1/3\) chỉ vì có ba nhãn A, B, C: mỗi nhãn đại diện cho một số phiếu khác nhau, nên ba nhãn không đồng khả năng.
+**Lời giải:** Tám **phiếu vật lí** là tám kết quả đồng khả năng. Ba phiếu mang nhãn B làm biến cố cần tìm xảy ra, vì thế \(P(B)=\frac{3}{8}\). Không thể lấy \(\frac{1}{3}\) chỉ vì có ba nhãn A, B, C: mỗi nhãn đại diện cho một số phiếu khác nhau, nên ba nhãn không đồng khả năng.
 
 **Kiểm tra trước khi tính:** Có đang đếm nhóm không thứ tự trong khi mẫu gốc là chuỗi có thứ tự không? Các kết quả được đếm có thực sự đồng khả năng không? Nếu không, không được dùng công thức cổ điển theo tỉ số đơn giản.
 
 **Kiến thức cần ghi nhớ**
 
-Gộp các kết quả sơ cấp đồng khả năng thành vài nhãn có thể làm mất tính đồng khả năng. Khi tung hai đồng xu cân đối, độc lập, bốn chuỗi NN, NS, SN, SS đồng khả năng nhưng các nhãn “không ngửa”, “một ngửa”, “hai ngửa” tương ứng với 1, 2 và 1 chuỗi. Bởi vậy, xác suất đúng một lần ngửa là \(2/4=1/2\), không phải \(1/3\). Muốn dùng tỉ số đếm, hãy xác nhận các kết quả được đem ra đếm thực sự đồng khả năng.
+Gộp các kết quả sơ cấp đồng khả năng thành vài nhãn có thể làm mất tính đồng khả năng. Khi tung hai đồng xu cân đối, độc lập, bốn chuỗi NN, NS, SN, SS đồng khả năng nhưng các nhãn “không ngửa”, “một ngửa”, “hai ngửa” tương ứng với 1, 2 và 1 chuỗi. Bởi vậy, xác suất đúng một lần ngửa là \(\frac{2}{4}=\frac{1}{2}\), không phải \(\frac{1}{3}\). Muốn dùng tỉ số đếm, hãy xác nhận các kết quả được đem ra đếm thực sự đồng khả năng.
 
 **Vận dụng**
 
-Hộp có 2 phiếu đỏ và 4 phiếu xanh khác nhau, rút đều một phiếu. P(đỏ) có phải 1/2 vì có hai màu không?
+Hộp có 2 phiếu đỏ và 4 phiếu xanh khác nhau, rút đều một phiếu. \(P(\text{đỏ})\) có phải \(\frac{1}{2}\) vì có hai màu không?
 
 <!-- ITEM_ID: THPT-TOP20-T02; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O03; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Không. Sáu phiếu vật lí đồng khả năng, P(đỏ)=2/6=1/3.
+Không. Sáu phiếu vật lí đồng khả năng, \(P(\text{đỏ})=\frac26=\frac13\).
 
 **Kiểm lỗi**
 
-Nếu dùng 1/2, em đếm màu thay vì từng phiếu; hãy đặt tên cho sáu phiếu. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 3 tại Luyện tập 1.3. Xác suất cổ điển từ phiếu đồng khả năng.
+Nếu dùng \(\frac{1}{2}\), em đếm màu thay vì từng phiếu; hãy đặt tên cho sáu phiếu. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 3 tại Luyện tập 1.3. Xác suất cổ điển từ phiếu đồng khả năng.
 
 </details>
 
@@ -127,11 +127,11 @@ Tung hai đồng xu cân đối và độc lập. Nếu chỉ ghi số mặt ng�
 <!-- ITEM_ID: THPT-TOP20-T11; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O06; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**Lời giải:** Không. Không gian mẫu gồm NN, NS, SN, SS, mỗi chuỗi có xác suất 1/4. Số ngửa 0 ứng với SS, số ngửa 1 ứng với NS và SN, số ngửa 2 ứng với NN. Vì vậy ba giá trị **không** đồng khả năng; xác suất đúng một ngửa là \(2/4=1/2\).
+**Lời giải:** Không. Không gian mẫu gồm NN, NS, SN, SS, mỗi chuỗi có xác suất \(\frac{1}{4}\). Số ngửa 0 ứng với SS, số ngửa 1 ứng với NS và SN, số ngửa 2 ứng với NN. Vì vậy ba giá trị **không** đồng khả năng; xác suất đúng một ngửa là \(\frac{2}{4}=\frac{1}{2}\).
 
 **Kiểm lỗi**
 
-Nếu ra 1/3, em đã đếm ba **nhãn** thay vì bốn chuỗi sơ cấp. Liệt kê đủ NN, NS, SN, SS rồi ghép mỗi chuỗi với số mặt ngửa tương ứng. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 6 tại Luyện tập 1.6. Gộp kết quả không đồng khả năng.
+Nếu ra \(\frac{1}{3}\), em đã đếm ba **nhãn** thay vì bốn chuỗi sơ cấp. Liệt kê đủ NN, NS, SN, SS rồi ghép mỗi chuỗi với số mặt ngửa tương ứng. Ôn lại mục Kiến thức 1.2. Đồng khả năng và cách tính xác suất và Bài luyện 6 tại Luyện tập 1.6. Gộp kết quả không đồng khả năng.
 
 </details>
 
@@ -143,19 +143,19 @@ Nếu gọi sự việc cần tìm là A, phần còn lại của không gian m�
 
 > **TÍNH CHẤT — Biến cố đối**
 >
-> \[\bar A=\Omega\setminus A,\qquad P(\bar A)=1-P(A).\] A và đối A xung khắc, phủ hết mẫu.
+> \(\bar A=\Omega\setminus A,\qquad P(\bar A)=1-P(A).\) A và đối A xung khắc, phủ hết mẫu.
 
 **Ví dụ**
 
 **Đề bài:** Một hộp có 20 phiếu khác nhau, trong đó đúng hai phiếu trúng thưởng. Chọn ngẫu nhiên đều một phiếu. Tính xác suất **không trúng thưởng** và xác suất **trúng thưởng**.
 
-**Lời giải:** Có 18 phiếu không trúng trong 20 phiếu đồng khả năng, nên \(P(\text{không trúng})=18/20=9/10\). Biến cố “trúng thưởng” là biến cố đối của “không trúng thưởng”, do đó \(P(\text{trúng})=1-9/10=1/10\). Dùng biến cố đối giúp kiểm tra ngay hai xác suất cộng lại bằng 1.
+**Lời giải:** Có 18 phiếu không trúng trong 20 phiếu đồng khả năng, nên \(P(\text{không trúng})=\frac{18}{20}=\frac{9}{10}\). Biến cố “trúng thưởng” là biến cố đối của “không trúng thưởng”, do đó \(P(\text{trúng})=1-\frac{9}{10}=\frac{1}{10}\). Dùng biến cố đối giúp kiểm tra ngay hai xác suất cộng lại bằng 1.
 
 **Nguyên lí xác suất bé:** Một biến cố có \(0<P(A)\ll 1\) vẫn có thể xảy ra. Không suy ra biến cố không thể và không khẳng định số lần xảy ra trong một số lượt thử bằng chính xác “số lượt × xác suất”.
 
 **Kiến thức cần ghi nhớ**
 
-Không được đồng nhất **hiếm** với **không thể**. Một vé trúng thưởng trong 50 vé đồng khả năng vẫn cho xác suất \(1/50>0\), còn một hộp không có vé trúng nào mới cho xác suất trúng bằng 0. Xác suất nhỏ cũng không có nghĩa rằng số lần xảy ra trong một số lượt thử ngắn phải bằng đúng tích số lượt với xác suất.
+Không được đồng nhất **hiếm** với **không thể**. Một vé trúng thưởng trong 50 vé đồng khả năng vẫn cho xác suất \(\frac{1}{50}>0\), còn một hộp không có vé trúng nào mới cho xác suất trúng bằng 0. Xác suất nhỏ cũng không có nghĩa rằng số lần xảy ra trong một số lượt thử ngắn phải bằng đúng tích số lượt với xác suất.
 
 **Vận dụng**
 
@@ -164,7 +164,7 @@ Có 20 thẻ đồng khả năng, đúng 1 thẻ màu đen. Tính P(không đen)
 <!-- ITEM_ID: THPT-TOP20-T03; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O04; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-P(không đen)=19/20; P(đen)=1/20>0 nên đen là hiếm, không phải không thể.
+\(P(\text{không đen})=\frac{19}{20}\); \(P(\text{đen})=\frac1{20}>0\) nên đen là hiếm, không phải không thể.
 
 **Kiểm lỗi**
 
@@ -185,11 +185,11 @@ Trong 100 vé đồng khả năng chỉ có một vé trúng. Biến cố trúng
 <!-- ITEM_ID: THPT-TOP20-T12; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O05; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**Lời giải:** P(trúng)=1/100>0; hiếm chứ không phải biến cố không thể.
+**Lời giải:** \(P(\text{trúng})=\frac1{100}>0\); hiếm chứ không phải biến cố không thể.
 
 **Kiểm lỗi**
 
-Nếu P=0, em đã bỏ một vé trúng còn có mặt trong Ω. Đếm n(A)=1 và n(Ω)=100. Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 5 tại Luyện tập 1.5. Biến cố hiếm và biến cố không thể.
+Nếu \(P=0\), em đã bỏ một vé trúng còn có mặt trong Ω. Đếm \(n(A)=1\) và \(n(\Omega)=100\). Ôn lại mục Kiến thức 1.3. Biến cố đối và xác suất bé và Bài luyện 5 tại Luyện tập 1.5. Biến cố hiếm và biến cố không thể.
 
 </details>
 
@@ -201,7 +201,7 @@ Quan sát hình dưới đây trước khi tính: sau mỗi nhánh N (ngửa) ho
 
 ![Sơ đồ cây hai lần tung đồng xu cân đối với bốn kết quả đồng khả năng](../../../../docs/assets/images/thpt/FIG-TOP20-G10-B27_TWO_TOSSES_TREE_WHITE_R00.svg)
 
-**Hướng dẫn đọc hình:** Theo một đường đi từ trái sang phải để biết thứ tự hai lần tung. Muốn có đúng một lần ngửa, em chỉ chọn hai lá NS và SN, không gộp chúng thành một kết quả. Trong mô hình đồng xu cân đối, đó là hai trong bốn kết quả đồng khả năng, nên xác suất bằng \(2/4\).
+**Hướng dẫn đọc hình:** Theo một đường đi từ trái sang phải để biết thứ tự hai lần tung. Muốn có đúng một lần ngửa, em chỉ chọn hai lá NS và SN, không gộp chúng thành một kết quả. Trong mô hình đồng xu cân đối, đó là hai trong bốn kết quả đồng khả năng, nên xác suất bằng \(\frac{2}{4}\).
 
 Với bài toán **chọn đồng thời** một nhóm \(k\) vật từ \(n\) vật phân biệt và không phân vai, thứ tự chọn không tạo ra kết quả mới: ta cần đếm các **nhóm** khác nhau chứ không đếm mọi cách sắp xếp của từng nhóm. Còn với việc **thực hiện tuần tự**, thứ tự thường quan trọng và ta đếm bằng quy tắc nhân hoặc sơ đồ cây. Vì vậy, trước khi tính xác suất, phải xác định đúng mình đang đếm **nhóm không thứ tự** hay **chuỗi có thứ tự**, và dùng cùng một kiểu kết quả ở tử số lẫn mẫu số.
 
@@ -211,13 +211,13 @@ Với bài toán **chọn đồng thời** một nhóm \(k\) vật từ \(n\) v�
 
 **Có hoàn lại hay không hoàn lại thay đổi cả xác suất ở bước sau.** Khi chọn **đồng thời** \(k\) vật phân biệt trong \(n\) vật và mọi nhóm kích thước \(k\) đồng khả năng, mẫu có \(\binom nk\) nhóm. Khi **rút liên tiếp có ghi thứ tự**, phải kể từng đường đi trong cây; nếu rút không hoàn lại thì sau mỗi lần số vật còn lại giảm. Đừng tự xem hai lượt là độc lập chỉ vì thao tác rút tương tự nhau.
 
-**Ví dụ bổ sung.** Hộp có 3 bi đỏ và 2 bi xanh, tất cả **5 viên bi vật lý phân biệt**, rút ngẫu nhiên **2 viên không hoàn lại**. Xác suất cả hai đỏ có thể tính theo các **cặp không thứ tự**: số cặp đỏ \(\binom32=3\), tổng \(\binom52=10\), nên \(P=3/10\). Cũng có thể đếm **hai lượt có thứ tự**: 3 cách chọn bi đỏ đầu, 2 cách chọn bi đỏ sau, tổng có \(5\cdot4=20\) cặp có thứ tự đồng khả năng; \(P=(3\cdot2)/(5\cdot4)=3/10\). Hai mẫu khác nhau nhưng kết quả bằng nhau vì dùng **cùng cách xét thứ tự** ở tử và mẫu. Không nhân \((3/5)\cdot(3/5)\), vì sau viên đỏ thứ nhất chỉ còn 2 viên đỏ trong 4 viên.
+**Ví dụ bổ sung.** Hộp có 3 bi đỏ và 2 bi xanh, tất cả **5 viên bi vật lý phân biệt**, rút ngẫu nhiên **2 viên không hoàn lại**. Xác suất cả hai đỏ có thể tính theo các **cặp không thứ tự**: số cặp đỏ \(\binom32=3\), tổng \(\binom52=10\), nên \(P=\frac{3}{10}\). Cũng có thể đếm **hai lượt có thứ tự**: 3 cách chọn bi đỏ đầu, 2 cách chọn bi đỏ sau, tổng có \(5\cdot4=20\) cặp có thứ tự đồng khả năng; \(P=\frac{3\cdot2}{5\cdot4}=\frac{3}{10}\). Hai mẫu khác nhau nhưng kết quả bằng nhau vì dùng **cùng cách xét thứ tự** ở tử và mẫu. Không nhân \((\frac{3}{5})\cdot(\frac{3}{5})\), vì sau viên đỏ thứ nhất chỉ còn 2 viên đỏ trong 4 viên.
 
 **Ví dụ**
 
 **Đề bài:** Có tám lá phiếu khác nhau ghi các số từ 1 đến 8, trong đó bốn số chẵn. Rút đồng thời ngẫu nhiên ba phiếu, các nhóm ba phiếu đồng khả năng. Tính xác suất cả ba phiếu đều ghi số chẵn.
 
-**Lời giải:** Vì rút đồng thời và không phân vai ba vị trí, mỗi kết quả là một **nhóm không thứ tự**. Số nhóm có thể rút là \(\binom83=\dfrac{8\cdot7\cdot6}{3\cdot2\cdot1}=56\): đếm các chuỗi chọn ba phiếu trước, rồi chia cho sáu thứ tự của mỗi nhóm. Có bốn phiếu mang số chẵn, nên số nhóm ba phiếu đều chẵn là \(\binom43=4\). Xác suất cần tìm là \(P=4/56=1/14\). Tử và mẫu đều đếm nhóm không thứ tự.
+**Lời giải:** Vì rút đồng thời và không phân vai ba vị trí, mỗi kết quả là một **nhóm không thứ tự**. Số nhóm có thể rút là \(\binom83=\dfrac{8\cdot7\cdot6}{3\cdot2\cdot1}=56\): đếm các chuỗi chọn ba phiếu trước, rồi chia cho sáu thứ tự của mỗi nhóm. Có bốn phiếu mang số chẵn, nên số nhóm ba phiếu đều chẵn là \(\binom43=4\). Xác suất cần tìm là \(P=\frac{4}{56}=\frac{1}{14}\). Tử và mẫu đều đếm nhóm không thứ tự.
 
 **Ví dụ**
 
@@ -227,7 +227,7 @@ Với bài toán **chọn đồng thời** một nhóm \(k\) vật từ \(n\) v�
 
 **Kiến thức cần ghi nhớ**
 
-Với câu hỏi “ít nhất một”, biến cố đối thường là “không có lần nào”. Khi chọn đều hai phiếu trong năm phiếu khác nhau (hai đỏ, ba xanh), xác suất có ít nhất một phiếu đỏ là \(1-\binom32/\binom52=7/10\). Phải lấy biến cố đối là **cả hai phiếu xanh**, không phải “đúng một phiếu đỏ”, và đếm cùng một kiểu nhóm ở cả tử số lẫn mẫu số.
+Với câu hỏi “ít nhất một”, biến cố đối thường là “không có lần nào”. Khi chọn đều hai phiếu trong năm phiếu khác nhau (hai đỏ, ba xanh), xác suất có ít nhất một phiếu đỏ là \(1-\frac{\binom32}{\binom52}=\frac{7}{10}\). Phải lấy biến cố đối là **cả hai phiếu xanh**, không phải “đúng một phiếu đỏ”, và đếm cùng một kiểu nhóm ở cả tử số lẫn mẫu số.
 
 **Vận dụng**
 
@@ -236,7 +236,7 @@ Từ 6 học sinh chọn một nhóm 2 người không phân vai; so với chọ
 <!-- ITEM_ID: THPT-TOP20-T04; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O07; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Không phân vai có C(6,2)=15 nhóm; phân hai vai có 6×5=30 cặp có thứ tự.
+Không phân vai có \(\binom62=15\) nhóm; phân hai vai có 6×5=30 cặp có thứ tự.
 
 **Kiểm lỗi**
 
@@ -255,11 +255,11 @@ Từ 5 phiếu khác nhau (1 đỏ, 4 xanh), chọn đều **hai phiếu không 
 <!-- ITEM_ID: THPT-TOP20-T13; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O08; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**Lời giải:** P=1−P(cả hai xanh)=1−C(4,2)/C(5,2)=1−6/10=2/5.
+**Lời giải:** \(P=1-P(\text{cả hai xanh})=1-\frac{\binom42}{\binom52}=1-\frac6{10}=\frac25\).
 
 **Kiểm lỗi**
 
-Nếu dùng 1−4/5 thì em đang xét một phiếu. Mẫu này là **nhóm hai phiếu**, phải đếm C(5,2). Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 8 tại Luyện tập 1.8. Ít nhất một và biến cố đối.
+Nếu dùng \(1-\frac45\) thì em đang xét một phiếu. Mẫu này là **nhóm hai phiếu**, phải đếm \(\binom{5}{2}\). Ôn lại mục Kiến thức 1.4. Đếm kết quả bằng tổ hợp và sơ đồ cây và Bài luyện 8 tại Luyện tập 1.8. Ít nhất một và biến cố đối.
 
 </details>
 
@@ -275,9 +275,9 @@ Vì thế, trước khi chọn công thức, ta cần hiểu chính xác một k
 
 **Ví dụ**
 
-**Đề bài:** Gieo hai xúc xắc cân đối, phân biệt. Tính xác suất tổng số chấm bằng 5 và giải thích vì sao không thể lấy \(1/11\) chỉ vì tổng số chấm có 11 giá trị từ 2 đến 12.
+**Đề bài:** Gieo hai xúc xắc cân đối, phân biệt. Tính xác suất tổng số chấm bằng 5 và giải thích vì sao không thể lấy \(\frac{1}{11}\) chỉ vì tổng số chấm có 11 giá trị từ 2 đến 12.
 
-**Lời giải:** Một kết quả sơ cấp là cặp có thứ tự \((a,b)\), với \(a,b\in\{1,2,3,4,5,6\}\), nên có \(6\cdot6=36\) cặp đồng khả năng. Tổng bằng 5 khi rơi vào một trong bốn cặp \((1,4),(2,3),(3,2),(4,1)\), do đó \(P(\text{tổng}=5)=4/36=1/9\). Mười một giá trị tổng không đồng khả năng vì mỗi tổng có số cặp tạo thành khác nhau; vì vậy \(1/11\) không phải xác suất cần tìm.
+**Lời giải:** Một kết quả sơ cấp là cặp có thứ tự \((a,b)\), với \(a,b\in\{1,2,3,4,5,6\}\), nên có \(6\cdot6=36\) cặp đồng khả năng. Tổng bằng 5 khi rơi vào một trong bốn cặp \((1,4),(2,3),(3,2),(4,1)\), do đó \(P(\text{tổng}=5)=\frac{4}{36}=\frac{1}{9}\). Mười một giá trị tổng không đồng khả năng vì mỗi tổng có số cặp tạo thành khác nhau; vì vậy \(\frac{1}{11}\) không phải xác suất cần tìm.
 
 **Lỗi thường gặp**
 
@@ -292,7 +292,7 @@ Gieo hai xúc xắc phân biệt, cân đối. Có bao nhiêu cặp sơ cấp đ
 <!-- ITEM_ID: THPT-TOP20-T05; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O10; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-Có 36 cặp có thứ tự; chỉ (6,6) có tổng 12 nên P=1/36.
+Có 36 cặp có thứ tự; chỉ (6,6) có tổng 12 nên \(P=\frac1{36}\).
 
 **Kiểm lỗi**
 
@@ -311,7 +311,7 @@ Tung một đồng xu cân đối ba lần, coi chuỗi có thứ tự. Có mấ
 <!-- ITEM_ID: THPT-TOP20-T14; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O09; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**Lời giải:** Có 2³=8 chuỗi; đúng hai ngửa là NNS, NSN, SNN (3 chuỗi), P=3/8.
+**Lời giải:** Có \(2^3=8\) chuỗi; đúng hai ngửa là NNS, NSN, SNN (3 chuỗi), \(P=\frac38\).
 
 **Kiểm lỗi**
 
@@ -343,22 +343,22 @@ Hãy xét một lần gieo xúc xắc, với A là biến cố ra số chẵn v�
 
 **Đề bài:** Gieo một xúc xắc sáu mặt cân đối. Gọi \(A\) là biến cố “ra số chẵn” và \(B\) là biến cố “ra số lớn hơn 3”. Dựa vào hình Venn ngay phía trên, hãy viết \(A\cap B\), \(A\cup B\), tính \(P(A\cup B)\) và cho biết hai biến cố có xung khắc không.
 
-**Lời giải:** Ta có \(A=\{2,4,6\}\) và \(B=\{4,5,6\}\), nên \(A\cap B=\{4,6\}\). Hợp của hai tập là \(A\cup B=\{2,4,5,6\}\), gồm bốn kết quả. Vì sáu mặt xúc xắc đồng khả năng, \(P(A\cup B)=4/6=2/3\); cũng có thể kiểm bằng quy tắc cộng: \(3/6+3/6-2/6=4/6\). Hai biến cố **không xung khắc**, bởi 4 và 6 thuộc cả hai tập. Các tập kết quả và xác suất đều khớp với hình minh họa.
+**Lời giải:** Ta có \(A=\{2,4,6\}\) và \(B=\{4,5,6\}\), nên \(A\cap B=\{4,6\}\). Hợp của hai tập là \(A\cup B=\{2,4,5,6\}\), gồm bốn kết quả. Vì sáu mặt xúc xắc đồng khả năng, \(P(A\cup B)=\frac{4}{6}=\frac{2}{3}\); cũng có thể kiểm bằng quy tắc cộng: \(\frac{3}{6}+\frac{3}{6}-\frac{2}{6}=\frac{4}{6}\). Hai biến cố **không xung khắc**, bởi 4 và 6 thuộc cả hai tập. Các tập kết quả và xác suất đều khớp với hình minh họa.
 
 **Hướng dẫn đọc hình:** Nhìn vùng chỉ thuộc A, chỉ thuộc B, vùng chồng nhau và vùng ở ngoài cả hai. Đếm vùng chồng **một lần** khi tìm hợp.
 
 **Vận dụng**
 
-Gieo một xúc xắc sáu mặt cân đối. A=ra số chẵn, B=ra số không lớn hơn 2. Viết A∩B và A∪B.
+Gieo một xúc xắc sáu mặt cân đối. A=ra số chẵn, B=ra số không lớn hơn 2. Viết \(A\cap B\) và \(A\cup B\).
 
 <!-- ITEM_ID: THPT-TOP20-T06; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O11; CONTENT_VERSION: TOP20-R12-20261121-T06; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-A={2,4,6}, B={1,2}; giao={2}, hợp={1,2,4,6}.
+\(A=\{2,4,6\}\), \(B=\{1,2\}\); giao=\(\{2\}\), hợp=\(\{1,2,4,6\}\).
 
 **Kiểm lỗi**
 
-Nếu lấy B={4,5,6} thì em đã chép điều kiện “lớn hơn 3” của hình minh họa, không phải điều kiện “không lớn hơn 2” trong đề này. Viết B={1,2} trước; giao chỉ lấy phần chung {2}, còn hợp chứa {1,2,4,6} và mỗi số được ghi đúng một lần. Ôn lại Kiến thức 2.1 và giải lại Bài luyện 11.
+Nếu lấy \(B=\{4,5,6\}\) thì em đã chép điều kiện “lớn hơn 3” của hình minh họa, không phải điều kiện “không lớn hơn 2” trong đề này. Viết \(B=\{1,2\}\) trước; giao chỉ lấy phần chung \(\{2\}\), còn hợp chứa \(\{1,2,4,6\}\) và mỗi số được ghi đúng một lần. Ôn lại Kiến thức 2.1 và giải lại Bài luyện 11.
 
 </details>
 
@@ -376,9 +376,9 @@ Bây giờ hãy so sánh với hai biến cố “lần tung đầu ra ngửa”
 
 > **TÍNH CHẤT — Độc lập**
 >
-> \[P(A\cap B)=P(A)P(B).\] Đây là tiêu chuẩn độc lập; không suy từ việc hai biến cố không xung khắc.
+> \(P(A\cap B)=P(A)P(B).\) Đây là tiêu chuẩn độc lập; không suy từ việc hai biến cố không xung khắc.
 
-**Phản ví dụ giúp kiểm khái niệm.** Trên một xúc xắc sáu mặt cân đối, xét \(A=\{2,4,6\}\) là biến cố chẵn và \(B=\{1,2,3\}\) là biến cố không lớn hơn 3. Ta có \(P(A)=P(B)=1/2\), \(A\cap B=\{2\}\), \(P(A\cap B)=1/6\) khác \(P(A)P(B)=1/4\). Vậy hai biến cố **không độc lập**, dù vẫn có thể cùng xảy ra và do đó **không xung khắc**. Muốn quyết định độc lập, luôn xét **cùng một không gian mẫu** và so đúng \(P(A\cap B)\) với \(P(A)P(B)\).
+**Phản ví dụ giúp kiểm khái niệm.** Trên một xúc xắc sáu mặt cân đối, xét \(A=\{2,4,6\}\) là biến cố chẵn và \(B=\{1,2,3\}\) là biến cố không lớn hơn 3. Ta có \(P(A)=P(B)=\frac{1}{2}\), \(A\cap B=\{2\}\), \(P(A\cap B)=\frac{1}{6}\) khác \(P(A)P(B)=\frac{1}{4}\). Vậy hai biến cố **không độc lập**, dù vẫn có thể cùng xảy ra và do đó **không xung khắc**. Muốn quyết định độc lập, luôn xét **cùng một không gian mẫu** và so đúng \(P(A\cap B)\) với \(P(A)P(B)\).
 
 > **LƯU Ý — Xung khắc khác độc lập.** Với \(P(A)>0\) và \(P(B)>0\), nếu \(A\cap B=\varnothing\) thì \(P(A\cap B)=0\), không thể bằng tích \(P(A)P(B)>0\); hai biến cố xung khắc có xác suất dương không thể độc lập. Trong trường hợp có biến cố xác suất \(0\), cần dùng định nghĩa xác suất, không áp suy luận “đều dương” này.
 
@@ -386,13 +386,13 @@ Bây giờ hãy so sánh với hai biến cố “lần tung đầu ra ngửa”
 
 **Đề bài:** Tung hai đồng xu cân đối, độc lập; ghi kết quả theo thứ tự. (a) Xét \(A\): “xu đầu ngửa” và \(B\): “xu sau ngửa”. Kiểm tra xem \(A,B\) có độc lập không. (b) Xét \(C\): “cả hai xu ngửa” và \(D\): “xu đầu sấp”. Hai biến cố \(C,D\) có xung khắc và độc lập không?
 
-**Lời giải:** Không gian mẫu là \(\{NN,NS,SN,SS\}\), gồm bốn kết quả đồng khả năng. (a) \(P(A)=P(B)=1/2\) và \(P(A\cap B)=1/4=P(A)P(B)\), nên \(A,B\) độc lập. (b) \(C=\{NN\}\), \(D=\{SN,SS\}\), do đó \(C\cap D=\varnothing\): hai biến cố **xung khắc**. Nhưng \(P(C\cap D)=0\), còn \(P(C)P(D)=(1/4)(1/2)=1/8\), nên chúng **không độc lập**. Xung khắc và độc lập là hai tính chất khác nhau.
+**Lời giải:** Không gian mẫu là \(\{NN,NS,SN,SS\}\), gồm bốn kết quả đồng khả năng. (a) \(P(A)=P(B)=\frac{1}{2}\) và \(P(A\cap B)=\frac{1}{4}=P(A)P(B)\), nên \(A,B\) độc lập. (b) \(C=\{NN\}\), \(D=\{SN,SS\}\), do đó \(C\cap D=\varnothing\): hai biến cố **xung khắc**. Nhưng \(P(C\cap D)=0\), còn \(P(C)P(D)=(\frac{1}{4})(\frac{1}{2})=\frac{1}{8}\), nên chúng **không độc lập**. Xung khắc và độc lập là hai tính chất khác nhau.
 
 **Giới hạn:** Không suy độc lập chỉ vì hai biến cố có thể đồng thời xảy ra; phải xem mô hình hoặc kiểm công thức.
 
 **Kiến thức cần ghi nhớ**
 
-Hai biến cố **xung khắc** không cùng xảy ra, còn hai biến cố **độc lập** phải thỏa \(P(A\cap B)=P(A)P(B)\). Trên một lần gieo xúc xắc cân đối, “ra số chẵn” và “ra số lẻ” đều có xác suất \(1/2\) nhưng giao rỗng, nên không độc lập. Kết luận “xung khắc thì không độc lập” cần điều kiện **cả hai xác suất đều dương**; trường hợp có xác suất bằng 0 là ngoại lệ phải xét riêng.
+Hai biến cố **xung khắc** không cùng xảy ra, còn hai biến cố **độc lập** phải thỏa \(P(A\cap B)=P(A)P(B)\). Trên một lần gieo xúc xắc cân đối, “ra số chẵn” và “ra số lẻ” đều có xác suất \(\frac{1}{2}\) nhưng giao rỗng, nên không độc lập. Kết luận “xung khắc thì không độc lập” cần điều kiện **cả hai xác suất đều dương**; trường hợp có xác suất bằng 0 là ngoại lệ phải xét riêng.
 
 **Vận dụng**
 
@@ -401,11 +401,11 @@ Tung một đồng xu cân đối và gieo xúc xắc cân đối độc lập. 
 <!-- ITEM_ID: THPT-TOP20-T07; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O12; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-P=1/2×3/6=1/4. Hai phép thử độc lập nên số cặp thuận lợi=1×3 trong 12 cặp.
+\(P=\frac12\cdot\frac36=\frac14\). Hai phép thử độc lập nên số cặp thuận lợi=1×3 trong 12 cặp.
 
 **Kiểm lỗi**
 
-Nếu tính 1/2+1/2, em đang cộng xác suất mà đề yêu cầu cùng xảy ra. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 12 tại Luyện tập 2.2. Xác suất giao của hai biến cố độc lập.
+Nếu tính \(\frac12+\frac12\), em đang cộng xác suất mà đề yêu cầu cùng xảy ra. Ôn lại mục Kiến thức 2.2. Độc lập không phải xung khắc và Bài luyện 12 tại Luyện tập 2.2. Xác suất giao của hai biến cố độc lập.
 
 </details>
 
@@ -422,7 +422,7 @@ Gieo một xúc xắc: A=ra 1 và B=ra 6. A,B có xung khắc không? Có độc
 <!-- ITEM_ID: THPT-TOP20-T15; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O13; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**Lời giải:** A∩B=∅ nên xung khắc; P(A)P(B)=1/36>0 nhưng P(A∩B)=0 nên **không độc lập**.
+**Lời giải:** \(A\cap B=\varnothing\) nên xung khắc; \(P(A)P(B)=\frac1{36}>0\) nhưng \(P(A\cap B)=0\) nên **không độc lập**.
 
 **Kiểm lỗi**
 
@@ -438,32 +438,32 @@ Lập luận ấy cũng áp dụng cho xác suất: cộng xác suất của A v
 
 > **CÔNG THỨC — Quy tắc cộng**
 >
-> \[P(A\cup B)=P(A)+P(B)-P(A\cap B).\] Nếu giao rỗng thì bỏ số hạng giao.
+> \(P(A\cup B)=P(A)+P(B)-P(A\cap B).\) Nếu giao rỗng thì bỏ số hạng giao.
 
 **Kiểm ràng buộc xác suất trước khi tính.** Vì \(A\cap B\subseteq A\) và \(A\cap B\subseteq B\), ta phải có \(0\le P(A\cap B)\le\min(P(A),P(B))\). Công thức cộng xác suất sau khi trừ phần giao còn phải nằm trong \([0,1]\). Nếu phép cộng dẫn đến kết quả lớn hơn \(1\), em chắc chắn đang **đếm trùng** hoặc dùng sai số liệu.
 
-**Ví dụ bổ sung.** Trên xúc xắc cân đối, \(A=\{2,4,6\}\) (chẵn), \(B=\{4,5,6\}\) (ít nhất 4). Từ mẫu sáu mặt: \(P(A)=3/6\), \(P(B)=3/6\), \(P(A\cap B)=2/6\). Vậy \(P(A\cup B)=3/6+3/6-2/6=4/6=2/3\), tương ứng đúng các mặt \(\{2,4,5,6\}\). Nếu cộng thành \(6/6\), hai mặt 4 và 6 đã bị tính **hai lần**. Không cần và cũng không có giả thiết hai biến cố độc lập.
+**Ví dụ bổ sung.** Trên xúc xắc cân đối, \(A=\{2,4,6\}\) (chẵn), \(B=\{4,5,6\}\) (ít nhất 4). Từ mẫu sáu mặt: \(P(A)=\frac{3}{6}\), \(P(B)=\frac{3}{6}\), \(P(A\cap B)=\frac{2}{6}\). Vậy \(P(A\cup B)=\frac{3}{6}+\frac{3}{6}-\frac{2}{6}=\frac{4}{6}=\frac{2}{3}\), tương ứng đúng các mặt \(\{2,4,5,6\}\). Nếu cộng thành \(\frac{6}{6}\), hai mặt 4 và 6 đã bị tính **hai lần**. Không cần và cũng không có giả thiết hai biến cố độc lập.
 
 **Ví dụ**
 
 **Đề bài:** Trong một nhóm 50 người, có 30 người thích hoạt động A, 25 người thích hoạt động B và 10 người thích cả hai. Chọn ngẫu nhiên đều một người. Tính xác suất người đó thích **ít nhất một** trong hai hoạt động.
 
-**Lời giải:** Cộng 30 và 25 sẽ đếm hai lần 10 người thích cả hai. Số người thích ít nhất một hoạt động là \(30+25-10=45\), nên xác suất cần tìm bằng \(45/50=9/10\). Không cần giả thiết hai sở thích độc lập; chỉ cần dùng quy tắc cộng trừ phần giao. Kiểm tra: 45 không vượt 50.
+**Lời giải:** Cộng 30 và 25 sẽ đếm hai lần 10 người thích cả hai. Số người thích ít nhất một hoạt động là \(30+25-10=45\), nên xác suất cần tìm bằng \(\frac{45}{50}=\frac{9}{10}\). Không cần giả thiết hai sở thích độc lập; chỉ cần dùng quy tắc cộng trừ phần giao. Kiểm tra: 45 không vượt 50.
 
 **Lỗi thường gặp:** Cộng \(P(A)+P(B)\) mà quên trừ giao, dẫn tới xác suất có thể vượt 1.
 
 **Kiến thức cần ghi nhớ**
 
-Nếu \(A\cap B=\varnothing\) thì không có phần chung bị đếm hai lần, vì vậy \(P(A\cup B)=P(A)+P(B)\). Chẳng hạn, trên một lần gieo xúc xắc, \(A=\{1\}\) và \(B=\{4\}\) xung khắc nên \(P(A\cup B)=2/6=1/3\). Nếu có kết quả chung, phải trở lại công thức đầy đủ và trừ \(P(A\cap B)\).
+Nếu \(A\cap B=\varnothing\) thì không có phần chung bị đếm hai lần, vì vậy \(P(A\cup B)=P(A)+P(B)\). Chẳng hạn, trên một lần gieo xúc xắc, \(A=\{1\}\) và \(B=\{4\}\) xung khắc nên \(P(A\cup B)=\frac{2}{6}=\frac{1}{3}\). Nếu có kết quả chung, phải trở lại công thức đầy đủ và trừ \(P(A\cap B)\).
 
 **Vận dụng**
 
-Gieo xúc xắc cân đối. A=lẻ, B=lớn hơn 3. Tính P(A∪B) bằng quy tắc cộng.
+Gieo xúc xắc cân đối. A=lẻ, B=lớn hơn 3. Tính \(P(A\cup B)\) bằng quy tắc cộng.
 
 <!-- ITEM_ID: THPT-TOP20-T08; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O14; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-A={1,3,5}, B={4,5,6}, giao={5}; P(hợp)=3/6+3/6−1/6=5/6.
+\(A=\{1,3,5\}\), \(B=\{4,5,6\}\), giao=\(\{5\}\); \(P(A\cup B)=\frac36+\frac36-\frac16=\frac56\).
 
 **Kiểm lỗi**
 
@@ -477,12 +477,12 @@ Nếu ra 1, em đã cộng mà quên trừ kết quả 5 được đếm hai l�
 
 **Vận dụng**
 
-Gieo xúc xắc cân đối. A={1,2}, B={5,6}. Tính P(A∪B) và nêu vì sao cộng trực tiếp.
+Gieo xúc xắc cân đối. \(A=\{1,2\}\), \(B=\{5,6\}\). Tính \(P(A\cup B)\) và nêu vì sao cộng trực tiếp.
 
 <!-- ITEM_ID: THPT-TOP20-T16; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O15; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**Lời giải:** Hai tập rời nhau nên P(A∩B)=0, P(A∪B)=2/6+2/6=4/6=2/3.
+**Lời giải:** Hai tập rời nhau nên \(P(A\cap B)=0\), \(P(A\cup B)=\frac26+\frac26=\frac46=\frac23\).
 
 **Kiểm lỗi**
 
@@ -498,11 +498,11 @@ Cách suy nghĩ gọn hơn là xét tình huống ngược lại: “không có 
 
 > **CÔNG THỨC — Nhân độc lập và biến cố đối**
 >
-> Nếu A,B độc lập: \[P(A\cap B)=P(A)P(B),\quad P(A\cup B)=1-P(\bar A)P(\bar B).\] Không nhân xác suất biên cho biến cố phụ thuộc.
+> Nếu A,B độc lập: \(P(A\cap B)=P(A)P(B),\quad P(A\cup B)=1-P(\bar A)P(\bar B).\) Không nhân xác suất biên cho biến cố phụ thuộc.
 
 **Trước khi nhân: kiểm tính độc lập.** Với hai biến cố bất kỳ, xác suất cùng xảy ra không thể được tự động thay bằng \(P(A)P(B)\). Nếu biết rõ các phép thử độc lập (chẳng hạn hai lượt tung đồng xu độc lập) thì được nhân. Nếu cùng một quá trình rút **không hoàn lại**, kết quả lần đầu thay đổi tỉ lệ còn lại nên phải tính theo nhánh có điều kiện, hoặc đếm trực tiếp các kết quả đồng khả năng như trong mục 1.4.
 
-**Ví dụ bổ sung.** Rút hai bi không hoàn lại từ hộp 3 đỏ, 2 xanh. Xác suất **ít nhất một viên xanh** là \(1-P(\text{cả hai đỏ})=1-3/10=7/10\). Không dùng \(1-(3/5)^2=16/25\) vì hai lần rút **không độc lập**. Nếu rút **có hoàn lại** và trộn đều trước lượt sau, hai lượt mới độc lập và \(P(\text{ít nhất một xanh})=1-(3/5)^2=16/25\). Hai kết quả khác nhau không có nghĩa công thức biến cố đối sai: sai ở việc **chọn mô hình phép thử**.
+**Ví dụ bổ sung.** Rút hai bi không hoàn lại từ hộp 3 đỏ, 2 xanh. Xác suất **ít nhất một viên xanh** là \(1-P(\text{cả hai đỏ})=1-\frac{3}{10}=\frac{7}{10}\). Không dùng \(1-(\frac{3}{5})^2=\frac{16}{25}\) vì hai lần rút **không độc lập**. Nếu rút **có hoàn lại** và trộn đều trước lượt sau, hai lượt mới độc lập và \(P(\text{ít nhất một xanh})=1-(\frac{3}{5})^2=\frac{16}{25}\). Hai kết quả khác nhau không có nghĩa công thức biến cố đối sai: sai ở việc **chọn mô hình phép thử**.
 
 **Ví dụ**
 
@@ -514,20 +514,20 @@ Cách suy nghĩ gọn hơn là xét tình huống ngược lại: “không có 
 
 **Kiến thức cần ghi nhớ**
 
-Đối với hai phép thử độc lập, muốn tính xác suất **cả hai** biến cố cùng xảy ra ta dùng tích các xác suất; muốn tính **ít nhất một** xảy ra, ta có thể dùng quy tắc cộng trừ phần giao hoặc lấy biến cố đối. Khi tung đồng xu cân đối và gieo xúc xắc cân đối độc lập, xác suất “xu ngửa hoặc xúc xắc ra số lớn hơn 4” là \(1/2+1/3-1/6=2/3\). Không dùng phép nhân như công thức độc lập khi chưa có căn cứ về tính độc lập.
+Đối với hai phép thử độc lập, muốn tính xác suất **cả hai** biến cố cùng xảy ra ta dùng tích các xác suất; muốn tính **ít nhất một** xảy ra, ta có thể dùng quy tắc cộng trừ phần giao hoặc lấy biến cố đối. Khi tung đồng xu cân đối và gieo xúc xắc cân đối độc lập, xác suất “xu ngửa hoặc xúc xắc ra số lớn hơn 4” là \(\frac{1}{2}+\frac{1}{3}-\frac{1}{6}=\frac{2}{3}\). Không dùng phép nhân như công thức độc lập khi chưa có căn cứ về tính độc lập.
 
 **Vận dụng**
 
-Hai thiết bị hoạt động độc lập, xác suất hỏng lần lượt 1/5 và 1/4. Xác suất có ít nhất một thiết bị hoạt động là bao nhiêu?
+Hai thiết bị hoạt động độc lập, xác suất hỏng lần lượt \(\frac{1}{5}\) và \(\frac{1}{4}\). Xác suất có ít nhất một thiết bị hoạt động là bao nhiêu?
 
 <!-- ITEM_ID: THPT-TOP20-T09; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O16; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-P=1−P(cả hai hỏng)=1−(1/5)(1/4)=19/20.
+\(P=1-P(\text{cả hai hỏng})=1-\frac15\cdot\frac14=\frac{19}{20}\).
 
 **Kiểm lỗi**
 
-Nếu nhân hai xác suất hoạt động 4/5×3/4, em đang tính cả hai hoạt động, không phải ít nhất một. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 16 tại Luyện tập 2.6. Quy tắc nhân cho hai phép thử độc lập.
+Nếu nhân hai xác suất hoạt động \(\frac45\cdot\frac34\), em đang tính cả hai hoạt động, không phải ít nhất một. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 16 tại Luyện tập 2.6. Quy tắc nhân cho hai phép thử độc lập.
 
 </details>
 
@@ -539,16 +539,16 @@ Nếu nhân hai xác suất hoạt động 4/5×3/4, em đang tính cả hai ho�
 
 **Vận dụng**
 
-Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. A=đồng xu ngửa, B=xúc xắc chẵn. Tính P(A∪B).
+Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. A=đồng xu ngửa, B=xúc xắc chẵn. Tính \(P(A\cup B)\).
 
 <!-- ITEM_ID: THPT-TOP20-T17; ROLE: TOPIC_FIRST_TRY; PRIMARY_OUTCOME: TOP20-O17; CONTENT_VERSION: TOP20-R02; Q15_CANONICAL_NEW_ONLY; ASSESSMENT: PUBLIC_FORMATIVE_NO_MASTERY -->
 <details markdown="1"><summary>Đối chiếu</summary>
 
-**Lời giải:** P(A)=1/2, P(B)=1/2, P(A∩B)=1/4. Vậy P(A∪B)=1/2+1/2−1/4=3/4.
+**Lời giải:** \(P(A)=\frac12\), \(P(B)=\frac12\), \(P(A\cap B)=\frac14\). Vậy \(P(A\cup B)=\frac12+\frac12-\frac14=\frac34\).
 
 **Kiểm lỗi**
 
-Nếu được 1, em đã cộng mà chưa trừ phần **cả hai cùng xảy ra**; nếu được 1/4 đó là giao, không phải hợp. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 17 tại Luyện tập 2.7. Tính xác suất hợp bằng cộng và trừ giao.
+Nếu được 1, em đã cộng mà chưa trừ phần **cả hai cùng xảy ra**; nếu được \(\frac{1}{4}\) đó là giao, không phải hợp. Ôn lại mục Kiến thức 2.4. Quy tắc nhân độc lập và biến cố đối và Bài luyện 17 tại Luyện tập 2.7. Tính xác suất hợp bằng cộng và trừ giao.
 
 </details>
 
@@ -582,7 +582,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 **Lời giải:** Không gian mẫu của một lần gieo xúc xắc sáu mặt là \(\Omega=\{1,2,3,4,5,6\}\). Điều kiện “bé hơn 2” chỉ thỏa với mặt số 1, nên \(A=\{1\}\). Biến cố chắc chắn phải chứa cả sáu kết quả, trong khi \(A\) chỉ chứa một kết quả; vì vậy \(A\) **không chắc chắn**. Trái lại, nó vẫn có thể xảy ra.
 
-**Khi làm sai:** Phân biệt “bé hơn” với “bé hơn hoặc bằng”; A là một tập con chứ không phải số 1/6.
+**Khi làm sai:** Phân biệt “bé hơn” với “bé hơn hoặc bằng”; A là một tập con chứ không phải số \(\frac{1}{6}\).
 
 </details>
 
@@ -608,9 +608,9 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Gọi \(B\) là biến cố “rút được thẻ lỗi”. Vì có 4 thẻ lỗi trong 12 thẻ được rút đều, \(P(B)=4/12=1/3\). Biến cố “không lỗi” chính là \(\bar B\), nên \(P(\bar B)=1-P(B)=1-\dfrac{4}{12}=\dfrac{8}{12}=\dfrac23\). Kiểm lại: tám thẻ còn lại đều không lỗi, khớp với xác suất vừa tìm.
+**Lời giải:** Gọi \(B\) là biến cố “rút được thẻ lỗi”. Vì có 4 thẻ lỗi trong 12 thẻ được rút đều, \(P(B)=\frac{4}{12}=\frac{1}{3}\). Biến cố “không lỗi” chính là \(\bar B\), nên \(P(\bar B)=1-P(B)=1-\dfrac{4}{12}=\dfrac{8}{12}=\dfrac23\). Kiểm lại: tám thẻ còn lại đều không lỗi, khớp với xác suất vừa tìm.
 
-**Khi làm sai:** Kiểm A và A̅ phủ hết 12 thẻ, không tính 4/12 là không lỗi.
+**Khi làm sai:** Kiểm A và \(\overline A\) phủ hết 12 thẻ, không tính \(\frac{4}{12}\) là không lỗi.
 
 </details>
 
@@ -652,7 +652,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 **Lời giải:** Hai thẻ được lấy **cùng lúc**, không phân biệt thẻ nào được chọn trước. Do đó một kết quả sơ cấp là một nhóm hai thẻ, có \(\binom72=21\) nhóm đồng khả năng. Muốn cả hai đều ghi sao, ta phải chọn cả hai trong ba thẻ sao, nên có \(\binom32=3\) nhóm thuận lợi. Xác suất là \(P=\dfrac{\binom32}{\binom72}=\dfrac3{21}=\dfrac17\). Cả tử và mẫu đều đếm nhóm **không có thứ tự**.
 
-**Khi làm sai:** Nếu dùng 7×6 ở mẫu mà C(3,2) ở tử, em đã trộn có và không xét thứ tự.
+**Khi làm sai:** Nếu dùng 7×6 ở mẫu mà \(\binom{3}{2}\) ở tử, em đã trộn có và không xét thứ tự.
 
 </details>
 
@@ -692,9 +692,9 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Mỗi cặp có thứ tự gồm hai thẻ **khác nhau**, vì rút không hoàn lại. Lượt đầu có năm lựa chọn, lượt sau còn bốn, nên có \(5\cdot4=20\) cặp đồng khả năng. Muốn cả hai đều đỏ, lượt đầu có hai thẻ đỏ có thể chọn và lượt sau chỉ còn một thẻ đỏ: có \(2\cdot1=2\) cặp thuận lợi. Do đó \(P(\text{cả hai đỏ})=\dfrac2{20}=\dfrac1{10}\). Không thể dùng \((2/5)^2\), bởi lần rút sau hộp đã thay đổi.
+**Lời giải:** Mỗi cặp có thứ tự gồm hai thẻ **khác nhau**, vì rút không hoàn lại. Lượt đầu có năm lựa chọn, lượt sau còn bốn, nên có \(5\cdot4=20\) cặp đồng khả năng. Muốn cả hai đều đỏ, lượt đầu có hai thẻ đỏ có thể chọn và lượt sau chỉ còn một thẻ đỏ: có \(2\cdot1=2\) cặp thuận lợi. Do đó \(P(\text{cả hai đỏ})=\dfrac2{20}=\dfrac1{10}\). Không thể dùng \((\frac{2}{5})^2\), bởi lần rút sau hộp đã thay đổi.
 
-**Khi làm sai:** Nếu dùng (2/5)², em đã giả sử lượt sau vẫn có 2 đỏ trong 5 thẻ.
+**Khi làm sai:** Nếu dùng \(\left(\frac25\right)^2\), em đã giả sử lượt sau vẫn có 2 đỏ trong 5 thẻ.
 
 </details>
 
@@ -704,7 +704,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P11; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O11; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 11.** Gieo xúc xắc: A=ra số lẻ, B=ra số không nhỏ hơn 5. Viết A∩B và A∪B.
+**Bài luyện 11.** Gieo xúc xắc: A=ra số lẻ, B=ra số không nhỏ hơn 5. Viết \(A\cap B\) và \(A\cup B\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -718,13 +718,13 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P12; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O12; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 12.** Hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lớn hơn 4; B: con thứ hai ra số chẵn. Tính P(A∩B).
+**Bài luyện 12.** Hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lớn hơn 4; B: con thứ hai ra số chẵn. Tính \(P(A\cap B)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Gọi \(A\) là biến cố con xúc xắc thứ nhất ra 5 hoặc 6, nên \(P(A)=2/6=1/3\). Gọi \(B\) là biến cố con thứ hai ra số chẵn 2, 4 hoặc 6, nên \(P(B)=3/6=1/2\). Vì hai xúc xắc được gieo độc lập, ta dùng **quy tắc nhân cho giao**: \(P(A\cap B)=P(A)P(B)=\dfrac13\cdot\dfrac12=\dfrac16\).
+**Lời giải:** Gọi \(A\) là biến cố con xúc xắc thứ nhất ra 5 hoặc 6, nên \(P(A)=\frac{2}{6}=\frac{1}{3}\). Gọi \(B\) là biến cố con thứ hai ra số chẵn 2, 4 hoặc 6, nên \(P(B)=\frac{3}{6}=\frac{1}{2}\). Vì hai xúc xắc được gieo độc lập, ta dùng **quy tắc nhân cho giao**: \(P(A\cap B)=P(A)P(B)=\dfrac13\cdot\dfrac12=\dfrac16\).
 
-**Khi làm sai:** Nếu ra 5/6, em đang cộng hai biến cố thay vì lấy giao.
+**Khi làm sai:** Nếu ra \(\frac{5}{6}\), em đang cộng hai biến cố thay vì lấy giao.
 
 </details>
 
@@ -732,7 +732,7 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P13; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O13; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 13.** Một xúc xắc: A={1,2}, B={3,4}. Chúng có xung khắc và độc lập không?
+**Bài luyện 13.** Một xúc xắc: \(A=\{1,2\}\), \(B=\{3,4\}\). Chúng có xung khắc và độc lập không?
 
 <details markdown="1"><summary>Lời giải</summary>
 
@@ -746,13 +746,13 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P14; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O14; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 14.** Gieo xúc xắc. A={1,2,3,4}, B={2,4,6}. Tính P(A∪B) theo quy tắc cộng.
+**Bài luyện 14.** Gieo xúc xắc. \(A=\{1,2,3,4\}\), \(B=\{2,4,6\}\). Tính \(P(A\cup B)\) theo quy tắc cộng.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Lời giải:** Ta có \(A=\{1,2,3,4\}\), \(B=\{2,4,6\}\), nên \(A\cap B=\{2,4\}\). Vì kết quả 2 và 4 nằm trong **cả hai** biến cố, khi cộng xác suất phải trừ phần giao: \(P(A\cup B)=\dfrac46+\dfrac36-\dfrac26=\dfrac56\). Kiểm lại bằng cách liệt kê hợp \(A\cup B=\{1,2,3,4,6\}\), đúng năm trong sáu kết quả đồng khả năng.
 
-**Khi làm sai:** Nếu ra 7/6>1, phép cộng đã đếm trùng 2,4.
+**Khi làm sai:** Nếu ra \(\frac76>1\), phép cộng đã đếm trùng 2,4.
 
 </details>
 
@@ -760,13 +760,13 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P15; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O15; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 15.** Gieo xúc xắc, A=ra 1 và B=ra 6. Tính P(A∪B) và giải thích vì sao cộng trực tiếp.
+**Bài luyện 15.** Gieo xúc xắc, A=ra 1 và B=ra 6. Tính \(P(A\cup B)\) và giải thích vì sao cộng trực tiếp.
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Lời giải:** Trên một lần gieo xúc xắc, \(A=\{1\}\) và \(B=\{6\}\). Hai biến cố này **xung khắc** vì không có kết quả nào vừa là 1 vừa là 6, tức \(A\cap B=\varnothing\). Do đó áp dụng **quy tắc cộng cho biến cố xung khắc**: \(P(A\cup B)=P(A)+P(B)=\dfrac16+\dfrac16=\dfrac13\). Không cần và cũng không được suy rằng hai biến cố độc lập.
 
-**Khi làm sai:** Nếu gọi A,B độc lập, thử kiểm P(A)P(B)=1/36 khác 0.
+**Khi làm sai:** Nếu gọi A,B độc lập, thử kiểm \(P(A)P(B)=\frac1{36}\) khác 0.
 
 </details>
 
@@ -778,9 +778,9 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Đồng xu cân đối có xác suất ngửa \(1/2\). Với xúc xắc cân đối, các mặt chia hết cho 3 là 3 và 6, nên xác suất của biến cố đó bằng \(2/6=1/3\). Hai phép thử độc lập và đề hỏi **cả hai điều kiện cùng xảy ra**, nên dùng quy tắc nhân: \(P=\dfrac12\cdot\dfrac26=\dfrac16\). Nếu dùng phép cộng, em đang tính một dạng hợp chứ không phải giao.
+**Lời giải:** Đồng xu cân đối có xác suất ngửa \(\frac{1}{2}\). Với xúc xắc cân đối, các mặt chia hết cho 3 là 3 và 6, nên xác suất của biến cố đó bằng \(\frac{2}{6}=\frac{1}{3}\). Hai phép thử độc lập và đề hỏi **cả hai điều kiện cùng xảy ra**, nên dùng quy tắc nhân: \(P=\dfrac12\cdot\dfrac26=\dfrac16\). Nếu dùng phép cộng, em đang tính một dạng hợp chứ không phải giao.
 
-**Khi làm sai:** Đừng lấy 1/2+2/6 vì câu hỏi yêu cầu cùng xuất hiện.
+**Khi làm sai:** Đừng lấy \(\frac12+\frac26\) vì câu hỏi yêu cầu cùng xuất hiện.
 
 </details>
 
@@ -788,13 +788,13 @@ Mỗi bài bắt đầu từ một câu hỏi: **kết quả sơ cấp là gì, 
 
 <!-- ITEM_ID: THPT-TOP20-P17; ROLE: TOPIC_PRACTICE; PRIMARY_OUTCOME: TOP20-O17; CONTENT_VERSION: TOP20-R09; PUBLIC_FORMATIVE_NO_MASTERY -->
 
-**Bài luyện 17.** Gieo hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lẻ, B: con thứ hai không lớn hơn 2. Tính P(A∪B).
+**Bài luyện 17.** Gieo hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lẻ, B: con thứ hai không lớn hơn 2. Tính \(P(A\cup B)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Lời giải:** Đặt \(A\): “xúc xắc thứ nhất ra số lẻ” và \(B\): “xúc xắc thứ hai ra số không lớn hơn 2”. Khi đó \(P(A)=3/6=1/2\), \(P(B)=2/6=1/3\). Vì hai xúc xắc độc lập, \(P(A\cap B)=P(A)P(B)=1/6\). Đề hỏi **\(A\) hoặc \(B\)**, tức hợp; áp dụng quy tắc cộng, \(P(A\cup B)=\dfrac12+\dfrac13-\dfrac16=\dfrac23\). Trừ phần giao để không đếm các cặp cùng thỏa hai điều kiện hai lần.
+**Lời giải:** Đặt \(A\): “xúc xắc thứ nhất ra số lẻ” và \(B\): “xúc xắc thứ hai ra số không lớn hơn 2”. Khi đó \(P(A)=\frac{3}{6}=\frac{1}{2}\), \(P(B)=\frac{2}{6}=\frac{1}{3}\). Vì hai xúc xắc độc lập, \(P(A\cap B)=P(A)P(B)=\frac{1}{6}\). Đề hỏi **\(A\) hoặc \(B\)**, tức hợp; áp dụng quy tắc cộng, \(P(A\cup B)=\dfrac12+\dfrac13-\dfrac16=\dfrac23\). Trừ phần giao để không đếm các cặp cùng thỏa hai điều kiện hai lần.
 
-**Khi làm sai:** Nếu kết quả 5/6, em quên trừ phần giao; nếu 1/6 đó là giao chứ không phải hợp.
+**Khi làm sai:** Nếu kết quả \(\frac{5}{6}\), em quên trừ phần giao; nếu \(\frac{1}{6}\) đó là giao chứ không phải hợp.
 
 </details>
 
@@ -821,12 +821,12 @@ Ba bài tự luận dưới đây yêu cầu trình bày lời giải và giải
 Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ số nhất quán.
 
 **Rubric:**
-- Xác định đúng kết quả sơ cấp là nhóm không thứ tự và C(8,2)=28 — **1 điểm**.
-- Đếm nhóm toàn đỏ C(3,2)=3, tính 3/28 — **1 điểm**.
-- Chọn biến cố đối hai phiếu xanh với C(5,2)=10 — **1 điểm**.
-- Tính 1−10/28=9/14 và diễn giải ít nhất một đỏ — **1 điểm**.
+- Xác định đúng kết quả sơ cấp là nhóm không thứ tự và \(\binom82=28\) — **1 điểm**.
+- Đếm nhóm toàn đỏ \(\binom32=3\), tính \(\frac{3}{28}\) — **1 điểm**.
+- Chọn biến cố đối hai phiếu xanh với \(\binom52=10\) — **1 điểm**.
+- Tính \(1-\frac{10}{28}=\frac9{14}\) và diễn giải ít nhất một đỏ — **1 điểm**.
 
-**Khi làm sai:** Nếu dùng 3 nhóm đỏ thuận lợi nhưng chia cho 56 cặp có thứ tự, em đã trộn hai cách đếm. Đếm nhất quán theo **nhóm không thứ tự** cho \(3/28\); nếu đếm theo **cặp có thứ tự**, phải dùng \(6/56\), vẫn bằng \(3/28\). Hãy xem lại mục Kiến thức 1.4 và Bài luyện 7 (mục Luyện tập 1.7 — Chọn nhóm không xét thứ tự). Với câu “ít nhất một đỏ”, biến cố đối là **cả hai phiếu xanh**, không phải “đúng một đỏ”; xem lại mục Kiến thức 1.3 và Bài luyện 8 (mục Luyện tập 1.8 — Ít nhất một và biến cố đối).
+**Khi làm sai:** Nếu dùng 3 nhóm đỏ thuận lợi nhưng chia cho 56 cặp có thứ tự, em đã trộn hai cách đếm. Đếm nhất quán theo **nhóm không thứ tự** cho \(\frac{3}{28}\); nếu đếm theo **cặp có thứ tự**, phải dùng \(\frac{6}{56}\), vẫn bằng \(\frac{3}{28}\). Hãy xem lại mục Kiến thức 1.4 và Bài luyện 7 (mục Luyện tập 1.7 — Chọn nhóm không xét thứ tự). Với câu “ít nhất một đỏ”, biến cố đối là **cả hai phiếu xanh**, không phải “đúng một đỏ”; xem lại mục Kiến thức 1.3 và Bài luyện 8 (mục Luyện tập 1.8 — Ít nhất một và biến cố đối).
 
 </details>
 
@@ -834,7 +834,7 @@ Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ 
 
 <!-- ITEM_ID: THPT-TOP20-W02; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O14; CONTENT_VERSION: TOP20-R12; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
 
-**Bài luyện 19.** Một lần gieo xúc xắc cân đối. A={2,4,6}, B={2,3,5}. (a) Tìm giao và hợp. (b) Tính xác suất hợp bằng quy tắc cộng. (c) Hai biến cố có độc lập không?
+**Bài luyện 19.** Một lần gieo xúc xắc cân đối. \(A=\{2,4,6\}\), \(B=\{2,3,5\}\). (a) Tìm giao và hợp. (b) Tính xác suất hợp bằng quy tắc cộng. (c) Hai biến cố có độc lập không?
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
@@ -842,17 +842,17 @@ Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ 
 
 (a) Từ \(A=\{2,4,6\}\), \(B=\{2,3,5\}\), ta có \(A\cap B=\{2\}\) và \(A\cup B=\{2,3,4,5,6\}\).
 
-(b) Trên sáu mặt xúc xắc đồng khả năng, \(P(A)=P(B)=3/6=1/2\), còn \(P(A\cap B)=1/6\). Áp dụng quy tắc cộng tổng quát: \(P(A\cup B)=\dfrac36+\dfrac36-\dfrac16=\dfrac56\).
+(b) Trên sáu mặt xúc xắc đồng khả năng, \(P(A)=P(B)=\frac{3}{6}=\frac{1}{2}\), còn \(P(A\cap B)=\frac{1}{6}\). Áp dụng quy tắc cộng tổng quát: \(P(A\cup B)=\dfrac36+\dfrac36-\dfrac16=\dfrac56\).
 
-(c) Để kiểm tra độc lập, không chỉ nhìn xem hai biến cố có giao hay không. Ta so sánh \(P(A\cap B)=1/6\) với \(P(A)P(B)=(1/2)(1/2)=1/4\). Vì \(1/6\ne1/4\), \(A\) và \(B\) **không độc lập**.
+(c) Để kiểm tra độc lập, không chỉ nhìn xem hai biến cố có giao hay không. Ta so sánh \(P(A\cap B)=\frac{1}{6}\) với \(P(A)P(B)=(\frac{1}{2})(\frac{1}{2})=\frac{1}{4}\). Vì \(\frac{1}{6}\ne\frac{1}{4}\), \(A\) và \(B\) **không độc lập**.
 
 **Rubric:**
-- Liệt kê giao {2} và hợp {2,3,4,5,6} — **1 điểm**.
-- Tính đúng P(A)=P(B)=3/6 và P(A∩B)=1/6 — **1 điểm**.
-- Áp dụng cộng tổng quát để được 5/6 — **1 điểm**.
-- So 1/6 với 1/4, kết luận không độc lập và nêu lý do — **1 điểm**.
+- Liệt kê giao \(\{2\}\) và hợp \(\{2,3,4,5,6\}\) — **1 điểm**.
+- Tính đúng \(P(A)=P(B)=\frac36\) và \(P(A\cap B)=\frac16\) — **1 điểm**.
+- Áp dụng cộng tổng quát để được \(\frac{5}{6}\) — **1 điểm**.
+- So \(\frac{1}{6}\) với \(\frac{1}{4}\), kết luận không độc lập và nêu lý do — **1 điểm**.
 
-**Khi làm sai:** Nếu tính \(P(A\cup B)=1\), em đã quên trừ phần giao \(\{2\}\) được đếm hai lần. Hãy xem lại hình Venn ở mục Kiến thức 2.1 và làm lại Bài luyện 14 (mục Luyện tập 2.4 — Quy tắc cộng xác suất). Nếu kết luận hai biến cố độc lập chỉ vì chúng có kết quả chung, hãy kiểm lại \(P(A\cap B)=1/6\) và \(P(A)P(B)=1/4\): hai giá trị khác nhau. Xem thêm mục Kiến thức 2.2 và Bài luyện 13 (mục Luyện tập 2.3 — Phân biệt xung khắc và độc lập).
+**Khi làm sai:** Nếu tính \(P(A\cup B)=1\), em đã quên trừ phần giao \(\{2\}\) được đếm hai lần. Hãy xem lại hình Venn ở mục Kiến thức 2.1 và làm lại Bài luyện 14 (mục Luyện tập 2.4 — Quy tắc cộng xác suất). Nếu kết luận hai biến cố độc lập chỉ vì chúng có kết quả chung, hãy kiểm lại \(P(A\cap B)=\frac{1}{6}\) và \(P(A)P(B)=\frac{1}{4}\): hai giá trị khác nhau. Xem thêm mục Kiến thức 2.2 và Bài luyện 13 (mục Luyện tập 2.3 — Phân biệt xung khắc và độc lập).
 
 </details>
 
@@ -860,13 +860,13 @@ Ba câu đều đếm bằng **nhóm không thứ tự**, nên cách lập tỉ 
 
 <!-- ITEM_ID: THPT-TOP20-W03; ROLE: TOPIC_WRITTEN; PRIMARY_OUTCOME: TOP20-O17; CONTENT_VERSION: TOP20-R12; PUBLIC_SELF_SCORED_NO_MASTERY; NOT_PROTECTED_RD1 -->
 
-**Bài luyện 20.** Tung đồng xu cân đối và gieo một xúc xắc cân đối, hai phép thử độc lập. A: xu ngửa; B: xúc xắc lớn hơn 4. (a) Tính P(A∩B). (b) Tính P(A∪B). (c) Tính xác suất cả A và B đều không xảy ra.
+**Bài luyện 20.** Tung đồng xu cân đối và gieo một xúc xắc cân đối, hai phép thử độc lập. A: xu ngửa; B: xúc xắc lớn hơn 4. (a) Tính \(P(A\cap B)\). (b) Tính \(P(A\cup B)\). (c) Tính xác suất cả A và B đều không xảy ra.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
 **Lời giải:**
 
-Trước hết, đồng xu cân đối có xác suất ngửa \(P(A)=1/2\). Xúc xắc cân đối có hai mặt lớn hơn 4 là 5, 6, nên \(P(B)=2/6=1/3\).
+Trước hết, đồng xu cân đối có xác suất ngửa \(P(A)=\frac{1}{2}\). Xúc xắc cân đối có hai mặt lớn hơn 4 là 5, 6, nên \(P(B)=\frac{2}{6}=\frac{1}{3}\).
 
 (a) Hai phép thử độc lập và đề hỏi **cả A và B**, nên \(P(A\cap B)=P(A)P(B)=\dfrac12\cdot\dfrac13=\dfrac16\).
 
@@ -875,12 +875,12 @@ Trước hết, đồng xu cân đối có xác suất ngửa \(P(A)=1/2\). Xúc
 (c) “Cả A và B đều không xảy ra” là biến cố đối của “ít nhất một trong hai xảy ra”, nên xác suất là \(1-P(A\cup B)=1-\dfrac23=\dfrac13\).
 
 **Rubric:**
-- Nhận đúng P(A)=1/2, P(B)=1/3 và tính độc lập — **1 điểm**.
-- Tính giao bằng phép nhân là 1/6 — **1 điểm**.
-- Tính hợp 1/2+1/3−1/6=2/3 — **1 điểm**.
-- Lấy biến cố đối để được 1/3, giải thích cả hai đều không xảy ra — **1 điểm**.
+- Nhận đúng \(P(A)=\frac12\), \(P(B)=\frac13\) và tính độc lập — **1 điểm**.
+- Tính giao bằng phép nhân là \(\frac{1}{6}\) — **1 điểm**.
+- Tính hợp \(\frac12+\frac13-\frac16=\frac23\) — **1 điểm**.
+- Lấy biến cố đối để được \(\frac{1}{3}\), giải thích cả hai đều không xảy ra — **1 điểm**.
 
-**Khi làm sai:** Nếu câu (a) ra \(5/6\), em đã tính hợp thay cho giao. Với yêu cầu “cả A và B”, hãy xem lại phép nhân cho hai biến cố độc lập ở mục Kiến thức 2.4 và Bài luyện 16 (mục Luyện tập 2.6 — Quy tắc nhân cho hai phép thử độc lập). Nếu câu (b) ra \(1/6\), em mới tính giao, chưa tính hợp; trở lại quy tắc cộng ở mục Kiến thức 2.3 và Bài luyện 14 (mục Luyện tập 2.4 — Áp dụng quy tắc cộng xác suất). Nếu câu (c) ra \(2/3\), em quên lấy biến cố đối của hợp: “cả A và B đều không xảy ra” chính là phần còn lại sau “ít nhất một trong hai xảy ra”.
+**Khi làm sai:** Nếu câu (a) ra \(\frac{5}{6}\), em đã tính hợp thay cho giao. Với yêu cầu “cả A và B”, hãy xem lại phép nhân cho hai biến cố độc lập ở mục Kiến thức 2.4 và Bài luyện 16 (mục Luyện tập 2.6 — Quy tắc nhân cho hai phép thử độc lập). Nếu câu (b) ra \(\frac{1}{6}\), em mới tính giao, chưa tính hợp; trở lại quy tắc cộng ở mục Kiến thức 2.3 và Bài luyện 14 (mục Luyện tập 2.4 — Áp dụng quy tắc cộng xác suất). Nếu câu (c) ra \(\frac{2}{3}\), em quên lấy biến cố đối của hợp: “cả A và B đều không xảy ra” chính là phần còn lại sau “ít nhất một trong hai xảy ra”.
 
 </details>
 
@@ -909,19 +909,19 @@ Trước hết, đồng xu cân đối có xác suất ngửa \(P(A)=1/2\). Xúc
 **Câu 6.** Hộp 5 thẻ khác nhau (2 đỏ, 3 xanh), rút đều liên tiếp 2 thẻ không hoàn lại. Tính P(cả hai đỏ) bằng đếm chuỗi.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P11; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 7.** Gieo xúc xắc: A=ra số lẻ, B=ra số không nhỏ hơn 5. Viết A∩B và A∪B.
+**Câu 7.** Gieo xúc xắc: A=ra số lẻ, B=ra số không nhỏ hơn 5. Viết \(A\cap B\) và \(A\cup B\).
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P13; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 8.** Một xúc xắc: A={1,2}, B={3,4}. Chúng có xung khắc và độc lập không?
+**Câu 8.** Một xúc xắc: \(A=\{1,2\}\), \(B=\{3,4\}\). Chúng có xung khắc và độc lập không?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P14; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 9.** Gieo xúc xắc. A={1,2,3,4}, B={2,4,6}. Tính P(A∪B) theo quy tắc cộng.
+**Câu 9.** Gieo xúc xắc. \(A=\{1,2,3,4\}\), \(B=\{2,4,6\}\). Tính \(P(A\cup B)\) theo quy tắc cộng.
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P16; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
 **Câu 10.** Tung đồng xu cân đối và gieo xúc xắc cân đối độc lập. P(ngửa và mặt xúc xắc chia hết cho 3)?
 
 <!-- DISPLAY_ONLY_CANONICAL: THPT-TOP20-P17; PLACEMENT: PUBLIC_SELF_CHECK_QUESTION_ONLY; ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY; NO_PRE_SUBMIT_KEY_RUBRIC -->
-**Câu 11.** Gieo hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lẻ, B: con thứ hai không lớn hơn 2. Tính P(A∪B).
+**Câu 11.** Gieo hai xúc xắc cân đối độc lập. A: con thứ nhất ra số lẻ, B: con thứ hai không lớn hơn 2. Tính \(P(A\cup B)\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
