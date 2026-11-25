@@ -1,3 +1,6 @@
+<!-- A05 WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 CD12 O08/O09/O11 edited in canonical at candidate blob `c4691c29bf4a09b365065141265d441738657bef`, commit `fe46614586849606e3fa55b6c61194e177fd0fb3`. Previous signed pointers below are historical only until affected Q18/V2/ready re-lock and X-G.5 verification; no RELEASE authorization.
+
 <!-- TOP12_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
 **CURRENT CĐ12 AUTHORING CONTENT_READY on one R04 learner, NOT website RELEASE:** learner `prototypes/thpt/content-drafts/topic12-triangle/Temp_TOPIC12_R04_NUMBERING_CONSISTENT_20261116.md` source Git blob **`f773f2622c88bd3e3a1e0137613846a83b3e6629`** (commit `24127fe2a00f8217deaca2312f51dc8fca91597c`), existing Q18 self-author `496ce6005b50c6fd5baae2a6ac4f3d9414becc20`, author A1/custody `b9615f81200f82952c92f9b8a362603e2a95eae9`, **one** V2 `bb5baa4df5bbd9ccd2ee67c075e00305d57d57d2`; original canonical bank NEW16 `8f05b5556d83675649451dec76a8c1ffa5e1098d` and original G10 SGK18  source untouched. New current student #977-039–041 verified/fixed: 12/12 Knowledge `Kiểm lỗi` route to two real Practice Bài per outcome; 12 original public Selfcheck prompts now have one after-questions voluntary answer location map by original canonical item IDs; 34 unique student **Bài luyện** sequential labels 1–34, 28 `Lời giải`+6 `Lời giải và rubric` opt-in reveals; only one learner-facing verified SGK Toán 10 KNTT Tập Một ChIII B05–B06 footer, no admin text in lesson. All 34 original canonical mathematical card bodies (stems/keys/solutions/rubrics), original 12 public question-only selfcheck stems and two SVG refs unchanged; 47/47 balanced voluntary details. Q18 current v3.2 AUTHOR_SELF_VERIFIED targeted PED/editorial on source, old original SGK independent receipt inherited only to unchanged math/bank, **no current new full Topic independent NotebookLM verdict**. Public Selfcheck NOT official held-out RD1/Topic Readiness/Mastery/Final Submit; no browser AP/R, owner permission, merge/deploy/Firebase.
 
@@ -12,7 +15,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: 24127fe2a00f8217deaca2312f51dc8fca91597c
 CATALOG_TOPIC_ID: CD12
 Q18_VERIFICATION_MODE: AUTHOR_SELF_VERIFIED
@@ -37,7 +40,7 @@ SVG2_PATH: prototypes/thpt/visuals/THPT_G10_B06_COSINE_AREA_TRIANGLE_D5_R01.svg
 SVG2_BLOB: 0dd2f62277ae264fb4f6d6c99699d5a984a0b562
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
