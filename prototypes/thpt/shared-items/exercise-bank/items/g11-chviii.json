@@ -11,7 +11,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Liệt kê các thẻ có thể được rút."
     ],
     "rubric": null,
     "interaction": {
@@ -27,7 +27,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Một lần chỉ lấy một thẻ; không liệt kê cặp. Ôn CĐ20 mục 1.1; luyện THPT-TOP20-P01."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-C02",
@@ -41,7 +42,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Số nguyên tố có đúng hai ước dương."
     ],
     "rubric": null,
     "interaction": {
@@ -57,7 +58,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Số 1 không phải nguyên tố. Ôn CĐ20 mục 1.1; luyện THPT-TOP20-P02."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-C03",
@@ -71,7 +73,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Lấy mọi phần tử xuất hiện trong ít nhất một tập."
     ],
     "rubric": null,
     "interaction": {
@@ -87,7 +89,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phần tử 3 chung chỉ ghi một lần. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-C04",
@@ -101,7 +104,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Tìm phần tử xuất hiện đồng thời ở cả hai tập."
     ],
     "rubric": null,
     "interaction": {
@@ -117,7 +120,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy mọi phần tử thuộc một trong hai tập. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-C05",
@@ -131,7 +135,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Lấy các phần tử Ω chưa thuộc A."
     ],
     "rubric": null,
     "interaction": {
@@ -147,7 +151,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Phần bù luôn xét trong Ω đã cho. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-C06",
@@ -161,7 +166,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Liệt kê hai tập rồi kiểm giao."
     ],
     "rubric": null,
     "interaction": {
@@ -177,7 +182,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Xung khắc nghĩa là giao rỗng, không phải chỉ khác tập. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-C07",
@@ -191,7 +197,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "So P(A∩B) với P(A)P(B)."
     ],
     "rubric": null,
     "interaction": {
@@ -207,7 +213,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không suy độc lập chỉ từ hai biến cố có giao. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P01",
@@ -221,7 +228,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Liệt kê bội của 2 và 3 trong 1–8."
     ],
     "rubric": null,
     "interaction": {
@@ -237,7 +244,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Số 6 chỉ đếm một lần trong hợp. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P02",
@@ -251,7 +259,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Lọc các số vừa chẵn vừa lớn hơn 5."
     ],
     "rubric": null,
     "interaction": {
@@ -267,7 +275,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhầm lớn hơn 5 với lớn hơn hoặc bằng 5. Ôn CĐ20 mục 2.1; luyện THPT-TOP20-P11."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P03",
@@ -281,7 +290,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Đếm bốn thẻ vật lý đồng khả năng."
     ],
     "rubric": null,
     "interaction": {
@@ -297,7 +306,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai nhãn màu có số thẻ khác nhau nên không đồng khả năng. Ôn CĐ20 mục 1.2; luyện THPT-TOP20-P03."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P04",
@@ -311,7 +321,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Xung khắc cho P(giao)=0; so với tích."
     ],
     "rubric": null,
     "interaction": {
@@ -327,7 +337,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hai xác suất dương có tích dương, không bằng 0. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P05",
@@ -341,7 +352,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Tính tích hai xác suất riêng rồi so với giao."
     ],
     "rubric": null,
     "interaction": {
@@ -357,7 +368,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu hai giá trị khác nhau thì không độc lập. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
   },
   {
     "item_id": "THPT-G11-CHVIII-B28-P06",
@@ -371,7 +383,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 28 trước khi tự thử."
+      "Bỏ b,e khỏi Ω rồi đếm phần còn lại."
     ],
     "rubric": null,
     "interaction": {
@@ -387,7 +399,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy phần bù ngoài Ω. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-C01",
@@ -401,7 +414,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Dùng quy tắc cộng có trừ phần giao."
     ],
     "rubric": null,
     "interaction": {
@@ -417,7 +430,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu cộng trực tiếp, phần giao bị đếm hai lần. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-C02",
@@ -431,7 +445,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Xung khắc cho giao rỗng."
     ],
     "rubric": null,
     "interaction": {
@@ -447,7 +461,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chỉ cộng trực tiếp vì đã có giả thiết xung khắc. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P15."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-C03",
@@ -461,7 +476,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Hai biến cố đối có tổng xác suất 1."
     ],
     "rubric": null,
     "interaction": {
@@ -477,7 +492,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lấy 9/25 làm xác suất phần bù. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-C04",
@@ -491,7 +507,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Cộng ba vùng chỉ trà, cả hai, chỉ cà phê."
     ],
     "rubric": null,
     "interaction": {
@@ -507,7 +523,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Ba vùng đã rời nhau; không trừ phần cả hai lần nữa. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-C05",
@@ -521,7 +538,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Giao là tập con của A."
     ],
     "rubric": null,
     "interaction": {
@@ -537,7 +554,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Xác suất giao không thể lớn hơn xác suất A. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-C06",
@@ -551,7 +569,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Cộng số phiếu A,B rồi trừ 10 phiếu chung."
     ],
     "rubric": null,
     "interaction": {
@@ -567,7 +585,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu chia 50/60, đã đếm phần giao hai lần. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P01",
@@ -581,7 +600,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Biến đổi quy tắc cộng để tìm giao."
     ],
     "rubric": null,
     "interaction": {
@@ -597,7 +616,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Dùng P(A)+P(B)−P(A∪B), không trừ sai dấu. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P02",
@@ -611,7 +631,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Xung khắc thì xác suất hợp bằng tổng."
     ],
     "rubric": null,
     "interaction": {
@@ -627,7 +647,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tổng lớn hơn 1 cho thấy dữ liệu mâu thuẫn. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P15."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P03",
@@ -641,7 +662,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Lấy 1 trừ xác suất lỗi."
     ],
     "rubric": null,
     "interaction": {
@@ -657,7 +678,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không lỗi là biến cố đối, không cần giả thiết độc lập. Ôn CĐ20 mục 1.3; luyện THPT-TOP20-P04."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P04",
@@ -671,7 +693,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Tính số người thuộc hợp, rồi lấy tổng trừ hợp."
     ],
     "rubric": null,
     "interaction": {
@@ -687,7 +709,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không thích cả hai nghĩa là ở ngoài hợp, không chỉ ngoài giao. Ôn CĐ20 mục 1.4; luyện THPT-TOP20-P08."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P05",
@@ -701,7 +724,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Tính hợp rồi kiểm lớn hơn hoặc bằng từng xác suất riêng."
     ],
     "rubric": null,
     "interaction": {
@@ -717,7 +740,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Hợp chứa A và B; không thể nhỏ hơn một xác suất riêng. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B29-P06",
@@ -731,7 +755,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 29 trước khi tự thử."
+      "Tính số bạn học ít nhất một môn rồi lấy 48 trừ đi."
     ],
     "rubric": null,
     "interaction": {
@@ -747,7 +771,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không cộng 21+18 mà quên 8 bạn học cả hai. Ôn CĐ20 mục 2.3; luyện THPT-TOP20-P14."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-C01",
@@ -761,7 +786,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Đã có giả thiết độc lập; nhân hai xác suất."
     ],
     "rubric": null,
     "interaction": {
@@ -777,7 +802,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không cộng khi hỏi cả hai xảy ra. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-C02",
@@ -791,7 +817,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Tính 3/4·1/3 rồi so với 1/4."
     ],
     "rubric": null,
     "interaction": {
@@ -807,7 +833,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Kiểm đẳng thức xác suất, không dựa vào giao rỗng. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-C03",
@@ -821,7 +848,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Ba phép thử độc lập nên nhân ba xác suất."
     ],
     "rubric": null,
     "interaction": {
@@ -837,7 +864,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Cùng xác suất chưa đủ để nhân nếu không độc lập. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-C04",
@@ -851,7 +879,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Bù của ít nhất một hoạt động là cả hai thất bại."
     ],
     "rubric": null,
     "interaction": {
@@ -867,7 +895,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tính (1/5)^2 rồi trừ khỏi 1. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-C05",
@@ -881,7 +910,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Giao rỗng nhưng tích hai xác suất riêng dương."
     ],
     "rubric": null,
     "interaction": {
@@ -897,7 +926,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Xung khắc không phải độc lập khi hai xác suất đều dương. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-C06",
@@ -911,7 +941,7 @@
     "problem_type_id": null,
     "difficulty": "CORE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Hai máy in độc lập, hỏi cả hai thành công."
     ],
     "rubric": null,
     "interaction": {
@@ -927,7 +957,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nhân hai xác suất; không cộng. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P01",
@@ -941,7 +972,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Nhân 7/10 với 3/7."
     ],
     "rubric": null,
     "interaction": {
@@ -957,7 +988,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Chỉ dùng tích vì có giả thiết độc lập. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P02",
@@ -971,7 +1003,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "So 0,6·0,5 với 0,2."
     ],
     "rubric": null,
     "interaction": {
@@ -987,7 +1019,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Tích khác giao nên không độc lập. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P03",
@@ -1001,7 +1034,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Nhân xác suất bật của cả ba công tắc."
     ],
     "rubric": null,
     "interaction": {
@@ -1017,7 +1050,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không cộng ba xác suất; cần độc lập đồng thời. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P04",
@@ -1031,7 +1065,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Tính xác suất cả hai lời nhắc đều không được nhận."
     ],
     "rubric": null,
     "interaction": {
@@ -1047,7 +1081,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Bù của ít nhất một là không nhận cả hai, không phải đúng một. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P05",
@@ -1061,7 +1096,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Độc lập cho P(giao)=1/4."
     ],
     "rubric": null,
     "interaction": {
@@ -1077,7 +1112,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nếu giao rỗng thì P(giao)=0, mâu thuẫn. Ôn CĐ20 mục 2.2; luyện THPT-TOP20-P13."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P06",
@@ -1091,7 +1127,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Nhân 0,8 với 0,7 vì hai môđun độc lập."
     ],
     "rubric": null,
     "interaction": {
@@ -1107,7 +1143,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Xác suất không thể vượt 1; không cộng 0,8+0,7. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P12."
   },
   {
     "item_id": "THPT-G11-CHVIII-B30-P07",
@@ -1121,7 +1158,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Bù là cả ba phép thử đều lỗi."
     ],
     "rubric": null,
     "interaction": {
@@ -1137,7 +1174,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Nhân ba xác suất lỗi rồi trừ khỏi 1. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P16."
   },
   {
     "item_id": "THPT-G11-CHVIII-CHVIII-P01",
@@ -1151,7 +1189,7 @@
     "problem_type_id": null,
     "difficulty": "PRACTICE_APPLY",
     "hints": [
-      "Xem lại khái niệm, điều kiện và ví dụ giải của Bài 30 trước khi tự thử."
+      "Dùng nhân tính giao trước, rồi cộng trừ giao."
     ],
     "rubric": null,
     "interaction": {
@@ -1167,7 +1205,8 @@
         "commit": "a8f2d63e52335c1c686a567334b4f26d43bac0d3"
       }
     },
-    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT"
+    "status": "IMPORTED_PENDING_ACADEMIC_AUDIT",
+    "remediation": "Không nhầm giao với hợp; kiểm hợp ≥ từng xác suất riêng. Ôn CĐ20 mục 2.4; luyện THPT-TOP20-P17."
   },
   {
     "item_id": "THPT-G11-B28-KFT01",
