@@ -16,7 +16,7 @@ Vì vậy ta đi từ định nghĩa đồng biến/nghịch biến đến dấu
 
 Khi nhìn hai điểm trên đồ thị và thấy điểm phía phải cao hơn, ta mới biết hàm tăng **giữa hai vị trí đó**; chừng ấy chưa đủ để khẳng định hàm tăng trên cả khoảng. Điều cần xét là mọi cặp số \(x_1<x_2\) thuộc cùng một khoảng \(I\). 
 
-> **ĐỊNH NGHĨA — Đồng biến, nghịch biến.** Hàm \(f\) **đồng biến nghiêm ngặt** trên khoảng \(I\) khi với mọi \(x_1,x_2\in I\), \(x_1<x_2\Rightarrow f(x_1)<f(x_2)\); **nghịch biến nghiêm ngặt** khi \(x_1<x_2\Rightarrow f(x_1)>f(x_2)\). Phải xét mọi cặp trong cùng khoảng, không chỉ hai điểm minh họa.
+> **ĐỊNH NGHĨA — Đồng biến, nghịch biến.** Hàm \(f\) **đồng biến nghiêm ngặt** trên khoảng, đoạn hoặc nửa khoảng \(I\) khi với mọi \(x_1,x_2\in I\), \(x_1<x_2\Rightarrow f(x_1)<f(x_2)\); **nghịch biến nghiêm ngặt** khi \(x_1<x_2\Rightarrow f(x_1)>f(x_2)\). Phải xét mọi cặp trong cùng khoảng, không chỉ hai điểm minh họa.
 
  Vì vậy miền xác định và việc hai điểm có thuộc cùng một khoảng là điều kiện phải kiểm trước.
 
@@ -46,7 +46,7 @@ Nếu em kết luận chiều biến thiên từ hai điểm mẫu, đọc lại
 
 <!-- LESSON_ID: TOP10-M02; OUTCOME_ID: TOP10-O02 -->
 
-> **TÍNH CHẤT — Dấu đạo hàm.** So hai giá trị đôi khi khó; dấu đạo hàm cho công cụ mạnh hơn khi đủ điều kiện. Cách so trực tiếp \(f(x_2)-f(x_1)\) có thể rất dài với những hàm phức tạp. Khi hàm liên tục trên mỗi đoạn con của khoảng đang xét và khả vi ở các điểm trong khoảng, **đạo hàm** giúp đọc chiều biến thiên hiệu quả hơn. Theo định lý giá trị trung bình, nếu \(f'(x)>0\) khắp khoảng thì hàm tăng nghiêm ngặt; nếu \(f'(x)<0\) thì giảm nghiêm ngặt. Dấu không âm hoặc không dương bảo đảm lần lượt không giảm hoặc không tăng, nhưng muốn nói **nghiêm ngặt** cần loại trường hợp có đoạn hằng.
+> **TÍNH CHẤT — Dấu đạo hàm.** So hai giá trị đôi khi khó; dấu đạo hàm cho công cụ mạnh hơn khi đủ điều kiện. Cách so trực tiếp \(f(x_2)-f(x_1)\) có thể rất dài với những hàm phức tạp. Khi hàm liên tục trên mỗi đoạn con của khoảng đang xét và khả vi ở các điểm trong khoảng, **đạo hàm** giúp đọc chiều biến thiên hiệu quả hơn. Theo định lý giá trị trung bình, nếu \(f'(x)>0\) khắp khoảng thì hàm tăng nghiêm ngặt; nếu \(f'(x)<0\) thì giảm nghiêm ngặt. Dấu không âm hoặc không dương bảo đảm lần lượt không giảm hoặc không tăng, nhưng muốn nói **nghiêm ngặt** cần loại trường hợp có đoạn hằng. Đặc biệt, nếu đạo hàm dương (hoặc âm) trừ một số hữu hạn điểm mà tại đó đạo hàm bằng 0, hàm vẫn đồng biến (hoặc nghịch biến) trên khoảng. Nếu \(f'(x)=0\) tại mọi điểm của khoảng thì hàm không đổi trên khoảng ấy. Như vậy, dấu bằng 0 ở một điểm và dấu bằng 0 trên cả khoảng cho hai kết luận rất khác nhau.
 
 Chẳng hạn, \(f(x)=x^2\) có \(f'(x)=2x\). Ở phía trái 0, đạo hàm âm nên đồ thị đi xuống; ở phía phải 0, đạo hàm dương nên đồ thị đi lên. Việc chia tại \(x=0\) cho ta hai khoảng biến thiên và cực tiểu. Trái lại, hàm \(x^3\) có đạo hàm bằng 0 ở 0 nhưng vẫn tăng khi đi qua điểm này: một nghiệm \(f'(x)=0\) chưa đủ kết luận có cực trị.
 
@@ -54,7 +54,7 @@ Chẳng hạn, \(f(x)=x^2\) có \(f'(x)=2x\). Ở phía trái 0, đạo hàm âm
 
 **Đề bài:** Tìm chiều biến thiên của \(f=x^3-6x\).
 
-**Lời giải:** \(D=\mathbb R\); \(f'=3(x^2-2)\), bằng 0 ở \(\pm\sqrt2\), dương khi \(|x|>\sqrt2\), âm khi \(|x|<\sqrt2\). Hàm tăng ở hai khoảng ngoài và giảm ở khoảng giữa; dùng đạo hàm vì hàm khả vi.
+**Lời giải:** \(D=\mathbb R\); \(f'=3(x^2-2)\), bằng 0 ở \(\pm\sqrt2\), dương khi \(|x|>\sqrt2\), âm khi \(|x|<\sqrt2\). Hàm đồng biến trên \((-\infty;-\sqrt2)\) và \((\sqrt2;+\infty)\), nghịch biến trên \((-\sqrt2;\sqrt2)\). Để lập bảng dấu, đặt hai nghiệm theo thứ tự tăng dần; vì \(3(x^2-2)\) là tam thức có hệ số đầu dương, dấu lần lượt là dương, âm, dương.
 
 **Vận dụng** \(f(x)=x^3\) có tăng nghiêm ngặt trên \(\mathbb R\) không? Vì sao \(f'(0)=0\) không bác bỏ điều đó?
 
@@ -264,7 +264,7 @@ Nếu em áp dụng định lí GTLN/GTNN cho miền hở hoặc không liên t�
 
 <!-- LESSON_ID: TOP10-M09; OUTCOME_ID: TOP10-O09 -->
 
-Muốn tìm giá trị ấy, phải so điểm tới hạn và đầu đoạn. Vì sao chỉ giải \(f'=0\) có thể bỏ sót GTLN tại đầu mút? Ta bắt đầu từ hàm liên tục trên \([a;b]\), khả vi từng khoảng, giá trị ứng viên. Trên \([a;b]\) liên tục, GTLN/GTNN đạt ở đầu mút hoặc điểm nội miền \(f'=0\) hay không khả vi. Phương pháp: xác định miền, liệt kê đủ ứng viên, tính chính xác f tại mỗi điểm, so sánh cùng đơn vị. Điểm \(f'=0\) ngoài đoạn phải loại.
+Muốn tìm giá trị ấy, phải so điểm tới hạn và đầu đoạn. Vì sao chỉ giải \(f'=0\) có thể bỏ sót GTLN tại đầu mút? Ta bắt đầu từ hàm liên tục trên \([a;b]\), khả vi từng khoảng, giá trị ứng viên. Với hàm liên tục trên đoạn \([a;b]\), nếu điểm đạt GTLN hoặc GTNN nằm trong nội miền và tại đó hàm khả vi thì đạo hàm bằng 0 (định lý Fermat); nếu không khả vi, điểm ấy vẫn có thể là nơi đạt. Khi số điểm nội miền có đạo hàm bằng 0 hoặc không tồn tại là hữu hạn, chỉ cần so các giá trị tại chúng và hai đầu đoạn. Nếu danh sách không hữu hạn, phải dùng thêm lập luận về dấu, bảng biến thiên hoặc bất đẳng thức; không giả định luôn có một danh sách hữu hạn. Phương pháp: xác định miền, liệt kê đủ ứng viên, tính chính xác f tại mỗi điểm, so sánh cùng đơn vị. Điểm \(f'=0\) ngoài đoạn phải loại.
 
 Chẳng hạn, \(f=x^3-3x\) trên \([0;2]\), \(f'=3x^2-3\)⇒ x=1 trong đoạn. \(f(0)=0,\ f(1)=-2,\ f(2)=2\)⇒GTNN−2 tại1,GTLN2 tại2. Chọn kiểm hai đầu vì cực đại không nhất thiết nội miền.
 
@@ -460,7 +460,7 @@ Một đường tiệm cận xiên được nhận qua phần dư tiến 0. Nế
 
 > **ĐỊNH NGHĨA — Tiệm cận xiên.** Đường thẳng \(y=ax+b\) với \(a\ne0\) là tiệm cận xiên của đồ thị về một phía vô cực nếu \(\lim_{x\to+\infty}[f(x)-(ax+b)]=0\) **hoặc** giới hạn tương ứng khi \(x\to-\infty\) bằng 0. Có thể chỉ đúng về một phía; đồ thị vẫn có thể cắt tiệm cận ở điểm hữu hạn.
 
- Có thể tìm \(a=\lim_{x\to+\infty}\frac{f(x)}x\) và \(b=\lim_{x\to+\infty}[f(x)-ax]\) nếu cả hai giới hạn hữu hạn và \(a\ne0\); xét tương tự ở \(-\infty\). Phải lấy hai giới hạn về cùng một phía vô cực, hoặc chia đa thức trực tiếp. Không phải mọi phép chia ra ax+b đều là tiệm cận nếu phần dư không về0.
+ Có thể tìm \(a=\lim_{x\to+\infty}\frac{f(x)}x\) và \(b=\lim_{x\to+\infty}[f(x)-ax]\) nếu cả hai giới hạn hữu hạn và \(a\ne0\); xét tương tự ở \(-\infty\). Phải lấy hai giới hạn về cùng một phía vô cực, hoặc chia đa thức trực tiếp. Không phải mọi phép chia ra \(ax+b\) đều là tiệm cận nếu phần dư không về 0. Về hình học, khoảng cách từ điểm \(M(x;f(x))\) đến đường \(y=ax+b\) bằng \(\frac{|f(x)-(ax+b)|}{\sqrt{a^2+1}}\); do mẫu là hằng số dương, khoảng cách tiến về 0 đúng khi hiệu ở tử tiến về 0. Nếu \(a=0\), ta đang xét tiệm cận ngang thay vì xiên.
 
 Chẳng hạn, \(f=\frac{x^2+1}{x-1}=x+1+\frac2{x-1}\); vì \(\frac2{x-1}\to0\) khi \(x\to\pm\infty\) nên y=x+1 là TC xiên. Chọn chia vì mẫu bậc1 và tử bậc2.
 
@@ -586,7 +586,7 @@ Giờ đây, miền xác định cho biết nơi được phép vẽ, đạo hà
 
 <!-- LESSON_ID: TOP10-M19; OUTCOME_ID: TOP10-O19 -->
 
-> **PHƯƠNG PHÁP — Các bước khảo sát.** Muốn phác đồ thị đúng thì thứ tự nào ngăn bỏ sót nhánh? Ta bắt đầu từ miền, đạo hàm, giới hạn, điểm đặc biệt. Quy trình: (1) tìm D; (2) giải \(f'=0\) và xét dấu trên từng nhánh D; (3) tính cực trị, giới hạn tại biên/±∞, TCD/TCN/TC xiên nếu có; (4) giao trục/điểm hỗ trợ, đối xứng phù hợp; (5) lập bảng biến thiên và vẽ từng nhánh đúng mối liên hệ. Không nối hai nhánh qua điểm bị loại.
+> **PHƯƠNG PHÁP — Các bước khảo sát.** Muốn phác đồ thị đúng thì thứ tự nào ngăn bỏ sót nhánh? Ta bắt đầu từ miền, đạo hàm, giới hạn, điểm đặc biệt. Quy trình: (1) tìm D; (2) tìm các điểm nội miền mà \(f'=0\) hoặc đạo hàm không tồn tại, rồi xét dấu trên từng nhánh của miền xác định; (3) tính cực trị, giới hạn tại biên/±∞, TCD/TCN/TC xiên nếu có; (4) lập bảng biến thiên, ghi giá trị tại các mốc và giới hạn ở hai đầu mỗi nhánh; (5) tìm giao trục, điểm hỗ trợ, tâm/trục đối xứng phù hợp và phác đồ thị dựa trên bảng biến thiên. Không nối hai nhánh qua điểm bị loại.
 
 Chẳng hạn, \(f=\frac1{x-1}\): \(D=\mathbb R\setminus\{1\}\), \(f'=-\frac1{(x-1)^2}<0\), TCD x=1, TCN y=0; hai nhánh đều giảm nhưng không nối qua x=1. Chọn kiểm miền trước dấu.
 
@@ -594,7 +594,7 @@ Chẳng hạn, \(f=\frac1{x-1}\): \(D=\mathbb R\setminus\{1\}\), \(f'=-\frac1{(x
 
 **Đề bài:** Dựng các dữ kiện khảo sát \(g=\frac{x+1}{x-2}\).
 
-**Lời giải:** \(D=\mathbb R\setminus\{2\}\), \(g'=-\frac3{(x-2)^2}<0\): giảm mỗi nhánh; TCD x=2, TCN y=1. Giao Ox \((-1;0)\), Oy \((0;-\frac12)\). Vẽ hai nhánh không nối qua x=2.
+**Lời giải:** \(D=\mathbb R\setminus\{2\}\), \(g'=-\frac3{(x-2)^2}<0\): giảm mỗi nhánh; TCD x=2, TCN y=1. Giao Ox \((-1;0)\), Oy \((0;-\frac12)\). Vì \(g(x)=1+\frac3{x-2}\), bên trái \(x=2\) đồ thị tiến xuống \(-\infty\), bên phải tiến lên \(+\infty\); tại hai phía vô cực đồ thị tiến gần \(y=1\). Tâm đối xứng là \(I(2;1)\). Ghi các giới hạn ấy vào hai nhánh giảm trong bảng biến thiên, rồi vẽ qua hai giao trục đã tìm; không nối qua \(x=2\).
 
 **Vận dụng** Khảo sát \(f(x)=x^2\) trên \(\mathbb R\): tìm miền, đạo hàm, khoảng tăng giảm, cực trị và mô tả hình dạng đồ thị theo đúng thứ tự.
 
@@ -622,7 +622,7 @@ Chẳng hạn, \(f=x^3-3x\): \(f'=3(x-1)(x+1)\), cực đại ở −1 giá tr�
 
 Đồ thị bậc ba còn có **tâm đối xứng** ngay cả khi không có cực trị. Với \(y=ax^3+bx^2+cx+d\), \(a\ne0\), ta tính \(y''=6ax+2b\) rồi giải \(y''=0\), được \(x_0=-\dfrac{b}{3a}\). Tung độ tâm là \(f(x_0)\). Ta không nhầm vị trí này với nghiệm \(f'(x)=0\), và đồ thị của đa thức bậc ba không có tiệm cận.
 
-> **TÍNH CHẤT — Tâm đối xứng đồ thị bậc ba.** Tâm là \(I\left(-\dfrac{b}{3a},\,f\left(-\dfrac{b}{3a}\right)\right)\). Muốn kiểm tra, lấy hai hoành độ \(x_0-h\) và \(x_0+h\): hai tung độ tương ứng có tổng bằng \(2f(x_0)\).
+> **TÍNH CHẤT — Tâm đối xứng đồ thị bậc ba.** Tâm là \(I\left(-\dfrac{b}{3a};\,f\left(-\dfrac{b}{3a}\right)\right)\). Muốn kiểm tra, lấy hai hoành độ \(x_0-h\) và \(x_0+h\): hai tung độ tương ứng có tổng bằng \(2f(x_0)\).
 
 **Ví dụ minh họa.** Với \(f(x)=x^3+3x^2\), ta có \(f''(x)=6x+6=0\) khi \(x=-1\); \(f(-1)=2\), nên tâm là \(I(-1;2)\). Thực vậy, \(f(-1-h)+f(-1+h)=4=2f(-1)\) với mọi số thực \(h\). Cách kiểm bằng phép thế giúp xác minh tâm chứ không chỉ dựa vào độ giống hình vẽ.
 
@@ -726,9 +726,9 @@ Nếu em giải tử bằng 0 nhưng quên mẫu cũng bằng 0 tại nghiệm �
 
 Xét ví dụ: \(f=\frac{2x+1}{x-1}=2+\frac3{x-1}\) nên tâm I(1,2); TCD x=1, TCN y=2. Chọn phép tách vì chứng minh được đối xứng chứ không chỉ đo bằng mắt.
 
-Với dạng bậc hai trên bậc nhất \(y=mx+n+\frac{k}{px+q}\) (\(m,k,p\ne0\)), **tâm** vẫn là giao hai tiệm cận. Hai **trục đối xứng** là các đường phân giác góc tạo bởi tiệm cận đứng và tiệm cận xiên. Vì cặp đường ấy không nhất thiết vuông góc, không được máy móc dùng \(y-b=\pm(x-a)\) — công thức này chỉ áp dụng cho dạng có tiệm cận ngang và đứng vuông góc. Trong ví dụ mục 4.3, tâm \(I(1;0)\) nằm tại giao \(x=1\) và \(y=x-1\).
+Với dạng bậc hai trên bậc nhất \(y=mx+n+\frac{k}{px+q}\) (\(m,k,p\ne0\)), **tâm** vẫn là giao hai tiệm cận. Hai **trục đối xứng** là các đường phân giác góc tạo bởi tiệm cận đứng và tiệm cận xiên. Vì cặp đường ấy không nhất thiết vuông góc, không được máy móc dùng \(y-b=\pm(x-a)\) — công thức này chỉ áp dụng cho dạng có tiệm cận ngang và đứng vuông góc. Trong ví dụ mục 4.3, tâm \(I(1;0)\) nằm tại giao \(x=1\) và \(y=x-1\). Đặt \(X=x-1,\ Y=y\); phương trình trở thành \(X(Y-X)=1\). Phép đối xứng qua gốc đổi \((X;Y)\) thành \((-X;-Y)\) nên không đổi tích này, chứng minh tính đối xứng tâm. Để tìm hai trục, dùng điều kiện khoảng cách đến hai tiệm cận bằng nhau: \(|X|=\frac{|Y-X|}{\sqrt2}\). Suy ra \(Y=(1+\sqrt2)X\) hoặc \(Y=(1-\sqrt2)X\). Trong tọa độ gốc, hai trục là \(y=(1+\sqrt2)(x-1)\) và \(y=(1-\sqrt2)(x-1)\). Hai đường này mới là các phân giác của cặp tiệm cận xiên–đứng.
 
-Trong dạng phân thức này, hai tiệm cận không chỉ xác định **tâm** của đồ thị mà còn tạo thành hai **trục đối xứng**. Đặt tọa độ mới \(X=x-a\), \(Y=y-b\), khi đó \(XY=k\). Nếu phản xạ điểm \((X;Y)\) qua đường \(Y=X\), ta được \((Y;X)\); nếu phản xạ qua \(Y=-X\), ta được \((-Y;-X)\). Cả hai ảnh đều có tích tọa độ bằng \(k\), nên vẫn thuộc đồ thị. Đó là lý do hai đường phân giác của cặp tiệm cận vuông góc là hai trục đối xứng, không phải chính các đường tiệm cận.
+Quay lại **dạng bậc nhất trên bậc nhất có tiệm cận ngang và đứng** \(y=b+\frac{k}{x-a}\), hai đường phân giác của tiệm cận là hai trục đối xứng. Đặt tọa độ mới \(X=x-a\), \(Y=y-b\), khi đó \(XY=k\). Nếu phản xạ điểm \((X;Y)\) qua đường \(Y=X\), ta được \((Y;X)\); nếu phản xạ qua \(Y=-X\), ta được \((-Y;-X)\). Cả hai ảnh đều có tích tọa độ bằng \(k\), nên vẫn thuộc đồ thị. Đó là lý do hai đường phân giác của cặp tiệm cận vuông góc là hai trục đối xứng, không phải chính các đường tiệm cận.
 
 > **TÍNH CHẤT — Hai trục đối xứng của đồ thị phân thức bậc nhất trên bậc nhất.** Với \(f(x)=b+\dfrac{k}{x-a}\), \(a,b\in\mathbb R\), \(k\ne0\), miền \(x\ne a\), đồ thị có tâm \(I(a;b)\), hai tiệm cận \(x=a\), \(y=b\), và **hai trục đối xứng** là \(y-b=x-a\) cùng \(y-b=-(x-a)\). Với dạng \(\dfrac{mx+n}{px+q}\), chỉ dùng kết luận trên khi \(p\ne0\) và \(mq-pn\ne0\), rồi viết về dạng \(b+\frac k{x-a}\). Không kết luận một đồ thị bậc ba bất kỳ cũng có hai trục đối xứng.
 
@@ -760,7 +760,7 @@ Nếu em đặt tâm đối xứng tại giao trục thay vì giao hai tiệm c�
 
 <!-- LESSON_ID: TOP10-M24; OUTCOME_ID: TOP10-O24 -->
 
-> **PHƯƠNG PHÁP — Bảng biến thiên.** Bảng biến thiên cho ta đọc cực trị và chiều biến thiên. Một bảng mũi tên lên/xuống có thể cho biết GTLN, cực trị và khoảng tăng không? Ta bắt đầu từ ý nghĩa mũi tên, điểm tách miền, giới hạn ở biên. Bảng biến thiên chứa điểm phân chia, dấu f', giá trị tại điểm và giới hạn. Mũi tên giảm→tăng tại c∈D gợi cực tiểu, nhưng muốn GTNN toàn miền phải so mọi nhánh và biên. Điểm đứng đôi biểu diễn loại khỏi miền không phải nơi đạt cực trị.
+> **PHƯƠNG PHÁP — Bảng biến thiên.** Bảng biến thiên cho ta đọc cực trị và chiều biến thiên. Một bảng mũi tên lên/xuống có thể cho biết GTLN, cực trị và khoảng tăng không? Ta bắt đầu từ ý nghĩa mũi tên, điểm tách miền, giới hạn ở biên. Bảng biến thiên chứa điểm phân chia, dấu f', giá trị tại điểm và giới hạn. Mũi tên giảm→tăng tại c∈D gợi cực tiểu, nhưng muốn GTNN toàn miền phải so mọi nhánh và biên. Vạch đôi ở một mốc biểu diễn điểm bị loại khỏi miền, không phải nơi đạt cực trị. Nếu đề không cho biết giới hạn ở vô cực hoặc tại biên, chỉ ghi các mũi tên biến thiên và giá trị đã biết; không tự điền giới hạn chưa chứng minh.
 
 Chẳng hạn, nếu f' âm trên \((-\infty;1)\), dương trên \((1;\infty)\) và f(1)=−3, f liên tục trong ℝ, thì f có cực tiểu ở \((1;-3)\). Nếu f' không có trên nhánh bị loại, không gắn nhãn cực tiểu ở đó.
 
@@ -971,6 +971,14 @@ Chẳng hạn, \(A(x)=x(12-x)\) trên \(0<x<12\), \(A'=12-2x\); đổi dương�
 
 **Lời giải:** \(f'=6-2x=0\) tại x=3 trong miền; f(1)=0, f(3)=4, f(5)=0. GTLN4 ở3, GTNN0 ở hai đầu; so biên thay vì chỉ giải \(f'=0\).
 
+Một bài toán **tìm giá trị nhỏ nhất trên miền mở** khác: làm hộp kín hình trụ có thể tích cố định \(V>0\). Gọi \(r>0\) là bán kính đáy, \(h>0\) là chiều cao. Từ \(V=\pi r^2h\) suy ra \(h=\frac V{\pi r^2}\); diện tích toàn phần cần giảm là \(S(r)=2\pi r^2+\frac{2V}{r}\). Đạo hàm
+
+\[
+S'(r)=4\pi r-\frac{2V}{r^2}=\frac{4\pi r^3-2V}{r^2}.
+\]
+
+Nghiệm dương duy nhất là \(r=\sqrt[3]{\frac V{2\pi}}\). Trước nghiệm này đạo hàm âm, sau nghiệm dương; diện tích giảm rồi tăng trên toàn miền \(r>0\). Vậy GTNN đạt ở nghiệm ấy, và \(h=\frac V{\pi r^2}=2r\). Không cần lấy \(r=0\), vì đó không phải kích thước hợp lệ. Kết luận chỉ áp dụng với hộp kín và mô hình vật liệu tính theo diện tích toàn phần.
+
 **Vận dụng** \(A=x(8-x)\), \(0<x<8\): x tối ưu và diện tích?
 
 <details class="slm-topic-first-try" markdown="1">
@@ -1130,7 +1138,7 @@ Chẳng hạn, Giả sử R(q)=12q và \(C(q)=q^2+2q+5\) (nghìn đồng), \(q\i
 
 **Đề bài:** R=15q, \(C=q^2+3q+20\) (nghìn đồng), \(q\in[0;10]\): tối ưu lợi nhuận.
 
-**Lời giải:** \(P=R-C=-q^2+12q-20\), \(P'=12-2q=0\) tại q=6. So P(0)=−20,P(6)=16,P(10)=0; lợi nhuận tối đa16 nghìn đồng ở q=6 theo mô hình.
+**Lời giải:** \(P=R-C=-q^2+12q-20\), \(P'=12-2q=0\) tại q=6. Trên đoạn thực \([0;10]\), đạo hàm dương trước \(q=6\) và âm sau đó. So \(P(0)=-20\), \(P(6)=16\), \(P(10)=0\); lợi nhuận tối đa 16 nghìn đồng tại \(q=6\) theo mô hình. Nếu sản lượng phải nguyên, 6 vẫn hợp lệ. Hai nghiệm của phương trình \(P(q)=0\) là \(q=2\) và \(q=10\); theo dấu tam thức, lợi nhuận dương khi \(2<q<10\), bằng 0 tại hai mức hòa vốn. Đừng nhầm điểm hòa vốn với điểm lợi nhuận lớn nhất.
 
 **Vận dụng** Với R=10q,\(C=q^2+2q+1\), \(q\in[0;6]\), q tối ưu lợi nhuận?
 
