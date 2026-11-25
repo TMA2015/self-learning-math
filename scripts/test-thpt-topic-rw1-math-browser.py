@@ -30,8 +30,10 @@ FILES={
 RW1_SIZES={"01":11,"02":16,"03":12,"04":18,"05":17,"06":16,"07":18,"08":18}
 RW2_SIZES={"09":32,"10":36,"11":22,"12":12,"13":16,"14":23,"15":22,"16":21}
 RW2="--rw2" in sys.argv
-SIZES=RW2_SIZES if RW2 else RW1_SIZES
-WAVE="R-W2" if RW2 else "R-W1"
+ALL22_TAIL="--tail" in sys.argv
+TAIL_SIZES={"17":12,"18":40,"19":14,"20":9,"21":8,"22":13}
+SIZES=TAIL_SIZES if ALL22_TAIL else RW2_SIZES if RW2 else RW1_SIZES
+WAVE="SHARED-17-22" if ALL22_TAIL else "R-W2" if RW2 else "R-W1"
 CURRENT_BASE="ad3545985c7a1e369799e66fa770678860827be4"
 CURRENT_FILES={
     "docs/assets/javascripts/math-details-v1.js",
@@ -45,6 +47,8 @@ CURRENT_FILES={
     "scripts/test-thpt-topic-w3-golden-browser.py",
     "scripts/test-thpt-topic-w4-golden-browser.py",
     "scripts/test-thpt-topic-knowledge-tabs-v3.cjs",
+    "docs/assets/javascripts/thpt-topic-w5-golden-v1.js",
+    "scripts/test-thpt-topic-w5-golden-browser.py",
     ".github/workflows/deploy.yml",
     ".github/workflows/thpt-deploy-scope-safety-qa.yml",
 }
@@ -55,7 +59,7 @@ def current_scope():
     old=subprocess.check_output(["git","show",CURRENT_BASE+":"+path],cwd=ROOT,text=True)
     new=(ROOT/path).read_text(encoding="utf-8")
     assert old.split("/* OWNER #1055 R-W1",1)[0]==new.split("/* OWNER #1055, X-G.5",1)[0], "SGK/THCS shared code changed"
-    for wave in (2,3,4):
+    for wave in (2,3,4,5):
         adapter=f"docs/assets/javascripts/thpt-topic-w{wave}-golden-v1.js"
         original=subprocess.check_output(["git","show",CURRENT_BASE+":"+adapter],cwd=ROOT,text=True)
         candidate=(ROOT/adapter).read_text(encoding="utf-8")
@@ -63,7 +67,7 @@ def current_scope():
     for f in CURRENT_FILES:
         if f.endswith((".js",".cjs")):
             subprocess.run(["node","--check",f],cwd=ROOT,check=True)
-    print("PASS exact thirteen paths, canonical/source/assessment/receipt/SVG unchanged, SGK/THCS prefix and Practice/SelfCheck implementation identical",flush=True)
+    print("PASS exact fifteen paths, canonical/source/assessment/receipt/SVG unchanged, SGK/THCS prefix and Practice/SelfCheck implementation identical",flush=True)
 if "--shared-candidate-scope" in sys.argv:
     current_scope()
     sys.exit(0)
@@ -112,7 +116,7 @@ SOURCE=r"""async () => {
     if(w.currentNode.parentElement?.closest("script,style,code,pre,svg"))continue;
     for(const m of w.currentNode.nodeValue.matchAll(rx)){
      if(m[3]!==undefined&&!(/\\[A-Za-z]+/.test(m[3])||(/=/.test(m[3])&&/[\^_]/.test(m[3]))))continue;
-     if(m[4]!==undefined&&!(/\\[A-Za-z]+/.test(m[4])&&/=/.test(m[4])))continue;
+     if(m[4]!==undefined&&!((/\\[A-Za-z]+/.test(m[4])&&(/=/.test(m[4])||/\\(?:approx|leq?|geq?|neq?|equiv)\b/.test(m[4])))||(/=/.test(m[4])&&/[\^_]/.test(m[4])&&/^[A-Za-z0-9()+\-−.,\s^_{}=]+$/.test(m[4]))))continue;
      let tex=m[1]??m[2]??m[3]??m[4]??m[0].slice(1,-1);
      if(m[0].startsWith("[A\\setminus"))tex="A\\setminus B=\\{x\\in A:x\\notin B\\}.";
      values.push(canon(tex));
