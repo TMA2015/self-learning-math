@@ -99,7 +99,7 @@ B={2,4,6}, A∩B={6}; P(A|B)=(1/6)/(3/6)=1/3. Mẫu số P(B)=1/2>0.
 
 **Kiểm lỗi**
 
-Nếu viết 1/2, em đã lấy P(B) thay cho xác suất giao trong B. Nếu chia cho P(A), em đã đổi chiều thành P(B|A). Ôn lại mục Kiến thức 1.2 (công thức xác suất có điều kiện) và Bài luyện 2 tại Luyện tập 1.2.
+Nếu viết \(\dfrac12\), hãy kiểm tra hai khả năng: em đã lấy \(P(B)=\dfrac12\) làm đáp số, hoặc đã tính ngược \(P(B\mid A)=\dfrac12\). Cả hai đều không trả lời đề bài. Phải giữ B là nhóm đã biết: trong ba mặt chẵn chỉ có mặt 6 chia hết cho 3, nên \(P(A\mid B)=\dfrac13\). Ôn lại mục Kiến thức 1.2 (công thức xác suất có điều kiện) và Bài luyện 2 tại Luyện tập 1.2.
 
 </details>
 
@@ -115,6 +115,12 @@ Muốn tính xác suất hai sự việc \(A\) rồi \(B\) cùng xảy ra, trư�
 >
 > \[P(A\cap B)=P(A)P(B\mid A)\quad\text{khi }P(A)>0.\] Tương tự \(P(A\cap B)=P(B)P(A\mid B)\) nếu \(P(B)>0\). Khi rút không hoàn lại, phải cập nhật xác suất nhánh sau.
 
+**Ví dụ**
+
+**Đề bài:** Một túi có 3 thẻ xanh lục và 4 thẻ cam, tất cả các thẻ phân biệt. Rút đều ngẫu nhiên hai thẻ liên tiếp không hoàn lại. Tính xác suất cả hai thẻ đều xanh lục.
+
+**Lời giải:** Xác suất thẻ đầu xanh lục là \(3/7\). Sau khi đã rút xanh lục, túi còn 2 thẻ xanh lục trong tổng 6 thẻ, nên xác suất xanh lục ở lượt hai **khi lượt đầu xanh lục** là \(2/6\). Theo quy tắc nhân có điều kiện, xác suất cả hai xanh lục bằng \((3/7)(2/6)=1/7\). Không được dùng \((3/7)^2\) vì số thẻ đã thay đổi sau lượt đầu.
+
 Nếu \(P(A)=0\), vì \(A\cap B\subseteq A\) nên chắc chắn \(P(A\cap B)=0\). Khi ấy **không** viết \(P(B\mid A)\) theo công thức thông thường vì mẫu \(P(A)\) bằng \(0\). Tương tự nếu \(P(B)=0\), giao có xác suất \(0\) nhưng không dùng \(P(A\mid B)\). Vì vậy, quy tắc nhân vẫn xử lý được trường hợp xác suất bằng \(0\), chỉ cần tách ra trước khi chia.
 
 **Nhân xác suất theo ba bước phụ thuộc.** Với \(P(A)>0\), \(P(A\cap B)>0\), từ quy tắc nhân hai lần:
@@ -124,12 +130,6 @@ P(A\cap B\cap C)=P(A)P(B\mid A)P(C\mid A\cap B).
 Tại bước ba, điều kiện gồm **cả hai bước trước**; không được nhân \(P(C)\) nếu quá trình không độc lập. Nhánh có xác suất 0 cho giao bằng 0 nhưng không được lập phân số điều kiện mẫu 0.
 
 **Ví dụ bổ sung.** Trong túi có 4 bi đỏ và 3 bi xanh phân biệt, rút liên tiếp ba bi **không hoàn lại**. Xác suất tất cả đỏ là \(\frac47\cdot\frac36\cdot\frac25=\frac4{35}\). Kiểm bằng tổ hợp: \(\binom43/\binom73=4/35\). Hai cách khớp vì khi rút theo thứ tự ta cập nhật số viên còn lại, còn khi đếm nhóm không thứ tự ta dùng tổ hợp ở cả tử và mẫu. Lấy \((4/7)^3\) là sai vì đã mặc định có hoàn lại.
-
-**Ví dụ**
-
-**Đề bài:** Một túi có 3 thẻ xanh lục và 4 thẻ cam, tất cả các thẻ phân biệt. Rút đều ngẫu nhiên hai thẻ liên tiếp không hoàn lại. Tính xác suất cả hai thẻ đều xanh lục.
-
-**Lời giải:** Xác suất thẻ đầu xanh lục là \(3/7\). Sau khi đã rút xanh lục, túi còn 2 thẻ xanh lục trong tổng 6 thẻ, nên xác suất xanh lục ở lượt hai **khi lượt đầu xanh lục** là \(2/6\). Theo quy tắc nhân có điều kiện, xác suất cả hai xanh lục bằng \((3/7)(2/6)=1/7\). Không được dùng \((3/7)^2\) vì số thẻ đã thay đổi sau lượt đầu.
 
 **Kiến thức cần ghi nhớ**
 
@@ -201,14 +201,6 @@ Gọi \(L\) là biến cố “sản phẩm lỗi”. Trong trường hợp hai 
 >
 > Nếu \(X\cap Y=\varnothing\), \(X\cup Y=\Omega\) và \(P(X),P(Y)>0\) thì \[P(L)=P(X)P(L\mid X)+P(Y)P(L\mid Y).\] Đây là tổng hai **đường đi rời nhau**, không phải tổng trần hai xác suất điều kiện.
 
-**Sơ đồ cây có thể có nhiều hơn hai nguồn (mở rộng cùng nguyên lí).** Nếu \(B_1,\ldots,B_m\) đôi một xung khắc, phủ toàn bộ \(\Omega\) và \(P(B_i)>0\), thì các biến cố \(L\cap B_i\) chia \(L\) thành những phần **không trùng nhau**, do đó:
-\[
-P(L)=\sum_{i=1}^{m}P(B_i)P(L\mid B_i).
-\]
-Với bài toán hai nguồn trong SGK, chỉ cần \(m=2\). Không cộng trần các xác suất điều kiện hoặc bỏ sót một nguồn.
-
-**Ví dụ bổ sung.** Ba nguồn chiếm lần lượt \(20\%,30\%,50\%\) sản lượng, có tỷ lệ lỗi lần lượt \(1\%,2\%,4\%\). Một sản phẩm được chọn ngẫu nhiên đều từ toàn bộ lô, mỗi sản phẩm thuộc đúng một nguồn. Xác suất lỗi bằng \(0{,}2\cdot0{,}01+0{,}3\cdot0{,}02+0{,}5\cdot0{,}04=0{,}028=2{,}8\%\). Cộng \(1\%+2\%+4\%\) sai vì ba tỷ lệ có **mẫu nguồn khác nhau**.
-
 **Ví dụ**
 
 **Đề bài:** Nguồn X đóng góp 30% sản phẩm và có tỉ lệ lỗi 2%; nguồn Y đóng góp 70% sản phẩm và có tỉ lệ lỗi 4%. Chọn ngẫu nhiên đều một sản phẩm trong toàn bộ sản phẩm. Tính xác suất sản phẩm bị lỗi.
@@ -218,6 +210,14 @@ Với bài toán hai nguồn trong SGK, chỉ cần \(m=2\). Không cộng trầ
 ![Sơ đồ cây hai nguồn: X chiếm 30% có 2% hàng lỗi, Y chiếm 70% có 4% hàng lỗi](../../../../docs/assets/images/thpt/FIG-TOP21_TOTAL_PROBABILITY_30_70_TREE_WHITE_R01.svg)
 
 **Hướng dẫn đọc hình:** Từ điểm xuất phát, chọn nhánh X hoặc Y theo tỉ trọng 30% và 70%. Tại mỗi nguồn, tiếp tục theo nhánh lỗi hoặc tốt **trong nguồn ấy**. Nhân các xác suất trên một đường để tìm xác suất ở lá; cộng hai lá lỗi được 0,034. Tổng bốn lá bằng 1.
+
+**Sơ đồ cây có thể có nhiều hơn hai nguồn (mở rộng cùng nguyên lí).** Nếu \(B_1,\ldots,B_m\) đôi một xung khắc, phủ toàn bộ \(\Omega\) và \(P(B_i)>0\), thì các biến cố \(L\cap B_i\) chia \(L\) thành những phần **không trùng nhau**, do đó:
+\[
+P(L)=\sum_{i=1}^{m}P(B_i)P(L\mid B_i).
+\]
+Với bài toán hai nguồn trong SGK, chỉ cần \(m=2\). Không cộng trần các xác suất điều kiện hoặc bỏ sót một nguồn.
+
+**Ví dụ bổ sung.** Ba nguồn chiếm lần lượt \(20\%,30\%,50\%\) sản lượng, có tỷ lệ lỗi lần lượt \(1\%,2\%,4\%\). Một sản phẩm được chọn ngẫu nhiên đều từ toàn bộ lô, mỗi sản phẩm thuộc đúng một nguồn. Xác suất lỗi bằng \(0{,}2\cdot0{,}01+0{,}3\cdot0{,}02+0{,}5\cdot0{,}04=0{,}028=2{,}8\%\). Cộng \(1\%+2\%+4\%\) sai vì ba tỷ lệ có **mẫu nguồn khác nhau**.
 
 **Kiến thức cần ghi nhớ**
 
@@ -250,17 +250,17 @@ Muốn trả lời, trước hết ta tính xác suất **mọi cách** tạo ra
 >
 > \[P(Y\mid L)=\frac{P(Y)P(L\mid Y)}{P(L)},\qquad P(L)>0.\] Với hai nhánh X,Y phân hoạch, mẫu số là công thức toàn phần của L. Xác suất của nguồn **sau khi thấy L** không tự bằng xác suất thấy L **khi biết nguồn**.
 
-**Kiểm kết quả Bayes bằng tổng hậu nghiệm.** Với ba nguồn ở mục 2.1, xác suất “nguồn 3 và lỗi” bằng \(0{,}5\cdot0{,}04=0{,}02\); tổng lỗi bằng \(0{,}028>0\). Do đó:
-\[
-P(B_3\mid L)=\frac{0{,}02}{0{,}028}=\frac57\approx71{,}43\%.
-\]
-Nguồn 3 tạo ra **50% sản phẩm** nhưng chiếm hơn **71% sản phẩm lỗi** trong mô hình này do tỷ lệ lỗi cao hơn. Hai nguồn còn lại có hậu nghiệm \(0{,}002/0{,}028=1/14\) và \(0{,}006/0{,}028=3/14\). Tổng \(1/14+3/14+5/7=1\), là phép kiểm toàn bộ nguồn đã phủ hết mẫu sau khi biết lỗi. Không nhầm xác suất **nguồn khi thấy lỗi** với tỷ lệ lỗi **khi biết nguồn**.
-
 **Ví dụ**
 
 **Đề bài:** Nguồn A cung cấp 20% sản phẩm và cho dấu hiệu H ở 80% sản phẩm của mình; nguồn B cung cấp 80% còn lại và cho dấu hiệu H ở 10% sản phẩm của mình. Chọn ngẫu nhiên một sản phẩm. Biết sản phẩm có dấu hiệu H, tính xác suất nó đến từ A.
 
 **Lời giải:** Gọi \(H\) là biến cố “có dấu hiệu”. Xác suất toàn phần là \(P(H)=0{,}2\cdot0{,}8+0{,}8\cdot0{,}1=0{,}16+0{,}08=0{,}24\). Riêng đường “A và H” có xác suất \(0{,}2\cdot0{,}8=0{,}16\). Do đó \(P(A\mid H)=0{,}16/0{,}24=2/3\). Kết quả khác 80% vì 80% trả lời câu hỏi ngược chiều: “có H khi biết nguồn A”.
+
+**Kiểm kết quả Bayes bằng tổng hậu nghiệm.** Với ba nguồn ở mục 2.1, xác suất “nguồn 3 và lỗi” bằng \(0{,}5\cdot0{,}04=0{,}02\); tổng lỗi bằng \(0{,}028>0\). Do đó:
+\[
+P(B_3\mid L)=\frac{0{,}02}{0{,}028}=\frac57\approx71{,}43\%.
+\]
+Nguồn 3 tạo ra **50% sản phẩm** nhưng chiếm hơn **71% sản phẩm lỗi** trong mô hình này do tỷ lệ lỗi cao hơn. Hai nguồn còn lại có hậu nghiệm \(0{,}002/0{,}028=1/14\) và \(0{,}006/0{,}028=3/14\). Tổng \(1/14+3/14+5/7=1\), là phép kiểm toàn bộ nguồn đã phủ hết mẫu sau khi biết lỗi. Không nhầm xác suất **nguồn khi thấy lỗi** với tỷ lệ lỗi **khi biết nguồn**.
 
 **Kiến thức cần ghi nhớ**
 
@@ -299,7 +299,7 @@ Một đường đi từ gốc đến lá tương ứng với một trường h�
 
 **Đề bài:** Một hành khách chọn tuyến R với xác suất \(3/5\), chọn tuyến S với xác suất \(2/5\). Nếu chọn R, xác suất đến đúng giờ là \(4/5\); nếu chọn S, xác suất đến đúng giờ là \(1/2\). Hãy tìm xác suất đến đúng giờ và kiểm tra tổng bốn lá trên cây.
 
-**Lời giải:** Tại tuyến R, xác suất đến đúng là \((3/5)(4/5)=12/25\), muộn là \((3/5)(1/5)=3/25\). Tại tuyến S, xác suất đúng là \((2/5)(1/2)=1/5\), muộn cũng là \(1/5\). Bốn lá cộng thành \(12/25+3/25+1/5+1/5=1\), nên cây đã bao quát mọi trường hợp. Hai lá đúng giờ rời nhau, vì vậy \(P(\text{đúng giờ})=12/25+1/5=17/25\).
+**Lời giải:** Gọi \(D\) là biến cố đến đúng giờ. Tại nút R, hai xác suất nhánh có điều kiện là \(P(D\mid R)=\dfrac45\) và \(P(\bar D\mid R)=\dfrac15\). Nhân với xác suất chọn R để được hai xác suất lá: \(P(R\cap D)=\dfrac35\cdot\dfrac45=\dfrac{12}{25}\), \(P(R\cap\bar D)=\dfrac35\cdot\dfrac15=\dfrac3{25}\). Tại nút S, mỗi xác suất nhánh có điều kiện bằng \(\dfrac12\), nên hai xác suất lá đều bằng \(\dfrac25\cdot\dfrac12=\dfrac15\). Bốn lá cộng thành \(\dfrac{12}{25}+\dfrac3{25}+\dfrac15+\dfrac15=1\). Hai lá đúng giờ rời nhau, vì vậy \(P(D)=\dfrac{12}{25}+\dfrac15=\dfrac{17}{25}\). Phân biệt xác suất nhánh (trong một tuyến) với xác suất lá (tính từ gốc).
 
 ![Sơ đồ cây hai tuyến R, S và xác suất đến đúng giờ hoặc muộn](../../../../docs/assets/images/thpt/FIG-TOP21_ROUTE_TREE_3_5_2_5_R01.svg)
 
@@ -336,6 +336,12 @@ Hãy chia sản phẩm thành hai nguồn: thật sự lỗi \(H\) và không l�
 >
 > \[P(H\mid +)=\frac{P(H)P(+\mid H)}{P(H)P(+\mid H)+P(\bar H)P(+\mid\bar H)},\qquad P(+)>0.\] Cần biết **tỉ lệ nền**, **khả năng phát hiện khi thực sự H** và **tỉ lệ báo nhầm khi không H**. Không kết luận \(P(H\mid +)=P(+\mid H)\); nếu không có trường hợp được báo thì xác suất điều kiện ấy không xác định bằng công thức này.
 
+**Ví dụ**
+
+**Đề bài:** Giả sử một lô hàng có 1% sản phẩm lỗi. Thiết bị báo lỗi ở 95% sản phẩm lỗi và báo nhầm ở 10% sản phẩm tốt. Chọn ngẫu nhiên một sản phẩm; biết thiết bị đã báo lỗi. Tính xác suất sản phẩm thực sự lỗi.
+
+**Lời giải bằng tần số:** Hãy biểu diễn các tỉ lệ giả định trên 10.000 sản phẩm tương ứng: 100 sản phẩm lỗi, trong đó 95 bị báo; 9.900 sản phẩm tốt, trong đó 990 bị báo nhầm. Số sản phẩm được báo là \(95+990=1085\). Trong nhóm đã biết máy báo lỗi, chỉ 95 sản phẩm thật sự lỗi. Vậy \(P(H\mid +)=\dfrac{95}{1085}=\dfrac{19}{217}\approx8{,}76\%\), đúng với cách tính bằng Bayes. Máy phát hiện 95% hàng lỗi không có nghĩa 95% hàng bị báo là lỗi: nhóm hàng tốt đông hơn rất nhiều. Các số đếm này minh họa mô hình tỉ lệ đã cho, không phải dữ liệu đo thực tế.
+
 **Giữ độ nhạy và tỷ lệ báo nhầm cố định nhưng thay tỷ lệ nền.** Thiết bị báo đúng ở \(95\%\) sản phẩm thật sự lỗi, báo nhầm ở \(10\%\) sản phẩm tốt. Nếu nền lỗi \(1\%\), xác suất thật sự lỗi sau khi máy báo là:
 \[
 \frac{0{,}01\cdot0{,}95}{0{,}01\cdot0{,}95+0{,}99\cdot0{,}10}
@@ -347,12 +353,6 @@ Nếu nền lỗi \(20\%\) nhưng chất lượng thiết bị **giữ nguyên**
 =\frac{0{,}19}{0{,}27}\approx70{,}37\%.
 \]
 Phần báo nhầm đến từ **nhóm hàng tốt** có quy mô rất khác nhau khi tỷ lệ nền thay đổi. Đây là số liệu **giả định để học Bayes**, không phải đánh giá thiết bị cụ thể. Không kết luận độ nhạy đã tăng, vì giả thiết độ nhạy không đổi.
-
-**Ví dụ**
-
-**Đề bài:** Giả sử một lô hàng có 1% sản phẩm lỗi. Thiết bị báo lỗi ở 95% sản phẩm lỗi và báo nhầm ở 10% sản phẩm tốt. Chọn ngẫu nhiên một sản phẩm; biết thiết bị đã báo lỗi. Tính xác suất sản phẩm thực sự lỗi.
-
-**Lời giải:** Gọi \(H\) là biến cố “thật sự lỗi”, \(+\) là “thiết bị báo lỗi”. Xác suất “lỗi và báo” là \(0{,}01\cdot0{,}95=0{,}0095\); xác suất “tốt nhưng báo nhầm” là \(0{,}99\cdot0{,}10=0{,}099\). Vì cả hai dẫn tới báo lỗi, \(P(+)=0{,}0095+0{,}099=0{,}1085\). Do đó \(P(H\mid +)=0{,}0095/0{,}1085=19/217\approx8{,}76\%\). Máy phát hiện 95% hàng lỗi không có nghĩa là 95% hàng bị báo là lỗi: nhóm tốt chiếm tới 99% nên số báo nhầm đáng kể. Đây chỉ là mô hình giả định.
 
 **Vận dụng**
 
