@@ -8,153 +8,156 @@
 const config=document.querySelector(".topic-w1-release-nav[data-topic-w1][data-topic-w1-part]");
 if(!config)return;
 const topic=config.dataset.topicW1,part=config.dataset.topicW1Part;
+const sharedKnowledgeActive=part==="kien-thuc";
+const sharedKnowledgeMath=()=>sharedKnowledgeActive?window.SLMTHPTKnowledgeMath:null;
+let sharedKnowledgePrepared=false;
 const sizes={"12":{"outcomes":12,"items":34,"replay":12,"groups":3,"practiceGroups":3},"13":{"outcomes":16,"items":52,"replay":16,"groups":3,"practiceGroups":2},"14":{"outcomes":23,"items":87,"replay":23,"groups":4,"practiceGroups":4},"15":{"outcomes":22,"items":67,"replay":8,"groups":5,"practiceGroups":5}};
 const expected=sizes[topic];
 /* Presentation-only aliases. Full, reviewed heading text stays in its panel and
  * remains accessible through the tab's aria-label/title. */
 const topicTabNames={
- "12": {
-  "modules": [
-   "1. Từ một góc đến hai con số",
-   "2. Tam giác bất kỳ: tìm một",
-   "3. Diện tích, các bán kính và"
-  ],
-  "subs": [
-   [
-    "1.1. Giá trị lượng giác của góc",
-    "1.2. Góc đặc biệt và góc bù",
-    "1.3. Tang và côtang",
-    "1.4. Hệ thức lượng giác và dấu"
-   ],
-   [
-    "2.1. Định lí côsin",
-    "2.2. Định lí sin",
-    "2.3. Chọn phương pháp giải tam",
-    "2.4. Trường hợp hai cạnh và một"
-   ],
-   [
-    "3.1. Diện tích theo góc xen giữa",
-    "3.2. Công thức Heron và các bán",
-    "3.3. Giải tam giác trong đo đạc",
-    "3.4. Kiểm tra điều kiện và kết"
-   ]
-  ]
- },
- "13": {
-  "modules": [
-   "1. Từ mũi tên đến phép toán",
-   "2. Vectơ trong mặt phẳng tọa",
-   "3. Vectơ trong không gian và"
-  ],
-  "subs": [
-   [
-    "1.1. Độ dời cần cả độ lớn lẫn",
-    "1.2. Cùng phương, cùng hướng và",
-    "1.3. Tổng vectơ là đường tắt",
-    "1.4. Hình bình hành và phép trừ",
-    "1.5. Nhân vectơ với một số và",
-    "1.6. Trung điểm và trọng tâm từ"
-   ],
-   [
-    "2.1. Tọa độ Oxy: vì sao phải lấy",
-    "2.2. Độ dài, khoảng cách và cùng",
-    "2.3. Tích vô hướng qua góc: lực",
-    "2.4. Tích vô hướng trong Oxy và"
-   ],
-   [
-    "3.1. Ba hướng không gian: từ",
-    "3.2. Chasles, trung điểm và",
-    "3.3. Góc, tích vô hướng và vuông",
-    "3.4. Oxyz: tọa độ điểm khác tọa",
-    "3.5. Cộng, tính độ dài và điểm",
-    "3.6. Độ dời, quãng đường và công"
-   ]
-  ]
- },
- "14": {
-  "modules": [
-   "1. Phương trình đường thẳng",
-   "2. Vị trí, góc và khoảng cách",
-   "3. Đường tròn trong mặt phẳng",
-   "4. Ba đường conic và ứng dụng"
-  ],
-  "subs": [
-   [
-    "1.1. Vectơ chỉ phương và pháp",
-    "1.2. Lập phương trình tổng quát",
-    "1.3. Lập phương trình tham số",
-    "1.4. Phương trình đường thẳng",
-    "1.5. Kiểm tra điểm thuộc đường",
-    "1.6. Dựng đường thẳng thỏa nhiều",
-    "1.7. Dùng phương trình tuyến"
-   ],
-   [
-    "2.1. Phân biệt hai đường cắt",
-    "2.2. Dựng đường vuông góc qua",
-    "2.3. Tìm giao điểm bằng hệ",
-    "2.4. Khoảng cách từ điểm đến",
-    "2.5. Góc nhỏ giữa hai đường"
-   ],
-   [
-    "3.1. Phương trình đường tròn từ",
-    "3.2. Nhận dạng đường tròn từ",
-    "3.3. Tiếp tuyến tại một điểm",
-    "3.4. Đường tròn đi qua ba điểm",
-    "3.5. Đường thẳng và đường tròn"
-   ],
-   [
-    "4.1. Elip và hai tiêu điểm",
-    "4.2. Hypebol và hai nhánh",
-    "4.3. Hai tiệm cận của hypebol",
-    "4.4. Parabol theo tiêu điểm và",
-    "4.5. Giao điểm của đường thẳng",
-    "4.6. Mặt cắt parabol và giới hạn"
-   ]
-  ]
- },
- "15": {
-  "modules": [
-   "1. Từ điểm, đường đến thiết",
-   "2. Hai đường thẳng: song song",
-   "3. Đường thẳng và mặt phẳng",
-   "4. Hai mặt phẳng song song",
-   "5. Phép chiếu song song và"
-  ],
-  "subs": [
-   [
-    "1.1. Điểm và đường thuộc mặt",
-    "1.2. Xác định một mặt phẳng",
-    "1.3. Giao tuyến của hai mặt",
-    "1.4. Giao điểm của đường và mặt",
-    "1.5. Thiết diện phải nằm trong"
-   ],
-   [
-    "2.1. Bốn quan hệ giữa hai đường",
-    "2.2. Nhận biết đồng phẳng và",
-    "2.3. Chứng minh song song qua",
-    "2.4. Giao tuyến của hai mặt chứa"
-   ],
-   [
-    "3.1. Ba quan hệ giữa đường và",
-    "3.2. Điều kiện không được bỏ",
-    "3.3. Giao tuyến khi có đường",
-    "3.4. Dựng mặt phẳng cắt song"
-   ],
-   [
-    "4.1. Ba quan hệ giữa hai mặt",
-    "4.2. Dấu hiệu hai mặt song song",
-    "4.3. Mặt thứ ba cắt hai mặt song",
-    "4.4. Mặt cắt song song và tỉ số"
-   ],
-   [
-    "5.1. Phép chiếu theo một phương",
-    "5.2. Vì sao một đoạn có thể co",
-    "5.3. Tỉ số và trung điểm dưới",
-    "5.4. Hình bình hành còn, góc",
-    "5.5. Kết nối thiết diện, song"
-   ]
-  ]
- }
+  "12": {
+    "modules": [
+      "1. Lượng giác của góc",
+      "2. Giải tam giác",
+      "3. Diện tích và đo đạc"
+    ],
+    "subs": [
+      [
+        "1.1. Lượng giác góc 0°–180°",
+        "1.2. Góc đặc biệt và góc bù",
+        "1.3. Tang và côtang",
+        "1.4. Hệ thức lượng giác và dấu"
+      ],
+      [
+        "2.1. Định lí côsin",
+        "2.2. Định lí sin",
+        "2.3. Chọn cách giải tam giác",
+        "2.4. Hai cạnh, góc không xen"
+      ],
+      [
+        "3.1. Diện tích theo góc",
+        "3.2. Heron và bán kính",
+        "3.3. Giải tam giác trong đo đạc",
+        "3.4. Kiểm tra điều kiện"
+      ]
+    ]
+  },
+  "13": {
+    "modules": [
+      "1. Phép toán vectơ",
+      "2. Vectơ trong Oxy",
+      "3. Vectơ trong Oxyz"
+    ],
+    "subs": [
+      [
+        "1.1. Độ lớn và hướng",
+        "1.2. Cùng phương, cùng hướng",
+        "1.3. Tổng vectơ",
+        "1.4. Hình bình hành và hiệu",
+        "1.5. Nhân vectơ với một số",
+        "1.6. Trung điểm và trọng tâm"
+      ],
+      [
+        "2.1. Tọa độ: cuối trừ đầu",
+        "2.2. Độ dài và cùng phương",
+        "2.3. Tích vô hướng qua góc",
+        "2.4. Tích vô hướng trong Oxy"
+      ],
+      [
+        "3.1. Vectơ trong hình hộp",
+        "3.2. Chasles và trọng tâm",
+        "3.3. Tích vô hướng, vuông góc",
+        "3.4. Tọa độ điểm và vectơ",
+        "3.5. Phép toán vectơ Oxyz",
+        "3.6. Độ dời, quãng đường, công"
+      ]
+    ]
+  },
+  "14": {
+    "modules": [
+      "1. Phương trình đường thẳng",
+      "2. Vị trí, góc, khoảng cách",
+      "3. Đường tròn",
+      "4. Ba đường conic"
+    ],
+    "subs": [
+      [
+        "1.1. Chỉ phương và pháp tuyến",
+        "1.2. Phương trình tổng quát",
+        "1.3. Phương trình tham số",
+        "1.4. Đường thẳng qua hai điểm",
+        "1.5. Điểm thuộc đường thẳng",
+        "1.6. Dựng đường thẳng",
+        "1.7. Mô hình tuyến tính"
+      ],
+      [
+        "2.1. Cắt, song song và trùng",
+        "2.2. Đường vuông góc qua điểm",
+        "2.3. Giao điểm từ hệ phương trình",
+        "2.4. Khoảng cách điểm–đường",
+        "2.5. Góc giữa hai đường"
+      ],
+      [
+        "3.1. Phương trình đường tròn",
+        "3.2. Nhận dạng đường tròn",
+        "3.3. Tiếp tuyến đường tròn",
+        "3.4. Đường tròn qua ba điểm",
+        "3.5. Số giao điểm đường–tròn"
+      ],
+      [
+        "4.1. Elip và hai tiêu điểm",
+        "4.2. Hypebol và hai nhánh",
+        "4.3. Tiệm cận hypebol",
+        "4.4. Parabol và đường chuẩn",
+        "4.5. Giao điểm đường–conic",
+        "4.6. Mặt cắt parabol"
+      ]
+    ]
+  },
+  "15": {
+    "modules": [
+      "1. Điểm, đường, thiết diện",
+      "2. Hai đường thẳng",
+      "3. Đường thẳng và mặt phẳng",
+      "4. Hai mặt phẳng song song",
+      "5. Phép chiếu song song"
+    ],
+    "subs": [
+      [
+        "1.1. Điểm và đường thuộc mặt",
+        "1.2. Xác định mặt phẳng",
+        "1.3. Giao tuyến hai mặt",
+        "1.4. Giao điểm đường–mặt",
+        "1.5. Thiết diện trong khối"
+      ],
+      [
+        "2.1. Bốn quan hệ hai đường",
+        "2.2. Đồng phẳng và chéo nhau",
+        "2.3. Song song qua tam giác",
+        "2.4. Giao tuyến và hướng"
+      ],
+      [
+        "3.1. Ba quan hệ đường–mặt",
+        "3.2. Điều kiện của dấu hiệu",
+        "3.3. Giao tuyến và song song",
+        "3.4. Mặt cắt song song đáy"
+      ],
+      [
+        "4.1. Ba quan hệ hai mặt",
+        "4.2. Dấu hiệu hai mặt song song",
+        "4.3. Mặt thứ ba cắt hai mặt",
+        "4.4. Mặt cắt và đồng dạng"
+      ],
+      [
+        "5.1. Chiếu theo phương cố định",
+        "5.2. Đoạn co thành điểm",
+        "5.3. Tỉ số và trung điểm",
+        "5.4. Bảo toàn qua phép chiếu",
+        "5.5. Kết nối thiết diện, chiếu"
+      ]
+    ]
+  }
 };
 const displayShortTopicW1=(button,label,full)=>{
  if(!label||!full||label.length>full.length)throw Error("TOPIC_W1_SHORT_TAB_SOURCE_HOLD");
@@ -198,7 +201,7 @@ const normalizeRenderedMath=node=>{
   if(hit){if(lastIndex<v.length)parts.append(document.createTextNode(v.slice(lastIndex)));t.replaceWith(parts)}
  }
 };
-const renderMath=node=>{normalizeRenderedMath(node);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
+const renderMath=node=>{if(sharedKnowledgeActive){if(!sharedKnowledgeMath())throw Error("TOPIC_SHARED_MATH_HELPER_MISSING");if(sharedKnowledgePrepared)return sharedKnowledgeMath().typeset(node);return}normalizeRenderedMath(node);const m=window.MathJax;if(m?.typesetPromise)m.typesetPromise([node]).catch(()=>{});else if(m?.startup?.promise)m.startup.promise.then(()=>m.typesetPromise([node])).catch(()=>{})};
 /* Source SVGs remain byte-identical; only the rendered footprint is constrained.
  * W3-only data attribute avoids changing accepted CĐ01/W1/W3 and SGK images. */
 const capKnowledgeFigures=root=>{
@@ -282,6 +285,7 @@ function styleKnowledge(root){
  for(const details of root.querySelectorAll("details")){
   const summary=details.querySelector("summary");if(!summary)continue;
   details.classList.add("question");
+  if(sharedKnowledgeActive){sharedKnowledgeMath().disclosure(details);continue}
   const content=solutionContent(details);
   details.replaceChildren(summary,...content.childNodes);
   details.addEventListener("toggle",()=>{if(details.open)renderMath(details)});
@@ -346,7 +350,10 @@ function initKnowledge(){
   }
   bind(subButtons,subPanels);
  }
- normalizeInlineStems(layout,/^Vận dụng[:.]?$/);styleKnowledge(layout);capKnowledgeFigures(layout);bind(allButtons,allPanels);
+ normalizeInlineStems(layout,/^Vận dụng[:.]?$/);styleKnowledge(layout);capKnowledgeFigures(layout);
+ if(sharedKnowledgeActive){sharedKnowledgeMath().prepare(layout);sharedKnowledgeMath().normalize(intro);sharedKnowledgePrepared=true}
+ bind(allButtons,allPanels);
+ if(sharedKnowledgeActive)sharedKnowledgeMath().typeset(layout);
  if(layout.querySelectorAll("[data-topic-w1-callout]").length<expected.outcomes)throw Error("Missing formal semantic callouts");
  ready();
 }
