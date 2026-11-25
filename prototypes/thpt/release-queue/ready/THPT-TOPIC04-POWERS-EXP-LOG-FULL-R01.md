@@ -1,3 +1,6 @@
+<!-- A04 WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 CD04-A1–A3 edited in canonical at candidate blob `e233c7f5e2ce15586ce6878ad119dcc71779b897`, commit `1272d88f4e9cb766f28cf5cc80d0629f2dc8926b`. Previous signed pointers below are historical only until affected Q18/V2/ready re-lock and X-G.5 verification; no RELEASE authorization.
+
 <!-- TOP04_MASTER974_CURRENT_AUTHORING_READY_20261121 -->
 **CURRENT AUTHORING CĐ04 CONTENT_READY Q18 v3.2.0 (NOT RELEASE):** one learner source `4e8238e188204eefc060f18c88ef7a0a3c51a60e` (commit `d2e755b6b511adfbe62c59b3431fdd91d2f38e9e`), original canonical Topic bank 26 records `377de2e2e9fb6771f02270e8d85e950559669895`, author self-Q18 `eba1e820c2544b54e3ff09b0c37ed780e18c3dd5`, metadata `e305b9a8eec21ca972af8c607292d4f7b1b467e5`, one V2 `1d48e0f65a7e7c031594bb828dd2a72a360f8e39`. P21 source bank + learner answer now explicitly deterministic 256 not statistical expectation; O17 different student first-try (640 × 0.75²=360); 11 missing D6 routes upgraded to 18/18, 18 public selfchecks opt-in map to genuine Practice, no hidden scoring. Preserved 49 SGK originals, all 75 unique Practice IDs and 12 Written rubrics, 5 SVG and one SGK source footer. Snapshot old content-ready immutable; current change math/PED `DELTA_C_ACADEMIC_MATERIAL` on affected scope Q18 AUTHOR_SELF_VERIFIED, not independent NotebookLM PASS or owner release. `P0/P1=0` for defects #977 013–016 after self-proof and QA. No merge/deploy or website student data change.
 
@@ -12,7 +15,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: d2e755b6b511adfbe62c59b3431fdd91d2f38e9e
 AUTHOR_PR: 822
 CURRENT_PR: #890 Draft AUTHORING from previous #822, not merged/deployed
@@ -40,7 +43,7 @@ SVG_NEW_PATH: prototypes/thpt/visuals/THPT_TOPIC04_LOG_DOMAIN_AND_DECREASING_INE
 SVG_NEW_BLOB: 7fe8a2d2faf325f3ee9b0876929402b733138f96
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
