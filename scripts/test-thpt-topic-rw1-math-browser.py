@@ -175,6 +175,53 @@ def tab_check(button,width):
     assert abs(info["height"]-44)<=1 and info["font"]==("14px" if width<=640 else "15px"),info
     assert info["scroll"]<=info["client"]+2,("clipped tab",info)
 
+if "--tabs-only" in sys.argv:
+    # RW3_TAB_SCOPE_HOLD: check labels and sampled navigation only.
+    expected_labels={}
+    for wave in (4,5):
+        js=(ROOT/f"docs/assets/javascripts/thpt-topic-w{wave}-golden-v1.js").read_text(encoding="utf-8")
+        data=json.loads(re.search(r"const topicTabNames=(\{[\s\S]*?\n\});",js).group(1))
+        expected_labels.update(data)
+    with sync_playwright() as pw:
+        for engine in ("chromium","webkit"):
+            browser=getattr(pw,engine).launch(headless=True)
+            for topic,outcomes in TAIL_SIZES.items():
+                headings=(ROOT/f"docs/thpt-preview/chuyen-de/cd{topic}/kien-thuc.md").read_text(encoding="utf-8")
+                modules=re.findall(r"^## (.+)$",headings,re.M)
+                subs=re.findall(r"^### (.+)$",headings,re.M)
+                labels=expected_labels[topic]
+                for width in (390,820,1440):
+                    page=browser.new_page(viewport={"width":width,"height":850})
+                    errors=[]
+                    page.on("pageerror",lambda e:errors.append(str(e)))
+                    res=page.goto(BASE+"cd"+topic+"/kien-thuc/",wait_until="domcontentloaded")
+                    assert res and res.status==200
+                    expect(page.locator(".topic01-knowledge-layout")).to_be_visible(timeout=20000)
+                    expect(page.locator(MODULE)).to_have_count(len(modules))
+                    expect(page.locator(SUB)).to_have_count(outcomes)
+                    offset=0
+                    for i,module in enumerate(page.locator(MODULE).all()):
+                        module.click()
+                        tab_check(module,width)
+                        assert module.inner_text().strip()==labels["modules"][i]
+                        assert module.get_attribute("title").strip()==modules[i].strip()
+                        group=page.locator(".thpt-r4-knowledge-module-panel:visible")
+                        for j,sub in enumerate(group.locator(SUB).all()):
+                            tab_check(sub,width)
+                            assert sub.inner_text().strip()==labels["subs"][i][j]
+                            assert sub.get_attribute("title").strip()==subs[offset].strip()
+                            if j==0 or j==len(labels["subs"][i])-1:
+                                sub.click()
+                                expect(page.locator(PANEL)).to_be_visible()
+                                assert page.locator(PANEL).locator("h3").first.inner_text().strip()==subs[offset].strip()
+                            offset+=1
+                    assert offset==outcomes and not errors,(topic,width,errors)
+                    page.close()
+                    print(f"PASS R-W3 tab labels CĐ{topic} {engine} {width}: {outcomes}",flush=True)
+            browser.close()
+    server.shutdown()
+    sys.exit(0)
+
 cases=0
 formula_cases=0
 with sync_playwright() as pw:
