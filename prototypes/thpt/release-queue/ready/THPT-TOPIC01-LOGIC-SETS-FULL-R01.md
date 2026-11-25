@@ -1,3 +1,6 @@
+<!-- A04 WORK #1109 CURRENT CANDIDATE -->
+**BLOCKED_BY_AUTHORING** — Work #1055 CD01-A01–A03 edited in canonical at candidate blob `a51e80aaa5e18ebf6298430bb6cde02064ed8c29`, commit `d33b255b9292785b0e3b6893a9e98456e5b61426`. Previous signed pointers below are historical only until affected Q18/V2/ready re-lock and X-G.5 verification; no RELEASE authorization.
+
 <!-- TOP01_MASTER974_BANK_SELFCHK_CURRENT_20261121 -->
 **CURRENT AUTHORING snapshot (#974):** same one canonical CĐ01 learner, blob `9271a9784e343ea87981a67dae7dabcf69e4c0ed`, targeted existing Q18 receipt `e5cccc6d98bf3ce5244114752075f74a3389c46b`, author metadata `dcfd83b571e8eea776b47a9b87e3cd8b990675b1`, one V2 handoff `fe0dff5b4c7cca90296fcb18175032a973519023`. Academic original banks verified 18 SGK + 6 Topic source stems/solutions; 3 exact original conclusions now stated plainly for learners and one 11-question selfcheck `Đối chiếu` links to real Practice (public replay only, NO_MASTERY). Previously fixed 11 targeted `Kiểm lỗi` Knowledge paths stay. `DELTA_B_SOURCE_EQUIVALENT + DELTA_C_PED_TARGETED`, author self-QA affected scope; inherited CONTENT_READY historical signoffs remain at their original source SHA, **do not interpret as fresh complete #974 Academic/PED pass or RELEASE permission**. Student-facing SGK source only once, at end. NO merge/deploy.
 
@@ -21,7 +24,7 @@ QUALITY_EVIDENCE_SECTION: QUALITY_Q01_Q18_EVIDENCE
 HANDOFF_PROTOCOL: THPT-TWO-LANE-V2
 LEARNING_PATH: TOPIC
 RELEASE_SCOPE: FULL_TOPIC_LEARNING_PATH
-STATE: CONTENT_READY
+STATE: BLOCKED_BY_AUTHORING
 SOURCE_COMMIT: 3380280f2af504d3203858cd5ad8b6af3cde845e
 AUTHOR_PR: 817
 CURRENT_PR: #817 Draft AUTHORING, no merge/deploy
@@ -44,7 +47,7 @@ ORIGINAL_SVG2_BLOB: ea84ee68187e83aa4bc6b14e49a965b3d7da5a11
 PUBLIC_EXTENSION_BLOB: 89ae1cd2338f2c5c48b9af874a8b52b1306c8acd
 ACADEMIC_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
 PEDAGOGICAL_VERDICT: SELF_VERIFIED_ON_LOCKED_SNAPSHOT
-BLOCKERS: NONE
+BLOCKERS: WORK_DELTA_Q18_AND_NOTATION_VERIFICATION_PENDING
 ASSESSMENT_MODE: CLIENT_SELF_CHECK_NO_MASTERY
 OFFICIAL_READINESS: NOT_CLAIMED
 PRIVATE_RD1_COUNT: 0
