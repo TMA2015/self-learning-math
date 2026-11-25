@@ -1034,13 +1034,13 @@ Tập xác định của \(y=\tan x\) là gì?
 
 **Bài 29.**
 
-Cho bốn hàm sin x, cos x, tan x, cot x. Hàm nào chẵn, hàm nào lẻ trên TXĐ?
+Cho bốn hàm \(\sin x\), \(\cos x\), \(\tan x\), \(\cot x\). Hàm nào chẵn, hàm nào lẻ trên tập xác định?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** cos x chẵn; sin x, tan x, cot x lẻ.
+**Đáp án:** \(\cos x\) chẵn; \(\sin x\), \(\tan x\), \(\cot x\) lẻ.
 
-Dùng sin(-x)=-sinx, cos(-x)=cosx, tan(-x)=-tanx, cot(-x)=-cotx; các TXĐ đối xứng qua 0.
+Dùng \(\sin(-x)=-\sin x\), \(\cos(-x)=\cos x\), \(\tan(-x)=-\tan x\), \(\cot(-x)=-\cot x\); các tập xác định đối xứng qua 0.
 
 </details>
 
@@ -1048,13 +1048,13 @@ Dùng sin(-x)=-sinx, cos(-x)=cosx, tan(-x)=-tanx, cot(-x)=-cotx; các TXĐ đố
 
 **Bài 30.**
 
-Chu kỳ cơ bản của y=sin x và y=tan x là bao nhiêu?
+Chu kỳ cơ bản của \(y=\sin x\) và \(y=\tan x\) là bao nhiêu?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** sin: 2π; tan: π.
+**Đáp án:** sin: \(2\pi\); tan: \(\pi\).
 
-sin(x+2π)=sinx; tan(x+π)=tanx và hai số lần lượt là chu kỳ dương nhỏ nhất.
+\(\sin(x+2\pi)=\sin x\); \(\tan(x+\pi)=\tan x\) và hai số lần lượt là chu kỳ dương nhỏ nhất.
 
 </details>
 
@@ -1062,13 +1062,13 @@ sin(x+2π)=sinx; tan(x+π)=tanx và hai số lần lượt là chu kỳ dương 
 
 **Bài 31.**
 
-Tìm tập giá trị và các điểm cực đại của y=sin x.
+Tìm tập giá trị và các điểm cực đại của \(y=\sin x\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** TGT [-1,1]; max 1 tại x=π/2+2kπ, k∈ℤ.
+**Đáp án:** Tập giá trị \([-1;1]\); giá trị lớn nhất 1 tại \(x=\frac{\pi}{2}+2k\pi,\ k\in\mathbb Z\).
 
-Đọc đồ thị sin và tính tuần hoàn: sin x≤1, bằng 1 tại π/2+2kπ.
+Đọc đồ thị sin và tính tuần hoàn: \(\sin x\le1\), bằng 1 tại \(x=\frac{\pi}{2}+2k\pi\).
 
 </details>
 
@@ -1076,13 +1076,13 @@ Tìm tập giá trị và các điểm cực đại của y=sin x.
 
 **Bài 32.**
 
-Tìm TXĐ của y=cot(2x).
+Tìm tập xác định của \(y=\cot(2x)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** ℝ \ {kπ/2:k∈ℤ}.
+**Đáp án:** \(\mathbb R\setminus\{\frac{k\pi}{2}:k\in\mathbb Z\}\).
 
-cot(2x) chỉ xác định nếu sin(2x)≠0, nên 2x≠kπ.
+\(\cot(2x)\) chỉ xác định nếu \(\sin(2x)\ne0\), nên \(2x\ne k\pi\).
 
 </details>
 
@@ -1090,13 +1090,13 @@ cot(2x) chỉ xác định nếu sin(2x)≠0, nên 2x≠kπ.
 
 **Bài 33.**
 
-Tìm tập giá trị của f(x)=1+2sin x.
+Tìm tập giá trị của \(f(x)=1+2\sin x\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** [-1,3].
+**Đáp án:** \([-1;3]\).
 
--1≤sinx≤1; nhân 2 cộng 1 cho -1≤f≤3. Hai cận đều đạt.
+\(-1\le\sin x\le1\); nhân 2, cộng 1 cho \(-1\le f(x)\le3\). Hai cận đều đạt.
 
 </details>
 
@@ -1104,13 +1104,13 @@ Tìm tập giá trị của f(x)=1+2sin x.
 
 **Bài 34.**
 
-Tìm chu kỳ cơ bản của f(x)=3cos(4x-π/3).
+Tìm chu kỳ cơ bản của \(f(x)=3\cos(4x-\frac{\pi}{3})\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** π/2.
+**Đáp án:** \(\frac{\pi}{2}\).
 
-Hàm cos theo đối số có chu kỳ 2π; 4T=2π nên T=π/2.
+Hàm cos theo đối số có chu kỳ \(2\pi\); \(4T=2\pi\) nên \(T=\frac{\pi}{2}\).
 
 </details>
 
@@ -1118,13 +1118,13 @@ Hàm cos theo đối số có chu kỳ 2π; 4T=2π nên T=π/2.
 
 **Bài 35.**
 
-y=sinx đồng biến trên đoạn nào: [-π/2,π/2] hay [0,π]?
+\(y=\sin x\) đồng biến trên đoạn nào: \([-\frac{\pi}{2};\frac{\pi}{2}]\) hay \([0;\pi]\)?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** [-π/2,π/2].
+**Đáp án:** \([-\frac{\pi}{2};\frac{\pi}{2}]\).
 
-sin tăng trên [-π/2,π/2]; trên [0,π] tăng rồi giảm.
+Sin tăng trên \([-\frac{\pi}{2};\frac{\pi}{2}]\); trên \([0;\pi]\) tăng rồi giảm.
 
 </details>
 
@@ -1132,13 +1132,13 @@ sin tăng trên [-π/2,π/2]; trên [0,π] tăng rồi giảm.
 
 **Bài 36.**
 
-Trên [0,2π], nghiệm cos x=0 gồm những hoành độ nào?
+Trên \([0;2\pi]\), nghiệm \(\cos x=0\) gồm những hoành độ nào?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** π/2 và 3π/2.
+**Đáp án:** \(\frac{\pi}{2}\) và \(\frac{3\pi}{2}\).
 
-Đồ thị cos cắt trục Ox tại π/2+kπ; chỉ giữ k=0,1.
+Đồ thị cos cắt trục Ox tại \(x=\frac{\pi}{2}+k\pi\); chỉ giữ \(k=0,1\).
 
 </details>
 
@@ -1146,13 +1146,13 @@ Trên [0,2π], nghiệm cos x=0 gồm những hoành độ nào?
 
 **Bài 37.**
 
-Nêu hai tiệm cận đứng của y=tanx kề trục tung.
+Nêu hai tiệm cận đứng của \(y=\tan x\) kề trục tung.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=-π/2 và x=π/2.
+**Đáp án:** \(x=-\frac{\pi}{2}\) và \(x=\frac{\pi}{2}\).
 
-Tại cosx=0, tan không xác định và giá trị một phía không bị chặn.
+Tại \(\cos x=0\), tan không xác định và giá trị một phía không bị chặn.
 
 </details>
 
@@ -1160,13 +1160,13 @@ Tại cosx=0, tan không xác định và giá trị một phía không bị ch�
 
 **Bài 38.**
 
-Trên (0,π), y=cot x đồng biến hay nghịch biến?
+Trên \((0;\pi)\), \(y=\cot x\) đồng biến hay nghịch biến?
 
 <details markdown="1"><summary>Lời giải</summary>
 
 **Đáp án:** Nghịch biến.
 
-Trên (0,π), đồ thị cot đi liên tục từ +∞ xuống -∞; tương tự trên (kπ,(k+1)π). Không cần dùng đạo hàm (học ở chương sau).
+Trên \((0;\pi)\), đồ thị cot đi liên tục từ \(+\infty\) xuống \(-\infty\); tương tự trên \((k\pi;(k+1)\pi)\). Không cần dùng đạo hàm (học ở chương sau).
 
 </details>
 
@@ -1174,13 +1174,13 @@ Trên (0,π), đồ thị cot đi liên tục từ +∞ xuống -∞; tương t�
 
 **Bài 39.**
 
-Tìm miền của y=1/(1−2sinx).
+Tìm miền của \(y=\frac1{1-2\sin x}\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** ℝ trừ các điểm π/6+2kπ và 5π/6+2kπ.
+**Đáp án:** \(\mathbb R\) trừ các điểm \(\frac{\pi}{6}+2k\pi\) và \(\frac{5\pi}{6}+2k\pi\).
 
-Mẫu khác 0 ⇔ sinx≠1/2. Hai họ nghiệm sinx=1/2 bị loại; mọi giá trị khác hợp lệ.
+Mẫu khác 0 khi và chỉ khi \(\sin x\ne\frac12\). Hai họ nghiệm \(\sin x=\frac12\) bị loại; mọi giá trị khác hợp lệ.
 
 </details>
 
@@ -1188,13 +1188,13 @@ Mẫu khác 0 ⇔ sinx≠1/2. Hai họ nghiệm sinx=1/2 bị loại; mọi giá
 
 **Bài 40.**
 
-Tìm chu kỳ dương cơ bản của f(x)=sin2x+sin4x.
+Tìm chu kỳ dương cơ bản của \(f(x)=\sin(2x)+\sin(4x)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** π.
+**Đáp án:** \(\pi\).
 
-Tăng x thêm π khiến hai thành phần có góc tăng 2π,4π. Đặt y=2x: siny+sin2y có tần số 1 không triệt tiêu nên chu kỳ cơ bản theo y là 2π, theo x là π.
+Tăng x thêm \(\pi\) khiến hai thành phần có góc tăng \(2\pi,4\pi\). Đặt \(y=2x\): \(\sin y+\sin(2y)\) có tần số 1 không triệt tiêu nên chu kỳ cơ bản theo y là \(2\pi\), theo x là \(\pi\).
 
 </details>
 
@@ -1202,13 +1202,13 @@ Tăng x thêm π khiến hai thành phần có góc tăng 2π,4π. Đặt y=2x: 
 
 **Bài 41.**
 
-h(t)=3−2cos(πt/4). Tìm chu kỳ, tập giá trị, h(0),h(4).
+\(h(t)=3-2\cos(\frac{\pi t}{4})\). Tìm chu kỳ, tập giá trị, \(h(0)\), \(h(4)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** 8; [1,5]; 1; 5.
+**Đáp án:** 8; \([1;5]\); 1; 5.
 
-ω=π/4 nên T=8. Vì cos∈[−1,1], h∈[1,5]. Thế t=0: h=1; t=4: cosπ=−1 nên h=5.
+\(\omega=\frac{\pi}{4}\) nên \(T=8\). Vì \(\cos(\frac{\pi t}{4})\in[-1;1]\), \(h(t)\in[1;5]\). Thế \(t=0\): \(h(0)=1\); \(t=4\): \(\cos\pi=-1\) nên \(h(4)=5\).
 
 </details>
 
@@ -1216,13 +1216,13 @@ h(t)=3−2cos(πt/4). Tìm chu kỳ, tập giá trị, h(0),h(4).
 
 **Bài 42.**
 
-y=tan(3x): miền xác định và chu kỳ cơ bản?
+\(y=\tan(3x)\): miền xác định và chu kỳ cơ bản?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x≠π/6+kπ/3; T=π/3.
+**Đáp án:** \(x\ne\frac{\pi}{6}+\frac{k\pi}{3}\); \(T=\frac{\pi}{3}\).
 
-Không xác định khi cos3x=0 ⇒ 3x=π/2+kπ. Chu kỳ theo đối số là π nên theo x là π/3.
+Không xác định khi \(\cos(3x)=0\Rightarrow 3x=\frac{\pi}{2}+k\pi\). Chu kỳ theo đối số là \(\pi\) nên theo x là \(\frac{\pi}{3}\).
 
 </details>
 
@@ -1232,13 +1232,13 @@ Không xác định khi cos3x=0 ⇒ 3x=π/2+kπ. Chu kỳ theo đối số là �
 
 **Bài 43.**
 
-T(t)=24+3cos(πt/6) (°C, t giờ). Chu kỳ, cao nhất và thấp nhất?
+\(T(t)=24+3\cos(\frac{\pi t}{6})\) (°C, t tính bằng giờ). Chu kỳ, cao nhất và thấp nhất?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** T=12 giờ; max 27°C; min 21°C.
+**Đáp án:** Chu kỳ 12 giờ; giá trị lớn nhất \(27^\circ\mathrm C\); nhỏ nhất \(21^\circ\mathrm C\).
 
-ω=π/6 nên T=2π/(π/6)=12; vì cos∈[-1,1], T(t)∈[21,27].
+\(\omega=\frac{\pi}{6}\) nên chu kỳ \(\frac{2\pi}{\pi/6}=12\); vì \(\cos(\frac{\pi t}{6})\in[-1;1]\), \(T(t)\in[21;27]\).
 
 </details>
 
@@ -1246,13 +1246,13 @@ T(t)=24+3cos(πt/6) (°C, t giờ). Chu kỳ, cao nhất và thấp nhất?
 
 **Bài 44.**
 
-Giải sin x=-1/2 trên ℝ.
+Giải \(\sin x=-\frac12\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=-π/6+2kπ hoặc x=7π/6+2kπ, k∈ℤ.
+**Đáp án:** \(x=-\frac{\pi}{6}+2k\pi\) hoặc \(x=\frac{7\pi}{6}+2k\pi,\ k\in\mathbb Z\).
 
-sin(-π/6)=-1/2, sin(7π/6)=-1/2; đó là hai nhánh trong một vòng.
+\(\sin(-\frac{\pi}{6})=-\frac12\), \(\sin(\frac{7\pi}{6})=-\frac12\); đó là hai nhánh nghiệm trong một vòng.
 
 </details>
 
@@ -1260,13 +1260,13 @@ sin(-π/6)=-1/2, sin(7π/6)=-1/2; đó là hai nhánh trong một vòng.
 
 **Bài 45.**
 
-Giải cos x=1/2 trên ℝ.
+Giải \(\cos x=\frac12\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=±π/3+2kπ, k∈ℤ.
+**Đáp án:** \(x=\pm\frac{\pi}{3}+2k\pi,\ k\in\mathbb Z\).
 
-cos(±π/3)=1/2, chu kỳ 2π.
+\(\cos(\pm\frac{\pi}{3})=\frac12\), chu kỳ \(2\pi\).
 
 </details>
 
@@ -1274,13 +1274,13 @@ cos(±π/3)=1/2, chu kỳ 2π.
 
 **Bài 46.**
 
-Giải tan x=-1 trên ℝ.
+Giải \(\tan x=-1\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=-π/4+kπ, k∈ℤ.
+**Đáp án:** \(x=-\frac{\pi}{4}+k\pi,\ k\in\mathbb Z\).
 
-tan(-π/4)=-1; tan có chu kỳ π, mọi nghiệm hợp lệ.
+\(\tan(-\frac{\pi}{4})=-1\); tan có chu kỳ \(\pi\), mọi nghiệm hợp lệ.
 
 </details>
 
@@ -1288,13 +1288,13 @@ tan(-π/4)=-1; tan có chu kỳ π, mọi nghiệm hợp lệ.
 
 **Bài 47.**
 
-Giải cot x=1 trên ℝ.
+Giải \(\cot x=1\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=π/4+kπ, k∈ℤ.
+**Đáp án:** \(x=\frac{\pi}{4}+k\pi,\ k\in\mathbb Z\).
 
-cot(π/4)=1; chu kỳ π và sin khác 0 tại các nghiệm.
+\(\cot(\frac{\pi}{4})=1\); chu kỳ \(\pi\) và sin khác 0 tại các nghiệm.
 
 </details>
 
@@ -1302,13 +1302,13 @@ cot(π/4)=1; chu kỳ π và sin khác 0 tại các nghiệm.
 
 **Bài 48.**
 
-Giải sin(2x)=1/2 trên ℝ.
+Giải \(\sin(2x)=\frac12\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=π/12+kπ hoặc x=5π/12+kπ, k∈ℤ.
+**Đáp án:** \(x=\frac{\pi}{12}+k\pi\) hoặc \(x=\frac{5\pi}{12}+k\pi,\ k\in\mathbb Z\).
 
-Đặt t=2x: t=π/6+2kπ hoặc 5π/6+2kπ. Chia cả hai họ cho 2.
+Đặt \(t=2x\): \(t=\frac{\pi}{6}+2k\pi\) hoặc \(t=\frac{5\pi}{6}+2k\pi\). Chia cả hai họ cho 2.
 
 </details>
 
@@ -1316,13 +1316,13 @@ Giải sin(2x)=1/2 trên ℝ.
 
 **Bài 49.**
 
-Giải 2cos(x-π/6)=√3 trên ℝ.
+Giải \(2\cos(x-\frac{\pi}{6})=\sqrt3\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=2kπ hoặc x=π/3+2kπ, k∈ℤ.
+**Đáp án:** \(x=2k\pi\) hoặc \(x=\frac{\pi}{3}+2k\pi,\ k\in\mathbb Z\).
 
-cos(x-π/6)=√3/2 nên x-π/6=±π/6+2kπ.
+\(\cos(x-\frac{\pi}{6})=\frac{\sqrt3}{2}\) nên \(x-\frac{\pi}{6}=\pm\frac{\pi}{6}+2k\pi\).
 
 </details>
 
@@ -1330,13 +1330,13 @@ cos(x-π/6)=√3/2 nên x-π/6=±π/6+2kπ.
 
 **Bài 50.**
 
-Giải tan(3x)=√3 trên ℝ.
+Giải \(\tan(3x)=\sqrt3\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=π/9+kπ/3, k∈ℤ.
+**Đáp án:** \(x=\frac{\pi}{9}+\frac{k\pi}{3},\ k\in\mathbb Z\).
 
-3x=π/3+kπ, sau đó chia 3.
+\(3x=\frac{\pi}{3}+k\pi\), sau đó chia 3.
 
 </details>
 
@@ -1344,13 +1344,13 @@ Giải tan(3x)=√3 trên ℝ.
 
 **Bài 51.**
 
-Giải cos(2x)=cosx trên ℝ.
+Giải \(\cos(2x)=\cos x\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=2kπ/3, k∈ℤ.
+**Đáp án:** \(x=\frac{2k\pi}{3},\ k\in\mathbb Z\).
 
-2cos²x-cosx-1=(2cosx+1)(cosx-1)=0; x=2kπ hoặc ±2π/3+2kπ; hợp hai tập bằng 2kπ/3.
+\(2\cos^2x-\cos x-1=(2\cos x+1)(\cos x-1)=0\); \(x=2k\pi\) hoặc \(x=\pm\frac{2\pi}{3}+2k\pi\); hợp hai tập bằng họ \(x=\frac{2k\pi}{3}\).
 
 </details>
 
@@ -1358,13 +1358,13 @@ Giải cos(2x)=cosx trên ℝ.
 
 **Bài 52.**
 
-Giải sinx=sin(3x) trên ℝ.
+Giải \(\sin x=\sin(3x)\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=kπ hoặc x=π/4+kπ/2, k∈ℤ.
+**Đáp án:** \(x=k\pi\) hoặc \(x=\frac{\pi}{4}+\frac{k\pi}{2},\ k\in\mathbb Z\).
 
-sin A=sin B khi A=B+2kπ hoặc A=π-B+2kπ. Nhánh x=3x+2kπ cho x=-kπ, tức mọi kπ. Nhánh x=π-3x+2kπ cho 4x=π+2kπ, tức x=π/4+kπ/2. Không chia hai vế cho sinx.
+\(\sin A=\sin B\) khi \(A=B+2k\pi\) hoặc \(A=\pi-B+2k\pi\). Nhánh \(x=3x+2k\pi\) cho \(x=-k\pi\), tức mọi \(k\pi\). Nhánh \(x=\pi-3x+2k\pi\) cho \(4x=\pi+2k\pi\), tức \(x=\frac{\pi}{4}+\frac{k\pi}{2}\). Không chia hai vế cho \(\sin x\).
 
 </details>
 
@@ -1372,13 +1372,13 @@ sin A=sin B khi A=B+2kπ hoặc A=π-B+2kπ. Nhánh x=3x+2kπ cho x=-kπ, tức 
 
 **Bài 53.**
 
-Giải sinx=1/2 trên [0,2π).
+Giải \(\sin x=\frac12\) trên \([0;2\pi)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** {π/6,5π/6}.
+**Đáp án:** \(\{\frac{\pi}{6};\frac{5\pi}{6}\}\).
 
-Nghiệm tổng quát π/6+2kπ hoặc 5π/6+2kπ; chỉ k=0 cho nghiệm thuộc khoảng yêu cầu, 2π bị loại.
+Nghiệm tổng quát \(x=\frac{\pi}{6}+2k\pi\) hoặc \(x=\frac{5\pi}{6}+2k\pi\); chỉ \(k=0\) cho nghiệm thuộc khoảng yêu cầu, \(2\pi\) bị loại.
 
 </details>
 
@@ -1386,13 +1386,13 @@ Nghiệm tổng quát π/6+2kπ hoặc 5π/6+2kπ; chỉ k=0 cho nghiệm thuộ
 
 **Bài 54.**
 
-Giải cos(2x)=0 trên [0,π].
+Giải \(\cos(2x)=0\) trên \([0;\pi]\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** {π/4,3π/4}.
+**Đáp án:** \(\{\frac{\pi}{4};\frac{3\pi}{4}\}\).
 
-2x=π/2+kπ, nên x=π/4+kπ/2; k=0,1 thỏa đoạn đóng [0,π].
+\(2x=\frac{\pi}{2}+k\pi\), nên \(x=\frac{\pi}{4}+\frac{k\pi}{2}\); \(k=0,1\) thỏa đoạn đóng \([0;\pi]\).
 
 </details>
 
@@ -1400,13 +1400,13 @@ Giải cos(2x)=0 trên [0,π].
 
 **Bài 55.**
 
-Giải tanx=tan(2x) trên ℝ, ghi rõ TXĐ.
+Giải \(\tan x=\tan(2x)\) trên \(\mathbb R\), ghi rõ tập xác định.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=kπ, k∈ℤ.
+**Đáp án:** \(x=k\pi,\ k\in\mathbb Z\).
 
-Phải có cosx≠0 và cos2x≠0. Khi đó tanA=tanB ⇔ A=B+kπ; x=2x+kπ ⇔ x=-kπ. Các x=kπ đều thuộc TXĐ và thế lại hai vế cùng bằng 0.
+Phải có \(\cos x\ne0\) và \(\cos(2x)\ne0\). Khi đó \(\tan A=\tan B\Leftrightarrow A=B+k\pi\); \(x=2x+k\pi\Leftrightarrow x=-k\pi\). Các \(x=k\pi\) đều thuộc tập xác định và thế lại hai vế cùng bằng 0.
 
 </details>
 
@@ -1414,13 +1414,13 @@ Phải có cosx≠0 và cos2x≠0. Khi đó tanA=tanB ⇔ A=B+kπ; x=2x+kπ ⇔ 
 
 **Bài 56.**
 
-Mực nước H(t)=10+2sin(πt/6), với 0≤t<12 (giờ), bằng 11 lúc mấy giờ?
+Mực nước \(H(t)=10+2\sin(\frac{\pi t}{6})\), với \(0\le t<12\) (giờ), bằng 11 lúc mấy giờ?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** t=1 và t=5 (giờ).
+**Đáp án:** \(t=1\) và \(t=5\) (giờ).
 
-sin(πt/6)=1/2; đối số trong [0,2π). Hai nghiệm πt/6=π/6 hoặc 5π/6, nên t=1 hoặc 5.
+\(\sin(\frac{\pi t}{6})=\frac12\); đối số trong \([0;2\pi)\). Hai nghiệm \(\frac{\pi t}{6}=\frac{\pi}{6}\) hoặc \(\frac{5\pi}{6}\), nên \(t=1\) hoặc \(t=5\).
 
 </details>
 
@@ -1428,13 +1428,13 @@ sin(πt/6)=1/2; đối số trong [0,2π). Hai nghiệm πt/6=π/6 hoặc 5π/6,
 
 **Bài 57.**
 
-Với m∈ℝ, điều kiện nào để sinx=m có nghiệm thực?
+Với \(m\in\mathbb R\), điều kiện nào để \(\sin x=m\) có nghiệm thực?
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** -1≤m≤1.
+**Đáp án:** \(-1\le m\le1\).
 
-Giá trị sinx thuộc [-1,1] nên điều kiện cần |m|≤1; ngược lại mọi m trong đoạn đều đạt được trên đường tròn lượng giác.
+Giá trị \(\sin x\) thuộc \([-1;1]\) nên điều kiện cần \(\lvert m\rvert\le1\); ngược lại mọi m trong đoạn đều đạt được trên đường tròn lượng giác.
 
 </details>
 
@@ -1442,11 +1442,11 @@ Giá trị sinx thuộc [-1,1] nên điều kiện cần |m|≤1; ngược lại
 
 **Bài 58.**
 
-Với y=2sin(3x+π/6)-1, xác định chu kỳ cơ bản, tập giá trị, mọi điểm đạt cực đại và cực tiểu trên ℝ.
+Với \(y=2\sin(3x+\frac{\pi}{6})-1\), xác định chu kỳ cơ bản, tập giá trị, mọi điểm đạt cực đại và cực tiểu trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Biên độ 2, đường trung bình -1. Chu kỳ T=2π/3, giá trị từ -3 đến 1. Cực đại y=1 khi 3x+π/6=π/2+2kπ, tức x=π/9+2kπ/3; cực tiểu y=-3 khi 3x+π/6=3π/2+2kπ, tức x=4π/9+2kπ/3; k∈ℤ.
+Biên độ 2, đường trung bình −1. Chu kỳ \(T=\frac{2\pi}{3}\), giá trị từ −3 đến 1. Cực đại \(y=1\) khi \(3x+\frac{\pi}{6}=\frac{\pi}{2}+2k\pi\), tức \(x=\frac{\pi}{9}+\frac{2k\pi}{3}\); cực tiểu \(y=-3\) khi \(3x+\frac{\pi}{6}=\frac{3\pi}{2}+2k\pi\), tức \(x=\frac{4\pi}{9}+\frac{2k\pi}{3}\); \(k\in\mathbb Z\).
 
 **Rubric tự đối chiếu:**
 
@@ -1458,15 +1458,15 @@ Biên độ 2, đường trung bình -1. Chu kỳ T=2π/3, giá trị từ -3 đ
 
 **Bài 59.**
 
-Giải cos(2x)=sin x trên đoạn [0,2π) bằng công thức cos(2x) và kiểm tra tất cả nghiệm.
+Giải \(\cos(2x)=\sin x\) trên \([0;2\pi)\) bằng công thức \(\cos(2x)\) và kiểm tra tất cả nghiệm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-Đặt s=sin x. 1-2s²=s ⇔ 2s²+s-1=0 ⇔ s=1/2 hoặc s=-1. Với s=1/2 được x=π/6,5π/6; với s=-1 được x=3π/2, tất cả trong [0,2π) và đều thỏa phương trình ban đầu.
+Đặt \(s=\sin x\). \(1-2s^2=s\Leftrightarrow 2s^2+s-1=0\), nên \(s=\frac12\) hoặc \(s=-1\). Với \(s=\frac12\) được \(x=\frac{\pi}{6},\frac{5\pi}{6}\); với \(s=-1\) được \(x=\frac{3\pi}{2}\), tất cả trong \([0;2\pi)\) và đều thỏa phương trình ban đầu.
 
 **Rubric tự đối chiếu:**
 
-biến đổi cos2x đúng (1đ), lập phương trình theo s (1đ), phân tích & tìm s=1/2 (1đ), tìm s=-1 (1đ), hai nghiệm sinx=1/2 trên đoạn (1đ), nghiệm sinx=-1 (1đ), thử lại & kết luận tập ba nghiệm (1đ). Anchor chỉ là nhãn của Written này, không tạo ngân hàng Anchor riêng.
+Biến đổi \(\cos(2x)\) đúng (1đ), lập phương trình theo s (1đ), phân tích và tìm \(s=\frac12\) (1đ), tìm \(s=-1\) (1đ), hai nghiệm \(\sin x=\frac12\) trên khoảng (1đ), nghiệm \(\sin x=-1\) (1đ), thử lại và kết luận tập ba nghiệm (1đ). Anchor chỉ là nhãn của Written này, không tạo ngân hàng Anchor riêng.
 
 </details>
 
@@ -1474,13 +1474,13 @@ biến đổi cos2x đúng (1đ), lập phương trình theo s (1đ), phân tíc
 
 **Bài 60.**
 
-Giải cos(3x)=−1/2 trên ℝ.
+Giải \(\cos(3x)=-\frac12\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=±2π/9+2kπ/3.
+**Đáp án:** \(x=\pm\frac{2\pi}{9}+\frac{2k\pi}{3}\).
 
-3x=±2π/3+2kπ ⇒ chia 3 cả hai vế và kπ để được hai họ nghiệm.
+\(3x=\pm\frac{2\pi}{3}+2k\pi\), chia cả hai vế cho 3 để được hai họ nghiệm.
 
 </details>
 
@@ -1488,13 +1488,13 @@ Giải cos(3x)=−1/2 trên ℝ.
 
 **Bài 61.**
 
-Giải cot(2x)=1 và kiểm điều kiện.
+Giải \(\cot(2x)=1\) và kiểm điều kiện.
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=π/8+kπ/2.
+**Đáp án:** \(x=\frac{\pi}{8}+\frac{k\pi}{2}\).
 
-Cotθ=1 ⇔ θ=π/4+kπ, nên x=π/8+kπ/2. Tại nghiệm sin2x=±√2/2 khác 0, cot xác định.
+\(\cot\theta=1\Leftrightarrow\theta=\frac{\pi}{4}+k\pi\), nên \(x=\frac{\pi}{8}+\frac{k\pi}{2}\). Tại nghiệm \(\sin(2x)=\pm\frac{\sqrt2}{2}\ne0\), cot xác định.
 
 </details>
 
@@ -1502,13 +1502,13 @@ Cotθ=1 ⇔ θ=π/4+kπ, nên x=π/8+kπ/2. Tại nghiệm sin2x=±√2/2 khác 
 
 **Bài 62.**
 
-Giải sinx/(1−cosx)=0 trên ℝ.
+Giải \(\frac{\sin x}{1-\cos x}=0\) trên \(\mathbb R\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** x=(2k+1)π.
+**Đáp án:** \(x=(2k+1)\pi\).
 
-Miền x≠2kπ vì mẫu bằng 0 ở đó. Tử sinx=0 tại kπ; giao miền chỉ còn các k lẻ.
+Miền \(x\ne2k\pi\) vì mẫu bằng 0 ở đó. Tử \(\sin x=0\) tại \(x=k\pi\); giao miền chỉ còn các k lẻ.
 
 </details>
 
@@ -1516,13 +1516,13 @@ Miền x≠2kπ vì mẫu bằng 0 ở đó. Tử sinx=0 tại kπ; giao miền 
 
 **Bài 63.**
 
-Giải cosx=−1/2 trên [−π,π).
+Giải \(\cos x=-\frac12\) trên \([-\pi;\pi)\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** −2π/3; 2π/3.
+**Đáp án:** \(-\frac{2\pi}{3};\ \frac{2\pi}{3}\).
 
-Trong một vòng cosx=−1/2 tại ±2π/3; cả hai thuộc khoảng. ±π không thỏa.
+Trong một vòng \(\cos x=-\frac12\) tại \(x=\pm\frac{2\pi}{3}\); cả hai thuộc khoảng. \(\pm\pi\) không thỏa.
 
 </details>
 
@@ -1530,13 +1530,13 @@ Trong một vòng cosx=−1/2 tại ±2π/3; cả hai thuộc khoảng. ±π kh�
 
 **Bài 64.**
 
-Mô hình h(t)=20+6sin(πt/12) với 0≤t≤24. Tìm chu kỳ, max/min và khoảng h>20.
+Mô hình \(h(t)=20+6\sin(\frac{\pi t}{12})\) với \(0\le t\le24\). Tìm chu kỳ, giá trị lớn nhất/nhỏ nhất và khoảng \(h(t)>20\).
 
 <details markdown="1"><summary>Lời giải</summary>
 
-**Đáp án:** T=24; max26 tại t=6; min14 tại t=18; h>20 khi 0<t<12.
+**Đáp án:** \(T=24\); giá trị lớn nhất 26 tại \(t=6\); nhỏ nhất 14 tại \(t=18\); \(h(t)>20\) khi \(0<t<12\).
 
-ω=π/12 ⇒ T=24. Pha đạt π/2 ở t=6, 3π/2 ở t=18. Sin dương trên (0,π) tương ứng t∈(0,12).
+\(\omega=\frac{\pi}{12}\Rightarrow T=24\). Pha đạt \(\frac{\pi}{2}\) ở \(t=6\), \(\frac{3\pi}{2}\) ở \(t=18\). Sin dương trên \((0;\pi)\) tương ứng \(t\in(0;12)\).
 
 </details>
 
@@ -1544,22 +1544,22 @@ Mô hình h(t)=20+6sin(πt/12) với 0≤t≤24. Tìm chu kỳ, max/min và kho�
 
 **Bài 65.**
 
-Giải cos2x=sinx trên [0,2π). Đặt t=sinx, giải đa thức, liệt kê và kiểm nghiệm.
+Giải \(\cos(2x)=\sin x\) trên \([0;2\pi)\). Đặt \(t=\sin x\), giải đa thức, liệt kê và kiểm nghiệm.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** {π/6,5π/6,3π/2}.
+**Đáp án:** \(\{\frac{\pi}{6};\frac{5\pi}{6};\frac{3\pi}{2}\}\).
 
-cos2x=1−2sin²x, t=sinx∈[−1,1]. 1−2t²=t ⇔ 2t²+t−1=0 ⇔ (2t−1)(t+1)=0. t=1/2 cho π/6,5π/6; t=−1 cho 3π/2. Cả ba thỏa phương trình gốc, không có π/2.
+\(\cos(2x)=1-2\sin^2x\), \(t=\sin x\in[-1;1]\). \(1-2t^2=t\Leftrightarrow 2t^2+t-1=0\Leftrightarrow (2t-1)(t+1)=0\). \(t=\frac12\) cho \(\frac{\pi}{6},\frac{5\pi}{6}\); \(t=-1\) cho \(\frac{3\pi}{2}\). Cả ba thỏa phương trình gốc, không có \(\frac{\pi}{2}\).
 
 **Rubric tự đối chiếu:**
 
-1. Biến đổi cos2x (1đ)
+1. Biến đổi \(\cos(2x)\) (1đ)
 2. Đặt t và miền (1đ)
 3. Giải t đúng (1đ)
-4. Hai nghiệm sin=1/2 (1đ)
-5. Một nghiệm sin=−1 (1đ)
-6. Lọc [0,2π) (1đ)
+4. Hai nghiệm \(\sin x=\frac12\) (1đ)
+5. Một nghiệm \(\sin x=-1\) (1đ)
+6. Lọc \([0;2\pi)\) (1đ)
 7. Thử lại phương trình gốc (1đ)
 
 </details>
@@ -1568,13 +1568,13 @@ cos2x=1−2sin²x, t=sinx∈[−1,1]. 1−2t²=t ⇔ 2t²+t−1=0 ⇔ (2t−1)(t
 
 **Bài 66.**
 
-Nhiệt độ giả định h(t)=10+2sin(π(t−6)/12) °C, 0≤t≤24 giờ. Tìm nền, biên độ, chu kỳ, max/min và t khi h=10; nêu giới hạn của mô hình.
+Nhiệt độ giả định \(h(t)=10+2\sin(\frac{\pi(t-6)}{12})\) °C, \(0\le t\le24\) giờ. Tìm nền, biên độ, chu kỳ, giá trị lớn nhất/nhỏ nhất và t khi \(h(t)=10\); nêu giới hạn của mô hình.
 
 <details markdown="1"><summary>Lời giải và rubric</summary>
 
-**Đáp án:** Nền10°C, biên độ2°C,T24h; max12°C t12; min8°C t0,24; h=10 tại t6,18.
+**Đáp án:** Nền 10°C, biên độ 2°C, chu kỳ 24 giờ; giá trị lớn nhất 12°C tại \(t=12\); nhỏ nhất 8°C tại \(t=0,24\); \(h(t)=10\) tại \(t=6,18\).
 
-T=2π/(π/12)=24. Sin bằng 1 khi t=12, bằng −1 khi t=0 hoặc24. Sin=0 khi t=6+12k; trong miền k=0,1 nên t=6,18. Đây là mô hình giả định, không phải phép đo hoặc dự báo chắc chắn.
+\(T=\frac{2\pi}{\pi/12}=24\). Sin bằng 1 khi \(t=12\), bằng −1 khi \(t=0\) hoặc 24. Sin bằng 0 khi \(t=6+12k\); trong miền \(k=0,1\) nên \(t=6,18\). Đây là mô hình giả định, không phải phép đo hoặc dự báo chắc chắn.
 
 **Rubric tự đối chiếu:**
 
@@ -1582,7 +1582,7 @@ T=2π/(π/12)=24. Sin bằng 1 khi t=12, bằng −1 khi t=0 hoặc24. Sin=0 khi
 2. T và đơn vị (1đ)
 3. Max và thời điểm (1đ)
 4. Min đủ 2 biên (1đ)
-5. Nghiệm h=10 (1đ)
+5. Nghiệm \(h(t)=10\) (1đ)
 6. Lọc đúng miền (1đ)
 7. Giới hạn ứng dụng (1đ)
 
@@ -1594,67 +1594,67 @@ Hãy tự giải đủ 16 câu sau, trước khi trở lại phần Luyện tậ
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P01; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O01; NO_MASTERY; NOT_RD1 -->
 
-**Câu 1.** Một góc quay −450°. Đổi sang radian, xác định tọa độ tia cuối.
+**Câu 1.** Một góc quay \(-450^\circ\). Đổi sang radian, xác định tọa độ tia cuối.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P02; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O02; NO_MASTERY; NOT_RD1 -->
 
-**Câu 2.** Sinα=4/5, α thuộc góc phần tư II. Tìm cosα, tanα.
+**Câu 2.** \(\sin\alpha=\frac45\), \(\alpha\) thuộc góc phần tư II. Tìm \(\cos\alpha\), \(\tan\alpha\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P03; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O03; NO_MASTERY; NOT_RD1 -->
 
-**Câu 3.** Bánh xe bán kính 7 cm quay −120°. Độ dời cung có hướng và quãng đường trên vành bánh?
+**Câu 3.** Bánh xe bán kính 7 cm quay \(-120^\circ\). Độ dời cung có hướng và quãng đường trên vành bánh?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P04; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O04; NO_MASTERY; NOT_RD1 -->
 
-**Câu 4.** F(x)=sinx/(1+cosx). Tìm miền ban đầu và biểu thức rút gọn.
+**Câu 4.** \(F(x)=\frac{\sin x}{1+\cos x}\). Tìm miền ban đầu và biểu thức rút gọn.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P05; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O05; NO_MASTERY; NOT_RD1 -->
 
-**Câu 5.** α=π/3. Tìm sin(π−α), cos(π−α) và giải thích dấu.
+**Câu 5.** \(\alpha=\frac{\pi}{3}\). Tìm \(\sin(\pi-\alpha)\), \(\cos(\pi-\alpha)\) và giải thích dấu.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P06; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O06; NO_MASTERY; NOT_RD1 -->
 
-**Câu 6.** Chứng minh sin(u+v)−sin(u−v)=2cosu sinv.
+**Câu 6.** Chứng minh \(\sin(u+v)-\sin(u-v)=2\cos u\sin v\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P07; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O07; NO_MASTERY; NOT_RD1 -->
 
-**Câu 7.** Đưa cos(5x)−cos(x) về tích.
+**Câu 7.** Đưa \(\cos(5x)-\cos x\) về tích.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P08; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O08; NO_MASTERY; NOT_RD1 -->
 
-**Câu 8.** Tìm miền của y=1/(1−2sinx).
+**Câu 8.** Tìm miền của \(y=\frac1{1-2\sin x}\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P09; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O09; NO_MASTERY; NOT_RD1 -->
 
-**Câu 9.** Tìm chu kỳ dương cơ bản của f(x)=sin2x+sin4x.
+**Câu 9.** Tìm chu kỳ dương cơ bản của \(f(x)=\sin(2x)+\sin(4x)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P10; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O10; NO_MASTERY; NOT_RD1 -->
 
-**Câu 10.** h(t)=3−2cos(πt/4). Tìm chu kỳ, tập giá trị, h(0),h(4).
+**Câu 10.** \(h(t)=3-2\cos(\frac{\pi t}{4})\). Tìm chu kỳ, tập giá trị, \(h(0)\), \(h(4)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P11; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O11; NO_MASTERY; NOT_RD1 -->
 
-**Câu 11.** y=tan(3x): miền xác định và chu kỳ cơ bản?
+**Câu 11.** \(y=\tan(3x)\): miền xác định và chu kỳ cơ bản?
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P12; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O12; NO_MASTERY; NOT_RD1 -->
 
-**Câu 12.** Giải cos(3x)=−1/2 trên ℝ.
+**Câu 12.** Giải \(\cos(3x)=-\frac12\) trên \(\mathbb R\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P13; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O13; NO_MASTERY; NOT_RD1 -->
 
-**Câu 13.** Giải cot(2x)=1 và kiểm điều kiện.
+**Câu 13.** Giải \(\cot(2x)=1\) và kiểm điều kiện.
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P14; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O14; NO_MASTERY; NOT_RD1 -->
 
-**Câu 14.** Giải sinx/(1−cosx)=0 trên ℝ.
+**Câu 14.** Giải \(\frac{\sin x}{1-\cos x}=0\) trên \(\mathbb R\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P15; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O15; NO_MASTERY; NOT_RD1 -->
 
-**Câu 15.** Giải cosx=−1/2 trên [−π,π).
+**Câu 15.** Giải \(\cos x=-\frac12\) trên \([-\pi;\pi)\).
 
 <!-- PUBLIC_REPLAY_ONLY: THPT-TOP06-P16; ORIGINAL_BLOB: f83b285ff0c8f4e45b724cf06248935e5d618b65; OUTCOME: TOP06-O16; NO_MASTERY; NOT_RD1 -->
 
-**Câu 16.** Mô hình h(t)=20+6sin(πt/12) với 0≤t≤24. Tìm chu kỳ, max/min và khoảng h>20.
+**Câu 16.** Mô hình \(h(t)=20+6\sin(\frac{\pi t}{12})\) với \(0\le t\le24\). Tìm chu kỳ, giá trị lớn nhất/nhỏ nhất và khoảng \(h(t)>20\).
 
 <details markdown="1"><summary>Đối chiếu</summary>
 
