@@ -1,3 +1,8 @@
+<!-- #1109 A02 CP04 active custody; previous paragraphs before this source lock are historical. -->
+**CURRENT AUTHORING CĐ08:** one learner blob 64dc1d59c48e1f666c0f6b3f33155175724b078b, source commit 5ffb5778bb5d5f0e4b039d476e11d893de4d7c74, Q18 371a76f49383e5bca016627c01b8f1887f56cd0c, v3.2.0, X-G.5 and affected math/PED verified. Original36 and NEW22 frozen; Practice/Replay equivalent notation, not byte parity. Current S1 direct targeted scan CP03 and prior locked SBT receipt. 58 Practice, 10 Written, 18 replay, three SVG, 18 D6. Bài9 legacy P2 deferred #1090 per owner; no independent Academic/PED PASS, RD1, Mastery, Final Submit, RELEASE authorization or merge/deploy.
+
+## Historical custody narrative — current formal fields updated below
+
 <!-- TOP08_MASTER974_CURRENT_R05_ONE_AUTHOR_CUSTODY_20261121 -->
 **CURRENT AUTHORING CĐ08:** same **one R05 learner canonical** `prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md`, current Git blob `0853a6de4be055d63a767b58dab20fa113e11098`, existing Q18 author self-verification receipt `9e80780f05096269b7cd1942c7006138d72d7ec9` under effective v3.2.0. Corrected actual learner issues #977-025…029: 18 Knowledge D6 to real numbered Practice, 18 public selfcheck voluntary answer lookup, false x=5 probes when x→3, false x=3 reference when x→6, O12 leaked FirstTry result replaced by independently proved x→−∞ negative branch answer −3. Original 58 canonical Practice math/rubric, 18 public question-only stems and 3 SVG unchanged; 77/77 balanced disclosures; one SGK attribution only at bottom. SOURCE Q18 scoped author-self-verification, not independent NotebookLM PASS; old SHA/custody narratives below are historic, not a second active learner. No website, RD1, official readiness, Final Submit, Mastery, merge/deploy.
 
@@ -7,10 +12,10 @@
 
 R03_IMMUTABLE_SOURCE_BLOB: bbb0169bd4809691b08963413abd16d20ae50073
 STUDENT_R05_PATH: prototypes/thpt/content-drafts/topic08-limits-continuity/Temp_TOPIC08_R05_STUDENT_FIRST_58_CANONICAL_VISIBLE_20261115.md
-STUDENT_R05_BLOB: 0853a6de4be055d63a767b58dab20fa113e11098
+STUDENT_R05_BLOB: 64dc1d59c48e1f666c0f6b3f33155175724b078b
 R05_Q18_RECEIPT_PATH: prototypes/thpt/review-packets/Temp_TOPIC08_R05_AUTHOR_SELF_QA_RECEIPT_20261115.md
-R05_Q18_RECEIPT_BLOB: 9e80780f05096269b7cd1942c7006138d72d7ec9
-STATUS: R05_MASTER974_AUTHOR_SELF_VERIFIED_CURRENT_SOURCE_18_PED6_O12_INDEPENDENT_FIRSTTRY
+R05_Q18_RECEIPT_BLOB: 371a76f49383e5bca016627c01b8f1887f56cd0c
+STATUS: A02_CP04_AUTHOR_SELF_VERIFIED_SOURCE_ONLY
 
 ## 18/11 current learner-source custody and DELTA_C boundary
 
