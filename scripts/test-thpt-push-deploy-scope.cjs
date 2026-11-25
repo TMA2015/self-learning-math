@@ -26,6 +26,7 @@ function isNonSiteFile(p) {
  ];
  const normativeDocs=[
    "prototypes/thpt/THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md",
+   "prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_OWNER_RESET_20261122.md", // existing authoring-only checklist, never published
    "prototypes/thpt/THPT_TWO_LANE_SOURCE_LOCKED_HANDOFF_CONTRACT_v2_20261102.md",
    "AGENTS.md"
  ];
@@ -50,13 +51,14 @@ function selfTest(){
    "scripts/test-thpt-handoff-gate-v2.cjs","prototypes/thpt/standard-changes/README.md",
    "prototypes/thpt/content-drafts/topic-functions/R18.md",
    "prototypes/thpt/release-queue/REGISTER.md","AGENTS.md","scripts/test-thpt-knowledge-model-v3.cjs",
-   "scripts/audit-thpt-sgk-79-editorial.cjs"];
+   "scripts/audit-thpt-sgk-79-editorial.cjs",
+   "prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_OWNER_RESET_20261122.md"];
  assert.equal(decide(safe).deploy,false,"Known non-site QA/governance changes must not auto-deploy");
  for(const p of ["docs/thpt-preview/sgk/chuong-vi/bai-18.md","docs/thpt-preview/chuyen-de/ham-so/kien-thuc.md",
    "docs/assets/javascripts/firebase-gemini-v1.js","docs/assets/data/thpt-g10-readiness/CHVI.json",
    "mkdocs.yml","mkdocs.thpt-preview.yml","hooks/topic_markdown_fixes.py",
    "scripts/assemble-thpt-site.cjs","scripts/audit-thpt-unrecognized.cjs",
-   "scripts/new-unknown-release-code.cjs","prototypes/thpt/unknown-runtime.js"]){
+   "scripts/new-unknown-release-code.cjs","prototypes/thpt/unknown-runtime.js","prototypes/thpt/SGK_11_12_AUTHORING_CHECKLIST_UNKNOWN.md"]){
    assert.equal(decide([...safe,p]).deploy,true,"Must deploy when touched real/unknown site path "+p);
  }
  // A rename from the live website to metadata must see BOTH deletion and

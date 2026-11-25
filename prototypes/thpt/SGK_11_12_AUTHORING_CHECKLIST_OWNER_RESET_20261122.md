@@ -19,6 +19,7 @@
 - [ ] **Ví dụ:** Mỗi ví dụ gồm **Đề bài → Phân tích → Lời giải → Kiểm lại** (Phân tích/Kiểm lại khi phù hợp). Giải thích lý do chọn cách ở **Phân tích**, không tạo mục thứ năm; các bước giải có suy luận, điều kiện và kết quả có kiểm chứng. Ví dụ đủ đa dạng, không chỉ thay số.
 - [ ] **Vận dụng:** Đặt sau phần kiến thức cần áp dụng; học sinh làm trước, tự mở **Đối chiếu**, có **Kiểm lỗi** khi cần. Chỉ dùng các nhãn ấy; không hiện “Tự thử”, “Tự thử trước Core”, nhãn kỹ thuật hoặc hướng dẫn quản trị.
 - [ ] **Lỗi thường gặp:** Tổng kết các ngộ nhận và sai lầm toán học thực chất của bài, chỉ rõ vì sao sai và cách khắc phục. Không lặp lại máy móc các Kiểm lỗi cục bộ.
+- [ ] **Công thức và ký hiệu:** Viết nhất quán và đọc lại công thức, số mũ, chỉ số, điều kiện, dấu, đơn vị theo [quy cách X-G.5 của chuẩn gốc](THPT_UNIFIED_LEARNING_CONTENT_STANDARD_v1.0_20261102.md#x-g5-quy-cách-thống-nhất-công-thức-và-ký-hiệu-toán--áp-dụng-sgk-và-chuyên-đề-owner-25112026); không tạo checklist, receipt hay vòng test riêng.
 - [ ] **Tác giả tự kiểm:** Tự giải lại từng Ví dụ/Vận dụng, kiểm điều kiện/công thức/đáp án/hình, sau đó đọc **toàn bộ bốn tab theo thứ tự như một học sinh học lần đầu**. Loại bỏ lời thừa, mục lặp, ngôn ngữ máy móc, nhãn lệch Golden; tự sửa đến khi bài giảng thực sự dễ học.
 
 ## Hồ sơ hoàn thành ngắn gọn cho mỗi bài

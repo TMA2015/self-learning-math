@@ -25,21 +25,38 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Classify actual PR before running historical scope gate
+        id: impact
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          node scripts/test-thpt-release-impact.cjs --self-test
+          git diff --no-renames --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/rw1-pr-paths.txt"
+          node scripts/test-thpt-release-impact.cjs "$RUNNER_TEMP/rw1-pr-paths.txt" >> "$GITHUB_OUTPUT"
+          # Only exact non-site metadata skips R-W1 browser regression.
+          # Unknown or runtime changes still run it; historical exact scope is
+          # evaluated only for the initial R-W1 release diff.
       - uses: actions/setup-python@v5
+        if: steps.impact.outputs.impact != 'METADATA'
         with:
           python-version: '3.12'
       - name: Install scoped QA dependencies
+        if: steps.impact.outputs.impact != 'METADATA'
         run: |
           python -m pip install --disable-pip-version-check mkdocs-material playwright==1.56.0
           python -m playwright install --with-deps chromium webkit
       - name: Exact source and protected scope gate
         run: |
           node scripts/test-thpt-release-impact.cjs --self-test
-          python scripts/test-thpt-topic-rw1-math-browser.py --scope
+          if [[ "${{ steps.impact.outputs.impact }}" == "SCOPED_TOPIC_RW1" ]]; then
+            python scripts/test-thpt-topic-rw1-math-browser.py --scope
+          fi
           node scripts/test-thpt-topic01-release-intake.cjs
       - name: Strict build (not full-site browser audit)
+        if: steps.impact.outputs.impact != 'METADATA'
         run: |
           mkdocs build --strict
           mkdocs build -f mkdocs.thpt-preview.yml --strict
       - name: All 126 Knowledge outcomes — Chromium and WebKit, 390/820/1440
+        if: steps.impact.outputs.impact != 'METADATA'
         run: python scripts/test-thpt-topic-rw1-math-browser.py
